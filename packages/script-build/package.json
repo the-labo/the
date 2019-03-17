@@ -41,13 +41,14 @@
     "webpack": "^4.29.6"
   },
   "devDependencies": {
+    "@the-/script-doc": "file:../script-doc",
     "amocha": "^5.0.2",
     "ape-tmpl": "^6.0.14",
     "injectmock": "^2.0.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/script-build#readme",
   "keywords": [
     "the",
     "script"
@@ -60,7 +61,8 @@
   "repository": "the-labo/the",
   "scripts": {
     "build": "coz render '.*.bud' '+(lib|doc|test)/**/.*.bud'",
-    "prepare": "npm run build",
+    "doc": "the-script-doc",
+    "prepare": "npm run build; npm run doc",
     "test": "mocha test"
   },
   "engines": {

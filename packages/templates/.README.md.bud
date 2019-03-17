@@ -7,17 +7,18 @@ const { readmeMdBud } = require('ape-tmpl')
 const pkg = require('./package')
 
 module.exports = readmeMdBud({
-  badges: {
-    npm: true,
-    standard: true,
-    travis: true,
-  },
+  badges: { npm: true },
   links: require('./doc/links'),
   overview: 'doc/overview.md',
   pkg,
   repo: pkg.repository,
-  sections: 'doc/guides/*.md.hbs',
-  vars: {},
+  sections: 'doc/readme/*.md.hbs',
+  vars: {
+    jsdoc: require('./doc/api/jsdoc').reduce((reduced, item) => ({
+      ...reduced,
+      [item.kind]: [...(reduced[item.kind] || []), item],
+    }), {}),
+  },
 })
 
 if (!module.parent) {

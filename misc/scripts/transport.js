@@ -11,10 +11,10 @@ const baseDir = `${__dirname}/../..`
 process.chdir(baseDir)
 
 const packages = {
-  [`../the-script-build`]: { kind: 'script', name: 'script-build' },
-  [`../the-demo-lib`]: { kind: 'lib', name: 'demo-lib' },
-  [`../the-templates`]: { kind: 'templates', name: 'templates' },
-}
+    [`../the-script-build`]: { kind: 'script', name: 'script-build' },
+    [`../the-demo-lib`]: { kind: 'lib', name: 'demo-lib' },
+    [`../the-templates`]: { kind: 'templates', name: 'templates' },
+  }
 
 ;(async () => {
   for (const [from, { kind, name }] of Object.entries(packages)) {
@@ -89,7 +89,7 @@ ${msg}
             node: '>=10',
             npm: '>=6',
           },
-          homepage: 'https://github.com/the-labo/the#readme',
+          homepage: `https://github.com/the-labo/the/tree/master/packages/${toPkg.name.split('/').pop()}#readme`,
           keywords: ['the', kind].filter(Boolean),
           name: `@the-/${name}`,
           version: pkg.version,

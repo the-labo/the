@@ -16,7 +16,6 @@
     "markdown-toc": "^1.2.0",
     "objnest": "^5.0.6",
     "reserved": "^0.1.2",
-    "selfsigned": "^1.10.4",
     "stringcase": "^4.3.1",
     "the-path-util": "^1.0.1"
   },
@@ -30,7 +29,7 @@
     "react-dom": "^16.8.4",
     "the-script-test": "^2.1.7"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/templates#readme",
   "keywords": [
     "the",
     "templates"

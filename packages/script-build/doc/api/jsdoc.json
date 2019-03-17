@@ -1,26 +1,25 @@
 [
   {
-    "id": "module:@the-/script-doc",
-    "longname": "module:@the-/script-doc",
-    "name": "@the-/script-doc",
+    "id": "module:@the-/script-build",
+    "longname": "module:@the-/script-build",
+    "name": "@the-/script-build",
     "kind": "module",
-    "description": "Doc script for the-projects",
-    "version": "15.0.0",
+    "description": "Build script for the-projects",
+    "version": "15.0.1",
     "meta": {
       "lineno": 1,
       "filename": "index.js",
-      "path": "/Users/okuni/Projects/the/packages/script-doc/lib"
+      "path": "/Users/okuni/Projects/the/packages/script-build/lib"
     },
     "order": 1
   },
   {
-    "id": "module:@the-/script-doc.doc",
-    "longname": "module:@the-/script-doc.doc",
-    "name": "doc",
+    "id": "build",
+    "longname": "build",
+    "name": "build",
     "kind": "function",
-    "scope": "static",
-    "description": "Generate jsdoc",
-    "memberof": "module:@the-/script-doc",
+    "scope": "global",
+    "description": "Build project",
     "params": [
       {
         "type": {
@@ -56,8 +55,8 @@
     ],
     "meta": {
       "lineno": 1,
-      "filename": "doc.js",
-      "path": "/Users/okuni/Projects/the/packages/script-doc/lib"
+      "filename": "build.js",
+      "path": "/Users/okuni/Projects/the/packages/script-build/lib"
     },
     "order": 0
   }

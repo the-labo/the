@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-templates",
-    "longname": "module:the-templates",
-    "name": "the-templates",
+    "id": "module:@the-/templates",
+    "longname": "module:@the-/templates",
+    "name": "@the-/templates",
     "kind": "module",
     "description": "Templates for the-projects",
     "meta": {
