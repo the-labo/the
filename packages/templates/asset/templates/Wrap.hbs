@@ -1,0 +1,27 @@
+/**
+ * {{camelcase name}}
+ * @function {{camelcase name}}
+ * @param {function} - React component class
+ * @returns {function} Wrapped component class
+ */
+'use strict'
+
+import React from 'react'
+import { wrapStack } from 'the-component-util'
+
+/** @lends {{camelcase name}} */
+function {{camelcase name}} (Component) {
+  class {{pascalcase name}} extends React.Component {
+    render () {
+      return (
+        <Component {...this.props}/>
+      )
+    }
+  }
+
+  {{pascalcase name}}.wrapStack = wrapStack({{pascalcase name}}, Component)
+
+  return {{pascalcase name}}
+}
+
+export default {{camelcase name}}

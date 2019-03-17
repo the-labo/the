@@ -1,0 +1,20 @@
+/**
+ * Bud file for index.js
+ */
+'use strict'
+
+const dir = require('./dir')
+const { description, name } = require('../package')
+
+module.exports = [true].map((cjs) =>
+  dir({
+    cjs,
+    description,
+    dirname: __dirname,
+    name,
+  }),
+)
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

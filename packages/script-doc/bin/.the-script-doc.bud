@@ -1,0 +1,15 @@
+/**
+ * Bud file for bin.
+ */
+'use strict'
+
+const apeTmpl = require('ape-tmpl')
+
+module.exports = apeTmpl.binBud({
+  path: 'the-script-doc',
+  signature: require('../signature'),
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

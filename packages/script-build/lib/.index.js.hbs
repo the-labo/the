@@ -1,0 +1,16 @@
+/**
+ * {{pkg.description}}
+ * @module {{pkg.name}}
+ * @version {{pkg.version}}
+ */
+
+'use strict'
+
+const build = require('./build')
+const lib = build.bind(this)
+
+Object.assign(lib, {
+  build
+})
+
+module.exports = lib

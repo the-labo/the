@@ -1,0 +1,63 @@
+[
+  {
+    "id": "module:@the-/script-doc",
+    "longname": "module:@the-/script-doc",
+    "name": "@the-/script-doc",
+    "kind": "module",
+    "description": "Doc script for the-projects",
+    "version": "15.0.0",
+    "meta": {
+      "lineno": 1,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/script-doc/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "jsdoc",
+    "longname": "jsdoc",
+    "name": "jsdoc",
+    "kind": "function",
+    "scope": "global",
+    "description": "Generate jsdoc",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "process.cwd()",
+        "description": "Project directory name",
+        "name": "dirname"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "doc.js",
+      "path": "/Users/okuni/Projects/the/packages/script-doc/lib"
+    },
+    "order": 0
+  }
+]

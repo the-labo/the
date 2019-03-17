@@ -1,0 +1,31 @@
+/**
+ * {{pascalcase name}} component
+ */
+'use strict'
+
+import React from 'react'
+import context from '{{contextPath}}'
+
+class {{pascalcase name}} extends React.Component {
+  #stateful = context.stateful(
+    (state) => ({
+    }),
+    () => ({
+    }),
+  )
+  render () {
+    return this.#stateful(
+     ({
+        l,
+     }) => {
+       return (
+         <div>
+
+         </div>
+       )
+     }
+    )
+  }
+}
+
+export default {{pascalcase name}}

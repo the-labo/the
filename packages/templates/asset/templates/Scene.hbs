@@ -1,0 +1,17 @@
+/**
+ * {{name}}
+ * @class {{name}}
+ */
+'use strict'
+
+import Scene from './abstract/Scene'
+import {bindScope} from 'the-scene-mixins/shim'
+
+@bindScope('{{scopePath}}')
+class {{name}}Base extends Scene {}
+
+/** @lends {{name}} */
+class {{name}} extends {{name}}Base {
+}
+
+export default {{name}}

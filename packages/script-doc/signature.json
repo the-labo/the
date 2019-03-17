@@ -1,0 +1,13 @@
+{
+  "name": "the-script-doc",
+  "main": true,
+  "args": [
+    {
+      "name": "dirname",
+      "desc": "Project directory path",
+      "type": "string"
+    }
+  ],
+  "options": [
+  ]
+}

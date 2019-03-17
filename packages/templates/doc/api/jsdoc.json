@@ -1,0 +1,980 @@
+[
+  {
+    "id": "module:the-templates",
+    "longname": "module:the-templates",
+    "name": "the-templates",
+    "kind": "module",
+    "description": "Templates for the-projects",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 8
+  },
+  {
+    "id": "Ctrl",
+    "longname": "Ctrl",
+    "name": "Ctrl",
+    "kind": "function",
+    "scope": "global",
+    "description": "Ctrl",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "Ctrl.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "Dialogs",
+    "longname": "Dialogs",
+    "name": "Dialogs",
+    "kind": "function",
+    "scope": "global",
+    "description": "Define coz bud for Dialogs",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "Dialogs.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "dir",
+    "longname": "dir",
+    "name": "dir",
+    "kind": "function",
+    "scope": "global",
+    "description": "Define coz bud for dir",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "dir.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "errorPage",
+    "longname": "errorPage",
+    "name": "errorPage",
+    "kind": "function",
+    "scope": "global",
+    "description": "Error page",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "errorPage.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "eslintignore",
+    "longname": "eslintignore",
+    "name": "eslintignore",
+    "kind": "function",
+    "scope": "global",
+    "description": "eslintignore",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "eslintignore.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "eslintrc",
+    "longname": "eslintrc",
+    "name": "eslintrc",
+    "kind": "function",
+    "scope": "global",
+    "description": "eslintrc",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "eslintrc.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "Hook",
+    "longname": "Hook",
+    "name": "Hook",
+    "kind": "function",
+    "scope": "global",
+    "description": "Hook",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "Hook.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "lib",
+    "longname": "lib",
+    "name": "lib",
+    "kind": "function",
+    "scope": "global",
+    "description": "Define coz bud for lib",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "lib.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 9
+  },
+  {
+    "id": "mapping",
+    "longname": "mapping",
+    "name": "mapping",
+    "kind": "function",
+    "scope": "global",
+    "description": "Define coz bud for mapping",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "mapping.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 11
+  },
+  {
+    "id": "nginx",
+    "longname": "nginx",
+    "name": "nginx",
+    "kind": "function",
+    "scope": "global",
+    "description": "Define coz bud for nginx",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "nginx.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 12
+  },
+  {
+    "id": "pcssVars",
+    "longname": "pcssVars",
+    "name": "pcssVars",
+    "kind": "function",
+    "scope": "global",
+    "description": "Variables for pcss",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config.values"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "pcssVars.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 13
+  },
+  {
+    "id": "prettierrc",
+    "longname": "prettierrc",
+    "name": "prettierrc",
+    "kind": "function",
+    "scope": "global",
+    "description": "prettierrc",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "prettierrc.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 14
+  },
+  {
+    "id": "Readme",
+    "longname": "Readme",
+    "name": "Readme",
+    "kind": "function",
+    "scope": "global",
+    "description": "Define a bud for README.md",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "description": "Configuration.",
+        "name": "config"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Section file path.",
+        "name": "config.sections"
+      },
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "description": "Package data.",
+        "name": "config.pkg"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "GitHub Repository name. (eg. 'ape-repo/ap-tmpl')",
+        "name": "config.repo"
+      },
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "description": "Badge data.",
+        "name": "config.badges"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": false,
+        "description": "Should show travis badge.",
+        "name": "config.badges.travis"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": false,
+        "description": "Should show codeclimate badge.",
+        "name": "config.badges.codeclimate"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": false,
+        "description": "Should show codeclimate coverage badge.",
+        "name": "config.badges.codeclimateCoverage"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": false,
+        "description": "Should show gemnasium badge.",
+        "name": "config.badges.gemnasium"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": false,
+        "description": "Should show npm badge.",
+        "name": "config.badges.npm"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": false,
+        "description": "Should show bower badge.",
+        "name": "config.badges.bower"
+      },
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "description": "Link urls.",
+        "name": "config.links"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Overview file path.",
+        "name": "config.overview"
+      },
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "description": "Custom variables.",
+        "name": "config.vars"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "description": "- Bud object."
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "Readme.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 15
+  },
+  {
+    "id": "Resources",
+    "longname": "Resources",
+    "name": "Resources",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "Resources.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 16
+  },
+  {
+    "id": "Scene",
+    "longname": "Scene",
+    "name": "Scene",
+    "kind": "function",
+    "scope": "global",
+    "description": "Scene",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "Scene.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 17
+  },
+  {
+    "id": "scopes",
+    "longname": "scopes",
+    "name": "scopes",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "scopes.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 18
+  },
+  {
+    "id": "selfSigned",
+    "longname": "selfSigned",
+    "name": "selfSigned",
+    "kind": "function",
+    "scope": "global",
+    "description": "Generate self signed",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "selfSigned.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 19
+  },
+  {
+    "id": "Stateful",
+    "longname": "Stateful",
+    "name": "Stateful",
+    "kind": "function",
+    "scope": "global",
+    "description": "Stateful",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "Stateful.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 20
+  },
+  {
+    "id": "Stateless",
+    "longname": "Stateless",
+    "name": "Stateless",
+    "kind": "function",
+    "scope": "global",
+    "description": "Stateless",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "Stateless.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 21
+  },
+  {
+    "id": "Stream",
+    "longname": "Stream",
+    "name": "Stream",
+    "kind": "function",
+    "scope": "global",
+    "description": "Stream",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "Stream.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 22
+  },
+  {
+    "id": "templates",
+    "longname": "templates",
+    "name": "templates",
+    "kind": "function",
+    "scope": "global",
+    "description": "Define coz bud for templates",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "templates.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 23
+  },
+  {
+    "id": "test",
+    "longname": "test",
+    "name": "test",
+    "kind": "function",
+    "scope": "global",
+    "description": "Define coz bud for readme",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "test.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 24
+  },
+  {
+    "id": "toc",
+    "longname": "toc",
+    "name": "toc",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "toc.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 25
+  },
+  {
+    "id": "vhost",
+    "longname": "vhost",
+    "name": "vhost",
+    "kind": "function",
+    "scope": "global",
+    "description": "Error page",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "vhost.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 26
+  },
+  {
+    "id": "View",
+    "longname": "View",
+    "name": "View",
+    "kind": "function",
+    "scope": "global",
+    "description": "View",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "View.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 27
+  },
+  {
+    "id": "Wrap",
+    "longname": "Wrap",
+    "name": "Wrap",
+    "kind": "function",
+    "scope": "global",
+    "description": "Wrap",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "Wrap.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 28
+  },
+  {
+    "id": "module:ape-tmpl/lib.binBud",
+    "longname": "module:ape-tmpl/lib.binBud",
+    "name": "binBud",
+    "kind": "function",
+    "scope": "static",
+    "description": "Define a bud for bin.",
+    "memberof": "module:ape-tmpl/lib",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "description": "Configuration",
+        "name": "config"
+      },
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "description": "Bin signature.",
+        "name": "signature"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "description": "- Bud object."
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "bin.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:ape-tmpl/lib.licenseBud",
+    "longname": "module:ape-tmpl/lib.licenseBud",
+    "name": "licenseBud",
+    "kind": "function",
+    "scope": "static",
+    "description": "Define a bud for LICENSE",
+    "memberof": "module:ape-tmpl/lib",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "description": "Configuration.",
+        "name": "config"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Type of license.",
+        "name": "config.type"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "description": "Copy right year.",
+        "name": "config.year"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "License holder name.",
+        "name": "config.holder"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "description": "- Bud object."
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "License.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 10
+  }
+]

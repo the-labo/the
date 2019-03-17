@@ -1,0 +1,70 @@
+{
+  "name": "@the-/script-build",
+  "description": "Build script for the-projects",
+  "version": "15.0.1",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "bin": {
+    "the-script-build": "bin/the-script-build"
+  },
+  "bugs": {
+    "url": "https://github.com/the-labo/theissues"
+  },
+  "dependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-proposal-do-expressions": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.3.4",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "7.0.0",
+    "@babel/runtime": "^7.3.4",
+    "@okunishinishi/fixpack": "^3.0.1",
+    "ababel": "^5.0.12",
+    "abrowserify": "^3.0.4",
+    "aglob": "^3.0.1",
+    "argx": "^4.0.0",
+    "asfs": "^2.2.1",
+    "asleep": "^1.0.3",
+    "awatch": "^2.0.1",
+    "babel-loader": "^8.0.5",
+    "commander": "^2.19.0",
+    "coz": "^7.0.19",
+    "filecopy": "^4.0.2",
+    "lebab": "^3.0.4",
+    "the-code": "^5.5.17",
+    "webpack": "^4.29.6"
+  },
+  "devDependencies": {
+    "amocha": "^5.0.2",
+    "ape-tmpl": "^6.0.14",
+    "injectmock": "^2.0.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "homepage": "https://github.com/the-labo/the#readme",
+  "keywords": [
+    "the",
+    "script"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
+  "scripts": {
+    "build": "coz render '.*.bud' '+(lib|doc|test)/**/.*.bud'",
+    "prepare": "npm run build",
+    "test": "mocha test"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  }
+}

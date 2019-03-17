@@ -1,0 +1,33 @@
+worker_processes 4;
+
+events { worker_connections 1024; }
+
+http {
+
+  upstream {{name}} {
+    least_conn;
+    server {{hostname}}:{{port}} weight=10 max_fails=3 fail_timeout=30s;
+  }
+
+  server {
+    listen {{httpPort}};
+{{#if domain}}    server_name {{domain}};{{/if}}
+    return 301 https://$host$request_uri;
+  }
+  server {
+    listen {{httpsPort}} ssl default_server;
+{{#if domain}}    server_name {{domain}};{{/if}}
+
+{{#if cert}}    ssl_certificate     {{cert}};{{/if}}
+{{#if certKey}}    ssl_certificate_key {{certKey}};{{/if}}
+{{#if publicDir}}    root {{{publicDir}}};{{/if}}
+    location / {
+      proxy_pass http://{{name}};
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_cache_bypass $http_upgrade;
+    }
+  }
+}

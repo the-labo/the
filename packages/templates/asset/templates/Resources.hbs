@@ -1,0 +1,22 @@
+### Resources
+
+Database resources for [The DB](https://github.com/the-labo/the-db)
+
+{{#each Resources}}
+* [{{@key}} Resource](#{{@key}}-Resource)
+{{/each}}
+
+{{#each Resources}}
+
+<a name="{{@key}}-Resource" ></a>
+**{{@key}} Resource**
+
+* [{{../pathPrefix}}{{@key}}{{../pathSuffix}}]({{../pathPrefix}}{{@key}}{{../pathSuffix}})
+
+| Property | Description | Type | Required | Unique |
+| ---- | ---- | ---- | --- | --- |
+{{#each policy}}
+| {{@key}} | {{{description}}} | {{{type}}} | {{{required}}} | {{{unique}}} |
+{{/each}}
+
+{{/each}}

@@ -1,0 +1,53 @@
+{
+  "name": "@the-/templates",
+  "description": "Templates for the-projects",
+  "version": "15.0.1",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "bugs": {
+    "url": "https://github.com/the-labo/theissues"
+  },
+  "dependencies": {
+    "aglob": "^3.0.1",
+    "evaljson": "^6.0.4",
+    "markdown-toc": "^1.2.0",
+    "objnest": "^5.0.6",
+    "reserved": "^0.1.2",
+    "selfsigned": "^1.10.4",
+    "stringcase": "^4.3.1",
+    "the-path-util": "^1.0.1"
+  },
+  "devDependencies": {
+    "@the-/script-doc": "file:../script-doc",
+    "amocha": "^5.0.2",
+    "ape-tmpl": "^6.0.14",
+    "coz": "^7.0.19",
+    "injectmock": "^2.0.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "the-script-test": "^2.1.7"
+  },
+  "homepage": "https://github.com/the-labo/the#readme",
+  "keywords": [
+    "the",
+    "templates"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
+  "scripts": {
+    "doc": "the-script-doc",
+    "prepare": "npm run doc",
+    "test": "mocha test"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  }
+}

@@ -1,0 +1,15 @@
+'use strict'
+
+const { dir } = require('the-templates')
+const pkg = require('../package')
+
+module.exports = dir({
+  cjs: true,
+  description: pkg.description,
+  dirname: __dirname,
+  name: pkg.name,
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

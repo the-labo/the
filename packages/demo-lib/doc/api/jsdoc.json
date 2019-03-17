@@ -1,0 +1,85 @@
+[
+  {
+    "id": "module:@the-/demo-lib",
+    "longname": "module:@the-/demo-lib",
+    "name": "@the-/demo-lib",
+    "kind": "module",
+    "description": "Demo of the-lib packages",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/demo-lib/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheDemoLib",
+    "longname": "TheDemoLib",
+    "name": "TheDemoLib",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheDemoLib.js",
+      "path": "/Users/okuni/Projects/the/packages/demo-lib/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheDemoLib instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheDemoLib"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/demo-lib/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "theDemoLib",
+    "longname": "theDemoLib",
+    "name": "theDemoLib",
+    "kind": "function",
+    "scope": "global",
+    "description": "Default exports",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheDemoLib"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/demo-lib/lib"
+    },
+    "order": 1
+  }
+]

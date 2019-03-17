@@ -1,0 +1,24 @@
+/**
+* {{pascalcase name}} component
+*/
+'use strict'
+
+import React from 'react'
+import context from '{{contextPath}}'
+
+class {{pascalcase name}} extends React.Component {
+  #stateless = context.stateless()
+
+  render () {
+    return this.#stateless(
+      ({ l, }) => {
+        return (
+          <div></div>
+        )
+      }
+    )
+  }
+}
+
+
+export default {{pascalcase name}}

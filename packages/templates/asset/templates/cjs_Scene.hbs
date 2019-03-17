@@ -1,0 +1,17 @@
+/**
+ * {{name}}
+ * @class {{name}}
+ */
+'use strict'
+
+const Scene = require('./abstract/Scene')
+const {bindScope} = require('the-scene-mixins/shim')
+
+@bindScope('{{scopePath}}')
+class {{name}}Base extends Scene {}
+
+/** @lends {{name}} */
+class {{name}} extends {{name}}Base {
+}
+
+module.exports = {{name}}

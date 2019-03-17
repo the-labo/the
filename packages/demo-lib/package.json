@@ -1,0 +1,42 @@
+{
+  "name": "@the-/demo-lib",
+  "description": "Demo of the-lib packages",
+  "version": "15.0.1",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "browser": "shim",
+  "bugs": {
+    "url": "https://github.com/the-labo/theissues"
+  },
+  "devDependencies": {
+    "@the-/script-doc": "file:../script-doc",
+    "mocha": "^5.2.0",
+    "the-script-build": "^5.0.0",
+    "the-templates": "^6.0.3"
+  },
+  "homepage": "https://github.com/the-labo/the#readme",
+  "keywords": [
+    "the",
+    "lib"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run doc",
+    "test": "mocha",
+    "watch": "the-script-build -w"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  }
+}

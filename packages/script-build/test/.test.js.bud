@@ -1,0 +1,15 @@
+/**
+ * Bud file for test cases.
+ */
+'use strict'
+
+const { mochaTestJsBud } = require('ape-tmpl')
+
+module.exports = mochaTestJsBud({
+  dest: __dirname,
+  src: [`${__dirname}/../lib/**/*.js`],
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

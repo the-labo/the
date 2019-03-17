@@ -1,0 +1,16 @@
+/**
+ * {{pkg.description}}
+ * @module {{pkg.name}}
+ * @version {{pkg.version}}
+ */
+
+'use strict'
+
+const doc = require('./doc')
+const lib = doc.bind(this)
+
+Object.assign(lib, {
+  doc,
+})
+
+module.exports = lib

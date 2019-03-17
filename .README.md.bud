@@ -1,0 +1,29 @@
+/**
+ * Bud file for README.md
+ */
+'use strict'
+
+const fs = require('fs')
+const { Readme } = require('./packages/templates')
+const pkg = require('./package')
+
+module.exports = Readme({
+  badges: {
+    travis: true,
+  },
+  links: require('./doc/links'),
+  overview: 'doc/overview.md',
+  pkg,
+  repo: pkg.repository,
+  sections: 'doc/readme/*.md.hbs',
+  vars: {
+    packages: fs
+      .readdirSync(`${__dirname}/packages`)
+      .filter((dirname) => !/^\./.test(dirname)),
+  },
+})
+
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

@@ -1,0 +1,23 @@
+/**
+ * Bud file for README.md
+ */
+'use strict'
+
+const { readmeMdBud } = require('ape-tmpl')
+const pkg = require('./package')
+
+module.exports = readmeMdBud({
+  badges: { npm: true },
+  links: require('./doc/links'),
+  overview: 'doc/overview.md',
+  pkg,
+  repo: pkg.repository,
+  sections: 'doc/readme/*.md.hbs',
+  vars: {
+    jsdoc: require('./doc/api/jsdoc'),
+  },
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

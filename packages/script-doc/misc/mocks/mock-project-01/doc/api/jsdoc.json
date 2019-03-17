@@ -1,0 +1,90 @@
+[
+  {
+    "id": "module:mock-project-01",
+    "longname": "module:mock-project-01",
+    "name": "mock-project-01",
+    "kind": "module",
+    "meta": {
+      "lineno": 1,
+      "filename": "foo.js",
+      "path": "/Users/okuni/Projects/the/packages/script-doc/misc/mocks/mock-project-01/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:hoge2",
+    "longname": "module:hoge2",
+    "name": "hoge2",
+    "kind": "module",
+    "meta": {
+      "lineno": 20,
+      "filename": "foo.js",
+      "path": "/Users/okuni/Projects/the/packages/script-doc/misc/mocks/mock-project-01/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:hoge2~Hoge#say",
+    "longname": "module:hoge2~Hoge#say",
+    "name": "say",
+    "kind": "function",
+    "scope": "instance",
+    "memberof": "module:hoge2~Hoge",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "msg"
+      }
+    ],
+    "meta": {
+      "lineno": 15,
+      "filename": "foo.js",
+      "path": "/Users/okuni/Projects/the/packages/script-doc/misc/mocks/mock-project-01/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "module:mock-project-01.foo",
+    "longname": "module:mock-project-01.foo",
+    "name": "foo",
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:mock-project-01",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Argument 01",
+        "name": "a1"
+      }
+    ],
+    "meta": {
+      "lineno": 2,
+      "filename": "foo.js",
+      "path": "/Users/okuni/Projects/the/packages/script-doc/misc/mocks/mock-project-01/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "module:hoge2~Hoge",
+    "longname": "module:hoge2~Hoge",
+    "name": "Hoge",
+    "kind": "class",
+    "scope": "inner",
+    "description": "This is hoge",
+    "memberof": "module:hoge2",
+    "meta": {
+      "lineno": 13,
+      "filename": "foo.js",
+      "path": "/Users/okuni/Projects/the/packages/script-doc/misc/mocks/mock-project-01/lib"
+    },
+    "order": 3
+  }
+]

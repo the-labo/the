@@ -1,0 +1,12 @@
+matrix:
+  include:
+    - &node_package
+      install:
+        - npm install
+      language: node_js
+      node_js:
+        - '10'
+      script:
+        - npm run test
+    - <<: *node_package
+    - name: packages/script-jsdoc

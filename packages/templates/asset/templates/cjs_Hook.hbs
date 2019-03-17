@@ -1,0 +1,19 @@
+/**
+ * Define {{pascalcase name}} handlers
+ * @function {{pascalcase name}}
+ * @returns {Object} Defined handlers
+ */
+'use strict'
+
+const debug = require('debug')('app:hook:{{camelcase name}}')
+
+/** @lends {{pascalcase name}}  */
+function {{pascalcase name}} (db) {
+  return {
+    async onCreate ({id, created}) {},
+    async onUpdate ({id, updated, old}) {},
+    async onDestroy ({gone, destroyed, id}) {},
+  }
+}
+
+module.exports = {{pascalcase name}}
