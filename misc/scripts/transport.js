@@ -2,25 +2,26 @@
 
 'use strict'
 
+const { copyAsync, copyDirAsync } = require('asfs')
 const { spawnSync } = require('child_process')
 const { chmod, readFile, stat, unlink, writeFile } = require('fs').promises
 const path = require('path')
 const rimraf = require('rimraf')
 const pkg = require('../../package')
-const { copyDirAsync, copyAsync } = require('asfs')
 const baseDir = `${__dirname}/../..`
 process.chdir(baseDir)
 
 const packages = {
-    [`../the-script-build`]: { kind: 'script', name: 'script-build' },
-    [`../the-script-test`]: { kind: 'script', name: 'script-test' },
-    [`../the-demo-lib`]: { kind: 'lib', name: 'demo-lib' },
-    [`../the-demo-component`]: { kind: 'component', name: 'demo-component' },
-    [`../the-scaffold`]: { kind: 'scaffold', name: 'scaffold' },
-    [`../the-templates`]: { kind: 'templates', name: 'templates' },
-    [`../the-assert`]: { kind: 'lib', name: 'assert' },
-    [`../the-context`]: { kind: 'lib', name: 'context' },
-  }
+  [`../the-script-build`]: { kind: 'script', name: 'script-build' },
+  [`../the-script-test`]: { kind: 'script', name: 'script-test' },
+  [`../the-demo-lib`]: { kind: 'lib', name: 'demo-lib' },
+  [`../the-demo-component`]: { kind: 'component', name: 'demo-component' },
+  [`../the-scaffold`]: { kind: 'scaffold', name: 'scaffold' },
+  [`../the-templates`]: { kind: 'templates', name: 'templates' },
+  [`../the-assert`]: { kind: 'lib', name: 'assert' },
+  [`../the-assets`]: { kind: 'lib', name: 'assets' },
+  [`../the-context`]: { kind: 'lib', name: 'context' },
+}
 
 ;(async () => {
   for (const [from, { kind, name }] of Object.entries(packages)) {
@@ -69,12 +70,27 @@ ${msg}
         const demoLibDir = path.resolve(baseDir, 'packages', 'demo-lib')
         rimraf.sync(path.resolve(toDir, 'doc/readme'))
         await copyDirAsync(`${demoLibDir}/doc/readme`, `${toDir}/doc/readme`)
-        await copyAsync(`${demoLibDir}/doc/links.json`, `${toDir}/doc/links.json`)
-        await copyAsync(`${demoLibDir}/doc/overview.md`, `${toDir}/doc/overview.md`)
+        await copyAsync(
+          `${demoLibDir}/doc/links.json`,
+          `${toDir}/doc/links.json`,
+        )
+        await copyAsync(
+          `${demoLibDir}/doc/overview.md`,
+          `${toDir}/doc/overview.md`,
+        )
         await unlink(path.resolve(toDir, 'lib/.index.bud')).catch(() => null)
-        await copyAsync(`${demoLibDir}/lib/.index.js.bud`, `${toDir}/lib/.index.js.bud`)
-        await copyAsync(`${demoLibDir}/test/.test.js.bud`, `${toDir}/test/.test.js.bud`)
-        await copyAsync(`${demoLibDir}/.README.md.bud`, `${toDir}/.README.md.bud`)
+        await copyAsync(
+          `${demoLibDir}/lib/.index.js.bud`,
+          `${toDir}/lib/.index.js.bud`,
+        )
+        await copyAsync(
+          `${demoLibDir}/test/.test.js.bud`,
+          `${toDir}/test/.test.js.bud`,
+        )
+        await copyAsync(
+          `${demoLibDir}/.README.md.bud`,
+          `${toDir}/.README.md.bud`,
+        )
         await copyAsync(`${demoLibDir}/.npmignore`, `${toDir}/.npmignore`)
         const toPkg = JSON.parse(await readFile(toPkgFile))
         const { scripts = {} } = toPkg
@@ -83,13 +99,7 @@ ${msg}
         scripts.test = 'the-script-build'
         scripts.prepare = 'npm run build && npm run doc'
         delete scripts.share
-        await writeFile(
-          toPkgFile,
-          JSON.stringify(
-            { ...toPkg, scripts }
-          )
-        )
-
+        await writeFile(toPkgFile, JSON.stringify({ ...toPkg, scripts }))
       }
     }
 

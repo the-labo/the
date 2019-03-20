@@ -1,7 +1,7 @@
 {
   "name": "the",
   "description": "root for the-project",
-  "version": "15.0.1",
+  "version": "15.0.2",
   "author": {
     "name": "Taka Okunishi",
     "email": "okunishinishi@gmail.com",
@@ -19,6 +19,7 @@
   "dependencies": {
     "asfs": "^2.2.3",
     "pon": "^5.2.14",
+    "pon-task-basic": "^4.2.16",
     "the-file-util": "^1.2.2"
   },
   "publishConfig": {

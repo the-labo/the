@@ -28,10 +28,14 @@
     "react-router-dom": "^4.3.1",
     "the-component-demo": "^4.0.18"
   },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
   "homepage": "https://github.com/the-labo/the/tree/master/packages/demo-component#readme",
   "keywords": [
-    "the",
-    "component"
+    "component",
+    "the"
   ],
   "license": "MIT",
   "main": "shim",
@@ -50,9 +54,5 @@
     "share": "the-script-share",
     "test": "the-script-test",
     "watch": "the-script-build -w"
-  },
-  "engines": {
-    "node": ">=10",
-    "npm": ">=6"
   }
 }

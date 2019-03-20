@@ -17,10 +17,14 @@
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates"
   },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
   "homepage": "https://github.com/the-labo/the/tree/master/packages/demo-lib#readme",
   "keywords": [
-    "the",
-    "lib"
+    "lib",
+    "the"
   ],
   "license": "MIT",
   "main": "lib",
@@ -34,9 +38,5 @@
     "prepare": "npm run doc",
     "test": "the-script-test",
     "watch": "the-script-build -w"
-  },
-  "engines": {
-    "node": ">=10",
-    "npm": ">=6"
   }
 }

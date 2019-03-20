@@ -5,7 +5,7 @@
     "name": "@the-/script-doc",
     "kind": "module",
     "description": "Doc script for the-projects",
-    "version": "15.0.0",
+    "version": "15.0.1",
     "meta": {
       "lineno": 1,
       "filename": "index.js",

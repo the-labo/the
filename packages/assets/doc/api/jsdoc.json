@@ -1,0 +1,188 @@
+[
+  {
+    "id": "module:the-assets",
+    "longname": "module:the-assets",
+    "name": "the-assets",
+    "kind": "module",
+    "description": "Assets for the-framework",
+    "meta": {
+      "lineno": 1,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/assets/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheAssets#installTo",
+    "longname": "TheAssets#installTo",
+    "name": "installTo",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Install assets into directory",
+    "memberof": "TheAssets",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Directory name install into",
+        "name": "dirname"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": false,
+        "description": "Copy files instead of symlinks",
+        "name": "options.copy"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 18,
+      "filename": "TheAssets.js",
+      "path": "/Users/okuni/Projects/the/packages/assets/lib"
+    },
+    "async": true,
+    "order": 3
+  },
+  {
+    "id": "module:@the-/assets.TheAssets",
+    "longname": "module:@the-/assets.TheAssets",
+    "name": "TheAssets",
+    "kind": "class",
+    "scope": "static",
+    "memberof": "module:@the-/assets",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheAssets.js",
+      "path": "/Users/okuni/Projects/the/packages/assets/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "module:@the-/assets.create",
+    "longname": "module:@the-/assets.create",
+    "name": "create",
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheAssets instance",
+    "memberof": "module:@the-/assets",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheAssets"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/assets/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/assets.installFiles",
+    "longname": "module:@the-/assets.installFiles",
+    "name": "installFiles",
+    "kind": "function",
+    "scope": "static",
+    "description": "Install files",
+    "memberof": "module:@the-/assets",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Source directory path",
+        "name": "srcDir"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Destination directory path",
+        "name": "destDir"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": false,
+        "description": "Copy files instead of symlinks",
+        "name": "options.copy"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "installFiles.js",
+      "path": "/Users/okuni/Projects/the/packages/assets/lib/helpers"
+    },
+    "order": 4
+  }
+]

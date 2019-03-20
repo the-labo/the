@@ -20,10 +20,14 @@
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates"
   },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
   "homepage": "https://github.com/the-labo/the/tree/master/packages/assert#readme",
   "keywords": [
-    "the",
-    "lib"
+    "lib",
+    "the"
   ],
   "license": "MIT",
   "main": "lib",
@@ -32,15 +36,11 @@
   },
   "repository": "the-labo/the",
   "scripts": {
+    "buid": "the-script-build",
     "build": "the-script-build",
     "doc": "the-script-doc",
     "prepare": "npm run build && npm run doc",
     "test": "the-script-build",
-    "watch": "the-script-build -w",
-    "buid": "the-script-build"
-  },
-  "engines": {
-    "node": ">=10",
-    "npm": ">=6"
+    "watch": "the-script-build -w"
   }
 }

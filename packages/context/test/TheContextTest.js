@@ -4,20 +4,17 @@
  */
 'use strict'
 
-const TheContext = require('../lib/TheContext')
-const { ok, equal } = require('assert')
-
+const { equal, ok } = require('assert')
 const React = require('react')
 const RectDOM = require('react-dom/server')
+const TheContext = require('../lib/TheContext')
 
 const c = React.createElement
 
 describe('the-context', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(TheContext)
@@ -27,34 +24,25 @@ describe('the-context', () => {
 
     const mapped = []
     {
-      const Toast = () => (
+      const Toast = () =>
         c(
           context.Entry,
           {
             map: (v) => {
               mapped.push(v)
               return v
-            }
+            },
           },
           () => c('div', {}, 'This is rendered content'),
         )
-      )
 
       class App extends React.Component {
-        render () {
-          return (
-            c(
-              context.Root,
-              {},
-              c(Toast, {})
-            )
-          )
+        render() {
+          return c(context.Root, {}, c(Toast, {}))
         }
       }
 
-      const rendered = RectDOM.renderToString(
-        c(App, {})
-      )
+      const rendered = RectDOM.renderToString(c(App, {}))
       ok(rendered)
     }
   })

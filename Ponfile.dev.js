@@ -7,10 +7,13 @@
 
 const pon = require('pon')
 const pkgSync = require('./misc/tasks/pkgSync')
+const pkgRun = require('./misc/tasks/pkgRun')
 const pkgPublish = require('./misc/tasks/pkgPublish')
 const theCode = require('the-code/pon')
 
 const { cwd, tasks } = require('./Ponfile')
+
+const SUB_PACKAGES = 'packages/*/package.json'
 
 module.exports = pon({
   // -----------------------------------
@@ -26,8 +29,11 @@ module.exports = pon({
   // -----------------------------------
   ...tasks,
   ...{
-    'pkg:sync': pkgSync('package.json', 'packages/*/package.json'),
-    'pkg:publish': pkgPublish('packages/*/package.json')
+    'pkg:sync': pkgSync('package.json', SUB_PACKAGES),
+    'pkg:publish': pkgPublish(SUB_PACKAGES),
+    'pkg:run:build': pkgRun(SUB_PACKAGES, 'build'),
+    'pkg:run:doc': pkgRun(SUB_PACKAGES, 'doc'),
+    'pkg:run:test': pkgRun(SUB_PACKAGES, 'test'),
   },
 
   // -----------------------------------
@@ -59,7 +65,7 @@ module.exports = pon({
     build: [
       ...['format'],
     ],
-    publish: ['build', 'pkg:sync', 'pkg:publish']
+    publish: ['build', 'pkg:sync', 'pkg:run:build', 'pkg:publish']
   },
   // -----------------------------------
   // Aliases
