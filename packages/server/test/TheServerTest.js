@@ -4,26 +4,24 @@
  */
 'use strict'
 
-const TheServer = require('../lib/TheServer')
-const { ok, equal, deepEqual } = require('assert').strict
+const aport = require('aport')
 const arequest = require('arequest')
 const asleep = require('asleep')
+const { deepEqual, equal, ok } = require('assert').strict
 const msgpack = require('msgpack-lite')
-const aport = require('aport')
-const theClient = require('the-client')
-const { TheNotAcceptableError } = require('the-error')
 const React = require('react')
 const socketIOClient = require('socket.io-client')
+const theClient = require('the-client')
+const { TheNotAcceptableError } = require('the-error')
+const TheServer = require('../lib/TheServer')
 
-describe('the-server', function () {
+describe('the-server', function() {
   this.timeout(32000)
-  before(() => {
-  })
+  before(() => {})
 
-  after(async () => {
-  })
+  after(async () => {})
 
-  it('Listen and Close', async function () {
+  it('Listen and Close', async function() {
     const port = await aport()
     const server = new TheServer({})
 
@@ -31,13 +29,15 @@ describe('the-server', function () {
     await server.close()
   })
 
-  it('Do Callback', async function () {
+  it('Do Callback', async function() {
     const port = await aport()
     const server = new TheServer({})
 
     await server.listen(port)
 
-    const socket = socketIOClient(`http://localhost:${port}/rpc?cid=1&via=client`)
+    const socket = socketIOClient(
+      `http://localhost:${port}/rpc?cid=1&via=client`,
+    )
 
     const received = []
     socket.on(`client:callback/1/jCtrl/onHoge`, (data) => {
@@ -51,9 +51,9 @@ describe('the-server', function () {
 
     server.handleCallback({
       cid: 1,
+      controller: 'jCtrl',
       name: 'onHoge',
       values: { a: 1, b: true, c: 'J' },
-      controller: 'jCtrl'
     })
     await asleep(100)
     socket.close()
@@ -62,21 +62,16 @@ describe('the-server', function () {
     deepEqual(received[0], { a: 1, b: true, c: 'J' })
   })
 
-  it('The server', async function () {
+  it('The server', async function() {
     const port = await aport()
 
     class SayCtrl extends TheServer.Ctrl {
-      sayHi() {
-        console.log('!foo', this.foo)
-        return 'hi'
-      }
-
       controllerDidAttach() {
         console.log('Say did attach')
       }
 
-      controllerWillDetach() {
-        // console.log('Say will detach')
+      controllerMethodDidInvoke(method, params, result) {
+        // console('did invoke', method, result)
       }
 
       controllerMethodWillInvoke(method, params) {
@@ -84,18 +79,27 @@ describe('the-server', function () {
         // console.log('will invoke', method, params)
       }
 
-      controllerMethodDidInvoke(method, params, result) {
-        // console('did invoke', method, result)
+      controllerWillDetach() {
+        // console.log('Say will detach')
+      }
+
+      sayHi() {
+        console.log('!foo', this.foo)
+        return 'hi'
       }
     }
 
     class FruitShopCtrl extends TheServer.Ctrl {
-      async buy(name, amount) {
-        const { app, client, session } = this
-        let { total = 0 } = session
-        session.total = total + amount
-        // console.log('this.hoge', this.hoge())
-        return { name, amount, total: session.total }
+      clear() {
+        this.session.total = 0
+      }
+
+      getTotal() {
+        return this.session.total || 0
+      }
+
+      hoge() {
+        return 'hoge'
       }
 
       somethingWrong() {
@@ -103,16 +107,12 @@ describe('the-server', function () {
         throw error
       }
 
-      hoge() {
-        return 'hoge'
-      }
-
-      getTotal() {
-        return this.session.total || 0
-      }
-
-      clear() {
-        this.session.total = 0
+      async buy(name, amount) {
+        const { client, session } = this
+        let { total = 0 } = session
+        session.total = total + amount
+        // console.log('this.hoge', this.hoge())
+        return { amount, name, total: session.total }
       }
 
       async callSayHi() {
@@ -124,20 +124,20 @@ describe('the-server', function () {
     }
 
     const server = new TheServer({
-      injectors: {
-        store: () => ({ isStore: true })
-      },
       controllers: {
-        'fruitShop': FruitShopCtrl,
-        'say': SayCtrl
-      }
+        fruitShop: FruitShopCtrl,
+        say: SayCtrl,
+      },
+      injectors: {
+        store: () => ({ isStore: true }),
+      },
     })
 
     await server.listen(port)
     await server.destroyAllSessions()
     {
-      const client01 = theClient({ port, cid: 'client01' })
-      const client02 = theClient({ port, cid: 'client02' })
+      const client01 = theClient({ cid: 'client01', port })
+      const client02 = theClient({ cid: 'client02', port })
 
       const fruitShop01 = await client01.use('fruitShop')
       const fruitShop02 = await client02.use('fruitShop')
@@ -145,25 +145,25 @@ describe('the-server', function () {
       await fruitShop01.clear()
       await fruitShop02.clear()
 
-      deepEqual(
-        await fruitShop01.buy('orange', 100),
-        { name: 'orange', amount: 100, total: 100 }
-      )
+      deepEqual(await fruitShop01.buy('orange', 100), {
+        amount: 100,
+        name: 'orange',
+        total: 100,
+      })
 
-      deepEqual(
-        await fruitShop02.buy('banana', 1),
-        { name: 'banana', amount: 1, total: 1 }
-      )
+      deepEqual(await fruitShop02.buy('banana', 1), {
+        amount: 1,
+        name: 'banana',
+        total: 1,
+      })
 
-      deepEqual(
-        await fruitShop01.buy('orange', 400),
-        { name: 'orange', amount: 400, total: 500 }
-      )
+      deepEqual(await fruitShop01.buy('orange', 400), {
+        amount: 400,
+        name: 'orange',
+        total: 500,
+      })
 
-      equal(
-        await fruitShop01.getTotal(),
-        500,
-      )
+      equal(await fruitShop01.getTotal(), 500)
 
       {
         const caught = await fruitShop01.somethingWrong().catch((e) => e)
@@ -171,21 +171,17 @@ describe('the-server', function () {
         equal(caught.name, 'NotAcceptableError')
       }
 
-      equal(
-        await fruitShop01.callSayHi(),
-        'hi'
-      )
+      equal(await fruitShop01.callSayHi(), 'hi')
 
       await client01.close()
 
       {
         // Same client again
-        const client01 = theClient({ port, cid: 'client01' })
+        const client01 = theClient({ cid: 'client01', port })
         const fruitShop01 = await client01.use('fruitShop')
         const bought = await fruitShop01.buy('orange', 100)
         equal(bought.total, 600)
         await client01.close()
-
       }
 
       await server.destroyAllSessions()
@@ -194,41 +190,43 @@ describe('the-server', function () {
     }
 
     {
-      const { body, statusCode } = await arequest(`http://localhost:${port}/the/info`)
+      const { body, statusCode } = await arequest(
+        `http://localhost:${port}/the/info`,
+      )
       equal(statusCode, 200)
       ok(body.alive)
       ok(body.uptime)
       deepEqual(body.controllers, [
         {
-          'methods': {
-            'buy': { desc: 'buy' },
-            'callSayHi': { desc: 'callSayHi' },
-            'clear': { desc: 'clear' },
-            'getTotal': { desc: 'getTotal' },
-            'hoge': { 'desc': 'hoge' },
-            'somethingWrong': { desc: 'somethingWrong' },
+          methods: {
+            buy: { desc: 'buy' },
+            callSayHi: { desc: 'callSayHi' },
+            clear: { desc: 'clear' },
+            getTotal: { desc: 'getTotal' },
+            hoge: { desc: 'hoge' },
+            somethingWrong: { desc: 'somethingWrong' },
           },
-          'name': 'fruitShop',
+          name: 'fruitShop',
         },
         {
-          'methods': {
-            'sayHi': { desc: 'sayHi' },
+          methods: {
+            sayHi: { desc: 'sayHi' },
           },
-          'name': 'say',
-        }
+          name: 'say',
+        },
       ])
     }
 
     await server.close()
-
   })
 
   it('With endpoints and html', async () => {
     const port = await aport()
     const server = new TheServer({
+      cacheDir: `${__dirname}/../tmp/testing-cache`,
       endpoints: {
         '/foo/bar/:id': (ctx) => {
-          ctx.body = { rendered: true, id: ctx.params.id }
+          ctx.body = { id: ctx.params.id, rendered: true }
         },
         '/hoge/:key': {
           GET: (ctx) => {
@@ -236,24 +234,27 @@ describe('the-server', function () {
             ctx.body = {
               key: ctx.params.key,
             }
-          }
-        }
+          },
+        },
       },
-      html: ({}) => React.createElement('html', { id: 'hoge' }),
-      cacheDir: `${__dirname}/../tmp/testing-cache`
+      html: () => React.createElement('html', { id: 'hoge' }),
     })
     await server.listen(port)
 
     {
       {
-        const { body, statusCode } = await arequest(`http://localhost:${port}/the/ping`)
+        const { body, statusCode } = await arequest(
+          `http://localhost:${port}/the/ping`,
+        )
         equal(statusCode, 200)
         equal(body, 'pong')
       }
     }
 
     {
-      const { body, statusCode } = await arequest(`http://localhost:${port}/hoge/a.txt`)
+      const { body, statusCode } = await arequest(
+        `http://localhost:${port}/hoge/a.txt`,
+      )
       equal(statusCode, 200)
       equal(body.key, 'a.txt')
     }
@@ -262,7 +263,7 @@ describe('the-server', function () {
       {
         const startAt = new Date()
         let { body, statusCode } = await arequest(
-          `http://localhost:${port}/a?hoge`
+          `http://localhost:${port}/a?hoge`,
         )
         equal(statusCode, 200)
         equal(body, '<!DOCTYPE html><html id="hoge"></html>')
@@ -272,7 +273,7 @@ describe('the-server', function () {
       {
         const startAt = new Date()
         let { body, statusCode } = await arequest(
-          `http://localhost:${port}/a?hoge`
+          `http://localhost:${port}/a?hoge`,
         )
         equal(statusCode, 200)
         equal(body, '<!DOCTYPE html><html id="hoge"></html>')
@@ -282,7 +283,7 @@ describe('the-server', function () {
       {
         const startAt = new Date()
         let { body, statusCode } = await arequest(
-          `http://localhost:${port}/a?hoge`
+          `http://localhost:${port}/a?hoge`,
         )
         equal(statusCode, 200)
         equal(body, '<!DOCTYPE html><html id="hoge"></html>')
@@ -294,22 +295,20 @@ describe('the-server', function () {
 
     {
       let { body, statusCode } = await arequest(
-        `http://localhost:${port}/foo/bar/3`
+        `http://localhost:${port}/foo/bar/3`,
       )
       equal(statusCode, 200)
-      deepEqual(body, { rendered: true, id: '3' })
+      deepEqual(body, { id: '3', rendered: true })
     }
 
     {
-      let { body, statusCode } = await arequest(
-        `http://localhost:${port}`
-      )
+      let { body, statusCode } = await arequest(`http://localhost:${port}`)
     }
 
     await server.close()
   })
 
-  it('Controller lifecycle', async function () {
+  it('Controller lifecycle', async function() {
     const port = await aport()
 
     let wasCalledControllerDidAttatch = false
@@ -330,12 +329,12 @@ describe('the-server', function () {
     }
 
     const server = new TheServer({
-      injectors: {
-        store: () => ({ isStore: true })
-      },
       controllers: {
-        'lifecycle': LifecycleCtrl,
-      }
+        lifecycle: LifecycleCtrl,
+      },
+      injectors: {
+        store: () => ({ isStore: true }),
+      },
     })
 
     await server.listen(port)
@@ -361,7 +360,7 @@ describe('the-server', function () {
     const server = new TheServer({
       streams: {
         hogeStream: class extends TheServer.Stream {
-          async * provide() {
+          async *provide() {
             let count = Number(this.params.count)
             while (count > 0) {
               if (this.closed) {
@@ -373,23 +372,25 @@ describe('the-server', function () {
             }
             void this.close()
           }
-        }
-      }
+        },
+      },
     })
     await server.listen(port)
 
     {
       const cid = 'c0011'
       const sid = 's0011'
-      const socket = socketIOClient(`http://localhost:${port}/rpc?cid=${cid}&via=client`)
+      const socket = socketIOClient(
+        `http://localhost:${port}/rpc?cid=${cid}&via=client`,
+      )
 
       const received = []
       socket.on(`stream:chunk/${sid}`, (d) => received.push(d))
 
       socket.emit('stream:open', {
-        streamName: 'hogeStream',
+        params: { count: 100 },
         sid,
-        params: { count: 100 }
+        streamName: 'hogeStream',
       })
       await new Promise((resolve) => {
         socket.once('stream:did:close', () => resolve())
@@ -416,7 +417,7 @@ describe('the-server', function () {
     })
     await server.listen(port)
     {
-      const client01 = theClient({ port, cid: 'client01' })
+      const client01 = theClient({ cid: 'client01', port })
       const xCtrl = await client01.use('xCtrl')
       await xCtrl.waitAndSay('Hei')
       await client01.close()
@@ -441,7 +442,7 @@ describe('the-server', function () {
     })
     await server.listen(port)
     for (let i = 0; i < 10; i++) {
-      const client01 = theClient({ port, cid: 'client01' })
+      const client01 = theClient({ cid: 'client01', port })
       const xCtrl = await client01.use('xCtrl')
       void xCtrl.waitAndSay('Hei')
       await asleep(10)
@@ -456,7 +457,7 @@ describe('the-server', function () {
     const server = new TheServer({
       streams: {
         xStream: class extends TheServer.Stream {
-          async * provide() {
+          async *provide() {
             let count = Number(this.params.count)
             for (let i = 0; i < count; i++) {
               yield i
@@ -464,20 +465,18 @@ describe('the-server', function () {
           }
         },
         yStream: class extends TheServer.Stream {
-          async consume(chunks) {
-
-          }
-        }
-      }
+          async consume(chunks) {}
+        },
+      },
     })
     await server.listen(port)
     {
-      const client01 = theClient({ port, cid: 'client01' })
+      const client01 = theClient({ cid: 'client01', port })
       const xStream = await client01.stream('xStream', { count: 2 })
       const yStream = await client01.stream('yStream')
       equal(await xStream.pull(), 0)
       equal(await xStream.pull(), 1)
-      equal(await xStream.pull(), void (0))
+      equal(await xStream.pull(), void 0)
       await asleep(100)
       await yStream.push('hoge')
       await yStream.push('fuge')
@@ -498,13 +497,13 @@ describe('the-server', function () {
           controllers: {
             xCtrl: class XCtrl extends TheServer.Ctrl {
               sayYo() {}
-            }
-          }
+            },
+          },
         })
         servers.push(server)
         await server.listen(port)
 
-        const client = theClient({ port, cid: 'client01' })
+        const client = theClient({ cid: 'client01', port })
         clients.push(client)
         const xCtrl = await client.use('xCtrl')
         await xCtrl.sayYo()
@@ -514,7 +513,9 @@ describe('the-server', function () {
         console.log(`=== Memory usage of ${count} server instance === `)
         const used = process.memoryUsage()
         for (const [key, value] of Object.entries(used)) {
-          console.log(`${key}: ${Math.round(value / 1024 / 1024 * 100) / 100} MB`)
+          console.log(
+            `${key}: ${Math.round((value / 1024 / 1024) * 100) / 100} MB`,
+          )
         }
       }
       await Promise.all(clients.map((client) => client.close()))
@@ -522,7 +523,6 @@ describe('the-server', function () {
       await asleep(25)
     }
   })
-
 })
 
 /* global describe, before, after, it */

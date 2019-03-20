@@ -4,28 +4,23 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const asControllerModule = require('../lib/asControllerModule')
-const {ok, equal} = require('assert')
 
 describe('as-controller-module', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
-
     const m = asControllerModule(
       class Hoge {
-        async sayYes () {
-
-        }
+        async sayYes() {}
       },
       {
-        describeController: () => ({methods: ['sayYes']}),
-        instantiateController: () => ({})
-      }
+        describeController: () => ({ methods: ['sayYes'] }),
+        instantiateController: () => ({}),
+      },
     )
 
     ok(m.sayYes)

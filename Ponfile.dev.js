@@ -63,13 +63,20 @@ module.exports = pon({
       ...['pkg:sync'],
     ],
     build: [
-      ...['format'],
+      ...tasks.build,
+      'pkg:run:build',
+      'format',
     ],
-    publish: ['build', 'pkg:sync', 'pkg:run:build', 'pkg:publish']
+    doc: ['pkg:run:doc'],
+    test: ['pkg:run:test'],
+    publish: ['build', 'doc', 'pkg:sync', 'pkg:publish']
   },
   // -----------------------------------
   // Aliases
   // -----------------------------------
-  ...{},
+  ...{
+    /** Shortcut for 'test` task */
+    t: 'test',
+  },
 
 })

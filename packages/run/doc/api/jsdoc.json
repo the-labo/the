@@ -1,0 +1,142 @@
+[
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/run/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/run",
+    "longname": "module:@the-/run",
+    "name": "@the-/run",
+    "kind": "module",
+    "description": "Script runner for the-framework",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/run/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheRun()",
+    "longname": "TheRun",
+    "name": "TheRun",
+    "kind": "constructor",
+    "description": "Script runner",
+    "memberof": "TheRun",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "number",
+            "Boolean"
+          ]
+        },
+        "optional": true,
+        "description": "Inspect port",
+        "name": "options.inspect"
+      }
+    ],
+    "order": 5
+  },
+  {
+    "id": "TheRun",
+    "longname": "TheRun",
+    "name": "TheRun",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheRun.js",
+      "path": "/Users/okuni/Projects/the/packages/run/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheRun instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheRun"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/run/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "run",
+    "longname": "run",
+    "name": "run",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create and run",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "filename"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "run.js",
+      "path": "/Users/okuni/Projects/the/packages/run/lib"
+    },
+    "order": 3
+  }
+]

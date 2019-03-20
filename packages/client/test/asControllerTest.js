@@ -4,18 +4,16 @@
  */
 'use strict'
 
+const { equal, ok } = require('assert')
 const asController = require('../lib/helpers/asController')
-const {ok, equal} = require('assert')
 
 describe('as-controller', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
-    const spec = {name: 'hog', methods: {}}
+    const spec = { methods: {}, name: 'hog' }
     const ctrl = asController({}, spec, {})
     ok(ctrl)
     ctrl.setCallback('hoge', () => {})

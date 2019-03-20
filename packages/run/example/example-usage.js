@@ -1,8 +1,8 @@
 'use strict'
 
-const {TheRun} = require('@the-/run')
+const { TheRun } = require('@the-/run')
 
-async function tryExample () {
+async function tryExample() {
   const runner = new TheRun()
   await runner.run('bin/app.js')
 }

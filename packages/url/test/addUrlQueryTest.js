@@ -4,32 +4,30 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const addUrlQuery = require('../lib/addUrlQuery')
-const {ok, equal} = require('assert')
 
 describe('add-query', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     equal(
-      addUrlQuery('http://hoge.com/hoge?x=1', {a: 'a1'}),
-      'http://hoge.com/hoge?x=1&a=a1'
+      addUrlQuery('http://hoge.com/hoge?x=1', { a: 'a1' }),
+      'http://hoge.com/hoge?x=1&a=a1',
     )
     equal(
-      addUrlQuery('http://hoge.com/hoge?', {a: 'a1'}),
-      'http://hoge.com/hoge?a=a1'
+      addUrlQuery('http://hoge.com/hoge?', { a: 'a1' }),
+      'http://hoge.com/hoge?a=a1',
     )
     equal(
-      addUrlQuery('http://hoge.com/hoge', {a: 'a1'}),
-      'http://hoge.com/hoge?a=a1'
+      addUrlQuery('http://hoge.com/hoge', { a: 'a1' }),
+      'http://hoge.com/hoge?a=a1',
     )
     equal(
-      addUrlQuery('https://hoge.com:8080', {a: 'a1'}),
-      'https://hoge.com:8080/?a=a1'
+      addUrlQuery('https://hoge.com:8080', { a: 'a1' }),
+      'https://hoge.com:8080/?a=a1',
     )
   })
 })

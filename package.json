@@ -8,6 +8,8 @@
     "url": "http://okunishitaka.com"
   },
   "scripts": {
+    "build": "pon build",
+    "test": "pon test",
     "prepare": "pon prepare"
   },
   "bugs": {
@@ -21,6 +23,10 @@
     "pon": "^5.2.14",
     "pon-task-basic": "^4.2.16",
     "the-file-util": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
   },
   "publishConfig": {
     "access": "public"

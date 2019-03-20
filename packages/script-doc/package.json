@@ -32,6 +32,10 @@
     "injectmock": "^2.0.0",
     "mocha": "^6.0.2"
   },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
   "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "script",

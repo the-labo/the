@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const Store = require('../lib/stores/Store')
-const { ok, equal } = require('assert')
-
 describe('store', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

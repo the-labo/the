@@ -1,12 +1,11 @@
-matrix:
-  include:
-    - &node_package
-      install:
-        - npm install
-      language: node_js
-      node_js:
-        - '10'
-      script:
-        - npm run test
-    - <<: *node_package
-      name: packages/script-jsdoc
+before_install
+  - npm i  -g npm@latest pon
+install:
+  - npm install
+language: node_js
+node_js:
+  - '10'
+script:
+  - pon doc
+  - pon build
+  - pon test

@@ -1,6 +1,7 @@
 /**
  * Default exports
- * @module default
+ * @memberOf module:@the-/pack
+ * @namespace default
  */
 'use strict'
 

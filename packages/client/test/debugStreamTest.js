@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const debugStream = require('../lib/helpers/debugStream')
-const { ok, equal } = require('assert')
-
 describe('debug-stream', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

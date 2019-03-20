@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const langDetector = require('../lib/helpers/langDetector')
-const { ok, equal } = require('assert')
-
 describe('lang-detector', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

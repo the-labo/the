@@ -9,7 +9,7 @@
 <dt><a href="#module_default">default</a></dt>
 <dd><p>Default exports</p>
 </dd>
-<dt><a href="#module_the-server">the-server</a></dt>
+<dt><a href="#module_@the-/server">@the-/server</a></dt>
 <dd><p>HTTP/RPC Server of the-framework</p>
 </dd>
 <dt><a href="#module_adapter">adapter</a></dt>
@@ -122,9 +122,9 @@ Build in endpoints
 ## default
 Default exports
 
-<a name="module_the-server"></a>
+<a name="module_@the-/server"></a>
 
-## the-server
+## @the-/server
 HTTP/RPC Server of the-framework
 
 <a name="module_adapter"></a>

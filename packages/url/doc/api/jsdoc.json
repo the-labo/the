@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-url",
-    "longname": "module:the-url",
-    "name": "the-url",
+    "id": "module:@the-/url",
+    "longname": "module:@the-/url",
+    "name": "@the-/url",
     "kind": "module",
     "description": "URL utility for the-framework",
     "meta": {
@@ -13,12 +13,13 @@
     "order": 2
   },
   {
-    "id": "addQuery",
-    "longname": "addQuery",
+    "id": "module:@the-/url.addQuery",
+    "longname": "module:@the-/url.addQuery",
     "name": "addQuery",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Add query to url string",
+    "memberof": "module:@the-/url",
     "params": [
       {
         "type": {
@@ -57,12 +58,13 @@
     "order": 0
   },
   {
-    "id": "formatUrl",
-    "longname": "formatUrl",
+    "id": "module:@the-/url.formatUrl",
+    "longname": "module:@the-/url.formatUrl",
     "name": "formatUrl",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Format urls",
+    "memberof": "module:@the-/url",
     "params": [
       {
         "type": {

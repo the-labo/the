@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const redisAdapter = require('../lib/adpters/redisAdapter')
-const { ok, equal } = require('assert')
-
 describe('redis-adapter', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

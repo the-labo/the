@@ -26,9 +26,9 @@
     "order": 3
   },
   {
-    "id": "module:the-server",
-    "longname": "module:the-server",
-    "name": "the-server",
+    "id": "module:@the-/server",
+    "longname": "module:@the-/server",
+    "name": "@the-/server",
     "kind": "module",
     "description": "HTTP/RPC Server of the-framework",
     "meta": {
@@ -1095,7 +1095,7 @@
       }
     ],
     "meta": {
-      "lineno": 48,
+      "lineno": 47,
       "filename": "toControllerModuleBind.js",
       "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
     },
@@ -1133,7 +1133,7 @@
       }
     ],
     "meta": {
-      "lineno": 79,
+      "lineno": 78,
       "filename": "toControllerModuleBind.js",
       "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
     },

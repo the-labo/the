@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const callbacksProxy = require('../lib/helpers/callbacksProxy')
-const { ok, equal } = require('assert')
-
 describe('callbacks-proxy', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

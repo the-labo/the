@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const ctxInjector = require('../lib/helpers/ctxInjector')
-const { ok, equal } = require('assert')
-
 describe('ctx-injector', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

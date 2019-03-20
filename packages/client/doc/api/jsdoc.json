@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-client",
-    "longname": "module:the-client",
-    "name": "the-client",
+    "id": "module:@the-/client",
+    "longname": "module:@the-/client",
+    "name": "@the-/client",
     "kind": "module",
     "description": "Client for the-server",
     "meta": {
@@ -24,19 +24,6 @@
       "path": "/Users/okuni/Projects/the/packages/client/lib/constants"
     },
     "order": 16
-  },
-  {
-    "id": "module:IOEvents",
-    "longname": "module:IOEvents",
-    "name": "IOEvents",
-    "kind": "module",
-    "description": "Events for IO",
-    "meta": {
-      "lineno": 1,
-      "filename": "IOEvents.js",
-      "path": "/Users/okuni/Projects/the/packages/client/lib/constants"
-    },
-    "order": 17
   },
   {
     "id": "module:helpers",
@@ -72,7 +59,7 @@
     "scope": "global",
     "description": "Caller key",
     "meta": {
-      "lineno": 103,
+      "lineno": 102,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
@@ -86,7 +73,7 @@
     "scope": "global",
     "description": "Client ID",
     "meta": {
-      "lineno": 105,
+      "lineno": 104,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
@@ -100,7 +87,7 @@
     "scope": "global",
     "description": "Host of client",
     "meta": {
-      "lineno": 107,
+      "lineno": 106,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
@@ -114,7 +101,7 @@
     "scope": "global",
     "description": "Detected lang",
     "meta": {
-      "lineno": 109,
+      "lineno": 108,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
@@ -128,7 +115,7 @@
     "scope": "global",
     "description": "Connecting protocol",
     "meta": {
-      "lineno": 111,
+      "lineno": 110,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
@@ -142,7 +129,7 @@
     "scope": "global",
     "description": "Client instance version number",
     "meta": {
-      "lineno": 113,
+      "lineno": 112,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
@@ -156,7 +143,7 @@
     "scope": "global",
     "description": "Via client",
     "meta": {
-      "lineno": 115,
+      "lineno": 114,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
@@ -200,7 +187,7 @@
       }
     ],
     "meta": {
-      "lineno": 178,
+      "lineno": 177,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
@@ -265,7 +252,7 @@
       }
     ],
     "meta": {
-      "lineno": 288,
+      "lineno": 287,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
@@ -322,7 +309,7 @@
       }
     ],
     "meta": {
-      "lineno": 305,
+      "lineno": 304,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
@@ -360,7 +347,7 @@
       }
     ],
     "meta": {
-      "lineno": 353,
+      "lineno": 352,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
@@ -477,6 +464,21 @@
     "order": 1
   },
   {
+    "id": "module:@the-/client.IOEvents",
+    "longname": "module:@the-/client.IOEvents",
+    "name": "IOEvents",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Events for IO",
+    "memberof": "module:@the-/client",
+    "meta": {
+      "lineno": 1,
+      "filename": "IOEvents.js",
+      "path": "/Users/okuni/Projects/the/packages/client/lib/constants"
+    },
+    "order": 17
+  },
+  {
     "id": "module:@the-/client.create",
     "longname": "module:@the-/client.create",
     "name": "create",
@@ -550,7 +552,7 @@
       }
     ],
     "meta": {
-      "lineno": 46,
+      "lineno": 45,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },

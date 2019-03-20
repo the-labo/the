@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const parseClientUrl = require('../lib/helpers/parseClientUrl')
-const { ok, equal } = require('assert')
-
 describe('parse-client-url', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

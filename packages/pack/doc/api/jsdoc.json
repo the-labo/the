@@ -1,0 +1,191 @@
+[
+  {
+    "id": "module:@the-/pack",
+    "longname": "module:@the-/pack",
+    "name": "@the-/pack",
+    "kind": "module",
+    "description": "Message pack wrapper for the-components",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/pack/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "ThePack",
+    "longname": "ThePack",
+    "name": "ThePack",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "ThePack.js",
+      "path": "/Users/okuni/Projects/the/packages/pack/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "ThePack#bind",
+    "longname": "ThePack#bind",
+    "name": "bind",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Bind methods",
+    "memberof": "ThePack",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 31,
+      "filename": "ThePack.js",
+      "path": "/Users/okuni/Projects/the/packages/pack/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "ThePack#decode",
+    "longname": "ThePack#decode",
+    "name": "decode",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Decode buffer",
+    "memberof": "ThePack",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Buffer",
+            "ArrayBuffer"
+          ]
+        },
+        "description": "Buffer to decode",
+        "name": "buffer"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "description": "Decoded data"
+      }
+    ],
+    "meta": {
+      "lineno": 43,
+      "filename": "ThePack.js",
+      "path": "/Users/okuni/Projects/the/packages/pack/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "ThePack#encode",
+    "longname": "ThePack#encode",
+    "name": "encode",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Encode data into buffer",
+    "memberof": "ThePack",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "description": "Encoded data",
+        "name": "data"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Buffer",
+            "ArrayBuffer"
+          ]
+        },
+        "description": "Encoded buffer"
+      }
+    ],
+    "meta": {
+      "lineno": 68,
+      "filename": "ThePack.js",
+      "path": "/Users/okuni/Projects/the/packages/pack/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "module:@the-/pack.Converters",
+    "longname": "module:@the-/pack.Converters",
+    "name": "Converters",
+    "kind": "namespace",
+    "scope": "static",
+    "memberof": "module:@the-/pack",
+    "meta": {
+      "lineno": 1,
+      "filename": "Converters.js",
+      "path": "/Users/okuni/Projects/the/packages/pack/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/pack.default",
+    "longname": "module:@the-/pack.default",
+    "name": "default",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Default exports",
+    "memberof": "module:@the-/pack",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/pack/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "module:@the-/pack.create",
+    "longname": "module:@the-/pack.create",
+    "name": "create",
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a ThePack instance",
+    "memberof": "module:@the-/pack",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "ThePack"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/pack/lib"
+    },
+    "order": 1
+  }
+]

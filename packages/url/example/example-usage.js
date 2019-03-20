@@ -1,8 +1,8 @@
 'use strict'
 
-const { formatUrl } = require('the-url')
+const { formatUrl } = require('@the-/url')
 
-async function tryExample () {
+async function tryExample() {
   let url = formatUrl('/foo/:id', { id: 2 })
   console.log(url) // "/foo/2"
 }

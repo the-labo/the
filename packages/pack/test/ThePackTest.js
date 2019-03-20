@@ -4,24 +4,19 @@
  */
 'use strict'
 
+const { deepStrictEqual: deepEqual, ok, strictEqual: equal } = require('assert')
 const ThePack = require('../lib/ThePack')
-const { ok, strictEqual: equal, deepStrictEqual: deepEqual } = require('assert')
 
 describe('the-pack', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(ThePack)
     const pack = new ThePack()
 
-    deepEqual(
-      pack.decode(pack.encode({ foo: 'bar' })),
-      { foo: 'bar' },
-    )
+    deepEqual(pack.decode(pack.encode({ foo: 'bar' })), { foo: 'bar' })
 
     equal(pack.decode(null), null)
     equal(pack.encode(null), null)
@@ -33,9 +28,7 @@ describe('the-pack', () => {
 
   it('Passing props', () => {
     const pack = new ThePack()
-    ok(
-      pack.decode(pack.encode({ foo: () => 'f' })),
-    )
+    ok(pack.decode(pack.encode({ foo: () => 'f' })))
   })
 
   it('Try circular', () => {

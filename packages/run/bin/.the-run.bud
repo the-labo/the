@@ -1,14 +1,13 @@
 /**
  * Bud file for bin.
  */
-
 'use strict'
 
-const {bin} = require('the-templates')
+const { bin } = require('@the-/templates')
 
 module.exports = bin({
+  path: 'the-run',
   signature: require('../signature'),
-  path: 'the-run'
 })
 
 if (!module.parent) {

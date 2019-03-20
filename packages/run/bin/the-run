@@ -20,7 +20,7 @@ program.parse(process.argv)
 
 // Run main command
 theRun.apply(theRun, program.args.concat({
-  inspect: program.inspect})
+  inspect: program['inspect']})
 ).catch(handleError)
 
 // Handlers

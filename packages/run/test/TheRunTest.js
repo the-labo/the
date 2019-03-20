@@ -4,27 +4,23 @@
  */
 'use strict'
 
-const TheRun = require('../lib/TheRun')
-const {ok, equal} = require('assert')
 const aport = require('aport')
+const { ok } = require('assert')
+const TheRun = require('../lib/TheRun')
 
 describe('the-run', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     ok(TheRun)
 
     const run = new TheRun({
-      inspect: await aport()
+      inspect: await aport(),
     })
 
-    await run.run(
-      `${__dirname}/../misc/mocks/mock-bin-01.js`
-    )
+    await run.run(`${__dirname}/../misc/mocks/mock-bin-01.js`)
   })
 
   it('Do test with error', async () => {
@@ -32,9 +28,7 @@ describe('the-run', () => {
 
     const run = new TheRun({})
 
-    await run.run(
-      `${__dirname}/../misc/mocks/mock-bin-02.js`,
-    )
+    await run.run(`${__dirname}/../misc/mocks/mock-bin-02.js`)
   })
 })
 

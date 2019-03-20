@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const debugController = require('../lib/helpers/debugController')
-const { ok, equal } = require('assert')
-
 describe('debug-controller', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

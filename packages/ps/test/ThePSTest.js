@@ -4,27 +4,24 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const ThePS = require('../lib/ThePS')
-const {ok, equal} = require('assert')
 
 describe('the-ps', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     ok(ThePS)
 
     const ps = new ThePS(`${__dirname}/../tmp/hoge/foo.pid`, {
-      logEnabled: true
+      logEnabled: true,
     })
 
     await ps.acquire({
-      killPolicy: 'force'
+      killPolicy: 'force',
     })
-
   })
 })
 

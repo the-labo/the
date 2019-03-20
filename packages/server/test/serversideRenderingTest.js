@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const serversideRendering = require('../lib/helpers/serversideRendering')
-const { ok, equal } = require('assert')
-
 describe('serverside-rendering', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

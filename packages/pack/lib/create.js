@@ -1,5 +1,6 @@
 /**
  * Create a ThePack instance
+ * @memberOf module:@the-/pack
  * @function create
  * @param {...*} args
  * @returns {ThePack}
@@ -9,7 +10,7 @@
 const ThePack = require('./ThePack')
 
 /** @lends create */
-function create (...args) {
+function create(...args) {
   return new ThePack(...args)
 }
 

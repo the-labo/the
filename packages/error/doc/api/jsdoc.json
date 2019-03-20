@@ -1,0 +1,358 @@
+[
+  {
+    "id": "module:@the-/error",
+    "longname": "module:@the-/error",
+    "name": "@the-/error",
+    "kind": "module",
+    "description": "Error for the-framework",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/error/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "module:@the-/error.TheConflictError()",
+    "longname": "module:@the-/error.TheConflictError",
+    "name": "TheConflictError",
+    "kind": "constructor",
+    "description": "Error With status 409",
+    "memberof": "module:@the-/error.TheConflictError",
+    "order": 4
+  },
+  {
+    "id": "module:@the-/error.TheError()",
+    "longname": "module:@the-/error.TheError",
+    "name": "TheError",
+    "kind": "constructor",
+    "description": "Basic error",
+    "memberof": "module:@the-/error.TheError",
+    "order": 6
+  },
+  {
+    "id": "module:@the-/error.TheExpiredError()",
+    "longname": "module:@the-/error.TheExpiredError",
+    "name": "TheExpiredError",
+    "kind": "constructor",
+    "description": "Error With status 400",
+    "memberof": "module:@the-/error.TheExpiredError",
+    "order": 8
+  },
+  {
+    "id": "module:@the-/error.TheForbiddenError()",
+    "longname": "module:@the-/error.TheForbiddenError",
+    "name": "TheForbiddenError",
+    "kind": "constructor",
+    "description": "Error With status 403",
+    "memberof": "module:@the-/error.TheForbiddenError",
+    "order": 10
+  },
+  {
+    "id": "module:@the-/error.TheGoneError()",
+    "longname": "module:@the-/error.TheGoneError",
+    "name": "TheGoneError",
+    "kind": "constructor",
+    "description": "Error With status 410",
+    "memberof": "module:@the-/error.TheGoneError",
+    "order": 12
+  },
+  {
+    "id": "module:@the-/error.TheInvalidParameterError()",
+    "longname": "module:@the-/error.TheInvalidParameterError",
+    "name": "TheInvalidParameterError",
+    "kind": "constructor",
+    "description": "Error With status 400",
+    "memberof": "module:@the-/error.TheInvalidParameterError",
+    "order": 14
+  },
+  {
+    "id": "module:@the-/error.TheNotAcceptableError()",
+    "longname": "module:@the-/error.TheNotAcceptableError",
+    "name": "TheNotAcceptableError",
+    "kind": "constructor",
+    "description": "Error With status 406",
+    "memberof": "module:@the-/error.TheNotAcceptableError",
+    "order": 16
+  },
+  {
+    "id": "module:@the-/error.TheNotFoundError()",
+    "longname": "module:@the-/error.TheNotFoundError",
+    "name": "TheNotFoundError",
+    "kind": "constructor",
+    "description": "Error With status 404",
+    "memberof": "module:@the-/error.TheNotFoundError",
+    "order": 18
+  },
+  {
+    "id": "module:@the-/error.TheRequestTimeoutError()",
+    "longname": "module:@the-/error.TheRequestTimeoutError",
+    "name": "TheRequestTimeoutError",
+    "kind": "constructor",
+    "description": "Error With status 408",
+    "memberof": "module:@the-/error.TheRequestTimeoutError",
+    "order": 20
+  },
+  {
+    "id": "module:@the-/error.TheServerRottenError()",
+    "longname": "module:@the-/error.TheServerRottenError",
+    "name": "TheServerRottenError",
+    "kind": "constructor",
+    "description": "Error With status 500",
+    "memberof": "module:@the-/error.TheServerRottenError",
+    "order": 22
+  },
+  {
+    "id": "module:@the-/error.TheUnauthorizedError()",
+    "longname": "module:@the-/error.TheUnauthorizedError",
+    "name": "TheUnauthorizedError",
+    "kind": "constructor",
+    "description": "Error With status 401",
+    "memberof": "module:@the-/error.TheUnauthorizedError",
+    "order": 24
+  },
+  {
+    "id": "module:@the-/error.TheConflictError",
+    "longname": "module:@the-/error.TheConflictError",
+    "name": "TheConflictError",
+    "kind": "class",
+    "scope": "static",
+    "augments": [
+      "TheError"
+    ],
+    "memberof": "module:@the-/error",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheConflictError.js",
+      "path": "/Users/okuni/Projects/the/packages/error/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "module:@the-/error.TheError",
+    "longname": "module:@the-/error.TheError",
+    "name": "TheError",
+    "kind": "class",
+    "scope": "static",
+    "memberof": "module:@the-/error",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheError.js",
+      "path": "/Users/okuni/Projects/the/packages/error/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "module:@the-/error.TheExpiredError",
+    "longname": "module:@the-/error.TheExpiredError",
+    "name": "TheExpiredError",
+    "kind": "class",
+    "scope": "static",
+    "augments": [
+      "TheError"
+    ],
+    "memberof": "module:@the-/error",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheExpiredError.js",
+      "path": "/Users/okuni/Projects/the/packages/error/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "module:@the-/error.TheForbiddenError",
+    "longname": "module:@the-/error.TheForbiddenError",
+    "name": "TheForbiddenError",
+    "kind": "class",
+    "scope": "static",
+    "augments": [
+      "TheError"
+    ],
+    "memberof": "module:@the-/error",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheForbiddenError.js",
+      "path": "/Users/okuni/Projects/the/packages/error/lib"
+    },
+    "order": 9
+  },
+  {
+    "id": "module:@the-/error.TheGoneError",
+    "longname": "module:@the-/error.TheGoneError",
+    "name": "TheGoneError",
+    "kind": "class",
+    "scope": "static",
+    "augments": [
+      "TheError"
+    ],
+    "memberof": "module:@the-/error",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheGoneError.js",
+      "path": "/Users/okuni/Projects/the/packages/error/lib"
+    },
+    "order": 11
+  },
+  {
+    "id": "module:@the-/error.TheInvalidParameterError",
+    "longname": "module:@the-/error.TheInvalidParameterError",
+    "name": "TheInvalidParameterError",
+    "kind": "class",
+    "scope": "static",
+    "augments": [
+      "TheError"
+    ],
+    "memberof": "module:@the-/error",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheInvalidParameterError.js",
+      "path": "/Users/okuni/Projects/the/packages/error/lib"
+    },
+    "order": 13
+  },
+  {
+    "id": "module:@the-/error.TheNotAcceptableError",
+    "longname": "module:@the-/error.TheNotAcceptableError",
+    "name": "TheNotAcceptableError",
+    "kind": "class",
+    "scope": "static",
+    "augments": [
+      "TheError"
+    ],
+    "memberof": "module:@the-/error",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheNotAcceptableError.js",
+      "path": "/Users/okuni/Projects/the/packages/error/lib"
+    },
+    "order": 15
+  },
+  {
+    "id": "module:@the-/error.TheNotFoundError",
+    "longname": "module:@the-/error.TheNotFoundError",
+    "name": "TheNotFoundError",
+    "kind": "class",
+    "scope": "static",
+    "augments": [
+      "TheError"
+    ],
+    "memberof": "module:@the-/error",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheNotFoundError.js",
+      "path": "/Users/okuni/Projects/the/packages/error/lib"
+    },
+    "order": 17
+  },
+  {
+    "id": "module:@the-/error.TheRequestTimeoutError",
+    "longname": "module:@the-/error.TheRequestTimeoutError",
+    "name": "TheRequestTimeoutError",
+    "kind": "class",
+    "scope": "static",
+    "augments": [
+      "TheError"
+    ],
+    "memberof": "module:@the-/error",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheRequestTimeoutError.js",
+      "path": "/Users/okuni/Projects/the/packages/error/lib"
+    },
+    "order": 19
+  },
+  {
+    "id": "module:@the-/error.TheServerRottenError",
+    "longname": "module:@the-/error.TheServerRottenError",
+    "name": "TheServerRottenError",
+    "kind": "class",
+    "scope": "static",
+    "augments": [
+      "TheError"
+    ],
+    "memberof": "module:@the-/error",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheServerRottenError.js",
+      "path": "/Users/okuni/Projects/the/packages/error/lib"
+    },
+    "order": 21
+  },
+  {
+    "id": "module:@the-/error.TheUnauthorizedError",
+    "longname": "module:@the-/error.TheUnauthorizedError",
+    "name": "TheUnauthorizedError",
+    "kind": "class",
+    "scope": "static",
+    "augments": [
+      "TheError"
+    ],
+    "memberof": "module:@the-/error",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheUnauthorizedError.js",
+      "path": "/Users/okuni/Projects/the/packages/error/lib"
+    },
+    "order": 23
+  },
+  {
+    "id": "module:@the-/error.create",
+    "longname": "module:@the-/error.create",
+    "name": "create",
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheError instance",
+    "memberof": "module:@the-/error",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheError"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/error/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/error.define",
+    "longname": "module:@the-/error.define",
+    "name": "define",
+    "kind": "function",
+    "scope": "static",
+    "description": "Define an error class",
+    "memberof": "module:@the-/error",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Error class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "define.js",
+      "path": "/Users/okuni/Projects/the/packages/error/lib"
+    },
+    "order": 1
+  }
+]

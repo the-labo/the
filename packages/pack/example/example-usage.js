@@ -2,8 +2,7 @@
 
 const { ThePack } = require('the-pack')
 
-async function tryExample () {
-
+async function tryExample() {
   const { decode, encode } = new ThePack()
 
   const encoded = encode({ foo: 'bar' })

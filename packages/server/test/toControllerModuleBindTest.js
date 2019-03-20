@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const toControllerModuleBind = require('../lib/helpers/toControllerModuleBind')
-const { ok, equal } = require('assert')
-
 describe('to-controller-module-bind', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

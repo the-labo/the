@@ -4,34 +4,30 @@
  */
 'use strict'
 
+const aport = require('aport')
+const asleep = require('asleep')
+const { deepEqual, equal, ok } = require('assert')
+const { TheError } = require('the-error')
 const { TheServer } = require('the-server')
 const TheClient = require('../lib/TheClient')
-const { TheError } = require('the-error')
-const { ok, equal, deepEqual } = require('assert')
-const aport = require('aport')
-const fs = require('fs')
-const asleep = require('asleep')
 
 describe('the-client', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', async function () {
+  it('Do test', async function() {
     this.timeout(20 * 1000)
     ok(TheClient)
 
     const port = await aport()
 
     class FruitShopCtrl extends TheServer.Ctrl {
-
       buy(name, amount) {
-        const { session, callbacks } = this
+        const { callbacks, session } = this
         const { total = 0 } = session
         session.total = total + amount
-        const result = { name, amount, total: session.total }
+        const result = { amount, name, total: session.total }
         asleep(10)
         callbacks.onBuy(amount, session.total)
         return result
@@ -44,8 +40,8 @@ describe('the-client', () => {
 
     const server = new TheServer({
       controllers: {
-        fruitShop: FruitShopCtrl
-      }
+        fruitShop: FruitShopCtrl,
+      },
     })
     await server.listen(port)
 
@@ -67,30 +63,32 @@ describe('the-client', () => {
       fruitShop01.setCallback({
         onBuy(...results) {
           onBuyData.push(results)
-        }
+        },
       })
 
       {
-
         const controllers = await client01.useAll()
         deepEqual(Object.keys(controllers), ['fruitShop'])
         ok(controllers['fruitShop'])
       }
 
-      deepEqual(
-        await fruitShop01.buy('orange', 100),
-        { name: 'orange', amount: 100, total: 100 }
-      )
+      deepEqual(await fruitShop01.buy('orange', 100), {
+        amount: 100,
+        name: 'orange',
+        total: 100,
+      })
 
-      deepEqual(
-        await fruitShop01.buy('orange', 400),
-        { name: 'orange', amount: 400, total: 500 }
-      )
+      deepEqual(await fruitShop01.buy('orange', 400), {
+        amount: 400,
+        name: 'orange',
+        total: 500,
+      })
 
-      deepEqual(
-        await fruitShop02.buy('orange', 400),
-        { name: 'orange', amount: 400, total: 400 }
-      )
+      deepEqual(await fruitShop02.buy('orange', 400), {
+        amount: 400,
+        name: 'orange',
+        total: 400,
+      })
 
       {
         const caught = await fruitShop01.doWrong().catch((e) => e)
@@ -109,19 +107,18 @@ describe('the-client', () => {
       const serverInfo = await client02.serverInfo()
       deepEqual(serverInfo.controllers, [
         {
-          'methods': {
-            'buy': { 'desc': 'buy' },
-            'doWrong': { 'desc': 'doWrong' }
+          methods: {
+            buy: { desc: 'buy' },
+            doWrong: { desc: 'doWrong' },
           },
-          'name': 'fruitShop'
-        }
+          name: 'fruitShop',
+        },
       ])
       await client01.close()
 
       await asleep(10)
 
       await client02.close()
-
     }
 
     await server.close()
@@ -135,7 +132,7 @@ describe('the-client', () => {
     const port = await aport()
 
     class CountdownStream extends TheServer.Stream {
-      async * provide() {
+      async *provide() {
         let count = Number(this.params.count)
         while (count > 0) {
           if (this.closed) {
@@ -150,8 +147,8 @@ describe('the-client', () => {
 
     const server = new TheServer({
       streams: {
-        countdown: CountdownStream
-      }
+        countdown: CountdownStream,
+      },
     })
     await server.listen(port)
 
@@ -192,7 +189,7 @@ describe('the-client', () => {
     const server = new TheServer({
       streams: {
         countup: CountupStream,
-      }
+      },
     })
     await server.listen(port)
 

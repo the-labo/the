@@ -6,15 +6,20 @@
 'use strict'
 
 const pon = require('pon')
+const { coz } = require('pon-task-basic')
 
 module.exports = pon({
 
-  ...{},
+  ...{
+    'struct:render': coz('.*.bud')
+  },
   // -----------------------------------
   // Main Tasks
   // -----------------------------------
   ...{
-    prepare: []
+    struct: ['struct:render'],
+    prepare: [],
+    build: ['struct']
   },
   // -----------------------------------
   // Aliases
@@ -22,6 +27,8 @@ module.exports = pon({
   ...{
     /** Shortcut for 'prepare` task */
     pre: 'prepare',
+    /** Shortcut for 'build` task */
+    b: 'build',
   },
 
 })

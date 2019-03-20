@@ -3,11 +3,11 @@
 const IOEvents = require('the-server/lib/constants/IOEvents')
 
 module.exports = {
-  force: true,
-  mode: '444',
   data: {
     values: IOEvents,
-  }
+  },
+  force: true,
+  mode: '444',
 }
 if (!module.parent) {
   require('coz').render(__filename)

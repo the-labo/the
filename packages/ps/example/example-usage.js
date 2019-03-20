@@ -2,7 +2,7 @@
 
 const thePS = require('@the-/ps').default
 
-async function tryExample () {
+async function tryExample() {
   const ps = thePS('var/my-process.pid')
 
   // Terminate zombie and generate pid file

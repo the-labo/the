@@ -1,0 +1,42 @@
+[
+  {
+    "name": "TheUnauthorizedError",
+    "status": 401
+  },
+  {
+    "name": "TheForbiddenError",
+    "status": 403
+  },
+  {
+    "name": "TheNotFoundError",
+    "status": 404
+  },
+  {
+    "name": "TheNotAcceptableError",
+    "status": 406
+  },
+  {
+    "name": "TheRequestTimeoutError",
+    "status": 408
+  },
+  {
+    "name": "TheConflictError",
+    "status": 409
+  },
+  {
+    "name": "TheGoneError",
+    "status": 410
+  },
+  {
+    "name": "TheExpiredError",
+    "status": 400
+  },
+  {
+    "name": "TheInvalidParameterError",
+    "status": 400
+  },
+  {
+    "name": "TheServerRottenError",
+    "status": 500
+  }
+]

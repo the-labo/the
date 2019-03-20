@@ -1,0 +1,185 @@
+[
+  {
+    "id": "module:@the-/queue",
+    "longname": "module:@the-/queue",
+    "name": "@the-/queue",
+    "kind": "module",
+    "description": "Queue for the-framework",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/queue/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheQueue",
+    "longname": "TheQueue",
+    "name": "TheQueue",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheQueue.js",
+      "path": "/Users/okuni/Projects/the/packages/queue/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "TheQueue#push",
+    "longname": "TheQueue#push",
+    "name": "push",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Push next task",
+    "memberof": "TheQueue",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Task to execute",
+        "name": "task"
+      }
+    ],
+    "meta": {
+      "lineno": 38,
+      "filename": "TheQueue.js",
+      "path": "/Users/okuni/Projects/the/packages/queue/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheQueue#start",
+    "longname": "TheQueue#start",
+    "name": "start",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Start queue",
+    "memberof": "TheQueue",
+    "params": [],
+    "meta": {
+      "lineno": 61,
+      "filename": "TheQueue.js",
+      "path": "/Users/okuni/Projects/the/packages/queue/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheQueue#stop",
+    "longname": "TheQueue#stop",
+    "name": "stop",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Stop queue",
+    "memberof": "TheQueue",
+    "params": [],
+    "meta": {
+      "lineno": 69,
+      "filename": "TheQueue.js",
+      "path": "/Users/okuni/Projects/the/packages/queue/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "TheQueue#wait",
+    "longname": "TheQueue#wait",
+    "name": "wait",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Wait until queue got empty",
+    "memberof": "TheQueue",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "60*1000",
+        "description": "Timeout duration",
+        "name": "options.timeout"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 100,
+      "filename": "TheQueue.js",
+      "path": "/Users/okuni/Projects/the/packages/queue/lib"
+    },
+    "async": true,
+    "order": 7
+  },
+  {
+    "id": "module:@the-/queue.default",
+    "longname": "module:@the-/queue.default",
+    "name": "default",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Default exports",
+    "memberof": "module:@the-/queue",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/queue/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/queue.create",
+    "longname": "module:@the-/queue.create",
+    "name": "create",
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheQueue instance",
+    "memberof": "module:@the-/queue",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheQueue"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/queue/lib"
+    },
+    "order": 0
+  }
+]

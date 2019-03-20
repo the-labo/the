@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-ps",
-    "longname": "module:the-ps",
-    "name": "the-ps",
+    "id": "module:@the-/ps",
+    "longname": "module:@the-/ps",
+    "name": "@the-/ps",
     "kind": "module",
     "description": "Process manager for the-framework",
     "meta": {

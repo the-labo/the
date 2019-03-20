@@ -25,14 +25,17 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/the-url#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "lib",
     "the"
   ],
   "license": "MIT",
   "main": "lib",
-  "repository": "the-labo/the-url",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",

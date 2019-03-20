@@ -4,17 +4,19 @@
 'use strict'
 
 const msgpack = require('msgpack-lite')
-const { isBrowser } = require('the-check')
 const { inspect } = require('util')
+const { isBrowser } = require('@the-/check')
 const Converters = require('./Converters')
 
 /** @lends ThePack */
 class ThePack {
-  constructor (options = {}) {
+  constructor(options = {}) {
     this.decode = this.decode.bind(this)
     this.encode = this.encode.bind(this)
     const {
-      converter = isBrowser() ? Converters.UInt8ArrayConverter : Converters.NoopConverter,
+      converter = isBrowser()
+        ? Converters.UInt8ArrayConverter
+        : Converters.NoopConverter,
     } = options
     this.converter = converter
   }
@@ -26,7 +28,7 @@ class ThePack {
    *   encode: function
    * }}
    */
-  bind () {
+  bind() {
     return {
       decode: this.decode.bind(this),
       encode: this.encode.bind(this),
@@ -38,7 +40,7 @@ class ThePack {
    * @param {Buffer|ArrayBuffer} buffer - Buffer to decode
    * @returns {*} Decoded data
    */
-  decode (buffer) {
+  decode(buffer) {
     if (buffer === null) {
       return buffer
     }
@@ -47,11 +49,14 @@ class ThePack {
       const decoding = converter(buffer)
       return msgpack.decode(decoding)
     } catch (e) {
-      const isBuffer = buffer instanceof ArrayBuffer || buffer instanceof Uint8Array
+      const isBuffer =
+        buffer instanceof ArrayBuffer || buffer instanceof Uint8Array
       if (!isBuffer) {
         return buffer
       }
-      throw new Error(`[ThePack] Failed to decode buffer: ${buffer} (reason ${e.message})`)
+      throw new Error(
+        `[ThePack] Failed to decode buffer: ${buffer} (reason ${e.message})`,
+      )
     }
   }
 
@@ -60,7 +65,7 @@ class ThePack {
    * @param {*} data - Encoded data
    * @returns {Buffer|ArrayBuffer} Encoded buffer
    */
-  encode (data) {
+  encode(data) {
     if (data === null) {
       return null
     }
@@ -69,7 +74,11 @@ class ThePack {
       const encoded = msgpack.encode(data)
       return converter(encoded)
     } catch (e) {
-      throw new Error(`[ThePack] Failed to encode data: ${inspect(data)} (reason ${e.message})`)
+      throw new Error(
+        `[ThePack] Failed to encode data: ${inspect(data)} (reason ${
+          e.message
+        })`,
+      )
     }
   }
 }

@@ -3,14 +3,11 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-client">the-client</a></dt>
+<dt><a href="#module_@the-/client">@the-/client</a></dt>
 <dd><p>Client for the-server</p>
 </dd>
 <dt><a href="#module_constants">constants</a></dt>
 <dd><p>Constant variables</p>
-</dd>
-<dt><a href="#module_IOEvents">IOEvents</a></dt>
-<dd><p>Events for IO</p>
 </dd>
 <dt><a href="#module_helpers">helpers</a></dt>
 <dd><p>Client helper functions</p>
@@ -46,20 +43,107 @@
 </dd>
 </dl>
 
-<a name="module_the-client"></a>
+<a name="module_@the-/client"></a>
 
-## the-client
+## @the-/client
 Client for the-server
+
+
+* [@the-/client](#module_@the-/client)
+    * [.TheClient](#module_@the-/client.TheClient)
+    * [.default](#module_@the-/client.default) : <code>object</code>
+    * [.IOEvents](#module_@the-/client.IOEvents) : <code>object</code>
+    * [.create(...args)](#module_@the-/client.create) ⇒ <code>TheClient</code>
+    * [.asController()](#module_@the-/client.asController)
+    * [.debugController()](#module_@the-/client.debugController)
+    * [.debugStream()](#module_@the-/client.debugStream)
+    * [.parseClientUrl()](#module_@the-/client.parseClientUrl) ⇒ <code>string</code>
+    * [.infoMix()](#module_@the-/client.infoMix)
+    * [.pingPongMix(Class)](#module_@the-/client.pingPongMix) ⇒ <code>function</code>
+    * [.streamMix()](#module_@the-/client.streamMix) ⇒ <code>function</code>
+
+<a name="module_@the-/client.TheClient"></a>
+
+### @the-/client.TheClient
+**Kind**: static class of [<code>@the-/client</code>](#module_@the-/client)  
+<a name="module_@the-/client.default"></a>
+
+### @the-/client.default : <code>object</code>
+Default exports
+
+**Kind**: static namespace of [<code>@the-/client</code>](#module_@the-/client)  
+<a name="module_@the-/client.IOEvents"></a>
+
+### @the-/client.IOEvents : <code>object</code>
+Events for IO
+
+**Kind**: static namespace of [<code>@the-/client</code>](#module_@the-/client)  
+<a name="module_@the-/client.create"></a>
+
+### @the-/client.create(...args) ⇒ <code>TheClient</code>
+Create a TheClient instance
+
+**Kind**: static method of [<code>@the-/client</code>](#module_@the-/client)  
+
+| Param | Type |
+| --- | --- |
+| ...args | <code>\*</code> | 
+
+<a name="module_@the-/client.asController"></a>
+
+### @the-/client.asController()
+**Kind**: static method of [<code>@the-/client</code>](#module_@the-/client)  
+<a name="module_@the-/client.debugController"></a>
+
+### @the-/client.debugController()
+Wrap controller instance with debug utility
+
+**Kind**: static method of [<code>@the-/client</code>](#module_@the-/client)  
+<a name="module_@the-/client.debugStream"></a>
+
+### @the-/client.debugStream()
+Wrap stream with debug utility
+
+**Kind**: static method of [<code>@the-/client</code>](#module_@the-/client)  
+<a name="module_@the-/client.parseClientUrl"></a>
+
+### @the-/client.parseClientUrl() ⇒ <code>string</code>
+Parse caller URL
+
+**Kind**: static method of [<code>@the-/client</code>](#module_@the-/client)  
+**Returns**: <code>string</code> - - Parsed url  
+
+| Type | Description |
+| --- | --- |
+| <code>Object</code> \| <code>string</code> | URL string or config |
+
+<a name="module_@the-/client.infoMix"></a>
+
+### @the-/client.infoMix()
+**Kind**: static method of [<code>@the-/client</code>](#module_@the-/client)  
+<a name="module_@the-/client.pingPongMix"></a>
+
+### @the-/client.pingPongMix(Class) ⇒ <code>function</code>
+**Kind**: static method of [<code>@the-/client</code>](#module_@the-/client)  
+**Returns**: <code>function</code> - Mixed class  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| Class | <code>function</code> | Class to mix |
+
+<a name="module_@the-/client.streamMix"></a>
+
+### @the-/client.streamMix() ⇒ <code>function</code>
+**Kind**: static method of [<code>@the-/client</code>](#module_@the-/client)  
+
+| Type |
+| --- |
+| <code>function</code> | 
 
 <a name="module_constants"></a>
 
 ## constants
 Constant variables
-
-<a name="module_IOEvents"></a>
-
-## IOEvents
-Events for IO
 
 <a name="module_helpers"></a>
 

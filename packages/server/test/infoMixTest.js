@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const infoMix = require('../lib/mixins/infoMix')
-const { ok, equal } = require('assert')
-
 describe('info-mix', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

@@ -1,0 +1,18 @@
+/**
+ * Error With status {{status}}
+ * @memberOf module:@the-/error
+ * @augments TheError
+ * @class {{name}}
+ */
+'use strict'
+
+const TheError = require('./TheError')
+
+/** @lends {{name}} */
+class {{name}} extends TheError {
+}
+
+{{name}}.state = {{status}}
+{{name}}.errorName = '{{errorName}}'
+
+module.exports = {{name}}

@@ -50,10 +50,27 @@ root for the-project
 ## Packages
 
 
+- [assert](./packages/assert)
+- [assets](./packages/assets)
+- [bin](./packages/bin)
+- [check](./packages/check)
+- [client](./packages/client)
+- [context](./packages/context)
+- [demo-component](./packages/demo-component)
 - [demo-lib](./packages/demo-lib)
+- [error](./packages/error)
+- [pack](./packages/pack)
+- [ps](./packages/ps)
+- [queue](./packages/queue)
+- [run](./packages/run)
+- [scaffold](./packages/scaffold)
 - [script-build](./packages/script-build)
 - [script-doc](./packages/script-doc)
+- [script-test](./packages/script-test)
+- [server](./packages/server)
 - [templates](./packages/templates)
+- [url](./packages/url)
+- [window](./packages/window)
 
 
 <!-- Section from "doc/readme/10.Packages.md.hbs" End -->

@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const SessionStore = require('../lib/stores/SessionStore')
-const { ok, equal } = require('assert')
-
 describe('session-store', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

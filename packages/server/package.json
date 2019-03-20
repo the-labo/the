@@ -51,10 +51,10 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/server#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
-    "the",
-    "lib"
+    "lib",
+    "the"
   ],
   "license": "MIT",
   "main": "lib",
@@ -62,7 +62,10 @@
     "react": ">=15",
     "react-dom": ">=15"
   },
-  "repository": "the-labo/the-server",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",

@@ -2,7 +2,7 @@
 
 const theClient = require('@the-/client')
 
-async function tryExample () {
+async function tryExample() {
   const client = theClient.for('app')
 
   const fruitShop = await client.use('fruitShop')
