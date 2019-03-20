@@ -1,0 +1,64 @@
+[
+  {
+    "id": "module:@the-/script-test",
+    "longname": "module:@the-/script-test",
+    "name": "@the-/script-test",
+    "kind": "module",
+    "description": "Test script for the-project",
+    "version": "15.0.1",
+    "meta": {
+      "lineno": 1,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/script-test/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/script-test.test",
+    "longname": "module:@the-/script-test.test",
+    "name": "test",
+    "kind": "function",
+    "scope": "static",
+    "description": "Test project",
+    "memberof": "module:@the-/script-test",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "process.cwd()",
+        "description": "Project directory name",
+        "name": "dirname"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "test.js",
+      "path": "/Users/okuni/Projects/the/packages/script-test/lib"
+    },
+    "order": 1
+  }
+]

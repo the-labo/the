@@ -1,0 +1,15 @@
+/**
+ * Bud file for index.js
+ */
+'use strict'
+
+module.exports = {
+  data: {
+    pkg: { name: 'foo', version: '1.0.0' },
+  },
+  force: true,
+  mode: '444',
+}
+if (!module.parent) {
+  require('coz').render(__filename)
+}

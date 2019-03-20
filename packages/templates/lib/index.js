@@ -28,7 +28,6 @@ const nginx_ = require('./nginx')
 const pcssVars_ = require('./pcssVars')
 const prettierrc_ = require('./prettierrc')
 const scopes_ = require('./scopes')
-const selfSigned_ = require('./selfSigned')
 const templates_ = require('./templates')
 const test_ = require('./test')
 const toc_ = require('./toc')
@@ -58,7 +57,6 @@ exports.nginx = nginx_
 exports.pcssVars = pcssVars_
 exports.prettierrc = prettierrc_
 exports.scopes = scopes_
-exports.selfSigned = selfSigned_
 exports.templates = templates_
 exports.test = test_
 exports.toc = toc_
@@ -88,7 +86,6 @@ module.exports = {
   pcssVars: pcssVars_,
   prettierrc: prettierrc_,
   scopes: scopes_,
-  selfSigned: selfSigned_,
   templates: templates_,
   test: test_,
   toc: toc_,

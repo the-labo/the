@@ -1,0 +1,25 @@
+{
+  "TheDemoComponent": {
+    "description": "Demo of the-components",
+    "displayName": "TheDemoComponent",
+    "methods": []
+  },
+  "TheDemoComponentStyle": {
+    "description": "Style for TheDemoComponent",
+    "displayName": "TheDemoComponentStyle",
+    "methods": [],
+    "props": {
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Style options",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  }
+}

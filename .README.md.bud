@@ -4,8 +4,8 @@
 'use strict'
 
 const fs = require('fs')
-const { Readme } = require('./packages/templates')
 const pkg = require('./package')
+const { Readme } = require('./packages/templates')
 
 module.exports = Readme({
   badges: {
@@ -22,7 +22,6 @@ module.exports = Readme({
       .filter((dirname) => !/^\./.test(dirname)),
   },
 })
-
 
 if (!module.parent) {
   require('coz').render(__filename)

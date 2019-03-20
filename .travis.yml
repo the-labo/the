@@ -9,4 +9,4 @@ matrix:
       script:
         - npm run test
     - <<: *node_package
-    - name: packages/script-jsdoc
+      name: packages/script-jsdoc

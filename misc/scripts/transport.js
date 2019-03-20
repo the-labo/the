@@ -5,14 +5,16 @@
 const { spawnSync } = require('child_process')
 const { chmod, readFile, stat, unlink, writeFile } = require('fs').promises
 const path = require('path')
-const pkg = require('../../package')
 const rimraf = require('rimraf')
+const pkg = require('../../package')
 const baseDir = `${__dirname}/../..`
 process.chdir(baseDir)
 
 const packages = {
     [`../the-script-build`]: { kind: 'script', name: 'script-build' },
+    [`../the-script-test`]: { kind: 'script', name: 'script-test' },
     [`../the-demo-lib`]: { kind: 'lib', name: 'demo-lib' },
+    [`../the-demo-component`]: { kind: 'component', name: 'demo-component' },
     [`../the-templates`]: { kind: 'templates', name: 'templates' },
   }
 
@@ -50,54 +52,94 @@ ${msg}
     await unlink(path.resolve(toDir, '.travis.yml')).catch(() => null)
     await unlink(path.resolve(toDir, '.LICENSE.bud')).catch(() => null)
     rimraf.sync(path.resolve(toDir, '.git'))
+    rimraf.sync(path.resolve(toDir, 'ci'))
     await unlink(path.resolve(toDir, 'jsdoc.json')).catch(() => null)
+    await unlink(path.resolve(toDir, '.gitignore')).catch(() => null)
+
+    const { dependencies = {}, devDependencies = {} } = toPkg
     // Cleanup
     {
-      const depsToRemove = [
+      const depsToRemove = []
+      for (const name of depsToRemove) {
+        if (name in dependencies) {
+          console.log(`remove ${name} from ${toDir}...`)
+          spawnSync('npm', ['un', name], { cwd: toDir })
+        }
+      }
+      const devDepsToRemove = [
         'the-script-share',
         'the-script-update',
         'ape-tasking',
         'ape-formatting',
+        'the-script-release',
+        'the-script-test',
+        'the-script-doc',
+        'the-script-jsdoc',
+        'the-templates',
+        'the-script-build',
         'ape-releasing',
+        'amocha',
         'ape-updating',
       ]
-      for (const name of depsToRemove) {
-        if (name in (toPkg.dependencies || {})) {
-          console.log(`remove ${name} from ${toDir}...`)
-          spawnSync('npm', ['un', name], { cwd: toDir })
-        }
-        if (name in (toPkg.devDependencies || {})) {
+      for (const name of devDepsToRemove) {
+        if (name in devDependencies) {
           console.log(`remove ${name} from ${toDir}...`)
           spawnSync('npm', ['un', '-D', name], { cwd: toDir })
         }
       }
     }
-    await writeFile(
-      toPkgFile,
-      JSON.stringify(
-        {
-          ...toPkg,
-          author: {
-            email: 'okunishinishi@gmail.com',
-            name: 'Taka Okunishi',
-            url: 'http://okunishitaka.com',
+    // add
+    {
+      const devDepsToAdd = {
+        '@the-/script-build': 'file:../script-build',
+        '@the-/script-doc': 'file:../script-doc',
+        '@the-/script-test': 'file:../script-test',
+        '@the-/templates': 'file:../templates',
+      }
+      for (const [name, src] of Object.entries(devDepsToAdd)) {
+        if (!(name in devDependencies)) {
+          if (toPkg.name === name) {
+            continue
+          }
+          spawnSync('npm', ['i', '-D', src], { cwd: toDir })
+        }
+      }
+    }
+    {
+      const toPkg = JSON.parse(await readFile(toPkgFile))
+      const { scripts = {} } = toPkg
+      delete scripts.update
+      delete scripts.release
+      await writeFile(
+        toPkgFile,
+        JSON.stringify(
+          {
+            ...toPkg,
+            author: {
+              email: 'okunishinishi@gmail.com',
+              name: 'Taka Okunishi',
+              url: 'http://okunishitaka.com',
+            },
+            bugs: {
+              url: 'https://github.com/the-labo/the#issues',
+            },
+            engines: {
+              node: '>=10',
+              npm: '>=6',
+            },
+            homepage: `https://github.com/the-labo/the/tree/master/packages/${toPkg.name
+              .split('/')
+              .pop()}#readme`,
+            keywords: ['the', kind].filter(Boolean),
+            name: `@the-/${name}`,
+            scripts,
+            version: pkg.version,
           },
-          bugs: {
-            url: 'https://github.com/the-labo/theissues',
-          },
-          engines: {
-            node: '>=10',
-            npm: '>=6',
-          },
-          homepage: `https://github.com/the-labo/the/tree/master/packages/${toPkg.name.split('/').pop()}#readme`,
-          keywords: ['the', kind].filter(Boolean),
-          name: `@the-/${name}`,
-          version: pkg.version,
-        },
-        null,
-        2,
-      ),
-    )
+          null,
+          2,
+        ),
+      )
+    }
   }
 })().catch((e) => {
   console.error(e)

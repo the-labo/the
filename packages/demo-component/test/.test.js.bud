@@ -1,0 +1,15 @@
+/**
+ * Bud file for test cases.
+ */
+'use strict'
+
+const { test } = require('@the-/templates')
+
+module.exports = test({
+  dest: __dirname,
+  src: [`${__dirname}/../lib/**/*.jsx`],
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

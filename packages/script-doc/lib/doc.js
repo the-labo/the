@@ -10,7 +10,6 @@
 
 const aglob = require('aglob')
 const argx = require('argx')
-const findout = require('findout')
 const jsdocToMarkdown = require('jsdoc-to-markdown')
 const { EOL } = require('os')
 const path = require('path')
@@ -25,8 +24,7 @@ async function doc(dirname = process.cwd(), options = {}) {
   const {
     jsonFile = 'doc/api/jsdoc.json',
     mdFile = 'doc/api/api.md',
-    pkg = findout('package.json', { cwd: dirname }),
-    src = ['lib/*.js', 'lib/**/*.js'],
+    src = ['lib/*.js', 'lib/**/*.js', 'lib/*.jsx', 'lib/**/*.jsx'],
   } = options
   const cwd = process.cwd()
   process.chdir(dirname)

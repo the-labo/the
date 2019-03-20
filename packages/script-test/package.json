@@ -1,0 +1,47 @@
+{
+  "name": "@the-/script-test",
+  "description": "Test script for the-project",
+  "version": "15.0.1",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "bin": {
+    "the-script-test": "bin/the-script-test"
+  },
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "amocha": "^5.0.2",
+    "argx": "^4.0.0",
+    "commander": "^2.19.0"
+  },
+  "devDependencies": {
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/templates": "file:../templates",
+    "ape-tmpl": "^6.0.14",
+    "coz": "^7.0.19",
+    "eslint": "^5.15.2",
+    "injectmock": "^2.0.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "homepage": "https://github.com/the-labo/the#readme",
+  "keywords": [
+    "script",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
+  "scripts": {
+    "doc": "the-script-doc",
+    "test": "./bin/the-script-test"
+  }
+}

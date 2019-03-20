@@ -57,9 +57,6 @@
 </dd>
 <dt><a href="#scopes">scopes()</a></dt>
 <dd></dd>
-<dt><a href="#selfSigned">selfSigned()</a> ⇒ <code>Object</code></dt>
-<dd><p>Generate self signed</p>
-</dd>
 <dt><a href="#Stateful">Stateful(config)</a> ⇒ <code>Object</code></dt>
 <dd><p>Stateful</p>
 </dd>
@@ -244,12 +241,6 @@ Scene
 <a name="scopes"></a>
 
 ## scopes()
-**Kind**: global function  
-<a name="selfSigned"></a>
-
-## selfSigned() ⇒ <code>Object</code>
-Generate self signed
-
 **Kind**: global function  
 <a name="Stateful"></a>
 

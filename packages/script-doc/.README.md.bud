@@ -14,13 +14,15 @@ module.exports = readmeMdBud({
   repo: pkg.repository,
   sections: 'doc/readme/*.md.hbs',
   vars: {
-    jsdoc: require('./doc/api/jsdoc').reduce((reduced, item) => ({
-      ...reduced,
-      [item.kind]: [...(reduced[item.kind] || []), item],
-    }), {}),
+    jsdoc: require('./doc/api/jsdoc').reduce(
+      (reduced, item) => ({
+        ...reduced,
+        [item.kind]: [...(reduced[item.kind] || []), item],
+      }),
+      {},
+    ),
   },
 })
-
 
 if (!module.parent) {
   require('coz').render(__filename)

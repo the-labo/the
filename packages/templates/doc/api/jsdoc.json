@@ -590,29 +590,6 @@
     "order": 18
   },
   {
-    "id": "selfSigned",
-    "longname": "selfSigned",
-    "name": "selfSigned",
-    "kind": "function",
-    "scope": "global",
-    "description": "Generate self signed",
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        }
-      }
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "selfSigned.js",
-      "path": "/Users/okuni/Projects/the/packages/templates/lib"
-    },
-    "order": 19
-  },
-  {
     "id": "Stateful",
     "longname": "Stateful",
     "name": "Stateful",
@@ -643,7 +620,7 @@
       "filename": "Stateful.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
-    "order": 20
+    "order": 19
   },
   {
     "id": "Stateless",
@@ -676,7 +653,7 @@
       "filename": "Stateless.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
-    "order": 21
+    "order": 20
   },
   {
     "id": "Stream",
@@ -709,7 +686,7 @@
       "filename": "Stream.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
-    "order": 22
+    "order": 21
   },
   {
     "id": "templates",
@@ -732,7 +709,7 @@
       "filename": "templates.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
-    "order": 23
+    "order": 22
   },
   {
     "id": "test",
@@ -755,7 +732,7 @@
       "filename": "test.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
-    "order": 24
+    "order": 23
   },
   {
     "id": "toc",
@@ -768,7 +745,7 @@
       "filename": "toc.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
-    "order": 25
+    "order": 24
   },
   {
     "id": "vhost",
@@ -801,7 +778,7 @@
       "filename": "vhost.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
-    "order": 26
+    "order": 25
   },
   {
     "id": "View",
@@ -834,7 +811,7 @@
       "filename": "View.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
-    "order": 27
+    "order": 26
   },
   {
     "id": "Wrap",
@@ -867,7 +844,7 @@
       "filename": "Wrap.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
-    "order": 28
+    "order": 27
   },
   {
     "id": "module:ape-tmpl/lib.binBud",

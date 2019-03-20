@@ -1,0 +1,71 @@
+[
+  {
+    "id": "module:@the-/demo-component",
+    "longname": "module:@the-/demo-component",
+    "name": "@the-/demo-component",
+    "kind": "module",
+    "description": "Demo of the-components",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/demo-component/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/demo-component.TheDemoComponent()",
+    "longname": "module:@the-/demo-component.TheDemoComponent",
+    "name": "TheDemoComponent",
+    "kind": "constructor",
+    "description": "Demo of the-components",
+    "memberof": "module:@the-/demo-component.TheDemoComponent",
+    "order": 2
+  },
+  {
+    "id": "module:@the-/demo-component.TheDemoComponent",
+    "longname": "module:@the-/demo-component.TheDemoComponent",
+    "name": "TheDemoComponent",
+    "kind": "class",
+    "scope": "static",
+    "augments": [
+      "React.Component"
+    ],
+    "memberof": "module:@the-/demo-component",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheDemoComponent.jsx",
+      "path": "/Users/okuni/Projects/the/packages/demo-component/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheDemoComponentStyle.propTypes.options",
+    "longname": "TheDemoComponentStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
+    "memberof": "TheDemoComponentStyle.propTypes",
+    "meta": {
+      "lineno": 27,
+      "filename": "TheDemoComponentStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/demo-component/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "module:@the-/demo-component.TheDemoComponentStyle",
+    "longname": "module:@the-/demo-component.TheDemoComponentStyle",
+    "name": "TheDemoComponentStyle",
+    "kind": "function",
+    "scope": "static",
+    "description": "Style for TheDemoComponent",
+    "memberof": "module:@the-/demo-component",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheDemoComponentStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/demo-component/lib"
+    },
+    "order": 3
+  }
+]

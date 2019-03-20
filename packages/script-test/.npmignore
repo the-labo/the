@@ -1,3 +1,5 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Node template
 # Logs
 logs
 *.log
@@ -27,6 +29,8 @@ build/Release
 node_modules
 
 
+.sass-cache
+
 .idea
 tmp
-shim
+
