@@ -53,6 +53,7 @@ root for the-project
 - [assert](./packages/assert)
 - [assets](./packages/assets)
 - [bin](./packages/bin)
+- [cache](./packages/cache)
 - [check](./packages/check)
 - [client](./packages/client)
 - [context](./packages/context)
@@ -69,6 +70,7 @@ root for the-project
 - [script-test](./packages/script-test)
 - [server](./packages/server)
 - [templates](./packages/templates)
+- [tmp](./packages/tmp)
 - [url](./packages/url)
 - [window](./packages/window)
 

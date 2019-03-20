@@ -1,6 +1,6 @@
 'use strict'
 
-const { TheNotFoundError } = require('the-error')
+const { TheNotFoundError } = require('@the-/error')
 
 async function tryExample() {
   throw new TheNotFoundError()

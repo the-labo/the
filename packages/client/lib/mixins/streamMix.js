@@ -7,10 +7,10 @@
 'use strict'
 
 const asleep = require('asleep')
-const { TheQueue } = require('the-queue')
 const { Consumer, TheStream } = require('the-stream-base')
 const uuid = require('uuid')
 const { unlessProduction } = require('@the-/check')
+const { TheQueue } = require('@the-/queue')
 const IOEvents = require('../constants/IOEvents')
 
 class RemoteStream extends TheStream {

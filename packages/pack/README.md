@@ -67,7 +67,7 @@ Usage
 ```javascript
 'use strict'
 
-const { ThePack } = require('the-pack')
+const { ThePack } = require('@the-/pack')
 
 async function tryExample() {
   const { decode, encode } = new ThePack()

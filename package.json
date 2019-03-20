@@ -21,8 +21,8 @@
   "dependencies": {
     "asfs": "^2.2.3",
     "pon": "^5.2.14",
-    "pon-task-basic": "^4.2.16",
-    "the-file-util": "^1.2.2"
+    "pon-task-basic": "^4.2.17",
+    "the-file-util": "^1.2.3"
   },
   "engines": {
     "node": ">=10",
@@ -32,12 +32,6 @@
     "access": "public"
   },
   "devDependencies": {
-    "@okunishinishi/fixpack": "^3.0.1",
-    "aglob": "^3.0.1",
-    "coz": "^7.0.19",
-    "publish-if-needed": "^1.0.7",
-    "rimraf": "^2.6.3",
-    "the-code": "^5.5.17",
     "@babel/core": "^7.4.0",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
     "@babel/plugin-proposal-do-expressions": "^7.2.0",
@@ -47,6 +41,12 @@
     "@babel/polyfill": "^7.4.0",
     "@babel/preset-env": "^7.4.1",
     "@babel/preset-react": "7.0.0",
-    "@babel/runtime": "^7.4.0"
+    "@babel/runtime": "^7.4.0",
+    "@okunishinishi/fixpack": "^3.0.1",
+    "aglob": "^3.0.1",
+    "coz": "^7.0.19",
+    "publish-if-needed": "^1.1.0",
+    "rimraf": "^2.6.3",
+    "the-code": "^5.5.18"
   }
 }

@@ -11,6 +11,8 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/check": "^15.0.2",
+    "@the-/pack": "^15.0.2",
     "adigest": "^3.0.1",
     "aport": "^2.0.0",
     "aredis": "^1.0.3",
@@ -26,10 +28,8 @@
     "socket.io-redis": "^5.2.0",
     "stringcase": "^4.3.1",
     "the-cache": "^2.1.0",
-    "the-check": "^2.0.23",
     "the-controller-base": "^4.0.14",
     "the-controller-mixins": "^2.1.4",
-    "the-pack": "^1.0.6",
     "the-stream-base": "^3.0.30",
     "the-tmp": "^1.0.11"
   },

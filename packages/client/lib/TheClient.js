@@ -11,10 +11,10 @@ const { get } = require('bwindow')
 const qs = require('qs')
 const { RFuncClient } = require('rfunc-client/shim/browser')
 const io = require('socket.io-client')
-const { ThePack } = require('the-pack')
 const { resolve: resolveUrl } = require('url')
 const uuid = require('uuid')
 const { isBrowser, isProduction, unlessProduction } = require('@the-/check')
+const { ThePack } = require('@the-/pack')
 const IOEvents = require('./constants/IOEvents')
 const {
   asController,

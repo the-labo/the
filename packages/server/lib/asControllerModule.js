@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { unlessProduction } = require('the-check')
+const { unlessProduction } = require('@the-/check')
 const { assertMethods } = require('./assert')
 
 const innerMethodNames = ['reloadSession', 'saveSession', 'useController']

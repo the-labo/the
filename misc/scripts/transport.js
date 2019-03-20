@@ -31,6 +31,8 @@ const packages = {
   [`../the-pack`]: { kind: 'lib', name: 'pack' },
   [`../the-url`]: { kind: 'lib', name: 'url' },
   [`../the-error`]: { kind: 'lib', name: 'error' },
+  [`../the-tmp`]: { kind: 'lib', name: 'tmp' },
+  [`../the-cache`]: { kind: 'lib', name: 'cache' },
   [`../the-queue`]: { kind: 'lib', name: 'queue' },
 }
 
