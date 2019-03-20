@@ -28,10 +28,10 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/script-test#readme",
   "keywords": [
-    "script",
-    "the"
+    "the",
+    "script"
   ],
   "license": "MIT",
   "main": "lib",
@@ -42,5 +42,9 @@
   "scripts": {
     "doc": "the-script-doc",
     "test": "./bin/the-script-test"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
   }
 }

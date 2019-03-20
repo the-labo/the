@@ -37,7 +37,8 @@ async function tmplify() {
             .replace(/\.git$/, ''),
           package_description: demoPkg.description,
           package_name: demoPkg.name,
-          package_unscoped_name: demoPkg.name.replace(/@/, '')
+          package_unscoped_name: demoPkg.name
+            .replace(/@/, '')
             .replace('/', '')
             .replace('--', '-'),
           ...(require('../lib/data')[type] || {}),

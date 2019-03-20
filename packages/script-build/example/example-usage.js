@@ -1,6 +1,6 @@
 'use strict'
 
-const build = require('the-script-build')
+const build = require('@the-/script-build')
 
 async function tryExample() {
   await build('my_project_dir')

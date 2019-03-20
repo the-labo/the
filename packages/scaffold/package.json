@@ -40,10 +40,10 @@
     "the-demo-lib": "^2.1.12",
     "the-demo-resource": "^2.0.4"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/scaffold#readme",
   "keywords": [
-    "scaffold",
-    "the"
+    "the",
+    "scaffold"
   ],
   "license": "MIT",
   "main": "lib",
@@ -55,5 +55,9 @@
     "build": "the-script-build",
     "prepare": "npm run build && ./misc/tmplify.js",
     "test": "the-script-test"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
   }
 }

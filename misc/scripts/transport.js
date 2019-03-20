@@ -7,17 +7,20 @@ const { chmod, readFile, stat, unlink, writeFile } = require('fs').promises
 const path = require('path')
 const rimraf = require('rimraf')
 const pkg = require('../../package')
+const { copyDirAsync, copyAsync } = require('asfs')
 const baseDir = `${__dirname}/../..`
 process.chdir(baseDir)
 
 const packages = {
-  [`../the-script-build`]: { kind: 'script', name: 'script-build' },
-  [`../the-script-test`]: { kind: 'script', name: 'script-test' },
-  [`../the-demo-lib`]: { kind: 'lib', name: 'demo-lib' },
-  [`../the-demo-component`]: { kind: 'component', name: 'demo-component' },
-  [`../the-scaffold`]: { kind: 'scaffold', name: 'scaffold' },
-  [`../the-templates`]: { kind: 'templates', name: 'templates' },
-}
+    [`../the-script-build`]: { kind: 'script', name: 'script-build' },
+    [`../the-script-test`]: { kind: 'script', name: 'script-test' },
+    [`../the-demo-lib`]: { kind: 'lib', name: 'demo-lib' },
+    [`../the-demo-component`]: { kind: 'component', name: 'demo-component' },
+    [`../the-scaffold`]: { kind: 'scaffold', name: 'scaffold' },
+    [`../the-templates`]: { kind: 'templates', name: 'templates' },
+    [`../the-assert`]: { kind: 'lib', name: 'assert' },
+    [`../the-context`]: { kind: 'lib', name: 'context' },
+  }
 
 ;(async () => {
   for (const [from, { kind, name }] of Object.entries(packages)) {
@@ -44,18 +47,51 @@ ${msg}
         cwd: fromDir,
       })
     }
+    const fromPkgFile = path.resolve(fromDir, 'package.json')
     const toPkgFile = path.resolve(toDir, 'package.json')
     const toPkg = JSON.parse(await readFile(toPkgFile))
 
     await unlink(path.resolve(toDir, 'ci/release.js')).catch(() => null)
     await unlink(path.resolve(toDir, 'ci/share.js')).catch(() => null)
+    await unlink(path.resolve(toDir, 'doc/api/.api.md.bud')).catch(() => null)
     await unlink(path.resolve(toDir, 'LICENSE')).catch(() => null)
     await unlink(path.resolve(toDir, '.travis.yml')).catch(() => null)
     await unlink(path.resolve(toDir, '.LICENSE.bud')).catch(() => null)
     rimraf.sync(path.resolve(toDir, '.git'))
     rimraf.sync(path.resolve(toDir, 'ci'))
+    rimraf.sync(path.resolve(toDir, 'shim'))
+    rimraf.sync(path.resolve(toDir, 'doc/guides'))
     await unlink(path.resolve(toDir, 'jsdoc.json')).catch(() => null)
     await unlink(path.resolve(toDir, '.gitignore')).catch(() => null)
+
+    if (!/demo/.test(name)) {
+      if (kind === 'lib') {
+        const demoLibDir = path.resolve(baseDir, 'packages', 'demo-lib')
+        rimraf.sync(path.resolve(toDir, 'doc/readme'))
+        await copyDirAsync(`${demoLibDir}/doc/readme`, `${toDir}/doc/readme`)
+        await copyAsync(`${demoLibDir}/doc/links.json`, `${toDir}/doc/links.json`)
+        await copyAsync(`${demoLibDir}/doc/overview.md`, `${toDir}/doc/overview.md`)
+        await unlink(path.resolve(toDir, 'lib/.index.bud')).catch(() => null)
+        await copyAsync(`${demoLibDir}/lib/.index.js.bud`, `${toDir}/lib/.index.js.bud`)
+        await copyAsync(`${demoLibDir}/test/.test.js.bud`, `${toDir}/test/.test.js.bud`)
+        await copyAsync(`${demoLibDir}/.README.md.bud`, `${toDir}/.README.md.bud`)
+        await copyAsync(`${demoLibDir}/.npmignore`, `${toDir}/.npmignore`)
+        const toPkg = JSON.parse(await readFile(toPkgFile))
+        const { scripts = {} } = toPkg
+        scripts.doc = 'the-script-doc'
+        scripts.buid = 'the-script-build'
+        scripts.test = 'the-script-build'
+        scripts.prepare = 'npm run build && npm run doc'
+        delete scripts.share
+        await writeFile(
+          toPkgFile,
+          JSON.stringify(
+            { ...toPkg, scripts }
+          )
+        )
+
+      }
+    }
 
     const { dependencies = {}, devDependencies = {} } = toPkg
     // Cleanup
@@ -80,6 +116,7 @@ ${msg}
         'the-script-build',
         'ape-releasing',
         'amocha',
+        'mocha',
         'ape-tmpl',
         'ape-updating',
       ]
@@ -105,6 +142,18 @@ ${msg}
           }
           spawnSync('npm', ['i', '-D', src], { cwd: toDir })
         }
+      }
+    }
+    // example
+    {
+      const exampleUsageJs = path.resolve(toDir, 'example/example-usage.js')
+      const example = await readFile(exampleUsageJs).catch(() => null)
+      if (example) {
+        const fromPkg = JSON.parse(await readFile(fromPkgFile))
+        await writeFile(
+          exampleUsageJs,
+          String(example).replace(fromPkg.name, toPkg.name),
+        )
       }
     }
     {

@@ -6,8 +6,8 @@
 const { test } = require('@the-/templates')
 
 module.exports = test({
-  dest: __dirname,
   cjs: true,
+  dest: __dirname,
   src: [`${__dirname}/../lib/**/*.js`],
 })
 

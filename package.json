@@ -17,6 +17,7 @@
   "homepage": "https://github.com/the-labo/the#readme",
   "license": "MIT",
   "dependencies": {
+    "asfs": "^2.2.3",
     "pon": "^5.2.14",
     "the-file-util": "^1.2.2"
   },

@@ -15,13 +15,12 @@
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
-    "@the-/templates": "file:../templates",
-    "mocha": "^5.2.0"
+    "@the-/templates": "file:../templates"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/demo-lib#readme",
   "keywords": [
-    "lib",
-    "the"
+    "the",
+    "lib"
   ],
   "license": "MIT",
   "main": "lib",
@@ -35,5 +34,9 @@
     "prepare": "npm run doc",
     "test": "the-script-test",
     "watch": "the-script-build -w"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
   }
 }

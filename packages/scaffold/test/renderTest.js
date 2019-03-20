@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const render = require('../lib/render')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('render', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */
