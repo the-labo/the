@@ -28,10 +28,10 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/templates#readme",
   "keywords": [
-    "templates",
-    "the"
+    "the",
+    "templates"
   ],
   "license": "MIT",
   "main": "lib",
@@ -43,5 +43,9 @@
     "doc": "the-script-doc",
     "prepare": "npm run doc",
     "test": "mocha test"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
   }
 }

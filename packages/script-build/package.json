@@ -48,10 +48,14 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/script-build#readme",
   "keywords": [
-    "script",
-    "the"
+    "the",
+    "script"
   ],
   "license": "MIT",
   "main": "lib",

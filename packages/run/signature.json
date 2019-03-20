@@ -1,0 +1,19 @@
+{
+  "name": "the-run",
+  "main": true,
+  "args": [
+    {
+      "name": "filename",
+      "desc": "Script file path path",
+      "type": "string"
+    }
+  ],
+  "options": [
+    {
+      "name": "inspect",
+      "desc": "Inspect port number",
+      "type": "string",
+      "short": "i"
+    }
+  ]
+}

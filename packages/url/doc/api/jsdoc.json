@@ -1,0 +1,105 @@
+[
+  {
+    "id": "module:the-url",
+    "longname": "module:the-url",
+    "name": "the-url",
+    "kind": "module",
+    "description": "URL utility for the-framework",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/url/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "addQuery",
+    "longname": "addQuery",
+    "name": "addQuery",
+    "kind": "function",
+    "scope": "global",
+    "description": "Add query to url string",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "URL to add",
+        "name": "urlString"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Query to add",
+        "name": "query"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Added url string"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "addUrlQuery.js",
+      "path": "/Users/okuni/Projects/the/packages/url/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "formatUrl",
+    "longname": "formatUrl",
+    "name": "formatUrl",
+    "kind": "function",
+    "scope": "global",
+    "description": "Format urls",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "URL format string",
+        "name": "urlString"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Params to inject",
+        "name": "params"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Formatted string"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "formatUrl.js",
+      "path": "/Users/okuni/Projects/the/packages/url/lib"
+    },
+    "order": 1
+  }
+]

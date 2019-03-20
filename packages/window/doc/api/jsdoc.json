@@ -1,0 +1,261 @@
+[
+  {
+    "id": "module:@the-/window",
+    "longname": "module:@the-/window",
+    "name": "@the-/window",
+    "kind": "module",
+    "description": "Browser utility for the-framework",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/window/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "rescue",
+    "longname": "rescue",
+    "name": "rescue",
+    "kind": "function",
+    "scope": "global",
+    "description": "Handle event rescue on document",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Name of event",
+        "name": "event"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Event handler",
+        "name": "handler"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "rescue.js",
+      "path": "/Users/okuni/Projects/the/packages/window/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "show",
+    "longname": "show",
+    "name": "show",
+    "kind": "function",
+    "scope": "global",
+    "description": "show",
+    "params": [],
+    "meta": {
+      "lineno": 13,
+      "filename": "show.js",
+      "path": "/Users/okuni/Projects/the/packages/window/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "module:@the-/window.get",
+    "longname": "module:@the-/window.get",
+    "name": "get",
+    "kind": "function",
+    "scope": "static",
+    "description": "Get global values",
+    "memberof": "module:@the-/window",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Name to get",
+        "name": "name"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "get.js",
+      "path": "/Users/okuni/Projects/the/packages/window/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/window.line",
+    "longname": "module:@the-/window.line",
+    "name": "line",
+    "kind": "function",
+    "scope": "static",
+    "description": "Handle toggle online/offline",
+    "memberof": "module:@the-/window",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Event handler",
+        "name": "handler"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 100,
+        "description": "Delay for callback",
+        "name": "options.delay"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "line.js",
+      "path": "/Users/okuni/Projects/the/packages/window/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "module:@the-/window.once",
+    "longname": "module:@the-/window.once",
+    "name": "once",
+    "kind": "function",
+    "scope": "static",
+    "description": "Handle event once on document",
+    "memberof": "module:@the-/window",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Name of event",
+        "name": "event"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Event handler",
+        "name": "handler"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "once.js",
+      "path": "/Users/okuni/Projects/the/packages/window/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "module:@the-/window.set",
+    "longname": "module:@the-/window.set",
+    "name": "set",
+    "kind": "function",
+    "scope": "static",
+    "description": "Set global values",
+    "memberof": "module:@the-/window",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Name to set",
+        "name": "name"
+      },
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "description": "Value to set",
+        "name": "value"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "set.js",
+      "path": "/Users/okuni/Projects/the/packages/window/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "module:@the-/window.show",
+    "longname": "module:@the-/window.show",
+    "name": "show",
+    "kind": "function",
+    "scope": "static",
+    "description": "Show page",
+    "memberof": "module:@the-/window",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "URL to show",
+        "name": "url"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "show.js",
+      "path": "/Users/okuni/Projects/the/packages/window/lib"
+    },
+    "order": 6
+  }
+]

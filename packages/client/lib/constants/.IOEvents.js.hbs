@@ -1,0 +1,17 @@
+/**
+ * Events for IO
+ * @memberOf module:@the-/client
+ * @namespace IOEvents
+ */
+'use strict'
+
+const IOEvents = Object.freeze(
+  /** @lends IOEvents */
+  {
+{{#each values}}
+    {{@key}}: '{{this}}',
+{{/each}}
+  }
+)
+
+module.exports = IOEvents

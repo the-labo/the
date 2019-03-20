@@ -1,0 +1,48 @@
+{
+  "name": "@the-/ps",
+  "description": "Process manager for the-framework",
+  "version": "15.0.2",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "browser": "shim",
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "@the-/check": "^15.0.2",
+    "asleep": "^1.0.3",
+    "mkdirp": "^0.5.1",
+    "npid": "^0.4.0",
+    "ps-list": "^6.0.0",
+    "terminate": "^2.1.2",
+    "yesno": "0.0.1"
+  },
+  "devDependencies": {
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/ps#readme",
+  "keywords": [
+    "the",
+    "lib"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "repository": "the-labo/the-ps",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-build",
+    "watch": "the-script-build -w"
+  }
+}

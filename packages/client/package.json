@@ -1,0 +1,64 @@
+{
+  "name": "@the-/client",
+  "description": "Client for the-server",
+  "version": "15.0.2",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "browser": "shim",
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "@the-/check": "^15.0.2",
+    "argx": "^4.0.0",
+    "asleep": "^1.0.3",
+    "browser-cookies": "^1.2.0",
+    "bstorage": "^2.0.3",
+    "bwindow": "^2.0.2",
+    "debug": "^4.1.1",
+    "prop-types": "^15.7.2",
+    "qs": "^6.6.0",
+    "rfunc-client": "^5.0.5",
+    "rfunc-constants": "^1.0.5",
+    "socket.io-client": "^2.2.0",
+    "the-error": "^2.0.5",
+    "the-pack": "^1.0.6",
+    "the-queue": "^2.0.3",
+    "the-stream-base": "^3.0.30",
+    "url": "^0.11.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/runtime": "*",
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates",
+    "aport": "^2.0.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "the-server": "^14.0.14"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/client#readme",
+  "keywords": [
+    "the",
+    "lib"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "repository": "the-labo/the-client",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-build",
+    "watch": "the-script-build -w"
+  }
+}

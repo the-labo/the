@@ -1,0 +1,245 @@
+[
+  {
+    "id": "module:@the-/check",
+    "longname": "module:@the-/check",
+    "name": "@the-/check",
+    "kind": "module",
+    "description": "Check utility for the-framework",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/check/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "canTouch",
+    "longname": "canTouch",
+    "name": "canTouch",
+    "kind": "function",
+    "scope": "global",
+    "description": "Check touch supported",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Boolean"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "canTouch.js",
+      "path": "/Users/okuni/Projects/the/packages/check/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "hasBin",
+    "longname": "hasBin",
+    "name": "hasBin",
+    "kind": "function",
+    "scope": "global",
+    "description": "Check if a bin available",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Name of bin",
+        "name": "binName"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<boolean>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "hasBin.js",
+      "path": "/Users/okuni/Projects/the/packages/check/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "isBrowser",
+    "longname": "isBrowser",
+    "name": "isBrowser",
+    "kind": "function",
+    "scope": "global",
+    "description": "Detect if browser side",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Boolean"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "isBrowser.js",
+      "path": "/Users/okuni/Projects/the/packages/check/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "isChrome",
+    "longname": "isChrome",
+    "name": "isChrome",
+    "kind": "function",
+    "scope": "global",
+    "description": "Detect chrome or not",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Boolean"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "isChrome.js",
+      "path": "/Users/okuni/Projects/the/packages/check/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "isFirefox",
+    "longname": "isFirefox",
+    "name": "isFirefox",
+    "kind": "function",
+    "scope": "global",
+    "description": "Detect Firefox or not",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Boolean"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "isFirefox.js",
+      "path": "/Users/okuni/Projects/the/packages/check/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "isiOS",
+    "longname": "isiOS",
+    "name": "isiOS",
+    "kind": "function",
+    "scope": "global",
+    "description": "Detect iOS or not",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Boolean"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "isiOS.js",
+      "path": "/Users/okuni/Projects/the/packages/check/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "isMacOS",
+    "longname": "isMacOS",
+    "name": "isMacOS",
+    "kind": "function",
+    "scope": "global",
+    "description": "Detect is mac OS",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "isMacOS.js",
+      "path": "/Users/okuni/Projects/the/packages/check/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "isProduction",
+    "longname": "isProduction",
+    "name": "isProduction",
+    "kind": "function",
+    "scope": "global",
+    "description": "Do unless production env",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Boolean"
+          ]
+        },
+        "description": "Is production or not"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "isProduction.js",
+      "path": "/Users/okuni/Projects/the/packages/check/lib"
+    },
+    "order": 8
+  },
+  {
+    "id": "unlessProduction",
+    "longname": "unlessProduction",
+    "name": "unlessProduction",
+    "kind": "function",
+    "scope": "global",
+    "description": "Do unless production env",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "handler"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "unlessProduction.js",
+      "path": "/Users/okuni/Projects/the/packages/check/lib"
+    },
+    "order": 9
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "name": "@the-/run",
+  "description": "Script runner for the-framework",
+  "version": "15.0.2",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "bin": {
+    "the-run": "bin/the-run"
+  },
+  "browser": "shim",
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "commander": "^2.18.0",
+    "fkill": "^5.3.0",
+    "pretty-exceptions": "^1.4.0"
+  },
+  "devDependencies": {
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates",
+    "aport": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/run#readme",
+  "keywords": [
+    "the",
+    "lib"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "repository": "the-labo/the-run",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-build",
+    "watch": "the-script-build -w"
+  }
+}

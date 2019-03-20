@@ -23,10 +23,14 @@
     "@the-/templates": "file:../templates",
     "eslint": "^5.15.1"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/window#readme",
   "keywords": [
-    "lib",
-    "the"
+    "the",
+    "lib"
   ],
   "license": "MIT",
   "main": "lib",

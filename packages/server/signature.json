@@ -1,0 +1,25 @@
+{
+  "TheServer": {
+    "description": "HTTP server of the-framework",
+    "displayName": "TheServer",
+    "methods": []
+  },
+  "TheServerStyle": {
+    "description": "Style for TheServer",
+    "displayName": "TheServerStyle",
+    "methods": [],
+    "props": {
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Style options",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  }
+}

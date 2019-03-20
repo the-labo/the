@@ -1,0 +1,45 @@
+{
+  "name": "the-pack",
+  "description": "Message pack wrapper for the-components",
+  "version": "1.0.7",
+  "author": {
+    "name": "okunishinishi",
+    "email": "okunishinishi@gmail.com",
+    "url": "http://okunishitaka.com"
+  },
+  "browser": "shim",
+  "bugs": {
+    "url": "https://github.com/the-labo/the-pack/issues"
+  },
+  "dependencies": {
+    "msgpack-lite": "^0.1.26",
+    "the-check": "^2.0.16",
+    "the-window": "^7.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "the-script-build": "^4.0.15",
+    "the-script-jsdoc": "^2.0.4",
+    "the-templates": "^5.0.1"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=4"
+  },
+  "homepage": "https://github.com/the-labo/the-pack#readme",
+  "keywords": [
+    "the"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "repository": "the-labo/the-pack",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "release": "the-script-release -y",
+    "test": "the-script-build",
+    "update": "the-script-update",
+    "watch": "the-script-build -w"
+  }
+}

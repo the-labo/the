@@ -1,0 +1,1401 @@
+[
+  {
+    "id": "module:buildInEndpoints",
+    "longname": "module:buildInEndpoints",
+    "name": "buildInEndpoints",
+    "kind": "module",
+    "description": "Build in endpoints",
+    "meta": {
+      "lineno": 1,
+      "filename": "buildInEndpoints.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "module:the-server",
+    "longname": "module:the-server",
+    "name": "the-server",
+    "kind": "module",
+    "description": "HTTP/RPC Server of the-framework",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "module:adapter",
+    "longname": "module:adapter",
+    "name": "adapter",
+    "kind": "module",
+    "description": "Adapter functions",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/adpters"
+    },
+    "order": 18
+  },
+  {
+    "id": "module:assert",
+    "longname": "module:assert",
+    "name": "assert",
+    "kind": "module",
+    "description": "Assert functions",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/assert"
+    },
+    "order": 21
+  },
+  {
+    "id": "module:DefaultValues",
+    "longname": "module:DefaultValues",
+    "name": "DefaultValues",
+    "kind": "module",
+    "meta": {
+      "lineno": 1,
+      "filename": "DefaultValues.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/constants"
+    },
+    "order": 22
+  },
+  {
+    "id": "module:constants",
+    "longname": "module:constants",
+    "name": "constants",
+    "kind": "module",
+    "description": "Constant variables",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/constants"
+    },
+    "order": 23
+  },
+  {
+    "id": "module:helpers",
+    "longname": "module:helpers",
+    "name": "helpers",
+    "kind": "module",
+    "description": "Helper functions",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+    },
+    "order": 29
+  },
+  {
+    "id": "module:mixins",
+    "longname": "module:mixins",
+    "name": "mixins",
+    "kind": "module",
+    "description": "Class mixins",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+    },
+    "order": 40
+  },
+  {
+    "id": "module:stores",
+    "longname": "module:stores",
+    "name": "stores",
+    "kind": "module",
+    "description": "Data stores",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+    },
+    "order": 51
+  },
+  {
+    "id": "TheServer()",
+    "longname": "TheServer",
+    "name": "TheServer",
+    "kind": "constructor",
+    "description": "HTTP server for the-framework",
+    "memberof": "TheServer",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      },
+      {
+        "type": {
+          "names": [
+            "Array.<string>"
+          ]
+        },
+        "description": "Supported langs",
+        "name": "langs"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Log file",
+        "name": "logFile"
+      },
+      {
+        "type": {
+          "names": [
+            "Array.<function()>"
+          ]
+        },
+        "description": "Koa middlewares",
+        "name": "middlewares"
+      }
+    ],
+    "order": 6
+  },
+  {
+    "id": "ConnectionStore()",
+    "longname": "ConnectionStore",
+    "name": "ConnectionStore",
+    "kind": "constructor",
+    "description": "Client connection store for the-server",
+    "memberof": "ConnectionStore",
+    "order": 50
+  },
+  {
+    "id": "SessionStore()",
+    "longname": "SessionStore",
+    "name": "SessionStore",
+    "kind": "constructor",
+    "description": "Client session store for the-server",
+    "memberof": "SessionStore",
+    "order": 53
+  },
+  {
+    "id": "Store()",
+    "longname": "Store",
+    "name": "Store",
+    "kind": "constructor",
+    "description": "Client data store for the-server",
+    "memberof": "Store",
+    "order": 55
+  },
+  {
+    "id": "TheServer",
+    "longname": "TheServer",
+    "name": "TheServer",
+    "kind": "class",
+    "scope": "global",
+    "augments": [
+      "IOMixed"
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "TheServer.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "StreamPool",
+    "longname": "StreamPool",
+    "name": "StreamPool",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 7,
+      "filename": "streamPool.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+    },
+    "order": 34
+  },
+  {
+    "id": "IOMixed",
+    "longname": "IOMixed",
+    "name": "IOMixed",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 20,
+      "filename": "ioMix.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+    },
+    "order": 45
+  },
+  {
+    "id": "MetricsMix",
+    "longname": "MetricsMix",
+    "name": "MetricsMix",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 11,
+      "filename": "metricsMix.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+    },
+    "order": 48
+  },
+  {
+    "id": "ConnectionStore",
+    "longname": "ConnectionStore",
+    "name": "ConnectionStore",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "ConnectionStore.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+    },
+    "order": 49
+  },
+  {
+    "id": "SessionStore",
+    "longname": "SessionStore",
+    "name": "SessionStore",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "SessionStore.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+    },
+    "order": 52
+  },
+  {
+    "id": "Store",
+    "longname": "Store",
+    "name": "Store",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "Store.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+    },
+    "order": 54
+  },
+  {
+    "id": "asControllerModule",
+    "longname": "asControllerModule",
+    "name": "asControllerModule",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mark as RPCController",
+    "meta": {
+      "lineno": 1,
+      "filename": "asControllerModule.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheServer instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheServer"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "redisAdapter",
+    "longname": "redisAdapter",
+    "name": "redisAdapter",
+    "kind": "function",
+    "scope": "global",
+    "description": "Define redis adapter for sockets",
+    "meta": {
+      "lineno": 1,
+      "filename": "redisAdapter.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/adpters"
+    },
+    "order": 19
+  },
+  {
+    "id": "assertMethods",
+    "longname": "assertMethods",
+    "name": "assertMethods",
+    "kind": "function",
+    "scope": "global",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      },
+      {
+        "type": {
+          "names": [
+            "Array.<string>"
+          ]
+        },
+        "name": "reservedNames"
+      }
+    ],
+    "exceptions": [
+      {
+        "type": {
+          "names": [
+            "Error"
+          ]
+        },
+        "description": "The server error"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "assertMethods.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/assert"
+    },
+    "order": 20
+  },
+  {
+    "id": "IOEvents",
+    "longname": "IOEvents",
+    "name": "IOEvents",
+    "kind": "function",
+    "scope": "global",
+    "description": "Events for IO",
+    "meta": {
+      "lineno": 1,
+      "filename": "IOEvents.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/constants"
+    },
+    "order": 24
+  },
+  {
+    "id": "asStrictSession",
+    "longname": "asStrictSession",
+    "name": "asStrictSession",
+    "kind": "function",
+    "scope": "global",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "session"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "asStrictSession.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+    },
+    "order": 25
+  },
+  {
+    "id": "callbacksProxy",
+    "longname": "callbacksProxy",
+    "name": "callbacksProxy",
+    "kind": "function",
+    "scope": "global",
+    "description": "Callback proxy",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Proxy"
+          ]
+        },
+        "description": "Proxy instance"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "callbacksProxy.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+    },
+    "order": 26
+  },
+  {
+    "id": "controllerSpecsFor",
+    "longname": "controllerSpecsFor",
+    "name": "controllerSpecsFor",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "controllerSpecsFor.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+    },
+    "order": 27
+  },
+  {
+    "id": "ctxInjector",
+    "longname": "ctxInjector",
+    "name": "ctxInjector",
+    "kind": "function",
+    "scope": "global",
+    "description": "Define koa middleware register ctx values",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "creators"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "ctxInjector.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+    },
+    "order": 28
+  },
+  {
+    "id": "langDetector",
+    "longname": "langDetector",
+    "name": "langDetector",
+    "kind": "function",
+    "scope": "global",
+    "description": "Define koa middleware function to detect locale",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Array.<string>"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "'en'",
+        "description": "Supported locales",
+        "name": "locales"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional setting",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "langDetector.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+    },
+    "order": 30
+  },
+  {
+    "id": "serverRendering",
+    "longname": "serverRendering",
+    "name": "serverRendering",
+    "kind": "function",
+    "scope": "global",
+    "description": "Define koa middleware function to do serverside rendering",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "React component to render",
+        "name": "Component"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Koa middleware function"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "serversideRendering.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+    },
+    "order": 31
+  },
+  {
+    "id": "serverRendering",
+    "longname": "serverRendering",
+    "name": "serverRendering",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 20,
+      "filename": "serversideRendering.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+    },
+    "order": 32
+  },
+  {
+    "id": "streamPool",
+    "longname": "streamPool",
+    "name": "streamPool",
+    "kind": "function",
+    "scope": "global",
+    "description": "Stream pool",
+    "meta": {
+      "lineno": 1,
+      "filename": "streamPool.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+    },
+    "order": 33
+  },
+  {
+    "id": "toControllerModuleBind",
+    "longname": "toControllerModuleBind",
+    "name": "toControllerModuleBind",
+    "kind": "function",
+    "scope": "global",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "toControllerModuleBind.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+    },
+    "order": 35
+  },
+  {
+    "id": "toLowerKeys",
+    "longname": "toLowerKeys",
+    "name": "toLowerKeys",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "toLowerKeys.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+    },
+    "order": 38
+  },
+  {
+    "id": "clientMix",
+    "longname": "clientMix",
+    "name": "clientMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixin for client",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "clientMix.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+    },
+    "order": 39
+  },
+  {
+    "id": "infoMix",
+    "longname": "infoMix",
+    "name": "infoMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixins for info",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "infoMix.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+    },
+    "order": 41
+  },
+  {
+    "id": "ioMix",
+    "longname": "ioMix",
+    "name": "ioMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixins for IO",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "ioMix.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+    },
+    "order": 44
+  },
+  {
+    "id": "keepMix",
+    "longname": "keepMix",
+    "name": "keepMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixin to keep",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "keepMix.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+    },
+    "order": 46
+  },
+  {
+    "id": "metricsMix",
+    "longname": "metricsMix",
+    "name": "metricsMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixins for metrics",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "metricsMix.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+    },
+    "order": 47
+  },
+  {
+    "id": "TheServer#close",
+    "longname": "TheServer#close",
+    "name": "close",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Close server",
+    "memberof": "TheServer",
+    "params": [
+      {
+        "name": "args",
+        "variable": true
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 199,
+      "filename": "TheServer.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib"
+    },
+    "async": true,
+    "order": 7
+  },
+  {
+    "id": "TheServer#destroyAllSessions",
+    "longname": "TheServer#destroyAllSessions",
+    "name": "destroyAllSessions",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Destroy all sessions",
+    "memberof": "TheServer",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<number>"
+          ]
+        },
+        "description": "Deleted count"
+      }
+    ],
+    "meta": {
+      "lineno": 223,
+      "filename": "TheServer.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib"
+    },
+    "async": true,
+    "order": 8
+  },
+  {
+    "meta": {
+      "lineno": 235,
+      "filename": "TheServer.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib"
+    },
+    "override": true,
+    "id": "TheServer#handleIOClientCame",
+    "longname": "TheServer#handleIOClientCame",
+    "name": "handleIOClientCame",
+    "kind": "function",
+    "scope": "instance",
+    "memberof": "TheServer",
+    "params": [],
+    "async": true,
+    "order": 9
+  },
+  {
+    "meta": {
+      "lineno": 247,
+      "filename": "TheServer.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib"
+    },
+    "override": true,
+    "id": "TheServer#handleIOClientGone",
+    "longname": "TheServer#handleIOClientGone",
+    "name": "handleIOClientGone",
+    "kind": "function",
+    "scope": "instance",
+    "memberof": "TheServer",
+    "params": [],
+    "async": true,
+    "order": 10
+  },
+  {
+    "meta": {
+      "lineno": 272,
+      "filename": "TheServer.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib"
+    },
+    "override": true,
+    "id": "TheServer#handleIORPCAbort",
+    "longname": "TheServer#handleIORPCAbort",
+    "name": "handleIORPCAbort",
+    "kind": "function",
+    "scope": "instance",
+    "memberof": "TheServer",
+    "params": [],
+    "async": true,
+    "order": 11
+  },
+  {
+    "meta": {
+      "lineno": 277,
+      "filename": "TheServer.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib"
+    },
+    "override": true,
+    "id": "TheServer#handleIORPCCall",
+    "longname": "TheServer#handleIORPCCall",
+    "name": "handleIORPCCall",
+    "kind": "function",
+    "scope": "instance",
+    "memberof": "TheServer",
+    "params": [],
+    "async": true,
+    "order": 12
+  },
+  {
+    "meta": {
+      "lineno": 311,
+      "filename": "TheServer.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib"
+    },
+    "override": true,
+    "id": "TheServer#handleIOStreamChunk",
+    "longname": "TheServer#handleIOStreamChunk",
+    "name": "handleIOStreamChunk",
+    "kind": "function",
+    "scope": "instance",
+    "memberof": "TheServer",
+    "params": [],
+    "async": true,
+    "order": 13
+  },
+  {
+    "meta": {
+      "lineno": 318,
+      "filename": "TheServer.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib"
+    },
+    "override": true,
+    "id": "TheServer#handleIOStreamClose",
+    "longname": "TheServer#handleIOStreamClose",
+    "name": "handleIOStreamClose",
+    "kind": "function",
+    "scope": "instance",
+    "memberof": "TheServer",
+    "params": [],
+    "async": true,
+    "order": 14
+  },
+  {
+    "meta": {
+      "lineno": 327,
+      "filename": "TheServer.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib"
+    },
+    "override": true,
+    "id": "TheServer#handleIOStreamFin",
+    "longname": "TheServer#handleIOStreamFin",
+    "name": "handleIOStreamFin",
+    "kind": "function",
+    "scope": "instance",
+    "memberof": "TheServer",
+    "params": [],
+    "async": true,
+    "order": 15
+  },
+  {
+    "meta": {
+      "lineno": 339,
+      "filename": "TheServer.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib"
+    },
+    "override": true,
+    "id": "TheServer#handleIOStreamOpen",
+    "longname": "TheServer#handleIOStreamOpen",
+    "name": "handleIOStreamOpen",
+    "kind": "function",
+    "scope": "instance",
+    "memberof": "TheServer",
+    "params": [],
+    "async": true,
+    "order": 16
+  },
+  {
+    "id": "TheServer#listen",
+    "longname": "TheServer#listen",
+    "name": "listen",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Listen to port",
+    "memberof": "TheServer",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "description": "Port to listen",
+        "name": "port"
+      },
+      {
+        "optional": true,
+        "name": "callback"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 431,
+      "filename": "TheServer.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib"
+    },
+    "async": true,
+    "order": 17
+  },
+  {
+    "id": "ControllerModuleBind#reloadSession",
+    "longname": "ControllerModuleBind#reloadSession",
+    "name": "reloadSession",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Reload session from store",
+    "memberof": "ControllerModuleBind",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<boolean>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 48,
+      "filename": "toControllerModuleBind.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+    },
+    "async": true,
+    "order": 36
+  },
+  {
+    "id": "ControllerModuleBind#saveSession",
+    "longname": "ControllerModuleBind#saveSession",
+    "name": "saveSession",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Save session",
+    "memberof": "ControllerModuleBind",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 79,
+      "filename": "toControllerModuleBind.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+    },
+    "async": true,
+    "order": 37
+  },
+  {
+    "id": "InfoMixed#info",
+    "longname": "InfoMixed#info",
+    "name": "info",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Server info",
+    "memberof": "InfoMixed",
+    "params": [],
+    "meta": {
+      "lineno": 22,
+      "filename": "infoMix.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+    },
+    "order": 42
+  },
+  {
+    "id": "InfoMixed#flushInfo",
+    "longname": "InfoMixed#flushInfo",
+    "name": "flushInfo",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Flush info into file",
+    "memberof": "InfoMixed",
+    "params": [],
+    "meta": {
+      "lineno": 34,
+      "filename": "infoMix.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+    },
+    "async": true,
+    "order": 43
+  },
+  {
+    "id": "Store#cleanup",
+    "longname": "Store#cleanup",
+    "name": "cleanup",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Cleanup expired data",
+    "memberof": "Store",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Array.<string>>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 31,
+      "filename": "Store.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+    },
+    "async": true,
+    "order": 56
+  },
+  {
+    "id": "Store#del",
+    "longname": "Store#del",
+    "name": "del",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Delete data",
+    "memberof": "Store",
+    "params": [
+      {
+        "name": "id"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 54,
+      "filename": "Store.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+    },
+    "async": true,
+    "order": 57
+  },
+  {
+    "id": "Store#delAll",
+    "longname": "Store#delAll",
+    "name": "delAll",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Delete all data",
+    "memberof": "Store",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<number>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 63,
+      "filename": "Store.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+    },
+    "async": true,
+    "order": 58
+  },
+  {
+    "id": "Store#get",
+    "longname": "Store#get",
+    "name": "get",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get data",
+    "memberof": "Store",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Data id",
+        "name": "id"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Object>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 77,
+      "filename": "Store.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+    },
+    "async": true,
+    "order": 59
+  },
+  {
+    "id": "Store#has",
+    "longname": "Store#has",
+    "name": "has",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Check if has data",
+    "memberof": "Store",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Data id",
+        "name": "id"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<boolean>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 93,
+      "filename": "Store.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+    },
+    "async": true,
+    "order": 60
+  },
+  {
+    "id": "Store#ids",
+    "longname": "Store#ids",
+    "name": "ids",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get all ids",
+    "memberof": "Store",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Array.<string>>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 101,
+      "filename": "Store.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+    },
+    "async": true,
+    "order": 61
+  },
+  {
+    "id": "Store#set",
+    "longname": "Store#set",
+    "name": "set",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Set data",
+    "memberof": "Store",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Data id",
+        "name": "id"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Data to set",
+        "name": "data"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 112,
+      "filename": "Store.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+    },
+    "async": true,
+    "order": 62
+  }
+]

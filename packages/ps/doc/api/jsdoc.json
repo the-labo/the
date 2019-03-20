@@ -1,0 +1,161 @@
+[
+  {
+    "id": "module:the-ps",
+    "longname": "module:the-ps",
+    "name": "the-ps",
+    "kind": "module",
+    "description": "Process manager for the-framework",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/ps/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "module:@the-/ps.ThePS()",
+    "longname": "module:@the-/ps.ThePS",
+    "name": "ThePS",
+    "kind": "constructor",
+    "memberof": "module:@the-/ps.ThePS",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "PID filename",
+        "name": "filename"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": false,
+        "description": "Enable logs",
+        "name": "options.logging"
+      }
+    ],
+    "order": 5
+  },
+  {
+    "id": "ThePS#acquire",
+    "longname": "ThePS#acquire",
+    "name": "acquire",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Generate pid and remove on exit.",
+    "memberof": "ThePS",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 75,
+      "filename": "ThePS.js",
+      "path": "/Users/okuni/Projects/the/packages/ps/lib"
+    },
+    "async": true,
+    "order": 6
+  },
+  {
+    "id": "module:@the-/ps.ThePS",
+    "longname": "module:@the-/ps.ThePS",
+    "name": "ThePS",
+    "kind": "class",
+    "scope": "static",
+    "memberof": "module:@the-/ps",
+    "meta": {
+      "lineno": 1,
+      "filename": "ThePS.js",
+      "path": "/Users/okuni/Projects/the/packages/ps/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "module:@the-/ps.default",
+    "longname": "module:@the-/ps.default",
+    "name": "default",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Default exports",
+    "memberof": "module:@the-/ps",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/ps/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "module:@the-/ps.acquire",
+    "longname": "module:@the-/ps.acquire",
+    "name": "acquire",
+    "kind": "function",
+    "scope": "static",
+    "description": "Acquire process",
+    "memberof": "module:@the-/ps",
+    "meta": {
+      "lineno": 1,
+      "filename": "acquire.js",
+      "path": "/Users/okuni/Projects/the/packages/ps/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/ps.create",
+    "longname": "module:@the-/ps.create",
+    "name": "create",
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a ThePS instance",
+    "memberof": "module:@the-/ps",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "ThePS"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/ps/lib"
+    },
+    "order": 1
+  }
+]

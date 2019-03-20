@@ -12,19 +12,27 @@ const baseDir = `${__dirname}/../..`
 process.chdir(baseDir)
 
 const packages = {
-  [`../the-script-build`]: { kind: 'script', name: 'script-build' },
-  [`../the-script-test`]: { kind: 'script', name: 'script-test' },
-  [`../the-demo-lib`]: { kind: 'lib', name: 'demo-lib' },
-  [`../the-demo-component`]: { kind: 'component', name: 'demo-component' },
-  [`../the-scaffold`]: { kind: 'scaffold', name: 'scaffold' },
-  [`../the-templates`]: { kind: 'templates', name: 'templates' },
-  [`../the-assert`]: { kind: 'lib', name: 'assert' },
-  [`../the-assets`]: { kind: 'lib', name: 'assets' },
-  [`../the-check`]: { kind: 'lib', name: 'check' },
-  [`../the-window`]: { kind: 'lib', name: 'window' },
-  [`../the-bin`]: { kind: 'lib', name: 'bin' },
-  [`../the-context`]: { kind: 'lib', name: 'context' },
-}
+    [`../the-script-build`]: { kind: 'script', name: 'script-build' },
+    [`../the-script-test`]: { kind: 'script', name: 'script-test' },
+    [`../the-demo-lib`]: { kind: 'lib', name: 'demo-lib' },
+    [`../the-demo-component`]: { kind: 'component', name: 'demo-component' },
+    [`../the-scaffold`]: { kind: 'scaffold', name: 'scaffold' },
+    [`../the-templates`]: { kind: 'templates', name: 'templates' },
+    [`../the-assert`]: { kind: 'lib', name: 'assert' },
+    [`../the-assets`]: { kind: 'lib', name: 'assets' },
+    [`../the-check`]: { kind: 'lib', name: 'check' },
+    [`../the-window`]: { kind: 'lib', name: 'window' },
+    [`../the-bin`]: { kind: 'lib', name: 'bin' },
+    [`../the-context`]: { kind: 'lib', name: 'context' },
+    [`../the-client`]: { kind: 'lib', name: 'client' },
+    [`../the-server`]: { kind: 'lib', name: 'server' },
+    [`../the-ps`]: { kind: 'lib', name: 'ps' },
+    [`../the-run`]: { kind: 'lib', name: 'run' },
+    [`../the-pack`]: { kind: 'lib', name: 'pack' },
+    [`../the-url`]: { kind: 'lib', name: 'url' },
+    [`../the-error`]: { kind: 'lib', name: 'error' },
+    [`../the-queue`]: { kind: 'lib', name: 'queue' },
+  }
 
 ;(async () => {
   for (const [from, { kind, name }] of Object.entries(packages)) {

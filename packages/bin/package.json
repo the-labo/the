@@ -12,10 +12,10 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/check": "^15.0.2",
     "chalk": "^2.4.1",
     "hasbin": "^1.2.3",
-    "semver": "^5.5.0",
-    "the-check": "^2.0.2"
+    "semver": "^5.5.0"
   },
   "devDependencies": {
     "@the-/script-build": "file:../script-build",
@@ -23,10 +23,14 @@
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/bin#readme",
   "keywords": [
-    "lib",
-    "the"
+    "the",
+    "lib"
   ],
   "license": "MIT",
   "main": "lib",
