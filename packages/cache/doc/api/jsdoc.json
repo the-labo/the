@@ -1,0 +1,75 @@
+[
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/cache/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/cache",
+    "longname": "module:@the-/cache",
+    "name": "@the-/cache",
+    "kind": "module",
+    "description": "Cache manager of the-frameworks",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/cache/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheCache",
+    "longname": "TheCache",
+    "name": "TheCache",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheCache.js",
+      "path": "/Users/okuni/Projects/the/packages/cache/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheCache instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheCache"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/cache/lib"
+    },
+    "order": 0
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "name": "@the-/cache",
+  "description": "Cache manager of the-frameworks",
+  "version": "15.0.2",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "browser": "shim",
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "lru-cache": "^5.1.1"
+  },
+  "devDependencies": {
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the#readme",
+  "keywords": [
+    "lib",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-build",
+    "watch": "the-script-build -w"
+  }
+}
