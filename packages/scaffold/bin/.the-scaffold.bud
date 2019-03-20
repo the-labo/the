@@ -1,0 +1,15 @@
+/**
+ * Bud file for bin.
+ */
+'use strict'
+
+const { bin } = require('@the-/templates')
+
+module.exports = bin({
+  path: 'the-scaffold',
+  signature: require('../signature'),
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

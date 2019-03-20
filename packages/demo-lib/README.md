@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @the-/demo-lib
 ==========
 
@@ -81,12 +80,12 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/guides/10.API Guide.md.hbs" Start -->
 
-<a name="section-doc-guides-10-a-p-i-guide-md"></a>
+<a name="section-doc-guides-10-api-guide-md"></a>
 
 API Guide
 -----
 
-+ [@the-/demo-lib@15.0.0](./doc/api/api.md)
++ [@the-/demo-lib@15.0.1](./doc/api/api.md)
 
 
 <!-- Section from "doc/guides/10.API Guide.md.hbs" End -->
@@ -111,14 +110,8 @@ This software is released under the [MIT License](https://github.com/the-labo/th
 Links
 ------
 
-+ [THE Labo][t_h_e_labo_url]
++ [THE Labo][the_labo_url]
 
-[t_h_e_labo_url]: https://github.com/the-labo
+[the_labo_url]: https://github.com/the-labo
 
 <!-- Links End -->
-=======
-## NO LONGER MAINTAINED
-
-This package moved to [@the!/demo-lib](https://www.npmjs.com/package/@the!/demo-lib)
-      
->>>>>>> origin/master

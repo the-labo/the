@@ -1,0 +1,57 @@
+Tips
+-----------
+
+### Managing Docker Infra
+
+To show available commands,
+
+```bash
+
+pon -l | grep docker
+
+```
+
+### Restarting Server
+
+```bash
+pon stop
+pon start
+```
+
+Or, just
+
+```bash
+pon restart
+```
+
+
+### Project Structure
+
+Directory structure of this project
+
+| Directory Path | Description |
+| ---- | ----- |
+| assets | Static file directory |
+| bin | Executable files |
+| client | Client side scripts |
+| client/client | RPC Client |
+| client/scenes | Client logic without ui |
+| client/shim | Generated shim files |
+| client/store | Client side data store |
+| client/test | Client tests |
+| client/ui | User interfaces |
+| conf | Configuration of project |
+| doc | Documents |
+| doc/guides | Guides for README |
+| misc | Misc scripts |
+| public | Public directory to serve static files. Auto-generated |
+| server | Server side files |
+| server/controllers | Controller classes to handle RPC |
+| server/db | Database modules |
+| server/env | Env dependant variables |
+| server/server | HTTP Server module |
+| server/test | Server tests |
+| test | Project tests |
+| tmp | Temporary files. Can be deleted anytime. |
+| var | Var files |
+

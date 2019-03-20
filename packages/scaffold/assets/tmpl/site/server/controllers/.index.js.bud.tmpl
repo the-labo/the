@@ -1,0 +1,15 @@
+'use strict'
+
+const { dir } = require('the-templates')
+
+module.exports = dir.recursive({
+  cjs: true,
+  description: 'Server controllers',
+  dirname: __dirname,
+  ignore: ['concerns/*.js'],
+  name: 'controllers',
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

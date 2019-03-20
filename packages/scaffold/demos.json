@@ -1,0 +1,5 @@
+{
+  "component": "@the-/demo-component",
+  "lib": "@the-/demo-lib",
+  "site": "pon-demo-site"
+}

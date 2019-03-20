@@ -1,0 +1,20 @@
+/**
+ * {{name}}
+ * @module {{name}}
+ */
+'use strict'
+
+const {isProduction} = require('the-check')
+const {hashProxy} = require('the-site-util')
+const Urls = require('./Urls')
+
+module.exports = Object.freeze(
+  /** @lends {{name}} */
+  {
+
+  }
+)
+
+if (!isProduction()) {
+  module.exports = hashProxy(module.exports, {name: '{{name}}', unknownCheck: true})
+}

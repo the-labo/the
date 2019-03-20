@@ -1,0 +1,14 @@
+/**
+ * Bud file for stateless components
+ */
+'use strict'
+
+const { Stateful } = require('the-templates')
+
+module.exports = [].map((name) => Stateful({
+  name,
+}))
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

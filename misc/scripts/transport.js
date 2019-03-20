@@ -11,12 +11,13 @@ const baseDir = `${__dirname}/../..`
 process.chdir(baseDir)
 
 const packages = {
-    [`../the-script-build`]: { kind: 'script', name: 'script-build' },
-    [`../the-script-test`]: { kind: 'script', name: 'script-test' },
-    [`../the-demo-lib`]: { kind: 'lib', name: 'demo-lib' },
-    [`../the-demo-component`]: { kind: 'component', name: 'demo-component' },
-    [`../the-templates`]: { kind: 'templates', name: 'templates' },
-  }
+  [`../the-script-build`]: { kind: 'script', name: 'script-build' },
+  [`../the-script-test`]: { kind: 'script', name: 'script-test' },
+  [`../the-demo-lib`]: { kind: 'lib', name: 'demo-lib' },
+  [`../the-demo-component`]: { kind: 'component', name: 'demo-component' },
+  [`../the-scaffold`]: { kind: 'scaffold', name: 'scaffold' },
+  [`../the-templates`]: { kind: 'templates', name: 'templates' },
+}
 
 ;(async () => {
   for (const [from, { kind, name }] of Object.entries(packages)) {
@@ -79,6 +80,7 @@ ${msg}
         'the-script-build',
         'ape-releasing',
         'amocha',
+        'ape-tmpl',
         'ape-updating',
       ]
       for (const name of devDepsToRemove) {

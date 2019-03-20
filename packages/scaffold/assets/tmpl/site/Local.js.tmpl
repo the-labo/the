@@ -1,0 +1,70 @@
+/**
+ * Local variables
+ * @namespace Local
+ */
+'use strict'
+
+const theSeat = require('the-seat')
+const theSecret = require('the-secret')
+const theSetting = require('the-setting')
+const { seatAccess } = require('the-site-util')
+const { inspect } = require('util')
+const pkg = require('./package')
+
+const MASTER_PASSWORD = `${pkg.name}-xxxxxxxxxxxxxxxxxx` // TODO
+const secret = theSecret(`${__dirname}/secrets.json`, MASTER_PASSWORD)
+const seat = theSeat()
+const {
+  containerNameFor,
+  portNumberFor,
+  processNameFor,
+  secretFor,
+  userNameFor,
+} = seatAccess(seat)
+
+const setting = theSetting(`${__dirname}/var/app/setting.json`,
+  /** @lends Local */
+  {
+    APP_CDN_URL: '',
+    APP_DOMAIN: '~~~~package_name~~~~.org',
+    DUMP_ROTATION: 3,
+    DUMP_SCHEDULE: '00 00 * * 3',
+  }
+)
+
+const Vars = Object.freeze(
+  /** @lends Local */
+  {
+    APP_PORT: portNumberFor(`app@${__dirname}`),
+    APP_PROCESS_NAME: processNameFor(`${pkg.name}@${__dirname}`) + '-app',
+    APP_VERSION: pkg.version,
+    BACKUP_PROCESS_NAME: processNameFor(`${pkg.name}@${__dirname}`) + '-backup',
+    INSPECT_PORT: portNumberFor(`inspect@${__dirname}`),
+    MYSQL_CONTAINER_NAME: containerNameFor(`${pkg.name}-mysql@${__dirname}`),
+    MYSQL_CONTAINER_PORT: portNumberFor(`mysql@${__dirname}`),
+    NGINX_CONTAINER_NAME: containerNameFor(`${pkg.name}-nginx@${__dirname}`),
+    NGINX_CONTAINER_PORT: portNumberFor(`nginx@${__dirname}`),
+    PUBLIC_DIR: `${__dirname}/public`,
+    REDIS_CONTAINER_NAME: containerNameFor(`${pkg.name}-redis@${__dirname}`),
+    REDIS_CONTAINER_PORT: portNumberFor(`redis@${__dirname}`),
+    SEAL_SECRET: secretFor(`seal@${__dirname}`),
+  }
+)
+
+/** @lends Local */
+const Local = {
+  __proto__: {
+    print: () => console.log(inspect(Local)),
+    secret,
+    setting,
+  },
+  ...secret.get(),
+  ...setting.get(),
+  ...Vars,
+}
+
+module.exports = Local
+
+if (!module.parent) {
+  Local.print()
+}

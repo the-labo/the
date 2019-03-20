@@ -1,0 +1,32 @@
+{
+  "name": "the-scaffold",
+  "main": true,
+  "args": [
+    {
+      "name": "type",
+      "desc": "Type of template"
+    },
+    {
+      "name": "dest",
+      "desc": "Destination directory name"
+    }
+  ],
+  "options": [
+    {
+      "name": "silent",
+      "short": "s",
+      "desc": "Disable console logs"
+    },
+    {
+      "name": "force",
+      "short": "f",
+      "desc": "Force to generate"
+    }
+  ],
+  "examples": [
+    {
+      "script": "the-scaffold component my-awesome-component",
+      "desc": "Generate a component project"
+    }
+  ]
+}

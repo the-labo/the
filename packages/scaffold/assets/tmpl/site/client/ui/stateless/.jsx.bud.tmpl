@@ -1,0 +1,12 @@
+/**
+ * Bud file for fragment components
+ */
+'use strict'
+
+const { Stateless } = require('the-templates')
+
+module.exports = [].map((name) => Stateless({ name }))
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

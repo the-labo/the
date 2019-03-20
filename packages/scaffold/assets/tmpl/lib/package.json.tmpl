@@ -1,0 +1,38 @@
+{
+  "author": {
+    "email": "~~~~author_email~~~~",
+    "name": "~~~~author_name~~~~",
+    "url": "~~~~author_url~~~~"
+  },
+  "browser": "shim",
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "description": "~~~~package_description~~~~",
+  "devDependencies": {
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates",
+    "mocha": "^5.2.0"
+  },
+  "homepage": "https://github.com/the-labo/the#readme",
+  "keywords": [
+    "lib",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "name": "~~~~package_name~~~~",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run doc",
+    "test": "the-script-test",
+    "watch": "the-script-build -w"
+  },
+  "version": "1.0.0"
+}

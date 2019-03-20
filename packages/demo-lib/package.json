@@ -33,7 +33,7 @@
     "build": "the-script-build",
     "doc": "the-script-doc",
     "prepare": "npm run doc",
-    "test": "mocha",
+    "test": "the-script-test",
     "watch": "the-script-build -w"
   }
 }

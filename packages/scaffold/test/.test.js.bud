@@ -1,0 +1,16 @@
+/**
+ * Bud file for test cases.
+ */
+'use strict'
+
+const { test } = require('@the-/templates')
+
+module.exports = test({
+  dest: __dirname,
+  cjs: true,
+  src: [`${__dirname}/../lib/**/*.js`],
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

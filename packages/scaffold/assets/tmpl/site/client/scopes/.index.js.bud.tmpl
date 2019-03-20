@@ -1,0 +1,11 @@
+'use strict'
+
+const { scopes } = require('the-templates')
+
+module.exports = scopes({
+  dirname: __dirname,
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

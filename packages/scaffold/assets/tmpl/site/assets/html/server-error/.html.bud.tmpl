@@ -1,0 +1,38 @@
+'use strict'
+
+const pkg = require('../../../package')
+const {Styles, Urls} = require('../../../conf')
+const {errorPage} = require('the-templates')
+
+module.exports = [
+  {
+    name: 'server-error',
+    title: 'Oops! Something is wrong',
+    texts: [
+      'Sorry, something is wrong with our server. Please try again later',
+      '申し訳ありません。予期せぬエラーが発生しました。時間を置いて再度お試しください'
+    ]
+  },
+  {
+    name: 'under-maintenance',
+    title: 'We are under maintenance',
+    texts: [
+      'We will come back later. Please wait and try again later',
+      'メンテナンス中です。時間を置いて再度お試しください'
+    ]
+  }
+].map(({name, title, texts}) => ({
+  ...errorPage({
+    title,
+    texts,
+    pkg,
+    color: Styles.DOMINANT_COLOR,
+    icon: Urls.ICON_URL,
+    style: ``
+  }),
+  path: `${name}.html`
+}))
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

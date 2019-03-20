@@ -1,0 +1,20 @@
+/**
+ * Bud file for test cases.
+ */
+'use strict'
+
+const { test } = require('the-templates')
+
+module.exports = test.dir({
+  cjs: true,
+  dest: __dirname,
+  src: [
+    `${__dirname}/../controllers`,
+    `${__dirname}/../db`,
+    `${__dirname}/../server`
+  ],
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

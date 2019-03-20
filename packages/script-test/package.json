@@ -22,7 +22,6 @@
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/templates": "file:../templates",
-    "ape-tmpl": "^6.0.14",
     "coz": "^7.0.19",
     "eslint": "^5.15.2",
     "injectmock": "^2.0.0",

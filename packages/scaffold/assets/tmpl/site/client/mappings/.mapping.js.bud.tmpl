@@ -1,0 +1,28 @@
+/**
+ * Bud file for mappings
+ */
+'use strict'
+
+const aglob = require('aglob')
+const path = require('path')
+const { camelcase } = require('stringcase')
+const { mapping } = require('the-templates')
+
+module.exports = [
+  {
+    cjs: true,
+    mapping: aglob.sync(`${__dirname}/../scenes/*Scene.js`)
+      .map((filename) => path.basename(filename, '.js'))
+      .map((name) => ({
+        className: name,
+        instanceName: camelcase(name),
+      })),
+    name: 'SceneMapping',
+    requireAs: 'sc',
+    requirePath: '../scenes',
+  }
+].map(mapping)
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

@@ -1,0 +1,14 @@
+'use strict'
+
+const { dir } = require('the-templates')
+
+module.exports = dir({
+  cjs: true,
+  description: 'Scene classes',
+  dirname: __dirname,
+  name: 'scenes',
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

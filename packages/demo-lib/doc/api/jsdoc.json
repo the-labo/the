@@ -60,12 +60,13 @@
     "order": 0
   },
   {
-    "id": "theDemoLib",
-    "longname": "theDemoLib",
+    "id": "module:@the-/demo-lib.theDemoLib",
+    "longname": "module:@the-/demo-lib.theDemoLib",
     "name": "theDemoLib",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Default exports",
+    "memberof": "module:@the-/demo-lib",
     "returns": [
       {
         "type": {

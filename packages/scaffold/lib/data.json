@@ -1,0 +1,8 @@
+{
+  "resource": {
+    "name_of_resource_class": "SomeResource"
+  },
+  "site": {
+    "domain": "the-demo-site.com"
+  }
+}
