@@ -1,21 +1,20 @@
 /**
- * Test for doc.
+ * Test case for doc.
  * Runs with mocha.
  */
 'use strict'
 
 const doc = require('../lib/doc')
-const { ok, equal, deepEqual } = require('assert').strict
 
-describe('doc', () => {
-  before(() => {
-  })
+describe('doc', function() {
+  this.timeout(3000)
 
-  after(() => {
-  })
+  before(async () => {})
 
-  it('Do test', () => {
+  after(async () => {})
 
+  it('Jsdoc', async () => {
+    await doc(`${__dirname}/../misc/mocks/mock-project-01`)
   })
 })
 

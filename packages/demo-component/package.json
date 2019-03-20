@@ -1,7 +1,7 @@
 {
   "name": "@the-/demo-component",
   "description": "Demo of the-components",
-  "version": "15.0.1",
+  "version": "15.0.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -28,11 +28,7 @@
     "react-router-dom": "^4.3.1",
     "the-component-demo": "^4.0.18"
   },
-  "engines": {
-    "node": ">=10",
-    "npm": ">=6"
-  },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/demo-component#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "component",
     "the"

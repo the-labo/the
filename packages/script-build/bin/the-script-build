@@ -12,7 +12,7 @@ const pkg = require('../package')
 const theScriptBuild = require('../lib')
 
 program
-  .version(pkg[ 'version' ])
+  .version(pkg['version'])
   .usage('[options] <dirname> ')
   .description(pkg[ 'description' ])
   .option('-w, --watch', 'Run file watch')
@@ -20,7 +20,7 @@ program.parse(process.argv)
 
 // Run main command
 theScriptBuild.apply(theScriptBuild, program.args.concat({
-  watch: program.watch})
+  watch: program['watch']})
 ).catch(handleError)
 
 // Handlers

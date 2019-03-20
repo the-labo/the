@@ -20,6 +20,9 @@ const packages = {
   [`../the-templates`]: { kind: 'templates', name: 'templates' },
   [`../the-assert`]: { kind: 'lib', name: 'assert' },
   [`../the-assets`]: { kind: 'lib', name: 'assets' },
+  [`../the-check`]: { kind: 'lib', name: 'check' },
+  [`../the-window`]: { kind: 'lib', name: 'window' },
+  [`../the-bin`]: { kind: 'lib', name: 'bin' },
   [`../the-context`]: { kind: 'lib', name: 'context' },
 }
 
@@ -44,7 +47,7 @@ ${msg}
       spawnSync('git', ['add', '.'], { cwd: fromDir })
       spawnSync('git', ['commit', '-m', 'Deprecate'], { cwd: fromDir })
       spawnSync('git', ['push'], { cwd: fromDir })
-      spawnSync(`npm`, ['deprecate', path.basename(from), msg], {
+      spawnSync(`npm`, ['deprecate', path.basename(fromDir), msg], {
         cwd: fromDir,
       })
     }
@@ -95,10 +98,11 @@ ${msg}
         const toPkg = JSON.parse(await readFile(toPkgFile))
         const { scripts = {} } = toPkg
         scripts.doc = 'the-script-doc'
-        scripts.buid = 'the-script-build'
+        scripts.build = 'the-script-build'
         scripts.test = 'the-script-build'
         scripts.prepare = 'npm run build && npm run doc'
         delete scripts.share
+        delete scripts.buid
         await writeFile(toPkgFile, JSON.stringify({ ...toPkg, scripts }))
       }
     }

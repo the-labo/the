@@ -1,7 +1,7 @@
 {
   "name": "@the-/demo-lib",
   "description": "Demo of the-lib packages",
-  "version": "15.0.1",
+  "version": "15.0.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -17,11 +17,7 @@
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates"
   },
-  "engines": {
-    "node": ">=10",
-    "npm": ">=6"
-  },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/demo-lib#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "lib",
     "the"

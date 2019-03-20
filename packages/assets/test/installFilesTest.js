@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const installFiles = require('../lib/helpers/installFiles')
-const { ok, equal } = require('assert')
-
 describe('install-files', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

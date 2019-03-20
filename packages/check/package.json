@@ -1,0 +1,52 @@
+{
+  "name": "@the-/check",
+  "description": "Check utility for the-framework",
+  "version": "15.0.2",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "browser": {
+    ".": "shim",
+    "fs": false,
+    "hasbin": false,
+    "os": "os-browserify",
+    "path": "path-browserify"
+  },
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "asenv": "^3.0.1",
+    "bowser": "^2.1.0",
+    "hasbin": "^1.2.3",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.0",
+    "the-window": "^7.0.3"
+  },
+  "devDependencies": {
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates"
+  },
+  "homepage": "https://github.com/the-labo/the#readme",
+  "keywords": [
+    "lib",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-build",
+    "watch": "the-script-build -w"
+  }
+}

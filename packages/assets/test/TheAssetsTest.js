@@ -4,24 +4,20 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const TheAssets = require('../lib/TheAssets')
-const { ok, equal } = require('assert')
 
 describe('the-assets', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(TheAssets)
 
     let assets = new TheAssets({})
 
-    return assets.installTo(
-      `${__dirname}/../tmp/foo/public`
-    )
+    return assets.installTo(`${__dirname}/../tmp/foo/public`)
   })
 })
 

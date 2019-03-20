@@ -1,7 +1,7 @@
 /**
  * Doc script for the-projects
  * @module @the-/script-doc
- * @version 15.0.1
+ * @version 15.0.2
  */
 
 'use strict'

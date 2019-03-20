@@ -1,12 +1,12 @@
 [
   {
-    "id": "module:the-assets",
-    "longname": "module:the-assets",
-    "name": "the-assets",
+    "id": "module:@the-/assets",
+    "longname": "module:@the-/assets",
+    "name": "@the-/assets",
     "kind": "module",
     "description": "Assets for the-framework",
     "meta": {
-      "lineno": 1,
+      "lineno": 2,
       "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/assets/lib"
     },

@@ -2,7 +2,7 @@
 
 const theAssets = require('@the-/assets')
 
-async function tryExample () {
+async function tryExample() {
   const assets = theAssets()
   await assets.installTo('public/css')
 }

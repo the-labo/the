@@ -3,7 +3,7 @@
 const aglob = require('aglob')
 const path = require('path')
 const {
-  command: { spawn }
+  command: { spawn },
 } = require('pon-task-basic')
 
 function pkgRun(targets, command) {
@@ -19,7 +19,9 @@ function pkgRun(targets, command) {
       if (!hasCommand) {
         continue
       }
-      logger.notice(`[${path.relative(process.cwd(), subPkgDir)}] Run ${command} script...`)
+      logger.notice(
+        `[${path.relative(process.cwd(), subPkgDir)}] Run ${command} script...`,
+      )
       await spawn('npm', ['run', command], { cwd: subPkgDir })(ctx)
     }
   }
