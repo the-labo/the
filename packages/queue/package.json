@@ -1,32 +1,24 @@
 {
-  "name": "@the-/script-test",
-  "description": "Test script for the-project",
+  "name": "@the-/queue",
+  "description": "Queue for the-framework",
   "version": "15.0.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
     "url": "http://okunishitaka.com"
   },
-  "bin": {
-    "the-script-test": "bin/the-script-test"
-  },
+  "browser": "shim",
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "amocha": "^5.0.2",
-    "argx": "^4.0.0",
-    "commander": "^2.19.0"
+    "asleep": "^1.0.3"
   },
   "devDependencies": {
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
-    "@the-/templates": "file:../templates",
-    "coz": "^7.0.19",
-    "eslint": "^5.15.2",
-    "injectmock": "^2.0.0",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates"
   },
   "engines": {
     "node": ">=10",
@@ -34,7 +26,7 @@
   },
   "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
-    "script",
+    "lib",
     "the"
   ],
   "license": "MIT",
@@ -44,7 +36,10 @@
   },
   "repository": "the-labo/the",
   "scripts": {
+    "build": "the-script-build",
     "doc": "the-script-doc",
-    "test": "./bin/the-script-test"
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-build",
+    "watch": "the-script-build -w"
   }
 }

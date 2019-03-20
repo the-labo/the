@@ -21,10 +21,10 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/demo-lib#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
-    "the",
-    "lib"
+    "lib",
+    "the"
   ],
   "license": "MIT",
   "main": "lib",
