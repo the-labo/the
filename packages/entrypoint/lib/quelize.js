@@ -7,7 +7,6 @@
 
 const { addUrlQuery } = require('the-url')
 const { get } = require('the-window')
-const { parse: parseUrl } = require('url')
 
 /** @lends quelize */
 function quelize(values, options = {}) {

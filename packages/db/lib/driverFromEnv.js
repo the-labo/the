@@ -6,8 +6,8 @@
 
 const mkdirp = require('mkdirp')
 const path = require('path')
-const { isProduction } = require('the-check')
 const { toLowerKeys } = require('the-db-util')
+const { isProduction } = require('@the-/check')
 
 /** @lends driverFromEnv */
 function driverFromEnv(env) {

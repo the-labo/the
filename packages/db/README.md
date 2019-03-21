@@ -161,7 +161,7 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 - [default](./doc/api/api.md#module_default)
-- [the-db](./doc/api/api.md#module_the-db)
+- [@the-/db](./doc/api/api.md#module_@the-/db)
 - [helpers](./doc/api/api.md#module_helpers)
 - [mixins](./doc/api/api.md#module_mixins)
 - [resources](./doc/api/api.md#module_resources)

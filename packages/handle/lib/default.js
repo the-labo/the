@@ -11,7 +11,6 @@ const TheHandle = require('./TheHandle')
 const lib = create.bind(create)
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
-exports.contexts = contexts
 exports.create = create
 exports.TheHandle = TheHandle
 
