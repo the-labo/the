@@ -1,0 +1,74 @@
+{
+  "name": "@the-/db",
+  "description": "DB for the-framework",
+  "version": "15.0.2",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "amkdirp": "^2.0.0",
+    "asfs": "^2.2.1",
+    "asleep": "^1.0.3",
+    "aslogger": "^2.0.1",
+    "asobj": "^3.0.1",
+    "clay-constants": "^3.4.4",
+    "clay-driver-json": "^4.0.16",
+    "clay-driver-localstorage": "^2.0.4",
+    "clay-driver-memory": "^4.1.19",
+    "clay-lump": "^4.4.24",
+    "clay-resource": "^5.6.2",
+    "clay-resource-name": "^4.0.5",
+    "clay-resource-ref": "^2.0.8",
+    "clay-serial": "^2.1.4",
+    "debug": "^4.1.1",
+    "execcli": "^5.0.6",
+    "mkdirp": "^0.5.1",
+    "msgpack5": "^4.2.1",
+    "mysql2": "^1.6.5",
+    "path": "^0.12.7",
+    "the-check": "^2.0.23",
+    "the-db-util": "^2.0.0",
+    "the-driver-mongo": "^1.0.27",
+    "the-driver-rdb": "^2.3.5",
+    "the-driver-sequelize": "^1.1.14",
+    "the-hash": "^1.1.0",
+    "the-refresher": "^1.0.6",
+    "the-resource-base": "^1.4.9",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates",
+    "colorprint": "^5.0.3",
+    "coz": "^7.0.19",
+    "eslint": "^5.15.1",
+    "jsdoc-strip-async-await": "^0.1.0",
+    "sqlite3": "^4.0.6"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/db#readme",
+  "keywords": [
+    "lib",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "repository": "the-labo/the-db",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-build",
+    "watch": "the-script-build -w"
+  }
+}

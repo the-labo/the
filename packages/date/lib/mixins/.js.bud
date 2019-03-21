@@ -1,0 +1,67 @@
+'use strict'
+
+const moment = require('moment')
+const { uniqueFilter } = require('the-array')
+
+// https://momentjs.com/docs/#/manipulating/add/
+const addSubtractUnits = [
+  'years',
+  'quarters',
+  'months',
+  'weeks',
+  'days',
+  'hours',
+  'minutes',
+  'seconds',
+  'milliseconds',
+].reduce((reduced, u) => [...reduced, u, moment.normalizeUnits(u)], []).filter(uniqueFilter())
+
+// https://momentjs.com/docs/#/manipulating/start-of/
+const startEndUnits = [
+  'year',
+  'month',
+  'quarter',
+  'week',
+  'isoWeek',
+  'day',
+  'date',
+  'hour',
+  'minute',
+  'second',
+].reduce((reduced, u) => [...reduced, u, moment.normalizeUnits(u)], []).filter(uniqueFilter())
+
+// https://momentjs.com/docs/#/get-set/get/
+const getSetUnits = [
+  'year',
+  'month',
+  'date',
+  'hour',
+  'minute',
+  'second',
+  'millisecond',
+].reduce((reduced, u) => [...reduced, u, moment.normalizeUnits(u)], []).filter(uniqueFilter())
+
+module.exports = [
+  ['addMix', addSubtractUnits],
+  ['subtractMix', addSubtractUnits],
+  ['startOfMix', startEndUnits],
+  ['endOfMix', startEndUnits],
+  ['getMix', getSetUnits],
+  ['setMix', getSetUnits]
+].map(([name, units]) => (
+  {
+    force: true,
+    mode: '444',
+    tmpl: `.${name}.js.hbs`,
+    path: `${name}.js`,
+    data: {
+      units,
+      defaultUnit: units[units.length - 1],
+      unitsString: `[ '${units.join('\', \'')}' ]`,
+    }
+  }
+))
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

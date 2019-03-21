@@ -1,0 +1,410 @@
+[
+  {
+    "id": "module:@the-/loc",
+    "longname": "module:@the-/loc",
+    "name": "@the-/loc",
+    "kind": "module",
+    "description": "Locale resolver for the-framework",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/loc/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "module:@the-/loc.TheLoc()",
+    "longname": "module:@the-/loc.TheLoc",
+    "name": "TheLoc",
+    "kind": "constructor",
+    "description": "Locale resolver",
+    "memberof": "module:@the-/loc.TheLoc",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object.<string, Object>"
+          ]
+        },
+        "description": "Localed values",
+        "name": "config"
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "TheLoc#bind",
+    "longname": "TheLoc#bind",
+    "name": "bind",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Bind lang",
+    "memberof": "TheLoc",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "lang"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "- Bound function"
+      }
+    ],
+    "meta": {
+      "lineno": 34,
+      "filename": "TheLoc.js",
+      "path": "/Users/okuni/Projects/the/packages/loc/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheLoc#register",
+    "longname": "TheLoc#register",
+    "name": "register",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Register values for a namespace",
+    "memberof": "TheLoc",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "namespace"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "values"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheLoc"
+          ]
+        },
+        "description": "Returns this"
+      }
+    ],
+    "meta": {
+      "lineno": 54,
+      "filename": "TheLoc.js",
+      "path": "/Users/okuni/Projects/the/packages/loc/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "TheLoc#resolve",
+    "longname": "TheLoc#resolve",
+    "name": "resolve",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Resolve message for key",
+    "memberof": "TheLoc",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Lang to resolve",
+        "name": "lang"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "variable": true,
+        "description": "Key to resolve",
+        "name": "keypaths"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "nullable": true
+      }
+    ],
+    "meta": {
+      "lineno": 65,
+      "filename": "TheLoc.js",
+      "path": "/Users/okuni/Projects/the/packages/loc/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "TheLoc#toCompound",
+    "longname": "TheLoc#toCompound",
+    "name": "toCompound",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Convert to compound format object",
+    "memberof": "TheLoc",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "- Compound object"
+      }
+    ],
+    "meta": {
+      "lineno": 107,
+      "filename": "TheLoc.js",
+      "path": "/Users/okuni/Projects/the/packages/loc/lib"
+    },
+    "order": 8
+  },
+  {
+    "id": "TheLoc#validate",
+    "longname": "TheLoc#validate",
+    "name": "validate",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Validate this locale",
+    "memberof": "TheLoc",
+    "params": [],
+    "meta": {
+      "lineno": 119,
+      "filename": "TheLoc.js",
+      "path": "/Users/okuni/Projects/the/packages/loc/lib"
+    },
+    "order": 9
+  },
+  {
+    "id": "module:@the-/loc.TheLoc",
+    "longname": "module:@the-/loc.TheLoc",
+    "name": "TheLoc",
+    "kind": "class",
+    "scope": "static",
+    "memberof": "module:@the-/loc",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheLoc.js",
+      "path": "/Users/okuni/Projects/the/packages/loc/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "module:@the-/loc.create",
+    "longname": "module:@the-/loc.create",
+    "name": "create",
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheLoc instance",
+    "memberof": "module:@the-/loc",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheLoc"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/loc/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/loc.default",
+    "longname": "module:@the-/loc.default",
+    "name": "default",
+    "kind": "function",
+    "scope": "static",
+    "description": "Default exports",
+    "memberof": "module:@the-/loc",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/loc/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/loc.mergedLocales",
+    "longname": "module:@the-/loc.mergedLocales",
+    "name": "mergedLocales",
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/loc",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "l1"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "l2"
+      }
+    ],
+    "access": "private",
+    "meta": {
+      "lineno": 1,
+      "filename": "mergedLocales.js",
+      "path": "/Users/okuni/Projects/the/packages/loc/lib/helpers"
+    },
+    "order": 10
+  },
+  {
+    "id": "module:@the-/loc.resolveInScope",
+    "longname": "module:@the-/loc.resolveInScope",
+    "name": "resolveInScope",
+    "kind": "function",
+    "scope": "static",
+    "description": "Resolve value in a scope",
+    "memberof": "module:@the-/loc",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "data"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "keypath"
+      }
+    ],
+    "access": "private",
+    "meta": {
+      "lineno": 1,
+      "filename": "resolveInScope.js",
+      "path": "/Users/okuni/Projects/the/packages/loc/lib/helpers"
+    },
+    "order": 11
+  },
+  {
+    "id": "module:@the-/loc.toCompoundLocale",
+    "longname": "module:@the-/loc.toCompoundLocale",
+    "name": "toCompoundLocale",
+    "kind": "function",
+    "scope": "static",
+    "description": "Compound tow locales",
+    "memberof": "module:@the-/loc",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "access": "private",
+    "meta": {
+      "lineno": 1,
+      "filename": "toCompoundLocale.js",
+      "path": "/Users/okuni/Projects/the/packages/loc/lib/helpers"
+    },
+    "order": 12
+  },
+  {
+    "id": "module:@the-/loc.checkLocales",
+    "longname": "module:@the-/loc.checkLocales",
+    "name": "checkLocales",
+    "kind": "function",
+    "scope": "static",
+    "description": "Check locales",
+    "memberof": "module:@the-/loc",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "access": "private",
+    "meta": {
+      "lineno": 1,
+      "filename": "validateLocales.js",
+      "path": "/Users/okuni/Projects/the/packages/loc/lib/helpers"
+    },
+    "order": 13
+  }
+]

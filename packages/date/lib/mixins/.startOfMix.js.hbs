@@ -1,0 +1,50 @@
+/**
+ * Mixin for startOf
+ * @private
+ * @memberOf module:@the-/date
+ * @function startOf
+ * @param {function} Class
+ * @returns {function} Class
+ */
+'use strict'
+
+/** @lends startOf */
+function startOf (Class) {
+  const units = {{{unitsString}}}
+
+  /** @class StartOfMixed */
+  class StartOfMixed extends Class {
+    /**
+     * Date for start of
+     * @param {string} unit - Unit to startOf
+     * @see https://momentjs.com/docs/#/manipulating/start-of/
+     * @returns {TheDate}
+     */
+    startOf (unit = 'milliseconds') {
+      unit = this.normalizeMomentUnits(unit)
+      const unknown = !units.includes(unit)
+        if (unknown) {
+          throw new Error(`[TheDate] Unsupported unit: ${unit}`)
+      }
+      const Constructor = this.constructor
+      const moment = this.toMoment()
+      return new Constructor(moment.startOf(unit))
+    }
+
+{{#each units}}
+    /**
+     * Start of {{this}}
+     * @returns {TheDate}
+     */
+    startOf{{pascalcase this}} () {
+      return this.startOf('{{this}}')
+    }
+
+{{/each}}
+
+  }
+  return StartOfMixed
+}
+
+module.exports = startOf
+

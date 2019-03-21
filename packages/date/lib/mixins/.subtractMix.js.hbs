@@ -1,0 +1,52 @@
+/**
+ * Mixin for subtract
+ * @private
+ * @memberOf module:@the-/date
+ * @function subtractMix
+ * @param {function} Class
+ * @returns {function} Class
+ */
+'use strict'
+
+/** @lends subtractMix */
+function subtractMix (Class) {
+  const units = {{{unitsString}}}
+
+  /** @class SubtractMixed */
+  class SubtractMixed extends Class {
+    /**
+     * Date after
+     * @param {number} amount to subtract
+     * @param {string} unit - Unit to subtract
+     * @see https://momentjs.com/docs/#/manipulating/subtract/
+     * @returns {TheDate}
+     */
+    subtract (amount, unit = 'milliseconds') {
+      unit = this.normalizeMomentUnits(unit)
+      const unknown = !units.includes(unit)
+      if (unknown) {
+        throw new Error(`[TheDate] Unsupported unit: ${unit}`)
+      }
+      const Constructor = this.constructor
+      const moment = this.toMoment()
+      return new Constructor(moment.subtract(amount, unit))
+    }
+
+{{#each units}}
+    /**
+     * Subtract {{this}}
+     * @param {number} {{this}} to subtract
+     * @returns {TheDate}
+     */
+    subtract{{pascalcase this}} ({{this}}) {
+      return this.subtract({{this}}, '{{this}}')
+    }
+
+{{/each}}
+
+  }
+  return SubtractMixed
+}
+
+module.exports = subtractMix
+

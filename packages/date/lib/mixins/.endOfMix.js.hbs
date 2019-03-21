@@ -1,0 +1,50 @@
+/**
+ * Mixin for endOf
+ * @private
+ * @memberOf module:@the-/date
+ * @function endOf
+ * @param {function} Class
+ * @returns {function} Class
+ */
+'use strict'
+
+/** @lends endOf */
+function endOf (Class) {
+  const units = {{{unitsString}}}
+
+  /** @class EndOfMixed */
+  class EndOfMixed extends Class {
+    /**
+     * Date for end of
+     * @param {string} unit - Unit to endOf
+     * @see https://momentjs.com/docs/#/manipulating/end-of/
+     * @returns {TheDate}
+     */
+    endOf (unit = '{{defaultUnit}}') {
+      unit = this.normalizeMomentUnits(unit)
+      const unknown = !units.includes(unit)
+        if (unknown) {
+        throw new Error(`[TheDate] Unsupported unit: ${unit}`)
+      }
+      const Constructor = this.constructor
+      const moment = this.toMoment()
+      return new Constructor(moment.endOf(unit))
+    }
+
+{{#each units}}
+    /**
+     * End of {{this}}
+     * @returns {TheDate}
+     */
+    endOf{{pascalcase this}} () {
+      return this.endOf('{{this}}')
+    }
+
+{{/each}}
+
+  }
+  return EndOfMixed
+}
+
+module.exports = endOf
+

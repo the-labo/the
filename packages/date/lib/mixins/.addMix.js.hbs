@@ -1,0 +1,52 @@
+/**
+ * Mixin for add
+ * @private
+ * @memberOf module:@the-/date
+ * @function addMix
+ * @param {function} Class
+ * @returns {function} Class
+ */
+'use strict'
+
+/** @lends addMix */
+function addMix (Class) {
+  const units = {{{unitsString}}}
+
+  /** @class AddMixed */
+  class AddMixed extends Class {
+    /**
+     * Date after
+     * @param {number} amount to add
+     * @param {string} unit - Unit to add
+     * @see https://momentjs.com/docs/#/manipulating/add/
+     * @returns {TheDate}
+     */
+    add (amount, unit = '{{defaultUnit}}') {
+      unit = this.normalizeMomentUnits(unit)
+      const unknown = !units.includes(unit)
+      if (unknown) {
+        throw new Error(`[TheDate] Unsupported unit: ${unit}`)
+      }
+      const Constructor = this.constructor
+      const moment = this.toMoment()
+      return new Constructor(moment.add(amount, unit))
+    }
+
+{{#each units}}
+    /**
+     * Add {{this}}
+     * @param {number} {{this}} to add
+     * @returns {TheDate}
+     */
+    add{{pascalcase this}} ({{this}}) {
+      return this.add({{this}}, '{{this}}')
+    }
+
+{{/each}}
+
+  }
+  return AddMixed
+}
+
+module.exports = addMix
+

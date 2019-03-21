@@ -1,0 +1,276 @@
+[
+  {
+    "id": "module:the-entrypoint",
+    "longname": "module:the-entrypoint",
+    "name": "the-entrypoint",
+    "kind": "module",
+    "description": "Browser entrypoint for the-framework",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "mount",
+    "longname": "mount",
+    "name": "mount",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mount element on DOM",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "description": "React element",
+        "name": "element"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Id of container dom",
+        "name": "containerId"
+      },
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "optional": true,
+        "description": "Optional settings",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "description": "Using strict mode",
+        "name": "options.strictMode"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "description": "Use router",
+        "name": "options.router"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "mount.js",
+      "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "online",
+    "longname": "online",
+    "name": "online",
+    "kind": "function",
+    "scope": "global",
+    "description": "Handle when online",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "[]",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "online.js",
+      "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "patch",
+    "longname": "patch",
+    "name": "patch",
+    "kind": "function",
+    "scope": "global",
+    "description": "Apply patch",
+    "meta": {
+      "lineno": 1,
+      "filename": "patch.js",
+      "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "quelize",
+    "longname": "quelize",
+    "name": "quelize",
+    "kind": "function",
+    "scope": "global",
+    "description": "Inject queries on location change",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function",
+            "object"
+          ]
+        },
+        "description": "or its builder",
+        "name": "values"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "quelize.js",
+      "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "secure",
+    "longname": "secure",
+    "name": "secure",
+    "kind": "function",
+    "scope": "global",
+    "description": "Make sure to be secure",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Boolean"
+          ]
+        },
+        "description": "Redirect triggered"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "secure.js",
+      "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "singleton",
+    "longname": "singleton",
+    "name": "singleton",
+    "kind": "function",
+    "scope": "global",
+    "description": "Make sure that entrypoint loaded only once",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "singleton.js",
+      "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "workers",
+    "longname": "workers",
+    "name": "workers",
+    "kind": "function",
+    "scope": "global",
+    "description": "Register service workers",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Array.<string>"
+          ]
+        },
+        "description": "Service worker urls",
+        "name": "swUrls"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "workers.js",
+      "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "createStyleElement",
+    "longname": "createStyleElement",
+    "name": "createStyleElement",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create Style element",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "HTMLElement"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "createStyleElement.js",
+      "path": "/Users/okuni/Projects/the/packages/entrypoint/lib/helpers"
+    },
+    "order": 8
+  }
+]

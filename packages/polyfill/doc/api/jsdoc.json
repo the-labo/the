@@ -1,0 +1,75 @@
+[
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/polyfill/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:the-polyfill",
+    "longname": "module:the-polyfill",
+    "name": "the-polyfill",
+    "kind": "module",
+    "description": "Polyfill of the-frameworks",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/polyfill/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "ThePolyfill",
+    "longname": "ThePolyfill",
+    "name": "ThePolyfill",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "ThePolyfill.js",
+      "path": "/Users/okuni/Projects/the/packages/polyfill/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a ThePolyfill instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "ThePolyfill"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/polyfill/lib"
+    },
+    "order": 0
+  }
+]

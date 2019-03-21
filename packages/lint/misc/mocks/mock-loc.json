@@ -1,0 +1,11 @@
+{
+  "msg": {
+    "SOME_MESSAGE_2": "This is message 2",
+    "a": {
+      "b": {
+        "c": 1
+      }
+    }
+  },
+  "HOGE_HOGE": "THIS IS HOGE"
+}

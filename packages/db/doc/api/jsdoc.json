@@ -1,0 +1,1500 @@
+[
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/db",
+    "longname": "module:@the-/db",
+    "name": "@the-/db",
+    "kind": "module",
+    "description": "DB for the-framework",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "module:helpers",
+    "longname": "module:helpers",
+    "name": "helpers",
+    "kind": "module",
+    "description": "Helper functions",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/helpers"
+    },
+    "order": 20
+  },
+  {
+    "id": "module:mixins",
+    "longname": "module:mixins",
+    "name": "mixins",
+    "kind": "module",
+    "description": "Mixins",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 28
+  },
+  {
+    "id": "module:resources",
+    "longname": "module:resources",
+    "name": "resources",
+    "kind": "module",
+    "description": "Buildin resources",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/resources"
+    },
+    "order": 42
+  },
+  {
+    "id": "TheDB()",
+    "longname": "TheDB",
+    "name": "TheDB",
+    "kind": "constructor",
+    "memberof": "TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "uuid.v4()",
+        "description": "Name of clay-lump",
+        "name": "config.name"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "'memory'",
+        "description": "Database dialect. \"mysql\", \"json\", \"memory\", \"localstorage\", or \"sqlite\"",
+        "name": "config.dialect"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "description": "Storage file name for \"sqlite\" or \"json\" dialect",
+        "name": "config.storage"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "description": "Name of database schema",
+        "name": "config.database"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "description": "Database username",
+        "name": "config.username"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "description": "Database password",
+        "name": "config.password"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "description": "Database password",
+        "name": "config.host"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "description": "Database password",
+        "name": "config.port"
+      },
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "optional": true,
+        "description": "Database plugin creators",
+        "name": "config.plugins"
+      },
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "optional": true,
+        "description": "Database hook creators",
+        "name": "config.hooks"
+      },
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "optional": true,
+        "description": "Database resource classes",
+        "name": "config.resources"
+      }
+    ],
+    "order": 7
+  },
+  {
+    "id": "TheLogResource()",
+    "longname": "TheLogResource",
+    "name": "TheLogResource",
+    "kind": "constructor",
+    "description": "Resource of data history",
+    "memberof": "TheLogResource",
+    "order": 44
+  },
+  {
+    "id": "TheSchemaResource()",
+    "longname": "TheSchemaResource",
+    "name": "TheSchemaResource",
+    "kind": "constructor",
+    "description": "Resource to manage schema",
+    "memberof": "TheSchemaResource",
+    "order": 46
+  },
+  {
+    "id": "TheDB",
+    "longname": "TheDB",
+    "name": "TheDB",
+    "kind": "class",
+    "scope": "global",
+    "augments": [
+      "ResourceMixed",
+      "ExportImportMixed",
+      "MigrateMixed",
+      "RefreshMixed",
+      "CliMixed"
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "TheDB.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "CliMix",
+    "longname": "CliMix",
+    "name": "CliMix",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 15,
+      "filename": "cliMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 25
+  },
+  {
+    "id": "ExportImportMixed",
+    "longname": "ExportImportMixed",
+    "name": "ExportImportMixed",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 27,
+      "filename": "exportImportMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 27
+  },
+  {
+    "id": "MigrateMixed",
+    "longname": "MigrateMixed",
+    "name": "MigrateMixed",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 11,
+      "filename": "migrateMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 30
+  },
+  {
+    "id": "ResourceMixed",
+    "longname": "ResourceMixed",
+    "name": "ResourceMixed",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 8,
+      "filename": "resourceMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 38
+  },
+  {
+    "id": "TheLogResource",
+    "longname": "TheLogResource",
+    "name": "TheLogResource",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheLogResource.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/resources"
+    },
+    "order": 43
+  },
+  {
+    "id": "TheSchemaResource",
+    "longname": "TheSchemaResource",
+    "name": "TheSchemaResource",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheSchemaResource.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/resources"
+    },
+    "order": 45
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheDB instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheDB"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "driverFromEnv",
+    "longname": "driverFromEnv",
+    "name": "driverFromEnv",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create driver from env",
+    "meta": {
+      "lineno": 1,
+      "filename": "driverFromEnv.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "execForEnv",
+    "longname": "execForEnv",
+    "name": "execForEnv",
+    "kind": "function",
+    "scope": "global",
+    "description": "Do exec for env",
+    "meta": {
+      "lineno": 1,
+      "filename": "execForEnv.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "setupForEnv",
+    "longname": "setupForEnv",
+    "name": "setupForEnv",
+    "kind": "function",
+    "scope": "global",
+    "description": "Do setup for env",
+    "meta": {
+      "lineno": 1,
+      "filename": "setupForEnv.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "createTerminal",
+    "longname": "createTerminal",
+    "name": "createTerminal",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "createTerminal.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/helpers"
+    },
+    "order": 17
+  },
+  {
+    "id": "execMysql",
+    "longname": "execMysql",
+    "name": "execMysql",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "execMysql.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/helpers"
+    },
+    "order": 18
+  },
+  {
+    "id": "execSqlite",
+    "longname": "execSqlite",
+    "name": "execSqlite",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "execSqlite.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/helpers"
+    },
+    "order": 19
+  },
+  {
+    "id": "parsePolicy",
+    "longname": "parsePolicy",
+    "name": "parsePolicy",
+    "kind": "function",
+    "scope": "global",
+    "description": "Parse db policy",
+    "meta": {
+      "lineno": 1,
+      "filename": "parsePolicy.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/helpers"
+    },
+    "order": 21
+  },
+  {
+    "id": "parseSchema",
+    "longname": "parseSchema",
+    "name": "parseSchema",
+    "kind": "function",
+    "scope": "global",
+    "description": "Parse schema",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "Schema"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "parseSchema.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/helpers"
+    },
+    "order": 22
+  },
+  {
+    "id": "cascadeMix",
+    "longname": "cascadeMix",
+    "name": "cascadeMix",
+    "kind": "function",
+    "scope": "global",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "cascadeMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 23
+  },
+  {
+    "id": "cliMix",
+    "longname": "cliMix",
+    "name": "cliMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Add cli methods",
+    "meta": {
+      "lineno": 1,
+      "filename": "cliMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 24
+  },
+  {
+    "id": "exportImportMix",
+    "longname": "exportImportMix",
+    "name": "exportImportMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Add export/import methods",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "exportImportMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 26
+  },
+  {
+    "id": "migrateMix",
+    "longname": "migrateMix",
+    "name": "migrateMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Add migrate methods",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "migrateMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 29
+  },
+  {
+    "id": "refreshMix",
+    "longname": "refreshMix",
+    "name": "refreshMix",
+    "kind": "function",
+    "scope": "global",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "refreshMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 32
+  },
+  {
+    "id": "resourceMix",
+    "longname": "resourceMix",
+    "name": "resourceMix",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "resourceMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 37
+  },
+  {
+    "id": "setupMongo",
+    "longname": "setupMongo",
+    "name": "setupMongo",
+    "kind": "function",
+    "scope": "global",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "setupMongo.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/setup"
+    },
+    "order": 47
+  },
+  {
+    "id": "setupMysql",
+    "longname": "setupMysql",
+    "name": "setupMysql",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "setupMysql.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/setup"
+    },
+    "order": 48
+  },
+  {
+    "id": "setupPostgres",
+    "longname": "setupPostgres",
+    "name": "setupPostgres",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "setupPostgres.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/setup"
+    },
+    "order": 49
+  },
+  {
+    "id": "setupSqlite",
+    "longname": "setupSqlite",
+    "name": "setupSqlite",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "setupSqlite.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/setup"
+    },
+    "order": 50
+  },
+  {
+    "id": "TheDB#hooksFromMapping",
+    "longname": "TheDB#hooksFromMapping",
+    "name": "hooksFromMapping",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Register hooks from mapping",
+    "memberof": "TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "HookMapping"
+      }
+    ],
+    "meta": {
+      "lineno": 124,
+      "filename": "TheDB.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "order": 8
+  },
+  {
+    "id": "TheDB#load",
+    "longname": "TheDB#load",
+    "name": "load",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Register resource form Resource Class",
+    "memberof": "TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Resource class to register",
+        "name": "ResourceClass"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Name of resource",
+        "name": "resourceName"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "ClayResource"
+          ]
+        },
+        "description": "Loaded resource class"
+      }
+    ],
+    "meta": {
+      "lineno": 141,
+      "filename": "TheDB.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "order": 9
+  },
+  {
+    "id": "TheDB#loadFromMapping",
+    "longname": "TheDB#loadFromMapping",
+    "name": "loadFromMapping",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Load resources from mapping object",
+    "memberof": "TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object.<string, function()>"
+          ]
+        },
+        "description": "Resource name and class",
+        "name": "ResourceMapping"
+      }
+    ],
+    "meta": {
+      "lineno": 265,
+      "filename": "TheDB.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "order": 10
+  },
+  {
+    "id": "TheDB#pluginFromMapping",
+    "longname": "TheDB#pluginFromMapping",
+    "name": "pluginFromMapping",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Register plugins from mapping",
+    "memberof": "TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "PluginMapping"
+      }
+    ],
+    "meta": {
+      "lineno": 275,
+      "filename": "TheDB.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "order": 11
+  },
+  {
+    "id": "TheDB#unref",
+    "longname": "TheDB#unref",
+    "name": "unref",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Aut close before exit",
+    "memberof": "TheDB",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheDB"
+          ]
+        },
+        "description": "this"
+      }
+    ],
+    "meta": {
+      "lineno": 288,
+      "filename": "TheDB.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "order": 12
+  },
+  {
+    "id": "TheDB#drop",
+    "longname": "TheDB#drop",
+    "name": "drop",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Drop database",
+    "memberof": "TheDB",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 331,
+      "filename": "TheDB.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "async": true,
+    "order": 13
+  },
+  {
+    "id": "TheDB#invalidate",
+    "longname": "TheDB#invalidate",
+    "name": "invalidate",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Invalidate entity",
+    "memberof": "TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "entityRef"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 362,
+      "filename": "TheDB.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "async": true,
+    "order": 14
+  },
+  {
+    "id": "TheDB#transaction",
+    "longname": "TheDB#transaction",
+    "name": "transaction",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Create transaction",
+    "memberof": "TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "nullable": true,
+        "name": "callback"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 392,
+      "filename": "TheDB.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "async": true,
+    "order": 15
+  },
+  {
+    "id": "TheDB#updateVersion",
+    "longname": "TheDB#updateVersion",
+    "name": "updateVersion",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Update database migration version",
+    "memberof": "TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Version string",
+        "name": "version"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.boolean"
+          ]
+        },
+        "description": "Success or not"
+      }
+    ],
+    "meta": {
+      "lineno": 409,
+      "filename": "TheDB.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "async": true,
+    "order": 16
+  },
+  {
+    "id": "MigrateMixed#migrate",
+    "longname": "MigrateMixed#migrate",
+    "name": "migrate",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Run database migration",
+    "memberof": "MigrateMixed",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object.<string, function()>"
+          ]
+        },
+        "description": "Migration handler for each versions",
+        "name": "handlers"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<?Object>"
+          ]
+        },
+        "description": "Migration result"
+      }
+    ],
+    "meta": {
+      "lineno": 18,
+      "filename": "migrateMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "async": true,
+    "order": 31
+  },
+  {
+    "id": "RefreshMixed#requestToRefresh",
+    "longname": "RefreshMixed#requestToRefresh",
+    "name": "requestToRefresh",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Request to refresh entity",
+    "memberof": "RefreshMixed",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "entityRef"
+      }
+    ],
+    "meta": {
+      "lineno": 33,
+      "filename": "refreshMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 33
+  },
+  {
+    "id": "RefreshMixed#startRefreshLoop",
+    "longname": "RefreshMixed#startRefreshLoop",
+    "name": "startRefreshLoop",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Start refreshing loop",
+    "memberof": "RefreshMixed",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "name": "interval"
+      }
+    ],
+    "meta": {
+      "lineno": 45,
+      "filename": "refreshMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 34
+  },
+  {
+    "id": "RefreshMixed#stopRefreshLoop",
+    "longname": "RefreshMixed#stopRefreshLoop",
+    "name": "stopRefreshLoop",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Stop refreshing loop",
+    "memberof": "RefreshMixed",
+    "params": [],
+    "meta": {
+      "lineno": 61,
+      "filename": "refreshMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 35
+  },
+  {
+    "id": "RefreshMixed#waitToRefresh",
+    "longname": "RefreshMixed#waitToRefresh",
+    "name": "waitToRefresh",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Wait until refresh",
+    "memberof": "RefreshMixed",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "entityRef"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Boolean>"
+          ]
+        },
+        "description": "- Full filled"
+      }
+    ],
+    "meta": {
+      "lineno": 101,
+      "filename": "refreshMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "async": true,
+    "order": 36
+  },
+  {
+    "id": "ResourceMixed#assertResource",
+    "longname": "ResourceMixed#assertResource",
+    "name": "assertResource",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Check if resource exists",
+    "memberof": "ResourceMixed",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "resourceName"
+      }
+    ],
+    "exceptions": [
+      {
+        "type": {
+          "names": [
+            "Error"
+          ]
+        },
+        "description": "Resource not found error"
+      }
+    ],
+    "meta": {
+      "lineno": 15,
+      "filename": "resourceMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 39
+  },
+  {
+    "id": "ResourceMixed#getResource",
+    "longname": "ResourceMixed#getResource",
+    "name": "getResource",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get resource with name",
+    "memberof": "ResourceMixed",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "resourceName"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheResource"
+          ]
+        },
+        "nullable": true
+      }
+    ],
+    "meta": {
+      "lineno": 27,
+      "filename": "resourceMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 40
+  },
+  {
+    "id": "ResourceMixed#hasResource",
+    "longname": "ResourceMixed#hasResource",
+    "name": "hasResource",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Check if resource exists",
+    "memberof": "ResourceMixed",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "resourceName"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 40,
+      "filename": "resourceMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 41
+  },
+  {
+    "id": "TheDB#assertResource",
+    "longname": "TheDB#assertResource",
+    "name": "assertResource",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "ResourceMixed#assertResource",
+    "inherited": true,
+    "description": "Check if resource exists",
+    "memberof": "TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "resourceName"
+      }
+    ],
+    "exceptions": [
+      {
+        "type": {
+          "names": [
+            "Error"
+          ]
+        },
+        "description": "Resource not found error"
+      }
+    ],
+    "meta": {
+      "lineno": 15,
+      "filename": "resourceMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 51
+  },
+  {
+    "id": "TheDB#getResource",
+    "longname": "TheDB#getResource",
+    "name": "getResource",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "ResourceMixed#getResource",
+    "inherited": true,
+    "description": "Get resource with name",
+    "memberof": "TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "resourceName"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheResource"
+          ]
+        },
+        "nullable": true
+      }
+    ],
+    "meta": {
+      "lineno": 27,
+      "filename": "resourceMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 52
+  },
+  {
+    "id": "TheDB#hasResource",
+    "longname": "TheDB#hasResource",
+    "name": "hasResource",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "ResourceMixed#hasResource",
+    "inherited": true,
+    "description": "Check if resource exists",
+    "memberof": "TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "resourceName"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 40,
+      "filename": "resourceMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 53
+  },
+  {
+    "id": "TheDB#migrate",
+    "longname": "TheDB#migrate",
+    "name": "migrate",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "MigrateMixed#migrate",
+    "inherited": true,
+    "description": "Run database migration",
+    "memberof": "TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object.<string, function()>"
+          ]
+        },
+        "description": "Migration handler for each versions",
+        "name": "handlers"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<?Object>"
+          ]
+        },
+        "description": "Migration result"
+      }
+    ],
+    "meta": {
+      "lineno": 18,
+      "filename": "migrateMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "async": true,
+    "order": 54
+  },
+  {
+    "id": "TheDB#requestToRefresh",
+    "longname": "TheDB#requestToRefresh",
+    "name": "requestToRefresh",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "RefreshMixed#requestToRefresh",
+    "inherited": true,
+    "description": "Request to refresh entity",
+    "memberof": "TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "entityRef"
+      }
+    ],
+    "meta": {
+      "lineno": 33,
+      "filename": "refreshMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 55
+  },
+  {
+    "id": "TheDB#startRefreshLoop",
+    "longname": "TheDB#startRefreshLoop",
+    "name": "startRefreshLoop",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "RefreshMixed#startRefreshLoop",
+    "inherited": true,
+    "description": "Start refreshing loop",
+    "memberof": "TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "name": "interval"
+      }
+    ],
+    "meta": {
+      "lineno": 45,
+      "filename": "refreshMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 56
+  },
+  {
+    "id": "TheDB#stopRefreshLoop",
+    "longname": "TheDB#stopRefreshLoop",
+    "name": "stopRefreshLoop",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "RefreshMixed#stopRefreshLoop",
+    "inherited": true,
+    "description": "Stop refreshing loop",
+    "memberof": "TheDB",
+    "params": [],
+    "meta": {
+      "lineno": 61,
+      "filename": "refreshMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 57
+  },
+  {
+    "id": "TheDB#waitToRefresh",
+    "longname": "TheDB#waitToRefresh",
+    "name": "waitToRefresh",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "RefreshMixed#waitToRefresh",
+    "inherited": true,
+    "description": "Wait until refresh",
+    "memberof": "TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "entityRef"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Boolean>"
+          ]
+        },
+        "description": "- Full filled"
+      }
+    ],
+    "meta": {
+      "lineno": 101,
+      "filename": "refreshMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "async": true,
+    "order": 58
+  }
+]

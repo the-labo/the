@@ -1,0 +1,17 @@
+/**
+ * Bud file for bin.
+ */
+
+'use strict'
+
+const { bin } = require('the-templates')
+
+module.exports = bin({
+  signature: require('../signature'),
+  lib: `../lib/run`,
+  path: 'the-code'
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

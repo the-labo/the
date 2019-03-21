@@ -1,0 +1,15 @@
+'use strict'
+
+const {Timezones} = require('../../lib')
+
+module.exports = {
+  force: true,
+  mode: '644',
+  data: {
+    Timezones
+  }
+}
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

@@ -1,0 +1,17 @@
+'use strict'
+
+const {dir} = require('the-templates')
+
+module.exports = [
+  true,
+].map((cjs) => ({
+  ...dir({
+    cjs,
+    dirname: __dirname,
+    description: 'Helper modules',
+  })
+}))
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

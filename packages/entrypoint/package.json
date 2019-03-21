@@ -1,0 +1,55 @@
+{
+  "name": "@the-/entrypoint",
+  "description": "Browser entrypoint for the-framework",
+  "version": "15.0.2",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "browser": "shim",
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "history": "^4.7.2",
+    "the-check": "^2.0.23",
+    "the-router": "^3.0.4",
+    "the-url": "^1.4.7",
+    "the-window": "^7.0.3"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.3.1",
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates",
+    "injectmock": "^2.0.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-router-dom": "^4.3.1"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/the-entrypoint#readme",
+  "keywords": [
+    "the",
+    "lib"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "repository": "the-labo/the-entrypoint",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-build",
+    "watch": "the-script-build -w"
+  }
+}

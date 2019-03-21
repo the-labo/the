@@ -1,0 +1,61 @@
+/**
+ * Mixin for set
+ * @private
+ * @memberOf module:@the-/date
+ * @function setMix
+ * @param {function} Class
+ * @returns {function} Class
+ */
+'use strict'
+
+/** @lends setMix */
+function setMix (Class) {
+  const units = {{{unitsString}}}
+
+  /** @class SetMixed */
+  class SetMixed extends Class {
+    /**
+     * Set value of
+     * @param {Object} values - Values to set
+     * @see https://momentjs.com/docs/#/set-set/set/
+     * @returns {TheDate}
+     */
+    /**
+     * Set value of
+     * @param {string} key - Values to set
+     * @param {number} value - Values to set
+     * @see https://momentjs.com/docs/#/set-set/set/
+     * @returns {TheDate}
+     */
+    set (values) {
+      if (arguments.length === 2) {
+        let [unit, value] = arguments
+        unit = this.normalizeMomentUnits(unit)
+        const unknown = !units.includes(unit)
+        if (unknown) {
+          throw new Error(`[TheDate] Unsupported unit: ${unit}`)
+        }
+        return this.set({[unit]: value})
+      }
+      const moment = this.toMoment()
+      this.date = moment.set(values).toDate()
+    }
+
+{{#each units}}
+    /**
+     * Set {{this}}
+     * @param {number} value
+     * @returns {TheDate}
+     */
+    set{{pascalcase this}} (value) {
+      return this.set({'{{this}}': value})
+    }
+
+{{/each}}
+
+  }
+  return SetMixed
+}
+
+module.exports = setMix
+

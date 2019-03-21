@@ -1,0 +1,288 @@
+[
+  {
+    "id": "module:the-hash",
+    "longname": "module:the-hash",
+    "name": "the-hash",
+    "kind": "module",
+    "description": "Hash object to hold key-value pairs",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/hash/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheHash()",
+    "longname": "TheHash",
+    "name": "TheHash",
+    "kind": "constructor",
+    "memberof": "TheHash",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "props"
+      }
+    ],
+    "order": 5
+  },
+  {
+    "id": "TheHash",
+    "longname": "TheHash",
+    "name": "TheHash",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheHash.js",
+      "path": "/Users/okuni/Projects/the/packages/hash/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheHash instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheHash"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/hash/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "theHash",
+    "longname": "theHash",
+    "name": "theHash",
+    "kind": "function",
+    "scope": "global",
+    "description": "Default exports",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheHash"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/hash/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "proxy",
+    "longname": "proxy",
+    "name": "proxy",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create proxy for hash object",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Source object",
+        "name": "src"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "description": "Name of object",
+        "name": "options.name"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "description": "Enable unknown checking",
+        "name": "options.unknownCheck"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Proxy"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "proxy.js",
+      "path": "/Users/okuni/Projects/the/packages/hash/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "TheHash#get",
+    "longname": "TheHash#get",
+    "name": "get",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get value for key",
+    "memberof": "TheHash",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "key"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 21,
+      "filename": "TheHash.js",
+      "path": "/Users/okuni/Projects/the/packages/hash/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "TheHash#has",
+    "longname": "TheHash#has",
+    "name": "has",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Has value for",
+    "memberof": "TheHash",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "key"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 30,
+      "filename": "TheHash.js",
+      "path": "/Users/okuni/Projects/the/packages/hash/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "TheHash#set",
+    "longname": "TheHash#set",
+    "name": "set",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Set value for key",
+    "memberof": "TheHash",
+    "params": [
+      {
+        "name": "key"
+      },
+      {
+        "name": "value"
+      }
+    ],
+    "meta": {
+      "lineno": 39,
+      "filename": "TheHash.js",
+      "path": "/Users/okuni/Projects/the/packages/hash/lib"
+    },
+    "order": 8
+  },
+  {
+    "id": "TheHash#toProxy",
+    "longname": "TheHash#toProxy",
+    "name": "toProxy",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Convert into proxy",
+    "memberof": "TheHash",
+    "params": [
+      {
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 55,
+      "filename": "TheHash.js",
+      "path": "/Users/okuni/Projects/the/packages/hash/lib"
+    },
+    "order": 9
+  }
+]
