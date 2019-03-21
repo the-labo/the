@@ -5,7 +5,7 @@
 'use strict'
 
 const seatAccess = require('../lib/seatAccess')
-const theSeat = require('the-seat')
+const theSeat = require('@the-/seat')
 const {ok, equal, deepEqual} = require('assert')
 
 describe('seat-access', () => {

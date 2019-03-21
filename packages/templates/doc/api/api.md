@@ -72,8 +72,6 @@
 <dt><a href="#test">test()</a> ⇒ <code>Object</code></dt>
 <dd><p>Define coz bud for readme</p>
 </dd>
-<dt><a href="#toc">toc()</a></dt>
-<dd></dd>
 <dt><a href="#vhost">vhost(config)</a> ⇒ <code>Object</code></dt>
 <dd><p>Error page</p>
 </dd>
@@ -285,10 +283,6 @@ Define coz bud for templates
 ## test() ⇒ <code>Object</code>
 Define coz bud for readme
 
-**Kind**: global function  
-<a name="toc"></a>
-
-## toc()
 **Kind**: global function  
 <a name="vhost"></a>
 

@@ -15,7 +15,7 @@ const {
   withReady,
   withSort,
 } = require('the-scene-mixins/shim')
-const { hasMoreFor } = require('the-site-util')
+const { hasMoreFor } = require('@the-/util-site')
 const Scene = require('./Scene')
 
 @withBusy

@@ -12,7 +12,7 @@ const {
   readAsJsonSync,
   statSync,
   writeAsJsonSync,
-} = require('the-file-util')
+} = require('@the-/util-file')
 const { handleUnknownOptions, randomString } = require('./helpers')
 const m = require('./mixins')
 

@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "pon build",
+    "publish": "pon publish",
     "test": "pon test",
     "prepare": "pon prepare"
   },
@@ -50,6 +51,7 @@
     "rimraf": "^2.6.3",
     "semver": "^5.6.0",
     "the-code": "^5.5.18",
-    "the-refactor": "^2.0.1"
+    "the-refactor": "^2.0.1",
+    "npm-install-if-needed": "latest"
   }
 }

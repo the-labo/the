@@ -11,22 +11,19 @@ const {
   readAsJsonSync,
   statSync,
   writeAsJsonSync,
-} = require('the-file-util')
+} = require('@the-/util-file')
 const { numberIfPossible } = require('./helpers')
 const m = require('./mixins')
 
-const TheSettingBase = [
-  m.lockMix
-].reduce((Class, mix) => mix(Class), class Base {})
+const TheSettingBase = [m.lockMix].reduce(
+  (Class, mix) => mix(Class),
+  class Base {},
+)
 
 /** @lends TheSetting */
 class TheSetting extends TheSettingBase {
-  constructor (filename,
-               defaultValues = {},
-               options = {}) {
-    const {
-      prefix = '[setting] ',
-    } = options
+  constructor(filename, defaultValues = {}, options = {}) {
+    const { prefix = '[setting] ' } = options
     super()
     this.cache = null
     this.cacheAt = null
@@ -49,7 +46,7 @@ class TheSetting extends TheSettingBase {
    * Delete value for name
    * @param {...string} names
    */
-  del (...names) {
+  del(...names) {
     const { logger } = this
     const values = this.get() || {}
     for (const name of names) {
@@ -67,7 +64,7 @@ class TheSetting extends TheSettingBase {
    * @param {string} [name] - Name to get
    * @returns {*}
    */
-  get (name) {
+  get(name) {
     if (arguments.length > 0) {
       const values = this.get()
       return values[name]
@@ -76,7 +73,7 @@ class TheSetting extends TheSettingBase {
     const { filename } = this
     const stat = statSync(filename)
     const mtimeMs = stat && stat.mtimeMs
-    let notChanged = mtimeMs && (mtimeMs === this.cacheAt)
+    let notChanged = mtimeMs && mtimeMs === this.cacheAt
     if (notChanged) {
       return this.cache
     }
@@ -88,12 +85,12 @@ class TheSetting extends TheSettingBase {
     } catch (e) {
       const { backupFilename } = this
       throw new Error(
-        `[the-setting] Failed to read value from ${filename}. ( Backup file: ${backupFilename} )`
+        `[the-setting] Failed to read value from ${filename}. ( Backup file: ${backupFilename} )`,
       )
     }
   }
 
-  save (values) {
+  save(values) {
     const { backupFilename, filename } = this
     this.lock()
     copyAsJsonSync(filename, backupFilename)
@@ -105,7 +102,7 @@ class TheSetting extends TheSettingBase {
    * Set values
    * @param {Object} values - Values to set
    */
-  set (values = {}) {
+  set(values = {}) {
     if (arguments.length === 2) {
       this.set({ [arguments[0]]: arguments[1] })
       return
@@ -121,7 +118,7 @@ class TheSetting extends TheSettingBase {
     this.cacheAt = null
   }
 
-  async ask () {
+  async ask() {
     const { logger } = this
     const current = this.get()
     const asked = await askconfig(current)

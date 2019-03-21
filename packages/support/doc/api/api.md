@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-support">the-support</a></dt>
+<dt><a href="#module_@the-/support">@the-/support</a></dt>
 <dd><p>JS support version checker</p>
 </dd>
 </dl>
@@ -23,9 +23,9 @@
 </dd>
 </dl>
 
-<a name="module_the-support"></a>
+<a name="module_@the-/support"></a>
 
-## the-support
+## @the-/support
 JS support version checker
 
 <a name="TheSupport"></a>

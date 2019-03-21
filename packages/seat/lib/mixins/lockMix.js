@@ -1,6 +1,6 @@
 'use strict'
 
-const { delSync, readAsJsonSync, writeAsJsonSync } = require('the-file-util')
+const { delSync, readAsJsonSync, writeAsJsonSync } = require('@the-/util-file')
 
 const LOCK_DURATION = 1500
 

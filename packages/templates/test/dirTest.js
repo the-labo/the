@@ -1,15 +1,43 @@
 /**
- * Test for dir.
+ * Test case for dir.
  * Runs with mocha.
  */
 'use strict'
 
-describe('dir', () => {
-  before(() => {})
+const coz = require('coz')
+const dir = require('../lib/dir')
 
-  after(() => {})
+describe('dir', function () {
+  this.timeout(3000)
 
-  it('Do test', () => {})
+  before(async () => {})
+
+  after(async () => {})
+
+  it('Dir', async () => {
+    const bud = dir({
+      default: 'dddd',
+      description: 'hoge',
+      dirname: __dirname,
+      name: 'foo',
+    })
+    bud.path = `${__dirname}/../tmp/testing-dir/index.mjs`
+    bud.mkdirp = true
+    await coz.render(bud)
+  })
+
+  it('CJS', async () => {
+    const bud = dir({
+      cjs: true,
+      default: 'dir_test',
+      description: 'hoge',
+      dirname: __dirname,
+      name: 'foo',
+    })
+    bud.path = `${__dirname}/../tmp/testing-dir/index.js`
+    bud.mkdirp = true
+    await coz.render(bud)
+  })
 })
 
 /* global describe, before, after, it */

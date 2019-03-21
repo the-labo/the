@@ -1,15 +1,25 @@
 /**
- * Test for prettierrc.
+ * Test case for prettierrc.
  * Runs with mocha.
  */
 'use strict'
 
-describe('prettierrc', () => {
-  before(() => {})
+const coz = require('coz')
+const prettierrc = require('../lib/prettierrc')
 
-  after(() => {})
+describe('prettierrc', function() {
+  this.timeout(3000)
 
-  it('Do test', () => {})
+  before(async () => {})
+
+  after(async () => {})
+
+  it('Prettierrc', async () => {
+    const bud = prettierrc()
+    bud.mkdirp = true
+    bud.path = `${__dirname}/../tmp/prettierrc/.prettierrc.yml`
+    await coz.render(bud)
+  })
 })
 
 /* global describe, before, after, it */

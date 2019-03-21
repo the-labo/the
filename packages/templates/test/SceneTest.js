@@ -1,15 +1,25 @@
 /**
- * Test for Scene.
+ * Test case for scene.
  * Runs with mocha.
  */
 'use strict'
 
-describe('scene', () => {
-  before(() => {})
+const coz = require('coz')
+const scene = require('../lib/Scene')
 
-  after(() => {})
+describe('scene', function() {
+  this.timeout(3000)
 
-  it('Do test', () => {})
+  before(async () => {})
+
+  after(async () => {})
+
+  it('Scene', async () => {
+    const bud = scene({ cjs: true, name: 'hoge' })
+    bud.path = `${__dirname}/../tmp/HogeScene.js`
+    bud.mkdirp = true
+    coz.render(bud)
+  })
 })
 
 /* global describe, before, after, it */

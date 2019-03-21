@@ -1,15 +1,25 @@
 /**
- * Test for eslintrc.
+ * Test case for eslintrc.
  * Runs with mocha.
  */
 'use strict'
 
-describe('eslintrc', () => {
-  before(() => {})
+const coz = require('coz')
+const eslintrc = require('../lib/eslintrc')
 
-  after(() => {})
+describe('eslintrc', function() {
+  this.timeout(3000)
 
-  it('Do test', () => {})
+  before(async () => {})
+
+  after(async () => {})
+
+  it('Eslintrc', async () => {
+    const bud = eslintrc()
+    bud.mkdirp = true
+    bud.path = `${__dirname}/../tmp/eslintrc/.eslintrc.yml`
+    await coz.render(bud)
+  })
 })
 
 /* global describe, before, after, it */

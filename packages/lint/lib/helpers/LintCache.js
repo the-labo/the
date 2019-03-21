@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { readAsJson, unlinkAsync, writeAsJson } = require('the-file-util')
+const { readAsJson, unlinkAsync, writeAsJson } = require('@the-/util-file')
 
 /** @lends LintCache */
 class LintCache {

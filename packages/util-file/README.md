@@ -67,9 +67,9 @@ Usage
 ```javascript
 'use strict'
 
-const {readAsJsonSync, writeAsJsonSync} = require('the-file-util')
+const { readAsJsonSync } = require('@the-/util-file')
 
-async function tryExample () {
+async function tryExample() {
   const data = readAsJsonSync('conf/foo.json')
 }
 
@@ -86,7 +86,7 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-- [the-file-util](./doc/api/api.md#module_the-file-util)
+- [@the-/util-file](./doc/api/api.md#module_@the-/util-file)
 
 
 <!-- Section from "doc/readme/03.API.md.hbs" End -->

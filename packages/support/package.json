@@ -30,8 +30,8 @@
   },
   "homepage": "https://github.com/the-labo/the/tree/master/packages/the-support#readme",
   "keywords": [
-    "the",
-    "lib"
+    "lib",
+    "the"
   ],
   "license": "MIT",
   "main": "lib",

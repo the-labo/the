@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-support",
-    "longname": "module:the-support",
-    "name": "the-support",
+    "id": "module:@the-/support",
+    "longname": "module:@the-/support",
+    "name": "@the-/support",
     "kind": "module",
     "description": "JS support version checker",
     "meta": {

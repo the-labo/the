@@ -53,8 +53,8 @@
   },
   "homepage": "https://github.com/the-labo/the/tree/master/packages/server#readme",
   "keywords": [
-    "the",
-    "lib"
+    "lib",
+    "the"
   ],
   "license": "MIT",
   "main": "lib",

@@ -36,8 +36,8 @@
   },
   "homepage": "https://github.com/the-labo/the/tree/master/packages/store#readme",
   "keywords": [
-    "the",
-    "lib"
+    "lib",
+    "the"
   ],
   "license": "MIT",
   "main": "lib",

@@ -1,13 +1,13 @@
-#!/usr/bin/env
+#!/usr/bin/env node
 'use strict'
 
 const aglob = require('aglob')
-process.chdir(baseDir)
 const { spawnSync } = require('child_process')
 const path = require('path')
 const { TheRefactor } = require('the-refactor')
 const transporting = require('./transporting')
 const baseDir = `${__dirname}/../..`
+process.chdir(baseDir)
 
 async function main() {
   for (const pkgPath of await aglob(path.resolve('packages/*/package.json'))) {

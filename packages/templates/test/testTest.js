@@ -1,15 +1,35 @@
 /**
- * Test for test.
+ * Test case for test.
  * Runs with mocha.
  */
 'use strict'
 
-describe('test', () => {
-  before(() => {})
+const coz = require('coz')
+const test = require('../lib/test')
 
-  after(() => {})
+describe('test', function() {
+  this.timeout(3000)
 
-  it('Do test', () => {})
+  before(async () => {})
+
+  after(async () => {})
+
+  it('Test', async () => {
+    let bud = test({
+      dest: `${__dirname}/../tmp/foo/test`,
+      src: `${__dirname}/../misc/mocks/*.jsx`,
+    })
+    await coz.render(bud)
+  })
+
+  it('TestDir', async () => {
+    let bud = test.dir({
+      dest: `${__dirname}/../tmp/foo/test/`,
+      node: true,
+      src: `${__dirname}/../misc/mocks`,
+    })
+    await coz.render(bud)
+  })
 })
 
 /* global describe, before, after, it */

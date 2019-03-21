@@ -1,15 +1,26 @@
 /**
- * Test for Stateful.
+ * Test case for stateful.
  * Runs with mocha.
  */
 'use strict'
 
-describe('stateful', () => {
-  before(() => {})
+const coz = require('coz')
+const Stateful = require('../lib/Stateful')
 
-  after(() => {})
+describe('stateful', function() {
+  this.timeout(3000)
 
-  it('Do test', () => {})
+  before(async () => {})
+
+  after(async () => {})
+
+  it('Stateful', async () => {
+    const bud = Stateful({
+      name: 'hoge/hoge',
+    })
+    bud.path = `${__dirname}/../tmp/testing-Stateful.js`
+    await coz.render(bud)
+  })
 })
 
 /* global describe, before, after, it */

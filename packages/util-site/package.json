@@ -12,19 +12,19 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/check": "^15.0.3",
+    "@the-/error": "^15.0.3",
+    "@the-/seat": "file:../seat",
     "bwindow": "^2.0.2",
     "clay-resource-ref": "^2.0.8",
     "email-regex": "^3.0.0",
-    "qs": "^6.6.0",
-    "the-check": "^2.0.23",
-    "the-error": "^2.0.5"
+    "qs": "^6.6.0"
   },
   "devDependencies": {
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
-    "@the-/templates": "file:../templates",
-    "the-seat": "^3.0.6"
+    "@the-/templates": "file:../templates"
   },
   "engines": {
     "node": ">=10",

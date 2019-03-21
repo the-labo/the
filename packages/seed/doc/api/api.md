@@ -6,7 +6,7 @@
 <dt><a href="#module_default">default</a></dt>
 <dd><p>Default exports</p>
 </dd>
-<dt><a href="#module_the-seed">the-seed</a></dt>
+<dt><a href="#module_@the-/seed">@the-/seed</a></dt>
 <dd><p>Data generator for the-db</p>
 </dd>
 </dl>
@@ -31,9 +31,9 @@
 ## default
 Default exports
 
-<a name="module_the-seed"></a>
+<a name="module_@the-/seed"></a>
 
-## the-seed
+## @the-/seed
 Data generator for the-db
 
 <a name="TheSeed"></a>

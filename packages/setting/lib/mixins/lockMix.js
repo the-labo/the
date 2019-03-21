@@ -1,16 +1,12 @@
 'use strict'
 
-const {
-  delSync,
-  readAsJsonSync,
-  writeAsJsonSync,
-} = require('the-file-util')
+const { delSync, readAsJsonSync, writeAsJsonSync } = require('@the-/util-file')
 
 const LOCK_DURATION = 1500
 
-function lockMix (Class) {
+function lockMix(Class) {
   return class LockMixed extends Class {
-    isLocked () {
+    isLocked() {
       const { lockFilename } = this
       let info
       try {
@@ -22,10 +18,10 @@ function lockMix (Class) {
         return false
       }
       const { at } = info
-      return (new Date() - new Date(at)) < LOCK_DURATION * 2
+      return new Date() - new Date(at) < LOCK_DURATION * 2
     }
 
-    lock () {
+    lock() {
       const timeoutLimit = new Date().getTime() + LOCK_DURATION
       while (this.isLocked()) {
         if (timeoutLimit < new Date()) {
@@ -43,7 +39,7 @@ function lockMix (Class) {
       return true
     }
 
-    unlock () {
+    unlock() {
       const { lockFilename } = this
       return delSync(lockFilename)
     }

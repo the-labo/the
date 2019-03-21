@@ -13,9 +13,9 @@
     "order": 1
   },
   {
-    "id": "module:the-seed",
-    "longname": "module:the-seed",
-    "name": "the-seed",
+    "id": "module:@the-/seed",
+    "longname": "module:@the-/seed",
+    "name": "@the-/seed",
     "kind": "module",
     "description": "Data generator for the-db",
     "meta": {

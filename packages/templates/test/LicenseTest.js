@@ -1,15 +1,28 @@
 /**
- * Test for License.
+ * Test case for license.
  * Runs with mocha.
  */
 'use strict'
 
-describe('license', () => {
-  before(() => {})
+const coz = require('coz')
+const License = require('../lib/License')
 
-  after(() => {})
+describe('license', function() {
+  this.timeout(3000)
 
-  it('Do test', () => {})
+  before(async () => {})
+
+  after(async () => {})
+
+  it('License', async () => {
+    const bud = License({
+      holder: 'hoge',
+      type: 'MIT',
+    })
+    bud.mkdirp = true
+    bud.path = `${__dirname}/../tmp/licence/MIT.md`
+    coz.render(bud)
+  })
 })
 
 /* global describe, before, after, it */

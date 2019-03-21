@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-site-util",
-    "longname": "module:the-site-util",
-    "name": "the-site-util",
+    "id": "module:@the-/util-site",
+    "longname": "module:@the-/util-site",
+    "name": "@the-/util-site",
     "kind": "module",
     "description": "Utility for site",
     "meta": {

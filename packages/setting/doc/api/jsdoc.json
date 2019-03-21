@@ -13,9 +13,9 @@
     "order": 1
   },
   {
-    "id": "module:the-setting",
-    "longname": "module:the-setting",
-    "name": "the-setting",
+    "id": "module:@the-/setting",
+    "longname": "module:@the-/setting",
+    "name": "@the-/setting",
     "kind": "module",
     "description": "Setting manager for the-framework",
     "meta": {
@@ -104,7 +104,7 @@
       }
     ],
     "meta": {
-      "lineno": 52,
+      "lineno": 49,
       "filename": "TheSetting.js",
       "path": "/Users/okuni/Projects/the/packages/setting/lib"
     },
@@ -140,7 +140,7 @@
       }
     ],
     "meta": {
-      "lineno": 70,
+      "lineno": 67,
       "filename": "TheSetting.js",
       "path": "/Users/okuni/Projects/the/packages/setting/lib"
     },
@@ -166,7 +166,7 @@
       }
     ],
     "meta": {
-      "lineno": 108,
+      "lineno": 105,
       "filename": "TheSetting.js",
       "path": "/Users/okuni/Projects/the/packages/setting/lib"
     },

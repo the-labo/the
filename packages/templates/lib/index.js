@@ -29,7 +29,6 @@ const prettierrc_ = require('./prettierrc')
 const scopes_ = require('./scopes')
 const templates_ = require('./templates')
 const test_ = require('./test')
-const toc_ = require('./toc')
 const vhost_ = require('./vhost')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
@@ -57,7 +56,6 @@ exports.prettierrc = prettierrc_
 exports.scopes = scopes_
 exports.templates = templates_
 exports.test = test_
-exports.toc = toc_
 exports.vhost = vhost_
 
 module.exports = {
@@ -85,6 +83,5 @@ module.exports = {
   scopes: scopes_,
   templates: templates_,
   test: test_,
-  toc: toc_,
   vhost: vhost_,
 }

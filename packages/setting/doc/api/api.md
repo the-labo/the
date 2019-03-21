@@ -6,7 +6,7 @@
 <dt><a href="#module_default">default</a></dt>
 <dd><p>Default exports</p>
 </dd>
-<dt><a href="#module_the-setting">the-setting</a></dt>
+<dt><a href="#module_@the-/setting">@the-/setting</a></dt>
 <dd><p>Setting manager for the-framework</p>
 </dd>
 <dt><a href="#module_mixins">mixins</a></dt>
@@ -33,9 +33,9 @@
 ## default
 Default exports
 
-<a name="module_the-setting"></a>
+<a name="module_@the-/setting"></a>
 
-## the-setting
+## @the-/setting
 Setting manager for the-framework
 
 <a name="module_mixins"></a>

@@ -2,6 +2,7 @@
 
 const aglob = require('aglob')
 const path = require('path')
+const installIfNeeded = require('npm-install-if-needed')
 const {
   command: { spawn },
 } = require('pon-task-basic')
@@ -17,7 +18,12 @@ function pkgInstall(targets) {
       logger.notice(
         `[${path.relative(process.cwd(), subPkgDir)}] Installing...`,
       )
-      await spawn('npm', ['install'], { cwd: subPkgDir })(ctx)
+      const installed = await installIfNeeded({ cwd: subPkgDir })
+      if (installed) {
+        logger.debug('...installing finished')
+      } else {
+        logger.debug('...installing skipped (no need to install)')
+      }
     }
   }
 }

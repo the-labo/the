@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-sw-util">the-sw-util</a></dt>
+<dt><a href="#module_@the-/util-sw">@the-/util-sw</a></dt>
 <dd><p>Utility for service workers</p>
 </dd>
 </dl>
@@ -22,9 +22,9 @@
 </dd>
 </dl>
 
-<a name="module_the-sw-util"></a>
+<a name="module_@the-/util-sw"></a>
 
-## the-sw-util
+## @the-/util-sw
 Utility for service workers
 
 <a name="appCache"></a>

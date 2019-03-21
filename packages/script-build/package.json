@@ -66,8 +66,8 @@
   "repository": "the-labo/the",
   "scripts": {
     "build": "./bin/the-script-build",
+    "test": "the-script-test",
     "doc": "the-script-doc",
-    "prepare": "npm run build; npm run doc",
-    "test": "mocha test"
+    "prepare": "npm run build; npm run doc"
   }
 }

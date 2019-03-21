@@ -9,7 +9,7 @@
 const TheSetting = require('./TheSetting')
 
 /** @lends create */
-function create (...args) {
+function create(...args) {
   return new TheSetting(...args)
 }
 

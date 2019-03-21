@@ -7,7 +7,7 @@
  */
 'use strict'
 
-const { unlessProduction } = require('the-check')
+const { unlessProduction } = require('@the-/check')
 
 const SCOPE_SEPARATOR = '/'
 const VERSION_SEPARATOR = '@'

@@ -52,6 +52,10 @@ var/
 /packages/run/lib/index.js
 /packages/scope/lib/index.js
 /packages/scope/lib/scopes/index.js
+/packages/seal/lib/index.js
+/packages/seat/lib/index.js
+/packages/seat/lib/mixins/index.js
+/packages/seed/lib/index.js
 /packages/server/lib/adpters/index.js
 /packages/server/lib/assert/index.js
 /packages/server/lib/constants/index.js
@@ -59,11 +63,16 @@ var/
 /packages/server/lib/index.js
 /packages/server/lib/mixins/index.js
 /packages/server/lib/stores/index.js
+/packages/setting/lib/index.js
+/packages/setting/lib/mixins/index.js
 /packages/store/lib/index.js
+/packages/support/lib/index.js
 /packages/templates/lib/eslintignore.js
 /packages/templates/lib/index.js
 /packages/url/lib/index.js
 /packages/util-file/lib/index.js
+/packages/util-site/lib/index.js
+/packages/util-sw/lib/index.js
 /packages/window/lib/index.js
 
 # Other paths

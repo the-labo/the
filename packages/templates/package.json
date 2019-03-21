@@ -13,7 +13,6 @@
   "dependencies": {
     "aglob": "^3.0.1",
     "evaljson": "^6.0.4",
-    "markdown-toc": "^1.2.0",
     "objnest": "^5.0.6",
     "reserved": "^0.1.2",
     "stringcase": "^4.3.1",
@@ -34,8 +33,8 @@
   },
   "homepage": "https://github.com/the-labo/the/tree/master/packages/templates#readme",
   "keywords": [
-    "the",
-    "templates"
+    "templates",
+    "the"
   ],
   "license": "MIT",
   "main": "lib",

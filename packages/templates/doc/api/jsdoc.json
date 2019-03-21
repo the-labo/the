@@ -736,19 +736,6 @@
     "order": 23
   },
   {
-    "id": "toc",
-    "longname": "toc",
-    "name": "toc",
-    "kind": "function",
-    "scope": "global",
-    "meta": {
-      "lineno": 1,
-      "filename": "toc.js",
-      "path": "/Users/okuni/Projects/the/packages/templates/lib"
-    },
-    "order": 24
-  },
-  {
     "id": "vhost",
     "longname": "vhost",
     "name": "vhost",
@@ -779,7 +766,7 @@
       "filename": "vhost.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
-    "order": 25
+    "order": 24
   },
   {
     "id": "View",
@@ -812,7 +799,7 @@
       "filename": "View.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
-    "order": 26
+    "order": 25
   },
   {
     "id": "module:ape-tmpl/lib.binBud",

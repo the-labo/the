@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-sw-util",
-    "longname": "module:the-sw-util",
-    "name": "the-sw-util",
+    "id": "module:@the-/util-sw",
+    "longname": "module:@the-/util-sw",
+    "name": "@the-/util-sw",
     "kind": "module",
     "description": "Utility for service workers",
     "meta": {

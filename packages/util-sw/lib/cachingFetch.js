@@ -6,7 +6,7 @@
  */
 'use strict'
 
-const { unlessProduction } = require('the-check')
+const { unlessProduction } = require('@the-/check')
 
 /** @lends cachingFetch */
 async function cachingFetch(cache, request) {

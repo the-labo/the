@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-site-util">the-site-util</a></dt>
+<dt><a href="#module_@the-/util-site">@the-/util-site</a></dt>
 <dd><p>Utility for site</p>
 </dd>
 </dl>
@@ -69,9 +69,9 @@
 </dd>
 </dl>
 
-<a name="module_the-site-util"></a>
+<a name="module_@the-/util-site"></a>
 
-## the-site-util
+## @the-/util-site
 Utility for site
 
 <a name="appendQueryToSearch"></a>

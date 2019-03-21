@@ -1,15 +1,25 @@
 /**
- * Test for eslintignore.
+ * Test case for eslintignore.
  * Runs with mocha.
  */
 'use strict'
 
-describe('eslintignore', () => {
-  before(() => {})
+const coz = require('coz')
+const eslintignore = require('../lib/eslintignore')
 
-  after(() => {})
+describe('eslintignore', function() {
+  this.timeout(3000)
 
-  it('Do test', () => {})
+  before(async () => {})
+
+  after(async () => {})
+
+  it('Eslintignore', async () => {
+    const bud = eslintignore()
+    bud.mkdirp = true
+    bud.path = `${__dirname}/../tmp/eslintrc/.eslintignore`
+    await coz.render(bud)
+  })
 })
 
 /* global describe, before, after, it */
