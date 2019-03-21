@@ -6,7 +6,7 @@
 <dt><a href="#module_default">default</a></dt>
 <dd><p>Default exports</p>
 </dd>
-<dt><a href="#module_the-store">the-store</a></dt>
+<dt><a href="#module_@the-/store">@the-/store</a></dt>
 <dd><p>Redux wrapper for the-framework</p>
 </dd>
 </dl>
@@ -34,9 +34,9 @@
 ## default
 Default exports
 
-<a name="module_the-store"></a>
+<a name="module_@the-/store"></a>
 
-## the-store
+## @the-/store
 Redux wrapper for the-framework
 
 <a name="TheStore"></a>

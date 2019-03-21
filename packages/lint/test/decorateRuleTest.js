@@ -4,16 +4,13 @@
  */
 'use strict'
 
-const decorateRule = require('../lib/rules/decorateRule')
 const fs = require('fs')
-const { ok, equal } = require('assert')
+const decorateRule = require('../lib/rules/decorateRule')
 
 describe('decorate-rule', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     const reported = []
@@ -21,10 +18,10 @@ describe('decorate-rule', () => {
       declared: true,
     })({
       content: fs.readFileSync(
-        require.resolve('../misc/mocks/mock-file.05.jsx')
+        require.resolve('../misc/mocks/mock-file.05.jsx'),
       ),
       filename: 'hoge.jsx',
-      report: (...args) => reported.push(args)
+      report: (...args) => reported.push(args),
     })
     // equal(reported.length, 1)
   })

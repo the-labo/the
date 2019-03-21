@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const applyConverter = require('../lib/helpers/applyConverter')
-const { ok, equal } = require('assert')
-
 describe('apply-converter', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

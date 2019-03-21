@@ -14,13 +14,13 @@ const socketIOClient = require('socket.io-client')
 const theClient = require('@the-/client')
 const TheServer = require('../lib/TheServer')
 
-describe('the-server', function () {
+describe('the-server', function() {
   this.timeout(32000)
   before(() => {})
 
   after(async () => {})
 
-  it('Listen and Close', async function () {
+  it('Listen and Close', async function() {
     const port = await aport()
     const server = new TheServer({})
 
@@ -28,7 +28,7 @@ describe('the-server', function () {
     await server.close()
   })
 
-  it('Do Callback', async function () {
+  it('Do Callback', async function() {
     const port = await aport()
     const server = new TheServer({})
 
@@ -61,7 +61,7 @@ describe('the-server', function () {
     deepEqual(received[0], { a: 1, b: true, c: 'J' })
   })
 
-  it('The server', async function () {
+  it('The server', async function() {
     const port = await aport()
 
     class SayCtrl extends TheServer.Ctrl {
@@ -307,7 +307,7 @@ describe('the-server', function () {
     await server.close()
   })
 
-  it('Controller lifecycle', async function () {
+  it('Controller lifecycle', async function() {
     const port = await aport()
 
     let wasCalledControllerDidAttatch = false
@@ -359,7 +359,7 @@ describe('the-server', function () {
     const server = new TheServer({
       streams: {
         hogeStream: class extends TheServer.Stream {
-          async * provide() {
+          async *provide() {
             let count = Number(this.params.count)
             while (count > 0) {
               if (this.closed) {
@@ -456,7 +456,7 @@ describe('the-server', function () {
     const server = new TheServer({
       streams: {
         xStream: class extends TheServer.Stream {
-          async * provide() {
+          async *provide() {
             let count = Number(this.params.count)
             for (let i = 0; i < count; i++) {
               yield i

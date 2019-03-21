@@ -4,16 +4,14 @@
  */
 'use strict'
 
-const depsRule = require('../lib/rules/depsRule')
+const { equal } = require('assert').strict
 const fs = require('fs')
-const { ok, equal } = require('assert').strict
+const depsRule = require('../lib/rules/depsRule')
 
 describe('deps-rule', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     const reported = []
@@ -21,11 +19,9 @@ describe('deps-rule', () => {
     await depsRule({
       importFrom: ['.jsx'],
     })({
+      content: fs.readFileSync(filename),
       filename,
-      content: fs.readFileSync(
-        filename
-      ),
-      report: (...args) => reported.push(args)
+      report: (...args) => reported.push(args),
     })
     equal(reported.length, 1)
   })
@@ -36,11 +32,9 @@ describe('deps-rule', () => {
     await depsRule({
       requireFrom: ['.js'],
     })({
-      filename: filename,
-      content: fs.readFileSync(
-        filename
-      ),
-      report: (...args) => reported.push(args)
+      content: fs.readFileSync(filename),
+      filename,
+      report: (...args) => reported.push(args),
     })
     equal(reported.length, 1)
   })

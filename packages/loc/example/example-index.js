@@ -1,9 +1,9 @@
 'use strict'
 
-const {create: theLoc} = require('the-loc')
+const { create: theLoc } = require('the-loc')
 
 const env = theLoc({
-  en: require('./en')
+  en: require('./en'),
 })
 
 module.exports = env

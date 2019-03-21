@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const parseCSS = require('../lib/parsers/parseCSS')
-const {ok, equal} = require('assert')
 
 describe('parse-c-s-s', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     const parsed = await parseCSS(`
@@ -28,7 +26,6 @@ describe('parse-c-s-s', () => {
     ok(decls[0])
     ok(decls[0].parent.nodes[0])
   })
-
 })
 
 /* global describe, before, after, it */

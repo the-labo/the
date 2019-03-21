@@ -2,7 +2,7 @@
 
 const { TheHash } = require('@the-/hash')
 
-async function tryExample () {
+async function tryExample() {
   const hash = new TheHash()
   hash.a = 1
   ok(hash.has('a'))

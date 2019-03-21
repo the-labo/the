@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { equal, ok } = require('assert')
 const ThePolyfill = require('../lib/ThePolyfill')
-const {ok, equal} = require('assert')
 
 describe('the-polyfill', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(ThePolyfill)
@@ -24,10 +22,10 @@ describe('the-polyfill', () => {
 
   it('Fake proxy', () => {
     const Proxy = require('proxy-polyfill/src/proxy')
-    const p = new Proxy({a: 1})
+    const p = new Proxy({ a: 1 })
     ok(p)
     p.x = 1
-    Object.assign(p, {z: 2})
+    Object.assign(p, { z: 2 })
     equal(p.x, 1)
     equal(p.z, 2)
   })

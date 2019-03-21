@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const LintCache = require('../lib/helpers/LintCache')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('lint-cache', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

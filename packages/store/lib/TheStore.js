@@ -17,8 +17,8 @@ const {
 } = require('bredux')
 const { get } = require('bwindow')
 const { flatten } = require('objnest')
-const { unlessProduction } = require('@the-/check')
 const { scopes } = require('the-scope')
+const { unlessProduction } = require('@the-/check')
 const helpers = require('./helpers')
 const toStoreScopeClass = require('./toStoreScopeClass')
 
@@ -137,7 +137,7 @@ class TheStore {
       name: namepath,
       reducerFactories: {
         $$init(values) {
-          return (state) => values
+          return () => values
         },
         ...reducerFactories,
       },
@@ -160,7 +160,6 @@ class TheStore {
 
   /** @deprecated */
   loadFromDefaults(defaults, options = {}) {
-    const {} = options
     defaults = flatten(defaults)
     const namepaths = Object.keys(defaults).sort((a, b) => a.length - b.length)
     for (const namepath of namepaths) {

@@ -13,9 +13,9 @@
     "order": 1
   },
   {
-    "id": "module:the-store",
-    "longname": "module:the-store",
-    "name": "the-store",
+    "id": "module:@the-/store",
+    "longname": "module:@the-/store",
+    "name": "@the-/store",
     "kind": "module",
     "description": "Redux wrapper for the-framework",
     "meta": {
@@ -231,7 +231,7 @@
     "params": [],
     "deprecated": true,
     "meta": {
-      "lineno": 182,
+      "lineno": 181,
       "filename": "TheStore.js",
       "path": "/Users/okuni/Projects/the/packages/store/lib"
     },
@@ -268,7 +268,7 @@
       }
     ],
     "meta": {
-      "lineno": 194,
+      "lineno": 193,
       "filename": "TheStore.js",
       "path": "/Users/okuni/Projects/the/packages/store/lib"
     },
@@ -297,7 +297,7 @@
       }
     ],
     "meta": {
-      "lineno": 221,
+      "lineno": 220,
       "filename": "TheStore.js",
       "path": "/Users/okuni/Projects/the/packages/store/lib"
     },

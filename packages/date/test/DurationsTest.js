@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const Durations = require('../lib/Durations')
-const { ok, equal } = require('assert')
-
 describe('durations', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

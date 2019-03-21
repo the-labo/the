@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-hash",
-    "longname": "module:the-hash",
-    "name": "the-hash",
+    "id": "module:@the-/hash",
+    "longname": "module:@the-/hash",
+    "name": "@the-/hash",
     "kind": "module",
     "description": "Hash object to hold key-value pairs",
     "meta": {

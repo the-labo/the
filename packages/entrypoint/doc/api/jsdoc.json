@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-entrypoint",
-    "longname": "module:the-entrypoint",
-    "name": "the-entrypoint",
+    "id": "module:@the-/entrypoint",
+    "longname": "module:@the-/entrypoint",
+    "name": "@the-/entrypoint",
     "kind": "module",
     "description": "Browser entrypoint for the-framework",
     "meta": {

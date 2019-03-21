@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const secure = require('../lib/secure')
-const { ok, equal } = require('assert')
-
 describe('secure', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

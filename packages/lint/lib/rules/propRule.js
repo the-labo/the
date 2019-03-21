@@ -56,15 +56,6 @@ function propRule(config) {
       const targetModule = require(path.resolve(target))
       for (const expression of MemberExpressions) {
         switch (expression.property.type) {
-          case 'StringLiteral': {
-            if (expression.object.name === name) {
-              const { value } = expression.property
-              const key = ('/' + value.replace(/\./g, '/')).replace(/^\/+/, '/')
-              const ok = has(targetModule, key) || value in targetModule
-              !ok && reportKeypathExpression(expression, value)
-            }
-            break
-          }
           case 'Identifier': {
             const objectNames = objectNamesFor(expression)
             if (objectNames[0] === name) {
@@ -72,6 +63,15 @@ function propRule(config) {
               const key = '/' + names.join('/').replace(/\./g, '/')
               const ok = has(targetModule, key)
               !ok && reportKeypathExpression(expression, names.join('.'))
+            }
+            break
+          }
+          case 'StringLiteral': {
+            if (expression.object.name === name) {
+              const { value } = expression.property
+              const key = ('/' + value.replace(/\./g, '/')).replace(/^\/+/, '/')
+              const ok = has(targetModule, key) || value in targetModule
+              !ok && reportKeypathExpression(expression, value)
             }
             break
           }

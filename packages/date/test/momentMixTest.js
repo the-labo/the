@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const momentMix = require('../lib/mixins/momentMix')
-const { ok, equal } = require('assert')
-
 describe('moment-mix', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

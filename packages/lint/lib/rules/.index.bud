@@ -1,16 +1,14 @@
 'use strict'
 
-const {dir} = require('the-templates')
+const { dir } = require('@the-/templates')
 
-module.exports = [
-  true,
-].map((cjs) => ({
+module.exports = [true].map((cjs) => ({
   ...dir({
     cjs,
+    description: 'Build in Lint Rules',
     dirname: __dirname,
     name: 'rules',
-    description: 'Build in Lint Rules',
-  })
+  }),
 }))
 
 if (!module.parent) {

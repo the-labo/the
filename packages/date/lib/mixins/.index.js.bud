@@ -1,12 +1,12 @@
 'use strict'
 
-const {dir} = require('@the-/templates')
+const { dir } = require('@the-/templates')
 
 module.exports = dir({
-  dirname: __dirname,
   cjs: true,
+  description: 'Mixins',
+  dirname: __dirname,
   name: 'mixins',
-  description: 'Mixins'
 })
 
 if (!module.parent) {

@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const sortSpecifiersOnImportDeclarationNode = require('../lib/ast/nodes/sortSpecifiersOnImportDeclarationNode')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('sort-specifiers-on-import-declaration-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

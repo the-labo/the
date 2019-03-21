@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const resourceMix = require('../lib/mixins/resourceMix')
-const { ok, equal } = require('assert')
-
 describe('resource-mix', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

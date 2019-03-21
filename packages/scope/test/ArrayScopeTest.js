@@ -4,22 +4,20 @@
  */
 'use strict'
 
-const {TheStore} = require('@the-/store')
+const { deepEqual } = require('assert')
+const { TheStore } = require('@the-/store')
 const ArrayScope = require('../lib/scopes/ArrayScope')
-const {ok, equal, deepEqual} = require('assert')
 
 describe('array-scope', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     const store = new TheStore({})
     store.load(ArrayScope, 'a')
 
-    const {a} = store
+    const { a } = store
 
     a.push('foo')
     a.push('bar')

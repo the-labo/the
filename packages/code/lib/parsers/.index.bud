@@ -1,15 +1,13 @@
 'use strict'
 
-const {dir} = require('@the-/templates')
+const { dir } = require('@the-/templates')
 
-module.exports = [
-  true,
-].map((cjs) => ({
+module.exports = [true].map((cjs) => ({
   ...dir({
     cjs,
-    dirname: __dirname,
     description: 'Parser modules',
-  })
+    dirname: __dirname,
+  }),
 }))
 
 if (!module.parent) {

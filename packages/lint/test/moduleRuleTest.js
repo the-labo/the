@@ -4,30 +4,27 @@
  */
 'use strict'
 
+const { equal } = require('assert').strict
 const moduleRule = require('../lib/rules/moduleRule')
-const { ok, equal } = require('assert').strict
 
 describe('default-export-rule', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     const reported = []
     await moduleRule({
-      valuePattern: '/^\//',
-      valueUnique: true,
       namedFromDefault: true,
       sameKeysWith: require.resolve('../misc/mocks/mock-file.04'),
+      valuePattern: '/^//',
+      valueUnique: true,
     })({
       filename: require.resolve('../misc/mocks/mock-file.01'),
-      report: (...args) => reported.push(args)
+      report: (...args) => reported.push(args),
     })
     equal(reported[0][0], 'Value patten not match')
     // console.log(reported)
-
   })
 })
 

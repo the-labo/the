@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-hash">the-hash</a></dt>
+<dt><a href="#module_@the-/hash">@the-/hash</a></dt>
 <dd><p>Hash object to hold key-value pairs</p>
 </dd>
 </dl>
@@ -29,9 +29,9 @@
 </dd>
 </dl>
 
-<a name="module_the-hash"></a>
+<a name="module_@the-/hash"></a>
 
-## the-hash
+## @the-/hash
 Hash object to hold key-value pairs
 
 <a name="TheHash"></a>

@@ -2,14 +2,12 @@
 
 const { dir } = require('@the-/templates')
 
-module.exports = [
-  true,
-].map((cjs) => ({
+module.exports = [true].map((cjs) => ({
   ...dir({
     cjs,
-    dirname: __dirname,
     description: 'Ast Node handlers',
-  })
+    dirname: __dirname,
+  }),
 }))
 
 if (!module.parent) {

@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const setupSqlite = require('../lib/setup/setupSqlite')
-const {ok, equal} = require('assert')
-
 describe('setup-sqlite', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

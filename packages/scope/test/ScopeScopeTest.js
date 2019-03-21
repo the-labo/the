@@ -4,17 +4,15 @@
  */
 'use strict'
 
-const {TheStore} = require('@the-/store')
+const { equal, ok } = require('assert')
+const { TheStore } = require('@the-/store')
 const NumberScope = require('../lib/scopes/NumberScope')
 const ScopeScope = require('../lib/scopes/ScopeScope')
-const {ok, equal} = require('assert')
 
 describe('scope-scope', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     const store = new TheStore({})
@@ -23,8 +21,8 @@ describe('scope-scope', () => {
     store.load(NumberScope, 's', 'n')
     store.load(NumberScope, 's', 'm')
 
-    s.set({n: 2})
-    s.set({m: 3})
+    s.set({ n: 2 })
+    s.set({ m: 3 })
 
     ok(s.has('n'))
     ok(s.has('m'))
@@ -38,8 +36,8 @@ describe('scope-scope', () => {
     equal(store.s.n.state, 0)
     equal(store.s.m.state, 0)
 
-    s.set({n: 2})
-    s.set({m: 3})
+    s.set({ n: 2 })
+    s.set({ m: 3 })
 
     s.init('n')
 

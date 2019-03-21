@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const toStoreScopeClass = require('../lib/toStoreScopeClass')
-const { ok, equal } = require('assert')
-
 describe('to-store-scope-class', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

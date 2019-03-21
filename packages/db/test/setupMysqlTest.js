@@ -4,16 +4,11 @@
  */
 'use strict'
 
-const setupMysql = require('../lib/setup/setupMysql')
-const {ok, equal} = require('assert')
-
-describe('setup-mysql', function () {
+describe('setup-mysql', function() {
   this.timeout(8000)
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     // await  setupMysql({

@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const cssHelper = require('../lib/helpers/cssHelper')
-const { ok, equal } = require('assert')
-
 describe('css-helper', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

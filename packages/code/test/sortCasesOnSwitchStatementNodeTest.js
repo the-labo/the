@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const sortCasesOnSwitchStatementNode = require('../lib/ast/nodes/sortCasesOnSwitchStatementNode')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('sort-cases-on-switch-statement-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

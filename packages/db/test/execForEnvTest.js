@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const execForEnv = require('../lib/execForEnv')
-const { ok, equal } = require('assert')
-
 describe('exec-for-env', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

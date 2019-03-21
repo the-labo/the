@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { equal } = require('assert').strict
 const processYAML = require('../lib/processors/processYAML')
-const { ok, equal, deepEqual } = require('assert').strict
 
 describe('process-yam-l', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     equal(
@@ -27,7 +25,8 @@ script:
 - npm run build
 - npm run doc
 - npm run test
-      `), `install:
+      `),
+      `install:
   - npm cache verify
   - npm install
 language: node_js
@@ -37,7 +36,8 @@ script:
   - npm run build
   - npm run doc
   - npm run test
-`)
+`,
+    )
   })
 
   it('With comments', async () => {
@@ -49,14 +49,16 @@ a: # this is a
   - a1: 
     x: 2
     d: 4
-      `), `a: # this is a
+      `),
+      `a: # this is a
   # this is a2
   - a2: 2
   - a1: null
     d: 4
     x: 2
 b: this is b
-`)
+`,
+    )
   })
 })
 

@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const setMix = require('../lib/mixins/setMix')
-const { ok, equal } = require('assert')
-
 describe('set-mix', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

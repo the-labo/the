@@ -1,13 +1,11 @@
 'use strict'
 
-const names = [
-  'usageRule',
-]
+const names = ['usageRule']
 module.exports = names.map((name) => ({
+  data: { name },
   force: false,
   mode: '666',
   path: `${name}.js`,
-  data: { name }
 }))
 
 if (!module.parent) {

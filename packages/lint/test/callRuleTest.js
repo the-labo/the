@@ -4,29 +4,27 @@
  */
 'use strict'
 
-const callRule = require('../lib/rules/callRule')
+const { ok } = require('assert')
 const fs = require('fs')
-const { ok, equal } = require('assert')
+const callRule = require('../lib/rules/callRule')
 
 describe('call-rule', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     const reported = []
     await callRule({
       keypathArguments: {
-        l: require.resolve('../misc/mocks/mock-loc.json')
-      }
+        l: require.resolve('../misc/mocks/mock-loc.json'),
+      },
     })({
       content: fs.readFileSync(
-        require.resolve('../misc/mocks/mock-file.02.jsx')
+        require.resolve('../misc/mocks/mock-file.02.jsx'),
       ),
       filename: 'hoge.js',
-      report: (...args) => reported.push(args)
+      report: (...args) => reported.push(args),
     })
     ok(reported[0][0], 'Keypath not found')
     // equal(reported.length, 2)

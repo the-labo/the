@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const driverFromEnv = require('../lib/driverFromEnv')
-const { ok, equal } = require('assert')
-
 describe('driver-from-env', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

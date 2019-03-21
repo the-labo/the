@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { deepEqual, equal, ok } = require('assert')
 const TheHash = require('../lib/TheHash')
-const { ok, equal, deepEqual } = require('assert')
 
 describe('the-hash', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(TheHash)
@@ -34,7 +32,7 @@ describe('the-hash', () => {
     equal(p.n, 3)
     equal(h.n, 3)
 
-    for (const [k, v] of Object.entries(p)) {
+    for (const [,] of Object.entries(p)) {
       // console.log(k, v)
     }
 
@@ -48,10 +46,10 @@ describe('the-hash', () => {
 
   it('Proxy', () => {
     const x = {
-      a: 1,
       __proto__: {
         b: 2,
-      }
+      },
+      a: 1,
     }
     equal(x.a, 1)
     equal(x.b, 2)

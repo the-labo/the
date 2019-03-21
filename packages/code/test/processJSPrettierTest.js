@@ -4,24 +4,23 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const processJSPrettier = require('../lib/processors/processJSPrettier')
-const {ok, equal} = require('assert')
 
 describe('process-j-s-prettier', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     equal(
       await processJSPrettier(`
 const a = x => y
 const b = 123;
-      `), `const a = (x) => y
+      `),
+      `const a = (x) => y
 const b = 123
-`
+`,
     )
   })
 
@@ -33,10 +32,11 @@ const b = 123
         console.log('This is a')
         
       }
-      `), `function a() {
+      `),
+      `function a() {
   console.log('This is a')
 }
-`
+`,
     )
   })
 })

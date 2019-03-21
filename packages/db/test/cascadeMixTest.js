@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const cascadeMix = require('../lib/mixins/cascadeMix')
-const { ok, equal } = require('assert')
-
 describe('cascade-mix', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

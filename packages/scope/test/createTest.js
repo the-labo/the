@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { equal, ok } = require('assert')
 const create = require('../lib/create')
-const { ok, equal } = require('assert')
 
 describe('create', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     let created = create('foo')

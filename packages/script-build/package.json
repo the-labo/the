@@ -52,10 +52,10 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/script-build#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
-    "the",
-    "script"
+    "script",
+    "the"
   ],
   "license": "MIT",
   "main": "lib",

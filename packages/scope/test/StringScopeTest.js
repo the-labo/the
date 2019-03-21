@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const StringScope = require('../lib/scopes/StringScope')
-const { ok, equal } = require('assert')
-
 describe('string-scope', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

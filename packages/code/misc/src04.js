@@ -1,3 +1,3 @@
 'use strict'
 
-const {a, n, b} = {a: 1, n: 3, b: 5}
+const { a, b, n } = { a: 1, b: 5, n: 3 }

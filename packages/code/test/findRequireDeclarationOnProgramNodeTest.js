@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const findRequireDeclarationOnProgramNode = require('../lib/ast/nodes/findRequireDeclarationOnProgramNode')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('find-require-declaration-on-program-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

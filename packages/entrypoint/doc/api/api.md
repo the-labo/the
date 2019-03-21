@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-entrypoint">the-entrypoint</a></dt>
+<dt><a href="#module_@the-/entrypoint">@the-/entrypoint</a></dt>
 <dd><p>Browser entrypoint for the-framework</p>
 </dd>
 </dl>
@@ -37,9 +37,9 @@
 </dd>
 </dl>
 
-<a name="module_the-entrypoint"></a>
+<a name="module_@the-/entrypoint"></a>
 
-## the-entrypoint
+## @the-/entrypoint
 Browser entrypoint for the-framework
 
 <a name="mount"></a>

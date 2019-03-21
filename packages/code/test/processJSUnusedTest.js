@@ -4,19 +4,18 @@
  */
 'use strict'
 
+const { equal } = require('assert').strict
 const processJSUnused = require('../lib/processors/processJSUnused')
-const { ok, equal, deepEqual } = require('assert').strict
 
 describe('process-j-s-unused', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Remove unused declare', async () => {
     equal(
-      await processJSUnused(`
+      await processJSUnused(
+        `
 const {a, b, 'e-e': ee, f} = { a:1, b:2, 'e-e':8, f:9 }
 const c = 1
 const c2 = 2, c3 = 'x', c4 = {}, c6 = null
@@ -29,7 +28,9 @@ let i = describe()
 const i2 = 1 + 2 + j
 const z = {kk:k}
 console.log(a, d, n2, n4, ee)
-      `.trim()), `
+      `.trim(),
+      ),
+      `
 const {a, b, 'e-e': ee, f} = { a:1, b:2, 'e-e':8, f:9 }
 const c4 = {}
 const d = 2
@@ -40,13 +41,14 @@ let i = describe()
 const i2 = 1 + 2 + j
 const z = {kk:k}
 console.log(a, d, n2, n4, ee)
-      `.trim()
+      `.trim(),
     )
   })
 
   it('Remove unused import', async () => {
     equal(
-      await processJSUnused(`
+      await processJSUnused(
+        `
 import a1 from 'aa'      
 import a0 from 'aa0'      
 import A2 from 'aa2'      
@@ -63,7 +65,9 @@ const Z = () => {
 }
 const Z2 = () => <A2 />
 console.log(Z, Z2)  
-      `.trim()), `
+      `.trim(),
+      ),
+      `
 import a1 from 'aa'            
 import A2 from 'aa2'      
 import {y, z as zzzz} from 'aa3'      
@@ -79,13 +83,14 @@ const Z = () => {
 }
 const Z2 = () => <A2 />
 console.log(Z, Z2)
-`.trim()
+`.trim(),
     )
   })
 
   it('async with class property', async () => {
     equal(
-      await processJSUnused(`
+      await processJSUnused(
+        `
 import React from 'react'
 import context from '../../context'
 
@@ -97,7 +102,9 @@ class X extends React.Component {
     ))
   }
 }
-`.trim()), `
+`.trim(),
+      ),
+      `
 import React from 'react'
 import context from '../../context'
 
@@ -109,44 +116,47 @@ class X extends React.Component {
     ))
   }
 }
-`.trim()
+`.trim(),
     )
   })
 
   it('Keep react', async () => {
     equal(
-      await processJSUnused(`
+      await processJSUnused(
+        `
 import React from 'react'
 import React2 from 'react'
 
 export default () => <div></div>
-`.trim()), `
+`.trim(),
+      ),
+      `
 import React from 'react'
 
 export default () => <div></div>
-`.trim()
+`.trim(),
     )
-
   })
 
   it('remove empty object pattern', async () => {
     equal(
-      await processJSUnused(`
+      await processJSUnused(
+        `
 const {} = options, a = 1, b = 2
 const {} = this.props
 console.log(a)
 const {} = fire()
 const {} = hoge()
 const {} = require("j")
-      `.trim()),
+      `.trim(),
+      ),
       `
 const a = 1
 console.log(a)
 const {} = fire()
 const {} = hoge()
-      `.trim()
+      `.trim(),
     )
-
   })
 
   it('remove unused require', async () => {
@@ -156,11 +166,12 @@ const x = require('x')
 const x2 = require('x2')
 require('x3')
 console.log(x2)
-`), `
+`),
+      `
 const x2 = require('x2')
 require('x3')
 console.log(x2)
-`
+`,
     )
   })
 
@@ -172,14 +183,14 @@ const Y = require('Y')
 
 @X
 class XX {}
-`), `
+`),
+      `
 const X = require('X')
 
 @X
 class XX {}
-`
+`,
     )
-
   })
 
   it('Import and export', async () => {
@@ -191,28 +202,29 @@ import Gaga from './Gaga'
 
 export default Hoge
 export { Html }
-      `), `
+      `),
+      `
 import Html from './Html'
 import Hoge from './Hoge'
 
 export default Hoge
 export { Html }
-      `
+      `,
     )
   })
 
-//   it('Dynamic import', async () => {
-//     console.log(
-//       await processJSUnused(`
-// (async () => {
-//   const { default: client } = await import('../client')
-//   const { default: handle } = await import('../handle')
-//
-//   console.log(client)
-// })()
-//     `)
-//     )
-//   })
+  //   it('Dynamic import', async () => {
+  //     console.log(
+  //       await processJSUnused(`
+  // (async () => {
+  //   const { default: client } = await import('../client')
+  //   const { default: handle } = await import('../handle')
+  //
+  //   console.log(client)
+  // })()
+  //     `)
+  //     )
+  //   })
 
   it('As super class', async () => {
     equal(
@@ -223,13 +235,15 @@ const C = require('C')
 class A2 extends A{
   static B = B
 }
-      `), `
+      `),
+      `
 const A = require('A')
 const B = require('B')
 class A2 extends A{
   static B = B
 }
-      `)
+      `,
+    )
   })
 
   it('Nested destructing', async () => {
@@ -244,7 +258,8 @@ const {
   }
 } = require('hoge')
 console.log(a,c,f)
-    `), `
+    `),
+      `
 const {
   a,
   a: {
@@ -252,7 +267,8 @@ const {
   }
 } = require('hoge')
 console.log(a,c,f)
-    `)
+    `,
+    )
   })
 
   it('destructing alias', async () => {
@@ -264,7 +280,8 @@ console.log(XX)
       `
 const {x: XX,} = options
 console.log(XX)
-      `)
+      `,
+    )
   })
 
   it('Top level ', async () => {
@@ -273,10 +290,11 @@ console.log(XX)
 const SECRET_MASTER_PASSWORD = "x"
 const SECRET_MASTER_PASSWORD2 = "x2"
 const secret = theSecret(\`\${__dirname}\`, SECRET_MASTER_PASSWORD)
-      `), `
+      `),
+      `
 const SECRET_MASTER_PASSWORD = "x"
 const secret = theSecret(\`\${__dirname}\`, SECRET_MASTER_PASSWORD)
-      `
+      `,
     )
   })
 
@@ -286,11 +304,13 @@ const secret = theSecret(\`\${__dirname}\`, SECRET_MASTER_PASSWORD)
 import X from 'X'
 
 const x = new X()
-      `), `
+      `),
+      `
 import X from 'X'
 
 const x = new X()
-      `)
+      `,
+    )
   })
 
   it('destructing wIth defaults', async () => {
@@ -302,7 +322,7 @@ console.log(a, c)
       `
 const { a = 1,c,} = options
 console.log(a, c)
-      `
+      `,
     )
   })
 
@@ -314,13 +334,15 @@ const b = ({}, hoge) => console.log('x')
 const c = ({z}) => console.log('x', z)
 const d = ({z}) => console.log('x')
 console.log(a, b, c, d)
-      `), `
+      `),
+      `
 const a = () => console.log('x')
 const b = () => console.log('x')
 const c = ({z}) => console.log('x', z)
 const d = () => console.log('x')
 console.log(a, b, c, d)
-      `)
+      `,
+    )
   })
 
   it('Remove empty destructuring in func', async () => {
@@ -336,7 +358,8 @@ const a = function () { return console.log('x') }
 const b = function () { return console.log('x') }
 const c = function ({z}) { return console.log('x', z) }
 const d = function () { return console.log('x') }
-      `)
+      `,
+    )
   })
 
   it('Remove empty destructuring in func declare', async () => {
@@ -352,7 +375,8 @@ function a () { return console.log('x') }
 function b () { return console.log('x') }
 function c ({z}) { return console.log('x', z) }
 function d () { return console.log('x') }
-      `)
+      `,
+    )
   })
 
   it('in other scope', async () => {
@@ -366,7 +390,7 @@ console.log(a,b)
 const a = ({ x,}) => console.log(x)
 const b = ({ y }) => console.log(y)
 console.log(a,b)
-      `
+      `,
     )
   })
 
@@ -378,22 +402,26 @@ const x = {
   b({ x, y }) { console.log(y) },
   c: ({ x, y }) => { console.log(y) },
 }
-      `), `
+      `),
+      `
 const x = {
   a({ x,}) { console.log(x) },
   b({ y }) { console.log(y) },
   c: ({ y }) => { console.log(y) },
 }
-      `)
+      `,
+    )
   })
 
   it('Process js unused', async () => {
     equal(
       await processJSUnused(`
 const a = ( x ,  y, z,) => { console.log(x) } 
-      `), `
+      `),
+      `
 const a = ( x) => { console.log(x) } 
-      `)
+      `,
+    )
   })
 
   it('With destructing alias', async () => {
@@ -407,7 +435,7 @@ const a = ( x) => { console.log(x) }
   function a({ x: XX = null,z: ZZ }) {
     console.log(XX, ZZ)
   }
-      `
+      `,
     )
   })
 
@@ -424,11 +452,13 @@ const a = ( x) => { console.log(x) }
 const a = ([x,y]) => console.log(y) 
 const b = ({ x, y}) => console.log(y) 
 const c = (x,y) => console.log(y) 
-    `), `
+    `),
+      `
 const a = ([,y]) => console.log(y) 
 const b = ({ y}) => console.log(y) 
 const c = (x,y) => console.log(y) 
-    `)
+    `,
+    )
   })
 
   it('process unused array pattern', async () => {
@@ -436,10 +466,12 @@ const c = (x,y) => console.log(y)
       await processJSUnused(`
 const [a,b,c,d,...e] = [1,2,3,4]
 console.log(b,c,e)
-      `), `
+      `),
+      `
 const [,b,c,,...e] = [1,2,3,4]
 console.log(b,c,e)
-      `)
+      `,
+    )
   })
 
   it('process unused rest element pattern', async () => {
@@ -447,10 +479,12 @@ console.log(b,c,e)
       await processJSUnused(`
 const [a,b,c,d,...e] = [1,2,3,4]
 console.log(b,c)
-      `), `
+      `),
+      `
 const [,b,c,,] = [1,2,3,4]
 console.log(b,c)
-      `)
+      `,
+    )
   })
 
   it('Remove empty array pattern', async () => {
@@ -458,10 +492,11 @@ console.log(b,c)
       await processJSUnused(`
 const a = ([]) => console.log('b')
 const b = ([,y]) => console.log('b', y)
-      `), `
+      `),
+      `
 const a = () => console.log('b')
 const b = ([,y]) => console.log('b', y)
-      `
+      `,
     )
   })
 
@@ -470,12 +505,13 @@ const b = ([,y]) => console.log('b', y)
       await processJSUnused(`
 const {a: {}, a, b, c: {x}, d: {y = 2, yy = 4 }} = options
 console.log(a, b, x, y)
-      `), `
+      `),
+      `
 const {a, b, c: {x}, d: {y = 2,}} = options
 console.log(a, b, x, y)
-      `)
+      `,
+    )
   })
-
 
   it('Some import', async () => {
     console.log(
@@ -484,10 +520,8 @@ import { Dialogs, Header, Footer, Toasts } from './layouts'
 Dialogs()
 Footer()
 Toasts()
-`)
+`),
     )
-
-
   })
 })
 

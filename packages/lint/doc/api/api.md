@@ -6,7 +6,7 @@
 <dt><a href="#module_default">default</a></dt>
 <dd><p>Default exports</p>
 </dd>
-<dt><a href="#module_the-lint">the-lint</a></dt>
+<dt><a href="#module_@the-/lint">@the-/lint</a></dt>
 <dd><p>Lint of the-frameworks</p>
 </dd>
 <dt><a href="#module_rules">rules</a></dt>
@@ -59,9 +59,9 @@ This rule makes sure target files is used in somewhere</p>
 ## default
 Default exports
 
-<a name="module_the-lint"></a>
+<a name="module_@the-/lint"></a>
 
-## the-lint
+## @the-/lint
 Lint of the-frameworks
 
 <a name="module_rules"></a>

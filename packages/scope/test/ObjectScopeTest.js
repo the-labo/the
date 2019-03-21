@@ -4,21 +4,17 @@
  */
 'use strict'
 
+const { deepEqual, equal, ok } = require('assert').strict
 const { TheStore } = require('@the-/store')
 const ObjectScope = require('../lib/scopes/ObjectScope')
-const { ok, equal, deepEqual } = require('assert').strict
 
 describe('object-scope', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
-    class FooScope extends ObjectScope {
-
-    }
+    class FooScope extends ObjectScope {}
 
     const store = new TheStore({})
 
@@ -42,12 +38,11 @@ describe('object-scope', () => {
     deepEqual(store.foo.state, { a: 1, c: 3 })
 
     store.foo.reset({ x: 1, y: 2 })
-    deepEqual((store.foo.state), { x: 1, y: 2 })
+    deepEqual(store.foo.state, { x: 1, y: 2 })
     store.foo.drop()
 
     deepEqual(store.foo.state, {})
   })
-
 })
 
 /* global describe, before, after, it */

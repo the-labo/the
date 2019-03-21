@@ -4,12 +4,12 @@
  */
 'use strict'
 
-const TheDB = require('../lib/TheDB')
-const {ok, equal} = require('assert')
 const asleep = require('asleep')
-const {TheResource} = require('the-resource-base')
+const { equal } = require('assert')
+const { TheResource } = require('the-resource-base')
+const TheDB = require('../lib/TheDB')
 
-describe('export-import-mix', function () {
+describe('export-import-mix', function() {
   this.timeout(200000)
   let db
 
@@ -18,15 +18,15 @@ describe('export-import-mix', function () {
     db = new TheDB({
       env: {
         dialect: 'rdb/sqlite',
-        storage
+        storage,
       },
     })
     await db.drop()
 
     class UserResource extends TheResource {
-      static get policy () {
+      static get policy() {
         return {
-          name: {type: 'STRING'},
+          name: { type: 'STRING' },
         }
       }
     }
@@ -39,11 +39,13 @@ describe('export-import-mix', function () {
   })
 
   it('Do test', async () => {
-    const {User} = db.resources
+    const { User } = db.resources
 
     const DATA_COUNT = 123
 
-    const users = new Array(DATA_COUNT).fill(null).map((_, i) => ({name: String(i)}))
+    const users = new Array(DATA_COUNT)
+      .fill(null)
+      .map((_, i) => ({ name: String(i) }))
     await User.createBulk(users)
 
     const dataDir = `${__dirname}/../tmp/exp-imp-test/data`
@@ -58,7 +60,6 @@ describe('export-import-mix', function () {
     equal(await User.count(), DATA_COUNT)
 
     await asleep(100)
-
   })
 })
 

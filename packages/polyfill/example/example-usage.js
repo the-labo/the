@@ -2,7 +2,7 @@
 
 const thePolyfill = require('@the-/polyfill')
 
-async function tryExample () {
+async function tryExample() {
   // Apply polyfill
   thePolyfill().apply()
 }

@@ -1,19 +1,16 @@
-
 /**
  * Test for processJSON.
  * Runs with mocha.
  */
 'use strict'
 
+const { equal } = require('assert')
 const processJSON = require('../lib/processors/processJSON')
-const {ok, equal} = require('assert')
 
 describe('process-json', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     equal(
@@ -22,7 +19,7 @@ describe('process-json', () => {
   "a": 1,
   "foo": "bar"
 }
-`
+`,
     )
   })
 })

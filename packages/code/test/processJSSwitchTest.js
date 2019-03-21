@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { equal } = require('assert').strict
 const processJSSwitch = require('../lib/processors/processJSSwitch')
-const { ok, equal, deepEqual } = require('assert').strict
 
 describe('process-js-switch', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     equal(
@@ -36,7 +34,8 @@ const a = () => {
     
   }
 }
-      `), `
+      `),
+      `
 const a = () => {
   switch (x) {
     case 'd':{
@@ -56,7 +55,8 @@ const a = () => {
     
   }
 }
-      `)
+      `,
+    )
   })
 
   it('With comments', async () => {
@@ -71,7 +71,8 @@ switch (z) {
   case a:
     break
 }
-      `), `
+      `),
+      `
 switch (z) {
   case a:
     break
@@ -81,7 +82,8 @@ switch (z) {
     console.log('this is it!')
     break
 }
-      `)
+      `,
+    )
   })
 })
 

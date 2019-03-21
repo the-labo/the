@@ -1,9 +1,9 @@
 'use strict'
 
 const theStore = require('the-store').default
-const {ObjectScope, BooleanScope} = theStore
+const { BooleanScope, ObjectScope } = theStore
 
-async function tryExample () {
+async function tryExample() {
   const store = theStore()
 
   // Create nested scope
@@ -11,7 +11,7 @@ async function tryExample () {
   store.load(BooleanScope, 'scopeA', 'enabled')
 
   {
-    const {scopeA} = store
+    const { scopeA } = store
 
     scopeA.set('foo', 'bar')
     scopeA.enabled.toggle(true)

@@ -4,16 +4,14 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const { TheStore } = require('@the-/store')
 const BooleanScope = require('../lib/scopes/BooleanScope')
-const { ok, equal } = require('assert')
 
 describe('boolean-scope', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     const store = new TheStore({})
@@ -23,7 +21,6 @@ describe('boolean-scope', () => {
     equal(b.state, true)
     b.toggle(false)
     equal(b.state, false)
-
   })
 })
 

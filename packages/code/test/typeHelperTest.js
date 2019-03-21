@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const typeHelper = require('../lib/helpers/typeHelper')
-const { ok, equal } = require('assert')
-
 describe('type-helper', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

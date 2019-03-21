@@ -13,9 +13,9 @@
     "order": 1
   },
   {
-    "id": "module:the-polyfill",
-    "longname": "module:the-polyfill",
-    "name": "the-polyfill",
+    "id": "module:@the-/polyfill",
+    "longname": "module:@the-/polyfill",
+    "name": "@the-/polyfill",
     "kind": "module",
     "description": "Polyfill of the-frameworks",
     "meta": {

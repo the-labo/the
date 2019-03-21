@@ -4,37 +4,34 @@
  */
 'use strict'
 
-const TheHandle = require('../lib/TheHandle')
+const { equal, ok } = require('assert')
 const { TheScene } = require('the-scene-base')
-const { ok, equal } = require('assert')
+const TheHandle = require('../lib/TheHandle')
 
 describe('the-handle', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(TheHandle)
     const handle = new TheHandle({
       attributes: {
-        l: () => 'l'
-      }
+        l: () => 'l',
+      },
     })
 
     class MyScene extends TheScene {
-      hey () {
-        return this.l() + 'hey'
-      }
-
-      get doNotCallMe () {
+      get doNotCallMe() {
         throw new Error('Do not call me')
       }
+
+      hey() {
+        return this.l() + 'hey'
+      }
     }
 
-    class MyScene2 extends TheScene {
-    }
+    class MyScene2 extends TheScene {}
 
     handle.load(MyScene, 'foo')
     handle.load(MyScene, 'foo', 'bar')
@@ -53,10 +50,10 @@ describe('the-handle', () => {
     equal(baz.store, 'This is store!')
 
     handle.loadFromMapping({
-      m1: MyScene,
       inner: {
-        m2: MyScene2
-      }
+        m2: MyScene2,
+      },
+      m1: MyScene,
     })
 
     ok(handle.inner.m2)
@@ -67,28 +64,28 @@ describe('the-handle', () => {
     let initialized = {}
 
     class MyScene extends TheScene {
-      get scope () {
+      get scope() {
         return { name: 'STR' }
       }
 
-      init () {
+      init() {
         initialized.scene1 = true
       }
     }
 
     class MyScene2 extends TheScene {
-      get scope () {
+      get scope() {
         return { name: 'STR' }
       }
 
-      init () {
+      init() {
         initialized.scene2 = true
       }
     }
 
     handle.loadFromMapping({
       myScene: MyScene,
-      myScene2: MyScene2
+      myScene2: MyScene2,
     })
     handle.initAll()
     equal(handle.myScene.props.name, 'myScene')

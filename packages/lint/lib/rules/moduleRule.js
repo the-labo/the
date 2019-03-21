@@ -25,7 +25,7 @@ function moduleRule(config) {
   if (Object.keys(rest).length > 0) {
     console.warn(`[moduleRule] Unknown options`, Object.keys(rest))
   }
-  return async function moduleRuleCheck({ content, filename, report }) {
+  return async function moduleRuleCheck({ filename, report }) {
     const basename = path.basename(filename, path.extname(filename))
     const module = _d(require(path.resolve(filename)))
     if (type) {

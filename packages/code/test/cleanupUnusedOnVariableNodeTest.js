@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const cleanupUnusedOnVariableNode = require('../lib/ast/nodes/cleanupUnusedOnVariableNode')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('cleanup-unused-on-variable-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

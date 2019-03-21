@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const processFileEnd = require('../lib/processors/processFileEnd')
-const { ok, equal } = require('assert')
-
 describe('process-file-end', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

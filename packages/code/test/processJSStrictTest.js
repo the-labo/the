@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const processJSStrict = require('../lib/processors/processJSStrict')
-const { ok, equal } = require('assert')
 
 describe('process-j-s-strict', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Skip', async () => {
     equal(
@@ -20,11 +18,12 @@ describe('process-j-s-strict', () => {
   "use strict"
   
   const a = 'hoge'
-      `), `
+      `),
+      `
   "use strict"
   
   const a = 'hoge'
-      `
+      `,
     )
   })
 

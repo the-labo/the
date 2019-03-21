@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const normalizeSrcPathOnRequireArgumentNode = require('../lib/ast/nodes/normalizeSrcPathOnRequireArgumentNode')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('normalize-src-path-on-require-argument-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

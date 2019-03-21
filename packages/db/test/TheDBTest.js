@@ -4,60 +4,59 @@
  */
 'use strict'
 
-const TheDB = require('../lib/TheDB')
-const { ok, equal, deepEqual } = require('assert').strict
 const asleep = require('asleep')
-const { TheResource, DataTypes: { STRING, ENTITY }, } = require('the-resource-base')
+const { deepEqual, equal, ok } = require('assert').strict
 const { TheRefresher } = require('the-refresher')
+const {
+  DataTypes: { ENTITY, STRING },
+  TheResource,
+} = require('the-resource-base')
+const TheDB = require('../lib/TheDB')
 
-describe('the-db', function () {
+describe('the-db', function() {
   process.env.ROOT_PASSWORD = process.env.CI ? '' : 'root'
   this.timeout(20 * 1000)
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('The db', async () => {
     const db = new TheDB({
       env: {
-        dialect: 'memory'
-      },
-      resources: {
-        Hoge: TheResource
+        dialect: 'memory',
       },
       hooks: {
-        Hoge: (db) => ({
+        Hoge: () => ({
           onCreate(created) {
             ok(created)
-          }
-        })
+          },
+        }),
       },
       plugins: {
-        foo: (db) => () => 'foo'
-      }
+        foo: () => () => 'foo',
+      },
+      resources: {
+        Hoge: TheResource,
+      },
     })
 
-    db.on('close', () => {console.log('DB Closed')})
+    db.on('close', () => {
+      console.log('DB Closed')
+    })
 
     class UserResource extends TheResource {
+      static get policy() {
+        return {
+          passwordHash: { type: 'STRING' },
+          username: { type: 'STRING', unique: true },
+        }
+      }
+
       static inbound(attributes) {
         const digest = (password) => password.slice(0, 1)
         attributes.passwordHash = digest(attributes.password)
         delete attributes.password
         return attributes
-      }
-
-      static outbound(attributes) {
-        return attributes
-      }
-
-      static get policy() {
-        return {
-          username: { type: 'STRING', unique: true },
-          passwordHash: { type: 'STRING' }
-        }
       }
 
       static onCreate(created) {
@@ -67,13 +66,17 @@ describe('the-db', function () {
       static onUpdate(updated) {
         console.log('updated', updated)
       }
+
+      static outbound(attributes) {
+        return attributes
+      }
     }
 
     db.load(UserResource, 'User')
 
     const { User } = db.resources
 
-    const user = await User.create({ username: 'foo', password: 'hogehoge' })
+    const user = await User.create({ password: 'hogehoge', username: 'foo' })
     equal(typeof user.id, 'string')
     equal(user.username, 'foo')
     equal(user.passwordHash, 'h')
@@ -82,7 +85,10 @@ describe('the-db', function () {
     ok(user.$$at)
 
     {
-      const thrown = await User.create({ username: 'foo', password: 'hogehoge2' }).catch((e) => e)
+      const thrown = await User.create({
+        password: 'hogehoge2',
+        username: 'foo',
+      }).catch((e) => e)
       ok(thrown)
     }
 
@@ -94,10 +100,6 @@ describe('the-db', function () {
     {
       let called = []
       const handlers = {
-        async none(db) {
-          called.push('none')
-          await db.updateVersion('1.1.0')
-        },
         async '1.1.0'(db) {
           called.push('1.1.0')
           await db.updateVersion('2.0.0')
@@ -105,7 +107,11 @@ describe('the-db', function () {
         async '2.0.0'(db) {
           called.push('2.0.0')
           await db.updateVersion('3.0.0')
-        }
+        },
+        async none(db) {
+          called.push('none')
+          await db.updateVersion('1.1.0')
+        },
       }
       ok(await db.migrate(handlers))
       ok(await db.migrate(handlers))
@@ -135,9 +141,7 @@ describe('the-db', function () {
   it('Use refresh loop', async () => {
     const db = new TheDB({})
 
-    class UserResource extends TheResource {
-
-    }
+    class UserResource extends TheResource {}
 
     db.load(UserResource, 'User')
 
@@ -146,15 +150,15 @@ describe('the-db', function () {
       (entity) => {
         refreshed.push(entity)
       },
-      { interval: 10 }
+      { interval: 10 },
     )
     const refreshed = []
     await refresher.start()
 
-    const [user01, user02, user03] = await User.createBulk([
+    const [user01, user02] = await User.createBulk([
       { name: 'user01' },
       { name: 'user02' },
-      { name: 'user03' }
+      { name: 'user03' },
     ])
 
     refresher.request(user01)
@@ -177,49 +181,35 @@ describe('the-db', function () {
 
     class UserResource extends TheResource {
       static get indices() {
-        return [
-          'profile.name',
-          'profile.email'
-        ]
+        return ['profile.name', 'profile.email']
       }
     }
 
-    class ProfileResource extends TheResource {
-
-    }
+    class ProfileResource extends TheResource {}
 
     const User = db.load(UserResource, 'User')
     const Profile = db.load(ProfileResource, 'Profile')
 
     const user = await User.create({ name: 'user01' })
-    const profile = await Profile.create({ name: 'User 01', email: 'u01@example.com' })
+    const profile = await Profile.create({
+      email: 'u01@example.com',
+      name: 'User 01',
+    })
     await user.update({ profile })
 
-    ok(
-      await User.first({ 'profile.email': 'u01@example.com' })
-    )
-    ok(
-      !await User.first({ 'profile.email': 'u02@example.com' })
-    )
+    ok(await User.first({ 'profile.email': 'u01@example.com' }))
+    ok(!(await User.first({ 'profile.email': 'u02@example.com' })))
 
     await profile.update({ email: 'u02@example.com' })
 
-    ok(
-      await User.first({ 'profile.email': 'u01@example.com' })
-    )
-    ok(
-      !await User.first({ 'profile.email': 'u02@example.com' })
-    )
+    ok(await User.first({ 'profile.email': 'u01@example.com' }))
+    ok(!(await User.first({ 'profile.email': 'u02@example.com' })))
 
     await user.update({ profile })
     await user.save()
 
-    ok(
-      !await User.first({ 'profile.email': 'u01@example.com' })
-    )
-    ok(
-      await User.first({ 'profile.email': 'u02@example.com' })
-    )
+    ok(!(await User.first({ 'profile.email': 'u01@example.com' })))
+    ok(await User.first({ 'profile.email': 'u02@example.com' }))
 
     await db.setup()
 
@@ -235,24 +225,28 @@ describe('the-db', function () {
     const db = new TheDB({ env })
 
     class ArticleResource extends TheResource {
-      async refresh(entity) {
-        const { db: { resources: { Star } } } = this
-        await entity.update({
-          starCount: await Star.count({ target: entity })
-        })
-      }
-
       static get policy() {
         return {
-          starCount: { type: 'NUMBER', default: () => 0 }
+          starCount: { default: () => 0, type: 'NUMBER' },
         }
+      }
+
+      async refresh(entity) {
+        const {
+          db: {
+            resources: { Star },
+          },
+        } = this
+        await entity.update({
+          starCount: await Star.count({ target: entity }),
+        })
       }
     }
 
     class StarResource extends TheResource {
       static get policy() {
         return {
-          target: { type: 'ENTITY' }
+          target: { type: 'ENTITY' },
         }
       }
     }
@@ -280,7 +274,7 @@ describe('the-db', function () {
     class AResource extends TheResource {
       static get cascaded() {
         return {
-          B: (b) => ({ b })
+          B: (b) => ({ b }),
         }
       }
     }
@@ -289,7 +283,7 @@ describe('the-db', function () {
 
     const db = new TheDB({
       env,
-      resources: { A: AResource, B: BResource }
+      resources: { A: AResource, B: BResource },
     })
     const { A, B } = db.resources
     const b01 = await B.create({ name: 'b01' })
@@ -306,9 +300,9 @@ describe('the-db', function () {
   it('Try mongo', async () => {
     const db = new TheDB({
       env: {
+        database: 'the-db-test',
         dialect: 'mongo',
-        database: 'the-db-test'
-      }
+      },
     })
     const User = db.resource('User')
     const user01 = await User.create({ name: 'user01' })
@@ -319,14 +313,14 @@ describe('the-db', function () {
 
   it('rdb/Mysql', async () => {
     const env = {
-      dialect: 'rdb/mysql',
-      username: 'hoge',
-      password: 'fuge',
       database: 'the-db-test-rdb',
+      dialect: 'rdb/mysql',
       logging: console.log,
+      password: 'fuge',
+      username: 'hoge',
     }
     const db = new TheDB({
-      env
+      env,
     })
     await db.setup()
     await db.exec('SHOW TABLES')
@@ -335,14 +329,12 @@ describe('the-db', function () {
       async invalidated(user) {
         const profile = await Profile.first({ user })
         return {
-          profile: profile,
+          profile,
         }
       }
     }
 
-    class ProfileResource extends TheResource {
-
-    }
+    class ProfileResource extends TheResource {}
 
     const User = db.load(UserResource, 'User')
     const user01 = await User.create({ name: 'user01' })
@@ -351,9 +343,9 @@ describe('the-db', function () {
 
     const Profile = db.load(ProfileResource, 'Profile')
     const profile01 = await Profile.create({
+      'foo.bar': 'This is foo bar',
       name: '🍣🍺',
       user: user01,
-      'foo.bar': 'This is foo bar'
     })
     ok(profile01.user)
     equal(profile01['foo.bar'], 'This is foo bar')
@@ -372,43 +364,41 @@ describe('the-db', function () {
 
   it('sequelize/Mysql', async () => {
     const env = {
-      dialect: 'sequelize/mysql',
-      username: 'hoge',
-      password: 'fuge',
       database: 'the-db-test-sequelize',
+      dialect: 'sequelize/mysql',
       logging: console.log,
+      password: 'fuge',
+      username: 'hoge',
     }
     const db = new TheDB({
-      env
+      env,
     })
     await db.setup()
     await db.exec('SHOW TABLES')
 
     class UserResource extends TheResource {
-      async invalidated(user) {
-        return {
-          profile: await Profile.first({ user }),
-        }
-      }
-
       static get schema() {
         return {
           name: { type: STRING },
+        }
+      }
+
+      async invalidated(user) {
+        return {
+          profile: await Profile.first({ user }),
         }
       }
     }
 
     class ProfileResource extends TheResource {
       static get indices() {
-        return [
-          'user.id',
-        ]
+        return ['user.id']
       }
 
       static get schema() {
         return {
-          name: { type: STRING },
           'foo.bar': { type: STRING },
+          name: { type: STRING },
           user: { type: ENTITY },
         }
       }
@@ -421,9 +411,9 @@ describe('the-db', function () {
     await User.update(user01.id, { name: 'user01-updated' })
 
     const profile01 = await Profile.create({
+      'foo.bar': 'This is foo bar',
       name: '🍣🍺',
       user: user01,
-      'foo.bar': 'This is foo bar'
     })
     ok(profile01.user)
     equal(profile01.name, '🍣🍺')
@@ -435,12 +425,8 @@ describe('the-db', function () {
       await User.create({ name: 'x01' }, { transaction })
     })
 
-    ok(
-      await Profile.first({ 'user.id': user01.id })
-    )
-    ok(
-      !(await Profile.first({ 'user.id': '__invalid_id' }))
-    )
+    ok(await Profile.first({ 'user.id': user01.id }))
+    ok(!(await Profile.first({ 'user.id': '__invalid_id' })))
 
     await db.invalidate(user01)
 

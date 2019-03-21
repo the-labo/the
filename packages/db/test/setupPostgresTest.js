@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const setupPostgres = require('../lib/setup/setupPostgres')
-const { ok, equal } = require('assert')
-
 describe('setup-postgres', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

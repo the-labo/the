@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const sortPropertiesOnObjectNode = require('../lib/ast/nodes/sortPropertiesOnObjectNode')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('sort-properties-on-object-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

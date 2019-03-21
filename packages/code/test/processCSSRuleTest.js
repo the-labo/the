@@ -4,25 +4,24 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const processCSSRule = require('../lib/processors/processCSSRule')
-const {ok, equal} = require('assert')
 
 describe('process-c-s-s-rule', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     equal(
       await processCSSRule(`
 .x {color: white; & .inner {color:green;}; &.inner: {background:orange;} &:hover {color:green;};}
 .a {color: white;}
-      `),`
+      `),
+      `
 .a {color: white;}
 .x {color: white; &:hover {color:green;}; &.inner: {background:orange;} & .inner {color:green;};}
-      `
+      `,
     )
   })
 
@@ -50,7 +49,8 @@ describe('process-c-s-s-rule', () => {
   /** This is comment2 */
   background: #EEE;
 }
-      `),`
+      `),
+      `
 .a {
   /** This is comment3 */
   color: #555;
@@ -72,13 +72,12 @@ describe('process-c-s-s-rule', () => {
     padding: 0;
   }
 }
-      `)
+      `,
+    )
   })
 
   it('Without line break', async () => {
-    console.log(
-      await processCSSRule('.foo{&.bar{color:black;}}')
-    )
+    console.log(await processCSSRule('.foo{&.bar{color:black;}}'))
   })
 })
 

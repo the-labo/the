@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const FormatCache = require('../lib/helpers/FormatCache')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('format-cache', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

@@ -4,20 +4,18 @@
  */
 'use strict'
 
+const { equal } = require('assert').strict
 const processJSObject = require('../lib/processors/processJSObject')
-const { ok, equal } = require('assert').strict
 
 describe('process-object-property', async () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     equal(
       await processJSObject(`const a = { x: 1, z: 5, y: 2 }`),
-      'const a = { x: 1, y: 2, z: 5 }'
+      'const a = { x: 1, y: 2, z: 5 }',
     )
 
     equal(
@@ -26,8 +24,10 @@ describe('process-object-property', async () => {
     )
 
     equal(
-      await processJSObject(`const a = { x: 1, z: 5, y: 2, i: { inner: { n1: 1, n2: () => {} } } }`),
-      'const a = { i: { inner: { n1: 1, n2: () => {} } }, x: 1, y: 2, z: 5 }'
+      await processJSObject(
+        `const a = { x: 1, z: 5, y: 2, i: { inner: { n1: 1, n2: () => {} } } }`,
+      ),
+      'const a = { i: { inner: { n1: 1, n2: () => {} } }, x: 1, y: 2, z: 5 }',
     )
   })
 
@@ -39,7 +39,6 @@ describe('process-object-property', async () => {
   })
 
   it('Keep spread params', async () => {
-
     equal(
       await processJSObject(`
       const a = {
@@ -51,7 +50,8 @@ describe('process-object-property', async () => {
         z: 8,
         n: 0,
       
-      }`), `
+      }`),
+      `
       const a = {
         x: 1,
         ...{ d: 4, z: 5 },
@@ -61,15 +61,16 @@ describe('process-object-property', async () => {
         n: 0,
         z: 8,
       
-      }`
+      }`,
     )
-
   })
 
   it('Destructuring', async () => {
     equal(
-      await processJSObject(`const { a, j: jj, d, b: { z, nn=5, f }, ...zz } = require('hoge')`),
-      'const { a, b: { f, nn=5, z }, d, j: jj, ...zz } = require(\'hoge\')'
+      await processJSObject(
+        `const { a, j: jj, d, b: { z, nn=5, f }, ...zz } = require('hoge')`,
+      ),
+      "const { a, b: { f, nn=5, z }, d, j: jj, ...zz } = require('hoge')",
     )
   })
 
@@ -77,14 +78,16 @@ describe('process-object-property', async () => {
   it('Simple inline Destructuring', async () => {
     equal(
       await processJSObject(`const { a } = { a : 1 }`),
-      'const { a } = { a : 1 }'
+      'const { a } = { a : 1 }',
     )
   })
 
   it('dynamic props', async () => {
     equal(
-      await processJSObject(`const n = "NN";const x = { d: 1, c: 4, 'b': 2, 'a': 8, [n]: 5, _hoge: 1, $$fuge: 2 }`),
-      `const n = "NN";const x = { $$fuge: 2, [n]: 5, 'a': 8, 'b': 2, _hoge: 1, c: 4, d: 1 }`
+      await processJSObject(
+        `const n = "NN";const x = { d: 1, c: 4, 'b': 2, 'a': 8, [n]: 5, _hoge: 1, $$fuge: 2 }`,
+      ),
+      `const n = "NN";const x = { $$fuge: 2, [n]: 5, 'a': 8, 'b': 2, _hoge: 1, c: 4, d: 1 }`,
     )
   })
 
@@ -92,21 +95,23 @@ describe('process-object-property', async () => {
     equal(
       await processJSObject(`
     function hoge ({ z, c = 2 }) { /* ... */ }
-    `), `
+    `),
+      `
     function hoge ({ c = 2, z }) { /* ... */ }
-    `
+    `,
     )
   })
 
   it('Inside array', async () => {
     equal(
-      await processJSObject(`const a = [ { z: 1, a: 3, d: [ { n: 1, b: 8 } ] } ]`),
-      'const a = [ { a: 3, d: [ { b: 8, n: 1 } ], z: 1 } ]'
+      await processJSObject(
+        `const a = [ { z: 1, a: 3, d: [ { n: 1, b: 8 } ] } ]`,
+      ),
+      'const a = [ { a: 3, d: [ { b: 8, n: 1 } ], z: 1 } ]',
     )
   })
 
   it('Comment inside inner array', async () => {
-
     await processJSObject(`
     
     const a = {
@@ -122,7 +127,7 @@ describe('process-object-property', async () => {
   it('optionalChaining', async () => {
     equal(
       await processJSObject(`const a = { x: global?.x, b: 'a' }`),
-      `const a = { b: 'a', x: global?.x }`
+      `const a = { b: 'a', x: global?.x }`,
     )
   })
 
@@ -142,7 +147,8 @@ describe('process-object-property', async () => {
           n: 8,
           b: 5,
         }
-      `), `
+      `),
+      `
         const a = {
           b: 5,
           //----------
@@ -156,7 +162,7 @@ describe('process-object-property', async () => {
           /** z */
           z: 2,
         }
-      `
+      `,
     )
   })
 
@@ -186,7 +192,8 @@ describe('process-object-property', async () => {
           [NativeToWebCallTypes.UPLOADING_LIST_DID_REQUEST]: async () => {},
           [NativeToWebCallTypes.UPLOADING_LIST_VIEW_DID_OPEN]: async () => {},
         }
-      `), `
+      `),
+      `
       const a = {
           [NativeToWebCallTypes.ALBUM_DID_SELECT]: async ({ albumId }) => {
             await albumDetailScene.show(albumId)
@@ -210,9 +217,8 @@ describe('process-object-property', async () => {
           [NativeToWebCallTypes.UPLOADING_LIST_DID_REQUEST]: async () => {},
           [NativeToWebCallTypes.UPLOADING_LIST_VIEW_DID_OPEN]: async () => {},
         }
-      `
+      `,
     )
-
   })
 
   it('Sort props with comments', async () => {
@@ -234,7 +240,7 @@ describe('process-object-property', async () => {
           b: () => {},
           c: () => {},
         }
-      `
+      `,
     )
   })
 
@@ -245,12 +251,13 @@ describe('process-object-property', async () => {
         b () {},
         a () {},
       }
-      `), `
+      `),
+      `
       const x = {
         a () {},
         b () {},
       }
-      `
+      `,
     )
   })
 
@@ -265,7 +272,8 @@ describe('process-object-property', async () => {
       add (v1: number, v2:number) : number {
         return v1 + v2 
       },
-    }`), `
+    }`),
+      `
     // @flow
     const x = {
       add (v1: number, v2:number) : number {
@@ -274,7 +282,8 @@ describe('process-object-property', async () => {
       subtract (v1: number, v2:number) : number { 
         return v1 - v2 
       },
-    }`)
+    }`,
+    )
   })
 
   it('Cleanup redundant alias', async () => {
@@ -282,10 +291,12 @@ describe('process-object-property', async () => {
       await processJSObject(`
 const { a: a, b: bb, c: c = 1, d: dd = 2} = options
 console.log(a, bb, c)
-    `), `
+    `),
+      `
 const { a, b: bb, c = 1, d: dd = 2} = options
 console.log(a, bb, c)
-    `)
+    `,
+    )
   })
 
   it('Cleanup redundant alias on assign', async () => {
@@ -293,10 +304,12 @@ console.log(a, bb, c)
       await processJSObject(`
 const x = { a: a, b: bb, c: c, d: dd, 'e': e}
 console.log(x)
-    `), `
+    `),
+      `
 const x = { 'e': e, a, b: bb, c, d: dd}
 console.log(x)
-    `)
+    `,
+    )
   })
 
   it('value with computed', async () => {
@@ -304,10 +317,12 @@ console.log(x)
       await processJSObject(`
 const v = value => a ? value : { [value]: value }
 const v2 = value2 => a ? value2 : { value2: value2 }
-    `),`
+    `),
+      `
 const v = value => a ? value : { [value]: value }
 const v2 = value2 => a ? value2 : { value2 }
-    `)
+    `,
+    )
   })
 })
 

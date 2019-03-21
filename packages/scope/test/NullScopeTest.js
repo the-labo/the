@@ -4,16 +4,14 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const { TheStore } = require('@the-/store')
 const NullScope = require('../lib/scopes/NullScope')
-const { ok, equal } = require('assert')
 
 describe('null-scope', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     const store = new TheStore({})

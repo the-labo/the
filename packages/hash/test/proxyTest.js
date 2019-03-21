@@ -4,22 +4,20 @@
  */
 'use strict'
 
+const { ok, strictEqual: equal } = require('assert')
 const proxy = require('../lib/proxy')
-const { ok, strictEqual: equal, deepStrictEqual: deepEqual } = require('assert')
 
 describe('proxy', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     const p = proxy({
-      a: 1,
       __proto__: {
         b: 2,
-      }
+      },
+      a: 1,
     })
     equal(p.a, 1)
     equal(p.b, 2)

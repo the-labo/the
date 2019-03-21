@@ -4,17 +4,15 @@
  */
 'use strict'
 
-const usageRule = require('../lib/rules/usageRule')
+const { equal, ok } = require('assert').strict
 const fs = require('fs')
 const path = require('path')
-const { ok, equal, deepEqual } = require('assert').strict
+const usageRule = require('../lib/rules/usageRule')
 
 describe('usage-rule', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     const reported = []
@@ -22,11 +20,9 @@ describe('usage-rule', () => {
     await usageRule({
       usedIn: `${__dirname}/../lib/*.*`,
     })({
+      content: fs.readFileSync(filename),
       filename,
-      content: fs.readFileSync(
-        filename
-      ),
-      report: (...args) => reported.push(args)
+      report: (...args) => reported.push(args),
     })
     equal(reported.length, 1)
   })
@@ -37,11 +33,9 @@ describe('usage-rule', () => {
     await usageRule({
       usedIn: `${path.dirname(filename)}/*.*`,
     })({
+      content: fs.readFileSync(filename),
       filename,
-      content: fs.readFileSync(
-        filename
-      ),
-      report: (...args) => reported.push(args)
+      report: (...args) => reported.push(args),
     })
     equal(reported.length, 1)
   })
@@ -52,11 +46,9 @@ describe('usage-rule', () => {
     await usageRule({
       keysUsedIn: `${path.dirname(filename)}/*.*`,
     })({
+      content: fs.readFileSync(filename),
       filename,
-      content: fs.readFileSync(
-        filename
-      ),
-      report: (...args) => reported.push(args)
+      report: (...args) => reported.push(args),
     })
     ok(reported[0])
   })

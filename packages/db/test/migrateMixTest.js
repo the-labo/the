@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const migrateMix = require('../lib/mixins/migrateMix')
-const { ok, equal } = require('assert')
-
 describe('migrate-mix', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

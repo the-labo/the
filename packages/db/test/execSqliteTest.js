@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const execSqlite = require('../lib/helpers/execSqlite')
-const { ok, equal } = require('assert')
-
 describe('exec-sqlite', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

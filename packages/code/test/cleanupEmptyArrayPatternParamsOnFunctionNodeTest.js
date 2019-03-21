@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const cleanupEmptyArrayPatternParamsOnFunctionNode = require('../lib/ast/nodes/cleanupEmptyArrayPatternParamsOnFunctionNode')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('cleanup-empty-array-pattern-params-on-function-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

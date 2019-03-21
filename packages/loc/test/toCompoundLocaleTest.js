@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const toCompoundLocale = require('../lib/helpers/toCompoundLocale')
-const { ok, equal } = require('assert')
-
 describe('to-compound-locale', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

@@ -1,8 +1,8 @@
 'use strict'
 
-const {TheCode} = require('the-code')
+const { TheCode } = require('the-code')
 
-async function tryExample () {
+async function tryExample() {
   const theCode = new TheCode()
   await theCode.format('src/**/*.js')
 }

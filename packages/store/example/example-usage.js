@@ -1,26 +1,26 @@
 'use strict'
 
 const theStore = require('@the-/store')
-const {Scope} = theStore
+const { Scope } = theStore
 
 // Scoped state class
 class CounterScope extends Scope {
   // Define initial state
-  static get initialState () {
+  static get initialState() {
     return 0
   }
 
   // Define reducer factory
-  static get reducerFactories () {
+  static get reducerFactories() {
     return {
-      increment (amount) {
+      increment(amount) {
         return (state) => state + amount
-      }
+      },
     }
   }
 }
 
-async function tryExample () {
+async function tryExample() {
   let store = theStore()
 
   // Create state instance and attach to the store
@@ -29,7 +29,7 @@ async function tryExample () {
 
   {
     // Access to loaded store
-    let {counterA} = store
+    let { counterA } = store
 
     // Each instance has dispatcher methods which share signatures with reducerFactories
     // Invoking this method dispatches an action and reduce it into state

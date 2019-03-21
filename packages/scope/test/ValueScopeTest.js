@@ -4,16 +4,14 @@
  */
 'use strict'
 
+const { ok, strictEqual } = require('assert')
 const { TheStore } = require('@the-/store')
 const ValueScope = require('../lib/scopes/ValueScope')
-const { ok, strictEqual } = require('assert')
 
 describe('value-scope', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     const store = new TheStore({})

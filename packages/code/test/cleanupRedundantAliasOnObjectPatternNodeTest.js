@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const cleanupRedundantAliasOnObjectPatternNode = require('../lib/ast/nodes/cleanupRedundantAliasOnObjectPatternNode')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('cleanup-redundant-alias-on-object-pattern-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

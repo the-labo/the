@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const setupMongo = require('../lib/setup/setupMongo')
-const { ok, equal } = require('assert')
-
 describe('setup-mongo', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const commentModuleOnProgramNode = require('../lib/ast/nodes/commentModuleOnProgramNode')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('comment-module-on-program-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

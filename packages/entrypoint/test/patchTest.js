@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const patch = require('../lib/patch')
-const { ok, equal } = require('assert')
-
 describe('patch', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

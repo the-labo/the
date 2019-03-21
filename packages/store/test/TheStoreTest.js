@@ -4,16 +4,14 @@
  */
 'use strict'
 
+const { deepEqual, equal, ok } = require('assert').strict
 const TheStore = require('../lib/TheStore')
-const { Scope, ObjectScope, BooleanScope, NumberScope } = TheStore
-const { ok, equal, deepEqual } = require('assert').strict
+const { BooleanScope, NumberScope, ObjectScope, Scope } = TheStore
 
 describe('the-store', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(TheStore)
@@ -25,22 +23,22 @@ describe('the-store', () => {
 
       static get reducerFactories() {
         return {
-          increment(amount = 1) {
-            return (state) => ({
-              count: state.count + amount
-            })
-          },
           decrement(amount = 1) {
             return (state) => ({
-              count: state.count - amount
+              count: state.count - amount,
             })
-          }
+          },
+          increment(amount = 1) {
+            return (state) => ({
+              count: state.count + amount,
+            })
+          },
         }
       }
 
       static get subScopeClasses() {
         return {
-          busy: BooleanScope
+          busy: BooleanScope,
         }
       }
     }
@@ -74,8 +72,8 @@ describe('the-store', () => {
   it('Nested scope', () => {
     let store = new TheStore({
       state: {
-        'scopeB.enabled': true
-      }
+        'scopeB.enabled': true,
+      },
     })
 
     // Create nested scope
@@ -86,10 +84,10 @@ describe('the-store', () => {
     scopeB.load(BooleanScope, 'enabled')
 
     deepEqual(store.state, {
-      scopeA: {},
       'scopeA.enabled': false,
+      'scopeB.enabled': true,
+      scopeA: {},
       scopeB: {},
-      'scopeB.enabled': true
     })
 
     {
@@ -102,46 +100,49 @@ describe('the-store', () => {
       deepEqual(scopeA.state, { foo: 'bar' })
 
       scopeA.loadFromMapping({
-        x: ObjectScope
+        x: ObjectScope,
       })
       ok(scopeA.x)
     }
 
     deepEqual(store.state, {
-      scopeA: { foo: 'bar' },
-      'scopeA.x': {},
       'scopeA.enabled': true,
+      'scopeA.x': {},
+      'scopeB.enabled': true,
+      scopeA: { foo: 'bar' },
       scopeB: {},
-      'scopeB.enabled': true
     })
   })
 
   it('Load from defs', () => {
     const store = new TheStore({})
 
-    store.loadFromDefs({
-      _: { foo: 'BOOL' },
-      _hoge: 'BOOL',
-      p1: {
-        o: 'OBJ',
-        p2: {
-          b: 'BOOL'
-        }
+    store.loadFromDefs(
+      {
+        _: { foo: 'BOOL' },
+        _hoge: 'BOOL',
+        p1: {
+          o: 'OBJ',
+          p2: {
+            b: 'BOOL',
+          },
+        },
+        p3: {
+          $ref: '#/p1/p2',
+          hoge: 'OBJ',
+        },
+        p4: {
+          $ref: '#/p3',
+          fuge: 'OBJ',
+        },
       },
-      p3: {
-        $ref: '#/p1/p2',
-        hoge: 'OBJ'
+      {
+        types: {
+          BOOL: BooleanScope,
+          OBJ: ObjectScope,
+        },
       },
-      p4: {
-        $ref: '#/p3',
-        fuge: 'OBJ'
-      }
-    }, {
-      types: {
-        'OBJ': ObjectScope,
-        'BOOL': BooleanScope
-      }
-    })
+    )
 
     ok(store)
 
@@ -155,21 +156,19 @@ describe('the-store', () => {
     store.p3.hoge.set({ foo: 'bar' })
     deepEqual(store.p3.hoge.state, { foo: 'bar' })
 
-    deepEqual(
-      Object.keys(store.scopes).sort(),
-      [
-        'p1',
-        'p1.o',
-        'p1.p2',
-        'p1.p2.b',
-        'p3',
-        'p3.b',
-        'p3.hoge',
-        'p4',
-        'p4.b',
-        'p4.fuge',
-        'p4.hoge'
-      ])
+    deepEqual(Object.keys(store.scopes).sort(), [
+      'p1',
+      'p1.o',
+      'p1.p2',
+      'p1.p2.b',
+      'p3',
+      'p3.b',
+      'p3.hoge',
+      'p4',
+      'p4.b',
+      'p4.fuge',
+      'p4.hoge',
+    ])
   })
 
   it('Load from defaults', () => {
@@ -178,9 +177,9 @@ describe('the-store', () => {
       p1: {
         o: {},
         p2: {
-          b: false
-        }
-      }
+          b: false,
+        },
+      },
     })
 
     ok(store)
@@ -193,22 +192,24 @@ describe('the-store', () => {
 
   it('Nested scope scope', () => {
     const store = new TheStore({})
-    store.loadScopesFromDefs({
-      a: {
-        b: {
-
-          x: 'BOOL',
-          y: 'OBJ',
-          z: 'NUM',
-        }
-      }
-    }, {
-      types: {
-        BOOL: BooleanScope,
-        OBJ: ObjectScope,
-        NUM: NumberScope
-      }
-    })
+    store.loadScopesFromDefs(
+      {
+        a: {
+          b: {
+            x: 'BOOL',
+            y: 'OBJ',
+            z: 'NUM',
+          },
+        },
+      },
+      {
+        types: {
+          BOOL: BooleanScope,
+          NUM: NumberScope,
+          OBJ: ObjectScope,
+        },
+      },
+    )
 
     store.a.set({ b: { z: 4 } })
     equal(store.a.b.z.state, 4)
@@ -216,7 +217,7 @@ describe('the-store', () => {
     equal(store.a.b.z.state, 5)
     store.a.set({ b: null })
     try {
-      store.a.set({ b: void (0) })
+      store.a.set({ b: void 0 })
     } catch (err) {
       ok(err)
     }

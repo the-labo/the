@@ -5,14 +5,11 @@
 'use strict'
 
 const processJSExport = require('../lib/processors/processJSExport')
-const { ok, equal, deepEqual } = require('assert').strict
 
 describe('process-js-export', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     console.log(
@@ -22,7 +19,8 @@ describe('process-js-export', () => {
 function Hoge() {} 
 
 export default Hoge
-        `)
+        `,
+      ),
     )
   })
 })

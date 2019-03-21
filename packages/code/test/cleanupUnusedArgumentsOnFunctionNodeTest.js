@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const cleanupUnusedArgumentsOnFunctionNode = require('../lib/ast/nodes/cleanupUnusedArgumentsOnFunctionNode')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('cleanup-unused-arguments-on-function-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

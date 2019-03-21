@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const resolveInScope = require('../lib/helpers/resolveInScope')
-const { ok, equal } = require('assert')
-
 describe('resolve-in-scope', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

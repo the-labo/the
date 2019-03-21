@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const spaceOnCommentNode = require('../lib/ast/nodes/spaceOnCommentNode')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('space-on-comment-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

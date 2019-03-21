@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const processJSComment = require('../lib/processors/processJSComment')
-const {ok, equal} = require('assert')
 
 describe('process-comment', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     equal(
@@ -23,14 +21,15 @@ describe('process-comment', () => {
     //----------------------------------- 
 
     /** Run server for debug */
-      `), `
+      `),
+      `
     const a = '123'
 
     // -----------------------------------
     // Sub Tasks for Debug
     // -----------------------------------
     /** Run server for debug */
-      `
+      `,
     )
   })
 })

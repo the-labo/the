@@ -4,9 +4,8 @@
  */
 'use strict'
 
-const workers = require('../lib/workers')
-const {ok, equal} = require('assert')
 const injectmock = require('injectmock')
+const workers = require('../lib/workers')
 
 describe('workers', () => {
   before(() => {
@@ -19,7 +18,7 @@ describe('workers', () => {
 
   it('Do test', () => {
     workers({
-      '/': '/a.js'
+      '/': '/a.js',
     })
   })
 })

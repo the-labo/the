@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const cleanupUnusedOnArrayPatternNode = require('../lib/ast/nodes/cleanupUnusedOnArrayPatternNode')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('cleanup-unused-on-array-pattern-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

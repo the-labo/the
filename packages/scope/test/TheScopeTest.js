@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const TheScope = require('../lib/TheScope')
-const {ok, equal} = require('assert')
 
 describe('the-scope', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(TheScope)

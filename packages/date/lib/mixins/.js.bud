@@ -14,7 +14,9 @@ const addSubtractUnits = [
   'minutes',
   'seconds',
   'milliseconds',
-].reduce((reduced, u) => [...reduced, u, moment.normalizeUnits(u)], []).filter(uniqueFilter())
+]
+  .reduce((reduced, u) => [...reduced, u, moment.normalizeUnits(u)], [])
+  .filter(uniqueFilter())
 
 // https://momentjs.com/docs/#/manipulating/start-of/
 const startEndUnits = [
@@ -28,7 +30,9 @@ const startEndUnits = [
   'hour',
   'minute',
   'second',
-].reduce((reduced, u) => [...reduced, u, moment.normalizeUnits(u)], []).filter(uniqueFilter())
+]
+  .reduce((reduced, u) => [...reduced, u, moment.normalizeUnits(u)], [])
+  .filter(uniqueFilter())
 
 // https://momentjs.com/docs/#/get-set/get/
 const getSetUnits = [
@@ -39,7 +43,9 @@ const getSetUnits = [
   'minute',
   'second',
   'millisecond',
-].reduce((reduced, u) => [...reduced, u, moment.normalizeUnits(u)], []).filter(uniqueFilter())
+]
+  .reduce((reduced, u) => [...reduced, u, moment.normalizeUnits(u)], [])
+  .filter(uniqueFilter())
 
 module.exports = [
   ['addMix', addSubtractUnits],
@@ -47,20 +53,18 @@ module.exports = [
   ['startOfMix', startEndUnits],
   ['endOfMix', startEndUnits],
   ['getMix', getSetUnits],
-  ['setMix', getSetUnits]
-].map(([name, units]) => (
-  {
-    force: true,
-    mode: '444',
-    tmpl: `.${name}.js.hbs`,
-    path: `${name}.js`,
-    data: {
-      units,
-      defaultUnit: units[units.length - 1],
-      unitsString: `[ '${units.join('\', \'')}' ]`,
-    }
-  }
-))
+  ['setMix', getSetUnits],
+].map(([name, units]) => ({
+  data: {
+    defaultUnit: units[units.length - 1],
+    units,
+    unitsString: `[ '${units.join("', '")}' ]`,
+  },
+  force: true,
+  mode: '444',
+  path: `${name}.js`,
+  tmpl: `.${name}.js.hbs`,
+}))
 
 if (!module.parent) {
   require('coz').render(__filename)

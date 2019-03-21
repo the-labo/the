@@ -1,19 +1,19 @@
 'use strict'
 
-const {TheScope} = require('@the-/scope')
-const {TheStore} = require('the-store')
+const { TheStore } = require('the-store')
+const { TheScope } = require('@the-/scope')
 
-async function tryExample () {
+async function tryExample() {
   class FlgScope extends TheScope {
-    static get initialState () {
+    static get initialState() {
       return false
     }
 
-    static get reducerFactories () {
+    static get reducerFactories() {
       return {
-        toggle (value) {
-          return (state) => typeof value === 'undefined' ? !state : value
-        }
+        toggle(value) {
+          return (state) => (typeof value === 'undefined' ? !state : value)
+        },
       }
     }
   }

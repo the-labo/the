@@ -13,9 +13,9 @@
     "order": 1
   },
   {
-    "id": "module:the-handle",
-    "longname": "module:the-handle",
-    "name": "the-handle",
+    "id": "module:@the-/handle",
+    "longname": "module:@the-/handle",
+    "name": "@the-/handle",
     "kind": "module",
     "description": "Action handler for the-framework",
     "meta": {

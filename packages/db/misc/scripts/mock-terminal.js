@@ -4,11 +4,10 @@
 const theDB = require('../../lib')
 
 ;(async () => {
-
   const db = theDB({
     dialect: 'memory',
+    password: 'hogehoge',
     username: 'hoge',
-    password: 'hogehoge'
   })
 
   await db.cli()
@@ -16,4 +15,3 @@ const theDB = require('../../lib')
   console.error(err)
   process.exit(1)
 })
-

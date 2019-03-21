@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const normalizeSrcPathOnImportDeclarationNode = require('../lib/ast/nodes/normalizeSrcPathOnImportDeclarationNode')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('normalize-src-path-on-import-declaration-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

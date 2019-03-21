@@ -4,37 +4,35 @@
  */
 'use strict'
 
+const { deepEqual } = require('assert')
 const helpers = require('../lib/helpers')
-const {ok, equal, deepEqual} = require('assert')
 
 describe('helpers', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     const parsed = helpers.parseDef({
-      '_': {
-        input: {
-          entry: 'OBJ'
-        },
+      _: {
         foo: {
-          bar: 'BOOL'
-        }
+          bar: 'BOOL',
+        },
+        input: {
+          entry: 'OBJ',
+        },
       },
 
-      input01: {$ref: '#/_/input'},
-      input02: {$ref: '_.input'},
-      input03: {$ref: ['_.foo', '_.input']},
-      input04: {$ref: []},
+      input01: { $ref: '#/_/input' },
+      input02: { $ref: '_.input' },
+      input03: { $ref: ['_.foo', '_.input'] },
+      input04: { $ref: [] },
     })
     deepEqual(parsed, {
       'input01.entry': 'OBJ',
       'input02.entry': 'OBJ',
       'input03.bar': 'BOOL',
-      'input03.entry': 'OBJ'
+      'input03.entry': 'OBJ',
     })
   })
 })

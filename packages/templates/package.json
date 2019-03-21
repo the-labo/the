@@ -32,10 +32,10 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/templates#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
-    "the",
-    "templates"
+    "templates",
+    "the"
   ],
   "license": "MIT",
   "main": "lib",

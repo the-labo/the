@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const quelize = require('../lib/quelize')
-const { ok, equal } = require('assert')
-
 describe('quelize', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

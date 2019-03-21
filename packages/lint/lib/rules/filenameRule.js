@@ -17,7 +17,7 @@ function filenameRule(config) {
   if (Object.keys(rest).length > 0) {
     console.warn(`[filenameRule] Unknown options`, Object.keys(rest))
   }
-  return async function filenameRuleCheck({ content, filename, report }) {
+  return async function filenameRuleCheck({ filename, report }) {
     const basename = path.basename(filename)
     if (startsWith) {
       const ok = basename.startsWith(startsWith)

@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const applyToNodes = require('../lib/helpers/applyToNodes')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('apply-to-nodes', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

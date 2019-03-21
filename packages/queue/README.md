@@ -92,7 +92,7 @@ async function tryExample() {
 tryExample().catch((err) => console.error(err))
 
 {
-  const { TheQueue } = require('the-queue')
+  const { TheQueue } = require('@the-/queue')
 
   class Client {
     constructor() {

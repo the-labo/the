@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { equal, ok } = require('assert').strict
 const processJSClass = require('../lib/processors/processJSClass')
-const { ok, equal } = require('assert').strict
 
 describe('process-class', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     equal(
@@ -31,7 +29,8 @@ describe('process-class', () => {
      // This is nnn 
      static get nnn () { return 'nnn' } 
     }
-    `), `
+    `),
+      `
     class foo {
      // This is nnn 
      static get nnn () { return 'nnn' }
@@ -46,7 +45,7 @@ describe('process-class', () => {
      async k () {}
      _j () {} 
     }
-    `
+    `,
     )
   })
 
@@ -57,12 +56,13 @@ describe('process-class', () => {
         z() {}
         n() {}
       })
-      `), `
+      `),
+      `
       wrap(class A {
         n() {}
         z() {}
       })
-      `
+      `,
     )
   })
 
@@ -115,7 +115,7 @@ class Rect extends Struct {
   contains (point) {
   }
 }
-      `)
+      `),
     )
   })
 
@@ -127,13 +127,14 @@ class Rect extends Struct {
         async * [methodNames.m2] () {return 'hoge'} 
         async * [methodNames.m1] () {return 'hoge2'} 
       }
-      `), `
+      `),
+      `
       const methodNames = {m1: 'nameOfM', m2: 'nameOfM2'}
       class X { 
         async * [methodNames.m1] () {return 'hoge2'} 
         async * [methodNames.m2] () {return 'hoge'} 
       }
-      `
+      `,
     )
   })
 
@@ -154,7 +155,7 @@ class Rect extends Struct {
           /** This is b */
           b () {}
         }
-      `
+      `,
     )
   })
 
@@ -169,7 +170,8 @@ class Rect extends Struct {
           a () {}
           static #f () {}
         }
-      `), `
+      `),
+      `
         class X {
           static #f () {}
           static n () {}
@@ -178,7 +180,7 @@ class Rect extends Struct {
           a () {}
           z () {}
         }
-      `
+      `,
     )
   })
 
@@ -193,7 +195,8 @@ class Rect extends Struct {
           a = () => console.log('this is A')
           static z = 'Z'
         }
-      `), `
+      `),
+      `
         class X {
           static z = 'Z'
           a = () => console.log('this is A')
@@ -202,7 +205,7 @@ class Rect extends Struct {
           e () {}
           y () {}
         }
-      `
+      `,
     )
   })
 })

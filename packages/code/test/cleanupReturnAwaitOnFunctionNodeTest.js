@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const cleanupReturnAwaitOnFunctionNode = require('../lib/ast/nodes/cleanupReturnAwaitOnFunctionNode')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('cleanup-return-await-on-function-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

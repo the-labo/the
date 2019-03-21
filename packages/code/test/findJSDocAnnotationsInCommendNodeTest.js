@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { deepEqual } = require('assert').strict
 const findJSDocAnnotationsInCommendNode = require('../lib/ast/nodes/findJSDocAnnotationsInCommendNode')
-const { ok, equal, deepEqual } = require('assert').strict
 
 describe('find-js-doc-annotations-in-commend-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     const annotations = findJSDocAnnotationsInCommendNode({
@@ -22,14 +20,16 @@ describe('find-js-doc-annotations-in-commend-node', () => {
  * @example
 const shirt = require('my/shirt')
 console.log(shirt)
- * @link x`
+ * @link x`,
     })
-    deepEqual(annotations, [{ type: 'module', value: 'my/shirt' },
+    deepEqual(annotations, [
+      { type: 'module', value: 'my/shirt' },
       {
         type: 'example',
-        value: '\nconst shirt = require(\'my/shirt\')\nconsole.log(shirt)'
+        value: "\nconst shirt = require('my/shirt')\nconsole.log(shirt)",
       },
-      { type: 'link', value: 'x' }])
+      { type: 'link', value: 'x' },
+    ])
   })
 })
 

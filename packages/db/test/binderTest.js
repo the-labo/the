@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const binder = require('../lib/helpers/binder')
-const { ok, equal } = require('assert')
-
 describe('binder', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

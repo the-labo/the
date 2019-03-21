@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const cleanupExtOnImportDeclarationNode = require('../lib/ast/nodes/cleanupExtOnImportDeclarationNode')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('cleanup-ext-on-import-declaration-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const units = require('../lib/units')
-const {ok, equal} = require('assert')
 
 describe('units', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     equal(units.days(4), 4 * 24 * 60 * 60 * 1000)

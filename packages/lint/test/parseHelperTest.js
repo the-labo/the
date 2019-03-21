@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const parseHelper = require('../lib/helpers/parseHelper')
-const { ok, equal } = require('assert')
-
 describe('parse-helper', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', async () => {
-
-  })
+  it('Do test', async () => {})
 })
 
 /* global describe, before, after, it */

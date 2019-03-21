@@ -15,7 +15,7 @@ describe('the-client', () => {
 
   after(() => {})
 
-  it('Do test', async function () {
+  it('Do test', async function() {
     this.timeout(20 * 1000)
     ok(TheClient)
 
@@ -131,7 +131,7 @@ describe('the-client', () => {
     const port = await aport()
 
     class CountdownStream extends TheServer.Stream {
-      async * provide() {
+      async *provide() {
         let count = Number(this.params.count)
         while (count > 0) {
           if (this.closed) {

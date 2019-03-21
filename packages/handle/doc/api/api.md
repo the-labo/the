@@ -6,7 +6,7 @@
 <dt><a href="#module_default">default</a></dt>
 <dd><p>Default exports</p>
 </dd>
-<dt><a href="#module_the-handle">the-handle</a></dt>
+<dt><a href="#module_@the-/handle">@the-/handle</a></dt>
 <dd><p>Action handler for the-framework</p>
 </dd>
 </dl>
@@ -16,8 +16,47 @@
 ## default
 Default exports
 
-<a name="module_the-handle"></a>
+<a name="module_@the-/handle"></a>
 
-## the-handle
+## @the-/handle
 Action handler for the-framework
 
+
+* [@the-/handle](#module_@the-/handle)
+    * [.TheHandle](#module_@the-/handle.TheHandle)
+        * [new TheHandle(attributes, [options])](#new_module_@the-/handle.TheHandle_new)
+    * [.create(...args)](#module_@the-/handle.create) ⇒ <code>TheHandle</code>
+    * [.toHandleSceneClass()](#module_@the-/handle.toHandleSceneClass)
+
+<a name="module_@the-/handle.TheHandle"></a>
+
+### @the-/handle.TheHandle
+**Kind**: static class of [<code>@the-/handle</code>](#module_@the-/handle)  
+<a name="new_module_@the-/handle.TheHandle_new"></a>
+
+#### new TheHandle(attributes, [options])
+Shared action handler
+
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| attributes | <code>Object</code> |  | Props value to share with scenes |
+| [options] | <code>Object</code> | <code>{}</code> | optional settings |
+
+<a name="module_@the-/handle.create"></a>
+
+### @the-/handle.create(...args) ⇒ <code>TheHandle</code>
+Create a TheHandle instance
+
+**Kind**: static method of [<code>@the-/handle</code>](#module_@the-/handle)  
+
+| Param | Type |
+| --- | --- |
+| ...args | <code>\*</code> | 
+
+<a name="module_@the-/handle.toHandleSceneClass"></a>
+
+### @the-/handle.toHandleSceneClass()
+Convert into handle scene class
+
+**Kind**: static method of [<code>@the-/handle</code>](#module_@the-/handle)  

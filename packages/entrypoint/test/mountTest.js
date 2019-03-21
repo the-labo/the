@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const mount = require('../lib/mount')
-const { ok, equal } = require('assert')
-
 describe('mount', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

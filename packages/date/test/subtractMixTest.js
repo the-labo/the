@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const subtractMix = require('../lib/mixins/subtractMix')
-const { ok, equal } = require('assert')
-
 describe('subtract-mix', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

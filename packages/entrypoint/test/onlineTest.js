@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const online = require('../lib/online')
-const { ok, equal } = require('assert')
-
 describe('online', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

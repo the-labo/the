@@ -4,22 +4,20 @@
  */
 'use strict'
 
-const {TheStore} = require('@the-/store')
+const { equal, ok } = require('assert')
+const { TheStore } = require('@the-/store')
 const NumberScope = require('../lib/scopes/NumberScope')
-const {ok, equal, deepEqual} = require('assert')
 
 describe('number-scope', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     const store = new TheStore({})
     store.load(NumberScope, 'n')
 
-    const {n} = store
+    const { n } = store
 
     ok(n.isZero())
 

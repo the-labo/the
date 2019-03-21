@@ -4,16 +4,14 @@
  */
 'use strict'
 
-const TheLint = require('../lib/TheLint')
+const { ok } = require('assert')
 const rules = require('../lib/rules')
-const {ok, equal} = require('assert')
+const TheLint = require('../lib/TheLint')
 
 describe('the-lint', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     ok(TheLint)
@@ -23,15 +21,15 @@ describe('the-lint', () => {
     lint.add(
       `${__dirname}/../misc/mocks/*.js`,
       rules.moduleRule({
-        type: 'function'
-      })
+        type: 'function',
+      }),
     )
 
     lint.add(
       `${__dirname}/../misc/mocks/*.js`,
       rules.contentRule({
         endsWithNewLine: true,
-      })
+      }),
     )
 
     await lint.run()

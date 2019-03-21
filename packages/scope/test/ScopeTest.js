@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const Scope = require('../lib/scopes/Scope')
-const { ok, equal } = require('assert')
-
 describe('scope', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

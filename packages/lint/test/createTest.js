@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const create = require('../lib/create')
-const { ok, equal } = require('assert')
-
 describe('create', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', async () => {
-
-  })
+  it('Do test', async () => {})
 })
 
 /* global describe, before, after, it */

@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const endOfMix = require('../lib/mixins/endOfMix')
-const { ok, equal } = require('assert')
-
 describe('end-of-mix', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

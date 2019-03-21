@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const parsePolicy = require('../lib/helpers/parsePolicy')
-const { ok, strictEqual: equal, deepStrictEqual: deepEqual } = require('assert')
-
 describe('parse-policy', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

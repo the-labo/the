@@ -4,18 +4,18 @@
  */
 'use strict'
 
+const { deepEqual } = require('assert').strict
 const contentAccess = require('../lib/helpers/contentAccess')
-const { ok, equal, deepEqual } = require('assert').strict
 
 describe('content-access', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('enclosedRange', () => {
-    const { enclosedRange } = contentAccess(`const x = ({a,b}) => console.log(b)`)
+    const { enclosedRange } = contentAccess(
+      `const x = ({a,b}) => console.log(b)`,
+    )
     deepEqual(enclosedRange([13, 15], { left: '(', right: ')' }), [10, 17])
     deepEqual(enclosedRange([13, 15], { left: '{', right: '}' }), [11, 16])
   })

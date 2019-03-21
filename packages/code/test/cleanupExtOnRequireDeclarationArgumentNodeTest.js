@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const cleanupExtOnRequireDeclarationArgumentNode = require('../lib/ast/nodes/cleanupExtOnRequireDeclarationArgumentNode')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('cleanup-ext-on-require-declaration-argument-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

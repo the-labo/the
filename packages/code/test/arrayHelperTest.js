@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const arrayHelper = require('../lib/helpers/arrayHelper')
-const { ok, equal } = require('assert')
-
 describe('array-helper', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

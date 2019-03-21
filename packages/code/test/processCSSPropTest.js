@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const processCSSProp = require('../lib/processors/processCSSProp')
-const {ok, equal} = require('assert')
 
 describe('process-c-s-s-props', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     equal(
@@ -21,12 +19,13 @@ describe('process-c-s-s-props', () => {
  color: #555;
  background: #EEE;
 }
-`), `
+`),
+      `
 .a{
  background: #EEE;
  color: #555;
 }
-`
+`,
     )
   })
 
@@ -39,16 +38,16 @@ describe('process-c-s-s-props', () => {
  /** This is comment2 */
  background: #EEE;
 }
-      `), `
+      `),
+      `
 .a{
  /** This is comment */
  /** This is comment2 */
  background: #EEE;
  color: #555;
 }
-      `
+      `,
     )
-
   })
 
   it('Two parents', async () => {
@@ -56,10 +55,11 @@ describe('process-c-s-s-props', () => {
       await processCSSProp(`
 .a {color:#eee;background:#eee;}
 .b {background:#eee;}
-`), `
+`),
+      `
 .a {background:#eee;color:#eee;}
 .b {background:#eee;}
-`
+`,
     )
   })
 
@@ -81,7 +81,8 @@ describe('process-c-s-s-props', () => {
   top: 0;
   bottom: 0;
 }
-      `), `
+      `),
+      `
 .bar {
   align-items: center;
   background: #999;
@@ -97,7 +98,7 @@ describe('process-c-s-s-props', () => {
   top: 0;
   width: 2px;
 }
-      `
+      `,
     )
   })
 })

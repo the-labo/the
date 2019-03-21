@@ -6,7 +6,7 @@
 <dt><a href="#module_default">default</a></dt>
 <dd><p>Default exports</p>
 </dd>
-<dt><a href="#module_the-polyfill">the-polyfill</a></dt>
+<dt><a href="#module_@the-/polyfill">@the-/polyfill</a></dt>
 <dd><p>Polyfill of the-frameworks</p>
 </dd>
 </dl>
@@ -31,9 +31,9 @@
 ## default
 Default exports
 
-<a name="module_the-polyfill"></a>
+<a name="module_@the-/polyfill"></a>
 
-## the-polyfill
+## @the-/polyfill
 Polyfill of the-frameworks
 
 <a name="ThePolyfill"></a>

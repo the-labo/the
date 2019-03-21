@@ -77,7 +77,6 @@ class TheLint {
       return reports
     }
 
-    
     const content = String(await readFileAsync(filename))
     if (this.shouldSkipContent(content)) {
       return reports

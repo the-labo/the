@@ -2,19 +2,18 @@
 
 'use strict'
 
-const {copyAsync, copyDirAsync} = require('asfs')
-const {spawnSync} = require('child_process')
-const {chmod, readFile, stat, unlink, writeFile} = require('fs').promises
+const { copyAsync, copyDirAsync } = require('asfs')
+const { spawnSync } = require('child_process')
+const { chmod, readFile, stat, unlink, writeFile } = require('fs').promises
 const path = require('path')
 const rimraf = require('rimraf')
-const pkg = require('../../../package')
+const transporting = require('./transporting')
+
 const baseDir = `${__dirname}/../../..`
 process.chdir(baseDir)
 
-const transporting = require('./transporting')
-
-;(async () => {
-  for (const [fromPkgName, {kind, name}] of Object.entries(transporting)) {
+const pkg = require('../../../package')(async () => {
+  for (const [fromPkgName, { kind, name }] of Object.entries(transporting)) {
     const fromDir = path.resolve(baseDir, '..', fromPkgName)
     const toDir = path.resolve(baseDir, 'packages', name)
     const toStat = await stat(toDir).catch(() => null)
@@ -31,9 +30,9 @@ const transporting = require('./transporting')
 ${msg}
       `,
       )
-      spawnSync('git', ['add', '.'], {cwd: fromDir})
-      spawnSync('git', ['commit', '-m', 'Deprecate'], {cwd: fromDir})
-      spawnSync('git', ['push'], {cwd: fromDir})
+      spawnSync('git', ['add', '.'], { cwd: fromDir })
+      spawnSync('git', ['commit', '-m', 'Deprecate'], { cwd: fromDir })
+      spawnSync('git', ['push'], { cwd: fromDir })
       spawnSync(`npm`, ['deprecate', path.basename(fromDir), msg], {
         cwd: fromDir,
       })
@@ -83,25 +82,25 @@ ${msg}
         )
         await copyAsync(`${demoLibDir}/.npmignore`, `${toDir}/.npmignore`)
         const toPkg = JSON.parse(await readFile(toPkgFile))
-        const {scripts = {}} = toPkg
+        const { scripts = {} } = toPkg
         scripts.doc = 'the-script-doc'
         scripts.build = 'the-script-build'
         scripts.test = 'the-script-build'
         scripts.prepare = 'npm run build && npm run doc'
         delete scripts.share
         delete scripts.buid
-        await writeFile(toPkgFile, JSON.stringify({...toPkg, scripts}))
+        await writeFile(toPkgFile, JSON.stringify({ ...toPkg, scripts }))
       }
     }
 
-    const {dependencies = {}, devDependencies = {}} = toPkg
+    const { dependencies = {}, devDependencies = {} } = toPkg
     // Cleanup
     {
       const depsToRemove = []
       for (const name of depsToRemove) {
         if (name in dependencies) {
           console.log(`remove ${name} from ${toDir}...`)
-          spawnSync('npm', ['un', name], {cwd: toDir})
+          spawnSync('npm', ['un', name], { cwd: toDir })
         }
       }
       const devDepsToRemove = [
@@ -124,7 +123,7 @@ ${msg}
       for (const name of devDepsToRemove) {
         if (name in devDependencies) {
           console.log(`remove ${name} from ${toDir}...`)
-          spawnSync('npm', ['un', '-D', name], {cwd: toDir})
+          spawnSync('npm', ['un', '-D', name], { cwd: toDir })
         }
       }
     }
@@ -141,7 +140,7 @@ ${msg}
           if (toPkg.name === name) {
             continue
           }
-          spawnSync('npm', ['i', '-D', src], {cwd: toDir})
+          spawnSync('npm', ['i', '-D', src], { cwd: toDir })
         }
       }
     }
@@ -159,7 +158,7 @@ ${msg}
     }
     {
       const toPkg = JSON.parse(await readFile(toPkgFile))
-      const {scripts = {}} = toPkg
+      const { scripts = {} } = toPkg
       delete scripts.update
       delete scripts.release
       await writeFile(
