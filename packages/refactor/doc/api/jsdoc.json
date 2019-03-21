@@ -1,0 +1,308 @@
+[
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/refactor",
+    "longname": "module:@the-/refactor",
+    "name": "@the-/refactor",
+    "kind": "module",
+    "description": "Refactoring tool for the-components",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheRefactor",
+    "longname": "TheRefactor",
+    "name": "TheRefactor",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheRefactor.js",
+      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheRefactor instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheRefactor"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheRefactor#convert",
+    "longname": "TheRefactor#convert",
+    "name": "convert",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Process with convert function",
+    "memberof": "TheRefactor",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Filename pattern",
+        "name": "pattern"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "converter"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 51,
+      "filename": "TheRefactor.js",
+      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+    },
+    "async": true,
+    "order": 4
+  },
+  {
+    "id": "TheRefactor#rename",
+    "longname": "TheRefactor#rename",
+    "name": "rename",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Rename files",
+    "memberof": "TheRefactor",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Source file name patterns",
+        "name": "pattern"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Converter",
+        "name": "convert"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 65,
+      "filename": "TheRefactor.js",
+      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+    },
+    "async": true,
+    "order": 5
+  },
+  {
+    "id": "TheRefactor#renameDir",
+    "longname": "TheRefactor#renameDir",
+    "name": "renameDir",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Rename directory",
+    "memberof": "TheRefactor",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Directory rename from",
+        "name": "src"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Directory rename to",
+        "name": "dest"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 91,
+      "filename": "TheRefactor.js",
+      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+    },
+    "async": true,
+    "order": 6
+  },
+  {
+    "id": "TheRefactor#rewrite",
+    "longname": "TheRefactor#rewrite",
+    "name": "rewrite",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Rewrite file content",
+    "memberof": "TheRefactor",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Filename pattern",
+        "name": "pattern"
+      },
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "description": "Replace rules",
+        "name": "rules"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 119,
+      "filename": "TheRefactor.js",
+      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+    },
+    "async": true,
+    "order": 7
+  },
+  {
+    "id": "TheRefactor#scatter",
+    "longname": "TheRefactor#scatter",
+    "name": "scatter",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Scatter a file to directories",
+    "memberof": "TheRefactor",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "src"
+      },
+      {
+        "type": {
+          "names": [
+            "Array.<string>"
+          ]
+        },
+        "name": "dirnames"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 136,
+      "filename": "TheRefactor.js",
+      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+    },
+    "async": true,
+    "order": 8
+  }
+]

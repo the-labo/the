@@ -1,0 +1,69 @@
+[
+  {
+    "id": "module:@the-/util-style",
+    "longname": "module:@the-/util-style",
+    "name": "@the-/util-style",
+    "kind": "module",
+    "description": "Utility for style",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/util-style/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "styleString",
+    "longname": "styleString",
+    "name": "styleString",
+    "kind": "function",
+    "scope": "global",
+    "description": "Convert style into style string",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Selector string",
+        "name": "selector"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Style string",
+        "name": "style"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": null,
+        "name": "atRule"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Style object"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "styleString.js",
+      "path": "/Users/okuni/Projects/the/packages/util-style/lib"
+    },
+    "order": 1
+  }
+]

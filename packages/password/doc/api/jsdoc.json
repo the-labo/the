@@ -1,0 +1,75 @@
+[
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/password/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/password",
+    "longname": "module:@the-/password",
+    "name": "@the-/password",
+    "kind": "module",
+    "description": "Password util for the-framework",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/password/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "ThePassword",
+    "longname": "ThePassword",
+    "name": "ThePassword",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "ThePassword.js",
+      "path": "/Users/okuni/Projects/the/packages/password/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a ThePassword instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "ThePassword"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/password/lib"
+    },
+    "order": 0
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "module:@the-/metrics-presets",
+    "longname": "module:@the-/metrics-presets",
+    "name": "@the-/metrics-presets",
+    "kind": "module",
+    "description": "Preset of the-metrics",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/metrics-presets/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "RenderingCountMetrics",
+    "longname": "RenderingCountMetrics",
+    "name": "RenderingCountMetrics",
+    "kind": "function",
+    "scope": "global",
+    "description": "Count metrics for component rendering",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Components to count",
+        "name": "Components"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "RenderingCountMetrics.js",
+      "path": "/Users/okuni/Projects/the/packages/metrics-presets/lib"
+    },
+    "order": 1
+  }
+]

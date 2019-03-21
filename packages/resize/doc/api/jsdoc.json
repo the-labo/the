@@ -1,0 +1,461 @@
+[
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/resize/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/resize",
+    "longname": "module:@the-/resize",
+    "name": "@the-/resize",
+    "kind": "module",
+    "description": "Resize image files",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/resize/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheResize()",
+    "longname": "TheResize",
+    "name": "TheResize",
+    "kind": "constructor",
+    "memberof": "TheResize",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "description": "Configuration",
+        "name": "config"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "description": "Fit policy ('cover','contain','fill', 'inside' or 'outside')",
+        "name": "config.fit"
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "TheResize",
+    "longname": "TheResize",
+    "name": "TheResize",
+    "kind": "class",
+    "scope": "global",
+    "see": [
+      "http://sharp.pixelplumbing.com/en/stable/api-resize/#parameters"
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "TheResize.js",
+      "path": "/Users/okuni/Projects/the/packages/resize/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheResize instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheResize"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/resize/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheResize#convert",
+    "longname": "TheResize#convert",
+    "name": "convert",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Convert file(s)",
+    "memberof": "TheResize",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Source file name",
+        "name": "src"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Destination file name",
+        "name": "dest"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 37,
+      "filename": "TheResize.js",
+      "path": "/Users/okuni/Projects/the/packages/resize/lib"
+    },
+    "async": true,
+    "order": 5
+  },
+  {
+    "id": "TheResize#convertDir",
+    "longname": "TheResize#convertDir",
+    "name": "convertDir",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Convert files in a directory",
+    "memberof": "TheResize",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Source directory path",
+        "name": "src"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Destination directory path",
+        "name": "dest"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Array>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 55,
+      "filename": "TheResize.js",
+      "path": "/Users/okuni/Projects/the/packages/resize/lib"
+    },
+    "async": true,
+    "order": 6
+  },
+  {
+    "id": "TheResize#convertFile",
+    "longname": "TheResize#convertFile",
+    "name": "convertFile",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Convert a single file",
+    "memberof": "TheResize",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "src"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "dest"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Object>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 73,
+      "filename": "TheResize.js",
+      "path": "/Users/okuni/Projects/the/packages/resize/lib"
+    },
+    "async": true,
+    "order": 7
+  },
+  {
+    "id": "TheResize#overwrite",
+    "longname": "TheResize#overwrite",
+    "name": "overwrite",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Overwrite a file",
+    "memberof": "TheResize",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Filename to overwrite",
+        "name": "filename"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 109,
+      "filename": "TheResize.js",
+      "path": "/Users/okuni/Projects/the/packages/resize/lib"
+    },
+    "async": true,
+    "order": 8
+  },
+  {
+    "id": "TheResize#overwriteDir",
+    "longname": "TheResize#overwriteDir",
+    "name": "overwriteDir",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Overwrite files in a dir",
+    "memberof": "TheResize",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Directory name",
+        "name": "dirname"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Array>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 126,
+      "filename": "TheResize.js",
+      "path": "/Users/okuni/Projects/the/packages/resize/lib"
+    },
+    "async": true,
+    "order": 9
+  },
+  {
+    "id": "TheResize#overwriteFile",
+    "longname": "TheResize#overwriteFile",
+    "name": "overwriteFile",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Resized a single file",
+    "memberof": "TheResize",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "src"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 142,
+      "filename": "TheResize.js",
+      "path": "/Users/okuni/Projects/the/packages/resize/lib"
+    },
+    "async": true,
+    "order": 10
+  },
+  {
+    "id": "TheResize#overwriteIfPossible",
+    "longname": "TheResize#overwriteIfPossible",
+    "name": "overwriteIfPossible",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Overwrite if possible",
+    "memberof": "TheResize",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Filename to overwrite",
+        "name": "filename"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 156,
+      "filename": "TheResize.js",
+      "path": "/Users/okuni/Projects/the/packages/resize/lib"
+    },
+    "async": true,
+    "order": 11
+  }
+]
