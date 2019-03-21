@@ -11,6 +11,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/check": "^15.0.2",
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.1",
     "asleep": "^1.0.3",
@@ -31,12 +32,10 @@
     "msgpack5": "^4.2.1",
     "mysql2": "^1.6.5",
     "path": "^0.12.7",
-    "the-check": "^2.0.23",
     "the-db-util": "^2.0.0",
     "the-driver-mongo": "^1.0.27",
     "the-driver-rdb": "^2.3.5",
     "the-driver-sequelize": "^1.1.14",
-    "the-hash": "^1.1.0",
     "the-refresher": "^1.0.6",
     "the-resource-base": "^1.4.9",
     "uuid": "^3.3.2"

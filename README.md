@@ -56,6 +56,7 @@ root for the-project
 - [cache](./packages/cache)
 - [check](./packages/check)
 - [client](./packages/client)
+- [code](./packages/code)
 - [context](./packages/context)
 - [date](./packages/date)
 - [db](./packages/db)

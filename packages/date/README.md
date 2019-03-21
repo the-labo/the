@@ -91,7 +91,7 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-- [the-date](./doc/api/api.md#module_the-date)
+- [@the-/date](./doc/api/api.md#module_@the-/date)
 - [mixins](./doc/api/api.md#module_mixins)
 
 
