@@ -67,7 +67,7 @@ Usage
 ```javascript
 'use strict'
 
-const theSeat = require('the-seat')
+const theSeat = require('@the-/seat')
 
 async function tryExample() {
   const seat = theSeat()

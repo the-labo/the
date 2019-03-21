@@ -1,6 +1,6 @@
 'use strict'
 
-const theSetting = require('the-setting')
+const theSetting = require('@the-/setting')
 
 async function tryExample() {
   const setting = theSetting('.setting.json', {

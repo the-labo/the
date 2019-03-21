@@ -1,6 +1,6 @@
 'use strict'
 
-const { TheSupport } = require('the-support')
+const { TheSupport } = require('@the-/support')
 
 async function tryExample() {
   const support = new TheSupport('public/bundle/**/*.js')

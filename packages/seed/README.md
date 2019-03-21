@@ -67,7 +67,7 @@ Usage
 ```javascript
 'use strict'
 
-const theSeed = require('the-seed')
+const theSeed = require('@the-/seed')
 
 async function tryExample() {
   const seed = theSeed('ja', {

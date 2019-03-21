@@ -170,6 +170,9 @@ ${msg}
         JSON.stringify(
           {
             ...toPkg,
+            publishConfig: {
+              access: 'public',
+            },
             author: {
               email: 'okunishinishi@gmail.com',
               name: 'Taka Okunishi',
@@ -181,9 +184,6 @@ ${msg}
             engines: {
               node: '>=10',
               npm: '>=6',
-            },
-            'publishConfig': {
-              'access': 'public'
             },
             homepage: `https://github.com/the-labo/the/tree/master/packages/${toPkg.name
               .split('/')

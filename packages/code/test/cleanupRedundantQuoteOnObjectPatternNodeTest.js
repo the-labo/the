@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const cleanupRedundantQuoteOnObjectPatternNode = require('../lib/ast/nodes/cleanupRedundantQuoteOnObjectPatternNode')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('cleanup-redundant-quote-on-object-pattern-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

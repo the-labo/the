@@ -1,6 +1,6 @@
 'use strict'
 
-const { appCache, cachingFetch } = require('the-sw-util')
+const { appCache, cachingFetch } = require('@the-/util-sw')
 
 async function tryExample() {
   self.addEventListener('fetch', (event) => {

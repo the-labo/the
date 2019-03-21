@@ -14,7 +14,7 @@
   "dependencies": {
     "@the-/check": "^15.0.3",
     "@the-/error": "^15.0.3",
-    "@the-/seat": "file:../seat",
+    "@the-/seat": "^15.0.5",
     "bwindow": "^2.0.2",
     "clay-resource-ref": "^2.0.8",
     "email-regex": "^3.0.0",
@@ -30,7 +30,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/util-site#readme",
   "keywords": [
     "the",
     "util"

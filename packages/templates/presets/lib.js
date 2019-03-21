@@ -29,7 +29,7 @@ exports.Readme = (dirname) => {
     repo: pkg.repository,
     sections: 'doc/readme/*.md.hbs',
     vars: {
-      jsdoc: jsdoc.reduce(
+      jsdoc: (jsdoc || []).reduce(
         (reduced, item) => {
           const { kind } = item
           const items = reduced.hasOwnProperty(kind) ? reduced[kind] : []

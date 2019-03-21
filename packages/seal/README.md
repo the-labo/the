@@ -67,7 +67,7 @@ Usage
 ```javascript
 'use strict'
 
-const theSeal = require('the-seal')
+const theSeal = require('@the-/seal')
 
 async function tryExample() {
   const SECRET_PASSWORD = 'xxxxxxxxxxxxxxxxx'

@@ -151,6 +151,14 @@
     "kind": "lib",
     "name": "seed"
   },
+  "the-password": {
+    "kind": "lib",
+    "name": "password"
+  },
+  "the-resize": {
+    "kind": "lib",
+    "name": "resize"
+  },
   "the-support": {
     "kind": "lib",
     "name": "support"
@@ -163,9 +171,29 @@
     "kind": "lib",
     "name": "seal"
   },
+  "the-secret": {
+    "kind": "lib",
+    "name": "secret"
+  },
+  "the-metrics": {
+    "kind": "lib",
+    "name": "metrics"
+  },
+  "the-refactor": {
+    "kind": "lib",
+    "name": "refactor"
+  },
+  "the-metrics-presets": {
+    "kind": "lib",
+    "name": "metrics-presets"
+  },
   "the-file-util": {
     "kind": "util",
     "name": "util-file"
+  },
+  "the-style-util": {
+    "kind": "util",
+    "name": "util-style"
   },
   "the-site-util": {
     "kind": "util",
