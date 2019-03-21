@@ -1,0 +1,14 @@
+/**
+ * Node types
+ * @enum {string} NodeTypes
+ */
+'use strict'
+
+module.exports = Object.freeze(
+  /** @lends NodeTypes */
+  {
+    {{#each types}}
+    {{this}}: '{{this}}',
+    {{/each}}
+  }
+)

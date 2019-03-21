@@ -6,7 +6,7 @@
  */
 'use strict'
 
-const { parse } = require('the-ast')
+const { parse } = require('@the-/ast')
 const { spaceOnCommentNode } = require('../ast/nodes')
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')

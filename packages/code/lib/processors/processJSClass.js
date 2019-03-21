@@ -10,7 +10,7 @@ const {
   constants: { NodeTypes },
   finder,
   parse,
-} = require('the-ast')
+} = require('@the-/ast')
 const { sortMethodsOnClassNode } = require('../ast/nodes')
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')

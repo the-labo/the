@@ -11,7 +11,7 @@ const {
   constants: { NodeTypes },
   finder,
   parse,
-} = require('the-ast')
+} = require('@the-/ast')
 const applyConverter = require('../helpers/applyConverter')
 const { compareBy, compareStrings } = require('../helpers/arrayHelper')
 const contentAccess = require('../helpers/contentAccess')

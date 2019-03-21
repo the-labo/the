@@ -12,11 +12,11 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/check": "^15.0.2",
+    "@the-/url": "^15.0.2",
+    "@the-/window": "^15.0.2",
     "history": "^4.7.2",
-    "the-check": "^2.0.23",
-    "the-router": "^3.0.4",
-    "the-url": "^1.4.7",
-    "the-window": "^7.0.3"
+    "the-router": "^3.0.4"
   },
   "devDependencies": {
     "@babel/runtime": "^7.3.1",

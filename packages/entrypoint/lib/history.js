@@ -4,7 +4,7 @@
 'use strict'
 
 const { createBrowserHistory, createMemoryHistory } = require('history')
-const { get } = require('the-window')
+const { get } = require('@the-/window')
 
 function history() {
   if (history.singleton) {

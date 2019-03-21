@@ -6,7 +6,7 @@
 'use strict'
 
 const React = require('react')
-const theAssert = require('the-assert')
+const theAssert = require('@the-/assert')
 
 const assert = theAssert('[TheContext][ContextRoot]')
 

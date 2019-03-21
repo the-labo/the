@@ -1,0 +1,205 @@
+[
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/jitter/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:the-jitter",
+    "longname": "module:the-jitter",
+    "name": "the-jitter",
+    "kind": "module",
+    "description": "Random delay timer",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/jitter/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheJitter()",
+    "longname": "TheJitter",
+    "name": "TheJitter",
+    "kind": "constructor",
+    "memberof": "TheJitter",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "TheJitter",
+    "longname": "TheJitter",
+    "name": "TheJitter",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheJitter.js",
+      "path": "/Users/okuni/Projects/the/packages/jitter/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheJitter instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheJitter"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/jitter/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheJitter#decrementCount",
+    "longname": "TheJitter#decrementCount",
+    "name": "decrementCount",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Decrement count",
+    "memberof": "TheJitter",
+    "params": [],
+    "meta": {
+      "lineno": 30,
+      "filename": "TheJitter.js",
+      "path": "/Users/okuni/Projects/the/packages/jitter/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheJitter#incrementCount",
+    "longname": "TheJitter#incrementCount",
+    "name": "incrementCount",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Increment count",
+    "memberof": "TheJitter",
+    "params": [],
+    "meta": {
+      "lineno": 47,
+      "filename": "TheJitter.js",
+      "path": "/Users/okuni/Projects/the/packages/jitter/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "TheJitter#resetCount",
+    "longname": "TheJitter#resetCount",
+    "name": "resetCount",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Reset count",
+    "memberof": "TheJitter",
+    "params": [],
+    "meta": {
+      "lineno": 66,
+      "filename": "TheJitter.js",
+      "path": "/Users/okuni/Projects/the/packages/jitter/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "TheJitter#handle",
+    "longname": "TheJitter#handle",
+    "name": "handle",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Handle action",
+    "memberof": "TheJitter",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "action"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 75,
+      "filename": "TheJitter.js",
+      "path": "/Users/okuni/Projects/the/packages/jitter/lib"
+    },
+    "async": true,
+    "order": 8
+  },
+  {
+    "id": "TheJitter#wait",
+    "longname": "TheJitter#wait",
+    "name": "wait",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Wait for delay",
+    "memberof": "TheJitter",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 90,
+      "filename": "TheJitter.js",
+      "path": "/Users/okuni/Projects/the/packages/jitter/lib"
+    },
+    "async": true,
+    "order": 9
+  }
+]

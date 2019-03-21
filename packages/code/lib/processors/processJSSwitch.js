@@ -11,7 +11,7 @@ const {
   constants: { NodeTypes },
   finder,
   parse,
-} = require('the-ast')
+} = require('@the-/ast')
 const { sortCasesOnSwitchStatementNode } = require('../ast/nodes')
 const applyConverter = require('../helpers/applyConverter')
 const applyToNodes = require('../helpers/applyToNodes')

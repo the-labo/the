@@ -36,7 +36,6 @@
     "the-driver-mongo": "^1.0.27",
     "the-driver-rdb": "^2.3.5",
     "the-driver-sequelize": "^1.1.14",
-    "the-refresher": "^1.0.6",
     "the-resource-base": "^1.4.9",
     "uuid": "^3.3.2"
   },

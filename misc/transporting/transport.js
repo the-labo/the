@@ -9,10 +9,12 @@ const path = require('path')
 const rimraf = require('rimraf')
 const transporting = require('./transporting')
 
-const baseDir = `${__dirname}/../../..`
+const baseDir = `${__dirname}/../..`
 process.chdir(baseDir)
 
-const pkg = require('../../../package')(async () => {
+const pkg = require('../../package')
+
+;(async () => {
   for (const [fromPkgName, { kind, name }] of Object.entries(transporting)) {
     const fromDir = path.resolve(baseDir, '..', fromPkgName)
     const toDir = path.resolve(baseDir, 'packages', name)

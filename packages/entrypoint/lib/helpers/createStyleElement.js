@@ -5,7 +5,7 @@
  */
 'use strict'
 
-const { get } = require('the-window')
+const { get } = require('@the-/window')
 
 /** @lends createStyleElement */
 function createStyleElement(cssString, options = {}) {

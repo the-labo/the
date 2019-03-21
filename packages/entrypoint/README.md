@@ -82,7 +82,7 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-- [the-entrypoint](./doc/api/api.md#module_the-entrypoint)
+- [@the-/entrypoint](./doc/api/api.md#module_@the-/entrypoint)
 
 
 <!-- Section from "doc/readme/03.API.md.hbs" End -->

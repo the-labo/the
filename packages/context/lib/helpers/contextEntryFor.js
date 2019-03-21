@@ -8,7 +8,7 @@
 const { shallowEqual } = require('asobj')
 const PropTypes = require('prop-types')
 const React = require('react')
-const theAssert = require('the-assert')
+const theAssert = require('@the-/assert')
 const assert = theAssert('TheContext.ContextEntry')
 
 /** @lends contextEntryFor */

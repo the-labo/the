@@ -5,7 +5,7 @@
  */
 'use strict'
 
-const { get, set } = require('the-window')
+const { get, set } = require('@the-/window')
 
 /** @lends singleton */
 function singleton(options = {}) {

@@ -24,7 +24,6 @@
     "lodash.clone": "^4.5.0",
     "postcss": "^7.0.14",
     "prettier": "^1.16.4",
-    "the-ast": "^1.0.5",
     "the-file-util": "^1.2.2",
     "the-path-util": "^1.0.1",
     "writeout": "^2.2.4",

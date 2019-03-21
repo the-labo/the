@@ -6,7 +6,7 @@
 
 const asleep = require('asleep')
 const { deepEqual, equal, ok } = require('assert').strict
-const { TheRefresher } = require('the-refresher')
+const { TheRefresher } = require('@the-/refresher')
 const {
   DataTypes: { ENTITY, STRING },
   TheResource,

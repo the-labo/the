@@ -1,6 +1,6 @@
 'use strict'
 
-const { TheLint, rules } = require('the-lint')
+const { TheLint, rules } = require('@the-/lint')
 
 async function tryExample() {
   const lint = new TheLint()

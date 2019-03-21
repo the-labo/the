@@ -1,6 +1,6 @@
 'use strict'
 
-const theHandle = require('the-handle')
+const theHandle = require('@the-/handle')
 
 async function tryExample() {
   const handle = theHandle({

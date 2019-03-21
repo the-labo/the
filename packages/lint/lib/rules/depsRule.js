@@ -12,7 +12,7 @@ const {
   finder,
   parse,
   walk,
-} = require('the-ast')
+} = require('@the-/ast')
 
 /** @lends depsRule */
 function depsRule(config) {

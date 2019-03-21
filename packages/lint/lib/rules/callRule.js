@@ -9,7 +9,7 @@
 
 const { has } = require('json-pointer')
 const path = require('path')
-const { parse, walk } = require('the-ast')
+const { parse, walk } = require('@the-/ast')
 
 /** @lends callRule */
 function callRule(config) {

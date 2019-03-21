@@ -2,7 +2,7 @@
  * @memberof module:the-code/lib/ast/nodes
  */
 'use strict'
-const { finder } = require('the-ast')
+const { finder } = require('@the-/ast')
 
 function findCJSExportsAssignmentsExpressionOnProgramNode(ProgramNode) {
   const AssignmentExpressions = finder.findByTypes(ProgramNode, [

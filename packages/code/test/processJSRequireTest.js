@@ -116,7 +116,7 @@ const x = require('x')
   //   const globalInjection = require('./globalInjection')
   //   Object.assign(global, globalInjection())
   //
-  // const theServer = require('the-server').default
+  // const theServer = require('@the-/server').default
   //
   //       `)
   //     )

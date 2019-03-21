@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { walk } = require('the-ast')
+const { walk } = require('@the-/ast')
 
 const isRequireCall = (call) => {
   const arg = call['arguments'][0]

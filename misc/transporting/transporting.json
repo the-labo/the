@@ -127,6 +127,18 @@
     "kind": "lib",
     "name": "lint"
   },
+  "the-ast": {
+    "kind": "lib",
+    "name": "ast"
+  },
+  "the-jitter": {
+    "kind": "lib",
+    "name": "jitter"
+  },
+  "the-refresher": {
+    "kind": "lib",
+    "name": "refresher"
+  },
   "the-code": {
     "kind": "lib",
     "name": "code"

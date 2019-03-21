@@ -4,7 +4,7 @@ const { EOL } = require('os')
 const {
   constants: { NodeTypes },
   finder,
-} = require('the-ast')
+} = require('@the-/ast')
 
 const compareStart = (a, b) => a.start - b.start
 

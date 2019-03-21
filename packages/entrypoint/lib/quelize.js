@@ -5,8 +5,8 @@
  */
 'use strict'
 
-const { addUrlQuery } = require('the-url')
-const { get } = require('the-window')
+const { addUrlQuery } = require('@the-/url')
+const { get } = require('@the-/window')
 
 /** @lends quelize */
 function quelize(values, options = {}) {

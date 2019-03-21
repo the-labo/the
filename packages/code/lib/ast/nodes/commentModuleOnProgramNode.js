@@ -8,7 +8,7 @@ const path = require('path')
 const {
   constants: { NodeTypes },
   finder,
-} = require('the-ast')
+} = require('@the-/ast')
 const { findupDir } = require('the-path-util')
 const findCJSExportsAssignmentsExpressionOnProgramNode = require('./findCJSExportsAssignmentsExpressionOnProgramNode')
 const findJSDocAnnotationsInCommendNode = require('./findJSDocAnnotationsInCommendNode')

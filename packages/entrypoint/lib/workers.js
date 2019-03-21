@@ -6,7 +6,7 @@
  */
 'use strict'
 
-const { get } = require('the-window')
+const { get } = require('@the-/window')
 
 const fullPath = (url) => new URL(url, location.href).href
 

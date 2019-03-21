@@ -4,8 +4,8 @@
  */
 'use strict'
 
-const { isFirefox, isiOS, unlessProduction } = require('the-check')
-const { get } = require('the-window')
+const { isFirefox, isiOS, unlessProduction } = require('@the-/check')
+const { get } = require('@the-/window')
 const createStyleElement = require('./helpers/createStyleElement')
 
 /** @lends patch */

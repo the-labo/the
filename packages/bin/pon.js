@@ -6,7 +6,7 @@
 'use strict'
 
 const theBin = require('./lib/create')
-const { isProduction } = require('the-check')
+const { isProduction } = require('@the-/check')
 const { EOL } = require('os')
 const chalk = require('chalk')
 

@@ -3,7 +3,7 @@
 const {
   constants: { NodeTypes },
   finder,
-} = require('the-ast')
+} = require('@the-/ast')
 
 function cleanupReturnAwaitOnFunctionNode(FunctionNode, { get, replace }) {
   if (!FunctionNode.async) {

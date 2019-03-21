@@ -13,7 +13,7 @@
 const { StrictMode, createElement: c } = require('react')
 const { render } = require('react-dom')
 const { TheRouter } = require('the-router')
-const { get } = require('the-window')
+const { get } = require('@the-/window')
 const history = require('./history')
 
 /** @lends mount */

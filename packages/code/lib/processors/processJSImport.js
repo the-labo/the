@@ -8,7 +8,7 @@
 'use strict'
 
 const path = require('path')
-const { parse, walk } = require('the-ast')
+const { parse, walk } = require('@the-/ast')
 const {
   cleanupExtOnImportDeclarationNode,
   mergeDuplicateImportOnProgramNode,

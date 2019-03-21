@@ -5,7 +5,7 @@
  */
 'use strict'
 
-const { get, line } = require('the-window')
+const { get, line } = require('@the-/window')
 
 /** @lends online */
 function online() {

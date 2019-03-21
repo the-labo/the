@@ -12,7 +12,7 @@ const {
   constants: { NodeTypes },
   finder,
   parse,
-} = require('the-ast')
+} = require('@the-/ast')
 const applyConverter = require('../helpers/applyConverter')
 
 /** @lends processJSRequire */
