@@ -43,6 +43,7 @@
     "@babel/preset-react": "7.0.0",
     "@babel/runtime": "^7.4.0",
     "@okunishinishi/fixpack": "^3.0.1",
+    "@the-/templates": "file:packages/templates",
     "aglob": "^3.0.1",
     "coz": "^7.0.19",
     "publish-if-needed": "^1.1.0",

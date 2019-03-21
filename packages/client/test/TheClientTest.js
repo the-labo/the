@@ -7,8 +7,7 @@
 const aport = require('aport')
 const asleep = require('asleep')
 const { deepEqual, equal, ok } = require('assert')
-const { TheError } = require('the-error')
-const { TheServer } = require('the-server')
+const { TheServer } = require('@the-/server')
 const TheClient = require('../lib/TheClient')
 
 describe('the-client', () => {
@@ -16,7 +15,7 @@ describe('the-client', () => {
 
   after(() => {})
 
-  it('Do test', async function() {
+  it('Do test', async function () {
     this.timeout(20 * 1000)
     ok(TheClient)
 
@@ -34,7 +33,7 @@ describe('the-client', () => {
       }
 
       doWrong() {
-        throw new TheError('Something is wrong')
+        throw new Error('Something is wrong')
       }
     }
 
@@ -132,7 +131,7 @@ describe('the-client', () => {
     const port = await aport()
 
     class CountdownStream extends TheServer.Stream {
-      async *provide() {
+      async * provide() {
         let count = Number(this.params.count)
         while (count > 0) {
           if (this.closed) {

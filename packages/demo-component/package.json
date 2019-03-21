@@ -32,10 +32,10 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/demo-component#readme",
   "keywords": [
-    "component",
-    "the"
+    "the",
+    "component"
   ],
   "license": "MIT",
   "main": "shim",

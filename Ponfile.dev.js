@@ -8,6 +8,7 @@
 const pon = require('pon')
 const pkgSync = require('./misc/tasks/pkgSync')
 const pkgRun = require('./misc/tasks/pkgRun')
+const pkgInstall = require('./misc/tasks/pkgInstall')
 const pkgPublish = require('./misc/tasks/pkgPublish')
 const theCode = require('the-code/pon')
 
@@ -32,6 +33,7 @@ module.exports = pon({
     'pkg:sync': pkgSync('package.json', SUB_PACKAGES),
     'pkg:publish': pkgPublish(SUB_PACKAGES),
     'pkg:run:build': pkgRun(SUB_PACKAGES, 'build'),
+    'pkg:install': pkgInstall(SUB_PACKAGES),
     'pkg:run:doc': pkgRun(SUB_PACKAGES, 'doc'),
     'pkg:run:test': pkgRun(SUB_PACKAGES, 'test'),
   },
@@ -62,6 +64,7 @@ module.exports = pon({
       ...tasks.prepare,
       ...['pkg:sync'],
     ],
+    install: ['pkg:install'],
     build: [
       ...tasks.build,
       'pkg:run:build',

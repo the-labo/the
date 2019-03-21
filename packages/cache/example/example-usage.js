@@ -1,6 +1,6 @@
 'use strict'
 
-const theCache = require('the-cache')
+const theCache = require('@the-/cache')
 
 async function tryExample() {
   const cache = theCache({

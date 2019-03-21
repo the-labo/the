@@ -3,10 +3,10 @@
  */
 'use strict'
 
-const { readmeMdBud } = require('ape-tmpl')
+const { Readme } = require('./lib')
 const pkg = require('./package')
 
-module.exports = readmeMdBud({
+module.exports = Readme({
   badges: { npm: true },
   links: require('./doc/links'),
   overview: 'doc/overview.md',

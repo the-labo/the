@@ -2,50 +2,27 @@
 
 'use strict'
 
-const { copyAsync, copyDirAsync } = require('asfs')
-const { spawnSync } = require('child_process')
-const { chmod, readFile, stat, unlink, writeFile } = require('fs').promises
+const {copyAsync, copyDirAsync} = require('asfs')
+const {spawnSync} = require('child_process')
+const {chmod, readFile, stat, unlink, writeFile} = require('fs').promises
 const path = require('path')
 const rimraf = require('rimraf')
-const pkg = require('../../package')
-const baseDir = `${__dirname}/../..`
+const pkg = require('../../../package')
+const baseDir = `${__dirname}/../../..`
 process.chdir(baseDir)
 
-const packages = {
-  [`../the-script-build`]: { kind: 'script', name: 'script-build' },
-  [`../the-script-test`]: { kind: 'script', name: 'script-test' },
-  [`../the-demo-lib`]: { kind: 'lib', name: 'demo-lib' },
-  [`../the-demo-component`]: { kind: 'component', name: 'demo-component' },
-  [`../the-scaffold`]: { kind: 'scaffold', name: 'scaffold' },
-  [`../the-templates`]: { kind: 'templates', name: 'templates' },
-  [`../the-assert`]: { kind: 'lib', name: 'assert' },
-  [`../the-assets`]: { kind: 'lib', name: 'assets' },
-  [`../the-check`]: { kind: 'lib', name: 'check' },
-  [`../the-window`]: { kind: 'lib', name: 'window' },
-  [`../the-bin`]: { kind: 'lib', name: 'bin' },
-  [`../the-context`]: { kind: 'lib', name: 'context' },
-  [`../the-client`]: { kind: 'lib', name: 'client' },
-  [`../the-server`]: { kind: 'lib', name: 'server' },
-  [`../the-ps`]: { kind: 'lib', name: 'ps' },
-  [`../the-run`]: { kind: 'lib', name: 'run' },
-  [`../the-pack`]: { kind: 'lib', name: 'pack' },
-  [`../the-url`]: { kind: 'lib', name: 'url' },
-  [`../the-error`]: { kind: 'lib', name: 'error' },
-  [`../the-tmp`]: { kind: 'lib', name: 'tmp' },
-  [`../the-cache`]: { kind: 'lib', name: 'cache' },
-  [`../the-queue`]: { kind: 'lib', name: 'queue' },
-}
+const transporting = require('./transporting')
 
 ;(async () => {
-  for (const [from, { kind, name }] of Object.entries(packages)) {
-    const fromDir = path.resolve(baseDir, from)
+  for (const [fromPkgName, {kind, name}] of Object.entries(transporting)) {
+    const fromDir = path.resolve(baseDir, '..', fromPkgName)
     const toDir = path.resolve(baseDir, 'packages', name)
     const toStat = await stat(toDir).catch(() => null)
-    const fromREADME = path.resolve(from, 'README.md')
+    const fromREADME = path.resolve(fromDir, 'README.md')
     if (!toStat) {
       spawnSync('cp', ['-R', fromDir, toDir])
       await chmod(fromREADME, '644')
-      await unlink(path.resolve(from, '.README.md.bud')).catch(() => null)
+      await unlink(path.resolve(fromDir, '.README.md.bud')).catch(() => null)
       const msg = `This package moved to [@the-/${name}](https://www.npmjs.com/package/@the-/${name})`
       await writeFile(
         fromREADME,
@@ -54,9 +31,9 @@ const packages = {
 ${msg}
       `,
       )
-      spawnSync('git', ['add', '.'], { cwd: fromDir })
-      spawnSync('git', ['commit', '-m', 'Deprecate'], { cwd: fromDir })
-      spawnSync('git', ['push'], { cwd: fromDir })
+      spawnSync('git', ['add', '.'], {cwd: fromDir})
+      spawnSync('git', ['commit', '-m', 'Deprecate'], {cwd: fromDir})
+      spawnSync('git', ['push'], {cwd: fromDir})
       spawnSync(`npm`, ['deprecate', path.basename(fromDir), msg], {
         cwd: fromDir,
       })
@@ -106,25 +83,25 @@ ${msg}
         )
         await copyAsync(`${demoLibDir}/.npmignore`, `${toDir}/.npmignore`)
         const toPkg = JSON.parse(await readFile(toPkgFile))
-        const { scripts = {} } = toPkg
+        const {scripts = {}} = toPkg
         scripts.doc = 'the-script-doc'
         scripts.build = 'the-script-build'
         scripts.test = 'the-script-build'
         scripts.prepare = 'npm run build && npm run doc'
         delete scripts.share
         delete scripts.buid
-        await writeFile(toPkgFile, JSON.stringify({ ...toPkg, scripts }))
+        await writeFile(toPkgFile, JSON.stringify({...toPkg, scripts}))
       }
     }
 
-    const { dependencies = {}, devDependencies = {} } = toPkg
+    const {dependencies = {}, devDependencies = {}} = toPkg
     // Cleanup
     {
       const depsToRemove = []
       for (const name of depsToRemove) {
         if (name in dependencies) {
           console.log(`remove ${name} from ${toDir}...`)
-          spawnSync('npm', ['un', name], { cwd: toDir })
+          spawnSync('npm', ['un', name], {cwd: toDir})
         }
       }
       const devDepsToRemove = [
@@ -147,7 +124,7 @@ ${msg}
       for (const name of devDepsToRemove) {
         if (name in devDependencies) {
           console.log(`remove ${name} from ${toDir}...`)
-          spawnSync('npm', ['un', '-D', name], { cwd: toDir })
+          spawnSync('npm', ['un', '-D', name], {cwd: toDir})
         }
       }
     }
@@ -164,7 +141,7 @@ ${msg}
           if (toPkg.name === name) {
             continue
           }
-          spawnSync('npm', ['i', '-D', src], { cwd: toDir })
+          spawnSync('npm', ['i', '-D', src], {cwd: toDir})
         }
       }
     }
@@ -182,7 +159,7 @@ ${msg}
     }
     {
       const toPkg = JSON.parse(await readFile(toPkgFile))
-      const { scripts = {} } = toPkg
+      const {scripts = {}} = toPkg
       delete scripts.update
       delete scripts.release
       await writeFile(

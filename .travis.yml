@@ -6,6 +6,7 @@ language: node_js
 node_js:
   - '10'
 script:
+  - pon install
   - pon doc
   - pon build
   - pon test

@@ -15,6 +15,7 @@
     "@the-/check": "^15.0.2",
     "@the-/pack": "^15.0.2",
     "@the-/queue": "^15.0.2",
+    "@the-/server": "file:../server",
     "argx": "^4.0.0",
     "asleep": "^1.0.3",
     "browser-cookies": "^1.2.0",
@@ -26,7 +27,6 @@
     "rfunc-client": "^5.0.5",
     "rfunc-constants": "^1.0.5",
     "socket.io-client": "^2.2.0",
-    "the-pack": "^1.0.6",
     "the-stream-base": "^3.0.30",
     "url": "^0.11.0",
     "uuid": "^3.3.2"
@@ -38,15 +38,15 @@
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
     "aport": "^2.0.0",
+    "coz": "^7.0.19",
     "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "the-server": "^14.0.14"
+    "react-dom": "^16.8.3"
   },
   "engines": {
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/client#readme",
   "keywords": [
     "lib",
     "the"

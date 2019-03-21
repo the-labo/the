@@ -1,0 +1,378 @@
+[
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/store/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:the-store",
+    "longname": "module:the-store",
+    "name": "the-store",
+    "kind": "module",
+    "description": "Redux wrapper for the-framework",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/store/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheStore()",
+    "longname": "TheStore",
+    "name": "TheStore",
+    "kind": "constructor",
+    "description": "Scoped redux store",
+    "memberof": "TheStore",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "optional settings",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "optional": true,
+        "description": "Custom reducer function",
+        "name": "options.reducer"
+      },
+      {
+        "type": {
+          "names": [
+            "Array.<string>"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Scope names to persistize in local storage",
+        "name": "options.persists"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "[]",
+        "description": "Redux middlewares",
+        "name": "options.middlewares"
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "TheStore",
+    "longname": "TheStore",
+    "name": "TheStore",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheStore.js",
+      "path": "/Users/okuni/Projects/the/packages/store/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheStore instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheStore"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/store/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "toStoreScopeClass",
+    "longname": "toStoreScopeClass",
+    "name": "toStoreScopeClass",
+    "kind": "function",
+    "scope": "global",
+    "description": "Convert into store scope class",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "BaseClass"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "toStoreScopeClass.js",
+      "path": "/Users/okuni/Projects/the/packages/store/lib"
+    },
+    "order": 10
+  },
+  {
+    "id": "TheStore#load",
+    "longname": "TheStore#load",
+    "name": "load",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Load a scope",
+    "memberof": "TheStore",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Scope class to instantiate",
+        "name": "ScopeClass"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "variable": true,
+        "description": "Name key path",
+        "name": "names"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheStore.Scope"
+          ]
+        },
+        "description": "Loaded scope"
+      }
+    ],
+    "meta": {
+      "lineno": 104,
+      "filename": "TheStore.js",
+      "path": "/Users/okuni/Projects/the/packages/store/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheStore#loadFromDefaults",
+    "longname": "TheStore#loadFromDefaults",
+    "name": "loadFromDefaults",
+    "kind": "function",
+    "scope": "instance",
+    "memberof": "TheStore",
+    "params": [],
+    "deprecated": true,
+    "meta": {
+      "lineno": 162,
+      "filename": "TheStore.js",
+      "path": "/Users/okuni/Projects/the/packages/store/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "TheStore#loadFromDefs",
+    "longname": "TheStore#loadFromDefs",
+    "name": "loadFromDefs",
+    "kind": "function",
+    "scope": "instance",
+    "memberof": "TheStore",
+    "params": [],
+    "deprecated": true,
+    "meta": {
+      "lineno": 182,
+      "filename": "TheStore.js",
+      "path": "/Users/okuni/Projects/the/packages/store/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "TheStore#loadScopesFromDefs",
+    "longname": "TheStore#loadScopesFromDefs",
+    "name": "loadScopesFromDefs",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Load scopes",
+    "memberof": "TheStore",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Defs",
+        "name": "defs"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "meta": {
+      "lineno": 194,
+      "filename": "TheStore.js",
+      "path": "/Users/okuni/Projects/the/packages/store/lib"
+    },
+    "order": 8
+  },
+  {
+    "id": "TheStore#subscribe",
+    "longname": "TheStore#subscribe",
+    "name": "subscribe",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Sub scribe store change",
+    "memberof": "TheStore",
+    "params": [
+      {
+        "name": "listener"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 221,
+      "filename": "TheStore.js",
+      "path": "/Users/okuni/Projects/the/packages/store/lib"
+    },
+    "order": 9
+  },
+  {
+    "id": "StoreScopeClass#load",
+    "longname": "StoreScopeClass#load",
+    "name": "load",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Load sub scopes",
+    "memberof": "StoreScopeClass",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Scope class to load",
+        "name": "ScopeClass"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "variable": true,
+        "description": "Sub names",
+        "name": "names"
+      }
+    ],
+    "meta": {
+      "lineno": 19,
+      "filename": "toStoreScopeClass.js",
+      "path": "/Users/okuni/Projects/the/packages/store/lib"
+    },
+    "order": 11
+  },
+  {
+    "id": "StoreScopeClass#loadFromMapping",
+    "longname": "StoreScopeClass#loadFromMapping",
+    "name": "loadFromMapping",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Load sub scopes from scope class mapping",
+    "memberof": "StoreScopeClass",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object.<string, function()>"
+          ]
+        },
+        "description": "Scope classes",
+        "name": "mapping"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Loaded scopes"
+      }
+    ],
+    "meta": {
+      "lineno": 28,
+      "filename": "toStoreScopeClass.js",
+      "path": "/Users/okuni/Projects/the/packages/store/lib"
+    },
+    "order": 12
+  }
+]

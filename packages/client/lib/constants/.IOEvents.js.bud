@@ -1,6 +1,6 @@
 'use strict'
 
-const IOEvents = require('the-server/lib/constants/IOEvents')
+const IOEvents = require('@the-/server/lib/constants/IOEvents')
 
 module.exports = {
   data: {
