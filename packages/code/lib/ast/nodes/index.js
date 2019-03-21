@@ -10,6 +10,7 @@ const cleanupEmptyObjectPatternParamsOnFunctionNode_ = require('./cleanupEmptyOb
 const cleanupExtOnImportDeclarationNode_ = require('./cleanupExtOnImportDeclarationNode')
 const cleanupExtOnRequireDeclarationArgumentNode_ = require('./cleanupExtOnRequireDeclarationArgumentNode')
 const cleanupRedundantAliasOnObjectPatternNode_ = require('./cleanupRedundantAliasOnObjectPatternNode')
+const cleanupRedundantQuoteOnObjectPatternNode_ = require('./cleanupRedundantQuoteOnObjectPatternNode')
 const cleanupReturnAwaitOnFunctionNode_ = require('./cleanupReturnAwaitOnFunctionNode')
 const cleanupUnusedArgumentsOnFunctionNode_ = require('./cleanupUnusedArgumentsOnFunctionNode')
 const cleanupUnusedOnArrayPatternNode_ = require('./cleanupUnusedOnArrayPatternNode')
@@ -35,6 +36,7 @@ exports.cleanupEmptyObjectPatternParamsOnFunctionNode = cleanupEmptyObjectPatter
 exports.cleanupExtOnImportDeclarationNode = cleanupExtOnImportDeclarationNode_
 exports.cleanupExtOnRequireDeclarationArgumentNode = cleanupExtOnRequireDeclarationArgumentNode_
 exports.cleanupRedundantAliasOnObjectPatternNode = cleanupRedundantAliasOnObjectPatternNode_
+exports.cleanupRedundantQuoteOnObjectPatternNode = cleanupRedundantQuoteOnObjectPatternNode_
 exports.cleanupReturnAwaitOnFunctionNode = cleanupReturnAwaitOnFunctionNode_
 exports.cleanupUnusedArgumentsOnFunctionNode = cleanupUnusedArgumentsOnFunctionNode_
 exports.cleanupUnusedOnArrayPatternNode = cleanupUnusedOnArrayPatternNode_
@@ -60,6 +62,7 @@ module.exports = {
   cleanupExtOnImportDeclarationNode: cleanupExtOnImportDeclarationNode_,
   cleanupExtOnRequireDeclarationArgumentNode: cleanupExtOnRequireDeclarationArgumentNode_,
   cleanupRedundantAliasOnObjectPatternNode: cleanupRedundantAliasOnObjectPatternNode_,
+  cleanupRedundantQuoteOnObjectPatternNode: cleanupRedundantQuoteOnObjectPatternNode_,
   cleanupReturnAwaitOnFunctionNode: cleanupReturnAwaitOnFunctionNode_,
   cleanupUnusedArgumentsOnFunctionNode: cleanupUnusedArgumentsOnFunctionNode_,
   cleanupUnusedOnArrayPatternNode: cleanupUnusedOnArrayPatternNode_,

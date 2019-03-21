@@ -4,30 +4,31 @@
  */
 'use strict'
 
+const { equal, ok } = require('assert')
 const TheSeed = require('../lib/TheSeed')
-const { ok, equal } = require('assert')
 
 describe('the-seed', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(TheSeed)
 
     const seed = new TheSeed('ja', {
       vars: {
-        foo: 'bar'
-      }
+        foo: 'bar',
+      },
     })
 
-    const users = seed.explode({
-      username: '#{name.firstName()}',
-      num: '#{index+1}',
-      hoge: ({ index }) => index,
-    }, 100)
+    const users = seed.explode(
+      {
+        hoge: ({ index }) => index,
+        num: '#{index+1}',
+        username: '#{name.firstName()}',
+      },
+      100,
+    )
     for (const user of users) {
       ok(user.username)
     }
@@ -38,7 +39,7 @@ describe('the-seed', () => {
 
     {
       const data = seed.apply({
-        image: '#{image.avatar()}'
+        image: '#{image.avatar()}',
       })
       ok(data.image)
     }

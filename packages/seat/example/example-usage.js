@@ -2,8 +2,7 @@
 
 const theSeat = require('the-seat')
 
-async function tryExample () {
-
+async function tryExample() {
   const seat = theSeat()
 
   {
@@ -27,7 +26,7 @@ async function tryExample () {
     {
       // Define utility method to take port
       const portFor = (name, portBase = 3000) => {
-        const {get, take, has, canTake} = ports.bind(name)
+        const { canTake, get, has, take } = ports.bind(name)
         if (has()) {
           return get()
         }

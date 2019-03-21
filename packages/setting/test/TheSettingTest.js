@@ -4,24 +4,21 @@
  */
 'use strict'
 
+const { equal, ok } = require('assert')
 const TheSetting = require('../lib/TheSetting')
-const {ok, equal} = require('assert')
 
-describe('the-setting', function () {
+describe('the-setting', function() {
   this.timeout(80000)
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(TheSetting)
 
-    const setting = new TheSetting(
-      `${__dirname}/../tmp/test-setting.json`,
-      {foo: 1}
-    )
+    const setting = new TheSetting(`${__dirname}/../tmp/test-setting.json`, {
+      foo: 1,
+    })
 
     setting.set('foo', 1)
     equal(setting.get('foo'), 1)

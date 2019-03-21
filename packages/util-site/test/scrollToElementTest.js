@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const scrollToElement = require('../lib/scrollToElement')
-const { ok, equal } = require('assert')
-
 describe('scroll-to-element', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

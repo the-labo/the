@@ -25,7 +25,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/the-seal#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "lib",
     "the"
@@ -35,7 +35,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "the-labo/the-seal",
+  "repository": "the-labo/the",
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",

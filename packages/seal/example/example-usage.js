@@ -2,11 +2,11 @@
 
 const theSeal = require('the-seal')
 
-async function tryExample () {
+async function tryExample() {
   const SECRET_PASSWORD = 'xxxxxxxxxxxxxxxxx'
-  const {seal, verify} = theSeal(SECRET_PASSWORD)
+  const { seal, verify } = theSeal(SECRET_PASSWORD)
 
-  const values = {name: 'Bess', age: 28}
+  const values = { age: 28, name: 'Bess' }
 
   const proof = seal(values)
   console.log(verify(proof, values)) // -> true

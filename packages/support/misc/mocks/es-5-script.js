@@ -1,3 +1,4 @@
-module.exports = function hoge () {
+'use strict'
+module.exports = function hoge() {
   console.log('this is es5!')
 }

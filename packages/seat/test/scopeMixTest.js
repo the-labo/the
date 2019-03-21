@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const scopeMix = require('../lib/mixins/scopeMix')
-const { ok, equal } = require('assert')
-
 describe('scope-mix', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

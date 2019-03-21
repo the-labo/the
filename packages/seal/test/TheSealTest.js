@@ -4,23 +4,21 @@
  */
 'use strict'
 
+const { equal, ok } = require('assert')
 const TheSeal = require('../lib/TheSeal')
-const {ok, equal} = require('assert')
 
 describe('the-seal', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(TheSeal)
 
     const SECRET_PASSWORD = 'xxxxxxxxxxxxxxxxx'
-    const {seal, verify} = new TheSeal(SECRET_PASSWORD)
+    const { seal, verify } = new TheSeal(SECRET_PASSWORD)
 
-    const values = {name: 'Bess', age: 28}
+    const values = { age: 28, name: 'Bess' }
 
     const proof = seal(values)
     equal(verify(proof, values), true)

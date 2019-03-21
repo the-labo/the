@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const helpers = require('../lib/helpers')
-const { ok, equal } = require('assert')
-
 describe('helpers', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

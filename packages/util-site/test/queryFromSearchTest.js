@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const queryFromSearch = require('../lib/queryFromSearch')
-const { ok, equal } = require('assert')
-
 describe('query-from-search', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

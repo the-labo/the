@@ -1,10 +1,10 @@
 'use strict'
 
-const {resolveUrl} = require('the-site-util')
+const { resolveUrl } = require('the-site-util')
 
-async function tryExample () {
+async function tryExample() {
   const url = resolveUrl('/foo/bar/:id', {
-    id: 1
+    id: 1,
   })
 }
 

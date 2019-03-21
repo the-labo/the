@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const isPhoneNumber = require('../lib/isPhoneNumber')
-const {ok, equal} = require('assert')
 
 describe('is-phone-number', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(isPhoneNumber('090-123-5678'))

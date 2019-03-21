@@ -4,20 +4,18 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const normalizeString = require('../lib/normalizeString')
-const {ok, equal} = require('assert')
 
 describe('to-hankaku', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     equal(
       normalizeString('あれは1１aAナニヌネノ-〜＝ーｶｷｸｹｺ'),
-      'あれは11aAナニヌネノ-〜=ーカキクケコ'
+      'あれは11aAナニヌネノ-〜=ーカキクケコ',
     )
   })
 })

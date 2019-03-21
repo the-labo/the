@@ -7,7 +7,7 @@
 const coz = require('coz')
 const ctrl = require('../lib/Ctrl')
 
-describe('ctrl', function () {
+describe('ctrl', function() {
   this.timeout(3000)
 
   before(async () => {})

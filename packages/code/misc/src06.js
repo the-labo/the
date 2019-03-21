@@ -4,11 +4,11 @@
  */
 'use strict'
 
-const theSeat = require('@the-/seat').default
 const theSecret = require('the-secret').default
+const { inspect } = require('util')
+const theSeat = require('@the-/seat').default
 const theSetting = require('@the-/setting').default
 const { envOf, seatAccess } = require('@the-/util-site')
-const { inspect } = require('util')
 const pkg = require('./package')
 
 const MASTER_PASSWORD_ENV = 'THE_DEMO_SITE_MASTER_PASSWORD'

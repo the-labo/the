@@ -7,7 +7,7 @@
 const coz = require('coz')
 const dialogs = require('../lib/Dialogs')
 
-describe('dialogs', function () {
+describe('dialogs', function() {
   this.timeout(3000)
 
   before(async () => {})

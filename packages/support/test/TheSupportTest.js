@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const TheSupport = require('../lib/TheSupport')
-const {ok, equal} = require('assert')
 
 describe('the-support', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     ok(TheSupport)
@@ -21,10 +19,12 @@ describe('the-support', () => {
 
     await support.es2015()
     {
-      const caught = await support.es5().then(() => null).catch((e) => e)
+      const caught = await support
+        .es5()
+        .then(() => null)
+        .catch((e) => e)
       ok(caught)
     }
-
   })
 })
 

@@ -53,7 +53,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/script-build#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "script",
     "the"
@@ -66,8 +66,8 @@
   "repository": "the-labo/the",
   "scripts": {
     "build": "./bin/the-script-build",
-    "test": "the-script-test",
     "doc": "the-script-doc",
-    "prepare": "npm run build; npm run doc"
+    "prepare": "npm run build; npm run doc",
+    "test": "the-script-test"
   }
 }

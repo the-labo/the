@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { equal } = require('assert').strict
 const parseUrl = require('../lib/parseUrl')
-const { ok, equal, deepEqual } = require('assert').strict
 
 describe('parse-url', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     const parsed = parseUrl('http://localhost:300/hoge.js?v=1')

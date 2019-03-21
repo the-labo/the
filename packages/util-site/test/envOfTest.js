@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const envOf = require('../lib/envOf')
-const {ok, equal} = require('assert')
 
 describe('env-of', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     process.env.TESTING_ENV_HOGE = 'hoge'

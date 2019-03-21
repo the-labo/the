@@ -1,6 +1,6 @@
 /**
  * Cleanup unused function node
- * @memberof module:the-code/lib/ast/nodes
+ * @memberof module:the-code
  * @function cleanupUnusedOnFunctionArgumentNode
  */
 'use strict'

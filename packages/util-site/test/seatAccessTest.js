@@ -4,26 +4,24 @@
  */
 'use strict'
 
-const seatAccess = require('../lib/seatAccess')
+const { deepEqual, equal } = require('assert')
 const theSeat = require('@the-/seat')
-const {ok, equal, deepEqual} = require('assert')
+const seatAccess = require('../lib/seatAccess')
 
 describe('seat-access', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     const seat = theSeat(`${__dirname}/../tmp/foo/testing-seat.json`)
     const {
+      containerNameFor,
       portNumberFor,
       portNumberRangeFor,
-      containerNameFor,
       processNameFor,
+      secretFor,
       userNameFor,
-      secretFor
     } = seatAccess(seat)
     equal(portNumberFor('hoge'), portNumberFor('hoge'))
     equal(containerNameFor('hoge'), containerNameFor('hoge'))

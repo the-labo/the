@@ -4,12 +4,12 @@
  */
 'use strict'
 
-const cachingFetch = require('../lib/cachingFetch')
-const {ok, equal} = require('assert')
-const injectmock = require('injectmock')
+const { equal } = require('assert')
 const fetch = require('cross-fetch')
+const injectmock = require('injectmock')
+const cachingFetch = require('../lib/cachingFetch')
 
-describe('caching-fetch', function () {
+describe('caching-fetch', function() {
   this.timeout(8000)
   before(() => {
     injectmock(global, 'fetch', fetch)
@@ -22,9 +22,11 @@ describe('caching-fetch', function () {
   it('Do test', async () => {
     const cached = []
     const cache = {
-      match: () => null,
-      put: (...a) => {cached.push(a)},
       delete: () => null,
+      match: () => null,
+      put: (...a) => {
+        cached.push(a)
+      },
     }
     await cachingFetch(cache, 'http://hoge.com/foo/bar/invalid')
     await cachingFetch(cache, 'http://example.com')

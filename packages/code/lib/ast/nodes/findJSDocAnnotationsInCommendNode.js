@@ -1,5 +1,5 @@
 /**
- * @memberof module:the-code/lib/ast/nodes
+ * @memberof module:the-code
  * @function findJSDocAnnotationsInCommendNode
  */
 'use strict'

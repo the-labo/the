@@ -2,12 +2,12 @@
 
 const theSetting = require('the-setting')
 
-async function tryExample () {
+async function tryExample() {
   const setting = theSetting('.setting.json', {
-    foo: 1
+    foo: 1,
   })
 
-  setting.set({foo: 2})
+  setting.set({ foo: 2 })
 
   console.log(setting.get('foo')) // -> 2
 }

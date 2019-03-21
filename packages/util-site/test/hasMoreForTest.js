@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const hasMoreFor = require('../lib/hasMoreFor')
-const { ok, equal } = require('assert')
-
 describe('has-more-for', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

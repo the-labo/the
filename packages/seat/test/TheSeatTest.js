@@ -4,16 +4,14 @@
  */
 'use strict'
 
+const { doesNotThrow, equal, notEqual, ok, throws } = require('assert')
 const TheSeat = require('../lib/TheSeat')
-const { ok, equal, notEqual, throws, doesNotThrow } = require('assert')
 
-describe('the-seat', function () {
+describe('the-seat', function() {
   this.timeout(5000)
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     ok(TheSeat)
@@ -50,17 +48,14 @@ describe('the-seat', function () {
       ok(portFor('myapp/02') > portFor('myapp/01'))
     }
 
-    equal(
-      seat.acquireString('hoge'),
-      seat.acquireString('hoge')
-    )
+    equal(seat.acquireString('hoge'), seat.acquireString('hoge'))
 
     ok(
-      seat.acquireString('jj', { prefix: 'p-', suffix: '-s' })
-        .match(/^p-.*-s$/)
+      seat
+        .acquireString('jj', { prefix: 'p-', suffix: '-s' })
+        .match(/^p-.*-s$/),
     )
   })
-
 })
 
 /* global describe, before, after, it */

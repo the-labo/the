@@ -4,21 +4,16 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const refOf = require('../lib/refOf')
-const {ok, equal} = require('assert')
 
 describe('ref-of', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
-    equal(
-      refOf({$$as: 'User', id: 3}),
-      'User#3'
-    )
+    equal(refOf({ $$as: 'User', id: 3 }), 'User#3')
   })
 })
 

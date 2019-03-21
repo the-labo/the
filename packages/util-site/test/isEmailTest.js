@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const isEmail = require('../lib/isEmail')
-const {ok, equal} = require('assert')
 
 describe('is-email', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(isEmail('a@example.com'))

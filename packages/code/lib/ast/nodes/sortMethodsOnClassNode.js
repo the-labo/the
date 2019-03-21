@@ -1,5 +1,5 @@
 /**
- * @memberOf module:the-code/lib/ast/nodes
+ * @memberOf module:the-code
  * @function sortMethodsOnClassNode
  */
 'use strict'

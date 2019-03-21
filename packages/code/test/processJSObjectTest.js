@@ -70,7 +70,7 @@ describe('process-object-property', async () => {
       await processJSObject(
         `const { a, j: jj, d, b: { z, nn=5, f }, ...zz } = require('hoge')`,
       ),
-      "const { a, b: { f, nn=5, z }, d, j: jj, ...zz } = require('hoge')",
+      'const { a, b: { f, nn=5, z }, d, j: jj, ...zz } = require(\'hoge\')',
     )
   })
 
@@ -322,6 +322,15 @@ const v2 = value2 => a ? value2 : { value2: value2 }
 const v = value => a ? value : { [value]: value }
 const v2 = value2 => a ? value2 : { value2 }
     `,
+    )
+  })
+
+  it('Remove unneeded key quote', async () => {
+    equal(
+      await processJSObject(
+        `const x = {a: 1, 'b': 2, 'c&c':5 }`
+      ),
+      `const x = {'c&c':5, a: 1, b: 2 }`
     )
   })
 })

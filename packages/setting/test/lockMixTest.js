@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const lockMix = require('../lib/mixins/lockMix')
-const { ok, equal } = require('assert')
-
 describe('lock-mix', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

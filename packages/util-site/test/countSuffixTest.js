@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const countSuffix = require('../lib/countSuffix')
-const { ok, equal } = require('assert')
-
 describe('count-suffix', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

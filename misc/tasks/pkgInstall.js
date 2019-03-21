@@ -1,11 +1,8 @@
 'use strict'
 
 const aglob = require('aglob')
-const path = require('path')
 const installIfNeeded = require('npm-install-if-needed')
-const {
-  command: { spawn },
-} = require('pon-task-basic')
+const path = require('path')
 
 function pkgInstall(targets) {
   return async function task(ctx) {

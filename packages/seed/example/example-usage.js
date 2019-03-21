@@ -2,13 +2,18 @@
 
 const theSeed = require('the-seed')
 
-async function tryExample () {
+async function tryExample() {
   const seed = theSeed('ja', {
-    vars: {/* ... */}
+    vars: {
+      /* ... */
+    },
   })
-  const users = seed.explode({
-    name: '#{name.firstName()}'
-  }, 100)
+  const users = seed.explode(
+    {
+      name: '#{name.firstName()}',
+    },
+    100,
+  )
 
   console.log(users) // -> [ username: 'xxxxx', /* ... */ ]
 }
