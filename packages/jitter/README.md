@@ -69,13 +69,13 @@ Usage
 
 const { TheJitter } = require('the-jitter')
 
-async function tryExample () {
+async function tryExample() {
   const jitter = new TheJitter({
     maxCount: 100,
     maxInterval: 1000,
   })
 
-  async function doSomething (i) {
+  async function doSomething(i) {
     console.log('Method called', i)
     const at = new Date()
     await jitter.handle(async () => {
@@ -106,7 +106,7 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 - [default](./doc/api/api.md#module_default)
-- [the-jitter](./doc/api/api.md#module_the-jitter)
+- [@the-/jitter](./doc/api/api.md#module_@the-/jitter)
 
 
 <!-- Section from "doc/readme/03.API.md.hbs" End -->

@@ -13,9 +13,9 @@
     "order": 1
   },
   {
-    "id": "module:the-refresher",
-    "longname": "module:the-refresher",
-    "name": "the-refresher",
+    "id": "module:@the-/refresher",
+    "longname": "module:@the-/refresher",
+    "name": "@the-/refresher",
     "kind": "module",
     "description": "Refresher of the-db",
     "meta": {

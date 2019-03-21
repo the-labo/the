@@ -1,0 +1,166 @@
+[
+  {
+    "id": "module:analyzer",
+    "longname": "module:analyzer",
+    "name": "analyzer",
+    "kind": "module",
+    "description": "Analyze node",
+    "meta": {
+      "lineno": 1,
+      "filename": "analyser.js",
+      "path": "/Users/okuni/Projects/the/packages/ast/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:finder",
+    "longname": "module:finder",
+    "name": "finder",
+    "kind": "module",
+    "description": "Find node from node",
+    "meta": {
+      "lineno": 1,
+      "filename": "finder.js",
+      "path": "/Users/okuni/Projects/the/packages/ast/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/ast",
+    "longname": "module:@the-/ast",
+    "name": "@the-/ast",
+    "kind": "module",
+    "description": "AST (abstract syntax tree) parser",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/ast/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "module:constants",
+    "longname": "module:constants",
+    "name": "constants",
+    "kind": "module",
+    "description": "Constant variables",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/ast/lib/constants"
+    },
+    "order": 5
+  },
+  {
+    "id": "parse",
+    "longname": "parse",
+    "name": "parse",
+    "kind": "function",
+    "scope": "global",
+    "description": "Parse source code",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "src"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "parsed Object"
+      }
+    ],
+    "exceptions": [
+      {
+        "type": {
+          "names": [
+            "Error"
+          ]
+        },
+        "description": "Parser file error"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "parse.js",
+      "path": "/Users/okuni/Projects/the/packages/ast/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "finder.findByTypes",
+    "longname": "finder.findByTypes",
+    "name": "findByTypes",
+    "kind": "function",
+    "scope": "static",
+    "description": "Find nodes by types",
+    "memberof": "finder",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Node"
+          ]
+        },
+        "name": "node"
+      },
+      {
+        "type": {
+          "names": [
+            "Array.<string>"
+          ]
+        },
+        "name": "types"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Array.<Node>"
+          ]
+        },
+        "description": "Found nodes"
+      }
+    ],
+    "meta": {
+      "lineno": 18,
+      "filename": "finder.js",
+      "path": "/Users/okuni/Projects/the/packages/ast/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "module.exports",
+    "longname": "module.exports",
+    "name": "exports",
+    "kind": "function",
+    "scope": "static",
+    "description": "explode() will take a visitor object with all of the various shorthands\nthat we support, and validates & normalizes it into a common format, ready\nto be used in traversal\n\nThe various shorthands are:\n* `Identifier() { ... }` -> `Identifier: { enter() { ... } }`\n* `\"Identifier|NumericLiteral\": { ... }` -> `Identifier: { ... }, NumericLiteral: { ... }`\n* Aliases in `babel-types`: e.g. `Property: { ... }` -> `ObjectProperty: { ... }, ClassProperty: { ... }`\n\nOther normalizations are:\n* `enter` and `exit` functions are wrapped in arrays, to ease merging of\n  visitors",
+    "memberof": "module",
+    "meta": {
+      "lineno": 23,
+      "filename": "explode.js",
+      "path": "/Users/okuni/Projects/the/packages/ast/lib/walk"
+    },
+    "order": 6
+  }
+]

@@ -9,7 +9,7 @@
 <dt><a href="#module_finder">finder</a></dt>
 <dd><p>Find node from node</p>
 </dd>
-<dt><a href="#module_the-ast">the-ast</a></dt>
+<dt><a href="#module_@the-/ast">@the-/ast</a></dt>
 <dd><p>AST (abstract syntax tree) parser</p>
 </dd>
 <dt><a href="#module_constants">constants</a></dt>
@@ -35,9 +35,9 @@ Analyze node
 ## finder
 Find node from node
 
-<a name="module_the-ast"></a>
+<a name="module_@the-/ast"></a>
 
-## the-ast
+## @the-/ast
 AST (abstract syntax tree) parser
 
 <a name="module_constants"></a>

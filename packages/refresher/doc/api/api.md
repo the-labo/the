@@ -6,7 +6,7 @@
 <dt><a href="#module_default">default</a></dt>
 <dd><p>Default exports</p>
 </dd>
-<dt><a href="#module_the-refresher">the-refresher</a></dt>
+<dt><a href="#module_@the-/refresher">@the-/refresher</a></dt>
 <dd><p>Refresher of the-db</p>
 </dd>
 </dl>
@@ -31,9 +31,9 @@
 ## default
 Default exports
 
-<a name="module_the-refresher"></a>
+<a name="module_@the-/refresher"></a>
 
-## the-refresher
+## @the-/refresher
 Refresher of the-db
 
 <a name="TheRefresher"></a>

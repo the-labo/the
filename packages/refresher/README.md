@@ -67,15 +67,18 @@ Usage
 ```javascript
 'use strict'
 
-const {TheRefresher} = require('the-refresher')
+const { TheRefresher } = require('the-refresher')
 
-async function tryExample () {
-  const refresher = new TheRefresher(async () => {
-    // Do something to refresh
-    /* .. */
-  }, {
-    interval: 3000,
-  })
+async function tryExample() {
+  const refresher = new TheRefresher(
+    async () => {
+      // Do something to refresh
+      /* .. */
+    },
+    {
+      interval: 3000,
+    },
+  )
 
   await refresher.start()
 }
@@ -94,7 +97,7 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 - [default](./doc/api/api.md#module_default)
-- [the-refresher](./doc/api/api.md#module_the-refresher)
+- [@the-/refresher](./doc/api/api.md#module_@the-/refresher)
 
 
 <!-- Section from "doc/readme/03.API.md.hbs" End -->

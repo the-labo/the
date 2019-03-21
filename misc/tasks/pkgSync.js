@@ -4,6 +4,7 @@ const aglob = require('aglob')
 const path = require('path')
 const { writeAsJson } = require('the-file-util')
 const fixpack = require('@okunishinishi/fixpack')
+const semver = require('semver')
 
 function pkgSync(src, targets) {
   return async function task(ctx) {
@@ -22,29 +23,31 @@ function pkgSync(src, targets) {
     )
     logger.trace(
       `Package inf to sync:\n` +
-        JSON.stringify(
-          {
-            bugs,
-            engines,
-            homepage,
-            license,
-            publishConfig,
-            repository,
-            version,
-          },
-          null,
-          2,
-        ),
+      JSON.stringify(
+        {
+          bugs,
+          engines,
+          homepage,
+          license,
+          publishConfig,
+          repository,
+          version,
+        },
+        null,
+        2,
+      ),
     )
     for (const subPkgPath of subPkgPaths) {
       const subPkg = require(subPkgPath)
-      if (subPkg.version !== version) {
-        logger.notice(
-          `[${path.relative(process.cwd(), subPkgPath)}] Update version "${
-            subPkg.version
-          }" -> "${version}"`,
-        )
+      const needsChangeVersion = semver.gt(version, subPkg.version)
+      if (!needsChangeVersion) {
+        continue
       }
+      logger.notice(
+        `[${path.relative(process.cwd(), subPkgPath)}] Update version "${
+          subPkg.version
+          }" -> "${version}"`,
+      )
       await writeAsJson(subPkgPath, {
         ...subPkg,
         bugs,

@@ -6,7 +6,7 @@
 <dt><a href="#module_default">default</a></dt>
 <dd><p>Default exports</p>
 </dd>
-<dt><a href="#module_the-jitter">the-jitter</a></dt>
+<dt><a href="#module_@the-/jitter">@the-/jitter</a></dt>
 <dd><p>Random delay timer</p>
 </dd>
 </dl>
@@ -31,9 +31,9 @@
 ## default
 Default exports
 
-<a name="module_the-jitter"></a>
+<a name="module_@the-/jitter"></a>
 
-## the-jitter
+## @the-/jitter
 Random delay timer
 
 <a name="TheJitter"></a>

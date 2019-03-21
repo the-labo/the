@@ -1,7 +1,7 @@
 {
   "name": "@the-/cache",
   "description": "Cache manager of the-frameworks",
-  "version": "15.0.2",
+  "version": "15.0.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",

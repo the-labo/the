@@ -67,9 +67,9 @@ Usage
 ```javascript
 'use strict'
 
-const {parse} = require('the-ast')
+const { parse } = require('the-ast')
 
-async function tryExample () {
+async function tryExample() {
   const ast = parse(`const a = 1 + 2`)
 }
 
@@ -88,7 +88,7 @@ tryExample().catch((err) => console.error(err))
 
 - [analyzer](./doc/api/api.md#module_analyzer)
 - [finder](./doc/api/api.md#module_finder)
-- [the-ast](./doc/api/api.md#module_the-ast)
+- [@the-/ast](./doc/api/api.md#module_@the-/ast)
 - [constants](./doc/api/api.md#module_constants)
 
 

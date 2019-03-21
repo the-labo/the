@@ -13,9 +13,9 @@
     "order": 1
   },
   {
-    "id": "module:the-jitter",
-    "longname": "module:the-jitter",
-    "name": "the-jitter",
+    "id": "module:@the-/jitter",
+    "longname": "module:@the-/jitter",
+    "name": "@the-/jitter",
     "kind": "module",
     "description": "Random delay timer",
     "meta": {
@@ -103,7 +103,7 @@
     "memberof": "TheJitter",
     "params": [],
     "meta": {
-      "lineno": 30,
+      "lineno": 27,
       "filename": "TheJitter.js",
       "path": "/Users/okuni/Projects/the/packages/jitter/lib"
     },
@@ -119,7 +119,7 @@
     "memberof": "TheJitter",
     "params": [],
     "meta": {
-      "lineno": 47,
+      "lineno": 42,
       "filename": "TheJitter.js",
       "path": "/Users/okuni/Projects/the/packages/jitter/lib"
     },
@@ -135,7 +135,7 @@
     "memberof": "TheJitter",
     "params": [],
     "meta": {
-      "lineno": 66,
+      "lineno": 61,
       "filename": "TheJitter.js",
       "path": "/Users/okuni/Projects/the/packages/jitter/lib"
     },
@@ -169,7 +169,7 @@
       }
     ],
     "meta": {
-      "lineno": 75,
+      "lineno": 70,
       "filename": "TheJitter.js",
       "path": "/Users/okuni/Projects/the/packages/jitter/lib"
     },
@@ -195,7 +195,7 @@
       }
     ],
     "meta": {
-      "lineno": 90,
+      "lineno": 85,
       "filename": "TheJitter.js",
       "path": "/Users/okuni/Projects/the/packages/jitter/lib"
     },
