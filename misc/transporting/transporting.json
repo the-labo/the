@@ -142,5 +142,17 @@
   "the-code": {
     "kind": "lib",
     "name": "code"
+  },
+  "the-file-util": {
+    "kind": "util",
+    "name": "util-file"
+  },
+  "the-site-util": {
+    "kind": "util",
+    "name": "util-site"
+  },
+  "the-sw-util": {
+    "kind": "util",
+    "name": "util-sw"
   }
 }

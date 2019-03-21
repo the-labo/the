@@ -66,7 +66,7 @@
 <dt><a href="#Stream">Stream(config)</a> ⇒ <code>Object</code></dt>
 <dd><p>Stream</p>
 </dd>
-<dt><a href="#templates">templates()</a> ⇒ <code>Object</code></dt>
+<dt><del><a href="#templates">templates()</a> ⇒ <code>Object</code></del></dt>
 <dd><p>Define coz bud for templates</p>
 </dd>
 <dt><a href="#test">test()</a> ⇒ <code>Object</code></dt>
@@ -79,9 +79,6 @@
 </dd>
 <dt><a href="#View">View(config)</a> ⇒ <code>Object</code></dt>
 <dd><p>View</p>
-</dd>
-<dt><a href="#Wrap">Wrap(config)</a> ⇒ <code>Object</code></dt>
-<dd><p>Wrap</p>
 </dd>
 </dl>
 
@@ -277,7 +274,9 @@ Stream
 
 <a name="templates"></a>
 
-## templates() ⇒ <code>Object</code>
+## ~~templates() ⇒ <code>Object</code>~~
+***Deprecated***
+
 Define coz bud for templates
 
 **Kind**: global function  
@@ -306,17 +305,6 @@ Error page
 
 ## View(config) ⇒ <code>Object</code>
 View
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| config | <code>Object</code> | 
-
-<a name="Wrap"></a>
-
-## Wrap(config) ⇒ <code>Object</code>
-Wrap
 
 **Kind**: global function  
 

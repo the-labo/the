@@ -12,7 +12,7 @@ const pkg = require('../package')
 const theScriptTest = require('../lib')
 
 program
-  .version(pkg[ 'version' ])
+  .version(pkg['version'])
   .usage('[options] <dirname> ')
   .description(pkg[ 'description' ])
 program.parse(process.argv)

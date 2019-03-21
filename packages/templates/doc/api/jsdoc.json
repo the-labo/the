@@ -704,6 +704,7 @@
         }
       }
     ],
+    "deprecated": true,
     "meta": {
       "lineno": 1,
       "filename": "templates.js",
@@ -812,39 +813,6 @@
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
     "order": 26
-  },
-  {
-    "id": "Wrap",
-    "longname": "Wrap",
-    "name": "Wrap",
-    "kind": "function",
-    "scope": "global",
-    "description": "Wrap",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "name": "config"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        }
-      }
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "Wrap.js",
-      "path": "/Users/okuni/Projects/the/packages/templates/lib"
-    },
-    "order": 27
   },
   {
     "id": "module:ape-tmpl/lib.binBud",

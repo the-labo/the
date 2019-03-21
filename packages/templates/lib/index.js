@@ -16,7 +16,6 @@ const Stateful_ = require('./Stateful')
 const Stateless_ = require('./Stateless')
 const Stream_ = require('./Stream')
 const View_ = require('./View')
-const Wrap_ = require('./Wrap')
 const bin_ = require('./bin')
 const dir_ = require('./dir')
 const errorPage_ = require('./errorPage')
@@ -45,7 +44,6 @@ exports.Stateful = Stateful_
 exports.Stateless = Stateless_
 exports.Stream = Stream_
 exports.View = View_
-exports.Wrap = Wrap_
 exports.bin = bin_
 exports.dir = dir_
 exports.errorPage = errorPage_
@@ -74,7 +72,6 @@ module.exports = {
   Stateless: Stateless_,
   Stream: Stream_,
   View: View_,
-  Wrap: Wrap_,
   bin: bin_,
   dir: dir_,
   errorPage: errorPage_,

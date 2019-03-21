@@ -3,10 +3,10 @@
  */
 'use strict'
 
-const { readmeMdBud } = require('ape-tmpl')
+const { Readme } = require('@the-/templates')
 const pkg = require('./package')
 
-module.exports = readmeMdBud({
+module.exports = Readme({
   badges: { npm: true },
   links: require('./doc/links'),
   overview: 'doc/overview.md',
@@ -14,16 +14,17 @@ module.exports = readmeMdBud({
   repo: pkg.repository,
   sections: 'doc/readme/*.md.hbs',
   vars: {
-    jsdoc: require('./doc/api/jsdoc').reduce(
-      (reduced, item) => ({
+    jsdoc: require('./doc/api/jsdoc').reduce((reduced, item) => {
+      const { kind } = item
+      const items = reduced.hasOwnProperty(kind) ? reduced[kind] : []
+      return {
         ...reduced,
-        [item.kind]: [...(reduced[item.kind] || []), item],
-      }),
-      {},
-    ),
+        [item.kind]: [...items, item],
+      }
+    }, {}),
   },
 })
 
 if (!module.parent) {
-  require('coz').render(__filename)
+  // require('coz').render(__filename)
 }

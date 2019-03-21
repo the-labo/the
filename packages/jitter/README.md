@@ -67,7 +67,7 @@ Usage
 ```javascript
 'use strict'
 
-const { TheJitter } = require('the-jitter')
+const { TheJitter } = require('@the-/jitter')
 
 async function tryExample() {
   const jitter = new TheJitter({

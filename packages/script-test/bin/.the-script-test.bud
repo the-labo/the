@@ -3,9 +3,9 @@
  */
 'use strict'
 
-const apeTmpl = require('ape-tmpl')
+const { bin } = require('@the-/templates')
 
-module.exports = apeTmpl.binBud({
+module.exports = bin({
   path: 'the-script-test',
   signature: require('../signature'),
 })

@@ -67,7 +67,7 @@ Usage
 ```javascript
 'use strict'
 
-const { TheRefresher } = require('the-refresher')
+const { TheRefresher } = require('@the-/refresher')
 
 async function tryExample() {
   const refresher = new TheRefresher(

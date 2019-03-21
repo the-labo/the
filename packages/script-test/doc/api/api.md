@@ -5,7 +5,7 @@
 ## @the-/script-test
 Test script for the-project
 
-**Version**: 15.0.1  
+**Version**: 15.0.3  
 <a name="module_@the-/script-test.test"></a>
 
 ### @the-/script-test.test([dirname], [options]) ⇒ <code>Promise</code>

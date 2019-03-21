@@ -5,11 +5,12 @@
 const aglob = require('aglob')
 const path = require('path')
 const transporting = require('./transporting')
+const pkg = require('../../package')
 
-const baseDir = `${__dirname}/../../..`
+const baseDir = `${__dirname}/../..`
 process.chdir(baseDir)
 
-const pkg = require('../../../package')(async () => {
+;(async () => {
   for (const pkgPath of await aglob(
     path.resolve(baseDir, 'packages/*/package.json'),
   )) {

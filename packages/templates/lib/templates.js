@@ -1,5 +1,6 @@
 /**
  * Define coz bud for templates
+ * @deprecated
  * @function templates
  * @returns {Object}
  */

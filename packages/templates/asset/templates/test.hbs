@@ -7,7 +7,6 @@
 import {{name}} from '{{{relative}}}'
 import React from 'react'
 import { ok, equal } from 'assert'
-import { render } from 'the-script-test'
 
 describe('{{spinalcase name}}', () => {
   before(() => {
@@ -16,11 +15,8 @@ describe('{{spinalcase name}}', () => {
   after(() => {
   })
 
-  it('Render a component', () => {
-    let element = render(
-       <{{pascalcase name}} />
-    )
-    ok(element)
+  it('Do test', () => {
+    ok({{name}})
   })
 })
 

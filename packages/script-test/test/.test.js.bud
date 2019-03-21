@@ -3,9 +3,10 @@
  */
 'use strict'
 
-const { mochaTestJsBud } = require('ape-tmpl')
+const { test } = require('@the-/templates')
 
-module.exports = mochaTestJsBud({
+module.exports = test({
+  cjs: true,
   dest: __dirname,
   src: [`${__dirname}/../lib/**/*.js`],
 })
