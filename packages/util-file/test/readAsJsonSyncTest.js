@@ -4,20 +4,16 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const readAsJsonSync = require('../lib/readAsJsonSync')
-const {ok, equal} = require('assert')
 
 describe('read-as-json-sync', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
-    ok(
-      readAsJsonSync(require.resolve('../package.json'))
-    )
+    ok(readAsJsonSync(require.resolve('../package.json')))
   })
 })
 

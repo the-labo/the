@@ -1,0 +1,197 @@
+[
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/seal/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/seal",
+    "longname": "module:@the-/seal",
+    "name": "@the-/seal",
+    "kind": "module",
+    "description": "Encrypt json object with master password",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/seal/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheSeal()",
+    "longname": "TheSeal",
+    "name": "TheSeal",
+    "kind": "constructor",
+    "description": "Seal handler",
+    "memberof": "TheSeal",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Secret password",
+        "name": "secret"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "'sha512'",
+        "description": "Hash algorithm",
+        "name": "options.algorithm"
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "TheSeal",
+    "longname": "TheSeal",
+    "name": "TheSeal",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheSeal.js",
+      "path": "/Users/okuni/Projects/the/packages/seal/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheSeal instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheSeal"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/seal/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheSeal#seal",
+    "longname": "TheSeal#seal",
+    "name": "seal",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Seal values",
+    "memberof": "TheSeal",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "values"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "seal string"
+      }
+    ],
+    "meta": {
+      "lineno": 28,
+      "filename": "TheSeal.js",
+      "path": "/Users/okuni/Projects/the/packages/seal/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheSeal#verify",
+    "longname": "TheSeal#verify",
+    "name": "verify",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Verify sealed",
+    "memberof": "TheSeal",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Seal string",
+        "name": "sealString"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Values to verify",
+        "name": "values"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Boolean"
+          ]
+        },
+        "description": "Valid or not"
+      }
+    ],
+    "meta": {
+      "lineno": 42,
+      "filename": "TheSeal.js",
+      "path": "/Users/okuni/Projects/the/packages/seal/lib"
+    },
+    "order": 6
+  }
+]

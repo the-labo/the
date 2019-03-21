@@ -63,6 +63,7 @@ var/
 /packages/templates/lib/eslintignore.js
 /packages/templates/lib/index.js
 /packages/url/lib/index.js
+/packages/util-file/lib/index.js
 /packages/window/lib/index.js
 
 # Other paths

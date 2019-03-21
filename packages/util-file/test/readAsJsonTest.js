@@ -4,20 +4,16 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const readAsJson = require('../lib/readAsJson')
-const { ok, strictEqual: equal, deepStrictEqual: deepEqual } = require('assert')
 
 describe('read-as-json', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
-    ok(
-      await readAsJson(require.resolve('../package.json'))
-    )
+    ok(await readAsJson(require.resolve('../package.json')))
   })
 })
 

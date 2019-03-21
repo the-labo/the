@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const statSync = require('../lib/statSync')
-const {ok, equal} = require('assert')
 
 describe('stat-sync', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(statSync(__filename))

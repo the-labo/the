@@ -1,0 +1,14 @@
+'use strict'
+
+const {dir} = require('the-templates')
+
+module.exports = dir({
+  name: 'mixins',
+  desc: 'Mix functions',
+  dirname: __dirname,
+  cjs: true
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

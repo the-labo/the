@@ -1,0 +1,40 @@
+'use strict'
+
+const faker = require('faker')
+
+const moduleNames = Object.keys(faker)
+  .filter((k) => ![
+    'locale', 'locales', 'localeFallback', 'fake', 'definitions', 'helpers'
+  ].includes(k))
+
+module.exports = {
+  force: true,
+  mode: '444',
+  data: {
+    embeds: moduleNames.reduce((embeds, moduleName) => {
+      const module = faker[moduleName]
+      return [
+        ...embeds,
+        ...Object.keys(module).map((methodName) => ({
+          embed: `${moduleName}.${methodName}`,
+          results: new Array(3)
+            .fill(null)
+            .map(() => faker[moduleName][methodName]())
+            .filter(Boolean)
+            .map((v) => {
+              let str = JSON.stringify(v)
+              if (str.length > 255) {
+                str = str.substr(0, 255) + '...'
+              }
+              return str
+            })
+            .join(', ')
+        }))
+      ]
+    }, [])
+  }
+}
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

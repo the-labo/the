@@ -143,6 +143,26 @@
     "kind": "lib",
     "name": "code"
   },
+  "the-seat": {
+    "kind": "lib",
+    "name": "seat"
+  },
+  "the-seed": {
+    "kind": "lib",
+    "name": "seed"
+  },
+  "the-support": {
+    "kind": "lib",
+    "name": "support"
+  },
+  "the-setting": {
+    "kind": "lib",
+    "name": "setting"
+  },
+  "the-seal": {
+    "kind": "lib",
+    "name": "seal"
+  },
   "the-file-util": {
     "kind": "util",
     "name": "util-file"

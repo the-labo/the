@@ -1,0 +1,144 @@
+[
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/seed/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:the-seed",
+    "longname": "module:the-seed",
+    "name": "the-seed",
+    "kind": "module",
+    "description": "Data generator for the-db",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/seed/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheSeed",
+    "longname": "TheSeed",
+    "name": "TheSeed",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheSeed.js",
+      "path": "/Users/okuni/Projects/the/packages/seed/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheSeed instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheSeed"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/seed/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheSeed#apply",
+    "longname": "TheSeed#apply",
+    "name": "apply",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Generate data with seed",
+    "memberof": "TheSeed",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "seed"
+      }
+    ],
+    "meta": {
+      "lineno": 36,
+      "filename": "TheSeed.js",
+      "path": "/Users/okuni/Projects/the/packages/seed/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheSeed#explode",
+    "longname": "TheSeed#explode",
+    "name": "explode",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Generate data with seed",
+    "memberof": "TheSeed",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "seed"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 10,
+        "name": "counts"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Array.<Object>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 46,
+      "filename": "TheSeed.js",
+      "path": "/Users/okuni/Projects/the/packages/seed/lib"
+    },
+    "order": 5
+  }
+]

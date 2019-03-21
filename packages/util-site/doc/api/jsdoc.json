@@ -1,0 +1,686 @@
+[
+  {
+    "id": "module:the-site-util",
+    "longname": "module:the-site-util",
+    "name": "the-site-util",
+    "kind": "module",
+    "description": "Utility for site",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "appendQueryToSearch",
+    "longname": "appendQueryToSearch",
+    "name": "appendQueryToSearch",
+    "kind": "function",
+    "scope": "global",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "query"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "appendQueryToSearch.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "countSuffix",
+    "longname": "countSuffix",
+    "name": "countSuffix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create count suffix strings",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "description": "Count",
+        "name": "count"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "- Suffix string"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "countSuffix.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "createStyleElement",
+    "longname": "createStyleElement",
+    "name": "createStyleElement",
+    "kind": "function",
+    "scope": "global",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "CSS String",
+        "name": "css"
+      },
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "createStyleElement.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "envOf",
+    "longname": "envOf",
+    "name": "envOf",
+    "kind": "function",
+    "scope": "global",
+    "description": "Get env variables",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "name - Name of env"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "name": "options.strict"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "envOf.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "hasMoreFor",
+    "longname": "hasMoreFor",
+    "name": "hasMoreFor",
+    "kind": "function",
+    "scope": "global",
+    "description": "Has more for counts",
+    "meta": {
+      "lineno": 1,
+      "filename": "hasMoreFor.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "isEmail",
+    "longname": "isEmail",
+    "name": "isEmail",
+    "kind": "function",
+    "scope": "global",
+    "description": "Check if is email",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "email"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "description": "Email or not"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "isEmail.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "isPhoneNumber",
+    "longname": "isPhoneNumber",
+    "name": "isPhoneNumber",
+    "kind": "function",
+    "scope": "global",
+    "description": "Check if is phone number",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "String value to check",
+        "name": "value"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "description": "Phone number or not"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "isPhoneNumber.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "formatString",
+    "longname": "formatString",
+    "name": "formatString",
+    "kind": "function",
+    "scope": "global",
+    "description": "Convert into japanese strings.\n英数字記号は半角、カナは全角へ",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        }
+      }
+    ],
+    "see": [
+      "https://gist.github.com/think49/964592/96c2d034ee07d6c2044e501d4e06b73a6a9e1c72"
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "normalizeString.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 8
+  },
+  {
+    "id": "queryFromSearch",
+    "longname": "queryFromSearch",
+    "name": "queryFromSearch",
+    "kind": "function",
+    "scope": "global",
+    "description": "Get query from search",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "search"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "queryFromSearch.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 9
+  },
+  {
+    "id": "refOf",
+    "longname": "refOf",
+    "name": "refOf",
+    "kind": "function",
+    "scope": "global",
+    "description": "Convert into ref",
+    "meta": {
+      "lineno": 1,
+      "filename": "refOf.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 10
+  },
+  {
+    "id": "scrollToElement",
+    "longname": "scrollToElement",
+    "name": "scrollToElement",
+    "kind": "function",
+    "scope": "global",
+    "description": "Scroll to DOM element",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string",
+            "HTMLDOMElement"
+          ]
+        },
+        "description": "Element or it's selector",
+        "name": "element"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "scrollToElement.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 11
+  },
+  {
+    "id": "seatAccess",
+    "longname": "seatAccess",
+    "name": "seatAccess",
+    "kind": "function",
+    "scope": "global",
+    "description": "Provide seat access functions",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "deprecated": "Use `the-seat/handy/seatAccess` instead",
+    "meta": {
+      "lineno": 1,
+      "filename": "seatAccess.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 12
+  },
+  {
+    "id": "containerNameFor",
+    "longname": "containerNameFor",
+    "name": "containerNameFor",
+    "kind": "function",
+    "scope": "global",
+    "description": "Container name for",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "name"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "defaultvalue": 4,
+        "name": "bytes"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 18,
+      "filename": "seatAccess.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 13
+  },
+  {
+    "id": "networkNameFor",
+    "longname": "networkNameFor",
+    "name": "networkNameFor",
+    "kind": "function",
+    "scope": "global",
+    "description": "Network name for",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "name"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "defaultvalue": 4,
+        "name": "bytes"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 30,
+      "filename": "seatAccess.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 14
+  },
+  {
+    "id": "portNumberFor",
+    "longname": "portNumberFor",
+    "name": "portNumberFor",
+    "kind": "function",
+    "scope": "global",
+    "description": "Port number for",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "name"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 6000,
+        "description": "Base port number",
+        "name": "base"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 1,
+        "description": "Increment amount",
+        "name": "increment"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 43,
+      "filename": "seatAccess.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 15
+  },
+  {
+    "id": "portNumberRangeFor",
+    "longname": "portNumberRangeFor",
+    "name": "portNumberRangeFor",
+    "kind": "function",
+    "scope": "global",
+    "description": "Port numbers with range",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "name"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 22000,
+        "description": "Base port number",
+        "name": "base"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "description": "Range length",
+        "name": "length"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Array.<number>"
+          ]
+        },
+        "description": "Min and max number"
+      }
+    ],
+    "meta": {
+      "lineno": 53,
+      "filename": "seatAccess.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 16
+  },
+  {
+    "id": "processNameFor",
+    "longname": "processNameFor",
+    "name": "processNameFor",
+    "kind": "function",
+    "scope": "global",
+    "description": "Process name for",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "name"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "defaultvalue": 4,
+        "name": "bytes"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 73,
+      "filename": "seatAccess.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 17
+  },
+  {
+    "id": "secretFor",
+    "longname": "secretFor",
+    "name": "secretFor",
+    "kind": "function",
+    "scope": "global",
+    "description": "Secret value for",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "name"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "defaultvalue": 12,
+        "name": "bytes"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 85,
+      "filename": "seatAccess.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 18
+  },
+  {
+    "id": "userNameFor",
+    "longname": "userNameFor",
+    "name": "userNameFor",
+    "kind": "function",
+    "scope": "global",
+    "description": "User name for",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "name"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "defaultvalue": 4,
+        "name": "bytes"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 97,
+      "filename": "seatAccess.js",
+      "path": "/Users/okuni/Projects/the/packages/util-site/lib"
+    },
+    "order": 19
+  }
+]

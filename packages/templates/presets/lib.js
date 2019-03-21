@@ -9,9 +9,18 @@ const path = require('path')
 const { Readme, dir, test } = require('../lib')
 
 exports.Readme = (dirname) => {
-  const pkg = require(path.resolve(dirname, 'package.json'))
-  const links = require(path.resolve(dirname, './doc/links'))
-  const jsdoc = require(path.resolve(dirname, './doc/api/jsdoc'))
+
+  const requireIfPossible = (id) => {
+    try {
+      return require(id)
+    } catch (e) {
+      return null
+    }
+  }
+
+  const pkg = requireIfPossible(path.resolve(dirname, 'package.json'))
+  const links = requireIfPossible(path.resolve(dirname, './doc/links'))
+  const jsdoc = requireIfPossible(path.resolve(dirname, './doc/api/jsdoc'))
   return Readme({
     badges: { npm: true },
     links: links,

@@ -5,18 +5,15 @@
 'use strict'
 
 const writeAsJson = require('../lib/writeAsJson')
-const { ok, strictEqual: equal, deepStrictEqual: deepEqual } = require('assert')
 
 describe('write-as-json', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     const obj = {
-      'foo': 'bar'
+      foo: 'bar',
     }
     obj.x = 2
     obj.a = 1

@@ -9,7 +9,6 @@ const pkg = require('../../package')
 
 const baseDir = `${__dirname}/../..`
 process.chdir(baseDir)
-
 ;(async () => {
   for (const pkgPath of await aglob(
     path.resolve(baseDir, 'packages/*/package.json'),

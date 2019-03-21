@@ -1,0 +1,81 @@
+[
+  {
+    "id": "module:the-support",
+    "longname": "module:the-support",
+    "name": "the-support",
+    "kind": "module",
+    "description": "JS support version checker",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/support/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheSupport()",
+    "longname": "TheSupport",
+    "name": "TheSupport",
+    "kind": "constructor",
+    "memberof": "TheSupport",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Filename pattern",
+        "name": "pattern"
+      }
+    ],
+    "order": 3
+  },
+  {
+    "id": "TheSupport",
+    "longname": "TheSupport",
+    "name": "TheSupport",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheSupport.js",
+      "path": "/Users/okuni/Projects/the/packages/support/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheSupport instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheSupport"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/support/lib"
+    },
+    "order": 0
+  }
+]

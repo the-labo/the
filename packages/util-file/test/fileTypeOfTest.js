@@ -4,23 +4,19 @@
  */
 'use strict'
 
+const { deepEqual } = require('assert')
 const fileTypeOf = require('../lib/fileTypeOf')
-const { ok, deepEqual } = require('assert')
 
 describe('file-type-of', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
-    deepEqual(
-      await fileTypeOf(
-        `${__dirname}/../misc/mocks/mock-png.png`
-      ),
-      { ext: 'png', mime: 'image/png' },
-    )
+    deepEqual(await fileTypeOf(`${__dirname}/../misc/mocks/mock-png.png`), {
+      ext: 'png',
+      mime: 'image/png',
+    })
   })
 })
 

@@ -5,18 +5,15 @@
 'use strict'
 
 const writeAsJsonSync = require('../lib/writeAsJsonSync')
-const { ok, equal } = require('assert')
 
 describe('write-as-json-sync', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     const obj = {
-      'foo': 'bar'
+      foo: 'bar',
     }
     obj.x = 2
     obj.a = 1
@@ -25,7 +22,7 @@ describe('write-as-json-sync', () => {
 
   it('JSON5', () => {
     writeAsJsonSync(`${__dirname}/../tmp/hoge.json5`, {
-      'foo': 'bar'
+      foo: 'bar',
     })
   })
 })

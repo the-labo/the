@@ -5,19 +5,16 @@
 'use strict'
 
 const copyAsJsonSync = require('../lib/copyAsJsonSync')
-const {ok, equal} = require('assert')
 
 describe('copy-as-json-sync', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     copyAsJsonSync(
       require.resolve('../package.json'),
-      `${__dirname}/../tmp/hoge/hoge/e.json`
+      `${__dirname}/../tmp/hoge/hoge/e.json`,
     )
   })
 })

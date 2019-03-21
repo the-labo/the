@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const isJSON5File = require('../lib/isJSON5File')
-const {ok, equal} = require('assert')
 
 describe('is-j-s-o-n5-file', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(isJSON5File('hoge.json5'))

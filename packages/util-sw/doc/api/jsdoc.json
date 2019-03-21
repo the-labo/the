@@ -1,0 +1,126 @@
+[
+  {
+    "id": "module:the-sw-util",
+    "longname": "module:the-sw-util",
+    "name": "the-sw-util",
+    "kind": "module",
+    "description": "Utility for service workers",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/util-sw/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "appCache",
+    "longname": "appCache",
+    "name": "appCache",
+    "kind": "function",
+    "scope": "global",
+    "description": "Get app cache from WorkerGlobalScope",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Name of app",
+        "name": "name"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "'unknown'",
+        "description": "Version of app",
+        "name": "version"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "appCache.js",
+      "path": "/Users/okuni/Projects/the/packages/util-sw/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "cachedFetch",
+    "longname": "cachedFetch",
+    "name": "cachedFetch",
+    "kind": "function",
+    "scope": "global",
+    "description": "Fetch with cache",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Cache"
+          ]
+        },
+        "name": "cache"
+      },
+      {
+        "type": {
+          "names": [
+            "Request"
+          ]
+        },
+        "name": "request"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "cachingFetch.js",
+      "path": "/Users/okuni/Projects/the/packages/util-sw/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "parseUrl",
+    "longname": "parseUrl",
+    "name": "parseUrl",
+    "kind": "function",
+    "scope": "global",
+    "description": "Parse url",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "urlString"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "URL"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "parseUrl.js",
+      "path": "/Users/okuni/Projects/the/packages/util-sw/lib"
+    },
+    "order": 3
+  }
+]

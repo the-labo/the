@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-file-util">the-file-util</a></dt>
+<dt><a href="#module_@the-/util-file">@the-/util-file</a></dt>
 <dd><p>File utility for the-framework</p>
 </dd>
 </dl>
@@ -36,9 +36,9 @@
 </dd>
 </dl>
 
-<a name="module_the-file-util"></a>
+<a name="module_@the-/util-file"></a>
 
-## the-file-util
+## @the-/util-file
 File utility for the-framework
 
 <a name="copyAsJsonSync"></a>

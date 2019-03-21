@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const sortProperties = require('../lib/helpers/sortProperties')
-const { ok, strictEqual: equal, deepStrictEqual: deepEqual } = require('assert')
-
 describe('sort-properties', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

@@ -1,8 +1,8 @@
 'use strict'
 
-const {readAsJsonSync, writeAsJsonSync} = require('the-file-util')
+const { readAsJsonSync } = require('@the-/util-file')
 
-async function tryExample () {
+async function tryExample() {
   const data = readAsJsonSync('conf/foo.json')
 }
 

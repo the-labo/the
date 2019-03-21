@@ -2,7 +2,6 @@
 
 'use strict'
 
-const baseDir = `${__dirname}/../..`
 const { copyAsync, copyDirAsync } = require('asfs')
 const { spawnSync } = require('child_process')
 const { chmod, readFile, stat, unlink, writeFile } = require('fs').promises
@@ -10,9 +9,9 @@ const path = require('path')
 const rimraf = require('rimraf')
 const transporting = require('./transporting')
 const pkg = require('../../package')
+const baseDir = `${__dirname}/../..`
 
 process.chdir(baseDir)
-
 ;(async () => {
   for (const [fromPkgName, { kind, name }] of Object.entries(transporting)) {
     const fromDir = path.resolve(baseDir, '..', fromPkgName)
@@ -54,7 +53,10 @@ ${msg}
     rimraf.sync(path.resolve(toDir, 'doc/guides'))
     await unlink(path.resolve(toDir, 'jsdoc.json')).catch(() => null)
     await unlink(path.resolve(toDir, '.gitignore')).catch(() => null)
-    await copyAsync(path.resolve(baseDir, '.npmignore'), path.resolve(toDir, '.npmignore'))
+    await copyAsync(
+      path.resolve(baseDir, '.npmignore'),
+      path.resolve(toDir, '.npmignore'),
+    )
 
     if (!/demo/.test(name)) {
       if (['lib', 'util'].includes(kind)) {
