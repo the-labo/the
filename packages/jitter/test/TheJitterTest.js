@@ -4,23 +4,20 @@
  */
 'use strict'
 
+const { equal, ok } = require('assert').strict
 const TheJitter = require('../lib/TheJitter')
-const { ok, equal } = require('assert').strict
-const asleep = require('asleep')
 
 describe('the-jitter', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     ok(TheJitter)
 
     const jitter = new TheJitter({
       max: 2,
-      maxInterval: 100
+      maxInterval: 100,
     })
     ok(jitter.durationToWait() === 0)
     jitter.incrementCount()

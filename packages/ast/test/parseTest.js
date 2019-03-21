@@ -4,19 +4,17 @@
  */
 'use strict'
 
-const parse = require('../lib/parse')
-const { ok, equal } = require('assert')
-const path = require('path')
-const fs = require('fs')
 const amkdirp = require('amkdirp')
+const { equal, ok } = require('assert')
+const fs = require('fs')
+const path = require('path')
+const parse = require('../lib/parse')
 
-describe('parse', function () {
+describe('parse', function() {
   this.timeout(3000)
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Simple obj', async () => {
     const parsed = parse(`
@@ -38,17 +36,17 @@ const { jj } = require('a/jj')
     equal(parsed.start, 0)
     const filename = `${__dirname}/../tmp/parseResult.json`
     await amkdirp(path.dirname(filename))
-    fs.writeFileSync(
-      filename,
-      JSON.stringify(parsed, null, 2)
-    )
+    fs.writeFileSync(filename, JSON.stringify(parsed, null, 2))
   })
 
   it('Executable', async () => {
-    const parsed = parse(`#!/usr/bin/env node
+    const parsed = parse(
+      `#!/usr/bin/env node
     
     console.log('!hey')
-    `, {})
+    `,
+      {},
+    )
     ok(parsed)
   })
 

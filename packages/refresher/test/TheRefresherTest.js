@@ -4,24 +4,19 @@
  */
 'use strict'
 
-const TheRefresher = require('../lib/TheRefresher')
-const {ok, equal} = require('assert')
 const asleep = require('asleep')
+const { ok } = require('assert')
+const TheRefresher = require('../lib/TheRefresher')
 
 describe('the-refresher', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     ok(TheRefresher)
 
-    const refresher = new TheRefresher(
-      (v) => console.log(v),
-      {interval: 10}
-    )
+    const refresher = new TheRefresher((v) => console.log(v), { interval: 10 })
 
     refresher.start()
     refresher.request('hoge')
@@ -31,7 +26,6 @@ describe('the-refresher', () => {
     await asleep(100)
     ok(!refresher.has('hoge'))
     refresher.stop()
-
   })
 })
 

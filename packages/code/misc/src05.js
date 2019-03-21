@@ -26,11 +26,11 @@ const icon = require('pon-task-icon')
 const md = require('pon-task-md')
 const pm2 = require('pon-task-pm2')
 const { browser, ccjs, css, map, react } = require('pon-task-web')
-const theAssets = require('@the-/assets')
-const { isProduction } = require('@the-/check')
 const theCode = require('the-code/pon')
 const theLint = require('the-lint/pon')
 const thePS = require('the-ps/pon')
+const theAssets = require('@the-/assets')
+const { isProduction } = require('@the-/check')
 const { Urls, locales } = require('./conf')
 const Local = require('./Local')
 const ExternalIgnorePatch = require('./misc/browser/ExternalIgnorePatch')
@@ -239,9 +239,9 @@ module.exports = pon(
       {
         'Local.js': 'node_modules/@self/Local.js',
         'assets/data': 'node_modules/@self/data',
-        client: 'node_modules/@self/client',
         'shim/conf': 'node_modules/@self/conf',
         'shim/utils': 'node_modules/@self/utils',
+        client: 'node_modules/@self/client',
       },
       { force: true },
     ),

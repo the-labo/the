@@ -4,16 +4,14 @@
  */
 'use strict'
 
+const { equal } = require('assert').strict
 const finder = require('../lib/finder')
 const parse = require('../lib/parse')
-const { ok, equal, deepEqual } = require('assert').strict
 
 describe('finder', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     const node = parse(`

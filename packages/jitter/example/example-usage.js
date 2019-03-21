@@ -2,13 +2,13 @@
 
 const { TheJitter } = require('the-jitter')
 
-async function tryExample () {
+async function tryExample() {
   const jitter = new TheJitter({
     maxCount: 100,
     maxInterval: 1000,
   })
 
-  async function doSomething (i) {
+  async function doSomething(i) {
     console.log('Method called', i)
     const at = new Date()
     await jitter.handle(async () => {

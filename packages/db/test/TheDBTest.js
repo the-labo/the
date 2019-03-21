@@ -6,11 +6,11 @@
 
 const asleep = require('asleep')
 const { deepEqual, equal, ok } = require('assert').strict
-const { TheRefresher } = require('@the-/refresher')
 const {
   DataTypes: { ENTITY, STRING },
   TheResource,
 } = require('the-resource-base')
+const { TheRefresher } = require('@the-/refresher')
 const TheDB = require('../lib/TheDB')
 
 describe('the-db', function() {

@@ -17,8 +17,8 @@ const {
 } = require('bredux')
 const { get } = require('bwindow')
 const { flatten } = require('objnest')
-const { scopes } = require('@the-/scope')
 const { unlessProduction } = require('@the-/check')
+const { scopes } = require('@the-/scope')
 const helpers = require('./helpers')
 const toStoreScopeClass = require('./toStoreScopeClass')
 

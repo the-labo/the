@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const NodeTypes = require('../lib/constants/NodeTypes')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('node-types', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

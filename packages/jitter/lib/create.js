@@ -9,7 +9,7 @@
 const TheJitter = require('./TheJitter')
 
 /** @lends create */
-function create (...args) {
+function create(...args) {
   return new TheJitter(...args)
 }
 

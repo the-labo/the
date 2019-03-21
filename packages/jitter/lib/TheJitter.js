@@ -11,10 +11,7 @@ const debug = require('debug')('the:jitter')
 /** @lends TheJitter */
 class TheJitter {
   constructor(options = {}) {
-    const {
-      max = 100,
-      maxInterval = 1000,
-    } = options
+    const { max = 100, maxInterval = 1000 } = options
     this.maxCount = max
     this.maxInterval = maxInterval
     this[COUNT] = 0
@@ -36,9 +33,7 @@ class TheJitter {
     if (count <= 0) {
       return 0
     }
-    return Math.floor(
-      Math.random() * count * this.maxInterval
-    )
+    return Math.floor(Math.random() * count * this.maxInterval)
   }
 
   /**

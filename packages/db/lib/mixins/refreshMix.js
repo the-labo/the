@@ -7,8 +7,8 @@
 
 const asleep = require('asleep')
 const { parse: parseEntityRef } = require('clay-resource-ref')
-const { TheRefresher } = require('@the-/refresher')
 const { unlessProduction } = require('@the-/check')
+const { TheRefresher } = require('@the-/refresher')
 
 const assertIsRef = (ref) => {
   const type = typeof ref

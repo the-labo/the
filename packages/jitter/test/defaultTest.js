@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const default_ = require('../lib/default')
-const { ok, equal } = require('assert')
-
 describe('default', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

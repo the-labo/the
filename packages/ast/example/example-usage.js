@@ -1,8 +1,8 @@
 'use strict'
 
-const {parse} = require('the-ast')
+const { parse } = require('the-ast')
 
-async function tryExample () {
+async function tryExample() {
   const ast = parse(`const a = 1 + 2`)
 }
 

@@ -4,11 +4,11 @@ const t = require('@babel/types')
 console.log(JSON.stringify(t.VISITOR_KEYS, null, 4))
 
 module.exports = {
-  force: true,
-  mode: '444',
   data: {
     types: Object.keys(t.VISITOR_KEYS),
-  }
+  },
+  force: true,
+  mode: '444',
 }
 
 if (!module.parent) {

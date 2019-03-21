@@ -67,7 +67,7 @@ Usage
 ```javascript
 'use strict'
 
-const { TheCode } = require('the-code')
+const { TheCode } = require('@the-/code')
 
 async function tryExample() {
   const theCode = new TheCode()

@@ -8,13 +8,11 @@ const { chmod, readFile, stat, unlink, writeFile } = require('fs').promises
 const path = require('path')
 const rimraf = require('rimraf')
 const transporting = require('./transporting')
-
-const baseDir = `${__dirname}/../..`
-process.chdir(baseDir)
-
 const pkg = require('../../package')
 
-;(async () => {
+process.chdir(baseDir)
+
+const baseDir = `${__dirname}/../..`(async () => {
   for (const [fromPkgName, { kind, name }] of Object.entries(transporting)) {
     const fromDir = path.resolve(baseDir, '..', fromPkgName)
     const toDir = path.resolve(baseDir, 'packages', name)
