@@ -23,19 +23,19 @@ function pkgSync(src, targets) {
     )
     logger.trace(
       `Package inf to sync:\n` +
-      JSON.stringify(
-        {
-          bugs,
-          engines,
-          homepage,
-          license,
-          publishConfig,
-          repository,
-          version,
-        },
-        null,
-        2,
-      ),
+        JSON.stringify(
+          {
+            bugs,
+            engines,
+            homepage,
+            license,
+            publishConfig,
+            repository,
+            version,
+          },
+          null,
+          2,
+        ),
     )
     for (const subPkgPath of subPkgPaths) {
       const subPkg = require(subPkgPath)
@@ -46,7 +46,7 @@ function pkgSync(src, targets) {
       logger.notice(
         `[${path.relative(process.cwd(), subPkgPath)}] Update version "${
           subPkg.version
-          }" -> "${version}"`,
+        }" -> "${version}"`,
       )
       for (const [name, version] of Object.entries(subPkg.dependencies || {})) {
         if (/^file:\.\.\//.test(version)) {
