@@ -1,6 +1,6 @@
 'use strict'
 
-const { TheDB } = require('the-db')
+const { TheDB } = require('@the-/db')
 
 // Using sqlite
 {

@@ -58,6 +58,7 @@ root for the-project
 - [check](./packages/check)
 - [client](./packages/client)
 - [code](./packages/code)
+- [component-demo](./packages/component-demo)
 - [context](./packages/context)
 - [controller](./packages/controller)
 - [date](./packages/date)

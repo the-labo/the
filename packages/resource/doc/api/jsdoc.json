@@ -1,0 +1,590 @@
+[
+  {
+    "id": "module:DataTypes",
+    "longname": "module:DataTypes",
+    "name": "DataTypes",
+    "kind": "module",
+    "description": "Data types",
+    "meta": {
+      "lineno": 1,
+      "filename": "DataTypes.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "module:the-resource-base",
+    "longname": "module:the-resource-base",
+    "name": "the-resource-base",
+    "kind": "module",
+    "description": "Base of the-resource",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "module:mixins",
+    "longname": "module:mixins",
+    "name": "mixins",
+    "kind": "module",
+    "description": "Mixins",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+    },
+    "order": 15
+  },
+  {
+    "id": "TheResource()",
+    "longname": "TheResource",
+    "name": "TheResource",
+    "kind": "constructor",
+    "description": "Resource for the DB",
+    "memberof": "TheResource",
+    "order": 7
+  },
+  {
+    "id": "TheResource",
+    "longname": "TheResource",
+    "name": "TheResource",
+    "kind": "class",
+    "scope": "global",
+    "augments": [
+      "ClayResource",
+      "ListenMixed"
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "TheResource.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheResource instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheResource"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "isResourceClass",
+    "longname": "isResourceClass",
+    "name": "isResourceClass",
+    "kind": "function",
+    "scope": "global",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Boolean"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "isResourceClass.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "isResourceClass",
+    "longname": "isResourceClass",
+    "name": "isResourceClass",
+    "kind": "function",
+    "scope": "global",
+    "description": "Detect is a resource class",
+    "params": [
+      {
+        "name": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 13,
+      "filename": "isResourceClass.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "listenMix",
+    "longname": "listenMix",
+    "name": "listenMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixins for listen",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "listenMix.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+    },
+    "order": 16
+  },
+  {
+    "id": "listenToCreate",
+    "longname": "listenToCreate",
+    "name": "listenToCreate",
+    "kind": "function",
+    "scope": "global",
+    "description": "Listen to create",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "onCreate"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "close function"
+      }
+    ],
+    "meta": {
+      "lineno": 74,
+      "filename": "listenMix.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+    },
+    "order": 17
+  },
+  {
+    "id": "listenToDestroy",
+    "longname": "listenToDestroy",
+    "name": "listenToDestroy",
+    "kind": "function",
+    "scope": "global",
+    "description": "Listen to destroy",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "onDestroy"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "close function"
+      }
+    ],
+    "meta": {
+      "lineno": 98,
+      "filename": "listenMix.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+    },
+    "order": 18
+  },
+  {
+    "id": "listenToDrop",
+    "longname": "listenToDrop",
+    "name": "listenToDrop",
+    "kind": "function",
+    "scope": "global",
+    "description": "Listen to drop",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "onDrop"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "close function"
+      }
+    ],
+    "meta": {
+      "lineno": 135,
+      "filename": "listenMix.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+    },
+    "order": 19
+  },
+  {
+    "id": "listenToUpdate",
+    "longname": "listenToUpdate",
+    "name": "listenToUpdate",
+    "kind": "function",
+    "scope": "global",
+    "description": "Listen to update",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "onUpdate"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "close function"
+      }
+    ],
+    "meta": {
+      "lineno": 149,
+      "filename": "listenMix.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+    },
+    "order": 20
+  },
+  {
+    "id": "queueMix",
+    "longname": "queueMix",
+    "name": "queueMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixin for queue",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "queueMix.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+    },
+    "order": 21
+  },
+  {
+    "id": "writeOnceMix",
+    "longname": "writeOnceMix",
+    "name": "writeOnceMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixin for writeOnce",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "writeOnceMix.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+    },
+    "order": 22
+  },
+  {
+    "id": "TheResource#refOf",
+    "longname": "TheResource#refOf",
+    "name": "refOf",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get ref of id",
+    "memberof": "TheResource",
+    "params": [
+      {
+        "description": "Id (or may be an entity)",
+        "name": "id"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string",
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 52,
+      "filename": "TheResource.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+    },
+    "order": 9
+  },
+  {
+    "id": "TheResource#emptyList",
+    "longname": "TheResource#emptyList",
+    "name": "emptyList",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Create empty list",
+    "memberof": "TheResource",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<lib.Collection>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 67,
+      "filename": "TheResource.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+    },
+    "async": true,
+    "order": 10
+  },
+  {
+    "id": "TheResource#invalidated",
+    "longname": "TheResource#invalidated",
+    "name": "invalidated",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get invalidated attributes",
+    "memberof": "TheResource",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "attributes"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Object>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 76,
+      "filename": "TheResource.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+    },
+    "async": true,
+    "order": 11
+  },
+  {
+    "id": "TheResource#refresh",
+    "longname": "TheResource#refresh",
+    "name": "refresh",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Refresh clay entity",
+    "memberof": "TheResource",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Entity"
+          ]
+        },
+        "name": "entity"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 85,
+      "filename": "TheResource.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+    },
+    "async": true,
+    "order": 12
+  },
+  {
+    "id": "TheResource#refreshAll",
+    "longname": "TheResource#refreshAll",
+    "name": "refreshAll",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Refresh all",
+    "memberof": "TheResource",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 112,
+      "filename": "TheResource.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+    },
+    "async": true,
+    "order": 13
+  },
+  {
+    "id": "TheResource#resaveAll",
+    "longname": "TheResource#resaveAll",
+    "name": "resaveAll",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Resave all",
+    "memberof": "TheResource",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 122,
+      "filename": "TheResource.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+    },
+    "async": true,
+    "order": 14
+  },
+  {
+    "id": "TheResource.cascaded",
+    "longname": "TheResource.cascaded",
+    "name": "cascaded",
+    "kind": "member",
+    "scope": "static",
+    "description": "Cascade destroy condition",
+    "memberof": "TheResource",
+    "params": [],
+    "examples": [
+      "get cascaded () {\n  return { User: (ref) => ({user: {$ref: ref}}) }\n}"
+    ],
+    "meta": {
+      "lineno": 27,
+      "filename": "TheResource.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+    },
+    "order": 8
+  }
+]

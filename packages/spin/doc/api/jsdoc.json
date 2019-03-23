@@ -1,0 +1,104 @@
+[
+  {
+    "id": "module:@the-/spin",
+    "longname": "module:@the-/spin",
+    "name": "@the-/spin",
+    "kind": "module",
+    "description": "Spin of the-components",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/spin/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheSpin",
+    "longname": "TheSpin",
+    "name": "TheSpin",
+    "kind": "class",
+    "scope": "global",
+    "description": "Spin of the-components",
+    "meta": {
+      "lineno": 28,
+      "filename": "TheSpin.jsx",
+      "path": "/Users/okuni/Projects/the/packages/spin/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheSpinStyle",
+    "longname": "TheSpinStyle",
+    "name": "TheSpinStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheSpin",
+    "params": [],
+    "meta": {
+      "lineno": 10,
+      "filename": "TheSpinStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/spin/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheSpin.propTypes.cover",
+    "longname": "TheSpin.propTypes.cover",
+    "name": "cover",
+    "kind": "member",
+    "scope": "static",
+    "description": "show as cover",
+    "memberof": "TheSpin.propTypes",
+    "meta": {
+      "lineno": 58,
+      "filename": "TheSpin.jsx",
+      "path": "/Users/okuni/Projects/the/packages/spin/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheSpin.propTypes.size",
+    "longname": "TheSpin.propTypes.size",
+    "name": "size",
+    "kind": "member",
+    "scope": "static",
+    "description": "Size of spinner icon",
+    "memberof": "TheSpin.propTypes",
+    "meta": {
+      "lineno": 61,
+      "filename": "TheSpin.jsx",
+      "path": "/Users/okuni/Projects/the/packages/spin/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "TheSpin.propTypes.theme",
+    "longname": "TheSpin.propTypes.theme",
+    "name": "theme",
+    "kind": "member",
+    "scope": "static",
+    "description": "Theme of the spinner",
+    "memberof": "TheSpin.propTypes",
+    "meta": {
+      "lineno": 63,
+      "filename": "TheSpin.jsx",
+      "path": "/Users/okuni/Projects/the/packages/spin/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheSpinStyle.propTypes.options",
+    "longname": "TheSpinStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
+    "memberof": "TheSpinStyle.propTypes",
+    "meta": {
+      "lineno": 21,
+      "filename": "TheSpinStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/spin/lib"
+    },
+    "order": 6
+  }
+]

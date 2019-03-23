@@ -4,7 +4,7 @@
 'use strict'
 
 import React from 'react'
-import { withLoc } from 'the-loc'
+import { withLoc } from '@the-/loc'
 import { TheCreateDialog, } from 'the-site-components'
 import AdminUserCreateForm from './AdminUserCreateForm'
 import { compose, asBound } from 'the-hoc'

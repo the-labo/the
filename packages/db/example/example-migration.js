@@ -1,7 +1,7 @@
 'use strict'
 
-const { TheDB } = require('the-db')
-const { TheResource } = require('the-resource-base')
+const { TheDB } = require('@the-/db')
+const { TheResource } = require('@the-/resource')
 
 class UserResource extends TheResource {
   /* ... */

@@ -2,7 +2,7 @@
 
 'use strict'
 
-const theResize = require('the-resize')
+const theResize = require('@the-/resize')
 
 async function main() {
   // https://help.apple.com/app-store-connect/#/devd274dd925

@@ -1,0 +1,53 @@
+{
+  "name": "@the-/style",
+  "description": "Style of the-components",
+  "version": "15.0.3",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "@the-/util-style": "^15.0.3",
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2",
+    "the-component-constants": "^2.0.8"
+  },
+  "devDependencies": {
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/style#readme",
+  "keywords": [
+    "component",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "shim",
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the-style",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-build",
+    "watch": "the-script-build -w"
+  }
+}

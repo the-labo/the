@@ -8,8 +8,8 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { asStyleData } from 'the-component-util'
-import { TheStyle } from 'the-style'
+import { TheStyle } from '@the-/style'
+import { asStyleData } from '@the-/util-component'
 
 /** @lends TheDemoComponentStyle */
 const TheDemoComponentStyle = ({ className, id, options }) => (

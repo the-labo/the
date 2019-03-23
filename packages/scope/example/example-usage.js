@@ -1,6 +1,6 @@
 'use strict'
 
-const { TheStore } = require('the-store')
+const { TheStore } = require('@the-/store')
 const { TheScope } = require('@the-/scope')
 
 async function tryExample() {

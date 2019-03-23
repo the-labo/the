@@ -4,11 +4,13 @@
 
 const { copyAsync, copyDirAsync } = require('asfs')
 const { spawnSync } = require('child_process')
-const { chmod, readFile, stat, unlink, writeFile } = require('fs').promises
+const { chmod, readFile, stat, unlink, writeFile, rename } = require('fs').promises
+const aglob = require('aglob')
 const path = require('path')
 const rimraf = require('rimraf')
 const transporting = require('./transporting')
 const pkg = require('../../package')
+const { TheRefactor } = require('the-refactor')
 const baseDir = `${__dirname}/../..`
 
 process.chdir(baseDir)
@@ -53,20 +55,22 @@ ${msg}
     for (const filename of filesToRemove) {
       await unlink(path.resolve(toDir, filename)).catch(() => null)
     }
-    const dirsToRemvoe = [
+    const dirsToRemove = [
       '.git',
       'ci',
       'shim',
       'doc/guides',
     ]
-    for (const dirname of dirsToRemvoe) {
+    for (const dirname of dirsToRemove) {
       rimraf.sync(path.resolve(toDir, dirname))
     }
     await copyAsync(
       path.resolve(baseDir, '.npmignore'),
       path.resolve(toDir, '.npmignore'),
     )
-
+    if (!/^component-demo/.test(name)) {
+      continue
+    }
     if (!/demo/.test(name)) {
       if (['component'].includes(kind)) {
         const demoComponentDir = path.resolve(
@@ -74,9 +78,18 @@ ${msg}
           'packages',
           'demo-component',
         )
-
+        const refactor = new TheRefactor()
+        await refactor.rewrite(
+          'example/*.jsx',
+          {
+            [`from '${fromPkgName}'`]: [`from '@the-/${name}'`],
+          }
+        )
         const filenamesToCopy = [
+          '.README.md.bud',
           'doc/links.json',
+          'doc/demo/entrypoint.jsx',
+          'doc/demo/.index.html.bud',
           'lib/.index.jsx.bud',
           'test/.test.js.bud',
           'test/.npmignore',
@@ -104,14 +117,33 @@ ${msg}
         delete scripts.share
         delete scripts.buid
 
-        const devDepsToAdd = ['coz']
-        for (const name of devDepsToAdd) {
-          const has = 'coz' in (toPkg.devDependencies || {})
+        const depsToRemove = ['coz']
+        for (const name of depsToRemove) {
+          const has = name in (toPkg.dependencies || {})
+          if (has) {
+            spawnSync('npm', ['un', '-D', name], { cwd: toDir })
+          }
+        }
+        const devDepsToAdd = { 'coz': '*', '@the-/component-demo': 'file:../component-demo' }
+        for (const [name, version] of Object.entries(devDepsToAdd)) {
+          const has = name in (toPkg.devDependencies || {})
           if (!has) {
-            spawnSync('npm', ['i', name], { cwd: toDir })
+            if (/^file:/.test(version)) {
+              spawnSync('npm', ['i', '-D', version], { cwd: toDir })
+            } else {
+              spawnSync('npm', ['i', '-D', name], { cwd: toDir })
+            }
           }
         }
         await writeFile(toPkgFile, JSON.stringify({ ...toPkg, scripts }))
+
+        for (const testJsx of await aglob('test/*.jsx', { cwd: toDir })) {
+          const basename = path.basename(testJsx, '.jsx')
+          rename(
+            path.resolve(toDir, testJsx),
+            path.resolve(toDir, 'test', basename + '.js'),
+          )
+        }
       }
       if (['lib', 'util', 'mixins'].includes(kind)) {
         const demoLibDir = path.resolve(baseDir, 'packages', 'demo-lib')

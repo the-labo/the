@@ -1,7 +1,7 @@
 'use strict'
 
 const React = require('react')
-const { TheContext } = require('the-context')
+const { TheContext } = require('@the-/context')
 
 async function tryExample () {
   const l = {

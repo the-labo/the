@@ -3,7 +3,7 @@
 const {
   DataTypes: { STRING },
   TheResource,
-} = require('the-resource-base')
+} = require('@the-/resource')
 const { TheDB } = require('@the-/db')
 
 // Define a resource class

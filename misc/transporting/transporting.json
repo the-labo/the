@@ -59,6 +59,10 @@
     "kind": "component",
     "name": "demo-component"
   },
+  "the-component-demo": {
+    "kind": "component",
+    "name": "component-demo"
+  },
   "the-demo-lib": {
     "kind": "lib",
     "name": "demo-lib"

@@ -1,7 +1,7 @@
 {
   "name": "@the-/demo-component",
   "description": "Demo of the-components",
-  "version": "15.0.3",
+  "version": "15.0.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,22 +11,22 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/component-demo": "file:../component-demo",
+    "@the-/style": "^15.0.3",
+    "@the-/util-component": "^15.0.3",
     "classnames": "^2.2.6",
-    "prop-types": "^15.7.2",
-    "the-component-util": "^3.0.22",
-    "the-style": "^2.2.8"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@babel/runtime": "*",
+    "@babel/runtime": "^7.4.2",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
     "objnest": "^5.0.6",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "react-router-dom": "^4.3.1",
-    "the-component-demo": "^4.0.18"
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "react-router-dom": "^5.0.0"
   },
   "engines": {
     "node": ">=10",

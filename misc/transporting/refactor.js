@@ -31,15 +31,17 @@ async function main() {
         spawnSync('npm', ['i', newName], { cwd: pkgDir, stdio: 'inherit' })
       }
     }
+    const refactor = new TheRefactor()
     for (const [oldName] of Object.entries(transporting)) {
       const newName = `@the-/${transporting[oldName].name}`
       console.log(`Refactor "${oldName}" to "${newName}"...`)
-      const refactor = new TheRefactor()
       await refactor.rewrite(
         [
-          '+(assets|bin|lib|client|conf|doc|misc|server|test)/**/*.js',
-          '+(assets|bin|lib|client|conf|doc|misc|server|test)/**/.*.bud',
+          '+(assets|example|bin|lib|client|conf|doc|misc|server|test)/**/*.js',
+          '+(assets|example|bin|lib|client|conf|doc|misc|server|test)/**/*.jsx',
+          '+(assets|example|bin|lib|client|conf|doc|misc|server|test)/**/.*.bud',
           '*.js',
+          '*.jsx',
           '.*.bud',
         ],
         {

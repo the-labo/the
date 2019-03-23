@@ -11,11 +11,11 @@ import {
 
 import { Header, Toasts, Footer } from './layouts'
 import Routes from './Routes'
-import { withProvider, withStore, } from 'the-store'
-import { withLoc, } from 'the-loc'
+import { withProvider, withStore, } from '@the-/store'
+import { withLoc, } from '@the-/loc'
 import { withCycle, asBound, } from 'the-hoc'
-import { withBinder, } from 'the-handle'
-import { withClient } from 'the-client'
+import { withBinder, } from '@the-/handle'
+import { withClient } from '@the-/client'
 import { locales } from '@self/conf'
 import { CautionDisconnectedDialog } from './bounds'
 
