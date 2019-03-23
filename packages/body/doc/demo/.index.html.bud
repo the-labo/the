@@ -1,0 +1,24 @@
+/**
+ * Bud file for index.html
+ */
+'use strict'
+
+const { readFileSync } = require('fs')
+const demoMarkup = require('@the-/component-demo/markup')
+
+module.exports = {
+  data: {
+    js: './bundle.js',
+    pkg: require('../../package.json'),
+    snippet: String(
+      readFileSync(require.resolve('../../example/example-usage.jsx')),
+    ),
+  },
+  force: true,
+  mode: '444',
+  tmpl: demoMarkup,
+}
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

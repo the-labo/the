@@ -21,6 +21,7 @@ const pkg = require('../../package')
 const baseDir = `${__dirname}/../..`
 
 process.chdir(baseDir)
+
 ;(async () => {
   for (const [fromPkgName, { kind, name }] of Object.entries(transporting)) {
     const fromDir = path.resolve(baseDir, '..', fromPkgName)
@@ -70,7 +71,7 @@ ${msg}
       path.resolve(baseDir, '.npmignore'),
       path.resolve(toDir, '.npmignore'),
     )
-    if (!/^component-demo/.test(name)) {
+    if (/^component-demo/.test(name)) {
       continue
     }
     if (!/demo/.test(name)) {
@@ -84,6 +85,7 @@ ${msg}
         await refactor.rewrite('example/*.jsx', {
           [`from '${fromPkgName}'`]: [`from '@the-/${name}'`],
         })
+
         const filenamesToCopy = [
           '.README.md.bud',
           'doc/links.json',
@@ -116,6 +118,22 @@ ${msg}
         delete scripts.share
         delete scripts.buid
 
+        {
+          const devDepsToAdd = {
+            '@the-/script-build': 'file:../script-build',
+            '@the-/script-doc': 'file:../script-doc',
+            '@the-/script-test': 'file:../script-test',
+            '@the-/templates': 'file:../templates',
+          }
+          for (const [name, src] of Object.entries(devDepsToAdd)) {
+            if (!(name in toPkg.devDependencies)) {
+              if (toPkg.name === name) {
+                continue
+              }
+              spawnSync('npm', ['i', src, '-D'], { cwd: toDir })
+            }
+          }
+        }
         const depsToRemove = ['coz']
         for (const name of depsToRemove) {
           const has = name in (toPkg.dependencies || {})
