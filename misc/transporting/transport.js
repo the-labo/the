@@ -59,6 +59,48 @@ ${msg}
     )
 
     if (!/demo/.test(name)) {
+
+      if (['component'].includes(kind)) {
+        const demoComponentDir = path.resolve(baseDir, 'packages', 'demo-component')
+
+        const filenamesToCopy = [
+          'doc/links.json',
+          'lib/.index.jsx.bud',
+          'test/.test.js.bud',
+          'test/.npmignore',
+        ]
+        for (const filename of filenamesToCopy) {
+          await copyAsync(
+            `${demoComponentDir}/${filename}`,
+            `${toDir}/${filename}`,
+          )
+        }
+        const filenamesToUnlink = [
+          'lib/.index.bud',
+          'lib/.index.js.bud',
+          'signature.json',
+        ]
+        for (const filename of filenamesToUnlink) {
+          await unlink(path.resolve(toDir, filename)).catch(() => null)
+        }
+        const toPkg = JSON.parse(await readFile(toPkgFile))
+        const { scripts = {} } = toPkg
+        scripts.doc = 'the-script-doc'
+        scripts.build = 'the-script-build'
+        scripts.test = 'the-script-build'
+        scripts.prepare = 'npm run build && npm run doc'
+        delete scripts.share
+        delete scripts.buid
+
+        const devDepsToAdd = ['coz']
+        for (const name of devDepsToAdd) {
+          const has = 'coz' in (toPkg.devDependencies || {})
+          if (!has) {
+            spawnSync('npm', ['i', name], { cwd: toDir })
+          }
+        }
+        await writeFile(toPkgFile, JSON.stringify({ ...toPkg, scripts }))
+      }
       if (['lib', 'util', 'mixins'].includes(kind)) {
         const demoLibDir = path.resolve(baseDir, 'packages', 'demo-lib')
         rimraf.sync(path.resolve(toDir, 'doc/readme'))

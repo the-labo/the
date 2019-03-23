@@ -3,24 +3,9 @@
  */
 'use strict'
 
-const { Readme } = require('@the-/templates')
-const pkg = require('./package')
+const { Readme } = require('@the-/templates/presets/component')
 
-module.exports = Readme({
-  badges: {
-    npm: true,
-    standard: true,
-    travis: true,
-  },
-  links: require('./doc/links'),
-  overview: 'doc/overview.md',
-  pkg,
-  repo: pkg.repository,
-  sections: 'doc/guides/*.md.hbs',
-  vars: {
-    signature: require('./signature'),
-  },
-})
+module.exports = Readme(__dirname)
 
 if (!module.parent) {
   require('coz').render(__filename)
