@@ -3,8 +3,8 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { asStyleData } from '@the-/util-component'
 import { TheStyle } from '@the-/style'
+import { asStyleData } from '@the-/util-component'
 
 /** Style for TheButton */
 const TheButtonStyle = ({ className, id, options }) => (
@@ -44,7 +44,7 @@ TheButtonStyle.data = (options) => {
     asStyleData({
       '.the-button': {
         alignItems: 'center',
-        backgroundColor: backgroundColor,
+        backgroundColor,
         border: `1px solid`,
         borderRadius: '4px',
         boxSizing: 'border-box',

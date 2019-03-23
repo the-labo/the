@@ -3,11 +3,11 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { unlessProduction } from '@the-/check'
 import { textColorFor } from 'the-color'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
-import { TheIcon } from '@the-/icon'
 import { TheLink } from 'the-link'
+import { unlessProduction } from '@the-/check'
+import { TheIcon } from '@the-/icon'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
 import TheButtonGroup from './TheButtonGroup'
 
 /**

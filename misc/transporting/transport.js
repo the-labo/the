@@ -230,7 +230,7 @@ ${msg}
           if (toPkg.name === name) {
             continue
           }
-          spawnSync('npm', ['i', '-D', src], { cwd: toDir })
+          spawnSync('npm', ['i', src, '-D'], { cwd: toDir })
         }
       }
     }

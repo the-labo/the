@@ -1,7 +1,7 @@
 {
-  "name": "the-image",
+  "name": "@the-/image",
   "description": "Image of the-components",
-  "version": "15.0.3",
+  "version": "15.0.5",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,10 +11,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/component-demo": "file:../component-demo",
     "@the-/icon": "^15.0.4",
-    "@the-/script-build": "file:../script-build",
-    "@the-/script-test": "file:../script-test",
     "@the-/style": "^15.0.3",
     "@the-/templates": "file:../templates",
     "@the-/util-component": "^15.0.3",
@@ -23,6 +20,9 @@
   },
   "devDependencies": {
     "@babel/runtime": "*",
+    "@the-/component-demo": "file:../component-demo",
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-test": "file:../script-test",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-router-dom": "^4.3.1",

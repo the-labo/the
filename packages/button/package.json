@@ -1,5 +1,5 @@
 {
-  "name": "the-button",
+  "name": "@the-/button",
   "description": "Button of the-components",
   "version": "15.0.3",
   "author": {
@@ -12,12 +12,8 @@
   },
   "dependencies": {
     "@the-/check": "^15.0.3",
-    "@the-/component-demo": "file:../component-demo",
     "@the-/icon": "^15.0.4",
-    "@the-/script-build": "file:../script-build",
-    "@the-/script-test": "file:../script-test",
     "@the-/style": "^15.0.3",
-    "@the-/templates": "file:../templates",
     "@the-/util-component": "^15.0.3",
     "classnames": "^2.2.6",
     "prop-types": "^15.6.2",
@@ -26,6 +22,10 @@
   },
   "devDependencies": {
     "@babel/runtime": "*",
+    "@the-/component-demo": "file:../component-demo",
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",

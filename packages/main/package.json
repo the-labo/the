@@ -1,5 +1,5 @@
 {
-  "name": "the-main",
+  "name": "@the-/main",
   "description": "Main for the-components",
   "version": "15.0.3",
   "author": {
@@ -11,18 +11,18 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/component-demo": "file:../component-demo",
-    "@the-/script-build": "file:../script-build",
-    "@the-/script-test": "file:../script-test",
     "@the-/spin": "^15.0.3",
     "@the-/style": "^15.0.3",
-    "@the-/templates": "file:../templates",
     "@the-/util-component": "^15.0.3",
     "classnames": "^2.2.6",
     "prop-types": "^15.6.2"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.0.0-beta.51",
+    "@babel/runtime": "^7.4.2",
+    "@the-/component-demo": "file:../component-demo",
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-router-dom": "^4.3.1",
