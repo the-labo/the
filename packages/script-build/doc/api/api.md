@@ -21,7 +21,7 @@
 ## @the-/script-build
 Build script for the-projects
 
-**Version**: 15.0.10  
+**Version**: 15.0.3  
 <a name="build"></a>
 
 ## build([dirname], [options]) ⇒ <code>Promise</code>

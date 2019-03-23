@@ -1,0 +1,299 @@
+[
+  {
+    "id": "module:the-head",
+    "longname": "module:the-head",
+    "name": "the-head",
+    "kind": "module",
+    "description": "Head of the-components",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheHead",
+    "longname": "TheHead",
+    "name": "TheHead",
+    "kind": "class",
+    "scope": "global",
+    "description": "Head of the-components",
+    "meta": {
+      "lineno": 26,
+      "filename": "TheHead.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheHead.propTypes.base",
+    "longname": "TheHead.propTypes.base",
+    "name": "base",
+    "kind": "member",
+    "scope": "static",
+    "description": "Base url",
+    "memberof": "TheHead.propTypes",
+    "meta": {
+      "lineno": 183,
+      "filename": "TheHead.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheHead.propTypes.baseTarget",
+    "longname": "TheHead.propTypes.baseTarget",
+    "name": "baseTarget",
+    "kind": "member",
+    "scope": "static",
+    "description": "Target of base url. '_blank', '_parent', '_self', '_top' or frame name",
+    "memberof": "TheHead.propTypes",
+    "meta": {
+      "lineno": 185,
+      "filename": "TheHead.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "TheHead.propTypes.cdn",
+    "longname": "TheHead.propTypes.cdn",
+    "name": "cdn",
+    "kind": "member",
+    "scope": "static",
+    "description": "CDN URL",
+    "memberof": "TheHead.propTypes",
+    "meta": {
+      "lineno": 187,
+      "filename": "TheHead.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheHead.propTypes.charSet",
+    "longname": "TheHead.propTypes.charSet",
+    "name": "charSet",
+    "kind": "member",
+    "scope": "static",
+    "description": "Char set",
+    "memberof": "TheHead.propTypes",
+    "meta": {
+      "lineno": 189,
+      "filename": "TheHead.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheHead.propTypes.color",
+    "longname": "TheHead.propTypes.color",
+    "name": "color",
+    "kind": "member",
+    "scope": "static",
+    "description": "Theme color",
+    "memberof": "TheHead.propTypes",
+    "meta": {
+      "lineno": 192,
+      "filename": "TheHead.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "TheHead.propTypes.fallbackUnless",
+    "longname": "TheHead.propTypes.fallbackUnless",
+    "name": "fallbackUnless",
+    "kind": "member",
+    "scope": "static",
+    "description": "Global property for fall back",
+    "memberof": "TheHead.propTypes",
+    "meta": {
+      "lineno": 194,
+      "filename": "TheHead.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "TheHead.propTypes.globals",
+    "longname": "TheHead.propTypes.globals",
+    "name": "globals",
+    "kind": "member",
+    "scope": "static",
+    "description": "Global variables",
+    "memberof": "TheHead.propTypes",
+    "meta": {
+      "lineno": 196,
+      "filename": "TheHead.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 8
+  },
+  {
+    "id": "TheHead.propTypes.icon",
+    "longname": "TheHead.propTypes.icon",
+    "name": "icon",
+    "kind": "member",
+    "scope": "static",
+    "description": "Favicon url",
+    "memberof": "TheHead.propTypes",
+    "meta": {
+      "lineno": 198,
+      "filename": "TheHead.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 9
+  },
+  {
+    "id": "TheHead.propTypes.id",
+    "longname": "TheHead.propTypes.id",
+    "name": "id",
+    "kind": "member",
+    "scope": "static",
+    "description": "DOM Id",
+    "memberof": "TheHead.propTypes",
+    "meta": {
+      "lineno": 200,
+      "filename": "TheHead.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 10
+  },
+  {
+    "id": "TheHead.propTypes.itemProps",
+    "longname": "TheHead.propTypes.itemProps",
+    "name": "itemProps",
+    "kind": "member",
+    "scope": "static",
+    "description": "Item props",
+    "memberof": "TheHead.propTypes",
+    "meta": {
+      "lineno": 202,
+      "filename": "TheHead.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 11
+  },
+  {
+    "id": "TheHead.propTypes.manifest",
+    "longname": "TheHead.propTypes.manifest",
+    "name": "manifest",
+    "kind": "member",
+    "scope": "static",
+    "description": "Path of manifest.json",
+    "memberof": "TheHead.propTypes",
+    "meta": {
+      "lineno": 204,
+      "filename": "TheHead.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 12
+  },
+  {
+    "id": "TheHead.propTypes.metaContents",
+    "longname": "TheHead.propTypes.metaContents",
+    "name": "metaContents",
+    "kind": "member",
+    "scope": "static",
+    "description": "Met contents",
+    "memberof": "TheHead.propTypes",
+    "meta": {
+      "lineno": 206,
+      "filename": "TheHead.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 13
+  },
+  {
+    "id": "TheHead.propTypes.metaProperties",
+    "longname": "TheHead.propTypes.metaProperties",
+    "name": "metaProperties",
+    "kind": "member",
+    "scope": "static",
+    "description": "Met properties",
+    "memberof": "TheHead.propTypes",
+    "meta": {
+      "lineno": 208,
+      "filename": "TheHead.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 14
+  },
+  {
+    "id": "TheHead.propTypes.ogpContents",
+    "longname": "TheHead.propTypes.ogpContents",
+    "name": "ogpContents",
+    "kind": "member",
+    "scope": "static",
+    "description": "OGP contents",
+    "memberof": "TheHead.propTypes",
+    "meta": {
+      "lineno": 210,
+      "filename": "TheHead.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 15
+  },
+  {
+    "id": "TheHead.propTypes.title",
+    "longname": "TheHead.propTypes.title",
+    "name": "title",
+    "kind": "member",
+    "scope": "static",
+    "description": "Document title",
+    "memberof": "TheHead.propTypes",
+    "meta": {
+      "lineno": 212,
+      "filename": "TheHead.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 16
+  },
+  {
+    "id": "TheHead.propTypes.version",
+    "longname": "TheHead.propTypes.version",
+    "name": "version",
+    "kind": "member",
+    "scope": "static",
+    "description": "Version string",
+    "memberof": "TheHead.propTypes",
+    "meta": {
+      "lineno": 214,
+      "filename": "TheHead.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 17
+  },
+  {
+    "id": "TheHead.propTypes.versionKey",
+    "longname": "TheHead.propTypes.versionKey",
+    "name": "versionKey",
+    "kind": "member",
+    "scope": "static",
+    "description": "Key for version query",
+    "memberof": "TheHead.propTypes",
+    "meta": {
+      "lineno": 216,
+      "filename": "TheHead.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 18
+  },
+  {
+    "id": "TheHead.propTypes.viewPort",
+    "longname": "TheHead.propTypes.viewPort",
+    "name": "viewPort",
+    "kind": "member",
+    "scope": "static",
+    "description": "View port settings",
+    "memberof": "TheHead.propTypes",
+    "meta": {
+      "lineno": 218,
+      "filename": "TheHead.jsx",
+      "path": "/Users/okuni/Projects/the/packages/head/lib"
+    },
+    "order": 19
+  }
+]

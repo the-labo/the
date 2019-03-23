@@ -11,6 +11,7 @@
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
+  "dependencies": {},
   "devDependencies": {
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",

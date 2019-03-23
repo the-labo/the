@@ -1,0 +1,64 @@
+{
+  "name": "@the-/condition",
+  "description": "Conditional renderer for the-components",
+  "version": "3.0.5",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "^15.6.2",
+    "the-component-util": "^3.0.2",
+    "the-style": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.0.0-rc.1",
+    "@the-/component-demo": "file:../component-demo",
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates",
+    "coz": "^7.0.19",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-router-dom": "^4.3.1"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/the-condition#readme",
+  "keywords": [
+    "component",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "shim",
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "repository": "the-labo/the-condition",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-build",
+    "watch": "the-script-build -w"
+  },
+  "build": "the-script-build",
+  "doc": "the-script-doc",
+  "prepare": "npm run build && npm run doc",
+  "release": "the-script-release -y",
+  "test": "the-script-build",
+  "update": "the-script-update",
+  "watch": "the-script-build -w",
+  "publishConfig": {
+    "access": "public"
+  }
+}

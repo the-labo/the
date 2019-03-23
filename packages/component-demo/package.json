@@ -1,7 +1,7 @@
 {
   "name": "@the-/component-demo",
   "description": "Live demo of the-components",
-  "version": "15.0.3",
+  "version": "15.0.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@the-/body": "^15.0.3",
+    "@the-/head": "^1.0.34",
     "@the-/html": "^15.0.3",
     "@the-/icon": "^15.0.3",
     "@the-/image": "^15.0.4",
@@ -37,7 +38,7 @@
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
-    "@the-/templates": "file:../templates",
+    "@the-/templates": "^15.0.4",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-router-dom": "^5.0.0"

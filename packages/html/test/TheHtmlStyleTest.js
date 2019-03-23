@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheHtmlStyle from '../lib/TheHtmlStyle'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheHtmlStyle from '../lib/TheHtmlStyle'
 
 describe('the-html-style', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheHtmlStyle />
-    )
+    let element = render(<TheHtmlStyle />)
     ok(element)
   })
 })

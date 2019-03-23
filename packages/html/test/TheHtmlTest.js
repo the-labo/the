@@ -4,27 +4,25 @@
  */
 'use strict'
 
-import TheHtml from '../lib/TheHtml'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheHtml from '../lib/TheHtml'
 
 describe('the-html', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
     let element = render(
-      <TheHtml >
+      <TheHtml>
         <body>
-        <main>
-          <h1>Hoo</h1>
-        </main>
+          <main>
+            <h1>Hoo</h1>
+          </main>
         </body>
-      </TheHtml>
+      </TheHtml>,
     )
     ok(element)
   })

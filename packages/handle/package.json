@@ -19,12 +19,12 @@
   },
   "devDependencies": {
     "@babel/runtime": "^7.2.0",
+    "@the-/scene": "file:../scene",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
-    "react": "^16.7.0",
-    "@the-/scene": "file:../scene"
+    "react": "^16.7.0"
   },
   "engines": {
     "node": ">=10",

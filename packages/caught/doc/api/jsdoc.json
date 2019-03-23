@@ -1,0 +1,89 @@
+[
+  {
+    "id": "module:the-caught",
+    "longname": "module:the-caught",
+    "name": "the-caught",
+    "kind": "module",
+    "description": "Component to show caught errors",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/caught/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheCaught",
+    "longname": "TheCaught",
+    "name": "TheCaught",
+    "kind": "class",
+    "scope": "global",
+    "description": "Component to show caught errors",
+    "meta": {
+      "lineno": 13,
+      "filename": "TheCaught.jsx",
+      "path": "/Users/okuni/Projects/the/packages/caught/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheCaughtStyle",
+    "longname": "TheCaughtStyle",
+    "name": "TheCaughtStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheCaught",
+    "params": [],
+    "meta": {
+      "lineno": 10,
+      "filename": "TheCaughtStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/caught/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheCaught.propTypes.error",
+    "longname": "TheCaught.propTypes.error",
+    "name": "error",
+    "kind": "member",
+    "scope": "static",
+    "description": "Caught error",
+    "memberof": "TheCaught.propTypes",
+    "meta": {
+      "lineno": 41,
+      "filename": "TheCaught.jsx",
+      "path": "/Users/okuni/Projects/the/packages/caught/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheCaught.propTypes.info",
+    "longname": "TheCaught.propTypes.info",
+    "name": "info",
+    "kind": "member",
+    "scope": "static",
+    "description": "Error Info",
+    "memberof": "TheCaught.propTypes",
+    "meta": {
+      "lineno": 43,
+      "filename": "TheCaught.jsx",
+      "path": "/Users/okuni/Projects/the/packages/caught/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "TheCaughtStyle.propTypes.options",
+    "longname": "TheCaughtStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
+    "memberof": "TheCaughtStyle.propTypes",
+    "meta": {
+      "lineno": 21,
+      "filename": "TheCaughtStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/caught/lib"
+    },
+    "order": 5
+  }
+]

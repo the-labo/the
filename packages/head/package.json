@@ -1,0 +1,63 @@
+{
+  "name": "@the-/head",
+  "description": "Head of the-components",
+  "version": "1.0.34",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "build": "the-script-build",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "^15.6.2",
+    "stringcase": "^4.3.0"
+  },
+  "devDependencies": {
+    "@the-/component-demo": "^15.0.4",
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates",
+    "coz": "^7.0.19",
+    "objnest": "^5.0.3",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "react-router-dom": "^5.0.0"
+  },
+  "doc": "the-script-doc",
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/head#readme",
+  "keywords": [
+    "component",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "shim",
+  "peerDependencies": {
+    "react": ">=15",
+    "react-dom": ">=15"
+  },
+  "prepare": "npm run build && npm run doc",
+  "publishConfig": {
+    "access": "public"
+  },
+  "release": "the-script-release -y",
+  "repository": "the-labo/the-head",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-build",
+    "watch": "the-script-build -w"
+  },
+  "test": "the-script-build",
+  "update": "the-script-update",
+  "watch": "the-script-build -w"
+}

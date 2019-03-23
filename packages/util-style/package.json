@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "nano-css": "^3.5.0"
+    "nano-css": "^5.0.0"
   },
   "devDependencies": {
     "@the-/script-build": "file:../script-build",

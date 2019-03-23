@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "@babel/runtime": "^7.4.2",
+    "@the-/component-demo": "file:../component-demo",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
@@ -25,8 +26,7 @@
     "objnest": "^5.0.6",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
-    "react-router-dom": "^5.0.0",
-    "@the-/component-demo": "file:../component-demo"
+    "react-router-dom": "^5.0.0"
   },
   "engines": {
     "node": ">=10",

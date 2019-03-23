@@ -14,7 +14,6 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "amocha": "^6.0.0",
     "argx": "^4.0.0",
     "commander": "^2.19.0"
   },

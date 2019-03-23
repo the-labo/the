@@ -27,8 +27,8 @@ async function main() {
       if (oldName in transporting) {
         const newName = `file:../${transporting[oldName].name}`
         console.log(`Change dev deps "${oldName}" to "${newName}"...`)
-        spawnSync('npm', ['un', oldName], { cwd: pkgDir, stdio: 'inherit' })
-        spawnSync('npm', ['i', newName], { cwd: pkgDir, stdio: 'inherit' })
+        spawnSync('npm', ['un', '-D', oldName], { cwd: pkgDir, stdio: 'inherit' })
+        spawnSync('npm', ['i', '-D', newName], { cwd: pkgDir, stdio: 'inherit' })
       }
     }
     const refactor = new TheRefactor()

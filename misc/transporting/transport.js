@@ -4,7 +4,6 @@
 
 const aglob = require('aglob')
 const { copyAsync, copyDirAsync } = require('asfs')
-const { EOL } = require('os')
 const { spawnSync } = require('child_process')
 const {
   chmod,
@@ -14,6 +13,7 @@ const {
   unlink,
   writeFile,
 } = require('fs').promises
+const { EOL } = require('os')
 const path = require('path')
 const rimraf = require('rimraf')
 const { TheRefactor } = require('the-refactor')
@@ -23,10 +23,10 @@ const baseDir = `${__dirname}/../..`
 
 process.chdir(baseDir)
 
-const _deprecatePackage = async (fromDir) => {
+const _deprecatePackage = async (fromDir, name) => {
+  const fromREADME = path.resolve(fromDir, 'README.md')
   await chmod(fromREADME, '644')
   await unlink(path.resolve(fromDir, '.README.md.bud')).catch(() => null)
-  const fromREADME = path.resolve(fromDir, 'README.md')
   const msg = `This package moved to [@the-/${name}](https://www.npmjs.com/package/@the-/${name})`
   await writeFile(
     fromREADME,
@@ -35,11 +35,12 @@ const _deprecatePackage = async (fromDir) => {
 ${msg}
       `,
   )
-  spawnSync('git', ['add', '.'], { cwd: fromDir })
-  spawnSync('git', ['commit', '-m', 'Deprecate'], { cwd: fromDir })
-  spawnSync('git', ['push'], { cwd: fromDir })
+  spawnSync('git', ['add', '.'], { cwd: fromDir, stdio: 'inherit' })
+  spawnSync('git', ['commit', '-m', 'Deprecate'], { cwd: fromDir, stdio: 'inherit' })
+  spawnSync('git', ['push'], { cwd: fromDir, stdio: 'inherit' })
   spawnSync(`npm`, ['deprecate', path.basename(fromDir), msg], {
     cwd: fromDir,
+    stdio: 'inherit'
   })
 }
 
@@ -74,9 +75,9 @@ const _addDevDeps = async (baseDir, devDeps) => {
       continue
     }
     if (/^file:/.test(version)) {
-      spawnSync('npm', ['i', '-D', version], { cwd: baseDir })
+      spawnSync('npm', ['i', '-D', version], { cwd: baseDir, stdio: 'inherit' })
     } else {
-      spawnSync('npm', ['i', '-D', name], { cwd: baseDir })
+      spawnSync('npm', ['i', '-D', name], { cwd: baseDir, stdio: 'inherit' })
     }
   }
 }
@@ -84,18 +85,25 @@ const _addDevDeps = async (baseDir, devDeps) => {
 const _rewritePkg = async (baseDir, converter) => {
   const pkgFile = path.resolve(baseDir, 'package.json')
   const pkg = JSON.parse(await readFile(pkgFile))
-  await writeFile(pkgFile, JSON.stringify({
-    ...pkg,
-    ...converter(pkg),
-  }, null, 2) + EOL)
+  await writeFile(
+    pkgFile,
+    JSON.stringify(
+      {
+        ...pkg,
+        ...converter(pkg),
+      },
+      null,
+      2,
+    ) + EOL,
+  )
 }
 
 const _removeDevDeps = async (baseDir, names) => {
     const pkg = JSON.parse(await readFile(path.resolve(baseDir, 'package.json')))
     for (const name of names) {
-      const has = name in (pkg.dependencies || {})
+      const has = name in (pkg.devDependencies || {})
       if (has) {
-        spawnSync('npm', ['un', '-D', name], { cwd: baseDir })
+        spawnSync('npm', ['un', '-D', name], { cwd: baseDir, stdio: 'inherit' })
       }
     }
   }
@@ -108,8 +116,8 @@ const _removeDevDeps = async (baseDir, names) => {
     const toStat = await stat(toDir).catch(() => null)
 
     if (!toStat) {
-      spawnSync('cp', ['-R', fromDir, toDir])
-      await _deprecatePackage(fromDir)
+      spawnSync('cp', ['-R', fromDir, toDir], { stdio: 'inherit' })
+      await _deprecatePackage(fromDir, name)
     }
     const fromPkgFile = path.resolve(fromDir, 'package.json')
     const toPkgFile = path.resolve(toDir, 'package.json')
@@ -166,14 +174,14 @@ const _removeDevDeps = async (baseDir, names) => {
           return scripts
         })
         {
-          await _addDevDeps({
+          await _addDevDeps(toDir, {
             '@the-/script-build': 'file:../script-build',
             '@the-/script-doc': 'file:../script-doc',
             '@the-/script-test': 'file:../script-test',
             '@the-/templates': 'file:../templates',
           })
         }
-        await _removeDevDeps(['coz'])
+        await _removeDevDeps(toDir, ['coz'])
         await _addDevDeps(toDir, {
           '@the-/component-demo': 'file:../component-demo',
           coz: '*',
@@ -209,14 +217,13 @@ const _removeDevDeps = async (baseDir, names) => {
           delete scripts.buid
 
           return {
-            scripts,
             name: `@the-/${name}`,
+            scripts,
           }
         })
       }
     }
 
-    const { dependencies = {}, devDependencies = {} } = toPkg
     await _removeDevDeps(toDir, [
       'the-script-share',
       'the-script-update',
@@ -254,42 +261,44 @@ const _removeDevDeps = async (baseDir, names) => {
       }
     }
     {
-      await _rewritePkg(toPkgFile, ({ scripts = {}, dependencies = {}, devDependencies = {} }) => {
-        for (const [name, ver] of Object.entries(dependencies)) {
-          if (/^file/.test(ver)) {
-            devDependencies[name] = ver
-            delete dependencies[name]
+      await _rewritePkg(
+        toDir,
+        ({ dependencies = {}, devDependencies = {}, scripts = {} }) => {
+          for (const [name, ver] of Object.entries(dependencies)) {
+            if (/^file/.test(ver)) {
+              devDependencies[name] = ver
+              delete dependencies[name]
+            }
           }
-        }
-        delete scripts.update
-        delete scripts.release
-        return {
-          scripts,
-          devDependencies,
-          dependencies,
-          author: {
-            email: 'okunishinishi@gmail.com',
-            name: 'Taka Okunishi',
-            url: 'http://okunishitaka.com',
-          },
-          bugs: {
-            url: 'https://github.com/the-labo/the#issues',
-          },
-          engines: {
-            node: '>=10',
-            npm: '>=6',
-          },
-          homepage: `https://github.com/the-labo/the/tree/master/packages/${toPkg.name
-            .split('/')
-            .pop()}#readme`,
-          keywords: ['the', kind].filter(Boolean).sort(),
-          name: `@the-/${name}`,
-          publishConfig: {
-            access: 'public',
-          },
-        }
-      })
-
+          delete scripts.update
+          delete scripts.release
+          return {
+            author: {
+              email: 'okunishinishi@gmail.com',
+              name: 'Taka Okunishi',
+              url: 'http://okunishitaka.com',
+            },
+            bugs: {
+              url: 'https://github.com/the-labo/the#issues',
+            },
+            dependencies,
+            devDependencies,
+            engines: {
+              node: '>=10',
+              npm: '>=6',
+            },
+            homepage: `https://github.com/the-labo/the/tree/master/packages/${toPkg.name
+              .split('/')
+              .pop()}#readme`,
+            keywords: ['the', kind].filter(Boolean).sort(),
+            name: `@the-/${name}`,
+            publishConfig: {
+              access: 'public',
+            },
+            scripts,
+          }
+        },
+      )
     }
   }
 })().catch((e) => {

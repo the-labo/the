@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheMain from '../lib/TheMain'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheMain from '../lib/TheMain'
 
 describe('the-main', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheMain />
-    )
+    let element = render(<TheMain />)
     ok(element)
   })
 })

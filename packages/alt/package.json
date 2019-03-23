@@ -1,0 +1,65 @@
+{
+  "name": "@the-/alt",
+  "description": "Alt text for the-components",
+  "version": "1.0.1",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "build": "the-script-build",
+  "dependencies": {
+    "@the-/style": "^15.0.3",
+    "@the-/util-component": "^15.0.3",
+    "classnames": "^2.2.6",
+    "prop-types": "^15.6.2"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.1.5",
+    "@the-/component-demo": "file:../component-demo",
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates",
+    "coz": "^7.0.19",
+    "objnest": "^5.0.3",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1"
+  },
+  "doc": "the-script-doc",
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/alt#readme",
+  "keywords": [
+    "component",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "shim",
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "prepare": "npm run build && npm run doc",
+  "publishConfig": {
+    "access": "public"
+  },
+  "release": "the-script-release -y",
+  "repository": "the-labo/the-alt",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-build",
+    "watch": "the-script-build -w"
+  },
+  "test": "the-script-build",
+  "update": "the-script-update",
+  "watch": "the-script-build -w"
+}

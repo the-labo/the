@@ -67,8 +67,8 @@ Usage
 ```javascript
 'use strict'
 
-const { TheStore } = require('@the-/store')
 const { TheScope } = require('@the-/scope')
+const { TheStore } = require('@the-/store')
 
 async function tryExample() {
   class FlgScope extends TheScope {

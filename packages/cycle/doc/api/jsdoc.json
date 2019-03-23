@@ -1,0 +1,89 @@
+[
+  {
+    "id": "module:the-cycle",
+    "longname": "module:the-cycle",
+    "name": "the-cycle",
+    "kind": "module",
+    "description": "Component with life cycle",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/cycle/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheCycle",
+    "longname": "TheCycle",
+    "name": "TheCycle",
+    "kind": "class",
+    "scope": "global",
+    "description": "Component with life cycle",
+    "meta": {
+      "lineno": 16,
+      "filename": "TheCycle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/cycle/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheCycle.propTypes.onMount",
+    "longname": "TheCycle.propTypes.onMount",
+    "name": "onMount",
+    "kind": "member",
+    "scope": "static",
+    "description": "Handler for component mount",
+    "memberof": "TheCycle.propTypes",
+    "meta": {
+      "lineno": 65,
+      "filename": "TheCycle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/cycle/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheCycle.propTypes.onReceive",
+    "longname": "TheCycle.propTypes.onReceive",
+    "name": "onReceive",
+    "kind": "member",
+    "scope": "static",
+    "description": "Handler for new prop values",
+    "memberof": "TheCycle.propTypes",
+    "meta": {
+      "lineno": 67,
+      "filename": "TheCycle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/cycle/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "TheCycle.propTypes.onUnmount",
+    "longname": "TheCycle.propTypes.onUnmount",
+    "name": "onUnmount",
+    "kind": "member",
+    "scope": "static",
+    "description": "Handler for component unmount",
+    "memberof": "TheCycle.propTypes",
+    "meta": {
+      "lineno": 69,
+      "filename": "TheCycle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/cycle/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheCycle.propTypes.values",
+    "longname": "TheCycle.propTypes.values",
+    "name": "values",
+    "kind": "member",
+    "scope": "static",
+    "description": "Values to receive",
+    "memberof": "TheCycle.propTypes",
+    "meta": {
+      "lineno": 71,
+      "filename": "TheCycle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/cycle/lib"
+    },
+    "order": 5
+  }
+]

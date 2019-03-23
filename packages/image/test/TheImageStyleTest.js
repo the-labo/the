@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheImageStyle from '../lib/TheImageStyle'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheImageStyle from '../lib/TheImageStyle'
 
 describe('the-image-style', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheImageStyle />
-    )
+    let element = render(<TheImageStyle />)
     ok(element)
   })
 })

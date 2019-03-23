@@ -84,7 +84,7 @@ tryExample().catch((err) => console.error(err))
 
 - [DataTypes](./doc/api/api.md#module_DataTypes)
 - [default](./doc/api/api.md#module_default)
-- [the-resource-base](./doc/api/api.md#module_the-resource-base)
+- [@the-/resource](./doc/api/api.md#module_@the-/resource)
 - [mixins](./doc/api/api.md#module_mixins)
 
 

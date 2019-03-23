@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheBody from '../lib/TheBody'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheBody from '../lib/TheBody'
 
 describe('the-body', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheBody />
-    )
+    let element = render(<TheBody />)
     ok(element)
   })
 })

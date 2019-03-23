@@ -23,6 +23,14 @@
     "kind": "component",
     "name": "body"
   },
+  "the-head": {
+    "kind": "component",
+    "name": "head"
+  },
+  "the-button": {
+    "kind": "component",
+    "name": "button"
+  },
   "the-cache": {
     "kind": "lib",
     "name": "cache"
@@ -63,6 +71,14 @@
     "kind": "lib",
     "name": "date"
   },
+  "the-route": {
+    "kind": "lib",
+    "name": "route"
+  },
+  "the-router": {
+    "kind": "lib",
+    "name": "router"
+  },
   "the-db": {
     "kind": "lib",
     "name": "db"
@@ -74,6 +90,34 @@
   "the-demo-lib": {
     "kind": "lib",
     "name": "demo-lib"
+  },
+  "the-dialog": {
+    "kind": "component",
+    "name": "dialog"
+  },
+  "the-toast": {
+    "kind": "component",
+    "name": "toast"
+  },
+  "the-alt": {
+    "kind": "component",
+    "name": "alt"
+  },
+  "the-bar": {
+    "kind": "component",
+    "name": "bar"
+  },
+  "the-caught": {
+    "kind": "component",
+    "name": "caught"
+  },
+  "the-cycle": {
+    "kind": "component",
+    "name": "cycle"
+  },
+  "the-meta": {
+    "kind": "component",
+    "name": "meta"
   },
   "the-entrypoint": {
     "kind": "lib",
@@ -103,17 +147,102 @@
     "kind": "component",
     "name": "icon"
   },
+  "the-condition": {
+    "kind": "component",
+    "name": "condition"
+  },
+  "the-container": {
+    "kind": "component",
+    "name": "container"
+  },
+  "the-footer": {
+    "kind": "component",
+    "name": "footer"
+  },
+  "the-image": {
+    "kind": "component",
+    "name": "image"
+  },
+  "the-form": {
+    "kind": "component",
+    "name": "form"
+  },
+  "the-frame": {
+    "kind": "component",
+    "name": "frame"
+  },
+  "the-hamburger": {
+    "kind": "component",
+    "name": "hamburger"
+  },
+  "the-info": {
+    "kind": "component",
+    "name": "info"
+  },
+  "the-input": {
+    "kind": "component",
+    "name": "input"
+  },
+  "the-link": {
+    "kind": "component",
+    "name": "link"
+  },
+  "the-menu": {
+    "kind": "component",
+    "name": "menu"
+  },
+  "the-pager": {
+    "kind": "component",
+    "name": "pager"
+  },
+  "the-table": {
+    "kind": "component",
+    "name": "table"
+  },
+  "the-repeatable": {
+    "kind": "component",
+    "name": "repeatable"
+  },
+  "the-section": {
+    "kind": "component",
+    "name": "section"
+  },
+  "the-step": {
+    "kind": "component",
+    "name": "step"
+  },
+  "the-tab": {
+    "kind": "component",
+    "name": "tab"
+  },
+  "the-root": {
+    "kind": "component",
+    "name": "root"
+  },
   "the-jitter": {
     "kind": "lib",
     "name": "jitter"
   },
+  "the-s3": {
+    "kind": "lib",
+    "name": "s3"
+  },
+
   "the-lint": {
     "kind": "lib",
     "name": "lint"
   },
+  "the-list": {
+    "kind": "component",
+    "name": "list"
+  },
   "the-loc": {
     "kind": "lib",
     "name": "loc"
+  },
+  "the-main": {
+    "kind": "component",
+    "name": "main"
   },
   "the-metrics": {
     "kind": "lib",
@@ -138,6 +267,10 @@
   "the-ps": {
     "kind": "lib",
     "name": "ps"
+  },
+  "the-flick": {
+    "kind": "lib",
+    "name": "flick"
   },
   "the-queue": {
     "kind": "lib",
@@ -215,19 +348,6 @@
     "kind": "component",
     "name": "spin"
   },
-  "the-image": {
-    "kind": "component",
-    "name": "image"
-  },
-  "the-button": {
-    "kind": "component",
-    "name": "button"
-  },
-
-  "the-main": {
-    "kind": "component",
-    "name": "main"
-  },
   "the-store": {
     "kind": "lib",
     "name": "store"
@@ -263,6 +383,14 @@
   "the-url": {
     "kind": "lib",
     "name": "url"
+  },
+  "the-video": {
+    "kind": "component",
+    "name": "video"
+  },
+  "the-view": {
+    "kind": "component",
+    "name": "view"
   },
   "the-window": {
     "kind": "lib",

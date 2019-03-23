@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheButton from '../lib/TheButton'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheButton from '../lib/TheButton'
 
 describe('the-button', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheButton />
-    )
+    let element = render(<TheButton />)
     ok(element)
   })
 })
