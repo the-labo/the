@@ -1,7 +1,7 @@
 {
   "name": "@the-/image",
   "description": "Image of the-components",
-  "version": "15.0.3",
+  "version": "15.0.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -22,14 +22,14 @@
     "@the-/component-demo": "file:../component-demo",
     "@the-/script-build": "file:../script-build",
     "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-router-dom": "^4.3.1",
     "the-script-doc": "^2.0.0",
     "the-script-release": "^1.0.10",
     "the-script-share": "^1.0.6",
-    "the-script-update": "^2.0.1",
-    "@the-/templates": "file:../templates"
+    "the-script-update": "^2.0.1"
   },
   "engines": {
     "node": ">=10",

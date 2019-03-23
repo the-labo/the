@@ -11,6 +11,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/html": "^15.0.3",
     "@the-/style": "^15.0.3",
     "@the-/util-component": "^15.0.3",
     "classnames": "^2.2.6",
