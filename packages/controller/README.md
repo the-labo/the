@@ -67,7 +67,7 @@ Usage
 ```javascript
 'use strict'
 
-const theServer = require('the-server')
+const theServer = require('@the-/server')
 const { TheCtrl } = require('@the-/controller')
 
 async function tryExample() {

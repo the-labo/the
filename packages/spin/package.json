@@ -1,7 +1,7 @@
 {
   "name": "@the-/spin",
   "description": "Spin of the-components",
-  "version": "15.0.3",
+  "version": "15.0.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,12 +11,15 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/icon": "^15.0.3",
+    "@the-/style": "^15.0.3",
     "@the-/util-component": "^15.0.3",
     "asobj": "^3.0.0",
     "classnames": "^2.2.6",
     "prop-types": "^15.6.2"
   },
   "devDependencies": {
+    "@the-/component-demo": "file:../component-demo",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",

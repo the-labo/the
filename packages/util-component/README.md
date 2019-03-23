@@ -77,6 +77,7 @@ Usage
 
 ## API Guide
 
+- [@the-/util-component](./doc/api/api.md#module_@the-/util-component)
 
 
 <!-- Section from "doc/readme/03.API.md.hbs" End -->

@@ -26,6 +26,7 @@ var/
 /packages/code/lib/parsers/index.js
 /packages/code/lib/processors/index.js
 /packages/code/test/TheCodeTest.js
+/packages/component-demo/lib/index.jsx
 /packages/context/lib/index.js
 /packages/controller/lib/index.js
 /packages/date/lib/index.js
@@ -35,11 +36,14 @@ var/
 /packages/db/lib/mixins/index.js
 /packages/db/lib/resources/index.js
 /packages/demo-component/doc/demo/bundle.js
+/packages/demo-component/lib/index.jsx
 /packages/demo-lib/lib/index.js
 /packages/entrypoint/lib/index.js
 /packages/error/lib/index.js
 /packages/handle/lib/index.js
 /packages/hash/lib/index.js
+/packages/icon/doc/demo/bundle.js
+/packages/icon/lib/index.jsx
 /packages/jitter/lib/index.js
 /packages/lint/lib/index.js
 /packages/lint/lib/rules/index.js
@@ -77,8 +81,11 @@ var/
 /packages/server/lib/stores/index.js
 /packages/setting/lib/index.js
 /packages/setting/lib/mixins/index.js
+/packages/spin/doc/demo/bundle.js
+/packages/spin/lib/index.jsx
 /packages/store/lib/index.js
 /packages/stream/lib/index.js
+/packages/style/lib/index.jsx
 /packages/support/lib/index.js
 /packages/templates/lib/eslintignore.js
 /packages/templates/lib/index.js
@@ -86,6 +93,7 @@ var/
 /packages/url/lib/index.js
 /packages/util-array/lib/index.js
 /packages/util-client/lib/index.js
+/packages/util-component/lib/index.js
 /packages/util-file/lib/index.js
 /packages/util-site/lib/index.js
 /packages/util-style/lib/index.js

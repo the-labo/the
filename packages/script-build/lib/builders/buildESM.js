@@ -2,6 +2,7 @@
 
 const ababel = require('ababel')
 const aglob = require('aglob')
+const { isProduction } = require('asenv')
 const {
   mkdirpAsync,
   readFileAsync,
@@ -11,6 +12,10 @@ const {
 const filecopy = require('filecopy')
 const lebab = require('lebab')
 const path = require('path')
+const mtime = (filename) =>
+  statAsync(filename)
+    .catch(() => null)
+    .then((stat) => stat && stat.mtime)
 
 const _tmpl = (filename) =>
   path.resolve(`${__dirname}/../assets/tmpl`, filename)
@@ -23,6 +28,16 @@ module.exports = async function buildESM(
   for (const filename of await aglob(jsPattern, { cwd: srcDir })) {
     const src = path.resolve(srcDir, filename)
     const dest = path.resolve(destDir, filename).replace(/\.jsx$/, '.js')
+
+    if (!isProduction()) {
+      const srcMtime = await mtime(src)
+      const destMtime = await mtime(dest)
+      const skip = Boolean(srcMtime && destMtime && srcMtime <= destMtime)
+      if (skip) {
+        continue
+      }
+    }
+
     try {
       const { code } = lebab.transform(String(await readFileAsync(src)), [
         'commonjs',

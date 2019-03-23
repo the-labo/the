@@ -5,7 +5,7 @@
     "name": "@the-/script-build",
     "kind": "module",
     "description": "Build script for the-projects",
-    "version": "15.0.3",
+    "version": "15.0.10",
     "meta": {
       "lineno": 1,
       "filename": "index.js",
