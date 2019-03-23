@@ -4,24 +4,21 @@
  */
 'use strict'
 
-const listenMix = require('../lib/mixins/listenMix')
-const { ok, equal } = require('assert')
+const { equal } = require('assert')
 const EventEmitter = require('events')
-const asleep = require('asleep')
+const listenMix = require('../lib/mixins/listenMix')
 
 describe('listen-mix', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Close listeners', async () => {
     const Foo = listenMix(class Base extends EventEmitter {})
     const foo = new Foo()
 
     const close = foo.listenEvents({
-      onCreate () {}
+      onCreate() {},
     })
     equal(foo.listenerCount('onCreate'), 1)
     close()

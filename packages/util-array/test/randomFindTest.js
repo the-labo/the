@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const randomFind = require('../lib/randomFind')
-const {ok, equal} = require('assert')
 
 describe('random-find', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     const found = [1, 2, 3].find(randomFind())

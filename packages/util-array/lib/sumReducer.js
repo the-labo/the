@@ -10,22 +10,20 @@
 'use strict'
 
 /** @lends sumReducer */
-function sumReducer (options = {}) {
+function sumReducer(options = {}) {
   if (arguments.length > 1) {
     throw new Error('[sumReducer] Invalid args.')
   }
 
-  const {
-    of = (v) => v,
-  } = options
+  const { of = (v) => v } = options
 
-  return function reducer (reduced, val, i, attr) {
+  return function reducer(reduced, val) {
     return reduced + Number(of(val))
   }
 }
 
-sumReducer.of = function sumReducerOf (key) {
-  return sumReducer({of: (values) => values[key]})
+sumReducer.of = function sumReducerOf(key) {
+  return sumReducer({ of: (values) => values[key] })
 }
 
 module.exports = sumReducer

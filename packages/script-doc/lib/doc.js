@@ -13,8 +13,8 @@ const argx = require('argx')
 const jsdocToMarkdown = require('jsdoc-to-markdown')
 const { EOL } = require('os')
 const path = require('path')
-const { uniqueFilter } = require('@the-/util-array')
 const writeout = require('writeout')
+const { uniqueFilter } = require('@the-/util-array')
 
 /** @lends doc */
 async function doc(dirname = process.cwd(), options = {}) {

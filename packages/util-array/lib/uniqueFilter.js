@@ -10,16 +10,14 @@
 'use strict'
 
 /** @lends uniqueFilter */
-function uniqueFilter (options = {}) {
+function uniqueFilter(options = {}) {
   if (arguments.length > 1) {
     throw new Error('[uniqueFilter] Invalid args.')
   }
-  const {
-    by = (v) => v,
-  } = options
+  const { by = (v) => v } = options
 
   const known = {}
-  return function filter (v, i, arr) {
+  return function filter(v, i) {
     if (i === 0) {
       for (const key of Object.keys(known)) {
         delete known[key]
@@ -34,8 +32,8 @@ function uniqueFilter (options = {}) {
   }
 }
 
-uniqueFilter.by = function uniqueFilterBy (key) {
-  return uniqueFilter({by: (values) => values[key]})
+uniqueFilter.by = function uniqueFilterBy(key) {
+  return uniqueFilter({ by: (values) => values[key] })
 }
 
 module.exports = uniqueFilter

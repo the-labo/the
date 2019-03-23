@@ -1,27 +1,7 @@
 {
-  "the-script-build": {
-    "kind": "script",
-    "name": "script-build"
-  },
-  "the-script-test": {
-    "kind": "script",
-    "name": "script-test"
-  },
-  "the-demo-lib": {
-    "kind": "lib",
-    "name": "demo-lib"
-  },
-  "the-demo-component": {
-    "kind": "component",
-    "name": "demo-component"
-  },
-  "the-scaffold": {
-    "kind": "scaffold",
-    "name": "scaffold"
-  },
-  "the-templates": {
-    "kind": "templates",
-    "name": "templates"
+  "the-array": {
+    "kind": "util",
+    "name": "util-array"
   },
   "the-assert": {
     "kind": "lib",
@@ -31,200 +11,236 @@
     "kind": "lib",
     "name": "assets"
   },
-  "the-check": {
+  "the-ast": {
     "kind": "lib",
-    "name": "check"
-  },
-  "the-window": {
-    "kind": "lib",
-    "name": "window"
+    "name": "ast"
   },
   "the-bin": {
     "kind": "lib",
     "name": "bin"
   },
-  "the-context": {
+  "the-cache": {
     "kind": "lib",
-    "name": "context"
+    "name": "cache"
+  },
+  "the-check": {
+    "kind": "lib",
+    "name": "check"
   },
   "the-client": {
     "kind": "lib",
     "name": "client"
   },
-  "the-server": {
-    "kind": "lib",
-    "name": "server"
-  },
-  "the-ps": {
-    "kind": "lib",
-    "name": "ps"
-  },
-  "the-run": {
-    "kind": "lib",
-    "name": "run"
-  },
-  "the-pack": {
-    "kind": "lib",
-    "name": "pack"
-  },
-  "the-url": {
-    "kind": "lib",
-    "name": "url"
-  },
-  "the-error": {
-    "kind": "lib",
-    "name": "error"
-  },
-  "the-tmp": {
-    "kind": "lib",
-    "name": "tmp"
-  },
-  "the-cache": {
-    "kind": "lib",
-    "name": "cache"
-  },
-  "the-queue": {
-    "kind": "lib",
-    "name": "queue"
-  },
-  "the-hash": {
-    "kind": "lib",
-    "name": "hash"
-  },
-  "the-polyfill": {
-    "kind": "lib",
-    "name": "polyfill"
-  },
-  "the-date": {
-    "kind": "lib",
-    "name": "date"
-  },
-  "the-store": {
-    "kind": "lib",
-    "name": "store"
-  },
-  "the-db": {
-    "kind": "lib",
-    "name": "db"
-  },
-  "the-loc": {
-    "kind": "lib",
-    "name": "loc"
-  },
-  "the-handle": {
-    "kind": "lib",
-    "name": "handle"
-  },
-  "the-entrypoint": {
-    "kind": "lib",
-    "name": "entrypoint"
-  },
-  "the-scope": {
-    "kind": "lib",
-    "name": "scope"
-  },
-  "the-lint": {
-    "kind": "lib",
-    "name": "lint"
-  },
-  "the-ast": {
-    "kind": "lib",
-    "name": "ast"
-  },
-  "the-jitter": {
-    "kind": "lib",
-    "name": "jitter"
-  },
-  "the-refresher": {
-    "kind": "lib",
-    "name": "refresher"
+  "the-client-util": {
+    "kind": "util",
+    "name": "util-client"
   },
   "the-code": {
     "kind": "lib",
     "name": "code"
   },
-  "the-seat": {
+  "the-context": {
     "kind": "lib",
-    "name": "seat"
-  },
-  "the-seed": {
-    "kind": "lib",
-    "name": "seed"
-  },
-  "the-password": {
-    "kind": "lib",
-    "name": "password"
-  },
-  "the-resize": {
-    "kind": "lib",
-    "name": "resize"
-  },
-  "the-support": {
-    "kind": "lib",
-    "name": "support"
-  },
-  "the-setting": {
-    "kind": "lib",
-    "name": "setting"
-  },
-  "the-seal": {
-    "kind": "lib",
-    "name": "seal"
-  },
-  "the-secret": {
-    "kind": "lib",
-    "name": "secret"
-  },
-  "the-metrics": {
-    "kind": "lib",
-    "name": "metrics"
-  },
-  "the-refactor": {
-    "kind": "lib",
-    "name": "refactor"
-  },
-  "the-metrics-presets": {
-    "kind": "lib",
-    "name": "metrics-presets"
-  },
-  "the-file-util": {
-    "kind": "util",
-    "name": "util-file"
-  },
-  "the-client-util": {
-    "kind": "util",
-    "name": "util-client"
-  },
-  "the-style-util": {
-    "kind": "util",
-    "name": "util-style"
-  },
-  "the-site-util": {
-    "kind": "util",
-    "name": "util-site"
-  },
-  "the-sw-util": {
-    "kind": "util",
-    "name": "util-sw"
-  },
-  "the-scene-base": {
-    "kind": "lib",
-    "name": "scene"
+    "name": "context"
   },
   "the-controller-base": {
     "kind": "lib",
     "name": "controller"
   },
+  "the-date": {
+    "kind": "lib",
+    "name": "date"
+  },
+  "the-db": {
+    "kind": "lib",
+    "name": "db"
+  },
+  "the-demo-component": {
+    "kind": "component",
+    "name": "demo-component"
+  },
+  "the-demo-lib": {
+    "kind": "lib",
+    "name": "demo-lib"
+  },
+  "the-entrypoint": {
+    "kind": "lib",
+    "name": "entrypoint"
+  },
+  "the-error": {
+    "kind": "lib",
+    "name": "error"
+  },
+  "the-file-util": {
+    "kind": "util",
+    "name": "util-file"
+  },
+  "the-handle": {
+    "kind": "lib",
+    "name": "handle"
+  },
+  "the-hash": {
+    "kind": "lib",
+    "name": "hash"
+  },
+  "the-jitter": {
+    "kind": "lib",
+    "name": "jitter"
+  },
+  "the-lint": {
+    "kind": "lib",
+    "name": "lint"
+  },
+  "the-loc": {
+    "kind": "lib",
+    "name": "loc"
+  },
+  "the-metrics": {
+    "kind": "lib",
+    "name": "metrics"
+  },
+  "the-metrics-presets": {
+    "kind": "lib",
+    "name": "metrics-presets"
+  },
+  "the-pack": {
+    "kind": "lib",
+    "name": "pack"
+  },
+  "the-password": {
+    "kind": "lib",
+    "name": "password"
+  },
+  "the-polyfill": {
+    "kind": "lib",
+    "name": "polyfill"
+  },
+  "the-ps": {
+    "kind": "lib",
+    "name": "ps"
+  },
+  "the-queue": {
+    "kind": "lib",
+    "name": "queue"
+  },
+  "the-refactor": {
+    "kind": "lib",
+    "name": "refactor"
+  },
+  "the-refresher": {
+    "kind": "lib",
+    "name": "refresher"
+  },
+  "the-resize": {
+    "kind": "lib",
+    "name": "resize"
+  },
+  "the-resource-base": {
+    "kind": "lib",
+    "name": "resource"
+  },
+  "the-run": {
+    "kind": "lib",
+    "name": "run"
+  },
+  "the-scaffold": {
+    "kind": "scaffold",
+    "name": "scaffold"
+  },
+  "the-scene-base": {
+    "kind": "lib",
+    "name": "scene"
+  },
+  "the-scope": {
+    "kind": "lib",
+    "name": "scope"
+  },
+  "the-script-build": {
+    "kind": "script",
+    "name": "script-build"
+  },
+  "the-script-test": {
+    "kind": "script",
+    "name": "script-test"
+  },
+  "the-seal": {
+    "kind": "lib",
+    "name": "seal"
+  },
+  "the-seat": {
+    "kind": "lib",
+    "name": "seat"
+  },
+  "the-secret": {
+    "kind": "lib",
+    "name": "secret"
+  },
+  "the-seed": {
+    "kind": "lib",
+    "name": "seed"
+  },
+  "the-server": {
+    "kind": "lib",
+    "name": "server"
+  },
+  "the-setting": {
+    "kind": "lib",
+    "name": "setting"
+  },
+  "the-site-util": {
+    "kind": "util",
+    "name": "util-site"
+  },
+  "the-spin": {
+    "kind": "component",
+    "name": "spin"
+  },
+  "the-icon": {
+    "kind": "component",
+    "name": "icon"
+  },
+  "the-style": {
+    "kind": "component",
+    "name": "style"
+  },
+  "the-store": {
+    "kind": "lib",
+    "name": "store"
+  },
   "the-stream-base": {
     "kind": "lib",
     "name": "stream"
   },
-  "the-resource-base": {
-    "king": "lib",
-    "name": "resource"
+  "the-style-util": {
+    "kind": "util",
+    "name": "util-style"
   },
-  "the-array": {
-    "king": "util",
-    "name": "util-array"
+  "the-component-util": {
+    "kind": "util",
+    "name": "util-component"
+  },
+  "the-support": {
+    "kind": "lib",
+    "name": "support"
+  },
+  "the-sw-util": {
+    "kind": "util",
+    "name": "util-sw"
+  },
+  "the-templates": {
+    "kind": "templates",
+    "name": "templates"
+  },
+  "the-tmp": {
+    "kind": "lib",
+    "name": "tmp"
+  },
+  "the-url": {
+    "kind": "lib",
+    "name": "url"
+  },
+  "the-window": {
+    "kind": "lib",
+    "name": "window"
   }
 }

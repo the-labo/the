@@ -9,7 +9,12 @@ const pon = require('pon')
 const { coz } = require('pon-task-basic')
 
 module.exports = pon({
-
+  // -----------------------------------
+  // Meta info
+  // -----------------------------------
+  ...{
+    $cwd: __dirname,
+  },
   ...{
     'struct:render': coz('.*.bud')
   },

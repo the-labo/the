@@ -10,13 +10,13 @@
 'use strict'
 
 /** @lends keyPathMap */
-function keyPathMap (keyPath = '', options = {}) {
+function keyPathMap(keyPath = '', options = {}) {
   if (arguments.length > 2) {
     throw new Error('[keyPathMap] Invalid args.')
   }
 
   const names = keyPath.split('.')
-  return function map (v, i, arr) {
+  return function map(v) {
     for (const name of names) {
       v = v && v[name]
     }

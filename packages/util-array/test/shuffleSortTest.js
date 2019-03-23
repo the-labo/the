@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const shuffleSort = require('../lib/shuffleSort')
-const {ok, equal} = require('assert')
 
 describe('shuffle-sort', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     const sorted = [1, 2, 3].sort(shuffleSort())

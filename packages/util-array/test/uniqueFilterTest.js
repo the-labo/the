@@ -4,37 +4,30 @@
  */
 'use strict'
 
+const { deepEqual } = require('assert')
 const uniqueFilter = require('../lib/uniqueFilter')
-const {deepEqual} = require('assert')
 
 describe('unique-filter', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
-    deepEqual(
-      ['a', 'b', 'c', 'a'].filter(uniqueFilter()),
-      ['a', 'b', 'c']
-    )
+    deepEqual(['a', 'b', 'c', 'a'].filter(uniqueFilter()), ['a', 'b', 'c'])
 
     deepEqual(
-      [{id: 1}, {id: 2}, {id: 1}].filter(
+      [{ id: 1 }, { id: 2 }, { id: 1 }].filter(
         uniqueFilter({
-          by: ({id}) => id
-        })
+          by: ({ id }) => id,
+        }),
       ),
-      [{id: 1}, {id: 2}]
+      [{ id: 1 }, { id: 2 }],
     )
 
-    deepEqual(
-      [{id: 1}, {id: 2}, {id: 1}].filter(
-        uniqueFilter.by('id')
-      ),
-      [{id: 1}, {id: 2}]
-    )
+    deepEqual([{ id: 1 }, { id: 2 }, { id: 1 }].filter(uniqueFilter.by('id')), [
+      { id: 1 },
+      { id: 2 },
+    ])
   })
 })
 

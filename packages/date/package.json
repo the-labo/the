@@ -14,6 +14,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/util-array": "^15.0.4",
     "abind": "^1.0.4",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.23"

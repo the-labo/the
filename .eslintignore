@@ -35,7 +35,6 @@ var/
 /packages/db/lib/mixins/index.js
 /packages/db/lib/resources/index.js
 /packages/demo-component/doc/demo/bundle.js
-/packages/demo-component/lib/index.jsx
 /packages/demo-lib/lib/index.js
 /packages/entrypoint/lib/index.js
 /packages/error/lib/index.js
@@ -56,6 +55,8 @@ var/
 /packages/refactor/lib/index.js
 /packages/refresher/lib/index.js
 /packages/resize/lib/index.js
+/packages/resource/lib/index.js
+/packages/resource/lib/mixins/index.js
 /packages/run/lib/index.js
 /packages/scene/lib/index.js
 /packages/scene/lib/mixins/index.js
@@ -81,7 +82,9 @@ var/
 /packages/support/lib/index.js
 /packages/templates/lib/eslintignore.js
 /packages/templates/lib/index.js
+/packages/tmp/lib/index.js
 /packages/url/lib/index.js
+/packages/util-array/lib/index.js
 /packages/util-client/lib/index.js
 /packages/util-file/lib/index.js
 /packages/util-site/lib/index.js

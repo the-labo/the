@@ -4,20 +4,18 @@
  */
 'use strict'
 
+const { deepEqual } = require('assert')
 const keyPathMap = require('../lib/keyPathMap')
-const {ok, equal, deepEqual} = require('assert')
 
 describe('key-path-map', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     deepEqual(
-      [{foo: {bar: 10}}, {foo: {bar: 20}}].map(keyPathMap('foo.bar')),
-      [10, 20]
+      [{ foo: { bar: 10 } }, { foo: { bar: 20 } }].map(keyPathMap('foo.bar')),
+      [10, 20],
     )
   })
 })

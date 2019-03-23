@@ -1,14 +1,8 @@
 'use strict'
 
-const pkg = require('../package')
-const {dir} = require('@the-/templates')
+const { Index: IndexJs } = require('@the-/templates/presets/lib')
 
-module.exports = dir({
-  dirname: __dirname,
-  name: pkg.name,
-  description: pkg.description,
-  cjs: true,
-})
+module.exports = IndexJs(__dirname)
 
 if (!module.parent) {
   require('coz').render(__filename)

@@ -32,6 +32,7 @@
   },
   "homepage": "https://github.com/the-labo/the/tree/master/packages/resource#readme",
   "keywords": [
+    "lib",
     "the"
   ],
   "license": "MIT",
@@ -42,10 +43,9 @@
   "repository": "the-labo/the",
   "scripts": {
     "build": "the-script-build",
-    "doc": "the-script-jsdoc",
-    "prepare": "the-script-build && the-script-jsdoc",
-    "share": "the-script-share",
-    "test": "mocha",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-build",
     "watch": "the-script-build -w"
   }
 }

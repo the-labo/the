@@ -40,28 +40,40 @@ ${msg}
     const fromPkgFile = path.resolve(fromDir, 'package.json')
     const toPkgFile = path.resolve(toDir, 'package.json')
     const toPkg = JSON.parse(await readFile(toPkgFile))
-
-    await unlink(path.resolve(toDir, 'ci/release.js')).catch(() => null)
-    await unlink(path.resolve(toDir, 'ci/share.js')).catch(() => null)
-    await unlink(path.resolve(toDir, 'doc/api/.api.md.bud')).catch(() => null)
-    await unlink(path.resolve(toDir, 'LICENSE')).catch(() => null)
-    await unlink(path.resolve(toDir, '.travis.yml')).catch(() => null)
-    await unlink(path.resolve(toDir, '.LICENSE.bud')).catch(() => null)
-    rimraf.sync(path.resolve(toDir, '.git'))
-    rimraf.sync(path.resolve(toDir, 'ci'))
-    rimraf.sync(path.resolve(toDir, 'shim'))
-    rimraf.sync(path.resolve(toDir, 'doc/guides'))
-    await unlink(path.resolve(toDir, 'jsdoc.json')).catch(() => null)
-    await unlink(path.resolve(toDir, '.gitignore')).catch(() => null)
+    const filesToRemove = [
+      'ci/release.js',
+      'ci/share.js',
+      'doc/api/.api.md.bud',
+      'LICENSE',
+      '.travis.yml',
+      '.LICENSE.bud',
+      'jsdoc.json',
+      '.gitignore',
+    ]
+    for (const filename of filesToRemove) {
+      await unlink(path.resolve(toDir, filename)).catch(() => null)
+    }
+    const dirsToRemvoe = [
+      '.git',
+      'ci',
+      'shim',
+      'doc/guides',
+    ]
+    for (const dirname of dirsToRemvoe) {
+      rimraf.sync(path.resolve(toDir, dirname))
+    }
     await copyAsync(
       path.resolve(baseDir, '.npmignore'),
       path.resolve(toDir, '.npmignore'),
     )
 
     if (!/demo/.test(name)) {
-
       if (['component'].includes(kind)) {
-        const demoComponentDir = path.resolve(baseDir, 'packages', 'demo-component')
+        const demoComponentDir = path.resolve(
+          baseDir,
+          'packages',
+          'demo-component',
+        )
 
         const filenamesToCopy = [
           'doc/links.json',
@@ -105,28 +117,21 @@ ${msg}
         const demoLibDir = path.resolve(baseDir, 'packages', 'demo-lib')
         rimraf.sync(path.resolve(toDir, 'doc/readme'))
         await copyDirAsync(`${demoLibDir}/doc/readme`, `${toDir}/doc/readme`)
-        await copyAsync(
-          `${demoLibDir}/doc/links.json`,
-          `${toDir}/doc/links.json`,
-        )
-        await copyAsync(
-          `${demoLibDir}/doc/overview.md`,
-          `${toDir}/doc/overview.md`,
-        )
         await unlink(path.resolve(toDir, 'lib/.index.bud')).catch(() => null)
-        await copyAsync(
-          `${demoLibDir}/lib/.index.js.bud`,
-          `${toDir}/lib/.index.js.bud`,
-        )
-        await copyAsync(
-          `${demoLibDir}/test/.test.js.bud`,
-          `${toDir}/test/.test.js.bud`,
-        )
-        await copyAsync(
-          `${demoLibDir}/.README.md.bud`,
-          `${toDir}/.README.md.bud`,
-        )
-        await copyAsync(`${demoLibDir}/.npmignore`, `${toDir}/.npmignore`)
+        const filesToCopy = [
+          'doc/links.json',
+          'doc/overview.md',
+          'lib/.index.js.bud',
+          'test/.test.js.bud',
+          '.README.md.bud',
+          '.npmignore',
+        ]
+        for (const filename of filesToCopy) {
+          await copyAsync(
+            `${demoLibDir}/${filename}`,
+            `${toDir}/${filename}`,
+          )
+        }
         const toPkg = JSON.parse(await readFile(toPkgFile))
         const { scripts = {} } = toPkg
         scripts.doc = 'the-script-doc'
@@ -135,7 +140,7 @@ ${msg}
         scripts.prepare = 'npm run build && npm run doc'
         delete scripts.share
         delete scripts.buid
-        await writeFile(toPkgFile, JSON.stringify({ ...toPkg, scripts }))
+        await writeFile(toPkgFile, JSON.stringify({ ...toPkg, scripts }, null, 2))
       }
     }
 
@@ -160,6 +165,7 @@ ${msg}
         'the-script-jsdoc',
         'the-templates',
         'the-script-build',
+        'the-component-demo',
         'ape-releasing',
         'amocha',
         'mocha',

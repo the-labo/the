@@ -1,18 +1,14 @@
 'use strict'
 
-const {
-  uniqueFilter,
-  keyPathMap
-} = require('@the-/util-array')
+const { keyPathMap, uniqueFilter } = require('@the-/util-array')
 
-async function tryExample () {
-
+async function tryExample() {
   console.log(
-    ['foo', 'bar', 'foo'].filter(uniqueFilter()) // => ['foo', 'bar']
+    ['foo', 'bar', 'foo'].filter(uniqueFilter()), // => ['foo', 'bar']
   )
 
   console.log(
-    [{foo: {bar: 10}}, {foo: {bar: 20}}].map(keyPathMap('foo.bar')) // => [10,20]
+    [{ foo: { bar: 10 } }, { foo: { bar: 20 } }].map(keyPathMap('foo.bar')), // => [10,20]
   )
 }
 

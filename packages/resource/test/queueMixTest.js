@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const queueMix = require('../lib/mixins/queueMix')
-const { ok, equal } = require('assert')
-
 describe('queue-mix', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

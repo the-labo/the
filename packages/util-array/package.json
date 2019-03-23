@@ -1,7 +1,7 @@
 {
   "name": "@the-/util-array",
   "description": "Array utility of the-framework",
-  "version": "15.0.3",
+  "version": "15.0.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -24,20 +24,20 @@
   },
   "homepage": "https://github.com/the-labo/the/tree/master/packages/util-array#readme",
   "keywords": [
-    "the"
+    "the",
+    "util"
   ],
   "license": "MIT",
   "main": "lib",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": "the-labo/the-array",
   "scripts": {
     "build": "the-script-build",
-    "doc": "the-script-jsdoc",
-    "prepare": "the-script-build && the-script-jsdoc",
-    "share": "the-script-share",
-    "test": "mocha",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-build",
     "watch": "the-script-build -w"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

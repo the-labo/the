@@ -45,7 +45,7 @@ module.exports = pon({
     'format:root': theCode([
       '.*.bud',
       '.travis.yml',
-      '+(misc)/**/*.js'
+      '+(misc)/**/*.*'
     ]),
     'format:packages': theCode([
       'packages/*/+(bin|example|doc|lib|misc|test)/**/*.js',
@@ -78,6 +78,8 @@ module.exports = pon({
   // Aliases
   // -----------------------------------
   ...{
+    /** Shortcut for 'format` task */
+    f: 'format',
     /** Shortcut for 'test` task */
     t: 'test',
   },

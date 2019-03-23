@@ -8,12 +8,12 @@
 'use strict'
 
 /** @lends randomFind */
-function randomFind () {
+function randomFind() {
   if (arguments.length > 2) {
     throw new Error('[randomFind] Invalid args.')
   }
   let hit = -1
-  return function find (v, i, arr) {
+  return function find(v, i, arr) {
     if (i === 0) {
       hit = parseInt(arr.length * Math.random())
     }
