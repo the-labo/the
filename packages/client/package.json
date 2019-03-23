@@ -15,7 +15,6 @@
     "@the-/check": "^15.0.2",
     "@the-/pack": "^15.0.2",
     "@the-/queue": "^15.0.2",
-    "@the-/server": "file:../server",
     "argx": "^4.0.0",
     "asleep": "^1.0.3",
     "browser-cookies": "^1.2.0",
@@ -39,7 +38,8 @@
     "aport": "^2.0.0",
     "coz": "^7.0.19",
     "react": "^16.8.3",
-    "react-dom": "^16.8.3"
+    "react-dom": "^16.8.3",
+    "@the-/server": "file:../server"
   },
   "engines": {
     "node": ">=10",

@@ -12,32 +12,29 @@
   },
   "dependencies": {
     "@the-/style": "^15.0.3",
-    "@the-/templates": "file:../templates",
     "@the-/util-component": "^15.0.3",
     "classnames": "^2.2.6",
     "prop-types": "^15.6.2",
     "the-component-constants": "^2.0.4"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.0.0-beta.51",
+    "@babel/runtime": "^7.4.2",
+    "@the-/component-demo": "file:../component-demo",
     "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
-    "ape-tmpl": "^6.0.11",
+    "@the-/templates": "file:../templates",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-router-dom": "^4.3.1",
-    "the-script-doc": "^1.0.1",
-    "the-script-release": "^1.0.8",
-    "the-script-share": "^1.0.5",
-    "the-script-update": "^2.0.0"
+    "react-router-dom": "^4.3.1"
   },
   "engines": {
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/body#readme",
   "keywords": [
-    "react-component",
+    "component",
     "the"
   ],
   "license": "MIT",
@@ -53,11 +50,8 @@
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",
-    "prepare": "the-script-build && the-script-doc",
-    "release": "the-script-release -y",
-    "share": "the-script-share",
-    "test": "the-script-test",
-    "update": "the-script-update",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-build",
     "watch": "the-script-build -w"
   }
 }

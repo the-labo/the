@@ -14,6 +14,9 @@ var/
 /packages/ast/lib/constants/index.js
 /packages/ast/lib/index.js
 /packages/bin/lib/index.js
+/packages/body/lib/index.jsx
+/packages/button/doc/demo/bundle.js
+/packages/button/lib/index.jsx
 /packages/cache/lib/index.js
 /packages/check/lib/index.js
 /packages/client/lib/constants/index.js
@@ -42,12 +45,17 @@ var/
 /packages/error/lib/index.js
 /packages/handle/lib/index.js
 /packages/hash/lib/index.js
+/packages/html/lib/index.jsx
 /packages/icon/doc/demo/bundle.js
 /packages/icon/lib/index.jsx
+/packages/image/doc/demo/bundle.js
+/packages/image/lib/index.jsx
 /packages/jitter/lib/index.js
 /packages/lint/lib/index.js
 /packages/lint/lib/rules/index.js
 /packages/loc/lib/index.js
+/packages/main/doc/demo/bundle.js
+/packages/main/lib/index.jsx
 /packages/metrics-presets/lib/index.js
 /packages/metrics/lib/counters/index.js
 /packages/metrics/lib/index.js
@@ -85,6 +93,7 @@ var/
 /packages/spin/lib/index.jsx
 /packages/store/lib/index.js
 /packages/stream/lib/index.js
+/packages/style/doc/demo/bundle.js
 /packages/style/lib/index.jsx
 /packages/support/lib/index.js
 /packages/templates/lib/eslintignore.js

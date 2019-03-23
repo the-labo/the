@@ -4,6 +4,7 @@
 
 const aglob = require('aglob')
 const { copyAsync, copyDirAsync } = require('asfs')
+const { EOL } = require('os')
 const { spawnSync } = require('child_process')
 const {
   chmod,
@@ -22,35 +23,98 @@ const baseDir = `${__dirname}/../..`
 
 process.chdir(baseDir)
 
-;(async () => {
-  for (const [fromPkgName, { kind, name }] of Object.entries(transporting)) {
-    const fromDir = path.resolve(baseDir, '..', fromPkgName)
-    const toDir = path.resolve(baseDir, 'packages', name)
-    const toStat = await stat(toDir).catch(() => null)
-    const fromREADME = path.resolve(fromDir, 'README.md')
-    if (!toStat) {
-      spawnSync('cp', ['-R', fromDir, toDir])
-      await chmod(fromREADME, '644')
-      await unlink(path.resolve(fromDir, '.README.md.bud')).catch(() => null)
-      const msg = `This package moved to [@the-/${name}](https://www.npmjs.com/package/@the-/${name})`
-      await writeFile(
-        fromREADME,
-        `## NO LONGER MAINTAINED
+const _deprecatePackage = async (fromDir) => {
+  await chmod(fromREADME, '644')
+  await unlink(path.resolve(fromDir, '.README.md.bud')).catch(() => null)
+  const fromREADME = path.resolve(fromDir, 'README.md')
+  const msg = `This package moved to [@the-/${name}](https://www.npmjs.com/package/@the-/${name})`
+  await writeFile(
+    fromREADME,
+    `## NO LONGER MAINTAINED
 
 ${msg}
       `,
-      )
-      spawnSync('git', ['add', '.'], { cwd: fromDir })
-      spawnSync('git', ['commit', '-m', 'Deprecate'], { cwd: fromDir })
-      spawnSync('git', ['push'], { cwd: fromDir })
-      spawnSync(`npm`, ['deprecate', path.basename(fromDir), msg], {
-        cwd: fromDir,
-      })
+  )
+  spawnSync('git', ['add', '.'], { cwd: fromDir })
+  spawnSync('git', ['commit', '-m', 'Deprecate'], { cwd: fromDir })
+  spawnSync('git', ['push'], { cwd: fromDir })
+  spawnSync(`npm`, ['deprecate', path.basename(fromDir), msg], {
+    cwd: fromDir,
+  })
+}
+
+const _unlinkFiles = async (baseDir, filenames) => {
+  for (const filename of filenames) {
+    await unlink(path.resolve(baseDir, filename)).catch(() => null)
+  }
+}
+
+const _unlinkDirs = async (baseDir, dirnames) => {
+  for (const dirname of dirnames) {
+    rimraf.sync(path.resolve(baseDir, dirname))
+  }
+}
+
+const _copyFiles = async (fromDir, toDir, filenames) => {
+  for (const filename of filenames) {
+    await copyAsync(
+      path.resolve(fromDir, filename),
+      path.resolve(toDir, filename),
+    )
+  }
+}
+const _addDevDeps = async (baseDir, devDeps) => {
+  const pkg = JSON.parse(await readFile(path.resolve(baseDir, 'package.json')))
+  for (const [name, version] of Object.entries(devDeps)) {
+    if (pkg.name === name) {
+      continue
+    }
+    const has = name in (pkg.devDependencies || {})
+    if (has) {
+      continue
+    }
+    if (/^file:/.test(version)) {
+      spawnSync('npm', ['i', '-D', version], { cwd: baseDir })
+    } else {
+      spawnSync('npm', ['i', '-D', name], { cwd: baseDir })
+    }
+  }
+}
+
+const _rewritePkg = async (baseDir, converter) => {
+  const pkgFile = path.resolve(baseDir, 'package.json')
+  const pkg = JSON.parse(await readFile(pkgFile))
+  await writeFile(pkgFile, JSON.stringify({
+    ...pkg,
+    ...converter(pkg),
+  }, null, 2) + EOL)
+}
+
+const _removeDevDeps = async (baseDir, names) => {
+    const pkg = JSON.parse(await readFile(path.resolve(baseDir, 'package.json')))
+    for (const name of names) {
+      const has = name in (pkg.dependencies || {})
+      if (has) {
+        spawnSync('npm', ['un', '-D', name], { cwd: baseDir })
+      }
+    }
+  }
+
+;(async () => {
+  for (const [fromPkgName, { kind, name }] of Object.entries(transporting)) {
+    console.log(`== ${fromPkgName} => ${name} ===`)
+    const fromDir = path.resolve(baseDir, '..', fromPkgName)
+    const toDir = path.resolve(baseDir, 'packages', name)
+    const toStat = await stat(toDir).catch(() => null)
+
+    if (!toStat) {
+      spawnSync('cp', ['-R', fromDir, toDir])
+      await _deprecatePackage(fromDir)
     }
     const fromPkgFile = path.resolve(fromDir, 'package.json')
     const toPkgFile = path.resolve(toDir, 'package.json')
     const toPkg = JSON.parse(await readFile(toPkgFile))
-    const filesToRemove = [
+    await _unlinkFiles(toDir, [
       'ci/release.js',
       'ci/share.js',
       'doc/api/.api.md.bud',
@@ -59,18 +123,9 @@ ${msg}
       '.LICENSE.bud',
       'jsdoc.json',
       '.gitignore',
-    ]
-    for (const filename of filesToRemove) {
-      await unlink(path.resolve(toDir, filename)).catch(() => null)
-    }
-    const dirsToRemove = ['.git', 'ci', 'shim', 'doc/guides']
-    for (const dirname of dirsToRemove) {
-      rimraf.sync(path.resolve(toDir, dirname))
-    }
-    await copyAsync(
-      path.resolve(baseDir, '.npmignore'),
-      path.resolve(toDir, '.npmignore'),
-    )
+    ])
+    await _unlinkDirs(toDir, ['.git', 'ci', 'shim', 'doc/guides'])
+    await _copyFiles(baseDir, toDir, ['.npmignore'])
     if (/^component-demo/.test(name)) {
       continue
     }
@@ -86,7 +141,7 @@ ${msg}
           [`from '${fromPkgName}'`]: [`from '@the-/${name}'`],
         })
 
-        const filenamesToCopy = [
+        await _copyFiles(demoComponentDir, toDir, [
           '.README.md.bud',
           'doc/links.json',
           'doc/demo/entrypoint.jsx',
@@ -94,68 +149,35 @@ ${msg}
           'lib/.index.jsx.bud',
           'test/.test.js.bud',
           'test/.npmignore',
-        ]
-        for (const filename of filenamesToCopy) {
-          await copyAsync(
-            `${demoComponentDir}/${filename}`,
-            `${toDir}/${filename}`,
-          )
-        }
-        const filenamesToUnlink = [
+        ])
+        await _unlinkFiles(toDir, [
           'lib/.index.bud',
           'lib/.index.js.bud',
           'signature.json',
-        ]
-        for (const filename of filenamesToUnlink) {
-          await unlink(path.resolve(toDir, filename)).catch(() => null)
-        }
-        const toPkg = JSON.parse(await readFile(toPkgFile))
-        const { scripts = {} } = toPkg
-        scripts.doc = 'the-script-doc'
-        scripts.build = 'the-script-build'
-        scripts.test = 'the-script-build'
-        scripts.prepare = 'npm run build && npm run doc'
-        delete scripts.share
-        delete scripts.buid
+        ])
 
+        await _rewritePkg(toDir, ({ scripts = {} }) => {
+          scripts.doc = 'the-script-doc'
+          scripts.build = 'the-script-build'
+          scripts.test = 'the-script-build'
+          scripts.prepare = 'npm run build && npm run doc'
+          delete scripts.share
+          delete scripts.buid
+          return scripts
+        })
         {
-          const devDepsToAdd = {
+          await _addDevDeps({
             '@the-/script-build': 'file:../script-build',
             '@the-/script-doc': 'file:../script-doc',
             '@the-/script-test': 'file:../script-test',
             '@the-/templates': 'file:../templates',
-          }
-          for (const [name, src] of Object.entries(devDepsToAdd)) {
-            if (!(name in toPkg.devDependencies)) {
-              if (toPkg.name === name) {
-                continue
-              }
-              spawnSync('npm', ['i', src, '-D'], { cwd: toDir })
-            }
-          }
+          })
         }
-        const depsToRemove = ['coz']
-        for (const name of depsToRemove) {
-          const has = name in (toPkg.dependencies || {})
-          if (has) {
-            spawnSync('npm', ['un', '-D', name], { cwd: toDir })
-          }
-        }
-        const devDepsToAdd = {
+        await _removeDevDeps(['coz'])
+        await _addDevDeps(toDir, {
           '@the-/component-demo': 'file:../component-demo',
           coz: '*',
-        }
-        for (const [name, version] of Object.entries(devDepsToAdd)) {
-          const has = name in (toPkg.devDependencies || {})
-          if (!has) {
-            if (/^file:/.test(version)) {
-              spawnSync('npm', ['i', '-D', version], { cwd: toDir })
-            } else {
-              spawnSync('npm', ['i', '-D', name], { cwd: toDir })
-            }
-          }
-        }
-        await writeFile(toPkgFile, JSON.stringify({ ...toPkg, name: `@the-/${name}`, scripts }))
+        })
 
         for (const testJsx of await aglob('test/*.jsx', { cwd: toDir })) {
           const basename = path.basename(testJsx, '.jsx')
@@ -170,88 +192,55 @@ ${msg}
         rimraf.sync(path.resolve(toDir, 'doc/readme'))
         await copyDirAsync(`${demoLibDir}/doc/readme`, `${toDir}/doc/readme`)
         await unlink(path.resolve(toDir, 'lib/.index.bud')).catch(() => null)
-        const filesToCopy = [
+        await _copyFiles(demoLibDir, toDir, [
           'doc/links.json',
           'doc/overview.md',
           'lib/.index.js.bud',
           'test/.test.js.bud',
           '.README.md.bud',
           '.npmignore',
-        ]
-        for (const filename of filesToCopy) {
-          await copyAsync(`${demoLibDir}/${filename}`, `${toDir}/${filename}`)
-        }
-        const toPkg = JSON.parse(await readFile(toPkgFile))
-        const { scripts = {} } = toPkg
-        scripts.doc = 'the-script-doc'
-        scripts.build = 'the-script-build'
-        scripts.test = 'the-script-build'
-        scripts.prepare = 'npm run build && npm run doc'
-        delete scripts.share
-        delete scripts.buid
-        await writeFile(
-          toPkgFile,
-          JSON.stringify({
-            ...toPkg,
-            name: `@the-/${name}`,
+        ])
+        await _rewritePkg(toDir, ({ scripts = {} }) => {
+          scripts.doc = 'the-script-doc'
+          scripts.build = 'the-script-build'
+          scripts.test = 'the-script-build'
+          scripts.prepare = 'npm run build && npm run doc'
+          delete scripts.share
+          delete scripts.buid
+
+          return {
             scripts,
-          }, null, 2),
-        )
+            name: `@the-/${name}`,
+          }
+        })
       }
     }
 
     const { dependencies = {}, devDependencies = {} } = toPkg
-    // Cleanup
-    {
-      const depsToRemove = []
-      for (const name of depsToRemove) {
-        if (name in dependencies) {
-          console.log(`remove ${name} from ${toDir}...`)
-          spawnSync('npm', ['un', name], { cwd: toDir })
-        }
-      }
-      const devDepsToRemove = [
-        'the-script-share',
-        'the-script-update',
-        'ape-tasking',
-        'ape-formatting',
-        'the-script-release',
-        'the-script-test',
-        'the-script-doc',
-        'the-script-jsdoc',
-        'the-templates',
-        'the-script-build',
-        'the-component-demo',
-        'ape-releasing',
-        'amocha',
-        'mocha',
-        'ape-tmpl',
-        'ape-updating',
-      ]
-      for (const name of devDepsToRemove) {
-        if (name in devDependencies) {
-          console.log(`remove ${name} from ${toDir}...`)
-          spawnSync('npm', ['un', '-D', name], { cwd: toDir })
-        }
-      }
-    }
-    // add
-    {
-      const devDepsToAdd = {
-        '@the-/script-build': 'file:../script-build',
-        '@the-/script-doc': 'file:../script-doc',
-        '@the-/script-test': 'file:../script-test',
-        '@the-/templates': 'file:../templates',
-      }
-      for (const [name, src] of Object.entries(devDepsToAdd)) {
-        if (!(name in devDependencies)) {
-          if (toPkg.name === name) {
-            continue
-          }
-          spawnSync('npm', ['i', src, '-D'], { cwd: toDir })
-        }
-      }
-    }
+    await _removeDevDeps(toDir, [
+      'the-script-share',
+      'the-script-update',
+      'ape-tasking',
+      'ape-formatting',
+      'the-script-release',
+      'the-script-test',
+      'the-script-doc',
+      'the-script-jsdoc',
+      'the-templates',
+      'the-script-build',
+      'the-component-demo',
+      'ape-releasing',
+      'amocha',
+      'mocha',
+      'ape-tmpl',
+      'ape-updating',
+    ])
+    await _addDevDeps(toDir, {
+      '@the-/script-build': 'file:../script-build',
+      '@the-/script-doc': 'file:../script-doc',
+      '@the-/script-test': 'file:../script-test',
+      '@the-/templates': 'file:../templates',
+    })
     // example
     {
       const exampleUsageJs = path.resolve(toDir, 'example/example-usage.js')
@@ -265,48 +254,42 @@ ${msg}
       }
     }
     {
-      const toPkg = JSON.parse(await readFile(toPkgFile))
-      const { scripts = {}, dependencies = {}, devDependencies = {} } = toPkg
-      for (const [name, ver] of Object.entries(dependencies)) {
-        if (/^file/.test(ver)) {
-          devDependencies[name] = ver
-          delete dependencies[name]
+      await _rewritePkg(toPkgFile, ({ scripts = {}, dependencies = {}, devDependencies = {} }) => {
+        for (const [name, ver] of Object.entries(dependencies)) {
+          if (/^file/.test(ver)) {
+            devDependencies[name] = ver
+            delete dependencies[name]
+          }
         }
-      }
-      delete scripts.update
-      delete scripts.release
-      await writeFile(
-        toPkgFile,
-        JSON.stringify(
-          {
-            ...toPkg,
-            author: {
-              email: 'okunishinishi@gmail.com',
-              name: 'Taka Okunishi',
-              url: 'http://okunishitaka.com',
-            },
-            bugs: {
-              url: 'https://github.com/the-labo/the#issues',
-            },
-            engines: {
-              node: '>=10',
-              npm: '>=6',
-            },
-            homepage: `https://github.com/the-labo/the/tree/master/packages/${toPkg.name
-              .split('/')
-              .pop()}#readme`,
-            keywords: ['the', kind].filter(Boolean).sort(),
-            name: `@the-/${name}`,
-            publishConfig: {
-              access: 'public',
-            },
-            scripts,
-            version: pkg.version,
+        delete scripts.update
+        delete scripts.release
+        return {
+          scripts,
+          devDependencies,
+          dependencies,
+          author: {
+            email: 'okunishinishi@gmail.com',
+            name: 'Taka Okunishi',
+            url: 'http://okunishitaka.com',
           },
-          null,
-          2,
-        ),
-      )
+          bugs: {
+            url: 'https://github.com/the-labo/the#issues',
+          },
+          engines: {
+            node: '>=10',
+            npm: '>=6',
+          },
+          homepage: `https://github.com/the-labo/the/tree/master/packages/${toPkg.name
+            .split('/')
+            .pop()}#readme`,
+          keywords: ['the', kind].filter(Boolean).sort(),
+          name: `@the-/${name}`,
+          publishConfig: {
+            access: 'public',
+          },
+        }
+      })
+
     }
   }
 })().catch((e) => {

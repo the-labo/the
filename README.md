@@ -77,6 +77,7 @@ root for the-project
 - [jitter](./packages/jitter)
 - [lint](./packages/lint)
 - [loc](./packages/loc)
+- [main](./packages/main)
 - [metrics](./packages/metrics)
 - [metrics-presets](./packages/metrics-presets)
 - [pack](./packages/pack)

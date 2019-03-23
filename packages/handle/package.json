@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@the-/check": "^15.0.2",
-    "@the-/scene": "file:../scene",
     "abind": "^1.0.3",
     "asenv": "^3.0.1",
     "asobj": "^3.0.0"
@@ -24,7 +23,8 @@
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
-    "react": "^16.7.0"
+    "react": "^16.7.0",
+    "@the-/scene": "file:../scene"
   },
   "engines": {
     "node": ">=10",

@@ -13,8 +13,6 @@
   },
   "dependencies": {
     "@the-/error": "^15.0.3",
-    "@the-/scope": "file:../scope",
-    "@the-/store": "file:../store",
     "@the-/url": "^15.0.3",
     "asleep": "^1.0.3",
     "asobj": "^3.0.0",
@@ -28,7 +26,9 @@
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "@the-/scope": "file:../scope",
+    "@the-/store": "file:../store"
   },
   "engines": {
     "node": ">=10",

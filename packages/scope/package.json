@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@the-/check": "^15.0.2",
-    "@the-/store": "file:../store",
     "asobj": "^3.0.1"
   },
   "devDependencies": {
@@ -23,7 +22,8 @@
     "@the-/templates": "file:../templates",
     "eslint": "^5.13.0",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "@the-/store": "file:../store"
   },
   "engines": {
     "node": ">=10",

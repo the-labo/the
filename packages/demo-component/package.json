@@ -1,7 +1,7 @@
 {
   "name": "@the-/demo-component",
   "description": "Demo of the-components",
-  "version": "15.0.4",
+  "version": "15.0.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,7 +11,6 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/component-demo": "file:../component-demo",
     "@the-/style": "^15.0.3",
     "@the-/util-component": "^15.0.3",
     "classnames": "^2.2.6",
@@ -26,7 +25,8 @@
     "objnest": "^5.0.6",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
-    "react-router-dom": "^5.0.0"
+    "react-router-dom": "^5.0.0",
+    "@the-/component-demo": "file:../component-demo"
   },
   "engines": {
     "node": ">=10",

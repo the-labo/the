@@ -39,9 +39,9 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/button#readme",
   "keywords": [
-    "react-component",
+    "component",
     "the"
   ],
   "license": "MIT",
@@ -57,11 +57,8 @@
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",
-    "prepare": "the-script-build && the-script-doc",
-    "release": "the-script-release -y",
-    "share": "the-script-share",
-    "test": "the-script-test",
-    "update": "the-script-update",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-build",
     "watch": "the-script-build -w"
   }
 }
