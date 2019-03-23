@@ -4,16 +4,13 @@
  */
 'use strict'
 
+const { ok } = require('assert').strict
 const isKeyCode = require('../lib/isKeyCode')
-const React = require('react')
-const { ok, equal } = require('assert').strict
 
 describe('is-key-code', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
     ok(isKeyCode.enter(13))

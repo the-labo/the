@@ -9,7 +9,7 @@
 <dt><a href="#module_default">default</a></dt>
 <dd><p>Default exports</p>
 </dd>
-<dt><a href="#module_the-resource-base">the-resource-base</a></dt>
+<dt><a href="#module_@the-/resource">@the-/resource</a></dt>
 <dd><p>Base of the-resource</p>
 </dd>
 <dt><a href="#module_mixins">mixins</a></dt>
@@ -68,9 +68,9 @@ Data types
 ## default
 Default exports
 
-<a name="module_the-resource-base"></a>
+<a name="module_@the-/resource"></a>
 
-## the-resource-base
+## @the-/resource
 Base of the-resource
 
 <a name="module_mixins"></a>

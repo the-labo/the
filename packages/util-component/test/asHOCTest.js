@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const asHOC = require('../lib/asHOC')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('as-ho-c', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

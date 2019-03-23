@@ -4,83 +4,85 @@
  */
 'use strict'
 
+const { deepEqual, ok } = require('assert')
 const asStyleData = require('../lib/asStyleData')
-const { ok, deepEqual } = require('assert')
 
 describe('as-style-data', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('As style data', () => {
     const data = asStyleData('.foo', {
       '.foo-inner': {
-        display: 'block',
         '.bar': {
-          text: 'green'
-        }
-      },
-      '&:hover,&:active': {
-        opacity: 0.5
+          text: 'green',
+        },
+        display: 'block',
       },
       '.foo-inner,.bar-inner': {
         background: 'green',
-      }
-
+      },
+      '&:hover,&:active': {
+        opacity: 0.5,
+      },
     })
     ok(data)
     deepEqual(data, {
-      '.foo:hover': { opacity: 0.5 },
-      '.foo:active': { opacity: 0.5 },
       '.foo .bar-inner': { background: 'green' },
-      '.foo .foo-inner': { display: 'block', background: 'green' },
-      '.foo .foo-inner .bar': { text: 'green' }
+      '.foo .foo-inner': { background: 'green', display: 'block' },
+      '.foo .foo-inner .bar': { text: 'green' },
+      '.foo:active': { opacity: 0.5 },
+      '.foo:hover': { opacity: 0.5 },
     })
   })
 
   it('More complex data', () => {
     let data = asStyleData('.the-button-group', {
       '&': {
-        display: 'flex',
-        margin: '8px 0',
-        justifyContent: 'center',
         alignItems: 'center',
+        display: 'flex',
         flexWrap: 'wrap',
+        justifyContent: 'center',
+        margin: '8px 0',
       },
       '&.the-button-group-collapsed': {
-        flexWrap: 'nowrap',
         '.the-button': {
-          margin: '0 -1px 0 0',
-          borderRadius: 0,
-          borderBottom: 'none',
           '&:first-child': {
             borderLeft: 'none',
-            margin: '0'
+            margin: '0',
           },
           '&:last-child': {
-            borderRight: 'none'
-          }
-        }
-      }
+            borderRight: 'none',
+          },
+          borderBottom: 'none',
+          borderRadius: 0,
+          margin: '0 -1px 0 0',
+        },
+        flexWrap: 'nowrap',
+      },
     })
     deepEqual(data, {
       '.the-button-group': {
-        display: 'flex',
-        margin: '8px 0',
-        justifyContent: 'center',
         alignItems: 'center',
-        flexWrap: 'wrap'
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        margin: '8px 0',
       },
       '.the-button-group.the-button-group-collapsed': { flexWrap: 'nowrap' },
       '.the-button-group.the-button-group-collapsed .the-button': {
-        margin: '0 -1px 0 0',
+        borderBottom: 'none',
         borderRadius: 0,
-        borderBottom: 'none'
+        margin: '0 -1px 0 0',
       },
-      '.the-button-group.the-button-group-collapsed .the-button:first-child': { borderLeft: 'none', margin: '0' },
-      '.the-button-group.the-button-group-collapsed .the-button:last-child': { borderRight: 'none' }
+      '.the-button-group.the-button-group-collapsed .the-button:first-child': {
+        borderLeft: 'none',
+        margin: '0',
+      },
+      '.the-button-group.the-button-group-collapsed .the-button:last-child': {
+        borderRight: 'none',
+      },
     })
   })
 })

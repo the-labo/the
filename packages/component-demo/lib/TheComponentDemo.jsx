@@ -4,17 +4,17 @@ import { highlightJsx } from 'ape-highlighting'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheBody, TheBodyStyle } from 'the-body'
 import { TheContainer, TheContainerStyle } from 'the-container'
 import { TheHead } from 'the-head'
 import { TheHeader, TheHeaderStyle } from 'the-header'
-import { TheHtml } from 'the-html'
-import { TheImageStyle } from 'the-image'
 import { TheLinkStyle } from 'the-link'
-import { TheMain, TheMainStyle } from 'the-main'
 import { TheRoot, TheRootStyle } from 'the-root'
 import { TheRouter } from 'the-router'
+import { TheBody, TheBodyStyle } from '@the-/body'
+import { TheHtml } from '@the-/html'
 import { TheIcon, TheIconStyle } from '@the-/icon'
+// import { TheImageStyle } from '@the-/image'
+// import { TheMain, TheMainStyle } from '@the-/main'
 import { TheStyle } from '@the-/style'
 
 const githubRepoFor = (pkg) => {
@@ -62,18 +62,16 @@ class TheComponentDemo extends React.PureComponent {
           <TheHeaderStyle />
           <TheIconStyle />
           <TheContainerStyle />
-          <TheMainStyle />
-          <TheLinkStyle />
+          {/*<TheMainStyle />*/} <TheLinkStyle />
           <TheRootStyle />
-          <TheImageStyle />
-          <TheStyle>{TheComponentDemo.css}</TheStyle>
+          {/*<TheImageStyle />*/} <TheStyle>{TheComponentDemo.css}</TheStyle>
         </TheHead>
         <TheBody className='the-component-demo-body' styles={{}}>
           <TheRouter.Static context={renderingContext}>
             <TheHeader>
               <TheHeader.Logo to={pkg.homepage}>{pkg.name}</TheHeader.Logo>
             </TheHeader>
-            <TheMain>
+            <main>
               <div className='the-component-demo-workspace'>
                 <TheContainer>
                   <TheRoot id='the-demo'>{children}</TheRoot>
@@ -103,7 +101,7 @@ class TheComponentDemo extends React.PureComponent {
                   </section>
                 </TheContainer>
               </div>
-            </TheMain>
+            </main>
           </TheRouter.Static>
         </TheBody>
       </TheHtml>

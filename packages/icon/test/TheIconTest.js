@@ -4,29 +4,23 @@
  */
 'use strict'
 
-import TheIcon from '../lib/TheIcon'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheIcon from '../lib/TheIcon'
 
 describe('the-icon', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-      <TheIcon />
-    )
+    let element = render(<TheIcon />)
     ok(element)
   })
 
   it('Render a spin component', () => {
-    let element = render(
-      <TheIcon.Spin />
-    )
+    let element = render(<TheIcon.Spin />)
     ok(element)
   })
 })

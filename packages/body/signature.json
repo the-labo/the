@@ -1,0 +1,25 @@
+{
+  "TheBody": {
+    "description": "Body of the-components",
+    "displayName": "TheBody",
+    "methods": []
+  },
+  "TheBodyStyle": {
+    "description": "Style for TheBody",
+    "displayName": "TheBodyStyle",
+    "methods": [],
+    "props": {
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Style options",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  }
+}

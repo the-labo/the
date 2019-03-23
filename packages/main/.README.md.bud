@@ -1,0 +1,30 @@
+/**
+ * Bud file for README.md
+ */
+
+'use strict'
+
+const {Readme} = require('@the-/templates')
+const pkg = require('./package.json')
+
+module.exports = Readme({
+  pkg,
+  repo: pkg.repository,
+  sections: 'doc/guides/*.md.hbs',
+  badges: {
+    travis: true,
+    npm: true,
+    standard: true
+  },
+  overview: 'doc/overview.md',
+  links: require('./doc/links'),
+  vars: {
+    signature: require('./signature')
+  }
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}
+
+

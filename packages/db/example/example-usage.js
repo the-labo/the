@@ -1,10 +1,10 @@
 'use strict'
 
+const { TheDB } = require('@the-/db')
 const {
   DataTypes: { STRING },
   TheResource,
 } = require('@the-/resource')
-const { TheDB } = require('@the-/db')
 
 // Define a resource class
 // See https://github.com/realglobe-Inc/clay-resource for more detail

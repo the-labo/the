@@ -92,6 +92,7 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
+- [@the-/util-array](./doc/api/api.md#module_@the-/util-array)
 
 
 <!-- Section from "doc/readme/03.API.md.hbs" End -->

@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const readFileAsDataURL = require('../lib/readFileAsDataURL')
-const React = require('react')
-const { ok, equal } = require('assert').strict
-
 describe('read-file-as-data-u-r-l', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Render a component', () => {
-  })
+  it('Render a component', () => {})
 })
 
 /* global describe, before, after, it */

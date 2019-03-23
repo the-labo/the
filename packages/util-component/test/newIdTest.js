@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { notEqual, ok } = require('assert').strict
 const newId = require('../lib/newId')
-const { ok, notEqual } = require('assert').strict
 
 describe('new-id', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(newId())

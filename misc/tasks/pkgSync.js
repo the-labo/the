@@ -10,13 +10,13 @@ function pkgSync(src, targets) {
   return async function task(ctx) {
     const { cwd, logger } = ctx
     const {
+      author,
       bugs,
       engines,
       homepage,
       license,
       publishConfig,
       repository,
-      author,
       version,
     } = require(path.resolve(cwd, src))
     const subPkgPaths = (await aglob(targets, { cwd })).map((filename) =>
@@ -24,20 +24,20 @@ function pkgSync(src, targets) {
     )
     logger.trace(
       `Package inf to sync:\n` +
-      JSON.stringify(
-        {
-          bugs,
-          engines,
-          homepage,
-          license,
-          author,
-          publishConfig,
-          repository,
-          version,
-        },
-        null,
-        2,
-      ),
+        JSON.stringify(
+          {
+            author,
+            bugs,
+            engines,
+            homepage,
+            license,
+            publishConfig,
+            repository,
+            version,
+          },
+          null,
+          2,
+        ),
     )
     for (const subPkgPath of subPkgPaths) {
       const subPkg = require(subPkgPath)
@@ -48,7 +48,7 @@ function pkgSync(src, targets) {
       logger.notice(
         `[${path.relative(process.cwd(), subPkgPath)}] Update version "${
           subPkg.version
-          }" -> "${version}"`,
+        }" -> "${version}"`,
       )
       for (const [name, version] of Object.entries(subPkg.dependencies || {})) {
         if (/^file:\.\.\//.test(version)) {
@@ -57,10 +57,10 @@ function pkgSync(src, targets) {
       }
       await writeAsJson(subPkgPath, {
         ...subPkg,
+        author,
         bugs,
         engines,
         homepage,
-        author,
         license,
         publishConfig,
         repository,

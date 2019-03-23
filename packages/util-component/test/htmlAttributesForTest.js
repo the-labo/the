@@ -4,24 +4,21 @@
  */
 'use strict'
 
+const { deepEqual } = require('assert').strict
 const htmlAttributesFor = require('../lib/htmlAttributesFor')
-const React = require('react')
-const { ok, deepEqual } = require('assert').strict
 
 describe('html-attributes-for', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
     const attributes = htmlAttributesFor({
+      'data-hoge': 'hoge',
       foo: 'This is foo',
       title: 'The title',
-      'data-hoge': 'hoge'
     })
-    deepEqual(attributes, {title: 'The title', 'data-hoge': 'hoge'})
+    deepEqual(attributes, { 'data-hoge': 'hoge', title: 'The title' })
   })
 })
 

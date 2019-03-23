@@ -4,16 +4,13 @@
  */
 'use strict'
 
+const { ok } = require('assert').strict
 const isVideoSrc = require('../lib/isVideoSrc')
-const React = require('react')
-const { ok, equal } = require('assert').strict
 
 describe('is-video-src', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
     ok(isVideoSrc('foo.mp4'))
@@ -22,9 +19,7 @@ describe('is-video-src', () => {
     ok(!isVideoSrc('foo/bar.png'))
     ok(isVideoSrc('http:/example.com/foo/bar.mp4'))
     ok(!isVideoSrc('http:/example.com/foo/bar.png'))
-
   })
-
 })
 
 /* global describe, before, after, it */

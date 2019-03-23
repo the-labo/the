@@ -1,0 +1,86 @@
+{
+  "TheHtml": {
+    "description": "Html of the-components",
+    "displayName": "TheHtml",
+    "methods": [
+      {
+        "name": "styles",
+        "docblock": "Define style\n@param [options={}] options - Optional settings\n@returns {Object} Style object",
+        "modifiers": [
+          "static"
+        ],
+        "params": [
+          {
+            "name": "options"
+          }
+        ],
+        "returns": null,
+        "description": "Define style"
+      }
+    ],
+    "props": {
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS class name",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "DOM Id",
+        "defaultValue": {
+          "value": "'the-html'",
+          "computed": false
+        }
+      },
+      "lang": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Lang",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "styles": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Style objects",
+        "defaultValue": {
+          "value": "TheHtml.styles({})",
+          "computed": true
+        }
+      }
+    }
+  },
+  "TheHtmlStyle": {
+    "description": "Style for TheHtml",
+    "displayName": "TheHtmlStyle",
+    "methods": [],
+    "props": {
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Style options",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  }
+}

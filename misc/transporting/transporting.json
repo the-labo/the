@@ -19,6 +19,10 @@
     "kind": "lib",
     "name": "bin"
   },
+  "the-body": {
+    "kind": "component",
+    "name": "body"
+  },
   "the-cache": {
     "kind": "lib",
     "name": "cache"
@@ -39,6 +43,14 @@
     "kind": "lib",
     "name": "code"
   },
+  "the-component-demo": {
+    "kind": "component",
+    "name": "component-demo"
+  },
+  "the-component-util": {
+    "kind": "util",
+    "name": "util-component"
+  },
   "the-context": {
     "kind": "lib",
     "name": "context"
@@ -58,10 +70,6 @@
   "the-demo-component": {
     "kind": "component",
     "name": "demo-component"
-  },
-  "the-component-demo": {
-    "kind": "component",
-    "name": "component-demo"
   },
   "the-demo-lib": {
     "kind": "lib",
@@ -86,6 +94,14 @@
   "the-hash": {
     "kind": "lib",
     "name": "hash"
+  },
+  "the-html": {
+    "kind": "component",
+    "name": "html"
+  },
+  "the-icon": {
+    "kind": "component",
+    "name": "icon"
   },
   "the-jitter": {
     "kind": "lib",
@@ -199,13 +215,18 @@
     "kind": "component",
     "name": "spin"
   },
-  "the-icon": {
+  "the-image": {
     "kind": "component",
-    "name": "icon"
+    "name": "image"
   },
-  "the-style": {
+  "the-button": {
     "kind": "component",
-    "name": "style"
+    "name": "button"
+  },
+
+  "the-main": {
+    "kind": "component",
+    "name": "main"
   },
   "the-store": {
     "kind": "lib",
@@ -215,13 +236,13 @@
     "kind": "lib",
     "name": "stream"
   },
+  "the-style": {
+    "kind": "component",
+    "name": "style"
+  },
   "the-style-util": {
     "kind": "util",
     "name": "util-style"
-  },
-  "the-component-util": {
-    "kind": "util",
-    "name": "util-component"
   },
   "the-support": {
     "kind": "lib",

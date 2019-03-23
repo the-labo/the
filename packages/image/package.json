@@ -1,0 +1,63 @@
+{
+  "name": "the-image",
+  "description": "Image of the-components",
+  "version": "15.0.3",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "@the-/component-demo": "file:../component-demo",
+    "@the-/icon": "^15.0.4",
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-test": "file:../script-test",
+    "@the-/style": "^15.0.3",
+    "@the-/templates": "file:../templates",
+    "@the-/util-component": "^15.0.3",
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@babel/runtime": "*",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-router-dom": "^4.3.1",
+    "the-script-doc": "^2.0.0",
+    "the-script-release": "^1.0.10",
+    "the-script-share": "^1.0.6",
+    "the-script-update": "^2.0.1"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the#readme",
+  "keywords": [
+    "react-component",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "shim",
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "the-script-build && the-script-doc",
+    "release": "the-script-release -y",
+    "share": "the-script-share",
+    "test": "the-script-test",
+    "update": "the-script-update",
+    "watch": "the-script-build -w"
+  }
+}

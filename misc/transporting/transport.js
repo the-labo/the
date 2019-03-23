@@ -2,15 +2,22 @@
 
 'use strict'
 
+const aglob = require('aglob')
 const { copyAsync, copyDirAsync } = require('asfs')
 const { spawnSync } = require('child_process')
-const { chmod, readFile, stat, unlink, writeFile, rename } = require('fs').promises
-const aglob = require('aglob')
+const {
+  chmod,
+  readFile,
+  rename,
+  stat,
+  unlink,
+  writeFile,
+} = require('fs').promises
 const path = require('path')
 const rimraf = require('rimraf')
+const { TheRefactor } = require('the-refactor')
 const transporting = require('./transporting')
 const pkg = require('../../package')
-const { TheRefactor } = require('the-refactor')
 const baseDir = `${__dirname}/../..`
 
 process.chdir(baseDir)
@@ -55,12 +62,7 @@ ${msg}
     for (const filename of filesToRemove) {
       await unlink(path.resolve(toDir, filename)).catch(() => null)
     }
-    const dirsToRemove = [
-      '.git',
-      'ci',
-      'shim',
-      'doc/guides',
-    ]
+    const dirsToRemove = ['.git', 'ci', 'shim', 'doc/guides']
     for (const dirname of dirsToRemove) {
       rimraf.sync(path.resolve(toDir, dirname))
     }
@@ -79,12 +81,9 @@ ${msg}
           'demo-component',
         )
         const refactor = new TheRefactor()
-        await refactor.rewrite(
-          'example/*.jsx',
-          {
-            [`from '${fromPkgName}'`]: [`from '@the-/${name}'`],
-          }
-        )
+        await refactor.rewrite('example/*.jsx', {
+          [`from '${fromPkgName}'`]: [`from '@the-/${name}'`],
+        })
         const filenamesToCopy = [
           '.README.md.bud',
           'doc/links.json',
@@ -124,7 +123,10 @@ ${msg}
             spawnSync('npm', ['un', '-D', name], { cwd: toDir })
           }
         }
-        const devDepsToAdd = { 'coz': '*', '@the-/component-demo': 'file:../component-demo' }
+        const devDepsToAdd = {
+          '@the-/component-demo': 'file:../component-demo',
+          coz: '*',
+        }
         for (const [name, version] of Object.entries(devDepsToAdd)) {
           const has = name in (toPkg.devDependencies || {})
           if (!has) {
@@ -135,7 +137,7 @@ ${msg}
             }
           }
         }
-        await writeFile(toPkgFile, JSON.stringify({ ...toPkg, scripts }))
+        await writeFile(toPkgFile, JSON.stringify({ ...toPkg, name: `@the-/${name}`, scripts }))
 
         for (const testJsx of await aglob('test/*.jsx', { cwd: toDir })) {
           const basename = path.basename(testJsx, '.jsx')
@@ -159,10 +161,7 @@ ${msg}
           '.npmignore',
         ]
         for (const filename of filesToCopy) {
-          await copyAsync(
-            `${demoLibDir}/${filename}`,
-            `${toDir}/${filename}`,
-          )
+          await copyAsync(`${demoLibDir}/${filename}`, `${toDir}/${filename}`)
         }
         const toPkg = JSON.parse(await readFile(toPkgFile))
         const { scripts = {} } = toPkg
@@ -172,7 +171,14 @@ ${msg}
         scripts.prepare = 'npm run build && npm run doc'
         delete scripts.share
         delete scripts.buid
-        await writeFile(toPkgFile, JSON.stringify({ ...toPkg, scripts }, null, 2))
+        await writeFile(
+          toPkgFile,
+          JSON.stringify({
+            ...toPkg,
+            name: `@the-/${name}`,
+            scripts,
+          }, null, 2),
+        )
       }
     }
 
@@ -242,7 +248,13 @@ ${msg}
     }
     {
       const toPkg = JSON.parse(await readFile(toPkgFile))
-      const { scripts = {} } = toPkg
+      const { scripts = {}, dependencies = {}, devDependencies = {} } = toPkg
+      for (const [name, ver] of Object.entries(dependencies)) {
+        if (/^file/.test(ver)) {
+          devDependencies[name] = ver
+          delete dependencies[name]
+        }
+      }
       delete scripts.update
       delete scripts.release
       await writeFile(

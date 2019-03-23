@@ -4,22 +4,20 @@
  */
 'use strict'
 
-const TheComponentDemo = require('../shim/TheComponentDemo').default
+const { ok } = require('assert').strict
 const React = require('react')
 const { build } = require('@the-/script-build')
-const { ok, equal } = require('assert').strict
+const TheComponentDemo = require('../shim/TheComponentDemo').default
 
 describe('the-component-demo', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Create a component', () => {
     const pkg = {
       name: 'hoge',
-      version: '1.0.0'
+      version: '1.0.0',
     }
     const element = React.createElement(TheComponentDemo, { pkg })
     ok(element)

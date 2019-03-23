@@ -11,12 +11,12 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/icon": "^15.0.3",
+    "@the-/icon": "^15.0.4",
     "@the-/style": "^15.0.3",
     "@the-/util-component": "^15.0.3",
-    "asobj": "^3.0.0",
+    "asobj": "^3.0.1",
     "classnames": "^2.2.6",
-    "prop-types": "^15.6.2"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@the-/component-demo": "file:../component-demo",
@@ -25,8 +25,8 @@
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
     "coz": "^7.0.19",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
     "react-router-dom": "^4.3.1"
   },
   "engines": {

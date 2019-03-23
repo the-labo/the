@@ -26,9 +26,9 @@
     "order": 2
   },
   {
-    "id": "module:the-resource-base",
-    "longname": "module:the-resource-base",
-    "name": "the-resource-base",
+    "id": "module:@the-/resource",
+    "longname": "module:@the-/resource",
+    "name": "@the-/resource",
     "kind": "module",
     "description": "Base of the-resource",
     "meta": {

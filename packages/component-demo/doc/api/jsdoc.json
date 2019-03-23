@@ -35,7 +35,7 @@
     "description": "CSS class name",
     "memberof": "TheComponentDemo.propTypes",
     "meta": {
-      "lineno": 116,
+      "lineno": 114,
       "filename": "TheComponentDemo.jsx",
       "path": "/Users/okuni/Projects/the/packages/component-demo/lib"
     },
@@ -50,7 +50,7 @@
     "description": "Package json for demo",
     "memberof": "TheComponentDemo.propTypes",
     "meta": {
-      "lineno": 118,
+      "lineno": 116,
       "filename": "TheComponentDemo.jsx",
       "path": "/Users/okuni/Projects/the/packages/component-demo/lib"
     },
@@ -65,7 +65,7 @@
     "description": "Snippet script",
     "memberof": "TheComponentDemo.propTypes",
     "meta": {
-      "lineno": 120,
+      "lineno": 118,
       "filename": "TheComponentDemo.jsx",
       "path": "/Users/okuni/Projects/the/packages/component-demo/lib"
     },

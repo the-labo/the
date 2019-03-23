@@ -4,23 +4,20 @@
  */
 'use strict'
 
+const { deepEqual } = require('assert').strict
 const eventHandlersFor = require('../lib/eventHandlersFor')
-const React = require('react')
-const { ok, deepEqual } = require('assert').strict
 
 describe('event-handlers-for', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
     const onClick = () => {}
     const foo = () => {}
     let handlers = eventHandlersFor({
       foo,
-      onClick
+      onClick,
     })
     deepEqual(Object.keys(handlers), ['onClick'])
   })

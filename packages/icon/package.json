@@ -1,7 +1,7 @@
 {
   "name": "@the-/icon",
   "description": "Icon of the-components",
-  "version": "15.0.3",
+  "version": "15.0.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,7 +14,7 @@
     "@the-/style": "^15.0.3",
     "@the-/util-component": "^15.0.3",
     "classnames": "^2.2.6",
-    "prop-types": "^15.6.2"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@babel/runtime": "^7.4.2",
@@ -23,8 +23,8 @@
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
     "react-router-dom": "^4.3.1"
   },
   "engines": {

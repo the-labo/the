@@ -5,15 +5,11 @@
 'use strict'
 
 const toggleBodyClass = require('../lib/toggleBodyClass')
-const React = require('react')
-const { ok, equal } = require('assert').strict
 
 describe('toggle-body-class', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
     toggleBodyClass('hoge', 1)

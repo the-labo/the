@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const changedProps = require('../lib/changedProps')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('changed-props', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */
