@@ -1,6 +1,6 @@
 'use strict'
 
-const { TheResize } = require('the-resize')
+const { TheResize } = require('@the-/resize')
 
 async function tryExample() {
   const resize = new TheResize({

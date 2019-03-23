@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { DataTypes, TheResource } = require('the-resource-base')
+const { DataTypes, TheResource } = require('@the-/resource')
 
 const { DATE, STRING } = DataTypes
 

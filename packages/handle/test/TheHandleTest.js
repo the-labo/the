@@ -5,7 +5,7 @@
 'use strict'
 
 const { equal, ok } = require('assert')
-const { TheScene } = require('the-scene-base')
+const { TheScene } = require('@the-/scene')
 const TheHandle = require('../lib/TheHandle')
 
 describe('the-handle', () => {

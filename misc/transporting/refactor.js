@@ -44,7 +44,9 @@ async function main() {
         ],
         {
           [`require('${oldName}')`]: [`require('${newName}')`],
+          [`require('${oldName}/`]: [`require('${newName}/`],
           [`from '${oldName}'`]: [`from '${newName}'`],
+          [`from '${oldName}/`]: [`from '${newName}/`],
         },
         { cwd: pkgDir },
       )

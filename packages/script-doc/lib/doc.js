@@ -13,7 +13,7 @@ const argx = require('argx')
 const jsdocToMarkdown = require('jsdoc-to-markdown')
 const { EOL } = require('os')
 const path = require('path')
-const { uniqueFilter } = require('the-array')
+const { uniqueFilter } = require('@the-/util-array')
 const writeout = require('writeout')
 
 /** @lends doc */

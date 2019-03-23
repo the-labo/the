@@ -27,7 +27,6 @@
     "rfunc-client": "^5.0.5",
     "rfunc-constants": "^1.0.5",
     "socket.io-client": "^2.2.0",
-    "the-stream-base": "^3.0.30",
     "url": "^0.11.0",
     "uuid": "^3.3.2"
   },

@@ -16,8 +16,7 @@
   "dependencies": {
     "abind": "^1.0.4",
     "moment": "^2.24.0",
-    "moment-timezone": "^0.5.23",
-    "the-array": "^1.4.1"
+    "moment-timezone": "^0.5.23"
   },
   "devDependencies": {
     "@the-/script-build": "file:../script-build",

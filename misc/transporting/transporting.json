@@ -191,6 +191,10 @@
     "kind": "util",
     "name": "util-file"
   },
+  "the-client-util": {
+    "kind": "util",
+    "name": "util-client"
+  },
   "the-style-util": {
     "kind": "util",
     "name": "util-style"
@@ -202,5 +206,25 @@
   "the-sw-util": {
     "kind": "util",
     "name": "util-sw"
+  },
+  "the-scene-base": {
+    "kind": "lib",
+    "name": "scene"
+  },
+  "the-controller-base": {
+    "kind": "lib",
+    "name": "controller"
+  },
+  "the-stream-base": {
+    "kind": "lib",
+    "name": "stream"
+  },
+  "the-resource-base": {
+    "king": "lib",
+    "name": "resource"
+  },
+  "the-array": {
+    "king": "util",
+    "name": "util-array"
   }
 }

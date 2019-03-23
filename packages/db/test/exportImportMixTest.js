@@ -6,7 +6,7 @@
 
 const asleep = require('asleep')
 const { equal } = require('assert')
-const { TheResource } = require('the-resource-base')
+const { TheResource } = require('@the-/resource')
 const TheDB = require('../lib/TheDB')
 
 describe('export-import-mix', function() {

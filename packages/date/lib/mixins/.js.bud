@@ -1,7 +1,7 @@
 'use strict'
 
 const moment = require('moment')
-const { uniqueFilter } = require('the-array')
+const { uniqueFilter } = require('@the-/util-array')
 
 // https://momentjs.com/docs/#/manipulating/add/
 const addSubtractUnits = [

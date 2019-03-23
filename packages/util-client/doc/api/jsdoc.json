@@ -1,0 +1,50 @@
+[
+  {
+    "id": "module:@the-/util-client",
+    "longname": "module:@the-/util-client",
+    "name": "@the-/util-client",
+    "kind": "module",
+    "description": "Utility for client side",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/util-client/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "readFile",
+    "longname": "readFile",
+    "name": "readFile",
+    "kind": "function",
+    "scope": "global",
+    "description": "Read file as array buffer",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "File"
+          ]
+        },
+        "description": "File to read",
+        "name": "file"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<ArrayBuffer>"
+          ]
+        },
+        "description": "- Array buffer"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "readFile.js",
+      "path": "/Users/okuni/Projects/the/packages/util-client/lib"
+    },
+    "order": 1
+  }
+]

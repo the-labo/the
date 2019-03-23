@@ -1,0 +1,449 @@
+[
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/tmp",
+    "longname": "module:@the-/tmp",
+    "name": "@the-/tmp",
+    "kind": "module",
+    "description": "Tmp file creator",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "module:default--module.exports",
+    "longname": "module:default",
+    "name": "module.exports",
+    "kind": "member",
+    "isExported": true,
+    "memberof": "module:default",
+    "type": {
+      "names": [
+        "TheTmp"
+      ]
+    },
+    "meta": {
+      "lineno": 14,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheTmp",
+    "longname": "TheTmp",
+    "name": "TheTmp",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheTmp.js",
+      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheTmp instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheTmp"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "GenerateResult",
+    "longname": "GenerateResult",
+    "name": "GenerateResult",
+    "kind": "typedef",
+    "scope": "global",
+    "type": {
+      "names": [
+        "Object"
+      ]
+    },
+    "properties": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "cleanup"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "descriptor"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Filename",
+        "name": "path"
+      }
+    ],
+    "meta": {
+      "lineno": 117,
+      "filename": "TheTmp.js",
+      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "GenerateDirResult",
+    "longname": "GenerateDirResult",
+    "name": "GenerateDirResult",
+    "kind": "typedef",
+    "scope": "global",
+    "type": {
+      "names": [
+        "Object"
+      ]
+    },
+    "properties": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "cleanup"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Directory name",
+        "name": "path"
+      }
+    ],
+    "meta": {
+      "lineno": 123,
+      "filename": "TheTmp.js",
+      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheTmp#generateDirSync",
+    "longname": "TheTmp#generateDirSync",
+    "name": "generateDirSync",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Generate tmp directory",
+    "memberof": "TheTmp",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "nullable": true,
+        "description": "Prefix for generated",
+        "name": "options.prefix"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "GenerateDirResult"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 16,
+      "filename": "TheTmp.js",
+      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "TheTmp#generateSync",
+    "longname": "TheTmp#generateSync",
+    "name": "generateSync",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Generate tmp file sync",
+    "memberof": "TheTmp",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "GenerateResult"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 30,
+      "filename": "TheTmp.js",
+      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+    },
+    "order": 8
+  },
+  {
+    "id": "TheTmp#generate",
+    "longname": "TheTmp#generate",
+    "name": "generate",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Generate tmp file",
+    "memberof": "TheTmp",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "nullable": true,
+        "description": "Prefix for generated",
+        "name": "options.prefix"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<GenerateResult>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 46,
+      "filename": "TheTmp.js",
+      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+    },
+    "async": true,
+    "order": 9
+  },
+  {
+    "id": "TheTmp#generateDir",
+    "longname": "TheTmp#generateDir",
+    "name": "generateDir",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Generate tmp directory",
+    "memberof": "TheTmp",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "nullable": true,
+        "description": "Prefix for generated",
+        "name": "options.prefix"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<GenerateDirResult>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 65,
+      "filename": "TheTmp.js",
+      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+    },
+    "async": true,
+    "order": 10
+  },
+  {
+    "id": "TheTmp#while",
+    "longname": "TheTmp#while",
+    "name": "while",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Create and use tmp file until handler resolved (or rejected)",
+    "memberof": "TheTmp",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Handler function to use tmp file",
+        "name": "handler"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Tmp options",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 90,
+      "filename": "TheTmp.js",
+      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+    },
+    "async": true,
+    "order": 11
+  },
+  {
+    "id": "TheTmp#whileDir",
+    "longname": "TheTmp#whileDir",
+    "name": "whileDir",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Create an use tmp directory until handler resolved (or rejected)",
+    "memberof": "TheTmp",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Handler function to use tmp file",
+        "name": "handler"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Tmp options",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 105,
+      "filename": "TheTmp.js",
+      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+    },
+    "async": true,
+    "order": 12
+  }
+]

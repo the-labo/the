@@ -27,6 +27,7 @@ var/
 /packages/code/lib/processors/index.js
 /packages/code/test/TheCodeTest.js
 /packages/context/lib/index.js
+/packages/controller/lib/index.js
 /packages/date/lib/index.js
 /packages/date/lib/mixins/index.js
 /packages/db/lib/helpers/index.js
@@ -56,6 +57,8 @@ var/
 /packages/refresher/lib/index.js
 /packages/resize/lib/index.js
 /packages/run/lib/index.js
+/packages/scene/lib/index.js
+/packages/scene/lib/mixins/index.js
 /packages/scope/lib/index.js
 /packages/scope/lib/scopes/index.js
 /packages/seal/lib/index.js
@@ -74,10 +77,12 @@ var/
 /packages/setting/lib/index.js
 /packages/setting/lib/mixins/index.js
 /packages/store/lib/index.js
+/packages/stream/lib/index.js
 /packages/support/lib/index.js
 /packages/templates/lib/eslintignore.js
 /packages/templates/lib/index.js
 /packages/url/lib/index.js
+/packages/util-client/lib/index.js
 /packages/util-file/lib/index.js
 /packages/util-site/lib/index.js
 /packages/util-style/lib/index.js

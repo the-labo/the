@@ -29,9 +29,7 @@
     "socket.io-client": "^2.2.0",
     "socket.io-redis": "^5.2.0",
     "stringcase": "^4.3.1",
-    "the-controller-base": "^4.0.14",
-    "the-controller-mixins": "^2.1.4",
-    "the-stream-base": "^3.0.30"
+    "the-controller-mixins": "^2.1.4"
   },
   "devDependencies": {
     "@the-/client": "file:../client",

@@ -9,7 +9,7 @@ const { deepEqual, equal, ok } = require('assert').strict
 const {
   DataTypes: { ENTITY, STRING },
   TheResource,
-} = require('the-resource-base')
+} = require('@the-/resource')
 const { TheRefresher } = require('@the-/refresher')
 const TheDB = require('../lib/TheDB')
 

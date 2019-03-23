@@ -59,7 +59,7 @@ ${msg}
     )
 
     if (!/demo/.test(name)) {
-      if (['lib', 'util'].includes(kind)) {
+      if (['lib', 'util', 'mixins'].includes(kind)) {
         const demoLibDir = path.resolve(baseDir, 'packages', 'demo-lib')
         rimraf.sync(path.resolve(toDir, 'doc/readme'))
         await copyDirAsync(`${demoLibDir}/doc/readme`, `${toDir}/doc/readme`)
@@ -170,9 +170,6 @@ ${msg}
         JSON.stringify(
           {
             ...toPkg,
-            publishConfig: {
-              access: 'public',
-            },
             author: {
               email: 'okunishinishi@gmail.com',
               name: 'Taka Okunishi',
@@ -188,8 +185,11 @@ ${msg}
             homepage: `https://github.com/the-labo/the/tree/master/packages/${toPkg.name
               .split('/')
               .pop()}#readme`,
-            keywords: ['the', kind].filter(Boolean),
+            keywords: ['the', kind].filter(Boolean).sort(),
             name: `@the-/${name}`,
+            publishConfig: {
+              access: 'public',
+            },
             scripts,
             version: pkg.version,
           },

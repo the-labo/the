@@ -21,7 +21,6 @@
     "findout": "^3.0.2",
     "jsdoc-to-markdown": "^4.0.1",
     "stringcase": "^4.3.1",
-    "the-array": "^1.4.1",
     "writeout": "^2.2.4"
   },
   "devDependencies": {

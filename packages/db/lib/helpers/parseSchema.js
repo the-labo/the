@@ -8,7 +8,7 @@
 
 const {
   DataTypes: { STRING },
-} = require('the-resource-base')
+} = require('@the-/resource')
 
 /** @lends parseSchema */
 function parseSchema(schema, options = {}) {

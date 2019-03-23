@@ -1,0 +1,171 @@
+[
+  {
+    "id": "module:@the-/stream",
+    "longname": "module:@the-/stream",
+    "name": "@the-/stream",
+    "kind": "module",
+    "description": "Base of the streams",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/stream/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheStream()",
+    "longname": "TheStream",
+    "name": "TheStream",
+    "kind": "constructor",
+    "memberof": "TheStream",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "Consumer",
+    "longname": "Consumer",
+    "name": "Consumer",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "Consumer.js",
+      "path": "/Users/okuni/Projects/the/packages/stream/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "Provider",
+    "longname": "Provider",
+    "name": "Provider",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "Provider.js",
+      "path": "/Users/okuni/Projects/the/packages/stream/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheStream",
+    "longname": "TheStream",
+    "name": "TheStream",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheStream.js",
+      "path": "/Users/okuni/Projects/the/packages/stream/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "generatorFromReadable",
+    "longname": "generatorFromReadable",
+    "name": "generatorFromReadable",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create generator from readable",
+    "meta": {
+      "lineno": 1,
+      "filename": "generatorFromReadable.js",
+      "path": "/Users/okuni/Projects/the/packages/stream/lib/helpers"
+    },
+    "order": 8
+  },
+  {
+    "id": "TheStream#pull",
+    "longname": "TheStream#pull",
+    "name": "pull",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Pull next chunk",
+    "memberof": "TheStream",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 90,
+      "filename": "TheStream.js",
+      "path": "/Users/okuni/Projects/the/packages/stream/lib"
+    },
+    "async": true,
+    "order": 5
+  },
+  {
+    "id": "TheStream#push",
+    "longname": "TheStream#push",
+    "name": "push",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Push chunk",
+    "memberof": "TheStream",
+    "params": [
+      {
+        "name": "chunks",
+        "variable": true
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 102,
+      "filename": "TheStream.js",
+      "path": "/Users/okuni/Projects/the/packages/stream/lib"
+    },
+    "async": true,
+    "order": 6
+  },
+  {
+    "id": "TheStream#pushEnd",
+    "longname": "TheStream#pushEnd",
+    "name": "pushEnd",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Finish pushing",
+    "memberof": "TheStream",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 121,
+      "filename": "TheStream.js",
+      "path": "/Users/okuni/Projects/the/packages/stream/lib"
+    },
+    "async": true,
+    "order": 7
+  }
+]

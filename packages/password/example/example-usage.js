@@ -1,6 +1,6 @@
 'use strict'
 
-const thePassword = require('the-password')
+const thePassword = require('@the-/password')
 
 async function tryExample() {
   const { digest, generatePassword, generateSalt } = thePassword()

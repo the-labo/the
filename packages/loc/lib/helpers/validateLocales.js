@@ -9,7 +9,7 @@
 'use strict'
 
 const { flatten } = require('objnest')
-const { uniqueFilter } = require('the-array')
+const { uniqueFilter } = require('@the-/util-array')
 
 /** @lends checkLocales */
 function checkLocales(src) {

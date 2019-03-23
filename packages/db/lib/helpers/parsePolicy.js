@@ -6,7 +6,7 @@
 
 const {
   DataTypes: { ENTITY, REF },
-} = require('the-resource-base')
+} = require('@the-/resource')
 
 const TypeGroups = {
   [ENTITY]: [ENTITY, REF],

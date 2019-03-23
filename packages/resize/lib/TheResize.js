@@ -12,8 +12,8 @@ const { statAsync } = require('asfs')
 const filecopy = require('filecopy')
 const path = require('path')
 const sharp = require('sharp')
-const { fileTypeOf } = require('the-file-util')
-const { TheTmp } = require('the-tmp')
+const { TheTmp } = require('@the-/tmp')
+const { fileTypeOf } = require('@the-/util-file')
 
 const imageFilePattern = '**/+(*.jpeg|*.jpg|*.png|*.svg|*.webp)'
 

@@ -19,7 +19,7 @@ const cluster = require('cluster')
 const fs = require('fs')
 const { EOL } = require('os')
 const path = require('path')
-const { DataTypes, TheResource } = require('the-resource-base')
+const { DataTypes, TheResource } = require('@the-/resource')
 const { DATE, STRING } = DataTypes
 
 /** @lends TheLogResource */

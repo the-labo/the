@@ -15,8 +15,7 @@
     "evaljson": "^6.0.4",
     "objnest": "^5.0.6",
     "prop-types": "^15.7.2",
-    "sprintf-js": "^1.1.2",
-    "the-array": "^1.4.1"
+    "sprintf-js": "^1.1.2"
   },
   "devDependencies": {
     "@the-/script-build": "file:../script-build",
