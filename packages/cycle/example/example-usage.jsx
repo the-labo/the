@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react'
-import { TheCycle } from 'the-cycle'
+import { TheCycle } from '@the-/cycle'
 
 class ExampleComponent extends React.Component {
   state = {

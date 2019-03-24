@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react'
-import { TheContainer, TheContainerStyle } from 'the-container'
+import { TheContainer, TheContainerStyle } from '@the-/container'
 
 class ExampleComponent extends React.PureComponent {
   render () {

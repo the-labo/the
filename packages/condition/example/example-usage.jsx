@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react'
-import { TheCondition, TheConditionStyle } from 'the-condition'
+import { TheCondition, TheConditionStyle } from '@the-/condition'
 
 class ExampleComponent extends React.PureComponent {
   render () {

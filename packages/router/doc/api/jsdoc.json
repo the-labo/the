@@ -1,0 +1,72 @@
+[
+  {
+    "id": "module:@the-/router",
+    "longname": "module:@the-/router",
+    "name": "@the-/router",
+    "kind": "module",
+    "description": "Router of the-components",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/router/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:the-router",
+    "longname": "module:the-router",
+    "name": "the-router",
+    "kind": "module",
+    "description": "Router of the-components",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/router/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheRouter",
+    "longname": "TheRouter",
+    "name": "TheRouter",
+    "kind": "class",
+    "scope": "global",
+    "description": "Router of the-components",
+    "meta": {
+      "lineno": 16,
+      "filename": "TheRouter.jsx",
+      "path": "/Users/okuni/Projects/the/packages/router/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheRouterStyle",
+    "longname": "TheRouterStyle",
+    "name": "TheRouterStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheRouter",
+    "params": [],
+    "meta": {
+      "lineno": 9,
+      "filename": "TheRouterStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/router/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "TheRouterStyle.propTypes.options",
+    "longname": "TheRouterStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
+    "memberof": "TheRouterStyle.propTypes",
+    "meta": {
+      "lineno": 20,
+      "filename": "TheRouterStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/router/lib"
+    },
+    "order": 4
+  }
+]

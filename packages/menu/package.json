@@ -1,0 +1,69 @@
+{
+  "name": "@the-/menu",
+  "description": "Menu of the-components",
+  "version": "2.0.22",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "@the-/icon": "^15.0.4",
+    "@the-/link": "^3.0.20",
+    "@the-/style": "^15.0.3",
+    "@the-/util-component": "^15.0.3",
+    "@the-/window": "^15.0.3",
+    "classnames": "^2.2.6",
+    "prop-types": "^15.6.2",
+    "react-click-outside": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.0.0-beta.51",
+    "@the-/component-demo": "file:../component-demo",
+    "@the-/router": "file:../router",
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates",
+    "coz": "^7.0.19",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/the-menu#readme",
+  "keywords": [
+    "component",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "shim",
+  "peerDependencies": {
+    "react": ">=15",
+    "react-dom": ">=15"
+  },
+  "repository": "the-labo/the-menu",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-build",
+    "watch": "the-script-build -w"
+  },
+  "build": "the-script-build",
+  "doc": "the-script-doc",
+  "prepare": "npm run build && npm run doc",
+  "release": "the-script-release -y",
+  "test": "the-script-build",
+  "update": "the-script-update",
+  "watch": "the-script-build -w",
+  "publishConfig": {
+    "access": "public"
+  }
+}

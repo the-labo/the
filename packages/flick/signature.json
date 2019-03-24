@@ -1,0 +1,267 @@
+{
+  "TheFlick": {
+    "description": "Flickable viewer of the-components",
+    "displayName": "TheFlick",
+    "methods": [
+      {
+        "name": "FlipButton",
+        "docblock": null,
+        "modifiers": [
+          "static"
+        ],
+        "params": [
+          {
+            "name": "{ className, icon, onClick, style }",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "changeIndexTo",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "nextIndex",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "changeToNext",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "changeToPrev",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "getBounds",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "handleClose",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "handleDragDrag",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          },
+          {
+            "name": "data",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handleDragStart",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handleDragStop",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          },
+          {
+            "name": "data",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "moveAmountFor",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "x",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "moveTo",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "x",
+            "type": null
+          },
+          {
+            "name": "callback",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "resize",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "activeIndex": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Active index of images",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "images": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "union",
+            "value": [
+              {
+                "name": "string"
+              },
+              {
+                "name": "object"
+              }
+            ]
+          }
+        },
+        "required": false,
+        "description": "Images to flip",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "onChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Handle index change",
+        "defaultValue": {
+          "value": "() => {}",
+          "computed": false
+        }
+      },
+      "onClose": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Close handler",
+        "defaultValue": {
+          "value": "() => {}",
+          "computed": false
+        }
+      },
+      "present": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Shows the dialog",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "spinning": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Show spin",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "title": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "TheFlickImage": {
+    "description": "",
+    "displayName": "TheFlickImage",
+    "methods": [
+      {
+        "name": "handleLoad",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ]
+  },
+  "TheFlickStyle": {
+    "description": "Style for TheFlick",
+    "displayName": "TheFlickStyle",
+    "methods": [],
+    "props": {
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Style options",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  }
+}

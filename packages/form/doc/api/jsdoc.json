@@ -1,0 +1,311 @@
+[
+  {
+    "id": "module:the-form",
+    "longname": "module:the-form",
+    "name": "the-form",
+    "kind": "module",
+    "description": "Form of the-components",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/form/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheForm",
+    "longname": "TheForm",
+    "name": "TheForm",
+    "kind": "class",
+    "scope": "global",
+    "description": "Form of the-components",
+    "meta": {
+      "lineno": 13,
+      "filename": "TheForm.jsx",
+      "path": "/Users/okuni/Projects/the/packages/form/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheFormStyle",
+    "longname": "TheFormStyle",
+    "name": "TheFormStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheForm",
+    "params": [],
+    "meta": {
+      "lineno": 10,
+      "filename": "TheFormStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/form/lib"
+    },
+    "order": 16
+  },
+  {
+    "id": "TheFormBinder#inputPropsOf",
+    "longname": "TheFormBinder#inputPropsOf",
+    "name": "inputPropsOf",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get attribute for input",
+    "memberof": "TheFormBinder",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Input name",
+        "name": "name"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Attributes for input"
+      }
+    ],
+    "meta": {
+      "lineno": 90,
+      "filename": "TheFormBinder.jsx",
+      "path": "/Users/okuni/Projects/the/packages/form/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheFormBinder#labelPropsOf",
+    "longname": "TheFormBinder#labelPropsOf",
+    "name": "labelPropsOf",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get attribute for label",
+    "memberof": "TheFormBinder",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Input name",
+        "name": "name"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Attributes for label"
+      }
+    ],
+    "meta": {
+      "lineno": 111,
+      "filename": "TheFormBinder.jsx",
+      "path": "/Users/okuni/Projects/the/packages/form/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "TheForm.propTypes.errorLead",
+    "longname": "TheForm.propTypes.errorLead",
+    "name": "errorLead",
+    "kind": "member",
+    "scope": "static",
+    "description": "Lead text when error",
+    "memberof": "TheForm.propTypes",
+    "meta": {
+      "lineno": 117,
+      "filename": "TheForm.jsx",
+      "path": "/Users/okuni/Projects/the/packages/form/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheForm.propTypes.inline",
+    "longname": "TheForm.propTypes.inline",
+    "name": "inline",
+    "kind": "member",
+    "scope": "static",
+    "description": "As inline styles",
+    "memberof": "TheForm.propTypes",
+    "meta": {
+      "lineno": 119,
+      "filename": "TheForm.jsx",
+      "path": "/Users/okuni/Projects/the/packages/form/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "TheForm.propTypes.spinning",
+    "longname": "TheForm.propTypes.spinning",
+    "name": "spinning",
+    "kind": "member",
+    "scope": "static",
+    "description": "Shows spinner",
+    "memberof": "TheForm.propTypes",
+    "meta": {
+      "lineno": 121,
+      "filename": "TheForm.jsx",
+      "path": "/Users/okuni/Projects/the/packages/form/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheFormBinder.propTypes.errors",
+    "longname": "TheFormBinder.propTypes.errors",
+    "name": "errors",
+    "kind": "member",
+    "scope": "static",
+    "description": "Input errors",
+    "memberof": "TheFormBinder.propTypes",
+    "meta": {
+      "lineno": 151,
+      "filename": "TheFormBinder.jsx",
+      "path": "/Users/okuni/Projects/the/packages/form/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "TheFormBinder.propTypes.id",
+    "longname": "TheFormBinder.propTypes.id",
+    "name": "id",
+    "kind": "member",
+    "scope": "static",
+    "description": "DOM Id",
+    "memberof": "TheFormBinder.propTypes",
+    "meta": {
+      "lineno": 153,
+      "filename": "TheFormBinder.jsx",
+      "path": "/Users/okuni/Projects/the/packages/form/lib"
+    },
+    "order": 8
+  },
+  {
+    "id": "TheFormBinder.propTypes.onError",
+    "longname": "TheFormBinder.propTypes.onError",
+    "name": "onError",
+    "kind": "member",
+    "scope": "static",
+    "description": "Handler for error update",
+    "memberof": "TheFormBinder.propTypes",
+    "meta": {
+      "lineno": 155,
+      "filename": "TheFormBinder.jsx",
+      "path": "/Users/okuni/Projects/the/packages/form/lib"
+    },
+    "order": 9
+  },
+  {
+    "id": "TheFormBinder.propTypes.onSubmit",
+    "longname": "TheFormBinder.propTypes.onSubmit",
+    "name": "onSubmit",
+    "kind": "member",
+    "scope": "static",
+    "description": "Handler for form submit",
+    "memberof": "TheFormBinder.propTypes",
+    "meta": {
+      "lineno": 157,
+      "filename": "TheFormBinder.jsx",
+      "path": "/Users/okuni/Projects/the/packages/form/lib"
+    },
+    "order": 10
+  },
+  {
+    "id": "TheFormBinder.propTypes.onUpdate",
+    "longname": "TheFormBinder.propTypes.onUpdate",
+    "name": "onUpdate",
+    "kind": "member",
+    "scope": "static",
+    "description": "Handler for input update",
+    "memberof": "TheFormBinder.propTypes",
+    "meta": {
+      "lineno": 159,
+      "filename": "TheFormBinder.jsx",
+      "path": "/Users/okuni/Projects/the/packages/form/lib"
+    },
+    "order": 11
+  },
+  {
+    "id": "TheFormBinder.propTypes.readOnly",
+    "longname": "TheFormBinder.propTypes.readOnly",
+    "name": "readOnly",
+    "kind": "member",
+    "scope": "static",
+    "description": "Read only fields",
+    "memberof": "TheFormBinder.propTypes",
+    "meta": {
+      "lineno": 161,
+      "filename": "TheFormBinder.jsx",
+      "path": "/Users/okuni/Projects/the/packages/form/lib"
+    },
+    "order": 12
+  },
+  {
+    "id": "TheFormBinder.propTypes.required",
+    "longname": "TheFormBinder.propTypes.required",
+    "name": "required",
+    "kind": "member",
+    "scope": "static",
+    "description": "Required input names",
+    "memberof": "TheFormBinder.propTypes",
+    "meta": {
+      "lineno": 163,
+      "filename": "TheFormBinder.jsx",
+      "path": "/Users/okuni/Projects/the/packages/form/lib"
+    },
+    "order": 13
+  },
+  {
+    "id": "TheFormBinder.propTypes.tabIndex",
+    "longname": "TheFormBinder.propTypes.tabIndex",
+    "name": "tabIndex",
+    "kind": "member",
+    "scope": "static",
+    "description": "Tab index",
+    "memberof": "TheFormBinder.propTypes",
+    "meta": {
+      "lineno": 165,
+      "filename": "TheFormBinder.jsx",
+      "path": "/Users/okuni/Projects/the/packages/form/lib"
+    },
+    "order": 14
+  },
+  {
+    "id": "TheFormBinder.propTypes.values",
+    "longname": "TheFormBinder.propTypes.values",
+    "name": "values",
+    "kind": "member",
+    "scope": "static",
+    "description": "Input values",
+    "memberof": "TheFormBinder.propTypes",
+    "meta": {
+      "lineno": 167,
+      "filename": "TheFormBinder.jsx",
+      "path": "/Users/okuni/Projects/the/packages/form/lib"
+    },
+    "order": 15
+  },
+  {
+    "id": "TheFormStyle.propTypes.options",
+    "longname": "TheFormStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
+    "memberof": "TheFormStyle.propTypes",
+    "meta": {
+      "lineno": 21,
+      "filename": "TheFormStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/form/lib"
+    },
+    "order": 17
+  }
+]

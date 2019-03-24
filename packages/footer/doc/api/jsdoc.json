@@ -1,0 +1,59 @@
+[
+  {
+    "id": "module:@the-/footer",
+    "longname": "module:@the-/footer",
+    "name": "@the-/footer",
+    "kind": "module",
+    "description": "Footer of the-components",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/footer/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheFooter",
+    "longname": "TheFooter",
+    "name": "TheFooter",
+    "kind": "class",
+    "scope": "global",
+    "description": "Footer of the-components",
+    "meta": {
+      "lineno": 13,
+      "filename": "TheFooter.jsx",
+      "path": "/Users/okuni/Projects/the/packages/footer/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheFooterStyle",
+    "longname": "TheFooterStyle",
+    "name": "TheFooterStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheFooter",
+    "params": [],
+    "meta": {
+      "lineno": 10,
+      "filename": "TheFooterStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/footer/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheFooterStyle.propTypes.options",
+    "longname": "TheFooterStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
+    "memberof": "TheFooterStyle.propTypes",
+    "meta": {
+      "lineno": 21,
+      "filename": "TheFooterStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/footer/lib"
+    },
+    "order": 3
+  }
+]

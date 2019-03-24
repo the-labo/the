@@ -1,0 +1,54 @@
+{
+  "TheRouter": {
+    "description": "Router of the-components",
+    "displayName": "TheRouter",
+    "methods": [
+      {
+        "name": "Hash",
+        "docblock": null,
+        "modifiers": [
+          "static"
+        ],
+        "params": [
+          {
+            "name": "{ basename, children, getUserConfirmation, hashType }",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "Static",
+        "docblock": null,
+        "modifiers": [
+          "static"
+        ],
+        "params": [
+          {
+            "name": "{ basename, children, context, location }",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ]
+  },
+  "TheRouterStyle": {
+    "description": "Style for TheRouter",
+    "displayName": "TheRouterStyle",
+    "methods": [],
+    "props": {
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Style options",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  }
+}
