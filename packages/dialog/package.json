@@ -14,6 +14,7 @@
   "dependencies": {
     "@the-/button": "^15.0.3",
     "@the-/icon": "^15.0.4",
+    "@the-/input": "^3.5.89",
     "@the-/spin": "^15.0.4",
     "@the-/style": "^15.0.3",
     "@the-/util-component": "^15.0.3",

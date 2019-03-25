@@ -1,0 +1,119 @@
+[
+  {
+    "id": "module:the-tab",
+    "longname": "module:the-tab",
+    "name": "the-tab",
+    "kind": "module",
+    "description": "Tab for the-components",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/tab/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheTab",
+    "longname": "TheTab",
+    "name": "TheTab",
+    "kind": "class",
+    "scope": "global",
+    "description": "Tab for the-components",
+    "meta": {
+      "lineno": 36,
+      "filename": "TheTab.jsx",
+      "path": "/Users/okuni/Projects/the/packages/tab/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheTabStyle",
+    "longname": "TheTabStyle",
+    "name": "TheTabStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheTab",
+    "params": [],
+    "meta": {
+      "lineno": 10,
+      "filename": "TheTabStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/tab/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "TheTab.propTypes.activeIndex",
+    "longname": "TheTab.propTypes.activeIndex",
+    "name": "activeIndex",
+    "kind": "member",
+    "scope": "static",
+    "description": "Active tab index",
+    "memberof": "TheTab.propTypes",
+    "meta": {
+      "lineno": 381,
+      "filename": "TheTab.jsx",
+      "path": "/Users/okuni/Projects/the/packages/tab/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheTab.propTypes.buttons",
+    "longname": "TheTab.propTypes.buttons",
+    "name": "buttons",
+    "kind": "member",
+    "scope": "static",
+    "description": "Tab buttons",
+    "memberof": "TheTab.propTypes",
+    "meta": {
+      "lineno": 383,
+      "filename": "TheTab.jsx",
+      "path": "/Users/okuni/Projects/the/packages/tab/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "TheTab.propTypes.disableTouchAction",
+    "longname": "TheTab.propTypes.disableTouchAction",
+    "name": "disableTouchAction",
+    "kind": "member",
+    "scope": "static",
+    "description": "Disable touch action",
+    "memberof": "TheTab.propTypes",
+    "meta": {
+      "lineno": 385,
+      "filename": "TheTab.jsx",
+      "path": "/Users/okuni/Projects/the/packages/tab/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheTab.propTypes.onChange",
+    "longname": "TheTab.propTypes.onChange",
+    "name": "onChange",
+    "kind": "member",
+    "scope": "static",
+    "description": "Change handler",
+    "memberof": "TheTab.propTypes",
+    "meta": {
+      "lineno": 387,
+      "filename": "TheTab.jsx",
+      "path": "/Users/okuni/Projects/the/packages/tab/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheTabStyle.propTypes.options",
+    "longname": "TheTabStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
+    "memberof": "TheTabStyle.propTypes",
+    "meta": {
+      "lineno": 20,
+      "filename": "TheTabStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/tab/lib"
+    },
+    "order": 7
+  }
+]

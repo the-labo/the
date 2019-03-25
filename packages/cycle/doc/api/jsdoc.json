@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-cycle",
-    "longname": "module:the-cycle",
-    "name": "the-cycle",
+    "id": "module:@the-/cycle",
+    "longname": "module:@the-/cycle",
+    "name": "@the-/cycle",
     "kind": "module",
     "description": "Component with life cycle",
     "meta": {
@@ -35,7 +35,7 @@
     "description": "Handler for component mount",
     "memberof": "TheCycle.propTypes",
     "meta": {
-      "lineno": 65,
+      "lineno": 61,
       "filename": "TheCycle.jsx",
       "path": "/Users/okuni/Projects/the/packages/cycle/lib"
     },
@@ -50,7 +50,7 @@
     "description": "Handler for new prop values",
     "memberof": "TheCycle.propTypes",
     "meta": {
-      "lineno": 67,
+      "lineno": 63,
       "filename": "TheCycle.jsx",
       "path": "/Users/okuni/Projects/the/packages/cycle/lib"
     },
@@ -65,7 +65,7 @@
     "description": "Handler for component unmount",
     "memberof": "TheCycle.propTypes",
     "meta": {
-      "lineno": 69,
+      "lineno": 65,
       "filename": "TheCycle.jsx",
       "path": "/Users/okuni/Projects/the/packages/cycle/lib"
     },
@@ -80,7 +80,7 @@
     "description": "Values to receive",
     "memberof": "TheCycle.propTypes",
     "meta": {
-      "lineno": 71,
+      "lineno": 67,
       "filename": "TheCycle.jsx",
       "path": "/Users/okuni/Projects/the/packages/cycle/lib"
     },

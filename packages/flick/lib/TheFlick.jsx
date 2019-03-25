@@ -5,15 +5,15 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import Draggable from 'react-draggable'
 import { TheButton } from '@the-/button'
+import { TheCondition } from '@the-/condition'
+import { TheIcon } from '@the-/icon'
+import { TheSpin } from '@the-/spin'
 import {
   changedProps,
   eventHandlersFor,
   htmlAttributesFor,
   toggleBodyClass,
 } from '@the-/util-component'
-import { TheCondition } from '@the-/condition'
-import { TheIcon } from '@the-/icon'
-import { TheSpin } from '@the-/spin'
 import { get } from '@the-/window'
 import TheFlickImage from './TheFlickImage'
 

@@ -5,7 +5,7 @@
 <dl>
 <dt><a href="#module_helpers">helpers</a></dt>
 <dd></dd>
-<dt><a href="#module_the-input">the-input</a></dt>
+<dt><a href="#module_@the-/input">@the-/input</a></dt>
 <dd><p>Input of the-components</p>
 </dd>
 </dl>
@@ -57,9 +57,9 @@
 <a name="module_helpers"></a>
 
 ## helpers
-<a name="module_the-input"></a>
+<a name="module_@the-/input"></a>
 
-## the-input
+## @the-/input
 Input of the-components
 
 <a name="TheInput"></a>

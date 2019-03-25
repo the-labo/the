@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-info",
-    "longname": "module:the-info",
-    "name": "the-info",
+    "id": "module:@the-/info",
+    "longname": "module:@the-/info",
+    "name": "@the-/info",
     "kind": "module",
     "description": "Info of the-component",
     "meta": {
@@ -50,7 +50,7 @@
     "description": "Info data",
     "memberof": "TheInfo.propTypes",
     "meta": {
-      "lineno": 90,
+      "lineno": 64,
       "filename": "TheInfo.jsx",
       "path": "/Users/okuni/Projects/the/packages/info/lib"
     },
@@ -65,7 +65,7 @@
     "description": "Keys to show",
     "memberof": "TheInfo.propTypes",
     "meta": {
-      "lineno": 92,
+      "lineno": 66,
       "filename": "TheInfo.jsx",
       "path": "/Users/okuni/Projects/the/packages/info/lib"
     },
@@ -80,7 +80,7 @@
     "description": "Info title",
     "memberof": "TheInfo.propTypes",
     "meta": {
-      "lineno": 94,
+      "lineno": 68,
       "filename": "TheInfo.jsx",
       "path": "/Users/okuni/Projects/the/packages/info/lib"
     },
@@ -95,7 +95,7 @@
     "description": "Style options",
     "memberof": "TheInfoStyle.propTypes",
     "meta": {
-      "lineno": 20,
+      "lineno": 21,
       "filename": "TheInfoStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/info/lib"
     },

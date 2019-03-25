@@ -14,11 +14,11 @@ const debug = Debug('the:cycle')
  * Component with life cycle
  */
 class TheCycle extends React.Component {
-  constructor (...args) {
+  constructor(...args) {
     super(...args)
   }
 
-  componentDidMount () {
+  componentDidMount() {
     const { onMount, values } = this.props
     onMount && onMount()
     debug('onMount')
@@ -26,20 +26,22 @@ class TheCycle extends React.Component {
     this.handleReceive(null, received)
   }
 
-  componentDidUpdate (prevProps) {
+  componentDidUpdate(prevProps) {
     const { values } = this.props
     this.handleReceive(prevProps.values, values)
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     const { onUnmount } = this.props
     onUnmount && onUnmount()
     debug('onUnmount')
   }
 
-  handleReceive (prevValues, values) {
+  handleReceive(prevValues, values) {
     const { onReceive } = this.props
-    const received = prevValues ? changedProps(prevValues, values) : { ...values }
+    const received = prevValues
+      ? changedProps(prevValues, values)
+      : { ...values }
     if (isEmptyObj(received)) {
       return
     }
@@ -47,16 +49,10 @@ class TheCycle extends React.Component {
     debug('onReceive', received)
   }
 
-  render () {
+  render() {
     const { props } = this
-    const {
-      children,
-    } = props
-    return (
-      <React.Fragment>
-        {children}
-      </React.Fragment>
-    )
+    const { children } = props
+    return <React.Fragment>{children}</React.Fragment>
   }
 }
 

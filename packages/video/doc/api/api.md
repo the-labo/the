@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-video">the-video</a></dt>
+<dt><a href="#module_@the-/video">@the-/video</a></dt>
 <dd><p>Video for the-components</p>
 </dd>
 </dl>
@@ -24,9 +24,9 @@
 </dd>
 </dl>
 
-<a name="module_the-video"></a>
+<a name="module_@the-/video"></a>
 
-## the-video
+## @the-/video
 Video for the-components
 
 <a name="TheVideo"></a>

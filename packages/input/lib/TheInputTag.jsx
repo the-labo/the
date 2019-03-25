@@ -4,8 +4,8 @@ import { clone } from 'asobj'
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { uniqueFilter } from '@the-/util-array'
 import { TheIcon } from '@the-/icon'
+import { uniqueFilter } from '@the-/util-array'
 import TheInputText from './TheInputText'
 
 class TheInputTag extends React.PureComponent {

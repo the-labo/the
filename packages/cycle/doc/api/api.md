@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-cycle">the-cycle</a></dt>
+<dt><a href="#module_@the-/cycle">@the-/cycle</a></dt>
 <dd><p>Component with life cycle</p>
 </dd>
 </dl>
@@ -16,9 +16,9 @@
 </dd>
 </dl>
 
-<a name="module_the-cycle"></a>
+<a name="module_@the-/cycle"></a>
 
-## the-cycle
+## @the-/cycle
 Component with life cycle
 
 <a name="TheCycle"></a>

@@ -34,6 +34,9 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": "the-labo/the-s3",
   "scripts": {
     "build": "the-script-build",
@@ -41,8 +44,5 @@
     "prepare": "npm run build && npm run doc",
     "test": "the-script-build",
     "watch": "the-script-build -w"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

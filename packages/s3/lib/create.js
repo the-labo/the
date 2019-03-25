@@ -9,7 +9,7 @@
 const TheS3 = require('./TheS3')
 
 /** @lends create */
-function create (...args) {
+function create(...args) {
   return new TheS3(...args)
 }
 

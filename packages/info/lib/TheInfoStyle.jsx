@@ -3,14 +3,15 @@
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { asStyleData } from '@the-/util-component'
 import { TheStyle } from '@the-/style'
+import { asStyleData } from '@the-/util-component'
 
 /** Style for TheInfo */
 const TheInfoStyle = ({ className, id, options }) => (
-  <TheStyle {...{ id }}
-            className={classnames('the-info-style', className)}
-            styles={TheInfoStyle.data(options)}
+  <TheStyle
+    {...{ id }}
+    className={classnames('the-info-style', className)}
+    styles={TheInfoStyle.data(options)}
   />
 )
 

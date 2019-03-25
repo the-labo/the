@@ -18,6 +18,7 @@
     "@the-/spin": "^15.0.4",
     "@the-/style": "^15.0.3",
     "@the-/util-component": "^15.0.3",
+    "@the-/video": "^2.1.2",
     "@the-/window": "^15.0.3",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@babel/core": "*",
     "@babel/runtime": "*",
+    "@the-/component-demo": "file:../component-demo",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
@@ -49,6 +51,9 @@
     "react": ">=16",
     "react-dom": ">=16"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": "the-labo/the-flick",
   "scripts": {
     "build": "the-script-build",
@@ -56,8 +61,5 @@
     "prepare": "npm run build && npm run doc",
     "test": "the-script-build",
     "watch": "the-script-build -w"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

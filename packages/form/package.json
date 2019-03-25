@@ -10,6 +10,7 @@
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
+  "build": "the-script-build",
   "dependencies": {
     "@the-/assert": "^15.0.3",
     "@the-/condition": "^3.0.5",
@@ -18,13 +19,13 @@
     "@the-/util-component": "^15.0.3",
     "asobj": "^3.0.1",
     "classnames": "^2.2.6",
-    "prop-types": "^15.7.2",
-    "the-input": "^3.5.87"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@babel/runtime": "*",
     "@the-/button": "file:../button",
     "@the-/component-demo": "file:../component-demo",
+    "@the-/input": "^3.5.89",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
@@ -34,6 +35,7 @@
     "react-dom": "^16.8.4",
     "react-router-dom": "^4.3.1"
   },
+  "doc": "the-script-doc",
   "engines": {
     "node": ">=10",
     "npm": ">=6"
@@ -49,6 +51,11 @@
     "react": ">=15",
     "react-dom": ">=15"
   },
+  "prepare": "npm run build && npm run doc",
+  "publishConfig": {
+    "access": "public"
+  },
+  "release": "the-script-release -y",
   "repository": "the-labo/the-form",
   "scripts": {
     "build": "the-script-build",
@@ -57,14 +64,7 @@
     "test": "the-script-build",
     "watch": "the-script-build -w"
   },
-  "build": "the-script-build",
-  "doc": "the-script-doc",
-  "prepare": "npm run build && npm run doc",
-  "release": "the-script-release -y",
   "test": "the-script-build",
   "update": "the-script-update",
-  "watch": "the-script-build -w",
-  "publishConfig": {
-    "access": "public"
-  }
+  "watch": "the-script-build -w"
 }

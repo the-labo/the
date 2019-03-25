@@ -12,9 +12,9 @@
     "order": 0
   },
   {
-    "id": "module:the-input",
-    "longname": "module:the-input",
-    "name": "the-input",
+    "id": "module:@the-/input",
+    "longname": "module:@the-/input",
+    "name": "@the-/input",
     "kind": "module",
     "description": "Input of the-components",
     "meta": {
@@ -46,7 +46,7 @@
     "scope": "global",
     "description": "Checkbox input of the-components",
     "meta": {
-      "lineno": 17,
+      "lineno": 21,
       "filename": "TheInputCheckbox.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -60,7 +60,7 @@
     "scope": "global",
     "description": "Radio input of the-components",
     "meta": {
-      "lineno": 14,
+      "lineno": 18,
       "filename": "TheInputRadio.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -144,7 +144,7 @@
     "scope": "global",
     "description": "Toggle input of the-components",
     "meta": {
-      "lineno": 11,
+      "lineno": 15,
       "filename": "TheInputToggle.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -260,7 +260,7 @@
     "description": "Disabled values",
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
-      "lineno": 159,
+      "lineno": 163,
       "filename": "TheInputCheckbox.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -275,7 +275,7 @@
     "description": "Handle for update",
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
-      "lineno": 163,
+      "lineno": 167,
       "filename": "TheInputCheckbox.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -290,7 +290,7 @@
     "description": "Options",
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
-      "lineno": 165,
+      "lineno": 169,
       "filename": "TheInputCheckbox.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -305,7 +305,7 @@
     "description": "Value parser",
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
-      "lineno": 171,
+      "lineno": 175,
       "filename": "TheInputCheckbox.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -320,7 +320,7 @@
     "description": "Value Splitter text",
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
-      "lineno": 173,
+      "lineno": 177,
       "filename": "TheInputCheckbox.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -335,7 +335,7 @@
     "description": "Value of input",
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
-      "lineno": 175,
+      "lineno": 179,
       "filename": "TheInputCheckbox.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -350,7 +350,7 @@
     "description": "Using button-like style",
     "memberof": "TheInputRadio.propTypes",
     "meta": {
-      "lineno": 145,
+      "lineno": 149,
       "filename": "TheInputRadio.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -365,7 +365,7 @@
     "description": "Using toggle-like style",
     "memberof": "TheInputRadio.propTypes",
     "meta": {
-      "lineno": 147,
+      "lineno": 151,
       "filename": "TheInputRadio.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -380,7 +380,7 @@
     "description": "Disabled values",
     "memberof": "TheInputRadio.propTypes",
     "meta": {
-      "lineno": 149,
+      "lineno": 153,
       "filename": "TheInputRadio.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -395,7 +395,7 @@
     "description": "Input error",
     "memberof": "TheInputRadio.propTypes",
     "meta": {
-      "lineno": 151,
+      "lineno": 155,
       "filename": "TheInputRadio.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -410,7 +410,7 @@
     "description": "Name of input",
     "memberof": "TheInputRadio.propTypes",
     "meta": {
-      "lineno": 153,
+      "lineno": 157,
       "filename": "TheInputRadio.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -425,7 +425,7 @@
     "description": "Handle for update",
     "memberof": "TheInputRadio.propTypes",
     "meta": {
-      "lineno": 155,
+      "lineno": 159,
       "filename": "TheInputRadio.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -440,7 +440,7 @@
     "description": "Options",
     "memberof": "TheInputRadio.propTypes",
     "meta": {
-      "lineno": 157,
+      "lineno": 161,
       "filename": "TheInputRadio.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -455,7 +455,7 @@
     "description": "Value parser",
     "memberof": "TheInputRadio.propTypes",
     "meta": {
-      "lineno": 162,
+      "lineno": 166,
       "filename": "TheInputRadio.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -470,7 +470,7 @@
     "description": "Options sorter",
     "memberof": "TheInputRadio.propTypes",
     "meta": {
-      "lineno": 164,
+      "lineno": 168,
       "filename": "TheInputRadio.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -485,7 +485,7 @@
     "description": "Value of input",
     "memberof": "TheInputRadio.propTypes",
     "meta": {
-      "lineno": 166,
+      "lineno": 170,
       "filename": "TheInputRadio.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -1280,7 +1280,7 @@
     "description": "Title text for off state",
     "memberof": "TheInputToggle.propTypes",
     "meta": {
-      "lineno": 116,
+      "lineno": 120,
       "filename": "TheInputToggle.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -1295,7 +1295,7 @@
     "description": "Switch on or not",
     "memberof": "TheInputToggle.propTypes",
     "meta": {
-      "lineno": 118,
+      "lineno": 122,
       "filename": "TheInputToggle.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -1310,7 +1310,7 @@
     "description": "Title text for on state",
     "memberof": "TheInputToggle.propTypes",
     "meta": {
-      "lineno": 120,
+      "lineno": 124,
       "filename": "TheInputToggle.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -1325,7 +1325,7 @@
     "description": "Width of component",
     "memberof": "TheInputToggle.propTypes",
     "meta": {
-      "lineno": 122,
+      "lineno": 126,
       "filename": "TheInputToggle.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -1340,7 +1340,7 @@
     "description": "Accept file type",
     "memberof": "TheInputUpload.propTypes",
     "meta": {
-      "lineno": 220,
+      "lineno": 224,
       "filename": "TheInputUpload.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -1355,7 +1355,7 @@
     "description": "Convert input file",
     "memberof": "TheInputUpload.propTypes",
     "meta": {
-      "lineno": 222,
+      "lineno": 226,
       "filename": "TheInputUpload.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -1370,7 +1370,7 @@
     "description": "Error message",
     "memberof": "TheInputUpload.propTypes",
     "meta": {
-      "lineno": 224,
+      "lineno": 228,
       "filename": "TheInputUpload.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -1385,7 +1385,7 @@
     "description": "Image height",
     "memberof": "TheInputUpload.propTypes",
     "meta": {
-      "lineno": 226,
+      "lineno": 230,
       "filename": "TheInputUpload.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -1400,7 +1400,7 @@
     "description": "Allow multiple upload",
     "memberof": "TheInputUpload.propTypes",
     "meta": {
-      "lineno": 228,
+      "lineno": 232,
       "filename": "TheInputUpload.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -1415,7 +1415,7 @@
     "description": "Handler for error event",
     "memberof": "TheInputUpload.propTypes",
     "meta": {
-      "lineno": 231,
+      "lineno": 235,
       "filename": "TheInputUpload.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -1430,7 +1430,7 @@
     "description": "Handler for load event",
     "memberof": "TheInputUpload.propTypes",
     "meta": {
-      "lineno": 233,
+      "lineno": 237,
       "filename": "TheInputUpload.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -1445,7 +1445,7 @@
     "description": "Handle for update",
     "memberof": "TheInputUpload.propTypes",
     "meta": {
-      "lineno": 235,
+      "lineno": 239,
       "filename": "TheInputUpload.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -1460,7 +1460,7 @@
     "description": "Spinner theme",
     "memberof": "TheInputUpload.propTypes",
     "meta": {
-      "lineno": 237,
+      "lineno": 241,
       "filename": "TheInputUpload.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -1475,7 +1475,7 @@
     "description": "Guide text",
     "memberof": "TheInputUpload.propTypes",
     "meta": {
-      "lineno": 239,
+      "lineno": 243,
       "filename": "TheInputUpload.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -1490,7 +1490,7 @@
     "description": "Value of input",
     "memberof": "TheInputUpload.propTypes",
     "meta": {
-      "lineno": 241,
+      "lineno": 245,
       "filename": "TheInputUpload.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },
@@ -1505,7 +1505,7 @@
     "description": "Image width",
     "memberof": "TheInputUpload.propTypes",
     "meta": {
-      "lineno": 243,
+      "lineno": 247,
       "filename": "TheInputUpload.jsx",
       "path": "/Users/okuni/Projects/the/packages/input/lib"
     },

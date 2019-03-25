@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-form">the-form</a></dt>
+<dt><a href="#module_@the-/form">@the-/form</a></dt>
 <dd><p>Form of the-components</p>
 </dd>
 </dl>
@@ -24,9 +24,9 @@
 </dd>
 </dl>
 
-<a name="module_the-form"></a>
+<a name="module_@the-/form"></a>
 
-## the-form
+## @the-/form
 Form of the-components
 
 <a name="TheForm"></a>

@@ -2,9 +2,9 @@
 
 import c from 'classnames'
 import React from 'react'
-import { isVideoSrc } from '@the-/util-component'
 import { TheCondition } from '@the-/condition'
 import { TheImage } from '@the-/image'
+import { isVideoSrc } from '@the-/util-component'
 import { TheVideo } from '@the-/video'
 
 class TheFlickImage extends React.Component {

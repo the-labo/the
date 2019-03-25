@@ -1,0 +1,366 @@
+[
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/media/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:the-media",
+    "longname": "module:the-media",
+    "name": "the-media",
+    "kind": "module",
+    "description": "User media handler",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/media/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheMedia()",
+    "longname": "TheMedia",
+    "name": "TheMedia",
+    "kind": "constructor",
+    "memberof": "TheMedia",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "Object",
+            "Boolean"
+          ]
+        },
+        "optional": true,
+        "description": "Video constraint",
+        "name": "options.video"
+      },
+      {
+        "type": {
+          "names": [
+            "Object",
+            "Boolean"
+          ]
+        },
+        "optional": true,
+        "description": "Audio constraint",
+        "name": "options.audio"
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "TheMedia",
+    "longname": "TheMedia",
+    "name": "TheMedia",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheMedia.js",
+      "path": "/Users/okuni/Projects/the/packages/media/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheMedia instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheMedia"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/media/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheMedia#createAudioRecorder",
+    "longname": "TheMedia#createAudioRecorder",
+    "name": "createAudioRecorder",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Create audio media recorder with AudioContext",
+    "memberof": "TheMedia",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "AudioContext"
+          ]
+        },
+        "name": "audioContext"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "MediaRecorder"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 42,
+      "filename": "TheMedia.js",
+      "path": "/Users/okuni/Projects/the/packages/media/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheMedia#getStreamTracks",
+    "longname": "TheMedia#getStreamTracks",
+    "name": "getStreamTracks",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get tracks",
+    "memberof": "TheMedia",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "kind"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Array.<MediaStreamTrack>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 69,
+      "filename": "TheMedia.js",
+      "path": "/Users/okuni/Projects/the/packages/media/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "TheMedia#toggleEnabled",
+    "longname": "TheMedia#toggleEnabled",
+    "name": "toggleEnabled",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Toggle track enabled",
+    "memberof": "TheMedia",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "kind"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "name": "enabled"
+      }
+    ],
+    "meta": {
+      "lineno": 89,
+      "filename": "TheMedia.js",
+      "path": "/Users/okuni/Projects/the/packages/media/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "TheMedia#bindVideo",
+    "longname": "TheMedia#bindVideo",
+    "name": "bindVideo",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Bind HTML video element",
+    "memberof": "TheMedia",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "HTMLVideoElement"
+          ]
+        },
+        "name": "video"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 106,
+      "filename": "TheMedia.js",
+      "path": "/Users/okuni/Projects/the/packages/media/lib"
+    },
+    "async": true,
+    "order": 8
+  },
+  {
+    "id": "TheMedia#start",
+    "longname": "TheMedia#start",
+    "name": "start",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Start user media",
+    "memberof": "TheMedia",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 122,
+      "filename": "TheMedia.js",
+      "path": "/Users/okuni/Projects/the/packages/media/lib"
+    },
+    "async": true,
+    "order": 9
+  },
+  {
+    "id": "TheMedia#stop",
+    "longname": "TheMedia#stop",
+    "name": "stop",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Stop user media",
+    "memberof": "TheMedia",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 145,
+      "filename": "TheMedia.js",
+      "path": "/Users/okuni/Projects/the/packages/media/lib"
+    },
+    "async": true,
+    "order": 10
+  },
+  {
+    "id": "TheMedia#takePhoto",
+    "longname": "TheMedia#takePhoto",
+    "name": "takePhoto",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Take photo image",
+    "memberof": "TheMedia",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Blob>"
+          ]
+        },
+        "description": "Blob"
+      }
+    ],
+    "meta": {
+      "lineno": 167,
+      "filename": "TheMedia.js",
+      "path": "/Users/okuni/Projects/the/packages/media/lib"
+    },
+    "async": true,
+    "order": 11
+  }
+]

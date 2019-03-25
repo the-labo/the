@@ -10,7 +10,8 @@ const pkgSync = require('./misc/tasks/pkgSync')
 const pkgRun = require('./misc/tasks/pkgRun')
 const pkgInstall = require('./misc/tasks/pkgInstall')
 const pkgPublish = require('./misc/tasks/pkgPublish')
-const theCode = require('the-code/pon')
+const theCode = require('./packages/code/pon')
+const { mocha } = require('pon-task-dev')
 
 const { cwd, tasks } = require('./Ponfile')
 
@@ -55,6 +56,13 @@ module.exports = pon({
       ignore: '**/node_modules/**/*.*'
     })
   },
+
+  // -----------------------------------
+  // Test Tasks
+  // -----------------------------------
+  ...{
+    'test:root': mocha('test/**/*Test.js'),
+  },
   // -----------------------------------
   // Main Tasks
   // -----------------------------------
@@ -71,7 +79,7 @@ module.exports = pon({
       'format',
     ],
     doc: ['pkg:run:doc'],
-    test: ['pkg:run:test'],
+    test: ['test:root','pkg:run:test'],
     publish: ['build', 'doc', 'pkg:sync', 'pkg:publish']
   },
   // -----------------------------------

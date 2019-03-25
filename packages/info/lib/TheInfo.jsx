@@ -9,75 +9,49 @@ import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
  * Info of the-component
  */
 class TheInfo extends React.Component {
-  static Body ({ children, className }) {
+  static Body({ children, className }) {
     return (
-      <div className={classnames('the-info-body', className)}
-           role='rowGroup'
-      >
+      <div className={classnames('the-info-body', className)} role='rowGroup'>
         {children}
       </div>
     )
   }
 
-  static Header ({ children, className }) {
+  static Header({ children, className }) {
     return (
-      <h5 className={classnames('the-info-header', className)}
-          role='heading'
-      >
+      <h5 className={classnames('the-info-header', className)} role='heading'>
         {children}
       </h5>
     )
   }
 
-  static Row ({ children, className, label, value }) {
+  static Row({ children, className, label, value }) {
     return (
-      <div className={classnames('the-info-row', className)}
-           role='row'
-      >
-        <label className='the-info-row-label'
-               role='rowheader'
-        >
+      <div className={classnames('the-info-row', className)} role='row'>
+        <label className='the-info-row-label' role='rowheader'>
           {label}
         </label>
-        <div aria-label={label}
-             className='the-info-row-value'
-             role='gridcell'
-        >
+        <div aria-label={label} className='the-info-row-value' role='gridcell'>
           {value}
         </div>
       </div>
     )
   }
 
-  render () {
+  render() {
     const { props } = this
-    const {
-      children,
-      className,
-      data,
-      keys,
-      title,
-    } = props
+    const { children, className, data, keys, title } = props
     return (
-      <div {...htmlAttributesFor(props, { except: ['className', 'data'] })}
-           {...eventHandlersFor(props, { except: [] })}
-           className={classnames('the-info', className)}
+      <div
+        {...htmlAttributesFor(props, { except: ['className', 'data'] })}
+        {...eventHandlersFor(props, { except: [] })}
+        className={classnames('the-info', className)}
       >
-        {
-          title && (
-            <TheInfo.Header>{title}</TheInfo.Header>
-          )
-        }
+        {title && <TheInfo.Header>{title}</TheInfo.Header>}
         <TheInfo.Body>
-          {
-            (keys || Object.keys(data || {})).map((label) => (
-              <TheInfo.Row key={label}
-                           label={label}
-                           value={data[label]}
-              >
-              </TheInfo.Row>
-            ))
-          }
+          {(keys || Object.keys(data || {})).map((label) => (
+            <TheInfo.Row key={label} label={label} value={data[label]} />
+          ))}
           {children}
         </TheInfo.Body>
       </div>

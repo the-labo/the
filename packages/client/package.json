@@ -1,7 +1,7 @@
 {
   "name": "@the-/client",
   "description": "Client for the-server",
-  "version": "15.0.3",
+  "version": "15.0.5",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -19,7 +19,7 @@
     "asleep": "^1.0.3",
     "browser-cookies": "^1.2.0",
     "bstorage": "^2.0.3",
-    "bwindow": "^2.0.2",
+    "bwindow": "^2.0.3",
     "debug": "^4.1.1",
     "prop-types": "^15.7.2",
     "qs": "^6.6.0",
@@ -30,7 +30,7 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "@babel/runtime": "*",
+    "@babel/runtime": "^7.4.2",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
@@ -38,8 +38,8 @@
     "@the-/templates": "file:../templates",
     "aport": "^2.0.0",
     "coz": "^7.0.19",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3"
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5"
   },
   "engines": {
     "node": ">=10",

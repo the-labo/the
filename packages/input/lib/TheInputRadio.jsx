@@ -4,8 +4,12 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { unlessProduction } from '@the-/check'
-import { eventHandlersFor, htmlAttributesFor, newId } from '@the-/util-component'
 import { TheIcon } from '@the-/icon'
+import {
+  eventHandlersFor,
+  htmlAttributesFor,
+  newId,
+} from '@the-/util-component'
 import { normalizeOptions, renderErrorMessage } from './helpers'
 
 /**

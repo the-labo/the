@@ -1,7 +1,7 @@
 {
   "name": "@the-/scope",
   "description": "State scope for the-store",
-  "version": "15.0.3",
+  "version": "15.0.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -21,9 +21,9 @@
     "@the-/script-test": "file:../script-test",
     "@the-/store": "file:../store",
     "@the-/templates": "file:../templates",
-    "eslint": "^5.13.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "eslint": "^5.15.3",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5"
   },
   "engines": {
     "node": ">=10",

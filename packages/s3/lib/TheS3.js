@@ -7,13 +7,13 @@ const AWS = require('aws-sdk')
 const fs = require('fs')
 const mime = require('mime')
 const path = require('path')
-const { unlessProduction } = require('@the-/check')
 const { promisify } = require('util')
+const { unlessProduction } = require('@the-/check')
 const readFileAsync = promisify(fs.readFile)
 
 /** @lends TheS3 */
 class TheS3 {
-  constructor (config) {
+  constructor(config) {
     const {
       accessKeyId,
       bucket: Bucket,
@@ -45,7 +45,7 @@ class TheS3 {
    * @param {Object} [options={}] - Optional settings
    * @returns {Promise<void>}
    */
-  async upload (src, options = {}) {
+  async upload(src, options = {}) {
     const {
       name = path.basename(src),
       namespace = 'uploaded',
@@ -53,23 +53,24 @@ class TheS3 {
     } = options
     const Body = typeof src === 'string' ? await readFileAsync(src) : src
     const { s3 } = this
-    const Key = path.join(...[namespace, name,].filter(Boolean))
-    const ContentType = type || (
-      typeof src === 'string' ? mime.getType(src) : null
-    )
+    const Key = path.join(...[namespace, name].filter(Boolean))
+    const ContentType =
+      type || (typeof src === 'string' ? mime.getType(src) : null)
     return new Promise((resolve, reject) => {
-      s3.upload({
+      s3.upload(
+        {
           Body,
           ContentType,
           Key,
-        }, (err, data) => {
+        },
+        (err, data) => {
           if (err) {
             reject(err)
             return
           }
           const { Bucket: bucket, ETag: etag, Key: key, Location: url } = data
           resolve({ bucket, etag, key, url })
-        }
+        },
       )
     })
   }

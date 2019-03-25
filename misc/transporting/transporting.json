@@ -11,6 +11,14 @@
     "kind": "lib",
     "name": "assets"
   },
+  "the-geo": {
+    "kind": "lib",
+    "name": "geo"
+  },
+  "the-media": {
+    "kind": "lib",
+    "name": "media"
+  },
   "the-ast": {
     "kind": "lib",
     "name": "ast"
@@ -46,6 +54,10 @@
   "the-client-util": {
     "kind": "util",
     "name": "util-client"
+  },
+  "the-server-util": {
+    "kind": "util",
+    "name": "util-server"
   },
   "the-code": {
     "kind": "lib",
@@ -227,7 +239,6 @@
     "kind": "lib",
     "name": "s3"
   },
-
   "the-lint": {
     "kind": "lib",
     "name": "lint"

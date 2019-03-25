@@ -3,11 +3,15 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { eventHandlersFor, htmlAttributesFor, newId } from '@the-/util-component'
-import { readFileAsDataURL } from '@the-/util-component'
 import { TheCondition } from '@the-/condition'
 import { TheIcon } from '@the-/icon'
 import { TheSpin } from '@the-/spin'
+import {
+  eventHandlersFor,
+  htmlAttributesFor,
+  newId,
+  readFileAsDataURL,
+} from '@the-/util-component'
 import {
   isImageUrl,
   isUnknownTypeUrl,
@@ -66,7 +70,7 @@ class TheInputUpload extends React.PureComponent {
     ;(async () => {
       try {
         const urls = await Promise.all(
-          [...target.files].map(async (file) => await convertFile(file, props)),
+          [...target.files].map(async (file) => convertFile(file, props)),
         )
         if (this.gone) {
           return

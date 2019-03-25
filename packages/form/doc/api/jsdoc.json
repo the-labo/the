@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-form",
-    "longname": "module:the-form",
-    "name": "the-form",
+    "id": "module:@the-/form",
+    "longname": "module:@the-/form",
+    "name": "@the-/form",
     "kind": "module",
     "description": "Form of the-components",
     "meta": {

@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-video",
-    "longname": "module:the-video",
-    "name": "the-video",
+    "id": "module:@the-/video",
+    "longname": "module:@the-/video",
+    "name": "@the-/video",
     "kind": "module",
     "description": "Video for the-components",
     "meta": {

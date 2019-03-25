@@ -3,8 +3,8 @@
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { asStyleData } from '@the-/util-component'
 import { TheStyle } from '@the-/style'
+import { asStyleData } from '@the-/util-component'
 
 /** Style for TheForm */
 const TheFormStyle = ({ className, id, options }) => (
@@ -117,12 +117,12 @@ TheFormStyle.data = (options) => {
       '> *': {
         margin: '0',
       },
+      alignItems: 'stretch',
+      display: 'inline-flex',
       input: {
         borderRadius: '4px 0 0 4px ',
         height: inlineHeight,
       },
-      alignItems: 'stretch',
-      display: 'inline-flex',
       margin: '0',
       padding: '0 8px',
       position: 'relative',
