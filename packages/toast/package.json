@@ -14,8 +14,7 @@
     "@the-/style": "^15.0.3",
     "@the-/util-component": "^15.0.3",
     "classnames": "^2.2.6",
-    "prop-types": "^15.7.2",
-    "the-component-util": "^3.0.21"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@babel/runtime": "^7.3.1",

@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { TheButton, TheButtonGroup, TheButtonStyle } from '@the-/button'
-import { TheRouter } from 'the-router'
+import { TheRouter } from '@the-/router'
 
 class ExampleComponent extends React.PureComponent {
   handleClick = (e) => {

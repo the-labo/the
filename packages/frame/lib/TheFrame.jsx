@@ -3,10 +3,10 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { eventHandlersFor, htmlAttributesFor } from 'the-component-util'
-import { TheCondition } from 'the-condition'
-import { TheSpin } from 'the-spin'
-import { get } from 'the-window'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
+import { TheCondition } from '@the-/condition'
+import { TheSpin } from '@the-/spin'
+import { get } from '@the-/window'
 import TheFrameStyle from './TheFrameStyle'
 
 /**

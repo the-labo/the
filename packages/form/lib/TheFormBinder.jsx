@@ -3,8 +3,8 @@
 import { clone } from 'asobj'
 import PropTypes from 'prop-types'
 import React from 'react'
-import theAssert from 'the-assert'
-import { newId } from 'the-component-util'
+import theAssert from '@the-/assert'
+import { newId } from '@the-/util-component'
 
 const assert = theAssert('TheFormBinder')
 const nullIfUndefined = (v) => (typeof v === 'undefined' ? null : v)

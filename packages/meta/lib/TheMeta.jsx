@@ -3,8 +3,8 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { newId } from 'the-component-util'
-import { get } from 'the-window'
+import { newId } from '@the-/util-component'
+import { get } from '@the-/window'
 
 const MetaContext = React.createContext(null)
 

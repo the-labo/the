@@ -1,11 +1,11 @@
 'use strict'
 
 import React from 'react'
-import { TheFlick, TheFlickStyle } from 'the-flick'
-import { TheButton, TheButtonStyle } from 'the-button'
-import { TheSpinStyle } from 'the-spin'
-import { TheImageStyle } from 'the-image'
-import { TheVideoStyle } from 'the-video'
+import { TheFlick, TheFlickStyle } from '@the-/flick'
+import { TheButton, TheButtonStyle } from '@the-/button'
+import { TheSpinStyle } from '@the-/spin'
+import { TheImageStyle } from '@the-/image'
+import { TheVideoStyle } from '@the-/video'
 
 const imageUrls = [
   'https://raw.githubusercontent.com/apeman-asset-labo/apeman-asset-images/master/dist/dummy/01.jpg',

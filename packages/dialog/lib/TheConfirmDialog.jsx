@@ -3,8 +3,8 @@
 import { clone } from 'asobj'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { TheInput } from '@the-/input'
 import { TheButton } from '@the-/button'
-import { TheInput } from 'the-input'
 import TheDialog from './TheDialog'
 
 /**

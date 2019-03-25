@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-bar",
-    "longname": "module:the-bar",
-    "name": "the-bar",
+    "id": "module:@the-/bar",
+    "longname": "module:@the-/bar",
+    "name": "@the-/bar",
     "kind": "module",
     "description": "Bar of the-components",
     "meta": {
@@ -34,7 +34,7 @@
     "scope": "global",
     "description": "Bar of the-component",
     "meta": {
-      "lineno": 12,
+      "lineno": 11,
       "filename": "TheBar.jsx",
       "path": "/Users/okuni/Projects/the/packages/bar/lib"
     },
@@ -64,7 +64,7 @@
     "description": "Button texts",
     "memberof": "TheActionBar.propTypes",
     "meta": {
-      "lineno": 65,
+      "lineno": 62,
       "filename": "TheActionBar.jsx",
       "path": "/Users/okuni/Projects/the/packages/bar/lib"
     },
@@ -79,7 +79,7 @@
     "description": "Danger marks",
     "memberof": "TheActionBar.propTypes",
     "meta": {
-      "lineno": 67,
+      "lineno": 64,
       "filename": "TheActionBar.jsx",
       "path": "/Users/okuni/Projects/the/packages/bar/lib"
     },
@@ -94,7 +94,7 @@
     "description": "Handler functions",
     "memberof": "TheActionBar.propTypes",
     "meta": {
-      "lineno": 69,
+      "lineno": 66,
       "filename": "TheActionBar.jsx",
       "path": "/Users/okuni/Projects/the/packages/bar/lib"
     },
@@ -109,7 +109,7 @@
     "description": "Hidden or not",
     "memberof": "TheActionBar.propTypes",
     "meta": {
-      "lineno": 71,
+      "lineno": 68,
       "filename": "TheActionBar.jsx",
       "path": "/Users/okuni/Projects/the/packages/bar/lib"
     },
@@ -124,7 +124,7 @@
     "description": "Icon class names",
     "memberof": "TheActionBar.propTypes",
     "meta": {
-      "lineno": 73,
+      "lineno": 70,
       "filename": "TheActionBar.jsx",
       "path": "/Users/okuni/Projects/the/packages/bar/lib"
     },
@@ -139,7 +139,7 @@
     "description": "Lead text",
     "memberof": "TheActionBar.propTypes",
     "meta": {
-      "lineno": 75,
+      "lineno": 72,
       "filename": "TheActionBar.jsx",
       "path": "/Users/okuni/Projects/the/packages/bar/lib"
     },
@@ -154,7 +154,7 @@
     "description": "Style options",
     "memberof": "TheBarStyle.propTypes",
     "meta": {
-      "lineno": 20,
+      "lineno": 21,
       "filename": "TheBarStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/bar/lib"
     },

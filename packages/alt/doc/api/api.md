@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-alt">the-alt</a></dt>
+<dt><a href="#module_@the-/alt">@the-/alt</a></dt>
 <dd><p>Alt text for the-components</p>
 </dd>
 </dl>
@@ -24,9 +24,9 @@
 </dd>
 </dl>
 
-<a name="module_the-alt"></a>
+<a name="module_@the-/alt"></a>
 
-## the-alt
+## @the-/alt
 Alt text for the-components
 
 <a name="TheAlt"></a>

@@ -3,7 +3,7 @@
 import React from 'react'
 import { TheListGroup, TheList, TheListStyle } from '@the-/list'
 import { TheSpinStyle } from '@the-/spin'
-import { TheRouter } from 'the-router'
+import { TheRouter } from '@the-/router'
 
 const IMAGE_URL = 'https://raw.githubusercontent.com/apeman-asset-labo/apeman-asset-images/master/dist/dummy/02.jpg'
 

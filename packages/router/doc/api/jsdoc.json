@@ -13,9 +13,9 @@
     "order": 0
   },
   {
-    "id": "module:the-router",
-    "longname": "module:the-router",
-    "name": "the-router",
+    "id": "module:@the-/router",
+    "longname": "module:@the-/router",
+    "name": "@the-/router",
     "kind": "module",
     "description": "Router of the-components",
     "meta": {

@@ -27,14 +27,13 @@
     "coz": "^7.0.19",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-router-dom": "^4.3.1",
-    "the-script-release": "^1.0.10"
+    "react-router-dom": "^4.3.1"
   },
   "engines": {
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/the-pager#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/pager#readme",
   "keywords": [
     "component",
     "the"

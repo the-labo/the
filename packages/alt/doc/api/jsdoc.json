@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-alt",
-    "longname": "module:the-alt",
-    "name": "the-alt",
+    "id": "module:@the-/alt",
+    "longname": "module:@the-/alt",
+    "name": "@the-/alt",
     "kind": "module",
     "description": "Alt text for the-components",
     "meta": {
@@ -50,7 +50,7 @@
     "description": "Style options",
     "memberof": "TheAltStyle.propTypes",
     "meta": {
-      "lineno": 20,
+      "lineno": 21,
       "filename": "TheAltStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/alt/lib"
     },

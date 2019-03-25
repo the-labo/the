@@ -1,8 +1,8 @@
 'use strict'
 
 import React from 'react'
-import { TheTable, TheTableStyle } from 'the-table'
-import { TheInputStyle } from 'the-input'
+import { TheTable, TheTableStyle } from '@the-/table'
+import { TheInputStyle } from '@the-/input'
 
 const { Head, Body, Row, Cell, HeaderCell, CheckboxCell } = TheTable
 

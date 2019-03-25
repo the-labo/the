@@ -1,8 +1,8 @@
 'use strict'
 
 import React from 'react'
-import { TheHamburger, TheHamburgerStyle } from 'the-hamburger'
-import { TheRouter } from 'the-router'
+import { TheHamburger, TheHamburgerStyle } from '@the-/hamburger'
+import { TheRouter } from '@the-/router'
 
 class ExampleComponent extends React.Component {
   constructor () {

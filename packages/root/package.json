@@ -34,7 +34,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/the-root#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/root#readme",
   "keywords": [
     "component",
     "the"

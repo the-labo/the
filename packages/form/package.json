@@ -11,18 +11,19 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/assert": "^15.0.3",
+    "@the-/condition": "^3.0.5",
+    "@the-/icon": "^15.0.4",
+    "@the-/style": "^15.0.3",
+    "@the-/util-component": "^15.0.3",
     "asobj": "^3.0.1",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
-    "the-assert": "^1.0.4",
-    "the-component-util": "^3.0.22",
-    "the-condition": "^3.0.4",
-    "the-icon": "^4.0.10",
-    "the-input": "^3.5.87",
-    "the-style": "^2.2.8"
+    "the-input": "^3.5.87"
   },
   "devDependencies": {
     "@babel/runtime": "*",
+    "@the-/button": "file:../button",
     "@the-/component-demo": "file:../component-demo",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
@@ -31,14 +32,13 @@
     "coz": "^7.0.19",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-router-dom": "^4.3.1",
-    "the-button": "^3.0.36"
+    "react-router-dom": "^4.3.1"
   },
   "engines": {
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/the-form#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/form#readme",
   "keywords": [
     "component",
     "the"

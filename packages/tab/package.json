@@ -11,14 +11,14 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/button": "^15.0.3",
+    "@the-/spin": "^15.0.4",
+    "@the-/style": "^15.0.3",
+    "@the-/util-component": "^15.0.3",
     "asobj": "^3.0.0",
     "chopcal": "^3.0.2",
     "classnames": "^2.2.6",
-    "prop-types": "^15.6.2",
-    "the-button": "^3.0.32",
-    "the-component-util": "^3.0.20",
-    "the-spin": "^3.1.12",
-    "the-style": "^2.2.4"
+    "prop-types": "^15.6.2"
   },
   "devDependencies": {
     "@babel/runtime": "^7.0.0-rc.1",
@@ -36,7 +36,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/the-tab#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/tab#readme",
   "keywords": [
     "component",
     "the"

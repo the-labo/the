@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-list",
-    "longname": "module:the-list",
-    "name": "the-list",
+    "id": "module:@the-/list",
+    "longname": "module:@the-/list",
+    "name": "@the-/list",
     "kind": "module",
     "description": "List of the-components",
     "meta": {

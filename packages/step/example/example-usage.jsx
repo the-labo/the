@@ -1,9 +1,9 @@
 'use strict'
 
 import React from 'react'
-import { TheStep, TheStepBar, TheStepStyle } from 'the-step'
-import { TheSpinStyle } from 'the-spin'
-import { TheButtonStyle } from 'the-button'
+import { TheStep, TheStepBar, TheStepStyle } from '@the-/step'
+import { TheSpinStyle } from '@the-/spin'
+import { TheButtonStyle } from '@the-/button'
 
 class ExampleComponent extends React.Component {
   constructor (props) {

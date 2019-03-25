@@ -1,12 +1,12 @@
 'use strict'
 
 import React from 'react'
-import { TheView, TheViewStyle } from 'the-view'
-import { TheIcon } from 'the-icon'
-import { TheSpinStyle } from 'the-spin'
-import { TheButtonStyle } from 'the-button'
-import { TheMenuStyle, TheDropdownMenu } from 'the-menu'
-import { TheRouter } from 'the-router'
+import { TheView, TheViewStyle } from '@the-/view'
+import { TheIcon } from '@the-/icon'
+import { TheSpinStyle } from '@the-/spin'
+import { TheButtonStyle } from '@the-/button'
+import { TheMenuStyle, TheDropdownMenu } from '@the-/menu'
+import { TheRouter } from '@the-/router'
 
 class ExampleComponent extends React.PureComponent {
   render () {

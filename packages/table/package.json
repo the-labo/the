@@ -11,12 +11,11 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/icon": "^15.0.4",
+    "@the-/style": "^15.0.3",
+    "@the-/util-component": "^15.0.3",
     "classnames": "^2.2.6",
-    "prop-types": "^15.7.2",
-    "the-component-util": "^3.0.22",
-    "the-icon": "^4.0.10",
-    "the-input": "^3.5.87",
-    "the-style": "^2.2.8"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@babel/runtime": "^7.3.4",
@@ -28,15 +27,13 @@
     "coz": "^7.0.19",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-router-dom": "^4.3.1",
-    "the-component-demo": "^4.0.18",
-    "the-script-build": "^5.0.10"
+    "react-router-dom": "^4.3.1"
   },
   "engines": {
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/the-table#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/table#readme",
   "keywords": [
     "component",
     "the"

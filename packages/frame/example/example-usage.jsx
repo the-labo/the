@@ -1,8 +1,8 @@
 'use strict'
 
 import React from 'react'
-import { TheFrame, TheFrameStyle } from 'the-frame'
-import { TheSpinStyle } from 'the-spin'
+import { TheFrame, TheFrameStyle } from '@the-/frame'
+import { TheSpinStyle } from '@the-/spin'
 
 class ExampleComponent extends React.PureComponent {
   render () {

@@ -1,9 +1,9 @@
 'use strict'
 
 import React from 'react'
-import { TheTab, TheTabStyle } from 'the-tab'
-import { TheButtonStyle } from 'the-button'
-import { TheSpinStyle } from 'the-spin'
+import { TheTab, TheTabStyle } from '@the-/tab'
+import { TheButtonStyle } from '@the-/button'
+import { TheSpinStyle } from '@the-/spin'
 
 class ExampleComponent extends React.PureComponent {
   constructor (props) {

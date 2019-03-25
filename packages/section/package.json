@@ -14,10 +14,9 @@
     "@the-/icon": "^15.0.4",
     "@the-/spin": "^15.0.4",
     "@the-/style": "^15.0.3",
+    "@the-/util-component": "^15.0.3",
     "classnames": "^2.2.6",
-    "prop-types": "^15.7.2",
-    "the-component-util": "^3.0.22",
-    "the-icon": "^4.0.10"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@babel/runtime": "*",
@@ -29,14 +28,13 @@
     "coz": "^7.0.19",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-router-dom": "^4.3.1",
-    "the-script-build": "^5.0.1"
+    "react-router-dom": "^4.3.1"
   },
   "engines": {
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/the-section#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/section#readme",
   "keywords": [
     "component",
     "the"

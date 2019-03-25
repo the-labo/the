@@ -78,7 +78,6 @@ Usage
 ## API Guide
 
 - [@the-/router](./doc/api/api.md#module_@the-/router)
-- [the-router](./doc/api/api.md#module_the-router)
 
 
 <!-- Section from "doc/readme/03.API.md.hbs" End -->

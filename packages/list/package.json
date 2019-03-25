@@ -10,21 +10,22 @@
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
+  "build": "the-script-build",
   "dependencies": {
+    "@the-/condition": "^3.0.5",
     "@the-/icon": "^15.0.4",
     "@the-/image": "^15.0.4",
+    "@the-/link": "^3.0.20",
     "@the-/spin": "^15.0.4",
     "@the-/style": "^15.0.3",
     "@the-/util-component": "^15.0.3",
     "classnames": "^2.2.6",
-    "prop-types": "^15.7.2",
-    "the-condition": "^3.0.4",
-    "the-link": "^3.0.19",
-    "the-style": "^2.2.8"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@babel/runtime": "*",
     "@the-/component-demo": "file:../component-demo",
+    "@the-/router": "file:../router",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
@@ -32,9 +33,9 @@
     "coz": "^7.0.19",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-router-dom": "^4.3.1",
-    "the-router": "^3.0.4"
+    "react-router-dom": "^4.3.1"
   },
+  "doc": "the-script-doc",
   "engines": {
     "node": ">=10",
     "npm": ">=6"
@@ -50,6 +51,11 @@
     "react": ">=15",
     "react-dom": ">=15"
   },
+  "prepare": "npm run build && npm run doc",
+  "publishConfig": {
+    "access": "public"
+  },
+  "release": "the-script-release -y",
   "repository": "the-labo/the-list",
   "scripts": {
     "build": "the-script-build",
@@ -58,14 +64,7 @@
     "test": "the-script-build",
     "watch": "the-script-build -w"
   },
-  "build": "the-script-build",
-  "doc": "the-script-doc",
-  "prepare": "npm run build && npm run doc",
-  "release": "the-script-release -y",
   "test": "the-script-build",
   "update": "the-script-update",
-  "watch": "the-script-build -w",
-  "publishConfig": {
-    "access": "public"
-  }
+  "watch": "the-script-build -w"
 }

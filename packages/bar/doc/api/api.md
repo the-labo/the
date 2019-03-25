@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-bar">the-bar</a></dt>
+<dt><a href="#module_@the-/bar">@the-/bar</a></dt>
 <dd><p>Bar of the-components</p>
 </dd>
 </dl>
@@ -27,9 +27,9 @@
 </dd>
 </dl>
 
-<a name="module_the-bar"></a>
+<a name="module_@the-/bar"></a>
 
-## the-bar
+## @the-/bar
 Bar of the-components
 
 <a name="TheActionBar"></a>

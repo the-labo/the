@@ -3,7 +3,7 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheIcon } from 'the-icon'
+import { TheIcon } from '@the-/icon'
 
 class TheStepBar extends React.Component {
   render () {

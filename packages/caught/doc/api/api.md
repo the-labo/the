@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-caught">the-caught</a></dt>
+<dt><a href="#module_@the-/caught">@the-/caught</a></dt>
 <dd><p>Component to show caught errors</p>
 </dd>
 </dl>
@@ -24,9 +24,9 @@
 </dd>
 </dl>
 
-<a name="module_the-caught"></a>
+<a name="module_@the-/caught"></a>
 
-## the-caught
+## @the-/caught
 Component to show caught errors
 
 <a name="TheCaught"></a>

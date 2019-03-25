@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-dialog",
-    "longname": "module:the-dialog",
-    "name": "the-dialog",
+    "id": "module:@the-/dialog",
+    "longname": "module:@the-/dialog",
+    "name": "@the-/dialog",
     "kind": "module",
     "description": "Dialog for the-components",
     "meta": {
@@ -34,7 +34,7 @@
     "scope": "global",
     "description": "Dialog for the-components",
     "meta": {
-      "lineno": 19,
+      "lineno": 18,
       "filename": "TheDialog.jsx",
       "path": "/Users/okuni/Projects/the/packages/dialog/lib"
     },
@@ -197,7 +197,7 @@
     "description": "Hide Close Button",
     "memberof": "TheDialog.propTypes",
     "meta": {
-      "lineno": 161,
+      "lineno": 160,
       "filename": "TheDialog.jsx",
       "path": "/Users/okuni/Projects/the/packages/dialog/lib"
     },
@@ -212,7 +212,7 @@
     "description": "Dialog icon",
     "memberof": "TheDialog.propTypes",
     "meta": {
-      "lineno": 163,
+      "lineno": 162,
       "filename": "TheDialog.jsx",
       "path": "/Users/okuni/Projects/the/packages/dialog/lib"
     },
@@ -227,7 +227,7 @@
     "description": "Lead text of dialog body",
     "memberof": "TheDialog.propTypes",
     "meta": {
-      "lineno": 165,
+      "lineno": 164,
       "filename": "TheDialog.jsx",
       "path": "/Users/okuni/Projects/the/packages/dialog/lib"
     },
@@ -242,7 +242,7 @@
     "description": "Close handler",
     "memberof": "TheDialog.propTypes",
     "meta": {
-      "lineno": 167,
+      "lineno": 166,
       "filename": "TheDialog.jsx",
       "path": "/Users/okuni/Projects/the/packages/dialog/lib"
     },
@@ -257,7 +257,7 @@
     "description": "Shows the dialog",
     "memberof": "TheDialog.propTypes",
     "meta": {
-      "lineno": 169,
+      "lineno": 168,
       "filename": "TheDialog.jsx",
       "path": "/Users/okuni/Projects/the/packages/dialog/lib"
     },
@@ -272,7 +272,7 @@
     "description": "Show spin",
     "memberof": "TheDialog.propTypes",
     "meta": {
-      "lineno": 171,
+      "lineno": 170,
       "filename": "TheDialog.jsx",
       "path": "/Users/okuni/Projects/the/packages/dialog/lib"
     },
@@ -287,7 +287,7 @@
     "description": "Dialog Title",
     "memberof": "TheDialog.propTypes",
     "meta": {
-      "lineno": 173,
+      "lineno": 172,
       "filename": "TheDialog.jsx",
       "path": "/Users/okuni/Projects/the/packages/dialog/lib"
     },
@@ -302,7 +302,7 @@
     "description": "Z index of dialog",
     "memberof": "TheDialog.propTypes",
     "meta": {
-      "lineno": 175,
+      "lineno": 174,
       "filename": "TheDialog.jsx",
       "path": "/Users/okuni/Projects/the/packages/dialog/lib"
     },

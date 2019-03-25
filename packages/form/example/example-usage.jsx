@@ -1,9 +1,9 @@
 'use strict'
 
 import React from 'react'
-import { TheForm, TheFormBinder, TheFormStyle } from 'the-form'
-import { TheInput, TheInputStyle } from 'the-input'
-import { TheButton, TheButtonStyle } from 'the-button'
+import { TheForm, TheFormBinder, TheFormStyle } from '@the-/form'
+import { TheInput, TheInputStyle } from '@the-/input'
+import { TheButton, TheButtonStyle } from '@the-/button'
 
 class ExampleComponent extends React.PureComponent {
   constructor (props) {

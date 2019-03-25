@@ -11,18 +11,17 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/button": "^15.0.3",
+    "@the-/condition": "^3.0.5",
+    "@the-/icon": "^15.0.4",
+    "@the-/image": "^15.0.4",
+    "@the-/spin": "^15.0.4",
+    "@the-/style": "^15.0.3",
+    "@the-/util-component": "^15.0.3",
+    "@the-/window": "^15.0.3",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
-    "react-draggable": "^3.2.1",
-    "the-button": "^3.0.36",
-    "the-component-util": "^3.0.22",
-    "the-condition": "^3.0.4",
-    "the-icon": "^4.0.10",
-    "the-image": "^2.0.20",
-    "the-spin": "^3.1.12",
-    "the-style": "^2.2.8",
-    "the-video": "^2.1.1",
-    "the-window": "^7.0.6"
+    "react-draggable": "^3.2.1"
   },
   "devDependencies": {
     "@babel/core": "*",
@@ -39,7 +38,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/the-flick#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/flick#readme",
   "keywords": [
     "lib",
     "the"

@@ -1,7 +1,7 @@
 {
   "name": "@the-/router",
   "description": "Router of the-components",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@babel/runtime": "^7.3.1",
-    "@the-/component-demo": "file:../component-demo",
+    "@the-/component-demo": "^15.0.5",
     "@the-/route": "^3.1.31",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",

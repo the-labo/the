@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-caught",
-    "longname": "module:the-caught",
-    "name": "the-caught",
+    "id": "module:@the-/caught",
+    "longname": "module:@the-/caught",
+    "name": "@the-/caught",
     "kind": "module",
     "description": "Component to show caught errors",
     "meta": {

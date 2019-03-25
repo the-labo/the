@@ -1,9 +1,9 @@
 'use strict'
 
 import React from 'react'
-import { TheSection, TheAccordionSection, TheSectionStyle } from 'the-section'
-import { TheSpinStyle } from 'the-spin'
-import { TheButtonStyle } from 'the-button'
+import { TheSection, TheAccordionSection, TheSectionStyle } from '@the-/section'
+import { TheSpinStyle } from '@the-/spin'
+import { TheButtonStyle } from '@the-/button'
 
 class ExampleComponent extends React.PureComponent {
   render () {

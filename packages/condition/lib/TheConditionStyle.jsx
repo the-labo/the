@@ -3,14 +3,15 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { asStyleData } from 'the-component-util'
-import { TheStyle } from 'the-style'
+import { asStyleData } from '@the-/util-component'
+import { TheStyle } from '@the-/style'
 
 /** Style for TheCondition */
-const TheConditionStyle = ({className, id, options}) => (
-  <TheStyle {...{id}}
-            className={c('the-condition-style', className)}
-            styles={TheConditionStyle.data(options)}
+const TheConditionStyle = ({ className, id, options }) => (
+  <TheStyle
+    {...{ id }}
+    className={c('the-condition-style', className)}
+    styles={TheConditionStyle.data(options)}
   />
 )
 
@@ -25,10 +26,8 @@ TheConditionStyle.defaultProps = {
 }
 
 TheConditionStyle.data = (options) => {
-  const {ThemeValues} = TheStyle
-  const {
-    dominantColor = ThemeValues.dominantColor,
-  } = options
+  const { ThemeValues } = TheStyle
+  const { dominantColor = ThemeValues.dominantColor } = options
   return asStyleData('.the-condition', {
     '&': {},
   })

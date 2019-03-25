@@ -13,10 +13,10 @@
   },
   "dependencies": {
     "@the-/check": "^15.0.2",
+    "@the-/router": "^3.0.6",
     "@the-/url": "^15.0.2",
     "@the-/window": "^15.0.2",
-    "history": "^4.7.2",
-    "the-router": "^3.0.4"
+    "history": "^4.7.2"
   },
   "devDependencies": {
     "@babel/runtime": "^7.3.1",

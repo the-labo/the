@@ -3,9 +3,9 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { TheCondition } from '@the-/condition'
 import { isProduction } from '@the-/check'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
-import { TheCondition } from 'the-condition'
 
 /**
  * Component to show caught errors

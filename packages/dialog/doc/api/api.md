@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-dialog">the-dialog</a></dt>
+<dt><a href="#module_@the-/dialog">@the-/dialog</a></dt>
 <dd><p>Dialog for the-components</p>
 </dd>
 </dl>
@@ -33,9 +33,9 @@
 </dd>
 </dl>
 
-<a name="module_the-dialog"></a>
+<a name="module_@the-/dialog"></a>
 
-## the-dialog
+## @the-/dialog
 Dialog for the-components
 
 <a name="TheConfirmDialog"></a>

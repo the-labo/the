@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react'
-import { TheInfo, TheInfoStyle } from 'the-info'
+import { TheInfo, TheInfoStyle } from '@the-/info'
 
 class ExampleComponent extends React.PureComponent {
   render () {

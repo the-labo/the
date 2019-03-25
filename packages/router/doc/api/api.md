@@ -6,7 +6,7 @@
 <dt><a href="#module_@the-/router">@the-/router</a></dt>
 <dd><p>Router of the-components</p>
 </dd>
-<dt><a href="#module_the-router">the-router</a></dt>
+<dt><a href="#module_@the-/router">@the-/router</a></dt>
 <dd><p>Router of the-components</p>
 </dd>
 </dl>
@@ -32,9 +32,9 @@
 ## @the-/router
 Router of the-components
 
-<a name="module_the-router"></a>
+<a name="module_@the-/router"></a>
 
-## the-router
+## @the-/router
 Router of the-components
 
 <a name="TheRouter"></a>

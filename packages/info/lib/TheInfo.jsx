@@ -3,7 +3,7 @@
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { eventHandlersFor, htmlAttributesFor } from 'the-component-util'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
 
 /**
  * Info of the-component
