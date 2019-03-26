@@ -3,9 +3,9 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheLink } from '@the-/link'
 import { TheIcon } from '@the-/icon'
 import { TheImage } from '@the-/image'
+import { TheLink } from '@the-/link'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
 
 /**

@@ -59,6 +59,7 @@ var/
 /packages/entrypoint/lib/index.js
 /packages/error/lib/index.js
 /packages/flick/doc/demo/bundle.js
+/packages/flick/lib/index.js
 /packages/flick/lib/index.jsx
 /packages/footer/doc/demo/bundle.js
 /packages/footer/lib/index.jsx
@@ -66,6 +67,7 @@ var/
 /packages/form/lib/index.jsx
 /packages/frame/doc/demo/bundle.js
 /packages/frame/lib/index.jsx
+/packages/geo/lib/index.js
 /packages/hamburger/doc/demo/bundle.js
 /packages/hamburger/lib/index.jsx
 /packages/handle/lib/index.js
@@ -92,6 +94,7 @@ var/
 /packages/loc/lib/index.js
 /packages/main/doc/demo/bundle.js
 /packages/main/lib/index.jsx
+/packages/media/lib/index.js
 /packages/menu/doc/demo/bundle.js
 /packages/menu/lib/index.jsx
 /packages/meta/doc/demo/bundle.js
@@ -119,6 +122,7 @@ var/
 /packages/route/lib/index.js
 /packages/route/lib/index.jsx
 /packages/router/doc/demo/bundle.js
+/packages/router/lib/index.jsx
 /packages/run/lib/index.js
 /packages/s3/lib/index.js
 /packages/scene/lib/index.js
@@ -165,6 +169,7 @@ var/
 /packages/util-client/lib/index.js
 /packages/util-component/lib/index.js
 /packages/util-file/lib/index.js
+/packages/util-server/lib/index.js
 /packages/util-site/lib/index.js
 /packages/util-style/lib/index.js
 /packages/util-sw/lib/index.js

@@ -4,7 +4,7 @@
 'use strict'
 
 const { purge, restore, save } = require('bstorage')
-const { get } = require('the-window')
+const { get } = require('@the-/window')
 
 /** @lends TheGeo */
 class TheGeo {

@@ -77,6 +77,7 @@ Usage
 
 ## API Guide
 
+- [@the-/flick](./doc/api/api.md#module_@the-/flick)
 - [the-flick](./doc/api/api.md#module_the-flick)
 
 

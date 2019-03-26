@@ -6,9 +6,6 @@
 <dt><a href="#module_@the-/router">@the-/router</a></dt>
 <dd><p>Router of the-components</p>
 </dd>
-<dt><a href="#module_@the-/router">@the-/router</a></dt>
-<dd><p>Router of the-components</p>
-</dd>
 </dl>
 
 ## Classes
@@ -26,11 +23,6 @@
 <dd><p>Style for TheRouter</p>
 </dd>
 </dl>
-
-<a name="module_@the-/router"></a>
-
-## @the-/router
-Router of the-components
 
 <a name="module_@the-/router"></a>
 

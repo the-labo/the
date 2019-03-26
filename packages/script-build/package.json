@@ -44,10 +44,10 @@
     "@the-/ast": "^15.0.3",
     "@the-/script-doc": "^15.0.3",
     "@the-/script-test": "^15.2.0",
-    "@the-/templates": "^15.0.3",
+    "@the-/templates": "^15.0.4",
     "injectmock": "^2.0.0",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5"
   },
   "engines": {
     "node": ">=10",
