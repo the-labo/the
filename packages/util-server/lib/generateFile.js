@@ -12,7 +12,7 @@ const fs = require('fs')
 const path = require('path')
 
 /** @lend generateFile */
-async function generateFile (filename, generator) {
+async function generateFile(filename, generator) {
   if (typeof generator === 'function') {
     generator = generator()
   }

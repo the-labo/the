@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheCycle from '../lib/TheCycle'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheCycle from '../lib/TheCycle'
 
 describe('the-cycle', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    const element = render(
-      <TheCycle/>
-    )
+    const element = render(<TheCycle />)
     ok(element)
   })
 })

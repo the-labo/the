@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-repeatable",
-    "longname": "module:the-repeatable",
-    "name": "the-repeatable",
+    "id": "module:@the-/repeatable",
+    "longname": "module:@the-/repeatable",
+    "name": "@the-/repeatable",
     "kind": "module",
     "description": "Repeatable of the-component",
     "meta": {

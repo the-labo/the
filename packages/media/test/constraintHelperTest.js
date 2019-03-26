@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const constraintHelper = require('../lib/constraintHelper')
-const { ok, equal } = require('assert')
-
 describe('constraint-helper', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

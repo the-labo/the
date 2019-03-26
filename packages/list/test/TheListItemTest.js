@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheListItem from '../lib/TheListItem'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheListItem from '../lib/TheListItem'
 
 describe('the-list-item', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheListItem />
-    )
+    let element = render(<TheListItem />)
     ok(element)
   })
 })

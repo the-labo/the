@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheRoot from '../lib/TheRoot'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheRoot from '../lib/TheRoot'
 
 describe('the-root', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-      <TheRoot />
-    )
+    let element = render(<TheRoot />)
     ok(element)
   })
 })

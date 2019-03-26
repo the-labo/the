@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const TheMedia = require('../lib/TheMedia')
-const {ok, equal} = require('assert')
 
 describe('the-media', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(TheMedia)

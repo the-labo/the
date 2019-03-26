@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheFooterStyle from '../lib/TheFooterStyle'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheFooterStyle from '../lib/TheFooterStyle'
 
 describe('the-footer-style', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheFooterStyle />
-    )
+    let element = render(<TheFooterStyle />)
     ok(element)
   })
 })

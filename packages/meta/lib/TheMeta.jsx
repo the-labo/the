@@ -1,6 +1,5 @@
 'use strict'
 
-import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { newId } from '@the-/util-component'
@@ -12,48 +11,45 @@ const MetaContext = React.createContext(null)
  * Dynamic meta attribute injector for the-components
  */
 class TheMeta extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this._id = newId({ prefix: 'the-meta' })
     this._titleQueue = []
   }
 
-  get id () {
+  get id() {
     const { id = this._id } = this.props
     return id
   }
 
-  componentDidCatch (e) {
+  componentDidCatch(e) {
     this.restoreTitle()
     throw e
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.updateTitle()
   }
 
-  componentDidUpdate () {
+  componentDidUpdate() {
     this.updateTitle()
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     this.restoreTitle()
   }
 
-  getTitle (options = {}) {
+  getTitle(options = {}) {
     const { full } = options
     const { title } = this.props
     const { title: baseTitle } = this.context || {}
-    return [
-      title,
-      full ? baseTitle : null,
-    ]
+    return [title, full ? baseTitle : null]
       .filter(Boolean)
-      .map((t) => typeof t === 'function' ? t() : t)
+      .map((t) => (typeof t === 'function' ? t() : t))
       .join(' | ')
   }
 
-  render () {
+  render() {
     const { children, render } = this.props
     return (
       <React.Fragment>
@@ -63,14 +59,14 @@ class TheMeta extends React.Component {
     )
   }
 
-  restoreTitle () {
+  restoreTitle() {
     const document = get('window.document')
     while (this._titleQueue.length) {
       document.title = this._titleQueue.pop()
     }
   }
 
-  updateTitle () {
+  updateTitle() {
     const document = get('window.document')
     const title = this.getTitle({ full: true })
     if (document.title !== title) {
@@ -80,11 +76,9 @@ class TheMeta extends React.Component {
   }
 }
 
-TheMeta.Root = React.memo(function TheMetaRoot ({ children, title }) {
+TheMeta.Root = React.memo(function TheMetaRoot({ children, title }) {
   return (
-    <MetaContext.Provider value={{ title }}>
-      {children}
-    </MetaContext.Provider>
+    <MetaContext.Provider value={{ title }}>{children}</MetaContext.Provider>
   )
 })
 

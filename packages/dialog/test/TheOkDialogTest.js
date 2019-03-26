@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheOkDialog from '../lib/TheOkDialog'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheOkDialog from '../lib/TheOkDialog'
 
 describe('the-ok-dialog', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheOkDialog />
-    )
+    let element = render(<TheOkDialog />)
     ok(element)
   })
 })

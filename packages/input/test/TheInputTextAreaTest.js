@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheInputTextArea from '../lib/TheInputTextArea'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheInputTextArea from '../lib/TheInputTextArea'
 
 describe('the-input-text-area', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheInputTextArea />
-    )
+    let element = render(<TheInputTextArea />)
     ok(element)
   })
 })

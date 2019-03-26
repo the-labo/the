@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-repeatable">the-repeatable</a></dt>
+<dt><a href="#module_@the-/repeatable">@the-/repeatable</a></dt>
 <dd><p>Repeatable of the-component</p>
 </dd>
 </dl>
@@ -24,9 +24,9 @@
 </dd>
 </dl>
 
-<a name="module_the-repeatable"></a>
+<a name="module_@the-/repeatable"></a>
 
-## the-repeatable
+## @the-/repeatable
 Repeatable of the-component
 
 <a name="TheRepeatable"></a>

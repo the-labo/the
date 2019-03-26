@@ -5,15 +5,11 @@
 'use strict'
 
 const waitFor = require('../lib/waitFor')
-const { mkdirpAsync, unlinkAsync, writeFileAsync } = require('asfs')
-const { ok, strictEqual: equal, deepStrictEqual: deepEqual } = require('assert')
 
 describe('wait-for-file', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     let ready = false

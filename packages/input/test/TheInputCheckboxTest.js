@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheInputCheckbox from '../lib/TheInputCheckbox'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheInputCheckbox from '../lib/TheInputCheckbox'
 
 describe('the-input-checkbox', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheInputCheckbox />
-    )
+    let element = render(<TheInputCheckbox />)
     ok(element)
   })
 })

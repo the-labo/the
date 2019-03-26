@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-meta">the-meta</a></dt>
+<dt><a href="#module_@the-/meta">@the-/meta</a></dt>
 <dd><p>Dynamic meta attribute injector for the-components</p>
 </dd>
 </dl>
@@ -16,9 +16,9 @@
 </dd>
 </dl>
 
-<a name="module_the-meta"></a>
+<a name="module_@the-/meta"></a>
 
-## the-meta
+## @the-/meta
 Dynamic meta attribute injector for the-components
 
 <a name="TheMeta"></a>

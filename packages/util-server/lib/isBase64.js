@@ -8,7 +8,7 @@
 const PREFIX_PATTERN = /^data:\w+\/[a-zA-Z0-9+\-.]+;base64/
 
 /** @lends isBase64 */
-function isBase64 (v) {
+function isBase64(v) {
   if (!v) {
     return false
   }

@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheTab from '../lib/TheTab'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheTab from '../lib/TheTab'
 
 describe('the-tab', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheTab />
-    )
+    let element = render(<TheTab />)
     ok(element)
   })
 })

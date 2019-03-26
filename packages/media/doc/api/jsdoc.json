@@ -13,9 +13,9 @@
     "order": 1
   },
   {
-    "id": "module:the-media",
-    "longname": "module:the-media",
-    "name": "the-media",
+    "id": "module:@the-/media",
+    "longname": "module:@the-/media",
+    "name": "@the-/media",
     "kind": "module",
     "description": "User media handler",
     "meta": {

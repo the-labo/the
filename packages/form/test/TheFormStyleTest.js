@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheFormStyle from '../lib/TheFormStyle'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheFormStyle from '../lib/TheFormStyle'
 
 describe('the-form-style', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheFormStyle />
-    )
+    let element = render(<TheFormStyle />)
     ok(element)
   })
 })

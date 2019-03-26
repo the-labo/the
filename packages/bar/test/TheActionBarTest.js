@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheActionBar from '../lib/TheActionBar'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheActionBar from '../lib/TheActionBar'
 
 describe('the-action-bar', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheActionBar />
-    )
+    let element = render(<TheActionBar />)
     ok(element)
   })
 })

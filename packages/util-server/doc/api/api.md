@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-server-util">the-server-util</a></dt>
+<dt><a href="#module_@the-/util-server">@the-/util-server</a></dt>
 <dd><p>Utility for server</p>
 </dd>
 </dl>
@@ -37,9 +37,9 @@
 </dd>
 </dl>
 
-<a name="module_the-server-util"></a>
+<a name="module_@the-/util-server"></a>
 
-## the-server-util
+## @the-/util-server
 Utility for server
 
 <a name="generateFile"></a>

@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const nameFile = require('../lib/nameFile')
-const { ok, equal } = require('assert')
 
 describe('name-file', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     equal(

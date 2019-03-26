@@ -4,17 +4,14 @@
  */
 'use strict'
 
-import * as patterns from '../lib/patterns'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
-import { render } from '@the-/script-test'
+import * as patterns from '../lib/patterns'
 
 describe('patterns', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
     ok(patterns)

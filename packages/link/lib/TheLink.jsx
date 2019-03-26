@@ -4,9 +4,9 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
-import { TheIcon } from '@the-/icon'
 import { parse as parseUrl } from 'url'
+import { TheIcon } from '@the-/icon'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
 import TheLinkStyle from './TheLinkStyle'
 
 /**

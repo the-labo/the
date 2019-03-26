@@ -1,8 +1,8 @@
 'use strict'
 
-const {TheS3} = require('@the-/s3')
+const { TheS3 } = require('@the-/s3')
 
-async function tryExample () {
+async function tryExample() {
   const s3 = new TheS3({
     accessKeyId: 'xxxxx',
     bucket: 'myBucket01',

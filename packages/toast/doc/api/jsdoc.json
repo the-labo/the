@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-toast",
-    "longname": "module:the-toast",
-    "name": "the-toast",
+    "id": "module:@the-/toast",
+    "longname": "module:@the-/toast",
+    "name": "@the-/toast",
     "kind": "module",
     "description": "Toast of the-components",
     "meta": {
@@ -34,7 +34,7 @@
     "scope": "global",
     "description": "ToastGroup",
     "meta": {
-      "lineno": 11,
+      "lineno": 10,
       "filename": "TheToastGroup.jsx",
       "path": "/Users/okuni/Projects/the/packages/toast/lib"
     },

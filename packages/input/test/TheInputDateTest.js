@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheInputDate from '../lib/TheInputDate'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheInputDate from '../lib/TheInputDate'
 
 describe('the-input-date', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheInputDate />
-    )
+    let element = render(<TheInputDate />)
     ok(element)
   })
 })

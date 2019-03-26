@@ -15,7 +15,7 @@ class TheMedia {
     if (!mediaDevices) {
       return null
     }
-    return await mediaDevices.getUserMedia(constrains)
+    return mediaDevices.getUserMedia(constrains)
   }
 
   constructor(options = {}) {

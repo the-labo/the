@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheVideo from '../lib/TheVideo'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheVideo from '../lib/TheVideo'
 
 describe('the-video', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheVideo />
-    )
+    let element = render(<TheVideo />)
     ok(element)
   })
 })

@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-tab",
-    "longname": "module:the-tab",
-    "name": "the-tab",
+    "id": "module:@the-/tab",
+    "longname": "module:@the-/tab",
+    "name": "@the-/tab",
     "kind": "module",
     "description": "Tab for the-components",
     "meta": {
@@ -50,7 +50,7 @@
     "description": "Active tab index",
     "memberof": "TheTab.propTypes",
     "meta": {
-      "lineno": 381,
+      "lineno": 386,
       "filename": "TheTab.jsx",
       "path": "/Users/okuni/Projects/the/packages/tab/lib"
     },
@@ -65,7 +65,7 @@
     "description": "Tab buttons",
     "memberof": "TheTab.propTypes",
     "meta": {
-      "lineno": 383,
+      "lineno": 388,
       "filename": "TheTab.jsx",
       "path": "/Users/okuni/Projects/the/packages/tab/lib"
     },
@@ -80,7 +80,7 @@
     "description": "Disable touch action",
     "memberof": "TheTab.propTypes",
     "meta": {
-      "lineno": 385,
+      "lineno": 390,
       "filename": "TheTab.jsx",
       "path": "/Users/okuni/Projects/the/packages/tab/lib"
     },
@@ -95,7 +95,7 @@
     "description": "Change handler",
     "memberof": "TheTab.propTypes",
     "meta": {
-      "lineno": 387,
+      "lineno": 392,
       "filename": "TheTab.jsx",
       "path": "/Users/okuni/Projects/the/packages/tab/lib"
     },
@@ -110,7 +110,7 @@
     "description": "Style options",
     "memberof": "TheTabStyle.propTypes",
     "meta": {
-      "lineno": 20,
+      "lineno": 21,
       "filename": "TheTabStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/tab/lib"
     },

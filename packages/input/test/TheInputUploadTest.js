@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheInputUpload from '../lib/TheInputUpload'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheInputUpload from '../lib/TheInputUpload'
 
 describe('the-input-upload', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheInputUpload />
-    )
+    let element = render(<TheInputUpload />)
     ok(element)
   })
 })

@@ -1,8 +1,8 @@
 'use strict'
 
-const {TheMedia} = require('@the-/media')
+const { TheMedia } = require('@the-/media')
 
-async function tryExample () {
+async function tryExample() {
   const media = new TheMedia({
     audio: true,
     video: false,

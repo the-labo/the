@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-meta",
-    "longname": "module:the-meta",
-    "name": "the-meta",
+    "id": "module:@the-/meta",
+    "longname": "module:@the-/meta",
+    "name": "@the-/meta",
     "kind": "module",
     "description": "Dynamic meta attribute injector for the-components",
     "meta": {
@@ -20,7 +20,7 @@
     "scope": "global",
     "description": "Dynamic meta attribute injector for the-components",
     "meta": {
-      "lineno": 14,
+      "lineno": 13,
       "filename": "TheMeta.jsx",
       "path": "/Users/okuni/Projects/the/packages/meta/lib"
     },
@@ -35,7 +35,7 @@
     "description": "Render children",
     "memberof": "TheMeta.propTypes",
     "meta": {
-      "lineno": 95,
+      "lineno": 89,
       "filename": "TheMeta.jsx",
       "path": "/Users/okuni/Projects/the/packages/meta/lib"
     },
@@ -50,7 +50,7 @@
     "description": "Document title",
     "memberof": "TheMeta.propTypes",
     "meta": {
-      "lineno": 97,
+      "lineno": 91,
       "filename": "TheMeta.jsx",
       "path": "/Users/okuni/Projects/the/packages/meta/lib"
     },

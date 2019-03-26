@@ -14,21 +14,15 @@ const path = require('path')
 const uuid = require('uuid')
 
 /** @lends nameFile */
-function nameFile (options = {}) {
-  const {
-    dir = [],
-    ext,
-    name = uuid.v4(),
-    type,
-  } = options
+function nameFile(options = {}) {
+  const { dir = [], ext, name = uuid.v4(), type } = options
 
   return [
-    path.join(...[
-      ...[].concat(dir || []),
-      name,
-    ].filter(Boolean)),
+    path.join(...[...[].concat(dir || []), name].filter(Boolean)),
     ext || (type ? mime.getExtension(type) : null),
-  ].filter(Boolean).join('.')
+  ]
+    .filter(Boolean)
+    .join('.')
 }
 
 module.exports = nameFile

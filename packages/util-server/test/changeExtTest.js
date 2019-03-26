@@ -4,21 +4,16 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const changeExt = require('../lib/changeExt')
-const {ok, equal} = require('assert')
 
 describe('change-ext', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
-    equal(
-      changeExt('hoge.txt', '.raw'),
-      'hoge.raw'
-    )
+    equal(changeExt('hoge.txt', '.raw'), 'hoge.raw')
   })
 })
 

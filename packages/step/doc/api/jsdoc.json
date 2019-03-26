@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-step",
-    "longname": "module:the-step",
-    "name": "the-step",
+    "id": "module:@the-/step",
+    "longname": "module:@the-/step",
+    "name": "@the-/step",
     "kind": "module",
     "description": "Steps for the-components",
     "meta": {
@@ -50,7 +50,7 @@
     "description": "Style options",
     "memberof": "TheStepStyle.propTypes",
     "meta": {
-      "lineno": 20,
+      "lineno": 21,
       "filename": "TheStepStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/step/lib"
     },

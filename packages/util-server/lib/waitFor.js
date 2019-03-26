@@ -10,11 +10,8 @@
 const asleep = require('asleep')
 
 /** @lends waitFor */
-async function waitFor (condition, options = {}) {
-  const {
-    interval = 100,
-    timeout = 5 * 60 * 1000,
-  } = options
+async function waitFor(condition, options = {}) {
+  const { interval = 100, timeout = 5 * 60 * 1000 } = options
   const startAt = new Date()
   let ready
   do {

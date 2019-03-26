@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheConditionStyle from '../lib/TheConditionStyle'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheConditionStyle from '../lib/TheConditionStyle'
 
 describe('the-condition-style', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheConditionStyle />
-    )
+    let element = render(<TheConditionStyle />)
     ok(element)
   })
 })

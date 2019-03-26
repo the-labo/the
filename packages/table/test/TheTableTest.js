@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheTable from '../lib/TheTable'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheTable from '../lib/TheTable'
 
 describe('the-table', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheTable />
-    )
+    let element = render(<TheTable />)
     ok(element)
   })
 })

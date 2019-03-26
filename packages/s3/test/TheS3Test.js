@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const TheS3 = require('../lib/TheS3')
-const {ok, equal} = require('assert')
 
 describe('the-s3', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(TheS3)

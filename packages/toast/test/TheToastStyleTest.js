@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheToastStyle from '../lib/TheToastStyle'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheToastStyle from '../lib/TheToastStyle'
 
 describe('the-toast-style', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheToastStyle />
-    )
+    let element = render(<TheToastStyle />)
     ok(element)
   })
 })

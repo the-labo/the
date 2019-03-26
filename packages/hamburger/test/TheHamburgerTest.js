@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheHamburger from '../lib/TheHamburger'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheHamburger from '../lib/TheHamburger'
 
 describe('the-hamburger', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheHamburger />
-    )
+    let element = render(<TheHamburger />)
     ok(element)
   })
 })

@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-table">the-table</a></dt>
+<dt><a href="#module_@the-/table">@the-/table</a></dt>
 <dd><p>Table for the-components</p>
 </dd>
 </dl>
@@ -24,9 +24,9 @@
 </dd>
 </dl>
 
-<a name="module_the-table"></a>
+<a name="module_@the-/table"></a>
 
-## the-table
+## @the-/table
 Table for the-components
 
 <a name="TheTable"></a>

@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const TheGeo = require('../lib/TheGeo')
-const { ok, equal } = require('assert')
 
 describe('the-geo', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(TheGeo)

@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheInputPassword from '../lib/TheInputPassword'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheInputPassword from '../lib/TheInputPassword'
 
 describe('the-input-password', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheInputPassword />
-    )
+    let element = render(<TheInputPassword />)
     ok(element)
   })
 })

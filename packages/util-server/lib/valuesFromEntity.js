@@ -9,14 +9,15 @@
 const META_FIELD_PREFIX = /^\$/
 
 /** @lends valuesFromEntity */
-function valuesFromEntity (entity) {
+function valuesFromEntity(entity) {
   if (!entity) {
     return null
   }
-  return Object.assign({},
+  return Object.assign(
+    {},
     ...Object.entries(entity)
-      .filter(([k,]) => !META_FIELD_PREFIX.test(k)) // Remove meta fields
-      .map(([k, v]) => ({ [k]: v }))
+      .filter(([k]) => !META_FIELD_PREFIX.test(k)) // Remove meta fields
+      .map(([k, v]) => ({ [k]: v })),
   )
 }
 

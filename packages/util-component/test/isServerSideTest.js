@@ -4,16 +4,13 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const isServerSide = require('../lib/isServerSide')
-const React = require('react')
-const { ok, equal } = require('assert')
 
 describe('is-server-side', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
     ok(isServerSide())

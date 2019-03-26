@@ -12,7 +12,7 @@ const fs = require('fs')
 const path = require('path')
 
 /** @lends pipeToFile */
-async function pipeToFile (src, dest) {
+async function pipeToFile(src, dest) {
   if (typeof src === 'string') {
     src = fs.createReadStream(src)
   }

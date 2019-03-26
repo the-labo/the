@@ -5,24 +5,18 @@
 'use strict'
 
 const generateFile = require('../lib/generateFile')
-const { ok, equal } = require('assert')
 
 describe('generate-file', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
-    await generateFile(
-      `${__dirname}/../tmp/hoge/hoge.txt`,
-      async function * () {
-        yield 'this '
-        yield 'is '
-        yield 'hoge '
-      }
-    )
+    await generateFile(`${__dirname}/../tmp/hoge/hoge.txt`, async function*() {
+      yield 'this '
+      yield 'is '
+      yield 'hoge '
+    })
   })
 })
 

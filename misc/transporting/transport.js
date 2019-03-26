@@ -36,11 +36,14 @@ ${msg}
       `,
   )
   spawnSync('git', ['add', '.'], { cwd: fromDir, stdio: 'inherit' })
-  spawnSync('git', ['commit', '-m', 'Deprecate'], { cwd: fromDir, stdio: 'inherit' })
+  spawnSync('git', ['commit', '-m', 'Deprecate'], {
+    cwd: fromDir,
+    stdio: 'inherit',
+  })
   spawnSync('git', ['push'], { cwd: fromDir, stdio: 'inherit' })
   spawnSync(`npm`, ['deprecate', path.basename(fromDir), msg], {
     cwd: fromDir,
-    stdio: 'inherit'
+    stdio: 'inherit',
   })
 }
 
@@ -99,14 +102,14 @@ const _rewritePkg = async (baseDir, converter) => {
 }
 
 const _removeDevDeps = async (baseDir, names) => {
-    const pkg = JSON.parse(await readFile(path.resolve(baseDir, 'package.json')))
-    for (const name of names) {
-      const has = name in (pkg.devDependencies || {})
-      if (has) {
-        spawnSync('npm', ['un', '-D', name], { cwd: baseDir, stdio: 'inherit' })
-      }
+  const pkg = JSON.parse(await readFile(path.resolve(baseDir, 'package.json')))
+  for (const name of names) {
+    const has = name in (pkg.devDependencies || {})
+    if (has) {
+      spawnSync('npm', ['un', '-D', name], { cwd: baseDir, stdio: 'inherit' })
     }
   }
+}
 
 ;(async () => {
   for (const [fromPkgName, { kind, name }] of Object.entries(transporting)) {
@@ -171,7 +174,7 @@ const _removeDevDeps = async (baseDir, names) => {
           scripts.prepare = 'npm run build && npm run doc'
           delete scripts.share
           delete scripts.buid
-          return {scripts}
+          return { scripts }
         })
         {
           await _addDevDeps(toDir, {

@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheMenuStyle from '../lib/TheMenuStyle'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheMenuStyle from '../lib/TheMenuStyle'
 
 describe('the-menu-style', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheMenuStyle />
-    )
+    let element = render(<TheMenuStyle />)
     ok(element)
   })
 })

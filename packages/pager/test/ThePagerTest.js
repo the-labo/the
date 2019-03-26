@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import ThePager from '../lib/ThePager'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import ThePager from '../lib/ThePager'
 
 describe('the-pager', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <ThePager />
-    )
+    let element = render(<ThePager />)
     ok(element)
   })
 })

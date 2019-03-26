@@ -3,9 +3,9 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
 import { TheIcon } from '@the-/icon'
 import { TheInput } from '@the-/input'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
 import TheTableStyle from './TheTableStyle'
 
 /**

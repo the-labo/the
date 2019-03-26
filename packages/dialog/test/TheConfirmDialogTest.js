@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheConfirmDialog from '../lib/TheConfirmDialog'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheConfirmDialog from '../lib/TheConfirmDialog'
 
 describe('the-confirm-dialog', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheConfirmDialog />
-    )
+    let element = render(<TheConfirmDialog />)
     ok(element)
   })
 })

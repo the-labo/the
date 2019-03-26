@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheCaught from '../lib/TheCaught'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheCaught from '../lib/TheCaught'
 
 describe('the-caught', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-      <TheCaught/>
-    )
+    let element = render(<TheCaught />)
     ok(!element)
   })
 })

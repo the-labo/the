@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheMeta from '../lib/TheMeta'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheMeta from '../lib/TheMeta'
 
 describe('the-meta', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheMeta />
-    )
+    let element = render(<TheMeta />)
     ok(element)
   })
 })

@@ -1,7 +1,6 @@
 'use strict'
 
 import c from 'classnames'
-import PropTypes from 'prop-types'
 import React from 'react'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
 

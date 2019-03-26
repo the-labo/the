@@ -3,14 +3,15 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { asStyleData } from '@the-/util-component'
 import { TheStyle } from '@the-/style'
+import { asStyleData } from '@the-/util-component'
 
 /** Style for TheTab */
 const TheTabStyle = ({ className, id, options }) => (
-  <TheStyle {...{ id }}
-            className={c('the-tab-style', className)}
-            styles={TheTabStyle.data(options)}
+  <TheStyle
+    {...{ id }}
+    className={c('the-tab-style', className)}
+    styles={TheTabStyle.data(options)}
   />
 )
 

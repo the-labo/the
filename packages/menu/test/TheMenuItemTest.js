@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheMenuItem from '../lib/TheMenuItem'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheMenuItem from '../lib/TheMenuItem'
 
 describe('the-menu-item', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheMenuItem />
-    )
+    let element = render(<TheMenuItem />)
     ok(element)
   })
 })

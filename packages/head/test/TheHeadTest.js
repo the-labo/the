@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheHead from '../lib/TheHead'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheHead from '../lib/TheHead'
 
 describe('the-head', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    const element = render(
-      <TheHead color='#38E'/>
-    )
+    const element = render(<TheHead color='#38E' />)
     ok(element)
   })
 })

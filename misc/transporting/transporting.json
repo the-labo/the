@@ -1,4 +1,8 @@
 {
+  "the-alt": {
+    "kind": "component",
+    "name": "alt"
+  },
   "the-array": {
     "kind": "util",
     "name": "util-array"
@@ -11,17 +15,13 @@
     "kind": "lib",
     "name": "assets"
   },
-  "the-geo": {
-    "kind": "lib",
-    "name": "geo"
-  },
-  "the-media": {
-    "kind": "lib",
-    "name": "media"
-  },
   "the-ast": {
     "kind": "lib",
     "name": "ast"
+  },
+  "the-bar": {
+    "kind": "component",
+    "name": "bar"
   },
   "the-bin": {
     "kind": "lib",
@@ -31,10 +31,6 @@
     "kind": "component",
     "name": "body"
   },
-  "the-head": {
-    "kind": "component",
-    "name": "head"
-  },
   "the-button": {
     "kind": "component",
     "name": "button"
@@ -42,6 +38,10 @@
   "the-cache": {
     "kind": "lib",
     "name": "cache"
+  },
+  "the-caught": {
+    "kind": "component",
+    "name": "caught"
   },
   "the-check": {
     "kind": "lib",
@@ -55,10 +55,6 @@
     "kind": "util",
     "name": "util-client"
   },
-  "the-server-util": {
-    "kind": "util",
-    "name": "util-server"
-  },
   "the-code": {
     "kind": "lib",
     "name": "code"
@@ -71,6 +67,14 @@
     "kind": "util",
     "name": "util-component"
   },
+  "the-condition": {
+    "kind": "component",
+    "name": "condition"
+  },
+  "the-container": {
+    "kind": "component",
+    "name": "container"
+  },
   "the-context": {
     "kind": "lib",
     "name": "context"
@@ -79,17 +83,13 @@
     "kind": "lib",
     "name": "controller"
   },
+  "the-cycle": {
+    "kind": "component",
+    "name": "cycle"
+  },
   "the-date": {
     "kind": "lib",
     "name": "date"
-  },
-  "the-route": {
-    "kind": "lib",
-    "name": "route"
-  },
-  "the-router": {
-    "kind": "lib",
-    "name": "router"
   },
   "the-db": {
     "kind": "lib",
@@ -107,30 +107,6 @@
     "kind": "component",
     "name": "dialog"
   },
-  "the-toast": {
-    "kind": "component",
-    "name": "toast"
-  },
-  "the-alt": {
-    "kind": "component",
-    "name": "alt"
-  },
-  "the-bar": {
-    "kind": "component",
-    "name": "bar"
-  },
-  "the-caught": {
-    "kind": "component",
-    "name": "caught"
-  },
-  "the-cycle": {
-    "kind": "component",
-    "name": "cycle"
-  },
-  "the-meta": {
-    "kind": "component",
-    "name": "meta"
-  },
   "the-entrypoint": {
     "kind": "lib",
     "name": "entrypoint"
@@ -143,37 +119,13 @@
     "kind": "util",
     "name": "util-file"
   },
-  "the-handle": {
+  "the-flick": {
     "kind": "lib",
-    "name": "handle"
-  },
-  "the-hash": {
-    "kind": "lib",
-    "name": "hash"
-  },
-  "the-html": {
-    "kind": "component",
-    "name": "html"
-  },
-  "the-icon": {
-    "kind": "component",
-    "name": "icon"
-  },
-  "the-condition": {
-    "kind": "component",
-    "name": "condition"
-  },
-  "the-container": {
-    "kind": "component",
-    "name": "container"
+    "name": "flick"
   },
   "the-footer": {
     "kind": "component",
     "name": "footer"
-  },
-  "the-image": {
-    "kind": "component",
-    "name": "image"
   },
   "the-form": {
     "kind": "component",
@@ -183,9 +135,37 @@
     "kind": "component",
     "name": "frame"
   },
+  "the-geo": {
+    "kind": "lib",
+    "name": "geo"
+  },
   "the-hamburger": {
     "kind": "component",
     "name": "hamburger"
+  },
+  "the-handle": {
+    "kind": "lib",
+    "name": "handle"
+  },
+  "the-hash": {
+    "kind": "lib",
+    "name": "hash"
+  },
+  "the-head": {
+    "kind": "component",
+    "name": "head"
+  },
+  "the-html": {
+    "kind": "component",
+    "name": "html"
+  },
+  "the-icon": {
+    "kind": "component",
+    "name": "icon"
+  },
+  "the-image": {
+    "kind": "component",
+    "name": "image"
   },
   "the-info": {
     "kind": "component",
@@ -195,49 +175,13 @@
     "kind": "component",
     "name": "input"
   },
-  "the-link": {
-    "kind": "component",
-    "name": "link"
-  },
-  "the-menu": {
-    "kind": "component",
-    "name": "menu"
-  },
-  "the-pager": {
-    "kind": "component",
-    "name": "pager"
-  },
-  "the-table": {
-    "kind": "component",
-    "name": "table"
-  },
-  "the-repeatable": {
-    "kind": "component",
-    "name": "repeatable"
-  },
-  "the-section": {
-    "kind": "component",
-    "name": "section"
-  },
-  "the-step": {
-    "kind": "component",
-    "name": "step"
-  },
-  "the-tab": {
-    "kind": "component",
-    "name": "tab"
-  },
-  "the-root": {
-    "kind": "component",
-    "name": "root"
-  },
   "the-jitter": {
     "kind": "lib",
     "name": "jitter"
   },
-  "the-s3": {
-    "kind": "lib",
-    "name": "s3"
+  "the-link": {
+    "kind": "component",
+    "name": "link"
   },
   "the-lint": {
     "kind": "lib",
@@ -255,6 +199,18 @@
     "kind": "component",
     "name": "main"
   },
+  "the-media": {
+    "kind": "lib",
+    "name": "media"
+  },
+  "the-menu": {
+    "kind": "component",
+    "name": "menu"
+  },
+  "the-meta": {
+    "kind": "component",
+    "name": "meta"
+  },
   "the-metrics": {
     "kind": "lib",
     "name": "metrics"
@@ -266,6 +222,10 @@
   "the-pack": {
     "kind": "lib",
     "name": "pack"
+  },
+  "the-pager": {
+    "kind": "component",
+    "name": "pager"
   },
   "the-password": {
     "kind": "lib",
@@ -279,10 +239,6 @@
     "kind": "lib",
     "name": "ps"
   },
-  "the-flick": {
-    "kind": "lib",
-    "name": "flick"
-  },
   "the-queue": {
     "kind": "lib",
     "name": "queue"
@@ -295,6 +251,10 @@
     "kind": "lib",
     "name": "refresher"
   },
+  "the-repeatable": {
+    "kind": "component",
+    "name": "repeatable"
+  },
   "the-resize": {
     "kind": "lib",
     "name": "resize"
@@ -303,9 +263,25 @@
     "kind": "lib",
     "name": "resource"
   },
+  "the-root": {
+    "kind": "component",
+    "name": "root"
+  },
+  "the-route": {
+    "kind": "lib",
+    "name": "route"
+  },
+  "the-router": {
+    "kind": "lib",
+    "name": "router"
+  },
   "the-run": {
     "kind": "lib",
     "name": "run"
+  },
+  "the-s3": {
+    "kind": "lib",
+    "name": "s3"
   },
   "the-scaffold": {
     "kind": "scaffold",
@@ -339,6 +315,10 @@
     "kind": "lib",
     "name": "secret"
   },
+  "the-section": {
+    "kind": "component",
+    "name": "section"
+  },
   "the-seed": {
     "kind": "lib",
     "name": "seed"
@@ -346,6 +326,10 @@
   "the-server": {
     "kind": "lib",
     "name": "server"
+  },
+  "the-server-util": {
+    "kind": "util",
+    "name": "util-server"
   },
   "the-setting": {
     "kind": "lib",
@@ -358,6 +342,10 @@
   "the-spin": {
     "kind": "component",
     "name": "spin"
+  },
+  "the-step": {
+    "kind": "component",
+    "name": "step"
   },
   "the-store": {
     "kind": "lib",
@@ -383,6 +371,14 @@
     "kind": "util",
     "name": "util-sw"
   },
+  "the-tab": {
+    "kind": "component",
+    "name": "tab"
+  },
+  "the-table": {
+    "kind": "component",
+    "name": "table"
+  },
   "the-templates": {
     "kind": "templates",
     "name": "templates"
@@ -390,6 +386,10 @@
   "the-tmp": {
     "kind": "lib",
     "name": "tmp"
+  },
+  "the-toast": {
+    "kind": "component",
+    "name": "toast"
   },
   "the-url": {
     "kind": "lib",

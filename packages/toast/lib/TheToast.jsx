@@ -40,12 +40,12 @@ class TheToast extends React.PureComponent {
 
   static iconForLevel(level) {
     switch (level) {
+      case 'error':
+        return TheToast.ERROR_ICON
       case 'info':
         return TheToast.INFO_ICON
       case 'warn':
         return TheToast.WARN_ICON
-      case 'error':
-        return TheToast.ERROR_ICON
       default:
         return null
     }
@@ -99,7 +99,7 @@ class TheToast extends React.PureComponent {
               className='the-toast-item'
               data-message={message}
               key={message}
-              onClick={(e) => this.clearMessage(message)}
+              onClick={() => this.clearMessage(message)}
             >
               <span className='the-toast-text'>
                 {icon && <i className={c('the-toast-text', icon)} />}

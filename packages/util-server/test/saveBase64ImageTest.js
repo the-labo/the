@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const saveBase64Image = require('../lib/saveBase64Image')
-const { ok, equal } = require('assert')
-
 describe('save-base64-image', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

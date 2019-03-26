@@ -3,8 +3,8 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { asStyleData } from '@the-/util-component'
 import { TheStyle } from '@the-/style'
+import { asStyleData } from '@the-/util-component'
 
 /** Style for TheToast */
 const TheToastStyle = ({ className, id, options }) => (
@@ -40,7 +40,7 @@ TheToastStyle.data = (options) => {
   const colorToast = (color) => ({
     '.the-toast-inner': {
       borderColor: color,
-      color: color,
+      color,
     },
   })
   return Object.assign(

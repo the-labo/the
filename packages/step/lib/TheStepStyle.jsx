@@ -3,14 +3,15 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { asStyleData } from '@the-/util-component'
 import { TheStyle } from '@the-/style'
+import { asStyleData } from '@the-/util-component'
 
 /** Style for TheStep */
 const TheStepStyle = ({ className, id, options }) => (
-  <TheStyle {...{ id }}
-            className={c('the-step-style', className)}
-            styles={TheStepStyle.data(options)}
+  <TheStyle
+    {...{ id }}
+    className={c('the-step-style', className)}
+    styles={TheStepStyle.data(options)}
   />
 )
 
@@ -33,7 +34,8 @@ TheStepStyle.data = (options) => {
     numSize = 21,
     textColor = ThemeValues.textColor,
   } = options
-  return Object.assign({},
+  return Object.assign(
+    {},
     asStyleData({
       '.the-step': {
         overflow: 'hidden',
@@ -119,7 +121,6 @@ TheStepStyle.data = (options) => {
           '&:last-child': {
             '.the-step-bar-item-done-line': { width: '0%' },
           },
-
         },
         '&.the-step-bar-item-link': {
           '&:hover': {
@@ -191,7 +192,6 @@ TheStepStyle.data = (options) => {
         position: 'relative',
         width: '100%',
       },
-
     }),
   )
 }

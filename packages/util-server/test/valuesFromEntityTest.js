@@ -4,25 +4,26 @@
  */
 'use strict'
 
+const { deepStrictEqual: deepEqual } = require('assert')
 const valuesFromEntity = require('../lib/valuesFromEntity')
-const { ok, strictEqual: equal, deepStrictEqual: deepEqual } = require('assert')
 
 describe('values-from-entity', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
-    deepEqual(valuesFromEntity({
-      $$as: 'Ball',
-      id: 1,
-      name: 'b01'
-    }), {
-      id: 1,
-      name: 'b01',
-    })
+    deepEqual(
+      valuesFromEntity({
+        $$as: 'Ball',
+        id: 1,
+        name: 'b01',
+      }),
+      {
+        id: 1,
+        name: 'b01',
+      },
+    )
   })
 })
 

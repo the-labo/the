@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-server-util",
-    "longname": "module:the-server-util",
-    "name": "the-server-util",
+    "id": "module:@the-/util-server",
+    "longname": "module:@the-/util-server",
+    "name": "@the-/util-server",
     "kind": "module",
     "description": "Utility for server",
     "meta": {

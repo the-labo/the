@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheToastGroup from '../lib/TheToastGroup'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheToastGroup from '../lib/TheToastGroup'
 
 describe('the-toast-group', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheToastGroup />
-    )
+    let element = render(<TheToastGroup />)
     ok(element)
   })
 })

@@ -4,24 +4,18 @@
  */
 'use strict'
 
-import TheFormBinder from '../lib/TheFormBinder'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheFormBinder from '../lib/TheFormBinder'
 
 describe('the-form-binder', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-      <TheFormBinder>
-        {() => null}
-      </TheFormBinder>
-    )
+    let element = render(<TheFormBinder>{() => null}</TheFormBinder>)
     ok(element)
   })
 })

@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheContainerStyle from '../lib/TheContainerStyle'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheContainerStyle from '../lib/TheContainerStyle'
 
 describe('the-container-style', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheContainerStyle />
-    )
+    let element = render(<TheContainerStyle />)
     ok(element)
   })
 })

@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheInputRange from '../lib/TheInputRange'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheInputRange from '../lib/TheInputRange'
 
 describe('the-input-range', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheInputRange />
-    )
+    let element = render(<TheInputRange />)
     ok(element)
   })
 })

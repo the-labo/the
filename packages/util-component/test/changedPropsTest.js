@@ -4,21 +4,17 @@
  */
 'use strict'
 
-const changedProps = require('../lib')
 const { deepEqual } = require('assert').strict
+const changedProps = require('../lib')
 describe('changed-props', () => {
   before(() => {})
 
   after(() => {})
 
   it('Do test', () => {
-    deepEqual(
-      changedProps(
-        { a: 'a0', b: 'b1' },
-        { a: 'a1', b: 'b1' },
-      ),
-      { a: 'a1' }
-    )
+    deepEqual(changedProps({ a: 'a0', b: 'b1' }, { a: 'a1', b: 'b1' }), {
+      a: 'a1',
+    })
   })
 })
 

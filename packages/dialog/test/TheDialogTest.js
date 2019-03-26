@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheDialog from '../lib/TheDialog'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheDialog from '../lib/TheDialog'
 
 describe('the-dialog', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheDialog />
-    )
+    let element = render(<TheDialog />)
     ok(element)
   })
 })

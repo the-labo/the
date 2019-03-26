@@ -6,7 +6,7 @@
 <dt><a href="#module_default">default</a></dt>
 <dd><p>Default exports</p>
 </dd>
-<dt><a href="#module_the-media">the-media</a></dt>
+<dt><a href="#module_@the-/media">@the-/media</a></dt>
 <dd><p>User media handler</p>
 </dd>
 </dl>
@@ -31,9 +31,9 @@
 ## default
 Default exports
 
-<a name="module_the-media"></a>
+<a name="module_@the-/media"></a>
 
-## the-media
+## @the-/media
 User media handler
 
 <a name="TheMedia"></a>

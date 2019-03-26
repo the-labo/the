@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheDropdownMenu from '../lib/TheDropdownMenu'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheDropdownMenu from '../lib/TheDropdownMenu'
 
 describe('the-dropdown-menu', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheDropdownMenu />
-    )
+    let element = render(<TheDropdownMenu />)
     ok(element)
   })
 })

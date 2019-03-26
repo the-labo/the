@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheInputToggle from '../lib/TheInputToggle'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheInputToggle from '../lib/TheInputToggle'
 
 describe('the-input-toggle', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheInputToggle />
-    )
+    let element = render(<TheInputToggle />)
     ok(element)
   })
 })
