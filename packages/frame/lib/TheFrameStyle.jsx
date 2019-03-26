@@ -3,14 +3,15 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { asStyleData } from '@the-/util-component'
 import { TheStyle } from '@the-/style'
+import { asStyleData } from '@the-/util-component'
 
 /** Style for TheFrame */
-const TheFrameStyle = ({className, id, options}) => (
-  <TheStyle {...{id}}
-            className={c('the-frame-style', className)}
-            styles={TheFrameStyle.data(options)}
+const TheFrameStyle = ({ className, id, options }) => (
+  <TheStyle
+    {...{ id }}
+    className={c('the-frame-style', className)}
+    styles={TheFrameStyle.data(options)}
   />
 )
 
@@ -25,10 +26,8 @@ TheFrameStyle.defaultProps = {
 }
 
 TheFrameStyle.data = (options) => {
-  const {ThemeValues} = TheStyle
-  const {
-    dominantColor = ThemeValues.dominantColor,
-  } = options
+  const { ThemeValues } = TheStyle
+  const { dominantColor = ThemeValues.dominantColor } = options
   return asStyleData('.the-frame', {
     '.the-frame-embed-content': {
       height: 'fit-content',

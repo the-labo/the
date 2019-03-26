@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-frame">the-frame</a></dt>
+<dt><a href="#module_@the-/frame">@the-/frame</a></dt>
 <dd><p>iFrame of the-components</p>
 </dd>
 </dl>
@@ -24,9 +24,9 @@
 </dd>
 </dl>
 
-<a name="module_the-frame"></a>
+<a name="module_@the-/frame"></a>
 
-## the-frame
+## @the-/frame
 iFrame of the-components
 
 <a name="TheFrame"></a>

@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-frame",
-    "longname": "module:the-frame",
-    "name": "the-frame",
+    "id": "module:@the-/frame",
+    "longname": "module:@the-/frame",
+    "name": "@the-/frame",
     "kind": "module",
     "description": "iFrame of the-components",
     "meta": {
@@ -50,7 +50,7 @@
     "description": "Alt text",
     "memberof": "TheFrame.propTypes",
     "meta": {
-      "lineno": 141,
+      "lineno": 134,
       "filename": "TheFrame.jsx",
       "path": "/Users/okuni/Projects/the/packages/frame/lib"
     },
@@ -65,7 +65,7 @@
     "description": "Enbed source content as dynamic html",
     "memberof": "TheFrame.propTypes",
     "meta": {
-      "lineno": 143,
+      "lineno": 136,
       "filename": "TheFrame.jsx",
       "path": "/Users/okuni/Projects/the/packages/frame/lib"
     },
@@ -80,7 +80,7 @@
     "description": "Handler for Load",
     "memberof": "TheFrame.propTypes",
     "meta": {
-      "lineno": 145,
+      "lineno": 138,
       "filename": "TheFrame.jsx",
       "path": "/Users/okuni/Projects/the/packages/frame/lib"
     },
@@ -95,7 +95,7 @@
     "description": "Spinning or not",
     "memberof": "TheFrame.propTypes",
     "meta": {
-      "lineno": 147,
+      "lineno": 140,
       "filename": "TheFrame.jsx",
       "path": "/Users/okuni/Projects/the/packages/frame/lib"
     },
@@ -110,7 +110,7 @@
     "description": "Source URL",
     "memberof": "TheFrame.propTypes",
     "meta": {
-      "lineno": 149,
+      "lineno": 142,
       "filename": "TheFrame.jsx",
       "path": "/Users/okuni/Projects/the/packages/frame/lib"
     },
@@ -125,7 +125,7 @@
     "description": "Style options",
     "memberof": "TheFrameStyle.propTypes",
     "meta": {
-      "lineno": 20,
+      "lineno": 21,
       "filename": "TheFrameStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/frame/lib"
     },
