@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-menu",
-    "longname": "module:the-menu",
-    "name": "the-menu",
+    "id": "module:@the-/menu",
+    "longname": "module:@the-/menu",
+    "name": "@the-/menu",
     "kind": "module",
     "description": "Menu of the-components",
     "meta": {
@@ -20,7 +20,7 @@
     "scope": "global",
     "description": "Drop down menu",
     "meta": {
-      "lineno": 16,
+      "lineno": 20,
       "filename": "TheDropdownMenu.jsx",
       "path": "/Users/okuni/Projects/the/packages/menu/lib"
     },
@@ -78,7 +78,7 @@
     "description": "Event types to close for",
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
-      "lineno": 141,
+      "lineno": 146,
       "filename": "TheDropdownMenu.jsx",
       "path": "/Users/okuni/Projects/the/packages/menu/lib"
     },
@@ -93,7 +93,7 @@
     "description": "Label for toggle button",
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
-      "lineno": 143,
+      "lineno": 148,
       "filename": "TheDropdownMenu.jsx",
       "path": "/Users/okuni/Projects/the/packages/menu/lib"
     },
@@ -108,7 +108,7 @@
     "description": "Open  when mounted",
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
-      "lineno": 145,
+      "lineno": 150,
       "filename": "TheDropdownMenu.jsx",
       "path": "/Users/okuni/Projects/the/packages/menu/lib"
     },
@@ -123,7 +123,7 @@
     "description": "Show on righthand",
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
-      "lineno": 147,
+      "lineno": 152,
       "filename": "TheDropdownMenu.jsx",
       "path": "/Users/okuni/Projects/the/packages/menu/lib"
     },
@@ -138,7 +138,7 @@
     "description": "Grid layout",
     "memberof": "TheMenu.propTypes",
     "meta": {
-      "lineno": 41,
+      "lineno": 37,
       "filename": "TheMenu.jsx",
       "path": "/Users/okuni/Projects/the/packages/menu/lib"
     },
@@ -153,7 +153,7 @@
     "description": "Active or not",
     "memberof": "TheMenuItem.propTypes",
     "meta": {
-      "lineno": 44,
+      "lineno": 38,
       "filename": "TheMenuItem.jsx",
       "path": "/Users/okuni/Projects/the/packages/menu/lib"
     },
@@ -168,7 +168,7 @@
     "description": "Icon class name",
     "memberof": "TheMenuItem.propTypes",
     "meta": {
-      "lineno": 46,
+      "lineno": 40,
       "filename": "TheMenuItem.jsx",
       "path": "/Users/okuni/Projects/the/packages/menu/lib"
     },
@@ -183,7 +183,7 @@
     "description": "Link to",
     "memberof": "TheMenuItem.propTypes",
     "meta": {
-      "lineno": 48,
+      "lineno": 42,
       "filename": "TheMenuItem.jsx",
       "path": "/Users/okuni/Projects/the/packages/menu/lib"
     },
@@ -198,7 +198,7 @@
     "description": "Style options",
     "memberof": "TheMenuStyle.propTypes",
     "meta": {
-      "lineno": 20,
+      "lineno": 21,
       "filename": "TheMenuStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/menu/lib"
     },

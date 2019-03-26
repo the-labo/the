@@ -1,7 +1,7 @@
 {
   "name": "@the-/menu",
   "description": "Menu of the-components",
-  "version": "2.0.22",
+  "version": "15.0.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -37,7 +37,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/menu#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "component",
     "the"
@@ -48,22 +48,15 @@
     "react": ">=15",
     "react-dom": ">=15"
   },
-  "repository": "the-labo/the-menu",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",
     "prepare": "npm run build && npm run doc",
     "test": "the-script-build",
     "watch": "the-script-build -w"
-  },
-  "build": "the-script-build",
-  "doc": "the-script-doc",
-  "prepare": "npm run build && npm run doc",
-  "release": "the-script-release -y",
-  "test": "the-script-build",
-  "update": "the-script-update",
-  "watch": "the-script-build -w",
-  "publishConfig": {
-    "access": "public"
   }
 }

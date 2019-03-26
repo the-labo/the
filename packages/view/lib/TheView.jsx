@@ -4,11 +4,10 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { TheButton } from '@the-/button'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
 import { TheContainer } from '@the-/container'
 import { TheIcon } from '@the-/icon'
-import { TheDropdownMenu } from '@the-/menu'
 import { TheSpin } from '@the-/spin'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
 import TheViewStyle from './TheViewStyle'
 
 /**

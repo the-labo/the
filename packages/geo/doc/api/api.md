@@ -6,7 +6,7 @@
 <dt><a href="#module_default">default</a></dt>
 <dd><p>Default exports</p>
 </dd>
-<dt><a href="#module_the-geo">the-geo</a></dt>
+<dt><a href="#module_@the-/geo">@the-/geo</a></dt>
 <dd><p>Geo location utility</p>
 </dd>
 </dl>
@@ -31,9 +31,9 @@
 ## default
 Default exports
 
-<a name="module_the-geo"></a>
+<a name="module_@the-/geo"></a>
 
-## the-geo
+## @the-/geo
 Geo location utility
 
 <a name="TheGeo"></a>

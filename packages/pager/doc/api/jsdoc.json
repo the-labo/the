@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-pager",
-    "longname": "module:the-pager",
-    "name": "the-pager",
+    "id": "module:@the-/pager",
+    "longname": "module:@the-/pager",
+    "name": "@the-/pager",
     "kind": "module",
     "description": "Pager of the-components",
     "meta": {

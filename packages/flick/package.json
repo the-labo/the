@@ -1,7 +1,7 @@
 {
   "name": "@the-/flick",
   "description": "Flickable viewer of the-components",
-  "version": "4.0.26",
+  "version": "15.0.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -40,7 +40,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/flick#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "lib",
     "the"
@@ -54,7 +54,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "the-labo/the-flick",
+  "repository": "the-labo/the",
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",

@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-hamburger",
-    "longname": "module:the-hamburger",
-    "name": "the-hamburger",
+    "id": "module:@the-/hamburger",
+    "longname": "module:@the-/hamburger",
+    "name": "@the-/hamburger",
     "kind": "module",
     "description": "Hamburger menu for the-components",
     "meta": {
@@ -20,7 +20,7 @@
     "scope": "global",
     "description": "Hamburger menu for the-components",
     "meta": {
-      "lineno": 13,
+      "lineno": 12,
       "filename": "TheHamburger.jsx",
       "path": "/Users/okuni/Projects/the/packages/hamburger/lib"
     },
@@ -50,7 +50,7 @@
     "description": "Hidden or not",
     "memberof": "TheHamburger.propTypes",
     "meta": {
-      "lineno": 125,
+      "lineno": 97,
       "filename": "TheHamburger.jsx",
       "path": "/Users/okuni/Projects/the/packages/hamburger/lib"
     },
@@ -65,7 +65,7 @@
     "description": "Hidden state change",
     "memberof": "TheHamburger.propTypes",
     "meta": {
-      "lineno": 127,
+      "lineno": 99,
       "filename": "TheHamburger.jsx",
       "path": "/Users/okuni/Projects/the/packages/hamburger/lib"
     },
@@ -80,7 +80,7 @@
     "description": "Shows spinner",
     "memberof": "TheHamburger.propTypes",
     "meta": {
-      "lineno": 129,
+      "lineno": 101,
       "filename": "TheHamburger.jsx",
       "path": "/Users/okuni/Projects/the/packages/hamburger/lib"
     },
@@ -95,7 +95,7 @@
     "description": "Style options",
     "memberof": "TheHamburgerStyle.propTypes",
     "meta": {
-      "lineno": 20,
+      "lineno": 21,
       "filename": "TheHamburgerStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/hamburger/lib"
     },

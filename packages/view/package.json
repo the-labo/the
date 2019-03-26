@@ -1,7 +1,7 @@
 {
   "name": "@the-/view",
   "description": "View of the-components",
-  "version": "3.0.28",
+  "version": "15.0.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -24,6 +24,7 @@
   "devDependencies": {
     "@babel/runtime": "*",
     "@the-/component-demo": "file:../component-demo",
+    "@the-/menu": "^15.0.3",
     "@the-/router": "file:../router",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
@@ -39,7 +40,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/view#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "component",
     "the"
@@ -50,22 +51,15 @@
     "react": ">=16",
     "react-dom": ">=16"
   },
-  "repository": "the-labo/the-view",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",
     "prepare": "npm run build && npm run doc",
     "test": "the-script-build",
     "watch": "the-script-build -w"
-  },
-  "build": "the-script-build",
-  "doc": "the-script-doc",
-  "prepare": "npm run build && npm run doc",
-  "release": "the-script-release -y",
-  "test": "the-script-build",
-  "update": "the-script-update",
-  "watch": "the-script-build -w",
-  "publishConfig": {
-    "access": "public"
   }
 }

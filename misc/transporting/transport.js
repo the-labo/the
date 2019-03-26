@@ -171,7 +171,7 @@ const _removeDevDeps = async (baseDir, names) => {
           scripts.prepare = 'npm run build && npm run doc'
           delete scripts.share
           delete scripts.buid
-          return scripts
+          return {scripts}
         })
         {
           await _addDevDeps(toDir, {

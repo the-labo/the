@@ -24,7 +24,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/util-client#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "the",
     "util"
@@ -34,7 +34,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "the-labo/the-client-util",
+  "repository": "the-labo/the",
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",

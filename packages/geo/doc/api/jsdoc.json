@@ -13,9 +13,9 @@
     "order": 1
   },
   {
-    "id": "module:the-geo",
-    "longname": "module:the-geo",
-    "name": "the-geo",
+    "id": "module:@the-/geo",
+    "longname": "module:@the-/geo",
+    "name": "@the-/geo",
     "kind": "module",
     "description": "Geo location utility",
     "meta": {

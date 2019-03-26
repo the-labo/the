@@ -3,14 +3,15 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { asStyleData } from '@the-/util-component'
 import { TheStyle } from '@the-/style'
+import { asStyleData } from '@the-/util-component'
 
 /** Style for TheMenu */
 const TheMenuStyle = ({ className, id, options }) => (
-  <TheStyle {...{ id }}
-            className={c('the-menu-style', className)}
-            styles={TheMenuStyle.data(options)}
+  <TheStyle
+    {...{ id }}
+    className={c('the-menu-style', className)}
+    styles={TheMenuStyle.data(options)}
   />
 )
 
@@ -38,7 +39,8 @@ TheMenuStyle.data = (options) => {
     overlayBorderColor = ThemeValues.overlayBorderColor,
     tappableHeight = ThemeValues.tappableHeight,
   } = options
-  return Object.assign({},
+  return Object.assign(
+    {},
     asStyleData({
       '.the-menu': {
         backgroundColor,
@@ -183,7 +185,7 @@ TheMenuStyle.data = (options) => {
           right: '0',
         },
       },
-    })
+    }),
   )
 }
 

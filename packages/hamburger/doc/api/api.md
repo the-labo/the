@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-hamburger">the-hamburger</a></dt>
+<dt><a href="#module_@the-/hamburger">@the-/hamburger</a></dt>
 <dd><p>Hamburger menu for the-components</p>
 </dd>
 </dl>
@@ -24,9 +24,9 @@
 </dd>
 </dl>
 
-<a name="module_the-hamburger"></a>
+<a name="module_@the-/hamburger"></a>
 
-## the-hamburger
+## @the-/hamburger
 Hamburger menu for the-components
 
 <a name="TheHamburger"></a>

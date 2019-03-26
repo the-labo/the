@@ -4,8 +4,12 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 import withClickOutside from 'react-click-outside'
-import { changedProps, eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
 import { TheIcon } from '@the-/icon'
+import {
+  changedProps,
+  eventHandlersFor,
+  htmlAttributesFor,
+} from '@the-/util-component'
 import { get } from '@the-/window'
 import TheMenu from './TheMenu'
 import TheMenuItem from './TheMenuItem'
@@ -14,7 +18,7 @@ import TheMenuItem from './TheMenuItem'
  * Drop down menu
  */
 class TheDropDownMenu extends React.Component {
-  static Button (props) {
+  static Button(props) {
     const {
       children,
       className,
@@ -22,32 +26,31 @@ class TheDropDownMenu extends React.Component {
       onClick,
     } = props
     return (
-      <a {...htmlAttributesFor(props, { except: ['className'] })}
-         {...eventHandlersFor(props, { except: [] })}
-         className={c('the-dropdown-menu-button', className)}
-         role='menubar'
-         {...{ onClick }}
+      <a
+        {...htmlAttributesFor(props, { except: ['className'] })}
+        {...eventHandlersFor(props, { except: [] })}
+        className={c('the-dropdown-menu-button', className)}
+        role='menubar'
+        {...{ onClick }}
       >
-        <span className='the-dropdown-menu-button-text'>
-          {children}
-        </span>
-        <TheIcon className={c('the-dropdown-menu-button-icon', icon)}
-        />
+        <span className='the-dropdown-menu-button-text'>{children}</span>
+        <TheIcon className={c('the-dropdown-menu-button-icon', icon)} />
       </a>
     )
   }
 
-  static Item (props) {
+  static Item(props) {
     const { className } = props
     return (
-      <TheMenuItem {...props}
-                   className={c('the-dropdown-menu-item', className)}
-                   role='menuItem'
+      <TheMenuItem
+        {...props}
+        className={c('the-dropdown-menu-item', className)}
+        role='menuItem'
       />
     )
   }
 
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = { open: props.open }
     this.toggleDropDown = this.toggleDropDown.bind(this)
@@ -56,7 +59,7 @@ class TheDropDownMenu extends React.Component {
     this.unlistenHistory = null
   }
 
-  bindHistory (history) {
+  bindHistory(history) {
     const { eventsToClose } = this.props
     const window = get('window')
     for (const event of eventsToClose) {
@@ -68,19 +71,19 @@ class TheDropDownMenu extends React.Component {
     }
   }
 
-  componentDidMount () {
+  componentDidMount() {
     const history = this.context.history || this.props.history
     this.bindHistory(history)
   }
 
-  componentDidUpdate (prevProps) {
+  componentDidUpdate(prevProps) {
     const diff = changedProps(prevProps, this.props)
     if ('history' in diff) {
       this.bindHistory(this.props.history)
     }
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     const { eventsToClose } = this.props
     const window = get('window')
     for (const event of eventsToClose) {
@@ -89,11 +92,11 @@ class TheDropDownMenu extends React.Component {
     this.unlistenHistory && this.unlistenHistory()
   }
 
-  handleClickOutside () {
+  handleClickOutside() {
     this.toggleDropDown(false)
   }
 
-  render () {
+  render() {
     const { props, state } = this
     const {
       children,
@@ -104,19 +107,21 @@ class TheDropDownMenu extends React.Component {
     } = props
     const { open } = state
     return (
-      <div {...htmlAttributesFor(props, { except: ['className', 'label'] })}
-           {...eventHandlersFor(props, { except: [] })}
-           className={c('the-dropdown-menu', className, {
-             'the-dropdown-menu-open': open,
-             'the-dropdown-menu-righted': righted,
-           })}
+      <div
+        {...htmlAttributesFor(props, { except: ['className', 'label'] })}
+        {...eventHandlersFor(props, { except: [] })}
+        className={c('the-dropdown-menu', className, {
+          'the-dropdown-menu-open': open,
+          'the-dropdown-menu-righted': righted,
+        })}
       >
         <div className='the-dropdown-menu-content'>
-          <TheDropDownMenu.Button aria-expanded={open}
-                                  icon={label ? icon : null}
-                                  onClick={open ? this.close : this.open}
+          <TheDropDownMenu.Button
+            aria-expanded={open}
+            icon={label ? icon : null}
+            onClick={open ? this.close : this.open}
           >
-            {label || <TheIcon className={icon}/>}
+            {label || <TheIcon className={icon} />}
           </TheDropDownMenu.Button>
           <div className='the-dropdown-menu-inner'>
             <TheMenu role='none'>{children}</TheMenu>
@@ -126,7 +131,7 @@ class TheDropDownMenu extends React.Component {
     )
   }
 
-  toggleDropDown (open) {
+  toggleDropDown(open) {
     if (arguments.length === 0) {
       open = !this.state.open
     }

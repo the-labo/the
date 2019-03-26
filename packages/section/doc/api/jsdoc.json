@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-section",
-    "longname": "module:the-section",
-    "name": "the-section",
+    "id": "module:@the-/section",
+    "longname": "module:@the-/section",
+    "name": "@the-/section",
     "kind": "module",
     "description": "Section of the-components",
     "meta": {

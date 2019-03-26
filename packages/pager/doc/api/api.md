@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-pager">the-pager</a></dt>
+<dt><a href="#module_@the-/pager">@the-/pager</a></dt>
 <dd><p>Pager of the-components</p>
 </dd>
 </dl>
@@ -24,9 +24,9 @@
 </dd>
 </dl>
 
-<a name="module_the-pager"></a>
+<a name="module_@the-/pager"></a>
 
-## the-pager
+## @the-/pager
 Pager of the-components
 
 <a name="ThePager"></a>

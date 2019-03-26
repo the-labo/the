@@ -1,7 +1,7 @@
 {
   "name": "@the-/router",
   "description": "Router of the-components",
-  "version": "3.0.8",
+  "version": "15.0.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -32,7 +32,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/router#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "lib",
     "the"
@@ -47,7 +47,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "the-labo/the-router",
+  "repository": "the-labo/the",
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",

@@ -3,14 +3,15 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { asStyleData } from '@the-/util-component'
 import { TheStyle } from '@the-/style'
+import { asStyleData } from '@the-/util-component'
 
 /** Style for TheHamburger */
 const TheHamburgerStyle = ({ className, id, options }) => (
-  <TheStyle {...{ id }}
-            className={c('the-hamburger-style', className)}
-            styles={TheHamburgerStyle.data(options)}
+  <TheStyle
+    {...{ id }}
+    className={c('the-hamburger-style', className)}
+    styles={TheHamburgerStyle.data(options)}
   />
 )
 

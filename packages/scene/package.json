@@ -1,7 +1,7 @@
 {
   "name": "@the-/scene",
   "description": "Base class of the-scene",
-  "version": "15.0.5",
+  "version": "15.0.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -34,7 +34,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/scene#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "lib",
     "the"
@@ -44,7 +44,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "the-labo/the-scene-base",
+  "repository": "the-labo/the",
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",

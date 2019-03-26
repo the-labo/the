@@ -5,42 +5,31 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { TheButton } from '@the-/button'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
-import { TheSpin } from '@the-/spin'
 
 /**
  * Hamburger menu for the-components
  */
 class TheHamburger extends React.Component {
-  static Body ({ children }) {
-    return (
-      <div className='the-hamburger-body'>{children}</div>
-    )
+  static Body({ children }) {
+    return <div className='the-hamburger-body'>{children}</div>
   }
 
-  static Footer ({ children }) {
-    return (
-      <div className='the-hamburger-footer'>{children}</div>
-    )
+  static Footer({ children }) {
+    return <div className='the-hamburger-footer'>{children}</div>
   }
 
-  static Header ({ children }) {
-    return (
-      <div className='the-hamburger-header'>{children}</div>
-    )
+  static Header({ children }) {
+    return <div className='the-hamburger-header'>{children}</div>
   }
 
-  static Item ({
-                 children,
-                 icon,
-                 onClick,
-                 to,
-               }) {
+  static Item({ children, icon, onClick, to }) {
     return (
       <div className='the-hamburger-item'>
-        <TheButton className='the-hamburger-item-button'
-                   icon={icon}
-                   onClick={onClick}
-                   to={to}
+        <TheButton
+          className='the-hamburger-item-button'
+          icon={icon}
+          onClick={onClick}
+          to={to}
         >
           {children}
         </TheButton>
@@ -48,70 +37,53 @@ class TheHamburger extends React.Component {
     )
   }
 
-  static Toggle (props) {
-    return (
-      <TheButton icon={TheHamburger.TOGGLE_ICON}
-                 simple
-                 {...props}/>
-    )
+  static Toggle(props) {
+    return <TheButton icon={TheHamburger.TOGGLE_ICON} simple {...props} />
   }
 
-  constructor () {
+  constructor() {
     super(...arguments)
     this.handleClose = this.handleClose.bind(this)
     this.handleToggle = this.handleToggle.bind(this)
   }
 
-  handleClose () {
+  handleClose() {
     this.toggle(true)
   }
 
-  handleToggle () {
+  handleToggle() {
     this.toggle(!this.props.hidden)
   }
 
-  render () {
+  render() {
     const { props } = this
-    const {
-      children,
-      className,
-      footer,
-      header,
-      hidden,
-    } = props
+    const { children, className, footer, header, hidden } = props
     return (
-      <div {...htmlAttributesFor(props, { except: ['className', 'hidden'] })}
-           {...eventHandlersFor(props, { except: [] })}
-           aria-hidden={hidden}
-           className={c('the-hamburger', className, {
-             'the-hamburger-hidden': hidden,
-           })}
+      <div
+        {...htmlAttributesFor(props, { except: ['className', 'hidden'] })}
+        {...eventHandlersFor(props, { except: [] })}
+        aria-hidden={hidden}
+        className={c('the-hamburger', className, {
+          'the-hamburger-hidden': hidden,
+        })}
       >
-        <div className='the-hamburger-cover'
-             onClick={this.handleToggle}
-        />
+        <div className='the-hamburger-cover' onClick={this.handleToggle} />
         <div className='the-hamburger-inner'>
-          <TheButton className='the-hamburger-close'
-                     icon={TheHamburger.CLOSE_ICON}
-                     onClick={this.handleClose}
-                     simple
+          <TheButton
+            className='the-hamburger-close'
+            icon={TheHamburger.CLOSE_ICON}
+            onClick={this.handleClose}
+            simple
           />
-          <TheHamburger.Header>
-            {header}
-          </TheHamburger.Header>
-          <TheHamburger.Body>
-
-            {children}
-          </TheHamburger.Body>
-          <TheHamburger.Footer>
-            {footer}
-          </TheHamburger.Footer>
+          <TheHamburger.Header>{header}</TheHamburger.Header>
+          <TheHamburger.Body>{children}</TheHamburger.Body>
+          <TheHamburger.Footer>{footer}</TheHamburger.Footer>
         </div>
       </div>
     )
   }
 
-  toggle (hidden) {
+  toggle(hidden) {
     const { onToggle } = this.props
     onToggle && onToggle(hidden)
   }

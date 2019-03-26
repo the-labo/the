@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-view",
-    "longname": "module:the-view",
-    "name": "the-view",
+    "id": "module:@the-/view",
+    "longname": "module:@the-/view",
+    "name": "@the-/view",
     "kind": "module",
     "description": "View of the-components",
     "meta": {
@@ -20,7 +20,7 @@
     "scope": "global",
     "description": "View of the-components",
     "meta": {
-      "lineno": 17,
+      "lineno": 16,
       "filename": "TheView.jsx",
       "path": "/Users/okuni/Projects/the/packages/view/lib"
     },
@@ -50,7 +50,7 @@
     "description": "Mark as fixed",
     "memberof": "TheView.propTypes",
     "meta": {
-      "lineno": 155,
+      "lineno": 154,
       "filename": "TheView.jsx",
       "path": "/Users/okuni/Projects/the/packages/view/lib"
     },

@@ -1,7 +1,7 @@
 {
   "name": "@the-/section",
   "description": "Section of the-components",
-  "version": "2.0.21",
+  "version": "15.0.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,6 +11,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/button": "^15.0.3",
     "@the-/icon": "^15.0.4",
     "@the-/spin": "^15.0.4",
     "@the-/style": "^15.0.3",
@@ -19,22 +20,22 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@babel/runtime": "*",
+    "@babel/runtime": "^7.4.2",
     "@the-/component-demo": "file:../component-demo",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
     "coz": "^7.0.19",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "react-router-dom": "^4.3.1"
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "react-router-dom": "^5.0.0"
   },
   "engines": {
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/section#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "component",
     "the"
@@ -45,22 +46,15 @@
     "react": ">=15",
     "react-dom": ">=15"
   },
-  "repository": "the-labo/the-section",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",
     "prepare": "npm run build && npm run doc",
     "test": "the-script-build",
     "watch": "the-script-build -w"
-  },
-  "build": "the-script-build",
-  "doc": "the-script-doc",
-  "prepare": "npm run build && npm run doc",
-  "release": "the-script-release -y",
-  "test": "the-script-build",
-  "update": "the-script-update",
-  "watch": "the-script-build -w",
-  "publishConfig": {
-    "access": "public"
   }
 }

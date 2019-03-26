@@ -3,9 +3,9 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
 import { TheCondition } from '@the-/condition'
 import { TheSpin } from '@the-/spin'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
 import TheRepeatableStyle from './TheRepeatableStyle'
 
 /**

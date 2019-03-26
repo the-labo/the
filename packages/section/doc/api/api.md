@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-section">the-section</a></dt>
+<dt><a href="#module_@the-/section">@the-/section</a></dt>
 <dd><p>Section of the-components</p>
 </dd>
 </dl>
@@ -27,9 +27,9 @@
 </dd>
 </dl>
 
-<a name="module_the-section"></a>
+<a name="module_@the-/section"></a>
 
-## the-section
+## @the-/section
 Section of the-components
 
 <a name="TheAccordionSection"></a>

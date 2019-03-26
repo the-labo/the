@@ -1,7 +1,7 @@
 {
   "name": "@the-/hamburger",
   "description": "Hamburger menu for the-components",
-  "version": "1.0.9",
+  "version": "15.0.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -16,19 +16,20 @@
     "@the-/style": "^15.0.3",
     "@the-/util-component": "^15.0.3",
     "classnames": "^2.2.6",
-    "prop-types": "^15.6.2"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@babel/runtime": "*",
+    "@babel/runtime": "^7.4.2",
     "@the-/component-demo": "file:../component-demo",
+    "@the-/router": "^3.0.8",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
     "coz": "^7.0.19",
-    "objnest": "^5.0.4",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "objnest": "^5.0.6",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
     "react-router-dom": "^4.3.1",
     "v": "^0.3.0"
   },
@@ -36,7 +37,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/hamburger#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "component",
     "the"
@@ -47,22 +48,15 @@
     "react": ">=16",
     "react-dom": ">=16"
   },
-  "repository": "the-labo/the-hamburger",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",
     "prepare": "npm run build && npm run doc",
     "test": "the-script-build",
     "watch": "the-script-build -w"
-  },
-  "build": "the-script-build",
-  "doc": "the-script-doc",
-  "prepare": "npm run build && npm run doc",
-  "release": "the-script-release -y",
-  "test": "the-script-build",
-  "update": "the-script-update",
-  "watch": "the-script-build -w",
-  "publishConfig": {
-    "access": "public"
   }
 }

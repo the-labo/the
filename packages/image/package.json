@@ -1,7 +1,7 @@
 {
   "name": "@the-/image",
   "description": "Image of the-components",
-  "version": "15.0.4",
+  "version": "15.0.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -10,7 +10,6 @@
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
-  "build": "the-script-build",
   "dependencies": {
     "@the-/icon": "^15.0.4",
     "@the-/style": "^15.0.3",
@@ -30,12 +29,11 @@
     "react-dom": "^16.8.4",
     "react-router-dom": "^4.3.1"
   },
-  "doc": "the-script-doc",
   "engines": {
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/image#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "component",
     "the"
@@ -46,7 +44,6 @@
     "react": ">=16",
     "react-dom": ">=16"
   },
-  "prepare": "npm run build && npm run doc",
   "publishConfig": {
     "access": "public"
   },
@@ -57,7 +54,5 @@
     "prepare": "npm run build && npm run doc",
     "test": "the-script-build",
     "watch": "the-script-build -w"
-  },
-  "test": "the-script-build",
-  "watch": "the-script-build -w"
+  }
 }

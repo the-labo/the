@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-menu">the-menu</a></dt>
+<dt><a href="#module_@the-/menu">@the-/menu</a></dt>
 <dd><p>Menu of the-components</p>
 </dd>
 </dl>
@@ -30,9 +30,9 @@
 </dd>
 </dl>
 
-<a name="module_the-menu"></a>
+<a name="module_@the-/menu"></a>
 
-## the-menu
+## @the-/menu
 Menu of the-components
 
 <a name="TheDropDownMenu"></a>
