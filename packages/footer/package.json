@@ -1,7 +1,7 @@
 {
   "name": "@the-/footer",
   "description": "Footer of the-components",
-  "version": "15.0.3",
+  "version": "15.0.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -21,7 +21,7 @@
   "devDependencies": {
     "@babel/runtime": "^7.4.2",
     "@the-/component-demo": "file:../component-demo",
-    "@the-/router": "^3.0.7",
+    "@the-/router": "^3.0.8",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
@@ -35,7 +35,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/footer#readme",
   "keywords": [
     "component",
     "the"
@@ -43,8 +43,8 @@
   "license": "MIT",
   "main": "shim",
   "peerDependencies": {
-    "react": ">=15",
-    "react-dom": ">=15"
+    "react": ">=16",
+    "react-dom": ">=16"
   },
   "publishConfig": {
     "access": "public"

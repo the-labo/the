@@ -68,9 +68,9 @@ Usage
 'use strict'
 
 const fs = require('fs')
-const {pipeToFile} = require('@the-/util-server')
+const { pipeToFile } = require('@the-/util-server')
 
-async function tryExample () {
+async function tryExample() {
   await pipeToFile(fs.createReadStream('src.txt'), 'dest.txt')
 }
 
@@ -87,7 +87,7 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-- [the-server-util](./doc/api/api.md#module_the-server-util)
+- [@the-/util-server](./doc/api/api.md#module_@the-/util-server)
 
 
 <!-- Section from "doc/readme/03.API.md.hbs" End -->

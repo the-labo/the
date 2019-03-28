@@ -147,6 +147,10 @@ const _removeDevDeps = async (baseDir, names) => {
           'packages',
           'demo-component',
         )
+        const demoComponentPkg = require(path.resolve(
+          demoComponentDir,
+          'package.json',
+        ))
         const refactor = new TheRefactor()
         await refactor.rewrite('example/*.jsx', {
           [`from '${fromPkgName}'`]: [`from '@the-/${name}'`],
@@ -167,15 +171,31 @@ const _removeDevDeps = async (baseDir, names) => {
           'signature.json',
         ])
 
-        await _rewritePkg(toDir, ({ scripts = {} }) => {
-          scripts.doc = 'the-script-doc'
-          scripts.build = 'the-script-build'
-          scripts.test = 'the-script-build'
-          scripts.prepare = 'npm run build && npm run doc'
-          delete scripts.share
-          delete scripts.buid
-          return { scripts }
-        })
+        await _rewritePkg(
+          toDir,
+          ({ devDependencies = {}, peerDependencies = {}, scripts = {} }) => {
+            scripts.doc = 'the-script-doc'
+            scripts.build = 'the-script-build'
+            scripts.test = 'the-script-build'
+            scripts.prepare = 'npm run build && npm run doc'
+            delete scripts.share
+            delete scripts.buid
+            devDependencies['@babel/runtime'] =
+              demoComponentPkg.devDependencies['@babel/runtime']
+            devDependencies['react'] = demoComponentPkg.devDependencies['react']
+            devDependencies['react-dom'] =
+              demoComponentPkg.devDependencies['react-dom']
+            devDependencies['react-router-dom'] =
+              demoComponentPkg.devDependencies['react-router-dom']
+            devDependencies['@the-/router'] =
+              demoComponentPkg.devDependencies['@the-/router']
+            peerDependencies['react'] =
+              demoComponentPkg.peerDependencies['react']
+            peerDependencies['react-dom'] =
+              demoComponentPkg.peerDependencies['react-dom']
+            return { devDependencies, peerDependencies, scripts }
+          },
+        )
         {
           await _addDevDeps(toDir, {
             '@the-/script-build': 'file:../script-build',

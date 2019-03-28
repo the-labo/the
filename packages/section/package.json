@@ -35,7 +35,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/section#readme",
   "keywords": [
     "component",
     "the"
@@ -43,8 +43,8 @@
   "license": "MIT",
   "main": "shim",
   "peerDependencies": {
-    "react": ">=15",
-    "react-dom": ">=15"
+    "react": ">=16",
+    "react-dom": ">=16"
   },
   "publishConfig": {
     "access": "public"

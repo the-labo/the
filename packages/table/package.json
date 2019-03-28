@@ -28,13 +28,13 @@
     "coz": "^7.0.19",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^5.0.0"
   },
   "engines": {
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/table#readme",
   "keywords": [
     "component",
     "the"
@@ -42,8 +42,8 @@
   "license": "MIT",
   "main": "shim",
   "peerDependencies": {
-    "react": ">=15",
-    "react-dom": ">=15"
+    "react": ">=16",
+    "react-dom": ">=16"
   },
   "publishConfig": {
     "access": "public"

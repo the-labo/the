@@ -19,7 +19,7 @@
     "prop-types": "^15.6.2"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.0.0-rc.1",
+    "@babel/runtime": "^7.4.2",
     "@the-/component-demo": "file:../component-demo",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
@@ -27,15 +27,15 @@
     "@the-/templates": "file:../templates",
     "coz": "^7.0.19",
     "objnest": "^5.0.3",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-router-dom": "^4.3.1"
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "react-router-dom": "^5.0.0"
   },
   "engines": {
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/bar#readme",
   "keywords": [
     "component",
     "the"
@@ -43,8 +43,8 @@
   "license": "MIT",
   "main": "shim",
   "peerDependencies": {
-    "react": ">=15",
-    "react-dom": ">=15"
+    "react": ">=16",
+    "react-dom": ">=16"
   },
   "publishConfig": {
     "access": "public"

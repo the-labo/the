@@ -67,9 +67,9 @@ Usage
 ```javascript
 'use strict'
 
-const {TheMedia} = require('@the-/media')
+const { TheMedia } = require('@the-/media')
 
-async function tryExample () {
+async function tryExample() {
   const media = new TheMedia({
     audio: true,
     video: false,
@@ -92,7 +92,7 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 - [default](./doc/api/api.md#module_default)
-- [the-media](./doc/api/api.md#module_the-media)
+- [@the-/media](./doc/api/api.md#module_@the-/media)
 
 
 <!-- Section from "doc/readme/03.API.md.hbs" End -->

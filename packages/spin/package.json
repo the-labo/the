@@ -19,6 +19,7 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
+    "@babel/runtime": "^7.4.2",
     "@the-/component-demo": "file:../component-demo",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
@@ -27,13 +28,13 @@
     "coz": "^7.0.19",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^5.0.0"
   },
   "engines": {
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/spin#readme",
   "keywords": [
     "component",
     "the"

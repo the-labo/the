@@ -10,7 +10,7 @@ const pkgSync = require('./misc/tasks/pkgSync')
 const pkgRun = require('./misc/tasks/pkgRun')
 const pkgInstall = require('./misc/tasks/pkgInstall')
 const pkgPublish = require('./misc/tasks/pkgPublish')
-const theCode = require('./packages/code/pon')
+const theCode = require('@the-/code/pon')
 const { mocha } = require('pon-task-dev')
 
 const { cwd, tasks } = require('./Ponfile')
