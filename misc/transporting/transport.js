@@ -223,6 +223,7 @@ const _removeDevDeps = async (baseDir, names) => {
         rimraf.sync(path.resolve(toDir, 'doc/readme'))
         await copyDirAsync(`${demoLibDir}/doc/readme`, `${toDir}/doc/readme`)
         await unlink(path.resolve(toDir, 'lib/.index.bud')).catch(() => null)
+        await unlink(path.resolve(toDir, 'shim/esm/index.mjs')).catch(() => null)
         await _copyFiles(demoLibDir, toDir, [
           'doc/links.json',
           'doc/overview.md',
