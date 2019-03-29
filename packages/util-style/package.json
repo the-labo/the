@@ -1,7 +1,7 @@
 {
   "name": "@the-/util-style",
   "description": "Utility for style",
-  "version": "15.0.3",
+  "version": "15.0.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -24,7 +24,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/util-style#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "the",
     "util"

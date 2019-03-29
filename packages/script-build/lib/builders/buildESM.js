@@ -18,7 +18,7 @@ const mtime = (filename) =>
     .then((stat) => stat && stat.mtime)
 
 const _tmpl = (filename) =>
-  path.resolve(`${__dirname}/../assets/tmpl`, filename)
+  path.resolve(`${__dirname}/../../assets/tmpl`, filename)
 
 module.exports = async function buildESM(
   srcDir,
@@ -74,6 +74,6 @@ module.exports = async function buildESM(
   ).catch(() => null))
   await filecopy(
     hasDefault ? _tmpl('indexWithDefault.mjs') : _tmpl('index.mjs'),
-    path.resolve(destDir, 'index.mjs'),
+    path.resolve(destDir, '../index.mjs'),
   )
 }

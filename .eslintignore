@@ -122,6 +122,7 @@ var/
 /packages/route/lib/index.js
 /packages/route/lib/index.jsx
 /packages/router/doc/demo/bundle.js
+/packages/router/lib/index.js
 /packages/router/lib/index.jsx
 /packages/run/lib/index.js
 /packages/s3/lib/index.js
