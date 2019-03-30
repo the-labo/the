@@ -4,19 +4,17 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheConfirmDialog from '../lib/TheConfirmDialog'
+const { ok } = require('assert').strict
+const React = require('react')
+const TheConfirmDialog = require('../shim/TheConfirmDialog').default
 
 describe('the-confirm-dialog', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Render a component', () => {
-    let element = render(<TheConfirmDialog />)
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheConfirmDialog))
   })
 })
 

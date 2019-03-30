@@ -4,19 +4,17 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheInputNumber from '../lib/TheInputNumber'
+const { ok } = require('assert').strict
+const React = require('react')
+const TheInputNumber = require('../shim/TheInputNumber').default
 
 describe('the-input-number', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Render a component', () => {
-    let element = render(<TheInputNumber />)
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheInputNumber))
   })
 })
 

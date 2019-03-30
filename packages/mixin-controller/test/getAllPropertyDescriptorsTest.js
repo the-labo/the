@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const getAllPropertyDescriptors = require('../lib/helpers/getAllPropertyDescriptors')
-const { ok, equal } = require('assert')
-
 describe('get-all-property-descriptors', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

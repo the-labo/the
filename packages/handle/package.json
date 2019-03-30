@@ -12,19 +12,19 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.0.2",
-    "abind": "^1.0.3",
+    "@the-/check": "^15.1.2",
+    "abind": "^1.0.5",
     "asenv": "^3.0.1",
-    "asobj": "^3.0.0"
+    "asobj": "^3.0.1"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.2.0",
+    "@babel/runtime": "^7.4.2",
     "@the-/scene": "file:../scene",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
-    "react": "^16.7.0"
+    "react": "^16.8.6"
   },
   "engines": {
     "node": ">=10",

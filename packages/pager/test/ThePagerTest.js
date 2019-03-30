@@ -4,19 +4,17 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import ThePager from '../lib/ThePager'
+const { ok } = require('assert').strict
+const React = require('react')
+const ThePager = require('../shim/ThePager').default
 
 describe('the-pager', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Render a component', () => {
-    let element = render(<ThePager />)
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(ThePager))
   })
 })
 

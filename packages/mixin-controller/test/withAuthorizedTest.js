@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const withAuthorized = require('../lib/withAuthorized')
-const { ok, equal } = require('assert')
-
 describe('with-authorized', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

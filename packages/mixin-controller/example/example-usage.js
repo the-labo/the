@@ -1,9 +1,9 @@
 'use strict'
 
-const {TheCtrl} = require('the-controller-base')
-const {withAuthorized} = require('@the-/mixin-controller')
+const { TheCtrl } = require('@the-/controller')
+const { withAuthorized } = require('@the-/mixin-controller')
 
-async function tryExample () {
+async function tryExample() {
   class MyCtrl extends withAuthorized(TheCtrl) {
     /* ... */
   }

@@ -4,24 +4,17 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheLink from '../lib/TheLink'
+const { ok } = require('assert').strict
+const React = require('react')
+const TheLink = require('../shim/TheLink').default
 
 describe('the-link', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Render a component', () => {
-    let element01 = render(
-      <TheLink replace={false} to='foo'>
-        {' '}
-        FOO{' '}
-      </TheLink>,
-    )
-    ok(element01)
+  it('Do test', () => {
+    ok(React.createElement(TheLink))
   })
 })
 

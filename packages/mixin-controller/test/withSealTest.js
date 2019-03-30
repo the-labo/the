@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const withSeal = require('../lib/withSeal')
-const { ok, equal } = require('assert')
-
 describe('with-seal', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

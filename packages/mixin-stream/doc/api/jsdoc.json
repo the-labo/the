@@ -1,0 +1,84 @@
+[
+  {
+    "id": "module:@the-/mixin-stream",
+    "longname": "module:@the-/mixin-stream",
+    "name": "@the-/mixin-stream",
+    "kind": "module",
+    "description": "Mixins for stream",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-stream/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "compose",
+    "longname": "compose",
+    "name": "compose",
+    "kind": "function",
+    "scope": "global",
+    "description": "Compose multiple mixins into one",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "variable": true,
+        "name": "mixins"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Composed mixin"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "compose.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-stream/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "withDebug",
+    "longname": "withDebug",
+    "name": "withDebug",
+    "kind": "function",
+    "scope": "global",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "class",
+        "name": "Base"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "withDebug.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-stream/lib"
+    },
+    "order": 2
+  }
+]

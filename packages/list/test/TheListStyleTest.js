@@ -4,19 +4,17 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheListStyle from '../lib/TheListStyle'
+const { ok } = require('assert').strict
+const React = require('react')
+const TheListStyle = require('../shim/TheListStyle').default
 
 describe('the-list-style', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Render a component', () => {
-    let element = render(<TheListStyle />)
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheListStyle))
   })
 })
 

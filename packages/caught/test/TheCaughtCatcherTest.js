@@ -4,17 +4,17 @@
  */
 'use strict'
 
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheCaughtCatcher from '../lib/TheCaughtCatcher'
+const { ok } = require('assert').strict
+const React = require('react')
+const TheCaughtCatcher = require('../shim/TheCaughtCatcher').default
 
 describe('the-caught-catcher', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Render a component', () => {
-    let element = render(<TheCaughtCatcher />)
+  it('Do test', () => {
+    ok(React.createElement(TheCaughtCatcher))
   })
 })
 

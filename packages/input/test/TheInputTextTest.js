@@ -4,27 +4,17 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheInputText from '../lib/TheInputText'
+const { ok } = require('assert').strict
+const React = require('react')
+const TheInputText = require('../shim/TheInputText').default
 
 describe('the-input-text', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Render a component', () => {
-    let state = {}
-    let element = render(
-      <TheInputText
-        name='foo'
-        onUpdate={(values) => {
-          state.values = values
-        }}
-      />,
-    )
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheInputText))
   })
 })
 

@@ -4,19 +4,17 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheMenu from '../lib/TheMenu'
+const { ok } = require('assert').strict
+const React = require('react')
+const TheMenu = require('../shim/TheMenu').default
 
 describe('the-menu', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Render a component', () => {
-    let element = render(<TheMenu />)
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheMenu))
   })
 })
 

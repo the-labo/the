@@ -60,8 +60,11 @@ exports.Index = (dirname) => {
 exports.Test = (dirname) => {
   return test({
     src: [
-      `${dirname}/../component/**/*.js`
+      `${dirname}/../shim/*.js`
     ],
+    useDefault:true,
+    deps:{'React': 'react'},
+    content: ({varName}) => `ok(React.createElement(${varName}))`,
     dest: dirname,
     cjs: true
   })

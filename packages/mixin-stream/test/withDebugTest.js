@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const withDebug = require('../lib/withDebug')
-const { ok, equal } = require('assert')
-
 describe('with-debug', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

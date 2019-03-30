@@ -4,30 +4,30 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const withClient = require('../lib/withClient')
-const {ok, equal} = require('assert')
 
 describe('with-client', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
-    const WithClient = withClient(class {
-      get client () {
-        return {
-          protocol: 'https',
-          host: 'example.com'
+    const WithClient = withClient(
+      class {
+        get client() {
+          return {
+            host: 'example.com',
+            protocol: 'https',
+          }
         }
-      }
-    })
+      },
+    )
     const instance = new WithClient()
     const url = instance.clientUrlFor('/hoge', {
       foo: {
-        bar: 'baz'
-      }
+        bar: 'baz',
+      },
     })
     equal(url, 'https://example.com/hoge?foo%5Bbar%5D=baz')
   })

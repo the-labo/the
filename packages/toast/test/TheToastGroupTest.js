@@ -4,19 +4,17 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheToastGroup from '../lib/TheToastGroup'
+const { ok } = require('assert').strict
+const React = require('react')
+const TheToastGroup = require('../shim/TheToastGroup').default
 
 describe('the-toast-group', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Render a component', () => {
-    let element = render(<TheToastGroup />)
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheToastGroup))
   })
 })
 

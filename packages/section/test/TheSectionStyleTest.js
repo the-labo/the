@@ -4,19 +4,17 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheSectionStyle from '../lib/TheSectionStyle'
+const { ok } = require('assert').strict
+const React = require('react')
+const TheSectionStyle = require('../shim/TheSectionStyle').default
 
 describe('the-section-style', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Render a component', () => {
-    let element = render(<TheSectionStyle />)
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheSectionStyle))
   })
 })
 

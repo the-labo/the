@@ -85,9 +85,9 @@ describe('process-object-property', async () => {
   it('dynamic props', async () => {
     equal(
       await processJSObject(
-        `const n = "NN";const x = { d: 1, c: 4, 'b': 2, 'a': 8, [n]: 5, _hoge: 1, $$fuge: 2 }`,
+        `const n = "NN";const x = { d: 1, c: 4, 'b': 2, 'a': 8, [n]: 5, _hoge: 1, $$fuge: 2, '3j': 128, 'k k': 1 }`,
       ),
-      `const n = "NN";const x = { $$fuge: 2, [n]: 5, 'a': 8, 'b': 2, _hoge: 1, c: 4, d: 1 }`,
+      `const n = "NN";const x = { $$fuge: 2, [n]: 5, '3j': 128, 'k k': 1, _hoge: 1, a: 8, b: 2, c: 4, d: 1 }`,
     )
   })
 
@@ -302,11 +302,11 @@ console.log(a, bb, c)
   it('Cleanup redundant alias on assign', async () => {
     equal(
       await processJSObject(`
-const x = { a: a, b: bb, c: c, d: dd, 'e': e}
+const x = { a: a, b: bb, c: c, d: dd, 'e': e, [g]: g}
 console.log(x)
     `),
       `
-const x = { 'e': e, a, b: bb, c, d: dd}
+const x = { [g]: g, a, b: bb, c, d: dd, e}
 console.log(x)
     `,
     )

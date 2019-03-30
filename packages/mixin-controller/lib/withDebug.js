@@ -8,8 +8,8 @@
 
 const { cleanup } = require('asobj')
 const Debug = require('debug')
-const { unlessProduction } = require('the-check')
 const { inspect } = require('util')
+const { unlessProduction } = require('@the-/check')
 const {
   getAllPropertyDescriptors,
   instanceMethodNamesFor,

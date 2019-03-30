@@ -4,37 +4,34 @@
  */
 'use strict'
 
+const { equal, ok } = require('assert')
 const withDebug = require('../lib/withDebug')
-const {ok, equal} = require('assert')
 
 describe('with-debug', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
-    const Foo =
-      class FooImpl extends withDebug(class {
-        getBar () {}
-      }) {
-        doSomething () {
-          return {
-            obj: {a: {b: {c: {d: 1}}}},
-            arr: new Array(2000).fill(null).map((_, i) => ({i}))
-          }
-        }
+    const Foo = class FooImpl extends withDebug(
+      class {
+        getBar() {}
+      },
+    ) {
+      get hoge() {
+        console.log('dynamic getter hoge called')
+        return 'hoge'
+      }
 
-        controllerWillAttach () {
+      controllerWillAttach() {}
 
-        }
-
-        get hoge () {
-          console.log('dynamic getter hoge called')
-          return 'hoge'
+      doSomething() {
+        return {
+          arr: new Array(2000).fill(null).map((_, i) => ({ i })),
+          obj: { a: { b: { c: { d: 1 } } } },
         }
       }
+    }
     const foo = new Foo()
     foo._debug.enabled = true
     foo.controllerWillAttach()

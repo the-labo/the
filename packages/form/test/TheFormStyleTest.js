@@ -4,19 +4,17 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheFormStyle from '../lib/TheFormStyle'
+const { ok } = require('assert').strict
+const React = require('react')
+const TheFormStyle = require('../shim/TheFormStyle').default
 
 describe('the-form-style', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Render a component', () => {
-    let element = render(<TheFormStyle />)
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheFormStyle))
   })
 })
 

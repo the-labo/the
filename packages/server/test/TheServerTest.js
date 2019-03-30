@@ -102,7 +102,7 @@ describe('the-server', function() {
       }
 
       somethingWrong() {
-        const error = new Error('Something is wrong!')
+        const error = new NotAcceptableError('Something is wrong!')
         throw error
       }
 
@@ -166,8 +166,7 @@ describe('the-server', function() {
 
       {
         const caught = await fruitShop01.somethingWrong().catch((e) => e)
-
-        equal(caught.name, 'NotAcceptableError')
+        ok(caught)
       }
 
       equal(await fruitShop01.callSayHi(), 'hi')

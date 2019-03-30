@@ -6,7 +6,7 @@
 'use strict'
 
 const Debug = require('debug')
-const { unlessProduction } = require('the-check')
+const { unlessProduction } = require('@the-/check')
 
 /** @lends withDebug */
 function withDebug(Class) {

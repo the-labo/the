@@ -113,8 +113,13 @@ const _removeDevDeps = async (baseDir, names) => {
 
 ;(async () => {
   for (const [fromPkgName, { kind, name }] of Object.entries(transporting)) {
-    console.log(`== ${fromPkgName} => ${name} ===`)
     const fromDir = path.resolve(baseDir, '..', fromPkgName)
+    const hasFrom = !!(await stat(fromDir).catch(() => null))
+    if (!hasFrom) {
+      console.warn(`"${fromPkgName}" is not found in local`)
+      continue
+    }
+    console.log(`== ${fromPkgName} => ${name} ===`)
     const toDir = path.resolve(baseDir, 'packages', name)
     const toStat = await stat(toDir).catch(() => null)
 
@@ -187,9 +192,9 @@ const _removeDevDeps = async (baseDir, names) => {
               demoComponentPkg.devDependencies['react-dom']
             devDependencies['react-router-dom'] =
               demoComponentPkg.devDependencies['react-router-dom']
-            if(name !== '@the-/router'){
-            devDependencies['@the-/router'] =
-              demoComponentPkg.devDependencies['@the-/router']
+            if (name !== '@the-/router') {
+              devDependencies['@the-/router'] =
+                demoComponentPkg.devDependencies['@the-/router']
             }
             peerDependencies['react'] =
               demoComponentPkg.peerDependencies['react']

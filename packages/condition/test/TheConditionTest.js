@@ -4,87 +4,17 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheCondition from '../lib/TheCondition'
+const { ok } = require('assert').strict
+const React = require('react')
+const TheCondition = require('../shim/TheCondition').default
 
 describe('the-condition', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Render a component', () => {
-    ok(
-      render(
-        <TheCondition if={true}>
-          <div>hoge</div>
-        </TheCondition>,
-      ),
-    )
-    ok(
-      !render(
-        <TheCondition if={false}>
-          <div>hoge</div>
-        </TheCondition>,
-      ),
-    )
-    ok(
-      !render(
-        <TheCondition unless={true}>
-          <div>hoge</div>
-        </TheCondition>,
-      ),
-    )
-    ok(
-      render(
-        <TheCondition unless={false}>
-          <div>hoge</div>
-        </TheCondition>,
-      ),
-    )
-    ok(
-      render(
-        <TheCondition someOf={[true, false, false]}>
-          <div>hoge</div>
-        </TheCondition>,
-      ),
-    )
-    ok(
-      !render(
-        <TheCondition someOf={[false, false, false]}>
-          <div>hoge</div>
-        </TheCondition>,
-      ),
-    )
-    ok(
-      render(
-        <TheCondition someOf={[true, false, false]}>
-          <div>hoge</div>
-        </TheCondition>,
-      ),
-    )
-    ok(
-      render(
-        <TheCondition allOf={[true, true, true]}>
-          <div>hoge</div>
-        </TheCondition>,
-      ),
-    )
-    ok(
-      !render(
-        <TheCondition allOf={[true, true, false]}>
-          <div>hoge</div>
-        </TheCondition>,
-      ),
-    )
-    ok(
-      !render(
-        <TheCondition allOf={[false, false, false]}>
-          <div>hoge</div>
-        </TheCondition>,
-      ),
-    )
+  it('Do test', () => {
+    ok(React.createElement(TheCondition))
   })
 })
 

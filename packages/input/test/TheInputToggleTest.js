@@ -4,19 +4,17 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheInputToggle from '../lib/TheInputToggle'
+const { ok } = require('assert').strict
+const React = require('react')
+const TheInputToggle = require('../shim/TheInputToggle').default
 
 describe('the-input-toggle', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Render a component', () => {
-    let element = render(<TheInputToggle />)
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheInputToggle))
   })
 })
 

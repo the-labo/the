@@ -4,19 +4,17 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheConditionStyle from '../lib/TheConditionStyle'
+const { ok } = require('assert').strict
+const React = require('react')
+const TheConditionStyle = require('../shim/TheConditionStyle').default
 
 describe('the-condition-style', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Render a component', () => {
-    let element = render(<TheConditionStyle />)
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheConditionStyle))
   })
 })
 

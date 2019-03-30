@@ -4,11 +4,11 @@
  */
 'use strict'
 
+const { unlessProduction } = require('@the-/check')
 const {
   getAllPropertyDescriptors,
   instanceMethodNamesFor,
-} = require('the-controller-mixins/lib/helpers')
-const { unlessProduction } = require('@the-/check')
+} = require('@the-/mixin-controller/lib/helpers')
 
 /** @lends toControllerModuleBind */
 function toControllerModuleBind(Class, options = {}) {

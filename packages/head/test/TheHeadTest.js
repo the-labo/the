@@ -4,19 +4,17 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheHead from '../lib/TheHead'
+const { ok } = require('assert').strict
+const React = require('react')
+const TheHead = require('../shim/TheHead').default
 
 describe('the-head', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Render a component', () => {
-    const element = render(<TheHead color='#38E' />)
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheHead))
   })
 })
 

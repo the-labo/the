@@ -12,6 +12,9 @@
   },
   "dependencies": {
     "@the-/check": "^15.0.2",
+    "@the-/hash": "^15.1.2",
+    "@the-/refresher": "^15.1.2",
+    "@the-/resource": "^15.1.2",
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.1",
     "asleep": "^1.0.3",

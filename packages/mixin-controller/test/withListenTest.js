@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const withListen = require('../lib/withListen')
-const { ok, equal } = require('assert')
-
 describe('with-listen', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

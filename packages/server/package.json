@@ -1,7 +1,7 @@
 {
   "name": "@the-/server",
   "description": "HTTP/RPC Server of the-framework",
-  "version": "15.1.2",
+  "version": "15.1.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,7 +13,10 @@
   "dependencies": {
     "@the-/cache": "^15.0.2",
     "@the-/check": "^15.0.2",
+    "@the-/controller": "^15.1.2",
+    "@the-/mixin-controller": "^2.1.5",
     "@the-/pack": "^15.0.2",
+    "@the-/stream": "^15.1.3",
     "@the-/tmp": "^15.0.2",
     "adigest": "^3.0.1",
     "aport": "^2.0.0",
@@ -28,8 +31,7 @@
     "socket.io": "^2.2.0",
     "socket.io-client": "^2.2.0",
     "socket.io-redis": "^5.2.0",
-    "stringcase": "^4.3.1",
-    "the-controller-mixins": "^2.1.4"
+    "stringcase": "^4.3.1"
   },
   "devDependencies": {
     "@the-/client": "file:../client",

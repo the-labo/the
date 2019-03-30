@@ -4,24 +4,19 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheIcon from '../lib/TheIcon'
+const TheIcon = require('../shim/TheIcon').default
+const React = require('react')
+const { ok, equal, deepEqual } = require('assert').strict
 
 describe('the-icon', () => {
-  before(() => {})
-
-  after(() => {})
-
-  it('Render a component', () => {
-    let element = render(<TheIcon />)
-    ok(element)
+  before(() => {
   })
 
-  it('Render a spin component', () => {
-    let element = render(<TheIcon.Spin />)
-    ok(element)
+  after(() => {
+  })
+
+  it('Do test', () => {
+    ok(React.createElement(TheIcon))
   })
 })
 

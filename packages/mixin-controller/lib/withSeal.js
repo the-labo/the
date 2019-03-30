@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { TheInvalidParameterError } = require('the-error')
+const { TheInvalidParameterError } = require('@the-/error')
 
 /** @lends withSeal */
 function withSeal(Class) {

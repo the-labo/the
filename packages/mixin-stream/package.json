@@ -12,8 +12,8 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "debug": "^4.0.1",
-    "the-check": "^2.0.8"
+    "@the-/check": "^15.1.2",
+    "debug": "^4.0.1"
   },
   "devDependencies": {
     "@the-/script-build": "file:../script-build",
@@ -25,7 +25,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/mixin-stream#readme",
   "keywords": [
     "mixin",
     "the"

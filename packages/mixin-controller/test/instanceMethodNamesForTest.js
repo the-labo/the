@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const instanceMethodNamesFor = require('../lib/helpers/instanceMethodNamesFor')
-const { ok, equal } = require('assert')
-
 describe('instance-method-names-for', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const withPreference = require('../lib/withPreference')
-const { ok, equal } = require('assert')
-
 describe('with-preference', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

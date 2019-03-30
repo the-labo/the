@@ -1,16 +1,14 @@
 'use strict'
 
-const {dir} = require('@the-/templates')
+const { dir } = require('@the-/templates')
 
-module.exports = [
-  true,
-].map((cjs) => ({
+module.exports = [true].map((cjs) => ({
   ...dir({
     cjs,
+    description: 'controller-mixin helpers',
     dirname: __dirname,
     name: 'helpers',
-    description: 'controller-mixin helpers'
-  })
+  }),
 }))
 
 if (!module.parent) {

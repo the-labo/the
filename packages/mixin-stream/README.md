@@ -67,10 +67,10 @@ Usage
 ```javascript
 'use strict'
 
-const {TheStream} = require('the-stream-base')
-const {withDebug} = require('@the-/mixin-stream')
+const { withDebug } = require('@the-/mixin-stream')
+const { TheStream } = require('@the-/stream')
 
-async function tryExample () {
+async function tryExample() {
   class MyStream extends withDebug(TheStream) {
     /* ... */
   }
@@ -89,6 +89,7 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
+- [@the-/mixin-stream](./doc/api/api.md#module_@the-/mixin-stream)
 
 
 <!-- Section from "doc/readme/03.API.md.hbs" End -->

@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const compose = require('../lib/compose')
-const { ok, equal } = require('assert')
-
 describe('compose', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

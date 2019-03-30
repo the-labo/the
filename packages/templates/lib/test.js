@@ -12,7 +12,14 @@ const _tmpl = require('./_tmpl')
 
 /** @lends test */
 function test(config) {
-  let { cjs = config.node, dest = process.cwd(), src } = config
+  let {
+    cjs = config.node,
+    content = () => '',
+    deps = {},
+    dest = process.cwd(),
+    src,
+    useDefault = false,
+  } = config
   const TMPL_PATH = cjs ? _tmpl('cjs_test.hbs') : _tmpl('test.hbs')
   ok(!!src, 'config.src is required.')
   return aglob
@@ -33,11 +40,15 @@ function test(config) {
       const suffix = 'Test'
       const name = String(basename)
       const varNameChanged = ['default'].includes(name)
+      const varName = varNameChanged ? name + '_' : name
       return {
         data: {
+          content: content({ name, varName }),
+          deps,
           name,
           relative: path.relative(dest, src).replace(extname, ''),
-          varName: varNameChanged ? name + '_' : name,
+          useDefault,
+          varName,
           varNameChanged,
         },
         force: false,
@@ -52,6 +63,8 @@ function test(config) {
 test.dir = function testDir(config) {
   const {
     cjs = config.node,
+    content = () => '',
+    deps = {},
     dest = process.cwd(),
     ext = cjs ? '.js' : '.mjs',
     src,
@@ -59,17 +72,22 @@ test.dir = function testDir(config) {
   const TMPL_PATH = cjs ? _tmpl('cjs_test.hbs') : _tmpl('test.hbs')
   ok(!!src, 'config.src is required.')
   let suffix = 'Test'
-  return [].concat(src).map((src) => ({
-    data: {
-      name: path.basename(src),
-      relative: path.relative(dest, src),
-    },
-    force: false,
-    mkdirp: true,
-    mode: '644',
-    path: path.resolve(dest, path.basename(src) + suffix) + ext,
-    tmpl: TMPL_PATH,
-  }))
+  return [].concat(src).map((src) => {
+    const name = path.basename(src)
+    return {
+      data: {
+        content: content({ name }),
+        deps,
+        name,
+        relative: path.relative(dest, src),
+      },
+      force: false,
+      mkdirp: true,
+      mode: '644',
+      path: path.resolve(dest, path.basename(src) + suffix) + ext,
+      tmpl: TMPL_PATH,
+    }
+  })
 }
 
 module.exports = test

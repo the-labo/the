@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { TheUnauthorizedError } = require('the-error')
+const { TheUnauthorizedError } = require('@the-/error')
 
 /** @lends withAuthorized */
 function withAuthorized(Class) {

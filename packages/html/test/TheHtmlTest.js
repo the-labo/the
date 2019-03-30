@@ -4,27 +4,17 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheHtml from '../lib/TheHtml'
+const { ok } = require('assert').strict
+const React = require('react')
+const TheHtml = require('../shim/TheHtml').default
 
 describe('the-html', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Render a component', () => {
-    let element = render(
-      <TheHtml>
-        <body>
-          <main>
-            <h1>Hoo</h1>
-          </main>
-        </body>
-      </TheHtml>,
-    )
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheHtml))
   })
 })
 

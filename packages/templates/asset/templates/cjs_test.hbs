@@ -4,7 +4,8 @@
  */
 'use strict'
 
-const {{varName}} = require('{{{relative}}}')
+const {{varName}} = require('{{{relative}}}'){{#if useDefault}}.default{{/if}}
+{{#each deps}}const {{@key}} = require('{{{this}}}'){{/each}}
 const { ok, equal, deepEqual } = require('assert').strict
 
 describe('{{spinalcase name}}', () => {
@@ -15,7 +16,7 @@ describe('{{spinalcase name}}', () => {
   })
 
   it('Do test', () => {
-
+    {{{content}}}
   })
 })
 

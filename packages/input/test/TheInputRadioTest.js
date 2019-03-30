@@ -4,19 +4,17 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheInputRadio from '../lib/TheInputRadio'
+const { ok } = require('assert').strict
+const React = require('react')
+const TheInputRadio = require('../shim/TheInputRadio').default
 
 describe('the-input-radio', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Render a component', () => {
-    let element = render(<TheInputRadio />)
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheInputRadio))
   })
 })
 

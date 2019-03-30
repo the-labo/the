@@ -4,19 +4,17 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheLinkStyle from '../lib/TheLinkStyle'
+const { ok } = require('assert').strict
+const React = require('react')
+const TheLinkStyle = require('../shim/TheLinkStyle').default
 
 describe('the-link-style', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Render a component', () => {
-    let element = render(<TheLinkStyle />)
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheLinkStyle))
   })
 })
 

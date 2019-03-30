@@ -2,66 +2,66 @@
 
 | Embed | Results |
 | ------- | ------  |
-| `random.number()` | 37151, 45926, 50687 |
-| `random.arrayElement()` | "b", "c", "a" |
-| `random.objectElement()` | "bar", "car", "bar" |
-| `random.uuid()` | "852fb34d-a968-4355-aa2c-5600603a7da8", "07462ff9-5100-4e99-89af-96dc431bdd8f", "3a442260-c7f7-4e4b-a920-2c2341342dcc" |
-| `random.boolean()` |  |
-| `random.word()` | "Egyptian Pound", "Refined", "Cheese" |
-| `random.words()` | "Consultant Burundi", "Money Market Account", "copying monitor B2C" |
-| `random.image()` | "http://lorempixel.com/640/480/sports", "http://lorempixel.com/640/480/technics", "http://lorempixel.com/640/480/fashion" |
-| `random.locale()` | "fr", "ru", "zh_TW" |
-| `random.alphaNumeric()` | "o", "d", "g" |
-| `name.firstName()` | "Dawson", "Earnestine", "Kevon" |
-| `name.lastName()` | "O'Keefe", "Powlowski", "Wisoky" |
-| `name.findName()` | "Javonte Bednar", "London Lockman", "Harvey Doyle" |
-| `name.jobTitle()` | "Future Communications Manager", "Dynamic Branding Officer", "Product Applications Administrator" |
-| `name.prefix()` | "Miss", "Dr.", "Mrs." |
-| `name.suffix()` | "PhD", "II", "Sr." |
-| `name.title()` | "District Assurance Developer", "Chief Applications Analyst", "Internal Mobility Coordinator" |
-| `name.jobDescriptor()` | "Regional", "Central", "Central" |
-| `name.jobArea()` | "Research", "Markets", "Interactions" |
-| `name.jobType()` | "Strategist", "Associate", "Engineer" |
-| `address.zipCode()` | "64216-6183", "11300", "53885" |
-| `address.city()` | "Uptonberg", "Lanebury", "North Taurean" |
-| `address.cityPrefix()` | "East", "East", "South" |
-| `address.citySuffix()` | "port", "burgh", "view" |
-| `address.streetName()` | "Cydney Forge", "Stiedemann Springs", "Satterfield Orchard" |
-| `address.streetAddress()` | "6140 Kyle Flat", "27248 Quitzon Points", "459 Fahey Hill" |
-| `address.streetSuffix()` | "Trail", "Plains", "Burg" |
-| `address.streetPrefix()` | "a", "b", "b" |
-| `address.secondaryAddress()` | "Apt. 347", "Suite 077", "Apt. 698" |
-| `address.county()` | "Bedfordshire", "Cambridgeshire", "Bedfordshire" |
-| `address.country()` | "Colombia", "Afghanistan", "Jersey" |
-| `address.countryCode()` | "AZ", "NP", "NR" |
-| `address.state()` | "Oklahoma", "Nevada", "Kentucky" |
-| `address.stateAbbr()` | "CO", "KY", "MI" |
-| `address.latitude()` | "-32.4521", "-36.2554", "-37.2498" |
-| `address.longitude()` | "-113.1792", "151.8191", "-126.2454" |
+| `random.number()` | 91989, 20664, 7806 |
+| `random.arrayElement()` | "c", "a", "b" |
+| `random.objectElement()` | "car", "car", "bar" |
+| `random.uuid()` | "0d35801f-e3a7-4bb7-9584-582ee11f47a3", "44e298dc-f91a-4ba8-b1f5-e7e5eb3f280c", "84dd68c4-1f69-4640-9f5d-38fa17321c1a" |
+| `random.boolean()` | true, true |
+| `random.word()` | "end-to-end", "e-services", "matrix" |
+| `random.words()` | "Indiana Legacy", "Kazakhstan Officer Samoa", "application synergies web-readiness" |
+| `random.image()` | "http://lorempixel.com/640/480/sports", "http://lorempixel.com/640/480/fashion", "http://lorempixel.com/640/480/nature" |
+| `random.locale()` | "sv", "nep", "sv" |
+| `random.alphaNumeric()` | "8", "6", "m" |
+| `name.firstName()` | "Francesca", "Enrique", "Cordia" |
+| `name.lastName()` | "Ratke", "Altenwerth", "McLaughlin" |
+| `name.findName()` | "Magali Emmerich", "Axel Cormier", "Neva Howe III" |
+| `name.jobTitle()` | "Lead Assurance Officer", "Future Usability Agent", "Chief Operations Manager" |
+| `name.prefix()` | "Miss", "Mrs.", "Miss" |
+| `name.suffix()` | "PhD", "IV", "DVM" |
+| `name.title()` | "National Creative Designer", "Corporate Operations Designer", "Lead Integration Planner" |
+| `name.jobDescriptor()` | "Principal", "Internal", "National" |
+| `name.jobArea()` | "Communications", "Assurance", "Markets" |
+| `name.jobType()` | "Engineer", "Assistant", "Analyst" |
+| `address.zipCode()` | "09400-5218", "62562", "28317" |
+| `address.city()` | "Parisview", "North Alexandrea", "Eliseoside" |
+| `address.cityPrefix()` | "South", "Port", "North" |
+| `address.citySuffix()` | "burgh", "port", "furt" |
+| `address.streetName()` | "Burdette Overpass", "Cierra Courts", "Missouri Heights" |
+| `address.streetAddress()` | "5128 Jaqueline Way", "80484 Elwin Summit", "606 Treutel Hills" |
+| `address.streetSuffix()` | "Well", "Throughway", "Islands" |
+| `address.streetPrefix()` | "c", "a", "a" |
+| `address.secondaryAddress()` | "Suite 876", "Suite 289", "Apt. 299" |
+| `address.county()` | "Berkshire", "Buckinghamshire", "Berkshire" |
+| `address.country()` | "Montserrat", "Aruba", "Djibouti" |
+| `address.countryCode()` | "KG", "SZ", "TG" |
+| `address.state()` | "Mississippi", "South Carolina", "Oklahoma" |
+| `address.stateAbbr()` | "MO", "SC", "FL" |
+| `address.latitude()` | "-26.5859", "-42.8531", "-82.4204" |
+| `address.longitude()` | "-104.6927", "167.7737", "173.2924" |
 | `company.suffixes()` | ["Inc","and Sons","LLC","Group"], ["Inc","and Sons","LLC","Group"], ["Inc","and Sons","LLC","Group"] |
-| `company.companyName()` | "Dach LLC", "Beatty - Beier", "Harber - Schmeler" |
-| `company.companySuffix()` | "Inc", "Group", "Inc" |
-| `company.catchPhrase()` | "Team-oriented next generation protocol", "Customizable real-time internet solution", "Triple-buffered contextually-based local area network" |
-| `company.bs()` | "synergistic aggregate metrics", "synergistic integrate portals", "visionary reintermediate relationships" |
-| `company.catchPhraseAdjective()` | "Adaptive", "Inverse", "User-centric" |
-| `company.catchPhraseDescriptor()` | "object-oriented", "background", "24/7" |
-| `company.catchPhraseNoun()` | "open system", "benchmark", "alliance" |
-| `company.bsAdjective()` | "proactive", "e-business", "turn-key" |
-| `company.bsBuzz()` | "repurpose", "architect", "maximize" |
-| `company.bsNoun()` | "systems", "e-business", "functionalities" |
-| `finance.account()` | "74673576", "69726115", "98372637" |
-| `finance.accountName()` | "Credit Card Account", "Savings Account", "Money Market Account" |
-| `finance.mask()` | "3244", "6560", "7145" |
-| `finance.amount()` | "947.06", "84.23", "19.78" |
-| `finance.transactionType()` | "deposit", "withdrawal", "payment" |
-| `finance.currencyCode()` | "FKP", "RON", "MGA" |
-| `finance.currencyName()` | "Yen", "Tugrik", "Iraqi Dinar" |
-| `finance.currencySymbol()` | "Bs", "₩", "kr" |
-| `finance.bitcoinAddress()` | "3GG2IJ461Z96Z90RD5Z5F396O4OYK", "3FRSV94MJ5CGMCSENAVKV2EPTGXMG2ELEK", "3HLQW7AD39K3Z08CFGGBKH6WWXDKOABNEZ" |
-| `finance.iban()` | "BE88038600220031", "GR251030078GQF938CQ0549Y253", "TR9443032968258GDW9B7N1119" |
-| `finance.bic()` | "YCIIMVX1", "ULTUNAO1196", "AMLEEAQ1" |
-| `image.image()` | "http://lorempixel.com/640/480/food", "http://lorempixel.com/640/480/nightlife", "http://lorempixel.com/640/480/technics" |
-| `image.avatar()` | "https://s3.amazonaws.com/uifaces/faces/twitter/nitinhayaran/128.jpg", "https://s3.amazonaws.com/uifaces/faces/twitter/gonzalorobaina/128.jpg", "https://s3.amazonaws.com/uifaces/faces/twitter/marlinjayakody/128.jpg" |
+| `company.companyName()` | "Paucek - Kiehn", "Lehner - Weber", "Schuppe - Swift" |
+| `company.companySuffix()` | "Inc", "and Sons", "and Sons" |
+| `company.catchPhrase()` | "Grass-roots leading edge productivity", "Secured hybrid approach", "Streamlined uniform emulation" |
+| `company.bs()` | "innovative extend niches", "seamless deliver users", "global expedite ROI" |
+| `company.catchPhraseAdjective()` | "Stand-alone", "Open-architected", "Public-key" |
+| `company.catchPhraseDescriptor()` | "intermediate", "hybrid", "5th generation" |
+| `company.catchPhraseNoun()` | "groupware", "functionalities", "concept" |
+| `company.bsAdjective()` | "24/365", "viral", "synergistic" |
+| `company.bsBuzz()` | "optimize", "brand", "implement" |
+| `company.bsNoun()` | "supply-chains", "systems", "action-items" |
+| `finance.account()` | "84462836", "04005994", "60390088" |
+| `finance.accountName()` | "Auto Loan Account", "Credit Card Account", "Savings Account" |
+| `finance.mask()` | "0095", "3458", "5419" |
+| `finance.amount()` | "332.48", "831.44", "127.80" |
+| `finance.transactionType()` | "deposit", "deposit", "deposit" |
+| `finance.currencyCode()` | "IRR", "USD", "KGS" |
+| `finance.currencyName()` | "Tugrik", "Rand Loti", "Aruban Guilder" |
+| `finance.currencySymbol()` | "$", "₴", "฿" |
+| `finance.bitcoinAddress()` | "1ORH571XFY1LHOSBWDP3W8KEENYI", "1GTT5475YCPJRKEP6K4ZHVLKCUBVMEIEF", "3Z30E44PC6LOBKWB83R03O3F3CH" |
+| `finance.iban()` | "JO53RUFU0479009675605530093048", "BR6390042301600400900604372IW", "GB53LGJV76005639477739" |
+| `finance.bic()` | "SOBESJU1", "VRPOBWB1", "PWAUDDR1801" |
+| `image.image()` | "http://lorempixel.com/640/480/transport", "http://lorempixel.com/640/480/business", "http://lorempixel.com/640/480/sports" |
+| `image.avatar()` | "https://s3.amazonaws.com/uifaces/faces/twitter/lmjabreu/128.jpg", "https://s3.amazonaws.com/uifaces/faces/twitter/davidcazalis/128.jpg", "https://s3.amazonaws.com/uifaces/faces/twitter/xravil/128.jpg" |
 | `image.imageUrl()` | "http://lorempixel.com/640/480", "http://lorempixel.com/640/480", "http://lorempixel.com/640/480" |
 | `image.abstract()` | "http://lorempixel.com/640/480/abstract", "http://lorempixel.com/640/480/abstract", "http://lorempixel.com/640/480/abstract" |
 | `image.animals()` | "http://lorempixel.com/640/480/animals", "http://lorempixel.com/640/480/animals", "http://lorempixel.com/640/480/animals" |
@@ -77,63 +77,63 @@
 | `image.technics()` | "http://lorempixel.com/640/480/technics", "http://lorempixel.com/640/480/technics", "http://lorempixel.com/640/480/technics" |
 | `image.transport()` | "http://lorempixel.com/640/480/transport", "http://lorempixel.com/640/480/transport", "http://lorempixel.com/640/480/transport" |
 | `image.dataUri()` | "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20baseProfile%3D%22full%22%20width%3D%22undefined%22%20height%3D%22undefined%22%3E%20%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22..., "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20baseProfile%3D%22full%22%20width%3D%22undefined%22%20height%3D%22undefined%22%3E%20%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22..., "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20baseProfile%3D%22full%22%20width%3D%22undefined%22%20height%3D%22undefined%22%3E%20%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22... |
-| `lorem.word()` | "odit", "suscipit", "dolorem" |
-| `lorem.words()` | "eaque nihil qui", "debitis doloribus molestiae", "ad quos sed" |
-| `lorem.sentence()` | "Sapiente sit ex.", "Ut et sunt eaque libero similique eum.", "Adipisci dicta quaerat nisi ut vel." |
-| `lorem.slug()` | "at-et-minima", "possimus-vero-et", "assumenda-voluptas-quidem" |
-| `lorem.sentences()` | "Alias eum voluptatem voluptatum labore. Aliquid qui nihil saepe at voluptatem iure. Dolorem autem placeat velit quae placeat aut quisquam beatae. Aut sunt tenetur vel quia eum ipsa ut.", "Perspiciatis sapiente blanditiis. Velit ex quaerat id.", "Voluptates distinctio eum voluptate perferendis quae aliquid veniam cupiditate illo. Rerum sed dolorem. Voluptatem vero voluptatem quisquam voluptates. Aspernatur expedita voluptas sit. Officiis harum aut deserunt similique aliquam ut voluptas odio illo.... |
-| `lorem.paragraph()` | "Veniam nihil saepe atque ab modi dignissimos soluta. Recusandae quia hic laboriosam aut amet et eius odio. Ut adipisci qui consequatur occaecati sunt et architecto.", "Ducimus reiciendis qui porro error non neque velit deserunt est. Debitis veniam aut. Iusto sit repellendus. Magnam et eaque alias animi et aut.", "Animi sint vel. Exercitationem quod eaque quae. Doloremque eaque dignissimos voluptatem dolorem. Sed ut quae eveniet reprehenderit adipisci quia consequuntur asperiores voluptatem. Quisquam id libero ea iusto." |
-| `lorem.paragraphs()` | "Officia magnam aliquam qui. Sed at soluta fugiat enim suscipit nihil. Voluptas iusto delectus.\n \rPerspiciatis omnis sunt aliquid doloribus. Non eligendi quidem ut consectetur dicta id corrupti. Ea illum aut dolore quibusdam. Sunt sed cupiditate ducimus..., "Beatae ipsum aut suscipit sapiente animi sed et. Ratione recusandae provident eligendi omnis. Facere velit sed iusto voluptates. Maxime itaque dolor reprehenderit illo.\n \rCupiditate suscipit amet molestiae consectetur quaerat. Illum sed possimus quia s..., "Voluptates aspernatur fugit repellat aut voluptatem et. Cumque nemo doloribus rerum ipsum esse et aperiam ipsam. Sint eos ad consequuntur sint eum corrupti consequatur earum consequatur. Adipisci reprehenderit odio ipsa autem. Praesentium iure aut.\n \rA... |
-| `lorem.text()` | "Doloremque culpa odio voluptatem quo placeat voluptatem voluptate.\nDolor quae at sequi aut accusamus optio.", "Esse quia ut aspernatur rerum voluptas. Tempore aspernatur non facere qui maxime quo veniam aut ea. Sed eum quisquam deleniti velit facere vel nemo occaecati eligendi. Dolor aperiam incidunt quae laboriosam nihil quibusdam nisi. Ipsa ut hic eos omnis.\n ..., "possimus" |
-| `lorem.lines()` | "Dicta deleniti architecto eveniet aut maiores dignissimos laborum.\nAliquam omnis tenetur tempora esse quia omnis eligendi.\nSit sit voluptates aut.", "Sed distinctio veritatis ab et alias qui aspernatur sunt cumque.\nNulla blanditiis possimus animi eum quibusdam beatae exercitationem explicabo.\nModi sapiente unde et.", "Et omnis ipsam exercitationem.\nAsperiores suscipit quia aperiam odio mollitia eaque.\nUt atque sunt nihil.\nDolor iste dolores dolorem minima iste sit." |
-| `hacker.abbreviation()` | "AGP", "HDD", "ADP" |
-| `hacker.adjective()` | "virtual", "haptic", "auxiliary" |
-| `hacker.noun()` | "circuit", "bandwidth", "bus" |
-| `hacker.verb()` | "program", "index", "compress" |
-| `hacker.ingverb()` | "hacking", "copying", "synthesizing" |
-| `hacker.phrase()` | "You can't index the sensor without navigating the redundant SAS protocol!", "If we back up the hard drive, we can get to the JSON circuit through the solid state TCP driver!", "Use the redundant CSS alarm, then you can copy the cross-platform microchip!" |
-| `internet.avatar()` | "https://s3.amazonaws.com/uifaces/faces/twitter/brandonmorreale/128.jpg", "https://s3.amazonaws.com/uifaces/faces/twitter/sindresorhus/128.jpg", "https://s3.amazonaws.com/uifaces/faces/twitter/mgonto/128.jpg" |
-| `internet.email()` | "Geoffrey_Walker8@yahoo.com", "Angus.Feest@gmail.com", "Linnea_Harber@gmail.com" |
-| `internet.exampleEmail()` | "Grady_Schamberger54@example.net", "Lilliana_Zulauf88@example.org", "Providenci_Collier@example.org" |
-| `internet.userName()` | "Cierra_Harris50", "Jacinto.Kihn", "Chloe_Bergnaum" |
-| `internet.protocol()` | "https", "http", "https" |
-| `internet.url()` | "http://damion.info", "https://darby.info", "https://dasia.biz" |
-| `internet.domainName()` | "eulah.org", "bonnie.com", "kaylin.biz" |
-| `internet.domainSuffix()` | "name", "name", "biz" |
-| `internet.domainWord()` | "taurean", "carissa", "lisette" |
-| `internet.ip()` | "157.28.138.130", "133.4.144.135", "225.1.199.139" |
-| `internet.ipv6()` | "b29f:f878:cf43:2939:b1b2:c2ce:dcd8:cc7a", "339f:8e70:9d86:8295:40dc:f7e9:7a96:4ad2", "c3b9:7888:36f7:e329:1563:dc67:00e7:4658" |
-| `internet.userAgent()` | "Mozilla/5.0 (Windows NT 6.2; Trident/7.0; rv:11.0) like Gecko", "Mozilla/5.0 (Windows NT 5.1; rv:10.3) Gecko/20100101 Firefox/10.3.3", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:14.3) Gecko/20100101 Firefox/14.3.3" |
-| `internet.color()` | "#7f6b09", "#766458", "#6e5674" |
-| `internet.mac()` | "a2:9e:6e:cc:90:a5", "8e:ef:8b:ef:90:ef", "37:26:60:e2:82:e7" |
-| `internet.password()` | "AJV4WQbisZ0shxg", "URzvrCwc2LNXjFt", "owBDWSL6bROaz5y" |
-| `database.column()` | "email", "status", "category" |
-| `database.type()` | "real", "tinyint", "mediumint" |
-| `database.collation()` | "utf8_bin", "utf8_unicode_ci", "ascii_bin" |
-| `database.engine()` | "InnoDB", "ARCHIVE", "CSV" |
-| `phone.phoneNumber()` | "(264) 911-8989 x05923", "1-587-959-4842 x7405", "1-265-353-0755" |
-| `phone.phoneNumberFormat()` | "986-049-5114", "981-623-0488", "954-854-6293" |
-| `phone.phoneFormats()` | "###.###.#### x#####", "(###) ###-#### x###", "###.###.####" |
-| `date.past()` | "2018-09-24T22:23:29.006Z", "2018-05-23T01:06:50.855Z", "2018-10-06T11:18:00.319Z" |
-| `date.future()` | "2020-01-28T11:44:56.841Z", "2019-10-06T11:38:34.778Z", "2020-02-18T10:56:40.212Z" |
+| `lorem.word()` | "dolor", "et", "accusantium" |
+| `lorem.words()` | "non laborum aut", "error aperiam qui", "voluptate ut non" |
+| `lorem.sentence()` | "Facere omnis enim animi et alias ex dolor.", "Enim repellendus sit.", "Sequi saepe consequatur qui quia fugiat placeat." |
+| `lorem.slug()` | "voluptatem-ipsum-quia", "sint-aut-labore", "ut-minima-sint" |
+| `lorem.sentences()` | "Autem deserunt facilis. In omnis tenetur sunt voluptates quibusdam. Blanditiis hic quae. Vel et quasi est beatae. Enim unde iure non similique ut sed.", "Qui sequi nulla qui pariatur quos atque sunt. Officiis autem quis. Quidem nobis voluptatem velit nisi saepe. Dolorum quam eligendi unde. Architecto est nihil aut.", "Soluta cupiditate molestiae voluptatem expedita iure labore nisi ut. Natus eius adipisci qui. Et officiis ducimus ullam amet sed cupiditate minus explicabo. Excepturi non excepturi sunt qui consequatur. Doloribus delectus voluptatem. Suscipit officiis bl... |
+| `lorem.paragraph()` | "Veniam iure excepturi voluptas perferendis facere est tempora. Magni sequi minima ipsa consequatur enim deserunt nihil aut. Nam et rem vero delectus odit voluptate harum. Et fugiat iure praesentium ipsa veniam id ut. Et dolore reprehenderit beatae modi a..., "Voluptatem voluptatem suscipit omnis dolorum molestiae in. Quo ullam deleniti consectetur. Aut maiores est consectetur. Aut officia dolorum adipisci quo fuga. Et ducimus ad non rerum maxime deleniti.", "Adipisci quo commodi qui omnis est odio nobis. Officia ullam et qui non corrupti omnis culpa quod iusto. Aspernatur officia minima est qui fugiat repudiandae quam ipsum vel. Totam omnis dolor iste deleniti provident. Est sit facere." |
+| `lorem.paragraphs()` | "Et sapiente reiciendis. Dolorum est iure. Harum aperiam minus tempore minus recusandae veritatis ea. Soluta saepe molestias sunt.\n \rNemo at sapiente aspernatur officiis quidem. Iusto fuga dolore perspiciatis dolores porro. Voluptatibus consequatur sit...., "Quo numquam sed exercitationem quibusdam. Harum occaecati id eveniet. Sequi architecto ut necessitatibus. Et voluptates optio quibusdam exercitationem totam molestiae magnam ut deserunt.\n \rNihil omnis voluptate ipsam sed labore nemo blanditiis. Eveniet..., "Omnis ipsam quidem autem adipisci fuga consectetur vel quia enim. Architecto nam magni eius impedit aut. Voluptate eos maxime inventore laboriosam qui ea qui reprehenderit. Minima autem aspernatur. Eius dolorum tempore dolores rem reiciendis saepe aut co... |
+| `lorem.text()` | "Error dolore amet labore natus assumenda.\nMollitia cum in ratione error laboriosam minus cumque neque.", "ut rerum odit", "Labore ut quia ea assumenda. Laborum omnis iusto voluptatem dolorum dolores eius animi ad soluta. Eveniet animi repellendus magni. Vitae molestiae voluptatem a blanditiis debitis consectetur aut est. Quo sint rerum." |
+| `lorem.lines()` | "Amet cupiditate et dolor provident sit non repellat accusantium numquam.", "Consequatur est eos.\nSit occaecati placeat rerum.\nCumque eaque recusandae libero nam molestias soluta tempora non.\nLibero tempore nemo omnis dolor.\nDucimus laborum dolores odit quasi.", "Dolorem exercitationem adipisci et nemo itaque.\nSit minus enim magnam est.\nConsequatur pariatur sed beatae qui est numquam dolorem.\nAlias et sint minima consequatur minima magni quo." |
+| `hacker.abbreviation()` | "EXE", "XML", "SMS" |
+| `hacker.adjective()` | "digital", "bluetooth", "virtual" |
+| `hacker.noun()` | "capacitor", "sensor", "array" |
+| `hacker.verb()` | "compress", "parse", "hack" |
+| `hacker.ingverb()` | "parsing", "overriding", "hacking" |
+| `hacker.phrase()` | "Try to input the RSS card, maybe it will generate the bluetooth hard drive!", "programming the protocol won't do anything, we need to transmit the cross-platform JBOD card!", "overriding the card won't do anything, we need to program the primary SAS matrix!" |
+| `internet.avatar()` | "https://s3.amazonaws.com/uifaces/faces/twitter/mohanrohith/128.jpg", "https://s3.amazonaws.com/uifaces/faces/twitter/deeenright/128.jpg", "https://s3.amazonaws.com/uifaces/faces/twitter/vitorleal/128.jpg" |
+| `internet.email()` | "Erin14@hotmail.com", "Zander.Hettinger@yahoo.com", "Sienna33@gmail.com" |
+| `internet.exampleEmail()` | "Sheridan.Satterfield87@example.org", "Dahlia_Sanford22@example.net", "Edward_Ondricka45@example.com" |
+| `internet.userName()` | "Desmond27", "Phyllis.Ledner", "Amber.Shields37" |
+| `internet.protocol()` | "https", "https", "https" |
+| `internet.url()` | "http://duncan.com", "http://terrence.net", "https://kyla.net" |
+| `internet.domainName()` | "garland.name", "uriah.net", "merl.name" |
+| `internet.domainSuffix()` | "name", "net", "info" |
+| `internet.domainWord()` | "casper", "filiberto", "emely" |
+| `internet.ip()` | "182.187.16.86", "93.221.61.42", "126.140.109.0" |
+| `internet.ipv6()` | "b10e:d89c:a849:1489:cabd:a7e5:851c:e6a3", "c772:9d63:8233:1d2d:e3cf:7d8f:f05a:98d8", "7d59:efe8:d616:f8de:2b21:62e6:4ebd:b77e" |
+| `internet.userAgent()` | "Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko", "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident/7.0; .NET CLR 3.1.59071.2)", "Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.0; Trident/3.1)" |
+| `internet.color()` | "#206912", "#2f684d", "#1d5e4c" |
+| `internet.mac()` | "1c:95:e1:50:bd:63", "7d:a6:22:bd:53:ed", "f3:b3:ac:b6:63:b5" |
+| `internet.password()` | "g_X0OZD7UhkcEod", "0r1CM5q0MlpOJPN", "8J0q8mLjax6ZD6D" |
+| `database.column()` | "password", "createdAt", "phone" |
+| `database.type()` | "geometry", "binary", "blob" |
+| `database.collation()` | "utf8_unicode_ci", "utf8_unicode_ci", "ascii_general_ci" |
+| `database.engine()` | "MEMORY", "MyISAM", "ARCHIVE" |
+| `phone.phoneNumber()` | "1-487-578-6957", "(396) 313-1110", "(680) 607-9671" |
+| `phone.phoneNumberFormat()` | "502-512-1716", "733-074-0420", "576-492-2695" |
+| `phone.phoneFormats()` | "(###) ###-####", "1-###-###-#### x###", "###.###.#### x###" |
+| `date.past()` | "2018-11-14T20:14:32.309Z", "2018-04-19T03:20:40.509Z", "2018-04-07T09:50:47.093Z" |
+| `date.future()` | "2019-09-02T22:23:52.328Z", "2019-05-28T13:45:25.480Z", "2019-06-21T04:37:25.243Z" |
 | `date.between()` | null, null, null |
-| `date.recent()` | "2019-03-29T12:57:37.347Z", "2019-03-29T07:53:07.425Z", "2019-03-29T04:29:26.735Z" |
-| `date.month()` | "February", "June", "September" |
-| `date.weekday()` | "Friday", "Sunday", "Tuesday" |
-| `commerce.color()` | "fuchsia", "sky blue", "tan" |
-| `commerce.department()` | "Electronics", "Garden", "Automotive" |
-| `commerce.productName()` | "Generic Rubber Ball", "Licensed Concrete Bike", "Practical Granite Fish" |
-| `commerce.price()` | "171.00", "524.00", "669.00" |
-| `commerce.productAdjective()` | "Licensed", "Tasty", "Small" |
-| `commerce.productMaterial()` | "Soft", "Granite", "Steel" |
-| `commerce.product()` | "Soap", "Shirt", "Ball" |
-| `system.fileName()` | "sensor.flx", "cheese.umj", "silver_global_baby.me" |
-| `system.commonFileName()` | "small_deploy_payment.mpe", "bandwidth_transitional_integration.gif", "multi_byte_yemen.gif" |
-| `system.mimeType()` | "video/1d-interleaved-parityfec", "application/patch-ops-error+xml", "audio/mobile-xmf" |
-| `system.commonFileType()` | "video", "image", "video" |
-| `system.commonFileExt()` | "shtml", "wav", "m2v" |
-| `system.fileType()` | "x-shader", "model", "multipart" |
-| `system.fileExt()` | "dms", "gtar", "pkg" |
+| `date.recent()` | "2019-03-30T00:04:33.969Z", "2019-03-29T19:44:04.908Z", "2019-03-29T16:48:47.822Z" |
+| `date.month()` | "May", "May", "September" |
+| `date.weekday()` | "Friday", "Wednesday", "Friday" |
+| `commerce.color()` | "orange", "ivory", "tan" |
+| `commerce.department()` | "Garden", "Industrial", "Beauty" |
+| `commerce.productName()` | "Unbranded Rubber Salad", "Intelligent Steel Tuna", "Handmade Metal Chicken" |
+| `commerce.price()` | "269.00", "903.00", "529.00" |
+| `commerce.productAdjective()` | "Rustic", "Small", "Unbranded" |
+| `commerce.productMaterial()` | "Fresh", "Concrete", "Granite" |
+| `commerce.product()` | "Salad", "Gloves", "Chips" |
+| `system.fileName()` | "chief_investment_account.xfdl", "intranet_pike_accountability.dist", "rustic_withdrawal_awesome.cc" |
+| `system.commonFileName()` | "web_services.gif", "niches.png", "rapids_new_hampshire_auto_loan_account.pdf" |
+| `system.mimeType()` | "application/edi-x12", "application/soap+fastinfoset", "application/x-java-jnlp-file" |
+| `system.commonFileType()` | "audio", "text", "text" |
+| `system.commonFileExt()` | "html", "htm", "m2a" |
+| `system.fileType()` | "video", "audio", "model" |
+| `system.fileExt()` | "sdd", "uvh", "gram" |
 | `system.directoryPath()` |  |
 | `system.filePath()` |  |
-| `system.semver()` | "4.6.0", "4.2.4", "0.8.7" |
+| `system.semver()` | "2.6.9", "5.5.6", "8.7.2" |
