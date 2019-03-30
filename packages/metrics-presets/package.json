@@ -1,7 +1,7 @@
 {
   "name": "@the-/metrics-presets",
   "description": "Preset of the-metrics",
-  "version": "15.1.3",
+  "version": "15.1.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -31,7 +31,7 @@
   "license": "MIT",
   "main": "lib",
   "peerDependencies": {
-    "the-metrics": ">=1"
+    "@the-/metrics": ">=15"
   },
   "publishConfig": {
     "access": "public"

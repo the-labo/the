@@ -77,6 +77,8 @@ var/
 /packages/hash/lib/index.js
 /packages/head/doc/demo/bundle.js
 /packages/head/lib/index.jsx
+/packages/header/doc/demo/bundle.js
+/packages/header/lib/index.jsx
 /packages/html/doc/demo/bundle.js
 /packages/html/lib/index.jsx
 /packages/icon/doc/demo/bundle.js
@@ -107,6 +109,7 @@ var/
 /packages/metrics/lib/index.js
 /packages/mixin-controller/lib/helpers/index.js
 /packages/mixin-controller/lib/index.js
+/packages/mixin-scene/lib/index.js
 /packages/mixin-stream/lib/index.js
 /packages/pack/lib/index.js
 /packages/pager/doc/demo/bundle.js
@@ -128,8 +131,6 @@ var/
 /packages/route/lib/index.js
 /packages/route/lib/index.jsx
 /packages/router/doc/demo/bundle.js
-/packages/router/lib/index.js
-/packages/router/lib/index.jsx
 /packages/run/lib/index.js
 /packages/s3/lib/index.js
 /packages/scene/lib/index.js

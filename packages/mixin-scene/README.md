@@ -67,8 +67,8 @@ Usage
 ```javascript
 'use strict'
 
-const {withBusy} = require('the-scene-mixins')
-const {TheScene} = require('the-scene-base')
+const {withBusy} = require('@the-/mixin-scene')
+const {TheScene} = require('@the-/scene')
 
 async function tryExample () {
   const MyScene = withBusy(
