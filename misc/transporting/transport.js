@@ -176,7 +176,7 @@ const _removeDevDeps = async (baseDir, names) => {
           ({ devDependencies = {}, peerDependencies = {}, scripts = {} }) => {
             scripts.doc = 'the-script-doc'
             scripts.build = 'the-script-build'
-            scripts.test = 'the-script-build'
+            scripts.test = 'the-script-test'
             scripts.prepare = 'npm run build && npm run doc'
             delete scripts.share
             delete scripts.buid
@@ -187,8 +187,10 @@ const _removeDevDeps = async (baseDir, names) => {
               demoComponentPkg.devDependencies['react-dom']
             devDependencies['react-router-dom'] =
               demoComponentPkg.devDependencies['react-router-dom']
+            if(name !== '@the-/router'){
             devDependencies['@the-/router'] =
               demoComponentPkg.devDependencies['@the-/router']
+            }
             peerDependencies['react'] =
               demoComponentPkg.peerDependencies['react']
             peerDependencies['react-dom'] =
@@ -204,7 +206,6 @@ const _removeDevDeps = async (baseDir, names) => {
             '@the-/templates': 'file:../templates',
           })
         }
-        await _removeDevDeps(toDir, ['coz'])
         await _addDevDeps(toDir, {
           '@the-/component-demo': 'file:../component-demo',
           coz: '*',
@@ -218,12 +219,14 @@ const _removeDevDeps = async (baseDir, names) => {
           )
         }
       }
-      if (['lib', 'util', 'mixins'].includes(kind)) {
+      if (['lib', 'util', 'mixin'].includes(kind)) {
         const demoLibDir = path.resolve(baseDir, 'packages', 'demo-lib')
         rimraf.sync(path.resolve(toDir, 'doc/readme'))
         await copyDirAsync(`${demoLibDir}/doc/readme`, `${toDir}/doc/readme`)
         await unlink(path.resolve(toDir, 'lib/.index.bud')).catch(() => null)
-        await unlink(path.resolve(toDir, 'shim/esm/index.mjs')).catch(() => null)
+        await unlink(path.resolve(toDir, 'shim/esm/index.mjs')).catch(
+          () => null,
+        )
         await _copyFiles(demoLibDir, toDir, [
           'doc/links.json',
           'doc/overview.md',
@@ -235,7 +238,7 @@ const _removeDevDeps = async (baseDir, names) => {
         await _rewritePkg(toDir, ({ scripts = {} }) => {
           scripts.doc = 'the-script-doc'
           scripts.build = 'the-script-build'
-          scripts.test = 'the-script-build'
+          scripts.test = 'the-script-test'
           scripts.prepare = 'npm run build && npm run doc'
           delete scripts.share
           delete scripts.buid

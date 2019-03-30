@@ -3,12 +3,9 @@
  */
 'use strict'
 
-const { test } = require('@the-/templates')
+const { Test } = require('@the-/templates/presets/component')
 
-module.exports = test({
-  dest: __dirname,
-  src: [`${__dirname}/../lib/**/*.jsx`],
-})
+module.exports = Test(__dirname)
 
 if (!module.parent) {
   require('coz').render(__filename)

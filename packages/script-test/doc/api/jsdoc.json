@@ -5,7 +5,7 @@
     "name": "@the-/script-test",
     "kind": "module",
     "description": "Test script for the-project",
-    "version": "15.0.3",
+    "version": "15.1.2",
     "meta": {
       "lineno": 1,
       "filename": "index.js",

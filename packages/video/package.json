@@ -1,7 +1,7 @@
 {
   "name": "@the-/video",
   "description": "Video for the-components",
-  "version": "15.0.4",
+  "version": "15.1.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "@babel/runtime": "^7.4.2",
     "@the-/component-demo": "file:../component-demo",
+    "@the-/router": "^15.1.3",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
@@ -36,7 +37,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/video#readme",
   "keywords": [
     "component",
     "the"
@@ -55,7 +56,7 @@
     "build": "the-script-build",
     "doc": "the-script-doc",
     "prepare": "npm run build && npm run doc",
-    "test": "the-script-build",
+    "test": "the-script-test",
     "watch": "the-script-build -w"
   }
 }

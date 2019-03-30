@@ -1,7 +1,7 @@
 {
   "name": "@the-/scene",
   "description": "Base class of the-scene",
-  "version": "15.0.5",
+  "version": "15.1.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -49,7 +49,7 @@
     "build": "the-script-build",
     "doc": "the-script-doc",
     "prepare": "npm run build && npm run doc",
-    "test": "the-script-build",
+    "test": "the-script-test",
     "watch": "the-script-build -w"
   }
 }

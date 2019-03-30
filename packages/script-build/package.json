@@ -1,7 +1,7 @@
 {
   "name": "@the-/script-build",
   "description": "Build script for the-projects",
-  "version": "15.0.5",
+  "version": "15.1.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -21,11 +21,11 @@
     "@babel/plugin-proposal-optional-chaining": "^7.2.0",
     "@babel/plugin-transform-runtime": "^7.4.0",
     "@babel/polyfill": "^7.4.0",
-    "@babel/preset-env": "^7.4.1",
+    "@babel/preset-env": "^7.4.2",
     "@babel/preset-react": "7.0.0",
-    "@babel/runtime": "^7.4.0",
+    "@babel/runtime": "^7.4.2",
     "@okunishinishi/fixpack": "^3.0.1",
-    "@the-/code": "^15.0.2",
+    "@the-/code": "^15.1.1",
     "ababel": "^6.0.0",
     "aglob": "^3.0.1",
     "argx": "^4.0.0",
@@ -41,13 +41,13 @@
     "webpack": "^4.29.6"
   },
   "devDependencies": {
-    "@the-/ast": "^15.0.3",
-    "@the-/script-doc": "^15.0.3",
+    "@the-/ast": "^15.1.0",
+    "@the-/script-doc": "^15.1.0",
     "@the-/script-test": "^15.2.0",
-    "@the-/templates": "^15.0.4",
+    "@the-/templates": "^15.1.0",
     "injectmock": "^2.0.0",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "engines": {
     "node": ">=10",

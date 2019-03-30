@@ -1,7 +1,7 @@
 {
   "name": "@the-/handle",
   "description": "Action handler for the-framework",
-  "version": "15.0.4",
+  "version": "15.1.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -30,7 +30,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/handle#readme",
   "keywords": [
     "lib",
     "the"
@@ -45,7 +45,7 @@
     "build": "the-script-build",
     "doc": "the-script-doc",
     "prepare": "npm run build && npm run doc",
-    "test": "the-script-build",
+    "test": "the-script-test",
     "watch": "the-script-build -w"
   }
 }

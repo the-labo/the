@@ -45,6 +45,21 @@ console.log(a, d, n2, n4, ee)
     )
   })
 
+  it('Not removed used as component', async () => {
+    equal(
+      await processJSUnused(`
+export default function HOC(Component) {
+  return <Component foo="bar"/>
+}
+      `),
+      `
+export default function HOC(Component) {
+  return <Component foo="bar"/>
+}
+      `,
+    )
+  })
+
   it('Remove unused import', async () => {
     equal(
       await processJSUnused(

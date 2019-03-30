@@ -83,6 +83,10 @@
     "kind": "lib",
     "name": "controller"
   },
+  "the-controller-mixins": {
+    "kind": "mixin",
+    "name": "mixin-controller"
+  },
   "the-cycle": {
     "kind": "component",
     "name": "cycle"
@@ -354,6 +358,10 @@
   "the-stream-base": {
     "kind": "lib",
     "name": "stream"
+  },
+  "the-stream-mixins": {
+    "kind": "mixin",
+    "name": "mixin-stream"
   },
   "the-style": {
     "kind": "component",

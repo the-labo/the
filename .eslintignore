@@ -102,6 +102,9 @@ var/
 /packages/metrics-presets/lib/index.js
 /packages/metrics/lib/counters/index.js
 /packages/metrics/lib/index.js
+/packages/mixin-controller/lib/helpers/index.js
+/packages/mixin-controller/lib/index.js
+/packages/mixin-stream/lib/index.js
 /packages/pack/lib/index.js
 /packages/pager/doc/demo/bundle.js
 /packages/pager/lib/index.jsx

@@ -101,6 +101,8 @@ root for the-project
 - [meta](./packages/meta)
 - [metrics](./packages/metrics)
 - [metrics-presets](./packages/metrics-presets)
+- [mixin-controller](./packages/mixin-controller)
+- [mixin-stream](./packages/mixin-stream)
 - [pack](./packages/pack)
 - [pager](./packages/pager)
 - [password](./packages/password)

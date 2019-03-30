@@ -6,7 +6,7 @@ const {
   ReadableStream,
   TransformStream,
   WritableStream,
-} = require('@mattiasbuelens/web-streams-polyfill/ponyfill')
+} = require('web-streams-polyfill/ponyfill')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
 exports.ByteLengthQueuingStrategy = ByteLengthQueuingStrategy

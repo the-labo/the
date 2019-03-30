@@ -25,7 +25,12 @@ module.exports = async function buildESM(
   destDir,
   { jsPattern, plugins },
 ) {
-  for (const filename of await aglob(jsPattern, { cwd: srcDir })) {
+  const ignore = [`${path.relative(srcDir, destDir)}/**/*.*`]
+  const filenames = await aglob(jsPattern, {
+    cwd: srcDir,
+    ignore,
+  })
+  for (const filename of filenames) {
     const src = path.resolve(srcDir, filename)
     const dest = path.resolve(destDir, filename).replace(/\.jsx$/, '.js')
 
@@ -39,11 +44,15 @@ module.exports = async function buildESM(
     }
 
     try {
-      const { code } = lebab.transform(String(await readFileAsync(src)), [
-        'commonjs',
-      ])
+      const srcContent = String(await readFileAsync(src))
+      const { code } = lebab.transform(srcContent, ['commonjs'])
       await mkdirpAsync(path.dirname(dest))
-      await writeFileAsync(dest, code)
+      await writeFileAsync(
+        dest,
+        code
+          .replace(/export var default = void 0;/, '')
+          .replace(/export var default = exports\..* = void 0;/, ''),
+      )
     } catch (e) {
       console.warn('[the-script-build] Failed to lebab:', src)
     }
@@ -63,10 +72,16 @@ module.exports = async function buildESM(
     ],
   })
 
-  for (const filename of await aglob('**/*.json', { cwd: srcDir })) {
-    const src = path.resolve(srcDir, filename)
-    const dest = path.resolve(destDir, filename)
-    await filecopy(src, dest, { mkdirp: true })
+  {
+    const filenames = await aglob('**/*.json', {
+      cwd: srcDir,
+      ignore,
+    })
+    for (const filename of filenames) {
+      const src = path.resolve(srcDir, filename)
+      const dest = path.resolve(destDir, filename)
+      await filecopy(src, dest, { mkdirp: true })
+    }
   }
 
   const hasDefault = !!(await statAsync(

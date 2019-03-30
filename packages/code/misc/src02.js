@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { compose } = require('the-controller-mixins')
+const { compose } = require('@the-/mixin-controller')
 const { withAdmin } = require('../concerns')
 const Ctrl = require('../Ctrl')
 

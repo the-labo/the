@@ -62,7 +62,7 @@ async function build(dirname = process.cwd(), options = {}) {
     })
 
     // Generate esm shim
-    await buildESM(libDir, esmShimDir, {
+    await buildESM(shimDir, esmShimDir, {
       jsPattern,
       plugins,
     })

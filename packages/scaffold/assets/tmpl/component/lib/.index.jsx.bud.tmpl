@@ -1,16 +1,8 @@
 'use strict'
 
-const { dir } = require('@the-/templates')
-const pkg = require('../package')
+const { Index: IndexJsx } = require('@the-/templates/presets/component')
 
-module.exports = ['index.jsx'].map((filename) => ({
-  ...dir({
-    description: pkg.description,
-    dirname: __dirname,
-    name: pkg.name,
-  }),
-  path: `${__dirname}/${filename}`,
-}))
+module.exports = IndexJsx(__dirname)
 
 if (!module.parent) {
   require('coz').render(__filename)

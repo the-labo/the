@@ -48,7 +48,6 @@ function processJSUnused(content, options = {}) {
       ObjectPattern: (node) => ObjectPatterns.push(node),
       VariableDeclaration: (node) => VariableDeclarations.push(node),
     })
-
     {
       const FunctionNodes = finder.findByTypes(parsed, [
         NodeTypes.FunctionDeclaration,
@@ -59,6 +58,7 @@ function processJSUnused(content, options = {}) {
       for (const FunctionNode of FunctionNodes) {
         const ConsumingIdentifiers = finder.findByTypes(FunctionNode, [
           NodeTypes.Identifier,
+          NodeTypes.JSXIdentifier,
         ])
 
         const converted =
