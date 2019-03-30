@@ -1,0 +1,60 @@
+[
+  {
+    "id": "module:@the-/theme-style",
+    "longname": "module:@the-/theme-style",
+    "name": "@the-/theme-style",
+    "kind": "module",
+    "description": "Theme style for the-components",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/theme-style/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheThemeStyle",
+    "longname": "TheThemeStyle",
+    "name": "TheThemeStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Theme Style of the-components",
+    "params": [],
+    "meta": {
+      "lineno": 47,
+      "filename": "TheThemeStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/theme-style/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheThemeStyle.propTypes.options",
+    "longname": "TheThemeStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
+    "memberof": "TheThemeStyle.propTypes",
+    "meta": {
+      "lineno": 57,
+      "filename": "TheThemeStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/theme-style/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheThemeStyle.propTypes.prefix",
+    "longname": "TheThemeStyle.propTypes.prefix",
+    "name": "prefix",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style selector prefix",
+    "memberof": "TheThemeStyle.propTypes",
+    "meta": {
+      "lineno": 60,
+      "filename": "TheThemeStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/theme-style/lib"
+    },
+    "order": 3
+  }
+]
