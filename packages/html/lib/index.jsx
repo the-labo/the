@@ -12,3 +12,8 @@ export {
   TheHtml,
   TheHtmlStyle,
 }
+
+export default {
+      TheHtml,
+      TheHtmlStyle,
+}

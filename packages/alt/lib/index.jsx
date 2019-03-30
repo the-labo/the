@@ -12,3 +12,8 @@ export {
   TheAlt,
   TheAltStyle,
 }
+
+export default {
+      TheAlt,
+      TheAltStyle,
+}

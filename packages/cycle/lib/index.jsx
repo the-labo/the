@@ -10,3 +10,7 @@ import TheCycle from './TheCycle'
 export {
   TheCycle,
 }
+
+export default {
+      TheCycle,
+}

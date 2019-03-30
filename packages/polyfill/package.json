@@ -1,7 +1,7 @@
 {
   "name": "@the-/polyfill",
   "description": "Polyfill of the-frameworks",
-  "version": "15.1.2",
+  "version": "15.1.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -32,7 +32,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/polyfill#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "lib",
     "the"

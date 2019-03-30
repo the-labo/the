@@ -10,3 +10,7 @@ import TheStyle from './TheStyle'
 export {
   TheStyle,
 }
+
+export default {
+      TheStyle,
+}

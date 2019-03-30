@@ -12,3 +12,8 @@ export {
   TheCondition,
   TheConditionStyle,
 }
+
+export default {
+      TheCondition,
+      TheConditionStyle,
+}

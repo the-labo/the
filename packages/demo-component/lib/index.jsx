@@ -12,3 +12,8 @@ export {
   TheDemoComponent,
   TheDemoComponentStyle,
 }
+
+export default {
+      TheDemoComponent,
+      TheDemoComponentStyle,
+}

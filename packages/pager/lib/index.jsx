@@ -12,3 +12,8 @@ export {
   ThePager,
   ThePagerStyle,
 }
+
+export default {
+      ThePager,
+      ThePagerStyle,
+}

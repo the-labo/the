@@ -4,16 +4,14 @@
  */
 'use strict'
 
-const helpers = require('../shim/helpers').default
+const { ok } = require('assert').strict
 const React = require('react')
-const { ok, equal, deepEqual } = require('assert').strict
+const helpers = require('../shim/helpers').default
 
 describe('helpers', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(React.createElement(helpers))

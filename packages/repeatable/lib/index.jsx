@@ -12,3 +12,8 @@ export {
   TheRepeatable,
   TheRepeatableStyle,
 }
+
+export default {
+      TheRepeatable,
+      TheRepeatableStyle,
+}

@@ -10,3 +10,7 @@ import TheMeta from './TheMeta'
 export {
   TheMeta,
 }
+
+export default {
+      TheMeta,
+}

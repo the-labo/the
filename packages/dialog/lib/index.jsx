@@ -18,3 +18,11 @@ export {
   TheOkDialog,
   TheYesNoDialog,
 }
+
+export default {
+      TheConfirmDialog,
+      TheDialog,
+      TheDialogStyle,
+      TheOkDialog,
+      TheYesNoDialog,
+}

@@ -14,3 +14,9 @@ export {
   TheCaughtCatcher,
   TheCaughtStyle,
 }
+
+export default {
+      TheCaught,
+      TheCaughtCatcher,
+      TheCaughtStyle,
+}

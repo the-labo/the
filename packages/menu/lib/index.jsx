@@ -16,3 +16,10 @@ export {
   TheMenuItem,
   TheMenuStyle,
 }
+
+export default {
+      TheDropdownMenu,
+      TheMenu,
+      TheMenuItem,
+      TheMenuStyle,
+}

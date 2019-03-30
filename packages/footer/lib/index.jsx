@@ -12,3 +12,8 @@ export {
   TheFooter,
   TheFooterStyle,
 }
+
+export default {
+      TheFooter,
+      TheFooterStyle,
+}

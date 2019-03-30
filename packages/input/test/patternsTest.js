@@ -4,16 +4,14 @@
  */
 'use strict'
 
-const patterns = require('../shim/patterns').default
+const { ok } = require('assert').strict
 const React = require('react')
-const { ok, equal, deepEqual } = require('assert').strict
+const patterns = require('../shim/patterns').default
 
 describe('patterns', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(React.createElement(patterns))

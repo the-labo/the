@@ -12,3 +12,8 @@ export {
   TheTable,
   TheTableStyle,
 }
+
+export default {
+      TheTable,
+      TheTableStyle,
+}

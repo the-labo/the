@@ -77,7 +77,7 @@ describe('the-loc', () => {
 
   it('Nested', () => {
     const loc = new TheLoc({
-      ja: { v1: '#{v2}', v2:'#{v3}', v3: '#{v4}', v4:'#{v5}', v5:999 }
+      ja: { v1: '#{v2}', v2: '#{v3}', v3: '#{v4}', v4: '#{v5}', v5: 999 },
     })
     equal(loc.ja.v1, 999)
   })

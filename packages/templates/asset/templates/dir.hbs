@@ -14,3 +14,9 @@ export {
 {{#if varNameChanged}}  {{varName}} as{{/if}}  {{name}},
 {{/each}}
 }
+
+export default {
+{{#each modules}}
+    {{#if varNameChanged}}  {{varName}} as{{/if}}  {{name}},
+{{/each}}
+}

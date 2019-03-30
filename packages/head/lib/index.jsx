@@ -10,3 +10,7 @@ import TheHead from './TheHead'
 export {
   TheHead,
 }
+
+export default {
+      TheHead,
+}

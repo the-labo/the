@@ -4,16 +4,14 @@
  */
 'use strict'
 
-const TheIcon = require('../shim/TheIcon').default
+const { ok } = require('assert').strict
 const React = require('react')
-const { ok, equal, deepEqual } = require('assert').strict
+const TheIcon = require('../shim/TheIcon').default
 
 describe('the-icon', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(React.createElement(TheIcon))

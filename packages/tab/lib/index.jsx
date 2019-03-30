@@ -12,3 +12,8 @@ export {
   TheTab,
   TheTabStyle,
 }
+
+export default {
+      TheTab,
+      TheTabStyle,
+}

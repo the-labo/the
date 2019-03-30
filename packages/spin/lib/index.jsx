@@ -12,3 +12,8 @@ export {
   TheSpin,
   TheSpinStyle,
 }
+
+export default {
+      TheSpin,
+      TheSpinStyle,
+}

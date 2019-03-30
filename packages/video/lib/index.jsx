@@ -12,3 +12,8 @@ export {
   TheVideo,
   TheVideoStyle,
 }
+
+export default {
+      TheVideo,
+      TheVideoStyle,
+}

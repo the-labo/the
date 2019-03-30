@@ -12,3 +12,8 @@ export {
   TheBody,
   TheBodyStyle,
 }
+
+export default {
+      TheBody,
+      TheBodyStyle,
+}

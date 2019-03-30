@@ -12,3 +12,8 @@ export {
   TheInfo,
   TheInfoStyle,
 }
+
+export default {
+      TheInfo,
+      TheInfoStyle,
+}

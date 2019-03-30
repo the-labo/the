@@ -4,16 +4,14 @@
  */
 'use strict'
 
-const TheMeta = require('../shim/TheMeta').default
+const { ok } = require('assert').strict
 const React = require('react')
-const { ok, equal, deepEqual } = require('assert').strict
+const TheMeta = require('../shim/TheMeta').default
 
 describe('the-meta', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(React.createElement(TheMeta))

@@ -1,7 +1,7 @@
 {
   "name": "@the-/mixin-controller",
   "description": "Mixins for the-controller",
-  "version": "15.1.2",
+  "version": "15.1.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,6 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/check": "^15.1.2",
     "@the-/error": "^15.1.2",
     "qs": "^6.6.0"
   },
@@ -25,7 +26,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/mixin-controller#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "mixin",
     "the"

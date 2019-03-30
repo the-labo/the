@@ -14,3 +14,9 @@ export {
   TheBar,
   TheBarStyle,
 }
+
+export default {
+      TheActionBar,
+      TheBar,
+      TheBarStyle,
+}

@@ -4,19 +4,17 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheRootStyle from '../lib/TheRootStyle'
+const { ok } = require('assert').strict
+const React = require('react')
+const TheRootStyle = require('../shim/TheRootStyle').default
 
 describe('the-root-style', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Render a component', () => {
-    let element = render(<TheRootStyle />)
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheRootStyle))
   })
 })
 

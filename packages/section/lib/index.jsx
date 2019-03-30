@@ -14,3 +14,9 @@ export {
   TheSection,
   TheSectionStyle,
 }
+
+export default {
+      TheAccordionSection,
+      TheSection,
+      TheSectionStyle,
+}

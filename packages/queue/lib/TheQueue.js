@@ -76,7 +76,9 @@ class TheQueue {
     if (!task) {
       return
     }
-    await task()
+    this.consuming = task()
+    await this.consuming
+    this.consuming = null
     this.metrics.finishedCount += 1
     await this.consumeIfNeeded()
   }
@@ -113,6 +115,7 @@ class TheQueue {
         )
       }
     }
+    await this.consuming
   }
 }
 

@@ -14,3 +14,9 @@ export {
   TheButtonGroup,
   TheButtonStyle,
 }
+
+export default {
+      TheButton,
+      TheButtonGroup,
+      TheButtonStyle,
+}
