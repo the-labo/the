@@ -7,23 +7,10 @@
     "description": "Router of the-components",
     "meta": {
       "lineno": 2,
-      "filename": "index.js",
-      "path": "/Users/okuni/Projects/the/packages/router/lib"
-    },
-    "order": 0
-  },
-  {
-    "id": "module:@the-/router",
-    "longname": "module:@the-/router",
-    "name": "@the-/router",
-    "kind": "module",
-    "description": "Router of the-components",
-    "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
       "path": "/Users/okuni/Projects/the/packages/router/lib"
     },
-    "order": 1
+    "order": 0
   },
   {
     "id": "TheRouter",
@@ -37,7 +24,7 @@
       "filename": "TheRouter.jsx",
       "path": "/Users/okuni/Projects/the/packages/router/lib"
     },
-    "order": 2
+    "order": 1
   },
   {
     "id": "TheRouterStyle",
@@ -52,7 +39,7 @@
       "filename": "TheRouterStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/router/lib"
     },
-    "order": 3
+    "order": 2
   },
   {
     "id": "TheRouterStyle.propTypes.options",
@@ -67,6 +54,6 @@
       "filename": "TheRouterStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/router/lib"
     },
-    "order": 4
+    "order": 3
   }
 ]

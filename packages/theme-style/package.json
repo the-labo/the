@@ -11,15 +11,16 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/style": "^15.1.3",
+    "@the-/util-component": "^15.1.3",
+    "@the-/util-style": "^15.1.3",
     "classnames": "^2.2.6",
-    "prop-types": "^15.7.2",
-    "the-component-util": "^3.0.22",
-    "the-style": "^2.2.8",
-    "the-style-util": "^1.0.2"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@babel/runtime": "^7.4.2",
     "@the-/component-demo": "file:../component-demo",
+    "@the-/components": "^12.0.10",
     "@the-/router": "^15.1.3",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
@@ -29,14 +30,13 @@
     "objnest": "^5.0.6",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
-    "react-router-dom": "^5.0.0",
-    "the-components": "^12.0.8"
+    "react-router-dom": "^5.0.0"
   },
   "engines": {
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/the-theme-style#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/theme-style#readme",
   "keywords": [
     "component",
     "the"
@@ -44,9 +44,12 @@
   "license": "MIT",
   "main": "shim",
   "peerDependencies": {
+    "@the-/components": ">=15",
     "react": ">=16",
-    "react-dom": ">=16",
-    "@the-/components": ">=15"
+    "react-dom": ">=16"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "repository": "the-labo/the-theme-style",
   "scripts": {
@@ -55,8 +58,5 @@
     "prepare": "npm run build && npm run doc",
     "test": "the-script-test",
     "watch": "the-script-build -w"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

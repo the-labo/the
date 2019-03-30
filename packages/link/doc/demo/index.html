@@ -1,4 +1,4 @@
-<html class="the-html the-component-demo" id="the-html"><head class="the-head"><meta charSet="utf-8" class="the-head-charset"/><title class="the-head-title">DEMO: @the-/link </title><meta class="the-head-viewport" content="initial-scale=1.0,width=device-width" name="viewport"/><meta content="default-src * data: blob: &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; ws: wss:;" http-equiv="Content-Security-Policy"/><script class="the-head-js" defer="" src="./bundle.js?v=15.1.3" type="text/javascript"></script><link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet"/><style class="the-style the-body-style">
+<html class="the-html the-component-demo" id="the-html"><head class="the-head"><meta charSet="utf-8" class="the-head-charset"/><title class="the-head-title">DEMO: @the-/link </title><meta class="the-head-viewport" content="initial-scale=1.0,width=device-width" name="viewport"/><meta content="default-src * data: blob: &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; ws: wss:;" http-equiv="Content-Security-Policy"/><script class="the-head-js" defer="" src="./bundle.js?v=15.1.4" type="text/javascript"></script><link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet"/><style class="the-style the-body-style">
 .the-body {
     background-color:#FFF;
     box-sizing:border-box;
@@ -341,6 +341,18 @@
     margin:0 auto;
     max-width:1024px;
 }
+</style><style class="the-style the-main-style">
+.the-main .the-main-spin.the-spinner-cover {
+    background:rgba(255,255,255,0.98);
+    z-index:999;
+}
+
+
+.the-main {
+    flex-grow:1;-webkit-box-flex:1;
+    height:100%;
+    width:100%;
+}
 </style> <style class="the-style the-link-style">
 .the-link {
     color:#ee8e0a;
@@ -358,6 +370,78 @@
     display:flex;
     flex-direction:column;-webkit-box-orient:column;-webkit-box-direction:column;
     min-height:100%;
+}
+</style><style class="the-style the-image-style">
+.the-image {
+    display:inline-block;
+    overflow:hidden;
+    position:relative;
+}
+
+
+.the-image-img {
+    object-fit:none;
+    transition:width 300ms, height 300ms;-webkit-transition:width 300ms, height 300ms;-moz-transition:width 300ms, height 300ms;
+}
+
+
+.the-image-img-failed {
+    opacity:0;
+    visibility:hidden;
+}
+
+
+.the-image-inner {
+    align-items:center;-webkit-box-align:center;
+    display:flex;
+    justify-content:center;-webkit-box-pack:center;
+    overflow:hidden;
+    width:auto;
+}
+
+
+.the-image-notfound {
+    align-items:center;-webkit-box-align:center;
+    color:#BBB;
+    display:flex;
+    height:100%;
+    justify-content:center;-webkit-box-pack:center;
+    text-align:center;
+}
+
+
+.the-image-spin {
+    align-items:center;-webkit-box-align:center;
+    background-color:rgba(255,255,255,0.8);
+    bottom:0px;
+    color:#BBB;
+    display:flex;
+    justify-content:center;-webkit-box-pack:center;
+    left:0px;
+    padding:8px 0;
+    position:absolute;
+    right:0px;
+    text-align:center;
+    top:0px;
+    z-index:1;
+}
+
+
+.the-image-spin .the-icon-spin {
+    font-size:larger;
+}
+
+
+.the-image.the-image-fill .the-image-img {
+    box-sizing:border-box;
+    object-fit:cover;
+}
+
+
+.the-image.the-image-fit .the-image-img {
+    max-height:100%;
+    max-width:100%;
+    object-fit:scale-down;
 }
 </style> <style class="the-style">
 .the-component-demo-body {
@@ -393,7 +477,7 @@
 .the-component-demo-snippet .syntaxhighlighter table td.code .container {
   position: relative !important;
 }
-</style></head><body class="the-body the-component-demo-body"><div class="the-router-static"><header role="banner" class="the-header"><div class="the-header-inner"><div class="the-container"><a role="link" class="the-link-external the-link the-header-logo" href="https://github.com/the-labo/the#readme">@the-/link</a></div><div class="the-header-notices-wrap the-header-notices-wrap-empty" style="height:0"></div></div></header><main><div class="the-component-demo-workspace"><div class="the-container"><div id="the-demo" role="application" class="the-root"></div></div></div><br/><div><div class="the-container"><pre class="the-component-demo-snippet"><div><style scoped="scoped">.syntaxhighlighter a,
+</style></head><body class="the-body the-component-demo-body"><div class="the-router-static"><header role="banner" class="the-header"><div class="the-header-inner"><div class="the-container"><a role="link" class="the-link-external the-link the-header-logo" href="https://github.com/the-labo/the/tree/master/packages/link#readme">@the-/link</a></div><div class="the-header-notices-wrap the-header-notices-wrap-empty" style="height:0"></div></div></header><main role="main" aria-busy="false" class="the-main"><div class="the-component-demo-workspace"><div class="the-container"><div id="the-demo" role="application" class="the-root"></div></div></div><br/><div><div class="the-container"><pre class="the-component-demo-snippet"><div><style scoped="scoped">.syntaxhighlighter a,
 .syntaxhighlighter div,
 .syntaxhighlighter code,
 .syntaxhighlighter table,
@@ -705,4 +789,4 @@
 .syntaxhighlighter .keyword {
   font-weight: bold !important;
 }
-</style><div id="highlighter_85285" class="syntaxhighlighter nogutter  "><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="string">'use strict'</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="plain">import React from </code><code class="string">'react'</code></div><div class="line number4 index3 alt1"><code class="plain">import { TheRouter } from </code><code class="string">'@the-/router'</code></div><div class="line number5 index4 alt2"><code class="plain">import { TheLink, TheLinkStyle } from </code><code class="string">'@the-/link'</code></div><div class="line number6 index5 alt1">&nbsp;</div><div class="line number7 index6 alt2"><code class="plain">class ExampleComponent extends React.Component {</code></div><div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="plain">render () {</code></div><div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">(</code></div><div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;</code><code class="keyword">TheRouter.Hash</code><code class="plain">></code></div><div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;</code><code class="keyword">TheLinkStyle</code><code class="plain">/></code></div><div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;</code><code class="keyword">TheLink</code> <code class="color1">to</code><code class="plain">=</code><code class="string">'/mypage'</code><code class="plain">></code></div><div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">My Page</code></div><div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;/</code><code class="keyword">TheLink</code><code class="plain">></code></div><div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;</code><code class="keyword">TheLink</code> <code class="color1">to</code><code class="plain">=</code><code class="string">'/about'</code> <code class="color1">icon</code><code class="plain">=</code><code class="string">"fa fa-info"</code><code class="plain">></code></div><div class="line number16 index15 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">About</code></div><div class="line number17 index16 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;/</code><code class="keyword">TheLink</code><code class="plain">></code></div><div class="line number18 index17 alt1">&nbsp;</div><div class="line number19 index18 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;</code><code class="keyword">TheLink</code> <code class="color1">to</code><code class="plain">=</code><code class="string">'/hoge'</code></div><div class="line number20 index19 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1">color</code><code class="plain">=</code><code class="string">'#38E'</code><code class="plain">></code></div><div class="line number21 index20 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Color link</code></div><div class="line number22 index21 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;/</code><code class="keyword">TheLink</code><code class="plain">></code></div><div class="line number23 index22 alt2">&nbsp;</div><div class="line number24 index23 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;</code><code class="keyword">TheLink</code> <code class="color1">to</code><code class="plain">=</code><code class="string">'<a href="http://example.com">http://example.com</a>'</code></div><div class="line number25 index24 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1">color</code><code class="plain">=</code><code class="string">'#38E'</code><code class="plain">></code></div><div class="line number26 index25 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">External link</code></div><div class="line number27 index26 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;/</code><code class="keyword">TheLink</code><code class="plain">></code></div><div class="line number28 index27 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;/</code><code class="keyword">TheRouter.Hash</code><code class="plain">></code></div><div class="line number29 index28 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">)</code></div><div class="line number30 index29 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="plain">}</code></div><div class="line number31 index30 alt2"><code class="plain">}</code></div><div class="line number32 index31 alt1">&nbsp;</div><div class="line number33 index32 alt2"><code class="plain">export </code><code class="keyword">default</code> <code class="plain">ExampleComponent</code></div></div></td></tr></tbody></table></div></div></pre></div></div><br/><div><div class="the-container"><section><h1>Links</h1><ul><li><a href="the-labo/the">@the-/link at GitHub</a></li></ul></section></div></div></main></div></body></html>
+</style><div id="highlighter_281382" class="syntaxhighlighter nogutter  "><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="string">'use strict'</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="plain">import React from </code><code class="string">'react'</code></div><div class="line number4 index3 alt1"><code class="plain">import { TheRouter } from </code><code class="string">'@the-/router'</code></div><div class="line number5 index4 alt2"><code class="plain">import { TheLink, TheLinkStyle } from </code><code class="string">'@the-/link'</code></div><div class="line number6 index5 alt1">&nbsp;</div><div class="line number7 index6 alt2"><code class="plain">class ExampleComponent extends React.Component {</code></div><div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="plain">render () {</code></div><div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">(</code></div><div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;</code><code class="keyword">TheRouter.Hash</code><code class="plain">></code></div><div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;</code><code class="keyword">TheLinkStyle</code><code class="plain">/></code></div><div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;</code><code class="keyword">TheLink</code> <code class="color1">to</code><code class="plain">=</code><code class="string">'/mypage'</code><code class="plain">></code></div><div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">My Page</code></div><div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;/</code><code class="keyword">TheLink</code><code class="plain">></code></div><div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;</code><code class="keyword">TheLink</code> <code class="color1">to</code><code class="plain">=</code><code class="string">'/about'</code> <code class="color1">icon</code><code class="plain">=</code><code class="string">"fa fa-info"</code><code class="plain">></code></div><div class="line number16 index15 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">About</code></div><div class="line number17 index16 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;/</code><code class="keyword">TheLink</code><code class="plain">></code></div><div class="line number18 index17 alt1">&nbsp;</div><div class="line number19 index18 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;</code><code class="keyword">TheLink</code> <code class="color1">to</code><code class="plain">=</code><code class="string">'/hoge'</code></div><div class="line number20 index19 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1">color</code><code class="plain">=</code><code class="string">'#38E'</code><code class="plain">></code></div><div class="line number21 index20 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Color link</code></div><div class="line number22 index21 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;/</code><code class="keyword">TheLink</code><code class="plain">></code></div><div class="line number23 index22 alt2">&nbsp;</div><div class="line number24 index23 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;</code><code class="keyword">TheLink</code> <code class="color1">to</code><code class="plain">=</code><code class="string">'<a href="http://example.com">http://example.com</a>'</code></div><div class="line number25 index24 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1">color</code><code class="plain">=</code><code class="string">'#38E'</code><code class="plain">></code></div><div class="line number26 index25 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">External link</code></div><div class="line number27 index26 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;/</code><code class="keyword">TheLink</code><code class="plain">></code></div><div class="line number28 index27 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;/</code><code class="keyword">TheRouter.Hash</code><code class="plain">></code></div><div class="line number29 index28 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">)</code></div><div class="line number30 index29 alt1"><code class="undefined spaces">&nbsp;&nbsp;</code><code class="plain">}</code></div><div class="line number31 index30 alt2"><code class="plain">}</code></div><div class="line number32 index31 alt1">&nbsp;</div><div class="line number33 index32 alt2"><code class="plain">export </code><code class="keyword">default</code> <code class="plain">ExampleComponent</code></div></div></td></tr></tbody></table></div></div></pre></div></div><br/><div><div class="the-container"><section><h1>Links</h1><ul><li><a href="the-labo/the">@the-/link at GitHub</a></li></ul></section></div></div></main></div></body></html>

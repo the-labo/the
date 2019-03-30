@@ -2,7 +2,7 @@
 /**
  * React components of THE framework
  * @module @the-/components
- * @version 12.0.10
+ * @version 12.0.11
  */
 
 'use strict'

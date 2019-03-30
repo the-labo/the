@@ -21,4 +21,4 @@ React components of THE framework
 ## @the-/components
 React components of THE framework
 
-**Version**: 12.0.10  
+**Version**: 12.0.11  

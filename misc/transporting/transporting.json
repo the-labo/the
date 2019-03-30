@@ -171,6 +171,10 @@
     "kind": "component",
     "name": "head"
   },
+  "the-header": {
+    "kind": "component",
+    "name": "header"
+  },
   "the-html": {
     "kind": "component",
     "name": "html"
