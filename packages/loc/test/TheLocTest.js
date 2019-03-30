@@ -16,7 +16,8 @@ describe('the-loc', () => {
     const loc = new TheLoc({
       en: {
         app: {
-          BANNER: '#{ja.app.BANNER}',
+          BANNER: 'say hello to #{app.NAME}',
+          NAME: 'hoge',
         },
         errors: {
           MISSING_ERROR: '%(value)s is required',
@@ -51,6 +52,7 @@ describe('the-loc', () => {
     deepEqual(loc.toCompound(), {
       'app.BANNER*en': 'say hello to hoge',
       'app.BANNER*ja': 'say hello to hoge',
+      'app.NAME*en': 'hoge',
       'app.NAME*ja': 'hoge',
       'errors.MISSING_ERROR*en': '%(value)s is required',
     })
@@ -71,6 +73,13 @@ describe('the-loc', () => {
       {},
     )
     ok(!loc.resolve('ja', 'buttons'))
+  })
+
+  it('Nested', () => {
+    const loc = new TheLoc({
+      ja: { v1: '#{v2}', v2:'#{v3}', v3: '#{v4}', v4:'#{v5}', v5:999 }
+    })
+    equal(loc.ja.v1, 999)
   })
 })
 

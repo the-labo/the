@@ -7,7 +7,7 @@
 const { equal } = require('assert').strict
 const moduleRule = require('../lib/rules/moduleRule')
 
-describe('default-export-rule', () => {
+describe('module-rule-test', () => {
   before(() => {})
 
   after(() => {})

@@ -49,10 +49,16 @@ class TheLoc {
    * @param {string} namespace
    * @param {Object} values
    * @param {Object} [options={}]
+   * @param {Object} [options.ctx]
+   * @param {Number} [options.depth=5]
    * @returns {TheLoc} Returns this
    */
   register(namespace, values, options = {}) {
-    this[namespace] = evaljson(values, options.ctx, this)
+    const { ctx, depth = 5 } = options
+    this[namespace] = evaljson(values, this, ctx)
+    for (let i = 0; i < depth; i++) {
+      this[namespace] = evaljson(values, this, ctx, this[namespace])
+    }
     return this
   }
 

@@ -101,6 +101,25 @@
         "optional": true,
         "defaultvalue": "{}",
         "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "name": "options.ctx"
+      },
+      {
+        "type": {
+          "names": [
+            "Number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 5,
+        "name": "options.depth"
       }
     ],
     "returns": [
@@ -114,7 +133,7 @@
       }
     ],
     "meta": {
-      "lineno": 54,
+      "lineno": 56,
       "filename": "TheLoc.js",
       "path": "/Users/okuni/Projects/the/packages/loc/lib"
     },
@@ -160,7 +179,7 @@
       }
     ],
     "meta": {
-      "lineno": 65,
+      "lineno": 71,
       "filename": "TheLoc.js",
       "path": "/Users/okuni/Projects/the/packages/loc/lib"
     },
@@ -186,7 +205,7 @@
       }
     ],
     "meta": {
-      "lineno": 107,
+      "lineno": 113,
       "filename": "TheLoc.js",
       "path": "/Users/okuni/Projects/the/packages/loc/lib"
     },
@@ -202,7 +221,7 @@
     "memberof": "TheLoc",
     "params": [],
     "meta": {
-      "lineno": 119,
+      "lineno": 125,
       "filename": "TheLoc.js",
       "path": "/Users/okuni/Projects/the/packages/loc/lib"
     },

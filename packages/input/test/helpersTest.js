@@ -4,19 +4,19 @@
  */
 'use strict'
 
-import { deepEqual, ok } from 'assert'
-import React from 'react'
-import { normalizeOptions } from '../lib/helpers'
+const helpers = require('../shim/helpers').default
+const React = require('react')
+const { ok, equal, deepEqual } = require('assert').strict
 
 describe('helpers', () => {
-  before(() => {})
+  before(() => {
+  })
 
-  after(() => {})
+  after(() => {
+  })
 
-  it('normalizeOptions', () => {
-    ok(normalizeOptions)
-    deepEqual(normalizeOptions(['foo']), { foo: 'foo' })
-    deepEqual(normalizeOptions({ foo: 'bar' }), { foo: 'bar' })
+  it('Do test', () => {
+    ok(React.createElement(helpers))
   })
 })
 

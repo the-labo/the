@@ -4,19 +4,19 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheMeta from '../lib/TheMeta'
+const TheMeta = require('../shim/TheMeta').default
+const React = require('react')
+const { ok, equal, deepEqual } = require('assert').strict
 
 describe('the-meta', () => {
-  before(() => {})
+  before(() => {
+  })
 
-  after(() => {})
+  after(() => {
+  })
 
-  it('Render a component', () => {
-    let element = render(<TheMeta />)
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheMeta))
   })
 })
 
