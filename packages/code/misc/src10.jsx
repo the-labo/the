@@ -5,7 +5,7 @@
 
 import React from 'react'
 import { localized, stateful } from 'the-component-mixins'
-import { TheButton, TheForm, TheInput, withForm } from 'the-components'
+import { TheButton, TheForm, TheInput, withForm } from '@the-/components'
 import { UserTypes } from '@self/conf'
 import FBImportButton, { FBImportButtonContainer } from '../fb/FBImportButton'
 

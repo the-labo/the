@@ -7,7 +7,7 @@ import React from 'react'
 import {
   TheRoot,
   TheMain,
-} from 'the-components'
+} from '@the-/components'
 
 import { Header, Toasts, Footer } from './layouts'
 import Routes from './Routes'

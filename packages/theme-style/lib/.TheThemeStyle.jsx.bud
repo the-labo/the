@@ -1,0 +1,30 @@
+/**
+ * Bud file for TheThemeStyle.jsx
+ */
+
+'use strict'
+
+const components = require('the-components/lib/components.json')
+
+module.exports = {
+  force: true,
+  mode: '444',
+  data: {
+    styleComponents: Object.keys(components).reduce((styleComponents, pkgName) =>
+        [
+          ...styleComponents,
+          ...components[pkgName]
+            .filter((componentName) => /Style$/.test(componentName))
+            .map((componentName) => ({
+              pkgName,
+              componentName
+            }))
+        ]
+      , []),
+    pkg: require('../package.json')
+  }
+}
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

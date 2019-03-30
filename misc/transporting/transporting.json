@@ -3,6 +3,14 @@
     "kind": "component",
     "name": "alt"
   },
+  "the-components": {
+    "kind": "component-group",
+    "name": "components"
+  },
+  "the-theme-style": {
+    "kind": "component",
+    "name": "theme-style"
+  },
   "the-array": {
     "kind": "util",
     "name": "util-array"
@@ -86,6 +94,10 @@
   "the-controller-mixins": {
     "kind": "mixin",
     "name": "mixin-controller"
+  },
+  "the-scene-mixins": {
+    "kind": "mixin",
+    "name": "mixin-scene"
   },
   "the-cycle": {
     "kind": "component",

@@ -1,0 +1,180 @@
+{
+  "@the-/alt": [
+    "TheAlt",
+    "TheAltStyle"
+  ],
+  "@the-/bar": [
+    "TheBar",
+    "TheActionBar",
+    "TheBarStyle"
+  ],
+  "@the-/body": [
+    "TheBody",
+    "TheBodyStyle"
+  ],
+  "@the-/button": [
+    "TheButton",
+    "TheButtonGroup",
+    "TheButtonStyle"
+  ],
+  "@the-/caught": [
+    "TheCaught",
+    "TheCaughtCatcher",
+    "TheCaughtStyle"
+  ],
+  "@the-/condition": [
+    "TheCondition",
+    "TheConditionStyle"
+  ],
+  "@the-/container": [
+    "TheContainer",
+    "TheContainerStyle"
+  ],
+  "@the-/cycle": [
+    "TheCycle"
+  ],
+  "@the-/dialog": [
+    "TheDialog",
+    "TheOkDialog",
+    "TheYesNoDialog",
+    "TheConfirmDialog",
+    "TheDialogStyle"
+  ],
+  "@the-/flick": [
+    "TheFlick",
+    "TheFlickStyle"
+  ],
+  "@the-/footer": [
+    "TheFooter",
+    "TheFooterStyle"
+  ],
+  "@the-/form": [
+    "TheForm",
+    "TheFormBinder",
+    "TheFormStyle"
+  ],
+  "@the-/frame": [
+    "TheFrame",
+    "TheFrameStyle"
+  ],
+  "@the-/hamburger": [
+    "TheHamburger",
+    "TheHamburgerStyle"
+  ],
+  "@the-/head": [
+    "TheHead"
+  ],
+  "@the-/header": [
+    "TheHeader",
+    "TheHeaderStyle"
+  ],
+  "@the-/html": [
+    "TheHtml",
+    "TheHtmlStyle"
+  ],
+  "@the-/icon": [
+    "TheIcon",
+    "TheIconStyle"
+  ],
+  "@the-/image": [
+    "TheImage",
+    "TheImageStyle"
+  ],
+  "@the-/info": [
+    "TheInfo",
+    "TheInfoStyle"
+  ],
+  "@the-/input": [
+    "TheInput",
+    "TheInputText",
+    "TheInputTextArea",
+    "TheInputSearch",
+    "TheInputRadio",
+    "TheInputCheckbox",
+    "TheInputSelect",
+    "TheInputPassword",
+    "TheInputStyle",
+    "TheInputToggle"
+  ],
+  "@the-/link": [
+    "TheLink",
+    "TheLinkStyle"
+  ],
+  "@the-/list": [
+    "TheList",
+    "TheListGroup",
+    "TheListStyle"
+  ],
+  "@the-/main": [
+    "TheMain",
+    "TheMainStyle"
+  ],
+  "@the-/menu": [
+    "TheMenu",
+    "TheMenuItem",
+    "TheMenuStyle",
+    "TheDropdownMenu"
+  ],
+  "@the-/meta": [
+    "TheMeta"
+  ],
+  "@the-/pager": [
+    "ThePager",
+    "ThePagerStyle"
+  ],
+  "@the-/repeatable": [
+    "TheRepeatable",
+    "TheRepeatableStyle"
+  ],
+  "@the-/root": [
+    "TheRoot",
+    "TheRootStyle"
+  ],
+  "@the-/route": [
+    "TheRoute",
+    "TheRouteStyle",
+    "TheRouteStack"
+  ],
+  "@the-/router": [
+    "TheRouter",
+    "TheRouterStyle"
+  ],
+  "@the-/section": [
+    "TheSection",
+    "TheSectionStyle",
+    "TheAccordionSection"
+  ],
+  "@the-/spin": [
+    "TheSpin",
+    "TheSpinStyle"
+  ],
+  "@the-/step": [
+    "TheStep",
+    "TheStepBar",
+    "TheStepStyle"
+  ],
+  "@the-/style": [
+    "TheStyle"
+  ],
+  "@the-/tab": [
+    "TheTab",
+    "TheTabStyle"
+  ],
+  "@the-/table": [
+    "TheTable",
+    "TheTableStyle"
+  ],
+  "@the-/toast": [
+    "TheToast",
+    "TheToastStyle",
+    "TheToastGroup"
+  ],
+  "@the-/video": [
+    "TheVideo",
+    "TheVideoStyle"
+  ],
+  "@the-/view": [
+    "TheView",
+    "TheViewStyle"
+  ]
+}

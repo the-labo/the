@@ -1,0 +1,101 @@
+{
+  "name": "@the-/components",
+  "description": "React components of THE framework",
+  "version": "12.0.10",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "@the-/alt": "^15.1.3",
+    "@the-/bar": "^15.1.3",
+    "@the-/body": "^15.1.3",
+    "@the-/button": "^15.1.3",
+    "@the-/caught": "^15.1.3",
+    "@the-/condition": "^15.1.3",
+    "@the-/container": "^15.1.3",
+    "@the-/cycle": "^15.1.3",
+    "@the-/dialog": "^15.1.3",
+    "@the-/flick": "^15.1.3",
+    "@the-/footer": "^15.1.3",
+    "@the-/form": "^15.1.3",
+    "@the-/frame": "^15.1.3",
+    "@the-/hamburger": "^15.1.3",
+    "@the-/head": "^15.1.3",
+    "@the-/html": "^15.1.3",
+    "@the-/icon": "^15.1.3",
+    "@the-/image": "^15.1.3",
+    "@the-/info": "^15.1.3",
+    "@the-/input": "^15.1.3",
+    "@the-/link": "^15.1.3",
+    "@the-/list": "^15.1.3",
+    "@the-/main": "^15.1.3",
+    "@the-/menu": "^15.1.3",
+    "@the-/meta": "^15.1.3",
+    "@the-/pager": "^15.1.3",
+    "@the-/repeatable": "^15.1.3",
+    "@the-/root": "^15.1.3",
+    "@the-/route": "^15.1.3",
+    "@the-/router": "^15.1.3",
+    "@the-/section": "^15.1.3",
+    "@the-/spin": "^15.1.3",
+    "@the-/step": "^15.1.3",
+    "@the-/style": "^15.1.3",
+    "@the-/tab": "^15.1.3",
+    "@the-/table": "^15.1.3",
+    "@the-/toast": "^15.1.3",
+    "@the-/video": "^15.1.3",
+    "@the-/view": "^15.1.3",
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2",
+    "the-drawer": "^3.0.7",
+    "the-header": "^3.1.19"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.3.4",
+    "@the-/component-demo": "^15.1.3",
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates",
+    "coz": "^7.0.19",
+    "eslint": "^5.15.1",
+    "fmtjson": "^4.0.4",
+    "injectmock": "^2.0.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-router-dom": "^4.3.1",
+    "the-theme-style": "file:../theme-style"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/components#readme",
+  "keywords": [
+    "component-group",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "shim",
+  "peerDependencies": {
+    "react": ">=15",
+    "react-dom": ">=15",
+    "react-router-dom": ">=4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the-components",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-test",
+    "watch": "the-script-build -w"
+  }
+}

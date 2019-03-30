@@ -14,7 +14,7 @@ const {
   withPage,
   withReady,
   withSort,
-} = require('the-scene-mixins/shim')
+} = require('@the-/mixin-scene/shim')
 const { hasMoreFor } = require('@the-/util-site')
 const Scene = require('./Scene')
 

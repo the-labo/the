@@ -1,0 +1,59 @@
+'use strict'
+
+import React from 'react'
+import PropTypes from 'prop-types'
+import c from 'classnames'
+import { EOL } from 'os'
+import { styleString } from 'the-style-util'
+
+{{#each styleComponents}}
+import {{{componentName}}} from '{{pkgName}}/shim/{{{componentName}}}'
+{{/each}}
+
+/** Theme Style of the-components */
+const TheThemeStyle = ({ id, className, prefix, options }) => (
+  <TheStyle {...{ id, prefix }}
+            className={c('the-theme-style', className)}
+            styles={TheThemeStyle.data(options)}
+  />
+)
+
+TheThemeStyle.displayName = 'TheThemeStyle'
+TheThemeStyle.propTypes = {
+  /** Style options */
+  options: PropTypes.object,
+
+  /** Style selector prefix */
+  prefix: PropTypes.string
+}
+
+TheThemeStyle.defaultProps = {
+  options: {},
+  prefix: null
+}
+
+TheThemeStyle.data = (options) => {
+  return Object.assign({},
+    ...[
+{{#each styleComponents}}
+      {{{componentName}}}{{#if @last}}{{else}},
+  {{/if}}
+{{/each}}
+
+    ].filter((Component) => Component.data).map((Component) => Component.data(options))
+  )
+}
+
+TheThemeStyle.cssString = (options) => {
+  const styles = TheThemeStyle.data(options)
+  return styleString.fromStyles(styles)
+}
+
+TheThemeStyle.componentPaths = [
+{{#each styleComponents}}
+  '{{pkgName}}/shim/{{{componentName}}}',
+{{/each}}
+
+]
+
+export default TheThemeStyle

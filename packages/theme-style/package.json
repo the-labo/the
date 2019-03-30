@@ -1,0 +1,62 @@
+{
+  "name": "@the-/theme-style",
+  "description": "Theme style for the-components",
+  "version": "3.0.10",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2",
+    "the-component-util": "^3.0.22",
+    "the-style": "^2.2.8",
+    "the-style-util": "^1.0.2"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.4.2",
+    "@the-/component-demo": "file:../component-demo",
+    "@the-/router": "^15.1.3",
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates",
+    "coz": "^7.0.19",
+    "objnest": "^5.0.6",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "react-router-dom": "^5.0.0",
+    "the-components": "^12.0.8"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/the-theme-style#readme",
+  "keywords": [
+    "component",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "shim",
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16",
+    "@the-/components": ">=15"
+  },
+  "repository": "the-labo/the-theme-style",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-test",
+    "watch": "the-script-build -w"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

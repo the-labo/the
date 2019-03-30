@@ -37,6 +37,9 @@ var/
 /packages/code/lib/processors/index.js
 /packages/code/test/TheCodeTest.js
 /packages/component-demo/lib/index.jsx
+/packages/components/doc/demo/bundle.js
+/packages/components/lib/index.js
+/packages/components/lib/index.jsx
 /packages/condition/doc/demo/bundle.js
 /packages/condition/lib/index.jsx
 /packages/container/doc/demo/bundle.js
@@ -165,6 +168,8 @@ var/
 /packages/table/lib/index.jsx
 /packages/templates/lib/eslintignore.js
 /packages/templates/lib/index.js
+/packages/theme-style/doc/demo/bundle.js
+/packages/theme-style/lib/index.jsx
 /packages/tmp/lib/index.js
 /packages/toast/doc/demo/bundle.js
 /packages/toast/lib/index.jsx
