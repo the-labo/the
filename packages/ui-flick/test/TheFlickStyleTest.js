@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheFlickStyle from '../lib/TheFlickStyle'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheFlickStyle from '../lib/TheFlickStyle'
 
 describe('the-flick-style', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheFlickStyle />
-    )
+    let element = render(<TheFlickStyle />)
     ok(element)
   })
 })

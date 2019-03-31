@@ -2,11 +2,11 @@
 
 const { TheState } = require('@the-/state')
 
-async function tryExample () {
+async function tryExample() {
   const state = new TheState()
 
   const account = state.scope('account')
-  state.subscribe(({ account }) => {
+  state.subscribe(() => {
     // Handle change
     /* ... */
   })
@@ -14,7 +14,6 @@ async function tryExample () {
   account.set({ name: 'John', password: 'xxxxx' })
 
   console.log(account.get('name')) // John
-
 }
 
 tryExample().catch((err) => console.error(err))

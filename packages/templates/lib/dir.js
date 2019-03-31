@@ -9,7 +9,7 @@ const aglob = require('aglob')
 const fs = require('fs')
 const path = require('path')
 const reserved = require('reserved')
-const { findupDir } = require('the-path-util')
+const { findupDir } = require('@the-/util-path')
 const _tmpl = require('./_tmpl')
 
 const shouldRequire = (name) => {

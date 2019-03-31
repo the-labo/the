@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const ActionTypes = require('../lib/constants/ActionTypes')
-const { ok, strictEqual: equal, deepStrictEqual: deepEqual } = require('assert')
-
 describe('action-types', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

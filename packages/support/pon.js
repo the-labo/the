@@ -21,7 +21,7 @@ function theSupportTask (pattern, options = {}) {
 
     let results
     try {
-      results = await support.es5()
+      results = await support.es2015()
     } catch (e) {
       logger.error(e.message)
 

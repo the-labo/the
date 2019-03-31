@@ -4,13 +4,12 @@
  */
 'use strict'
 
-const withLocation = require('../lib/withLocation')
-const { ok, equal } = require('assert')
+const { equal } = require('assert')
 const injectmock = require('injectmock')
+const withLocation = require('../lib/withLocation')
 
 describe('with-location', () => {
-  before(() => {
-  })
+  before(() => {})
 
   after(() => {
     injectmock.restoreAll()
@@ -18,12 +17,12 @@ describe('with-location', () => {
 
   it('Do test', () => {
     injectmock(global, 'window', {
-      'location': {
-        href:'/foo/bar',
-      }
+      location: {
+        href: '/foo/bar',
+      },
     })
     const L = withLocation(class {})
-    const l = new L
+    const l = new L()
     equal(l.location.href, '/foo/bar')
   })
 })

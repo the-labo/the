@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-table",
   "description": "Table for the-components",
-  "version": "15.1.5",
+  "version": "15.2.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,10 +12,9 @@
   },
   "dependencies": {
     "@the-/const-ui": "^2.0.11",
-    "@the-/ui-icon": "^15.1.7",
+    "@the-/ui-icon": "^15.1.8",
     "@the-/ui-input": "^15.1.5",
     "@the-/ui-style": "^15.1.4",
-    "@the-/util-component": "^15.1.4",
     "@the-/util-ui": "^15.1.4",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"

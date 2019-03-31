@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-toast",
   "description": "Toast of the-components",
-  "version": "15.1.5",
+  "version": "15.2.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -35,7 +35,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/ui-toast#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "the",
     "ui"

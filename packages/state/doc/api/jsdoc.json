@@ -1,0 +1,909 @@
+[
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/state",
+    "longname": "module:@the-/state",
+    "name": "@the-/state",
+    "kind": "module",
+    "description": "State holder for the-components",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheState()",
+    "longname": "TheState",
+    "name": "TheState",
+    "kind": "constructor",
+    "memberof": "TheState",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Default values",
+        "name": "options.defaults"
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "RootState()",
+    "longname": "RootState",
+    "name": "RootState",
+    "kind": "constructor",
+    "description": "State works as root",
+    "memberof": "RootState",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Default values",
+        "name": "options.defaults"
+      }
+    ],
+    "order": 6
+  },
+  {
+    "id": "ScopedState()",
+    "longname": "ScopedState",
+    "name": "ScopedState",
+    "kind": "constructor",
+    "description": "State works as scope",
+    "memberof": "ScopedState",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Name of scope",
+        "name": "name"
+      }
+    ],
+    "order": 8
+  },
+  {
+    "id": "State()",
+    "longname": "State",
+    "name": "State",
+    "kind": "constructor",
+    "description": "Abstract state",
+    "memberof": "State",
+    "order": 11
+  },
+  {
+    "id": "TheState",
+    "longname": "TheState",
+    "name": "TheState",
+    "kind": "class",
+    "scope": "global",
+    "augments": [
+      "RootState"
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "TheState.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "RootState",
+    "longname": "RootState",
+    "name": "RootState",
+    "kind": "class",
+    "scope": "global",
+    "augments": [
+      "State"
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "RootState.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 5
+  },
+  {
+    "id": "ScopedState",
+    "longname": "ScopedState",
+    "name": "ScopedState",
+    "kind": "class",
+    "scope": "global",
+    "augments": [
+      "State"
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "ScopedState.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 7
+  },
+  {
+    "meta": {
+      "lineno": 1,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "virtual": true,
+    "id": "State",
+    "longname": "State",
+    "name": "State",
+    "kind": "class",
+    "scope": "global",
+    "order": 10
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheState instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheState"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "ScopedState#scope",
+    "longname": "ScopedState#scope",
+    "name": "scope",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Scope with name",
+    "memberof": "ScopedState",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "variable": true,
+        "description": "Name of scope",
+        "name": "names"
+      }
+    ],
+    "meta": {
+      "lineno": 42,
+      "filename": "ScopedState.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 9
+  },
+  {
+    "id": "State#del",
+    "longname": "State#del",
+    "name": "del",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Delete value for name",
+    "memberof": "State",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "name"
+      }
+    ],
+    "meta": {
+      "lineno": 25,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 12
+  },
+  {
+    "id": "State#drop",
+    "longname": "State#drop",
+    "name": "drop",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Drop all values",
+    "memberof": "State",
+    "params": [],
+    "meta": {
+      "lineno": 38,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 13
+  },
+  {
+    "id": "State#get",
+    "longname": "State#get",
+    "name": "get",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get value for name",
+    "memberof": "State",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "name"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 47,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 14
+  },
+  {
+    "id": "State#keys",
+    "longname": "State#keys",
+    "name": "keys",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get keys",
+    "memberof": "State",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Array.<string>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 56,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 15
+  },
+  {
+    "id": "State#publish",
+    "longname": "State#publish",
+    "name": "publish",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Publish to subscriptions",
+    "memberof": "State",
+    "params": [],
+    "meta": {
+      "lineno": 63,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 16
+  },
+  {
+    "id": "State#set",
+    "longname": "State#set",
+    "name": "set",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Set values",
+    "memberof": "State",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "values"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 74,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 17
+  },
+  {
+    "id": "State#subscribe",
+    "longname": "State#subscribe",
+    "name": "subscribe",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subscribe changes",
+    "memberof": "State",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "callback"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "- unsubscribe function"
+      }
+    ],
+    "meta": {
+      "lineno": 92,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 18
+  },
+  {
+    "id": "State#unsubscribe",
+    "longname": "State#unsubscribe",
+    "name": "unsubscribe",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Unsubscribe",
+    "memberof": "State",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "callback"
+      }
+    ],
+    "meta": {
+      "lineno": 102,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 19
+  },
+  {
+    "id": "RootState#del",
+    "longname": "RootState#del",
+    "name": "del",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "State#del",
+    "inherited": true,
+    "overrides": "State#del",
+    "description": "Delete value for name",
+    "memberof": "RootState",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "name"
+      }
+    ],
+    "meta": {
+      "lineno": 25,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 20
+  },
+  {
+    "id": "RootState#drop",
+    "longname": "RootState#drop",
+    "name": "drop",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "State#drop",
+    "inherited": true,
+    "overrides": "State#drop",
+    "description": "Drop all values",
+    "memberof": "RootState",
+    "params": [],
+    "meta": {
+      "lineno": 38,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 21
+  },
+  {
+    "id": "RootState#get",
+    "longname": "RootState#get",
+    "name": "get",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "State#get",
+    "inherited": true,
+    "description": "Get value for name",
+    "memberof": "RootState",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "name"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 47,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 22
+  },
+  {
+    "id": "RootState#keys",
+    "longname": "RootState#keys",
+    "name": "keys",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "State#keys",
+    "inherited": true,
+    "description": "Get keys",
+    "memberof": "RootState",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Array.<string>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 56,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 23
+  },
+  {
+    "id": "RootState#publish",
+    "longname": "RootState#publish",
+    "name": "publish",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "State#publish",
+    "inherited": true,
+    "description": "Publish to subscriptions",
+    "memberof": "RootState",
+    "params": [],
+    "meta": {
+      "lineno": 63,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 24
+  },
+  {
+    "id": "RootState#set",
+    "longname": "RootState#set",
+    "name": "set",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "State#set",
+    "inherited": true,
+    "description": "Set values",
+    "memberof": "RootState",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "values"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 74,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 25
+  },
+  {
+    "id": "RootState#subscribe",
+    "longname": "RootState#subscribe",
+    "name": "subscribe",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "State#subscribe",
+    "inherited": true,
+    "description": "Subscribe changes",
+    "memberof": "RootState",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "callback"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "- unsubscribe function"
+      }
+    ],
+    "meta": {
+      "lineno": 92,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 26
+  },
+  {
+    "id": "RootState#unsubscribe",
+    "longname": "RootState#unsubscribe",
+    "name": "unsubscribe",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "State#unsubscribe",
+    "inherited": true,
+    "description": "Unsubscribe",
+    "memberof": "RootState",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "callback"
+      }
+    ],
+    "meta": {
+      "lineno": 102,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 27
+  },
+  {
+    "id": "ScopedState#del",
+    "longname": "ScopedState#del",
+    "name": "del",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "State#del",
+    "inherited": true,
+    "description": "Delete value for name",
+    "memberof": "ScopedState",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "name"
+      }
+    ],
+    "meta": {
+      "lineno": 25,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 28
+  },
+  {
+    "id": "ScopedState#drop",
+    "longname": "ScopedState#drop",
+    "name": "drop",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "State#drop",
+    "inherited": true,
+    "description": "Drop all values",
+    "memberof": "ScopedState",
+    "params": [],
+    "meta": {
+      "lineno": 38,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 29
+  },
+  {
+    "id": "ScopedState#get",
+    "longname": "ScopedState#get",
+    "name": "get",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "State#get",
+    "inherited": true,
+    "description": "Get value for name",
+    "memberof": "ScopedState",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "name"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 47,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 30
+  },
+  {
+    "id": "ScopedState#keys",
+    "longname": "ScopedState#keys",
+    "name": "keys",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "State#keys",
+    "inherited": true,
+    "description": "Get keys",
+    "memberof": "ScopedState",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Array.<string>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 56,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 31
+  },
+  {
+    "id": "ScopedState#publish",
+    "longname": "ScopedState#publish",
+    "name": "publish",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "State#publish",
+    "inherited": true,
+    "description": "Publish to subscriptions",
+    "memberof": "ScopedState",
+    "params": [],
+    "meta": {
+      "lineno": 63,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 32
+  },
+  {
+    "id": "ScopedState#set",
+    "longname": "ScopedState#set",
+    "name": "set",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "State#set",
+    "inherited": true,
+    "description": "Set values",
+    "memberof": "ScopedState",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "values"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 74,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 33
+  },
+  {
+    "id": "ScopedState#subscribe",
+    "longname": "ScopedState#subscribe",
+    "name": "subscribe",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "State#subscribe",
+    "inherited": true,
+    "description": "Subscribe changes",
+    "memberof": "ScopedState",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "callback"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "- unsubscribe function"
+      }
+    ],
+    "meta": {
+      "lineno": 92,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 34
+  },
+  {
+    "id": "ScopedState#unsubscribe",
+    "longname": "ScopedState#unsubscribe",
+    "name": "unsubscribe",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "State#unsubscribe",
+    "inherited": true,
+    "description": "Unsubscribe",
+    "memberof": "ScopedState",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "callback"
+      }
+    ],
+    "meta": {
+      "lineno": 102,
+      "filename": "State.js",
+      "path": "/Users/okuni/Projects/the/packages/state/lib/state"
+    },
+    "order": 35
+  }
+]

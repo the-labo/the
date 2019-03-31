@@ -1,7 +1,7 @@
 {
   "name": "@the-/support",
   "description": "JS support version checker",
-  "version": "15.1.4",
+  "version": "15.2.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -28,7 +28,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/support#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "lib",
     "the"

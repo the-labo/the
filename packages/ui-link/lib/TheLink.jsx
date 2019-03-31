@@ -6,8 +6,18 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { TheIcon } from '@the-/ui-icon'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
-import { get } from '@the-/window'
 import TheLinkStyle from './TheLinkStyle'
+
+const isExternalLink = (url) => {
+  if (!url) {
+    return url
+  }
+  try {
+    return !!new URL(url).protocol
+  } catch (e) {
+    return false
+  }
+}
 
 /**
  * Link of the-components
@@ -15,12 +25,7 @@ import TheLinkStyle from './TheLinkStyle'
 class TheLink extends React.Component {
   static Link(props) {
     const { children, className, to } = props
-    const { protocol } =
-      (to &&
-        typeof to === 'string' &&
-        new URL(to, get('location.href') || void 0)) ||
-      {}
-    if (protocol) {
+    if (isExternalLink(to)) {
       // External link
       return (
         <a

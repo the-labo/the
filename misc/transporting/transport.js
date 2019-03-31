@@ -147,11 +147,7 @@ const _removeDevDeps = async (baseDir, names) => {
     }
     if (!/demo/.test(name)) {
       if (['ui'].includes(kind)) {
-        const demoComponentDir = path.resolve(
-          baseDir,
-          'packages',
-          'demo-ui',
-        )
+        const demoComponentDir = path.resolve(baseDir, 'packages', 'demo-ui')
         const demoComponentPkg = require(path.resolve(
           demoComponentDir,
           'package.json',
@@ -224,7 +220,7 @@ const _removeDevDeps = async (baseDir, names) => {
           )
         }
       }
-      if (['lib', 'util', 'mixin', 'const'].includes(kind)) {
+      if (['driver', 'lib', 'util', 'mixin', 'const'].includes(kind)) {
         const demoLibDir = path.resolve(baseDir, 'packages', 'demo-lib')
         rimraf.sync(path.resolve(toDir, 'doc/readme'))
         await copyDirAsync(`${demoLibDir}/doc/readme`, `${toDir}/doc/readme`)

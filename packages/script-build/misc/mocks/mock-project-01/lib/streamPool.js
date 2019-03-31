@@ -48,4 +48,4 @@ function streamPool(...args) {
   return new StreamPool(...args)
 }
 
-module.exports = streamPool
+export default streamPool

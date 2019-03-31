@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const injectProperties = require('../lib/helpers/injectProperties')
-const { ok, strictEqual: equal, deepStrictEqual: deepEqual } = require('assert')
-
 describe('inject-properties', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

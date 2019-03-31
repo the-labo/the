@@ -1,7 +1,7 @@
 {
   "name": "@the-/templates",
   "description": "Templates for the-projects",
-  "version": "15.1.4",
+  "version": "15.2.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,12 +11,12 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/util-path": "^1.0.2",
     "aglob": "^3.0.1",
     "evaljson": "^6.0.4",
     "objnest": "^5.0.6",
     "reserved": "^0.1.2",
-    "stringcase": "^4.3.1",
-    "the-path-util": "^1.0.1"
+    "stringcase": "^4.3.1"
   },
   "devDependencies": {
     "@the-/script-build": "^15.1.5",

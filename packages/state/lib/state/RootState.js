@@ -14,28 +14,27 @@ const { createReduxStore, getReduxDevtool } = require('../helpers/reduxHelper')
 
 /** @lends RootState */
 class RootState extends ScopedState {
-  static reduceStoreAction (state = {}, action) {
+  static reduceStoreAction(state = {}, action) {
     switch (action.type) {
-      case ActionTypes.SET:
-        return { ...state, ...action.payload }
       case ActionTypes.DEL:
-        return Object
-          .entries(state)
-          .filter(([k, v]) => !action.payload.includes(k))
+        return Object.entries(state)
+          .filter(([k]) => !action.payload.includes(k))
           .reduce((reduced, [k, v]) => ({ ...reduced, [k]: v }), {})
       case ActionTypes.DROP:
         return {}
+      case ActionTypes.SET:
+        return { ...state, ...action.payload }
       default:
         return state
     }
   }
 
-  constructor (options = {}) {
+  constructor(options = {}) {
     const { name = '@@root' } = options
     super(name, {})
   }
 
-  set $$state (values) {
+  set $$state(values) {
     const { store } = this
     store.dispatch({
       payload: values,
@@ -44,24 +43,20 @@ class RootState extends ScopedState {
     this.publish()
   }
 
-  get $$state () {
+  get $$state() {
     const { store } = this
     return store.getState()
   }
 
-  $$init () {
-    this.store = createReduxStore(
-      RootState.reduceStoreAction,
-      {},
-      [
-        getReduxDevtool({
-          name: `TheState@${get('location.host')}`,
-        }),
-      ]
-    )
+  $$init() {
+    this.store = createReduxStore(RootState.reduceStoreAction, {}, [
+      getReduxDevtool({
+        name: `TheState@${get('location.host')}`,
+      }),
+    ])
   }
 
-  del (name) {
+  del(name) {
     const { store } = this
     store.dispatch({
       payload: [].concat(name),
@@ -70,7 +65,7 @@ class RootState extends ScopedState {
     this.publish()
   }
 
-  drop () {
+  drop() {
     const { store } = this
     store.dispatch({ type: ActionTypes.DROP })
     this.publish()

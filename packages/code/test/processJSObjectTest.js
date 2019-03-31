@@ -336,9 +336,10 @@ const v2 = value2 => a ? value2 : { value2 }
     equal(
       await processJSObject(`
 const x =  {a:{}, '': {}}
-      `), `
-const x =  {'': {}, a:{}}
+      `),
       `
+const x =  {'': {}, a:{}}
+      `,
     )
   })
 })

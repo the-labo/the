@@ -4,4 +4,4 @@
 'use strict'
 
 export * from './esm'
-export { default  } from './esm'
+export { default } from './esm'

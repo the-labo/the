@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const State = require('../lib/state/State')
-const { ok, strictEqual: equal, deepStrictEqual: deepEqual } = require('assert')
-
 describe('state', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

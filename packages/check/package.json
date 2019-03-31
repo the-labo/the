@@ -1,7 +1,7 @@
 {
   "name": "@the-/check",
   "description": "Check utility for the-framework",
-  "version": "15.1.4",
+  "version": "15.2.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -9,6 +9,7 @@
   },
   "browser": {
     ".": "shim",
+    "./lib": "./shim",
     "fs": false,
     "hasbin": false,
     "os": "os-browserify",

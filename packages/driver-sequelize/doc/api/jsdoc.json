@@ -1,0 +1,339 @@
+[
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/driver-sequelize",
+    "longname": "module:@the-/driver-sequelize",
+    "name": "@the-/driver-sequelize",
+    "kind": "module",
+    "description": "Sequelize driver for the-framework",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "module:constant variables",
+    "longname": "module:constant variables",
+    "name": "constant variables",
+    "kind": "module",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/constants"
+    },
+    "order": 6
+  },
+  {
+    "id": "module:helpers",
+    "longname": "module:helpers",
+    "name": "helpers",
+    "kind": "module",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/helpers"
+    },
+    "order": 7
+  },
+  {
+    "id": "module:mixins",
+    "longname": "module:mixins",
+    "name": "mixins",
+    "kind": "module",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/mixins"
+    },
+    "order": 8
+  },
+  {
+    "id": "module:parsing",
+    "longname": "module:parsing",
+    "name": "parsing",
+    "kind": "module",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/parsing"
+    },
+    "order": 13
+  },
+  {
+    "id": "TheDriverSequelize",
+    "longname": "TheDriverSequelize",
+    "name": "TheDriverSequelize",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheDriverSequelize.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheDriverSequelize instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheDriverSequelize"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "sequelizeMix",
+    "longname": "sequelizeMix",
+    "name": "sequelizeMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixin of sequelize",
+    "meta": {
+      "lineno": 1,
+      "filename": "sequelizeMix.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/mixins"
+    },
+    "order": 9
+  },
+  {
+    "id": "defineModel",
+    "longname": "defineModel",
+    "name": "defineModel",
+    "kind": "function",
+    "scope": "global",
+    "description": "Parse schema",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "defineModel.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/modeling"
+    },
+    "order": 10
+  },
+  {
+    "id": "defineModelColumn",
+    "longname": "defineModelColumn",
+    "name": "defineModelColumn",
+    "kind": "function",
+    "scope": "global",
+    "description": "Define model column",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "propertyName"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "def"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "defineModelColumn.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/modeling"
+    },
+    "order": 11
+  },
+  {
+    "id": "prepareModel",
+    "longname": "prepareModel",
+    "name": "prepareModel",
+    "kind": "function",
+    "scope": "global",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "prepareModel.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/modeling"
+    },
+    "order": 12
+  },
+  {
+    "id": "parseAttributeName",
+    "longname": "parseAttributeName",
+    "name": "parseAttributeName",
+    "kind": "function",
+    "scope": "global",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "parseAttributeName.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/parsing"
+    },
+    "order": 14
+  },
+  {
+    "id": "parseFilter",
+    "longname": "parseFilter",
+    "name": "parseFilter",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "parseFilter.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/parsing"
+    },
+    "order": 15
+  },
+  {
+    "id": "parseSort",
+    "longname": "parseSort",
+    "name": "parseSort",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "parseSort.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/parsing"
+    },
+    "order": 16
+  },
+  {
+    "id": "TheDriverSequelize#define",
+    "longname": "TheDriverSequelize#define",
+    "name": "define",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Define schema",
+    "memberof": "TheDriverSequelize",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "resourceName"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "schema"
+      }
+    ],
+    "meta": {
+      "lineno": 75,
+      "filename": "TheDriverSequelize.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheDriverSequelize#untilReady",
+    "longname": "TheDriverSequelize#untilReady",
+    "name": "untilReady",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Wait until ready",
+    "memberof": "TheDriverSequelize",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 255,
+      "filename": "TheDriverSequelize.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
+    },
+    "async": true,
+    "order": 5
+  }
+]

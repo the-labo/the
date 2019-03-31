@@ -3,17 +3,17 @@
     "kind": "ui",
     "name": "ui-alt"
   },
-  "the-ui": {
-    "kind": "index",
-    "name": "ui"
-  },
-  "the-theme-style": {
-    "kind": "ui",
-    "name": "ui-theme-style"
-  },
   "the-array": {
     "kind": "util",
     "name": "util-array"
+  },
+  "the-color": {
+    "kind": "util",
+    "name": "util-color"
+  },
+  "the-db-util": {
+    "kind": "util",
+    "name": "util-db"
   },
   "the-assert": {
     "kind": "lib",
@@ -67,6 +67,10 @@
     "kind": "lib",
     "name": "code"
   },
+  "the-component-constants": {
+    "kind": "const",
+    "name": "const-ui"
+  },
   "the-component-demo": {
     "kind": "ui",
     "name": "ui-demo"
@@ -87,10 +91,6 @@
     "kind": "lib",
     "name": "context"
   },
-  "the-state": {
-    "kind": "lib",
-    "name": "state"
-  },
   "the-controller-base": {
     "kind": "lib",
     "name": "controller"
@@ -98,10 +98,6 @@
   "the-controller-mixins": {
     "kind": "mixin",
     "name": "mixin-controller"
-  },
-  "the-scene-mixins": {
-    "kind": "mixin",
-    "name": "mixin-scene"
   },
   "the-cycle": {
     "kind": "ui",
@@ -127,6 +123,14 @@
     "kind": "ui",
     "name": "ui-dialog"
   },
+  "the-driver-mongo": {
+    "kind": "lib",
+    "name": "driver-mongo"
+  },
+  "the-driver-sequelize": {
+    "kind": "lib",
+    "name": "driver-sequelize"
+  },
   "the-entrypoint": {
     "kind": "lib",
     "name": "entrypoint"
@@ -138,6 +142,10 @@
   "the-file-util": {
     "kind": "util",
     "name": "util-file"
+  },
+  "the-path-util": {
+    "kind": "util",
+    "name": "util-path"
   },
   "the-flick": {
     "kind": "ui",
@@ -315,6 +323,10 @@
     "kind": "lib",
     "name": "scene"
   },
+  "the-scene-mixins": {
+    "kind": "mixin",
+    "name": "mixin-scene"
+  },
   "the-scope": {
     "kind": "lib",
     "name": "scope"
@@ -367,6 +379,10 @@
     "kind": "ui",
     "name": "ui-spin"
   },
+  "the-state": {
+    "kind": "lib",
+    "name": "state"
+  },
   "the-step": {
     "kind": "ui",
     "name": "ui-step"
@@ -411,6 +427,10 @@
     "kind": "templates",
     "name": "templates"
   },
+  "the-theme-style": {
+    "kind": "ui",
+    "name": "ui-theme-style"
+  },
   "the-tmp": {
     "kind": "lib",
     "name": "tmp"
@@ -418,6 +438,10 @@
   "the-toast": {
     "kind": "ui",
     "name": "ui-toast"
+  },
+  "the-ui": {
+    "kind": "index",
+    "name": "ui"
   },
   "the-url": {
     "kind": "lib",
@@ -434,9 +458,5 @@
   "the-window": {
     "kind": "lib",
     "name": "window"
-  },
-  "the-component-constants": {
-    "kind": "const",
-    "name": "const-ui"
   }
 }

@@ -10,7 +10,7 @@ const RootState = require('./state/RootState')
 
 /** @lends TheState */
 class TheState extends RootState {
-  constructor (options = {}) {
+  constructor(options = {}) {
     const { defaults = {}, name } = options
     super(name, { defaults })
   }

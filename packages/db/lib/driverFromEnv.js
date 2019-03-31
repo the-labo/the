@@ -36,7 +36,7 @@ function driverFromEnv(env) {
     case 'memory':
       return require('clay-driver-memory')()
     case 'mongo':
-      return require('the-driver-mongo').create({
+      return require('@the-/driver-mongo').create({
         database,
         host,
         password,
@@ -73,7 +73,7 @@ function driverFromEnv(env) {
         storage,
       })
     case 'sequelize/mysql':
-      return require('the-driver-sequelize')({
+      return require('@the-/driver-sequelize')({
         database,
         dialect: 'mysql',
         dialectOptions: { ssl },
@@ -90,7 +90,7 @@ function driverFromEnv(env) {
       })
     case 'sequelize/sqlite':
       mkdirp.sync(path.dirname(storage))
-      return require('the-driver-sequelize')({
+      return require('@the-/driver-sequelize')({
         database,
         dialect: 'sqlite',
         isolationLevel: 'READ COMMITTED',

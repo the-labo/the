@@ -4,20 +4,16 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const withForm = require('../lib/withForm')
-const { ok, equal } = require('assert')
 
 describe('with-form', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
-    const Form = withForm(
-      class WithForm {}
-    )
+    const Form = withForm(class WithForm {})
     const f = new Form()
     ok(f.postForm)
     ok(f.sendForm)

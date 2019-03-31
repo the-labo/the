@@ -5,11 +5,11 @@
 'use strict'
 
 const path = require('path')
-const { findupDir } = require('the-path-util')
 const {
   constants: { NodeTypes },
   finder,
 } = require('@the-/ast')
+const { findupDir } = require('@the-/util-path')
 const findCJSExportsAssignmentsExpressionOnProgramNode = require('./findCJSExportsAssignmentsExpressionOnProgramNode')
 const findJSDocAnnotationsInCommendNode = require('./findJSDocAnnotationsInCommendNode')
 

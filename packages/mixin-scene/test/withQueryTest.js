@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const withQuery = require('../lib/withQuery')
-const { ok, equal } = require('assert')
-
 describe('with-query', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

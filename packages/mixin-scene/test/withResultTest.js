@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const withResult = require('../lib/withResult')
-const { ok, equal } = require('assert')
-
 describe('with-result', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

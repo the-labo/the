@@ -4,17 +4,14 @@
  */
 'use strict'
 
-import TheFlickImage from '../lib/TheFlickImage'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
-import { render } from '@the-/script-test'
+import TheFlickImage from '../lib/TheFlickImage'
 
 describe('the-flick-image', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
     ok(TheFlickImage)

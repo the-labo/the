@@ -1,7 +1,7 @@
 {
   "name": "@the-/const-ui",
   "description": "Constants for the-components",
-  "version": "2.0.11",
+  "version": "15.2.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -35,7 +35,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "the-labo/the-component-constants",
+  "repository": "the-labo/the",
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",

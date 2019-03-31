@@ -4,43 +4,38 @@
  */
 'use strict'
 
+const { equal, ok } = require('assert')
 const withFilter = require('../lib/withFilter')
-const {ok, equal} = require('assert')
 
 describe('with-filter', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     const C = withFilter(
       class A {
-        constructor () {
+        constructor() {
           this.values = {}
         }
 
-        init () {
-          this.values = {}
-        }
-
-        get (key) {
+        get(key) {
           return this[key]
         }
 
-        set (values) {
+        init() {
+          this.values = {}
+        }
+
+        set(values) {
           Object.assign(this.values, values)
         }
-      }
+      },
     )
     ok(C)
     const c = new C()
-    c.setFilterByQ('hoge', {and: {x: 1}})
-    equal(
-      c.values.filter.x,
-      1
-    )
+    c.setFilterByQ('hoge', { and: { x: 1 } })
+    equal(c.values.filter.x, 1)
   })
 })
 

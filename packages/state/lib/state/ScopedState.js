@@ -11,29 +11,27 @@ const NAME_SEPARATE_PATTERN = /\./
 
 /** @lends ScopedState */
 class ScopedState extends State {
-  constructor (name, options = {}) {
+  constructor(name, options = {}) {
     super()
-    const {
-      parent = null,
-    } = options
+    const { parent = null } = options
     this.name = name
     this.scopes = new Map()
     this.parent = parent
     this.$$init()
   }
 
-  set $$state (values) {
+  set $$state(values) {
     const { name, parent } = this
     parent.set({ [name]: values })
     this.publish()
   }
 
-  get $$state () {
+  get $$state() {
     const { name, parent } = this
     return parent.get(name)
   }
 
-  $$init () {
+  $$init() {
     this.set({})
   }
 
@@ -41,7 +39,7 @@ class ScopedState extends State {
    * Scope with name
    * @param {...string} names - Name of scope
    */
-  scope (...names) {
+  scope(...names) {
     const [name, ...subNames] = names
     if (subNames.length > 0) {
       const scope = this.scope(name)

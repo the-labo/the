@@ -4,19 +4,17 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const withTargets = require('../lib/withTargets')
-const {ok, equal} = require('assert')
 
 describe('with-targets', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     const C = withTargets(class {})
-    const c = new C
+    const c = new C()
     ok(c)
   })
 })

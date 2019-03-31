@@ -1,7 +1,7 @@
 {
   "name": "@the-/context",
   "description": "React context for the-components",
-  "version": "15.1.4",
+  "version": "15.2.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@the-/assert": "^15.1.4",
+    "@the-/state": "^15.1.4",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {

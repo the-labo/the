@@ -56,7 +56,6 @@ function depsRule(config) {
         ImportDeclaration: (node) => {
           const modulePaths = modulePathsFor(node.source.value, importFrom)
           const ok = modulePaths.some((modulePath) => canRequire(modulePath))
-          console.log('node', modulePaths, ok)
           let { column, line } = node.loc.start
           !ok &&
             report('Module not found', {

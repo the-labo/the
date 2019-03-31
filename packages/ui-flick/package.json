@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-flick",
   "description": "Flickable viewer of the-components",
-  "version": "15.1.6",
+  "version": "15.2.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -55,7 +55,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "the-labo/the-flick",
+  "repository": "the-labo/the",
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",

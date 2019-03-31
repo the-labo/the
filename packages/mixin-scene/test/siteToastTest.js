@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const siteToast = require('../lib/siteToast')
-const { ok, equal } = require('assert')
-
 describe('site-toast', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

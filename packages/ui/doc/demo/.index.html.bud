@@ -3,18 +3,20 @@
  */
 'use strict'
 
+const { readFileSync } = require('fs')
 const demoMarkup = require('@the-/ui-demo/markup')
-const {readFileSync} = require('fs')
 
 module.exports = {
+  data: {
+    js: './bundle.js',
+    pkg: require('../../package.json'),
+    snippet: String(
+      readFileSync(require.resolve('../../example/example-usage.jsx')),
+    ),
+  },
   force: true,
   mode: '444',
   tmpl: demoMarkup,
-  data: {
-    pkg: require('../../package.json'),
-    js: './bundle.js',
-    snippet: String(readFileSync(require.resolve('../../example/example-usage.jsx')))
-  }
 }
 
 if (!module.parent) {

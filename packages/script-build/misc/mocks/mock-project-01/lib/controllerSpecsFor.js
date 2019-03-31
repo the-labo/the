@@ -16,4 +16,4 @@ function controllerSpecsFor(controllerModules) {
   }))
 }
 
-module.exports = controllerSpecsFor
+export default controllerSpecsFor

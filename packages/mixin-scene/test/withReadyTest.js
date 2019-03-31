@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const withReady = require('../lib/withReady')
-const { ok, equal } = require('assert')
-
 describe('with-ready', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

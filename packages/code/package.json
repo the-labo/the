@@ -1,7 +1,7 @@
 {
   "name": "@the-/code",
   "description": "Code formatter of the-frameworks",
-  "version": "15.1.5",
+  "version": "15.2.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -26,15 +26,14 @@
     "lodash.clone": "^4.5.0",
     "postcss": "^7.0.14",
     "prettier": "^1.16.4",
-    "the-path-util": "^1.0.1",
     "writeout": "^2.2.4",
     "yaml": "^1.4.0"
   },
   "devDependencies": {
     "@the-/script-build": "^15.1.5",
-    "@the-/script-doc": "file:../script-doc",
-    "@the-/script-test": "file:../script-test",
-    "@the-/templates": "file:../templates",
+    "@the-/script-doc": "^15.2.0",
+    "@the-/script-test": "^15.2.0",
+    "@the-/templates": "^15.2.0",
     "coz": "^7.0.19",
     "filecopy": "^4.0.2"
   },
@@ -42,7 +41,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/code#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "lib",
     "the"

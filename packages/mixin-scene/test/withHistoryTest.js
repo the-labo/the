@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const withHistory = require('../lib/withHistory')
-const { ok, equal } = require('assert')
-
 describe('with-history', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

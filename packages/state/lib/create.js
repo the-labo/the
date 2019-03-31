@@ -9,7 +9,7 @@
 const TheState = require('./TheState')
 
 /** @lends create */
-function create (...args) {
+function create(...args) {
   return new TheState(...args)
 }
 

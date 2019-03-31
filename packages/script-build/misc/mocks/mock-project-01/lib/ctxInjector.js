@@ -20,4 +20,4 @@ function ctxInjector(creators) {
   }
 }
 
-module.exports = ctxInjector
+export default ctxInjector

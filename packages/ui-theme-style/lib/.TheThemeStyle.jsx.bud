@@ -1,28 +1,28 @@
 /**
  * Bud file for TheThemeStyle.jsx
  */
-
 'use strict'
 
 const components = require('@the-/ui/lib/components.json')
 
 module.exports = {
+  data: {
+    pkg: require('../package.json'),
+    styleComponents: Object.keys(components).reduce(
+      (styleComponents, pkgName) => [
+        ...styleComponents,
+        ...components[pkgName]
+          .filter((componentName) => /Style$/.test(componentName))
+          .map((componentName) => ({
+            componentName,
+            pkgName,
+          })),
+      ],
+      [],
+    ),
+  },
   force: true,
   mode: '444',
-  data: {
-    styleComponents: Object.keys(components).reduce((styleComponents, pkgName) =>
-        [
-          ...styleComponents,
-          ...components[pkgName]
-            .filter((componentName) => /Style$/.test(componentName))
-            .map((componentName) => ({
-              pkgName,
-              componentName
-            }))
-        ]
-      , []),
-    pkg: require('../package.json')
-  }
 }
 
 if (!module.parent) {

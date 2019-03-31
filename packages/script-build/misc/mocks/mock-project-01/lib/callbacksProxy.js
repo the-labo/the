@@ -25,4 +25,4 @@ function callbacksProxy(options = {}) {
   )
 }
 
-module.exports = callbacksProxy
+export default callbacksProxy

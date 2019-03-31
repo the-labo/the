@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const lib = require('../shim')
-const {ok} = require('assert')
 
 describe('index', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Exports components', () => {
     let names = Object.keys(lib)

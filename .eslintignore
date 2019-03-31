@@ -38,6 +38,13 @@ var/
 /packages/demo-lib/lib/index.js
 /packages/demo-ui/doc/demo/bundle.js
 /packages/demo-ui/lib/index.jsx
+/packages/driver-mongo/lib/index.js
+/packages/driver-mongo/lib/mixins/index.js
+/packages/driver-sequelize/lib/constants/index.js
+/packages/driver-sequelize/lib/helpers/index.js
+/packages/driver-sequelize/lib/index.js
+/packages/driver-sequelize/lib/mixins/index.js
+/packages/driver-sequelize/lib/parsing/index.js
 /packages/entrypoint/lib/index.js
 /packages/error/lib/index.js
 /packages/geo/lib/index.js
@@ -65,8 +72,6 @@ var/
 /packages/resize/lib/index.js
 /packages/resource/lib/index.js
 /packages/resource/lib/mixins/index.js
-/packages/route/doc/demo/bundle.js
-/packages/route/lib/index.jsx
 /packages/run/lib/index.js
 /packages/s3/lib/index.js
 /packages/scene/lib/index.js
@@ -184,7 +189,9 @@ var/
 /packages/url/lib/index.js
 /packages/util-array/lib/index.js
 /packages/util-client/lib/index.js
+/packages/util-color/lib/index.js
 /packages/util-file/lib/index.js
+/packages/util-path/lib/index.js
 /packages/util-server/lib/index.js
 /packages/util-site/lib/index.js
 /packages/util-style/lib/index.js

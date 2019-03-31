@@ -1,16 +1,15 @@
 /**
  * Bud file for index.jsx
  */
-
 'use strict'
 
 module.exports = {
-  force: true,
-  mode: '444',
   data: {
     components: require('./components.json'),
     pkg: require('../package.json'),
-  }
+  },
+  force: true,
+  mode: '444',
 }
 
 if (!module.parent) {

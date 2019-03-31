@@ -4,22 +4,19 @@
  */
 'use strict'
 
+const { deepEqual, ok } = require('assert').strict
 const withEntry = require('../lib/withEntry')
-const { ok, deepEqual } = require('assert').strict
 
 describe('with-entry', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
-
     const scope = {
       entry: {
-        set(values) {
-          Object.assign(this.state, values)
+        drop() {
+          this.state = {}
         },
         get(key) {
           return this.state[key]
@@ -27,14 +24,14 @@ describe('with-entry', () => {
         reset(values) {
           this.state = { ...values }
         },
-        drop() {
-          this.state = {}
+        set(values) {
+          Object.assign(this.state, values)
         },
         state: {},
       },
       entryErrors: {
         state: {},
-      }
+      },
     }
 
     const WithEntry = withEntry(
@@ -46,7 +43,7 @@ describe('with-entry', () => {
         get(name) {
           return scope[name].state
         }
-      }
+      },
     )
     const obj = new WithEntry()
     ok(obj)
@@ -60,7 +57,6 @@ describe('with-entry', () => {
     })
 
     deepEqual(obj.getEntry().a, [{ i: 1 }])
-
   })
 })
 

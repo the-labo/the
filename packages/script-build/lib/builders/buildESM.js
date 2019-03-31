@@ -6,6 +6,7 @@ const filecopy = require('filecopy')
 const lebab = require('lebab')
 const path = require('path')
 const writeout = require('writeout')
+const tmp = require('@the-/tmp')
 const buildShim = require('./buildShim')
 
 const _tmpl = (filename) =>
@@ -16,25 +17,36 @@ module.exports = async function buildESM(
   destDir,
   { jsPattern, plugins, presets },
 ) {
-  await buildShim(srcDir, destDir, { jsPattern, plugins, presets })
-  const filenames = await aglob(jsPattern, {
-    cwd: destDir,
-  })
-  for (const filename of filenames) {
-    const resolved = path.resolve(destDir, filename)
-    try {
-      const srcContent = String(await readFileAsync(resolved))
-      const { code } = lebab.transform(srcContent, ['commonjs'])
-      const { skipped } = await writeout(resolved, code, {
-        skipIfIdentical: true,
-      })
-      if (!skipped) {
-        console.log('File generated', path.relative(process.cwd(), resolved))
+  await tmp.whileDir(async (tmpDir) => {
+    const filenames = await aglob(jsPattern, {
+      cwd: srcDir,
+    })
+    for (const filename of filenames) {
+      const src = path.resolve(srcDir, filename)
+      const dest = path.resolve(tmpDir, filename)
+      try {
+        const srcContent = String(await readFileAsync(src))
+        const { code } = lebab.transform(srcContent, ['commonjs'])
+        await writeout(dest, code, {
+          mkdirp: true,
+          skipIfIdentical: true,
+        })
+      } catch (e) {
+        console.warn('[the-script-build] Failed to lebab:', src, e)
       }
-    } catch (e) {
-      console.warn('[the-script-build] Failed to lebab:', resolved, e)
     }
-  }
+    await buildShim(tmpDir, destDir, { jsPattern, plugins, presets })
+
+    // Copy json files
+    {
+      for (const filename of await aglob('**/*.json', { cwd: srcDir })) {
+        const src = path.resolve(srcDir, filename)
+        const dest = path.resolve(destDir, filename)
+        await filecopy(src, dest, { mkdirp: true })
+      }
+    }
+  })
+
   const hasDefault = !!(await statAsync(
     path.resolve(srcDir, 'default.js'),
   ).catch(() => null))

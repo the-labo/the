@@ -4,27 +4,25 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const withLimit = require('../lib/withLimit')
-const {ok, equal} = require('assert')
 
 describe('with-limit', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     const WithLimit = withLimit(
       class {
-        get (key) {
+        get(key) {
           return this[key]
         }
 
-        set (values) {
+        set(values) {
           Object.assign(this, values)
         }
-      }
+      },
     )
 
     const instance = new WithLimit()

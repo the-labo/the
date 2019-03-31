@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const withSort = require('../lib/withSort')
-const { ok, equal } = require('assert')
-
 describe('with-sort', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

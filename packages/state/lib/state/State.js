@@ -10,11 +10,11 @@ const assert = theAssert('TheState')
 
 /** @lends State */
 class State {
-  constructor () {
+  constructor() {
     this.subscriptions = []
   }
 
-  get state () {
+  get state() {
     return this.$$state
   }
 
@@ -22,18 +22,20 @@ class State {
    * Delete value for name
    * @param {string} name
    */
-  del (name) {
-    this.$$state = Object.entries(this.$$state)
-      .reduce((deleted, [k, v]) => ({
+  del(name) {
+    this.$$state = Object.entries(this.$$state).reduce(
+      (deleted, [k, v]) => ({
         ...deleted,
         ...(k === name ? {} : { [k]: v }),
-      }), {})
+      }),
+      {},
+    )
   }
 
   /**
    * Drop all values
    */
-  drop () {
+  drop() {
     this.$$state = {}
   }
 
@@ -42,7 +44,7 @@ class State {
    * @param {string} name
    * @returns {*}
    */
-  get (name) {
+  get(name) {
     assert(!!name, `[TheState] name is required]`)
     return this.$$state[name]
   }
@@ -51,14 +53,14 @@ class State {
    * Get keys
    * @returns {string[]}
    */
-  keys () {
+  keys() {
     return Object.keys(this.$$state)
   }
 
   /**
    * Publish to subscriptions
    */
-  publish () {
+  publish() {
     for (const callback of this.subscriptions) {
       callback(this.$$state)
     }
@@ -69,10 +71,10 @@ class State {
    * @param {Object} values
    * @returns {*}
    */
-  set (values) {
+  set(values) {
     const current = this.$$state
-    const skip = !!current && Object.entries(values)
-      .every(([k, v]) => current[k] === v)
+    const skip =
+      !!current && Object.entries(values).every(([k, v]) => current[k] === v)
     if (skip) {
       return
     }
@@ -87,11 +89,8 @@ class State {
    * @param {function} callback
    * @returns {function} - unsubscribe function
    */
-  subscribe (callback) {
-    this.subscriptions = [
-      ...this.subscriptions,
-      callback,
-    ]
+  subscribe(callback) {
+    this.subscriptions = [...this.subscriptions, callback]
     const unsubscribe = this.unsubscribe.bind(this, callback)
     return unsubscribe
   }
@@ -100,9 +99,9 @@ class State {
    * Unsubscribe
    * @param {function} callback
    */
-  unsubscribe (callback) {
-    this.subscriptions = this.subscriptions.filter((filtering) =>
-      filtering !== callback
+  unsubscribe(callback) {
+    this.subscriptions = this.subscriptions.filter(
+      (filtering) => filtering !== callback,
     )
   }
 }

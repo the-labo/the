@@ -4,27 +4,25 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const bindScope = require('../lib/bindScope')
-const {ok, equal} = require('assert')
 
 describe('bindScope', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     const Bound = bindScope('foo.bar')(
       class {
-        get store () {
+        get store() {
           return {
             foo: {
-              bar: {m: 'This is bar'}
-            }
+              bar: { m: 'This is bar' },
+            },
           }
         }
-      }
+      },
     )
     const bound = new Bound()
     equal(bound.scope.m, 'This is bar')

@@ -1,0 +1,101 @@
+[
+  {
+    "id": "module:@the-/driver-mongo",
+    "longname": "module:@the-/driver-mongo",
+    "name": "@the-/driver-mongo",
+    "kind": "module",
+    "description": "Mongo driver for the-db",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:mixins",
+    "longname": "module:mixins",
+    "name": "mixins",
+    "kind": "module",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib/mixins"
+    },
+    "order": 4
+  },
+  {
+    "id": "MongoDriver()",
+    "longname": "MongoDriver",
+    "name": "MongoDriver",
+    "kind": "constructor",
+    "description": "Driver for mongo db",
+    "memberof": "MongoDriver",
+    "order": 3
+  },
+  {
+    "id": "MongoDriver",
+    "longname": "MongoDriver",
+    "name": "MongoDriver",
+    "kind": "class",
+    "scope": "global",
+    "augments": [
+      "Driver"
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "MongoDriver.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib"
+    },
+    "inheritdoc": "",
+    "order": 2
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a MongoDriver instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "MongoDriver"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "mongoMix",
+    "longname": "mongoMix",
+    "name": "mongoMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixin of mongodb",
+    "meta": {
+      "lineno": 1,
+      "filename": "mongoMix.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib/mixins"
+    },
+    "order": 5
+  }
+]

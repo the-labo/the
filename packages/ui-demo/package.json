@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-demo",
   "description": "Live demo of the-components",
-  "version": "15.1.8",
+  "version": "15.2.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -33,9 +33,9 @@
   },
   "devDependencies": {
     "@babel/runtime": "^7.4.2",
-    "@the-/script-build": "file:../script-build",
-    "@the-/script-doc": "file:../script-doc",
-    "@the-/script-test": "file:../script-test",
+    "@the-/script-build": "^15.1.6",
+    "@the-/script-doc": "^15.1.4",
+    "@the-/script-test": "^15.2.0",
     "@the-/templates": "^15.1.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

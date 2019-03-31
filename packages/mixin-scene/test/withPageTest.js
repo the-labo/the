@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const withPage = require('../lib/withPage')
-const { ok, equal } = require('assert')
-
 describe('with-page', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */
