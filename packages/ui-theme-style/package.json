@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-theme-style",
   "description": "Theme style for the-components",
-  "version": "15.1.4",
+  "version": "15.1.8",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -22,6 +22,7 @@
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
+    "@the-/ui": "^15.1.7",
     "@the-/ui-demo": "file:../ui-demo",
     "@the-/ui-router": "^15.1.8",
     "coz": "^7.0.19",
@@ -42,7 +43,7 @@
   "license": "MIT",
   "main": "shim",
   "peerDependencies": {
-    "@the-/components": ">=15",
+    "@the-/ui": ">=15",
     "react": ">=16",
     "react-dom": ">=16"
   },

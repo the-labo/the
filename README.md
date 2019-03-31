@@ -103,6 +103,7 @@ root for the-project
 - [seed](./packages/seed)
 - [server](./packages/server)
 - [setting](./packages/setting)
+- [state](./packages/state)
 - [store](./packages/store)
 - [stream](./packages/stream)
 - [support](./packages/support)

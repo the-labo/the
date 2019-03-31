@@ -88,6 +88,7 @@ var/
 /packages/server/lib/stores/index.js
 /packages/setting/lib/index.js
 /packages/setting/lib/mixins/index.js
+/packages/state/lib/index.js
 /packages/store/lib/index.js
 /packages/stream/lib/index.js
 /packages/support/lib/index.js
@@ -114,7 +115,6 @@ var/
 /packages/ui-dialog/doc/demo/bundle.js
 /packages/ui-dialog/lib/index.jsx
 /packages/ui-flick/doc/demo/bundle.js
-/packages/ui-flick/lib/index.js
 /packages/ui-flick/lib/index.jsx
 /packages/ui-footer/doc/demo/bundle.js
 /packages/ui-footer/lib/index.jsx

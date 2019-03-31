@@ -51,6 +51,7 @@
     "coz": "^7.0.19",
     "npm-install-if-needed": "^1.0.3",
     "pon-task-dev": "^1.0.5",
+    "prettier": "^1.16.4",
     "publish-if-needed": "^1.1.0",
     "rimraf": "^2.6.3",
     "semver": "^5.7.0",

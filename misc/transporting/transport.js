@@ -269,7 +269,6 @@ const _removeDevDeps = async (baseDir, names) => {
       'the-script-build',
       'the-component-demo',
       'ape-releasing',
-      'amocha',
       'mocha',
       'ape-tmpl',
       'ape-updating',

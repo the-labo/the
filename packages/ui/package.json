@@ -11,7 +11,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/ui-alt": "^15.1.4",
+    "@the-/ui-alt": "^15.1.5",
     "@the-/ui-bar": "^15.1.5",
     "@the-/ui-body": "^15.1.9",
     "@the-/ui-button": "^15.1.6",

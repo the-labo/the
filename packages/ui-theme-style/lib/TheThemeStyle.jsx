@@ -3,45 +3,45 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import c from 'classnames'
-import { styleString } from 'the-style-util'
+import { styleString } from '@the-/util-style'
 
-import TheAltStyle from '@the-/alt/shim/TheAltStyle'
-import TheBarStyle from '@the-/bar/shim/TheBarStyle'
-import TheBodyStyle from '@the-/body/shim/TheBodyStyle'
-import TheButtonStyle from '@the-/button/shim/TheButtonStyle'
-import TheCaughtStyle from '@the-/caught/shim/TheCaughtStyle'
-import TheConditionStyle from '@the-/condition/shim/TheConditionStyle'
-import TheContainerStyle from '@the-/container/shim/TheContainerStyle'
-import TheDialogStyle from '@the-/dialog/shim/TheDialogStyle'
-import TheFlickStyle from '@the-/flick/shim/TheFlickStyle'
-import TheFooterStyle from '@the-/footer/shim/TheFooterStyle'
-import TheFormStyle from '@the-/form/shim/TheFormStyle'
-import TheFrameStyle from '@the-/frame/shim/TheFrameStyle'
-import TheHamburgerStyle from '@the-/hamburger/shim/TheHamburgerStyle'
-import TheHeaderStyle from '@the-/header/shim/TheHeaderStyle'
-import TheHtmlStyle from '@the-/html/shim/TheHtmlStyle'
-import TheIconStyle from '@the-/icon/shim/TheIconStyle'
-import TheImageStyle from '@the-/image/shim/TheImageStyle'
-import TheInfoStyle from '@the-/info/shim/TheInfoStyle'
-import TheInputStyle from '@the-/input/shim/TheInputStyle'
-import TheLinkStyle from '@the-/link/shim/TheLinkStyle'
-import TheListStyle from '@the-/list/shim/TheListStyle'
-import TheMainStyle from '@the-/main/shim/TheMainStyle'
-import TheMenuStyle from '@the-/menu/shim/TheMenuStyle'
-import ThePagerStyle from '@the-/pager/shim/ThePagerStyle'
-import TheRepeatableStyle from '@the-/repeatable/shim/TheRepeatableStyle'
-import TheRootStyle from '@the-/root/shim/TheRootStyle'
-import TheRouteStyle from '@the-/route/shim/TheRouteStyle'
-import TheRouterStyle from '@the-/router/shim/TheRouterStyle'
-import TheSectionStyle from '@the-/section/shim/TheSectionStyle'
-import TheSpinStyle from '@the-/spin/shim/TheSpinStyle'
-import TheStepStyle from '@the-/step/shim/TheStepStyle'
-import TheStyle from '@the-/style/shim/TheStyle'
-import TheTabStyle from '@the-/tab/shim/TheTabStyle'
-import TheTableStyle from '@the-/table/shim/TheTableStyle'
-import TheToastStyle from '@the-/toast/shim/TheToastStyle'
-import TheVideoStyle from '@the-/video/shim/TheVideoStyle'
-import TheViewStyle from '@the-/view/shim/TheViewStyle'
+import TheAltStyle from '@the-/ui-alt/shim/TheAltStyle'
+import TheBarStyle from '@the-/ui-bar/shim/TheBarStyle'
+import TheBodyStyle from '@the-/ui-body/shim/TheBodyStyle'
+import TheButtonStyle from '@the-/ui-button/shim/TheButtonStyle'
+import TheCaughtStyle from '@the-/ui-caught/shim/TheCaughtStyle'
+import TheConditionStyle from '@the-/ui-condition/shim/TheConditionStyle'
+import TheContainerStyle from '@the-/ui-container/shim/TheContainerStyle'
+import TheDialogStyle from '@the-/ui-dialog/shim/TheDialogStyle'
+import TheFlickStyle from '@the-/ui-flick/shim/TheFlickStyle'
+import TheFooterStyle from '@the-/ui-footer/shim/TheFooterStyle'
+import TheFormStyle from '@the-/ui-form/shim/TheFormStyle'
+import TheFrameStyle from '@the-/ui-frame/shim/TheFrameStyle'
+import TheHamburgerStyle from '@the-/ui-hamburger/shim/TheHamburgerStyle'
+import TheHeaderStyle from '@the-/ui-header/shim/TheHeaderStyle'
+import TheHtmlStyle from '@the-/ui-html/shim/TheHtmlStyle'
+import TheIconStyle from '@the-/ui-icon/shim/TheIconStyle'
+import TheImageStyle from '@the-/ui-image/shim/TheImageStyle'
+import TheInfoStyle from '@the-/ui-info/shim/TheInfoStyle'
+import TheInputStyle from '@the-/ui-input/shim/TheInputStyle'
+import TheLinkStyle from '@the-/ui-link/shim/TheLinkStyle'
+import TheListStyle from '@the-/ui-list/shim/TheListStyle'
+import TheMainStyle from '@the-/ui-main/shim/TheMainStyle'
+import TheMenuStyle from '@the-/ui-menu/shim/TheMenuStyle'
+import ThePagerStyle from '@the-/ui-pager/shim/ThePagerStyle'
+import TheRepeatableStyle from '@the-/ui-repeatable/shim/TheRepeatableStyle'
+import TheRootStyle from '@the-/ui-root/shim/TheRootStyle'
+import TheRouteStyle from '@the-/ui-route/shim/TheRouteStyle'
+import TheRouterStyle from '@the-/ui-router/shim/TheRouterStyle'
+import TheSectionStyle from '@the-/ui-section/shim/TheSectionStyle'
+import TheSpinStyle from '@the-/ui-spin/shim/TheSpinStyle'
+import TheStepStyle from '@the-/ui-step/shim/TheStepStyle'
+import TheStyle from '@the-/ui-style/shim/TheStyle'
+import TheTabStyle from '@the-/ui-tab/shim/TheTabStyle'
+import TheTableStyle from '@the-/ui-table/shim/TheTableStyle'
+import TheToastStyle from '@the-/ui-toast/shim/TheToastStyle'
+import TheVideoStyle from '@the-/ui-video/shim/TheVideoStyle'
+import TheViewStyle from '@the-/ui-view/shim/TheViewStyle'
 
 /** Theme Style of the-components */
 const TheThemeStyle = ({ id, className, prefix, options }) => (
@@ -115,43 +115,43 @@ TheThemeStyle.cssString = (options) => {
 }
 
 TheThemeStyle.componentPaths = [
-  '@the-/alt/shim/TheAltStyle',
-  '@the-/bar/shim/TheBarStyle',
-  '@the-/body/shim/TheBodyStyle',
-  '@the-/button/shim/TheButtonStyle',
-  '@the-/caught/shim/TheCaughtStyle',
-  '@the-/condition/shim/TheConditionStyle',
-  '@the-/container/shim/TheContainerStyle',
-  '@the-/dialog/shim/TheDialogStyle',
-  '@the-/flick/shim/TheFlickStyle',
-  '@the-/footer/shim/TheFooterStyle',
-  '@the-/form/shim/TheFormStyle',
-  '@the-/frame/shim/TheFrameStyle',
-  '@the-/hamburger/shim/TheHamburgerStyle',
-  '@the-/header/shim/TheHeaderStyle',
-  '@the-/html/shim/TheHtmlStyle',
-  '@the-/icon/shim/TheIconStyle',
-  '@the-/image/shim/TheImageStyle',
-  '@the-/info/shim/TheInfoStyle',
-  '@the-/input/shim/TheInputStyle',
-  '@the-/link/shim/TheLinkStyle',
-  '@the-/list/shim/TheListStyle',
-  '@the-/main/shim/TheMainStyle',
-  '@the-/menu/shim/TheMenuStyle',
-  '@the-/pager/shim/ThePagerStyle',
-  '@the-/repeatable/shim/TheRepeatableStyle',
-  '@the-/root/shim/TheRootStyle',
-  '@the-/route/shim/TheRouteStyle',
-  '@the-/router/shim/TheRouterStyle',
-  '@the-/section/shim/TheSectionStyle',
-  '@the-/spin/shim/TheSpinStyle',
-  '@the-/step/shim/TheStepStyle',
-  '@the-/style/shim/TheStyle',
-  '@the-/tab/shim/TheTabStyle',
-  '@the-/table/shim/TheTableStyle',
-  '@the-/toast/shim/TheToastStyle',
-  '@the-/video/shim/TheVideoStyle',
-  '@the-/view/shim/TheViewStyle',
+  '@the-/ui-alt/shim/TheAltStyle',
+  '@the-/ui-bar/shim/TheBarStyle',
+  '@the-/ui-body/shim/TheBodyStyle',
+  '@the-/ui-button/shim/TheButtonStyle',
+  '@the-/ui-caught/shim/TheCaughtStyle',
+  '@the-/ui-condition/shim/TheConditionStyle',
+  '@the-/ui-container/shim/TheContainerStyle',
+  '@the-/ui-dialog/shim/TheDialogStyle',
+  '@the-/ui-flick/shim/TheFlickStyle',
+  '@the-/ui-footer/shim/TheFooterStyle',
+  '@the-/ui-form/shim/TheFormStyle',
+  '@the-/ui-frame/shim/TheFrameStyle',
+  '@the-/ui-hamburger/shim/TheHamburgerStyle',
+  '@the-/ui-header/shim/TheHeaderStyle',
+  '@the-/ui-html/shim/TheHtmlStyle',
+  '@the-/ui-icon/shim/TheIconStyle',
+  '@the-/ui-image/shim/TheImageStyle',
+  '@the-/ui-info/shim/TheInfoStyle',
+  '@the-/ui-input/shim/TheInputStyle',
+  '@the-/ui-link/shim/TheLinkStyle',
+  '@the-/ui-list/shim/TheListStyle',
+  '@the-/ui-main/shim/TheMainStyle',
+  '@the-/ui-menu/shim/TheMenuStyle',
+  '@the-/ui-pager/shim/ThePagerStyle',
+  '@the-/ui-repeatable/shim/TheRepeatableStyle',
+  '@the-/ui-root/shim/TheRootStyle',
+  '@the-/ui-route/shim/TheRouteStyle',
+  '@the-/ui-router/shim/TheRouterStyle',
+  '@the-/ui-section/shim/TheSectionStyle',
+  '@the-/ui-spin/shim/TheSpinStyle',
+  '@the-/ui-step/shim/TheStepStyle',
+  '@the-/ui-style/shim/TheStyle',
+  '@the-/ui-tab/shim/TheTabStyle',
+  '@the-/ui-table/shim/TheTableStyle',
+  '@the-/ui-toast/shim/TheToastStyle',
+  '@the-/ui-video/shim/TheVideoStyle',
+  '@the-/ui-view/shim/TheViewStyle',
 
 ]
 
