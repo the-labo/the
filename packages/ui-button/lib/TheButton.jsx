@@ -5,9 +5,9 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { textColorFor } from 'the-color'
 import { unlessProduction } from '@the-/check'
-import { TheIcon } from '@the-/icon'
-import { TheLink } from '@the-/link'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
+import { TheIcon } from '@the-/ui-icon'
+import { TheLink } from '@the-/ui-link'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 import TheButtonGroup from './TheButtonGroup'
 
 /**

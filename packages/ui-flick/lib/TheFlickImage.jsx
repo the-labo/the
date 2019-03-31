@@ -2,10 +2,10 @@
 
 import c from 'classnames'
 import React from 'react'
-import { TheCondition } from '@the-/condition'
-import { TheImage } from '@the-/image'
-import { isVideoSrc } from '@the-/util-component'
-import { TheVideo } from '@the-/video'
+import { TheCondition } from '@the-/ui-condition'
+import { TheImage } from '@the-/ui-image'
+import { isVideoSrc } from '@the-/util-ui'
+import { TheVideo } from '@the-/ui-video'
 
 class TheFlickImage extends React.Component {
   constructor(props) {

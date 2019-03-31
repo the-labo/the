@@ -2,8 +2,8 @@
 
 import React from 'react'
 import { TheStep, TheStepBar, TheStepStyle } from '@the-/ui-step'
-import { TheSpinStyle } from '@the-/spin'
-import { TheButtonStyle } from '@the-/button'
+import { TheSpinStyle } from '@the-/ui-spin'
+import { TheButtonStyle } from '@the-/ui-button'
 
 class ExampleComponent extends React.Component {
   constructor (props) {

@@ -4,7 +4,7 @@ import { clone } from 'asobj'
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheIcon } from '@the-/icon'
+import { TheIcon } from '@the-/ui-icon'
 import { uniqueFilter } from '@the-/util-array'
 import TheInputText from './TheInputText'
 

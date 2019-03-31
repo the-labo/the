@@ -8,7 +8,7 @@ import {
   Router as AbstractRouter,
   StaticRouter,
 } from 'react-router-dom'
-import { htmlAttributesFor } from '@the-/util-component'
+import { htmlAttributesFor } from '@the-/util-ui'
 
 /**
  * Router of the-components

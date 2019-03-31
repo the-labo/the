@@ -3,7 +3,7 @@
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheStyle } from '@the-/style'
+import { TheStyle } from '@the-/ui-style'
 
 /** Style for TheRouter */
 const TheRouterStyle = ({ className, id, options }) => (

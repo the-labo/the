@@ -1,7 +1,7 @@
 {
   "name": "@the-/util-sw",
   "description": "Utility for service workers",
-  "version": "15.1.3",
+  "version": "15.1.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",

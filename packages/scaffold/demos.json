@@ -1,5 +1,5 @@
 {
-  "component": "@the-/demo-component",
+  "ui": "@the-/demo-ui",
   "lib": "@the-/demo-lib",
   "site": "pon-demo-site"
 }

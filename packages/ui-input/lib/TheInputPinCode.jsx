@@ -4,7 +4,7 @@ import { clone } from 'asobj'
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { newId } from '@the-/util-component'
+import { newId } from '@the-/util-ui'
 import TheInputText from './TheInputText'
 
 class TheInputPinCode extends React.PureComponent {

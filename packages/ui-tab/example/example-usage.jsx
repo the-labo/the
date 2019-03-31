@@ -2,8 +2,8 @@
 
 import React from 'react'
 import { TheTab, TheTabStyle } from '@the-/ui-tab'
-import { TheButtonStyle } from '@the-/button'
-import { TheSpinStyle } from '@the-/spin'
+import { TheButtonStyle } from '@the-/ui-button'
+import { TheSpinStyle } from '@the-/ui-spin'
 
 class ExampleComponent extends React.PureComponent {
   constructor (props) {

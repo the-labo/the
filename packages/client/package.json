@@ -12,18 +12,18 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.0.2",
-    "@the-/pack": "^15.0.2",
-    "@the-/queue": "^15.0.2",
-    "@the-/stream": "^15.1.3",
+    "@the-/check": "^15.1.4",
+    "@the-/pack": "^15.1.4",
+    "@the-/queue": "^15.1.4",
+    "@the-/stream": "^15.1.4",
     "argx": "^4.0.0",
     "asleep": "^1.0.3",
     "browser-cookies": "^1.2.0",
-    "bstorage": "^2.0.3",
+    "bstorage": "^2.0.4",
     "bwindow": "^2.0.3",
     "debug": "^4.1.1",
     "prop-types": "^15.7.2",
-    "qs": "^6.6.0",
+    "qs": "^6.7.0",
     "rfunc-client": "^5.0.5",
     "rfunc-constants": "^1.0.5",
     "socket.io-client": "^2.2.0",
@@ -39,8 +39,8 @@
     "@the-/templates": "file:../templates",
     "aport": "^2.0.0",
     "coz": "^7.0.19",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "engines": {
     "node": ">=10",

@@ -77,7 +77,7 @@ Usage
 
 ## API Guide
 
-- [@the-/route](./doc/api/api.md#module_@the-/route)
+- [@the-/ui-route](./doc/api/api.md#module_@the-/ui-route)
 - [the-route](./doc/api/api.md#module_the-route)
 
 

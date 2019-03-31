@@ -4,7 +4,6 @@ import c from 'classnames'
 import { EOL } from 'os'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { ThemeValues } from 'the-component-constants'
 import { styleString } from '@the-/util-style'
 
 /**
@@ -82,7 +81,5 @@ TheStyle.defaultProps = {
 }
 
 TheStyle.displayName = 'TheStyle'
-
-TheStyle.ThemeValues = ThemeValues
 
 export default TheStyle

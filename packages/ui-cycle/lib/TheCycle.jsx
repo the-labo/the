@@ -4,7 +4,7 @@ import { cleanup } from 'asobj'
 import Debug from 'debug'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { changedProps } from '@the-/util-component'
+import { changedProps } from '@the-/util-ui'
 
 const isEmptyObj = (obj) => !obj || Object.keys(obj).length === 0
 

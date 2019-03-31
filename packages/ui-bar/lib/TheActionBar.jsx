@@ -3,9 +3,9 @@
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheButton } from '@the-/button'
-import { TheContainer } from '@the-/container'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
+import { TheButton } from '@the-/ui-button'
+import { TheContainer } from '@the-/ui-container'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 import TheBarStyle from './TheBarStyle'
 
 /**

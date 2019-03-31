@@ -1,6 +1,6 @@
 'use strict'
 
-import { asStyleData, colorAlpha } from '@the-/util-component'
+import { asStyleData, colorAlpha } from '@the-/util-ui'
 
 function TagStyleData({
   backgroundColor,

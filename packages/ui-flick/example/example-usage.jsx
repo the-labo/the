@@ -2,10 +2,10 @@
 
 import React from 'react'
 import { TheFlick, TheFlickStyle } from '@the-/ui-flick'
-import { TheButton, TheButtonStyle } from '@the-/button'
-import { TheSpinStyle } from '@the-/spin'
-import { TheImageStyle } from '@the-/image'
-import { TheVideoStyle } from '@the-/video'
+import { TheButton, TheButtonStyle } from '@the-/ui-button'
+import { TheSpinStyle } from '@the-/ui-spin'
+import { TheImageStyle } from '@the-/ui-image'
+import { TheVideoStyle } from '@the-/ui-video'
 
 const imageUrls = [
   'https://raw.githubusercontent.com/apeman-asset-labo/apeman-asset-images/master/dist/dummy/01.jpg',

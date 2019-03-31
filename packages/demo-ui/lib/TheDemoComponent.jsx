@@ -8,7 +8,7 @@
 
 import c from 'classnames'
 import React from 'react'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
 /** @lends TheDemoComponent */
 class TheDemoComponent extends React.Component {

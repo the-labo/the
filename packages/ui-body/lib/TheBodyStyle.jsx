@@ -3,7 +3,8 @@
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheStyle } from '@the-/style'
+import { ThemeValues } from '@the-/const-ui'
+import { TheStyle } from '@the-/ui-style'
 
 /** Style for TheBody */
 const TheBodyStyle = ({ className, id, options }) => (
@@ -25,7 +26,6 @@ TheBodyStyle.defaultProps = {
 }
 
 TheBodyStyle.data = (options) => {
-  const { ThemeValues } = TheStyle
   const {
     backgroundColor = ThemeValues.backgroundColor,
     fontFamily = ThemeValues.fontFamily,

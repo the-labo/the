@@ -20,7 +20,7 @@
     "scope": "global",
     "description": "Style of the-components",
     "meta": {
-      "lineno": 13,
+      "lineno": 12,
       "filename": "TheStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-style/lib"
     },
@@ -35,7 +35,7 @@
     "description": "CSS class name",
     "memberof": "TheStyle.propTypes",
     "meta": {
-      "lineno": 68,
+      "lineno": 67,
       "filename": "TheStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-style/lib"
     },
@@ -50,7 +50,7 @@
     "description": "DOM Id",
     "memberof": "TheStyle.propTypes",
     "meta": {
-      "lineno": 70,
+      "lineno": 69,
       "filename": "TheStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-style/lib"
     },
@@ -65,7 +65,7 @@
     "description": "Style selector prefix",
     "memberof": "TheStyle.propTypes",
     "meta": {
-      "lineno": 72,
+      "lineno": 71,
       "filename": "TheStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-style/lib"
     },
@@ -80,7 +80,7 @@
     "description": "Script type",
     "memberof": "TheStyle.propTypes",
     "meta": {
-      "lineno": 74,
+      "lineno": 73,
       "filename": "TheStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-style/lib"
     },

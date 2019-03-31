@@ -1,10 +1,10 @@
 'use strict'
 
 import React from 'react'
-import { TheRouter } from '@the-/router'
-import { TheRoute } from '@the-/route'
+import { TheRouter } from '@the-/ui-router'
+import { TheRoute } from '@the-/ui-route'
 import { TheHeader, TheHeaderStyle } from '@the-/ui-header'
-import { TheButton, TheButtonStyle } from '@the-/button'
+import { TheButton, TheButtonStyle } from '@the-/ui-button'
 
 class ExampleComponent extends React.PureComponent {
   constructor (props) {

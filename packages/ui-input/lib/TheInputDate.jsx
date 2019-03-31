@@ -9,7 +9,7 @@ import {
   changedProps,
   eventHandlersFor,
   htmlAttributesFor,
-} from '@the-/util-component'
+} from '@the-/util-ui'
 import { onOffBoolean, renderErrorMessage } from './helpers'
 
 class TheInputDate extends React.PureComponent {

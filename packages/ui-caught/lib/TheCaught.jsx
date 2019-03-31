@@ -4,8 +4,8 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { isProduction } from '@the-/check'
-import { TheCondition } from '@the-/condition'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
+import { TheCondition } from '@the-/ui-condition'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
 /**
  * Component to show caught errors

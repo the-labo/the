@@ -43,7 +43,7 @@ Refactoring tool for the-components
 
 * [TheRefactor](#TheRefactor)
     * [.convert(pattern, converter)](#TheRefactor+convert) ⇒ <code>Promise.&lt;void&gt;</code>
-    * [.rename(pattern, convert)](#TheRefactor+rename) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.rename(pattern, convert, [options])](#TheRefactor+rename) ⇒ <code>Promise.&lt;void&gt;</code>
     * [.renameDir(src, dest)](#TheRefactor+renameDir) ⇒ <code>Promise.&lt;void&gt;</code>
     * [.rewrite(pattern, rules, [options])](#TheRefactor+rewrite) ⇒ <code>Promise.&lt;void&gt;</code>
     * [.scatter(src, dirnames)](#TheRefactor+scatter) ⇒ <code>Promise.&lt;void&gt;</code>
@@ -62,15 +62,16 @@ Process with convert function
 
 <a name="TheRefactor+rename"></a>
 
-### theRefactor.rename(pattern, convert) ⇒ <code>Promise.&lt;void&gt;</code>
+### theRefactor.rename(pattern, convert, [options]) ⇒ <code>Promise.&lt;void&gt;</code>
 Rename files
 
 **Kind**: instance method of [<code>TheRefactor</code>](#TheRefactor)  
 
-| Param | Type | Description |
-| --- | --- | --- |
-| pattern | <code>string</code> | Source file name patterns |
-| convert | <code>function</code> | Converter |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| pattern | <code>string</code> |  | Source file name patterns |
+| convert | <code>function</code> |  | Converter |
+| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 
 <a name="TheRefactor+renameDir"></a>
 

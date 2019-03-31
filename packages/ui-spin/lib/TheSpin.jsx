@@ -3,8 +3,8 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheIcon } from '@the-/icon'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
+import { TheIcon } from '@the-/ui-icon'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 import TheSpinStyle from './TheSpinStyle'
 
 const SpinnerSizes = [

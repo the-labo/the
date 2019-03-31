@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { TheTable, TheTableStyle } from '@the-/ui-table'
-import { TheInputStyle } from '@the-/input'
+import { TheInputStyle } from '@the-/ui-input'
 
 const { Head, Body, Row, Cell, HeaderCell, CheckboxCell } = TheTable
 

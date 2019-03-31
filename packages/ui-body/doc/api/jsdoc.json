@@ -35,7 +35,7 @@
     "description": "Style for TheBody",
     "params": [],
     "meta": {
-      "lineno": 9,
+      "lineno": 10,
       "filename": "TheBodyStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-body/lib"
     },
@@ -50,7 +50,7 @@
     "description": "Style options",
     "memberof": "TheBodyStyle.propTypes",
     "meta": {
-      "lineno": 20,
+      "lineno": 21,
       "filename": "TheBodyStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-body/lib"
     },

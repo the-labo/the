@@ -142,6 +142,17 @@
         },
         "description": "Converter",
         "name": "convert"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
       }
     ],
     "returns": [
@@ -154,7 +165,7 @@
       }
     ],
     "meta": {
-      "lineno": 65,
+      "lineno": 71,
       "filename": "TheRefactor.js",
       "path": "/Users/okuni/Projects/the/packages/refactor/lib"
     },
@@ -199,7 +210,7 @@
       }
     ],
     "meta": {
-      "lineno": 91,
+      "lineno": 102,
       "filename": "TheRefactor.js",
       "path": "/Users/okuni/Projects/the/packages/refactor/lib"
     },
@@ -255,7 +266,7 @@
       }
     ],
     "meta": {
-      "lineno": 119,
+      "lineno": 130,
       "filename": "TheRefactor.js",
       "path": "/Users/okuni/Projects/the/packages/refactor/lib"
     },
@@ -298,7 +309,7 @@
       }
     ],
     "meta": {
-      "lineno": 136,
+      "lineno": 154,
       "filename": "TheRefactor.js",
       "path": "/Users/okuni/Projects/the/packages/refactor/lib"
     },

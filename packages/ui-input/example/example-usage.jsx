@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { TheInput, TheInputStyle } from '@the-/ui-input'
-import { TheSpinStyle } from '@the-/spin'
+import { TheSpinStyle } from '@the-/ui-spin'
 
 class ExampleComponent extends React.PureComponent {
   constructor (props) {

@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { TheBar, TheActionBar, TheBarStyle } from '@the-/ui-bar'
-import { TheButtonStyle } from '@the-/button'
+import { TheButtonStyle } from '@the-/ui-button'
 
 class ExampleComponent extends React.Component {
   constructor (props) {

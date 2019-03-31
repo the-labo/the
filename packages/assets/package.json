@@ -1,7 +1,7 @@
 {
   "name": "@the-/assets",
   "description": "Assets for the-framework",
-  "version": "15.1.3",
+  "version": "15.1.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -26,7 +26,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/assets#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "lib",
     "the"

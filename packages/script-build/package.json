@@ -1,7 +1,7 @@
 {
   "name": "@the-/script-build",
   "description": "Build script for the-projects",
-  "version": "15.1.3",
+  "version": "15.1.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@the-/ast": "^15.1.3",
-    "@the-/script-doc": "^15.1.3",
+    "@the-/script-doc": "^15.1.4",
     "@the-/script-test": "^15.2.0",
     "@the-/templates": "^15.1.4",
     "injectmock": "^2.0.0",

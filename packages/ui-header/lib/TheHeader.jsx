@@ -3,11 +3,11 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheButton } from '@the-/button'
-import { TheContainer } from '@the-/container'
-import { TheIcon } from '@the-/icon'
-import { TheLink } from '@the-/link'
-import { htmlAttributesFor } from '@the-/util-component'
+import { TheButton } from '@the-/ui-button'
+import { TheContainer } from '@the-/ui-container'
+import { TheIcon } from '@the-/ui-icon'
+import { TheLink } from '@the-/ui-link'
+import { htmlAttributesFor } from '@the-/util-ui'
 import { get } from '@the-/window'
 
 const NOTICE_HEIGHT = 36

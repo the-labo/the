@@ -7,7 +7,7 @@ import {
   eventHandlersFor,
   htmlAttributesFor,
   newId,
-} from '@the-/util-component'
+} from '@the-/util-ui'
 
 /**
  * Toggle input of the-components

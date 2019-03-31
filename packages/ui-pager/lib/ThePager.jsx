@@ -5,7 +5,7 @@ import { metaToPage } from 'clay-list-pager'
 import numcal from 'numcal'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
 /**
  * Pager of the-components

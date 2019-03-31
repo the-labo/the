@@ -2,11 +2,11 @@
 
 import React from 'react'
 import { TheView, TheViewStyle } from '@the-/ui-view'
-import { TheIcon } from '@the-/icon'
-import { TheSpinStyle } from '@the-/spin'
-import { TheButtonStyle } from '@the-/button'
-import { TheMenuStyle, TheDropdownMenu } from '@the-/menu'
-import { TheRouter } from '@the-/router'
+import { TheIcon } from '@the-/ui-icon'
+import { TheSpinStyle } from '@the-/ui-spin'
+import { TheButtonStyle } from '@the-/ui-button'
+import { TheMenuStyle, TheDropdownMenu } from '@the-/ui-menu'
+import { TheRouter } from '@the-/ui-router'
 
 class ExampleComponent extends React.PureComponent {
   render () {

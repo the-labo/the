@@ -1,0 +1,59 @@
+{
+  "name": "@the-/util-ui",
+  "description": "Utility for the-components",
+  "version": "15.1.4",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "browser": "shim",
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "@the-/const-ui": "^2.0.11",
+    "acolor": "^3.0.0",
+    "argx": "^4.0.0",
+    "bwindow": "^2.0.3",
+    "keycode": "^2.2.0",
+    "uuid": "^3.2.1",
+    "video-extensions": "^1.1.0"
+  },
+  "devDependencies": {
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates",
+    "aglob": "^3.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/util-ui#readme",
+  "keywords": [
+    "the",
+    "util"
+  ],
+  "license": "MIT",
+  "main": "shim",
+  "peerDependencies": {
+    "react": ">=15",
+    "react-dom": ">=15"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-test",
+    "watch": "the-script-build -w"
+  }
+}

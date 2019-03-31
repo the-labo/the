@@ -3,10 +3,10 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheIcon } from '@the-/icon'
-import { TheImage } from '@the-/image'
-import { TheLink } from '@the-/link'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
+import { TheIcon } from '@the-/ui-icon'
+import { TheImage } from '@the-/ui-image'
+import { TheLink } from '@the-/ui-link'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
 /**
  * Item of list

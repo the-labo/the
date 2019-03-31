@@ -2,9 +2,9 @@
 
 import React from 'react'
 import { TheDialog, TheOkDialog, TheYesNoDialog, TheConfirmDialog, TheDialogStyle } from '@the-/ui-dialog'
-import { TheButton, TheButtonStyle } from '@the-/button'
-import { TheSpinStyle } from '@the-/spin'
-import { TheInputStyle } from '@the-/input'
+import { TheButton, TheButtonStyle } from '@the-/ui-button'
+import { TheSpinStyle } from '@the-/ui-spin'
+import { TheInputStyle } from '@the-/ui-input'
 
 class ExampleComponent extends React.PureComponent {
   constructor (props) {

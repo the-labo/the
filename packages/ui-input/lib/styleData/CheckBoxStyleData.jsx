@@ -1,6 +1,6 @@
 'use strict'
 
-import { asStyleData } from '@the-/util-component'
+import { asStyleData } from '@the-/util-ui'
 
 function CheckBoxStyleData({
   activeOpacity,

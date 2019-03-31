@@ -3,8 +3,8 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheButton } from '@the-/button'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
+import { TheButton } from '@the-/ui-button'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
 /**
  * Hamburger menu for the-components

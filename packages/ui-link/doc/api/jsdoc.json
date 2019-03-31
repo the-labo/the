@@ -35,7 +35,7 @@
     "description": "Style for TheLink",
     "params": [],
     "meta": {
-      "lineno": 9,
+      "lineno": 10,
       "filename": "TheLinkStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
     },
@@ -50,7 +50,7 @@
     "description": "Class name for active state",
     "memberof": "TheLink.propTypes",
     "meta": {
-      "lineno": 72,
+      "lineno": 76,
       "filename": "TheLink.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
     },
@@ -65,7 +65,7 @@
     "description": "Style for active state",
     "memberof": "TheLink.propTypes",
     "meta": {
-      "lineno": 74,
+      "lineno": 78,
       "filename": "TheLink.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
     },
@@ -80,7 +80,7 @@
     "description": "Color theme",
     "memberof": "TheLink.propTypes",
     "meta": {
-      "lineno": 76,
+      "lineno": 80,
       "filename": "TheLink.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
     },
@@ -95,7 +95,7 @@
     "description": "Exact path",
     "memberof": "TheLink.propTypes",
     "meta": {
-      "lineno": 78,
+      "lineno": 82,
       "filename": "TheLink.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
     },
@@ -110,7 +110,7 @@
     "description": "Icon class name",
     "memberof": "TheLink.propTypes",
     "meta": {
-      "lineno": 80,
+      "lineno": 84,
       "filename": "TheLink.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
     },
@@ -125,7 +125,7 @@
     "description": "String path",
     "memberof": "TheLink.propTypes",
     "meta": {
-      "lineno": 82,
+      "lineno": 86,
       "filename": "TheLink.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
     },
@@ -140,7 +140,7 @@
     "description": "Link to",
     "memberof": "TheLink.propTypes",
     "meta": {
-      "lineno": 84,
+      "lineno": 88,
       "filename": "TheLink.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
     },
@@ -155,7 +155,7 @@
     "description": "Style options",
     "memberof": "TheLinkStyle.propTypes",
     "meta": {
-      "lineno": 20,
+      "lineno": 21,
       "filename": "TheLinkStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
     },

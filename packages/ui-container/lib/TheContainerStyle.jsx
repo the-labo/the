@@ -3,7 +3,8 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheStyle } from '@the-/style'
+import { ThemeValues } from '@the-/const-ui'
+import { TheStyle } from '@the-/ui-style'
 
 /** Style for TheContainer */
 const TheContainerStyle = ({ className, id, options }) => (
@@ -25,7 +26,6 @@ TheContainerStyle.defaultProps = {
 }
 
 TheContainerStyle.data = (options) => {
-  const { ThemeValues } = TheStyle
   const { containerWidth = ThemeValues.containerWidth } = options
   return {
     '.the-container': {

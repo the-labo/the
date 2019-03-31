@@ -4,7 +4,7 @@
 
 'use strict'
 
-const components = require('@the-/components/lib/components.json')
+const components = require('@the-/ui/lib/components.json')
 
 module.exports = {
   force: true,

@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-dialog",
   "description": "Dialog for the-components",
-  "version": "15.1.3",
+  "version": "15.1.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,12 +11,11 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/button": "^15.0.3",
-    "@the-/icon": "^15.0.4",
-    "@the-/input": "^3.5.89",
-    "@the-/spin": "^15.0.4",
-    "@the-/style": "^15.0.3",
-    "@the-/util-component": "^15.0.3",
+    "@the-/ui-button": "^15.1.3",
+    "@the-/ui-icon": "^15.1.3",
+    "@the-/ui-input": "^15.1.3",
+    "@the-/ui-spin": "^15.1.3",
+    "@the-/ui-style": "^15.1.3",
     "@the-/window": "^15.0.3",
     "asobj": "^3.0.1",
     "classnames": "^2.2.6",
@@ -25,12 +24,12 @@
   },
   "devDependencies": {
     "@babel/runtime": "^7.4.2",
-    "@the-/router": "^15.1.3",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
     "@the-/ui-demo": "file:../ui-demo",
+    "@the-/ui-router": "^15.1.5",
     "coz": "^7.0.19",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
@@ -40,7 +39,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/dialog#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/ui-dialog#readme",
   "keywords": [
     "the",
     "ui"

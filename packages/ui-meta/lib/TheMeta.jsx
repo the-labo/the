@@ -2,7 +2,7 @@
 
 import PropTypes from 'prop-types'
 import React from 'react'
-import { newId } from '@the-/util-component'
+import { newId } from '@the-/util-ui'
 import { get } from '@the-/window'
 
 const MetaContext = React.createContext(null)

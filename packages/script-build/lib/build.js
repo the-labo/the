@@ -41,7 +41,10 @@ async function build(dirname = process.cwd(), options = {}) {
   fixpack(pkgPath)
   const pkg = require(pkgPath)
 
-  const presets = [['@babel/preset-env', {}], ['@babel/preset-react', {}]]
+  const presetsFor = ({ modules } = {}) => [
+    ['@babel/preset-env', { modules }],
+    ['@babel/preset-react', {}],
+  ]
   const plugins = [
     ['@babel/plugin-proposal-class-properties'],
     ['@babel/plugin-proposal-do-expressions'],
@@ -58,13 +61,14 @@ async function build(dirname = process.cwd(), options = {}) {
     await buildShim(libDir, shimDir, {
       jsPattern,
       plugins,
-      presets,
+      presets: presetsFor(),
     })
 
     // Generate esm shim
-    await buildESM(shimDir, esmShimDir, {
+    await buildESM(libDir, esmShimDir, {
       jsPattern,
       plugins,
+      presets: presetsFor({ modules: false }),
     })
   }
 
@@ -79,7 +83,7 @@ async function build(dirname = process.cwd(), options = {}) {
     buildDemo(demoSrc, demoDest, {
       alias: { [pkg.name]: path.resolve(dirname, shimDir) },
       plugins,
-      presets,
+      presets: presetsFor(),
     })
   if (demoExists) {
     await demo()

@@ -4,12 +4,12 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 import withClickOutside from 'react-click-outside'
-import { TheIcon } from '@the-/icon'
+import { TheIcon } from '@the-/ui-icon'
 import {
   changedProps,
   eventHandlersFor,
   htmlAttributesFor,
-} from '@the-/util-component'
+} from '@the-/util-ui'
 import { get } from '@the-/window'
 import TheMenu from './TheMenu'
 import TheMenuItem from './TheMenuItem'

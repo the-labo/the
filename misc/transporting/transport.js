@@ -224,7 +224,7 @@ const _removeDevDeps = async (baseDir, names) => {
           )
         }
       }
-      if (['lib', 'util', 'mixin'].includes(kind)) {
+      if (['lib', 'util', 'mixin', 'const'].includes(kind)) {
         const demoLibDir = path.resolve(baseDir, 'packages', 'demo-lib')
         rimraf.sync(path.resolve(toDir, 'doc/readme'))
         await copyDirAsync(`${demoLibDir}/doc/readme`, `${toDir}/doc/readme`)

@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { TheFooter, TheFooterStyle } from '@the-/ui-footer'
-import { TheRouter } from '@the-/router'
+import { TheRouter } from '@the-/ui-router'
 
 class ExampleComponent extends React.PureComponent {
   render () {

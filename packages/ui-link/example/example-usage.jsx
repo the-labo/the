@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react'
-import { TheRouter } from '@the-/router'
+import { TheRouter } from '@the-/ui-router'
 import { TheLink, TheLinkStyle } from '@the-/ui-link'
 
 class ExampleComponent extends React.Component {

@@ -331,6 +331,16 @@ const v2 = value2 => a ? value2 : { value2 }
       `const x = {'c&c':5, a: 1, b: 2 }`,
     )
   })
+
+  it('Process empty', async () => {
+    equal(
+      await processJSObject(`
+const x =  {a:{}, '': {}}
+      `), `
+const x =  {'': {}, a:{}}
+      `
+    )
+  })
 })
 
 /* global describe, before, after, it */

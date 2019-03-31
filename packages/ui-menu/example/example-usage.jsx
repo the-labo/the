@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { TheMenu, TheDropdownMenu, TheMenuStyle } from '@the-/ui-menu'
-import { TheRouter } from '@the-/router'
+import { TheRouter } from '@the-/ui-router'
 
 class ExampleComponent extends React.PureComponent {
   render () {

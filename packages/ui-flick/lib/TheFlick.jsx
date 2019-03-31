@@ -4,16 +4,16 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 import Draggable from 'react-draggable'
-import { TheButton } from '@the-/button'
-import { TheCondition } from '@the-/condition'
-import { TheIcon } from '@the-/icon'
-import { TheSpin } from '@the-/spin'
+import { TheButton } from '@the-/ui-button'
+import { TheCondition } from '@the-/ui-condition'
+import { TheIcon } from '@the-/ui-icon'
+import { TheSpin } from '@the-/ui-spin'
 import {
   changedProps,
   eventHandlersFor,
   htmlAttributesFor,
   toggleBodyClass,
-} from '@the-/util-component'
+} from '@the-/util-ui'
 import { get } from '@the-/window'
 import TheFlickImage from './TheFlickImage'
 

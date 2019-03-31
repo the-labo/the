@@ -35,7 +35,7 @@
     "description": "Style for TheContainer",
     "params": [],
     "meta": {
-      "lineno": 9,
+      "lineno": 10,
       "filename": "TheContainerStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-container/lib"
     },
@@ -50,7 +50,7 @@
     "description": "Style options",
     "memberof": "TheContainerStyle.propTypes",
     "meta": {
-      "lineno": 20,
+      "lineno": 21,
       "filename": "TheContainerStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-container/lib"
     },

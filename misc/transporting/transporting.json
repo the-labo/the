@@ -73,7 +73,7 @@
   },
   "the-component-util": {
     "kind": "util",
-    "name": "util-component"
+    "name": "util-ui"
   },
   "the-condition": {
     "kind": "ui",
@@ -137,7 +137,7 @@
   },
   "the-flick": {
     "kind": "ui",
-    "name": "flick"
+    "name": "ui-flick"
   },
   "the-footer": {
     "kind": "ui",
@@ -288,12 +288,12 @@
     "name": "ui-root"
   },
   "the-route": {
-    "kind": "lib",
-    "name": "route"
+    "kind": "ui",
+    "name": "ui-route"
   },
   "the-router": {
-    "kind": "lib",
-    "name": "router"
+    "kind": "ui",
+    "name": "ui-router"
   },
   "the-run": {
     "kind": "lib",
@@ -430,5 +430,9 @@
   "the-window": {
     "kind": "lib",
     "name": "window"
+  },
+  "the-component-constants": {
+    "kind": "const",
+    "name": "const-ui"
   }
 }

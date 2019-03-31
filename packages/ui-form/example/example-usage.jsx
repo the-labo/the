@@ -2,8 +2,8 @@
 
 import React from 'react'
 import { TheForm, TheFormBinder, TheFormStyle } from '@the-/ui-form'
-import { TheInput, TheInputStyle } from '@the-/input'
-import { TheButton, TheButtonStyle } from '@the-/button'
+import { TheInput, TheInputStyle } from '@the-/ui-input'
+import { TheButton, TheButtonStyle } from '@the-/ui-button'
 
 class ExampleComponent extends React.PureComponent {
   constructor (props) {

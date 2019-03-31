@@ -3,8 +3,9 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheStyle } from '@the-/style'
-import { asStyleData } from '@the-/util-component'
+import { ThemeValues } from '@the-/const-ui'
+import { TheStyle } from '@the-/ui-style'
+import { asStyleData } from '@the-/util-ui'
 
 /** Style for TheButton */
 const TheButtonStyle = ({ className, id, options }) => (
@@ -26,7 +27,6 @@ TheButtonStyle.defaultProps = {
 }
 
 TheButtonStyle.data = (options) => {
-  const { ThemeValues } = TheStyle
   const {
     backgroundColor = ThemeValues.backgroundColor,
     contentWidth = ThemeValues.contentWidth,

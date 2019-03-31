@@ -20,7 +20,7 @@
     "scope": "global",
     "description": "Head of the-components",
     "meta": {
-      "lineno": 27,
+      "lineno": 26,
       "filename": "TheHead.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
     },
@@ -35,7 +35,7 @@
     "description": "Base url",
     "memberof": "TheHead.propTypes",
     "meta": {
-      "lineno": 240,
+      "lineno": 239,
       "filename": "TheHead.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
     },
@@ -50,7 +50,7 @@
     "description": "Target of base url. '_blank', '_parent', '_self', '_top' or frame name",
     "memberof": "TheHead.propTypes",
     "meta": {
-      "lineno": 242,
+      "lineno": 241,
       "filename": "TheHead.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
     },
@@ -65,7 +65,7 @@
     "description": "CDN URL",
     "memberof": "TheHead.propTypes",
     "meta": {
-      "lineno": 244,
+      "lineno": 243,
       "filename": "TheHead.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
     },
@@ -80,7 +80,7 @@
     "description": "Char set",
     "memberof": "TheHead.propTypes",
     "meta": {
-      "lineno": 246,
+      "lineno": 245,
       "filename": "TheHead.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
     },
@@ -95,7 +95,7 @@
     "description": "Theme color",
     "memberof": "TheHead.propTypes",
     "meta": {
-      "lineno": 249,
+      "lineno": 248,
       "filename": "TheHead.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
     },
@@ -110,7 +110,7 @@
     "description": "Global property for fall back",
     "memberof": "TheHead.propTypes",
     "meta": {
-      "lineno": 251,
+      "lineno": 250,
       "filename": "TheHead.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
     },
@@ -125,7 +125,7 @@
     "description": "Global variables",
     "memberof": "TheHead.propTypes",
     "meta": {
-      "lineno": 253,
+      "lineno": 252,
       "filename": "TheHead.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
     },
@@ -140,7 +140,7 @@
     "description": "Favicon url",
     "memberof": "TheHead.propTypes",
     "meta": {
-      "lineno": 255,
+      "lineno": 254,
       "filename": "TheHead.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
     },
@@ -155,7 +155,7 @@
     "description": "DOM Id",
     "memberof": "TheHead.propTypes",
     "meta": {
-      "lineno": 257,
+      "lineno": 256,
       "filename": "TheHead.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
     },
@@ -170,7 +170,7 @@
     "description": "Item props",
     "memberof": "TheHead.propTypes",
     "meta": {
-      "lineno": 259,
+      "lineno": 258,
       "filename": "TheHead.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
     },
@@ -185,7 +185,7 @@
     "description": "Path of manifest.json",
     "memberof": "TheHead.propTypes",
     "meta": {
-      "lineno": 261,
+      "lineno": 260,
       "filename": "TheHead.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
     },
@@ -200,7 +200,7 @@
     "description": "Met contents",
     "memberof": "TheHead.propTypes",
     "meta": {
-      "lineno": 263,
+      "lineno": 262,
       "filename": "TheHead.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
     },
@@ -215,7 +215,7 @@
     "description": "Met properties",
     "memberof": "TheHead.propTypes",
     "meta": {
-      "lineno": 265,
+      "lineno": 264,
       "filename": "TheHead.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
     },
@@ -230,7 +230,7 @@
     "description": "OGP contents",
     "memberof": "TheHead.propTypes",
     "meta": {
-      "lineno": 267,
+      "lineno": 266,
       "filename": "TheHead.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
     },
@@ -245,7 +245,7 @@
     "description": "Document title",
     "memberof": "TheHead.propTypes",
     "meta": {
-      "lineno": 269,
+      "lineno": 268,
       "filename": "TheHead.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
     },
@@ -260,7 +260,7 @@
     "description": "Version string",
     "memberof": "TheHead.propTypes",
     "meta": {
-      "lineno": 271,
+      "lineno": 270,
       "filename": "TheHead.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
     },
@@ -275,7 +275,7 @@
     "description": "Key for version query",
     "memberof": "TheHead.propTypes",
     "meta": {
-      "lineno": 273,
+      "lineno": 272,
       "filename": "TheHead.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
     },
@@ -290,7 +290,7 @@
     "description": "View port settings",
     "memberof": "TheHead.propTypes",
     "meta": {
-      "lineno": 275,
+      "lineno": 274,
       "filename": "TheHead.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
     },

@@ -44,7 +44,7 @@
     "msgpack-lite": "^0.1.26",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-router-dom": "^4.4.0"
+    "react-router-dom": "^5.0.0"
   },
   "engines": {
     "node": ">=10",

@@ -4,18 +4,17 @@ import { highlightJsx } from 'ape-highlighting'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheBody, TheBodyStyle } from '@the-/body'
-import { TheContainer, TheContainerStyle } from '@the-/container'
-import { TheHead } from '@the-/head'
-import { TheHeader, TheHeaderStyle } from '@the-/header'
-import { TheHtml } from '@the-/html'
-import { TheIcon, TheIconStyle } from '@the-/icon'
-import { TheImageStyle } from '@the-/image'
-import { TheLinkStyle } from '@the-/link'
-import { TheMain, TheMainStyle } from '@the-/main'
-import { TheRoot, TheRootStyle } from '@the-/root'
-import { TheRouter } from '@the-/router'
-import { TheStyle } from '@the-/style'
+import { TheBody, TheBodyStyle } from '@the-/ui-body'
+import { TheContainer, TheContainerStyle } from '@the-/ui-container'
+import { TheHead } from '@the-/ui-head'
+import { TheHeader, TheHeaderStyle } from '@the-/ui-header'
+import { TheHtml } from '@the-/ui-html'
+import { TheIcon, TheIconStyle } from '@the-/ui-icon'
+import { TheLinkStyle } from '@the-/ui-link'
+import { TheMain, TheMainStyle } from '@the-/ui-main'
+import { TheRoot, TheRootStyle } from '@the-/ui-root'
+import { TheRouter } from '@the-/ui-router'
+import { TheStyle } from '@the-/ui-style'
 
 const githubRepoFor = (pkg) => {
   const { repository } = pkg
@@ -64,7 +63,7 @@ class TheComponentDemo extends React.PureComponent {
           <TheContainerStyle />
           <TheMainStyle /> <TheLinkStyle />
           <TheRootStyle />
-          <TheImageStyle /> <TheStyle>{TheComponentDemo.css}</TheStyle>
+          <TheStyle>{TheComponentDemo.css}</TheStyle>
         </TheHead>
         <TheBody className='the-component-demo-body' styles={{}}>
           <TheRouter.Static context={renderingContext}>

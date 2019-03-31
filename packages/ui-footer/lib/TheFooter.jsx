@@ -2,9 +2,9 @@
 
 import classnames from 'classnames'
 import React from 'react'
-import { TheContainer } from '@the-/container'
-import { TheLink } from '@the-/link'
-import { htmlAttributesFor } from '@the-/util-component'
+import { TheContainer } from '@the-/ui-container'
+import { TheLink } from '@the-/ui-link'
+import { htmlAttributesFor } from '@the-/util-ui'
 import TheFooterStyle from './TheFooterStyle'
 
 /**

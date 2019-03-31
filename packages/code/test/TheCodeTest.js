@@ -205,6 +205,16 @@ describe('the-code', () => {
     const code = new TheCode()
     await code.formatFile(target)
   })
+  
+  it('S®2rc19', async () => {
+    const target = `${__dirname}/../tmp/dest19.jsx`
+    await filecopy(
+      `${__dirname}/../misc/src19.jsx`,
+      target,
+    )
+    const code = new TheCode()
+    await code.formatFile(target)
+  })
 
   it('Using cache', async () => {
     const target = `${__dirname}/../tmp/testing-cache.js`

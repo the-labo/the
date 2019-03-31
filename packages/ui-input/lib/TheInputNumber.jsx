@@ -3,7 +3,7 @@
 import { clone } from 'asobj'
 import c from 'classnames'
 import React from 'react'
-import { TheIcon } from '@the-/icon'
+import { TheIcon } from '@the-/ui-icon'
 import TheInputText from './TheInputText'
 
 const zeroIfNaN = (v) => (isNaN(Number(v)) ? 0 : v)

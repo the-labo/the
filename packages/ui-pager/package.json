@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-pager",
   "description": "Pager of the-components",
-  "version": "15.1.3",
+  "version": "15.1.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,8 +11,9 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/style": "^15.0.3",
-    "@the-/util-component": "^15.0.3",
+    "@the-/const-ui": "^2.0.11",
+    "@the-/ui-style": "^15.1.3",
+    "@the-/util-ui": "^15.1.4",
     "classnames": "^2.2.6",
     "clay-list-pager": "^3.0.1",
     "numcal": "^4.0.0",
@@ -20,12 +21,12 @@
   },
   "devDependencies": {
     "@babel/runtime": "^7.4.2",
-    "@the-/router": "^15.1.3",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
     "@the-/ui-demo": "file:../ui-demo",
+    "@the-/ui-router": "^15.1.6",
     "coz": "^7.0.19",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
@@ -35,7 +36,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/pager#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/ui-pager#readme",
   "keywords": [
     "the",
     "ui"

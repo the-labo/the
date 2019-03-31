@@ -2,7 +2,7 @@
 
 import classnames from 'classnames'
 import React from 'react'
-import { htmlAttributesFor } from '@the-/util-component'
+import { htmlAttributesFor } from '@the-/util-ui'
 import TheBodyStyle from './TheBodyStyle'
 
 /**

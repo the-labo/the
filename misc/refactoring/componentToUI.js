@@ -59,6 +59,7 @@ const mapping = {
   'flick':"ui-flick",
   'table':"ui-table",
   'toast':"ui-toast",
+  'util-component':"util-ui",
   'video':"ui-video",
   'view':"ui-view",
 }
@@ -86,15 +87,21 @@ const _rewritePkg = async (baseDir, converter) => {
 async function main(){
   const refactor = new TheRefactor()
   for(const [from, to] of Object.entries(mapping)){
-    await refactor.renameDir(
-      `packages/${from}`,
-      `packages/${to}`,
-    )
+    const toDir = path.resolve(baseDir, 'packages', to)
     const fromPkgName = `@the-/${from}`
     const toPkgName = `@the-/${to}`
-    // console.log('Deprecating', fromPkgName)
-    // spawnSync('npm', ['deprecate', fromPkgName, `moved to "${toPkgName}"`], { cwd: baseDir, stdio: 'inherit' })
-    const toDir = path.resolve(baseDir, 'packages', to)
+    const toDireExists = !!(await stat(toDir).catch(() => null))
+    if(!toDireExists) {
+      console.log('Deprecating', fromPkgName)
+      spawnSync('npm', ['deprecate', fromPkgName, `moved to "${toPkgName}"`], { cwd: baseDir, stdio: 'inherit' })
+      await refactor.renameDir(
+        `packages/${from}`,
+        `packages/${to}`,
+      )
+    }
+
+
+
     await _rewritePkg(toDir, () => {
       return {
         name: toPkgName,
@@ -126,7 +133,7 @@ async function main(){
     )
     // await unlink(path.resolve(toDir, 'package-lock.json')).catch(() => null)
     if(!/ui-demo/.test(to)){
-      spawnSync('npm', ['i', 'file:../ui-demo','-D'], { cwd: toDir, stdio: 'inherit' })
+      // spawnSync('npm', ['i', 'file:../ui-demo','-D'], { cwd: toDir, stdio: 'inherit' })
     }
 
     // refactor
@@ -137,7 +144,7 @@ async function main(){
       const pkg = JSON.parse(await readFile(pkgFile))
       const {dependencies={}, devDependencies={}} = pkg
       for(const [from, to] of Object.entries(mapping)){
-        console.log.log(`${from} => ${to} in ${toDir}...`)
+        console.log(`${from} => ${to} in ${toDir}...`)
         const fromPkgName = `@the-/${from}`
         const toPkgName = `@the-/${to}`
         if(fromPkgName in dependencies){

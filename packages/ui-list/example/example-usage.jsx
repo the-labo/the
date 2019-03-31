@@ -2,8 +2,8 @@
 
 import React from 'react'
 import { TheListGroup, TheList, TheListStyle } from '@the-/ui-list'
-import { TheSpinStyle } from '@the-/spin'
-import { TheRouter } from '@the-/router'
+import { TheSpinStyle } from '@the-/ui-spin'
+import { TheRouter } from '@the-/ui-router'
 
 const IMAGE_URL = 'https://raw.githubusercontent.com/apeman-asset-labo/apeman-asset-images/master/dist/dummy/02.jpg'
 

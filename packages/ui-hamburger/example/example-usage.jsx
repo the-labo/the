@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { TheHamburger, TheHamburgerStyle } from '@the-/ui-hamburger'
-import { TheRouter } from '@the-/router'
+import { TheRouter } from '@the-/ui-router'
 
 class ExampleComponent extends React.Component {
   constructor () {

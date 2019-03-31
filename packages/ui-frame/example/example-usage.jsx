@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { TheFrame, TheFrameStyle } from '@the-/ui-frame'
-import { TheSpinStyle } from '@the-/spin'
+import { TheSpinStyle } from '@the-/ui-spin'
 
 class ExampleComponent extends React.PureComponent {
   render () {

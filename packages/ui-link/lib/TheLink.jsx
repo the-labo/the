@@ -4,9 +4,9 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { parse as parseUrl } from 'url'
-import { TheIcon } from '@the-/icon'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
+import { TheIcon } from '@the-/ui-icon'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
+import { get } from '@the-/window'
 import TheLinkStyle from './TheLinkStyle'
 
 /**
@@ -15,7 +15,11 @@ import TheLinkStyle from './TheLinkStyle'
 class TheLink extends React.Component {
   static Link(props) {
     const { children, className, to } = props
-    const { protocol } = (to && typeof to === 'string' && parseUrl(to)) || {}
+    const { protocol } =
+      (to &&
+        typeof to === 'string' &&
+        new URL(to, get('location.href') || void 0)) ||
+      {}
     if (protocol) {
       // External link
       return (

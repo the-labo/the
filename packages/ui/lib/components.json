@@ -1,90 +1,90 @@
 {
-  "@the-/alt": [
+  "@the-/ui-alt": [
     "TheAlt",
     "TheAltStyle"
   ],
-  "@the-/bar": [
+  "@the-/ui-bar": [
     "TheBar",
     "TheActionBar",
     "TheBarStyle"
   ],
-  "@the-/body": [
+  "@the-/ui-body": [
     "TheBody",
     "TheBodyStyle"
   ],
-  "@the-/button": [
+  "@the-/ui-button": [
     "TheButton",
     "TheButtonGroup",
     "TheButtonStyle"
   ],
-  "@the-/caught": [
+  "@the-/ui-caught": [
     "TheCaught",
     "TheCaughtCatcher",
     "TheCaughtStyle"
   ],
-  "@the-/condition": [
+  "@the-/ui-condition": [
     "TheCondition",
     "TheConditionStyle"
   ],
-  "@the-/container": [
+  "@the-/ui-container": [
     "TheContainer",
     "TheContainerStyle"
   ],
-  "@the-/cycle": [
+  "@the-/ui-cycle": [
     "TheCycle"
   ],
-  "@the-/dialog": [
+  "@the-/ui-dialog": [
     "TheDialog",
     "TheOkDialog",
     "TheYesNoDialog",
     "TheConfirmDialog",
     "TheDialogStyle"
   ],
-  "@the-/flick": [
+  "@the-/ui-flick": [
     "TheFlick",
     "TheFlickStyle"
   ],
-  "@the-/footer": [
+  "@the-/ui-footer": [
     "TheFooter",
     "TheFooterStyle"
   ],
-  "@the-/form": [
+  "@the-/ui-form": [
     "TheForm",
     "TheFormBinder",
     "TheFormStyle"
   ],
-  "@the-/frame": [
+  "@the-/ui-frame": [
     "TheFrame",
     "TheFrameStyle"
   ],
-  "@the-/hamburger": [
+  "@the-/ui-hamburger": [
     "TheHamburger",
     "TheHamburgerStyle"
   ],
-  "@the-/head": [
+  "@the-/ui-head": [
     "TheHead"
   ],
-  "@the-/header": [
+  "@the-/ui-header": [
     "TheHeader",
     "TheHeaderStyle"
   ],
-  "@the-/html": [
+  "@the-/ui-html": [
     "TheHtml",
     "TheHtmlStyle"
   ],
-  "@the-/icon": [
+  "@the-/ui-icon": [
     "TheIcon",
     "TheIconStyle"
   ],
-  "@the-/image": [
+  "@the-/ui-image": [
     "TheImage",
     "TheImageStyle"
   ],
-  "@the-/info": [
+  "@the-/ui-info": [
     "TheInfo",
     "TheInfoStyle"
   ],
-  "@the-/input": [
+  "@the-/ui-input": [
     "TheInput",
     "TheInputText",
     "TheInputTextArea",
@@ -96,84 +96,84 @@
     "TheInputStyle",
     "TheInputToggle"
   ],
-  "@the-/link": [
+  "@the-/ui-link": [
     "TheLink",
     "TheLinkStyle"
   ],
-  "@the-/list": [
+  "@the-/ui-list": [
     "TheList",
     "TheListGroup",
     "TheListStyle"
   ],
-  "@the-/main": [
+  "@the-/ui-main": [
     "TheMain",
     "TheMainStyle"
   ],
-  "@the-/menu": [
+  "@the-/ui-menu": [
     "TheMenu",
     "TheMenuItem",
     "TheMenuStyle",
     "TheDropdownMenu"
   ],
-  "@the-/meta": [
+  "@the-/ui-meta": [
     "TheMeta"
   ],
-  "@the-/pager": [
+  "@the-/ui-pager": [
     "ThePager",
     "ThePagerStyle"
   ],
-  "@the-/repeatable": [
+  "@the-/ui-repeatable": [
     "TheRepeatable",
     "TheRepeatableStyle"
   ],
-  "@the-/root": [
+  "@the-/ui-root": [
     "TheRoot",
     "TheRootStyle"
   ],
-  "@the-/route": [
+  "@the-/ui-route": [
     "TheRoute",
     "TheRouteStyle",
     "TheRouteStack"
   ],
-  "@the-/router": [
+  "@the-/ui-router": [
     "TheRouter",
     "TheRouterStyle"
   ],
-  "@the-/section": [
+  "@the-/ui-section": [
     "TheSection",
     "TheSectionStyle",
     "TheAccordionSection"
   ],
-  "@the-/spin": [
+  "@the-/ui-spin": [
     "TheSpin",
     "TheSpinStyle"
   ],
-  "@the-/step": [
+  "@the-/ui-step": [
     "TheStep",
     "TheStepBar",
     "TheStepStyle"
   ],
-  "@the-/style": [
+  "@the-/ui-style": [
     "TheStyle"
   ],
-  "@the-/tab": [
+  "@the-/ui-tab": [
     "TheTab",
     "TheTabStyle"
   ],
-  "@the-/table": [
+  "@the-/ui-table": [
     "TheTable",
     "TheTableStyle"
   ],
-  "@the-/toast": [
+  "@the-/ui-toast": [
     "TheToast",
     "TheToastStyle",
     "TheToastGroup"
   ],
-  "@the-/video": [
+  "@the-/ui-video": [
     "TheVideo",
     "TheVideoStyle"
   ],
-  "@the-/view": [
+  "@the-/ui-view": [
     "TheView",
     "TheViewStyle"
   ]

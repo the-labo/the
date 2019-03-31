@@ -1,7 +1,7 @@
 {
   "name": "@the-/metrics",
   "description": "Performance measures for the-framework",
-  "version": "15.1.3",
+  "version": "15.1.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",

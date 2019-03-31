@@ -3,14 +3,14 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheIcon } from '@the-/icon'
-import { TheSpin } from '@the-/spin'
+import { TheIcon } from '@the-/ui-icon'
+import { TheSpin } from '@the-/ui-spin'
 import {
   eventHandlersFor,
   htmlAttributesFor,
   newId,
   toggleBodyClass,
-} from '@the-/util-component'
+} from '@the-/util-ui'
 
 /**
  * Dialog for the-components

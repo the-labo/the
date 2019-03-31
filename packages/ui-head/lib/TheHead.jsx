@@ -5,7 +5,6 @@ import { expand } from 'objnest'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { spinalcase } from 'stringcase'
-import { resolve as resolveUrl } from 'url'
 
 const addQuery = (url, query) => [url, query].join(/\?/.test(url) ? '&' : '?')
 const viewPortString = (values) =>
@@ -228,7 +227,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
       url = addQuery(url, vQuery)
     }
     if (cdn && /^\//.test(url)) {
-      url = resolveUrl(cdn, url)
+      url = new URL(url, cdn).href
     }
     return url
   }

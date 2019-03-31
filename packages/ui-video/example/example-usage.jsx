@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { TheVideo, TheVideoStyle } from '@the-/ui-video'
-import { TheIconStyle } from '@the-/icon'
+import { TheIconStyle } from '@the-/ui-icon'
 
 const VIDEO_URL = './mov_bbb.mp4'
 

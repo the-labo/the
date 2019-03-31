@@ -5,9 +5,9 @@ import chopcal from 'chopcal'
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheButton } from '@the-/button'
-import { TheSpin } from '@the-/spin'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-component'
+import { TheButton } from '@the-/ui-button'
+import { TheSpin } from '@the-/ui-spin'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
 const pointFromTouchEvent = (e) => {
   const [touch] = e.changedTouches || []

@@ -3,15 +3,15 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheCondition } from '@the-/condition'
-import { TheIcon } from '@the-/icon'
-import { TheSpin } from '@the-/spin'
+import { TheCondition } from '@the-/ui-condition'
+import { TheIcon } from '@the-/ui-icon'
+import { TheSpin } from '@the-/ui-spin'
 import {
   eventHandlersFor,
   htmlAttributesFor,
   newId,
   readFileAsDataURL,
-} from '@the-/util-component'
+} from '@the-/util-ui'
 import {
   isImageUrl,
   isUnknownTypeUrl,

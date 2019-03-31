@@ -3,7 +3,7 @@
  */
 'use strict'
 
-import { asStyleData } from '@the-/util-component'
+import { asStyleData } from '@the-/util-ui'
 
 /** @lends DateStyleData */
 function DateStyleData({

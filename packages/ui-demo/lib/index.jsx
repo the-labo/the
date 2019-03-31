@@ -10,3 +10,7 @@ import TheComponentDemo from './TheComponentDemo'
 export {
   TheComponentDemo,
 }
+
+export default {
+      TheComponentDemo,
+}

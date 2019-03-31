@@ -20,7 +20,7 @@
     "scope": "global",
     "description": "Live demo of the-components",
     "meta": {
-      "lineno": 37,
+      "lineno": 36,
       "filename": "TheComponentDemo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-demo/lib"
     },
@@ -35,7 +35,7 @@
     "description": "CSS class name",
     "memberof": "TheComponentDemo.propTypes",
     "meta": {
-      "lineno": 114,
+      "lineno": 113,
       "filename": "TheComponentDemo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-demo/lib"
     },
@@ -50,7 +50,7 @@
     "description": "Package json for demo",
     "memberof": "TheComponentDemo.propTypes",
     "meta": {
-      "lineno": 116,
+      "lineno": 115,
       "filename": "TheComponentDemo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-demo/lib"
     },
@@ -65,7 +65,7 @@
     "description": "Snippet script",
     "memberof": "TheComponentDemo.propTypes",
     "meta": {
-      "lineno": 118,
+      "lineno": 117,
       "filename": "TheComponentDemo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-demo/lib"
     },
