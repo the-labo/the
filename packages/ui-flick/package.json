@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-flick",
   "description": "Flickable viewer of the-components",
-  "version": "4.0.26",
+  "version": "4.0.27",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -17,14 +17,15 @@
     "@the-/ui-image": "^15.1.6",
     "@the-/ui-spin": "^15.1.7",
     "@the-/ui-style": "^15.1.4",
+    "@the-/ui-video": "^15.1.6",
     "@the-/util-ui": "^15.1.4",
+    "@the-/window": "^15.1.4",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
-    "react-draggable": "^3.2.1",
-    "the-window": "^7.0.6"
+    "react-draggable": "^3.2.1"
   },
   "devDependencies": {
-    "@babel/core": "*",
+    "@babel/core": "^7.4.0",
     "@babel/runtime": "^7.4.2",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
@@ -52,6 +53,9 @@
     "react": ">=16",
     "react-dom": ">=16"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": "the-labo/the-flick",
   "scripts": {
     "build": "the-script-build",
@@ -59,8 +63,5 @@
     "prepare": "npm run build && npm run doc",
     "test": "the-script-test",
     "watch": "the-script-build -w"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
