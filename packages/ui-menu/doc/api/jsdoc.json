@@ -63,7 +63,7 @@
     "description": "Style for TheMenu",
     "params": [],
     "meta": {
-      "lineno": 10,
+      "lineno": 11,
       "filename": "TheMenuStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
     },
@@ -198,7 +198,7 @@
     "description": "Style options",
     "memberof": "TheMenuStyle.propTypes",
     "meta": {
-      "lineno": 21,
+      "lineno": 22,
       "filename": "TheMenuStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
     },

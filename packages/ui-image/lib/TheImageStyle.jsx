@@ -3,6 +3,7 @@
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { ThemeValues } from '@the-/const-ui'
 import { TheStyle } from '@the-/ui-style'
 import { asStyleData } from '@the-/util-ui'
 
@@ -26,7 +27,6 @@ TheImageStyle.defaultProps = {
 }
 
 TheImageStyle.data = (options) => {
-  const { ThemeValues } = TheStyle
   let {
     lightBackgroundColor = ThemeValues.lightBackgroundColor,
     lightTextColor = ThemeValues.lightTextColor,

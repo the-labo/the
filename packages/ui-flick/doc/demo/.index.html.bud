@@ -3,7 +3,8 @@
  */
 'use strict'
 
-const { readFileSync } = require('fs')const demoMarkup = require('@the-/ui-demo/markup')
+const { readFileSync } = require('fs')
+const demoMarkup = require('@the-/ui-demo/markup')
 
 module.exports = {
   data: {

@@ -35,7 +35,7 @@
     "description": "Style for TheView",
     "params": [],
     "meta": {
-      "lineno": 10,
+      "lineno": 11,
       "filename": "TheViewStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-view/lib"
     },
@@ -65,7 +65,7 @@
     "description": "Style options",
     "memberof": "TheViewStyle.propTypes",
     "meta": {
-      "lineno": 21,
+      "lineno": 22,
       "filename": "TheViewStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-view/lib"
     },

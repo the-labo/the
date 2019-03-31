@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { TheStyle } from '@the-/ui-style'
 import { asStyleData } from '@the-/util-ui'
+import {ThemeValues} from '@the-/const-ui'
 
 /** Style for TheForm */
 const TheFormStyle = ({ className, id, options }) => (
@@ -26,7 +27,6 @@ TheFormStyle.defaultProps = {
 }
 
 TheFormStyle.data = (options) => {
-  const { ThemeValues } = TheStyle
   const {
     contentWidth = ThemeValues.contentWidth,
     errorColor = ThemeValues.errorColor,

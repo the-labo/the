@@ -3,8 +3,8 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { asStyleData } from '@the-/util-ui'
 import { TheStyle } from '@the-/ui-style'
+import { asStyleData } from '@the-/util-ui'
 
 /** Style for TheRoute */
 const TheRouteStyle = ({ className, id, options }) => (
@@ -26,8 +26,7 @@ TheRouteStyle.defaultProps = {
 }
 
 TheRouteStyle.data = (options) => {
-  const { ThemeValues } = TheStyle
-  const { animationDuration = 400, dangerColor = '#A33' } = options
+  const { animationDuration = 400 } = options
   return Object.assign(
     {},
     asStyleData('.the-route', {

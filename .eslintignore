@@ -26,6 +26,7 @@ var/
 /packages/code/lib/parsers/index.js
 /packages/code/lib/processors/index.js
 /packages/code/test/TheCodeTest.js
+/packages/const-ui/lib/index.js
 /packages/context/lib/index.js
 /packages/controller/lib/index.js
 /packages/date/lib/index.js
@@ -64,6 +65,8 @@ var/
 /packages/resize/lib/index.js
 /packages/resource/lib/index.js
 /packages/resource/lib/mixins/index.js
+/packages/route/doc/demo/bundle.js
+/packages/route/lib/index.jsx
 /packages/run/lib/index.js
 /packages/s3/lib/index.js
 /packages/scene/lib/index.js
@@ -186,6 +189,7 @@ var/
 /packages/util-site/lib/index.js
 /packages/util-style/lib/index.js
 /packages/util-sw/lib/index.js
+/packages/util-ui/lib/index.js
 /packages/window/lib/index.js
 
 # Other paths

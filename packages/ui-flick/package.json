@@ -1,64 +1,67 @@
 {
   "name": "@the-/ui-flick",
-  "description": "A simple library for asking boolean questions in cli programs",
-  "version": "15.1.4",
+  "description": "Flickable viewer of the-components",
+  "version": "4.0.26",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
     "url": "http://okunishitaka.com"
   },
-  "_from": "yesno@^0.2.0",
-  "_id": "yesno@0.2.0",
-  "_inBundle": false,
-  "_integrity": "sha512-A66RIAOz+nP2hFpXfULwr57yubsWjEXw7ay8XL5a1AA6FpxiEDllKCnx9vCFDhN5TviTrF9yIfBwPskW3x9jxw==",
-  "_location": "/yesno",
-  "_phantomChildren": {},
-  "_requested": {
-    "escapedName": "yesno",
-    "fetchSpec": "^0.2.0",
-    "name": "yesno",
-    "raw": "yesno@^0.2.0",
-    "rawSpec": "^0.2.0",
-    "registry": true,
-    "saveSpec": null,
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/ape-asking"
-  ],
-  "_resolved": "https://registry.npmjs.org/yesno/-/yesno-0.2.0.tgz",
-  "_shasum": "acc6c6b57b5ef88279a83cd394be9dc5d2317b7a",
-  "_spec": "yesno@^0.2.0",
-  "_where": "/Users/okuni/Projects/the-flick/node_modules/ape-asking",
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
-  "bundleDependencies": false,
-  "deprecated": false,
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2",
+    "react-draggable": "^3.2.1",
+    "the-button": "^3.0.36",
+    "the-component-util": "^3.0.22",
+    "the-condition": "^3.0.4",
+    "the-icon": "^4.0.10",
+    "the-image": "^2.0.20",
+    "the-spin": "^3.1.12",
+    "the-style": "^2.2.8",
+    "the-video": "^2.1.1",
+    "the-window": "^7.0.6"
+  },
   "devDependencies": {
+    "@babel/core": "*",
+    "@babel/runtime": "^7.4.2",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
-    "tap": "^12.1.0"
+    "@the-/ui-demo": "file:../ui-demo",
+    "coz": "^7.0.19",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "the-script-release": "^1.0.10"
   },
   "engines": {
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/ui-flick#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/the-flick#readme",
   "keywords": [
     "the",
     "ui"
   ],
   "license": "MIT",
-  "main": "yesno.js",
+  "main": "shim",
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "repository": "the-labo/the-flick",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-test",
+    "watch": "the-script-build -w"
+  },
   "publishConfig": {
     "access": "public"
-  },
-  "repository": "the-labo/the",
-  "scripts": {
-    "test": "tap test/index.js"
-  },
-  "dependencies": {}
+  }
 }

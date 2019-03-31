@@ -5,11 +5,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { unlessProduction } from '@the-/check'
 import { TheIcon } from '@the-/ui-icon'
-import {
-  eventHandlersFor,
-  htmlAttributesFor,
-  newId,
-} from '@the-/util-ui'
+import { eventHandlersFor, htmlAttributesFor, newId } from '@the-/util-ui'
 import { normalizeOptions, renderErrorMessage } from './helpers'
 
 /**

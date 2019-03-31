@@ -3,11 +3,7 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import {
-  eventHandlersFor,
-  htmlAttributesFor,
-  newId,
-} from '@the-/util-ui'
+import { eventHandlersFor, htmlAttributesFor, newId } from '@the-/util-ui'
 
 /**
  * Toggle input of the-components

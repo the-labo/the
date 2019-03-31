@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { TheStyle } from '@the-/ui-style'
 import { asStyleData } from '@the-/util-ui'
+import {ThemeValues} from '@the-/const-ui'
 
 /** Style for TheFrame */
 const TheFrameStyle = ({ className, id, options }) => (
@@ -26,7 +27,6 @@ TheFrameStyle.defaultProps = {
 }
 
 TheFrameStyle.data = (options) => {
-  const { ThemeValues } = TheStyle
   const { dominantColor = ThemeValues.dominantColor } = options
   return asStyleData('.the-frame', {
     '.the-frame-embed-content': {

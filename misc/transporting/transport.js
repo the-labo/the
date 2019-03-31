@@ -146,11 +146,11 @@ const _removeDevDeps = async (baseDir, names) => {
       continue
     }
     if (!/demo/.test(name)) {
-      if (['component'].includes(kind)) {
+      if (['ui'].includes(kind)) {
         const demoComponentDir = path.resolve(
           baseDir,
           'packages',
-          'demo-component',
+          'demo-ui',
         )
         const demoComponentPkg = require(path.resolve(
           demoComponentDir,
@@ -212,7 +212,7 @@ const _removeDevDeps = async (baseDir, names) => {
           })
         }
         await _addDevDeps(toDir, {
-          '@the-/component-demo': 'file:../component-demo',
+          '@the-/ui-demo': 'file:../ui-demo',
           coz: '*',
         })
 

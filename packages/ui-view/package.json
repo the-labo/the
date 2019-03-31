@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-view",
   "description": "View of the-components",
-  "version": "15.1.4",
+  "version": "15.1.6",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,13 +11,15 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/const-ui": "^2.0.11",
     "@the-/container": "^3.0.10",
-    "@the-/ui-button": "^15.1.4",
-    "@the-/ui-container": "^15.1.4",
-    "@the-/ui-icon": "^15.1.4",
-    "@the-/ui-link": "^15.1.4",
-    "@the-/ui-spin": "^15.1.4",
-    "@the-/ui-style": "^15.1.3",
+    "@the-/ui-button": "^15.1.6",
+    "@the-/ui-container": "^15.1.6",
+    "@the-/ui-icon": "^15.1.6",
+    "@the-/ui-link": "^15.1.7",
+    "@the-/ui-spin": "^15.1.7",
+    "@the-/ui-style": "^15.1.4",
+    "@the-/util-ui": "^15.1.4",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
@@ -28,12 +30,12 @@
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
     "@the-/ui-demo": "file:../ui-demo",
-    "@the-/ui-menu": "^15.1.4",
-    "@the-/ui-router": "^15.1.6",
+    "@the-/ui-menu": "^15.1.5",
+    "@the-/ui-router": "^15.1.8",
     "coz": "^7.0.19",
-    "objnest": "^5.0.4",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5",
+    "objnest": "^5.0.6",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0"
   },
   "engines": {
