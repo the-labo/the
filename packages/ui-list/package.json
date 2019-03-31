@@ -13,7 +13,7 @@
   "dependencies": {
     "@the-/const-ui": "^2.0.11",
     "@the-/ui-condition": "^15.1.5",
-    "@the-/ui-icon": "^15.1.6",
+    "@the-/ui-icon": "^15.1.7",
     "@the-/ui-image": "^15.1.6",
     "@the-/ui-link": "^15.1.7",
     "@the-/ui-spin": "^15.1.7",
