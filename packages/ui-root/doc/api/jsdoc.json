@@ -1,0 +1,59 @@
+[
+  {
+    "id": "module:@the-/ui-root",
+    "longname": "module:@the-/ui-root",
+    "name": "@the-/ui-root",
+    "kind": "module",
+    "description": "Root element of the-components",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-root/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheRoot",
+    "longname": "TheRoot",
+    "name": "TheRoot",
+    "kind": "class",
+    "scope": "global",
+    "description": "Root element of the-components",
+    "meta": {
+      "lineno": 11,
+      "filename": "TheRoot.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-root/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheRootStyle",
+    "longname": "TheRootStyle",
+    "name": "TheRootStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheRoot",
+    "params": [],
+    "meta": {
+      "lineno": 10,
+      "filename": "TheRootStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-root/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheRootStyle.propTypes.options",
+    "longname": "TheRootStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
+    "memberof": "TheRootStyle.propTypes",
+    "meta": {
+      "lineno": 21,
+      "filename": "TheRootStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-root/lib"
+    },
+    "order": 3
+  }
+]

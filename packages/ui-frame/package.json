@@ -1,0 +1,61 @@
+{
+  "name": "@the-/ui-frame",
+  "description": "iFrame of the-components",
+  "version": "15.1.3",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "@the-/condition": "^3.0.5",
+    "@the-/spin": "^15.0.4",
+    "@the-/util-component": "^15.0.3",
+    "@the-/window": "^15.0.3",
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.4.2",
+    "@the-/router": "^15.1.3",
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates",
+    "@the-/ui-demo": "file:../ui-demo",
+    "coz": "^7.0.19",
+    "objnest": "^5.0.6",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "react-router-dom": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/frame#readme",
+  "keywords": [
+    "the",
+    "ui"
+  ],
+  "license": "MIT",
+  "main": "shim",
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-test",
+    "watch": "the-script-build -w"
+  }
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "module:@the-/ui-icon",
+    "longname": "module:@the-/ui-icon",
+    "name": "@the-/ui-icon",
+    "kind": "module",
+    "description": "Icon of the-components",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-icon/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheIcon",
+    "longname": "TheIcon",
+    "name": "TheIcon",
+    "kind": "class",
+    "scope": "global",
+    "description": "Icon of the-components",
+    "meta": {
+      "lineno": 11,
+      "filename": "TheIcon.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-icon/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheIconStyle",
+    "longname": "TheIconStyle",
+    "name": "TheIconStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheIcon",
+    "params": [],
+    "meta": {
+      "lineno": 10,
+      "filename": "TheIconStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-icon/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheIconStyle.propTypes.options",
+    "longname": "TheIconStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
+    "memberof": "TheIconStyle.propTypes",
+    "meta": {
+      "lineno": 21,
+      "filename": "TheIconStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-icon/lib"
+    },
+    "order": 3
+  }
+]

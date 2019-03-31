@@ -1,0 +1,134 @@
+[
+  {
+    "id": "module:@the-/ui-header",
+    "longname": "module:@the-/ui-header",
+    "name": "@the-/ui-header",
+    "kind": "module",
+    "description": "Header of the-components",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-header/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheHeader",
+    "longname": "TheHeader",
+    "name": "TheHeader",
+    "kind": "class",
+    "scope": "global",
+    "description": "Header of the-components",
+    "meta": {
+      "lineno": 18,
+      "filename": "TheHeader.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-header/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheHeaderStyle",
+    "longname": "TheHeaderStyle",
+    "name": "TheHeaderStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheHeader",
+    "params": [],
+    "meta": {
+      "lineno": 10,
+      "filename": "TheHeaderStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-header/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "TheHeader.propTypes.asOverlay",
+    "longname": "TheHeader.propTypes.asOverlay",
+    "name": "asOverlay",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style as overlay",
+    "memberof": "TheHeader.propTypes",
+    "meta": {
+      "lineno": 222,
+      "filename": "TheHeader.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-header/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheHeader.propTypes.asStatic",
+    "longname": "TheHeader.propTypes.asStatic",
+    "name": "asStatic",
+    "kind": "member",
+    "scope": "static",
+    "description": "Render with static positioning",
+    "memberof": "TheHeader.propTypes",
+    "meta": {
+      "lineno": 224,
+      "filename": "TheHeader.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-header/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "TheHeader.propTypes.notices",
+    "longname": "TheHeader.propTypes.notices",
+    "name": "notices",
+    "kind": "member",
+    "scope": "static",
+    "description": "Notices",
+    "memberof": "TheHeader.propTypes",
+    "meta": {
+      "lineno": 226,
+      "filename": "TheHeader.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-header/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheHeader.propTypes.reversed",
+    "longname": "TheHeader.propTypes.reversed",
+    "name": "reversed",
+    "kind": "member",
+    "scope": "static",
+    "description": "Reversed theme",
+    "memberof": "TheHeader.propTypes",
+    "meta": {
+      "lineno": 228,
+      "filename": "TheHeader.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-header/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheHeader.propTypes.ribbon",
+    "longname": "TheHeader.propTypes.ribbon",
+    "name": "ribbon",
+    "kind": "member",
+    "scope": "static",
+    "description": "Ribbon to show",
+    "memberof": "TheHeader.propTypes",
+    "meta": {
+      "lineno": 230,
+      "filename": "TheHeader.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-header/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "TheHeaderStyle.propTypes.options",
+    "longname": "TheHeaderStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
+    "memberof": "TheHeaderStyle.propTypes",
+    "meta": {
+      "lineno": 21,
+      "filename": "TheHeaderStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-header/lib"
+    },
+    "order": 8
+  }
+]

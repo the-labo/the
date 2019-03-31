@@ -48,38 +48,49 @@ class TheRefactor {
    * @param {function} converter
    * @returns {Promise<void>}
    */
-  async convert(pattern, converter) {
-    return this._each(pattern, ({ content }) => {
-      return {
-        content: converter(content),
-      }
-    })
+  async convert(pattern, converter, options = {}) {
+    const { cwd, ignore } = options
+    return this._each(
+      pattern,
+      ({ content }) => {
+        return {
+          content: converter(content),
+        }
+      },
+      { cwd, ignore },
+    )
   }
 
   /**
    * Rename files
    * @param {string} pattern - Source file name patterns
    * @param {function} convert - Converter
+   * @param {Object} [options={}] - Optional settings
    * @returns {Promise<void>}
    */
-  async rename(pattern, convert) {
-    return this._each(pattern, ({ filename }) => {
-      const dirname = path.dirname(filename)
-      const extname = path.extname(filename)
-      const basename = path.basename(filename, extname)
-      const changed = {
-        basename,
-        dirname,
-        extname,
-        ...convert({ basename, dirname, extname }),
-      }
-      return {
-        filename: path.join(
-          changed.dirname,
-          changed.basename + changed.extname,
-        ),
-      }
-    })
+  async rename(pattern, convert, options = {}) {
+    const { cwd, ignore } = options
+    return this._each(
+      pattern,
+      ({ filename }) => {
+        const dirname = path.dirname(filename)
+        const extname = path.extname(filename)
+        const basename = path.basename(filename, extname)
+        const changed = {
+          basename,
+          dirname,
+          extname,
+          ...convert({ basename, dirname, extname }),
+        }
+        return {
+          filename: path.join(
+            changed.dirname,
+            changed.basename + changed.extname,
+          ),
+        }
+      },
+      { cwd, ignore },
+    )
   }
 
   /**
@@ -117,14 +128,21 @@ class TheRefactor {
    * @returns {Promise<void>}
    */
   async rewrite(pattern, rules, options = {}) {
-    const { max = 100 } = options
+    const { cwd, ignore, max = 100 } = options
 
-    return this._each(pattern, ({ content, filename }) => {
-      for (const [from, to] of Object.entries(rules)) {
-        content = _replace(content, _restoreRegExp(from), to, { filename, max })
-      }
-      return { content }
-    })
+    return this._each(
+      pattern,
+      ({ content, filename }) => {
+        for (const [from, to] of Object.entries(rules)) {
+          content = _replace(content, _restoreRegExp(from), to, {
+            filename,
+            max,
+          })
+        }
+        return { content }
+      },
+      { cwd, ignore },
+    )
   }
 
   /**
@@ -151,8 +169,9 @@ class TheRefactor {
     }
   }
 
-  async _each(pattern, task) {
-    const filenames = await aglob(pattern)
+  async _each(pattern, task, options = {}) {
+    const { cwd, ignore = [] } = options
+    const filenames = await aglob(pattern, { cwd, ignore })
     const results = {}
     for (const filename of filenames) {
       const stat = await statAsync(filename).catch(() => null)

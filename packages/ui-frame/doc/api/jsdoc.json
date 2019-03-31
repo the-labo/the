@@ -1,0 +1,134 @@
+[
+  {
+    "id": "module:@the-/ui-frame",
+    "longname": "module:@the-/ui-frame",
+    "name": "@the-/ui-frame",
+    "kind": "module",
+    "description": "iFrame of the-components",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheFrame",
+    "longname": "TheFrame",
+    "name": "TheFrame",
+    "kind": "class",
+    "scope": "global",
+    "description": "iFrame of the-components",
+    "meta": {
+      "lineno": 15,
+      "filename": "TheFrame.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheFrameStyle",
+    "longname": "TheFrameStyle",
+    "name": "TheFrameStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheFrame",
+    "params": [],
+    "meta": {
+      "lineno": 10,
+      "filename": "TheFrameStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "TheFrame.propTypes.alt",
+    "longname": "TheFrame.propTypes.alt",
+    "name": "alt",
+    "kind": "member",
+    "scope": "static",
+    "description": "Alt text",
+    "memberof": "TheFrame.propTypes",
+    "meta": {
+      "lineno": 134,
+      "filename": "TheFrame.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheFrame.propTypes.embed",
+    "longname": "TheFrame.propTypes.embed",
+    "name": "embed",
+    "kind": "member",
+    "scope": "static",
+    "description": "Enbed source content as dynamic html",
+    "memberof": "TheFrame.propTypes",
+    "meta": {
+      "lineno": 136,
+      "filename": "TheFrame.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "TheFrame.propTypes.onLoad",
+    "longname": "TheFrame.propTypes.onLoad",
+    "name": "onLoad",
+    "kind": "member",
+    "scope": "static",
+    "description": "Handler for Load",
+    "memberof": "TheFrame.propTypes",
+    "meta": {
+      "lineno": 138,
+      "filename": "TheFrame.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheFrame.propTypes.spinning",
+    "longname": "TheFrame.propTypes.spinning",
+    "name": "spinning",
+    "kind": "member",
+    "scope": "static",
+    "description": "Spinning or not",
+    "memberof": "TheFrame.propTypes",
+    "meta": {
+      "lineno": 140,
+      "filename": "TheFrame.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheFrame.propTypes.src",
+    "longname": "TheFrame.propTypes.src",
+    "name": "src",
+    "kind": "member",
+    "scope": "static",
+    "description": "Source URL",
+    "memberof": "TheFrame.propTypes",
+    "meta": {
+      "lineno": 142,
+      "filename": "TheFrame.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "TheFrameStyle.propTypes.options",
+    "longname": "TheFrameStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
+    "memberof": "TheFrameStyle.propTypes",
+    "meta": {
+      "lineno": 21,
+      "filename": "TheFrameStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
+    },
+    "order": 8
+  }
+]

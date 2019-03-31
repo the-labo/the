@@ -16,7 +16,7 @@ const {
 const { EOL } = require('os')
 const path = require('path')
 const rimraf = require('rimraf')
-const { TheRefactor } = require('the-refactor')
+const { TheRefactor } = require('@the-/refactor')
 const transporting = require('./transporting')
 const pkg = require('../../package')
 const baseDir = `${__dirname}/../..`

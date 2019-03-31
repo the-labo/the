@@ -80,7 +80,7 @@ module.exports = pon({
     ],
     doc: ['pkg:run:doc'],
     test: ['test:root','pkg:run:test'],
-    publish: ['build', 'doc', 'pkg:sync', 'pkg:publish']
+    publish: ['pkg:sync', 'pkg:publish']
   },
   // -----------------------------------
   // Aliases

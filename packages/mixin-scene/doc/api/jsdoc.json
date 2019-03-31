@@ -1,0 +1,1999 @@
+[
+  {
+    "id": "module:@the-/mixin-scene",
+    "longname": "module:@the-/mixin-scene",
+    "name": "@the-/mixin-scene",
+    "kind": "module",
+    "description": "Mixins for the-scene",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "isReady",
+    "longname": "isReady",
+    "name": "isReady",
+    "kind": "member",
+    "scope": "global",
+    "description": "Get is ready or not",
+    "properties": [
+      {
+        "type": {
+          "names": [
+            "Boolean"
+          ]
+        },
+        "name": "isReady"
+      }
+    ],
+    "meta": {
+      "lineno": 30,
+      "filename": "withReady.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 58
+  },
+  {
+    "id": "bindDefaults",
+    "longname": "bindDefaults",
+    "name": "bindDefaults",
+    "kind": "function",
+    "scope": "global",
+    "description": "For bindDefaults",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "method annotation function"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "bindDefaults.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "bindScope",
+    "longname": "bindScope",
+    "name": "bindScope",
+    "kind": "function",
+    "scope": "global",
+    "description": "For bindScope",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class annotation function"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "bindScope.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "siteToast",
+    "longname": "siteToast",
+    "name": "siteToast",
+    "kind": "function",
+    "scope": "global",
+    "description": "Site toast mix",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Annotated class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "siteToast.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "reset",
+    "longname": "reset",
+    "name": "reset",
+    "kind": "function",
+    "scope": "global",
+    "description": "Rest toasts",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object.<string, Array.<string>>"
+          ]
+        },
+        "description": "Toast queue",
+        "name": "queues"
+      }
+    ],
+    "meta": {
+      "lineno": 18,
+      "filename": "siteToast.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "showError",
+    "longname": "showError",
+    "name": "showError",
+    "kind": "function",
+    "scope": "global",
+    "description": "Show error toast",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "message"
+      }
+    ],
+    "meta": {
+      "lineno": 27,
+      "filename": "siteToast.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "showInfo",
+    "longname": "showInfo",
+    "name": "showInfo",
+    "kind": "function",
+    "scope": "global",
+    "description": "Show info toast",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "message"
+      }
+    ],
+    "meta": {
+      "lineno": 34,
+      "filename": "siteToast.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "showWarn",
+    "longname": "showWarn",
+    "name": "showWarn",
+    "kind": "function",
+    "scope": "global",
+    "description": "Show warn toast",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "message"
+      }
+    ],
+    "meta": {
+      "lineno": 41,
+      "filename": "siteToast.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "withBack",
+    "longname": "withBack",
+    "name": "withBack",
+    "kind": "function",
+    "scope": "global",
+    "description": "withBack mixin",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class to mix",
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "withBack.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 8
+  },
+  {
+    "id": "goBack",
+    "longname": "goBack",
+    "name": "goBack",
+    "kind": "function",
+    "scope": "global",
+    "description": "Go Back",
+    "meta": {
+      "lineno": 16,
+      "filename": "withBack.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 9
+  },
+  {
+    "id": "withBusy",
+    "longname": "withBusy",
+    "name": "withBusy",
+    "kind": "function",
+    "scope": "global",
+    "description": "withBusy mixin",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class to mix",
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "withBusy.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 10
+  },
+  {
+    "id": "busyFor",
+    "longname": "busyFor",
+    "name": "busyFor",
+    "kind": "function",
+    "scope": "global",
+    "description": "Wait busy for",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "name": "duration"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 22,
+      "filename": "withBusy.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 11
+  },
+  {
+    "id": "busyWhile",
+    "longname": "busyWhile",
+    "name": "busyWhile",
+    "kind": "function",
+    "scope": "global",
+    "description": "Set busy true while task active",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "task"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 32,
+      "filename": "withBusy.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 12
+  },
+  {
+    "id": "isBusy",
+    "longname": "isBusy",
+    "name": "isBusy",
+    "kind": "function",
+    "scope": "global",
+    "description": "Is busy or not",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 44,
+      "filename": "withBusy.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 13
+  },
+  {
+    "id": "waitWhileBusy",
+    "longname": "waitWhileBusy",
+    "name": "waitWhileBusy",
+    "kind": "function",
+    "scope": "global",
+    "description": "Wait while busy",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 51,
+      "filename": "withBusy.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 14
+  },
+  {
+    "id": "withEntities",
+    "longname": "withEntities",
+    "name": "withEntities",
+    "kind": "function",
+    "scope": "global",
+    "description": "withEntities mixin",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class to mix",
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "withEntities.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 15
+  },
+  {
+    "id": "addEntities",
+    "longname": "addEntities",
+    "name": "addEntities",
+    "kind": "function",
+    "scope": "global",
+    "description": "Add entities",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Array.<Object>"
+          ]
+        },
+        "name": "entities"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "meta": {
+      "lineno": 21,
+      "filename": "withEntities.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 16
+  },
+  {
+    "id": "addEntity",
+    "longname": "addEntity",
+    "name": "addEntity",
+    "kind": "function",
+    "scope": "global",
+    "description": "Add a entity",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "entity"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "meta": {
+      "lineno": 35,
+      "filename": "withEntities.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 17
+  },
+  {
+    "id": "deleteEntity",
+    "longname": "deleteEntity",
+    "name": "deleteEntity",
+    "kind": "function",
+    "scope": "global",
+    "description": "Delete entity",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "entity"
+      }
+    ],
+    "meta": {
+      "lineno": 42,
+      "filename": "withEntities.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 18
+  },
+  {
+    "id": "getEntities",
+    "longname": "getEntities",
+    "name": "getEntities",
+    "kind": "function",
+    "scope": "global",
+    "description": "Get entities",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Array.<Object>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 52,
+      "filename": "withEntities.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 19
+  },
+  {
+    "id": "receiveEntity",
+    "longname": "receiveEntity",
+    "name": "receiveEntity",
+    "kind": "function",
+    "scope": "global",
+    "description": "Receive an entity",
+    "params": [
+      {
+        "name": "entity"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "meta": {
+      "lineno": 68,
+      "filename": "withEntities.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 20
+  },
+  {
+    "id": "updateEntity",
+    "longname": "updateEntity",
+    "name": "updateEntity",
+    "kind": "function",
+    "scope": "global",
+    "description": "Update existing entity",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "entity"
+      }
+    ],
+    "meta": {
+      "lineno": 81,
+      "filename": "withEntities.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 21
+  },
+  {
+    "id": "withEntry",
+    "longname": "withEntry",
+    "name": "withEntry",
+    "kind": "function",
+    "scope": "global",
+    "description": "withEntry mixin",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class to mix",
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "withEntry.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 22
+  },
+  {
+    "id": "getEntry",
+    "longname": "getEntry",
+    "name": "getEntry",
+    "kind": "function",
+    "scope": "global",
+    "description": "Get entry values",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 26,
+      "filename": "withEntry.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 23
+  },
+  {
+    "id": "hasEntryErrorFor",
+    "longname": "hasEntryErrorFor",
+    "name": "hasEntryErrorFor",
+    "kind": "function",
+    "scope": "global",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "name"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 38,
+      "filename": "withEntry.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 24
+  },
+  {
+    "id": "processEntry",
+    "longname": "processEntry",
+    "name": "processEntry",
+    "kind": "function",
+    "scope": "global",
+    "description": "Process an entry",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "handler"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 47,
+      "filename": "withEntry.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 25
+  },
+  {
+    "id": "resetEntry",
+    "longname": "resetEntry",
+    "name": "resetEntry",
+    "kind": "function",
+    "scope": "global",
+    "description": "Reset entry",
+    "meta": {
+      "lineno": 64,
+      "filename": "withEntry.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 26
+  },
+  {
+    "id": "setEntry",
+    "longname": "setEntry",
+    "name": "setEntry",
+    "kind": "function",
+    "scope": "global",
+    "description": "Set entry values",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "values"
+      }
+    ],
+    "meta": {
+      "lineno": 73,
+      "filename": "withEntry.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 27
+  },
+  {
+    "id": "setEntryErrors",
+    "longname": "setEntryErrors",
+    "name": "setEntryErrors",
+    "kind": "function",
+    "scope": "global",
+    "description": "Set entry errors",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "errors"
+      }
+    ],
+    "meta": {
+      "lineno": 102,
+      "filename": "withEntry.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 28
+  },
+  {
+    "id": "withFailure",
+    "longname": "withFailure",
+    "name": "withFailure",
+    "kind": "function",
+    "scope": "global",
+    "description": "withFailure mixin",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class to mix",
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "withFailure.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 29
+  },
+  {
+    "id": "withFilter",
+    "longname": "withFilter",
+    "name": "withFilter",
+    "kind": "function",
+    "scope": "global",
+    "description": "withFilter mixin",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class to mix",
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "withFilter.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 30
+  },
+  {
+    "id": "getFilter",
+    "longname": "getFilter",
+    "name": "getFilter",
+    "kind": "function",
+    "scope": "global",
+    "description": "Get filter",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 20,
+      "filename": "withFilter.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 31
+  },
+  {
+    "id": "setFilter",
+    "longname": "setFilter",
+    "name": "setFilter",
+    "kind": "function",
+    "scope": "global",
+    "description": "Set filter",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "filter"
+      }
+    ],
+    "meta": {
+      "lineno": 27,
+      "filename": "withFilter.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 32
+  },
+  {
+    "id": "setFilterByQ",
+    "longname": "setFilterByQ",
+    "name": "setFilterByQ",
+    "kind": "function",
+    "scope": "global",
+    "description": "Set filters by q",
+    "meta": {
+      "lineno": 31,
+      "filename": "withFilter.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 33
+  },
+  {
+    "id": "withForm",
+    "longname": "withForm",
+    "name": "withForm",
+    "kind": "function",
+    "scope": "global",
+    "description": "withForm mixin",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class to mix",
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "withForm.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 34
+  },
+  {
+    "id": "withHistory",
+    "longname": "withHistory",
+    "name": "withHistory",
+    "kind": "function",
+    "scope": "global",
+    "description": "withHistory mixin",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class to mix",
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "withHistory.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 35
+  },
+  {
+    "id": "replaceHistoryByQuery",
+    "longname": "replaceHistoryByQuery",
+    "name": "replaceHistoryByQuery",
+    "kind": "function",
+    "scope": "global",
+    "description": "Replace history with query",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "nullable": true,
+        "description": "Query data",
+        "name": "query"
+      }
+    ],
+    "meta": {
+      "lineno": 20,
+      "filename": "withHistory.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 36
+  },
+  {
+    "id": "withId",
+    "longname": "withId",
+    "name": "withId",
+    "kind": "function",
+    "scope": "global",
+    "description": "withId mixin",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class to mix",
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "withId.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 37
+  },
+  {
+    "id": "getId",
+    "longname": "getId",
+    "name": "getId",
+    "kind": "function",
+    "scope": "global",
+    "description": "Get id",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "nullable": true,
+        "description": "id"
+      }
+    ],
+    "meta": {
+      "lineno": 19,
+      "filename": "withId.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 38
+  },
+  {
+    "id": "isKnownId",
+    "longname": "isKnownId",
+    "name": "isKnownId",
+    "kind": "function",
+    "scope": "global",
+    "description": "Check if the id is known",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "id"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 27,
+      "filename": "withId.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 39
+  },
+  {
+    "id": "withLimit",
+    "longname": "withLimit",
+    "name": "withLimit",
+    "kind": "function",
+    "scope": "global",
+    "description": "withLimit mixin",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class to mix",
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "withLimit.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 40
+  },
+  {
+    "id": "getLimit",
+    "longname": "getLimit",
+    "name": "getLimit",
+    "kind": "function",
+    "scope": "global",
+    "description": "Get limit",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 19,
+      "filename": "withLimit.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 41
+  },
+  {
+    "id": "nextLimit",
+    "longname": "nextLimit",
+    "name": "nextLimit",
+    "kind": "function",
+    "scope": "global",
+    "description": "Next limit",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 26,
+      "filename": "withLimit.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 42
+  },
+  {
+    "id": "setLimit",
+    "longname": "setLimit",
+    "name": "setLimit",
+    "kind": "function",
+    "scope": "global",
+    "description": "Set limit",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "name": "limit"
+      }
+    ],
+    "meta": {
+      "lineno": 33,
+      "filename": "withLimit.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 43
+  },
+  {
+    "id": "updateToNextLimit",
+    "longname": "updateToNextLimit",
+    "name": "updateToNextLimit",
+    "kind": "function",
+    "scope": "global",
+    "description": "Update to next limit",
+    "meta": {
+      "lineno": 39,
+      "filename": "withLimit.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 44
+  },
+  {
+    "id": "withLocation",
+    "longname": "withLocation",
+    "name": "withLocation",
+    "kind": "function",
+    "scope": "global",
+    "description": "withLocation mixin",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class to mix",
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "withLocation.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 45
+  },
+  {
+    "id": "changeLocationTo",
+    "longname": "changeLocationTo",
+    "name": "changeLocationTo",
+    "kind": "function",
+    "scope": "global",
+    "description": "Change location to url",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "href"
+      }
+    ],
+    "meta": {
+      "lineno": 21,
+      "filename": "withLocation.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 46
+  },
+  {
+    "id": "getLocationHash",
+    "longname": "getLocationHash",
+    "name": "getLocationHash",
+    "kind": "function",
+    "scope": "global",
+    "description": "Get location hash",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 28,
+      "filename": "withLocation.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 47
+  },
+  {
+    "id": "reloadLocation",
+    "longname": "reloadLocation",
+    "name": "reloadLocation",
+    "kind": "function",
+    "scope": "global",
+    "description": "Reload current location",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 44,
+      "filename": "withLocation.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 48
+  },
+  {
+    "id": "setLocationHash",
+    "longname": "setLocationHash",
+    "name": "setLocationHash",
+    "kind": "function",
+    "scope": "global",
+    "description": "Set location hash",
+    "params": [
+      {
+        "name": "hash"
+      }
+    ],
+    "meta": {
+      "lineno": 54,
+      "filename": "withLocation.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 49
+  },
+  {
+    "id": "withPage",
+    "longname": "withPage",
+    "name": "withPage",
+    "kind": "function",
+    "scope": "global",
+    "description": "withPage mixin",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class to mix",
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "withPage.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 50
+  },
+  {
+    "id": "getPage",
+    "longname": "getPage",
+    "name": "getPage",
+    "kind": "function",
+    "scope": "global",
+    "description": "Get page data",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 19,
+      "filename": "withPage.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 51
+  },
+  {
+    "id": "withQuery",
+    "longname": "withQuery",
+    "name": "withQuery",
+    "kind": "function",
+    "scope": "global",
+    "description": "withQuery mixin",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class to mix",
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "withQuery.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 52
+  },
+  {
+    "id": "getQueryFromSearch",
+    "longname": "getQueryFromSearch",
+    "name": "getQueryFromSearch",
+    "kind": "function",
+    "scope": "global",
+    "description": "Get query from search",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "location.search",
+        "name": "search"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 23,
+      "filename": "withQuery.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 53
+  },
+  {
+    "id": "mergeQueryToSearch",
+    "longname": "mergeQueryToSearch",
+    "name": "mergeQueryToSearch",
+    "kind": "function",
+    "scope": "global",
+    "description": "Merge additional query into search",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "query"
+      }
+    ],
+    "meta": {
+      "lineno": 33,
+      "filename": "withQuery.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 54
+  },
+  {
+    "id": "queryWithSearch",
+    "longname": "queryWithSearch",
+    "name": "queryWithSearch",
+    "kind": "function",
+    "scope": "global",
+    "description": "Query with search",
+    "params": [
+      {
+        "description": "Location search string",
+        "name": "search"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 62,
+      "filename": "withQuery.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 55
+  },
+  {
+    "id": "withReady",
+    "longname": "withReady",
+    "name": "withReady",
+    "kind": "function",
+    "scope": "global",
+    "description": "withReady mixin",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class to mix",
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "withReady.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 56
+  },
+  {
+    "id": "ifReady",
+    "longname": "ifReady",
+    "name": "ifReady",
+    "kind": "function",
+    "scope": "global",
+    "description": "Do only if ready",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "task"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 21,
+      "filename": "withReady.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 57
+  },
+  {
+    "id": "readyWhen",
+    "longname": "readyWhen",
+    "name": "readyWhen",
+    "kind": "function",
+    "scope": "global",
+    "description": "Set ready when done",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "task"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 40,
+      "filename": "withReady.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 59
+  },
+  {
+    "id": "unlessReady",
+    "longname": "unlessReady",
+    "name": "unlessReady",
+    "kind": "function",
+    "scope": "global",
+    "description": "Do unless ready",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "task"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 52,
+      "filename": "withReady.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 60
+  },
+  {
+    "id": "withResult",
+    "longname": "withResult",
+    "name": "withResult",
+    "kind": "function",
+    "scope": "global",
+    "description": "withResult mixin",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class to mix",
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "withResult.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 61
+  },
+  {
+    "id": "resultFor",
+    "longname": "resultFor",
+    "name": "resultFor",
+    "kind": "function",
+    "scope": "global",
+    "description": "Do action and store result",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "action"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        },
+        "description": "- Action result"
+      }
+    ],
+    "meta": {
+      "lineno": 21,
+      "filename": "withResult.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 62
+  },
+  {
+    "id": "withSort",
+    "longname": "withSort",
+    "name": "withSort",
+    "kind": "function",
+    "scope": "global",
+    "description": "withSort mixin",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class to mix",
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "withSort.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 63
+  },
+  {
+    "id": "withTargets",
+    "longname": "withTargets",
+    "name": "withTargets",
+    "kind": "function",
+    "scope": "global",
+    "description": "withTargets mixin",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class to mix",
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "withTargets.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 64
+  },
+  {
+    "id": "addTargets",
+    "longname": "addTargets",
+    "name": "addTargets",
+    "kind": "function",
+    "scope": "global",
+    "description": "Add targets",
+    "params": [
+      {
+        "name": "targets"
+      }
+    ],
+    "meta": {
+      "lineno": 20,
+      "filename": "withTargets.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 65
+  },
+  {
+    "id": "getTargetIds",
+    "longname": "getTargetIds",
+    "name": "getTargetIds",
+    "kind": "function",
+    "scope": "global",
+    "description": "Get ids of target",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Array.<String>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 31,
+      "filename": "withTargets.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 66
+  },
+  {
+    "id": "getTargetRefs",
+    "longname": "getTargetRefs",
+    "name": "getTargetRefs",
+    "kind": "function",
+    "scope": "global",
+    "description": "Get refs of target",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Array.<String>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 40,
+      "filename": "withTargets.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 67
+  },
+  {
+    "id": "getTargets",
+    "longname": "getTargets",
+    "name": "getTargets",
+    "kind": "function",
+    "scope": "global",
+    "description": "Get target values",
+    "meta": {
+      "lineno": 48,
+      "filename": "withTargets.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 68
+  },
+  {
+    "id": "withValues",
+    "longname": "withValues",
+    "name": "withValues",
+    "kind": "function",
+    "scope": "global",
+    "description": "withValues mixin",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class to mix",
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Mixed class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "withValues.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
+    },
+    "order": 69
+  },
+  {
+    "id": "asClassMixin",
+    "longname": "asClassMixin",
+    "name": "asClassMixin",
+    "kind": "function",
+    "scope": "global",
+    "description": "Define as class mixin",
+    "meta": {
+      "lineno": 1,
+      "filename": "asClassMixin.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib/helpers"
+    },
+    "order": 70
+  },
+  {
+    "id": "asMethodWrap",
+    "longname": "asMethodWrap",
+    "name": "asMethodWrap",
+    "kind": "function",
+    "scope": "global",
+    "description": "Define method wrapper",
+    "meta": {
+      "lineno": 1,
+      "filename": "asMethodWrap.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib/helpers"
+    },
+    "order": 71
+  },
+  {
+    "id": "injectProperties",
+    "longname": "injectProperties",
+    "name": "injectProperties",
+    "kind": "function",
+    "scope": "global",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Injected Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "injectProperties.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib/helpers"
+    },
+    "order": 72
+  }
+]

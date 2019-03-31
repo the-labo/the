@@ -1,0 +1,343 @@
+[
+  {
+    "id": "module:@the-/ui-button",
+    "longname": "module:@the-/ui-button",
+    "name": "@the-/ui-button",
+    "kind": "module",
+    "description": "Button of the-components",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheButton",
+    "longname": "TheButton",
+    "name": "TheButton",
+    "kind": "class",
+    "scope": "global",
+    "description": "Button of the-components",
+    "meta": {
+      "lineno": 16,
+      "filename": "TheButton.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheButtonGroup",
+    "longname": "TheButtonGroup",
+    "name": "TheButtonGroup",
+    "kind": "class",
+    "scope": "global",
+    "description": "Group of buttons",
+    "meta": {
+      "lineno": 11,
+      "filename": "TheButtonGroup.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 19
+  },
+  {
+    "id": "TheButtonStyle",
+    "longname": "TheButtonStyle",
+    "name": "TheButtonStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheButton",
+    "params": [],
+    "meta": {
+      "lineno": 10,
+      "filename": "TheButtonStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 21
+  },
+  {
+    "id": "TheButton.propTypes.color",
+    "longname": "TheButton.propTypes.color",
+    "name": "color",
+    "kind": "member",
+    "scope": "static",
+    "description": "Color theme",
+    "memberof": "TheButton.propTypes",
+    "meta": {
+      "lineno": 165,
+      "filename": "TheButton.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheButton.propTypes.danger",
+    "longname": "TheButton.propTypes.danger",
+    "name": "danger",
+    "kind": "member",
+    "scope": "static",
+    "description": "Danger style",
+    "memberof": "TheButton.propTypes",
+    "meta": {
+      "lineno": 167,
+      "filename": "TheButton.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "TheButton.propTypes.disabled",
+    "longname": "TheButton.propTypes.disabled",
+    "name": "disabled",
+    "kind": "member",
+    "scope": "static",
+    "description": "Disabled state",
+    "memberof": "TheButton.propTypes",
+    "meta": {
+      "lineno": 169,
+      "filename": "TheButton.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheButton.propTypes.floated",
+    "longname": "TheButton.propTypes.floated",
+    "name": "floated",
+    "kind": "member",
+    "scope": "static",
+    "description": "Floated style",
+    "memberof": "TheButton.propTypes",
+    "meta": {
+      "lineno": 171,
+      "filename": "TheButton.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheButton.propTypes.icon",
+    "longname": "TheButton.propTypes.icon",
+    "name": "icon",
+    "kind": "member",
+    "scope": "static",
+    "description": "Icon class",
+    "memberof": "TheButton.propTypes",
+    "meta": {
+      "lineno": 173,
+      "filename": "TheButton.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "TheButton.propTypes.large",
+    "longname": "TheButton.propTypes.large",
+    "name": "large",
+    "kind": "member",
+    "scope": "static",
+    "description": "Large style",
+    "memberof": "TheButton.propTypes",
+    "meta": {
+      "lineno": 175,
+      "filename": "TheButton.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "TheButton.propTypes.largeIcon",
+    "longname": "TheButton.propTypes.largeIcon",
+    "name": "largeIcon",
+    "kind": "member",
+    "scope": "static",
+    "description": "Large icon class",
+    "memberof": "TheButton.propTypes",
+    "meta": {
+      "lineno": 177,
+      "filename": "TheButton.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 8
+  },
+  {
+    "id": "TheButton.propTypes.light",
+    "longname": "TheButton.propTypes.light",
+    "name": "light",
+    "kind": "member",
+    "scope": "static",
+    "description": "Light color",
+    "memberof": "TheButton.propTypes",
+    "meta": {
+      "lineno": 179,
+      "filename": "TheButton.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 9
+  },
+  {
+    "id": "TheButton.propTypes.minInterval",
+    "longname": "TheButton.propTypes.minInterval",
+    "name": "minInterval",
+    "kind": "member",
+    "scope": "static",
+    "description": "Minimum interval",
+    "memberof": "TheButton.propTypes",
+    "meta": {
+      "lineno": 181,
+      "filename": "TheButton.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 10
+  },
+  {
+    "id": "TheButton.propTypes.onSubmit",
+    "longname": "TheButton.propTypes.onSubmit",
+    "name": "onSubmit",
+    "kind": "member",
+    "scope": "static",
+    "description": "Handle submit",
+    "memberof": "TheButton.propTypes",
+    "meta": {
+      "lineno": 183,
+      "filename": "TheButton.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 11
+  },
+  {
+    "id": "TheButton.propTypes.primary",
+    "longname": "TheButton.propTypes.primary",
+    "name": "primary",
+    "kind": "member",
+    "scope": "static",
+    "description": "Primary style",
+    "memberof": "TheButton.propTypes",
+    "meta": {
+      "lineno": 185,
+      "filename": "TheButton.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 12
+  },
+  {
+    "id": "TheButton.propTypes.rounded",
+    "longname": "TheButton.propTypes.rounded",
+    "name": "rounded",
+    "kind": "member",
+    "scope": "static",
+    "description": "Rounded style",
+    "memberof": "TheButton.propTypes",
+    "meta": {
+      "lineno": 187,
+      "filename": "TheButton.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 13
+  },
+  {
+    "id": "TheButton.propTypes.simple",
+    "longname": "TheButton.propTypes.simple",
+    "name": "simple",
+    "kind": "member",
+    "scope": "static",
+    "description": "Simple style",
+    "memberof": "TheButton.propTypes",
+    "meta": {
+      "lineno": 189,
+      "filename": "TheButton.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 14
+  },
+  {
+    "id": "TheButton.propTypes.small",
+    "longname": "TheButton.propTypes.small",
+    "name": "small",
+    "kind": "member",
+    "scope": "static",
+    "description": "Small style",
+    "memberof": "TheButton.propTypes",
+    "meta": {
+      "lineno": 191,
+      "filename": "TheButton.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 15
+  },
+  {
+    "id": "TheButton.propTypes.spinning",
+    "longname": "TheButton.propTypes.spinning",
+    "name": "spinning",
+    "kind": "member",
+    "scope": "static",
+    "description": "Show spinner",
+    "memberof": "TheButton.propTypes",
+    "meta": {
+      "lineno": 193,
+      "filename": "TheButton.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 16
+  },
+  {
+    "id": "TheButton.propTypes.text",
+    "longname": "TheButton.propTypes.text",
+    "name": "text",
+    "kind": "member",
+    "scope": "static",
+    "description": "Button text",
+    "memberof": "TheButton.propTypes",
+    "meta": {
+      "lineno": 195,
+      "filename": "TheButton.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 17
+  },
+  {
+    "id": "TheButton.propTypes.wide",
+    "longname": "TheButton.propTypes.wide",
+    "name": "wide",
+    "kind": "member",
+    "scope": "static",
+    "description": "Wide style",
+    "memberof": "TheButton.propTypes",
+    "meta": {
+      "lineno": 197,
+      "filename": "TheButton.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 18
+  },
+  {
+    "id": "TheButtonGroup.propTypes.align",
+    "longname": "TheButtonGroup.propTypes.align",
+    "name": "align",
+    "kind": "member",
+    "scope": "static",
+    "description": "Direction to align",
+    "memberof": "TheButtonGroup.propTypes",
+    "meta": {
+      "lineno": 36,
+      "filename": "TheButtonGroup.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 20
+  },
+  {
+    "id": "TheButtonStyle.propTypes.options",
+    "longname": "TheButtonStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
+    "memberof": "TheButtonStyle.propTypes",
+    "meta": {
+      "lineno": 21,
+      "filename": "TheButtonStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+    },
+    "order": 22
+  }
+]
