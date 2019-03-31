@@ -11,17 +11,16 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/ui-button": "^15.1.6",
+    "@the-/ui-condition": "^15.1.5",
+    "@the-/ui-icon": "^15.1.6",
+    "@the-/ui-image": "^15.1.6",
+    "@the-/ui-spin": "^15.1.7",
+    "@the-/ui-style": "^15.1.4",
+    "@the-/util-ui": "^15.1.4",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
     "react-draggable": "^3.2.1",
-    "the-button": "^3.0.36",
-    "the-component-util": "^3.0.22",
-    "the-condition": "^3.0.4",
-    "the-icon": "^4.0.10",
-    "the-image": "^2.0.20",
-    "the-spin": "^3.1.12",
-    "the-style": "^2.2.8",
-    "the-video": "^2.1.1",
     "the-window": "^7.0.6"
   },
   "devDependencies": {

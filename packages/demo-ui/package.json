@@ -23,7 +23,7 @@
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
     "@the-/ui-demo": "file:../ui-demo",
-    "@the-/ui-router": "^15.1.7",
+    "@the-/ui-router": "^15.1.8",
     "objnest": "^5.0.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

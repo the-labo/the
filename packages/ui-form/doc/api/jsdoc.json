@@ -35,7 +35,7 @@
     "description": "Style for TheForm",
     "params": [],
     "meta": {
-      "lineno": 10,
+      "lineno": 11,
       "filename": "TheFormStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
     },
@@ -302,7 +302,7 @@
     "description": "Style options",
     "memberof": "TheFormStyle.propTypes",
     "meta": {
-      "lineno": 21,
+      "lineno": 22,
       "filename": "TheFormStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
     },

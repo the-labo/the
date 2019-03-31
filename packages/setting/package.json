@@ -12,10 +12,10 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/util-file": "^15.0.3",
-    "abind": "^1.0.3",
+    "@the-/util-file": "^15.1.4",
+    "abind": "^1.0.5",
     "askconfig": "^4.0.2",
-    "aslogger": "^2.0.0",
+    "aslogger": "^2.0.1",
     "mkdirp": "^0.5.1"
   },
   "devDependencies": {

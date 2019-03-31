@@ -49,7 +49,7 @@
     "description": "Style for TheSection",
     "params": [],
     "meta": {
-      "lineno": 10,
+      "lineno": 11,
       "filename": "TheSectionStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
     },
@@ -109,7 +109,7 @@
     "description": "Style options",
     "memberof": "TheSectionStyle.propTypes",
     "meta": {
-      "lineno": 21,
+      "lineno": 22,
       "filename": "TheSectionStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
     },

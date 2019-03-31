@@ -27,7 +27,6 @@ TheCaughtStyle.defaultProps = {
 }
 
 TheCaughtStyle.data = (options) => {
-  const { ThemeValues } = TheStyle
   const { dominantColor = ThemeValues.dominantColor } = options
   return asStyleData({
     '.the-caught': {

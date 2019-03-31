@@ -11,22 +11,22 @@
     "url": "https://github.com/the-labo/the-route/issues"
   },
   "dependencies": {
-    "@the-/ui-spin": "^15.1.4",
+    "@the-/ui-spin": "^15.1.7",
     "@the-/util-ui": "^15.1.4",
     "asobj": "^3.0.1",
-    "bwindow": "^2.0.2",
+    "bwindow": "^2.0.3",
     "classnames": "^2.2.6",
     "debug": "^4.1.1",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.3.1",
+    "@babel/runtime": "^7.4.2",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/ui-link": "file:../ui-link",
     "@the-/ui-router": "file:../ui-router",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-router-dom": "^4.3.1"
   },
   "engines": {

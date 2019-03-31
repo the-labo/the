@@ -77,7 +77,7 @@
     "description": "Style for TheDialog",
     "params": [],
     "meta": {
-      "lineno": 10,
+      "lineno": 11,
       "filename": "TheDialogStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
     },
@@ -317,7 +317,7 @@
     "description": "Style options",
     "memberof": "TheDialogStyle.propTypes",
     "meta": {
-      "lineno": 21,
+      "lineno": 22,
       "filename": "TheDialogStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
     },
