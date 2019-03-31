@@ -12,16 +12,16 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "bwindow": "^2.0.2",
+    "bwindow": "^2.0.3",
     "debug": "^4.1.1"
   },
   "devDependencies": {
-    "@babel/core": "*",
+    "@babel/core": "^7.4.0",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
-    "eslint": "^5.15.1"
+    "eslint": "^5.16.0"
   },
   "engines": {
     "node": ">=10",

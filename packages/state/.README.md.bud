@@ -3,7 +3,7 @@
  */
 'use strict'
 
-const { Readme } = require('@the-/templates/presets/component')
+const { Readme } = require('@the-/templates/presets/lib')
 
 module.exports = Readme(__dirname)
 

@@ -12,16 +12,16 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.0.3",
+    "@the-/check": "^15.1.4",
     "url-parse": "^1.4.4"
   },
   "devDependencies": {
-    "@babel/core": "*",
+    "@babel/core": "^7.4.0",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
-    "cross-fetch": "^3.0.1",
+    "cross-fetch": "^3.0.2",
     "injectmock": "^2.0.0"
   },
   "engines": {

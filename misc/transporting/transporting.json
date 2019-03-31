@@ -87,6 +87,10 @@
     "kind": "lib",
     "name": "context"
   },
+  "the-state": {
+    "kind": "lib",
+    "name": "state"
+  },
   "the-controller-base": {
     "kind": "lib",
     "name": "controller"

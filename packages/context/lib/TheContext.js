@@ -8,7 +8,7 @@
 'use strict'
 
 const React = require('react')
-const { TheState } = require('the-state')
+const { TheState } = require('@the-/state')
 const contextEntryFor = require('./helpers/contextEntryFor')
 const contextRootFor = require('./helpers/contextRootFor')
 
