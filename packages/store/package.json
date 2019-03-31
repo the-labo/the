@@ -12,14 +12,14 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.0.2",
+    "@the-/check": "^15.1.4",
     "argx": "^4.0.0",
     "asobj": "^3.0.1",
     "bredux": "^3.0.7",
     "json-pointer": "^0.6.0",
-    "objnest": "^5.0.4",
+    "objnest": "^5.0.6",
     "redux": "^4.0.1",
-    "redux-actions": "^2.6.4",
+    "redux-actions": "^2.6.5",
     "redux-promise": "^0.6.0"
   },
   "devDependencies": {
