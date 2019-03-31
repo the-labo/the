@@ -12,7 +12,7 @@
 
 const { StrictMode, createElement: c } = require('react')
 const { render } = require('react-dom')
-const { TheRouter } = require('@the-/router')
+const { TheRouter } = require('@the-/ui-router')
 const { get } = require('@the-/window')
 const history = require('./history')
 

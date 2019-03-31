@@ -5,4 +5,4 @@
 ## @the-/ui
 React components of THE framework
 
-**Version**: 15.1.7  
+**Version**: 15.1.8  
