@@ -1,14 +1,14 @@
 [
   {
-    "id": "module:@the-/step",
-    "longname": "module:@the-/step",
-    "name": "@the-/step",
+    "id": "module:@the-/ui-step",
+    "longname": "module:@the-/ui-step",
+    "name": "@the-/ui-step",
     "kind": "module",
     "description": "Steps for the-components",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",
-      "path": "/Users/okuni/Projects/the/packages/step/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-step/lib"
     },
     "order": 0
   },
@@ -22,7 +22,7 @@
     "meta": {
       "lineno": 15,
       "filename": "TheStep.jsx",
-      "path": "/Users/okuni/Projects/the/packages/step/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-step/lib"
     },
     "order": 1
   },
@@ -37,7 +37,7 @@
     "meta": {
       "lineno": 10,
       "filename": "TheStepStyle.jsx",
-      "path": "/Users/okuni/Projects/the/packages/step/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-step/lib"
     },
     "order": 2
   },
@@ -52,7 +52,7 @@
     "meta": {
       "lineno": 21,
       "filename": "TheStepStyle.jsx",
-      "path": "/Users/okuni/Projects/the/packages/step/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-step/lib"
     },
     "order": 3
   }

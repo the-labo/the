@@ -1,14 +1,14 @@
 [
   {
-    "id": "module:@the-/tab",
-    "longname": "module:@the-/tab",
-    "name": "@the-/tab",
+    "id": "module:@the-/ui-tab",
+    "longname": "module:@the-/ui-tab",
+    "name": "@the-/ui-tab",
     "kind": "module",
     "description": "Tab for the-components",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",
-      "path": "/Users/okuni/Projects/the/packages/tab/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
     },
     "order": 0
   },
@@ -22,7 +22,7 @@
     "meta": {
       "lineno": 36,
       "filename": "TheTab.jsx",
-      "path": "/Users/okuni/Projects/the/packages/tab/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
     },
     "order": 1
   },
@@ -37,7 +37,7 @@
     "meta": {
       "lineno": 10,
       "filename": "TheTabStyle.jsx",
-      "path": "/Users/okuni/Projects/the/packages/tab/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
     },
     "order": 6
   },
@@ -52,7 +52,7 @@
     "meta": {
       "lineno": 386,
       "filename": "TheTab.jsx",
-      "path": "/Users/okuni/Projects/the/packages/tab/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
     },
     "order": 2
   },
@@ -67,7 +67,7 @@
     "meta": {
       "lineno": 388,
       "filename": "TheTab.jsx",
-      "path": "/Users/okuni/Projects/the/packages/tab/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
     },
     "order": 3
   },
@@ -82,7 +82,7 @@
     "meta": {
       "lineno": 390,
       "filename": "TheTab.jsx",
-      "path": "/Users/okuni/Projects/the/packages/tab/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
     },
     "order": 4
   },
@@ -97,7 +97,7 @@
     "meta": {
       "lineno": 392,
       "filename": "TheTab.jsx",
-      "path": "/Users/okuni/Projects/the/packages/tab/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
     },
     "order": 5
   },
@@ -112,7 +112,7 @@
     "meta": {
       "lineno": 21,
       "filename": "TheTabStyle.jsx",
-      "path": "/Users/okuni/Projects/the/packages/tab/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
     },
     "order": 7
   }

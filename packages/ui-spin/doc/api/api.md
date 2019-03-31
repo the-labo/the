@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_@the-/spin">@the-/spin</a></dt>
+<dt><a href="#module_@the-/ui-spin">@the-/ui-spin</a></dt>
 <dd><p>Spin of the-components</p>
 </dd>
 </dl>
@@ -24,9 +24,9 @@
 </dd>
 </dl>
 
-<a name="module_@the-/spin"></a>
+<a name="module_@the-/ui-spin"></a>
 
-## @the-/spin
+## @the-/ui-spin
 Spin of the-components
 
 <a name="TheSpin"></a>

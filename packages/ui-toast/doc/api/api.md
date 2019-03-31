@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_@the-/toast">@the-/toast</a></dt>
+<dt><a href="#module_@the-/ui-toast">@the-/ui-toast</a></dt>
 <dd><p>Toast of the-components</p>
 </dd>
 </dl>
@@ -27,9 +27,9 @@
 </dd>
 </dl>
 
-<a name="module_@the-/toast"></a>
+<a name="module_@the-/ui-toast"></a>
 
-## @the-/toast
+## @the-/ui-toast
 Toast of the-components
 
 <a name="TheToast"></a>

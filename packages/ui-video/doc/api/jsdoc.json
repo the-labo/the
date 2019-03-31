@@ -1,14 +1,14 @@
 [
   {
-    "id": "module:@the-/video",
-    "longname": "module:@the-/video",
-    "name": "@the-/video",
+    "id": "module:@the-/ui-video",
+    "longname": "module:@the-/ui-video",
+    "name": "@the-/ui-video",
     "kind": "module",
     "description": "Video for the-components",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",
-      "path": "/Users/okuni/Projects/the/packages/video/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
     "order": 0
   },
@@ -22,7 +22,7 @@
     "meta": {
       "lineno": 12,
       "filename": "TheVideo.jsx",
-      "path": "/Users/okuni/Projects/the/packages/video/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
     "order": 1
   },
@@ -37,7 +37,7 @@
     "meta": {
       "lineno": 10,
       "filename": "TheVideoStyle.jsx",
-      "path": "/Users/okuni/Projects/the/packages/video/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
     "order": 10
   },
@@ -52,7 +52,7 @@
     "meta": {
       "lineno": 168,
       "filename": "TheVideo.jsx",
-      "path": "/Users/okuni/Projects/the/packages/video/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
     "order": 2
   },
@@ -67,7 +67,7 @@
     "meta": {
       "lineno": 170,
       "filename": "TheVideo.jsx",
-      "path": "/Users/okuni/Projects/the/packages/video/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
     "order": 3
   },
@@ -82,7 +82,7 @@
     "meta": {
       "lineno": 172,
       "filename": "TheVideo.jsx",
-      "path": "/Users/okuni/Projects/the/packages/video/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
     "order": 4
   },
@@ -97,7 +97,7 @@
     "meta": {
       "lineno": 174,
       "filename": "TheVideo.jsx",
-      "path": "/Users/okuni/Projects/the/packages/video/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
     "order": 5
   },
@@ -112,7 +112,7 @@
     "meta": {
       "lineno": 176,
       "filename": "TheVideo.jsx",
-      "path": "/Users/okuni/Projects/the/packages/video/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
     "order": 6
   },
@@ -127,7 +127,7 @@
     "meta": {
       "lineno": 179,
       "filename": "TheVideo.jsx",
-      "path": "/Users/okuni/Projects/the/packages/video/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
     "order": 7
   },
@@ -142,7 +142,7 @@
     "meta": {
       "lineno": 181,
       "filename": "TheVideo.jsx",
-      "path": "/Users/okuni/Projects/the/packages/video/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
     "order": 8
   },
@@ -157,7 +157,7 @@
     "meta": {
       "lineno": 183,
       "filename": "TheVideo.jsx",
-      "path": "/Users/okuni/Projects/the/packages/video/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
     "order": 9
   },
@@ -172,7 +172,7 @@
     "meta": {
       "lineno": 21,
       "filename": "TheVideoStyle.jsx",
-      "path": "/Users/okuni/Projects/the/packages/video/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
     "order": 11
   }

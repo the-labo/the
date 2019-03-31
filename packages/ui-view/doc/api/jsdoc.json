@@ -1,14 +1,14 @@
 [
   {
-    "id": "module:@the-/view",
-    "longname": "module:@the-/view",
-    "name": "@the-/view",
+    "id": "module:@the-/ui-view",
+    "longname": "module:@the-/ui-view",
+    "name": "@the-/ui-view",
     "kind": "module",
     "description": "View of the-components",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",
-      "path": "/Users/okuni/Projects/the/packages/view/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-view/lib"
     },
     "order": 0
   },
@@ -22,7 +22,7 @@
     "meta": {
       "lineno": 16,
       "filename": "TheView.jsx",
-      "path": "/Users/okuni/Projects/the/packages/view/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-view/lib"
     },
     "order": 1
   },
@@ -37,7 +37,7 @@
     "meta": {
       "lineno": 10,
       "filename": "TheViewStyle.jsx",
-      "path": "/Users/okuni/Projects/the/packages/view/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-view/lib"
     },
     "order": 3
   },
@@ -52,7 +52,7 @@
     "meta": {
       "lineno": 154,
       "filename": "TheView.jsx",
-      "path": "/Users/okuni/Projects/the/packages/view/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-view/lib"
     },
     "order": 2
   },
@@ -67,7 +67,7 @@
     "meta": {
       "lineno": 21,
       "filename": "TheViewStyle.jsx",
-      "path": "/Users/okuni/Projects/the/packages/view/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-view/lib"
     },
     "order": 4
   }

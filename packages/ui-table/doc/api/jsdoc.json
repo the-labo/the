@@ -1,14 +1,14 @@
 [
   {
-    "id": "module:@the-/table",
-    "longname": "module:@the-/table",
-    "name": "@the-/table",
+    "id": "module:@the-/ui-table",
+    "longname": "module:@the-/ui-table",
+    "name": "@the-/ui-table",
     "kind": "module",
     "description": "Table for the-components",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",
-      "path": "/Users/okuni/Projects/the/packages/table/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
     },
     "order": 0
   },
@@ -22,7 +22,7 @@
     "meta": {
       "lineno": 14,
       "filename": "TheTable.jsx",
-      "path": "/Users/okuni/Projects/the/packages/table/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
     },
     "order": 1
   },
@@ -37,7 +37,7 @@
     "meta": {
       "lineno": 10,
       "filename": "TheTableStyle.jsx",
-      "path": "/Users/okuni/Projects/the/packages/table/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
     },
     "order": 5
   },
@@ -52,7 +52,7 @@
     "meta": {
       "lineno": 172,
       "filename": "TheTable.jsx",
-      "path": "/Users/okuni/Projects/the/packages/table/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
     },
     "order": 2
   },
@@ -67,7 +67,7 @@
     "meta": {
       "lineno": 174,
       "filename": "TheTable.jsx",
-      "path": "/Users/okuni/Projects/the/packages/table/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
     },
     "order": 3
   },
@@ -82,7 +82,7 @@
     "meta": {
       "lineno": 176,
       "filename": "TheTable.jsx",
-      "path": "/Users/okuni/Projects/the/packages/table/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
     },
     "order": 4
   },
@@ -97,7 +97,7 @@
     "meta": {
       "lineno": 21,
       "filename": "TheTableStyle.jsx",
-      "path": "/Users/okuni/Projects/the/packages/table/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
     },
     "order": 6
   }

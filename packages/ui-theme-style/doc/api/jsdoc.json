@@ -1,14 +1,14 @@
 [
   {
-    "id": "module:@the-/theme-style",
-    "longname": "module:@the-/theme-style",
-    "name": "@the-/theme-style",
+    "id": "module:@the-/ui-theme-style",
+    "longname": "module:@the-/ui-theme-style",
+    "name": "@the-/ui-theme-style",
     "kind": "module",
     "description": "Theme style for the-components",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",
-      "path": "/Users/okuni/Projects/the/packages/theme-style/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-theme-style/lib"
     },
     "order": 0
   },
@@ -23,7 +23,7 @@
     "meta": {
       "lineno": 47,
       "filename": "TheThemeStyle.jsx",
-      "path": "/Users/okuni/Projects/the/packages/theme-style/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-theme-style/lib"
     },
     "order": 1
   },
@@ -38,7 +38,7 @@
     "meta": {
       "lineno": 57,
       "filename": "TheThemeStyle.jsx",
-      "path": "/Users/okuni/Projects/the/packages/theme-style/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-theme-style/lib"
     },
     "order": 2
   },
@@ -53,7 +53,7 @@
     "meta": {
       "lineno": 60,
       "filename": "TheThemeStyle.jsx",
-      "path": "/Users/okuni/Projects/the/packages/theme-style/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-theme-style/lib"
     },
     "order": 3
   }

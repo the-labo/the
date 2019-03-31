@@ -1,14 +1,14 @@
 [
   {
-    "id": "module:@the-/spin",
-    "longname": "module:@the-/spin",
-    "name": "@the-/spin",
+    "id": "module:@the-/ui-spin",
+    "longname": "module:@the-/ui-spin",
+    "name": "@the-/ui-spin",
     "kind": "module",
     "description": "Spin of the-components",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",
-      "path": "/Users/okuni/Projects/the/packages/spin/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-spin/lib"
     },
     "order": 0
   },
@@ -22,7 +22,7 @@
     "meta": {
       "lineno": 28,
       "filename": "TheSpin.jsx",
-      "path": "/Users/okuni/Projects/the/packages/spin/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-spin/lib"
     },
     "order": 1
   },
@@ -37,7 +37,7 @@
     "meta": {
       "lineno": 10,
       "filename": "TheSpinStyle.jsx",
-      "path": "/Users/okuni/Projects/the/packages/spin/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-spin/lib"
     },
     "order": 5
   },
@@ -52,7 +52,7 @@
     "meta": {
       "lineno": 58,
       "filename": "TheSpin.jsx",
-      "path": "/Users/okuni/Projects/the/packages/spin/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-spin/lib"
     },
     "order": 2
   },
@@ -67,7 +67,7 @@
     "meta": {
       "lineno": 61,
       "filename": "TheSpin.jsx",
-      "path": "/Users/okuni/Projects/the/packages/spin/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-spin/lib"
     },
     "order": 3
   },
@@ -82,7 +82,7 @@
     "meta": {
       "lineno": 63,
       "filename": "TheSpin.jsx",
-      "path": "/Users/okuni/Projects/the/packages/spin/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-spin/lib"
     },
     "order": 4
   },
@@ -97,7 +97,7 @@
     "meta": {
       "lineno": 21,
       "filename": "TheSpinStyle.jsx",
-      "path": "/Users/okuni/Projects/the/packages/spin/lib"
+      "path": "/Users/okuni/Projects/the/packages/ui-spin/lib"
     },
     "order": 6
   }

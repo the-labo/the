@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_@the-/step">@the-/step</a></dt>
+<dt><a href="#module_@the-/ui-step">@the-/ui-step</a></dt>
 <dd><p>Steps for the-components</p>
 </dd>
 </dl>
@@ -24,9 +24,9 @@
 </dd>
 </dl>
 
-<a name="module_@the-/step"></a>
+<a name="module_@the-/ui-step"></a>
 
-## @the-/step
+## @the-/ui-step
 Steps for the-components
 
 <a name="TheStep"></a>

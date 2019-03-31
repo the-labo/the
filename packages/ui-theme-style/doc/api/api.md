@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_@the-/theme-style">@the-/theme-style</a></dt>
+<dt><a href="#module_@the-/ui-theme-style">@the-/ui-theme-style</a></dt>
 <dd><p>Theme style for the-components</p>
 </dd>
 </dl>
@@ -16,9 +16,9 @@
 </dd>
 </dl>
 
-<a name="module_@the-/theme-style"></a>
+<a name="module_@the-/ui-theme-style"></a>
 
-## @the-/theme-style
+## @the-/ui-theme-style
 Theme style for the-components
 
 <a name="TheThemeStyle"></a>
