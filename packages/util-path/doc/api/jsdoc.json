@@ -1,0 +1,28 @@
+[
+  {
+    "id": "module:@the-/util-path",
+    "longname": "module:@the-/util-path",
+    "name": "@the-/util-path",
+    "kind": "module",
+    "description": "Utility for file path",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/util-path/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "findupDir",
+    "longname": "findupDir",
+    "name": "findupDir",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "findupDir.js",
+      "path": "/Users/okuni/Projects/the/packages/util-path/lib"
+    },
+    "order": 0
+  }
+]

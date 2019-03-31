@@ -5,19 +5,15 @@
 'use strict'
 
 const qs = require('qs')
-const { format: formatUrl } = require('url')
 
 /** @lends withClient */
 function withClient(Class) {
   class WithClient extends Class {
     clientUrlFor(pathname, query = {}) {
-      const { host, protocol } = this.client
-      return formatUrl({
-        host,
-        pathname,
-        protocol,
-        search: qs.stringify(query),
-      })
+      const { host = 'localhost', protocol = 'http:' } = this.client
+      const url = new URL(pathname, protocol + host)
+      url.search = qs.stringify(query)
+      return url.href
     }
   }
 

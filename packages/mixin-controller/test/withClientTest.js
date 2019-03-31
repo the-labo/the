@@ -18,7 +18,7 @@ describe('with-client', () => {
         get client() {
           return {
             host: 'example.com',
-            protocol: 'https',
+            protocol: 'https:',
           }
         }
       },
