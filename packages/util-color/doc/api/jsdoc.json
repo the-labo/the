@@ -1,0 +1,196 @@
+[
+  {
+    "id": "module:@the-/util-color",
+    "longname": "module:@the-/util-color",
+    "name": "@the-/util-color",
+    "kind": "module",
+    "description": "Color utility for the-framework",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/util-color/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "colorWithAlpha",
+    "longname": "colorWithAlpha",
+    "name": "colorWithAlpha",
+    "kind": "function",
+    "scope": "global",
+    "description": "Get color with alpha",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "color"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "name": "alpha"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "color"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "colorWithAlpha.js",
+      "path": "/Users/okuni/Projects/the/packages/util-color/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "colorWithText",
+    "longname": "colorWithText",
+    "name": "colorWithText",
+    "kind": "function",
+    "scope": "global",
+    "description": "Get color with text",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Text",
+        "name": "text"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Color"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "colorWithText.js",
+      "path": "/Users/okuni/Projects/the/packages/util-color/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "rotatedColorsFor",
+    "longname": "rotatedColorsFor",
+    "name": "rotatedColorsFor",
+    "kind": "function",
+    "scope": "global",
+    "description": "Get rotated colors for color",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "'#38E'",
+        "description": "Base color",
+        "name": "base"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 12,
+        "description": "Count of colors",
+        "name": "options.count"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Array.<string>"
+          ]
+        },
+        "description": "Colors"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "rotatedColorsFor.js",
+      "path": "/Users/okuni/Projects/the/packages/util-color/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "textColorFor",
+    "longname": "textColorFor",
+    "name": "textColorFor",
+    "kind": "function",
+    "scope": "global",
+    "description": "Get text color for background color",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "backgroundColor"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Text color"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "textColorFor.js",
+      "path": "/Users/okuni/Projects/the/packages/util-color/lib"
+    },
+    "order": 4
+  }
+]

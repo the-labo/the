@@ -9,7 +9,7 @@
 const { isDark } = require('acolor')
 
 /** @lends textColorFor */
-function textColorFor (backgroundColor) {
+function textColorFor(backgroundColor) {
   if (!backgroundColor) {
     return null
   }

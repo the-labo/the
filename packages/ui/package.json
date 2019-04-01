@@ -73,10 +73,10 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/ui#readme",
   "keywords": [
     "the",
-    "ui"
+    "ui-index"
   ],
   "license": "MIT",
   "main": "shim",

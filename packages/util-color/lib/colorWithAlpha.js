@@ -10,7 +10,7 @@
 const { alpha: withAlpha } = require('acolor')
 
 /** @lends colorWithAlpha */
-function colorWithAlpha (color, alpha) {
+function colorWithAlpha(color, alpha) {
   if (!color) {
     return null
   }

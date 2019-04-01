@@ -1,6 +1,6 @@
 'use strict'
 
-const {TheDbUtil} = require('the-db-util')
+const {TheDbUtil} = require('@the-/util-db')
 
 async function tryExample () {
 

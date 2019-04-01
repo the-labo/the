@@ -1,6 +1,6 @@
 'use strict'
 
-const {colorWithAlpha} = require('the-color')
+const {colorWithAlpha} = require('@the-/util-color')
 
 async function tryExample () {
   console.log(colorWithAlpha('#AAA',0.5)) // -> rgba(170, 170, 170, 0.5)

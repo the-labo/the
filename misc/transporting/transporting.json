@@ -427,6 +427,10 @@
     "kind": "templates",
     "name": "templates"
   },
+  "the-components": {
+    "kind": "ui-index",
+    "name": "ui"
+  },
   "the-theme-style": {
     "kind": "ui",
     "name": "ui-theme-style"
@@ -438,6 +442,14 @@
   "the-toast": {
     "kind": "ui",
     "name": "ui-toast"
+  },
+  "the-map": {
+    "kind": "ui",
+    "name": "ui-map"
+  },
+  "the-cam": {
+    "kind": "ui",
+    "name": "ui-cam"
   },
   "the-ui": {
     "kind": "index",

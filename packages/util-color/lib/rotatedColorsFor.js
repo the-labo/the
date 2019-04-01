@@ -11,10 +11,11 @@
 const { rotate } = require('acolor')
 
 /** @lends rotatedColorsFor */
-function rotatedColorsFor (base = '#38E', options = {}) {
+function rotatedColorsFor(base = '#38E', options = {}) {
   const { count = 12 } = options
-  return new Array(count).fill(null)
-    .map((_, i, arr) => rotate(base, parseInt(360 * i / arr.length)))
+  return new Array(count)
+    .fill(null)
+    .map((_, i, arr) => rotate(base, parseInt((360 * i) / arr.length)))
 }
 
 module.exports = rotatedColorsFor

@@ -1,165 +1,165 @@
 [
-    {
-        "comment": "/** @module mock-project-01 */",
-        "meta": {
-            "filename": "foo.js",
-            "lineno": 1,
-            "columnno": 0,
-            "path": "/Users/okuni/Projects/the/packages/script-jsdoc/misc/mocks/mock-project-01/lib",
-            "code": {}
-        },
-        "kind": "module",
-        "name": "mock-project-01",
-        "longname": "module:mock-project-01"
+  {
+    "comment": "/** @module mock-project-01 */",
+    "kind": "module",
+    "longname": "module:mock-project-01",
+    "meta": {
+      "code": {},
+      "columnno": 0,
+      "filename": "foo.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/script-jsdoc/misc/mocks/mock-project-01/lib"
     },
-    {
-        "comment": "/**\n * @memberof module:mock-project-01\n * @function foo\n * @param {string} a1 - Argument 01\n */",
-        "meta": {
-            "filename": "foo.js",
-            "lineno": 2,
-            "columnno": 0,
-            "path": "/Users/okuni/Projects/the/packages/script-jsdoc/misc/mocks/mock-project-01/lib",
-            "code": {}
+    "name": "mock-project-01"
+  },
+  {
+    "comment": "/**\n * @memberof module:mock-project-01\n * @function foo\n * @param {string} a1 - Argument 01\n */",
+    "kind": "function",
+    "longname": "module:mock-project-01.foo",
+    "memberof": "module:mock-project-01",
+    "meta": {
+      "code": {},
+      "columnno": 0,
+      "filename": "foo.js",
+      "lineno": 2,
+      "path": "/Users/okuni/Projects/the/packages/script-jsdoc/misc/mocks/mock-project-01/lib"
+    },
+    "name": "foo",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
         },
-        "memberof": "module:mock-project-01",
-        "kind": "function",
+        "description": "Argument 01",
+        "name": "a1"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "alias": "foo",
+    "async": true,
+    "comment": "",
+    "kind": "function",
+    "longname": "foo",
+    "meta": {
+      "code": {
+        "id": "astnode100000004",
         "name": "foo",
-        "params": [
-            {
-                "type": {
-                    "names": [
-                        "string"
-                    ]
-                },
-                "description": "Argument 01",
-                "name": "a1"
-            }
-        ],
-        "scope": "static",
-        "longname": "module:mock-project-01.foo"
+        "paramnames": [],
+        "type": "FunctionDeclaration"
+      },
+      "columnno": 0,
+      "filename": "foo.js",
+      "lineno": 10,
+      "path": "/Users/okuni/Projects/the/packages/script-jsdoc/misc/mocks/mock-project-01/lib",
+      "range": [
+        159,
+        182
+      ]
     },
-    {
-        "comment": "",
-        "meta": {
-            "range": [
-                159,
-                182
-            ],
-            "filename": "foo.js",
-            "lineno": 10,
-            "columnno": 0,
-            "path": "/Users/okuni/Projects/the/packages/script-jsdoc/misc/mocks/mock-project-01/lib",
-            "code": {
-                "id": "astnode100000004",
-                "name": "foo",
-                "type": "FunctionDeclaration",
-                "paramnames": []
-            }
-        },
-        "alias": "foo",
-        "undocumented": true,
-        "name": "foo",
-        "longname": "foo",
-        "kind": "function",
-        "scope": "global",
-        "params": [],
-        "async": true
-    },
-    {
-        "comment": "/** This is hoge*/",
-        "meta": {
-            "range": [
-                203,
-                264
-            ],
-            "filename": "foo.js",
-            "lineno": 13,
-            "columnno": 0,
-            "path": "/Users/okuni/Projects/the/packages/script-jsdoc/misc/mocks/mock-project-01/lib",
-            "code": {
-                "id": "astnode100000007",
-                "name": "Hoge",
-                "type": "ClassDeclaration",
-                "paramnames": []
-            }
-        },
-        "classdesc": "This is hoge",
+    "name": "foo",
+    "params": [],
+    "scope": "global",
+    "undocumented": true
+  },
+  {
+    "classdesc": "This is hoge",
+    "comment": "/** This is hoge*/",
+    "kind": "class",
+    "longname": "module:mock-project-01~Hoge",
+    "memberof": "module:mock-project-01",
+    "meta": {
+      "code": {
+        "id": "astnode100000007",
         "name": "Hoge",
-        "longname": "module:mock-project-01~Hoge",
-        "kind": "class",
-        "scope": "inner",
-        "memberof": "module:mock-project-01"
+        "paramnames": [],
+        "type": "ClassDeclaration"
+      },
+      "columnno": 0,
+      "filename": "foo.js",
+      "lineno": 13,
+      "path": "/Users/okuni/Projects/the/packages/script-jsdoc/misc/mocks/mock-project-01/lib",
+      "range": [
+        203,
+        264
+      ]
     },
-    {
-        "comment": "/** @param {string} msg */",
-        "meta": {
-            "range": [
-                247,
-                262
-            ],
-            "filename": "foo.js",
-            "lineno": 15,
-            "columnno": 2,
-            "path": "/Users/okuni/Projects/the/packages/script-jsdoc/misc/mocks/mock-project-01/lib",
-            "code": {
-                "id": "astnode100000010",
-                "name": "Hoge#say",
-                "type": "MethodDefinition",
-                "paramnames": [
-                    "msg"
-                ]
-            },
-            "vars": {
-                "": null
-            }
-        },
-        "params": [
-            {
-                "type": {
-                    "names": [
-                        "string"
-                    ]
-                },
-                "name": "msg"
-            }
+    "name": "Hoge",
+    "scope": "inner"
+  },
+  {
+    "comment": "/** @param {string} msg */",
+    "kind": "function",
+    "longname": "module:mock-project-01~Hoge#say",
+    "memberof": "module:mock-project-01~Hoge",
+    "meta": {
+      "code": {
+        "id": "astnode100000010",
+        "name": "Hoge#say",
+        "paramnames": [
+          "msg"
         ],
-        "name": "say",
-        "longname": "module:mock-project-01~Hoge#say",
-        "kind": "function",
-        "memberof": "module:mock-project-01~Hoge",
-        "scope": "instance"
+        "type": "MethodDefinition"
+      },
+      "columnno": 2,
+      "filename": "foo.js",
+      "lineno": 15,
+      "path": "/Users/okuni/Projects/the/packages/script-jsdoc/misc/mocks/mock-project-01/lib",
+      "range": [
+        247,
+        262
+      ],
+      "vars": {
+        "": null
+      }
     },
-    {
-        "comment": "",
-        "meta": {
-            "range": [
-                266,
-                281
-            ],
-            "filename": "foo.js",
-            "lineno": 20,
-            "columnno": 0,
-            "path": "/Users/okuni/Projects/the/packages/script-jsdoc/misc/mocks/mock-project-01/lib",
-            "code": {
-                "id": "astnode100000016",
-                "name": "foo.Hoge",
-                "type": "Identifier",
-                "value": "Hoge",
-                "paramnames": []
-            }
+    "name": "say",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
         },
-        "undocumented": true,
-        "name": "Hoge",
-        "longname": "foo.Hoge",
-        "kind": "member",
-        "memberof": "foo",
-        "scope": "static"
+        "name": "msg"
+      }
+    ],
+    "scope": "instance"
+  },
+  {
+    "comment": "",
+    "kind": "member",
+    "longname": "foo.Hoge",
+    "memberof": "foo",
+    "meta": {
+      "code": {
+        "id": "astnode100000016",
+        "name": "foo.Hoge",
+        "paramnames": [],
+        "type": "Identifier",
+        "value": "Hoge"
+      },
+      "columnno": 0,
+      "filename": "foo.js",
+      "lineno": 20,
+      "path": "/Users/okuni/Projects/the/packages/script-jsdoc/misc/mocks/mock-project-01/lib",
+      "range": [
+        266,
+        281
+      ]
     },
-    {
-        "kind": "package",
-        "longname": "package:undefined",
-        "files": [
-            "/Users/okuni/Projects/the/packages/script-jsdoc/misc/mocks/mock-project-01/lib/foo.js"
-        ]
-    }
+    "name": "Hoge",
+    "scope": "static",
+    "undocumented": true
+  },
+  {
+    "files": [
+      "/Users/okuni/Projects/the/packages/script-jsdoc/misc/mocks/mock-project-01/lib/foo.js"
+    ],
+    "kind": "package",
+    "longname": "package:undefined"
+  }
 ]
