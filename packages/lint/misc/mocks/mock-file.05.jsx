@@ -1,13 +1,12 @@
+'use strict'
 import hoge from 'hoge'
 
 const bar = () => null
 
-function baz () {}
+function baz() {}
 
 @hoge
 @bar
 @baz
 @__unknown__
-class Yes {
-
-}
+class Yes {}

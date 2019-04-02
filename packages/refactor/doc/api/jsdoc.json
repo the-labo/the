@@ -97,6 +97,16 @@
           ]
         },
         "name": "converter"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
       }
     ],
     "returns": [
@@ -109,7 +119,7 @@
       }
     ],
     "meta": {
-      "lineno": 51,
+      "lineno": 52,
       "filename": "TheRefactor.js",
       "path": "/Users/okuni/Projects/the/packages/refactor/lib"
     },
@@ -165,7 +175,7 @@
       }
     ],
     "meta": {
-      "lineno": 71,
+      "lineno": 72,
       "filename": "TheRefactor.js",
       "path": "/Users/okuni/Projects/the/packages/refactor/lib"
     },
@@ -210,7 +220,7 @@
       }
     ],
     "meta": {
-      "lineno": 102,
+      "lineno": 103,
       "filename": "TheRefactor.js",
       "path": "/Users/okuni/Projects/the/packages/refactor/lib"
     },
@@ -229,7 +239,8 @@
       {
         "type": {
           "names": [
-            "string"
+            "string",
+            "Array.<string>"
           ]
         },
         "description": "Filename pattern",
@@ -266,7 +277,7 @@
       }
     ],
     "meta": {
-      "lineno": 130,
+      "lineno": 131,
       "filename": "TheRefactor.js",
       "path": "/Users/okuni/Projects/the/packages/refactor/lib"
     },
@@ -309,7 +320,7 @@
       }
     ],
     "meta": {
-      "lineno": 154,
+      "lineno": 155,
       "filename": "TheRefactor.js",
       "path": "/Users/okuni/Projects/the/packages/refactor/lib"
     },

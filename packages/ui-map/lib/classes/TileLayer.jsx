@@ -4,7 +4,7 @@
  */
 'use strict'
 
-import { get } from 'the-window'
+import { get } from '@the-/window'
 import L from '@okunishinishi/leaflet-shim'
 
 /** @lends TileLayer */

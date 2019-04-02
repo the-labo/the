@@ -127,7 +127,7 @@ class ThePS {
       case 'ask': {
         return new Promise((resolve) =>
           yesno.ask(
-            `[the-ps] There is another process (pid: ${pid}) exists. Do you want to kill it? [Y/n]`,
+            `[the-ps] There is another process (pid: ${pid}) exists. Do you want to kill it? [y/N]`,
             false,
             (res) => resolve(res),
           ),

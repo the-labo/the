@@ -11,7 +11,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "aglob": "^3.0.1",
+    "aglob": "^3.0.2",
     "es5-shim": "^4.5.12",
     "filecopy": "^4.0.2",
     "filelink": "^4.0.1"

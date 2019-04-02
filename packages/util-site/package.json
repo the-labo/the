@@ -12,9 +12,9 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.1.4",
-    "@the-/error": "^15.1.4",
-    "@the-/seat": "^15.1.4",
+    "@the-/check": "^15.2.0",
+    "@the-/error": "^15.2.0",
+    "@the-/seat": "^15.2.0",
     "bwindow": "^2.0.3",
     "clay-resource-ref": "^2.0.8",
     "email-regex": "^3.0.0",

@@ -1,6 +1,6 @@
 'use strict'
 
-import { asStyleData, colorAlpha } from 'the-component-util'
+import { asStyleData, colorAlpha } from '@the-/util-ui'
 
 function PositionInputStyleData({
   dominantColor,

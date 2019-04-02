@@ -1,7 +1,7 @@
 {
   "name": "@the-/refactor",
   "description": "Refactoring tool for the-components",
-  "version": "15.2.0",
+  "version": "15.2.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "abind": "^1.0.5",
-    "aglob": "^3.0.1",
+    "aglob": "^3.0.2",
     "asfs": "^2.2.3",
     "filecopy": "^4.0.2"
   },

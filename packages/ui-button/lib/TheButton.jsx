@@ -3,7 +3,7 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { textColorFor } from 'the-color'
+import { textColorFor } from '@the-/util-color'
 import { unlessProduction } from '@the-/check'
 import { TheIcon } from '@the-/ui-icon'
 import { TheLink } from '@the-/ui-link'

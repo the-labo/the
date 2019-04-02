@@ -1,6 +1,6 @@
 'use strict'
 
-import { asStyleData } from 'the-component-util'
+import { asStyleData } from '@the-/util-ui'
 
 function CamInputStyleData({ dominantColor, tappableHeight }) {
   const tappableSize = tappableHeight

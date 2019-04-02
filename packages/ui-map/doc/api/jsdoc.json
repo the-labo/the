@@ -1,0 +1,196 @@
+[
+  {
+    "id": "module:the-map",
+    "longname": "module:the-map",
+    "name": "the-map",
+    "kind": "module",
+    "description": "Geo map for the-components",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheMap",
+    "longname": "TheMap",
+    "name": "TheMap",
+    "kind": "class",
+    "scope": "global",
+    "description": "Geo map for the-components",
+    "meta": {
+      "lineno": 25,
+      "filename": "TheMap.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "DivIcon",
+    "longname": "DivIcon",
+    "name": "DivIcon",
+    "kind": "class",
+    "scope": "global",
+    "augments": [
+      "L.DivIcon"
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "DivIcon.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-map/lib/classes"
+    },
+    "order": 11
+  },
+  {
+    "id": "TileLayer",
+    "longname": "TileLayer",
+    "name": "TileLayer",
+    "kind": "class",
+    "scope": "global",
+    "augments": [
+      "L.TileLayer"
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "TileLayer.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-map/lib/classes"
+    },
+    "order": 12
+  },
+  {
+    "id": "TheMapStyle",
+    "longname": "TheMapStyle",
+    "name": "TheMapStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheMap",
+    "params": [],
+    "meta": {
+      "lineno": 11,
+      "filename": "TheMapStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+    },
+    "order": 9
+  },
+  {
+    "id": "TheMap.propTypes.freezed",
+    "longname": "TheMap.propTypes.freezed",
+    "name": "freezed",
+    "kind": "member",
+    "scope": "static",
+    "description": "Disable all interactions",
+    "memberof": "TheMap.propTypes",
+    "meta": {
+      "lineno": 418,
+      "filename": "TheMap.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheMap.propTypes.height",
+    "longname": "TheMap.propTypes.height",
+    "name": "height",
+    "kind": "member",
+    "scope": "static",
+    "description": "Height of map",
+    "memberof": "TheMap.propTypes",
+    "meta": {
+      "lineno": 420,
+      "filename": "TheMap.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "TheMap.propTypes.lat",
+    "longname": "TheMap.propTypes.lat",
+    "name": "lat",
+    "kind": "member",
+    "scope": "static",
+    "description": "latitude value",
+    "memberof": "TheMap.propTypes",
+    "meta": {
+      "lineno": 422,
+      "filename": "TheMap.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheMap.propTypes.lng",
+    "longname": "TheMap.propTypes.lng",
+    "name": "lng",
+    "kind": "member",
+    "scope": "static",
+    "description": "longitude value",
+    "memberof": "TheMap.propTypes",
+    "meta": {
+      "lineno": 424,
+      "filename": "TheMap.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheMap.propTypes.onLeafletMap",
+    "longname": "TheMap.propTypes.onLeafletMap",
+    "name": "onLeafletMap",
+    "kind": "member",
+    "scope": "static",
+    "description": "Callback when map map created",
+    "memberof": "TheMap.propTypes",
+    "meta": {
+      "lineno": 426,
+      "filename": "TheMap.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "TheMap.propTypes.spinning",
+    "longname": "TheMap.propTypes.spinning",
+    "name": "spinning",
+    "kind": "member",
+    "scope": "static",
+    "description": "Shows spinner",
+    "memberof": "TheMap.propTypes",
+    "meta": {
+      "lineno": 428,
+      "filename": "TheMap.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "TheMap.propTypes.width",
+    "longname": "TheMap.propTypes.width",
+    "name": "width",
+    "kind": "member",
+    "scope": "static",
+    "description": "Width of map",
+    "memberof": "TheMap.propTypes",
+    "meta": {
+      "lineno": 430,
+      "filename": "TheMap.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+    },
+    "order": 8
+  },
+  {
+    "id": "TheMapStyle.propTypes.options",
+    "longname": "TheMapStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
+    "memberof": "TheMapStyle.propTypes",
+    "meta": {
+      "lineno": 31,
+      "filename": "TheMapStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+    },
+    "order": 10
+  }
+]

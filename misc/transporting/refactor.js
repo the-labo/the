@@ -40,7 +40,6 @@ async function main() {
     const refactor = new TheRefactor()
     for (const [oldName] of Object.entries(transporting)) {
       const newName = `@the-/${transporting[oldName].name}`
-      console.log(`Refactor "${oldName}" to "${newName}"...`)
       await refactor.rewrite(
         [
           '+(assets|example|bin|lib|client|conf|doc|misc|server|test)/**/*.js',

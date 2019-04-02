@@ -19,7 +19,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/window": "^15.1.4",
+    "@the-/window": "^15.2.0",
     "asenv": "^3.0.1",
     "bowser": "^2.1.2",
     "hasbin": "^1.2.3",

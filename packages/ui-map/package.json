@@ -16,15 +16,15 @@
   },
   "dependencies": {
     "@okunishinishi/leaflet-shim": "^1.0.2",
+    "@the-/const-ui": "^15.2.0",
+    "@the-/ui-spin": "^15.2.0",
+    "@the-/ui-style": "^15.2.0",
+    "@the-/util-ui": "^15.2.0",
+    "@the-/window": "^15.2.0",
     "classnames": "^2.2.6",
     "formatcoords": "^1.1.3",
     "leaflet": "^1.4.0",
-    "prop-types": "^15.7.2",
-    "the-component-constants": "^2.0.8",
-    "the-component-util": "^3.0.22",
-    "the-spin": "^3.1.12",
-    "the-style": "^2.2.8",
-    "the-window": "^7.0.3"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@babel/runtime": "^7.4.2",
@@ -34,7 +34,7 @@
     "@the-/templates": "file:../templates",
     "@the-/ui-demo": "file:../ui-demo",
     "coz": "^7.0.19",
-    "objnest": "^5.0.5",
+    "objnest": "^5.0.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0"
@@ -43,7 +43,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/ui-map#readme",
   "keywords": [
     "the",
     "ui"

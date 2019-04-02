@@ -1,7 +1,7 @@
 {
   "name": "@the-/server",
   "description": "HTTP/RPC Server of the-framework",
-  "version": "15.2.0",
+  "version": "15.2.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,7 +14,7 @@
     "@the-/cache": "^15.2.0",
     "@the-/check": "^15.2.0",
     "@the-/controller": "^15.2.0",
-    "@the-/mixin-controller": "^15.2.0",
+    "@the-/mixin-controller": "^15.2.2",
     "@the-/pack": "^15.2.0",
     "@the-/stream": "^15.2.0",
     "@the-/tmp": "^15.2.0",
@@ -34,7 +34,7 @@
     "stringcase": "^4.3.1"
   },
   "devDependencies": {
-    "@the-/client": "file:../client",
+    "@the-/client": "^15.2.1",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",

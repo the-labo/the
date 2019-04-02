@@ -12,8 +12,8 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.1.4",
-    "@the-/error": "^15.1.4",
+    "@the-/check": "^15.2.0",
+    "@the-/error": "^15.2.0",
     "qs": "^6.7.0"
   },
   "devDependencies": {

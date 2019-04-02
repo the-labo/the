@@ -1,7 +1,7 @@
 {
   "name": "@the-/client",
   "description": "Client for the-server",
-  "version": "15.2.0",
+  "version": "15.2.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,10 +12,10 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.1.4",
-    "@the-/pack": "^15.1.4",
-    "@the-/queue": "^15.1.4",
-    "@the-/stream": "^15.1.6",
+    "@the-/check": "^15.2.0",
+    "@the-/pack": "^15.2.0",
+    "@the-/queue": "^15.2.0",
+    "@the-/stream": "^15.2.0",
     "argx": "^4.0.0",
     "asleep": "^1.0.3",
     "browser-cookies": "^1.2.0",
@@ -35,7 +35,7 @@
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
-    "@the-/server": "file:../server",
+    "@the-/server": "^15.2.1",
     "@the-/templates": "file:../templates",
     "aport": "^2.0.0",
     "coz": "^7.0.19",

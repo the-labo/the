@@ -1,11 +1,10 @@
-const l = m => m
+'use strict'
+const l = (m) => m
 const msg1 = l('msg.SOME_MESSAGE_1')
 const msg2 = l('msg.SOME_MESSAGE_2')
 
 @l('msg.SOME_MESSAGE_1')
-class Hoge {
-
-}
+class Hoge {}
 
 const n = {
   m1: l['msg.SOME_MESSAGE_1'],

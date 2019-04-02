@@ -3,14 +3,14 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { ThemeValues } from 'the-component-constants'
+import { ThemeValues } from '@the-/const-ui'
 import {
   changedProps,
   eventHandlersFor,
   htmlAttributesFor,
   newId,
-} from 'the-component-util'
-import { TheSpin } from 'the-spin'
+} from '@the-/util-ui'
+import { TheSpin } from '@the-/ui-spin'
 import L from '@okunishinishi/leaflet-shim'
 import DivIcon from './classes/DivIcon'
 import TileLayer from './classes/TileLayer'

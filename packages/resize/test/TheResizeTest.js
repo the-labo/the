@@ -7,7 +7,8 @@
 const { equal, ok } = require('assert')
 const TheResize = require('../lib/TheResize')
 
-describe('the-resize', () => {
+describe('the' +
+  '-resize', () => {
   before(() => {})
 
   after(() => {})

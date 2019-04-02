@@ -12,8 +12,8 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/assert": "^15.1.4",
-    "@the-/state": "^15.1.4",
+    "@the-/assert": "^15.2.0",
+    "@the-/state": "^15.2.0",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {

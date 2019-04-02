@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@the-/ast": "^15.2.0",
-    "@the-/util-file": "^15.1.4",
-    "aglob": "^3.0.1",
+    "@the-/util-file": "^15.2.0",
+    "aglob": "^3.0.2",
     "asfs": "^2.2.3",
     "chalk": "^2.4.2",
     "colorprint": "^5.0.3",

@@ -3,8 +3,8 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { asStyleData } from 'the-component-util'
-import { TheStyle } from 'the-style'
+import { asStyleData } from '@the-/util-ui'
+import { TheStyle } from '@the-/ui-style'
 import CamInputStyleData from './styleData/CamInputStyleData'
 
 /** Style for TheCam */

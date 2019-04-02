@@ -1,8 +1,8 @@
 'use strict'
 
 import React from 'react'
-import { TheMap, TheMapStyle, TheMapPositionInput } from 'the-map'
-import { TheSpinStyle } from 'the-spin'
+import { TheMap, TheMapStyle, TheMapPositionInput } from '@the-/ui-map'
+import { TheSpinStyle } from '@the-/ui-spin'
 
 // @see https://leaflet-extras.github.io/leaflet-providers/preview/
 const MapLayers = [

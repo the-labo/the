@@ -33,10 +33,10 @@
   },
   "devDependencies": {
     "@babel/runtime": "^7.4.2",
-    "@the-/script-build": "^15.1.6",
-    "@the-/script-doc": "^15.1.4",
+    "@the-/script-build": "^15.2.0",
+    "@the-/script-doc": "^15.2.0",
     "@the-/script-test": "^15.2.0",
-    "@the-/templates": "^15.1.4",
+    "@the-/templates": "^15.2.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0"

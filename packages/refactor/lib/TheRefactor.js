@@ -46,6 +46,7 @@ class TheRefactor {
    * Process with convert function
    * @param {string} pattern - Filename pattern
    * @param {function} converter
+   * @param {Object} [options={}]
    * @returns {Promise<void>}
    */
   async convert(pattern, converter, options = {}) {
@@ -122,7 +123,7 @@ class TheRefactor {
 
   /**
    * Rewrite file content
-   * @param {string} pattern - Filename pattern
+   * @param {string|string[]} pattern - Filename pattern
    * @param {object} rules - Replace rules
    * @param {Object} [options={}] - Optional settings
    * @returns {Promise<void>}
@@ -170,7 +171,7 @@ class TheRefactor {
   }
 
   async _each(pattern, task, options = {}) {
-    const { cwd, ignore = [] } = options
+    const { cwd = process.cwd(), ignore = [] } = options
     const filenames = await aglob(pattern, { cwd, ignore })
     const results = {}
     for (const filename of filenames) {

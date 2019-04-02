@@ -12,8 +12,8 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.1.4",
-    "aws-sdk": "^2.432.0",
+    "@the-/check": "^15.2.0",
+    "aws-sdk": "^2.433.0",
     "debug": "^4.1.1",
     "mime": "^2.4.0"
   },

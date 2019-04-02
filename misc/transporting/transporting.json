@@ -31,6 +31,10 @@
     "kind": "ui",
     "name": "ui-bar"
   },
+  "the-paint": {
+    "kind": "ui",
+    "name": "ui-paint"
+  },
   "the-bin": {
     "kind": "lib",
     "name": "bin"

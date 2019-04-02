@@ -15,10 +15,10 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/ast": "^15.1.4",
-    "@the-/util-file": "^15.1.4",
+    "@the-/ast": "^15.2.0",
+    "@the-/util-file": "^15.2.0",
     "@the-/util-path": "^15.2.0",
-    "aglob": "^3.0.1",
+    "aglob": "^3.0.2",
     "asfs": "^2.2.3",
     "colorprint": "^5.0.3",
     "commander": "^2.19.0",
@@ -31,10 +31,10 @@
     "yaml": "^1.4.0"
   },
   "devDependencies": {
-    "@the-/script-build": "^15.1.5",
+    "@the-/script-build": "^15.2.0",
     "@the-/script-doc": "^15.2.0",
     "@the-/script-test": "^15.2.0",
-    "@the-/templates": "^15.2.0",
+    "@the-/templates": "^15.2.1",
     "coz": "^7.0.19",
     "filecopy": "^4.0.2"
   },

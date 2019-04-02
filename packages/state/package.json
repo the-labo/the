@@ -12,9 +12,9 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/assert": "^15.1.4",
-    "@the-/window": "^15.1.4",
-    "asobj": "^3.0.0",
+    "@the-/assert": "^15.2.0",
+    "@the-/window": "^15.2.0",
+    "asobj": "^3.0.1",
     "invariant": "^2.2.4",
     "redux": "^4.0.1"
   },

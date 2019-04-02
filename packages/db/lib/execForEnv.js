@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { toLowerKeys } = require('the-db-util')
+const { toLowerKeys } = require('@the-/util-db')
 
 /** @lends execForEnv */
 async function execForEnv(env, sql) {

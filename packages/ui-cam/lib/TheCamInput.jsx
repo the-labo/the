@@ -8,9 +8,9 @@ import {
   htmlAttributesFor,
   newId,
   readFileAsDataURL,
-} from 'the-component-util'
-import { TheIcon } from 'the-icon'
-import { get } from 'the-window'
+} from '@the-/util-ui'
+import { TheIcon } from '@the-/ui-icon'
+import { get } from '@the-/window'
 import TheCam from './TheCam'
 
 const noop = () => null

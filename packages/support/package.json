@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "acorn": "^6.1.1",
-    "aglob": "^3.0.1",
+    "aglob": "^3.0.2",
     "asfs": "^2.2.3",
     "chalk": "^2.4.2",
     "log-syntax-error": "^0.1.1"

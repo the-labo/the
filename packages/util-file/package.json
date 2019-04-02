@@ -13,10 +13,10 @@
   },
   "dependencies": {
     "asfs": "^2.2.3",
-    "file-type": "^10.9.0",
+    "file-type": "^10.10.0",
     "json5": "^2.1.0",
     "mkdirp": "^0.5.1",
-    "read-chunk": "^3.1.0"
+    "read-chunk": "^3.2.0"
   },
   "devDependencies": {
     "@the-/script-build": "file:../script-build",

@@ -6,8 +6,8 @@
 
 const aslogger = require('aslogger')
 const { clone } = require('asobj')
-const { evalScript } = require('the-db-util')
 const { inspect } = require('util')
+const { evalScript } = require('@the-/util-db')
 const createTerminal = require('../helpers/createTerminal')
 
 /** @lends cliMix */

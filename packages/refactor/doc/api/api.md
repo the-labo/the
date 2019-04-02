@@ -42,7 +42,7 @@ Refactoring tool for the-components
 **Kind**: global class  
 
 * [TheRefactor](#TheRefactor)
-    * [.convert(pattern, converter)](#TheRefactor+convert) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.convert(pattern, converter, [options])](#TheRefactor+convert) ⇒ <code>Promise.&lt;void&gt;</code>
     * [.rename(pattern, convert, [options])](#TheRefactor+rename) ⇒ <code>Promise.&lt;void&gt;</code>
     * [.renameDir(src, dest)](#TheRefactor+renameDir) ⇒ <code>Promise.&lt;void&gt;</code>
     * [.rewrite(pattern, rules, [options])](#TheRefactor+rewrite) ⇒ <code>Promise.&lt;void&gt;</code>
@@ -50,15 +50,16 @@ Refactoring tool for the-components
 
 <a name="TheRefactor+convert"></a>
 
-### theRefactor.convert(pattern, converter) ⇒ <code>Promise.&lt;void&gt;</code>
+### theRefactor.convert(pattern, converter, [options]) ⇒ <code>Promise.&lt;void&gt;</code>
 Process with convert function
 
 **Kind**: instance method of [<code>TheRefactor</code>](#TheRefactor)  
 
-| Param | Type | Description |
-| --- | --- | --- |
-| pattern | <code>string</code> | Filename pattern |
-| converter | <code>function</code> |  |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| pattern | <code>string</code> |  | Filename pattern |
+| converter | <code>function</code> |  |  |
+| [options] | <code>Object</code> | <code>{}</code> |  |
 
 <a name="TheRefactor+rename"></a>
 
@@ -94,7 +95,7 @@ Rewrite file content
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| pattern | <code>string</code> |  | Filename pattern |
+| pattern | <code>string</code> \| <code>Array.&lt;string&gt;</code> |  | Filename pattern |
 | rules | <code>object</code> |  | Replace rules |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 

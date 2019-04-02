@@ -3,7 +3,7 @@
 import c from 'classnames'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { eventHandlersFor, htmlAttributesFor } from 'the-component-util'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
 class TheMapMarker extends React.Component {
   render() {

@@ -108,6 +108,8 @@ var/
 /packages/ui-body/lib/index.jsx
 /packages/ui-button/doc/demo/bundle.js
 /packages/ui-button/lib/index.jsx
+/packages/ui-cam/doc/demo/bundle.js
+/packages/ui-cam/lib/index.jsx
 /packages/ui-caught/doc/demo/bundle.js
 /packages/ui-caught/lib/index.jsx
 /packages/ui-condition/doc/demo/bundle.js
@@ -149,6 +151,8 @@ var/
 /packages/ui-list/lib/index.jsx
 /packages/ui-main/doc/demo/bundle.js
 /packages/ui-main/lib/index.jsx
+/packages/ui-map/doc/demo/bundle.js
+/packages/ui-map/lib/index.jsx
 /packages/ui-menu/doc/demo/bundle.js
 /packages/ui-menu/lib/index.jsx
 /packages/ui-meta/doc/demo/bundle.js
@@ -190,6 +194,7 @@ var/
 /packages/util-array/lib/index.js
 /packages/util-client/lib/index.js
 /packages/util-color/lib/index.js
+/packages/util-db/lib/index.js
 /packages/util-file/lib/index.js
 /packages/util-path/lib/index.js
 /packages/util-server/lib/index.js
