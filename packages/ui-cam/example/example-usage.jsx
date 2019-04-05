@@ -1,6 +1,6 @@
 'use strict'
 
-import 'the-polyfill/apply' // Some browser needs polyfill for ImageCapture API
+import '@the-/polyfill/apply' // Some browser needs polyfill for ImageCapture API
 import React from 'react'
 import { TheCam, TheCamStyle, TheCamInput } from '@the-/ui-cam'
 import { TheSpinStyle } from '@the-/ui-spin'

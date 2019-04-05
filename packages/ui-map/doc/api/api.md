@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-map">the-map</a></dt>
+<dt><a href="#module_@the-/ui-map">@the-/ui-map</a></dt>
 <dd><p>Geo map for the-components</p>
 </dd>
 </dl>
@@ -28,9 +28,9 @@
 </dd>
 </dl>
 
-<a name="module_the-map"></a>
+<a name="module_@the-/ui-map"></a>
 
-## the-map
+## @the-/ui-map
 Geo map for the-components
 
 <a name="TheMap"></a>

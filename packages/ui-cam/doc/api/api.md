@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_the-cam">the-cam</a></dt>
+<dt><a href="#module_@the-/ui-cam">@the-/ui-cam</a></dt>
 <dd><p>Embed camera component</p>
 </dd>
 </dl>
@@ -27,9 +27,9 @@
 </dd>
 </dl>
 
-<a name="module_the-cam"></a>
+<a name="module_@the-/ui-cam"></a>
 
-## the-cam
+## @the-/ui-cam
 Embed camera component
 
 <a name="TheCam"></a>

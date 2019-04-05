@@ -5,13 +5,13 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { unlessProduction } from '@the-/check'
+import { TheMedia } from '@the-/media'
+import { TheSpin } from '@the-/ui-spin'
 import {
   changedProps,
   eventHandlersFor,
   htmlAttributesFor,
 } from '@the-/util-ui'
-import { TheMedia } from '@the-/media'
-import { TheSpin } from '@the-/ui-spin'
 
 /**
  * Embed camera component

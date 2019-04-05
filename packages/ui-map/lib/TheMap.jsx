@@ -3,15 +3,15 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
+import L from '@okunishinishi/leaflet-shim'
 import { ThemeValues } from '@the-/const-ui'
+import { TheSpin } from '@the-/ui-spin'
 import {
   changedProps,
   eventHandlersFor,
   htmlAttributesFor,
   newId,
 } from '@the-/util-ui'
-import { TheSpin } from '@the-/ui-spin'
-import L from '@okunishinishi/leaflet-shim'
 import DivIcon from './classes/DivIcon'
 import TileLayer from './classes/TileLayer'
 import TheMapMarker from './TheMapMarker'

@@ -4,8 +4,8 @@
  */
 'use strict'
 
-import { get } from '@the-/window'
 import L from '@okunishinishi/leaflet-shim'
+import { get } from '@the-/window'
 
 /** @lends TileLayer */
 class TileLayer extends L.TileLayer {

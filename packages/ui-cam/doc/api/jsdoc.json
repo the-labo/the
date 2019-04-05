@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-cam",
-    "longname": "module:the-cam",
-    "name": "the-cam",
+    "id": "module:@the-/ui-cam",
+    "longname": "module:@the-/ui-cam",
+    "name": "@the-/ui-cam",
     "kind": "module",
     "description": "Embed camera component",
     "meta": {
@@ -49,7 +49,7 @@
     "description": "Style for TheCam",
     "params": [],
     "meta": {
-      "lineno": 11,
+      "lineno": 12,
       "filename": "TheCamStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
     },
@@ -139,7 +139,7 @@
     "description": "Style options",
     "memberof": "TheCamStyle.propTypes",
     "meta": {
-      "lineno": 22,
+      "lineno": 23,
       "filename": "TheCamStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
     },

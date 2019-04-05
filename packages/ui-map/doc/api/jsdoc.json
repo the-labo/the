@@ -1,8 +1,8 @@
 [
   {
-    "id": "module:the-map",
-    "longname": "module:the-map",
-    "name": "the-map",
+    "id": "module:@the-/ui-map",
+    "longname": "module:@the-/ui-map",
+    "name": "@the-/ui-map",
     "kind": "module",
     "description": "Geo map for the-components",
     "meta": {
@@ -67,7 +67,7 @@
     "description": "Style for TheMap",
     "params": [],
     "meta": {
-      "lineno": 11,
+      "lineno": 12,
       "filename": "TheMapStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
     },
@@ -187,7 +187,7 @@
     "description": "Style options",
     "memberof": "TheMapStyle.propTypes",
     "meta": {
-      "lineno": 31,
+      "lineno": 32,
       "filename": "TheMapStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
     },

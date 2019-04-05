@@ -3,8 +3,9 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { asStyleData } from '@the-/util-ui'
+import { ThemeValues } from '@the-/const-ui'
 import { TheStyle } from '@the-/ui-style'
+import { asStyleData } from '@the-/util-ui'
 import PositionInputStyleData from './styleData/PositionInputStyleData'
 
 /** Style for TheMap */
@@ -38,7 +39,6 @@ TheMapStyle.defaultProps = {
 TheMapStyle.externals = ['https://unpkg.com/leaflet@1.3.4/dist/leaflet.css']
 
 TheMapStyle.data = (options) => {
-  const { ThemeValues } = TheStyle
   const {
     dominantColor = ThemeValues.dominantColor,
     inputBorderColor = ThemeValues.inputBorderColor,
