@@ -17,6 +17,7 @@ describe('the-lint', () => {
     ok(TheLint)
 
     const lint = new TheLint()
+    await lint.clearCache()
 
     lint.add(
       `${__dirname}/../misc/mocks/*.js`,

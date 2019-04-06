@@ -48,6 +48,13 @@ class LintCache {
     }
     await this.flushRequest()
   }
+  async del(key) {
+    await this.syncIfNeeded()
+    const data = { ...this.data }
+    delete data[key]
+    this.data = data
+    await this.flushRequest()
+  }
 
   async sync() {
     this.data = (await this._readFile().catch(() => null)) || {}
