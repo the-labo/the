@@ -34,7 +34,7 @@ function depsRule(config) {
           ...ext.map((ext) => path.join(resolved, 'index') + ext),
         ]
       } else {
-        return [id]
+        return [id, path.join(process.cwd(), 'node_modules', id)]
       }
     }
 
