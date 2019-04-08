@@ -152,7 +152,7 @@ class MongoDriver extends MongoDriverBase {
   async resources() {
     await this._dbConnecting
     const { db } = this
-    const info = this.db.listCollections({})
+    const info = db.listCollections({})
     const resourceNames = (await info.toArray()).map((name) => name)
     return resourceNames.map((resourceName) => {
       const { domain, name } = clayResourceName(resourceName)

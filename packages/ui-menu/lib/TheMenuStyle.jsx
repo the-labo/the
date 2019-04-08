@@ -34,7 +34,6 @@ TheMenuStyle.data = (options) => {
     contentWidth = ThemeValues.contentWidth,
     hoverOpacity = ThemeValues.hoverOpacity,
     lightBorderColor = ThemeValues.lightBorderColor,
-    lightLinkColor = ThemeValues.lightLinkColor,
     overlayBackgroundColor = ThemeValues.overlayBackgroundColor,
     overlayBorderColor = ThemeValues.overlayBorderColor,
     tappableHeight = ThemeValues.tappableHeight,

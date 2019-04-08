@@ -53,13 +53,11 @@ class TheTab extends React.Component {
         {active && (
           <span
             className='the-tab-button-active-bar'
-            style={
-              active && {
-                transform: !disableTouchAction
-                  ? `translateX(${movingRate * -100}%)`
-                  : 'none',
-              }
-            }
+            style={{
+              transform: !disableTouchAction
+                ? `translateX(${movingRate * -100}%)`
+                : 'none',
+            }}
           />
         )}
         {children}
@@ -287,7 +285,7 @@ class TheTab extends React.Component {
   }
 
   render() {
-    const { body, props, state } = this
+    const { props, state } = this
     const { animating, bodyHeight, movingRate, nextIndex, translateX } = state
     const {
       activeIndex,

@@ -110,7 +110,7 @@ class TheRouteStack extends React.Component {
       contentHeight > 0
         ? contentHeight
         : (activeRoute && activeRoute.offsetHeight) || 'auto'
-    const needsUpdateState = height && height !== this.state.height
+    const needsUpdateState = height !== this.state.height
     if (needsUpdateState) {
       clearTimeout(this.resizeApplyTimer)
       this.resizeApplyTimer = setTimeout(() => {

@@ -30,7 +30,6 @@ TheTabStyle.data = (options) => {
   const {
     backgroundColor = ThemeValues.backgroundColor,
     dominantColor = ThemeValues.dominantColor,
-    lightBackgroundColor = ThemeValues.lightBackgroundColor,
     lightBorderColor = ThemeValues.lightBorderColor,
     lightTextColor = ThemeValues.lightTextColor,
     textColor = ThemeValues.textColor,

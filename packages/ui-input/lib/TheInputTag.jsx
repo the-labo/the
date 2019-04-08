@@ -82,6 +82,13 @@ class TheInputTag extends React.PureComponent {
     this.updateBySplitValues([edittingValue, ...tagValues])
   }
 
+  optionsFor(tagValues) {
+    const { options } = this.props
+    return []
+      .concat(options || [])
+      .filter((option) => !tagValues.includes(option))
+  }
+
   removeTag(text) {
     const tagValues = this.splitValue()
     this.updateBySplitValues(tagValues.filter((tagValue) => tagValue !== text))
@@ -93,7 +100,6 @@ class TheInputTag extends React.PureComponent {
     const inputProps = clone(props, {
       without: ['value', 'splitter', 'options'],
     })
-    const { options } = props
     const { focused } = this.state
     return (
       <TheInputText
@@ -106,9 +112,7 @@ class TheInputTag extends React.PureComponent {
         onFocus={this.handleFocus}
         onKeyDown={this.handleKeyDown}
         onUpdate={this.handleUpdate}
-        options={[]
-          .concat(options || [])
-          .filter((option) => !tagValues.includes(option))}
+        options={this.optionsFor(tagValues)}
         value={String(edittingValue).trim()}
       >
         {tagValues

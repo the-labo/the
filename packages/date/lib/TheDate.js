@@ -23,18 +23,6 @@ const {
   subtractMix,
 } = require('./mixins')
 
-const toDate = (d) => {
-  if (!d) {
-    return d
-  }
-  if (typeof d === 'string') {
-    return new Date(d.replace(/-/g, '/'))
-  }
-  if (d.toDate) {
-    return d.toDate()
-  }
-  return new Date(d)
-}
 const now = () => new Date()
 
 const TheDateBase = [

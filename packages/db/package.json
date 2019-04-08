@@ -1,7 +1,7 @@
 {
   "name": "@the-/db",
   "description": "DB for the-framework",
-  "version": "15.2.0",
+  "version": "15.2.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,7 +13,7 @@
   "dependencies": {
     "@the-/check": "^15.2.0",
     "@the-/driver-mongo": "^15.2.0",
-    "@the-/driver-sequelize": "^15.2.0",
+    "@the-/driver-sequelize": "^15.2.2",
     "@the-/hash": "^15.2.0",
     "@the-/refresher": "^15.2.0",
     "@the-/resource": "^15.2.0",

@@ -35,7 +35,7 @@
     "description": "Style for TheCaught",
     "params": [],
     "meta": {
-      "lineno": 11,
+      "lineno": 10,
       "filename": "TheCaughtStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
     },
@@ -80,7 +80,7 @@
     "description": "Style options",
     "memberof": "TheCaughtStyle.propTypes",
     "meta": {
-      "lineno": 22,
+      "lineno": 21,
       "filename": "TheCaughtStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
     },

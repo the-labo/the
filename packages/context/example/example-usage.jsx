@@ -64,7 +64,7 @@ async function tryExample() {
     }
   }
 
-  ReactDOM.render(<App />, '#app-container')
+  ReactDOM.render(<App />, document.getElementById('app-container'))
 }
 
 tryExample().catch((err) => console.error(err))

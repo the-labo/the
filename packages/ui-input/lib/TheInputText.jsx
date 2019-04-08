@@ -248,7 +248,7 @@ class TheInputText extends React.PureComponent {
       value,
     } = props
     let { autoCapitalize, autoComplete, autoCorrect } = props
-    const { candidates, committedValue, selectedCandidate, suggesting } = state
+    const { candidates, selectedCandidate, suggesting } = state
     if (!autoComplete && candidates.length >= 0) {
       autoComplete = 'off'
     }

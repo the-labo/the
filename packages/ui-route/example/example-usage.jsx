@@ -63,7 +63,7 @@ class ExampleComponent extends React.Component {
                                        <br/>
 
                                        <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                                         <a onClick={() => pop()}> &lt;&lt; Back to view 01</a>
+                                         <a onClick={pop}> &lt;&lt; Back to view 01</a>
                                          <TheLink to={'/s1/v2/v3'}>Go to view 03 &gt;&gt; </TheLink>
                                        </div>
                                      </div>

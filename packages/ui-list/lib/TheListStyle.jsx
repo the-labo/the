@@ -30,7 +30,6 @@ TheListStyle.data = (options) => {
   const {
     backgroundColor = ThemeValues.backgroundColor,
     contentPadding = ThemeValues.contentPadding,
-    contentWidth = ThemeValues.contentWidth,
     lightBackgroundColor = ThemeValues.lightBackgroundColor,
     lightBorderColor = ThemeValues.lightBorderColor,
     lightLinkColor = ThemeValues.lightLinkColor,

@@ -3,7 +3,6 @@
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { ThemeValues } from '@the-/const-ui'
 import { TheStyle } from '@the-/ui-style'
 import { asStyleData } from '@the-/util-ui'
 
@@ -26,8 +25,7 @@ TheMainStyle.defaultProps = {
   options: {},
 }
 
-TheMainStyle.data = (options) => {
-  const { dominantColor = ThemeValues.dominantColor } = options
+TheMainStyle.data = () => {
   return asStyleData('.the-main', {
     '.the-main-spin.the-spinner-cover': {
       background: 'rgba(255,255,255,0.98)',

@@ -74,6 +74,7 @@ async function tryExample() {
   {
     const file = new File([1, 2, 3], 'hoge')
     const arrayBuffer = new readFile(file)
+    console.log(arrayBuffer)
     /* ... */
   }
 }

@@ -6,7 +6,7 @@
 const { cleanup } = require('asobj')
 const mysql = require('mysql2')
 
-async function execMysql(env, sqls, options = {}) {
+async function execMysql(env, sqls) {
   const { database, host, password, port, username } = env
   const connection = mysql.createConnection(
     cleanup(
@@ -26,6 +26,7 @@ async function execMysql(env, sqls, options = {}) {
         err ? reject(err) : resolve(result),
       )
     })
+    console.log(result)
   }
   await connection.close()
 }
