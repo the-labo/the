@@ -72,9 +72,11 @@ class TheLint {
     const reports = []
     const cacheKey = [
       filename,
-      Object.values(checkers).map((c) => c.name).join('&'),
+      Object.values(checkers)
+        .map((c) => c.name)
+        .join('&'),
     ].join('~')
-    const shouldSkipFile = await this.shouldSkipFile(filename, {cacheKey})
+    const shouldSkipFile = await this.shouldSkipFile(filename, { cacheKey })
     if (shouldSkipFile) {
       debug('Skip', filename)
       return reports
@@ -139,7 +141,7 @@ class TheLint {
     return errorReports
   }
 
-  async shouldSkipFile(filename, {cacheKey}) {
+  async shouldSkipFile(filename, { cacheKey }) {
     const stat = await statAsync(filename).catch(() => null)
     if (!stat) {
       return false

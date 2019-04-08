@@ -22,6 +22,14 @@ class LintCache {
     }
   }
 
+  async del(key) {
+    await this.syncIfNeeded()
+    const data = { ...this.data }
+    delete data[key]
+    this.data = data
+    await this.flushRequest()
+  }
+
   async flush() {
     await this._writeFile(this.data)
   }
@@ -39,20 +47,12 @@ class LintCache {
     }
     return this.data[key]
   }
-
   async set(key, val) {
     await this.syncIfNeeded()
     this.data = {
       ...this.data,
       [key]: val,
     }
-    await this.flushRequest()
-  }
-  async del(key) {
-    await this.syncIfNeeded()
-    const data = { ...this.data }
-    delete data[key]
-    this.data = data
     await this.flushRequest()
   }
 

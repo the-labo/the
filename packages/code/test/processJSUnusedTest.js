@@ -528,16 +528,24 @@ console.log(a, b, x, y)
     )
   })
 
-  it('Some import', async () => {
+  it('In nested jsx function', async () => {
     console.log(
       await processJSUnused(`
-import { Dialogs, Header, Footer, Toasts } from './layouts'
-Dialogs()
-Footer()
-Toasts()
+class X {
+  render () {
+    return this.#stateful(({a, b}) => {
+      return (
+        <Y renderItem={() => {
+           return <Z a={a}/>            
+        }}/>
+      )
+    })
+  }
+}
 `),
     )
   })
+
 })
 
 /* global describe, before, after, it */

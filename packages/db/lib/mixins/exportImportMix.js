@@ -79,7 +79,7 @@ function exportImportMix(Class) {
       const infoFilePath = path.join(dirname, INFO_FILE_NAME)
       const hasInfo = !!(await statAsync(infoFilePath).catch(() => null))
       if (!hasInfo) {
-        throw new Error(`[TheDB] No info found`, dirname)
+        throw new Error(`[TheDB] No info found: ${dirname}`)
       }
       const info = JSON.parse(String(await readFileAsync(infoFilePath)))
 

@@ -253,7 +253,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
    * @returns {Promise<void>}
    */
   async untilReady() {
-    await this.assertOpen()
+    this.assertOpen()
     await this.prepareIfNeeded()
   }
 
