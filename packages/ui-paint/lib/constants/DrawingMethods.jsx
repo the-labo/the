@@ -9,7 +9,7 @@ const DrawingMethods = Object.freeze(
   {
     FREE: 'free',
     STRAIGHT: 'straight',
-  }
+  },
 )
 
 export default DrawingMethods

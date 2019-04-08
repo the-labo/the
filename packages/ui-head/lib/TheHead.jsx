@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     const globals = expand(props.globals || {})
 
     const fallbackScript = this.getFallbackScript(fallbackUnless)
-    const ogpEnabled = Object.keys(ogpContents).length > 0
+    const ogpEnabled = Object.keys(ogpContents || {}).length > 0
     return (
       <head
         className={c('the-head', className)}
@@ -117,42 +117,38 @@ document.addEventListener('DOMContentLoaded', function(event) {
             name='viewport'
           />
         )}
-        {metaContents &&
-          Object.keys(metaContents).map((name) => (
-            <meta
-              className='the-head-meta-content'
-              content={metaContents[name]}
-              key={name}
-              name={name}
-            />
-          ))}
-        {metaProperties &&
-          Object.keys(metaProperties).map((name) => (
-            <meta
-              className='the-head-meta-property'
-              key={name}
-              name={name}
-              property={metaProperties[name]}
-            />
-          ))}
-        {ogpContents &&
-          Object.keys(ogpContents).map((property) => (
-            <meta
-              className='the-head-meta-ogp'
-              content={ogpContents[property]}
-              key={property}
-              property={ogProperty(property)}
-            />
-          ))}
-        {itemProps &&
-          Object.keys(itemProps).map((name) => (
-            <meta
-              className='the-head-item-prop'
-              content={metaContents[name]}
-              itemProp={name}
-              key={name}
-            />
-          ))}
+        {Object.keys(metaContents || {}).map((name) => (
+          <meta
+            className='the-head-meta-content'
+            content={metaContents[name]}
+            key={name}
+            name={name}
+          />
+        ))}
+        {Object.keys(metaProperties || {}).map((name) => (
+          <meta
+            className='the-head-meta-property'
+            key={name}
+            name={name}
+            property={metaProperties[name]}
+          />
+        ))}
+        {Object.keys(ogpContents || {}).map((property) => (
+          <meta
+            className='the-head-meta-ogp'
+            content={ogpContents[property]}
+            key={property}
+            property={ogProperty(property)}
+          />
+        ))}
+        {Object.keys(itemProps || {}).map((name) => (
+          <meta
+            className='the-head-item-prop'
+            content={metaContents[name]}
+            itemProp={name}
+            key={name}
+          />
+        ))}
         {color && (
           <meta
             className='the-head-theme-color'

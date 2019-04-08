@@ -49,7 +49,7 @@
     "description": "Style for TheBar",
     "params": [],
     "meta": {
-      "lineno": 11,
+      "lineno": 10,
       "filename": "TheBarStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
     },
@@ -154,7 +154,7 @@
     "description": "Style options",
     "memberof": "TheBarStyle.propTypes",
     "meta": {
-      "lineno": 22,
+      "lineno": 21,
       "filename": "TheBarStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
     },

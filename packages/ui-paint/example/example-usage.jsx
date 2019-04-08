@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react'
-import { ThePaint, ThePaintStyle } from 'the-paint'
+import { ThePaint, ThePaintStyle } from '@the-/ui-paint'
 
 class ExampleComponent extends React.Component {
   drawers = {}

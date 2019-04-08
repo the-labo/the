@@ -6,6 +6,8 @@ import React from 'react'
 import { TheIcon } from '@the-/ui-icon'
 import TheInputText from './TheInputText'
 
+const TextOptions = []
+
 class TheInputPassword extends React.PureComponent {
   constructor(props) {
     super(props)
@@ -26,7 +28,7 @@ class TheInputPassword extends React.PureComponent {
       <TheInputText
         {...props}
         className={c('the-input-password')}
-        options={[]}
+        options={TextOptions}
         type={showing ? 'text' : 'password'}
       >
         {value && (

@@ -3,7 +3,6 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { ThemeValues } from '@the-/const-ui'
 import { TheStyle } from '@the-/ui-style'
 import { asStyleData } from '@the-/util-ui'
 
@@ -27,11 +26,7 @@ TheFlickStyle.defaultProps = {
 }
 
 TheFlickStyle.data = (options) => {
-  const {
-    contentWidth = ThemeValues.contentWidth,
-    dominantColor = ThemeValues.dominantColor,
-    minMediaSize = 92,
-  } = options
+  const { minMediaSize = 92 } = options
   return Object.assign(
     {},
     asStyleData({

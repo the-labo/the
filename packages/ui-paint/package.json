@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-paint",
   "description": "Hand write painting",
-  "version": "1.1.20",
+  "version": "1.1.21",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,11 +11,12 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/const-ui": "^15.2.0",
+    "@the-/ui-style": "^15.2.0",
+    "@the-/util-ui": "^15.2.0",
+    "@the-/window": "^15.2.0",
     "classnames": "^2.2.6",
     "prop-types": "^15.6.2",
-    "the-component-util": "^3.0.20",
-    "the-style": "^2.2.3",
-    "the-window": "^7.0.1",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
@@ -48,6 +49,9 @@
     "react": ">=16",
     "react-dom": ">=16"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": "the-labo/the-paint",
   "scripts": {
     "build": "the-script-build",
@@ -55,8 +59,5 @@
     "prepare": "npm run build && npm run doc",
     "test": "the-script-test",
     "watch": "the-script-build -w"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

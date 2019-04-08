@@ -53,8 +53,7 @@ function sortPropertiesOnObjectNode(obj, { swap }) {
   }
 
   const sortableProperties = properties.reduce(
-    (sliced, cur, i, arr) => {
-      const prev = arr[i - 1]
+    (sliced, cur) => {
       const isProperty = [
         'ObjectProperty',
         'ObjectMethod',
@@ -69,7 +68,7 @@ function sortPropertiesOnObjectNode(obj, { swap }) {
     },
     [{ properties: [], wrapper: obj }],
   )
-  for (const { properties, wrapper } of sortableProperties) {
+  for (const { properties } of sortableProperties) {
     if (properties.length === 0) {
       continue
     }

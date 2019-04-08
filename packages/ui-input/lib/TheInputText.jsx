@@ -346,7 +346,7 @@ class TheInputText extends React.PureComponent {
   updateCandidates(index) {
     let { matcher, options, value } = this.props
     options = normalizeOptions(options)
-    value = value && String(value || '').trim()
+    value = value && String(value).trim()
     const { selectedCandidate } = this.state
     const candidates = Object.keys(options)
       .map((name) => options[name])
@@ -354,8 +354,7 @@ class TheInputText extends React.PureComponent {
       .filter((candidate) => !!candidate)
       .filter((candidate) => candidate !== value)
       .filter(
-        (candidate) =>
-          !value || matcher(String(candidate), String(value || '')),
+        (candidate) => !value || matcher(String(candidate), String(value)),
       )
     if (typeof index === 'undefined') {
       index = candidates.indexOf(selectedCandidate)

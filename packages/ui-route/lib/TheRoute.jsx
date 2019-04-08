@@ -87,7 +87,7 @@ class TheRoute extends React.Component {
       throw new Error(`[TheRoute] popPath is required`)
     }
     const { history } = this
-    if (popPath && typeof popPath !== 'string') {
+    if (typeof popPath !== 'string') {
       throw new Error(`[TheRoute] Invalid pop path: ${popPath}`)
     }
     const { gone, ready } = this.state

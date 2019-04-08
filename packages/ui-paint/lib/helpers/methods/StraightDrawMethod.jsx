@@ -1,6 +1,6 @@
 'use strict'
 
-function StraightDrawMethod (ctx, points) {
+function StraightDrawMethod(ctx, points) {
   const enough = points.length >= 2
   if (!enough) {
     const [{ x, y }] = points

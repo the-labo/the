@@ -21,7 +21,7 @@ async function RenderingCountMetrics(Components, options = {}) {
     if (!isClass) {
       continue
     }
-    const isLazy = !!Component.$$typeof === REACT_LAZY_TYPE
+    const isLazy = Component.$$typeof === REACT_LAZY_TYPE
     if (isLazy) {
       // TODO support lazy
       continue

@@ -34,12 +34,7 @@ class Drawer {
   }
 
   get drawConfig() {
-    const {
-      lineCap,
-      lineColor,
-      lineJoin,
-      lineWidth,
-    } = this
+    const { lineCap, lineColor, lineJoin, lineWidth } = this
     return {
       lineCap,
       lineColor,
@@ -95,7 +90,8 @@ class Drawer {
     const { canvasAccess } = this
     const { height, width } = canvasAccess.canvas.getBoundingClientRect()
     const snapshot = this.snapshot()
-    const changed = canvasAccess.width !== width || canvasAccess.height !== height
+    const changed =
+      canvasAccess.width !== width || canvasAccess.height !== height
     if (changed) {
       canvasAccess.setSize({ height, width })
       void this.fromSnapshot(snapshot)

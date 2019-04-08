@@ -11,6 +11,10 @@ async function tryExample() {
   const stop = RenderingCountMetrics(Components, {
     interval: 30 * 1000,
   })
+
+  /* ... */
+
+  stop()
 }
 
 tryExample().catch((err) => console.error(err))

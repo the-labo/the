@@ -54,7 +54,7 @@ class TheFrame extends React.Component {
   render() {
     const { props, state } = this
     const { alt, children, className, embed, spinning, src } = props
-    const { embedContent, error, loaded } = state
+    const { embedContent, error } = state
     return (
       <div
         {...htmlAttributesFor(props, {

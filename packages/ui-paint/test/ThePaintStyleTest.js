@@ -7,7 +7,7 @@
 import ThePaintStyle from '../lib/ThePaintStyle'
 import React from 'react'
 import { ok, equal } from 'assert'
-import { render } from 'the-script-test'
+import { render } from '@the-/script-test'
 
 describe('the-paint-style', () => {
   before(() => {

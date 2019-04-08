@@ -35,7 +35,7 @@
     "description": "Style for TheIcon",
     "params": [],
     "meta": {
-      "lineno": 11,
+      "lineno": 10,
       "filename": "TheIconStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-icon/lib"
     },
@@ -50,7 +50,7 @@
     "description": "Style options",
     "memberof": "TheIconStyle.propTypes",
     "meta": {
-      "lineno": 22,
+      "lineno": 21,
       "filename": "TheIconStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-icon/lib"
     },

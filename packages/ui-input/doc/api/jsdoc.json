@@ -890,7 +890,7 @@
     "description": "Input error",
     "memberof": "TheInputText.propTypes",
     "meta": {
-      "lineno": 372,
+      "lineno": 371,
       "filename": "TheInputText.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
     },
@@ -905,7 +905,7 @@
     "description": "Options parser",
     "memberof": "TheInputText.propTypes",
     "meta": {
-      "lineno": 374,
+      "lineno": 373,
       "filename": "TheInputText.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
     },
@@ -920,7 +920,7 @@
     "description": "Name of input",
     "memberof": "TheInputText.propTypes",
     "meta": {
-      "lineno": 376,
+      "lineno": 375,
       "filename": "TheInputText.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
     },
@@ -935,7 +935,7 @@
     "description": "Handle for down",
     "memberof": "TheInputText.propTypes",
     "meta": {
-      "lineno": 378,
+      "lineno": 377,
       "filename": "TheInputText.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
     },
@@ -950,7 +950,7 @@
     "description": "Handle for enter",
     "memberof": "TheInputText.propTypes",
     "meta": {
-      "lineno": 380,
+      "lineno": 379,
       "filename": "TheInputText.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
     },
@@ -965,7 +965,7 @@
     "description": "Handle for left",
     "memberof": "TheInputText.propTypes",
     "meta": {
-      "lineno": 382,
+      "lineno": 381,
       "filename": "TheInputText.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
     },
@@ -980,7 +980,7 @@
     "description": "Handle for right",
     "memberof": "TheInputText.propTypes",
     "meta": {
-      "lineno": 384,
+      "lineno": 383,
       "filename": "TheInputText.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
     },
@@ -995,7 +995,7 @@
     "description": "Handle for up",
     "memberof": "TheInputText.propTypes",
     "meta": {
-      "lineno": 386,
+      "lineno": 385,
       "filename": "TheInputText.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
     },
@@ -1010,7 +1010,7 @@
     "description": "Handle for update",
     "memberof": "TheInputText.propTypes",
     "meta": {
-      "lineno": 388,
+      "lineno": 387,
       "filename": "TheInputText.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
     },
@@ -1025,7 +1025,7 @@
     "description": "Options",
     "memberof": "TheInputText.propTypes",
     "meta": {
-      "lineno": 390,
+      "lineno": 389,
       "filename": "TheInputText.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
     },
@@ -1040,7 +1040,7 @@
     "description": "Value parser",
     "memberof": "TheInputText.propTypes",
     "meta": {
-      "lineno": 395,
+      "lineno": 394,
       "filename": "TheInputText.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
     },
@@ -1055,7 +1055,7 @@
     "description": "Regexp for input",
     "memberof": "TheInputText.propTypes",
     "meta": {
-      "lineno": 397,
+      "lineno": 396,
       "filename": "TheInputText.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
     },
@@ -1070,7 +1070,7 @@
     "description": "Warning text when pattern failed",
     "memberof": "TheInputText.propTypes",
     "meta": {
-      "lineno": 399,
+      "lineno": 398,
       "filename": "TheInputText.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
     },
@@ -1085,7 +1085,7 @@
     "description": "prefix",
     "memberof": "TheInputText.propTypes",
     "meta": {
-      "lineno": 401,
+      "lineno": 400,
       "filename": "TheInputText.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
     },
@@ -1100,7 +1100,7 @@
     "description": "suffix",
     "memberof": "TheInputText.propTypes",
     "meta": {
-      "lineno": 403,
+      "lineno": 402,
       "filename": "TheInputText.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
     },
@@ -1115,7 +1115,7 @@
     "description": "Tab index",
     "memberof": "TheInputText.propTypes",
     "meta": {
-      "lineno": 405,
+      "lineno": 404,
       "filename": "TheInputText.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
     },
@@ -1130,7 +1130,7 @@
     "description": "Text type",
     "memberof": "TheInputText.propTypes",
     "meta": {
-      "lineno": 407,
+      "lineno": 406,
       "filename": "TheInputText.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
     },
@@ -1145,7 +1145,7 @@
     "description": "Value of input",
     "memberof": "TheInputText.propTypes",
     "meta": {
-      "lineno": 409,
+      "lineno": 408,
       "filename": "TheInputText.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
     },

@@ -9,20 +9,20 @@ import TheInputText from './TheInputText'
 class TheInputSearch extends React.PureComponent {
   constructor(props) {
     super(props)
-    let { open = false } = props
+    const { open = false } = props
     this.state = {
       open,
     }
+    this.inputRef = React.createRef()
     this._focusTimer = -1
+    this.handleFocus = this.handleFocus.bind(this)
+    this.toggleOpen = this.toggleOpen.bind(this)
   }
-
   componentWillUnmount() {
     clearTimeout(this._focusTimer)
   }
-
   handleFocus(e) {
-    const { props } = this
-    let { onFocus } = props
+    const { onFocus } = this.props
     onFocus && onFocus(e)
     this.toggleOpen(true)
   }
@@ -37,16 +37,14 @@ class TheInputSearch extends React.PureComponent {
         className={c('the-input-search', {
           'the-input-search-open': open || !!value,
         })}
-        inputRef={(input) => {
-          this.input = input
-        }}
-        onFocus={() => this.handleFocus()}
+        inputRef={this.inputRef}
+        onFocus={this.handleFocus}
         type='search'
       >
         {!value && (
           <a
             className={c('the-input-search-toggle')}
-            onClick={() => this.toggleOpen()}
+            onClick={this.toggleOpen}
             tabIndex={-1}
           >
             <TheIcon className={TheInputSearch.SEARCH_ICON} />
@@ -66,8 +64,9 @@ class TheInputSearch extends React.PureComponent {
     this.setState({ open })
     clearTimeout(this._focusTimer)
     this._focusTimer = setTimeout(() => {
-      if (open && this.input) {
-        this.input.focus()
+      const input = this.inputRef.current
+      if (open && input) {
+        input.focus()
       }
     })
   }

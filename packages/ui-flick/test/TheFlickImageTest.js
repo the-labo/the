@@ -4,9 +4,9 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import TheFlickImage from '../lib/TheFlickImage'
+const { ok } = require('assert')
+const React = require('react')
+const TheFlickImage = require('../shim/TheFlickImage')
 
 describe('the-flick-image', () => {
   before(() => {})
@@ -14,7 +14,7 @@ describe('the-flick-image', () => {
   after(() => {})
 
   it('Render a component', () => {
-    ok(TheFlickImage)
+    ok(React.createElement(TheFlickImage, {}))
   })
 })
 

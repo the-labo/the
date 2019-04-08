@@ -52,7 +52,7 @@ class TheInputDate extends React.PureComponent {
   }
 
   handleBlur(e) {
-    const { name, onBlur, onUpdate, value } = this.props
+    const { name, onBlur, onUpdate } = this.props
     onBlur && onBlur(e)
     onUpdate && onUpdate({ [name]: e.target.value })
   }

@@ -16,7 +16,6 @@ function decorateRule(config) {
     console.warn(`[decorateRule] Unknown options`, Object.keys(rest))
   }
   return async function decorateRuleCheck({ content, filename, report }) {
-    const extname = path.extname(filename)
     const parsed = parse(String(content), {
       sourceType: 'unambiguous',
     })

@@ -50,7 +50,7 @@
     "description": "Render as link",
     "memberof": "TheVideo.propTypes",
     "meta": {
-      "lineno": 168,
+      "lineno": 167,
       "filename": "TheVideo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
@@ -65,7 +65,7 @@
     "description": "Image height",
     "memberof": "TheVideo.propTypes",
     "meta": {
-      "lineno": 170,
+      "lineno": 169,
       "filename": "TheVideo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
@@ -80,7 +80,7 @@
     "description": "Message when not found",
     "memberof": "TheVideo.propTypes",
     "meta": {
-      "lineno": 172,
+      "lineno": 171,
       "filename": "TheVideo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
@@ -95,7 +95,7 @@
     "description": "Handler for failed event",
     "memberof": "TheVideo.propTypes",
     "meta": {
-      "lineno": 174,
+      "lineno": 173,
       "filename": "TheVideo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
@@ -110,7 +110,7 @@
     "description": "Handler for load event",
     "memberof": "TheVideo.propTypes",
     "meta": {
-      "lineno": 176,
+      "lineno": 175,
       "filename": "TheVideo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
@@ -125,7 +125,7 @@
     "description": "Interval for resize",
     "memberof": "TheVideo.propTypes",
     "meta": {
-      "lineno": 179,
+      "lineno": 178,
       "filename": "TheVideo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
@@ -140,7 +140,7 @@
     "description": "How to scale video",
     "memberof": "TheVideo.propTypes",
     "meta": {
-      "lineno": 181,
+      "lineno": 180,
       "filename": "TheVideo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
@@ -155,7 +155,7 @@
     "description": "Handle video ref",
     "memberof": "TheVideo.propTypes",
     "meta": {
-      "lineno": 183,
+      "lineno": 182,
       "filename": "TheVideo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },

@@ -35,7 +35,7 @@
     "description": "Style for TheFrame",
     "params": [],
     "meta": {
-      "lineno": 11,
+      "lineno": 10,
       "filename": "TheFrameStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
     },
@@ -125,7 +125,7 @@
     "description": "Style options",
     "memberof": "TheFrameStyle.propTypes",
     "meta": {
-      "lineno": 22,
+      "lineno": 21,
       "filename": "TheFrameStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
     },

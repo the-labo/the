@@ -8,6 +8,7 @@ import TheInputText from './TheInputText'
 
 const zeroIfNaN = (v) => (isNaN(Number(v)) ? 0 : v)
 const sureNumber = (v) => zeroIfNaN(Number(v))
+const TextOptions = []
 
 class TheInputNumber extends React.PureComponent {
   constructor(props) {
@@ -55,7 +56,7 @@ class TheInputNumber extends React.PureComponent {
       <TheInputText
         {...props}
         className={c('the-input-number', props.className)}
-        options={[]}
+        options={TextOptions}
         prefix={
           <a
             className={c('the-input-number-changer', {

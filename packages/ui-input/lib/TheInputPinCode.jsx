@@ -100,7 +100,7 @@ class TheInputPinCode extends React.PureComponent {
     const { props } = this
     const inputProps = clone(props, { without: ['digit'] })
     const { focused, index } = this.state
-    const { digit, id = this.id, name, value } = props
+    const { digit, id = this.id } = props
     return (
       <TheInputText
         {...inputProps}

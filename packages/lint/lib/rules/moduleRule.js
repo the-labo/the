@@ -67,7 +67,6 @@ function moduleRule(config) {
       const keys = Object.keys(module)
       const values = keys.map((key) => module[key])
       for (let i = 0; i < keys.length; i++) {
-        const key = keys[i]
         const ok = values.indexOf(values[i]) === i
         !ok &&
           report('Unique violation', {

@@ -31,7 +31,6 @@ TheHeaderStyle.data = (options) => {
     contentWidth = ThemeValues.contentWidth,
     dominantColor = ThemeValues.dominantColor,
     headerHeight = ThemeValues.headerHeight,
-    overlayBackgroundColor = ThemeValues.overlayBackgroundColor,
     overlayBorderColor = ThemeValues.overlayBorderColor,
     overlayHeaderHeight = 24,
     tabInactiveColor = ThemeValues.tabInactiveColor,

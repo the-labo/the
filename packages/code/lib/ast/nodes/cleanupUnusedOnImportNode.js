@@ -25,7 +25,6 @@ function cleanupUnusedOnImportNode(
     if (shouldKeep) {
       continue
     }
-    const prevSpecifier = specifiers[i - 1]
     const nextSpecifier = specifiers[i + 1]
     const usages = [
       ...ConsumingIdentifiers.filter(

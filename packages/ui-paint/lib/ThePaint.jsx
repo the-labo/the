@@ -3,8 +3,12 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { changedProps, eventHandlersFor, htmlAttributesFor } from 'the-component-util'
-import { get } from 'the-window'
+import {
+  changedProps,
+  eventHandlersFor,
+  htmlAttributesFor,
+} from '@the-/util-ui'
+import { get } from '@the-/window'
 import DrawingMethods from './constants/DrawingMethods'
 import Drawer from './helpers/Drawer'
 import ThePaintStyle from './ThePaintStyle'
@@ -112,43 +116,38 @@ class ThePaint extends React.Component {
   }
 
   render() {
-    const {
-      handleDraw,
-      handleDrawEnd,
-      handleDrawStart,
-      props,
-    } = this
-    const {
-      children,
-      className,
-      height,
-      style,
-      width,
-    } = props
+    const { handleDraw, handleDrawEnd, handleDrawStart, props } = this
+    const { children, className, height, style, width } = props
     return (
-      <div {...htmlAttributesFor(props, { except: ['className', 'width', 'height', 'style'] })}
-           {...eventHandlersFor(props, { except: [] })}
-           className={c('the-paint', className)}
-           style={{ ...(style || {}), height, width }}
+      <div
+        {...htmlAttributesFor(props, {
+          except: ['className', 'width', 'height', 'style'],
+        })}
+        {...eventHandlersFor(props, { except: [] })}
+        className={c('the-paint', className)}
+        style={{ ...(style || {}), height, width }}
       >
         {children}
-        <div className='the-paint-canvas-container'
-             onMouseDown={handleDrawStart}
-             onMouseLeave={handleDrawEnd}
-             onMouseMove={handleDraw}
-             onMouseUp={handleDrawEnd}
-             onTouchCancel={handleDrawEnd}
-             onTouchEnd={handleDrawEnd}
-             onTouchMove={handleDraw}
-             onTouchStart={handleDrawStart}
+        <div
+          className='the-paint-canvas-container'
+          onMouseDown={handleDrawStart}
+          onMouseLeave={handleDrawEnd}
+          onMouseMove={handleDraw}
+          onMouseUp={handleDrawEnd}
+          onTouchCancel={handleDrawEnd}
+          onTouchEnd={handleDrawEnd}
+          onTouchMove={handleDraw}
+          onTouchStart={handleDrawStart}
         >
-          <canvas className='the-paint-canvas'
-                  ref={this.canvasRef}
-                  style={{ height, width }}
+          <canvas
+            className='the-paint-canvas'
+            ref={this.canvasRef}
+            style={{ height, width }}
           />
-          <canvas className='the-paint-tmp-canvas'
-                  ref={this.tmpCanvasRef}
-                  style={{ height, width }}
+          <canvas
+            className='the-paint-tmp-canvas'
+            ref={this.tmpCanvasRef}
+            style={{ height, width }}
           />
         </div>
       </div>

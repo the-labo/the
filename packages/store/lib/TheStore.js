@@ -40,7 +40,7 @@ class TheStore {
     } = options
 
     const restored = persistize.regain(persists) || {}
-    const restoredKeys = Object.keys(restored || {})
+    const restoredKeys = Object.keys(restored)
 
     preloadedState = { ...preloadedState, ...restored }
 

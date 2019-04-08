@@ -1,6 +1,6 @@
 'use strict'
 
-function FreeDrawMethod (ctx, points) {
+function FreeDrawMethod(ctx, points) {
   const enough = points.length >= 3
   if (!enough) {
     const [{ x, y }] = points

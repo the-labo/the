@@ -13,7 +13,7 @@ async function tryExample() {
     const at = new Date()
     await jitter.handle(async () => {
       const took = new Date() - at
-      console.log(`Jitter delay=${at}ms`, i)
+      console.log(`Jitter delay=${at}ms`, i, { took })
       // called with some delay
       /* ... */
     })

@@ -4,19 +4,19 @@
  */
 'use strict'
 
-import { ok } from 'assert'
-import React from 'react'
-import { render } from '@the-/script-test'
-import TheFlick from '../lib/TheFlick'
+const TheFlick = require('../shim/TheFlick').default
+const React = require('react')
+const { ok, equal, deepEqual } = require('assert').strict
 
 describe('the-flick', () => {
-  before(() => {})
+  before(() => {
+  })
 
-  after(() => {})
+  after(() => {
+  })
 
-  it('Render a component', () => {
-    let element = render(<TheFlick />)
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheFlick))
   })
 })
 

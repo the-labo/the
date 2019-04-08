@@ -43,7 +43,6 @@ function propRule(config) {
       return objectNames
     }
 
-    const extname = path.extname(filename)
     const parsed = parse(String(content), {
       sourceType: 'unambiguous',
     })

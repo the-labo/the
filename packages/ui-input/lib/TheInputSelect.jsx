@@ -384,24 +384,31 @@ TheInputSelect.defaultProps = {
 
 TheInputSelect.displayName = 'TheInputSelect'
 
-TheInputSelect.WithOptionsArray = function WithOptionsArray({
-  optionsArray,
-  ...props
-}) {
-  const valueArray = optionsArray.map(([v]) => v)
-  const sorter = (a, b) => valueArray.indexOf(a) - valueArray.indexOf(b)
-  return (
-    <TheInputSelect
-      {...props}
-      options={Object.assign(
-        {},
-        ...optionsArray.map(([v, node]) => ({
-          [v]: node,
-        })),
-      )}
-      sorter={sorter}
-    />
-  )
+TheInputSelect.WithOptionsArray = class WithOptionsArray extends React.Component {
+  constructor(props) {
+    super(props)
+    this.compareOptions = this.compareOptions.bind(this)
+  }
+  compareOptions(a, b) {
+    const { optionsArray } = this.props
+    const valueArray = optionsArray.map(([v]) => v)
+    return valueArray.indexOf(a) - valueArray.indexOf(b)
+  }
+  render() {
+    const { optionsArray, ...props } = this.props
+    return (
+      <TheInputSelect
+        {...props}
+        options={Object.assign(
+          {},
+          ...optionsArray.map(([v, node]) => ({
+            [v]: node,
+          })),
+        )}
+        sorter={this.compareOptions}
+      />
+    )
+  }
 }
 
 class TheInputSelectOptionList extends React.PureComponent {

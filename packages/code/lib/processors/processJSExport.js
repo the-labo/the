@@ -17,11 +17,12 @@ const applyConverter = require('../helpers/applyConverter')
 /** @lends processJSExport */
 function processJSExport(content, options = {}) {
   return applyConverter(content, (content) => {
-    const parsed = parse(content)
-    const ExportDeclarations = finder.findByTypes(parsed.program, [
-      NodeTypes.ExportDefaultDeclaration,
-      NodeTypes.ExportNamedDeclaration,
-    ])
+    // TODO
+    // const parsed = parse(content)
+    // const ExportDeclarations = finder.findByTypes(parsed.program, [
+    //   NodeTypes.ExportDefaultDeclaration,
+    //   NodeTypes.ExportNamedDeclaration,
+    // ])
     // console.log(ExportDeclarations)
     return content
   })

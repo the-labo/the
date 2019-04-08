@@ -33,8 +33,8 @@ class TheVideo extends React.Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
-    const { src } = this.props
+  componentDidUpdate(prevProps) {
+    const { src } = prevProps
     const { src: nextSrc } = this.props
     const isNewSrc = nextSrc && nextSrc !== src
     if (isNewSrc) {
@@ -46,7 +46,6 @@ class TheVideo extends React.Component {
   }
 
   componentWillUnmount() {
-    this.setState({ loading: false })
     clearTimeout(this.resizeTimer)
   }
 

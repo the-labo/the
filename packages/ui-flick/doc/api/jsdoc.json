@@ -35,7 +35,7 @@
     "description": "Style for TheFlick",
     "params": [],
     "meta": {
-      "lineno": 11,
+      "lineno": 10,
       "filename": "TheFlickStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
     },
@@ -140,7 +140,7 @@
     "description": "Style options",
     "memberof": "TheFlickStyle.propTypes",
     "meta": {
-      "lineno": 22,
+      "lineno": 21,
       "filename": "TheFlickStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
     },

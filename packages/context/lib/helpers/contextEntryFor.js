@@ -8,8 +8,6 @@
 const { shallowEqual } = require('asobj')
 const PropTypes = require('prop-types')
 const React = require('react')
-const theAssert = require('@the-/assert')
-const assert = theAssert('TheContext.ContextEntry')
 
 /** @lends contextEntryFor */
 function contextEntryFor(context, { store }) {
@@ -42,7 +40,6 @@ function contextEntryFor(context, { store }) {
     }
 
     componentDidMount() {
-      const { init } = this.props
       this.updatePipe()
       this.unsubscribeStore = store.subscribe(() => this.updatePipe())
     }

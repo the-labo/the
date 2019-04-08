@@ -1,23 +1,24 @@
 'use strict'
 
 const React = require('react')
+const ReactDOM = require('react-dom')
 const { TheContext } = require('@the-/context')
 
-async function tryExample () {
+async function tryExample() {
   const l = {
     en: {
       TRY_ME_BUTTON: 'Try Me!',
       HELLO_MESSAGE: 'Hello!',
-    }
+    },
   }
   const context = new TheContext({
     l,
     toast: {
       message: null,
-      showMessage (message) {
+      showMessage(message) {
         const toast = this.get('toast')
         this.set({ toast: { ...toast, message } })
-      }
+      },
     },
   })
 
@@ -29,13 +30,10 @@ async function tryExample () {
       },
     })
 
-    render () {
+    render() {
       return (
-        <context.Entry init={this.#init}
-        >
-          {({ onClick, l }) => (
-            <a onClick={onClick}>{l.en.TRY_ME_BUTTON}</a>
-          )}
+        <context.Entry init={this.#init}>
+          {({ onClick, l }) => <a onClick={onClick}>{l.en.TRY_ME_BUTTON}</a>}
         </context.Entry>
       )
     }
@@ -46,30 +44,27 @@ async function tryExample () {
       message,
     })
 
-    render () {
+    render() {
       return (
-        <context.Entry pipe={this.#pipe}
-        >
-          {({ message }) => (
-            <span className='toast'>{message}</span>
-          )}
+        <context.Entry pipe={this.#pipe}>
+          {({ message }) => <span className='toast'>{message}</span>}
         </context.Entry>
       )
     }
   }
 
   class App extends React.Component {
-    render () {
+    render() {
       return (
         <context.Root>
-          <Toast/>
-          <Button/>
+          <Toast />
+          <Button />
         </context.Root>
       )
     }
   }
 
-  /* ... */
+  ReactDOM.render(<App />, '#app-container')
 }
 
 tryExample().catch((err) => console.error(err))

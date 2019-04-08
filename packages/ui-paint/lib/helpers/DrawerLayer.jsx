@@ -10,16 +10,14 @@ import DrawingMethods from '../constants/DrawingMethods'
 
 /** @lends DrawerLayer */
 class DrawerLayer {
-  constructor (canvas, options = {}) {
-    const {
-      method,
-    } = options
+  constructor(canvas, options = {}) {
+    const { method } = options
     this.canvasAccess = new CanvasAccess(canvas)
     this.method = method
     this.points = []
   }
 
-  applyPoints (points) {
+  applyPoints(points) {
     const { canvasAccess, method } = this
     if (points.length === 0) {
       return
@@ -37,20 +35,18 @@ class DrawerLayer {
     }
   }
 
-  draw ({ x, y }) {
+  draw({ x, y }) {
     const { canvasAccess, points } = this
     points.push({ x, y })
     canvasAccess.clear()
     this.applyPoints(this.points)
   }
 
-  normalizePoints (points, options = {}) {
+  normalizePoints(points, options = {}) {
     const { canvasAccess } = this
     const { size } = options
-    const {
-      height = canvasAccess.height,
-      width = canvasAccess.width,
-    } = size || {}
+    const { height = canvasAccess.height, width = canvasAccess.width } =
+      size || {}
     const xOffset = (canvasAccess.width - width) / 2
     const yOffset = (canvasAccess.height - height) / 2
     return points.map((point) => {
@@ -63,7 +59,7 @@ class DrawerLayer {
     })
   }
 
-  restore (serialized) {
+  restore(serialized) {
     const { config, image, method, points, size } = serialized
     this.method = method
     this.config = config
@@ -79,7 +75,7 @@ class DrawerLayer {
     }
   }
 
-  serialize () {
+  serialize() {
     const { canvasAccess, config, method, points } = this
     const { height, width } = canvasAccess
     return {
@@ -91,7 +87,7 @@ class DrawerLayer {
     }
   }
 
-  setUp ({ config, height, width, x, y }) {
+  setUp({ config, height, width, x, y }) {
     this.canvasAccess.setSize({ height, width })
     const { ctx } = this.canvasAccess
     ctx.save()
@@ -101,7 +97,7 @@ class DrawerLayer {
     this.canvasAccess.configure(config)
   }
 
-  tearDown () {
+  tearDown() {
     const { ctx } = this.canvasAccess
     ctx.restore()
     this.canvasAccess.clear()

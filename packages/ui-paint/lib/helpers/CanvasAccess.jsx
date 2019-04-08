@@ -1,27 +1,27 @@
 'use strict'
 
-import { get } from 'the-window'
+import { get } from '@the-/window'
 
 class CanvasAccess {
-  constructor (canvas) {
+  constructor(canvas) {
     this.canvas = canvas
     this.scaleFactor = get('window.devicePixelRatio') || 2
   }
 
-  get ctx () {
+  get ctx() {
     const { canvas } = this
     return canvas.getContext('2d')
   }
 
-  get height () {
+  get height() {
     return this.canvas.height / this.scaleFactor
   }
 
-  get width () {
+  get width() {
     return this.canvas.width / this.scaleFactor
   }
 
-  clear () {
+  clear() {
     const { ctx, height, width } = this
     if (!ctx) {
       return
@@ -29,13 +29,8 @@ class CanvasAccess {
     ctx.clearRect(0, 0, width, height)
   }
 
-  configure (config) {
-    const {
-      lineCap,
-      lineColor,
-      lineJoin,
-      lineWidth,
-    } = config
+  configure(config) {
+    const { lineCap, lineColor, lineJoin, lineWidth } = config
     const { ctx } = this
     ctx.lineCap = lineCap
     ctx.lineJoin = lineJoin
@@ -43,7 +38,7 @@ class CanvasAccess {
     ctx.strokeStyle = lineColor
   }
 
-  copyFrom (canvasAccess) {
+  copyFrom(canvasAccess) {
     const { canvas, height, width } = canvasAccess
     const image = new Image()
     image.src = canvasAccess.toSVG()
@@ -52,12 +47,13 @@ class CanvasAccess {
     }
   }
 
-  drawImage (image, options = {}) {
+  drawImage(image, options = {}) {
     const {
       height = image.height || this.height,
       width = image.width || this.width,
     } = options
-    this.ctx.drawImage(image,
+    this.ctx.drawImage(
+      image,
       (this.width - width) / 2,
       (this.height - height) / 2,
       width,
@@ -65,14 +61,14 @@ class CanvasAccess {
     )
   }
 
-  setSize ({ height, width }) {
+  setSize({ height, width }) {
     const { canvas, ctx, scaleFactor } = this
     canvas.width = width * scaleFactor
     canvas.height = height * scaleFactor
     ctx.scale(scaleFactor, scaleFactor)
   }
 
-  toSVG () {
+  toSVG() {
     return this.canvas.toDataURL('image/svg+xml')
   }
 }
