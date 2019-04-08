@@ -82,7 +82,7 @@ class RemoteStream extends TheStream {
       await this.socket.emit(`${IOEvents.STREAM_CHUNK}/${this.sid}`, chunk)
     }
     await asleep(0)
-    await this.fireRemoteEvent(IOEvents.STREAM_FIN, {})
+    this.fireRemoteEvent(IOEvents.STREAM_FIN, {})
   }
 
   async open(params) {
