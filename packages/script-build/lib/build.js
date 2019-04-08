@@ -102,23 +102,28 @@ async function build(dirname = process.cwd(), options = {}) {
       },
       { cwd: libDir },
     )
-    while (watch) {
-      if (needsBuildBud) {
-        needsBuildBud = false
-        const nameToDecache = Object.keys(require.cache).filter((filename) =>
-          /bud$/.test(filename),
-        )
-        for (const name of nameToDecache) {
-          delete require.cache[name]
+    let watching = true
+    while (watching) {
+      try {
+        if (needsBuildBud) {
+          needsBuildBud = false
+          const nameToDecache = Object.keys(require.cache).filter((filename) =>
+            /bud$/.test(filename),
+          )
+          for (const name of nameToDecache) {
+            delete require.cache[name]
+          }
+          await buildBud()
         }
-        await buildBud()
-      }
-      if (needsBuildJs) {
-        needsBuildJs = false
-        await buildJs()
-        if (demoExists) {
-          await demo()
+        if (needsBuildJs) {
+          needsBuildJs = false
+          await buildJs()
+          if (demoExists) {
+            await demo()
+          }
         }
+      } catch (e) {
+        watching = false
       }
       await asleep(watchTriggerInterval)
     }

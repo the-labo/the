@@ -8,6 +8,7 @@
 
 const { mkdirpAsync, writeFileAsync } = require('asfs')
 const JSON5 = require('json5')
+const { EOL } = require('os')
 const path = require('path')
 const sortProperties = require('./helpers/sortProperties')
 const isJSON5File = require('./isJSON5File')
@@ -18,8 +19,8 @@ async function writeAsJsonSync(filename, data) {
   data = sortProperties(data)
   const isJSON5 = isJSON5File(filename)
   const content = isJSON5
-    ? JSON5.stringify(data, null, 2)
-    : JSON.stringify(data, null, 2)
+    ? JSON5.stringify(data, null, 2) + EOL
+    : JSON.stringify(data, null, 2) + EOL
   await writeFileAsync(filename, content)
 }
 

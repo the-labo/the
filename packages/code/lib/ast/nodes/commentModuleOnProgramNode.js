@@ -12,6 +12,7 @@ const {
 const { findupDir } = require('@the-/util-path')
 const findCJSExportsAssignmentsExpressionOnProgramNode = require('./findCJSExportsAssignmentsExpressionOnProgramNode')
 const findJSDocAnnotationsInCommendNode = require('./findJSDocAnnotationsInCommendNode')
+const debug = require('debug')('the:code:commentModuleOnProgramNode')
 
 async function commentModuleOnProgramNode(
   ProgramNode,
@@ -45,10 +46,6 @@ async function commentModuleOnProgramNode(
       (annotaion) => annotaion.type === 'module',
     ),
   )
-
-  if (!filename) {
-    return
-  }
   const dirname = path.dirname(filename)
   if (!dirname) {
     return
@@ -73,6 +70,7 @@ async function commentModuleOnProgramNode(
     return
   }
   const moduleId = path.join(pkg.name, modulePath)
+  debug('moduleId', moduleId)
   if (moduleAnnotationComment) {
     // const { end, start } = moduleAnnotationComment
     // const replacing = `/** @module ${moduleId} */`
