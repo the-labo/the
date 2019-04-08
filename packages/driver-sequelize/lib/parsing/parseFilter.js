@@ -53,10 +53,6 @@ function parseFilter(filter, options = {}) {
           const isOperator = /^\$/.test(subName)
           if (isOperator) {
             const operator = Op[subName.replace(/^\$/, '')] || subName
-            if (!isKnown) {
-              logger.warn(`Unknown filter "${propertyName}" for ${ModelName}`)
-              continue
-            }
             parsed[parseAttributeName(propertyName)] = {
               ...(parsed[parseAttributeName(propertyName)] || {}),
               [operator]: subValue,
