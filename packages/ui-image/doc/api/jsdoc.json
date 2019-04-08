@@ -50,7 +50,7 @@
     "description": "Render as link",
     "memberof": "TheImage.propTypes",
     "meta": {
-      "lineno": 151,
+      "lineno": 150,
       "filename": "TheImage.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
     },
@@ -65,7 +65,7 @@
     "description": "Image draggable",
     "memberof": "TheImage.propTypes",
     "meta": {
-      "lineno": 153,
+      "lineno": 152,
       "filename": "TheImage.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
     },
@@ -80,7 +80,7 @@
     "description": "Image height",
     "memberof": "TheImage.propTypes",
     "meta": {
-      "lineno": 155,
+      "lineno": 154,
       "filename": "TheImage.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
     },
@@ -95,7 +95,7 @@
     "description": "Message when not found",
     "memberof": "TheImage.propTypes",
     "meta": {
-      "lineno": 157,
+      "lineno": 156,
       "filename": "TheImage.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
     },
@@ -110,7 +110,7 @@
     "description": "Handler for failed event",
     "memberof": "TheImage.propTypes",
     "meta": {
-      "lineno": 159,
+      "lineno": 158,
       "filename": "TheImage.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
     },
@@ -125,7 +125,7 @@
     "description": "Handler for load event",
     "memberof": "TheImage.propTypes",
     "meta": {
-      "lineno": 161,
+      "lineno": 160,
       "filename": "TheImage.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
     },
@@ -140,7 +140,7 @@
     "description": "Interval for resize",
     "memberof": "TheImage.propTypes",
     "meta": {
-      "lineno": 163,
+      "lineno": 162,
       "filename": "TheImage.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
     },
@@ -155,7 +155,7 @@
     "description": "How to scale image",
     "memberof": "TheImage.propTypes",
     "meta": {
-      "lineno": 165,
+      "lineno": 164,
       "filename": "TheImage.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
     },
