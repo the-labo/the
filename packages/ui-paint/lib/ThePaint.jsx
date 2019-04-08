@@ -73,7 +73,7 @@ class ThePaint extends React.Component {
     onDraw && onDraw({ drawer, pos })
   }
 
-  handleDrawEnd(e) {
+  handleDrawEnd() {
     const { drawer } = this
     if (!drawer.active) {
       return
