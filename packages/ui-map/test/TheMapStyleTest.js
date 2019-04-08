@@ -4,10 +4,9 @@
  */
 'use strict'
 
-import TheMapStyle from '../lib/TheMapStyle'
-import React from 'react'
-import { ok, equal } from 'assert'
-import { render } from '@the-/script-test'
+const TheMapStyle = require('../shim/TheMapStyle').default
+const React = require('react')
+const { ok, equal, deepEqual } = require('assert').strict
 
 describe('the-map-style', () => {
   before(() => {
@@ -16,11 +15,8 @@ describe('the-map-style', () => {
   after(() => {
   })
 
-  it('Render a component', () => {
-    let element = render(
-       <TheMapStyle />
-    )
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheMapStyle))
   })
 })
 

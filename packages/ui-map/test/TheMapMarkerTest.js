@@ -4,10 +4,9 @@
  */
 'use strict'
 
-import TheMapMarker from '../lib/TheMapMarker'
-import React from 'react'
-import { ok, equal } from 'assert'
-import { render } from '@the-/script-test'
+const TheMapMarker = require('../shim/TheMapMarker').default
+const React = require('react')
+const { ok, equal, deepEqual } = require('assert').strict
 
 describe('the-map-marker', () => {
   before(() => {
@@ -16,11 +15,8 @@ describe('the-map-marker', () => {
   after(() => {
   })
 
-  it('Render a component', () => {
-    let element = render(
-      <TheMapMarker/>
-    )
-    ok(!element)
+  it('Do test', () => {
+    ok(React.createElement(TheMapMarker))
   })
 })
 

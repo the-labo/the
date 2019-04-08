@@ -7,23 +7,11 @@
  */
 'use strict'
 
-const {
-  constants: { NodeTypes },
-  finder,
-  parse,
-} = require('@the-/ast')
 const applyConverter = require('../helpers/applyConverter')
 
 /** @lends processJSExport */
 function processJSExport(content, options = {}) {
   return applyConverter(content, (content) => {
-    // TODO
-    // const parsed = parse(content)
-    // const ExportDeclarations = finder.findByTypes(parsed.program, [
-    //   NodeTypes.ExportDefaultDeclaration,
-    //   NodeTypes.ExportNamedDeclaration,
-    // ])
-    // console.log(ExportDeclarations)
     return content
   })
 }

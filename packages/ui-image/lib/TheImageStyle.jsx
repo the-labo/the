@@ -27,11 +27,9 @@ TheImageStyle.defaultProps = {
 }
 
 TheImageStyle.data = (options) => {
-  let {
-    lightBackgroundColor = ThemeValues.lightBackgroundColor,
+  const {
     lightTextColor = ThemeValues.lightTextColor,
     overlayBackgroundColor = ThemeValues.overlayBackgroundColor,
-    overlayTextColor = ThemeValues.overlayTextColor,
   } = options
   return asStyleData({
     '.the-image': {

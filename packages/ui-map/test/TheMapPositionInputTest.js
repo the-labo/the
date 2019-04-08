@@ -4,10 +4,9 @@
  */
 'use strict'
 
-import TheMapPositionInput from '../lib/TheMapPositionInput'
-import React from 'react'
-import { ok, equal } from 'assert'
-import { render } from '@the-/script-test'
+const TheMapPositionInput = require('../shim/TheMapPositionInput').default
+const React = require('react')
+const { ok, equal, deepEqual } = require('assert').strict
 
 describe('the-map-position-input', () => {
   before(() => {
@@ -16,11 +15,8 @@ describe('the-map-position-input', () => {
   after(() => {
   })
 
-  it('Render a component', () => {
-    let element = render(
-       <TheMapPositionInput />
-    )
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheMapPositionInput))
   })
 })
 

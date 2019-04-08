@@ -4,10 +4,9 @@
  */
 'use strict'
 
-import TheCamStyle from '../lib/TheCamStyle'
-import React from 'react'
-import { ok, equal } from 'assert'
-import { render } from '@the-/script-test'
+const TheCamStyle = require('../shim/TheCamStyle').default
+const React = require('react')
+const { ok, equal, deepEqual } = require('assert').strict
 
 describe('the-cam-style', () => {
   before(() => {
@@ -16,11 +15,8 @@ describe('the-cam-style', () => {
   after(() => {
   })
 
-  it('Render a component', () => {
-    let element = render(
-       <TheCamStyle />
-    )
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheCamStyle))
   })
 })
 

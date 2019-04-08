@@ -83,7 +83,7 @@ class TheVideo extends React.Component {
       src,
       width,
     } = props
-    const { actualHeight, actualWidth, failed, loading } = state
+    const { failed } = state
     const Wrap = asLink ? 'a' : 'div'
     const asLinkProps = asLink ? { href: src, target: '_blank' } : {}
     return (

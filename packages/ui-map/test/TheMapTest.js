@@ -4,9 +4,9 @@
  */
 'use strict'
 
-import React from 'react'
-import { ok, equal } from 'assert'
-import { render } from '@the-/script-test'
+const TheMap = require('../shim/TheMap').default
+const React = require('react')
+const { ok, equal, deepEqual } = require('assert').strict
 
 describe('the-map', () => {
   before(() => {
@@ -15,7 +15,8 @@ describe('the-map', () => {
   after(() => {
   })
 
-  it('Render a component', () => {
+  it('Do test', () => {
+    ok(React.createElement(TheMap))
   })
 })
 

@@ -27,11 +27,10 @@ TheVideoStyle.defaultProps = {
 }
 
 TheVideoStyle.data = (options) => {
-  let {
+  const {
     lightBackgroundColor = ThemeValues.lightBackgroundColor,
     lightTextColor = ThemeValues.lightTextColor,
     overlayBackgroundColor = ThemeValues.overlayBackgroundColor,
-    overlayTextColor = ThemeValues.overlayTextColor,
   } = options
   return asStyleData({
     '.the-video': {

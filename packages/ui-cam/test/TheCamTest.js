@@ -4,11 +4,9 @@
  */
 'use strict'
 
-import '@babel/polyfill'
-import TheCam from '../lib/TheCam'
-import React from 'react'
-import { ok, equal } from 'assert'
-import { render } from '@the-/script-test'
+const TheCam = require('../shim/TheCam').default
+const React = require('react')
+const { ok, equal, deepEqual } = require('assert').strict
 
 describe('the-cam', () => {
   before(() => {
@@ -17,11 +15,8 @@ describe('the-cam', () => {
   after(() => {
   })
 
-  it('Render a component', () => {
-    let element = render(
-      <TheCam/>
-    )
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheCam))
   })
 })
 
