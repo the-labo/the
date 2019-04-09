@@ -3,14 +3,16 @@
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { asStyleData } from '@the-/util-ui'
+import { ThemeValues } from '@the-/const-ui'
 import { TheStyle } from '@the-/ui-style'
+import { asStyleData } from '@the-/util-ui'
 
 /** Style for TheQr */
 const TheQrStyle = ({ className, id, options }) => (
-  <TheStyle {...{ id }}
-            className={classnames('the-qr-style', className)}
-            styles={TheQrStyle.data(options)}
+  <TheStyle
+    {...{ id }}
+    className={classnames('the-qr-style', className)}
+    styles={TheQrStyle.data(options)}
   />
 )
 
@@ -25,9 +27,7 @@ TheQrStyle.defaultProps = {
 }
 
 TheQrStyle.data = (options) => {
-  const { ThemeValues } = TheStyle
   let {
-    dominantColor = ThemeValues.dominantColor,
     lightBackgroundColor = ThemeValues.lightBackgroundColor,
     lightTextColor = ThemeValues.lightTextColor,
   } = options

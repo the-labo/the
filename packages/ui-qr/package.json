@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-qr",
   "description": "QRCode the-component",
-  "version": "15.2.2",
+  "version": "15.2.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,6 +11,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/const-ui": "^15.2.0",
     "@the-/ui-spin": "^15.2.0",
     "@the-/ui-style": "^15.2.0",
     "@the-/util-ui": "^15.2.0",
