@@ -27,9 +27,8 @@ TheInfoStyle.defaultProps = {
 }
 
 TheInfoStyle.data = (options) => {
-  let {
+  const {
     contentWidth = ThemeValues.contentWidth,
-    dominantColor = ThemeValues.dominantColor,
     lightBackgroundColor = ThemeValues.lightBackgroundColor,
     lightBorderColor = ThemeValues.lightBorderColor,
     lightTextColor = ThemeValues.lightTextColor,

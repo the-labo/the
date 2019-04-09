@@ -27,7 +27,7 @@ TheQrStyle.defaultProps = {
 }
 
 TheQrStyle.data = (options) => {
-  let {
+  const {
     lightBackgroundColor = ThemeValues.lightBackgroundColor,
     lightTextColor = ThemeValues.lightTextColor,
   } = options

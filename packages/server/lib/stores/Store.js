@@ -29,7 +29,6 @@ class Store {
    * @returns {Promise.<string[]>}
    */
   async cleanup() {
-    const { storage } = this
     const deleted = []
     if (this.cleaning) {
       return deleted

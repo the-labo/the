@@ -3,7 +3,6 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { ThemeValues } from '@the-/const-ui'
 import { TheStyle } from '@the-/ui-style'
 import { asStyleData } from '@the-/util-ui'
 
@@ -26,8 +25,7 @@ TheConditionStyle.defaultProps = {
   options: {},
 }
 
-TheConditionStyle.data = (options) => {
-  const { dominantColor = ThemeValues.dominantColor } = options
+TheConditionStyle.data = () => {
   return asStyleData('.the-condition', {
     '&': {},
   })

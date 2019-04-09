@@ -112,11 +112,9 @@ class TheRTCClient extends TheRTCClientBase {
 
   async answerToPeerOffer(offer) {
     const {
-      client,
       iceServers,
       media: { stream: localStream },
       rid: local,
-      socket,
     } = this
     const { desc, from: remote, pid, purpose } = offer
     const peer = await this.createAnswerPeer({
@@ -200,7 +198,7 @@ class TheRTCClient extends TheRTCClientBase {
     this.destroySocket()
   }
 
-  async establishPeer(client, purpose, options = {}) {
+  async establishPeer(client, purpose) {
     const { rid: remote } = client
     const { iceServers, rid: local, socket } = this
     const pid = this.pidFor(local, remote, purpose)

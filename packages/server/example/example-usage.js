@@ -18,6 +18,7 @@ const { createElement: c } = React
     async buy() {
       const { session } = this
       const { cart = {} } = session
+      console.log(cart)
       /* ... */
     }
   }

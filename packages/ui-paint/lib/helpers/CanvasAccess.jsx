@@ -39,7 +39,7 @@ class CanvasAccess {
   }
 
   copyFrom(canvasAccess) {
-    const { canvas, height, width } = canvasAccess
+    const { height, width } = canvasAccess
     const image = new Image()
     image.src = canvasAccess.toSVG()
     image.onload = () => {

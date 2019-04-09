@@ -33,7 +33,7 @@ Object.assign(readFile, {
       if (asBlob) {
         yield sliced
       } else {
-        const buffer = await readFile(sliced, {})
+        const buffer = await readFile(sliced)
         yield buffer
       }
     }

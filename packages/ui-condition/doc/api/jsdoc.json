@@ -35,7 +35,7 @@
     "description": "Style for TheCondition",
     "params": [],
     "meta": {
-      "lineno": 11,
+      "lineno": 10,
       "filename": "TheConditionStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-condition/lib"
     },
@@ -50,7 +50,7 @@
     "description": "Style options",
     "memberof": "TheConditionStyle.propTypes",
     "meta": {
-      "lineno": 22,
+      "lineno": 21,
       "filename": "TheConditionStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-condition/lib"
     },

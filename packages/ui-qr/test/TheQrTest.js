@@ -4,10 +4,9 @@
  */
 'use strict'
 
-import TheQr from '../lib/TheQr'
-import React from 'react'
-import { ok, equal } from 'assert'
-import { render } from '@the-/script-test'
+const TheQr = require('../shim/TheQr').default
+const React = require('react')
+const { ok, equal, deepEqual } = require('assert').strict
 
 describe('the-qr', () => {
   before(() => {
@@ -16,11 +15,8 @@ describe('the-qr', () => {
   after(() => {
   })
 
-  it('Render a component', () => {
-    let element = render(
-       <TheQr />
-    )
-    ok(element)
+  it('Do test', () => {
+    ok(React.createElement(TheQr))
   })
 })
 

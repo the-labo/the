@@ -51,7 +51,6 @@ class TheSetting extends TheSettingBase {
     const values = this.get() || {}
     for (const name of names) {
       if (values.hasOwnProperty(name)) {
-        const value = values[name]
         delete values[name]
         logger.debug(`Value deleted: "${name}"`)
       }

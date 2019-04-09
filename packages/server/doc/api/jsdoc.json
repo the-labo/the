@@ -1222,7 +1222,7 @@
       }
     ],
     "meta": {
-      "lineno": 54,
+      "lineno": 53,
       "filename": "Store.js",
       "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
     },
@@ -1248,7 +1248,7 @@
       }
     ],
     "meta": {
-      "lineno": 63,
+      "lineno": 62,
       "filename": "Store.js",
       "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
     },
@@ -1284,7 +1284,7 @@
       }
     ],
     "meta": {
-      "lineno": 77,
+      "lineno": 76,
       "filename": "Store.js",
       "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
     },
@@ -1320,7 +1320,7 @@
       }
     ],
     "meta": {
-      "lineno": 93,
+      "lineno": 92,
       "filename": "Store.js",
       "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
     },
@@ -1346,7 +1346,7 @@
       }
     ],
     "meta": {
-      "lineno": 101,
+      "lineno": 100,
       "filename": "Store.js",
       "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
     },
@@ -1391,7 +1391,7 @@
       }
     ],
     "meta": {
-      "lineno": 112,
+      "lineno": 111,
       "filename": "Store.js",
       "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
     },

@@ -64,7 +64,6 @@ function peerMix(Class) {
           debug('signalingState', peer.signalingState, this.rid)
         },
         [PeerEvents.TRACK]: (e) => {
-          const { streams, track } = e
           const [stream] = e.streams || []
           debug('stream', stream && stream.id)
           if (stream) {
