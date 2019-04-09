@@ -10,7 +10,7 @@ const create = require('./create')
 
 /** @lends run */
 async function run(pattern, options = {}) {
-  const { ignore = [], ...config } = options
+  const { ignore = ['**/*.min.*', '*/node_modules/*.*'], ...config } = options
   const code = create(config)
   const results = await code.format(pattern, { ignore })
   const filenames = results
