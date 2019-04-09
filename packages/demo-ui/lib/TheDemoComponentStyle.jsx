@@ -31,8 +31,7 @@ TheDemoComponentStyle.defaultProps = {
   options: {},
 }
 
-TheDemoComponentStyle.data = (options) => {
-  const { dominantColor = ThemeValues.dominantColor } = options
+TheDemoComponentStyle.data = () => {
   return asStyleData({
     '.the-demo-component': {},
   })

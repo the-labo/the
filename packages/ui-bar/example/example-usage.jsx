@@ -14,7 +14,7 @@ class ExampleComponent extends React.Component {
   }
 
   toggleAction() {
-    this.setState({ action: !this.state.action })
+    this.setState((prevState) => ({ action: !prevState.action }))
   }
 
   render() {

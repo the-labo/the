@@ -88,7 +88,7 @@ class SFUProxy {
       signaling.sendIce(ice)
     })
     offererEdge.listenIceCandidate((candidate) => {
-      const ice = this.iceForOfferer(candidate)
+      // const ice = this.iceForOfferer(candidate)
       // TODO
       // signaling.sendIce(ice)
     })

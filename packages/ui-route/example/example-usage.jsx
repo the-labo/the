@@ -17,7 +17,7 @@ class ExampleComponent extends React.Component {
   }
 
   toggleVertical() {
-    this.setState({ vertical: !this.state.vertical })
+    this.setState((prevState) => ({ vertical: !prevState.vertical }))
   }
 
   render() {
