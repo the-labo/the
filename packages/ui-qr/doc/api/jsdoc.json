@@ -1,0 +1,149 @@
+[
+  {
+    "id": "module:@the-/ui-qr",
+    "longname": "module:@the-/ui-qr",
+    "name": "@the-/ui-qr",
+    "kind": "module",
+    "description": "QRCode the-component",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-qr/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheQr",
+    "longname": "TheQr",
+    "name": "TheQr",
+    "kind": "class",
+    "scope": "global",
+    "description": "QRCode the-component",
+    "meta": {
+      "lineno": 13,
+      "filename": "TheQr.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-qr/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheQrStyle",
+    "longname": "TheQrStyle",
+    "name": "TheQrStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheQr",
+    "params": [],
+    "meta": {
+      "lineno": 11,
+      "filename": "TheQrStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-qr/lib"
+    },
+    "order": 8
+  },
+  {
+    "id": "TheQr.propTypes.alt",
+    "longname": "TheQr.propTypes.alt",
+    "name": "alt",
+    "kind": "member",
+    "scope": "static",
+    "description": "Alt text",
+    "memberof": "TheQr.propTypes",
+    "meta": {
+      "lineno": 101,
+      "filename": "TheQr.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-qr/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheQr.propTypes.asLink",
+    "longname": "TheQr.propTypes.asLink",
+    "name": "asLink",
+    "kind": "member",
+    "scope": "static",
+    "description": "Render as Link",
+    "memberof": "TheQr.propTypes",
+    "meta": {
+      "lineno": 103,
+      "filename": "TheQr.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-qr/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "TheQr.propTypes.onError",
+    "longname": "TheQr.propTypes.onError",
+    "name": "onError",
+    "kind": "member",
+    "scope": "static",
+    "description": "Handle error",
+    "memberof": "TheQr.propTypes",
+    "meta": {
+      "lineno": 105,
+      "filename": "TheQr.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-qr/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheQr.propTypes.onGenerate",
+    "longname": "TheQr.propTypes.onGenerate",
+    "name": "onGenerate",
+    "kind": "member",
+    "scope": "static",
+    "description": "Handle image generate",
+    "memberof": "TheQr.propTypes",
+    "meta": {
+      "lineno": 107,
+      "filename": "TheQr.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-qr/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheQr.propTypes.size",
+    "longname": "TheQr.propTypes.size",
+    "name": "size",
+    "kind": "member",
+    "scope": "static",
+    "description": "QRCode size",
+    "memberof": "TheQr.propTypes",
+    "meta": {
+      "lineno": 109,
+      "filename": "TheQr.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-qr/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "TheQr.propTypes.text",
+    "longname": "TheQr.propTypes.text",
+    "name": "text",
+    "kind": "member",
+    "scope": "static",
+    "description": "Text to render as QR",
+    "memberof": "TheQr.propTypes",
+    "meta": {
+      "lineno": 111,
+      "filename": "TheQr.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-qr/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "TheQrStyle.propTypes.options",
+    "longname": "TheQrStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
+    "memberof": "TheQrStyle.propTypes",
+    "meta": {
+      "lineno": 22,
+      "filename": "TheQrStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-qr/lib"
+    },
+    "order": 9
+  }
+]

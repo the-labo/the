@@ -72,6 +72,14 @@ var/
 /packages/resize/lib/index.js
 /packages/resource/lib/index.js
 /packages/resource/lib/mixins/index.js
+/packages/rtc-client/example/example-bundle.js
+/packages/rtc-client/lib/constants/index.js
+/packages/rtc-client/lib/index.js
+/packages/rtc-client/lib/mixins/index.js
+/packages/rtc/lib/constants/index.js
+/packages/rtc/lib/helpers/index.js
+/packages/rtc/lib/index.js
+/packages/rtc/lib/mixins/index.js
 /packages/run/lib/index.js
 /packages/s3/lib/index.js
 /packages/scene/lib/index.js
@@ -159,6 +167,10 @@ var/
 /packages/ui-meta/lib/index.jsx
 /packages/ui-pager/doc/demo/bundle.js
 /packages/ui-pager/lib/index.jsx
+/packages/ui-paint/doc/demo/bundle.js
+/packages/ui-paint/lib/index.jsx
+/packages/ui-qr/doc/demo/bundle.js
+/packages/ui-qr/lib/index.jsx
 /packages/ui-repeatable/doc/demo/bundle.js
 /packages/ui-repeatable/lib/index.jsx
 /packages/ui-root/doc/demo/bundle.js

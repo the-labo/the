@@ -77,6 +77,14 @@ Usage
 
 ## API Guide
 
+- [default](./doc/api/api.md#module_default)
+- [@the-/rtc-client](./doc/api/api.md#module_@the-/rtc-client)
+- [ChannelNames](./doc/api/api.md#module_ChannelNames)
+- [constants](./doc/api/api.md#module_constants)
+- [IOEvents](./doc/api/api.md#module_IOEvents)
+- [PeerEvents](./doc/api/api.md#module_PeerEvents)
+- [PeerPurposes](./doc/api/api.md#module_PeerPurposes)
+- [mixins](./doc/api/api.md#module_mixins)
 
 
 <!-- Section from "doc/readme/03.API.md.hbs" End -->

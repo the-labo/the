@@ -1,0 +1,717 @@
+[
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/rtc-client",
+    "longname": "module:@the-/rtc-client",
+    "name": "@the-/rtc-client",
+    "kind": "module",
+    "description": "Client for the-rtc",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "module:ChannelNames",
+    "longname": "module:ChannelNames",
+    "name": "ChannelNames",
+    "kind": "module",
+    "description": "ChannelNames",
+    "meta": {
+      "lineno": 1,
+      "filename": "ChannelNames.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib/constants"
+    },
+    "order": 12
+  },
+  {
+    "id": "module:constants",
+    "longname": "module:constants",
+    "name": "constants",
+    "kind": "module",
+    "description": "Constant variables",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib/constants"
+    },
+    "order": 13
+  },
+  {
+    "id": "module:IOEvents",
+    "longname": "module:IOEvents",
+    "name": "IOEvents",
+    "kind": "module",
+    "description": "IOEvents",
+    "meta": {
+      "lineno": 1,
+      "filename": "IOEvents.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib/constants"
+    },
+    "order": 14
+  },
+  {
+    "id": "module:PeerEvents",
+    "longname": "module:PeerEvents",
+    "name": "PeerEvents",
+    "kind": "module",
+    "description": "PeerEvents",
+    "meta": {
+      "lineno": 1,
+      "filename": "PeerEvents.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib/constants"
+    },
+    "order": 15
+  },
+  {
+    "id": "module:PeerPurposes",
+    "longname": "module:PeerPurposes",
+    "name": "PeerPurposes",
+    "kind": "module",
+    "meta": {
+      "lineno": 1,
+      "filename": "PeerPurposes.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib/constants"
+    },
+    "order": 16
+  },
+  {
+    "id": "module:mixins",
+    "longname": "module:mixins",
+    "name": "mixins",
+    "kind": "module",
+    "description": "Class mixins",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib/mixins"
+    },
+    "order": 21
+  },
+  {
+    "id": "TheRTCClient",
+    "longname": "TheRTCClient",
+    "name": "TheRTCClient",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheRTCClient.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheRTCClient instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheRTCClient"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "assertMix",
+    "longname": "assertMix",
+    "name": "assertMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixin for assert",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "assertMix.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib/mixins"
+    },
+    "order": 17
+  },
+  {
+    "id": "channelMix",
+    "longname": "channelMix",
+    "name": "channelMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixin for channel",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "channelMix.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib/mixins"
+    },
+    "order": 18
+  },
+  {
+    "id": "mediaMix",
+    "longname": "mediaMix",
+    "name": "mediaMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixin for media",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "mediaMix.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib/mixins"
+    },
+    "order": 22
+  },
+  {
+    "id": "peerMix",
+    "longname": "peerMix",
+    "name": "peerMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixin for peer",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "peerMix.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib/mixins"
+    },
+    "order": 23
+  },
+  {
+    "id": "promiseMix",
+    "longname": "promiseMix",
+    "name": "promiseMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixin for promise",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "promiseMix.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib/mixins"
+    },
+    "order": 24
+  },
+  {
+    "id": "serializeMix",
+    "longname": "serializeMix",
+    "name": "serializeMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixin for serialize",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "serializeMix.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib/mixins"
+    },
+    "order": 25
+  },
+  {
+    "id": "socketMix",
+    "longname": "socketMix",
+    "name": "socketMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixin for socket",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "socketMix.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib/mixins"
+    },
+    "order": 26
+  },
+  {
+    "id": "TheRTCClient#audioEnabled",
+    "longname": "TheRTCClient#audioEnabled",
+    "name": "audioEnabled",
+    "kind": "member",
+    "scope": "instance",
+    "description": "Audio enabled or not",
+    "memberof": "TheRTCClient",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Boolean"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 54,
+      "filename": "TheRTCClient.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheRTCClient#info",
+    "longname": "TheRTCClient#info",
+    "name": "info",
+    "kind": "member",
+    "scope": "instance",
+    "description": "Additional info",
+    "memberof": "TheRTCClient",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 62,
+      "filename": "TheRTCClient.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheRTCClient#rid",
+    "longname": "TheRTCClient#rid",
+    "name": "rid",
+    "kind": "member",
+    "scope": "instance",
+    "description": "RTC client id",
+    "memberof": "TheRTCClient",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 70,
+      "filename": "TheRTCClient.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "TheRTCClient#state",
+    "longname": "TheRTCClient#state",
+    "name": "state",
+    "kind": "member",
+    "scope": "instance",
+    "description": "Status",
+    "memberof": "TheRTCClient",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 78,
+      "filename": "TheRTCClient.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "TheRTCClient#videoEnabled",
+    "longname": "TheRTCClient#videoEnabled",
+    "name": "videoEnabled",
+    "kind": "member",
+    "scope": "instance",
+    "description": "Video enabled",
+    "memberof": "TheRTCClient",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Boolean"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 93,
+      "filename": "TheRTCClient.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib"
+    },
+    "order": 8
+  },
+  {
+    "id": "TheRTCClient#connect",
+    "longname": "TheRTCClient#connect",
+    "name": "connect",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Connect to server",
+    "memberof": "TheRTCClient",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Server url",
+        "name": "url"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 151,
+      "filename": "TheRTCClient.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib"
+    },
+    "async": true,
+    "order": 9
+  },
+  {
+    "id": "TheRTCClient#disconnect",
+    "longname": "TheRTCClient#disconnect",
+    "name": "disconnect",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Disconnect from signaling server",
+    "memberof": "TheRTCClient",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 196,
+      "filename": "TheRTCClient.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib"
+    },
+    "async": true,
+    "order": 10
+  },
+  {
+    "id": "TheRTCClient#publish",
+    "longname": "TheRTCClient#publish",
+    "name": "publish",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Publish topic via pub-sub channel",
+    "memberof": "TheRTCClient",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Topic name",
+        "name": "topic"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Payload data",
+        "name": "payload"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 309,
+      "filename": "TheRTCClient.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib"
+    },
+    "async": true,
+    "order": 11
+  },
+  {
+    "id": "ChannelMixed#subscribePubSubChannel",
+    "longname": "ChannelMixed#subscribePubSubChannel",
+    "name": "subscribePubSubChannel",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subscribe topic on pub-sub channel",
+    "memberof": "ChannelMixed",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "topic"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "callback"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 56,
+      "filename": "channelMix.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib/mixins"
+    },
+    "order": 19
+  },
+  {
+    "id": "ChannelMixed#unsubscribePubSubChannel",
+    "longname": "ChannelMixed#unsubscribePubSubChannel",
+    "name": "unsubscribePubSubChannel",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Unsubscribe topic on pub-sub channel",
+    "memberof": "ChannelMixed",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "topic"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "optional": true,
+        "description": "subscription to unbind",
+        "name": "subscription"
+      }
+    ],
+    "meta": {
+      "lineno": 74,
+      "filename": "channelMix.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc-client/lib/mixins"
+    },
+    "order": 20
+  }
+]

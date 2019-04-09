@@ -31,14 +31,14 @@ class TheMapPositionInput extends React.Component {
   }
 
   render() {
-    const { height, layers, value, width } = this.props
+    const { height, id, layers, value, width } = this.props
     if (!value) {
       return null
     }
     const { lat, lng, zoom } = this.parseValue(value)
     const hasLatLng = hasVal(lat) && hasVal(lng)
     return (
-      <div className='the-map-position-input' style={{ height, width }}>
+      <div className='the-map-position-input' id={id} style={{ height, width }}>
         <TheMap
           {...{
             height,
