@@ -101,7 +101,7 @@ class TheInputSelect extends React.PureComponent {
     onUpdate && onUpdate({ [name]: parser(value) })
   }
 
-  handleDisplayClick(e) {
+  handleDisplayClick() {
     clearTimeout(this._suggestOffTimer)
     const { state } = this
     const inputElm = this.inputElmRef.current
@@ -424,7 +424,6 @@ class TheInputSelectOptionList extends React.PureComponent {
       options,
       optionsRef,
       parser,
-      placeholder,
       sorter,
       suggestingIndex,
     } = this.props

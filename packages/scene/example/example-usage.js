@@ -3,7 +3,8 @@
 const { TheScene } = require('@the-/scene')
 
 async function tryExample() {
-  const scene = new TheScene()
+  const scene = new TheScene({ foo: 'bar' })
+  console.log(scene.foo)
   /* ... */
 }
 
