@@ -1,7 +1,7 @@
 {
   "name": "@the-/driver-mongo",
   "description": "Mongo driver for the-db",
-  "version": "15.2.1",
+  "version": "15.2.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -40,7 +40,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/driver-mongo#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "lib",
     "the"

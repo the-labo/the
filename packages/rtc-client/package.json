@@ -1,0 +1,68 @@
+{
+  "name": "@the-/rtc-client",
+  "description": "Client for the-rtc",
+  "version": "15.2.2",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "browser": {
+    ".": "shim",
+    "wrtc": false
+  },
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "@the-/check": "^15.2.0",
+    "@the-/media": "^15.2.0",
+    "@the-/pack": "^15.2.0",
+    "@the-/window": "^15.2.0",
+    "argx": "^3.0.2",
+    "asobj": "^3.0.1",
+    "debug": "^4.1.1",
+    "qs": "^6.6.0",
+    "socket.io-client": "^2.2.0",
+    "uuid": "^3.3.2",
+    "wrtc": "^0.3.5"
+  },
+  "devDependencies": {
+    "@babel/runtime": "*",
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
+    "@the-/templates": "file:../templates",
+    "aport": "^2.0.0",
+    "asleep": "^1.0.3",
+    "webpack-cli": "^3.2.3",
+    "webrtc-adapter": "^7.2.0"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the#readme",
+  "keywords": [
+    "lib",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "peerDependencies": {
+    "webrtc-adapter": ">=6"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
+  "scripts": {
+    "build": "the-script-build",
+    "build:example": "npx webpack example/example-entrypoint.js -o example/example-bundle.js --mode=development",
+    "build:example:watch": "npx webpack example/example-entrypoint.js -o example/example-bundle.js --mode=development -w",
+    "doc": "the-script-doc",
+    "prepare": "npm run build && npm run doc",
+    "test": "the-script-test",
+    "watch": "the-script-build -w"
+  }
+}

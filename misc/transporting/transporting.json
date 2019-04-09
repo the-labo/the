@@ -35,6 +35,10 @@
     "kind": "ui",
     "name": "ui-paint"
   },
+  "the-qr": {
+    "kind": "ui",
+    "name": "ui-qr"
+  },
   "the-bin": {
     "kind": "lib",
     "name": "bin"
@@ -366,6 +370,14 @@
   "the-server": {
     "kind": "lib",
     "name": "server"
+  },
+  "the-rtc": {
+    "kind": "lib",
+    "name": "rtc"
+  },
+  "the-rtc-client": {
+    "kind": "lib",
+    "name": "rtc-client"
   },
   "the-server-util": {
     "kind": "util",

@@ -1,7 +1,7 @@
 {
   "name": "@the-/util-client",
   "description": "Utility for client side",
-  "version": "15.2.1",
+  "version": "15.2.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -24,7 +24,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/util-client#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "the",
     "util"

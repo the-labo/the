@@ -1,0 +1,530 @@
+[
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/rtc",
+    "longname": "module:@the-/rtc",
+    "name": "@the-/rtc",
+    "kind": "module",
+    "description": "RTC server for the-frameworks",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "module:constants",
+    "longname": "module:constants",
+    "name": "constants",
+    "kind": "module",
+    "description": "Constant variables",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/constants"
+    },
+    "order": 9
+  },
+  {
+    "id": "module:helpers",
+    "longname": "module:helpers",
+    "name": "helpers",
+    "kind": "module",
+    "description": "Helpers",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/helpers"
+    },
+    "order": 11
+  },
+  {
+    "id": "module:mixins",
+    "longname": "module:mixins",
+    "name": "mixins",
+    "kind": "module",
+    "description": "Class mixins",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/mixins"
+    },
+    "order": 14
+  },
+  {
+    "id": "TheRTC()",
+    "longname": "TheRTC",
+    "name": "TheRTC",
+    "kind": "constructor",
+    "memberof": "TheRTC",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "RTC Configuration",
+        "name": "config"
+      },
+      {
+        "type": {
+          "names": [
+            "Object",
+            "Array.<Object>"
+          ]
+        },
+        "optional": true,
+        "description": "STUN server config(s)",
+        "name": "config.stun"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "description": "STUN server URL",
+        "name": "config.stun.url"
+      },
+      {
+        "type": {
+          "names": [
+            "Object",
+            "Array.<Object>"
+          ]
+        },
+        "optional": true,
+        "description": "TURN server config(s)",
+        "name": "config.turn"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "description": "TURN server URL",
+        "name": "config.turn.url"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "description": "TURN server secret",
+        "name": "config.turn.secret"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "description": "TURN server expiry",
+        "name": "config.turn.expiry"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "'mesh'",
+        "description": "'mesh', 'sfu'",
+        "name": "config.topology"
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "SFUProxy()",
+    "longname": "SFUProxy",
+    "name": "SFUProxy",
+    "kind": "constructor",
+    "description": "Webrtc proxy connections",
+    "memberof": "SFUProxy",
+    "order": 19
+  },
+  {
+    "id": "TheRTC",
+    "longname": "TheRTC",
+    "name": "TheRTC",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheRTC.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "SFUProxy",
+    "longname": "SFUProxy",
+    "name": "SFUProxy",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "SFUProxy.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/sfu"
+    },
+    "order": 18
+  },
+  {
+    "id": "SFUProxyEdge",
+    "longname": "SFUProxyEdge",
+    "name": "SFUProxyEdge",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "SFUProxyEdge.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/sfu"
+    },
+    "order": 20
+  },
+  {
+    "id": "SFUProxyEdgeAnswerer",
+    "longname": "SFUProxyEdgeAnswerer",
+    "name": "SFUProxyEdgeAnswerer",
+    "kind": "class",
+    "scope": "global",
+    "augments": [
+      "SFUProxyEdge"
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "SFUProxyEdgeAnswerer.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/sfu"
+    },
+    "order": 21
+  },
+  {
+    "id": "SFUProxyEdgeOfferer",
+    "longname": "SFUProxyEdgeOfferer",
+    "name": "SFUProxyEdgeOfferer",
+    "kind": "class",
+    "scope": "global",
+    "augments": [
+      "SFUProxyEdge"
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "SFUProxyEdgeOfferer.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/sfu"
+    },
+    "order": 22
+  },
+  {
+    "id": "SFUProxyPool",
+    "longname": "SFUProxyPool",
+    "name": "SFUProxyPool",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "SFUProxyPool.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/sfu"
+    },
+    "order": 23
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheRTC instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheRTC"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "handleUnknownKeys",
+    "longname": "handleUnknownKeys",
+    "name": "handleUnknownKeys",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "handleUnknownKeys.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/helpers"
+    },
+    "order": 10
+  },
+  {
+    "id": "parseTurn secret",
+    "longname": "parseTurn secret",
+    "name": "parseTurn secret",
+    "kind": "function",
+    "scope": "global",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "secret"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Parsed values"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "parseTurnSecret.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/helpers"
+    },
+    "order": 12
+  },
+  {
+    "id": "httpMix",
+    "longname": "httpMix",
+    "name": "httpMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixin for http",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "httpMix.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/mixins"
+    },
+    "order": 13
+  },
+  {
+    "id": "ioMix",
+    "longname": "ioMix",
+    "name": "ioMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixin for io",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "ioMix.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/mixins"
+    },
+    "order": 15
+  },
+  {
+    "id": "sfuMix",
+    "longname": "sfuMix",
+    "name": "sfuMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixin for sfu",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "sfuMix.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/mixins"
+    },
+    "order": 16
+  },
+  {
+    "id": "turnMix",
+    "longname": "turnMix",
+    "name": "turnMix",
+    "kind": "function",
+    "scope": "global",
+    "description": "Mixin for turn",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "turnMix.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/mixins"
+    },
+    "order": 17
+  },
+  {
+    "id": "ChannelNames.DEFAULT_CHANNEL",
+    "longname": "ChannelNames.DEFAULT_CHANNEL",
+    "name": "DEFAULT_CHANNEL",
+    "kind": "member",
+    "scope": "static",
+    "memberof": "ChannelNames",
+    "deprecated": true,
+    "meta": {
+      "lineno": 11,
+      "filename": "ChannelNames.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/constants"
+    },
+    "order": 5
+  },
+  {
+    "id": "ChannelNames.PUB_SUB_CHANNEL",
+    "longname": "ChannelNames.PUB_SUB_CHANNEL",
+    "name": "PUB_SUB_CHANNEL",
+    "kind": "member",
+    "scope": "static",
+    "description": "Pipe line to send binary data",
+    "memberof": "ChannelNames",
+    "meta": {
+      "lineno": 13,
+      "filename": "ChannelNames.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/constants"
+    },
+    "order": 6
+  },
+  {
+    "id": "ChannelNames.STREAM_CHANNEL",
+    "longname": "ChannelNames.STREAM_CHANNEL",
+    "name": "STREAM_CHANNEL",
+    "kind": "member",
+    "scope": "static",
+    "description": "Pipe line to send binary data",
+    "memberof": "ChannelNames",
+    "meta": {
+      "lineno": 15,
+      "filename": "ChannelNames.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/constants"
+    },
+    "order": 7
+  },
+  {
+    "id": "ChannelNames.STREAM_CONTROL_CHANNEL",
+    "longname": "ChannelNames.STREAM_CONTROL_CHANNEL",
+    "name": "STREAM_CONTROL_CHANNEL",
+    "kind": "member",
+    "scope": "static",
+    "description": "Pipe line to send binary data",
+    "memberof": "ChannelNames",
+    "meta": {
+      "lineno": 17,
+      "filename": "ChannelNames.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/constants"
+    },
+    "order": 8
+  }
+]

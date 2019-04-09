@@ -1,0 +1,98 @@
+<!-- This is example html -->
+<!doctype html>
+<html>
+<head>
+  <title>The RTC Demo</title>
+  <script src="example-bundle.js"></script>
+  <style>
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    h1 {
+
+    }
+
+    h3{
+      margin: 4px 0;
+      color: #AAA;
+      font-weight: normal;
+    }
+
+    video {
+      width: 120px;
+      height: 120px;
+    }
+
+    .video-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .video-client {
+      display: inline-block;
+      border-radius: 4px;
+      margin: 8px;
+      background: white;
+      padding: 4px;
+    }
+
+    section {
+      border: 1px solid #F0F0F0;
+      border-radius: 8px;
+      padding: 8px 16px;
+      background: #FAFAFA;
+      box-sizing: border-box;
+      margin: 16px 8px;
+    }
+
+    section h5 {
+      margin: 4px 0;
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <h1>The RTC Demo</h1>
+  <section>
+    <h2>Client01</h2>
+    <div class='video-container'>
+      <div class='video-client'>
+        <h3 id="video01-title"></h3>
+        <div>
+          <video src="" id="video01" autoplay></video>
+        </div>
+      </div>
+      <div class='video-client'>
+        <h3 id="video02-title"></h3>
+        <div>
+          <video src="" id="video02" autoplay></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <h2>Client02</h2>
+    <div class='video-container'>
+      <div class='video-client'>
+        <h3 id="video03-title"></h3>
+        <div>
+          <video src="" id="video03" autoplay></video>
+        </div>
+      </div>
+      <div class='video-client'>
+        <h3 id="video04-title"></h3>
+        <div>
+          <video src="" id="video04" autoplay></video>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

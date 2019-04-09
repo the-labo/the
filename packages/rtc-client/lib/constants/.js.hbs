@@ -1,0 +1,16 @@
+/**
+ * {{name}}
+ * @module {{name}}
+ */
+'use strict'
+
+const {{name}} = Object.freeze(
+  /** @lends {{name}} */
+  {
+{{#each values}}
+    {{@key}}: '{{this}}',
+{{/each}}
+  }
+)
+
+module.exports = {{name}}

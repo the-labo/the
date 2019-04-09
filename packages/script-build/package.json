@@ -1,7 +1,7 @@
 {
   "name": "@the-/script-build",
   "description": "Build script for the-projects",
-  "version": "15.2.1",
+  "version": "15.2.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -54,7 +54,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/script-build#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "script",
     "the"
