@@ -57,7 +57,6 @@ function parseFilter(filter, options = {}) {
               ...(parsed[parseAttributeName(propertyName)] || {}),
               [operator]: subValue,
             }
-          } else {
           }
         }
         break

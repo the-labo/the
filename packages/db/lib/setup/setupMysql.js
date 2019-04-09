@@ -24,7 +24,7 @@ async function setupMysql(env, options = {}) {
 
   const setupSQL = _setupSQL(database, username, password)
 
-  const execute = (sql, options = {}) =>
+  const execute = (sql) =>
     execMysql(
       {
         host,
@@ -33,13 +33,12 @@ async function setupMysql(env, options = {}) {
         username: rootUsername,
       },
       sql,
-      options,
     )
 
   const _waitToSetup = async () => {
     for (let i = 0; i < retryMax; i++) {
       try {
-        await execute('SHOW DATABASES', { suppressOut: true })
+        await execute('SHOW DATABASES')
       } catch (e) {
         switch (e.code) {
           case 'ER_NOT_SUPPORTED_AUTH_MODE':

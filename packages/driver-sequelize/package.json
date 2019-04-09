@@ -1,7 +1,7 @@
 {
   "name": "@the-/driver-sequelize",
   "description": "Sequelize driver for the-framework",
-  "version": "15.2.2",
+  "version": "15.2.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
