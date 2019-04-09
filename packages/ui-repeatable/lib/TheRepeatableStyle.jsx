@@ -3,7 +3,6 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { ThemeValues } from '@the-/const-ui'
 import { TheStyle } from '@the-/ui-style'
 import { asStyleData } from '@the-/util-ui'
 
@@ -26,11 +25,7 @@ TheRepeatableStyle.defaultProps = {
   options: {},
 }
 
-TheRepeatableStyle.data = (options) => {
-  const {
-    dominantColor = ThemeValues.dominantColor,
-    lightTextColor = ThemeValues.lightTextColor,
-  } = options
+TheRepeatableStyle.data = () => {
   return asStyleData({
     '.the-repeatable': {
       minHeight: '84px',

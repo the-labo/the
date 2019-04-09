@@ -28,7 +28,6 @@ TheSpinStyle.defaultProps = {
 
 TheSpinStyle.data = (options) => {
   const {
-    dominantColor = ThemeValues.dominantColor,
     lightTextColor = ThemeValues.lightTextColor,
     overlayBackgroundColor = ThemeValues.overlayBackgroundColor,
   } = options

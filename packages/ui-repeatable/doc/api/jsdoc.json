@@ -35,7 +35,7 @@
     "description": "Style for TheRepeatable",
     "params": [],
     "meta": {
-      "lineno": 11,
+      "lineno": 10,
       "filename": "TheRepeatableStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
     },
@@ -200,7 +200,7 @@
     "description": "Style options",
     "memberof": "TheRepeatableStyle.propTypes",
     "meta": {
-      "lineno": 22,
+      "lineno": 21,
       "filename": "TheRepeatableStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
     },
