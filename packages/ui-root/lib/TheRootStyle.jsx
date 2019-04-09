@@ -26,8 +26,7 @@ TheRootStyle.defaultProps = {
   options: {},
 }
 
-TheRootStyle.data = (options) => {
-  const { dominantColor = ThemeValues.dominantColor } = options
+TheRootStyle.data = () => {
   return Object.assign(
     {},
     asStyleData({

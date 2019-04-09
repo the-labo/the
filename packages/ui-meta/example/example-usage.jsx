@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react'
-import { TheMeta, TheMetaStyle } from '@the-/ui-meta'
+import { TheMeta } from '@the-/ui-meta'
 
 class ExampleComponent extends React.Component {
 

@@ -48,7 +48,7 @@
     "description": "Style for ThePaint",
     "params": [],
     "meta": {
-      "lineno": 11,
+      "lineno": 10,
       "filename": "ThePaintStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
     },
@@ -93,7 +93,7 @@
     "description": "Style options",
     "memberof": "ThePaintStyle.propTypes",
     "meta": {
-      "lineno": 22,
+      "lineno": 21,
       "filename": "ThePaintStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
     },

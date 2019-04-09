@@ -27,10 +27,7 @@ TheAltStyle.defaultProps = {
 }
 
 TheAltStyle.data = (options) => {
-  const {
-    altTextColor = ThemeValues.altTextColor || '#AAA',
-    dominantColor = ThemeValues.dominantColor,
-  } = options
+  const { altTextColor = ThemeValues.altTextColor || '#AAA' } = options
   return asStyleData({
     '.the-alt': {
       color: altTextColor,
