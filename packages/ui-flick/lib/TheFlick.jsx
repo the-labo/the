@@ -146,7 +146,7 @@ class TheFlick extends React.Component {
     }
   }
 
-  handleDragStart(e) {
+  handleDragStart() {
     clearTimeout(this.movingTimer)
     this.setState({
       animating: false,
@@ -162,7 +162,6 @@ class TheFlick extends React.Component {
     }
     const { x } = data
     const amount = this.moveAmountFor(x)
-    const { activeIndex, onChange } = this.props
     const toLeft = amount < 0
     if (toLeft) {
       this.changeToPrev()

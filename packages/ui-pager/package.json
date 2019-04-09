@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-pager",
   "description": "Pager of the-components",
-  "version": "15.2.0",
+  "version": "15.2.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -36,7 +36,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/ui-pager#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "the",
     "ui"

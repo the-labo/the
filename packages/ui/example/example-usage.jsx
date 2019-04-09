@@ -6,8 +6,6 @@ import {
   TheRoot,
   TheHeader,
   TheMain,
-  TheRoute,
-  TheLink
 } from '@the-/ui'
 
 class Example extends React.Component {
@@ -18,6 +16,9 @@ class Example extends React.Component {
           <TheHeader>
           </TheHeader>
           <TheMain>
+            <TheContainer>
+
+            </TheContainer>
           </TheMain>
         </TheRoot>
       </div>

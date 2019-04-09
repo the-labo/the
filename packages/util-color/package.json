@@ -1,7 +1,7 @@
 {
   "name": "@the-/util-color",
   "description": "Color utility for the-framework",
-  "version": "15.2.0",
+  "version": "15.2.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -24,7 +24,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/util-color#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "the",
     "util"

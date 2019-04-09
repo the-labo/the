@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-hamburger",
   "description": "Hamburger menu for the-components",
-  "version": "15.2.0",
+  "version": "15.2.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -38,7 +38,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/ui-hamburger#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "the",
     "ui"
