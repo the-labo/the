@@ -32,7 +32,6 @@ TheSectionStyle.data = (options) => {
     backgroundColor = ThemeValues.backgroundColor,
     borderColor = ThemeValues.borderColor,
     hoverOpacity = ThemeValues.hoverOpacity,
-    lightBorderColor = ThemeValues.lightBorderColor,
     tappableHeight = ThemeValues.tappableHeight,
   } = options
   return Object.assign(
