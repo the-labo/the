@@ -8,7 +8,6 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { ThemeValues } from '@the-/const-ui'
 import { TheStyle } from '@the-/ui-style'
 import { asStyleData } from '@the-/util-ui'
 
