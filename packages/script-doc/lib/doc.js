@@ -9,8 +9,8 @@
 'use strict'
 
 const aglob = require('aglob')
-const argx = require('argx')
 const jsdocToMarkdown = require('jsdoc-to-markdown')
+const argx = require('argx')
 const { EOL } = require('os')
 const path = require('path')
 const writeout = require('writeout')

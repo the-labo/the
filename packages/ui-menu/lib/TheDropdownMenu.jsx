@@ -3,7 +3,7 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import withClickOutside from 'react-click-outside'
+import ClickOutside from 'react-click-outside'
 import { TheIcon } from '@the-/ui-icon'
 import {
   changedProps,
@@ -56,6 +56,7 @@ class TheDropDownMenu extends React.Component {
     this.toggleDropDown = this.toggleDropDown.bind(this)
     this.close = this.toggleDropDown.bind(this, false)
     this.open = this.toggleDropDown.bind(this, true)
+    this.handleClickOutside = this.handleClickOutside.bind(this)
     this.unlistenHistory = null
   }
 
@@ -107,27 +108,29 @@ class TheDropDownMenu extends React.Component {
     } = props
     const { open } = state
     return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className', 'label'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-dropdown-menu', className, {
-          'the-dropdown-menu-open': open,
-          'the-dropdown-menu-righted': righted,
-        })}
-      >
-        <div className='the-dropdown-menu-content'>
-          <TheDropDownMenu.Button
-            aria-expanded={open}
-            icon={label ? icon : null}
-            onClick={open ? this.close : this.open}
-          >
-            {label || <TheIcon className={icon} />}
-          </TheDropDownMenu.Button>
-          <div className='the-dropdown-menu-inner'>
-            <TheMenu role='none'>{children}</TheMenu>
+      <ClickOutside onClickOutside={this.handleClickOutside}>
+        <div
+          {...htmlAttributesFor(props, { except: ['className', 'label'] })}
+          {...eventHandlersFor(props, { except: [] })}
+          className={c('the-dropdown-menu', className, {
+            'the-dropdown-menu-open': open,
+            'the-dropdown-menu-righted': righted,
+          })}
+        >
+          <div className='the-dropdown-menu-content'>
+            <TheDropDownMenu.Button
+              aria-expanded={open}
+              icon={label ? icon : null}
+              onClick={open ? this.close : this.open}
+            >
+              {label || <TheIcon className={icon} />}
+            </TheDropDownMenu.Button>
+            <div className='the-dropdown-menu-inner'>
+              <TheMenu role='none'>{children}</TheMenu>
+            </div>
           </div>
         </div>
-      </div>
+      </ClickOutside>
     )
   }
 
@@ -165,4 +168,4 @@ TheDropDownMenu.contextTypes = {
   history: PropTypes.object,
 }
 
-export default withClickOutside(TheDropDownMenu)
+export default TheDropDownMenu

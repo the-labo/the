@@ -78,7 +78,7 @@
     "description": "Event types to close for",
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
-      "lineno": 146,
+      "lineno": 149,
       "filename": "TheDropdownMenu.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
     },
@@ -93,7 +93,7 @@
     "description": "Label for toggle button",
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
-      "lineno": 148,
+      "lineno": 151,
       "filename": "TheDropdownMenu.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
     },
@@ -108,7 +108,7 @@
     "description": "Open  when mounted",
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
-      "lineno": 150,
+      "lineno": 153,
       "filename": "TheDropdownMenu.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
     },
@@ -123,7 +123,7 @@
     "description": "Show on righthand",
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
-      "lineno": 152,
+      "lineno": 155,
       "filename": "TheDropdownMenu.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
     },

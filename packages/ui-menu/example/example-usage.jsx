@@ -6,7 +6,6 @@ import { TheRouter } from '@the-/ui-router'
 
 class ExampleComponent extends React.PureComponent {
   render () {
-    const s = this
     const ExampleMenu = ({grid = false}) => (
       <TheMenu grid={grid}>
         <TheMenu.Item icon='fa fa-support' text='Help' to='/help'/>
