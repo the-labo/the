@@ -1184,7 +1184,7 @@
     "params": [],
     "deprecated": true,
     "meta": {
-      "lineno": 15,
+      "lineno": 18,
       "filename": "Scope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },

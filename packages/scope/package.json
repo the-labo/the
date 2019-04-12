@@ -1,7 +1,7 @@
 {
   "name": "@the-/scope",
   "description": "State scope for the-store",
-  "version": "15.2.2",
+  "version": "15.2.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,7 +12,8 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.2.3",
+    "@the-/assert": "^15.2.0",
+    "@the-/check": "^15.2.5",
     "asobj": "^3.0.1"
   },
   "devDependencies": {

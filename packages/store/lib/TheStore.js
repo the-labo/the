@@ -17,11 +17,13 @@ const {
 } = require('bredux')
 const { get } = require('bwindow')
 const { flatten } = require('objnest')
+const theAssert = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
 const { scopes } = require('@the-/scope')
 const helpers = require('./helpers')
 const toStoreScopeClass = require('./toStoreScopeClass')
 
+const assert = theAssert('the:store')
 const { parseDef, setByNamepath } = helpers
 
 const NAMEPATH_SEPARATOR = '.'
@@ -102,9 +104,14 @@ class TheStore {
    * @returns {TheStore.Scope} Loaded scope
    */
   load(ScopeClass, ...names) {
-    unlessProduction(({ ok }) => {
-      ok(typeof ScopeClass !== 'string', 'ScopeClass must be an constructor')
-      names.map((name) => ok(typeof name === 'string', 'Names must be string'))
+    unlessProduction(() => {
+      assert(
+        typeof ScopeClass !== 'string',
+        'ScopeClass must be an constructor',
+      )
+      names.map((name) =>
+        assert(typeof name === 'string', 'Names must be string'),
+      )
     })
 
     const namepath = names.join(NAMEPATH_SEPARATOR)

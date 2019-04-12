@@ -199,7 +199,7 @@
       }
     ],
     "meta": {
-      "lineno": 104,
+      "lineno": 106,
       "filename": "TheStore.js",
       "path": "/Users/okuni/Projects/the/packages/store/lib"
     },
@@ -215,7 +215,7 @@
     "params": [],
     "deprecated": true,
     "meta": {
-      "lineno": 162,
+      "lineno": 169,
       "filename": "TheStore.js",
       "path": "/Users/okuni/Projects/the/packages/store/lib"
     },
@@ -231,7 +231,7 @@
     "params": [],
     "deprecated": true,
     "meta": {
-      "lineno": 181,
+      "lineno": 188,
       "filename": "TheStore.js",
       "path": "/Users/okuni/Projects/the/packages/store/lib"
     },
@@ -268,7 +268,7 @@
       }
     ],
     "meta": {
-      "lineno": 193,
+      "lineno": 200,
       "filename": "TheStore.js",
       "path": "/Users/okuni/Projects/the/packages/store/lib"
     },
@@ -297,7 +297,7 @@
       }
     ],
     "meta": {
-      "lineno": 220,
+      "lineno": 227,
       "filename": "TheStore.js",
       "path": "/Users/okuni/Projects/the/packages/store/lib"
     },

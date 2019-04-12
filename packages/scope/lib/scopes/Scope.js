@@ -7,7 +7,10 @@
  */
 'use strict'
 
+const theAssert = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
+
+const assert = theAssert('the:scope')
 
 /** @lends Scope */
 class Scope {
@@ -23,8 +26,8 @@ class Scope {
   }
 
   constructor(name) {
-    unlessProduction(({ ok }) => {
-      ok(name, '[Scope] name is required!')
+    unlessProduction(() => {
+      assert(name, '[Scope] name is required!')
     })
     this.name = name
     this._state = undefined
