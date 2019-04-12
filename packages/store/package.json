@@ -1,7 +1,7 @@
 {
   "name": "@the-/store",
   "description": "Redux wrapper for the-framework",
-  "version": "15.2.4",
+  "version": "15.2.5",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,7 +14,7 @@
   "dependencies": {
     "@the-/assert": "^15.2.0",
     "@the-/check": "^15.2.5",
-    "@the-/scope": "^15.2.0",
+    "@the-/scope": "^15.2.3",
     "argx": "^4.0.0",
     "asobj": "^3.0.1",
     "bredux": "^3.0.7",
