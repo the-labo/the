@@ -19,6 +19,10 @@
     "kind": "lib",
     "name": "assert"
   },
+  "the-keyboard": {
+    "kind": "ui",
+    "name": "ui-keyboard"
+  },
   "the-assets": {
     "kind": "lib",
     "name": "assets"
