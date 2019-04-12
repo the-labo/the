@@ -25,6 +25,7 @@ const asleep = require('asleep')
 const { clone } = require('asobj')
 const { ClayLump } = require('clay-lump')
 const uuid = require('uuid')
+const theAssert = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
 const theHash = require('@the-/hash')
 const { isResourceClass } = require('@the-/resource')
@@ -37,6 +38,8 @@ const parseSchema = require('./helpers/parseSchema')
 const m = require('./mixins')
 const { TheLogResource, TheSchemaResource } = require('./resources')
 const setupForEnv = require('./setupForEnv')
+
+const assert = theAssert('the:db')
 
 const TheDBBase = [
   m.resourceMix,
@@ -139,9 +142,9 @@ class TheDB extends TheDBBase {
    * @returns {ClayResource} Loaded resource class
    */
   load(ResourceClass, resourceName) {
-    unlessProduction(({ ok }) => {
-      ok(!!ResourceClass, 'ResourceClass is required')
-      ok(
+    unlessProduction(() => {
+      assert(!!ResourceClass, 'ResourceClass is required')
+      assert(
         isResourceClass(ResourceClass),
         'ResourceClass should inherit TheResource',
       )

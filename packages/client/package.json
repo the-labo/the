@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.2.3",
+    "@the-/check": "^15.2.4",
     "@the-/pack": "^15.2.0",
     "@the-/queue": "^15.2.0",
     "@the-/stream": "^15.2.0",
@@ -24,7 +24,7 @@
     "debug": "^4.1.1",
     "prop-types": "^15.7.2",
     "qs": "^6.7.0",
-    "rfunc-client": "^5.0.5",
+    "rfunc-client": "^5.0.6",
     "rfunc-constants": "^1.0.5",
     "socket.io-client": "^2.2.0",
     "url": "^0.11.0",

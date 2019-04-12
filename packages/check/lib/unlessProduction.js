@@ -12,8 +12,7 @@ function unlessProduction(handler) {
   if (isProduction()) {
     return true
   }
-  const assert = require('assert')
-  handler(assert)
+  handler()
 }
 
 module.exports = unlessProduction

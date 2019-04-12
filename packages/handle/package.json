@@ -1,7 +1,7 @@
 {
   "name": "@the-/handle",
   "description": "Action handler for the-framework",
-  "version": "15.2.2",
+  "version": "15.2.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,9 +12,9 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.2.3",
+    "@the-/check": "^15.2.4",
     "abind": "^1.0.5",
-    "asenv": "^3.0.1",
+    "asenv": "^3.0.2",
     "asobj": "^3.0.1"
   },
   "devDependencies": {

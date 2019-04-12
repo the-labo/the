@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@the-/cache": "^15.2.0",
-    "@the-/check": "^15.2.3",
+    "@the-/check": "^15.2.4",
     "@the-/controller": "^15.2.0",
     "@the-/mixin-controller": "^15.2.3",
     "@the-/pack": "^15.2.0",
@@ -26,7 +26,7 @@
     "debug": "^4.1.1",
     "locale": "^0.1.0",
     "qs": "^6.7.0",
-    "rfunc": "^4.0.10",
+    "rfunc": "^4.0.11",
     "rimraf": "^2.6.3",
     "socket.io": "^2.2.0",
     "socket.io-client": "^2.2.0",
