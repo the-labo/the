@@ -5,7 +5,7 @@
 'use strict'
 
 const { deepEqual } = require('assert').strict
-const changedProps = require('../lib')
+const changedProps = require('../lib/changedProps')
 describe('changed-props', () => {
   before(() => {})
 
