@@ -13,14 +13,14 @@
   "dependencies": {
     "@the-/const-ui": "^2.0.11",
     "@the-/ui-style": "^15.2.0",
-    "@the-/util-ui": "^15.2.0",
+    "@the-/util-ui": "^15.2.4",
     "classnames": "^2.2.6",
     "clay-list-pager": "^3.0.1",
     "numcal": "^4.0.0",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.4.2",
+    "@babel/runtime": "^7.4.3",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",

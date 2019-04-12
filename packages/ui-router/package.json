@@ -11,17 +11,17 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/util-ui": "^15.2.0",
+    "@the-/util-ui": "^15.2.4",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.4.2",
+    "@babel/runtime": "^7.4.3",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
-    "@the-/ui-demo": "^15.2.0",
+    "@the-/ui-demo": "^15.2.3",
     "@the-/ui-route": "^15.2.0",
     "@the-/ui-style": "^15.2.0",
     "react": "^16.8.6",

@@ -16,7 +16,7 @@
   "dependencies": {
     "askconfig": "^4.0.2",
     "asobj": "^3.0.1",
-    "commander": "^2.19.0",
+    "commander": "^2.20.0",
     "gitconfig": "^2.0.8",
     "tmplconv": "^5.0.1"
   },

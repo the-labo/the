@@ -1,7 +1,7 @@
 {
   "name": "@the-/assets",
   "description": "Assets for the-framework",
-  "version": "15.2.2",
+  "version": "15.2.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "aglob": "^3.0.2",
-    "es5-shim": "^4.5.12",
+    "es5-shim": "^4.5.13",
     "filecopy": "^4.0.2",
     "filelink": "^4.0.1"
   },

@@ -13,12 +13,12 @@
   "dependencies": {
     "@the-/ui-style": "^15.2.0",
     "@the-/util-component": "^15.1.4",
-    "@the-/util-ui": "^15.2.0",
+    "@the-/util-ui": "^15.2.4",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.4.2",
+    "@babel/runtime": "^7.4.3",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",

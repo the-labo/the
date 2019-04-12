@@ -12,13 +12,13 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.2.0",
+    "@the-/check": "^15.2.3",
     "abind": "^1.0.5",
     "asenv": "^3.0.1",
     "asobj": "^3.0.1"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.4.2",
+    "@babel/runtime": "^7.4.3",
     "@the-/scene": "file:../scene",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",

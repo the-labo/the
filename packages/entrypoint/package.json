@@ -12,14 +12,14 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.2.0",
+    "@the-/check": "^15.2.3",
     "@the-/ui-router": "^15.2.0",
     "@the-/url": "^15.2.0",
     "@the-/window": "^15.2.0",
     "history": "^4.9.0"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.4.2",
+    "@babel/runtime": "^7.4.3",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",

@@ -14,7 +14,7 @@
   "dependencies": {
     "asleep": "^1.0.3",
     "debug": "^4.1.1",
-    "web-streams-polyfill": "^2.0.2"
+    "web-streams-polyfill": "^2.0.3"
   },
   "devDependencies": {
     "@the-/script-build": "file:../script-build",

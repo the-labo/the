@@ -12,10 +12,10 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.2.0",
-    "aws-sdk": "^2.433.0",
+    "@the-/check": "^15.2.3",
+    "aws-sdk": "^2.437.0",
     "debug": "^4.1.1",
-    "mime": "^2.4.0"
+    "mime": "^2.4.2"
   },
   "devDependencies": {
     "@the-/script-build": "file:../script-build",

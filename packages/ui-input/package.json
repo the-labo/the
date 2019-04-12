@@ -11,14 +11,14 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.2.0",
+    "@the-/check": "^15.2.3",
     "@the-/const-ui": "^2.0.11",
-    "@the-/ui-condition": "^15.2.0",
+    "@the-/ui-condition": "^15.2.3",
     "@the-/ui-icon": "^15.2.1",
     "@the-/ui-spin": "^15.2.0",
     "@the-/ui-style": "^15.2.0",
     "@the-/util-array": "^15.2.0",
-    "@the-/util-ui": "^15.2.0",
+    "@the-/util-ui": "^15.2.4",
     "@the-/window": "^15.2.0",
     "asobj": "^3.0.1",
     "chopcal": "^3.0.3",

@@ -11,8 +11,8 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.2.0",
-    "@the-/ui-condition": "^15.2.0",
+    "@the-/check": "^15.2.3",
+    "@the-/ui-condition": "^15.2.3",
     "@the-/ui-style": "^15.2.0",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"

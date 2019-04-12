@@ -14,7 +14,7 @@
     "@the-/ui-style": "^15.2.0",
     "@the-/util-ui": "^15.2.4",
     "classnames": "^2.2.6",
-    "prop-types": "^15.6.2"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@babel/runtime": "^7.4.2",
@@ -24,7 +24,7 @@
     "@the-/templates": "file:../templates",
     "@the-/ui-demo": "file:../ui-demo",
     "coz": "^7.0.19",
-    "objnest": "^5.0.3",
+    "objnest": "^5.0.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0"
