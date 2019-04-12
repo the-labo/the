@@ -7,11 +7,12 @@
  */
 'use strict'
 
+const theAssert = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
 const helpers = require('./helpers')
 const toHandleSceneClass = require('./toHandleSceneClass')
 const NAMEPATH_SEPARATOR = '.'
-
+const assert = theAssert('the:handle')
 const shortNameOfScene = (n) => n && n.replace(/_scene$|Scene$/, '')
 
 const { allMethodNames, setByNamepath } = helpers
@@ -47,9 +48,14 @@ class TheHandle {
   load(SceneClass, ...names) {
     const { attributes } = this
 
-    unlessProduction(({ ok }) => {
-      ok(typeof SceneClass !== 'string', 'SceneClass must be an constructor')
-      names.map((name) => ok(typeof name === 'string', 'Names must be string'))
+    unlessProduction(() => {
+      assert(
+        typeof SceneClass !== 'string',
+        'SceneClass must be an constructor',
+      )
+      names.map((name) =>
+        assert(typeof name === 'string', 'Names must be string'),
+      )
     })
 
     const namepath = names.join(NAMEPATH_SEPARATOR)
