@@ -1,7 +1,7 @@
 /**
  * Demo of the-components
- * @memberof module:@the-/demo-component
- * @class TheDemoComponent
+ * @memberof module:@the-/demo-ui
+ * @class TheDemoUi
  * @extends React.Component
  */
 'use strict'
@@ -10,8 +10,8 @@ import c from 'classnames'
 import React from 'react'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
-/** @lends TheDemoComponent */
-class TheDemoComponent extends React.Component {
+/** @lends TheDemoUi */
+class TheDemoUi extends React.Component {
   render() {
     const { props } = this
     const { children, className } = props
@@ -19,7 +19,7 @@ class TheDemoComponent extends React.Component {
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}
         {...eventHandlersFor(props, { except: [] })}
-        className={c('the-demo-component', className)}
+        className={c('the-demo-ui', className)}
       >
         {children}
       </div>
@@ -27,10 +27,10 @@ class TheDemoComponent extends React.Component {
   }
 }
 
-TheDemoComponent.propTypes = {}
+TheDemoUi.propTypes = {}
 
-TheDemoComponent.defaultProps = {}
+TheDemoUi.defaultProps = {}
 
-TheDemoComponent.displayName = 'TheDemoComponent'
+TheDemoUi.displayName = 'TheDemoUi'
 
-export default TheDemoComponent
+export default TheDemoUi

@@ -1,5 +1,5 @@
 {
-  "component": "assets/tmpl/component",
   "lib": "assets/tmpl/lib",
-  "site": "assets/tmpl/site"
+  "site": "assets/tmpl/site",
+  "ui": "assets/tmpl/ui"
 }

@@ -1,20 +1,20 @@
 /**
- * Test for TheDemoComponentStyle.
+ * Test for TheDemoUi.
  * Runs with mocha.
  */
 'use strict'
 
 const { ok } = require('assert').strict
 const React = require('react')
-const TheDemoComponentStyle = require('../shim/TheDemoComponentStyle').default
+const TheDemoUi = require('../shim/TheDemoUi').default
 
-describe('the-demo-component-style', () => {
+describe('the-demo-ui', () => {
   before(() => {})
 
   after(() => {})
 
   it('Do test', () => {
-    ok(React.createElement(TheDemoComponentStyle))
+    ok(React.createElement(TheDemoUi))
   })
 })
 

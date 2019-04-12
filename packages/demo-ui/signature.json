@@ -1,12 +1,12 @@
 {
-  "TheDemoComponent": {
+  "TheDemoUi": {
     "description": "Demo of the-components",
-    "displayName": "TheDemoComponent",
+    "displayName": "TheDemoUi",
     "methods": []
   },
-  "TheDemoComponentStyle": {
-    "description": "Style for TheDemoComponent",
-    "displayName": "TheDemoComponentStyle",
+  "TheDemoUiStyle": {
+    "description": "Style for TheDemoUi",
+    "displayName": "TheDemoUiStyle",
     "methods": [],
     "props": {
       "options": {

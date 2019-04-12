@@ -5,15 +5,15 @@
  */
 'use strict'
 
-import TheDemoComponent from './TheDemoComponent'
-import TheDemoComponentStyle from './TheDemoComponentStyle'
+import TheDemoUi from './TheDemoUi'
+import TheDemoUiStyle from './TheDemoUiStyle'
 
 export {
-  TheDemoComponent,
-  TheDemoComponentStyle,
+  TheDemoUi,
+  TheDemoUiStyle,
 }
 
 export default {
-      TheDemoComponent,
-      TheDemoComponentStyle,
+      TheDemoUi,
+      TheDemoUiStyle,
 }

@@ -5,3 +5,25 @@
 ## @the-/demo-ui
 Demo of the-components
 
+
+* [@the-/demo-ui](#module_@the-/demo-ui)
+    * [.TheDemoUi](#module_@the-/demo-ui.TheDemoUi) ⇐ <code>React.Component</code>
+        * [new TheDemoUi()](#new_module_@the-/demo-ui.TheDemoUi_new)
+    * [.TheDemoUiStyle()](#module_@the-/demo-ui.TheDemoUiStyle)
+
+<a name="module_@the-/demo-ui.TheDemoUi"></a>
+
+### @the-/demo-ui.TheDemoUi ⇐ <code>React.Component</code>
+**Kind**: static class of [<code>@the-/demo-ui</code>](#module_@the-/demo-ui)  
+**Extends**: <code>React.Component</code>  
+<a name="new_module_@the-/demo-ui.TheDemoUi_new"></a>
+
+#### new TheDemoUi()
+Demo of the-components
+
+<a name="module_@the-/demo-ui.TheDemoUiStyle"></a>
+
+### @the-/demo-ui.TheDemoUiStyle()
+Style for TheDemoUi
+
+**Kind**: static method of [<code>@the-/demo-ui</code>](#module_@the-/demo-ui)  
