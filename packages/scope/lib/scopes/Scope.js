@@ -7,7 +7,7 @@
  */
 'use strict'
 
-const theAssert = require('@the-/assert')
+const theAssert = require('@the-/assert').create
 const { unlessProduction } = require('@the-/check')
 
 const assert = theAssert('the:scope')
