@@ -1,0 +1,89 @@
+[
+  {
+    "id": "module:@the-/ui-keyboard",
+    "longname": "module:@the-/ui-keyboard",
+    "name": "@the-/ui-keyboard",
+    "kind": "module",
+    "description": "Keyboard component",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-keyboard/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheKeyboard",
+    "longname": "TheKeyboard",
+    "name": "TheKeyboard",
+    "kind": "class",
+    "scope": "global",
+    "description": "Keyboard component",
+    "meta": {
+      "lineno": 12,
+      "filename": "TheKeyboard.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-keyboard/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheKeyboardStyle",
+    "longname": "TheKeyboardStyle",
+    "name": "TheKeyboardStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheKeyboard",
+    "params": [],
+    "meta": {
+      "lineno": 10,
+      "filename": "TheKeyboardStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-keyboard/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheKeyboard.propTypes.keys",
+    "longname": "TheKeyboard.propTypes.keys",
+    "name": "keys",
+    "kind": "member",
+    "scope": "static",
+    "description": "Keys to show",
+    "memberof": "TheKeyboard.propTypes",
+    "meta": {
+      "lineno": 43,
+      "filename": "TheKeyboard.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-keyboard/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheKeyboard.propTypes.onKeyPress",
+    "longname": "TheKeyboard.propTypes.onKeyPress",
+    "name": "onKeyPress",
+    "kind": "member",
+    "scope": "static",
+    "description": "Handle key press",
+    "memberof": "TheKeyboard.propTypes",
+    "meta": {
+      "lineno": 45,
+      "filename": "TheKeyboard.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-keyboard/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "TheKeyboardStyle.propTypes.options",
+    "longname": "TheKeyboardStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
+    "memberof": "TheKeyboardStyle.propTypes",
+    "meta": {
+      "lineno": 21,
+      "filename": "TheKeyboardStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-keyboard/lib"
+    },
+    "order": 5
+  }
+]
