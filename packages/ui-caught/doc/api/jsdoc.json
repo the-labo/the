@@ -50,7 +50,7 @@
     "description": "Caught error",
     "memberof": "TheCaught.propTypes",
     "meta": {
-      "lineno": 41,
+      "lineno": 47,
       "filename": "TheCaught.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
     },
@@ -65,7 +65,7 @@
     "description": "Error Info",
     "memberof": "TheCaught.propTypes",
     "meta": {
-      "lineno": 43,
+      "lineno": 49,
       "filename": "TheCaught.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
     },

@@ -37,6 +37,12 @@ TheCaughtStyle.data = () => {
       padding: '16px',
       width: '100%',
     },
+    '.the-caught-line': {
+      border: '1px solid #CCC',
+      borderBottom: 'none',
+      boxShadow: 'none',
+      margin: '8px auto 0',
+    },
     '.the-caught-stack': {
       background: '#FCFCFC',
       border: '1px solid #F5F5F5',

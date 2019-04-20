@@ -63,6 +63,14 @@
     "kind": "ui",
     "name": "ui-caught"
   },
+  "the-copyboard": {
+    "kind": "ui",
+    "name": "ui-copyboard"
+  },
+  "the-chart": {
+    "kind": "ui",
+    "name": "ui-chart"
+  },
   "the-check": {
     "kind": "lib",
     "name": "check"

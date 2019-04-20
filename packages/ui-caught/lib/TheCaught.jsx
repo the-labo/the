@@ -28,8 +28,14 @@ class TheCaught extends React.Component {
           {String(error.message || error)}
         </h3>
         {children}
-        <TheCondition if={!!componentStack && !isProduction()}>
-          <pre className='the-caught-stack'>{componentStack}</pre>
+        <TheCondition if={!isProduction()}>
+          <pre className='the-caught-stack'>
+            <div>{error.stack}</div>
+            <hr className={'the-caught-line'} />
+            <TheCondition if={!!componentStack}>
+              <div>{componentStack}</div>
+            </TheCondition>
+          </pre>
         </TheCondition>
       </div>
     )

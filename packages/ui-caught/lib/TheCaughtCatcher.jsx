@@ -25,7 +25,10 @@ class TheCaughtCatcher extends React.Component {
     return (
       <div className='the-catching-container'>
         <TheCaught
-          error={[title, error.message || error].join(' - ')}
+          error={{
+            message: [title, error.message || error].join(' - '),
+            stack: error.stack,
+          }}
           info={info}
         />
       </div>

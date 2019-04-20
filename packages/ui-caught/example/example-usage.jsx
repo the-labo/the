@@ -1,18 +1,26 @@
 'use strict'
 
 import React from 'react'
-import { TheCaught, TheCaughtStyle } from '@the-/ui-caught'
+import { TheCaughtCatcher, TheCaughtStyle } from '@the-/ui-caught'
 
 class ExampleComponent extends React.PureComponent {
-  render () {
+  render() {
     return (
       <div>
-        <TheCaughtStyle/>
-        <TheCaught error={'Something is wrong!'}>
-        </TheCaught>
+        <TheCaughtStyle />
+        <TheCaughtCatcher>
+          <ExampleComponent.Content />
+        </TheCaughtCatcher>
       </div>
-
     )
+  }
+  static Content = class Content extends React.Component {
+    componentDidMount() {
+      throw new Error('Something is wrong!')
+    }
+    render() {
+      return <div>This is content</div>
+    }
   }
 }
 
