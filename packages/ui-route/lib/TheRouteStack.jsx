@@ -33,15 +33,16 @@ class TheRouteStack extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    const stackChanged =
-      stackIdOf(this.props.stack) !== stackIdOf(prevProps.stack)
+    const { onChange, stack } = this.props
+    const stackChanged = stackIdOf(stack) !== stackIdOf(prevProps.stack)
     if (stackChanged) {
       const innerElm = this.innerRef.current
       if (innerElm) {
         innerElm.scrollTop = 0
       }
-      this.registerRoutes(this.props.stack)
+      this.registerRoutes(stack)
       this.requestResize()
+      onChange && onChange(stack)
     }
   }
 
@@ -163,12 +164,15 @@ class TheRouteStackRoute extends React.Component {
 TheRouteStack.propTypes = {
   /** Stack direction */
   direction: PropTypes.oneOf(['horizontal', 'vertical']),
+  /** Handle stack change */
+  onChange: PropTypes.func,
   /** Stacks */
   stack: PropTypes.array.isRequired,
 }
 
 TheRouteStack.defaultProps = {
   direction: 'horizontal',
+  onChange: null,
   stack: [],
 }
 

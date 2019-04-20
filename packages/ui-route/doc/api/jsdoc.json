@@ -66,7 +66,7 @@
       "filename": "TheRouteStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
     },
-    "order": 12
+    "order": 13
   },
   {
     "id": "TheRoute.propTypes.animationDuration",
@@ -167,11 +167,26 @@
     "description": "Stack direction",
     "memberof": "TheRouteStack.propTypes",
     "meta": {
-      "lineno": 165,
+      "lineno": 166,
       "filename": "TheRouteStack.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
     },
     "order": 10
+  },
+  {
+    "id": "TheRouteStack.propTypes.onChange",
+    "longname": "TheRouteStack.propTypes.onChange",
+    "name": "onChange",
+    "kind": "member",
+    "scope": "static",
+    "description": "Handle stack change",
+    "memberof": "TheRouteStack.propTypes",
+    "meta": {
+      "lineno": 168,
+      "filename": "TheRouteStack.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
+    },
+    "order": 11
   },
   {
     "id": "TheRouteStack.propTypes.stack",
@@ -182,11 +197,11 @@
     "description": "Stacks",
     "memberof": "TheRouteStack.propTypes",
     "meta": {
-      "lineno": 167,
+      "lineno": 170,
       "filename": "TheRouteStack.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
     },
-    "order": 11
+    "order": 12
   },
   {
     "id": "TheRouteStyle.propTypes.options",
@@ -201,6 +216,6 @@
       "filename": "TheRouteStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
     },
-    "order": 13
+    "order": 14
   }
 ]

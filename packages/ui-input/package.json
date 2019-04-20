@@ -11,7 +11,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.2.3",
+    "@the-/check": "^15.2.6",
     "@the-/const-ui": "^2.0.11",
     "@the-/ui-condition": "^15.2.3",
     "@the-/ui-icon": "^15.2.1",
@@ -26,7 +26,7 @@
     "flatpickr": "^4.5.7",
     "prop-types": "^15.7.2",
     "rangecal": "^2.0.1",
-    "react-draggable": "^3.2.1",
+    "react-draggable": "^3.3.0",
     "regex-email": "^1.0.2",
     "regex-url": "^1.0.0",
     "video-extensions": "^1.1.0"

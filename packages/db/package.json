@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@the-/assert": "^15.2.0",
-    "@the-/check": "^15.2.3",
+    "@the-/check": "^15.2.6",
     "@the-/driver-mongo": "^15.2.0",
     "@the-/driver-sequelize": "^15.2.4",
     "@the-/hash": "^15.2.0",

@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@the-/cache": "^15.2.0",
-    "@the-/check": "^15.2.4",
+    "@the-/check": "^15.2.6",
     "@the-/controller": "^15.2.0",
     "@the-/mixin-controller": "^15.2.3",
     "@the-/pack": "^15.2.0",
@@ -34,7 +34,7 @@
     "stringcase": "^4.3.1"
   },
   "devDependencies": {
-    "@the-/client": "^15.2.2",
+    "@the-/client": "^15.2.3",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",

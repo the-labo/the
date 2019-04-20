@@ -16,7 +16,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.2.0",
+    "@the-/check": "^15.2.6",
     "@the-/media": "^15.2.0",
     "@the-/pack": "^15.2.0",
     "@the-/window": "^15.2.0",

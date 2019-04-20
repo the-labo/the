@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@the-/assert": "^15.2.0",
-    "@the-/check": "^15.2.5",
+    "@the-/check": "^15.2.6",
     "abind": "^1.0.5",
     "asenv": "^3.0.2",
     "asobj": "^3.0.1"

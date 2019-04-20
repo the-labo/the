@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.2.4",
+    "@the-/check": "^15.2.6",
     "@the-/pack": "^15.2.0",
     "@the-/queue": "^15.2.0",
     "@the-/stream": "^15.2.0",
@@ -35,7 +35,7 @@
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
-    "@the-/server": "^15.2.4",
+    "@the-/server": "^15.2.5",
     "@the-/templates": "file:../templates",
     "aport": "^2.0.0",
     "coz": "^7.0.19",

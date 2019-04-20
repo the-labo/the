@@ -15,6 +15,7 @@ async function processJSPrettier(content) {
     jsxBracketSameLine: false,
     jsxSingleQuote: true,
     parser: 'babel',
+    quoteProps: 'as-needed',
     semi: false,
     singleQuote: true,
     trailingComma: 'all',

@@ -39,6 +39,17 @@ const b = 123
 `,
     )
   })
+
+  it('Quote props', async () => {
+    equal(
+      await processJSPrettier(`
+      const x = {a:1, 'b':2, [c]: 3}
+      console.log(x)
+      `), `const x = { a: 1, b: 2, [c]: 3 }
+console.log(x)
+`,
+    )
+  })
 })
 
 /* global describe, before, after, it */

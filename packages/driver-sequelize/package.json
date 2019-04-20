@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.2.3",
+    "@the-/check": "^15.2.6",
     "@the-/resource": "^15.2.0",
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.3",
@@ -20,7 +20,7 @@
     "clay-driver-base": "^4.1.7",
     "clay-list-pager": "^3.0.1",
     "clay-resource-name": "^4.0.5",
-    "sequelize": "^5.3.2",
+    "sequelize": "^5.7.1",
     "utf8": "^3.0.0"
   },
   "devDependencies": {
