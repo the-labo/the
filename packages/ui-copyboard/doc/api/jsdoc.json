@@ -1,0 +1,104 @@
+[
+  {
+    "id": "module:@the-/ui-copyboard",
+    "longname": "module:@the-/ui-copyboard",
+    "name": "@the-/ui-copyboard",
+    "kind": "module",
+    "description": "Component for clip-to-copy",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-copyboard/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheCopyboard",
+    "longname": "TheCopyboard",
+    "name": "TheCopyboard",
+    "kind": "class",
+    "scope": "global",
+    "description": "Component for clip-to-copy",
+    "meta": {
+      "lineno": 13,
+      "filename": "TheCopyboard.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-copyboard/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheCopyboardStyle",
+    "longname": "TheCopyboardStyle",
+    "name": "TheCopyboardStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheCopyboard",
+    "params": [],
+    "meta": {
+      "lineno": 10,
+      "filename": "TheCopyboardStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-copyboard/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheCopyboard.propTypes.text",
+    "longname": "TheCopyboard.propTypes.text",
+    "name": "text",
+    "kind": "member",
+    "scope": "static",
+    "description": "Text to show",
+    "memberof": "TheCopyboard.propTypes",
+    "meta": {
+      "lineno": 99,
+      "filename": "TheCopyboard.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-copyboard/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheCopyboard.propTypes.tipDuration",
+    "longname": "TheCopyboard.propTypes.tipDuration",
+    "name": "tipDuration",
+    "kind": "member",
+    "scope": "static",
+    "description": "Duration to shows tip",
+    "memberof": "TheCopyboard.propTypes",
+    "meta": {
+      "lineno": 101,
+      "filename": "TheCopyboard.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-copyboard/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "TheCopyboard.propTypes.tipText",
+    "longname": "TheCopyboard.propTypes.tipText",
+    "name": "tipText",
+    "kind": "member",
+    "scope": "static",
+    "description": "Text for tip",
+    "memberof": "TheCopyboard.propTypes",
+    "meta": {
+      "lineno": 103,
+      "filename": "TheCopyboard.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-copyboard/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheCopyboardStyle.propTypes.options",
+    "longname": "TheCopyboardStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
+    "memberof": "TheCopyboardStyle.propTypes",
+    "meta": {
+      "lineno": 21,
+      "filename": "TheCopyboardStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-copyboard/lib"
+    },
+    "order": 6
+  }
+]

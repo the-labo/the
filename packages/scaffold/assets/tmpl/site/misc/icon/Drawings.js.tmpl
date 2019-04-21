@@ -4,11 +4,10 @@
  */
 'use strict'
 
-const Local = require('../../Local')
 const pkg = require('../../package')
 const { Styles } = require('../../conf')
 
-const FONT_THEME = 'a'
+const FONT_THEME = 'c'
 
 module.exports = Object.freeze(
   /** @lends Drawings */
@@ -17,7 +16,7 @@ module.exports = Object.freeze(
       text: pkg.name[0],
       font: FONT_THEME,
       shape: 'g',
-      color: Styles.DOMINANT_COLOR
+      color: Styles.DOMINANT_COLOR,
     },
     fbAppIcon: {
       text: pkg.name,
@@ -25,7 +24,7 @@ module.exports = Object.freeze(
       shape: 'a',
       color: Styles.DOMINANT_COLOR,
       size: 1024,
-      fontSize: 128
+      fontSize: 128,
     },
     officialAccountIcon: {
       text: pkg.name,
@@ -33,7 +32,7 @@ module.exports = Object.freeze(
       shape: 'a',
       color: Styles.DOMINANT_COLOR,
       size: 256,
-      fontSize: 24
-    }
-  }
+      fontSize: 24,
+    },
+  },
 )

@@ -1,16 +1,15 @@
 /**
  * Bud file for LICENSE
  */
-
 'use strict'
 
-const {License} = require('the-templates')
-const {license, repository} = require('./package.json')
+const { License } = require('@the-/templates')
+const { license, repository } = require('./package')
 
 module.exports = License({
-  type: license,
   holder: repository.split(/\//).shift(),
-  year: 2017
+  type: license,
+  year: 2019,
 })
 
 if (!module.parent) {

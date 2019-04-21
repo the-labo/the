@@ -8,8 +8,8 @@
 const sc = require('../scenes')
 
 module.exports = Object.freeze({
-  'appScene': sc.AppScene,
-  'connectionRetryScene': sc.ConnectionRetryScene,
-  'homeScene': sc.HomeScene,
-  'toastScene': sc.ToastScene,
+  appScene: sc.AppScene,
+  connectionRetryScene: sc.ConnectionRetryScene,
+  homeScene: sc.HomeScene,
+  toastScene: sc.ToastScene,
 })

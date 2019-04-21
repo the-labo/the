@@ -16,7 +16,7 @@ export {
 }
 
 export default {
-      TheButton,
-      TheButtonGroup,
-      TheButtonStyle,
+  TheButton,
+  TheButtonGroup,
+  TheButtonStyle,
 }

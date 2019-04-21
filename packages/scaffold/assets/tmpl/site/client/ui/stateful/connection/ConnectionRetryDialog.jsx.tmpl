@@ -4,8 +4,8 @@
 'use strict'
 
 import React from 'react'
-import { TheConnectionRetryDialog } from 'the-site-components'
 import { Icons } from '@self/conf'
+import { TheButton, TheButtonGroup, TheDialog } from '@the-/ui'
 import context from '../../context'
 
 class ConnectionRetryDialog extends React.Component {
@@ -14,36 +14,37 @@ class ConnectionRetryDialog extends React.Component {
       active: state['connection.retry.active'],
       busy: state['connection.retry.busy'],
     }),
-    ({
-       l,
-       connectionRetryScene: retryScene,
-     }) => ({
+    ({ connectionRetryScene: retryScene, l }) => ({
       l,
       onClose: async () => retryScene.init(),
       onReload: async () => {
         await retryScene.doExec()
       },
-    })
+    }),
   )
 
-  render () {
-    return this.#stateful(
-      ({
-         active,
-         busy,
-         l,
-         onClose,
-         onReload,
-       }) => (
-        <TheConnectionRetryDialog {...{ active, busy, onClose, onReload }}
-                                  lead={l('messages.CONNECTION_SEEMS_TO_BE_LOST')}
-                                  reloadIcon={Icons.RELOAD_ICON}
-                                  submitText={l('buttons.DO_RELOAD')}
-                                  title={l('titles.CONNECTION_RETRY_TITLE')}
-                                  warningIcon={Icons.WARNING_ICON}
-        />
+  render() {
+    return this.#stateful(({ active, busy, l, onClose, onReload }) => {
+      if (!active) {
+        return null
+      }
+      return (
+        <TheDialog
+          icon={Icons.WARNING_ICON}
+          lead={l('messages.CONNECTION_SEEMS_TO_BE_LOST')}
+          onClose={onClose}
+          present
+          spinning={busy}
+          title={l('titles.CONNECTION_RETRY_TITLE')}
+        >
+          <TheButtonGroup>
+            <TheButton icon={Icons.RELOAD_ICON} onClick={onReload}>
+              {l('buttons.DO_RELOAD')}
+            </TheButton>
+          </TheButtonGroup>
+        </TheDialog>
       )
-    )
+    })
   }
 }
 

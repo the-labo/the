@@ -7,7 +7,9 @@
 
 const pon = require('pon')
 const {
-  command: { spawn: { git, npm, npx } },
+  command: {
+    spawn: { git, npm, npx },
+  },
   coz,
   env,
   fs: { chmod, concat, cp, del, mkdir, symlink, write },
@@ -16,10 +18,11 @@ const db = require('pon-task-db')
 const docker = require('pon-task-docker')
 const es = require('pon-task-es')
 const pm2 = require('pon-task-pm2')
-const { browser, ccjs, css, map, react } = require('pon-task-web')
-const theAssets = require('the-assets')
-const theBin = require('the-bin/pon')
-const thePS = require('the-ps/pon')
+const { browser, ccjs, css, react } = require('pon-task-web')
+const theAssets = require('@the-/assets')
+const theBin = require('@the-/bin/pon')
+const { isProduction } = require('@the-/check')
+const thePS = require('@the-/ps/pon')
 const { Urls, locales } = require('./conf')
 const Local = require('./Local')
 const Containers = require('./misc/docker/Containers')
@@ -33,7 +36,6 @@ const createDB = () => require('./server/db/create').forTask()
 module.exports = pon(
   /** @module tasks */
   {
-
     // -----------------------------------
     // Meta info
     // -----------------------------------
@@ -74,11 +76,13 @@ module.exports = pon(
       /** Drop database */
       'db:drop': ['assert:not-prod', db.drop(createDB)],
       /** Dump data */
-      'db:dump': db.dump(createDB, 'var/backup/dump', { max: Local.DUMP_ROTATION }),
+      'db:dump': db.dump(createDB, 'var/backup/dump', { max: 3 }),
       /** Load data from dum */
       'db:load': db.load.ask(createDB),
       /** Migrate data */
-      'db:migrate': db.migrate(createDB, migration, { snapshot: 'var/migration/snapshots' }),
+      'db:migrate': db.migrate(createDB, migration, {
+        snapshot: 'var/migration/snapshots',
+      }),
       /** Drop and setup database again */
       'db:reset': ['assert:not-prod', 'db:drop', 'db:setup', 'db:seed'],
       /** Generate test data */
@@ -92,9 +96,15 @@ module.exports = pon(
     // -----------------------------------
     ...{
       /** Prepare nginx docker container */
-      'docker:nginx': docker.nginx(Containers.nginx.name, Containers.nginx.options),
+      'docker:nginx': docker.nginx(
+        Containers.nginx.name,
+        Containers.nginx.options,
+      ),
       /** Prepare redis docker container */
-      'docker:redis': docker.redis(Containers.redis.name, Containers.redis.options),
+      'docker:redis': docker.redis(
+        Containers.redis.name,
+        Containers.redis.options,
+      ),
     },
 
     // -----------------------------------
@@ -152,13 +162,16 @@ module.exports = pon(
       /** Install packages */
       'pkg:install': npm('install', '--ignore-scripts'),
       /** Link self packages */
-      'pkg:link': symlink({
-        'Local.js': 'node_modules/@self/Local',
-        'assets/data': 'node_modules/@self/data',
-        'client': 'node_modules/@self/client',
-        'shim/conf': 'node_modules/@self/conf',
-        'shim/utils': 'node_modules/@self/utils',
-      }, { force: true }),
+      'pkg:link': symlink(
+        {
+          'Local.js': 'node_modules/@self/Local',
+          'assets/data': 'node_modules/@self/data',
+          'shim/conf': 'node_modules/@self/conf',
+          'shim/utils': 'node_modules/@self/utils',
+          client: 'node_modules/@self/client',
+        },
+        { force: true },
+      ),
       /** Upgrade packages package.json */
       'pkg:upg': npm('upgrade', '--ignore-scripts'),
     },
@@ -175,12 +188,22 @@ module.exports = pon(
     // Sub Tasks for Production
     // -----------------------------------
     ...{
+      /** Cleanup build files */
+      'prod:clean': del('public/build/**/*.*'),
       /** Compile files for production */
-      'prod:compile': ['env:prod', 'build', 'prod:map', 'prod:css', 'prod:js',],
+      'prod:compile': [
+        'env:prod',
+        'prod:clean',
+        'build',
+        'prod:map',
+        'prod:css',
+        'prod:js',
+      ],
       /** Compile css files for production */
-      'prod:css': css.minify([
-        `public${Urls.CSS_BUNDLE_URL}`,
-      ], `public${Urls.PROD_CSS_BUNDLE_URL}`),
+      'prod:css': css.minify(
+        [`public${Urls.CSS_BUNDLE_URL}`],
+        `public${Urls.PROD_CSS_BUNDLE_URL}`,
+      ),
       /** Prepare database for production */
       'prod:db': ['env:prod', 'db'],
       /** Compile js files for production */
@@ -195,8 +218,6 @@ module.exports = pon(
     ...{
       /** Process check for debug */
       'ps:debug': thePS('var/app/debug.pid'),
-      /** Process check for e2e */
-      'ps:e2e': thePS('var/app/e2e.pid'),
     },
 
     // -----------------------------------
@@ -226,31 +247,38 @@ module.exports = pon(
         es('utils', 'shim/utils', { sourceRoot: '../../../../conf' }),
       ],
       /** Execute file copy */
-      'struct:cp': cp({
-        'assets/css': 'public/css',
-        'assets/html/server-error': 'public/server-error',
-        'assets/images': 'public/images',
-        'assets/js': 'public/js',
-        'assets/text': 'public',
-        'assets/webfonts': 'public/webfonts',
-      }, { force: true }),
+      'struct:cp': cp(
+        {
+          'assets/css': 'public/css',
+          'assets/html/server-error': 'public/server-error',
+          'assets/images': 'public/images',
+          'assets/js': 'public/js',
+          'assets/text': 'public',
+          'assets/webfonts': 'public/webfonts',
+        },
+        { force: true },
+      ),
       /** Generate project directories */
-      'struct:mkdir': mkdir([
-        ...Object.keys(Directories)
-      ]),
+      'struct:mkdir': mkdir([...Object.keys(Directories)]),
       /** Prepare sub packages */
       'struct:pkg': [
-        cp({
-          'package.json': 'shim/package.json',
-        }, { force: true }),
+        cp(
+          {
+            'package.json': 'shim/package.json',
+          },
+          { force: true },
+        ),
       ],
       /** Render coz templates */
       'struct:render': [
-        coz([
-          '+(conf|client|server)/**/.index.*.bud',
-          '+(assets|e2e|bin|client|conf|doc|misc|server|test|utils)/**/.*.bud',
-          '.*.bud'
-        ])
+        coz(
+          [
+            '+(conf|client|server)/**/.index.*.bud',
+            '+(assets|bin|client|conf|doc|misc|server|test|utils)/**/.*.bud',
+            '.*.bud',
+          ],
+          {},
+        ),
       ],
     },
 
@@ -258,26 +286,40 @@ module.exports = pon(
     // Sub Tasks for UI
     // -----------------------------------
     ...{
-      'ui:browser': env.dynamic(() =>
-        browser({
-          bundle: './client/shim/ui/entrypoint.js',
-        }, `public/build/[name].js`, {
-          split: true,
-          splitName: 'external',
-        }), { sub: ['watch'] }
+      'ui:browser': env.dynamic(
+        () =>
+          browser(
+            {
+              bundle: 'ui/entrypoint.js',
+            },
+            `public/build/[name].js`,
+            {
+              context: `${__dirname}/client/shim`,
+              devtool: isProduction() ? false : 'cheap-source-map',
+              publicPath: `${Urls.JS_CHUNK_BASE_URL}/`,
+            },
+          ),
+        { sub: ['watch', 'analyze'] },
       ),
       /** Compile stylesheets */
       'ui:css': [
         css('client/ui', 'client/shim/ui', {
           inlineMap: true,
           modules: true,
-          pattern: ['*.pcss', '+(stateful|stateless|views|layouts|wrappers|components)/**/*.pcss'],
+          pattern: [
+            '*.pcss',
+            '+(stateful|stateless|views|layouts|wrappers|components)/**/*.pcss',
+          ],
         }),
-        concat([
-          'client/shim/ui/**/*.css',
-          'client/ui/base.pcss',
-          'client/ui/constants/variables.pcss'
-        ], 'public/build/bundle.pcss', {}),
+        concat(
+          [
+            'client/shim/ui/**/*.css',
+            'client/ui/base.pcss',
+            'client/ui/constants/variables.pcss',
+          ],
+          'public/build/bundle.pcss',
+          {},
+        ),
         css('public/build', 'public/build', { pattern: '*.pcss' }),
         css('assets/css', 'public/css', { pattern: '*.css' }),
       ],
@@ -290,8 +332,12 @@ module.exports = pon(
         sourceRoot: '..',
         watchTargets: 'client/ui/**/*.pcss',
       }),
-      'ui:workers': env.dynamic(({ isProduction }) =>
-        browser.all('./client/shim/workers', `public`, {}), { sub: ['watch'] }
+      'ui:workers': env.dynamic(
+        () =>
+          browser.all('workers', `public`, {
+            context: `${__dirname}/client/shim`,
+          }),
+        { sub: ['watch', 'analyze'] },
       ),
     },
 
@@ -351,7 +397,14 @@ module.exports = pon(
       /** Stop app as daemon */
       stop: ['pm2:app/stop'],
       /** Run all struct tasks */
-      struct: ['struct:mkdir', 'struct:compile', 'struct:cp', 'struct:pkg', 'struct:render', 'struct:chmod',],
+      struct: [
+        'struct:mkdir',
+        'struct:compile',
+        'struct:cp',
+        'struct:pkg',
+        'struct:render',
+        'struct:chmod',
+      ],
       /** Run all ui tasks */
       ui: ['ui:css', 'ui:react', 'ui:browser', 'ui:workers'],
     },
@@ -367,5 +420,5 @@ module.exports = pon(
       /** Shortcut for 'prepare` task */
       pre: 'prepare',
     },
-  }
+  },
 )

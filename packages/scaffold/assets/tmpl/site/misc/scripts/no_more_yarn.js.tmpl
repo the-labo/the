@@ -13,7 +13,9 @@ if (isLocalInstall) {
   const byYarn = /yarn/.test(process.env.npm_execpath)
   if (byYarn) {
     console.error(`
-${red('[NO_MORE_YARN]')} Do not \`yarn install\` for this project, just \`npm install.\` ( Because npm@6 works fast enough! )
+${red(
+  '[NO_MORE_YARN]',
+)} Do not \`yarn install\` for this project, just \`npm install.\` ( Because npm@6 works fast enough! )
  
 `)
     process.exit(1)

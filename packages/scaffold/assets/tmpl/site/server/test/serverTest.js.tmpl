@@ -6,7 +6,7 @@
 
 const aport = require('aport')
 const arequest = require('arequest')
-const { equal, ok } = require('assert')
+const { ok } = require('assert').strict
 const createDB = require('../db/create')
 const createServer = require('../server/create')
 
@@ -16,11 +16,10 @@ describe('server', () => {
     port = await aport()
   })
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
-    const db = createDB({})
+    const db = createDB.forTask()
     const server = createServer({ db })
     await server.listen(port)
     {

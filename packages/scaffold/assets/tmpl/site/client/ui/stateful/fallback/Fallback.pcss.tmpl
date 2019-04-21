@@ -1,0 +1,32 @@
+.self {
+  align-items: center;
+  animation: fadeIn 1.0s ease forwards;
+  background: white;
+  bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  padding: 48px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.spin:global(.the-spin) {
+  & :global(.the-spin-icon) {
+    color: #AAA;
+    font-size: 3.3em;
+  }
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

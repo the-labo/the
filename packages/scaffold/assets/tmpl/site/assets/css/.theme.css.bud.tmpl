@@ -3,8 +3,8 @@
  */
 'use strict'
 
-const { TheThemeStyle } = require('the-theme-style')
-const { TheStyle } = require('the-components')
+const { TheThemeStyle } = require('@the-/ui-theme-style')
+const { styleString } = require('@the-/util-style')
 const { Styles } = require('../../conf')
 const { EOL } = require('os')
 
@@ -17,7 +17,7 @@ module.exports = {
         TheThemeStyle,
       ].map((Style) => {
         const styles = Style.data({ dominantColor: Styles.DOMINANT_COLOR })
-        return TheStyle.styleStringFromStyles(styles)
+        return styleString.fromStyles(styles)
       }).join(EOL),
     ]
   },

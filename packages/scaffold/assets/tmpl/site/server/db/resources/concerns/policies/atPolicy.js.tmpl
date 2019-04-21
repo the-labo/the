@@ -4,8 +4,8 @@
 'use strict'
 
 const {
-  DataTypes: { BOOLEAN, DATE },
-} = require('the-resource-base')
+  DataTypes: { DATE },
+} = require('@the-/resource')
 
 module.exports = Object.freeze(
   /** @lends atPolicy */
@@ -20,5 +20,5 @@ module.exports = Object.freeze(
       description: 'Date updated',
       type: DATE,
     },
-  }
+  },
 )

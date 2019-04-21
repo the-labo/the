@@ -5,7 +5,7 @@
 'use strict'
 
 const { clone } = require('asobj')
-const { withBusy, withEntry, withResult } = require('the-scene-mixins/shim')
+const { withBusy, withEntry, withResult } = require('@the-/mixin-scene/shim')
 const Scene = require('./Scene')
 
 @withBusy
@@ -17,28 +17,26 @@ class InputSceneBase extends Scene {}
 class InputScene extends InputSceneBase {
   static entitySkipFields = [/^\$/]
 
-  setEntryErrors (e) {
+  setEntryErrors(e) {
     console.error('entry error', e)
     this.setEntryErrors.set(e)
   }
 
-  setEntryFromEntity (entity) {
+  setEntryFromEntity(entity) {
     const values = clone(entity || {}, {
       without: this.constructor.entitySkipFields,
     })
     this.setEntry(values)
   }
 
-  async dealWith (values) {
+  async dealWith(values) {
     throw new Error(`Not implemented`)
   }
 
   @withBusy.while
   @withResult.save
-  async doExec () {
-    return await this.processEntry((values) =>
-      this.dealWith(values)
-    )
+  async doExec() {
+    return this.processEntry((values) => this.dealWith(values))
   }
 }
 

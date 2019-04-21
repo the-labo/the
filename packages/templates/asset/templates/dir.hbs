@@ -6,7 +6,7 @@
 'use strict'
 
 {{#each modules}}
-import {{name}} from './{{path}}'
+import {{#if varNameChanged}}{{varName}}{{else}}{{name}}{{/if}} from './{{path}}'
 {{/each}}
 
 export {
@@ -17,6 +17,6 @@ export {
 
 export default {
 {{#each modules}}
-    {{#if varNameChanged}}  {{varName}} as{{/if}}  {{name}},
+{{#if varNameChanged}}  {{varName}} as{{/if}}  {{name}},
 {{/each}}
 }

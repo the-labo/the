@@ -1,6 +1,6 @@
 /**
 * @class {{name}}
-* @augments Resource
+* @augments TheResource
 */
 'use strict'
 
@@ -11,7 +11,7 @@ const {
 
 /** @lends {{name}} */
 class {{name}} extends TheResource {
-  static get policy () {
+  static get schema () {
     return {
       name: {
         description: 'Name of resource',

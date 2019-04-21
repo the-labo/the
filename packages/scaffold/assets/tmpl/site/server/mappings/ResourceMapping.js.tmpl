@@ -8,5 +8,5 @@
 const r = require('../db/resources')
 
 module.exports = Object.freeze({
-  'Room': r.RoomResource,
+  Room: r.RoomResource,
 })

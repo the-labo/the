@@ -5,9 +5,8 @@
 'use strict'
 
 const create = require('./create')
-const env = require('../env')
 
-const singleton = create(env.database)
+const singleton = create({})
 Object.assign(singleton, {
   create,
 })

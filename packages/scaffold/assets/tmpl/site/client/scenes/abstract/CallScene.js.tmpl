@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { withBusy } = require('the-scene-mixins/shim')
+const { withBusy } = require('@the-/mixin-scene/shim')
 const Scene = require('./Scene')
 
 @withBusy
@@ -12,13 +12,13 @@ class CallSceneBase extends Scene {}
 
 /** @lends CallScene */
 class CallScene extends CallSceneBase {
-  async dealWith () {
+  async dealWith() {
     throw new Error(`Not implemented`)
   }
 
   @withBusy.while
-  async doExec () {
-    return await this.dealWith()
+  async doExec(value) {
+    return this.dealWith(value)
   }
 }
 

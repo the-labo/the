@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-demo",
   "description": "Live demo of the-components",
-  "version": "15.2.3",
+  "version": "15.2.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -37,7 +37,7 @@
     "@the-/script-build": "^15.2.0",
     "@the-/script-doc": "^15.2.0",
     "@the-/script-test": "^15.2.0",
-    "@the-/templates": "^15.2.4",
+    "@the-/templates": "^15.2.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0"

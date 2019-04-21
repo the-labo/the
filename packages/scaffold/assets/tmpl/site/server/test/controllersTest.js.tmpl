@@ -4,24 +4,22 @@
  */
 'use strict'
 
-const { equal, ok } = require('assert')
+const { equal } = require('assert').strict
 const controllers = require('../controllers')
 const createDB = require('../db/create')
 
-describe('controllers', function () {
+describe('controllers', function() {
   this.timeout(5 * 1000)
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   // TODO Remove this
   // Just an example
   it('App Ctrl', async () => {
     const { AppCtrl } = controllers
     const session = {}
-    const db = createDB({})
+    const db = createDB.forTest()
     const appCtrl = new AppCtrl({
       app: { db },
       client: {},

@@ -10,7 +10,7 @@ const Ctrl = require('./Ctrl')
 class AppCtrl extends Ctrl {
   // TODO Remove this
   // Just an example
-  async countUp () {
+  async countUp() {
     const { session } = this // Controller instance is created per session
     let { count = 0 } = session
     session.count = count + 1

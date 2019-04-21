@@ -4,11 +4,7 @@
 'use strict'
 
 import React from 'react'
-import {
-  TheMain,
-  TheMeta,
-  TheRoot,
-} from 'the-components'
+import { TheCaughtCatcher, TheMain, TheMeta, TheRoot } from '@the-/ui'
 import context from './context'
 import { Dialogs, Footer, Header, Toasts } from './layouts'
 import Routes from './Routes'
@@ -19,27 +15,27 @@ class App extends React.Component {
       busy: state['app.busy'],
       pathname: state['app.pathname'],
     }),
-    ({}) => ({}),
+    () => ({}),
   )
 
-  render () {
+  render() {
     return (
       <context.Root>
-        {this.#stateful(
-          ({ busy, l }) => (
-            <TheMeta.Root title={l && l('app.APP_NAME')}>
+        {this.#stateful(({ busy, l }) => (
+          <TheCaughtCatcher>
+            <TheMeta.Root title={l('app.APP_NAME')}>
               <TheRoot>
-                <Header/>
-                <Toasts/>
+                <Header />
+                <Toasts />
                 <TheMain spinning={busy}>
-                  <Routes/>
+                  <Routes />
                 </TheMain>
-                <Footer/>
-                <Dialogs/>
+                <Footer />
+                <Dialogs />
               </TheRoot>
             </TheMeta.Root>
-          )
-        )}
+          </TheCaughtCatcher>
+        ))}
       </context.Root>
     )
   }

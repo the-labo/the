@@ -1,13 +1,11 @@
 'use strict'
 
-const create = require('./create')
-const {inject} = require('the-handle')
+import create from './create'
 
 const singleton = create()
 
 Object.assign(singleton, {
   create,
-  inject
 })
 
-module.exports = singleton
+export default singleton

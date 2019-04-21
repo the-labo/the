@@ -4,8 +4,14 @@
  */
 'use strict'
 
-const { bindScope, withBusy, withHistory, withLocation, withQuery } = require('the-scene-mixins/shim')
 const { Urls } = require('@self/conf')
+const {
+  bindScope,
+  withBusy,
+  withHistory,
+  withLocation,
+  withQuery,
+} = require('@the-/mixin-scene/shim')
 const Scene = require('./abstract/Scene')
 
 @withBusy
@@ -17,17 +23,17 @@ class AppSceneBase extends Scene {}
 
 /** @lends AppScene */
 class AppScene extends AppSceneBase {
-  handleLocationChange (location) {
+  handleLocationChange(location) {
     setTimeout(() => {
       this.setLocation(location)
     }, 1) // Wait to router change
   }
 
-  handleRejectionReason (reason) {
+  handleRejectionReason(reason) {
     const href = {
-      'ForbiddenError': Urls.ERROR_FORBIDDEN_URL,
-      'NotFoundError': Urls.ERROR_NOTFOUND_URL,
-    }[reason?.name]
+      ForbiddenError: Urls.ERROR_FORBIDDEN_URL,
+      NotFoundError: Urls.ERROR_NOTFOUND_URL,
+    }[(reason?.name)]
     if (href) {
       this.changeLocationTo(href)
       return true
@@ -35,7 +41,7 @@ class AppScene extends AppSceneBase {
     return false
   }
 
-  setLocation ({ pathname, search }) {
+  setLocation({ pathname, search }) {
     this.set({
       pathname,
       query: this.queryWithSearch(search),
@@ -43,7 +49,7 @@ class AppScene extends AppSceneBase {
   }
 
   @withBusy.while
-  async doExec () {
+  async doExec() {
     await this.reloadLocation()
   }
 }

@@ -3,15 +3,12 @@
  */
 'use strict'
 
-const { test } = require('the-templates')
+const { test } = require('@the-/templates')
 
 module.exports = test.dir({
   cjs: true,
   dest: __dirname,
-  src: [
-    `${__dirname}/../../client`,
-    `${__dirname}/../../store`
-  ],
+  src: [`${__dirname}/../../client`, `${__dirname}/../../store`],
 })
 
 if (!module.parent) {

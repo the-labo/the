@@ -3,11 +3,13 @@
  */
 'use strict'
 
-const { Stateful } = require('the-templates')
+const { Stateful } = require('@the-/templates')
 
-module.exports = [].map((name) => Stateful({
-  name,
-}))
+module.exports = ['route/Route'].map((name) =>
+  Stateful({
+    name,
+  }),
+)
 
 if (!module.parent) {
   require('coz').render(__filename)

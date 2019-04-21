@@ -3,7 +3,7 @@
  */
 'use strict'
 
-const { test } = require('the-templates')
+const { test } = require('@the-/templates')
 
 module.exports = test.dir({
   cjs: true,
@@ -11,7 +11,7 @@ module.exports = test.dir({
   src: [
     `${__dirname}/../controllers`,
     `${__dirname}/../db`,
-    `${__dirname}/../server`
+    `${__dirname}/../server`,
   ],
 })
 

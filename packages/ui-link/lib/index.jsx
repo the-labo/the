@@ -14,6 +14,6 @@ export {
 }
 
 export default {
-      TheLink,
-      TheLinkStyle,
+  TheLink,
+  TheLinkStyle,
 }

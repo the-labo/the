@@ -8,3 +8,6 @@
 
 export {
 }
+
+export default {
+}

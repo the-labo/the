@@ -1,12 +1,13 @@
 'use strict'
 
-const { dir } = require('the-templates')
+const { dir } = require('@the-/templates')
 
 module.exports = dir.recursive({
-  description: 'View components',
+  description: 'View components with lazy loading',
   dirname: __dirname,
   ext: '.jsx',
   name: 'views',
+  tmpl: './.index.jsx.hbs',
 })
 
 if (!module.parent) {
