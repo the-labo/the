@@ -18,8 +18,8 @@ export {
 }
 
 export default {
-      TheDropdownMenu,
-      TheMenu,
-      TheMenuItem,
-      TheMenuStyle,
+  TheDropdownMenu,
+  TheMenu,
+  TheMenuItem,
+  TheMenuStyle,
 }

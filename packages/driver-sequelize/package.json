@@ -20,7 +20,7 @@
     "clay-driver-base": "^4.1.7",
     "clay-list-pager": "^3.0.1",
     "clay-resource-name": "^4.0.5",
-    "sequelize": "^5.7.1",
+    "sequelize": "^5.7.4",
     "utf8": "^3.0.0"
   },
   "devDependencies": {

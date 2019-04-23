@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-menu",
   "description": "Menu of the-components",
-  "version": "15.2.4",
+  "version": "15.2.5",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,7 +11,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/const-ui": "^2.0.11",
+    "@the-/const-ui": "^15.2.0",
     "@the-/ui-icon": "^15.2.1",
     "@the-/ui-link": "^15.2.3",
     "@the-/ui-style": "^15.2.0",
