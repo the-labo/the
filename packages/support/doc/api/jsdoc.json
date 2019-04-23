@@ -77,5 +77,18 @@
       "path": "/Users/okuni/Projects/the/packages/support/lib"
     },
     "order": 0
+  },
+  {
+    "id": "findEvalCode",
+    "longname": "findEvalCode",
+    "name": "findEvalCode",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "findEvalCode.js",
+      "path": "/Users/okuni/Projects/the/packages/support/lib/helpers"
+    },
+    "order": 4
   }
 ]

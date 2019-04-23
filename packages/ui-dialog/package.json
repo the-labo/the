@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@the-/const-ui": "^2.0.11",
-    "@the-/ui-button": "^15.2.3",
+    "@the-/ui-button": "^15.2.4",
     "@the-/ui-icon": "^15.2.1",
     "@the-/ui-input": "^15.2.5",
     "@the-/ui-spin": "^15.2.0",

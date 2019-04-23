@@ -1,7 +1,7 @@
 {
   "name": "@the-/support",
   "description": "JS support version checker",
-  "version": "15.2.2",
+  "version": "15.2.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,6 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/ast": "^15.2.2",
     "acorn": "^6.1.1",
     "aglob": "^3.0.2",
     "asfs": "^2.2.3",

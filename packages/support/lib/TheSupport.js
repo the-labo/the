@@ -4,32 +4,44 @@
  */
 'use strict'
 
-const acorn = require('acorn')
 const aglob = require('aglob')
 const { readFileAsync } = require('asfs')
-const logSyntaxError = require('log-syntax-error')
 const path = require('path')
+const detectUnsupportedCode = require('./helpers/detectUnsupportedCode')
+const findEvalCode = require('./helpers/findEvalCode')
 
 /** @lends TheSupport */
 class TheSupport {
   static async checkECMASupport(filename, ecmaVersion) {
+    const relativeFilename = path.relative(process.cwd(), filename)
     const code = await readFileAsync(filename)
-    try {
-      acorn.parse(code, { ecmaVersion, silent: true })
-    } catch (thrown) {
-      const {
-        loc: { column, line },
-      } = thrown
-      const snippet = logSyntaxError(String(code), line, column)
-      const relativeFilename = path.relative(process.cwd(), filename)
-      const error = new Error(
-        `[TheSupport] ES${ecmaVersion} failed with ${relativeFilename} ( ${
-          thrown.message
-        } )`,
-      )
+    const detected = detectUnsupportedCode(code, ecmaVersion)
+
+    const handleDetected = (detected, messageCreator) => {
+      if (!detected) {
+        return
+      }
+      const { message, snippet } = detected
+      const error = new Error(messageCreator(message))
       error.filename = relativeFilename
       error.snippet = snippet
       throw error
+    }
+    handleDetected(
+      detected,
+      (message) =>
+        `[TheSupport] ES${ecmaVersion} failed with ${relativeFilename} ( ${message} )`,
+    )
+    const evalCodes = findEvalCode(code)
+    for (const { code, loc } of evalCodes) {
+      const detected = detectUnsupportedCode(code, ecmaVersion)
+      handleDetected(
+        detected,
+        (message) =>
+          `[TheSupport] ES${ecmaVersion} failed with eval code in ${loc.line}:${
+            loc.column
+          } at ${relativeFilename} ( ${message} )`,
+      )
     }
   }
 
@@ -69,6 +81,7 @@ class TheSupport {
       return results
     }
     for (const filename of filenames) {
+      const code = await readFileAsync(filename)
       await TheSupport.checkECMASupport(filename, ecmaVersion)
       results[filename] = { ok: true }
     }

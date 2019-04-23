@@ -21,6 +21,8 @@
 <dt><a href="#create">create(...args)</a> ⇒ <code><a href="#TheSupport">TheSupport</a></code></dt>
 <dd><p>Create a TheSupport instance</p>
 </dd>
+<dt><a href="#findEvalCode">findEvalCode()</a></dt>
+<dd></dd>
 </dl>
 
 <a name="module_@the-/support"></a>
@@ -51,3 +53,7 @@ Create a TheSupport instance
 | --- | --- |
 | ...args | <code>\*</code> | 
 
+<a name="findEvalCode"></a>
+
+## findEvalCode()
+**Kind**: global function  

@@ -13,7 +13,7 @@
   "dependencies": {
     "@the-/const-ui": "^2.0.11",
     "@the-/ui-container": "^15.2.0",
-    "@the-/ui-link": "^15.2.0",
+    "@the-/ui-link": "^15.2.3",
     "@the-/ui-style": "^15.2.0",
     "@the-/util-ui": "^15.2.4",
     "classnames": "^2.2.6",

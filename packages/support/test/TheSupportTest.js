@@ -26,6 +26,22 @@ describe('the-support', () => {
       ok(caught)
     }
   })
+
+
+  it('Using eval', async () => {
+    ok(TheSupport)
+
+    const support = new TheSupport(`${__dirname}/../misc/mocks/eval-script.js`)
+
+    await support.es2015()
+    {
+      const caught = await support
+        .es5()
+        .then(() => null)
+        .catch((e) => e)
+      ok(caught)
+    }
+  })
 })
 
 /* global describe, before, after, it */

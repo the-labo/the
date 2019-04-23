@@ -27,7 +27,7 @@
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
     "@the-/ui-demo": "file:../ui-demo",
-    "@the-/ui-link": "^15.2.0",
+    "@the-/ui-link": "^15.2.3",
     "@the-/ui-router": "^15.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
