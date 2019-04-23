@@ -7,8 +7,10 @@ cd ${PROJECT_DIR}
 
 for dir in ${PROJECT_DIR}/packages/*
 do
-cd  ${dir}
-echo "=== ${dir} ==="
-$@
-cd ${PROJECT_DIR}
+  cd  ${dir}
+  if test -f "package.json"; then
+    echo "=== ${dir} ==="
+    $@
+  fi
+  cd ${PROJECT_DIR}
 done
