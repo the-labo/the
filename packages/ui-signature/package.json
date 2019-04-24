@@ -1,6 +1,6 @@
 {
-  "name": "@the-/ui-copyboard",
-  "description": "Component for clip-to-copy",
+  "name": "@the-/ui-signature",
+  "description": "Signature pad of the-components",
   "version": "15.2.2",
   "author": {
     "email": "okunishinishi@gmail.com",
@@ -13,10 +13,10 @@
   "dependencies": {
     "@the-/ui-style": "^15.2.0",
     "@the-/util-ui": "^15.2.4",
+    "@the-/window": "^15.2.0",
     "classnames": "^2.2.6",
-    "copy-to-clipboard": "^3.1.0",
-    "prop-types": "^15.7.2",
-    "select": "^1.1.2"
+    "prop-types": "^15.6.2",
+    "signature_pad": "^3.0.0-beta.3"
   },
   "devDependencies": {
     "@babel/runtime": "^7.4.3",
@@ -26,7 +26,7 @@
     "@the-/templates": "file:../templates",
     "@the-/ui-demo": "file:../ui-demo",
     "coz": "^7.0.19",
-    "objnest": "^5.0.6",
+    "objnest": "^5.0.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0"
@@ -35,7 +35,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/ui-copyboard#readme",
+  "homepage": "https://github.com/the-labo/the#readme",
   "keywords": [
     "the",
     "ui"

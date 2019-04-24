@@ -403,6 +403,10 @@
     "kind": "util",
     "name": "util-site"
   },
+  "the-signature": {
+    "kind": "ui",
+    "name": "ui-signature"
+  },
   "the-spin": {
     "kind": "ui",
     "name": "ui-spin"

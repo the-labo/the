@@ -7,12 +7,12 @@
 const { unlinkAsync } = require('asfs')
 const { deepStrictEqual: deepEqual, ok, strictEqual: equal } = require('assert')
 const {
-  DataTypes: { DATE, NUMBER, REF, STRING },
+  DataTypes: { DATE, NUMBER, REF, STRING, OBJECT },
 } = require('clay-constants')
 const TheDriverSequelize = require('../lib/TheDriverSequelize')
 const resetMysqlDatabase = require('../misc/mysql/resetMysqlDatabase')
 
-describe('the-driver-sequelize', function() {
+describe('the-driver-sequelize', function () {
   this.timeout(8 * 1000)
   before(() => {})
 
@@ -571,6 +571,26 @@ describe('the-driver-sequelize', function() {
     const a4 = await driver.one('A', a3.id)
     equal(a4.z, longZ.slice(0, 1024))
     await driver.drop('A')
+    await driver.close()
+  })
+  it('Multiple entity', async () => {
+    const storage = `${__dirname}/../tmp/multiple-entity.db`
+    await unlinkAsync(storage).catch(() => null)
+    const driver = new TheDriverSequelize({
+      dialect: 'sqlite',
+      storage,
+    })
+    driver.define('A', {
+      date: { type: DATE },
+    })
+    driver.define('B', {
+      a: { type: OBJECT },
+    })
+    const a1 = await driver.create('A', { date: new Date('2019/04/04') })
+    const a2 = await driver.create('A', { date: new Date('2019/04/05') })
+    const b = await driver.create('B', { a: [a1, a2] })
+    ok(b)
+    console.log(b.a[0])
     await driver.close()
   })
 })
