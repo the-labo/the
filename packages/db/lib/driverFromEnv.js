@@ -31,8 +31,6 @@ function driverFromEnv(env) {
   ) {
     case 'json':
       return require('clay-driver-json')(storage)
-    case 'localstorage':
-      return require('clay-driver-localstorage')
     case 'memory':
       return require('clay-driver-memory')()
     case 'mongo':
