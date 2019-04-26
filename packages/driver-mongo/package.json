@@ -34,7 +34,7 @@
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
     "clay-driver-tests": "^3.0.1",
-    "clay-resource": "^5.6.2"
+    "clay-resource": "^5.6.3"
   },
   "engines": {
     "node": ">=10",

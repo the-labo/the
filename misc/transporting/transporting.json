@@ -435,6 +435,10 @@
     "kind": "ui",
     "name": "ui-style"
   },
+  "the-calendar": {
+    "kind": "ui",
+    "name": "ui-calendar"
+  },
   "the-style-util": {
     "kind": "util",
     "name": "util-style"

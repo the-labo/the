@@ -15,7 +15,7 @@
     "@the-/util-ui": "^15.2.4",
     "@the-/window": "^15.2.0",
     "classnames": "^2.2.6",
-    "prop-types": "^15.6.2",
+    "prop-types": "^15.7.2",
     "signature_pad": "^3.0.0-beta.3"
   },
   "devDependencies": {
@@ -26,7 +26,7 @@
     "@the-/templates": "file:../templates",
     "@the-/ui-demo": "file:../ui-demo",
     "coz": "^7.0.19",
-    "objnest": "^5.0.3",
+    "objnest": "^5.0.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0"
@@ -35,7 +35,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/ui-signature#readme",
   "keywords": [
     "the",
     "ui"

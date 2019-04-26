@@ -16,7 +16,7 @@
     "@the-/hash": "^15.2.0",
     "asleep": "^1.0.3",
     "clay-constants": "^3.4.4",
-    "clay-resource": "^5.6.2",
+    "clay-resource": "^5.6.3",
     "clay-resource-name": "^4.0.5"
   },
   "devDependencies": {

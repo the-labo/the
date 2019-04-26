@@ -17,7 +17,7 @@
     "@the-/mixin-controller": "^15.2.3",
     "@the-/pack": "^15.2.0",
     "@the-/stream": "^15.2.0",
-    "@the-/tmp": "^15.2.0",
+    "@the-/tmp": "^15.2.3",
     "adigest": "^3.0.1",
     "aport": "^2.0.0",
     "aredis": "^1.0.3",

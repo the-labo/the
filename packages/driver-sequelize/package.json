@@ -20,7 +20,7 @@
     "clay-driver-base": "^4.1.7",
     "clay-list-pager": "^3.0.1",
     "clay-resource-name": "^4.0.5",
-    "sequelize": "^5.7.4",
+    "sequelize": "^5.7.6",
     "utf8": "^3.0.0"
   },
   "devDependencies": {
@@ -28,7 +28,7 @@
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
     "@the-/templates": "file:../templates",
-    "clay-lump": "^4.4.24",
+    "clay-lump": "^4.4.25",
     "mysql2": "^1.6.5",
     "sqlite3": "^4.0.6"
   },

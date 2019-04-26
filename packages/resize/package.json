@@ -12,13 +12,13 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/tmp": "^15.2.0",
+    "@the-/tmp": "^15.2.3",
     "@the-/util-file": "^15.2.2",
     "aglob": "^3.0.2",
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.3",
     "filecopy": "^4.0.2",
-    "sharp": "^0.22.0"
+    "sharp": "^0.22.1"
   },
   "devDependencies": {
     "@the-/script-build": "file:../script-build",
