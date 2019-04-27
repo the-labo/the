@@ -439,6 +439,10 @@
     "kind": "ui",
     "name": "ui-calendar"
   },
+  "the-chat": {
+    "kind": "ui",
+    "name": "ui-chat"
+  },
   "the-style-util": {
     "kind": "util",
     "name": "util-style"

@@ -10,7 +10,7 @@ const Converters = require('./Converters')
 
 /** @lends ThePack */
 class ThePack {
-  constructor(options = {}) {
+  constructor (options = {}) {
     this.decode = this.decode.bind(this)
     this.encode = this.encode.bind(this)
     const {
@@ -28,7 +28,7 @@ class ThePack {
    *   encode: function
    * }}
    */
-  bind() {
+  bind () {
     return {
       decode: this.decode.bind(this),
       encode: this.encode.bind(this),
@@ -40,7 +40,7 @@ class ThePack {
    * @param {Buffer|ArrayBuffer} buffer - Buffer to decode
    * @returns {*} Decoded data
    */
-  decode(buffer) {
+  decode (buffer) {
     if (buffer === null) {
       return buffer
     }
@@ -65,7 +65,7 @@ class ThePack {
    * @param {*} data - Encoded data
    * @returns {Buffer|ArrayBuffer} Encoded buffer
    */
-  encode(data) {
+  encode (data) {
     if (data === null) {
       return null
     }
@@ -77,7 +77,7 @@ class ThePack {
       throw new Error(
         `[ThePack] Failed to encode data: ${inspect(data)} (reason ${
           e.message
-        })`,
+          })`,
       )
     }
   }
