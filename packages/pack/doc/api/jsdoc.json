@@ -13,26 +13,22 @@
     "order": 3
   },
   {
-    "id": "ThePack",
-    "longname": "ThePack",
+    "id": "module:@the-/pack.ThePack()",
+    "longname": "module:@the-/pack.ThePack",
     "name": "ThePack",
-    "kind": "class",
-    "scope": "global",
-    "meta": {
-      "lineno": 1,
-      "filename": "ThePack.js",
-      "path": "/Users/okuni/Projects/the/packages/pack/lib"
-    },
-    "order": 4
+    "kind": "constructor",
+    "description": "Pack handler",
+    "memberof": "module:@the-/pack.ThePack",
+    "order": 5
   },
   {
-    "id": "ThePack#bind",
-    "longname": "ThePack#bind",
+    "id": "module:@the-/pack.ThePack#bind",
+    "longname": "module:@the-/pack.ThePack#bind",
     "name": "bind",
     "kind": "function",
     "scope": "instance",
     "description": "Bind methods",
-    "memberof": "ThePack",
+    "memberof": "module:@the-/pack.ThePack",
     "params": [],
     "returns": [
       {
@@ -44,20 +40,20 @@
       }
     ],
     "meta": {
-      "lineno": 31,
+      "lineno": 33,
       "filename": "ThePack.js",
       "path": "/Users/okuni/Projects/the/packages/pack/lib"
     },
-    "order": 5
+    "order": 6
   },
   {
-    "id": "ThePack#decode",
-    "longname": "ThePack#decode",
+    "id": "module:@the-/pack.ThePack#decode",
+    "longname": "module:@the-/pack.ThePack#decode",
     "name": "decode",
     "kind": "function",
     "scope": "instance",
     "description": "Decode buffer",
-    "memberof": "ThePack",
+    "memberof": "module:@the-/pack.ThePack",
     "params": [
       {
         "type": {
@@ -81,20 +77,20 @@
       }
     ],
     "meta": {
-      "lineno": 43,
+      "lineno": 45,
       "filename": "ThePack.js",
       "path": "/Users/okuni/Projects/the/packages/pack/lib"
     },
-    "order": 6
+    "order": 7
   },
   {
-    "id": "ThePack#encode",
-    "longname": "ThePack#encode",
+    "id": "module:@the-/pack.ThePack#encode",
+    "longname": "module:@the-/pack.ThePack#encode",
     "name": "encode",
     "kind": "function",
     "scope": "instance",
     "description": "Encode data into buffer",
-    "memberof": "ThePack",
+    "memberof": "module:@the-/pack.ThePack",
     "params": [
       {
         "type": {
@@ -118,11 +114,25 @@
       }
     ],
     "meta": {
-      "lineno": 68,
+      "lineno": 70,
       "filename": "ThePack.js",
       "path": "/Users/okuni/Projects/the/packages/pack/lib"
     },
-    "order": 7
+    "order": 8
+  },
+  {
+    "id": "module:@the-/pack.ThePack",
+    "longname": "module:@the-/pack.ThePack",
+    "name": "ThePack",
+    "kind": "class",
+    "scope": "static",
+    "memberof": "module:@the-/pack",
+    "meta": {
+      "lineno": 1,
+      "filename": "ThePack.js",
+      "path": "/Users/okuni/Projects/the/packages/pack/lib"
+    },
+    "order": 4
   },
   {
     "id": "module:@the-/pack.Converters",

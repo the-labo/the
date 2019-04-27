@@ -1,4 +1,6 @@
 /**
+ * Pack handler
+ * @memberOf module:@the-/pack
  * @class ThePack
  */
 'use strict'
@@ -8,7 +10,7 @@ const { inspect } = require('util')
 const { isBrowser } = require('@the-/check')
 const Converters = require('./Converters')
 
-/** @lends ThePack */
+/** @lends module:@the-/pack.ThePack */
 class ThePack {
   constructor (options = {}) {
     this.decode = this.decode.bind(this)

@@ -64,7 +64,7 @@
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",
-    "prepare": "npm run build && npm run doc",
+    "prepare": "(cd ../.. && npx npm-install-if-needed);npm run build && npm run doc",
     "test": "the-script-build",
     "watch": "the-script-build -w"
   }
