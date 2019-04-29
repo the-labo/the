@@ -1,7 +1,7 @@
 {
   "name": "@the-/templates",
   "description": "Templates for the-projects",
-  "version": "15.3.0",
+  "version": "15.4.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -22,9 +22,7 @@
     "@the-/script-build": "^15.2.0",
     "@the-/script-doc": "^15.2.0",
     "@the-/script-test": "^15.2.0",
-    "injectmock": "^2.0.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "injectmock": "^2.0.0"
   },
   "engines": {
     "node": ">=10",

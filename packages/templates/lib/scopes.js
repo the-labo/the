@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/templates
  * @function scopes
  */
 'use strict'
@@ -21,7 +22,7 @@ const withoutExt = (filename) =>
   )
 const compareByLength = (a, b) => a.length - b.length
 
-/** @lends scopes */
+/** @lends module:@the-/templates.scopes */
 function scopes(config) {
   const { dirname, pattern = '**/*.json', ...rest } = config
   handleRestConfig(rest)

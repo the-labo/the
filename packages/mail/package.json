@@ -1,7 +1,7 @@
 {
   "name": "@the-/mail",
   "description": "Mail client for the-framework",
-  "version": "15.3.0",
+  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -20,6 +20,9 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
     "@the-/secret": "file:../secret"
   },
   "engines": {

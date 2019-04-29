@@ -4,19 +4,17 @@
  */
 'use strict'
 
-const theRTC = require('@the-/rtc')
-const TheRTCClient = require('../lib/TheRTCClient')
 const aport = require('aport')
 const asleep = require('asleep')
-const { ok, equal } = require('assert')
+const { equal, ok } = require('assert')
+const theRTC = require('@the-/rtc')
+const TheRTCClient = require('../lib/TheRTCClient')
 
-describe('the-rtc-client', function () {
+describe('the-rtc-client', function() {
   this.timeout(150000)
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     ok(TheRTCClient)
@@ -27,20 +25,18 @@ describe('the-rtc-client', function () {
 
     await asleep(1000)
     {
-
       const c01 = new TheRTCClient()
       const c02 = new TheRTCClient()
       await c01.connect(`http://localhost:${port}`, { forceNew: true })
       await c02.connect(`http://localhost:${port}`, { forceNew: true })
 
       {
-
         await c01.join('hoge')
         await c02.join('hoge')
 
         const received = await new Promise((resolve, reject) => {
           setTimeout(() => reject(new Error(`Timeout`)), 1000)
-          c01.subscribe('greeting', ({ from, payload, topic }) => {
+          c01.subscribe('greeting', ({ payload, topic }) => {
             resolve(payload, topic)
           })
           void c02.publish('greeting', { message: 'hi there' })

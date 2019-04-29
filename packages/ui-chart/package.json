@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-chart",
   "description": "Chart for the-components",
-  "version": "15.3.0",
+  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,12 +18,7 @@
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
-  "devDependencies": {
-    "@the-/ui-demo": "file:../ui-demo",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0"
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=10",
     "npm": ">=6"

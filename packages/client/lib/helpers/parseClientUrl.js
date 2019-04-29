@@ -1,6 +1,6 @@
 /**
  * Parse caller URL
- * @memberOf module:@the-/client
+ * @memberof helpers
  * @function parseClientUrl
  * @param {Object|string} - URL string or config
  * @returns {string} - Parsed url

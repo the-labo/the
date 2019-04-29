@@ -1,10 +1,10 @@
 'use strict'
 
 const coz = require('coz')
-const { readme } = require('@the-/templates')
+const { Readme } = require('@the-/templates')
 
-coz.render(
-  readme({
-    pkg: { name: 'foo', version: 'bar' },
-  }),
-)
+const bud = Readme({
+  pkg: { name: 'foo', version: 'bar' },
+})
+
+coz.render(bud,)

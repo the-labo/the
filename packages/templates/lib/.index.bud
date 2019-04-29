@@ -3,12 +3,9 @@
  */
 'use strict'
 
-const dir = require('./dir')
+const { Index } = require('../presets/lib')
 
-module.exports = dir({
-  cjs: true,
-  dirname: __dirname,
-})
+module.exports = Index(__dirname)
 
 if (!module.parent) {
   require('coz').render(__filename)

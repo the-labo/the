@@ -1,7 +1,7 @@
 {
   "name": "@the-/script-build",
   "description": "Build script for the-projects",
-  "version": "15.3.0",
+  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -43,9 +43,7 @@
   },
   "devDependencies": {
     "@the-/ast": "^15.1.3",
-    "injectmock": "^2.0.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "injectmock": "^2.0.0"
   },
   "engines": {
     "node": ">=10",

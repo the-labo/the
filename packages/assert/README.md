@@ -87,19 +87,25 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
 
-<a name="section-doc-readme-03-api-md"></a>
+<!-- Sections Start -->
+
+<a name="api"></a>
 
 ## API Guide
 
-- [@the-/assert](./doc/api/api.md#module_@the-/assert)
+
+### Functions
+- [create](#create)
+- [bind](#bind)
+- [notNullish](#notNullish)
+- [nullish](#nullish)
+- [ok](#ok)
 
 
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
+### Classes
+- [TheAssert](#TheAssert)
 
-
-<!-- Sections Start -->
 
 
 <!-- LICENSE Start -->

@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/client
+ * @memberOf mixins
  * @function infoMix
  */
 'use strict'
@@ -7,7 +7,7 @@
 const { get } = require('bwindow')
 const INFO_KEY = 'the.info'
 
-/** @lends infoMix */
+/** @lends mixins.infoMix */
 function infoMix(Class) {
   class InfoMixed extends Class {
     constructor() {

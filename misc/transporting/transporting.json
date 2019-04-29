@@ -7,21 +7,9 @@
     "kind": "util",
     "name": "util-array"
   },
-  "the-color": {
-    "kind": "util",
-    "name": "util-color"
-  },
-  "the-db-util": {
-    "kind": "util",
-    "name": "util-db"
-  },
   "the-assert": {
     "kind": "lib",
     "name": "assert"
-  },
-  "the-keyboard": {
-    "kind": "ui",
-    "name": "ui-keyboard"
   },
   "the-assets": {
     "kind": "lib",
@@ -34,14 +22,6 @@
   "the-bar": {
     "kind": "ui",
     "name": "ui-bar"
-  },
-  "the-paint": {
-    "kind": "ui",
-    "name": "ui-paint"
-  },
-  "the-qr": {
-    "kind": "ui",
-    "name": "ui-qr"
   },
   "the-bin": {
     "kind": "lib",
@@ -59,17 +39,25 @@
     "kind": "lib",
     "name": "cache"
   },
+  "the-calendar": {
+    "kind": "ui",
+    "name": "ui-calendar"
+  },
+  "the-cam": {
+    "kind": "ui",
+    "name": "ui-cam"
+  },
   "the-caught": {
     "kind": "ui",
     "name": "ui-caught"
   },
-  "the-copyboard": {
-    "kind": "ui",
-    "name": "ui-copyboard"
-  },
   "the-chart": {
     "kind": "ui",
     "name": "ui-chart"
+  },
+  "the-chat": {
+    "kind": "ui",
+    "name": "ui-chat"
   },
   "the-check": {
     "kind": "lib",
@@ -87,6 +75,10 @@
     "kind": "lib",
     "name": "code"
   },
+  "the-color": {
+    "kind": "util",
+    "name": "util-color"
+  },
   "the-component-constants": {
     "kind": "const",
     "name": "const-ui"
@@ -98,6 +90,10 @@
   "the-component-util": {
     "kind": "util",
     "name": "util-ui"
+  },
+  "the-components": {
+    "kind": "ui-index",
+    "name": "ui"
   },
   "the-condition": {
     "kind": "ui",
@@ -119,6 +115,10 @@
     "kind": "mixin",
     "name": "mixin-controller"
   },
+  "the-copyboard": {
+    "kind": "ui",
+    "name": "ui-copyboard"
+  },
   "the-cycle": {
     "kind": "ui",
     "name": "ui-cycle"
@@ -130,6 +130,10 @@
   "the-db": {
     "kind": "lib",
     "name": "db"
+  },
+  "the-db-util": {
+    "kind": "util",
+    "name": "util-db"
   },
   "the-demo-component": {
     "kind": "ui",
@@ -162,10 +166,6 @@
   "the-file-util": {
     "kind": "util",
     "name": "util-file"
-  },
-  "the-path-util": {
-    "kind": "util",
-    "name": "util-path"
   },
   "the-flick": {
     "kind": "ui",
@@ -231,6 +231,10 @@
     "kind": "lib",
     "name": "jitter"
   },
+  "the-keyboard": {
+    "kind": "ui",
+    "name": "ui-keyboard"
+  },
   "the-link": {
     "kind": "ui",
     "name": "ui-link"
@@ -247,9 +251,17 @@
     "kind": "lib",
     "name": "loc"
   },
+  "the-mail": {
+    "kind": "lib",
+    "name": "mail"
+  },
   "the-main": {
     "kind": "ui",
     "name": "ui-main"
+  },
+  "the-map": {
+    "kind": "ui",
+    "name": "ui-map"
   },
   "the-media": {
     "kind": "lib",
@@ -279,9 +291,17 @@
     "kind": "ui",
     "name": "ui-pager"
   },
+  "the-paint": {
+    "kind": "ui",
+    "name": "ui-paint"
+  },
   "the-password": {
     "kind": "lib",
     "name": "password"
+  },
+  "the-path-util": {
+    "kind": "util",
+    "name": "util-path"
   },
   "the-polyfill": {
     "kind": "lib",
@@ -290,6 +310,10 @@
   "the-ps": {
     "kind": "lib",
     "name": "ps"
+  },
+  "the-qr": {
+    "kind": "ui",
+    "name": "ui-qr"
   },
   "the-queue": {
     "kind": "lib",
@@ -326,6 +350,14 @@
   "the-router": {
     "kind": "ui",
     "name": "ui-router"
+  },
+  "the-rtc": {
+    "kind": "lib",
+    "name": "rtc"
+  },
+  "the-rtc-client": {
+    "kind": "lib",
+    "name": "rtc-client"
   },
   "the-run": {
     "kind": "lib",
@@ -379,21 +411,9 @@
     "kind": "lib",
     "name": "seed"
   },
-  "the-mail": {
-    "kind": "lib",
-    "name": "mail"
-  },
   "the-server": {
     "kind": "lib",
     "name": "server"
-  },
-  "the-rtc": {
-    "kind": "lib",
-    "name": "rtc"
-  },
-  "the-rtc-client": {
-    "kind": "lib",
-    "name": "rtc-client"
   },
   "the-server-util": {
     "kind": "util",
@@ -403,13 +423,13 @@
     "kind": "lib",
     "name": "setting"
   },
-  "the-site-util": {
-    "kind": "util",
-    "name": "util-site"
-  },
   "the-signature": {
     "kind": "ui",
     "name": "ui-signature"
+  },
+  "the-site-util": {
+    "kind": "util",
+    "name": "util-site"
   },
   "the-spin": {
     "kind": "ui",
@@ -439,14 +459,6 @@
     "kind": "ui",
     "name": "ui-style"
   },
-  "the-calendar": {
-    "kind": "ui",
-    "name": "ui-calendar"
-  },
-  "the-chat": {
-    "kind": "ui",
-    "name": "ui-chat"
-  },
   "the-style-util": {
     "kind": "util",
     "name": "util-style"
@@ -471,10 +483,6 @@
     "kind": "templates",
     "name": "templates"
   },
-  "the-components": {
-    "kind": "ui-index",
-    "name": "ui"
-  },
   "the-theme-style": {
     "kind": "ui",
     "name": "ui-theme-style"
@@ -486,14 +494,6 @@
   "the-toast": {
     "kind": "ui",
     "name": "ui-toast"
-  },
-  "the-map": {
-    "kind": "ui",
-    "name": "ui-map"
-  },
-  "the-cam": {
-    "kind": "ui",
-    "name": "ui-cam"
   },
   "the-ui": {
     "kind": "index",

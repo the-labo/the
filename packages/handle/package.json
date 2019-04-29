@@ -1,7 +1,7 @@
 {
   "name": "@the-/handle",
   "description": "Action handler for the-framework",
-  "version": "15.3.0",
+  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -19,8 +19,7 @@
     "asobj": "^3.0.1"
   },
   "devDependencies": {
-    "@the-/scene": "file:../scene",
-    "react": "^16.8.6"
+    "@the-/scene": "file:../scene"
   },
   "engines": {
     "node": ">=10",

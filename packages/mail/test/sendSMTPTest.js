@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const sendSMTP = require('../lib/sending/sendSMTP')
-const {ok, equal} = require('assert')
-
 describe('send-s-m-t-p', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

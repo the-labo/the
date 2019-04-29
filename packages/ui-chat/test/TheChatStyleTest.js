@@ -4,16 +4,14 @@
  */
 'use strict'
 
-const TheChatStyle = require('../shim/TheChatStyle').default
+const { ok } = require('assert').strict
 const React = require('react')
-const { ok, equal, deepEqual } = require('assert').strict
+const TheChatStyle = require('../shim/TheChatStyle').default
 
 describe('the-chat-style', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(React.createElement(TheChatStyle))

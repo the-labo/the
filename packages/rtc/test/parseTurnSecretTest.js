@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const parseTurnSecret = require('../lib/helpers/parseTurnSecret')
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('parse-turn-secret', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

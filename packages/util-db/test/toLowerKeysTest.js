@@ -4,21 +4,19 @@
  */
 'use strict'
 
+const { deepEqual } = require('assert')
 const toLowerKeys = require('../lib/toLowerKeys')
-const {ok, equal, deepEqual} = require('assert')
 
 describe('to-lower-keys', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
-    deepEqual(
-      toLowerKeys({foo: 'bar', 'Baz': 'quz'}),
-      {foo: 'bar', 'baz': 'quz'}
-    )
+    deepEqual(toLowerKeys({ Baz: 'quz', foo: 'bar' }), {
+      baz: 'quz',
+      foo: 'bar',
+    })
   })
 })
 

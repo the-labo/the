@@ -4,21 +4,16 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const rotatedColorsFor = require('../lib/rotatedColorsFor')
-const {ok, equal, deepEqual} = require('assert')
 
 describe('rotated-colors-for', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
-    equal(
-      rotatedColorsFor('#381', {count: 3}).length,
-      3
-    )
+    equal(rotatedColorsFor('#381', { count: 3 }).length, 3)
   })
 })
 

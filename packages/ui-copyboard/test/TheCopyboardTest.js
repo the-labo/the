@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheCopyboard from '../lib/TheCopyboard'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheCopyboard from '../lib/TheCopyboard'
 
 describe('the-copyboard', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheCopyboard />
-    )
+    let element = render(<TheCopyboard />)
     ok(element)
   })
 })

@@ -1,5 +1,6 @@
 /**
- * For dir
+ * Define bud for dir
+ * @memberOf module:@the-/templates
  * @function dir
  * @param {Object} config
  * @returns {Object}
@@ -48,7 +49,7 @@ const guessName = (dirname) => {
   return path.join(pkg.name, path.relative(pkgDir, dirname))
 }
 
-/** @lends dir */
+/** @lends module:@the-/templates.dir */
 function dir(config) {
   const { annotations, cjs = config.node, dirname, ext, ...rest } = config
   handleRestConfig(rest)

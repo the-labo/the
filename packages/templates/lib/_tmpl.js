@@ -10,7 +10,7 @@
 const path = require('path')
 const TMPL_DIR = path.resolve(__dirname, '../asset/templates')
 
-/** @lends _tmpl */
+/** @lends module:@the-/templates._tmpl */
 function _tmpl(name) {
   return path.resolve(TMPL_DIR, name)
 }

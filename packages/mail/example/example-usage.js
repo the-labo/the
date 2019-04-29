@@ -2,17 +2,17 @@
 
 const theMail = require('@the-/mail').default
 
-async function tryExample () {
+async function tryExample() {
   const mail = theMail({
+    key: 'xxxxxxxxxxx',
     service: 'sendgrid',
-    key: 'xxxxxxxxxxx'
   })
 
   await mail.send({
+    content: 'This is the content of the mail',
     from: 'the-sender@example.com',
-    to: 'the-receiver@example.com',
     subject: 'This is the title',
-    content: 'This is the content of the mail'
+    to: 'the-receiver@example.com',
   })
 }
 

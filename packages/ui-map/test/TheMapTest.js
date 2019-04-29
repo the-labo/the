@@ -4,16 +4,14 @@
  */
 'use strict'
 
-const TheMap = require('../shim/TheMap').default
+const { ok } = require('assert').strict
 const React = require('react')
-const { ok, equal, deepEqual } = require('assert').strict
+const TheMap = require('../shim/TheMap').default
 
 describe('the-map', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(React.createElement(TheMap))

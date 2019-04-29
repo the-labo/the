@@ -4,12 +4,10 @@
  * @module @the-script/presets/lib
  */
 
-
 const path = require('path')
 const { Readme, dir, test } = require('../lib')
 
 exports.Readme = (dirname) => {
-
   const requireIfPossible = (id) => {
     try {
       return require(id)
@@ -28,21 +26,11 @@ exports.Readme = (dirname) => {
     pkg,
     repo: pkg.repository,
     sections: 'doc/readme/*.md.hbs',
-    vars: {
-      jsdoc: (jsdoc || []).reduce(
-        (reduced, item) => {
-          const { kind } = item
-          const items = reduced.hasOwnProperty(kind) ? reduced[kind] : []
-          return {
-            ...reduced,
-            [item.kind]: [...items, item],
-          }
-        },
-        {},
-      ),
+    api: jsdoc && {
+      path: './doc/api/api.md',
+      jsdoc: jsdoc,
     },
   })
-
 }
 
 exports.Index = (dirname) => {
@@ -50,17 +38,19 @@ exports.Index = (dirname) => {
   return dir({
     cjs: true,
     dirname: dirname,
-    name: pkg.name,
-    description: pkg.description,
+    annotations: {
+      module: pkg.name,
+      version: pkg.version,
+      description: pkg.description,
+      license: pkg.license,
+    }
   })
 }
 
 exports.Test = (dirname) => {
   return test({
-    src: [
-      `${dirname}/../lib/**/*.js`
-    ],
+    src: [`${dirname}/../lib/**/*.js`],
     dest: dirname,
-    cjs: true
+    cjs: true,
   })
 }

@@ -54,6 +54,9 @@ var/
 /packages/lint/lib/index.js
 /packages/lint/lib/rules/index.js
 /packages/loc/lib/index.js
+/packages/mail/lib/helpers/index.js
+/packages/mail/lib/index.js
+/packages/mail/lib/sending/index.js
 /packages/media/lib/index.js
 /packages/metrics-presets/lib/index.js
 /packages/metrics/lib/counters/index.js
@@ -153,7 +156,6 @@ var/
 /packages/ui-header/lib/index.jsx
 /packages/ui-html/doc/demo/bundle.js
 /packages/ui-html/lib/index.jsx
-/packages/ui-icon/doc/demo/bundle.js
 /packages/ui-icon/lib/index.jsx
 /packages/ui-image/doc/demo/bundle.js
 /packages/ui-image/lib/index.jsx

@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const sendSendgrid = require('../lib/sending/sendSendgrid')
-const {ok, equal} = require('assert')
-
 describe('send-sendgrid', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

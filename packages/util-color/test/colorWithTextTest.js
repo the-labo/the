@@ -4,21 +4,16 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const colorWithText = require('../lib/colorWithText')
-const {ok, equal} = require('assert')
 
 describe('color-with-text', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
-    equal(
-      colorWithText('hoge'),
-      colorWithText('hoge')
-    )
+    equal(colorWithText('hoge'), colorWithText('hoge'))
     // console.log(colorWithText('foo', {base: '#E11'}))
   })
 })

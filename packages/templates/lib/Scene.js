@@ -1,5 +1,7 @@
 /**
  * Scene
+ * @memberOf module:@the-/templates
+ *
  * @function Scene
  * @param {Object} config
  * @returns {Object}
@@ -11,7 +13,7 @@ const path = require('path')
 const { snakecase } = require('stringcase')
 const _tmpl = require('./_tmpl')
 
-/** @lends Scene */
+/** @lends module:@the-/templates.Scene */
 function Scene(config) {
   const { cjs = false, name } = config
   assert(name, 'name is required')

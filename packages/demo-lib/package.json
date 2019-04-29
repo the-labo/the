@@ -1,7 +1,7 @@
 {
   "name": "@the-/demo-lib",
   "description": "Demo of the-lib packages",
-  "version": "15.3.0",
+  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,7 +12,11 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test"
+  },
   "engines": {
     "node": ">=10",
     "npm": ">=6"

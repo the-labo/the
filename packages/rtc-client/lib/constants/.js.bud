@@ -2,18 +2,14 @@
 
 const constants = require('@the-/rtc/lib/constants')
 
-module.exports = [
-  'IOEvents',
-  'PeerEvents',
-  'ChannelNames',
-].map((name) => ({
-  force: true,
-  path: `${name}.js`,
-  mode: '444',
+module.exports = ['IOEvents', 'PeerEvents', 'ChannelNames'].map((name) => ({
   data: {
     name,
     values: constants[name],
-  }
+  },
+  force: true,
+  mode: '444',
+  path: `${name}.js`,
 }))
 if (!module.parent) {
   require('coz').render(__filename)

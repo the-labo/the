@@ -1,7 +1,7 @@
 {
   "name": "@the-/scope",
   "description": "State scope for the-store",
-  "version": "15.3.0",
+  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -20,9 +20,7 @@
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
-    "@the-/store": "file:../store",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "@the-/store": "file:../store"
   },
   "engines": {
     "node": ">=10",

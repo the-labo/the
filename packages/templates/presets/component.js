@@ -4,12 +4,10 @@
  * @module @the-script/presets/component
  */
 
-
 const path = require('path')
 const { Readme, dir, test } = require('../lib')
 
 exports.Readme = (dirname) => {
-
   const requireIfPossible = (id) => {
     try {
       return require(id)
@@ -29,29 +27,29 @@ exports.Readme = (dirname) => {
     repo: pkg.repository,
     sections: 'doc/readme/*.md.hbs',
     vars: {
-      jsdoc: (jsdoc || []).reduce(
-        (reduced, item) => {
-          const { kind } = item
-          const items = reduced.hasOwnProperty(kind) ? reduced[kind] : []
-          return {
-            ...reduced,
-            [item.kind]: [...items, item],
-          }
-        },
-        {},
-      ),
+      jsdoc: (jsdoc || []).reduce((reduced, item) => {
+        const { kind } = item
+        const items = reduced.hasOwnProperty(kind) ? reduced[kind] : []
+        return {
+          ...reduced,
+          [item.kind]: [...items, item],
+        }
+      }, {}),
     },
   })
-
 }
 
 exports.Index = (dirname) => {
   const pkg = require(path.resolve(dirname, '../package.json'))
+
   return {
     ...dir({
       dirname: dirname,
-      name: pkg.name,
-      description: pkg.description,
+      annotations: {
+        module: pkg.name,
+        version: pkg.version,
+        description: pkg.description,
+      }
     }),
     path: `${dirname}/index.jsx`,
   }
@@ -59,13 +57,11 @@ exports.Index = (dirname) => {
 
 exports.Test = (dirname) => {
   return test({
-    src: [
-      `${dirname}/../shim/*.js`
-    ],
-    useDefault:true,
-    deps:{'React': 'react'},
-    content: ({varName}) => `ok(React.createElement(${varName}))`,
+    src: [`${dirname}/../shim/*.js`],
+    useDefault: true,
+    deps: { React: 'react' },
+    content: ({ varName }) => `ok(React.createElement(${varName}))`,
     dest: dirname,
-    cjs: true
+    cjs: true,
   })
 }

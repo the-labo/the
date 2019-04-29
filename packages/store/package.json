@@ -1,7 +1,7 @@
 {
   "name": "@the-/store",
   "description": "Redux wrapper for the-framework",
-  "version": "15.3.0",
+  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -28,9 +28,7 @@
   "devDependencies": {
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
-    "@the-/script-test": "file:../script-test",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "@the-/script-test": "file:../script-test"
   },
   "engines": {
     "node": ">=10",

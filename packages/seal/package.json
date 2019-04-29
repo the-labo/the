@@ -1,7 +1,7 @@
 {
   "name": "@the-/seal",
   "description": "Encrypt json object with master password",
-  "version": "15.3.0",
+  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",

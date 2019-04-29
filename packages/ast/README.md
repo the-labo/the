@@ -81,22 +81,19 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
 
-<a name="section-doc-readme-03-api-md"></a>
+<!-- Sections Start -->
+
+<a name="api"></a>
 
 ## API Guide
 
-- [analyzer](./doc/api/api.md#module_analyzer)
-- [finder](./doc/api/api.md#module_finder)
-- [@the-/ast](./doc/api/api.md#module_@the-/ast)
-- [constants](./doc/api/api.md#module_constants)
 
+### Functions
+- [parse](#parse)
+- [findByTypes](#findByTypes)
+- [exports](#exports)
 
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
-
-<!-- Sections Start -->
 
 
 <!-- LICENSE Start -->

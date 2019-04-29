@@ -4,196 +4,264 @@
 
 <dl>
 <dt><a href="#module_@the-/client">@the-/client</a></dt>
-<dd><p>Client for the-server</p>
+<dd><p>client</p>
 </dd>
-<dt><a href="#module_constants">constants</a></dt>
+</dl>
+
+## Objects
+
+<dl>
+<dt><a href="#default">default</a> : <code>object</code></dt>
+<dd><p>Default exports</p>
+</dd>
+<dt><a href="#constants">constants</a> : <code>object</code></dt>
 <dd><p>Constant variables</p>
 </dd>
-<dt><a href="#module_helpers">helpers</a></dt>
+<dt><a href="#helpers">helpers</a> : <code>object</code></dt>
 <dd><p>Client helper functions</p>
 </dd>
-<dt><a href="#module_mixins">mixins</a></dt>
+<dt><a href="#mixins">mixins</a> : <code>object</code></dt>
 <dd><p>Client mixin functions</p>
 </dd>
 </dl>
 
-## Members
+## Functions
 
 <dl>
-<dt><a href="#callerKey">callerKey</a></dt>
-<dd><p>Caller key</p>
+<dt><a href="#create">create(...args)</a> ⇒ <code>TheClient</code></dt>
+<dd><p>Create a TheClient instance</p>
 </dd>
-<dt><a href="#cid">cid</a></dt>
-<dd><p>Client ID</p>
-</dd>
-<dt><a href="#host">host</a></dt>
-<dd><p>Host of client</p>
-</dd>
-<dt><a href="#lang">lang</a></dt>
-<dd><p>Detected lang</p>
-</dd>
-<dt><a href="#protocol">protocol</a></dt>
-<dd><p>Connecting protocol</p>
-</dd>
-<dt><a href="#v">v</a></dt>
-<dd><p>Client instance version number</p>
-</dd>
-<dt><a href="#via">via</a></dt>
-<dd><p>Via client</p>
-</dd>
+</dl>
+
+## Typedefs
+
+<dl>
+<dt><a href="#TheClientScope">TheClientScope</a> : <code>Object</code></dt>
+<dd></dd>
 </dl>
 
 <a name="module_@the-/client"></a>
 
 ## @the-/client
-Client for the-server
+client
 
 
 * [@the-/client](#module_@the-/client)
     * [.TheClient](#module_@the-/client.TheClient)
-    * [.default](#module_@the-/client.default) : <code>object</code>
-    * [.IOEvents](#module_@the-/client.IOEvents) : <code>object</code>
-    * [.create(...args)](#module_@the-/client.create) ⇒ <code>TheClient</code>
-    * [.asController()](#module_@the-/client.asController)
-    * [.debugController()](#module_@the-/client.debugController)
-    * [.debugStream()](#module_@the-/client.debugStream)
-    * [.parseClientUrl()](#module_@the-/client.parseClientUrl) ⇒ <code>string</code>
-    * [.infoMix()](#module_@the-/client.infoMix)
-    * [.pingPongMix(Class)](#module_@the-/client.pingPongMix) ⇒ <code>function</code>
-    * [.streamMix()](#module_@the-/client.streamMix) ⇒ <code>function</code>
+        * [new TheClient(url, config)](#new_module_@the-/client.TheClient_new)
+        * _instance_
+            * [.invoke(moduleName, methodName, ...params)](#module_@the-/client.TheClient+invoke)
+            * [.stream(name, params, [options])](#module_@the-/client.TheClient+stream) ⇒ <code>\*</code>
+            * [.use(controllerName, [options])](#module_@the-/client.TheClient+use) ⇒ <code>\*</code>
+            * [.useAll([options])](#module_@the-/client.TheClient+useAll) ⇒ <code>Promise.&lt;Object&gt;</code>
+        * _static_
+            * [.for(namespace, [config])](#module_@the-/client.TheClient.for) ⇒ <code>TheClient</code>
 
 <a name="module_@the-/client.TheClient"></a>
 
 ### @the-/client.TheClient
 **Kind**: static class of [<code>@the-/client</code>](#module_@the-/client)  
-<a name="module_@the-/client.default"></a>
 
-### @the-/client.default : <code>object</code>
-Default exports
+* [.TheClient](#module_@the-/client.TheClient)
+    * [new TheClient(url, config)](#new_module_@the-/client.TheClient_new)
+    * _instance_
+        * [.invoke(moduleName, methodName, ...params)](#module_@the-/client.TheClient+invoke)
+        * [.stream(name, params, [options])](#module_@the-/client.TheClient+stream) ⇒ <code>\*</code>
+        * [.use(controllerName, [options])](#module_@the-/client.TheClient+use) ⇒ <code>\*</code>
+        * [.useAll([options])](#module_@the-/client.TheClient+useAll) ⇒ <code>Promise.&lt;Object&gt;</code>
+    * _static_
+        * [.for(namespace, [config])](#module_@the-/client.TheClient.for) ⇒ <code>TheClient</code>
 
-**Kind**: static namespace of [<code>@the-/client</code>](#module_@the-/client)  
-<a name="module_@the-/client.IOEvents"></a>
+<a name="new_module_@the-/client.TheClient_new"></a>
 
-### @the-/client.IOEvents : <code>object</code>
-Events for IO
-
-**Kind**: static namespace of [<code>@the-/client</code>](#module_@the-/client)  
-<a name="module_@the-/client.create"></a>
-
-### @the-/client.create(...args) ⇒ <code>TheClient</code>
-Create a TheClient instance
-
-**Kind**: static method of [<code>@the-/client</code>](#module_@the-/client)  
+#### new TheClient(url, config)
 
 | Param | Type |
 | --- | --- |
-| ...args | <code>\*</code> | 
+| url | <code>string</code> | 
+| config | <code>Object</code> | 
 
-<a name="module_@the-/client.asController"></a>
+<a name="module_@the-/client.TheClient+invoke"></a>
 
-### @the-/client.asController()
-**Kind**: static method of [<code>@the-/client</code>](#module_@the-/client)  
-<a name="module_@the-/client.debugController"></a>
+#### theClient.invoke(moduleName, methodName, ...params)
+Invoke a method
 
-### @the-/client.debugController()
+**Kind**: instance method of [<code>TheClient</code>](#module_@the-/client.TheClient)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| moduleName | <code>string</code> |  |
+| methodName | <code>string</code> | Name of method to invoke |
+| ...params | <code>\*</code> | Parameters |
+
+<a name="module_@the-/client.TheClient+stream"></a>
+
+#### theClient.stream(name, params, [options]) ⇒ <code>\*</code>
+Create an stream to server
+
+**Kind**: instance method of [<code>TheClient</code>](#module_@the-/client.TheClient)  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| name | <code>string</code> |  |  |
+| params | <code>Object</code> |  | Stream params |
+| [options] | <code>Object</code> | <code>{}</code> | Optional setting |
+| [options.debug] | <code>Boolean</code> |  | With debug mode |
+
+<a name="module_@the-/client.TheClient+use"></a>
+
+#### theClient.use(controllerName, [options]) ⇒ <code>\*</code>
+Use a controller module
+
+**Kind**: instance method of [<code>TheClient</code>](#module_@the-/client.TheClient)  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| controllerName | <code>string</code> |  | Module name |
+| [options] | <code>Object</code> | <code>{}</code> | Optional setting |
+| [options.debug] | <code>Boolean</code> |  | With debug mode |
+
+<a name="module_@the-/client.TheClient+useAll"></a>
+
+#### theClient.useAll([options]) ⇒ <code>Promise.&lt;Object&gt;</code>
+Use all controller modules
+
+**Kind**: instance method of [<code>TheClient</code>](#module_@the-/client.TheClient)  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [options] | <code>Object</code> | <code>{}</code> | Optional setting |
+
+<a name="module_@the-/client.TheClient.for"></a>
+
+#### TheClient.for(namespace, [config]) ⇒ <code>TheClient</code>
+Create the client instance
+
+**Kind**: static method of [<code>TheClient</code>](#module_@the-/client.TheClient)  
+
+| Param | Type | Default |
+| --- | --- | --- |
+| namespace | <code>string</code> | <code>&quot;default&quot;</code> | 
+| [config] | <code>Object</code> | <code>{}</code> | 
+
+<a name="default"></a>
+
+## default : <code>object</code>
+Default exports
+
+**Kind**: global namespace  
+<a name="constants"></a>
+
+## constants : <code>object</code>
+Constant variables
+
+**Kind**: global namespace  
+<a name="constants.IOEvents"></a>
+
+### constants.IOEvents : <code>object</code>
+Events for IO
+
+**Kind**: static namespace of [<code>constants</code>](#constants)  
+<a name="helpers"></a>
+
+## helpers : <code>object</code>
+Client helper functions
+
+**Kind**: global namespace  
+
+* [helpers](#helpers) : <code>object</code>
+    * [.asController()](#helpers.asController)
+    * [.debugController()](#helpers.debugController)
+    * [.debugStream()](#helpers.debugStream)
+    * [.parseClientUrl()](#helpers.parseClientUrl) ⇒ <code>string</code>
+
+<a name="helpers.asController"></a>
+
+### helpers.asController()
+**Kind**: static method of [<code>helpers</code>](#helpers)  
+<a name="helpers.debugController"></a>
+
+### helpers.debugController()
 Wrap controller instance with debug utility
 
-**Kind**: static method of [<code>@the-/client</code>](#module_@the-/client)  
-<a name="module_@the-/client.debugStream"></a>
+**Kind**: static method of [<code>helpers</code>](#helpers)  
+<a name="helpers.debugStream"></a>
 
-### @the-/client.debugStream()
+### helpers.debugStream()
 Wrap stream with debug utility
 
-**Kind**: static method of [<code>@the-/client</code>](#module_@the-/client)  
-<a name="module_@the-/client.parseClientUrl"></a>
+**Kind**: static method of [<code>helpers</code>](#helpers)  
+<a name="helpers.parseClientUrl"></a>
 
-### @the-/client.parseClientUrl() ⇒ <code>string</code>
+### helpers.parseClientUrl() ⇒ <code>string</code>
 Parse caller URL
 
-**Kind**: static method of [<code>@the-/client</code>](#module_@the-/client)  
+**Kind**: static method of [<code>helpers</code>](#helpers)  
 **Returns**: <code>string</code> - - Parsed url  
 
 | Type | Description |
 | --- | --- |
 | <code>Object</code> \| <code>string</code> | URL string or config |
 
-<a name="module_@the-/client.infoMix"></a>
+<a name="mixins"></a>
 
-### @the-/client.infoMix()
-**Kind**: static method of [<code>@the-/client</code>](#module_@the-/client)  
-<a name="module_@the-/client.pingPongMix"></a>
+## mixins : <code>object</code>
+Client mixin functions
 
-### @the-/client.pingPongMix(Class) ⇒ <code>function</code>
-**Kind**: static method of [<code>@the-/client</code>](#module_@the-/client)  
+**Kind**: global namespace  
+
+* [mixins](#mixins) : <code>object</code>
+    * [.infoMix()](#mixins.infoMix)
+    * [.pingPongMix(Class)](#mixins.pingPongMix) ⇒ <code>function</code>
+        * [.PingPongMixed](#mixins.pingPongMix.PingPongMixed)
+    * [.streamMix()](#mixins.streamMix) ⇒ <code>function</code>
+
+<a name="mixins.infoMix"></a>
+
+### mixins.infoMix()
+**Kind**: static method of [<code>mixins</code>](#mixins)  
+<a name="mixins.pingPongMix"></a>
+
+### mixins.pingPongMix(Class) ⇒ <code>function</code>
+**Kind**: static method of [<code>mixins</code>](#mixins)  
 **Returns**: <code>function</code> - Mixed class  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | Class | <code>function</code> | Class to mix |
 
-<a name="module_@the-/client.streamMix"></a>
+<a name="mixins.pingPongMix.PingPongMixed"></a>
 
-### @the-/client.streamMix() ⇒ <code>function</code>
-**Kind**: static method of [<code>@the-/client</code>](#module_@the-/client)  
+#### pingPongMix.PingPongMixed
+**Kind**: static class of [<code>pingPongMix</code>](#mixins.pingPongMix)  
+<a name="mixins.streamMix"></a>
+
+### mixins.streamMix() ⇒ <code>function</code>
+**Kind**: static method of [<code>mixins</code>](#mixins)  
 
 | Type |
 | --- |
 | <code>function</code> | 
 
-<a name="module_constants"></a>
+<a name="create"></a>
 
-## constants
-Constant variables
+## create(...args) ⇒ <code>TheClient</code>
+Create a TheClient instance
 
-<a name="module_helpers"></a>
+**Kind**: global function  
 
-## helpers
-Client helper functions
+| Param | Type |
+| --- | --- |
+| ...args | <code>\*</code> | 
 
-<a name="module_mixins"></a>
+<a name="TheClientScope"></a>
 
-## mixins
-Client mixin functions
+## TheClientScope : <code>Object</code>
+**Kind**: global typedef  
+**Properties**
 
-<a name="callerKey"></a>
+| Name | Type | Description |
+| --- | --- | --- |
+| callerKey | <code>string</code> |  |
+| cid | <code>string</code> | Client id |
 
-## callerKey
-Caller key
-
-**Kind**: global variable  
-<a name="cid"></a>
-
-## cid
-Client ID
-
-**Kind**: global variable  
-<a name="host"></a>
-
-## host
-Host of client
-
-**Kind**: global variable  
-<a name="lang"></a>
-
-## lang
-Detected lang
-
-**Kind**: global variable  
-<a name="protocol"></a>
-
-## protocol
-Connecting protocol
-
-**Kind**: global variable  
-<a name="v"></a>
-
-## v
-Client instance version number
-
-**Kind**: global variable  
-<a name="via"></a>
-
-## via
-Via client
-
-**Kind**: global variable  

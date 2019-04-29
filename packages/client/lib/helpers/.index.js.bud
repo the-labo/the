@@ -4,9 +4,11 @@ const { dir } = require('@the-/templates')
 
 module.exports = dir({
   cjs: true,
-  description: 'Client helper functions',
+  annotations:{
+    namespace: 'helpers',
+    description: 'Client helper functions',
+  },
   dirname: __dirname,
-  name: 'helpers',
 })
 
 if (!module.parent) {

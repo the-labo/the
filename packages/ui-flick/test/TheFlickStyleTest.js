@@ -4,16 +4,14 @@
  */
 'use strict'
 
-const TheFlickStyle = require('../shim/TheFlickStyle').default
+const { ok } = require('assert').strict
 const React = require('react')
-const { ok, equal, deepEqual } = require('assert').strict
+const TheFlickStyle = require('../shim/TheFlickStyle').default
 
 describe('the-flick-style', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(React.createElement(TheFlickStyle))

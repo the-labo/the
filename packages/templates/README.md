@@ -68,13 +68,13 @@ Usage
 'use strict'
 
 const coz = require('coz')
-const { readme } = require('@the-/templates')
+const { Readme } = require('@the-/templates')
 
-coz.render(
-  readme({
-    pkg: { name: 'foo', version: 'bar' },
-  }),
-)
+const bud = Readme({
+  pkg: { name: 'foo', version: 'bar' },
+})
+
+coz.render(bud,)
 
 ```
 
@@ -88,34 +88,30 @@ coz.render(
 
 ## API Guide
 
-
-## Functions
-- [bin](#bin)
-- [Ctrl](#Ctrl)
-- [Dialogs](#Dialogs)
-- [dir](#dir)
-- [errorPage](#errorPage)
-- [eslintignore](#eslintignore)
-- [eslintrc](#eslintrc)
-- [Hook](#Hook)
-- [License](#License)
-- [mapping](#mapping)
-- [nginx](#nginx)
-- [pcssVars](#pcssVars)
-- [prettierrc](#prettierrc)
-- [Readme](#Readme)
-- [Resources](#Resources)
-- [Scene](#Scene)
-- [scopes](#scopes)
-- [Stateful](#Stateful)
-- [Stateless](#Stateless)
-- [Stream](#Stream)
-- [test](#test)
-- [vhost](#vhost)
-- [View](#View)
-
-
-
+### function
+- [.bin(config)](./doc/api/api.md#module_@the-/templates.bin)
+- [.Ctrl(config)](./doc/api/api.md#module_@the-/templates.Ctrl)
+- [.Dialogs(config)](./doc/api/api.md#module_@the-/templates.Dialogs)
+- [.dir(config)](./doc/api/api.md#module_@the-/templates.dir)
+- [.errorPage(config)](./doc/api/api.md#module_@the-/templates.errorPage)
+- [.eslintignore(config)](./doc/api/api.md#module_@the-/templates.eslintignore)
+- [.eslintrc(config)](./doc/api/api.md#module_@the-/templates.eslintrc)
+- [.Hook(config)](./doc/api/api.md#module_@the-/templates.Hook)
+- [.License(config)](./doc/api/api.md#module_@the-/templates.License)
+- [.mapping()](./doc/api/api.md#module_@the-/templates.mapping)
+- [.nginx()](./doc/api/api.md#module_@the-/templates.nginx)
+- [.pcssVars(config)](./doc/api/api.md#module_@the-/templates.pcssVars)
+- [.prettierrc(config)](./doc/api/api.md#module_@the-/templates.prettierrc)
+- [.Readme(config)](./doc/api/api.md#module_@the-/templates.Readme)
+- [.Resources()](./doc/api/api.md#module_@the-/templates.Resources)
+- [.Scene(config)](./doc/api/api.md#module_@the-/templates.Scene)
+- [.scopes()](./doc/api/api.md#module_@the-/templates.scopes)
+- [.Stateful(config)](./doc/api/api.md#module_@the-/templates.Stateful)
+- [.Stateless(config)](./doc/api/api.md#module_@the-/templates.Stateless)
+- [.Stream(config)](./doc/api/api.md#module_@the-/templates.Stream)
+- [.test()](./doc/api/api.md#module_@the-/templates.test)
+- [.vhost(config)](./doc/api/api.md#module_@the-/templates.vhost)
+- [.View(config)](./doc/api/api.md#module_@the-/templates.View)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const promiseMix = require('../lib/mixins/promiseMix')
-const { ok, equal } = require('assert')
-
 describe('promise-mix', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

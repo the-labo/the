@@ -1,7 +1,7 @@
 {
   "name": "@the-/script-doc",
   "description": "Doc script for the-projects",
-  "version": "15.3.0",
+  "version": "15.4.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -25,6 +25,7 @@
     "writeout": "^2.2.4"
   },
   "devDependencies": {
+    "@the-/script-build": "^15.2.0",
     "injectmock": "^2.0.0"
   },
   "engines": {

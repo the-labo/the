@@ -139,6 +139,7 @@ const _removeDevDeps = async (baseDir, names) => {
       '.LICENSE.bud',
       'jsdoc.json',
       '.gitignore',
+      'doc/03.API.md.hbs',
     ])
     await _unlinkDirs(toDir, ['.git', 'ci', 'shim', 'doc/guides'])
     await _copyFiles(baseDir, toDir, ['.npmignore'])
@@ -178,7 +179,8 @@ const _removeDevDeps = async (baseDir, names) => {
             scripts.doc = 'the-script-doc'
             scripts.build = 'the-script-build'
             scripts.test = 'the-script-test'
-            scripts.prepare = 'npm run build && npm run doc'
+            scripts.prepare =
+              '../../misc/scripts/install_if_needed.sh;npm run build && npm run doc'
             delete scripts.share
             delete scripts.buid
             devDependencies['@babel/runtime'] =
@@ -204,7 +206,6 @@ const _removeDevDeps = async (baseDir, names) => {
             '@the-/script-build': 'file:../script-build',
             '@the-/script-doc': 'file:../script-doc',
             '@the-/script-test': 'file:../script-test',
-            '@the-/templates': 'file:../templates',
           })
         }
         await _addDevDeps(toDir, {
@@ -240,7 +241,8 @@ const _removeDevDeps = async (baseDir, names) => {
           scripts.doc = 'the-script-doc'
           scripts.build = 'the-script-build'
           scripts.test = 'the-script-test'
-          scripts.prepare = 'npm run build && npm run doc'
+          scripts.prepare =
+            '../../misc/scripts/install_if_needed.sh;npm run build && npm run doc'
           delete scripts.share
           delete scripts.buid
 
@@ -273,7 +275,6 @@ const _removeDevDeps = async (baseDir, names) => {
       '@the-/script-build': 'file:../script-build',
       '@the-/script-doc': 'file:../script-doc',
       '@the-/script-test': 'file:../script-test',
-      '@the-/templates': 'file:../templates',
     })
     // example
     {

@@ -1,5 +1,6 @@
 /**
  * Hook
+ * @memberOf module:@the-/templates
  * @function Hook
  * @param {Object} config
  * @returns {Object}
@@ -10,7 +11,7 @@ const assert = require('assert')
 const path = require('path')
 const _tmpl = require('./_tmpl')
 
-/** @lends Hook */
+/** @lends module:@the-/templates.Hook */
 function Hook(config) {
   const { cjs = false } = config
   let { name } = config

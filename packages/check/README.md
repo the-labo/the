@@ -67,8 +67,8 @@ Usage
 ```javascript
 'use strict'
 
-const { unlessProduction } = require('@the-/check')
 const { equal, ok } = require('assert').strict
+const { unlessProduction } = require('@the-/check')
 
 async function tryExample() {
   function myFunc(someArg) {
@@ -89,19 +89,25 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
 
-<a name="section-doc-readme-03-api-md"></a>
+<!-- Sections Start -->
+
+<a name="api"></a>
 
 ## API Guide
 
-- [@the-/check](./doc/api/api.md#module_@the-/check)
 
+### Functions
+- [canTouch](#canTouch)
+- [hasBin](#hasBin)
+- [isBrowser](#isBrowser)
+- [isChrome](#isChrome)
+- [isFirefox](#isFirefox)
+- [isiOS](#isiOS)
+- [isMacOS](#isMacOS)
+- [isProduction](#isProduction)
+- [unlessProduction](#unlessProduction)
 
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
-
-<!-- Sections Start -->
 
 
 <!-- LICENSE Start -->

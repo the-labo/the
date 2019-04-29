@@ -1,5 +1,6 @@
 /**
- * eslintrc
+ * Define bud for eslintrc
+ * @memberOf module:@the-/templates
  * @function eslintrc
  * @param {Object} config
  * @returns {Object}
@@ -8,7 +9,7 @@
 
 const _tmpl = require('./_tmpl')
 
-/** @lends eslintrc */
+/** @lends module:@the-/templates.eslintrc */
 function eslintrc(config = {}) {
   return {
     data: {},

@@ -9,7 +9,7 @@ async function tryExample() {
   const password = generatePassword()
 
   const passwordHash = digest(password, salt)
-  console.log({password, passwordHash})
+  console.log({ password, passwordHash })
   /* ... */
 }
 

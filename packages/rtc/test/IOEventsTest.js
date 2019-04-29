@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const IOEvents = require('../lib/constants/IOEvents')
-const { ok, equal } = require('assert')
-
 describe('i-o-events', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

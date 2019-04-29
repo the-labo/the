@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 'use strict'
 
-const baseDir = `${__dirname}/../..`
+const { spawnSync } = require('child_process')
 process.chdir(baseDir)
 
-const { spawnSync } = require('child_process')
 const transporting = require('./transporting')
+const baseDir = `${__dirname}/../..`
 
 async function main() {
   for (const [oldName] of Object.entries(transporting)) {

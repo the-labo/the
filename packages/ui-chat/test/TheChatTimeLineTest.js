@@ -4,16 +4,14 @@
  */
 'use strict'
 
-const TheChatTimeLine = require('../shim/TheChatTimeLine').default
+const { ok } = require('assert').strict
 const React = require('react')
-const { ok, equal, deepEqual } = require('assert').strict
+const TheChatTimeLine = require('../shim/TheChatTimeLine').default
 
 describe('the-chat-time-line', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(React.createElement(TheChatTimeLine))

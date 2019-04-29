@@ -1,5 +1,7 @@
 /**
- * For nginx conf file
+ * Define bud for nginx conf file
+ * @memberOf module:@the-/templates
+ * @param {Object} config
  * @function nginx
  * @returns {Object}
  */
@@ -9,7 +11,7 @@ const _tmpl = require('./_tmpl')
 
 const TMPL_PATH = _tmpl('nginx.hbs')
 
-/** @lends nginx */
+/** @lends module:@the-/templates.nginx */
 function nginx(config) {
   let {
     cert = '/etc/nginx/certs/server.cert',

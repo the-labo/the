@@ -1,5 +1,6 @@
 /**
  * Variables for pcss
+ * @memberOf module:@the-/templates
  * @function pcssVars
  * @param {Object} config
  * @param {Object} config.values
@@ -9,7 +10,7 @@
 
 const _tmpl = require('./_tmpl')
 
-/** @lends pcssVars */
+/** @lends module:@the-/templates.pcssVars */
 function pcssVars(config) {
   const { src, values } = config
   return {

@@ -1,5 +1,6 @@
 /**
  * eslintignore
+ * @memberOf module:@the-/templates
  * @function eslintignore
  * @param {Object} config
  * @returns {Object}
@@ -9,7 +10,7 @@
 const { spawnSync } = require('child_process')
 const _tmpl = require('./_tmpl')
 
-/** @lends eslintignore */
+/** @lends module:@the-/templates.eslintignore */
 function eslintignore(paths = []) {
   const { stdout } = spawnSync('git', [
     'grep',

@@ -1,7 +1,7 @@
 {
   "name": "@the-/demo-ui",
   "description": "Demo of the-components",
-  "version": "15.3.0",
+  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,12 +18,10 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui-demo": "file:../ui-demo",
-    "@the-/ui-router": "^15.2.0",
-    "objnest": "^5.0.6",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0"
+    "@the-/script-build": "file:../script-build",
+    "@the-/script-doc": "file:../script-doc",
+    "@the-/script-test": "file:../script-test",
+    "objnest": "^5.0.6"
   },
   "engines": {
     "node": ">=10",

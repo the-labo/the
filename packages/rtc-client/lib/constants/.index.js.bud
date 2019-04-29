@@ -1,12 +1,12 @@
 'use strict'
 
-const {dir} = require('@the-/templates')
+const { dir } = require('@the-/templates')
 
 module.exports = dir({
-  dirname: __dirname,
   cjs: true,
+  description: 'Constant variables',
+  dirname: __dirname,
   name: 'constants',
-  description: 'Constant variables'
 })
 
 if (!module.parent) {

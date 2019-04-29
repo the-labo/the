@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 'use strict'
 
-const baseDir = `${__dirname}/../..`
-
 const aglob = require('aglob')
 const { spawnSync } = require('child_process')
-const { writeAsJson } = require('@the-/util-file')
 const path = require('path')
+
+const baseDir = `${__dirname}/../..`
+const { writeAsJson } = require('@the-/util-file')
 
 ;(async () => {
   const prepareSnippet = '../../misc/scripts/install_if_needed.sh'
@@ -29,7 +29,6 @@ const path = require('path')
       .filter((name) => name in (pkg.devDependencies || {}))
       .filter((name) => !/eslint/.test(name))
       .filter((name) => !/@the-\/script-/.test(name))
-
     if (devDependenciesToRemove.length > 0) {
       console.log(
         `Remove ${devDependenciesToRemove} form ${path.relative(
@@ -38,8 +37,8 @@ const path = require('path')
         )} ...`,
       )
       spawnSync(`npm`, ['un', ...devDependenciesToRemove, '-D'], {
-        stdio: 'inherit',
         cwd: path.dirname(subPkgFile),
+        stdio: 'inherit',
       })
     }
   }

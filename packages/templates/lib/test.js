@@ -1,5 +1,6 @@
 /**
- * For readme
+ * Define bud for readme
+ * @memberOf module:@the-/templates
  * @function test
  * @returns {Object}
  */
@@ -10,7 +11,7 @@ const { ok } = require('assert')
 const path = require('path')
 const _tmpl = require('./_tmpl')
 
-/** @lends test */
+/** @lends module:@the-/templates.test */
 function test(config) {
   let {
     cjs = config.node,

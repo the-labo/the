@@ -1,7 +1,7 @@
 {
   "name": "@the-/code",
   "description": "Code formatter of the-frameworks",
-  "version": "15.3.0",
+  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -24,7 +24,6 @@
     "commander": "^2.20.0",
     "debug": "^4.1.1",
     "fmtjson": "^4.0.6",
-    "lodash.clone": "^4.5.0",
     "postcss": "^7.0.14",
     "prettier": "^1.17.0",
     "writeout": "^2.2.4",

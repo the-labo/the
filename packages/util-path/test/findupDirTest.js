@@ -4,25 +4,20 @@
  */
 'use strict'
 
-const findupDir = require('../lib/findupDir')
+const { strictEqual: equal } = require('assert')
 const path = require('path')
-const { ok, strictEqual: equal, deepStrictEqual: deepEqual } = require('assert')
+const findupDir = require('../lib/findupDir')
 
 describe('findup-dir', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     const found = await findupDir(__dirname, {
-      contains: 'package.json'
+      contains: 'package.json',
     })
-    equal(
-      found,
-      path.resolve(__dirname, '..')
-    )
+    equal(found, path.resolve(__dirname, '..'))
   })
 })
 

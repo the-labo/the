@@ -1,6 +1,5 @@
 /**
  * Default exports
- * @memberOf module:@the-/client
  * @namespace default
  */
 'use strict'

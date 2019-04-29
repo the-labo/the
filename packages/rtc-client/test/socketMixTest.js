@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const socketMix = require('../lib/mixins/socketMix')
-const { ok, equal } = require('assert')
-
 describe('socket-mix', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const handleUnknownKeys = require('../lib/helpers/handleUnknownKeys')
-const { ok, strictEqual: equal, deepStrictEqual: deepEqual } = require('assert')
-
 describe('handle-unknown-keys', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

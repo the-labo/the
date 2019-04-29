@@ -7,16 +7,16 @@ const { Readme } = require('./lib')
 const pkg = require('./package')
 
 module.exports = Readme({
+  api: {
+    jsdoc: require('./doc/api/jsdoc'),
+    path: './doc/api/api.md',
+  },
   badges: { npm: true },
   links: require('./doc/links'),
   overview: 'doc/overview.md',
   pkg,
   repo: pkg.repository,
   sections: 'doc/readme/*.md.hbs',
-  api:{
-    path: './doc/api/api.md',
-    jsdoc: require('./doc/api/jsdoc'),
-  },
 })
 
 if (!module.parent) {

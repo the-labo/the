@@ -6,8 +6,8 @@ const semver = require('semver')
 const { writeAsJson } = require('the-file-util')
 const fixpack = require('@okunishinishi/fixpack')
 
-function pkgSync (src, targets) {
-  return async function task (ctx) {
+function pkgSync(src, targets) {
+  return async function task(ctx) {
     const { cwd, logger } = ctx
     const {
       author,
@@ -24,20 +24,20 @@ function pkgSync (src, targets) {
     )
     logger.trace(
       `Package inf to sync:\n` +
-      JSON.stringify(
-        {
-          author,
-          bugs,
-          engines,
-          homepage,
-          license,
-          publishConfig,
-          repository,
-          version,
-        },
-        null,
-        2,
-      ),
+        JSON.stringify(
+          {
+            author,
+            bugs,
+            engines,
+            homepage,
+            license,
+            publishConfig,
+            repository,
+            version,
+          },
+          null,
+          2,
+        ),
     )
     for (const subPkgPath of subPkgPaths) {
       const subPkg = require(subPkgPath)
@@ -49,7 +49,7 @@ function pkgSync (src, targets) {
       logger.notice(
         `[${path.relative(process.cwd(), subPkgPath)}] Update version "${
           subPkg.version
-          }" -> "${version}"`,
+        }" -> "${version}"`,
       )
       for (const [name, version] of Object.entries(subPkg.dependencies || {})) {
         if (/^file:\.\.\//.test(version)) {
@@ -61,9 +61,9 @@ function pkgSync (src, targets) {
         author,
         bugs,
         engines,
-        homepage: `${homepage.split('#').shift()}/tree/master/packages/${path.basename(
-          subPkgDir,
-        )}#readme`,
+        homepage: `${homepage
+          .split('#')
+          .shift()}/tree/master/packages/${path.basename(subPkgDir)}#readme`,
         license,
         publishConfig,
         repository,

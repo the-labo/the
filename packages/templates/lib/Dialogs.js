@@ -1,5 +1,6 @@
 /**
- * For Dialog components
+ * Define bud for Dialog components
+ * @memberOf module:@the-/templates
  * @function Dialogs
  * @param {Object} config
  * @returns {Object}
@@ -11,7 +12,7 @@ const { ok } = require('assert')
 const path = require('path')
 const _tmpl = require('./_tmpl')
 
-/** @lends Dialogs */
+/** @lends module:@the-/templates.Dialogs */
 function Dialogs(config) {
   let { dirname, from = '../stateful', pattern = [`**/*Dialog.jsx`] } = config
 

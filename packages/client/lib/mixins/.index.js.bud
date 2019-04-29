@@ -4,9 +4,11 @@ const { dir } = require('@the-/templates')
 
 module.exports = dir({
   cjs: true,
-  description: 'Client mixin functions',
+  annotations: {
+    description: 'Client mixin functions',
+    namespace: 'mixins',
+  },
   dirname: __dirname,
-  name: 'mixins',
 })
 
 if (!module.parent) {

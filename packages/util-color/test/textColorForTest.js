@@ -4,26 +4,18 @@
  */
 'use strict'
 
+const { equal } = require('assert')
 const textColorFor = require('../lib/textColorFor')
-const {ok, equal} = require('assert')
 
 describe('text-color-for', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
-    equal(
-      textColorFor('#FFF'),
-      '#333333'
-    )
+    equal(textColorFor('#FFF'), '#333333')
 
-    equal(
-      textColorFor('#38A'),
-      '#FFFFFF'
-    )
+    equal(textColorFor('#38A'), '#FFFFFF')
   })
 })
 

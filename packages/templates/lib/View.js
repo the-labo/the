@@ -1,5 +1,6 @@
 /**
  * View
+ * @memberOf module:@the-/templates
  * @function View
  * @param {Object} config
  * @returns {Object}
@@ -10,7 +11,7 @@ const assert = require('assert')
 const path = require('path')
 const _tmpl = require('./_tmpl')
 
-/** @lends View */
+/** @lends module:@the-/templates.View */
 function View(config) {
   const { name } = config
   assert(name, 'name is required')

@@ -4,16 +4,14 @@
  */
 'use strict'
 
-const TheCamStyle = require('../shim/TheCamStyle').default
+const { ok } = require('assert').strict
 const React = require('react')
-const { ok, equal, deepEqual } = require('assert').strict
+const TheCamStyle = require('../shim/TheCamStyle').default
 
 describe('the-cam-style', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(React.createElement(TheCamStyle))

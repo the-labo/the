@@ -84,22 +84,36 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
 
-<a name="section-doc-readme-03-api-md"></a>
+<!-- Sections Start -->
+
+<a name="api"></a>
 
 ## API Guide
 
-- [@the-/client](./doc/api/api.md#module_@the-/client)
-- [constants](./doc/api/api.md#module_constants)
-- [helpers](./doc/api/api.md#module_helpers)
-- [mixins](./doc/api/api.md#module_mixins)
+
+### Functions
+- [create](#create)
+- [invoke](#invoke)
+- [stream](#stream)
+- [use](#use)
+- [useAll](#useAll)
+- [serverInfo](#serverInfo)
+- [pingPongAnd](#pingPongAnd)
+- [for](#for)
+- [asController](#asController)
+- [debugController](#debugController)
+- [debugStream](#debugStream)
+- [parseClientUrl](#parseClientUrl)
+- [infoMix](#infoMix)
+- [pingPongMix](#pingPongMix)
+- [streamMix](#streamMix)
 
 
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
+### Classes
+- [TheClient](#TheClient)
+- [PingPongMixed](#PingPongMixed)
 
-
-<!-- Sections Start -->
 
 
 <!-- LICENSE Start -->

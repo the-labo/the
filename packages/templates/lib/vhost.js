@@ -1,5 +1,6 @@
 /**
  * Error page
+ * @memberOf module:@the-/templates
  * @function vhost
  * @param {Object} config
  * @returns {Object}
@@ -9,7 +10,7 @@
 const assert = require('assert')
 const _tmpl = require('./_tmpl')
 
-/** @lends vhost */
+/** @lends module:@the-/templates.vhost */
 function vhost(config) {
   const { certDir = '/etc/letsencrypt/live', domain, port } = config
   assert(domain, 'domain is required')

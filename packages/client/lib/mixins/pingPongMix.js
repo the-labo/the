@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/client
+ * @memberof mixins
  * @function pingPongMix
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
@@ -8,8 +8,12 @@
 
 const DEFAULT_PING_URL = '/the/ping'
 
-/** @lends pingPongMix */
+/** @lends mixins.pingPongMix */
 function pingPongMix(Class) {
+  /**
+   * @inner
+   * @class mixins.pingPongMix.PingPongMixed
+   */
   class PingPongMixed extends Class {
     /**
      * Send ping to the serve and callback when pong received

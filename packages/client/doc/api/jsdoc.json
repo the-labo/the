@@ -4,7 +4,7 @@
     "longname": "module:@the-/client",
     "name": "@the-/client",
     "kind": "module",
-    "description": "Client for the-server",
+    "description": "client",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -13,150 +13,166 @@
     "order": 2
   },
   {
-    "id": "module:constants",
-    "longname": "module:constants",
+    "id": "module:@the-/client.TheClient()",
+    "longname": "module:@the-/client.TheClient",
+    "name": "TheClient",
+    "kind": "constructor",
+    "memberof": "module:@the-/client.TheClient",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "url"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      }
+    ],
+    "order": 5
+  },
+  {
+    "id": "default",
+    "longname": "default",
+    "name": "default",
+    "kind": "namespace",
+    "scope": "global",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/client/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "constants",
+    "longname": "constants",
     "name": "constants",
-    "kind": "module",
+    "kind": "namespace",
+    "scope": "global",
     "description": "Constant variables",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib/constants"
     },
-    "order": 16
+    "order": 11
   },
   {
-    "id": "module:helpers",
-    "longname": "module:helpers",
+    "id": "helpers",
+    "longname": "helpers",
     "name": "helpers",
-    "kind": "module",
+    "kind": "namespace",
+    "scope": "global",
     "description": "Client helper functions",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib/helpers"
     },
-    "order": 21
+    "order": 16
   },
   {
-    "id": "module:mixins",
-    "longname": "module:mixins",
+    "id": "mixins",
+    "longname": "mixins",
     "name": "mixins",
-    "kind": "module",
+    "kind": "namespace",
+    "scope": "global",
     "description": "Client mixin functions",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
     },
-    "order": 23
+    "order": 18
   },
   {
-    "id": "callerKey",
-    "longname": "callerKey",
-    "name": "callerKey",
-    "kind": "member",
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
     "scope": "global",
-    "description": "Caller key",
+    "description": "Create a TheClient instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheClient"
+          ]
+        }
+      }
+    ],
     "meta": {
-      "lineno": 102,
+      "lineno": 10,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/client/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheClientScope",
+    "longname": "TheClientScope",
+    "name": "TheClientScope",
+    "kind": "typedef",
+    "scope": "global",
+    "type": {
+      "names": [
+        "Object"
+      ]
+    },
+    "properties": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "callerKey"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Client id",
+        "name": "cid"
+      }
+    ],
+    "meta": {
+      "lineno": 382,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
-    "order": 5
+    "order": 3
   },
   {
-    "id": "cid",
-    "longname": "cid",
-    "name": "cid",
-    "kind": "member",
-    "scope": "global",
-    "description": "Client ID",
-    "meta": {
-      "lineno": 104,
-      "filename": "TheClient.js",
-      "path": "/Users/okuni/Projects/the/packages/client/lib"
-    },
-    "order": 6
-  },
-  {
-    "id": "host",
-    "longname": "host",
-    "name": "host",
-    "kind": "member",
-    "scope": "global",
-    "description": "Host of client",
-    "meta": {
-      "lineno": 106,
-      "filename": "TheClient.js",
-      "path": "/Users/okuni/Projects/the/packages/client/lib"
-    },
-    "order": 7
-  },
-  {
-    "id": "lang",
-    "longname": "lang",
-    "name": "lang",
-    "kind": "member",
-    "scope": "global",
-    "description": "Detected lang",
-    "meta": {
-      "lineno": 108,
-      "filename": "TheClient.js",
-      "path": "/Users/okuni/Projects/the/packages/client/lib"
-    },
-    "order": 8
-  },
-  {
-    "id": "protocol",
-    "longname": "protocol",
-    "name": "protocol",
-    "kind": "member",
-    "scope": "global",
-    "description": "Connecting protocol",
-    "meta": {
-      "lineno": 110,
-      "filename": "TheClient.js",
-      "path": "/Users/okuni/Projects/the/packages/client/lib"
-    },
-    "order": 9
-  },
-  {
-    "id": "v",
-    "longname": "v",
-    "name": "v",
-    "kind": "member",
-    "scope": "global",
-    "description": "Client instance version number",
-    "meta": {
-      "lineno": 112,
-      "filename": "TheClient.js",
-      "path": "/Users/okuni/Projects/the/packages/client/lib"
-    },
-    "order": 10
-  },
-  {
-    "id": "via",
-    "longname": "via",
-    "name": "via",
-    "kind": "member",
-    "scope": "global",
-    "description": "Via client",
-    "meta": {
-      "lineno": 114,
-      "filename": "TheClient.js",
-      "path": "/Users/okuni/Projects/the/packages/client/lib"
-    },
-    "order": 11
-  },
-  {
-    "id": "TheClient#invoke",
-    "longname": "TheClient#invoke",
+    "id": "module:@the-/client.TheClient#invoke",
+    "longname": "module:@the-/client.TheClient#invoke",
     "name": "invoke",
     "kind": "function",
     "scope": "instance",
     "description": "Invoke a method",
-    "memberof": "TheClient",
+    "memberof": "module:@the-/client.TheClient",
     "params": [
       {
         "type": {
@@ -187,21 +203,21 @@
       }
     ],
     "meta": {
-      "lineno": 177,
+      "lineno": 174,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
     "async": true,
-    "order": 12
+    "order": 7
   },
   {
-    "id": "TheClient#stream",
-    "longname": "TheClient#stream",
+    "id": "module:@the-/client.TheClient#stream",
+    "longname": "module:@the-/client.TheClient#stream",
     "name": "stream",
     "kind": "function",
     "scope": "instance",
     "description": "Create an stream to server",
-    "memberof": "TheClient",
+    "memberof": "module:@the-/client.TheClient",
     "params": [
       {
         "type": {
@@ -252,21 +268,21 @@
       }
     ],
     "meta": {
-      "lineno": 287,
+      "lineno": 284,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
     "async": true,
-    "order": 13
+    "order": 8
   },
   {
-    "id": "TheClient#use",
-    "longname": "TheClient#use",
+    "id": "module:@the-/client.TheClient#use",
+    "longname": "module:@the-/client.TheClient#use",
     "name": "use",
     "kind": "function",
     "scope": "instance",
     "description": "Use a controller module",
-    "memberof": "TheClient",
+    "memberof": "module:@the-/client.TheClient",
     "params": [
       {
         "type": {
@@ -309,21 +325,21 @@
       }
     ],
     "meta": {
-      "lineno": 304,
+      "lineno": 301,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
     "async": true,
-    "order": 14
+    "order": 9
   },
   {
-    "id": "TheClient#useAll",
-    "longname": "TheClient#useAll",
+    "id": "module:@the-/client.TheClient#useAll",
+    "longname": "module:@the-/client.TheClient#useAll",
     "name": "useAll",
     "kind": "function",
     "scope": "instance",
     "description": "Use all controller modules",
-    "memberof": "TheClient",
+    "memberof": "module:@the-/client.TheClient",
     "params": [
       {
         "type": {
@@ -347,12 +363,12 @@
       }
     ],
     "meta": {
-      "lineno": 352,
+      "lineno": 349,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
     "async": true,
-    "order": 15
+    "order": 10
   },
   {
     "id": "InfoMixed#serverInfo",
@@ -389,7 +405,7 @@
       "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
     },
     "async": true,
-    "order": 25
+    "order": 20
   },
   {
     "id": "PingPongMixed#pingPongAnd",
@@ -428,11 +444,11 @@
       }
     ],
     "meta": {
-      "lineno": 20,
+      "lineno": 24,
       "filename": "pingPongMix.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
     },
-    "order": 27
+    "order": 23
   },
   {
     "id": "module:@the-/client.TheClient",
@@ -446,81 +462,45 @@
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
-    "order": 3
+    "order": 4
   },
   {
-    "id": "module:@the-/client.default",
-    "longname": "module:@the-/client.default",
-    "name": "default",
-    "kind": "namespace",
+    "id": "mixins.pingPongMix.PingPongMixed",
+    "longname": "mixins.pingPongMix.PingPongMixed",
+    "name": "PingPongMixed",
+    "kind": "class",
     "scope": "static",
-    "description": "Default exports",
-    "memberof": "module:@the-/client",
+    "memberof": "mixins.pingPongMix",
     "meta": {
-      "lineno": 1,
-      "filename": "default.js",
-      "path": "/Users/okuni/Projects/the/packages/client/lib"
+      "lineno": 13,
+      "filename": "pingPongMix.js",
+      "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
     },
-    "order": 1
+    "order": 22
   },
   {
-    "id": "module:@the-/client.IOEvents",
-    "longname": "module:@the-/client.IOEvents",
+    "id": "constants.IOEvents",
+    "longname": "constants.IOEvents",
     "name": "IOEvents",
     "kind": "namespace",
     "scope": "static",
     "description": "Events for IO",
-    "memberof": "module:@the-/client",
+    "memberof": "constants",
     "meta": {
       "lineno": 1,
       "filename": "IOEvents.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib/constants"
     },
-    "order": 17
+    "order": 12
   },
   {
-    "id": "module:@the-/client.create",
-    "longname": "module:@the-/client.create",
-    "name": "create",
-    "kind": "function",
-    "scope": "static",
-    "description": "Create a TheClient instance",
-    "memberof": "module:@the-/client",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        },
-        "variable": true,
-        "name": "args"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "TheClient"
-          ]
-        }
-      }
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "create.js",
-      "path": "/Users/okuni/Projects/the/packages/client/lib"
-    },
-    "order": 0
-  },
-  {
-    "id": "TheClient.for",
-    "longname": "TheClient.for",
+    "id": "module:@the-/client.TheClient.for",
+    "longname": "module:@the-/client.TheClient.for",
     "name": "for",
     "kind": "function",
     "scope": "static",
     "description": "Create the client instance",
-    "memberof": "TheClient",
+    "memberof": "module:@the-/client.TheClient",
     "params": [
       {
         "type": {
@@ -552,64 +532,64 @@
       }
     ],
     "meta": {
-      "lineno": 45,
+      "lineno": 48,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
-    "order": 4
+    "order": 6
   },
   {
-    "id": "module:@the-/client.asController",
-    "longname": "module:@the-/client.asController",
+    "id": "helpers.asController",
+    "longname": "helpers.asController",
     "name": "asController",
     "kind": "function",
     "scope": "static",
-    "memberof": "module:@the-/client",
+    "memberof": "helpers",
     "meta": {
       "lineno": 1,
       "filename": "asController.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib/helpers"
     },
-    "order": 18
+    "order": 13
   },
   {
-    "id": "module:@the-/client.debugController",
-    "longname": "module:@the-/client.debugController",
+    "id": "helpers.debugController",
+    "longname": "helpers.debugController",
     "name": "debugController",
     "kind": "function",
     "scope": "static",
     "description": "Wrap controller instance with debug utility",
-    "memberof": "module:@the-/client",
+    "memberof": "helpers",
     "meta": {
       "lineno": 1,
       "filename": "debugController.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib/helpers"
     },
-    "order": 19
+    "order": 14
   },
   {
-    "id": "module:@the-/client.debugStream",
-    "longname": "module:@the-/client.debugStream",
+    "id": "helpers.debugStream",
+    "longname": "helpers.debugStream",
     "name": "debugStream",
     "kind": "function",
     "scope": "static",
     "description": "Wrap stream with debug utility",
-    "memberof": "module:@the-/client",
+    "memberof": "helpers",
     "meta": {
       "lineno": 1,
       "filename": "debugStream.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib/helpers"
     },
-    "order": 20
+    "order": 15
   },
   {
-    "id": "module:@the-/client.parseClientUrl",
-    "longname": "module:@the-/client.parseClientUrl",
+    "id": "helpers.parseClientUrl",
+    "longname": "helpers.parseClientUrl",
     "name": "parseClientUrl",
     "kind": "function",
     "scope": "static",
     "description": "Parse caller URL",
-    "memberof": "module:@the-/client",
+    "memberof": "helpers",
     "params": [
       {
         "type": {
@@ -636,29 +616,29 @@
       "filename": "parseClientUrl.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib/helpers"
     },
-    "order": 22
+    "order": 17
   },
   {
-    "id": "module:@the-/client.infoMix",
-    "longname": "module:@the-/client.infoMix",
+    "id": "mixins.infoMix",
+    "longname": "mixins.infoMix",
     "name": "infoMix",
     "kind": "function",
     "scope": "static",
-    "memberof": "module:@the-/client",
+    "memberof": "mixins",
     "meta": {
       "lineno": 1,
       "filename": "infoMix.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
     },
-    "order": 24
+    "order": 19
   },
   {
-    "id": "module:@the-/client.pingPongMix",
-    "longname": "module:@the-/client.pingPongMix",
+    "id": "mixins.pingPongMix",
+    "longname": "mixins.pingPongMix",
     "name": "pingPongMix",
     "kind": "function",
     "scope": "static",
-    "memberof": "module:@the-/client",
+    "memberof": "mixins",
     "params": [
       {
         "type": {
@@ -685,15 +665,15 @@
       "filename": "pingPongMix.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
     },
-    "order": 26
+    "order": 21
   },
   {
-    "id": "module:@the-/client.streamMix",
-    "longname": "module:@the-/client.streamMix",
+    "id": "mixins.streamMix",
+    "longname": "mixins.streamMix",
     "name": "streamMix",
     "kind": "function",
     "scope": "static",
-    "memberof": "module:@the-/client",
+    "memberof": "mixins",
     "params": [
       {
         "type": {
@@ -717,6 +697,6 @@
       "filename": "streamMix.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
     },
-    "order": 28
+    "order": 24
   }
 ]

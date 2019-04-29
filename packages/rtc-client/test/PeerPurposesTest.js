@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const PeerPurposes = require('../lib/constants/PeerPurposes')
-const { ok, equal } = require('assert')
-
 describe('peer-purposes', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

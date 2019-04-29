@@ -9,11 +9,11 @@ module.exports = [
   'promise',
   'channel',
 ].map((name) => ({
-  force: false,
-  mode: '644',
   data: {
     name,
   },
+  force: false,
+  mode: '644',
   path: `${name}Mix.js`,
 }))
 

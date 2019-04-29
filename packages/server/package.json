@@ -1,7 +1,7 @@
 {
   "name": "@the-/server",
   "description": "HTTP/RPC Server of the-framework",
-  "version": "15.3.0",
+  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -39,10 +39,7 @@
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
     "arequest": "^3.0.2",
-    "msgpack-lite": "^0.1.26",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0"
+    "msgpack-lite": "^0.1.26"
   },
   "engines": {
     "node": ">=10",

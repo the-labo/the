@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const turnMix = require('../lib/mixins/turnMix')
-const { ok, equal } = require('assert')
-
 describe('turn-mix', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const peerMix = require('../lib/mixins/peerMix')
-const { ok, equal } = require('assert')
-
 describe('peer-mix', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

@@ -7,15 +7,13 @@
 const sendMock = require('../lib/sending/sendMock')
 
 describe('send-mock', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     sendMock({
-      content: 'hoge'
+      content: 'hoge',
     })
   })
 })

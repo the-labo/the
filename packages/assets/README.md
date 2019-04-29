@@ -81,19 +81,23 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
 
-<a name="section-doc-readme-03-api-md"></a>
+<!-- Sections Start -->
+
+<a name="api"></a>
 
 ## API Guide
 
-- [@the-/assets](./doc/api/api.md#module_@the-/assets)
+
+### Functions
+- [installTo](#installTo)
+- [create](#create)
+- [installFiles](#installFiles)
 
 
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
+### Classes
+- [TheAssets](#TheAssets)
 
-
-<!-- Sections Start -->
 
 
 <!-- LICENSE Start -->

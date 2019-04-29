@@ -27,7 +27,6 @@ describe('the-support', () => {
     }
   })
 
-
   it('Using eval', async () => {
     ok(TheSupport)
 

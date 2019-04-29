@@ -4,16 +4,14 @@
  */
 'use strict'
 
-const ThePaint = require('../shim/ThePaint').default
+const { ok } = require('assert').strict
 const React = require('react')
-const { ok, equal, deepEqual } = require('assert').strict
+const ThePaint = require('../shim/ThePaint').default
 
 describe('the-paint', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(React.createElement(ThePaint))

@@ -17,26 +17,26 @@ document.addEventListener('DOMContentLoaded', async () => {
   const c1 = new TheRTCClient({
     info: { userName: 'This is client01' },
     mediaConstrains: { audio: false, video: true },
-    onLocal: ({ stream, info, rid }) => {
+    onLocal: ({ info, stream }) => {
       video01Title.innerText = info.userName
       setVideoStream(video01, stream)
     },
-    onRemote: ({ stream, info, rid }) => {
+    onRemote: ({ info, stream }) => {
       video02Title.innerText = info.userName
       setVideoStream(video02, stream)
-    }
+    },
   })
   const c2 = new TheRTCClient({
     info: { userName: 'This is client02' },
     mediaConstrains: { audio: false, video: true },
-    onLocal: ({ stream, info, rid }) => {
+    onLocal: ({ info, stream }) => {
       video03Title.innerText = info.userName
       setVideoStream(video03, stream)
     },
-    onRemote: ({ stream, info, rid, peer }) => {
+    onRemote: ({ info, stream }) => {
       video04Title.innerText = info.userName
       setVideoStream(video04, stream)
-    }
+    },
   })
 
   await c1.connect(url)

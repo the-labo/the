@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-step",
   "description": "Steps for the-components",
-  "version": "15.3.0",
+  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -24,12 +24,7 @@
   "devDependencies": {
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
-    "@the-/script-test": "file:../script-test",
-    "@the-/ui-demo": "file:../ui-demo",
-    "@the-/ui-router": "^15.2.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0"
+    "@the-/script-test": "file:../script-test"
   },
   "engines": {
     "node": ">=10",

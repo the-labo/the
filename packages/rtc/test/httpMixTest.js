@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const httpMix = require('../lib/mixins/httpMix')
-const { ok, equal } = require('assert')
-
 describe('http-mix', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

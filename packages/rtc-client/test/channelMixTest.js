@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const channelMix = require('../lib/mixins/channelMix')
-const { ok, equal } = require('assert')
-
 describe('channel-mix', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

@@ -545,7 +545,6 @@ class X {
 `),
     )
   })
-
 })
 
 /* global describe, before, after, it */

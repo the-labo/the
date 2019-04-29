@@ -4,21 +4,18 @@
  */
 'use strict'
 
-const TheRTC = require('../lib/TheRTC')
-const { TheRTCClient } = require('@the-/rtc-client')
-const { ok, equal } = require('assert')
-const asleep = require('asleep')
-const IOEvents = require('../lib/constants/IOEvents')
-const socketIOClient = require('socket.io-client')
 const aport = require('aport')
+const asleep = require('asleep')
+const { equal, ok } = require('assert')
+const socketIOClient = require('socket.io-client')
+const { TheRTCClient } = require('@the-/rtc-client')
+const IOEvents = require('../lib/constants/IOEvents')
+const TheRTC = require('../lib/TheRTC')
 
 describe('the-rtc', () => {
-  before(async () => {
+  before(async () => {})
 
-  })
-
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     ok(TheRTC)
@@ -58,7 +55,6 @@ describe('the-rtc', () => {
 
     await asleep(100)
     {
-
       const c01 = new TheRTCClient()
       const c02 = new TheRTCClient()
       await c01.connect(`http://localhost:${port}`, { forceNew: true })
@@ -72,7 +68,7 @@ describe('the-rtc', () => {
           setTimeout(() => {
             reject(new Error('Time out'))
           }, 1000)
-          c01.subscribe('chat01', ({ from, payload }) => {
+          c01.subscribe('chat01', ({ payload }) => {
             resolve(payload)
           })
           void c02.publish('chat01', { message: 'hi there' })
@@ -113,7 +109,7 @@ describe('the-rtc', () => {
             setTimeout(() => {
               reject(new Error('Time out'))
             }, 1000)
-            c01.subscribe('chat01', ({ from, payload }) => {
+            c01.subscribe('chat01', ({ payload }) => {
               resolve(payload)
             })
             void c02.publish('chat01', { message: 'hi there' })
@@ -127,7 +123,7 @@ describe('the-rtc', () => {
             setTimeout(() => {
               reject(new Error('Time out'))
             }, 1000)
-            c02.subscribe('chat01', ({ from, payload }) => {
+            c02.subscribe('chat01', ({ payload }) => {
               resolve(payload)
             })
             void c01.publish('chat01', { message: 'hi there' })

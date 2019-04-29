@@ -7,12 +7,12 @@
 const { unlinkAsync } = require('asfs')
 const { deepStrictEqual: deepEqual, ok, strictEqual: equal } = require('assert')
 const {
-  DataTypes: { DATE, NUMBER, REF, STRING, OBJECT },
+  DataTypes: { DATE, NUMBER, OBJECT, REF, STRING },
 } = require('clay-constants')
 const TheDriverSequelize = require('../lib/TheDriverSequelize')
 const resetMysqlDatabase = require('../misc/mysql/resetMysqlDatabase')
 
-describe('the-driver-sequelize', function () {
+describe('the-driver-sequelize', function() {
   this.timeout(8 * 1000)
   before(() => {})
 

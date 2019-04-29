@@ -1,7 +1,7 @@
 {
   "name": "@the-/entrypoint",
   "description": "Browser entrypoint for the-framework",
-  "version": "15.3.0",
+  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -19,10 +19,7 @@
     "history": "^4.9.0"
   },
   "devDependencies": {
-    "injectmock": "^2.0.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0"
+    "injectmock": "^2.0.0"
   },
   "engines": {
     "node": ">=10",

@@ -1,5 +1,6 @@
 /**
- * For bin scripts
+ * Define bud for bin scripts
+ * @memberOf module:@the-/templates
  * @function bin
  * @param {object} config - Configuration
  * @param {object} config.signature - bin signature.
@@ -12,7 +13,7 @@ const evaljson = require('evaljson')
 const objnest = require('objnest')
 const _tmpl = require('./_tmpl')
 
-/** @lends bin */
+/** @lends module:@the-/templates.module:@the-/templates.bin */
 function bin(config) {
   let { signature } = config
   assert.ok(signature, 'config.signature is required.')

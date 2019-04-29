@@ -1,6 +1,6 @@
 /**
  * Wrap stream with debug utility
- * @memberOf module:@the-/client
+ * @memberof helpers
  * @function debugStream
  */
 'use strict'

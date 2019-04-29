@@ -88,20 +88,21 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
 
-<a name="section-doc-readme-03-api-md"></a>
+<!-- Sections Start -->
+
+<a name="api"></a>
 
 ## API Guide
 
-- [default](./doc/api/api.md#module_default)
-- [@the-/cache](./doc/api/api.md#module_@the-/cache)
+
+### Functions
+- [create](#create)
 
 
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
+### Classes
+- [TheCache](#TheCache)
 
-
-<!-- Sections Start -->
 
 
 <!-- LICENSE Start -->

@@ -1,5 +1,6 @@
 /**
- * For LICENSE
+ * Define bud for LICENSE
+ * @memberOf module:@the-/templates
  * @function License
  * @param {object} config - Configuration.
  * @param {string} config.type - Type of license.
@@ -12,7 +13,7 @@
 const assert = require('assert')
 const _tmpl = require('./_tmpl')
 
-/** @lends License */
+/** @lends module:@the-/templates.License */
 function License(config) {
   assert.ok(config.type, 'config.type is required.')
   assert.ok(config.holder, 'config.holder is required.')

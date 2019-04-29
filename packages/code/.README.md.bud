@@ -1,12 +1,12 @@
 /**
  * Bud file for README.md
  */
-"use strict";
+'use strict'
 
-const { Readme } = require("@the-/templates/presets/lib");
+const { Readme } = require('@the-/templates/presets/lib')
 
-module.exports = Readme(__dirname);
+module.exports = Readme(__dirname)
 
 if (!module.parent) {
-  require("coz").render(__filename);
+  require('coz').render(__filename)
 }

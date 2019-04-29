@@ -1,5 +1,6 @@
 /**
- * For README.md
+ * Define bud for README.md
+ * @memberOf module:@the-/templates
  * @function Readme
  * @param {object} config - Configuration.
  * @param {string} config.sections - Section file path.
@@ -18,7 +19,31 @@ const assert = require('assert')
 const path = require('path')
 const _tmpl = require('./_tmpl')
 
-/** @lends readmeBud */
+const _apiLink = (item) => {
+  const { kind, longname, memberof } = item
+  let link = longname.replace(':', '_')
+  let name = longname.replace(memberof, '')
+  switch (kind) {
+    case 'function': {
+      const { params = [] } = item
+      const paramNames = params
+        .map((param) => param.name)
+        .filter((name) => !/\./.test(name))
+      return {
+        link,
+        name: `${name}(${paramNames.join(',')})`,
+      }
+    }
+    default: {
+      return {
+        link,
+        name,
+      }
+    }
+  }
+}
+
+/** @lends module:@the-/templates.readmeBud */
 function readmeBud(config = {}) {
   const { api, pkg, repo, sections } = config
   assert.ok(pkg, 'config.pkg is required.')
@@ -27,16 +52,22 @@ function readmeBud(config = {}) {
   return {
     data: {
       api: api && {
-        jsdoc: api.jsdoc.reduce((reduced, item) => {
-          const { kind } = item
-          return {
-            ...reduced,
-            [kind]: [
-              ...(reduced.hasOwnProperty(kind) ? reduced[kind] : []),
-              item,
-            ],
-          }
-        }, {}),
+        links: api.jsdoc
+          .filter(({ kind }) =>
+            ['class', 'namespace', 'enum', 'typedef', 'function'].includes(
+              kind,
+            ),
+          )
+          .reduce((reduced, item) => {
+            const { kind } = item
+            return {
+              ...reduced,
+              [kind]: [
+                ...(reduced.hasOwnProperty(kind) ? reduced[kind] : []),
+                _apiLink(item),
+              ],
+            }
+          }, {}),
         path: api.path,
       },
       badges: config.badges,

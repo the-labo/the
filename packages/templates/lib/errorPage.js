@@ -1,5 +1,6 @@
 /**
  * Error page
+ * @memberOf module:@the-/templates
  * @function errorPage
  * @param {Object} config
  * @returns {Object}
@@ -9,7 +10,7 @@
 const assert = require('assert')
 const _tmpl = require('./_tmpl')
 
-/** @lends errorPage */
+/** @lends module:@the-/templates.errorPage */
 function errorPage(config) {
   const { color = '#38A', icon, pkg, style, texts, title } = config
   assert(pkg, 'pkg is required')

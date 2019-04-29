@@ -1,5 +1,6 @@
 /**
  * Stream
+ * @memberOf module:@the-/templates
  * @function Stream
  * @param {Object} config
  * @returns {Object}
@@ -10,7 +11,7 @@ const assert = require('assert')
 const path = require('path')
 const _tmpl = require('./_tmpl')
 
-/** @lends Stream */
+/** @lends module:@the-/templates.Stream */
 function Stream(config) {
   const { cjs = false } = config
   let { name } = config

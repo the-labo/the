@@ -1,5 +1,6 @@
 /**
  * Stateless
+ * @memberOf module:@the-/templates
  * @function Stateless
  * @param {Object} config
  * @returns {Object}
@@ -10,7 +11,7 @@ const assert = require('assert')
 const path = require('path')
 const _tmpl = require('./_tmpl')
 
-/** @lends Stateless */
+/** @lends module:@the-/templates.Stateless */
 function Stateless(config) {
   const { name } = config
   assert(name, 'name is required')

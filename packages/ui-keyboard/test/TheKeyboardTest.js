@@ -4,22 +4,18 @@
  */
 'use strict'
 
-import TheKeyboard from '../lib/TheKeyboard'
+import { ok } from 'assert'
 import React from 'react'
-import { ok, equal } from 'assert'
 import { render } from '@the-/script-test'
+import TheKeyboard from '../lib/TheKeyboard'
 
 describe('the-keyboard', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Render a component', () => {
-    let element = render(
-       <TheKeyboard />
-    )
+    let element = render(<TheKeyboard />)
     ok(element)
   })
 })

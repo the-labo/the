@@ -4,20 +4,12 @@
  */
 'use strict'
 
-const handleUnknownOptions = require('../lib/helpers/handleUnknownOptions')
-
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('handle-unknown-options', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-    
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

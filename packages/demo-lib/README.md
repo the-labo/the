@@ -65,9 +65,15 @@ Usage
 ---------
 
 ```javascript
+/**
+ * The is an example of TheDemoLib
+ * @file example-usage.js
+ */
 'use strict'
 
-async function tryExample() {}
+async function tryExample () {
+
+}
 
 tryExample().catch((err) => console.error(err))
 
@@ -82,13 +88,27 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-- [@the-/demo-lib](./doc/api/api.md#module_@the-/demo-lib)
 
 
 <!-- Section from "doc/readme/03.API.md.hbs" End -->
 
 
 <!-- Sections Start -->
+
+<a name="api"></a>
+
+## API Guide
+
+
+## Functions
+- [create](#create)
+- [theDemoLib](#theDemoLib)
+
+
+
+## Classes
+- [TheDemoLib](#TheDemoLib)
+
 
 
 <!-- LICENSE Start -->

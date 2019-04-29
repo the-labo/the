@@ -1,6 +1,6 @@
 /**
  * Wrap controller instance with debug utility
- * @memberOf module:@the-/client
+ * @memberof helpers
  * @function debugController
  */
 'use strict'

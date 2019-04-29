@@ -1,6 +1,9 @@
 /**
  * @memberOf module:@the-/client
+ * @static
  * @class TheClient
+ * @param {string} url
+ * @param {Object} config
  */
 'use strict'
 
@@ -33,7 +36,7 @@ const TheClientBase = [pingPongMix, infoMix, streamMix].reduce(
 
 const { decode, encode } = new ThePack({})
 
-/** @lends TheClient */
+/** @lends module:@the-/client.TheClient */
 class TheClient extends TheClientBase {
   // noinspection ReservedWordAsName
   /**
@@ -97,20 +100,14 @@ class TheClient extends TheClientBase {
   get scope() {
     const { _cid: cid, _rpc: rpc, _version: version } = this
     const language = get('navigator.language')
+    /** @type {TheClientScope} */
     return {
-      /** Caller key */
       callerKey: rpc && rpc.as,
-      /** Client ID */
       cid,
-      /** Host of client */
       host: get('location.host'),
-      /** Detected lang */
       lang: language && language.split('-')[0],
-      /** Connecting protocol */
       protocol: get('location.protocol'),
-      /** Client instance version number */
       v: version,
-      /** Via client */
       via: 'client',
     }
   }
@@ -381,3 +378,9 @@ TheClient.CID_KEY = 'the:cid'
 TheClient.newCID = () => uuid.v4()
 
 module.exports = TheClient
+
+/**
+ * @typedef {Object} TheClientScope
+ * @property {string} callerKey
+ * @property {string} cid - Client id
+ */

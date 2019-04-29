@@ -13,7 +13,6 @@ async function tryExample() {
   })
 
   /* ... */
-
   stop()
 }
 

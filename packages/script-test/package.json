@@ -1,7 +1,7 @@
 {
   "name": "@the-/script-test",
   "description": "Test script for the-project",
-  "version": "15.3.0",
+  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -19,9 +19,7 @@
     "commander": "^2.19.0"
   },
   "devDependencies": {
-    "injectmock": "^2.0.0",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5"
+    "injectmock": "^2.0.0"
   },
   "engines": {
     "node": ">=10",

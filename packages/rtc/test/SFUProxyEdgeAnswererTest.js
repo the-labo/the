@@ -4,19 +4,12 @@
  */
 'use strict'
 
-const SFUProxyEdgeAnswerer = require('../lib/sfu/SFUProxyEdgeAnswerer')
-const { ok, strictEqual: equal, deepStrictEqual: deepEqual } = require('assert')
-
 describe('s-f-u-proxy-edge-answerer', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

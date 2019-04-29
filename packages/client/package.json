@@ -1,7 +1,7 @@
 {
   "name": "@the-/client",
   "description": "Client for the-server",
-  "version": "15.3.0",
+  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -31,10 +31,10 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
+    "@the-/script-build": "^15.2.0",
+    "@the-/script-doc": "^15.2.0",
     "@the-/server": "^15.2.5",
-    "aport": "^2.0.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "aport": "^2.0.0"
   },
   "engines": {
     "node": ">=10",

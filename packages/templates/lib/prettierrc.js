@@ -1,5 +1,6 @@
 /**
- * For prettierrc
+ * Define bud for prettierrc
+ * @memberOf module:@the-/templates
  * @function prettierrc
  * @param {Object} config
  * @returns {Object}
@@ -8,7 +9,7 @@
 
 const _tmpl = require('./_tmpl')
 
-/** @lends prettierrc */
+/** @lends module:@the-/templates.prettierrc */
 function prettierrc(config = {}) {
   return {
     data: {},

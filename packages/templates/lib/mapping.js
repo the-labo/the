@@ -1,5 +1,6 @@
 /**
- * For mapping
+ * Define bud for mapping
+ * @memberOf module:@the-/templates
  * @function mapping
  * @returns {Object}
  */
@@ -8,7 +9,7 @@
 const { ok } = require('assert')
 const _tmpl = require('./_tmpl')
 
-/** @lends mapping */
+/** @lends module:@the-/templates.mapping */
 function mapping(config) {
   const { cjs = false, mapping, name, requireAs, requirePath } = config
   const ext = cjs ? '.js' : '.mjs'

@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/client
+ * @memberof helpers
  * @function asController
  */
 'use strict'

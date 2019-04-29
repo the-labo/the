@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-router",
   "description": "Router of the-components",
-  "version": "15.3.0",
+  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -19,12 +19,8 @@
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
-    "@the-/ui-demo": "^15.2.4",
     "@the-/ui-route": "^15.2.3",
-    "@the-/ui-style": "^15.2.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0"
+    "@the-/ui-style": "^15.2.0"
   },
   "engines": {
     "node": ">=10",

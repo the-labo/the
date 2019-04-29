@@ -4,16 +4,14 @@
  */
 'use strict'
 
-const TheMapStyle = require('../shim/TheMapStyle').default
+const { ok } = require('assert').strict
 const React = require('react')
-const { ok, equal, deepEqual } = require('assert').strict
+const TheMapStyle = require('../shim/TheMapStyle').default
 
 describe('the-map-style', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(React.createElement(TheMapStyle))
