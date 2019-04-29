@@ -8,10 +8,17 @@
 </dd>
 </dl>
 
+## Classes
+
+<dl>
+<dt><a href="#TheAssert">TheAssert</a></dt>
+<dd></dd>
+</dl>
+
 ## Functions
 
 <dl>
-<dt><a href="#create">create(...args)</a> ⇒ <code>TheAssert</code></dt>
+<dt><a href="#create">create(...args)</a> ⇒ <code><a href="#TheAssert">TheAssert</a></code></dt>
 <dd><p>Create a TheAssert instance</p>
 </dd>
 </dl>
@@ -21,18 +28,21 @@
 ## @the-/assert
 Assert for the-framework
 
+<a name="TheAssert"></a>
 
-* [@the-/assert](#module_@the-/assert)
-    * [.TheAssert](#module_@the-/assert.TheAssert)
-        * [new TheAssert(prefix, [options])](#new_module_@the-/assert.TheAssert_new)
+## TheAssert
+**Kind**: global class  
 
-<a name="module_@the-/assert.TheAssert"></a>
+* [TheAssert](#TheAssert)
+    * [new TheAssert(prefix, [options])](#new_TheAssert_new)
+    * [.bind()](#TheAssert+bind) ⇒ <code>Object</code>
+    * [.notNullish(value, [message])](#TheAssert+notNullish)
+    * [.nullish(value, [message])](#TheAssert+nullish)
+    * [.ok(condition, [message])](#TheAssert+ok)
 
-### @the-/assert.TheAssert
-**Kind**: static class of [<code>@the-/assert</code>](#module_@the-/assert)  
-<a name="new_module_@the-/assert.TheAssert_new"></a>
+<a name="new_TheAssert_new"></a>
 
-#### new TheAssert(prefix, [options])
+### new TheAssert(prefix, [options])
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -40,9 +50,55 @@ Assert for the-framework
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 | [options.evenProduction] | <code>Object</code> |  | Skip asserting on production |
 
+<a name="TheAssert+bind"></a>
+
+### theAssert.bind() ⇒ <code>Object</code>
+Bind methods
+
+**Kind**: instance method of [<code>TheAssert</code>](#TheAssert)  
+<a name="TheAssert+notNullish"></a>
+
+### theAssert.notNullish(value, [message])
+Assert that the value is NOT nullish (means either null nor undefined)
+
+**Kind**: instance method of [<code>TheAssert</code>](#TheAssert)  
+
+| Param | Type |
+| --- | --- |
+| value | <code>\*</code> | 
+| [message] | <code>string</code> | 
+
+<a name="TheAssert+nullish"></a>
+
+### theAssert.nullish(value, [message])
+Assert that the value is nullish (null or undefined)
+
+**Kind**: instance method of [<code>TheAssert</code>](#TheAssert)  
+
+| Param | Type |
+| --- | --- |
+| value | <code>\*</code> | 
+| [message] | <code>string</code> | 
+
+<a name="TheAssert+ok"></a>
+
+### theAssert.ok(condition, [message])
+Assert that the condition is truethy
+
+**Kind**: instance method of [<code>TheAssert</code>](#TheAssert)  
+**Throws**:
+
+- Error
+
+
+| Param | Type | Default |
+| --- | --- | --- |
+| condition | <code>\*</code> |  | 
+| [message] | <code>String</code> | <code>assert failed</code> | 
+
 <a name="create"></a>
 
-## create(...args) ⇒ <code>TheAssert</code>
+## create(...args) ⇒ [<code>TheAssert</code>](#TheAssert)
 Create a TheAssert instance
 
 **Kind**: global function  

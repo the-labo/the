@@ -379,6 +379,10 @@
     "kind": "lib",
     "name": "seed"
   },
+  "the-mail": {
+    "kind": "lib",
+    "name": "mail"
+  },
   "the-server": {
     "kind": "lib",
     "name": "server"

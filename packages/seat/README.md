@@ -101,11 +101,12 @@ async function tryExample() {
         while (!canTake(taking)) {
           taking += 1
         }
-        take(taking)
+        void take(taking)
         return get()
       }
 
       const portForApp3 = portFor('myapp03')
+      console.log('portForApp3', portForApp3)
       /* ... */
     }
   }

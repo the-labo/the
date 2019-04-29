@@ -14,6 +14,6 @@ export {
 }
 
 export default {
-      TheDemoUi,
-      TheDemoUiStyle,
+  TheDemoUi,
+  TheDemoUiStyle,
 }

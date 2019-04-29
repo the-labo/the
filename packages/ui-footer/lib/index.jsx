@@ -14,6 +14,6 @@ export {
 }
 
 export default {
-      TheFooter,
-      TheFooterStyle,
+  TheFooter,
+  TheFooterStyle,
 }

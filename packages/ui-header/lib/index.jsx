@@ -14,6 +14,6 @@ export {
 }
 
 export default {
-      TheHeader,
-      TheHeaderStyle,
+  TheHeader,
+  TheHeaderStyle,
 }

@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-bar",
   "description": "Bar of the-components",
-  "version": "15.2.3",
+  "version": "15.3.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -20,14 +20,11 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.4.3",
     "@the-/script-build": "file:../script-build",
     "@the-/script-doc": "file:../script-doc",
     "@the-/script-test": "file:../script-test",
-    "@the-/templates": "file:../templates",
     "@the-/ui-demo": "file:../ui-demo",
     "@the-/ui-router": "^15.2.0",
-    "coz": "^7.0.19",
     "objnest": "^5.0.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -37,7 +34,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/ui-bar#readme",
   "keywords": [
     "the",
     "ui"
@@ -55,7 +52,7 @@
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",
-    "prepare": "npm run build && npm run doc",
+    "prepare": "../../misc/scripts/install_if_needed.sh;npm run build && npm run doc",
     "test": "the-script-test",
     "watch": "the-script-build -w"
   }

@@ -16,7 +16,7 @@ export {
 }
 
 export default {
-      TheActionBar,
-      TheBar,
-      TheBarStyle,
+  TheActionBar,
+  TheBar,
+  TheBarStyle,
 }

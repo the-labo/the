@@ -14,6 +14,6 @@ module.exports = Object.assign(
   /** @lends module:@the-/pack.Converters */
   {
     NoopConverter,
-    UInt8ArrayConverter
-  }
+    UInt8ArrayConverter,
+  },
 )

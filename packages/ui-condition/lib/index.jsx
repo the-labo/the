@@ -14,6 +14,6 @@ export {
 }
 
 export default {
-      TheCondition,
-      TheConditionStyle,
+  TheCondition,
+  TheConditionStyle,
 }

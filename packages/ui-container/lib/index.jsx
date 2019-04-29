@@ -14,6 +14,6 @@ export {
 }
 
 export default {
-      TheContainer,
-      TheContainerStyle,
+  TheContainer,
+  TheContainerStyle,
 }

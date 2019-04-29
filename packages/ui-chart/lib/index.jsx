@@ -14,6 +14,6 @@ export {
 }
 
 export default {
-      TheChart,
-      TheChartStyle,
+  TheChart,
+  TheChartStyle,
 }

@@ -20,9 +20,9 @@ export {
 }
 
 export default {
-      TheConfirmDialog,
-      TheDialog,
-      TheDialogStyle,
-      TheOkDialog,
-      TheYesNoDialog,
+  TheConfirmDialog,
+  TheDialog,
+  TheDialogStyle,
+  TheOkDialog,
+  TheYesNoDialog,
 }

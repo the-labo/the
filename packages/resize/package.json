@@ -1,7 +1,7 @@
 {
   "name": "@the-/resize",
   "description": "Resize image files",
-  "version": "15.2.3",
+  "version": "15.3.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -20,13 +20,7 @@
     "filecopy": "^4.0.2",
     "sharp": "^0.22.1"
   },
-  "devDependencies": {
-    "@the-/script-build": "file:../script-build",
-    "@the-/script-doc": "file:../script-doc",
-    "@the-/script-test": "file:../script-test",
-    "@the-/templates": "file:../templates",
-    "coz": "^7.0.19"
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=10",
     "npm": ">=6"
@@ -45,7 +39,7 @@
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",
-    "prepare": "npm run build && npm run doc",
+    "prepare": "../../misc/scripts/install_if_needed.sh;npm run build && npm run doc",
     "test": "the-script-test",
     "watch": "the-script-build -w"
   }

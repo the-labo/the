@@ -16,7 +16,7 @@ export {
 }
 
 export default {
-      TheCam,
-      TheCamInput,
-      TheCamStyle,
+  TheCam,
+  TheCamInput,
+  TheCamStyle,
 }

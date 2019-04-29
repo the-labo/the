@@ -12,5 +12,5 @@ export {
 }
 
 export default {
-      TheCycle,
+  TheCycle,
 }

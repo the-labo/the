@@ -14,6 +14,6 @@ export {
 }
 
 export default {
-      TheHamburger,
-      TheHamburgerStyle,
+  TheHamburger,
+  TheHamburgerStyle,
 }

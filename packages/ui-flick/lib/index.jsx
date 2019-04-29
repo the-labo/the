@@ -16,7 +16,7 @@ export {
 }
 
 export default {
-      TheFlick,
-      TheFlickImage,
-      TheFlickStyle,
+  TheFlick,
+  TheFlickImage,
+  TheFlickStyle,
 }

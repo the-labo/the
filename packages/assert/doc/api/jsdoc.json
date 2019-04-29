@@ -13,11 +13,11 @@
     "order": 1
   },
   {
-    "id": "module:@the-/assert.TheAssert()",
-    "longname": "module:@the-/assert.TheAssert",
+    "id": "TheAssert()",
+    "longname": "TheAssert",
     "name": "TheAssert",
     "kind": "constructor",
-    "memberof": "module:@the-/assert.TheAssert",
+    "memberof": "TheAssert",
     "params": [
       {
         "type": {
@@ -53,6 +53,19 @@
     "order": 3
   },
   {
+    "id": "TheAssert",
+    "longname": "TheAssert",
+    "name": "TheAssert",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheAssert.js",
+      "path": "/Users/okuni/Projects/the/packages/assert/lib"
+    },
+    "order": 2
+  },
+  {
     "id": "create",
     "longname": "create",
     "name": "create",
@@ -80,7 +93,7 @@
       }
     ],
     "meta": {
-      "lineno": 1,
+      "lineno": 10,
       "filename": "create.js",
       "path": "/Users/okuni/Projects/the/packages/assert/lib"
     },
@@ -105,7 +118,7 @@
       }
     ],
     "meta": {
-      "lineno": 27,
+      "lineno": 26,
       "filename": "TheAssert.js",
       "path": "/Users/okuni/Projects/the/packages/assert/lib"
     },
@@ -139,7 +152,7 @@
       }
     ],
     "meta": {
-      "lineno": 43,
+      "lineno": 42,
       "filename": "TheAssert.js",
       "path": "/Users/okuni/Projects/the/packages/assert/lib"
     },
@@ -173,7 +186,7 @@
       }
     ],
     "meta": {
-      "lineno": 52,
+      "lineno": 51,
       "filename": "TheAssert.js",
       "path": "/Users/okuni/Projects/the/packages/assert/lib"
     },
@@ -213,24 +226,10 @@
       }
     ],
     "meta": {
-      "lineno": 62,
+      "lineno": 61,
       "filename": "TheAssert.js",
       "path": "/Users/okuni/Projects/the/packages/assert/lib"
     },
     "order": 7
-  },
-  {
-    "id": "module:@the-/assert.TheAssert",
-    "longname": "module:@the-/assert.TheAssert",
-    "name": "TheAssert",
-    "kind": "class",
-    "scope": "static",
-    "memberof": "module:@the-/assert",
-    "meta": {
-      "lineno": 1,
-      "filename": "TheAssert.js",
-      "path": "/Users/okuni/Projects/the/packages/assert/lib"
-    },
-    "order": 2
   }
 ]

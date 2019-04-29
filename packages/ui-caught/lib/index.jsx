@@ -16,7 +16,7 @@ export {
 }
 
 export default {
-      TheCaught,
-      TheCaughtCatcher,
-      TheCaughtStyle,
+  TheCaught,
+  TheCaughtCatcher,
+  TheCaughtStyle,
 }

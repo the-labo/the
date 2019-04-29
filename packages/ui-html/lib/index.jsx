@@ -14,6 +14,6 @@ export {
 }
 
 export default {
-      TheHtml,
-      TheHtmlStyle,
+  TheHtml,
+  TheHtmlStyle,
 }

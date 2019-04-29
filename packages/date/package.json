@@ -1,7 +1,7 @@
 {
   "name": "@the-/date",
   "description": "Date utility for the-framework",
-  "version": "15.2.2",
+  "version": "15.3.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -19,17 +19,12 @@
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.25"
   },
-  "devDependencies": {
-    "@the-/script-build": "file:../script-build",
-    "@the-/script-doc": "file:../script-doc",
-    "@the-/script-test": "file:../script-test",
-    "@the-/templates": "file:../templates"
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/date#readme",
   "keywords": [
     "lib",
     "the"
@@ -43,7 +38,7 @@
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",
-    "prepare": "npm run build && npm run doc",
+    "prepare": "../../misc/scripts/install_if_needed.sh;npm run build && npm run doc",
     "test": "the-script-test",
     "watch": "the-script-build -w"
   }

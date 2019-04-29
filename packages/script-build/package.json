@@ -1,7 +1,7 @@
 {
   "name": "@the-/script-build",
   "description": "Build script for the-projects",
-  "version": "15.2.2",
+  "version": "15.3.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -43,9 +43,6 @@
   },
   "devDependencies": {
     "@the-/ast": "^15.1.3",
-    "@the-/script-doc": "^15.2.0",
-    "@the-/script-test": "^15.2.0",
-    "@the-/templates": "^15.2.7",
     "injectmock": "^2.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
@@ -54,7 +51,7 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/script-build#readme",
   "keywords": [
     "script",
     "the"
@@ -68,7 +65,7 @@
   "scripts": {
     "build": "./bin/the-script-build",
     "doc": "the-script-doc",
-    "prepare": "npm run build; npm run doc",
+    "prepare": "../../misc/scripts/install_if_needed.sh;npm run build; npm run doc",
     "test": "the-script-test"
   }
 }

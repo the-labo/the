@@ -1,7 +1,7 @@
 {
   "name": "@the-/window",
   "description": "Browser utility for the-framework",
-  "version": "15.2.2",
+  "version": "15.3.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -15,14 +15,7 @@
     "bwindow": "^2.0.3",
     "debug": "^4.1.1"
   },
-  "devDependencies": {
-    "@babel/core": "^7.4.3",
-    "@the-/script-build": "file:../script-build",
-    "@the-/script-doc": "file:../script-doc",
-    "@the-/script-test": "file:../script-test",
-    "@the-/templates": "file:../templates",
-    "eslint": "^5.16.0"
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=10",
     "npm": ">=6"
@@ -41,7 +34,7 @@
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",
-    "prepare": "npm run build && npm run doc",
+    "prepare": "../../misc/scripts/install_if_needed.sh;npm run build && npm run doc",
     "test": "the-script-test",
     "watch": "the-script-build -w"
   }

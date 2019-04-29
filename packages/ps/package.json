@@ -1,7 +1,7 @@
 {
   "name": "@the-/ps",
   "description": "Process manager for the-framework",
-  "version": "15.2.2",
+  "version": "15.3.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -20,12 +20,7 @@
     "terminate": "^2.1.2",
     "yesno": "^0.2.0"
   },
-  "devDependencies": {
-    "@the-/script-build": "file:../script-build",
-    "@the-/script-doc": "file:../script-doc",
-    "@the-/script-test": "file:../script-test",
-    "@the-/templates": "file:../templates"
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=10",
     "npm": ">=6"
@@ -44,7 +39,7 @@
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",
-    "prepare": "npm run build && npm run doc",
+    "prepare": "../../misc/scripts/install_if_needed.sh;npm run build && npm run doc",
     "test": "the-script-test",
     "watch": "the-script-build -w"
   }

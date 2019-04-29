@@ -1,7 +1,7 @@
 {
   "name": "@the-/scaffold",
   "description": "Scaffold for the-projects",
-  "version": "15.2.4",
+  "version": "15.3.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -24,12 +24,6 @@
   "devDependencies": {
     "@the-/demo-lib": "file:../demo-lib",
     "@the-/demo-ui": "file:../demo-ui",
-    "@the-/script-build": "file:../script-build",
-    "@the-/script-doc": "file:../script-doc",
-    "@the-/script-test": "file:../script-test",
-    "@the-/templates": "file:../templates",
-    "coz": "^7.0.19",
-    "eslint": "^5.16.0",
     "injectmock": "^2.0.0",
     "pon-demo-site": "^8.0.1",
     "react": "^16.8.6",
@@ -52,7 +46,7 @@
   "repository": "the-labo/the",
   "scripts": {
     "build": "the-script-build",
-    "prepare": "npm run build && ./misc/tmplify.js",
+    "prepare": "../../misc/scripts/install_if_needed.sh;npm run build && ./misc/tmplify.js",
     "test": "the-script-test"
   }
 }

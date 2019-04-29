@@ -14,6 +14,6 @@ export {
 }
 
 export default {
-      TheFrame,
-      TheFrameStyle,
+  TheFrame,
+  TheFrameStyle,
 }

@@ -1,7 +1,7 @@
 {
   "name": "@the-/demo-ui",
   "description": "Demo of the-components",
-  "version": "15.2.3",
+  "version": "15.3.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,11 +18,6 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.4.3",
-    "@the-/script-build": "file:../script-build",
-    "@the-/script-doc": "file:../script-doc",
-    "@the-/script-test": "file:../script-test",
-    "@the-/templates": "file:../templates",
     "@the-/ui-demo": "file:../ui-demo",
     "@the-/ui-router": "^15.2.0",
     "objnest": "^5.0.6",
@@ -52,7 +47,7 @@
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",
-    "prepare": "the-script-build && the-script-doc",
+    "prepare": "../../misc/scripts/install_if_needed.sh;the-script-build && the-script-doc",
     "share": "the-script-share",
     "test": "the-script-test",
     "watch": "the-script-build -w"

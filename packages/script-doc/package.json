@@ -1,7 +1,7 @@
 {
   "name": "@the-/script-doc",
   "description": "Doc script for the-projects",
-  "version": "15.2.2",
+  "version": "15.3.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -25,17 +25,13 @@
     "writeout": "^2.2.4"
   },
   "devDependencies": {
-    "@the-/script-build": "^15.2.0",
-    "@the-/script-test": "^15.2.0",
-    "@the-/templates": "^15.2.7",
-    "coz": "^7.0.19",
     "injectmock": "^2.0.0"
   },
   "engines": {
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/script-doc#readme",
   "keywords": [
     "script",
     "the"
@@ -49,7 +45,7 @@
   "scripts": {
     "build": "the-script-build",
     "doc": "bin/the-script-doc",
-    "prepare": "npm run build && npm run doc",
+    "prepare": "../../misc/scripts/install_if_needed.sh;npm run build && npm run doc",
     "test": "the-script-test"
   }
 }

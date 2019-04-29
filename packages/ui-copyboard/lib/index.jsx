@@ -14,6 +14,6 @@ export {
 }
 
 export default {
-      TheCopyboard,
-      TheCopyboardStyle,
+  TheCopyboard,
+  TheCopyboardStyle,
 }
