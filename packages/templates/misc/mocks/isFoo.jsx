@@ -1,6 +1,6 @@
 'use strict'
 
-function isFoo (foo) {
+function isFoo(foo) {
   return 'foo' === foo
 }
 

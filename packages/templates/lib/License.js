@@ -1,7 +1,6 @@
 /**
- * Define a bud for LICENSE
- * @memberof module:ape-tmpl/lib
- * @function licenseBud
+ * For LICENSE
+ * @function License
  * @param {object} config - Configuration.
  * @param {string} config.type - Type of license.
  * @param {number} config.year - Copy right year.
@@ -13,8 +12,8 @@
 const assert = require('assert')
 const _tmpl = require('./_tmpl')
 
-/** @lends licenseBud */
-function licenseBud(config) {
+/** @lends License */
+function License(config) {
   assert.ok(config.type, 'config.type is required.')
   assert.ok(config.holder, 'config.holder is required.')
   return {
@@ -44,4 +43,4 @@ function _tmplForType(type) {
   }
 }
 
-module.exports = licenseBud
+module.exports = License

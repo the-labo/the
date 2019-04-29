@@ -1,7 +1,9 @@
 /**
- * Ctrl
+ * For server controller
  * @function Ctrl
  * @param {Object} config
+ * @param {Boolean} [config.cjs=false]
+ * @param {string} [config.name]
  * @returns {Object}
  */
 'use strict'

@@ -1,6 +1,7 @@
 /**
- * Define coz bud for Dialogs
+ * For Dialog components
  * @function Dialogs
+ * @param {Object} config
  * @returns {Object}
  */
 'use strict'

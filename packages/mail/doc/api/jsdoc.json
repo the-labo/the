@@ -1,0 +1,216 @@
+[
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/mail/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/mail",
+    "longname": "module:@the-/mail",
+    "name": "@the-/mail",
+    "kind": "module",
+    "description": "Mail client for the-framework",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/mail/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "module:helpers",
+    "longname": "module:helpers",
+    "name": "helpers",
+    "kind": "module",
+    "description": "Helper functions",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/mail/lib/helpers"
+    },
+    "order": 5
+  },
+  {
+    "id": "module:sending",
+    "longname": "module:sending",
+    "name": "sending",
+    "kind": "module",
+    "description": "Sending functions",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/mail/lib/sending"
+    },
+    "order": 7
+  },
+  {
+    "id": "TheMail",
+    "longname": "TheMail",
+    "name": "TheMail",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheMail.js",
+      "path": "/Users/okuni/Projects/the/packages/mail/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheMail instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheMail"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/mail/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "toLowerKeys",
+    "longname": "toLowerKeys",
+    "name": "toLowerKeys",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "toLowerKeys.js",
+      "path": "/Users/okuni/Projects/the/packages/mail/lib/helpers"
+    },
+    "order": 6
+  },
+  {
+    "id": "sendMock",
+    "longname": "sendMock",
+    "name": "sendMock",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "sendMock.js",
+      "path": "/Users/okuni/Projects/the/packages/mail/lib/sending"
+    },
+    "order": 8
+  },
+  {
+    "id": "sendSendgrid",
+    "longname": "sendSendgrid",
+    "name": "sendSendgrid",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "sendSendgrid.js",
+      "path": "/Users/okuni/Projects/the/packages/mail/lib/sending"
+    },
+    "order": 9
+  },
+  {
+    "id": "sendSMTP",
+    "longname": "sendSMTP",
+    "name": "sendSMTP",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "sendSMTP.js",
+      "path": "/Users/okuni/Projects/the/packages/mail/lib/sending"
+    },
+    "order": 10
+  },
+  {
+    "id": "TheMail#send",
+    "longname": "TheMail#send",
+    "name": "send",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Send mail",
+    "memberof": "TheMail",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "From address",
+        "name": "config.from"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "To address",
+        "name": "config.to"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Mail subject",
+        "name": "config.subject"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Mail content",
+        "name": "config.content"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 30,
+      "filename": "TheMail.js",
+      "path": "/Users/okuni/Projects/the/packages/mail/lib"
+    },
+    "async": true,
+    "order": 4
+  }
+]

@@ -4,16 +4,11 @@
 'use strict'
 
 const dir = require('./dir')
-const { description, name } = require('../package')
 
-module.exports = [true].map((cjs) =>
-  dir({
-    cjs,
-    description,
-    dirname: __dirname,
-    name,
-  }),
-)
+module.exports = dir({
+  cjs: true,
+  dirname: __dirname,
+})
 
 if (!module.parent) {
   require('coz').render(__filename)

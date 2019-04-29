@@ -1,7 +1,5 @@
 'use strict'
 
-const Hoge = ({}) => (
-  <div></div>
-)
+const Hoge = () => <div />
 
 export default Hoge

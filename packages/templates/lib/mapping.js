@@ -1,5 +1,5 @@
 /**
- * Define coz bud for mapping
+ * For mapping
  * @function mapping
  * @returns {Object}
  */

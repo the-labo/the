@@ -1,5 +1,5 @@
 /**
- * Define coz bud for nginx
+ * For nginx conf file
  * @function nginx
  * @returns {Object}
  */

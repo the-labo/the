@@ -1,9 +1,8 @@
 /**
- * Define a bud for bin.
- * @memberof module:ape-tmpl/lib
- * @function binBud
+ * For bin scripts
+ * @function bin
  * @param {object} config - Configuration
- * @param {object} signature - Bin signature.
+ * @param {object} config.signature - bin signature.
  * @returns {object} - Bud object.
  */
 'use strict'
@@ -13,8 +12,9 @@ const evaljson = require('evaljson')
 const objnest = require('objnest')
 const _tmpl = require('./_tmpl')
 
-function binBud(config) {
-  let signature = config.signature
+/** @lends bin */
+function bin(config) {
+  let { signature } = config
   assert.ok(signature, 'config.signature is required.')
   return {
     data: {
@@ -32,4 +32,4 @@ function binBud(config) {
   }
 }
 
-module.exports = binBud
+module.exports = bin

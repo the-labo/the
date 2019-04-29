@@ -1,5 +1,5 @@
 /**
- * prettierrc
+ * For prettierrc
  * @function prettierrc
  * @param {Object} config
  * @returns {Object}

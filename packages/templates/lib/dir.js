@@ -1,6 +1,7 @@
 /**
- * Define coz bud for dir
+ * For dir
  * @function dir
+ * @param {Object} config
  * @returns {Object}
  */
 'use strict'
@@ -49,14 +50,7 @@ const guessName = (dirname) => {
 
 /** @lends dir */
 function dir(config) {
-  const {
-    cjs = config.node,
-    description,
-    dirname,
-    ext,
-    name = guessName(config.dirname),
-    ...rest
-  } = config
+  const { annotations, cjs = config.node, dirname, ext, ...rest } = config
   handleRestConfig(rest)
   const TMPL_PATH = cjs ? _tmpl('cjs_dir.hbs') : _tmpl('dir.hbs')
   const modules = fs
@@ -78,10 +72,9 @@ function dir(config) {
     .filter(({ name }) => name !== 'index')
   return {
     data: {
+      annotations,
       defaultModule: modules.find(({ name }) => name === 'default'),
-      description,
       modules: modules.filter(({ name }) => name !== 'default'),
-      name,
     },
     force: true,
     mode: '444',
@@ -93,12 +86,11 @@ function dir(config) {
 Object.assign(dir, {
   recursive(config) {
     const {
+      annotations,
       cjs = config.node,
-      description,
       dirname,
       ext,
       ignore = [],
-      name = guessName(config.dirname),
       tmpl,
       ...rest
     } = config
@@ -126,10 +118,9 @@ Object.assign(dir, {
       .filter(({ name }) => name !== 'index')
     return {
       data: {
+        annotations,
         defaultModule: modules.find(({ name }) => name === 'default'),
-        description,
         modules: modules.filter(({ name }) => name !== 'default'),
-        name,
       },
       force: true,
       mode: '444',

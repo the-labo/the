@@ -13,14 +13,9 @@ module.exports = Readme({
   pkg,
   repo: pkg.repository,
   sections: 'doc/readme/*.md.hbs',
-  vars: {
-    jsdoc: require('./doc/api/jsdoc').reduce(
-      (reduced, item) => ({
-        ...reduced,
-        [item.kind]: [...(reduced[item.kind] || []), item],
-      }),
-      {},
-    ),
+  api:{
+    path: './doc/api/api.md',
+    jsdoc: require('./doc/api/jsdoc'),
   },
 })
 

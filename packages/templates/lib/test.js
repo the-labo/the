@@ -1,5 +1,5 @@
 /**
- * Define coz bud for readme
+ * For readme
  * @function test
  * @returns {Object}
  */

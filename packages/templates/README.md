@@ -81,19 +81,40 @@ coz.render(
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
 
-<a name="section-doc-readme-03-api-md"></a>
+<!-- Sections Start -->
+
+<a name="api"></a>
 
 ## API Guide
 
-- [@the-/templates](./doc/api/api.md#module_@the-/templates)
+
+## Functions
+- [bin](#bin)
+- [Ctrl](#Ctrl)
+- [Dialogs](#Dialogs)
+- [dir](#dir)
+- [errorPage](#errorPage)
+- [eslintignore](#eslintignore)
+- [eslintrc](#eslintrc)
+- [Hook](#Hook)
+- [License](#License)
+- [mapping](#mapping)
+- [nginx](#nginx)
+- [pcssVars](#pcssVars)
+- [prettierrc](#prettierrc)
+- [Readme](#Readme)
+- [Resources](#Resources)
+- [Scene](#Scene)
+- [scopes](#scopes)
+- [Stateful](#Stateful)
+- [Stateless](#Stateless)
+- [Stream](#Stream)
+- [test](#test)
+- [vhost](#vhost)
+- [View](#View)
 
 
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
-
-<!-- Sections Start -->
 
 
 <!-- LICENSE Start -->

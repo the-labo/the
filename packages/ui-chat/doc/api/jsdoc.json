@@ -1,0 +1,491 @@
+[
+  {
+    "id": "module:@the-/ui-chat",
+    "longname": "module:@the-/ui-chat",
+    "name": "@the-/ui-chat",
+    "kind": "module",
+    "description": "Chat UI of the-components",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheChat",
+    "longname": "TheChat",
+    "name": "TheChat",
+    "kind": "class",
+    "scope": "global",
+    "description": "Chat UI of the-components",
+    "meta": {
+      "lineno": 13,
+      "filename": "TheChat.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheChatForm",
+    "longname": "TheChatForm",
+    "name": "TheChatForm",
+    "kind": "class",
+    "scope": "global",
+    "description": "Chat UI of the-components",
+    "meta": {
+      "lineno": 14,
+      "filename": "TheChatForm.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "TheChatTimeLine",
+    "longname": "TheChatTimeLine",
+    "name": "TheChatTimeLine",
+    "kind": "class",
+    "scope": "global",
+    "description": "Chat Time line",
+    "meta": {
+      "lineno": 33,
+      "filename": "TheChatTimeLine.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 13
+  },
+  {
+    "id": "TheChatTimeLineItem",
+    "longname": "TheChatTimeLineItem",
+    "name": "TheChatTimeLineItem",
+    "kind": "class",
+    "scope": "global",
+    "description": "Chat Time line item",
+    "meta": {
+      "lineno": 16,
+      "filename": "TheChatTimeLineItem.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 23
+  },
+  {
+    "id": "TheChatStyle",
+    "longname": "TheChatStyle",
+    "name": "TheChatStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheChat",
+    "params": [],
+    "meta": {
+      "lineno": 11,
+      "filename": "TheChatStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 11
+  },
+  {
+    "id": "TheChatForm.propTypes.disabled",
+    "longname": "TheChatForm.propTypes.disabled",
+    "name": "disabled",
+    "kind": "member",
+    "scope": "static",
+    "description": "Disabled attribute",
+    "memberof": "TheChatForm.propTypes",
+    "meta": {
+      "lineno": 91,
+      "filename": "TheChatForm.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "TheChatForm.propTypes.maxRows",
+    "longname": "TheChatForm.propTypes.maxRows",
+    "name": "maxRows",
+    "kind": "member",
+    "scope": "static",
+    "description": "Max rows",
+    "memberof": "TheChatForm.propTypes",
+    "meta": {
+      "lineno": 93,
+      "filename": "TheChatForm.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheChatForm.propTypes.minLength",
+    "longname": "TheChatForm.propTypes.minLength",
+    "name": "minLength",
+    "kind": "member",
+    "scope": "static",
+    "description": "Minimum text length",
+    "memberof": "TheChatForm.propTypes",
+    "meta": {
+      "lineno": 95,
+      "filename": "TheChatForm.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheChatForm.propTypes.minRows",
+    "longname": "TheChatForm.propTypes.minRows",
+    "name": "minRows",
+    "kind": "member",
+    "scope": "static",
+    "description": "Min rows",
+    "memberof": "TheChatForm.propTypes",
+    "meta": {
+      "lineno": 97,
+      "filename": "TheChatForm.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "TheChatForm.propTypes.onSubmit",
+    "longname": "TheChatForm.propTypes.onSubmit",
+    "name": "onSubmit",
+    "kind": "member",
+    "scope": "static",
+    "description": "Handler for value submit",
+    "memberof": "TheChatForm.propTypes",
+    "meta": {
+      "lineno": 99,
+      "filename": "TheChatForm.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "TheChatForm.propTypes.onUpdate",
+    "longname": "TheChatForm.propTypes.onUpdate",
+    "name": "onUpdate",
+    "kind": "member",
+    "scope": "static",
+    "description": "Handler for value update",
+    "memberof": "TheChatForm.propTypes",
+    "meta": {
+      "lineno": 101,
+      "filename": "TheChatForm.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 8
+  },
+  {
+    "id": "TheChatForm.propTypes.submitText",
+    "longname": "TheChatForm.propTypes.submitText",
+    "name": "submitText",
+    "kind": "member",
+    "scope": "static",
+    "description": "Text for submit",
+    "memberof": "TheChatForm.propTypes",
+    "meta": {
+      "lineno": 104,
+      "filename": "TheChatForm.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 9
+  },
+  {
+    "id": "TheChatForm.propTypes.values",
+    "longname": "TheChatForm.propTypes.values",
+    "name": "values",
+    "kind": "member",
+    "scope": "static",
+    "description": "Form values",
+    "memberof": "TheChatForm.propTypes",
+    "meta": {
+      "lineno": 106,
+      "filename": "TheChatForm.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 10
+  },
+  {
+    "id": "TheChatStyle.propTypes.options",
+    "longname": "TheChatStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
+    "memberof": "TheChatStyle.propTypes",
+    "meta": {
+      "lineno": 22,
+      "filename": "TheChatStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 12
+  },
+  {
+    "id": "TheChatTimeLine.propTypes.alt",
+    "longname": "TheChatTimeLine.propTypes.alt",
+    "name": "alt",
+    "kind": "member",
+    "scope": "static",
+    "description": "Alt text",
+    "memberof": "TheChatTimeLine.propTypes",
+    "meta": {
+      "lineno": 170,
+      "filename": "TheChatTimeLine.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 14
+  },
+  {
+    "id": "TheChatTimeLine.propTypes.items",
+    "longname": "TheChatTimeLine.propTypes.items",
+    "name": "items",
+    "kind": "member",
+    "scope": "static",
+    "description": "Item data",
+    "memberof": "TheChatTimeLine.propTypes",
+    "meta": {
+      "lineno": 172,
+      "filename": "TheChatTimeLine.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 15
+  },
+  {
+    "id": "TheChatTimeLine.propTypes.lang",
+    "longname": "TheChatTimeLine.propTypes.lang",
+    "name": "lang",
+    "kind": "member",
+    "scope": "static",
+    "description": "Lang",
+    "memberof": "TheChatTimeLine.propTypes",
+    "meta": {
+      "lineno": 174,
+      "filename": "TheChatTimeLine.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 16
+  },
+  {
+    "id": "TheChatTimeLine.propTypes.onScrollReachBottom",
+    "longname": "TheChatTimeLine.propTypes.onScrollReachBottom",
+    "name": "onScrollReachBottom",
+    "kind": "member",
+    "scope": "static",
+    "description": "Handler when scroll reaches bottom",
+    "memberof": "TheChatTimeLine.propTypes",
+    "meta": {
+      "lineno": 176,
+      "filename": "TheChatTimeLine.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 17
+  },
+  {
+    "id": "TheChatTimeLine.propTypes.onScrollReachTop",
+    "longname": "TheChatTimeLine.propTypes.onScrollReachTop",
+    "name": "onScrollReachTop",
+    "kind": "member",
+    "scope": "static",
+    "description": "Handler when scroll reaches top",
+    "memberof": "TheChatTimeLine.propTypes",
+    "meta": {
+      "lineno": 178,
+      "filename": "TheChatTimeLine.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 18
+  },
+  {
+    "id": "TheChatTimeLine.propTypes.onWho",
+    "longname": "TheChatTimeLine.propTypes.onWho",
+    "name": "onWho",
+    "kind": "member",
+    "scope": "static",
+    "description": "Handler for who tap",
+    "memberof": "TheChatTimeLine.propTypes",
+    "meta": {
+      "lineno": 180,
+      "filename": "TheChatTimeLine.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 19
+  },
+  {
+    "id": "TheChatTimeLine.propTypes.spinning",
+    "longname": "TheChatTimeLine.propTypes.spinning",
+    "name": "spinning",
+    "kind": "member",
+    "scope": "static",
+    "description": "Shows spin",
+    "memberof": "TheChatTimeLine.propTypes",
+    "meta": {
+      "lineno": 182,
+      "filename": "TheChatTimeLine.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 20
+  },
+  {
+    "id": "TheChatTimeLine.propTypes.whoBaseColor",
+    "longname": "TheChatTimeLine.propTypes.whoBaseColor",
+    "name": "whoBaseColor",
+    "kind": "member",
+    "scope": "static",
+    "description": "Base color of who",
+    "memberof": "TheChatTimeLine.propTypes",
+    "meta": {
+      "lineno": 184,
+      "filename": "TheChatTimeLine.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 21
+  },
+  {
+    "id": "TheChatTimeLine.propTypes.whoImageSize",
+    "longname": "TheChatTimeLine.propTypes.whoImageSize",
+    "name": "whoImageSize",
+    "kind": "member",
+    "scope": "static",
+    "description": "Size of who image",
+    "memberof": "TheChatTimeLine.propTypes",
+    "meta": {
+      "lineno": 186,
+      "filename": "TheChatTimeLine.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 22
+  },
+  {
+    "id": "TheChatTimeLineItem.propTypes.align",
+    "longname": "TheChatTimeLineItem.propTypes.align",
+    "name": "align",
+    "kind": "member",
+    "scope": "static",
+    "description": "Content align",
+    "memberof": "TheChatTimeLineItem.propTypes",
+    "meta": {
+      "lineno": 170,
+      "filename": "TheChatTimeLineItem.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 24
+  },
+  {
+    "id": "TheChatTimeLineItem.propTypes.image",
+    "longname": "TheChatTimeLineItem.propTypes.image",
+    "name": "image",
+    "kind": "member",
+    "scope": "static",
+    "description": "Image Url",
+    "memberof": "TheChatTimeLineItem.propTypes",
+    "meta": {
+      "lineno": 173,
+      "filename": "TheChatTimeLineItem.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 25
+  },
+  {
+    "id": "TheChatTimeLineItem.propTypes.onWho",
+    "longname": "TheChatTimeLineItem.propTypes.onWho",
+    "name": "onWho",
+    "kind": "member",
+    "scope": "static",
+    "description": "Handler for click who",
+    "memberof": "TheChatTimeLineItem.propTypes",
+    "meta": {
+      "lineno": 175,
+      "filename": "TheChatTimeLineItem.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 26
+  },
+  {
+    "id": "TheChatTimeLineItem.propTypes.status",
+    "longname": "TheChatTimeLineItem.propTypes.status",
+    "name": "status",
+    "kind": "member",
+    "scope": "static",
+    "description": "Status text",
+    "memberof": "TheChatTimeLineItem.propTypes",
+    "meta": {
+      "lineno": 177,
+      "filename": "TheChatTimeLineItem.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 27
+  },
+  {
+    "id": "TheChatTimeLineItem.propTypes.text",
+    "longname": "TheChatTimeLineItem.propTypes.text",
+    "name": "text",
+    "kind": "member",
+    "scope": "static",
+    "description": "Text",
+    "memberof": "TheChatTimeLineItem.propTypes",
+    "meta": {
+      "lineno": 179,
+      "filename": "TheChatTimeLineItem.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 28
+  },
+  {
+    "id": "TheChatTimeLineItem.propTypes.video",
+    "longname": "TheChatTimeLineItem.propTypes.video",
+    "name": "video",
+    "kind": "member",
+    "scope": "static",
+    "description": "Video url",
+    "memberof": "TheChatTimeLineItem.propTypes",
+    "meta": {
+      "lineno": 181,
+      "filename": "TheChatTimeLineItem.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 29
+  },
+  {
+    "id": "TheChatTimeLineItem.propTypes.who",
+    "longname": "TheChatTimeLineItem.propTypes.who",
+    "name": "who",
+    "kind": "member",
+    "scope": "static",
+    "description": "Who posts",
+    "memberof": "TheChatTimeLineItem.propTypes",
+    "meta": {
+      "lineno": 183,
+      "filename": "TheChatTimeLineItem.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 30
+  },
+  {
+    "id": "TheChatTimeLineItem.propTypes.whoBaseColor",
+    "longname": "TheChatTimeLineItem.propTypes.whoBaseColor",
+    "name": "whoBaseColor",
+    "kind": "member",
+    "scope": "static",
+    "description": "Base color of who",
+    "memberof": "TheChatTimeLineItem.propTypes",
+    "meta": {
+      "lineno": 185,
+      "filename": "TheChatTimeLineItem.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 31
+  },
+  {
+    "id": "TheChatTimeLineItem.propTypes.whoImageSize",
+    "longname": "TheChatTimeLineItem.propTypes.whoImageSize",
+    "name": "whoImageSize",
+    "kind": "member",
+    "scope": "static",
+    "description": "Image size of who",
+    "memberof": "TheChatTimeLineItem.propTypes",
+    "meta": {
+      "lineno": 187,
+      "filename": "TheChatTimeLineItem.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chat/lib"
+    },
+    "order": 32
+  }
+]

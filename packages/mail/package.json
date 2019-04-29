@@ -1,0 +1,47 @@
+{
+  "name": "@the-/mail",
+  "description": "Mail client for the-framework",
+  "version": "15.3.0",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "browser": "shim",
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "*",
+    "@the-/check": "^15.2.6",
+    "asobj": "^3.0.1",
+    "handlebars": "^4.0.12",
+    "nodemailer": "^5.1.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@the-/secret": "file:../secret"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/mail#readme",
+  "keywords": [
+    "lib",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "../../misc/scripts/install_if_needed.sh;npm run build && npm run doc",
+    "test": "the-script-test",
+    "watch": "the-script-build -w"
+  }
+}
