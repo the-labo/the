@@ -5,7 +5,7 @@
     "name": "@the-/db",
     "kind": "module",
     "description": "DB for the-framework",
-    "version": "15.4.1",
+    "version": "15.4.2",
     "license": "MIT",
     "typicalname": "db",
     "meta": {
@@ -162,6 +162,26 @@
     "description": "Resource to manage schema",
     "memberof": "module:@the-/db.TheSchemaResource",
     "order": 50
+  },
+  {
+    "id": "default",
+    "longname": "default",
+    "name": "default",
+    "kind": "function",
+    "scope": "global",
+    "description": "Alias of {@memberOf module:@the-/db",
+    "customTags": [
+      {
+        "tag": "link",
+        "value": "module:@the-/db.create}"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "order": 1
   },
   {
     "id": "module:@the-/db.TheDB#hooksFromMapping",
@@ -1087,21 +1107,6 @@
       "path": "/Users/okuni/Projects/the/packages/db/lib"
     },
     "order": 0
-  },
-  {
-    "id": "module:@the-/db.default",
-    "longname": "module:@the-/db.default",
-    "name": "default",
-    "kind": "function",
-    "scope": "static",
-    "description": "Alias of {@link module:@the-/db.create}",
-    "memberof": "module:@the-/db",
-    "meta": {
-      "lineno": 1,
-      "filename": "default.js",
-      "path": "/Users/okuni/Projects/the/packages/db/lib"
-    },
-    "order": 1
   },
   {
     "id": "module:@the-/db.driverFromEnv",

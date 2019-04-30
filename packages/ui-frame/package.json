@@ -20,6 +20,7 @@
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
     "@the-/ui-router": "^15.2.0",
+    "coz": "^7.0.19",
     "objnest": "^5.0.6"
   },
   "engines": {

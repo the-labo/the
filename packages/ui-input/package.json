@@ -33,7 +33,8 @@
   },
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
-    "@the-/ui-router": "^15.2.0"
+    "@the-/ui-router": "^15.2.0",
+    "coz": "^7.0.19"
   },
   "engines": {
     "node": ">=10",

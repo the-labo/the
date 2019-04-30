@@ -84,7 +84,6 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
-- [default()](./doc/api/api.md#default)
 - [listenToCreate(onCreate)](./doc/api/api.md#listenToCreate)
 - [listenToDestroy(onDestroy)](./doc/api/api.md#listenToDestroy)
 - [listenToDrop(onDrop)](./doc/api/api.md#listenToDrop)

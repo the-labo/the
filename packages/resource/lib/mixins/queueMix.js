@@ -54,7 +54,7 @@ function queueMix(Class) {
       return created
     }
   }
-  return QueueMix
+  return QueueMixed
 }
 
 module.exports = queueMix

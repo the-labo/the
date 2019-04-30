@@ -1,7 +1,7 @@
 /**
- * Alias of {@link module:@the-/context.create}
- * @memberOf module:@the-/context
+ * Alias of {@memberOf module:@the-/context
  * @function default
+ * @link module:@the-/context.create}
  */
 'use strict'
 

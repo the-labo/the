@@ -1,7 +1,7 @@
 /**
  * Date manipulator
  * @memberOf module:@the-/date
- * @augments module:@the-/date.TheDateBase
+ * @class TheDate
  * @augments module:@the-/date.mixins.addMix~AddMixed
  * @augments module:@the-/date.mixins.endOfMix~EndOfMixed
  * @augments module:@the-/date.mixins.getMix~GetMixed
@@ -9,7 +9,7 @@
  * @augments module:@the-/date.mixins.setMix~SetMixed
  * @augments module:@the-/date.mixins.startOfMix~StartOfMixed
  * @augments module:@the-/date.mixins.subtractMix~SubtractMixed
- * @class TheDate
+ * @augments module:@the-/date.TheDateBase
  */
 'use strict'
 

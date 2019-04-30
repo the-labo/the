@@ -1,6 +1,6 @@
 /**
- * Alias of {@link module:@the-/resource.create}
- * @function default
+ * Alias of {@function default
+ * @link module:@the-/resource.create}
  */
 'use strict'
 

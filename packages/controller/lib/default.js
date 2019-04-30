@@ -1,7 +1,7 @@
 /**
- * Alias of {@link module:@the-/controller.create}
- * @memberOf module:@the-/controller
+ * Alias of {@memberOf module:@the-/controller
  * @function default
+ * @link module:@the-/controller.create}
  */
 'use strict'
 

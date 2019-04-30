@@ -1,7 +1,7 @@
 {
   "name": "@the-/db",
   "description": "DB for the-framework",
-  "version": "15.4.1",
+  "version": "15.4.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -17,7 +17,7 @@
     "@the-/driver-sequelize": "^15.4.0",
     "@the-/hash": "^15.4.2",
     "@the-/refresher": "^15.4.0",
-    "@the-/resource": "^15.4.1",
+    "@the-/resource": "^15.4.2",
     "@the-/util-db": "^15.4.0",
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.3",
@@ -66,6 +66,7 @@
     "build": "../../misc/scripts/pkgBuild.js",
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
+    "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
   }
 }

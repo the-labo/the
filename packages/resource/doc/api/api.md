@@ -11,9 +11,6 @@
 ## Functions
 
 <dl>
-<dt><a href="#default">default()</a></dt>
-<dd><p>Alias of <a href="#module_@the-/resource.create">create</a></p>
-</dd>
 <dt><a href="#listenToCreate">listenToCreate(onCreate)</a> ⇒ <code>function</code></dt>
 <dd><p>Listen to create</p>
 </dd>
@@ -33,7 +30,7 @@
 ## @the-/resource
 Base of the-resource
 
-**Version**: 15.4.1  
+**Version**: 15.4.2  
 **License**: MIT  
 
 * [@the-/resource](#module_@the-/resource)
@@ -228,12 +225,6 @@ Create a TheResource instance
 
 ### resource.isResourceClass() ⇒ <code>Boolean</code>
 **Kind**: static method of [<code>@the-/resource</code>](#module_@the-/resource)  
-<a name="default"></a>
-
-## default()
-Alias of [create](#module_@the-/resource.create)
-
-**Kind**: global function  
 <a name="listenToCreate"></a>
 
 ## listenToCreate(onCreate) ⇒ <code>function</code>

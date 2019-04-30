@@ -1,6 +1,6 @@
 /**
- * @function cascadeMix
  * @memberOf module:@the-/db
+ * @function cascadeMix
  * @param {function} Class
  * @return {function} Mixed Class
  */

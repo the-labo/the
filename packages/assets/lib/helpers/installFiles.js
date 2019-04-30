@@ -1,12 +1,12 @@
 /**
  * Install files
  * @memberOf module:@the-/assets.helpers
- * @protected
- * @function installFiles
  * @param {string} srcDir - Source directory path
  * @param {string} destDir - Destination directory path
  * @param {Object} [options = {}] - Optional settings
  * @param {boolean} [options.copy=false] - Copy files instead of symlinks
+ * @protected
+ * @function installFiles
  * @returns {Promise}
  */
 'use strict'

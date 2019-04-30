@@ -1,7 +1,7 @@
 /**
- * Default exports. Alias of {@link module:@the-/assert.create}
- * @memberOf module:@the-/assert
+ * Default exports. Alias of {@memberOf module:@the-/assert
  * @function default
+ * @link module:@the-/assert.create}
  * @param {...*} args
  * @returns {module:@the-/assert.TheAssert.TheAssert}
  */

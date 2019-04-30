@@ -1,7 +1,7 @@
 /**
  * Driver for mongo db
- * @augments Driver
  * @class MongoDriver
+ * @augments Driver
  * @inheritdoc
  */
 'use strict'
