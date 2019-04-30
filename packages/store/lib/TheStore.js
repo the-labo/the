@@ -1,5 +1,6 @@
 /**
  * Scoped redux store
+ * @memberOf module:@the-/store
  * @class TheStore
  * @param {Object} [options={}] - optional settings
  * @param {function} [options.reducer] - Custom reducer function
@@ -28,7 +29,7 @@ const { parseDef, setByNamepath } = helpers
 
 const NAMEPATH_SEPARATOR = '.'
 
-/** @lends TheStore */
+/** @lends module:@the-/store.TheStore */
 class TheStore {
   constructor(options = {}) {
     let {

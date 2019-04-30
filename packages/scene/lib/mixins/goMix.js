@@ -1,5 +1,6 @@
 /**
  * @function goMix
+ * @memberOf module:@the-/scene.mixins
  * @param {function} BaseClass
  * @returns {function} MixedClass
  */
@@ -8,8 +9,12 @@
 const { get } = require('bwindow')
 const { formatUrl } = require('@the-/url')
 
-/** @lends goMix */
+/** @lends module:@the-/scene.mixins.goMix */
 function goMix(BaseClass) {
+  /**
+   * @inner
+   * @memberOf module:@the-/scene.mixins.goMix
+   */
   class GoMixed extends BaseClass {
     goTo(href, params = {}) {
       href = formatUrl(href, params)

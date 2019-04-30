@@ -1,13 +1,14 @@
 /**
  * Scope to hold object
- * @augments Scope
+ * @memberOf module:@the-/scope.scopes
+ * @augments module:@the-/scope.scopes.Scope
  * @class ObjectScope
  */
 'use strict'
 
 const Scope = require('./Scope')
 
-/** @lends ObjectScope */
+/** @lends module:@the-/scope.scopes.ObjectScope */
 class ObjectScope extends Scope {
   static get initialState() {
     return {}

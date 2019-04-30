@@ -1,13 +1,14 @@
 /**
  * Scope to hold number
- * @augments Scope
+ * @memberOf module:@the-/scope.scopes
+ * @augments module:@the-/scope.scopes.Scope
  * @class NumberScope
  */
 'use strict'
 
 const Scope = require('./Scope')
 
-/** @lends NumberScope */
+/** @lends module:@the-/scope.scopes.NumberScope */
 class NumberScope extends Scope {
   static get initialState() {
     return 0

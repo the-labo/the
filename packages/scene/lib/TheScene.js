@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/scene
  * @class TheScene
  */
 'use strict'
@@ -13,7 +14,7 @@ const TheSceneMixed = [errorMix, goMix, subMix].reduce(
   class Root {},
 )
 
-/** @lends TheScene */
+/** @lends module:@the-/scene.TheScene */
 class TheScene extends TheSceneMixed {
   constructor(props = {}) {
     super()

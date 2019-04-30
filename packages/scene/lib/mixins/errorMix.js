@@ -1,12 +1,17 @@
 /**
  * @function errorMix
+ * @memberOf module:@the-/scene.mixins
  * @param {function} BaseClass
  * @returns {function} MixedClass
  */
 'use strict'
 
-/** @lends errorMix */
+/** @lends module:@the-/scene.mixins.errorMix */
 function errorMix(BaseClass) {
+  /**
+   * @memberOf module:@the-/scene.mixins.goMix
+   * @inner
+   */
   class ErrorMixed extends BaseClass {
     catchEntryError(err) {
       switch (err.name) {

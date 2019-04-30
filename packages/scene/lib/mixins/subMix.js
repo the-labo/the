@@ -1,12 +1,17 @@
 /**
  * @function subMix
+ * @memberOf module:@the-/scene.mixins
  * @param {function} BaseClass
  * @returns {function} MixedClass
  */
 'use strict'
 
-/** @lends subMix */
+/** @lends module:@the-/scene.mixins.subMix */
 function subMix(BaseClass) {
+  /**
+   * @memberOf module:@the-/scene.mixins.subMix
+   * @inner
+   */
   class SubMixed extends BaseClass {
     constructor(...args) {
       super(...args)

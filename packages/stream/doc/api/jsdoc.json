@@ -5,7 +5,7 @@
     "name": "@the-/stream",
     "kind": "module",
     "description": "Base of the streams",
-    "version": "15.4.0",
+    "version": "15.4.1",
     "license": "MIT",
     "typicalname": "stream",
     "meta": {
@@ -159,6 +159,22 @@
       "path": "/Users/okuni/Projects/the/packages/stream/lib"
     },
     "order": 3
+  },
+  {
+    "id": "module:@the-/stream.helpers",
+    "longname": "module:@the-/stream.helpers",
+    "name": "helpers",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Helper functions",
+    "memberof": "module:@the-/stream",
+    "access": "protected",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/stream/lib/helpers"
+    },
+    "order": 9
   },
   {
     "id": "module:@the-/stream.helpers.generatorFromReadable",

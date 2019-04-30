@@ -1,6 +1,7 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link module:@the-/store}
+ * @memberOf module:@the-/store
+ * @function create
  */
 'use strict'
 

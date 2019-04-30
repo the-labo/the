@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@the-/util-path": "^1.0.2",
-    "aglob": "^3.0.1",
+    "aglob": "^3.0.2",
     "evaljson": "^6.0.4",
     "objnest": "^5.0.6",
     "reserved": "^0.1.2",

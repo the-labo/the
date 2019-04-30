@@ -3,145 +3,192 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_default">default</a></dt>
-<dd><p>Default exports</p>
-</dd>
 <dt><a href="#module_@the-/scene">@the-/scene</a></dt>
 <dd><p>Base class of the-scene</p>
 </dd>
-<dt><a href="#module_mixins">mixins</a></dt>
-<dd><p>Scene mixin functions</p>
-</dd>
-</dl>
-
-## Classes
-
-<dl>
-<dt><a href="#TheScene">TheScene</a></dt>
-<dd></dd>
 </dl>
 
 ## Functions
 
 <dl>
-<dt><a href="#create">create(...args)</a> ⇒ <code><a href="#TheScene">TheScene</a></code></dt>
-<dd><p>Create a TheScene instance</p>
+<dt><a href="#default">default()</a></dt>
+<dd><p>Alias of <a href="#module_@the-/scene.create">create</a></p>
 </dd>
-<dt><a href="#errorMix">errorMix(BaseClass)</a> ⇒ <code>function</code></dt>
-<dd></dd>
-<dt><a href="#goMix">goMix(BaseClass)</a> ⇒ <code>function</code></dt>
-<dd></dd>
-<dt><a href="#subMix">subMix(BaseClass)</a> ⇒ <code>function</code></dt>
-<dd></dd>
 </dl>
-
-<a name="module_default"></a>
-
-## default
-Default exports
 
 <a name="module_@the-/scene"></a>
 
 ## @the-/scene
 Base class of the-scene
 
-<a name="module_mixins"></a>
+**Version**: 15.4.1  
+**License**: MIT  
 
-## mixins
-Scene mixin functions
+* [@the-/scene](#module_@the-/scene)
+    * [.TheScene](#module_@the-/scene.TheScene)
+        * [.scope](#module_@the-/scene.TheScene+scope) ⇒ <code>\*</code>
+        * [.for()](#module_@the-/scene.TheScene+for)
+        * [.get()](#module_@the-/scene.TheScene+get)
+        * [.has(namepath)](#module_@the-/scene.TheScene+has) ⇒ <code>boolean</code>
+        * [.init()](#module_@the-/scene.TheScene+init)
+        * [.set()](#module_@the-/scene.TheScene+set)
+    * [.mixins](#module_@the-/scene.mixins) : <code>object</code>
+        * [.errorMix(BaseClass)](#module_@the-/scene.mixins.errorMix) ⇒ <code>function</code>
+        * [.goMix(BaseClass)](#module_@the-/scene.mixins.goMix) ⇒ <code>function</code>
+            * [~ErrorMixed](#module_@the-/scene.mixins.goMix..ErrorMixed)
+            * [~GoMixed](#module_@the-/scene.mixins.goMix..GoMixed)
+        * [.subMix(BaseClass)](#module_@the-/scene.mixins.subMix) ⇒ <code>function</code>
+            * [~SubMixed](#module_@the-/scene.mixins.subMix..SubMixed)
+                * [.subFor(namepath)](#module_@the-/scene.mixins.subMix..SubMixed+subFor) ⇒ <code>\*</code>
+    * [.create(...args)](#module_@the-/scene.create) ⇒ <code>TheScene</code>
 
-<a name="TheScene"></a>
+<a name="module_@the-/scene.TheScene"></a>
 
-## TheScene
-**Kind**: global class  
+### scene.TheScene
+**Kind**: static class of [<code>@the-/scene</code>](#module_@the-/scene)  
 
-* [TheScene](#TheScene)
-    * [.scope](#TheScene+scope) ⇒ <code>\*</code>
-    * [.for()](#TheScene+for)
-    * [.get()](#TheScene+get)
-    * [.has(namepath)](#TheScene+has) ⇒ <code>boolean</code>
-    * [.init()](#TheScene+init)
-    * [.set()](#TheScene+set)
+* [.TheScene](#module_@the-/scene.TheScene)
+    * [.scope](#module_@the-/scene.TheScene+scope) ⇒ <code>\*</code>
+    * [.for()](#module_@the-/scene.TheScene+for)
+    * [.get()](#module_@the-/scene.TheScene+get)
+    * [.has(namepath)](#module_@the-/scene.TheScene+has) ⇒ <code>boolean</code>
+    * [.init()](#module_@the-/scene.TheScene+init)
+    * [.set()](#module_@the-/scene.TheScene+set)
 
-<a name="TheScene+scope"></a>
+<a name="module_@the-/scene.TheScene+scope"></a>
 
-### theScene.scope ⇒ <code>\*</code>
+#### theScene.scope ⇒ <code>\*</code>
 Scene scope
 
-**Kind**: instance property of [<code>TheScene</code>](#TheScene)  
-<a name="TheScene+for"></a>
+**Kind**: instance property of [<code>TheScene</code>](#module_@the-/scene.TheScene)  
+<a name="module_@the-/scene.TheScene+for"></a>
 
-### theScene.for()
+#### theScene.for()
 Alias for `this.subFor`
 
-**Kind**: instance method of [<code>TheScene</code>](#TheScene)  
-<a name="TheScene+get"></a>
+**Kind**: instance method of [<code>TheScene</code>](#module_@the-/scene.TheScene)  
+<a name="module_@the-/scene.TheScene+get"></a>
 
-### theScene.get()
+#### theScene.get()
 Alias for `this.scope.get`
 
-**Kind**: instance method of [<code>TheScene</code>](#TheScene)  
-<a name="TheScene+has"></a>
+**Kind**: instance method of [<code>TheScene</code>](#module_@the-/scene.TheScene)  
+<a name="module_@the-/scene.TheScene+has"></a>
 
-### theScene.has(namepath) ⇒ <code>boolean</code>
+#### theScene.has(namepath) ⇒ <code>boolean</code>
 Check if value exists
 
-**Kind**: instance method of [<code>TheScene</code>](#TheScene)  
+**Kind**: instance method of [<code>TheScene</code>](#module_@the-/scene.TheScene)  
 
 | Param | Type |
 | --- | --- |
 | namepath | <code>string</code> | 
 
-<a name="TheScene+init"></a>
+<a name="module_@the-/scene.TheScene+init"></a>
 
-### theScene.init()
+#### theScene.init()
 Alias for `this.scope.init`
 
-**Kind**: instance method of [<code>TheScene</code>](#TheScene)  
-<a name="TheScene+set"></a>
+**Kind**: instance method of [<code>TheScene</code>](#module_@the-/scene.TheScene)  
+<a name="module_@the-/scene.TheScene+set"></a>
 
-### theScene.set()
+#### theScene.set()
 Alias for `this.scope.set`
 
-**Kind**: instance method of [<code>TheScene</code>](#TheScene)  
-<a name="create"></a>
+**Kind**: instance method of [<code>TheScene</code>](#module_@the-/scene.TheScene)  
+<a name="module_@the-/scene.mixins"></a>
 
-## create(...args) ⇒ [<code>TheScene</code>](#TheScene)
+### scene.mixins : <code>object</code>
+Mixin functions
+
+**Kind**: static namespace of [<code>@the-/scene</code>](#module_@the-/scene)  
+
+* [.mixins](#module_@the-/scene.mixins) : <code>object</code>
+    * [.errorMix(BaseClass)](#module_@the-/scene.mixins.errorMix) ⇒ <code>function</code>
+    * [.goMix(BaseClass)](#module_@the-/scene.mixins.goMix) ⇒ <code>function</code>
+        * [~ErrorMixed](#module_@the-/scene.mixins.goMix..ErrorMixed)
+        * [~GoMixed](#module_@the-/scene.mixins.goMix..GoMixed)
+    * [.subMix(BaseClass)](#module_@the-/scene.mixins.subMix) ⇒ <code>function</code>
+        * [~SubMixed](#module_@the-/scene.mixins.subMix..SubMixed)
+            * [.subFor(namepath)](#module_@the-/scene.mixins.subMix..SubMixed+subFor) ⇒ <code>\*</code>
+
+<a name="module_@the-/scene.mixins.errorMix"></a>
+
+#### mixins.errorMix(BaseClass) ⇒ <code>function</code>
+**Kind**: static method of [<code>mixins</code>](#module_@the-/scene.mixins)  
+**Returns**: <code>function</code> - MixedClass  
+
+| Param | Type |
+| --- | --- |
+| BaseClass | <code>function</code> | 
+
+<a name="module_@the-/scene.mixins.goMix"></a>
+
+#### mixins.goMix(BaseClass) ⇒ <code>function</code>
+**Kind**: static method of [<code>mixins</code>](#module_@the-/scene.mixins)  
+**Returns**: <code>function</code> - MixedClass  
+
+| Param | Type |
+| --- | --- |
+| BaseClass | <code>function</code> | 
+
+
+* [.goMix(BaseClass)](#module_@the-/scene.mixins.goMix) ⇒ <code>function</code>
+    * [~ErrorMixed](#module_@the-/scene.mixins.goMix..ErrorMixed)
+    * [~GoMixed](#module_@the-/scene.mixins.goMix..GoMixed)
+
+<a name="module_@the-/scene.mixins.goMix..ErrorMixed"></a>
+
+##### goMix~ErrorMixed
+**Kind**: inner class of [<code>goMix</code>](#module_@the-/scene.mixins.goMix)  
+<a name="module_@the-/scene.mixins.goMix..GoMixed"></a>
+
+##### goMix~GoMixed
+**Kind**: inner class of [<code>goMix</code>](#module_@the-/scene.mixins.goMix)  
+<a name="module_@the-/scene.mixins.subMix"></a>
+
+#### mixins.subMix(BaseClass) ⇒ <code>function</code>
+**Kind**: static method of [<code>mixins</code>](#module_@the-/scene.mixins)  
+**Returns**: <code>function</code> - MixedClass  
+
+| Param | Type |
+| --- | --- |
+| BaseClass | <code>function</code> | 
+
+
+* [.subMix(BaseClass)](#module_@the-/scene.mixins.subMix) ⇒ <code>function</code>
+    * [~SubMixed](#module_@the-/scene.mixins.subMix..SubMixed)
+        * [.subFor(namepath)](#module_@the-/scene.mixins.subMix..SubMixed+subFor) ⇒ <code>\*</code>
+
+<a name="module_@the-/scene.mixins.subMix..SubMixed"></a>
+
+##### subMix~SubMixed
+**Kind**: inner class of [<code>subMix</code>](#module_@the-/scene.mixins.subMix)  
+<a name="module_@the-/scene.mixins.subMix..SubMixed+subFor"></a>
+
+###### subMixed.subFor(namepath) ⇒ <code>\*</code>
+Get sub scene with scope for namepath
+
+**Kind**: instance method of [<code>SubMixed</code>](#module_@the-/scene.mixins.subMix..SubMixed)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| namepath | <code>string</code> | Namepath |
+
+<a name="module_@the-/scene.create"></a>
+
+### scene.create(...args) ⇒ <code>TheScene</code>
 Create a TheScene instance
 
-**Kind**: global function  
+**Kind**: static method of [<code>@the-/scene</code>](#module_@the-/scene)  
 
 | Param | Type |
 | --- | --- |
 | ...args | <code>\*</code> | 
 
-<a name="errorMix"></a>
+<a name="default"></a>
 
-## errorMix(BaseClass) ⇒ <code>function</code>
+## default()
+Alias of [create](#module_@the-/scene.create)
+
 **Kind**: global function  
-**Returns**: <code>function</code> - MixedClass  
-
-| Param | Type |
-| --- | --- |
-| BaseClass | <code>function</code> | 
-
-<a name="goMix"></a>
-
-## goMix(BaseClass) ⇒ <code>function</code>
-**Kind**: global function  
-**Returns**: <code>function</code> - MixedClass  
-
-| Param | Type |
-| --- | --- |
-| BaseClass | <code>function</code> | 
-
-<a name="subMix"></a>
-
-## subMix(BaseClass) ⇒ <code>function</code>
-**Kind**: global function  
-**Returns**: <code>function</code> - MixedClass  
-
-| Param | Type |
-| --- | --- |
-| BaseClass | <code>function</code> | 
-

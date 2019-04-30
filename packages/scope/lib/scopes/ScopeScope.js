@@ -1,6 +1,7 @@
 /**
  * Scope to other scopes
- * @augments Scope
+ * @memberOf module:@the-/scope.scopes
+ * @augments module:@the-/scope.scopes.Scope
  * @class ScopeScope
  */
 'use strict'
@@ -8,7 +9,7 @@
 const { unlessProduction } = require('@the-/check')
 const Scope = require('./Scope')
 
-/** @lends ScopeScope */
+/** @lends module:@the-/scope.scopes.ScopeScope */
 class ScopeScope extends Scope {
   static get initialState() {
     return null

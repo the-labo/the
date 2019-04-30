@@ -2,11 +2,15 @@
 
 const { dir } = require('@the-/templates')
 
-module.exports = dir.recursive({
+module.exports = dir({
   cjs: true,
-  description: 'Store scopes',
+  annotations: {
+    namespace: 'scopes',
+    memberOf: 'module:@the-/scope',
+    access: 'protected',
+    description: 'Scope classes',
+  },
   dirname: __dirname,
-  name: 'scopes',
 })
 
 if (!module.parent) {

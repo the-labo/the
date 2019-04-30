@@ -123,15 +123,17 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [Consumer](./doc/api/api.md#Consumer)
-- [Provider](./doc/api/api.md#Provider)
-- [TheStream](./doc/api/api.md#TheStream)
 ### function
-- [generatorFromReadable()](./doc/api/api.md#generatorFromReadable)
-- [#pull()](./doc/api/api.md#TheStream#pull)
-- [#push(chunks)](./doc/api/api.md#TheStream#push)
-- [#pushEnd()](./doc/api/api.md#TheStream#pushEnd)
+- [#pull()](./doc/api/api.md#module_@the-/stream#pull)
+- [#push(chunks)](./doc/api/api.md#module_@the-/stream#push)
+- [#pushEnd()](./doc/api/api.md#module_@the-/stream#pushEnd)
+- [.generatorFromReadable()](./doc/api/api.md#module_@the-/stream.helpers.generatorFromReadable)
+### class
+- [.Consumer](./doc/api/api.md#module_@the-/stream.Consumer)
+- [.Provider](./doc/api/api.md#module_@the-/stream.Provider)
+- [.TheStream](./doc/api/api.md#module_@the-/stream.TheStream)
+### namespace
+- [.helpers](./doc/api/api.md#module_@the-/stream.helpers)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

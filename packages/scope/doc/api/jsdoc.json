@@ -1,23 +1,13 @@
 [
   {
-    "id": "module:default",
-    "longname": "module:default",
-    "name": "default",
-    "kind": "module",
-    "description": "Default exports",
-    "meta": {
-      "lineno": 1,
-      "filename": "default.js",
-      "path": "/Users/okuni/Projects/the/packages/scope/lib"
-    },
-    "order": 1
-  },
-  {
     "id": "module:@the-/scope",
     "longname": "module:@the-/scope",
     "name": "@the-/scope",
     "kind": "module",
     "description": "State scope for the-store",
+    "version": "15.4.1",
+    "license": "MIT",
+    "typicalname": "scope",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -26,25 +16,12 @@
     "order": 2
   },
   {
-    "id": "module:scopes",
-    "longname": "module:scopes",
-    "name": "scopes",
-    "kind": "module",
-    "description": "Store scopes",
-    "meta": {
-      "lineno": 2,
-      "filename": "index.js",
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
-    },
-    "order": 21
-  },
-  {
-    "id": "TheScope()",
-    "longname": "TheScope",
+    "id": "module:@the-/scope.TheScope()",
+    "longname": "module:@the-/scope.TheScope",
     "name": "TheScope",
     "kind": "constructor",
     "description": "Abstract state class",
-    "memberof": "TheScope",
+    "memberof": "module:@the-/scope.TheScope",
     "params": [
       {
         "type": {
@@ -68,57 +45,57 @@
     "order": 4
   },
   {
-    "id": "ArrayScope()",
-    "longname": "ArrayScope",
+    "id": "module:@the-/scope.scopes.ArrayScope()",
+    "longname": "module:@the-/scope.scopes.ArrayScope",
     "name": "ArrayScope",
     "kind": "constructor",
     "description": "Scope to hold array",
-    "memberof": "ArrayScope",
+    "memberof": "module:@the-/scope.scopes.ArrayScope",
     "order": 6
   },
   {
-    "id": "BooleanScope()",
-    "longname": "BooleanScope",
+    "id": "module:@the-/scope.scopes.BooleanScope()",
+    "longname": "module:@the-/scope.scopes.BooleanScope",
     "name": "BooleanScope",
     "kind": "constructor",
     "description": "Scope to hold boolean",
-    "memberof": "BooleanScope",
+    "memberof": "module:@the-/scope.scopes.BooleanScope",
     "order": 16
   },
   {
-    "id": "NullScope()",
-    "longname": "NullScope",
+    "id": "module:@the-/scope.scopes.NullScope()",
+    "longname": "module:@the-/scope.scopes.NullScope",
     "name": "NullScope",
     "kind": "constructor",
     "description": "Scope to hold null",
-    "memberof": "NullScope",
+    "memberof": "module:@the-/scope.scopes.NullScope",
     "order": 23
   },
   {
-    "id": "NumberScope()",
-    "longname": "NumberScope",
+    "id": "module:@the-/scope.scopes.NumberScope()",
+    "longname": "module:@the-/scope.scopes.NumberScope",
     "name": "NumberScope",
     "kind": "constructor",
     "description": "Scope to hold number",
-    "memberof": "NumberScope",
+    "memberof": "module:@the-/scope.scopes.NumberScope",
     "order": 25
   },
   {
-    "id": "ObjectScope()",
-    "longname": "ObjectScope",
+    "id": "module:@the-/scope.scopes.ObjectScope()",
+    "longname": "module:@the-/scope.scopes.ObjectScope",
     "name": "ObjectScope",
     "kind": "constructor",
     "description": "Scope to hold object",
-    "memberof": "ObjectScope",
+    "memberof": "module:@the-/scope.scopes.ObjectScope",
     "order": 33
   },
   {
-    "id": "Scope()",
-    "longname": "Scope",
+    "id": "module:@the-/scope.scopes.Scope()",
+    "longname": "module:@the-/scope.scopes.Scope",
     "name": "Scope",
     "kind": "constructor",
     "description": "Abstract scope class",
-    "memberof": "Scope",
+    "memberof": "module:@the-/scope.scopes.Scope",
     "params": [
       {
         "type": {
@@ -142,221 +119,31 @@
     "order": 41
   },
   {
-    "id": "ScopeScope()",
-    "longname": "ScopeScope",
+    "id": "module:@the-/scope.scopes.ScopeScope()",
+    "longname": "module:@the-/scope.scopes.ScopeScope",
     "name": "ScopeScope",
     "kind": "constructor",
     "description": "Scope to other scopes",
-    "memberof": "ScopeScope",
+    "memberof": "module:@the-/scope.scopes.ScopeScope",
     "order": 44
   },
   {
-    "id": "StringScope()",
-    "longname": "StringScope",
+    "id": "module:@the-/scope.scopes.StringScope()",
+    "longname": "module:@the-/scope.scopes.StringScope",
     "name": "StringScope",
     "kind": "constructor",
     "description": "Scope to hold value",
-    "memberof": "StringScope",
+    "memberof": "module:@the-/scope.scopes.StringScope",
     "order": 51
   },
   {
-    "id": "ValueScope()",
-    "longname": "ValueScope",
+    "id": "module:@the-/scope.scopes.ValueScope()",
+    "longname": "module:@the-/scope.scopes.ValueScope",
     "name": "ValueScope",
     "kind": "constructor",
     "description": "Scope to hold value",
-    "memberof": "ValueScope",
+    "memberof": "module:@the-/scope.scopes.ValueScope",
     "order": 56
-  },
-  {
-    "meta": {
-      "lineno": 1,
-      "filename": "TheScope.js",
-      "path": "/Users/okuni/Projects/the/packages/scope/lib"
-    },
-    "virtual": true,
-    "id": "TheScope",
-    "longname": "TheScope",
-    "name": "TheScope",
-    "kind": "class",
-    "scope": "global",
-    "order": 3
-  },
-  {
-    "id": "ArrayScope",
-    "longname": "ArrayScope",
-    "name": "ArrayScope",
-    "kind": "class",
-    "scope": "global",
-    "augments": [
-      "Scope"
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "ArrayScope.js",
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
-    },
-    "order": 5
-  },
-  {
-    "id": "BooleanScope",
-    "longname": "BooleanScope",
-    "name": "BooleanScope",
-    "kind": "class",
-    "scope": "global",
-    "augments": [
-      "Scope"
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "BooleanScope.js",
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
-    },
-    "order": 15
-  },
-  {
-    "id": "NullScope",
-    "longname": "NullScope",
-    "name": "NullScope",
-    "kind": "class",
-    "scope": "global",
-    "augments": [
-      "Scope"
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "NullScope.js",
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
-    },
-    "order": 22
-  },
-  {
-    "id": "NumberScope",
-    "longname": "NumberScope",
-    "name": "NumberScope",
-    "kind": "class",
-    "scope": "global",
-    "augments": [
-      "Scope"
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "NumberScope.js",
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
-    },
-    "order": 24
-  },
-  {
-    "id": "ObjectScope",
-    "longname": "ObjectScope",
-    "name": "ObjectScope",
-    "kind": "class",
-    "scope": "global",
-    "augments": [
-      "Scope"
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "ObjectScope.js",
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
-    },
-    "order": 32
-  },
-  {
-    "meta": {
-      "lineno": 1,
-      "filename": "Scope.js",
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
-    },
-    "virtual": true,
-    "id": "Scope",
-    "longname": "Scope",
-    "name": "Scope",
-    "kind": "class",
-    "scope": "global",
-    "order": 40
-  },
-  {
-    "id": "ScopeScope",
-    "longname": "ScopeScope",
-    "name": "ScopeScope",
-    "kind": "class",
-    "scope": "global",
-    "augments": [
-      "Scope"
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "ScopeScope.js",
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
-    },
-    "order": 43
-  },
-  {
-    "id": "StringScope",
-    "longname": "StringScope",
-    "name": "StringScope",
-    "kind": "class",
-    "scope": "global",
-    "augments": [
-      "Scope"
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "StringScope.js",
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
-    },
-    "order": 50
-  },
-  {
-    "id": "ValueScope",
-    "longname": "ValueScope",
-    "name": "ValueScope",
-    "kind": "class",
-    "scope": "global",
-    "augments": [
-      "Scope"
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "ValueScope.js",
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
-    },
-    "order": 55
-  },
-  {
-    "id": "create",
-    "longname": "create",
-    "name": "create",
-    "kind": "function",
-    "scope": "global",
-    "description": "Create a TheScope instance",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        },
-        "variable": true,
-        "name": "args"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "TheScope"
-          ]
-        }
-      }
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "create.js",
-      "path": "/Users/okuni/Projects/the/packages/scope/lib"
-    },
-    "order": 0
   },
   {
     "id": "set",
@@ -384,7 +171,7 @@
       }
     ],
     "meta": {
-      "lineno": 57,
+      "lineno": 58,
       "filename": "ArrayScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
@@ -408,19 +195,19 @@
       }
     ],
     "meta": {
-      "lineno": 54,
+      "lineno": 55,
       "filename": "ObjectScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
     "order": 36
   },
   {
-    "id": "ArrayScope#length",
-    "longname": "ArrayScope#length",
+    "id": "module:@the-/scope.scopes.ArrayScope#length",
+    "longname": "module:@the-/scope.scopes.ArrayScope#length",
     "name": "length",
     "kind": "member",
     "scope": "instance",
-    "memberof": "ArrayScope",
+    "memberof": "module:@the-/scope.scopes.ArrayScope",
     "params": [],
     "properties": [
       {
@@ -432,7 +219,7 @@
       }
     ],
     "meta": {
-      "lineno": 85,
+      "lineno": 86,
       "filename": "ArrayScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
@@ -457,7 +244,7 @@
       }
     ],
     "meta": {
-      "lineno": 18,
+      "lineno": 19,
       "filename": "ArrayScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
@@ -472,7 +259,7 @@
     "description": "Pop entry",
     "memberof": "ArrayScope",
     "meta": {
-      "lineno": 29,
+      "lineno": 30,
       "filename": "ArrayScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
@@ -497,7 +284,7 @@
       }
     ],
     "meta": {
-      "lineno": 36,
+      "lineno": 37,
       "filename": "ArrayScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
@@ -522,7 +309,7 @@
       }
     ],
     "meta": {
-      "lineno": 44,
+      "lineno": 45,
       "filename": "ArrayScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
@@ -537,7 +324,7 @@
     "description": "Shift entry",
     "memberof": "ArrayScope",
     "meta": {
-      "lineno": 66,
+      "lineno": 67,
       "filename": "ArrayScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
@@ -562,7 +349,7 @@
       }
     ],
     "meta": {
-      "lineno": 73,
+      "lineno": 74,
       "filename": "ArrayScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
@@ -589,55 +376,55 @@
       }
     ],
     "meta": {
-      "lineno": 21,
+      "lineno": 22,
       "filename": "BooleanScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
     "order": 17
   },
   {
-    "id": "BooleanScope#false",
-    "longname": "BooleanScope#false",
+    "id": "module:@the-/scope.scopes.BooleanScope#false",
+    "longname": "module:@the-/scope.scopes.BooleanScope#false",
     "name": "false",
     "kind": "function",
     "scope": "instance",
     "description": "Toggle to false",
-    "memberof": "BooleanScope",
+    "memberof": "module:@the-/scope.scopes.BooleanScope",
     "params": [],
     "meta": {
-      "lineno": 36,
+      "lineno": 37,
       "filename": "BooleanScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
     "order": 18
   },
   {
-    "id": "BooleanScope#set",
-    "longname": "BooleanScope#set",
+    "id": "module:@the-/scope.scopes.BooleanScope#set",
+    "longname": "module:@the-/scope.scopes.BooleanScope#set",
     "name": "set",
     "kind": "function",
     "scope": "instance",
     "description": "Alias of toggle",
-    "memberof": "BooleanScope",
+    "memberof": "module:@the-/scope.scopes.BooleanScope",
     "params": [],
     "meta": {
-      "lineno": 43,
+      "lineno": 44,
       "filename": "BooleanScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
     "order": 19
   },
   {
-    "id": "BooleanScope#true",
-    "longname": "BooleanScope#true",
+    "id": "module:@the-/scope.scopes.BooleanScope#true",
+    "longname": "module:@the-/scope.scopes.BooleanScope#true",
     "name": "true",
     "kind": "function",
     "scope": "instance",
     "description": "Toggle to true",
-    "memberof": "BooleanScope",
+    "memberof": "module:@the-/scope.scopes.BooleanScope",
     "params": [],
     "meta": {
-      "lineno": 51,
+      "lineno": 52,
       "filename": "BooleanScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
@@ -664,7 +451,7 @@
       }
     ],
     "meta": {
-      "lineno": 18,
+      "lineno": 19,
       "filename": "NumberScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
@@ -691,7 +478,7 @@
       }
     ],
     "meta": {
-      "lineno": 26,
+      "lineno": 27,
       "filename": "NumberScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
@@ -716,20 +503,20 @@
       }
     ],
     "meta": {
-      "lineno": 37,
+      "lineno": 38,
       "filename": "NumberScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
     "order": 28
   },
   {
-    "id": "NumberScope#isNegative",
-    "longname": "NumberScope#isNegative",
+    "id": "module:@the-/scope.scopes.NumberScope#isNegative",
+    "longname": "module:@the-/scope.scopes.NumberScope#isNegative",
     "name": "isNegative",
     "kind": "function",
     "scope": "instance",
     "description": "Check the value is negative",
-    "memberof": "NumberScope",
+    "memberof": "module:@the-/scope.scopes.NumberScope",
     "params": [],
     "returns": [
       {
@@ -741,20 +528,20 @@
       }
     ],
     "meta": {
-      "lineno": 52,
+      "lineno": 53,
       "filename": "NumberScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
     "order": 29
   },
   {
-    "id": "NumberScope#isPositive",
-    "longname": "NumberScope#isPositive",
+    "id": "module:@the-/scope.scopes.NumberScope#isPositive",
+    "longname": "module:@the-/scope.scopes.NumberScope#isPositive",
     "name": "isPositive",
     "kind": "function",
     "scope": "instance",
     "description": "Check the value is positive",
-    "memberof": "NumberScope",
+    "memberof": "module:@the-/scope.scopes.NumberScope",
     "params": [],
     "returns": [
       {
@@ -766,20 +553,20 @@
       }
     ],
     "meta": {
-      "lineno": 60,
+      "lineno": 61,
       "filename": "NumberScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
     "order": 30
   },
   {
-    "id": "NumberScope#isZero",
-    "longname": "NumberScope#isZero",
+    "id": "module:@the-/scope.scopes.NumberScope#isZero",
+    "longname": "module:@the-/scope.scopes.NumberScope#isZero",
     "name": "isZero",
     "kind": "function",
     "scope": "instance",
     "description": "Check the value is zero",
-    "memberof": "NumberScope",
+    "memberof": "module:@the-/scope.scopes.NumberScope",
     "params": [],
     "returns": [
       {
@@ -791,7 +578,7 @@
       }
     ],
     "meta": {
-      "lineno": 68,
+      "lineno": 69,
       "filename": "NumberScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
@@ -818,7 +605,7 @@
       }
     ],
     "meta": {
-      "lineno": 18,
+      "lineno": 19,
       "filename": "ObjectScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
@@ -833,7 +620,7 @@
     "description": "Delete all",
     "memberof": "ObjectScope",
     "meta": {
-      "lineno": 40,
+      "lineno": 41,
       "filename": "ObjectScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
@@ -868,52 +655,52 @@
       }
     ],
     "meta": {
-      "lineno": 65,
+      "lineno": 66,
       "filename": "ObjectScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
     "order": 37
   },
   {
-    "id": "ObjectScope#get",
-    "longname": "ObjectScope#get",
+    "id": "module:@the-/scope.scopes.ObjectScope#get",
+    "longname": "module:@the-/scope.scopes.ObjectScope#get",
     "name": "get",
     "kind": "function",
     "scope": "instance",
     "description": "Get a value for name",
-    "memberof": "ObjectScope",
+    "memberof": "module:@the-/scope.scopes.ObjectScope",
     "params": [],
     "meta": {
-      "lineno": 93,
+      "lineno": 94,
       "filename": "ObjectScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
     "order": 38
   },
   {
-    "id": "ObjectScope#has",
-    "longname": "ObjectScope#has",
+    "id": "module:@the-/scope.scopes.ObjectScope#has",
+    "longname": "module:@the-/scope.scopes.ObjectScope#has",
     "name": "has",
     "kind": "function",
     "scope": "instance",
     "description": "Check value exists for name",
-    "memberof": "ObjectScope",
+    "memberof": "module:@the-/scope.scopes.ObjectScope",
     "params": [],
     "meta": {
-      "lineno": 98,
+      "lineno": 99,
       "filename": "ObjectScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
     "order": 39
   },
   {
-    "id": "ScopeScope#get",
-    "longname": "ScopeScope#get",
+    "id": "module:@the-/scope.scopes.ScopeScope#get",
+    "longname": "module:@the-/scope.scopes.ScopeScope#get",
     "name": "get",
     "kind": "function",
     "scope": "instance",
     "description": "Get state value from name path string",
-    "memberof": "ScopeScope",
+    "memberof": "module:@the-/scope.scopes.ScopeScope",
     "params": [
       {
         "type": {
@@ -935,20 +722,20 @@
       }
     ],
     "meta": {
-      "lineno": 26,
+      "lineno": 27,
       "filename": "ScopeScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
     "order": 45
   },
   {
-    "id": "ScopeScope#has",
-    "longname": "ScopeScope#has",
+    "id": "module:@the-/scope.scopes.ScopeScope#has",
+    "longname": "module:@the-/scope.scopes.ScopeScope#has",
     "name": "has",
     "kind": "function",
     "scope": "instance",
     "description": "Check if scope exists",
-    "memberof": "ScopeScope",
+    "memberof": "module:@the-/scope.scopes.ScopeScope",
     "params": [
       {
         "type": {
@@ -969,20 +756,20 @@
       }
     ],
     "meta": {
-      "lineno": 35,
+      "lineno": 36,
       "filename": "ScopeScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
     "order": 46
   },
   {
-    "id": "ScopeScope#init",
-    "longname": "ScopeScope#init",
+    "id": "module:@the-/scope.scopes.ScopeScope#init",
+    "longname": "module:@the-/scope.scopes.ScopeScope#init",
     "name": "init",
     "kind": "function",
     "scope": "instance",
     "description": "Init scope values",
-    "memberof": "ScopeScope",
+    "memberof": "module:@the-/scope.scopes.ScopeScope",
     "params": [
       {
         "name": "names",
@@ -990,20 +777,20 @@
       }
     ],
     "meta": {
-      "lineno": 47,
+      "lineno": 48,
       "filename": "ScopeScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
     "order": 47
   },
   {
-    "id": "ScopeScope#of",
-    "longname": "ScopeScope#of",
+    "id": "module:@the-/scope.scopes.ScopeScope#of",
+    "longname": "module:@the-/scope.scopes.ScopeScope#of",
     "name": "of",
     "kind": "function",
     "scope": "instance",
     "description": "Sub scope of namepath",
-    "memberof": "ScopeScope",
+    "memberof": "module:@the-/scope.scopes.ScopeScope",
     "params": [
       {
         "name": "namepath"
@@ -1019,20 +806,20 @@
       }
     ],
     "meta": {
-      "lineno": 69,
+      "lineno": 70,
       "filename": "ScopeScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
     "order": 48
   },
   {
-    "id": "ScopeScope#set",
-    "longname": "ScopeScope#set",
+    "id": "module:@the-/scope.scopes.ScopeScope#set",
+    "longname": "module:@the-/scope.scopes.ScopeScope#set",
     "name": "set",
     "kind": "function",
     "scope": "instance",
     "description": "Set state with name path",
-    "memberof": "ScopeScope",
+    "memberof": "module:@the-/scope.scopes.ScopeScope",
     "params": [
       {
         "type": {
@@ -1052,7 +839,7 @@
       }
     ],
     "meta": {
-      "lineno": 95,
+      "lineno": 96,
       "filename": "ScopeScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
@@ -1067,7 +854,7 @@
     "description": "Delete property",
     "memberof": "StringScope",
     "meta": {
-      "lineno": 18,
+      "lineno": 19,
       "filename": "StringScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
@@ -1101,7 +888,7 @@
       }
     ],
     "meta": {
-      "lineno": 28,
+      "lineno": 29,
       "filename": "StringScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
@@ -1127,7 +914,7 @@
       }
     ],
     "meta": {
-      "lineno": 37,
+      "lineno": 38,
       "filename": "StringScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
@@ -1142,7 +929,7 @@
     "description": "Delete property",
     "memberof": "ValueScope",
     "meta": {
-      "lineno": 18,
+      "lineno": 19,
       "filename": "ValueScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
@@ -1168,23 +955,255 @@
       }
     ],
     "meta": {
-      "lineno": 28,
+      "lineno": 29,
       "filename": "ValueScope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },
     "order": 58
   },
   {
-    "id": "Scope.withDefault",
-    "longname": "Scope.withDefault",
+    "id": "module:@the-/scope.TheScope",
+    "longname": "module:@the-/scope.TheScope",
+    "name": "TheScope",
+    "kind": "class",
+    "scope": "static",
+    "memberof": "module:@the-/scope",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheScope.js",
+      "path": "/Users/okuni/Projects/the/packages/scope/lib"
+    },
+    "virtual": true,
+    "order": 3
+  },
+  {
+    "id": "module:@the-/scope.scopes.ArrayScope",
+    "longname": "module:@the-/scope.scopes.ArrayScope",
+    "name": "ArrayScope",
+    "kind": "class",
+    "scope": "static",
+    "augments": [
+      "module:@the-/scope.scopes.Scope"
+    ],
+    "memberof": "module:@the-/scope.scopes",
+    "meta": {
+      "lineno": 1,
+      "filename": "ArrayScope.js",
+      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+    },
+    "order": 5
+  },
+  {
+    "id": "module:@the-/scope.scopes.BooleanScope",
+    "longname": "module:@the-/scope.scopes.BooleanScope",
+    "name": "BooleanScope",
+    "kind": "class",
+    "scope": "static",
+    "augments": [
+      "module:@the-/scope.scopes.Scope"
+    ],
+    "memberof": "module:@the-/scope.scopes",
+    "meta": {
+      "lineno": 1,
+      "filename": "BooleanScope.js",
+      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+    },
+    "order": 15
+  },
+  {
+    "id": "module:@the-/scope.scopes.NullScope",
+    "longname": "module:@the-/scope.scopes.NullScope",
+    "name": "NullScope",
+    "kind": "class",
+    "scope": "static",
+    "augments": [
+      "module:@the-/scope.scopes.Scope"
+    ],
+    "memberof": "module:@the-/scope.scopes",
+    "meta": {
+      "lineno": 1,
+      "filename": "NullScope.js",
+      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+    },
+    "order": 22
+  },
+  {
+    "id": "module:@the-/scope.scopes.NumberScope",
+    "longname": "module:@the-/scope.scopes.NumberScope",
+    "name": "NumberScope",
+    "kind": "class",
+    "scope": "static",
+    "augments": [
+      "module:@the-/scope.scopes.Scope"
+    ],
+    "memberof": "module:@the-/scope.scopes",
+    "meta": {
+      "lineno": 1,
+      "filename": "NumberScope.js",
+      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+    },
+    "order": 24
+  },
+  {
+    "id": "module:@the-/scope.scopes.ObjectScope",
+    "longname": "module:@the-/scope.scopes.ObjectScope",
+    "name": "ObjectScope",
+    "kind": "class",
+    "scope": "static",
+    "augments": [
+      "module:@the-/scope.scopes.Scope"
+    ],
+    "memberof": "module:@the-/scope.scopes",
+    "meta": {
+      "lineno": 1,
+      "filename": "ObjectScope.js",
+      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+    },
+    "order": 32
+  },
+  {
+    "id": "module:@the-/scope.scopes.Scope",
+    "longname": "module:@the-/scope.scopes.Scope",
+    "name": "Scope",
+    "kind": "class",
+    "scope": "static",
+    "memberof": "module:@the-/scope.scopes",
+    "meta": {
+      "lineno": 1,
+      "filename": "Scope.js",
+      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+    },
+    "virtual": true,
+    "order": 40
+  },
+  {
+    "id": "module:@the-/scope.scopes.ScopeScope",
+    "longname": "module:@the-/scope.scopes.ScopeScope",
+    "name": "ScopeScope",
+    "kind": "class",
+    "scope": "static",
+    "augments": [
+      "module:@the-/scope.scopes.Scope"
+    ],
+    "memberof": "module:@the-/scope.scopes",
+    "meta": {
+      "lineno": 1,
+      "filename": "ScopeScope.js",
+      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+    },
+    "order": 43
+  },
+  {
+    "id": "module:@the-/scope.scopes.StringScope",
+    "longname": "module:@the-/scope.scopes.StringScope",
+    "name": "StringScope",
+    "kind": "class",
+    "scope": "static",
+    "augments": [
+      "module:@the-/scope.scopes.Scope"
+    ],
+    "memberof": "module:@the-/scope.scopes",
+    "meta": {
+      "lineno": 1,
+      "filename": "StringScope.js",
+      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+    },
+    "order": 50
+  },
+  {
+    "id": "module:@the-/scope.scopes.ValueScope",
+    "longname": "module:@the-/scope.scopes.ValueScope",
+    "name": "ValueScope",
+    "kind": "class",
+    "scope": "static",
+    "augments": [
+      "module:@the-/scope.scopes.Scope"
+    ],
+    "memberof": "module:@the-/scope.scopes",
+    "meta": {
+      "lineno": 1,
+      "filename": "ValueScope.js",
+      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+    },
+    "order": 55
+  },
+  {
+    "id": "module:@the-/scope.scopes",
+    "longname": "module:@the-/scope.scopes",
+    "name": "scopes",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Scope classes",
+    "memberof": "module:@the-/scope",
+    "access": "protected",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+    },
+    "order": 21
+  },
+  {
+    "id": "module:@the-/scope.create",
+    "longname": "module:@the-/scope.create",
+    "name": "create",
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheScope instance",
+    "memberof": "module:@the-/scope",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheScope"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/scope/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/scope.default",
+    "longname": "module:@the-/scope.default",
+    "name": "default",
+    "kind": "function",
+    "scope": "static",
+    "description": "Alias of {@link module:@the-/scope.create}",
+    "memberof": "module:@the-/scope",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/scope/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/scope.scopes.Scope.withDefault",
+    "longname": "module:@the-/scope.scopes.Scope.withDefault",
     "name": "withDefault",
     "kind": "function",
     "scope": "static",
-    "memberof": "Scope",
+    "memberof": "module:@the-/scope.scopes.Scope",
     "params": [],
     "deprecated": true,
     "meta": {
-      "lineno": 18,
+      "lineno": 19,
       "filename": "Scope.js",
       "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
     },

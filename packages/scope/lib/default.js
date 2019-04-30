@@ -1,6 +1,7 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link module:@the-/scope.create}
+ * @memberOf module:@the-/scope
+ * @function default
  */
 'use strict'
 

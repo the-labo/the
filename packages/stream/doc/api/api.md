@@ -5,7 +5,7 @@
 ## @the-/stream
 Base of the streams
 
-**Version**: 15.4.0  
+**Version**: 15.4.1  
 **License**: MIT  
 
 * [@the-/stream](#module_@the-/stream)
@@ -18,6 +18,8 @@ Base of the streams
         * [.Provider](#module_@the-/stream.Provider)
         * [.TheStream](#module_@the-/stream.TheStream)
             * [new TheStream([options])](#new_module_@the-/stream.TheStream_new)
+        * [.helpers](#module_@the-/stream.helpers) : <code>object</code>
+            * [.generatorFromReadable()](#module_@the-/stream.helpers.generatorFromReadable)
 
 <a name="module_@the-/stream+pull"></a>
 
@@ -62,3 +64,16 @@ Finish pushing
 | --- | --- | --- |
 | [options] | <code>Object</code> | <code>{}</code> | 
 
+<a name="module_@the-/stream.helpers"></a>
+
+### stream.helpers : <code>object</code>
+Helper functions
+
+**Kind**: static namespace of [<code>@the-/stream</code>](#module_@the-/stream)  
+**Access**: protected  
+<a name="module_@the-/stream.helpers.generatorFromReadable"></a>
+
+#### helpers.generatorFromReadable()
+Create generator from readable
+
+**Kind**: static method of [<code>helpers</code>](#module_@the-/stream.helpers)  

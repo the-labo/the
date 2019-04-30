@@ -1,5 +1,6 @@
 /**
  * Abstract scope class
+ * @memberOf module:@the-/scope.scopes
  * @abstract
  * @class Scope
  * @param {string} name - Name of state
@@ -12,7 +13,7 @@ const { unlessProduction } = require('@the-/check')
 
 const assert = theAssert('the:scope')
 
-/** @lends Scope */
+/** @lends module:@the-/scope.scopes.Scope */
 class Scope {
   /** @deprecated */
   static withDefault(value) {
