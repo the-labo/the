@@ -1,5 +1,6 @@
 /**
  * Create a TheRefactor instance
+ * @memberOf module:@the-/refactor
  * @function create
  * @param {...*} args
  * @returns {TheRefactor}
@@ -8,7 +9,7 @@
 
 const TheRefactor = require('./TheRefactor')
 
-/** @lends create */
+/** @lends module:@the-/refactor.create */
 function create(...args) {
   return new TheRefactor(...args)
 }

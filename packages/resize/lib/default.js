@@ -1,6 +1,7 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link module:@the-/resize.create}
+ * @memberOf module:@the-/resize
+ * @function default
  */
 'use strict'
 

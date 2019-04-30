@@ -1,6 +1,7 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link module:@the-/rtc.create}
+ * @memberOf module:@the-/rtc
+ * @function default
  */
 'use strict'
 

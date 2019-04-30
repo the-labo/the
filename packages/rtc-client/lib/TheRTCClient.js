@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/rtc-client
  * @class TheRTCClient
  */
 'use strict'
@@ -27,7 +28,7 @@ const TheRTCClientBase = [
   peerMix,
 ].reduce((Class, mix) => mix(Class), class Base {})
 
-/** @lends TheRTCClient */
+/** @lends module:@the-/rtc-client.TheRTCClient */
 class TheRTCClient extends TheRTCClientBase {
   constructor(options = {}) {
     super()

@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/rtc
  * @class TheRTC
  * @param {Object} [config={}] - RTC Configuration
  * @param {Object|Object[]} [config.stun] - STUN server config(s)
@@ -22,7 +23,7 @@ const TheRTCBase = [httpMix, ioMix, sfuMix].reduce(
   class Base {},
 )
 
-/** @lends TheRTC */
+/** @lends module:@the-/rtc.TheRTC */
 class TheRTC extends TheRTCBase {
   constructor(config = {}) {
     super()

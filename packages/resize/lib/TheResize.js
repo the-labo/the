@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/resize
  * @class TheResize
  * @param {Object} [config] - Configuration
  * @param {string} [config.fit] - Fit policy ('cover','contain','fill', 'inside' or 'outside')
@@ -17,7 +18,7 @@ const { fileTypeOf } = require('@the-/util-file')
 
 const imageFilePattern = '**/+(*.jpeg|*.jpg|*.png|*.svg|*.webp)'
 
-/** @lends TheResize */
+/** @lends module:@the-/resize.TheResize */
 class TheResize {
   constructor(config = {}) {
     const { enlarge = false, fit = 'inside', height, width } = config

@@ -3,79 +3,79 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_default">default</a></dt>
-<dd><p>Default exports</p>
-</dd>
 <dt><a href="#module_@the-/seed">@the-/seed</a></dt>
 <dd><p>Data generator for the-db</p>
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheSeed">TheSeed</a></dt>
-<dd></dd>
-</dl>
-
 ## Functions
 
 <dl>
-<dt><a href="#create">create(...args)</a> ⇒ <code><a href="#TheSeed">TheSeed</a></code></dt>
-<dd><p>Create a TheSeed instance</p>
+<dt><a href="#default">default()</a></dt>
+<dd><p>Alias of <a href="#module_@the-/seed.create">create</a></p>
 </dd>
 </dl>
-
-<a name="module_default"></a>
-
-## default
-Default exports
 
 <a name="module_@the-/seed"></a>
 
 ## @the-/seed
 Data generator for the-db
 
-<a name="TheSeed"></a>
+**Version**: 15.4.1  
+**License**: MIT  
 
-## TheSeed
-**Kind**: global class  
+* [@the-/seed](#module_@the-/seed)
+    * [.TheSeed](#module_@the-/seed.TheSeed)
+        * [.apply(seed)](#module_@the-/seed.TheSeed+apply)
+        * [.explode(seed, [counts])](#module_@the-/seed.TheSeed+explode) ⇒ <code>Array.&lt;Object&gt;</code>
+    * [.create(...args)](#module_@the-/seed.create) ⇒ <code>TheSeed</code>
 
-* [TheSeed](#TheSeed)
-    * [.apply(seed)](#TheSeed+apply)
-    * [.explode(seed, [counts])](#TheSeed+explode) ⇒ <code>Array.&lt;Object&gt;</code>
+<a name="module_@the-/seed.TheSeed"></a>
 
-<a name="TheSeed+apply"></a>
+### seed.TheSeed
+**Kind**: static class of [<code>@the-/seed</code>](#module_@the-/seed)  
 
-### theSeed.apply(seed)
+* [.TheSeed](#module_@the-/seed.TheSeed)
+    * [.apply(seed)](#module_@the-/seed.TheSeed+apply)
+    * [.explode(seed, [counts])](#module_@the-/seed.TheSeed+explode) ⇒ <code>Array.&lt;Object&gt;</code>
+
+<a name="module_@the-/seed.TheSeed+apply"></a>
+
+#### theSeed.apply(seed)
 Generate data with seed
 
-**Kind**: instance method of [<code>TheSeed</code>](#TheSeed)  
+**Kind**: instance method of [<code>TheSeed</code>](#module_@the-/seed.TheSeed)  
 
 | Param | Type |
 | --- | --- |
 | seed | <code>Object</code> | 
 
-<a name="TheSeed+explode"></a>
+<a name="module_@the-/seed.TheSeed+explode"></a>
 
-### theSeed.explode(seed, [counts]) ⇒ <code>Array.&lt;Object&gt;</code>
+#### theSeed.explode(seed, [counts]) ⇒ <code>Array.&lt;Object&gt;</code>
 Generate data with seed
 
-**Kind**: instance method of [<code>TheSeed</code>](#TheSeed)  
+**Kind**: instance method of [<code>TheSeed</code>](#module_@the-/seed.TheSeed)  
 
 | Param | Type | Default |
 | --- | --- | --- |
 | seed | <code>Object</code> |  | 
 | [counts] | <code>number</code> | <code>10</code> | 
 
-<a name="create"></a>
+<a name="module_@the-/seed.create"></a>
 
-## create(...args) ⇒ [<code>TheSeed</code>](#TheSeed)
+### seed.create(...args) ⇒ <code>TheSeed</code>
 Create a TheSeed instance
 
-**Kind**: global function  
+**Kind**: static method of [<code>@the-/seed</code>](#module_@the-/seed)  
 
 | Param | Type |
 | --- | --- |
 | ...args | <code>\*</code> | 
 
+<a name="default"></a>
+
+## default()
+Alias of [create](#module_@the-/seed.create)
+
+**Kind**: global function  

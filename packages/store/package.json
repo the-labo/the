@@ -14,7 +14,7 @@
   "dependencies": {
     "@the-/assert": "^15.2.0",
     "@the-/check": "^15.2.5",
-    "@the-/scope": "^15.2.4",
+    "@the-/scope": "^15.4.1",
     "argx": "^4.0.0",
     "asobj": "^3.0.1",
     "bredux": "^3.0.7",

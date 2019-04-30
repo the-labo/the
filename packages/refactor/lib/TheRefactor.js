@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/refactor
  * @class TheRefactor
  */
 'use strict'
@@ -36,7 +37,7 @@ const _replace = (content, from, to, { filename, max } = {}) => {
   )
 }
 
-/** @lends TheRefactor */
+/** @lends module:@the-/refactor.TheRefactor */
 class TheRefactor {
   constructor() {
     abind(this)

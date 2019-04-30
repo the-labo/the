@@ -1,6 +1,7 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link module:@the-/refresher.create}
+ * @memberOf module:@the-/refresher
+ * @function default
  */
 'use strict'
 

@@ -1,5 +1,6 @@
 /**
  * Create a TheMetrics instance
+ * @memberOf module:@the-/metrics
  * @function create
  * @param {...*} args
  * @returns {TheMetrics}
@@ -8,7 +9,7 @@
 
 const TheMetrics = require('./TheMetrics')
 
-/** @lends create */
+/** @lends module:@the-/metrics.create */
 function create(...args) {
   return new TheMetrics(...args)
 }

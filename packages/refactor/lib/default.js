@@ -1,6 +1,7 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link module:@the-/refactor.create}
+ * @memberOf module:@the-/refactor
+ * @function default
  */
 'use strict'
 

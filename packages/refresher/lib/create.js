@@ -1,5 +1,6 @@
 /**
  * Create a TheRefresher instance
+ * @memberOf module:@the-/refresher
  * @function create
  * @param {...*} args
  * @returns {TheRefresher}
@@ -8,7 +9,7 @@
 
 const TheRefresher = require('./TheRefresher')
 
-/** @lends create */
+/** @lends module:@the-/refresher.create */
 function create(...args) {
   return new TheRefresher(...args)
 }

@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/metrics
  * @class TheMetrics
  * @param {Object} [options={}] - Optional settings
  */
@@ -6,7 +7,7 @@
 
 const { MethodCallCounter } = require('./counters')
 
-/** @lends TheMetrics */
+/** @lends module:@the-/metrics.TheMetrics */
 class TheMetrics {
   constructor(options = {}) {
     const { interval = 30 * 1000, name = 'TheMetrics' } = options

@@ -1,6 +1,7 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link module:@the-/rtc-client.create}
+ * @memberOf module:@the-/rtc-client
+ * @function default
  */
 'use strict'
 

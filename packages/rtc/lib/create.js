@@ -1,5 +1,6 @@
 /**
  * Create a TheRTC instance
+ * @memberOf module:@the-/rtc
  * @function create
  * @param {...*} args
  * @returns {TheRTC}
@@ -8,7 +9,7 @@
 
 const TheRTC = require('./TheRTC')
 
-/** @lends create */
+/** @lends module:@the-/rtc.create */
 function create(...args) {
   return new TheRTC(...args)
 }

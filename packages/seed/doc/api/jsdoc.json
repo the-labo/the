@@ -1,23 +1,13 @@
 [
   {
-    "id": "module:default",
-    "longname": "module:default",
-    "name": "default",
-    "kind": "module",
-    "description": "Default exports",
-    "meta": {
-      "lineno": 1,
-      "filename": "default.js",
-      "path": "/Users/okuni/Projects/the/packages/seed/lib"
-    },
-    "order": 1
-  },
-  {
     "id": "module:@the-/seed",
     "longname": "module:@the-/seed",
     "name": "@the-/seed",
     "kind": "module",
     "description": "Data generator for the-db",
+    "version": "15.4.1",
+    "license": "MIT",
+    "typicalname": "seed",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -26,60 +16,27 @@
     "order": 2
   },
   {
-    "id": "TheSeed",
-    "longname": "TheSeed",
-    "name": "TheSeed",
-    "kind": "class",
-    "scope": "global",
-    "meta": {
-      "lineno": 1,
-      "filename": "TheSeed.js",
-      "path": "/Users/okuni/Projects/the/packages/seed/lib"
-    },
-    "order": 3
-  },
-  {
-    "id": "create",
-    "longname": "create",
-    "name": "create",
+    "id": "default",
+    "longname": "default",
+    "name": "default",
     "kind": "function",
     "scope": "global",
-    "description": "Create a TheSeed instance",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        },
-        "variable": true,
-        "name": "args"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "TheSeed"
-          ]
-        }
-      }
-    ],
+    "description": "Alias of {@link module:@the-/seed.create}",
     "meta": {
       "lineno": 1,
-      "filename": "create.js",
+      "filename": "default.js",
       "path": "/Users/okuni/Projects/the/packages/seed/lib"
     },
-    "order": 0
+    "order": 1
   },
   {
-    "id": "TheSeed#apply",
-    "longname": "TheSeed#apply",
+    "id": "module:@the-/seed.TheSeed#apply",
+    "longname": "module:@the-/seed.TheSeed#apply",
     "name": "apply",
     "kind": "function",
     "scope": "instance",
     "description": "Generate data with seed",
-    "memberof": "TheSeed",
+    "memberof": "module:@the-/seed.TheSeed",
     "params": [
       {
         "type": {
@@ -91,20 +48,20 @@
       }
     ],
     "meta": {
-      "lineno": 36,
+      "lineno": 37,
       "filename": "TheSeed.js",
       "path": "/Users/okuni/Projects/the/packages/seed/lib"
     },
     "order": 4
   },
   {
-    "id": "TheSeed#explode",
-    "longname": "TheSeed#explode",
+    "id": "module:@the-/seed.TheSeed#explode",
+    "longname": "module:@the-/seed.TheSeed#explode",
     "name": "explode",
     "kind": "function",
     "scope": "instance",
     "description": "Generate data with seed",
-    "memberof": "TheSeed",
+    "memberof": "module:@the-/seed.TheSeed",
     "params": [
       {
         "type": {
@@ -135,10 +92,59 @@
       }
     ],
     "meta": {
-      "lineno": 46,
+      "lineno": 47,
       "filename": "TheSeed.js",
       "path": "/Users/okuni/Projects/the/packages/seed/lib"
     },
     "order": 5
+  },
+  {
+    "id": "module:@the-/seed.TheSeed",
+    "longname": "module:@the-/seed.TheSeed",
+    "name": "TheSeed",
+    "kind": "class",
+    "scope": "static",
+    "memberof": "module:@the-/seed",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheSeed.js",
+      "path": "/Users/okuni/Projects/the/packages/seed/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "module:@the-/seed.create",
+    "longname": "module:@the-/seed.create",
+    "name": "create",
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheSeed instance",
+    "memberof": "module:@the-/seed",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheSeed"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/seed/lib"
+    },
+    "order": 0
   }
 ]

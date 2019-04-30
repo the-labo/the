@@ -1,5 +1,6 @@
 /**
  * Create a TheResize instance
+ * @memberOf module:@the-/resize
  * @function create
  * @param {...*} args
  * @returns {TheResize}
@@ -8,7 +9,7 @@
 
 const TheResize = require('./TheResize')
 
-/** @lends create */
+/** @lends module:@the-/resize.create */
 function create(...args) {
   return new TheResize(...args)
 }

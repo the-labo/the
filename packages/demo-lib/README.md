@@ -88,9 +88,9 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### class
-- [TheDemoLib](./doc/api/api.md#TheDemoLib)
+- [.TheDemoLib](./doc/api/api.md#module_@the-/demo-lib.TheDemoLib)
 ### function
-- [create(args)](./doc/api/api.md#create)
+- [.create(args)](./doc/api/api.md#module_@the-/demo-lib.create)
 - [.theDemoLib()](./doc/api/api.md#module_@the-/demo-lib.theDemoLib)
 
 <!-- LICENSE Start -->

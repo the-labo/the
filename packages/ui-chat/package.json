@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@the-/const-ui": "^15.2.0",
-    "@the-/date": "^15.2.1",
+    "@the-/date": "^15.4.1",
     "@the-/ui-button": "^15.2.4",
     "@the-/ui-condition": "^15.2.3",
     "@the-/ui-form": "^15.2.0",

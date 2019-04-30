@@ -1,6 +1,7 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link module:@the-/metrics.create}
+ * @memberOf module:@the-/metrics
+ * @function default
  */
 'use strict'
 

@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/refresher
  * @class TheRefresher
  */
 'use strict'
@@ -6,7 +7,7 @@
 const { EventEmitter } = require('events')
 const debug = require('debug')('the:refresher')
 
-/** @lends TheRefresher */
+/** @lends module:@the-/refresher.TheRefresher */
 class TheRefresher extends EventEmitter {
   constructor(handler, options = {}) {
     super()

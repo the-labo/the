@@ -1,5 +1,6 @@
 /**
  * Count react rendering counts
+ * @memberOf module:@the-/metrics.counters
  * @class MethodCallCounter
  * @augments Counter
  */
@@ -7,7 +8,7 @@
 
 const Counter = require('./Counter')
 
-/** @lends MethodCallCounter */
+/** @lends module:@the-/metrics.counters.MethodCallCounter */
 class MethodCallCounter extends Counter {
   constructor(context = {}) {
     super(context)
