@@ -1,10 +1,10 @@
 /**
  * @memberOf module:@the-/client
  * @class TheClient
- * @augments module:@the-/client.TheClientBase
- * @augments module:@the-/client.mixins.pingPongMix~PingPongMixed
  * @augments module:@the-/client.mixins.infoMix~InfoMixed
  * @augments module:@the-/client.mixins.streamMix~StreamMixed
+ * @augments module:@the-/client.TheClientBase
+ * @augments module:@the-/client.mixins.pingPongMix~PingPongMixed
  * @param {string} url
  * @param {Object} config
  */
@@ -387,7 +387,7 @@ TheClient.newCID = () => uuid.v4()
 module.exports = TheClient
 
 /**
- * @typedef {Object} TheClientScope
  * @property {string} callerKey
  * @property {string} cid - Client id
+ * @typedef {Object} TheClientScope
  */

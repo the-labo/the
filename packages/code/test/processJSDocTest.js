@@ -51,6 +51,27 @@ describe("process-js-doc", () => {
 'use strict'
 `)
   })
+
+  it('keep order for same types', async () => {
+    equal(
+      await processJSDoc(`
+/**
+ * @param c
+ * @example a
+ * s
+ * @param d
+ * @function hoge
+ * @param a
+ */`), `
+/**
+ * @function hoge
+ * @param d
+ * @param c
+ * @param a
+ * @example a
+ * s
+ */`)
+  })
 });
 
 /* global describe, before, after, it */

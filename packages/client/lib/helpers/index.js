@@ -3,7 +3,7 @@
  * @namespace helpers
  * @memberOf module:@the-/client
  * @access protected
- * @description Client helper functions
+ * @description Helper functions
  */
 'use strict'
 

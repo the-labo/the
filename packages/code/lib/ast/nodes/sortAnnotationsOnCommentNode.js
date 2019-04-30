@@ -13,14 +13,27 @@ function sortAnnotationsOnCommentNode(CommentNode, { swap }) {
     let weight = 0
     const type = String(annotation.type).toLocaleLowerCase()
     switch (type) {
+      case 'augments':
+      case 'extends':
+        weight -= 20
+        break
+      case 'class':
+        weight -= 30
+        break
       case 'example':
         weight += 100
         break
       case 'function':
-        weight -= 10
+        weight -= 30
         break
-      case 'memberOf': {
+      case 'memberOf':
+      case 'memberof': {
         weight -= 100
+        break
+      }
+      case 'return':
+      case 'returns': {
+        weight += 10
         break
       }
       default:
