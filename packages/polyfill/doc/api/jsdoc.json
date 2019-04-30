@@ -1,18 +1,5 @@
 [
   {
-    "id": "module:default",
-    "longname": "module:default",
-    "name": "default",
-    "kind": "module",
-    "description": "Default exports",
-    "meta": {
-      "lineno": 1,
-      "filename": "default.js",
-      "path": "/Users/okuni/Projects/the/packages/polyfill/lib"
-    },
-    "order": 1
-  },
-  {
     "id": "module:@the-/polyfill",
     "longname": "module:@the-/polyfill",
     "name": "@the-/polyfill",
@@ -26,28 +13,44 @@
       "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/polyfill/lib"
     },
-    "order": 2
+    "order": 3
   },
   {
-    "id": "ThePolyfill",
-    "longname": "ThePolyfill",
+    "id": "module:@the-/polyfill.ThePolyfill",
+    "longname": "module:@the-/polyfill.ThePolyfill",
     "name": "ThePolyfill",
     "kind": "class",
-    "scope": "global",
+    "scope": "static",
+    "memberof": "module:@the-/polyfill",
     "meta": {
       "lineno": 1,
       "filename": "ThePolyfill.js",
       "path": "/Users/okuni/Projects/the/packages/polyfill/lib"
     },
-    "order": 3
+    "order": 4
   },
   {
-    "id": "create",
-    "longname": "create",
+    "id": "module:@the-/polyfill.helpers",
+    "longname": "module:@the-/polyfill.helpers",
+    "name": "helpers",
+    "kind": "namespace",
+    "scope": "static",
+    "memberof": "module:@the-/polyfill",
+    "meta": {
+      "lineno": 1,
+      "filename": "helpers.js",
+      "path": "/Users/okuni/Projects/the/packages/polyfill/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "module:@the-/polyfill.create",
+    "longname": "module:@the-/polyfill.create",
     "name": "create",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Create a ThePolyfill instance",
+    "memberof": "module:@the-/polyfill",
     "params": [
       {
         "type": {
@@ -74,5 +77,20 @@
       "path": "/Users/okuni/Projects/the/packages/polyfill/lib"
     },
     "order": 0
+  },
+  {
+    "id": "module:@the-/polyfill.default",
+    "longname": "module:@the-/polyfill.default",
+    "name": "default",
+    "kind": "function",
+    "scope": "static",
+    "description": "Alias of {@link module:@the-/polyfill.create}",
+    "memberof": "module:@the-/polyfill",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/polyfill/lib"
+    },
+    "order": 1
   }
 ]

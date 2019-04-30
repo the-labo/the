@@ -364,6 +364,45 @@
     "order": 25
   },
   {
+    "id": "module:@the-/client.TheClient#serverInfo",
+    "longname": "module:@the-/client.TheClient#serverInfo",
+    "name": "serverInfo",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "module:@the-/client.mixins.infoMix~InfoMixed#serverInfo",
+    "inherited": true,
+    "description": "Fetch server info",
+    "memberof": "module:@the-/client.TheClient",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Object>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 29,
+      "filename": "infoMix.js",
+      "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
+    },
+    "async": true,
+    "order": 28
+  },
+  {
     "id": "module:@the-/client.TheClient#pingPongAnd",
     "longname": "module:@the-/client.TheClient#pingPongAnd",
     "name": "pingPongAnd",
@@ -406,45 +445,6 @@
       "filename": "pingPongMix.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
     },
-    "order": 28
-  },
-  {
-    "id": "module:@the-/client.TheClient#serverInfo",
-    "longname": "module:@the-/client.TheClient#serverInfo",
-    "name": "serverInfo",
-    "kind": "function",
-    "scope": "instance",
-    "inherits": "module:@the-/client.mixins.infoMix~InfoMixed#serverInfo",
-    "inherited": true,
-    "description": "Fetch server info",
-    "memberof": "module:@the-/client.TheClient",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "optional": true,
-        "defaultvalue": "{}",
-        "name": "options"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<Object>"
-          ]
-        }
-      }
-    ],
-    "meta": {
-      "lineno": 29,
-      "filename": "infoMix.js",
-      "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
-    },
-    "async": true,
     "order": 29
   },
   {
@@ -454,10 +454,10 @@
     "kind": "class",
     "scope": "static",
     "augments": [
-      "module:@the-/client.TheClientBase",
-      "module:@the-/client.mixins.pingPongMix~PingPongMixed",
       "module:@the-/client.mixins.infoMix~InfoMixed",
-      "module:@the-/client.mixins.streamMix~StreamMixed"
+      "module:@the-/client.mixins.streamMix~StreamMixed",
+      "module:@the-/client.TheClientBase",
+      "module:@the-/client.mixins.pingPongMix~PingPongMixed"
     ],
     "memberof": "module:@the-/client",
     "meta": {
@@ -518,7 +518,7 @@
     "name": "helpers",
     "kind": "namespace",
     "scope": "static",
-    "description": "Client helper functions",
+    "description": "Helper functions",
     "memberof": "module:@the-/client",
     "access": "protected",
     "meta": {
