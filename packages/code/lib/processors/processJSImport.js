@@ -1,6 +1,6 @@
 /**
  * Process import statement
- * @memberOf module:@the-/code.processors
+ * @memberof module:@the-/code.processors
  * @function processJSImport
  * @param {string} content
  * @returns {string} processed

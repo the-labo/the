@@ -1,6 +1,6 @@
 /**
  * Define content access methods
- * @memberOf module:@the-/code
+ * @memberof module:@the-/code
  * @function contentAccess
  */
 'use strict'

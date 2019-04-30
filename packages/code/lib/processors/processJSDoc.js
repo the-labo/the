@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/code.processors
+ * @memberof module:@the-/code.processors
  * @function processJSDoc
  * @param {string} content
  * @param {Object} [options={}]
@@ -9,6 +9,7 @@
 const { parse } = require('@the-/ast')
 const {
   commentModuleOnProgramNode,
+  replaceJSDocSynonymsOnCommentNode,
   sortAnnotationsOnCommentNode,
 } = require('../ast/nodes')
 const applyConverter = require('../helpers/applyConverter')
@@ -37,7 +38,9 @@ async function processJSDoc(content, options = {}) {
       }
 
       for (const comment of JSDocComments) {
-        const converted = await sortAnnotationsOnCommentNode(comment, { swap })
+        const converted =
+          (await sortAnnotationsOnCommentNode(comment, { swap })) ||
+          (await replaceJSDocSynonymsOnCommentNode(comment, { replace }))
         if (converted) {
           return converted
         }

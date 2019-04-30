@@ -1,6 +1,6 @@
 /**
  * Process export statement
- * @memberOf module:@the-/code.processors
+ * @memberof module:@the-/code.processors
  * @function processJSExport
  * @param {string} content
  * @returns {string} processed

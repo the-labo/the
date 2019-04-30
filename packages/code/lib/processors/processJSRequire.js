@@ -1,6 +1,6 @@
 /**
  * Process require statement
- * @memberOf module:@the-/code.processors
+ * @memberof module:@the-/code.processors
  * @function processJSRequire
  * @param {string} content
  * @returns {string} processed

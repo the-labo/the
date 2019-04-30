@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/code
+ * @memberof module:@the-/code
  * @namespace astHelper
  */
 'use strict'

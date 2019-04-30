@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/code/lib/parsers
+ * @memberof module:@the-/code/lib/parsers
  * @function parseCSS
  */
 'use strict'

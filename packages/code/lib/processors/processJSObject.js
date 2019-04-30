@@ -1,6 +1,6 @@
 /**
  * Process object expressions
- * @memberOf module:@the-/code.processors
+ * @memberof module:@the-/code.processors
  * @function processJSObject
  * @param {string} content
  * @returns {string} processed

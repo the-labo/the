@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/code.processors
+ * @memberof module:@the-/code.processors
  * @function processJSPrettier
  * @param {string} content
  * @returns {Promise.<string>} processed

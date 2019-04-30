@@ -1,6 +1,6 @@
 /**
  * Process JSX attributes
- * @memberOf module:@the-/code.processors
+ * @memberof module:@the-/code.processors
  * @function processJSXAttribute
  * @param {string} content
  * @returns {string} processed

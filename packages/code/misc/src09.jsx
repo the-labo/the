@@ -4,34 +4,29 @@
 'use strict'
 
 import React from 'react'
-import {
-  TheRoot,
-  TheMain,
-} from '@the-/components'
-
-import { Header, Toasts, Footer } from './layouts'
-import Routes from './Routes'
-import { withProvider, withStore, } from '@the-/store'
-import { withLoc, } from '@the-/loc'
-import { withCycle, asBound, } from 'the-hoc'
-import { withBinder, } from '@the-/handle'
-import { withClient } from '@the-/client'
+import { asBound, withCycle } from 'the-hoc'
 import { locales } from '@self/conf'
+import { withClient } from '@the-/client'
+import { TheMain, TheRoot } from '@the-/components'
+import { withBinder } from '@the-/handle'
+import { withLoc } from '@the-/loc'
+import { withProvider, withStore } from '@the-/store'
 import { CautionDisconnectedDialog } from './bounds'
+import { Footer, Header, Toasts } from './layouts'
+import Routes from './Routes'
 
-function App ({busy}) {
+function App({ busy }) {
   return (
     <TheRoot>
-      <Header/>
-      <Toasts/>
+      <Header />
+      <Toasts />
       <TheMain spinning={busy}>
-        <Routes/>
+        <Routes />
       </TheMain>
-      <Footer/>
-      <CautionDisconnectedDialog/>
+      <Footer />
+      <CautionDisconnectedDialog />
     </TheRoot>
   )
-
 }
 
 const ConnectedApp = asBound(
@@ -39,20 +34,14 @@ const ConnectedApp = asBound(
   (state) => ({
     busy: state['app.busy'],
   }),
-  ({
-     accountScene,
-     appScene,
-     verifyNeedScene,
-   }) => ({
+  ({ accountScene, verifyNeedScene }) => ({
     onMount: async () => {
       await accountScene.doSync()
-      await verifyNeedScene.doSync({delay: 3 * 1000})
+      await verifyNeedScene.doSync({ delay: 3 * 1000 })
     },
-  })
+  }),
 )
 
-export default withBinder(withProvider(
-  withClient.root(
-    withLoc.root(ConnectedApp, locales)
-  )
-))
+export default withBinder(
+  withProvider(withClient.root(withLoc.root(ConnectedApp, locales))),
+)

@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/code
+ * @memberof module:@the-/code
  * @class FormatCache
  */
 'use strict'

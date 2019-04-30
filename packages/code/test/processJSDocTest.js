@@ -2,17 +2,17 @@
  * Test for processJSDoc.
  * Runs with mocha.
  */
-"use strict";
+'use strict'
 
-const processJSDoc = require("../lib/processors/processJSDoc");
-const {equal} = require('assert').strict
+const processJSDoc = require('../lib/processors/processJSDoc')
+const { equal } = require('assert').strict
 
-describe("process-js-doc", () => {
-  before(() => {});
+describe('process-js-doc', () => {
+  before(() => {})
 
-  after(() => {});
+  after(() => {})
 
-  it("Do test", async () => {
+  it('Do test', async () => {
     equal(
       await processJSDoc(`
       /**
@@ -22,7 +22,8 @@ describe("process-js-doc", () => {
        *  hoge (){}
        */
       module.exports = function hoge(){}
-    `), `
+    `),
+      `
       /**
        * @function hoge
        * @param {boolean} a
@@ -30,8 +31,9 @@ describe("process-js-doc", () => {
        *  hoge (){}
        */
       module.exports = function hoge(){}
-    `);
-  });
+    `,
+    )
+  })
 
   it('test02', async () => {
     equal(
@@ -42,14 +44,16 @@ describe("process-js-doc", () => {
  * @memberof module:@the-/code
  */
 'use strict'
-`), `
+`),
+      `
 /**
- * @class TheCode
  * @memberof module:@the-/code
+ * @class TheCode
  * @param {Object} [config={}] - Code config
  */
 'use strict'
-`)
+`,
+    )
   })
 
   it('keep order for same types', async () => {
@@ -62,7 +66,8 @@ describe("process-js-doc", () => {
  * @param d
  * @function hoge
  * @param a
- */`), `
+ */`),
+      `
 /**
  * @function hoge
  * @param d
@@ -70,8 +75,26 @@ describe("process-js-doc", () => {
  * @param a
  * @example a
  * s
- */`)
+ */`,
+    )
   })
-});
+
+  it('Replace synonyms', async () => {
+    equal(
+      await processJSDoc(`
+/** 
+ * @func hoge
+ * @memberOf X 
+ */
+`),
+      `
+/** 
+ * @memberof X 
+ * @function hoge
+ */
+`,
+    )
+  })
+})
 
 /* global describe, before, after, it */

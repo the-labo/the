@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/code.processors
+ * @memberof module:@the-/code.processors
  * @function processClass
  * @param {string} content
  * @returns {string} processed

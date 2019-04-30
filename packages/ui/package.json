@@ -83,10 +83,9 @@
   },
   "repository": "the-labo/the",
   "scripts": {
-    "build": "the-script-build",
-    "doc": "the-script-doc",
+    "build": "../../misc/scripts/pkgBuild.js",
+    "doc": "../../misc/scripts/pkgDoc.js",,
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
-    "test": "the-script-test",
-    "watch": "the-script-build -w"
+    "test": "the-script-test"
   }
 }

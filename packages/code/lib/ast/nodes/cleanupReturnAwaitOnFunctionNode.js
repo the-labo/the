@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/code.ast.nodes
+ * @memberof module:@the-/code.ast.nodes
  * @function cleanupReturnAwaitOnFunctionNode
  */
 'use strict'

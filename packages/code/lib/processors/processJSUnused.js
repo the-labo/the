@@ -1,6 +1,6 @@
 /**
  * Removed unused vars
- * @memberOf module:@the-/code.processors
+ * @memberof module:@the-/code.processors
  * @function processJSUnused
  * @param {string} content
  * @returns {string} processed

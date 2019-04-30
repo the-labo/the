@@ -1,6 +1,6 @@
 /**
  * Process js switch statement
- * @memberOf module:@the-/code.processors
+ * @memberof module:@the-/code.processors
  * @function processJSSwitch
  * @param {string} content
  * @returns {string} processed

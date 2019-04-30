@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/code.ast.nodes
+ * @memberof module:@the-/code.ast.nodes
  * @function sortAnnotationsOnCommentNode
  */
 'use strict'
@@ -11,8 +11,8 @@ function sortAnnotationsOnCommentNode(CommentNode, { swap }) {
   const annotations = findJSDocAnnotationsInCommendNode(CommentNode)
   const _weightAnnotation = (annotation) => {
     let weight = 0
-    const type = String(annotation.type).toLocaleLowerCase()
-    switch (type) {
+    const typeName = String(annotation.type.name).toLocaleLowerCase()
+    switch (typeName) {
       case 'augments':
       case 'extends':
         weight -= 20
@@ -47,7 +47,7 @@ function sortAnnotationsOnCommentNode(CommentNode, { swap }) {
     if (aWeight !== bWeight) {
       return aWeight - bWeight
     }
-    return a.type.localeCompare(b.type)
+    return a.type.name.localeCompare(b.type.name)
   })
   const rangeFor = (annotation) => [annotation.start, annotation.end]
   for (let i = 0; i < annotations.length; i++) {

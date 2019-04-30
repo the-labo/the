@@ -26,6 +26,7 @@ const findRequireDeclarationOnProgramNode_ = require('./findRequireDeclarationOn
 const mergeDuplicateImportOnProgramNode_ = require('./mergeDuplicateImportOnProgramNode')
 const normalizeSrcPathOnImportDeclarationNode_ = require('./normalizeSrcPathOnImportDeclarationNode')
 const normalizeSrcPathOnRequireArgumentNode_ = require('./normalizeSrcPathOnRequireArgumentNode')
+const replaceJSDocSynonymsOnCommentNode_ = require('./replaceJSDocSynonymsOnCommentNode')
 const sortAnnotationsOnCommentNode_ = require('./sortAnnotationsOnCommentNode')
 const sortCasesOnSwitchStatementNode_ = require('./sortCasesOnSwitchStatementNode')
 const sortMethodsOnClassNode_ = require('./sortMethodsOnClassNode')
@@ -53,6 +54,7 @@ exports.findRequireDeclarationOnProgramNode = findRequireDeclarationOnProgramNod
 exports.mergeDuplicateImportOnProgramNode = mergeDuplicateImportOnProgramNode_
 exports.normalizeSrcPathOnImportDeclarationNode = normalizeSrcPathOnImportDeclarationNode_
 exports.normalizeSrcPathOnRequireArgumentNode = normalizeSrcPathOnRequireArgumentNode_
+exports.replaceJSDocSynonymsOnCommentNode = replaceJSDocSynonymsOnCommentNode_
 exports.sortAnnotationsOnCommentNode = sortAnnotationsOnCommentNode_
 exports.sortCasesOnSwitchStatementNode = sortCasesOnSwitchStatementNode_
 exports.sortMethodsOnClassNode = sortMethodsOnClassNode_
@@ -80,6 +82,7 @@ module.exports = {
   mergeDuplicateImportOnProgramNode: mergeDuplicateImportOnProgramNode_,
   normalizeSrcPathOnImportDeclarationNode: normalizeSrcPathOnImportDeclarationNode_,
   normalizeSrcPathOnRequireArgumentNode: normalizeSrcPathOnRequireArgumentNode_,
+  replaceJSDocSynonymsOnCommentNode: replaceJSDocSynonymsOnCommentNode_,
   sortAnnotationsOnCommentNode: sortAnnotationsOnCommentNode_,
   sortCasesOnSwitchStatementNode: sortCasesOnSwitchStatementNode_,
   sortMethodsOnClassNode: sortMethodsOnClassNode_,
