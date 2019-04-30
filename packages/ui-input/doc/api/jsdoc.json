@@ -17,6 +17,8 @@
     "name": "@the-/ui-input",
     "kind": "module",
     "description": "Input of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiInput",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

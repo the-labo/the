@@ -5,6 +5,8 @@
     "name": "@the-/ui-pager",
     "kind": "module",
     "description": "Pager of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiPager",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

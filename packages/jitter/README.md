@@ -106,15 +106,16 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [TheJitter](./doc/api/api.md#TheJitter)
 ### function
-- [create(args)](./doc/api/api.md#create)
-- [#decrementCount()](./doc/api/api.md#TheJitter#decrementCount)
-- [#incrementCount()](./doc/api/api.md#TheJitter#incrementCount)
-- [#resetCount()](./doc/api/api.md#TheJitter#resetCount)
-- [#handle(action)](./doc/api/api.md#TheJitter#handle)
-- [#wait()](./doc/api/api.md#TheJitter#wait)
+- [default()](./doc/api/api.md#default)
+- [#decrementCount()](./doc/api/api.md#module_@the-/jitter.TheJitter#decrementCount)
+- [#incrementCount()](./doc/api/api.md#module_@the-/jitter.TheJitter#incrementCount)
+- [#resetCount()](./doc/api/api.md#module_@the-/jitter.TheJitter#resetCount)
+- [#handle(action)](./doc/api/api.md#module_@the-/jitter.TheJitter#handle)
+- [#wait()](./doc/api/api.md#module_@the-/jitter.TheJitter#wait)
+- [.create(args)](./doc/api/api.md#module_@the-/jitter.create)
+### class
+- [.TheJitter](./doc/api/api.md#module_@the-/jitter.TheJitter)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

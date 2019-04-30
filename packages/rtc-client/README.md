@@ -78,10 +78,7 @@ Usage
 
 ## API Guide
 
-### class
-- [TheRTCClient](./doc/api/api.md#TheRTCClient)
 ### function
-- [create(args)](./doc/api/api.md#create)
 - [assertMix(Class)](./doc/api/api.md#assertMix)
 - [channelMix(Class)](./doc/api/api.md#channelMix)
 - [mediaMix(Class)](./doc/api/api.md#mediaMix)
@@ -89,11 +86,15 @@ Usage
 - [promiseMix(Class)](./doc/api/api.md#promiseMix)
 - [serializeMix(Class)](./doc/api/api.md#serializeMix)
 - [socketMix(Class)](./doc/api/api.md#socketMix)
-- [#connect(url,options)](./doc/api/api.md#TheRTCClient#connect)
-- [#disconnect()](./doc/api/api.md#TheRTCClient#disconnect)
-- [#publish(topic,payload,options)](./doc/api/api.md#TheRTCClient#publish)
+- [#connect(url,options)](./doc/api/api.md#module_@the-/rtc-client.TheRTCClient#connect)
+- [#disconnect()](./doc/api/api.md#module_@the-/rtc-client.TheRTCClient#disconnect)
+- [#publish(topic,payload,options)](./doc/api/api.md#module_@the-/rtc-client.TheRTCClient#publish)
 - [#subscribePubSubChannel(topic,callback)](./doc/api/api.md#ChannelMixed#subscribePubSubChannel)
 - [#unsubscribePubSubChannel(topic,subscription)](./doc/api/api.md#ChannelMixed#unsubscribePubSubChannel)
+- [.create(args)](./doc/api/api.md#module_@the-/rtc-client.create)
+- [.default()](./doc/api/api.md#module_@the-/rtc-client.default)
+### class
+- [.TheRTCClient](./doc/api/api.md#module_@the-/rtc-client.TheRTCClient)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

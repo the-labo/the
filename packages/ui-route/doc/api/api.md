@@ -6,7 +6,7 @@
 <dt><a href="#module_@the-/ui-route">@the-/ui-route</a></dt>
 <dd><p>Route of the-components</p>
 </dd>
-<dt><a href="#module_the-route">the-route</a></dt>
+<dt><a href="#module_@the-/ui-route">@the-/ui-route</a></dt>
 <dd><p>Route of the-components</p>
 </dd>
 </dl>
@@ -35,11 +35,12 @@
 ## @the-/ui-route
 Route of the-components
 
-<a name="module_the-route"></a>
+<a name="module_@the-/ui-route"></a>
 
-## the-route
+## @the-/ui-route
 Route of the-components
 
+**Version**: 15.4.0  
 <a name="TheRoute"></a>
 
 ## TheRoute

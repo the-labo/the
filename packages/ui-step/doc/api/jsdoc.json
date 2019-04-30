@@ -5,6 +5,8 @@
     "name": "@the-/ui-step",
     "kind": "module",
     "description": "Steps for the-components",
+    "version": "15.4.0",
+    "typicalname": "uiStep",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

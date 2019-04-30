@@ -3,103 +3,107 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_default">default</a></dt>
-<dd><p>Default exports</p>
-</dd>
 <dt><a href="#module_@the-/jitter">@the-/jitter</a></dt>
 <dd><p>Random delay timer</p>
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheJitter">TheJitter</a></dt>
-<dd></dd>
-</dl>
-
 ## Functions
 
 <dl>
-<dt><a href="#create">create(...args)</a> ⇒ <code><a href="#TheJitter">TheJitter</a></code></dt>
-<dd><p>Create a TheJitter instance</p>
+<dt><a href="#default">default()</a></dt>
+<dd><p>Alias of {@lnik module:@the-/jitter.create}</p>
 </dd>
 </dl>
-
-<a name="module_default"></a>
-
-## default
-Default exports
 
 <a name="module_@the-/jitter"></a>
 
 ## @the-/jitter
 Random delay timer
 
-<a name="TheJitter"></a>
+**Version**: 15.4.0  
+**License**: MIT  
 
-## TheJitter
-**Kind**: global class  
+* [@the-/jitter](#module_@the-/jitter)
+    * [.TheJitter](#module_@the-/jitter.TheJitter)
+        * [new TheJitter([options])](#new_module_@the-/jitter.TheJitter_new)
+        * [.decrementCount()](#module_@the-/jitter.TheJitter+decrementCount)
+        * [.incrementCount()](#module_@the-/jitter.TheJitter+incrementCount)
+        * [.resetCount()](#module_@the-/jitter.TheJitter+resetCount)
+        * [.handle(action)](#module_@the-/jitter.TheJitter+handle) ⇒ <code>Promise.&lt;void&gt;</code>
+        * [.wait()](#module_@the-/jitter.TheJitter+wait) ⇒ <code>Promise</code>
+    * [.create(...args)](#module_@the-/jitter.create) ⇒ <code>TheJitter</code>
 
-* [TheJitter](#TheJitter)
-    * [new TheJitter([options])](#new_TheJitter_new)
-    * [.decrementCount()](#TheJitter+decrementCount)
-    * [.incrementCount()](#TheJitter+incrementCount)
-    * [.resetCount()](#TheJitter+resetCount)
-    * [.handle(action)](#TheJitter+handle) ⇒ <code>Promise.&lt;void&gt;</code>
-    * [.wait()](#TheJitter+wait) ⇒ <code>Promise</code>
+<a name="module_@the-/jitter.TheJitter"></a>
 
-<a name="new_TheJitter_new"></a>
+### jitter.TheJitter
+**Kind**: static class of [<code>@the-/jitter</code>](#module_@the-/jitter)  
 
-### new TheJitter([options])
+* [.TheJitter](#module_@the-/jitter.TheJitter)
+    * [new TheJitter([options])](#new_module_@the-/jitter.TheJitter_new)
+    * [.decrementCount()](#module_@the-/jitter.TheJitter+decrementCount)
+    * [.incrementCount()](#module_@the-/jitter.TheJitter+incrementCount)
+    * [.resetCount()](#module_@the-/jitter.TheJitter+resetCount)
+    * [.handle(action)](#module_@the-/jitter.TheJitter+handle) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.wait()](#module_@the-/jitter.TheJitter+wait) ⇒ <code>Promise</code>
+
+<a name="new_module_@the-/jitter.TheJitter_new"></a>
+
+#### new TheJitter([options])
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 
-<a name="TheJitter+decrementCount"></a>
+<a name="module_@the-/jitter.TheJitter+decrementCount"></a>
 
-### theJitter.decrementCount()
+#### theJitter.decrementCount()
 Decrement count
 
-**Kind**: instance method of [<code>TheJitter</code>](#TheJitter)  
-<a name="TheJitter+incrementCount"></a>
+**Kind**: instance method of [<code>TheJitter</code>](#module_@the-/jitter.TheJitter)  
+<a name="module_@the-/jitter.TheJitter+incrementCount"></a>
 
-### theJitter.incrementCount()
+#### theJitter.incrementCount()
 Increment count
 
-**Kind**: instance method of [<code>TheJitter</code>](#TheJitter)  
-<a name="TheJitter+resetCount"></a>
+**Kind**: instance method of [<code>TheJitter</code>](#module_@the-/jitter.TheJitter)  
+<a name="module_@the-/jitter.TheJitter+resetCount"></a>
 
-### theJitter.resetCount()
+#### theJitter.resetCount()
 Reset count
 
-**Kind**: instance method of [<code>TheJitter</code>](#TheJitter)  
-<a name="TheJitter+handle"></a>
+**Kind**: instance method of [<code>TheJitter</code>](#module_@the-/jitter.TheJitter)  
+<a name="module_@the-/jitter.TheJitter+handle"></a>
 
-### theJitter.handle(action) ⇒ <code>Promise.&lt;void&gt;</code>
+#### theJitter.handle(action) ⇒ <code>Promise.&lt;void&gt;</code>
 Handle action
 
-**Kind**: instance method of [<code>TheJitter</code>](#TheJitter)  
+**Kind**: instance method of [<code>TheJitter</code>](#module_@the-/jitter.TheJitter)  
 
 | Param | Type |
 | --- | --- |
 | action | <code>function</code> | 
 
-<a name="TheJitter+wait"></a>
+<a name="module_@the-/jitter.TheJitter+wait"></a>
 
-### theJitter.wait() ⇒ <code>Promise</code>
+#### theJitter.wait() ⇒ <code>Promise</code>
 Wait for delay
 
-**Kind**: instance method of [<code>TheJitter</code>](#TheJitter)  
-<a name="create"></a>
+**Kind**: instance method of [<code>TheJitter</code>](#module_@the-/jitter.TheJitter)  
+<a name="module_@the-/jitter.create"></a>
 
-## create(...args) ⇒ [<code>TheJitter</code>](#TheJitter)
+### jitter.create(...args) ⇒ <code>TheJitter</code>
 Create a TheJitter instance
 
-**Kind**: global function  
+**Kind**: static method of [<code>@the-/jitter</code>](#module_@the-/jitter)  
 
 | Param | Type |
 | --- | --- |
 | ...args | <code>\*</code> | 
 
+<a name="default"></a>
+
+## default()
+Alias of {@lnik module:@the-/jitter.create}
+
+**Kind**: global function  

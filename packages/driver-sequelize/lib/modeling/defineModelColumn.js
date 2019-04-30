@@ -1,5 +1,6 @@
 /**
  * Define model column
+ * @memberOf module:@the-/driver-sequelize.modeling
  * @function defineModelColumn
  * @param {string} propertyName
  * @param {Object} def
@@ -11,7 +12,7 @@ const {
 } = require('clay-constants')
 const Sequelize = require('sequelize')
 
-/** @lends defineModelColumn */
+/** @lends module:@the-/driver-sequelize.modeling.defineModelColumn */
 function defineModelColumn(propertyName, def = {}) {
   const { default: defaultValue, description, required, type } = def
   const base = {

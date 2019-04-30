@@ -5,6 +5,8 @@
     "name": "@the-/ui-caught",
     "kind": "module",
     "description": "Component to show caught errors",
+    "version": "15.4.0",
+    "typicalname": "uiCaught",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

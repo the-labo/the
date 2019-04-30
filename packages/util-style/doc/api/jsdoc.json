@@ -5,6 +5,9 @@
     "name": "@the-/util-style",
     "kind": "module",
     "description": "Utility for style",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "utilStyle",
     "meta": {
       "lineno": 2,
       "filename": "index.js",

@@ -5,6 +5,8 @@
     "name": "@the-/ui-cycle",
     "kind": "module",
     "description": "Component with life cycle",
+    "version": "15.4.0",
+    "typicalname": "uiCycle",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

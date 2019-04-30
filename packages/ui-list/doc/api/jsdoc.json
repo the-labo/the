@@ -5,6 +5,8 @@
     "name": "@the-/ui-list",
     "kind": "module",
     "description": "List of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiList",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

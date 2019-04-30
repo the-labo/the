@@ -42,6 +42,8 @@
 ## @the-/util-server
 Utility for server
 
+**Version**: 15.4.0  
+**License**: MIT  
 <a name="generateFile"></a>
 
 ## generateFile(filename, generator) ⇒ <code>Promise.&lt;void&gt;</code>

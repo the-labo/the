@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/secret
  * @class TheSecret
  * @augments CryptoMixed
  * @augments LockMixed
@@ -20,7 +21,7 @@ const TheSecretBase = [m.cryptoMix, m.lockMix].reduce(
 
 const IV_LENGTH = 16
 
-/** @lends TheSecret */
+/** @lends module:@the-/secret.TheSecret */
 class TheSecret extends TheSecretBase {
   constructor(filename, password, options = {}) {
     const {

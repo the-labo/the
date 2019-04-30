@@ -5,6 +5,9 @@
     "name": "@the-/entrypoint",
     "kind": "module",
     "description": "Browser entrypoint for the-framework",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "entrypoint",
     "meta": {
       "lineno": 2,
       "filename": "index.js",

@@ -5,6 +5,8 @@
     "name": "@the-/ui-qr",
     "kind": "module",
     "description": "QRCode the-component",
+    "version": "15.4.0",
+    "typicalname": "uiQr",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

@@ -5,6 +5,9 @@
     "name": "@the-/util-site",
     "kind": "module",
     "description": "Utility for site",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "utilSite",
     "meta": {
       "lineno": 2,
       "filename": "index.js",

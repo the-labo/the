@@ -29,6 +29,7 @@
 ## @the-/ui-qr
 QRCode the-component
 
+**Version**: 15.4.0  
 <a name="TheQr"></a>
 
 ## TheQr

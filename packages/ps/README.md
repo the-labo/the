@@ -91,13 +91,12 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
-- [#acquire()](./doc/api/api.md#ThePS#acquire)
+- [#acquire()](./doc/api/api.md#module_@the-/ps.ThePS#acquire)
 - [.acquire()](./doc/api/api.md#module_@the-/ps.acquire)
 - [.create(args)](./doc/api/api.md#module_@the-/ps.create)
+- [.default()](./doc/api/api.md#module_@the-/ps.default)
 ### class
 - [.ThePS](./doc/api/api.md#module_@the-/ps.ThePS)
-### namespace
-- [.default](./doc/api/api.md#module_@the-/ps.default)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

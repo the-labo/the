@@ -102,20 +102,21 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### class
-- [TheRTC](./doc/api/api.md#TheRTC)
 - [SFUProxy](./doc/api/api.md#SFUProxy)
 - [SFUProxyEdge](./doc/api/api.md#SFUProxyEdge)
 - [SFUProxyEdgeAnswerer](./doc/api/api.md#SFUProxyEdgeAnswerer)
 - [SFUProxyEdgeOfferer](./doc/api/api.md#SFUProxyEdgeOfferer)
 - [SFUProxyPool](./doc/api/api.md#SFUProxyPool)
+- [.TheRTC](./doc/api/api.md#module_@the-/rtc.TheRTC)
 ### function
-- [create(args)](./doc/api/api.md#create)
 - [handleUnknownKeys()](./doc/api/api.md#handleUnknownKeys)
 - [parseTurn secret(secret)](./doc/api/api.md#parseTurn secret)
 - [httpMix(Class)](./doc/api/api.md#httpMix)
 - [ioMix(Class)](./doc/api/api.md#ioMix)
 - [sfuMix(Class)](./doc/api/api.md#sfuMix)
 - [turnMix(Class)](./doc/api/api.md#turnMix)
+- [.create(args)](./doc/api/api.md#module_@the-/rtc.create)
+- [.default()](./doc/api/api.md#module_@the-/rtc.default)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

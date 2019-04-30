@@ -1,5 +1,6 @@
 /**
  * Get text color for background color
+ * @memberOf module:@the-/util-color
  * @function textColorFor
  * @param {string} backgroundColor
  * @returns {string} Text color
@@ -8,7 +9,7 @@
 
 const { isDark } = require('acolor')
 
-/** @lends textColorFor */
+/** @lends module:@the-/util-color.textColorFor */
 function textColorFor(backgroundColor) {
   if (!backgroundColor) {
     return null

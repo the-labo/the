@@ -5,6 +5,9 @@
     "name": "@the-/support",
     "kind": "module",
     "description": "JS support version checker",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "support",
     "meta": {
       "lineno": 2,
       "filename": "index.js",

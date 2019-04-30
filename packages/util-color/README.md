@@ -67,10 +67,10 @@ Usage
 ```javascript
 'use strict'
 
-const {colorWithAlpha} = require('the-color')
+const { colorWithAlpha } = require('@the-/util-color')
 
-async function tryExample () {
-  console.log(colorWithAlpha('#AAA',0.5)) // -> rgba(170, 170, 170, 0.5)
+async function tryExample() {
+  console.log(colorWithAlpha('#AAA', 0.5)) // -> rgba(170, 170, 170, 0.5)
 }
 
 tryExample().catch((err) => console.error(err))
@@ -80,19 +80,18 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### function
+- [colorWithAlpha(color,alpha)](./doc/api/api.md#colorWithAlpha)
+- [colorWithText(text,options)](./doc/api/api.md#colorWithText)
+- [rotatedColorsFor(base,options)](./doc/api/api.md#rotatedColorsFor)
+- [textColorFor(backgroundColor)](./doc/api/api.md#textColorFor)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

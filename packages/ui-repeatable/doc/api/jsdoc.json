@@ -5,6 +5,8 @@
     "name": "@the-/ui-repeatable",
     "kind": "module",
     "description": "Repeatable of the-component",
+    "version": "15.4.0",
+    "typicalname": "uiRepeatable",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

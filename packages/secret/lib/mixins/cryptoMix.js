@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/secret.mixins
  * @function cryptoMix
  */
 'use strict'
@@ -7,9 +8,13 @@ const { expand, flatten } = require('objnest')
 const { cipherText, decipherText } = require('../helpers/cipher')
 const SKIP_CRYPTO_PATTERN = /^[_$]|^\/\//
 
-/** @lends cryptoMix */
+/** @lends module:@the-/secret.cryptoMix */
 function cryptoMix(Class) {
-  /** @class CryptoMixed */
+  /**
+   * @memberOf module:@the-/secret.mixins.cryptoMix
+   * @inner
+   * @class CryptoMixed
+   */
   class CryptoMixed extends Class {
     constructor(...args) {
       super(...args)

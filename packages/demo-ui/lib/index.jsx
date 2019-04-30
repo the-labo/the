@@ -14,3 +14,8 @@ export {
   TheDemoUi,
   TheDemoUiStyle,
 }
+
+export default {
+  TheDemoUi,
+  TheDemoUiStyle,
+}

@@ -3,28 +3,14 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_default">default</a></dt>
-<dd><p>Default exports</p>
-</dd>
 <dt><a href="#module_@the-/rtc">@the-/rtc</a></dt>
 <dd><p>RTC server for the-frameworks</p>
-</dd>
-<dt><a href="#module_constants">constants</a></dt>
-<dd><p>Constant variables</p>
-</dd>
-<dt><a href="#module_helpers">helpers</a></dt>
-<dd><p>Helpers</p>
-</dd>
-<dt><a href="#module_mixins">mixins</a></dt>
-<dd><p>Class mixins</p>
 </dd>
 </dl>
 
 ## Classes
 
 <dl>
-<dt><a href="#TheRTC">TheRTC</a></dt>
-<dd></dd>
 <dt><a href="#SFUProxy">SFUProxy</a></dt>
 <dd></dd>
 <dt><a href="#SFUProxyEdge">SFUProxyEdge</a></dt>
@@ -40,9 +26,6 @@
 ## Functions
 
 <dl>
-<dt><a href="#create">create(...args)</a> ⇒ <code><a href="#TheRTC">TheRTC</a></code></dt>
-<dd><p>Create a TheRTC instance</p>
-</dd>
 <dt><a href="#handleUnknownKeys">handleUnknownKeys()</a></dt>
 <dd></dd>
 <dt><a href="#parseTurn secret">parseTurn secret(secret)</a> ⇒ <code>Object</code></dt>
@@ -61,38 +44,27 @@
 </dd>
 </dl>
 
-<a name="module_default"></a>
-
-## default
-Default exports
-
 <a name="module_@the-/rtc"></a>
 
 ## @the-/rtc
 RTC server for the-frameworks
 
-<a name="module_constants"></a>
+**Version**: 15.4.0  
+**License**: MIT  
 
-## constants
-Constant variables
+* [@the-/rtc](#module_@the-/rtc)
+    * [.TheRTC](#module_@the-/rtc.TheRTC)
+        * [new TheRTC([config])](#new_module_@the-/rtc.TheRTC_new)
+    * [.create(...args)](#module_@the-/rtc.create) ⇒ <code>TheRTC</code>
+    * [.default()](#module_@the-/rtc.default)
 
-<a name="module_helpers"></a>
+<a name="module_@the-/rtc.TheRTC"></a>
 
-## helpers
-Helpers
+### rtc.TheRTC
+**Kind**: static class of [<code>@the-/rtc</code>](#module_@the-/rtc)  
+<a name="new_module_@the-/rtc.TheRTC_new"></a>
 
-<a name="module_mixins"></a>
-
-## mixins
-Class mixins
-
-<a name="TheRTC"></a>
-
-## TheRTC
-**Kind**: global class  
-<a name="new_TheRTC_new"></a>
-
-### new TheRTC([config])
+#### new TheRTC([config])
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -105,6 +77,23 @@ Class mixins
 | [config.turn.expiry] | <code>string</code> |  | TURN server expiry |
 | [config.topology] | <code>string</code> | <code>&quot;&#x27;mesh&#x27;&quot;</code> | 'mesh', 'sfu' |
 
+<a name="module_@the-/rtc.create"></a>
+
+### rtc.create(...args) ⇒ <code>TheRTC</code>
+Create a TheRTC instance
+
+**Kind**: static method of [<code>@the-/rtc</code>](#module_@the-/rtc)  
+
+| Param | Type |
+| --- | --- |
+| ...args | <code>\*</code> | 
+
+<a name="module_@the-/rtc.default"></a>
+
+### rtc.default()
+Alias of [create](#module_@the-/rtc.create)
+
+**Kind**: static method of [<code>@the-/rtc</code>](#module_@the-/rtc)  
 <a name="SFUProxy"></a>
 
 ## SFUProxy
@@ -132,17 +121,6 @@ Webrtc proxy connections
 
 ## SFUProxyPool
 **Kind**: global class  
-<a name="create"></a>
-
-## create(...args) ⇒ [<code>TheRTC</code>](#TheRTC)
-Create a TheRTC instance
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| ...args | <code>\*</code> | 
-
 <a name="handleUnknownKeys"></a>
 
 ## handleUnknownKeys()

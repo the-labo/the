@@ -30,6 +30,8 @@
 ## @the-/util-color
 Color utility for the-framework
 
+**Version**: 15.4.0  
+**License**: MIT  
 <a name="colorWithAlpha"></a>
 
 ## colorWithAlpha(color, alpha) ⇒ <code>string</code>

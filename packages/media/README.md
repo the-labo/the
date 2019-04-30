@@ -92,17 +92,18 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [TheMedia](./doc/api/api.md#TheMedia)
 ### function
-- [create(args)](./doc/api/api.md#create)
-- [#createAudioRecorder(audioContext,options)](./doc/api/api.md#TheMedia#createAudioRecorder)
-- [#getStreamTracks(kind)](./doc/api/api.md#TheMedia#getStreamTracks)
-- [#toggleEnabled(kind,enabled)](./doc/api/api.md#TheMedia#toggleEnabled)
-- [#bindVideo(video,options)](./doc/api/api.md#TheMedia#bindVideo)
-- [#start()](./doc/api/api.md#TheMedia#start)
-- [#stop()](./doc/api/api.md#TheMedia#stop)
-- [#takePhoto(options)](./doc/api/api.md#TheMedia#takePhoto)
+- [default()](./doc/api/api.md#default)
+- [#createAudioRecorder(audioContext,options)](./doc/api/api.md#module_@the-/media.TheMedia#createAudioRecorder)
+- [#getStreamTracks(kind)](./doc/api/api.md#module_@the-/media.TheMedia#getStreamTracks)
+- [#toggleEnabled(kind,enabled)](./doc/api/api.md#module_@the-/media.TheMedia#toggleEnabled)
+- [#bindVideo(video,options)](./doc/api/api.md#module_@the-/media.TheMedia#bindVideo)
+- [#start()](./doc/api/api.md#module_@the-/media.TheMedia#start)
+- [#stop()](./doc/api/api.md#module_@the-/media.TheMedia#stop)
+- [#takePhoto(options)](./doc/api/api.md#module_@the-/media.TheMedia#takePhoto)
+- [.create(args)](./doc/api/api.md#module_@the-/media.create)
+### class
+- [.TheMedia](./doc/api/api.md#module_@the-/media.TheMedia)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

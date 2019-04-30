@@ -29,6 +29,7 @@
 ## @the-/ui-header
 Header of the-components
 
+**Version**: 15.4.0  
 <a name="TheHeader"></a>
 
 ## TheHeader

@@ -5,6 +5,8 @@
     "name": "@the-/ui-video",
     "kind": "module",
     "description": "Video for the-components",
+    "version": "15.4.0",
+    "typicalname": "uiVideo",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

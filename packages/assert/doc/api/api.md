@@ -11,8 +11,8 @@ Assert for the-framework
 * [@the-/assert](#module_@the-/assert)
     * [.TheAssert](#module_@the-/assert.TheAssert)
         * [new TheAssert(prefix, [options])](#new_module_@the-/assert.TheAssert_new)
-    * [.create(...args)](#module_@the-/assert.create) ⇒ <code>TheAssert</code>
-    * [.default(...args)](#module_@the-/assert.default) ⇒ <code>TheAssert</code>
+    * [.create(...args)](#module_@the-/assert.create) ⇒ [<code>TheAssert</code>](#module_@the-/assert.TheAssert)
+    * [.default(...args)](#module_@the-/assert.default) ⇒ <code>module:@the-/assert.TheAssert.TheAssert</code>
 
 <a name="module_@the-/assert.TheAssert"></a>
 
@@ -32,7 +32,7 @@ Assert module
 
 <a name="module_@the-/assert.create"></a>
 
-### assert.create(...args) ⇒ <code>TheAssert</code>
+### assert.create(...args) ⇒ [<code>TheAssert</code>](#module_@the-/assert.TheAssert)
 Create a TheAssert instance
 
 **Kind**: static method of [<code>@the-/assert</code>](#module_@the-/assert)  
@@ -43,7 +43,7 @@ Create a TheAssert instance
 
 <a name="module_@the-/assert.default"></a>
 
-### assert.default(...args) ⇒ <code>TheAssert</code>
+### assert.default(...args) ⇒ <code>module:@the-/assert.TheAssert.TheAssert</code>
 Default exports. Alias of [create](#module_@the-/assert.create)
 
 **Kind**: static method of [<code>@the-/assert</code>](#module_@the-/assert)  

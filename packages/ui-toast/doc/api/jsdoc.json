@@ -5,6 +5,8 @@
     "name": "@the-/ui-toast",
     "kind": "module",
     "description": "Toast of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiToast",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

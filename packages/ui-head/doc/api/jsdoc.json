@@ -5,6 +5,8 @@
     "name": "@the-/ui-head",
     "kind": "module",
     "description": "Head of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiHead",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

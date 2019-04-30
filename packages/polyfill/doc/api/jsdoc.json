@@ -18,6 +18,9 @@
     "name": "@the-/polyfill",
     "kind": "module",
     "description": "Polyfill of the-frameworks",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "polyfill",
     "meta": {
       "lineno": 2,
       "filename": "index.js",

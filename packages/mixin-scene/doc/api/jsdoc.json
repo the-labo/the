@@ -5,6 +5,9 @@
     "name": "@the-/mixin-scene",
     "kind": "module",
     "description": "Mixins for the-scene",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "mixinScene",
     "meta": {
       "lineno": 2,
       "filename": "index.js",

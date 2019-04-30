@@ -5,6 +5,8 @@
     "name": "@the-/ui-flick",
     "kind": "module",
     "description": "Flickable viewer of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiFlick",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",
@@ -50,7 +52,7 @@
     "description": "Active index of images",
     "memberof": "TheFlick.propTypes",
     "meta": {
-      "lineno": 340,
+      "lineno": 339,
       "filename": "TheFlick.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
     },
@@ -65,7 +67,7 @@
     "description": "Images to flip",
     "memberof": "TheFlick.propTypes",
     "meta": {
-      "lineno": 342,
+      "lineno": 341,
       "filename": "TheFlick.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
     },
@@ -80,7 +82,7 @@
     "description": "Handle index change",
     "memberof": "TheFlick.propTypes",
     "meta": {
-      "lineno": 346,
+      "lineno": 345,
       "filename": "TheFlick.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
     },
@@ -95,7 +97,7 @@
     "description": "Close handler",
     "memberof": "TheFlick.propTypes",
     "meta": {
-      "lineno": 348,
+      "lineno": 347,
       "filename": "TheFlick.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
     },
@@ -110,7 +112,7 @@
     "description": "Shows the dialog",
     "memberof": "TheFlick.propTypes",
     "meta": {
-      "lineno": 350,
+      "lineno": 349,
       "filename": "TheFlick.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
     },
@@ -125,7 +127,7 @@
     "description": "Show spin",
     "memberof": "TheFlick.propTypes",
     "meta": {
-      "lineno": 352,
+      "lineno": 351,
       "filename": "TheFlick.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
     },

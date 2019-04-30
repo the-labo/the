@@ -5,6 +5,8 @@
     "name": "@the-/ui-root",
     "kind": "module",
     "description": "Root element of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiRoot",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

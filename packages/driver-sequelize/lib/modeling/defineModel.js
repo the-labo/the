@@ -1,5 +1,6 @@
 /**
  * Parse schema
+ * @memberOf module:@the-/driver-sequelize.modeling
  * @function defineModel
  * @param {Object}
  * @returns {Object}
@@ -12,7 +13,7 @@ const defineModelColumn = require('./defineModelColumn')
 const MetaColumnNames = require('../constants/MetaColumnNames')
 const parseAttributeName = require('../parsing/parseAttributeName')
 
-/** @lends defineModel */
+/** @lends module:@the-/driver-sequelize.modeling.defineModel */
 function defineModel(sequelize, resourceName, schema) {
   const attributes = {
     [MetaColumnNames.$$at]: {

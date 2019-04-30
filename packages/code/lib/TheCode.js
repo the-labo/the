@@ -1,6 +1,6 @@
 /**
- * @memberof module:@the-/code
  * @class TheCode
+ * @memberof module:@the-/code
  * @param {Object} [config={}] - Code config
  */
 'use strict'

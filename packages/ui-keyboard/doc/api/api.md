@@ -29,6 +29,7 @@
 ## @the-/ui-keyboard
 Keyboard component
 
+**Version**: 15.4.0  
 <a name="TheKeyboard"></a>
 
 ## TheKeyboard

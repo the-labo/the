@@ -5,6 +5,8 @@
     "name": "@the-/ui-copyboard",
     "kind": "module",
     "description": "Component for clip-to-copy",
+    "version": "15.4.0",
+    "typicalname": "uiCopyboard",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

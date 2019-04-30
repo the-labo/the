@@ -97,15 +97,19 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [TheMail](./doc/api/api.md#TheMail)
 ### function
-- [create(args)](./doc/api/api.md#create)
+- [default()](./doc/api/api.md#default)
 - [toLowerKeys()](./doc/api/api.md#toLowerKeys)
-- [sendMock()](./doc/api/api.md#sendMock)
-- [sendSendgrid()](./doc/api/api.md#sendSendgrid)
-- [sendSMTP()](./doc/api/api.md#sendSMTP)
-- [#send()](./doc/api/api.md#TheMail#send)
+- [#send()](./doc/api/api.md#module_@the-/mail.TheMail#send)
+- [.create(args)](./doc/api/api.md#module_@the-/mail.create)
+- [.sendMock()](./doc/api/api.md#module_@the-/mail.sending.sendMock)
+- [.sendSendgrid()](./doc/api/api.md#module_@the-/mail.sending.sendSendgrid)
+- [.sendSMTP()](./doc/api/api.md#module_@the-/mail.sending.sendSMTP)
+### class
+- [.TheMail](./doc/api/api.md#module_@the-/mail.TheMail)
+### namespace
+- [.helpers](./doc/api/api.md#module_@the-/mail.helpers)
+- [.sending](./doc/api/api.md#module_@the-/mail.sending)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -5,6 +5,8 @@
     "name": "@the-/ui-style",
     "kind": "module",
     "description": "Style of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiStyle",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

@@ -237,6 +237,8 @@
 ## @the-/mixin-scene
 Mixins for the-scene
 
+**Version**: 15.4.0  
+**License**: MIT  
 <a name="isReady"></a>
 
 ## isReady

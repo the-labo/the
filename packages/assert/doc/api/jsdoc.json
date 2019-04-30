@@ -226,7 +226,7 @@
       {
         "type": {
           "names": [
-            "TheAssert"
+            "module:@the-/assert.TheAssert"
           ]
         }
       }
@@ -261,7 +261,7 @@
       {
         "type": {
           "names": [
-            "TheAssert"
+            "module:@the-/assert.TheAssert.TheAssert"
           ]
         }
       }

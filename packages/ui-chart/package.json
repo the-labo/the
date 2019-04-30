@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "@the-/check": "^15.4.1",
-    "@the-/ui-style": "^15.2.0",
-    "@the-/util-ui": "^15.2.4",
+    "@the-/ui-style": "^15.4.0",
+    "@the-/util-ui": "^15.4.0",
     "chart.js": "^2.8.0",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"

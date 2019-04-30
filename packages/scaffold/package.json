@@ -44,7 +44,7 @@
   "repository": "the-labo/the",
   "scripts": {
     "build": "the-script-build",
-    "prepare": "../../misc/scripts/install_if_needed.sh;npm run build && ./misc/tmplify.js",
+    "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && ./misc/tmplify.js",
     "test": "the-script-test"
   }
 }

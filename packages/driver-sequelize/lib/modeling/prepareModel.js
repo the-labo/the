@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/driver-sequelize.modeling
  * @function prepareModel
  * @returns {Promise}
  */
@@ -7,7 +8,7 @@
 const defineModelColumn = require('./defineModelColumn')
 const parseAttributeName = require('../parsing/parseAttributeName')
 
-/** @lends prepareModel */
+/** @lends module:@the-/driver-sequelize.modeling.prepareModel */
 async function prepareModel(Model, Schema) {
   const {
     sequelize: { queryInterface },

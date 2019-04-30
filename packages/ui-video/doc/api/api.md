@@ -29,6 +29,7 @@
 ## @the-/ui-video
 Video for the-components
 
+**Version**: 15.4.0  
 <a name="TheVideo"></a>
 
 ## TheVideo

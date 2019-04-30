@@ -1,8 +1,9 @@
 /**
  * Create a TheSecret instance
+ * @memberOf module:@the-/secret
  * @function create
  * @param {...*} args
- * @returns {TheSecret}
+ * @returns {module:@the-/secret.TheSecret}
  */
 'use strict'
 

@@ -5,6 +5,8 @@
     "name": "@the-/ui-html",
     "kind": "module",
     "description": "Html of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiHtml",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",
@@ -35,7 +37,7 @@
     "description": "Style for TheHtml",
     "params": [],
     "meta": {
-      "lineno": 10,
+      "lineno": 9,
       "filename": "TheHtmlStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
     },
@@ -110,7 +112,7 @@
     "description": "Style options",
     "memberof": "TheHtmlStyle.propTypes",
     "meta": {
-      "lineno": 21,
+      "lineno": 20,
       "filename": "TheHtmlStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
     },

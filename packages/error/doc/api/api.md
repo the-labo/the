@@ -5,6 +5,8 @@
 ## @the-/error
 Error for the-framework
 
+**Version**: 15.4.0  
+**License**: MIT  
 
 * [@the-/error](#module_@the-/error)
     * [.TheConflictError](#module_@the-/error.TheConflictError) ⇐ <code>TheError</code>
@@ -34,7 +36,7 @@ Error for the-framework
 
 <a name="module_@the-/error.TheConflictError"></a>
 
-### @the-/error.TheConflictError ⇐ <code>TheError</code>
+### error.TheConflictError ⇐ <code>TheError</code>
 **Kind**: static class of [<code>@the-/error</code>](#module_@the-/error)  
 **Extends**: <code>TheError</code>  
 <a name="new_module_@the-/error.TheConflictError_new"></a>
@@ -44,7 +46,7 @@ Error With status 409
 
 <a name="module_@the-/error.TheError"></a>
 
-### @the-/error.TheError
+### error.TheError
 **Kind**: static class of [<code>@the-/error</code>](#module_@the-/error)  
 <a name="new_module_@the-/error.TheError_new"></a>
 
@@ -53,7 +55,7 @@ Basic error
 
 <a name="module_@the-/error.TheExpiredError"></a>
 
-### @the-/error.TheExpiredError ⇐ <code>TheError</code>
+### error.TheExpiredError ⇐ <code>TheError</code>
 **Kind**: static class of [<code>@the-/error</code>](#module_@the-/error)  
 **Extends**: <code>TheError</code>  
 <a name="new_module_@the-/error.TheExpiredError_new"></a>
@@ -63,7 +65,7 @@ Error With status 400
 
 <a name="module_@the-/error.TheForbiddenError"></a>
 
-### @the-/error.TheForbiddenError ⇐ <code>TheError</code>
+### error.TheForbiddenError ⇐ <code>TheError</code>
 **Kind**: static class of [<code>@the-/error</code>](#module_@the-/error)  
 **Extends**: <code>TheError</code>  
 <a name="new_module_@the-/error.TheForbiddenError_new"></a>
@@ -73,7 +75,7 @@ Error With status 403
 
 <a name="module_@the-/error.TheGoneError"></a>
 
-### @the-/error.TheGoneError ⇐ <code>TheError</code>
+### error.TheGoneError ⇐ <code>TheError</code>
 **Kind**: static class of [<code>@the-/error</code>](#module_@the-/error)  
 **Extends**: <code>TheError</code>  
 <a name="new_module_@the-/error.TheGoneError_new"></a>
@@ -83,7 +85,7 @@ Error With status 410
 
 <a name="module_@the-/error.TheInvalidParameterError"></a>
 
-### @the-/error.TheInvalidParameterError ⇐ <code>TheError</code>
+### error.TheInvalidParameterError ⇐ <code>TheError</code>
 **Kind**: static class of [<code>@the-/error</code>](#module_@the-/error)  
 **Extends**: <code>TheError</code>  
 <a name="new_module_@the-/error.TheInvalidParameterError_new"></a>
@@ -93,7 +95,7 @@ Error With status 400
 
 <a name="module_@the-/error.TheNotAcceptableError"></a>
 
-### @the-/error.TheNotAcceptableError ⇐ <code>TheError</code>
+### error.TheNotAcceptableError ⇐ <code>TheError</code>
 **Kind**: static class of [<code>@the-/error</code>](#module_@the-/error)  
 **Extends**: <code>TheError</code>  
 <a name="new_module_@the-/error.TheNotAcceptableError_new"></a>
@@ -103,7 +105,7 @@ Error With status 406
 
 <a name="module_@the-/error.TheNotFoundError"></a>
 
-### @the-/error.TheNotFoundError ⇐ <code>TheError</code>
+### error.TheNotFoundError ⇐ <code>TheError</code>
 **Kind**: static class of [<code>@the-/error</code>](#module_@the-/error)  
 **Extends**: <code>TheError</code>  
 <a name="new_module_@the-/error.TheNotFoundError_new"></a>
@@ -113,7 +115,7 @@ Error With status 404
 
 <a name="module_@the-/error.TheRequestTimeoutError"></a>
 
-### @the-/error.TheRequestTimeoutError ⇐ <code>TheError</code>
+### error.TheRequestTimeoutError ⇐ <code>TheError</code>
 **Kind**: static class of [<code>@the-/error</code>](#module_@the-/error)  
 **Extends**: <code>TheError</code>  
 <a name="new_module_@the-/error.TheRequestTimeoutError_new"></a>
@@ -123,7 +125,7 @@ Error With status 408
 
 <a name="module_@the-/error.TheServerRottenError"></a>
 
-### @the-/error.TheServerRottenError ⇐ <code>TheError</code>
+### error.TheServerRottenError ⇐ <code>TheError</code>
 **Kind**: static class of [<code>@the-/error</code>](#module_@the-/error)  
 **Extends**: <code>TheError</code>  
 <a name="new_module_@the-/error.TheServerRottenError_new"></a>
@@ -133,7 +135,7 @@ Error With status 500
 
 <a name="module_@the-/error.TheUnauthorizedError"></a>
 
-### @the-/error.TheUnauthorizedError ⇐ <code>TheError</code>
+### error.TheUnauthorizedError ⇐ <code>TheError</code>
 **Kind**: static class of [<code>@the-/error</code>](#module_@the-/error)  
 **Extends**: <code>TheError</code>  
 <a name="new_module_@the-/error.TheUnauthorizedError_new"></a>
@@ -143,7 +145,7 @@ Error With status 401
 
 <a name="module_@the-/error.create"></a>
 
-### @the-/error.create(...args) ⇒ <code>TheError</code>
+### error.create(...args) ⇒ <code>TheError</code>
 Create a TheError instance
 
 **Kind**: static method of [<code>@the-/error</code>](#module_@the-/error)  
@@ -154,7 +156,7 @@ Create a TheError instance
 
 <a name="module_@the-/error.define"></a>
 
-### @the-/error.define() ⇒ <code>function</code>
+### error.define() ⇒ <code>function</code>
 Define an error class
 
 **Kind**: static method of [<code>@the-/error</code>](#module_@the-/error)  

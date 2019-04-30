@@ -5,6 +5,8 @@
     "name": "@the-/ui-chat",
     "kind": "module",
     "description": "Chat UI of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiChat",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

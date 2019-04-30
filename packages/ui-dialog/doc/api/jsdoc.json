@@ -5,6 +5,8 @@
     "name": "@the-/ui-dialog",
     "kind": "module",
     "description": "Dialog for the-components",
+    "version": "15.4.0",
+    "typicalname": "uiDialog",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

@@ -36,6 +36,8 @@ Default exports
 ## @the-/polyfill
 Polyfill of the-frameworks
 
+**Version**: 15.4.0  
+**License**: MIT  
 <a name="ThePolyfill"></a>
 
 ## ThePolyfill

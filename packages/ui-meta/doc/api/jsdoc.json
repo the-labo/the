@@ -5,6 +5,8 @@
     "name": "@the-/ui-meta",
     "kind": "module",
     "description": "Dynamic meta attribute injector for the-components",
+    "version": "15.4.0",
+    "typicalname": "uiMeta",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

@@ -89,10 +89,11 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### class
-- [TheRun](./doc/api/api.md#TheRun)
+- [.TheRun](./doc/api/api.md#module_@the-/run.TheRun)
 ### function
-- [create(args)](./doc/api/api.md#create)
-- [run(filename,options)](./doc/api/api.md#run)
+- [.create(args)](./doc/api/api.md#module_@the-/run.create)
+- [.default()](./doc/api/api.md#module_@the-/run.default)
+- [.run(filename,options)](./doc/api/api.md#module_@the-/run.run)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

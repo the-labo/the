@@ -5,6 +5,8 @@
     "name": "@the-/ui-cam",
     "kind": "module",
     "description": "Embed camera component",
+    "version": "15.4.0",
+    "typicalname": "uiCam",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

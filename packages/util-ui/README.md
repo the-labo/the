@@ -71,20 +71,26 @@ Usage
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/util-ui](./doc/api/api.md#module_@the-/util-ui)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### function
+- [asHOC()](./doc/api/api.md#asHOC)
+- [changedProps(prevProps,props)](./doc/api/api.md#changedProps)
+- [colorAlpha(color,alpha)](./doc/api/api.md#colorAlpha)
+- [eventHandlersFor(props,options)](./doc/api/api.md#eventHandlersFor)
+- [htmlAttributesFor(props,options)](./doc/api/api.md#htmlAttributesFor)
+- [isKeyCode(code,name)](./doc/api/api.md#isKeyCode)
+- [isServerSide()](./doc/api/api.md#isServerSide)
+- [isVideoSrc(src)](./doc/api/api.md#isVideoSrc)
+- [newId(options)](./doc/api/api.md#newId)
+- [readFileAsDataURL()](./doc/api/api.md#readFileAsDataURL)
+- [toggleBodyClass(className,state&#x3D;)](./doc/api/api.md#toggleBodyClass)
+- [.asStyleData(scopeSelector,data)](./doc/api/api.md#module_util-component.asStyleData)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

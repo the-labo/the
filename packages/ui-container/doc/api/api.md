@@ -29,6 +29,7 @@
 ## @the-/ui-container
 Container of the-components
 
+**Version**: 15.4.0  
 <a name="TheContainer"></a>
 
 ## TheContainer

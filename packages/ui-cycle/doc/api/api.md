@@ -21,6 +21,7 @@
 ## @the-/ui-cycle
 Component with life cycle
 
+**Version**: 15.4.0  
 <a name="TheCycle"></a>
 
 ## TheCycle

@@ -5,6 +5,8 @@
     "name": "@the-/ui-main",
     "kind": "module",
     "description": "Main for the-components",
+    "version": "15.4.0",
+    "typicalname": "uiMain",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",
@@ -35,7 +37,7 @@
     "description": "Style for TheMain",
     "params": [],
     "meta": {
-      "lineno": 11,
+      "lineno": 10,
       "filename": "TheMainStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-main/lib"
     },
@@ -65,7 +67,7 @@
     "description": "Style options",
     "memberof": "TheMainStyle.propTypes",
     "meta": {
-      "lineno": 22,
+      "lineno": 21,
       "filename": "TheMainStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-main/lib"
     },

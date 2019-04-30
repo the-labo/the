@@ -7,7 +7,10 @@
 'use strict'
 
 const { parse } = require('@the-/ast')
-const { commentModuleOnProgramNode } = require('../ast/nodes')
+const {
+  commentModuleOnProgramNode,
+  sortAnnotationsOnCommentNode,
+} = require('../ast/nodes')
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 
@@ -20,7 +23,7 @@ async function processJSDoc(content, options = {}) {
       (CommentNode) => CommentNode.value[0] === '*',
     )
 
-    const { get, replace } = contentAccess(content)
+    const { get, replace, swap } = contentAccess(content)
 
     {
       const converted = await commentModuleOnProgramNode(parsed.program, {
@@ -31,6 +34,13 @@ async function processJSDoc(content, options = {}) {
       })
       if (converted) {
         return converted
+      }
+
+      for (const comment of JSDocComments) {
+        const converted = await sortAnnotationsOnCommentNode(comment, { swap })
+        if (converted) {
+          return converted
+        }
       }
     }
     return content

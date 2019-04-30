@@ -5,6 +5,8 @@
     "name": "@the-/ui-spin",
     "kind": "module",
     "description": "Spin of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiSpin",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

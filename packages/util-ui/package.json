@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/const-ui": "^15.2.0",
+    "@the-/const-ui": "^15.4.0",
     "acolor": "^3.0.0",
     "argx": "^4.0.0",
     "bwindow": "^2.0.3",

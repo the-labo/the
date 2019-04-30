@@ -5,6 +5,8 @@
     "name": "@the-/ui-paint",
     "kind": "module",
     "description": "Hand write painting",
+    "version": "15.4.0",
+    "typicalname": "uiPaint",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

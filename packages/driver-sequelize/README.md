@@ -83,10 +83,7 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [TheDriverSequelize](./doc/api/api.md#TheDriverSequelize)
 ### function
-- [create(args)](./doc/api/api.md#create)
 - [sequelizeMix()](./doc/api/api.md#sequelizeMix)
 - [defineModel()](./doc/api/api.md#defineModel)
 - [defineModelColumn(propertyName,def)](./doc/api/api.md#defineModelColumn)
@@ -94,8 +91,21 @@ tryExample().catch((err) => console.error(err))
 - [parseAttributeName()](./doc/api/api.md#parseAttributeName)
 - [parseFilter()](./doc/api/api.md#parseFilter)
 - [parseSort()](./doc/api/api.md#parseSort)
-- [#define(resourceName,schema)](./doc/api/api.md#TheDriverSequelize#define)
-- [#untilReady()](./doc/api/api.md#TheDriverSequelize#untilReady)
+- [#define(resourceName,schema)](./doc/api/api.md#@the-/driver-sequelize.TheDriverSequelize#define)
+- [#untilReady()](./doc/api/api.md#@the-/driver-sequelize.TheDriverSequelize#untilReady)
+- [.create(args)](./doc/api/api.md#@the-/driver-sequelize.create)
+- [.default()](./doc/api/api.md#@the-/driver-sequelize.default)
+- [.convertInbound()](./doc/api/api.md#module_@the-/driver-sequelize.converters.convertInbound)
+- [.convertOutbound()](./doc/api/api.md#module_@the-/driver-sequelize.converters.convertOutbound)
+### class
+- [.TheDriverSequelize](./doc/api/api.md#@the-/driver-sequelize.TheDriverSequelize)
+### namespace
+- [.constants](./doc/api/api.md#module_@the-/driver-sequelize.constants)
+- [.converters](./doc/api/api.md#module_@the-/driver-sequelize.converters)
+- [.helpers](./doc/api/api.md#module_@the-/driver-sequelize.helpers)
+### enum
+- [.MetaColumnNames](./doc/api/api.md#module_@the-/driver-sequelize.constants.MetaColumnNames)
+- [.MetaColumnNamesReversed](./doc/api/api.md#module_@the-/driver-sequelize.constants.MetaColumnNamesReversed)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

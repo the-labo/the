@@ -186,11 +186,6 @@
     "scope": "static",
     "description": "Supported props",
     "memberof": "module:@the-/const-ui",
-    "type": {
-      "names": [
-        "string"
-      ]
-    },
     "meta": {
       "lineno": 1,
       "filename": "SupportedProps.js",

@@ -1,6 +1,6 @@
 /**
  * Handy tools
- * @module the-secret/tools
+ * @module @the-/secret/tools
  */
 'use strict'
 

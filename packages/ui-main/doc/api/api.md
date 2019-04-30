@@ -29,6 +29,7 @@
 ## @the-/ui-main
 Main for the-components
 
+**Version**: 15.4.0  
 <a name="TheMain"></a>
 
 ## TheMain

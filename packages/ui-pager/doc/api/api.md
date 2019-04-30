@@ -29,6 +29,7 @@
 ## @the-/ui-pager
 Pager of the-components
 
+**Version**: 15.4.0  
 <a name="ThePager"></a>
 
 ## ThePager

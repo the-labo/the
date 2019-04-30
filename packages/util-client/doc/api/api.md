@@ -21,6 +21,8 @@
 ## @the-/util-client
 Utility for client side
 
+**Version**: 15.4.0  
+**License**: MIT  
 <a name="readFile"></a>
 
 ## readFile(file) ⇒ <code>Promise.&lt;ArrayBuffer&gt;</code>

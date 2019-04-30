@@ -5,6 +5,8 @@
     "name": "@the-/ui-condition",
     "kind": "module",
     "description": "Conditional renderer for the-components",
+    "version": "15.4.0",
+    "typicalname": "uiCondition",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

@@ -5,6 +5,9 @@
     "name": "@the-/util-color",
     "kind": "module",
     "description": "Color utility for the-framework",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "utilColor",
     "meta": {
       "lineno": 2,
       "filename": "index.js",

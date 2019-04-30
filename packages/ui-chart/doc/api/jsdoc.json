@@ -5,6 +5,8 @@
     "name": "@the-/ui-chart",
     "kind": "module",
     "description": "Chart for the-components",
+    "version": "15.4.0",
+    "typicalname": "uiChart",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

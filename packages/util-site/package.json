@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@the-/check": "^15.2.6",
-    "@the-/error": "^15.2.0",
+    "@the-/error": "^15.4.0",
     "@the-/seat": "^15.2.0",
     "bwindow": "^2.0.3",
     "clay-resource-ref": "^2.0.8",

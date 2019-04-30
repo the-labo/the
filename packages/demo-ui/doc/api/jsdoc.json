@@ -5,6 +5,8 @@
     "name": "@the-/demo-ui",
     "kind": "module",
     "description": "Demo of the-components",
+    "version": "15.4.0",
+    "typicalname": "demoUi",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

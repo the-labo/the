@@ -51,6 +51,8 @@
 ## @the-/util-ui
 Utility for the-components
 
+**Version**: 15.4.0  
+**License**: MIT  
 <a name="asHOC"></a>
 
 ## asHOC()

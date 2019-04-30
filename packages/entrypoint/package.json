@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@the-/check": "^15.4.1",
-    "@the-/ui-router": "^15.2.0",
-    "@the-/url": "^15.2.0",
+    "@the-/ui-router": "^15.4.0",
+    "@the-/url": "^15.4.0",
     "@the-/window": "^15.4.1",
     "history": "^4.9.0"
   },

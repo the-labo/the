@@ -1,4 +1,5 @@
 /**
+ * @memberOf @the-/driver-sequelize
  * @class TheDriverSequelize
  */
 'use strict'
@@ -21,7 +22,7 @@ const TheDriverSequelizeBase = [m.sequelizeMix].reduce(
   Driver,
 )
 
-/** @lends TheDriverSequelize */
+/** @lends @the-/driver-sequelize.TheDriverSequelize */
 class TheDriverSequelize extends TheDriverSequelizeBase {
   constructor(config = {}) {
     super()

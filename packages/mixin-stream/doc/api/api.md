@@ -23,6 +23,8 @@
 ## @the-/mixin-stream
 Mixins for stream
 
+**Version**: 15.4.0  
+**License**: MIT  
 <a name="compose"></a>
 
 ## compose(...mixins) ⇒ <code>function</code>

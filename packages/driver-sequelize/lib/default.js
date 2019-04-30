@@ -1,6 +1,7 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link @the-/driver-sequelize}
+ * @memberOf @the-/driver-sequelize
+ * @function default
  */
 'use strict'
 

@@ -5,6 +5,8 @@
     "name": "@the-/ui-menu",
     "kind": "module",
     "description": "Menu of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiMenu",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

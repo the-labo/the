@@ -95,11 +95,12 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [TheS3](./doc/api/api.md#TheS3)
 ### function
-- [create(args)](./doc/api/api.md#create)
-- [#upload(src,options)](./doc/api/api.md#TheS3#upload)
+- [default()](./doc/api/api.md#default)
+- [#upload(src,options)](./doc/api/api.md#module_@the-/s3.TheS3#upload)
+- [.create(args)](./doc/api/api.md#module_@the-/s3.create)
+### class
+- [.TheS3](./doc/api/api.md#module_@the-/s3.TheS3)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

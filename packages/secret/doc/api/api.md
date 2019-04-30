@@ -6,9 +6,6 @@
 <dt><a href="#module_@the-/secret">@the-/secret</a></dt>
 <dd><p>Secret store for the-frameworks</p>
 </dd>
-<dt><a href="#module_mixins">mixins</a></dt>
-<dd><p>Mix functions</p>
-</dd>
 </dl>
 
 ## Classes
@@ -43,11 +40,8 @@
 ## @the-/secret
 Secret store for the-frameworks
 
-<a name="module_mixins"></a>
-
-## mixins
-Mix functions
-
+**Version**: 15.4.0  
+**License**: MIT  
 <a name="TheSecret"></a>
 
 ## TheSecret ⇐ [<code>CryptoMixed</code>](#CryptoMixed)

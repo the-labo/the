@@ -5,6 +5,8 @@
     "name": "@the-/ui-hamburger",
     "kind": "module",
     "description": "Hamburger menu for the-components",
+    "version": "15.4.0",
+    "typicalname": "uiHamburger",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

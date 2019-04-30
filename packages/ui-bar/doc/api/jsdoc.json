@@ -5,6 +5,8 @@
     "name": "@the-/ui-bar",
     "kind": "module",
     "description": "Bar of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiBar",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

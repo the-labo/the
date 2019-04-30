@@ -104,15 +104,16 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [TheMetrics](./doc/api/api.md#TheMetrics)
-- [Counter](./doc/api/api.md#Counter)
-- [MethodCallCounter](./doc/api/api.md#MethodCallCounter)
 ### function
-- [create(args)](./doc/api/api.md#create)
-- [#bindMethodCallCounter(name,config)](./doc/api/api.md#TheMetrics#bindMethodCallCounter)
-- [#flush()](./doc/api/api.md#TheMetrics#flush)
-- [#start()](./doc/api/api.md#TheMetrics#start)
+- [#bindMethodCallCounter(name,config)](./doc/api/api.md#module_@the-/metrics.TheMetrics#bindMethodCallCounter)
+- [#flush()](./doc/api/api.md#module_@the-/metrics.TheMetrics#flush)
+- [#start()](./doc/api/api.md#module_@the-/metrics.TheMetrics#start)
+- [.create(args)](./doc/api/api.md#module_@the-/metrics.create)
+- [.default()](./doc/api/api.md#module_@the-/metrics.default)
+### class
+- [.TheMetrics](./doc/api/api.md#module_@the-/metrics.TheMetrics)
+- [.Counter](./doc/api/api.md#module_@the-/metrics.counters.Counter)
+- [.MethodCallCounter](./doc/api/api.md#module_@the-/metrics.counters.MethodCallCounter)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

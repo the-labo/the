@@ -5,7 +5,11 @@ const { dir } = require('@the-/templates')
 module.exports = dir({
   cjs: true,
   dirname: __dirname,
-  name: 'constant variables',
+  annotations: {
+    memberOf: 'module:@the-/driver-sequelize',
+    descriptions: 'constant variables',
+    namespace: 'constants'
+  },
 })
 
 if (!module.parent) {

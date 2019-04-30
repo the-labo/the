@@ -5,6 +5,8 @@
 ## @the-/url
 URL utility for the-framework
 
+**Version**: 15.4.0  
+**License**: MIT  
 
 * [@the-/url](#module_@the-/url)
     * [.addQuery(urlString, query)](#module_@the-/url.addQuery) ⇒ <code>string</code>
@@ -12,7 +14,7 @@ URL utility for the-framework
 
 <a name="module_@the-/url.addQuery"></a>
 
-### @the-/url.addQuery(urlString, query) ⇒ <code>string</code>
+### url.addQuery(urlString, query) ⇒ <code>string</code>
 Add query to url string
 
 **Kind**: static method of [<code>@the-/url</code>](#module_@the-/url)  
@@ -25,7 +27,7 @@ Add query to url string
 
 <a name="module_@the-/url.formatUrl"></a>
 
-### @the-/url.formatUrl(urlString, [params]) ⇒ <code>string</code>
+### url.formatUrl(urlString, [params]) ⇒ <code>string</code>
 Format urls
 
 **Kind**: static method of [<code>@the-/url</code>](#module_@the-/url)  

@@ -5,6 +5,8 @@
     "name": "@the-/ui-keyboard",
     "kind": "module",
     "description": "Keyboard component",
+    "version": "15.4.0",
+    "typicalname": "uiKeyboard",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

@@ -18,7 +18,7 @@
   "dependencies": {
     "@the-/check": "^15.4.1",
     "@the-/media": "^15.4.1",
-    "@the-/pack": "^15.2.0",
+    "@the-/pack": "^15.4.0",
     "@the-/window": "^15.4.1",
     "argx": "^3.0.2",
     "asobj": "^3.0.1",
@@ -29,7 +29,7 @@
     "wrtc": "^0.3.7"
   },
   "devDependencies": {
-    "@the-/rtc": "^15.2.4",
+    "@the-/rtc": "^15.4.0",
     "aport": "^2.0.0",
     "asleep": "^1.0.3",
     "webpack-cli": "^3.3.1",

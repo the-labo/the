@@ -1,6 +1,7 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link module:@the-/polyfill.create}
+ * @memberOf module:@the-/polyfill
+ * @function default
  */
 'use strict'
 

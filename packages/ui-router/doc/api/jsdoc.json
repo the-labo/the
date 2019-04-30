@@ -5,6 +5,8 @@
     "name": "@the-/ui-router",
     "kind": "module",
     "description": "Router of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiRouter",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

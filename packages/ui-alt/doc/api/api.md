@@ -29,6 +29,7 @@
 ## @the-/ui-alt
 Alt text for the-components
 
+**Version**: 15.4.0  
 <a name="TheAlt"></a>
 
 ## TheAlt

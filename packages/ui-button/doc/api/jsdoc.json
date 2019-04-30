@@ -5,6 +5,8 @@
     "name": "@the-/ui-button",
     "kind": "module",
     "description": "Button of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiButton",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

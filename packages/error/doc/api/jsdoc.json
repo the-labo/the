@@ -5,6 +5,9 @@
     "name": "@the-/error",
     "kind": "module",
     "description": "Error for the-framework",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "error",
     "meta": {
       "lineno": 2,
       "filename": "index.js",

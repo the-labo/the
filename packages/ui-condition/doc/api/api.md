@@ -29,6 +29,7 @@
 ## @the-/ui-condition
 Conditional renderer for the-components
 
+**Version**: 15.4.0  
 <a name="TheCondition"></a>
 
 ## TheCondition

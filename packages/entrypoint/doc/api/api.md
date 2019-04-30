@@ -42,6 +42,8 @@
 ## @the-/entrypoint
 Browser entrypoint for the-framework
 
+**Version**: 15.4.0  
+**License**: MIT  
 <a name="mount"></a>
 
 ## mount(element, containerId, [options]) ⇒ <code>Promise</code>

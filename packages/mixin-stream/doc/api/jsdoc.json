@@ -5,6 +5,9 @@
     "name": "@the-/mixin-stream",
     "kind": "module",
     "description": "Mixins for stream",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "mixinStream",
     "meta": {
       "lineno": 2,
       "filename": "index.js",

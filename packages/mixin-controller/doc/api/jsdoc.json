@@ -5,25 +5,15 @@
     "name": "@the-/mixin-controller",
     "kind": "module",
     "description": "Mixins for the-controller",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "mixinController",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
     },
     "order": 1
-  },
-  {
-    "id": "module:helpers",
-    "longname": "module:helpers",
-    "name": "helpers",
-    "kind": "module",
-    "description": "controller-mixin helpers",
-    "meta": {
-      "lineno": 2,
-      "filename": "index.js",
-      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib/helpers"
-    },
-    "order": 9
   },
   {
     "id": "compose",
@@ -189,7 +179,7 @@
       "filename": "instanceMethodNamesFor.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib/helpers"
     },
-    "order": 10
+    "order": 9
   },
   {
     "id": "omitLongString",
@@ -202,6 +192,6 @@
       "filename": "omitLongString.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib/helpers"
     },
-    "order": 11
+    "order": 10
   }
 ]

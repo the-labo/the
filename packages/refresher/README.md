@@ -97,14 +97,15 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [TheRefresher](./doc/api/api.md#TheRefresher)
 ### function
-- [create(args)](./doc/api/api.md#create)
-- [#has(target)](./doc/api/api.md#TheRefresher#has)
-- [#request()](./doc/api/api.md#TheRefresher#request)
-- [#start()](./doc/api/api.md#TheRefresher#start)
-- [#stop()](./doc/api/api.md#TheRefresher#stop)
+- [#has(target)](./doc/api/api.md#module_@the-/refresher.TheRefresher#has)
+- [#request()](./doc/api/api.md#module_@the-/refresher.TheRefresher#request)
+- [#start()](./doc/api/api.md#module_@the-/refresher.TheRefresher#start)
+- [#stop()](./doc/api/api.md#module_@the-/refresher.TheRefresher#stop)
+- [.create(args)](./doc/api/api.md#module_@the-/refresher.create)
+- [.default()](./doc/api/api.md#module_@the-/refresher.default)
+### class
+- [.TheRefresher](./doc/api/api.md#module_@the-/refresher.TheRefresher)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -5,6 +5,8 @@
     "name": "@the-/ui-icon",
     "kind": "module",
     "description": "Icon of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiIcon",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

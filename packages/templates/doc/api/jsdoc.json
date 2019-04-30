@@ -5,7 +5,7 @@
     "name": "@the-/templates",
     "kind": "module",
     "description": "Templates for the-projects",
-    "version": "15.4.4",
+    "version": "15.4.5",
     "license": "MIT",
     "typicalname": "templates",
     "meta": {

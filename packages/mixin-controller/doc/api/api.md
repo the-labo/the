@@ -6,9 +6,6 @@
 <dt><a href="#module_@the-/mixin-controller">@the-/mixin-controller</a></dt>
 <dd><p>Mixins for the-controller</p>
 </dd>
-<dt><a href="#module_helpers">helpers</a></dt>
-<dd><p>controller-mixin helpers</p>
-</dd>
 </dl>
 
 ## Functions
@@ -48,11 +45,8 @@
 ## @the-/mixin-controller
 Mixins for the-controller
 
-<a name="module_helpers"></a>
-
-## helpers
-controller-mixin helpers
-
+**Version**: 15.4.0  
+**License**: MIT  
 <a name="compose"></a>
 
 ## compose(...mixins) ⇒ <code>function</code>

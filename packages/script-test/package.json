@@ -39,7 +39,7 @@
   "scripts": {
     "build": "the-script-build",
     "doc": "the-script-doc",
-    "prepare": "../../misc/scripts/install_if_needed.sh",
+    "prepare": "../../misc/scripts/pkgSharedInstall.sh",
     "test": "./bin/the-script-test"
   }
 }

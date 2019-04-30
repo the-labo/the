@@ -5,6 +5,8 @@
     "name": "@the-/ui-link",
     "kind": "module",
     "description": "Link of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiLink",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

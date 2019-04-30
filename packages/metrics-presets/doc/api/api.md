@@ -21,6 +21,8 @@
 ## @the-/metrics-presets
 Preset of the-metrics
 
+**Version**: 15.4.0  
+**License**: MIT  
 <a name="RenderingCountMetrics"></a>
 
 ## RenderingCountMetrics(Components, [options])

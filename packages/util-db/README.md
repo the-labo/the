@@ -67,11 +67,7 @@ Usage
 ```javascript
 'use strict'
 
-const {TheDbUtil} = require('the-db-util')
-
-async function tryExample () {
-
-}
+async function tryExample() {}
 
 tryExample().catch((err) => console.error(err))
 
@@ -80,19 +76,16 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### function
+- [evalScript()](./doc/api/api.md#evalScript)
+- [toLowerKeys(obj)](./doc/api/api.md#toLowerKeys)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

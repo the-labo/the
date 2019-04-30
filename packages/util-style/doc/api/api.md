@@ -21,6 +21,8 @@
 ## @the-/util-style
 Utility for style
 
+**Version**: 15.4.0  
+**License**: MIT  
 <a name="styleString"></a>
 
 ## styleString(selector, style, [atRule]) ⇒ <code>Object</code>

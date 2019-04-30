@@ -5,6 +5,8 @@
     "name": "@the-/ui-tab",
     "kind": "module",
     "description": "Tab for the-components",
+    "version": "15.4.0",
+    "typicalname": "uiTab",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",
@@ -50,7 +52,7 @@
     "description": "Active tab index",
     "memberof": "TheTab.propTypes",
     "meta": {
-      "lineno": 386,
+      "lineno": 384,
       "filename": "TheTab.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
     },
@@ -65,7 +67,7 @@
     "description": "Tab buttons",
     "memberof": "TheTab.propTypes",
     "meta": {
-      "lineno": 388,
+      "lineno": 386,
       "filename": "TheTab.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
     },
@@ -80,7 +82,7 @@
     "description": "Disable touch action",
     "memberof": "TheTab.propTypes",
     "meta": {
-      "lineno": 390,
+      "lineno": 388,
       "filename": "TheTab.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
     },
@@ -95,7 +97,7 @@
     "description": "Change handler",
     "memberof": "TheTab.propTypes",
     "meta": {
-      "lineno": 392,
+      "lineno": 390,
       "filename": "TheTab.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
     },

@@ -1,5 +1,6 @@
 /**
  * Get color with alpha
+ * @memberOf module:@the-/util-color
  * @function colorWithAlpha
  * @param {string} color
  * @param {number} alpha
@@ -9,7 +10,7 @@
 
 const { alpha: withAlpha } = require('acolor')
 
-/** @lends colorWithAlpha */
+/** @lends module:@the-/util-color.colorWithAlpha */
 function colorWithAlpha(color, alpha) {
   if (!color) {
     return null

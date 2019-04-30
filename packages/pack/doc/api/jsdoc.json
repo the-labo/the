@@ -5,6 +5,9 @@
     "name": "@the-/pack",
     "kind": "module",
     "description": "Message pack wrapper for the-components",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "pack",
     "meta": {
       "lineno": 2,
       "filename": "index.js",

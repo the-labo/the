@@ -74,6 +74,8 @@
 ## @the-/util-site
 Utility for site
 
+**Version**: 15.4.0  
+**License**: MIT  
 <a name="appendQueryToSearch"></a>
 
 ## appendQueryToSearch(query)

@@ -71,18 +71,6 @@ Usage
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/ui-route](./doc/api/api.md#module_@the-/ui-route)
-- [the-route](./doc/api/api.md#module_the-route)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
@@ -104,7 +92,9 @@ Links
 ------
 
 + [THE Labo][the_labo_url]
++ [React][react_url]
 
 [the_labo_url]: https://github.com/the-labo
+[react_url]: https://reactjs.org/
 
 <!-- Links End -->

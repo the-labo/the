@@ -116,16 +116,15 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [TheQueue](./doc/api/api.md#TheQueue)
 ### function
-- [#push(task)](./doc/api/api.md#TheQueue#push)
-- [#start()](./doc/api/api.md#TheQueue#start)
-- [#stop()](./doc/api/api.md#TheQueue#stop)
-- [#wait(options)](./doc/api/api.md#TheQueue#wait)
+- [#push(task)](./doc/api/api.md#module_@the-/queue.TheQueue#push)
+- [#start()](./doc/api/api.md#module_@the-/queue.TheQueue#start)
+- [#stop()](./doc/api/api.md#module_@the-/queue.TheQueue#stop)
+- [#wait(options)](./doc/api/api.md#module_@the-/queue.TheQueue#wait)
 - [.create(args)](./doc/api/api.md#module_@the-/queue.create)
-### namespace
-- [.default](./doc/api/api.md#module_@the-/queue.default)
+- [.default()](./doc/api/api.md#module_@the-/queue.default)
+### class
+- [.TheQueue](./doc/api/api.md#module_@the-/queue.TheQueue)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

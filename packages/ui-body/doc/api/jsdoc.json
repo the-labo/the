@@ -5,6 +5,8 @@
     "name": "@the-/ui-body",
     "kind": "module",
     "description": "Body of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiBody",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

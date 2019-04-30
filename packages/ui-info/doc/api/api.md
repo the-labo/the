@@ -29,6 +29,7 @@
 ## @the-/ui-info
 Info of the-component
 
+**Version**: 15.4.0  
 <a name="TheInfo"></a>
 
 ## TheInfo

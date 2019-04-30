@@ -11,9 +11,9 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/ui-style": "^15.2.0",
+    "@the-/ui-style": "^15.4.0",
     "@the-/util-component": "^15.1.4",
-    "@the-/util-ui": "^15.2.4",
+    "@the-/util-ui": "^15.4.0",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
@@ -40,11 +40,9 @@
   },
   "repository": "the-labo/the",
   "scripts": {
-    "build": "the-script-build",
-    "doc": "the-script-doc",
-    "prepare": "../../misc/scripts/install_if_needed.sh;the-script-build && the-script-doc",
-    "share": "the-script-share",
-    "test": "the-script-test",
-    "watch": "the-script-build -w"
+    "build": "../../misc/scripts/pkgBuild.js",
+    "doc": "../../misc/scripts/pkgDoc.js",
+    "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
+    "test": "../../misc/scripts/pkgTest.js"
   }
 }

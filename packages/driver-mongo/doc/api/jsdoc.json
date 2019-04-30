@@ -5,24 +5,15 @@
     "name": "@the-/driver-mongo",
     "kind": "module",
     "description": "Mongo driver for the-db",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "driverMongo",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib"
     },
     "order": 1
-  },
-  {
-    "id": "module:mixins",
-    "longname": "module:mixins",
-    "name": "mixins",
-    "kind": "module",
-    "meta": {
-      "lineno": 2,
-      "filename": "index.js",
-      "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib/mixins"
-    },
-    "order": 4
   },
   {
     "id": "MongoDriver()",
@@ -96,6 +87,6 @@
       "filename": "mongoMix.js",
       "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib/mixins"
     },
-    "order": 5
+    "order": 4
   }
 ]

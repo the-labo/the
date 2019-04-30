@@ -1,3 +1,7 @@
+/**
+ * @memberOf module:@the-/polyfill
+ * @namespace helpers
+ */
 'use strict'
 
 const { get } = require('bwindow')
@@ -28,6 +32,7 @@ const withWindow = (callback) => {
   callback(window)
 }
 
+/** @lends module:@the-/polyfill.helpers */
 module.exports = {
   hasBabelPolyfill,
   withDocument,

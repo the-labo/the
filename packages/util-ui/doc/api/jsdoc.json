@@ -5,6 +5,9 @@
     "name": "@the-/util-ui",
     "kind": "module",
     "description": "Utility for the-components",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "utilUi",
     "meta": {
       "lineno": 2,
       "filename": "index.js",

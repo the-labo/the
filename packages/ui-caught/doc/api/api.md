@@ -29,6 +29,7 @@
 ## @the-/ui-caught
 Component to show caught errors
 
+**Version**: 15.4.0  
 <a name="TheCaught"></a>
 
 ## TheCaught

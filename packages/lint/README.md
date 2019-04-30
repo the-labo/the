@@ -108,21 +108,25 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [TheLint](./doc/api/api.md#TheLint)
-- [.LintCache](./doc/api/api.md#module_the-code/lib/helpers.LintCache)
 ### function
-- [create(args)](./doc/api/api.md#create)
-- [callRule(config,keypathArguments)](./doc/api/api.md#callRule)
-- [contentRule(config)](./doc/api/api.md#contentRule)
-- [decorateRule(config)](./doc/api/api.md#decorateRule)
-- [depsRule(config)](./doc/api/api.md#depsRule)
-- [filenameRule(config)](./doc/api/api.md#filenameRule)
-- [moduleRule(config)](./doc/api/api.md#moduleRule)
-- [propRule(config)](./doc/api/api.md#propRule)
-- [usageRule(config)](./doc/api/api.md#usageRule)
-- [#add(pattern,checker)](./doc/api/api.md#TheLint#add)
-- [#run()](./doc/api/api.md#TheLint#run)
+- [default()](./doc/api/api.md#default)
+- [#add(pattern,checker)](./doc/api/api.md#module_@the-/lint.TheLint#add)
+- [#run()](./doc/api/api.md#module_@the-/lint.TheLint#run)
+- [.create(args)](./doc/api/api.md#module_@the-/lint.create)
+- [.callRule(config,keypathArguments)](./doc/api/api.md#module_@the-/lint.rules.callRule)
+- [.contentRule(config)](./doc/api/api.md#module_@the-/lint.rules.contentRule)
+- [.decorateRule(config)](./doc/api/api.md#module_@the-/lint.rules.decorateRule)
+- [.depsRule(config)](./doc/api/api.md#module_@the-/lint.rules.depsRule)
+- [.filenameRule(config)](./doc/api/api.md#module_@the-/lint.rules.filenameRule)
+- [.moduleRule(config)](./doc/api/api.md#module_@the-/lint.rules.moduleRule)
+- [.propRule(config)](./doc/api/api.md#module_@the-/lint.rules.propRule)
+- [.usageRule(config)](./doc/api/api.md#module_@the-/lint.rules.usageRule)
+### class
+- [.TheLint](./doc/api/api.md#module_@the-/lint.TheLint)
+- [.LintCache](./doc/api/api.md#module_@the-/lint.helpers.LintCache)
+### namespace
+- [.helpers](./doc/api/api.md#module_@the-/lint.helpers)
+- [.rules](./doc/api/api.md#module_@the-/lint.rules)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

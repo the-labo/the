@@ -30,6 +30,8 @@
 ## @the-/util-array
 Array utility of the-framework
 
+**Version**: 15.4.0  
+**License**: MIT  
 <a name="keyPathMap"></a>
 
 ## keyPathMap(keyPath, [options]) ⇒ <code>function</code>

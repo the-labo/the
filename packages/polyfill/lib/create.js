@@ -1,5 +1,6 @@
 /**
  * Create a ThePolyfill instance
+ * @memberOf module:@the-/polyfill
  * @function create
  * @param {...*} args
  * @returns {ThePolyfill}
@@ -8,7 +9,7 @@
 
 const ThePolyfill = require('./ThePolyfill')
 
-/** @lends create */
+/** @lends module:@the-/polyfill.create */
 function create(...args) {
   return new ThePolyfill(...args)
 }

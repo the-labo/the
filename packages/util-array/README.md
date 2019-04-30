@@ -86,20 +86,18 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/util-array](./doc/api/api.md#module_@the-/util-array)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### function
+- [keyPathMap(keyPath,options)](./doc/api/api.md#keyPathMap)
+- [randomFind()](./doc/api/api.md#randomFind)
+- [shuffleSort()](./doc/api/api.md#shuffleSort)
+- [uniqueFilter(options)](./doc/api/api.md#uniqueFilter)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

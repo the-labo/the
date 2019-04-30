@@ -5,6 +5,8 @@
     "name": "@the-/ui-signature",
     "kind": "module",
     "description": "Signature pad of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiSignature",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

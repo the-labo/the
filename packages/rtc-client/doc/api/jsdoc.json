@@ -5,7 +5,7 @@
     "name": "@the-/rtc-client",
     "kind": "module",
     "description": "Client for the-rtc",
-    "version": "15.4.1",
+    "version": "15.4.2",
     "license": "MIT",
     "typicalname": "rtcClient",
     "meta": {

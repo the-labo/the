@@ -6,8 +6,6 @@
 <dt><a href="#module_@the-/driver-mongo">@the-/driver-mongo</a></dt>
 <dd><p>Mongo driver for the-db</p>
 </dd>
-<dt><a href="#module_mixins">mixins</a></dt>
-<dd></dd>
 </dl>
 
 ## Classes
@@ -33,9 +31,8 @@
 ## @the-/driver-mongo
 Mongo driver for the-db
 
-<a name="module_mixins"></a>
-
-## mixins
+**Version**: 15.4.0  
+**License**: MIT  
 <a name="MongoDriver"></a>
 
 ## MongoDriver ⇐ <code>Driver</code>

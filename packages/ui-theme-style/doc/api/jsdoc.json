@@ -5,6 +5,8 @@
     "name": "@the-/ui-theme-style",
     "kind": "module",
     "description": "Theme style for the-components",
+    "version": "15.4.0",
+    "typicalname": "uiThemeStyle",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

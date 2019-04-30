@@ -29,6 +29,7 @@
 ## @the-/ui-flick
 Flickable viewer of the-components
 
+**Version**: 15.4.0  
 <a name="TheFlick"></a>
 
 ## TheFlick

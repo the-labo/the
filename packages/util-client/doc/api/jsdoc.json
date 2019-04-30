@@ -5,6 +5,9 @@
     "name": "@the-/util-client",
     "kind": "module",
     "description": "Utility for client side",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "utilClient",
     "meta": {
       "lineno": 2,
       "filename": "index.js",

@@ -5,6 +5,7 @@
 ## @the-/demo-ui
 Demo of the-components
 
+**Version**: 15.4.0  
 
 * [@the-/demo-ui](#module_@the-/demo-ui)
     * [.TheDemoUi](#module_@the-/demo-ui.TheDemoUi) ⇐ <code>React.Component</code>
@@ -13,7 +14,7 @@ Demo of the-components
 
 <a name="module_@the-/demo-ui.TheDemoUi"></a>
 
-### @the-/demo-ui.TheDemoUi ⇐ <code>React.Component</code>
+### demoUi.TheDemoUi ⇐ <code>React.Component</code>
 **Kind**: static class of [<code>@the-/demo-ui</code>](#module_@the-/demo-ui)  
 **Extends**: <code>React.Component</code>  
 <a name="new_module_@the-/demo-ui.TheDemoUi_new"></a>
@@ -23,7 +24,7 @@ Demo of the-components
 
 <a name="module_@the-/demo-ui.TheDemoUiStyle"></a>
 
-### @the-/demo-ui.TheDemoUiStyle()
+### demoUi.TheDemoUiStyle()
 Style for TheDemoUi
 
 **Kind**: static method of [<code>@the-/demo-ui</code>](#module_@the-/demo-ui)  

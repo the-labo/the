@@ -5,6 +5,8 @@
     "name": "@the-/ui-section",
     "kind": "module",
     "description": "Section of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiSection",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

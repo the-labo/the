@@ -1,4 +1,6 @@
 /**
+ * @memberOf module:@the-/secret.helpers
+ * @namespace cipher
  */
 'use strict'
 
@@ -8,7 +10,7 @@ const TEXT_ENCODE = 'utf-8'
 const CRYPTO_ENCODE = 'hex'
 const KEY_LENGTH = 32
 
-exports.cipherText = function cipher(algorithm, password, text, options = {}) {
+exports.cipherText = function cipher (algorithm, password, text, options = {}) {
   const { iv = null } = options
   if (!iv) {
     // For old format data
@@ -26,7 +28,7 @@ exports.cipherText = function cipher(algorithm, password, text, options = {}) {
   )
 }
 
-exports.decipherText = function decipher(
+exports.decipherText = function decipher (
   algorithm,
   password,
   encrypted,

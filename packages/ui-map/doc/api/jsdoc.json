@@ -5,6 +5,8 @@
     "name": "@the-/ui-map",
     "kind": "module",
     "description": "Geo map for the-components",
+    "version": "15.4.0",
+    "typicalname": "uiMap",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

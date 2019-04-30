@@ -1,3 +1,7 @@
+/**
+ * @memberOf module:@the-/driver-sequelize.converters
+ * @function convertInbound
+ */
 'use strict'
 
 const MetaColumnNames = require('../constants/MetaColumnNames')
@@ -5,6 +9,7 @@ const { logger } = require('../helpers')
 const serializer = require('../helpers/serializer')
 const parseAttributeName = require('../parsing/parseAttributeName')
 
+/** @lends module:@the-/driver-sequelize.converters.convertInbound */
 function convertInbound(values, options = {}) {
   const { ModelAttributes = {}, ModelName, Schema } = options
   const converted = {

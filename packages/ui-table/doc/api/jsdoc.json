@@ -5,6 +5,8 @@
     "name": "@the-/ui-table",
     "kind": "module",
     "description": "Table for the-components",
+    "version": "15.4.0",
+    "typicalname": "uiTable",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

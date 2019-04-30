@@ -1,23 +1,13 @@
 [
   {
-    "id": "module:default",
-    "longname": "module:default",
-    "name": "default",
-    "kind": "module",
-    "description": "Default exports",
-    "meta": {
-      "lineno": 1,
-      "filename": "default.js",
-      "path": "/Users/okuni/Projects/the/packages/resize/lib"
-    },
-    "order": 1
-  },
-  {
     "id": "module:@the-/resize",
     "longname": "module:@the-/resize",
     "name": "@the-/resize",
     "kind": "module",
     "description": "Resize image files",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "resize",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -26,11 +16,11 @@
     "order": 2
   },
   {
-    "id": "TheResize()",
-    "longname": "TheResize",
+    "id": "module:@the-/resize.TheResize()",
+    "longname": "module:@the-/resize.TheResize",
     "name": "TheResize",
     "kind": "constructor",
-    "memberof": "TheResize",
+    "memberof": "module:@the-/resize.TheResize",
     "params": [
       {
         "type": {
@@ -56,63 +46,13 @@
     "order": 4
   },
   {
-    "id": "TheResize",
-    "longname": "TheResize",
-    "name": "TheResize",
-    "kind": "class",
-    "scope": "global",
-    "see": [
-      "http://sharp.pixelplumbing.com/en/stable/api-resize/#parameters"
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "TheResize.js",
-      "path": "/Users/okuni/Projects/the/packages/resize/lib"
-    },
-    "order": 3
-  },
-  {
-    "id": "create",
-    "longname": "create",
-    "name": "create",
-    "kind": "function",
-    "scope": "global",
-    "description": "Create a TheResize instance",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        },
-        "variable": true,
-        "name": "args"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "TheResize"
-          ]
-        }
-      }
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "create.js",
-      "path": "/Users/okuni/Projects/the/packages/resize/lib"
-    },
-    "order": 0
-  },
-  {
-    "id": "TheResize#convert",
-    "longname": "TheResize#convert",
+    "id": "module:@the-/resize.TheResize#convert",
+    "longname": "module:@the-/resize.TheResize#convert",
     "name": "convert",
     "kind": "function",
     "scope": "instance",
     "description": "Convert file(s)",
-    "memberof": "TheResize",
+    "memberof": "module:@the-/resize.TheResize",
     "params": [
       {
         "type": {
@@ -154,7 +94,7 @@
       }
     ],
     "meta": {
-      "lineno": 37,
+      "lineno": 38,
       "filename": "TheResize.js",
       "path": "/Users/okuni/Projects/the/packages/resize/lib"
     },
@@ -162,13 +102,13 @@
     "order": 5
   },
   {
-    "id": "TheResize#convertDir",
-    "longname": "TheResize#convertDir",
+    "id": "module:@the-/resize.TheResize#convertDir",
+    "longname": "module:@the-/resize.TheResize#convertDir",
     "name": "convertDir",
     "kind": "function",
     "scope": "instance",
     "description": "Convert files in a directory",
-    "memberof": "TheResize",
+    "memberof": "module:@the-/resize.TheResize",
     "params": [
       {
         "type": {
@@ -210,7 +150,7 @@
       }
     ],
     "meta": {
-      "lineno": 55,
+      "lineno": 56,
       "filename": "TheResize.js",
       "path": "/Users/okuni/Projects/the/packages/resize/lib"
     },
@@ -218,13 +158,13 @@
     "order": 6
   },
   {
-    "id": "TheResize#convertFile",
-    "longname": "TheResize#convertFile",
+    "id": "module:@the-/resize.TheResize#convertFile",
+    "longname": "module:@the-/resize.TheResize#convertFile",
     "name": "convertFile",
     "kind": "function",
     "scope": "instance",
     "description": "Convert a single file",
-    "memberof": "TheResize",
+    "memberof": "module:@the-/resize.TheResize",
     "params": [
       {
         "type": {
@@ -264,7 +204,7 @@
       }
     ],
     "meta": {
-      "lineno": 73,
+      "lineno": 74,
       "filename": "TheResize.js",
       "path": "/Users/okuni/Projects/the/packages/resize/lib"
     },
@@ -272,13 +212,13 @@
     "order": 7
   },
   {
-    "id": "TheResize#overwrite",
-    "longname": "TheResize#overwrite",
+    "id": "module:@the-/resize.TheResize#overwrite",
+    "longname": "module:@the-/resize.TheResize#overwrite",
     "name": "overwrite",
     "kind": "function",
     "scope": "instance",
     "description": "Overwrite a file",
-    "memberof": "TheResize",
+    "memberof": "module:@the-/resize.TheResize",
     "params": [
       {
         "type": {
@@ -311,7 +251,7 @@
       }
     ],
     "meta": {
-      "lineno": 109,
+      "lineno": 110,
       "filename": "TheResize.js",
       "path": "/Users/okuni/Projects/the/packages/resize/lib"
     },
@@ -319,13 +259,13 @@
     "order": 8
   },
   {
-    "id": "TheResize#overwriteDir",
-    "longname": "TheResize#overwriteDir",
+    "id": "module:@the-/resize.TheResize#overwriteDir",
+    "longname": "module:@the-/resize.TheResize#overwriteDir",
     "name": "overwriteDir",
     "kind": "function",
     "scope": "instance",
     "description": "Overwrite files in a dir",
-    "memberof": "TheResize",
+    "memberof": "module:@the-/resize.TheResize",
     "params": [
       {
         "type": {
@@ -358,7 +298,7 @@
       }
     ],
     "meta": {
-      "lineno": 126,
+      "lineno": 127,
       "filename": "TheResize.js",
       "path": "/Users/okuni/Projects/the/packages/resize/lib"
     },
@@ -366,13 +306,13 @@
     "order": 9
   },
   {
-    "id": "TheResize#overwriteFile",
-    "longname": "TheResize#overwriteFile",
+    "id": "module:@the-/resize.TheResize#overwriteFile",
+    "longname": "module:@the-/resize.TheResize#overwriteFile",
     "name": "overwriteFile",
     "kind": "function",
     "scope": "instance",
     "description": "Resized a single file",
-    "memberof": "TheResize",
+    "memberof": "module:@the-/resize.TheResize",
     "params": [
       {
         "type": {
@@ -404,7 +344,7 @@
       }
     ],
     "meta": {
-      "lineno": 142,
+      "lineno": 143,
       "filename": "TheResize.js",
       "path": "/Users/okuni/Projects/the/packages/resize/lib"
     },
@@ -412,13 +352,13 @@
     "order": 10
   },
   {
-    "id": "TheResize#overwriteIfPossible",
-    "longname": "TheResize#overwriteIfPossible",
+    "id": "module:@the-/resize.TheResize#overwriteIfPossible",
+    "longname": "module:@the-/resize.TheResize#overwriteIfPossible",
     "name": "overwriteIfPossible",
     "kind": "function",
     "scope": "instance",
     "description": "Overwrite if possible",
-    "memberof": "TheResize",
+    "memberof": "module:@the-/resize.TheResize",
     "params": [
       {
         "type": {
@@ -451,11 +391,78 @@
       }
     ],
     "meta": {
-      "lineno": 156,
+      "lineno": 157,
       "filename": "TheResize.js",
       "path": "/Users/okuni/Projects/the/packages/resize/lib"
     },
     "async": true,
     "order": 11
+  },
+  {
+    "id": "module:@the-/resize.TheResize",
+    "longname": "module:@the-/resize.TheResize",
+    "name": "TheResize",
+    "kind": "class",
+    "scope": "static",
+    "memberof": "module:@the-/resize",
+    "see": [
+      "http://sharp.pixelplumbing.com/en/stable/api-resize/#parameters"
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "TheResize.js",
+      "path": "/Users/okuni/Projects/the/packages/resize/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "module:@the-/resize.create",
+    "longname": "module:@the-/resize.create",
+    "name": "create",
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheResize instance",
+    "memberof": "module:@the-/resize",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheResize"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/resize/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/resize.default",
+    "longname": "module:@the-/resize.default",
+    "name": "default",
+    "kind": "function",
+    "scope": "static",
+    "description": "Alias of {@link module:@the-/resize.create}",
+    "memberof": "module:@the-/resize",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/resize/lib"
+    },
+    "order": 1
   }
 ]

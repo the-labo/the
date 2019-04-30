@@ -1,0 +1,20 @@
+'use strict'
+
+const { dir } = require('@the-/templates')
+const pkg = require('../../package')
+const path = require('path')
+
+module.exports = dir({
+  cjs: true,
+  annotations: {
+    namespace: path.basename(__dirname),
+    memberOf: `module:${pkg.name}`,
+    access: 'protected',
+    description: 'Modeling functions',
+  },
+  dirname: __dirname,
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

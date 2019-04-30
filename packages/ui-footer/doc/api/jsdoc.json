@@ -5,6 +5,8 @@
     "name": "@the-/ui-footer",
     "kind": "module",
     "description": "Footer of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiFooter",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",

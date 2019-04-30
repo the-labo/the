@@ -81,20 +81,16 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/url](./doc/api/api.md#module_@the-/url)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### function
+- [.addQuery(urlString,query)](./doc/api/api.md#module_@the-/url.addQuery)
+- [.formatUrl(urlString,params)](./doc/api/api.md#module_@the-/url.formatUrl)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

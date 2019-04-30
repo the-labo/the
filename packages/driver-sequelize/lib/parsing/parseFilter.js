@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/driver-sequelize.parsing
  * @function parseFilter
  */
 'use strict'
@@ -14,7 +15,7 @@ const serializer = require('../helpers/serializer')
 
 const INVALID_FILTER_CONDITION_ID = '____theInvalidFilterConditionID'
 
-/** @lends parseFilter */
+/** @lends module:@the-/driver-sequelize.parsing.parseFilter */
 function parseFilter(filter, options = {}) {
   if (!filter) {
     return filter

@@ -5,6 +5,9 @@
     "name": "@the-/util-server",
     "kind": "module",
     "description": "Utility for server",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "utilServer",
     "meta": {
       "lineno": 2,
       "filename": "index.js",

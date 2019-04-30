@@ -27,6 +27,8 @@
 ## @the-/util-sw
 Utility for service workers
 
+**Version**: 15.4.0  
+**License**: MIT  
 <a name="appCache"></a>
 
 ## appCache(name, [version], [options])

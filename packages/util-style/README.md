@@ -76,20 +76,15 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/util-style](./doc/api/api.md#module_@the-/util-style)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### function
+- [styleString(selector,style,atRule)](./doc/api/api.md#styleString)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

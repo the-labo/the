@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@the-/check": "^15.4.1",
-    "@the-/error": "^15.2.0",
-    "@the-/util-array": "^15.2.0",
+    "@the-/error": "^15.4.0",
+    "@the-/util-array": "^15.4.0",
     "asleep": "^1.0.3",
     "asobj": "^3.0.1",
     "bwindow": "^2.0.3",

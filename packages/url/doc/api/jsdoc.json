@@ -5,6 +5,9 @@
     "name": "@the-/url",
     "kind": "module",
     "description": "URL utility for the-framework",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "url",
     "meta": {
       "lineno": 2,
       "filename": "index.js",

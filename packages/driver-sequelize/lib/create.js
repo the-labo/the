@@ -1,5 +1,6 @@
 /**
  * Create a TheDriverSequelize instance
+ * @memberOf @the-/driver-sequelize
  * @function create
  * @param {...*} args
  * @returns {TheDriverSequelize}
@@ -8,7 +9,7 @@
 
 const TheDriverSequelize = require('./TheDriverSequelize')
 
-/** @lends create */
+/** @lends @the-/driver-sequelize.create */
 function create(...args) {
   return new TheDriverSequelize(...args)
 }

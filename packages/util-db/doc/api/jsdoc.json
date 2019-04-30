@@ -5,6 +5,9 @@
     "name": "@the-/util-db",
     "kind": "module",
     "description": "Utility for the-db",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "utilDb",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -13,12 +16,13 @@
     "order": 1
   },
   {
-    "id": "evalScript",
-    "longname": "evalScript",
+    "id": "module:@the-/util-db.evalScript",
+    "longname": "module:@the-/util-db.evalScript",
     "name": "evalScript",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Eval script",
+    "memberof": "module:@the-/util-db",
     "returns": [
       {
         "type": {
@@ -36,12 +40,13 @@
     "order": 0
   },
   {
-    "id": "toLowerKeys",
-    "longname": "toLowerKeys",
+    "id": "module:@the-/util-db.toLowerKeys",
+    "longname": "module:@the-/util-db.toLowerKeys",
     "name": "toLowerKeys",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Make object keys to lower",
+    "memberof": "module:@the-/util-db",
     "params": [
       {
         "type": {

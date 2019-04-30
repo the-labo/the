@@ -5,6 +5,8 @@
 ## @the-/pack
 Message pack wrapper for the-components
 
+**Version**: 15.4.0  
+**License**: MIT  
 
 * [@the-/pack](#module_@the-/pack)
     * [.ThePack](#module_@the-/pack.ThePack)
@@ -18,7 +20,7 @@ Message pack wrapper for the-components
 
 <a name="module_@the-/pack.ThePack"></a>
 
-### @the-/pack.ThePack
+### pack.ThePack
 **Kind**: static class of [<code>@the-/pack</code>](#module_@the-/pack)  
 
 * [.ThePack](#module_@the-/pack.ThePack)
@@ -64,17 +66,17 @@ Encode data into buffer
 
 <a name="module_@the-/pack.Converters"></a>
 
-### @the-/pack.Converters : <code>object</code>
+### pack.Converters : <code>object</code>
 **Kind**: static namespace of [<code>@the-/pack</code>](#module_@the-/pack)  
 <a name="module_@the-/pack.default"></a>
 
-### @the-/pack.default : <code>object</code>
+### pack.default : <code>object</code>
 Default exports
 
 **Kind**: static namespace of [<code>@the-/pack</code>](#module_@the-/pack)  
 <a name="module_@the-/pack.create"></a>
 
-### @the-/pack.create(...args) ⇒ <code>ThePack</code>
+### pack.create(...args) ⇒ <code>ThePack</code>
 Create a ThePack instance
 
 **Kind**: static method of [<code>@the-/pack</code>](#module_@the-/pack)  

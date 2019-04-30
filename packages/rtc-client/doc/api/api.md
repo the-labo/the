@@ -50,7 +50,7 @@
 ## @the-/rtc-client
 Client for the-rtc
 
-**Version**: 15.4.1  
+**Version**: 15.4.2  
 **License**: MIT  
 
 * [@the-/rtc-client](#module_@the-/rtc-client)
