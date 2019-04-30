@@ -1,5 +1,5 @@
 /**
- * @memberOf module:the-code/lib/processors
+ * @memberOf module:@the-/code.processors
  * @function processJSDoc
  * @param {string} content
  * @param {Object} [options={}]
@@ -11,7 +11,7 @@ const { commentModuleOnProgramNode } = require('../ast/nodes')
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends processJSDoc */
+/** @lends module:@the-/code.processors.processJSDoc */
 async function processJSDoc(content, options = {}) {
   const { filename } = options
   return applyConverter(content, async (content) => {

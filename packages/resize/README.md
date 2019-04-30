@@ -87,21 +87,24 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [default](./doc/api/api.md#module_default)
-- [@the-/resize](./doc/api/api.md#module_@the-/resize)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheResize](./doc/api/api.md#TheResize)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [#convert(src,dest,options)](./doc/api/api.md#TheResize#convert)
+- [#convertDir(src,dest,options)](./doc/api/api.md#TheResize#convertDir)
+- [#convertFile(src,dest,options)](./doc/api/api.md#TheResize#convertFile)
+- [#overwrite(filename,options)](./doc/api/api.md#TheResize#overwrite)
+- [#overwriteDir(dirname,options)](./doc/api/api.md#TheResize#overwriteDir)
+- [#overwriteFile(src,options)](./doc/api/api.md#TheResize#overwriteFile)
+- [#overwriteIfPossible(filename,options)](./doc/api/api.md#TheResize#overwriteIfPossible)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

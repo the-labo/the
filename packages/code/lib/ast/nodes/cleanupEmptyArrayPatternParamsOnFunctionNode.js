@@ -1,10 +1,10 @@
 /**
- * @memberof module:the-code
+ * @memberof module:@the-/code.ast.nodes
  * @function cleanupEmptyArrayPatternParamsOnFunctionNode
  */
 'use strict'
 
-/** @lends cleanupEmptyArrayPatternParamsOnFunctionNode */
+/** @lends module:@the-/code.ast.nodes.cleanupEmptyArrayPatternParamsOnFunctionNode */
 function cleanupEmptyArrayPatternParamsOnFunctionNode(
   FunctionNode,
   { replace },

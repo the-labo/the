@@ -109,20 +109,23 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/queue](./doc/api/api.md#module_@the-/queue)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheQueue](./doc/api/api.md#TheQueue)
+### function
+- [#push(task)](./doc/api/api.md#TheQueue#push)
+- [#start()](./doc/api/api.md#TheQueue#start)
+- [#stop()](./doc/api/api.md#TheQueue#stop)
+- [#wait(options)](./doc/api/api.md#TheQueue#wait)
+- [.create(args)](./doc/api/api.md#module_@the-/queue.create)
+### namespace
+- [.default](./doc/api/api.md#module_@the-/queue.default)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -1,12 +1,12 @@
 /**
- * @memberOf module:the-code
+ * @memberof module:@the-/code.ast.nodes
  * @function sortCasesOnSwitchStatementNode
  */
 'use strict'
 
 const { compareStrings } = require('../../helpers/arrayHelper')
 
-/** @lends sortCasesOnSwitchStatementNode */
+/** @lends module:@the-/code.ast.nodes.sortCasesOnSwitchStatementNode */
 function sortCasesOnSwitchStatementNode(SwitchStatement, { swap }) {
   const Cases = [...SwitchStatement.cases]
 

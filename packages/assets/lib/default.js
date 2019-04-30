@@ -1,3 +1,10 @@
+/**
+ * Default exports. Alias of {@link module:@the-/assets.create}
+ * @memberOf module:@the-/assets
+ * @function default
+ * @param {...*} args
+ * @returns {module:@the-/assets.TheAssert.TheAssert}
+ */
 'use strict'
 
 const create = require('./create')

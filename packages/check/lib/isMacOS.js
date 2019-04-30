@@ -1,5 +1,6 @@
 /**
  * Detect is mac OS
+ * @memberOf module:@the-/check
  * @function isMacOS
  * @returns {boolean}
  */
@@ -7,7 +8,7 @@
 
 const os = require('os')
 
-/** @lends isMacOS */
+/** @lends module:@the-/check.isMacOS */
 function isMacOS() {
   return !!~['Darwin'].indexOf(os.type())
 }

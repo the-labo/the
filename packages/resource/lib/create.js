@@ -1,5 +1,6 @@
 /**
  * Create a TheResource instance
+ * @memberOf module:@the-/resource
  * @function create
  * @param {...*} args
  * @returns {TheResource}
@@ -8,7 +9,7 @@
 
 const TheResource = require('./TheResource')
 
-/** @lends create */
+/** @lends module:@the-/resource.create */
 function create(...args) {
   return new TheResource(...args)
 }

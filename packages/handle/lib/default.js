@@ -1,6 +1,7 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link module:@the-/handle.create}
+ * @memberOf module:@the-/handle
+ * @function default
  */
 'use strict'
 

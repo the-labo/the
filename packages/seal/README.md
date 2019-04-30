@@ -89,21 +89,19 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [default](./doc/api/api.md#module_default)
-- [@the-/seal](./doc/api/api.md#module_@the-/seal)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheSeal](./doc/api/api.md#TheSeal)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [#seal(values)](./doc/api/api.md#TheSeal#seal)
+- [#verify(sealString,values)](./doc/api/api.md#TheSeal#verify)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

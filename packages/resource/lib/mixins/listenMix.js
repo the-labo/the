@@ -1,5 +1,6 @@
 /**
  * Mixins for listen
+ * @memberOf module:@the-/resource.mixins
  * @function listenMix
  * @param {function} Class
  * @returns {function} Mixed class
@@ -19,9 +20,12 @@ const {
 } = require('clay-resource')
 const { unlessProduction } = require('@the-/check')
 
-/** @lends listenMix */
+/** @lends module:@the-/resource.mixins.listenMix */
 function listenMix(Class) {
-  /** @lends ListenMixed */
+  /**
+   * @memberOf module:@the-/resource.mixins.listenMix
+   * @inner
+   */
   return class ListenMixed extends Class {
     increaseListenerMax(amount = 1) {
       const maxListeners = this.getMaxListeners()

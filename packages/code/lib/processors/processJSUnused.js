@@ -1,6 +1,6 @@
 /**
  * Removed unused vars
- * @memberOf module:the-code/lib/processors
+ * @memberOf module:@the-/code.processors
  * @function processJSUnused
  * @param {string} content
  * @returns {string} processed
@@ -27,7 +27,7 @@ const applyToNodes = require('../helpers/applyToNodes')
 const { byType } = require('../helpers/arrayHelper')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends processJSUnused */
+/** @lends module:@the-/code.processors.processJSUnused */
 function processJSUnused(content, options = {}) {
   return applyConverter(content, (content) => {
     const parsed = parse(content, options)

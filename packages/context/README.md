@@ -71,20 +71,25 @@ Usage
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/context](./doc/api/api.md#module_@the-/context)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### function
+- [#del(name)](./doc/api/api.md#@the-/context.TheContext#del)
+- [#get(name,options)](./doc/api/api.md#@the-/context.TheContext#get)
+- [#set(values)](./doc/api/api.md#@the-/context.TheContext#set)
+- [.create(args)](./doc/api/api.md#module_@the-/context.create)
+- [.default()](./doc/api/api.md#module_@the-/context.default)
+- [.ContextRootFor()](./doc/api/api.md#module_@the-/context.helpers.ContextRootFor)
+### class
+- [.TheContext](./doc/api/api.md#@the-/context.TheContext)
+- [.ContextEntry](./doc/api/api.md#module_@the-/context.helpers.ContextEntry)
+### namespace
+- [.helpers](./doc/api/api.md#module_@the-/context.helpers)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

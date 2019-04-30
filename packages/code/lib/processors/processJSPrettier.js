@@ -1,5 +1,5 @@
 /**
- * @memberOf module:the-code/lib/processors
+ * @memberOf module:@the-/code.processors
  * @function processJSPrettier
  * @param {string} content
  * @returns {Promise.<string>} processed
@@ -8,7 +8,7 @@
 
 const prettier = require('prettier')
 
-/** @lends processJSPrettier */
+/** @lends module:@the-/code.processors.processJSPrettier */
 async function processJSPrettier(content) {
   return prettier.format(content, {
     arrowParens: 'always',

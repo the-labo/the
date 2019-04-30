@@ -201,6 +201,7 @@ const _removeDevDeps = async (baseDir, names) => {
             scripts.test = '../../misc/scripts/pkgTest.js'
             scripts.prepare =
               '../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc'
+            delete scripts.watch
             delete scripts.share
             delete scripts.buid
             devDependencies['@babel/runtime'] =
@@ -278,6 +279,7 @@ const _removeDevDeps = async (baseDir, names) => {
           scripts.test = '../../misc/scripts/pkgTest.js'
           scripts.prepare =
             '../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc'
+          delete scripts.watch
           delete scripts.share
           delete scripts.buid
 

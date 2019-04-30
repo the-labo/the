@@ -71,13 +71,15 @@ const { withBusy } = require('@the-/mixin-scene')
 const { TheScene } = require('@the-/scene')
 
 async function tryExample() {
-  const MyScene = withBusy(class MySceneBase extends TheScene {
-    async doSomething(){
-      await this.busyWhile(async () => {
-        /* ... */
-      })
-    }
-  })
+  const MyScene = withBusy(
+    class MySceneBase extends TheScene {
+      async doSomething() {
+        await this.busyWhile(async () => {
+          /* ... */
+        })
+      }
+    },
+  )
   const scene = new MyScene()
   await scene.doSomething()
 }
@@ -89,20 +91,85 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/mixin-scene](./doc/api/api.md#module_@the-/mixin-scene)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### function
+- [bindDefaults()](./doc/api/api.md#bindDefaults)
+- [bindScope()](./doc/api/api.md#bindScope)
+- [siteToast()](./doc/api/api.md#siteToast)
+- [reset(queues)](./doc/api/api.md#reset)
+- [showError(message)](./doc/api/api.md#showError)
+- [showInfo(message)](./doc/api/api.md#showInfo)
+- [showWarn(message)](./doc/api/api.md#showWarn)
+- [withBack(Class)](./doc/api/api.md#withBack)
+- [goBack()](./doc/api/api.md#goBack)
+- [withBusy(Class)](./doc/api/api.md#withBusy)
+- [busyFor(duration)](./doc/api/api.md#busyFor)
+- [busyWhile(task)](./doc/api/api.md#busyWhile)
+- [isBusy()](./doc/api/api.md#isBusy)
+- [waitWhileBusy()](./doc/api/api.md#waitWhileBusy)
+- [withEntities(Class)](./doc/api/api.md#withEntities)
+- [addEntities(entities,options)](./doc/api/api.md#addEntities)
+- [addEntity(entity,options)](./doc/api/api.md#addEntity)
+- [deleteEntity(entity)](./doc/api/api.md#deleteEntity)
+- [getEntities()](./doc/api/api.md#getEntities)
+- [receiveEntity(entity,options)](./doc/api/api.md#receiveEntity)
+- [updateEntity(entity)](./doc/api/api.md#updateEntity)
+- [withEntry(Class)](./doc/api/api.md#withEntry)
+- [getEntry(options)](./doc/api/api.md#getEntry)
+- [hasEntryErrorFor(name)](./doc/api/api.md#hasEntryErrorFor)
+- [processEntry(handler)](./doc/api/api.md#processEntry)
+- [resetEntry()](./doc/api/api.md#resetEntry)
+- [setEntry(values)](./doc/api/api.md#setEntry)
+- [setEntryErrors(errors)](./doc/api/api.md#setEntryErrors)
+- [withFailure(Class)](./doc/api/api.md#withFailure)
+- [withFilter(Class)](./doc/api/api.md#withFilter)
+- [getFilter()](./doc/api/api.md#getFilter)
+- [setFilter(filter)](./doc/api/api.md#setFilter)
+- [setFilterByQ()](./doc/api/api.md#setFilterByQ)
+- [withForm(Class)](./doc/api/api.md#withForm)
+- [withHistory(Class)](./doc/api/api.md#withHistory)
+- [replaceHistoryByQuery(query)](./doc/api/api.md#replaceHistoryByQuery)
+- [withId(Class)](./doc/api/api.md#withId)
+- [getId()](./doc/api/api.md#getId)
+- [isKnownId(id)](./doc/api/api.md#isKnownId)
+- [withLimit(Class)](./doc/api/api.md#withLimit)
+- [getLimit()](./doc/api/api.md#getLimit)
+- [nextLimit()](./doc/api/api.md#nextLimit)
+- [setLimit(limit)](./doc/api/api.md#setLimit)
+- [updateToNextLimit()](./doc/api/api.md#updateToNextLimit)
+- [withLocation(Class)](./doc/api/api.md#withLocation)
+- [changeLocationTo(href)](./doc/api/api.md#changeLocationTo)
+- [getLocationHash()](./doc/api/api.md#getLocationHash)
+- [reloadLocation()](./doc/api/api.md#reloadLocation)
+- [setLocationHash(hash)](./doc/api/api.md#setLocationHash)
+- [withPage(Class)](./doc/api/api.md#withPage)
+- [getPage()](./doc/api/api.md#getPage)
+- [withQuery(Class)](./doc/api/api.md#withQuery)
+- [getQueryFromSearch(search)](./doc/api/api.md#getQueryFromSearch)
+- [mergeQueryToSearch(query)](./doc/api/api.md#mergeQueryToSearch)
+- [queryWithSearch(search)](./doc/api/api.md#queryWithSearch)
+- [withReady(Class)](./doc/api/api.md#withReady)
+- [ifReady(task)](./doc/api/api.md#ifReady)
+- [readyWhen(task)](./doc/api/api.md#readyWhen)
+- [unlessReady(task)](./doc/api/api.md#unlessReady)
+- [withResult(Class)](./doc/api/api.md#withResult)
+- [resultFor(action)](./doc/api/api.md#resultFor)
+- [withSort(Class)](./doc/api/api.md#withSort)
+- [withTargets(Class)](./doc/api/api.md#withTargets)
+- [addTargets(targets)](./doc/api/api.md#addTargets)
+- [getTargetIds()](./doc/api/api.md#getTargetIds)
+- [getTargetRefs()](./doc/api/api.md#getTargetRefs)
+- [getTargets()](./doc/api/api.md#getTargets)
+- [withValues(Class)](./doc/api/api.md#withValues)
+- [asClassMixin()](./doc/api/api.md#asClassMixin)
+- [asMethodWrap()](./doc/api/api.md#asMethodWrap)
+- [injectProperties(Class)](./doc/api/api.md#injectProperties)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

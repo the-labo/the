@@ -1,7 +1,7 @@
 {
   "name": "@the-/controller",
   "description": "Base of the-controllers",
-  "version": "15.4.0",
+  "version": "15.4.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -39,7 +39,6 @@
     "build": "../../misc/scripts/pkgBuild.js",
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
-    "test": "../../misc/scripts/pkgTest.js",
-    "watch": "the-script-build -w"
+    "test": "../../misc/scripts/pkgTest.js"
   }
 }

@@ -1,5 +1,7 @@
 /**
- * SOrt object properties
+ * Sort object properties
+ * @memberOf module:@the-/util-file.helpers
+ * @protected
  * @function sortProperties
  */
 'use strict'

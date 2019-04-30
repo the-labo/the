@@ -19,7 +19,7 @@ const { unlessProduction } = require('@the-/check')
 const statAsync = promisify(fs.stat)
 const execAsync = promisify(exec)
 
-/** @lends TheBin */
+/** @lends module:@the-/bin.TheBin */
 class TheBin {
   constructor(cmd, options = {}) {
     const { guide = null, versionOption = '--version', ...rest } = options

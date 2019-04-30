@@ -1,6 +1,6 @@
 /**
  * Process js "use strict" statement
- * @memberOf module:the-code/lib/processors
+ * @memberOf module:@the-/code.processors
  * @function processJSRequire
  * @param {string} content
  * @returns {string} processed
@@ -15,7 +15,7 @@ const {
 } = require('@the-/ast')
 const applyConverter = require('../helpers/applyConverter')
 
-/** @lends processJSRequire */
+/** @lends module:@the-/code.processors.processJSRequire */
 function processJSRequire(content, options = {}) {
   return applyConverter(content, (content) => {
     const parsed = parse(content, options)

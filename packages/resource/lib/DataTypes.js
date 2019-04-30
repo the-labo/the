@@ -1,6 +1,7 @@
 /**
  * Data types
- * @module DataTypes
+ * @memberOf module:@the-/resource
+ * @namespace DataTypes
  */
 'use strict'
 

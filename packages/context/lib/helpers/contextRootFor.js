@@ -1,6 +1,6 @@
 /**
  * ContextRoot component
- * @memberof module:@the-/context
+ * @memberof module:@the-/context.helpers
  * @function ContextRootFor
  */
 'use strict'
@@ -8,6 +8,7 @@
 const React = require('react')
 const { createElement } = React
 
+/** @lends module:@the-/context.helpers.contextRootFor */
 function contextRootFor(context, { value }) {
   const { Provider } = context
 

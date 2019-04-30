@@ -1,10 +1,10 @@
 /**
- * @memberof module:the-code
+ * @memberof module:@the-/code.ast.nodes
  * @function cleanupRedundantAliasOnObjectPatternNode
  */
 'use strict'
 
-/** @lends cleanupRedundantAliasOnObjectPatternNode */
+/** @lends module:@the-/code.ast.nodes.cleanupRedundantAliasOnObjectPatternNode */
 function cleanupRedundantAliasOnObjectPatternNode(ObjectPattern, { replace }) {
   const { properties } = ObjectPattern
   if (!properties) {

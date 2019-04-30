@@ -1,5 +1,6 @@
 /**
  * Detect chrome or not
+ * @memberOf module:@the-/check
  * @function isChrome
  * @returns {Boolean}
  */
@@ -8,7 +9,7 @@
 const Bowser = require('bowser')
 const getUserAgent = require('./helpers/getUserAgent')
 
-/** @lends isChrome */
+/** @lends module:@the-/check.isChrome */
 function isChrome(options = {}) {
   const { userAgent = getUserAgent() } = options
   if (!userAgent) {

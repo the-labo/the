@@ -88,9 +88,14 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
+### namespace
+- [.analyzer](./doc/api/api.md#module_@the-/ast.analyzer)
+- [.finder](./doc/api/api.md#module_@the-/ast.finder)
+- [.constants](./doc/api/api.md#module_@the-/ast.constants)
+- [.NodeTypes](./doc/api/api.md#module_@the-/ast.NodeTypes)
 ### function
-- [parse(src,options)](./doc/api/api.md#parse)
-- [.findByTypes(node,types)](./doc/api/api.md#finder.findByTypes)
+- [.findByTypes(node,types)](./doc/api/api.md#module_@the-/ast.finder.findByTypes)
+- [.parse(src,options)](./doc/api/api.md#module_@the-/ast.parse)
 - [.exports()](./doc/api/api.md#module.exports)
 
 <!-- LICENSE Start -->

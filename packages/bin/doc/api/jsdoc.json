@@ -5,6 +5,9 @@
     "name": "@the-/bin",
     "kind": "module",
     "description": "Bin manager for the-frameworks",
+    "version": "15.4.2",
+    "license": "MIT",
+    "typicalname": "bin",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -64,13 +67,13 @@
     "order": 3
   },
   {
-    "id": "TheBin#exec",
-    "longname": "TheBin#exec",
+    "id": "module:@the-/bin.TheBin#exec",
+    "longname": "module:@the-/bin.TheBin#exec",
     "name": "exec",
     "kind": "function",
     "scope": "instance",
     "description": "Execute bin file",
-    "memberof": "TheBin",
+    "memberof": "module:@the-/bin.TheBin",
     "params": [
       {
         "type": {
@@ -101,13 +104,13 @@
     "order": 4
   },
   {
-    "id": "TheBin#exists",
-    "longname": "TheBin#exists",
+    "id": "module:@the-/bin.TheBin#exists",
+    "longname": "module:@the-/bin.TheBin#exists",
     "name": "exists",
     "kind": "function",
     "scope": "instance",
     "description": "Check if bin exists",
-    "memberof": "TheBin",
+    "memberof": "module:@the-/bin.TheBin",
     "params": [],
     "returns": [
       {
@@ -127,13 +130,13 @@
     "order": 5
   },
   {
-    "id": "TheBin#satisfiesVersion",
-    "longname": "TheBin#satisfiesVersion",
+    "id": "module:@the-/bin.TheBin#satisfiesVersion",
+    "longname": "module:@the-/bin.TheBin#satisfiesVersion",
     "name": "satisfiesVersion",
     "kind": "function",
     "scope": "instance",
     "description": "Satisfies version or not",
-    "memberof": "TheBin",
+    "memberof": "module:@the-/bin.TheBin",
     "params": [
       {
         "type": {
@@ -163,13 +166,13 @@
     "order": 6
   },
   {
-    "id": "TheBin#verify",
-    "longname": "TheBin#verify",
+    "id": "module:@the-/bin.TheBin#verify",
+    "longname": "module:@the-/bin.TheBin#verify",
     "name": "verify",
     "kind": "function",
     "scope": "instance",
     "description": "Verify the bin",
-    "memberof": "TheBin",
+    "memberof": "module:@the-/bin.TheBin",
     "params": [
       {
         "type": {
@@ -201,13 +204,13 @@
     "order": 7
   },
   {
-    "id": "TheBin#version",
-    "longname": "TheBin#version",
+    "id": "module:@the-/bin.TheBin#version",
+    "longname": "module:@the-/bin.TheBin#version",
     "name": "version",
     "kind": "function",
     "scope": "instance",
     "description": "Get command version",
-    "memberof": "TheBin",
+    "memberof": "module:@the-/bin.TheBin",
     "params": [],
     "returns": [
       {
@@ -263,7 +266,7 @@
       {
         "type": {
           "names": [
-            "TheBin"
+            "module:@the-/bin.TheBin"
           ]
         }
       }

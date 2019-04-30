@@ -1,6 +1,6 @@
 /**
  * Process object expressions
- * @memberOf module:the-code/lib/processors
+ * @memberOf module:@the-/code.processors
  * @function processJSObject
  * @param {string} content
  * @returns {string} processed
@@ -22,7 +22,7 @@ const applyToNodes = require('../helpers/applyToNodes')
 const { byType } = require('../helpers/arrayHelper')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends processJSObject */
+/** @lends module:@the-/code.processors.processJSObject */
 function processJSObject(content, options = {}) {
   return applyConverter(content, (content) => {
     const parsed = parse(content, options)

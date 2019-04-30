@@ -1,6 +1,6 @@
 /**
  * Define content access methods
- * @memberOf module:the-code/lib/helpers
+ * @memberOf module:@the-/code
  * @function contentAccess
  */
 'use strict'
@@ -8,7 +8,7 @@
 const { EOL } = require('os')
 const debug = require('debug')('the:code:contentAccess')
 
-/** @lends contentAccess */
+/** @lends module:@the-/code.contentAccess */
 function contentAccess(content) {
   const contentLines = content.split(EOL)
   return {

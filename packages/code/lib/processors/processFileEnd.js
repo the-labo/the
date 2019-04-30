@@ -1,5 +1,5 @@
 /**
- * @memberOf module:the-code/lib/processors
+ * @memberOf module:@the-/code.processors
  * @function processFileEnd
  * @param {string} content
  * @returns {string} processed
@@ -8,7 +8,7 @@
 
 const { EOL } = require('os')
 
-/** @lends processFileEnd */
+/** @lends module:@the-/code.processors.processFileEnd */
 function processFileEnd(content) {
   const endsWithEOL =
     content.substr(content.length - EOL.length, EOL.length) === EOL

@@ -1,5 +1,5 @@
 /**
- * @memberof module:the-code
+ * @memberof module:@the-/code.ast.nodes
  * @function cleanupUnusedOnVariableNode
  */
 'use strict'
@@ -9,7 +9,7 @@ const {
   isRequireExpression,
 } = require('../../helpers/astHelper')
 
-/** @lends cleanupUnusedOnVariableNode */
+/** @lends module:@the-/code.ast.nodes.cleanupUnusedOnVariableNode */
 function cleanupUnusedOnVariableNode(
   VariableDeclaration,
   { ConsumingIdentifiers, replace },

@@ -9,7 +9,7 @@
 
 const TheQueue = require('./TheQueue')
 
-/** @lends create */
+/** @lends module:@the-/queue.create */
 function create(...args) {
   return new TheQueue(...args)
 }

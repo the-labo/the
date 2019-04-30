@@ -90,21 +90,22 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [default](./doc/api/api.md#module_default)
-- [@the-/refactor](./doc/api/api.md#module_@the-/refactor)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheRefactor](./doc/api/api.md#TheRefactor)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [#convert(pattern,converter,options)](./doc/api/api.md#TheRefactor#convert)
+- [#rename(pattern,convert,options)](./doc/api/api.md#TheRefactor#rename)
+- [#renameDir(src,dest)](./doc/api/api.md#TheRefactor#renameDir)
+- [#rewrite(pattern,rules,options)](./doc/api/api.md#TheRefactor#rewrite)
+- [#scatter(src,dirnames)](./doc/api/api.md#TheRefactor#scatter)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -1,12 +1,12 @@
 /**
- * @memberOf module:the-code
+ * @memberof module:@the-/code.ast.nodes
  * @function spaceOnCommentNode
  */
 'use strict'
 
 const { EOL } = require('os')
 
-/** @lends spaceOnCommentNode */
+/** @lends module:@the-/code.ast.nodes.spaceOnCommentNode */
 function spaceOnCommentNode(CommentNode, options = {}) {
   const { SEPARATOR, content, replace } = options
 

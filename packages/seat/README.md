@@ -119,22 +119,26 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [default](./doc/api/api.md#module_default)
-- [@the-/seat](./doc/api/api.md#module_@the-/seat)
-- [mixins](./doc/api/api.md#module_mixins)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheSeat](./doc/api/api.md#TheSeat)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [#acquire(key,next)](./doc/api/api.md#TheSeat#acquire)
+- [#acquireNumber(key,options)](./doc/api/api.md#TheSeat#acquireNumber)
+- [#acquireString(key,options)](./doc/api/api.md#TheSeat#acquireString)
+- [#bind(key)](./doc/api/api.md#TheSeat#bind)
+- [#canTake(key,value)](./doc/api/api.md#TheSeat#canTake)
+- [#get(key)](./doc/api/api.md#TheSeat#get)
+- [#release(key)](./doc/api/api.md#TheSeat#release)
+- [#scope(scopeName)](./doc/api/api.md#TheSeat#scope)
+- [#take(key,value)](./doc/api/api.md#TheSeat#take)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

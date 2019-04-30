@@ -5,10 +5,14 @@
  */
 'use strict'
 
-/** @lends toHandleSceneClass */
+/** @lends module:@the-/handle.toHandleSceneClass */
 function toHandleSceneClass(BaseClass, config = {}) {
   const { load } = config
 
+  /**
+   * @memberOf module:@the-/handle.toHandleSceneClass
+   * @inner
+   */
   class HandleSceneClass extends BaseClass {
     /**
      * Load sub scenes

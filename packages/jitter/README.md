@@ -99,21 +99,22 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [default](./doc/api/api.md#module_default)
-- [@the-/jitter](./doc/api/api.md#module_@the-/jitter)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheJitter](./doc/api/api.md#TheJitter)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [#decrementCount()](./doc/api/api.md#TheJitter#decrementCount)
+- [#incrementCount()](./doc/api/api.md#TheJitter#incrementCount)
+- [#resetCount()](./doc/api/api.md#TheJitter#resetCount)
+- [#handle(action)](./doc/api/api.md#TheJitter#handle)
+- [#wait()](./doc/api/api.md#TheJitter#wait)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

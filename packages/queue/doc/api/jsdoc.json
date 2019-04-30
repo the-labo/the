@@ -5,6 +5,9 @@
     "name": "@the-/queue",
     "kind": "module",
     "description": "Queue for the-framework",
+    "version": "15.4.1",
+    "license": "MIT",
+    "typicalname": "queue",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -13,26 +16,62 @@
     "order": 2
   },
   {
-    "id": "TheQueue",
-    "longname": "TheQueue",
+    "id": "module:@the-/queue.TheQueue()",
+    "longname": "module:@the-/queue.TheQueue",
     "name": "TheQueue",
-    "kind": "class",
-    "scope": "global",
-    "meta": {
-      "lineno": 1,
-      "filename": "TheQueue.js",
-      "path": "/Users/okuni/Projects/the/packages/queue/lib"
-    },
-    "order": 3
+    "kind": "constructor",
+    "memberof": "module:@the-/queue.TheQueue",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "Boolean"
+          ]
+        },
+        "optional": true,
+        "description": "Auto start",
+        "name": "options.autoStart"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 1000,
+        "name": "options.max"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "name": "options.name"
+      }
+    ],
+    "order": 4
   },
   {
-    "id": "TheQueue#push",
-    "longname": "TheQueue#push",
+    "id": "module:@the-/queue.TheQueue#push",
+    "longname": "module:@the-/queue.TheQueue#push",
     "name": "push",
     "kind": "function",
     "scope": "instance",
     "description": "Push next task",
-    "memberof": "TheQueue",
+    "memberof": "module:@the-/queue.TheQueue",
     "params": [
       {
         "type": {
@@ -45,52 +84,52 @@
       }
     ],
     "meta": {
-      "lineno": 38,
-      "filename": "TheQueue.js",
-      "path": "/Users/okuni/Projects/the/packages/queue/lib"
-    },
-    "order": 4
-  },
-  {
-    "id": "TheQueue#start",
-    "longname": "TheQueue#start",
-    "name": "start",
-    "kind": "function",
-    "scope": "instance",
-    "description": "Start queue",
-    "memberof": "TheQueue",
-    "params": [],
-    "meta": {
-      "lineno": 61,
+      "lineno": 43,
       "filename": "TheQueue.js",
       "path": "/Users/okuni/Projects/the/packages/queue/lib"
     },
     "order": 5
   },
   {
-    "id": "TheQueue#stop",
-    "longname": "TheQueue#stop",
-    "name": "stop",
+    "id": "module:@the-/queue.TheQueue#start",
+    "longname": "module:@the-/queue.TheQueue#start",
+    "name": "start",
     "kind": "function",
     "scope": "instance",
-    "description": "Stop queue",
-    "memberof": "TheQueue",
+    "description": "Start queue",
+    "memberof": "module:@the-/queue.TheQueue",
     "params": [],
     "meta": {
-      "lineno": 69,
+      "lineno": 66,
       "filename": "TheQueue.js",
       "path": "/Users/okuni/Projects/the/packages/queue/lib"
     },
     "order": 6
   },
   {
-    "id": "TheQueue#wait",
-    "longname": "TheQueue#wait",
+    "id": "module:@the-/queue.TheQueue#stop",
+    "longname": "module:@the-/queue.TheQueue#stop",
+    "name": "stop",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Stop queue",
+    "memberof": "module:@the-/queue.TheQueue",
+    "params": [],
+    "meta": {
+      "lineno": 74,
+      "filename": "TheQueue.js",
+      "path": "/Users/okuni/Projects/the/packages/queue/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "module:@the-/queue.TheQueue#wait",
+    "longname": "module:@the-/queue.TheQueue#wait",
     "name": "wait",
     "kind": "function",
     "scope": "instance",
     "description": "Wait until queue got empty",
-    "memberof": "TheQueue",
+    "memberof": "module:@the-/queue.TheQueue",
     "params": [
       {
         "type": {
@@ -125,27 +164,26 @@
       }
     ],
     "meta": {
-      "lineno": 102,
+      "lineno": 107,
       "filename": "TheQueue.js",
       "path": "/Users/okuni/Projects/the/packages/queue/lib"
     },
     "async": true,
-    "order": 7
+    "order": 8
   },
   {
-    "id": "module:@the-/queue.default",
-    "longname": "module:@the-/queue.default",
-    "name": "default",
-    "kind": "namespace",
+    "id": "module:@the-/queue.TheQueue",
+    "longname": "module:@the-/queue.TheQueue",
+    "name": "TheQueue",
+    "kind": "class",
     "scope": "static",
-    "description": "Default exports",
     "memberof": "module:@the-/queue",
     "meta": {
       "lineno": 1,
-      "filename": "default.js",
+      "filename": "TheQueue.js",
       "path": "/Users/okuni/Projects/the/packages/queue/lib"
     },
-    "order": 1
+    "order": 3
   },
   {
     "id": "module:@the-/queue.create",
@@ -181,5 +219,20 @@
       "path": "/Users/okuni/Projects/the/packages/queue/lib"
     },
     "order": 0
+  },
+  {
+    "id": "module:@the-/queue.default",
+    "longname": "module:@the-/queue.default",
+    "name": "default",
+    "kind": "function",
+    "scope": "static",
+    "description": "Alias of {@link module:@the-/queue}",
+    "memberof": "module:@the-/queue",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/queue/lib"
+    },
+    "order": 1
   }
 ]

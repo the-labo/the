@@ -1,5 +1,6 @@
 /**
  * Mixin for moment
+ * @memberOf module:@the-/date.mixins
  * @function momentMix
  * @param {function} Class
  * @returns {function} Class
@@ -16,9 +17,13 @@ require('moment/locale/en-gb')
 require('moment/locale/en-ie')
 require('moment/locale/en-nz')
 
-/** @lends momentMix */
+/** @lends module:@the-/date.mixins.momentMix */
 function momentMix(Class) {
-  /** @class MomentMixed */
+  /**
+   * @memberOf module:@the-/date.mixins.momentMix
+   * @inner
+   * @class MomentMixed
+   */
   class MomentMixed extends Class {
     normalizeMomentUnits(unit) {
       return moment.normalizeUnits(unit)

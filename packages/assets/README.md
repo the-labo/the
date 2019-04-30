@@ -89,11 +89,14 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
-- [#installTo(dirname,options)](./doc/api/api.md#TheAssets#installTo)
+- [#installTo(dirname,options)](./doc/api/api.md#module_@the-/assets.TheAssets#installTo)
 - [.create(args)](./doc/api/api.md#module_@the-/assets.create)
-- [.installFiles(srcDir,destDir,options)](./doc/api/api.md#module_@the-/assets.installFiles)
+- [.default(args)](./doc/api/api.md#module_@the-/assets.default)
+- [.installFiles(srcDir,destDir,options)](./doc/api/api.md#module_@the-/assets.helpers.installFiles)
 ### class
 - [.TheAssets](./doc/api/api.md#module_@the-/assets.TheAssets)
+### namespace
+- [.helpers](./doc/api/api.md#module_@the-/assets.helpers)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -1,5 +1,5 @@
 /**
- * @memberOf module:the-code
+ * @memberof module:@the-/code.ast.nodes
  * @function sortMethodsOnClassNode
  */
 'use strict'
@@ -10,7 +10,7 @@ const {
   compareStrings,
 } = require('../../helpers/arrayHelper')
 
-/** @lends sortMethodsOnClassNode */
+/** @lends module:@the-/code.ast.nodes.sortMethodsOnClassNode */
 function sortMethodsOnClassNode(ClassNode, { swap }) {
   const ClassMethods = [
     ...ClassNode.body.filter(byType('ClassMethod')),

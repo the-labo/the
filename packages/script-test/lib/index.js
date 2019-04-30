@@ -1,7 +1,7 @@
 /**
  * Test script for the-project
  * @module @the-/script-test
- * @version 15.2.2
+ * @version 15.4.0
  */
 
 'use strict'

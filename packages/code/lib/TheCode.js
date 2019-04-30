@@ -1,6 +1,7 @@
 /**
- * @memberof module:the-code
+ * @memberof module:@the-/code
  * @class TheCode
+ * @param {Object} [config={}] - Code config
  */
 'use strict'
 
@@ -13,7 +14,7 @@ const FormatCache = require('./helpers/FormatCache')
 const p = require('./processors')
 const debug = require('debug')('the:code')
 
-/** @lends TheCode */
+/** @lends module:@the-/code.TheCode */
 class TheCode {
   constructor(config = {}) {
     const {

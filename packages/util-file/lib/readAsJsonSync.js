@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/util-file
  * @function readAsJsonSync
  * @param {string} filename
  * @returns {Object}
@@ -10,7 +11,7 @@ const JSON5 = require('json5')
 const isJSON5File = require('./isJSON5File')
 const statSync = require('./statSync')
 
-/** @lends readAsJsonSync */
+/** @lends module:@the-/util-file.readAsJsonSync */
 function readAsJsonSync(filename) {
   const stat = statSync(filename)
   if (!stat) {

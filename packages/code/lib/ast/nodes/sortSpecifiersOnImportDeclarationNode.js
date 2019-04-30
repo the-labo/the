@@ -1,5 +1,5 @@
 /**
- * @memberOf module:the-code
+ * @memberof module:@the-/code.ast.nodes
  * @function sortSpecifiersOnImportDeclarationNode
  */
 'use strict'
@@ -10,7 +10,7 @@ const specifierName = (specifier) => {
   return specifier.imported.name
 }
 
-/** @lends sortSpecifiersOnImportDeclarationNode */
+/** @lends module:@the-/code.ast.nodes.sortSpecifiersOnImportDeclarationNode */
 function sortSpecifiersOnImportDeclarationNode(ImportDeclaration, { swap }) {
   const { specifiers } = ImportDeclaration
   if (specifiers.length === 0) {

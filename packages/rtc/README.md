@@ -72,14 +72,14 @@ const { TheRTC } = require('@the-/rtc')
 async function tryExample() {
   const rtc = new TheRTC({
     stun: {
-      url: 'stun:stun.l.google.com:19302'
-    },
-    turn: {
-      url: 'turn:your.turn.servers.here',
-      secret: 'xxxxxxxxxxxxxxxx',
-      expiry: 86400
+      url: 'stun:stun.l.google.com:19302',
     },
     topology: 'mesh',
+    turn: {
+      expiry: 86400,
+      secret: 'xxxxxxxxxxxxxxxx',
+      url: 'turn:your.turn.servers.here',
+    },
   })
 
   const port = 3000
@@ -94,24 +94,28 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [default](./doc/api/api.md#module_default)
-- [@the-/rtc](./doc/api/api.md#module_@the-/rtc)
-- [constants](./doc/api/api.md#module_constants)
-- [helpers](./doc/api/api.md#module_helpers)
-- [mixins](./doc/api/api.md#module_mixins)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheRTC](./doc/api/api.md#TheRTC)
+- [SFUProxy](./doc/api/api.md#SFUProxy)
+- [SFUProxyEdge](./doc/api/api.md#SFUProxyEdge)
+- [SFUProxyEdgeAnswerer](./doc/api/api.md#SFUProxyEdgeAnswerer)
+- [SFUProxyEdgeOfferer](./doc/api/api.md#SFUProxyEdgeOfferer)
+- [SFUProxyPool](./doc/api/api.md#SFUProxyPool)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [handleUnknownKeys()](./doc/api/api.md#handleUnknownKeys)
+- [parseTurn secret(secret)](./doc/api/api.md#parseTurn secret)
+- [httpMix(Class)](./doc/api/api.md#httpMix)
+- [ioMix(Class)](./doc/api/api.md#ioMix)
+- [sfuMix(Class)](./doc/api/api.md#sfuMix)
+- [turnMix(Class)](./doc/api/api.md#turnMix)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

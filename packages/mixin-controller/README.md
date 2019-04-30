@@ -89,21 +89,24 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/mixin-controller](./doc/api/api.md#module_@the-/mixin-controller)
-- [helpers](./doc/api/api.md#module_helpers)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### function
+- [compose(mixins)](./doc/api/api.md#compose)
+- [withAuthorized()](./doc/api/api.md#withAuthorized)
+- [withClient()](./doc/api/api.md#withClient)
+- [withDebug(Base)](./doc/api/api.md#withDebug)
+- [withListen()](./doc/api/api.md#withListen)
+- [withPreference()](./doc/api/api.md#withPreference)
+- [withSeal()](./doc/api/api.md#withSeal)
+- [getAllPropertyDescriptors()](./doc/api/api.md#getAllPropertyDescriptors)
+- [instanceMethodNamesFor()](./doc/api/api.md#instanceMethodNamesFor)
+- [omitLongString()](./doc/api/api.md#omitLongString)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

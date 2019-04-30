@@ -5,6 +5,9 @@
     "name": "@the-/util-path",
     "kind": "module",
     "description": "Utility for file path",
+    "version": "15.4.1",
+    "license": "MIT",
+    "typicalname": "utilPath",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -13,11 +16,24 @@
     "order": 1
   },
   {
-    "id": "findupDir",
-    "longname": "findupDir",
+    "id": "module:@the-/util-path.findupDir",
+    "longname": "module:@the-/util-path.findupDir",
     "name": "findupDir",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
+    "description": "Find up directory contains path",
+    "memberof": "module:@the-/util-path",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Base directory",
+        "name": "basedir"
+      }
+    ],
     "meta": {
       "lineno": 1,
       "filename": "findupDir.js",

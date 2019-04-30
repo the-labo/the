@@ -1,11 +1,16 @@
 /**
+ * @memberOf module:@the-/queue
  * @class TheQueue
+ * @param {Object} [options={}]
+ * @param {Boolean} [options.autoStart] - Auto start
+ * @param {number} [options.max=1000]
+ * @param {string} [options.name]
  */
 'use strict'
 
 const asleep = require('asleep')
 
-/** @lends TheQueue */
+/** @lends module:@the-/queue.TheQueue */
 class TheQueue {
   constructor(options = {}) {
     const { autoStart = false, max = 1000, name = '(anonymous)' } = options

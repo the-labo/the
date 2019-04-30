@@ -5,21 +5,24 @@
     "name": "@the-/assets",
     "kind": "module",
     "description": "Assets for the-framework",
+    "version": "15.4.1",
+    "license": "MIT",
+    "typicalname": "assets",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/assets/lib"
     },
-    "order": 1
+    "order": 2
   },
   {
-    "id": "TheAssets#installTo",
-    "longname": "TheAssets#installTo",
+    "id": "module:@the-/assets.TheAssets#installTo",
+    "longname": "module:@the-/assets.TheAssets#installTo",
     "name": "installTo",
     "kind": "function",
     "scope": "instance",
     "description": "Install assets into directory",
-    "memberof": "TheAssets",
+    "memberof": "module:@the-/assets.TheAssets",
     "params": [
       {
         "type": {
@@ -63,12 +66,12 @@
       }
     ],
     "meta": {
-      "lineno": 18,
+      "lineno": 19,
       "filename": "TheAssets.js",
       "path": "/Users/okuni/Projects/the/packages/assets/lib"
     },
     "async": true,
-    "order": 3
+    "order": 4
   },
   {
     "id": "module:@the-/assets.TheAssets",
@@ -82,7 +85,23 @@
       "filename": "TheAssets.js",
       "path": "/Users/okuni/Projects/the/packages/assets/lib"
     },
-    "order": 2
+    "order": 3
+  },
+  {
+    "id": "module:@the-/assets.helpers",
+    "longname": "module:@the-/assets.helpers",
+    "name": "helpers",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Assets helper functions",
+    "memberof": "module:@the-/assets",
+    "access": "protected",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/assets/lib/helpers"
+    },
+    "order": 5
   },
   {
     "id": "module:@the-/assets.create",
@@ -107,7 +126,7 @@
       {
         "type": {
           "names": [
-            "TheAssets"
+            "module:@the-/assets.TheAssets"
           ]
         }
       }
@@ -120,13 +139,48 @@
     "order": 0
   },
   {
-    "id": "module:@the-/assets.installFiles",
-    "longname": "module:@the-/assets.installFiles",
+    "id": "module:@the-/assets.default",
+    "longname": "module:@the-/assets.default",
+    "name": "default",
+    "kind": "function",
+    "scope": "static",
+    "description": "Default exports. Alias of {@link module:@the-/assets.create}",
+    "memberof": "module:@the-/assets",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "module:@the-/assets.TheAssert.TheAssert"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/assets/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/assets.helpers.installFiles",
+    "longname": "module:@the-/assets.helpers.installFiles",
     "name": "installFiles",
     "kind": "function",
     "scope": "static",
     "description": "Install files",
-    "memberof": "module:@the-/assets",
+    "memberof": "module:@the-/assets.helpers",
     "params": [
       {
         "type": {
@@ -178,11 +232,12 @@
         }
       }
     ],
+    "access": "protected",
     "meta": {
       "lineno": 1,
       "filename": "installFiles.js",
       "path": "/Users/okuni/Projects/the/packages/assets/lib/helpers"
     },
-    "order": 4
+    "order": 6
   }
 ]

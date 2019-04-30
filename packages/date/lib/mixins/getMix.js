@@ -1,17 +1,21 @@
 /**
  * Mixin for get
- * @private
- * @memberOf module:@the-/date
+ * @protected
+ * @memberOf module:@the-/date.mixins
  * @function getMix
  * @param {function} Class
  * @returns {function} Class
  */
 'use strict'
 
-/** @lends getMix */
+/** @lends module:@the-/date.mixins.getMix */
 function getMix (Class) {
   const units = [ 'year', 'month', 'date', 'hour', 'minute', 'second', 'millisecond' ]
-  /** @class GetMixed */
+  /**
+   * @inner
+   * @memberOf module:@the-/date.mixins.getMix
+   * @class GetMixed
+   */
   class GetMixed extends Class {
     /**
      * Get value of

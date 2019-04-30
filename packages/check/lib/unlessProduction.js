@@ -1,5 +1,6 @@
 /**
  * Do unless production env
+ * @memberOf module:@the-/check
  * @function unlessProduction
  * @param {function} handler
  */
@@ -7,7 +8,7 @@
 
 const isProduction = require('./isProduction')
 
-/** @lends unlessProduction */
+/** @lends module:@the-/check.unlessProduction */
 function unlessProduction(handler) {
   if (isProduction()) {
     return true

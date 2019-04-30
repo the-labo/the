@@ -5,12 +5,15 @@
     "name": "@the-/context",
     "kind": "module",
     "description": "React context for the-components",
+    "version": "15.4.2",
+    "license": "MIT",
+    "typicalname": "context",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/context/lib"
     },
-    "order": 1
+    "order": 2
   },
   {
     "id": "@the-/context.TheContext()",
@@ -40,25 +43,25 @@
         "name": "options"
       }
     ],
-    "order": 3
+    "order": 4
   },
   {
-    "id": "module:@the-/context.ContextEntry()",
-    "longname": "module:@the-/context.ContextEntry",
+    "id": "module:@the-/context.helpers.ContextEntry()",
+    "longname": "module:@the-/context.helpers.ContextEntry",
     "name": "ContextEntry",
     "kind": "constructor",
     "description": "Entry component",
-    "memberof": "module:@the-/context.ContextEntry",
-    "order": 8
+    "memberof": "module:@the-/context.helpers.ContextEntry",
+    "order": 9
   },
   {
-    "id": "TheContext#del",
-    "longname": "TheContext#del",
+    "id": "@the-/context.TheContext#del",
+    "longname": "@the-/context.TheContext#del",
     "name": "del",
     "kind": "function",
     "scope": "instance",
     "description": "Delete value from store",
-    "memberof": "TheContext",
+    "memberof": "@the-/context.TheContext",
     "params": [
       {
         "type": {
@@ -74,16 +77,16 @@
       "filename": "TheContext.js",
       "path": "/Users/okuni/Projects/the/packages/context/lib"
     },
-    "order": 4
+    "order": 5
   },
   {
-    "id": "TheContext#get",
-    "longname": "TheContext#get",
+    "id": "@the-/context.TheContext#get",
+    "longname": "@the-/context.TheContext#get",
     "name": "get",
     "kind": "function",
     "scope": "instance",
     "description": "Get value from store",
-    "memberof": "TheContext",
+    "memberof": "@the-/context.TheContext",
     "params": [
       {
         "type": {
@@ -119,16 +122,16 @@
       "filename": "TheContext.js",
       "path": "/Users/okuni/Projects/the/packages/context/lib"
     },
-    "order": 5
+    "order": 6
   },
   {
-    "id": "TheContext#set",
-    "longname": "TheContext#set",
+    "id": "@the-/context.TheContext#set",
+    "longname": "@the-/context.TheContext#set",
     "name": "set",
     "kind": "function",
     "scope": "instance",
     "description": "Set values to store",
-    "memberof": "TheContext",
+    "memberof": "@the-/context.TheContext",
     "params": [
       {
         "type": {
@@ -145,7 +148,7 @@
       "filename": "TheContext.js",
       "path": "/Users/okuni/Projects/the/packages/context/lib"
     },
-    "order": 6
+    "order": 7
   },
   {
     "id": "@the-/context.TheContext",
@@ -159,21 +162,37 @@
       "filename": "TheContext.js",
       "path": "/Users/okuni/Projects/the/packages/context/lib"
     },
-    "order": 2
+    "order": 3
   },
   {
-    "id": "module:@the-/context.ContextEntry",
-    "longname": "module:@the-/context.ContextEntry",
+    "id": "module:@the-/context.helpers.ContextEntry",
+    "longname": "module:@the-/context.helpers.ContextEntry",
     "name": "ContextEntry",
     "kind": "class",
     "scope": "static",
-    "memberof": "module:@the-/context",
+    "memberof": "module:@the-/context.helpers",
     "meta": {
       "lineno": 1,
       "filename": "contextEntryFor.js",
       "path": "/Users/okuni/Projects/the/packages/context/lib/helpers"
     },
-    "order": 7
+    "order": 8
+  },
+  {
+    "id": "module:@the-/context.helpers",
+    "longname": "module:@the-/context.helpers",
+    "name": "helpers",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Client helper functions",
+    "memberof": "module:@the-/context",
+    "access": "protected",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/context/lib/helpers"
+    },
+    "order": 11
   },
   {
     "id": "module:@the-/context.create",
@@ -211,18 +230,33 @@
     "order": 0
   },
   {
-    "id": "module:@the-/context.ContextRootFor",
-    "longname": "module:@the-/context.ContextRootFor",
+    "id": "module:@the-/context.default",
+    "longname": "module:@the-/context.default",
+    "name": "default",
+    "kind": "function",
+    "scope": "static",
+    "description": "Alias of {@link module:@the-/context.create}",
+    "memberof": "module:@the-/context",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/context/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/context.helpers.ContextRootFor",
+    "longname": "module:@the-/context.helpers.ContextRootFor",
     "name": "ContextRootFor",
     "kind": "function",
     "scope": "static",
     "description": "ContextRoot component",
-    "memberof": "module:@the-/context",
+    "memberof": "module:@the-/context.helpers",
     "meta": {
       "lineno": 1,
       "filename": "contextRootFor.js",
       "path": "/Users/okuni/Projects/the/packages/context/lib/helpers"
     },
-    "order": 9
+    "order": 10
   }
 ]

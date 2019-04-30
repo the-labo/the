@@ -1,36 +1,13 @@
 [
   {
-    "id": "module:analyzer",
-    "longname": "module:analyzer",
-    "name": "analyzer",
-    "kind": "module",
-    "description": "Analyze node",
-    "meta": {
-      "lineno": 1,
-      "filename": "analyser.js",
-      "path": "/Users/okuni/Projects/the/packages/ast/lib"
-    },
-    "order": 0
-  },
-  {
-    "id": "module:finder",
-    "longname": "module:finder",
-    "name": "finder",
-    "kind": "module",
-    "description": "Find node from node",
-    "meta": {
-      "lineno": 1,
-      "filename": "finder.js",
-      "path": "/Users/okuni/Projects/the/packages/ast/lib"
-    },
-    "order": 1
-  },
-  {
     "id": "module:@the-/ast",
     "longname": "module:@the-/ast",
     "name": "@the-/ast",
     "kind": "module",
     "description": "AST (abstract syntax tree) parser",
+    "version": "15.4.2",
+    "license": "MIT",
+    "typicalname": "ast",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -39,11 +16,43 @@
     "order": 3
   },
   {
-    "id": "module:constants",
-    "longname": "module:constants",
+    "id": "module:@the-/ast.analyzer",
+    "longname": "module:@the-/ast.analyzer",
+    "name": "analyzer",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Analyze node",
+    "memberof": "module:@the-/ast",
+    "meta": {
+      "lineno": 1,
+      "filename": "analyser.js",
+      "path": "/Users/okuni/Projects/the/packages/ast/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/ast.finder",
+    "longname": "module:@the-/ast.finder",
+    "name": "finder",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Find node from node",
+    "memberof": "module:@the-/ast",
+    "meta": {
+      "lineno": 1,
+      "filename": "finder.js",
+      "path": "/Users/okuni/Projects/the/packages/ast/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/ast.constants",
+    "longname": "module:@the-/ast.constants",
     "name": "constants",
-    "kind": "module",
+    "kind": "namespace",
+    "scope": "static",
     "description": "Constant variables",
+    "memberof": "module:@the-/ast",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -52,12 +61,71 @@
     "order": 5
   },
   {
-    "id": "parse",
-    "longname": "parse",
+    "id": "module:@the-/ast.NodeTypes",
+    "longname": "module:@the-/ast.NodeTypes",
+    "name": "NodeTypes",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Node types",
+    "memberof": "module:@the-/ast",
+    "meta": {
+      "lineno": 1,
+      "filename": "NodeTypes.js",
+      "path": "/Users/okuni/Projects/the/packages/ast/lib/constants"
+    },
+    "order": 6
+  },
+  {
+    "id": "module:@the-/ast.finder.findByTypes",
+    "longname": "module:@the-/ast.finder.findByTypes",
+    "name": "findByTypes",
+    "kind": "function",
+    "scope": "static",
+    "description": "Find nodes by types",
+    "memberof": "module:@the-/ast.finder",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Node"
+          ]
+        },
+        "name": "node"
+      },
+      {
+        "type": {
+          "names": [
+            "Array.<string>"
+          ]
+        },
+        "name": "types"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Array.<Node>"
+          ]
+        },
+        "description": "Found nodes"
+      }
+    ],
+    "meta": {
+      "lineno": 19,
+      "filename": "finder.js",
+      "path": "/Users/okuni/Projects/the/packages/ast/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "module:@the-/ast.parse",
+    "longname": "module:@the-/ast.parse",
     "name": "parse",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Parse source code",
+    "memberof": "module:@the-/ast",
     "params": [
       {
         "type": {
@@ -106,49 +174,6 @@
     "order": 4
   },
   {
-    "id": "finder.findByTypes",
-    "longname": "finder.findByTypes",
-    "name": "findByTypes",
-    "kind": "function",
-    "scope": "static",
-    "description": "Find nodes by types",
-    "memberof": "finder",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "Node"
-          ]
-        },
-        "name": "node"
-      },
-      {
-        "type": {
-          "names": [
-            "Array.<string>"
-          ]
-        },
-        "name": "types"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Array.<Node>"
-          ]
-        },
-        "description": "Found nodes"
-      }
-    ],
-    "meta": {
-      "lineno": 18,
-      "filename": "finder.js",
-      "path": "/Users/okuni/Projects/the/packages/ast/lib"
-    },
-    "order": 2
-  },
-  {
     "id": "module.exports",
     "longname": "module.exports",
     "name": "exports",
@@ -161,6 +186,6 @@
       "filename": "explode.js",
       "path": "/Users/okuni/Projects/the/packages/ast/lib/walk"
     },
-    "order": 6
+    "order": 7
   }
 ]

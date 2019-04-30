@@ -9,7 +9,7 @@
 
 const TheHandle = require('./TheHandle')
 
-/** @lends create */
+/** @lends module:@the-/handle.create */
 function create(...args) {
   return new TheHandle(...args)
 }

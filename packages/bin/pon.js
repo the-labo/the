@@ -1,7 +1,6 @@
 /**
  * As pon tasks
  * @module @the-/bin/pon
- * @returns {function} Task function
  */
 'use strict'
 

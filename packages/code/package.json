@@ -1,7 +1,7 @@
 {
   "name": "@the-/code",
   "description": "Code formatter of the-frameworks",
-  "version": "15.4.0",
+  "version": "15.4.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -15,8 +15,8 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/ast": "^15.2.2",
-    "@the-/util-file": "^15.2.2",
+    "@the-/ast": "^15.4.1",
+    "@the-/util-file": "^15.4.2",
     "@the-/util-path": "^15.2.0",
     "aglob": "^3.0.2",
     "asfs": "^2.2.3",
@@ -51,7 +51,6 @@
     "build": "../../misc/scripts/pkgBuild.js",
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
-    "test": "../../misc/scripts/pkgTest.js",
-    "watch": "the-script-build -w"
+    "test": "../../misc/scripts/pkgTest.js"
   }
 }

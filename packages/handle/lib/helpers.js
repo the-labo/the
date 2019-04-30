@@ -1,5 +1,10 @@
+/**
+ * @memberOf module:@the-/handle
+ * @namespace helpers
+ */
 'use strict'
 
+/** @lends module:@the-/handle.helpers */
 module.exports = {
   allMethodNames(instance) {
     const names = []

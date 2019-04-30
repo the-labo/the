@@ -1,12 +1,18 @@
 /**
  * Mixin for writeOnce
+ * @memberOf module:@the-/resource.mixins
  * @function writeOnceMix
  * @param {function} Class
  * @returns {function}
  */
 'use strict'
 
+/** @lends module:@the-/resource.mixins.writeOnceMix */
 function writeOnceMix(Class) {
+  /**
+   * @memberOf module:@the-/resource.mixins.writeOnceMix
+   * @inner
+   */
   class WriteOnce extends Class {
     destroy() {
       this.throwWriteOnceError('destroy')

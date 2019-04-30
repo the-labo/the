@@ -12,7 +12,7 @@ const { TheState } = require('@the-/state')
 const contextEntryFor = require('./helpers/contextEntryFor')
 const contextRootFor = require('./helpers/contextRootFor')
 
-/** @lends TheContext */
+/** @lends @the-/context.TheContext */
 class TheContext {
   constructor(values = {}, options = {}) {
     const { store = new TheState({ defaults: values }) } = options

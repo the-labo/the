@@ -87,20 +87,23 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/hash](./doc/api/api.md#module_@the-/hash)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### function
+- [default()](./doc/api/api.md#default)
+- [#get(key)](./doc/api/api.md#module_@the-/hash.TheHash#get)
+- [#has(key)](./doc/api/api.md#module_@the-/hash.TheHash#has)
+- [#set(key,value)](./doc/api/api.md#module_@the-/hash.TheHash#set)
+- [#toProxy(options)](./doc/api/api.md#module_@the-/hash.TheHash#toProxy)
+- [.create(args)](./doc/api/api.md#module_@the-/hash.create)
+- [.proxy(src,options)](./doc/api/api.md#module_@the-/hash.proxy)
+### class
+- [.TheHash](./doc/api/api.md#module_@the-/hash.TheHash)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

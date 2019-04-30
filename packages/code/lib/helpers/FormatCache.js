@@ -1,12 +1,12 @@
 /**
- * @memberOf module:the-code/lib/helpers
+ * @memberOf module:@the-/code
  * @class FormatCache
  */
 'use strict'
 
 const { readAsJson, unlinkAsync, writeAsJson } = require('@the-/util-file')
 
-/** @lends FormatCache */
+/** @lends module:@the-/code.FormatCache */
 class FormatCache {
   constructor(filename) {
     this.filename = filename

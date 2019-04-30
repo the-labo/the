@@ -92,11 +92,11 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
-- [#exec(args)](./doc/api/api.md#TheBin#exec)
-- [#exists()](./doc/api/api.md#TheBin#exists)
-- [#satisfiesVersion(versionString)](./doc/api/api.md#TheBin#satisfiesVersion)
-- [#verify(options)](./doc/api/api.md#TheBin#verify)
-- [#version()](./doc/api/api.md#TheBin#version)
+- [#exec(args)](./doc/api/api.md#module_@the-/bin.TheBin#exec)
+- [#exists()](./doc/api/api.md#module_@the-/bin.TheBin#exists)
+- [#satisfiesVersion(versionString)](./doc/api/api.md#module_@the-/bin.TheBin#satisfiesVersion)
+- [#verify(options)](./doc/api/api.md#module_@the-/bin.TheBin#verify)
+- [#version()](./doc/api/api.md#module_@the-/bin.TheBin#version)
 - [.create(args)](./doc/api/api.md#module_@the-/bin.create)
 ### class
 - [.TheBin](./doc/api/api.md#module_@the-/bin.TheBin)

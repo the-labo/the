@@ -1,5 +1,5 @@
 /**
- * @memberof module:the-code
+ * @memberof module:@the-/code.ast.nodes
  */
 'use strict'
 const { finder } = require('@the-/ast')

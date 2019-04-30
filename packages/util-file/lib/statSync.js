@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/util-file
  * @function statSync
  * @param {string} filename
  */
@@ -6,7 +7,7 @@
 
 const fs = require('fs')
 
-/** @lends statSync */
+/** @lends module:@the-/util-file.statSync */
 function statSync(filename) {
   try {
     return fs.statSync(filename)

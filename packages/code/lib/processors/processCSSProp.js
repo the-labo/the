@@ -1,5 +1,5 @@
 /**
- * @memberOf module:the-code/lib/processors
+ * @memberOf module:@the-/code.processors
  * @function processCSSProp
  * @param {string} content
  * @returns {Promise.<string>} processed
@@ -11,7 +11,7 @@ const contentAccess = require('../helpers/contentAccess')
 const { bindCssRange } = require('../helpers/cssHelper')
 const parseCSS = require('../parsers/parseCSS')
 
-/** @lends processCSSProp */
+/** @lends module:@the-/code.processors.processCSSProp */
 async function processCSSProp(content) {
   return applyConverter(content, async (content) => {
     const { indexOf, swap } = contentAccess(content)

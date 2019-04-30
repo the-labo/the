@@ -5,25 +5,48 @@
 ## @the-/context
 React context for the-components
 
+**Version**: 15.4.2  
+**License**: MIT  
 
 * [@the-/context](#module_@the-/context)
-    * [.ContextEntry](#module_@the-/context.ContextEntry)
-        * [new ContextEntry()](#new_module_@the-/context.ContextEntry_new)
+    * [.helpers](#module_@the-/context.helpers) : <code>object</code>
+        * [.ContextEntry](#module_@the-/context.helpers.ContextEntry)
+            * [new ContextEntry()](#new_module_@the-/context.helpers.ContextEntry_new)
+        * [.ContextRootFor()](#module_@the-/context.helpers.ContextRootFor)
     * [.create(...args)](#module_@the-/context.create) ⇒ <code>TheContext</code>
-    * [.ContextRootFor()](#module_@the-/context.ContextRootFor)
+    * [.default()](#module_@the-/context.default)
 
-<a name="module_@the-/context.ContextEntry"></a>
+<a name="module_@the-/context.helpers"></a>
 
-### @the-/context.ContextEntry
-**Kind**: static class of [<code>@the-/context</code>](#module_@the-/context)  
-<a name="new_module_@the-/context.ContextEntry_new"></a>
+### context.helpers : <code>object</code>
+Client helper functions
 
-#### new ContextEntry()
+**Kind**: static namespace of [<code>@the-/context</code>](#module_@the-/context)  
+**Access**: protected  
+
+* [.helpers](#module_@the-/context.helpers) : <code>object</code>
+    * [.ContextEntry](#module_@the-/context.helpers.ContextEntry)
+        * [new ContextEntry()](#new_module_@the-/context.helpers.ContextEntry_new)
+    * [.ContextRootFor()](#module_@the-/context.helpers.ContextRootFor)
+
+<a name="module_@the-/context.helpers.ContextEntry"></a>
+
+#### helpers.ContextEntry
+**Kind**: static class of [<code>helpers</code>](#module_@the-/context.helpers)  
+<a name="new_module_@the-/context.helpers.ContextEntry_new"></a>
+
+##### new ContextEntry()
 Entry component
 
+<a name="module_@the-/context.helpers.ContextRootFor"></a>
+
+#### helpers.ContextRootFor()
+ContextRoot component
+
+**Kind**: static method of [<code>helpers</code>](#module_@the-/context.helpers)  
 <a name="module_@the-/context.create"></a>
 
-### @the-/context.create(...args) ⇒ <code>TheContext</code>
+### context.create(...args) ⇒ <code>TheContext</code>
 Create a TheContext instance
 
 **Kind**: static method of [<code>@the-/context</code>](#module_@the-/context)  
@@ -32,9 +55,9 @@ Create a TheContext instance
 | --- | --- |
 | ...args | <code>\*</code> | 
 
-<a name="module_@the-/context.ContextRootFor"></a>
+<a name="module_@the-/context.default"></a>
 
-### @the-/context.ContextRootFor()
-ContextRoot component
+### context.default()
+Alias of [create](#module_@the-/context.create)
 
 **Kind**: static method of [<code>@the-/context</code>](#module_@the-/context)  

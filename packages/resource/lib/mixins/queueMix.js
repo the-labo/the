@@ -1,5 +1,6 @@
 /**
  * Mixin for queue
+ * @memberOf module:@the-/resource.mixins
  * @function queueMix
  * @param {function} Class
  * @returns {function} Mixed class
@@ -8,9 +9,13 @@
 
 const asleep = require('asleep')
 
-/** @lends queueMix */
+/** @lends module:@the-/resource.mixins.queueMix */
 function queueMix(Class) {
-  return class QueueMixed extends Class {
+  /**
+   * @memberOf module:@the-/resource.mixins.queueMix
+   * @inner
+   */
+  class QueueMixed extends Class {
     constructor() {
       super(...arguments)
       this.creatingQueue = []
@@ -49,6 +54,7 @@ function queueMix(Class) {
       return created
     }
   }
+  return QueueMix
 }
 
 module.exports = queueMix

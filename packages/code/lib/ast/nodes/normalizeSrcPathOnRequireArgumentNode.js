@@ -3,7 +3,7 @@
 const path = require('path')
 const isRelative = (filename) => /^\.\/|^\.\./.test(filename)
 
-/** @lends normalizeSrcPathOnRequireArgumentNode */
+/** @lends module:@the-/code.ast.nodes.normalizeSrcPathOnRequireArgumentNode */
 function normalizeSrcPathOnRequireArgumentNode(
   ArgumentNode,
   { dirname, replace },

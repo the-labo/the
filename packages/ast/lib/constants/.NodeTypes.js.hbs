@@ -1,11 +1,12 @@
 /**
  * Node types
- * @enum {string} NodeTypes
+ * @memberOf module:@the-/ast
+ * @namespace NodeTypes
  */
 'use strict'
 
 module.exports = Object.freeze(
-  /** @lends NodeTypes */
+  /** @lends module:@the-/ast.NodeTypes */
   {
     {{#each types}}
     {{this}}: '{{this}}',

@@ -25,9 +25,8 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/script-build": "file:../script-build",
-    "@the-/script-doc": "file:../script-doc",
-    "@the-/script-test": "file:../script-test"
+    "@the-/ui-demo": "file:../ui-demo",
+    "coz": "^7.0.19"
   },
   "engines": {
     "node": ">=10",
@@ -49,10 +48,9 @@
   },
   "repository": "the-labo/the",
   "scripts": {
-    "build": "the-script-build",
-    "doc": "the-script-doc",
-    "prepare": "../../misc/scripts/install_if_needed.sh;npm run build && npm run doc",
-    "test": "the-script-test",
-    "watch": "the-script-build -w"
+    "build": "../../misc/scripts/pkgBuild.js",
+    "doc": "../../misc/scripts/pkgDoc.js",
+    "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
+    "test": "../../misc/scripts/pkgTest.js"
   }
 }

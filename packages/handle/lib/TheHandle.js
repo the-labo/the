@@ -17,7 +17,7 @@ const shortNameOfScene = (n) => n && n.replace(/_scene$|Scene$/, '')
 
 const { allMethodNames, setByNamepath } = helpers
 
-/** @lends TheHandle */
+/** @lends module:@the-/handle.TheHandle */
 class TheHandle {
   constructor(config) {
     const { attributes = {}, scenes = {} } = config

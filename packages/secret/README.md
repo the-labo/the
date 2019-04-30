@@ -83,21 +83,26 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/secret](./doc/api/api.md#module_@the-/secret)
-- [mixins](./doc/api/api.md#module_mixins)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheSecret](./doc/api/api.md#TheSecret)
+- [CryptoMixed](./doc/api/api.md#CryptoMixed)
+- [LockMixed](./doc/api/api.md#LockMixed)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [theSecret()](./doc/api/api.md#theSecret)
+- [cryptoMix()](./doc/api/api.md#cryptoMix)
+- [lockMix()](./doc/api/api.md#lockMix)
+- [#decrypt()](./doc/api/api.md#TheSecret#decrypt)
+- [#encrypt()](./doc/api/api.md#TheSecret#encrypt)
+- [#get(name)](./doc/api/api.md#TheSecret#get)
+- [#writeout(filename)](./doc/api/api.md#TheSecret#writeout)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

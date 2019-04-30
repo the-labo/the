@@ -5,7 +5,7 @@
     "name": "@the-/assert",
     "kind": "module",
     "description": "Assert for the-framework",
-    "version": "15.4.0",
+    "version": "15.4.1",
     "license": "MIT",
     "typicalname": "assert",
     "meta": {

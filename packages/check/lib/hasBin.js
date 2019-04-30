@@ -1,5 +1,6 @@
 /**
- *  Check if a bin available
+ * Check if a bin available
+ * @memberOf module:@the-/check
  * @function hasBin
  * @param {string} binName - Name of bin
  * @param {Object} [options={}]
@@ -11,7 +12,7 @@ const fs = require('fs')
 const hasbinCB = require('hasbin')
 const path = require('path')
 
-/** @lends hasBin */
+/** @lends module:@the-/check.hasBin */
 async function hasBin(binName, options = {}) {
   {
     const filename = path.resolve(binName)

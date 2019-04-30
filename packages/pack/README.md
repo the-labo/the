@@ -84,20 +84,23 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/pack](./doc/api/api.md#module_@the-/pack)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### function
+- [#bind()](./doc/api/api.md#module_@the-/pack.ThePack#bind)
+- [#decode(buffer)](./doc/api/api.md#module_@the-/pack.ThePack#decode)
+- [#encode(data)](./doc/api/api.md#module_@the-/pack.ThePack#encode)
+- [.create(args)](./doc/api/api.md#module_@the-/pack.create)
+### class
+- [.ThePack](./doc/api/api.md#module_@the-/pack.ThePack)
+### namespace
+- [.Converters](./doc/api/api.md#module_@the-/pack.Converters)
+- [.default](./doc/api/api.md#module_@the-/pack.default)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

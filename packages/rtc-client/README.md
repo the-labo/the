@@ -71,27 +71,29 @@ Usage
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [default](./doc/api/api.md#module_default)
-- [@the-/rtc-client](./doc/api/api.md#module_@the-/rtc-client)
-- [ChannelNames](./doc/api/api.md#module_ChannelNames)
-- [constants](./doc/api/api.md#module_constants)
-- [IOEvents](./doc/api/api.md#module_IOEvents)
-- [PeerEvents](./doc/api/api.md#module_PeerEvents)
-- [PeerPurposes](./doc/api/api.md#module_PeerPurposes)
-- [mixins](./doc/api/api.md#module_mixins)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheRTCClient](./doc/api/api.md#TheRTCClient)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [assertMix(Class)](./doc/api/api.md#assertMix)
+- [channelMix(Class)](./doc/api/api.md#channelMix)
+- [mediaMix(Class)](./doc/api/api.md#mediaMix)
+- [peerMix(Class)](./doc/api/api.md#peerMix)
+- [promiseMix(Class)](./doc/api/api.md#promiseMix)
+- [serializeMix(Class)](./doc/api/api.md#serializeMix)
+- [socketMix(Class)](./doc/api/api.md#socketMix)
+- [#connect(url,options)](./doc/api/api.md#TheRTCClient#connect)
+- [#disconnect()](./doc/api/api.md#TheRTCClient#disconnect)
+- [#publish(topic,payload,options)](./doc/api/api.md#TheRTCClient#publish)
+- [#subscribePubSubChannel(topic,callback)](./doc/api/api.md#ChannelMixed#subscribePubSubChannel)
+- [#unsubscribePubSubChannel(topic,subscription)](./doc/api/api.md#ChannelMixed#unsubscribePubSubChannel)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

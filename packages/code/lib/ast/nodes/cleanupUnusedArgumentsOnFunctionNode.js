@@ -1,11 +1,11 @@
 /**
  * Cleanup unused function node
- * @memberof module:the-code
+ * @memberof module:@the-/code.ast.nodes
  * @function cleanupUnusedOnFunctionArgumentNode
  */
 'use strict'
 
-/** @lends cleanupUnusedArgumentsOnFunctionNode */
+/** @lends module:@the-/code.ast.nodes.cleanupUnusedArgumentsOnFunctionNode */
 function cleanupUnusedArgumentsOnFunctionNode(
   FunctionNode,
   { ConsumingIdentifiers, enclosedRange, replace },

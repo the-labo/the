@@ -5,19 +5,59 @@
 ## @the-/assets
 Assets for the-framework
 
+**Version**: 15.4.1  
+**License**: MIT  
 
 * [@the-/assets](#module_@the-/assets)
     * [.TheAssets](#module_@the-/assets.TheAssets)
-    * [.create(...args)](#module_@the-/assets.create) ⇒ <code>TheAssets</code>
-    * [.installFiles(srcDir, destDir, [options])](#module_@the-/assets.installFiles) ⇒ <code>Promise</code>
+        * [.installTo(dirname, [options])](#module_@the-/assets.TheAssets+installTo) ⇒ <code>Promise</code>
+    * [.helpers](#module_@the-/assets.helpers) : <code>object</code>
+        * [.installFiles(srcDir, destDir, [options])](#module_@the-/assets.helpers.installFiles) ⇒ <code>Promise</code>
+    * [.create(...args)](#module_@the-/assets.create) ⇒ [<code>TheAssets</code>](#module_@the-/assets.TheAssets)
+    * [.default(...args)](#module_@the-/assets.default) ⇒ <code>module:@the-/assets.TheAssert.TheAssert</code>
 
 <a name="module_@the-/assets.TheAssets"></a>
 
-### @the-/assets.TheAssets
+### assets.TheAssets
 **Kind**: static class of [<code>@the-/assets</code>](#module_@the-/assets)  
+<a name="module_@the-/assets.TheAssets+installTo"></a>
+
+#### theAssets.installTo(dirname, [options]) ⇒ <code>Promise</code>
+Install assets into directory
+
+**Kind**: instance method of [<code>TheAssets</code>](#module_@the-/assets.TheAssets)  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| dirname | <code>string</code> |  | Directory name install into |
+| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
+| [options.copy] | <code>boolean</code> | <code>false</code> | Copy files instead of symlinks |
+
+<a name="module_@the-/assets.helpers"></a>
+
+### assets.helpers : <code>object</code>
+Assets helper functions
+
+**Kind**: static namespace of [<code>@the-/assets</code>](#module_@the-/assets)  
+**Access**: protected  
+<a name="module_@the-/assets.helpers.installFiles"></a>
+
+#### helpers.installFiles(srcDir, destDir, [options]) ⇒ <code>Promise</code>
+Install files
+
+**Kind**: static method of [<code>helpers</code>](#module_@the-/assets.helpers)  
+**Access**: protected  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| srcDir | <code>string</code> |  | Source directory path |
+| destDir | <code>string</code> |  | Destination directory path |
+| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
+| [options.copy] | <code>boolean</code> | <code>false</code> | Copy files instead of symlinks |
+
 <a name="module_@the-/assets.create"></a>
 
-### @the-/assets.create(...args) ⇒ <code>TheAssets</code>
+### assets.create(...args) ⇒ [<code>TheAssets</code>](#module_@the-/assets.TheAssets)
 Create a TheAssets instance
 
 **Kind**: static method of [<code>@the-/assets</code>](#module_@the-/assets)  
@@ -26,17 +66,14 @@ Create a TheAssets instance
 | --- | --- |
 | ...args | <code>\*</code> | 
 
-<a name="module_@the-/assets.installFiles"></a>
+<a name="module_@the-/assets.default"></a>
 
-### @the-/assets.installFiles(srcDir, destDir, [options]) ⇒ <code>Promise</code>
-Install files
+### assets.default(...args) ⇒ <code>module:@the-/assets.TheAssert.TheAssert</code>
+Default exports. Alias of [create](#module_@the-/assets.create)
 
 **Kind**: static method of [<code>@the-/assets</code>](#module_@the-/assets)  
 
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| srcDir | <code>string</code> |  | Source directory path |
-| destDir | <code>string</code> |  | Destination directory path |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-| [options.copy] | <code>boolean</code> | <code>false</code> | Copy files instead of symlinks |
+| Param | Type |
+| --- | --- |
+| ...args | <code>\*</code> | 
 

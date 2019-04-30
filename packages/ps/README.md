@@ -83,20 +83,21 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/ps](./doc/api/api.md#module_@the-/ps)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### function
+- [#acquire()](./doc/api/api.md#ThePS#acquire)
+- [.acquire()](./doc/api/api.md#module_@the-/ps.acquire)
+- [.create(args)](./doc/api/api.md#module_@the-/ps.create)
+### class
+- [.ThePS](./doc/api/api.md#module_@the-/ps.ThePS)
+### namespace
+- [.default](./doc/api/api.md#module_@the-/ps.default)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

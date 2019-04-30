@@ -78,20 +78,27 @@ console.log(en('titles.WELCOME_TITLE')) // -> "Welcome to hello-world!"
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/loc](./doc/api/api.md#module_@the-/loc)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### function
+- [#bind(lang)](./doc/api/api.md#TheLoc#bind)
+- [#register(namespace,values,options)](./doc/api/api.md#TheLoc#register)
+- [#resolve(lang,keypaths)](./doc/api/api.md#TheLoc#resolve)
+- [#toCompound()](./doc/api/api.md#TheLoc#toCompound)
+- [#validate()](./doc/api/api.md#TheLoc#validate)
+- [.create(args)](./doc/api/api.md#module_@the-/loc.create)
+- [.default()](./doc/api/api.md#module_@the-/loc.default)
+- [.mergedLocales(l1,l2)](./doc/api/api.md#module_@the-/loc.mergedLocales)
+- [.resolveInScope(data,keypath)](./doc/api/api.md#module_@the-/loc.resolveInScope)
+- [.toCompoundLocale()](./doc/api/api.md#module_@the-/loc.toCompoundLocale)
+- [.checkLocales()](./doc/api/api.md#module_@the-/loc.checkLocales)
+### class
+- [.TheLoc](./doc/api/api.md#module_@the-/loc.TheLoc)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

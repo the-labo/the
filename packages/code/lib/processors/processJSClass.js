@@ -1,5 +1,5 @@
 /**
- * @memberOf module:the-code/lib/processors
+ * @memberOf module:@the-/code.processors
  * @function processClass
  * @param {string} content
  * @returns {string} processed
@@ -15,7 +15,7 @@ const { sortMethodsOnClassNode } = require('../ast/nodes')
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends processClass */
+/** @lends module:@the-/code.processors.processClass */
 function processClass(content, options = {}) {
   return applyConverter(content, (content) => {
     const parsed = parse(content, options)

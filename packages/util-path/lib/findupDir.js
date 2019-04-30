@@ -1,12 +1,15 @@
 /**
+ * Find up directory contains path
+ * @memberOf module:@the-/util-path
  * @function findupDir
+ * @param {string} basedir - Base directory
  */
 'use strict'
 
 const aglob = require('aglob')
 const path = require('path')
 
-/** @lends findupDir */
+/** @lends @the-/util-path.findupDir */
 async function findupDir(basedir, options = {}) {
   const { contains = '*.*' } = options
   let dir = basedir

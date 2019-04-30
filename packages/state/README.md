@@ -90,21 +90,45 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [default](./doc/api/api.md#module_default)
-- [@the-/state](./doc/api/api.md#module_@the-/state)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheState](./doc/api/api.md#TheState)
+- [RootState](./doc/api/api.md#RootState)
+- [ScopedState](./doc/api/api.md#ScopedState)
+- [State](./doc/api/api.md#State)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [#scope(names)](./doc/api/api.md#ScopedState#scope)
+- [#del(name)](./doc/api/api.md#State#del)
+- [#drop()](./doc/api/api.md#State#drop)
+- [#get(name)](./doc/api/api.md#State#get)
+- [#keys()](./doc/api/api.md#State#keys)
+- [#publish()](./doc/api/api.md#State#publish)
+- [#set(values)](./doc/api/api.md#State#set)
+- [#subscribe(callback)](./doc/api/api.md#State#subscribe)
+- [#unsubscribe(callback)](./doc/api/api.md#State#unsubscribe)
+- [#del(name)](./doc/api/api.md#RootState#del)
+- [#drop()](./doc/api/api.md#RootState#drop)
+- [#get(name)](./doc/api/api.md#RootState#get)
+- [#keys()](./doc/api/api.md#RootState#keys)
+- [#publish()](./doc/api/api.md#RootState#publish)
+- [#set(values)](./doc/api/api.md#RootState#set)
+- [#subscribe(callback)](./doc/api/api.md#RootState#subscribe)
+- [#unsubscribe(callback)](./doc/api/api.md#RootState#unsubscribe)
+- [#del(name)](./doc/api/api.md#ScopedState#del)
+- [#drop()](./doc/api/api.md#ScopedState#drop)
+- [#get(name)](./doc/api/api.md#ScopedState#get)
+- [#keys()](./doc/api/api.md#ScopedState#keys)
+- [#publish()](./doc/api/api.md#ScopedState#publish)
+- [#set(values)](./doc/api/api.md#ScopedState#set)
+- [#subscribe(callback)](./doc/api/api.md#ScopedState#subscribe)
+- [#unsubscribe(callback)](./doc/api/api.md#ScopedState#unsubscribe)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

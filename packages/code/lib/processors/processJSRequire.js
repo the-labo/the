@@ -1,6 +1,6 @@
 /**
  * Process require statement
- * @memberOf module:the-code/lib/processors
+ * @memberOf module:@the-/code.processors
  * @function processJSRequire
  * @param {string} content
  * @returns {string} processed
@@ -24,7 +24,7 @@ const { weightModuleName } = require('../helpers/weightHelper')
 
 const isRelative = (filename) => /^\./.test(filename)
 
-/** @lends processJSRequire */
+/** @lends module:@the-/code.processors.processJSRequire */
 function processJSRequire(content, options = {}) {
   const { filename, sourceType } = options
   if (sourceType === 'module') {

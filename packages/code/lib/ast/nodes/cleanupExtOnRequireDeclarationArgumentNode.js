@@ -1,12 +1,12 @@
 /**
- * @memberof module:the-code
+ * @memberof module:@the-/code.ast.nodes
  * @function cleanupExtOnRequireDeclarationArgumentNode
  */
 'use strict'
 
 const path = require('path')
 
-/** @lends cleanupExtOnRequireDeclarationArgumentNode */
+/** @lends module:@the-/code.ast.nodes.cleanupExtOnRequireDeclarationArgumentNode */
 function cleanupExtOnRequireDeclarationArgumentNode(
   ArgumentNode,
   { extToRemove, replace },

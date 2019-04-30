@@ -116,20 +116,22 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/stream](./doc/api/api.md#module_@the-/stream)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [Consumer](./doc/api/api.md#Consumer)
+- [Provider](./doc/api/api.md#Provider)
+- [TheStream](./doc/api/api.md#TheStream)
+### function
+- [generatorFromReadable()](./doc/api/api.md#generatorFromReadable)
+- [#pull()](./doc/api/api.md#TheStream#pull)
+- [#push(chunks)](./doc/api/api.md#TheStream#push)
+- [#pushEnd()](./doc/api/api.md#TheStream#pushEnd)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

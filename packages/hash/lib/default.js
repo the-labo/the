@@ -1,7 +1,7 @@
 /**
- * Default exports
- * @function theHash
- * @returns {TheHash}
+ * Alias of {@link module:@the-/hash.create}
+ * @function default
+ * @returns {module:@the-/hash.TheHash}
  */
 'use strict'
 

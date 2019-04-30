@@ -5,5 +5,5 @@
  */
 'use strict'
 
-const doc = require('@the-/script-doc')
-doc()
+const test = require('@the-/script-test')
+test()

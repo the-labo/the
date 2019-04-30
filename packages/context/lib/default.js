@@ -1,5 +1,7 @@
 /**
- * Default exports
+ * Alias of {@link module:@the-/context.create}
+ * @memberOf module:@the-/context
+ * @function default
  */
 'use strict'
 

@@ -1,6 +1,6 @@
 /**
  * Process import statement
- * @memberOf module:the-code/lib/processors
+ * @memberOf module:@the-/code.processors
  * @function processJSImport
  * @param {string} content
  * @returns {string} processed
@@ -19,7 +19,7 @@ const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 const { weightModuleName } = require('../helpers/weightHelper')
 
-/** @lends processJSImport */
+/** @lends module:@the-/code.processors.processJSImport */
 function processJSImport(content, options = {}) {
   const { filename } = options
 

@@ -80,20 +80,28 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/error](./doc/api/api.md#module_@the-/error)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [.TheConflictError](./doc/api/api.md#module_@the-/error.TheConflictError)
+- [.TheError](./doc/api/api.md#module_@the-/error.TheError)
+- [.TheExpiredError](./doc/api/api.md#module_@the-/error.TheExpiredError)
+- [.TheForbiddenError](./doc/api/api.md#module_@the-/error.TheForbiddenError)
+- [.TheGoneError](./doc/api/api.md#module_@the-/error.TheGoneError)
+- [.TheInvalidParameterError](./doc/api/api.md#module_@the-/error.TheInvalidParameterError)
+- [.TheNotAcceptableError](./doc/api/api.md#module_@the-/error.TheNotAcceptableError)
+- [.TheNotFoundError](./doc/api/api.md#module_@the-/error.TheNotFoundError)
+- [.TheRequestTimeoutError](./doc/api/api.md#module_@the-/error.TheRequestTimeoutError)
+- [.TheServerRottenError](./doc/api/api.md#module_@the-/error.TheServerRottenError)
+- [.TheUnauthorizedError](./doc/api/api.md#module_@the-/error.TheUnauthorizedError)
+### function
+- [.create(args)](./doc/api/api.md#module_@the-/error.create)
+- [.define()](./doc/api/api.md#module_@the-/error.define)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

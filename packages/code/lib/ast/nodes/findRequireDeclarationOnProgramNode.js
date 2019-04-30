@@ -1,5 +1,5 @@
 /**
- * @memberof module:the-code
+ * @memberof module:@the-/code.ast.nodes
  * @function findRequireDeclarationOnProgramNode
  */
 'use strict'
@@ -11,7 +11,7 @@ const isRequireCall = (call) => {
   return call.callee.name === 'require' && arg && arg.type === 'StringLiteral'
 }
 
-/** @lends findRequireDeclarationOnProgramNode */
+/** @lends module:@the-/code.ast.nodes.findRequireDeclarationOnProgramNode */
 function findRequireDeclarationOnProgramNode(ProgramNode) {
   const VariableDeclarations = []
   walk.simple(ProgramNode, {

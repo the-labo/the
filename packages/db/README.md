@@ -158,24 +158,66 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [default](./doc/api/api.md#module_default)
-- [@the-/db](./doc/api/api.md#module_@the-/db)
-- [helpers](./doc/api/api.md#module_helpers)
-- [mixins](./doc/api/api.md#module_mixins)
-- [resources](./doc/api/api.md#module_resources)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheDB](./doc/api/api.md#TheDB)
+- [CliMix](./doc/api/api.md#CliMix)
+- [ExportImportMixed](./doc/api/api.md#ExportImportMixed)
+- [MigrateMixed](./doc/api/api.md#MigrateMixed)
+- [ResourceMixed](./doc/api/api.md#ResourceMixed)
+- [TheLogResource](./doc/api/api.md#TheLogResource)
+- [TheSchemaResource](./doc/api/api.md#TheSchemaResource)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [driverFromEnv()](./doc/api/api.md#driverFromEnv)
+- [execForEnv()](./doc/api/api.md#execForEnv)
+- [setupForEnv()](./doc/api/api.md#setupForEnv)
+- [createTerminal()](./doc/api/api.md#createTerminal)
+- [execMysql()](./doc/api/api.md#execMysql)
+- [execSqlite()](./doc/api/api.md#execSqlite)
+- [parsePolicy()](./doc/api/api.md#parsePolicy)
+- [parseSchema(Schema,options)](./doc/api/api.md#parseSchema)
+- [cascadeMix(Class)](./doc/api/api.md#cascadeMix)
+- [cliMix()](./doc/api/api.md#cliMix)
+- [exportImportMix()](./doc/api/api.md#exportImportMix)
+- [migrateMix()](./doc/api/api.md#migrateMix)
+- [refreshMix(Class)](./doc/api/api.md#refreshMix)
+- [resourceMix()](./doc/api/api.md#resourceMix)
+- [setupMongo(config)](./doc/api/api.md#setupMongo)
+- [setupMysql()](./doc/api/api.md#setupMysql)
+- [setupPostgres()](./doc/api/api.md#setupPostgres)
+- [setupSqlite()](./doc/api/api.md#setupSqlite)
+- [#hooksFromMapping(HookMapping)](./doc/api/api.md#TheDB#hooksFromMapping)
+- [#load(ResourceClass,resourceName)](./doc/api/api.md#TheDB#load)
+- [#loadFromMapping(ResourceMapping)](./doc/api/api.md#TheDB#loadFromMapping)
+- [#pluginFromMapping(PluginMapping)](./doc/api/api.md#TheDB#pluginFromMapping)
+- [#unref()](./doc/api/api.md#TheDB#unref)
+- [#drop()](./doc/api/api.md#TheDB#drop)
+- [#invalidate(entityRef)](./doc/api/api.md#TheDB#invalidate)
+- [#transaction(callback)](./doc/api/api.md#TheDB#transaction)
+- [#updateVersion(version)](./doc/api/api.md#TheDB#updateVersion)
+- [#migrate(handlers)](./doc/api/api.md#MigrateMixed#migrate)
+- [#requestToRefresh(entityRef)](./doc/api/api.md#RefreshMixed#requestToRefresh)
+- [#startRefreshLoop(interval)](./doc/api/api.md#RefreshMixed#startRefreshLoop)
+- [#stopRefreshLoop()](./doc/api/api.md#RefreshMixed#stopRefreshLoop)
+- [#waitToRefresh(entityRef,options)](./doc/api/api.md#RefreshMixed#waitToRefresh)
+- [#assertResource(resourceName)](./doc/api/api.md#ResourceMixed#assertResource)
+- [#getResource(resourceName)](./doc/api/api.md#ResourceMixed#getResource)
+- [#hasResource(resourceName)](./doc/api/api.md#ResourceMixed#hasResource)
+- [#assertResource(resourceName)](./doc/api/api.md#TheDB#assertResource)
+- [#getResource(resourceName)](./doc/api/api.md#TheDB#getResource)
+- [#hasResource(resourceName)](./doc/api/api.md#TheDB#hasResource)
+- [#migrate(handlers)](./doc/api/api.md#TheDB#migrate)
+- [#requestToRefresh(entityRef)](./doc/api/api.md#TheDB#requestToRefresh)
+- [#startRefreshLoop(interval)](./doc/api/api.md#TheDB#startRefreshLoop)
+- [#stopRefreshLoop()](./doc/api/api.md#TheDB#stopRefreshLoop)
+- [#waitToRefresh(entityRef,options)](./doc/api/api.md#TheDB#waitToRefresh)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -1,5 +1,6 @@
 /**
  * Create a TheControllerBase instance
+ * @memberOf module:@the-/controller
  * @function create
  * @param {...*} args
  * @returns {TheControllerBase}
@@ -8,7 +9,7 @@
 
 const TheCtrl = require('./TheCtrl')
 
-/** @lends create */
+/** @lends module:@the-/controller.create */
 function create(...args) {
   return new TheCtrl(...args)
 }

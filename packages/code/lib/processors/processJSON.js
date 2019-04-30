@@ -1,10 +1,14 @@
+/**
+ * @memberOf module:@the-/code.processors
+ * @function processJSON
+ */
 'use strict'
 
 const { sortProperties } = require('fmtjson')
 const { EOL } = require('os')
 const applyConverter = require('../helpers/applyConverter')
 
-/** @lends processJSON */
+/** @lends module:@the-/code.processors.processJSON */
 function processJSON(content, options = {}) {
   return applyConverter(content, (content) => {
     const data = JSON.parse(content)

@@ -76,7 +76,7 @@ async function tryExample() {
   const password = generatePassword()
 
   const passwordHash = digest(password, salt)
-  console.log({password, passwordHash})
+  console.log({ password, passwordHash })
   /* ... */
 }
 
@@ -87,21 +87,17 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [default](./doc/api/api.md#module_default)
-- [@the-/password](./doc/api/api.md#module_@the-/password)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [ThePassword](./doc/api/api.md#ThePassword)
+### function
+- [create(args)](./doc/api/api.md#create)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

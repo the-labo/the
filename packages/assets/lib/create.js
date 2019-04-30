@@ -3,13 +3,13 @@
  * @memberOf module:@the-/assets
  * @function create
  * @param {...*} args
- * @returns {TheAssets}
+ * @returns {module:@the-/assets.TheAssets}
  */
 'use strict'
 
 const TheAssets = require('./TheAssets')
 
-/** @lends create */
+/** @lends module:@the-/assets.create */
 function create(...args) {
   return new TheAssets(...args)
 }

@@ -1,3 +1,7 @@
+/**
+ * @memberOf module:@the-/code.ast.nodes
+ * @function mergeDuplicateImportOnProgramNode
+ */
 'use strict'
 
 const { EOL } = require('os')
@@ -8,6 +12,7 @@ const {
 
 const compareStart = (a, b) => a.start - b.start
 
+/** @lends module:@the-/code.ast.nodes.mergeDuplicateImportOnProgramNode */
 function mergeDuplicateImportOnProgramNode(programNode, { get, replace }) {
   const ImportDeclarations = finder.findByTypes(programNode, [
     NodeTypes.ImportDeclaration,

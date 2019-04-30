@@ -3,7 +3,7 @@
  * @memberOf module:@the-/assert
  * @function default
  * @param {...*} args
- * @returns {TheAssert}
+ * @returns {module:@the-/assert.TheAssert.TheAssert}
  */
 'use strict'
 

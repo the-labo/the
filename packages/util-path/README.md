@@ -67,11 +67,7 @@ Usage
 ```javascript
 'use strict'
 
-const {ThePathUtil} = require('@the-/util-path')
-
-async function tryExample () {
-
-}
+async function tryExample() {}
 
 tryExample().catch((err) => console.error(err))
 
@@ -80,20 +76,15 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/util-path](./doc/api/api.md#module_@the-/util-path)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### function
+- [findupDir()](./doc/api/api.md#findupDir)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

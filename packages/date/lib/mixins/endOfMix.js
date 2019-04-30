@@ -1,18 +1,22 @@
 /**
  * Mixin for endOf
- * @private
- * @memberOf module:@the-/date
+ * @protected
+ * @memberOf module:@the-/date.mixins
  * @function endOf
  * @param {function} Class
  * @returns {function} Class
  */
 'use strict'
 
-/** @lends endOf */
+/** @lends module:@the-/date.mixins.endOf */
 function endOf (Class) {
   const units = [ 'year', 'month', 'quarter', 'week', 'isoWeek', 'day', 'date', 'hour', 'minute', 'second' ]
 
-  /** @class EndOfMixed */
+  /**
+   * @memberOf module:@the-/date.mixins.endOf
+   * @inner
+   * @class EndOfMixed
+   **/
   class EndOfMixed extends Class {
     /**
      * Date for end of

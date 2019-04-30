@@ -90,21 +90,21 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [default](./doc/api/api.md#module_default)
-- [@the-/refresher](./doc/api/api.md#module_@the-/refresher)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheRefresher](./doc/api/api.md#TheRefresher)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [#has(target)](./doc/api/api.md#TheRefresher#has)
+- [#request()](./doc/api/api.md#TheRefresher#request)
+- [#start()](./doc/api/api.md#TheRefresher#start)
+- [#stop()](./doc/api/api.md#TheRefresher#stop)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

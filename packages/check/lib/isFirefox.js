@@ -1,5 +1,6 @@
 /**
  * Detect Firefox or not
+ * @memberOf module:@the-/check
  * @function isFirefox
  * @returns {Boolean}
  */
@@ -8,7 +9,7 @@
 const Bowser = require('bowser')
 const getUserAgent = require('./helpers/getUserAgent')
 
-/** @lends isFirefox */
+/** @lends module:@the-/check.isFirefox */
 function isFirefox(options = {}) {
   const { userAgent = getUserAgent() } = options
   if (!userAgent) {

@@ -98,22 +98,60 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [default](./doc/api/api.md#module_default)
-- [@the-/scope](./doc/api/api.md#module_@the-/scope)
-- [scopes](./doc/api/api.md#module_scopes)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheScope](./doc/api/api.md#TheScope)
+- [ArrayScope](./doc/api/api.md#ArrayScope)
+- [BooleanScope](./doc/api/api.md#BooleanScope)
+- [NullScope](./doc/api/api.md#NullScope)
+- [NumberScope](./doc/api/api.md#NumberScope)
+- [ObjectScope](./doc/api/api.md#ObjectScope)
+- [Scope](./doc/api/api.md#Scope)
+- [ScopeScope](./doc/api/api.md#ScopeScope)
+- [StringScope](./doc/api/api.md#StringScope)
+- [ValueScope](./doc/api/api.md#ValueScope)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [set(index,entry)](./doc/api/api.md#set)
+- [reset(values)](./doc/api/api.md#reset)
+- [#concat(values)](./doc/api/api.md#ArrayScope#concat)
+- [#pop()](./doc/api/api.md#ArrayScope#pop)
+- [#push(entry)](./doc/api/api.md#ArrayScope#push)
+- [#reset(values)](./doc/api/api.md#ArrayScope#reset)
+- [#shift()](./doc/api/api.md#ArrayScope#shift)
+- [#unshift(entry)](./doc/api/api.md#ArrayScope#unshift)
+- [#toggle(value)](./doc/api/api.md#BooleanScope#toggle)
+- [#false()](./doc/api/api.md#BooleanScope#false)
+- [#set()](./doc/api/api.md#BooleanScope#set)
+- [#true()](./doc/api/api.md#BooleanScope#true)
+- [#decrement(amount)](./doc/api/api.md#NumberScope#decrement)
+- [#increment(amount)](./doc/api/api.md#NumberScope#increment)
+- [#set(n)](./doc/api/api.md#NumberScope#set)
+- [#isNegative()](./doc/api/api.md#NumberScope#isNegative)
+- [#isPositive()](./doc/api/api.md#NumberScope#isPositive)
+- [#isZero()](./doc/api/api.md#NumberScope#isZero)
+- [#del(names)](./doc/api/api.md#ObjectScope#del)
+- [#drop()](./doc/api/api.md#ObjectScope#drop)
+- [#set(name,value)](./doc/api/api.md#ObjectScope#set)
+- [#get()](./doc/api/api.md#ObjectScope#get)
+- [#has()](./doc/api/api.md#ObjectScope#has)
+- [#get(namepath)](./doc/api/api.md#ScopeScope#get)
+- [#has(namepath)](./doc/api/api.md#ScopeScope#has)
+- [#init(names)](./doc/api/api.md#ScopeScope#init)
+- [#of(namepath)](./doc/api/api.md#ScopeScope#of)
+- [#set(namepath,value)](./doc/api/api.md#ScopeScope#set)
+- [#del()](./doc/api/api.md#StringScope#del)
+- [#replace(from,to)](./doc/api/api.md#StringScope#replace)
+- [#set(value)](./doc/api/api.md#StringScope#set)
+- [#del()](./doc/api/api.md#ValueScope#del)
+- [#set(value)](./doc/api/api.md#ValueScope#set)
+- [.withDefault()](./doc/api/api.md#Scope.withDefault)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

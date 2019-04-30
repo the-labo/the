@@ -1,5 +1,5 @@
 /**
- * @memberOf module:the-code/lib/processors
+ * @memberOf module:@the-/code.processors
  * @function processCSSRule
  * @param {string} content
  * @returns {Promise.<string>} processed
@@ -11,7 +11,7 @@ const contentAccess = require('../helpers/contentAccess')
 const { bindCssRange } = require('../helpers/cssHelper')
 const parseCSS = require('../parsers/parseCSS')
 
-/** @lends processCSSRule */
+/** @lends module:@the-/code.processors.processCSSRule */
 async function processCSSRule(content) {
   function weightSelector(selector) {
     let weight = 0

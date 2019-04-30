@@ -76,21 +76,18 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/driver-mongo](./doc/api/api.md#module_@the-/driver-mongo)
-- [mixins](./doc/api/api.md#module_mixins)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [MongoDriver](./doc/api/api.md#MongoDriver)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [mongoMix()](./doc/api/api.md#mongoMix)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

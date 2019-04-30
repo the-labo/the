@@ -76,25 +76,26 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [default](./doc/api/api.md#module_default)
-- [@the-/driver-sequelize](./doc/api/api.md#module_@the-/driver-sequelize)
-- [constant variables](./doc/api/api.md#module_constant variables)
-- [helpers](./doc/api/api.md#module_helpers)
-- [mixins](./doc/api/api.md#module_mixins)
-- [parsing](./doc/api/api.md#module_parsing)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheDriverSequelize](./doc/api/api.md#TheDriverSequelize)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [sequelizeMix()](./doc/api/api.md#sequelizeMix)
+- [defineModel()](./doc/api/api.md#defineModel)
+- [defineModelColumn(propertyName,def)](./doc/api/api.md#defineModelColumn)
+- [prepareModel()](./doc/api/api.md#prepareModel)
+- [parseAttributeName()](./doc/api/api.md#parseAttributeName)
+- [parseFilter()](./doc/api/api.md#parseFilter)
+- [parseSort()](./doc/api/api.md#parseSort)
+- [#define(resourceName,schema)](./doc/api/api.md#TheDriverSequelize#define)
+- [#untilReady()](./doc/api/api.md#TheDriverSequelize#untilReady)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

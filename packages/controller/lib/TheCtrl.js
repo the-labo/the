@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/controller
  * @class TheCtrl
  */
 'use strict'
@@ -6,7 +7,7 @@
 const debug = require('debug')('the:ctrl')
 const passed = (date) => new Date() - date
 
-/** @lends TheCtrl */
+/** @lends module:@the-/controller.TheCtrl */
 class TheCtrl {
   /**
    * Hook after invocation

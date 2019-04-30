@@ -81,24 +81,75 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/code](./doc/api/api.md#module_@the-/code)
-- [@the-/code/lib/ast/nodes](./doc/api/api.md#module_@the-/code/lib/ast/nodes)
-- [@the-/code/lib/helpers](./doc/api/api.md#module_@the-/code/lib/helpers)
-- [@the-/code/lib/parsers](./doc/api/api.md#module_@the-/code/lib/parsers)
-- [@the-/code/lib/processors](./doc/api/api.md#module_@the-/code/lib/processors)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### function
+- [#format(pattern,options)](./doc/api/api.md#module_@the-/code.TheCode#format)
+- [#formatFile(filename)](./doc/api/api.md#module_@the-/code.TheCode#formatFile)
+- [.create(args)](./doc/api/api.md#module_@the-/code.create)
+- [.run()](./doc/api/api.md#module_@the-/code.run)
+- [.cleanupEmptyArrayPatternParamsOnFunctionNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupEmptyArrayPatternParamsOnFunctionNode)
+- [.cleanupEmptyObjectPatternParamsOnFunctionNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupEmptyObjectPatternParamsOnFunctionNode)
+- [.cleanupExtOnRequireDeclarationArgumentNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupExtOnRequireDeclarationArgumentNode)
+- [.cleanupRedundantAliasOnObjectPatternNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupRedundantAliasOnObjectPatternNode)
+- [.cleanupRedundantAliasOnObjectPatternNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupRedundantAliasOnObjectPatternNode)
+- [.cleanupReturnAwaitOnFunctionNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupReturnAwaitOnFunctionNode)
+- [.cleanupUnusedOnFunctionArgumentNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupUnusedOnFunctionArgumentNode)
+- [.cleanupUnusedOnArrayPatternNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupUnusedOnArrayPatternNode)
+- [.cleanupUnusedOnImportNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupUnusedOnImportNode)
+- [.cleanupUnusedOnObjectPatternNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupUnusedOnObjectPatternNode)
+- [.cleanupUnusedOnVariableNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupUnusedOnVariableNode)
+- [.commentModuleOnProgramNode()](./doc/api/api.md#module_@the-/code.ast.nodes.commentModuleOnProgramNode)
+- [.findJSDocAnnotationsInCommendNode()](./doc/api/api.md#module_@the-/code.ast.nodes.findJSDocAnnotationsInCommendNode)
+- [.findRequireDeclarationOnProgramNode()](./doc/api/api.md#module_@the-/code.ast.nodes.findRequireDeclarationOnProgramNode)
+- [.mergeDuplicateImportOnProgramNode()](./doc/api/api.md#module_@the-/code.ast.nodes.mergeDuplicateImportOnProgramNode)
+- [.normalizeSrcPathOnImportDeclarationNode()](./doc/api/api.md#module_@the-/code.ast.nodes.normalizeSrcPathOnImportDeclarationNode)
+- [.sortCasesOnSwitchStatementNode()](./doc/api/api.md#module_@the-/code.ast.nodes.sortCasesOnSwitchStatementNode)
+- [.sortMethodsOnClassNode()](./doc/api/api.md#module_@the-/code.ast.nodes.sortMethodsOnClassNode)
+- [.sortPropertiesOnObjectNode()](./doc/api/api.md#module_@the-/code.ast.nodes.sortPropertiesOnObjectNode)
+- [.sortSpecifiersOnImportDeclarationNode()](./doc/api/api.md#module_@the-/code.ast.nodes.sortSpecifiersOnImportDeclarationNode)
+- [.spaceOnCommentNode()](./doc/api/api.md#module_@the-/code.ast.nodes.spaceOnCommentNode)
+- [.applyConverter()](./doc/api/api.md#module_@the-/code.applyConverter)
+- [.isAssignmentPattern()](./doc/api/api.md#module_@the-/code.astHelper.isAssignmentPattern)
+- [.isEmptyObjectPattern()](./doc/api/api.md#module_@the-/code.astHelper.isEmptyObjectPattern)
+- [.isImportDefaultSpecifier()](./doc/api/api.md#module_@the-/code.astHelper.isImportDefaultSpecifier)
+- [.isImportSpecifier()](./doc/api/api.md#module_@the-/code.astHelper.isImportSpecifier)
+- [.isObjectPattern()](./doc/api/api.md#module_@the-/code.astHelper.isObjectPattern)
+- [.isRequireExpression()](./doc/api/api.md#module_@the-/code.astHelper.isRequireExpression)
+- [.contentAccess()](./doc/api/api.md#module_@the-/code.contentAccess)
+- [.parseCSS()](./doc/api/api.md#module_@the-/code/lib/parsers.parseCSS)
+- [.processCSSProp(content)](./doc/api/api.md#module_@the-/code.processors.processCSSProp)
+- [.processCSSRule(content)](./doc/api/api.md#module_@the-/code.processors.processCSSRule)
+- [.processFileEnd(content)](./doc/api/api.md#module_@the-/code.processors.processFileEnd)
+- [.processClass(content)](./doc/api/api.md#module_@the-/code.processors.processClass)
+- [.processComment(content)](./doc/api/api.md#module_@the-/code.processors.processComment)
+- [.processJSDoc(content,options)](./doc/api/api.md#module_@the-/code.processors.processJSDoc)
+- [.processJSExport(content)](./doc/api/api.md#module_@the-/code.processors.processJSExport)
+- [.processJSFunction(content)](./doc/api/api.md#module_@the-/code.processors.processJSFunction)
+- [.processJSImport(content)](./doc/api/api.md#module_@the-/code.processors.processJSImport)
+- [.processJSObject(content)](./doc/api/api.md#module_@the-/code.processors.processJSObject)
+- [.processJSON()](./doc/api/api.md#module_@the-/code.processors.processJSON)
+- [.processJSPrettier(content)](./doc/api/api.md#module_@the-/code.processors.processJSPrettier)
+- [.processJSRequire(content)](./doc/api/api.md#module_@the-/code.processors.processJSRequire)
+- [.processJSRequire(content)](./doc/api/api.md#module_@the-/code.processors.processJSRequire)
+- [.processJSSwitch(content)](./doc/api/api.md#module_@the-/code.processors.processJSSwitch)
+- [.processJSUnused(content)](./doc/api/api.md#module_@the-/code.processors.processJSUnused)
+- [.processJSXAttribute(content)](./doc/api/api.md#module_@the-/code.processors.processJSXAttribute)
+- [.processYAML(content)](./doc/api/api.md#module_@the-/code.processors.processYAML)
+### class
+- [.TheCode](./doc/api/api.md#module_@the-/code.TheCode)
+- [.FormatCache](./doc/api/api.md#module_@the-/code.FormatCache)
+### namespace
+- [.nodes](./doc/api/api.md#module_@the-/code.ast.nodes)
+- [.astHelper](./doc/api/api.md#module_@the-/code.astHelper)
+- [.helpers](./doc/api/api.md#module_@the-/code.helpers)
+- [.parsers](./doc/api/api.md#module_@the-/code.parsers)
+- [.processors](./doc/api/api.md#module_@the-/code.processors)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

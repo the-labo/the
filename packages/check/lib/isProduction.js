@@ -1,5 +1,6 @@
 /**
  * Do unless production env
+ * @memberOf module:@the-/check
  * @function isProduction
  * @returns {Boolean} Is production or not
  */

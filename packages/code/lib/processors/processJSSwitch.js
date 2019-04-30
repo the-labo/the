@@ -1,6 +1,6 @@
 /**
  * Process js switch statement
- * @memberOf module:the-code/lib/processors
+ * @memberOf module:@the-/code.processors
  * @function processJSSwitch
  * @param {string} content
  * @returns {string} processed
@@ -17,7 +17,7 @@ const applyConverter = require('../helpers/applyConverter')
 const applyToNodes = require('../helpers/applyToNodes')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends processJSSwitch */
+/** @lends module:@the-/code.processors.processJSSwitch */
 function processJSSwitch(content, options = {}) {
   return applyConverter(content, (content) => {
     const { swap } = contentAccess(content)

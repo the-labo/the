@@ -11,10 +11,12 @@ const ONE_HOUR = 60 * ONE_MINUTE
 const ONE_DAY = 24 * ONE_HOUR
 const ONE_WEEK = ONE_DAY * 7
 
-module.exports = {
-  ONE_DAY,
-  ONE_HOUR,
-  ONE_MINUTE,
-  ONE_SECOND,
-  ONE_WEEK,
-}
+module.exports =
+  /** @lends module:@the-/date.Durations */
+  {
+    ONE_DAY,
+    ONE_HOUR,
+    ONE_MINUTE,
+    ONE_SECOND,
+    ONE_WEEK,
+  }

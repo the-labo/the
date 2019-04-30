@@ -1,5 +1,6 @@
 /**
  * Parse source code
+ * @memberOf module:@the-/ast
  * @function parse
  * @param {string} src
  * @param {Object} [options={}]
@@ -10,7 +11,7 @@
 
 const babelParser = require('@babel/parser')
 
-/** @lends parse */
+/** @lends module:@the-/ast.parse */
 function parse(content, options = {}) {
   const { sourceType = 'unambiguous' } = options
   try {

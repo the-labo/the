@@ -1,5 +1,10 @@
+/**
+ * @memberOf module:@the-/code
+ * @function applyConverter
+ */
 'use strict'
 
+/** @lends module:@the-/code.applyConverter */
 async function applyConverter(content, convert, options = {}) {
   const max = 1000
   let count = 1

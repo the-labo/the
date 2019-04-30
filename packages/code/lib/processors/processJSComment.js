@@ -1,5 +1,5 @@
 /**
- * @memberOf module:the-code/lib/processors
+ * @memberOf module:@the-/code.processors
  * @function processComment
  * @param {string} content
  * @returns {string} processed
@@ -11,7 +11,7 @@ const { spaceOnCommentNode } = require('../ast/nodes')
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends processComment */
+/** @lends module:@the-/code.processors.processComment */
 function processComment(content, options = {}) {
   const { SEPARATOR = ' '.padEnd(36, '-') } = options
   return applyConverter(content, (content) => {

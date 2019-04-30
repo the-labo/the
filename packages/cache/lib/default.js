@@ -1,6 +1,7 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link module:@the-/cache.create}
+ * @memberOf module:@the-/cache
+ * @function default
  */
 'use strict'
 

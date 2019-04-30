@@ -101,22 +101,28 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [default](./doc/api/api.md#module_default)
-- [@the-/lint](./doc/api/api.md#module_@the-/lint)
-- [rules](./doc/api/api.md#module_rules)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheLint](./doc/api/api.md#TheLint)
+- [.LintCache](./doc/api/api.md#module_the-code/lib/helpers.LintCache)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [callRule(config,keypathArguments)](./doc/api/api.md#callRule)
+- [contentRule(config)](./doc/api/api.md#contentRule)
+- [decorateRule(config)](./doc/api/api.md#decorateRule)
+- [depsRule(config)](./doc/api/api.md#depsRule)
+- [filenameRule(config)](./doc/api/api.md#filenameRule)
+- [moduleRule(config)](./doc/api/api.md#moduleRule)
+- [propRule(config)](./doc/api/api.md#propRule)
+- [usageRule(config)](./doc/api/api.md#usageRule)
+- [#add(pattern,checker)](./doc/api/api.md#TheLint#add)
+- [#run()](./doc/api/api.md#TheLint#run)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -1,6 +1,6 @@
 /**
  * Process JSX attributes
- * @memberOf module:the-code/lib/processors
+ * @memberOf module:@the-/code.processors
  * @function processJSXAttribute
  * @param {string} content
  * @returns {string} processed
@@ -16,7 +16,7 @@ const applyConverter = require('../helpers/applyConverter')
 const { compareBy, compareStrings } = require('../helpers/arrayHelper')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends processJSXAttribute */
+/** @lends module:@the-/code.processors.processJSXAttribute */
 function processJSXAttribute(content, options = {}) {
   const nameOfAttribute = (attribute) => {
     return attribute.name.name

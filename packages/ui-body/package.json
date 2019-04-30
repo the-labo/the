@@ -19,7 +19,8 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui-demo": "file:../ui-demo"
+    "@the-/ui-demo": "file:../ui-demo",
+    "coz": "^7.0.19"
   },
   "engines": {
     "node": ">=10",
@@ -44,7 +45,6 @@
     "build": "../../misc/scripts/pkgBuild.js",
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
-    "test": "../../misc/scripts/pkgTest.js",
-    "watch": "the-script-build -w"
+    "test": "../../misc/scripts/pkgTest.js"
   }
 }

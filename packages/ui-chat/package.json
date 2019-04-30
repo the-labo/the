@@ -28,7 +28,9 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "babel-runtime": "^6.26.0"
+    "@the-/ui-demo": "file:../ui-demo",
+    "babel-runtime": "^6.26.0",
+    "coz": "^7.0.19"
   },
   "engines": {
     "node": ">=10",
@@ -50,10 +52,9 @@
   },
   "repository": "the-labo/the",
   "scripts": {
-    "build": "the-script-build",
-    "doc": "the-script-doc",
-    "prepare": "../../misc/scripts/install_if_needed.sh;npm run build && npm run doc",
-    "test": "the-script-test",
-    "watch": "the-script-build -w"
+    "build": "../../misc/scripts/pkgBuild.js",
+    "doc": "../../misc/scripts/pkgDoc.js",
+    "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
+    "test": "../../misc/scripts/pkgTest.js"
   }
 }

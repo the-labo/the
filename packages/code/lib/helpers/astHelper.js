@@ -1,11 +1,11 @@
 /**
- * @memberOf module:the-code/lib/helpers
- * @name astHelper
+ * @memberOf module:@the-/code
+ * @namespace astHelper
  */
 'use strict'
 
 const astHelper = Object.freeze(
-  /** @lends astHelper */
+  /** @lends module:@the-/code.astHelper */
   {
     is: (node, type) => {
       if (!node) {

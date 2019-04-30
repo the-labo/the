@@ -1,14 +1,15 @@
 /**
  * Create a TheCache instance
+ * @memberOf module:@the-/cache
  * @function create
  * @param {...*} args
- * @returns {TheCache}
+ * @returns {module:@the-/cache.TheCache}
  */
 'use strict'
 
 const TheCache = require('./TheCache')
 
-/** @lends create */
+/** @lends module:@the-/cache.create */
 function create(...args) {
   return new TheCache(...args)
 }

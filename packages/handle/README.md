@@ -87,21 +87,26 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [default](./doc/api/api.md#module_default)
-- [@the-/handle](./doc/api/api.md#module_@the-/handle)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### function
+- [#load(SceneClass,names)](./doc/api/api.md#module_@the-/handle.TheHandle#load)
+- [#loadFromMapping(SceneMapping)](./doc/api/api.md#module_@the-/handle.TheHandle#loadFromMapping)
+- [#setAttributes(attributes)](./doc/api/api.md#module_@the-/handle.TheHandle#setAttributes)
+- [#load(SceneClass,names)](./doc/api/api.md#module_@the-/handle.toHandleSceneClass~HandleSceneClass#load)
+- [.create(args)](./doc/api/api.md#module_@the-/handle.create)
+- [.default()](./doc/api/api.md#module_@the-/handle.default)
+- [.toHandleSceneClass()](./doc/api/api.md#module_@the-/handle.toHandleSceneClass)
+### class
+- [.TheHandle](./doc/api/api.md#module_@the-/handle.TheHandle)
+- [~HandleSceneClass](./doc/api/api.md#module_@the-/handle.toHandleSceneClass~HandleSceneClass)
+### namespace
+- [.helpers](./doc/api/api.md#module_@the-/handle.helpers)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

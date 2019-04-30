@@ -1,10 +1,10 @@
 /**
- * @memberof module:the-code
+ * @memberof module:@the-/code.ast.nodes
  * @function cleanupUnusedOnArrayPatternNode
  */
 'use strict'
 
-/** @lends cleanupUnusedOnArrayPatternNode */
+/** @lends module:@the-/code.ast.nodes.cleanupUnusedOnArrayPatternNode */
 function cleanupUnusedOnArrayPatternNode(
   ArrayPattern,
   { ConsumingIdentifiers, replace },

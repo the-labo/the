@@ -1,4 +1,5 @@
 /**
+ * @memberOf module.module:@the-/util-file
  * @function delSync
  * @param {string} filename
  */
@@ -6,7 +7,7 @@
 
 const fs = require('fs')
 
-/** @lends delSync */
+/** @lends module:@the-/util-file.delSync */
 function delSync(filename) {
   try {
     return fs.unlinkSync(filename)

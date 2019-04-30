@@ -1,5 +1,6 @@
 /**
  * Read as json
+ * @memberOf module:@the-/util-file
  * @function readAsJson
  * @param {string} filename
  * @return {Promise.<Object>}
@@ -10,7 +11,7 @@ const { readFileAsync, statAsync } = require('asfs')
 const JSON5 = require('json5')
 const isJSON5File = require('./isJSON5File')
 
-/** @lends readAsJson */
+/** @lends module:@the-/util-file.readAsJson */
 async function readAsJson(filename) {
   const stat = await statAsync(filename).catch(() => null)
   if (!stat) {

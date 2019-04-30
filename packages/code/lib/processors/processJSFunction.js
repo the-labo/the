@@ -1,6 +1,6 @@
 /**
  * Process function expressions
- * @memberOf module:the-code/lib/processors
+ * @memberOf module:@the-/code.processors
  * @function processJSFunction
  * @param {string} content
  * @returns {string} processed
@@ -17,7 +17,7 @@ const applyConverter = require('../helpers/applyConverter')
 const applyToNodes = require('../helpers/applyToNodes')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends processJSFunction */
+/** @lends module:@the-/code.processors.processJSFunction */
 function processJSFunction(content, options = {}) {
   return applyConverter(content, (content) => {
     const parsed = parse(content, options)

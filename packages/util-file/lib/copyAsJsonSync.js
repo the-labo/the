@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/util-file
  * @function copyAsJsonSync
  * @param {string} src
  * @param {string} dest
@@ -8,7 +9,7 @@
 const readAsJsonSync = require('./readAsJsonSync')
 const writeAsJsonSync = require('./writeAsJsonSync')
 
-/** @lends copyAsJsonSync */
+/** @lends module:@the-/util-file.copyAsJsonSync */
 function copyAsJsonSync(src, dest) {
   const data = readAsJsonSync(src)
   if (data) {

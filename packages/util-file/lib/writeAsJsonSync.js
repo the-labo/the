@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/util-file
  * @function writeAsJsonSync
  * @param {string} filename
  * @param {Object} data
@@ -13,7 +14,7 @@ const path = require('path')
 const sortProperties = require('./helpers/sortProperties')
 const isJSON5File = require('./isJSON5File')
 
-/** @lends writeAsJsonSync */
+/** @lends module:@the-/util-file.writeAsJsonSync */
 function writeAsJsonSync(filename, data) {
   mkdirp.sync(path.dirname(filename))
   data = sortProperties(data)

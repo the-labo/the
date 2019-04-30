@@ -1,5 +1,5 @@
 /**
- * @memberOf module:the-code
+ * @memberof module:@the-/code.ast.nodes
  * @function sortPropertiesOnObjectNode
  */
 'use strict'
@@ -45,7 +45,7 @@ const _weightProperty = ({ computed, key }) => {
   return weight
 }
 
-/** @lends sortPropertiesOnObjectNode */
+/** @lends module:@the-/code.ast.nodes.sortPropertiesOnObjectNode */
 function sortPropertiesOnObjectNode(obj, { swap }) {
   const { properties } = obj
   if (!properties) {

@@ -82,22 +82,26 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [default](./doc/api/api.md#module_default)
-- [@the-/scene](./doc/api/api.md#module_@the-/scene)
-- [mixins](./doc/api/api.md#module_mixins)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheScene](./doc/api/api.md#TheScene)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [errorMix(BaseClass)](./doc/api/api.md#errorMix)
+- [goMix(BaseClass)](./doc/api/api.md#goMix)
+- [subMix(BaseClass)](./doc/api/api.md#subMix)
+- [#for()](./doc/api/api.md#TheScene#for)
+- [#get()](./doc/api/api.md#TheScene#get)
+- [#has(namepath)](./doc/api/api.md#TheScene#has)
+- [#init()](./doc/api/api.md#TheScene#init)
+- [#set()](./doc/api/api.md#TheScene#set)
+- [#subFor(namepath)](./doc/api/api.md#SubMixed#subFor)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

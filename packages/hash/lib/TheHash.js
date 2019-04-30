@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/hash
  * @class TheHash
  * @param {Object} props
  */
@@ -6,7 +7,7 @@
 
 const proxy = require('./proxy')
 
-/** @lends TheHash */
+/** @lends module:@the-/hash.TheHash */
 class TheHash extends Object {
   constructor(props = {}) {
     super()
@@ -33,7 +34,7 @@ class TheHash extends Object {
 
   /**
    * Set value for key
-   * @param key
+   * @param {string} key
    * @param value
    */
   set(key, value) {

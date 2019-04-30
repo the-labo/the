@@ -1,8 +1,12 @@
 /**
  * Resource for the DB
+ * @memberOf module:@the-/resource
  * @class TheResource
+ * @extends TheResourceBase
  * @extends ClayResource
- * @extends ListenMixed
+ * @extends module:@the-/resource.mixins.ListenMix~ListenMixed
+ * @extends module:@the-/resource.mixins.queueMix~QueueMixed
+ * @extends module:@the-/resource.mixins.writeOnceMix~WriteOnceMixed
  */
 'use strict'
 
@@ -11,12 +15,17 @@ const { ClayResource } = require('clay-resource')
 const { create: clayResourceName } = require('clay-resource-name')
 const { listenMix, queueMix, writeOnceMix } = require('./mixins')
 
+/**
+ * @memberOf module:@the-/resource
+ * @protected
+ * @class TheResourceBase
+ */
 const TheResourceBase = [listenMix, queueMix].reduce(
   (Class, mix) => mix(Class),
   ClayResource,
 )
 
-/** @lends TheResource */
+/** @lends module:@the-/resource.TheResource */
 class TheResource extends TheResourceBase {
   /**
    * Cascade destroy condition

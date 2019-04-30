@@ -1,5 +1,5 @@
 /**
- * @memberOf module:the-code/lib/processors
+ * @memberOf module:@the-/code.processors
  * @function processYAML
  * @param {string} content
  * @returns {string}
@@ -36,7 +36,7 @@ const _processYAMLNode = (node) => {
   }
 }
 
-/** @lends processYAML */
+/** @lends module:@the-/code.processors.processYAML */
 async function processYAML(content) {
   const doc = YAML.parseDocument(content)
   doc.contents = _processYAMLNode(doc.contents)

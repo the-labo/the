@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/resource
  * @function isResourceClass
  * @returns {Boolean}
  */
@@ -6,10 +7,7 @@
 
 const TheResource = require('./TheResource')
 
-/**
- * Detect is a resource class
- * @param Class
- */
+/** @lends module:@the-/resource.isResourceClass */
 function isResourceClass(Class) {
   const hitByClass =
     Class.prototype instanceof TheResource || Class === TheResource

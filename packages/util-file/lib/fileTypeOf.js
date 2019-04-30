@@ -1,5 +1,6 @@
 /**
  * Get file type of file
+ * @memberOf module:@the-/util-file
  * @function fileTypeOf
  * @param {string} filename
  * @returns {Object}
@@ -9,7 +10,7 @@
 const fileType = require('file-type')
 const readChunk = require('read-chunk')
 
-/** @lends fileTypeOf */
+/** @lends module:@the-/util-file.fileTypeOf */
 async function fileTypeOf(filename) {
   const buffer = await readChunk(filename, 0, fileType.minimumBytes)
   return fileType(buffer)

@@ -1,11 +1,12 @@
 /**
  * Analyze node
- * @module analyzer
+ * @memberOf module:@the-/ast
+ * @namespace analyzer
  */
 'use strict'
 
 const analyzer = Object.freeze(
-  /** @lends analyzer */
+  /** @lends module:@the-/ast.analyzer */
   {
     isSingleLine: (node) => {
       const { loc } = node

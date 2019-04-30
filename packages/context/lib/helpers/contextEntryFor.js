@@ -1,6 +1,6 @@
 /**
  * Entry component
- * @memberof module:@the-/context
+ * @memberof module:@the-/context.helpers
  * @class ContextEntry
  */
 'use strict'
@@ -9,7 +9,7 @@ const { shallowEqual } = require('asobj')
 const PropTypes = require('prop-types')
 const React = require('react')
 
-/** @lends contextEntryFor */
+/** @lends module:@the-/context.helpers.contextEntryFor */
 function contextEntryFor(context, { store }) {
   class ContextEntry extends React.Component {
     constructor(props) {

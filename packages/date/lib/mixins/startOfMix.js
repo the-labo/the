@@ -1,18 +1,22 @@
 /**
  * Mixin for startOf
- * @private
- * @memberOf module:@the-/date
+ * @protected
+ * @memberOf module:@the-/date.mixins
  * @function startOf
  * @param {function} Class
  * @returns {function} Class
  */
 'use strict'
 
-/** @lends startOf */
-function startOf (Class) {
+/** @lends module:@the-/date.mixins.startOfMix */
+function startOfMix (Class) {
   const units = [ 'year', 'month', 'quarter', 'week', 'isoWeek', 'day', 'date', 'hour', 'minute', 'second' ]
 
-  /** @class StartOfMixed */
+  /**
+   * @memberOf module:@the-/date.mixins.startOfMix
+   * @inner
+   * @class StartOfMixed
+   */
   class StartOfMixed extends Class {
     /**
      * Date for start of
@@ -116,5 +120,5 @@ function startOf (Class) {
   return StartOfMixed
 }
 
-module.exports = startOf
+module.exports = startOfMix
 

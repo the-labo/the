@@ -1,6 +1,6 @@
 /**
  * Create a TheCode instance
- * @memberof module:the-code
+ * @memberof module:@the-/code
  * @function create
  * @param {...*} args
  * @returns {TheCode}
@@ -9,7 +9,7 @@
 
 const TheCode = require('./TheCode')
 
-/** @lends create */
+/** @lends module:@the-/code.create */
 function create(...args) {
   return new TheCode(...args)
 }

@@ -118,21 +118,25 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [default](./doc/api/api.md#module_default)
-- [@the-/store](./doc/api/api.md#module_@the-/store)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheStore](./doc/api/api.md#TheStore)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [toStoreScopeClass(BaseClass)](./doc/api/api.md#toStoreScopeClass)
+- [#load(ScopeClass,names)](./doc/api/api.md#TheStore#load)
+- [#loadFromDefaults()](./doc/api/api.md#TheStore#loadFromDefaults)
+- [#loadFromDefs()](./doc/api/api.md#TheStore#loadFromDefs)
+- [#loadScopesFromDefs(defs,options)](./doc/api/api.md#TheStore#loadScopesFromDefs)
+- [#subscribe(listener)](./doc/api/api.md#TheStore#subscribe)
+- [#load(ScopeClass,names)](./doc/api/api.md#StoreScopeClass#load)
+- [#loadFromMapping(mapping)](./doc/api/api.md#StoreScopeClass#loadFromMapping)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

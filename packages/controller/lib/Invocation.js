@@ -1,5 +1,6 @@
 /**
  * Controller action invocation
+ * @memberOf module:@the-/controller
  * @class Invocation
  * @property {TheCtrl} target - Invocation target instance
  * @property {string} action - Name of action
@@ -9,7 +10,7 @@
  */
 'use strict'
 
-/** @lends Invocation */
+/** @lends module:@the-/controller.Invocation */
 class Invocation {
   constructor(values = {}) {
     const { action, at = new Date(), error, params, result, target } = values

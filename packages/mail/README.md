@@ -69,17 +69,17 @@ Usage
 
 const theMail = require('@the-/mail').default
 
-async function tryExample () {
+async function tryExample() {
   const mail = theMail({
+    key: 'xxxxxxxxxxx',
     service: 'sendgrid',
-    key: 'xxxxxxxxxxx'
   })
 
   await mail.send({
+    content: 'This is the content of the mail',
     from: 'the-sender@example.com',
-    to: 'the-receiver@example.com',
     subject: 'This is the title',
-    content: 'This is the content of the mail'
+    to: 'the-receiver@example.com',
   })
 }
 
@@ -90,23 +90,22 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [default](./doc/api/api.md#module_default)
-- [@the-/mail](./doc/api/api.md#module_@the-/mail)
-- [helpers](./doc/api/api.md#module_helpers)
-- [sending](./doc/api/api.md#module_sending)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheMail](./doc/api/api.md#TheMail)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [toLowerKeys()](./doc/api/api.md#toLowerKeys)
+- [sendMock()](./doc/api/api.md#sendMock)
+- [sendSendgrid()](./doc/api/api.md#sendSendgrid)
+- [sendSMTP()](./doc/api/api.md#sendSMTP)
+- [#send()](./doc/api/api.md#TheMail#send)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

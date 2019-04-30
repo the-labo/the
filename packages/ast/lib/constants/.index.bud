@@ -4,9 +4,12 @@ const { dir } = require('@the-/templates')
 
 module.exports = dir({
   cjs: true,
-  description: 'Constant variables',
+  annotations: {
+    description: 'Constant variables',
+    memberOf: 'module:@the-/ast',
+    namespace: 'constants',
+  },
   dirname: __dirname,
-  name: 'constants',
 })
 
 if (!module.parent) {

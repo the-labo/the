@@ -1,5 +1,6 @@
 /**
  * Detect iOS or not
+ * @memberOf module:@the-/check
  * @function isiOS
  * @returns {Boolean}
  */
@@ -8,7 +9,7 @@
 const Bowser = require('bowser')
 const getUserAgent = require('./helpers/getUserAgent')
 
-/** @lends isiOS */
+/** @lends module:@the-/check.isiOS */
 function isiOS(options = {}) {
   const { userAgent = getUserAgent() } = options
   if (!userAgent) {

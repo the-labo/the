@@ -1,18 +1,22 @@
 /**
  * Mixin for add
- * @private
- * @memberOf module:@the-/date
+ * @protected
+ * @memberOf module:@the-/date.mixins
  * @function addMix
  * @param {function} Class
  * @returns {function} Class
  */
 'use strict'
 
-/** @lends addMix */
+/** @lends module:@the-/date.mixins.addMix */
 function addMix (Class) {
   const units = [ 'years', 'year', 'quarters', 'quarter', 'months', 'month', 'weeks', 'week', 'days', 'day', 'hours', 'hour', 'minutes', 'minute', 'seconds', 'second', 'milliseconds', 'millisecond' ]
 
-  /** @class AddMixed */
+  /**
+   * @memberOf module:@the-/date.mixins.addMix
+   * @inner
+   * @class AddMixed
+   */
   class AddMixed extends Class {
     /**
      * Date after

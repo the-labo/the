@@ -1,0 +1,18 @@
+"use strict";
+
+const { dir } = require("@the-/templates");
+
+module.exports = dir({
+  cjs: true,
+  annotations: {
+    namespace: "ast.nodes",
+    memberOf: "module:@the-/code",
+    access: "protected",
+    description: "ast node handlers"
+  },
+  dirname: __dirname
+});
+
+if (!module.parent) {
+  require("coz").render(__filename);
+}

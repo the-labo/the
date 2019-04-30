@@ -76,23 +76,32 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [DataTypes](./doc/api/api.md#module_DataTypes)
-- [default](./doc/api/api.md#module_default)
-- [@the-/resource](./doc/api/api.md#module_@the-/resource)
-- [mixins](./doc/api/api.md#module_mixins)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheResource](./doc/api/api.md#TheResource)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [isResourceClass()](./doc/api/api.md#isResourceClass)
+- [isResourceClass(Class)](./doc/api/api.md#isResourceClass)
+- [listenMix(Class)](./doc/api/api.md#listenMix)
+- [listenToCreate(onCreate)](./doc/api/api.md#listenToCreate)
+- [listenToDestroy(onDestroy)](./doc/api/api.md#listenToDestroy)
+- [listenToDrop(onDrop)](./doc/api/api.md#listenToDrop)
+- [listenToUpdate(onUpdate)](./doc/api/api.md#listenToUpdate)
+- [queueMix(Class)](./doc/api/api.md#queueMix)
+- [writeOnceMix(Class)](./doc/api/api.md#writeOnceMix)
+- [#refOf(id)](./doc/api/api.md#TheResource#refOf)
+- [#emptyList()](./doc/api/api.md#TheResource#emptyList)
+- [#invalidated(attributes)](./doc/api/api.md#TheResource#invalidated)
+- [#refresh(entity)](./doc/api/api.md#TheResource#refresh)
+- [#refreshAll()](./doc/api/api.md#TheResource#refreshAll)
+- [#resaveAll()](./doc/api/api.md#TheResource#resaveAll)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

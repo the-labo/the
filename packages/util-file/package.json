@@ -1,7 +1,7 @@
 {
   "name": "@the-/util-file",
   "description": "File utility for the-framework",
-  "version": "15.4.0",
+  "version": "15.4.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,11 +18,7 @@
     "mkdirp": "^0.5.1",
     "read-chunk": "^3.2.0"
   },
-  "devDependencies": {
-    "@the-/script-build": "file:../script-build",
-    "@the-/script-doc": "file:../script-doc",
-    "@the-/script-test": "file:../script-test"
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=10",
     "npm": ">=6"
@@ -39,10 +35,9 @@
   },
   "repository": "the-labo/the",
   "scripts": {
-    "build": "the-script-build",
-    "doc": "the-script-doc",
-    "prepare": "../../misc/scripts/install_if_needed.sh;npm run build && npm run doc",
-    "test": "the-script-test",
-    "watch": "the-script-build -w"
+    "build": "../../misc/scripts/pkgBuild.js",
+    "doc": "../../misc/scripts/pkgDoc.js",
+    "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
+    "test": "../../misc/scripts/pkgTest.js"
   }
 }

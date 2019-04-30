@@ -1,18 +1,22 @@
 /**
  * Mixin for set
- * @private
- * @memberOf module:@the-/date
+ * @protected
+ * @memberOf module:@the-/date.mixins
  * @function setMix
  * @param {function} Class
  * @returns {function} Class
  */
 'use strict'
 
-/** @lends setMix */
+/** @lends module:@the-/date.mixins.setMix */
 function setMix (Class) {
   const units = {{{unitsString}}}
 
-  /** @class SetMixed */
+  /**
+   * @memberOf module:@the-/date.mixins.setMix
+   * @inner
+   * @class SetMixed
+   */
   class SetMixed extends Class {
     /**
      * Set value of

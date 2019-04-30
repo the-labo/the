@@ -134,29 +134,64 @@ const { createElement: c } = React
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [buildInEndpoints](./doc/api/api.md#module_buildInEndpoints)
-- [default](./doc/api/api.md#module_default)
-- [@the-/server](./doc/api/api.md#module_@the-/server)
-- [adapter](./doc/api/api.md#module_adapter)
-- [assert](./doc/api/api.md#module_assert)
-- [DefaultValues](./doc/api/api.md#module_DefaultValues)
-- [constants](./doc/api/api.md#module_constants)
-- [helpers](./doc/api/api.md#module_helpers)
-- [mixins](./doc/api/api.md#module_mixins)
-- [stores](./doc/api/api.md#module_stores)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheServer](./doc/api/api.md#TheServer)
+- [StreamPool](./doc/api/api.md#StreamPool)
+- [IOMixed](./doc/api/api.md#IOMixed)
+- [MetricsMix](./doc/api/api.md#MetricsMix)
+- [ConnectionStore](./doc/api/api.md#ConnectionStore)
+- [SessionStore](./doc/api/api.md#SessionStore)
+- [Store](./doc/api/api.md#Store)
+### function
+- [asControllerModule()](./doc/api/api.md#asControllerModule)
+- [create(args)](./doc/api/api.md#create)
+- [redisAdapter()](./doc/api/api.md#redisAdapter)
+- [assertMethods(Class,reservedNames)](./doc/api/api.md#assertMethods)
+- [IOEvents()](./doc/api/api.md#IOEvents)
+- [asStrictSession(session)](./doc/api/api.md#asStrictSession)
+- [callbacksProxy()](./doc/api/api.md#callbacksProxy)
+- [controllerSpecsFor()](./doc/api/api.md#controllerSpecsFor)
+- [ctxInjector(creators)](./doc/api/api.md#ctxInjector)
+- [langDetector(locales,options)](./doc/api/api.md#langDetector)
+- [serverRendering(Component,options)](./doc/api/api.md#serverRendering)
+- [serverRendering()](./doc/api/api.md#serverRendering)
+- [streamPool()](./doc/api/api.md#streamPool)
+- [toControllerModuleBind()](./doc/api/api.md#toControllerModuleBind)
+- [toLowerKeys()](./doc/api/api.md#toLowerKeys)
+- [clientMix(Class)](./doc/api/api.md#clientMix)
+- [infoMix(Class)](./doc/api/api.md#infoMix)
+- [ioMix(Class)](./doc/api/api.md#ioMix)
+- [keepMix(Class)](./doc/api/api.md#keepMix)
+- [metricsMix(Class)](./doc/api/api.md#metricsMix)
+- [#close(args)](./doc/api/api.md#TheServer#close)
+- [#destroyAllSessions()](./doc/api/api.md#TheServer#destroyAllSessions)
+- [#handleIOClientCame()](./doc/api/api.md#TheServer#handleIOClientCame)
+- [#handleIOClientGone()](./doc/api/api.md#TheServer#handleIOClientGone)
+- [#handleIORPCAbort()](./doc/api/api.md#TheServer#handleIORPCAbort)
+- [#handleIORPCCall()](./doc/api/api.md#TheServer#handleIORPCCall)
+- [#handleIOStreamChunk()](./doc/api/api.md#TheServer#handleIOStreamChunk)
+- [#handleIOStreamClose()](./doc/api/api.md#TheServer#handleIOStreamClose)
+- [#handleIOStreamFin()](./doc/api/api.md#TheServer#handleIOStreamFin)
+- [#handleIOStreamOpen()](./doc/api/api.md#TheServer#handleIOStreamOpen)
+- [#listen(port,callback)](./doc/api/api.md#TheServer#listen)
+- [#reloadSession(options)](./doc/api/api.md#ControllerModuleBind#reloadSession)
+- [#saveSession(options)](./doc/api/api.md#ControllerModuleBind#saveSession)
+- [#info()](./doc/api/api.md#InfoMixed#info)
+- [#flushInfo()](./doc/api/api.md#InfoMixed#flushInfo)
+- [#cleanup()](./doc/api/api.md#Store#cleanup)
+- [#del(id)](./doc/api/api.md#Store#del)
+- [#delAll()](./doc/api/api.md#Store#delAll)
+- [#get(id)](./doc/api/api.md#Store#get)
+- [#has(id)](./doc/api/api.md#Store#has)
+- [#ids()](./doc/api/api.md#Store#ids)
+- [#set(id,data)](./doc/api/api.md#Store#set)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

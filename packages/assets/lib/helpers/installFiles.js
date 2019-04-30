@@ -1,6 +1,7 @@
 /**
  * Install files
- * @memberOf module:@the-/assets
+ * @memberOf module:@the-/assets.helpers
+ * @protected
  * @function installFiles
  * @param {string} srcDir - Source directory path
  * @param {string} destDir - Destination directory path

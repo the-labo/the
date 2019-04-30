@@ -1,3 +1,7 @@
+/**
+ * @memberOf module:@the-/code.ast.nodes
+ * @function cleanupReturnAwaitOnFunctionNode
+ */
 'use strict'
 
 const {
@@ -5,6 +9,7 @@ const {
   finder,
 } = require('@the-/ast')
 
+/** @lends module:@the-/code.ast.nodes.cleanupReturnAwaitOnFunctionNode */
 function cleanupReturnAwaitOnFunctionNode(FunctionNode, { get, replace }) {
   if (!FunctionNode.async) {
     return

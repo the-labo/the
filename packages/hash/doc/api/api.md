@@ -8,24 +8,11 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheHash">TheHash</a></dt>
-<dd></dd>
-</dl>
-
 ## Functions
 
 <dl>
-<dt><a href="#create">create(...args)</a> ⇒ <code><a href="#TheHash">TheHash</a></code></dt>
-<dd><p>Create a TheHash instance</p>
-</dd>
-<dt><a href="#theHash">theHash()</a> ⇒ <code><a href="#TheHash">TheHash</a></code></dt>
-<dd><p>Default exports</p>
-</dd>
-<dt><a href="#proxy">proxy(src, [options])</a> ⇒ <code>Proxy</code></dt>
-<dd><p>Create proxy for hash object</p>
+<dt><a href="#default">default()</a> ⇒ <code><a href="#module_@the-/hash.TheHash">TheHash</a></code></dt>
+<dd><p>Alias of <a href="#module_@the-/hash.create">create</a></p>
 </dd>
 </dl>
 
@@ -34,94 +21,101 @@
 ## @the-/hash
 Hash object to hold key-value pairs
 
-<a name="TheHash"></a>
+**Version**: 15.4.2  
+**License**: MIT  
 
-## TheHash
-**Kind**: global class  
+* [@the-/hash](#module_@the-/hash)
+    * [.TheHash](#module_@the-/hash.TheHash)
+        * [new TheHash(props)](#new_module_@the-/hash.TheHash_new)
+        * [.get(key)](#module_@the-/hash.TheHash+get) ⇒ <code>\*</code>
+        * [.has(key)](#module_@the-/hash.TheHash+has) ⇒ <code>boolean</code>
+        * [.set(key, value)](#module_@the-/hash.TheHash+set)
+        * [.toProxy(options)](#module_@the-/hash.TheHash+toProxy) ⇒ <code>\*</code>
+    * [.create(...args)](#module_@the-/hash.create) ⇒ <code>TheHash</code>
+    * [.proxy(src, [options])](#module_@the-/hash.proxy) ⇒ <code>Proxy</code>
 
-* [TheHash](#TheHash)
-    * [new TheHash(props)](#new_TheHash_new)
-    * [.get(key)](#TheHash+get) ⇒ <code>\*</code>
-    * [.has(key)](#TheHash+has) ⇒ <code>boolean</code>
-    * [.set(key, value)](#TheHash+set)
-    * [.toProxy(options)](#TheHash+toProxy) ⇒ <code>\*</code>
+<a name="module_@the-/hash.TheHash"></a>
 
-<a name="new_TheHash_new"></a>
+### hash.TheHash
+**Kind**: static class of [<code>@the-/hash</code>](#module_@the-/hash)  
 
-### new TheHash(props)
+* [.TheHash](#module_@the-/hash.TheHash)
+    * [new TheHash(props)](#new_module_@the-/hash.TheHash_new)
+    * [.get(key)](#module_@the-/hash.TheHash+get) ⇒ <code>\*</code>
+    * [.has(key)](#module_@the-/hash.TheHash+has) ⇒ <code>boolean</code>
+    * [.set(key, value)](#module_@the-/hash.TheHash+set)
+    * [.toProxy(options)](#module_@the-/hash.TheHash+toProxy) ⇒ <code>\*</code>
+
+<a name="new_module_@the-/hash.TheHash_new"></a>
+
+#### new TheHash(props)
 
 | Param | Type |
 | --- | --- |
 | props | <code>Object</code> | 
 
-<a name="TheHash+get"></a>
+<a name="module_@the-/hash.TheHash+get"></a>
 
-### theHash.get(key) ⇒ <code>\*</code>
+#### theHash.get(key) ⇒ <code>\*</code>
 Get value for key
 
-**Kind**: instance method of [<code>TheHash</code>](#TheHash)  
+**Kind**: instance method of [<code>TheHash</code>](#module_@the-/hash.TheHash)  
 
 | Param | Type |
 | --- | --- |
 | key | <code>string</code> | 
 
-<a name="TheHash+has"></a>
+<a name="module_@the-/hash.TheHash+has"></a>
 
-### theHash.has(key) ⇒ <code>boolean</code>
+#### theHash.has(key) ⇒ <code>boolean</code>
 Has value for
 
-**Kind**: instance method of [<code>TheHash</code>](#TheHash)  
+**Kind**: instance method of [<code>TheHash</code>](#module_@the-/hash.TheHash)  
 
 | Param | Type |
 | --- | --- |
 | key | <code>string</code> | 
 
-<a name="TheHash+set"></a>
+<a name="module_@the-/hash.TheHash+set"></a>
 
-### theHash.set(key, value)
+#### theHash.set(key, value)
 Set value for key
 
-**Kind**: instance method of [<code>TheHash</code>](#TheHash)  
+**Kind**: instance method of [<code>TheHash</code>](#module_@the-/hash.TheHash)  
 
-| Param |
-| --- |
-| key | 
-| value | 
+| Param | Type |
+| --- | --- |
+| key | <code>string</code> | 
+| value |  | 
 
-<a name="TheHash+toProxy"></a>
+<a name="module_@the-/hash.TheHash+toProxy"></a>
 
-### theHash.toProxy(options) ⇒ <code>\*</code>
+#### theHash.toProxy(options) ⇒ <code>\*</code>
 Convert into proxy
 
-**Kind**: instance method of [<code>TheHash</code>](#TheHash)  
+**Kind**: instance method of [<code>TheHash</code>](#module_@the-/hash.TheHash)  
 
 | Param |
 | --- |
 | options | 
 
-<a name="create"></a>
+<a name="module_@the-/hash.create"></a>
 
-## create(...args) ⇒ [<code>TheHash</code>](#TheHash)
+### hash.create(...args) ⇒ <code>TheHash</code>
 Create a TheHash instance
 
-**Kind**: global function  
+**Kind**: static method of [<code>@the-/hash</code>](#module_@the-/hash)  
 
 | Param | Type |
 | --- | --- |
 | ...args | <code>\*</code> | 
 
-<a name="theHash"></a>
+<a name="module_@the-/hash.proxy"></a>
 
-## theHash() ⇒ [<code>TheHash</code>](#TheHash)
-Default exports
-
-**Kind**: global function  
-<a name="proxy"></a>
-
-## proxy(src, [options]) ⇒ <code>Proxy</code>
+### hash.proxy(src, [options]) ⇒ <code>Proxy</code>
 Create proxy for hash object
 
-**Kind**: global function  
+**Kind**: static method of [<code>@the-/hash</code>](#module_@the-/hash)  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -130,3 +124,9 @@ Create proxy for hash object
 | [options.name] | <code>string</code> |  | Name of object |
 | [options.unknownCheck] | <code>boolean</code> |  | Enable unknown checking |
 
+<a name="default"></a>
+
+## default() ⇒ [<code>TheHash</code>](#module_@the-/hash.TheHash)
+Alias of [create](#module_@the-/hash.create)
+
+**Kind**: global function  

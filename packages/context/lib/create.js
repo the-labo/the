@@ -9,7 +9,7 @@
 
 const TheContext = require('./TheContext')
 
-/** @lends create */
+/** @lends module:@the-/context.create */
 function create(...args) {
   return new TheContext(...args)
 }

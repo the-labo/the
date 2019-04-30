@@ -1,18 +1,22 @@
 /**
  * Mixin for subtract
- * @private
- * @memberOf module:@the-/date
+ * @protected
+ * @memberOf module:@the-/date.mixins
  * @function subtractMix
  * @param {function} Class
  * @returns {function} Class
  */
 'use strict'
 
-/** @lends subtractMix */
+/** @lends module:@the-/date.mixins.subtractMix */
 function subtractMix (Class) {
   const units = [ 'years', 'year', 'quarters', 'quarter', 'months', 'month', 'weeks', 'week', 'days', 'day', 'hours', 'hour', 'minutes', 'minute', 'seconds', 'second', 'milliseconds', 'millisecond' ]
 
-  /** @class SubtractMixed */
+  /**
+   * @memberOf module:@the-/date.mixins.subtractMix
+   * @inner
+   * @class SubtractMixed
+   */
   class SubtractMixed extends Class {
     /**
      * Date after

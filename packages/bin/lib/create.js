@@ -3,13 +3,13 @@
  * @memberOf module:@the-/bin
  * @function create
  * @param {...*} args
- * @returns {TheBin}
+ * @returns {module:@the-/bin.TheBin}
  */
 'use strict'
 
 const TheBin = require('./TheBin')
 
-/** @lends create */
+/** @lends module:@the-/bin.create */
 function create(...args) {
   const bin = new TheBin(...args)
   return bin.bind()

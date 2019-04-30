@@ -76,20 +76,22 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/entrypoint](./doc/api/api.md#module_@the-/entrypoint)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### function
+- [mount(element,containerId,options)](./doc/api/api.md#mount)
+- [online(options)](./doc/api/api.md#online)
+- [patch()](./doc/api/api.md#patch)
+- [quelize(values)](./doc/api/api.md#quelize)
+- [secure(options)](./doc/api/api.md#secure)
+- [singleton(options)](./doc/api/api.md#singleton)
+- [workers(swUrls)](./doc/api/api.md#workers)
+- [createStyleElement()](./doc/api/api.md#createStyleElement)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

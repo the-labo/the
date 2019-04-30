@@ -1,5 +1,6 @@
 /**
  * Create proxy for hash object
+ * @memberOf module:@the-/hash
  * @function proxy
  * @param {Object} src - Source object
  * @param {Object} [options={}] - Optional settings
@@ -9,7 +10,7 @@
  */
 'use strict'
 
-/** @lends proxy */
+/** @lends module:@the-/hash.proxy */
 function proxy(src, options = {}) {
   const { name = 'proxy', unknownCheck = true } = options
   if (typeof Proxy === 'undefined') {

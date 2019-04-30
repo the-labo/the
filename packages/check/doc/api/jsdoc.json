@@ -5,6 +5,9 @@
     "name": "@the-/check",
     "kind": "module",
     "description": "Check utility for the-framework",
+    "version": "15.4.1",
+    "license": "MIT",
+    "typicalname": "check",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -13,12 +16,13 @@
     "order": 2
   },
   {
-    "id": "canTouch",
-    "longname": "canTouch",
+    "id": "module:@the-/check.canTouch",
+    "longname": "module:@the-/check.canTouch",
     "name": "canTouch",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Check touch supported",
+    "memberof": "module:@the-/check",
     "returns": [
       {
         "type": {
@@ -36,12 +40,13 @@
     "order": 0
   },
   {
-    "id": "hasBin",
-    "longname": "hasBin",
+    "id": "module:@the-/check.hasBin",
+    "longname": "module:@the-/check.hasBin",
     "name": "hasBin",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Check if a bin available",
+    "memberof": "module:@the-/check",
     "params": [
       {
         "type": {
@@ -80,12 +85,13 @@
     "order": 1
   },
   {
-    "id": "isBrowser",
-    "longname": "isBrowser",
+    "id": "module:@the-/check.isBrowser",
+    "longname": "module:@the-/check.isBrowser",
     "name": "isBrowser",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Detect if browser side",
+    "memberof": "module:@the-/check",
     "returns": [
       {
         "type": {
@@ -103,12 +109,13 @@
     "order": 3
   },
   {
-    "id": "isChrome",
-    "longname": "isChrome",
+    "id": "module:@the-/check.isChrome",
+    "longname": "module:@the-/check.isChrome",
     "name": "isChrome",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Detect chrome or not",
+    "memberof": "module:@the-/check",
     "returns": [
       {
         "type": {
@@ -126,12 +133,13 @@
     "order": 4
   },
   {
-    "id": "isFirefox",
-    "longname": "isFirefox",
+    "id": "module:@the-/check.isFirefox",
+    "longname": "module:@the-/check.isFirefox",
     "name": "isFirefox",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Detect Firefox or not",
+    "memberof": "module:@the-/check",
     "returns": [
       {
         "type": {
@@ -149,12 +157,13 @@
     "order": 5
   },
   {
-    "id": "isiOS",
-    "longname": "isiOS",
+    "id": "module:@the-/check.isiOS",
+    "longname": "module:@the-/check.isiOS",
     "name": "isiOS",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Detect iOS or not",
+    "memberof": "module:@the-/check",
     "returns": [
       {
         "type": {
@@ -172,12 +181,13 @@
     "order": 6
   },
   {
-    "id": "isMacOS",
-    "longname": "isMacOS",
+    "id": "module:@the-/check.isMacOS",
+    "longname": "module:@the-/check.isMacOS",
     "name": "isMacOS",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Detect is mac OS",
+    "memberof": "module:@the-/check",
     "returns": [
       {
         "type": {
@@ -195,12 +205,13 @@
     "order": 7
   },
   {
-    "id": "isProduction",
-    "longname": "isProduction",
+    "id": "module:@the-/check.isProduction",
+    "longname": "module:@the-/check.isProduction",
     "name": "isProduction",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Do unless production env",
+    "memberof": "module:@the-/check",
     "returns": [
       {
         "type": {
@@ -219,12 +230,13 @@
     "order": 8
   },
   {
-    "id": "unlessProduction",
-    "longname": "unlessProduction",
+    "id": "module:@the-/check.unlessProduction",
+    "longname": "module:@the-/check.unlessProduction",
     "name": "unlessProduction",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Do unless production env",
+    "memberof": "module:@the-/check",
     "params": [
       {
         "type": {

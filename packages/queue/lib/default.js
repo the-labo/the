@@ -1,7 +1,7 @@
 /**
- * Default exports
+ * Alias of {@link module:@the-/queue}
  * @memberOf module:@the-/queue
- * @namespace default
+ * @function default
  */
 'use strict'
 

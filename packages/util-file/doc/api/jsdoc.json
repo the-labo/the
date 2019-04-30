@@ -5,6 +5,9 @@
     "name": "@the-/util-file",
     "kind": "module",
     "description": "File utility for the-framework",
+    "version": "15.4.2",
+    "license": "MIT",
+    "typicalname": "utilFile",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -13,11 +16,28 @@
     "order": 3
   },
   {
-    "id": "copyAsJsonSync",
-    "longname": "copyAsJsonSync",
+    "id": "module:@the-/file.helpers",
+    "longname": "module:@the-/file.helpers",
+    "name": "helpers",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Helper functions",
+    "memberof": "module:@the-/file",
+    "access": "protected",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/util-file/lib/helpers"
+    },
+    "order": 10
+  },
+  {
+    "id": "module:@the-/util-file.copyAsJsonSync",
+    "longname": "module:@the-/util-file.copyAsJsonSync",
     "name": "copyAsJsonSync",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
+    "memberof": "module:@the-/util-file",
     "params": [
       {
         "type": {
@@ -44,11 +64,12 @@
     "order": 0
   },
   {
-    "id": "delSync",
-    "longname": "delSync",
+    "id": "module.module:@the-/util-file.delSync",
+    "longname": "module.module:@the-/util-file.delSync",
     "name": "delSync",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
+    "memberof": "module.module:@the-/util-file",
     "params": [
       {
         "type": {
@@ -67,12 +88,13 @@
     "order": 1
   },
   {
-    "id": "fileTypeOf",
-    "longname": "fileTypeOf",
+    "id": "module:@the-/util-file.fileTypeOf",
+    "longname": "module:@the-/util-file.fileTypeOf",
     "name": "fileTypeOf",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Get file type of file",
+    "memberof": "module:@the-/util-file",
     "params": [
       {
         "type": {
@@ -100,11 +122,12 @@
     "order": 2
   },
   {
-    "id": "isJSON5File",
-    "longname": "isJSON5File",
+    "id": "module:@the-/util-file.isJSON5File",
+    "longname": "module:@the-/util-file.isJSON5File",
     "name": "isJSON5File",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
+    "memberof": "module:@the-/util-file",
     "params": [
       {
         "type": {
@@ -132,12 +155,13 @@
     "order": 4
   },
   {
-    "id": "readAsJson",
-    "longname": "readAsJson",
+    "id": "module:@the-/util-file.readAsJson",
+    "longname": "module:@the-/util-file.readAsJson",
     "name": "readAsJson",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Read as json",
+    "memberof": "module:@the-/util-file",
     "params": [
       {
         "type": {
@@ -165,11 +189,12 @@
     "order": 5
   },
   {
-    "id": "readAsJsonSync",
-    "longname": "readAsJsonSync",
+    "id": "module:@the-/util-file.readAsJsonSync",
+    "longname": "module:@the-/util-file.readAsJsonSync",
     "name": "readAsJsonSync",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
+    "memberof": "module:@the-/util-file",
     "params": [
       {
         "type": {
@@ -197,11 +222,12 @@
     "order": 6
   },
   {
-    "id": "statSync",
-    "longname": "statSync",
+    "id": "module:@the-/util-file.statSync",
+    "longname": "module:@the-/util-file.statSync",
     "name": "statSync",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
+    "memberof": "module:@the-/util-file",
     "params": [
       {
         "type": {
@@ -220,11 +246,12 @@
     "order": 7
   },
   {
-    "id": "writeAsJsonSync",
-    "longname": "writeAsJsonSync",
+    "id": "module:@the-/util-file.writeAsJsonSync",
+    "longname": "module:@the-/util-file.writeAsJsonSync",
     "name": "writeAsJsonSync",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
+    "memberof": "module:@the-/util-file",
     "params": [
       {
         "type": {
@@ -260,11 +287,12 @@
     "order": 8
   },
   {
-    "id": "writeAsJsonSync",
-    "longname": "writeAsJsonSync",
+    "id": "module:@the-/util-file.writeAsJsonSync",
+    "longname": "module:@the-/util-file.writeAsJsonSync",
     "name": "writeAsJsonSync",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
+    "memberof": "module:@the-/util-file",
     "params": [
       {
         "type": {
@@ -291,17 +319,19 @@
     "order": 9
   },
   {
-    "id": "sortProperties",
-    "longname": "sortProperties",
+    "id": "module:@the-/util-file.helpers.sortProperties",
+    "longname": "module:@the-/util-file.helpers.sortProperties",
     "name": "sortProperties",
     "kind": "function",
-    "scope": "global",
-    "description": "SOrt object properties",
+    "scope": "static",
+    "description": "Sort object properties",
+    "memberof": "module:@the-/util-file.helpers",
+    "access": "protected",
     "meta": {
       "lineno": 1,
       "filename": "sortProperties.js",
       "path": "/Users/okuni/Projects/the/packages/util-file/lib/helpers"
     },
-    "order": 10
+    "order": 11
   }
 ]

@@ -71,9 +71,7 @@ Usage
  */
 'use strict'
 
-async function tryExample () {
-
-}
+async function tryExample() {}
 
 tryExample().catch((err) => console.error(err))
 
@@ -82,16 +80,6 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
@@ -99,17 +87,11 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-
-## Functions
-- [create](#create)
-- [theDemoLib](#theDemoLib)
-
-
-
-## Classes
-- [TheDemoLib](#TheDemoLib)
-
-
+### class
+- [TheDemoLib](./doc/api/api.md#TheDemoLib)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [.theDemoLib()](./doc/api/api.md#module_@the-/demo-lib.theDemoLib)
 
 <!-- LICENSE Start -->
 <a name="license"></a>
