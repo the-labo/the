@@ -1,8 +1,8 @@
 /**
  * Scope to hold number
  * @memberOf module:@the-/scope.scopes
- * @augments module:@the-/scope.scopes.Scope
  * @class NumberScope
+ * @augments module:@the-/scope.scopes.Scope
  */
 'use strict'
 

@@ -1,6 +1,6 @@
 /**
- * @function goMix
  * @memberOf module:@the-/scene.mixins
+ * @function goMix
  * @param {function} BaseClass
  * @returns {function} MixedClass
  */

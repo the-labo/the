@@ -5,23 +5,21 @@
  */
 'use strict'
 
-const AppScene_ = require('./AppScene')
-const ConnectionRetryScene_ = require('./ConnectionRetryScene')
-const HomeScene_ = require('./HomeScene')
-const ToastScene_ = require('./ToastScene')
-const abstract__ = require('./abstract')
+import AppScene from './AppScene'
+import ConnectionRetryScene from './ConnectionRetryScene'
+import HomeScene from './HomeScene'
+import ToastScene from './ToastScene'
 
-// `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
-exports.AppScene = AppScene_
-exports.ConnectionRetryScene = ConnectionRetryScene_
-exports.HomeScene = HomeScene_
-exports.ToastScene = ToastScene_
-exports.abstract = abstract__
+export {
+  AppScene,
+  ConnectionRetryScene,
+  HomeScene,
+  ToastScene,
+}
 
-module.exports = {
-  AppScene: AppScene_,
-  ConnectionRetryScene: ConnectionRetryScene_,
-  HomeScene: HomeScene_,
-  ToastScene: ToastScene_,
-  abstract: abstract__,
+export default {
+  AppScene,
+  ConnectionRetryScene,
+  HomeScene,
+  ToastScene,
 }

@@ -18,8 +18,8 @@ export {
 }
 
 export default {
-      Dialogs,
-      Footer,
-      Header,
-      Toasts,
+  Dialogs,
+  Footer,
+  Header,
+  Toasts,
 }

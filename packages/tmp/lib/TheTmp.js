@@ -116,13 +116,13 @@ class TheTmp {
 module.exports = TheTmp
 
 /**
- * @typedef {Object} GenerateResult
  * @property {function} cleanup
  * @property {Object} descriptor
  * @property {string} path - Filename
+ * @typedef {Object} GenerateResult
  */
 /**
- * @typedef {Object} GenerateDirResult
  * @property {function} cleanup
  * @property {string} path - Directory name
+ * @typedef {Object} GenerateDirResult
  */

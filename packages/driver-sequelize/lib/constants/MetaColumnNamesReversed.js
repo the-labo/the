@@ -1,7 +1,7 @@
 /**
  * @memberOf module:@the-/driver-sequelize.constants
- * @name MetaColumnNamesReversed
  * @enum {string}
+ * @name MetaColumnNamesReversed
  */
 'use strict'
 

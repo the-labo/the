@@ -1,7 +1,7 @@
 /**
- * Alias of {@link module:@the-/refresher.create}
- * @memberOf module:@the-/refresher
+ * Alias of {@memberOf module:@the-/refresher
  * @function default
+ * @link module:@the-/refresher.create}
  */
 'use strict'
 

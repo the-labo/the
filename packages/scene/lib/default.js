@@ -1,6 +1,6 @@
 /**
- * Alias of {@link module:@the-/scene.create}
- * @function default
+ * Alias of {@function default
+ * @link module:@the-/scene.create}
  */
 'use strict'
 

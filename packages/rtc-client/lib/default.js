@@ -1,7 +1,7 @@
 /**
- * Alias of {@link module:@the-/rtc-client.create}
- * @memberOf module:@the-/rtc-client
+ * Alias of {@memberOf module:@the-/rtc-client
  * @function default
+ * @link module:@the-/rtc-client.create}
  */
 'use strict'
 

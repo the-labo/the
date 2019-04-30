@@ -4,8 +4,8 @@
  */
 'use strict'
 
-const { withBusy, withId, withReady } = require('@the-/mixin-scene/shim')
-const Scene = require('./Scene')
+import { withBusy, withId, withReady } from '@the-/mixin-scene/shim'
+import Scene from './Scene'
 
 @withId
 @withBusy
@@ -43,4 +43,4 @@ class DetailScene extends DetailSceneBase {
   }
 }
 
-module.exports = DetailScene
+export default DetailScene

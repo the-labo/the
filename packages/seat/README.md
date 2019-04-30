@@ -126,19 +126,25 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [TheSeat](./doc/api/api.md#TheSeat)
 ### function
-- [create(args)](./doc/api/api.md#create)
-- [#acquire(key,next)](./doc/api/api.md#TheSeat#acquire)
-- [#acquireNumber(key,options)](./doc/api/api.md#TheSeat#acquireNumber)
-- [#acquireString(key,options)](./doc/api/api.md#TheSeat#acquireString)
-- [#bind(key)](./doc/api/api.md#TheSeat#bind)
-- [#canTake(key,value)](./doc/api/api.md#TheSeat#canTake)
-- [#get(key)](./doc/api/api.md#TheSeat#get)
-- [#release(key)](./doc/api/api.md#TheSeat#release)
-- [#scope(scopeName)](./doc/api/api.md#TheSeat#scope)
-- [#take(key,value)](./doc/api/api.md#TheSeat#take)
+- [#acquire(key,next)](./doc/api/api.md#module_@the-/seat.TheSeat#acquire)
+- [#acquireNumber(key,options)](./doc/api/api.md#module_@the-/seat.TheSeat#acquireNumber)
+- [#acquireString(key,options)](./doc/api/api.md#module_@the-/seat.TheSeat#acquireString)
+- [#bind(key)](./doc/api/api.md#module_@the-/seat.TheSeat#bind)
+- [#canTake(key,value)](./doc/api/api.md#module_@the-/seat.TheSeat#canTake)
+- [#get(key)](./doc/api/api.md#module_@the-/seat.TheSeat#get)
+- [#release(key)](./doc/api/api.md#module_@the-/seat.TheSeat#release)
+- [#scope(scopeName)](./doc/api/api.md#module_@the-/seat.TheSeat#scope)
+- [#take(key,value)](./doc/api/api.md#module_@the-/seat.TheSeat#take)
+- [.create(args)](./doc/api/api.md#module_@the-/seat.create)
+- [.default()](./doc/api/api.md#module_@the-/seat.default)
+- [.lockMix()](./doc/api/api.md#module_@the-/seat.mixins.lockMix)
+- [.scopeMix()](./doc/api/api.md#module_@the-/seat.scopeMix)
+### class
+- [.TheSeat](./doc/api/api.md#module_@the-/seat.TheSeat)
+### namespace
+- [.helpers](./doc/api/api.md#module_@the-/seat.helpers)
+- [.mixins](./doc/api/api.md#module_@the-/seat.mixins)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -90,19 +90,22 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [TheSecret](./doc/api/api.md#TheSecret)
-- [CryptoMixed](./doc/api/api.md#CryptoMixed)
-- [LockMixed](./doc/api/api.md#LockMixed)
 ### function
-- [create(args)](./doc/api/api.md#create)
-- [theSecret()](./doc/api/api.md#theSecret)
-- [cryptoMix()](./doc/api/api.md#cryptoMix)
-- [lockMix()](./doc/api/api.md#lockMix)
-- [#decrypt()](./doc/api/api.md#TheSecret#decrypt)
-- [#encrypt()](./doc/api/api.md#TheSecret#encrypt)
-- [#get(name)](./doc/api/api.md#TheSecret#get)
-- [#writeout(filename)](./doc/api/api.md#TheSecret#writeout)
+- [#decrypt()](./doc/api/api.md#module_@the-/secret.TheSecret#decrypt)
+- [#encrypt()](./doc/api/api.md#module_@the-/secret.TheSecret#encrypt)
+- [#get(name)](./doc/api/api.md#module_@the-/secret.TheSecret#get)
+- [#writeout(filename)](./doc/api/api.md#module_@the-/secret.TheSecret#writeout)
+- [.create(args)](./doc/api/api.md#module_@the-/secret.create)
+- [.theSecret()](./doc/api/api.md#module_@the-/secret.theSecret)
+- [.cryptoMix()](./doc/api/api.md#module_@the-/secret.mixins.cryptoMix)
+- [.lockMix()](./doc/api/api.md#module_@the-/secret.mixins.lockMix)
+### class
+- [.TheSecret](./doc/api/api.md#module_@the-/secret.TheSecret)
+- [~CryptoMixed](./doc/api/api.md#module_@the-/secret.mixins.cryptoMix~CryptoMixed)
+- [~LockMixed](./doc/api/api.md#module_@the-/secret.mixins.lockMix~LockMixed)
+### namespace
+- [.cipher](./doc/api/api.md#module_@the-/secret.helpers.cipher)
+- [.mixins](./doc/api/api.md#module_@the-/secret.mixins)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

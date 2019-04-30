@@ -1,7 +1,7 @@
 /**
- * Alias of {@link module:@the-/handle.create}
- * @memberOf module:@the-/handle
+ * Alias of {@memberOf module:@the-/handle
  * @function default
+ * @link module:@the-/handle.create}
  */
 'use strict'
 

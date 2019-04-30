@@ -1,0 +1,125 @@
+[
+  {
+    "id": "module:@the-/scaffold",
+    "longname": "module:@the-/scaffold",
+    "name": "@the-/scaffold",
+    "kind": "module",
+    "description": "Scaffold for the-projects",
+    "meta": {
+      "lineno": 1,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/scaffold/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "listTypes",
+    "longname": "listTypes",
+    "name": "listTypes",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "listTypes.js",
+      "path": "/Users/okuni/Projects/the/packages/scaffold/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "render",
+    "longname": "render",
+    "name": "render",
+    "kind": "function",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "render.js",
+      "path": "/Users/okuni/Projects/the/packages/scaffold/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "theScaffold",
+    "longname": "theScaffold",
+    "name": "theScaffold",
+    "kind": "function",
+    "scope": "global",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Scaffold type",
+        "name": "type"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Destination directory path",
+        "name": "dest"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Optional settings1",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": false,
+        "description": "No asking.",
+        "name": "options.straight"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": false,
+        "description": "Force to generate scaffold.",
+        "name": "options.force"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": false,
+        "description": "Disable logs.",
+        "name": "options.silent"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "theScaffold.js",
+      "path": "/Users/okuni/Projects/the/packages/scaffold/lib"
+    },
+    "order": 3
+  }
+]

@@ -1,10 +1,10 @@
 /**
  * Resolve value in a scope
- * @private
- * @memberOf module:@the-/loc.helpers
  * @function resolveInScope
  * @param {Object} data
  * @param {string} keypath
+ * @private
+ * @memberOf module:@the-/loc.helpers
  */
 'use strict'
 

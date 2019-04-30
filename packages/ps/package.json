@@ -40,7 +40,7 @@
     "build": "../../misc/scripts/pkgBuild.js",
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
-    "test": "../../misc/scripts/pkgTest.js",
-    "prepublishOnly": "npm run test"
+    "prepublishOnly": "npm run test",
+    "test": "../../misc/scripts/pkgTest.js"
   }
 }

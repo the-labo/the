@@ -1,6 +1,6 @@
 /**
- * @augments SFUProxyEdge
  * @class SFUProxyEdgeOfferer
+ * @augments SFUProxyEdge
  */
 'use strict'
 

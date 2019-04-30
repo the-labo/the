@@ -4,8 +4,8 @@
  */
 'use strict'
 
-const { withBusy } = require('@the-/mixin-scene/shim')
-const Scene = require('./Scene')
+import { withBusy } from '@the-/mixin-scene/shim'
+import Scene from './Scene'
 
 @withBusy
 class CallSceneBase extends Scene {}
@@ -22,4 +22,4 @@ class CallScene extends CallSceneBase {
   }
 }
 
-module.exports = CallScene
+export default CallScene

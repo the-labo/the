@@ -1,9 +1,9 @@
 /**
  * Check locales
- * @private
- * @memberOf module:@the-/loc.helpers
  * @function checkLocales
  * @param {Object}
+ * @private
+ * @memberOf module:@the-/loc.helpers
  * @returns {Object}
  */
 'use strict'

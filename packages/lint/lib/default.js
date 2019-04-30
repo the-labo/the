@@ -1,6 +1,6 @@
 /**
- * Alias of {@link module:@the-/lint.create}
- * @function default
+ * Alias of {@function default
+ * @link module:@the-/lint.create}
  */
 'use strict'
 

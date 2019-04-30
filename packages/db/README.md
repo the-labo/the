@@ -166,6 +166,7 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
+- [default()](./doc/api/api.md#default)
 - [#hooksFromMapping(HookMapping)](./doc/api/api.md#module_@the-/db.TheDB#hooksFromMapping)
 - [#load(ResourceClass,resourceName)](./doc/api/api.md#module_@the-/db.TheDB#load)
 - [#loadFromMapping(ResourceMapping)](./doc/api/api.md#module_@the-/db.TheDB#loadFromMapping)
@@ -191,7 +192,6 @@ tryExample().catch((err) => console.error(err))
 - [#getResource(resourceName)](./doc/api/api.md#module_@the-/db.TheDB#getResource)
 - [#hasResource(resourceName)](./doc/api/api.md#module_@the-/db.TheDB#hasResource)
 - [.create(args)](./doc/api/api.md#module_@the-/db.create)
-- [.default()](./doc/api/api.md#module_@the-/db.default)
 - [.driverFromEnv()](./doc/api/api.md#module_@the-/db.driverFromEnv)
 - [.execForEnv()](./doc/api/api.md#module_@the-/db.execForEnv)
 - [.setupForEnv()](./doc/api/api.md#module_@the-/db.setupForEnv)

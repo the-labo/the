@@ -1,7 +1,7 @@
 /**
- * Alias of {@link module:@the-/resize.create}
- * @memberOf module:@the-/resize
+ * Alias of {@memberOf module:@the-/resize
  * @function default
+ * @link module:@the-/resize.create}
  */
 'use strict'
 

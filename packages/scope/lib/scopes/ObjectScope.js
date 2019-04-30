@@ -1,8 +1,8 @@
 /**
  * Scope to hold object
  * @memberOf module:@the-/scope.scopes
- * @augments module:@the-/scope.scopes.Scope
  * @class ObjectScope
+ * @augments module:@the-/scope.scopes.Scope
  */
 'use strict'
 

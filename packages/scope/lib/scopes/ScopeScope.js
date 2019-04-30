@@ -1,8 +1,8 @@
 /**
  * Scope to other scopes
  * @memberOf module:@the-/scope.scopes
- * @augments module:@the-/scope.scopes.Scope
  * @class ScopeScope
+ * @augments module:@the-/scope.scopes.Scope
  */
 'use strict'
 

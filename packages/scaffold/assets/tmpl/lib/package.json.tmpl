@@ -10,12 +10,7 @@
   },
   "dependencies": {},
   "description": "~~~~package_description~~~~",
-  "devDependencies": {
-    "@the-/script-build": "file:../script-build",
-    "@the-/script-doc": "file:../script-doc",
-    "@the-/script-test": "file:../script-test",
-    "@the-/templates": "file:../templates"
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=10",
     "npm": ">=6"
@@ -32,11 +27,10 @@
     "access": "public"
   },
   "scripts": {
-    "build": "the-script-build",
-    "doc": "the-script-doc",
-    "prepare": "npm run doc",
-    "test": "the-script-test",
-    "watch": "the-script-build -w"
+    "build": "../../misc/scripts/pkgBuild.js",
+    "doc": "../../misc/scripts/pkgDoc.js",
+    "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
+    "test": "../../misc/scripts/pkgTest.js"
   },
   "version": "1.0.0"
 }

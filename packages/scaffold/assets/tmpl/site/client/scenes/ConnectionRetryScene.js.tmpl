@@ -4,8 +4,8 @@
  */
 'use strict'
 
-const { bindScope, withBusy, withLocation } = require('@the-/mixin-scene/shim')
-const Scene = require('./abstract/Scene')
+import { bindScope, withBusy, withLocation } from '@the-/mixin-scene/shim'
+import Scene from './abstract/Scene'
 
 @withBusy
 @withLocation
@@ -20,4 +20,4 @@ class ConnectionRetryScene extends ConnectionRetrySceneBase {
   }
 }
 
-module.exports = ConnectionRetryScene
+export default ConnectionRetryScene

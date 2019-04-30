@@ -1,7 +1,7 @@
 /**
- * Alias of {@link module:@the-/store}
- * @memberOf module:@the-/store
+ * Alias of {@memberOf module:@the-/store
  * @function create
+ * @link module:@the-/store}
  */
 'use strict'
 

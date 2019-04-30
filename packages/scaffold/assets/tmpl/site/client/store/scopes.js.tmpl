@@ -3,9 +3,7 @@
  */
 'use strict'
 
-const {
-  helpers: { parseDef },
-} = require('@the-/store')
-const scopes = require('../scopes')
+import { helpers as storeHelpers } from '@the-/store'
+import scopes from '../scopes'
 
-module.exports = parseDef(scopes)
+export default storeHelpers.parseDef(scopes)

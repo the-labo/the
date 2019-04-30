@@ -13,7 +13,8 @@ const theSecret = require('@the-/secret')
 const theSetting = require('@the-/setting')
 const pkg = require('./package')
 
-const SECRET_MASTER_PASSWORD = `${pkg.name}-xxxxxxxxxxxxxxxxxx` // TODO
+const pkgShortName = pkg.name.split('/').pop()
+const SECRET_MASTER_PASSWORD = `${pkgShortName}-xxxxxxxxxxxxxxxxxx` // TODO
 const secret = theSecret(`${__dirname}/secrets.json`, SECRET_MASTER_PASSWORD)
 
 const setting = theSetting(`${__dirname}/var/app/setting.json`, {
@@ -28,13 +29,13 @@ const seated = directorySeat(
     ({
       APP_INSPECT_PORT: portNumberFor('inspect'),
       APP_PORT: portNumberFor('app'),
-      APP_PROCESS_NAME: processNameFor(`${pkg.name}-app`),
+      APP_PROCESS_NAME: processNameFor(`${pkgShortName}-app`),
       APP_SEAL_SECRET: secretFor('seal'),
-      DOCKER_MYSQL_CONTAINER_NAME: containerNameFor(`${pkg.name}-mysql`),
+      DOCKER_MYSQL_CONTAINER_NAME: containerNameFor(`${pkgShortName}-mysql`),
       DOCKER_MYSQL_CONTAINER_PORT: portNumberFor('mysql'),
-      DOCKER_NGINX_CONTAINER_NAME: containerNameFor(`${pkg.name}-nginx`),
+      DOCKER_NGINX_CONTAINER_NAME: containerNameFor(`${pkgShortName}-nginx`),
       DOCKER_NGINX_CONTAINER_PORT: portNumberFor('nginx'),
-      DOCKER_REDIS_CONTAINER_NAME: containerNameFor(`${pkg.name}-redis`),
+      DOCKER_REDIS_CONTAINER_NAME: containerNameFor(`${pkgShortName}-redis`),
       DOCKER_REDIS_CONTAINER_PORT: portNumberFor('redis'),
     }),
 )
@@ -68,7 +69,7 @@ const Local = Object.freeze(
     // -----------------------------------
     ...(isProduction()
       ? {
-          DB_DATABASE: `${snakecase(pkg.name)}`,
+          DB_DATABASE: `${snakecase(pkgShortName)}`,
           DB_DIALECT: 'sequelize/mysql',
           DB_HOST: secret.get('DB_HOST'),
           DB_PASSWORD: secret.get('DB_PASSWORD'),
@@ -78,14 +79,14 @@ const Local = Object.freeze(
           DB_USERNAME: secret.get('DB_USERNAME'),
         }
       : {
-          DB_DATABASE: `${snakecase(pkg.name)}_dev`,
+          DB_DATABASE: `${snakecase(pkgShortName)}_dev`,
           DB_DIALECT: 'sequelize/mysql',
           DB_HOST: '0.0.0.0',
-          DB_PASSWORD: `${snakecase(pkg.name)}_dev`,
+          DB_PASSWORD: `${snakecase(pkgShortName)}_dev`,
           DB_PORT: seated.DOCKER_MYSQL_CONTAINER_PORT,
           DB_ROOT_PASSWORD: 'root',
           DB_ROOT_USERNAME: 'root',
-          DB_USERNAME: `${snakecase(pkg.name)}_dev`,
+          DB_USERNAME: `${snakecase(pkgShortName)}_dev`,
         }),
 
     // -----------------------------------

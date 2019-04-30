@@ -2,8 +2,8 @@
 
 const theLoc = require('@the-/loc').create
 
-const env = theLoc({
+const loc = theLoc({
   en: require('./en'),
 })
 
-module.exports = env
+module.exports = loc

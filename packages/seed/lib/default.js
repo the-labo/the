@@ -1,6 +1,6 @@
 /**
- * Alias of {@link module:@the-/seed.create}
- * @function default
+ * Alias of {@function default
+ * @link module:@the-/seed.create}
  */
 'use strict'
 

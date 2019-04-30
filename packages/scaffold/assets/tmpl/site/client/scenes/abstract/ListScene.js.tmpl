@@ -5,7 +5,7 @@
  */
 'use strict'
 
-const {
+import {
   bindDefaults,
   withBusy,
   withEntities,
@@ -14,9 +14,9 @@ const {
   withPage,
   withReady,
   withSort,
-} = require('@the-/mixin-scene/shim')
-const { hasMoreFor } = require('@the-/util-site')
-const Scene = require('./Scene')
+} from '@the-/mixin-scene/shim'
+import { hasMoreFor } from '@the-/util-site'
+import Scene from './Scene'
 
 @withBusy
 @withSort
@@ -131,4 +131,4 @@ class ListScene extends ListSceneBase {
   }
 }
 
-module.exports = ListScene
+export default ListScene

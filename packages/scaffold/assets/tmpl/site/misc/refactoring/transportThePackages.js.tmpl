@@ -30,20 +30,23 @@ async function main() {
     const newName = `@the-/${transporting[oldName].name}`
     console.log(`Refactor "${oldName}" to "${newName}"...`)
     const refactor = new TheRefactor()
-    await refactor.rewrite([
-      '+(assets|bin|client|conf|doc|misc|server|test)/**/*.js',
-      '+(assets|bin|client|conf|doc|misc|server|test)/**/*.jsx',
-      '+(assets|bin|client|conf|doc|misc|server|test)/**/.*.bud',
-      '*.js',
-      '.*.bud',
-    ], {
-      [`require('${oldName}')`]: [`require('${newName}')`],
-      [`require('${oldName}/`]: [`require('${newName}/`],
-      [`from '${oldName}'`]: [`from '${newName}'`],
-      [`from '${oldName}/`]: [`from '${newName}/`],
-      [`import '${oldName}/`]: [`import '${newName}/`],
-      [`import('${oldName}'`]: [`import('${newName}'`],
-    })
+    await refactor.rewrite(
+      [
+        '+(assets|bin|client|conf|doc|misc|server|test)/**/*.js',
+        '+(assets|bin|client|conf|doc|misc|server|test)/**/*.jsx',
+        '+(assets|bin|client|conf|doc|misc|server|test)/**/.*.bud',
+        '*.js',
+        '.*.bud',
+      ],
+      {
+        [`require('${oldName}')`]: [`require('${newName}')`],
+        [`require('${oldName}/`]: [`require('${newName}/`],
+        [`from '${oldName}'`]: [`from '${newName}'`],
+        [`from '${oldName}/`]: [`from '${newName}/`],
+        [`import '${oldName}/`]: [`import '${newName}/`],
+        [`import('${oldName}'`]: [`import('${newName}'`],
+      },
+    )
   }
 }
 

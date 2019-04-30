@@ -99,12 +99,13 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [TheSeed](./doc/api/api.md#TheSeed)
 ### function
-- [create(args)](./doc/api/api.md#create)
-- [#apply(seed)](./doc/api/api.md#TheSeed#apply)
-- [#explode(seed,counts)](./doc/api/api.md#TheSeed#explode)
+- [default()](./doc/api/api.md#default)
+- [#apply(seed)](./doc/api/api.md#module_@the-/seed.TheSeed#apply)
+- [#explode(seed,counts)](./doc/api/api.md#module_@the-/seed.TheSeed#explode)
+- [.create(args)](./doc/api/api.md#module_@the-/seed.create)
+### class
+- [.TheSeed](./doc/api/api.md#module_@the-/seed.TheSeed)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

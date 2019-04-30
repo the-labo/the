@@ -5,6 +5,9 @@
     "name": "~~~~package_name~~~~",
     "kind": "module",
     "description": "~~~~package_description~~~~",
+    "version": "15.4.2",
+    "license": "MIT",
+    "typicalname": "demoLib",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -13,11 +16,12 @@
     "order": 2
   },
   {
-    "id": "~~~~package_unscoped_name@pascalcase~~~~",
-    "longname": "~~~~package_unscoped_name@pascalcase~~~~",
+    "id": "module:~~~~package_name~~~~.~~~~package_unscoped_name@pascalcase~~~~",
+    "longname": "module:~~~~package_name~~~~.~~~~package_unscoped_name@pascalcase~~~~",
     "name": "~~~~package_unscoped_name@pascalcase~~~~",
     "kind": "class",
-    "scope": "global",
+    "scope": "static",
+    "memberof": "module:~~~~package_name~~~~",
     "meta": {
       "lineno": 1,
       "filename": "~~~~package_unscoped_name@pascalcase~~~~.js",
@@ -26,12 +30,13 @@
     "order": 3
   },
   {
-    "id": "create",
-    "longname": "create",
+    "id": "module:~~~~package_name~~~~.create",
+    "longname": "module:~~~~package_name~~~~.create",
     "name": "create",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Create a ~~~~package_unscoped_name@pascalcase~~~~ instance",
+    "memberof": "module:~~~~package_name~~~~",
     "params": [
       {
         "type": {

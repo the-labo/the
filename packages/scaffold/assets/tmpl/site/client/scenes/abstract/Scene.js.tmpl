@@ -5,9 +5,9 @@
  */
 'use strict'
 
-const { withLocation } = require('@the-/mixin-scene/shim')
-const { TheScene } = require('@the-/scene/shim')
-const { addUrlQuery, formatUrl } = require('@the-/url')
+import { withLocation } from '@the-/mixin-scene/shim'
+import { TheScene } from '@the-/scene/shim'
+import { addUrlQuery, formatUrl } from '@the-/url'
 
 class SceneBase extends TheScene {}
 
@@ -59,4 +59,4 @@ class Scene extends SceneBase {
   }
 }
 
-module.exports = Scene
+export default Scene

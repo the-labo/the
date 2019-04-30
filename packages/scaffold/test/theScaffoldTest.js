@@ -14,7 +14,7 @@ describe('the-scaffold', function() {
   after(async () => {})
 
   it('Generate task', async () => {
-    await theScaffold('component', `${__dirname}/../tmp/foo/bar-component`, {
+    await theScaffold('ui', `${__dirname}/../tmp/foo/bar-ui`, {
       force: true,
       straight: true,
     })

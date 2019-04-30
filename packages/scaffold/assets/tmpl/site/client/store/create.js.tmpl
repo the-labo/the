@@ -5,19 +5,19 @@
  */
 'use strict'
 
-const {
+import {
   ArrayScope,
   BooleanScope,
   NumberScope,
   ObjectScope,
   StringScope,
   ValueScope,
-} = require('@the-/scope/shim/scopes')
-const { TheStore } = require('@the-/store')
-const scopes = require('./scopes')
+} from '@the-/scope/shim/scopes'
+import { TheStore } from '@the-/store'
+import scopes from './scopes'
 
 /** @lends create */
-module.exports = function create() {
+export default function create() {
   return new TheStore({
     // States to persists on local storage
     persists: [],

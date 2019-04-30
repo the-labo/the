@@ -97,19 +97,20 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [TheTmp](./doc/api/api.md#TheTmp)
 ### function
-- [create(args)](./doc/api/api.md#create)
-- [#generateDirSync(options)](./doc/api/api.md#TheTmp#generateDirSync)
-- [#generateSync(options)](./doc/api/api.md#TheTmp#generateSync)
-- [#generate(options)](./doc/api/api.md#TheTmp#generate)
-- [#generateDir(options)](./doc/api/api.md#TheTmp#generateDir)
-- [#while(handler,options)](./doc/api/api.md#TheTmp#while)
-- [#whileDir(handler,options)](./doc/api/api.md#TheTmp#whileDir)
+- [default()](./doc/api/api.md#default)
+- [#generateDirSync(options)](./doc/api/api.md#module_@the-/tmp.TheTmp#generateDirSync)
+- [#generateSync(options)](./doc/api/api.md#module_@the-/tmp.TheTmp#generateSync)
+- [#generate(options)](./doc/api/api.md#module_@the-/tmp.TheTmp#generate)
+- [#generateDir(options)](./doc/api/api.md#module_@the-/tmp.TheTmp#generateDir)
+- [#while(handler,options)](./doc/api/api.md#module_@the-/tmp.TheTmp#while)
+- [#whileDir(handler,options)](./doc/api/api.md#module_@the-/tmp.TheTmp#whileDir)
+- [.create(args)](./doc/api/api.md#module_@the-/tmp.create)
 ### typedef
 - [GenerateResult](./doc/api/api.md#GenerateResult)
 - [GenerateDirResult](./doc/api/api.md#GenerateDirResult)
+### class
+- [.TheTmp](./doc/api/api.md#module_@the-/tmp.TheTmp)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

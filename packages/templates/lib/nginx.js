@@ -1,8 +1,8 @@
 /**
  * Define bud for nginx conf file
  * @memberOf module:@the-/templates
- * @param {Object} config
  * @function nginx
+ * @param {Object} config
  * @returns {Object}
  */
 'use strict'

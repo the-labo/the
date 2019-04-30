@@ -89,19 +89,25 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [TheScene](./doc/api/api.md#TheScene)
 ### function
-- [create(args)](./doc/api/api.md#create)
-- [errorMix(BaseClass)](./doc/api/api.md#errorMix)
-- [goMix(BaseClass)](./doc/api/api.md#goMix)
-- [subMix(BaseClass)](./doc/api/api.md#subMix)
-- [#for()](./doc/api/api.md#TheScene#for)
-- [#get()](./doc/api/api.md#TheScene#get)
-- [#has(namepath)](./doc/api/api.md#TheScene#has)
-- [#init()](./doc/api/api.md#TheScene#init)
-- [#set()](./doc/api/api.md#TheScene#set)
-- [#subFor(namepath)](./doc/api/api.md#SubMixed#subFor)
+- [default()](./doc/api/api.md#default)
+- [#for()](./doc/api/api.md#module_@the-/scene.TheScene#for)
+- [#get()](./doc/api/api.md#module_@the-/scene.TheScene#get)
+- [#has(namepath)](./doc/api/api.md#module_@the-/scene.TheScene#has)
+- [#init()](./doc/api/api.md#module_@the-/scene.TheScene#init)
+- [#set()](./doc/api/api.md#module_@the-/scene.TheScene#set)
+- [#subFor(namepath)](./doc/api/api.md#module_@the-/scene.mixins.subMix~SubMixed#subFor)
+- [.create(args)](./doc/api/api.md#module_@the-/scene.create)
+- [.errorMix(BaseClass)](./doc/api/api.md#module_@the-/scene.mixins.errorMix)
+- [.goMix(BaseClass)](./doc/api/api.md#module_@the-/scene.mixins.goMix)
+- [.subMix(BaseClass)](./doc/api/api.md#module_@the-/scene.mixins.subMix)
+### class
+- [.TheScene](./doc/api/api.md#module_@the-/scene.TheScene)
+- [~ErrorMixed](./doc/api/api.md#module_@the-/scene.mixins.goMix~ErrorMixed)
+- [~GoMixed](./doc/api/api.md#module_@the-/scene.mixins.goMix~GoMixed)
+- [~SubMixed](./doc/api/api.md#module_@the-/scene.mixins.subMix~SubMixed)
+### namespace
+- [.mixins](./doc/api/api.md#module_@the-/scene.mixins)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

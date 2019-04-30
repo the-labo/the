@@ -13,7 +13,7 @@ const {
   fs: { del },
   open,
 } = require('pon-task-basic')
-const { fmtjson, mocha, pondoc } = require('pon-task-dev')
+const { eslint, fmtjson, mocha, pondoc } = require('pon-task-dev')
 const docker = require('pon-task-docker')
 const icon = require('pon-task-icon')
 const theCode = require('@the-/code/pon')
@@ -117,8 +117,8 @@ module.exports = pon(
     // Sub Tasks for ESLint
     // -----------------------------------
     ...{
-      'eslint:check': npx('eslint', '--ext', '.js,.jsx', '.'),
-      'eslint:fix': npx('eslint', '--fix', '--ext', '.js,.jsx', '.'),
+      'eslint:check': eslint('.'),
+      'eslint:fix': eslint('.', { fix: true }),
     },
 
     // -----------------------------------
@@ -269,6 +269,8 @@ module.exports = pon(
       ds: 'debug:server',
       /** Shortcut for `format` task */
       f: 'format',
+      /** Shortcut for `lint` task */
+      l: 'lint',
       /** Shortcut for `open` task */
       o: 'open',
       /** Shortcut for `open` task */

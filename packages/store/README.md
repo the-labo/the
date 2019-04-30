@@ -125,18 +125,21 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [TheStore](./doc/api/api.md#TheStore)
 ### function
-- [create(args)](./doc/api/api.md#create)
-- [toStoreScopeClass(BaseClass)](./doc/api/api.md#toStoreScopeClass)
-- [#load(ScopeClass,names)](./doc/api/api.md#TheStore#load)
-- [#loadFromDefaults()](./doc/api/api.md#TheStore#loadFromDefaults)
-- [#loadFromDefs()](./doc/api/api.md#TheStore#loadFromDefs)
-- [#loadScopesFromDefs(defs,options)](./doc/api/api.md#TheStore#loadScopesFromDefs)
-- [#subscribe(listener)](./doc/api/api.md#TheStore#subscribe)
+- [#load(ScopeClass,names)](./doc/api/api.md#module_@the-/store.TheStore#load)
+- [#loadFromDefaults()](./doc/api/api.md#module_@the-/store.TheStore#loadFromDefaults)
+- [#loadFromDefs()](./doc/api/api.md#module_@the-/store.TheStore#loadFromDefs)
+- [#loadScopesFromDefs(defs,options)](./doc/api/api.md#module_@the-/store.TheStore#loadScopesFromDefs)
+- [#subscribe(listener)](./doc/api/api.md#module_@the-/store.TheStore#subscribe)
 - [#load(ScopeClass,names)](./doc/api/api.md#StoreScopeClass#load)
 - [#loadFromMapping(mapping)](./doc/api/api.md#StoreScopeClass#loadFromMapping)
+- [.create(args)](./doc/api/api.md#module_@the-/store.create)
+- [.create()](./doc/api/api.md#module_@the-/store.create)
+- [.toStoreScopeClass(BaseClass)](./doc/api/api.md#module_@the-/store.toStoreScopeClass)
+### class
+- [.TheStore](./doc/api/api.md#module_@the-/store.TheStore)
+### namespace
+- [.helpers](./doc/api/api.md#module_@the-/store.helpers)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

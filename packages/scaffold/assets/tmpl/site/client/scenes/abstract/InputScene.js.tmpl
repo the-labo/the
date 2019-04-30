@@ -4,9 +4,8 @@
  */
 'use strict'
 
-const { clone } = require('asobj')
-const { withBusy, withEntry, withResult } = require('@the-/mixin-scene/shim')
-const Scene = require('./Scene')
+import { withBusy, withEntry, withResult } from '@the-/mixin-scene/shim'
+import Scene from './Scene'
 
 @withBusy
 @withEntry
@@ -22,13 +21,6 @@ class InputScene extends InputSceneBase {
     this.setEntryErrors.set(e)
   }
 
-  setEntryFromEntity(entity) {
-    const values = clone(entity || {}, {
-      without: this.constructor.entitySkipFields,
-    })
-    this.setEntry(values)
-  }
-
   async dealWith(values) {
     throw new Error(`Not implemented`)
   }
@@ -40,4 +32,4 @@ class InputScene extends InputSceneBase {
   }
 }
 
-module.exports = InputScene
+export default InputScene

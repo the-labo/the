@@ -1,6 +1,6 @@
 /**
- * Alias of {@link module:@the-/media.create}
- * @function default
+ * Alias of {@function default
+ * @link module:@the-/media.create}
  */
 'use strict'
 

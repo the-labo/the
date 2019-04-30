@@ -4,9 +4,9 @@
  */
 'use strict'
 
-const create = require('./create')
+import create from './create'
 
 /** @lends store */
 const singleton = create({})
 
-module.exports = singleton
+export default singleton

@@ -4,8 +4,8 @@
  */
 'use strict'
 
-const { bindScope, withBusy } = require('@the-/mixin-scene/shim')
-const Scene = require('./abstract/Scene')
+import { bindScope, withBusy } from '@the-/mixin-scene/shim'
+import Scene from './abstract/Scene'
 
 @withBusy
 @bindScope('home')
@@ -23,4 +23,4 @@ class HomeScene extends HomeSceneBase {
   }
 }
 
-module.exports = HomeScene
+export default HomeScene

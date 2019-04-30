@@ -4,15 +4,15 @@
  */
 'use strict'
 
-const { Urls } = require('@self/conf')
-const {
+import { Urls } from '@self/conf'
+import {
   bindScope,
   withBusy,
   withHistory,
   withLocation,
   withQuery,
-} = require('@the-/mixin-scene/shim')
-const Scene = require('./abstract/Scene')
+} from '@the-/mixin-scene/shim'
+import Scene from './abstract/Scene'
 
 @withBusy
 @withQuery
@@ -54,4 +54,4 @@ class AppScene extends AppSceneBase {
   }
 }
 
-module.exports = AppScene
+export default AppScene

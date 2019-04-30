@@ -1,6 +1,6 @@
 /**
- * @class ThePS
  * @memberOf module:@the-/ps
+ * @class ThePS
  * @param {string} filename - PID filename
  * @param {Object} [options={}] - Optional settings
  * @param {boolean} [options.logging=false] - Enable logs
