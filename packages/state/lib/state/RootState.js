@@ -1,9 +1,10 @@
 /**
  * State works as root
+ * @memberOf module:@the-/state.state
  * @class RootState
+ * @extends module:@the-/state.state.State
  * @param {Object} [options={}] - Optional settings
  * @param {Object} [options.defaults={}] - Default values
- * @extends State
  */
 'use strict'
 
@@ -12,7 +13,7 @@ const ScopedState = require('./ScopedState')
 const ActionTypes = require('../constants/ActionTypes')
 const { createReduxStore, getReduxDevtool } = require('../helpers/reduxHelper')
 
-/** @lends RootState */
+/** @lends module:@the-/state.state.RootState */
 class RootState extends ScopedState {
   static reduceStoreAction(state = {}, action) {
     switch (action.type) {

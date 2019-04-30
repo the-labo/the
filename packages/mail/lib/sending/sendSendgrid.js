@@ -1,11 +1,12 @@
 /**
+ * @memberOf module:@the-/mail.sending
  * @function sendSendgrid
  */
 'use strict'
 
 const handleUnknownOptions = require('../helpers/handleUnknownOptions')
 
-/** @lends sendSendgrid */
+/** @lends module:@the-/mail.sending.sendSendgrid */
 async function sendSendgrid({ content, from, key, subject, to, ...rest }) {
   handleUnknownOptions(rest)
   if (!key) {

@@ -4,9 +4,12 @@ const { dir } = require('@the-/templates')
 
 module.exports = dir({
   cjs: true,
+  annotations:{
   description: 'Adapter functions',
+  namespace: 'adapters',
+    memberOf:'module:@the-/server'
+  },
   dirname: __dirname,
-  name: 'adapter',
 })
 
 if (!module.parent) {

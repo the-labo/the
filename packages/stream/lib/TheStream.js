@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/stream
  * @class TheStream
  * @param {Object} [options={}]
  */
@@ -8,6 +9,7 @@ const asleep = require('asleep')
 const Consumer = require('./Consumer')
 const Provider = require('./Provider')
 
+/** @lends module:@the-/stream */
 class TheStream {
   constructor(options = {}) {
     const { app, client, params } = options

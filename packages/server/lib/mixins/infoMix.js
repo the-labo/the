@@ -1,5 +1,6 @@
 /**
  * Mixins for info
+ * @memberOf module:@the-/server.mixins
  * @function infoMix
  * @param {function} Class
  * @returns {function} Class
@@ -10,8 +11,12 @@ const { mkdirpAsync, writeFileAsync } = require('asfs')
 const { isMaster } = require('cluster')
 const path = require('path')
 
-/** @lends infoMix */
+/** @lends module:@the-/server.mixins.infoMix */
 function infoMix(Class) {
+  /**
+   * @memberOf module:@the-/server.mixins.infoMix
+   * @inner
+   */
   class InfoMixed extends Class {
     constructor() {
       super(...arguments)

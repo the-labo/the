@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/jitter
  * @class TheJitter
  * @param {Object} [options={}] - Optional settings
  */
@@ -8,7 +9,7 @@ const asleep = require('asleep')
 const COUNT = Symbol('count')
 const debug = require('debug')('the:jitter')
 
-/** @lends TheJitter */
+/** @lends module:@the-/jitter.TheJitter */
 class TheJitter {
   constructor(options = {}) {
     const { max = 100, maxInterval = 1000 } = options

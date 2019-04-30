@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/server.helpers
  * @function toControllerModuleBind
  * @returns {function}
  */
@@ -10,7 +11,7 @@ const {
   instanceMethodNamesFor,
 } = require('@the-/mixin-controller/lib/helpers')
 
-/** @lends toControllerModuleBind */
+/** @lends module:@the-/server.helpers.toControllerModuleBind */
 function toControllerModuleBind(Class, options = {}) {
   unlessProduction(() => {
     if (!Class) {

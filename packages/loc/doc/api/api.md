@@ -5,17 +5,34 @@
 ## @the-/loc
 Locale resolver for the-framework
 
+**Version**: 15.4.1  
+**License**: MIT  
 
 * [@the-/loc](#module_@the-/loc)
     * [.TheLoc](#module_@the-/loc.TheLoc)
         * [new TheLoc(config)](#new_module_@the-/loc.TheLoc_new)
+        * [.bind(lang)](#module_@the-/loc.TheLoc+bind) ⇒ <code>function</code>
+        * [.register(namespace, values, [options])](#module_@the-/loc.TheLoc+register) ⇒ <code>TheLoc</code>
+        * [.resolve(lang, ...keypaths)](#module_@the-/loc.TheLoc+resolve) ⇒ <code>string</code>
+        * [.toCompound()](#module_@the-/loc.TheLoc+toCompound) ⇒ <code>Object</code>
+        * [.validate()](#module_@the-/loc.TheLoc+validate)
+    * [.helpers](#module_@the-/loc.helpers) : <code>object</code>
     * [.create(...args)](#module_@the-/loc.create) ⇒ <code>TheLoc</code>
     * [.default()](#module_@the-/loc.default)
 
 <a name="module_@the-/loc.TheLoc"></a>
 
-### @the-/loc.TheLoc
+### loc.TheLoc
 **Kind**: static class of [<code>@the-/loc</code>](#module_@the-/loc)  
+
+* [.TheLoc](#module_@the-/loc.TheLoc)
+    * [new TheLoc(config)](#new_module_@the-/loc.TheLoc_new)
+    * [.bind(lang)](#module_@the-/loc.TheLoc+bind) ⇒ <code>function</code>
+    * [.register(namespace, values, [options])](#module_@the-/loc.TheLoc+register) ⇒ <code>TheLoc</code>
+    * [.resolve(lang, ...keypaths)](#module_@the-/loc.TheLoc+resolve) ⇒ <code>string</code>
+    * [.toCompound()](#module_@the-/loc.TheLoc+toCompound) ⇒ <code>Object</code>
+    * [.validate()](#module_@the-/loc.TheLoc+validate)
+
 <a name="new_module_@the-/loc.TheLoc_new"></a>
 
 #### new TheLoc(config)
@@ -26,9 +43,69 @@ Locale resolver
 | --- | --- | --- |
 | config | <code>Object.&lt;string, Object&gt;</code> | Localed values |
 
+<a name="module_@the-/loc.TheLoc+bind"></a>
+
+#### theLoc.bind(lang) ⇒ <code>function</code>
+Bind lang
+
+**Kind**: instance method of [<code>TheLoc</code>](#module_@the-/loc.TheLoc)  
+**Returns**: <code>function</code> - - Bound function  
+
+| Param | Type |
+| --- | --- |
+| lang | <code>string</code> | 
+
+<a name="module_@the-/loc.TheLoc+register"></a>
+
+#### theLoc.register(namespace, values, [options]) ⇒ <code>TheLoc</code>
+Register values for a namespace
+
+**Kind**: instance method of [<code>TheLoc</code>](#module_@the-/loc.TheLoc)  
+**Returns**: <code>TheLoc</code> - Returns this  
+
+| Param | Type | Default |
+| --- | --- | --- |
+| namespace | <code>string</code> |  | 
+| values | <code>Object</code> |  | 
+| [options] | <code>Object</code> | <code>{}</code> | 
+| [options.ctx] | <code>Object</code> |  | 
+| [options.depth] | <code>Number</code> | <code>5</code> | 
+
+<a name="module_@the-/loc.TheLoc+resolve"></a>
+
+#### theLoc.resolve(lang, ...keypaths) ⇒ <code>string</code>
+Resolve message for key
+
+**Kind**: instance method of [<code>TheLoc</code>](#module_@the-/loc.TheLoc)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| lang | <code>string</code> | Lang to resolve |
+| ...keypaths | <code>string</code> | Key to resolve |
+
+<a name="module_@the-/loc.TheLoc+toCompound"></a>
+
+#### theLoc.toCompound() ⇒ <code>Object</code>
+Convert to compound format object
+
+**Kind**: instance method of [<code>TheLoc</code>](#module_@the-/loc.TheLoc)  
+**Returns**: <code>Object</code> - - Compound object  
+<a name="module_@the-/loc.TheLoc+validate"></a>
+
+#### theLoc.validate()
+Validate this locale
+
+**Kind**: instance method of [<code>TheLoc</code>](#module_@the-/loc.TheLoc)  
+<a name="module_@the-/loc.helpers"></a>
+
+### loc.helpers : <code>object</code>
+Helper functions
+
+**Kind**: static namespace of [<code>@the-/loc</code>](#module_@the-/loc)  
+**Access**: protected  
 <a name="module_@the-/loc.create"></a>
 
-### @the-/loc.create(...args) ⇒ <code>TheLoc</code>
+### loc.create(...args) ⇒ <code>TheLoc</code>
 Create a TheLoc instance
 
 **Kind**: static method of [<code>@the-/loc</code>](#module_@the-/loc)  
@@ -39,7 +116,7 @@ Create a TheLoc instance
 
 <a name="module_@the-/loc.default"></a>
 
-### @the-/loc.default()
+### loc.default()
 Default exports
 
 **Kind**: static method of [<code>@the-/loc</code>](#module_@the-/loc)  

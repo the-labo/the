@@ -1,5 +1,6 @@
 /**
  * Add export/import methods
+ * @memberOf module:@the-/db
  * @function exportImportMix
  * @param {function}
  * @returns {function}
@@ -24,7 +25,10 @@ const INFO_FILE_NAME = 'info.json'
 
 /** @lends exportImportMix */
 function exportImportMix(Class) {
-  /** @class ExportImportMixed */
+  /**
+   * @memberOf module:@the-/db
+   * @inner
+   */
   class ExportImportMixed extends Class {
     async export(dirname) {
       const logger = aslogger({})

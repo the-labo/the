@@ -3,73 +3,49 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_default">default</a></dt>
-<dd><p>Default exports</p>
-</dd>
 <dt><a href="#module_@the-/mail">@the-/mail</a></dt>
 <dd><p>Mail client for the-framework</p>
 </dd>
-<dt><a href="#module_helpers">helpers</a></dt>
-<dd><p>Helper functions</p>
-</dd>
-<dt><a href="#module_sending">sending</a></dt>
-<dd><p>Sending functions</p>
-</dd>
-</dl>
-
-## Classes
-
-<dl>
-<dt><a href="#TheMail">TheMail</a></dt>
-<dd></dd>
 </dl>
 
 ## Functions
 
 <dl>
-<dt><a href="#create">create(...args)</a> ⇒ <code><a href="#TheMail">TheMail</a></code></dt>
-<dd><p>Create a TheMail instance</p>
+<dt><a href="#default">default()</a></dt>
+<dd><p>Alias of <a href="#module_@the-/mail.create">create</a></p>
 </dd>
 <dt><a href="#toLowerKeys">toLowerKeys()</a></dt>
 <dd></dd>
-<dt><a href="#sendMock">sendMock()</a></dt>
-<dd></dd>
-<dt><a href="#sendSendgrid">sendSendgrid()</a></dt>
-<dd></dd>
-<dt><a href="#sendSMTP">sendSMTP()</a></dt>
-<dd></dd>
 </dl>
-
-<a name="module_default"></a>
-
-## default
-Default exports
 
 <a name="module_@the-/mail"></a>
 
 ## @the-/mail
 Mail client for the-framework
 
-<a name="module_helpers"></a>
+**Version**: 15.4.1  
+**License**: MIT  
 
-## helpers
-Helper functions
+* [@the-/mail](#module_@the-/mail)
+    * [.TheMail](#module_@the-/mail.TheMail)
+        * [.send()](#module_@the-/mail.TheMail+send) ⇒ <code>Promise</code>
+    * [.helpers](#module_@the-/mail.helpers) : <code>object</code>
+    * [.sending](#module_@the-/mail.sending) : <code>object</code>
+        * [.sendMock()](#module_@the-/mail.sending.sendMock)
+        * [.sendSendgrid()](#module_@the-/mail.sending.sendSendgrid)
+        * [.sendSMTP()](#module_@the-/mail.sending.sendSMTP)
+    * [.create(...args)](#module_@the-/mail.create) ⇒ <code>TheMail</code>
 
-<a name="module_sending"></a>
+<a name="module_@the-/mail.TheMail"></a>
 
-## sending
-Sending functions
+### mail.TheMail
+**Kind**: static class of [<code>@the-/mail</code>](#module_@the-/mail)  
+<a name="module_@the-/mail.TheMail+send"></a>
 
-<a name="TheMail"></a>
-
-## TheMail
-**Kind**: global class  
-<a name="TheMail+send"></a>
-
-### theMail.send() ⇒ <code>Promise</code>
+#### theMail.send() ⇒ <code>Promise</code>
 Send mail
 
-**Kind**: instance method of [<code>TheMail</code>](#TheMail)  
+**Kind**: instance method of [<code>TheMail</code>](#module_@the-/mail.TheMail)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -78,30 +54,56 @@ Send mail
 | config.subject | <code>string</code> | Mail subject |
 | config.content | <code>string</code> | Mail content |
 
-<a name="create"></a>
+<a name="module_@the-/mail.helpers"></a>
 
-## create(...args) ⇒ [<code>TheMail</code>](#TheMail)
+### mail.helpers : <code>object</code>
+Helper functions
+
+**Kind**: static namespace of [<code>@the-/mail</code>](#module_@the-/mail)  
+**Access**: protected  
+<a name="module_@the-/mail.sending"></a>
+
+### mail.sending : <code>object</code>
+Sending functions
+
+**Kind**: static namespace of [<code>@the-/mail</code>](#module_@the-/mail)  
+**Access**: protected  
+
+* [.sending](#module_@the-/mail.sending) : <code>object</code>
+    * [.sendMock()](#module_@the-/mail.sending.sendMock)
+    * [.sendSendgrid()](#module_@the-/mail.sending.sendSendgrid)
+    * [.sendSMTP()](#module_@the-/mail.sending.sendSMTP)
+
+<a name="module_@the-/mail.sending.sendMock"></a>
+
+#### sending.sendMock()
+**Kind**: static method of [<code>sending</code>](#module_@the-/mail.sending)  
+<a name="module_@the-/mail.sending.sendSendgrid"></a>
+
+#### sending.sendSendgrid()
+**Kind**: static method of [<code>sending</code>](#module_@the-/mail.sending)  
+<a name="module_@the-/mail.sending.sendSMTP"></a>
+
+#### sending.sendSMTP()
+**Kind**: static method of [<code>sending</code>](#module_@the-/mail.sending)  
+<a name="module_@the-/mail.create"></a>
+
+### mail.create(...args) ⇒ <code>TheMail</code>
 Create a TheMail instance
 
-**Kind**: global function  
+**Kind**: static method of [<code>@the-/mail</code>](#module_@the-/mail)  
 
 | Param | Type |
 | --- | --- |
 | ...args | <code>\*</code> | 
 
+<a name="default"></a>
+
+## default()
+Alias of [create](#module_@the-/mail.create)
+
+**Kind**: global function  
 <a name="toLowerKeys"></a>
 
 ## toLowerKeys()
-**Kind**: global function  
-<a name="sendMock"></a>
-
-## sendMock()
-**Kind**: global function  
-<a name="sendSendgrid"></a>
-
-## sendSendgrid()
-**Kind**: global function  
-<a name="sendSMTP"></a>
-
-## sendSMTP()
 **Kind**: global function  

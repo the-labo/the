@@ -4,9 +4,12 @@ const { dir } = require('@the-/templates')
 
 module.exports = dir({
   cjs: true,
-  description: 'Data stores',
+  annotations: {
+    description: 'Buildin stores',
+    namespace: 'stores',
+    memberOf: 'module:@the-/server',
+  },
   dirname: __dirname,
-  name: 'stores',
 })
 
 if (!module.parent) {

@@ -5,6 +5,9 @@
     "name": "@the-/demo-lib",
     "kind": "module",
     "description": "Demo of the-lib packages",
+    "version": "15.4.2",
+    "license": "MIT",
+    "typicalname": "demoLib",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -13,11 +16,12 @@
     "order": 2
   },
   {
-    "id": "TheDemoLib",
-    "longname": "TheDemoLib",
+    "id": "module:@the-/demo-lib.TheDemoLib",
+    "longname": "module:@the-/demo-lib.TheDemoLib",
     "name": "TheDemoLib",
     "kind": "class",
-    "scope": "global",
+    "scope": "static",
+    "memberof": "module:@the-/demo-lib",
     "meta": {
       "lineno": 1,
       "filename": "TheDemoLib.js",
@@ -26,12 +30,13 @@
     "order": 3
   },
   {
-    "id": "create",
-    "longname": "create",
+    "id": "module:@the-/demo-lib.create",
+    "longname": "module:@the-/demo-lib.create",
     "name": "create",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Create a TheDemoLib instance",
+    "memberof": "module:@the-/demo-lib",
     "params": [
       {
         "type": {

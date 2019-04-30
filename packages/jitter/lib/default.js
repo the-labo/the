@@ -1,6 +1,6 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@lnik module:@the-/jitter.create}
+ * @function default
  */
 'use strict'
 

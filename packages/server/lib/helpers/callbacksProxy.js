@@ -1,11 +1,12 @@
 /**
  * Callback proxy
+ * @memberOf module:@the-/server.helpers
  * @function callbacksProxy
  * @returns {Proxy} Proxy instance
  */
 'use strict'
 
-/** @lends callbacksProxy */
+/** @lends module:@the-/server.helpers.callbacksProxy */
 function callbacksProxy(options = {}) {
   const { client, controllerName, onCallback } = options
   return new Proxy(

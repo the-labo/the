@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/db
  * @function refreshMix
  * @param {function} Class
  * @return {function} Mixed Class
@@ -17,9 +18,12 @@ const assertIsRef = (ref) => {
   }
 }
 
-/** @lends refreshMix */
+/** @lends module:@the-/db.refreshMix */
 function refreshMix(Class) {
-  /** @lends RefreshMixed */
+  /**
+   * @memberOf module:@the-/db.refreshMix
+   * @inner
+   */
   class RefreshMixed extends Class {
     constructor() {
       super(...arguments)

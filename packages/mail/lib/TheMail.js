@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/mail
  * @class TheMail
  */
 'use strict'
@@ -8,7 +9,7 @@ const { unlessProduction } = require('@the-/check')
 const { toLowerKeys } = require('./helpers')
 const { sendMock, sendSendgrid, sendSMTP } = require('./sending')
 
-/** @lends TheMail */
+/** @lends module:@the-/mail.TheMail */
 class TheMail {
   constructor(config = {}) {
     const env = toLowerKeys(config.env || clone(config, { without: 'name' }))

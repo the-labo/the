@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/db.helpers
  * @function createTerminal
  */
 'use strict'
@@ -6,7 +7,7 @@
 const readline = require('readline')
 const { inspect } = require('util')
 
-/** @lends createTerminal */
+/** @lends module:@the-/db.helpers.createTerminal */
 async function createTerminal(handler, options = {}) {
   const { prompt = '>' } = options
   return new Promise((resolve, reject) => {

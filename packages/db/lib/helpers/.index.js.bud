@@ -4,9 +4,13 @@ const { dir } = require('@the-/templates')
 
 module.exports = dir({
   cjs: true,
-  description: 'Helper functions',
+  annotations: {
+    namespace: 'helpers',
+    memberOf: 'module:@the-/db',
+    access: 'protected',
+    description: 'Helper functions',
+  },
   dirname: __dirname,
-  name: 'helpers',
 })
 
 if (!module.parent) {

@@ -3,186 +3,132 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_buildInEndpoints">buildInEndpoints</a></dt>
-<dd><p>Build in endpoints</p>
-</dd>
-<dt><a href="#module_default">default</a></dt>
-<dd><p>Default exports</p>
-</dd>
 <dt><a href="#module_@the-/server">@the-/server</a></dt>
 <dd><p>HTTP/RPC Server of the-framework</p>
-</dd>
-<dt><a href="#module_adapter">adapter</a></dt>
-<dd><p>Adapter functions</p>
-</dd>
-<dt><a href="#module_assert">assert</a></dt>
-<dd><p>Assert functions</p>
-</dd>
-<dt><a href="#module_DefaultValues">DefaultValues</a></dt>
-<dd></dd>
-<dt><a href="#module_constants">constants</a></dt>
-<dd><p>Constant variables</p>
-</dd>
-<dt><a href="#module_helpers">helpers</a></dt>
-<dd><p>Helper functions</p>
-</dd>
-<dt><a href="#module_mixins">mixins</a></dt>
-<dd><p>Class mixins</p>
-</dd>
-<dt><a href="#module_stores">stores</a></dt>
-<dd><p>Data stores</p>
 </dd>
 </dl>
 
 ## Classes
 
 <dl>
-<dt><a href="#TheServer">TheServer</a> ⇐ <code><a href="#IOMixed">IOMixed</a></code></dt>
-<dd></dd>
-<dt><a href="#StreamPool">StreamPool</a></dt>
-<dd></dd>
-<dt><a href="#IOMixed">IOMixed</a></dt>
-<dd></dd>
-<dt><a href="#MetricsMix">MetricsMix</a></dt>
-<dd></dd>
-<dt><a href="#ConnectionStore">ConnectionStore</a></dt>
-<dd></dd>
-<dt><a href="#SessionStore">SessionStore</a></dt>
-<dd></dd>
-<dt><a href="#Store">Store</a></dt>
-<dd></dd>
+<dt><a href="#KeepMixed">KeepMixed</a></dt>
+<dd><p>module:@the-/server.mixins.keepMix</p>
+</dd>
 </dl>
 
 ## Functions
 
 <dl>
-<dt><a href="#asControllerModule">asControllerModule()</a></dt>
-<dd><p>Mark as RPCController</p>
-</dd>
-<dt><a href="#create">create(...args)</a> ⇒ <code><a href="#TheServer">TheServer</a></code></dt>
-<dd><p>Create a TheServer instance</p>
-</dd>
-<dt><a href="#redisAdapter">redisAdapter()</a></dt>
-<dd><p>Define redis adapter for sockets</p>
-</dd>
 <dt><a href="#assertMethods">assertMethods(Class, reservedNames)</a></dt>
 <dd></dd>
 <dt><a href="#IOEvents">IOEvents()</a></dt>
 <dd><p>Events for IO</p>
 </dd>
-<dt><a href="#asStrictSession">asStrictSession(session)</a></dt>
-<dd></dd>
-<dt><a href="#callbacksProxy">callbacksProxy()</a> ⇒ <code>Proxy</code></dt>
-<dd><p>Callback proxy</p>
-</dd>
-<dt><a href="#controllerSpecsFor">controllerSpecsFor()</a></dt>
-<dd></dd>
-<dt><a href="#ctxInjector">ctxInjector(creators)</a> ⇒ <code>function</code></dt>
-<dd><p>Define koa middleware register ctx values</p>
-</dd>
-<dt><a href="#langDetector">langDetector([locales], [options])</a> ⇒ <code>function</code></dt>
-<dd><p>Define koa middleware function to detect locale</p>
-</dd>
-<dt><a href="#serverRendering">serverRendering(Component, [options])</a> ⇒ <code>function</code></dt>
-<dd><p>Define koa middleware function to do serverside rendering</p>
-</dd>
-<dt><a href="#serverRendering">serverRendering()</a></dt>
-<dd></dd>
-<dt><a href="#streamPool">streamPool()</a></dt>
-<dd><p>Stream pool</p>
-</dd>
-<dt><a href="#toControllerModuleBind">toControllerModuleBind()</a> ⇒ <code>function</code></dt>
-<dd></dd>
-<dt><a href="#toLowerKeys">toLowerKeys()</a></dt>
-<dd></dd>
-<dt><a href="#clientMix">clientMix(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>Mixin for client</p>
-</dd>
-<dt><a href="#infoMix">infoMix(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>Mixins for info</p>
-</dd>
-<dt><a href="#ioMix">ioMix(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>Mixins for IO</p>
-</dd>
-<dt><a href="#keepMix">keepMix(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>Mixin to keep</p>
-</dd>
-<dt><a href="#metricsMix">metricsMix(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>Mixins for metrics</p>
-</dd>
 </dl>
-
-<a name="module_buildInEndpoints"></a>
-
-## buildInEndpoints
-Build in endpoints
-
-<a name="module_default"></a>
-
-## default
-Default exports
 
 <a name="module_@the-/server"></a>
 
 ## @the-/server
 HTTP/RPC Server of the-framework
 
-<a name="module_adapter"></a>
+**Version**: 15.4.1  
+**License**: MIT  
 
-## adapter
-Adapter functions
+* [@the-/server](#module_@the-/server)
+    * [.TheServer](#module_@the-/server.TheServer) ⇐ <code>IOMixed</code>
+        * [new TheServer(config, langs, logFile, middlewares)](#new_module_@the-/server.TheServer_new)
+        * [.close(...args)](#module_@the-/server.TheServer+close) ⇒ <code>Promise.&lt;\*&gt;</code>
+        * [.destroyAllSessions()](#module_@the-/server.TheServer+destroyAllSessions) ⇒ <code>Promise.&lt;number&gt;</code>
+        * [.handleIOClientCame()](#module_@the-/server.TheServer+handleIOClientCame)
+        * [.handleIOClientGone()](#module_@the-/server.TheServer+handleIOClientGone)
+        * [.handleIORPCAbort()](#module_@the-/server.TheServer+handleIORPCAbort)
+        * [.handleIORPCCall()](#module_@the-/server.TheServer+handleIORPCCall)
+        * [.handleIOStreamChunk()](#module_@the-/server.TheServer+handleIOStreamChunk)
+        * [.handleIOStreamClose()](#module_@the-/server.TheServer+handleIOStreamClose)
+        * [.handleIOStreamFin()](#module_@the-/server.TheServer+handleIOStreamFin)
+        * [.handleIOStreamOpen()](#module_@the-/server.TheServer+handleIOStreamOpen)
+        * [.listen(port, [callback])](#module_@the-/server.TheServer+listen) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.buildInEndpoints](#module_@the-/server.buildInEndpoints) : <code>object</code>
+    * [.adapters](#module_@the-/server.adapters) : <code>object</code>
+        * [.redisAdapter()](#module_@the-/server.adapters.redisAdapter)
+    * [.assert](#module_@the-/server.assert) : <code>object</code>
+    * [.constants](#module_@the-/server.constants) : <code>object</code>
+        * [.DefaultValues](#module_@the-/server.constants.DefaultValues) : <code>object</code>
+    * [.helpers](#module_@the-/server.helpers) : <code>object</code>
+        * _static_
+            * [.asStrictSession(session)](#module_@the-/server.helpers.asStrictSession)
+            * [.callbacksProxy()](#module_@the-/server.helpers.callbacksProxy) ⇒ <code>Proxy</code>
+            * [.controllerSpecsFor()](#module_@the-/server.helpers.controllerSpecsFor)
+            * [.ctxInjector(creators)](#module_@the-/server.helpers.ctxInjector) ⇒ <code>function</code>
+            * [.langDetector([locales], [options])](#module_@the-/server.helpers.langDetector) ⇒ <code>function</code>
+            * [.queryFromUrl()](#module_@the-/server.helpers.queryFromUrl)
+            * [.serverRendering(Component, [options])](#module_@the-/server.helpers.serverRendering) ⇒ <code>function</code>
+            * [.serverRendering()](#module_@the-/server.helpers.serverRendering)
+            * [.streamPool()](#module_@the-/server.helpers.streamPool)
+            * [.toControllerModuleBind()](#module_@the-/server.helpers.toControllerModuleBind) ⇒ <code>function</code>
+            * [.toLowerKeys()](#module_@the-/server.helpers.toLowerKeys)
+        * _inner_
+            * [~StreamPool](#module_@the-/server.helpers..StreamPool)
+    * [.mixins](#module_@the-/server.mixins) : <code>object</code>
+        * [.clientMix(Class)](#module_@the-/server.mixins.clientMix) ⇒ <code>function</code>
+            * [~ClientMixed](#module_@the-/server.mixins.clientMix..ClientMixed)
+        * [.infoMix(Class)](#module_@the-/server.mixins.infoMix) ⇒ <code>function</code>
+            * [~InfoMixed](#module_@the-/server.mixins.infoMix..InfoMixed)
+                * [.info()](#module_@the-/server.mixins.infoMix..InfoMixed+info)
+                * [.flushInfo()](#module_@the-/server.mixins.infoMix..InfoMixed+flushInfo)
+        * [.ioMix(Class)](#module_@the-/server.mixins.ioMix) ⇒ <code>function</code>
+            * [~IOMixed](#module_@the-/server.mixins.ioMix..IOMixed)
+        * [.keepMix(Class)](#module_@the-/server.mixins.keepMix) ⇒ <code>function</code>
+        * [.metricsMix(Class)](#module_@the-/server.mixins.metricsMix) ⇒ <code>function</code>
+            * [~MetricsMix](#module_@the-/server.mixins.metricsMix..MetricsMix)
+    * [.stores](#module_@the-/server.stores) : <code>object</code>
+        * [.ConnectionStore](#module_@the-/server.stores.ConnectionStore) ⇐ [<code>Store</code>](#module_@the-/server.stores.Store)
+            * [new ConnectionStore()](#new_module_@the-/server.stores.ConnectionStore_new)
+            * [.cleanup()](#module_@the-/server.stores.Store+cleanup) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
+            * [.del(id)](#module_@the-/server.stores.Store+del) ⇒ <code>Promise.&lt;\*&gt;</code>
+            * [.delAll()](#module_@the-/server.stores.Store+delAll) ⇒ <code>Promise.&lt;number&gt;</code>
+            * [.get(id)](#module_@the-/server.stores.Store+get) ⇒ <code>Promise.&lt;Object&gt;</code>
+            * [.has(id)](#module_@the-/server.stores.Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
+            * [.ids()](#module_@the-/server.stores.Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
+            * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;void&gt;</code>
+        * [.SessionStore](#module_@the-/server.stores.SessionStore) ⇐ <code>module:@the-/server.stores.Session</code>
+            * [new SessionStore()](#new_module_@the-/server.stores.SessionStore_new)
+        * [.Store](#module_@the-/server.stores.Store)
+            * [new Store()](#new_module_@the-/server.stores.Store_new)
+            * [.cleanup()](#module_@the-/server.stores.Store+cleanup) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
+            * [.del(id)](#module_@the-/server.stores.Store+del) ⇒ <code>Promise.&lt;\*&gt;</code>
+            * [.delAll()](#module_@the-/server.stores.Store+delAll) ⇒ <code>Promise.&lt;number&gt;</code>
+            * [.get(id)](#module_@the-/server.stores.Store+get) ⇒ <code>Promise.&lt;Object&gt;</code>
+            * [.has(id)](#module_@the-/server.stores.Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
+            * [.ids()](#module_@the-/server.stores.Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
+            * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.asControllerModule()](#module_@the-/server.asControllerModule)
+    * [.create(...args)](#module_@the-/server.create) ⇒ <code>TheServer</code>
+    * [.default()](#module_@the-/server.default)
 
-<a name="module_assert"></a>
+<a name="module_@the-/server.TheServer"></a>
 
-## assert
-Assert functions
+### server.TheServer ⇐ <code>IOMixed</code>
+**Kind**: static class of [<code>@the-/server</code>](#module_@the-/server)  
+**Extends**: <code>IOMixed</code>  
 
-<a name="module_DefaultValues"></a>
+* [.TheServer](#module_@the-/server.TheServer) ⇐ <code>IOMixed</code>
+    * [new TheServer(config, langs, logFile, middlewares)](#new_module_@the-/server.TheServer_new)
+    * [.close(...args)](#module_@the-/server.TheServer+close) ⇒ <code>Promise.&lt;\*&gt;</code>
+    * [.destroyAllSessions()](#module_@the-/server.TheServer+destroyAllSessions) ⇒ <code>Promise.&lt;number&gt;</code>
+    * [.handleIOClientCame()](#module_@the-/server.TheServer+handleIOClientCame)
+    * [.handleIOClientGone()](#module_@the-/server.TheServer+handleIOClientGone)
+    * [.handleIORPCAbort()](#module_@the-/server.TheServer+handleIORPCAbort)
+    * [.handleIORPCCall()](#module_@the-/server.TheServer+handleIORPCCall)
+    * [.handleIOStreamChunk()](#module_@the-/server.TheServer+handleIOStreamChunk)
+    * [.handleIOStreamClose()](#module_@the-/server.TheServer+handleIOStreamClose)
+    * [.handleIOStreamFin()](#module_@the-/server.TheServer+handleIOStreamFin)
+    * [.handleIOStreamOpen()](#module_@the-/server.TheServer+handleIOStreamOpen)
+    * [.listen(port, [callback])](#module_@the-/server.TheServer+listen) ⇒ <code>Promise.&lt;void&gt;</code>
 
-## DefaultValues
-<a name="module_constants"></a>
+<a name="new_module_@the-/server.TheServer_new"></a>
 
-## constants
-Constant variables
-
-<a name="module_helpers"></a>
-
-## helpers
-Helper functions
-
-<a name="module_mixins"></a>
-
-## mixins
-Class mixins
-
-<a name="module_stores"></a>
-
-## stores
-Data stores
-
-<a name="TheServer"></a>
-
-## TheServer ⇐ [<code>IOMixed</code>](#IOMixed)
-**Kind**: global class  
-**Extends**: [<code>IOMixed</code>](#IOMixed)  
-
-* [TheServer](#TheServer) ⇐ [<code>IOMixed</code>](#IOMixed)
-    * [new TheServer(config, langs, logFile, middlewares)](#new_TheServer_new)
-    * [.close(...args)](#TheServer+close) ⇒ <code>Promise.&lt;\*&gt;</code>
-    * [.destroyAllSessions()](#TheServer+destroyAllSessions) ⇒ <code>Promise.&lt;number&gt;</code>
-    * [.handleIOClientCame()](#TheServer+handleIOClientCame)
-    * [.handleIOClientGone()](#TheServer+handleIOClientGone)
-    * [.handleIORPCAbort()](#TheServer+handleIORPCAbort)
-    * [.handleIORPCCall()](#TheServer+handleIORPCCall)
-    * [.handleIOStreamChunk()](#TheServer+handleIOStreamChunk)
-    * [.handleIOStreamClose()](#TheServer+handleIOStreamClose)
-    * [.handleIOStreamFin()](#TheServer+handleIOStreamFin)
-    * [.handleIOStreamOpen()](#TheServer+handleIOStreamOpen)
-    * [.listen(port, [callback])](#TheServer+listen) ⇒ <code>Promise.&lt;void&gt;</code>
-
-<a name="new_TheServer_new"></a>
-
-### new TheServer(config, langs, logFile, middlewares)
+#### new TheServer(config, langs, logFile, middlewares)
 HTTP server for the-framework
 
 
@@ -193,204 +139,563 @@ HTTP server for the-framework
 | logFile | <code>string</code> | Log file |
 | middlewares | <code>Array.&lt;function()&gt;</code> | Koa middlewares |
 
-<a name="TheServer+close"></a>
+<a name="module_@the-/server.TheServer+close"></a>
 
-### theServer.close(...args) ⇒ <code>Promise.&lt;\*&gt;</code>
+#### theServer.close(...args) ⇒ <code>Promise.&lt;\*&gt;</code>
 Close server
 
-**Kind**: instance method of [<code>TheServer</code>](#TheServer)  
+**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
 
 | Param |
 | --- |
 | ...args | 
 
-<a name="TheServer+destroyAllSessions"></a>
+<a name="module_@the-/server.TheServer+destroyAllSessions"></a>
 
-### theServer.destroyAllSessions() ⇒ <code>Promise.&lt;number&gt;</code>
+#### theServer.destroyAllSessions() ⇒ <code>Promise.&lt;number&gt;</code>
 Destroy all sessions
 
-**Kind**: instance method of [<code>TheServer</code>](#TheServer)  
+**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
 **Returns**: <code>Promise.&lt;number&gt;</code> - Deleted count  
-<a name="TheServer+handleIOClientCame"></a>
+<a name="module_@the-/server.TheServer+handleIOClientCame"></a>
 
-### theServer.handleIOClientCame()
-**Kind**: instance method of [<code>TheServer</code>](#TheServer)  
-<a name="TheServer+handleIOClientGone"></a>
+#### theServer.handleIOClientCame()
+**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
+<a name="module_@the-/server.TheServer+handleIOClientGone"></a>
 
-### theServer.handleIOClientGone()
-**Kind**: instance method of [<code>TheServer</code>](#TheServer)  
-<a name="TheServer+handleIORPCAbort"></a>
+#### theServer.handleIOClientGone()
+**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
+<a name="module_@the-/server.TheServer+handleIORPCAbort"></a>
 
-### theServer.handleIORPCAbort()
-**Kind**: instance method of [<code>TheServer</code>](#TheServer)  
-<a name="TheServer+handleIORPCCall"></a>
+#### theServer.handleIORPCAbort()
+**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
+<a name="module_@the-/server.TheServer+handleIORPCCall"></a>
 
-### theServer.handleIORPCCall()
-**Kind**: instance method of [<code>TheServer</code>](#TheServer)  
-<a name="TheServer+handleIOStreamChunk"></a>
+#### theServer.handleIORPCCall()
+**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
+<a name="module_@the-/server.TheServer+handleIOStreamChunk"></a>
 
-### theServer.handleIOStreamChunk()
-**Kind**: instance method of [<code>TheServer</code>](#TheServer)  
-<a name="TheServer+handleIOStreamClose"></a>
+#### theServer.handleIOStreamChunk()
+**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
+<a name="module_@the-/server.TheServer+handleIOStreamClose"></a>
 
-### theServer.handleIOStreamClose()
-**Kind**: instance method of [<code>TheServer</code>](#TheServer)  
-<a name="TheServer+handleIOStreamFin"></a>
+#### theServer.handleIOStreamClose()
+**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
+<a name="module_@the-/server.TheServer+handleIOStreamFin"></a>
 
-### theServer.handleIOStreamFin()
-**Kind**: instance method of [<code>TheServer</code>](#TheServer)  
-<a name="TheServer+handleIOStreamOpen"></a>
+#### theServer.handleIOStreamFin()
+**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
+<a name="module_@the-/server.TheServer+handleIOStreamOpen"></a>
 
-### theServer.handleIOStreamOpen()
-**Kind**: instance method of [<code>TheServer</code>](#TheServer)  
-<a name="TheServer+listen"></a>
+#### theServer.handleIOStreamOpen()
+**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
+<a name="module_@the-/server.TheServer+listen"></a>
 
-### theServer.listen(port, [callback]) ⇒ <code>Promise.&lt;void&gt;</code>
+#### theServer.listen(port, [callback]) ⇒ <code>Promise.&lt;void&gt;</code>
 Listen to port
 
-**Kind**: instance method of [<code>TheServer</code>](#TheServer)  
+**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | port | <code>number</code> | Port to listen |
 | [callback] |  |  |
 
-<a name="StreamPool"></a>
+<a name="module_@the-/server.buildInEndpoints"></a>
 
-## StreamPool
-**Kind**: global class  
-<a name="IOMixed"></a>
+### server.buildInEndpoints : <code>object</code>
+Build in endpoints
 
-## IOMixed
-**Kind**: global class  
-<a name="MetricsMix"></a>
+**Kind**: static namespace of [<code>@the-/server</code>](#module_@the-/server)  
+<a name="module_@the-/server.adapters"></a>
 
-## MetricsMix
-**Kind**: global class  
-<a name="ConnectionStore"></a>
+### server.adapters : <code>object</code>
+Adapter functions
 
-## ConnectionStore
-**Kind**: global class  
-<a name="new_ConnectionStore_new"></a>
+**Kind**: static namespace of [<code>@the-/server</code>](#module_@the-/server)  
+<a name="module_@the-/server.adapters.redisAdapter"></a>
 
-### new ConnectionStore()
+#### adapters.redisAdapter()
+Define redis adapter for sockets
+
+**Kind**: static method of [<code>adapters</code>](#module_@the-/server.adapters)  
+<a name="module_@the-/server.assert"></a>
+
+### server.assert : <code>object</code>
+Assert functions
+
+**Kind**: static namespace of [<code>@the-/server</code>](#module_@the-/server)  
+<a name="module_@the-/server.constants"></a>
+
+### server.constants : <code>object</code>
+Constant variables
+
+**Kind**: static namespace of [<code>@the-/server</code>](#module_@the-/server)  
+<a name="module_@the-/server.constants.DefaultValues"></a>
+
+#### constants.DefaultValues : <code>object</code>
+**Kind**: static namespace of [<code>constants</code>](#module_@the-/server.constants)  
+<a name="module_@the-/server.helpers"></a>
+
+### server.helpers : <code>object</code>
+Helper functions
+
+**Kind**: static namespace of [<code>@the-/server</code>](#module_@the-/server)  
+**Access**: protected  
+
+* [.helpers](#module_@the-/server.helpers) : <code>object</code>
+    * _static_
+        * [.asStrictSession(session)](#module_@the-/server.helpers.asStrictSession)
+        * [.callbacksProxy()](#module_@the-/server.helpers.callbacksProxy) ⇒ <code>Proxy</code>
+        * [.controllerSpecsFor()](#module_@the-/server.helpers.controllerSpecsFor)
+        * [.ctxInjector(creators)](#module_@the-/server.helpers.ctxInjector) ⇒ <code>function</code>
+        * [.langDetector([locales], [options])](#module_@the-/server.helpers.langDetector) ⇒ <code>function</code>
+        * [.queryFromUrl()](#module_@the-/server.helpers.queryFromUrl)
+        * [.serverRendering(Component, [options])](#module_@the-/server.helpers.serverRendering) ⇒ <code>function</code>
+        * [.serverRendering()](#module_@the-/server.helpers.serverRendering)
+        * [.streamPool()](#module_@the-/server.helpers.streamPool)
+        * [.toControllerModuleBind()](#module_@the-/server.helpers.toControllerModuleBind) ⇒ <code>function</code>
+        * [.toLowerKeys()](#module_@the-/server.helpers.toLowerKeys)
+    * _inner_
+        * [~StreamPool](#module_@the-/server.helpers..StreamPool)
+
+<a name="module_@the-/server.helpers.asStrictSession"></a>
+
+#### helpers.asStrictSession(session)
+**Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+
+| Param | Type |
+| --- | --- |
+| session | <code>Object</code> | 
+
+<a name="module_@the-/server.helpers.callbacksProxy"></a>
+
+#### helpers.callbacksProxy() ⇒ <code>Proxy</code>
+Callback proxy
+
+**Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+**Returns**: <code>Proxy</code> - Proxy instance  
+<a name="module_@the-/server.helpers.controllerSpecsFor"></a>
+
+#### helpers.controllerSpecsFor()
+**Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+<a name="module_@the-/server.helpers.ctxInjector"></a>
+
+#### helpers.ctxInjector(creators) ⇒ <code>function</code>
+Define koa middleware register ctx values
+
+**Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+
+| Param | Type |
+| --- | --- |
+| creators | <code>function</code> | 
+
+<a name="module_@the-/server.helpers.langDetector"></a>
+
+#### helpers.langDetector([locales], [options]) ⇒ <code>function</code>
+Define koa middleware function to detect locale
+
+**Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [locales] | <code>Array.&lt;string&gt;</code> | <code>&#x27;en&#x27;</code> | Supported locales |
+| [options] | <code>Object</code> | <code>{}</code> | Optional setting |
+
+<a name="module_@the-/server.helpers.queryFromUrl"></a>
+
+#### helpers.queryFromUrl()
+**Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+<a name="module_@the-/server.helpers.serverRendering"></a>
+
+#### helpers.serverRendering(Component, [options]) ⇒ <code>function</code>
+Define koa middleware function to do serverside rendering
+
+**Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+**Returns**: <code>function</code> - Koa middleware function  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| Component | <code>function</code> |  | React component to render |
+| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
+
+<a name="module_@the-/server.helpers.serverRendering"></a>
+
+#### helpers.serverRendering()
+**Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+<a name="module_@the-/server.helpers.streamPool"></a>
+
+#### helpers.streamPool()
+Stream pool
+
+**Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+<a name="module_@the-/server.helpers.toControllerModuleBind"></a>
+
+#### helpers.toControllerModuleBind() ⇒ <code>function</code>
+**Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+<a name="module_@the-/server.helpers.toLowerKeys"></a>
+
+#### helpers.toLowerKeys()
+**Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+<a name="module_@the-/server.helpers..StreamPool"></a>
+
+#### helpers~StreamPool
+**Kind**: inner class of [<code>helpers</code>](#module_@the-/server.helpers)  
+<a name="module_@the-/server.mixins"></a>
+
+### server.mixins : <code>object</code>
+Mixin functions
+
+**Kind**: static namespace of [<code>@the-/server</code>](#module_@the-/server)  
+
+* [.mixins](#module_@the-/server.mixins) : <code>object</code>
+    * [.clientMix(Class)](#module_@the-/server.mixins.clientMix) ⇒ <code>function</code>
+        * [~ClientMixed](#module_@the-/server.mixins.clientMix..ClientMixed)
+    * [.infoMix(Class)](#module_@the-/server.mixins.infoMix) ⇒ <code>function</code>
+        * [~InfoMixed](#module_@the-/server.mixins.infoMix..InfoMixed)
+            * [.info()](#module_@the-/server.mixins.infoMix..InfoMixed+info)
+            * [.flushInfo()](#module_@the-/server.mixins.infoMix..InfoMixed+flushInfo)
+    * [.ioMix(Class)](#module_@the-/server.mixins.ioMix) ⇒ <code>function</code>
+        * [~IOMixed](#module_@the-/server.mixins.ioMix..IOMixed)
+    * [.keepMix(Class)](#module_@the-/server.mixins.keepMix) ⇒ <code>function</code>
+    * [.metricsMix(Class)](#module_@the-/server.mixins.metricsMix) ⇒ <code>function</code>
+        * [~MetricsMix](#module_@the-/server.mixins.metricsMix..MetricsMix)
+
+<a name="module_@the-/server.mixins.clientMix"></a>
+
+#### mixins.clientMix(Class) ⇒ <code>function</code>
+Mixin for client
+
+**Kind**: static method of [<code>mixins</code>](#module_@the-/server.mixins)  
+**Returns**: <code>function</code> - Class  
+
+| Param | Type |
+| --- | --- |
+| Class | <code>function</code> | 
+
+<a name="module_@the-/server.mixins.clientMix..ClientMixed"></a>
+
+##### clientMix~ClientMixed
+**Kind**: inner class of [<code>clientMix</code>](#module_@the-/server.mixins.clientMix)  
+<a name="module_@the-/server.mixins.infoMix"></a>
+
+#### mixins.infoMix(Class) ⇒ <code>function</code>
+Mixins for info
+
+**Kind**: static method of [<code>mixins</code>](#module_@the-/server.mixins)  
+**Returns**: <code>function</code> - Class  
+
+| Param | Type |
+| --- | --- |
+| Class | <code>function</code> | 
+
+
+* [.infoMix(Class)](#module_@the-/server.mixins.infoMix) ⇒ <code>function</code>
+    * [~InfoMixed](#module_@the-/server.mixins.infoMix..InfoMixed)
+        * [.info()](#module_@the-/server.mixins.infoMix..InfoMixed+info)
+        * [.flushInfo()](#module_@the-/server.mixins.infoMix..InfoMixed+flushInfo)
+
+<a name="module_@the-/server.mixins.infoMix..InfoMixed"></a>
+
+##### infoMix~InfoMixed
+**Kind**: inner class of [<code>infoMix</code>](#module_@the-/server.mixins.infoMix)  
+
+* [~InfoMixed](#module_@the-/server.mixins.infoMix..InfoMixed)
+    * [.info()](#module_@the-/server.mixins.infoMix..InfoMixed+info)
+    * [.flushInfo()](#module_@the-/server.mixins.infoMix..InfoMixed+flushInfo)
+
+<a name="module_@the-/server.mixins.infoMix..InfoMixed+info"></a>
+
+###### infoMixed.info()
+Server info
+
+**Kind**: instance method of [<code>InfoMixed</code>](#module_@the-/server.mixins.infoMix..InfoMixed)  
+<a name="module_@the-/server.mixins.infoMix..InfoMixed+flushInfo"></a>
+
+###### infoMixed.flushInfo()
+Flush info into file
+
+**Kind**: instance method of [<code>InfoMixed</code>](#module_@the-/server.mixins.infoMix..InfoMixed)  
+<a name="module_@the-/server.mixins.ioMix"></a>
+
+#### mixins.ioMix(Class) ⇒ <code>function</code>
+Mixins for IO
+
+**Kind**: static method of [<code>mixins</code>](#module_@the-/server.mixins)  
+**Returns**: <code>function</code> - Class  
+
+| Param | Type |
+| --- | --- |
+| Class | <code>function</code> | 
+
+<a name="module_@the-/server.mixins.ioMix..IOMixed"></a>
+
+##### ioMix~IOMixed
+**Kind**: inner class of [<code>ioMix</code>](#module_@the-/server.mixins.ioMix)  
+<a name="module_@the-/server.mixins.keepMix"></a>
+
+#### mixins.keepMix(Class) ⇒ <code>function</code>
+Mixin to keep
+
+**Kind**: static method of [<code>mixins</code>](#module_@the-/server.mixins)  
+**Returns**: <code>function</code> - Class  
+
+| Param | Type |
+| --- | --- |
+| Class | <code>function</code> | 
+
+<a name="module_@the-/server.mixins.metricsMix"></a>
+
+#### mixins.metricsMix(Class) ⇒ <code>function</code>
+Mixins for metrics
+
+**Kind**: static method of [<code>mixins</code>](#module_@the-/server.mixins)  
+**Returns**: <code>function</code> - Class  
+
+| Param | Type |
+| --- | --- |
+| Class | <code>function</code> | 
+
+<a name="module_@the-/server.mixins.metricsMix..MetricsMix"></a>
+
+##### metricsMix~MetricsMix
+**Kind**: inner class of [<code>metricsMix</code>](#module_@the-/server.mixins.metricsMix)  
+<a name="module_@the-/server.stores"></a>
+
+### server.stores : <code>object</code>
+Buildin stores
+
+**Kind**: static namespace of [<code>@the-/server</code>](#module_@the-/server)  
+
+* [.stores](#module_@the-/server.stores) : <code>object</code>
+    * [.ConnectionStore](#module_@the-/server.stores.ConnectionStore) ⇐ [<code>Store</code>](#module_@the-/server.stores.Store)
+        * [new ConnectionStore()](#new_module_@the-/server.stores.ConnectionStore_new)
+        * [.cleanup()](#module_@the-/server.stores.Store+cleanup) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
+        * [.del(id)](#module_@the-/server.stores.Store+del) ⇒ <code>Promise.&lt;\*&gt;</code>
+        * [.delAll()](#module_@the-/server.stores.Store+delAll) ⇒ <code>Promise.&lt;number&gt;</code>
+        * [.get(id)](#module_@the-/server.stores.Store+get) ⇒ <code>Promise.&lt;Object&gt;</code>
+        * [.has(id)](#module_@the-/server.stores.Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
+        * [.ids()](#module_@the-/server.stores.Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
+        * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.SessionStore](#module_@the-/server.stores.SessionStore) ⇐ <code>module:@the-/server.stores.Session</code>
+        * [new SessionStore()](#new_module_@the-/server.stores.SessionStore_new)
+    * [.Store](#module_@the-/server.stores.Store)
+        * [new Store()](#new_module_@the-/server.stores.Store_new)
+        * [.cleanup()](#module_@the-/server.stores.Store+cleanup) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
+        * [.del(id)](#module_@the-/server.stores.Store+del) ⇒ <code>Promise.&lt;\*&gt;</code>
+        * [.delAll()](#module_@the-/server.stores.Store+delAll) ⇒ <code>Promise.&lt;number&gt;</code>
+        * [.get(id)](#module_@the-/server.stores.Store+get) ⇒ <code>Promise.&lt;Object&gt;</code>
+        * [.has(id)](#module_@the-/server.stores.Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
+        * [.ids()](#module_@the-/server.stores.Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
+        * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;void&gt;</code>
+
+<a name="module_@the-/server.stores.ConnectionStore"></a>
+
+#### stores.ConnectionStore ⇐ [<code>Store</code>](#module_@the-/server.stores.Store)
+**Kind**: static class of [<code>stores</code>](#module_@the-/server.stores)  
+**Extends**: [<code>Store</code>](#module_@the-/server.stores.Store)  
+
+* [.ConnectionStore](#module_@the-/server.stores.ConnectionStore) ⇐ [<code>Store</code>](#module_@the-/server.stores.Store)
+    * [new ConnectionStore()](#new_module_@the-/server.stores.ConnectionStore_new)
+    * [.cleanup()](#module_@the-/server.stores.Store+cleanup) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
+    * [.del(id)](#module_@the-/server.stores.Store+del) ⇒ <code>Promise.&lt;\*&gt;</code>
+    * [.delAll()](#module_@the-/server.stores.Store+delAll) ⇒ <code>Promise.&lt;number&gt;</code>
+    * [.get(id)](#module_@the-/server.stores.Store+get) ⇒ <code>Promise.&lt;Object&gt;</code>
+    * [.has(id)](#module_@the-/server.stores.Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.ids()](#module_@the-/server.stores.Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
+    * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;void&gt;</code>
+
+<a name="new_module_@the-/server.stores.ConnectionStore_new"></a>
+
+##### new ConnectionStore()
 Client connection store for the-server
 
-<a name="SessionStore"></a>
+<a name="module_@the-/server.stores.Store+cleanup"></a>
 
-## SessionStore
-**Kind**: global class  
-<a name="new_SessionStore_new"></a>
-
-### new SessionStore()
-Client session store for the-server
-
-<a name="Store"></a>
-
-## Store
-**Kind**: global class  
-
-* [Store](#Store)
-    * [new Store()](#new_Store_new)
-    * [.cleanup()](#Store+cleanup) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-    * [.del(id)](#Store+del) ⇒ <code>Promise.&lt;\*&gt;</code>
-    * [.delAll()](#Store+delAll) ⇒ <code>Promise.&lt;number&gt;</code>
-    * [.get(id)](#Store+get) ⇒ <code>Promise.&lt;Object&gt;</code>
-    * [.has(id)](#Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
-    * [.ids()](#Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-    * [.set(id, data)](#Store+set) ⇒ <code>Promise.&lt;void&gt;</code>
-
-<a name="new_Store_new"></a>
-
-### new Store()
-Client data store for the-server
-
-<a name="Store+cleanup"></a>
-
-### store.cleanup() ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
+##### connectionStore.cleanup() ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
 Cleanup expired data
 
-**Kind**: instance method of [<code>Store</code>](#Store)  
-<a name="Store+del"></a>
+**Kind**: instance method of [<code>ConnectionStore</code>](#module_@the-/server.stores.ConnectionStore)  
+<a name="module_@the-/server.stores.Store+del"></a>
 
-### store.del(id) ⇒ <code>Promise.&lt;\*&gt;</code>
+##### connectionStore.del(id) ⇒ <code>Promise.&lt;\*&gt;</code>
 Delete data
 
-**Kind**: instance method of [<code>Store</code>](#Store)  
+**Kind**: instance method of [<code>ConnectionStore</code>](#module_@the-/server.stores.ConnectionStore)  
 
 | Param |
 | --- |
 | id | 
 
-<a name="Store+delAll"></a>
+<a name="module_@the-/server.stores.Store+delAll"></a>
 
-### store.delAll() ⇒ <code>Promise.&lt;number&gt;</code>
+##### connectionStore.delAll() ⇒ <code>Promise.&lt;number&gt;</code>
 Delete all data
 
-**Kind**: instance method of [<code>Store</code>](#Store)  
-<a name="Store+get"></a>
+**Kind**: instance method of [<code>ConnectionStore</code>](#module_@the-/server.stores.ConnectionStore)  
+<a name="module_@the-/server.stores.Store+get"></a>
 
-### store.get(id) ⇒ <code>Promise.&lt;Object&gt;</code>
+##### connectionStore.get(id) ⇒ <code>Promise.&lt;Object&gt;</code>
 Get data
 
-**Kind**: instance method of [<code>Store</code>](#Store)  
+**Kind**: instance method of [<code>ConnectionStore</code>](#module_@the-/server.stores.ConnectionStore)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | id | <code>string</code> | Data id |
 
-<a name="Store+has"></a>
+<a name="module_@the-/server.stores.Store+has"></a>
 
-### store.has(id) ⇒ <code>Promise.&lt;boolean&gt;</code>
+##### connectionStore.has(id) ⇒ <code>Promise.&lt;boolean&gt;</code>
 Check if has data
 
-**Kind**: instance method of [<code>Store</code>](#Store)  
+**Kind**: instance method of [<code>ConnectionStore</code>](#module_@the-/server.stores.ConnectionStore)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | id | <code>string</code> | Data id |
 
-<a name="Store+ids"></a>
+<a name="module_@the-/server.stores.Store+ids"></a>
 
-### store.ids() ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
+##### connectionStore.ids() ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
 Get all ids
 
-**Kind**: instance method of [<code>Store</code>](#Store)  
-<a name="Store+set"></a>
+**Kind**: instance method of [<code>ConnectionStore</code>](#module_@the-/server.stores.ConnectionStore)  
+<a name="module_@the-/server.stores.Store+set"></a>
 
-### store.set(id, data) ⇒ <code>Promise.&lt;void&gt;</code>
+##### connectionStore.set(id, data) ⇒ <code>Promise.&lt;void&gt;</code>
 Set data
 
-**Kind**: instance method of [<code>Store</code>](#Store)  
+**Kind**: instance method of [<code>ConnectionStore</code>](#module_@the-/server.stores.ConnectionStore)  
+**Overrides**: [<code>set</code>](#module_@the-/server.stores.Store+set)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | id | <code>string</code> | Data id |
 | data | <code>Object</code> | Data to set |
 
-<a name="asControllerModule"></a>
+<a name="module_@the-/server.stores.SessionStore"></a>
 
-## asControllerModule()
+#### stores.SessionStore ⇐ <code>module:@the-/server.stores.Session</code>
+**Kind**: static class of [<code>stores</code>](#module_@the-/server.stores)  
+**Extends**: <code>module:@the-/server.stores.Session</code>  
+<a name="new_module_@the-/server.stores.SessionStore_new"></a>
+
+##### new SessionStore()
+Client session store for the-server
+
+<a name="module_@the-/server.stores.Store"></a>
+
+#### stores.Store
+**Kind**: static class of [<code>stores</code>](#module_@the-/server.stores)  
+
+* [.Store](#module_@the-/server.stores.Store)
+    * [new Store()](#new_module_@the-/server.stores.Store_new)
+    * [.cleanup()](#module_@the-/server.stores.Store+cleanup) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
+    * [.del(id)](#module_@the-/server.stores.Store+del) ⇒ <code>Promise.&lt;\*&gt;</code>
+    * [.delAll()](#module_@the-/server.stores.Store+delAll) ⇒ <code>Promise.&lt;number&gt;</code>
+    * [.get(id)](#module_@the-/server.stores.Store+get) ⇒ <code>Promise.&lt;Object&gt;</code>
+    * [.has(id)](#module_@the-/server.stores.Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.ids()](#module_@the-/server.stores.Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
+    * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;void&gt;</code>
+
+<a name="new_module_@the-/server.stores.Store_new"></a>
+
+##### new Store()
+Client data store for the-server
+
+<a name="module_@the-/server.stores.Store+cleanup"></a>
+
+##### store.cleanup() ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
+Cleanup expired data
+
+**Kind**: instance method of [<code>Store</code>](#module_@the-/server.stores.Store)  
+<a name="module_@the-/server.stores.Store+del"></a>
+
+##### store.del(id) ⇒ <code>Promise.&lt;\*&gt;</code>
+Delete data
+
+**Kind**: instance method of [<code>Store</code>](#module_@the-/server.stores.Store)  
+
+| Param |
+| --- |
+| id | 
+
+<a name="module_@the-/server.stores.Store+delAll"></a>
+
+##### store.delAll() ⇒ <code>Promise.&lt;number&gt;</code>
+Delete all data
+
+**Kind**: instance method of [<code>Store</code>](#module_@the-/server.stores.Store)  
+<a name="module_@the-/server.stores.Store+get"></a>
+
+##### store.get(id) ⇒ <code>Promise.&lt;Object&gt;</code>
+Get data
+
+**Kind**: instance method of [<code>Store</code>](#module_@the-/server.stores.Store)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| id | <code>string</code> | Data id |
+
+<a name="module_@the-/server.stores.Store+has"></a>
+
+##### store.has(id) ⇒ <code>Promise.&lt;boolean&gt;</code>
+Check if has data
+
+**Kind**: instance method of [<code>Store</code>](#module_@the-/server.stores.Store)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| id | <code>string</code> | Data id |
+
+<a name="module_@the-/server.stores.Store+ids"></a>
+
+##### store.ids() ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
+Get all ids
+
+**Kind**: instance method of [<code>Store</code>](#module_@the-/server.stores.Store)  
+<a name="module_@the-/server.stores.Store+set"></a>
+
+##### store.set(id, data) ⇒ <code>Promise.&lt;void&gt;</code>
+Set data
+
+**Kind**: instance method of [<code>Store</code>](#module_@the-/server.stores.Store)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| id | <code>string</code> | Data id |
+| data | <code>Object</code> | Data to set |
+
+<a name="module_@the-/server.asControllerModule"></a>
+
+### server.asControllerModule()
 Mark as RPCController
 
-**Kind**: global function  
-<a name="create"></a>
+**Kind**: static method of [<code>@the-/server</code>](#module_@the-/server)  
+<a name="module_@the-/server.create"></a>
 
-## create(...args) ⇒ [<code>TheServer</code>](#TheServer)
+### server.create(...args) ⇒ <code>TheServer</code>
 Create a TheServer instance
 
-**Kind**: global function  
+**Kind**: static method of [<code>@the-/server</code>](#module_@the-/server)  
 
 | Param | Type |
 | --- | --- |
 | ...args | <code>\*</code> | 
 
-<a name="redisAdapter"></a>
+<a name="module_@the-/server.default"></a>
 
-## redisAdapter()
-Define redis adapter for sockets
+### server.default()
+Alias of [create](#module_@the-/server.create)
 
-**Kind**: global function  
+**Kind**: static method of [<code>@the-/server</code>](#module_@the-/server)  
+<a name="KeepMixed"></a>
+
+## KeepMixed
+module:@the-/server.mixins.keepMix
+
+**Kind**: global class  
 <a name="assertMethods"></a>
 
 ## assertMethods(Class, reservedNames)
@@ -411,137 +716,3 @@ Define redis adapter for sockets
 Events for IO
 
 **Kind**: global function  
-<a name="asStrictSession"></a>
-
-## asStrictSession(session)
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| session | <code>Object</code> | 
-
-<a name="callbacksProxy"></a>
-
-## callbacksProxy() ⇒ <code>Proxy</code>
-Callback proxy
-
-**Kind**: global function  
-**Returns**: <code>Proxy</code> - Proxy instance  
-<a name="controllerSpecsFor"></a>
-
-## controllerSpecsFor()
-**Kind**: global function  
-<a name="ctxInjector"></a>
-
-## ctxInjector(creators) ⇒ <code>function</code>
-Define koa middleware register ctx values
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| creators | <code>function</code> | 
-
-<a name="langDetector"></a>
-
-## langDetector([locales], [options]) ⇒ <code>function</code>
-Define koa middleware function to detect locale
-
-**Kind**: global function  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [locales] | <code>Array.&lt;string&gt;</code> | <code>&#x27;en&#x27;</code> | Supported locales |
-| [options] | <code>Object</code> | <code>{}</code> | Optional setting |
-
-<a name="serverRendering"></a>
-
-## serverRendering(Component, [options]) ⇒ <code>function</code>
-Define koa middleware function to do serverside rendering
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Koa middleware function  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| Component | <code>function</code> |  | React component to render |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
-<a name="serverRendering"></a>
-
-## serverRendering()
-**Kind**: global function  
-<a name="streamPool"></a>
-
-## streamPool()
-Stream pool
-
-**Kind**: global function  
-<a name="toControllerModuleBind"></a>
-
-## toControllerModuleBind() ⇒ <code>function</code>
-**Kind**: global function  
-<a name="toLowerKeys"></a>
-
-## toLowerKeys()
-**Kind**: global function  
-<a name="clientMix"></a>
-
-## clientMix(Class) ⇒ <code>function</code>
-Mixin for client
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-<a name="infoMix"></a>
-
-## infoMix(Class) ⇒ <code>function</code>
-Mixins for info
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-<a name="ioMix"></a>
-
-## ioMix(Class) ⇒ <code>function</code>
-Mixins for IO
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-<a name="keepMix"></a>
-
-## keepMix(Class) ⇒ <code>function</code>
-Mixin to keep
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-<a name="metricsMix"></a>
-
-## metricsMix(Class) ⇒ <code>function</code>
-Mixins for metrics
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-

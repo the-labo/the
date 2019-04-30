@@ -4,12 +4,13 @@ const { dir } = require('@the-/templates')
 
 module.exports = dir({
   cjs: true,
-  dirname: __dirname,
   annotations: {
-    memberOf: 'module:@the-/server',
-    description: 'Constant variables',
-    namespace: 'constants',
-  }
+    namespace: 'state',
+    memberOf: 'module:@the-/state',
+    access: 'protected',
+    description: 'State classes',
+  },
+  dirname: __dirname,
 })
 
 if (!module.parent) {

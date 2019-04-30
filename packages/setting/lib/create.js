@@ -1,5 +1,6 @@
 /**
  * Create a TheSetting instance
+ * @memberOf module:@the-/setting
  * @function create
  * @param {...*} args
  * @returns {TheSetting}

@@ -9,7 +9,7 @@
 
 const get = require('./get')
 
-/** show */
+/** @lends module:@the-/window.show */
 function show(url) {
   const location = get('location')
   if (!location) {

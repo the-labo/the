@@ -1,6 +1,7 @@
 /**
  * Default exports
- * @module default
+ * @memberOf module:@the-/state
+ * @function default
  */
 'use strict'
 

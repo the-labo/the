@@ -1,6 +1,7 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link module:@the-/db.create}
+ * @memberOf module:@the-/db
+ * @function default
  */
 'use strict'
 

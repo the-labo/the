@@ -1,5 +1,6 @@
 /**
  * Create a TheSeed instance
+ * @memberOf module:@the-/seed
  * @function create
  * @param {...*} args
  * @returns {TheSeed}
@@ -8,7 +9,7 @@
 
 const TheSeed = require('./TheSeed')
 
-/** @lends create */
+/** @lends module:@the-/seed.create */
 function create(...args) {
   return new TheSeed(...args)
 }

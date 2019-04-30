@@ -1,5 +1,6 @@
 /**
  * Add cli methods
+ * @memberOf module:@the-/db
  * @function cliMix
  */
 'use strict'
@@ -10,9 +11,12 @@ const { inspect } = require('util')
 const { evalScript } = require('@the-/util-db')
 const createTerminal = require('../helpers/createTerminal')
 
-/** @lends cliMix */
+/** @lends module:@the-/db.cliMix */
 function cliMix(Class) {
-  /** @class CliMix  */
+  /**
+   * @memberOf module:@the-/db.cliMix
+   * @inner
+   */
   class CliMixed extends Class {
     async cli() {
       const { env, resources } = this

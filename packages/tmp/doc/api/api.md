@@ -3,26 +3,16 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_default">default</a></dt>
-<dd><p>Default exports</p>
-</dd>
 <dt><a href="#module_@the-/tmp">@the-/tmp</a></dt>
 <dd><p>Tmp file creator</p>
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheTmp">TheTmp</a></dt>
-<dd></dd>
-</dl>
-
 ## Functions
 
 <dl>
-<dt><a href="#create">create(...args)</a> ⇒ <code><a href="#TheTmp">TheTmp</a></code></dt>
-<dd><p>Create a TheTmp instance</p>
+<dt><a href="#default">default()</a></dt>
+<dd><p>Alias of <a href="#module_@the-/tmp.create">create</a></p>
 </dd>
 </dl>
 
@@ -35,115 +25,125 @@
 <dd></dd>
 </dl>
 
-<a name="module_default"></a>
-
-## default
-Default exports
-
-<a name="exp_module_default--module.exports"></a>
-
-### module.exports : [<code>TheTmp</code>](#TheTmp) ⏏
-**Kind**: Exported member  
 <a name="module_@the-/tmp"></a>
 
 ## @the-/tmp
 Tmp file creator
 
-<a name="TheTmp"></a>
+**Version**: 15.4.1  
+**License**: MIT  
 
-## TheTmp
-**Kind**: global class  
+* [@the-/tmp](#module_@the-/tmp)
+    * [.TheTmp](#module_@the-/tmp.TheTmp)
+        * [.generateDirSync([options])](#module_@the-/tmp.TheTmp+generateDirSync) ⇒ [<code>GenerateDirResult</code>](#GenerateDirResult)
+        * [.generateSync([options])](#module_@the-/tmp.TheTmp+generateSync) ⇒ [<code>GenerateResult</code>](#GenerateResult)
+        * [.generate([options])](#module_@the-/tmp.TheTmp+generate) ⇒ [<code>Promise.&lt;GenerateResult&gt;</code>](#GenerateResult)
+        * [.generateDir([options])](#module_@the-/tmp.TheTmp+generateDir) ⇒ [<code>Promise.&lt;GenerateDirResult&gt;</code>](#GenerateDirResult)
+        * [.while(handler, options)](#module_@the-/tmp.TheTmp+while) ⇒ <code>Promise.&lt;void&gt;</code>
+        * [.whileDir(handler, options)](#module_@the-/tmp.TheTmp+whileDir) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.create(...args)](#module_@the-/tmp.create) ⇒ <code>TheTmp</code>
 
-* [TheTmp](#TheTmp)
-    * [.generateDirSync([options])](#TheTmp+generateDirSync) ⇒ [<code>GenerateDirResult</code>](#GenerateDirResult)
-    * [.generateSync([options])](#TheTmp+generateSync) ⇒ [<code>GenerateResult</code>](#GenerateResult)
-    * [.generate([options])](#TheTmp+generate) ⇒ [<code>Promise.&lt;GenerateResult&gt;</code>](#GenerateResult)
-    * [.generateDir([options])](#TheTmp+generateDir) ⇒ [<code>Promise.&lt;GenerateDirResult&gt;</code>](#GenerateDirResult)
-    * [.while(handler, options)](#TheTmp+while) ⇒ <code>Promise.&lt;void&gt;</code>
-    * [.whileDir(handler, options)](#TheTmp+whileDir) ⇒ <code>Promise.&lt;void&gt;</code>
+<a name="module_@the-/tmp.TheTmp"></a>
 
-<a name="TheTmp+generateDirSync"></a>
+### tmp.TheTmp
+**Kind**: static class of [<code>@the-/tmp</code>](#module_@the-/tmp)  
 
-### theTmp.generateDirSync([options]) ⇒ [<code>GenerateDirResult</code>](#GenerateDirResult)
+* [.TheTmp](#module_@the-/tmp.TheTmp)
+    * [.generateDirSync([options])](#module_@the-/tmp.TheTmp+generateDirSync) ⇒ [<code>GenerateDirResult</code>](#GenerateDirResult)
+    * [.generateSync([options])](#module_@the-/tmp.TheTmp+generateSync) ⇒ [<code>GenerateResult</code>](#GenerateResult)
+    * [.generate([options])](#module_@the-/tmp.TheTmp+generate) ⇒ [<code>Promise.&lt;GenerateResult&gt;</code>](#GenerateResult)
+    * [.generateDir([options])](#module_@the-/tmp.TheTmp+generateDir) ⇒ [<code>Promise.&lt;GenerateDirResult&gt;</code>](#GenerateDirResult)
+    * [.while(handler, options)](#module_@the-/tmp.TheTmp+while) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.whileDir(handler, options)](#module_@the-/tmp.TheTmp+whileDir) ⇒ <code>Promise.&lt;void&gt;</code>
+
+<a name="module_@the-/tmp.TheTmp+generateDirSync"></a>
+
+#### theTmp.generateDirSync([options]) ⇒ [<code>GenerateDirResult</code>](#GenerateDirResult)
 Generate tmp directory
 
-**Kind**: instance method of [<code>TheTmp</code>](#TheTmp)  
+**Kind**: instance method of [<code>TheTmp</code>](#module_@the-/tmp.TheTmp)  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 | [options.prefix] | <code>string</code> |  | Prefix for generated |
 
-<a name="TheTmp+generateSync"></a>
+<a name="module_@the-/tmp.TheTmp+generateSync"></a>
 
-### theTmp.generateSync([options]) ⇒ [<code>GenerateResult</code>](#GenerateResult)
+#### theTmp.generateSync([options]) ⇒ [<code>GenerateResult</code>](#GenerateResult)
 Generate tmp file sync
 
-**Kind**: instance method of [<code>TheTmp</code>](#TheTmp)  
+**Kind**: instance method of [<code>TheTmp</code>](#module_@the-/tmp.TheTmp)  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 
-<a name="TheTmp+generate"></a>
+<a name="module_@the-/tmp.TheTmp+generate"></a>
 
-### theTmp.generate([options]) ⇒ [<code>Promise.&lt;GenerateResult&gt;</code>](#GenerateResult)
+#### theTmp.generate([options]) ⇒ [<code>Promise.&lt;GenerateResult&gt;</code>](#GenerateResult)
 Generate tmp file
 
-**Kind**: instance method of [<code>TheTmp</code>](#TheTmp)  
+**Kind**: instance method of [<code>TheTmp</code>](#module_@the-/tmp.TheTmp)  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 | [options.prefix] | <code>string</code> |  | Prefix for generated |
 
-<a name="TheTmp+generateDir"></a>
+<a name="module_@the-/tmp.TheTmp+generateDir"></a>
 
-### theTmp.generateDir([options]) ⇒ [<code>Promise.&lt;GenerateDirResult&gt;</code>](#GenerateDirResult)
+#### theTmp.generateDir([options]) ⇒ [<code>Promise.&lt;GenerateDirResult&gt;</code>](#GenerateDirResult)
 Generate tmp directory
 
-**Kind**: instance method of [<code>TheTmp</code>](#TheTmp)  
+**Kind**: instance method of [<code>TheTmp</code>](#module_@the-/tmp.TheTmp)  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 | [options.prefix] | <code>string</code> |  | Prefix for generated |
 
-<a name="TheTmp+while"></a>
+<a name="module_@the-/tmp.TheTmp+while"></a>
 
-### theTmp.while(handler, options) ⇒ <code>Promise.&lt;void&gt;</code>
+#### theTmp.while(handler, options) ⇒ <code>Promise.&lt;void&gt;</code>
 Create and use tmp file until handler resolved (or rejected)
 
-**Kind**: instance method of [<code>TheTmp</code>](#TheTmp)  
+**Kind**: instance method of [<code>TheTmp</code>](#module_@the-/tmp.TheTmp)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | handler | <code>function</code> | Handler function to use tmp file |
 | options | <code>Object</code> | Tmp options |
 
-<a name="TheTmp+whileDir"></a>
+<a name="module_@the-/tmp.TheTmp+whileDir"></a>
 
-### theTmp.whileDir(handler, options) ⇒ <code>Promise.&lt;void&gt;</code>
+#### theTmp.whileDir(handler, options) ⇒ <code>Promise.&lt;void&gt;</code>
 Create an use tmp directory until handler resolved (or rejected)
 
-**Kind**: instance method of [<code>TheTmp</code>](#TheTmp)  
+**Kind**: instance method of [<code>TheTmp</code>](#module_@the-/tmp.TheTmp)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | handler | <code>function</code> | Handler function to use tmp file |
 | options | <code>Object</code> | Tmp options |
 
-<a name="create"></a>
+<a name="module_@the-/tmp.create"></a>
 
-## create(...args) ⇒ [<code>TheTmp</code>](#TheTmp)
+### tmp.create(...args) ⇒ <code>TheTmp</code>
 Create a TheTmp instance
 
-**Kind**: global function  
+**Kind**: static method of [<code>@the-/tmp</code>](#module_@the-/tmp)  
 
 | Param | Type |
 | --- | --- |
 | ...args | <code>\*</code> | 
 
+<a name="default"></a>
+
+## default()
+Alias of [create](#module_@the-/tmp.create)
+
+**Kind**: global function  
 <a name="GenerateResult"></a>
 
 ## GenerateResult : <code>Object</code>

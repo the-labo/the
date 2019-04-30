@@ -1,5 +1,8 @@
 /**
+ * @memberOf module:@the-/setting
  * @class TheSetting
+ * @augments module:@the-/setting.TheSettingBase
+ * @augments module:@the-/setting.mixins.lockMix~LockMixed
  */
 'use strict'
 
@@ -15,6 +18,11 @@ const {
 const { numberIfPossible } = require('./helpers')
 const m = require('./mixins')
 
+/**
+ * @memberOf module:@the-/setting
+ * @protected
+ * @class TheSettingBase
+ */
 const TheSettingBase = [m.lockMix].reduce(
   (Class, mix) => mix(Class),
   class Base {},

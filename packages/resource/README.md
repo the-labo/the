@@ -83,25 +83,31 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [TheResource](./doc/api/api.md#TheResource)
 ### function
-- [create(args)](./doc/api/api.md#create)
-- [isResourceClass()](./doc/api/api.md#isResourceClass)
-- [isResourceClass(Class)](./doc/api/api.md#isResourceClass)
-- [listenMix(Class)](./doc/api/api.md#listenMix)
+- [default()](./doc/api/api.md#default)
 - [listenToCreate(onCreate)](./doc/api/api.md#listenToCreate)
 - [listenToDestroy(onDestroy)](./doc/api/api.md#listenToDestroy)
 - [listenToDrop(onDrop)](./doc/api/api.md#listenToDrop)
 - [listenToUpdate(onUpdate)](./doc/api/api.md#listenToUpdate)
-- [queueMix(Class)](./doc/api/api.md#queueMix)
-- [writeOnceMix(Class)](./doc/api/api.md#writeOnceMix)
-- [#refOf(id)](./doc/api/api.md#TheResource#refOf)
-- [#emptyList()](./doc/api/api.md#TheResource#emptyList)
-- [#invalidated(attributes)](./doc/api/api.md#TheResource#invalidated)
-- [#refresh(entity)](./doc/api/api.md#TheResource#refresh)
-- [#refreshAll()](./doc/api/api.md#TheResource#refreshAll)
-- [#resaveAll()](./doc/api/api.md#TheResource#resaveAll)
+- [#refOf(id)](./doc/api/api.md#module_@the-/resource.TheResource#refOf)
+- [#emptyList()](./doc/api/api.md#module_@the-/resource.TheResource#emptyList)
+- [#invalidated(attributes)](./doc/api/api.md#module_@the-/resource.TheResource#invalidated)
+- [#refresh(entity)](./doc/api/api.md#module_@the-/resource.TheResource#refresh)
+- [#refreshAll()](./doc/api/api.md#module_@the-/resource.TheResource#refreshAll)
+- [#resaveAll()](./doc/api/api.md#module_@the-/resource.TheResource#resaveAll)
+- [.create(args)](./doc/api/api.md#module_@the-/resource.create)
+- [.isResourceClass()](./doc/api/api.md#module_@the-/resource.isResourceClass)
+- [.listenMix(Class)](./doc/api/api.md#module_@the-/resource.mixins.listenMix)
+- [.queueMix(Class)](./doc/api/api.md#module_@the-/resource.mixins.queueMix)
+- [.writeOnceMix(Class)](./doc/api/api.md#module_@the-/resource.mixins.writeOnceMix)
+### class
+- [.TheResource](./doc/api/api.md#module_@the-/resource.TheResource)
+- [.TheResourceBase](./doc/api/api.md#module_@the-/resource.TheResourceBase)
+- [~QueueMixed](./doc/api/api.md#module_@the-/resource.mixins.queueMix~QueueMixed)
+- [~WriteOnce](./doc/api/api.md#module_@the-/resource.mixins.writeOnceMix~WriteOnce)
+### namespace
+- [.DataTypes](./doc/api/api.md#module_@the-/resource.DataTypes)
+- [.mixins](./doc/api/api.md#module_@the-/resource.mixins)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

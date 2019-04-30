@@ -1,5 +1,6 @@
 /**
  * Create a TheJitter instance
+ * @memberOf module:@the-/jitter
  * @function create
  * @param {...*} args
  * @returns {TheJitter}
@@ -8,7 +9,7 @@
 
 const TheJitter = require('./TheJitter')
 
-/** @lends create */
+/** @lends module:@the-/jitter.create */
 function create(...args) {
   return new TheJitter(...args)
 }

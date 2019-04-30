@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/media
  * @class TheMedia
  * @param {Object} [options={}] - Optional settings
  * @param {Object|Boolean} [options.video] - Video constraint
@@ -8,7 +9,7 @@
 
 const { get } = require('@the-/window')
 
-/** @lends TheMedia */
+/** @lends module:@the-/media.TheMedia */
 class TheMedia {
   static async createMediaStream(constrains = {}) {
     const mediaDevices = get('navigator.mediaDevices')

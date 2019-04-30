@@ -3,63 +3,81 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_default">default</a></dt>
-<dd><p>Default exports</p>
-</dd>
 <dt><a href="#module_@the-/s3">@the-/s3</a></dt>
 <dd><p>S3 upload helper</p>
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheS3">TheS3</a></dt>
-<dd></dd>
-</dl>
-
 ## Functions
 
 <dl>
-<dt><a href="#create">create(...args)</a> ⇒ <code><a href="#TheS3">TheS3</a></code></dt>
-<dd><p>Create a TheS3 instance</p>
+<dt><a href="#default">default()</a></dt>
+<dd><p>Alias of <a href="#module_@the-/s3">@the-/s3</a></p>
 </dd>
 </dl>
-
-<a name="module_default"></a>
-
-## default
-Default exports
 
 <a name="module_@the-/s3"></a>
 
 ## @the-/s3
 S3 upload helper
 
-<a name="TheS3"></a>
+**Version**: 15.4.1  
+**License**: MIT  
 
-## TheS3
-**Kind**: global class  
-<a name="TheS3+upload"></a>
+* [@the-/s3](#module_@the-/s3)
+    * [.TheS3](#module_@the-/s3.TheS3)
+        * [new TheS3(config)](#new_module_@the-/s3.TheS3_new)
+        * [.upload(src, [options])](#module_@the-/s3.TheS3+upload) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.create(...args)](#module_@the-/s3.create) ⇒ <code>TheS3</code>
 
-### theS3.upload(src, [options]) ⇒ <code>Promise.&lt;void&gt;</code>
+<a name="module_@the-/s3.TheS3"></a>
+
+### s3.TheS3
+**Kind**: static class of [<code>@the-/s3</code>](#module_@the-/s3)  
+
+* [.TheS3](#module_@the-/s3.TheS3)
+    * [new TheS3(config)](#new_module_@the-/s3.TheS3_new)
+    * [.upload(src, [options])](#module_@the-/s3.TheS3+upload) ⇒ <code>Promise.&lt;void&gt;</code>
+
+<a name="new_module_@the-/s3.TheS3_new"></a>
+
+#### new TheS3(config)
+
+| Param | Type |
+| --- | --- |
+| config | <code>Object</code> | 
+| [config.accessKeyId] | <code>string</code> | 
+| [config.bucket] | <code>string</code> | 
+| [config.region] | <code>string</code> | 
+| [config.secretAccessKey] | <code>string</code> | 
+| [config.signatureVersion] | <code>string</code> | 
+
+<a name="module_@the-/s3.TheS3+upload"></a>
+
+#### theS3.upload(src, [options]) ⇒ <code>Promise.&lt;void&gt;</code>
 Upload file into s3
 
-**Kind**: instance method of [<code>TheS3</code>](#TheS3)  
+**Kind**: instance method of [<code>TheS3</code>](#module_@the-/s3.TheS3)  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | src | <code>string</code> |  | Source file |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 
-<a name="create"></a>
+<a name="module_@the-/s3.create"></a>
 
-## create(...args) ⇒ [<code>TheS3</code>](#TheS3)
+### s3.create(...args) ⇒ <code>TheS3</code>
 Create a TheS3 instance
 
-**Kind**: global function  
+**Kind**: static method of [<code>@the-/s3</code>](#module_@the-/s3)  
 
 | Param | Type |
 | --- | --- |
 | ...args | <code>\*</code> | 
 
+<a name="default"></a>
+
+## default()
+Alias of [@the-/s3](#module_@the-/s3)
+
+**Kind**: global function  

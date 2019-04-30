@@ -1,7 +1,8 @@
 /**
  * HTTP server for the-framework
- * @extends IOMixed
+ * @memberOf module:@the-/server
  * @class TheServer
+ * @extends IOMixed
  * @param {Object} config
  * @param {string[]} langs - Supported langs
  * @param {string} logFile - Log file
@@ -19,7 +20,7 @@ const { unlessProduction } = require('@the-/check')
 const { TheCtrl } = require('@the-/controller')
 const { TheStream } = require('@the-/stream')
 const theTmp = require('@the-/tmp')
-const { redisAdapter } = require('./adpters')
+const { redisAdapter } = require('./adapters')
 const asControllerModule = require('./asControllerModule')
 const buildInEndpoints = require('./buildInEndpoints')
 const DefaultValues = require('./constants/DefaultValues')
@@ -46,7 +47,7 @@ const asAppScope = (...values) => {
   return Object.freeze(appScope)
 }
 
-/** @lends TheServer  */
+/** @lends module:@the-/server.TheServer  */
 class TheServer extends TheServerBase {
   constructor(config = {}) {
     const {

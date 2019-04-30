@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/db.helpers
  * @function execMysql
  */
 'use strict'
@@ -6,6 +7,7 @@
 const { cleanup } = require('asobj')
 const mysql = require('mysql2')
 
+/** @lends module:@the-/db.helpers.execMysql */
 async function execMysql(env, sqls) {
   const { database, host, password, port, username } = env
   const connection = mysql.createConnection(

@@ -1,11 +1,12 @@
 /**
+ * @memberOf module:@the-/tmp
  * @class TheTmp
  */
 'use strict'
 
 const tmp = require('tmp')
 
-/** @lends TheTmp */
+/** @lends module:@the-/tmp.TheTmp */
 class TheTmp {
   /**
    * Generate tmp directory

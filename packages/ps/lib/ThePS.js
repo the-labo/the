@@ -17,7 +17,7 @@ const terminate = require('terminate')
 const yesno = require('yesno')
 const { isProduction } = require('@the-/check')
 
-/** @lends ThePS */
+/** @lends module:@the-/ps.ThePS */
 class ThePS {
   constructor(filename = 'var/the.pid', options = {}) {
     const { killPolicy = 'ask', logging = !isProduction() } = options

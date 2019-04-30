@@ -1,6 +1,6 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link module:@the-/s3}
+ * @function default
  */
 'use strict'
 

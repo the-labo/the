@@ -1,6 +1,7 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link module:@the-/server.create}
+ * @memberOf module:@the-/server
+ * @function default
  */
 'use strict'
 

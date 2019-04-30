@@ -9,7 +9,7 @@
 const get = require('./get')
 const debug = require('debug')('the:window:rescue')
 
-/** @lends rescue */
+/** @lends module:@the-/window.rescue */
 function rescue(handler) {
   const window = get('window')
   if (!window) {

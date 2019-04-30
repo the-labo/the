@@ -1,10 +1,11 @@
 /**
  * Client data store for the-server
+ * @memberOf module:@the-/server.stores
  * @class Store
  */
 'use strict'
 
-/** @lends Store */
+/** @lends module:@the-/server.stores.Store */
 class Store {
   constructor(storage, options = {}) {
     const {

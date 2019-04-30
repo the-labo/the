@@ -1,5 +1,6 @@
 /**
  * Create a TheS3 instance
+ * @memberOf module:@the-/s3
  * @function create
  * @param {...*} args
  * @returns {TheS3}

@@ -1,13 +1,18 @@
 /**
  * Mixin to keep
+ * @memberOf module:@the-/server.mixins
  * @function keepMix
  * @param {function} Class
  * @returns {function} Class
  */
 'use strict'
 
-/** @lends keepMix */
+/** @lends module:@the-/server.mixins.keepMix */
 function keepMix(Class) {
+  /**
+   * module:@the-/server.mixins.keepMix
+   * @inner
+   */
   class KeepMixed extends Class {
     constructor() {
       super(...arguments)

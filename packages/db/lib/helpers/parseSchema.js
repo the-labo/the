@@ -1,5 +1,6 @@
 /**
  * Parse schema
+ * @memberOf module:@the-/db.helpers
  * @function parseSchema
  * @param {Object} Schema
  * @param {Object} [options={}]
@@ -10,7 +11,7 @@ const {
   DataTypes: { STRING },
 } = require('@the-/resource')
 
-/** @lends parseSchema */
+/** @lends module:@the-/db.helpers.parseSchema */
 function parseSchema(schema, options = {}) {
   const { indices = [] } = options
   return {

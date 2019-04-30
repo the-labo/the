@@ -1,5 +1,6 @@
 /**
  * Create a TheMedia instance
+ * @memberOf module:@the-/media
  * @function create
  * @param {...*} args
  * @returns {TheMedia}

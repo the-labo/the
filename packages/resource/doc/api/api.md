@@ -33,7 +33,7 @@
 ## @the-/resource
 Base of the-resource
 
-**Version**: 15.4.0  
+**Version**: 15.4.1  
 **License**: MIT  
 
 * [@the-/resource](#module_@the-/resource)

@@ -1,10 +1,13 @@
 /**
  * Stream pool
+ * @memberOf module:@the-/server.helpers
  * @function streamPool
  */
 'use strict'
 
 /**
+ * @memberOf module:@the-/server.helpers
+ * @inner
  * @class StreamPool
  */
 class StreamPool {
@@ -48,7 +51,7 @@ class StreamPool {
   }
 }
 
-/** @lends streamPool */
+/** @lends module:@the-/server.helpers.streamPool */
 function streamPool(...args) {
   return new StreamPool(...args)
 }

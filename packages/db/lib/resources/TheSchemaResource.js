@@ -1,5 +1,6 @@
 /**
  * Resource to manage schema
+ * @memberOf module:@the-/db
  * @class TheSchemaResource
  */
 'use strict'
@@ -8,7 +9,7 @@ const { DataTypes, TheResource } = require('@the-/resource')
 
 const { DATE, STRING } = DataTypes
 
-/** @lends TheSchemaResource */
+/** @lends module:@the-/db.TheSchemaResource */
 class TheSchemaResource extends TheResource {
   static get policy() {
     return {

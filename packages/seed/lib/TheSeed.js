@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/seed
  * @class TheSeed
  */
 'use strict'
@@ -9,7 +10,7 @@ const evaljson = require('evaljson')
 const Faker = require('faker/lib')
 const locales = require('faker/lib/locales')
 
-/** @lends TheSeed */
+/** @lends module:@the-/seed.TheSeed */
 class TheSeed {
   constructor(locale = 'en', options) {
     const args = argx(arguments)

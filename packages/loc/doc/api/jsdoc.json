@@ -5,6 +5,9 @@
     "name": "@the-/loc",
     "kind": "module",
     "description": "Locale resolver for the-framework",
+    "version": "15.4.1",
+    "license": "MIT",
+    "typicalname": "loc",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -33,13 +36,13 @@
     "order": 4
   },
   {
-    "id": "TheLoc#bind",
-    "longname": "TheLoc#bind",
+    "id": "module:@the-/loc.TheLoc#bind",
+    "longname": "module:@the-/loc.TheLoc#bind",
     "name": "bind",
     "kind": "function",
     "scope": "instance",
     "description": "Bind lang",
-    "memberof": "TheLoc",
+    "memberof": "module:@the-/loc.TheLoc",
     "params": [
       {
         "type": {
@@ -68,13 +71,13 @@
     "order": 5
   },
   {
-    "id": "TheLoc#register",
-    "longname": "TheLoc#register",
+    "id": "module:@the-/loc.TheLoc#register",
+    "longname": "module:@the-/loc.TheLoc#register",
     "name": "register",
     "kind": "function",
     "scope": "instance",
     "description": "Register values for a namespace",
-    "memberof": "TheLoc",
+    "memberof": "module:@the-/loc.TheLoc",
     "params": [
       {
         "type": {
@@ -140,13 +143,13 @@
     "order": 6
   },
   {
-    "id": "TheLoc#resolve",
-    "longname": "TheLoc#resolve",
+    "id": "module:@the-/loc.TheLoc#resolve",
+    "longname": "module:@the-/loc.TheLoc#resolve",
     "name": "resolve",
     "kind": "function",
     "scope": "instance",
     "description": "Resolve message for key",
-    "memberof": "TheLoc",
+    "memberof": "module:@the-/loc.TheLoc",
     "params": [
       {
         "type": {
@@ -186,13 +189,13 @@
     "order": 7
   },
   {
-    "id": "TheLoc#toCompound",
-    "longname": "TheLoc#toCompound",
+    "id": "module:@the-/loc.TheLoc#toCompound",
+    "longname": "module:@the-/loc.TheLoc#toCompound",
     "name": "toCompound",
     "kind": "function",
     "scope": "instance",
     "description": "Convert to compound format object",
-    "memberof": "TheLoc",
+    "memberof": "module:@the-/loc.TheLoc",
     "params": [],
     "returns": [
       {
@@ -212,13 +215,13 @@
     "order": 8
   },
   {
-    "id": "TheLoc#validate",
-    "longname": "TheLoc#validate",
+    "id": "module:@the-/loc.TheLoc#validate",
+    "longname": "module:@the-/loc.TheLoc#validate",
     "name": "validate",
     "kind": "function",
     "scope": "instance",
     "description": "Validate this locale",
-    "memberof": "TheLoc",
+    "memberof": "module:@the-/loc.TheLoc",
     "params": [],
     "meta": {
       "lineno": 125,
@@ -240,6 +243,22 @@
       "path": "/Users/okuni/Projects/the/packages/loc/lib"
     },
     "order": 3
+  },
+  {
+    "id": "module:@the-/loc.helpers",
+    "longname": "module:@the-/loc.helpers",
+    "name": "helpers",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Helper functions",
+    "memberof": "module:@the-/loc",
+    "access": "protected",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/loc/lib/helpers"
+    },
+    "order": 10
   },
   {
     "id": "module:@the-/loc.create",
@@ -292,12 +311,12 @@
     "order": 1
   },
   {
-    "id": "module:@the-/loc.mergedLocales",
-    "longname": "module:@the-/loc.mergedLocales",
+    "id": "module:@the-/loc.helpers.mergedLocales",
+    "longname": "module:@the-/loc.helpers.mergedLocales",
     "name": "mergedLocales",
     "kind": "function",
     "scope": "static",
-    "memberof": "module:@the-/loc",
+    "memberof": "module:@the-/loc.helpers",
     "params": [
       {
         "type": {
@@ -322,16 +341,16 @@
       "filename": "mergedLocales.js",
       "path": "/Users/okuni/Projects/the/packages/loc/lib/helpers"
     },
-    "order": 10
+    "order": 11
   },
   {
-    "id": "module:@the-/loc.resolveInScope",
-    "longname": "module:@the-/loc.resolveInScope",
+    "id": "module:@the-/loc.helpers.resolveInScope",
+    "longname": "module:@the-/loc.helpers.resolveInScope",
     "name": "resolveInScope",
     "kind": "function",
     "scope": "static",
     "description": "Resolve value in a scope",
-    "memberof": "module:@the-/loc",
+    "memberof": "module:@the-/loc.helpers",
     "params": [
       {
         "type": {
@@ -356,16 +375,16 @@
       "filename": "resolveInScope.js",
       "path": "/Users/okuni/Projects/the/packages/loc/lib/helpers"
     },
-    "order": 11
+    "order": 12
   },
   {
-    "id": "module:@the-/loc.toCompoundLocale",
-    "longname": "module:@the-/loc.toCompoundLocale",
+    "id": "module:@the-/loc.helpers.toCompoundLocale",
+    "longname": "module:@the-/loc.helpers.toCompoundLocale",
     "name": "toCompoundLocale",
     "kind": "function",
     "scope": "static",
     "description": "Compound tow locales",
-    "memberof": "module:@the-/loc",
+    "memberof": "module:@the-/loc.helpers",
     "params": [
       {
         "type": {
@@ -390,16 +409,16 @@
       "filename": "toCompoundLocale.js",
       "path": "/Users/okuni/Projects/the/packages/loc/lib/helpers"
     },
-    "order": 12
+    "order": 13
   },
   {
-    "id": "module:@the-/loc.checkLocales",
-    "longname": "module:@the-/loc.checkLocales",
+    "id": "module:@the-/loc.helpers.checkLocales",
+    "longname": "module:@the-/loc.helpers.checkLocales",
     "name": "checkLocales",
     "kind": "function",
     "scope": "static",
     "description": "Check locales",
-    "memberof": "module:@the-/loc",
+    "memberof": "module:@the-/loc.helpers",
     "params": [
       {
         "type": {
@@ -424,6 +443,6 @@
       "filename": "validateLocales.js",
       "path": "/Users/okuni/Projects/the/packages/loc/lib/helpers"
     },
-    "order": 13
+    "order": 14
   }
 ]

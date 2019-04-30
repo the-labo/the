@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/state
  * @class TheState
  * @extends RootState
  * @param {Object} [options={}] - Optional settings
@@ -8,7 +9,7 @@
 
 const RootState = require('./state/RootState')
 
-/** @lends TheState */
+/** @lends module:@the-/state.TheState */
 class TheState extends RootState {
   constructor(options = {}) {
     const { defaults = {}, name } = options

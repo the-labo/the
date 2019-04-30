@@ -14,9 +14,6 @@
 <dt><a href="#rescue">rescue(event, handler)</a></dt>
 <dd><p>Handle event rescue on document</p>
 </dd>
-<dt><a href="#show">show()</a></dt>
-<dd><p>show</p>
-</dd>
 </dl>
 
 <a name="module_@the-/window"></a>
@@ -24,6 +21,8 @@
 ## @the-/window
 Browser utility for the-framework
 
+**Version**: 15.4.1  
+**License**: MIT  
 
 * [@the-/window](#module_@the-/window)
     * [.get(name)](#module_@the-/window.get) ⇒ <code>\*</code>
@@ -34,7 +33,7 @@ Browser utility for the-framework
 
 <a name="module_@the-/window.get"></a>
 
-### @the-/window.get(name) ⇒ <code>\*</code>
+### window.get(name) ⇒ <code>\*</code>
 Get global values
 
 **Kind**: static method of [<code>@the-/window</code>](#module_@the-/window)  
@@ -45,7 +44,7 @@ Get global values
 
 <a name="module_@the-/window.line"></a>
 
-### @the-/window.line(handler, [options])
+### window.line(handler, [options])
 Handle toggle online/offline
 
 **Kind**: static method of [<code>@the-/window</code>](#module_@the-/window)  
@@ -58,7 +57,7 @@ Handle toggle online/offline
 
 <a name="module_@the-/window.once"></a>
 
-### @the-/window.once(event, handler)
+### window.once(event, handler)
 Handle event once on document
 
 **Kind**: static method of [<code>@the-/window</code>](#module_@the-/window)  
@@ -70,7 +69,7 @@ Handle event once on document
 
 <a name="module_@the-/window.set"></a>
 
-### @the-/window.set(name, value) ⇒ <code>\*</code>
+### window.set(name, value) ⇒ <code>\*</code>
 Set global values
 
 **Kind**: static method of [<code>@the-/window</code>](#module_@the-/window)  
@@ -82,7 +81,7 @@ Set global values
 
 <a name="module_@the-/window.show"></a>
 
-### @the-/window.show(url) ⇒ <code>\*</code>
+### window.show(url) ⇒ <code>\*</code>
 Show page
 
 **Kind**: static method of [<code>@the-/window</code>](#module_@the-/window)  
@@ -103,9 +102,3 @@ Handle event rescue on document
 | event | <code>string</code> | Name of event |
 | handler | <code>function</code> | Event handler |
 
-<a name="show"></a>
-
-## show()
-show
-
-**Kind**: global function  

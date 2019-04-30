@@ -1,7 +1,7 @@
 /**
  * Compound tow locales
  * @private
- * @memberOf module:@the-/loc
+ * @memberOf module:@the-/loc.helpers
  * @function toCompoundLocale
  * @param {Object}
  * @returns {Object}

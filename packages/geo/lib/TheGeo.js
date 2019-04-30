@@ -1,12 +1,14 @@
 /**
+ * @memberOf module:@the-/geo
  * @class TheGeo
+ * @param {Object} [options={}] - Optional settings
  */
 'use strict'
 
 const { purge, restore, save } = require('bstorage')
 const { get } = require('@the-/window')
 
-/** @lends TheGeo */
+/** @lends module:@the-/geo.TheGeo */
 class TheGeo {
   constructor(options = {}) {
     const {

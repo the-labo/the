@@ -1,14 +1,18 @@
 /**
  * Add migrate methods
+ * @memberOf module:@the-/db
  * @function migrateMix
  * @param {function}
  * @returns {function}
  */
 'use strict'
 
-/** @lends migrateMix */
+/** @lends module:@the-/db.migrateMix */
 function migrateMix(Class) {
-  /** @class MigrateMixed */
+  /**
+   * @memberOf module:@the-/db
+   * @inner
+   */
   class MigrateMixed extends Class {
     /**
      * Run database migration

@@ -1,23 +1,13 @@
 [
   {
-    "id": "module:default",
-    "longname": "module:default",
-    "name": "default",
-    "kind": "module",
-    "description": "Default exports",
-    "meta": {
-      "lineno": 1,
-      "filename": "default.js",
-      "path": "/Users/okuni/Projects/the/packages/geo/lib"
-    },
-    "order": 1
-  },
-  {
     "id": "module:@the-/geo",
     "longname": "module:@the-/geo",
     "name": "@the-/geo",
     "kind": "module",
     "description": "Geo location utility",
+    "version": "15.4.1",
+    "license": "MIT",
+    "typicalname": "geo",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -26,11 +16,118 @@
     "order": 2
   },
   {
-    "id": "TheGeo",
-    "longname": "TheGeo",
+    "id": "module:@the-/geo.TheGeo()",
+    "longname": "module:@the-/geo.TheGeo",
+    "name": "TheGeo",
+    "kind": "constructor",
+    "memberof": "module:@the-/geo.TheGeo",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "default",
+    "longname": "default",
+    "name": "default",
+    "kind": "function",
+    "scope": "global",
+    "description": "Alias of {@link module:@the-/geo.create}",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/geo/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/geo.TheGeo#watch",
+    "longname": "module:@the-/geo.TheGeo#watch",
+    "name": "watch",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Watch position change",
+    "memberof": "module:@the-/geo.TheGeo",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "callback"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "meta": {
+      "lineno": 58,
+      "filename": "TheGeo.js",
+      "path": "/Users/okuni/Projects/the/packages/geo/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "module:@the-/geo.TheGeo#detect",
+    "longname": "module:@the-/geo.TheGeo#detect",
+    "name": "detect",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Detect current geo location",
+    "memberof": "module:@the-/geo.TheGeo",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 86,
+      "filename": "TheGeo.js",
+      "path": "/Users/okuni/Projects/the/packages/geo/lib"
+    },
+    "async": true,
+    "order": 6
+  },
+  {
+    "id": "module:@the-/geo.TheGeo",
+    "longname": "module:@the-/geo.TheGeo",
     "name": "TheGeo",
     "kind": "class",
-    "scope": "global",
+    "scope": "static",
+    "memberof": "module:@the-/geo",
     "meta": {
       "lineno": 1,
       "filename": "TheGeo.js",
@@ -39,12 +136,13 @@
     "order": 3
   },
   {
-    "id": "create",
-    "longname": "create",
+    "id": "module:@the-/geo.create",
+    "longname": "module:@the-/geo.create",
     "name": "create",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Create a TheGeo instance",
+    "memberof": "module:@the-/geo",
     "params": [
       {
         "type": {
@@ -71,76 +169,5 @@
       "path": "/Users/okuni/Projects/the/packages/geo/lib"
     },
     "order": 0
-  },
-  {
-    "id": "TheGeo#watch",
-    "longname": "TheGeo#watch",
-    "name": "watch",
-    "kind": "function",
-    "scope": "instance",
-    "description": "Watch position change",
-    "memberof": "TheGeo",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "callback"
-      },
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "optional": true,
-        "description": "Optional settings",
-        "name": "options"
-      }
-    ],
-    "meta": {
-      "lineno": 56,
-      "filename": "TheGeo.js",
-      "path": "/Users/okuni/Projects/the/packages/geo/lib"
-    },
-    "order": 4
-  },
-  {
-    "id": "TheGeo#detect",
-    "longname": "TheGeo#detect",
-    "name": "detect",
-    "kind": "function",
-    "scope": "instance",
-    "description": "Detect current geo location",
-    "memberof": "TheGeo",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "description": "Optional settings",
-        "name": "options"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<*>"
-          ]
-        }
-      }
-    ],
-    "meta": {
-      "lineno": 84,
-      "filename": "TheGeo.js",
-      "path": "/Users/okuni/Projects/the/packages/geo/lib"
-    },
-    "async": true,
-    "order": 5
   }
 ]

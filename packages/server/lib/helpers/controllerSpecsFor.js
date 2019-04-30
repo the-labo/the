@@ -1,9 +1,10 @@
 /**
+ * @memberOf module:@the-/server.helpers
  * @function controllerSpecsFor
  */
 'use strict'
 
-/** @lends controllerSpecsFor */
+/** @lends module:@the-/server.helpers.controllerSpecsFor */
 function controllerSpecsFor(controllerModules) {
   return Object.entries(controllerModules).map(([name, module]) => ({
     methods: Object.assign(

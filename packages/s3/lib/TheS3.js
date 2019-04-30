@@ -1,5 +1,12 @@
 /**
+ * @memberOf module:@the-/s3
  * @class TheS3
+ * @param {Object} config
+ * @param {string} [config.accessKeyId]
+ * @param {string} [config.bucket]
+ * @param {string} [config.region]
+ * @param {string} [config.secretAccessKey]
+ * @param {string} [config.signatureVersion]
  */
 'use strict'
 
@@ -11,7 +18,7 @@ const { promisify } = require('util')
 const { unlessProduction } = require('@the-/check')
 const readFileAsync = promisify(fs.readFile)
 
-/** @lends TheS3 */
+/** @lends module:@the-/s3.TheS3 */
 class TheS3 {
   constructor(config) {
     const {

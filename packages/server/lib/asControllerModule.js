@@ -1,5 +1,6 @@
 /**
  * Mark as RPCController
+ * @memberOf module:@the-/server
  * @function asControllerModule
  */
 'use strict'
@@ -9,7 +10,7 @@ const { assertMethods } = require('./assert')
 
 const innerMethodNames = ['reloadSession', 'saveSession', 'useController']
 
-/** @lends asControllerModule */
+/** @lends module:@the-/server.asControllerModule */
 function asControllerModule(Class, options = {}) {
   const { controllerName, describeController, instantiateController } = options
 

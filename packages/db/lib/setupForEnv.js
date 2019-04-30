@@ -1,12 +1,13 @@
 /**
  * Do setup for env
+ * @memberOf module:@the-/db
  * @function setupForEnv
  */
 'use strict'
 
 const { toLowerKeys } = require('@the-/util-db')
 
-/** @lends setupForEnv */
+/** @lends module:@the-/db.setupForEnv */
 async function setupForEnv(env) {
   const {
     database,

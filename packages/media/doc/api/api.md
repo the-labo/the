@@ -3,57 +3,57 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_default">default</a></dt>
-<dd><p>Default exports</p>
-</dd>
 <dt><a href="#module_@the-/media">@the-/media</a></dt>
 <dd><p>User media handler</p>
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheMedia">TheMedia</a></dt>
-<dd></dd>
-</dl>
-
 ## Functions
 
 <dl>
-<dt><a href="#create">create(...args)</a> ⇒ <code><a href="#TheMedia">TheMedia</a></code></dt>
-<dd><p>Create a TheMedia instance</p>
+<dt><a href="#default">default()</a></dt>
+<dd><p>Alias of <a href="#module_@the-/media.create">create</a></p>
 </dd>
 </dl>
-
-<a name="module_default"></a>
-
-## default
-Default exports
 
 <a name="module_@the-/media"></a>
 
 ## @the-/media
 User media handler
 
-<a name="TheMedia"></a>
+**Version**: 15.4.1  
+**License**: MIT  
 
-## TheMedia
-**Kind**: global class  
+* [@the-/media](#module_@the-/media)
+    * [.TheMedia](#module_@the-/media.TheMedia)
+        * [new TheMedia([options])](#new_module_@the-/media.TheMedia_new)
+        * [.createAudioRecorder(audioContext, [options])](#module_@the-/media.TheMedia+createAudioRecorder) ⇒ <code>MediaRecorder</code>
+        * [.getStreamTracks(kind)](#module_@the-/media.TheMedia+getStreamTracks) ⇒ <code>Array.&lt;MediaStreamTrack&gt;</code>
+        * [.toggleEnabled(kind, enabled)](#module_@the-/media.TheMedia+toggleEnabled)
+        * [.bindVideo(video, [options])](#module_@the-/media.TheMedia+bindVideo) ⇒ <code>Promise.&lt;void&gt;</code>
+        * [.start()](#module_@the-/media.TheMedia+start) ⇒ <code>Promise.&lt;void&gt;</code>
+        * [.stop()](#module_@the-/media.TheMedia+stop) ⇒ <code>Promise.&lt;void&gt;</code>
+        * [.takePhoto([options])](#module_@the-/media.TheMedia+takePhoto) ⇒ <code>Promise.&lt;Blob&gt;</code>
+    * [.create(...args)](#module_@the-/media.create) ⇒ <code>TheMedia</code>
 
-* [TheMedia](#TheMedia)
-    * [new TheMedia([options])](#new_TheMedia_new)
-    * [.createAudioRecorder(audioContext, [options])](#TheMedia+createAudioRecorder) ⇒ <code>MediaRecorder</code>
-    * [.getStreamTracks(kind)](#TheMedia+getStreamTracks) ⇒ <code>Array.&lt;MediaStreamTrack&gt;</code>
-    * [.toggleEnabled(kind, enabled)](#TheMedia+toggleEnabled)
-    * [.bindVideo(video, [options])](#TheMedia+bindVideo) ⇒ <code>Promise.&lt;void&gt;</code>
-    * [.start()](#TheMedia+start) ⇒ <code>Promise.&lt;void&gt;</code>
-    * [.stop()](#TheMedia+stop) ⇒ <code>Promise.&lt;void&gt;</code>
-    * [.takePhoto([options])](#TheMedia+takePhoto) ⇒ <code>Promise.&lt;Blob&gt;</code>
+<a name="module_@the-/media.TheMedia"></a>
 
-<a name="new_TheMedia_new"></a>
+### media.TheMedia
+**Kind**: static class of [<code>@the-/media</code>](#module_@the-/media)  
 
-### new TheMedia([options])
+* [.TheMedia](#module_@the-/media.TheMedia)
+    * [new TheMedia([options])](#new_module_@the-/media.TheMedia_new)
+    * [.createAudioRecorder(audioContext, [options])](#module_@the-/media.TheMedia+createAudioRecorder) ⇒ <code>MediaRecorder</code>
+    * [.getStreamTracks(kind)](#module_@the-/media.TheMedia+getStreamTracks) ⇒ <code>Array.&lt;MediaStreamTrack&gt;</code>
+    * [.toggleEnabled(kind, enabled)](#module_@the-/media.TheMedia+toggleEnabled)
+    * [.bindVideo(video, [options])](#module_@the-/media.TheMedia+bindVideo) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.start()](#module_@the-/media.TheMedia+start) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.stop()](#module_@the-/media.TheMedia+stop) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.takePhoto([options])](#module_@the-/media.TheMedia+takePhoto) ⇒ <code>Promise.&lt;Blob&gt;</code>
+
+<a name="new_module_@the-/media.TheMedia_new"></a>
+
+#### new TheMedia([options])
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -61,85 +61,91 @@ User media handler
 | [options.video] | <code>Object</code> \| <code>Boolean</code> |  | Video constraint |
 | [options.audio] | <code>Object</code> \| <code>Boolean</code> |  | Audio constraint |
 
-<a name="TheMedia+createAudioRecorder"></a>
+<a name="module_@the-/media.TheMedia+createAudioRecorder"></a>
 
-### theMedia.createAudioRecorder(audioContext, [options]) ⇒ <code>MediaRecorder</code>
+#### theMedia.createAudioRecorder(audioContext, [options]) ⇒ <code>MediaRecorder</code>
 Create audio media recorder with AudioContext
 
-**Kind**: instance method of [<code>TheMedia</code>](#TheMedia)  
+**Kind**: instance method of [<code>TheMedia</code>](#module_@the-/media.TheMedia)  
 
 | Param | Type | Default |
 | --- | --- | --- |
 | audioContext | <code>AudioContext</code> |  | 
 | [options] | <code>Object</code> | <code>{}</code> | 
 
-<a name="TheMedia+getStreamTracks"></a>
+<a name="module_@the-/media.TheMedia+getStreamTracks"></a>
 
-### theMedia.getStreamTracks(kind) ⇒ <code>Array.&lt;MediaStreamTrack&gt;</code>
+#### theMedia.getStreamTracks(kind) ⇒ <code>Array.&lt;MediaStreamTrack&gt;</code>
 Get tracks
 
-**Kind**: instance method of [<code>TheMedia</code>](#TheMedia)  
+**Kind**: instance method of [<code>TheMedia</code>](#module_@the-/media.TheMedia)  
 
 | Param | Type |
 | --- | --- |
 | kind | <code>string</code> | 
 
-<a name="TheMedia+toggleEnabled"></a>
+<a name="module_@the-/media.TheMedia+toggleEnabled"></a>
 
-### theMedia.toggleEnabled(kind, enabled)
+#### theMedia.toggleEnabled(kind, enabled)
 Toggle track enabled
 
-**Kind**: instance method of [<code>TheMedia</code>](#TheMedia)  
+**Kind**: instance method of [<code>TheMedia</code>](#module_@the-/media.TheMedia)  
 
 | Param | Type |
 | --- | --- |
 | kind | <code>string</code> | 
 | enabled | <code>boolean</code> | 
 
-<a name="TheMedia+bindVideo"></a>
+<a name="module_@the-/media.TheMedia+bindVideo"></a>
 
-### theMedia.bindVideo(video, [options]) ⇒ <code>Promise.&lt;void&gt;</code>
+#### theMedia.bindVideo(video, [options]) ⇒ <code>Promise.&lt;void&gt;</code>
 Bind HTML video element
 
-**Kind**: instance method of [<code>TheMedia</code>](#TheMedia)  
+**Kind**: instance method of [<code>TheMedia</code>](#module_@the-/media.TheMedia)  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | video | <code>HTMLVideoElement</code> |  |  |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 
-<a name="TheMedia+start"></a>
+<a name="module_@the-/media.TheMedia+start"></a>
 
-### theMedia.start() ⇒ <code>Promise.&lt;void&gt;</code>
+#### theMedia.start() ⇒ <code>Promise.&lt;void&gt;</code>
 Start user media
 
-**Kind**: instance method of [<code>TheMedia</code>](#TheMedia)  
-<a name="TheMedia+stop"></a>
+**Kind**: instance method of [<code>TheMedia</code>](#module_@the-/media.TheMedia)  
+<a name="module_@the-/media.TheMedia+stop"></a>
 
-### theMedia.stop() ⇒ <code>Promise.&lt;void&gt;</code>
+#### theMedia.stop() ⇒ <code>Promise.&lt;void&gt;</code>
 Stop user media
 
-**Kind**: instance method of [<code>TheMedia</code>](#TheMedia)  
-<a name="TheMedia+takePhoto"></a>
+**Kind**: instance method of [<code>TheMedia</code>](#module_@the-/media.TheMedia)  
+<a name="module_@the-/media.TheMedia+takePhoto"></a>
 
-### theMedia.takePhoto([options]) ⇒ <code>Promise.&lt;Blob&gt;</code>
+#### theMedia.takePhoto([options]) ⇒ <code>Promise.&lt;Blob&gt;</code>
 Take photo image
 
-**Kind**: instance method of [<code>TheMedia</code>](#TheMedia)  
+**Kind**: instance method of [<code>TheMedia</code>](#module_@the-/media.TheMedia)  
 **Returns**: <code>Promise.&lt;Blob&gt;</code> - Blob  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 
-<a name="create"></a>
+<a name="module_@the-/media.create"></a>
 
-## create(...args) ⇒ [<code>TheMedia</code>](#TheMedia)
+### media.create(...args) ⇒ <code>TheMedia</code>
 Create a TheMedia instance
 
-**Kind**: global function  
+**Kind**: static method of [<code>@the-/media</code>](#module_@the-/media)  
 
 | Param | Type |
 | --- | --- |
 | ...args | <code>\*</code> | 
 
+<a name="default"></a>
+
+## default()
+Alias of [create](#module_@the-/media.create)
+
+**Kind**: global function  

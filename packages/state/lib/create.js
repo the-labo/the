@@ -1,5 +1,6 @@
 /**
  * Create a TheState instance
+ * @memberOf module:@the-/state
  * @function create
  * @param {...*} args
  * @returns {TheState}

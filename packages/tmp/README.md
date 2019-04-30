@@ -90,21 +90,26 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [default](./doc/api/api.md#module_default)
-- [@the-/tmp](./doc/api/api.md#module_@the-/tmp)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheTmp](./doc/api/api.md#TheTmp)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [#generateDirSync(options)](./doc/api/api.md#TheTmp#generateDirSync)
+- [#generateSync(options)](./doc/api/api.md#TheTmp#generateSync)
+- [#generate(options)](./doc/api/api.md#TheTmp#generate)
+- [#generateDir(options)](./doc/api/api.md#TheTmp#generateDir)
+- [#while(handler,options)](./doc/api/api.md#TheTmp#while)
+- [#whileDir(handler,options)](./doc/api/api.md#TheTmp#whileDir)
+### typedef
+- [GenerateResult](./doc/api/api.md#GenerateResult)
+- [GenerateDirResult](./doc/api/api.md#GenerateDirResult)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

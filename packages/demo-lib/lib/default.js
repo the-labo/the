@@ -11,7 +11,6 @@ const TheDemoLib = require('./TheDemoLib')
 
 const lib = create.bind(create)
 
-/** @lends theDemoLib */
 module.exports = Object.assign(
   lib,
   /** @lends theDemoLib */

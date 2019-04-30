@@ -9,7 +9,7 @@
 
 const TheLoc = require('./TheLoc')
 
-/** @lends create */
+/** @lends module:@the-/loc.create */
 function create(...args) {
   return new TheLoc(...args)
 }

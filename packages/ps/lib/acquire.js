@@ -7,7 +7,7 @@
 
 const ThePS = require('./ThePS')
 
-/** @lends acquire */
+/** @lends module:@the-/ps.acquire */
 async function acquire(filename) {
   const ps = new ThePS(filename, {
     killPolicy: 'ask',

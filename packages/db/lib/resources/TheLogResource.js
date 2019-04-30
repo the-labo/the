@@ -1,5 +1,6 @@
 /**
  * Resource of data history
+ * @memberOf module:@the-/db
  * @class TheLogResource
  */
 'use strict'
@@ -22,7 +23,7 @@ const path = require('path')
 const { DataTypes, TheResource } = require('@the-/resource')
 const { DATE, STRING } = DataTypes
 
-/** @lends TheLogResource */
+/** @lends module:@the-/db.TheLogResource */
 class TheLogResource extends TheResource {
   static get policy() {
     return {

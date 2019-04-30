@@ -1,5 +1,6 @@
 /**
  * @function cascadeMix
+ * @memberOf module:@the-/db
  * @param {function} Class
  * @return {function} Mixed Class
  */
@@ -7,8 +8,13 @@
 
 const debug = require('debug')('the:db:cascade')
 
-/** @lends cascadeMix */
+/** @lends module:@the-/db.cascadeMix */
 function cascadeMix(Class) {
+  /**
+   * @memberOf module:@the-/db.cascadeMix
+   * @class CascadeMixed
+   * @inner
+   */
   class CascadeMixed extends Class {
     constructor() {
       super(...arguments)

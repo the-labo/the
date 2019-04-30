@@ -1,5 +1,6 @@
 /**
  * Define koa middleware function to detect locale
+ * @memberOf module:@the-/server.helpers
  * @function langDetector
  * @param {string[]} [locales='en'] - Supported locales
  * @param {Object} [options={}] - Optional setting
@@ -9,7 +10,7 @@
 
 const { Locales } = require('locale')
 
-/** @lends langDetector */
+/** @lends module:@the-/server.helpers.langDetector */
 function langDetector(locales, options = {}) {
   const { queryKey = 'locale' } = options
 

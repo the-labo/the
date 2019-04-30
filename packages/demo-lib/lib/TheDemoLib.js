@@ -1,9 +1,10 @@
 /**
+ * @memberOf module:@the-/demo-lib
  * @class TheDemoLib
  */
 'use strict'
 
-/** @lends TheDemoLib */
+/** @lends module:@the-/demo-lib.TheDemoLib */
 class TheDemoLib {}
 
 module.exports = TheDemoLib

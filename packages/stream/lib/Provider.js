@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/stream
  * @class Provider
  */
 'use strict'
@@ -6,7 +7,7 @@
 const generatorFromReadable = require('./helpers/generatorFromReadable')
 const { ReadableStream } = require('./helpers/webStreams')
 
-/** @lends Provider */
+/** @lends module:@the-/stream.Provider */
 class Provider {
   constructor(generator) {
     const readable = new ReadableStream({

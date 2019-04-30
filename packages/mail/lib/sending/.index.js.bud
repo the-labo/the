@@ -4,9 +4,13 @@ const { dir } = require('@the-/templates')
 
 module.exports = dir({
   cjs: true,
-  description: 'Sending functions',
+  annotations: {
+    namespace: 'sending',
+    memberOf: 'module:@the-/mail',
+    access: 'protected',
+    description: 'Sending functions',
+  },
   dirname: __dirname,
-  name: 'sending',
 })
 
 if (!module.parent) {

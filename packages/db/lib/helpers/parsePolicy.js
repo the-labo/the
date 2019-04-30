@@ -1,5 +1,6 @@
 /**
  * Parse db policy
+ * @memberOf execSqlite
  * @function parsePolicy
  */
 'use strict'
@@ -13,7 +14,7 @@ const TypeGroups = {
   [REF]: [ENTITY, REF],
 }
 
-/** @lends parsePolicy */
+/** @lends execSqlite.parsePolicy */
 function parsePolicy(policy) {
   const parsed = {}
   for (const [name, values] of Object.entries(policy)) {

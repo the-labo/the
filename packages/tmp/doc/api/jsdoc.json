@@ -1,23 +1,13 @@
 [
   {
-    "id": "module:default",
-    "longname": "module:default",
-    "name": "default",
-    "kind": "module",
-    "description": "Default exports",
-    "meta": {
-      "lineno": 1,
-      "filename": "default.js",
-      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
-    },
-    "order": 1
-  },
-  {
     "id": "module:@the-/tmp",
     "longname": "module:@the-/tmp",
     "name": "@the-/tmp",
     "kind": "module",
     "description": "Tmp file creator",
+    "version": "15.4.1",
+    "license": "MIT",
+    "typicalname": "tmp",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -26,70 +16,18 @@
     "order": 3
   },
   {
-    "id": "module:default--module.exports",
-    "longname": "module:default",
-    "name": "module.exports",
-    "kind": "member",
-    "isExported": true,
-    "memberof": "module:default",
-    "type": {
-      "names": [
-        "TheTmp"
-      ]
-    },
+    "id": "default",
+    "longname": "default",
+    "name": "default",
+    "kind": "function",
+    "scope": "global",
+    "description": "Alias of {@link module:@the-/tmp.create}",
     "meta": {
-      "lineno": 14,
+      "lineno": 1,
       "filename": "default.js",
       "path": "/Users/okuni/Projects/the/packages/tmp/lib"
     },
-    "order": 2
-  },
-  {
-    "id": "TheTmp",
-    "longname": "TheTmp",
-    "name": "TheTmp",
-    "kind": "class",
-    "scope": "global",
-    "meta": {
-      "lineno": 1,
-      "filename": "TheTmp.js",
-      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
-    },
-    "order": 6
-  },
-  {
-    "id": "create",
-    "longname": "create",
-    "name": "create",
-    "kind": "function",
-    "scope": "global",
-    "description": "Create a TheTmp instance",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        },
-        "variable": true,
-        "name": "args"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "TheTmp"
-          ]
-        }
-      }
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "create.js",
-      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
-    },
-    "order": 0
+    "order": 1
   },
   {
     "id": "GenerateResult",
@@ -130,7 +68,7 @@
       }
     ],
     "meta": {
-      "lineno": 117,
+      "lineno": 118,
       "filename": "TheTmp.js",
       "path": "/Users/okuni/Projects/the/packages/tmp/lib"
     },
@@ -167,20 +105,20 @@
       }
     ],
     "meta": {
-      "lineno": 123,
+      "lineno": 124,
       "filename": "TheTmp.js",
       "path": "/Users/okuni/Projects/the/packages/tmp/lib"
     },
     "order": 5
   },
   {
-    "id": "TheTmp#generateDirSync",
-    "longname": "TheTmp#generateDirSync",
+    "id": "module:@the-/tmp.TheTmp#generateDirSync",
+    "longname": "module:@the-/tmp.TheTmp#generateDirSync",
     "name": "generateDirSync",
     "kind": "function",
     "scope": "instance",
     "description": "Generate tmp directory",
-    "memberof": "TheTmp",
+    "memberof": "module:@the-/tmp.TheTmp",
     "params": [
       {
         "type": {
@@ -215,20 +153,20 @@
       }
     ],
     "meta": {
-      "lineno": 16,
+      "lineno": 17,
       "filename": "TheTmp.js",
       "path": "/Users/okuni/Projects/the/packages/tmp/lib"
     },
     "order": 7
   },
   {
-    "id": "TheTmp#generateSync",
-    "longname": "TheTmp#generateSync",
+    "id": "module:@the-/tmp.TheTmp#generateSync",
+    "longname": "module:@the-/tmp.TheTmp#generateSync",
     "name": "generateSync",
     "kind": "function",
     "scope": "instance",
     "description": "Generate tmp file sync",
-    "memberof": "TheTmp",
+    "memberof": "module:@the-/tmp.TheTmp",
     "params": [
       {
         "type": {
@@ -252,20 +190,20 @@
       }
     ],
     "meta": {
-      "lineno": 30,
+      "lineno": 31,
       "filename": "TheTmp.js",
       "path": "/Users/okuni/Projects/the/packages/tmp/lib"
     },
     "order": 8
   },
   {
-    "id": "TheTmp#generate",
-    "longname": "TheTmp#generate",
+    "id": "module:@the-/tmp.TheTmp#generate",
+    "longname": "module:@the-/tmp.TheTmp#generate",
     "name": "generate",
     "kind": "function",
     "scope": "instance",
     "description": "Generate tmp file",
-    "memberof": "TheTmp",
+    "memberof": "module:@the-/tmp.TheTmp",
     "params": [
       {
         "type": {
@@ -300,7 +238,7 @@
       }
     ],
     "meta": {
-      "lineno": 46,
+      "lineno": 47,
       "filename": "TheTmp.js",
       "path": "/Users/okuni/Projects/the/packages/tmp/lib"
     },
@@ -308,13 +246,13 @@
     "order": 9
   },
   {
-    "id": "TheTmp#generateDir",
-    "longname": "TheTmp#generateDir",
+    "id": "module:@the-/tmp.TheTmp#generateDir",
+    "longname": "module:@the-/tmp.TheTmp#generateDir",
     "name": "generateDir",
     "kind": "function",
     "scope": "instance",
     "description": "Generate tmp directory",
-    "memberof": "TheTmp",
+    "memberof": "module:@the-/tmp.TheTmp",
     "params": [
       {
         "type": {
@@ -349,7 +287,7 @@
       }
     ],
     "meta": {
-      "lineno": 65,
+      "lineno": 66,
       "filename": "TheTmp.js",
       "path": "/Users/okuni/Projects/the/packages/tmp/lib"
     },
@@ -357,13 +295,13 @@
     "order": 10
   },
   {
-    "id": "TheTmp#while",
-    "longname": "TheTmp#while",
+    "id": "module:@the-/tmp.TheTmp#while",
+    "longname": "module:@the-/tmp.TheTmp#while",
     "name": "while",
     "kind": "function",
     "scope": "instance",
     "description": "Create and use tmp file until handler resolved (or rejected)",
-    "memberof": "TheTmp",
+    "memberof": "module:@the-/tmp.TheTmp",
     "params": [
       {
         "type": {
@@ -394,7 +332,7 @@
       }
     ],
     "meta": {
-      "lineno": 90,
+      "lineno": 91,
       "filename": "TheTmp.js",
       "path": "/Users/okuni/Projects/the/packages/tmp/lib"
     },
@@ -402,13 +340,13 @@
     "order": 11
   },
   {
-    "id": "TheTmp#whileDir",
-    "longname": "TheTmp#whileDir",
+    "id": "module:@the-/tmp.TheTmp#whileDir",
+    "longname": "module:@the-/tmp.TheTmp#whileDir",
     "name": "whileDir",
     "kind": "function",
     "scope": "instance",
     "description": "Create an use tmp directory until handler resolved (or rejected)",
-    "memberof": "TheTmp",
+    "memberof": "module:@the-/tmp.TheTmp",
     "params": [
       {
         "type": {
@@ -439,11 +377,79 @@
       }
     ],
     "meta": {
-      "lineno": 105,
+      "lineno": 106,
       "filename": "TheTmp.js",
       "path": "/Users/okuni/Projects/the/packages/tmp/lib"
     },
     "async": true,
     "order": 12
+  },
+  {
+    "id": "module:@the-/tmp.TheTmp",
+    "longname": "module:@the-/tmp.TheTmp",
+    "name": "TheTmp",
+    "kind": "class",
+    "scope": "static",
+    "memberof": "module:@the-/tmp",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheTmp.js",
+      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "module.exports",
+    "longname": "module.exports",
+    "name": "exports",
+    "kind": "member",
+    "scope": "static",
+    "memberof": "module",
+    "type": {
+      "names": [
+        "TheTmp"
+      ]
+    },
+    "meta": {
+      "lineno": 14,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "module:@the-/tmp.create",
+    "longname": "module:@the-/tmp.create",
+    "name": "create",
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheTmp instance",
+    "memberof": "module:@the-/tmp",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheTmp"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+    },
+    "order": 0
   }
 ]

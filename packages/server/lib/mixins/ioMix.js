@@ -1,5 +1,6 @@
 /**
  * Mixins for IO
+ * @memberOf module:@the-/server.mixins
  * @function ioMix
  * @param {function} Class
  * @returns {function} Class
@@ -15,9 +16,11 @@ const { decode, encode } = new ThePack({
   converter: ThePackConverters.NoopConverter,
 })
 
-/** @lends ioMix */
+/** @lends module:@the-/server.mixins.ioMix */
 function ioMix(Class) {
   /**
+   * @memberOf module:@the-/server.mixins.ioMix
+   * @inner
    * @class IOMixed
    */
   class IOMixed extends Class {

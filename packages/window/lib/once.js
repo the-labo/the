@@ -10,7 +10,7 @@
 const get = require('./get')
 const debug = require('debug')('the:window:once')
 
-/** @lends once */
+/** @lends module:@the-/window.once */
 function once(event, handler) {
   const document = get('window.document')
   if (!document) {

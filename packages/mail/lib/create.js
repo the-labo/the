@@ -1,5 +1,6 @@
 /**
  * Create a TheMail instance
+ * @memberOf module:@the-/mail
  * @function create
  * @param {...*} args
  * @returns {TheMail}
@@ -8,7 +9,7 @@
 
 const TheMail = require('./TheMail')
 
-/** @lends create */
+/** @lends module:@the-/mail.create */
 function create(...args) {
   return new TheMail(...args)
 }

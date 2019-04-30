@@ -1,5 +1,6 @@
 /**
  * Create a TheTmp instance
+ * @memberOf module:@the-/tmp
  * @function create
  * @param {...*} args
  * @returns {TheTmp}

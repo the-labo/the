@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/mail.sending
  * @function sendMock
  */
 'use strict'
@@ -6,7 +7,7 @@ const handleUnknownOptions = require('../helpers/handleUnknownOptions')
 
 const BAR = '=========================='
 
-/** @lends sendMock */
+/** @lends module:@the-/mail.sending.sendMock */
 async function sendMock({ content, from, subject, to, ...rest }) {
   handleUnknownOptions(rest)
   console.log(BAR)

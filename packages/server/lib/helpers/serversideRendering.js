@@ -1,5 +1,6 @@
 /**
  * Define koa middleware function to do serverside rendering
+ * @memberOf module:@the-/server.helpers
  * @function serverRendering
  * @param {function} Component - React component to render
  * @param {Object} [options={}] - Optional settings
@@ -17,7 +18,7 @@ const debug = require('debug')('the:server:server-rendering')
 
 const d = (module) => (module && module.default) || module
 
-/** @function serverRendering */
+/** @function module:@the-/server.helpers.serverRendering */
 function serverRendering(Html, options = {}) {
   const {
     appScope,

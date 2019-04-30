@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/mail.sending
  * @function sendSMTP
  */
 'use strict'
@@ -6,7 +7,7 @@
 const nodemailer = require('nodemailer')
 const handleUnknownOptions = require('../helpers/handleUnknownOptions')
 
-/** @lends sendSMTP */
+/** @lends module:@the-/mail.sending.sendSMTP */
 async function sendSMTP({ content, from, subject, to, url, ...rest }) {
   handleUnknownOptions(rest)
   const transporter = nodemailer.createTransport(url)

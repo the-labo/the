@@ -1,14 +1,17 @@
 /**
  * Mixins for metrics
+ * @memberOf module:@the-/server.mixins
  * @function metricsMix
  * @param {function} Class
  * @returns {function} Class
  */
 'use strict'
 
-/** @lends metricsMix */
+/** @lends module:@the-/server.mixins.metricsMix */
 function metricsMix(Class) {
   /**
+   * @memberOf module:@the-/server.mixins.metricsMix
+   * @inner
    * @class MetricsMix
    */
   class MetricsMix extends Class {

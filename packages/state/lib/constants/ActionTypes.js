@@ -1,6 +1,7 @@
 /**
  * Action types
- * @enum {string} ActionTypes
+ * @memberOf module:@the-/state.constants
+ * @namespace ActionTypes
  */
 'use strict'
 

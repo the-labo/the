@@ -1,6 +1,6 @@
 /**
- * Default exports
- * @module default
+ * Alias {@link module:@the-/setting.create}
+ * @function default
  */
 'use strict'
 

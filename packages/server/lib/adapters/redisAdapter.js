@@ -1,5 +1,6 @@
 /**
  * Define redis adapter for sockets
+ * @memberOf module:@the-/server.adapters
  * @function redisAdapter
  */
 'use strict'
@@ -8,7 +9,7 @@ const asleep = require('asleep')
 const { createClient } = require('redis')
 const socketIORedis = require('socket.io-redis')
 
-/** @lends redisAdapter */
+/** @lends module:@the-/server.adapters.redisAdapter */
 function redisAdapter(io, options = {}) {
   const key = `the:server:socket.io`
   const { host, port, requestsTimeout } = options

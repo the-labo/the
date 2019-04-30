@@ -1,6 +1,6 @@
 /**
  * @private
- * @memberOf module:@the-/loc
+ * @memberOf module:@the-/loc.helpers
  * @function mergedLocales
  * @param {Object} l1
  * @param {Object} l2

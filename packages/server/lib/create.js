@@ -1,5 +1,6 @@
 /**
  * Create a TheServer instance
+ * @memberOf module:@the-/server
  * @function create
  * @param {...*} args
  * @returns {TheServer}
@@ -8,7 +9,7 @@
 
 const TheServer = require('./TheServer')
 
-/** @lends create */
+/** @lends module:@the-/server.create */
 function create(...args) {
   return new TheServer(...args)
 }

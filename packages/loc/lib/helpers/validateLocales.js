@@ -1,7 +1,7 @@
 /**
  * Check locales
  * @private
- * @memberOf module:@the-/loc
+ * @memberOf module:@the-/loc.helpers
  * @function checkLocales
  * @param {Object}
  * @returns {Object}

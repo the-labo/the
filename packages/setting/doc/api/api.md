@@ -3,95 +3,85 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_default">default</a></dt>
-<dd><p>Default exports</p>
-</dd>
 <dt><a href="#module_@the-/setting">@the-/setting</a></dt>
 <dd><p>Setting manager for the-framework</p>
 </dd>
-<dt><a href="#module_mixins">mixins</a></dt>
-<dd></dd>
-</dl>
-
-## Classes
-
-<dl>
-<dt><a href="#TheSetting">TheSetting</a></dt>
-<dd></dd>
 </dl>
 
 ## Functions
 
 <dl>
-<dt><a href="#create">create(...args)</a> ⇒ <code><a href="#TheSetting">TheSetting</a></code></dt>
-<dd><p>Create a TheSetting instance</p>
+<dt><a href="#default">default()</a></dt>
+<dd><p>Alias <a href="#module_@the-/setting.create">create</a></p>
 </dd>
 </dl>
-
-<a name="module_default"></a>
-
-## default
-Default exports
 
 <a name="module_@the-/setting"></a>
 
 ## @the-/setting
 Setting manager for the-framework
 
-<a name="module_mixins"></a>
+**Version**: 15.4.2  
+**License**: MIT  
 
-## mixins
-<a name="TheSetting"></a>
+* [@the-/setting](#module_@the-/setting)
+    * [.TheSetting](#module_@the-/setting.TheSetting) ⇐ [<code>TheSettingBase</code>](#module_@the-/setting.TheSettingBase)
+    * [.TheSettingBase](#module_@the-/setting.TheSettingBase)
+    * [.helpers](#module_@the-/setting.helpers) : <code>object</code>
+    * [.mixins](#module_@the-/setting.mixins) : <code>object</code>
+        * [.lockMix()](#module_@the-/setting.mixins.lockMix)
+            * [~LockMixed](#module_@the-/setting.mixins.lockMix..LockMixed)
+    * [.create(...args)](#module_@the-/setting.create) ⇒ <code>TheSetting</code>
 
-## TheSetting
-**Kind**: global class  
+<a name="module_@the-/setting.TheSetting"></a>
 
-* [TheSetting](#TheSetting)
-    * [.del(...names)](#TheSetting+del)
-    * [.get([name])](#TheSetting+get) ⇒ <code>\*</code>
-    * [.set(values)](#TheSetting+set)
+### setting.TheSetting ⇐ [<code>TheSettingBase</code>](#module_@the-/setting.TheSettingBase)
+**Kind**: static class of [<code>@the-/setting</code>](#module_@the-/setting)  
+**Extends**: [<code>TheSettingBase</code>](#module_@the-/setting.TheSettingBase), [<code>LockMixed</code>](#module_@the-/setting.mixins.lockMix..LockMixed)  
+<a name="module_@the-/setting.TheSettingBase"></a>
 
-<a name="TheSetting+del"></a>
+### setting.TheSettingBase
+**Kind**: static class of [<code>@the-/setting</code>](#module_@the-/setting)  
+**Access**: protected  
+<a name="module_@the-/setting.helpers"></a>
 
-### theSetting.del(...names)
-Delete value for name
+### setting.helpers : <code>object</code>
+Helper utility
 
-**Kind**: instance method of [<code>TheSetting</code>](#TheSetting)  
+**Kind**: static namespace of [<code>@the-/setting</code>](#module_@the-/setting)  
+<a name="module_@the-/setting.mixins"></a>
 
-| Param | Type |
-| --- | --- |
-| ...names | <code>string</code> | 
+### setting.mixins : <code>object</code>
+Mix functions
 
-<a name="TheSetting+get"></a>
+**Kind**: static namespace of [<code>@the-/setting</code>](#module_@the-/setting)  
 
-### theSetting.get([name]) ⇒ <code>\*</code>
-Get value for name
+* [.mixins](#module_@the-/setting.mixins) : <code>object</code>
+    * [.lockMix()](#module_@the-/setting.mixins.lockMix)
+        * [~LockMixed](#module_@the-/setting.mixins.lockMix..LockMixed)
 
-**Kind**: instance method of [<code>TheSetting</code>](#TheSetting)  
+<a name="module_@the-/setting.mixins.lockMix"></a>
 
-| Param | Type | Description |
-| --- | --- | --- |
-| [name] | <code>string</code> | Name to get |
+#### mixins.lockMix()
+**Kind**: static method of [<code>mixins</code>](#module_@the-/setting.mixins)  
+<a name="module_@the-/setting.mixins.lockMix..LockMixed"></a>
 
-<a name="TheSetting+set"></a>
+##### lockMix~LockMixed
+**Kind**: inner class of [<code>lockMix</code>](#module_@the-/setting.mixins.lockMix)  
+<a name="module_@the-/setting.create"></a>
 
-### theSetting.set(values)
-Set values
-
-**Kind**: instance method of [<code>TheSetting</code>](#TheSetting)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| values | <code>Object</code> | Values to set |
-
-<a name="create"></a>
-
-## create(...args) ⇒ [<code>TheSetting</code>](#TheSetting)
+### setting.create(...args) ⇒ <code>TheSetting</code>
 Create a TheSetting instance
 
-**Kind**: global function  
+**Kind**: static method of [<code>@the-/setting</code>](#module_@the-/setting)  
 
 | Param | Type |
 | --- | --- |
 | ...args | <code>\*</code> | 
 
+<a name="default"></a>
+
+## default()
+Alias [create](#module_@the-/setting.create)
+
+**Kind**: global function  

@@ -1,23 +1,13 @@
 [
   {
-    "id": "module:default",
-    "longname": "module:default",
-    "name": "default",
-    "kind": "module",
-    "description": "Default exports",
-    "meta": {
-      "lineno": 1,
-      "filename": "default.js",
-      "path": "/Users/okuni/Projects/the/packages/media/lib"
-    },
-    "order": 1
-  },
-  {
     "id": "module:@the-/media",
     "longname": "module:@the-/media",
     "name": "@the-/media",
     "kind": "module",
     "description": "User media handler",
+    "version": "15.4.1",
+    "license": "MIT",
+    "typicalname": "media",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -26,11 +16,11 @@
     "order": 2
   },
   {
-    "id": "TheMedia()",
-    "longname": "TheMedia",
+    "id": "module:@the-/media.TheMedia()",
+    "longname": "module:@the-/media.TheMedia",
     "name": "TheMedia",
     "kind": "constructor",
-    "memberof": "TheMedia",
+    "memberof": "module:@the-/media.TheMedia",
     "params": [
       {
         "type": {
@@ -69,60 +59,27 @@
     "order": 4
   },
   {
-    "id": "TheMedia",
-    "longname": "TheMedia",
-    "name": "TheMedia",
-    "kind": "class",
-    "scope": "global",
-    "meta": {
-      "lineno": 1,
-      "filename": "TheMedia.js",
-      "path": "/Users/okuni/Projects/the/packages/media/lib"
-    },
-    "order": 3
-  },
-  {
-    "id": "create",
-    "longname": "create",
-    "name": "create",
+    "id": "default",
+    "longname": "default",
+    "name": "default",
     "kind": "function",
     "scope": "global",
-    "description": "Create a TheMedia instance",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        },
-        "variable": true,
-        "name": "args"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "TheMedia"
-          ]
-        }
-      }
-    ],
+    "description": "Alias of {@link module:@the-/media.create}",
     "meta": {
       "lineno": 1,
-      "filename": "create.js",
+      "filename": "default.js",
       "path": "/Users/okuni/Projects/the/packages/media/lib"
     },
-    "order": 0
+    "order": 1
   },
   {
-    "id": "TheMedia#createAudioRecorder",
-    "longname": "TheMedia#createAudioRecorder",
+    "id": "module:@the-/media.TheMedia#createAudioRecorder",
+    "longname": "module:@the-/media.TheMedia#createAudioRecorder",
     "name": "createAudioRecorder",
     "kind": "function",
     "scope": "instance",
     "description": "Create audio media recorder with AudioContext",
-    "memberof": "TheMedia",
+    "memberof": "module:@the-/media.TheMedia",
     "params": [
       {
         "type": {
@@ -153,20 +110,20 @@
       }
     ],
     "meta": {
-      "lineno": 42,
+      "lineno": 43,
       "filename": "TheMedia.js",
       "path": "/Users/okuni/Projects/the/packages/media/lib"
     },
     "order": 5
   },
   {
-    "id": "TheMedia#getStreamTracks",
-    "longname": "TheMedia#getStreamTracks",
+    "id": "module:@the-/media.TheMedia#getStreamTracks",
+    "longname": "module:@the-/media.TheMedia#getStreamTracks",
     "name": "getStreamTracks",
     "kind": "function",
     "scope": "instance",
     "description": "Get tracks",
-    "memberof": "TheMedia",
+    "memberof": "module:@the-/media.TheMedia",
     "params": [
       {
         "type": {
@@ -187,20 +144,20 @@
       }
     ],
     "meta": {
-      "lineno": 69,
+      "lineno": 70,
       "filename": "TheMedia.js",
       "path": "/Users/okuni/Projects/the/packages/media/lib"
     },
     "order": 6
   },
   {
-    "id": "TheMedia#toggleEnabled",
-    "longname": "TheMedia#toggleEnabled",
+    "id": "module:@the-/media.TheMedia#toggleEnabled",
+    "longname": "module:@the-/media.TheMedia#toggleEnabled",
     "name": "toggleEnabled",
     "kind": "function",
     "scope": "instance",
     "description": "Toggle track enabled",
-    "memberof": "TheMedia",
+    "memberof": "module:@the-/media.TheMedia",
     "params": [
       {
         "type": {
@@ -220,20 +177,20 @@
       }
     ],
     "meta": {
-      "lineno": 89,
+      "lineno": 90,
       "filename": "TheMedia.js",
       "path": "/Users/okuni/Projects/the/packages/media/lib"
     },
     "order": 7
   },
   {
-    "id": "TheMedia#bindVideo",
-    "longname": "TheMedia#bindVideo",
+    "id": "module:@the-/media.TheMedia#bindVideo",
+    "longname": "module:@the-/media.TheMedia#bindVideo",
     "name": "bindVideo",
     "kind": "function",
     "scope": "instance",
     "description": "Bind HTML video element",
-    "memberof": "TheMedia",
+    "memberof": "module:@the-/media.TheMedia",
     "params": [
       {
         "type": {
@@ -265,7 +222,7 @@
       }
     ],
     "meta": {
-      "lineno": 106,
+      "lineno": 107,
       "filename": "TheMedia.js",
       "path": "/Users/okuni/Projects/the/packages/media/lib"
     },
@@ -273,13 +230,13 @@
     "order": 8
   },
   {
-    "id": "TheMedia#start",
-    "longname": "TheMedia#start",
+    "id": "module:@the-/media.TheMedia#start",
+    "longname": "module:@the-/media.TheMedia#start",
     "name": "start",
     "kind": "function",
     "scope": "instance",
     "description": "Start user media",
-    "memberof": "TheMedia",
+    "memberof": "module:@the-/media.TheMedia",
     "params": [],
     "returns": [
       {
@@ -291,7 +248,7 @@
       }
     ],
     "meta": {
-      "lineno": 122,
+      "lineno": 123,
       "filename": "TheMedia.js",
       "path": "/Users/okuni/Projects/the/packages/media/lib"
     },
@@ -299,13 +256,13 @@
     "order": 9
   },
   {
-    "id": "TheMedia#stop",
-    "longname": "TheMedia#stop",
+    "id": "module:@the-/media.TheMedia#stop",
+    "longname": "module:@the-/media.TheMedia#stop",
     "name": "stop",
     "kind": "function",
     "scope": "instance",
     "description": "Stop user media",
-    "memberof": "TheMedia",
+    "memberof": "module:@the-/media.TheMedia",
     "params": [],
     "returns": [
       {
@@ -317,7 +274,7 @@
       }
     ],
     "meta": {
-      "lineno": 145,
+      "lineno": 146,
       "filename": "TheMedia.js",
       "path": "/Users/okuni/Projects/the/packages/media/lib"
     },
@@ -325,13 +282,13 @@
     "order": 10
   },
   {
-    "id": "TheMedia#takePhoto",
-    "longname": "TheMedia#takePhoto",
+    "id": "module:@the-/media.TheMedia#takePhoto",
+    "longname": "module:@the-/media.TheMedia#takePhoto",
     "name": "takePhoto",
     "kind": "function",
     "scope": "instance",
     "description": "Take photo image",
-    "memberof": "TheMedia",
+    "memberof": "module:@the-/media.TheMedia",
     "params": [
       {
         "type": {
@@ -356,11 +313,60 @@
       }
     ],
     "meta": {
-      "lineno": 167,
+      "lineno": 168,
       "filename": "TheMedia.js",
       "path": "/Users/okuni/Projects/the/packages/media/lib"
     },
     "async": true,
     "order": 11
+  },
+  {
+    "id": "module:@the-/media.TheMedia",
+    "longname": "module:@the-/media.TheMedia",
+    "name": "TheMedia",
+    "kind": "class",
+    "scope": "static",
+    "memberof": "module:@the-/media",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheMedia.js",
+      "path": "/Users/okuni/Projects/the/packages/media/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "module:@the-/media.create",
+    "longname": "module:@the-/media.create",
+    "name": "create",
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheMedia instance",
+    "memberof": "module:@the-/media",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheMedia"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/media/lib"
+    },
+    "order": 0
   }
 ]

@@ -9,7 +9,7 @@
 
 const ThePS = require('./ThePS')
 
-/** @lends create */
+/** @lends module:@the-/ps.create */
 function create(...args) {
   return new ThePS(...args)
 }

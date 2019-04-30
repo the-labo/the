@@ -1,10 +1,11 @@
 /**
+ * @memberOf module:@the-/server.helpers
  * @function asStrictSession
  * @param {Object} session
  */
 'use strict'
 
-/** @lends asStrictSession */
+/** @lends module:@the-/server.helpers.asStrictSession */
 function asStrictSession(session) {
   return new Proxy(session, {
     get(target, k) {

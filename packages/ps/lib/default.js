@@ -1,7 +1,7 @@
 /**
- * Default exports
+ * Alias of {@link module:@the-/ps.create}
  * @memberOf module:@the-/ps
- * @namespace default
+ * @function default
  */
 'use strict'
 

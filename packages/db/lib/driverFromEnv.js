@@ -1,5 +1,6 @@
 /**
  * Create driver from env
+ * @memberOf module:@the-/db
  * @function driverFromEnv
  */
 'use strict'
@@ -9,7 +10,7 @@ const path = require('path')
 const { isProduction } = require('@the-/check')
 const { toLowerKeys } = require('@the-/util-db')
 
-/** @lends driverFromEnv */
+/** @lends module:@the-/db.driverFromEnv */
 function driverFromEnv(env) {
   const {
     database,

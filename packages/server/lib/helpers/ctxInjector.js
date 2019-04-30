@@ -1,12 +1,13 @@
 /**
  * Define koa middleware register ctx values
+ * @memberOf module:@the-/server.helpers
  * @function ctxInjector
  * @param {function} creators
  * @returns {function}
  */
 'use strict'
 
-/** @lends ctxInjector */
+/** @lends module:@the-/server.helpers.ctxInjector */
 function ctxInjector(creators) {
   return async function middleware(ctx, next) {
     const injections = Object.assign(

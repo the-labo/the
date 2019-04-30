@@ -96,12 +96,13 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [TheSeal](./doc/api/api.md#TheSeal)
 ### function
-- [create(args)](./doc/api/api.md#create)
-- [#seal(values)](./doc/api/api.md#TheSeal#seal)
-- [#verify(sealString,values)](./doc/api/api.md#TheSeal#verify)
+- [#seal(values)](./doc/api/api.md#module_@the-/seal.TheSeal#seal)
+- [#verify(sealString,values)](./doc/api/api.md#module_@the-/seal.TheSeal#verify)
+- [.create(args)](./doc/api/api.md#module_@the-/seal.create)
+- [.default()](./doc/api/api.md#module_@the-/seal.default)
+### class
+- [.TheSeal](./doc/api/api.md#module_@the-/seal.TheSeal)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

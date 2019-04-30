@@ -11,7 +11,7 @@
 const debug = require('debug')
 const get = require('./get')
 
-/** @lends line */
+/** @lends module:@the-/window.line */
 function line(handler, options = {}) {
   const { delay = 100 } = options
   const window = get('window')

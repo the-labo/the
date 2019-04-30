@@ -93,13 +93,20 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [TheSetting](./doc/api/api.md#TheSetting)
 ### function
-- [create(args)](./doc/api/api.md#create)
+- [default()](./doc/api/api.md#default)
 - [#del(names)](./doc/api/api.md#TheSetting#del)
 - [#get(name)](./doc/api/api.md#TheSetting#get)
 - [#set(values)](./doc/api/api.md#TheSetting#set)
+- [.create(args)](./doc/api/api.md#module_@the-/setting.create)
+- [.lockMix()](./doc/api/api.md#module_@the-/setting.mixins.lockMix)
+### class
+- [.TheSetting](./doc/api/api.md#module_@the-/setting.TheSetting)
+- [.TheSettingBase](./doc/api/api.md#module_@the-/setting.TheSettingBase)
+- [~LockMixed](./doc/api/api.md#module_@the-/setting.mixins.lockMix~LockMixed)
+### namespace
+- [.helpers](./doc/api/api.md#module_@the-/setting.helpers)
+- [.mixins](./doc/api/api.md#module_@the-/setting.mixins)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

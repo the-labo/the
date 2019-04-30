@@ -3,79 +3,89 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_default">default</a></dt>
-<dd><p>Default exports</p>
-</dd>
 <dt><a href="#module_@the-/geo">@the-/geo</a></dt>
 <dd><p>Geo location utility</p>
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheGeo">TheGeo</a></dt>
-<dd></dd>
-</dl>
-
 ## Functions
 
 <dl>
-<dt><a href="#create">create(...args)</a> ⇒ <code><a href="#TheGeo">TheGeo</a></code></dt>
-<dd><p>Create a TheGeo instance</p>
+<dt><a href="#default">default()</a></dt>
+<dd><p>Alias of <a href="#module_@the-/geo.create">create</a></p>
 </dd>
 </dl>
-
-<a name="module_default"></a>
-
-## default
-Default exports
 
 <a name="module_@the-/geo"></a>
 
 ## @the-/geo
 Geo location utility
 
-<a name="TheGeo"></a>
+**Version**: 15.4.1  
+**License**: MIT  
 
-## TheGeo
-**Kind**: global class  
+* [@the-/geo](#module_@the-/geo)
+    * [.TheGeo](#module_@the-/geo.TheGeo)
+        * [new TheGeo([options])](#new_module_@the-/geo.TheGeo_new)
+        * [.watch(callback, [options])](#module_@the-/geo.TheGeo+watch)
+        * [.detect(options)](#module_@the-/geo.TheGeo+detect) ⇒ <code>Promise.&lt;\*&gt;</code>
+    * [.create(...args)](#module_@the-/geo.create) ⇒ <code>TheGeo</code>
 
-* [TheGeo](#TheGeo)
-    * [.watch(callback, [options])](#TheGeo+watch)
-    * [.detect(options)](#TheGeo+detect) ⇒ <code>Promise.&lt;\*&gt;</code>
+<a name="module_@the-/geo.TheGeo"></a>
 
-<a name="TheGeo+watch"></a>
+### geo.TheGeo
+**Kind**: static class of [<code>@the-/geo</code>](#module_@the-/geo)  
 
-### theGeo.watch(callback, [options])
+* [.TheGeo](#module_@the-/geo.TheGeo)
+    * [new TheGeo([options])](#new_module_@the-/geo.TheGeo_new)
+    * [.watch(callback, [options])](#module_@the-/geo.TheGeo+watch)
+    * [.detect(options)](#module_@the-/geo.TheGeo+detect) ⇒ <code>Promise.&lt;\*&gt;</code>
+
+<a name="new_module_@the-/geo.TheGeo_new"></a>
+
+#### new TheGeo([options])
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
+
+<a name="module_@the-/geo.TheGeo+watch"></a>
+
+#### theGeo.watch(callback, [options])
 Watch position change
 
-**Kind**: instance method of [<code>TheGeo</code>](#TheGeo)  
+**Kind**: instance method of [<code>TheGeo</code>](#module_@the-/geo.TheGeo)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | callback | <code>function</code> |  |
 | [options] | <code>Object</code> | Optional settings |
 
-<a name="TheGeo+detect"></a>
+<a name="module_@the-/geo.TheGeo+detect"></a>
 
-### theGeo.detect(options) ⇒ <code>Promise.&lt;\*&gt;</code>
+#### theGeo.detect(options) ⇒ <code>Promise.&lt;\*&gt;</code>
 Detect current geo location
 
-**Kind**: instance method of [<code>TheGeo</code>](#TheGeo)  
+**Kind**: instance method of [<code>TheGeo</code>](#module_@the-/geo.TheGeo)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | options | <code>Object</code> | Optional settings |
 
-<a name="create"></a>
+<a name="module_@the-/geo.create"></a>
 
-## create(...args) ⇒ [<code>TheGeo</code>](#TheGeo)
+### geo.create(...args) ⇒ <code>TheGeo</code>
 Create a TheGeo instance
 
-**Kind**: global function  
+**Kind**: static method of [<code>@the-/geo</code>](#module_@the-/geo)  
 
 | Param | Type |
 | --- | --- |
 | ...args | <code>\*</code> | 
 
+<a name="default"></a>
+
+## default()
+Alias of [create](#module_@the-/geo.create)
+
+**Kind**: global function  

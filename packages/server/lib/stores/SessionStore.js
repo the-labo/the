@@ -1,6 +1,8 @@
 /**
  * Client session store for the-server
+ * @memberOf module:@the-/server.stores
  * @class SessionStore
+ * @augments module:@the-/server.stores.Session
  */
 'use strict'
 
@@ -8,7 +10,7 @@ const Store = require('./Store')
 const DefaultValues = require('../constants/DefaultValues')
 const SESSION_STORE_KEY = 'the:server:session'
 
-/** @lends SessionStore */
+/** @lends module:@the-/server.stores.SessionStore */
 class SessionStore extends Store {
   constructor(storage, options = {}) {
     const {

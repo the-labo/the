@@ -1,5 +1,6 @@
 /**
  * Seal handler
+ * @memberOf module:@the-/seal
  * @class TheSeal
  * @param {string} secret - Secret password
  * @param {Object} [options={}] - Optional settings
@@ -11,7 +12,7 @@ const abind = require('abind')
 const crypto = require('crypto')
 const { stringify } = require('qs')
 
-/** @lends TheSeal */
+/** @lends module:@the-/seal.TheSeal */
 class TheSeal {
   constructor(secret, options = {}) {
     const { algorithm = 'sha512' } = options

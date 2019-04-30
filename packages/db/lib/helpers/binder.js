@@ -1,3 +1,7 @@
+/**
+ * @memberOf module:@the-/db.helpers
+ * @namespace binder
+ */
 'use strict'
 
 const { unlessProduction } = require('@the-/check')
@@ -69,6 +73,7 @@ const indexBounds = (indices = []) => ({
   }),
 })
 
+/** @lends module:@the-/db.helpers.binder */
 module.exports = {
   asBound,
   indexBounds,

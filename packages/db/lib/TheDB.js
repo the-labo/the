@@ -1,10 +1,12 @@
 /**
+ * @memberOf module:@the-/db
  * @class TheDB
- * @extends ResourceMixed
- * @extends ExportImportMixed
- * @extends MigrateMixed
- * @extends RefreshMixed
- * @extends CliMixed
+ * @extends module:@the-/db.cascadeMix~CascadeMixed
+ * @extends module:@the-/db.cliMix~CliMixed
+ * @extends module:@the-/db.exportImportMix~ExportImportMixed
+ * @extends module:@the-/db.migrateMix~MigrateMixed
+ * @extends module:@the-/db.refreshMix~RefreshMixed
+ * @extends module:@the-/db.resourceMix~ResourceMixed
  * @param {Object} config
  * @param {string} [config.name=uuid.v4()] Name of clay-lump
  * @param {string} [config.dialect='memory'] - Database dialect. "mysql", "json", "memory", "localstorage", or "sqlite"
@@ -41,6 +43,10 @@ const setupForEnv = require('./setupForEnv')
 
 const assert = theAssert('the:db')
 
+/**
+ * @memberOf module:@the-/db
+ * @class TheDBBase
+ */
 const TheDBBase = [
   m.resourceMix,
   m.cliMix,
@@ -50,7 +56,7 @@ const TheDBBase = [
   m.cascadeMix,
 ].reduce((Class, mix) => mix(Class), ClayLump)
 
-/** @lends TheDB */
+/** @lends module:@the-/db.TheDB */
 class TheDB extends TheDBBase {
   constructor(config = {}) {
     if (!new.target) {

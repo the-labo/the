@@ -1,5 +1,6 @@
 /**
  * Abstract state
+ * @memberOf module:@the-/state.state
  * @abstract
  * @class State
  */
@@ -8,7 +9,7 @@
 const theAssert = require('@the-/assert')
 const assert = theAssert('TheState')
 
-/** @lends State */
+/** @lends module:@the-/state.state.State */
 class State {
   constructor() {
     this.subscriptions = []

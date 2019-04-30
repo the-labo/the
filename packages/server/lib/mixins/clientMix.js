@@ -1,13 +1,18 @@
 /**
  * Mixin for client
+ * @memberOf module:@the-/server.mixins
  * @function clientMix
  * @param {function} Class
  * @returns {function} Class
  */
 'use strict'
 
-/** @lends clientMix */
+/** @lends module:@the-/server.mixins.clientMix */
 function clientMix(Class) {
+  /**
+   * @memberOf module:@the-/server.mixins.clientMix
+   * @inner
+   */
   class ClientMixed extends Class {
     async getClientConnection(cid, options = {}) {
       const { patiently = false } = options

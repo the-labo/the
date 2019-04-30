@@ -1,11 +1,15 @@
 /**
+ * @memberOf module:@the-/db
  * @function resourceMix
  */
 'use strict'
 
-/** @lends resourceMix */
+/** @lends module:@the-/db.resourceMix */
 function resourceMix(Class) {
-  /** @class ResourceMixed */
+  /**
+   * @memberOf module:@the-/db.resourceMix
+   * @inner
+   */
   class ResourceMixed extends Class {
     /**
      * Check if resource exists

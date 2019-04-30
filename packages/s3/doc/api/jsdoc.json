@@ -1,23 +1,13 @@
 [
   {
-    "id": "module:default",
-    "longname": "module:default",
-    "name": "default",
-    "kind": "module",
-    "description": "Default exports",
-    "meta": {
-      "lineno": 1,
-      "filename": "default.js",
-      "path": "/Users/okuni/Projects/the/packages/s3/lib"
-    },
-    "order": 1
-  },
-  {
     "id": "module:@the-/s3",
     "longname": "module:@the-/s3",
     "name": "@the-/s3",
     "kind": "module",
     "description": "S3 upload helper",
+    "version": "15.4.1",
+    "license": "MIT",
+    "typicalname": "s3",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -26,60 +16,90 @@
     "order": 2
   },
   {
-    "id": "TheS3",
-    "longname": "TheS3",
+    "id": "module:@the-/s3.TheS3()",
+    "longname": "module:@the-/s3.TheS3",
     "name": "TheS3",
-    "kind": "class",
-    "scope": "global",
-    "meta": {
-      "lineno": 1,
-      "filename": "TheS3.js",
-      "path": "/Users/okuni/Projects/the/packages/s3/lib"
-    },
-    "order": 3
-  },
-  {
-    "id": "create",
-    "longname": "create",
-    "name": "create",
-    "kind": "function",
-    "scope": "global",
-    "description": "Create a TheS3 instance",
+    "kind": "constructor",
+    "memberof": "module:@the-/s3.TheS3",
     "params": [
       {
         "type": {
           "names": [
-            "*"
+            "Object"
           ]
         },
-        "variable": true,
-        "name": "args"
-      }
-    ],
-    "returns": [
+        "name": "config"
+      },
       {
         "type": {
           "names": [
-            "TheS3"
+            "string"
           ]
-        }
+        },
+        "optional": true,
+        "name": "config.accessKeyId"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "name": "config.bucket"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "name": "config.region"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "name": "config.secretAccessKey"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "name": "config.signatureVersion"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "create.js",
-      "path": "/Users/okuni/Projects/the/packages/s3/lib"
-    },
-    "order": 0
+    "order": 4
   },
   {
-    "id": "TheS3#upload",
-    "longname": "TheS3#upload",
+    "id": "default",
+    "longname": "default",
+    "name": "default",
+    "kind": "function",
+    "scope": "global",
+    "description": "Alias of {@link module:@the-/s3}",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/s3/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/s3.TheS3#upload",
+    "longname": "module:@the-/s3.TheS3#upload",
     "name": "upload",
     "kind": "function",
     "scope": "instance",
     "description": "Upload file into s3",
-    "memberof": "TheS3",
+    "memberof": "module:@the-/s3.TheS3",
     "params": [
       {
         "type": {
@@ -112,11 +132,60 @@
       }
     ],
     "meta": {
-      "lineno": 48,
+      "lineno": 55,
       "filename": "TheS3.js",
       "path": "/Users/okuni/Projects/the/packages/s3/lib"
     },
     "async": true,
-    "order": 4
+    "order": 5
+  },
+  {
+    "id": "module:@the-/s3.TheS3",
+    "longname": "module:@the-/s3.TheS3",
+    "name": "TheS3",
+    "kind": "class",
+    "scope": "static",
+    "memberof": "module:@the-/s3",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheS3.js",
+      "path": "/Users/okuni/Projects/the/packages/s3/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "module:@the-/s3.create",
+    "longname": "module:@the-/s3.create",
+    "name": "create",
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheS3 instance",
+    "memberof": "module:@the-/s3",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheS3"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/s3/lib"
+    },
+    "order": 0
   }
 ]

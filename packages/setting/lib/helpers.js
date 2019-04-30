@@ -1,5 +1,7 @@
 /**
  * Helper utility
+ * @memberOf module:@the-/setting
+ * @namespace helpers
  */
 'use strict'
 

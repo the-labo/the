@@ -4,9 +4,12 @@ const { dir } = require('@the-/templates')
 
 module.exports = dir({
   cjs: true,
-  description: 'Buildin resources',
+  annotations: {
+    description: 'Buildin resources',
+    namespace: 'resources',
+    memberOf: 'module:@the-/db',
+  },
   dirname: __dirname,
-  name: 'resources',
 })
 
 if (!module.parent) {

@@ -1,6 +1,7 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link module:@the-/seal.create}
+ * @memberOf module:@the-/seal
+ * @function default
  */
 'use strict'
 

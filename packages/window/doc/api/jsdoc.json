@@ -5,6 +5,9 @@
     "name": "@the-/window",
     "kind": "module",
     "description": "Browser utility for the-framework",
+    "version": "15.4.1",
+    "license": "MIT",
+    "typicalname": "window",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -45,21 +48,6 @@
       "path": "/Users/okuni/Projects/the/packages/window/lib"
     },
     "order": 4
-  },
-  {
-    "id": "show",
-    "longname": "show",
-    "name": "show",
-    "kind": "function",
-    "scope": "global",
-    "description": "show",
-    "params": [],
-    "meta": {
-      "lineno": 13,
-      "filename": "show.js",
-      "path": "/Users/okuni/Projects/the/packages/window/lib"
-    },
-    "order": 7
   },
   {
     "id": "module:@the-/window.get",

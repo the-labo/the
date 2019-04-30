@@ -1,10 +1,11 @@
 /**
  * Create generator from readable
+ * @memberOf module:@the-/stream.helpers
  * @function generatorFromReadable
  */
 'use strict'
 
-/** @lends generatorFromReadable */
+/** @lends module:@the-/stream.generatorFromReadable */
 function generatorFromReadable(readable) {
   const generator = {
     [Symbol.asyncIterator]: () => generator,

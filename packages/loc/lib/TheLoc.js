@@ -14,7 +14,7 @@ const resolveInScope = require('./helpers/resolveInScope')
 const toCompoundLocale = require('./helpers/toCompoundLocale')
 const validateLocales = require('./helpers/validateLocales')
 
-/** @lends TheLoc */
+/** @lends module:@the-/loc.TheLoc */
 class TheLoc {
   constructor(config, options = {}) {
     if ('buildin' in options) {
