@@ -1,5 +1,5 @@
 /**
- * @memberOf mixins
+ * @memberOf module:@the-/client.mixins
  * @function streamMix
  * @param {function}
  * @returns {function}
@@ -140,8 +140,12 @@ class RemoteStream extends TheStream {
   }
 }
 
-/** @lends streamMix */
+/** @lends module:@the-/client.mixins.streamMix */
 function streamMix(Class) {
+  /**
+   * @inner
+   * @memberOf module:@the-/client.mixins.streamMix
+   */
   class StreamMixed extends Class {
     async openStream(name, params) {
       const { socket } = this

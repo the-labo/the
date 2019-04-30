@@ -1,9 +1,10 @@
 /**
  * Assert module
+ * @memberOf module:@the-/assert
  * @class TheAssert
  * @param {string} prefix - Prefix text
  * @param {Object} [options={}] - Optional settings
- * @param {Object} [options.evenProduction] - Skip asserting on production
+ * @param {Object} [options.skipOnProduction] - Skip asserting on production
  */
 'use strict'
 
@@ -14,10 +15,10 @@ const isNullish = (v) => v === null || typeof v === 'undefined'
 /** @lends TheAssert */
 class TheAssert {
   constructor(prefix, options = {}) {
-    const { evenProduction = true } = options
+    const { skipOnProduction = true } = options
     this.prefix = prefix
 
-    this.skip = !evenProduction && process.env.NODE_ENV === 'production'
+    this.skip = !skipOnProduction && process.env.NODE_ENV === 'production'
   }
 
   /**

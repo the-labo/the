@@ -1,7 +1,7 @@
 {
   "name": "@the-/templates",
   "description": "Templates for the-projects",
-  "version": "15.4.3",
+  "version": "15.4.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -19,9 +19,6 @@
     "stringcase": "^4.3.1"
   },
   "devDependencies": {
-    "@the-/script-build": "^15.2.0",
-    "@the-/script-doc": "^15.2.0",
-    "@the-/script-test": "^15.2.0",
     "injectmock": "^2.0.0"
   },
   "engines": {
@@ -40,7 +37,7 @@
   },
   "repository": "the-labo/the",
   "scripts": {
-    "build": "the-script-build",
+    "build": "../../misc/scripts/build_package.js",
     "doc": "the-script-doc",
     "prepare": "../../misc/scripts/install_if_needed.sh;npm run build && npm run doc",
     "test": "mocha test"

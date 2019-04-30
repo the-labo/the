@@ -1,15 +1,17 @@
 /**
  * Style theme values
- * @enum {string} ThemeValues
+ * @memberOf module:@the-/const-ui
+ * @namespace {string} ThemeValues
  */
 'use strict'
 
 const ThemeValues = Object.freeze(
-  /** @lends ThemeValues */
+  /** @lends module:@the-/const-ui.ThemeValues */
   {
     // -----------------------------------
     // Coloring
     // -----------------------------------
+    /** @lends module:@the-/const-ui.ThemeValues */
     ...{
       altTextColor: '#AAA',
       backgroundColor: '#FFF',
@@ -39,7 +41,9 @@ const ThemeValues = Object.freeze(
     // -----------------------------------
     // Sizing
     // -----------------------------------
+    /** @lends module:@the-/const-ui.ThemeValues */
     ...{
+      /** Width of container */
       containerWidth: 1024,
       contentPadding: 4,
       contentWidth: 480,
@@ -50,6 +54,7 @@ const ThemeValues = Object.freeze(
     // -----------------------------------
     // Font
     // -----------------------------------
+    /** @lends module:@the-/const-ui.ThemeValues */
     ...{
       fontFamily:
         'ヒラギノ角ゴ ProN W3, Hiragino Kaku Gothic ProN, メイリオ, Meiryo, sans-serif',
@@ -59,6 +64,7 @@ const ThemeValues = Object.freeze(
     // -----------------------------------
     // Values
     // -----------------------------------
+    /** @lends module:@the-/const-ui.ThemeValues */
     ...{
       activeOpacity: 0.8,
       hoverOpacity: 0.9,

@@ -1,6 +1,6 @@
 /**
  * Parse caller URL
- * @memberof helpers
+ * @memberof module:@the-/client.helpers
  * @function parseClientUrl
  * @param {Object|string} - URL string or config
  * @returns {string} - Parsed url
@@ -15,7 +15,7 @@ const {
   resolve: resolveUrl,
 } = require('url')
 
-/** @lends parseClientUrl */
+/** @lends module:@the-/client.helpers.parseClientUrl */
 function parseClientUrl(url) {
   if (typeof url === 'string') {
     const parsed = parseUrl(url)

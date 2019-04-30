@@ -94,19 +94,14 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-
-### Functions
-- [create](#create)
-- [bind](#bind)
-- [notNullish](#notNullish)
-- [nullish](#nullish)
-- [ok](#ok)
-
-
-### Classes
-- [TheAssert](#TheAssert)
-
-
+### class
+- [TheAssert](./doc/api/api.md#TheAssert)
+### function
+- [create(args)](./doc/api/api.md#create)
+- [#bind()](./doc/api/api.md#TheAssert#bind)
+- [#notNullish(value,message)](./doc/api/api.md#TheAssert#notNullish)
+- [#nullish(value,message)](./doc/api/api.md#TheAssert#nullish)
+- [#ok(condition,message)](./doc/api/api.md#TheAssert#ok)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

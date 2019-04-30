@@ -1,14 +1,16 @@
 /**
  * Supported props
- * @enum {string} SupportedProps
+ * @memberOf module:@the-/const-ui
+ * @namespace SupportedProps
  */
 'use strict'
 
 const SupportedProps = Object.freeze(
-  /** @lends SupportedProps */
+  /** @lends module:@the-/const-ui.SupportedProps */
   {
     /**
      * All Supported HTML Attributes
+     * @type string
      * @see https://facebook.github.io/react/docs/dom-elements.html#all-supported-html-attributes
      */
     htmlAttributes:

@@ -18,9 +18,6 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/script-build": "file:../script-build",
-    "@the-/script-doc": "file:../script-doc",
-    "@the-/script-test": "file:../script-test",
     "objnest": "^5.0.6"
   },
   "engines": {

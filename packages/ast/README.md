@@ -88,13 +88,10 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-
-### Functions
-- [parse](#parse)
-- [findByTypes](#findByTypes)
-- [exports](#exports)
-
-
+### function
+- [parse(src,options)](./doc/api/api.md#parse)
+- [.findByTypes(node,types)](./doc/api/api.md#finder.findByTypes)
+- [.exports()](./doc/api/api.md#module.exports)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

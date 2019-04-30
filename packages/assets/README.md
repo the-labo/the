@@ -88,17 +88,12 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-
-### Functions
-- [installTo](#installTo)
-- [create](#create)
-- [installFiles](#installFiles)
-
-
-### Classes
-- [TheAssets](#TheAssets)
-
-
+### function
+- [#installTo(dirname,options)](./doc/api/api.md#TheAssets#installTo)
+- [.create(args)](./doc/api/api.md#module_@the-/assets.create)
+- [.installFiles(srcDir,destDir,options)](./doc/api/api.md#module_@the-/assets.installFiles)
+### class
+- [.TheAssets](./doc/api/api.md#module_@the-/assets.TheAssets)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -96,19 +96,16 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-
-### Functions
-- [canTouch](#canTouch)
-- [hasBin](#hasBin)
-- [isBrowser](#isBrowser)
-- [isChrome](#isChrome)
-- [isFirefox](#isFirefox)
-- [isiOS](#isiOS)
-- [isMacOS](#isMacOS)
-- [isProduction](#isProduction)
-- [unlessProduction](#unlessProduction)
-
-
+### function
+- [canTouch()](./doc/api/api.md#canTouch)
+- [hasBin(binName,options)](./doc/api/api.md#hasBin)
+- [isBrowser()](./doc/api/api.md#isBrowser)
+- [isChrome()](./doc/api/api.md#isChrome)
+- [isFirefox()](./doc/api/api.md#isFirefox)
+- [isiOS()](./doc/api/api.md#isiOS)
+- [isMacOS()](./doc/api/api.md#isMacOS)
+- [isProduction()](./doc/api/api.md#isProduction)
+- [unlessProduction(handler)](./doc/api/api.md#unlessProduction)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

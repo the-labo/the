@@ -20,10 +20,7 @@
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
     "@the-/ui-router": "^15.2.0",
-    "objnest": "^5.0.6",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0"
+    "objnest": "^5.0.6"
   },
   "engines": {
     "node": ">=10",
@@ -45,10 +42,10 @@
   },
   "repository": "the-labo/the",
   "scripts": {
-    "build": "the-script-build",
-    "doc": "the-script-doc",
-    "prepare": "../../misc/scripts/install_if_needed.sh;npm run build && npm run doc",
-    "test": "the-script-test",
+    "build": "../../misc/scripts/pkgBuild.js",
+    "doc": "../../misc/scripts/pkgDoc.js",
+    "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
+    "test": "../../misc/scripts/pkgTest.js",
     "watch": "the-script-build -w"
   }
 }

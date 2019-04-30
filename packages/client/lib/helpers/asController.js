@@ -1,6 +1,11 @@
 /**
- * @memberof helpers
+ * @memberof module:@the-/client.helpers
  * @function asController
+ * @param {Object} instance
+ * @param {Object} spec
+ * @param {Object} context
+ * @param {Object} [options={}]
+ * @returns Object
  */
 'use strict'
 

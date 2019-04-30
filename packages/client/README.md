@@ -91,30 +91,38 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-
-### Functions
-- [create](#create)
-- [invoke](#invoke)
-- [stream](#stream)
-- [use](#use)
-- [useAll](#useAll)
-- [serverInfo](#serverInfo)
-- [pingPongAnd](#pingPongAnd)
-- [for](#for)
-- [asController](#asController)
-- [debugController](#debugController)
-- [debugStream](#debugStream)
-- [parseClientUrl](#parseClientUrl)
-- [infoMix](#infoMix)
-- [pingPongMix](#pingPongMix)
-- [streamMix](#streamMix)
-
-
-### Classes
-- [TheClient](#TheClient)
-- [PingPongMixed](#PingPongMixed)
-
-
+### typedef
+- [TheClientScope](./doc/api/api.md#TheClientScope)
+### function
+- [#invoke(moduleName,methodName,params)](./doc/api/api.md#module_@the-/client.TheClient#invoke)
+- [#stream(name,params,options)](./doc/api/api.md#module_@the-/client.TheClient#stream)
+- [#use(controllerName,options)](./doc/api/api.md#module_@the-/client.TheClient#use)
+- [#useAll(options)](./doc/api/api.md#module_@the-/client.TheClient#useAll)
+- [#serverInfo(options)](./doc/api/api.md#module_@the-/client.mixins.infoMix~InfoMixed#serverInfo)
+- [#pingPongAnd(callback,options)](./doc/api/api.md#module_@the-/client.mixins.pingPongMix~PingPongMixed#pingPongAnd)
+- [#pingPongAnd(callback,options)](./doc/api/api.md#module_@the-/client.TheClient#pingPongAnd)
+- [#serverInfo(options)](./doc/api/api.md#module_@the-/client.TheClient#serverInfo)
+- [.create(args)](./doc/api/api.md#module_@the-/client.create)
+- [.default()](./doc/api/api.md#module_@the-/client.default)
+- [.for(namespace,config)](./doc/api/api.md#module_@the-/client.TheClient.for)
+- [.asController(instance,spec,context,options)](./doc/api/api.md#module_@the-/client.helpers.asController)
+- [.debugController()](./doc/api/api.md#module_@the-/client.helpers.debugController)
+- [.debugStream()](./doc/api/api.md#module_@the-/client.helpers.debugStream)
+- [.parseClientUrl()](./doc/api/api.md#module_@the-/client.helpers.parseClientUrl)
+- [.infoMix(Class)](./doc/api/api.md#module_@the-/client.mixins.infoMix)
+- [.pingPongMix(Class)](./doc/api/api.md#module_@the-/client.mixins.pingPongMix)
+- [.streamMix()](./doc/api/api.md#module_@the-/client.mixins.streamMix)
+### class
+- [.TheClient](./doc/api/api.md#module_@the-/client.TheClient)
+- [.TheClientBase](./doc/api/api.md#module_@the-/client.TheClientBase)
+- [~InfoMixed](./doc/api/api.md#module_@the-/client.mixins.infoMix~InfoMixed)
+- [~PingPongMixed](./doc/api/api.md#module_@the-/client.mixins.pingPongMix~PingPongMixed)
+- [~StreamMixed](./doc/api/api.md#module_@the-/client.mixins.streamMix~StreamMixed)
+### namespace
+- [.constants](./doc/api/api.md#module_@the-/client.constants)
+- [.IOEvents](./doc/api/api.md#module_@the-/client.constants.IOEvents)
+- [.helpers](./doc/api/api.md#module_@the-/client.helpers)
+- [.mixins](./doc/api/api.md#module_@the-/client.mixins)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

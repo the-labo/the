@@ -1,5 +1,6 @@
 /**
  * Create a TheAssert instance
+ * @memberOf module:@the-/assert
  * @function create
  * @param {...*} args
  * @returns {TheAssert}
@@ -8,7 +9,7 @@
 
 const TheAssert = require('./TheAssert')
 
-/** @lends create */
+/** @lends module:@the-/assert.create */
 function create(...args) {
   return new TheAssert(...args).bind()
 }

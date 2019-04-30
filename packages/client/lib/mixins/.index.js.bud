@@ -6,6 +6,7 @@ module.exports = dir({
   cjs: true,
   annotations: {
     description: 'Client mixin functions',
+    memberOf: 'module:@the-/client',
     namespace: 'mixins',
   },
   dirname: __dirname,

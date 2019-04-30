@@ -1,6 +1,6 @@
 /**
  * Events for IO
- * @memberOf constants
+ * @memberOf module:@the-/client.constants
  * @namespace IOEvents
  */
 'use strict'

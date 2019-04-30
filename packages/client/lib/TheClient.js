@@ -1,7 +1,10 @@
 /**
  * @memberOf module:@the-/client
- * @static
  * @class TheClient
+ * @augments module:@the-/client.TheClientBase
+ * @augments module:@the-/client.mixins.pingPongMix~PingPongMixed
+ * @augments module:@the-/client.mixins.infoMix~InfoMixed
+ * @augments module:@the-/client.mixins.streamMix~StreamMixed
  * @param {string} url
  * @param {Object} config
  */
@@ -29,6 +32,10 @@ const { infoMix, pingPongMix, streamMix } = require('./mixins')
 const debug = require('debug')('the:client')
 const NAMESPACE = '/rpc'
 
+/**
+ * @class module:@the-/client.TheClientBase
+ * @protected
+ */
 const TheClientBase = [pingPongMix, infoMix, streamMix].reduce(
   (Class, mix) => mix(Class),
   RFuncClient,

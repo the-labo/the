@@ -1,5 +1,9 @@
 /**
- * Default exports
+ * Default exports. Alias of {@link module:@the-/assert.create}
+ * @memberOf module:@the-/assert
+ * @function default
+ * @param {...*} args
+ * @returns {TheAssert}
  */
 'use strict'
 

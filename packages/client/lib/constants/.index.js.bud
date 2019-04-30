@@ -7,6 +7,7 @@ module.exports = dir({
   dirname: __dirname,
   annotations: {
     namespace: 'constants',
+    memberOf: 'module:@the-/client',
     description: 'Constant variables',
   },
 })

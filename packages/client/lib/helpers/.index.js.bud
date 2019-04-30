@@ -4,8 +4,10 @@ const { dir } = require('@the-/templates')
 
 module.exports = dir({
   cjs: true,
-  annotations:{
+  annotations: {
     namespace: 'helpers',
+    memberOf: 'module:@the-/client',
+    access: 'protected',
     description: 'Client helper functions',
   },
   dirname: __dirname,

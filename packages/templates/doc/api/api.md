@@ -5,7 +5,7 @@
 ## @the-/templates
 Templates for the-projects
 
-**Version**: 15.4.3  
+**Version**: 15.4.4  
 **License**: MIT  
 
 * [@the-/templates](#module_@the-/templates)
@@ -35,7 +35,7 @@ Templates for the-projects
 
 <a name="module_@the-/templates.bin"></a>
 
-### @the-/templates.bin(config) ⇒ <code>object</code>
+### templates.bin(config) ⇒ <code>object</code>
 Define bud for bin scripts
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
@@ -48,7 +48,7 @@ Define bud for bin scripts
 
 <a name="module_@the-/templates.Ctrl"></a>
 
-### @the-/templates.Ctrl(config) ⇒ <code>Object</code>
+### templates.Ctrl(config) ⇒ <code>Object</code>
 Define bud for server controller
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
@@ -61,7 +61,7 @@ Define bud for server controller
 
 <a name="module_@the-/templates.Dialogs"></a>
 
-### @the-/templates.Dialogs(config) ⇒ <code>Object</code>
+### templates.Dialogs(config) ⇒ <code>Object</code>
 Define bud for Dialog components
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
@@ -72,7 +72,7 @@ Define bud for Dialog components
 
 <a name="module_@the-/templates.dir"></a>
 
-### @the-/templates.dir(config) ⇒ <code>Object</code>
+### templates.dir(config) ⇒ <code>Object</code>
 Define bud for dir
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
@@ -83,7 +83,7 @@ Define bud for dir
 
 <a name="module_@the-/templates.errorPage"></a>
 
-### @the-/templates.errorPage(config) ⇒ <code>Object</code>
+### templates.errorPage(config) ⇒ <code>Object</code>
 Error page
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
@@ -94,7 +94,7 @@ Error page
 
 <a name="module_@the-/templates.eslintignore"></a>
 
-### @the-/templates.eslintignore(config) ⇒ <code>Object</code>
+### templates.eslintignore(config) ⇒ <code>Object</code>
 eslintignore
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
@@ -105,7 +105,7 @@ eslintignore
 
 <a name="module_@the-/templates.eslintrc"></a>
 
-### @the-/templates.eslintrc(config) ⇒ <code>Object</code>
+### templates.eslintrc(config) ⇒ <code>Object</code>
 Define bud for eslintrc
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
@@ -116,7 +116,7 @@ Define bud for eslintrc
 
 <a name="module_@the-/templates.Hook"></a>
 
-### @the-/templates.Hook(config) ⇒ <code>Object</code>
+### templates.Hook(config) ⇒ <code>Object</code>
 Hook
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
@@ -127,7 +127,7 @@ Hook
 
 <a name="module_@the-/templates.License"></a>
 
-### @the-/templates.License(config) ⇒ <code>object</code>
+### templates.License(config) ⇒ <code>object</code>
 Define bud for LICENSE
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
@@ -142,13 +142,13 @@ Define bud for LICENSE
 
 <a name="module_@the-/templates.mapping"></a>
 
-### @the-/templates.mapping() ⇒ <code>Object</code>
+### templates.mapping() ⇒ <code>Object</code>
 Define bud for mapping
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
 <a name="module_@the-/templates.nginx"></a>
 
-### @the-/templates.nginx(config) ⇒ <code>Object</code>
+### templates.nginx(config) ⇒ <code>Object</code>
 Define bud for nginx conf file
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
@@ -159,7 +159,7 @@ Define bud for nginx conf file
 
 <a name="module_@the-/templates.pcssVars"></a>
 
-### @the-/templates.pcssVars(config) ⇒ <code>Object</code>
+### templates.pcssVars(config) ⇒ <code>Object</code>
 Variables for pcss
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
@@ -171,7 +171,7 @@ Variables for pcss
 
 <a name="module_@the-/templates.prettierrc"></a>
 
-### @the-/templates.prettierrc(config) ⇒ <code>Object</code>
+### templates.prettierrc(config) ⇒ <code>Object</code>
 Define bud for prettierrc
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
@@ -182,7 +182,7 @@ Define bud for prettierrc
 
 <a name="module_@the-/templates.Readme"></a>
 
-### @the-/templates.Readme(config) ⇒ <code>object</code>
+### templates.Readme(config) ⇒ <code>object</code>
 Define bud for README.md
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
@@ -201,11 +201,11 @@ Define bud for README.md
 
 <a name="module_@the-/templates.Resources"></a>
 
-### @the-/templates.Resources()
+### templates.Resources()
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
 <a name="module_@the-/templates.Scene"></a>
 
-### @the-/templates.Scene(config) ⇒ <code>Object</code>
+### templates.Scene(config) ⇒ <code>Object</code>
 Scene
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
@@ -216,11 +216,11 @@ Scene
 
 <a name="module_@the-/templates.scopes"></a>
 
-### @the-/templates.scopes()
+### templates.scopes()
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
 <a name="module_@the-/templates.Stateful"></a>
 
-### @the-/templates.Stateful(config) ⇒ <code>Object</code>
+### templates.Stateful(config) ⇒ <code>Object</code>
 Stateful
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
@@ -231,7 +231,7 @@ Stateful
 
 <a name="module_@the-/templates.Stateless"></a>
 
-### @the-/templates.Stateless(config) ⇒ <code>Object</code>
+### templates.Stateless(config) ⇒ <code>Object</code>
 Stateless
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
@@ -242,7 +242,7 @@ Stateless
 
 <a name="module_@the-/templates.Stream"></a>
 
-### @the-/templates.Stream(config) ⇒ <code>Object</code>
+### templates.Stream(config) ⇒ <code>Object</code>
 Stream
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
@@ -253,13 +253,13 @@ Stream
 
 <a name="module_@the-/templates.test"></a>
 
-### @the-/templates.test() ⇒ <code>Object</code>
+### templates.test() ⇒ <code>Object</code>
 Define bud for readme
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
 <a name="module_@the-/templates.vhost"></a>
 
-### @the-/templates.vhost(config) ⇒ <code>Object</code>
+### templates.vhost(config) ⇒ <code>Object</code>
 Error page
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
@@ -270,7 +270,7 @@ Error page
 
 <a name="module_@the-/templates.View"></a>
 
-### @the-/templates.View(config) ⇒ <code>Object</code>
+### templates.View(config) ⇒ <code>Object</code>
 View
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  

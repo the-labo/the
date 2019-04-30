@@ -24,9 +24,6 @@
   "devDependencies": {
     "@the-/demo-lib": "file:../demo-lib",
     "@the-/demo-ui": "file:../demo-ui",
-    "@the-/script-build": "file:../script-build",
-    "@the-/script-doc": "file:../script-doc",
-    "@the-/script-test": "file:../script-test",
     "injectmock": "^2.0.0",
     "pon-demo-site": "^8.0.1"
   },

@@ -95,15 +95,10 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-
-### Functions
-- [create](#create)
-
-
-### Classes
-- [TheCache](#TheCache)
-
-
+### class
+- [TheCache](./doc/api/api.md#TheCache)
+### function
+- [create(args)](./doc/api/api.md#create)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -6,6 +6,7 @@
 
 const path = require('path')
 const { Readme, dir, test } = require('../lib')
+const { camelcase } = require('stringcase')
 
 exports.Readme = (dirname) => {
   const requireIfPossible = (id) => {
@@ -47,6 +48,7 @@ exports.Index = (dirname) => {
       dirname: dirname,
       annotations: {
         module: pkg.name,
+        typicalname: camelcase(pkg.name.split('/').pop()),
         version: pkg.version,
         description: pkg.description,
       }

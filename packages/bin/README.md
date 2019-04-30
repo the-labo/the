@@ -91,20 +91,15 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-
-### Functions
-- [exec](#exec)
-- [exists](#exists)
-- [satisfiesVersion](#satisfiesVersion)
-- [verify](#verify)
-- [version](#version)
-- [create](#create)
-
-
-### Classes
-- [TheBin](#TheBin)
-
-
+### function
+- [#exec(args)](./doc/api/api.md#TheBin#exec)
+- [#exists()](./doc/api/api.md#TheBin#exists)
+- [#satisfiesVersion(versionString)](./doc/api/api.md#TheBin#satisfiesVersion)
+- [#verify(options)](./doc/api/api.md#TheBin#verify)
+- [#version()](./doc/api/api.md#TheBin#version)
+- [.create(args)](./doc/api/api.md#module_@the-/bin.create)
+### class
+- [.TheBin](./doc/api/api.md#module_@the-/bin.TheBin)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

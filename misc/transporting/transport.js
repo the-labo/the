@@ -102,34 +102,57 @@ const _rewritePkg = async (baseDir, converter) => {
 }
 
 const _removeDevDeps = async (baseDir, names) => {
-  const pkg = JSON.parse(await readFile(path.resolve(baseDir, 'package.json')))
-  for (const name of names) {
-    const has = name in (pkg.devDependencies || {})
-    if (has) {
-      spawnSync('npm', ['un', '-D', name], { cwd: baseDir, stdio: 'inherit' })
+    const pkg = JSON.parse(await readFile(path.resolve(baseDir, 'package.json')))
+    for (const name of names) {
+      const has = name in (pkg.devDependencies || {})
+      if (has) {
+        spawnSync('npm', ['un', '-D', name], { cwd: baseDir, stdio: 'inherit' })
+      }
     }
   }
-}
 
 ;(async () => {
-  for (const [fromPkgName, { kind, name }] of Object.entries(transporting)) {
-    const fromDir = path.resolve(baseDir, '..', fromPkgName)
-    const hasFrom = !!(await stat(fromDir).catch(() => null))
-    if (!hasFrom) {
-      console.warn(`"${fromPkgName}" is not found in local`)
-      continue
-    }
+  for (const [fromPkgName, { kind, name }] of Object.entries(transporting)
+    .sort((a, b) => a[1].name.localeCompare(b[1].name))
+    ) {
     console.log(`== ${fromPkgName} => ${name} ===`)
+    const fromDir = path.resolve(baseDir, '..', fromPkgName)
     const toDir = path.resolve(baseDir, 'packages', name)
     const toStat = await stat(toDir).catch(() => null)
-
+    const hasFrom = !!(await stat(fromDir).catch(() => null))
     if (!toStat) {
       spawnSync('cp', ['-R', fromDir, toDir], { stdio: 'inherit' })
       await _deprecatePackage(fromDir, name)
     }
-    const fromPkgFile = path.resolve(fromDir, 'package.json')
     const toPkgFile = path.resolve(toDir, 'package.json')
     const toPkg = JSON.parse(await readFile(toPkgFile))
+    if (hasFrom) {
+
+
+
+      const fromPkgFile = path.resolve(fromDir, 'package.json')
+      // example
+      {
+        const exampleUsageJs = path.resolve(toDir, 'example/example-usage.js')
+        const example = await readFile(exampleUsageJs).catch(() => null)
+        if (example) {
+          const fromPkg = JSON.parse(await readFile(fromPkgFile))
+          await writeFile(
+            exampleUsageJs,
+            String(example).replace(fromPkg.name, toPkg.name),
+          )
+        }
+        const refactor = new TheRefactor()
+        await refactor.rewrite('example/*.jsx', {
+          [`from '${fromPkgName}'`]: [`from '@the-/${name}'`],
+        })
+      }
+
+    } else {
+      console.warn(`"${fromPkgName}" is not found in local`)
+    }
+
+
     await _unlinkFiles(toDir, [
       'ci/release.js',
       'ci/share.js',
@@ -153,10 +176,7 @@ const _removeDevDeps = async (baseDir, names) => {
           demoComponentDir,
           'package.json',
         ))
-        const refactor = new TheRefactor()
-        await refactor.rewrite('example/*.jsx', {
-          [`from '${fromPkgName}'`]: [`from '@the-/${name}'`],
-        })
+
 
         await _copyFiles(demoComponentDir, toDir, [
           '.README.md.bud',
@@ -176,11 +196,11 @@ const _removeDevDeps = async (baseDir, names) => {
         await _rewritePkg(
           toDir,
           ({ devDependencies = {}, peerDependencies = {}, scripts = {} }) => {
-            scripts.doc = 'the-script-doc'
-            scripts.build = 'the-script-build'
-            scripts.test = 'the-script-test'
+            scripts.doc = '../../misc/scripts/pkgDoc.js'
+            scripts.build = '../../misc/scripts/pkgBuild.js'
+            scripts.test = '../../misc/scripts/pkgTest.js'
             scripts.prepare =
-              '../../misc/scripts/install_if_needed.sh;npm run build && npm run doc'
+              '../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc'
             delete scripts.share
             delete scripts.buid
             devDependencies['@babel/runtime'] =
@@ -202,11 +222,26 @@ const _removeDevDeps = async (baseDir, names) => {
           },
         )
         {
-          await _addDevDeps(toDir, {
-            '@the-/script-build': 'file:../script-build',
-            '@the-/script-doc': 'file:../script-doc',
-            '@the-/script-test': 'file:../script-test',
-          })
+          await _removeDevDeps(toDir, [
+            'the-script-share',
+            'the-script-update',
+            'ape-tasking',
+            'ape-formatting',
+            'the-script-release',
+            'the-script-test',
+            'the-script-doc',
+            'the-script-jsdoc',
+            'the-templates',
+            'the-script-build',
+            'the-component-demo',
+            'ape-releasing',
+            'mocha',
+            'ape-tmpl',
+            'ape-updating',
+            '@the-/script-build',
+            '@the-/script-doc',
+            '@the-/script-test',
+          ])
         }
         await _addDevDeps(toDir, {
           '@the-/ui-demo': 'file:../ui-demo',
@@ -238,11 +273,11 @@ const _removeDevDeps = async (baseDir, names) => {
           '.npmignore',
         ])
         await _rewritePkg(toDir, ({ scripts = {} }) => {
-          scripts.doc = 'the-script-doc'
-          scripts.build = 'the-script-build'
-          scripts.test = 'the-script-test'
+          scripts.doc = '../../misc/scripts/pkgDoc.js'
+          scripts.build = '../../misc/scripts/pkgBuild.js'
+          scripts.test = '../../misc/scripts/pkgTest.js'
           scripts.prepare =
-            '../../misc/scripts/install_if_needed.sh;npm run build && npm run doc'
+            '../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc'
           delete scripts.share
           delete scripts.buid
 
@@ -270,24 +305,11 @@ const _removeDevDeps = async (baseDir, names) => {
       'mocha',
       'ape-tmpl',
       'ape-updating',
+      '@the-/script-build',
+      '@the-/script-doc',
+      '@the-/script-test',
     ])
-    await _addDevDeps(toDir, {
-      '@the-/script-build': 'file:../script-build',
-      '@the-/script-doc': 'file:../script-doc',
-      '@the-/script-test': 'file:../script-test',
-    })
-    // example
-    {
-      const exampleUsageJs = path.resolve(toDir, 'example/example-usage.js')
-      const example = await readFile(exampleUsageJs).catch(() => null)
-      if (example) {
-        const fromPkg = JSON.parse(await readFile(fromPkgFile))
-        await writeFile(
-          exampleUsageJs,
-          String(example).replace(fromPkg.name, toPkg.name),
-        )
-      }
-    }
+
     {
       await _rewritePkg(
         toDir,

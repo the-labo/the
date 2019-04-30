@@ -78,19 +78,12 @@ const { SupportedProps } = require('@the-/const-ui')
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
-
-<a name="section-doc-readme-03-api-md"></a>
-
-## API Guide
-
-- [@the-/const-ui](./doc/api/api.md#module_@the-/const-ui)
-
-
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
-
 
 <!-- Sections Start -->
+
+<a name="api"></a>
+
+## API Guide
 
 
 <!-- LICENSE Start -->
