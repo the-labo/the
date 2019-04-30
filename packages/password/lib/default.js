@@ -1,6 +1,7 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link module:@the-/password}
+ * @memberOf module:@the-/password
+ * @function default
  */
 'use strict'
 

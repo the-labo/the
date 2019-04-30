@@ -1,12 +1,12 @@
 /**
- * @memberOf module:the-code/lib/helpers
+ * @memberOf module:@the-/lint.helpers
  * @class LintCache
  */
 'use strict'
 
 const { readAsJson, unlinkAsync, writeAsJson } = require('@the-/util-file')
 
-/** @lends LintCache */
+/** @lends module:@the-/lint.helpers.LintCache */
 class LintCache {
   constructor(filename) {
     this.filename = filename

@@ -9,7 +9,7 @@
 
 const ThePack = require('./ThePack')
 
-/** @lends create */
+/** @lends module:@the-/pack.create */
 function create(...args) {
   return new ThePack(...args)
 }

@@ -11,13 +11,13 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/cache": "^15.2.0",
-    "@the-/check": "^15.2.6",
-    "@the-/controller": "^15.2.0",
+    "@the-/cache": "^15.4.1",
+    "@the-/check": "^15.4.1",
+    "@the-/controller": "^15.4.1",
     "@the-/mixin-controller": "^15.2.3",
     "@the-/pack": "^15.2.0",
     "@the-/stream": "^15.2.0",
-    "@the-/tmp": "^15.2.3",
+    "@the-/tmp": "^15.4.1",
     "adigest": "^3.0.1",
     "aport": "^2.0.0",
     "aredis": "^1.0.3",
@@ -34,7 +34,7 @@
     "stringcase": "^4.3.1"
   },
   "devDependencies": {
-    "@the-/client": "^15.2.3",
+    "@the-/client": "^15.4.1",
     "arequest": "^3.0.2",
     "msgpack-lite": "^0.1.26"
   },

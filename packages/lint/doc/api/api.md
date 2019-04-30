@@ -3,122 +3,113 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_default">default</a></dt>
-<dd><p>Default exports</p>
-</dd>
 <dt><a href="#module_@the-/lint">@the-/lint</a></dt>
 <dd><p>Lint of the-frameworks</p>
 </dd>
-<dt><a href="#module_rules">rules</a></dt>
-<dd><p>Build in Lint Rules</p>
-</dd>
-</dl>
-
-## Classes
-
-<dl>
-<dt><a href="#TheLint">TheLint</a></dt>
-<dd></dd>
 </dl>
 
 ## Functions
 
 <dl>
-<dt><a href="#create">create(...args)</a> ⇒ <code><a href="#TheLint">TheLint</a></code></dt>
-<dd><p>Create a TheLint instance</p>
-</dd>
-<dt><a href="#callRule">callRule(config, keypathArguments)</a> ⇒ <code>function</code></dt>
-<dd><p>Create &quot;callRule&quot; lint</p>
-</dd>
-<dt><a href="#contentRule">contentRule(config)</a> ⇒ <code>function</code></dt>
-<dd><p>Create &quot;contentRule&quot; lint</p>
-</dd>
-<dt><a href="#decorateRule">decorateRule(config)</a> ⇒ <code>function</code></dt>
-<dd><p>Create &quot;decorateRule&quot; lint</p>
-</dd>
-<dt><a href="#depsRule">depsRule(config)</a> ⇒ <code>function</code></dt>
-<dd><p>Create &quot;depsRule&quot; lint</p>
-</dd>
-<dt><a href="#filenameRule">filenameRule(config)</a> ⇒ <code>function</code></dt>
-<dd><p>Create &quot;filenameRule&quot; lint</p>
-</dd>
-<dt><a href="#moduleRule">moduleRule(config)</a> ⇒ <code>function</code></dt>
-<dd><p>Create &quot;moduleRule&quot; lint</p>
-</dd>
-<dt><a href="#propRule">propRule(config)</a> ⇒ <code>function</code></dt>
-<dd><p>Create &quot;propRule&quot; lint</p>
-</dd>
-<dt><a href="#usageRule">usageRule(config)</a> ⇒ <code>function</code></dt>
-<dd><p>Create &quot;usageRule&quot; lint.
-This rule makes sure target files is used in somewhere</p>
+<dt><a href="#default">default()</a></dt>
+<dd><p>Alias of <a href="#module_@the-/lint.create">create</a></p>
 </dd>
 </dl>
-
-<a name="module_default"></a>
-
-## default
-Default exports
 
 <a name="module_@the-/lint"></a>
 
 ## @the-/lint
 Lint of the-frameworks
 
-<a name="module_rules"></a>
+**Version**: 15.4.1  
+**License**: MIT  
 
-## rules
-Build in Lint Rules
+* [@the-/lint](#module_@the-/lint)
+    * [.TheLint](#module_@the-/lint.TheLint)
+        * [new TheLint()](#new_module_@the-/lint.TheLint_new)
+        * [.add(pattern, checker)](#module_@the-/lint.TheLint+add)
+        * [.run()](#module_@the-/lint.TheLint+run) ⇒ <code>Promise.&lt;Object.&lt;string, array&gt;&gt;</code>
+    * [.helpers](#module_@the-/lint.helpers) : <code>object</code>
+        * [.LintCache](#module_@the-/lint.helpers.LintCache)
+    * [.rules](#module_@the-/lint.rules) : <code>object</code>
+        * [.callRule(config, keypathArguments)](#module_@the-/lint.rules.callRule) ⇒ <code>function</code>
+        * [.contentRule(config)](#module_@the-/lint.rules.contentRule) ⇒ <code>function</code>
+        * [.decorateRule(config)](#module_@the-/lint.rules.decorateRule) ⇒ <code>function</code>
+        * [.depsRule(config)](#module_@the-/lint.rules.depsRule) ⇒ <code>function</code>
+        * [.filenameRule(config)](#module_@the-/lint.rules.filenameRule) ⇒ <code>function</code>
+        * [.moduleRule(config)](#module_@the-/lint.rules.moduleRule) ⇒ <code>function</code>
+        * [.propRule(config)](#module_@the-/lint.rules.propRule) ⇒ <code>function</code>
+        * [.usageRule(config)](#module_@the-/lint.rules.usageRule) ⇒ <code>function</code>
+    * [.create(...args)](#module_@the-/lint.create) ⇒ <code>TheLint</code>
 
-<a name="TheLint"></a>
+<a name="module_@the-/lint.TheLint"></a>
 
-## TheLint
-**Kind**: global class  
+### lint.TheLint
+**Kind**: static class of [<code>@the-/lint</code>](#module_@the-/lint)  
 
-* [TheLint](#TheLint)
-    * [new TheLint()](#new_TheLint_new)
-    * [.add(pattern, checker)](#TheLint+add)
-    * [.run()](#TheLint+run) ⇒ <code>Promise.&lt;Object.&lt;string, array&gt;&gt;</code>
+* [.TheLint](#module_@the-/lint.TheLint)
+    * [new TheLint()](#new_module_@the-/lint.TheLint_new)
+    * [.add(pattern, checker)](#module_@the-/lint.TheLint+add)
+    * [.run()](#module_@the-/lint.TheLint+run) ⇒ <code>Promise.&lt;Object.&lt;string, array&gt;&gt;</code>
 
-<a name="new_TheLint_new"></a>
+<a name="new_module_@the-/lint.TheLint_new"></a>
 
-### new TheLint()
+#### new TheLint()
 Lint runner
 
-<a name="TheLint+add"></a>
+<a name="module_@the-/lint.TheLint+add"></a>
 
-### theLint.add(pattern, checker)
+#### theLint.add(pattern, checker)
 Add checker
 
-**Kind**: instance method of [<code>TheLint</code>](#TheLint)  
+**Kind**: instance method of [<code>TheLint</code>](#module_@the-/lint.TheLint)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | pattern | <code>string</code> | Target filename patter |
 | checker | <code>function</code> | Lint checker |
 
-<a name="TheLint+run"></a>
+<a name="module_@the-/lint.TheLint+run"></a>
 
-### theLint.run() ⇒ <code>Promise.&lt;Object.&lt;string, array&gt;&gt;</code>
+#### theLint.run() ⇒ <code>Promise.&lt;Object.&lt;string, array&gt;&gt;</code>
 Run all checkers
 
-**Kind**: instance method of [<code>TheLint</code>](#TheLint)  
-<a name="create"></a>
+**Kind**: instance method of [<code>TheLint</code>](#module_@the-/lint.TheLint)  
+<a name="module_@the-/lint.helpers"></a>
 
-## create(...args) ⇒ [<code>TheLint</code>](#TheLint)
-Create a TheLint instance
+### lint.helpers : <code>object</code>
+Helper functions
 
-**Kind**: global function  
+**Kind**: static namespace of [<code>@the-/lint</code>](#module_@the-/lint)  
+**Access**: protected  
+<a name="module_@the-/lint.helpers.LintCache"></a>
 
-| Param | Type |
-| --- | --- |
-| ...args | <code>\*</code> | 
+#### helpers.LintCache
+**Kind**: static class of [<code>helpers</code>](#module_@the-/lint.helpers)  
+<a name="module_@the-/lint.rules"></a>
 
-<a name="callRule"></a>
+### lint.rules : <code>object</code>
+Rule functions
 
-## callRule(config, keypathArguments) ⇒ <code>function</code>
+**Kind**: static namespace of [<code>@the-/lint</code>](#module_@the-/lint)  
+**Access**: protected  
+
+* [.rules](#module_@the-/lint.rules) : <code>object</code>
+    * [.callRule(config, keypathArguments)](#module_@the-/lint.rules.callRule) ⇒ <code>function</code>
+    * [.contentRule(config)](#module_@the-/lint.rules.contentRule) ⇒ <code>function</code>
+    * [.decorateRule(config)](#module_@the-/lint.rules.decorateRule) ⇒ <code>function</code>
+    * [.depsRule(config)](#module_@the-/lint.rules.depsRule) ⇒ <code>function</code>
+    * [.filenameRule(config)](#module_@the-/lint.rules.filenameRule) ⇒ <code>function</code>
+    * [.moduleRule(config)](#module_@the-/lint.rules.moduleRule) ⇒ <code>function</code>
+    * [.propRule(config)](#module_@the-/lint.rules.propRule) ⇒ <code>function</code>
+    * [.usageRule(config)](#module_@the-/lint.rules.usageRule) ⇒ <code>function</code>
+
+<a name="module_@the-/lint.rules.callRule"></a>
+
+#### rules.callRule(config, keypathArguments) ⇒ <code>function</code>
 Create "callRule" lint
 
-**Kind**: global function  
+**Kind**: static method of [<code>rules</code>](#module_@the-/lint.rules)  
 **Returns**: <code>function</code> - Lint function  
 
 | Param | Type | Description |
@@ -126,12 +117,12 @@ Create "callRule" lint
 | config | <code>Object</code> | Lint config |
 | keypathArguments | <code>Object</code> |  |
 
-<a name="contentRule"></a>
+<a name="module_@the-/lint.rules.contentRule"></a>
 
-## contentRule(config) ⇒ <code>function</code>
+#### rules.contentRule(config) ⇒ <code>function</code>
 Create "contentRule" lint
 
-**Kind**: global function  
+**Kind**: static method of [<code>rules</code>](#module_@the-/lint.rules)  
 **Returns**: <code>function</code> - Lint function  
 
 | Param | Type | Description |
@@ -140,36 +131,36 @@ Create "contentRule" lint
 | config.startsWith | <code>string</code> \| <code>RegExp</code> | Ends with |
 | config.endsWith | <code>string</code> \| <code>RegExp</code> | Ends with |
 
-<a name="decorateRule"></a>
+<a name="module_@the-/lint.rules.decorateRule"></a>
 
-## decorateRule(config) ⇒ <code>function</code>
+#### rules.decorateRule(config) ⇒ <code>function</code>
 Create "decorateRule" lint
 
-**Kind**: global function  
+**Kind**: static method of [<code>rules</code>](#module_@the-/lint.rules)  
 **Returns**: <code>function</code> - Lint function  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | config | <code>Object</code> | Lint config |
 
-<a name="depsRule"></a>
+<a name="module_@the-/lint.rules.depsRule"></a>
 
-## depsRule(config) ⇒ <code>function</code>
+#### rules.depsRule(config) ⇒ <code>function</code>
 Create "depsRule" lint
 
-**Kind**: global function  
+**Kind**: static method of [<code>rules</code>](#module_@the-/lint.rules)  
 **Returns**: <code>function</code> - Lint function  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | config | <code>Object</code> | Lint config |
 
-<a name="filenameRule"></a>
+<a name="module_@the-/lint.rules.filenameRule"></a>
 
-## filenameRule(config) ⇒ <code>function</code>
+#### rules.filenameRule(config) ⇒ <code>function</code>
 Create "filenameRule" lint
 
-**Kind**: global function  
+**Kind**: static method of [<code>rules</code>](#module_@the-/lint.rules)  
 **Returns**: <code>function</code> - Lint function  
 
 | Param | Type | Description |
@@ -178,37 +169,37 @@ Create "filenameRule" lint
 | config.startsWith | <code>string</code> \| <code>RegExp</code> | Ends with |
 | config.endsWith | <code>string</code> \| <code>RegExp</code> | Ends with |
 
-<a name="moduleRule"></a>
+<a name="module_@the-/lint.rules.moduleRule"></a>
 
-## moduleRule(config) ⇒ <code>function</code>
+#### rules.moduleRule(config) ⇒ <code>function</code>
 Create "moduleRule" lint
 
-**Kind**: global function  
+**Kind**: static method of [<code>rules</code>](#module_@the-/lint.rules)  
 **Returns**: <code>function</code> - Lint function  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | config | <code>Object</code> | Lint config |
 
-<a name="propRule"></a>
+<a name="module_@the-/lint.rules.propRule"></a>
 
-## propRule(config) ⇒ <code>function</code>
+#### rules.propRule(config) ⇒ <code>function</code>
 Create "propRule" lint
 
-**Kind**: global function  
+**Kind**: static method of [<code>rules</code>](#module_@the-/lint.rules)  
 **Returns**: <code>function</code> - Lint function  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | config | <code>Object</code> | Lint config |
 
-<a name="usageRule"></a>
+<a name="module_@the-/lint.rules.usageRule"></a>
 
-## usageRule(config) ⇒ <code>function</code>
+#### rules.usageRule(config) ⇒ <code>function</code>
 Create "usageRule" lint.
 This rule makes sure target files is used in somewhere
 
-**Kind**: global function  
+**Kind**: static method of [<code>rules</code>](#module_@the-/lint.rules)  
 **Returns**: <code>function</code> - Lint function  
 
 | Param | Type | Description |
@@ -216,3 +207,20 @@ This rule makes sure target files is used in somewhere
 | config | <code>Object</code> | Lint config |
 | config.usedIn | <code>string</code> | Files that may use the module |
 
+<a name="module_@the-/lint.create"></a>
+
+### lint.create(...args) ⇒ <code>TheLint</code>
+Create a TheLint instance
+
+**Kind**: static method of [<code>@the-/lint</code>](#module_@the-/lint)  
+
+| Param | Type |
+| --- | --- |
+| ...args | <code>\*</code> | 
+
+<a name="default"></a>
+
+## default()
+Alias of [create](#module_@the-/lint.create)
+
+**Kind**: global function  

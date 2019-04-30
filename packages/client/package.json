@@ -12,9 +12,9 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.2.6",
+    "@the-/check": "^15.4.1",
     "@the-/pack": "^15.2.0",
-    "@the-/queue": "^15.2.0",
+    "@the-/queue": "^15.4.1",
     "@the-/stream": "^15.2.0",
     "argx": "^4.0.0",
     "asleep": "^1.0.3",
@@ -31,7 +31,7 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "@the-/server": "^15.2.5",
+    "@the-/server": "^15.4.1",
     "aport": "^2.0.0"
   },
   "engines": {

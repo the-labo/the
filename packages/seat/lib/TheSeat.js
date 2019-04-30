@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/seat
  * @class TheSeat
  */
 'use strict'
@@ -21,7 +22,7 @@ const TheSeatBase = [m.lockMix, m.scopeMix].reduce(
   class Base {},
 )
 
-/** @lends TheSeat */
+/** @lends module:@the-/seat.TheSeat */
 class TheSeat extends TheSeatBase {
   static get DEFAULT_FILENAME() {
     const { HOME = '~' } = process.env

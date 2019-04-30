@@ -1,5 +1,6 @@
 /**
  * Create "callRule" lint
+ * @memberOf module:@the-/lint.rules
  * @function callRule
  * @param {Object} config - Lint config
  * @param {Object} keypathArguments
@@ -11,7 +12,7 @@ const { has } = require('json-pointer')
 const path = require('path')
 const { parse, walk } = require('@the-/ast')
 
-/** @lends callRule */
+/** @lends module:@the-/lint.rules.callRule */
 function callRule(config) {
   const { keypathArguments = {}, ...rest } = config
   if (Object.keys(rest).length > 0) {

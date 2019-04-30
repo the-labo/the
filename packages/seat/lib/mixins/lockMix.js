@@ -1,9 +1,14 @@
+/**
+ * @memberOf module:@the-/seat.mixins
+ * @function lockMix
+ */
 'use strict'
 
 const { delSync, readAsJsonSync, writeAsJsonSync } = require('@the-/util-file')
 
 const LOCK_DURATION = 1500
 
+/** @lends module:@the-/seat.lockMix */
 function lockMix(Class) {
   return class LockMixed extends Class {
     isLocked() {

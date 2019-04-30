@@ -1,5 +1,6 @@
 /**
  * Script runner
+ * @memberOf module:@the-/run
  * @class TheRun
  * @param {Object} [options={}] - Optional settings
  * @param {number|Boolean} [options.inspect] -  Inspect port
@@ -9,7 +10,7 @@
 const { spawn } = require('child_process')
 const fkill = require('fkill')
 
-/** @lends TheRun */
+/** @lends module:@the-/run.TheRun */
 class TheRun {
   constructor(options = {}) {
     const { catcher = true, inspect = false } = options

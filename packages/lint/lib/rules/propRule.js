@@ -1,5 +1,6 @@
 /**
  * Create "propRule" lint
+ * @memberOf module:@the-/lint.rules
  * @function propRule
  * @param {Object} config - Lint config
  * @returns {function} Lint function
@@ -10,7 +11,7 @@ const { has } = require('json-pointer')
 const path = require('path')
 const { parse, walk } = require('@the-/ast')
 
-/** @lends propRule */
+/** @lends module:@the-/lint.rules.propRule */
 function propRule(config) {
   const { keypathAccess = {}, ...rest } = config
   if (Object.keys(rest).length > 0) {

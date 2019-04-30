@@ -12,10 +12,10 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@sendgrid/mail": "*",
-    "@the-/check": "^15.2.6",
+    "@sendgrid/mail": "^6.3.1",
+    "@the-/check": "^15.4.1",
     "asobj": "^3.0.1",
-    "handlebars": "^4.0.12",
+    "handlebars": "^4.1.2",
     "nodemailer": "^5.1.1",
     "uuid": "^3.3.2"
   },

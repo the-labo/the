@@ -1,5 +1,6 @@
 /**
  * Create "moduleRule" lint
+ * @memberOf module:@the-/lint.rules
  * @function moduleRule
  * @param {Object} config - Lint config
  * @returns {function} Lint function
@@ -11,7 +12,7 @@ const { parsePattern } = require('../helpers/parseHelper')
 
 const _d = (m) => m.default || m
 
-/** @lends moduleRule */
+/** @lends module:@the-/lint.rules.moduleRule */
 function moduleRule(config) {
   const {
     keyPattern,

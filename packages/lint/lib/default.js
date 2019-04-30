@@ -1,6 +1,6 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link module:@the-/lint.create}
+ * @function default
  */
 'use strict'
 

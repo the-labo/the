@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/password
  * @class ThePassword
  */
 'use strict'
@@ -6,7 +7,7 @@
 const abind = require('abind')
 const crypto = require('crypto')
 
-/** @lends ThePassword */
+/** @lends module:@the-/password.ThePassword */
 class ThePassword {
   constructor(options = {}) {
     if (options.algorithm) {

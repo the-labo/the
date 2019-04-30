@@ -1,6 +1,7 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link module:@the-/run.create}
+ * @memberOf module:@the-/run
+ * @function default
  */
 'use strict'
 

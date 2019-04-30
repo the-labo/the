@@ -5,6 +5,9 @@
     "name": "@the-/ps",
     "kind": "module",
     "description": "Process manager for the-framework",
+    "version": "15.4.1",
+    "license": "MIT",
+    "typicalname": "ps",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -54,13 +57,13 @@
     "order": 5
   },
   {
-    "id": "ThePS#acquire",
-    "longname": "ThePS#acquire",
+    "id": "module:@the-/ps.ThePS#acquire",
+    "longname": "module:@the-/ps.ThePS#acquire",
     "name": "acquire",
     "kind": "function",
     "scope": "instance",
     "description": "Generate pid and remove on exit.",
-    "memberof": "ThePS",
+    "memberof": "module:@the-/ps.ThePS",
     "params": [],
     "returns": [
       {
@@ -92,21 +95,6 @@
       "path": "/Users/okuni/Projects/the/packages/ps/lib"
     },
     "order": 4
-  },
-  {
-    "id": "module:@the-/ps.default",
-    "longname": "module:@the-/ps.default",
-    "name": "default",
-    "kind": "namespace",
-    "scope": "static",
-    "description": "Default exports",
-    "memberof": "module:@the-/ps",
-    "meta": {
-      "lineno": 1,
-      "filename": "default.js",
-      "path": "/Users/okuni/Projects/the/packages/ps/lib"
-    },
-    "order": 2
   },
   {
     "id": "module:@the-/ps.acquire",
@@ -157,5 +145,20 @@
       "path": "/Users/okuni/Projects/the/packages/ps/lib"
     },
     "order": 1
+  },
+  {
+    "id": "module:@the-/ps.default",
+    "longname": "module:@the-/ps.default",
+    "name": "default",
+    "kind": "function",
+    "scope": "static",
+    "description": "Alias of {@link module:@the-/ps.create}",
+    "memberof": "module:@the-/ps",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/ps/lib"
+    },
+    "order": 2
   }
 ]

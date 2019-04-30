@@ -1,5 +1,6 @@
 /**
  * Create "decorateRule" lint
+ * @memberOf module:@the-/lint.rules
  * @function decorateRule
  * @param {Object} config - Lint config
  * @returns {function} Lint function
@@ -9,7 +10,7 @@
 const path = require('path')
 const { parse, walk } = require('@the-/ast')
 
-/** @lends decorateRule */
+/** @lends module:@the-/lint.rules.decorateRule */
 function decorateRule(config) {
   const { declared = false, ...rest } = config
   if (Object.keys(rest).length > 0) {

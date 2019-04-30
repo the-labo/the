@@ -5,18 +5,26 @@
 ## @the-/ps
 Process manager for the-framework
 
+**Version**: 15.4.1  
+**License**: MIT  
 
 * [@the-/ps](#module_@the-/ps)
     * [.ThePS](#module_@the-/ps.ThePS)
         * [new ThePS(filename, [options])](#new_module_@the-/ps.ThePS_new)
-    * [.default](#module_@the-/ps.default) : <code>object</code>
+        * [.acquire()](#module_@the-/ps.ThePS+acquire) ⇒ <code>Promise.&lt;void&gt;</code>
     * [.acquire()](#module_@the-/ps.acquire)
     * [.create(...args)](#module_@the-/ps.create) ⇒ <code>ThePS</code>
+    * [.default()](#module_@the-/ps.default)
 
 <a name="module_@the-/ps.ThePS"></a>
 
-### @the-/ps.ThePS
+### ps.ThePS
 **Kind**: static class of [<code>@the-/ps</code>](#module_@the-/ps)  
+
+* [.ThePS](#module_@the-/ps.ThePS)
+    * [new ThePS(filename, [options])](#new_module_@the-/ps.ThePS_new)
+    * [.acquire()](#module_@the-/ps.ThePS+acquire) ⇒ <code>Promise.&lt;void&gt;</code>
+
 <a name="new_module_@the-/ps.ThePS_new"></a>
 
 #### new ThePS(filename, [options])
@@ -27,21 +35,21 @@ Process manager for the-framework
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 | [options.logging] | <code>boolean</code> | <code>false</code> | Enable logs |
 
-<a name="module_@the-/ps.default"></a>
+<a name="module_@the-/ps.ThePS+acquire"></a>
 
-### @the-/ps.default : <code>object</code>
-Default exports
+#### thePS.acquire() ⇒ <code>Promise.&lt;void&gt;</code>
+Generate pid and remove on exit.
 
-**Kind**: static namespace of [<code>@the-/ps</code>](#module_@the-/ps)  
+**Kind**: instance method of [<code>ThePS</code>](#module_@the-/ps.ThePS)  
 <a name="module_@the-/ps.acquire"></a>
 
-### @the-/ps.acquire()
+### ps.acquire()
 Acquire process
 
 **Kind**: static method of [<code>@the-/ps</code>](#module_@the-/ps)  
 <a name="module_@the-/ps.create"></a>
 
-### @the-/ps.create(...args) ⇒ <code>ThePS</code>
+### ps.create(...args) ⇒ <code>ThePS</code>
 Create a ThePS instance
 
 **Kind**: static method of [<code>@the-/ps</code>](#module_@the-/ps)  
@@ -50,3 +58,9 @@ Create a ThePS instance
 | --- | --- |
 | ...args | <code>\*</code> | 
 
+<a name="module_@the-/ps.default"></a>
+
+### ps.default()
+Alias of [create](#module_@the-/ps.create)
+
+**Kind**: static method of [<code>@the-/ps</code>](#module_@the-/ps)  

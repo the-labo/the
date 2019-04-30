@@ -132,6 +132,9 @@ tryExample().catch((err) => console.error(err))
 - [.State](./doc/api/api.md#module_@the-/state.state.State)
 ### namespace
 - [.ActionTypes](./doc/api/api.md#module_@the-/state.constants.ActionTypes)
+- [.constants](./doc/api/api.md#module_@the-/state.constants)
+- [.helpers](./doc/api/api.md#module_@the-/state.helpers)
+- [.state](./doc/api/api.md#module_@the-/state.state)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -1,5 +1,6 @@
 /**
  * Lint runner
+ * @memberOf module:@the-/lint
  * @class TheLint
  */
 'use strict'
@@ -14,7 +15,7 @@ const debug = require('debug')('the:lint')
 
 const relativePath = (f) => path.relative(process.cwd(), f)
 
-/** @lends TheLint */
+/** @lends module:@the-/lint.TheLint */
 class TheLint {
   static logErrorReports(filename, reports) {
     const INDENT = ' '

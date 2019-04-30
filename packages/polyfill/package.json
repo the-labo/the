@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.4.0",
+    "@babel/polyfill": "^7.4.4",
     "abind": "^1.0.5",
     "bwindow": "^2.0.3",
     "cross-fetch": "^3.0.2",

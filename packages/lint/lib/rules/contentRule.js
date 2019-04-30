@@ -1,5 +1,6 @@
 /**
  * Create "contentRule" lint
+ * @memberOf module:@the-/lint.rules
  * @function contentRule
  * @param {Object} config - Lint config
  * @param {string|RegExp} config.startsWith - Ends with
@@ -11,7 +12,7 @@
 const { EOL } = require('os')
 const path = require('path')
 
-/** @lends contentRule */
+/** @lends module:@the-/lint.rules.contentRule */
 function contentRule(config) {
   const { endsWithNewLine, maxLines, ...rest } = config
 

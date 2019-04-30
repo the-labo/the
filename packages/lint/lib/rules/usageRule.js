@@ -1,6 +1,7 @@
 /**
  * Create "usageRule" lint.
  * This rule makes sure target files is used in somewhere
+ * @memberOf module:@the-/lint.rules
  * @function usageRule
  * @param {Object} config - Lint config
  * @param {string} config.usedIn - Files that may use the module
@@ -20,7 +21,7 @@ const transformFuncFor = (name) => {
   return stringcase[name]
 }
 
-/** @lends usageRule */
+/** @lends module:@the-/lint.rules.usageRule */
 function usageRule(config) {
   const {
     ignore = '**/node_modules/**',

@@ -1,6 +1,7 @@
 /**
- * Default exports
- * @module default
+ * Alias of {@link module:@the-/seat.create}
+ * @memberOf module:@the-/seat
+ * @function default
  */
 'use strict'
 

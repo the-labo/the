@@ -1,5 +1,6 @@
 /**
  * Create "depsRule" lint
+ * @memberOf module:@the-/lint.rules
  * @function depsRule
  * @param {Object} config - Lint config
  * @returns {function} Lint function
@@ -14,7 +15,7 @@ const {
   walk,
 } = require('@the-/ast')
 
-/** @lends depsRule */
+/** @lends module:@the-/lint.rules.depsRule */
 function depsRule(config) {
   const { importFrom = false, requireFrom = false, ...rest } = config
   if (Object.keys(rest).length > 0) {

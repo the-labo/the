@@ -1,14 +1,15 @@
 /**
  * Create a TheRun instance
+ * @memberOf module:@the-/run
  * @function create
  * @param {...*} args
- * @returns {TheRun}
+ * @returns {module:@the-/run.TheRun}
  */
 'use strict'
 
 const TheRun = require('./TheRun')
 
-/** @lends create */
+/** @lends module:@the-/run.create */
 function create(...args) {
   return new TheRun(...args)
 }

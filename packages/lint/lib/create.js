@@ -1,5 +1,6 @@
 /**
  * Create a TheLint instance
+ * @memberOf module:@the-/lint
  * @function create
  * @param {...*} args
  * @returns {TheLint}
@@ -8,7 +9,7 @@
 
 const TheLint = require('./TheLint')
 
-/** @lends create */
+/** @lends module:@the-/lint.create */
 function create(...args) {
   return new TheLint(...args)
 }

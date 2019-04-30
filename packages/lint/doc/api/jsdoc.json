@@ -1,23 +1,13 @@
 [
   {
-    "id": "module:default",
-    "longname": "module:default",
-    "name": "default",
-    "kind": "module",
-    "description": "Default exports",
-    "meta": {
-      "lineno": 1,
-      "filename": "default.js",
-      "path": "/Users/okuni/Projects/the/packages/lint/lib"
-    },
-    "order": 1
-  },
-  {
     "id": "module:@the-/lint",
     "longname": "module:@the-/lint",
     "name": "@the-/lint",
     "kind": "module",
     "description": "Lint of the-frameworks",
+    "version": "15.4.1",
+    "license": "MIT",
+    "typicalname": "lint",
     "meta": {
       "lineno": 2,
       "filename": "index.js",
@@ -26,33 +16,96 @@
     "order": 2
   },
   {
-    "id": "module:rules",
-    "longname": "module:rules",
-    "name": "rules",
-    "kind": "module",
-    "description": "Build in Lint Rules",
-    "meta": {
-      "lineno": 2,
-      "filename": "index.js",
-      "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
-    },
-    "order": 13
-  },
-  {
-    "id": "TheLint()",
-    "longname": "TheLint",
+    "id": "module:@the-/lint.TheLint()",
+    "longname": "module:@the-/lint.TheLint",
     "name": "TheLint",
     "kind": "constructor",
     "description": "Lint runner",
-    "memberof": "TheLint",
+    "memberof": "module:@the-/lint.TheLint",
     "order": 4
   },
   {
-    "id": "TheLint",
-    "longname": "TheLint",
+    "id": "default",
+    "longname": "default",
+    "name": "default",
+    "kind": "function",
+    "scope": "global",
+    "description": "Alias of {@link module:@the-/lint.create}",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/lint/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/lint.TheLint#add",
+    "longname": "module:@the-/lint.TheLint#add",
+    "name": "add",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add checker",
+    "memberof": "module:@the-/lint.TheLint",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Target filename patter",
+        "name": "pattern"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Lint checker",
+        "name": "checker"
+      }
+    ],
+    "meta": {
+      "lineno": 54,
+      "filename": "TheLint.js",
+      "path": "/Users/okuni/Projects/the/packages/lint/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "module:@the-/lint.TheLint#run",
+    "longname": "module:@the-/lint.TheLint#run",
+    "name": "run",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Run all checkers",
+    "memberof": "module:@the-/lint.TheLint",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Object.<string, array>>"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 122,
+      "filename": "TheLint.js",
+      "path": "/Users/okuni/Projects/the/packages/lint/lib"
+    },
+    "async": true,
+    "order": 6
+  },
+  {
+    "id": "module:@the-/lint.TheLint",
+    "longname": "module:@the-/lint.TheLint",
     "name": "TheLint",
     "kind": "class",
-    "scope": "global",
+    "scope": "static",
+    "memberof": "module:@the-/lint",
     "meta": {
       "lineno": 1,
       "filename": "TheLint.js",
@@ -61,12 +114,59 @@
     "order": 3
   },
   {
-    "id": "create",
-    "longname": "create",
+    "id": "module:@the-/lint.helpers.LintCache",
+    "longname": "module:@the-/lint.helpers.LintCache",
+    "name": "LintCache",
+    "kind": "class",
+    "scope": "static",
+    "memberof": "module:@the-/lint.helpers",
+    "meta": {
+      "lineno": 1,
+      "filename": "LintCache.js",
+      "path": "/Users/okuni/Projects/the/packages/lint/lib/helpers"
+    },
+    "order": 8
+  },
+  {
+    "id": "module:@the-/lint.helpers",
+    "longname": "module:@the-/lint.helpers",
+    "name": "helpers",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Helper functions",
+    "memberof": "module:@the-/lint",
+    "access": "protected",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/lint/lib/helpers"
+    },
+    "order": 7
+  },
+  {
+    "id": "module:@the-/lint.rules",
+    "longname": "module:@the-/lint.rules",
+    "name": "rules",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Rule functions",
+    "memberof": "module:@the-/lint",
+    "access": "protected",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
+    },
+    "order": 14
+  },
+  {
+    "id": "module:@the-/lint.create",
+    "longname": "module:@the-/lint.create",
     "name": "create",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Create a TheLint instance",
+    "memberof": "module:@the-/lint",
     "params": [
       {
         "type": {
@@ -95,12 +195,13 @@
     "order": 0
   },
   {
-    "id": "callRule",
-    "longname": "callRule",
+    "id": "module:@the-/lint.rules.callRule",
+    "longname": "module:@the-/lint.rules.callRule",
     "name": "callRule",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Create \"callRule\" lint",
+    "memberof": "module:@the-/lint.rules",
     "params": [
       {
         "type": {
@@ -135,15 +236,16 @@
       "filename": "callRule.js",
       "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
     },
-    "order": 8
+    "order": 9
   },
   {
-    "id": "contentRule",
-    "longname": "contentRule",
+    "id": "module:@the-/lint.rules.contentRule",
+    "longname": "module:@the-/lint.rules.contentRule",
     "name": "contentRule",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Create \"contentRule\" lint",
+    "memberof": "module:@the-/lint.rules",
     "params": [
       {
         "type": {
@@ -190,15 +292,16 @@
       "filename": "contentRule.js",
       "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
     },
-    "order": 9
+    "order": 10
   },
   {
-    "id": "decorateRule",
-    "longname": "decorateRule",
+    "id": "module:@the-/lint.rules.decorateRule",
+    "longname": "module:@the-/lint.rules.decorateRule",
     "name": "decorateRule",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Create \"decorateRule\" lint",
+    "memberof": "module:@the-/lint.rules",
     "params": [
       {
         "type": {
@@ -225,15 +328,16 @@
       "filename": "decorateRule.js",
       "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
     },
-    "order": 10
+    "order": 11
   },
   {
-    "id": "depsRule",
-    "longname": "depsRule",
+    "id": "module:@the-/lint.rules.depsRule",
+    "longname": "module:@the-/lint.rules.depsRule",
     "name": "depsRule",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Create \"depsRule\" lint",
+    "memberof": "module:@the-/lint.rules",
     "params": [
       {
         "type": {
@@ -260,15 +364,16 @@
       "filename": "depsRule.js",
       "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
     },
-    "order": 11
+    "order": 12
   },
   {
-    "id": "filenameRule",
-    "longname": "filenameRule",
+    "id": "module:@the-/lint.rules.filenameRule",
+    "longname": "module:@the-/lint.rules.filenameRule",
     "name": "filenameRule",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Create \"filenameRule\" lint",
+    "memberof": "module:@the-/lint.rules",
     "params": [
       {
         "type": {
@@ -315,15 +420,16 @@
       "filename": "filenameRule.js",
       "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
     },
-    "order": 12
+    "order": 13
   },
   {
-    "id": "moduleRule",
-    "longname": "moduleRule",
+    "id": "module:@the-/lint.rules.moduleRule",
+    "longname": "module:@the-/lint.rules.moduleRule",
     "name": "moduleRule",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Create \"moduleRule\" lint",
+    "memberof": "module:@the-/lint.rules",
     "params": [
       {
         "type": {
@@ -350,15 +456,16 @@
       "filename": "moduleRule.js",
       "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
     },
-    "order": 14
+    "order": 15
   },
   {
-    "id": "propRule",
-    "longname": "propRule",
+    "id": "module:@the-/lint.rules.propRule",
+    "longname": "module:@the-/lint.rules.propRule",
     "name": "propRule",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Create \"propRule\" lint",
+    "memberof": "module:@the-/lint.rules",
     "params": [
       {
         "type": {
@@ -385,15 +492,16 @@
       "filename": "propRule.js",
       "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
     },
-    "order": 15
+    "order": 16
   },
   {
-    "id": "usageRule",
-    "longname": "usageRule",
+    "id": "module:@the-/lint.rules.usageRule",
+    "longname": "module:@the-/lint.rules.usageRule",
     "name": "usageRule",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Create \"usageRule\" lint.\nThis rule makes sure target files is used in somewhere",
+    "memberof": "module:@the-/lint.rules",
     "params": [
       {
         "type": {
@@ -429,81 +537,6 @@
       "filename": "usageRule.js",
       "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
     },
-    "order": 16
-  },
-  {
-    "id": "TheLint#add",
-    "longname": "TheLint#add",
-    "name": "add",
-    "kind": "function",
-    "scope": "instance",
-    "description": "Add checker",
-    "memberof": "TheLint",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Target filename patter",
-        "name": "pattern"
-      },
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Lint checker",
-        "name": "checker"
-      }
-    ],
-    "meta": {
-      "lineno": 53,
-      "filename": "TheLint.js",
-      "path": "/Users/okuni/Projects/the/packages/lint/lib"
-    },
-    "order": 5
-  },
-  {
-    "id": "TheLint#run",
-    "longname": "TheLint#run",
-    "name": "run",
-    "kind": "function",
-    "scope": "instance",
-    "description": "Run all checkers",
-    "memberof": "TheLint",
-    "params": [],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<Object.<string, array>>"
-          ]
-        }
-      }
-    ],
-    "meta": {
-      "lineno": 121,
-      "filename": "TheLint.js",
-      "path": "/Users/okuni/Projects/the/packages/lint/lib"
-    },
-    "async": true,
-    "order": 6
-  },
-  {
-    "id": "module:the-code/lib/helpers.LintCache",
-    "longname": "module:the-code/lib/helpers.LintCache",
-    "name": "LintCache",
-    "kind": "class",
-    "scope": "static",
-    "memberof": "module:the-code/lib/helpers",
-    "meta": {
-      "lineno": 1,
-      "filename": "LintCache.js",
-      "path": "/Users/okuni/Projects/the/packages/lint/lib/helpers"
-    },
-    "order": 7
+    "order": 17
   }
 ]

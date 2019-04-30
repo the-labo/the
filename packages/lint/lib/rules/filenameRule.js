@@ -1,5 +1,6 @@
 /**
  * Create "filenameRule" lint
+ * @memberOf module:@the-/lint.rules
  * @function filenameRule
  * @param {Object} config - Lint config
  * @param {string|RegExp} config.startsWith - Ends with
@@ -11,7 +12,7 @@
 const path = require('path')
 const { parsePattern } = require('../helpers/parseHelper')
 
-/** @lends filenameRule */
+/** @lends module:@the-/lint.rules.filenameRule */
 function filenameRule(config) {
   const { endsWith, pattern, startsWith, ...rest } = config
   if (Object.keys(rest).length > 0) {

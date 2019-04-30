@@ -1,5 +1,6 @@
 /**
  * Create and run
+ * @memberOf module:@the-/run
  * @function run
  * @param {string} filename
  * @param {Object} [options={}]
@@ -8,7 +9,7 @@
 
 const create = require('./create')
 
-/** @lends run */
+/** @lends module:@the-/run.run */
 function run(filename, options = {}) {
   return create(options).run(filename)
 }
