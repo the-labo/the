@@ -1,5 +1,6 @@
 /**
  * Detect src url is video or not
+ * @memberof module:@the-/util-ui
  * @function isVideoSrc
  * @param {string} src - Url to detect
  * @returns {boolean} Video or not
@@ -7,14 +8,18 @@
 'use strict'
 
 const path = require('path')
-const { parse: parseUrl } = require('url')
+const { URL } = require('url')
+const { get } = require('bwindow')
 const videoExtensions = require('video-extensions')
 
 const videoExtNames = [...videoExtensions]
 
-/** @lends isVideoSrc */
+/** @lends module:@the-/util-ui.isVideoSrc */
 function isVideoSrc(src) {
-  const { pathname } = parseUrl(src || '')
+  const { pathname } = new URL(
+    src || '',
+    get('location.origin') || 'http://localhost',
+  )
   return videoExtNames.includes(path.extname(pathname).replace(/^\./, ''))
 }
 

@@ -1,5 +1,6 @@
 /**
  * Detect is serverside
+ * @memberof module:@the-/util-ui
  * @function isServerSide
  * @returns {boolean}
  */
@@ -7,7 +8,7 @@
 
 const { get } = require('bwindow')
 
-/** @lends isServerSide */
+/** @lends module:@the-/util-ui.isServerSide */
 function isServerSide() {
   return !get('window.location')
 }

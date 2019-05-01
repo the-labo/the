@@ -1,5 +1,6 @@
 /**
  * Extract changed props
+ * @memberof module:@the-/util-ui
  * @function changedProps
  * @param {Object} prevProps
  * @param {Object} props
@@ -7,7 +8,7 @@
  */
 'use strict'
 
-/** @lends changedProps */
+/** @lends module:@the-/util-ui.changedProps */
 function changedProps(prevProps, props) {
   const changed = {}
   for (const [key, value] of Object.entries(props)) {

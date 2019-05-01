@@ -9,7 +9,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/const-ui": "^15.4.0",
+    "@the-/const-ui": "^15.4.2",
     "acolor": "^3.0.0",
     "argx": "^4.0.0",
     "bwindow": "^2.0.3",
@@ -46,5 +46,5 @@
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
   },
-  "version": "15.4.0"
+  "version": "15.4.1"
 }

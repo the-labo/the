@@ -1,5 +1,6 @@
 /**
  * Read file  : data url
+ * @memberof module:@the-/util-ui
  * @deprecated
  * @function readFileAsDataURL
  * @param {File} - File to read
@@ -9,7 +10,7 @@
 
 const { get } = require('bwindow')
 
-/** @lends readFileAsDataURL */
+/** @lends module:@the-/util-ui.readFileAsDataURL */
 async function readFileAsDataURL(file) {
   const FileReader = get('FileReader')
   return new Promise((resolve, reject) => {

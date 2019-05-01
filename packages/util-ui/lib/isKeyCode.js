@@ -1,5 +1,6 @@
 /**
  * Key code detector
+ * @memberof module:@the-/util-ui
  * @function isKeyCode
  * @param {number} code - Key code to check
  * @param {string|number} name - Name of key code to compare
@@ -9,7 +10,7 @@
 
 const keycode = require('keycode')
 
-/** @lends isKeyCode */
+/** @lends module:@the-/util-ui.isKeyCode */
 function isKeyCode(name, code) {
   return (
     code === name ||

@@ -16,12 +16,13 @@
     "order": 6
   },
   {
-    "id": "asHOC",
-    "longname": "asHOC",
+    "id": "module:@the-/util-ui.asHOC",
+    "longname": "module:@the-/util-ui.asHOC",
     "name": "asHOC",
     "kind": "function",
-    "scope": "global",
-    "description": "Define  : class mixin",
+    "scope": "static",
+    "description": "Define class mixin",
+    "memberof": "module:@the-/util-ui",
     "meta": {
       "lineno": 1,
       "filename": "asHOC.js",
@@ -30,12 +31,58 @@
     "order": 0
   },
   {
-    "id": "changedProps",
-    "longname": "changedProps",
+    "id": "module:@the-/util-ui.asStyleData",
+    "longname": "module:@the-/util-ui.asStyleData",
+    "name": "asStyleData",
+    "kind": "function",
+    "scope": "static",
+    "description": "Mark  : style data",
+    "memberof": "module:@the-/util-ui",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Selector which wraps data",
+        "name": "scopeSelector"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Style data",
+        "name": "data"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Style data"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "asStyleData.js",
+      "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/util-ui.changedProps",
+    "longname": "module:@the-/util-ui.changedProps",
     "name": "changedProps",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Extract changed props",
+    "memberof": "module:@the-/util-ui",
     "params": [
       {
         "type": {
@@ -72,12 +119,13 @@
     "order": 2
   },
   {
-    "id": "colorAlpha",
-    "longname": "colorAlpha",
+    "id": "module:@the-/util-ui.colorAlpha",
+    "longname": "module:@the-/util-ui.colorAlpha",
     "name": "colorAlpha",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Change color alpha",
+    "memberof": "module:@the-/util-ui",
     "params": [
       {
         "type": {
@@ -110,6 +158,7 @@
         "description": "Color string"
       }
     ],
+    "deprecated": "Ues util-color instead",
     "meta": {
       "lineno": 1,
       "filename": "colorAlpha.js",
@@ -118,12 +167,13 @@
     "order": 3
   },
   {
-    "id": "eventHandlersFor",
-    "longname": "eventHandlersFor",
+    "id": "module:@the-/util-ui.eventHandlersFor",
+    "longname": "module:@the-/util-ui.eventHandlersFor",
     "name": "eventHandlersFor",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Extract event handlers for component props",
+    "memberof": "module:@the-/util-ui",
     "params": [
       {
         "type": {
@@ -173,12 +223,13 @@
     "order": 4
   },
   {
-    "id": "htmlAttributesFor",
-    "longname": "htmlAttributesFor",
+    "id": "module:@the-/util-ui.htmlAttributesFor",
+    "longname": "module:@the-/util-ui.htmlAttributesFor",
     "name": "htmlAttributesFor",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Extract html attributes for component props",
+    "memberof": "module:@the-/util-ui",
     "params": [
       {
         "type": {
@@ -228,12 +279,13 @@
     "order": 5
   },
   {
-    "id": "isKeyCode",
-    "longname": "isKeyCode",
+    "id": "module:@the-/util-ui.isKeyCode",
+    "longname": "module:@the-/util-ui.isKeyCode",
     "name": "isKeyCode",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Key code detector",
+    "memberof": "module:@the-/util-ui",
     "params": [
       {
         "type": {
@@ -272,12 +324,13 @@
     "order": 7
   },
   {
-    "id": "isServerSide",
-    "longname": "isServerSide",
+    "id": "module:@the-/util-ui.isServerSide",
+    "longname": "module:@the-/util-ui.isServerSide",
     "name": "isServerSide",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Detect is serverside",
+    "memberof": "module:@the-/util-ui",
     "returns": [
       {
         "type": {
@@ -295,12 +348,13 @@
     "order": 8
   },
   {
-    "id": "isVideoSrc",
-    "longname": "isVideoSrc",
+    "id": "module:@the-/util-ui.isVideoSrc",
+    "longname": "module:@the-/util-ui.isVideoSrc",
     "name": "isVideoSrc",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Detect src url is video or not",
+    "memberof": "module:@the-/util-ui",
     "params": [
       {
         "type": {
@@ -330,12 +384,13 @@
     "order": 9
   },
   {
-    "id": "newId",
-    "longname": "newId",
+    "id": "module:@the-/util-ui.newId",
+    "longname": "module:@the-/util-ui.newId",
     "name": "newId",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Generate new id",
+    "memberof": "module:@the-/util-ui",
     "params": [
       {
         "type": {
@@ -376,12 +431,13 @@
     "order": 10
   },
   {
-    "id": "readFileAsDataURL",
-    "longname": "readFileAsDataURL",
+    "id": "module:@the-/util-ui.readFileAsDataURL",
+    "longname": "module:@the-/util-ui.readFileAsDataURL",
     "name": "readFileAsDataURL",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Read file  : data url",
+    "memberof": "module:@the-/util-ui",
     "params": [
       {
         "type": {
@@ -411,12 +467,13 @@
     "order": 11
   },
   {
-    "id": "toggleBodyClass",
-    "longname": "toggleBodyClass",
+    "id": "module:@the-/util-ui.toggleBodyClass",
+    "longname": "module:@the-/util-ui.toggleBodyClass",
     "name": "toggleBodyClass",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Toggle class on document body",
+    "memberof": "module:@the-/util-ui",
     "params": [
       {
         "type": {
@@ -444,50 +501,5 @@
       "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
     },
     "order": 12
-  },
-  {
-    "id": "module:util-component.asStyleData",
-    "longname": "module:util-component.asStyleData",
-    "name": "asStyleData",
-    "kind": "function",
-    "scope": "static",
-    "description": "Mark  : style data",
-    "memberof": "module:util-component",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Selector which wraps data",
-        "name": "scopeSelector"
-      },
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "description": "Style data",
-        "name": "data"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "description": "Style data"
-      }
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "asStyleData.js",
-      "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
-    },
-    "order": 1
   }
 ]

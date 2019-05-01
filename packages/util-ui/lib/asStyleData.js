@@ -1,6 +1,6 @@
 /**
  * Mark  : style data
- * @memberof module:util-component
+ * @memberof module:@the-/util-ui
  * @function asStyleData
  * @param {string} scopeSelector - Selector which wraps data
  * @param {Object} data - Style data
@@ -49,7 +49,7 @@ const selectorData = (selector, data) => {
   )
 }
 
-/** @lends asStyleData */
+/** @lends module:@the-/util-ui.asStyleData */
 function asStyleData(scopeSelector, data) {
   const args = argx(arguments)
   scopeSelector = args.shift('string')

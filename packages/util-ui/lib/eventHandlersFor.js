@@ -1,5 +1,6 @@
 /**
  * Extract event handlers for component props
+ * @memberof module:@the-/util-ui
  * @function eventHandlersFor
  * @param {Object} props - Component prop
  * @param {Object} [options={}]
@@ -19,7 +20,7 @@ const handlerNames = [
   ...SupportedProps.imageEvents.split(','),
 ]
 
-/** @lends eventHandlersFor */
+/** @lends module:@the-/util-ui.eventHandlersFor */
 function eventHandlersFor(props, options = {}) {
   let { except = [] } = options
   return Object.keys(props)

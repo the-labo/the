@@ -1,5 +1,6 @@
 /**
  * Extract html attributes for component props
+ * @memberof module:@the-/util-ui
  * @function htmlAttributesFor
  * @param {Object} props - Component prop
  * @param {Object} [options={}]
@@ -12,7 +13,7 @@ const { SupportedProps } = require('@the-/const-ui')
 
 const htmlAttributes = SupportedProps.htmlAttributes.split(',')
 
-/** @lends htmlAttributesFor */
+/** @lends module:@the-/util-ui.htmlAttributesFor */
 function htmlAttributesFor(props, options = {}) {
   const { except = [] } = options
   return Object.keys(props)

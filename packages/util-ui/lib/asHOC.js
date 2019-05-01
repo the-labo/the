@@ -1,10 +1,11 @@
 /**
- * Define  : class mixin
+ * Define class mixin
+ * @memberof module:@the-/util-ui
  * @function asHOC
  */
 'use strict'
 
-/** @lends asHOC */
+/** @lends module:@the-/util-ui.asHOC */
 function asHOC(decorator) {
   return function classMixin(ClassDescriptor) {
     const isLegacyDecorator = typeof ClassDescriptor === 'function'
