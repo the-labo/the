@@ -5,7 +5,7 @@
     "name": "@the-/const-ui",
     "kind": "module",
     "description": "Constants for the-components",
-    "version": "15.4.0",
+    "version": "15.4.2",
     "license": "MIT",
     "typicalname": "constUi",
     "meta": {
@@ -212,5 +212,25 @@
       "path": "/Users/okuni/Projects/the/packages/const-ui/lib"
     },
     "order": 10
+  },
+  {
+    "id": "module:@the-/const-ui.VendorColors",
+    "longname": "module:@the-/const-ui.VendorColors",
+    "name": "VendorColors",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Vendor Colors",
+    "memberof": "module:@the-/const-ui",
+    "type": {
+      "names": [
+        "string"
+      ]
+    },
+    "meta": {
+      "lineno": 1,
+      "filename": "VendorColors.js",
+      "path": "/Users/okuni/Projects/the/packages/const-ui/lib"
+    },
+    "order": 12
   }
 ]

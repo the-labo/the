@@ -1,9 +1,9 @@
 /**
  * Read as json
- * @memberOf module:@the-/util-file
+ * @memberof module:@the-/util-file
  * @function readAsJson
  * @param {string} filename
- * @return {Promise.<Object>}
+ * @returns {Promise.<Object>}
  */
 'use strict'
 

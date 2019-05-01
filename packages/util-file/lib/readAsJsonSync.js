@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/util-file
+ * @memberof module:@the-/util-file
  * @function readAsJsonSync
  * @param {string} filename
  * @returns {Object}

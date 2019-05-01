@@ -3,12 +3,12 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir({
-  cjs: true,
   annotations: {
     description: 'Constant variables',
     memberOf: 'module:@the-/ast',
     namespace: 'constants',
   },
+  cjs: true,
   dirname: __dirname,
 })
 

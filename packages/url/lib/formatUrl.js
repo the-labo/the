@@ -1,6 +1,6 @@
 /**
  * Format urls
- * @memberOf module:@the-/url
+ * @memberof module:@the-/url
  * @function formatUrl
  * @param {string} urlString - URL format string
  * @param {Object} [params={}] - Params to inject

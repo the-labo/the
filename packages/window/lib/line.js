@@ -1,6 +1,6 @@
 /**
  * Handle toggle online/offline
- * @memberOf module:@the-/window
+ * @memberof module:@the-/window
  * @function line
  * @param {function} handler - Event handler
  * @param {Object} [options={}] - Optional settings

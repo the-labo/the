@@ -4,20 +4,12 @@
  */
 'use strict'
 
-const sortAnnotationsOnCommentNode = require('../lib/ast/nodes/sortAnnotationsOnCommentNode')
-
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('sort-annotations-on-comment-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-    
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

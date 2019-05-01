@@ -3,12 +3,12 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir({
-  cjs: true,
   annotations: {
-    memberOf: 'module:@the-/server',
     description: 'Assert functions',
+    memberOf: 'module:@the-/server',
     namespace: 'assert',
   },
+  cjs: true,
   dirname: __dirname,
 })
 

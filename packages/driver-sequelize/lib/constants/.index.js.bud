@@ -3,13 +3,13 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir({
+  annotations: {
+    descriptions: 'constant variables',
+    memberOf: 'module:@the-/driver-sequelize',
+    namespace: 'constants',
+  },
   cjs: true,
   dirname: __dirname,
-  annotations: {
-    memberOf: 'module:@the-/driver-sequelize',
-    descriptions: 'constant variables',
-    namespace: 'constants'
-  },
 })
 
 if (!module.parent) {

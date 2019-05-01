@@ -88,17 +88,19 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
+### namespace
+- [.helpers](./doc/api/api.md#module_@the-/file.helpers)
 ### function
-- [copyAsJsonSync(src,dest)](./doc/api/api.md#copyAsJsonSync)
-- [delSync(filename)](./doc/api/api.md#delSync)
-- [fileTypeOf(filename)](./doc/api/api.md#fileTypeOf)
-- [isJSON5File(filename)](./doc/api/api.md#isJSON5File)
-- [readAsJson(filename)](./doc/api/api.md#readAsJson)
-- [readAsJsonSync(filename)](./doc/api/api.md#readAsJsonSync)
-- [statSync(filename)](./doc/api/api.md#statSync)
-- [writeAsJsonSync(filename,data)](./doc/api/api.md#writeAsJsonSync)
-- [writeAsJsonSync(filename,data)](./doc/api/api.md#writeAsJsonSync)
-- [sortProperties()](./doc/api/api.md#sortProperties)
+- [.copyAsJsonSync(src,dest)](./doc/api/api.md#module_@the-/util-file.copyAsJsonSync)
+- [.delSync(filename)](./doc/api/api.md#module.module_@the-/util-file.delSync)
+- [.fileTypeOf(filename)](./doc/api/api.md#module_@the-/util-file.fileTypeOf)
+- [.isJSON5File(filename)](./doc/api/api.md#module_@the-/util-file.isJSON5File)
+- [.readAsJson(filename)](./doc/api/api.md#module_@the-/util-file.readAsJson)
+- [.readAsJsonSync(filename)](./doc/api/api.md#module_@the-/util-file.readAsJsonSync)
+- [.statSync(filename)](./doc/api/api.md#module_@the-/util-file.statSync)
+- [.writeAsJsonSync(filename,data)](./doc/api/api.md#module_@the-/util-file.writeAsJsonSync)
+- [.writeAsJsonSync(filename,data)](./doc/api/api.md#module_@the-/util-file.writeAsJsonSync)
+- [.sortProperties()](./doc/api/api.md#module_@the-/util-file.helpers.sortProperties)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

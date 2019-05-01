@@ -1,6 +1,6 @@
 /**
  * Sort object properties
- * @memberOf module:@the-/util-file.helpers
+ * @memberof module:@the-/util-file.helpers
  * @protected
  * @function sortProperties
  */

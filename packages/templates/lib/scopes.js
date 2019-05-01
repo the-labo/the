@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/templates
+ * @memberof module:@the-/templates
  * @function scopes
  */
 'use strict'
@@ -24,7 +24,7 @@ const compareByLength = (a, b) => a.length - b.length
 
 /** @lends module:@the-/templates.scopes */
 function scopes(config) {
-  const { dirname, pattern = '**/*.json', ...rest } = config
+  const { dirname, memberof = 'store', pattern = '**/*.json', ...rest } = config
   handleRestConfig(rest)
   const filenames = aglob.sync(pattern, { cwd: dirname })
   const modules = Object.assign(
@@ -52,6 +52,7 @@ function scopes(config) {
   }
   return {
     data: {
+      memberof,
       modules: Object.keys(modules)
         .sort((a, b) => a.localeCompare(b))
         .map((k) => ({

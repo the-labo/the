@@ -1,17 +1,17 @@
 'use strict'
 
+const path = require('path')
 const { dir } = require('@the-/templates')
 const pkg = require('../../package')
-const path = require('path')
 
 module.exports = dir({
-  cjs: true,
   annotations: {
-    namespace: path.basename(__dirname),
-    memberOf: `module:${pkg.name}`,
     access: 'protected',
     description: 'Parsing functions',
+    memberOf: `module:${pkg.name}`,
+    namespace: path.basename(__dirname),
   },
+  cjs: true,
   dirname: __dirname,
 })
 

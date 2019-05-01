@@ -4,16 +4,14 @@
  */
 'use strict'
 
-const TheRouteStyle = require('../shim/TheRouteStyle').default
+const { ok } = require('assert').strict
 const React = require('react')
-const { ok, equal, deepEqual } = require('assert').strict
+const TheRouteStyle = require('../shim/TheRouteStyle').default
 
 describe('the-route-style', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(React.createElement(TheRouteStyle))

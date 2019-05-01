@@ -1,8 +1,8 @@
 /**
  * Provide seat access functions
  * @function seatAccess
- * @returns {Object}
  * @deprecated Use `the-seat/handy/seatAccess` instead
+ * @returns {Object}
  */
 'use strict'
 

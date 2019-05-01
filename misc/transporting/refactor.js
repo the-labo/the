@@ -4,7 +4,7 @@
 const aglob = require('aglob')
 const { spawnSync } = require('child_process')
 const path = require('path')
-const { TheRefactor } = require('the-refactor')
+const { TheRefactor } = require('@the-/refactor')
 const transporting = require('./transporting')
 const baseDir = `${__dirname}/../..`
 process.chdir(baseDir)

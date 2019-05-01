@@ -4,8 +4,8 @@
  */
 'use strict'
 
-const processJSDoc = require('../lib/processors/processJSDoc')
 const { equal } = require('assert').strict
+const processJSDoc = require('../lib/processors/processJSDoc')
 
 describe('process-js-doc', () => {
   before(() => {})

@@ -21,7 +21,7 @@
 ## @the-/const-ui
 Constants for the-components
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 **License**: MIT  
 
 * [@the-/const-ui](#module_@the-/const-ui)
@@ -35,6 +35,7 @@ Constants for the-components
         * [.touchEvents](#module_@the-/const-ui.SupportedProps.touchEvents)
         * [.uiEvents](#module_@the-/const-ui.SupportedProps.uiEvents)
     * [.ThemeValues](#module_@the-/const-ui.ThemeValues) : <code>object</code>
+    * [.VendorColors](#module_@the-/const-ui.VendorColors) : <code>object</code>
 
 <a name="module_@the-/const-ui.SupportedProps"></a>
 
@@ -113,6 +114,12 @@ UI Events
 
 ### constUi.ThemeValues : <code>object</code>
 Style theme values
+
+**Kind**: static namespace of [<code>@the-/const-ui</code>](#module_@the-/const-ui)  
+<a name="module_@the-/const-ui.VendorColors"></a>
+
+### constUi.VendorColors : <code>object</code>
+Vendor Colors
 
 **Kind**: static namespace of [<code>@the-/const-ui</code>](#module_@the-/const-ui)  
 <a name="containerWidth"></a>

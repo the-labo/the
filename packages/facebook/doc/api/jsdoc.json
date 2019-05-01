@@ -1,0 +1,92 @@
+[
+  {
+    "id": "module:default",
+    "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/facebook/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "module:@the-/facebook",
+    "longname": "module:@the-/facebook",
+    "name": "@the-/facebook",
+    "kind": "module",
+    "description": "Facebook utility for the-framework",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "facebook",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/facebook/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "TheFacebook",
+    "longname": "TheFacebook",
+    "name": "TheFacebook",
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheFacebook.js",
+      "path": "/Users/okuni/Projects/the/packages/facebook/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "Constants",
+    "longname": "Constants",
+    "name": "Constants",
+    "kind": "namespace",
+    "scope": "global",
+    "description": "Constant variables",
+    "meta": {
+      "lineno": 1,
+      "filename": "Constants.js",
+      "path": "/Users/okuni/Projects/the/packages/facebook/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "create",
+    "longname": "create",
+    "name": "create",
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheFacebook instance",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheFacebook"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/facebook/lib"
+    },
+    "order": 1
+  }
+]

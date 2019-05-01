@@ -1,6 +1,6 @@
 /**
  * Make object keys to lower
- * @memberOf module:@the-/util-db
+ * @memberof module:@the-/util-db
  * @function toLowerKeys
  * @param {Object} obj
  * @returns {Object}

@@ -3,13 +3,13 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir({
-  cjs: true,
   annotations: {
-    namespace: 'scopes',
-    memberOf: 'module:@the-/scope',
     access: 'protected',
     description: 'Scope classes',
+    memberOf: 'module:@the-/scope',
+    namespace: 'scopes',
   },
+  cjs: true,
   dirname: __dirname,
 })
 

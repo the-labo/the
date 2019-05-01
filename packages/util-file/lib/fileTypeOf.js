@@ -1,6 +1,6 @@
 /**
  * Get file type of file
- * @memberOf module:@the-/util-file
+ * @memberof module:@the-/util-file
  * @function fileTypeOf
  * @param {string} filename
  * @returns {Object}

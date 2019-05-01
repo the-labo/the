@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/tmp
+ * @memberof module:@the-/tmp
  * @class TheTmp
  */
 'use strict'

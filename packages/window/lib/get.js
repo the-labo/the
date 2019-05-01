@@ -1,6 +1,6 @@
 /**
  * Get global values
- * @memberOf module:@the-/window
+ * @memberof module:@the-/window
  * @function get
  * @param {string} name - Name to get
  * @returns {*}

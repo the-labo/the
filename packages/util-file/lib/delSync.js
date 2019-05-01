@@ -1,5 +1,5 @@
 /**
- * @memberOf module.module:@the-/util-file
+ * @memberof module.module:@the-/util-file
  * @function delSync
  * @param {string} filename
  */

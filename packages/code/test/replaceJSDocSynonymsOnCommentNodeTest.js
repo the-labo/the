@@ -4,20 +4,12 @@
  */
 'use strict'
 
-const replaceJSDocSynonymsOnCommentNode = require('../lib/ast/nodes/replaceJSDocSynonymsOnCommentNode')
-
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('replace-js-doc-synonyms-on-comment-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-    
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

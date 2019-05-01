@@ -1,6 +1,6 @@
 /**
  * Get color with text
- * @memberOf module:@the-/util-color
+ * @memberof module:@the-/util-color
  * @function colorWithText
  * @param {string} text - Text
  * @param {Object} [options={}] - Optional settings

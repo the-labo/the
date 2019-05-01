@@ -1,6 +1,6 @@
 /**
  * Get color with alpha
- * @memberOf module:@the-/util-color
+ * @memberof module:@the-/util-color
  * @function colorWithAlpha
  * @param {string} color
  * @param {number} alpha

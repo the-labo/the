@@ -3,12 +3,12 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir({
-  cjs: true,
   annotations: {
     description: 'Buildin resources',
-    namespace: 'resources',
     memberOf: 'module:@the-/db',
+    namespace: 'resources',
   },
+  cjs: true,
   dirname: __dirname,
 })
 

@@ -4,16 +4,14 @@
  */
 'use strict'
 
-const TheRouter = require('../shim/TheRouter').default
+const { ok } = require('assert').strict
 const React = require('react')
-const { ok, equal, deepEqual } = require('assert').strict
+const TheRouter = require('../shim/TheRouter').default
 
 describe('the-router', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
     ok(React.createElement(TheRouter))

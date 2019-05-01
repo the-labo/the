@@ -1,6 +1,6 @@
 /**
  * Set global values
- * @memberOf module:@the-/window
+ * @memberof module:@the-/window
  * @function set
  * @param {string} name - Name to set
  * @param {*} value - Value to set

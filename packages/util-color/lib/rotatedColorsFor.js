@@ -1,6 +1,6 @@
 /**
  * Get rotated colors for color
- * @memberOf module:@the-/util-color
+ * @memberof module:@the-/util-color
  * @function rotatedColorsFor
  * @param {string} [base='#38E'] - Base color
  * @param {Object} [options={}] - Optional settings

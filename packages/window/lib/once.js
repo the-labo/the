@@ -1,6 +1,6 @@
 /**
  * Handle event once on document
- * @memberOf module:@the-/window
+ * @memberof module:@the-/window
  * @function once
  * @param {string} event - Name of event
  * @param {function} handler - Event handler

@@ -1,6 +1,6 @@
 /**
  * Define bud for dir
- * @memberOf module:@the-/templates
+ * @memberof module:@the-/templates
  * @function dir
  * @param {Object} config
  * @returns {Object}
@@ -23,10 +23,10 @@ const shouldRequire = (name) => {
   )
 }
 
-const handleRestConfig = (rest) => {
+const handleRestConfig = (rest, at) => {
   const restKeys = Object.keys(rest)
   if (restKeys.length > 0) {
-    console.warn(`[@the-/templates][dir] Unknown configs: ${restKeys}`)
+    console.warn(`[@the-/templates][dir] Unknown configs: ${restKeys} at ${at}`)
   }
 }
 

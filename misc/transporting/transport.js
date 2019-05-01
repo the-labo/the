@@ -102,19 +102,19 @@ const _rewritePkg = async (baseDir, converter) => {
 }
 
 const _removeDevDeps = async (baseDir, names) => {
-    const pkg = JSON.parse(await readFile(path.resolve(baseDir, 'package.json')))
-    for (const name of names) {
-      const has = name in (pkg.devDependencies || {})
-      if (has) {
-        spawnSync('npm', ['un', '-D', name], { cwd: baseDir, stdio: 'inherit' })
-      }
+  const pkg = JSON.parse(await readFile(path.resolve(baseDir, 'package.json')))
+  for (const name of names) {
+    const has = name in (pkg.devDependencies || {})
+    if (has) {
+      spawnSync('npm', ['un', '-D', name], { cwd: baseDir, stdio: 'inherit' })
     }
   }
+}
 
 ;(async () => {
-  for (const [fromPkgName, { kind, name }] of Object.entries(transporting)
-    .sort((a, b) => a[1].name.localeCompare(b[1].name))
-    ) {
+  for (const [fromPkgName, { kind, name }] of Object.entries(transporting).sort(
+    (a, b) => a[1].name.localeCompare(b[1].name),
+  )) {
     console.log(`== ${fromPkgName} => ${name} ===`)
     const fromDir = path.resolve(baseDir, '..', fromPkgName)
     const toDir = path.resolve(baseDir, 'packages', name)
@@ -127,9 +127,6 @@ const _removeDevDeps = async (baseDir, names) => {
     const toPkgFile = path.resolve(toDir, 'package.json')
     const toPkg = JSON.parse(await readFile(toPkgFile))
     if (hasFrom) {
-
-
-
       const fromPkgFile = path.resolve(fromDir, 'package.json')
       // example
       {
@@ -147,11 +144,9 @@ const _removeDevDeps = async (baseDir, names) => {
           [`from '${fromPkgName}'`]: [`from '@the-/${name}'`],
         })
       }
-
     } else {
       console.warn(`"${fromPkgName}" is not found in local`)
     }
-
 
     await _unlinkFiles(toDir, [
       'ci/release.js',
@@ -176,7 +171,6 @@ const _removeDevDeps = async (baseDir, names) => {
           demoComponentDir,
           'package.json',
         ))
-
 
         await _copyFiles(demoComponentDir, toDir, [
           '.README.md.bud',

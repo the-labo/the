@@ -1,6 +1,6 @@
 /**
  * Mark  : style data
- * @memberOf module:util-component
+ * @memberof module:util-component
  * @function asStyleData
  * @param {string} scopeSelector - Selector which wraps data
  * @param {Object} data - Style data

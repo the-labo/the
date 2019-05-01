@@ -3,7 +3,7 @@
  * @function isKeyCode
  * @param {number} code - Key code to check
  * @param {string|number} name - Name of key code to compare
- * @return {boolean}
+ * @returns {boolean}
  */
 'use strict'
 

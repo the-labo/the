@@ -3,12 +3,12 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir({
-  cjs: true,
-  annotations:{
-  description: 'Adapter functions',
-  namespace: 'adapters',
-    memberOf:'module:@the-/server'
+  annotations: {
+    description: 'Adapter functions',
+    memberOf: 'module:@the-/server',
+    namespace: 'adapters',
   },
+  cjs: true,
   dirname: __dirname,
 })
 

@@ -3,13 +3,13 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir({
-  cjs: true,
   annotations: {
-    namespace: 'helpers',
-    memberOf: 'module:@the-/stream',
     access: 'protected',
     description: 'Helper functions',
+    memberOf: 'module:@the-/stream',
+    namespace: 'helpers',
   },
+  cjs: true,
   dirname: __dirname,
 })
 

@@ -3,13 +3,13 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir({
+  annotations: {
+    description: 'Constant variables',
+    memberOf: 'module:@the-/server',
+    namespace: 'constants',
+  },
   cjs: true,
   dirname: __dirname,
-  annotations: {
-    memberOf: 'module:@the-/server',
-    description: 'Constant variables',
-    namespace: 'constants',
-  }
 })
 
 if (!module.parent) {

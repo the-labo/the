@@ -3,13 +3,13 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir({
-  cjs: true,
   annotations: {
-    namespace: 'sending',
-    memberOf: 'module:@the-/mail',
     access: 'protected',
     description: 'Sending functions',
+    memberOf: 'module:@the-/mail',
+    namespace: 'sending',
   },
+  cjs: true,
   dirname: __dirname,
 })
 

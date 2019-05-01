@@ -1,18 +1,18 @@
-"use strict";
+'use strict'
 
-const { dir } = require("@the-/templates");
+const { dir } = require('@the-/templates')
 
 module.exports = dir({
-  cjs: true,
   annotations: {
-    namespace: "parsers",
-    memberOf: "module:@the-/code",
-    access: "protected",
-    description: "Parser functions"
+    access: 'protected',
+    description: 'Parser functions',
+    memberOf: 'module:@the-/code',
+    namespace: 'parsers',
   },
-  dirname: __dirname
-});
+  cjs: true,
+  dirname: __dirname,
+})
 
 if (!module.parent) {
-  require("coz").render(__filename);
+  require('coz').render(__filename)
 }

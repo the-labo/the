@@ -1,8 +1,8 @@
 /**
  * Eval script
- * @memberOf module:@the-/util-db
+ * @memberof module:@the-/util-db
  * @function evalScript
- * @return {*}
+ * @returns {*}
  */
 'use strict'
 

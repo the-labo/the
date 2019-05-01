@@ -5,7 +5,7 @@
     "name": "@the-/hash",
     "kind": "module",
     "description": "Hash object to hold key-value pairs",
-    "version": "15.4.2",
+    "version": "15.4.3",
     "license": "MIT",
     "typicalname": "hash",
     "meta": {
@@ -13,7 +13,7 @@
       "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/hash/lib"
     },
-    "order": 2
+    "order": 1
   },
   {
     "id": "module:@the-/hash.TheHash()",
@@ -31,30 +31,7 @@
         "name": "props"
       }
     ],
-    "order": 5
-  },
-  {
-    "id": "default",
-    "longname": "default",
-    "name": "default",
-    "kind": "function",
-    "scope": "global",
-    "description": "Alias of {@link module:@the-/hash.create}",
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "module:@the-/hash.TheHash"
-          ]
-        }
-      }
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "default.js",
-      "path": "/Users/okuni/Projects/the/packages/hash/lib"
-    },
-    "order": 1
+    "order": 4
   },
   {
     "id": "module:@the-/hash.TheHash#get",
@@ -88,7 +65,7 @@
       "filename": "TheHash.js",
       "path": "/Users/okuni/Projects/the/packages/hash/lib"
     },
-    "order": 6
+    "order": 5
   },
   {
     "id": "module:@the-/hash.TheHash#has",
@@ -122,7 +99,7 @@
       "filename": "TheHash.js",
       "path": "/Users/okuni/Projects/the/packages/hash/lib"
     },
-    "order": 7
+    "order": 6
   },
   {
     "id": "module:@the-/hash.TheHash#set",
@@ -150,7 +127,7 @@
       "filename": "TheHash.js",
       "path": "/Users/okuni/Projects/the/packages/hash/lib"
     },
-    "order": 8
+    "order": 7
   },
   {
     "id": "module:@the-/hash.TheHash#toProxy",
@@ -179,7 +156,7 @@
       "filename": "TheHash.js",
       "path": "/Users/okuni/Projects/the/packages/hash/lib"
     },
-    "order": 9
+    "order": 8
   },
   {
     "id": "module:@the-/hash.TheHash",
@@ -193,7 +170,7 @@
       "filename": "TheHash.js",
       "path": "/Users/okuni/Projects/the/packages/hash/lib"
     },
-    "order": 4
+    "order": 3
   },
   {
     "id": "module:@the-/hash.create",
@@ -294,6 +271,6 @@
       "filename": "proxy.js",
       "path": "/Users/okuni/Projects/the/packages/hash/lib"
     },
-    "order": 3
+    "order": 2
   }
 ]

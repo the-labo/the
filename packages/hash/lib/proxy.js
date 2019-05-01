@@ -1,6 +1,6 @@
 /**
  * Create proxy for hash object
- * @memberOf module:@the-/hash
+ * @memberof module:@the-/hash
  * @function proxy
  * @param {Object} src - Source object
  * @param {Object} [options={}] - Optional settings
@@ -24,8 +24,10 @@ function proxy(src, options = {}) {
           !has &&
           !/^@@/.test(String(key)) &&
           !/^__/.test(String(key)) &&
+          !/^Symbol\(nodejs\./.test(String(key)) &&
           ![
             'default',
+            'Symbol(Symbol.iterator)',
             'Symbol(Symbol.toStringTag)',
             'then',
             'catch',

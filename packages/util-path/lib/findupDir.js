@@ -1,6 +1,6 @@
 /**
  * Find up directory contains path
- * @memberOf module:@the-/util-path
+ * @memberof module:@the-/util-path
  * @function findupDir
  * @param {string} basedir - Base directory
  */

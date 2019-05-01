@@ -1,6 +1,6 @@
 /**
  * Add query to url string
- * @memberOf module:@the-/url
+ * @memberof module:@the-/url
  * @function addQuery
  * @param {string} urlString - URL to add
  * @param {Object} query - Query to add

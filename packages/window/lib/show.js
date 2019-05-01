@@ -1,6 +1,6 @@
 /**
  * Show page
- * @memberOf module:@the-/window
+ * @memberof module:@the-/window
  * @function show
  * @param {string} url - URL to show
  * @returns {*}

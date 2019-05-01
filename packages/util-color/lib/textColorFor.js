@@ -1,6 +1,6 @@
 /**
  * Get text color for background color
- * @memberOf module:@the-/util-color
+ * @memberof module:@the-/util-color
  * @function textColorFor
  * @param {string} backgroundColor
  * @returns {string} Text color
