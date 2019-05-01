@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/scaffold
  * @function theScaffold
  * @param {string} type - Scaffold type
  * @param {string} dest - Destination directory path
@@ -21,7 +22,7 @@ const listTypes = require('./listTypes')
 const render = require('./render')
 const tmpls = require('./tmpls')
 
-/** @lends theScaffold */
+/** @lends module:@the-/scaffold.theScaffold */
 async function theScaffold(type, dest, options = {}) {
   const args = argx(arguments)
   type = args.shift('string')

@@ -38,7 +38,7 @@ class TheQueue {
 
   /**
    * Push next task
-   * @param {function} task - Task to execute
+   * @param {Function} task - Task to execute
    */
   push(task) {
     const isFull = this.length >= this.max
@@ -102,7 +102,7 @@ class TheQueue {
    * Wait until queue got empty
    * @param {Object} [options={}] - Optional settings
    * @param {number} [options.timeout=60*1000] - Timeout duration
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async wait(options = {}) {
     const { interval = 100, timeout = 60 * 1000 } = options

@@ -15,7 +15,7 @@ function isResourceClass(Class) {
     return true
   }
   let named = Class
-  while (!!named) {
+  while (named) {
     const hit = named.name && named.name.startsWith('TheResource')
     if (hit) {
       return true

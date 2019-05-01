@@ -22,7 +22,7 @@ module.exports = Object.freeze(
     /** Key of app store */
     STORE: 'app.store',
 
-    //hoger
+    // hoger
     a: 1,
 
     // -----------------------------------

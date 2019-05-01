@@ -65,8 +65,8 @@ class TheJitter {
 
   /**
    * Handle action
-   * @param {function} action
-   * @returns {Promise<void>}
+   * @param {Function} action
+   * @returns {Promise<undefined>}
    */
   async handle(action) {
     this.invalidate()

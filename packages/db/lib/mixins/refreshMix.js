@@ -100,7 +100,7 @@ function refreshMix(Class) {
      * Wait until refresh
      * @param {string} entityRef
      * @param {Object} [options={}] - Optional settings
-     * @returns {Promise<Boolean>} - Full filled
+     * @returns {Promise<boolean>} - Full filled
      */
     async waitToRefresh(entityRef, options = {}) {
       if (entityRef.$$entity) {

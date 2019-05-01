@@ -107,7 +107,7 @@ describe('the-server', function() {
       }
 
       async buy(name, amount) {
-        const { client, session } = this
+        const { session } = this
         let { total = 0 } = session
         session.total = total + amount
         // console.log('this.hoge', this.hoge())
@@ -301,6 +301,8 @@ describe('the-server', function() {
 
     {
       let { body, statusCode } = await arequest(`http://localhost:${port}`)
+      ok(body)
+      ok(statusCode)
     }
 
     await server.close()
@@ -348,6 +350,7 @@ describe('the-server', function() {
     }
 
     await asleep(2000)
+    ok(wasCalledControllerWillDetach)
     ok(wasCalledControllerDidAttatch)
 
     await server.close()

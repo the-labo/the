@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal } = require('assert')
+const { equal } = require('assert').strict
 const formatUrl = require('../lib/formatUrl')
 
 describe('format-url', () => {

@@ -29,7 +29,7 @@
     "jsdoc/require-example": "off",
     "jsdoc/require-hyphen-before-param-description": "error",
     "jsdoc/require-param": "off",
-    "jsdoc/require-param-description": "error",
+    "jsdoc/require-param-description": "off",
     "jsdoc/require-param-name": "error",
     "jsdoc/require-param-type": "error",
     "jsdoc/require-returns": "off",

@@ -55,7 +55,7 @@ class TheBin {
   /**
    * Execute bin file
    * @param {...*} args - Arguments to pass
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async exec(...args) {
     return new Promise((resolve, reject) => {

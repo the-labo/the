@@ -21,7 +21,7 @@ function asController(instance, spec, context, options = {}) {
       [name]: async function methodProxy(...args) {
         const result = await instance[name](context, ...args)
         return result
-      }.bind(this),
+      },
     })),
     {
       delCallback(...handlerNames) {

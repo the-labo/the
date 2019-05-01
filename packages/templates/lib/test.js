@@ -27,7 +27,7 @@ function test(config) {
     .sync(src)
     .filter((src) => path.basename(src) !== 'index.js')
     .filter((src) => path.basename(src) !== 'index.jsx')
-    .filter((src) => !/^[\._\-]/.test(path.basename(src)))
+    .filter((src) => !/^[._-]/.test(path.basename(src)))
     .filter((src) => {
       try {
         return !!require.resolve(src)

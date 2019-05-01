@@ -5,7 +5,7 @@
 'use strict'
 
 const asleep = require('asleep')
-const { deepEqual, equal, ok } = require('assert')
+const { deepEqual, equal, ok } = require('assert').strict
 const TheQueue = require('../lib/TheQueue')
 
 describe('the-queue', () => {

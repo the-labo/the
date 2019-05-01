@@ -1,5 +1,6 @@
 /**
  * Mixin for peer
+ * @memberOf module:@the-/rtc.constants.mixins
  * @function peerMix
  * @param {function} Class
  * @returns {function} Class
@@ -17,7 +18,7 @@ const RTCSessionDescription =
   get('RTCSessionDescription') || wrtc.RTCSessionDescription
 const RTCIceCandidate = get('RTCIceCandidate') || wrtc.RTCIceCandidate
 
-/** @lends peerMix */
+/** @lends module:@the-/rtc.constants.mixins.peerMix */
 function peerMix(Class) {
   class PeerMixed extends Class {
     constructor() {

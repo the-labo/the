@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal, ok } = require('assert')
+const { equal, ok } = require('assert').strict
 const { TheStore } = require('@the-/store')
 const NumberScope = require('../lib/scopes/NumberScope')
 

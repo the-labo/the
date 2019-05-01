@@ -11,7 +11,7 @@ const theSecret = require('./lib/create')
 /**
  * Encrypt all
  * @param {string|string[]} filenames - Filenames to encrypt
- * @param password
+ * @param {string} password - Encryption password
  * @returns {Promise<Array>}
  */
 exports.encryptAll = async function encryptAll(filenames, password) {
@@ -26,8 +26,8 @@ exports.encryptAll = async function encryptAll(filenames, password) {
 /**
  * Decrypt all
  * @param {string|string[]} filenames - Filenames to encrypt
- * @param password
- * @returns {Promise<Array>}
+ * @param {string} password
+ * @returns {Promise<Array>} - Encryption password
  */
 exports.decryptAll = async function decryptAll(filenames, password) {
   const results = []

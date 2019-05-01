@@ -70,6 +70,7 @@ class TheServer extends TheServerBase {
       streams: streamClasses = {},
       ...rest
     } = config
+    debug('config', config)
 
     unlessProduction(() => {
       const restKeys = Object.keys(rest)
@@ -194,7 +195,7 @@ class TheServer extends TheServerBase {
 
   /**
    * Close server
-   * @param args
+   * @param {...*} args - Close arguments
    * @returns {Promise<*>}
    */
   async close(...args) {
@@ -426,13 +427,9 @@ class TheServer extends TheServerBase {
   /**
    * Listen to port
    * @param {number} port - Port to listen
-   * @param [callback]
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
-  async listen(port, callback) {
-    if (callback) {
-      console.warn(`[TheServer] callback is now deprecated`)
-    }
+  async listen(port) {
     if (this.listenAt) {
       throw new Error(`[TheServer] Already listening`)
     }
@@ -447,7 +444,6 @@ class TheServer extends TheServerBase {
     await new Promise((resolve) => server.listen(port, () => resolve())).then(
       () => this,
     )
-    callback && callback()
   }
 }
 

@@ -19,7 +19,7 @@ class NumberScope extends Scope {
       /**
        * Decrement value
        * @function NumberScope#decrement
-       * @param {number} [amount=1]
+       * @param {number} [amount=1] - Amount to decrement
        */
       decrement(amount = 1) {
         return (state) => state - amount
@@ -27,7 +27,7 @@ class NumberScope extends Scope {
       /**
        * Increment value
        * @function NumberScope#increment
-       * @param {number} [amount=1]
+       * @param {number} [amount=1] - Amount to increment
        */
       increment(amount = 1) {
         return (state) => state + amount

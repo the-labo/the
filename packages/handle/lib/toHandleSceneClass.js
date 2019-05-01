@@ -16,7 +16,7 @@ function toHandleSceneClass(BaseClass, config = {}) {
   class HandleSceneClass extends BaseClass {
     /**
      * Load sub scenes
-     * @param {function} SceneClass - Scope class to load
+     * @param {Function} SceneClass - Scope class to load
      * @param {...string} names - Sub names
      */
     load(SceneClass, ...names) {

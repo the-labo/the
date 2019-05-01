@@ -22,7 +22,7 @@ class BooleanScope extends Scope {
       /**
        * Toggle value
        * @function BooleanScope#toggle
-       * @param {?Boolean} [value]
+       * @param {?boolean} [value]
        */
       toggle(value) {
         return (state) => (typeof value === 'undefined' ? !state : value)

@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal, ok } = require('assert')
+const { equal, ok } = require('assert').strict
 const ThePolyfill = require('../lib/ThePolyfill')
 
 describe('the-polyfill', () => {

@@ -39,7 +39,7 @@ const withLocation = asClassMixin((Class) => {
     },
     /**
      * Reload current location
-     * @returns {Promise<void>}
+     * @returns {Promise<undefined>}
      */
     async reloadLocation(options = {}) {
       const { timeout = 30 * 1000 } = options

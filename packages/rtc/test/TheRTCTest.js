@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const aport = require('aport')
+const aport = require('aport').strict
 const asleep = require('asleep')
 const { equal, ok } = require('assert')
 const socketIOClient = require('socket.io-client')

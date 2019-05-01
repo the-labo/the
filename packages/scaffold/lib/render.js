@@ -1,4 +1,5 @@
 /**
+ * @memberOf module:@the-/scaffold
  * @function render
  */
 'use strict'
@@ -8,7 +9,7 @@ const tmplconv = require('tmplconv')
 const prefix = '~~~~'
 const suffix = '~~~~'
 
-/** @lends render */
+/** @lends module:@the-/scaffold.render */
 async function render(tmpl, dest, config, options = {}) {
   return tmplconv.render(tmpl, dest, {
     clean: false,

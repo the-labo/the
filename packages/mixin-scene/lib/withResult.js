@@ -15,7 +15,7 @@ const withResult = asClassMixin((Class) => {
   injectProperties(Class, {
     /**
      * Do action and store result
-     * @param {function} action
+     * @param {Function} action
      * @returns {Promise<*>} - Action result
      */
     async resultFor(action) {

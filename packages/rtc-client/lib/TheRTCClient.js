@@ -50,7 +50,7 @@ class TheRTCClient extends TheRTCClientBase {
 
   /**
    * Audio enabled or not
-   * @returns {Boolean}
+   * @returns {boolean}
    */
   get audioEnabled() {
     return this.media.audioEnabled
@@ -89,7 +89,7 @@ class TheRTCClient extends TheRTCClientBase {
 
   /**
    * Video enabled
-   * @returns {Boolean}
+   * @returns {boolean}
    */
   get videoEnabled() {
     return this.media.videoEnabled
@@ -143,9 +143,9 @@ class TheRTCClient extends TheRTCClientBase {
 
   /**
    * Connect to server
-   * @param {string} url Server url
+   * @param {string} url - Server url
    * @param {Object} [options] - Optional settings
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async connect(url, options) {
     // Parse arguments
@@ -190,7 +190,7 @@ class TheRTCClient extends TheRTCClientBase {
 
   /**
    * Disconnect from signaling server
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async disconnect() {
     if (this.room) {
@@ -303,7 +303,7 @@ class TheRTCClient extends TheRTCClientBase {
    * @param {string} topic - Topic name
    * @param {Object} payload - Payload data
    * @param {Object} options
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async publish(topic, payload, options = {}) {
     const { purpose = PeerPurposes.DEFAULT } = options
@@ -334,7 +334,6 @@ class TheRTCClient extends TheRTCClientBase {
       await this.setPeerICECandidate(pid, ice)
     } catch (e) {
       console.warn(`[TheRTCClient] ${e.message}`, ice)
-      return
     }
   }
 

@@ -1,5 +1,6 @@
 /**
  * Build project
+ * @memberOf module:@the-/script-build
  * @function build
  * @param {string} [dirname=process.cwd()] - Project directory name
  * @param {Object} [options={}] - Optional settings
@@ -19,7 +20,7 @@ const buildDemo = require('./builders/buildDemo')
 const buildESM = require('./builders/buildESM')
 const buildShim = require('./builders/buildShim')
 
-/** @lends build */
+/** @lends module:@the-/script-build.build */
 async function build(dirname = process.cwd(), options = {}) {
   const args = argx(arguments)
   options = args.pop('object') || {}

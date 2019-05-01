@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal, ok } = require('assert')
+const { equal, ok } = require('assert').strict
 const { ReadableStream, WritableStream } = require('../lib/helpers/webStreams')
 
 describe('web-streams', () => {
@@ -47,11 +47,8 @@ describe('web-streams', () => {
   })
 
   it('WritableStream test', async () => {
-    let writableController
     const stream = new WritableStream({
-      start: (controller) => {
-        writableController = controller
-      },
+      start: (controller) => {},
       write: (chunk) => {
         console.log('on write', chunk)
       },

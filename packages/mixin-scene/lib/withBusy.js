@@ -17,7 +17,7 @@ const withBusy = asClassMixin((Class) => {
     /**
      * Wait busy for
      * @param {number} duration
-     * @returns {Promise<void>}
+     * @returns {Promise<undefined>}
      */
     async busyFor(duration = 0) {
       this.set({ busy: true })
@@ -26,8 +26,8 @@ const withBusy = asClassMixin((Class) => {
     },
     /**
      * Set busy true while task active
-     * @param {function} task
-     * @returns {Promise<void>}
+     * @param {Function} task
+     * @returns {Promise<undefined>}
      */
     async busyWhile(task) {
       this.set({ busy: true })
@@ -46,7 +46,7 @@ const withBusy = asClassMixin((Class) => {
     },
     /**
      * Wait while busy
-     * @returns {Promise<void>}
+     * @returns {Promise<undefined>}
      */
     async waitWhileBusy() {
       await asleep(1)

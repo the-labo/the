@@ -87,7 +87,7 @@ class TheStream {
 
   /**
    * Pull next chunk
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async pull() {
     this.assertNotClosed()
@@ -98,8 +98,8 @@ class TheStream {
 
   /**
    * Push chunk
-   * @param chunks
-   * @returns {Promise<void>}
+   * @param {...*} chunks - Chunk data to push
+   * @returns {Promise<undefined>}
    */
   async push(...chunks) {
     this.assertNotClosed()
@@ -118,7 +118,7 @@ class TheStream {
 
   /**
    * Finish pushing
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async pushEnd() {
     this.assertNotClosed()

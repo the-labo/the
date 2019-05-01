@@ -19,7 +19,7 @@ class ArrayScope extends Scope {
       /**
        * Concat values
        * @function ArrayScope#concat
-       * @param {*} values
+       * @param {*} values - Valeus to concat
        */
       concat(...values) {
         return (state) => [].concat(state).concat(values)
@@ -45,15 +45,15 @@ class ArrayScope extends Scope {
       /**
        * Reset state with values
        * @function ArrayScope#reset
-       * @param {Array} values
+       * @param {Array} values - Values to override
        */
       reset(values) {
         return () => [...values]
       },
       /**
        * Set entry at index
-       * @param {number} index
-       * @param {*} entry
+       * @param {number} index - Array index
+       * @param {*} entry - Value to set
        */
       set(index, entry) {
         const args = [...arguments]
@@ -74,7 +74,7 @@ class ArrayScope extends Scope {
       /**
        * Unshift entry
        * @function ArrayScope#unshift
-       * @param {*} entry
+       * @param {*} entry - Value to unshift
        */
       unshift(entry) {
         return (state) => [entry, ...state]

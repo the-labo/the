@@ -21,7 +21,7 @@ class TheRefresher extends EventEmitter {
 
   /**
    * Check the refresh has the target
-   * @param target
+   * @param {string} target
    * @returns {boolean}
    */
   has(target) {

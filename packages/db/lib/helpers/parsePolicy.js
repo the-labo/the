@@ -23,7 +23,7 @@ function parsePolicy(policy) {
     parsed[name] = {
       default: () => null,
       ...(values || {}),
-      type: typeGroups ? typeGroups : type,
+      type: typeGroups || type,
     }
   }
   return parsed

@@ -6,10 +6,10 @@
  */
 'use strict'
 
-/** @lends foo*/
+/** @lends foo */
 async function foo() {}
 
-/** This is hoge*/
+/** This is hoge */
 class Hoge {
   /** @param {string} msg */
   say(msg) {}

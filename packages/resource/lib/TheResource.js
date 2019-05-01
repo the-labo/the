@@ -29,8 +29,11 @@ const TheResourceBase = [listenMix, queueMix].reduce(
 class TheResource extends TheResourceBase {
   /**
    * Cascade destroy condition
-   * @example get cascaded () {
-   *   return { User: (ref) => ({user: {$ref: ref}}) }
+   * @example
+   * class MyResource extends TheResource
+   *   get cascaded () {
+   *     return { User: (ref) => ({user: {$ref: ref}}) }
+   *   }
    * }
    */
   static get cascaded() {
@@ -89,7 +92,7 @@ class TheResource extends TheResourceBase {
   /**
    * Refresh clay entity
    * @param {Entity} entity
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async refresh(entity) {
     if (!entity) {
@@ -116,7 +119,7 @@ class TheResource extends TheResourceBase {
 
   /**
    * Refresh all
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async refreshAll() {
     await this.each(async (v) => {
@@ -126,7 +129,7 @@ class TheResource extends TheResourceBase {
 
   /**
    * Resave all
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async resaveAll() {
     await this.each(async (entity) => {

@@ -1,5 +1,6 @@
 /**
  * Mixin for socket
+ * @memberOf module:@the-/rtc.constants.mixins
  * @function socketMix
  * @param {function} Class
  * @returns {function} Class
@@ -13,7 +14,7 @@ const { resolve: resolveUrl } = require('url')
 const debug = require('debug')('the:rtc:client')
 const NAMESPACE = '/rtc'
 
-/** @lends socketMix */
+/** @lends module:@the-/rtc.constants.mixins.socketMix */
 function socketMix(Class) {
   class SocketMixed extends Class {
     constructor() {
@@ -33,6 +34,7 @@ function socketMix(Class) {
         forceNew,
         path,
       })
+      debug('url', url)
       return socket
     }
 

@@ -52,7 +52,7 @@ class TheGeo {
 
   /**
    * Watch position change
-   * @param {function} callback
+   * @param {Function} callback
    * @param {Object} [options] - Optional settings
    */
   watch(callback, options = {}) {

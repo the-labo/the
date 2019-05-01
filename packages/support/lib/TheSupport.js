@@ -81,7 +81,6 @@ class TheSupport {
       return results
     }
     for (const filename of filenames) {
-      const code = await readFileAsync(filename)
       await TheSupport.checkECMASupport(filename, ecmaVersion)
       results[filename] = { ok: true }
     }

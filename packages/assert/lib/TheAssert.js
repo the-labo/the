@@ -57,7 +57,7 @@ class TheAssert {
   /**
    * Assert that the condition is truethy
    * @param {*} condition
-   * @param {String} [message]
+   * @param {string} [message]
    * @throws Error
    */
   ok(condition, message = 'assert failed') {

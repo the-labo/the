@@ -46,9 +46,9 @@ class TheRefactor {
   /**
    * Process with convert function
    * @param {string} pattern - Filename pattern
-   * @param {function} converter
+   * @param {Function} converter
    * @param {Object} [options={}]
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async convert(pattern, converter, options = {}) {
     const { cwd, ignore } = options
@@ -66,9 +66,9 @@ class TheRefactor {
   /**
    * Rename files
    * @param {string} pattern - Source file name patterns
-   * @param {function} convert - Converter
+   * @param {Function} convert - Converter
    * @param {Object} [options={}] - Optional settings
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async rename(pattern, convert, options = {}) {
     const { cwd, ignore } = options
@@ -99,7 +99,7 @@ class TheRefactor {
    * Rename directory
    * @param {string} src - Directory rename from
    * @param {string} dest - Directory rename to
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async renameDir(src, dest) {
     const srcExists = !!(await statAsync(src).catch(() => null))
@@ -125,9 +125,9 @@ class TheRefactor {
   /**
    * Rewrite file content
    * @param {string|string[]} pattern - Filename pattern
-   * @param {object} rules - Replace rules
+   * @param {Object} rules - Replace rules
    * @param {Object} [options={}] - Optional settings
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async rewrite(pattern, rules, options = {}) {
     const { cwd, ignore, max = 100 } = options
@@ -151,7 +151,7 @@ class TheRefactor {
    * Scatter a file to directories
    * @param {string} src
    * @param {string[]} dirnames
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async scatter(src, dirnames) {
     for (const dirname of [].concat(dirnames)) {
@@ -159,7 +159,7 @@ class TheRefactor {
       const result = await filecopy(src, dest, {
         mkdirp: true,
       })
-      for (const [filename, done] of Object.entries(result)) {
+      for (const [, done] of Object.entries(result)) {
         if (done) {
           console.log(
             `[the-refactor] Directory scatter: "${_relativePath(

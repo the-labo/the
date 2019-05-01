@@ -29,8 +29,8 @@ class StringScope extends Scope {
       /**
        * Replace string
        * @function StringScope#replace
-       * @param {string|RegExp} from
-       * @param {string} to
+       * @param {string|RegExp} from - Value replace from
+       * @param {string} to - Value replace to
        */
       replace(from, to) {
         return (state) => String(state).replace(from, to)

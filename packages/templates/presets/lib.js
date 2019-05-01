@@ -45,7 +45,7 @@ exports.Index = (dirname) => {
       description: pkg.description,
       typicalname: camelcase(pkg.name.split('/').pop()),
       license: pkg.license,
-    }
+    },
   })
 }
 

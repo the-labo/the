@@ -32,7 +32,8 @@ class TheSeed {
 
   /**
    * Generate data with seed
-   * @param {Object} seed
+   * @param {Object} seed - Seed data
+   * @returns {Object[]}
    */
   apply(seed) {
     return this.explode(seed, 1).shift()

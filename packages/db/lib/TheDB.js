@@ -143,7 +143,7 @@ class TheDB extends TheDBBase {
 
   /**
    * Register resource form Resource Class
-   * @param {function} ResourceClass - Resource class to register
+   * @param {Function} ResourceClass - Resource class to register
    * @param {string} resourceName - Name of resource
    * @returns {ClayResource} Loaded resource class
    */
@@ -269,7 +269,7 @@ class TheDB extends TheDBBase {
 
   /**
    * Load resources from mapping object
-   * @param {Object.<string, function>} ResourceMapping - Resource name and class
+   * @param {Object<string, Function>} ResourceMapping - Resource name and class
    */
   loadFromMapping(ResourceMapping) {
     for (const [as, Resource] of Object.entries(ResourceMapping)) {
@@ -335,7 +335,7 @@ class TheDB extends TheDBBase {
 
   /**
    * Drop database
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async drop() {
     const { driver, resources } = this
@@ -366,7 +366,7 @@ class TheDB extends TheDBBase {
   /**
    * Invalidate entity
    * @param {string} entityRef
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async invalidate(entityRef) {
     if (Array.isArray(entityRef)) {
@@ -395,7 +395,7 @@ class TheDB extends TheDBBase {
 
   /**
    * Create transaction
-   * @param {?function} callback
+   * @param {?Function} callback
    * @returns {Promise<*>}
    */
   async transaction(callback) {

@@ -14,7 +14,7 @@ function toStoreScopeClass(BaseClass, config = {}) {
   class StoreScopeClass extends BaseClass {
     /**
      * Load sub scopes
-     * @param {function} ScopeClass - Scope class to load
+     * @param {Function} ScopeClass - Scope class to load
      * @param {...string} names - Sub names
      */
     load(ScopeClass, ...names) {
@@ -23,7 +23,7 @@ function toStoreScopeClass(BaseClass, config = {}) {
 
     /**
      * Load sub scopes from scope class mapping
-     * @param {Object.<string, function>} mapping - Scope classes
+     * @param {Object<string, Function>} mapping - Scope classes
      * @returns {Object} Loaded scopes
      */
     loadFromMapping(mapping) {

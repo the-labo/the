@@ -49,7 +49,7 @@ class TheLint {
   /**
    * Add checker
    * @param {string} pattern - Target filename patter
-   * @param {function} checker - Lint checker
+   * @param {Function} checker - Lint checker
    */
   add(pattern, checker) {
     const byObj = arguments.length === 0 && typeof arguments[0] === 'object'
@@ -117,7 +117,7 @@ class TheLint {
 
   /**
    * Run all checkers
-   * @returns {Promise<Object<string,array>>}
+   * @returns {Promise<Object<string, Array>>}
    */
   async run() {
     const errorReports = {}

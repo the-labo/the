@@ -95,7 +95,7 @@ class TheCode {
   /**
    * Format a single file
    * @param {string} filename
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async formatFile(filename) {
     const shouldSkipFile = await this.shouldSkipFile(filename)

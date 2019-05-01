@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal } = require('assert')
+const { equal } = require('assert').strict
 const EventEmitter = require('events')
 const listenMix = require('../lib/mixins/listenMix')
 

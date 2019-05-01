@@ -3,9 +3,9 @@
  * @memberOf module:@the-/store
  * @class TheStore
  * @param {Object} [options={}] - optional settings
- * @param {function} [options.reducer] - Custom reducer function
+ * @param {function()} [options.reducer] - Custom reducer function
  * @param {string[]} [options.persists={}] - Scope names to persistize in local storage
- * @param {function} [options.middlewares=[]] - Redux middlewares
+ * @param {function[]} [options.middlewares=[]] - Redux middleware functions
  */
 'use strict'
 
@@ -100,7 +100,7 @@ class TheStore {
 
   /**
    * Load a scope
-   * @param {function} ScopeClass - Scope class to instantiate
+   * @param {Function} ScopeClass - Scope class to instantiate
    * @param {...string} names - Name key path
    * @returns {TheStore.Scope} Loaded scope
    */
@@ -222,8 +222,8 @@ class TheStore {
 
   /**
    * Sub scribe store change
-   * @param listener
-   * @returns {function}
+   * @param {function(*)} listener - Listener function
+   * @returns {function()} - Unsubscribe function
    */
   subscribe(listener) {
     return this.store.subscribe(listener)

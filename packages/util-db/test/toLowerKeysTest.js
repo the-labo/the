@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { deepEqual } = require('assert')
+const { deepEqual } = require('assert').strict
 const toLowerKeys = require('../lib/toLowerKeys')
 
 describe('to-lower-keys', () => {

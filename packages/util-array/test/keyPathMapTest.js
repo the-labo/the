@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { deepEqual } = require('assert')
+const { deepEqual } = require('assert').strict
 const keyPathMap = require('../lib/keyPathMap')
 
 describe('key-path-map', () => {

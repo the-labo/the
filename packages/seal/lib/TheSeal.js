@@ -38,7 +38,7 @@ class TheSeal {
    * Verify sealed
    * @param {string} sealString - Seal string
    * @param {Object} values - Values to verify
-   * @returns {Boolean} Valid or not
+   * @returns {boolean} Valid or not
    */
   verify(sealString, values) {
     return this.seal(values) === sealString

@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal, ok, throws } = require('assert')
+const { equal, ok, throws } = require('assert').strict
 const {
   scopes: { ScopeScope, StringScope },
 } = require('@the-/scope')

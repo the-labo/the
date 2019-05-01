@@ -251,7 +251,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
 
   /**
    * Wait until ready
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async untilReady() {
     this.assertOpen()

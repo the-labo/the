@@ -11,7 +11,7 @@
 const amocha = require('amocha')
 const argx = require('argx')
 
-/** @lends test */
+/** @lends module:@the-/script-test.test */
 async function test(dirname = process.cwd(), options = {}) {
   let args = argx(arguments)
   options = args.pop('object') || {}

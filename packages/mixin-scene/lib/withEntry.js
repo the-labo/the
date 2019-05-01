@@ -41,8 +41,8 @@ const withEntry = asClassMixin((Class) => {
     },
     /**
      * Process an entry
-     * @param {function} handler
-     * @returns {Promise<void>}
+     * @param {Function} handler
+     * @returns {Promise<undefined>}
      */
     async processEntry(handler) {
       const { entryErrors } = this.scope
@@ -51,7 +51,7 @@ const withEntry = asClassMixin((Class) => {
       try {
         return await Promise.resolve(handler.call(this, values))
       } catch (e) {
-        if (!!this.catchEntryError) {
+        if (this.catchEntryError) {
           entryErrors.set(this.catchEntryError(e))
           return
         }

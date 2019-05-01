@@ -51,7 +51,7 @@ exports.Index = (dirname) => {
         typicalname: camelcase(pkg.name.split('/').pop()),
         version: pkg.version,
         description: pkg.description,
-      }
+      },
     }),
     path: `${dirname}/index.jsx`,
   }

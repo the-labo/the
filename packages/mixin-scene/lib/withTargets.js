@@ -26,7 +26,7 @@ const withTargets = asClassMixin((Class) => {
     },
     /**
      * Get ids of target
-     * @returns {String[]}
+     * @returns {Array<string>}
      */
     getTargetIds() {
       return this.getTargets()
@@ -35,7 +35,7 @@ const withTargets = asClassMixin((Class) => {
     },
     /**
      * Get refs of target
-     * @returns {String[]}
+     * @returns {Array<string>}
      */
     getTargetRefs() {
       return this.getTargets()

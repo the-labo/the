@@ -74,7 +74,7 @@ function toControllerModuleBind(Class, options = {}) {
     /**
      * Save session
      * @param {Object} [options={}] - Optional settings
-     * @returns {Promise<void>}
+     * @returns {Promise<undefined>}
      */
     async saveSession(options = {}) {
       const { force = false } = options

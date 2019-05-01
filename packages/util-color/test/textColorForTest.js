@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal } = require('assert')
+const { equal } = require('assert').strict
 const textColorFor = require('../lib/textColorFor')
 
 describe('text-color-for', () => {

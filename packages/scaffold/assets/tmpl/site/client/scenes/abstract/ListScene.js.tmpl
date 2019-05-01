@@ -95,7 +95,7 @@ class ListScene extends ListSceneBase {
 
   /**
    * Do sync for more
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async doSyncMore() {
     this.set({ moreBusy: true })

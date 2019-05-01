@@ -1,5 +1,6 @@
 /**
  * Mixin for channel
+ * @memberOf module:@the-/rtc.constants.mixins
  * @function channelMix
  * @param {function} Class
  * @returns {function} Class
@@ -8,7 +9,7 @@
 
 const { ChannelNames } = require('../constants')
 
-/** @lends channelMix */
+/** @lends module:@the-/rtc.constants.mixins.channelMix */
 function channelMix(Class) {
   class ChannelMixed extends Class {
     constructor() {
@@ -50,7 +51,7 @@ function channelMix(Class) {
     /**
      * Subscribe topic on pub-sub channel
      * @param {string} topic
-     * @param {function} callback
+     * @param {Function} callback
      * @returns {function(): void}
      */
     subscribePubSubChannel(topic, callback) {
@@ -69,7 +70,7 @@ function channelMix(Class) {
     /**
      * Unsubscribe topic on pub-sub channel
      * @param {string} topic
-     * @param {function} [subscription] - subscription to unbind
+     * @param {Function} [subscription] - subscription to unbind
      */
     unsubscribePubSubChannel(topic, subscription) {
       if (subscription) {

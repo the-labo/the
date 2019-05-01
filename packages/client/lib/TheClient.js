@@ -285,7 +285,7 @@ class TheClient extends TheClientBase {
    * @param {string} name
    * @param {Object} params - Stream params
    * @param {Object} [options={}] - Optional setting
-   * @param {Boolean} [options.debug] - With debug mode
+   * @param {boolean} [options.debug] - With debug mode
    * @returns {*}
    */
   async stream(name, params = {}, options = {}) {
@@ -302,7 +302,7 @@ class TheClient extends TheClientBase {
    * Use a controller module
    * @param {string} controllerName - Module name
    * @param {Object} [options={}] - Optional setting
-   * @param {Boolean} [options.debug] - With debug mode
+   * @param {boolean} [options.debug] - With debug mode
    * @returns {*}
    */
   async use(controllerName, options = {}) {

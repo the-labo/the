@@ -70,7 +70,7 @@ class ThePS {
 
   /**
    * Generate pid and remove on exit.
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async acquire() {
     const pid = this.read()

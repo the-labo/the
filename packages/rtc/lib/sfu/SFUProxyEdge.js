@@ -9,7 +9,7 @@ const {
   RTCSessionDescription,
 } = require('wrtc')
 const { PeerEvents } = require('../constants')
-const waitChannelOpen = require('../helpers/waitChannelOpen')
+const waitChannelOpen = require('../hetoLowerKeysTest.jslpers/waitChannelOpen')
 
 /** @lends SFUProxyEdge */
 class SFUProxyEdge {

@@ -41,7 +41,7 @@ class TheHandle {
 
   /**
    * Load a scene
-   * @param {function} SceneClass - Scope class to instantiate
+   * @param {Function} SceneClass - Scope class to instantiate
    * @param {...string} names - Name key path
    * @returns {TheHandle.Scene} Loaded scope
    */
@@ -92,7 +92,7 @@ class TheHandle {
 
   /**
    * Load scenes from mapping
-   * @param {Object.<string, function>} SceneMapping - Scene name and constructors
+   * @param {Object<string, Function>} SceneMapping - Scene name and constructors
    */
   loadFromMapping(SceneMapping) {
     const load = (Scene, ...names) => {

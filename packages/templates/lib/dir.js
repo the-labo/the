@@ -11,7 +11,6 @@ const aglob = require('aglob')
 const fs = require('fs')
 const path = require('path')
 const reserved = require('reserved')
-const { findupDir } = require('@the-/util-path')
 const _tmpl = require('./_tmpl')
 const assert = require('@the-/assert')('[@the-/templates][dir]')
 
@@ -36,18 +35,6 @@ const isModule = (filename) => {
   } catch (e) {
     return false
   }
-}
-
-const guessName = (dirname) => {
-  if (!dirname) {
-    return null
-  }
-  const pkgDir = findupDir.sync(dirname, { contains: ['package.json'] })
-  if (!pkgDir) {
-    return null
-  }
-  const pkg = require(path.join(pkgDir, 'package.json'))
-  return path.join(pkg.name, path.relative(pkgDir, dirname))
 }
 
 /** @lends module:@the-/templates.dir */

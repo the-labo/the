@@ -1,12 +1,13 @@
 /**
  * Mixin for promise
+ * @memberOf module:@the-/rtc.constants.mixins
  * @function promiseMix
  * @param {function} Class
  * @returns {function} Class
  */
 'use strict'
 
-/** @lends promiseMix */
+/** @lends module:@the-/rtc.constants.mixins.promiseMix */
 function promiseMix(Class) {
   class PromiseMixed extends Class {
     async asPromise(invoke, options = {}) {

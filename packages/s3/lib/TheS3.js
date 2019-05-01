@@ -50,7 +50,7 @@ class TheS3 {
    * Upload file into s3
    * @param {string} src - Source file
    * @param {Object} [options={}] - Optional settings
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async upload(src, options = {}) {
     const {

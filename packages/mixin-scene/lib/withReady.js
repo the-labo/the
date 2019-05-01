@@ -15,7 +15,7 @@ const withReady = asClassMixin((Class) => {
   injectProperties(Class, {
     /**
      * Do only if ready
-     * @param {function} task
+     * @param {Function} task
      * @returns {Promise<*>}
      */
     async ifReady(task) {
@@ -34,7 +34,7 @@ const withReady = asClassMixin((Class) => {
     },
     /**
      * Set ready when done
-     * @param {function} task
+     * @param {Function} task
      * @returns {Promise<*>}
      */
     async readyWhen(task) {
@@ -46,7 +46,7 @@ const withReady = asClassMixin((Class) => {
     },
     /**
      * Do unless ready
-     * @param {function} task
+     * @param {Function} task
      * @returns {Promise<*>}
      */
     async unlessReady(task) {

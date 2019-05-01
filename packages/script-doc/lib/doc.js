@@ -16,7 +16,7 @@ const path = require('path')
 const writeout = require('writeout')
 const { uniqueFilter } = require('@the-/util-array')
 
-/** @lends doc */
+/** @lends module:@the-/script-doc.doc */
 async function doc(dirname = process.cwd(), options = {}) {
   const args = argx(arguments)
   options = args.pop('object') || {}

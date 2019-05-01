@@ -41,11 +41,9 @@ describe('the-stream', () => {
     await stream.open()
 
     // Pushing values to stream
-    {
-      await stream.push('a1')
-      await stream.push('a2')
-      await stream.push('a3')
-    }
+    await stream.push('a1')
+    await stream.push('a2')
+    await stream.push('a3')
 
     deepEqual(consumedInStream, ['a1', 'a2', 'a3'])
 
@@ -79,16 +77,14 @@ describe('the-stream', () => {
 
     const stream = new Stream({})
     await stream.open()
-    {
-      await stream.push('hoge')
-      await stream.push('hoge')
-      await asleep(30)
-      await stream.push('hoge')
-      await stream.push('hoge')
-      await stream.push('hoge')
-      await stream.push('hoge')
-      await stream.pushEnd()
-    }
+    await stream.push('hoge')
+    await stream.push('hoge')
+    await asleep(30)
+    await stream.push('hoge')
+    await stream.push('hoge')
+    await stream.push('hoge')
+    await stream.push('hoge')
+    await stream.pushEnd()
     await stream.close()
   })
 })

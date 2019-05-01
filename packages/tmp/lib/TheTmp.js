@@ -86,7 +86,7 @@ class TheTmp {
    * Create and use tmp file until handler resolved (or rejected)
    * @param {function} handler - Handler function to use tmp file
    * @param {Object} options - Tmp options
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async while(handler, options = {}) {
     const { cleanup, descriptor, path: filename } = await this.generate(options)
@@ -101,7 +101,7 @@ class TheTmp {
    * Create an use tmp directory until handler resolved (or rejected)
    * @param {function} handler - Handler function to use tmp file
    * @param {Object} options - Tmp options
-   * @returns {Promise<void>}
+   * @returns {Promise<undefined>}
    */
   async whileDir(handler, options = {}) {
     const { cleanup, path: dirname } = await this.generateDir(options)

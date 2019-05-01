@@ -16,7 +16,7 @@ function migrateMix(Class) {
   class MigrateMixed extends Class {
     /**
      * Run database migration
-     * @param {Object.<string, function>} handlers - Migration handler for each versions
+     * @param {Object<string, Function>} handlers - Migration handler for each versions
      * @returns {Promise.<?Object>} Migration result
      */
     async migrate(handlers = {}) {

@@ -72,8 +72,8 @@ function listenMix(Class) {
 
     /**
      * Listen to create
-     * @param {function} onCreate
-     * @returns {function} close function
+     * @param {function({created})} onCreate
+     * @returns {function()} close function
      */
     listenToCreate(onCreate) {
       return this.listenEvents({
@@ -96,8 +96,8 @@ function listenMix(Class) {
 
     /**
      * Listen to destroy
-     * @param {function} onDestroy
-     * @returns {function} close function
+     * @param {Function} onDestroy
+     * @returns {Function} close function
      */
     listenToDestroy(onDestroy) {
       return this.listenEvents({
@@ -133,8 +133,8 @@ function listenMix(Class) {
 
     /**
      * Listen to drop
-     * @param {function} onDrop
-     * @returns {function} close function
+     * @param {Function} onDrop
+     * @returns {Function} close function
      */
     listenToDrop(onDrop) {
       return this.listenEvents({
@@ -147,8 +147,8 @@ function listenMix(Class) {
 
     /**
      * Listen to update
-     * @param {function} onUpdate
-     * @returns {function} close function
+     * @param {Function} onUpdate
+     * @returns {Function} close function
      */
     listenToUpdate(onUpdate) {
       return this.listenEvents({

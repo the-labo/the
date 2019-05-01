@@ -57,7 +57,7 @@ const withQuery = asClassMixin((Class) => {
     /**
      * Query with search
      * @param search - Location search string
-     * @returns {object}
+     * @returns {Object}
      */
     queryWithSearch(search) {
       return qs.parse(search, { ignoreQueryPrefix: true })

@@ -29,7 +29,7 @@ class TheLoc {
   /**
    * Bind lang
    * @param {string} lang
-   * @returns {function} - Bound function
+   * @returns {Function} - Bound function
    */
   bind(lang) {
     let scope = this[lang]
@@ -50,7 +50,7 @@ class TheLoc {
    * @param {Object} values
    * @param {Object} [options={}]
    * @param {Object} [options.ctx]
-   * @param {Number} [options.depth=5]
+   * @param {number} [options.depth=5]
    * @returns {TheLoc} Returns this
    */
   register(namespace, values, options = {}) {

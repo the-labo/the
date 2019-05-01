@@ -87,8 +87,8 @@ class State {
 
   /**
    * Subscribe changes
-   * @param {function} callback
-   * @returns {function} - unsubscribe function
+   * @param {Function} callback
+   * @returns {Function} - unsubscribe function
    */
   subscribe(callback) {
     this.subscriptions = [...this.subscriptions, callback]
@@ -98,7 +98,7 @@ class State {
 
   /**
    * Unsubscribe
-   * @param {function} callback
+   * @param {Function} callback
    */
   unsubscribe(callback) {
     this.subscriptions = this.subscriptions.filter(

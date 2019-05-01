@@ -1,12 +1,13 @@
 /**
  * Mixin for assert
+ * @memberOf module:@the-/rtc.constants.mixins
  * @function assertMix
  * @param {function} Class
  * @returns {function} Class
  */
 'use strict'
 
-/** @lends assertMix */
+/** @lends module:@the-/rtc.constants.mixins.assertMix */
 function assertMix(Class) {
   class AssertMixed extends Class {
     assertHasRoom() {

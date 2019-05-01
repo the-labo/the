@@ -1,5 +1,6 @@
 /**
  * Mixin for serialize
+ * @memberOf module:@the-/rtc.constants.mixins
  * @function serializeMix
  * @param {function} Class
  * @returns {function} Class
@@ -12,7 +13,7 @@ const { decode, encode } = new ThePack({
   convert: Converters.UInt8ArrayConverter,
 })
 
-/** @lends serializeMix */
+/** @lends module:@the-/rtc.constants.mixins.serializeMix */
 function serializeMix(Class) {
   class SerializeMixed extends Class {
     deserializeChannelData(data, options = {}) {

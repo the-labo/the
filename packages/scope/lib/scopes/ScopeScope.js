@@ -21,7 +21,7 @@ class ScopeScope extends Scope {
 
   /**
    * Get state value from name path string
-   * @param {string} namepath
+   * @param {string} namepath - Name path of state
    * @returns {*} Stored state
    */
   get(namepath) {
@@ -30,7 +30,7 @@ class ScopeScope extends Scope {
 
   /**
    * Check if scope exists
-   * @param {string} namepath
+   * @param {string} namepath - Name path of state
    * @returns {boolean}
    */
   has(namepath) {
@@ -43,7 +43,7 @@ class ScopeScope extends Scope {
 
   /**
    * Init scope values
-   * @param names
+   * @param {...string} names - Names to init
    */
   init(...names) {
     const { scopes } = this.$$store || {}
@@ -64,7 +64,7 @@ class ScopeScope extends Scope {
 
   /**
    * Sub scope of namepath
-   * @param namepath
+   * @param {string} namepath - Name path of state
    * @returns {ScopeScope}
    */
   of(namepath) {
@@ -90,8 +90,8 @@ class ScopeScope extends Scope {
 
   /**
    * Set state with name path
-   * @param {string} namepath
-   * @param {*} value
+   * @param {string} namepath - Name path of state
+   * @param {*} value - Value to set
    */
   set(namepath, value) {
     const byObj = arguments.length === 1 && typeof arguments[0] === 'object'
