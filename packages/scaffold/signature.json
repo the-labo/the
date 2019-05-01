@@ -1,6 +1,4 @@
 {
-  "name": "the-scaffold",
-  "main": true,
   "args": [
     {
       "name": "type",
@@ -11,6 +9,14 @@
       "desc": "Destination directory name"
     }
   ],
+  "examples": [
+    {
+      "script": "the-scaffold component my-awesome-component",
+      "desc": "Generate a component project"
+    }
+  ],
+  "main": true,
+  "name": "the-scaffold",
   "options": [
     {
       "name": "silent",
@@ -21,12 +27,6 @@
       "name": "force",
       "short": "f",
       "desc": "Force to generate"
-    }
-  ],
-  "examples": [
-    {
-      "script": "the-scaffold component my-awesome-component",
-      "desc": "Generate a component project"
     }
   ]
 }

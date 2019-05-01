@@ -14,7 +14,7 @@ const theSecret = require('./lib/create')
  * @param password
  * @returns {Promise<Array>}
  */
-exports.encryptAll = async function encryptAll (filenames, password) {
+exports.encryptAll = async function encryptAll(filenames, password) {
   const results = []
   for (const filename of await aglob(filenames)) {
     await theSecret(filename, password).encrypt()
@@ -29,7 +29,7 @@ exports.encryptAll = async function encryptAll (filenames, password) {
  * @param password
  * @returns {Promise<Array>}
  */
-exports.decryptAll = async function decryptAll (filenames, password) {
+exports.decryptAll = async function decryptAll(filenames, password) {
   const results = []
   for (const filename of await aglob(filenames)) {
     await theSecret(filename, password).decrypt()
@@ -37,4 +37,3 @@ exports.decryptAll = async function decryptAll (filenames, password) {
   }
   return results
 }
-

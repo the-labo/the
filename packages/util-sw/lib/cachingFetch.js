@@ -35,3 +35,5 @@ async function cachingFetch(cache, request) {
 }
 
 module.exports = cachingFetch
+
+/* global fetch */

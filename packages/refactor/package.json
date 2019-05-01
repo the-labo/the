@@ -1,7 +1,4 @@
 {
-  "name": "@the-/refactor",
-  "description": "Refactoring tool for the-components",
-  "version": "15.4.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -17,6 +14,7 @@
     "asfs": "^2.2.3",
     "filecopy": "^4.0.2"
   },
+  "description": "Refactoring tool for the-components",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -29,6 +27,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/refactor",
   "publishConfig": {
     "access": "public"
   },
@@ -39,5 +38,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.1"
 }

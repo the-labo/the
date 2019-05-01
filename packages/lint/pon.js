@@ -1,12 +1,11 @@
 /**
  * As pon task
  */
-
 'use strict'
 
-const TheLint = require('./lib/TheLint')
 const chalk = require('chalk')
 const rules = require('./lib/rules')
+const TheLint = require('./lib/TheLint')
 
 function theLintTask(config) {
   return async function task(ctx) {
@@ -25,10 +24,7 @@ function theLintTask(config) {
       const found = await lint.run()
       const entries = Object.entries(found)
       for (const [filename, reports] of entries) {
-        errorReports[filename] = [
-          ...(errorReports[filename] || []),
-          ...reports
-        ]
+        errorReports[filename] = [...(errorReports[filename] || []), ...reports]
       }
       const ok = entries.length === 0
       const icon = ok ? chalk.green('✓') : chalk.red('⚠')

@@ -11,8 +11,8 @@ function seatAccess(seat) {
   return {
     /**
      * Container name for
-     * @param {string} name
-     * @param {number} bytes=4
+     * @param {string} name - Name of container
+     * @param {number} [bytes=4] - Hom many bytes
      * @returns {string}
      */
     containerNameFor(name, bytes = 4) {
@@ -23,8 +23,8 @@ function seatAccess(seat) {
     },
     /**
      * Network name for
-     * @param {string} name
-     * @param {number} bytes=4
+     * @param {string} name - Name of network
+     * @param {number} [bytes=4] - How many bytes for hash
      * @returns {string}
      */
     networkNameFor(name, bytes = 4) {
@@ -35,7 +35,7 @@ function seatAccess(seat) {
     },
     /**
      * Port number for
-     * @param {string} name
+     * @param {string} name - Name for seat
      * @param {number} [base=6000] - Base port number
      * @param {number} [increment=1] - Increment amount
      * @returns {*}
@@ -45,7 +45,7 @@ function seatAccess(seat) {
     },
     /**
      * Port numbers with range
-     * @param {string} name
+     * @param {string} name - Name for seat
      * @param {number} [base=22000] - Base port number
      * @param {number} length - Range length
      * @returns {number[]} Min and max number
@@ -66,8 +66,8 @@ function seatAccess(seat) {
     },
     /**
      * Process name for
-     * @param {string} name
-     * @param {number} bytes=4
+     * @param {string} name - Name for seat
+     * @param {number} [bytes=4] - Length of byte for hash
      * @returns {string}
      */
     processNameFor(name, bytes = 4) {
@@ -78,8 +78,8 @@ function seatAccess(seat) {
     },
     /**
      * Secret value for
-     * @param {string} name
-     * @param {number} bytes=12
+     * @param {string} name - Name for seat
+     * @param {number} [bytes=12] - Length of byte for hash
      * @returns {string}
      */
     secretFor(name, bytes = 12) {
@@ -90,8 +90,8 @@ function seatAccess(seat) {
     },
     /**
      * User name for
-     * @param {string} name
-     * @param {number} bytes=4
+     * @param {string} name - Name for seat
+     * @param {number} [bytes=4] - Length of byte for hash
      * @returns {string}
      */
     userNameFor(name, bytes = 4) {

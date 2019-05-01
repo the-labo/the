@@ -1,6 +1,4 @@
 {
-  "name": "the-run",
-  "main": true,
   "args": [
     {
       "name": "filename",
@@ -8,6 +6,8 @@
       "type": "string"
     }
   ],
+  "main": true,
+  "name": "the-run",
   "options": [
     {
       "name": "inspect",

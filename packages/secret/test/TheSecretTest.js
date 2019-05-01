@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { deepEqual, equal, ok } = require('assert')
+const { deepEqual, equal, ok } = require('assert').strict
 const { readAsJsonSync, writeAsJsonSync } = require('@the-/util-file')
 const TheSecret = require('../lib/TheSecret')
 

@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal, ok } = require('assert')
+const { equal, ok } = require('assert').strict
 const TheSeed = require('../lib/TheSeed')
 
 describe('the-seed', () => {

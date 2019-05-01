@@ -1,7 +1,4 @@
 {
-  "name": "@the-/util-ui",
-  "description": "Utility for the-components",
-  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -20,6 +17,7 @@
     "uuid": "^3.2.1",
     "video-extensions": "^1.1.0"
   },
+  "description": "Utility for the-components",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -32,6 +30,7 @@
   ],
   "license": "MIT",
   "main": "shim",
+  "name": "@the-/util-ui",
   "peerDependencies": {
     "react": ">=15",
     "react-dom": ">=15"
@@ -46,5 +45,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.0"
 }

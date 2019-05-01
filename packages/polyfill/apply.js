@@ -6,4 +6,6 @@
  */
 'use strict'
 
-require('./shim').create().apply()
+require('./shim')
+  .create()
+  .apply()

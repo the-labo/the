@@ -1,7 +1,4 @@
 {
-  "name": "@the-/context",
-  "description": "React context for the-components",
-  "version": "15.4.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -16,6 +13,7 @@
     "@the-/state": "^15.4.2",
     "prop-types": "^15.7.2"
   },
+  "description": "React context for the-components",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -28,6 +26,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/context",
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
@@ -42,5 +41,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.2"
 }

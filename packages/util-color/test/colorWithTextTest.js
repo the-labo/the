@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal } = require('assert')
+const { equal } = require('assert').strict
 const colorWithText = require('../lib/colorWithText')
 
 describe('color-with-text', () => {

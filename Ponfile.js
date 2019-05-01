@@ -16,7 +16,7 @@ module.exports = pon({
     $cwd: __dirname,
   },
   ...{
-    'struct:render': coz('.*.bud')
+    'struct:render': coz('.*.bud'),
   },
   // -----------------------------------
   // Main Tasks
@@ -24,7 +24,7 @@ module.exports = pon({
   ...{
     struct: ['struct:render'],
     prepare: [],
-    build: ['struct']
+    build: ['struct'],
   },
   // -----------------------------------
   // Aliases
@@ -35,5 +35,4 @@ module.exports = pon({
     /** Shortcut for 'build` task */
     b: 'build',
   },
-
 })

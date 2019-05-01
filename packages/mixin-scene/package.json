@@ -1,7 +1,4 @@
 {
-  "name": "@the-/mixin-scene",
-  "description": "Mixins for the-scene",
-  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -22,6 +19,7 @@
     "objnest": "^5.0.6",
     "qs": "^6.7.0"
   },
+  "description": "Mixins for the-scene",
   "devDependencies": {
     "injectmock": "^2.0.0"
   },
@@ -36,6 +34,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/mixin-scene",
   "publishConfig": {
     "access": "public"
   },
@@ -46,5 +45,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.0"
 }

@@ -65,3 +65,5 @@ appCache.ofAnotherVersions = async (
 }
 
 module.exports = appCache
+
+/* global caches */

@@ -4,20 +4,12 @@
  */
 'use strict'
 
-const VendorColors = require('../lib/VendorColors')
-
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('vendor-colors', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-    
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

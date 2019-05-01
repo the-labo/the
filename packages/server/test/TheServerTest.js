@@ -102,7 +102,7 @@ describe('the-server', function() {
       }
 
       somethingWrong() {
-        const error = new NotAcceptableError('Something is wrong!')
+        const error = new Error('Something is wrong!')
         throw error
       }
 

@@ -1,5 +1,5 @@
 /**
- * Test for replaceJSDocSynonymsOnCommentNode.
+ * Test for normalizeJSDocSynonymsOnCommentNode.
  * Runs with mocha.
  */
 'use strict'

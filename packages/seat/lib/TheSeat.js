@@ -45,7 +45,7 @@ class TheSeat extends TheSeatBase {
   /**
    * Acquire value with
    * @param {string} key - Key for value
-   * @param {function} next - Next value generator
+   * @param {function()} next - Next value generator
    */
   acquire(key, next) {
     if (this.has(key)) {

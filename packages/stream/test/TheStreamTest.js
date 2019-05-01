@@ -5,7 +5,7 @@
 'use strict'
 
 const asleep = require('asleep')
-const { deepEqual, ok } = require('assert')
+const { deepEqual, ok } = require('assert').strict
 const TheStream = require('../lib/TheStream')
 
 describe('the-stream', () => {

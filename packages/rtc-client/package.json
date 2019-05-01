@@ -1,7 +1,4 @@
 {
-  "name": "@the-/rtc-client",
-  "description": "Client for the-rtc",
-  "version": "15.4.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -28,6 +25,7 @@
     "uuid": "^3.3.2",
     "wrtc": "^0.3.7"
   },
+  "description": "Client for the-rtc",
   "devDependencies": {
     "@the-/rtc": "^15.4.0",
     "aport": "^2.0.0",
@@ -46,6 +44,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/rtc-client",
   "peerDependencies": {
     "webrtc-adapter": ">=6"
   },
@@ -61,5 +60,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.2"
 }

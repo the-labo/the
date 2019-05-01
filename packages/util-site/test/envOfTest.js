@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal } = require('assert')
+const { equal } = require('assert').strict
 const envOf = require('../lib/envOf')
 
 describe('env-of', () => {

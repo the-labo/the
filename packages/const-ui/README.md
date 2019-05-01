@@ -88,6 +88,7 @@ const { SupportedProps } = require('@the-/const-ui')
 ### namespace
 - [.SupportedProps](./doc/api/api.md#module_@the-/const-ui.SupportedProps)
 - [.ThemeValues](./doc/api/api.md#module_@the-/const-ui.ThemeValues)
+- [.VendorColors](./doc/api/api.md#module_@the-/const-ui.VendorColors)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

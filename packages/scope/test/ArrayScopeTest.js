@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { deepEqual } = require('assert')
+const { deepEqual } = require('assert').strict
 const { TheStore } = require('@the-/store')
 const ArrayScope = require('../lib/scopes/ArrayScope')
 

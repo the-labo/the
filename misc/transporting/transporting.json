@@ -15,10 +15,6 @@
     "kind": "lib",
     "name": "assets"
   },
-  "the-facebook": {
-    "kind": "lib",
-    "name": "facebook"
-  },
   "the-ast": {
     "kind": "lib",
     "name": "ast"
@@ -166,6 +162,10 @@
   "the-error": {
     "kind": "lib",
     "name": "error"
+  },
+  "the-facebook": {
+    "kind": "lib",
+    "name": "facebook"
   },
   "the-file-util": {
     "kind": "util",

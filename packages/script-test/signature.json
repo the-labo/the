@@ -1,6 +1,4 @@
 {
-  "name": "the-script-test",
-  "main": true,
   "args": [
     {
       "name": "dirname",
@@ -8,6 +6,7 @@
       "type": "string"
     }
   ],
-  "options": [
-  ]
+  "main": true,
+  "name": "the-script-test",
+  "options": []
 }

@@ -11,7 +11,7 @@ const ReactDOMServer = require('react-dom/server')
 const TheComponentDemo = require('./shim/TheComponentDemo').default
 
 /** @lends markup */
-function markup (props) {
+function markup(props) {
   const demo = React.createElement(TheComponentDemo, props)
   return ReactDOMServer.renderToStaticMarkup(demo)
 }

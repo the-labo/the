@@ -1,7 +1,5 @@
 {
-  "name": "the-bin",
+  "args": {},
   "main": true,
-  "args": {
-
-  }
+  "name": "the-bin"
 }

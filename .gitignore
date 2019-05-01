@@ -36,4 +36,5 @@ public
 
 *_scsslint_tmp*.js
 
+.eslintcache
 

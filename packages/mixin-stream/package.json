@@ -1,7 +1,4 @@
 {
-  "name": "@the-/mixin-stream",
-  "description": "Mixins for stream",
-  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -15,6 +12,7 @@
     "@the-/check": "^15.4.1",
     "debug": "^4.1.1"
   },
+  "description": "Mixins for stream",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -27,6 +25,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/mixin-stream",
   "publishConfig": {
     "access": "public"
   },
@@ -37,5 +36,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.0"
 }

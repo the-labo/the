@@ -7,7 +7,7 @@
 const coz = require('coz')
 const ctrl = require('../lib/Ctrl')
 
-describe('ctrl', function () {
+describe('ctrl', function() {
   this.timeout(3000)
 
   before(async () => {})
@@ -17,8 +17,8 @@ describe('ctrl', function () {
   it('Ctrl', async () => {
     const bud = ctrl({
       cjs: true,
-      name: 'AppCtrl',
       memberof: 'module:server.controllers',
+      name: 'AppCtrl',
     })
     bud.path = `${__dirname}/../tmp/AppCtrl.js`
     bud.mkdirp = true

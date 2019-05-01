@@ -43,18 +43,17 @@ module.exports = pon({
   // Format Tasks
   // -----------------------------------
   ...{
-    'format:root': theCode([
-      '.*.bud',
-      '.travis.yml',
-      '+(misc)/**/*.*'
-    ]),
-    'format:packages': theCode([
-      'packages/*/+(bin|example|doc|lib|misc|test)/**/*.js',
-      'packages/*/+(bin|example|doc|lib|misc|test)/**/.*.bud',
-      'packages/*/.*.bud',
-    ], {
-      ignore: '**/node_modules/**/*.*'
-    })
+    'format:root': theCode(['.*.bud', '.travis.yml', '+(misc)/**/*.*']),
+    'format:packages': theCode(
+      [
+        'packages/*/+(bin|example|doc|lib|misc|test)/**/*.js',
+        'packages/*/+(bin|example|doc|lib|misc|test)/**/.*.bud',
+        'packages/*/.*.bud',
+      ],
+      {
+        ignore: '**/node_modules/**/*.*',
+      },
+    ),
   },
 
   // -----------------------------------
@@ -68,19 +67,12 @@ module.exports = pon({
   // -----------------------------------
   ...{
     format: ['format:root', 'format:packages'],
-    prepare: [
-      ...tasks.prepare,
-      ...['pkg:sync'],
-    ],
+    prepare: [...tasks.prepare, ...['pkg:sync']],
     install: ['pkg:install'],
-    build: [
-      ...tasks.build,
-      'pkg:run:build',
-      'format',
-    ],
+    build: [...tasks.build, 'pkg:run:build', 'format'],
     doc: ['pkg:run:doc'],
-    test: ['test:root','pkg:run:test'],
-    publish: ['pkg:sync', 'pkg:publish']
+    test: ['test:root', 'pkg:run:test'],
+    publish: ['pkg:sync', 'pkg:publish'],
   },
   // -----------------------------------
   // Aliases
@@ -91,5 +83,4 @@ module.exports = pon({
     /** Shortcut for 'test` task */
     t: 'test',
   },
-
 })

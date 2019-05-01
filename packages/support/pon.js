@@ -7,16 +7,16 @@
  */
 'use strict'
 
-const theSupport = require('./lib/create')
 const chalk = require('chalk')
 const path = require('path')
+const theSupport = require('./lib/create')
 
 /** @lends theSupportTask */
-function theSupportTask (pattern, options = {}) {
+function theSupportTask(pattern, options = {}) {
   const support = theSupport(pattern)
 
-  return async function task (ctx) {
-    const {logger} = ctx
+  return async function task(ctx) {
+    const { logger } = ctx
     const subLogger = logger.withoutPrefix ? logger.withoutPrefix() : logger
 
     let results
@@ -34,10 +34,9 @@ function theSupportTask (pattern, options = {}) {
 
       process.exit(1)
     }
-    const filenames = Object.entries(results || {}).filter(([filename, {ok}]) => ok)
-      .map(([filename]) =>
-        path.relative(process.cwd(), filename)
-      )
+    const filenames = Object.entries(results || {})
+      .filter(([, { ok }]) => ok)
+      .map(([filename]) => path.relative(process.cwd(), filename))
     const icon = chalk.green('✓')
     for (const filename of filenames) {
       subLogger.trace(`${icon} ${filename}`)

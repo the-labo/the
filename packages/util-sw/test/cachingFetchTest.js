@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal } = require('assert')
+const { equal } = require('assert').strict
 const fetch = require('cross-fetch')
 const injectmock = require('injectmock')
 const cachingFetch = require('../lib/cachingFetch')

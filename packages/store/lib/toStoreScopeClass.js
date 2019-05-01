@@ -2,8 +2,8 @@
  * Convert into store scope class
  * @memberOf module:@the-/store
  * @function toStoreScopeClass
- * @param {function} BaseClass
- * @returns {function}
+ * @param {Function} BaseClass
+ * @returns {Function}
  */
 'use strict'
 

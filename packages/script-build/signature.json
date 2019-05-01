@@ -1,6 +1,4 @@
 {
-  "name": "the-script-build",
-  "main": true,
   "args": [
     {
       "name": "dirname",
@@ -8,6 +6,8 @@
       "type": "string"
     }
   ],
+  "main": true,
+  "name": "the-script-build",
   "options": [
     {
       "name": "watch",

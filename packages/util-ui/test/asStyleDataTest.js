@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { deepEqual, ok } = require('assert')
+const { deepEqual, ok } = require('assert').strict
 const asStyleData = require('../lib/asStyleData')
 
 describe('as-style-data', () => {

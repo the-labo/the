@@ -1,7 +1,4 @@
 {
-  "name": "@the-/ui-menu",
-  "description": "Menu of the-components",
-  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -21,6 +18,7 @@
     "prop-types": "^15.7.2",
     "react-click-outside": "github:tj/react-click-outside"
   },
+  "description": "Menu of the-components",
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
     "coz": "^7.0.19"
@@ -36,6 +34,7 @@
   ],
   "license": "MIT",
   "main": "shim",
+  "name": "@the-/ui-menu",
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
@@ -49,5 +48,6 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.0"
 }

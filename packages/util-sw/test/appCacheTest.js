@@ -46,4 +46,4 @@ describe('app-cache', () => {
   })
 })
 
-/* global global,describe, before, after, it */
+/* global caches, describe, before, after, it */

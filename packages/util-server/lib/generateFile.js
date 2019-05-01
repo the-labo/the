@@ -11,7 +11,7 @@ const amkdirp = require('amkdirp')
 const fs = require('fs')
 const path = require('path')
 
-/** @lend generateFile */
+/** @lends generateFile */
 async function generateFile(filename, generator) {
   if (typeof generator === 'function') {
     generator = generator()

@@ -5,7 +5,7 @@
 
 const { eslintignore, eslintrc } = require('@the-/templates')
 
-module.exports = [eslintrc(), eslintignore()]
+module.exports = [eslintrc(), eslintignore(['**/doc/demo/bundle.js'])]
 
 if (!module.parent) {
   require('coz').render(__filename)

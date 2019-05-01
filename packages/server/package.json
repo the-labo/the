@@ -1,7 +1,4 @@
 {
-  "name": "@the-/server",
-  "description": "HTTP/RPC Server of the-framework",
-  "version": "15.4.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -33,6 +30,7 @@
     "socket.io-redis": "^5.2.0",
     "stringcase": "^4.3.1"
   },
+  "description": "HTTP/RPC Server of the-framework",
   "devDependencies": {
     "@the-/client": "^15.4.1",
     "arequest": "^3.0.2",
@@ -49,6 +47,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/server",
   "peerDependencies": {
     "react": ">=15",
     "react-dom": ">=15"
@@ -63,5 +62,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.1"
 }

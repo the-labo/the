@@ -11,7 +11,7 @@ const React = require('react')
 const ReactDOM = require('react-dom')
 
 /** @lends mount */
-function mount (Component, props, callback) {
+function mount(Component, props, callback) {
   let container = document.getElementById('the-demo')
   let component = React.createElement(Component, props)
   ReactDOM.render(component, container, () => {

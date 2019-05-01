@@ -1,7 +1,4 @@
 {
-  "name": "@the-/driver-sequelize",
-  "description": "Sequelize driver for the-framework",
-  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -23,6 +20,7 @@
     "sequelize": "^5.8.1",
     "utf8": "^3.0.0"
   },
+  "description": "Sequelize driver for the-framework",
   "devDependencies": {
     "clay-lump": "^4.4.25",
     "mysql2": "^1.6.5",
@@ -39,6 +37,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/driver-sequelize",
   "publishConfig": {
     "access": "public"
   },
@@ -49,5 +48,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.0"
 }

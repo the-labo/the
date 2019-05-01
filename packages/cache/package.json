@@ -1,7 +1,4 @@
 {
-  "name": "@the-/cache",
-  "description": "Cache manager of the-frameworks",
-  "version": "15.4.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,6 +11,7 @@
   "dependencies": {
     "lru-cache": "^5.1.1"
   },
+  "description": "Cache manager of the-frameworks",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -26,6 +24,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/cache",
   "publishConfig": {
     "access": "public"
   },
@@ -36,5 +35,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.1"
 }

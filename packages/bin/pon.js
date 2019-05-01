@@ -4,9 +4,9 @@
  */
 'use strict'
 
-const theBin = require('./lib/create')
-const { isProduction } = require('@the-/check')
 const chalk = require('chalk')
+const { isProduction } = require('@the-/check')
+const theBin = require('./lib/create')
 
 /** @lends theBinPonTasks */
 const theBinPonTasks = {
@@ -14,14 +14,17 @@ const theBinPonTasks = {
     return async function task(ctx) {
       const { logger } = ctx
       const subLogger = logger.withoutPrefix ? logger.withoutPrefix() : logger
-      for (const [cmd, { guide, dev, version }] of Object.entries(targets)) {
+      for (const [cmd, { dev, guide, version }] of Object.entries(targets)) {
         const skip = dev && isProduction()
         if (skip) {
           continue
         }
         const bin = theBin(cmd, { guide })
         const ok = await bin.verify({ version })
-        const name = [bin.cmd, version].filter(Boolean).map((c) => String(c).trim()).join(' ')
+        const name = [bin.cmd, version]
+          .filter(Boolean)
+          .map((c) => String(c).trim())
+          .join(' ')
         if (ok) {
           subLogger.trace(`${chalk.green('✓')}\`${name}\``)
         } else {
@@ -31,7 +34,7 @@ const theBinPonTasks = {
         }
       }
     }
-  }
+  },
 }
 
 module.exports = theBinPonTasks

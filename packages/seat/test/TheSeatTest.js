@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { doesNotThrow, equal, notEqual, ok, throws } = require('assert')
+const { doesNotThrow, equal, notEqual, ok, throws } = require('assert').strict
 const TheSeat = require('../lib/TheSeat')
 
 describe('the-seat', function() {

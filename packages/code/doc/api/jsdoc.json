@@ -485,6 +485,20 @@
     "order": 22
   },
   {
+    "id": "module:@the-/code.ast.nodes.normalizeJSDocSynonymsOnCommentNode",
+    "longname": "module:@the-/code.ast.nodes.normalizeJSDocSynonymsOnCommentNode",
+    "name": "normalizeJSDocSynonymsOnCommentNode",
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/code.ast.nodes",
+    "meta": {
+      "lineno": 1,
+      "filename": "normalizeJSDocSynonymsOnCommentNode.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
+    },
+    "order": 23
+  },
+  {
     "id": "module:@the-/code.ast.nodes.normalizeSrcPathOnImportDeclarationNode",
     "longname": "module:@the-/code.ast.nodes.normalizeSrcPathOnImportDeclarationNode",
     "name": "normalizeSrcPathOnImportDeclarationNode",
@@ -494,20 +508,6 @@
     "meta": {
       "lineno": 1,
       "filename": "normalizeSrcPathOnImportDeclarationNode.js",
-      "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
-    },
-    "order": 23
-  },
-  {
-    "id": "module:@the-/code.ast.nodes.replaceJSDocSynonymsOnCommentNode",
-    "longname": "module:@the-/code.ast.nodes.replaceJSDocSynonymsOnCommentNode",
-    "name": "replaceJSDocSynonymsOnCommentNode",
-    "kind": "function",
-    "scope": "static",
-    "memberof": "module:@the-/code.ast.nodes",
-    "meta": {
-      "lineno": 1,
-      "filename": "replaceJSDocSynonymsOnCommentNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
     "order": 24

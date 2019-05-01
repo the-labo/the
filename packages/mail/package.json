@@ -1,7 +1,4 @@
 {
-  "name": "@the-/mail",
-  "description": "Mail client for the-framework",
-  "version": "15.4.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -19,6 +16,7 @@
     "nodemailer": "^6.1.1",
     "uuid": "^3.3.2"
   },
+  "description": "Mail client for the-framework",
   "devDependencies": {
     "@the-/secret": "file:../secret"
   },
@@ -33,6 +31,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/mail",
   "publishConfig": {
     "access": "public"
   },
@@ -43,5 +42,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.1"
 }

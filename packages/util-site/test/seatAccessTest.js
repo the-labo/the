@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { deepEqual, equal } = require('assert')
+const { deepEqual, equal } = require('assert').strict
 const theSeat = require('@the-/seat')
 const seatAccess = require('../lib/seatAccess')
 

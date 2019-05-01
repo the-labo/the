@@ -7,8 +7,8 @@
  */
 'use strict'
 
-const theCode = require('./lib/create')
 const path = require('path')
+const theCode = require('./lib/create')
 
 /** @lends theCodeTask */
 function theCodeTask(pattern, options = {}) {
@@ -17,9 +17,9 @@ function theCodeTask(pattern, options = {}) {
     const { logger } = ctx
     try {
       const results = await theCode(config).format(pattern, { ignore })
-      const filenames = results.filter(({ skipped }) => !skipped).map(({ filename }) =>
-        path.relative(process.cwd(), filename)
-      )
+      const filenames = results
+        .filter(({ skipped }) => !skipped)
+        .map(({ filename }) => path.relative(process.cwd(), filename))
       for (const filename of filenames) {
         logger.debug('File formatted:', filename)
       }

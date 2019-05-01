@@ -6,8 +6,8 @@
 
 const thePS = require('./lib/create')
 
-function thePSTask (dirname) {
-  return async function task (ctx) {
+function thePSTask(dirname) {
+  return async function task() {
     await thePS(dirname).acquire()
   }
 }

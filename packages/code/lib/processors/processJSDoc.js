@@ -9,7 +9,7 @@
 const { parse } = require('@the-/ast')
 const {
   commentModuleOnProgramNode,
-  replaceJSDocSynonymsOnCommentNode,
+  normalizeJSDocSynonymsOnCommentNode,
   sortAnnotationsOnCommentNode,
 } = require('../ast/nodes')
 const applyConverter = require('../helpers/applyConverter')
@@ -40,7 +40,7 @@ async function processJSDoc(content, options = {}) {
       for (const comment of JSDocComments) {
         const converted =
           (await sortAnnotationsOnCommentNode(comment, { swap })) ||
-          (await replaceJSDocSynonymsOnCommentNode(comment, { replace }))
+          (await normalizeJSDocSynonymsOnCommentNode(comment, { replace }))
         if (converted) {
           return converted
         }

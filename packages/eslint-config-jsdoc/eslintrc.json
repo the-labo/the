@@ -1,4 +1,15 @@
 {
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
   "plugins": [
     "jsdoc"
   ],
@@ -10,7 +21,10 @@
     "jsdoc/check-syntax": "error",
     "jsdoc/check-tag-names": "error",
     "jsdoc/check-types": "error",
-    "jsdoc/newline-after-description": "error",
+    "jsdoc/newline-after-description": [
+      "error",
+      "never"
+    ],
     "jsdoc/no-undefined-types": "error",
     "jsdoc/require-example": "off",
     "jsdoc/require-hyphen-before-param-description": "error",

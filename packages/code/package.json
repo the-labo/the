@@ -1,7 +1,4 @@
 {
-  "name": "@the-/code",
-  "description": "Code formatter of the-frameworks",
-  "version": "15.4.6",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -29,6 +26,7 @@
     "writeout": "^2.2.4",
     "yaml": "^1.5.0"
   },
+  "description": "Code formatter of the-frameworks",
   "devDependencies": {
     "filecopy": "^4.0.2"
   },
@@ -43,6 +41,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/code",
   "publishConfig": {
     "access": "public"
   },
@@ -53,5 +52,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.6"
 }

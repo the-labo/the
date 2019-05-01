@@ -1,7 +1,4 @@
 {
-  "name": "@the-/assets",
-  "description": "Assets for the-framework",
-  "version": "15.4.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -16,6 +13,7 @@
     "filecopy": "^4.0.2",
     "filelink": "^4.0.1"
   },
+  "description": "Assets for the-framework",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -28,6 +26,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/assets",
   "publishConfig": {
     "access": "public"
   },
@@ -38,5 +37,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.1"
 }

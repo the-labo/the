@@ -1,7 +1,4 @@
 {
-  "name": "@the-/metrics",
-  "description": "Performance measures for the-framework",
-  "version": "15.4.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,6 +9,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {},
+  "description": "Performance measures for the-framework",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -24,6 +22,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/metrics",
   "publishConfig": {
     "access": "public"
   },
@@ -34,5 +33,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.0"
 }

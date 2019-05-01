@@ -1,5 +1,5 @@
 {
-  "ui": "@the-/demo-ui",
   "lib": "@the-/demo-lib",
-  "site": "pon-demo-site"
+  "site": "pon-demo-site",
+  "ui": "@the-/demo-ui"
 }

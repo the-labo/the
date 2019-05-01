@@ -95,7 +95,6 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
-- [default()](./doc/api/api.md#default)
 - [#get(key)](./doc/api/api.md#module_@the-/hash.TheHash#get)
 - [#has(key)](./doc/api/api.md#module_@the-/hash.TheHash#has)
 - [#set(key,value)](./doc/api/api.md#module_@the-/hash.TheHash#set)

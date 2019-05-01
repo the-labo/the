@@ -80,7 +80,7 @@ function readmeBud(config = {}) {
       repo,
       sections: aglob.sync(sections).map((filename) => {
         const name = path.relative(process.cwd(), filename)
-        const anchor = name.replace(/[\/\¥]/g, '-')
+        const anchor = name.replace(/[\/¥]/g, '-')
         return {
           anchor: path.basename(anchor, path.extname(anchor)),
           filename,

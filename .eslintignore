@@ -51,6 +51,7 @@ var/
 /packages/driver-sequelize/lib/parsing/index.js
 /packages/entrypoint/lib/index.js
 /packages/error/lib/index.js
+/packages/facebook/lib/index.js
 /packages/geo/lib/index.js
 /packages/handle/lib/index.js
 /packages/hash/lib/index.js
@@ -243,3 +244,4 @@ var/
 /packages/window/lib/index.js
 
 # Other paths
+**/doc/demo/bundle.js

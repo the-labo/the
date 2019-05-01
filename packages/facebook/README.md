@@ -89,6 +89,16 @@ tryExample().catch((err) => console.error(err))
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+### class
+- [TheFacebook](./doc/api/api.md#TheFacebook)
+### namespace
+- [Constants](./doc/api/api.md#Constants)
+### function
+- [create(args)](./doc/api/api.md#create)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

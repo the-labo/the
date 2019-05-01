@@ -4,15 +4,13 @@
  */
 'use strict'
 
+const { ok } = require('assert')
 const TheFacebook = require('../lib/TheFacebook')
-const {ok, equal} = require('assert')
 
 describe('the-facebook', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     ok(TheFacebook)
