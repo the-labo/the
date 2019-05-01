@@ -1,6 +1,6 @@
 /**
  * Mixin for assert
- * @memberOf module:@the-/rtc.constants.mixins
+ * @memberof module:@the-/rtc.constants.mixins
  * @function assertMix
  * @param {function} Class
  * @returns {function} Class

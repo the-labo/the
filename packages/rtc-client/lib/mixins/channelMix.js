@@ -1,6 +1,6 @@
 /**
  * Mixin for channel
- * @memberOf module:@the-/rtc.constants.mixins
+ * @memberof module:@the-/rtc.constants.mixins
  * @function channelMix
  * @param {function} Class
  * @returns {function} Class
@@ -52,7 +52,7 @@ function channelMix(Class) {
      * Subscribe topic on pub-sub channel
      * @param {string} topic
      * @param {Function} callback
-     * @returns {function(): void}
+     * @returns {function()}
      */
     subscribePubSubChannel(topic, callback) {
       const subscription = (received) => {

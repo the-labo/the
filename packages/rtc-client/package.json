@@ -54,12 +54,12 @@
   "repository": "the-labo/the",
   "scripts": {
     "build": "../../misc/scripts/pkgBuild.js",
-    "build:example": "npx webpack example/example-entrypoint.js -o example/example-bundle.js --mode=development",
+    "build:example": "npx webpack-cli example/example-entrypoint.js -o example/example-bundle.js --mode=development --devtool=eval",
     "build:example:watch": "npx webpack example/example-entrypoint.js -o example/example-bundle.js --mode=development -w",
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
   },
-  "version": "15.4.2"
+  "version": "15.4.4"
 }

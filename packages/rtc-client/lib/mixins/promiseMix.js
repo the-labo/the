@@ -1,6 +1,6 @@
 /**
  * Mixin for promise
- * @memberOf module:@the-/rtc.constants.mixins
+ * @memberof module:@the-/rtc.constants.mixins
  * @function promiseMix
  * @param {function} Class
  * @returns {function} Class

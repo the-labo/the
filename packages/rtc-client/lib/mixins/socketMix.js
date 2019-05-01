@@ -1,6 +1,6 @@
 /**
  * Mixin for socket
- * @memberOf module:@the-/rtc.constants.mixins
+ * @memberof module:@the-/rtc.constants.mixins
  * @function socketMix
  * @param {function} Class
  * @returns {function} Class
@@ -10,7 +10,6 @@
 const { cleanup } = require('asobj')
 const qs = require('qs')
 const io = require('socket.io-client')
-const { resolve: resolveUrl } = require('url')
 const debug = require('debug')('the:rtc:client')
 const NAMESPACE = '/rtc'
 
@@ -30,11 +29,12 @@ function socketMix(Class) {
 
     createSocket(url, { forceNew, path, query }) {
       const queryString = qs.stringify(cleanup(query))
-      const socket = io(resolveUrl(url, `${NAMESPACE}?${queryString}`), {
+      const ioURL = new URL(`${NAMESPACE}?${queryString}`, url).href
+      debug('ioURL', ioURL)
+      const socket = io(ioURL, {
         forceNew,
         path,
       })
-      debug('url', url)
       return socket
     }
 

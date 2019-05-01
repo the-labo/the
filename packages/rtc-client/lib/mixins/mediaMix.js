@@ -1,6 +1,6 @@
 /**
  * Mixin for media
- * @memberOf module:@the-/rtc.constants.mixins
+ * @memberof module:@the-/rtc.constants.mixins
  * @function mediaMix
  * @param {function} Class
  * @returns {function} Class

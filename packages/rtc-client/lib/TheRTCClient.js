@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/rtc-client
+ * @memberof module:@the-/rtc-client
  * @class TheRTCClient
  */
 'use strict'
