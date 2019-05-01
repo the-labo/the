@@ -7,7 +7,9 @@
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "eslint-config-prettier": "^4.2.0"
+  },
   "engines": {
     "node": ">=10",
     "npm": ">=6"
@@ -15,7 +17,7 @@
   "homepage": "https://github.com/the-labo/the/tree/master/packages/eslint-config-prettier#readme",
   "keywords": [],
   "license": "MIT",
-  "main": "index.json",
+  "main": "index.js",
   "name": "@the-/eslint-config-prettier",
   "publishConfig": {
     "access": "public"
@@ -27,5 +29,5 @@
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
   },
-  "version": "15.4.1"
+  "version": "15.4.3"
 }
