@@ -13,7 +13,7 @@ const waitChannelOpen = require('../helpers/waitChannelOpen')
 
 /** @lends SFUProxyEdge */
 class SFUProxyEdge {
-  constructor ({ iceServers }) {
+  constructor({ iceServers }) {
     this.connection = new RTCPeerConnection({ iceServers }, {})
     this.receivedIces = []
     this.sendingIceCandidates = []
@@ -40,7 +40,7 @@ class SFUProxyEdge {
     }
   }
 
-  listenIceCandidate (callback) {
+  listenIceCandidate(callback) {
     while (this.sendingIceCandidates.length > 0) {
       callback(this.sendingIceCandidates.shift())
     }
@@ -51,7 +51,7 @@ class SFUProxyEdge {
     })
   }
 
-  pipe (edge) {
+  pipe(edge) {
     const { connection } = this
 
     // Pipe channels
@@ -71,7 +71,7 @@ class SFUProxyEdge {
     })
   }
 
-  registerChannel (channel) {
+  registerChannel(channel) {
     const channelName = channel.label
     if (this.channels[channelName]) {
       throw new Error(
@@ -81,7 +81,7 @@ class SFUProxyEdge {
     this.channels[channelName] = channel
   }
 
-  async addIceCandidate (ice) {
+  async addIceCandidate(ice) {
     const { connection } = this
     try {
       await connection.addIceCandidate(new RTCIceCandidate(ice))
@@ -94,7 +94,7 @@ class SFUProxyEdge {
     }
   }
 
-  async close () {
+  async close() {
     const { connection } = this
     for (const channel of Object.values(this.channels)) {
       await channel.close()
@@ -102,7 +102,7 @@ class SFUProxyEdge {
     await connection.close()
   }
 
-  async receiveCounterpartChannel (counterpartChannel, options = {}) {
+  async receiveCounterpartChannel(counterpartChannel, options = {}) {
     const { retry = 5, retryInterval = 100 } = options
     const channelName = counterpartChannel.label
     const channel = this.channels[channelName]
@@ -112,7 +112,7 @@ class SFUProxyEdge {
         throw new Error(
           `[${
             this.constructor.name
-            }] Unknown channel: "${channelName}" (known: ${Object.keys(
+          }] Unknown channel: "${channelName}" (known: ${Object.keys(
             this.channels,
           )})`,
         )
@@ -140,7 +140,7 @@ class SFUProxyEdge {
     })
   }
 
-  async receiveCounterpartTrack (track, streams) {
+  async receiveCounterpartTrack(track, streams) {
     const { connection } = this
     if (connection.connectionState !== 'new') {
       console.warn(
@@ -150,7 +150,7 @@ class SFUProxyEdge {
     connection.addTrack(track, ...streams)
   }
 
-  async receiveICE (ice) {
+  async receiveICE(ice) {
     const { connection } = this
     if (!ice.ice) {
       return
@@ -162,12 +162,12 @@ class SFUProxyEdge {
     await this.addIceCandidate(ice.ice)
   }
 
-  async setLocalDescription (desc) {
+  async setLocalDescription(desc) {
     const { connection } = this
     await connection.setLocalDescription(new RTCSessionDescription(desc))
   }
 
-  async setRemoteDescription (desc) {
+  async setRemoteDescription(desc) {
     const { connection } = this
     await connection.setRemoteDescription(new RTCSessionDescription(desc))
     while (this.receivedIces.length > 0) {

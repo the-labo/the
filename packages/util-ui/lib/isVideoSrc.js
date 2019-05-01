@@ -7,9 +7,9 @@
  */
 'use strict'
 
+const { get } = require('bwindow')
 const path = require('path')
 const { URL } = require('url')
-const { get } = require('bwindow')
 const videoExtensions = require('video-extensions')
 
 const videoExtNames = [...videoExtensions]

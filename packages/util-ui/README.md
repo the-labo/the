@@ -79,18 +79,18 @@ Usage
 ## API Guide
 
 ### function
-- [asHOC()](./doc/api/api.md#asHOC)
-- [changedProps(prevProps,props)](./doc/api/api.md#changedProps)
-- [colorAlpha(color,alpha)](./doc/api/api.md#colorAlpha)
-- [eventHandlersFor(props,options)](./doc/api/api.md#eventHandlersFor)
-- [htmlAttributesFor(props,options)](./doc/api/api.md#htmlAttributesFor)
-- [isKeyCode(code,name)](./doc/api/api.md#isKeyCode)
-- [isServerSide()](./doc/api/api.md#isServerSide)
-- [isVideoSrc(src)](./doc/api/api.md#isVideoSrc)
-- [newId(options)](./doc/api/api.md#newId)
-- [readFileAsDataURL()](./doc/api/api.md#readFileAsDataURL)
-- [toggleBodyClass(className,state&#x3D;)](./doc/api/api.md#toggleBodyClass)
-- [.asStyleData(scopeSelector,data)](./doc/api/api.md#module_util-component.asStyleData)
+- [.asHOC()](./doc/api/api.md#module_@the-/util-ui.asHOC)
+- [.asStyleData(scopeSelector,data)](./doc/api/api.md#module_@the-/util-ui.asStyleData)
+- [.changedProps(prevProps,props)](./doc/api/api.md#module_@the-/util-ui.changedProps)
+- [.colorAlpha(color,alpha)](./doc/api/api.md#module_@the-/util-ui.colorAlpha)
+- [.eventHandlersFor(props,options)](./doc/api/api.md#module_@the-/util-ui.eventHandlersFor)
+- [.htmlAttributesFor(props,options)](./doc/api/api.md#module_@the-/util-ui.htmlAttributesFor)
+- [.isKeyCode(code,name)](./doc/api/api.md#module_@the-/util-ui.isKeyCode)
+- [.isServerSide()](./doc/api/api.md#module_@the-/util-ui.isServerSide)
+- [.isVideoSrc(src)](./doc/api/api.md#module_@the-/util-ui.isVideoSrc)
+- [.newId(options)](./doc/api/api.md#module_@the-/util-ui.newId)
+- [.readFileAsDataURL()](./doc/api/api.md#module_@the-/util-ui.readFileAsDataURL)
+- [.toggleBodyClass(className,state&#x3D;)](./doc/api/api.md#module_@the-/util-ui.toggleBodyClass)
 
 <!-- LICENSE Start -->
 <a name="license"></a>
