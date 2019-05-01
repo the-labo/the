@@ -15,8 +15,11 @@
   "homepage": "https://github.com/the-labo/the/tree/master/packages/eslint-config-jsdoc#readme",
   "keywords": [],
   "license": "MIT",
-  "main": "index.json",
+  "main": "index.js",
   "name": "@the-/eslint-config-jsdoc",
+  "peerDependencies": {
+    "eslint-plugin-jsdoc": ">=4"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -27,5 +30,5 @@
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
   },
-  "version": "15.4.1"
+  "version": "15.4.2"
 }

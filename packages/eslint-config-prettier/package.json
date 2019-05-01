@@ -19,6 +19,9 @@
   "license": "MIT",
   "main": "index.js",
   "name": "@the-/eslint-config-prettier",
+  "peerDependencies": {
+    "eslint-plugin-prettier": ">=3"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -29,5 +32,5 @@
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
   },
-  "version": "15.4.3"
+  "version": "15.4.4"
 }
