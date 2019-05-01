@@ -54,22 +54,26 @@ async function build(dirname = process.cwd(), options = {}) {
   ]
   const buildBud = async () => coz.render(budPattern)
   const buildJs = async () => {
-    await theCode().format(path.join(libDir, '**/*.*'), {
-      ignore: ['**/index.*'],
-    })
+    await theCode().format(['*.*', '.*.bud'])
+    const libExists = await existsAsync(libDir)
+    if (libExists) {
+      await theCode().format(path.join(libDir, '**/*.*'), {
+        ignore: ['**/index.*'],
+      })
 
-    await buildShim(libDir, shimDir, {
-      jsPattern,
-      plugins,
-      presets: presetsFor(),
-    })
+      await buildShim(libDir, shimDir, {
+        jsPattern,
+        plugins,
+        presets: presetsFor(),
+      })
 
-    // Generate esm shim
-    await buildESM(libDir, esmShimDir, {
-      jsPattern,
-      plugins,
-      presets: presetsFor({ modules: false }),
-    })
+      // Generate esm shim
+      await buildESM(libDir, esmShimDir, {
+        jsPattern,
+        plugins,
+        presets: presetsFor({ modules: false }),
+      })
+    }
   }
 
   const cwd = process.cwd()

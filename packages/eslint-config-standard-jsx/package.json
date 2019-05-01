@@ -1,0 +1,33 @@
+{
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "eslint-config-standard-jsx": "^6.0.2"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/eslint-config-standard-jsx#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@the-/eslint-config-standard-jsx",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
+  "scripts": {
+    "build": "../../misc/scripts/pkgBuild.js",
+    "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build",
+    "prepublishOnly": "npm run test",
+    "test": "../../misc/scripts/pkgTest.js"
+  },
+  "version": "15.4.1"
+}

@@ -42,4 +42,5 @@ This is hoge
 
 | Param | Type |
 | --- | --- |
-| msg | <code>string</code> |
+| msg | <code>string</code> | 
+

@@ -1,40 +1,35 @@
 [
   {
     "id": "module:mock-project-01",
-    "kind": "module",
     "longname": "module:mock-project-01",
+    "name": "mock-project-01",
+    "kind": "module",
     "meta": {
-      "filename": "foo.js",
       "lineno": 1,
+      "filename": "foo.js",
       "path": "/Users/okuni/Projects/the/packages/script-doc/misc/mocks/mock-project-01/lib"
     },
-    "name": "mock-project-01",
     "order": 0
   },
   {
     "id": "module:hoge2",
-    "kind": "module",
     "longname": "module:hoge2",
+    "name": "hoge2",
+    "kind": "module",
     "meta": {
-      "filename": "foo.js",
       "lineno": 20,
+      "filename": "foo.js",
       "path": "/Users/okuni/Projects/the/packages/script-doc/misc/mocks/mock-project-01/lib"
     },
-    "name": "hoge2",
     "order": 1
   },
   {
     "id": "module:hoge2~Hoge#say",
-    "kind": "function",
     "longname": "module:hoge2~Hoge#say",
-    "memberof": "module:hoge2~Hoge",
-    "meta": {
-      "filename": "foo.js",
-      "lineno": 15,
-      "path": "/Users/okuni/Projects/the/packages/script-doc/misc/mocks/mock-project-01/lib"
-    },
     "name": "say",
-    "order": 4,
+    "kind": "function",
+    "scope": "instance",
+    "memberof": "module:hoge2~Hoge",
     "params": [
       {
         "type": {
@@ -45,20 +40,20 @@
         "name": "msg"
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 15,
+      "filename": "foo.js",
+      "path": "/Users/okuni/Projects/the/packages/script-doc/misc/mocks/mock-project-01/lib"
+    },
+    "order": 4
   },
   {
     "id": "module:mock-project-01.foo",
-    "kind": "function",
     "longname": "module:mock-project-01.foo",
-    "memberof": "module:mock-project-01",
-    "meta": {
-      "filename": "foo.js",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/script-doc/misc/mocks/mock-project-01/lib"
-    },
     "name": "foo",
-    "order": 2,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:mock-project-01",
     "params": [
       {
         "type": {
@@ -70,21 +65,26 @@
         "name": "a1"
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "This is hoge",
-    "id": "module:hoge2~Hoge",
-    "kind": "class",
-    "longname": "module:hoge2~Hoge",
-    "memberof": "module:hoge2",
     "meta": {
+      "lineno": 2,
       "filename": "foo.js",
-      "lineno": 13,
       "path": "/Users/okuni/Projects/the/packages/script-doc/misc/mocks/mock-project-01/lib"
     },
+    "order": 2
+  },
+  {
+    "id": "module:hoge2~Hoge",
+    "longname": "module:hoge2~Hoge",
     "name": "Hoge",
-    "order": 3,
-    "scope": "inner"
+    "kind": "class",
+    "scope": "inner",
+    "description": "This is hoge",
+    "memberof": "module:hoge2",
+    "meta": {
+      "lineno": 13,
+      "filename": "foo.js",
+      "path": "/Users/okuni/Projects/the/packages/script-doc/misc/mocks/mock-project-01/lib"
+    },
+    "order": 3
   }
 ]

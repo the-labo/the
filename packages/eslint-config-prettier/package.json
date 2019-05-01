@@ -1,0 +1,31 @@
+{
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/eslint-config-prettier#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.json",
+  "name": "@the-/eslint-config-prettier",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
+  "scripts": {
+    "build": "../../misc/scripts/pkgBuild.js",
+    "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build",
+    "prepublishOnly": "npm run test",
+    "test": "../../misc/scripts/pkgTest.js"
+  },
+  "version": "15.4.1"
+}
