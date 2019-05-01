@@ -1,6 +1,6 @@
 /**
  * Define bud for server controller
- * @memberOf module:@the-/templates
+ * @memberof module:@the-/templates
  * @function Ctrl
  * @param {Object} config
  * @param {Boolean} [config.cjs=false]
@@ -15,7 +15,7 @@ const _tmpl = require('./_tmpl')
 
 /** @lends module:@the-/templates.Ctrl */
 function Ctrl(config) {
-  const { cjs = false } = config
+  const { cjs = false, memberof = 'controllers' } = config
   let { name } = config
   assert(name, 'name is required')
   name = name.replace(/Ctrl$/, '')
@@ -23,6 +23,7 @@ function Ctrl(config) {
   const tmpl = _tmpl(cjs ? 'cjs_Ctrl.hbs' : 'Ctrl.hbs')
   return {
     data: {
+      memberof,
       name: path.basename(name) + 'Ctrl',
     },
     force: false,

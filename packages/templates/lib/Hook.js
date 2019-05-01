@@ -1,6 +1,6 @@
 /**
  * Hook
- * @memberOf module:@the-/templates
+ * @memberof module:@the-/templates
  * @function Hook
  * @param {Object} config
  * @returns {Object}

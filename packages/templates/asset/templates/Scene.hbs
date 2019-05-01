@@ -1,5 +1,6 @@
 /**
  * {{name}}
+ * @memberof {{memberof}}
  * @class {{name}}
  */
 'use strict'
@@ -10,7 +11,7 @@ import {bindScope} from '@the-/mixin-scene/shim'
 @bindScope('{{scopePath}}')
 class {{name}}Base extends Scene {}
 
-/** @lends {{name}} */
+/** @lends {{memberof}}.{{name}} */
 class {{name}} extends {{name}}Base {
 }
 

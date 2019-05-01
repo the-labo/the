@@ -13,6 +13,7 @@ const path = require('path')
 const reserved = require('reserved')
 const { findupDir } = require('@the-/util-path')
 const _tmpl = require('./_tmpl')
+const assert = require('@the-/assert')('[@the-/templates][dir]')
 
 const shouldRequire = (name) => {
   return (
@@ -25,7 +26,7 @@ const shouldRequire = (name) => {
 const handleRestConfig = (rest) => {
   const restKeys = Object.keys(rest)
   if (restKeys.length > 0) {
-    console.warn(`[the-templates][dir] Unknown configs: ${restKeys}`)
+    console.warn(`[@the-/templates][dir] Unknown configs: ${restKeys}`)
   }
 }
 
@@ -52,7 +53,8 @@ const guessName = (dirname) => {
 /** @lends module:@the-/templates.dir */
 function dir(config) {
   const { annotations, cjs = config.node, dirname, ext, ...rest } = config
-  handleRestConfig(rest)
+  assert(!!dirname, 'dirname is required')
+  handleRestConfig(rest, path.relative(process.cwd(), dirname))
   const TMPL_PATH = cjs ? _tmpl('cjs_dir.hbs') : _tmpl('dir.hbs')
   const modules = fs
     .readdirSync(dirname)
@@ -95,7 +97,8 @@ Object.assign(dir, {
       tmpl,
       ...rest
     } = config
-    handleRestConfig(rest)
+    assert(!!dirname, 'dirname is required')
+    handleRestConfig(rest, path.relative(process.cwd(), dirname))
     const TMPL_PATH = tmpl || (cjs ? _tmpl('cjs_dir.hbs') : _tmpl('dir.hbs'))
     const modules = aglob
       .sync('**/*.*', { cwd: dirname, ignore: [].concat(ignore) })

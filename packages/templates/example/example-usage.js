@@ -7,4 +7,4 @@ const bud = Readme({
   pkg: { name: 'foo', version: 'bar' },
 })
 
-coz.render(bud,)
+coz.render(bud)

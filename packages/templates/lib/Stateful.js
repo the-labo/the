@@ -1,6 +1,6 @@
 /**
  * Stateful
- * @memberOf module:@the-/templates
+ * @memberof module:@the-/templates
  * @function Stateful
  * @param {Object} config
  * @returns {Object}
@@ -13,13 +13,14 @@ const _tmpl = require('./_tmpl')
 
 /** @lends module:@the-/templates.Stateful */
 function Stateful(config) {
-  const { name } = config
+  const { memberOf = 'ui.stateful', name } = config
   assert(name, 'name is required')
 
   const tmpl = _tmpl('Stateful.hbs')
   return {
     data: {
       contextPath: path.relative(name, 'context'),
+      memberOf,
       name: path.basename(name) + '',
     },
     force: false,

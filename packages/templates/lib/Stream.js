@@ -1,6 +1,6 @@
 /**
  * Stream
- * @memberOf module:@the-/templates
+ * @memberof module:@the-/templates
  * @function Stream
  * @param {Object} config
  * @returns {Object}
@@ -13,7 +13,7 @@ const _tmpl = require('./_tmpl')
 
 /** @lends module:@the-/templates.Stream */
 function Stream(config) {
-  const { cjs = false } = config
+  const { cjs = false, memberof = 'streams' } = config
   let { name } = config
   assert(name, 'name is required')
   name = name.replace(/Stream$/, '')
@@ -21,6 +21,7 @@ function Stream(config) {
   const tmpl = _tmpl(cjs ? 'cjs_Stream.hbs' : 'Stream.hbs')
   return {
     data: {
+      memberof,
       name: path.basename(name) + 'Stream',
     },
     force: false,

@@ -1,6 +1,6 @@
 /**
  * Define bud for mapping
- * @memberOf module:@the-/templates
+ * @memberof module:@the-/templates
  * @function mapping
  * @returns {Object}
  */
@@ -11,7 +11,14 @@ const _tmpl = require('./_tmpl')
 
 /** @lends module:@the-/templates.mapping */
 function mapping(config) {
-  const { cjs = false, mapping, name, requireAs, requirePath } = config
+  const {
+    cjs = false,
+    mapping,
+    memberof = 'mappings',
+    name,
+    requireAs,
+    requirePath,
+  } = config
   const ext = cjs ? '.js' : '.mjs'
   const TMPL_PATH = cjs ? _tmpl('cjs_mapping.hbs') : _tmpl('mapping.hbs')
   ok(requirePath, 'requirePath is required')
@@ -19,6 +26,7 @@ function mapping(config) {
   return {
     data: {
       mapping,
+      memberof,
       name,
       requireAs,
       requirePath,

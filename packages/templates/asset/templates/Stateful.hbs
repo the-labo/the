@@ -1,11 +1,15 @@
 /**
  * {{pascalcase name}} component
+ * @memberof {{memberOf}}
+ * @class {{pascalcase name}}
+ * @augments React.Component
  */
 'use strict'
 
 import React from 'react'
 import context from '{{contextPath}}'
 
+/** @lends {{memberOf}}.{{pascalcase name}} */
 class {{pascalcase name}} extends React.Component {
   #stateful = context.stateful(
     (state) => ({
@@ -13,6 +17,7 @@ class {{pascalcase name}} extends React.Component {
     () => ({
     }),
   )
+
   render () {
     return this.#stateful(
      ({

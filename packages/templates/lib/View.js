@@ -1,6 +1,6 @@
 /**
  * View
- * @memberOf module:@the-/templates
+ * @memberof module:@the-/templates
  * @function View
  * @param {Object} config
  * @returns {Object}

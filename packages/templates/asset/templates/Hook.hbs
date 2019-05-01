@@ -1,5 +1,6 @@
 /**
  * Define {{pascalcase name}} handlers
+ * @memberof {{memberof}}
  * @function {{pascalcase name}}
  * @returns {Object} Defined handlers
  */
@@ -9,7 +10,7 @@ import Debug from 'debug'
 
 const debug = Debug('app:hook:{{camelcase name}}')
 
-/** @lends {{pascalcase name}}  */
+/** @lends {{memberof}}.{{pascalcase name}}  */
 function {{pascalcase name}} (db) {
   return {
     async onCreate ({id, created}) {},

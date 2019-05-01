@@ -1,5 +1,6 @@
 /**
  * Define {{pascalcase name}} handlers
+ * @memberof {{memberof}}
  * @function {{pascalcase name}}
  * @returns {Object} Defined handlers
  */
@@ -7,7 +8,7 @@
 
 const debug = require('debug')('app:hook:{{camelcase name}}')
 
-/** @lends {{pascalcase name}}  */
+/** @lends {{memberof}}.{{pascalcase name}}  */
 function {{pascalcase name}} (db) {
   return {
     async onCreate ({id, created}) {},
