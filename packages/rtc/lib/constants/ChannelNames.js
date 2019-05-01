@@ -1,11 +1,13 @@
 /**
  * Name of channels
- * @enum {string} ChannelNames
+ * @memberof module:@the-/rtc.constants
+ * @enum {string}
+ * @name ChannelNames
  */
 'use strict'
 
 module.exports = Object.freeze(
-  /** @lends ChannelNames */
+  /** @lends module:@the-/rtc.constants.ChannelNames */
   {
     /** @deprecated */
     DEFAULT_CHANNEL: 'default',

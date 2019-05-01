@@ -1,11 +1,13 @@
 /**
  * Events for peer
- * @enum {string} PeerEvents
+ * @memberof module:@the-/rtc.constants
+ * @enum {string}
+ * @name PeerEvents
  */
 'use strict'
 
 module.exports = Object.freeze(
-  /** @lends PeerEvents */
+  /** @lends module:@the-/rtc.constants.PeerEvents */
   {
     CONNECTION_STATE_CHANGE: 'connectionstatechange',
     DATA_CHANNEL: 'datachannel',

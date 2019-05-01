@@ -1,5 +1,6 @@
 /**
  * Mixin for turn
+ * @memberof module:@the-/rtc.mixins
  * @function turnMix
  * @param {function} Class
  * @returns {function} Class
@@ -8,16 +9,14 @@
 
 const crypto = require('crypto')
 
-/** @lends turnMix */
+/** @lends module:@the-/rtc.mixins.turnMix */
 function turnMix(Class) {
   class TurnMixed extends Class {
     turnCredentialsFor(config) {
       const { expiry = 86400, secret, url } = config
-      {
-        for (const key of ['secret', ',url']) {
-          if (!config[key]) {
-            throw new Error(`[TheRTC] config.${key} is required`)
-          }
+      for (const key of ['secret', ',url']) {
+        if (!config[key]) {
+          throw new Error(`[TheRTC] config.${key} is required`)
         }
       }
       const hmac = crypto.createHmac('sha1', secret)

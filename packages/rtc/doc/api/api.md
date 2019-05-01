@@ -26,21 +26,11 @@
 ## Functions
 
 <dl>
-<dt><a href="#handleUnknownKeys">handleUnknownKeys()</a></dt>
-<dd></dd>
-<dt><a href="#parseTurn secret">parseTurn secret(secret)</a> ⇒ <code>Object</code></dt>
-<dd></dd>
+<dt><a href="#default">default()</a></dt>
+<dd><p>Alias of {@memberOf module:@the-/rtc</p>
+</dd>
 <dt><a href="#httpMix">httpMix(Class)</a> ⇒ <code>function</code></dt>
 <dd><p>Mixin for http</p>
-</dd>
-<dt><a href="#ioMix">ioMix(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>Mixin for io</p>
-</dd>
-<dt><a href="#sfuMix">sfuMix(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>Mixin for sfu</p>
-</dd>
-<dt><a href="#turnMix">turnMix(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>Mixin for turn</p>
 </dd>
 </dl>
 
@@ -49,14 +39,25 @@
 ## @the-/rtc
 RTC server for the-frameworks
 
-**Version**: 15.4.0  
+**Version**: 15.4.1  
 **License**: MIT  
 
 * [@the-/rtc](#module_@the-/rtc)
     * [.TheRTC](#module_@the-/rtc.TheRTC)
         * [new TheRTC([config])](#new_module_@the-/rtc.TheRTC_new)
+    * [.constants](#module_@the-/rtc.constants) : <code>object</code>
+        * [.ChannelNames](#module_@the-/rtc.constants.ChannelNames) : <code>enum</code>
+        * [.IOEvents](#module_@the-/rtc.constants.IOEvents) : <code>enum</code>
+        * [.PeerEvents](#module_@the-/rtc.constants.PeerEvents) : <code>enum</code>
+        * [.TopologyTypes](#module_@the-/rtc.constants.TopologyTypes) : <code>enum</code>
+    * [.helpers](#module_@the-/rtc.helpers) : <code>object</code>
+        * [.handleUnknownKeys()](#module_@the-/rtc.helpers.handleUnknownKeys)
+        * [.parseTurn secret(secret)](#module_@the-/rtc.helpers.parseTurn secret) ⇒ <code>Object</code>
+    * [.mixins](#module_@the-/rtc.mixins) : <code>object</code>
+        * [.ioMix(Class)](#module_@the-/rtc.mixins.ioMix) ⇒ <code>function</code>
+        * [.sfuMix(Class)](#module_@the-/rtc.mixins.sfuMix) ⇒ <code>function</code>
+        * [.turnMix(Class)](#module_@the-/rtc.mixins.turnMix) ⇒ <code>function</code>
     * [.create(...args)](#module_@the-/rtc.create) ⇒ <code>TheRTC</code>
-    * [.default()](#module_@the-/rtc.default)
 
 <a name="module_@the-/rtc.TheRTC"></a>
 
@@ -77,6 +78,122 @@ RTC server for the-frameworks
 | [config.turn.expiry] | <code>string</code> |  | TURN server expiry |
 | [config.topology] | <code>string</code> | <code>&quot;&#x27;mesh&#x27;&quot;</code> | 'mesh', 'sfu' |
 
+<a name="module_@the-/rtc.constants"></a>
+
+### rtc.constants : <code>object</code>
+Constant variables
+
+**Kind**: static namespace of [<code>@the-/rtc</code>](#module_@the-/rtc)  
+
+* [.constants](#module_@the-/rtc.constants) : <code>object</code>
+    * [.ChannelNames](#module_@the-/rtc.constants.ChannelNames) : <code>enum</code>
+    * [.IOEvents](#module_@the-/rtc.constants.IOEvents) : <code>enum</code>
+    * [.PeerEvents](#module_@the-/rtc.constants.PeerEvents) : <code>enum</code>
+    * [.TopologyTypes](#module_@the-/rtc.constants.TopologyTypes) : <code>enum</code>
+
+<a name="module_@the-/rtc.constants.ChannelNames"></a>
+
+#### constants.ChannelNames : <code>enum</code>
+Name of channels
+
+**Kind**: static enum of [<code>constants</code>](#module_@the-/rtc.constants)  
+<a name="module_@the-/rtc.constants.IOEvents"></a>
+
+#### constants.IOEvents : <code>enum</code>
+Events for IO
+
+**Kind**: static enum of [<code>constants</code>](#module_@the-/rtc.constants)  
+<a name="module_@the-/rtc.constants.PeerEvents"></a>
+
+#### constants.PeerEvents : <code>enum</code>
+Events for peer
+
+**Kind**: static enum of [<code>constants</code>](#module_@the-/rtc.constants)  
+<a name="module_@the-/rtc.constants.TopologyTypes"></a>
+
+#### constants.TopologyTypes : <code>enum</code>
+Topology type of web rtc
+
+**Kind**: static enum of [<code>constants</code>](#module_@the-/rtc.constants)  
+**See**
+
+- https://webrtcglossary.com/mesh/
+- https://webrtcglossary.com/sfu/
+- https://webrtcglossary.com/mcu/
+
+<a name="module_@the-/rtc.helpers"></a>
+
+### rtc.helpers : <code>object</code>
+Helpers
+
+**Kind**: static namespace of [<code>@the-/rtc</code>](#module_@the-/rtc)  
+
+* [.helpers](#module_@the-/rtc.helpers) : <code>object</code>
+    * [.handleUnknownKeys()](#module_@the-/rtc.helpers.handleUnknownKeys)
+    * [.parseTurn secret(secret)](#module_@the-/rtc.helpers.parseTurn secret) ⇒ <code>Object</code>
+
+<a name="module_@the-/rtc.helpers.handleUnknownKeys"></a>
+
+#### helpers.handleUnknownKeys()
+**Kind**: static method of [<code>helpers</code>](#module_@the-/rtc.helpers)  
+<a name="module_@the-/rtc.helpers.parseTurn secret"></a>
+
+#### helpers.parseTurn secret(secret) ⇒ <code>Object</code>
+**Kind**: static method of [<code>helpers</code>](#module_@the-/rtc.helpers)  
+**Returns**: <code>Object</code> - Parsed values  
+
+| Param | Type |
+| --- | --- |
+| secret | <code>string</code> | 
+
+<a name="module_@the-/rtc.mixins"></a>
+
+### rtc.mixins : <code>object</code>
+Class mixins
+
+**Kind**: static namespace of [<code>@the-/rtc</code>](#module_@the-/rtc)  
+
+* [.mixins](#module_@the-/rtc.mixins) : <code>object</code>
+    * [.ioMix(Class)](#module_@the-/rtc.mixins.ioMix) ⇒ <code>function</code>
+    * [.sfuMix(Class)](#module_@the-/rtc.mixins.sfuMix) ⇒ <code>function</code>
+    * [.turnMix(Class)](#module_@the-/rtc.mixins.turnMix) ⇒ <code>function</code>
+
+<a name="module_@the-/rtc.mixins.ioMix"></a>
+
+#### mixins.ioMix(Class) ⇒ <code>function</code>
+Mixin for io
+
+**Kind**: static method of [<code>mixins</code>](#module_@the-/rtc.mixins)  
+**Returns**: <code>function</code> - Class  
+
+| Param | Type |
+| --- | --- |
+| Class | <code>function</code> | 
+
+<a name="module_@the-/rtc.mixins.sfuMix"></a>
+
+#### mixins.sfuMix(Class) ⇒ <code>function</code>
+Mixin for sfu
+
+**Kind**: static method of [<code>mixins</code>](#module_@the-/rtc.mixins)  
+**Returns**: <code>function</code> - Class  
+
+| Param | Type |
+| --- | --- |
+| Class | <code>function</code> | 
+
+<a name="module_@the-/rtc.mixins.turnMix"></a>
+
+#### mixins.turnMix(Class) ⇒ <code>function</code>
+Mixin for turn
+
+**Kind**: static method of [<code>mixins</code>](#module_@the-/rtc.mixins)  
+**Returns**: <code>function</code> - Class  
+
+| Param | Type |
+| --- | --- |
+| Class | <code>function</code> | 
+
 <a name="module_@the-/rtc.create"></a>
 
 ### rtc.create(...args) ⇒ <code>TheRTC</code>
@@ -88,12 +205,6 @@ Create a TheRTC instance
 | --- | --- |
 | ...args | <code>\*</code> | 
 
-<a name="module_@the-/rtc.default"></a>
-
-### rtc.default()
-Alias of [create](#module_@the-/rtc.create)
-
-**Kind**: static method of [<code>@the-/rtc</code>](#module_@the-/rtc)  
 <a name="SFUProxy"></a>
 
 ## SFUProxy
@@ -121,60 +232,17 @@ Webrtc proxy connections
 
 ## SFUProxyPool
 **Kind**: global class  
-<a name="handleUnknownKeys"></a>
+<a name="default"></a>
 
-## handleUnknownKeys()
+## default()
+Alias of {@memberOf module:@the-/rtc
+
 **Kind**: global function  
-<a name="parseTurn secret"></a>
-
-## parseTurn secret(secret) ⇒ <code>Object</code>
-**Kind**: global function  
-**Returns**: <code>Object</code> - Parsed values  
-
-| Param | Type |
-| --- | --- |
-| secret | <code>string</code> | 
-
+**Link**: module:@the-/rtc.create}  
 <a name="httpMix"></a>
 
 ## httpMix(Class) ⇒ <code>function</code>
 Mixin for http
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-<a name="ioMix"></a>
-
-## ioMix(Class) ⇒ <code>function</code>
-Mixin for io
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-<a name="sfuMix"></a>
-
-## sfuMix(Class) ⇒ <code>function</code>
-Mixin for sfu
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-<a name="turnMix"></a>
-
-## turnMix(Class) ⇒ <code>function</code>
-Mixin for turn
 
 **Kind**: global function  
 **Returns**: <code>function</code> - Class  

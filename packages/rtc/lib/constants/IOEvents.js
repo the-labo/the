@@ -1,11 +1,13 @@
 /**
  * Events for IO
- * @enum {string} IOEvents
+ * @memberof module:@the-/rtc.constants
+ * @enum {string}
+ * @name IOEvents
  */
 'use strict'
 
 const IOEvents = Object.freeze(
-  /** @lends IOEvents */
+  /** @lends module:@the-/rtc.constants.IOEvents */
   {
     CLIENT_STATE: 'client:state',
     CONFIG_ICE_SERVERS: 'config:ice-servers',

@@ -8,10 +8,6 @@ const SFUProxyEdge = require('./SFUProxyEdge')
 
 /** @lends SFUProxyEdgeOfferer */
 class SFUProxyEdgeOfferer extends SFUProxyEdge {
-  constructor() {
-    super(...arguments)
-  }
-
   async proxyAnswer(answer) {
     const { from, pid, purpose, to } = answer
     const { connection } = this

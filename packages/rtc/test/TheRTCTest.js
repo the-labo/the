@@ -4,9 +4,9 @@
  */
 'use strict'
 
-const aport = require('aport').strict
+const aport = require('aport')
 const asleep = require('asleep')
-const { equal, ok } = require('assert')
+const { equal, ok } = require('assert').strict
 const socketIOClient = require('socket.io-client')
 const { TheRTCClient } = require('@the-/rtc-client')
 const IOEvents = require('../lib/constants/IOEvents')

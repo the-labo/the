@@ -5,7 +5,7 @@
     "name": "@the-/rtc",
     "kind": "module",
     "description": "RTC server for the-frameworks",
-    "version": "15.4.0",
+    "version": "15.4.1",
     "license": "MIT",
     "typicalname": "rtc",
     "meta": {
@@ -116,7 +116,7 @@
     "kind": "constructor",
     "description": "Webrtc proxy connections",
     "memberof": "SFUProxy",
-    "order": 16
+    "order": 19
   },
   {
     "id": "SFUProxy",
@@ -129,7 +129,7 @@
       "filename": "SFUProxy.js",
       "path": "/Users/okuni/Projects/the/packages/rtc/lib/sfu"
     },
-    "order": 15
+    "order": 18
   },
   {
     "id": "SFUProxyEdge",
@@ -142,7 +142,7 @@
       "filename": "SFUProxyEdge.js",
       "path": "/Users/okuni/Projects/the/packages/rtc/lib/sfu"
     },
-    "order": 17
+    "order": 20
   },
   {
     "id": "SFUProxyEdgeAnswerer",
@@ -158,7 +158,7 @@
       "filename": "SFUProxyEdgeAnswerer.js",
       "path": "/Users/okuni/Projects/the/packages/rtc/lib/sfu"
     },
-    "order": 18
+    "order": 21
   },
   {
     "id": "SFUProxyEdgeOfferer",
@@ -174,7 +174,7 @@
       "filename": "SFUProxyEdgeOfferer.js",
       "path": "/Users/okuni/Projects/the/packages/rtc/lib/sfu"
     },
-    "order": 19
+    "order": 22
   },
   {
     "id": "SFUProxyPool",
@@ -187,53 +187,27 @@
       "filename": "SFUProxyPool.js",
       "path": "/Users/okuni/Projects/the/packages/rtc/lib/sfu"
     },
-    "order": 20
+    "order": 23
   },
   {
-    "id": "handleUnknownKeys",
-    "longname": "handleUnknownKeys",
-    "name": "handleUnknownKeys",
+    "id": "default",
+    "longname": "default",
+    "name": "default",
     "kind": "function",
     "scope": "global",
-    "meta": {
-      "lineno": 1,
-      "filename": "handleUnknownKeys.js",
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/helpers"
-    },
-    "order": 9
-  },
-  {
-    "id": "parseTurn secret",
-    "longname": "parseTurn secret",
-    "name": "parseTurn secret",
-    "kind": "function",
-    "scope": "global",
-    "params": [
+    "description": "Alias of {@memberOf module:@the-/rtc",
+    "customTags": [
       {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "name": "secret"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "description": "Parsed values"
+        "tag": "link",
+        "value": "module:@the-/rtc.create}"
       }
     ],
     "meta": {
       "lineno": 1,
-      "filename": "parseTurnSecret.js",
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/helpers"
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib"
     },
-    "order": 10
+    "order": 1
   },
   {
     "id": "httpMix",
@@ -267,109 +241,7 @@
       "filename": "httpMix.js",
       "path": "/Users/okuni/Projects/the/packages/rtc/lib/mixins"
     },
-    "order": 11
-  },
-  {
-    "id": "ioMix",
-    "longname": "ioMix",
-    "name": "ioMix",
-    "kind": "function",
-    "scope": "global",
-    "description": "Mixin for io",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Class"
-      }
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "ioMix.js",
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/mixins"
-    },
-    "order": 12
-  },
-  {
-    "id": "sfuMix",
-    "longname": "sfuMix",
-    "name": "sfuMix",
-    "kind": "function",
-    "scope": "global",
-    "description": "Mixin for sfu",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Class"
-      }
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "sfuMix.js",
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/mixins"
-    },
     "order": 13
-  },
-  {
-    "id": "turnMix",
-    "longname": "turnMix",
-    "name": "turnMix",
-    "kind": "function",
-    "scope": "global",
-    "description": "Mixin for turn",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Class"
-      }
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "turnMix.js",
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/mixins"
-    },
-    "order": 14
   },
   {
     "id": "module:@the-/rtc.TheRTC",
@@ -386,64 +258,134 @@
     "order": 3
   },
   {
-    "id": "ChannelNames.DEFAULT_CHANNEL",
-    "longname": "ChannelNames.DEFAULT_CHANNEL",
-    "name": "DEFAULT_CHANNEL",
-    "kind": "member",
+    "id": "module:@the-/rtc.constants",
+    "longname": "module:@the-/rtc.constants",
+    "name": "constants",
+    "kind": "namespace",
     "scope": "static",
-    "memberof": "ChannelNames",
-    "deprecated": true,
+    "description": "Constant variables",
+    "memberof": "module:@the-/rtc",
     "meta": {
-      "lineno": 11,
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/constants"
+    },
+    "order": 6
+  },
+  {
+    "id": "module:@the-/rtc.helpers",
+    "longname": "module:@the-/rtc.helpers",
+    "name": "helpers",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Helpers",
+    "memberof": "module:@the-/rtc",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/helpers"
+    },
+    "order": 11
+  },
+  {
+    "id": "module:@the-/rtc.mixins",
+    "longname": "module:@the-/rtc.mixins",
+    "name": "mixins",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Class mixins",
+    "memberof": "module:@the-/rtc",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/mixins"
+    },
+    "order": 14
+  },
+  {
+    "id": "module:@the-/rtc.constants.ChannelNames",
+    "longname": "module:@the-/rtc.constants.ChannelNames",
+    "name": "ChannelNames",
+    "kind": "enum",
+    "scope": "static",
+    "description": "Name of channels",
+    "memberof": "module:@the-/rtc.constants",
+    "type": {
+      "names": [
+        "string"
+      ]
+    },
+    "meta": {
+      "lineno": 1,
       "filename": "ChannelNames.js",
       "path": "/Users/okuni/Projects/the/packages/rtc/lib/constants"
     },
     "order": 5
   },
   {
-    "id": "ChannelNames.PUB_SUB_CHANNEL",
-    "longname": "ChannelNames.PUB_SUB_CHANNEL",
-    "name": "PUB_SUB_CHANNEL",
-    "kind": "member",
+    "id": "module:@the-/rtc.constants.IOEvents",
+    "longname": "module:@the-/rtc.constants.IOEvents",
+    "name": "IOEvents",
+    "kind": "enum",
     "scope": "static",
-    "description": "Pipe line to send binary data",
-    "memberof": "ChannelNames",
-    "meta": {
-      "lineno": 13,
-      "filename": "ChannelNames.js",
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/constants"
+    "description": "Events for IO",
+    "memberof": "module:@the-/rtc.constants",
+    "type": {
+      "names": [
+        "string"
+      ]
     },
-    "order": 6
-  },
-  {
-    "id": "ChannelNames.STREAM_CHANNEL",
-    "longname": "ChannelNames.STREAM_CHANNEL",
-    "name": "STREAM_CHANNEL",
-    "kind": "member",
-    "scope": "static",
-    "description": "Pipe line to send binary data",
-    "memberof": "ChannelNames",
     "meta": {
-      "lineno": 15,
-      "filename": "ChannelNames.js",
+      "lineno": 1,
+      "filename": "IOEvents.js",
       "path": "/Users/okuni/Projects/the/packages/rtc/lib/constants"
     },
     "order": 7
   },
   {
-    "id": "ChannelNames.STREAM_CONTROL_CHANNEL",
-    "longname": "ChannelNames.STREAM_CONTROL_CHANNEL",
-    "name": "STREAM_CONTROL_CHANNEL",
-    "kind": "member",
+    "id": "module:@the-/rtc.constants.PeerEvents",
+    "longname": "module:@the-/rtc.constants.PeerEvents",
+    "name": "PeerEvents",
+    "kind": "enum",
     "scope": "static",
-    "description": "Pipe line to send binary data",
-    "memberof": "ChannelNames",
+    "description": "Events for peer",
+    "memberof": "module:@the-/rtc.constants",
+    "type": {
+      "names": [
+        "string"
+      ]
+    },
     "meta": {
-      "lineno": 17,
-      "filename": "ChannelNames.js",
+      "lineno": 1,
+      "filename": "PeerEvents.js",
       "path": "/Users/okuni/Projects/the/packages/rtc/lib/constants"
     },
     "order": 8
+  },
+  {
+    "id": "module:@the-/rtc.constants.TopologyTypes",
+    "longname": "module:@the-/rtc.constants.TopologyTypes",
+    "name": "TopologyTypes",
+    "kind": "enum",
+    "scope": "static",
+    "description": "Topology type of web rtc",
+    "memberof": "module:@the-/rtc.constants",
+    "type": {
+      "names": [
+        "string"
+      ]
+    },
+    "see": [
+      "https://webrtcglossary.com/mesh/",
+      "https://webrtcglossary.com/sfu/",
+      "https://webrtcglossary.com/mcu/"
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "TopologyTypes.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/constants"
+    },
+    "order": 9
   },
   {
     "id": "module:@the-/rtc.create",
@@ -481,18 +423,156 @@
     "order": 0
   },
   {
-    "id": "module:@the-/rtc.default",
-    "longname": "module:@the-/rtc.default",
-    "name": "default",
+    "id": "module:@the-/rtc.helpers.handleUnknownKeys",
+    "longname": "module:@the-/rtc.helpers.handleUnknownKeys",
+    "name": "handleUnknownKeys",
     "kind": "function",
     "scope": "static",
-    "description": "Alias of {@link module:@the-/rtc.create}",
-    "memberof": "module:@the-/rtc",
+    "memberof": "module:@the-/rtc.helpers",
     "meta": {
       "lineno": 1,
-      "filename": "default.js",
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib"
+      "filename": "handleUnknownKeys.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/helpers"
     },
-    "order": 1
+    "order": 10
+  },
+  {
+    "id": "module:@the-/rtc.helpers.parseTurn secret",
+    "longname": "module:@the-/rtc.helpers.parseTurn secret",
+    "name": "parseTurn secret",
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/rtc.helpers",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "secret"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Parsed values"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "parseTurnSecret.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/helpers"
+    },
+    "order": 12
+  },
+  {
+    "id": "module:@the-/rtc.mixins.ioMix",
+    "longname": "module:@the-/rtc.mixins.ioMix",
+    "name": "ioMix",
+    "kind": "function",
+    "scope": "static",
+    "description": "Mixin for io",
+    "memberof": "module:@the-/rtc.mixins",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "ioMix.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/mixins"
+    },
+    "order": 15
+  },
+  {
+    "id": "module:@the-/rtc.mixins.sfuMix",
+    "longname": "module:@the-/rtc.mixins.sfuMix",
+    "name": "sfuMix",
+    "kind": "function",
+    "scope": "static",
+    "description": "Mixin for sfu",
+    "memberof": "module:@the-/rtc.mixins",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "sfuMix.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/mixins"
+    },
+    "order": 16
+  },
+  {
+    "id": "module:@the-/rtc.mixins.turnMix",
+    "longname": "module:@the-/rtc.mixins.turnMix",
+    "name": "turnMix",
+    "kind": "function",
+    "scope": "static",
+    "description": "Mixin for turn",
+    "memberof": "module:@the-/rtc.mixins",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "turnMix.js",
+      "path": "/Users/okuni/Projects/the/packages/rtc/lib/mixins"
+    },
+    "order": 17
   }
 ]

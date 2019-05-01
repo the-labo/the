@@ -9,11 +9,11 @@ const {
   RTCSessionDescription,
 } = require('wrtc')
 const { PeerEvents } = require('../constants')
-const waitChannelOpen = require('../hetoLowerKeysTest.jslpers/waitChannelOpen')
+const waitChannelOpen = require('../helpers/waitChannelOpen')
 
 /** @lends SFUProxyEdge */
 class SFUProxyEdge {
-  constructor({ iceServers }) {
+  constructor ({ iceServers }) {
     this.connection = new RTCPeerConnection({ iceServers }, {})
     this.receivedIces = []
     this.sendingIceCandidates = []
@@ -40,7 +40,7 @@ class SFUProxyEdge {
     }
   }
 
-  listenIceCandidate(callback) {
+  listenIceCandidate (callback) {
     while (this.sendingIceCandidates.length > 0) {
       callback(this.sendingIceCandidates.shift())
     }
@@ -51,31 +51,27 @@ class SFUProxyEdge {
     })
   }
 
-  pipe(edge) {
+  pipe (edge) {
     const { connection } = this
 
     // Pipe channels
-    {
-      for (const channel of Object.values(this.channels)) {
-        void edge.receiveCounterpartChannel(channel)
-      }
-      connection.addEventListener(PeerEvents.DATA_CHANNEL, (e) => {
-        void edge.receiveCounterpartChannel(e.channel)
-      })
+    for (const channel of Object.values(this.channels)) {
+      void edge.receiveCounterpartChannel(channel)
     }
+    connection.addEventListener(PeerEvents.DATA_CHANNEL, (e) => {
+      void edge.receiveCounterpartChannel(e.channel)
+    })
 
     // Pipe tracks
-    {
-      for (const { streams, track } of this.tracks) {
-        void edge.receiveCounterpartTrack(track, streams)
-      }
-      connection.addEventListener(PeerEvents.TRACK, (e) => {
-        void edge.receiveCounterpartTrack(e.track, e.streams)
-      })
+    for (const { streams, track } of this.tracks) {
+      void edge.receiveCounterpartTrack(track, streams)
     }
+    connection.addEventListener(PeerEvents.TRACK, (e) => {
+      void edge.receiveCounterpartTrack(e.track, e.streams)
+    })
   }
 
-  registerChannel(channel) {
+  registerChannel (channel) {
     const channelName = channel.label
     if (this.channels[channelName]) {
       throw new Error(
@@ -85,7 +81,7 @@ class SFUProxyEdge {
     this.channels[channelName] = channel
   }
 
-  async addIceCandidate(ice) {
+  async addIceCandidate (ice) {
     const { connection } = this
     try {
       await connection.addIceCandidate(new RTCIceCandidate(ice))
@@ -98,7 +94,7 @@ class SFUProxyEdge {
     }
   }
 
-  async close() {
+  async close () {
     const { connection } = this
     for (const channel of Object.values(this.channels)) {
       await channel.close()
@@ -106,7 +102,7 @@ class SFUProxyEdge {
     await connection.close()
   }
 
-  async receiveCounterpartChannel(counterpartChannel, options = {}) {
+  async receiveCounterpartChannel (counterpartChannel, options = {}) {
     const { retry = 5, retryInterval = 100 } = options
     const channelName = counterpartChannel.label
     const channel = this.channels[channelName]
@@ -116,7 +112,7 @@ class SFUProxyEdge {
         throw new Error(
           `[${
             this.constructor.name
-          }] Unknown channel: "${channelName}" (known: ${Object.keys(
+            }] Unknown channel: "${channelName}" (known: ${Object.keys(
             this.channels,
           )})`,
         )
@@ -144,7 +140,7 @@ class SFUProxyEdge {
     })
   }
 
-  async receiveCounterpartTrack(track, streams) {
+  async receiveCounterpartTrack (track, streams) {
     const { connection } = this
     if (connection.connectionState !== 'new') {
       console.warn(
@@ -154,7 +150,7 @@ class SFUProxyEdge {
     connection.addTrack(track, ...streams)
   }
 
-  async receiveICE(ice) {
+  async receiveICE (ice) {
     const { connection } = this
     if (!ice.ice) {
       return
@@ -166,12 +162,12 @@ class SFUProxyEdge {
     await this.addIceCandidate(ice.ice)
   }
 
-  async setLocalDescription(desc) {
+  async setLocalDescription (desc) {
     const { connection } = this
     await connection.setLocalDescription(new RTCSessionDescription(desc))
   }
 
-  async setRemoteDescription(desc) {
+  async setRemoteDescription (desc) {
     const { connection } = this
     await connection.setRemoteDescription(new RTCSessionDescription(desc))
     while (this.receivedIces.length > 0) {

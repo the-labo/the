@@ -1,5 +1,6 @@
 /**
  * Mixin for sfu
+ * @memberof module:@the-/rtc.mixins
  * @function sfuMix
  * @param {function} Class
  * @returns {function} Class
@@ -8,7 +9,7 @@
 
 const SFUProxyPool = require('../sfu/SFUProxyPool')
 
-/** @lends sfuMix */
+/** @lends module:@the-/rtc.mixins.sfuMix */
 function sfuMix(Class) {
   class SfuMixed extends Class {
     constructor() {
@@ -38,7 +39,7 @@ function sfuMix(Class) {
         console.warn(`[TheRTC] proxy not found for pid: ${pid}`)
         return
       }
-      return await proxy.processICE(ice)
+      return proxy.processICE(ice)
     }
 
     async processPeerOfferForSFU(pid, offer) {
