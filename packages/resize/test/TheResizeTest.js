@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal, ok } = require('assert')
+const { equal, ok } = require('assert').strict
 const TheResize = require('../lib/TheResize')
 
 describe('the' + '-resize', () => {
@@ -33,18 +33,14 @@ describe('the' + '-resize', () => {
       )
       ok(!converted2.changed)
     }
-    {
-      ok(
-        await new TheResize({ width: 500 }).isSupported(
-          `${__dirname}/../tmp/testing/test-02.png`,
-        ),
-      )
-    }
-    {
-      await new TheResize({ width: 500 }).overwrite(
+    ok(
+      await new TheResize({ width: 500 }).isSupported(
         `${__dirname}/../tmp/testing/test-02.png`,
-      )
-    }
+      ),
+    )
+    await new TheResize({ width: 500 }).overwrite(
+      `${__dirname}/../tmp/testing/test-02.png`,
+    )
 
     equal(
       await new TheResize({ width: 0 }).overwriteIfPossible('hoge.mov', {

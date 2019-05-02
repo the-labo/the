@@ -37,6 +37,7 @@ Constants for the-components
 
 
 
+
 <!-- Overview End -->
 
 
@@ -69,9 +70,7 @@ Usage
 
 const { SupportedProps } = require('@the-/const-ui')
 
-{
-  console.log(SupportedProps.mouseEvents.split(','))
-}
+console.log(SupportedProps.mouseEvents.split(','))
 
 ```
 

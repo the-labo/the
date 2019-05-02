@@ -4,20 +4,12 @@
  */
 'use strict'
 
-const modifyNodeDeprecatedOnRequireDeclaration = require('../lib/ast/nodes/modifyNodeDeprecatedOnRequireDeclaration')
-
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('modify-node-deprecated-on-require-declaration', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-    
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

@@ -271,5 +271,4 @@ Listen to update
 
 | Param | Type |
 | --- | --- |
-| onUpdate | <code>function</code> | 
-
+| onUpdate | <code>function</code> |

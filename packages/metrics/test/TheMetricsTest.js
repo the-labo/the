@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { deepStrictEqual: deepEqual } = require('assert')
+const { deepStrictEqual: deepEqual } = require('assert').strict
 const TheMetrics = require('../lib/TheMetrics')
 
 describe('the-metrics', () => {

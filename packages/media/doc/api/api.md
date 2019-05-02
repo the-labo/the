@@ -148,4 +148,4 @@ Create a TheMedia instance
 ## default()
 Alias of [create](#module_@the-/media.create)
 
-**Kind**: global function  
+**Kind**: global function

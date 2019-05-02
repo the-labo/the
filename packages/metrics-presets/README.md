@@ -37,6 +37,7 @@ Preset of the-metrics
 
 
 
+
 <!-- Overview End -->
 
 
@@ -71,7 +72,7 @@ const { RenderingCountMetrics } = require('@the-/metrics-presets')
 
 async function tryExample() {
   const Components = {
-    /*...*/
+    /* ... */
   }
 
   // Start rendering count metrics

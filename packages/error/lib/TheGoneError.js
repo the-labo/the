@@ -9,7 +9,7 @@
 
 const TheError = require('./TheError')
 
-/** @lends TheGoneError */
+/** @lends module:@the-/error.TheGoneError */
 class TheGoneError extends TheError {}
 
 TheGoneError.state = 410

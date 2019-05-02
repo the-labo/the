@@ -5,7 +5,7 @@
 'use strict'
 
 const asleep = require('asleep')
-const { equal, ok } = require('assert')
+const { equal, ok } = require('assert').strict
 const clayDriverTests = require('clay-driver-tests')
 const clayResource = require('clay-resource')
 const MongoDriver = require('../lib/MongoDriver')
@@ -42,9 +42,7 @@ describe('mongo-driver', () => {
         equal(updated.age, 33)
         ok(updated.id)
       }
-      {
-        await driver.update('User', created.id, {})
-      }
+      await driver.update('User', created.id, {})
 
       {
         const list = await driver.list('User')
@@ -52,12 +50,10 @@ describe('mongo-driver', () => {
         equal(list.meta.total, 1)
       }
 
-      {
-        await driver.create('User', {
-          at: new Date(),
-          name: 'user02',
-        })
-      }
+      await driver.create('User', {
+        at: new Date(),
+        name: 'user02',
+      })
 
       {
         const list = await driver.list('User', { sort: '-at' })

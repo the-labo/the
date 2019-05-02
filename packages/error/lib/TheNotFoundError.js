@@ -9,7 +9,7 @@
 
 const TheError = require('./TheError')
 
-/** @lends TheNotFoundError */
+/** @lends module:@the-/error.TheNotFoundError */
 class TheNotFoundError extends TheError {}
 
 TheNotFoundError.state = 404

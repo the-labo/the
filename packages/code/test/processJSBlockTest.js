@@ -4,9 +4,8 @@
  */
 'use strict'
 
+const { equal } = require('assert').strict
 const processJSBlock = require('../lib/processors/processJSBlock')
-
-const { ok, equal, deepEqual } = require('assert').strict
 
 describe('process-js-block', () => {
   before(() => {})
@@ -26,7 +25,8 @@ const a = () => {console.log('a')}
     const b = 1
     console.log(b)
   }
-}`), `
+}`),
+      `
 const a = () => {console.log('a')}
 {
   console.log('hoge')

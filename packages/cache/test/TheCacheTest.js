@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal, ok } = require('assert')
+const { equal, ok } = require('assert').strict
 const TheCache = require('../lib/TheCache')
 
 describe('the-cache', () => {

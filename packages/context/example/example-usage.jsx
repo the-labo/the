@@ -7,8 +7,8 @@ const { TheContext } = require('@the-/context')
 async function tryExample() {
   const l = {
     en: {
-      TRY_ME_BUTTON: 'Try Me!',
       HELLO_MESSAGE: 'Hello!',
+      TRY_ME_BUTTON: 'Try Me!',
     },
   }
   const context = new TheContext({
@@ -33,7 +33,7 @@ async function tryExample() {
     render() {
       return (
         <context.Entry init={this.#init}>
-          {({ onClick, l }) => <a onClick={onClick}>{l.en.TRY_ME_BUTTON}</a>}
+          {({ l, onClick }) => <a onClick={onClick}>{l.en.TRY_ME_BUTTON}</a>}
         </context.Entry>
       )
     }

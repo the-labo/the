@@ -6,9 +6,9 @@ let d = {
   b: 2,
 
   c: {
-    p3: `This is ${Object.keys({ f2: 2, f5: 5 }).join(',')}p3`,
     [p1]: 'This is p1',
     p2: 'This is p2',
+    p3: `This is ${Object.keys({ f2: 2, f5: 5 }).join(',')}p3`,
 
     z: {
       aaa: 8777,

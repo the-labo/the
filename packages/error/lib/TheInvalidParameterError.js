@@ -9,7 +9,7 @@
 
 const TheError = require('./TheError')
 
-/** @lends TheInvalidParameterError */
+/** @lends module:@the-/error.TheInvalidParameterError */
 class TheInvalidParameterError extends TheError {}
 
 TheInvalidParameterError.state = 400

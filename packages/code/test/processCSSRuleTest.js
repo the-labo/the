@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal } = require('assert')
+const { equal } = require('assert').strict
 const processCSSRule = require('../lib/processors/processCSSRule')
 
 describe('process-c-s-s-rule', () => {

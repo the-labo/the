@@ -37,6 +37,7 @@ Code formatter of the-frameworks
 
 
 
+
 <!-- Overview End -->
 
 
@@ -95,6 +96,7 @@ tryExample().catch((err) => console.error(err))
 - [.run()](./doc/api/api.md#module_@the-/code.run)
 - [.cleanupEmptyArrayPatternParamsOnFunctionNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupEmptyArrayPatternParamsOnFunctionNode)
 - [.cleanupEmptyObjectPatternParamsOnFunctionNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupEmptyObjectPatternParamsOnFunctionNode)
+- [.cleanupExtOnImportDeclarationNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupExtOnImportDeclarationNode)
 - [.cleanupExtOnRequireDeclarationArgumentNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupExtOnRequireDeclarationArgumentNode)
 - [.cleanupRedundantAliasOnObjectPatternNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupRedundantAliasOnObjectPatternNode)
 - [.cleanupRedundantAliasOnObjectPatternNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupRedundantAliasOnObjectPatternNode)
@@ -108,6 +110,7 @@ tryExample().catch((err) => console.error(err))
 - [.findJSDocAnnotationsInCommendNode()](./doc/api/api.md#module_@the-/code.ast.nodes.findJSDocAnnotationsInCommendNode)
 - [.findRequireDeclarationOnProgramNode()](./doc/api/api.md#module_@the-/code.ast.nodes.findRequireDeclarationOnProgramNode)
 - [.mergeDuplicateImportOnProgramNode()](./doc/api/api.md#module_@the-/code.ast.nodes.mergeDuplicateImportOnProgramNode)
+- [.modifyNodeDeprecatedOnRequireDeclaration()](./doc/api/api.md#module_@the-/code.ast.nodes.modifyNodeDeprecatedOnRequireDeclaration)
 - [.normalizeJSDocSynonymsOnCommentNode()](./doc/api/api.md#module_@the-/code.ast.nodes.normalizeJSDocSynonymsOnCommentNode)
 - [.normalizeSrcPathOnImportDeclarationNode()](./doc/api/api.md#module_@the-/code.ast.nodes.normalizeSrcPathOnImportDeclarationNode)
 - [.sortAnnotationsOnCommentNode()](./doc/api/api.md#module_@the-/code.ast.nodes.sortAnnotationsOnCommentNode)
@@ -128,6 +131,7 @@ tryExample().catch((err) => console.error(err))
 - [.processCSSProp(content)](./doc/api/api.md#module_@the-/code.processors.processCSSProp)
 - [.processCSSRule(content)](./doc/api/api.md#module_@the-/code.processors.processCSSRule)
 - [.processFileEnd(content)](./doc/api/api.md#module_@the-/code.processors.processFileEnd)
+- [.processJSBlock(content)](./doc/api/api.md#module_@the-/code.processors.processJSBlock)
 - [.processClass(content)](./doc/api/api.md#module_@the-/code.processors.processClass)
 - [.processComment(content)](./doc/api/api.md#module_@the-/code.processors.processComment)
 - [.processJSDoc(content,options)](./doc/api/api.md#module_@the-/code.processors.processJSDoc)

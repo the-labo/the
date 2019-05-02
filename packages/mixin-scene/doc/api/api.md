@@ -899,5 +899,4 @@ Define as class mixin
 
 | Param | Type |
 | --- | --- |
-| Class | <code>function</code> | 
-
+| Class | <code>function</code> |

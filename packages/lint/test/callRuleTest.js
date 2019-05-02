@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { ok } = require('assert')
+const { ok } = require('assert').strict
 const fs = require('fs')
 const callRule = require('../lib/rules/callRule')
 

@@ -159,4 +159,4 @@ Parsing functions
 <a name="module_@the-/driver-sequelize.parsing.parseSort"></a>
 
 #### parsing.parseSort()
-**Kind**: static method of [<code>parsing</code>](#module_@the-/driver-sequelize.parsing)  
+**Kind**: static method of [<code>parsing</code>](#module_@the-/driver-sequelize.parsing)

@@ -35,4 +35,4 @@ Create a TheCache instance
 ### cache.default()
 Alias of [create](#module_@the-/cache.create)
 
-**Kind**: static method of [<code>@the-/cache</code>](#module_@the-/cache)  
+**Kind**: static method of [<code>@the-/cache</code>](#module_@the-/cache)

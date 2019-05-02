@@ -33,4 +33,4 @@ Create a TheDemoLib instance
 ### demoLib.theDemoLib() ⇒ <code>TheDemoLib</code>
 Default exports
 
-**Kind**: static method of [<code>@the-/demo-lib</code>](#module_@the-/demo-lib)  
+**Kind**: static method of [<code>@the-/demo-lib</code>](#module_@the-/demo-lib)

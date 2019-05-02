@@ -5,7 +5,7 @@
 'use strict'
 
 const asleep = require('asleep')
-const { equal } = require('assert')
+const { equal } = require('assert').strict
 const { TheResource } = require('@the-/resource')
 const TheDB = require('../lib/TheDB')
 

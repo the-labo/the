@@ -1,27 +1,28 @@
 [
   {
-    "id": "module:@the-/assert",
-    "longname": "module:@the-/assert",
-    "name": "@the-/assert",
-    "kind": "module",
     "description": "Assert for the-framework",
-    "version": "15.4.1",
+    "id": "module:@the-/assert",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "assert",
+    "longname": "module:@the-/assert",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/assert/lib"
     },
-    "order": 2
+    "name": "@the-/assert",
+    "order": 2,
+    "typicalname": "assert",
+    "version": "15.4.1"
   },
   {
-    "id": "module:@the-/assert.TheAssert()",
-    "longname": "module:@the-/assert.TheAssert",
-    "name": "TheAssert",
-    "kind": "constructor",
     "description": "Assert module",
+    "id": "module:@the-/assert.TheAssert()",
+    "kind": "constructor",
+    "longname": "module:@the-/assert.TheAssert",
     "memberof": "module:@the-/assert.TheAssert",
+    "name": "TheAssert",
+    "order": 4,
     "params": [
       {
         "type": {
@@ -53,17 +54,21 @@
         "description": "Skip asserting on production",
         "name": "options.skipOnProduction"
       }
-    ],
-    "order": 4
+    ]
   },
   {
-    "id": "TheAssert#bind",
-    "longname": "TheAssert#bind",
-    "name": "bind",
-    "kind": "function",
-    "scope": "instance",
     "description": "Bind methods",
+    "id": "TheAssert#bind",
+    "kind": "function",
+    "longname": "TheAssert#bind",
     "memberof": "TheAssert",
+    "meta": {
+      "filename": "TheAssert.js",
+      "lineno": 28,
+      "path": "/Users/okuni/Projects/the/packages/assert/lib"
+    },
+    "name": "bind",
+    "order": 5,
     "params": [],
     "returns": [
       {
@@ -74,55 +79,21 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 28,
-      "filename": "TheAssert.js",
-      "path": "/Users/okuni/Projects/the/packages/assert/lib"
-    },
-    "order": 5
+    "scope": "instance"
   },
   {
-    "id": "TheAssert#notNullish",
-    "longname": "TheAssert#notNullish",
-    "name": "notNullish",
-    "kind": "function",
-    "scope": "instance",
     "description": "Assert that the value is NOT nullish (means either null nor undefined)",
+    "id": "TheAssert#notNullish",
+    "kind": "function",
+    "longname": "TheAssert#notNullish",
     "memberof": "TheAssert",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        },
-        "name": "value"
-      },
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "optional": true,
-        "name": "message"
-      }
-    ],
     "meta": {
+      "filename": "TheAssert.js",
       "lineno": 44,
-      "filename": "TheAssert.js",
       "path": "/Users/okuni/Projects/the/packages/assert/lib"
     },
-    "order": 6
-  },
-  {
-    "id": "TheAssert#nullish",
-    "longname": "TheAssert#nullish",
-    "name": "nullish",
-    "kind": "function",
-    "scope": "instance",
-    "description": "Assert that the value is nullish (null or undefined)",
-    "memberof": "TheAssert",
+    "name": "notNullish",
+    "order": 6,
     "params": [
       {
         "type": {
@@ -142,21 +113,60 @@
         "name": "message"
       }
     ],
-    "meta": {
-      "lineno": 53,
-      "filename": "TheAssert.js",
-      "path": "/Users/okuni/Projects/the/packages/assert/lib"
-    },
-    "order": 7
+    "scope": "instance"
   },
   {
-    "id": "TheAssert#ok",
-    "longname": "TheAssert#ok",
-    "name": "ok",
+    "description": "Assert that the value is nullish (null or undefined)",
+    "id": "TheAssert#nullish",
     "kind": "function",
-    "scope": "instance",
-    "description": "Assert that the condition is truethy",
+    "longname": "TheAssert#nullish",
     "memberof": "TheAssert",
+    "meta": {
+      "filename": "TheAssert.js",
+      "lineno": 53,
+      "path": "/Users/okuni/Projects/the/packages/assert/lib"
+    },
+    "name": "nullish",
+    "order": 7,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "name": "value"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "name": "message"
+      }
+    ],
+    "scope": "instance"
+  },
+  {
+    "description": "Assert that the condition is truethy",
+    "exceptions": [
+      {
+        "description": "Error"
+      }
+    ],
+    "id": "TheAssert#ok",
+    "kind": "function",
+    "longname": "TheAssert#ok",
+    "memberof": "TheAssert",
+    "meta": {
+      "filename": "TheAssert.js",
+      "lineno": 63,
+      "path": "/Users/okuni/Projects/the/packages/assert/lib"
+    },
+    "name": "ok",
+    "order": 8,
     "params": [
       {
         "type": {
@@ -177,40 +187,35 @@
         "defaultvalue": "assert failed"
       }
     ],
-    "exceptions": [
-      {
-        "description": "Error"
-      }
-    ],
-    "meta": {
-      "lineno": 63,
-      "filename": "TheAssert.js",
-      "path": "/Users/okuni/Projects/the/packages/assert/lib"
-    },
-    "order": 8
+    "scope": "instance"
   },
   {
     "id": "module:@the-/assert.TheAssert",
-    "longname": "module:@the-/assert.TheAssert",
-    "name": "TheAssert",
     "kind": "class",
-    "scope": "static",
+    "longname": "module:@the-/assert.TheAssert",
     "memberof": "module:@the-/assert",
     "meta": {
-      "lineno": 1,
       "filename": "TheAssert.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/assert/lib"
     },
-    "order": 3
+    "name": "TheAssert",
+    "order": 3,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/assert.create",
-    "longname": "module:@the-/assert.create",
-    "name": "create",
-    "kind": "function",
-    "scope": "static",
     "description": "Create a TheAssert instance",
+    "id": "module:@the-/assert.create",
+    "kind": "function",
+    "longname": "module:@the-/assert.create",
     "memberof": "module:@the-/assert",
+    "meta": {
+      "filename": "create.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/assert/lib"
+    },
+    "name": "create",
+    "order": 0,
     "params": [
       {
         "type": {
@@ -231,21 +236,21 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "create.js",
-      "path": "/Users/okuni/Projects/the/packages/assert/lib"
-    },
-    "order": 0
+    "scope": "static"
   },
   {
-    "id": "module:@the-/assert.default",
-    "longname": "module:@the-/assert.default",
-    "name": "default",
-    "kind": "function",
-    "scope": "static",
     "description": "Default exports. Alias of {@link module:@the-/assert.create}",
+    "id": "module:@the-/assert.default",
+    "kind": "function",
+    "longname": "module:@the-/assert.default",
     "memberof": "module:@the-/assert",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/assert/lib"
+    },
+    "name": "default",
+    "order": 1,
     "params": [
       {
         "type": {
@@ -266,11 +271,6 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "default.js",
-      "path": "/Users/okuni/Projects/the/packages/assert/lib"
-    },
-    "order": 1
+    "scope": "static"
   }
 ]

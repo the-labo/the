@@ -604,4 +604,4 @@ Run database migration
 Alias of {@memberOf module:@the-/db
 
 **Kind**: global function  
-**Link**: module:@the-/db.create}  
+**Link**: module:@the-/db.create}

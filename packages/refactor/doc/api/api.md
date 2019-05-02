@@ -109,4 +109,4 @@ Create a TheRefactor instance
 ### refactor.default()
 Alias of [create](#module_@the-/refactor.create)
 
-**Kind**: static method of [<code>@the-/refactor</code>](#module_@the-/refactor)  
+**Kind**: static method of [<code>@the-/refactor</code>](#module_@the-/refactor)

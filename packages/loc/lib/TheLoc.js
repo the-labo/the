@@ -1,6 +1,6 @@
 /**
  * Locale resolver
- * @memberOf module:@the-/loc
+ * @memberof module:@the-/loc
  * @class TheLoc
  * @param {Object<string, Object>} config - Localed values
  */

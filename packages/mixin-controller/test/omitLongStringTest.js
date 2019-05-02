@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { deepStrictEqual, equal } = require('assert')
+const { deepStrictEqual, equal } = require('assert').strict
 const omitLongString = require('../lib/helpers/omitLongString')
 
 describe('omit-too-long-string', () => {

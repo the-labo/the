@@ -1,6 +1,6 @@
 /**
  * Convert into handle scene class
- * @memberOf module:@the-/handle
+ * @memberof module:@the-/handle
  * @function toHandleSceneClass
  */
 'use strict'
@@ -10,7 +10,7 @@ function toHandleSceneClass(BaseClass, config = {}) {
   const { load } = config
 
   /**
-   * @memberOf module:@the-/handle.toHandleSceneClass
+   * @memberof module:@the-/handle.toHandleSceneClass
    * @inner
    */
   class HandleSceneClass extends BaseClass {

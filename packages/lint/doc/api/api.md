@@ -223,4 +223,4 @@ Create a TheLint instance
 ## default()
 Alias of [create](#module_@the-/lint.create)
 
-**Kind**: global function  
+**Kind**: global function

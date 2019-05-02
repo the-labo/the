@@ -37,6 +37,7 @@ Client for the-rtc
 
 
 
+
 <!-- Overview End -->
 
 
@@ -79,22 +80,25 @@ Usage
 ## API Guide
 
 ### function
-- [assertMix(Class)](./doc/api/api.md#assertMix)
-- [channelMix(Class)](./doc/api/api.md#channelMix)
-- [mediaMix(Class)](./doc/api/api.md#mediaMix)
-- [peerMix(Class)](./doc/api/api.md#peerMix)
-- [promiseMix(Class)](./doc/api/api.md#promiseMix)
-- [serializeMix(Class)](./doc/api/api.md#serializeMix)
-- [socketMix(Class)](./doc/api/api.md#socketMix)
+- [default()](./doc/api/api.md#default)
 - [#connect(url,options)](./doc/api/api.md#module_@the-/rtc-client.TheRTCClient#connect)
 - [#disconnect()](./doc/api/api.md#module_@the-/rtc-client.TheRTCClient#disconnect)
 - [#publish(topic,payload,options)](./doc/api/api.md#module_@the-/rtc-client.TheRTCClient#publish)
 - [#subscribePubSubChannel(topic,callback)](./doc/api/api.md#ChannelMixed#subscribePubSubChannel)
 - [#unsubscribePubSubChannel(topic,subscription)](./doc/api/api.md#ChannelMixed#unsubscribePubSubChannel)
 - [.create(args)](./doc/api/api.md#module_@the-/rtc-client.create)
-- [.default()](./doc/api/api.md#module_@the-/rtc-client.default)
+- [.assertMix(Class)](./doc/api/api.md#module_@the-/rtc.constants.mixins.assertMix)
+- [.channelMix(Class)](./doc/api/api.md#module_@the-/rtc.constants.mixins.channelMix)
+- [.mediaMix(Class)](./doc/api/api.md#module_@the-/rtc.constants.mixins.mediaMix)
+- [.peerMix(Class)](./doc/api/api.md#module_@the-/rtc.constants.mixins.peerMix)
+- [.promiseMix(Class)](./doc/api/api.md#module_@the-/rtc.constants.mixins.promiseMix)
+- [.serializeMix(Class)](./doc/api/api.md#module_@the-/rtc.constants.mixins.serializeMix)
+- [.socketMix(Class)](./doc/api/api.md#module_@the-/rtc.constants.mixins.socketMix)
 ### class
 - [.TheRTCClient](./doc/api/api.md#module_@the-/rtc-client.TheRTCClient)
+### namespace
+- [.constants](./doc/api/api.md#module_@the-/rtc.constants)
+- [.mixins](./doc/api/api.md#module_@the-/rtc.mixins)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal } = require('assert')
+const { equal } = require('assert').strict
 const processCSSProp = require('../lib/processors/processCSSProp')
 
 describe('process-c-s-s-props', () => {

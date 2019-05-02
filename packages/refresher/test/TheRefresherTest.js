@@ -5,7 +5,7 @@
 'use strict'
 
 const asleep = require('asleep')
-const { ok } = require('assert')
+const { ok } = require('assert').strict
 const TheRefresher = require('../lib/TheRefresher')
 
 describe('the-refresher', () => {

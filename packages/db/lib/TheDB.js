@@ -1,12 +1,12 @@
 /**
- * @memberOf module:@the-/db
+ * @memberof module:@the-/db
  * @class TheDB
- * @extends module:@the-/db.cascadeMix~CascadeMixed
- * @extends module:@the-/db.cliMix~CliMixed
- * @extends module:@the-/db.exportImportMix~ExportImportMixed
- * @extends module:@the-/db.migrateMix~MigrateMixed
- * @extends module:@the-/db.refreshMix~RefreshMixed
- * @extends module:@the-/db.resourceMix~ResourceMixed
+ * @augments module:@the-/db.cascadeMix~CascadeMixed
+ * @augments module:@the-/db.cliMix~CliMixed
+ * @augments module:@the-/db.exportImportMix~ExportImportMixed
+ * @augments module:@the-/db.migrateMix~MigrateMixed
+ * @augments module:@the-/db.refreshMix~RefreshMixed
+ * @augments module:@the-/db.resourceMix~ResourceMixed
  * @param {Object} config
  * @param {string} [config.name=uuid.v4()] Name of clay-lump
  * @param {string} [config.dialect='memory'] - Database dialect. "mysql", "json", "memory", "localstorage", or "sqlite"
@@ -44,7 +44,7 @@ const setupForEnv = require('./setupForEnv')
 const assert = theAssert('the:db')
 
 /**
- * @memberOf module:@the-/db
+ * @memberof module:@the-/db
  * @class TheDBBase
  */
 const TheDBBase = [

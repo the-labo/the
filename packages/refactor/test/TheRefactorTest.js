@@ -5,7 +5,7 @@
 'use strict'
 
 const { mkdirpAsync, statAsync, writeFileAsync } = require('asfs')
-const { ok } = require('assert')
+const { ok } = require('assert').strict
 const path = require('path')
 const TheRefactor = require('../lib/TheRefactor')
 

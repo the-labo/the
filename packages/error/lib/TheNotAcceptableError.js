@@ -9,7 +9,7 @@
 
 const TheError = require('./TheError')
 
-/** @lends TheNotAcceptableError */
+/** @lends module:@the-/error.TheNotAcceptableError */
 class TheNotAcceptableError extends TheError {}
 
 TheNotAcceptableError.state = 406

@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { ok } = require('assert')
+const { ok } = require('assert').strict
 const rules = require('../lib/rules')
 const TheLint = require('../lib/TheLint')
 

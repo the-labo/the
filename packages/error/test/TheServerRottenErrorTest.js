@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal } = require('assert')
+const { equal } = require('assert').strict
 const TheServerRottenError = require('../lib/TheServerRottenError')
 
 describe('the-server-rotten-error', () => {

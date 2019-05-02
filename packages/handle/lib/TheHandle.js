@@ -1,6 +1,6 @@
 /**
  * Shared action handler
- * @memberOf module:@the-/handle
+ * @memberof module:@the-/handle
  * @class TheHandle
  * @param {Object} [options={}] - optional settings
  * @param {Object} attributes - Props value to share with scenes

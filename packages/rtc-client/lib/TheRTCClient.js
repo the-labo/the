@@ -291,9 +291,7 @@ class TheRTCClient extends TheRTCClientBase {
     )
 
     // Cleanup
-    {
-      await this.destroyAllPeers()
-    }
+    await this.destroyAllPeers()
 
     this.room = null
   }

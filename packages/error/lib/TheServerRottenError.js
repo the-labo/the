@@ -9,7 +9,7 @@
 
 const TheError = require('./TheError')
 
-/** @lends TheServerRottenError */
+/** @lends module:@the-/error.TheServerRottenError */
 class TheServerRottenError extends TheError {}
 
 TheServerRottenError.state = 500

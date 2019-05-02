@@ -101,14 +101,14 @@ const _rewritePkg = async (baseDir, converter) => {
 }
 
 const _removeDevDeps = async (baseDir, names) => {
-    const pkg = JSON.parse(await readFile(path.resolve(baseDir, 'package.json')))
-    for (const name of names) {
-      const has = name in (pkg.devDependencies || {})
-      if (has) {
-        spawnSync('npm', ['un', '-D', name], { cwd: baseDir, stdio: 'inherit' })
-      }
+  const pkg = JSON.parse(await readFile(path.resolve(baseDir, 'package.json')))
+  for (const name of names) {
+    const has = name in (pkg.devDependencies || {})
+    if (has) {
+      spawnSync('npm', ['un', '-D', name], { cwd: baseDir, stdio: 'inherit' })
     }
   }
+}
 
 ;(async () => {
   for (const [fromPkgName, { kind, name }] of Object.entries(transporting).sort(

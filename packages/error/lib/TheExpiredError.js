@@ -9,7 +9,7 @@
 
 const TheError = require('./TheError')
 
-/** @lends TheExpiredError */
+/** @lends module:@the-/error.TheExpiredError */
 class TheExpiredError extends TheError {}
 
 TheExpiredError.state = 400

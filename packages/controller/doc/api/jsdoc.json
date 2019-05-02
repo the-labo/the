@@ -1,100 +1,105 @@
 [
   {
-    "id": "module:@the-/controller",
-    "longname": "module:@the-/controller",
-    "name": "@the-/controller",
-    "kind": "module",
     "description": "Base of the-controllers",
-    "version": "15.4.1",
+    "id": "module:@the-/controller",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "controller",
+    "longname": "module:@the-/controller",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/controller/lib"
     },
-    "order": 2
+    "name": "@the-/controller",
+    "order": 2,
+    "typicalname": "controller",
+    "version": "15.4.1"
   },
   {
-    "id": "module:@the-/controller.Invocation()",
-    "longname": "module:@the-/controller.Invocation",
-    "name": "Invocation",
-    "kind": "constructor",
     "description": "Controller action invocation",
+    "id": "module:@the-/controller.Invocation()",
+    "kind": "constructor",
+    "longname": "module:@the-/controller.Invocation",
     "memberof": "module:@the-/controller.Invocation",
+    "name": "Invocation",
     "order": 4
   },
   {
-    "id": "module:@the-/controller.TheCtrl#controllerDidAttach",
-    "longname": "module:@the-/controller.TheCtrl#controllerDidAttach",
-    "name": "controllerDidAttach",
-    "kind": "function",
-    "scope": "instance",
     "description": "Callback after controller attached to a client",
+    "id": "module:@the-/controller.TheCtrl#controllerDidAttach",
+    "kind": "function",
+    "longname": "module:@the-/controller.TheCtrl#controllerDidAttach",
     "memberof": "module:@the-/controller.TheCtrl",
-    "params": [],
     "meta": {
+      "filename": "TheCtrl.js",
       "lineno": 71,
-      "filename": "TheCtrl.js",
       "path": "/Users/okuni/Projects/the/packages/controller/lib"
     },
-    "order": 9
+    "name": "controllerDidAttach",
+    "order": 9,
+    "params": [],
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/controller.TheCtrl#controllerMethodDidInvoke",
-    "longname": "module:@the-/controller.TheCtrl#controllerMethodDidInvoke",
-    "name": "controllerMethodDidInvoke",
-    "kind": "function",
-    "scope": "instance",
     "description": "Callback before a controller method invoked",
+    "id": "module:@the-/controller.TheCtrl#controllerMethodDidInvoke",
+    "kind": "function",
+    "longname": "module:@the-/controller.TheCtrl#controllerMethodDidInvoke",
     "memberof": "module:@the-/controller.TheCtrl",
-    "params": [],
     "meta": {
+      "filename": "TheCtrl.js",
       "lineno": 74,
-      "filename": "TheCtrl.js",
       "path": "/Users/okuni/Projects/the/packages/controller/lib"
     },
-    "order": 10
+    "name": "controllerMethodDidInvoke",
+    "order": 10,
+    "params": [],
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/controller.TheCtrl#controllerMethodWillInvoke",
-    "longname": "module:@the-/controller.TheCtrl#controllerMethodWillInvoke",
-    "name": "controllerMethodWillInvoke",
-    "kind": "function",
-    "scope": "instance",
     "description": "Callback after a controller method invoked",
+    "id": "module:@the-/controller.TheCtrl#controllerMethodWillInvoke",
+    "kind": "function",
+    "longname": "module:@the-/controller.TheCtrl#controllerMethodWillInvoke",
     "memberof": "module:@the-/controller.TheCtrl",
-    "params": [],
     "meta": {
-      "lineno": 77,
       "filename": "TheCtrl.js",
+      "lineno": 77,
       "path": "/Users/okuni/Projects/the/packages/controller/lib"
     },
-    "order": 11
+    "name": "controllerMethodWillInvoke",
+    "order": 11,
+    "params": [],
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/controller.TheCtrl#controllerWillDetach",
-    "longname": "module:@the-/controller.TheCtrl#controllerWillDetach",
-    "name": "controllerWillDetach",
-    "kind": "function",
-    "scope": "instance",
     "description": "Callback before controller detached from a client",
+    "id": "module:@the-/controller.TheCtrl#controllerWillDetach",
+    "kind": "function",
+    "longname": "module:@the-/controller.TheCtrl#controllerWillDetach",
     "memberof": "module:@the-/controller.TheCtrl",
-    "params": [],
     "meta": {
-      "lineno": 80,
       "filename": "TheCtrl.js",
+      "lineno": 80,
       "path": "/Users/okuni/Projects/the/packages/controller/lib"
     },
-    "order": 12
+    "name": "controllerWillDetach",
+    "order": 12,
+    "params": [],
+    "scope": "instance"
   },
   {
     "id": "module:@the-/controller.Invocation",
-    "longname": "module:@the-/controller.Invocation",
-    "name": "Invocation",
     "kind": "class",
-    "scope": "static",
+    "longname": "module:@the-/controller.Invocation",
     "memberof": "module:@the-/controller",
+    "meta": {
+      "filename": "Invocation.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/controller/lib"
+    },
+    "name": "Invocation",
+    "order": 3,
     "properties": [
       {
         "type": {
@@ -144,35 +149,35 @@
         "name": "error"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "Invocation.js",
-      "path": "/Users/okuni/Projects/the/packages/controller/lib"
-    },
-    "order": 3
+    "scope": "static"
   },
   {
     "id": "module:@the-/controller.TheCtrl",
-    "longname": "module:@the-/controller.TheCtrl",
-    "name": "TheCtrl",
     "kind": "class",
-    "scope": "static",
+    "longname": "module:@the-/controller.TheCtrl",
     "memberof": "module:@the-/controller",
     "meta": {
-      "lineno": 1,
       "filename": "TheCtrl.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/controller/lib"
     },
-    "order": 5
+    "name": "TheCtrl",
+    "order": 5,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/controller.create",
-    "longname": "module:@the-/controller.create",
-    "name": "create",
-    "kind": "function",
-    "scope": "static",
     "description": "Create a TheControllerBase instance",
+    "id": "module:@the-/controller.create",
+    "kind": "function",
+    "longname": "module:@the-/controller.create",
     "memberof": "module:@the-/controller",
+    "meta": {
+      "filename": "create.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/controller/lib"
+    },
+    "name": "create",
+    "order": 0,
     "params": [
       {
         "type": {
@@ -193,72 +198,73 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "create.js",
-      "path": "/Users/okuni/Projects/the/packages/controller/lib"
-    },
-    "order": 0
+    "scope": "static"
   },
   {
-    "id": "module:@the-/controller.default",
-    "longname": "module:@the-/controller.default",
-    "name": "default",
-    "kind": "function",
-    "scope": "static",
     "description": "Alias of {@link module:@the-/controller.create}",
+    "id": "module:@the-/controller.default",
+    "kind": "function",
+    "longname": "module:@the-/controller.default",
     "memberof": "module:@the-/controller",
     "meta": {
-      "lineno": 1,
       "filename": "default.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/controller/lib"
     },
-    "order": 1
+    "name": "default",
+    "order": 1,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/controller.TheCtrl.afterInvocation",
-    "longname": "module:@the-/controller.TheCtrl.afterInvocation",
-    "name": "afterInvocation",
-    "kind": "function",
-    "scope": "static",
+    "async": true,
     "description": "Hook after invocation",
+    "id": "module:@the-/controller.TheCtrl.afterInvocation",
+    "kind": "function",
+    "longname": "module:@the-/controller.TheCtrl.afterInvocation",
     "memberof": "module:@the-/controller.TheCtrl",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "Invocation"
-          ]
-        },
-        "description": "Action invocation",
-        "name": "invocation"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<void>"
-          ]
-        }
-      }
-    ],
     "meta": {
+      "filename": "TheCtrl.js",
       "lineno": 17,
-      "filename": "TheCtrl.js",
       "path": "/Users/okuni/Projects/the/packages/controller/lib"
     },
-    "async": true,
-    "order": 6
+    "name": "afterInvocation",
+    "order": 6,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Invocation"
+          ]
+        },
+        "description": "Action invocation",
+        "name": "invocation"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<void>"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
   },
   {
-    "id": "module:@the-/controller.TheCtrl.beforeInvocation",
-    "longname": "module:@the-/controller.TheCtrl.beforeInvocation",
-    "name": "beforeInvocation",
-    "kind": "function",
-    "scope": "static",
+    "async": true,
     "description": "Hook before invocation",
+    "id": "module:@the-/controller.TheCtrl.beforeInvocation",
+    "kind": "function",
+    "longname": "module:@the-/controller.TheCtrl.beforeInvocation",
     "memberof": "module:@the-/controller.TheCtrl",
+    "meta": {
+      "filename": "TheCtrl.js",
+      "lineno": 30,
+      "path": "/Users/okuni/Projects/the/packages/controller/lib"
+    },
+    "name": "beforeInvocation",
+    "order": 7,
     "params": [
       {
         "type": {
@@ -279,22 +285,22 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 30,
-      "filename": "TheCtrl.js",
-      "path": "/Users/okuni/Projects/the/packages/controller/lib"
-    },
-    "async": true,
-    "order": 7
+    "scope": "static"
   },
   {
-    "id": "module:@the-/controller.TheCtrl.rescueInvocation",
-    "longname": "module:@the-/controller.TheCtrl.rescueInvocation",
-    "name": "rescueInvocation",
-    "kind": "function",
-    "scope": "static",
+    "async": true,
     "description": "Hook rescue invocation error",
+    "id": "module:@the-/controller.TheCtrl.rescueInvocation",
+    "kind": "function",
+    "longname": "module:@the-/controller.TheCtrl.rescueInvocation",
     "memberof": "module:@the-/controller.TheCtrl",
+    "meta": {
+      "filename": "TheCtrl.js",
+      "lineno": 43,
+      "path": "/Users/okuni/Projects/the/packages/controller/lib"
+    },
+    "name": "rescueInvocation",
+    "order": 8,
     "params": [
       {
         "type": {
@@ -315,12 +321,6 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 43,
-      "filename": "TheCtrl.js",
-      "path": "/Users/okuni/Projects/the/packages/controller/lib"
-    },
-    "async": true,
-    "order": 8
+    "scope": "static"
   }
 ]

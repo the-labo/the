@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { deepEqual, equal, ok } = require('assert')
+const { deepEqual, equal, ok } = require('assert').strict
 const TheHash = require('../lib/TheHash')
 
 describe('the-hash', () => {

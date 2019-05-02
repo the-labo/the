@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { ok } = require('assert')
+const { ok } = require('assert').strict
 const parseCSS = require('../lib/parsers/parseCSS')
 
 describe('parse-c-s-s', () => {

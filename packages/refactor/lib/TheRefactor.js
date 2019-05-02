@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/refactor
+ * @memberof module:@the-/refactor
  * @class TheRefactor
  */
 'use strict'

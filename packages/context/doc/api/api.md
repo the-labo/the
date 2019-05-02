@@ -60,4 +60,4 @@ Create a TheContext instance
 ### context.default()
 Alias of [create](#module_@the-/context.create)
 
-**Kind**: static method of [<code>@the-/context</code>](#module_@the-/context)  
+**Kind**: static method of [<code>@the-/context</code>](#module_@the-/context)

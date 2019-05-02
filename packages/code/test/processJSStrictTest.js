@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal } = require('assert')
+const { equal } = require('assert').strict
 const processJSStrict = require('../lib/processors/processJSStrict')
 
 describe('process-j-s-strict', () => {

@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal } = require('assert')
+const { equal } = require('assert').strict
 const processJSRequire = require('../lib/processors/processJSRequire')
 
 describe('process-require', async () => {
@@ -109,18 +109,20 @@ const x = require('x')
     )
   })
 
-    it('Upgrade assert', async () => {
-      equal(
-        await processJSRequire(`
+  it('Upgrade assert', async () => {
+    equal(
+      await processJSRequire(`
 const { equal } = require('assert').strict
 const { deepEqual } = require('assert')
 const { strictEqual, throws } = require('assert')
-        `),`
+        `),
+      `
 const { equal } = require('assert').strict
 const { deepEqual } = require('assert').strict
 const { strictEqual, throws } = require('assert')
-        `)
-    })
+        `,
+    )
+  })
 })
 
 /* global describe, before, after, it */

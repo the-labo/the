@@ -1,6 +1,6 @@
 /**
  * Pack handler
- * @memberOf module:@the-/pack
+ * @memberof module:@the-/pack
  * @class ThePack
  */
 'use strict'

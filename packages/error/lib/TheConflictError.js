@@ -9,7 +9,7 @@
 
 const TheError = require('./TheError')
 
-/** @lends TheConflictError */
+/** @lends module:@the-/error.TheConflictError */
 class TheConflictError extends TheError {}
 
 TheConflictError.state = 409

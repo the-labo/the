@@ -9,7 +9,7 @@
 
 const TheError = require('./TheError')
 
-/** @lends TheRequestTimeoutError */
+/** @lends module:@the-/error.TheRequestTimeoutError */
 class TheRequestTimeoutError extends TheError {}
 
 TheRequestTimeoutError.state = 408

@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/ps
+ * @memberof module:@the-/ps
  * @class ThePS
  * @param {string} filename - PID filename
  * @param {Object} [options={}] - Optional settings

@@ -1,6 +1,6 @@
 /**
  * Create a TheRTCClient instance
- * @memberOf module:@the-/rtc-client
+ * @memberof module:@the-/rtc-client
  * @function create
  * @param {...*} args
  * @returns {TheRTCClient}

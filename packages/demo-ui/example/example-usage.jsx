@@ -4,14 +4,12 @@ import React from 'react'
 import { TheDemoUi, TheDemoUiStyle } from '@the-/demo-ui'
 
 class ExampleComponent extends React.Component {
-  render () {
+  render() {
     return (
       <div>
-        <TheDemoUiStyle/>
-        <TheDemoUi>
-        </TheDemoUi>
+        <TheDemoUiStyle />
+        <TheDemoUi />
       </div>
-
     )
   }
 }

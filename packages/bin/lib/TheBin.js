@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/bin
+ * @memberof module:@the-/bin
  * @class TheBin
  * @param {string} cmd - Command
  * @param {Object} [options={}] - Optional settings

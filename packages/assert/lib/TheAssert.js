@@ -1,6 +1,6 @@
 /**
  * Assert module
- * @memberOf module:@the-/assert
+ * @memberof module:@the-/assert
  * @class TheAssert
  * @param {string} prefix - Prefix text
  * @param {Object} [options={}] - Optional settings

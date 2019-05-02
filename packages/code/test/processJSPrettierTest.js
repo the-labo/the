@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal } = require('assert')
+const { equal } = require('assert').strict
 const processJSPrettier = require('../lib/processors/processJSPrettier')
 
 describe('process-j-s-prettier', () => {

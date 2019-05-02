@@ -1,13 +1,13 @@
 'use strict'
 
-const {Timezones} = require('../../lib')
+const { Timezones } = require('../../lib')
 
 module.exports = {
+  data: {
+    Timezones,
+  },
   force: true,
   mode: '644',
-  data: {
-    Timezones
-  }
 }
 
 if (!module.parent) {

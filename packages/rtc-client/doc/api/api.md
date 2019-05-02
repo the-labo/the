@@ -158,4 +158,4 @@ PeerEvents
 Alias of {@memberOf module:@the-/rtc-client
 
 **Kind**: global function  
-**Link**: module:@the-/rtc-client.create}  
+**Link**: module:@the-/rtc-client.create}

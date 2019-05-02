@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/queue
+ * @memberof module:@the-/queue
  * @class TheQueue
  * @param {Object} [options={}]
  * @param {Boolean} [options.autoStart] - Auto start

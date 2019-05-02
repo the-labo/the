@@ -106,4 +106,4 @@ Create a TheJitter instance
 ## default()
 Alias of {@lnik module:@the-/jitter.create}
 
-**Kind**: global function  
+**Kind**: global function

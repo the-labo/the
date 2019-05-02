@@ -126,4 +126,4 @@ Register service workers
 ## createStyleElement() ⇒ <code>HTMLElement</code>
 Create Style element
 
-**Kind**: global function  
+**Kind**: global function

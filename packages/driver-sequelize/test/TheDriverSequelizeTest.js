@@ -77,9 +77,7 @@ describe('the-driver-sequelize', function() {
         equal(listed.meta.total, 0)
       }
 
-      {
-        await driver.drop('User')
-      }
+      await driver.drop('User')
     }
 
     deepEqual(await driver.resources(), [{ domain: null, name: 'User' }])

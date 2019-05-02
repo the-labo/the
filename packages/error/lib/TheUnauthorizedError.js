@@ -9,7 +9,7 @@
 
 const TheError = require('./TheError')
 
-/** @lends TheUnauthorizedError */
+/** @lends module:@the-/error.TheUnauthorizedError */
 class TheUnauthorizedError extends TheError {}
 
 TheUnauthorizedError.state = 401

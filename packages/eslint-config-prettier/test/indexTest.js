@@ -3,7 +3,7 @@
  */
 'use strict'
 
-const { ok } = require('assert')
+const { ok } = require('assert').strict
 const index = require('../index')
 
 describe('index', () => {

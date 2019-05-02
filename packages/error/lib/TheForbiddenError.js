@@ -9,7 +9,7 @@
 
 const TheError = require('./TheError')
 
-/** @lends TheForbiddenError */
+/** @lends module:@the-/error.TheForbiddenError */
 class TheForbiddenError extends TheError {}
 
 TheForbiddenError.state = 403

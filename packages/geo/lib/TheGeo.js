@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/geo
+ * @memberof module:@the-/geo
  * @class TheGeo
  * @param {Object} [options={}] - Optional settings
  */

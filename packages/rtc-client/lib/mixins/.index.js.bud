@@ -3,12 +3,12 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir({
-  cjs: true,
   annotations: {
-    memberof: 'module:@the-/rtc',
     description: 'Class mixins',
+    memberof: 'module:@the-/rtc',
     namespace: 'mixins',
   },
+  cjs: true,
   dirname: __dirname,
 })
 

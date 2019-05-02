@@ -37,6 +37,7 @@ Mixins for stream
 
 
 
+
 <!-- Overview End -->
 
 
@@ -74,7 +75,7 @@ async function tryExample() {
   class MyStream extends withDebug(TheStream) {
     /* ... */
     doSomething() {
-      /*...*/
+      /* ... */
     }
   }
   const stream = new MyStream()

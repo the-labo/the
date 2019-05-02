@@ -1,6 +1,6 @@
 /**
  * Mixins for listen
- * @memberOf module:@the-/resource.mixins
+ * @memberof module:@the-/resource.mixins
  * @function listenMix
  * @param {function} Class
  * @returns {function} Mixed class
@@ -23,7 +23,7 @@ const { unlessProduction } = require('@the-/check')
 /** @lends module:@the-/resource.mixins.listenMix */
 function listenMix(Class) {
   /**
-   * @memberOf module:@the-/resource.mixins.listenMix
+   * @memberof module:@the-/resource.mixins.listenMix
    * @inner
    */
   return class ListenMixed extends Class {

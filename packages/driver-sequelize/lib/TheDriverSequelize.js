@@ -1,5 +1,5 @@
 /**
- * @memberOf @the-/driver-sequelize
+ * @memberof @the-/driver-sequelize
  * @class TheDriverSequelize
  */
 'use strict'

@@ -1,6 +1,6 @@
 /**
  * Add cli methods
- * @memberOf module:@the-/db
+ * @memberof module:@the-/db
  * @function cliMix
  */
 'use strict'
@@ -14,7 +14,7 @@ const createTerminal = require('../helpers/createTerminal')
 /** @lends module:@the-/db.cliMix */
 function cliMix(Class) {
   /**
-   * @memberOf module:@the-/db.cliMix
+   * @memberof module:@the-/db.cliMix
    * @inner
    */
   class CliMixed extends Class {

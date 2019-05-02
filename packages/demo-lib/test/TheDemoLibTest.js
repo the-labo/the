@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { ok } = require('assert')
+const { ok } = require('assert').strict
 const TheDemoLib = require('../lib/TheDemoLib')
 
 describe('the-demo-lib', () => {

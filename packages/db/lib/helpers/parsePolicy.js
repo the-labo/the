@@ -1,6 +1,6 @@
 /**
  * Parse db policy
- * @memberOf execSqlite
+ * @memberof execSqlite
  * @function parsePolicy
  */
 'use strict'

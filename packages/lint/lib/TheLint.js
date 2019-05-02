@@ -1,6 +1,6 @@
 /**
  * Lint runner
- * @memberOf module:@the-/lint
+ * @memberof module:@the-/lint
  * @class TheLint
  */
 'use strict'

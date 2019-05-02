@@ -88,4 +88,4 @@ Create a TheGeo instance
 ## default()
 Alias of [create](#module_@the-/geo.create)
 
-**Kind**: global function  
+**Kind**: global function

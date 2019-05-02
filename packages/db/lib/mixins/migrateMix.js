@@ -1,6 +1,6 @@
 /**
  * Add migrate methods
- * @memberOf module:@the-/db
+ * @memberof module:@the-/db
  * @function migrateMix
  * @param {function}
  * @returns {function}
@@ -10,7 +10,7 @@
 /** @lends module:@the-/db.migrateMix */
 function migrateMix(Class) {
   /**
-   * @memberOf module:@the-/db
+   * @memberof module:@the-/db
    * @inner
    */
   class MigrateMixed extends Class {

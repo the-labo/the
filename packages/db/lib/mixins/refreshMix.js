@@ -1,8 +1,8 @@
 /**
- * @memberOf module:@the-/db
+ * @memberof module:@the-/db
  * @function refreshMix
  * @param {function} Class
- * @return {function} Mixed Class
+ * @returns {function} Mixed Class
  */
 'use strict'
 
@@ -21,7 +21,7 @@ const assertIsRef = (ref) => {
 /** @lends module:@the-/db.refreshMix */
 function refreshMix(Class) {
   /**
-   * @memberOf module:@the-/db.refreshMix
+   * @memberof module:@the-/db.refreshMix
    * @inner
    */
   class RefreshMixed extends Class {

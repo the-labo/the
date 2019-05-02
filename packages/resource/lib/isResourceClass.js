@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/resource
+ * @memberof module:@the-/resource
  * @function isResourceClass
  * @returns {Boolean}
  */

@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { deepEqual, doesNotThrow, equal, ok } = require('assert')
+const { deepEqual, doesNotThrow, equal, ok } = require('assert').strict
 const TheLoc = require('../lib/TheLoc')
 
 describe('the-loc', () => {

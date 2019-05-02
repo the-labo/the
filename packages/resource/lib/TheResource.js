@@ -1,12 +1,12 @@
 /**
  * Resource for the DB
- * @memberOf module:@the-/resource
+ * @memberof module:@the-/resource
  * @class TheResource
- * @extends TheResourceBase
- * @extends ClayResource
- * @extends module:@the-/resource.mixins.ListenMix~ListenMixed
- * @extends module:@the-/resource.mixins.queueMix~QueueMixed
- * @extends module:@the-/resource.mixins.writeOnceMix~WriteOnceMixed
+ * @augments TheResourceBase
+ * @augments ClayResource
+ * @augments module:@the-/resource.mixins.ListenMix~ListenMixed
+ * @augments module:@the-/resource.mixins.queueMix~QueueMixed
+ * @augments module:@the-/resource.mixins.writeOnceMix~WriteOnceMixed
  */
 'use strict'
 
@@ -16,7 +16,7 @@ const { create: clayResourceName } = require('clay-resource-name')
 const { listenMix, queueMix, writeOnceMix } = require('./mixins')
 
 /**
- * @memberOf module:@the-/resource
+ * @memberof module:@the-/resource
  * @protected
  * @class TheResourceBase
  */
