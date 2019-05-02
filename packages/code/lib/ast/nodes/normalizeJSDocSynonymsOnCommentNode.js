@@ -33,14 +33,14 @@ const synonyms = {
 function normalizeJSDocSynonymsOnCommentNode(CommentNode, { replace }) {
   const annotations = findJSDocAnnotationsInCommendNode(CommentNode)
   for (const annotation of annotations) {
-    const { type } = annotation
-    const synonym = synonyms[type.name]
+    const { kind } = annotation
+    const synonym = synonyms[kind.name]
     if (synonym) {
-      return replace([type.start + 1, type.end], synonym)
+      return replace([kind.start + 1, kind.end], synonym)
     }
-    const lowerName = String(type.name).toLocaleLowerCase()
-    if (lowerName !== type.name) {
-      return replace([type.start + 1, type.end], lowerName)
+    const lowerName = String(kind.name).toLocaleLowerCase()
+    if (lowerName !== kind.name) {
+      return replace([kind.start + 1, kind.end], lowerName)
     }
   }
 }

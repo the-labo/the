@@ -11,8 +11,8 @@ function sortAnnotationsOnCommentNode(CommentNode, { swap }) {
   const annotations = findJSDocAnnotationsInCommendNode(CommentNode)
   const _weightAnnotation = (annotation) => {
     let weight = 0
-    const typeName = String(annotation.type.name).toLocaleLowerCase()
-    switch (typeName) {
+    const kindName = String(annotation.kind.name).toLocaleLowerCase()
+    switch (kindName) {
       case 'augments':
       case 'extends':
         weight -= 20
@@ -47,7 +47,7 @@ function sortAnnotationsOnCommentNode(CommentNode, { swap }) {
     if (aWeight !== bWeight) {
       return aWeight - bWeight
     }
-    return a.type.name.localeCompare(b.type.name)
+    return a.kind.name.localeCompare(b.kind.name)
   })
   const rangeFor = (annotation) => [annotation.start, annotation.end]
   for (let i = 0; i < annotations.length; i++) {

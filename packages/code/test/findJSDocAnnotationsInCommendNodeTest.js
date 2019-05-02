@@ -23,7 +23,7 @@ const shirt = require('my/shirt')
 console.log(shirt)
  * @link x`,
     })
-    equal(annotations[0].type.name, 'module')
+    equal(annotations[0].kind.name, 'module')
     equal(annotations[2].value, 'x')
     equal(
       annotations[1].value,

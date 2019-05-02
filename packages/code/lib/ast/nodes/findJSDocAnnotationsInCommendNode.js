@@ -30,7 +30,7 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
     const nextStarted = workingAnnotation.end && hitsAtMark
     if (nextStarted) {
       workingAnnotation.value = String(value).substring(
-        workingAnnotation.type.end + 1,
+        workingAnnotation.kind.end + 1,
         workingAnnotation.end,
       )
       annotations.push(workingAnnotation)
@@ -38,13 +38,13 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
       continue
     }
     if (hitsEmpty) {
-      if (!workingAnnotation.type) {
-        const typeStart = workingAnnotation.start
-        const typeEnd = Number(i)
-        workingAnnotation.type = {
-          end: typeEnd,
-          name: String(value).substring(typeStart + 1, typeEnd),
-          start: typeStart,
+      if (!workingAnnotation.kind) {
+        const kindStart = workingAnnotation.start
+        const kindEnd = Number(i)
+        workingAnnotation.kind = {
+          end: kindEnd,
+          name: String(value).substring(kindStart + 1, kindEnd),
+          start: kindStart,
         }
         continue
       }
@@ -58,7 +58,7 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
     if (!workingAnnotation.end) {
       workingAnnotation.end = value.length
       workingAnnotation.value = String(value).substring(
-        workingAnnotation.type.end + 1,
+        workingAnnotation.kind.end + 1,
         workingAnnotation.end,
       )
     }
@@ -69,10 +69,10 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
     ...annotation,
     end: offset + annotation.end,
     start: offset + annotation.start,
-    type: annotation.type && {
-      end: offset + annotation.type.end,
-      name: annotation.type.name,
-      start: offset + annotation.type.start,
+    kind: annotation.kind && {
+      end: offset + annotation.kind.end,
+      name: annotation.kind.name,
+      start: offset + annotation.kind.start,
     },
   }))
 }

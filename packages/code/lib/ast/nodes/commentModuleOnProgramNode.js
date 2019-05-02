@@ -43,7 +43,7 @@ async function commentModuleOnProgramNode(
 
   const moduleAnnotationComment = JSDocComments.find((CommentNode) =>
     findJSDocAnnotationsInCommendNode(CommentNode).some(
-      (annotaion) => annotaion.type === 'module',
+      (annotaion) => annotaion.kind === 'module',
     ),
   )
   const dirname = path.dirname(filename)
