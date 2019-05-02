@@ -10,6 +10,7 @@
 const processCSSProp_ = require('./processCSSProp')
 const processCSSRule_ = require('./processCSSRule')
 const processFileEnd_ = require('./processFileEnd')
+const processJSBlock_ = require('./processJSBlock')
 const processJSClass_ = require('./processJSClass')
 const processJSComment_ = require('./processJSComment')
 const processJSDoc_ = require('./processJSDoc')
@@ -30,6 +31,7 @@ const processYAML_ = require('./processYAML')
 exports.processCSSProp = processCSSProp_
 exports.processCSSRule = processCSSRule_
 exports.processFileEnd = processFileEnd_
+exports.processJSBlock = processJSBlock_
 exports.processJSClass = processJSClass_
 exports.processJSComment = processJSComment_
 exports.processJSDoc = processJSDoc_
@@ -50,6 +52,7 @@ module.exports = {
   processCSSProp: processCSSProp_,
   processCSSRule: processCSSRule_,
   processFileEnd: processFileEnd_,
+  processJSBlock: processJSBlock_,
   processJSClass: processJSClass_,
   processJSComment: processJSComment_,
   processJSDoc: processJSDoc_,

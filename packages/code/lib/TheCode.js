@@ -31,6 +31,7 @@ class TheCode {
       json = true,
       jsPrettier = true,
       jsRequire = true,
+      jsBlock = true,
       jsStrict = true,
       jsSwitch = true,
       jsUnused = true,
@@ -41,6 +42,7 @@ class TheCode {
       javascript: [
         jsFunction && p.processJSFunction,
         jsObject && p.processJSObject,
+        jsBlock && p.processJSBlock,
         jsRequire && p.processJSRequire,
         jsComment && p.processJSComment,
         jsClass && p.processJSClass,

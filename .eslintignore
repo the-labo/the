@@ -100,6 +100,7 @@ var/
 /packages/resize/lib/index.js
 /packages/resource/lib/index.js
 /packages/resource/lib/mixins/index.js
+/packages/rtc-client/example/example-bundle.js
 /packages/rtc-client/lib/constants/ChannelNames.js
 /packages/rtc-client/lib/constants/IOEvents.js
 /packages/rtc-client/lib/constants/PeerEvents.js
