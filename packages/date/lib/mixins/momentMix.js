@@ -1,6 +1,6 @@
 /**
  * Mixin for moment
- * @memberOf module:@the-/date.mixins
+ * @memberof module:@the-/date.mixins
  * @function momentMix
  * @param {function} Class
  * @returns {function} Class
@@ -20,7 +20,7 @@ require('moment/locale/en-nz')
 /** @lends module:@the-/date.mixins.momentMix */
 function momentMix(Class) {
   /**
-   * @memberOf module:@the-/date.mixins.momentMix
+   * @memberof module:@the-/date.mixins.momentMix
    * @inner
    * @class MomentMixed
    */
@@ -31,7 +31,7 @@ function momentMix(Class) {
 
     /**
      * Moment to date
-     * @returns {Moment}
+     * @returns {Object} moment instance
      */
     toMoment() {
       const { date } = this

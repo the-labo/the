@@ -1,6 +1,6 @@
 /**
  * Define method wrapper
- * @memberOf module:@the-/mixin-scene.helpers
+ * @memberof module:@the-/mixin-scene.helpers
  * @function asMethodWrap
  */
 'use strict'

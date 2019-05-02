@@ -1,8 +1,8 @@
 /**
  * Site toast mix
+ * @function siteToast
  * @deprecated
  * @memberOf module:@the-/mixin-scene
- * @function siteToast
  * @returns {function} Annotated class
  */
 'use strict'

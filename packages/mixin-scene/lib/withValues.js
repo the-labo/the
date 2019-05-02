@@ -1,6 +1,6 @@
 /**
  * withValues mixin
- * @memberOf module:@the-/mixin-scene
+ * @memberof module:@the-/mixin-scene
  * @function withValues
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class

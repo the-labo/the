@@ -5,11 +5,11 @@
 ## @the-/date
 Date utility for the-framework
 
-**Version**: 15.4.1  
+**Version**: 15.4.2  
 **License**: MIT  
 
 * [@the-/date](#module_@the-/date)
-    * [.TheDate](#module_@the-/date.TheDate) ⇐ [<code>TheDateBase</code>](#module_@the-/date.TheDateBase)
+    * [.TheDate](#module_@the-/date.TheDate) ⇐ [<code>AddMixed</code>](#module_@the-/date.mixins.addMix..AddMixed)
         * [new TheDate()](#new_module_@the-/date.TheDate_new)
         * [.format(format)](#module_@the-/date.TheDate+format) ⇒ <code>string</code>
         * [.fromNow()](#module_@the-/date.TheDate+fromNow) ⇒ <code>string</code>
@@ -39,11 +39,11 @@ Date utility for the-framework
 
 <a name="module_@the-/date.TheDate"></a>
 
-### date.TheDate ⇐ [<code>TheDateBase</code>](#module_@the-/date.TheDateBase)
+### date.TheDate ⇐ [<code>AddMixed</code>](#module_@the-/date.mixins.addMix..AddMixed)
 **Kind**: static class of [<code>@the-/date</code>](#module_@the-/date)  
-**Extends**: [<code>TheDateBase</code>](#module_@the-/date.TheDateBase), [<code>AddMixed</code>](#module_@the-/date.mixins.addMix..AddMixed), <code>module:@the-/date.mixins.endOfMix~EndOfMixed</code>, [<code>GetMixed</code>](#module_@the-/date.mixins.getMix..GetMixed), [<code>MomentMixed</code>](#module_@the-/date.mixins.momentMix..MomentMixed), [<code>SetMixed</code>](#module_@the-/date.mixins.setMix..SetMixed), [<code>StartOfMixed</code>](#module_@the-/date.mixins.startOfMix..StartOfMixed), [<code>SubtractMixed</code>](#module_@the-/date.mixins.subtractMix..SubtractMixed)  
+**Extends**: [<code>AddMixed</code>](#module_@the-/date.mixins.addMix..AddMixed), <code>module:@the-/date.mixins.endOfMix~EndOfMixed</code>, [<code>GetMixed</code>](#module_@the-/date.mixins.getMix..GetMixed), [<code>MomentMixed</code>](#module_@the-/date.mixins.momentMix..MomentMixed), [<code>SetMixed</code>](#module_@the-/date.mixins.setMix..SetMixed), [<code>StartOfMixed</code>](#module_@the-/date.mixins.startOfMix..StartOfMixed), [<code>SubtractMixed</code>](#module_@the-/date.mixins.subtractMix..SubtractMixed), [<code>TheDateBase</code>](#module_@the-/date.TheDateBase)  
 
-* [.TheDate](#module_@the-/date.TheDate) ⇐ [<code>TheDateBase</code>](#module_@the-/date.TheDateBase)
+* [.TheDate](#module_@the-/date.TheDate) ⇐ [<code>AddMixed</code>](#module_@the-/date.mixins.addMix..AddMixed)
     * [new TheDate()](#new_module_@the-/date.TheDate_new)
     * [.format(format)](#module_@the-/date.TheDate+format) ⇒ <code>string</code>
     * [.fromNow()](#module_@the-/date.TheDate+fromNow) ⇒ <code>string</code>

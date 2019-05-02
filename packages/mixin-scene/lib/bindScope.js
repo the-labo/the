@@ -1,6 +1,6 @@
 /**
  * For bindScope
- * @memberOf module:@the-/mixin-scene
+ * @memberof module:@the-/mixin-scene
  * @function bindScope
  * @returns {function} Class annotation function
  */

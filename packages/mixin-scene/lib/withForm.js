@@ -1,8 +1,8 @@
 /**
  * withForm mixin
+ * @function withForm
  * @deprecated
  * @memberOf module:@the-/mixin-scene
- * @function withForm
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
  */

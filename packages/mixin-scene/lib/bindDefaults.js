@@ -1,6 +1,6 @@
 /**
  * For bindDefaults
- * @memberOf module:@the-/mixin-scene
+ * @memberof module:@the-/mixin-scene
  * @function bindDefaults
  * @returns {function} method annotation function
  */

@@ -19,15 +19,6 @@
 ## Functions
 
 <dl>
-<dt><a href="#bindDefaults">bindDefaults()</a> ⇒ <code>function</code></dt>
-<dd><p>For bindDefaults</p>
-</dd>
-<dt><a href="#bindScope">bindScope()</a> ⇒ <code>function</code></dt>
-<dd><p>For bindScope</p>
-</dd>
-<dt><a href="#siteToast">siteToast()</a> ⇒ <code>function</code></dt>
-<dd><p>Site toast mix</p>
-</dd>
 <dt><a href="#reset">reset(queues)</a></dt>
 <dd><p>Rest toasts</p>
 </dd>
@@ -40,29 +31,20 @@
 <dt><a href="#showWarn">showWarn(message)</a></dt>
 <dd><p>Show warn toast</p>
 </dd>
-<dt><a href="#withBack">withBack(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>withBack mixin</p>
-</dd>
 <dt><a href="#goBack">goBack()</a></dt>
 <dd><p>Go Back</p>
 </dd>
-<dt><a href="#withBusy">withBusy(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>withBusy mixin</p>
-</dd>
-<dt><a href="#busyFor">busyFor(duration)</a> ⇒ <code>Promise.&lt;void&gt;</code></dt>
+<dt><a href="#busyFor">busyFor(duration)</a> ⇒ <code>Promise.&lt;undefined&gt;</code></dt>
 <dd><p>Wait busy for</p>
 </dd>
-<dt><a href="#busyWhile">busyWhile(task)</a> ⇒ <code>Promise.&lt;void&gt;</code></dt>
+<dt><a href="#busyWhile">busyWhile(task)</a> ⇒ <code>Promise.&lt;undefined&gt;</code></dt>
 <dd><p>Set busy true while task active</p>
 </dd>
 <dt><a href="#isBusy">isBusy()</a> ⇒ <code>boolean</code></dt>
 <dd><p>Is busy or not</p>
 </dd>
-<dt><a href="#waitWhileBusy">waitWhileBusy()</a> ⇒ <code>Promise.&lt;void&gt;</code></dt>
+<dt><a href="#waitWhileBusy">waitWhileBusy()</a> ⇒ <code>Promise.&lt;undefined&gt;</code></dt>
 <dd><p>Wait while busy</p>
-</dd>
-<dt><a href="#withEntities">withEntities(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>withEntities mixin</p>
 </dd>
 <dt><a href="#addEntities">addEntities(entities, [options])</a></dt>
 <dd><p>Add entities</p>
@@ -82,15 +64,12 @@
 <dt><a href="#updateEntity">updateEntity(entity)</a></dt>
 <dd><p>Update existing entity</p>
 </dd>
-<dt><a href="#withEntry">withEntry(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>withEntry mixin</p>
-</dd>
 <dt><a href="#getEntry">getEntry([options])</a> ⇒ <code>Object</code></dt>
 <dd><p>Get entry values</p>
 </dd>
 <dt><a href="#hasEntryErrorFor">hasEntryErrorFor(name)</a> ⇒ <code>boolean</code></dt>
 <dd></dd>
-<dt><a href="#processEntry">processEntry(handler)</a> ⇒ <code>Promise.&lt;void&gt;</code></dt>
+<dt><a href="#processEntry">processEntry(handler)</a> ⇒ <code>Promise.&lt;undefined&gt;</code></dt>
 <dd><p>Process an entry</p>
 </dd>
 <dt><a href="#resetEntry">resetEntry()</a></dt>
@@ -102,12 +81,6 @@
 <dt><a href="#setEntryErrors">setEntryErrors(errors)</a></dt>
 <dd><p>Set entry errors</p>
 </dd>
-<dt><a href="#withFailure">withFailure(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>withFailure mixin</p>
-</dd>
-<dt><a href="#withFilter">withFilter(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>withFilter mixin</p>
-</dd>
 <dt><a href="#getFilter">getFilter()</a> ⇒ <code>Object</code></dt>
 <dd><p>Get filter</p>
 </dd>
@@ -117,26 +90,14 @@
 <dt><a href="#setFilterByQ">setFilterByQ()</a></dt>
 <dd><p>Set filters by q</p>
 </dd>
-<dt><a href="#withForm">withForm(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>withForm mixin</p>
-</dd>
-<dt><a href="#withHistory">withHistory(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>withHistory mixin</p>
-</dd>
 <dt><a href="#replaceHistoryByQuery">replaceHistoryByQuery(query)</a></dt>
 <dd><p>Replace history with query</p>
-</dd>
-<dt><a href="#withId">withId(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>withId mixin</p>
 </dd>
 <dt><a href="#getId">getId()</a> ⇒ <code>string</code></dt>
 <dd><p>Get id</p>
 </dd>
 <dt><a href="#isKnownId">isKnownId(id)</a> ⇒ <code>boolean</code></dt>
 <dd><p>Check if the id is known</p>
-</dd>
-<dt><a href="#withLimit">withLimit(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>withLimit mixin</p>
 </dd>
 <dt><a href="#getLimit">getLimit()</a> ⇒ <code>number</code></dt>
 <dd><p>Get limit</p>
@@ -150,29 +111,20 @@
 <dt><a href="#updateToNextLimit">updateToNextLimit()</a></dt>
 <dd><p>Update to next limit</p>
 </dd>
-<dt><a href="#withLocation">withLocation(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>withLocation mixin</p>
-</dd>
 <dt><a href="#changeLocationTo">changeLocationTo(href)</a></dt>
 <dd><p>Change location to url</p>
 </dd>
 <dt><a href="#getLocationHash">getLocationHash()</a> ⇒ <code>*</code></dt>
 <dd><p>Get location hash</p>
 </dd>
-<dt><a href="#reloadLocation">reloadLocation()</a> ⇒ <code>Promise.&lt;void&gt;</code></dt>
+<dt><a href="#reloadLocation">reloadLocation()</a> ⇒ <code>Promise.&lt;undefined&gt;</code></dt>
 <dd><p>Reload current location</p>
 </dd>
 <dt><a href="#setLocationHash">setLocationHash(hash)</a></dt>
 <dd><p>Set location hash</p>
 </dd>
-<dt><a href="#withPage">withPage(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>withPage mixin</p>
-</dd>
 <dt><a href="#getPage">getPage()</a> ⇒ <code>Object</code></dt>
 <dd><p>Get page data</p>
-</dd>
-<dt><a href="#withQuery">withQuery(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>withQuery mixin</p>
 </dd>
 <dt><a href="#getQueryFromSearch">getQueryFromSearch([search])</a> ⇒ <code>Object</code></dt>
 <dd><p>Get query from search</p>
@@ -180,11 +132,8 @@
 <dt><a href="#mergeQueryToSearch">mergeQueryToSearch(query)</a></dt>
 <dd><p>Merge additional query into search</p>
 </dd>
-<dt><a href="#queryWithSearch">queryWithSearch(search)</a> ⇒ <code>object</code></dt>
+<dt><a href="#queryWithSearch">queryWithSearch(search)</a> ⇒ <code>Object</code></dt>
 <dd><p>Query with search</p>
-</dd>
-<dt><a href="#withReady">withReady(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>withReady mixin</p>
 </dd>
 <dt><a href="#ifReady">ifReady(task)</a> ⇒ <code>Promise.&lt;*&gt;</code></dt>
 <dd><p>Do only if ready</p>
@@ -195,38 +144,23 @@
 <dt><a href="#unlessReady">unlessReady(task)</a> ⇒ <code>Promise.&lt;*&gt;</code></dt>
 <dd><p>Do unless ready</p>
 </dd>
-<dt><a href="#withResult">withResult(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>withResult mixin</p>
-</dd>
 <dt><a href="#resultFor">resultFor(action)</a> ⇒ <code>Promise.&lt;*&gt;</code></dt>
 <dd><p>Do action and store result</p>
-</dd>
-<dt><a href="#withSort">withSort(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>withSort mixin</p>
-</dd>
-<dt><a href="#withTargets">withTargets(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>withTargets mixin</p>
 </dd>
 <dt><a href="#addTargets">addTargets(targets)</a></dt>
 <dd><p>Add targets</p>
 </dd>
-<dt><a href="#getTargetIds">getTargetIds()</a> ⇒ <code>Array.&lt;String&gt;</code></dt>
+<dt><a href="#getTargetIds">getTargetIds()</a> ⇒ <code>Array.&lt;string&gt;</code></dt>
 <dd><p>Get ids of target</p>
 </dd>
-<dt><a href="#getTargetRefs">getTargetRefs()</a> ⇒ <code>Array.&lt;String&gt;</code></dt>
+<dt><a href="#getTargetRefs">getTargetRefs()</a> ⇒ <code>Array.&lt;string&gt;</code></dt>
 <dd><p>Get refs of target</p>
 </dd>
 <dt><a href="#getTargets">getTargets()</a></dt>
 <dd><p>Get target values</p>
 </dd>
-<dt><a href="#withValues">withValues(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>withValues mixin</p>
-</dd>
 <dt><a href="#asClassMixin">asClassMixin()</a></dt>
 <dd><p>Define as class mixin</p>
-</dd>
-<dt><a href="#asMethodWrap">asMethodWrap()</a></dt>
-<dd><p>Define method wrapper</p>
 </dd>
 <dt><a href="#injectProperties">injectProperties(Class)</a> ⇒ <code>function</code></dt>
 <dd></dd>
@@ -237,8 +171,273 @@
 ## @the-/mixin-scene
 Mixins for the-scene
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 **License**: MIT  
+
+* [@the-/mixin-scene](#module_@the-/mixin-scene)
+    * [.bindDefaults()](#module_@the-/mixin-scene.bindDefaults) ⇒ <code>function</code>
+    * [.bindScope()](#module_@the-/mixin-scene.bindScope) ⇒ <code>function</code>
+    * ~~[.siteToast()](#module_@the-/mixin-scene.siteToast) ⇒ <code>function</code>~~
+    * [.withBack(Class)](#module_@the-/mixin-scene.withBack) ⇒ <code>function</code>
+    * [.withBusy(Class)](#module_@the-/mixin-scene.withBusy) ⇒ <code>function</code>
+    * [.withEntities(Class)](#module_@the-/mixin-scene.withEntities) ⇒ <code>function</code>
+    * [.withEntry(Class)](#module_@the-/mixin-scene.withEntry) ⇒ <code>function</code>
+    * [.withFailure(Class)](#module_@the-/mixin-scene.withFailure) ⇒ <code>function</code>
+    * [.withFilter(Class)](#module_@the-/mixin-scene.withFilter) ⇒ <code>function</code>
+    * ~~[.withForm(Class)](#module_@the-/mixin-scene.withForm) ⇒ <code>function</code>~~
+    * [.withHistory(Class)](#module_@the-/mixin-scene.withHistory) ⇒ <code>function</code>
+    * [.withId(Class)](#module_@the-/mixin-scene.withId) ⇒ <code>function</code>
+    * [.withLimit(Class)](#module_@the-/mixin-scene.withLimit) ⇒ <code>function</code>
+    * [.withLocation(Class)](#module_@the-/mixin-scene.withLocation) ⇒ <code>function</code>
+    * [.withPage(Class)](#module_@the-/mixin-scene.withPage) ⇒ <code>function</code>
+    * [.withQuery(Class)](#module_@the-/mixin-scene.withQuery) ⇒ <code>function</code>
+    * [.withReady(Class)](#module_@the-/mixin-scene.withReady) ⇒ <code>function</code>
+    * [.withResult(Class)](#module_@the-/mixin-scene.withResult) ⇒ <code>function</code>
+    * [.withSort(Class)](#module_@the-/mixin-scene.withSort) ⇒ <code>function</code>
+    * [.withTargets(Class)](#module_@the-/mixin-scene.withTargets) ⇒ <code>function</code>
+    * [.withValues(Class)](#module_@the-/mixin-scene.withValues) ⇒ <code>function</code>
+
+<a name="module_@the-/mixin-scene.bindDefaults"></a>
+
+### mixinScene.bindDefaults() ⇒ <code>function</code>
+For bindDefaults
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - method annotation function  
+<a name="module_@the-/mixin-scene.bindScope"></a>
+
+### mixinScene.bindScope() ⇒ <code>function</code>
+For bindScope
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Class annotation function  
+<a name="module_@the-/mixin-scene.siteToast"></a>
+
+### ~~mixinScene.siteToast() ⇒ <code>function</code>~~
+***Deprecated***
+
+Site toast mix
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Annotated class  
+<a name="module_@the-/mixin-scene.withBack"></a>
+
+### mixinScene.withBack(Class) ⇒ <code>function</code>
+withBack mixin
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Mixed class  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| Class | <code>function</code> | Class to mix |
+
+<a name="module_@the-/mixin-scene.withBusy"></a>
+
+### mixinScene.withBusy(Class) ⇒ <code>function</code>
+withBusy mixin
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Mixed class  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| Class | <code>function</code> | Class to mix |
+
+<a name="module_@the-/mixin-scene.withEntities"></a>
+
+### mixinScene.withEntities(Class) ⇒ <code>function</code>
+withEntities mixin
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Mixed class  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| Class | <code>function</code> | Class to mix |
+
+<a name="module_@the-/mixin-scene.withEntry"></a>
+
+### mixinScene.withEntry(Class) ⇒ <code>function</code>
+withEntry mixin
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Mixed class  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| Class | <code>function</code> | Class to mix |
+
+<a name="module_@the-/mixin-scene.withFailure"></a>
+
+### mixinScene.withFailure(Class) ⇒ <code>function</code>
+withFailure mixin
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Mixed class  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| Class | <code>function</code> | Class to mix |
+
+<a name="module_@the-/mixin-scene.withFilter"></a>
+
+### mixinScene.withFilter(Class) ⇒ <code>function</code>
+withFilter mixin
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Mixed class  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| Class | <code>function</code> | Class to mix |
+
+<a name="module_@the-/mixin-scene.withForm"></a>
+
+### ~~mixinScene.withForm(Class) ⇒ <code>function</code>~~
+***Deprecated***
+
+withForm mixin
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Mixed class  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| Class | <code>function</code> | Class to mix |
+
+<a name="module_@the-/mixin-scene.withHistory"></a>
+
+### mixinScene.withHistory(Class) ⇒ <code>function</code>
+withHistory mixin
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Mixed class  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| Class | <code>function</code> | Class to mix |
+
+<a name="module_@the-/mixin-scene.withId"></a>
+
+### mixinScene.withId(Class) ⇒ <code>function</code>
+withId mixin
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Mixed class  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| Class | <code>function</code> | Class to mix |
+
+<a name="module_@the-/mixin-scene.withLimit"></a>
+
+### mixinScene.withLimit(Class) ⇒ <code>function</code>
+withLimit mixin
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Mixed class  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| Class | <code>function</code> | Class to mix |
+
+<a name="module_@the-/mixin-scene.withLocation"></a>
+
+### mixinScene.withLocation(Class) ⇒ <code>function</code>
+withLocation mixin
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Mixed class  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| Class | <code>function</code> | Class to mix |
+
+<a name="module_@the-/mixin-scene.withPage"></a>
+
+### mixinScene.withPage(Class) ⇒ <code>function</code>
+withPage mixin
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Mixed class  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| Class | <code>function</code> | Class to mix |
+
+<a name="module_@the-/mixin-scene.withQuery"></a>
+
+### mixinScene.withQuery(Class) ⇒ <code>function</code>
+withQuery mixin
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Mixed class  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| Class | <code>function</code> | Class to mix |
+
+<a name="module_@the-/mixin-scene.withReady"></a>
+
+### mixinScene.withReady(Class) ⇒ <code>function</code>
+withReady mixin
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Mixed class  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| Class | <code>function</code> | Class to mix |
+
+<a name="module_@the-/mixin-scene.withResult"></a>
+
+### mixinScene.withResult(Class) ⇒ <code>function</code>
+withResult mixin
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Mixed class  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| Class | <code>function</code> | Class to mix |
+
+<a name="module_@the-/mixin-scene.withSort"></a>
+
+### mixinScene.withSort(Class) ⇒ <code>function</code>
+withSort mixin
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Mixed class  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| Class | <code>function</code> | Class to mix |
+
+<a name="module_@the-/mixin-scene.withTargets"></a>
+
+### mixinScene.withTargets(Class) ⇒ <code>function</code>
+withTargets mixin
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Mixed class  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| Class | <code>function</code> | Class to mix |
+
+<a name="module_@the-/mixin-scene.withValues"></a>
+
+### mixinScene.withValues(Class) ⇒ <code>function</code>
+withValues mixin
+
+**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
+**Returns**: <code>function</code> - Mixed class  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| Class | <code>function</code> | Class to mix |
+
 <a name="isReady"></a>
 
 ## isReady
@@ -251,27 +450,6 @@ Get is ready or not
 | --- | --- |
 | isReady | <code>Boolean</code> | 
 
-<a name="bindDefaults"></a>
-
-## bindDefaults() ⇒ <code>function</code>
-For bindDefaults
-
-**Kind**: global function  
-**Returns**: <code>function</code> - method annotation function  
-<a name="bindScope"></a>
-
-## bindScope() ⇒ <code>function</code>
-For bindScope
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Class annotation function  
-<a name="siteToast"></a>
-
-## siteToast() ⇒ <code>function</code>
-Site toast mix
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Annotated class  
 <a name="reset"></a>
 
 ## reset(queues)
@@ -316,39 +494,15 @@ Show warn toast
 | --- | --- |
 | message | <code>string</code> | 
 
-<a name="withBack"></a>
-
-## withBack(Class) ⇒ <code>function</code>
-withBack mixin
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
 <a name="goBack"></a>
 
 ## goBack()
 Go Back
 
 **Kind**: global function  
-<a name="withBusy"></a>
-
-## withBusy(Class) ⇒ <code>function</code>
-withBusy mixin
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
 <a name="busyFor"></a>
 
-## busyFor(duration) ⇒ <code>Promise.&lt;void&gt;</code>
+## busyFor(duration) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Wait busy for
 
 **Kind**: global function  
@@ -359,7 +513,7 @@ Wait busy for
 
 <a name="busyWhile"></a>
 
-## busyWhile(task) ⇒ <code>Promise.&lt;void&gt;</code>
+## busyWhile(task) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Set busy true while task active
 
 **Kind**: global function  
@@ -376,22 +530,10 @@ Is busy or not
 **Kind**: global function  
 <a name="waitWhileBusy"></a>
 
-## waitWhileBusy() ⇒ <code>Promise.&lt;void&gt;</code>
+## waitWhileBusy() ⇒ <code>Promise.&lt;undefined&gt;</code>
 Wait while busy
 
 **Kind**: global function  
-<a name="withEntities"></a>
-
-## withEntities(Class) ⇒ <code>function</code>
-withEntities mixin
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
 <a name="addEntities"></a>
 
 ## addEntities(entities, [options])
@@ -442,7 +584,7 @@ Receive an entity
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| entity |  |  |  |
+| entity | <code>Object</code> |  | Entity to set |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 
 <a name="updateEntity"></a>
@@ -455,18 +597,6 @@ Update existing entity
 | Param | Type |
 | --- | --- |
 | entity | <code>Object</code> | 
-
-<a name="withEntry"></a>
-
-## withEntry(Class) ⇒ <code>function</code>
-withEntry mixin
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
 
 <a name="getEntry"></a>
 
@@ -490,7 +620,7 @@ Get entry values
 
 <a name="processEntry"></a>
 
-## processEntry(handler) ⇒ <code>Promise.&lt;void&gt;</code>
+## processEntry(handler) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Process an entry
 
 **Kind**: global function  
@@ -527,30 +657,6 @@ Set entry errors
 | --- | --- |
 | errors | <code>Object</code> | 
 
-<a name="withFailure"></a>
-
-## withFailure(Class) ⇒ <code>function</code>
-withFailure mixin
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
-<a name="withFilter"></a>
-
-## withFilter(Class) ⇒ <code>function</code>
-withFilter mixin
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
 <a name="getFilter"></a>
 
 ## getFilter() ⇒ <code>Object</code>
@@ -574,30 +680,6 @@ Set filter
 Set filters by q
 
 **Kind**: global function  
-<a name="withForm"></a>
-
-## withForm(Class) ⇒ <code>function</code>
-withForm mixin
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
-<a name="withHistory"></a>
-
-## withHistory(Class) ⇒ <code>function</code>
-withHistory mixin
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
 <a name="replaceHistoryByQuery"></a>
 
 ## replaceHistoryByQuery(query)
@@ -608,18 +690,6 @@ Replace history with query
 | Param | Type | Description |
 | --- | --- | --- |
 | query | <code>Object</code> | Query data |
-
-<a name="withId"></a>
-
-## withId(Class) ⇒ <code>function</code>
-withId mixin
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
 
 <a name="getId"></a>
 
@@ -638,18 +708,6 @@ Check if the id is known
 | Param | Type |
 | --- | --- |
 | id | <code>string</code> | 
-
-<a name="withLimit"></a>
-
-## withLimit(Class) ⇒ <code>function</code>
-withLimit mixin
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
 
 <a name="getLimit"></a>
 
@@ -680,18 +738,6 @@ Set limit
 Update to next limit
 
 **Kind**: global function  
-<a name="withLocation"></a>
-
-## withLocation(Class) ⇒ <code>function</code>
-withLocation mixin
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
 <a name="changeLocationTo"></a>
 
 ## changeLocationTo(href)
@@ -711,7 +757,7 @@ Get location hash
 **Kind**: global function  
 <a name="reloadLocation"></a>
 
-## reloadLocation() ⇒ <code>Promise.&lt;void&gt;</code>
+## reloadLocation() ⇒ <code>Promise.&lt;undefined&gt;</code>
 Reload current location
 
 **Kind**: global function  
@@ -722,21 +768,9 @@ Set location hash
 
 **Kind**: global function  
 
-| Param |
-| --- |
-| hash | 
-
-<a name="withPage"></a>
-
-## withPage(Class) ⇒ <code>function</code>
-withPage mixin
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Mixed class  
-
 | Param | Type | Description |
 | --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
+| hash | <code>string</code> | Location hash to set |
 
 <a name="getPage"></a>
 
@@ -744,18 +778,6 @@ withPage mixin
 Get page data
 
 **Kind**: global function  
-<a name="withQuery"></a>
-
-## withQuery(Class) ⇒ <code>function</code>
-withQuery mixin
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
 <a name="getQueryFromSearch"></a>
 
 ## getQueryFromSearch([search]) ⇒ <code>Object</code>
@@ -780,26 +802,14 @@ Merge additional query into search
 
 <a name="queryWithSearch"></a>
 
-## queryWithSearch(search) ⇒ <code>object</code>
+## queryWithSearch(search) ⇒ <code>Object</code>
 Query with search
 
 **Kind**: global function  
 
-| Param | Description |
-| --- | --- |
-| search | Location search string |
-
-<a name="withReady"></a>
-
-## withReady(Class) ⇒ <code>function</code>
-withReady mixin
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Mixed class  
-
 | Param | Type | Description |
 | --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
+| search | <code>string</code> | Location search string |
 
 <a name="ifReady"></a>
 
@@ -834,18 +844,6 @@ Do unless ready
 | --- | --- |
 | task | <code>function</code> | 
 
-<a name="withResult"></a>
-
-## withResult(Class) ⇒ <code>function</code>
-withResult mixin
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
 <a name="resultFor"></a>
 
 ## resultFor(action) ⇒ <code>Promise.&lt;\*&gt;</code>
@@ -858,30 +856,6 @@ Do action and store result
 | --- | --- |
 | action | <code>function</code> | 
 
-<a name="withSort"></a>
-
-## withSort(Class) ⇒ <code>function</code>
-withSort mixin
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
-<a name="withTargets"></a>
-
-## withTargets(Class) ⇒ <code>function</code>
-withTargets mixin
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
 <a name="addTargets"></a>
 
 ## addTargets(targets)
@@ -889,19 +863,19 @@ Add targets
 
 **Kind**: global function  
 
-| Param |
-| --- |
-| targets | 
+| Param | Type |
+| --- | --- |
+| targets | <code>Array</code> | 
 
 <a name="getTargetIds"></a>
 
-## getTargetIds() ⇒ <code>Array.&lt;String&gt;</code>
+## getTargetIds() ⇒ <code>Array.&lt;string&gt;</code>
 Get ids of target
 
 **Kind**: global function  
 <a name="getTargetRefs"></a>
 
-## getTargetRefs() ⇒ <code>Array.&lt;String&gt;</code>
+## getTargetRefs() ⇒ <code>Array.&lt;string&gt;</code>
 Get refs of target
 
 **Kind**: global function  
@@ -911,28 +885,10 @@ Get refs of target
 Get target values
 
 **Kind**: global function  
-<a name="withValues"></a>
-
-## withValues(Class) ⇒ <code>function</code>
-withValues mixin
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
 <a name="asClassMixin"></a>
 
 ## asClassMixin()
 Define as class mixin
-
-**Kind**: global function  
-<a name="asMethodWrap"></a>
-
-## asMethodWrap()
-Define method wrapper
 
 **Kind**: global function  
 <a name="injectProperties"></a>

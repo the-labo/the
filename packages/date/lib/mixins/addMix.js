@@ -10,27 +10,8 @@
 'use strict'
 
 /** @lends module:@the-/date.mixins.addMix */
-function addMix(Class) {
-  const units = [
-    'years',
-    'year',
-    'quarters',
-    'quarter',
-    'months',
-    'month',
-    'weeks',
-    'week',
-    'days',
-    'day',
-    'hours',
-    'hour',
-    'minutes',
-    'minute',
-    'seconds',
-    'second',
-    'milliseconds',
-    'millisecond',
-  ]
+function addMix (Class) {
+  const units = [ 'years', 'year', 'quarters', 'quarter', 'months', 'month', 'weeks', 'week', 'days', 'day', 'hours', 'hour', 'minutes', 'minute', 'seconds', 'second', 'milliseconds', 'millisecond' ]
 
   /**
    * @memberOf module:@the-/date.mixins.addMix
@@ -45,7 +26,7 @@ function addMix(Class) {
      * @see https://momentjs.com/docs/#/manipulating/add/
      * @returns {TheDate}
      */
-    add(amount, unit = 'millisecond') {
+    add (amount, unit = 'millisecond') {
       unit = this.normalizeMomentUnits(unit)
       const unknown = !units.includes(unit)
       if (unknown) {
@@ -61,7 +42,7 @@ function addMix(Class) {
      * @param {number} years to add
      * @returns {TheDate}
      */
-    addYears(years) {
+    addYears (years) {
       return this.add(years, 'years')
     }
 
@@ -70,7 +51,7 @@ function addMix(Class) {
      * @param {number} year to add
      * @returns {TheDate}
      */
-    addYear(year) {
+    addYear (year) {
       return this.add(year, 'year')
     }
 
@@ -79,7 +60,7 @@ function addMix(Class) {
      * @param {number} quarters to add
      * @returns {TheDate}
      */
-    addQuarters(quarters) {
+    addQuarters (quarters) {
       return this.add(quarters, 'quarters')
     }
 
@@ -88,7 +69,7 @@ function addMix(Class) {
      * @param {number} quarter to add
      * @returns {TheDate}
      */
-    addQuarter(quarter) {
+    addQuarter (quarter) {
       return this.add(quarter, 'quarter')
     }
 
@@ -97,7 +78,7 @@ function addMix(Class) {
      * @param {number} months to add
      * @returns {TheDate}
      */
-    addMonths(months) {
+    addMonths (months) {
       return this.add(months, 'months')
     }
 
@@ -106,7 +87,7 @@ function addMix(Class) {
      * @param {number} month to add
      * @returns {TheDate}
      */
-    addMonth(month) {
+    addMonth (month) {
       return this.add(month, 'month')
     }
 
@@ -115,7 +96,7 @@ function addMix(Class) {
      * @param {number} weeks to add
      * @returns {TheDate}
      */
-    addWeeks(weeks) {
+    addWeeks (weeks) {
       return this.add(weeks, 'weeks')
     }
 
@@ -124,7 +105,7 @@ function addMix(Class) {
      * @param {number} week to add
      * @returns {TheDate}
      */
-    addWeek(week) {
+    addWeek (week) {
       return this.add(week, 'week')
     }
 
@@ -133,7 +114,7 @@ function addMix(Class) {
      * @param {number} days to add
      * @returns {TheDate}
      */
-    addDays(days) {
+    addDays (days) {
       return this.add(days, 'days')
     }
 
@@ -142,7 +123,7 @@ function addMix(Class) {
      * @param {number} day to add
      * @returns {TheDate}
      */
-    addDay(day) {
+    addDay (day) {
       return this.add(day, 'day')
     }
 
@@ -151,7 +132,7 @@ function addMix(Class) {
      * @param {number} hours to add
      * @returns {TheDate}
      */
-    addHours(hours) {
+    addHours (hours) {
       return this.add(hours, 'hours')
     }
 
@@ -160,7 +141,7 @@ function addMix(Class) {
      * @param {number} hour to add
      * @returns {TheDate}
      */
-    addHour(hour) {
+    addHour (hour) {
       return this.add(hour, 'hour')
     }
 
@@ -169,7 +150,7 @@ function addMix(Class) {
      * @param {number} minutes to add
      * @returns {TheDate}
      */
-    addMinutes(minutes) {
+    addMinutes (minutes) {
       return this.add(minutes, 'minutes')
     }
 
@@ -178,7 +159,7 @@ function addMix(Class) {
      * @param {number} minute to add
      * @returns {TheDate}
      */
-    addMinute(minute) {
+    addMinute (minute) {
       return this.add(minute, 'minute')
     }
 
@@ -187,7 +168,7 @@ function addMix(Class) {
      * @param {number} seconds to add
      * @returns {TheDate}
      */
-    addSeconds(seconds) {
+    addSeconds (seconds) {
       return this.add(seconds, 'seconds')
     }
 
@@ -196,7 +177,7 @@ function addMix(Class) {
      * @param {number} second to add
      * @returns {TheDate}
      */
-    addSecond(second) {
+    addSecond (second) {
       return this.add(second, 'second')
     }
 
@@ -205,7 +186,7 @@ function addMix(Class) {
      * @param {number} milliseconds to add
      * @returns {TheDate}
      */
-    addMilliseconds(milliseconds) {
+    addMilliseconds (milliseconds) {
       return this.add(milliseconds, 'milliseconds')
     }
 
@@ -214,12 +195,14 @@ function addMix(Class) {
      * @param {number} millisecond to add
      * @returns {TheDate}
      */
-    addMillisecond(millisecond) {
+    addMillisecond (millisecond) {
       return this.add(millisecond, 'millisecond')
     }
-  }
 
+
+  }
   return AddMixed
 }
 
 module.exports = addMix
+

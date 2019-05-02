@@ -1,6 +1,6 @@
 /**
  * Create a TheDate instance
- * @memberOf module:@the-/date
+ * @memberof module:@the-/date
  * @function create
  * @param {...*} args
  * @returns {TheDate}
@@ -9,7 +9,7 @@
 
 const TheDate = require('./TheDate')
 
-/** @lends create */
+/** @lends module:@the-/date.create */
 function create(...args) {
   return new TheDate(...args)
 }
