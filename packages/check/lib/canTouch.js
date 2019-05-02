@@ -1,6 +1,6 @@
 /**
  * Check touch supported
- * @memberOf module:@the-/check
+ * @memberof module:@the-/check
  * @function canTouch
  * @returns {Boolean}
  */

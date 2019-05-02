@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/driver-sequelize.constants
+ * @memberof module:@the-/driver-sequelize.constants
  * @enum {string}
  * @name MetaColumnNames
  */

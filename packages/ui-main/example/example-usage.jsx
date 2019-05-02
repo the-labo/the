@@ -6,12 +6,8 @@ import TheMain from '@the-/ui-main'
 const TheMainStyles = TheMain.styles({})
 
 class ExampleComponent extends React.PureComponent {
-  render () {
-    return (
-      <TheMain id='my-component'
-                        styles={ TheMainStyles }
-      />
-    )
+  render() {
+    return <TheMain id='my-component' styles={TheMainStyles} />
   }
 }
 

@@ -1,6 +1,6 @@
 /**
  * Context
- * @memberOf @the-/context
+ * @memberof @the-/context
  * @class TheContext
  * @param {Object} values
  * @param {Object} [options={}] - Optional settings

@@ -1,6 +1,6 @@
 /**
  * Do unless production env
- * @memberOf module:@the-/check
+ * @memberof module:@the-/check
  * @function unlessProduction
  * @param {function} handler
  */

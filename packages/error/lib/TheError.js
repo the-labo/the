@@ -1,6 +1,6 @@
 /**
  * Basic error
- * @memberOf module:@the-/error
+ * @memberof module:@the-/error
  * @class TheError
  */
 'use strict'

@@ -1,6 +1,6 @@
 /**
  * Create and run
- * @memberOf module:@the-/run
+ * @memberof module:@the-/run
  * @function run
  * @param {string} filename
  * @param {Object} [options={}]

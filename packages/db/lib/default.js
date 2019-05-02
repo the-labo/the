@@ -1,5 +1,5 @@
 /**
- * Alias of {@memberOf module:@the-/db
+ * Alias of {@memberof module:@the-/db
  * @function default
  * @link module:@the-/db.create}
  */

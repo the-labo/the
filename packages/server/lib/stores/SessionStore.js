@@ -1,6 +1,6 @@
 /**
  * Client session store for the-server
- * @memberOf module:@the-/server.stores
+ * @memberof module:@the-/server.stores
  * @class SessionStore
  * @augments module:@the-/server.stores.Session
  */

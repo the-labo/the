@@ -1,6 +1,6 @@
 /**
  * Create driver from env
- * @memberOf module:@the-/db
+ * @memberof module:@the-/db
  * @function driverFromEnv
  */
 'use strict'

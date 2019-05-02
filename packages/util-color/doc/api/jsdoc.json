@@ -1,27 +1,32 @@
 [
   {
-    "id": "module:@the-/util-color",
-    "longname": "module:@the-/util-color",
-    "name": "@the-/util-color",
-    "kind": "module",
     "description": "Color utility for the-framework",
-    "version": "15.4.0",
+    "id": "module:@the-/util-color",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "utilColor",
+    "longname": "module:@the-/util-color",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/util-color/lib"
     },
-    "order": 2
+    "name": "@the-/util-color",
+    "order": 2,
+    "typicalname": "utilColor",
+    "version": "15.4.0"
   },
   {
-    "id": "colorWithAlpha",
-    "longname": "colorWithAlpha",
-    "name": "colorWithAlpha",
-    "kind": "function",
-    "scope": "global",
     "description": "Get color with alpha",
+    "id": "colorWithAlpha",
+    "kind": "function",
+    "longname": "colorWithAlpha",
+    "meta": {
+      "filename": "colorWithAlpha.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/util-color/lib"
+    },
+    "name": "colorWithAlpha",
+    "order": 0,
     "params": [
       {
         "type": {
@@ -50,20 +55,20 @@
         "description": "color"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "colorWithAlpha.js",
-      "path": "/Users/okuni/Projects/the/packages/util-color/lib"
-    },
-    "order": 0
+    "scope": "global"
   },
   {
-    "id": "colorWithText",
-    "longname": "colorWithText",
-    "name": "colorWithText",
-    "kind": "function",
-    "scope": "global",
     "description": "Get color with text",
+    "id": "colorWithText",
+    "kind": "function",
+    "longname": "colorWithText",
+    "meta": {
+      "filename": "colorWithText.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/util-color/lib"
+    },
+    "name": "colorWithText",
+    "order": 1,
     "params": [
       {
         "type": {
@@ -96,20 +101,20 @@
         "description": "Color"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "colorWithText.js",
-      "path": "/Users/okuni/Projects/the/packages/util-color/lib"
-    },
-    "order": 1
+    "scope": "global"
   },
   {
-    "id": "rotatedColorsFor",
-    "longname": "rotatedColorsFor",
-    "name": "rotatedColorsFor",
-    "kind": "function",
-    "scope": "global",
     "description": "Get rotated colors for color",
+    "id": "rotatedColorsFor",
+    "kind": "function",
+    "longname": "rotatedColorsFor",
+    "meta": {
+      "filename": "rotatedColorsFor.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/util-color/lib"
+    },
+    "name": "rotatedColorsFor",
+    "order": 3,
     "params": [
       {
         "type": {
@@ -155,20 +160,20 @@
         "description": "Colors"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "rotatedColorsFor.js",
-      "path": "/Users/okuni/Projects/the/packages/util-color/lib"
-    },
-    "order": 3
+    "scope": "global"
   },
   {
-    "id": "textColorFor",
-    "longname": "textColorFor",
-    "name": "textColorFor",
-    "kind": "function",
-    "scope": "global",
     "description": "Get text color for background color",
+    "id": "textColorFor",
+    "kind": "function",
+    "longname": "textColorFor",
+    "meta": {
+      "filename": "textColorFor.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/util-color/lib"
+    },
+    "name": "textColorFor",
+    "order": 4,
     "params": [
       {
         "type": {
@@ -189,11 +194,6 @@
         "description": "Text color"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "textColorFor.js",
-      "path": "/Users/okuni/Projects/the/packages/util-color/lib"
-    },
-    "order": 4
+    "scope": "global"
   }
 ]

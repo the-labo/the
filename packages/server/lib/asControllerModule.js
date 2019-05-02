@@ -1,6 +1,6 @@
 /**
  * Mark as RPCController
- * @memberOf module:@the-/server
+ * @memberof module:@the-/server
  * @function asControllerModule
  */
 'use strict'

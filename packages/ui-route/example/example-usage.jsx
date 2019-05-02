@@ -1,10 +1,10 @@
 'use strict'
 
 import React from 'react'
-import { TheRouter } from '@the-/ui-router'
-import { TheSpinStyle } from '@the-/ui-spin'
 import { TheLink } from '@the-/ui-link'
 import { TheRoute, TheRouteStack, TheRouteStyle } from '@the-/ui-route'
+import { TheRouter } from '@the-/ui-router'
+import { TheSpinStyle } from '@the-/ui-spin'
 
 class ExampleComponent extends React.Component {
   constructor(props) {
@@ -14,10 +14,6 @@ class ExampleComponent extends React.Component {
     setInterval(() => {
       // this.setState({i: this.state.i + 1})
     }, 1000)
-  }
-
-  toggleVertical() {
-    this.setState((prevState) => ({ vertical: !prevState.vertical }))
   }
 
   render() {
@@ -38,15 +34,18 @@ class ExampleComponent extends React.Component {
           <TheRoute.Switch>
             <TheRoute path='/s1'>
               <TheRouteStack
-                style={{ border: '4px solid #555' }}
                 direction={this.state.vertical ? 'vertical' : 'horizontal'}
                 stack={[
                   [
                     '/s1',
                     class View01 extends React.Component {
+                      componentDidMount() {
+                        console.log('View01 did mount')
+                      }
+
                       render() {
                         return (
-                          <div style={{ padding: '50px', background: '#EAA' }}>
+                          <div style={{ background: '#EAA', padding: '50px' }}>
                             <h3>This is view 01</h3>
 
                             <br />
@@ -64,23 +63,23 @@ class ExampleComponent extends React.Component {
                           </div>
                         )
                       }
-
-                      componentDidMount() {
-                        console.log('View01 did mount')
-                      }
                     },
                   ],
                   [
                     '/s1/v2',
                     class View02 extends React.Component {
+                      componentDidMount() {
+                        console.log('View02 did mount')
+                      }
+
                       render() {
                         const { pop } = this.props
                         return (
                           <div
                             style={{
-                              padding: '50px',
                               background: '#AEA',
                               height: 920,
+                              padding: '50px',
                             }}
                           >
                             <h3>This is view 02</h3>
@@ -100,19 +99,21 @@ class ExampleComponent extends React.Component {
                           </div>
                         )
                       }
-
-                      componentDidMount() {
-                        console.log('View02 did mount')
-                      }
                     },
                   ],
                   [
                     '/s1/v2/v3',
                     class View03 extends React.Component {
+                      componentDidMount() {
+                        console.log('View03 did mount')
+                        const { history, location } = this.props
+                        history.replace(location.pathname + '?a=b')
+                      }
+
                       render() {
                         const { pop } = this.props
                         return (
-                          <div style={{ padding: '50px', background: '#AAE' }}>
+                          <div style={{ background: '#AAE', padding: '50px' }}>
                             <h3>This is view 03</h3>
                             <br />
                             <div
@@ -130,15 +131,10 @@ class ExampleComponent extends React.Component {
                           </div>
                         )
                       }
-
-                      componentDidMount() {
-                        console.log('View03 did mount')
-                        const { location, history } = this.props
-                        history.replace(location.pathname + '?a=b')
-                      }
                     },
                   ],
                 ]}
+                style={{ border: '4px solid #555' }}
               />
             </TheRoute>
           </TheRoute.Switch>
@@ -152,6 +148,10 @@ class ExampleComponent extends React.Component {
         </TheRouter.Hash>
       </div>
     )
+  }
+
+  toggleVertical() {
+    this.setState((prevState) => ({ vertical: !prevState.vertical }))
   }
 }
 

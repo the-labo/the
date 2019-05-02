@@ -1,6 +1,6 @@
 /**
  * Create a TheGeo instance
- * @memberOf module:@the-/geo
+ * @memberof module:@the-/geo
  * @function create
  * @param {...*} args
  * @returns {TheGeo}

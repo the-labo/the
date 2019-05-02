@@ -4,10 +4,10 @@ import React from 'react'
 import { TheThemeStyle } from '@the-/ui-theme-style'
 
 class ExampleComponent extends React.Component {
-  render () {
+  render() {
     return (
       <div>
-        <TheThemeStyle/>
+        <TheThemeStyle />
       </div>
     )
   }

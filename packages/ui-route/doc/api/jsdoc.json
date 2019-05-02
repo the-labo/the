@@ -1,223 +1,223 @@
 [
   {
-    "id": "module:@the-/ui-route",
-    "longname": "module:@the-/ui-route",
-    "name": "@the-/ui-route",
-    "kind": "module",
     "description": "Route of the-components",
+    "id": "module:@the-/ui-route",
+    "kind": "module",
+    "longname": "module:@the-/ui-route",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
     },
+    "name": "@the-/ui-route",
     "order": 0
   },
   {
+    "description": "Route of the-components",
     "id": "module:@the-/ui-route",
-    "longname": "module:@the-/ui-route",
-    "name": "@the-/ui-route",
     "kind": "module",
-    "description": "Route of the-components",
-    "version": "15.4.0",
-    "typicalname": "uiRoute",
+    "longname": "module:@the-/ui-route",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
     },
-    "order": 1
+    "name": "@the-/ui-route",
+    "order": 1,
+    "typicalname": "uiRoute",
+    "version": "15.4.0"
   },
   {
-    "id": "TheRoute",
-    "longname": "TheRoute",
-    "name": "TheRoute",
-    "kind": "class",
-    "scope": "global",
     "description": "Route of the-components",
-    "meta": {
-      "lineno": 16,
-      "filename": "TheRoute.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
-    },
-    "order": 2
-  },
-  {
-    "id": "TheRouteStack",
-    "longname": "TheRouteStack",
-    "name": "TheRouteStack",
+    "id": "TheRoute",
     "kind": "class",
-    "scope": "global",
+    "longname": "TheRoute",
+    "meta": {
+      "filename": "TheRoute.jsx",
+      "lineno": 16,
+      "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
+    },
+    "name": "TheRoute",
+    "order": 2,
+    "scope": "global"
+  },
+  {
     "description": "Tab for the-components",
+    "id": "TheRouteStack",
+    "kind": "class",
+    "longname": "TheRouteStack",
     "meta": {
+      "filename": "TheRouteStack.jsx",
       "lineno": 15,
-      "filename": "TheRouteStack.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
     },
-    "order": 9
+    "name": "TheRouteStack",
+    "order": 9,
+    "scope": "global"
   },
   {
-    "id": "TheRouteStyle",
-    "longname": "TheRouteStyle",
-    "name": "TheRouteStyle",
-    "kind": "function",
-    "scope": "global",
     "description": "Style for TheRoute",
-    "params": [],
+    "id": "TheRouteStyle",
+    "kind": "function",
+    "longname": "TheRouteStyle",
     "meta": {
-      "lineno": 10,
       "filename": "TheRouteStyle.jsx",
+      "lineno": 10,
       "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
     },
-    "order": 13
+    "name": "TheRouteStyle",
+    "order": 13,
+    "params": [],
+    "scope": "global"
   },
   {
-    "id": "TheRoute.propTypes.animationDuration",
-    "longname": "TheRoute.propTypes.animationDuration",
-    "name": "animationDuration",
-    "kind": "member",
-    "scope": "static",
     "description": "Animation duration",
+    "id": "TheRoute.propTypes.animationDuration",
+    "kind": "member",
+    "longname": "TheRoute.propTypes.animationDuration",
     "memberof": "TheRoute.propTypes",
     "meta": {
+      "filename": "TheRoute.jsx",
       "lineno": 132,
-      "filename": "TheRoute.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
     },
-    "order": 3
+    "name": "animationDuration",
+    "order": 3,
+    "scope": "static"
   },
   {
-    "id": "TheRoute.propTypes.component",
-    "longname": "TheRoute.propTypes.component",
-    "name": "component",
-    "kind": "member",
-    "scope": "static",
     "description": "Component class",
+    "id": "TheRoute.propTypes.component",
+    "kind": "member",
+    "longname": "TheRoute.propTypes.component",
     "memberof": "TheRoute.propTypes",
     "meta": {
+      "filename": "TheRoute.jsx",
       "lineno": 134,
-      "filename": "TheRoute.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
     },
-    "order": 4
+    "name": "component",
+    "order": 4,
+    "scope": "static"
   },
   {
-    "id": "TheRoute.propTypes.exact",
-    "longname": "TheRoute.propTypes.exact",
-    "name": "exact",
-    "kind": "member",
-    "scope": "static",
     "description": "Exact match",
+    "id": "TheRoute.propTypes.exact",
+    "kind": "member",
+    "longname": "TheRoute.propTypes.exact",
     "memberof": "TheRoute.propTypes",
     "meta": {
+      "filename": "TheRoute.jsx",
       "lineno": 136,
-      "filename": "TheRoute.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
     },
-    "order": 5
+    "name": "exact",
+    "order": 5,
+    "scope": "static"
   },
   {
-    "id": "TheRoute.propTypes.path",
-    "longname": "TheRoute.propTypes.path",
-    "name": "path",
-    "kind": "member",
-    "scope": "static",
     "description": "Routing path",
+    "id": "TheRoute.propTypes.path",
+    "kind": "member",
+    "longname": "TheRoute.propTypes.path",
     "memberof": "TheRoute.propTypes",
     "meta": {
+      "filename": "TheRoute.jsx",
       "lineno": 138,
-      "filename": "TheRoute.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
     },
-    "order": 6
+    "name": "path",
+    "order": 6,
+    "scope": "static"
   },
   {
-    "id": "TheRoute.propTypes.scrollToTop",
-    "longname": "TheRoute.propTypes.scrollToTop",
-    "name": "scrollToTop",
-    "kind": "member",
-    "scope": "static",
     "description": "Render function",
+    "id": "TheRoute.propTypes.scrollToTop",
+    "kind": "member",
+    "longname": "TheRoute.propTypes.scrollToTop",
     "memberof": "TheRoute.propTypes",
     "meta": {
+      "filename": "TheRoute.jsx",
       "lineno": 140,
-      "filename": "TheRoute.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
     },
-    "order": 7
+    "name": "scrollToTop",
+    "order": 7,
+    "scope": "static"
   },
   {
-    "id": "TheRoute.propTypes.strict",
-    "longname": "TheRoute.propTypes.strict",
-    "name": "strict",
-    "kind": "member",
-    "scope": "static",
     "description": "Strict match",
+    "id": "TheRoute.propTypes.strict",
+    "kind": "member",
+    "longname": "TheRoute.propTypes.strict",
     "memberof": "TheRoute.propTypes",
     "meta": {
-      "lineno": 142,
       "filename": "TheRoute.jsx",
+      "lineno": 142,
       "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
     },
-    "order": 8
+    "name": "strict",
+    "order": 8,
+    "scope": "static"
   },
   {
-    "id": "TheRouteStack.propTypes.direction",
-    "longname": "TheRouteStack.propTypes.direction",
-    "name": "direction",
-    "kind": "member",
-    "scope": "static",
     "description": "Stack direction",
+    "id": "TheRouteStack.propTypes.direction",
+    "kind": "member",
+    "longname": "TheRouteStack.propTypes.direction",
     "memberof": "TheRouteStack.propTypes",
     "meta": {
+      "filename": "TheRouteStack.jsx",
       "lineno": 166,
-      "filename": "TheRouteStack.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
     },
-    "order": 10
+    "name": "direction",
+    "order": 10,
+    "scope": "static"
   },
   {
-    "id": "TheRouteStack.propTypes.onChange",
-    "longname": "TheRouteStack.propTypes.onChange",
-    "name": "onChange",
-    "kind": "member",
-    "scope": "static",
     "description": "Handle stack change",
+    "id": "TheRouteStack.propTypes.onChange",
+    "kind": "member",
+    "longname": "TheRouteStack.propTypes.onChange",
     "memberof": "TheRouteStack.propTypes",
     "meta": {
+      "filename": "TheRouteStack.jsx",
       "lineno": 168,
-      "filename": "TheRouteStack.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
     },
-    "order": 11
+    "name": "onChange",
+    "order": 11,
+    "scope": "static"
   },
   {
-    "id": "TheRouteStack.propTypes.stack",
-    "longname": "TheRouteStack.propTypes.stack",
-    "name": "stack",
-    "kind": "member",
-    "scope": "static",
     "description": "Stacks",
+    "id": "TheRouteStack.propTypes.stack",
+    "kind": "member",
+    "longname": "TheRouteStack.propTypes.stack",
     "memberof": "TheRouteStack.propTypes",
     "meta": {
-      "lineno": 170,
       "filename": "TheRouteStack.jsx",
+      "lineno": 170,
       "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
     },
-    "order": 12
+    "name": "stack",
+    "order": 12,
+    "scope": "static"
   },
   {
-    "id": "TheRouteStyle.propTypes.options",
-    "longname": "TheRouteStyle.propTypes.options",
-    "name": "options",
-    "kind": "member",
-    "scope": "static",
     "description": "Style options",
+    "id": "TheRouteStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheRouteStyle.propTypes.options",
     "memberof": "TheRouteStyle.propTypes",
     "meta": {
-      "lineno": 21,
       "filename": "TheRouteStyle.jsx",
+      "lineno": 21,
       "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
     },
-    "order": 14
+    "name": "options",
+    "order": 14,
+    "scope": "static"
   }
 ]

@@ -166,4 +166,3 @@ Alias of [create](#module_@the-/tmp.create)
 | --- | --- | --- |
 | cleanup | <code>function</code> |  |
 | path | <code>string</code> | Directory name |
-

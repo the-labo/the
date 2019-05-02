@@ -41,4 +41,4 @@ Body of the-components
 ## TheBodyStyle()
 Style for TheBody
 
-**Kind**: global function  
+**Kind**: global function

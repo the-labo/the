@@ -4,11 +4,11 @@ import React from 'react'
 import { TheCondition, TheConditionStyle } from '@the-/ui-condition'
 
 class ExampleComponent extends React.PureComponent {
-  render () {
+  render() {
     const value = 1
     return (
       <div>
-        <TheConditionStyle/>
+        <TheConditionStyle />
         <TheCondition if={value === 1}>
           <div>Will b render if the condition is true</div>
           <div>Can be multiple</div>
@@ -18,7 +18,6 @@ class ExampleComponent extends React.PureComponent {
           <div>Can be multiple</div>
         </TheCondition>
       </div>
-
     )
   }
 }

@@ -4,13 +4,11 @@ import React from 'react'
 import { TheFooter, TheFooterStyle } from '@the-/ui-footer'
 
 class ExampleComponent extends React.PureComponent {
-  render () {
+  render() {
     return (
       <div>
         <TheFooterStyle />
-        <TheFooter>
-
-        </TheFooter>
+        <TheFooter />
       </div>
     )
   }

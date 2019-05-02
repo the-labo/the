@@ -1,6 +1,6 @@
 /**
  * Create generator from readable
- * @memberOf module:@the-/stream.helpers
+ * @memberof module:@the-/stream.helpers
  * @function generatorFromReadable
  */
 'use strict'

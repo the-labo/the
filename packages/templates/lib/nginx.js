@@ -1,6 +1,6 @@
 /**
  * Define bud for nginx conf file
- * @memberOf module:@the-/templates
+ * @memberof module:@the-/templates
  * @function nginx
  * @param {Object} config
  * @returns {Object}

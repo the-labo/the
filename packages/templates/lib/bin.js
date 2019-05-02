@@ -1,6 +1,6 @@
 /**
  * Define bud for bin scripts
- * @memberOf module:@the-/templates
+ * @memberof module:@the-/templates
  * @function bin
  * @param {object} config - Configuration
  * @param {object} config.signature - bin signature.

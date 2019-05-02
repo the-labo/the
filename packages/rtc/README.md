@@ -37,6 +37,7 @@ RTC server for the-frameworks
 
 
 
+
 <!-- Overview End -->
 
 
@@ -109,14 +110,23 @@ tryExample().catch((err) => console.error(err))
 - [SFUProxyPool](./doc/api/api.md#SFUProxyPool)
 - [.TheRTC](./doc/api/api.md#module_@the-/rtc.TheRTC)
 ### function
-- [handleUnknownKeys()](./doc/api/api.md#handleUnknownKeys)
-- [parseTurn secret(secret)](./doc/api/api.md#parseTurn secret)
+- [default()](./doc/api/api.md#default)
 - [httpMix(Class)](./doc/api/api.md#httpMix)
-- [ioMix(Class)](./doc/api/api.md#ioMix)
-- [sfuMix(Class)](./doc/api/api.md#sfuMix)
-- [turnMix(Class)](./doc/api/api.md#turnMix)
 - [.create(args)](./doc/api/api.md#module_@the-/rtc.create)
-- [.default()](./doc/api/api.md#module_@the-/rtc.default)
+- [.handleUnknownKeys()](./doc/api/api.md#module_@the-/rtc.helpers.handleUnknownKeys)
+- [.parseTurn secret(secret)](./doc/api/api.md#module_@the-/rtc.helpers.parseTurn secret)
+- [.ioMix(Class)](./doc/api/api.md#module_@the-/rtc.mixins.ioMix)
+- [.sfuMix(Class)](./doc/api/api.md#module_@the-/rtc.mixins.sfuMix)
+- [.turnMix(Class)](./doc/api/api.md#module_@the-/rtc.mixins.turnMix)
+### namespace
+- [.constants](./doc/api/api.md#module_@the-/rtc.constants)
+- [.helpers](./doc/api/api.md#module_@the-/rtc.helpers)
+- [.mixins](./doc/api/api.md#module_@the-/rtc.mixins)
+### enum
+- [.ChannelNames](./doc/api/api.md#module_@the-/rtc.constants.ChannelNames)
+- [.IOEvents](./doc/api/api.md#module_@the-/rtc.constants.IOEvents)
+- [.PeerEvents](./doc/api/api.md#module_@the-/rtc.constants.PeerEvents)
+- [.TopologyTypes](./doc/api/api.md#module_@the-/rtc.constants.TopologyTypes)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -1,5 +1,5 @@
 /**
- * Alias of {@memberOf module:@the-/polyfill
+ * Alias of {@memberof module:@the-/polyfill
  * @function default
  * @link module:@the-/polyfill.create}
  */

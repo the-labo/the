@@ -1,6 +1,6 @@
 /**
  * Create a TheRefresher instance
- * @memberOf module:@the-/refresher
+ * @memberof module:@the-/refresher
  * @function create
  * @param {...*} args
  * @returns {TheRefresher}

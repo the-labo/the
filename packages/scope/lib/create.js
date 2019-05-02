@@ -1,6 +1,6 @@
 /**
  * Create a TheScope instance
- * @memberOf module:@the-/scope
+ * @memberof module:@the-/scope
  * @function create
  * @param {...*} args
  * @returns {TheScope}

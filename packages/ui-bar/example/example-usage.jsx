@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react'
-import { TheBar, TheActionBar, TheBarStyle } from '@the-/ui-bar'
+import { TheActionBar, TheBar, TheBarStyle } from '@the-/ui-bar'
 import { TheButtonStyle } from '@the-/ui-button'
 
 class ExampleComponent extends React.Component {
@@ -11,10 +11,6 @@ class ExampleComponent extends React.Component {
       action: true,
     }
     this.toggleAction = this.toggleAction.bind(this)
-  }
-
-  toggleAction() {
-    this.setState((prevState) => ({ action: !prevState.action }))
   }
 
   render() {
@@ -27,16 +23,20 @@ class ExampleComponent extends React.Component {
         <TheBar id='my-component' />
 
         <TheActionBar
-          lead='doSomething'
-          hidden={!this.state.action}
-          buttons={{ yes: 'say yes!', no: 'say no!' }}
+          buttons={{ no: 'say no!', yes: 'say yes!' }}
           handlers={{
-            yes: () => console.log('yes'),
             no: () => console.log('no'),
+            yes: () => console.log('yes'),
           }}
+          hidden={!this.state.action}
+          lead='doSomething'
         />
       </div>
     )
+  }
+
+  toggleAction() {
+    this.setState((prevState) => ({ action: !prevState.action }))
   }
 }
 

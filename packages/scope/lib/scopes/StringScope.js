@@ -1,6 +1,6 @@
 /**
  * Scope to hold value
- * @memberOf module:@the-/scope.scopes
+ * @memberof module:@the-/scope.scopes
  * @class StringScope
  * @augments module:@the-/scope.scopes.Scope
  */

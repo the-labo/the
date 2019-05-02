@@ -1,6 +1,6 @@
 /**
  * Do setup for env
- * @memberOf module:@the-/db
+ * @memberof module:@the-/db
  * @function setupForEnv
  */
 'use strict'

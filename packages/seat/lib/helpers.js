@@ -1,6 +1,6 @@
 /**
  * Helper utility
- * @memberOf module:@the-/seat
+ * @memberof module:@the-/seat
  * @namespace helpers
  */
 'use strict'

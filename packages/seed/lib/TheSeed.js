@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/seed
+ * @memberof module:@the-/seed
  * @class TheSeed
  */
 'use strict'

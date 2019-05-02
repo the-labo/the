@@ -57,5 +57,4 @@ Create and run
 | Param | Type | Default |
 | --- | --- | --- |
 | filename | <code>string</code> |  | 
-| [options] | <code>Object</code> | <code>{}</code> | 
-
+| [options] | <code>Object</code> | <code>{}</code> |

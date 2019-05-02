@@ -1,6 +1,6 @@
 /**
  * Define model column
- * @memberOf module:@the-/driver-sequelize.modeling
+ * @memberof module:@the-/driver-sequelize.modeling
  * @function defineModelColumn
  * @param {string} propertyName
  * @param {Object} def

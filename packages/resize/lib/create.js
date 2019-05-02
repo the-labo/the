@@ -1,6 +1,6 @@
 /**
  * Create a TheResize instance
- * @memberOf module:@the-/resize
+ * @memberof module:@the-/resize
  * @function create
  * @param {...*} args
  * @returns {TheResize}

@@ -1,24 +1,16 @@
 'use strict'
 
 import React from 'react'
-import {
-  TheContainer,
-  TheRoot,
-  TheHeader,
-  TheMain,
-} from '@the-/ui'
+import { TheContainer, TheHeader, TheMain, TheRoot } from '@the-/ui'
 
 class Example extends React.Component {
-  render () {
+  render() {
     return (
       <div>
         <TheRoot>
-          <TheHeader>
-          </TheHeader>
+          <TheHeader />
           <TheMain>
-            <TheContainer>
-
-            </TheContainer>
+            <TheContainer />
           </TheMain>
         </TheRoot>
       </div>

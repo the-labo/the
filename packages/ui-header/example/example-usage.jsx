@@ -1,32 +1,47 @@
 'use strict'
 
 import React from 'react'
-import { TheRouter } from '@the-/ui-router'
-import { TheRoute } from '@the-/ui-route'
-import { TheHeader, TheHeaderStyle } from '@the-/ui-header'
 import { TheButton, TheButtonStyle } from '@the-/ui-button'
+import { TheHeader, TheHeaderStyle } from '@the-/ui-header'
+import { TheRoute } from '@the-/ui-route'
+import { TheRouter } from '@the-/ui-router'
 
 class ExampleComponent extends React.PureComponent {
-  constructor (props) {
+  static MockPage({ color, message, path }) {
+    return (
+      <TheRoute
+        component={() => <div style={{ color }}>{message}</div>}
+        path={path}
+      />
+    )
+  }
+
+  constructor(props) {
     super(props)
     this.state = {
-      notice: true
+      notice: true,
     }
   }
 
-  render () {
-    const {MockPage} = ExampleComponent
-    const {Logo, Tab, TabItem, RightArea} = TheHeader
+  render() {
+    const { MockPage } = ExampleComponent
+    const { Logo, RightArea, Tab, TabItem } = TheHeader
     return (
       <div>
         <TheRouter.Hash>
-          <TheHeaderStyle/>
-          <TheButtonStyle/>
-          <TheHeader notices={this.state.notice ? {
-            'you needs to verify your email': {
-              'send again': () => this.setState({notice: false})
+          <TheHeaderStyle />
+          <TheButtonStyle />
+          <TheHeader
+            notices={
+              this.state.notice
+                ? {
+                    'you needs to verify your email': {
+                      'send again': () => this.setState({ notice: false }),
+                    },
+                  }
+                : {}
             }
-          } : {}}>
+          >
             <Logo>Some app</Logo>
             <Tab>
               <TabItem to='/page-a'>PageA</TabItem>
@@ -38,25 +53,17 @@ class ExampleComponent extends React.PureComponent {
             </RightArea>
           </TheHeader>
           <div>
-            <MockPage path='/page-a'
-                      color='#83A'
-                      message='This is Page A'
-            />
-            <MockPage path='/page-b'
-                      color='#38A'
-                      message='This is Page B'
-            />
+            <MockPage color='#83A' message='This is Page A' path='/page-a' />
+            <MockPage color='#38A' message='This is Page B' path='/page-b' />
 
-            <hr/>
+            <hr />
 
-            <TheHeader asOverlay
-                       style={{top: 190}}
-            >
+            <TheHeader asOverlay style={{ top: 190 }}>
               <Logo>Some app with overlay header</Logo>
               <Tab>
                 <TabItem to='/page-a'>PageA</TabItem>
                 <TabItem to='/page-b'>PageB</TabItem>
-                <TabItem to='/page-b' icon='fa fa-search'/>
+                <TabItem icon='fa fa-search' to='/page-b' />
               </Tab>
               <RightArea>
                 <TheButton>Login</TheButton>
@@ -64,19 +71,19 @@ class ExampleComponent extends React.PureComponent {
               </RightArea>
             </TheHeader>
 
-            <hr/>
+            <hr />
 
-
-            <TheHeader asOverlay
-                       reversed
-                       ribbon={'This is a ribbon'}
-                       style={{top: 400}}
+            <TheHeader
+              asOverlay
+              reversed
+              ribbon={'This is a ribbon'}
+              style={{ top: 400 }}
             >
               <Logo>Some app with overlay header</Logo>
               <Tab>
                 <TabItem to='/page-a'>PageA</TabItem>
                 <TabItem to='/page-b'>PageB</TabItem>
-                <TabItem to='/page-b' icon='fa fa-search'/>
+                <TabItem icon='fa fa-search' to='/page-b' />
               </Tab>
               <RightArea>
                 <TheButton>Login</TheButton>
@@ -84,28 +91,13 @@ class ExampleComponent extends React.PureComponent {
               </RightArea>
             </TheHeader>
 
-
-            <br/>
+            <br />
             <TheHeader asStatic>
               <Logo>Some app with static header</Logo>
             </TheHeader>
           </div>
         </TheRouter.Hash>
       </div>
-    )
-  }
-
-  static MockPage ({path, color, message}) {
-    return (
-      <TheRoute path={path}
-                component={({}) => (
-                  <div style={{color}}>
-                    {message}
-                  </div>
-                )}
-      >
-
-      </TheRoute>
     )
   }
 }

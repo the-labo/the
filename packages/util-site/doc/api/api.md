@@ -284,5 +284,4 @@ User name for
 | Param | Type | Default |
 | --- | --- | --- |
 | name | <code>string</code> |  | 
-| bytes | <code>number</code> | <code>4</code> | 
-
+| bytes | <code>number</code> | <code>4</code> |

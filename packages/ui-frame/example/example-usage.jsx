@@ -5,32 +5,33 @@ import { TheFrame, TheFrameStyle } from '@the-/ui-frame'
 import { TheSpinStyle } from '@the-/ui-spin'
 
 class ExampleComponent extends React.PureComponent {
-  render () {
+  render() {
     return (
       <div>
-        <TheSpinStyle/>
-        <TheFrameStyle/>
-        <TheFrame src='./example-html.html'
-                  style={{with: '200px', height: '200px', overflow: 'auto'}}
+        <TheSpinStyle />
+        <TheFrameStyle />
+        <TheFrame
+          src='./example-html.html'
+          style={{ height: '200px', overflow: 'auto', with: '200px' }}
         />
 
-        <hr/>
+        <hr />
 
-        <TheFrame src='./example-html.html'
-                  style={{with: '200px', height: '200px', overflow: 'auto'}}
-                  spinning
+        <TheFrame
+          spinning
+          src='./example-html.html'
+          style={{ height: '200px', overflow: 'auto', with: '200px' }}
         />
 
-        <hr/>
-
+        <hr />
 
         <h3>Embed</h3>
-        <TheFrame src='./example-html.html'
-                  embed
-                  style={{with: '200px', height: '200px', overflow: 'auto'}}
+        <TheFrame
+          embed
+          src='./example-html.html'
+          style={{ height: '200px', overflow: 'auto', with: '200px' }}
         />
       </div>
-
     )
   }
 }

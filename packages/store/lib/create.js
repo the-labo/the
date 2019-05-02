@@ -1,6 +1,6 @@
 /**
  * Create a TheStore instance
- * @memberOf module:@the-/store
+ * @memberof module:@the-/store
  * @function create
  * @param {...*} args
  * @returns {TheStore}

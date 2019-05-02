@@ -1,5 +1,5 @@
 /**
- * Alias of {@memberOf module:@the-/rtc
+ * Alias of {@memberof module:@the-/rtc
  * @function default
  * @link module:@the-/rtc.create}
  */

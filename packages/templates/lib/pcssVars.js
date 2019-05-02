@@ -1,6 +1,6 @@
 /**
  * Variables for pcss
- * @memberOf module:@the-/templates
+ * @memberof module:@the-/templates
  * @function pcssVars
  * @param {Object} config
  * @param {Object} config.values

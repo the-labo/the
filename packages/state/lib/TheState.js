@@ -1,7 +1,7 @@
 /**
- * @memberOf module:@the-/state
+ * @memberof module:@the-/state
  * @class TheState
- * @extends RootState
+ * @augments RootState
  * @param {Object} [options={}] - Optional settings
  * @param {Object} [options.defaults={}] - Default values
  */

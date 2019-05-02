@@ -1,68 +1,68 @@
 'use strict'
 
 import React from 'react'
-import { TheView, TheViewStyle } from '@the-/ui-view'
-import { TheIcon } from '@the-/ui-icon'
-import { TheSpinStyle } from '@the-/ui-spin'
 import { TheButtonStyle } from '@the-/ui-button'
-import { TheMenuStyle, TheDropdownMenu } from '@the-/ui-menu'
+import { TheIcon } from '@the-/ui-icon'
+import { TheDropdownMenu, TheMenuStyle } from '@the-/ui-menu'
 import { TheRouter } from '@the-/ui-router'
+import { TheSpinStyle } from '@the-/ui-spin'
+import { TheView, TheViewStyle } from '@the-/ui-view'
 
 class ExampleComponent extends React.PureComponent {
-  render () {
-    const {Header, Body} = TheView
+  render() {
+    const { Body, Header } = TheView
     return (
       <div>
         <TheRouter.Hash>
-          <TheSpinStyle/>
-          <TheMenuStyle/>
-          <TheButtonStyle/>
-          <TheViewStyle/>
+          <TheSpinStyle />
+          <TheMenuStyle />
+          <TheButtonStyle />
+          <TheViewStyle />
           <TheView>
             <Header
+              icon={'fa fa-car'}
               leftIcon={TheView.BACK_ICON}
               leftTo='/'
-              icon={'fa fa-car'}
-              text='This is a view'
-              rightIcon={TheView.DROPDOWN_ICON}
               onRightClick={() => console.log('Right clicked!')}
+              rightIcon={TheView.DROPDOWN_ICON}
+              text='This is a view'
             />
             <Body>
-            <div>
-              <TheView.Message>This is view message</TheView.Message>
-            </div>
+              <div>
+                <TheView.Message>This is view message</TheView.Message>
+              </div>
             </Body>
           </TheView>
 
-          <hr/>
+          <hr />
 
-          <TheView spinning/>
+          <TheView spinning />
 
-          <hr/>
+          <hr />
 
           <TheView>
-            <Header leftIcon={TheView.BACK_ICON}
-                    leftText='Back'
-                    leftTo='/'
-                    text='This is a view'
-                    icon='fa fa-car'
-                    rightText='Menu'
-                    onRightClick={() => console.log('Right clicked!')}
-                    rightNode={
-                      <TheDropdownMenu icon={''}
-                                       label={<TheIcon className={TheView.DROPDOWN_ICON}></TheIcon>}
-                                       righted
-                      >
-                        <TheDropdownMenu.Item>Menu A</TheDropdownMenu.Item>
-                        <TheDropdownMenu.Item>Menu B</TheDropdownMenu.Item>
-                      </TheDropdownMenu>
-                    }
+            <Header
+              icon='fa fa-car'
+              leftIcon={TheView.BACK_ICON}
+              leftText='Back'
+              leftTo='/'
+              onRightClick={() => console.log('Right clicked!')}
+              rightNode={
+                <TheDropdownMenu
+                  icon={''}
+                  label={<TheIcon className={TheView.DROPDOWN_ICON} />}
+                  righted
+                >
+                  <TheDropdownMenu.Item>Menu A</TheDropdownMenu.Item>
+                  <TheDropdownMenu.Item>Menu B</TheDropdownMenu.Item>
+                </TheDropdownMenu>
+              }
+              rightText='Menu'
+              text='This is a view'
             />
           </TheView>
-
         </TheRouter.Hash>
       </div>
-
     )
   }
 }

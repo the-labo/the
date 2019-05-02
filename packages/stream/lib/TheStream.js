@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/stream
+ * @memberof module:@the-/stream
  * @class TheStream
  * @param {Object} [options={}]
  */

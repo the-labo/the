@@ -1,6 +1,6 @@
 /**
  * Create a TheRun instance
- * @memberOf module:@the-/run
+ * @memberof module:@the-/run
  * @function create
  * @param {...*} args
  * @returns {module:@the-/run.TheRun}

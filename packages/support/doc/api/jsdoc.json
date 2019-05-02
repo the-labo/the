@@ -1,26 +1,27 @@
 [
   {
-    "id": "module:@the-/support",
-    "longname": "module:@the-/support",
-    "name": "@the-/support",
-    "kind": "module",
     "description": "JS support version checker",
-    "version": "15.4.0",
+    "id": "module:@the-/support",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "support",
+    "longname": "module:@the-/support",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/support/lib"
     },
-    "order": 1
+    "name": "@the-/support",
+    "order": 1,
+    "typicalname": "support",
+    "version": "15.4.0"
   },
   {
     "id": "TheSupport()",
-    "longname": "TheSupport",
-    "name": "TheSupport",
     "kind": "constructor",
+    "longname": "TheSupport",
     "memberof": "TheSupport",
+    "name": "TheSupport",
+    "order": 3,
     "params": [
       {
         "type": {
@@ -31,29 +32,33 @@
         "description": "Filename pattern",
         "name": "pattern"
       }
-    ],
-    "order": 3
+    ]
   },
   {
     "id": "TheSupport",
-    "longname": "TheSupport",
-    "name": "TheSupport",
     "kind": "class",
-    "scope": "global",
+    "longname": "TheSupport",
     "meta": {
-      "lineno": 1,
       "filename": "TheSupport.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/support/lib"
     },
-    "order": 2
+    "name": "TheSupport",
+    "order": 2,
+    "scope": "global"
   },
   {
-    "id": "create",
-    "longname": "create",
-    "name": "create",
-    "kind": "function",
-    "scope": "global",
     "description": "Create a TheSupport instance",
+    "id": "create",
+    "kind": "function",
+    "longname": "create",
+    "meta": {
+      "filename": "create.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/support/lib"
+    },
+    "name": "create",
+    "order": 0,
     "params": [
       {
         "type": {
@@ -74,24 +79,19 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "create.js",
-      "path": "/Users/okuni/Projects/the/packages/support/lib"
-    },
-    "order": 0
+    "scope": "global"
   },
   {
     "id": "findEvalCode",
-    "longname": "findEvalCode",
-    "name": "findEvalCode",
     "kind": "function",
-    "scope": "global",
+    "longname": "findEvalCode",
     "meta": {
-      "lineno": 1,
       "filename": "findEvalCode.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/support/lib/helpers"
     },
-    "order": 4
+    "name": "findEvalCode",
+    "order": 4,
+    "scope": "global"
   }
 ]

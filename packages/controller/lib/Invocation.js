@@ -1,6 +1,6 @@
 /**
  * Controller action invocation
- * @memberOf module:@the-/controller
+ * @memberof module:@the-/controller
  * @class Invocation
  * @property {TheCtrl} target - Invocation target instance
  * @property {string} action - Name of action

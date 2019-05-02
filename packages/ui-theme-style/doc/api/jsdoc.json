@@ -1,62 +1,62 @@
 [
   {
-    "id": "module:@the-/ui-theme-style",
-    "longname": "module:@the-/ui-theme-style",
-    "name": "@the-/ui-theme-style",
-    "kind": "module",
     "description": "Theme style for the-components",
-    "version": "15.4.0",
-    "typicalname": "uiThemeStyle",
+    "id": "module:@the-/ui-theme-style",
+    "kind": "module",
+    "longname": "module:@the-/ui-theme-style",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-theme-style/lib"
     },
-    "order": 0
+    "name": "@the-/ui-theme-style",
+    "order": 0,
+    "typicalname": "uiThemeStyle",
+    "version": "15.4.0"
   },
   {
-    "id": "TheThemeStyle",
-    "longname": "TheThemeStyle",
-    "name": "TheThemeStyle",
-    "kind": "function",
-    "scope": "global",
     "description": "Theme Style of the-components",
-    "params": [],
+    "id": "TheThemeStyle",
+    "kind": "function",
+    "longname": "TheThemeStyle",
     "meta": {
+      "filename": "TheThemeStyle.jsx",
       "lineno": 47,
-      "filename": "TheThemeStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-theme-style/lib"
     },
-    "order": 1
+    "name": "TheThemeStyle",
+    "order": 1,
+    "params": [],
+    "scope": "global"
   },
   {
-    "id": "TheThemeStyle.propTypes.options",
-    "longname": "TheThemeStyle.propTypes.options",
-    "name": "options",
-    "kind": "member",
-    "scope": "static",
     "description": "Style options",
+    "id": "TheThemeStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheThemeStyle.propTypes.options",
     "memberof": "TheThemeStyle.propTypes",
     "meta": {
-      "lineno": 57,
       "filename": "TheThemeStyle.jsx",
+      "lineno": 57,
       "path": "/Users/okuni/Projects/the/packages/ui-theme-style/lib"
     },
-    "order": 2
+    "name": "options",
+    "order": 2,
+    "scope": "static"
   },
   {
-    "id": "TheThemeStyle.propTypes.prefix",
-    "longname": "TheThemeStyle.propTypes.prefix",
-    "name": "prefix",
-    "kind": "member",
-    "scope": "static",
     "description": "Style selector prefix",
+    "id": "TheThemeStyle.propTypes.prefix",
+    "kind": "member",
+    "longname": "TheThemeStyle.propTypes.prefix",
     "memberof": "TheThemeStyle.propTypes",
     "meta": {
-      "lineno": 60,
       "filename": "TheThemeStyle.jsx",
+      "lineno": 60,
       "path": "/Users/okuni/Projects/the/packages/ui-theme-style/lib"
     },
-    "order": 3
+    "name": "prefix",
+    "order": 3,
+    "scope": "static"
   }
 ]

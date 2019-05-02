@@ -1,6 +1,6 @@
 /**
  * Create "decorateRule" lint
- * @memberOf module:@the-/lint.rules
+ * @memberof module:@the-/lint.rules
  * @function decorateRule
  * @param {Object} config - Lint config
  * @returns {function} Lint function

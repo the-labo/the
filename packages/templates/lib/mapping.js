@@ -6,7 +6,7 @@
  */
 'use strict'
 
-const { ok } = require('assert')
+const { ok } = require('assert').strict
 const _tmpl = require('./_tmpl')
 
 /** @lends module:@the-/templates.mapping */

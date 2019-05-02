@@ -1,6 +1,6 @@
 /**
  * Create a ThePS instance
- * @memberOf module:@the-/ps
+ * @memberof module:@the-/ps
  * @function create
  * @param {...*} args
  * @returns {ThePS}

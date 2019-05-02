@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/media
+ * @memberof module:@the-/media
  * @class TheMedia
  * @param {Object} [options={}] - Optional settings
  * @param {Object|Boolean} [options.video] - Video constraint
@@ -36,9 +36,9 @@ class TheMedia {
 
   /**
    * Create audio media recorder with AudioContext
-   * @param {AudioContext} audioContext
+   * @param {window.AudioContext} audioContext
    * @param {Object} [options={}]
-   * @returns {MediaRecorder}
+   * @returns {window.MediaRecorder}
    */
   createAudioRecorder(audioContext, options = {}) {
     const {
@@ -65,7 +65,7 @@ class TheMedia {
   /**
    * Get tracks
    * @param {string} kind
-   * @returns {MediaStreamTrack[]}
+   * @returns {window.MediaStreamTrack[]}
    */
   getStreamTracks(kind) {
     if (!this.stream) {
@@ -100,9 +100,9 @@ class TheMedia {
 
   /**
    * Bind HTML video element
-   * @param {HTMLVideoElement} video
+   * @param {window.HTMLVideoElement} video
    * @param {Object} [options={}] - Optional settings
-   * @returns {Promise.<void>}
+   * @returns {Promise.<undefined>}
    */
   async bindVideo(video, options = {}) {
     if (!video) {
@@ -112,13 +112,13 @@ class TheMedia {
     await new Promise((resolve, reject) => {
       video.srcObject = stream
       video.onplay = () => resolve()
-      video.onerror = () => reject()
+      video.onerror = (err) => reject(err)
     })
   }
 
   /**
    * Start user media
-   * @returns {Promise.<void>}
+   * @returns {Promise.<undefined>}
    */
   async start() {
     if (this.running) {
@@ -141,7 +141,7 @@ class TheMedia {
 
   /**
    * Stop user media
-   * @returns {Promise.<void>}
+   * @returns {Promise.<undefined>}
    */
   async stop() {
     if (!this.running) {
@@ -163,7 +163,7 @@ class TheMedia {
   /**
    * Take photo image
    * @param {Object} [options={}] - Optional settings
-   * @returns {Promise<Blob>} Blob
+   * @returns {Promise.<window.Blob>} Blob
    */
   async takePhoto(options = {}) {
     const { height, width } = options

@@ -1,6 +1,6 @@
 /**
  * Seal handler
- * @memberOf module:@the-/seal
+ * @memberof module:@the-/seal
  * @class TheSeal
  * @param {string} secret - Secret password
  * @param {Object} [options={}] - Optional settings

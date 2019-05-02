@@ -80,4 +80,4 @@ Create a TheS3 instance
 ## default()
 Alias of [@the-/s3](#module_@the-/s3)
 
-**Kind**: global function  
+**Kind**: global function

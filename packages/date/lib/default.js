@@ -1,6 +1,6 @@
 /**
  * Default exports
- * @memberOf module:@the-/date
+ * @memberof module:@the-/date
  * @function default
  * @returns {TheDate}
  */

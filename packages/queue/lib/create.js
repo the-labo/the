@@ -1,6 +1,6 @@
 /**
  * Create a TheQueue instance
- * @memberOf module:@the-/queue
+ * @memberof module:@the-/queue
  * @function create
  * @param {...*} args
  * @returns {TheQueue}

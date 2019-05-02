@@ -1,17 +1,21 @@
 'use strict'
 
 import React from 'react'
-import { TheSection, TheAccordionSection, TheSectionStyle } from '@the-/ui-section'
-import { TheSpinStyle } from '@the-/ui-spin'
 import { TheButtonStyle } from '@the-/ui-button'
+import {
+  TheAccordionSection,
+  TheSection,
+  TheSectionStyle,
+} from '@the-/ui-section'
+import { TheSpinStyle } from '@the-/ui-spin'
 
 class ExampleComponent extends React.PureComponent {
-  render () {
+  render() {
     return (
       <div>
-        <TheSectionStyle/>
-        <TheButtonStyle/>
-        <TheSpinStyle/>
+        <TheSectionStyle />
+        <TheButtonStyle />
+        <TheSpinStyle />
 
         <h3>Normal section</h3>
         <TheSection>
@@ -19,15 +23,18 @@ class ExampleComponent extends React.PureComponent {
           <TheSection.Body>This is content</TheSection.Body>
         </TheSection>
 
-        <br/>
+        <br />
 
         <h3>Lined header section</h3>
         <TheSection>
-          <TheSection.Header lined
-                             actionText='edit'
-                             actionIcon='fa fa-pencil'
-                             onAction={() => console.log('Edit button pressed')}
-          >This is lined header</TheSection.Header>
+          <TheSection.Header
+            actionIcon='fa fa-pencil'
+            actionText='edit'
+            lined
+            onAction={() => console.log('Edit button pressed')}
+          >
+            This is lined header
+          </TheSection.Header>
           <TheSection.Body>This is content</TheSection.Body>
         </TheSection>
 
@@ -37,18 +44,15 @@ class ExampleComponent extends React.PureComponent {
           <TheSection.Body>This is content</TheSection.Body>
         </TheSection>
 
-        <br/>
+        <br />
 
         <TheAccordionSection heading='Try me!'>
-          <p>
-            This is the accordion body
-          </p>
+          <p>This is the accordion body</p>
         </TheAccordionSection>
-        <br/>
-        <br/>
-        <br/>
+        <br />
+        <br />
+        <br />
       </div>
-
     )
   }
 }

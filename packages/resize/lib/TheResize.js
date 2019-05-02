@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/resize
+ * @memberof module:@the-/resize
  * @class TheResize
  * @param {Object} [config] - Configuration
  * @param {string} [config.fit] - Fit policy ('cover','contain','fill', 'inside' or 'outside')

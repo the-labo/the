@@ -1,5 +1,5 @@
 /**
- * Alias of {@memberOf module:@the-/queue
+ * Alias of {@memberof module:@the-/queue
  * @function default
  * @link module:@the-/queue}
  */

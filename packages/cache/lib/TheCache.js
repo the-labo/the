@@ -1,7 +1,7 @@
 /**
- * @memberOf module:@the-/cache
+ * @memberof module:@the-/cache
  * @class TheCache
- * @extends LRUCache
+ * @augments LRUCache
  * @see https://github.com/isaacs/node-lru-cache#readme
  */
 'use strict'

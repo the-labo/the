@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { ok } = require('assert')
+const { ok } = require('assert').strict
 const evalScript = require('../lib/evalScript')
 
 describe('eval-script', () => {

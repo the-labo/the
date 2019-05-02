@@ -1,6 +1,6 @@
 /**
  * Create a TheControllerBase instance
- * @memberOf module:@the-/controller
+ * @memberof module:@the-/controller
  * @function create
  * @param {...*} args
  * @returns {TheControllerBase}

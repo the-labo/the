@@ -1,6 +1,6 @@
 /**
  * Define bud for LICENSE
- * @memberOf module:@the-/templates
+ * @memberof module:@the-/templates
  * @function License
  * @param {object} config - Configuration.
  * @param {string} config.type - Type of license.

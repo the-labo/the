@@ -27,4 +27,4 @@ Head of the-components
 ## TheHead
 Head of the-components
 
-**Kind**: global class  
+**Kind**: global class

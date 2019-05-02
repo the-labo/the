@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/seat
+ * @memberof module:@the-/seat
  * @function scopeMix
  */
 'use strict'

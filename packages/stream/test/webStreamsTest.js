@@ -48,7 +48,7 @@ describe('web-streams', () => {
 
   it('WritableStream test', async () => {
     const stream = new WritableStream({
-      start: (controller) => {},
+      start: () => {},
       write: (chunk) => {
         console.log('on write', chunk)
       },

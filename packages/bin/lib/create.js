@@ -1,6 +1,6 @@
 /**
  * Create a TheBin instance
- * @memberOf module:@the-/bin
+ * @memberof module:@the-/bin
  * @function create
  * @param {...*} args
  * @returns {module:@the-/bin.TheBin}

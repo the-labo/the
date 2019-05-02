@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/rtc
+ * @memberof module:@the-/rtc
  * @class TheRTC
  * @param {Object} [config={}] - RTC Configuration
  * @param {Object|Object[]} [config.stun] - STUN server config(s)

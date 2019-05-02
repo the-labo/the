@@ -1,6 +1,6 @@
 /**
  * Create a ThePassword instance
- * @memberOf module:@the-/password
+ * @memberof module:@the-/password
  * @function create
  * @param {...*} args
  * @returns {ThePassword}

@@ -1,28 +1,24 @@
 'use strict'
 
 import React from 'react'
-import { TheRouter } from '@the-/ui-router'
 import { TheLink, TheLinkStyle } from '@the-/ui-link'
+import { TheRouter } from '@the-/ui-router'
 
 class ExampleComponent extends React.Component {
-  render () {
+  render() {
     return (
       <TheRouter.Hash>
-        <TheLinkStyle/>
-        <TheLink to='/mypage'>
-          My Page
-        </TheLink>
-        <TheLink to='/about' icon="fa fa-info">
+        <TheLinkStyle />
+        <TheLink to='/mypage'>My Page</TheLink>
+        <TheLink icon='fa fa-info' to='/about'>
           About
         </TheLink>
 
-        <TheLink to='/hoge'
-                 color='#38E'>
+        <TheLink color='#38E' to='/hoge'>
           Color link
         </TheLink>
 
-        <TheLink to='http://example.com'
-                 color='#38E'>
+        <TheLink color='#38E' to='http://example.com'>
           External link
         </TheLink>
       </TheRouter.Hash>

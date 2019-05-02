@@ -1,6 +1,6 @@
 /**
  * Supported props
- * @memberOf module:@the-/const-ui
+ * @memberof module:@the-/const-ui
  * @namespace SupportedProps
  */
 'use strict'

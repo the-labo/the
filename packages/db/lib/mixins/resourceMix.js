@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/db
+ * @memberof module:@the-/db
  * @function resourceMix
  */
 'use strict'
@@ -7,7 +7,7 @@
 /** @lends module:@the-/db.resourceMix */
 function resourceMix(Class) {
   /**
-   * @memberOf module:@the-/db.resourceMix
+   * @memberof module:@the-/db.resourceMix
    * @inner
    */
   class ResourceMixed extends Class {

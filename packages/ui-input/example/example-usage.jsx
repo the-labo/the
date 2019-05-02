@@ -5,470 +5,508 @@ import { TheInput, TheInputStyle } from '@the-/ui-input'
 import { TheSpinStyle } from '@the-/ui-spin'
 
 class ExampleComponent extends React.PureComponent {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
-      values: {}
+      values: {},
     }
     this.onUpdate = this.onUpdate.bind(this)
   }
 
-  onUpdate (values) {
+  onUpdate(values) {
     console.log('values', values)
     this.setState({
-      values: Object.assign({}, this.state.values, values)
+      values: Object.assign({}, this.state.values, values),
     })
   }
 
-  render () {
+  render() {
     const { values } = this.state
     const { onUpdate } = this
 
     const {
-      Text,
-      Password,
-      Search,
-      Number,
-      TextArea,
-      Radio,
       Checkbox,
-      Select,
-      Toggle,
-      PinCode,
-      Slider,
-      Range,
-      Upload,
       Date,
-      Tag
+      Number,
+      Password,
+      PinCode,
+      Radio,
+      Range,
+      Search,
+      Select,
+      Slider,
+      Tag,
+      Text,
+      TextArea,
+      Toggle,
+      Upload,
     } = TheInput
     return (
       <div>
-        <TheInputStyle/>
-        <TheSpinStyle/>
+        <TheInputStyle />
+        <TheSpinStyle />
 
         <h3>Text</h3>
 
-        <Text name='value01'
-              value={values['value01']}
-              onUpdate={onUpdate}
-              placeholder='value01'
-              options={['Banana', 'Orange', 'Apple']}
+        <Text
+          name='value01'
+          onUpdate={onUpdate}
+          options={['Banana', 'Orange', 'Apple']}
+          placeholder='value01'
+          value={values['value01']}
         />
 
-        <Text name='value01'
-              value={values['value01']}
-              onUpdate={onUpdate}
-              parser={(v) => String(v).toUpperCase()}
-              placeholder='value01 only with uppercase parser'
-              autoCapitalize={false}
-              selectWhenFocused
-              autoCorrect="off"
-              options={['Banana', 'Orange', 'Apple']}
+        <Text
+          autoCapitalize={false}
+          autoCorrect='off'
+          name='value01'
+          onUpdate={onUpdate}
+          options={['Banana', 'Orange', 'Apple']}
+          parser={(v) => String(v).toUpperCase()}
+          placeholder='value01 only with uppercase parser'
+          selectWhenFocused
+          value={values['value01']}
         />
 
-        <Text name='value01'
-              value={values['value01']}
-              prefix={'Oh!'}
-              suffix={', Yes it is!'}
-              onUpdate={onUpdate}
-              placeholder='value01'
-              options={['Banana', 'Orange', 'Apple']}
+        <Text
+          name='value01'
+          onUpdate={onUpdate}
+          options={['Banana', 'Orange', 'Apple']}
+          placeholder='value01'
+          prefix={'Oh!'}
+          suffix={', Yes it is!'}
+          value={values['value01']}
         />
 
         <h3>Text with hint</h3>
 
-        <Text name='value01'
-              value={values['value01']}
-              onUpdate={onUpdate}
-              placeholder='eg: hoge@example.com'
-              pattern={Text.EMAIL_PATTERN}
-              patternHint='Needs to be email'
+        <Text
+          name='value01'
+          onUpdate={onUpdate}
+          pattern={Text.EMAIL_PATTERN}
+          patternHint='Needs to be email'
+          placeholder='eg: hoge@example.com'
+          value={values['value01']}
         />
 
         <h3>Select on focus</h3>
 
-        <Text name='value01'
-              value={values['value01']}
-              onUpdate={onUpdate}
-              placeholder='Select on focus'
-              selectOnFocus
+        <Text
+          name='value01'
+          onUpdate={onUpdate}
+          placeholder='Select on focus'
+          selectOnFocus
+          value={values['value01']}
         />
 
-        <br/>
+        <br />
 
         <h3>Search</h3>
-        <Search name='value01'
-                value={values['value01']}
-                onUpdate={onUpdate}
-                placeholder='value01'
+        <Search
+          name='value01'
+          onUpdate={onUpdate}
+          placeholder='value01'
+          value={values['value01']}
         />
 
-
-        <br/>
+        <br />
 
         <h3>Password</h3>
-        <Password name='value01'
-                  value={values['value01']}
-                  onUpdate={onUpdate}
-                  placeholder='value01'
+        <Password
+          name='value01'
+          onUpdate={onUpdate}
+          placeholder='value01'
+          value={values['value01']}
         />
 
-        <br/>
+        <br />
 
         <h3>Text Area</h3>
-        <TextArea name='value01'
-                  value={values['value01']}
-                  onUpdate={onUpdate}
-                  onCombineEnter={() => console.log('combine enter')}
-                  onEnter={() => console.log('enter')}
-                  placeholder='value01'
+        <TextArea
+          name='value01'
+          onCombineEnter={() => console.log('combine enter')}
+          onEnter={() => console.log('enter')}
+          onUpdate={onUpdate}
+          placeholder='value01'
+          value={values['value01']}
         />
 
-        <TextArea name='value01'
-                  autoExpand
-                  minRows={1}
-                  maxRows={8}
-                  value={values['value01']}
-                  onUpdate={onUpdate}
-                  onCombineEnter={() => console.log('combine enter')}
-                  onEnter={() => console.log('enter')}
-                  placeholder='auto expand'
+        <TextArea
+          autoExpand
+          maxRows={8}
+          minRows={1}
+          name='value01'
+          onCombineEnter={() => console.log('combine enter')}
+          onEnter={() => console.log('enter')}
+          onUpdate={onUpdate}
+          placeholder='auto expand'
+          value={values['value01']}
         />
 
-        <TextArea name='value01'
-                  value={values['value01']}
-                  onUpdate={onUpdate}
-                  placeholder='value01 readonly'
-                  readOnly
+        <TextArea
+          name='value01'
+          onUpdate={onUpdate}
+          placeholder='value01 readonly'
+          readOnly
+          value={values['value01']}
         />
 
-
-        <hr/>
+        <hr />
 
         <h3>Radio</h3>
 
         <div>
-          <Radio name='value02'
-                 value={values['value02']}
-                 onUpdate={onUpdate}
-                 options={['Car', 'Ship', 'Plane']}
+          <Radio
+            name='value02'
+            onUpdate={onUpdate}
+            options={['Car', 'Ship', 'Plane']}
+            value={values['value02']}
           />
         </div>
 
         <div>
-
-          <Radio name='value02'
-                 value={values['value02']}
-                 onUpdate={onUpdate}
-                 options={['Car', 'Ship', 'Plane']}
-                 asButton
+          <Radio
+            asButton
+            name='value02'
+            onUpdate={onUpdate}
+            options={['Car', 'Ship', 'Plane']}
+            value={values['value02']}
           />
-
         </div>
 
         <div>
-
-          <Radio name='value02'
-                 value={values['value02']}
-                 onUpdate={onUpdate}
-                 options={['Car', 'Ship', 'Plane']}
-                 asToggle
+          <Radio
+            asToggle
+            name='value02'
+            onUpdate={onUpdate}
+            options={['Car', 'Ship', 'Plane']}
+            value={values['value02']}
           />
-
         </div>
 
-        <hr/>
+        <hr />
 
         <h3>Checkbox</h3>
 
         <div>
-          <Checkbox name='value03'
-                    value={values['value03']}
-                    onUpdate={onUpdate}
-                    options={['Green', 'Pink', 'Brown']}
+          <Checkbox
+            name='value03'
+            onUpdate={onUpdate}
+            options={['Green', 'Pink', 'Brown']}
+            value={values['value03']}
           />
         </div>
 
         <div>
-          <Checkbox name='value03'
-                    asButton
-                    value={values['value03']}
-                    onUpdate={onUpdate}
-                    options={['Green', 'Pink', 'Brown']}
+          <Checkbox
+            asButton
+            name='value03'
+            onUpdate={onUpdate}
+            options={['Green', 'Pink', 'Brown']}
+            value={values['value03']}
           />
         </div>
 
-        <hr/>
+        <hr />
         <h3>Select</h3>
 
         <div>
-          <Select name='value04'
-                  placeholder='Any drink?'
-                  nullable
-                  value={values['value04']}
-                  onUpdate={onUpdate}
-                  sorter={(a, b) => a.localeCompare(b)}
-                  disabledValues={['Coffee']}
-                  options={['Tea', 'Coffee', 'Water', ...'abcdefghijlkmnlopqrstu'.split('')]}
+          <Select
+            disabledValues={['Coffee']}
+            name='value04'
+            nullable
+            onUpdate={onUpdate}
+            options={[
+              'Tea',
+              'Coffee',
+              'Water',
+              ...'abcdefghijlkmnlopqrstu'.split(''),
+            ]}
+            placeholder='Any drink?'
+            sorter={(a, b) => a.localeCompare(b)}
+            value={values['value04']}
           />
 
-
-          <Select name='value04'
-                  value={values['value04']}
-                  placeholder='Full screen select'
-                  onUpdate={onUpdate}
-                  fullScreen
-                  nullable
-                  disabledValues={['Coffee']}
-                  options={['Tea', 'Coffee', 'Water', ...new Array(100).fill(null).map((_, i) => `option-${i}`)]}
+          <Select
+            disabledValues={['Coffee']}
+            fullScreen
+            name='value04'
+            nullable
+            onUpdate={onUpdate}
+            options={[
+              'Tea',
+              'Coffee',
+              'Water',
+              ...new Array(100).fill(null).map((_, i) => `option-${i}`),
+            ]}
+            placeholder='Full screen select'
+            value={values['value04']}
           />
 
-          <Select.WithOptionsArray name='value04'
-                                   value={values['value04']}
-                                   onUpdate={onUpdate}
-                                   optionsArray={[
-                                     ['Tea', 'This is Tea!'],
-                                     ['Water', 'This is Water!'],
-                                   ]}
+          <Select.WithOptionsArray
+            name='value04'
+            onUpdate={onUpdate}
+            optionsArray={[
+              ['Tea', 'This is Tea!'],
+              ['Water', 'This is Water!'],
+            ]}
+            value={values['value04']}
           />
         </div>
 
-        <hr/>
+        <hr />
         <h3>Toggle</h3>
 
         <div>
-          <Toggle name='value05'
-                  on={Boolean(values['value05'])}
-                  onUpdate={onUpdate}
+          <Toggle
+            name='value05'
+            on={Boolean(values['value05'])}
+            onUpdate={onUpdate}
           />
         </div>
 
         <div>
-          <Toggle name='value05'
-                  on={Boolean(values['value05'])}
-                  onTitle='This is on'
-                  offTitle='This is off'
-                  onUpdate={onUpdate}
+          <Toggle
+            name='value05'
+            offTitle='This is off'
+            on={Boolean(values['value05'])}
+            onTitle='This is on'
+            onUpdate={onUpdate}
           />
         </div>
 
-        <hr/>
+        <hr />
         <h3>Slider</h3>
 
         <div>
-          <Slider name='value06'
-                  value={values['value06'] || 10}
-                  min={0}
-                  max={100}
-                  step={1}
-                  onUpdate={onUpdate}
+          <Slider
+            max={100}
+            min={0}
+            name='value06'
+            onUpdate={onUpdate}
+            step={1}
+            value={values['value06'] || 10}
           />
         </div>
 
-        <hr/>
+        <hr />
         <h3>Range</h3>
 
         <div>
-          <Range name='value07'
-                 value={values['value07'] || [10, 80]}
-                 min={0}
-                 max={100}
-                 step={1}
-                 onUpdate={onUpdate}
+          <Range
+            max={100}
+            min={0}
+            name='value07'
+            onUpdate={onUpdate}
+            step={1}
+            value={values['value07'] || [10, 80]}
           />
         </div>
 
-        <hr/>
+        <hr />
         <h3>Upload</h3>
 
         <div>
-          <Upload name='value08'
-                  value={values['value08']}
-                  multiple={true}
-                  onUpdate={onUpdate}
+          <Upload
+            multiple={true}
+            name='value08'
+            onUpdate={onUpdate}
+            value={values['value08']}
           />
         </div>
 
-
-        <hr/>
+        <hr />
         <h3>Tag</h3>
 
-        <Tag name='value01'
-             value={values['value01']}
-             onUpdate={onUpdate}
-             placeholder='value01'
-             options={['Banana', 'Orange', 'Apple']}
+        <Tag
+          name='value01'
+          onUpdate={onUpdate}
+          options={['Banana', 'Orange', 'Apple']}
+          placeholder='value01'
+          value={values['value01']}
         />
 
-        <hr/>
-
+        <hr />
 
         <h3>Date</h3>
-        <Date name='value-date-01'
-              value={values['value-date-01']}
-              minDate={'2018-03-09'}
-              placeholder={'date only'}
-              onUpdate={onUpdate}
+        <Date
+          minDate={'2018-03-09'}
+          name='value-date-01'
+          onUpdate={onUpdate}
+          placeholder={'date only'}
+          value={values['value-date-01']}
         />
 
-        <Date name='value-date-01'
-              value={values['value-date-01']}
-              placeholder={'date and time'}
-              timeEnabled
-              minDate={'2018-03-09'}
-              onUpdate={onUpdate}
+        <Date
+          minDate={'2018-03-09'}
+          name='value-date-01'
+          onUpdate={onUpdate}
+          placeholder={'date and time'}
+          timeEnabled
+          value={values['value-date-01']}
         />
 
-        <Date name='value-date-01-time'
-              value={values['value-date-01-time']}
-              placeholder={'time only'}
-              noCalendar
-              dateFormat={'H:i'}
-              timeEnabled
-              minDate={'2018-03-09'}
-              onUpdate={onUpdate}
+        <Date
+          dateFormat={'H:i'}
+          minDate={'2018-03-09'}
+          name='value-date-01-time'
+          noCalendar
+          onUpdate={onUpdate}
+          placeholder={'time only'}
+          timeEnabled
+          value={values['value-date-01-time']}
         />
 
-        <br/>
-
+        <br />
 
         <h3>PinCode</h3>
-        <PinCode name='value-pin-code-01'
-                 value={values['value-pin-code-01']}
-                 onUpdate={onUpdate}
+        <PinCode
+          name='value-pin-code-01'
+          onUpdate={onUpdate}
+          value={values['value-pin-code-01']}
         />
 
-        <br/>
+        <br />
 
         <h3>Number</h3>
-        <Number name='value-number-01'
-                value={values['value-number-01']}
-                min={-2}
-                max={100}
-                onUpdate={onUpdate}
+        <Number
+          max={100}
+          min={-2}
+          name='value-number-01'
+          onUpdate={onUpdate}
+          value={values['value-number-01']}
         />
 
-        <Number name='value-number-01'
-                value={values['value-number-01']}
-                placeholder={'number without min/max'}
-                onUpdate={onUpdate}
+        <Number
+          name='value-number-01'
+          onUpdate={onUpdate}
+          placeholder={'number without min/max'}
+          value={values['value-number-01']}
         />
 
-        <br/>
-        <br/>
+        <br />
+        <br />
 
-        <hr/>
+        <hr />
 
         <h2>Error</h2>
 
-        <TheInput name='@'
-                  type='hidden'
-                  error='This is global error'/>
+        <TheInput error='This is global error' name='@' type='hidden' />
 
-        <Text name='value01'
-              value={values['value01']}
-              onUpdate={onUpdate}
-              placeholder='value01'
-              options={['Banana', 'Orange', 'Apple']}
-              error='Something Wrong with This!'
+        <Text
+          error='Something Wrong with This!'
+          name='value01'
+          onUpdate={onUpdate}
+          options={['Banana', 'Orange', 'Apple']}
+          placeholder='value01'
+          value={values['value01']}
         />
 
-
-        <Password name='value01'
-                  value={values['value01']}
-                  onUpdate={onUpdate}
-                  placeholder='value01'
-                  error='Something Wrong with This!'
+        <Password
+          error='Something Wrong with This!'
+          name='value01'
+          onUpdate={onUpdate}
+          placeholder='value01'
+          value={values['value01']}
         />
 
-        <TextArea name='value01'
-                  value={values['value01']}
-                  onUpdate={onUpdate}
-                  placeholder='value01'
-                  error='Something Wrong with This!'
-                  onKeyDown={(e) => console.log('key down', e.keyCode)}
+        <TextArea
+          error='Something Wrong with This!'
+          name='value01'
+          onKeyDown={(e) => console.log('key down', e.keyCode)}
+          onUpdate={onUpdate}
+          placeholder='value01'
+          value={values['value01']}
         />
 
-        <Select name='value04'
-                value={values['value04']}
-                onUpdate={onUpdate}
-                options={['Tea', 'Coffee', 'Water']}
-                error='Something Wrong with This!'
+        <Select
+          error='Something Wrong with This!'
+          name='value04'
+          onUpdate={onUpdate}
+          options={['Tea', 'Coffee', 'Water']}
+          value={values['value04']}
         />
 
-        <Select name='value04'
-                spinning
-                value={values['value04']}
-                onUpdate={onUpdate}
-                options={['Tea', 'Coffee', 'Water']}
-                error='Something Wrong with This!'
+        <Select
+          error='Something Wrong with This!'
+          name='value04'
+          onUpdate={onUpdate}
+          options={['Tea', 'Coffee', 'Water']}
+          spinning
+          value={values['value04']}
         />
 
-        <Radio name='value02'
-               value={values['value02']}
-               onUpdate={onUpdate}
-               options={['Car', 'Ship', 'Plane']}
-               error='Something Wrong with This!'
+        <Radio
+          error='Something Wrong with This!'
+          name='value02'
+          onUpdate={onUpdate}
+          options={['Car', 'Ship', 'Plane']}
+          value={values['value02']}
         />
-        <Checkbox name='value03'
-                  value={values['value03']}
-                  onUpdate={onUpdate}
-                  options={['Green', 'Pink', 'Brown']}
-                  disabledValues={['Pink']}
-                  error='Something Wrong with This!'
-        />
-
-        <Upload name='value08'
-                value={values['value08']}
-                multiple={true}
-                error='Something Wrong with This!'
-                onUpdate={onUpdate}
+        <Checkbox
+          disabledValues={['Pink']}
+          error='Something Wrong with This!'
+          name='value03'
+          onUpdate={onUpdate}
+          options={['Green', 'Pink', 'Brown']}
+          value={values['value03']}
         />
 
+        <Upload
+          error='Something Wrong with This!'
+          multiple={true}
+          name='value08'
+          onUpdate={onUpdate}
+          value={values['value08']}
+        />
 
-        <br/>
-        <br/>
-        <br/>
+        <br />
+        <br />
+        <br />
 
-        <hr/>
+        <hr />
 
         <h2>Readonly</h2>
 
-        <Text name='value01'
-              value={values['value01']}
-              onUpdate={onUpdate}
-              readOnly
-              placeholder='value01'
+        <Text
+          name='value01'
+          onUpdate={onUpdate}
+          placeholder='value01'
+          readOnly
+          value={values['value01']}
         />
 
-        <Select name='value04'
-                value={values['value04']}
-                onUpdate={onUpdate}
-                options={['Tea', 'Coffee', 'Water']}
-                readOnly
+        <Select
+          name='value04'
+          onUpdate={onUpdate}
+          options={['Tea', 'Coffee', 'Water']}
+          readOnly
+          value={values['value04']}
         />
 
-        <Radio name='value02'
-               value={values['value02']}
-               onUpdate={onUpdate}
-               options={['Car', 'Ship', 'Plane']}
-               readOnly
+        <Radio
+          name='value02'
+          onUpdate={onUpdate}
+          options={['Car', 'Ship', 'Plane']}
+          readOnly
+          value={values['value02']}
         />
-        <Checkbox name='value03'
-                  value={values['value03']}
-                  onUpdate={onUpdate}
-                  options={['Green', 'Pink', 'Brown']}
-                  readOnly
+        <Checkbox
+          name='value03'
+          onUpdate={onUpdate}
+          options={['Green', 'Pink', 'Brown']}
+          readOnly
+          value={values['value03']}
         />
 
-        <Upload name='value08'
-                value={values['value08']}
-                multiple={true}
-                readOnly
-                onUpdate={onUpdate}
+        <Upload
+          multiple={true}
+          name='value08'
+          onUpdate={onUpdate}
+          readOnly
+          value={values['value08']}
         />
       </div>
-
     )
   }
 }

@@ -4,12 +4,11 @@ import React from 'react'
 import { TheContainer, TheContainerStyle } from '@the-/ui-container'
 
 class ExampleComponent extends React.PureComponent {
-  render () {
+  render() {
     return (
       <div>
         <TheContainerStyle />
-        <TheContainer id='my-component'
-        />
+        <TheContainer id='my-component' />
       </div>
     )
   }

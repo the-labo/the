@@ -1,6 +1,6 @@
 /**
  * Abstract scope class
- * @memberOf module:@the-/scope.scopes
+ * @memberof module:@the-/scope.scopes
  * @abstract
  * @class Scope
  * @param {string} name - Name of state

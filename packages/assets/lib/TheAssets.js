@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/assets
+ * @memberof module:@the-/assets
  * @class TheAssets
  */
 'use strict'

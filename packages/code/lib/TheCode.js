@@ -119,7 +119,7 @@ class TheCode {
       (input, process) =>
         Promise.resolve(input)
           .then((input) =>
-            process.call(null, String(input), {
+            process(String(input), {
               filename: path.resolve(filename),
               sourceType,
             }),

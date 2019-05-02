@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/lint.helpers
+ * @memberof module:@the-/lint.helpers
  * @class LintCache
  */
 'use strict'

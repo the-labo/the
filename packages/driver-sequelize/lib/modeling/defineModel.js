@@ -1,6 +1,6 @@
 /**
  * Parse schema
- * @memberOf module:@the-/driver-sequelize.modeling
+ * @memberof module:@the-/driver-sequelize.modeling
  * @function defineModel
  * @param {Object}
  * @returns {Object}

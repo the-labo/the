@@ -1,6 +1,6 @@
 /**
  * Convert into store scope class
- * @memberOf module:@the-/store
+ * @memberof module:@the-/store
  * @function toStoreScopeClass
  * @param {Function} BaseClass
  * @returns {Function}

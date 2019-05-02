@@ -1,6 +1,6 @@
 /**
  * Create a TheSeed instance
- * @memberOf module:@the-/seed
+ * @memberof module:@the-/seed
  * @function create
  * @param {...*} args
  * @returns {TheSeed}

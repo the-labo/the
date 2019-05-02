@@ -1,6 +1,6 @@
 /**
  * Create a TheAssets instance
- * @memberOf module:@the-/assets
+ * @memberof module:@the-/assets
  * @function create
  * @param {...*} args
  * @returns {module:@the-/assets.TheAssets}

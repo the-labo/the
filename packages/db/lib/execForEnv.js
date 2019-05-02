@@ -1,6 +1,6 @@
 /**
  * Do exec for env
- * @memberOf module:@the-/db
+ * @memberof module:@the-/db
  * @function execForEnv
  */
 'use strict'

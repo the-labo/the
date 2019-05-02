@@ -1,6 +1,6 @@
 /**
  * Style theme values
- * @memberOf module:@the-/const-ui
+ * @memberof module:@the-/const-ui
  * @namespace {string} ThemeValues
  */
 'use strict'

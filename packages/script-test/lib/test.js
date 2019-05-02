@@ -1,6 +1,6 @@
 /**
  * Test project
- * @memberOf module:@the-/script-test
+ * @memberof module:@the-/script-test
  * @function test
  * @param {string} [dirname=process.cwd()] - Project directory name
  * @param {Object} [options={}] - Optional settings

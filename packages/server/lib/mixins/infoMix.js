@@ -1,6 +1,6 @@
 /**
  * Mixins for info
- * @memberOf module:@the-/server.mixins
+ * @memberof module:@the-/server.mixins
  * @function infoMix
  * @param {function} Class
  * @returns {function} Class
@@ -14,7 +14,7 @@ const path = require('path')
 /** @lends module:@the-/server.mixins.infoMix */
 function infoMix(Class) {
   /**
-   * @memberOf module:@the-/server.mixins.infoMix
+   * @memberof module:@the-/server.mixins.infoMix
    * @inner
    */
   class InfoMixed extends Class {

@@ -1,5 +1,5 @@
 /**
- * Alias of {@memberOf @the-/driver-sequelize
+ * Alias of {@memberof @the-/driver-sequelize
  * @function default
  * @link @the-/driver-sequelize}
  */

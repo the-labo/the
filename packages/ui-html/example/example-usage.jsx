@@ -4,11 +4,9 @@ import React from 'react'
 import TheHtml from '@the-/ui-html'
 
 class ExampleHtml extends React.PureComponent {
-  render () {
+  render() {
     let styles = TheHtml.styles({})
-    return (
-      <TheHtml styles={styles}/>
-    )
+    return <TheHtml styles={styles} />
   }
 }
 

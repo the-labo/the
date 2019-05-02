@@ -1,6 +1,6 @@
 /**
  * Timezone names
- * @memberOf module:@the-/date
+ * @memberof module:@the-/date
  * @type {string} []
  */
 'use strict'

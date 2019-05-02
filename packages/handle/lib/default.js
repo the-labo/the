@@ -1,5 +1,5 @@
 /**
- * Alias of {@memberOf module:@the-/handle
+ * Alias of {@memberof module:@the-/handle
  * @function default
  * @link module:@the-/handle.create}
  */

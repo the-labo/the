@@ -191,4 +191,4 @@ Create a TheScene instance
 ## default()
 Alias of [create](#module_@the-/scene.create)
 
-**Kind**: global function  
+**Kind**: global function

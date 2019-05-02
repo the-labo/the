@@ -1,6 +1,6 @@
 /**
  * Create a TheHandle instance
- * @memberOf module:@the-/handle
+ * @memberof module:@the-/handle
  * @function create
  * @param {...*} args
  * @returns {TheHandle}

@@ -1,6 +1,6 @@
 /**
  * Scope to hold array
- * @memberOf module:@the-/scope.scopes
+ * @memberof module:@the-/scope.scopes
  * @class ArrayScope
  * @augments module:@the-/scope.scopes.Scope
  */

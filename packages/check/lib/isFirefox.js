@@ -1,6 +1,6 @@
 /**
  * Detect Firefox or not
- * @memberOf module:@the-/check
+ * @memberof module:@the-/check
  * @function isFirefox
  * @returns {Boolean}
  */

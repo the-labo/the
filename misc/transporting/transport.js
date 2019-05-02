@@ -215,28 +215,26 @@ const _removeDevDeps = async (baseDir, names) => {
             return { devDependencies, peerDependencies, scripts }
           },
         )
-        {
-          await _removeDevDeps(toDir, [
-            'the-script-share',
-            'the-script-update',
-            'ape-tasking',
-            'ape-formatting',
-            'the-script-release',
-            'the-script-test',
-            'the-script-doc',
-            'the-script-jsdoc',
-            'the-templates',
-            'the-script-build',
-            'the-component-demo',
-            'ape-releasing',
-            'mocha',
-            'ape-tmpl',
-            'ape-updating',
-            '@the-/script-build',
-            '@the-/script-doc',
-            '@the-/script-test',
-          ])
-        }
+        await _removeDevDeps(toDir, [
+          'the-script-share',
+          'the-script-update',
+          'ape-tasking',
+          'ape-formatting',
+          'the-script-release',
+          'the-script-test',
+          'the-script-doc',
+          'the-script-jsdoc',
+          'the-templates',
+          'the-script-build',
+          'the-component-demo',
+          'ape-releasing',
+          'mocha',
+          'ape-tmpl',
+          'ape-updating',
+          '@the-/script-build',
+          '@the-/script-doc',
+          '@the-/script-test',
+        ])
         await _addDevDeps(toDir, {
           '@the-/ui-demo': 'file:../ui-demo',
           coz: '*',

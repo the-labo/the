@@ -1,5 +1,5 @@
 /**
- * Alias of {@memberOf module:@the-/refactor
+ * Alias of {@memberof module:@the-/refactor
  * @function default
  * @link module:@the-/refactor.create}
  */

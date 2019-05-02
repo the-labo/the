@@ -1,5 +1,5 @@
 /**
- * Alias of {@memberOf module:@the-/run
+ * Alias of {@memberof module:@the-/run
  * @function default
  * @link module:@the-/run.create}
  */

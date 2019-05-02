@@ -1,6 +1,6 @@
 /**
  * Create a TheSetting instance
- * @memberOf module:@the-/setting
+ * @memberof module:@the-/setting
  * @function create
  * @param {...*} args
  * @returns {TheSetting}

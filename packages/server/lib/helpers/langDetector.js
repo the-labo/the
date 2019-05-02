@@ -1,6 +1,6 @@
 /**
  * Define koa middleware function to detect locale
- * @memberOf module:@the-/server.helpers
+ * @memberof module:@the-/server.helpers
  * @function langDetector
  * @param {string[]} [locales='en'] - Supported locales
  * @param {Object} [options={}] - Optional setting

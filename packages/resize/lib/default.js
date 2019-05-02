@@ -1,5 +1,5 @@
 /**
- * Alias of {@memberOf module:@the-/resize
+ * Alias of {@memberof module:@the-/resize
  * @function default
  * @link module:@the-/resize.create}
  */

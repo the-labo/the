@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { ok } = require('assert')
+const { ok } = require('assert').strict
 const TheS3 = require('../lib/TheS3')
 
 describe('the-s3', () => {

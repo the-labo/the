@@ -1,6 +1,6 @@
 /**
  * Script runner
- * @memberOf module:@the-/run
+ * @memberof module:@the-/run
  * @class TheRun
  * @param {Object} [options={}] - Optional settings
  * @param {number|Boolean} [options.inspect] -  Inspect port

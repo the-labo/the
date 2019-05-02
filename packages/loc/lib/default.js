@@ -1,6 +1,6 @@
 /**
  * Default exports
- * @memberOf module:@the-/loc
+ * @memberof module:@the-/loc
  * @function default
  */
 'use strict'

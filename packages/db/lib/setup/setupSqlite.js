@@ -1,10 +1,10 @@
 /**
- * @memberOf module:@the-/db.setup
+ * @memberof module:@the-/db.setup
  * @function setupSqlite
  */
 'use strict'
 
-const { ok } = require('assert')
+const { ok } = require('assert').strict
 const mkdirp = require('mkdirp')
 const path = require('path')
 

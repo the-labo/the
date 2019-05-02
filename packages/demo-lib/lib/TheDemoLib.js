@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/demo-lib
+ * @memberof module:@the-/demo-lib
  * @class TheDemoLib
  */
 'use strict'

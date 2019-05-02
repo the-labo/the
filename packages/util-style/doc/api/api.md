@@ -36,4 +36,3 @@ Convert style into style string
 | selector | <code>string</code> |  | Selector string |
 | style | <code>Object</code> |  | Style string |
 | [atRule] | <code>string</code> | <code>null</code> |  |
-

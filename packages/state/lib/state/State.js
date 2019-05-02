@@ -1,6 +1,6 @@
 /**
  * Abstract state
- * @memberOf module:@the-/state.state
+ * @memberof module:@the-/state.state
  * @abstract
  * @class State
  */

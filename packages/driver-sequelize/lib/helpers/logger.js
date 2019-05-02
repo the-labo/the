@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/driver-sequelize.helpers
+ * @memberof module:@the-/driver-sequelize.helpers
  * @name Logger
  */
 'use strict'

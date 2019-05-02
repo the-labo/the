@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/secret.mixins
+ * @memberof module:@the-/secret.mixins
  * @function cryptoMix
  */
 'use strict'
@@ -11,7 +11,7 @@ const SKIP_CRYPTO_PATTERN = /^[_$]|^\/\//
 /** @lends module:@the-/secret.cryptoMix */
 function cryptoMix(Class) {
   /**
-   * @memberOf module:@the-/secret.mixins.cryptoMix
+   * @memberof module:@the-/secret.mixins.cryptoMix
    * @inner
    * @class CryptoMixed
    */

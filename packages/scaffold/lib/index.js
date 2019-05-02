@@ -13,7 +13,7 @@ const lib = theScaffold.bind(this)
 
 Object.assign(lib, theScaffold, {
   tmpls,
-  theScaffold
+  theScaffold,
 })
 
 module.exports = lib

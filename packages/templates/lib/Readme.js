@@ -1,6 +1,6 @@
 /**
  * Define bud for README.md
- * @memberOf module:@the-/templates
+ * @memberof module:@the-/templates
  * @function Readme
  * @param {object} config - Configuration.
  * @param {string} config.sections - Section file path.

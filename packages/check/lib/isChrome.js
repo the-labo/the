@@ -1,6 +1,6 @@
 /**
  * Detect chrome or not
- * @memberOf module:@the-/check
+ * @memberof module:@the-/check
  * @function isChrome
  * @returns {Boolean}
  */

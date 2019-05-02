@@ -1,6 +1,6 @@
 /**
  * Define bud for prettierrc
- * @memberOf module:@the-/templates
+ * @memberof module:@the-/templates
  * @function prettierrc
  * @param {Object} config
  * @returns {Object}

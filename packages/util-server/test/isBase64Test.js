@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { ok } = require('assert')
+const { ok } = require('assert').strict
 const isBase64 = require('../lib/isBase64')
 
 describe('is-base64', () => {

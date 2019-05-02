@@ -1,6 +1,6 @@
 /**
  * Client connection store for the-server
- * @memberOf module:@the-/server.stores
+ * @memberof module:@the-/server.stores
  * @class ConnectionStore
  * @augments module:@the-/server.stores.Store
  */

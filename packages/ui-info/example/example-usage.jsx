@@ -4,22 +4,20 @@ import React from 'react'
 import { TheInfo, TheInfoStyle } from '@the-/ui-info'
 
 class ExampleComponent extends React.PureComponent {
-  render () {
+  render() {
     return (
       <div>
-        <TheInfoStyle/>
+        <TheInfoStyle />
         <TheInfo
-          title="This is title"
           data={{
             row01: 'Text as row',
-            row03: 'Hidden row',
             row02: <a>Node as row</a>,
+            row03: 'Hidden row',
           }}
           keys={['row02', 'row01']}
-        >
-        </TheInfo>
+          title='This is title'
+        />
       </div>
-
     )
   }
 }

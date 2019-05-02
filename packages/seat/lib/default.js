@@ -1,5 +1,5 @@
 /**
- * Alias of {@memberOf module:@the-/seat
+ * Alias of {@memberof module:@the-/seat
  * @function default
  * @link module:@the-/seat.create}
  */

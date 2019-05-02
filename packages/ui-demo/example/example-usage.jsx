@@ -6,11 +6,9 @@ import TheComponentDemo from '@the-/ui-demo'
 const TheComponentDemoStyles = TheComponentDemo.styles({})
 
 class ExampleComponent extends React.PureComponent {
-  render () {
+  render() {
     return (
-      <TheComponentDemo id='my-component'
-                   styles={ TheComponentDemoStyles }
-      />
+      <TheComponentDemo id='my-component' styles={TheComponentDemoStyles} />
     )
   }
 }

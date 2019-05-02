@@ -1,6 +1,6 @@
 /**
  * Find node from node
- * @memberOf module:@the-/ast
+ * @memberof module:@the-/ast
  * @namespace finder
  */
 'use strict'

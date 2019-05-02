@@ -1,5 +1,5 @@
 /**
- * Alias of {@memberOf module:@the-/refresher
+ * Alias of {@memberof module:@the-/refresher
  * @function default
  * @link module:@the-/refresher.create}
  */

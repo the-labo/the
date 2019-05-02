@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/driver-sequelize.modeling
+ * @memberof module:@the-/driver-sequelize.modeling
  * @function prepareModel
  * @returns {Promise}
  */

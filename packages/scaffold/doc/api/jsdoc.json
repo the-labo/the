@@ -1,49 +1,54 @@
 [
   {
-    "id": "module:@the-/scaffold",
-    "longname": "module:@the-/scaffold",
-    "name": "@the-/scaffold",
-    "kind": "module",
     "description": "Scaffold for the-projects",
+    "id": "module:@the-/scaffold",
+    "kind": "module",
+    "longname": "module:@the-/scaffold",
     "meta": {
-      "lineno": 1,
       "filename": "index.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/scaffold/lib"
     },
+    "name": "@the-/scaffold",
     "order": 0
   },
   {
     "id": "listTypes",
-    "longname": "listTypes",
-    "name": "listTypes",
     "kind": "function",
-    "scope": "global",
+    "longname": "listTypes",
     "meta": {
-      "lineno": 1,
       "filename": "listTypes.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/scaffold/lib"
     },
-    "order": 1
+    "name": "listTypes",
+    "order": 1,
+    "scope": "global"
   },
   {
     "id": "render",
-    "longname": "render",
-    "name": "render",
     "kind": "function",
-    "scope": "global",
+    "longname": "render",
     "meta": {
-      "lineno": 1,
       "filename": "render.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/scaffold/lib"
     },
-    "order": 2
+    "name": "render",
+    "order": 2,
+    "scope": "global"
   },
   {
     "id": "theScaffold",
-    "longname": "theScaffold",
-    "name": "theScaffold",
     "kind": "function",
-    "scope": "global",
+    "longname": "theScaffold",
+    "meta": {
+      "filename": "theScaffold.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/scaffold/lib"
+    },
+    "name": "theScaffold",
+    "order": 3,
     "params": [
       {
         "type": {
@@ -115,11 +120,6 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "theScaffold.js",
-      "path": "/Users/okuni/Projects/the/packages/scaffold/lib"
-    },
-    "order": 3
+    "scope": "global"
   }
 ]

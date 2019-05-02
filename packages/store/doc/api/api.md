@@ -125,5 +125,4 @@ Convert into store scope class
 
 | Param | Type |
 | --- | --- |
-| BaseClass | <code>function</code> | 
-
+| BaseClass | <code>function</code> |

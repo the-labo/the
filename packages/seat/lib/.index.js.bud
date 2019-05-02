@@ -1,4 +1,3 @@
-
 'use strict'
 
 const { Index: IndexJs } = require('@the-/templates/presets/lib')

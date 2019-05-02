@@ -1,6 +1,6 @@
 /**
  * Acquire process
- * @memberOf module:@the-/ps
+ * @memberof module:@the-/ps
  * @function acquire
  */
 'use strict'

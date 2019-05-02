@@ -1,8 +1,8 @@
 /**
  * State works as scope
- * @memberOf module:@the-/state.state
+ * @memberof module:@the-/state.state
  * @class ScopedState
- * @extends module:@the-/state.state.State
+ * @augments module:@the-/state.state.State
  * @param {string} name - Name of scope
  */
 'use strict'

@@ -1,6 +1,6 @@
 /**
  * Define koa middleware function to do serverside rendering
- * @memberOf module:@the-/server.helpers
+ * @memberof module:@the-/server.helpers
  * @function serverRendering
  * @param {function} Component - React component to render
  * @param {Object} [options={}] - Optional settings

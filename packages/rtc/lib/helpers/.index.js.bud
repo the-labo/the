@@ -3,12 +3,12 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir({
-  cjs: true,
   annotations: {
-    memberof: 'module:@the-/rtc',
     description: 'Helpers',
+    memberof: 'module:@the-/rtc',
     namespace: 'helpers',
   },
+  cjs: true,
   dirname: __dirname,
 })
 

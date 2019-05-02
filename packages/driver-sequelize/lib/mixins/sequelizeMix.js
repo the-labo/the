@@ -1,6 +1,6 @@
 /**
  * Mixin of sequelize
- * @memberOf module:@the-/driver-sequelize.mixins
+ * @memberof module:@the-/driver-sequelize.mixins
  * @function sequelizeMix
  */
 'use strict'

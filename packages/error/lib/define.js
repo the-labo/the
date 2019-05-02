@@ -1,6 +1,6 @@
 /**
  * Define an error class
- * @memberOf module:@the-/error
+ * @memberof module:@the-/error
  * @function define
  * @returns {function} Error class
  */

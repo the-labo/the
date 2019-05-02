@@ -1,7 +1,6 @@
-
 /**
  * eslintignore
- * @memberOf module:@the-/templates
+ * @memberof module:@the-/templates
  * @function eslintignore
  * @param {Object} config
  * @returns {Object}

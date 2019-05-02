@@ -1,5 +1,5 @@
 /**
- * Alias of {@memberOf module:@the-/ps
+ * Alias of {@memberof module:@the-/ps
  * @function default
  * @link module:@the-/ps.create}
  */

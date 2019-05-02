@@ -41,4 +41,4 @@ Form of the-components
 ## TheFormStyle()
 Style for TheForm
 
-**Kind**: global function  
+**Kind**: global function

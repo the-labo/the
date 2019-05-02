@@ -2,55 +2,54 @@
 
 import '@the-/polyfill/apply' // Some browser needs polyfill for ImageCapture API
 import React from 'react'
-import { TheCam, TheCamStyle, TheCamInput } from '@the-/ui-cam'
+import { TheCam, TheCamInput, TheCamStyle } from '@the-/ui-cam'
 import { TheSpinStyle } from '@the-/ui-spin'
 
 class ExampleComponent extends React.Component {
+  handleUpdate = (v) => this.setState(v)
+  start = () => {
+    this.setState({ disabled: false })
+  }
   state = {
     disabled: false,
     photo01: null,
   }
-  start = () => {
-    this.setState({ disabled: false })
-  }
+
   stop = () => {
     this.setState({ disabled: true })
   }
 
-  handleUpdate = (v) => this.setState(v)
-
-  render () {
+  render() {
     return (
       <div>
-        <TheCamStyle/>
-        <TheSpinStyle/>
-        <TheCam onStart={() => console.log('camera started')}
-                onStop={() => console.log('camera stopped')}
-                disabled={this.state.disabled}
-        >
-        </TheCam>
+        <TheCamStyle />
+        <TheSpinStyle />
+        <TheCam
+          disabled={this.state.disabled}
+          onStart={() => console.log('camera started')}
+          onStop={() => console.log('camera stopped')}
+        />
 
-        <br/>
+        <br />
         <button onClick={this.start}>Start</button>
         <button onClick={this.stop}>Stop</button>
 
-        <br/>
-        <hr/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <section>
           <h1>As Input</h1>
-          <TheCamInput value={this.state.photo01}
-                       name={'photo01'}
-                       onUpdate={this.handleUpdate}
-          >
-          </TheCamInput>
+          <TheCamInput
+            name={'photo01'}
+            onUpdate={this.handleUpdate}
+            value={this.state.photo01}
+          />
         </section>
       </div>
-
     )
   }
 }

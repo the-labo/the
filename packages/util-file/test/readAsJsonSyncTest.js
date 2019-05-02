@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { ok } = require('assert')
+const { ok } = require('assert').strict
 const readAsJsonSync = require('../lib/readAsJsonSync')
 
 describe('read-as-json-sync', () => {

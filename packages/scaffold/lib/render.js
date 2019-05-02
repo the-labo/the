@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/scaffold
+ * @memberof module:@the-/scaffold
  * @function render
  */
 'use strict'

@@ -1,26 +1,31 @@
 [
   {
-    "id": "module:@the-/script-test",
-    "longname": "module:@the-/script-test",
-    "name": "@the-/script-test",
-    "kind": "module",
     "description": "Test script for the-project",
-    "version": "15.4.0",
+    "id": "module:@the-/script-test",
+    "kind": "module",
+    "longname": "module:@the-/script-test",
     "meta": {
-      "lineno": 1,
       "filename": "index.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/script-test/lib"
     },
-    "order": 0
+    "name": "@the-/script-test",
+    "order": 0,
+    "version": "15.4.0"
   },
   {
-    "id": "module:@the-/script-test.test",
-    "longname": "module:@the-/script-test.test",
-    "name": "test",
-    "kind": "function",
-    "scope": "static",
     "description": "Test project",
+    "id": "module:@the-/script-test.test",
+    "kind": "function",
+    "longname": "module:@the-/script-test.test",
     "memberof": "module:@the-/script-test",
+    "meta": {
+      "filename": "test.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/script-test/lib"
+    },
+    "name": "test",
+    "order": 1,
     "params": [
       {
         "type": {
@@ -54,11 +59,6 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "test.js",
-      "path": "/Users/okuni/Projects/the/packages/script-test/lib"
-    },
-    "order": 1
+    "scope": "static"
   }
 ]

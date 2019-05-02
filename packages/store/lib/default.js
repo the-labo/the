@@ -1,5 +1,5 @@
 /**
- * Alias of {@memberOf module:@the-/store
+ * Alias of {@memberof module:@the-/store
  * @function create
  * @link module:@the-/store}
  */

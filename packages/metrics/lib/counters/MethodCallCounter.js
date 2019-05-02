@@ -1,6 +1,6 @@
 /**
  * Count react rendering counts
- * @memberOf module:@the-/metrics.counters
+ * @memberof module:@the-/metrics.counters
  * @class MethodCallCounter
  * @augments Counter
  */

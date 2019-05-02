@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/password
+ * @memberof module:@the-/password
  * @class ThePassword
  */
 'use strict'

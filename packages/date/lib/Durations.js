@@ -1,6 +1,6 @@
 /**
  * Constant variables
- * @memberOf module:@the-/date
+ * @memberof module:@the-/date
  * @namespace Durations
  */
 'use strict'

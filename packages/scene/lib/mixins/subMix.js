@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/scene.mixins
+ * @memberof module:@the-/scene.mixins
  * @function subMix
  * @param {function} BaseClass
  * @returns {function} MixedClass
@@ -9,7 +9,7 @@
 /** @lends module:@the-/scene.mixins.subMix */
 function subMix(BaseClass) {
   /**
-   * @memberOf module:@the-/scene.mixins.subMix
+   * @memberof module:@the-/scene.mixins.subMix
    * @inner
    */
   class SubMixed extends BaseClass {

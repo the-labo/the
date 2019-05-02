@@ -1,6 +1,6 @@
 /**
  * Create a ThePack instance
- * @memberOf module:@the-/pack
+ * @memberof module:@the-/pack
  * @function create
  * @param {...*} args
  * @returns {ThePack}

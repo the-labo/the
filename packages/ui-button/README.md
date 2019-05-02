@@ -37,6 +37,7 @@ Button of the-components
 
 
 
+
 <!-- Overview End -->
 
 
@@ -63,10 +64,10 @@ This software is released under the [MIT License](https://github.com/the-labo/th
 Links
 ------
 
-+ [THE Labo][the_labo_url]
 + [React][react_url]
++ [THE Labo][the_labo_url]
 
-[the_labo_url]: https://github.com/the-labo
 [react_url]: https://reactjs.org/
+[the_labo_url]: https://github.com/the-labo
 
 <!-- Links End -->

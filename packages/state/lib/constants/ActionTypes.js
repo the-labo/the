@@ -1,6 +1,6 @@
 /**
  * Action types
- * @memberOf module:@the-/state.constants
+ * @memberof module:@the-/state.constants
  * @namespace ActionTypes
  */
 'use strict'

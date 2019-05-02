@@ -1,6 +1,6 @@
 /**
  * Detect iOS or not
- * @memberOf module:@the-/check
+ * @memberof module:@the-/check
  * @function isiOS
  * @returns {Boolean}
  */

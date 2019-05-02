@@ -84,4 +84,4 @@ Create a TheSetting instance
 ## default()
 Alias [create](#module_@the-/setting.create)
 
-**Kind**: global function  
+**Kind**: global function

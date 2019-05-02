@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/setting.mixins
+ * @memberof module:@the-/setting.mixins
  * @function lockMix
  */
 'use strict'
@@ -11,7 +11,7 @@ const LOCK_DURATION = 1500
 /** @lends module:@the-/setting.mixins.lockMix */
 function lockMix(Class) {
   /**
-   * @memberOf module:@the-/setting.mixins.lockMix
+   * @memberof module:@the-/setting.mixins.lockMix
    * @inner
    */
   class LockMixed extends Class {

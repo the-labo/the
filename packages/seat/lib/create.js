@@ -1,6 +1,6 @@
 /**
  * Create a TheSeat instance
- * @memberOf module:@the-/seat
+ * @memberof module:@the-/seat
  * @function create
  * @param {...*} args
  * @returns {TheSeat}

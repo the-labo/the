@@ -1,6 +1,6 @@
 /**
  * Create a TheDemoLib instance
- * @memberOf module:@the-/demo-lib
+ * @memberof module:@the-/demo-lib
  * @function create
  * @param {...*} args
  * @returns {TheDemoLib}

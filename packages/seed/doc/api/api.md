@@ -78,4 +78,4 @@ Create a TheSeed instance
 ## default()
 Alias of [create](#module_@the-/seed.create)
 
-**Kind**: global function  
+**Kind**: global function

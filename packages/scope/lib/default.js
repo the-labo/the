@@ -1,5 +1,5 @@
 /**
- * Alias of {@memberOf module:@the-/scope
+ * Alias of {@memberof module:@the-/scope
  * @function default
  * @link module:@the-/scope.create}
  */

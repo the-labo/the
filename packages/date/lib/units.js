@@ -1,6 +1,6 @@
 /**
  * Date units
- * @memberOf module:@the-/date
+ * @memberof module:@the-/date
  * @namespace units
  */
 'use strict'

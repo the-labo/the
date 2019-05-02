@@ -94,7 +94,6 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
-- [default()](./doc/api/api.md#default)
 - [#createAudioRecorder(audioContext,options)](./doc/api/api.md#module_@the-/media.TheMedia#createAudioRecorder)
 - [#getStreamTracks(kind)](./doc/api/api.md#module_@the-/media.TheMedia#getStreamTracks)
 - [#toggleEnabled(kind,enabled)](./doc/api/api.md#module_@the-/media.TheMedia#toggleEnabled)

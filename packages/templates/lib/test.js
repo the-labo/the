@@ -1,13 +1,13 @@
 /**
  * Define bud for readme
- * @memberOf module:@the-/templates
+ * @memberof module:@the-/templates
  * @function test
  * @returns {Object}
  */
 'use strict'
 
 const aglob = require('aglob')
-const { ok } = require('assert')
+const { ok } = require('assert').strict
 const path = require('path')
 const _tmpl = require('./_tmpl')
 

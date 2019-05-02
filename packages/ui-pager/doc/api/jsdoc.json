@@ -1,136 +1,136 @@
 [
   {
+    "description": "Pager of the-components",
     "id": "module:@the-/ui-pager",
-    "longname": "module:@the-/ui-pager",
-    "name": "@the-/ui-pager",
     "kind": "module",
-    "description": "Pager of the-components",
-    "version": "15.4.0",
-    "typicalname": "uiPager",
+    "longname": "module:@the-/ui-pager",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-pager/lib"
     },
-    "order": 0
+    "name": "@the-/ui-pager",
+    "order": 0,
+    "typicalname": "uiPager",
+    "version": "15.4.0"
   },
   {
-    "id": "ThePager",
-    "longname": "ThePager",
-    "name": "ThePager",
-    "kind": "class",
-    "scope": "global",
     "description": "Pager of the-components",
+    "id": "ThePager",
+    "kind": "class",
+    "longname": "ThePager",
     "meta": {
+      "filename": "ThePager.jsx",
       "lineno": 13,
-      "filename": "ThePager.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-pager/lib"
     },
-    "order": 1
+    "name": "ThePager",
+    "order": 1,
+    "scope": "global"
   },
   {
-    "id": "ThePagerStyle",
-    "longname": "ThePagerStyle",
-    "name": "ThePagerStyle",
-    "kind": "function",
-    "scope": "global",
     "description": "Style for ThePager",
-    "params": [],
+    "id": "ThePagerStyle",
+    "kind": "function",
+    "longname": "ThePagerStyle",
     "meta": {
-      "lineno": 11,
       "filename": "ThePagerStyle.jsx",
+      "lineno": 11,
       "path": "/Users/okuni/Projects/the/packages/ui-pager/lib"
     },
-    "order": 7
+    "name": "ThePagerStyle",
+    "order": 7,
+    "params": [],
+    "scope": "global"
   },
   {
-    "id": "ThePager.propTypes.hrefPattern",
-    "longname": "ThePager.propTypes.hrefPattern",
-    "name": "hrefPattern",
-    "kind": "member",
-    "scope": "static",
     "description": "Pattern for href",
+    "id": "ThePager.propTypes.hrefPattern",
+    "kind": "member",
+    "longname": "ThePager.propTypes.hrefPattern",
     "memberof": "ThePager.propTypes",
     "meta": {
+      "filename": "ThePager.jsx",
       "lineno": 150,
-      "filename": "ThePager.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-pager/lib"
     },
-    "order": 2
+    "name": "hrefPattern",
+    "order": 2,
+    "scope": "static"
   },
   {
-    "id": "ThePager.propTypes.onChange",
-    "longname": "ThePager.propTypes.onChange",
-    "name": "onChange",
-    "kind": "member",
-    "scope": "static",
     "description": "Handler for page change",
+    "id": "ThePager.propTypes.onChange",
+    "kind": "member",
+    "longname": "ThePager.propTypes.onChange",
     "memberof": "ThePager.propTypes",
     "meta": {
+      "filename": "ThePager.jsx",
       "lineno": 152,
-      "filename": "ThePager.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-pager/lib"
     },
-    "order": 3
+    "name": "onChange",
+    "order": 3,
+    "scope": "static"
   },
   {
-    "id": "ThePager.propTypes.page",
-    "longname": "ThePager.propTypes.page",
-    "name": "page",
-    "kind": "member",
-    "scope": "static",
     "description": "Current page number. Start with 0",
+    "id": "ThePager.propTypes.page",
+    "kind": "member",
+    "longname": "ThePager.propTypes.page",
     "memberof": "ThePager.propTypes",
     "meta": {
+      "filename": "ThePager.jsx",
       "lineno": 154,
-      "filename": "ThePager.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-pager/lib"
     },
-    "order": 4
+    "name": "page",
+    "order": 4,
+    "scope": "static"
   },
   {
-    "id": "ThePager.propTypes.size",
-    "longname": "ThePager.propTypes.size",
-    "name": "size",
-    "kind": "member",
-    "scope": "static",
     "description": "Number of items to show",
+    "id": "ThePager.propTypes.size",
+    "kind": "member",
+    "longname": "ThePager.propTypes.size",
     "memberof": "ThePager.propTypes",
     "meta": {
+      "filename": "ThePager.jsx",
       "lineno": 156,
-      "filename": "ThePager.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-pager/lib"
     },
-    "order": 5
+    "name": "size",
+    "order": 5,
+    "scope": "static"
   },
   {
-    "id": "ThePager.propTypes.total",
-    "longname": "ThePager.propTypes.total",
-    "name": "total",
-    "kind": "member",
-    "scope": "static",
     "description": "Total page count",
+    "id": "ThePager.propTypes.total",
+    "kind": "member",
+    "longname": "ThePager.propTypes.total",
     "memberof": "ThePager.propTypes",
     "meta": {
-      "lineno": 158,
       "filename": "ThePager.jsx",
+      "lineno": 158,
       "path": "/Users/okuni/Projects/the/packages/ui-pager/lib"
     },
-    "order": 6
+    "name": "total",
+    "order": 6,
+    "scope": "static"
   },
   {
-    "id": "ThePagerStyle.propTypes.options",
-    "longname": "ThePagerStyle.propTypes.options",
-    "name": "options",
-    "kind": "member",
-    "scope": "static",
     "description": "Style options",
+    "id": "ThePagerStyle.propTypes.options",
+    "kind": "member",
+    "longname": "ThePagerStyle.propTypes.options",
     "memberof": "ThePagerStyle.propTypes",
     "meta": {
-      "lineno": 22,
       "filename": "ThePagerStyle.jsx",
+      "lineno": 22,
       "path": "/Users/okuni/Projects/the/packages/ui-pager/lib"
     },
-    "order": 8
+    "name": "options",
+    "order": 8,
+    "scope": "static"
   }
 ]

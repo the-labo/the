@@ -1,6 +1,6 @@
 /**
  * Create a TheLoc instance
- * @memberOf module:@the-/loc
+ * @memberof module:@the-/loc
  * @function create
  * @param {...*} args
  * @returns {TheLoc}

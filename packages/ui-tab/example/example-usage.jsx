@@ -1,58 +1,60 @@
 'use strict'
 
 import React from 'react'
-import { TheTab, TheTabStyle } from '@the-/ui-tab'
 import { TheButtonStyle } from '@the-/ui-button'
 import { TheSpinStyle } from '@the-/ui-spin'
+import { TheTab, TheTabStyle } from '@the-/ui-tab'
 
 class ExampleComponent extends React.PureComponent {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
-      activeIndex: 1
+      activeIndex: 1,
     }
   }
 
-  render () {
+  render() {
     return (
       <div>
-        <TheButtonStyle/>
-        <TheSpinStyle/>
-        <TheTabStyle/>
-        <TheTab activeIndex={this.state.activeIndex}
-                onChange={({ activeIndex }) => this.setState({ activeIndex })}
-                buttons={['Tab01', 'Tab02', 'Tab03', 'Tab04']}
+        <TheButtonStyle />
+        <TheSpinStyle />
+        <TheTabStyle />
+        <TheTab
+          activeIndex={this.state.activeIndex}
+          buttons={['Tab01', 'Tab02', 'Tab03', 'Tab04']}
+          onChange={({ activeIndex }) => this.setState({ activeIndex })}
         >
-          <TheTab.Content style={{ height: '100px' }}> This is Content 01 </TheTab.Content>
+          <TheTab.Content style={{ height: '100px' }}>
+            {' '}
+            This is Content 01{' '}
+          </TheTab.Content>
           <TheTab.Content style={{ height: '300px' }}>
             This is Content 02
-            <br/>
-            <a href="http://example.com">With some link</a>
+            <br />
+            <a href='http://example.com'>With some link</a>
           </TheTab.Content>
-          <TheTab.Content spinning>
-            This is Content 03
-
-          </TheTab.Content>
+          <TheTab.Content spinning>This is Content 03</TheTab.Content>
           <TheTab.Content>
             This is Content 04
-
-
-            <div style={{ overflow: 'auto', border: '2px solid #AAA' }}>
-              <div style={{
-                width: '1200px',
-                whiteSpace: 'nowrap',
-                padding: '22px',
-                fontSize: '2em'
-              }}>
+            <div style={{ border: '2px solid #AAA', overflow: 'auto' }}>
+              <div
+                style={{
+                  fontSize: '2em',
+                  padding: '22px',
+                  whiteSpace: 'nowrap',
+                  width: '1200px',
+                }}
+              >
                 <pre>
-              This is a long long long long long long long long long long long long long long long long long long long long long long long long long long long long content
+                  This is a long long long long long long long long long long
+                  long long long long long long long long long long long long
+                  long long long long long long content
                 </pre>
               </div>
             </div>
           </TheTab.Content>
         </TheTab>
       </div>
-
     )
   }
 }

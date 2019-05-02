@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/db.helpers
+ * @memberof module:@the-/db.helpers
  * @function createTerminal
  */
 'use strict'

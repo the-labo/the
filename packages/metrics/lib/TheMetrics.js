@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/metrics
+ * @memberof module:@the-/metrics
  * @class TheMetrics
  * @param {Object} [options={}] - Optional settings
  */

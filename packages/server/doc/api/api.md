@@ -717,4 +717,4 @@ Alias of {@memberOf module:@the-/server
 ## IOEvents()
 Events for IO
 
-**Kind**: global function  
+**Kind**: global function

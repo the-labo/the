@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/secret
+ * @memberof module:@the-/secret
  * @class TheSecret
  * @augments CryptoMixed
  * @augments LockMixed

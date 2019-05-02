@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/polyfill
+ * @memberof module:@the-/polyfill
  * @class ThePolyfill
  */
 'use strict'

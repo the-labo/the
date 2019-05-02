@@ -1,6 +1,6 @@
 /**
  * Scope to hold null
- * @memberOf module:@the-/scope.scopes
+ * @memberof module:@the-/scope.scopes
  * @class NullScope
  * @augments module:@the-/scope.scopes.Scope
  */

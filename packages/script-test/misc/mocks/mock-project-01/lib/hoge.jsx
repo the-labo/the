@@ -1,6 +1,3 @@
 'use strict'
 
-const React = require('react')
-const Hoge = () => (
-  <div>This is hoge!</div>
-)
+const Hoge = () => <div>This is hoge!</div>

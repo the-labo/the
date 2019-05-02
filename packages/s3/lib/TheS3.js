@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/s3
+ * @memberof module:@the-/s3
  * @class TheS3
  * @param {Object} config
  * @param {string} [config.accessKeyId]

@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/metrics.counters
+ * @memberof module:@the-/metrics.counters
  * @abstract
  * @class Counter
  */

@@ -1,5 +1,5 @@
 /**
- * Default exports. Alias of {@memberOf module:@the-/assets
+ * Default exports. Alias of {@memberof module:@the-/assets
  * @function default
  * @link module:@the-/assets.create}
  * @param {...*} args

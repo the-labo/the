@@ -1,5 +1,5 @@
 /**
- * Alias of {@memberOf module:@the-/context
+ * Alias of {@memberof module:@the-/context
  * @function default
  * @link module:@the-/context.create}
  */

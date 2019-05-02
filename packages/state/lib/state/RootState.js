@@ -1,8 +1,8 @@
 /**
  * State works as root
- * @memberOf module:@the-/state.state
+ * @memberof module:@the-/state.state
  * @class RootState
- * @extends module:@the-/state.state.State
+ * @augments module:@the-/state.state.State
  * @param {Object} [options={}] - Optional settings
  * @param {Object} [options.defaults={}] - Default values
  */

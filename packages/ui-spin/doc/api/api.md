@@ -41,4 +41,4 @@ Spin of the-components
 ## TheSpinStyle()
 Style for TheSpin
 
-**Kind**: global function  
+**Kind**: global function

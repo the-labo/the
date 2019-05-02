@@ -1,6 +1,6 @@
 /**
  * Default exports
- * @memberOf module:@the-/secret
+ * @memberof module:@the-/secret
  * @function theSecret
  * @returns {TheSecret}
  */

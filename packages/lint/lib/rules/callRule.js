@@ -1,6 +1,6 @@
 /**
  * Create "callRule" lint
- * @memberOf module:@the-/lint.rules
+ * @memberof module:@the-/lint.rules
  * @function callRule
  * @param {Object} config - Lint config
  * @param {Object} keypathArguments

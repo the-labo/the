@@ -1,110 +1,135 @@
 'use strict'
 
 import React from 'react'
+import { TheButton, TheButtonStyle } from '@the-/ui-button'
 import { TheForm, TheFormBinder, TheFormStyle } from '@the-/ui-form'
 import { TheInput, TheInputStyle } from '@the-/ui-input'
-import { TheButton, TheButtonStyle } from '@the-/ui-button'
 
 class ExampleComponent extends React.PureComponent {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
-      values: {}
+      values: {},
     }
     this.onUpdate = this.onUpdate.bind(this)
   }
 
-  onUpdate (values) {
+  onUpdate(values) {
     this.setState({
-      values: Object.assign({}, this.state.values, values)
+      values: Object.assign({}, this.state.values, values),
     })
   }
 
-  render () {
-    const { Field, Label, Value, FieldSet, Legend } = TheForm
+  render() {
+    const { Field, FieldSet, Label, Legend, Value } = TheForm
 
     const { values } = this.state
     return (
       <div>
-        <TheFormStyle/>
-        <TheInputStyle/>
-        <TheButtonStyle/>
+        <TheFormStyle />
+        <TheInputStyle />
+        <TheButtonStyle />
 
         <div>
-          <TheFormBinder values={this.state.values}
-                         onUpdate={this.onUpdate}
-          >{
-            ({
-               formPropsOf,
-               inputPropsOf,
-               labelPropsOf,
-               submitPropsOf,
-             }) => (
+          <TheFormBinder onUpdate={this.onUpdate} values={this.state.values}>
+            {({ inputPropsOf, labelPropsOf }) => (
               <TheForm>
                 <Field>
                   <Label {...labelPropsOf('value01')}>Foo</Label>
-                  <Value><TheInput.Text {...inputPropsOf('value01')}
-                                        candidate={['foo', 'bar']}
-                  /></Value>
+                  <Value>
+                    <TheInput.Text
+                      {...inputPropsOf('value01')}
+                      candidate={['foo', 'bar']}
+                    />
+                  </Value>
                 </Field>
                 <Field>
                   <Label {...labelPropsOf('value02')}>Bar</Label>
-                  <Value><TheInput.Radio {...inputPropsOf('value02')}
-                                         options={{ '01': 'ORange', '02': 'Banana' }}
-                  /></Value>
+                  <Value>
+                    <TheInput.Radio
+                      {...inputPropsOf('value02')}
+                      options={{ '01': 'ORange', '02': 'Banana' }}
+                    />
+                  </Value>
                 </Field>
 
                 <FieldSet>
                   <Legend>This is legend</Legend>
                   <Field>
                     <Label {...labelPropsOf('value01')}>Foo</Label>
-                    <Value><TheInput.Text {...inputPropsOf('value01')}
-                                          candidate={['foo', 'bar']}
-                    /></Value>
+                    <Value>
+                      <TheInput.Text
+                        {...inputPropsOf('value01')}
+                        candidate={['foo', 'bar']}
+                      />
+                    </Value>
                   </Field>
                 </FieldSet>
               </TheForm>
-            )
-          }
+            )}
           </TheFormBinder>
-          <hr/>
+          <hr />
 
           <TheForm spinning>
             <Field>
               <Label>Foo</Label>
-              <Value><TheInput.Text name='value01' value={values.value01} onUpdate={this.onUpdate}/></Value>
+              <Value>
+                <TheInput.Text
+                  name='value01'
+                  onUpdate={this.onUpdate}
+                  value={values.value01}
+                />
+              </Value>
             </Field>
             <Field>
               <Label>Bar</Label>
-              <Value><TheInput.Radio name='value02' value={values.value02} onUpdate={this.onUpdate}
-                                     options={{ '01': 'ORange', '02': 'Banana' }}
-              /></Value>
+              <Value>
+                <TheInput.Radio
+                  name='value02'
+                  onUpdate={this.onUpdate}
+                  options={{ '01': 'ORange', '02': 'Banana' }}
+                  value={values.value02}
+                />
+              </Value>
             </Field>
           </TheForm>
 
-
-          <hr/>
-          <TheForm errors={{ value01: 'no,no,no' }}
-                   errorLead={'You have an input error'}
+          <hr />
+          <TheForm
+            errorLead={'You have an input error'}
+            errors={{ value01: 'no,no,no' }}
           >
             <Field>
               <Label>Foo</Label>
-              <Value><TheInput.Text name='value01' value={values.value01} onUpdate={this.onUpdate}/></Value>
+              <Value>
+                <TheInput.Text
+                  name='value01'
+                  onUpdate={this.onUpdate}
+                  value={values.value01}
+                />
+              </Value>
             </Field>
           </TheForm>
         </div>
-        <hr/>
+        <hr />
 
         <div>
           <TheForm inline>
-            <TheInput.Text name='value01' value={values.value01} onUpdate={this.onUpdate}/>
+            <TheInput.Text
+              name='value01'
+              onUpdate={this.onUpdate}
+              value={values.value01}
+            />
             <TheButton primary>Do it!</TheButton>
           </TheForm>
 
           <TheForm inline>
-            <TheInput.Text name='value01' value={values.value01}
-                           error='This is error'
-                           onUpdate={this.onUpdate}/>
+            <TheInput.Text
+              error='This is error'
+              name='value01'
+              onUpdate={this.onUpdate}
+              value={values.value01}
+            />
             <TheButton primary>Do it!</TheButton>
           </TheForm>
         </div>

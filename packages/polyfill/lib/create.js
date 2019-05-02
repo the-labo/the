@@ -1,6 +1,6 @@
 /**
  * Create a ThePolyfill instance
- * @memberOf module:@the-/polyfill
+ * @memberof module:@the-/polyfill
  * @function create
  * @param {...*} args
  * @returns {ThePolyfill}

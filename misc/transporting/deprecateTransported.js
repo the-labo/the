@@ -2,10 +2,10 @@
 'use strict'
 
 const { spawnSync } = require('child_process')
-process.chdir(baseDir)
-
 const transporting = require('./transporting')
+
 const baseDir = `${__dirname}/../..`
+process.chdir(baseDir)
 
 async function main() {
   for (const [oldName] of Object.entries(transporting)) {

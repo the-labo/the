@@ -1,8 +1,8 @@
 'use strict'
 
 import React from 'react'
-import { TheVideo, TheVideoStyle } from '@the-/ui-video'
 import { TheIconStyle } from '@the-/ui-icon'
+import { TheVideo, TheVideoStyle } from '@the-/ui-video'
 
 const VIDEO_URL = './mov_bbb.mp4'
 
@@ -14,22 +14,48 @@ class ExampleComponent extends React.PureComponent {
       <div>
         <TheIconStyle />
         <TheVideoStyle />
-        <TheVideo controls {...{ width, height }} src={VIDEO_URL} scale='none' />
-        <TheVideo controls {...{ width, height }} src={VIDEO_URL} scale='fill' />
-        <TheVideo controls {...{ width, height }} src={VIDEO_URL} scale='fit' />
-        <TheVideo controls {...{ width, height }} src={'__invalid_url__'} />
-        <TheVideo controls {...{ width, height }} src={VIDEO_URL} scale='fit' asLink />
-        <TheVideo controls {...{ width, height }} src={null} scale='fit' />
-
+        <TheVideo
+          controls
+          {...{ height, width }}
+          scale='none'
+          src={VIDEO_URL}
+        />
+        <TheVideo
+          controls
+          {...{ height, width }}
+          scale='fill'
+          src={VIDEO_URL}
+        />
+        <TheVideo controls {...{ height, width }} scale='fit' src={VIDEO_URL} />
+        <TheVideo controls {...{ height, width }} src={'__invalid_url__'} />
+        <TheVideo
+          controls
+          {...{ height, width }}
+          asLink
+          scale='fit'
+          src={VIDEO_URL}
+        />
+        <TheVideo controls {...{ height, width }} scale='fit' src={null} />
 
         <hr />
-        <div style={{ width: 120, height: 120, background: '#CCC' }}>
-          <TheVideo height="24px" width='33%' src={VIDEO_URL} scale='fill' asLink />
-          <TheVideo height="24px" width='33%' src={VIDEO_URL} scale='fill' asLink />
-          <TheVideo height="24px" width='33%' src={VIDEO_URL} scale='fill' />
+        <div style={{ background: '#CCC', height: 120, width: 120 }}>
+          <TheVideo
+            asLink
+            height='24px'
+            scale='fill'
+            src={VIDEO_URL}
+            width='33%'
+          />
+          <TheVideo
+            asLink
+            height='24px'
+            scale='fill'
+            src={VIDEO_URL}
+            width='33%'
+          />
+          <TheVideo height='24px' scale='fill' src={VIDEO_URL} width='33%' />
         </div>
       </div>
-
     )
   }
 }

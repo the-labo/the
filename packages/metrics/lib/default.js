@@ -1,5 +1,5 @@
 /**
- * Alias of {@memberOf module:@the-/metrics
+ * Alias of {@memberof module:@the-/metrics
  * @function default
  * @link module:@the-/metrics.create}
  */

@@ -1,6 +1,6 @@
 /**
  * Build in endpoints
- * @memberOf module:@the-/server
+ * @memberof module:@the-/server
  * @namespace buildInEndpoints
  */
 'use strict'

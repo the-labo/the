@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/scaffold
+ * @memberof module:@the-/scaffold
  * @function listTypes
  */
 'use strict'

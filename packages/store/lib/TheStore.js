@@ -1,6 +1,6 @@
 /**
  * Scoped redux store
- * @memberOf module:@the-/store
+ * @memberof module:@the-/store
  * @class TheStore
  * @param {Object} [options={}] - optional settings
  * @param {function()} [options.reducer] - Custom reducer function

@@ -1,6 +1,6 @@
 /**
  * Create a TheDB instance
- * @memberOf module:@the-/db
+ * @memberof module:@the-/db
  * @function create
  * @param {...*} args
  * @returns {module:@the-/db.TheDB}

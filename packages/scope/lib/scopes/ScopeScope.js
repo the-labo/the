@@ -1,6 +1,6 @@
 /**
  * Scope to other scopes
- * @memberOf module:@the-/scope.scopes
+ * @memberof module:@the-/scope.scopes
  * @class ScopeScope
  * @augments module:@the-/scope.scopes.Scope
  */

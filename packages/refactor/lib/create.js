@@ -1,6 +1,6 @@
 /**
  * Create a TheRefactor instance
- * @memberOf module:@the-/refactor
+ * @memberof module:@the-/refactor
  * @function create
  * @param {...*} args
  * @returns {TheRefactor}

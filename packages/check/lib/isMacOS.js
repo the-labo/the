@@ -1,6 +1,6 @@
 /**
  * Detect is mac OS
- * @memberOf module:@the-/check
+ * @memberof module:@the-/check
  * @function isMacOS
  * @returns {boolean}
  */

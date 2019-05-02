@@ -1,6 +1,6 @@
 /**
  * Check if a bin available
- * @memberOf module:@the-/check
+ * @memberof module:@the-/check
  * @function hasBin
  * @param {string} binName - Name of bin
  * @param {Object} [options={}]

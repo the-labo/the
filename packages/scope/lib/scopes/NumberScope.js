@@ -1,6 +1,6 @@
 /**
  * Scope to hold number
- * @memberOf module:@the-/scope.scopes
+ * @memberof module:@the-/scope.scopes
  * @class NumberScope
  * @augments module:@the-/scope.scopes.Scope
  */

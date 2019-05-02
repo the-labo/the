@@ -1,6 +1,6 @@
 /**
  * Create a TheError instance
- * @memberOf module:@the-/error
+ * @memberof module:@the-/error
  * @function create
  * @param {...*} args
  * @returns {TheError}

@@ -1,6 +1,6 @@
 /**
  * Create a TheScene instance
- * @memberOf module:@the-/scene
+ * @memberof module:@the-/scene
  * @function create
  * @param {...*} args
  * @returns {TheScene}

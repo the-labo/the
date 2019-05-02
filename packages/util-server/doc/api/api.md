@@ -137,4 +137,3 @@ Wait until file exists
 | --- | --- | --- | --- |
 | condition | <code>function</code> |  |  |
 | [options] | <code>Object</code> | <code>{}</code> | Optional setting |
-

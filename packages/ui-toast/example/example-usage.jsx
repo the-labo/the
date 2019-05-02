@@ -8,28 +8,33 @@ class ExampleComponent extends React.PureComponent {
     super(props)
     this.state = {
       messages: {
-        normal: ['This is normal', 'This is normal 2'],
+        error: ['This is error', 'This is error 2'],
         info: ['This is info', 'This is info 2'],
+        normal: ['This is normal', 'This is normal 2'],
         warn: ['This is warn', 'This is warn 2'],
-        error: ['This is error', 'This is error 2']
-      }
+      },
     }
   }
 
   render() {
     const { messages } = this.state
-    const onUpdate = (values) => this.setState({
-      messages: Object.assign({}, this.state.messages, values)
-    })
+    const onUpdate = (values) =>
+      this.setState({
+        messages: Object.assign({}, this.state.messages, values),
+      })
     return (
       <React.StrictMode>
         <div>
           <TheToastStyle />
           <TheToastGroup>
-            <TheToast.Normal onUpdate={onUpdate} messages={messages.normal} />
-            <TheToast.Info onUpdate={onUpdate} messages={messages.info} clearAfter={1200} />
-            <TheToast.Warn onUpdate={onUpdate} messages={messages.warn} />
-            <TheToast.Error onUpdate={onUpdate} messages={messages.error} />
+            <TheToast.Normal messages={messages.normal} onUpdate={onUpdate} />
+            <TheToast.Info
+              clearAfter={1200}
+              messages={messages.info}
+              onUpdate={onUpdate}
+            />
+            <TheToast.Warn messages={messages.warn} onUpdate={onUpdate} />
+            <TheToast.Error messages={messages.error} onUpdate={onUpdate} />
           </TheToastGroup>
         </div>
       </React.StrictMode>

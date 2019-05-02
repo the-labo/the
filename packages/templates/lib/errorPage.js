@@ -1,6 +1,6 @@
 /**
  * Error page
- * @memberOf module:@the-/templates
+ * @memberof module:@the-/templates
  * @function errorPage
  * @param {Object} config
  * @returns {Object}

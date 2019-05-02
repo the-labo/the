@@ -41,4 +41,4 @@ Footer of the-components
 ## TheFooterStyle()
 Style for TheFooter
 
-**Kind**: global function  
+**Kind**: global function

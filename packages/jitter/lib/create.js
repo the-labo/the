@@ -1,6 +1,6 @@
 /**
  * Create a TheJitter instance
- * @memberOf module:@the-/jitter
+ * @memberof module:@the-/jitter
  * @function create
  * @param {...*} args
  * @returns {TheJitter}

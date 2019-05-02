@@ -1,6 +1,6 @@
 /**
  * Create a TheMetrics instance
- * @memberOf module:@the-/metrics
+ * @memberof module:@the-/metrics
  * @function create
  * @param {...*} args
  * @returns {TheMetrics}

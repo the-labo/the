@@ -1,6 +1,6 @@
 /**
  * Create a TheAssert instance
- * @memberOf module:@the-/assert
+ * @memberof module:@the-/assert
  * @function create
  * @param {...*} args
  * @returns {module:@the-/assert.TheAssert}

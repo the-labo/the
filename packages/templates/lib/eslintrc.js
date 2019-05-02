@@ -1,6 +1,6 @@
 /**
  * Define bud for eslintrc
- * @memberOf module:@the-/templates
+ * @memberof module:@the-/templates
  * @function eslintrc
  * @param {Object} config
  * @returns {Object}

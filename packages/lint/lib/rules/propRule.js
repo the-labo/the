@@ -1,6 +1,6 @@
 /**
  * Create "propRule" lint
- * @memberOf module:@the-/lint.rules
+ * @memberof module:@the-/lint.rules
  * @function propRule
  * @param {Object} config - Lint config
  * @returns {function} Lint function

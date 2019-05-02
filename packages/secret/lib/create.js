@@ -1,6 +1,6 @@
 /**
  * Create a TheSecret instance
- * @memberOf module:@the-/secret
+ * @memberof module:@the-/secret
  * @function create
  * @param {...*} args
  * @returns {module:@the-/secret.TheSecret}

@@ -1,6 +1,6 @@
 /**
  * Install files
- * @memberOf module:@the-/assets.helpers
+ * @memberof module:@the-/assets.helpers
  * @param {string} srcDir - Source directory path
  * @param {string} destDir - Destination directory path
  * @param {Object} [options = {}] - Optional settings

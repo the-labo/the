@@ -1,6 +1,6 @@
 /**
  * Parse source code
- * @memberOf module:@the-/ast
+ * @memberof module:@the-/ast
  * @function parse
  * @param {string} src
  * @param {Object} [options={}]

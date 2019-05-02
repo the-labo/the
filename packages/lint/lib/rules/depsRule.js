@@ -1,6 +1,6 @@
 /**
  * Create "depsRule" lint
- * @memberOf module:@the-/lint.rules
+ * @memberof module:@the-/lint.rules
  * @function depsRule
  * @param {Object} config - Lint config
  * @returns {function} Lint function

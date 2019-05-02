@@ -1,6 +1,6 @@
 /**
  * Mixin to keep
- * @memberOf module:@the-/server.mixins
+ * @memberof module:@the-/server.mixins
  * @function keepMix
  * @param {function} Class
  * @returns {function} Class
@@ -10,7 +10,7 @@
 /** @lends module:@the-/server.mixins.keepMix */
 function keepMix(Class) {
   /**
-   * module:@the-/server.mixins.keepMix
+   * module:@the-/server.mixins.keepmix
    * @inner
    */
   class KeepMixed extends Class {

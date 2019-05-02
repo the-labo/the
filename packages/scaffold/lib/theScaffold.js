@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/scaffold
+ * @memberof module:@the-/scaffold
  * @function theScaffold
  * @param {string} type - Scaffold type
  * @param {string} dest - Destination directory path

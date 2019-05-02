@@ -1,6 +1,6 @@
 /**
  * Resource to manage schema
- * @memberOf module:@the-/db
+ * @memberof module:@the-/db
  * @class TheSchemaResource
  */
 'use strict'

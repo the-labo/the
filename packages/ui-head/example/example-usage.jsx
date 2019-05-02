@@ -1,15 +1,14 @@
 'use strict'
 
 import React from 'react'
-import TheHtml from '@the-/ui-html'
 import TheHead from '@the-/ui-head'
+import TheHtml from '@the-/ui-html'
 
 class ExampleComponent extends React.PureComponent {
-  render () {
+  render() {
     return (
       <TheHtml>
-        <TheHead id='my-component'
-        />
+        <TheHead id='my-component' />
       </TheHtml>
     )
   }

@@ -1,8 +1,8 @@
 /**
- * @memberOf module:@the-/db
+ * @memberof module:@the-/db
  * @function cascadeMix
  * @param {function} Class
- * @return {function} Mixed Class
+ * @returns {function} Mixed Class
  */
 'use strict'
 
@@ -11,7 +11,7 @@ const debug = require('debug')('the:db:cascade')
 /** @lends module:@the-/db.cascadeMix */
 function cascadeMix(Class) {
   /**
-   * @memberOf module:@the-/db.cascadeMix
+   * @memberof module:@the-/db.cascadeMix
    * @class CascadeMixed
    * @inner
    */

@@ -1,6 +1,6 @@
 /**
  * Callback proxy
- * @memberOf module:@the-/server.helpers
+ * @memberof module:@the-/server.helpers
  * @function callbacksProxy
  * @returns {Proxy} Proxy instance
  */

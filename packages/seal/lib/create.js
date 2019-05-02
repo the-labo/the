@@ -1,6 +1,6 @@
 /**
  * Create a TheSeal instance
- * @memberOf module:@the-/seal
+ * @memberof module:@the-/seal
  * @function create
  * @param {...*} args
  * @returns {TheSeal}

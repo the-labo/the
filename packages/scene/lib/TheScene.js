@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/scene
+ * @memberof module:@the-/scene
  * @class TheScene
  */
 'use strict'

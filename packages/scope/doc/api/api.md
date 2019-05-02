@@ -418,5 +418,4 @@ Reset to values
 
 | Param | Type |
 | --- | --- |
-| values | <code>Object</code> | 
-
+| values | <code>Object</code> |

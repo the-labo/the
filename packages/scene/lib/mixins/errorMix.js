@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/scene.mixins
+ * @memberof module:@the-/scene.mixins
  * @function errorMix
  * @param {function} BaseClass
  * @returns {function} MixedClass
@@ -9,7 +9,7 @@
 /** @lends module:@the-/scene.mixins.errorMix */
 function errorMix(BaseClass) {
   /**
-   * @memberOf module:@the-/scene.mixins.goMix
+   * @memberof module:@the-/scene.mixins.goMix
    * @inner
    */
   class ErrorMixed extends BaseClass {

@@ -1,6 +1,6 @@
 /**
  * Create a TheServer instance
- * @memberOf module:@the-/server
+ * @memberof module:@the-/server
  * @function create
  * @param {...*} args
  * @returns {TheServer}

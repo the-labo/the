@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/mail.sending
+ * @memberof module:@the-/mail.sending
  * @function sendSendgrid
  */
 'use strict'

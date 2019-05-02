@@ -1,6 +1,6 @@
 /**
  * Create a TheLint instance
- * @memberOf module:@the-/lint
+ * @memberof module:@the-/lint
  * @function create
  * @param {...*} args
  * @returns {TheLint}

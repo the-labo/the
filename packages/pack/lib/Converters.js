@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/pack
+ * @memberof module:@the-/pack
  * @namespace Converters
  */
 'use strict'

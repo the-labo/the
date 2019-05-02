@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/server.constants
+ * @memberof module:@the-/server.constants
  * @namespace DefaultValues
  */
 'use strict'

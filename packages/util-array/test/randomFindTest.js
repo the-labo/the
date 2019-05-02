@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { ok } = require('assert')
+const { ok } = require('assert').strict
 const randomFind = require('../lib/randomFind')
 
 describe('random-find', () => {

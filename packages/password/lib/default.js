@@ -1,5 +1,5 @@
 /**
- * Alias of {@memberOf module:@the-/password
+ * Alias of {@memberof module:@the-/password
  * @function default
  * @link module:@the-/password}
  */

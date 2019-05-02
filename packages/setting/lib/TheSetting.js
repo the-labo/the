@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/setting
+ * @memberof module:@the-/setting
  * @class TheSetting
  * @augments module:@the-/setting.TheSettingBase
  * @augments module:@the-/setting.mixins.lockMix~LockMixed
@@ -19,7 +19,7 @@ const { numberIfPossible } = require('./helpers')
 const m = require('./mixins')
 
 /**
- * @memberOf module:@the-/setting
+ * @memberof module:@the-/setting
  * @protected
  * @class TheSettingBase
  */

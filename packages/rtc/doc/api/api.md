@@ -249,5 +249,4 @@ Mixin for http
 
 | Param | Type |
 | --- | --- |
-| Class | <code>function</code> | 
-
+| Class | <code>function</code> |

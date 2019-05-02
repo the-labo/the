@@ -1,6 +1,6 @@
 /**
  * Create a TheMail instance
- * @memberOf module:@the-/mail
+ * @memberof module:@the-/mail
  * @function create
  * @param {...*} args
  * @returns {TheMail}

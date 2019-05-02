@@ -5,34 +5,36 @@ import { TheQr, TheQrStyle } from '@the-/ui-qr'
 import { TheSpinStyle } from '@the-/ui-spin'
 
 class ExampleComponent extends React.PureComponent {
-  render () {
+  render() {
     return (
       <div>
-        <TheSpinStyle/>
-        <TheQrStyle/>
-        <TheQr text={null}></TheQr>
+        <TheSpinStyle />
+        <TheQrStyle />
+        <TheQr text={null} />
 
-        <TheQr text={'Some URL'}
-               onError={ (err) => console.error('Failed with error:', err)}
-               onGenerate={ (url) => console.log('Image generated:', url)}
-        ></TheQr>
+        <TheQr
+          onError={(err) => console.error('Failed with error:', err)}
+          onGenerate={(url) => console.log('Image generated:', url)}
+          text={'Some URL'}
+        />
 
-        <br/>
+        <br />
 
-        <TheQr text={'Some URL as Link'}
-               onError={ (err) => console.error('Failed with error:', err)}
-               onGenerate={ (url) => console.log('Image generated:', url)}
-               asLink
-        ></TheQr>
+        <TheQr
+          asLink
+          onError={(err) => console.error('Failed with error:', err)}
+          onGenerate={(url) => console.log('Image generated:', url)}
+          text={'Some URL as Link'}
+        />
 
-        <TheQr text={'With display size'}
-               displaySize={24}
-               onError={ (err) => console.error('Failed with error:', err)}
-               onGenerate={ (url) => console.log('Image generated:', url)}
-               asLink
-        ></TheQr>
+        <TheQr
+          asLink
+          displaySize={24}
+          onError={(err) => console.error('Failed with error:', err)}
+          onGenerate={(url) => console.log('Image generated:', url)}
+          text={'With display size'}
+        />
       </div>
-
     )
   }
 }

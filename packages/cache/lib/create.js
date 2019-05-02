@@ -1,6 +1,6 @@
 /**
  * Create a TheCache instance
- * @memberOf module:@the-/cache
+ * @memberof module:@the-/cache
  * @function create
  * @param {...*} args
  * @returns {module:@the-/cache.TheCache}

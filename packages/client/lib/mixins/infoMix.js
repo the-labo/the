@@ -12,7 +12,7 @@ const INFO_KEY = 'the.info'
 /** @lends module:@the-/client.mixins.infoMix */
 function infoMix(Class) {
   /**
-   * @memberOf module:@the-/client.mixins.infoMix
+   * @memberof module:@the-/client.mixins.infoMix
    * @inner
    */
   class InfoMixed extends Class {

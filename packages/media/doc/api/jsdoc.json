@@ -11,9 +11,9 @@
       "path": "/Users/okuni/Projects/the/packages/media/lib"
     },
     "name": "@the-/media",
-    "order": 2,
+    "order": 1,
     "typicalname": "media",
-    "version": "15.4.1"
+    "version": "15.4.2"
   },
   {
     "id": "module:@the-/media.TheMedia()",
@@ -21,7 +21,7 @@
     "longname": "module:@the-/media.TheMedia",
     "memberof": "module:@the-/media.TheMedia",
     "name": "TheMedia",
-    "order": 4,
+    "order": 3,
     "params": [
       {
         "type": {
@@ -59,20 +59,6 @@
     ]
   },
   {
-    "description": "Alias of {@link module:@the-/media.create}",
-    "id": "default",
-    "kind": "function",
-    "longname": "default",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/media/lib"
-    },
-    "name": "default",
-    "order": 1,
-    "scope": "global"
-  },
-  {
     "description": "Create audio media recorder with AudioContext",
     "id": "module:@the-/media.TheMedia#createAudioRecorder",
     "kind": "function",
@@ -84,12 +70,12 @@
       "path": "/Users/okuni/Projects/the/packages/media/lib"
     },
     "name": "createAudioRecorder",
-    "order": 5,
+    "order": 4,
     "params": [
       {
         "type": {
           "names": [
-            "AudioContext"
+            "window.AudioContext"
           ]
         },
         "name": "audioContext"
@@ -109,7 +95,7 @@
       {
         "type": {
           "names": [
-            "MediaRecorder"
+            "window.MediaRecorder"
           ]
         }
       }
@@ -128,7 +114,7 @@
       "path": "/Users/okuni/Projects/the/packages/media/lib"
     },
     "name": "getStreamTracks",
-    "order": 6,
+    "order": 5,
     "params": [
       {
         "type": {
@@ -143,7 +129,7 @@
       {
         "type": {
           "names": [
-            "Array.<MediaStreamTrack>"
+            "Array.<window.MediaStreamTrack>"
           ]
         }
       }
@@ -162,7 +148,7 @@
       "path": "/Users/okuni/Projects/the/packages/media/lib"
     },
     "name": "toggleEnabled",
-    "order": 7,
+    "order": 6,
     "params": [
       {
         "type": {
@@ -196,12 +182,12 @@
       "path": "/Users/okuni/Projects/the/packages/media/lib"
     },
     "name": "bindVideo",
-    "order": 8,
+    "order": 7,
     "params": [
       {
         "type": {
           "names": [
-            "HTMLVideoElement"
+            "window.HTMLVideoElement"
           ]
         },
         "name": "video"
@@ -222,7 +208,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -242,13 +228,13 @@
       "path": "/Users/okuni/Projects/the/packages/media/lib"
     },
     "name": "start",
-    "order": 9,
+    "order": 8,
     "params": [],
     "returns": [
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -268,13 +254,13 @@
       "path": "/Users/okuni/Projects/the/packages/media/lib"
     },
     "name": "stop",
-    "order": 10,
+    "order": 9,
     "params": [],
     "returns": [
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -294,7 +280,7 @@
       "path": "/Users/okuni/Projects/the/packages/media/lib"
     },
     "name": "takePhoto",
-    "order": 11,
+    "order": 10,
     "params": [
       {
         "type": {
@@ -312,7 +298,7 @@
       {
         "type": {
           "names": [
-            "Promise.<Blob>"
+            "Promise.<window.Blob>"
           ]
         },
         "description": "Blob"
@@ -331,7 +317,7 @@
       "path": "/Users/okuni/Projects/the/packages/media/lib"
     },
     "name": "TheMedia",
-    "order": 3,
+    "order": 2,
     "scope": "static"
   },
   {

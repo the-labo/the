@@ -45,4 +45,3 @@ Scaffold for the-projects
 | [options.straight] | <code>boolean</code> | <code>false</code> | No asking. |
 | [options.force] | <code>boolean</code> | <code>false</code> | Force to generate scaffold. |
 | [options.silent] | <code>boolean</code> | <code>false</code> | Disable logs. |
-

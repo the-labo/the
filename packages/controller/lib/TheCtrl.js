@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/controller
+ * @memberof module:@the-/controller
  * @class TheCtrl
  */
 'use strict'

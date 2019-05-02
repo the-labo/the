@@ -5,7 +5,7 @@
 'use strict'
 
 const aport = require('aport')
-const { ok } = require('assert')
+const { ok } = require('assert').strict
 const TheRun = require('../lib/TheRun')
 
 describe('the-run', () => {

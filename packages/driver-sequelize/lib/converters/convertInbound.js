@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/driver-sequelize.converters
+ * @memberof module:@the-/driver-sequelize.converters
  * @function convertInbound
  */
 'use strict'

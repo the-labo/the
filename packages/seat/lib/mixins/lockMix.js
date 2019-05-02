@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/seat.mixins
+ * @memberof module:@the-/seat.mixins
  * @function lockMix
  */
 'use strict'

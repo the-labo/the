@@ -1,6 +1,6 @@
 /**
  * Create "contentRule" lint
- * @memberOf module:@the-/lint.rules
+ * @memberof module:@the-/lint.rules
  * @function contentRule
  * @param {Object} config - Lint config
  * @param {string|RegExp} config.startsWith - Ends with

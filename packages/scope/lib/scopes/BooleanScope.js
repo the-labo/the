@@ -1,6 +1,6 @@
 /**
  * Scope to hold boolean
- * @memberOf module:@the-/scope.scopes
+ * @memberof module:@the-/scope.scopes
  * @class BooleanScope
  * @augments module:@the-/scope.scopes.Scope
  */

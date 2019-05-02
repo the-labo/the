@@ -1,6 +1,6 @@
 /**
  * Date manipulator
- * @memberOf module:@the-/date
+ * @memberof module:@the-/date
  * @class TheDate
  * @augments module:@the-/date.mixins.addMix~AddMixed
  * @augments module:@the-/date.mixins.endOfMix~EndOfMixed
@@ -27,7 +27,7 @@ const {
 const now = () => new Date()
 
 /**
- * @memberOf module:@the-/date
+ * @memberof module:@the-/date
  * @protected
  * @class TheDateBase
  */

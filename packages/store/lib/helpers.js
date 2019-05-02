@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/store
+ * @memberof module:@the-/store
  * @namespace helpers
  */
 'use strict'

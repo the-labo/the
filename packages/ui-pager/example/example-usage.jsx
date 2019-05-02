@@ -4,36 +4,37 @@ import React from 'react'
 import { ThePager, ThePagerStyle } from '@the-/ui-pager'
 
 class ExampleComponent extends React.PureComponent {
-  constructor (props) {
+  constructor(props) {
     super(props)
     const s = this
-    s.state = {page: 2}
+    s.state = { page: 2 }
   }
 
-  render () {
+  render() {
     const s = this
-    let {state} = s
+    let { state } = s
     return (
       <div>
-        <ThePagerStyle/>
+        <ThePagerStyle />
         <ThePager.Row>
-          <ThePager total={8}
-                    page={state.page}
-                    size={3}
-                    onChange={(e) => s.setState({page: e.page})}>
-          </ThePager>
-          <ThePager.Counts counts={{limit: 25, offset: 25, total: 52}}/>
+          <ThePager
+            onChange={(e) => s.setState({ page: e.page })}
+            page={state.page}
+            size={3}
+            total={8}
+          />
+          <ThePager.Counts counts={{ limit: 25, offset: 25, total: 52 }} />
         </ThePager.Row>
 
-        <hr/>
+        <hr />
 
-        <ThePager total={15}
-                  page={state.page}
-                  size={5}
-                  hrefPattern='?page=:page'>
-        </ThePager>
+        <ThePager
+          hrefPattern='?page=:page'
+          page={state.page}
+          size={5}
+          total={15}
+        />
       </div>
-
     )
   }
 }

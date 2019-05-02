@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { deepStrictEqual: deepEqual } = require('assert')
+const { deepStrictEqual: deepEqual } = require('assert').strict
 const valuesFromEntity = require('../lib/valuesFromEntity')
 
 describe('values-from-entity', () => {

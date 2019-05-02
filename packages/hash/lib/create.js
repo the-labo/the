@@ -1,6 +1,6 @@
 /**
  * Create a TheHash instance
- * @memberOf module:@the-/hash
+ * @memberof module:@the-/hash
  * @function create
  * @param {...*} args
  * @returns {TheHash}

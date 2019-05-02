@@ -1,6 +1,6 @@
 /**
  * Scope to hold object
- * @memberOf module:@the-/scope.scopes
+ * @memberof module:@the-/scope.scopes
  * @class ObjectScope
  * @augments module:@the-/scope.scopes.Scope
  */

@@ -1,6 +1,6 @@
 /**
  * Analyze node
- * @memberOf module:@the-/ast
+ * @memberof module:@the-/ast
  * @namespace analyzer
  */
 'use strict'

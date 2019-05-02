@@ -1,6 +1,6 @@
 /**
  * Create a TheResource instance
- * @memberOf module:@the-/resource
+ * @memberof module:@the-/resource
  * @function create
  * @param {...*} args
  * @returns {TheResource}

@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/hash
+ * @memberof module:@the-/hash
  * @class TheHash
  * @param {Object} props
  */

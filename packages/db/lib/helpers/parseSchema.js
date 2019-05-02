@@ -1,6 +1,6 @@
 /**
  * Parse schema
- * @memberOf module:@the-/db.helpers
+ * @memberof module:@the-/db.helpers
  * @function parseSchema
  * @param {Object} Schema
  * @param {Object} [options={}]

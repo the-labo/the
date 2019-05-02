@@ -1,5 +1,5 @@
 /**
- * Alias of {@memberOf module:@the-/server
+ * Alias of {@memberof module:@the-/server
  * @function default
  * @link module:@the-/server.create}
  */

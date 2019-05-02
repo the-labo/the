@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/client.mixins
+ * @memberof module:@the-/client.mixins
  * @function streamMix
  * @param {function}
  * @returns {function}

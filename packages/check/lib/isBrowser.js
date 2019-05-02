@@ -1,6 +1,6 @@
 /**
  * Detect if browser side
- * @memberOf module:@the-/check
+ * @memberof module:@the-/check
  * @function isBrowser
  * @returns {Boolean}
  */

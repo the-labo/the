@@ -1,17 +1,15 @@
 'use strict'
 
 import React from 'react'
-import { TheRouter } from '@the-/ui-router'
 import { TheRoute } from '@the-/ui-route'
+import { TheRouter } from '@the-/ui-router'
 
 class ExampleComponent extends React.Component {
-  render () {
+  render() {
     return (
       <TheRouter>
         <TheRoute path='/foo'>
-          <div>
-            hoge
-          </div>
+          <div>hoge</div>
         </TheRoute>
       </TheRouter>
     )

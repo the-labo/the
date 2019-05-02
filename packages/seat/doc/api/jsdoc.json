@@ -1,28 +1,33 @@
 [
   {
-    "id": "module:@the-/seat",
-    "longname": "module:@the-/seat",
-    "name": "@the-/seat",
-    "kind": "module",
     "description": "Shared value manager",
-    "version": "15.4.1",
+    "id": "module:@the-/seat",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "seat",
+    "longname": "module:@the-/seat",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/seat/lib"
     },
-    "order": 3
+    "name": "@the-/seat",
+    "order": 3,
+    "typicalname": "seat",
+    "version": "15.4.1"
   },
   {
-    "id": "module:@the-/seat.TheSeat#acquire",
-    "longname": "module:@the-/seat.TheSeat#acquire",
-    "name": "acquire",
-    "kind": "function",
-    "scope": "instance",
     "description": "Acquire value with",
+    "id": "module:@the-/seat.TheSeat#acquire",
+    "kind": "function",
+    "longname": "module:@the-/seat.TheSeat#acquire",
     "memberof": "module:@the-/seat.TheSeat",
+    "meta": {
+      "filename": "TheSeat.js",
+      "lineno": 50,
+      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+    },
+    "name": "acquire",
+    "order": 5,
     "params": [
       {
         "type": {
@@ -43,21 +48,21 @@
         "name": "next"
       }
     ],
-    "meta": {
-      "lineno": 50,
-      "filename": "TheSeat.js",
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
-    },
-    "order": 5
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/seat.TheSeat#acquireNumber",
-    "longname": "module:@the-/seat.TheSeat#acquireNumber",
-    "name": "acquireNumber",
-    "kind": "function",
-    "scope": "instance",
     "description": "Acquire number value for key",
+    "id": "module:@the-/seat.TheSeat#acquireNumber",
+    "kind": "function",
+    "longname": "module:@the-/seat.TheSeat#acquireNumber",
     "memberof": "module:@the-/seat.TheSeat",
+    "meta": {
+      "filename": "TheSeat.js",
+      "lineno": 70,
+      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+    },
+    "name": "acquireNumber",
+    "order": 6,
     "params": [
       {
         "type": {
@@ -111,21 +116,21 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 70,
-      "filename": "TheSeat.js",
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
-    },
-    "order": 6
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/seat.TheSeat#acquireString",
-    "longname": "module:@the-/seat.TheSeat#acquireString",
-    "name": "acquireString",
-    "kind": "function",
-    "scope": "instance",
     "description": "Acquire string value for key",
+    "id": "module:@the-/seat.TheSeat#acquireString",
+    "kind": "function",
+    "longname": "module:@the-/seat.TheSeat#acquireString",
     "memberof": "module:@the-/seat.TheSeat",
+    "meta": {
+      "filename": "TheSeat.js",
+      "lineno": 85,
+      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+    },
+    "name": "acquireString",
+    "order": 7,
     "params": [
       {
         "type": {
@@ -188,21 +193,21 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 85,
-      "filename": "TheSeat.js",
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
-    },
-    "order": 7
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/seat.TheSeat#bind",
-    "longname": "module:@the-/seat.TheSeat#bind",
-    "name": "bind",
-    "kind": "function",
-    "scope": "instance",
     "description": "Bind accessors to key",
+    "id": "module:@the-/seat.TheSeat#bind",
+    "kind": "function",
+    "longname": "module:@the-/seat.TheSeat#bind",
     "memberof": "module:@the-/seat.TheSeat",
+    "meta": {
+      "filename": "TheSeat.js",
+      "lineno": 98,
+      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+    },
+    "name": "bind",
+    "order": 8,
     "params": [
       {
         "type": {
@@ -224,21 +229,21 @@
         "description": "- Bound object"
       }
     ],
-    "meta": {
-      "lineno": 98,
-      "filename": "TheSeat.js",
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
-    },
-    "order": 8
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/seat.TheSeat#canTake",
-    "longname": "module:@the-/seat.TheSeat#canTake",
-    "name": "canTake",
-    "kind": "function",
-    "scope": "instance",
     "description": "Check if it can taken by key",
+    "id": "module:@the-/seat.TheSeat#canTake",
+    "kind": "function",
+    "longname": "module:@the-/seat.TheSeat#canTake",
     "memberof": "module:@the-/seat.TheSeat",
+    "meta": {
+      "filename": "TheSeat.js",
+      "lineno": 123,
+      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+    },
+    "name": "canTake",
+    "order": 9,
     "params": [
       {
         "type": {
@@ -267,21 +272,21 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 123,
-      "filename": "TheSeat.js",
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
-    },
-    "order": 9
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/seat.TheSeat#get",
-    "longname": "module:@the-/seat.TheSeat#get",
-    "name": "get",
-    "kind": "function",
-    "scope": "instance",
     "description": "Get value for key",
+    "id": "module:@the-/seat.TheSeat#get",
+    "kind": "function",
+    "longname": "module:@the-/seat.TheSeat#get",
     "memberof": "module:@the-/seat.TheSeat",
+    "meta": {
+      "filename": "TheSeat.js",
+      "lineno": 159,
+      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+    },
+    "name": "get",
+    "order": 10,
     "params": [
       {
         "type": {
@@ -302,21 +307,21 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 159,
-      "filename": "TheSeat.js",
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
-    },
-    "order": 10
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/seat.TheSeat#release",
-    "longname": "module:@the-/seat.TheSeat#release",
-    "name": "release",
-    "kind": "function",
-    "scope": "instance",
     "description": "Release value for key",
+    "id": "module:@the-/seat.TheSeat#release",
+    "kind": "function",
+    "longname": "module:@the-/seat.TheSeat#release",
     "memberof": "module:@the-/seat.TheSeat",
+    "meta": {
+      "filename": "TheSeat.js",
+      "lineno": 184,
+      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+    },
+    "name": "release",
+    "order": 11,
     "params": [
       {
         "type": {
@@ -328,21 +333,21 @@
         "name": "key"
       }
     ],
-    "meta": {
-      "lineno": 184,
-      "filename": "TheSeat.js",
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
-    },
-    "order": 11
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/seat.TheSeat#scope",
-    "longname": "module:@the-/seat.TheSeat#scope",
-    "name": "scope",
-    "kind": "function",
-    "scope": "instance",
     "description": "Get scoped seat",
+    "id": "module:@the-/seat.TheSeat#scope",
+    "kind": "function",
+    "longname": "module:@the-/seat.TheSeat#scope",
     "memberof": "module:@the-/seat.TheSeat",
+    "meta": {
+      "filename": "TheSeat.js",
+      "lineno": 196,
+      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+    },
+    "name": "scope",
+    "order": 12,
     "params": [
       {
         "type": {
@@ -363,21 +368,21 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 196,
-      "filename": "TheSeat.js",
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
-    },
-    "order": 12
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/seat.TheSeat#take",
-    "longname": "module:@the-/seat.TheSeat#take",
-    "name": "take",
-    "kind": "function",
-    "scope": "instance",
     "description": "Take value",
+    "id": "module:@the-/seat.TheSeat#take",
+    "kind": "function",
+    "longname": "module:@the-/seat.TheSeat#take",
     "memberof": "module:@the-/seat.TheSeat",
+    "meta": {
+      "filename": "TheSeat.js",
+      "lineno": 223,
+      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+    },
+    "name": "take",
+    "order": 13,
     "params": [
       {
         "type": {
@@ -406,65 +411,65 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 223,
-      "filename": "TheSeat.js",
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
-    },
-    "order": 13
+    "scope": "instance"
   },
   {
     "id": "module:@the-/seat.TheSeat",
-    "longname": "module:@the-/seat.TheSeat",
-    "name": "TheSeat",
     "kind": "class",
-    "scope": "static",
+    "longname": "module:@the-/seat.TheSeat",
     "memberof": "module:@the-/seat",
     "meta": {
-      "lineno": 1,
       "filename": "TheSeat.js",
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
-    },
-    "order": 4
-  },
-  {
-    "id": "module:@the-/seat.helpers",
-    "longname": "module:@the-/seat.helpers",
-    "name": "helpers",
-    "kind": "namespace",
-    "scope": "static",
-    "description": "Helper utility",
-    "memberof": "module:@the-/seat",
-    "meta": {
       "lineno": 1,
-      "filename": "helpers.js",
       "path": "/Users/okuni/Projects/the/packages/seat/lib"
     },
-    "order": 2
+    "name": "TheSeat",
+    "order": 4,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/seat.mixins",
-    "longname": "module:@the-/seat.mixins",
-    "name": "mixins",
+    "description": "Helper utility",
+    "id": "module:@the-/seat.helpers",
     "kind": "namespace",
-    "scope": "static",
-    "description": "Mixin functions",
+    "longname": "module:@the-/seat.helpers",
     "memberof": "module:@the-/seat",
     "meta": {
-      "lineno": 2,
+      "filename": "helpers.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+    },
+    "name": "helpers",
+    "order": 2,
+    "scope": "static"
+  },
+  {
+    "description": "Mixin functions",
+    "id": "module:@the-/seat.mixins",
+    "kind": "namespace",
+    "longname": "module:@the-/seat.mixins",
+    "memberof": "module:@the-/seat",
+    "meta": {
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/seat/lib/mixins"
     },
-    "order": 14
+    "name": "mixins",
+    "order": 14,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/seat.create",
-    "longname": "module:@the-/seat.create",
-    "name": "create",
-    "kind": "function",
-    "scope": "static",
     "description": "Create a TheSeat instance",
+    "id": "module:@the-/seat.create",
+    "kind": "function",
+    "longname": "module:@the-/seat.create",
     "memberof": "module:@the-/seat",
+    "meta": {
+      "filename": "create.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+    },
+    "name": "create",
+    "order": 0,
     "params": [
       {
         "type": {
@@ -485,54 +490,49 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "create.js",
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
-    },
-    "order": 0
+    "scope": "static"
   },
   {
-    "id": "module:@the-/seat.default",
-    "longname": "module:@the-/seat.default",
-    "name": "default",
-    "kind": "function",
-    "scope": "static",
     "description": "Alias of {@link module:@the-/seat.create}",
+    "id": "module:@the-/seat.default",
+    "kind": "function",
+    "longname": "module:@the-/seat.default",
     "memberof": "module:@the-/seat",
     "meta": {
-      "lineno": 1,
       "filename": "default.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/seat/lib"
     },
-    "order": 1
+    "name": "default",
+    "order": 1,
+    "scope": "static"
   },
   {
     "id": "module:@the-/seat.mixins.lockMix",
-    "longname": "module:@the-/seat.mixins.lockMix",
-    "name": "lockMix",
     "kind": "function",
-    "scope": "static",
+    "longname": "module:@the-/seat.mixins.lockMix",
     "memberof": "module:@the-/seat.mixins",
     "meta": {
-      "lineno": 1,
       "filename": "lockMix.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/seat/lib/mixins"
     },
-    "order": 15
+    "name": "lockMix",
+    "order": 15,
+    "scope": "static"
   },
   {
     "id": "module:@the-/seat.scopeMix",
-    "longname": "module:@the-/seat.scopeMix",
-    "name": "scopeMix",
     "kind": "function",
-    "scope": "static",
+    "longname": "module:@the-/seat.scopeMix",
     "memberof": "module:@the-/seat",
     "meta": {
-      "lineno": 1,
       "filename": "scopeMix.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/seat/lib/mixins"
     },
-    "order": 16
+    "name": "scopeMix",
+    "order": 16,
+    "scope": "static"
   }
 ]

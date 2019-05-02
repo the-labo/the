@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/db.setup
+ * @memberof module:@the-/db.setup
  * @function setupPostgres
  */
 'use strict'

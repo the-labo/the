@@ -1,6 +1,6 @@
 /**
  * Resource of data history
- * @memberOf module:@the-/db
+ * @memberof module:@the-/db
  * @class TheLogResource
  */
 'use strict'

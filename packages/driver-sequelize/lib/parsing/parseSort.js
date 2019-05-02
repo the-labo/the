@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/driver-sequelize.parsing
+ * @memberof module:@the-/driver-sequelize.parsing
  * @function parseSort
  */
 'use strict'

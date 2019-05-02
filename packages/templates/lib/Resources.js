@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/templates
+ * @memberof module:@the-/templates
  * @function Resources
  */
 'use strict'

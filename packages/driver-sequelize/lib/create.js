@@ -1,6 +1,6 @@
 /**
  * Create a TheDriverSequelize instance
- * @memberOf @the-/driver-sequelize
+ * @memberof @the-/driver-sequelize
  * @function create
  * @param {...*} args
  * @returns {TheDriverSequelize}
