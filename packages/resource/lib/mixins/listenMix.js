@@ -37,15 +37,13 @@ function listenMix(Class) {
       const { resourceName } = this
       for (const [event, handler] of Object.entries(handlers)) {
         const handlerWrap = async function eventListenerWrap(...args) {
-          try {
-            return await handler(...args)
-          } catch (e) {
+          return new Promise(handler(...args)).catch((e) => {
             console.error(
               `[the-resource][${resourceName}] Error on listener`,
               e,
             )
             throw e
-          }
+          })
         }
         this.increaseListenerMax(1)
         this.addListener(event, handlerWrap)

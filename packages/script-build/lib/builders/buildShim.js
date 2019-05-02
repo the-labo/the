@@ -18,11 +18,9 @@ module.exports = async function buildShim(
   })
 
   // Copy json files
-  {
-    for (const filename of await aglob('**/*.json', { cwd: srcDir })) {
-      const src = path.resolve(srcDir, filename)
-      const dest = path.resolve(destDir, filename)
-      await filecopy(src, dest, { mkdirp: true })
-    }
+  for (const filename of await aglob('**/*.json', { cwd: srcDir })) {
+    const src = path.resolve(srcDir, filename)
+    const dest = path.resolve(destDir, filename)
+    await filecopy(src, dest, { mkdirp: true })
   }
 }

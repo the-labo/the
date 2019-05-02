@@ -5,7 +5,7 @@
 ## @the-/code
 Code formatter of the-frameworks
 
-**Version**: 15.4.8  
+**Version**: 15.4.9  
 **License**: MIT  
 
 * [@the-/code](#module_@the-/code)
@@ -410,4 +410,4 @@ Create a TheCode instance
 ### code.contentAccess()
 Define content access methods
 
-**Kind**: static method of [<code>@the-/code</code>](#module_@the-/code)
+**Kind**: static method of [<code>@the-/code</code>](#module_@the-/code)  

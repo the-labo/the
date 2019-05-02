@@ -38,12 +38,10 @@ module.exports = async function buildESM(
     await buildShim(tmpDir, destDir, { jsPattern, plugins, presets })
 
     // Copy json files
-    {
-      for (const filename of await aglob('**/*.json', { cwd: srcDir })) {
-        const src = path.resolve(srcDir, filename)
-        const dest = path.resolve(destDir, filename)
-        await filecopy(src, dest, { mkdirp: true })
-      }
+    for (const filename of await aglob('**/*.json', { cwd: srcDir })) {
+      const src = path.resolve(srcDir, filename)
+      const dest = path.resolve(destDir, filename)
+      await filecopy(src, dest, { mkdirp: true })
     }
   })
 

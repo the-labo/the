@@ -13,6 +13,7 @@ describe('add-query', () => {
   after(() => {})
 
   it('Do test', () => {
+    equal(addUrlQuery('/hoge?a=1', { b: 2 }), '/hoge?a=1&b=2')
     equal(
       addUrlQuery('http://hoge.com/hoge?x=1', { a: 'a1' }),
       'http://hoge.com/hoge?x=1&a=a1',

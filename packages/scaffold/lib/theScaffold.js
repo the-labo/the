@@ -12,9 +12,9 @@
 'use strict'
 
 const argx = require('argx')
+const { statAsync } = require('asfs')
 const askconfig = require('askconfig')
 const filemode = require('filemode')
-const fs = require('fs')
 const gitconfig = require('gitconfig')
 const path = require('path')
 const injection = require('./data')
@@ -36,9 +36,7 @@ async function theScaffold(type, dest, options = {}) {
     throw new Error('dest is required.')
   }
 
-  const exists = await new Promise((resolve) =>
-    fs.exists(dest, (exists) => resolve(exists)),
-  )
+  const exists = Boolean(await statAsync(dest).catch(() => false))
   const skip = exists && !options.force
   if (skip) {
     throw new Error(`${dest} is already exists. Use -f option to force.`)

@@ -26,25 +26,22 @@ function processJSBlock(content, options = {}) {
     ].filter(Boolean)
 
     for (const Container of BlockStatementsContainers) {
-      const BlockStatements = (Container.body || [])
-        .filter((Node) => Node.type === 'BlockStatement')
-        .filter(
-          (Node) =>
-            Node.body.length === 1 &&
-            Node.body[0].type === 'ExpressionStatement',
-        )
+      const BlockStatements = (Container.body || []).filter(
+        (Node) => Node.type === 'BlockStatement',
+      )
       for (const Block of BlockStatements) {
-        const [Expression] = Block.body
-        const declarations = finder.findByTypes(Block, [
-          NodeTypes.VariableDeclaration,
-          NodeTypes.ClassDeclaration,
-          NodeTypes.FunctionDeclaration,
-        ])
+        const declarations = Block.body.filter((Node) =>
+          [
+            NodeTypes.VariableDeclaration,
+            NodeTypes.ClassDeclaration,
+            NodeTypes.FunctionDeclaration,
+          ].includes(Node.type),
+        )
         const redundant = declarations.length === 0
         if (redundant) {
           return replace(
             [Block.start, Block.end],
-            get([Expression.start, Expression.end]),
+            get([Block.body[0].start, Block.body[Block.body.length - 1].end]),
           )
         }
       }

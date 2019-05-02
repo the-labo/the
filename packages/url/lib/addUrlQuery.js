@@ -9,18 +9,16 @@
 'use strict'
 
 const qs = require('qs')
-const { format, parse } = require('url')
 
 /** @lends addUrlQuery */
 function addUrlQuery(urlString, query = {}) {
-  const parsed = parse(urlString)
-  const { host, pathname, protocol, query: queryString } = parsed
-  return format({
-    host,
-    pathname,
-    protocol,
-    search: qs.stringify({ ...qs.parse(queryString), ...query }),
-  })
+  const isRelative = urlString.match(/^\//)
+  const url = isRelative
+    ? new URL(urlString, 'relative:///')
+    : new URL(urlString)
+  const queryString = url.search.replace(/^\?/, '')
+  url.search = qs.stringify({ ...qs.parse(queryString), ...query })
+  return isRelative ? [url.pathname, url.search].join('') : url.href
 }
 
 module.exports = addUrlQuery

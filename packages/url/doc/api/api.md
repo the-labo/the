@@ -5,7 +5,7 @@
 ## @the-/url
 URL utility for the-framework
 
-**Version**: 15.4.0  
+**Version**: 15.4.1  
 **License**: MIT  
 
 * [@the-/url](#module_@the-/url)

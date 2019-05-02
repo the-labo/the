@@ -8,13 +8,16 @@
  */
 'use strict'
 
-const { format, parse } = require('url')
 const { unlessProduction } = require('@the-/check')
 const PARAM_PREFIX = /^:/
 
 /** @lends formatUrl */
 function formatUrl(urlString, params = {}) {
-  const { host, pathname, protocol, search } = parse(urlString)
+  const isRelative = urlString.match(/^\//)
+  const url = isRelative
+    ? new URL(urlString, 'relative:///')
+    : new URL(urlString)
+  const { pathname, search } = url
   const paramsKeys = Object.keys(params)
   const replaced = {}
   const injectParams = (componnet) => {
@@ -35,23 +38,19 @@ function formatUrl(urlString, params = {}) {
     }
     return componnet
   }
-  const formatted = format({
-    host,
-    pathname: pathname
-      .split(/\//g)
-      .map(injectParams)
-      .join('/'),
-    protocol,
-    search:
-      search &&
-      search
-        .split('&')
-        .map((keyValue) => {
-          const [key, value] = keyValue.split('=')
-          return [key, value].map(injectParams).join('=')
-        })
-        .join('&'),
-  })
+  url.pathname = pathname
+    .split(/\//g)
+    .map(injectParams)
+    .join('/')
+  url.search =
+    search &&
+    search
+      .split('&')
+      .map((keyValue) => {
+        const [key, value] = keyValue.split('=')
+        return [key, value].map(injectParams).join('=')
+      })
+      .join('&')
 
   unlessProduction(() => {
     for (const name of paramsKeys) {
@@ -63,7 +62,7 @@ function formatUrl(urlString, params = {}) {
     }
   })
 
-  return formatted
+  return isRelative ? [url.pathname, url.search].join('') : url.href
 }
 
 module.exports = formatUrl

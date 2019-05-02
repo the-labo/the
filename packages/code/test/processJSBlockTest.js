@@ -28,14 +28,37 @@ const a = () => {console.log('a')}
 }`),
       `
 const a = () => {console.log('a')}
-{
-  console.log('hoge')
+console.log('hoge')
   console.log(a())
   {
     const b = 1
     console.log(b)
+  }`,
+    )
+  })
+
+  it('remove redundant func body block', async () => {
+    equal(
+      await processJSBlock(`
+async function hoge(){
+  { const a = 1; console.log(a) }
+  { console.log('b') }
+  {
+    for(const c of [1,2,3]) {
+      console.log('c', c)
+    }
   }
-}`,
+}
+  `),
+      `
+async function hoge(){
+  { const a = 1; console.log(a) }
+  console.log('b')
+  for(const c of [1,2,3]) {
+      console.log('c', c)
+    }
+}
+  `,
     )
   })
 })

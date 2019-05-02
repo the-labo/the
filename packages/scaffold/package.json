@@ -11,6 +11,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "asfs": "^2.2.3",
     "askconfig": "^4.0.2",
     "asobj": "^3.0.1",
     "commander": "^2.20.0",
@@ -47,5 +48,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && ./misc/tmplify.js",
     "test": "../../misc/scripts/pkgTest.js"
   },
-  "version": "15.4.1"
+  "version": "15.4.2"
 }

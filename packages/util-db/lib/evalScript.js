@@ -1,3 +1,4 @@
+/* eslint-disable no-new-func */
 /**
  * Eval script
  * @memberof module:@the-/util-db
