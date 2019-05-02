@@ -11,6 +11,7 @@ module.exports = {
       case '.mjs':
         return 'module'
       default:
+        break
     }
   },
   typeOf(filename) {

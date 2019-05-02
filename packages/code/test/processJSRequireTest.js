@@ -109,18 +109,18 @@ const x = require('x')
     )
   })
 
-  //   it('Blocked content', async () => {
-  //     console.log(
-  //       await processJSRequire(`
-  // // Inject global variables
-  //   const globalInjection = require('./globalInjection')
-  //   Object.assign(global, globalInjection())
-  //
-  // const theServer = require('@the-/server').default
-  //
-  //       `)
-  //     )
-  //   })
+    it('Upgrade assert', async () => {
+      equal(
+        await processJSRequire(`
+const { equal } = require('assert').strict
+const { deepEqual } = require('assert')
+const { strictEqual, throws } = require('assert')
+        `),`
+const { equal } = require('assert').strict
+const { deepEqual } = require('assert').strict
+const { strictEqual, throws } = require('assert')
+        `)
+    })
 })
 
 /* global describe, before, after, it */

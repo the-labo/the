@@ -5,14 +5,14 @@
 ## @the-/code
 Code formatter of the-frameworks
 
-**Version**: 15.4.6  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/code](#module_@the-/code)
     * [.TheCode](#module_@the-/code.TheCode)
         * [new TheCode([config])](#new_module_@the-/code.TheCode_new)
         * [.format(pattern, [options])](#module_@the-/code.TheCode+format) ⇒ <code>Promise.&lt;Array&gt;</code>
-        * [.formatFile(filename)](#module_@the-/code.TheCode+formatFile) ⇒ <code>Promise.&lt;void&gt;</code>
+        * [.formatFile(filename)](#module_@the-/code.TheCode+formatFile) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.FormatCache](#module_@the-/code.FormatCache)
     * [.astHelper](#module_@the-/code.astHelper) : <code>object</code>
         * ~~[.isAssignmentPattern()](#module_@the-/code.astHelper.isAssignmentPattern)~~
@@ -27,6 +27,7 @@ Code formatter of the-frameworks
         * [.processCSSProp(content)](#module_@the-/code.processors.processCSSProp) ⇒ <code>Promise.&lt;string&gt;</code>
         * [.processCSSRule(content)](#module_@the-/code.processors.processCSSRule) ⇒ <code>Promise.&lt;string&gt;</code>
         * [.processFileEnd(content)](#module_@the-/code.processors.processFileEnd) ⇒ <code>string</code>
+        * [.processJSBlock(content)](#module_@the-/code.processors.processJSBlock) ⇒ <code>string</code>
         * [.processClass(content)](#module_@the-/code.processors.processClass) ⇒ <code>string</code>
         * [.processComment(content)](#module_@the-/code.processors.processComment) ⇒ <code>string</code>
         * [.processJSDoc(content, [options])](#module_@the-/code.processors.processJSDoc)
@@ -55,7 +56,7 @@ Code formatter of the-frameworks
 * [.TheCode](#module_@the-/code.TheCode)
     * [new TheCode([config])](#new_module_@the-/code.TheCode_new)
     * [.format(pattern, [options])](#module_@the-/code.TheCode+format) ⇒ <code>Promise.&lt;Array&gt;</code>
-    * [.formatFile(filename)](#module_@the-/code.TheCode+formatFile) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.formatFile(filename)](#module_@the-/code.TheCode+formatFile) ⇒ <code>Promise.&lt;undefined&gt;</code>
 
 <a name="new_module_@the-/code.TheCode_new"></a>
 
@@ -79,7 +80,7 @@ Format files
 
 <a name="module_@the-/code.TheCode+formatFile"></a>
 
-#### theCode.formatFile(filename) ⇒ <code>Promise.&lt;void&gt;</code>
+#### theCode.formatFile(filename) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Format a single file
 
 **Kind**: instance method of [<code>TheCode</code>](#module_@the-/code.TheCode)  
@@ -167,6 +168,7 @@ Processor functions
     * [.processCSSProp(content)](#module_@the-/code.processors.processCSSProp) ⇒ <code>Promise.&lt;string&gt;</code>
     * [.processCSSRule(content)](#module_@the-/code.processors.processCSSRule) ⇒ <code>Promise.&lt;string&gt;</code>
     * [.processFileEnd(content)](#module_@the-/code.processors.processFileEnd) ⇒ <code>string</code>
+    * [.processJSBlock(content)](#module_@the-/code.processors.processJSBlock) ⇒ <code>string</code>
     * [.processClass(content)](#module_@the-/code.processors.processClass) ⇒ <code>string</code>
     * [.processComment(content)](#module_@the-/code.processors.processComment) ⇒ <code>string</code>
     * [.processJSDoc(content, [options])](#module_@the-/code.processors.processJSDoc)
@@ -206,6 +208,16 @@ Processor functions
 <a name="module_@the-/code.processors.processFileEnd"></a>
 
 #### processors.processFileEnd(content) ⇒ <code>string</code>
+**Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
+**Returns**: <code>string</code> - processed  
+
+| Param | Type |
+| --- | --- |
+| content | <code>string</code> | 
+
+<a name="module_@the-/code.processors.processJSBlock"></a>
+
+#### processors.processJSBlock(content) ⇒ <code>string</code>
 **Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
 **Returns**: <code>string</code> - processed  
 

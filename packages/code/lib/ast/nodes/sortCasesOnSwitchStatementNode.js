@@ -11,7 +11,7 @@ function sortCasesOnSwitchStatementNode(SwitchStatement, { swap }) {
   const Cases = [...SwitchStatement.cases]
 
   const CasesWithBlock = Cases.filter(
-    (Case) => Case.consequent.length > 0,
+    (Case) => Case.consequent && Case.consequent.length > 0,
   ).sort((a, b) => a.start - b.start)
   const CasesWithoutBlock = Cases.filter((Case) => Case.consequent.length === 0)
 

@@ -1,5 +1,6 @@
 /**
  * @memberof module:@the-/code.ast.nodes
+ * @function cleanupExtOnImportDeclarationNode
  */
 'use strict'
 

@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@the-/ast": "^15.4.2",
-    "@the-/util-file": "^15.4.2",
+    "@the-/util-file": "^15.4.3",
     "@the-/util-path": "^15.4.1",
     "aglob": "^3.0.2",
     "asfs": "^2.2.3",
@@ -53,5 +53,5 @@
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
   },
-  "version": "15.4.7"
+  "version": "15.4.8"
 }

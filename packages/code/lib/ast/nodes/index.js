@@ -24,6 +24,7 @@ const findCJSExportsAssignmentsExpressionOnProgramNode_ = require('./findCJSExpo
 const findJSDocAnnotationsInCommendNode_ = require('./findJSDocAnnotationsInCommendNode')
 const findRequireDeclarationOnProgramNode_ = require('./findRequireDeclarationOnProgramNode')
 const mergeDuplicateImportOnProgramNode_ = require('./mergeDuplicateImportOnProgramNode')
+const modifyNodeDeprecatedOnRequireDeclaration_ = require('./modifyNodeDeprecatedOnRequireDeclaration')
 const normalizeJSDocSynonymsOnCommentNode_ = require('./normalizeJSDocSynonymsOnCommentNode')
 const normalizeSrcPathOnImportDeclarationNode_ = require('./normalizeSrcPathOnImportDeclarationNode')
 const normalizeSrcPathOnRequireArgumentNode_ = require('./normalizeSrcPathOnRequireArgumentNode')
@@ -52,6 +53,7 @@ exports.findCJSExportsAssignmentsExpressionOnProgramNode = findCJSExportsAssignm
 exports.findJSDocAnnotationsInCommendNode = findJSDocAnnotationsInCommendNode_
 exports.findRequireDeclarationOnProgramNode = findRequireDeclarationOnProgramNode_
 exports.mergeDuplicateImportOnProgramNode = mergeDuplicateImportOnProgramNode_
+exports.modifyNodeDeprecatedOnRequireDeclaration = modifyNodeDeprecatedOnRequireDeclaration_
 exports.normalizeJSDocSynonymsOnCommentNode = normalizeJSDocSynonymsOnCommentNode_
 exports.normalizeSrcPathOnImportDeclarationNode = normalizeSrcPathOnImportDeclarationNode_
 exports.normalizeSrcPathOnRequireArgumentNode = normalizeSrcPathOnRequireArgumentNode_
@@ -80,6 +82,7 @@ module.exports = {
   findJSDocAnnotationsInCommendNode: findJSDocAnnotationsInCommendNode_,
   findRequireDeclarationOnProgramNode: findRequireDeclarationOnProgramNode_,
   mergeDuplicateImportOnProgramNode: mergeDuplicateImportOnProgramNode_,
+  modifyNodeDeprecatedOnRequireDeclaration: modifyNodeDeprecatedOnRequireDeclaration_,
   normalizeJSDocSynonymsOnCommentNode: normalizeJSDocSynonymsOnCommentNode_,
   normalizeSrcPathOnImportDeclarationNode: normalizeSrcPathOnImportDeclarationNode_,
   normalizeSrcPathOnRequireArgumentNode: normalizeSrcPathOnRequireArgumentNode_,

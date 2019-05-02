@@ -18,7 +18,7 @@ const contentAccess = require('../helpers/contentAccess')
 function processJSBlock(content, options = {}) {
   return applyConverter(content, (content) => {
     const parsed = parse(content, options)
-    const { replace,get } = contentAccess(content)
+    const { get, replace } = contentAccess(content)
 
     const BlockStatementsContainers = [
       parsed.program,
@@ -26,11 +26,13 @@ function processJSBlock(content, options = {}) {
     ].filter(Boolean)
 
     for (const Container of BlockStatementsContainers) {
-      const BlockStatements = (Container.body || []).filter(
-        (Node) => Node.type === 'BlockStatement'
-      ).filter(
-        (Node) => Node.body.length === 1 && Node.body[0].type === 'ExpressionStatement'
-      )
+      const BlockStatements = (Container.body || [])
+        .filter((Node) => Node.type === 'BlockStatement')
+        .filter(
+          (Node) =>
+            Node.body.length === 1 &&
+            Node.body[0].type === 'ExpressionStatement',
+        )
       for (const Block of BlockStatements) {
         const [Expression] = Block.body
         const declarations = finder.findByTypes(Block, [
@@ -40,10 +42,10 @@ function processJSBlock(content, options = {}) {
         ])
         const redundant = declarations.length === 0
         if (redundant) {
-
-          return replace([Block.start, Block.end],
-            get([Expression.start, Expression.end])
-            )
+          return replace(
+            [Block.start, Block.end],
+            get([Expression.start, Expression.end]),
+          )
         }
       }
     }

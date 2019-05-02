@@ -1,6 +1,6 @@
 /**
  * Build project
- * @memberOf module:@the-/script-build
+ * @memberof module:@the-/script-build
  * @function build
  * @param {string} [dirname=process.cwd()] - Project directory name
  * @param {Object} [options={}] - Optional settings

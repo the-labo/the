@@ -15,6 +15,7 @@ const {
 } = require('@the-/ast')
 const {
   cleanupExtOnRequireDeclarationArgumentNode,
+  modifyNodeDeprecatedOnRequireDeclaration,
   normalizeSrcPathOnRequireArgumentNode,
 } = require('../ast/nodes')
 const findRequireDeclarationOnProgramNode = require('../ast/nodes/findRequireDeclarationOnProgramNode')
@@ -45,13 +46,26 @@ function processJSRequire(content, options = {}) {
 
   return applyConverter(content, (content) => {
     const parsed = parse(content, options)
-    const { rangeOf, replace, swap } = contentAccess(content)
+    const { get, rangeOf, replace, swap } = contentAccess(content)
 
     const RequireDeclarations = findRequireDeclarationOnProgramNode(
       parsed.program,
     ).filter((Declaration) => {
       return Declaration.loc.start.column === 0 // Only top level
     })
+
+    for (const RequireDeclaration of RequireDeclarations) {
+      const converted = modifyNodeDeprecatedOnRequireDeclaration(
+        RequireDeclaration,
+        {
+          get,
+          replace,
+        },
+      )
+      if (converted) {
+        return converted
+      }
+    }
 
     const sortedByStart = [...RequireDeclarations].sort(
       (a, b) => a.start - b.start,

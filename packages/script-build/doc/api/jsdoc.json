@@ -5,21 +5,22 @@
     "name": "@the-/script-build",
     "kind": "module",
     "description": "Build script for the-projects",
-    "version": "15.4.1",
+    "version": "15.4.2",
     "meta": {
-      "lineno": 1,
+      "lineno": 2,
       "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/script-build/lib"
     },
     "order": 1
   },
   {
-    "id": "build",
-    "longname": "build",
+    "id": "module:@the-/script-build.build",
+    "longname": "module:@the-/script-build.build",
     "name": "build",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Build project",
+    "memberof": "module:@the-/script-build",
     "params": [
       {
         "type": {
