@@ -1,5 +1,6 @@
 /**
  * withFilter mixin
+ * @memberOf module:@the-/mixin-scene
  * @function withFilter
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
@@ -10,7 +11,7 @@ const { cleanup } = require('asobj')
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends withFilter */
+/** @lends module:@the-/mixin-scene.withFilter */
 const withFilter = asClassMixin((Class) => {
   injectProperties(Class, {
     /**

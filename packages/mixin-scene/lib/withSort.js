@@ -1,5 +1,6 @@
 /**
  * withSort mixin
+ * @memberOf module:@the-/mixin-scene
  * @function withSort
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
@@ -18,7 +19,7 @@ const normalizeSort = (key) => {
   return key.replace(/^-/, '') || ''
 }
 
-/** @lends withSort */
+/** @lends module:@the-/mixin-scene.withSort */
 const withSort = asClassMixin((Class) => {
   injectProperties(Class, {
     getSort() {

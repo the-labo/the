@@ -1,5 +1,6 @@
 /**
  * withLocation mixin
+ * @memberOf module:@the-/mixin-scene
  * @function withLocation
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
@@ -11,7 +12,7 @@ const { get } = require('bwindow')
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends withLocation */
+/** @lends module:@the-/mixin-scene.withLocation */
 const withLocation = asClassMixin((Class) => {
   injectProperties(Class, {
     /**
@@ -49,7 +50,7 @@ const withLocation = asClassMixin((Class) => {
     },
     /**
      * Set location hash
-     * @param hash
+     * @param {string} hash - Location hash to set
      */
     setLocationHash(hash) {
       const { location } = this

@@ -1,5 +1,6 @@
 /**
  * withValues mixin
+ * @memberOf module:@the-/mixin-scene
  * @function withValues
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
@@ -9,7 +10,7 @@
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends withValues */
+/** @lends module:@the-/mixin-scene.withValues */
 const withValues = asClassMixin((Class) => {
   injectProperties(Class, {
     dropValues() {

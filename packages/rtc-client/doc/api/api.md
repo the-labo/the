@@ -6,13 +6,13 @@
 <dt><a href="#module_@the-/rtc-client">@the-/rtc-client</a></dt>
 <dd><p>Client for the-rtc</p>
 </dd>
-<dt><a href="#module_ChannelNames">ChannelNames</a></dt>
+<dt><a href="#module_@the-/rtc.constants.module_ChannelNames">ChannelNames</a></dt>
 <dd><p>ChannelNames</p>
 </dd>
-<dt><a href="#module_IOEvents">IOEvents</a></dt>
+<dt><a href="#module_@the-/rtc.constants.module_IOEvents">IOEvents</a></dt>
 <dd><p>IOEvents</p>
 </dd>
-<dt><a href="#module_PeerEvents">PeerEvents</a></dt>
+<dt><a href="#module_@the-/rtc.constants.module_PeerEvents">PeerEvents</a></dt>
 <dd><p>PeerEvents</p>
 </dd>
 <dt><a href="#module_PeerPurposes">PeerPurposes</a></dt>
@@ -22,26 +22,8 @@
 ## Functions
 
 <dl>
-<dt><a href="#assertMix">assertMix(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>Mixin for assert</p>
-</dd>
-<dt><a href="#channelMix">channelMix(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>Mixin for channel</p>
-</dd>
-<dt><a href="#mediaMix">mediaMix(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>Mixin for media</p>
-</dd>
-<dt><a href="#peerMix">peerMix(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>Mixin for peer</p>
-</dd>
-<dt><a href="#promiseMix">promiseMix(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>Mixin for promise</p>
-</dd>
-<dt><a href="#serializeMix">serializeMix(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>Mixin for serialize</p>
-</dd>
-<dt><a href="#socketMix">socketMix(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>Mixin for socket</p>
+<dt><a href="#default">default()</a></dt>
+<dd><p>Alias of {@memberOf module:@the-/rtc-client</p>
 </dd>
 </dl>
 
@@ -50,21 +32,20 @@
 ## @the-/rtc-client
 Client for the-rtc
 
-**Version**: 15.4.2  
+**Version**: 15.4.4  
 **License**: MIT  
 
 * [@the-/rtc-client](#module_@the-/rtc-client)
     * [.TheRTCClient](#module_@the-/rtc-client.TheRTCClient)
-        * [.audioEnabled](#module_@the-/rtc-client.TheRTCClient+audioEnabled) ⇒ <code>Boolean</code>
+        * [.audioEnabled](#module_@the-/rtc-client.TheRTCClient+audioEnabled) ⇒ <code>boolean</code>
         * [.info](#module_@the-/rtc-client.TheRTCClient+info) ⇒ <code>Object</code>
         * [.rid](#module_@the-/rtc-client.TheRTCClient+rid) ⇒ <code>string</code>
         * [.state](#module_@the-/rtc-client.TheRTCClient+state) ⇒ <code>Object</code>
-        * [.videoEnabled](#module_@the-/rtc-client.TheRTCClient+videoEnabled) ⇒ <code>Boolean</code>
-        * [.connect(url, [options])](#module_@the-/rtc-client.TheRTCClient+connect) ⇒ <code>Promise.&lt;void&gt;</code>
-        * [.disconnect()](#module_@the-/rtc-client.TheRTCClient+disconnect) ⇒ <code>Promise.&lt;void&gt;</code>
-        * [.publish(topic, payload, options)](#module_@the-/rtc-client.TheRTCClient+publish) ⇒ <code>Promise.&lt;void&gt;</code>
+        * [.videoEnabled](#module_@the-/rtc-client.TheRTCClient+videoEnabled) ⇒ <code>boolean</code>
+        * [.connect(url, [options])](#module_@the-/rtc-client.TheRTCClient+connect) ⇒ <code>Promise.&lt;undefined&gt;</code>
+        * [.disconnect()](#module_@the-/rtc-client.TheRTCClient+disconnect) ⇒ <code>Promise.&lt;undefined&gt;</code>
+        * [.publish(topic, payload, options)](#module_@the-/rtc-client.TheRTCClient+publish) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.create(...args)](#module_@the-/rtc-client.create) ⇒ <code>TheRTCClient</code>
-    * [.default()](#module_@the-/rtc-client.default)
 
 <a name="module_@the-/rtc-client.TheRTCClient"></a>
 
@@ -72,18 +53,18 @@ Client for the-rtc
 **Kind**: static class of [<code>@the-/rtc-client</code>](#module_@the-/rtc-client)  
 
 * [.TheRTCClient](#module_@the-/rtc-client.TheRTCClient)
-    * [.audioEnabled](#module_@the-/rtc-client.TheRTCClient+audioEnabled) ⇒ <code>Boolean</code>
+    * [.audioEnabled](#module_@the-/rtc-client.TheRTCClient+audioEnabled) ⇒ <code>boolean</code>
     * [.info](#module_@the-/rtc-client.TheRTCClient+info) ⇒ <code>Object</code>
     * [.rid](#module_@the-/rtc-client.TheRTCClient+rid) ⇒ <code>string</code>
     * [.state](#module_@the-/rtc-client.TheRTCClient+state) ⇒ <code>Object</code>
-    * [.videoEnabled](#module_@the-/rtc-client.TheRTCClient+videoEnabled) ⇒ <code>Boolean</code>
-    * [.connect(url, [options])](#module_@the-/rtc-client.TheRTCClient+connect) ⇒ <code>Promise.&lt;void&gt;</code>
-    * [.disconnect()](#module_@the-/rtc-client.TheRTCClient+disconnect) ⇒ <code>Promise.&lt;void&gt;</code>
-    * [.publish(topic, payload, options)](#module_@the-/rtc-client.TheRTCClient+publish) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.videoEnabled](#module_@the-/rtc-client.TheRTCClient+videoEnabled) ⇒ <code>boolean</code>
+    * [.connect(url, [options])](#module_@the-/rtc-client.TheRTCClient+connect) ⇒ <code>Promise.&lt;undefined&gt;</code>
+    * [.disconnect()](#module_@the-/rtc-client.TheRTCClient+disconnect) ⇒ <code>Promise.&lt;undefined&gt;</code>
+    * [.publish(topic, payload, options)](#module_@the-/rtc-client.TheRTCClient+publish) ⇒ <code>Promise.&lt;undefined&gt;</code>
 
 <a name="module_@the-/rtc-client.TheRTCClient+audioEnabled"></a>
 
-#### theRTCClient.audioEnabled ⇒ <code>Boolean</code>
+#### theRTCClient.audioEnabled ⇒ <code>boolean</code>
 Audio enabled or not
 
 **Kind**: instance property of [<code>TheRTCClient</code>](#module_@the-/rtc-client.TheRTCClient)  
@@ -107,13 +88,13 @@ Status
 **Kind**: instance property of [<code>TheRTCClient</code>](#module_@the-/rtc-client.TheRTCClient)  
 <a name="module_@the-/rtc-client.TheRTCClient+videoEnabled"></a>
 
-#### theRTCClient.videoEnabled ⇒ <code>Boolean</code>
+#### theRTCClient.videoEnabled ⇒ <code>boolean</code>
 Video enabled
 
 **Kind**: instance property of [<code>TheRTCClient</code>](#module_@the-/rtc-client.TheRTCClient)  
 <a name="module_@the-/rtc-client.TheRTCClient+connect"></a>
 
-#### theRTCClient.connect(url, [options]) ⇒ <code>Promise.&lt;void&gt;</code>
+#### theRTCClient.connect(url, [options]) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Connect to server
 
 **Kind**: instance method of [<code>TheRTCClient</code>](#module_@the-/rtc-client.TheRTCClient)  
@@ -125,13 +106,13 @@ Connect to server
 
 <a name="module_@the-/rtc-client.TheRTCClient+disconnect"></a>
 
-#### theRTCClient.disconnect() ⇒ <code>Promise.&lt;void&gt;</code>
+#### theRTCClient.disconnect() ⇒ <code>Promise.&lt;undefined&gt;</code>
 Disconnect from signaling server
 
 **Kind**: instance method of [<code>TheRTCClient</code>](#module_@the-/rtc-client.TheRTCClient)  
 <a name="module_@the-/rtc-client.TheRTCClient+publish"></a>
 
-#### theRTCClient.publish(topic, payload, options) ⇒ <code>Promise.&lt;void&gt;</code>
+#### theRTCClient.publish(topic, payload, options) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Publish topic via pub-sub channel
 
 **Kind**: instance method of [<code>TheRTCClient</code>](#module_@the-/rtc-client.TheRTCClient)  
@@ -153,23 +134,17 @@ Create a TheRTCClient instance
 | --- | --- |
 | ...args | <code>\*</code> | 
 
-<a name="module_@the-/rtc-client.default"></a>
-
-### rtcClient.default()
-Alias of [create](#module_@the-/rtc-client.create)
-
-**Kind**: static method of [<code>@the-/rtc-client</code>](#module_@the-/rtc-client)  
-<a name="module_ChannelNames"></a>
+<a name="module_@the-/rtc.constants.module_ChannelNames"></a>
 
 ## ChannelNames
 ChannelNames
 
-<a name="module_IOEvents"></a>
+<a name="module_@the-/rtc.constants.module_IOEvents"></a>
 
 ## IOEvents
 IOEvents
 
-<a name="module_PeerEvents"></a>
+<a name="module_@the-/rtc.constants.module_PeerEvents"></a>
 
 ## PeerEvents
 PeerEvents
@@ -177,87 +152,10 @@ PeerEvents
 <a name="module_PeerPurposes"></a>
 
 ## PeerPurposes
-<a name="assertMix"></a>
+<a name="default"></a>
 
-## assertMix(Class) ⇒ <code>function</code>
-Mixin for assert
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-<a name="channelMix"></a>
-
-## channelMix(Class) ⇒ <code>function</code>
-Mixin for channel
+## default()
+Alias of {@memberOf module:@the-/rtc-client
 
 **Kind**: global function  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-<a name="mediaMix"></a>
-
-## mediaMix(Class) ⇒ <code>function</code>
-Mixin for media
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-<a name="peerMix"></a>
-
-## peerMix(Class) ⇒ <code>function</code>
-Mixin for peer
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-<a name="promiseMix"></a>
-
-## promiseMix(Class) ⇒ <code>function</code>
-Mixin for promise
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-<a name="serializeMix"></a>
-
-## serializeMix(Class) ⇒ <code>function</code>
-Mixin for serialize
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-<a name="socketMix"></a>
-
-## socketMix(Class) ⇒ <code>function</code>
-Mixin for socket
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
+**Link**: module:@the-/rtc-client.create}  

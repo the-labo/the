@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal } = require('assert')
+const { equal } = require('assert').strict
 const bindScope = require('../lib/bindScope')
 
 describe('bindScope', () => {

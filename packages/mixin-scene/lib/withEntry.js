@@ -1,5 +1,6 @@
 /**
  * withEntry mixin
+ * @memberOf module:@the-/mixin-scene
  * @function withEntry
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
@@ -10,7 +11,7 @@ const { expand, flatten } = require('objnest')
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends withEntry */
+/** @lends module:@the-/mixin-scene.withEntry */
 const withEntry = asClassMixin((Class) => {
   injectProperties(Class, {
     dropEntry() {

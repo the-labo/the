@@ -1,5 +1,7 @@
 /**
  * Site toast mix
+ * @deprecated
+ * @memberOf module:@the-/mixin-scene
  * @function siteToast
  * @returns {function} Annotated class
  */
@@ -8,7 +10,7 @@
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends siteToast */
+/** @lends module:@the-/mixin-scene.siteToast */
 const siteToast = asClassMixin((Class) => {
   injectProperties(Class, {
     /**

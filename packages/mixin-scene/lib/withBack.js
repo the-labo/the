@@ -1,5 +1,6 @@
 /**
  * withBack mixin
+ * @memberOf module:@the-/mixin-scene
  * @function withBack
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
@@ -9,7 +10,7 @@
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends withBack */
+/** @lends module:@the-/mixin-scene.withBack */
 const withBack = asClassMixin((Class) => {
   injectProperties(Class, {
     /** Go Back */

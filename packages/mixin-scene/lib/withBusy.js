@@ -1,5 +1,6 @@
 /**
  * withBusy mixin
+ * @memberOf module:@the-/mixin-scene
  * @function withBusy
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
@@ -11,7 +12,7 @@ const asClassMixin = require('./helpers/asClassMixin')
 const asMethodWrap = require('./helpers/asMethodWrap')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends withBusy */
+/** @lends module:@the-/mixin-scene.withBusy */
 const withBusy = asClassMixin((Class) => {
   injectProperties(Class, {
     /**

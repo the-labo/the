@@ -1,5 +1,6 @@
 /**
  * withEntities mixin
+ * @memberOf module:@the-/mixin-scene
  * @function withEntities
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
@@ -10,7 +11,7 @@ const { uniqueFilter } = require('@the-/util-array')
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends withEntities */
+/** @lends module:@the-/mixin-scene.withEntities */
 const withEntities = asClassMixin((Class) => {
   injectProperties(Class, {
     /**
@@ -62,7 +63,7 @@ const withEntities = asClassMixin((Class) => {
     },
     /**
      * Receive an entity
-     * @param entity
+     * @param {Object} entity - Entity to set
      * @param {Object} [options={}] - Optional settings
      */
     receiveEntity(entity, options = {}) {

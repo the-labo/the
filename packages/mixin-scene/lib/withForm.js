@@ -1,5 +1,7 @@
 /**
  * withForm mixin
+ * @deprecated
+ * @memberOf module:@the-/mixin-scene
  * @function withForm
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
@@ -10,7 +12,7 @@ const { get } = require('bwindow')
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends withForm */
+/** @lends module:@the-/mixin-scene.withForm */
 const withForm = asClassMixin((Class) => {
   injectProperties(Class, {
     _createFormData(values) {
@@ -27,11 +29,11 @@ const withForm = asClassMixin((Class) => {
     async sendForm(url, values, options = {}) {
       const { method = 'post' } = options
       const body = this._createFormData(values)
-      const response = await fetch(url, {
+      const response = await window.fetch(url, {
         body,
         method,
       })
-      return await response.json()
+      return response.json()
     },
   })
 })

@@ -1,5 +1,6 @@
 /**
  * withReady mixin
+ * @memberOf module:@the-/mixin-scene
  * @function withReady
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
@@ -10,7 +11,7 @@ const asClassMixin = require('./helpers/asClassMixin')
 const asMethodWrap = require('./helpers/asMethodWrap')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends withReady */
+/** @lends module:@the-/mixin-scene.withReady */
 const withReady = asClassMixin((Class) => {
   injectProperties(Class, {
     /**
@@ -39,7 +40,7 @@ const withReady = asClassMixin((Class) => {
      */
     async readyWhen(task) {
       try {
-        return await task()
+        return task()
       } finally {
         this.set({ ready: true })
       }
@@ -51,7 +52,7 @@ const withReady = asClassMixin((Class) => {
      */
     async unlessReady(task) {
       if (!this.isReady) {
-        return await task()
+        return task()
       }
     },
   })

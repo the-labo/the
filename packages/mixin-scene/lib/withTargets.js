@@ -1,5 +1,6 @@
 /**
  * withTargets mixin
+ * @memberOf module:@the-/mixin-scene
  * @function withTargets
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
@@ -10,12 +11,12 @@ const { uniqueFilter } = require('@the-/util-array')
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends withTargets */
+/** @lends module:@the-/mixin-scene.withTargets */
 const withTargets = asClassMixin((Class) => {
   injectProperties(Class, {
     /**
      * Add targets
-     * @param targets
+     * @param {Array} targets
      */
     addTargets(targets) {
       this.set({

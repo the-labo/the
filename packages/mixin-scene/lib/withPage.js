@@ -1,5 +1,6 @@
 /**
  * withPage mixin
+ * @memberOf module:@the-/mixin-scene
  * @function withPage
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
@@ -9,7 +10,7 @@
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends withPage */
+/** @lends module:@the-/mixin-scene.withPage */
 const withPage = asClassMixin((Class) => {
   injectProperties(Class, {
     /**

@@ -1,5 +1,6 @@
 /**
  * withHistory mixin
+ * @memberOf module:@the-/mixin-scene
  * @function withHistory
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
@@ -10,7 +11,7 @@ const qs = require('qs')
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends withHistory */
+/** @lends module:@the-/mixin-scene.withHistory */
 const withHistory = asClassMixin((Class) => {
   injectProperties(Class, {
     /**

@@ -1,12 +1,13 @@
 /**
  * Define method wrapper
+ * @memberOf module:@the-/mixin-scene.helpers
  * @function asMethodWrap
  */
 'use strict'
 
 const invariant = require('invariant')
 
-/** @lends asMethodWrap */
+/** @lends module:@the-/mixin-scene.helpers.asMethodWrap */
 function asMethodWrap(wrapper) {
   return function methodWrap(elementDescriptor) {
     // TODO Remove some day
@@ -15,7 +16,7 @@ function asMethodWrap(wrapper) {
         (k) => !(k in elementDescriptor),
       )
       if (isLegacyDecorator) {
-        const [, key, descriptor] = [...arguments]
+        const [, , descriptor] = [...arguments]
         const { value: original } = descriptor
         return { ...descriptor, value: wrapper(original) }
       }

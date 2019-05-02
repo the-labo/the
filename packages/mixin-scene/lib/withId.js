@@ -1,5 +1,6 @@
 /**
  * withId mixin
+ * @memberOf module:@the-/mixin-scene
  * @function withId
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
@@ -9,7 +10,7 @@
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends withId */
+/** @lends module:@the-/mixin-scene.withId */
 const withId = asClassMixin((Class) => {
   injectProperties(Class, {
     /**

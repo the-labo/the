@@ -1,5 +1,6 @@
 /**
  * withResult mixin
+ * @memberOf module:@the-/mixin-scene
  * @function withResult
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
@@ -10,7 +11,7 @@ const asClassMixin = require('./helpers/asClassMixin')
 const asMethodWrap = require('./helpers/asMethodWrap')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends withResult */
+/** @lends module:@the-/mixin-scene.withResult */
 const withResult = asClassMixin((Class) => {
   injectProperties(Class, {
     /**

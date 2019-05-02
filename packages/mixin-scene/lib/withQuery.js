@@ -1,5 +1,6 @@
 /**
  * withQuery mixin
+ * @memberOf module:@the-/mixin-scene
  * @function withQuery
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
@@ -12,7 +13,7 @@ const qs = require('qs')
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends withQuery */
+/** @lends module:@the-/mixin-scene.withQuery */
 const withQuery = asClassMixin((Class) => {
   injectProperties(Class, {
     /**
@@ -44,19 +45,17 @@ const withQuery = asClassMixin((Class) => {
       const search = '?' + qs.stringify(merged)
 
       const { history } = this
-      {
-        if (history.location.search !== search) {
-          const { hash } = history.location
-          history.replace({
-            hash,
-            search,
-          })
-        }
+      if (history.location.search !== search) {
+        const { hash } = history.location
+        history.replace({
+          hash,
+          search,
+        })
       }
     },
     /**
      * Query with search
-     * @param search - Location search string
+     * @param {string} search - Location search string
      * @returns {Object}
      */
     queryWithSearch(search) {

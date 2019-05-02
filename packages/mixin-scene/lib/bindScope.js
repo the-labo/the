@@ -1,5 +1,6 @@
 /**
  * For bindScope
+ * @memberOf module:@the-/mixin-scene
  * @function bindScope
  * @returns {function} Class annotation function
  */
@@ -9,7 +10,7 @@ const { unlessProduction } = require('@the-/check')
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends bindScope */
+/** @lends module:@the-/mixin-scene.bindScope */
 function bindScope(name) {
   unlessProduction(() => {
     if (!name) {

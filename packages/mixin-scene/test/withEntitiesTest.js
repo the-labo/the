@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal } = require('assert')
+const { equal } = require('assert').strict
 const withEntities = require('../lib/withEntities')
 
 describe('with-entities', () => {

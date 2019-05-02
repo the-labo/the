@@ -1,5 +1,6 @@
 /**
  * withLimit mixin
+ * @memberOf module:@the-/mixin-scene
  * @function withLimit
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
@@ -9,7 +10,7 @@
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends withLimit */
+/** @lends module:@the-/mixin-scene.withLimit */
 const withLimit = asClassMixin((Class) => {
   injectProperties(Class, {
     /**

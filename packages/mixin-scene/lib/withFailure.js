@@ -1,5 +1,6 @@
 /**
  * withFailure mixin
+ * @memberOf module:@the-/mixin-scene
  * @function withFailure
  * @param {function} Class - Class to mix
  * @returns {function} Mixed class
@@ -10,7 +11,7 @@ const asClassMixin = require('./helpers/asClassMixin')
 const asMethodWrap = require('./helpers/asMethodWrap')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends withFailure */
+/** @lends module:@the-/mixin-scene.withFailure */
 const withFailure = asClassMixin((Class) => {
   injectProperties(Class, {
     async catchFailure(e, options = {}) {
