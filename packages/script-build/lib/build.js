@@ -55,13 +55,14 @@ async function build(dirname = process.cwd(), options = {}) {
   ]
   const buildBud = async () => coz.render(budPattern)
   const buildJs = async () => {
-    await theCode().format(['*.*', '.*.bud'])
+    await theCode().format([
+      '*.*',
+      '.*.bud',
+      '+(bin|doc|misc|lib|example|test)/**/*.*',
+      '+(bin|doc|misc|lib|example|test)/**/.*.bud',
+    ])
     const libExists = await existsAsync(libDir)
     if (libExists) {
-      await theCode().format(path.join(libDir, '**/*.*'), {
-        ignore: ['**/index.*'],
-      })
-
       await buildShim(libDir, shimDir, {
         jsPattern,
         plugins,

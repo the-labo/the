@@ -232,5 +232,5 @@ module.exports = Object.freeze(
     TSTypeParameterInstantiation: 'TSTypeParameterInstantiation',
     TSTypeParameterDeclaration: 'TSTypeParameterDeclaration',
     TSTypeParameter: 'TSTypeParameter',
-  }
+  },
 )
