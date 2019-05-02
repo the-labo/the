@@ -6,7 +6,7 @@
 
 const aport = require('aport')
 const asleep = require('asleep')
-const { deepEqual, equal, ok } = require('assert')
+const { deepEqual, equal, ok } = require('assert').strict
 const { TheServer } = require('@the-/server')
 const TheClient = require('../lib/TheClient')
 

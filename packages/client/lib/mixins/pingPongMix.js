@@ -17,9 +17,9 @@ function pingPongMix(Class) {
   class PingPongMixed extends Class {
     /**
      * Send ping to the serve and callback when pong received
-     * @param {Function} callback
-     * @param {Object} [options={}}
-     * @returns {function(): void}
+     * @param {Function} callback - Callback func
+     * @param {Object} [options={}] - Optional setting
+     * @returns {function()}
      */
     pingPongAnd(callback, options = {}) {
       const {

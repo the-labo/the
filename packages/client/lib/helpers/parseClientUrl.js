@@ -9,18 +9,14 @@
 
 const { get } = require('bwindow')
 const { DEFAULT_URL } = require('rfunc-constants')
-const {
-  format: formatUrl,
-  parse: parseUrl,
-  resolve: resolveUrl,
-} = require('url')
+const { format: formatUrl } = require('url')
 
 /** @lends module:@the-/client.helpers.parseClientUrl */
 function parseClientUrl(url) {
   if (typeof url === 'string') {
-    const parsed = parseUrl(url)
-    if (parsed.pathname === '/') {
-      let suggestion = resolveUrl(url, DEFAULT_URL)
+    const {pathname} = new URL(url)
+    if (pathname === '/') {
+      let suggestion = new URL(DEFAULT_URL, url).href
       console.warn(
         `[TheClient] Passed URL "${url}" seems to be wrong. Did you mean "${suggestion}"`,
       )

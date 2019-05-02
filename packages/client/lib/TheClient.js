@@ -17,7 +17,6 @@ const { get } = require('bwindow')
 const qs = require('qs')
 const { RFuncClient } = require('rfunc-client/shim/browser')
 const io = require('socket.io-client')
-const { resolve: resolveUrl } = require('url')
 const uuid = require('uuid')
 const { isBrowser, isProduction, unlessProduction } = require('@the-/check')
 const { ThePack } = require('@the-/pack')
@@ -226,6 +225,7 @@ class TheClient extends TheClientBase {
           )
         }, duration * 2)
       }
+      socket.on(IOEvents.RPC_KEEP, onKeep)
       socket.on(IOEvents.RPC_RETURN, onReturn)
 
       socket.emit(
@@ -245,7 +245,8 @@ class TheClient extends TheClientBase {
   async newSocket() {
     this.assertNotClosed()
     const query = qs.stringify(this.scope)
-    const socket = io(resolveUrl(this.baseUrl, `${NAMESPACE}?${query}`), {
+    const ioURL = new URL(`${NAMESPACE}?${query}`, this.baseUrl).href
+    const socket = io(ioURL, {
       forceNew: this._forceNewSocket,
     })
     socket.on('disconnect', (reason) => {
