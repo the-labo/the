@@ -5,7 +5,7 @@
     "name": "@the-/server",
     "kind": "module",
     "description": "HTTP/RPC Server of the-framework",
-    "version": "15.4.1",
+    "version": "15.4.2",
     "license": "MIT",
     "typicalname": "server",
     "meta": {
@@ -103,6 +103,26 @@
     "order": 50
   },
   {
+    "id": "default",
+    "longname": "default",
+    "name": "default",
+    "kind": "function",
+    "scope": "global",
+    "description": "Alias of {@memberOf module:@the-/server",
+    "customTags": [
+      {
+        "tag": "link",
+        "value": "module:@the-/server.create}"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/server/lib"
+    },
+    "order": 3
+  },
+  {
     "id": "assertMethods",
     "longname": "assertMethods",
     "name": "assertMethods",
@@ -167,8 +187,14 @@
     "memberof": "module:@the-/server.TheServer",
     "params": [
       {
-        "name": "args",
-        "variable": true
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "description": "Close arguments",
+        "name": "args"
       }
     ],
     "returns": [
@@ -181,7 +207,7 @@
       }
     ],
     "meta": {
-      "lineno": 200,
+      "lineno": 201,
       "filename": "TheServer.js",
       "path": "/Users/okuni/Projects/the/packages/server/lib"
     },
@@ -208,7 +234,7 @@
       }
     ],
     "meta": {
-      "lineno": 224,
+      "lineno": 225,
       "filename": "TheServer.js",
       "path": "/Users/okuni/Projects/the/packages/server/lib"
     },
@@ -217,7 +243,7 @@
   },
   {
     "meta": {
-      "lineno": 236,
+      "lineno": 237,
       "filename": "TheServer.js",
       "path": "/Users/okuni/Projects/the/packages/server/lib"
     },
@@ -234,7 +260,7 @@
   },
   {
     "meta": {
-      "lineno": 248,
+      "lineno": 249,
       "filename": "TheServer.js",
       "path": "/Users/okuni/Projects/the/packages/server/lib"
     },
@@ -251,7 +277,7 @@
   },
   {
     "meta": {
-      "lineno": 273,
+      "lineno": 274,
       "filename": "TheServer.js",
       "path": "/Users/okuni/Projects/the/packages/server/lib"
     },
@@ -268,7 +294,7 @@
   },
   {
     "meta": {
-      "lineno": 278,
+      "lineno": 279,
       "filename": "TheServer.js",
       "path": "/Users/okuni/Projects/the/packages/server/lib"
     },
@@ -285,7 +311,7 @@
   },
   {
     "meta": {
-      "lineno": 312,
+      "lineno": 313,
       "filename": "TheServer.js",
       "path": "/Users/okuni/Projects/the/packages/server/lib"
     },
@@ -302,7 +328,7 @@
   },
   {
     "meta": {
-      "lineno": 319,
+      "lineno": 320,
       "filename": "TheServer.js",
       "path": "/Users/okuni/Projects/the/packages/server/lib"
     },
@@ -319,7 +345,7 @@
   },
   {
     "meta": {
-      "lineno": 328,
+      "lineno": 329,
       "filename": "TheServer.js",
       "path": "/Users/okuni/Projects/the/packages/server/lib"
     },
@@ -336,7 +362,7 @@
   },
   {
     "meta": {
-      "lineno": 340,
+      "lineno": 341,
       "filename": "TheServer.js",
       "path": "/Users/okuni/Projects/the/packages/server/lib"
     },
@@ -368,17 +394,13 @@
         },
         "description": "Port to listen",
         "name": "port"
-      },
-      {
-        "optional": true,
-        "name": "callback"
       }
     ],
     "returns": [
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -454,7 +476,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -536,6 +558,12 @@
     "memberof": "module:@the-/server.stores.Store",
     "params": [
       {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Id to del",
         "name": "id"
       }
     ],
@@ -712,7 +740,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -765,6 +793,12 @@
     "memberof": "module:@the-/server.stores.ConnectionStore",
     "params": [
       {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Id to del",
         "name": "id"
       }
     ],
@@ -952,7 +986,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -1199,21 +1233,6 @@
       "path": "/Users/okuni/Projects/the/packages/server/lib"
     },
     "order": 2
-  },
-  {
-    "id": "module:@the-/server.default",
-    "longname": "module:@the-/server.default",
-    "name": "default",
-    "kind": "function",
-    "scope": "static",
-    "description": "Alias of {@link module:@the-/server.create}",
-    "memberof": "module:@the-/server",
-    "meta": {
-      "lineno": 1,
-      "filename": "default.js",
-      "path": "/Users/okuni/Projects/the/packages/server/lib"
-    },
-    "order": 3
   },
   {
     "id": "module:@the-/server.adapters.redisAdapter",

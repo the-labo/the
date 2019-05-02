@@ -1,8 +1,8 @@
 /**
  * HTTP server for the-framework
- * @memberOf module:@the-/server
+ * @memberof module:@the-/server
  * @class TheServer
- * @extends IOMixed
+ * @augments IOMixed
  * @param {Object} config
  * @param {string[]} langs - Supported langs
  * @param {string} logFile - Log file

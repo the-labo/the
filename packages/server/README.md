@@ -93,8 +93,8 @@ const { createElement: c } = React
   // Define real time event handling stream
   class CountdownStream extends Stream {
     async *provide() {
-      let count = this.params.count || 100
-      while (count > 0) {
+      this.count = this.params.count || 100
+      while (this.count > 0) {
         yield { count: this.count }
         this.count--
       }
@@ -109,7 +109,7 @@ const { createElement: c } = React
     },
     /**
      * View renderer
-     * @param children
+     * @param {*} children
      */
     html: ({ children }) => c('html', {}, c('body', {}, children)),
     /**
@@ -153,6 +153,7 @@ const { createElement: c } = React
 - [~IOMixed](./doc/api/api.md#module_@the-/server.mixins.ioMix~IOMixed)
 - [~MetricsMix](./doc/api/api.md#module_@the-/server.mixins.metricsMix~MetricsMix)
 ### function
+- [default()](./doc/api/api.md#default)
 - [assertMethods(Class,reservedNames)](./doc/api/api.md#assertMethods)
 - [IOEvents()](./doc/api/api.md#IOEvents)
 - [#close(args)](./doc/api/api.md#module_@the-/server.TheServer#close)
@@ -165,7 +166,7 @@ const { createElement: c } = React
 - [#handleIOStreamClose()](./doc/api/api.md#module_@the-/server.TheServer#handleIOStreamClose)
 - [#handleIOStreamFin()](./doc/api/api.md#module_@the-/server.TheServer#handleIOStreamFin)
 - [#handleIOStreamOpen()](./doc/api/api.md#module_@the-/server.TheServer#handleIOStreamOpen)
-- [#listen(port,callback)](./doc/api/api.md#module_@the-/server.TheServer#listen)
+- [#listen(port)](./doc/api/api.md#module_@the-/server.TheServer#listen)
 - [#reloadSession(options)](./doc/api/api.md#ControllerModuleBind#reloadSession)
 - [#saveSession(options)](./doc/api/api.md#ControllerModuleBind#saveSession)
 - [#info()](./doc/api/api.md#module_@the-/server.mixins.infoMix~InfoMixed#info)
@@ -186,7 +187,6 @@ const { createElement: c } = React
 - [#set(id,data)](./doc/api/api.md#module_@the-/server.stores.ConnectionStore#set)
 - [.asControllerModule()](./doc/api/api.md#module_@the-/server.asControllerModule)
 - [.create(args)](./doc/api/api.md#module_@the-/server.create)
-- [.default()](./doc/api/api.md#module_@the-/server.default)
 - [.redisAdapter()](./doc/api/api.md#module_@the-/server.adapters.redisAdapter)
 - [.asStrictSession(session)](./doc/api/api.md#module_@the-/server.helpers.asStrictSession)
 - [.callbacksProxy()](./doc/api/api.md#module_@the-/server.helpers.callbacksProxy)

@@ -1,6 +1,6 @@
 /**
  * Mixins for IO
- * @memberOf module:@the-/server.mixins
+ * @memberof module:@the-/server.mixins
  * @function ioMix
  * @param {function} Class
  * @returns {function} Class
@@ -19,7 +19,7 @@ const { decode, encode } = new ThePack({
 /** @lends module:@the-/server.mixins.ioMix */
 function ioMix(Class) {
   /**
-   * @memberOf module:@the-/server.mixins.ioMix
+   * @memberof module:@the-/server.mixins.ioMix
    * @inner
    * @class IOMixed
    */
@@ -205,7 +205,7 @@ function ioMix(Class) {
           )}, retry: ${retry}) and retry in ${sleepMs}ms`,
         )
         await asleep(sleepMs)
-        return await this.sendToIOClient(cid, event, data, {
+        return this.sendToIOClient(cid, event, data, {
           retry: retry - 1,
         })
       } else {

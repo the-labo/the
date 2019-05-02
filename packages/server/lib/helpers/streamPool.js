@@ -1,12 +1,12 @@
 /**
  * Stream pool
- * @memberOf module:@the-/server.helpers
+ * @memberof module:@the-/server.helpers
  * @function streamPool
  */
 'use strict'
 
 /**
- * @memberOf module:@the-/server.helpers
+ * @memberof module:@the-/server.helpers
  * @inner
  * @class StreamPool
  */
@@ -18,7 +18,7 @@ class StreamPool {
 
   cleanup(cid) {
     const instances = this.instances[cid] || {}
-    for (const [sid, instance] of Object.entries(instances)) {
+    for (const [, instance] of Object.entries(instances)) {
       if (!instance.closed) {
         instance.abort()
       }

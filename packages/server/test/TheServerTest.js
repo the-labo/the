@@ -238,15 +238,12 @@ describe('the-server', function() {
       html: () => React.createElement('html', { id: 'hoge' }),
     })
     await server.listen(port)
-
     {
-      {
-        const { body, statusCode } = await arequest(
-          `http://localhost:${port}/the/ping`,
-        )
-        equal(statusCode, 200)
-        equal(body, 'pong')
-      }
+      const { body, statusCode } = await arequest(
+        `http://localhost:${port}/the/ping`,
+      )
+      equal(statusCode, 200)
+      equal(body, 'pong')
     }
 
     {

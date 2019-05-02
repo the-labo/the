@@ -5,7 +5,7 @@
     "name": "@the-/client",
     "kind": "module",
     "description": "Client for the-server",
-    "version": "15.4.1",
+    "version": "15.4.3",
     "license": "MIT",
     "typicalname": "client",
     "meta": {
@@ -72,7 +72,7 @@
       }
     ],
     "meta": {
-      "lineno": 389,
+      "lineno": 390,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
@@ -116,7 +116,7 @@
       }
     ],
     "meta": {
-      "lineno": 181,
+      "lineno": 180,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
@@ -163,7 +163,7 @@
       {
         "type": {
           "names": [
-            "Boolean"
+            "boolean"
           ]
         },
         "optional": true,
@@ -181,7 +181,7 @@
       }
     ],
     "meta": {
-      "lineno": 291,
+      "lineno": 292,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
@@ -220,7 +220,7 @@
       {
         "type": {
           "names": [
-            "Boolean"
+            "boolean"
           ]
         },
         "optional": true,
@@ -238,7 +238,7 @@
       }
     ],
     "meta": {
-      "lineno": 308,
+      "lineno": 309,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
@@ -276,7 +276,7 @@
       }
     ],
     "meta": {
-      "lineno": 356,
+      "lineno": 357,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
@@ -335,6 +335,7 @@
             "function"
           ]
         },
+        "description": "Callback func",
         "name": "callback"
       },
       {
@@ -343,7 +344,9 @@
             "Object"
           ]
         },
-        "defaultvalue": "{}}",
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional setting",
         "name": "options"
       }
     ],
@@ -419,6 +422,7 @@
             "function"
           ]
         },
+        "description": "Callback func",
         "name": "callback"
       },
       {
@@ -427,7 +431,9 @@
             "Object"
           ]
         },
-        "defaultvalue": "{}}",
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional setting",
         "name": "options"
       }
     ],
@@ -476,7 +482,7 @@
     "memberof": "module:@the-/client",
     "access": "protected",
     "meta": {
-      "lineno": 35,
+      "lineno": 34,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },
@@ -506,7 +512,7 @@
     "description": "Events for IO",
     "memberof": "module:@the-/client.constants",
     "meta": {
-      "lineno": 1,
+      "lineno": 2,
       "filename": "IOEvents.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib/constants"
     },
@@ -632,7 +638,7 @@
       }
     ],
     "meta": {
-      "lineno": 55,
+      "lineno": 54,
       "filename": "TheClient.js",
       "path": "/Users/okuni/Projects/the/packages/client/lib"
     },

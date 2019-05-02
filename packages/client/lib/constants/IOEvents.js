@@ -23,7 +23,7 @@ const IOEvents = Object.freeze(
     STREAM_ERROR: 'stream:error',
     STREAM_FIN: 'stream:fin',
     STREAM_OPEN: 'stream:open',
-  }
+  },
 )
 
 module.exports = IOEvents

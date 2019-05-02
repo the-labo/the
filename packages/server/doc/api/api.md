@@ -19,6 +19,9 @@
 ## Functions
 
 <dl>
+<dt><a href="#default">default()</a></dt>
+<dd><p>Alias of {@memberOf module:@the-/server</p>
+</dd>
 <dt><a href="#assertMethods">assertMethods(Class, reservedNames)</a></dt>
 <dd></dd>
 <dt><a href="#IOEvents">IOEvents()</a></dt>
@@ -31,7 +34,7 @@
 ## @the-/server
 HTTP/RPC Server of the-framework
 
-**Version**: 15.4.1  
+**Version**: 15.4.2  
 **License**: MIT  
 
 * [@the-/server](#module_@the-/server)
@@ -47,7 +50,7 @@ HTTP/RPC Server of the-framework
         * [.handleIOStreamClose()](#module_@the-/server.TheServer+handleIOStreamClose)
         * [.handleIOStreamFin()](#module_@the-/server.TheServer+handleIOStreamFin)
         * [.handleIOStreamOpen()](#module_@the-/server.TheServer+handleIOStreamOpen)
-        * [.listen(port, [callback])](#module_@the-/server.TheServer+listen) ⇒ <code>Promise.&lt;void&gt;</code>
+        * [.listen(port)](#module_@the-/server.TheServer+listen) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.buildInEndpoints](#module_@the-/server.buildInEndpoints) : <code>object</code>
     * [.adapters](#module_@the-/server.adapters) : <code>object</code>
         * [.redisAdapter()](#module_@the-/server.adapters.redisAdapter)
@@ -90,7 +93,7 @@ HTTP/RPC Server of the-framework
             * [.get(id)](#module_@the-/server.stores.Store+get) ⇒ <code>Promise.&lt;Object&gt;</code>
             * [.has(id)](#module_@the-/server.stores.Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
             * [.ids()](#module_@the-/server.stores.Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-            * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;void&gt;</code>
+            * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;undefined&gt;</code>
         * [.SessionStore](#module_@the-/server.stores.SessionStore) ⇐ <code>module:@the-/server.stores.Session</code>
             * [new SessionStore()](#new_module_@the-/server.stores.SessionStore_new)
         * [.Store](#module_@the-/server.stores.Store)
@@ -101,10 +104,9 @@ HTTP/RPC Server of the-framework
             * [.get(id)](#module_@the-/server.stores.Store+get) ⇒ <code>Promise.&lt;Object&gt;</code>
             * [.has(id)](#module_@the-/server.stores.Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
             * [.ids()](#module_@the-/server.stores.Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-            * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;void&gt;</code>
+            * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.asControllerModule()](#module_@the-/server.asControllerModule)
     * [.create(...args)](#module_@the-/server.create) ⇒ <code>TheServer</code>
-    * [.default()](#module_@the-/server.default)
 
 <a name="module_@the-/server.TheServer"></a>
 
@@ -124,7 +126,7 @@ HTTP/RPC Server of the-framework
     * [.handleIOStreamClose()](#module_@the-/server.TheServer+handleIOStreamClose)
     * [.handleIOStreamFin()](#module_@the-/server.TheServer+handleIOStreamFin)
     * [.handleIOStreamOpen()](#module_@the-/server.TheServer+handleIOStreamOpen)
-    * [.listen(port, [callback])](#module_@the-/server.TheServer+listen) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.listen(port)](#module_@the-/server.TheServer+listen) ⇒ <code>Promise.&lt;undefined&gt;</code>
 
 <a name="new_module_@the-/server.TheServer_new"></a>
 
@@ -146,9 +148,9 @@ Close server
 
 **Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
 
-| Param |
-| --- |
-| ...args | 
+| Param | Type | Description |
+| --- | --- | --- |
+| ...args | <code>\*</code> | Close arguments |
 
 <a name="module_@the-/server.TheServer+destroyAllSessions"></a>
 
@@ -191,7 +193,7 @@ Destroy all sessions
 **Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
 <a name="module_@the-/server.TheServer+listen"></a>
 
-#### theServer.listen(port, [callback]) ⇒ <code>Promise.&lt;void&gt;</code>
+#### theServer.listen(port) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Listen to port
 
 **Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
@@ -199,7 +201,6 @@ Listen to port
 | Param | Type | Description |
 | --- | --- | --- |
 | port | <code>number</code> | Port to listen |
-| [callback] |  |  |
 
 <a name="module_@the-/server.buildInEndpoints"></a>
 
@@ -476,7 +477,7 @@ Buildin stores
         * [.get(id)](#module_@the-/server.stores.Store+get) ⇒ <code>Promise.&lt;Object&gt;</code>
         * [.has(id)](#module_@the-/server.stores.Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
         * [.ids()](#module_@the-/server.stores.Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-        * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;void&gt;</code>
+        * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.SessionStore](#module_@the-/server.stores.SessionStore) ⇐ <code>module:@the-/server.stores.Session</code>
         * [new SessionStore()](#new_module_@the-/server.stores.SessionStore_new)
     * [.Store](#module_@the-/server.stores.Store)
@@ -487,7 +488,7 @@ Buildin stores
         * [.get(id)](#module_@the-/server.stores.Store+get) ⇒ <code>Promise.&lt;Object&gt;</code>
         * [.has(id)](#module_@the-/server.stores.Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
         * [.ids()](#module_@the-/server.stores.Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-        * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;void&gt;</code>
+        * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;undefined&gt;</code>
 
 <a name="module_@the-/server.stores.ConnectionStore"></a>
 
@@ -503,7 +504,7 @@ Buildin stores
     * [.get(id)](#module_@the-/server.stores.Store+get) ⇒ <code>Promise.&lt;Object&gt;</code>
     * [.has(id)](#module_@the-/server.stores.Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.ids()](#module_@the-/server.stores.Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-    * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;undefined&gt;</code>
 
 <a name="new_module_@the-/server.stores.ConnectionStore_new"></a>
 
@@ -523,9 +524,9 @@ Delete data
 
 **Kind**: instance method of [<code>ConnectionStore</code>](#module_@the-/server.stores.ConnectionStore)  
 
-| Param |
-| --- |
-| id | 
+| Param | Type | Description |
+| --- | --- | --- |
+| id | <code>string</code> | Id to del |
 
 <a name="module_@the-/server.stores.Store+delAll"></a>
 
@@ -563,7 +564,7 @@ Get all ids
 **Kind**: instance method of [<code>ConnectionStore</code>](#module_@the-/server.stores.ConnectionStore)  
 <a name="module_@the-/server.stores.Store+set"></a>
 
-##### connectionStore.set(id, data) ⇒ <code>Promise.&lt;void&gt;</code>
+##### connectionStore.set(id, data) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Set data
 
 **Kind**: instance method of [<code>ConnectionStore</code>](#module_@the-/server.stores.ConnectionStore)  
@@ -597,7 +598,7 @@ Client session store for the-server
     * [.get(id)](#module_@the-/server.stores.Store+get) ⇒ <code>Promise.&lt;Object&gt;</code>
     * [.has(id)](#module_@the-/server.stores.Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.ids()](#module_@the-/server.stores.Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-    * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;undefined&gt;</code>
 
 <a name="new_module_@the-/server.stores.Store_new"></a>
 
@@ -617,9 +618,9 @@ Delete data
 
 **Kind**: instance method of [<code>Store</code>](#module_@the-/server.stores.Store)  
 
-| Param |
-| --- |
-| id | 
+| Param | Type | Description |
+| --- | --- | --- |
+| id | <code>string</code> | Id to del |
 
 <a name="module_@the-/server.stores.Store+delAll"></a>
 
@@ -657,7 +658,7 @@ Get all ids
 **Kind**: instance method of [<code>Store</code>](#module_@the-/server.stores.Store)  
 <a name="module_@the-/server.stores.Store+set"></a>
 
-##### store.set(id, data) ⇒ <code>Promise.&lt;void&gt;</code>
+##### store.set(id, data) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Set data
 
 **Kind**: instance method of [<code>Store</code>](#module_@the-/server.stores.Store)  
@@ -684,18 +685,19 @@ Create a TheServer instance
 | --- | --- |
 | ...args | <code>\*</code> | 
 
-<a name="module_@the-/server.default"></a>
-
-### server.default()
-Alias of [create](#module_@the-/server.create)
-
-**Kind**: static method of [<code>@the-/server</code>](#module_@the-/server)  
 <a name="KeepMixed"></a>
 
 ## KeepMixed
 module:@the-/server.mixins.keepMix
 
 **Kind**: global class  
+<a name="default"></a>
+
+## default()
+Alias of {@memberOf module:@the-/server
+
+**Kind**: global function  
+**Link**: module:@the-/server.create}  
 <a name="assertMethods"></a>
 
 ## assertMethods(Class, reservedNames)

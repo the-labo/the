@@ -1,5 +1,5 @@
 /**
- * @memberOf module:@the-/client
+ * @memberof module:@the-/client
  * @class TheClient
  * @augments module:@the-/client.mixins.infoMix~InfoMixed
  * @augments module:@the-/client.mixins.streamMix~StreamMixed

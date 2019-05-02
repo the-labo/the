@@ -26,8 +26,8 @@ const { createElement: c } = React
   // Define real time event handling stream
   class CountdownStream extends Stream {
     async *provide() {
-      let count = this.params.count || 100
-      while (count > 0) {
+      this.count = this.params.count || 100
+      while (this.count > 0) {
         yield { count: this.count }
         this.count--
       }
@@ -42,7 +42,7 @@ const { createElement: c } = React
     },
     /**
      * View renderer
-     * @param children
+     * @param {*} children
      */
     html: ({ children }) => c('html', {}, c('body', {}, children)),
     /**

@@ -1,6 +1,6 @@
 /**
  * Client data store for the-server
- * @memberOf module:@the-/server.stores
+ * @memberof module:@the-/server.stores
  * @class Store
  */
 'use strict'
@@ -48,7 +48,7 @@ class Store {
 
   /**
    * Delete data
-   * @param id
+   * @param {string} id - Id to del
    * @returns {Promise<*>}
    */
   async del(id) {
@@ -107,7 +107,7 @@ class Store {
    * Set data
    * @param {string} id - Data id
    * @param {Object} data - Data to set
-   * @returns {Promise.<void>}
+   * @returns {Promise.<undefined>}
    */
   async set(id, data) {
     const { expireDuration, storage } = this

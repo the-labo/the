@@ -14,7 +14,7 @@ const { format: formatUrl } = require('url')
 /** @lends module:@the-/client.helpers.parseClientUrl */
 function parseClientUrl(url) {
   if (typeof url === 'string') {
-    const {pathname} = new URL(url)
+    const { pathname } = new URL(url)
     if (pathname === '/') {
       let suggestion = new URL(DEFAULT_URL, url).href
       console.warn(
