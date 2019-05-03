@@ -2,8 +2,8 @@
  * withReady mixin
  * @memberof module:@the-/mixin-scene
  * @function withReady
- * @param {function} Class - Class to mix
- * @returns {function} Mixed class
+ * @param {function()} Class - Class to mix
+ * @returns {function()} Mixed class
  */
 'use strict'
 
@@ -26,7 +26,7 @@ const withReady = asClassMixin((Class) => {
     },
     /**
      * Get is ready or not
-     * @property {Boolean} isReady
+     * @property {boolean} isReady
      */
     isReady: {
       get() {

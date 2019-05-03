@@ -1,8 +1,8 @@
 /**
  * @memberof module:@the-/scene.mixins
  * @function errorMix
- * @param {function} BaseClass
- * @returns {function} MixedClass
+ * @param {function()} BaseClass
+ * @returns {function()} MixedClass
  */
 'use strict'
 

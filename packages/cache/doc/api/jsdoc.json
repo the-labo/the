@@ -16,6 +16,26 @@
     "version": "15.4.1"
   },
   {
+    "customTags": [
+      {
+        "tag": "link",
+        "value": "module:@the-/cache.create}"
+      }
+    ],
+    "description": "Alias of {@memberof module:@the-/cache",
+    "id": "default",
+    "kind": "function",
+    "longname": "default",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/cache/lib"
+    },
+    "name": "default",
+    "order": 1,
+    "scope": "global"
+  },
+  {
     "augments": [
       "LRUCache"
     ],
@@ -68,21 +88,6 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link module:@the-/cache.create}",
-    "id": "module:@the-/cache.default",
-    "kind": "function",
-    "longname": "module:@the-/cache.default",
-    "memberof": "module:@the-/cache",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/cache/lib"
-    },
-    "name": "default",
-    "order": 1,
     "scope": "static"
   }
 ]

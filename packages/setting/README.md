@@ -95,7 +95,6 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
-- [default()](./doc/api/api.md#default)
 - [#del(names)](./doc/api/api.md#TheSetting#del)
 - [#get(name)](./doc/api/api.md#TheSetting#get)
 - [#set(values)](./doc/api/api.md#TheSetting#set)

@@ -2,8 +2,8 @@
  * Mixins for metrics
  * @memberof module:@the-/server.mixins
  * @function metricsMix
- * @param {function} Class
- * @returns {function} Class
+ * @param {function()} Class
+ * @returns {function()} Class
  */
 'use strict'
 

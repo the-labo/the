@@ -25,6 +25,26 @@
     "order": 4
   },
   {
+    "customTags": [
+      {
+        "tag": "link",
+        "value": "module:@the-/controller.create}"
+      }
+    ],
+    "description": "Alias of {@memberof module:@the-/controller",
+    "id": "default",
+    "kind": "function",
+    "longname": "default",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/controller/lib"
+    },
+    "name": "default",
+    "order": 1,
+    "scope": "global"
+  },
+  {
     "description": "Callback after controller attached to a client",
     "id": "module:@the-/controller.TheCtrl#controllerDidAttach",
     "kind": "function",
@@ -198,21 +218,6 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link module:@the-/controller.create}",
-    "id": "module:@the-/controller.default",
-    "kind": "function",
-    "longname": "module:@the-/controller.default",
-    "memberof": "module:@the-/controller",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/controller/lib"
-    },
-    "name": "default",
-    "order": 1,
     "scope": "static"
   },
   {

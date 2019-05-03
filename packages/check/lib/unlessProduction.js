@@ -2,7 +2,7 @@
  * Do unless production env
  * @memberof module:@the-/check
  * @function unlessProduction
- * @param {function} handler
+ * @param {function()} handler
  */
 'use strict'
 

@@ -13,7 +13,7 @@
     "name": "@the-/code",
     "order": 1,
     "typicalname": "code",
-    "version": "15.4.9"
+    "version": "15.4.12"
   },
   {
     "id": "module:@the-/code.TheCode()",
@@ -513,16 +513,16 @@
     "scope": "static"
   },
   {
-    "id": "module:@the-/code.ast.nodes.normalizeJSDocSynonymsOnCommentNode",
+    "id": "module:@the-/code.ast.nodes.normalizeJSDocAnnotationsOnCommentNode",
     "kind": "function",
-    "longname": "module:@the-/code.ast.nodes.normalizeJSDocSynonymsOnCommentNode",
+    "longname": "module:@the-/code.ast.nodes.normalizeJSDocAnnotationsOnCommentNode",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "normalizeJSDocSynonymsOnCommentNode.js",
+      "filename": "normalizeJSDocAnnotationsOnCommentNode.js",
       "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "normalizeJSDocSynonymsOnCommentNode",
+    "name": "normalizeJSDocAnnotationsOnCommentNode",
     "order": 25,
     "scope": "static"
   },

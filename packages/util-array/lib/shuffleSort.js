@@ -1,7 +1,7 @@
 /**
  * Find randomly
  * @function shuffleSort
- * @returns {function}
+ * @returns {function()}
  * @example
  *   [1,2,3].sort(shuffleSort())
  */

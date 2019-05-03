@@ -1,7 +1,7 @@
 /**
  * Find randomly
  * @function randomFind
- * @returns {function}
+ * @returns {function()}
  * @example
  *   [1,2,3].find(randomFind())
  */

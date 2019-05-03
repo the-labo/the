@@ -27,7 +27,7 @@ class Store {
 
   /**
    * Cleanup expired data
-   * @returns {Promise.<string[]>}
+   * @returns {Promise<string[]>}
    */
   async cleanup() {
     const deleted = []
@@ -72,7 +72,7 @@ class Store {
   /**
    * Get data
    * @param {string} id - Data id
-   * @returns {Promise.<Object>}
+   * @returns {Promise<Object>}
    */
   async get(id) {
     const { storage } = this
@@ -88,7 +88,7 @@ class Store {
   /**
    * Check if has data
    * @param {string} id - Data id
-   * @returns {Promise.<boolean>}
+   * @returns {Promise<boolean>}
    */
   async has(id) {
     return !!(await this.get(id))
@@ -107,7 +107,7 @@ class Store {
    * Set data
    * @param {string} id - Data id
    * @param {Object} data - Data to set
-   * @returns {Promise.<undefined>}
+   * @returns {Promise<undefined>}
    */
   async set(id, data) {
     const { expireDuration, storage } = this

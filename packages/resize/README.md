@@ -96,6 +96,7 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
+- [default()](./doc/api/api.md#default)
 - [#convert(src,dest,options)](./doc/api/api.md#module_@the-/resize.TheResize#convert)
 - [#convertDir(src,dest,options)](./doc/api/api.md#module_@the-/resize.TheResize#convertDir)
 - [#convertFile(src,dest,options)](./doc/api/api.md#module_@the-/resize.TheResize#convertFile)
@@ -104,7 +105,6 @@ tryExample().catch((err) => console.error(err))
 - [#overwriteFile(src,options)](./doc/api/api.md#module_@the-/resize.TheResize#overwriteFile)
 - [#overwriteIfPossible(filename,options)](./doc/api/api.md#module_@the-/resize.TheResize#overwriteIfPossible)
 - [.create(args)](./doc/api/api.md#module_@the-/resize.create)
-- [.default()](./doc/api/api.md#module_@the-/resize.default)
 ### class
 - [.TheResize](./doc/api/api.md#module_@the-/resize.TheResize)
 

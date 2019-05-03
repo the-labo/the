@@ -2,7 +2,7 @@
  * Check touch supported
  * @memberof module:@the-/check
  * @function canTouch
- * @returns {Boolean}
+ * @returns {boolean}
  */
 'use strict'
 

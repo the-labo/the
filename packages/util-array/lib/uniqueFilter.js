@@ -3,7 +3,7 @@
  * @function uniqueFilter
  * @param {Object} [options={}] - Optional settings
  * @param {function|string} [options.by=(v)=>v] - Key extractor
- * @returns {function}
+ * @returns {function()}
  * @example
  *  ['a', 'b', 'a'].filter(uniqueFilter())
  */

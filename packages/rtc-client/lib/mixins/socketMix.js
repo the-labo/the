@@ -2,8 +2,8 @@
  * Mixin for socket
  * @memberof module:@the-/rtc.constants.mixins
  * @function socketMix
- * @param {function} Class
- * @returns {function} Class
+ * @param {function()} Class
+ * @returns {function()} Class
  */
 'use strict'
 

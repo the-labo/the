@@ -1,7 +1,7 @@
 /**
  * Wait until file exists
  * @function waitForFile
- * @param {function} condition
+ * @param {function()} condition
  * @param {Object} [options={}] - Optional setting
  * @returns {Promise}
  */

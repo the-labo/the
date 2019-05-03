@@ -1,7 +1,7 @@
 /**
- * Alias of {@memberof module:@the-/ps
+ * Alias of {@link module:@the-/ps.create}
+ * @memberof module:@the-/ps
  * @function default
- * @link module:@the-/ps.create}
  */
 'use strict'
 

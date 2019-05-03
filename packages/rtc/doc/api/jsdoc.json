@@ -13,7 +13,7 @@
     "name": "@the-/rtc",
     "order": 2,
     "typicalname": "rtc",
-    "version": "15.4.1"
+    "version": "15.4.2"
   },
   {
     "id": "module:@the-/rtc.TheRTC()",
@@ -196,7 +196,7 @@
         "value": "module:@the-/rtc.create}"
       }
     ],
-    "description": "Alias of {@memberOf module:@the-/rtc",
+    "description": "Alias of {@memberof module:@the-/rtc",
     "id": "default",
     "kind": "function",
     "longname": "default",

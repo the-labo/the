@@ -2,7 +2,7 @@
  * Register service workers
  * @function workers
  * @param {string[]} swUrls - Service worker urls
- * @returns {Promise.<void>}
+ * @returns {Promise<undefined>}
  */
 'use strict'
 

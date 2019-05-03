@@ -1,6 +1,7 @@
 /**
- * Alias of {@function default
- * @link module:@the-/hash.create}
+ * Alias of {@link module:@the-/hash.create}
+ * @memberof module:@the-/hash
+ * @function default
  * @returns {module:@the-/hash.TheHash}
  */
 'use strict'

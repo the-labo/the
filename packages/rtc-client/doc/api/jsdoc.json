@@ -73,7 +73,7 @@
         "value": "module:@the-/rtc-client.create}"
       }
     ],
-    "description": "Alias of {@memberOf module:@the-/rtc-client",
+    "description": "Alias of {@memberof module:@the-/rtc-client",
     "id": "default",
     "kind": "function",
     "longname": "default",
@@ -292,7 +292,7 @@
     "memberof": "module:@the-/rtc-client.TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 308,
+      "lineno": 306,
       "path": "/Users/okuni/Projects/the/packages/rtc-client/lib"
     },
     "name": "publish",

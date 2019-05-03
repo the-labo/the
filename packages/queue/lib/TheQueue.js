@@ -2,7 +2,7 @@
  * @memberof module:@the-/queue
  * @class TheQueue
  * @param {Object} [options={}]
- * @param {Boolean} [options.autoStart] - Auto start
+ * @param {boolean} [options.autoStart] - Auto start
  * @param {number} [options.max=1000]
  * @param {string} [options.name]
  */

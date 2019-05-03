@@ -3,7 +3,7 @@
  * @memberof module:@the-/templates
  * @function Ctrl
  * @param {Object} config
- * @param {Boolean} [config.cjs=false]
+ * @param {boolean} [config.cjs=false]
  * @param {string} [config.name]
  * @returns {Object}
  */

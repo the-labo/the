@@ -31,7 +31,7 @@
     "longname": "listenToCreate",
     "meta": {
       "filename": "listenMix.js",
-      "lineno": 78,
+      "lineno": 76,
       "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
     },
     "name": "listenToCreate",
@@ -65,7 +65,7 @@
     "longname": "listenToDestroy",
     "meta": {
       "filename": "listenMix.js",
-      "lineno": 102,
+      "lineno": 100,
       "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
     },
     "name": "listenToDestroy",
@@ -99,7 +99,7 @@
     "longname": "listenToDrop",
     "meta": {
       "filename": "listenMix.js",
-      "lineno": 139,
+      "lineno": 137,
       "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
     },
     "name": "listenToDrop",
@@ -133,7 +133,7 @@
     "longname": "listenToUpdate",
     "meta": {
       "filename": "listenMix.js",
-      "lineno": 153,
+      "lineno": 151,
       "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
     },
     "name": "listenToUpdate",
@@ -168,7 +168,7 @@
     "memberof": "module:@the-/resource.TheResource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 61,
+      "lineno": 64,
       "path": "/Users/okuni/Projects/the/packages/resource/lib"
     },
     "name": "refOf",
@@ -200,7 +200,7 @@
     "memberof": "module:@the-/resource.TheResource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 76,
+      "lineno": 79,
       "path": "/Users/okuni/Projects/the/packages/resource/lib"
     },
     "name": "emptyList",
@@ -226,7 +226,7 @@
     "memberof": "module:@the-/resource.TheResource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 85,
+      "lineno": 88,
       "path": "/Users/okuni/Projects/the/packages/resource/lib"
     },
     "name": "invalidated",
@@ -261,7 +261,7 @@
     "memberof": "module:@the-/resource.TheResource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 94,
+      "lineno": 97,
       "path": "/Users/okuni/Projects/the/packages/resource/lib"
     },
     "name": "refresh",
@@ -280,7 +280,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -296,7 +296,7 @@
     "memberof": "module:@the-/resource.TheResource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 121,
+      "lineno": 124,
       "path": "/Users/okuni/Projects/the/packages/resource/lib"
     },
     "name": "refreshAll",
@@ -306,7 +306,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -322,7 +322,7 @@
     "memberof": "module:@the-/resource.TheResource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 131,
+      "lineno": 134,
       "path": "/Users/okuni/Projects/the/packages/resource/lib"
     },
     "name": "resaveAll",
@@ -332,7 +332,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -378,7 +378,7 @@
   {
     "description": "Cascade destroy condition",
     "examples": [
-      "get cascaded () {\n  return { User: (ref) => ({user: {$ref: ref}}) }\n}"
+      "class MyResource extends TheResource\n  get cascaded () {\n    return { User: (ref) => ({user: {$ref: ref}}) }\n  }\n}"
     ],
     "id": "module:@the-/resource.TheResource.cascaded",
     "kind": "member",
@@ -386,7 +386,7 @@
     "memberof": "module:@the-/resource.TheResource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 36,
+      "lineno": 39,
       "path": "/Users/okuni/Projects/the/packages/resource/lib"
     },
     "name": "cascaded",

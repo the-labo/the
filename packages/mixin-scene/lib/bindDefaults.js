@@ -2,7 +2,7 @@
  * For bindDefaults
  * @memberof module:@the-/mixin-scene
  * @function bindDefaults
- * @returns {function} method annotation function
+ * @returns {function()} method annotation function
  */
 'use strict'
 

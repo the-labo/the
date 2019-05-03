@@ -11,7 +11,7 @@
       "path": "/Users/okuni/Projects/the/packages/s3/lib"
     },
     "name": "@the-/s3",
-    "order": 2,
+    "order": 1,
     "typicalname": "s3",
     "version": "15.4.1"
   },
@@ -21,7 +21,7 @@
     "longname": "module:@the-/s3.TheS3",
     "memberof": "module:@the-/s3.TheS3",
     "name": "TheS3",
-    "order": 4,
+    "order": 3,
     "params": [
       {
         "type": {
@@ -79,20 +79,6 @@
     ]
   },
   {
-    "description": "Alias of {@link module:@the-/s3}",
-    "id": "default",
-    "kind": "function",
-    "longname": "default",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/s3/lib"
-    },
-    "name": "default",
-    "order": 1,
-    "scope": "global"
-  },
-  {
     "async": true,
     "description": "Upload file into s3",
     "id": "module:@the-/s3.TheS3#upload",
@@ -105,7 +91,7 @@
       "path": "/Users/okuni/Projects/the/packages/s3/lib"
     },
     "name": "upload",
-    "order": 5,
+    "order": 4,
     "params": [
       {
         "type": {
@@ -132,7 +118,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -150,7 +136,7 @@
       "path": "/Users/okuni/Projects/the/packages/s3/lib"
     },
     "name": "TheS3",
-    "order": 3,
+    "order": 2,
     "scope": "static"
   },
   {

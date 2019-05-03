@@ -2,8 +2,8 @@
  * Mixins for info
  * @memberof module:@the-/server.mixins
  * @function infoMix
- * @param {function} Class
- * @returns {function} Class
+ * @param {function()} Class
+ * @returns {function()} Class
  */
 'use strict'
 

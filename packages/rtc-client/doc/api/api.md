@@ -23,7 +23,7 @@
 
 <dl>
 <dt><a href="#default">default()</a></dt>
-<dd><p>Alias of {@memberOf module:@the-/rtc-client</p>
+<dd><p>Alias of {@memberof module:@the-/rtc-client</p>
 </dd>
 </dl>
 
@@ -155,7 +155,7 @@ PeerEvents
 <a name="default"></a>
 
 ## default()
-Alias of {@memberOf module:@the-/rtc-client
+Alias of {@memberof module:@the-/rtc-client
 
 **Kind**: global function  
 **Link**: module:@the-/rtc-client.create}

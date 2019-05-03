@@ -170,7 +170,7 @@
         "value": "module:@the-/db.create}"
       }
     ],
-    "description": "Alias of {@memberOf module:@the-/db",
+    "description": "Alias of {@memberof module:@the-/db",
     "id": "default",
     "kind": "function",
     "longname": "default",
@@ -349,7 +349,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -384,7 +384,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -606,7 +606,7 @@
       {
         "type": {
           "names": [
-            "Promise.<Boolean>"
+            "Promise.<boolean>"
           ]
         },
         "description": "- Full filled"
@@ -831,7 +831,7 @@
       {
         "type": {
           "names": [
-            "Promise.<Boolean>"
+            "Promise.<boolean>"
           ]
         },
         "description": "- Full filled"

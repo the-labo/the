@@ -16,6 +16,26 @@
     "version": "15.4.0"
   },
   {
+    "customTags": [
+      {
+        "tag": "link",
+        "value": "module:@the-/refresher.create}"
+      }
+    ],
+    "description": "Alias of {@memberof module:@the-/refresher",
+    "id": "default",
+    "kind": "function",
+    "longname": "default",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/refresher/lib"
+    },
+    "name": "default",
+    "order": 1,
+    "scope": "global"
+  },
+  {
     "description": "Check the refresh has the target",
     "id": "module:@the-/refresher.TheRefresher#has",
     "kind": "function",
@@ -30,6 +50,11 @@
     "order": 4,
     "params": [
       {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
         "name": "target"
       }
     ],
@@ -148,21 +173,6 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link module:@the-/refresher.create}",
-    "id": "module:@the-/refresher.default",
-    "kind": "function",
-    "longname": "module:@the-/refresher.default",
-    "memberof": "module:@the-/refresher",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/refresher/lib"
-    },
-    "name": "default",
-    "order": 1,
     "scope": "static"
   }
 ]

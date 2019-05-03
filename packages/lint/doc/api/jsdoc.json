@@ -11,7 +11,7 @@
       "path": "/Users/okuni/Projects/the/packages/lint/lib"
     },
     "name": "@the-/lint",
-    "order": 2,
+    "order": 1,
     "typicalname": "lint",
     "version": "15.4.1"
   },
@@ -22,21 +22,7 @@
     "longname": "module:@the-/lint.TheLint",
     "memberof": "module:@the-/lint.TheLint",
     "name": "TheLint",
-    "order": 4
-  },
-  {
-    "description": "Alias of {@link module:@the-/lint.create}",
-    "id": "default",
-    "kind": "function",
-    "longname": "default",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/lint/lib"
-    },
-    "name": "default",
-    "order": 1,
-    "scope": "global"
+    "order": 3
   },
   {
     "description": "Add checker",
@@ -50,7 +36,7 @@
       "path": "/Users/okuni/Projects/the/packages/lint/lib"
     },
     "name": "add",
-    "order": 5,
+    "order": 4,
     "params": [
       {
         "type": {
@@ -86,13 +72,13 @@
       "path": "/Users/okuni/Projects/the/packages/lint/lib"
     },
     "name": "run",
-    "order": 6,
+    "order": 5,
     "params": [],
     "returns": [
       {
         "type": {
           "names": [
-            "Promise.<Object.<string, array>>"
+            "Promise.<Object.<string, Array>>"
           ]
         }
       }
@@ -110,7 +96,7 @@
       "path": "/Users/okuni/Projects/the/packages/lint/lib"
     },
     "name": "TheLint",
-    "order": 3,
+    "order": 2,
     "scope": "static"
   },
   {
@@ -124,7 +110,7 @@
       "path": "/Users/okuni/Projects/the/packages/lint/lib/helpers"
     },
     "name": "LintCache",
-    "order": 8,
+    "order": 7,
     "scope": "static"
   },
   {
@@ -140,7 +126,7 @@
       "path": "/Users/okuni/Projects/the/packages/lint/lib/helpers"
     },
     "name": "helpers",
-    "order": 7,
+    "order": 6,
     "scope": "static"
   },
   {
@@ -156,7 +142,7 @@
       "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
     },
     "name": "rules",
-    "order": 14,
+    "order": 13,
     "scope": "static"
   },
   {
@@ -206,7 +192,7 @@
       "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
     },
     "name": "callRule",
-    "order": 9,
+    "order": 8,
     "params": [
       {
         "type": {
@@ -250,7 +236,7 @@
       "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
     },
     "name": "contentRule",
-    "order": 10,
+    "order": 9,
     "params": [
       {
         "type": {
@@ -306,7 +292,7 @@
       "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
     },
     "name": "decorateRule",
-    "order": 11,
+    "order": 10,
     "params": [
       {
         "type": {
@@ -342,7 +328,7 @@
       "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
     },
     "name": "depsRule",
-    "order": 12,
+    "order": 11,
     "params": [
       {
         "type": {
@@ -378,7 +364,7 @@
       "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
     },
     "name": "filenameRule",
-    "order": 13,
+    "order": 12,
     "params": [
       {
         "type": {
@@ -434,7 +420,7 @@
       "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
     },
     "name": "moduleRule",
-    "order": 15,
+    "order": 14,
     "params": [
       {
         "type": {
@@ -470,7 +456,7 @@
       "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
     },
     "name": "propRule",
-    "order": 16,
+    "order": 15,
     "params": [
       {
         "type": {
@@ -506,7 +492,7 @@
       "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
     },
     "name": "usageRule",
-    "order": 17,
+    "order": 16,
     "params": [
       {
         "type": {

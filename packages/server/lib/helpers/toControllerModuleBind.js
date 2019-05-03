@@ -1,7 +1,7 @@
 /**
  * @memberof module:@the-/server.helpers
  * @function toControllerModuleBind
- * @returns {function}
+ * @returns {function()}
  */
 'use strict'
 

@@ -95,11 +95,11 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
+### function
+- [default()](./doc/api/api.md#default)
+- [.create(args)](./doc/api/api.md#module_@the-/password.create)
 ### class
 - [.ThePassword](./doc/api/api.md#module_@the-/password.ThePassword)
-### function
-- [.create(args)](./doc/api/api.md#module_@the-/password.create)
-- [.default()](./doc/api/api.md#module_@the-/password.default)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

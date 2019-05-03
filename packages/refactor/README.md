@@ -99,13 +99,13 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
+- [default()](./doc/api/api.md#default)
 - [#convert(pattern,converter,options)](./doc/api/api.md#module_@the-/refactor.TheRefactor#convert)
 - [#rename(pattern,convert,options)](./doc/api/api.md#module_@the-/refactor.TheRefactor#rename)
 - [#renameDir(src,dest)](./doc/api/api.md#module_@the-/refactor.TheRefactor#renameDir)
 - [#rewrite(pattern,rules,options)](./doc/api/api.md#module_@the-/refactor.TheRefactor#rewrite)
 - [#scatter(src,dirnames)](./doc/api/api.md#module_@the-/refactor.TheRefactor#scatter)
 - [.create(args)](./doc/api/api.md#module_@the-/refactor.create)
-- [.default()](./doc/api/api.md#module_@the-/refactor.default)
 ### class
 - [.TheRefactor](./doc/api/api.md#module_@the-/refactor.TheRefactor)
 

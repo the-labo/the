@@ -1,8 +1,8 @@
 /**
  * @memberof module:@the-/client.mixins
  * @function streamMix
- * @param {function}
- * @returns {function}
+ * @param {function()}
+ * @returns {function()}
  */
 'use strict'
 

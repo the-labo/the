@@ -1,6 +1,7 @@
 /**
- * Alias of {@function default
- * @link module:@the-/geo.create}
+ * Alias of {@link module:@the-/geo.create}
+ * @memberof module:@the-/geo
+ * @function default
  */
 'use strict'
 

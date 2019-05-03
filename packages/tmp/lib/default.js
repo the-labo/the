@@ -1,5 +1,6 @@
 /**
- * Alias of {@function default
+ * Alias of {@memberof module:@the-/tmp
+ * @function default
  * @link module:@the-/tmp.create}
  */
 'use strict'

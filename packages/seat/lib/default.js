@@ -1,7 +1,7 @@
 /**
- * Alias of {@memberof module:@the-/seat
+ * Alias of {@link module:@the-/seat.create}
+ * @memberof module:@the-/seat
  * @function default
- * @link module:@the-/seat.create}
  */
 'use strict'
 

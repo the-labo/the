@@ -226,11 +226,6 @@
     },
     "name": "VendorColors",
     "order": 12,
-    "scope": "static",
-    "type": {
-      "names": [
-        "string"
-      ]
-    }
+    "scope": "static"
   }
 ]

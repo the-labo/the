@@ -16,6 +16,26 @@
     "version": "15.4.1"
   },
   {
+    "customTags": [
+      {
+        "tag": "link",
+        "value": "module:@the-/refactor.create}"
+      }
+    ],
+    "description": "Alias of {@memberof module:@the-/refactor",
+    "id": "default",
+    "kind": "function",
+    "longname": "default",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+    },
+    "name": "default",
+    "order": 1,
+    "scope": "global"
+  },
+  {
     "async": true,
     "description": "Process with convert function",
     "id": "module:@the-/refactor.TheRefactor#convert",
@@ -62,7 +82,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -118,7 +138,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -163,7 +183,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -198,7 +218,7 @@
       {
         "type": {
           "names": [
-            "object"
+            "Object"
           ]
         },
         "description": "Replace rules",
@@ -220,7 +240,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -263,7 +283,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -317,21 +337,6 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link module:@the-/refactor.create}",
-    "id": "module:@the-/refactor.default",
-    "kind": "function",
-    "longname": "module:@the-/refactor.default",
-    "memberof": "module:@the-/refactor",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
-    },
-    "name": "default",
-    "order": 1,
     "scope": "static"
   }
 ]

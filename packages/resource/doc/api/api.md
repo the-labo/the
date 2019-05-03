@@ -40,9 +40,9 @@ Base of the-resource
             * [.refOf(id)](#module_@the-/resource.TheResource+refOf) ⇒ <code>string</code> \| <code>Object</code>
             * [.emptyList()](#module_@the-/resource.TheResource+emptyList) ⇒ <code>Promise.&lt;lib.Collection&gt;</code>
             * [.invalidated(attributes)](#module_@the-/resource.TheResource+invalidated) ⇒ <code>Promise.&lt;Object&gt;</code>
-            * [.refresh(entity)](#module_@the-/resource.TheResource+refresh) ⇒ <code>Promise.&lt;void&gt;</code>
-            * [.refreshAll()](#module_@the-/resource.TheResource+refreshAll) ⇒ <code>Promise.&lt;void&gt;</code>
-            * [.resaveAll()](#module_@the-/resource.TheResource+resaveAll) ⇒ <code>Promise.&lt;void&gt;</code>
+            * [.refresh(entity)](#module_@the-/resource.TheResource+refresh) ⇒ <code>Promise.&lt;undefined&gt;</code>
+            * [.refreshAll()](#module_@the-/resource.TheResource+refreshAll) ⇒ <code>Promise.&lt;undefined&gt;</code>
+            * [.resaveAll()](#module_@the-/resource.TheResource+resaveAll) ⇒ <code>Promise.&lt;undefined&gt;</code>
         * _static_
             * [.cascaded](#module_@the-/resource.TheResource.cascaded)
     * [.TheResourceBase](#module_@the-/resource.TheResourceBase)
@@ -68,9 +68,9 @@ Base of the-resource
         * [.refOf(id)](#module_@the-/resource.TheResource+refOf) ⇒ <code>string</code> \| <code>Object</code>
         * [.emptyList()](#module_@the-/resource.TheResource+emptyList) ⇒ <code>Promise.&lt;lib.Collection&gt;</code>
         * [.invalidated(attributes)](#module_@the-/resource.TheResource+invalidated) ⇒ <code>Promise.&lt;Object&gt;</code>
-        * [.refresh(entity)](#module_@the-/resource.TheResource+refresh) ⇒ <code>Promise.&lt;void&gt;</code>
-        * [.refreshAll()](#module_@the-/resource.TheResource+refreshAll) ⇒ <code>Promise.&lt;void&gt;</code>
-        * [.resaveAll()](#module_@the-/resource.TheResource+resaveAll) ⇒ <code>Promise.&lt;void&gt;</code>
+        * [.refresh(entity)](#module_@the-/resource.TheResource+refresh) ⇒ <code>Promise.&lt;undefined&gt;</code>
+        * [.refreshAll()](#module_@the-/resource.TheResource+refreshAll) ⇒ <code>Promise.&lt;undefined&gt;</code>
+        * [.resaveAll()](#module_@the-/resource.TheResource+resaveAll) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * _static_
         * [.cascaded](#module_@the-/resource.TheResource.cascaded)
 
@@ -109,7 +109,7 @@ Get invalidated attributes
 
 <a name="module_@the-/resource.TheResource+refresh"></a>
 
-#### theResource.refresh(entity) ⇒ <code>Promise.&lt;void&gt;</code>
+#### theResource.refresh(entity) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Refresh clay entity
 
 **Kind**: instance method of [<code>TheResource</code>](#module_@the-/resource.TheResource)  
@@ -120,13 +120,13 @@ Refresh clay entity
 
 <a name="module_@the-/resource.TheResource+refreshAll"></a>
 
-#### theResource.refreshAll() ⇒ <code>Promise.&lt;void&gt;</code>
+#### theResource.refreshAll() ⇒ <code>Promise.&lt;undefined&gt;</code>
 Refresh all
 
 **Kind**: instance method of [<code>TheResource</code>](#module_@the-/resource.TheResource)  
 <a name="module_@the-/resource.TheResource+resaveAll"></a>
 
-#### theResource.resaveAll() ⇒ <code>Promise.&lt;void&gt;</code>
+#### theResource.resaveAll() ⇒ <code>Promise.&lt;undefined&gt;</code>
 Resave all
 
 **Kind**: instance method of [<code>TheResource</code>](#module_@the-/resource.TheResource)  
@@ -138,8 +138,10 @@ Cascade destroy condition
 **Kind**: static property of [<code>TheResource</code>](#module_@the-/resource.TheResource)  
 **Example**  
 ```js
-get cascaded () {
-  return { User: (ref) => ({user: {$ref: ref}}) }
+class MyResource extends TheResource
+  get cascaded () {
+    return { User: (ref) => ({user: {$ref: ref}}) }
+  }
 }
 ```
 <a name="module_@the-/resource.TheResourceBase"></a>

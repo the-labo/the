@@ -102,7 +102,7 @@ class TheMedia {
    * Bind HTML video element
    * @param {window.HTMLVideoElement} video
    * @param {Object} [options={}] - Optional settings
-   * @returns {Promise.<undefined>}
+   * @returns {Promise<undefined>}
    */
   async bindVideo(video, options = {}) {
     if (!video) {
@@ -118,7 +118,7 @@ class TheMedia {
 
   /**
    * Start user media
-   * @returns {Promise.<undefined>}
+   * @returns {Promise<undefined>}
    */
   async start() {
     if (this.running) {
@@ -141,7 +141,7 @@ class TheMedia {
 
   /**
    * Stop user media
-   * @returns {Promise.<undefined>}
+   * @returns {Promise<undefined>}
    */
   async stop() {
     if (!this.running) {
@@ -163,7 +163,7 @@ class TheMedia {
   /**
    * Take photo image
    * @param {Object} [options={}] - Optional settings
-   * @returns {Promise.<window.Blob>} Blob
+   * @returns {Promise<window.Blob>} Blob
    */
   async takePhoto(options = {}) {
     const { height, width } = options

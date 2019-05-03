@@ -107,6 +107,7 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
+- [default()](./doc/api/api.md#default)
 - [set(index,entry)](./doc/api/api.md#set)
 - [reset(values)](./doc/api/api.md#reset)
 - [#concat(values)](./doc/api/api.md#ArrayScope#concat)
@@ -141,7 +142,6 @@ tryExample().catch((err) => console.error(err))
 - [#del()](./doc/api/api.md#ValueScope#del)
 - [#set(value)](./doc/api/api.md#ValueScope#set)
 - [.create(args)](./doc/api/api.md#module_@the-/scope.create)
-- [.default()](./doc/api/api.md#module_@the-/scope.default)
 - [.withDefault()](./doc/api/api.md#module_@the-/scope.scopes.Scope.withDefault)
 ### class
 - [.TheScope](./doc/api/api.md#module_@the-/scope.TheScope)

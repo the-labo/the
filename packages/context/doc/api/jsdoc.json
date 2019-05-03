@@ -55,6 +55,26 @@
     "order": 9
   },
   {
+    "customTags": [
+      {
+        "tag": "link",
+        "value": "module:@the-/context.create}"
+      }
+    ],
+    "description": "Alias of {@memberof module:@the-/context",
+    "id": "default",
+    "kind": "function",
+    "longname": "default",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/context/lib"
+    },
+    "name": "default",
+    "order": 1,
+    "scope": "global"
+  },
+  {
     "description": "Delete value from store",
     "id": "@the-/context.TheContext#del",
     "kind": "function",
@@ -227,21 +247,6 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link module:@the-/context.create}",
-    "id": "module:@the-/context.default",
-    "kind": "function",
-    "longname": "module:@the-/context.default",
-    "memberof": "module:@the-/context",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/context/lib"
-    },
-    "name": "default",
-    "order": 1,
     "scope": "static"
   },
   {

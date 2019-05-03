@@ -11,7 +11,7 @@ Bin manager for the-frameworks
 * [@the-/bin](#module_@the-/bin)
     * [.TheBin](#module_@the-/bin.TheBin)
         * [new TheBin(cmd, [options])](#new_module_@the-/bin.TheBin_new)
-        * [.exec(...args)](#module_@the-/bin.TheBin+exec) ⇒ <code>Promise.&lt;void&gt;</code>
+        * [.exec(...args)](#module_@the-/bin.TheBin+exec) ⇒ <code>Promise.&lt;undefined&gt;</code>
         * [.exists()](#module_@the-/bin.TheBin+exists) ⇒ <code>Promise.&lt;boolean&gt;</code>
         * [.satisfiesVersion(versionString)](#module_@the-/bin.TheBin+satisfiesVersion) ⇒ <code>Promise.&lt;boolean&gt;</code>
         * [.verify([options])](#module_@the-/bin.TheBin+verify) ⇒ <code>Promise.&lt;boolean&gt;</code>
@@ -25,7 +25,7 @@ Bin manager for the-frameworks
 
 * [.TheBin](#module_@the-/bin.TheBin)
     * [new TheBin(cmd, [options])](#new_module_@the-/bin.TheBin_new)
-    * [.exec(...args)](#module_@the-/bin.TheBin+exec) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.exec(...args)](#module_@the-/bin.TheBin+exec) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.exists()](#module_@the-/bin.TheBin+exists) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.satisfiesVersion(versionString)](#module_@the-/bin.TheBin+satisfiesVersion) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.verify([options])](#module_@the-/bin.TheBin+verify) ⇒ <code>Promise.&lt;boolean&gt;</code>
@@ -44,7 +44,7 @@ Bin manager for the-frameworks
 
 <a name="module_@the-/bin.TheBin+exec"></a>
 
-#### theBin.exec(...args) ⇒ <code>Promise.&lt;void&gt;</code>
+#### theBin.exec(...args) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Execute bin file
 
 **Kind**: instance method of [<code>TheBin</code>](#module_@the-/bin.TheBin)  

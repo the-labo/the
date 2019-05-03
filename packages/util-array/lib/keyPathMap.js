@@ -3,7 +3,7 @@
  * @function keyPathMap
  * @param {string} keyPath - Attribute key path
  * @param {Object} [options={}] - Optional settings
- * @returns {function}
+ * @returns {function()}
  * @example
  *  [{foo:{bar:10}}, {foo:{bar:20}}].map(keyPathMap('foo.bar'))
  */

@@ -98,8 +98,10 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
+### typedef
+- [GenerateResult](./doc/api/api.md#GenerateResult)
+- [GenerateDirResult](./doc/api/api.md#GenerateDirResult)
 ### function
-- [default()](./doc/api/api.md#default)
 - [#generateDirSync(options)](./doc/api/api.md#module_@the-/tmp.TheTmp#generateDirSync)
 - [#generateSync(options)](./doc/api/api.md#module_@the-/tmp.TheTmp#generateSync)
 - [#generate(options)](./doc/api/api.md#module_@the-/tmp.TheTmp#generate)
@@ -107,9 +109,6 @@ tryExample().catch((err) => console.error(err))
 - [#while(handler,options)](./doc/api/api.md#module_@the-/tmp.TheTmp#while)
 - [#whileDir(handler,options)](./doc/api/api.md#module_@the-/tmp.TheTmp#whileDir)
 - [.create(args)](./doc/api/api.md#module_@the-/tmp.create)
-### typedef
-- [GenerateResult](./doc/api/api.md#GenerateResult)
-- [GenerateDirResult](./doc/api/api.md#GenerateDirResult)
 ### class
 - [.TheTmp](./doc/api/api.md#module_@the-/tmp.TheTmp)
 

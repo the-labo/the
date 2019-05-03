@@ -85,10 +85,10 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
+- [default()](./doc/api/api.md#default)
 - [#define(resourceName,schema)](./doc/api/api.md#@the-/driver-sequelize.TheDriverSequelize#define)
 - [#untilReady()](./doc/api/api.md#@the-/driver-sequelize.TheDriverSequelize#untilReady)
 - [.create(args)](./doc/api/api.md#@the-/driver-sequelize.create)
-- [.default()](./doc/api/api.md#@the-/driver-sequelize.default)
 - [.convertInbound()](./doc/api/api.md#module_@the-/driver-sequelize.converters.convertInbound)
 - [.convertOutbound()](./doc/api/api.md#module_@the-/driver-sequelize.converters.convertOutbound)
 - [.sequelizeMix()](./doc/api/api.md#module_@the-/driver-sequelize.mixins.sequelizeMix)

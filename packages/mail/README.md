@@ -99,7 +99,6 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
-- [default()](./doc/api/api.md#default)
 - [toLowerKeys()](./doc/api/api.md#toLowerKeys)
 - [#send()](./doc/api/api.md#module_@the-/mail.TheMail#send)
 - [.create(args)](./doc/api/api.md#module_@the-/mail.create)

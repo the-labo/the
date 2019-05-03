@@ -3,8 +3,8 @@
  * @function withForm
  * @deprecated
  * @memberOf module:@the-/mixin-scene
- * @param {function} Class - Class to mix
- * @returns {function} Mixed class
+ * @param {function()} Class - Class to mix
+ * @returns {function()} Mixed class
  */
 'use strict'
 

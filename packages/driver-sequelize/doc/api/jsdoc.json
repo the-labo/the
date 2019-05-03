@@ -16,6 +16,26 @@
     "version": "15.4.0"
   },
   {
+    "customTags": [
+      {
+        "tag": "link",
+        "value": "@the-/driver-sequelize}"
+      }
+    ],
+    "description": "Alias of {@memberof @the-/driver-sequelize",
+    "id": "default",
+    "kind": "function",
+    "longname": "default",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
+    },
+    "name": "default",
+    "order": 1,
+    "scope": "global"
+  },
+  {
     "description": "Define schema",
     "id": "@the-/driver-sequelize.TheDriverSequelize#define",
     "kind": "function",
@@ -67,7 +87,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -273,21 +293,6 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link @the-/driver-sequelize}",
-    "id": "@the-/driver-sequelize.default",
-    "kind": "function",
-    "longname": "@the-/driver-sequelize.default",
-    "memberof": "@the-/driver-sequelize",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
-    },
-    "name": "default",
-    "order": 1,
     "scope": "static"
   },
   {

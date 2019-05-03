@@ -91,7 +91,6 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
-- [default()](./doc/api/api.md#default)
 - [#for()](./doc/api/api.md#module_@the-/scene.TheScene#for)
 - [#get()](./doc/api/api.md#module_@the-/scene.TheScene#get)
 - [#has(namepath)](./doc/api/api.md#module_@the-/scene.TheScene#has)

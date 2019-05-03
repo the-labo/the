@@ -3,7 +3,7 @@
  * @memberof module:@the-/util-file
  * @function readAsJson
  * @param {string} filename
- * @returns {Promise.<Object>}
+ * @returns {Promise<Object>}
  */
 'use strict'
 

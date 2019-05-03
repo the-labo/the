@@ -57,6 +57,46 @@
     ]
   },
   {
+    "customTags": [
+      {
+        "tag": "link",
+        "value": "module:@the-/assert.create}"
+      }
+    ],
+    "description": "Default exports. Alias of {@memberof module:@the-/assert",
+    "id": "default",
+    "kind": "function",
+    "longname": "default",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/assert/lib"
+    },
+    "name": "default",
+    "order": 1,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "module:@the-/assert.TheAssert.TheAssert"
+          ]
+        }
+      }
+    ],
+    "scope": "global"
+  },
+  {
     "description": "Bind methods",
     "id": "TheAssert#bind",
     "kind": "function",
@@ -179,7 +219,7 @@
       {
         "type": {
           "names": [
-            "String"
+            "string"
           ]
         },
         "optional": true,
@@ -232,41 +272,6 @@
         "type": {
           "names": [
             "module:@the-/assert.TheAssert"
-          ]
-        }
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Default exports. Alias of {@link module:@the-/assert.create}",
-    "id": "module:@the-/assert.default",
-    "kind": "function",
-    "longname": "module:@the-/assert.default",
-    "memberof": "module:@the-/assert",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/assert/lib"
-    },
-    "name": "default",
-    "order": 1,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        },
-        "variable": true,
-        "name": "args"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "module:@the-/assert.TheAssert.TheAssert"
           ]
         }
       }

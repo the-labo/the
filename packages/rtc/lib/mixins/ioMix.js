@@ -2,8 +2,8 @@
  * Mixin for io
  * @memberof module:@the-/rtc.mixins
  * @function ioMix
- * @param {function} Class
- * @returns {function} Class
+ * @param {function()} Class
+ * @returns {function()} Class
  */
 'use strict'
 

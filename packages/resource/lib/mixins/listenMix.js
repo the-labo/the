@@ -2,8 +2,8 @@
  * Mixins for listen
  * @memberof module:@the-/resource.mixins
  * @function listenMix
- * @param {function} Class
- * @returns {function} Mixed class
+ * @param {function()} Class
+ * @returns {function()} Mixed class
  */
 'use strict'
 

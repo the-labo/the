@@ -101,7 +101,6 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
-- [default()](./doc/api/api.md#default)
 - [#apply(seed)](./doc/api/api.md#module_@the-/seed.TheSeed#apply)
 - [#explode(seed,counts)](./doc/api/api.md#module_@the-/seed.TheSeed#explode)
 - [.create(args)](./doc/api/api.md#module_@the-/seed.create)

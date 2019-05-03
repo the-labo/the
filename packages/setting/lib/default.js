@@ -1,5 +1,6 @@
 /**
- * Alias {@function default
+ * Alias {@memberof module:@the-/setting
+ * @function default
  * @link module:@the-/setting.create}
  */
 'use strict'

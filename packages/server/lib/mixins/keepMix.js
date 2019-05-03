@@ -2,8 +2,8 @@
  * Mixin to keep
  * @memberof module:@the-/server.mixins
  * @function keepMix
- * @param {function} Class
- * @returns {function} Class
+ * @param {function()} Class
+ * @returns {function()} Class
  */
 'use strict'
 

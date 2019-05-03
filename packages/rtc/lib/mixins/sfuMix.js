@@ -2,8 +2,8 @@
  * Mixin for sfu
  * @memberof module:@the-/rtc.mixins
  * @function sfuMix
- * @param {function} Class
- * @returns {function} Class
+ * @param {function()} Class
+ * @returns {function()} Class
  */
 'use strict'
 

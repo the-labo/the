@@ -110,6 +110,21 @@ describe('process-js-doc', () => {
  */`,
     )
   })
+
+  it('Handle default', async () => {
+    equal(
+      await processJSDoc(`/**
+ * Alias of {@link module:@the-/cache.default}
+ * @memberOf module:@the-/cache
+ * @function default
+ */`),
+      `/**
+ * Alias of {@link module:@the-/cache.default}
+ * @memberof module:@the-/cache
+ * @function default
+ */`,
+    )
+  })
 })
 
 /* global describe, before, after, it */

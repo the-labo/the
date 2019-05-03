@@ -92,7 +92,6 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
-- [default()](./doc/api/api.md#default)
 - [#watch(callback,options)](./doc/api/api.md#module_@the-/geo.TheGeo#watch)
 - [#detect(options)](./doc/api/api.md#module_@the-/geo.TheGeo#detect)
 - [.create(args)](./doc/api/api.md#module_@the-/geo.create)

@@ -11,7 +11,7 @@
       "path": "/Users/okuni/Projects/the/packages/jitter/lib"
     },
     "name": "@the-/jitter",
-    "order": 2,
+    "order": 1,
     "typicalname": "jitter",
     "version": "15.4.0"
   },
@@ -21,7 +21,7 @@
     "longname": "module:@the-/jitter.TheJitter",
     "memberof": "module:@the-/jitter.TheJitter",
     "name": "TheJitter",
-    "order": 4,
+    "order": 3,
     "params": [
       {
         "type": {
@@ -37,20 +37,6 @@
     ]
   },
   {
-    "description": "Alias of {@lnik module:@the-/jitter.create}",
-    "id": "default",
-    "kind": "function",
-    "longname": "default",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/jitter/lib"
-    },
-    "name": "default",
-    "order": 1,
-    "scope": "global"
-  },
-  {
     "description": "Decrement count",
     "id": "module:@the-/jitter.TheJitter#decrementCount",
     "kind": "function",
@@ -62,7 +48,7 @@
       "path": "/Users/okuni/Projects/the/packages/jitter/lib"
     },
     "name": "decrementCount",
-    "order": 5,
+    "order": 4,
     "params": [],
     "scope": "instance"
   },
@@ -78,7 +64,7 @@
       "path": "/Users/okuni/Projects/the/packages/jitter/lib"
     },
     "name": "incrementCount",
-    "order": 6,
+    "order": 5,
     "params": [],
     "scope": "instance"
   },
@@ -94,7 +80,7 @@
       "path": "/Users/okuni/Projects/the/packages/jitter/lib"
     },
     "name": "resetCount",
-    "order": 7,
+    "order": 6,
     "params": [],
     "scope": "instance"
   },
@@ -111,7 +97,7 @@
       "path": "/Users/okuni/Projects/the/packages/jitter/lib"
     },
     "name": "handle",
-    "order": 8,
+    "order": 7,
     "params": [
       {
         "type": {
@@ -126,7 +112,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -146,7 +132,7 @@
       "path": "/Users/okuni/Projects/the/packages/jitter/lib"
     },
     "name": "wait",
-    "order": 9,
+    "order": 8,
     "params": [],
     "returns": [
       {
@@ -170,7 +156,7 @@
       "path": "/Users/okuni/Projects/the/packages/jitter/lib"
     },
     "name": "TheJitter",
-    "order": 3,
+    "order": 2,
     "scope": "static"
   },
   {

@@ -2,7 +2,7 @@
  * @memberof module:@the-/util-file
  * @function isJSON5File
  * @param {string} filename
- * @returns {Boolean}
+ * @returns {boolean}
  */
 'use strict'
 const path = require('path')

@@ -1,9 +1,9 @@
 /**
- * Default exports. Alias of {@memberof module:@the-/assets
+ * Alias of {@link module:@the-/assets.create}
+ * @memberof module:@the-/assets
  * @function default
- * @link module:@the-/assets.create}
  * @param {...*} args
- * @returns {module:@the-/assets.TheAssert.TheAssert}
+ * @returns {module:@the-/assets.TheAssert}
  */
 'use strict'
 

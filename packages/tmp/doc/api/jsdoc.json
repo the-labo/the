@@ -11,23 +11,9 @@
       "path": "/Users/okuni/Projects/the/packages/tmp/lib"
     },
     "name": "@the-/tmp",
-    "order": 3,
+    "order": 2,
     "typicalname": "tmp",
     "version": "15.4.1"
-  },
-  {
-    "description": "Alias of {@link module:@the-/tmp.create}",
-    "id": "default",
-    "kind": "function",
-    "longname": "default",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
-    },
-    "name": "default",
-    "order": 1,
-    "scope": "global"
   },
   {
     "id": "GenerateResult",
@@ -39,7 +25,7 @@
       "path": "/Users/okuni/Projects/the/packages/tmp/lib"
     },
     "name": "GenerateResult",
-    "order": 4,
+    "order": 3,
     "properties": [
       {
         "type": {
@@ -84,7 +70,7 @@
       "path": "/Users/okuni/Projects/the/packages/tmp/lib"
     },
     "name": "GenerateDirResult",
-    "order": 5,
+    "order": 4,
     "properties": [
       {
         "type": {
@@ -123,7 +109,7 @@
       "path": "/Users/okuni/Projects/the/packages/tmp/lib"
     },
     "name": "generateDirSync",
-    "order": 7,
+    "order": 6,
     "params": [
       {
         "type": {
@@ -171,7 +157,7 @@
       "path": "/Users/okuni/Projects/the/packages/tmp/lib"
     },
     "name": "generateSync",
-    "order": 8,
+    "order": 7,
     "params": [
       {
         "type": {
@@ -209,7 +195,7 @@
       "path": "/Users/okuni/Projects/the/packages/tmp/lib"
     },
     "name": "generate",
-    "order": 9,
+    "order": 8,
     "params": [
       {
         "type": {
@@ -258,7 +244,7 @@
       "path": "/Users/okuni/Projects/the/packages/tmp/lib"
     },
     "name": "generateDir",
-    "order": 10,
+    "order": 9,
     "params": [
       {
         "type": {
@@ -307,6 +293,51 @@
       "path": "/Users/okuni/Projects/the/packages/tmp/lib"
     },
     "name": "while",
+    "order": 10,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Handler function to use tmp file",
+        "name": "handler"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Tmp options",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<undefined>"
+          ]
+        }
+      }
+    ],
+    "scope": "instance"
+  },
+  {
+    "async": true,
+    "description": "Create an use tmp directory until handler resolved (or rejected)",
+    "id": "module:@the-/tmp.TheTmp#whileDir",
+    "kind": "function",
+    "longname": "module:@the-/tmp.TheTmp#whileDir",
+    "memberof": "module:@the-/tmp.TheTmp",
+    "meta": {
+      "filename": "TheTmp.js",
+      "lineno": 106,
+      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+    },
+    "name": "whileDir",
     "order": 11,
     "params": [
       {
@@ -332,52 +363,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Create an use tmp directory until handler resolved (or rejected)",
-    "id": "module:@the-/tmp.TheTmp#whileDir",
-    "kind": "function",
-    "longname": "module:@the-/tmp.TheTmp#whileDir",
-    "memberof": "module:@the-/tmp.TheTmp",
-    "meta": {
-      "filename": "TheTmp.js",
-      "lineno": 106,
-      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
-    },
-    "name": "whileDir",
-    "order": 12,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Handler function to use tmp file",
-        "name": "handler"
-      },
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "description": "Tmp options",
-        "name": "options"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -395,7 +381,7 @@
       "path": "/Users/okuni/Projects/the/packages/tmp/lib"
     },
     "name": "TheTmp",
-    "order": 6,
+    "order": 5,
     "scope": "static"
   },
   {
@@ -409,7 +395,7 @@
       "path": "/Users/okuni/Projects/the/packages/tmp/lib"
     },
     "name": "exports",
-    "order": 2,
+    "order": 1,
     "scope": "static",
     "type": {
       "names": [

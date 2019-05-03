@@ -5,7 +5,7 @@
  * @function usageRule
  * @param {Object} config - Lint config
  * @param {string} config.usedIn - Files that may use the module
- * @returns {function} Lint function
+ * @returns {function()} Lint function
  */
 'use strict'
 

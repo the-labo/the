@@ -11,23 +11,9 @@
       "path": "/Users/okuni/Projects/the/packages/setting/lib"
     },
     "name": "@the-/setting",
-    "order": 3,
+    "order": 2,
     "typicalname": "setting",
     "version": "15.4.2"
-  },
-  {
-    "description": "Alias {@link module:@the-/setting.create}",
-    "id": "default",
-    "kind": "function",
-    "longname": "default",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/setting/lib"
-    },
-    "name": "default",
-    "order": 1,
-    "scope": "global"
   },
   {
     "description": "Delete value for name",
@@ -41,7 +27,7 @@
       "path": "/Users/okuni/Projects/the/packages/setting/lib"
     },
     "name": "del",
-    "order": 6,
+    "order": 5,
     "params": [
       {
         "type": {
@@ -67,7 +53,7 @@
       "path": "/Users/okuni/Projects/the/packages/setting/lib"
     },
     "name": "get",
-    "order": 7,
+    "order": 6,
     "params": [
       {
         "type": {
@@ -103,7 +89,7 @@
       "path": "/Users/okuni/Projects/the/packages/setting/lib"
     },
     "name": "set",
-    "order": 8,
+    "order": 7,
     "params": [
       {
         "type": {
@@ -132,7 +118,7 @@
       "path": "/Users/okuni/Projects/the/packages/setting/lib"
     },
     "name": "TheSetting",
-    "order": 4,
+    "order": 3,
     "scope": "static"
   },
   {
@@ -147,7 +133,7 @@
       "path": "/Users/okuni/Projects/the/packages/setting/lib"
     },
     "name": "TheSettingBase",
-    "order": 5,
+    "order": 4,
     "scope": "static"
   },
   {
@@ -162,7 +148,7 @@
       "path": "/Users/okuni/Projects/the/packages/setting/lib"
     },
     "name": "helpers",
-    "order": 2,
+    "order": 1,
     "scope": "static"
   },
   {
@@ -177,7 +163,7 @@
       "path": "/Users/okuni/Projects/the/packages/setting/lib/mixins"
     },
     "name": "mixins",
-    "order": 9,
+    "order": 8,
     "scope": "static"
   },
   {
@@ -226,7 +212,7 @@
       "path": "/Users/okuni/Projects/the/packages/setting/lib/mixins"
     },
     "name": "lockMix",
-    "order": 10,
+    "order": 9,
     "scope": "static"
   },
   {
@@ -240,7 +226,7 @@
       "path": "/Users/okuni/Projects/the/packages/setting/lib/mixins"
     },
     "name": "LockMixed",
-    "order": 11,
+    "order": 10,
     "scope": "inner"
   }
 ]

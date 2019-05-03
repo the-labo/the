@@ -2,8 +2,8 @@
  * Mixin for serialize
  * @memberof module:@the-/rtc.constants.mixins
  * @function serializeMix
- * @param {function} Class
- * @returns {function} Class
+ * @param {function()} Class
+ * @returns {function()} Class
  */
 'use strict'
 

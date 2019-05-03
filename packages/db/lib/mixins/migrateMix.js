@@ -2,8 +2,8 @@
  * Add migrate methods
  * @memberof module:@the-/db
  * @function migrateMix
- * @param {function}
- * @returns {function}
+ * @param {function()}
+ * @returns {function()}
  */
 'use strict'
 
@@ -17,7 +17,7 @@ function migrateMix(Class) {
     /**
      * Run database migration
      * @param {Object<string, Function>} handlers - Migration handler for each versions
-     * @returns {Promise.<?Object>} Migration result
+     * @returns {Promise<?Object>} Migration result
      */
     async migrate(handlers = {}) {
       const { TheDBSchema } = this.resources

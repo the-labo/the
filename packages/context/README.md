@@ -80,11 +80,11 @@ Usage
 ## API Guide
 
 ### function
+- [default()](./doc/api/api.md#default)
 - [#del(name)](./doc/api/api.md#@the-/context.TheContext#del)
 - [#get(name,options)](./doc/api/api.md#@the-/context.TheContext#get)
 - [#set(values)](./doc/api/api.md#@the-/context.TheContext#set)
 - [.create(args)](./doc/api/api.md#module_@the-/context.create)
-- [.default()](./doc/api/api.md#module_@the-/context.default)
 - [.ContextRootFor()](./doc/api/api.md#module_@the-/context.helpers.ContextRootFor)
 ### class
 - [.TheContext](./doc/api/api.md#@the-/context.TheContext)

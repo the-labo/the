@@ -106,11 +106,11 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
+- [default()](./doc/api/api.md#default)
 - [#bindMethodCallCounter(name,config)](./doc/api/api.md#module_@the-/metrics.TheMetrics#bindMethodCallCounter)
 - [#flush()](./doc/api/api.md#module_@the-/metrics.TheMetrics#flush)
 - [#start()](./doc/api/api.md#module_@the-/metrics.TheMetrics#start)
 - [.create(args)](./doc/api/api.md#module_@the-/metrics.create)
-- [.default()](./doc/api/api.md#module_@the-/metrics.default)
 ### class
 - [.TheMetrics](./doc/api/api.md#module_@the-/metrics.TheMetrics)
 - [.Counter](./doc/api/api.md#module_@the-/metrics.counters.Counter)

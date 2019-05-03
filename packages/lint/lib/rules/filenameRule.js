@@ -5,7 +5,7 @@
  * @param {Object} config - Lint config
  * @param {string|RegExp} config.startsWith - Ends with
  * @param {string|RegExp} config.endsWith - Ends with
- * @returns {function} Lint function
+ * @returns {function()} Lint function
  */
 'use strict'
 

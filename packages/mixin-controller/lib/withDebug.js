@@ -1,8 +1,8 @@
 /**
  * Wrap controller with debug
  * @function withDebug
- * @param {function} Base class
- * @returns {function} Mixed class
+ * @param {function()} Base class
+ * @returns {function()} Mixed class
  */
 'use strict'
 

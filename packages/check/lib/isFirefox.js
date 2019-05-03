@@ -2,7 +2,7 @@
  * Detect Firefox or not
  * @memberof module:@the-/check
  * @function isFirefox
- * @returns {Boolean}
+ * @returns {boolean}
  */
 'use strict'
 

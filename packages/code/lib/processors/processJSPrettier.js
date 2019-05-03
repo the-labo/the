@@ -2,7 +2,7 @@
  * @memberof module:@the-/code.processors
  * @function processJSPrettier
  * @param {string} content
- * @returns {Promise.<string>} processed
+ * @returns {Promise<string>} processed
  */
 'use strict'
 

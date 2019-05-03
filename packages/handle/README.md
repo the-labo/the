@@ -96,12 +96,12 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
+- [default()](./doc/api/api.md#default)
 - [#load(SceneClass,names)](./doc/api/api.md#module_@the-/handle.TheHandle#load)
 - [#loadFromMapping(SceneMapping)](./doc/api/api.md#module_@the-/handle.TheHandle#loadFromMapping)
 - [#setAttributes(attributes)](./doc/api/api.md#module_@the-/handle.TheHandle#setAttributes)
 - [#load(SceneClass,names)](./doc/api/api.md#module_@the-/handle.toHandleSceneClass~HandleSceneClass#load)
 - [.create(args)](./doc/api/api.md#module_@the-/handle.create)
-- [.default()](./doc/api/api.md#module_@the-/handle.default)
 - [.toHandleSceneClass()](./doc/api/api.md#module_@the-/handle.toHandleSceneClass)
 ### class
 - [.TheHandle](./doc/api/api.md#module_@the-/handle.TheHandle)

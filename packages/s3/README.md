@@ -97,7 +97,6 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
-- [default()](./doc/api/api.md#default)
 - [#upload(src,options)](./doc/api/api.md#module_@the-/s3.TheS3#upload)
 - [.create(args)](./doc/api/api.md#module_@the-/s3.create)
 ### class

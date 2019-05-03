@@ -1,8 +1,8 @@
 /**
  * @memberof module:@the-/db
  * @function refreshMix
- * @param {function} Class
- * @returns {function} Mixed Class
+ * @param {function()} Class
+ * @returns {function()} Mixed Class
  */
 'use strict'
 

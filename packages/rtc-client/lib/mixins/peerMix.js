@@ -2,8 +2,8 @@
  * Mixin for peer
  * @memberof module:@the-/rtc.constants.mixins
  * @function peerMix
- * @param {function} Class
- * @returns {function} Class
+ * @param {function()} Class
+ * @returns {function()} Class
  */
 'use strict'
 

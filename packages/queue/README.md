@@ -118,12 +118,12 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
+- [default()](./doc/api/api.md#default)
 - [#push(task)](./doc/api/api.md#module_@the-/queue.TheQueue#push)
 - [#start()](./doc/api/api.md#module_@the-/queue.TheQueue#start)
 - [#stop()](./doc/api/api.md#module_@the-/queue.TheQueue#stop)
 - [#wait(options)](./doc/api/api.md#module_@the-/queue.TheQueue#wait)
 - [.create(args)](./doc/api/api.md#module_@the-/queue.create)
-- [.default()](./doc/api/api.md#module_@the-/queue.default)
 ### class
 - [.TheQueue](./doc/api/api.md#module_@the-/queue.TheQueue)
 

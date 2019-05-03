@@ -2,7 +2,7 @@
  * For bindScope
  * @memberof module:@the-/mixin-scene
  * @function bindScope
- * @returns {function} Class annotation function
+ * @returns {function()} Class annotation function
  */
 'use strict'
 

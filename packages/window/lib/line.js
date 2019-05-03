@@ -2,7 +2,7 @@
  * Handle toggle online/offline
  * @memberof module:@the-/window
  * @function line
- * @param {function} handler - Event handler
+ * @param {function()} handler - Event handler
  * @param {Object} [options={}] - Optional settings
  * @param {number} [options.delay=100] Delay for callback
  */

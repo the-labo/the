@@ -89,7 +89,7 @@
     "order": 59
   },
   {
-    "description": "module:@the-/server.mixins.keepMix",
+    "description": "module:@the-/server.mixins.keepmix",
     "id": "KeepMixed",
     "kind": "class",
     "longname": "KeepMixed",
@@ -109,7 +109,7 @@
         "value": "module:@the-/server.create}"
       }
     ],
-    "description": "Alias of {@memberOf module:@the-/server",
+    "description": "Alias of {@memberof module:@the-/server",
     "id": "default",
     "kind": "function",
     "longname": "default",

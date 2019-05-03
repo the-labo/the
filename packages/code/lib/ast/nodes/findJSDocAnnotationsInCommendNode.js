@@ -23,7 +23,6 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
   }
 
   const offset = (CommentNode.start || 0) + 2
-
   for (let i = 0; i < value.length; i++) {
     const letter = value[i]
     const hitsEmpty = !letter.trim()
@@ -36,34 +35,34 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
     }
     started = true
 
+    const annotationStarted = hitsAtMark && /\*\s*$/.test(value.substring(0, i))
     if (!workingAnnotation) {
-      if (hitsAtMark) {
+      if (annotationStarted) {
         workingAnnotation = { start: offset + i }
       }
       continue
     }
-    const nextStarted = workingAnnotation.end && hitsAtMark
-    if (nextStarted) {
+
+    const annotationEnded = annotationStarted && workingAnnotation.end
+    if (annotationEnded) {
       workingAnnotation.body = bodyFor(workingAnnotation)
       annotations.push(workingAnnotation)
       workingAnnotation = { start: offset + i }
       continue
     }
-    if (hitsEmpty) {
-      if (!workingAnnotation.kind) {
-        const kindStart = workingAnnotation.start
-        const kindEnd = Number(i) + offset
-        workingAnnotation.kind = {
-          end: kindEnd,
-          name: String(value).substring(
-            kindStart + 1 - offset,
-            kindEnd - offset,
-          ),
-          start: kindStart,
-        }
-        continue
+
+    const kindEnded = hitsEmpty && !workingAnnotation.kind
+    if (kindEnded) {
+      const kindStart = workingAnnotation.start
+      const kindEnd = Number(i) + offset
+      workingAnnotation.kind = {
+        end: kindEnd,
+        name: String(value).substring(kindStart + 1 - offset, kindEnd - offset),
+        start: kindStart,
       }
+      continue
     }
+
     if (hitsEOL) {
       workingAnnotation.end = offset + i
       workingAnnotation.body = bodyFor(workingAnnotation)
@@ -90,7 +89,6 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
     }
     annotations.push(workingAnnotation)
   }
-
   return annotations.map((annotation) => ({ ...annotation }))
 }
 

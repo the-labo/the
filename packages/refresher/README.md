@@ -99,12 +99,12 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
+- [default()](./doc/api/api.md#default)
 - [#has(target)](./doc/api/api.md#module_@the-/refresher.TheRefresher#has)
 - [#request()](./doc/api/api.md#module_@the-/refresher.TheRefresher#request)
 - [#start()](./doc/api/api.md#module_@the-/refresher.TheRefresher#start)
 - [#stop()](./doc/api/api.md#module_@the-/refresher.TheRefresher#stop)
 - [.create(args)](./doc/api/api.md#module_@the-/refresher.create)
-- [.default()](./doc/api/api.md#module_@the-/refresher.default)
 ### class
 - [.TheRefresher](./doc/api/api.md#module_@the-/refresher.TheRefresher)
 

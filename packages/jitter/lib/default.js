@@ -1,6 +1,7 @@
 /**
- * Alias of {@function default
- * @lnik module:@the-/jitter.create}
+ * Alias of {@link module:@the-/jitter.create}
+ * @memberof module:@the-/jitter
+ * @function default
  */
 'use strict'
 

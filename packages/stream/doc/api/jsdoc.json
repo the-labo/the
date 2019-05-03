@@ -54,7 +54,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -77,15 +77,21 @@
     "order": 6,
     "params": [
       {
-        "name": "chunks",
-        "variable": true
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "description": "Chunk data to push",
+        "name": "chunks"
       }
     ],
     "returns": [
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -111,7 +117,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }

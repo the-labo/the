@@ -105,12 +105,12 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
+- [default()](./doc/api/api.md#default)
 - [#controllerDidAttach()](./doc/api/api.md#module_@the-/controller.TheCtrl#controllerDidAttach)
 - [#controllerMethodDidInvoke()](./doc/api/api.md#module_@the-/controller.TheCtrl#controllerMethodDidInvoke)
 - [#controllerMethodWillInvoke()](./doc/api/api.md#module_@the-/controller.TheCtrl#controllerMethodWillInvoke)
 - [#controllerWillDetach()](./doc/api/api.md#module_@the-/controller.TheCtrl#controllerWillDetach)
 - [.create(args)](./doc/api/api.md#module_@the-/controller.create)
-- [.default()](./doc/api/api.md#module_@the-/controller.default)
 - [.afterInvocation(invocation)](./doc/api/api.md#module_@the-/controller.TheCtrl.afterInvocation)
 - [.beforeInvocation(invocation)](./doc/api/api.md#module_@the-/controller.TheCtrl.beforeInvocation)
 - [.rescueInvocation(invocation)](./doc/api/api.md#module_@the-/controller.TheCtrl.rescueInvocation)

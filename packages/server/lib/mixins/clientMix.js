@@ -2,8 +2,8 @@
  * Mixin for client
  * @memberof module:@the-/server.mixins
  * @function clientMix
- * @param {function} Class
- * @returns {function} Class
+ * @param {function()} Class
+ * @returns {function()} Class
  */
 'use strict'
 

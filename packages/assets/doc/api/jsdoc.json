@@ -16,6 +16,46 @@
     "version": "15.4.1"
   },
   {
+    "customTags": [
+      {
+        "tag": "link",
+        "value": "module:@the-/assets.create}"
+      }
+    ],
+    "description": "Default exports. Alias of {@memberof module:@the-/assets",
+    "id": "default",
+    "kind": "function",
+    "longname": "default",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/assets/lib"
+    },
+    "name": "default",
+    "order": 1,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "module:@the-/assets.TheAssert.TheAssert"
+          ]
+        }
+      }
+    ],
+    "scope": "global"
+  },
+  {
     "async": true,
     "description": "Install assets into directory",
     "id": "module:@the-/assets.TheAssets#installTo",
@@ -132,41 +172,6 @@
         "type": {
           "names": [
             "module:@the-/assets.TheAssets"
-          ]
-        }
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Default exports. Alias of {@link module:@the-/assets.create}",
-    "id": "module:@the-/assets.default",
-    "kind": "function",
-    "longname": "module:@the-/assets.default",
-    "memberof": "module:@the-/assets",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/assets/lib"
-    },
-    "name": "default",
-    "order": 1,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        },
-        "variable": true,
-        "name": "args"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "module:@the-/assets.TheAssert.TheAssert"
           ]
         }
       }

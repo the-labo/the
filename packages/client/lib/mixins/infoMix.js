@@ -1,8 +1,8 @@
 /**
  * @memberof module:@the-/client.mixins
  * @function infoMix
- * @param {function} Class
- * @returns {function}
+ * @param {function()} Class
+ * @returns {function()}
  */
 'use strict'
 

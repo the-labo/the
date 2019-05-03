@@ -1,8 +1,8 @@
 /**
  * @memberof module:@the-/client.mixins
  * @function pingPongMix
- * @param {function} Class - Class to mix
- * @returns {function} Mixed class
+ * @param {function()} Class - Class to mix
+ * @returns {function()} Mixed class
  */
 'use strict'
 

@@ -4,7 +4,7 @@
  * @function hasBin
  * @param {string} binName - Name of bin
  * @param {Object} [options={}]
- * @returns {Promise.<boolean>}
+ * @returns {Promise<boolean>}
  */
 'use strict'
 

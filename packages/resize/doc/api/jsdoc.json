@@ -46,6 +46,26 @@
     ]
   },
   {
+    "customTags": [
+      {
+        "tag": "link",
+        "value": "module:@the-/resize.create}"
+      }
+    ],
+    "description": "Alias of {@memberof module:@the-/resize",
+    "id": "default",
+    "kind": "function",
+    "longname": "default",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/resize/lib"
+    },
+    "name": "default",
+    "order": 1,
+    "scope": "global"
+  },
+  {
     "async": true,
     "description": "Convert file(s)",
     "id": "module:@the-/resize.TheResize#convert",
@@ -448,21 +468,6 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link module:@the-/resize.create}",
-    "id": "module:@the-/resize.default",
-    "kind": "function",
-    "longname": "module:@the-/resize.default",
-    "memberof": "module:@the-/resize",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/resize/lib"
-    },
-    "name": "default",
-    "order": 1,
     "scope": "static"
   }
 ]

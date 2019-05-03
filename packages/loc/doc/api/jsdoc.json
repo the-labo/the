@@ -122,7 +122,7 @@
       {
         "type": {
           "names": [
-            "Number"
+            "number"
           ]
         },
         "optional": true,

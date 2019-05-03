@@ -27,7 +27,7 @@
 
 <dl>
 <dt><a href="#default">default()</a></dt>
-<dd><p>Alias of {@memberOf module:@the-/rtc</p>
+<dd><p>Alias of {@memberof module:@the-/rtc</p>
 </dd>
 <dt><a href="#httpMix">httpMix(Class)</a> ⇒ <code>function</code></dt>
 <dd><p>Mixin for http</p>
@@ -39,7 +39,7 @@
 ## @the-/rtc
 RTC server for the-frameworks
 
-**Version**: 15.4.1  
+**Version**: 15.4.2  
 **License**: MIT  
 
 * [@the-/rtc](#module_@the-/rtc)
@@ -235,7 +235,7 @@ Webrtc proxy connections
 <a name="default"></a>
 
 ## default()
-Alias of {@memberOf module:@the-/rtc
+Alias of {@memberof module:@the-/rtc
 
 **Kind**: global function  
 **Link**: module:@the-/rtc.create}  

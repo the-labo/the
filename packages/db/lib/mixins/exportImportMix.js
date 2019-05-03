@@ -2,8 +2,8 @@
  * Add export/import methods
  * @memberof module:@the-/db
  * @function exportImportMix
- * @param {function}
- * @returns {function}
+ * @param {function()}
+ * @returns {function()}
  */
 'use strict'
 

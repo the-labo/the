@@ -1,7 +1,7 @@
 /**
- * Alias of {@memberof module:@the-/run
+ * Alias of {@link module:@the-/run.create}
+ * @memberof module:@the-/run
  * @function default
- * @link module:@the-/run.create}
  */
 'use strict'
 

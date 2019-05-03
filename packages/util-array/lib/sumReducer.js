@@ -1,9 +1,9 @@
 /**
  * sumReducer
- * @param {function}
+ * @param {function()}
  * @param {Object} [options={}] - Optional settings
  * @param {function|string} [options.of=(v)=>v] - Key extractor
- * @returns {function}
+ * @returns {function()}
  * @example
  *  [2,2,4].filter(sumReducer())
  */

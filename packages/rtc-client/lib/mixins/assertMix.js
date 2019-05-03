@@ -2,8 +2,8 @@
  * Mixin for assert
  * @memberof module:@the-/rtc.constants.mixins
  * @function assertMix
- * @param {function} Class
- * @returns {function} Class
+ * @param {function()} Class
+ * @returns {function()} Class
  */
 'use strict'
 

@@ -110,7 +110,6 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
-- [default()](./doc/api/api.md#default)
 - [#add(pattern,checker)](./doc/api/api.md#module_@the-/lint.TheLint#add)
 - [#run()](./doc/api/api.md#module_@the-/lint.TheLint#run)
 - [.create(args)](./doc/api/api.md#module_@the-/lint.create)

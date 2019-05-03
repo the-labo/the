@@ -2,7 +2,7 @@
  * Handle event rescue on document
  * @function rescue
  * @param {string} event - Name of event
- * @param {function} handler - Event handler
+ * @param {function()} handler - Event handler
  */
 'use strict'
 

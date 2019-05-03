@@ -1,7 +1,7 @@
 /**
- * Alias of {@memberof module:@the-/queue
+ * Alias of {@link module:@the-/queue}
+ * @memberof module:@the-/queue
  * @function default
- * @link module:@the-/queue}
  */
 'use strict'
 

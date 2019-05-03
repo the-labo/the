@@ -89,13 +89,13 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
+### function
+- [default()](./doc/api/api.md#default)
+- [.create(args)](./doc/api/api.md#module_@the-/polyfill.create)
 ### class
 - [.ThePolyfill](./doc/api/api.md#module_@the-/polyfill.ThePolyfill)
 ### namespace
 - [.helpers](./doc/api/api.md#module_@the-/polyfill.helpers)
-### function
-- [.create(args)](./doc/api/api.md#module_@the-/polyfill.create)
-- [.default()](./doc/api/api.md#module_@the-/polyfill.default)
 
 <!-- LICENSE Start -->
 <a name="license"></a>

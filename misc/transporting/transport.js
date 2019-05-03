@@ -304,46 +304,44 @@ const _removeDevDeps = async (baseDir, names) => {
       '@the-/script-test',
     ])
 
-    {
-      await _rewritePkg(
-        toDir,
-        ({ dependencies = {}, devDependencies = {}, scripts = {} }) => {
-          for (const [name, ver] of Object.entries(dependencies)) {
-            if (/^file/.test(ver)) {
-              devDependencies[name] = ver
-              delete dependencies[name]
-            }
+    await _rewritePkg(
+      toDir,
+      ({ dependencies = {}, devDependencies = {}, scripts = {} }) => {
+        for (const [name, ver] of Object.entries(dependencies)) {
+          if (/^file/.test(ver)) {
+            devDependencies[name] = ver
+            delete dependencies[name]
           }
-          delete scripts.update
-          delete scripts.release
-          return {
-            author: {
-              email: 'okunishinishi@gmail.com',
-              name: 'Taka Okunishi',
-              url: 'http://okunishitaka.com',
-            },
-            bugs: {
-              url: 'https://github.com/the-labo/the#issues',
-            },
-            dependencies,
-            devDependencies,
-            engines: {
-              node: '>=10',
-              npm: '>=6',
-            },
-            homepage: `https://github.com/the-labo/the/tree/master/packages/${toPkg.name
-              .split('/')
-              .pop()}#readme`,
-            keywords: ['the', kind].filter(Boolean).sort(),
-            name: `@the-/${name}`,
-            publishConfig: {
-              access: 'public',
-            },
-            scripts,
-          }
-        },
-      )
-    }
+        }
+        delete scripts.update
+        delete scripts.release
+        return {
+          author: {
+            email: 'okunishinishi@gmail.com',
+            name: 'Taka Okunishi',
+            url: 'http://okunishitaka.com',
+          },
+          bugs: {
+            url: 'https://github.com/the-labo/the#issues',
+          },
+          dependencies,
+          devDependencies,
+          engines: {
+            node: '>=10',
+            npm: '>=6',
+          },
+          homepage: `https://github.com/the-labo/the/tree/master/packages/${toPkg.name
+            .split('/')
+            .pop()}#readme`,
+          keywords: ['the', kind].filter(Boolean).sort(),
+          name: `@the-/${name}`,
+          publishConfig: {
+            access: 'public',
+          },
+          scripts,
+        }
+      },
+    )
   }
 })().catch((e) => {
   console.error(e)

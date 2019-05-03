@@ -2,8 +2,8 @@
  * Mixin for promise
  * @memberof module:@the-/rtc.constants.mixins
  * @function promiseMix
- * @param {function} Class
- * @returns {function} Class
+ * @param {function()} Class
+ * @returns {function()} Class
  */
 'use strict'
 

@@ -58,6 +58,26 @@
     ]
   },
   {
+    "customTags": [
+      {
+        "tag": "link",
+        "value": "module:@the-/seal.create}"
+      }
+    ],
+    "description": "Alias of {@memberof module:@the-/seal",
+    "id": "default",
+    "kind": "function",
+    "longname": "default",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/seal/lib"
+    },
+    "name": "default",
+    "order": 1,
+    "scope": "global"
+  },
+  {
     "description": "Seal values",
     "id": "module:@the-/seal.TheSeal#seal",
     "kind": "function",
@@ -129,7 +149,7 @@
       {
         "type": {
           "names": [
-            "Boolean"
+            "boolean"
           ]
         },
         "description": "Valid or not"
@@ -184,21 +204,6 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link module:@the-/seal.create}",
-    "id": "module:@the-/seal.default",
-    "kind": "function",
-    "longname": "module:@the-/seal.default",
-    "memberof": "module:@the-/seal",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/seal/lib"
-    },
-    "name": "default",
-    "order": 1,
     "scope": "static"
   }
 ]

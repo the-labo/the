@@ -2,8 +2,8 @@
  * Mixin for moment
  * @memberof module:@the-/date.mixins
  * @function momentMix
- * @param {function} Class
- * @returns {function} Class
+ * @param {function()} Class
+ * @returns {function()} Class
  */
 'use strict'
 

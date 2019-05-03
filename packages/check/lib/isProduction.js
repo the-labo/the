@@ -2,7 +2,7 @@
  * Do unless production env
  * @memberof module:@the-/check
  * @function isProduction
- * @returns {Boolean} Is production or not
+ * @returns {boolean} Is production or not
  */
 'use strict'
 

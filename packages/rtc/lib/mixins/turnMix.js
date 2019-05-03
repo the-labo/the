@@ -2,8 +2,8 @@
  * Mixin for turn
  * @memberof module:@the-/rtc.mixins
  * @function turnMix
- * @param {function} Class
- * @returns {function} Class
+ * @param {function()} Class
+ * @returns {function()} Class
  */
 'use strict'
 

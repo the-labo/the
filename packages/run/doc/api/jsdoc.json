@@ -49,6 +49,26 @@
     ]
   },
   {
+    "customTags": [
+      {
+        "tag": "link",
+        "value": "module:@the-/run.create}"
+      }
+    ],
+    "description": "Alias of {@memberof module:@the-/run",
+    "id": "default",
+    "kind": "function",
+    "longname": "default",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/run/lib"
+    },
+    "name": "default",
+    "order": 1,
+    "scope": "global"
+  },
+  {
     "id": "module:@the-/run.TheRun",
     "kind": "class",
     "longname": "module:@the-/run.TheRun",
@@ -95,21 +115,6 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link module:@the-/run.create}",
-    "id": "module:@the-/run.default",
-    "kind": "function",
-    "longname": "module:@the-/run.default",
-    "memberof": "module:@the-/run",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/run/lib"
-    },
-    "name": "default",
-    "order": 1,
     "scope": "static"
   },
   {

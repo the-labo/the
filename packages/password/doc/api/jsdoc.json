@@ -16,6 +16,26 @@
     "version": "15.4.0"
   },
   {
+    "customTags": [
+      {
+        "tag": "link",
+        "value": "module:@the-/password}"
+      }
+    ],
+    "description": "Alias of {@memberof module:@the-/password",
+    "id": "default",
+    "kind": "function",
+    "longname": "default",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/password/lib"
+    },
+    "name": "default",
+    "order": 1,
+    "scope": "global"
+  },
+  {
     "id": "module:@the-/password.ThePassword",
     "kind": "class",
     "longname": "module:@the-/password.ThePassword",
@@ -62,21 +82,6 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link module:@the-/password}",
-    "id": "module:@the-/password.default",
-    "kind": "function",
-    "longname": "module:@the-/password.default",
-    "memberof": "module:@the-/password",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/password/lib"
-    },
-    "name": "default",
-    "order": 1,
     "scope": "static"
   }
 ]

@@ -2,8 +2,8 @@
  * Define koa middleware register ctx values
  * @memberof module:@the-/server.helpers
  * @function ctxInjector
- * @param {function} creators
- * @returns {function}
+ * @param {function()} creators
+ * @returns {function()}
  */
 'use strict'
 

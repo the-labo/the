@@ -4,7 +4,7 @@
  * @deprecated
  * @function readFileAsDataURL
  * @param {File} - File to read
- * @returns {Promise.<string>} Data url
+ * @returns {Promise<string>} Data url
  */
 'use strict'
 

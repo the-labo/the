@@ -2,7 +2,7 @@
  * Read file as array buffer
  * @function readFile
  * @param {File} file - File to read
- * @returns {Promise.<ArrayBuffer>} - Array buffer
+ * @returns {Promise<ArrayBuffer>} - Array buffer
  */
 'use strict'
 

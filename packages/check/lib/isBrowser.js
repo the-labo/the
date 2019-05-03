@@ -2,7 +2,7 @@
  * Detect if browser side
  * @memberof module:@the-/check
  * @function isBrowser
- * @returns {Boolean}
+ * @returns {boolean}
  */
 'use strict'
 

@@ -2,7 +2,7 @@
  * Compose multiple mixins into one
  * @function compose
  * @param {...function} mixins
- * @returns {function} Composed mixin
+ * @returns {function()} Composed mixin
  */
 'use strict'
 

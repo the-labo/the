@@ -12,7 +12,7 @@
 
 <dl>
 <dt><a href="#KeepMixed">KeepMixed</a></dt>
-<dd><p>module:@the-/server.mixins.keepMix</p>
+<dd><p>module:@the-/server.mixins.keepmix</p>
 </dd>
 </dl>
 
@@ -20,7 +20,7 @@
 
 <dl>
 <dt><a href="#default">default()</a></dt>
-<dd><p>Alias of {@memberOf module:@the-/server</p>
+<dd><p>Alias of {@memberof module:@the-/server</p>
 </dd>
 <dt><a href="#assertMethods">assertMethods(Class, reservedNames)</a></dt>
 <dd></dd>
@@ -688,13 +688,13 @@ Create a TheServer instance
 <a name="KeepMixed"></a>
 
 ## KeepMixed
-module:@the-/server.mixins.keepMix
+module:@the-/server.mixins.keepmix
 
 **Kind**: global class  
 <a name="default"></a>
 
 ## default()
-Alias of {@memberOf module:@the-/server
+Alias of {@memberof module:@the-/server
 
 **Kind**: global function  
 **Link**: module:@the-/server.create}  

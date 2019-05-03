@@ -1,6 +1,7 @@
 /**
- * Alias of {@function default
- * @link module:@the-/s3}
+ * Alias of {@link module:@the-/s3}
+ * @memberof module:@the-/s3
+ * @function default
  */
 'use strict'
 

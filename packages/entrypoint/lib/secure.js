@@ -2,7 +2,7 @@
  * Make sure to be secure
  * @function secure
  * @param {Object} [options={}] - Optional settings
- * @returns {Boolean} Redirect triggered
+ * @returns {boolean} Redirect triggered
  */
 'use strict'
 

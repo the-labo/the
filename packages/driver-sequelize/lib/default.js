@@ -1,7 +1,8 @@
 /**
- * Alias of {@memberof @the-/driver-sequelize
+ * Alias of {@memberof module:@the-/driver-sequelize
  * @function default
- * @link @the-/driver-sequelize}
+ *
+ * @link module:@the-/driver-sequelize}
  */
 'use strict'
 

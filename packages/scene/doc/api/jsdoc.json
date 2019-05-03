@@ -11,23 +11,9 @@
       "path": "/Users/okuni/Projects/the/packages/scene/lib"
     },
     "name": "@the-/scene",
-    "order": 2,
+    "order": 1,
     "typicalname": "scene",
     "version": "15.4.1"
-  },
-  {
-    "description": "Alias of {@link module:@the-/scene.create}",
-    "id": "default",
-    "kind": "function",
-    "longname": "default",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib"
-    },
-    "name": "default",
-    "order": 1,
-    "scope": "global"
   },
   {
     "description": "Scene scope",
@@ -41,7 +27,7 @@
       "path": "/Users/okuni/Projects/the/packages/scene/lib"
     },
     "name": "scope",
-    "order": 4,
+    "order": 3,
     "params": [],
     "returns": [
       {
@@ -66,7 +52,7 @@
       "path": "/Users/okuni/Projects/the/packages/scene/lib"
     },
     "name": "for",
-    "order": 5,
+    "order": 4,
     "params": [],
     "scope": "instance"
   },
@@ -82,7 +68,7 @@
       "path": "/Users/okuni/Projects/the/packages/scene/lib"
     },
     "name": "get",
-    "order": 6,
+    "order": 5,
     "params": [],
     "scope": "instance"
   },
@@ -98,7 +84,7 @@
       "path": "/Users/okuni/Projects/the/packages/scene/lib"
     },
     "name": "has",
-    "order": 7,
+    "order": 6,
     "params": [
       {
         "type": {
@@ -132,7 +118,7 @@
       "path": "/Users/okuni/Projects/the/packages/scene/lib"
     },
     "name": "init",
-    "order": 8,
+    "order": 7,
     "params": [],
     "scope": "instance"
   },
@@ -148,7 +134,7 @@
       "path": "/Users/okuni/Projects/the/packages/scene/lib"
     },
     "name": "set",
-    "order": 9,
+    "order": 8,
     "params": [],
     "scope": "instance"
   },
@@ -164,7 +150,7 @@
       "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
     },
     "name": "subFor",
-    "order": 17,
+    "order": 16,
     "params": [
       {
         "type": {
@@ -198,7 +184,7 @@
       "path": "/Users/okuni/Projects/the/packages/scene/lib"
     },
     "name": "TheScene",
-    "order": 3,
+    "order": 2,
     "scope": "static"
   },
   {
@@ -213,7 +199,7 @@
       "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
     },
     "name": "mixins",
-    "order": 14,
+    "order": 13,
     "scope": "static"
   },
   {
@@ -262,7 +248,7 @@
       "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
     },
     "name": "errorMix",
-    "order": 10,
+    "order": 9,
     "params": [
       {
         "type": {
@@ -296,7 +282,7 @@
       "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
     },
     "name": "goMix",
-    "order": 12,
+    "order": 11,
     "params": [
       {
         "type": {
@@ -330,7 +316,7 @@
       "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
     },
     "name": "subMix",
-    "order": 15,
+    "order": 14,
     "params": [
       {
         "type": {
@@ -364,7 +350,7 @@
       "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
     },
     "name": "ErrorMixed",
-    "order": 11,
+    "order": 10,
     "scope": "inner"
   },
   {
@@ -378,7 +364,7 @@
       "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
     },
     "name": "GoMixed",
-    "order": 13,
+    "order": 12,
     "scope": "inner"
   },
   {
@@ -392,7 +378,7 @@
       "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
     },
     "name": "SubMixed",
-    "order": 16,
+    "order": 15,
     "scope": "inner"
   }
 ]

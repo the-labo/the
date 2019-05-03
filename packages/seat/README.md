@@ -128,6 +128,7 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
+- [default()](./doc/api/api.md#default)
 - [#acquire(key,next)](./doc/api/api.md#module_@the-/seat.TheSeat#acquire)
 - [#acquireNumber(key,options)](./doc/api/api.md#module_@the-/seat.TheSeat#acquireNumber)
 - [#acquireString(key,options)](./doc/api/api.md#module_@the-/seat.TheSeat#acquireString)
@@ -138,7 +139,6 @@ tryExample().catch((err) => console.error(err))
 - [#scope(scopeName)](./doc/api/api.md#module_@the-/seat.TheSeat#scope)
 - [#take(key,value)](./doc/api/api.md#module_@the-/seat.TheSeat#take)
 - [.create(args)](./doc/api/api.md#module_@the-/seat.create)
-- [.default()](./doc/api/api.md#module_@the-/seat.default)
 - [.lockMix()](./doc/api/api.md#module_@the-/seat.mixins.lockMix)
 - [.scopeMix()](./doc/api/api.md#module_@the-/seat.scopeMix)
 ### class

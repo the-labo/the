@@ -59,15 +59,35 @@
       {
         "type": {
           "names": [
-            "function"
+            "Array.<function()>"
           ]
         },
         "optional": true,
         "defaultvalue": "[]",
-        "description": "Redux middlewares",
+        "description": "Redux middleware functions",
         "name": "options.middlewares"
       }
     ]
+  },
+  {
+    "customTags": [
+      {
+        "tag": "link",
+        "value": "module:@the-/store}"
+      }
+    ],
+    "description": "Alias of {@memberof module:@the-/store",
+    "id": "create",
+    "kind": "function",
+    "longname": "create",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/store/lib"
+    },
+    "name": "create",
+    "order": 1,
+    "scope": "global"
   },
   {
     "description": "Load a scope",
@@ -199,6 +219,12 @@
     "order": 10,
     "params": [
       {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Listener function",
         "name": "listener"
       }
     ],
@@ -208,7 +234,8 @@
           "names": [
             "function"
           ]
-        }
+        },
+        "description": "- Unsubscribe function"
       }
     ],
     "scope": "instance"
@@ -346,21 +373,6 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link module:@the-/store}",
-    "id": "module:@the-/store.create",
-    "kind": "function",
-    "longname": "module:@the-/store.create",
-    "memberof": "module:@the-/store",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/store/lib"
-    },
-    "name": "create",
-    "order": 1,
     "scope": "static"
   },
   {

@@ -108,7 +108,6 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
-- [default()](./doc/api/api.md#default)
 - [#decrementCount()](./doc/api/api.md#module_@the-/jitter.TheJitter#decrementCount)
 - [#incrementCount()](./doc/api/api.md#module_@the-/jitter.TheJitter#incrementCount)
 - [#resetCount()](./doc/api/api.md#module_@the-/jitter.TheJitter#resetCount)

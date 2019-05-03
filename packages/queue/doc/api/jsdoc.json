@@ -65,6 +65,26 @@
     ]
   },
   {
+    "customTags": [
+      {
+        "tag": "link",
+        "value": "module:@the-/queue}"
+      }
+    ],
+    "description": "Alias of {@memberof module:@the-/queue",
+    "id": "default",
+    "kind": "function",
+    "longname": "default",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/queue/lib"
+    },
+    "name": "default",
+    "order": 1,
+    "scope": "global"
+  },
+  {
     "description": "Push next task",
     "id": "module:@the-/queue.TheQueue#push",
     "kind": "function",
@@ -164,7 +184,7 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
@@ -218,21 +238,6 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link module:@the-/queue}",
-    "id": "module:@the-/queue.default",
-    "kind": "function",
-    "longname": "module:@the-/queue.default",
-    "memberof": "module:@the-/queue",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/queue/lib"
-    },
-    "name": "default",
-    "order": 1,
     "scope": "static"
   }
 ]

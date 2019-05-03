@@ -1,6 +1,6 @@
 /**
  * @function assertMethods
- * @param {function} Class
+ * @param {function()} Class
  * @param {string[]} reservedNames
  * @throws {Error} The server error
  */

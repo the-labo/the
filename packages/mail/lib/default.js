@@ -1,6 +1,7 @@
 /**
- * Alias of {@function default
- * @link module:@the-/mail.create}
+ * Alias of {@link module:@the-/mail.create}
+ * @memberof module:@the-/mail
+ * @function default
  */
 'use strict'
 

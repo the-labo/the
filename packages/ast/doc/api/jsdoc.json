@@ -68,7 +68,7 @@
     "memberof": "module:@the-/ast",
     "meta": {
       "filename": "NodeTypes.js",
-      "lineno": 1,
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ast/lib/constants"
     },
     "name": "NodeTypes",

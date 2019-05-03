@@ -242,10 +242,8 @@ class TheDB extends TheDBBase {
         entities = await outboundHandler(resource, entities, actionContext)
         entities = await indexOutbound(resource, entities, actionContext)
         // TODO Remove
-        {
-          for (const entity of entities) {
-            entity.id = String(entity.id)
-          }
+        for (const entity of entities) {
+          entity.id = String(entity.id)
         }
         return entities
       }

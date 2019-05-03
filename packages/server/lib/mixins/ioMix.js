@@ -2,8 +2,8 @@
  * Mixins for IO
  * @memberof module:@the-/server.mixins
  * @function ioMix
- * @param {function} Class
- * @returns {function} Class
+ * @param {function()} Class
+ * @returns {function()} Class
  */
 'use strict'
 

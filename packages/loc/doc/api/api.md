@@ -69,7 +69,7 @@ Register values for a namespace
 | values | <code>Object</code> |  | 
 | [options] | <code>Object</code> | <code>{}</code> | 
 | [options.ctx] | <code>Object</code> |  | 
-| [options.depth] | <code>Number</code> | <code>5</code> | 
+| [options.depth] | <code>number</code> | <code>5</code> | 
 
 <a name="module_@the-/loc.TheLoc+resolve"></a>
 

@@ -11,6 +11,9 @@
 ## Functions
 
 <dl>
+<dt><a href="#default">default()</a></dt>
+<dd><p>Alias of {@memberof module:@the-/scope</p>
+</dd>
 <dt><a href="#set">set(index, entry)</a></dt>
 <dd><p>Set entry at index</p>
 </dd>
@@ -65,7 +68,6 @@ State scope for the-store
         * [.ValueScope](#module_@the-/scope.scopes.ValueScope) ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
             * [new ValueScope()](#new_module_@the-/scope.scopes.ValueScope_new)
     * [.create(...args)](#module_@the-/scope.create) ⇒ <code>TheScope</code>
-    * [.default()](#module_@the-/scope.default)
 
 <a name="module_@the-/scope.TheScope"></a>
 
@@ -311,9 +313,9 @@ Get state value from name path string
 **Kind**: instance method of [<code>ScopeScope</code>](#module_@the-/scope.scopes.ScopeScope)  
 **Returns**: <code>\*</code> - Stored state  
 
-| Param | Type |
-| --- | --- |
-| namepath | <code>string</code> | 
+| Param | Type | Description |
+| --- | --- | --- |
+| namepath | <code>string</code> | Name path of state |
 
 <a name="module_@the-/scope.scopes.ScopeScope+has"></a>
 
@@ -322,9 +324,9 @@ Check if scope exists
 
 **Kind**: instance method of [<code>ScopeScope</code>](#module_@the-/scope.scopes.ScopeScope)  
 
-| Param | Type |
-| --- | --- |
-| namepath | <code>string</code> | 
+| Param | Type | Description |
+| --- | --- | --- |
+| namepath | <code>string</code> | Name path of state |
 
 <a name="module_@the-/scope.scopes.ScopeScope+init"></a>
 
@@ -333,9 +335,9 @@ Init scope values
 
 **Kind**: instance method of [<code>ScopeScope</code>](#module_@the-/scope.scopes.ScopeScope)  
 
-| Param |
-| --- |
-| ...names | 
+| Param | Type | Description |
+| --- | --- | --- |
+| ...names | <code>string</code> | Names to init |
 
 <a name="module_@the-/scope.scopes.ScopeScope+of"></a>
 
@@ -344,9 +346,9 @@ Sub scope of namepath
 
 **Kind**: instance method of [<code>ScopeScope</code>](#module_@the-/scope.scopes.ScopeScope)  
 
-| Param |
-| --- |
-| namepath | 
+| Param | Type | Description |
+| --- | --- | --- |
+| namepath | <code>string</code> | Name path of state |
 
 <a name="module_@the-/scope.scopes.ScopeScope+set"></a>
 
@@ -355,10 +357,10 @@ Set state with name path
 
 **Kind**: instance method of [<code>ScopeScope</code>](#module_@the-/scope.scopes.ScopeScope)  
 
-| Param | Type |
-| --- | --- |
-| namepath | <code>string</code> | 
-| value | <code>\*</code> | 
+| Param | Type | Description |
+| --- | --- | --- |
+| namepath | <code>string</code> | Name path of state |
+| value | <code>\*</code> | Value to set |
 
 <a name="module_@the-/scope.scopes.StringScope"></a>
 
@@ -391,12 +393,13 @@ Create a TheScope instance
 | --- | --- |
 | ...args | <code>\*</code> | 
 
-<a name="module_@the-/scope.default"></a>
+<a name="default"></a>
 
-### scope.default()
-Alias of [create](#module_@the-/scope.create)
+## default()
+Alias of {@memberof module:@the-/scope
 
-**Kind**: static method of [<code>@the-/scope</code>](#module_@the-/scope)  
+**Kind**: global function  
+**Link**: module:@the-/scope.create}  
 <a name="set"></a>
 
 ## set(index, entry)
@@ -404,10 +407,10 @@ Set entry at index
 
 **Kind**: global function  
 
-| Param | Type |
-| --- | --- |
-| index | <code>number</code> | 
-| entry | <code>\*</code> | 
+| Param | Type | Description |
+| --- | --- | --- |
+| index | <code>number</code> | Array index |
+| entry | <code>\*</code> | Value to set |
 
 <a name="reset"></a>
 

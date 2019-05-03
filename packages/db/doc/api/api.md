@@ -12,7 +12,7 @@
 
 <dl>
 <dt><a href="#default">default()</a></dt>
-<dd><p>Alias of {@memberOf module:@the-/db</p>
+<dd><p>Alias of {@memberof module:@the-/db</p>
 </dd>
 </dl>
 
@@ -33,14 +33,14 @@ DB for the-framework
             * [.loadFromMapping(ResourceMapping)](#module_@the-/db.TheDB+loadFromMapping)
             * [.pluginFromMapping(PluginMapping)](#module_@the-/db.TheDB+pluginFromMapping)
             * [.unref()](#module_@the-/db.TheDB+unref) ⇒ <code>TheDB</code>
-            * [.drop()](#module_@the-/db.TheDB+drop) ⇒ <code>Promise.&lt;void&gt;</code>
-            * [.invalidate(entityRef)](#module_@the-/db.TheDB+invalidate) ⇒ <code>Promise.&lt;void&gt;</code>
+            * [.drop()](#module_@the-/db.TheDB+drop) ⇒ <code>Promise.&lt;undefined&gt;</code>
+            * [.invalidate(entityRef)](#module_@the-/db.TheDB+invalidate) ⇒ <code>Promise.&lt;undefined&gt;</code>
             * [.transaction(callback)](#module_@the-/db.TheDB+transaction) ⇒ <code>Promise.&lt;\*&gt;</code>
             * [.updateVersion(version)](#module_@the-/db.TheDB+updateVersion) ⇒ <code>Promise.boolean</code>
             * [.requestToRefresh(entityRef)](#module_@the-/db.refreshMix..RefreshMixed+requestToRefresh)
             * [.startRefreshLoop(interval)](#module_@the-/db.refreshMix..RefreshMixed+startRefreshLoop)
             * [.stopRefreshLoop()](#module_@the-/db.refreshMix..RefreshMixed+stopRefreshLoop)
-            * [.waitToRefresh(entityRef, [options])](#module_@the-/db.refreshMix..RefreshMixed+waitToRefresh) ⇒ <code>Promise.&lt;Boolean&gt;</code>
+            * [.waitToRefresh(entityRef, [options])](#module_@the-/db.refreshMix..RefreshMixed+waitToRefresh) ⇒ <code>Promise.&lt;boolean&gt;</code>
             * [.assertResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+assertResource)
             * [.getResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+getResource) ⇒ <code>TheResource</code>
             * [.hasResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+hasResource) ⇒ <code>boolean</code>
@@ -72,7 +72,7 @@ DB for the-framework
                 * [.requestToRefresh(entityRef)](#module_@the-/db.refreshMix..RefreshMixed+requestToRefresh)
                 * [.startRefreshLoop(interval)](#module_@the-/db.refreshMix..RefreshMixed+startRefreshLoop)
                 * [.stopRefreshLoop()](#module_@the-/db.refreshMix..RefreshMixed+stopRefreshLoop)
-                * [.waitToRefresh(entityRef, [options])](#module_@the-/db.refreshMix..RefreshMixed+waitToRefresh) ⇒ <code>Promise.&lt;Boolean&gt;</code>
+                * [.waitToRefresh(entityRef, [options])](#module_@the-/db.refreshMix..RefreshMixed+waitToRefresh) ⇒ <code>Promise.&lt;boolean&gt;</code>
         * [.resourceMix()](#module_@the-/db.resourceMix)
             * [~ResourceMixed](#module_@the-/db.resourceMix..ResourceMixed)
                 * [.assertResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+assertResource)
@@ -96,14 +96,14 @@ DB for the-framework
     * [.loadFromMapping(ResourceMapping)](#module_@the-/db.TheDB+loadFromMapping)
     * [.pluginFromMapping(PluginMapping)](#module_@the-/db.TheDB+pluginFromMapping)
     * [.unref()](#module_@the-/db.TheDB+unref) ⇒ <code>TheDB</code>
-    * [.drop()](#module_@the-/db.TheDB+drop) ⇒ <code>Promise.&lt;void&gt;</code>
-    * [.invalidate(entityRef)](#module_@the-/db.TheDB+invalidate) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.drop()](#module_@the-/db.TheDB+drop) ⇒ <code>Promise.&lt;undefined&gt;</code>
+    * [.invalidate(entityRef)](#module_@the-/db.TheDB+invalidate) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.transaction(callback)](#module_@the-/db.TheDB+transaction) ⇒ <code>Promise.&lt;\*&gt;</code>
     * [.updateVersion(version)](#module_@the-/db.TheDB+updateVersion) ⇒ <code>Promise.boolean</code>
     * [.requestToRefresh(entityRef)](#module_@the-/db.refreshMix..RefreshMixed+requestToRefresh)
     * [.startRefreshLoop(interval)](#module_@the-/db.refreshMix..RefreshMixed+startRefreshLoop)
     * [.stopRefreshLoop()](#module_@the-/db.refreshMix..RefreshMixed+stopRefreshLoop)
-    * [.waitToRefresh(entityRef, [options])](#module_@the-/db.refreshMix..RefreshMixed+waitToRefresh) ⇒ <code>Promise.&lt;Boolean&gt;</code>
+    * [.waitToRefresh(entityRef, [options])](#module_@the-/db.refreshMix..RefreshMixed+waitToRefresh) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.assertResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+assertResource)
     * [.getResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+getResource) ⇒ <code>TheResource</code>
     * [.hasResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+hasResource) ⇒ <code>boolean</code>
@@ -182,13 +182,13 @@ Aut close before exit
 **Returns**: <code>TheDB</code> - this  
 <a name="module_@the-/db.TheDB+drop"></a>
 
-#### theDB.drop() ⇒ <code>Promise.&lt;void&gt;</code>
+#### theDB.drop() ⇒ <code>Promise.&lt;undefined&gt;</code>
 Drop database
 
 **Kind**: instance method of [<code>TheDB</code>](#module_@the-/db.TheDB)  
 <a name="module_@the-/db.TheDB+invalidate"></a>
 
-#### theDB.invalidate(entityRef) ⇒ <code>Promise.&lt;void&gt;</code>
+#### theDB.invalidate(entityRef) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Invalidate entity
 
 **Kind**: instance method of [<code>TheDB</code>](#module_@the-/db.TheDB)  
@@ -250,11 +250,11 @@ Stop refreshing loop
 **Kind**: instance method of [<code>TheDB</code>](#module_@the-/db.TheDB)  
 <a name="module_@the-/db.refreshMix..RefreshMixed+waitToRefresh"></a>
 
-#### theDB.waitToRefresh(entityRef, [options]) ⇒ <code>Promise.&lt;Boolean&gt;</code>
+#### theDB.waitToRefresh(entityRef, [options]) ⇒ <code>Promise.&lt;boolean&gt;</code>
 Wait until refresh
 
 **Kind**: instance method of [<code>TheDB</code>](#module_@the-/db.TheDB)  
-**Returns**: <code>Promise.&lt;Boolean&gt;</code> - - Full filled  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - - Full filled  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -466,7 +466,7 @@ Add migrate methods
         * [.requestToRefresh(entityRef)](#module_@the-/db.refreshMix..RefreshMixed+requestToRefresh)
         * [.startRefreshLoop(interval)](#module_@the-/db.refreshMix..RefreshMixed+startRefreshLoop)
         * [.stopRefreshLoop()](#module_@the-/db.refreshMix..RefreshMixed+stopRefreshLoop)
-        * [.waitToRefresh(entityRef, [options])](#module_@the-/db.refreshMix..RefreshMixed+waitToRefresh) ⇒ <code>Promise.&lt;Boolean&gt;</code>
+        * [.waitToRefresh(entityRef, [options])](#module_@the-/db.refreshMix..RefreshMixed+waitToRefresh) ⇒ <code>Promise.&lt;boolean&gt;</code>
 
 <a name="module_@the-/db.refreshMix..RefreshMixed"></a>
 
@@ -477,7 +477,7 @@ Add migrate methods
     * [.requestToRefresh(entityRef)](#module_@the-/db.refreshMix..RefreshMixed+requestToRefresh)
     * [.startRefreshLoop(interval)](#module_@the-/db.refreshMix..RefreshMixed+startRefreshLoop)
     * [.stopRefreshLoop()](#module_@the-/db.refreshMix..RefreshMixed+stopRefreshLoop)
-    * [.waitToRefresh(entityRef, [options])](#module_@the-/db.refreshMix..RefreshMixed+waitToRefresh) ⇒ <code>Promise.&lt;Boolean&gt;</code>
+    * [.waitToRefresh(entityRef, [options])](#module_@the-/db.refreshMix..RefreshMixed+waitToRefresh) ⇒ <code>Promise.&lt;boolean&gt;</code>
 
 <a name="module_@the-/db.refreshMix..RefreshMixed+requestToRefresh"></a>
 
@@ -509,11 +509,11 @@ Stop refreshing loop
 **Kind**: instance method of [<code>RefreshMixed</code>](#module_@the-/db.refreshMix..RefreshMixed)  
 <a name="module_@the-/db.refreshMix..RefreshMixed+waitToRefresh"></a>
 
-##### refreshMixed.waitToRefresh(entityRef, [options]) ⇒ <code>Promise.&lt;Boolean&gt;</code>
+##### refreshMixed.waitToRefresh(entityRef, [options]) ⇒ <code>Promise.&lt;boolean&gt;</code>
 Wait until refresh
 
 **Kind**: instance method of [<code>RefreshMixed</code>](#module_@the-/db.refreshMix..RefreshMixed)  
-**Returns**: <code>Promise.&lt;Boolean&gt;</code> - - Full filled  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - - Full filled  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -601,7 +601,7 @@ Run database migration
 <a name="default"></a>
 
 ## default()
-Alias of {@memberOf module:@the-/db
+Alias of {@memberof module:@the-/db
 
 **Kind**: global function  
 **Link**: module:@the-/db.create}

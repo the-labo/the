@@ -12,7 +12,7 @@ class TheCtrl {
   /**
    * Hook after invocation
    * @param {Invocation} invocation - Action invocation
-   * @returns {Promise.<void>}
+   * @returns {Promise<undefined>}
    */
   static async afterInvocation(invocation) {
     debug(
@@ -25,7 +25,7 @@ class TheCtrl {
   /**
    * Hook before invocation
    * @param {Invocation} invocation - Action invocation
-   * @returns {Promise.<void>}
+   * @returns {Promise<undefined>}
    */
   static async beforeInvocation(invocation) {
     debug(
@@ -38,7 +38,7 @@ class TheCtrl {
   /**
    * Hook rescue invocation error
    * @param {Invocation} invocation - Action invocation
-   * @returns {Promise.<void>}
+   * @returns {Promise<undefined>}
    */
   static async rescueInvocation(invocation) {
     debug(`Error ${invocation.error} on "${invocation.error}"`)

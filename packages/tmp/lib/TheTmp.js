@@ -84,7 +84,7 @@ class TheTmp {
 
   /**
    * Create and use tmp file until handler resolved (or rejected)
-   * @param {function} handler - Handler function to use tmp file
+   * @param {function()} handler - Handler function to use tmp file
    * @param {Object} options - Tmp options
    * @returns {Promise<undefined>}
    */
@@ -99,7 +99,7 @@ class TheTmp {
 
   /**
    * Create an use tmp directory until handler resolved (or rejected)
-   * @param {function} handler - Handler function to use tmp file
+   * @param {function()} handler - Handler function to use tmp file
    * @param {Object} options - Tmp options
    * @returns {Promise<undefined>}
    */
@@ -116,13 +116,13 @@ class TheTmp {
 module.exports = TheTmp
 
 /**
- * @property {function} cleanup
+ * @property {function()} cleanup
  * @property {Object} descriptor
  * @property {string} path - Filename
  * @typedef {Object} GenerateResult
  */
 /**
- * @property {function} cleanup
+ * @property {function()} cleanup
  * @property {string} path - Directory name
  * @typedef {Object} GenerateDirResult
  */

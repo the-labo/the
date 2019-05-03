@@ -16,6 +16,26 @@
     "version": "15.4.0"
   },
   {
+    "customTags": [
+      {
+        "tag": "link",
+        "value": "module:@the-/polyfill.create}"
+      }
+    ],
+    "description": "Alias of {@memberof module:@the-/polyfill",
+    "id": "default",
+    "kind": "function",
+    "longname": "default",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/polyfill/lib"
+    },
+    "name": "default",
+    "order": 1,
+    "scope": "global"
+  },
+  {
     "id": "module:@the-/polyfill.ThePolyfill",
     "kind": "class",
     "longname": "module:@the-/polyfill.ThePolyfill",
@@ -76,21 +96,6 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link module:@the-/polyfill.create}",
-    "id": "module:@the-/polyfill.default",
-    "kind": "function",
-    "longname": "module:@the-/polyfill.default",
-    "memberof": "module:@the-/polyfill",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/polyfill/lib"
-    },
-    "name": "default",
-    "order": 1,
     "scope": "static"
   }
 ]

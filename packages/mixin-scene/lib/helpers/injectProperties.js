@@ -1,7 +1,7 @@
 /**
  * @function injectProperties
- * @param {function} Class
- * @returns {function} Injected Class
+ * @param {function()} Class
+ * @returns {function()} Injected Class
  */
 'use strict'
 

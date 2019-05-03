@@ -2,7 +2,7 @@
  * Detect chrome or not
  * @memberof module:@the-/check
  * @function isChrome
- * @returns {Boolean}
+ * @returns {boolean}
  */
 'use strict'
 

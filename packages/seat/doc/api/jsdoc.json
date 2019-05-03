@@ -16,6 +16,26 @@
     "version": "15.4.1"
   },
   {
+    "customTags": [
+      {
+        "tag": "link",
+        "value": "module:@the-/seat.create}"
+      }
+    ],
+    "description": "Alias of {@memberof module:@the-/seat",
+    "id": "default",
+    "kind": "function",
+    "longname": "default",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+    },
+    "name": "default",
+    "order": 1,
+    "scope": "global"
+  },
+  {
     "description": "Acquire value with",
     "id": "module:@the-/seat.TheSeat#acquire",
     "kind": "function",
@@ -490,21 +510,6 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link module:@the-/seat.create}",
-    "id": "module:@the-/seat.default",
-    "kind": "function",
-    "longname": "module:@the-/seat.default",
-    "memberof": "module:@the-/seat",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
-    },
-    "name": "default",
-    "order": 1,
     "scope": "static"
   },
   {

@@ -127,6 +127,7 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
+- [create()](./doc/api/api.md#create)
 - [#load(ScopeClass,names)](./doc/api/api.md#module_@the-/store.TheStore#load)
 - [#loadFromDefaults()](./doc/api/api.md#module_@the-/store.TheStore#loadFromDefaults)
 - [#loadFromDefs()](./doc/api/api.md#module_@the-/store.TheStore#loadFromDefs)
@@ -135,7 +136,6 @@ tryExample().catch((err) => console.error(err))
 - [#load(ScopeClass,names)](./doc/api/api.md#StoreScopeClass#load)
 - [#loadFromMapping(mapping)](./doc/api/api.md#StoreScopeClass#loadFromMapping)
 - [.create(args)](./doc/api/api.md#module_@the-/store.create)
-- [.create()](./doc/api/api.md#module_@the-/store.create)
 - [.toStoreScopeClass(BaseClass)](./doc/api/api.md#module_@the-/store.toStoreScopeClass)
 ### class
 - [.TheStore](./doc/api/api.md#module_@the-/store.TheStore)

@@ -2,8 +2,8 @@
  * Mixin for writeOnce
  * @memberof module:@the-/resource.mixins
  * @function writeOnceMix
- * @param {function} Class
- * @returns {function}
+ * @param {function()} Class
+ * @returns {function()}
  */
 'use strict'
 

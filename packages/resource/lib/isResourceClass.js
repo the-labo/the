@@ -1,7 +1,7 @@
 /**
  * @memberof module:@the-/resource
  * @function isResourceClass
- * @returns {Boolean}
+ * @returns {boolean}
  */
 'use strict'
 

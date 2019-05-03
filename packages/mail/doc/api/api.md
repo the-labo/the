@@ -11,9 +11,6 @@
 ## Functions
 
 <dl>
-<dt><a href="#default">default()</a></dt>
-<dd><p>Alias of <a href="#module_@the-/mail.create">create</a></p>
-</dd>
 <dt><a href="#toLowerKeys">toLowerKeys()</a></dt>
 <dd></dd>
 </dl>
@@ -97,12 +94,6 @@ Create a TheMail instance
 | --- | --- |
 | ...args | <code>\*</code> | 
 
-<a name="default"></a>
-
-## default()
-Alias of [create](#module_@the-/mail.create)
-
-**Kind**: global function  
 <a name="toLowerKeys"></a>
 
 ## toLowerKeys()

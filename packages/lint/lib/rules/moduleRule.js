@@ -3,7 +3,7 @@
  * @memberof module:@the-/lint.rules
  * @function moduleRule
  * @param {Object} config - Lint config
- * @returns {function} Lint function
+ * @returns {function()} Lint function
  */
 'use strict'
 

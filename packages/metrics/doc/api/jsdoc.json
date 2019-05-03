@@ -46,6 +46,26 @@
     "order": 10
   },
   {
+    "customTags": [
+      {
+        "tag": "link",
+        "value": "module:@the-/metrics.create}"
+      }
+    ],
+    "description": "Alias of {@memberof module:@the-/metrics",
+    "id": "default",
+    "kind": "function",
+    "longname": "default",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/metrics/lib"
+    },
+    "name": "default",
+    "order": 1,
+    "scope": "global"
+  },
+  {
     "description": "Bind method call counter",
     "id": "module:@the-/metrics.TheMetrics#bindMethodCallCounter",
     "kind": "function",
@@ -190,21 +210,6 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link module:@the-/metrics.create}",
-    "id": "module:@the-/metrics.default",
-    "kind": "function",
-    "longname": "module:@the-/metrics.default",
-    "memberof": "module:@the-/metrics",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/metrics/lib"
-    },
-    "name": "default",
-    "order": 1,
     "scope": "static"
   }
 ]

@@ -8,14 +8,6 @@
 </dd>
 </dl>
 
-## Functions
-
-<dl>
-<dt><a href="#default">default()</a></dt>
-<dd><p>Alias of <a href="#module_@the-/tmp.create">create</a></p>
-</dd>
-</dl>
-
 ## Typedefs
 
 <dl>
@@ -39,8 +31,8 @@ Tmp file creator
         * [.generateSync([options])](#module_@the-/tmp.TheTmp+generateSync) ⇒ [<code>GenerateResult</code>](#GenerateResult)
         * [.generate([options])](#module_@the-/tmp.TheTmp+generate) ⇒ [<code>Promise.&lt;GenerateResult&gt;</code>](#GenerateResult)
         * [.generateDir([options])](#module_@the-/tmp.TheTmp+generateDir) ⇒ [<code>Promise.&lt;GenerateDirResult&gt;</code>](#GenerateDirResult)
-        * [.while(handler, options)](#module_@the-/tmp.TheTmp+while) ⇒ <code>Promise.&lt;void&gt;</code>
-        * [.whileDir(handler, options)](#module_@the-/tmp.TheTmp+whileDir) ⇒ <code>Promise.&lt;void&gt;</code>
+        * [.while(handler, options)](#module_@the-/tmp.TheTmp+while) ⇒ <code>Promise.&lt;undefined&gt;</code>
+        * [.whileDir(handler, options)](#module_@the-/tmp.TheTmp+whileDir) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.create(...args)](#module_@the-/tmp.create) ⇒ <code>TheTmp</code>
 
 <a name="module_@the-/tmp.TheTmp"></a>
@@ -53,8 +45,8 @@ Tmp file creator
     * [.generateSync([options])](#module_@the-/tmp.TheTmp+generateSync) ⇒ [<code>GenerateResult</code>](#GenerateResult)
     * [.generate([options])](#module_@the-/tmp.TheTmp+generate) ⇒ [<code>Promise.&lt;GenerateResult&gt;</code>](#GenerateResult)
     * [.generateDir([options])](#module_@the-/tmp.TheTmp+generateDir) ⇒ [<code>Promise.&lt;GenerateDirResult&gt;</code>](#GenerateDirResult)
-    * [.while(handler, options)](#module_@the-/tmp.TheTmp+while) ⇒ <code>Promise.&lt;void&gt;</code>
-    * [.whileDir(handler, options)](#module_@the-/tmp.TheTmp+whileDir) ⇒ <code>Promise.&lt;void&gt;</code>
+    * [.while(handler, options)](#module_@the-/tmp.TheTmp+while) ⇒ <code>Promise.&lt;undefined&gt;</code>
+    * [.whileDir(handler, options)](#module_@the-/tmp.TheTmp+whileDir) ⇒ <code>Promise.&lt;undefined&gt;</code>
 
 <a name="module_@the-/tmp.TheTmp+generateDirSync"></a>
 
@@ -105,7 +97,7 @@ Generate tmp directory
 
 <a name="module_@the-/tmp.TheTmp+while"></a>
 
-#### theTmp.while(handler, options) ⇒ <code>Promise.&lt;void&gt;</code>
+#### theTmp.while(handler, options) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Create and use tmp file until handler resolved (or rejected)
 
 **Kind**: instance method of [<code>TheTmp</code>](#module_@the-/tmp.TheTmp)  
@@ -117,7 +109,7 @@ Create and use tmp file until handler resolved (or rejected)
 
 <a name="module_@the-/tmp.TheTmp+whileDir"></a>
 
-#### theTmp.whileDir(handler, options) ⇒ <code>Promise.&lt;void&gt;</code>
+#### theTmp.whileDir(handler, options) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Create an use tmp directory until handler resolved (or rejected)
 
 **Kind**: instance method of [<code>TheTmp</code>](#module_@the-/tmp.TheTmp)  
@@ -138,12 +130,6 @@ Create a TheTmp instance
 | --- | --- |
 | ...args | <code>\*</code> | 
 
-<a name="default"></a>
-
-## default()
-Alias of [create](#module_@the-/tmp.create)
-
-**Kind**: global function  
 <a name="GenerateResult"></a>
 
 ## GenerateResult : <code>Object</code>

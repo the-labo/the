@@ -10,9 +10,9 @@ Base of the streams
 
 * [@the-/stream](#module_@the-/stream)
     * _instance_
-        * [.pull()](#module_@the-/stream+pull) ⇒ <code>Promise.&lt;void&gt;</code>
-        * [.push(...chunks)](#module_@the-/stream+push) ⇒ <code>Promise.&lt;void&gt;</code>
-        * [.pushEnd()](#module_@the-/stream+pushEnd) ⇒ <code>Promise.&lt;void&gt;</code>
+        * [.pull()](#module_@the-/stream+pull) ⇒ <code>Promise.&lt;undefined&gt;</code>
+        * [.push(...chunks)](#module_@the-/stream+push) ⇒ <code>Promise.&lt;undefined&gt;</code>
+        * [.pushEnd()](#module_@the-/stream+pushEnd) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * _static_
         * [.Consumer](#module_@the-/stream.Consumer)
         * [.Provider](#module_@the-/stream.Provider)
@@ -23,24 +23,24 @@ Base of the streams
 
 <a name="module_@the-/stream+pull"></a>
 
-### stream.pull() ⇒ <code>Promise.&lt;void&gt;</code>
+### stream.pull() ⇒ <code>Promise.&lt;undefined&gt;</code>
 Pull next chunk
 
 **Kind**: instance method of [<code>@the-/stream</code>](#module_@the-/stream)  
 <a name="module_@the-/stream+push"></a>
 
-### stream.push(...chunks) ⇒ <code>Promise.&lt;void&gt;</code>
+### stream.push(...chunks) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Push chunk
 
 **Kind**: instance method of [<code>@the-/stream</code>](#module_@the-/stream)  
 
-| Param |
-| --- |
-| ...chunks | 
+| Param | Type | Description |
+| --- | --- | --- |
+| ...chunks | <code>\*</code> | Chunk data to push |
 
 <a name="module_@the-/stream+pushEnd"></a>
 
-### stream.pushEnd() ⇒ <code>Promise.&lt;void&gt;</code>
+### stream.pushEnd() ⇒ <code>Promise.&lt;undefined&gt;</code>
 Finish pushing
 
 **Kind**: instance method of [<code>@the-/stream</code>](#module_@the-/stream)  

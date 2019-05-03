@@ -1,8 +1,8 @@
 /**
  * Mixin for http
  * @function httpMix
- * @param {function} Class
- * @returns {function} Class
+ * @param {function()} Class
+ * @returns {function()} Class
  */
 'use strict'
 

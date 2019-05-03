@@ -2,8 +2,8 @@
  * Write from chunk generator function
  * @function generateFile
  * @param {string} filename - Filename to write
- * @param {function} generator - Chunk data generator
- * @returns {Promise.<void>}
+ * @param {function()} generator - Chunk data generator
+ * @returns {Promise<undefined>}
  */
 'use strict'
 

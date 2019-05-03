@@ -2,7 +2,7 @@
  * Define an error class
  * @memberof module:@the-/error
  * @function define
- * @returns {function} Error class
+ * @returns {function()} Error class
  */
 'use strict'
 

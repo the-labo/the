@@ -124,7 +124,7 @@
     "memberof": "module:@the-/error",
     "meta": {
       "filename": "TheConflictError.js",
-      "lineno": 1,
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/error/lib"
     },
     "name": "TheConflictError",
@@ -155,7 +155,7 @@
     "memberof": "module:@the-/error",
     "meta": {
       "filename": "TheExpiredError.js",
-      "lineno": 1,
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/error/lib"
     },
     "name": "TheExpiredError",
@@ -172,7 +172,7 @@
     "memberof": "module:@the-/error",
     "meta": {
       "filename": "TheForbiddenError.js",
-      "lineno": 1,
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/error/lib"
     },
     "name": "TheForbiddenError",
@@ -189,7 +189,7 @@
     "memberof": "module:@the-/error",
     "meta": {
       "filename": "TheGoneError.js",
-      "lineno": 1,
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/error/lib"
     },
     "name": "TheGoneError",
@@ -206,7 +206,7 @@
     "memberof": "module:@the-/error",
     "meta": {
       "filename": "TheInvalidParameterError.js",
-      "lineno": 1,
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/error/lib"
     },
     "name": "TheInvalidParameterError",
@@ -223,7 +223,7 @@
     "memberof": "module:@the-/error",
     "meta": {
       "filename": "TheNotAcceptableError.js",
-      "lineno": 1,
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/error/lib"
     },
     "name": "TheNotAcceptableError",
@@ -240,7 +240,7 @@
     "memberof": "module:@the-/error",
     "meta": {
       "filename": "TheNotFoundError.js",
-      "lineno": 1,
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/error/lib"
     },
     "name": "TheNotFoundError",
@@ -257,7 +257,7 @@
     "memberof": "module:@the-/error",
     "meta": {
       "filename": "TheRequestTimeoutError.js",
-      "lineno": 1,
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/error/lib"
     },
     "name": "TheRequestTimeoutError",
@@ -274,7 +274,7 @@
     "memberof": "module:@the-/error",
     "meta": {
       "filename": "TheServerRottenError.js",
-      "lineno": 1,
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/error/lib"
     },
     "name": "TheServerRottenError",
@@ -291,7 +291,7 @@
     "memberof": "module:@the-/error",
     "meta": {
       "filename": "TheUnauthorizedError.js",
-      "lineno": 1,
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/error/lib"
     },
     "name": "TheUnauthorizedError",

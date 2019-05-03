@@ -4,7 +4,7 @@
  * @function langDetector
  * @param {string[]} [locales='en'] - Supported locales
  * @param {Object} [options={}] - Optional setting
- * @returns {function}
+ * @returns {function()}
  */
 'use strict'
 

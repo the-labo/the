@@ -3,7 +3,7 @@
  * @function siteToast
  * @deprecated
  * @memberOf module:@the-/mixin-scene
- * @returns {function} Annotated class
+ * @returns {function()} Annotated class
  */
 'use strict'
 
@@ -15,7 +15,7 @@ const siteToast = asClassMixin((Class) => {
   injectProperties(Class, {
     /**
      * Rest toasts
-     * @param {Object.<string, string[]>} queues - Toast queue
+     * @param {Object<string, string[]>} queues - Toast queue
      */
     reset(queues) {
       for (const [name, queue] of Object.entries(queues)) {

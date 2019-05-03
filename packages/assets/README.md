@@ -90,9 +90,9 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
+- [default(args)](./doc/api/api.md#default)
 - [#installTo(dirname,options)](./doc/api/api.md#module_@the-/assets.TheAssets#installTo)
 - [.create(args)](./doc/api/api.md#module_@the-/assets.create)
-- [.default(args)](./doc/api/api.md#module_@the-/assets.default)
 - [.installFiles(srcDir,destDir,options)](./doc/api/api.md#module_@the-/assets.helpers.installFiles)
 ### class
 - [.TheAssets](./doc/api/api.md#module_@the-/assets.TheAssets)

@@ -3,7 +3,7 @@
  * @memberof module:@the-/window
  * @function once
  * @param {string} event - Name of event
- * @param {function} handler - Event handler
+ * @param {function()} handler - Event handler
  */
 'use strict'
 

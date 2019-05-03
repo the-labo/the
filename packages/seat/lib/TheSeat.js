@@ -218,7 +218,7 @@ class TheSeat extends TheSeatBase {
    * Take value
    * @param {string} key - Key for value
    * @param {*} value
-   * @returns {void}
+   * @returns {undefined}
    */
   take(key, value) {
     this.sync()

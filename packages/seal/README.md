@@ -98,10 +98,10 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
+- [default()](./doc/api/api.md#default)
 - [#seal(values)](./doc/api/api.md#module_@the-/seal.TheSeal#seal)
 - [#verify(sealString,values)](./doc/api/api.md#module_@the-/seal.TheSeal#verify)
 - [.create(args)](./doc/api/api.md#module_@the-/seal.create)
-- [.default()](./doc/api/api.md#module_@the-/seal.default)
 ### class
 - [.TheSeal](./doc/api/api.md#module_@the-/seal.TheSeal)
 

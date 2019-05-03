@@ -2,7 +2,7 @@
  * Detect iOS or not
  * @memberof module:@the-/check
  * @function isiOS
- * @returns {Boolean}
+ * @returns {boolean}
  */
 'use strict'
 

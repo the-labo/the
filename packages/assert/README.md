@@ -96,12 +96,12 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 ### function
+- [default(args)](./doc/api/api.md#default)
 - [#bind()](./doc/api/api.md#TheAssert#bind)
 - [#notNullish(value,message)](./doc/api/api.md#TheAssert#notNullish)
 - [#nullish(value,message)](./doc/api/api.md#TheAssert#nullish)
 - [#ok(condition,message)](./doc/api/api.md#TheAssert#ok)
 - [.create(args)](./doc/api/api.md#module_@the-/assert.create)
-- [.default(args)](./doc/api/api.md#module_@the-/assert.default)
 ### class
 - [.TheAssert](./doc/api/api.md#module_@the-/assert.TheAssert)
 

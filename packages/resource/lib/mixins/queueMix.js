@@ -2,8 +2,8 @@
  * Mixin for queue
  * @memberof module:@the-/resource.mixins
  * @function queueMix
- * @param {function} Class
- * @returns {function} Mixed class
+ * @param {function()} Class
+ * @returns {function()} Mixed class
  */
 'use strict'
 
