@@ -34,3 +34,4 @@ Read file as array buffer
 | Param | Type | Description |
 | --- | --- | --- |
 | file | <code>File</code> | File to read |
+

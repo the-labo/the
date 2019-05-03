@@ -1,104 +1,104 @@
 [
   {
-    "description": "Hand write painting",
     "id": "module:@the-/ui-paint",
-    "kind": "module",
     "longname": "module:@the-/ui-paint",
+    "name": "@the-/ui-paint",
+    "kind": "module",
+    "description": "Hand write painting",
+    "version": "15.4.0",
+    "typicalname": "uiPaint",
     "meta": {
-      "filename": "index.jsx",
       "lineno": 2,
+      "filename": "index.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
     },
-    "name": "@the-/ui-paint",
-    "order": 0,
-    "typicalname": "uiPaint",
-    "version": "15.4.0"
+    "order": 0
   },
   {
-    "description": "Hand write painting",
     "id": "ThePaint",
-    "kind": "class",
     "longname": "ThePaint",
+    "name": "ThePaint",
+    "kind": "class",
+    "scope": "global",
+    "description": "Hand write painting",
     "meta": {
-      "filename": "ThePaint.jsx",
       "lineno": 19,
+      "filename": "ThePaint.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
     },
-    "name": "ThePaint",
-    "order": 1,
-    "scope": "global"
+    "order": 1
   },
   {
     "id": "DrawerLayer",
-    "kind": "class",
     "longname": "DrawerLayer",
+    "name": "DrawerLayer",
+    "kind": "class",
+    "scope": "global",
     "meta": {
-      "filename": "DrawerLayer.jsx",
       "lineno": 1,
+      "filename": "DrawerLayer.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-paint/lib/helpers"
     },
-    "name": "DrawerLayer",
-    "order": 6,
-    "scope": "global"
+    "order": 6
   },
   {
-    "description": "Style for ThePaint",
     "id": "ThePaintStyle",
-    "kind": "function",
     "longname": "ThePaintStyle",
-    "meta": {
-      "filename": "ThePaintStyle.jsx",
-      "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
-    },
     "name": "ThePaintStyle",
-    "order": 4,
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for ThePaint",
     "params": [],
-    "scope": "global"
+    "meta": {
+      "lineno": 10,
+      "filename": "ThePaintStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
+    },
+    "order": 4
   },
   {
-    "description": "Method of drawing",
     "id": "ThePaint.propTypes.method",
-    "kind": "member",
     "longname": "ThePaint.propTypes.method",
-    "memberof": "ThePaint.propTypes",
-    "meta": {
-      "filename": "ThePaint.jsx",
-      "lineno": 174,
-      "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
-    },
     "name": "method",
-    "order": 2,
-    "scope": "static"
-  },
-  {
-    "description": "Get drawer ref",
-    "id": "ThePaint.propTypes.onDrawer",
     "kind": "member",
-    "longname": "ThePaint.propTypes.onDrawer",
+    "scope": "static",
+    "description": "Method of drawing",
     "memberof": "ThePaint.propTypes",
     "meta": {
+      "lineno": 174,
       "filename": "ThePaint.jsx",
-      "lineno": 178,
       "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
     },
-    "name": "onDrawer",
-    "order": 3,
-    "scope": "static"
+    "order": 2
   },
   {
-    "description": "Style options",
-    "id": "ThePaintStyle.propTypes.options",
+    "id": "ThePaint.propTypes.onDrawer",
+    "longname": "ThePaint.propTypes.onDrawer",
+    "name": "onDrawer",
     "kind": "member",
+    "scope": "static",
+    "description": "Get drawer ref",
+    "memberof": "ThePaint.propTypes",
+    "meta": {
+      "lineno": 178,
+      "filename": "ThePaint.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "ThePaintStyle.propTypes.options",
     "longname": "ThePaintStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
     "memberof": "ThePaintStyle.propTypes",
     "meta": {
-      "filename": "ThePaintStyle.jsx",
       "lineno": 21,
+      "filename": "ThePaintStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
     },
-    "name": "options",
-    "order": 5,
-    "scope": "static"
+    "order": 5
   }
 ]

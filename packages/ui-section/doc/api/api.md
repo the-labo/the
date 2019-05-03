@@ -50,4 +50,4 @@ Section of the-components
 ## TheSectionStyle()
 Style for TheSection
 
-**Kind**: global function
+**Kind**: global function  

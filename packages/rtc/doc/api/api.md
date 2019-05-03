@@ -26,9 +26,6 @@
 ## Functions
 
 <dl>
-<dt><a href="#default">default()</a></dt>
-<dd><p>Alias of {@memberof module:@the-/rtc</p>
-</dd>
 <dt><a href="#httpMix">httpMix(Class)</a> ⇒ <code>function</code></dt>
 <dd><p>Mixin for http</p>
 </dd>
@@ -58,6 +55,7 @@ RTC server for the-frameworks
         * [.sfuMix(Class)](#module_@the-/rtc.mixins.sfuMix) ⇒ <code>function</code>
         * [.turnMix(Class)](#module_@the-/rtc.mixins.turnMix) ⇒ <code>function</code>
     * [.create(...args)](#module_@the-/rtc.create) ⇒ <code>TheRTC</code>
+    * [.default()](#module_@the-/rtc.default)
 
 <a name="module_@the-/rtc.TheRTC"></a>
 
@@ -205,6 +203,12 @@ Create a TheRTC instance
 | --- | --- |
 | ...args | <code>\*</code> | 
 
+<a name="module_@the-/rtc.default"></a>
+
+### rtc.default()
+Alias of [create](#module_@the-/rtc.create)
+
+**Kind**: static method of [<code>@the-/rtc</code>](#module_@the-/rtc)  
 <a name="SFUProxy"></a>
 
 ## SFUProxy
@@ -232,13 +236,6 @@ Webrtc proxy connections
 
 ## SFUProxyPool
 **Kind**: global class  
-<a name="default"></a>
-
-## default()
-Alias of {@memberof module:@the-/rtc
-
-**Kind**: global function  
-**Link**: module:@the-/rtc.create}  
 <a name="httpMix"></a>
 
 ## httpMix(Class) ⇒ <code>function</code>
@@ -249,4 +246,5 @@ Mixin for http
 
 | Param | Type |
 | --- | --- |
-| Class | <code>function</code> |
+| Class | <code>function</code> | 
+

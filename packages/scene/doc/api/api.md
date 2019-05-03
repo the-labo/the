@@ -25,6 +25,7 @@ Base class of the-scene
             * [~SubMixed](#module_@the-/scene.mixins.subMix..SubMixed)
                 * [.subFor(namepath)](#module_@the-/scene.mixins.subMix..SubMixed+subFor) ⇒ <code>\*</code>
     * [.create(...args)](#module_@the-/scene.create) ⇒ <code>TheScene</code>
+    * [.default()](#module_@the-/scene.default)
 
 <a name="module_@the-/scene.TheScene"></a>
 
@@ -168,4 +169,11 @@ Create a TheScene instance
 
 | Param | Type |
 | --- | --- |
-| ...args | <code>\*</code> |
+| ...args | <code>\*</code> | 
+
+<a name="module_@the-/scene.default"></a>
+
+### scene.default()
+Alias of [create](#module_@the-/scene.create)
+
+**Kind**: static method of [<code>@the-/scene</code>](#module_@the-/scene)  

@@ -1,32 +1,27 @@
 [
   {
-    "description": "Utility for service workers",
     "id": "module:@the-/util-sw",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/util-sw",
+    "name": "@the-/util-sw",
+    "kind": "module",
+    "description": "Utility for service workers",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "utilSw",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/util-sw/lib"
     },
-    "name": "@the-/util-sw",
-    "order": 2,
-    "typicalname": "utilSw",
-    "version": "15.4.0"
+    "order": 2
   },
   {
-    "description": "Get app cache from WorkerGlobalScope",
     "id": "appCache",
-    "kind": "function",
     "longname": "appCache",
-    "meta": {
-      "filename": "appCache.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-sw/lib"
-    },
     "name": "appCache",
-    "order": 0,
+    "kind": "function",
+    "scope": "global",
+    "description": "Get app cache from WorkerGlobalScope",
     "params": [
       {
         "type": {
@@ -59,20 +54,20 @@
         "name": "options"
       }
     ],
-    "scope": "global"
-  },
-  {
-    "description": "Fetch with cache",
-    "id": "cachedFetch",
-    "kind": "function",
-    "longname": "cachedFetch",
     "meta": {
-      "filename": "cachingFetch.js",
       "lineno": 1,
+      "filename": "appCache.js",
       "path": "/Users/okuni/Projects/the/packages/util-sw/lib"
     },
+    "order": 0
+  },
+  {
+    "id": "cachedFetch",
+    "longname": "cachedFetch",
     "name": "cachedFetch",
-    "order": 1,
+    "kind": "function",
+    "scope": "global",
+    "description": "Fetch with cache",
     "params": [
       {
         "type": {
@@ -91,20 +86,20 @@
         "name": "request"
       }
     ],
-    "scope": "global"
-  },
-  {
-    "description": "Parse url",
-    "id": "parseUrl",
-    "kind": "function",
-    "longname": "parseUrl",
     "meta": {
-      "filename": "parseUrl.js",
       "lineno": 1,
+      "filename": "cachingFetch.js",
       "path": "/Users/okuni/Projects/the/packages/util-sw/lib"
     },
+    "order": 1
+  },
+  {
+    "id": "parseUrl",
+    "longname": "parseUrl",
     "name": "parseUrl",
-    "order": 3,
+    "kind": "function",
+    "scope": "global",
+    "description": "Parse url",
     "params": [
       {
         "type": {
@@ -124,6 +119,11 @@
         }
       }
     ],
-    "scope": "global"
+    "meta": {
+      "lineno": 1,
+      "filename": "parseUrl.js",
+      "path": "/Users/okuni/Projects/the/packages/util-sw/lib"
+    },
+    "order": 3
   }
 ]

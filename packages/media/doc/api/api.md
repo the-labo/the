@@ -19,6 +19,7 @@ User media handler
         * [.stop()](#module_@the-/media.TheMedia+stop) ⇒ <code>Promise.&lt;undefined&gt;</code>
         * [.takePhoto([options])](#module_@the-/media.TheMedia+takePhoto) ⇒ <code>Promise.&lt;window.Blob&gt;</code>
     * [.create(...args)](#module_@the-/media.create) ⇒ <code>TheMedia</code>
+    * [.default()](#module_@the-/media.default)
 
 <a name="module_@the-/media.TheMedia"></a>
 
@@ -125,4 +126,11 @@ Create a TheMedia instance
 
 | Param | Type |
 | --- | --- |
-| ...args | <code>\*</code> |
+| ...args | <code>\*</code> | 
+
+<a name="module_@the-/media.default"></a>
+
+### media.default()
+Alias of [create](#module_@the-/media.create)
+
+**Kind**: static method of [<code>@the-/media</code>](#module_@the-/media)  

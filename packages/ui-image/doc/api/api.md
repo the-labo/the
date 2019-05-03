@@ -41,4 +41,4 @@ Image of the-components
 ## TheImageStyle()
 Style for TheImage
 
-**Kind**: global function
+**Kind**: global function  

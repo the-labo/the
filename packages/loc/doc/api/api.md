@@ -119,4 +119,4 @@ Create a TheLoc instance
 ### loc.default()
 Default exports
 
-**Kind**: static method of [<code>@the-/loc</code>](#module_@the-/loc)
+**Kind**: static method of [<code>@the-/loc</code>](#module_@the-/loc)  

@@ -19,14 +19,6 @@
 <dd></dd>
 </dl>
 
-## Functions
-
-<dl>
-<dt><a href="#default">default()</a></dt>
-<dd><p>Alias of {@memberof module:@the-/rtc-client</p>
-</dd>
-</dl>
-
 <a name="module_@the-/rtc-client"></a>
 
 ## @the-/rtc-client
@@ -46,6 +38,7 @@ Client for the-rtc
         * [.disconnect()](#module_@the-/rtc-client.TheRTCClient+disconnect) ⇒ <code>Promise.&lt;undefined&gt;</code>
         * [.publish(topic, payload, options)](#module_@the-/rtc-client.TheRTCClient+publish) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.create(...args)](#module_@the-/rtc-client.create) ⇒ <code>TheRTCClient</code>
+    * [.default()](#module_@the-/rtc-client.default)
 
 <a name="module_@the-/rtc-client.TheRTCClient"></a>
 
@@ -134,6 +127,12 @@ Create a TheRTCClient instance
 | --- | --- |
 | ...args | <code>\*</code> | 
 
+<a name="module_@the-/rtc-client.default"></a>
+
+### rtcClient.default()
+Alias of [create](#module_@the-/rtc-client.create)
+
+**Kind**: static method of [<code>@the-/rtc-client</code>](#module_@the-/rtc-client)  
 <a name="module_@the-/rtc.constants.module_ChannelNames"></a>
 
 ## ChannelNames
@@ -152,10 +151,3 @@ PeerEvents
 <a name="module_PeerPurposes"></a>
 
 ## PeerPurposes
-<a name="default"></a>
-
-## default()
-Alias of {@memberof module:@the-/rtc-client
-
-**Kind**: global function  
-**Link**: module:@the-/rtc-client.create}

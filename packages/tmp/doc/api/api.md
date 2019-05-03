@@ -34,6 +34,7 @@ Tmp file creator
         * [.while(handler, options)](#module_@the-/tmp.TheTmp+while) ⇒ <code>Promise.&lt;undefined&gt;</code>
         * [.whileDir(handler, options)](#module_@the-/tmp.TheTmp+whileDir) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.create(...args)](#module_@the-/tmp.create) ⇒ <code>TheTmp</code>
+    * [.default()](#module_@the-/tmp.default)
 
 <a name="module_@the-/tmp.TheTmp"></a>
 
@@ -130,6 +131,12 @@ Create a TheTmp instance
 | --- | --- |
 | ...args | <code>\*</code> | 
 
+<a name="module_@the-/tmp.default"></a>
+
+### tmp.default()
+Alias of [create](#module_@the-/tmp.create)
+
+**Kind**: static method of [<code>@the-/tmp</code>](#module_@the-/tmp)  
 <a name="GenerateResult"></a>
 
 ## GenerateResult : <code>Object</code>
@@ -152,3 +159,4 @@ Create a TheTmp instance
 | --- | --- | --- |
 | cleanup | <code>function</code> |  |
 | path | <code>string</code> | Directory name |
+

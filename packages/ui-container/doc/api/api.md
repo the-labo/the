@@ -41,4 +41,4 @@ Container of the-components
 ## TheContainerStyle()
 Style for TheContainer
 
-**Kind**: global function
+**Kind**: global function  

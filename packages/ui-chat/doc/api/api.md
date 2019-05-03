@@ -68,4 +68,4 @@ Chat Time line item
 ## TheChatStyle()
 Style for TheChat
 
-**Kind**: global function
+**Kind**: global function  

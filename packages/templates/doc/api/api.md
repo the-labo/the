@@ -56,7 +56,7 @@ Define bud for server controller
 | Param | Type | Default |
 | --- | --- | --- |
 | config | <code>Object</code> |  | 
-| [config.cjs] | <code>Boolean</code> | <code>false</code> | 
+| [config.cjs] | <code>boolean</code> | <code>false</code> | 
 | [config.name] | <code>string</code> |  | 
 
 <a name="module_@the-/templates.Dialogs"></a>
@@ -277,4 +277,5 @@ View
 
 | Param | Type |
 | --- | --- |
-| config | <code>Object</code> |
+| config | <code>Object</code> | 
+

@@ -41,4 +41,4 @@ Pager of the-components
 ## ThePagerStyle()
 Style for ThePager
 
-**Kind**: global function
+**Kind**: global function  

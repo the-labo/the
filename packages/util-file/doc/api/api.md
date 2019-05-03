@@ -11,7 +11,7 @@ File utility for the-framework
 * [@the-/util-file](#module_@the-/util-file)
     * [.copyAsJsonSync(src, dest)](#module_@the-/util-file.copyAsJsonSync)
     * [.fileTypeOf(filename)](#module_@the-/util-file.fileTypeOf) ⇒ <code>Object</code>
-    * [.isJSON5File(filename)](#module_@the-/util-file.isJSON5File) ⇒ <code>Boolean</code>
+    * [.isJSON5File(filename)](#module_@the-/util-file.isJSON5File) ⇒ <code>boolean</code>
     * [.readAsJson(filename)](#module_@the-/util-file.readAsJson) ⇒ <code>Promise.&lt;Object&gt;</code>
     * [.readAsJsonSync(filename)](#module_@the-/util-file.readAsJsonSync) ⇒ <code>Object</code>
     * [.statSync(filename)](#module_@the-/util-file.statSync)
@@ -41,7 +41,7 @@ Get file type of file
 
 <a name="module_@the-/util-file.isJSON5File"></a>
 
-### utilFile.isJSON5File(filename) ⇒ <code>Boolean</code>
+### utilFile.isJSON5File(filename) ⇒ <code>boolean</code>
 **Kind**: static method of [<code>@the-/util-file</code>](#module_@the-/util-file)  
 
 | Param | Type |
@@ -95,4 +95,5 @@ Read as json
 | Param | Type |
 | --- | --- |
 | filename | <code>string</code> | 
-| data | <code>Object</code> |
+| data | <code>Object</code> | 
+

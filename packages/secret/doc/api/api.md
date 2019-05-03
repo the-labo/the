@@ -116,4 +116,4 @@ Create a TheSecret instance
 ### secret.theSecret() ⇒ <code>TheSecret</code>
 Default exports
 
-**Kind**: static method of [<code>@the-/secret</code>](#module_@the-/secret)
+**Kind**: static method of [<code>@the-/secret</code>](#module_@the-/secret)  

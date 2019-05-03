@@ -27,4 +27,4 @@ Dynamic meta attribute injector for the-components
 ## TheMeta
 Dynamic meta attribute injector for the-components
 
-**Kind**: global class
+**Kind**: global class  

@@ -1,106 +1,106 @@
 [
   {
-    "description": "Chart for the-components",
     "id": "module:@the-/ui-chart",
-    "kind": "module",
     "longname": "module:@the-/ui-chart",
-    "meta": {
-      "filename": "index.jsx",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-chart/lib"
-    },
     "name": "@the-/ui-chart",
-    "order": 0,
-    "typicalname": "uiChart",
-    "version": "15.4.0"
-  },
-  {
+    "kind": "module",
     "description": "Chart for the-components",
+    "version": "15.4.0",
+    "typicalname": "uiChart",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chart/lib"
+    },
+    "order": 0
+  },
+  {
     "id": "TheChart",
-    "kind": "class",
     "longname": "TheChart",
-    "meta": {
-      "filename": "TheChart.jsx",
-      "lineno": 13,
-      "path": "/Users/okuni/Projects/the/packages/ui-chart/lib"
-    },
     "name": "TheChart",
-    "order": 1,
-    "scope": "global"
+    "kind": "class",
+    "scope": "global",
+    "description": "Chart for the-components",
+    "meta": {
+      "lineno": 13,
+      "filename": "TheChart.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chart/lib"
+    },
+    "order": 1
   },
   {
-    "description": "Style for TheChart",
     "id": "TheChartStyle",
-    "kind": "function",
     "longname": "TheChartStyle",
-    "meta": {
-      "filename": "TheChartStyle.jsx",
-      "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-chart/lib"
-    },
     "name": "TheChartStyle",
-    "order": 5,
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheChart",
     "params": [],
-    "scope": "global"
+    "meta": {
+      "lineno": 10,
+      "filename": "TheChartStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chart/lib"
+    },
+    "order": 5
   },
   {
-    "description": "Chart data",
     "id": "TheChart.propTypes.data",
-    "kind": "member",
     "longname": "TheChart.propTypes.data",
-    "memberof": "TheChart.propTypes",
-    "meta": {
-      "filename": "TheChart.jsx",
-      "lineno": 64,
-      "path": "/Users/okuni/Projects/the/packages/ui-chart/lib"
-    },
     "name": "data",
-    "order": 2,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Chart data",
+    "memberof": "TheChart.propTypes",
+    "meta": {
+      "lineno": 64,
+      "filename": "TheChart.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chart/lib"
+    },
+    "order": 2
   },
   {
-    "description": "Get ref to chart",
     "id": "TheChart.propTypes.onChart",
-    "kind": "member",
     "longname": "TheChart.propTypes.onChart",
-    "memberof": "TheChart.propTypes",
-    "meta": {
-      "filename": "TheChart.jsx",
-      "lineno": 66,
-      "path": "/Users/okuni/Projects/the/packages/ui-chart/lib"
-    },
     "name": "onChart",
-    "order": 3,
-    "scope": "static"
-  },
-  {
-    "description": "Chart options",
-    "id": "TheChart.propTypes.options",
     "kind": "member",
-    "longname": "TheChart.propTypes.options",
+    "scope": "static",
+    "description": "Get ref to chart",
     "memberof": "TheChart.propTypes",
     "meta": {
+      "lineno": 66,
       "filename": "TheChart.jsx",
-      "lineno": 68,
       "path": "/Users/okuni/Projects/the/packages/ui-chart/lib"
     },
-    "name": "options",
-    "order": 4,
-    "scope": "static"
+    "order": 3
   },
   {
-    "description": "Style options",
-    "id": "TheChartStyle.propTypes.options",
+    "id": "TheChart.propTypes.options",
+    "longname": "TheChart.propTypes.options",
+    "name": "options",
     "kind": "member",
+    "scope": "static",
+    "description": "Chart options",
+    "memberof": "TheChart.propTypes",
+    "meta": {
+      "lineno": 68,
+      "filename": "TheChart.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-chart/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheChartStyle.propTypes.options",
     "longname": "TheChartStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
     "memberof": "TheChartStyle.propTypes",
     "meta": {
-      "filename": "TheChartStyle.jsx",
       "lineno": 21,
+      "filename": "TheChartStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-chart/lib"
     },
-    "name": "options",
-    "order": 6,
-    "scope": "static"
+    "order": 6
   }
 ]

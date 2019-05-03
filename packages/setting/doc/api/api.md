@@ -16,6 +16,7 @@ Setting manager for the-framework
         * [.lockMix()](#module_@the-/setting.mixins.lockMix)
             * [~LockMixed](#module_@the-/setting.mixins.lockMix..LockMixed)
     * [.create(...args)](#module_@the-/setting.create) ⇒ <code>TheSetting</code>
+    * [.default()](#module_@the-/setting.default)
 
 <a name="module_@the-/setting.TheSetting"></a>
 
@@ -61,4 +62,11 @@ Create a TheSetting instance
 
 | Param | Type |
 | --- | --- |
-| ...args | <code>\*</code> |
+| ...args | <code>\*</code> | 
+
+<a name="module_@the-/setting.default"></a>
+
+### setting.default()
+Alias of [create](#module_@the-/setting.create)
+
+**Kind**: static method of [<code>@the-/setting</code>](#module_@the-/setting)  

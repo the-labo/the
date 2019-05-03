@@ -32,6 +32,7 @@ Mail client for the-framework
         * [.sendSendgrid()](#module_@the-/mail.sending.sendSendgrid)
         * [.sendSMTP()](#module_@the-/mail.sending.sendSMTP)
     * [.create(...args)](#module_@the-/mail.create) ⇒ <code>TheMail</code>
+    * [.default()](#module_@the-/mail.default)
 
 <a name="module_@the-/mail.TheMail"></a>
 
@@ -94,7 +95,13 @@ Create a TheMail instance
 | --- | --- |
 | ...args | <code>\*</code> | 
 
+<a name="module_@the-/mail.default"></a>
+
+### mail.default()
+Alias of [create](#module_@the-/mail.create)
+
+**Kind**: static method of [<code>@the-/mail</code>](#module_@the-/mail)  
 <a name="toLowerKeys"></a>
 
 ## toLowerKeys()
-**Kind**: global function
+**Kind**: global function  

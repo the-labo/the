@@ -101,3 +101,4 @@ Handle event rescue on document
 | --- | --- | --- |
 | event | <code>string</code> | Name of event |
 | handler | <code>function</code> | Event handler |
+

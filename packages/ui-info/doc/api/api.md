@@ -41,4 +41,4 @@ Info of the-component
 ## TheInfoStyle()
 Style for TheInfo
 
-**Kind**: global function
+**Kind**: global function  

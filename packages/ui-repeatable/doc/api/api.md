@@ -41,4 +41,4 @@ Repeatable of the-component
 ## TheRepeatableStyle()
 Style for TheRepeatable
 
-**Kind**: global function
+**Kind**: global function  

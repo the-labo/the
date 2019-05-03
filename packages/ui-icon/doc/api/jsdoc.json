@@ -1,61 +1,61 @@
 [
   {
-    "description": "Icon of the-components",
     "id": "module:@the-/ui-icon",
-    "kind": "module",
     "longname": "module:@the-/ui-icon",
-    "meta": {
-      "filename": "index.jsx",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-icon/lib"
-    },
     "name": "@the-/ui-icon",
-    "order": 0,
-    "typicalname": "uiIcon",
-    "version": "15.4.0"
-  },
-  {
+    "kind": "module",
     "description": "Icon of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiIcon",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-icon/lib"
+    },
+    "order": 0
+  },
+  {
     "id": "TheIcon",
-    "kind": "class",
     "longname": "TheIcon",
-    "meta": {
-      "filename": "TheIcon.jsx",
-      "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-icon/lib"
-    },
     "name": "TheIcon",
-    "order": 1,
-    "scope": "global"
-  },
-  {
-    "description": "Style for TheIcon",
-    "id": "TheIconStyle",
-    "kind": "function",
-    "longname": "TheIconStyle",
+    "kind": "class",
+    "scope": "global",
+    "description": "Icon of the-components",
     "meta": {
-      "filename": "TheIconStyle.jsx",
-      "lineno": 10,
+      "lineno": 11,
+      "filename": "TheIcon.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-icon/lib"
     },
-    "name": "TheIconStyle",
-    "order": 2,
-    "params": [],
-    "scope": "global"
+    "order": 1
   },
   {
-    "description": "Style options",
+    "id": "TheIconStyle",
+    "longname": "TheIconStyle",
+    "name": "TheIconStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheIcon",
+    "params": [],
+    "meta": {
+      "lineno": 10,
+      "filename": "TheIconStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-icon/lib"
+    },
+    "order": 2
+  },
+  {
     "id": "TheIconStyle.propTypes.options",
-    "kind": "member",
     "longname": "TheIconStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
     "memberof": "TheIconStyle.propTypes",
     "meta": {
-      "filename": "TheIconStyle.jsx",
       "lineno": 21,
+      "filename": "TheIconStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-icon/lib"
     },
-    "name": "options",
-    "order": 3,
-    "scope": "static"
+    "order": 3
   }
 ]

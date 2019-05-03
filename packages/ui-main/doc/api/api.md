@@ -41,4 +41,4 @@ Main for the-components
 ## TheMainStyle()
 Style for TheMain
 
-**Kind**: global function
+**Kind**: global function  

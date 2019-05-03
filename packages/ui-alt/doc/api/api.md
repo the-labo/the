@@ -41,4 +41,4 @@ Alt text for the-components
 ## TheAltStyle()
 Style for TheAlt
 
-**Kind**: global function
+**Kind**: global function  

@@ -27,4 +27,4 @@ Style of the-components
 ## TheStyle
 Style of the-components
 
-**Kind**: global class
+**Kind**: global class  

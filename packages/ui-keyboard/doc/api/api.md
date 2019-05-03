@@ -41,4 +41,4 @@ Keyboard component
 ## TheKeyboardStyle()
 Style for TheKeyboard
 
-**Kind**: global function
+**Kind**: global function  

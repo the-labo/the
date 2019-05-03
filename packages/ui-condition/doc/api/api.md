@@ -41,4 +41,4 @@ Conditional renderer for the-components
 ## TheConditionStyle()
 Style for TheCondition
 
-**Kind**: global function
+**Kind**: global function  

@@ -1,61 +1,61 @@
 [
   {
-    "description": "Signature pad of the-components",
     "id": "module:@the-/ui-signature",
-    "kind": "module",
     "longname": "module:@the-/ui-signature",
-    "meta": {
-      "filename": "index.jsx",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-signature/lib"
-    },
     "name": "@the-/ui-signature",
-    "order": 0,
-    "typicalname": "uiSignature",
-    "version": "15.4.0"
-  },
-  {
+    "kind": "module",
     "description": "Signature pad of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiSignature",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-signature/lib"
+    },
+    "order": 0
+  },
+  {
     "id": "TheSignature",
-    "kind": "class",
     "longname": "TheSignature",
-    "meta": {
-      "filename": "TheSignature.jsx",
-      "lineno": 17,
-      "path": "/Users/okuni/Projects/the/packages/ui-signature/lib"
-    },
     "name": "TheSignature",
-    "order": 1,
-    "scope": "global"
-  },
-  {
-    "description": "Style for TheSignature",
-    "id": "TheSignatureStyle",
-    "kind": "function",
-    "longname": "TheSignatureStyle",
+    "kind": "class",
+    "scope": "global",
+    "description": "Signature pad of the-components",
     "meta": {
-      "filename": "TheSignatureStyle.jsx",
-      "lineno": 10,
+      "lineno": 17,
+      "filename": "TheSignature.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-signature/lib"
     },
-    "name": "TheSignatureStyle",
-    "order": 2,
-    "params": [],
-    "scope": "global"
+    "order": 1
   },
   {
-    "description": "Style options",
+    "id": "TheSignatureStyle",
+    "longname": "TheSignatureStyle",
+    "name": "TheSignatureStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheSignature",
+    "params": [],
+    "meta": {
+      "lineno": 10,
+      "filename": "TheSignatureStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-signature/lib"
+    },
+    "order": 2
+  },
+  {
     "id": "TheSignatureStyle.propTypes.options",
-    "kind": "member",
     "longname": "TheSignatureStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
     "memberof": "TheSignatureStyle.propTypes",
     "meta": {
-      "filename": "TheSignatureStyle.jsx",
       "lineno": 21,
+      "filename": "TheSignatureStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-signature/lib"
     },
-    "name": "options",
-    "order": 3,
-    "scope": "static"
+    "order": 3
   }
 ]

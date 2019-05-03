@@ -1,27 +1,26 @@
 [
   {
-    "description": "Performance measures for the-framework",
     "id": "module:@the-/metrics",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/metrics",
+    "name": "@the-/metrics",
+    "kind": "module",
+    "description": "Performance measures for the-framework",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "metrics",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/metrics/lib"
     },
-    "name": "@the-/metrics",
-    "order": 2,
-    "typicalname": "metrics",
-    "version": "15.4.0"
+    "order": 2
   },
   {
     "id": "module:@the-/metrics.TheMetrics()",
-    "kind": "constructor",
     "longname": "module:@the-/metrics.TheMetrics",
-    "memberof": "module:@the-/metrics.TheMetrics",
     "name": "TheMetrics",
-    "order": 4,
+    "kind": "constructor",
+    "memberof": "module:@the-/metrics.TheMetrics",
     "params": [
       {
         "type": {
@@ -34,50 +33,26 @@
         "description": "Optional settings",
         "name": "options"
       }
-    ]
+    ],
+    "order": 4
   },
   {
-    "description": "Count react rendering counts",
     "id": "module:@the-/metrics.counters.MethodCallCounter()",
-    "kind": "constructor",
     "longname": "module:@the-/metrics.counters.MethodCallCounter",
-    "memberof": "module:@the-/metrics.counters.MethodCallCounter",
     "name": "MethodCallCounter",
+    "kind": "constructor",
+    "description": "Count react rendering counts",
+    "memberof": "module:@the-/metrics.counters.MethodCallCounter",
     "order": 10
   },
   {
-    "customTags": [
-      {
-        "tag": "link",
-        "value": "module:@the-/metrics.create}"
-      }
-    ],
-    "description": "Alias of {@memberof module:@the-/metrics",
-    "id": "default",
-    "kind": "function",
-    "longname": "default",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/metrics/lib"
-    },
-    "name": "default",
-    "order": 1,
-    "scope": "global"
-  },
-  {
-    "description": "Bind method call counter",
     "id": "module:@the-/metrics.TheMetrics#bindMethodCallCounter",
-    "kind": "function",
     "longname": "module:@the-/metrics.TheMetrics#bindMethodCallCounter",
-    "memberof": "module:@the-/metrics.TheMetrics",
-    "meta": {
-      "filename": "TheMetrics.js",
-      "lineno": 42,
-      "path": "/Users/okuni/Projects/the/packages/metrics/lib"
-    },
     "name": "bindMethodCallCounter",
-    "order": 5,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Bind method call counter",
+    "memberof": "module:@the-/metrics.TheMetrics",
     "params": [
       {
         "type": {
@@ -97,99 +72,99 @@
         "name": "config"
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 42,
+      "filename": "TheMetrics.js",
+      "path": "/Users/okuni/Projects/the/packages/metrics/lib"
+    },
+    "order": 5
   },
   {
-    "description": "Flush metrics data",
     "id": "module:@the-/metrics.TheMetrics#flush",
-    "kind": "function",
     "longname": "module:@the-/metrics.TheMetrics#flush",
+    "name": "flush",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Flush metrics data",
     "memberof": "module:@the-/metrics.TheMetrics",
+    "params": [],
     "meta": {
-      "filename": "TheMetrics.js",
       "lineno": 57,
+      "filename": "TheMetrics.js",
       "path": "/Users/okuni/Projects/the/packages/metrics/lib"
     },
-    "name": "flush",
-    "order": 6,
-    "params": [],
-    "scope": "instance"
+    "order": 6
   },
   {
-    "description": "Start measuring",
     "id": "module:@the-/metrics.TheMetrics#start",
-    "kind": "function",
     "longname": "module:@the-/metrics.TheMetrics#start",
+    "name": "start",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Start measuring",
     "memberof": "module:@the-/metrics.TheMetrics",
+    "params": [],
     "meta": {
-      "filename": "TheMetrics.js",
       "lineno": 76,
+      "filename": "TheMetrics.js",
       "path": "/Users/okuni/Projects/the/packages/metrics/lib"
     },
-    "name": "start",
-    "order": 7,
-    "params": [],
-    "scope": "instance"
+    "order": 7
   },
   {
     "id": "module:@the-/metrics.TheMetrics",
-    "kind": "class",
     "longname": "module:@the-/metrics.TheMetrics",
+    "name": "TheMetrics",
+    "kind": "class",
+    "scope": "static",
     "memberof": "module:@the-/metrics",
     "meta": {
-      "filename": "TheMetrics.js",
       "lineno": 1,
+      "filename": "TheMetrics.js",
       "path": "/Users/okuni/Projects/the/packages/metrics/lib"
     },
-    "name": "TheMetrics",
-    "order": 3,
-    "scope": "static"
+    "order": 3
   },
   {
     "id": "module:@the-/metrics.counters.Counter",
-    "kind": "class",
     "longname": "module:@the-/metrics.counters.Counter",
+    "name": "Counter",
+    "kind": "class",
+    "scope": "static",
     "memberof": "module:@the-/metrics.counters",
     "meta": {
-      "filename": "Counter.js",
       "lineno": 1,
+      "filename": "Counter.js",
       "path": "/Users/okuni/Projects/the/packages/metrics/lib/counters"
     },
-    "name": "Counter",
-    "order": 8,
-    "scope": "static",
-    "virtual": true
+    "virtual": true,
+    "order": 8
   },
   {
+    "id": "module:@the-/metrics.counters.MethodCallCounter",
+    "longname": "module:@the-/metrics.counters.MethodCallCounter",
+    "name": "MethodCallCounter",
+    "kind": "class",
+    "scope": "static",
     "augments": [
       "Counter"
     ],
-    "id": "module:@the-/metrics.counters.MethodCallCounter",
-    "kind": "class",
-    "longname": "module:@the-/metrics.counters.MethodCallCounter",
     "memberof": "module:@the-/metrics.counters",
     "meta": {
-      "filename": "MethodCallCounter.js",
       "lineno": 1,
+      "filename": "MethodCallCounter.js",
       "path": "/Users/okuni/Projects/the/packages/metrics/lib/counters"
     },
-    "name": "MethodCallCounter",
-    "order": 9,
-    "scope": "static"
+    "order": 9
   },
   {
-    "description": "Create a TheMetrics instance",
     "id": "module:@the-/metrics.create",
-    "kind": "function",
     "longname": "module:@the-/metrics.create",
-    "memberof": "module:@the-/metrics",
-    "meta": {
-      "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/metrics/lib"
-    },
     "name": "create",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheMetrics instance",
+    "memberof": "module:@the-/metrics",
     "params": [
       {
         "type": {
@@ -210,6 +185,26 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/metrics/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/metrics.default",
+    "longname": "module:@the-/metrics.default",
+    "name": "default",
+    "kind": "function",
+    "scope": "static",
+    "description": "Alias of {@link module:@the-/metrics.create}",
+    "memberof": "module:@the-/metrics",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/metrics/lib"
+    },
+    "order": 1
   }
 ]

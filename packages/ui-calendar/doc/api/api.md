@@ -41,4 +41,4 @@ Calendar of the-components
 ## TheCalendarStyle()
 Style for TheCalendar
 
-**Kind**: global function
+**Kind**: global function  

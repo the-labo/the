@@ -11,9 +11,6 @@
 ## Functions
 
 <dl>
-<dt><a href="#default">default()</a></dt>
-<dd><p>Alias of {@memberof module:@the-/scope</p>
-</dd>
 <dt><a href="#set">set(index, entry)</a></dt>
 <dd><p>Set entry at index</p>
 </dd>
@@ -68,6 +65,7 @@ State scope for the-store
         * [.ValueScope](#module_@the-/scope.scopes.ValueScope) ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
             * [new ValueScope()](#new_module_@the-/scope.scopes.ValueScope_new)
     * [.create(...args)](#module_@the-/scope.create) ⇒ <code>TheScope</code>
+    * [.default()](#module_@the-/scope.default)
 
 <a name="module_@the-/scope.TheScope"></a>
 
@@ -393,13 +391,12 @@ Create a TheScope instance
 | --- | --- |
 | ...args | <code>\*</code> | 
 
-<a name="default"></a>
+<a name="module_@the-/scope.default"></a>
 
-## default()
-Alias of {@memberof module:@the-/scope
+### scope.default()
+Alias of [create](#module_@the-/scope.create)
 
-**Kind**: global function  
-**Link**: module:@the-/scope.create}  
+**Kind**: static method of [<code>@the-/scope</code>](#module_@the-/scope)  
 <a name="set"></a>
 
 ## set(index, entry)
@@ -421,4 +418,5 @@ Reset to values
 
 | Param | Type |
 | --- | --- |
-| values | <code>Object</code> |
+| values | <code>Object</code> | 
+

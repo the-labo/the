@@ -41,4 +41,4 @@ Video for the-components
 ## TheVideoStyle()
 Style for TheVideo
 
-**Kind**: global function
+**Kind**: global function  

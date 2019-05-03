@@ -41,4 +41,4 @@ Hamburger menu for the-components
 ## TheHamburgerStyle()
 Style for TheHamburger
 
-**Kind**: global function
+**Kind**: global function  

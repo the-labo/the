@@ -37,3 +37,4 @@ Format urls
 | --- | --- | --- | --- |
 | urlString | <code>string</code> |  | URL format string |
 | [params] | <code>Object</code> | <code>{}</code> | Params to inject |
+

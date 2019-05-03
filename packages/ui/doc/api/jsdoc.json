@@ -1,16 +1,16 @@
 [
   {
-    "description": "React components of THE framework",
     "id": "module:@the-/ui",
-    "kind": "module",
     "longname": "module:@the-/ui",
+    "name": "@the-/ui",
+    "kind": "module",
+    "description": "React components of THE framework",
+    "version": "15.4.1",
     "meta": {
-      "filename": "index.jsx",
       "lineno": 2,
+      "filename": "index.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui/lib"
     },
-    "name": "@the-/ui",
-    "order": 0,
-    "version": "15.4.1"
+    "order": 0
   }
 ]

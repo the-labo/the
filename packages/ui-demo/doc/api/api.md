@@ -27,4 +27,4 @@ Live demo of the-components
 ## TheComponentDemo
 Live demo of the-components
 
-**Kind**: global class
+**Kind**: global class  

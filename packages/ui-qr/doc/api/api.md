@@ -41,4 +41,4 @@ QRCode the-component
 ## TheQrStyle()
 Style for TheQr
 
-**Kind**: global function
+**Kind**: global function  

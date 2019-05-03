@@ -1,32 +1,27 @@
 [
   {
-    "description": "Utility for server",
     "id": "module:@the-/util-server",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/util-server",
+    "name": "@the-/util-server",
+    "kind": "module",
+    "description": "Utility for server",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "utilServer",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/util-server/lib"
     },
-    "name": "@the-/util-server",
-    "order": 2,
-    "typicalname": "utilServer",
-    "version": "15.4.0"
+    "order": 1
   },
   {
-    "description": "Write from chunk generator function",
     "id": "generateFile",
-    "kind": "function",
     "longname": "generateFile",
-    "meta": {
-      "filename": "generateFile.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-server/lib"
-    },
     "name": "generateFile",
-    "order": 0,
+    "kind": "function",
+    "scope": "global",
+    "description": "Write from chunk generator function",
     "params": [
       {
         "type": {
@@ -51,45 +46,24 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
     ],
-    "scope": "global"
-  },
-  {
-    "async": true,
-    "customTags": [
-      {
-        "tag": "lend",
-        "value": "generateFile"
-      }
-    ],
-    "id": "generateFile",
-    "kind": "function",
-    "longname": "generateFile",
     "meta": {
+      "lineno": 1,
       "filename": "generateFile.js",
-      "lineno": 15,
       "path": "/Users/okuni/Projects/the/packages/util-server/lib"
     },
-    "name": "generateFile",
-    "order": 1,
-    "params": [],
-    "scope": "global"
+    "order": 0
   },
   {
     "id": "isBase64",
-    "kind": "function",
     "longname": "isBase64",
-    "meta": {
-      "filename": "isBase64.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-server/lib"
-    },
     "name": "isBase64",
-    "order": 3,
+    "kind": "function",
+    "scope": "global",
     "params": [
       {
         "type": {
@@ -109,20 +83,20 @@
         }
       }
     ],
-    "scope": "global"
-  },
-  {
-    "description": "Name a file",
-    "id": "nameFile",
-    "kind": "function",
-    "longname": "nameFile",
     "meta": {
-      "filename": "nameFile.js",
       "lineno": 1,
+      "filename": "isBase64.js",
       "path": "/Users/okuni/Projects/the/packages/util-server/lib"
     },
+    "order": 2
+  },
+  {
+    "id": "nameFile",
+    "longname": "nameFile",
     "name": "nameFile",
-    "order": 4,
+    "kind": "function",
+    "scope": "global",
+    "description": "Name a file",
     "params": [
       {
         "type": {
@@ -177,20 +151,20 @@
         }
       }
     ],
-    "scope": "global"
-  },
-  {
-    "description": "Pipe to file",
-    "id": "pipeToFile",
-    "kind": "function",
-    "longname": "pipeToFile",
     "meta": {
-      "filename": "pipeToFile.js",
       "lineno": 1,
+      "filename": "nameFile.js",
       "path": "/Users/okuni/Projects/the/packages/util-server/lib"
     },
+    "order": 3
+  },
+  {
+    "id": "pipeToFile",
+    "longname": "pipeToFile",
     "name": "pipeToFile",
-    "order": 5,
+    "kind": "function",
+    "scope": "global",
+    "description": "Pipe to file",
     "params": [
       {
         "type": {
@@ -220,20 +194,20 @@
         }
       }
     ],
-    "scope": "global"
-  },
-  {
-    "description": "Save base64 string into file",
-    "id": "saveBase64",
-    "kind": "function",
-    "longname": "saveBase64",
     "meta": {
-      "filename": "saveBase64.js",
       "lineno": 1,
+      "filename": "pipeToFile.js",
       "path": "/Users/okuni/Projects/the/packages/util-server/lib"
     },
+    "order": 4
+  },
+  {
+    "id": "saveBase64",
+    "longname": "saveBase64",
     "name": "saveBase64",
-    "order": 6,
+    "kind": "function",
+    "scope": "global",
+    "description": "Save base64 string into file",
     "params": [
       {
         "type": {
@@ -271,35 +245,35 @@
         }
       }
     ],
-    "scope": "global"
-  },
-  {
-    "deprecated": true,
-    "id": "saveBase64Image",
-    "kind": "function",
-    "longname": "saveBase64Image",
     "meta": {
-      "filename": "saveBase64Image.js",
-      "lineno": 5,
-      "path": "/Users/okuni/Projects/the/packages/util-server/lib"
-    },
-    "name": "saveBase64Image",
-    "order": 7,
-    "params": [],
-    "scope": "global"
-  },
-  {
-    "description": "Get values from entity",
-    "id": "valuesFromEntity",
-    "kind": "function",
-    "longname": "valuesFromEntity",
-    "meta": {
-      "filename": "valuesFromEntity.js",
       "lineno": 1,
+      "filename": "saveBase64.js",
       "path": "/Users/okuni/Projects/the/packages/util-server/lib"
     },
+    "order": 5
+  },
+  {
+    "id": "saveBase64Image",
+    "longname": "saveBase64Image",
+    "name": "saveBase64Image",
+    "kind": "function",
+    "scope": "global",
+    "params": [],
+    "deprecated": true,
+    "meta": {
+      "lineno": 5,
+      "filename": "saveBase64Image.js",
+      "path": "/Users/okuni/Projects/the/packages/util-server/lib"
+    },
+    "order": 6
+  },
+  {
+    "id": "valuesFromEntity",
+    "longname": "valuesFromEntity",
     "name": "valuesFromEntity",
-    "order": 8,
+    "kind": "function",
+    "scope": "global",
+    "description": "Get values from entity",
     "params": [
       {
         "type": {
@@ -318,20 +292,20 @@
         }
       }
     ],
-    "scope": "global"
-  },
-  {
-    "description": "Wait until file exists",
-    "id": "waitForFile",
-    "kind": "function",
-    "longname": "waitForFile",
     "meta": {
-      "filename": "waitFor.js",
       "lineno": 1,
+      "filename": "valuesFromEntity.js",
       "path": "/Users/okuni/Projects/the/packages/util-server/lib"
     },
+    "order": 7
+  },
+  {
+    "id": "waitForFile",
+    "longname": "waitForFile",
     "name": "waitForFile",
-    "order": 9,
+    "kind": "function",
+    "scope": "global",
+    "description": "Wait until file exists",
     "params": [
       {
         "type": {
@@ -362,6 +336,11 @@
         }
       }
     ],
-    "scope": "global"
+    "meta": {
+      "lineno": 1,
+      "filename": "waitFor.js",
+      "path": "/Users/okuni/Projects/the/packages/util-server/lib"
+    },
+    "order": 8
   }
 ]

@@ -164,3 +164,4 @@ Toggle class on document body
 | --- | --- | --- |
 | className | <code>string</code> | Class name to toggle |
 | [state=] | <code>boolean</code> | Enabled or not |
+

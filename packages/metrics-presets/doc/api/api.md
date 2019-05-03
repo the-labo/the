@@ -34,3 +34,4 @@ Count metrics for component rendering
 | --- | --- | --- | --- |
 | Components | <code>Object</code> |  | Components to count |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
+

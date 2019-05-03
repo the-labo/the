@@ -46,10 +46,10 @@
 <dt><del><a href="#seatAccess">seatAccess()</a> ⇒ <code>Object</code></del></dt>
 <dd><p>Provide seat access functions</p>
 </dd>
-<dt><a href="#containerNameFor">containerNameFor(name, bytes)</a> ⇒ <code>string</code></dt>
+<dt><a href="#containerNameFor">containerNameFor(name, [bytes])</a> ⇒ <code>string</code></dt>
 <dd><p>Container name for</p>
 </dd>
-<dt><a href="#networkNameFor">networkNameFor(name, bytes)</a> ⇒ <code>string</code></dt>
+<dt><a href="#networkNameFor">networkNameFor(name, [bytes])</a> ⇒ <code>string</code></dt>
 <dd><p>Network name for</p>
 </dd>
 <dt><a href="#portNumberFor">portNumberFor(name, [base], [increment])</a> ⇒ <code>*</code></dt>
@@ -58,13 +58,13 @@
 <dt><a href="#portNumberRangeFor">portNumberRangeFor(name, [base], length)</a> ⇒ <code>Array.&lt;number&gt;</code></dt>
 <dd><p>Port numbers with range</p>
 </dd>
-<dt><a href="#processNameFor">processNameFor(name, bytes)</a> ⇒ <code>string</code></dt>
+<dt><a href="#processNameFor">processNameFor(name, [bytes])</a> ⇒ <code>string</code></dt>
 <dd><p>Process name for</p>
 </dd>
-<dt><a href="#secretFor">secretFor(name, bytes)</a> ⇒ <code>string</code></dt>
+<dt><a href="#secretFor">secretFor(name, [bytes])</a> ⇒ <code>string</code></dt>
 <dd><p>Secret value for</p>
 </dd>
-<dt><a href="#userNameFor">userNameFor(name, bytes)</a> ⇒ <code>string</code></dt>
+<dt><a href="#userNameFor">userNameFor(name, [bytes])</a> ⇒ <code>string</code></dt>
 <dd><p>User name for</p>
 </dd>
 </dl>
@@ -201,27 +201,27 @@ Provide seat access functions
 **Kind**: global function  
 <a name="containerNameFor"></a>
 
-## containerNameFor(name, bytes) ⇒ <code>string</code>
+## containerNameFor(name, [bytes]) ⇒ <code>string</code>
 Container name for
 
 **Kind**: global function  
 
-| Param | Type | Default |
-| --- | --- | --- |
-| name | <code>string</code> |  | 
-| bytes | <code>number</code> | <code>4</code> | 
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| name | <code>string</code> |  | Name of container |
+| [bytes] | <code>number</code> | <code>4</code> | Hom many bytes |
 
 <a name="networkNameFor"></a>
 
-## networkNameFor(name, bytes) ⇒ <code>string</code>
+## networkNameFor(name, [bytes]) ⇒ <code>string</code>
 Network name for
 
 **Kind**: global function  
 
-| Param | Type | Default |
-| --- | --- | --- |
-| name | <code>string</code> |  | 
-| bytes | <code>number</code> | <code>4</code> | 
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| name | <code>string</code> |  | Name of network |
+| [bytes] | <code>number</code> | <code>4</code> | How many bytes for hash |
 
 <a name="portNumberFor"></a>
 
@@ -232,7 +232,7 @@ Port number for
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| name | <code>string</code> |  |  |
+| name | <code>string</code> |  | Name for seat |
 | [base] | <code>number</code> | <code>6000</code> | Base port number |
 | [increment] | <code>number</code> | <code>1</code> | Increment amount |
 
@@ -246,42 +246,43 @@ Port numbers with range
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| name | <code>string</code> |  |  |
+| name | <code>string</code> |  | Name for seat |
 | [base] | <code>number</code> | <code>22000</code> | Base port number |
 | length | <code>number</code> |  | Range length |
 
 <a name="processNameFor"></a>
 
-## processNameFor(name, bytes) ⇒ <code>string</code>
+## processNameFor(name, [bytes]) ⇒ <code>string</code>
 Process name for
 
 **Kind**: global function  
 
-| Param | Type | Default |
-| --- | --- | --- |
-| name | <code>string</code> |  | 
-| bytes | <code>number</code> | <code>4</code> | 
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| name | <code>string</code> |  | Name for seat |
+| [bytes] | <code>number</code> | <code>4</code> | Length of byte for hash |
 
 <a name="secretFor"></a>
 
-## secretFor(name, bytes) ⇒ <code>string</code>
+## secretFor(name, [bytes]) ⇒ <code>string</code>
 Secret value for
 
 **Kind**: global function  
 
-| Param | Type | Default |
-| --- | --- | --- |
-| name | <code>string</code> |  | 
-| bytes | <code>number</code> | <code>12</code> | 
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| name | <code>string</code> |  | Name for seat |
+| [bytes] | <code>number</code> | <code>12</code> | Length of byte for hash |
 
 <a name="userNameFor"></a>
 
-## userNameFor(name, bytes) ⇒ <code>string</code>
+## userNameFor(name, [bytes]) ⇒ <code>string</code>
 User name for
 
 **Kind**: global function  
 
-| Param | Type | Default |
-| --- | --- | --- |
-| name | <code>string</code> |  | 
-| bytes | <code>number</code> | <code>4</code> |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| name | <code>string</code> |  | Name for seat |
+| [bytes] | <code>number</code> | <code>4</code> | Length of byte for hash |
+

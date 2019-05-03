@@ -58,4 +58,4 @@ Create a TheSupport instance
 <a name="findEvalCode"></a>
 
 ## findEvalCode()
-**Kind**: global function
+**Kind**: global function  

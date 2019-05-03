@@ -448,7 +448,7 @@ Get is ready or not
 
 | Name | Type |
 | --- | --- |
-| isReady | <code>Boolean</code> | 
+| isReady | <code>boolean</code> | 
 
 <a name="reset"></a>
 
@@ -899,4 +899,5 @@ Define as class mixin
 
 | Param | Type |
 | --- | --- |
-| Class | <code>function</code> |
+| Class | <code>function</code> | 
+

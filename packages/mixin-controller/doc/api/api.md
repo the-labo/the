@@ -112,4 +112,4 @@ Wrap controller with seal
 <a name="omitLongString"></a>
 
 ## omitLongString()
-**Kind**: global function
+**Kind**: global function  

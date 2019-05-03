@@ -11,11 +11,9 @@
 ## Functions
 
 <dl>
-<dt><a href="#generateFile">generateFile(filename, generator)</a> ⇒ <code>Promise.&lt;void&gt;</code></dt>
+<dt><a href="#generateFile">generateFile(filename, generator)</a> ⇒ <code>Promise.&lt;undefined&gt;</code></dt>
 <dd><p>Write from chunk generator function</p>
 </dd>
-<dt><a href="#generateFile">generateFile()</a></dt>
-<dd></dd>
 <dt><a href="#isBase64">isBase64(data)</a> ⇒ <code>boolean</code></dt>
 <dd></dd>
 <dt><a href="#nameFile">nameFile([options])</a> ⇒ <code>string</code></dt>
@@ -46,7 +44,7 @@ Utility for server
 **License**: MIT  
 <a name="generateFile"></a>
 
-## generateFile(filename, generator) ⇒ <code>Promise.&lt;void&gt;</code>
+## generateFile(filename, generator) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Write from chunk generator function
 
 **Kind**: global function  
@@ -56,11 +54,6 @@ Write from chunk generator function
 | filename | <code>string</code> | Filename to write |
 | generator | <code>function</code> | Chunk data generator |
 
-<a name="generateFile"></a>
-
-## generateFile()
-**Kind**: global function  
-**Lend**: generateFile  
 <a name="isBase64"></a>
 
 ## isBase64(data) ⇒ <code>boolean</code>
@@ -137,3 +130,4 @@ Wait until file exists
 | --- | --- | --- | --- |
 | condition | <code>function</code> |  |  |
 | [options] | <code>Object</code> | <code>{}</code> | Optional setting |
+

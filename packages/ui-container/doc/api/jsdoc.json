@@ -1,61 +1,61 @@
 [
   {
-    "description": "Container of the-components",
     "id": "module:@the-/ui-container",
-    "kind": "module",
     "longname": "module:@the-/ui-container",
-    "meta": {
-      "filename": "index.jsx",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-container/lib"
-    },
     "name": "@the-/ui-container",
-    "order": 0,
-    "typicalname": "uiContainer",
-    "version": "15.4.0"
-  },
-  {
+    "kind": "module",
     "description": "Container of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiContainer",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-container/lib"
+    },
+    "order": 0
+  },
+  {
     "id": "TheContainer",
-    "kind": "class",
     "longname": "TheContainer",
-    "meta": {
-      "filename": "TheContainer.jsx",
-      "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-container/lib"
-    },
     "name": "TheContainer",
-    "order": 1,
-    "scope": "global"
-  },
-  {
-    "description": "Style for TheContainer",
-    "id": "TheContainerStyle",
-    "kind": "function",
-    "longname": "TheContainerStyle",
+    "kind": "class",
+    "scope": "global",
+    "description": "Container of the-components",
     "meta": {
-      "filename": "TheContainerStyle.jsx",
-      "lineno": 10,
+      "lineno": 11,
+      "filename": "TheContainer.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-container/lib"
     },
-    "name": "TheContainerStyle",
-    "order": 2,
-    "params": [],
-    "scope": "global"
+    "order": 1
   },
   {
-    "description": "Style options",
+    "id": "TheContainerStyle",
+    "longname": "TheContainerStyle",
+    "name": "TheContainerStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheContainer",
+    "params": [],
+    "meta": {
+      "lineno": 10,
+      "filename": "TheContainerStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-container/lib"
+    },
+    "order": 2
+  },
+  {
     "id": "TheContainerStyle.propTypes.options",
-    "kind": "member",
     "longname": "TheContainerStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
     "memberof": "TheContainerStyle.propTypes",
     "meta": {
-      "filename": "TheContainerStyle.jsx",
       "lineno": 21,
+      "filename": "TheContainerStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-container/lib"
     },
-    "name": "options",
-    "order": 3,
-    "scope": "static"
+    "order": 3
   }
 ]

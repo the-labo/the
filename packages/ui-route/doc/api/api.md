@@ -58,4 +58,4 @@ Tab for the-components
 ## TheRouteStyle()
 Style for TheRoute
 
-**Kind**: global function
+**Kind**: global function  

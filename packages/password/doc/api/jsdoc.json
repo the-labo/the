@@ -1,67 +1,42 @@
 [
   {
-    "description": "Password util for the-framework",
     "id": "module:@the-/password",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/password",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/password/lib"
-    },
     "name": "@the-/password",
-    "order": 2,
+    "kind": "module",
+    "description": "Password util for the-framework",
+    "version": "15.4.0",
+    "license": "MIT",
     "typicalname": "password",
-    "version": "15.4.0"
-  },
-  {
-    "customTags": [
-      {
-        "tag": "link",
-        "value": "module:@the-/password}"
-      }
-    ],
-    "description": "Alias of {@memberof module:@the-/password",
-    "id": "default",
-    "kind": "function",
-    "longname": "default",
     "meta": {
-      "filename": "default.js",
-      "lineno": 1,
+      "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/password/lib"
     },
-    "name": "default",
-    "order": 1,
-    "scope": "global"
+    "order": 2
   },
   {
     "id": "module:@the-/password.ThePassword",
-    "kind": "class",
     "longname": "module:@the-/password.ThePassword",
+    "name": "ThePassword",
+    "kind": "class",
+    "scope": "static",
     "memberof": "module:@the-/password",
     "meta": {
-      "filename": "ThePassword.js",
       "lineno": 1,
+      "filename": "ThePassword.js",
       "path": "/Users/okuni/Projects/the/packages/password/lib"
     },
-    "name": "ThePassword",
-    "order": 3,
-    "scope": "static"
+    "order": 3
   },
   {
-    "description": "Create a ThePassword instance",
     "id": "module:@the-/password.create",
-    "kind": "function",
     "longname": "module:@the-/password.create",
-    "memberof": "module:@the-/password",
-    "meta": {
-      "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/password/lib"
-    },
     "name": "create",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a ThePassword instance",
+    "memberof": "module:@the-/password",
     "params": [
       {
         "type": {
@@ -82,6 +57,26 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/password/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/password.default",
+    "longname": "module:@the-/password.default",
+    "name": "default",
+    "kind": "function",
+    "scope": "static",
+    "description": "Alias of {@link module:@the-/password}",
+    "memberof": "module:@the-/password",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/password/lib"
+    },
+    "order": 1
   }
 ]

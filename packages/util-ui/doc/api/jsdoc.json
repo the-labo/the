@@ -1,48 +1,43 @@
 [
   {
-    "description": "Utility for the-components",
     "id": "module:@the-/util-ui",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/util-ui",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
-    },
     "name": "@the-/util-ui",
-    "order": 6,
+    "kind": "module",
+    "description": "Utility for the-components",
+    "version": "15.4.1",
+    "license": "MIT",
     "typicalname": "utilUi",
-    "version": "15.4.1"
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
+    },
+    "order": 6
   },
   {
-    "description": "Define class mixin",
     "id": "module:@the-/util-ui.asHOC",
-    "kind": "function",
     "longname": "module:@the-/util-ui.asHOC",
+    "name": "asHOC",
+    "kind": "function",
+    "scope": "static",
+    "description": "Define class mixin",
     "memberof": "module:@the-/util-ui",
     "meta": {
-      "filename": "asHOC.js",
       "lineno": 1,
+      "filename": "asHOC.js",
       "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
     },
-    "name": "asHOC",
-    "order": 0,
-    "scope": "static"
+    "order": 0
   },
   {
-    "description": "Mark  : style data",
     "id": "module:@the-/util-ui.asStyleData",
-    "kind": "function",
     "longname": "module:@the-/util-ui.asStyleData",
-    "memberof": "module:@the-/util-ui",
-    "meta": {
-      "filename": "asStyleData.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
-    },
     "name": "asStyleData",
-    "order": 1,
+    "kind": "function",
+    "scope": "static",
+    "description": "Mark  : style data",
+    "memberof": "module:@the-/util-ui",
     "params": [
       {
         "type": {
@@ -73,21 +68,21 @@
         "description": "Style data"
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Extract changed props",
-    "id": "module:@the-/util-ui.changedProps",
-    "kind": "function",
-    "longname": "module:@the-/util-ui.changedProps",
-    "memberof": "module:@the-/util-ui",
     "meta": {
-      "filename": "changedProps.js",
       "lineno": 1,
+      "filename": "asStyleData.js",
       "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
     },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/util-ui.changedProps",
+    "longname": "module:@the-/util-ui.changedProps",
     "name": "changedProps",
-    "order": 2,
+    "kind": "function",
+    "scope": "static",
+    "description": "Extract changed props",
+    "memberof": "module:@the-/util-ui",
     "params": [
       {
         "type": {
@@ -116,22 +111,21 @@
         "description": "- Changed prop values"
       }
     ],
-    "scope": "static"
-  },
-  {
-    "deprecated": "Ues util-color instead",
-    "description": "Change color alpha",
-    "id": "module:@the-/util-ui.colorAlpha",
-    "kind": "function",
-    "longname": "module:@the-/util-ui.colorAlpha",
-    "memberof": "module:@the-/util-ui",
     "meta": {
-      "filename": "colorAlpha.js",
       "lineno": 1,
+      "filename": "changedProps.js",
       "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
     },
+    "order": 2
+  },
+  {
+    "id": "module:@the-/util-ui.colorAlpha",
+    "longname": "module:@the-/util-ui.colorAlpha",
     "name": "colorAlpha",
-    "order": 3,
+    "kind": "function",
+    "scope": "static",
+    "description": "Change color alpha",
+    "memberof": "module:@the-/util-ui",
     "params": [
       {
         "type": {
@@ -164,21 +158,22 @@
         "description": "Color string"
       }
     ],
-    "scope": "static"
+    "deprecated": "Ues util-color instead",
+    "meta": {
+      "lineno": 1,
+      "filename": "colorAlpha.js",
+      "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
+    },
+    "order": 3
   },
   {
-    "description": "Extract event handlers for component props",
     "id": "module:@the-/util-ui.eventHandlersFor",
-    "kind": "function",
     "longname": "module:@the-/util-ui.eventHandlersFor",
-    "memberof": "module:@the-/util-ui",
-    "meta": {
-      "filename": "eventHandlersFor.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
-    },
     "name": "eventHandlersFor",
-    "order": 4,
+    "kind": "function",
+    "scope": "static",
+    "description": "Extract event handlers for component props",
+    "memberof": "module:@the-/util-ui",
     "params": [
       {
         "type": {
@@ -220,21 +215,21 @@
         "description": "Props for html attributes"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "eventHandlersFor.js",
+      "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
+    },
+    "order": 4
   },
   {
-    "description": "Extract html attributes for component props",
     "id": "module:@the-/util-ui.htmlAttributesFor",
-    "kind": "function",
     "longname": "module:@the-/util-ui.htmlAttributesFor",
-    "memberof": "module:@the-/util-ui",
-    "meta": {
-      "filename": "htmlAttributesFor.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
-    },
     "name": "htmlAttributesFor",
-    "order": 5,
+    "kind": "function",
+    "scope": "static",
+    "description": "Extract html attributes for component props",
+    "memberof": "module:@the-/util-ui",
     "params": [
       {
         "type": {
@@ -276,21 +271,21 @@
         "description": "Props for html attributes"
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Key code detector",
-    "id": "module:@the-/util-ui.isKeyCode",
-    "kind": "function",
-    "longname": "module:@the-/util-ui.isKeyCode",
-    "memberof": "module:@the-/util-ui",
     "meta": {
-      "filename": "isKeyCode.js",
       "lineno": 1,
+      "filename": "htmlAttributesFor.js",
       "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
     },
+    "order": 5
+  },
+  {
+    "id": "module:@the-/util-ui.isKeyCode",
+    "longname": "module:@the-/util-ui.isKeyCode",
     "name": "isKeyCode",
-    "order": 7,
+    "kind": "function",
+    "scope": "static",
+    "description": "Key code detector",
+    "memberof": "module:@the-/util-ui",
     "params": [
       {
         "type": {
@@ -321,21 +316,21 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Detect is serverside",
-    "id": "module:@the-/util-ui.isServerSide",
-    "kind": "function",
-    "longname": "module:@the-/util-ui.isServerSide",
-    "memberof": "module:@the-/util-ui",
     "meta": {
-      "filename": "isServerSide.js",
       "lineno": 1,
+      "filename": "isKeyCode.js",
       "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
     },
+    "order": 7
+  },
+  {
+    "id": "module:@the-/util-ui.isServerSide",
+    "longname": "module:@the-/util-ui.isServerSide",
     "name": "isServerSide",
-    "order": 8,
+    "kind": "function",
+    "scope": "static",
+    "description": "Detect is serverside",
+    "memberof": "module:@the-/util-ui",
     "returns": [
       {
         "type": {
@@ -345,21 +340,21 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Detect src url is video or not",
-    "id": "module:@the-/util-ui.isVideoSrc",
-    "kind": "function",
-    "longname": "module:@the-/util-ui.isVideoSrc",
-    "memberof": "module:@the-/util-ui",
     "meta": {
-      "filename": "isVideoSrc.js",
       "lineno": 1,
+      "filename": "isServerSide.js",
       "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
     },
+    "order": 8
+  },
+  {
+    "id": "module:@the-/util-ui.isVideoSrc",
+    "longname": "module:@the-/util-ui.isVideoSrc",
     "name": "isVideoSrc",
-    "order": 9,
+    "kind": "function",
+    "scope": "static",
+    "description": "Detect src url is video or not",
+    "memberof": "module:@the-/util-ui",
     "params": [
       {
         "type": {
@@ -381,21 +376,21 @@
         "description": "Video or not"
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Generate new id",
-    "id": "module:@the-/util-ui.newId",
-    "kind": "function",
-    "longname": "module:@the-/util-ui.newId",
-    "memberof": "module:@the-/util-ui",
     "meta": {
-      "filename": "newId.js",
       "lineno": 1,
+      "filename": "isVideoSrc.js",
       "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
     },
+    "order": 9
+  },
+  {
+    "id": "module:@the-/util-ui.newId",
+    "longname": "module:@the-/util-ui.newId",
     "name": "newId",
-    "order": 10,
+    "kind": "function",
+    "scope": "static",
+    "description": "Generate new id",
+    "memberof": "module:@the-/util-ui",
     "params": [
       {
         "type": {
@@ -428,22 +423,21 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "deprecated": true,
-    "description": "Read file  : data url",
-    "id": "module:@the-/util-ui.readFileAsDataURL",
-    "kind": "function",
-    "longname": "module:@the-/util-ui.readFileAsDataURL",
-    "memberof": "module:@the-/util-ui",
     "meta": {
-      "filename": "readFileAsDataURL.js",
       "lineno": 1,
+      "filename": "newId.js",
       "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
     },
+    "order": 10
+  },
+  {
+    "id": "module:@the-/util-ui.readFileAsDataURL",
+    "longname": "module:@the-/util-ui.readFileAsDataURL",
     "name": "readFileAsDataURL",
-    "order": 11,
+    "kind": "function",
+    "scope": "static",
+    "description": "Read file  : data url",
+    "memberof": "module:@the-/util-ui",
     "params": [
       {
         "type": {
@@ -464,21 +458,22 @@
         "description": "Data url"
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Toggle class on document body",
-    "id": "module:@the-/util-ui.toggleBodyClass",
-    "kind": "function",
-    "longname": "module:@the-/util-ui.toggleBodyClass",
-    "memberof": "module:@the-/util-ui",
+    "deprecated": true,
     "meta": {
-      "filename": "toggleBodyClass.js",
       "lineno": 1,
+      "filename": "readFileAsDataURL.js",
       "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
     },
+    "order": 11
+  },
+  {
+    "id": "module:@the-/util-ui.toggleBodyClass",
+    "longname": "module:@the-/util-ui.toggleBodyClass",
     "name": "toggleBodyClass",
-    "order": 12,
+    "kind": "function",
+    "scope": "static",
+    "description": "Toggle class on document body",
+    "memberof": "module:@the-/util-ui",
     "params": [
       {
         "type": {
@@ -500,6 +495,11 @@
         "name": "state="
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "toggleBodyClass.js",
+      "path": "/Users/okuni/Projects/the/packages/util-ui/lib"
+    },
+    "order": 12
   }
 ]

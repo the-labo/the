@@ -1,54 +1,28 @@
 [
   {
-    "description": "Refactoring tool for the-components",
     "id": "module:@the-/refactor",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/refactor",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
-    },
     "name": "@the-/refactor",
-    "order": 2,
+    "kind": "module",
+    "description": "Refactoring tool for the-components",
+    "version": "15.4.1",
+    "license": "MIT",
     "typicalname": "refactor",
-    "version": "15.4.1"
-  },
-  {
-    "customTags": [
-      {
-        "tag": "link",
-        "value": "module:@the-/refactor.create}"
-      }
-    ],
-    "description": "Alias of {@memberof module:@the-/refactor",
-    "id": "default",
-    "kind": "function",
-    "longname": "default",
     "meta": {
-      "filename": "default.js",
-      "lineno": 1,
+      "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/refactor/lib"
     },
-    "name": "default",
-    "order": 1,
-    "scope": "global"
+    "order": 2
   },
   {
-    "async": true,
-    "description": "Process with convert function",
     "id": "module:@the-/refactor.TheRefactor#convert",
-    "kind": "function",
     "longname": "module:@the-/refactor.TheRefactor#convert",
-    "memberof": "module:@the-/refactor.TheRefactor",
-    "meta": {
-      "filename": "TheRefactor.js",
-      "lineno": 53,
-      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
-    },
     "name": "convert",
-    "order": 4,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Process with convert function",
+    "memberof": "module:@the-/refactor.TheRefactor",
     "params": [
       {
         "type": {
@@ -87,22 +61,22 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Rename files",
-    "id": "module:@the-/refactor.TheRefactor#rename",
-    "kind": "function",
-    "longname": "module:@the-/refactor.TheRefactor#rename",
-    "memberof": "module:@the-/refactor.TheRefactor",
     "meta": {
+      "lineno": 53,
       "filename": "TheRefactor.js",
-      "lineno": 73,
       "path": "/Users/okuni/Projects/the/packages/refactor/lib"
     },
+    "async": true,
+    "order": 4
+  },
+  {
+    "id": "module:@the-/refactor.TheRefactor#rename",
+    "longname": "module:@the-/refactor.TheRefactor#rename",
     "name": "rename",
-    "order": 5,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Rename files",
+    "memberof": "module:@the-/refactor.TheRefactor",
     "params": [
       {
         "type": {
@@ -143,22 +117,22 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Rename directory",
-    "id": "module:@the-/refactor.TheRefactor#renameDir",
-    "kind": "function",
-    "longname": "module:@the-/refactor.TheRefactor#renameDir",
-    "memberof": "module:@the-/refactor.TheRefactor",
     "meta": {
+      "lineno": 73,
       "filename": "TheRefactor.js",
-      "lineno": 104,
       "path": "/Users/okuni/Projects/the/packages/refactor/lib"
     },
+    "async": true,
+    "order": 5
+  },
+  {
+    "id": "module:@the-/refactor.TheRefactor#renameDir",
+    "longname": "module:@the-/refactor.TheRefactor#renameDir",
     "name": "renameDir",
-    "order": 6,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Rename directory",
+    "memberof": "module:@the-/refactor.TheRefactor",
     "params": [
       {
         "type": {
@@ -188,22 +162,22 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Rewrite file content",
-    "id": "module:@the-/refactor.TheRefactor#rewrite",
-    "kind": "function",
-    "longname": "module:@the-/refactor.TheRefactor#rewrite",
-    "memberof": "module:@the-/refactor.TheRefactor",
     "meta": {
+      "lineno": 104,
       "filename": "TheRefactor.js",
-      "lineno": 132,
       "path": "/Users/okuni/Projects/the/packages/refactor/lib"
     },
+    "async": true,
+    "order": 6
+  },
+  {
+    "id": "module:@the-/refactor.TheRefactor#rewrite",
+    "longname": "module:@the-/refactor.TheRefactor#rewrite",
     "name": "rewrite",
-    "order": 7,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Rewrite file content",
+    "memberof": "module:@the-/refactor.TheRefactor",
     "params": [
       {
         "type": {
@@ -245,22 +219,22 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Scatter a file to directories",
-    "id": "module:@the-/refactor.TheRefactor#scatter",
-    "kind": "function",
-    "longname": "module:@the-/refactor.TheRefactor#scatter",
-    "memberof": "module:@the-/refactor.TheRefactor",
     "meta": {
+      "lineno": 132,
       "filename": "TheRefactor.js",
-      "lineno": 156,
       "path": "/Users/okuni/Projects/the/packages/refactor/lib"
     },
+    "async": true,
+    "order": 7
+  },
+  {
+    "id": "module:@the-/refactor.TheRefactor#scatter",
+    "longname": "module:@the-/refactor.TheRefactor#scatter",
     "name": "scatter",
-    "order": 8,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Scatter a file to directories",
+    "memberof": "module:@the-/refactor.TheRefactor",
     "params": [
       {
         "type": {
@@ -288,35 +262,36 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 156,
+      "filename": "TheRefactor.js",
+      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+    },
+    "async": true,
+    "order": 8
   },
   {
     "id": "module:@the-/refactor.TheRefactor",
-    "kind": "class",
     "longname": "module:@the-/refactor.TheRefactor",
+    "name": "TheRefactor",
+    "kind": "class",
+    "scope": "static",
     "memberof": "module:@the-/refactor",
     "meta": {
-      "filename": "TheRefactor.js",
       "lineno": 1,
+      "filename": "TheRefactor.js",
       "path": "/Users/okuni/Projects/the/packages/refactor/lib"
     },
-    "name": "TheRefactor",
-    "order": 3,
-    "scope": "static"
+    "order": 3
   },
   {
-    "description": "Create a TheRefactor instance",
     "id": "module:@the-/refactor.create",
-    "kind": "function",
     "longname": "module:@the-/refactor.create",
-    "memberof": "module:@the-/refactor",
-    "meta": {
-      "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
-    },
     "name": "create",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheRefactor instance",
+    "memberof": "module:@the-/refactor",
     "params": [
       {
         "type": {
@@ -337,6 +312,26 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/refactor.default",
+    "longname": "module:@the-/refactor.default",
+    "name": "default",
+    "kind": "function",
+    "scope": "static",
+    "description": "Alias of {@link module:@the-/refactor.create}",
+    "memberof": "module:@the-/refactor",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+    },
+    "order": 1
   }
 ]

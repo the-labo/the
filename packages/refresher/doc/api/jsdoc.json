@@ -1,53 +1,28 @@
 [
   {
-    "description": "Refresher of the-db",
     "id": "module:@the-/refresher",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/refresher",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/refresher/lib"
-    },
     "name": "@the-/refresher",
-    "order": 2,
+    "kind": "module",
+    "description": "Refresher of the-db",
+    "version": "15.4.0",
+    "license": "MIT",
     "typicalname": "refresher",
-    "version": "15.4.0"
-  },
-  {
-    "customTags": [
-      {
-        "tag": "link",
-        "value": "module:@the-/refresher.create}"
-      }
-    ],
-    "description": "Alias of {@memberof module:@the-/refresher",
-    "id": "default",
-    "kind": "function",
-    "longname": "default",
     "meta": {
-      "filename": "default.js",
-      "lineno": 1,
+      "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/refresher/lib"
     },
-    "name": "default",
-    "order": 1,
-    "scope": "global"
+    "order": 2
   },
   {
-    "description": "Check the refresh has the target",
     "id": "module:@the-/refresher.TheRefresher#has",
-    "kind": "function",
     "longname": "module:@the-/refresher.TheRefresher#has",
-    "memberof": "module:@the-/refresher.TheRefresher",
-    "meta": {
-      "filename": "TheRefresher.js",
-      "lineno": 27,
-      "path": "/Users/okuni/Projects/the/packages/refresher/lib"
-    },
     "name": "has",
-    "order": 4,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Check the refresh has the target",
+    "memberof": "module:@the-/refresher.TheRefresher",
     "params": [
       {
         "type": {
@@ -67,37 +42,37 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 27,
+      "filename": "TheRefresher.js",
+      "path": "/Users/okuni/Projects/the/packages/refresher/lib"
+    },
+    "order": 4
   },
   {
-    "description": "Add refresh target",
     "id": "module:@the-/refresher.TheRefresher#request",
-    "kind": "function",
     "longname": "module:@the-/refresher.TheRefresher#request",
+    "name": "request",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add refresh target",
     "memberof": "module:@the-/refresher.TheRefresher",
+    "params": [],
     "meta": {
-      "filename": "TheRefresher.js",
       "lineno": 32,
+      "filename": "TheRefresher.js",
       "path": "/Users/okuni/Projects/the/packages/refresher/lib"
     },
-    "name": "request",
-    "order": 5,
-    "params": [],
-    "scope": "instance"
+    "order": 5
   },
   {
-    "description": "Start ticking",
     "id": "module:@the-/refresher.TheRefresher#start",
-    "kind": "function",
     "longname": "module:@the-/refresher.TheRefresher#start",
-    "memberof": "module:@the-/refresher.TheRefresher",
-    "meta": {
-      "filename": "TheRefresher.js",
-      "lineno": 41,
-      "path": "/Users/okuni/Projects/the/packages/refresher/lib"
-    },
     "name": "start",
-    "order": 6,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Start ticking",
+    "memberof": "module:@the-/refresher.TheRefresher",
     "params": [],
     "returns": [
       {
@@ -108,51 +83,51 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Stop ticking",
-    "id": "module:@the-/refresher.TheRefresher#stop",
-    "kind": "function",
-    "longname": "module:@the-/refresher.TheRefresher#stop",
-    "memberof": "module:@the-/refresher.TheRefresher",
     "meta": {
+      "lineno": 41,
       "filename": "TheRefresher.js",
-      "lineno": 68,
       "path": "/Users/okuni/Projects/the/packages/refresher/lib"
     },
+    "order": 6
+  },
+  {
+    "id": "module:@the-/refresher.TheRefresher#stop",
+    "longname": "module:@the-/refresher.TheRefresher#stop",
     "name": "stop",
-    "order": 7,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Stop ticking",
+    "memberof": "module:@the-/refresher.TheRefresher",
     "params": [],
-    "scope": "instance"
+    "meta": {
+      "lineno": 68,
+      "filename": "TheRefresher.js",
+      "path": "/Users/okuni/Projects/the/packages/refresher/lib"
+    },
+    "order": 7
   },
   {
     "id": "module:@the-/refresher.TheRefresher",
-    "kind": "class",
     "longname": "module:@the-/refresher.TheRefresher",
+    "name": "TheRefresher",
+    "kind": "class",
+    "scope": "static",
     "memberof": "module:@the-/refresher",
     "meta": {
-      "filename": "TheRefresher.js",
       "lineno": 1,
+      "filename": "TheRefresher.js",
       "path": "/Users/okuni/Projects/the/packages/refresher/lib"
     },
-    "name": "TheRefresher",
-    "order": 3,
-    "scope": "static"
+    "order": 3
   },
   {
-    "description": "Create a TheRefresher instance",
     "id": "module:@the-/refresher.create",
-    "kind": "function",
     "longname": "module:@the-/refresher.create",
-    "memberof": "module:@the-/refresher",
-    "meta": {
-      "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/refresher/lib"
-    },
     "name": "create",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheRefresher instance",
+    "memberof": "module:@the-/refresher",
     "params": [
       {
         "type": {
@@ -173,6 +148,26 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/refresher/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/refresher.default",
+    "longname": "module:@the-/refresher.default",
+    "name": "default",
+    "kind": "function",
+    "scope": "static",
+    "description": "Alias of {@link module:@the-/refresher.create}",
+    "memberof": "module:@the-/refresher",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/refresher/lib"
+    },
+    "order": 1
   }
 ]

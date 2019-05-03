@@ -50,4 +50,4 @@ Bar of the-component
 ## TheBarStyle()
 Style for TheBar
 
-**Kind**: global function
+**Kind**: global function  

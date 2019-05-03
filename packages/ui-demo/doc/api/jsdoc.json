@@ -1,76 +1,76 @@
 [
   {
-    "description": "Live demo of the-components",
     "id": "module:@the-/ui-demo",
-    "kind": "module",
     "longname": "module:@the-/ui-demo",
-    "meta": {
-      "filename": "index.jsx",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-demo/lib"
-    },
     "name": "@the-/ui-demo",
-    "order": 0,
-    "typicalname": "uiDemo",
-    "version": "15.4.0"
-  },
-  {
+    "kind": "module",
     "description": "Live demo of the-components",
+    "version": "15.4.0",
+    "typicalname": "uiDemo",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-demo/lib"
+    },
+    "order": 0
+  },
+  {
     "id": "TheComponentDemo",
-    "kind": "class",
     "longname": "TheComponentDemo",
-    "meta": {
-      "filename": "TheComponentDemo.jsx",
-      "lineno": 36,
-      "path": "/Users/okuni/Projects/the/packages/ui-demo/lib"
-    },
     "name": "TheComponentDemo",
-    "order": 1,
-    "scope": "global"
+    "kind": "class",
+    "scope": "global",
+    "description": "Live demo of the-components",
+    "meta": {
+      "lineno": 36,
+      "filename": "TheComponentDemo.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-demo/lib"
+    },
+    "order": 1
   },
   {
-    "description": "CSS class name",
     "id": "TheComponentDemo.propTypes.className",
-    "kind": "member",
     "longname": "TheComponentDemo.propTypes.className",
-    "memberof": "TheComponentDemo.propTypes",
-    "meta": {
-      "filename": "TheComponentDemo.jsx",
-      "lineno": 113,
-      "path": "/Users/okuni/Projects/the/packages/ui-demo/lib"
-    },
     "name": "className",
-    "order": 2,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "CSS class name",
+    "memberof": "TheComponentDemo.propTypes",
+    "meta": {
+      "lineno": 113,
+      "filename": "TheComponentDemo.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-demo/lib"
+    },
+    "order": 2
   },
   {
-    "description": "Package json for demo",
     "id": "TheComponentDemo.propTypes.pkg",
-    "kind": "member",
     "longname": "TheComponentDemo.propTypes.pkg",
+    "name": "pkg",
+    "kind": "member",
+    "scope": "static",
+    "description": "Package json for demo",
     "memberof": "TheComponentDemo.propTypes",
     "meta": {
-      "filename": "TheComponentDemo.jsx",
       "lineno": 115,
+      "filename": "TheComponentDemo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-demo/lib"
     },
-    "name": "pkg",
-    "order": 3,
-    "scope": "static"
+    "order": 3
   },
   {
-    "description": "Snippet script",
     "id": "TheComponentDemo.propTypes.snippet",
-    "kind": "member",
     "longname": "TheComponentDemo.propTypes.snippet",
+    "name": "snippet",
+    "kind": "member",
+    "scope": "static",
+    "description": "Snippet script",
     "memberof": "TheComponentDemo.propTypes",
     "meta": {
-      "filename": "TheComponentDemo.jsx",
       "lineno": 117,
+      "filename": "TheComponentDemo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-demo/lib"
     },
-    "name": "snippet",
-    "order": 4,
-    "scope": "static"
+    "order": 4
   }
 ]

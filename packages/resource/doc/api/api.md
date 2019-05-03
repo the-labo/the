@@ -54,7 +54,8 @@ Base of the-resource
         * [.writeOnceMix(Class)](#module_@the-/resource.mixins.writeOnceMix) ⇒ <code>function</code>
             * [~WriteOnce](#module_@the-/resource.mixins.writeOnceMix..WriteOnce)
     * [.create(...args)](#module_@the-/resource.create) ⇒ <code>TheResource</code>
-    * [.isResourceClass()](#module_@the-/resource.isResourceClass) ⇒ <code>Boolean</code>
+    * [.default()](#module_@the-/resource.default)
+    * [.isResourceClass()](#module_@the-/resource.isResourceClass) ⇒ <code>boolean</code>
 
 <a name="module_@the-/resource.TheResource"></a>
 
@@ -223,9 +224,15 @@ Create a TheResource instance
 | --- | --- |
 | ...args | <code>\*</code> | 
 
+<a name="module_@the-/resource.default"></a>
+
+### resource.default()
+Alias of [create](#module_@the-/resource.create)
+
+**Kind**: static method of [<code>@the-/resource</code>](#module_@the-/resource)  
 <a name="module_@the-/resource.isResourceClass"></a>
 
-### resource.isResourceClass() ⇒ <code>Boolean</code>
+### resource.isResourceClass() ⇒ <code>boolean</code>
 **Kind**: static method of [<code>@the-/resource</code>](#module_@the-/resource)  
 <a name="listenToCreate"></a>
 
@@ -273,4 +280,5 @@ Listen to update
 
 | Param | Type |
 | --- | --- |
-| onUpdate | <code>function</code> |
+| onUpdate | <code>function</code> | 
+

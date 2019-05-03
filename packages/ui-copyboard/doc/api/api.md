@@ -41,4 +41,4 @@ Component for clip-to-copy
 ## TheCopyboardStyle()
 Style for TheCopyboard
 
-**Kind**: global function
+**Kind**: global function  

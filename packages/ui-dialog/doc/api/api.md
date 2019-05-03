@@ -68,4 +68,4 @@ Yes No Dialog
 ## TheDialogStyle()
 Style for TheDialog
 
-**Kind**: global function
+**Kind**: global function  

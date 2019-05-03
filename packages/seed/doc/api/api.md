@@ -13,6 +13,7 @@ Data generator for the-db
         * [.apply(seed)](#module_@the-/seed.TheSeed+apply) ⇒ <code>Array.&lt;Object&gt;</code>
         * [.explode(seed, [counts])](#module_@the-/seed.TheSeed+explode) ⇒ <code>Array.&lt;Object&gt;</code>
     * [.create(...args)](#module_@the-/seed.create) ⇒ <code>TheSeed</code>
+    * [.default()](#module_@the-/seed.default)
 
 <a name="module_@the-/seed.TheSeed"></a>
 
@@ -55,4 +56,11 @@ Create a TheSeed instance
 
 | Param | Type |
 | --- | --- |
-| ...args | <code>\*</code> |
+| ...args | <code>\*</code> | 
+
+<a name="module_@the-/seed.default"></a>
+
+### seed.default()
+Alias of [create](#module_@the-/seed.create)
+
+**Kind**: static method of [<code>@the-/seed</code>](#module_@the-/seed)  

@@ -41,4 +41,4 @@ Steps for the-component
 ## TheStepStyle()
 Style for TheStep
 
-**Kind**: global function
+**Kind**: global function  

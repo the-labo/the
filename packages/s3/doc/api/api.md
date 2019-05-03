@@ -13,6 +13,7 @@ S3 upload helper
         * [new TheS3(config)](#new_module_@the-/s3.TheS3_new)
         * [.upload(src, [options])](#module_@the-/s3.TheS3+upload) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.create(...args)](#module_@the-/s3.create) ⇒ <code>TheS3</code>
+    * [.default()](#module_@the-/s3.default)
 
 <a name="module_@the-/s3.TheS3"></a>
 
@@ -57,4 +58,11 @@ Create a TheS3 instance
 
 | Param | Type |
 | --- | --- |
-| ...args | <code>\*</code> |
+| ...args | <code>\*</code> | 
+
+<a name="module_@the-/s3.default"></a>
+
+### s3.default()
+Alias of [@the-/s3](#module_@the-/s3)
+
+**Kind**: static method of [<code>@the-/s3</code>](#module_@the-/s3)  

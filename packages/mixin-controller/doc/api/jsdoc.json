@@ -1,32 +1,27 @@
 [
   {
-    "description": "Mixins for the-controller",
     "id": "module:@the-/mixin-controller",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/mixin-controller",
+    "name": "@the-/mixin-controller",
+    "kind": "module",
+    "description": "Mixins for the-controller",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "mixinController",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
     },
-    "name": "@the-/mixin-controller",
-    "order": 1,
-    "typicalname": "mixinController",
-    "version": "15.4.0"
+    "order": 1
   },
   {
-    "description": "Compose multiple mixins into one",
     "id": "compose",
-    "kind": "function",
     "longname": "compose",
-    "meta": {
-      "filename": "compose.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
-    },
     "name": "compose",
-    "order": 0,
+    "kind": "function",
+    "scope": "global",
+    "description": "Compose multiple mixins into one",
     "params": [
       {
         "type": {
@@ -48,48 +43,48 @@
         "description": "Composed mixin"
       }
     ],
-    "scope": "global"
+    "meta": {
+      "lineno": 1,
+      "filename": "compose.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
+    },
+    "order": 0
   },
   {
-    "description": "Wrap controller with seal",
     "id": "withAuthorized",
-    "kind": "function",
     "longname": "withAuthorized",
-    "meta": {
-      "filename": "withAuthorized.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
-    },
     "name": "withAuthorized",
-    "order": 2,
-    "scope": "global"
+    "kind": "function",
+    "scope": "global",
+    "description": "Wrap controller with seal",
+    "meta": {
+      "lineno": 1,
+      "filename": "withAuthorized.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
+    },
+    "order": 2
   },
   {
-    "description": "Wrap controller with client",
     "id": "withClient",
-    "kind": "function",
     "longname": "withClient",
+    "name": "withClient",
+    "kind": "function",
+    "scope": "global",
+    "description": "Wrap controller with client",
     "meta": {
-      "filename": "withClient.js",
       "lineno": 1,
+      "filename": "withClient.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
     },
-    "name": "withClient",
-    "order": 3,
-    "scope": "global"
+    "order": 3
   },
   {
-    "description": "Wrap controller with debug",
     "id": "withDebug",
-    "kind": "function",
     "longname": "withDebug",
-    "meta": {
-      "filename": "withDebug.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
-    },
     "name": "withDebug",
-    "order": 4,
+    "kind": "function",
+    "scope": "global",
+    "description": "Wrap controller with debug",
     "params": [
       {
         "type": {
@@ -111,87 +106,92 @@
         "description": "Mixed class"
       }
     ],
-    "scope": "global"
+    "meta": {
+      "lineno": 1,
+      "filename": "withDebug.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
+    },
+    "order": 4
   },
   {
-    "description": "Wrap controller",
     "id": "withListen",
-    "kind": "function",
     "longname": "withListen",
-    "meta": {
-      "filename": "withListen.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
-    },
     "name": "withListen",
-    "order": 5,
-    "scope": "global"
-  },
-  {
+    "kind": "function",
+    "scope": "global",
     "description": "Wrap controller",
-    "id": "withPreference",
-    "kind": "function",
-    "longname": "withPreference",
     "meta": {
-      "filename": "withPreference.js",
       "lineno": 1,
+      "filename": "withListen.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
     },
-    "name": "withPreference",
-    "order": 6,
-    "scope": "global"
+    "order": 5
   },
   {
-    "description": "Wrap controller with seal",
-    "id": "withSeal",
+    "id": "withPreference",
+    "longname": "withPreference",
+    "name": "withPreference",
     "kind": "function",
-    "longname": "withSeal",
+    "scope": "global",
+    "description": "Wrap controller",
     "meta": {
-      "filename": "withSeal.js",
       "lineno": 1,
+      "filename": "withPreference.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
     },
+    "order": 6
+  },
+  {
+    "id": "withSeal",
+    "longname": "withSeal",
     "name": "withSeal",
-    "order": 7,
-    "scope": "global"
+    "kind": "function",
+    "scope": "global",
+    "description": "Wrap controller with seal",
+    "meta": {
+      "lineno": 1,
+      "filename": "withSeal.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
+    },
+    "order": 7
   },
   {
     "id": "getAllPropertyDescriptors",
-    "kind": "function",
     "longname": "getAllPropertyDescriptors",
+    "name": "getAllPropertyDescriptors",
+    "kind": "function",
+    "scope": "global",
     "meta": {
-      "filename": "getAllPropertyDescriptors.js",
       "lineno": 1,
+      "filename": "getAllPropertyDescriptors.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib/helpers"
     },
-    "name": "getAllPropertyDescriptors",
-    "order": 8,
-    "scope": "global"
+    "order": 8
   },
   {
     "id": "instanceMethodNamesFor",
-    "kind": "function",
     "longname": "instanceMethodNamesFor",
+    "name": "instanceMethodNamesFor",
+    "kind": "function",
+    "scope": "global",
     "meta": {
-      "filename": "instanceMethodNamesFor.js",
       "lineno": 1,
+      "filename": "instanceMethodNamesFor.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib/helpers"
     },
-    "name": "instanceMethodNamesFor",
-    "order": 9,
-    "scope": "global"
+    "order": 9
   },
   {
     "id": "omitLongString",
-    "kind": "function",
     "longname": "omitLongString",
+    "name": "omitLongString",
+    "kind": "function",
+    "scope": "global",
     "meta": {
-      "filename": "omitLongString.js",
       "lineno": 1,
+      "filename": "omitLongString.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib/helpers"
     },
-    "name": "omitLongString",
-    "order": 10,
-    "scope": "global"
+    "order": 10
   }
 ]

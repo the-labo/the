@@ -1,31 +1,26 @@
 [
   {
-    "description": "Build script for the-projects",
     "id": "module:@the-/script-build",
-    "kind": "module",
     "longname": "module:@the-/script-build",
+    "name": "@the-/script-build",
+    "kind": "module",
+    "description": "Build script for the-projects",
+    "version": "15.4.6",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/script-build/lib"
     },
-    "name": "@the-/script-build",
-    "order": 1,
-    "version": "15.4.6"
+    "order": 1
   },
   {
-    "description": "Build project",
     "id": "module:@the-/script-build.build",
-    "kind": "function",
     "longname": "module:@the-/script-build.build",
-    "memberof": "module:@the-/script-build",
-    "meta": {
-      "filename": "build.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/script-build/lib"
-    },
     "name": "build",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "description": "Build project",
+    "memberof": "module:@the-/script-build",
     "params": [
       {
         "type": {
@@ -59,6 +54,11 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "build.js",
+      "path": "/Users/okuni/Projects/the/packages/script-build/lib"
+    },
+    "order": 0
   }
 ]

@@ -1,48 +1,43 @@
 [
   {
-    "description": "File utility for the-framework",
     "id": "module:@the-/util-file",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/util-file",
+    "name": "@the-/util-file",
+    "kind": "module",
+    "description": "File utility for the-framework",
+    "version": "15.4.3",
+    "license": "MIT",
+    "typicalname": "utilFile",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/util-file/lib"
     },
-    "name": "@the-/util-file",
-    "order": 3,
-    "typicalname": "utilFile",
-    "version": "15.4.3"
+    "order": 3
   },
   {
-    "access": "protected",
-    "description": "Helper functions",
     "id": "module:@the-/file.helpers",
-    "kind": "namespace",
     "longname": "module:@the-/file.helpers",
+    "name": "helpers",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Helper functions",
     "memberof": "module:@the-/file",
+    "access": "protected",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/util-file/lib/helpers"
     },
-    "name": "helpers",
-    "order": 10,
-    "scope": "static"
+    "order": 10
   },
   {
     "id": "module:@the-/util-file.copyAsJsonSync",
-    "kind": "function",
     "longname": "module:@the-/util-file.copyAsJsonSync",
-    "memberof": "module:@the-/util-file",
-    "meta": {
-      "filename": "copyAsJsonSync.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
-    },
     "name": "copyAsJsonSync",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/util-file",
     "params": [
       {
         "type": {
@@ -61,20 +56,20 @@
         "name": "dest"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "copyAsJsonSync.js",
+      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
+    },
+    "order": 0
   },
   {
     "id": "module.module:@the-/util-file.delSync",
-    "kind": "function",
     "longname": "module.module:@the-/util-file.delSync",
-    "memberof": "module.module:@the-/util-file",
-    "meta": {
-      "filename": "delSync.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
-    },
     "name": "delSync",
-    "order": 1,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module.module:@the-/util-file",
     "params": [
       {
         "type": {
@@ -85,21 +80,21 @@
         "name": "filename"
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Get file type of file",
-    "id": "module:@the-/util-file.fileTypeOf",
-    "kind": "function",
-    "longname": "module:@the-/util-file.fileTypeOf",
-    "memberof": "module:@the-/util-file",
     "meta": {
-      "filename": "fileTypeOf.js",
       "lineno": 1,
+      "filename": "delSync.js",
       "path": "/Users/okuni/Projects/the/packages/util-file/lib"
     },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/util-file.fileTypeOf",
+    "longname": "module:@the-/util-file.fileTypeOf",
     "name": "fileTypeOf",
-    "order": 2,
+    "kind": "function",
+    "scope": "static",
+    "description": "Get file type of file",
+    "memberof": "module:@the-/util-file",
     "params": [
       {
         "type": {
@@ -119,20 +114,20 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "fileTypeOf.js",
+      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
+    },
+    "order": 2
   },
   {
     "id": "module:@the-/util-file.isJSON5File",
-    "kind": "function",
     "longname": "module:@the-/util-file.isJSON5File",
-    "memberof": "module:@the-/util-file",
-    "meta": {
-      "filename": "isJSON5File.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
-    },
     "name": "isJSON5File",
-    "order": 4,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/util-file",
     "params": [
       {
         "type": {
@@ -147,26 +142,26 @@
       {
         "type": {
           "names": [
-            "Boolean"
+            "boolean"
           ]
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Read as json",
-    "id": "module:@the-/util-file.readAsJson",
-    "kind": "function",
-    "longname": "module:@the-/util-file.readAsJson",
-    "memberof": "module:@the-/util-file",
     "meta": {
-      "filename": "readAsJson.js",
       "lineno": 1,
+      "filename": "isJSON5File.js",
       "path": "/Users/okuni/Projects/the/packages/util-file/lib"
     },
+    "order": 4
+  },
+  {
+    "id": "module:@the-/util-file.readAsJson",
+    "longname": "module:@the-/util-file.readAsJson",
     "name": "readAsJson",
-    "order": 5,
+    "kind": "function",
+    "scope": "static",
+    "description": "Read as json",
+    "memberof": "module:@the-/util-file",
     "params": [
       {
         "type": {
@@ -186,20 +181,20 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "readAsJson.js",
+      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
+    },
+    "order": 5
   },
   {
     "id": "module:@the-/util-file.readAsJsonSync",
-    "kind": "function",
     "longname": "module:@the-/util-file.readAsJsonSync",
-    "memberof": "module:@the-/util-file",
-    "meta": {
-      "filename": "readAsJsonSync.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
-    },
     "name": "readAsJsonSync",
-    "order": 6,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/util-file",
     "params": [
       {
         "type": {
@@ -219,20 +214,20 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "readAsJsonSync.js",
+      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
+    },
+    "order": 6
   },
   {
     "id": "module:@the-/util-file.statSync",
-    "kind": "function",
     "longname": "module:@the-/util-file.statSync",
-    "memberof": "module:@the-/util-file",
-    "meta": {
-      "filename": "statSync.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
-    },
     "name": "statSync",
-    "order": 7,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/util-file",
     "params": [
       {
         "type": {
@@ -243,20 +238,20 @@
         "name": "filename"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "statSync.js",
+      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
+    },
+    "order": 7
   },
   {
     "id": "module:@the-/util-file.writeAsJsonSync",
-    "kind": "function",
     "longname": "module:@the-/util-file.writeAsJsonSync",
-    "memberof": "module:@the-/util-file",
-    "meta": {
-      "filename": "writeAsJson.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
-    },
     "name": "writeAsJsonSync",
-    "order": 8,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/util-file",
     "params": [
       {
         "type": {
@@ -284,20 +279,20 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "writeAsJson.js",
+      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
+    },
+    "order": 8
   },
   {
     "id": "module:@the-/util-file.writeAsJsonSync",
-    "kind": "function",
     "longname": "module:@the-/util-file.writeAsJsonSync",
-    "memberof": "module:@the-/util-file",
-    "meta": {
-      "filename": "writeAsJsonSync.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
-    },
     "name": "writeAsJsonSync",
-    "order": 9,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/util-file",
     "params": [
       {
         "type": {
@@ -316,22 +311,27 @@
         "name": "data"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "writeAsJsonSync.js",
+      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
+    },
+    "order": 9
   },
   {
-    "access": "protected",
-    "description": "Sort object properties",
     "id": "module:@the-/util-file.helpers.sortProperties",
-    "kind": "function",
     "longname": "module:@the-/util-file.helpers.sortProperties",
+    "name": "sortProperties",
+    "kind": "function",
+    "scope": "static",
+    "description": "Sort object properties",
     "memberof": "module:@the-/util-file.helpers",
+    "access": "protected",
     "meta": {
-      "filename": "sortProperties.js",
       "lineno": 1,
+      "filename": "sortProperties.js",
       "path": "/Users/okuni/Projects/the/packages/util-file/lib/helpers"
     },
-    "name": "sortProperties",
-    "order": 11,
-    "scope": "static"
+    "order": 11
   }
 ]

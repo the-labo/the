@@ -47,4 +47,4 @@ Hand write painting
 ## ThePaintStyle()
 Style for ThePaint
 
-**Kind**: global function
+**Kind**: global function  

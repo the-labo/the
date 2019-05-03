@@ -19,9 +19,6 @@
 ## Functions
 
 <dl>
-<dt><a href="#default">default()</a></dt>
-<dd><p>Alias of {@memberof module:@the-/server</p>
-</dd>
 <dt><a href="#assertMethods">assertMethods(Class, reservedNames)</a></dt>
 <dd></dd>
 <dt><a href="#IOEvents">IOEvents()</a></dt>
@@ -107,6 +104,7 @@ HTTP/RPC Server of the-framework
             * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.asControllerModule()](#module_@the-/server.asControllerModule)
     * [.create(...args)](#module_@the-/server.create) ⇒ <code>TheServer</code>
+    * [.default()](#module_@the-/server.default)
 
 <a name="module_@the-/server.TheServer"></a>
 
@@ -685,19 +683,18 @@ Create a TheServer instance
 | --- | --- |
 | ...args | <code>\*</code> | 
 
+<a name="module_@the-/server.default"></a>
+
+### server.default()
+Alias of [create](#module_@the-/server.create)
+
+**Kind**: static method of [<code>@the-/server</code>](#module_@the-/server)  
 <a name="KeepMixed"></a>
 
 ## KeepMixed
 module:@the-/server.mixins.keepmix
 
 **Kind**: global class  
-<a name="default"></a>
-
-## default()
-Alias of {@memberof module:@the-/server
-
-**Kind**: global function  
-**Link**: module:@the-/server.create}  
 <a name="assertMethods"></a>
 
 ## assertMethods(Class, reservedNames)
@@ -717,4 +714,4 @@ Alias of {@memberof module:@the-/server
 ## IOEvents()
 Events for IO
 
-**Kind**: global function
+**Kind**: global function  

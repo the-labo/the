@@ -1,33 +1,28 @@
 [
   {
-    "description": "Base class of the-scene",
     "id": "module:@the-/scene",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/scene",
+    "name": "@the-/scene",
+    "kind": "module",
+    "description": "Base class of the-scene",
+    "version": "15.4.1",
+    "license": "MIT",
+    "typicalname": "scene",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/scene/lib"
     },
-    "name": "@the-/scene",
-    "order": 1,
-    "typicalname": "scene",
-    "version": "15.4.1"
+    "order": 2
   },
   {
-    "description": "Scene scope",
     "id": "module:@the-/scene.TheScene#scope",
-    "kind": "member",
     "longname": "module:@the-/scene.TheScene#scope",
-    "memberof": "module:@the-/scene.TheScene",
-    "meta": {
-      "filename": "TheScene.js",
-      "lineno": 37,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib"
-    },
     "name": "scope",
-    "order": 3,
+    "kind": "member",
+    "scope": "instance",
+    "description": "Scene scope",
+    "memberof": "module:@the-/scene.TheScene",
     "params": [],
     "returns": [
       {
@@ -38,53 +33,53 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 37,
+      "filename": "TheScene.js",
+      "path": "/Users/okuni/Projects/the/packages/scene/lib"
+    },
+    "order": 4
   },
   {
-    "description": "Alias for `this.subFor`",
     "id": "module:@the-/scene.TheScene#for",
-    "kind": "function",
     "longname": "module:@the-/scene.TheScene#for",
-    "memberof": "module:@the-/scene.TheScene",
-    "meta": {
-      "filename": "TheScene.js",
-      "lineno": 42,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib"
-    },
     "name": "for",
-    "order": 4,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Alias for `this.subFor`",
+    "memberof": "module:@the-/scene.TheScene",
     "params": [],
-    "scope": "instance"
+    "meta": {
+      "lineno": 42,
+      "filename": "TheScene.js",
+      "path": "/Users/okuni/Projects/the/packages/scene/lib"
+    },
+    "order": 5
   },
   {
-    "description": "Alias for `this.scope.get`",
     "id": "module:@the-/scene.TheScene#get",
-    "kind": "function",
     "longname": "module:@the-/scene.TheScene#get",
+    "name": "get",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Alias for `this.scope.get`",
     "memberof": "module:@the-/scene.TheScene",
+    "params": [],
     "meta": {
-      "filename": "TheScene.js",
       "lineno": 47,
+      "filename": "TheScene.js",
       "path": "/Users/okuni/Projects/the/packages/scene/lib"
     },
-    "name": "get",
-    "order": 5,
-    "params": [],
-    "scope": "instance"
+    "order": 6
   },
   {
-    "description": "Check if value exists",
     "id": "module:@the-/scene.TheScene#has",
-    "kind": "function",
     "longname": "module:@the-/scene.TheScene#has",
-    "memberof": "module:@the-/scene.TheScene",
-    "meta": {
-      "filename": "TheScene.js",
-      "lineno": 66,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib"
-    },
     "name": "has",
-    "order": 6,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Check if value exists",
+    "memberof": "module:@the-/scene.TheScene",
     "params": [
       {
         "type": {
@@ -104,53 +99,53 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 66,
+      "filename": "TheScene.js",
+      "path": "/Users/okuni/Projects/the/packages/scene/lib"
+    },
+    "order": 7
   },
   {
-    "description": "Alias for `this.scope.init`",
     "id": "module:@the-/scene.TheScene#init",
-    "kind": "function",
     "longname": "module:@the-/scene.TheScene#init",
-    "memberof": "module:@the-/scene.TheScene",
-    "meta": {
-      "filename": "TheScene.js",
-      "lineno": 78,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib"
-    },
     "name": "init",
-    "order": 7,
-    "params": [],
-    "scope": "instance"
-  },
-  {
-    "description": "Alias for `this.scope.set`",
-    "id": "module:@the-/scene.TheScene#set",
     "kind": "function",
-    "longname": "module:@the-/scene.TheScene#set",
+    "scope": "instance",
+    "description": "Alias for `this.scope.init`",
     "memberof": "module:@the-/scene.TheScene",
+    "params": [],
     "meta": {
+      "lineno": 78,
       "filename": "TheScene.js",
-      "lineno": 99,
       "path": "/Users/okuni/Projects/the/packages/scene/lib"
     },
-    "name": "set",
-    "order": 8,
-    "params": [],
-    "scope": "instance"
+    "order": 8
   },
   {
-    "description": "Get sub scene with scope for namepath",
-    "id": "module:@the-/scene.mixins.subMix~SubMixed#subFor",
+    "id": "module:@the-/scene.TheScene#set",
+    "longname": "module:@the-/scene.TheScene#set",
+    "name": "set",
     "kind": "function",
-    "longname": "module:@the-/scene.mixins.subMix~SubMixed#subFor",
-    "memberof": "module:@the-/scene.mixins.subMix~SubMixed",
+    "scope": "instance",
+    "description": "Alias for `this.scope.set`",
+    "memberof": "module:@the-/scene.TheScene",
+    "params": [],
     "meta": {
-      "filename": "subMix.js",
-      "lineno": 26,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
+      "lineno": 99,
+      "filename": "TheScene.js",
+      "path": "/Users/okuni/Projects/the/packages/scene/lib"
     },
+    "order": 9
+  },
+  {
+    "id": "module:@the-/scene.mixins.subMix~SubMixed#subFor",
+    "longname": "module:@the-/scene.mixins.subMix~SubMixed#subFor",
     "name": "subFor",
-    "order": 16,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get sub scene with scope for namepath",
+    "memberof": "module:@the-/scene.mixins.subMix~SubMixed",
     "params": [
       {
         "type": {
@@ -171,50 +166,50 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 26,
+      "filename": "subMix.js",
+      "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
+    },
+    "order": 17
   },
   {
     "id": "module:@the-/scene.TheScene",
-    "kind": "class",
     "longname": "module:@the-/scene.TheScene",
+    "name": "TheScene",
+    "kind": "class",
+    "scope": "static",
     "memberof": "module:@the-/scene",
     "meta": {
-      "filename": "TheScene.js",
       "lineno": 1,
+      "filename": "TheScene.js",
       "path": "/Users/okuni/Projects/the/packages/scene/lib"
     },
-    "name": "TheScene",
-    "order": 2,
-    "scope": "static"
+    "order": 3
   },
   {
-    "description": "Mixin functions",
     "id": "module:@the-/scene.mixins",
-    "kind": "namespace",
     "longname": "module:@the-/scene.mixins",
+    "name": "mixins",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Mixin functions",
     "memberof": "module:@the-/scene",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
     },
-    "name": "mixins",
-    "order": 13,
-    "scope": "static"
+    "order": 14
   },
   {
-    "description": "Create a TheScene instance",
     "id": "module:@the-/scene.create",
-    "kind": "function",
     "longname": "module:@the-/scene.create",
-    "memberof": "module:@the-/scene",
-    "meta": {
-      "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib"
-    },
     "name": "create",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheScene instance",
+    "memberof": "module:@the-/scene",
     "params": [
       {
         "type": {
@@ -235,20 +230,35 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/scene/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/scene.default",
+    "longname": "module:@the-/scene.default",
+    "name": "default",
+    "kind": "function",
+    "scope": "static",
+    "description": "Alias of {@link module:@the-/scene.create}",
+    "memberof": "module:@the-/scene",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/scene/lib"
+    },
+    "order": 1
   },
   {
     "id": "module:@the-/scene.mixins.errorMix",
-    "kind": "function",
     "longname": "module:@the-/scene.mixins.errorMix",
-    "memberof": "module:@the-/scene.mixins",
-    "meta": {
-      "filename": "errorMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
-    },
     "name": "errorMix",
-    "order": 9,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/scene.mixins",
     "params": [
       {
         "type": {
@@ -269,20 +279,20 @@
         "description": "MixedClass"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "errorMix.js",
+      "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
+    },
+    "order": 10
   },
   {
     "id": "module:@the-/scene.mixins.goMix",
-    "kind": "function",
     "longname": "module:@the-/scene.mixins.goMix",
-    "memberof": "module:@the-/scene.mixins",
-    "meta": {
-      "filename": "goMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
-    },
     "name": "goMix",
-    "order": 11,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/scene.mixins",
     "params": [
       {
         "type": {
@@ -303,20 +313,20 @@
         "description": "MixedClass"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "goMix.js",
+      "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
+    },
+    "order": 12
   },
   {
     "id": "module:@the-/scene.mixins.subMix",
-    "kind": "function",
     "longname": "module:@the-/scene.mixins.subMix",
-    "memberof": "module:@the-/scene.mixins",
-    "meta": {
-      "filename": "subMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
-    },
     "name": "subMix",
-    "order": 14,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/scene.mixins",
     "params": [
       {
         "type": {
@@ -337,48 +347,53 @@
         "description": "MixedClass"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "subMix.js",
+      "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
+    },
+    "order": 15
   },
   {
     "id": "module:@the-/scene.mixins.goMix~ErrorMixed",
-    "kind": "class",
     "longname": "module:@the-/scene.mixins.goMix~ErrorMixed",
+    "name": "ErrorMixed",
+    "kind": "class",
+    "scope": "inner",
     "memberof": "module:@the-/scene.mixins.goMix",
     "meta": {
-      "filename": "errorMix.js",
       "lineno": 15,
+      "filename": "errorMix.js",
       "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
     },
-    "name": "ErrorMixed",
-    "order": 10,
-    "scope": "inner"
+    "order": 11
   },
   {
     "id": "module:@the-/scene.mixins.goMix~GoMixed",
-    "kind": "class",
     "longname": "module:@the-/scene.mixins.goMix~GoMixed",
+    "name": "GoMixed",
+    "kind": "class",
+    "scope": "inner",
     "memberof": "module:@the-/scene.mixins.goMix",
     "meta": {
-      "filename": "goMix.js",
       "lineno": 18,
+      "filename": "goMix.js",
       "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
     },
-    "name": "GoMixed",
-    "order": 12,
-    "scope": "inner"
+    "order": 13
   },
   {
     "id": "module:@the-/scene.mixins.subMix~SubMixed",
-    "kind": "class",
     "longname": "module:@the-/scene.mixins.subMix~SubMixed",
+    "name": "SubMixed",
+    "kind": "class",
+    "scope": "inner",
     "memberof": "module:@the-/scene.mixins.subMix",
     "meta": {
-      "filename": "subMix.js",
       "lineno": 15,
+      "filename": "subMix.js",
       "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
     },
-    "name": "SubMixed",
-    "order": 15,
-    "scope": "inner"
+    "order": 16
   }
 ]
