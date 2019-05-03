@@ -1,7 +1,7 @@
 /**
- * Alias of {@memberof module:@the-/cache
+ * Alias of {@link module:@the-/cache.default}
+ * @memberof module:@the-/cache
  * @function default
- * @link module:@the-/cache.default}
  */
 'use strict'
 

@@ -1,7 +1,7 @@
 /**
- * Alias of {@memberof module:@the-/seal
+ * Alias of {@link module:@the-/seal.create}
+ * @memberof module:@the-/seal
  * @function default
- * @link module:@the-/seal.create}
  */
 'use strict'
 

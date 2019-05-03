@@ -160,4 +160,4 @@ Create a TheError instance
 Define an error class
 
 **Kind**: static method of [<code>@the-/error</code>](#module_@the-/error)  
-**Returns**: <code>function</code> - Error class
+**Returns**: <code>function</code> - Error class  

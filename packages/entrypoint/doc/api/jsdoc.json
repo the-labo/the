@@ -1,32 +1,27 @@
 [
   {
-    "description": "Browser entrypoint for the-framework",
     "id": "module:@the-/entrypoint",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/entrypoint",
+    "name": "@the-/entrypoint",
+    "kind": "module",
+    "description": "Browser entrypoint for the-framework",
+    "version": "15.4.0",
+    "license": "MIT",
+    "typicalname": "entrypoint",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
     },
-    "name": "@the-/entrypoint",
-    "order": 0,
-    "typicalname": "entrypoint",
-    "version": "15.4.0"
+    "order": 0
   },
   {
-    "description": "Mount element on DOM",
     "id": "mount",
-    "kind": "function",
     "longname": "mount",
-    "meta": {
-      "filename": "mount.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
-    },
     "name": "mount",
-    "order": 1,
+    "kind": "function",
+    "scope": "global",
+    "description": "Mount element on DOM",
     "params": [
       {
         "type": {
@@ -86,20 +81,20 @@
         }
       }
     ],
-    "scope": "global"
-  },
-  {
-    "description": "Handle when online",
-    "id": "online",
-    "kind": "function",
-    "longname": "online",
     "meta": {
-      "filename": "online.js",
       "lineno": 1,
+      "filename": "mount.js",
       "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
     },
+    "order": 1
+  },
+  {
+    "id": "online",
+    "longname": "online",
     "name": "online",
-    "order": 2,
+    "kind": "function",
+    "scope": "global",
+    "description": "Handle when online",
     "params": [
       {
         "type": {
@@ -113,34 +108,34 @@
         "name": "options"
       }
     ],
-    "scope": "global"
+    "meta": {
+      "lineno": 1,
+      "filename": "online.js",
+      "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
+    },
+    "order": 2
   },
   {
-    "description": "Apply patch",
     "id": "patch",
-    "kind": "function",
     "longname": "patch",
+    "name": "patch",
+    "kind": "function",
+    "scope": "global",
+    "description": "Apply patch",
     "meta": {
-      "filename": "patch.js",
       "lineno": 1,
+      "filename": "patch.js",
       "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
     },
-    "name": "patch",
-    "order": 3,
-    "scope": "global"
+    "order": 3
   },
   {
-    "description": "Inject queries on location change",
     "id": "quelize",
-    "kind": "function",
     "longname": "quelize",
-    "meta": {
-      "filename": "quelize.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
-    },
     "name": "quelize",
-    "order": 4,
+    "kind": "function",
+    "scope": "global",
+    "description": "Inject queries on location change",
     "params": [
       {
         "type": {
@@ -153,20 +148,20 @@
         "name": "values"
       }
     ],
-    "scope": "global"
-  },
-  {
-    "description": "Make sure to be secure",
-    "id": "secure",
-    "kind": "function",
-    "longname": "secure",
     "meta": {
-      "filename": "secure.js",
       "lineno": 1,
+      "filename": "quelize.js",
       "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
     },
+    "order": 4
+  },
+  {
+    "id": "secure",
+    "longname": "secure",
     "name": "secure",
-    "order": 5,
+    "kind": "function",
+    "scope": "global",
+    "description": "Make sure to be secure",
     "params": [
       {
         "type": {
@@ -184,26 +179,26 @@
       {
         "type": {
           "names": [
-            "Boolean"
+            "boolean"
           ]
         },
         "description": "Redirect triggered"
       }
     ],
-    "scope": "global"
-  },
-  {
-    "description": "Make sure that entrypoint loaded only once",
-    "id": "singleton",
-    "kind": "function",
-    "longname": "singleton",
     "meta": {
-      "filename": "singleton.js",
       "lineno": 1,
+      "filename": "secure.js",
       "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
     },
+    "order": 5
+  },
+  {
+    "id": "singleton",
+    "longname": "singleton",
     "name": "singleton",
-    "order": 6,
+    "kind": "function",
+    "scope": "global",
+    "description": "Make sure that entrypoint loaded only once",
     "params": [
       {
         "type": {
@@ -217,20 +212,20 @@
         "name": "options"
       }
     ],
-    "scope": "global"
-  },
-  {
-    "description": "Register service workers",
-    "id": "workers",
-    "kind": "function",
-    "longname": "workers",
     "meta": {
-      "filename": "workers.js",
       "lineno": 1,
+      "filename": "singleton.js",
       "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
     },
+    "order": 6
+  },
+  {
+    "id": "workers",
+    "longname": "workers",
     "name": "workers",
-    "order": 7,
+    "kind": "function",
+    "scope": "global",
+    "description": "Register service workers",
     "params": [
       {
         "type": {
@@ -246,25 +241,25 @@
       {
         "type": {
           "names": [
-            "Promise.<void>"
+            "Promise.<undefined>"
           ]
         }
       }
     ],
-    "scope": "global"
+    "meta": {
+      "lineno": 1,
+      "filename": "workers.js",
+      "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
+    },
+    "order": 7
   },
   {
-    "description": "Create Style element",
     "id": "createStyleElement",
-    "kind": "function",
     "longname": "createStyleElement",
-    "meta": {
-      "filename": "createStyleElement.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/entrypoint/lib/helpers"
-    },
     "name": "createStyleElement",
-    "order": 8,
+    "kind": "function",
+    "scope": "global",
+    "description": "Create Style element",
     "returns": [
       {
         "type": {
@@ -274,6 +269,11 @@
         }
       }
     ],
-    "scope": "global"
+    "meta": {
+      "lineno": 1,
+      "filename": "createStyleElement.js",
+      "path": "/Users/okuni/Projects/the/packages/entrypoint/lib/helpers"
+    },
+    "order": 8
   }
 ]

@@ -1,7 +1,7 @@
 /**
- * Alias of {@memberof module:@the-/refactor
+ * Alias of {@link module:@the-/refactor.create}
+ * @memberof module:@the-/refactor
  * @function default
- * @link module:@the-/refactor.create}
  */
 'use strict'
 

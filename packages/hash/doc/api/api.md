@@ -16,6 +16,7 @@ Hash object to hold key-value pairs
         * [.set(key, value)](#module_@the-/hash.TheHash+set)
         * [.toProxy(options)](#module_@the-/hash.TheHash+toProxy) ⇒ <code>\*</code>
     * [.create(...args)](#module_@the-/hash.create) ⇒ <code>TheHash</code>
+    * [.default()](#module_@the-/hash.default) ⇒ [<code>TheHash</code>](#module_@the-/hash.TheHash)
     * [.proxy(src, [options])](#module_@the-/hash.proxy) ⇒ <code>Proxy</code>
 
 <a name="module_@the-/hash.TheHash"></a>
@@ -94,6 +95,12 @@ Create a TheHash instance
 | --- | --- |
 | ...args | <code>\*</code> | 
 
+<a name="module_@the-/hash.default"></a>
+
+### hash.default() ⇒ [<code>TheHash</code>](#module_@the-/hash.TheHash)
+Alias of [create](#module_@the-/hash.create)
+
+**Kind**: static method of [<code>@the-/hash</code>](#module_@the-/hash)  
 <a name="module_@the-/hash.proxy"></a>
 
 ### hash.proxy(src, [options]) ⇒ <code>Proxy</code>
@@ -107,3 +114,4 @@ Create proxy for hash object
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 | [options.name] | <code>string</code> |  | Name of object |
 | [options.unknownCheck] | <code>boolean</code> |  | Enable unknown checking |
+

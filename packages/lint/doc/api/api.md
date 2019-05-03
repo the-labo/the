@@ -25,6 +25,7 @@ Lint of the-frameworks
         * [.propRule(config)](#module_@the-/lint.rules.propRule) ⇒ <code>function</code>
         * [.usageRule(config)](#module_@the-/lint.rules.usageRule) ⇒ <code>function</code>
     * [.create(...args)](#module_@the-/lint.create) ⇒ <code>TheLint</code>
+    * [.default()](#module_@the-/lint.default)
 
 <a name="module_@the-/lint.TheLint"></a>
 
@@ -200,4 +201,11 @@ Create a TheLint instance
 
 | Param | Type |
 | --- | --- |
-| ...args | <code>\*</code> |
+| ...args | <code>\*</code> | 
+
+<a name="module_@the-/lint.default"></a>
+
+### lint.default()
+Alias of [create](#module_@the-/lint.create)
+
+**Kind**: static method of [<code>@the-/lint</code>](#module_@the-/lint)  

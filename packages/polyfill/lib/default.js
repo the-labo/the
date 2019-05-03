@@ -1,7 +1,7 @@
 /**
- * Alias of {@memberof module:@the-/polyfill
+ * Alias of {@link module:@the-/polyfill.create}
+ * @memberof module:@the-/polyfill
  * @function default
- * @link module:@the-/polyfill.create}
  */
 'use strict'
 

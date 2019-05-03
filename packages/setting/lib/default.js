@@ -1,7 +1,7 @@
 /**
- * Alias {@memberof module:@the-/setting
+ * Alias of {@link module:@the-/setting.create}
+ * @memberof module:@the-/setting
  * @function default
- * @link module:@the-/setting.create}
  */
 'use strict'
 

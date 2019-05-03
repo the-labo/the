@@ -1,7 +1,7 @@
 /**
- * Alias of {@memberof module:@the-/media
+ * Alias of {@link module:@the-/media.create}
+ * @memberof module:@the-/media
  * @function default
- * @link module:@the-/media.create}
  */
 'use strict'
 

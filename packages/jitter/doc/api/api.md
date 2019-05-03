@@ -17,6 +17,7 @@ Random delay timer
         * [.handle(action)](#module_@the-/jitter.TheJitter+handle) ⇒ <code>Promise.&lt;undefined&gt;</code>
         * [.wait()](#module_@the-/jitter.TheJitter+wait) ⇒ <code>Promise</code>
     * [.create(...args)](#module_@the-/jitter.create) ⇒ <code>TheJitter</code>
+    * [.default()](#module_@the-/jitter.default)
 
 <a name="module_@the-/jitter.TheJitter"></a>
 
@@ -83,4 +84,11 @@ Create a TheJitter instance
 
 | Param | Type |
 | --- | --- |
-| ...args | <code>\*</code> |
+| ...args | <code>\*</code> | 
+
+<a name="module_@the-/jitter.default"></a>
+
+### jitter.default()
+Alias of [create](#module_@the-/jitter.create)
+
+**Kind**: static method of [<code>@the-/jitter</code>](#module_@the-/jitter)  

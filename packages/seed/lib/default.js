@@ -1,7 +1,7 @@
 /**
- * Alias of {@memberof module:@the-/seed
+ * Alias of {@link module:@the-/seed.create}
+ * @memberof module:@the-/seed
  * @function default
- * @link module:@the-/seed.create}
  */
 'use strict'
 

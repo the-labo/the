@@ -1,7 +1,7 @@
 /**
- * Alias of {@memberof module:@the-/resource
+ * Alias of {@link module:@the-/resource.create}
+ * @memberof module:@the-/resource
  * @function default
- * @link module:@the-/resource.create}
  */
 'use strict'
 

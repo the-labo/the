@@ -59,4 +59,4 @@ Create a MongoDriver instance
 ## mongoMix()
 Mixin of mongodb
 
-**Kind**: global function
+**Kind**: global function  

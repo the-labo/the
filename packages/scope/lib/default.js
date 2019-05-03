@@ -1,7 +1,7 @@
 /**
- * Alias of {@memberof module:@the-/scope
+ * Alias of {@link module:@the-/scope.create}
+ * @memberof module:@the-/scope
  * @function default
- * @link module:@the-/scope.create}
  */
 'use strict'
 

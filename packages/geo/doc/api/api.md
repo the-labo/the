@@ -14,6 +14,7 @@ Geo location utility
         * [.watch(callback, [options])](#module_@the-/geo.TheGeo+watch)
         * [.detect(options)](#module_@the-/geo.TheGeo+detect) ⇒ <code>Promise.&lt;\*&gt;</code>
     * [.create(...args)](#module_@the-/geo.create) ⇒ <code>TheGeo</code>
+    * [.default()](#module_@the-/geo.default)
 
 <a name="module_@the-/geo.TheGeo"></a>
 
@@ -65,4 +66,11 @@ Create a TheGeo instance
 
 | Param | Type |
 | --- | --- |
-| ...args | <code>\*</code> |
+| ...args | <code>\*</code> | 
+
+<a name="module_@the-/geo.default"></a>
+
+### geo.default()
+Alias of [create](#module_@the-/geo.create)
+
+**Kind**: static method of [<code>@the-/geo</code>](#module_@the-/geo)  

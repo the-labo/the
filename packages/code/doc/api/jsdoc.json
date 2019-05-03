@@ -1,27 +1,26 @@
 [
   {
-    "description": "Code formatter of the-frameworks",
     "id": "module:@the-/code",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/code",
+    "name": "@the-/code",
+    "kind": "module",
+    "description": "Code formatter of the-frameworks",
+    "version": "15.4.12",
+    "license": "MIT",
+    "typicalname": "code",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib"
     },
-    "name": "@the-/code",
-    "order": 1,
-    "typicalname": "code",
-    "version": "15.4.12"
+    "order": 1
   },
   {
     "id": "module:@the-/code.TheCode()",
-    "kind": "constructor",
     "longname": "module:@the-/code.TheCode",
-    "memberof": "module:@the-/code.TheCode",
     "name": "TheCode",
-    "order": 4,
+    "kind": "constructor",
+    "memberof": "module:@the-/code.TheCode",
     "params": [
       {
         "type": {
@@ -34,22 +33,17 @@
         "description": "Code config",
         "name": "config"
       }
-    ]
+    ],
+    "order": 4
   },
   {
-    "async": true,
-    "description": "Format files",
     "id": "module:@the-/code.TheCode#format",
-    "kind": "function",
     "longname": "module:@the-/code.TheCode#format",
-    "memberof": "module:@the-/code.TheCode",
-    "meta": {
-      "filename": "TheCode.js",
-      "lineno": 88,
-      "path": "/Users/okuni/Projects/the/packages/code/lib"
-    },
     "name": "format",
-    "order": 5,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Format files",
+    "memberof": "module:@the-/code.TheCode",
     "params": [
       {
         "type": {
@@ -81,22 +75,22 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Format a single file",
-    "id": "module:@the-/code.TheCode#formatFile",
-    "kind": "function",
-    "longname": "module:@the-/code.TheCode#formatFile",
-    "memberof": "module:@the-/code.TheCode",
     "meta": {
+      "lineno": 88,
       "filename": "TheCode.js",
-      "lineno": 102,
       "path": "/Users/okuni/Projects/the/packages/code/lib"
     },
+    "async": true,
+    "order": 5
+  },
+  {
+    "id": "module:@the-/code.TheCode#formatFile",
+    "longname": "module:@the-/code.TheCode#formatFile",
     "name": "formatFile",
-    "order": 6,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Format a single file",
+    "memberof": "module:@the-/code.TheCode",
     "params": [
       {
         "type": {
@@ -116,127 +110,128 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 102,
+      "filename": "TheCode.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib"
+    },
+    "async": true,
+    "order": 6
   },
   {
     "id": "module:@the-/code.TheCode",
-    "kind": "class",
     "longname": "module:@the-/code.TheCode",
+    "name": "TheCode",
+    "kind": "class",
+    "scope": "static",
     "memberof": "module:@the-/code",
     "meta": {
-      "filename": "TheCode.js",
       "lineno": 1,
+      "filename": "TheCode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib"
     },
-    "name": "TheCode",
-    "order": 3,
-    "scope": "static"
+    "order": 3
   },
   {
     "id": "module:@the-/code.FormatCache",
-    "kind": "class",
     "longname": "module:@the-/code.FormatCache",
+    "name": "FormatCache",
+    "kind": "class",
+    "scope": "static",
     "memberof": "module:@the-/code",
     "meta": {
-      "filename": "FormatCache.js",
       "lineno": 1,
+      "filename": "FormatCache.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/helpers"
     },
-    "name": "FormatCache",
-    "order": 42,
-    "scope": "static"
+    "order": 42
   },
   {
-    "access": "protected",
-    "description": "ast node handlers",
     "id": "module:@the-/code.ast.nodes",
-    "kind": "namespace",
     "longname": "module:@the-/code.ast.nodes",
+    "name": "nodes",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "ast node handlers",
     "memberof": "module:@the-/code.ast",
+    "access": "protected",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "nodes",
-    "order": 22,
-    "scope": "static"
+    "order": 22
   },
   {
     "id": "module:@the-/code.astHelper",
-    "kind": "namespace",
     "longname": "module:@the-/code.astHelper",
-    "memberof": "module:@the-/code",
-    "meta": {
-      "filename": "astHelper.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/helpers"
-    },
     "name": "astHelper",
-    "order": 34,
-    "scope": "static"
-  },
-  {
-    "access": "protected",
-    "description": "Helper functions",
-    "id": "module:@the-/code.helpers",
     "kind": "namespace",
-    "longname": "module:@the-/code.helpers",
+    "scope": "static",
     "memberof": "module:@the-/code",
     "meta": {
-      "filename": "index.js",
-      "lineno": 2,
+      "lineno": 1,
+      "filename": "astHelper.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/helpers"
     },
-    "name": "helpers",
-    "order": 43,
-    "scope": "static"
+    "order": 34
   },
   {
-    "access": "protected",
-    "description": "Parser functions",
-    "id": "module:@the-/code.parsers",
+    "id": "module:@the-/code.helpers",
+    "longname": "module:@the-/code.helpers",
+    "name": "helpers",
     "kind": "namespace",
-    "longname": "module:@the-/code.parsers",
+    "scope": "static",
+    "description": "Helper functions",
     "memberof": "module:@the-/code",
+    "access": "protected",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/helpers"
+    },
+    "order": 43
+  },
+  {
+    "id": "module:@the-/code.parsers",
+    "longname": "module:@the-/code.parsers",
+    "name": "parsers",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Parser functions",
+    "memberof": "module:@the-/code",
+    "access": "protected",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/parsers"
     },
-    "name": "parsers",
-    "order": 44,
-    "scope": "static"
+    "order": 44
   },
   {
-    "access": "protected",
-    "description": "Processor functions",
     "id": "module:@the-/code.processors",
-    "kind": "namespace",
     "longname": "module:@the-/code.processors",
+    "name": "processors",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Processor functions",
     "memberof": "module:@the-/code",
+    "access": "protected",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
     },
-    "name": "processors",
-    "order": 46,
-    "scope": "static"
+    "order": 46
   },
   {
-    "description": "Create a TheCode instance",
     "id": "module:@the-/code.create",
-    "kind": "function",
     "longname": "module:@the-/code.create",
-    "memberof": "module:@the-/code",
-    "meta": {
-      "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib"
-    },
     "name": "create",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheCode instance",
+    "memberof": "module:@the-/code",
     "params": [
       {
         "type": {
@@ -257,518 +252,518 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib"
+    },
+    "order": 0
   },
   {
     "id": "module:@the-/code.run",
-    "kind": "function",
     "longname": "module:@the-/code.run",
+    "name": "run",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code",
     "meta": {
-      "filename": "run.js",
       "lineno": 1,
+      "filename": "run.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib"
     },
-    "name": "run",
-    "order": 2,
-    "scope": "static"
+    "order": 2
   },
   {
     "id": "module:@the-/code.ast.nodes.cleanupEmptyArrayPatternParamsOnFunctionNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.cleanupEmptyArrayPatternParamsOnFunctionNode",
+    "name": "cleanupEmptyArrayPatternParamsOnFunctionNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "cleanupEmptyArrayPatternParamsOnFunctionNode.js",
       "lineno": 1,
+      "filename": "cleanupEmptyArrayPatternParamsOnFunctionNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "cleanupEmptyArrayPatternParamsOnFunctionNode",
-    "order": 7,
-    "scope": "static"
+    "order": 7
   },
   {
     "id": "module:@the-/code.ast.nodes.cleanupEmptyObjectPatternParamsOnFunctionNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.cleanupEmptyObjectPatternParamsOnFunctionNode",
+    "name": "cleanupEmptyObjectPatternParamsOnFunctionNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "cleanupEmptyObjectPatternParamsOnFunctionNode.js",
       "lineno": 1,
+      "filename": "cleanupEmptyObjectPatternParamsOnFunctionNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "cleanupEmptyObjectPatternParamsOnFunctionNode",
-    "order": 8,
-    "scope": "static"
+    "order": 8
   },
   {
     "id": "module:@the-/code.ast.nodes.cleanupExtOnImportDeclarationNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.cleanupExtOnImportDeclarationNode",
+    "name": "cleanupExtOnImportDeclarationNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "cleanupExtOnImportDeclarationNode.js",
       "lineno": 1,
+      "filename": "cleanupExtOnImportDeclarationNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "cleanupExtOnImportDeclarationNode",
-    "order": 9,
-    "scope": "static"
+    "order": 9
   },
   {
     "id": "module:@the-/code.ast.nodes.cleanupExtOnRequireDeclarationArgumentNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.cleanupExtOnRequireDeclarationArgumentNode",
-    "memberof": "module:@the-/code.ast.nodes",
-    "meta": {
-      "filename": "cleanupExtOnRequireDeclarationArgumentNode.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
-    },
     "name": "cleanupExtOnRequireDeclarationArgumentNode",
-    "order": 10,
-    "scope": "static"
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/code.ast.nodes",
+    "meta": {
+      "lineno": 1,
+      "filename": "cleanupExtOnRequireDeclarationArgumentNode.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
+    },
+    "order": 10
   },
   {
     "id": "module:@the-/code.ast.nodes.cleanupRedundantAliasOnObjectPatternNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.cleanupRedundantAliasOnObjectPatternNode",
+    "name": "cleanupRedundantAliasOnObjectPatternNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
+      "lineno": 1,
       "filename": "cleanupRedundantAliasOnObjectPatternNode.js",
-      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "cleanupRedundantAliasOnObjectPatternNode",
-    "order": 11,
-    "scope": "static"
+    "order": 11
   },
   {
     "id": "module:@the-/code.ast.nodes.cleanupRedundantAliasOnObjectPatternNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.cleanupRedundantAliasOnObjectPatternNode",
+    "name": "cleanupRedundantAliasOnObjectPatternNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "cleanupRedundantQuoteOnObjectPatternNode.js",
       "lineno": 1,
+      "filename": "cleanupRedundantQuoteOnObjectPatternNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "cleanupRedundantAliasOnObjectPatternNode",
-    "order": 12,
-    "scope": "static"
+    "order": 12
   },
   {
     "id": "module:@the-/code.ast.nodes.cleanupReturnAwaitOnFunctionNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.cleanupReturnAwaitOnFunctionNode",
+    "name": "cleanupReturnAwaitOnFunctionNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "cleanupReturnAwaitOnFunctionNode.js",
       "lineno": 1,
+      "filename": "cleanupReturnAwaitOnFunctionNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "cleanupReturnAwaitOnFunctionNode",
-    "order": 13,
-    "scope": "static"
+    "order": 13
   },
   {
-    "description": "Cleanup unused function node",
     "id": "module:@the-/code.ast.nodes.cleanupUnusedOnFunctionArgumentNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.cleanupUnusedOnFunctionArgumentNode",
+    "name": "cleanupUnusedOnFunctionArgumentNode",
+    "kind": "function",
+    "scope": "static",
+    "description": "Cleanup unused function node",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "cleanupUnusedArgumentsOnFunctionNode.js",
       "lineno": 1,
+      "filename": "cleanupUnusedArgumentsOnFunctionNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "cleanupUnusedOnFunctionArgumentNode",
-    "order": 14,
-    "scope": "static"
+    "order": 14
   },
   {
     "id": "module:@the-/code.ast.nodes.cleanupUnusedOnArrayPatternNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.cleanupUnusedOnArrayPatternNode",
+    "name": "cleanupUnusedOnArrayPatternNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "cleanupUnusedOnArrayPatternNode.js",
       "lineno": 1,
+      "filename": "cleanupUnusedOnArrayPatternNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "cleanupUnusedOnArrayPatternNode",
-    "order": 15,
-    "scope": "static"
+    "order": 15
   },
   {
     "id": "module:@the-/code.ast.nodes.cleanupUnusedOnImportNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.cleanupUnusedOnImportNode",
+    "name": "cleanupUnusedOnImportNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "cleanupUnusedOnImportNode.js",
       "lineno": 1,
+      "filename": "cleanupUnusedOnImportNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "cleanupUnusedOnImportNode",
-    "order": 16,
-    "scope": "static"
+    "order": 16
   },
   {
     "id": "module:@the-/code.ast.nodes.cleanupUnusedOnObjectPatternNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.cleanupUnusedOnObjectPatternNode",
+    "name": "cleanupUnusedOnObjectPatternNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "cleanupUnusedOnObjectPatternNode.js",
       "lineno": 1,
+      "filename": "cleanupUnusedOnObjectPatternNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "cleanupUnusedOnObjectPatternNode",
-    "order": 17,
-    "scope": "static"
+    "order": 17
   },
   {
     "id": "module:@the-/code.ast.nodes.cleanupUnusedOnVariableNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.cleanupUnusedOnVariableNode",
+    "name": "cleanupUnusedOnVariableNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "cleanupUnusedOnVariableNode.js",
       "lineno": 1,
+      "filename": "cleanupUnusedOnVariableNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "cleanupUnusedOnVariableNode",
-    "order": 18,
-    "scope": "static"
+    "order": 18
   },
   {
     "id": "module:@the-/code.ast.nodes.commentModuleOnProgramNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.commentModuleOnProgramNode",
+    "name": "commentModuleOnProgramNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "commentModuleOnProgramNode.js",
       "lineno": 1,
+      "filename": "commentModuleOnProgramNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "commentModuleOnProgramNode",
-    "order": 19,
-    "scope": "static"
+    "order": 19
   },
   {
     "id": "module:@the-/code.ast.nodes.findJSDocAnnotationsInCommendNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.findJSDocAnnotationsInCommendNode",
+    "name": "findJSDocAnnotationsInCommendNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "findJSDocAnnotationsInCommendNode.js",
       "lineno": 1,
+      "filename": "findJSDocAnnotationsInCommendNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "findJSDocAnnotationsInCommendNode",
-    "order": 20,
-    "scope": "static"
+    "order": 20
   },
   {
     "id": "module:@the-/code.ast.nodes.findRequireDeclarationOnProgramNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.findRequireDeclarationOnProgramNode",
+    "name": "findRequireDeclarationOnProgramNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "findRequireDeclarationOnProgramNode.js",
       "lineno": 1,
+      "filename": "findRequireDeclarationOnProgramNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "findRequireDeclarationOnProgramNode",
-    "order": 21,
-    "scope": "static"
+    "order": 21
   },
   {
     "id": "module:@the-/code.ast.nodes.mergeDuplicateImportOnProgramNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.mergeDuplicateImportOnProgramNode",
+    "name": "mergeDuplicateImportOnProgramNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "mergeDuplicateImportOnProgramNode.js",
       "lineno": 1,
+      "filename": "mergeDuplicateImportOnProgramNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "mergeDuplicateImportOnProgramNode",
-    "order": 23,
-    "scope": "static"
+    "order": 23
   },
   {
     "id": "module:@the-/code.ast.nodes.modifyNodeDeprecatedOnRequireDeclaration",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.modifyNodeDeprecatedOnRequireDeclaration",
+    "name": "modifyNodeDeprecatedOnRequireDeclaration",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "modifyNodeDeprecatedOnRequireDeclaration.js",
       "lineno": 1,
+      "filename": "modifyNodeDeprecatedOnRequireDeclaration.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "modifyNodeDeprecatedOnRequireDeclaration",
-    "order": 24,
-    "scope": "static"
+    "order": 24
   },
   {
     "id": "module:@the-/code.ast.nodes.normalizeJSDocAnnotationsOnCommentNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.normalizeJSDocAnnotationsOnCommentNode",
+    "name": "normalizeJSDocAnnotationsOnCommentNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "normalizeJSDocAnnotationsOnCommentNode.js",
       "lineno": 1,
+      "filename": "normalizeJSDocAnnotationsOnCommentNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "normalizeJSDocAnnotationsOnCommentNode",
-    "order": 25,
-    "scope": "static"
+    "order": 25
   },
   {
     "id": "module:@the-/code.ast.nodes.normalizeSrcPathOnImportDeclarationNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.normalizeSrcPathOnImportDeclarationNode",
+    "name": "normalizeSrcPathOnImportDeclarationNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "normalizeSrcPathOnImportDeclarationNode.js",
       "lineno": 1,
+      "filename": "normalizeSrcPathOnImportDeclarationNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "normalizeSrcPathOnImportDeclarationNode",
-    "order": 26,
-    "scope": "static"
+    "order": 26
   },
   {
     "id": "module:@the-/code.ast.nodes.sortAnnotationsOnCommentNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.sortAnnotationsOnCommentNode",
+    "name": "sortAnnotationsOnCommentNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "sortAnnotationsOnCommentNode.js",
       "lineno": 1,
+      "filename": "sortAnnotationsOnCommentNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "sortAnnotationsOnCommentNode",
-    "order": 27,
-    "scope": "static"
+    "order": 27
   },
   {
     "id": "module:@the-/code.ast.nodes.sortCasesOnSwitchStatementNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.sortCasesOnSwitchStatementNode",
+    "name": "sortCasesOnSwitchStatementNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "sortCasesOnSwitchStatementNode.js",
       "lineno": 1,
+      "filename": "sortCasesOnSwitchStatementNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "sortCasesOnSwitchStatementNode",
-    "order": 28,
-    "scope": "static"
+    "order": 28
   },
   {
     "id": "module:@the-/code.ast.nodes.sortMethodsOnClassNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.sortMethodsOnClassNode",
+    "name": "sortMethodsOnClassNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "sortMethodsOnClassNode.js",
       "lineno": 1,
+      "filename": "sortMethodsOnClassNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "sortMethodsOnClassNode",
-    "order": 29,
-    "scope": "static"
+    "order": 29
   },
   {
     "id": "module:@the-/code.ast.nodes.sortPropertiesOnObjectNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.sortPropertiesOnObjectNode",
+    "name": "sortPropertiesOnObjectNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "sortPropertiesOnObjectNode.js",
       "lineno": 1,
+      "filename": "sortPropertiesOnObjectNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "sortPropertiesOnObjectNode",
-    "order": 30,
-    "scope": "static"
+    "order": 30
   },
   {
     "id": "module:@the-/code.ast.nodes.sortSpecifiersOnImportDeclarationNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.sortSpecifiersOnImportDeclarationNode",
+    "name": "sortSpecifiersOnImportDeclarationNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "sortSpecifiersOnImportDeclarationNode.js",
       "lineno": 1,
+      "filename": "sortSpecifiersOnImportDeclarationNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "sortSpecifiersOnImportDeclarationNode",
-    "order": 31,
-    "scope": "static"
+    "order": 31
   },
   {
     "id": "module:@the-/code.ast.nodes.spaceOnCommentNode",
-    "kind": "function",
     "longname": "module:@the-/code.ast.nodes.spaceOnCommentNode",
+    "name": "spaceOnCommentNode",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
-      "filename": "spaceOnCommentNode.js",
       "lineno": 1,
+      "filename": "spaceOnCommentNode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/ast/nodes"
     },
-    "name": "spaceOnCommentNode",
-    "order": 32,
-    "scope": "static"
+    "order": 32
   },
   {
     "id": "module:@the-/code.applyConverter",
-    "kind": "function",
     "longname": "module:@the-/code.applyConverter",
-    "memberof": "module:@the-/code",
-    "meta": {
-      "filename": "applyConverter.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/helpers"
-    },
     "name": "applyConverter",
-    "order": 33,
-    "scope": "static"
-  },
-  {
-    "deprecated": true,
-    "id": "module:@the-/code.astHelper.isAssignmentPattern",
     "kind": "function",
-    "longname": "module:@the-/code.astHelper.isAssignmentPattern",
-    "memberof": "module:@the-/code.astHelper",
-    "meta": {
-      "filename": "astHelper.js",
-      "lineno": 17,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/helpers"
-    },
-    "name": "isAssignmentPattern",
-    "order": 35,
-    "scope": "static"
-  },
-  {
-    "deprecated": true,
-    "id": "module:@the-/code.astHelper.isEmptyObjectPattern",
-    "kind": "function",
-    "longname": "module:@the-/code.astHelper.isEmptyObjectPattern",
-    "memberof": "module:@the-/code.astHelper",
-    "meta": {
-      "filename": "astHelper.js",
-      "lineno": 19,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/helpers"
-    },
-    "name": "isEmptyObjectPattern",
-    "order": 36,
-    "scope": "static"
-  },
-  {
-    "deprecated": true,
-    "id": "module:@the-/code.astHelper.isImportDefaultSpecifier",
-    "kind": "function",
-    "longname": "module:@the-/code.astHelper.isImportDefaultSpecifier",
-    "memberof": "module:@the-/code.astHelper",
-    "meta": {
-      "filename": "astHelper.js",
-      "lineno": 26,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/helpers"
-    },
-    "name": "isImportDefaultSpecifier",
-    "order": 37,
-    "scope": "static"
-  },
-  {
-    "deprecated": true,
-    "id": "module:@the-/code.astHelper.isImportSpecifier",
-    "kind": "function",
-    "longname": "module:@the-/code.astHelper.isImportSpecifier",
-    "memberof": "module:@the-/code.astHelper",
-    "meta": {
-      "filename": "astHelper.js",
-      "lineno": 29,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/helpers"
-    },
-    "name": "isImportSpecifier",
-    "order": 38,
-    "scope": "static"
-  },
-  {
-    "deprecated": true,
-    "id": "module:@the-/code.astHelper.isObjectPattern",
-    "kind": "function",
-    "longname": "module:@the-/code.astHelper.isObjectPattern",
-    "memberof": "module:@the-/code.astHelper",
-    "meta": {
-      "filename": "astHelper.js",
-      "lineno": 31,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/helpers"
-    },
-    "name": "isObjectPattern",
-    "order": 39,
-    "scope": "static"
-  },
-  {
-    "deprecated": true,
-    "id": "module:@the-/code.astHelper.isRequireExpression",
-    "kind": "function",
-    "longname": "module:@the-/code.astHelper.isRequireExpression",
-    "memberof": "module:@the-/code.astHelper",
-    "meta": {
-      "filename": "astHelper.js",
-      "lineno": 33,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/helpers"
-    },
-    "name": "isRequireExpression",
-    "order": 40,
-    "scope": "static"
-  },
-  {
-    "description": "Define content access methods",
-    "id": "module:@the-/code.contentAccess",
-    "kind": "function",
-    "longname": "module:@the-/code.contentAccess",
+    "scope": "static",
     "memberof": "module:@the-/code",
     "meta": {
-      "filename": "contentAccess.js",
       "lineno": 1,
+      "filename": "applyConverter.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/helpers"
     },
+    "order": 33
+  },
+  {
+    "id": "module:@the-/code.astHelper.isAssignmentPattern",
+    "longname": "module:@the-/code.astHelper.isAssignmentPattern",
+    "name": "isAssignmentPattern",
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/code.astHelper",
+    "deprecated": true,
+    "meta": {
+      "lineno": 17,
+      "filename": "astHelper.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/helpers"
+    },
+    "order": 35
+  },
+  {
+    "id": "module:@the-/code.astHelper.isEmptyObjectPattern",
+    "longname": "module:@the-/code.astHelper.isEmptyObjectPattern",
+    "name": "isEmptyObjectPattern",
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/code.astHelper",
+    "deprecated": true,
+    "meta": {
+      "lineno": 19,
+      "filename": "astHelper.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/helpers"
+    },
+    "order": 36
+  },
+  {
+    "id": "module:@the-/code.astHelper.isImportDefaultSpecifier",
+    "longname": "module:@the-/code.astHelper.isImportDefaultSpecifier",
+    "name": "isImportDefaultSpecifier",
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/code.astHelper",
+    "deprecated": true,
+    "meta": {
+      "lineno": 26,
+      "filename": "astHelper.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/helpers"
+    },
+    "order": 37
+  },
+  {
+    "id": "module:@the-/code.astHelper.isImportSpecifier",
+    "longname": "module:@the-/code.astHelper.isImportSpecifier",
+    "name": "isImportSpecifier",
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/code.astHelper",
+    "deprecated": true,
+    "meta": {
+      "lineno": 29,
+      "filename": "astHelper.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/helpers"
+    },
+    "order": 38
+  },
+  {
+    "id": "module:@the-/code.astHelper.isObjectPattern",
+    "longname": "module:@the-/code.astHelper.isObjectPattern",
+    "name": "isObjectPattern",
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/code.astHelper",
+    "deprecated": true,
+    "meta": {
+      "lineno": 31,
+      "filename": "astHelper.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/helpers"
+    },
+    "order": 39
+  },
+  {
+    "id": "module:@the-/code.astHelper.isRequireExpression",
+    "longname": "module:@the-/code.astHelper.isRequireExpression",
+    "name": "isRequireExpression",
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/code.astHelper",
+    "deprecated": true,
+    "meta": {
+      "lineno": 33,
+      "filename": "astHelper.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/helpers"
+    },
+    "order": 40
+  },
+  {
+    "id": "module:@the-/code.contentAccess",
+    "longname": "module:@the-/code.contentAccess",
     "name": "contentAccess",
-    "order": 41,
-    "scope": "static"
+    "kind": "function",
+    "scope": "static",
+    "description": "Define content access methods",
+    "memberof": "module:@the-/code",
+    "meta": {
+      "lineno": 1,
+      "filename": "contentAccess.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/helpers"
+    },
+    "order": 41
   },
   {
     "id": "module:@the-/code/lib/parsers.parseCSS",
-    "kind": "function",
     "longname": "module:@the-/code/lib/parsers.parseCSS",
+    "name": "parseCSS",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code/lib/parsers",
     "meta": {
-      "filename": "parseCSS.js",
       "lineno": 1,
+      "filename": "parseCSS.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/parsers"
     },
-    "name": "parseCSS",
-    "order": 45,
-    "scope": "static"
+    "order": 45
   },
   {
     "id": "module:@the-/code.processors.processCSSProp",
-    "kind": "function",
     "longname": "module:@the-/code.processors.processCSSProp",
-    "memberof": "module:@the-/code.processors",
-    "meta": {
-      "filename": "processCSSProp.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
-    },
     "name": "processCSSProp",
-    "order": 47,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/code.processors",
     "params": [
       {
         "type": {
@@ -789,20 +784,20 @@
         "description": "processed"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "processCSSProp.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
+    },
+    "order": 47
   },
   {
     "id": "module:@the-/code.processors.processCSSRule",
-    "kind": "function",
     "longname": "module:@the-/code.processors.processCSSRule",
-    "memberof": "module:@the-/code.processors",
-    "meta": {
-      "filename": "processCSSRule.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
-    },
     "name": "processCSSRule",
-    "order": 48,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/code.processors",
     "params": [
       {
         "type": {
@@ -823,20 +818,20 @@
         "description": "processed"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "processCSSRule.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
+    },
+    "order": 48
   },
   {
     "id": "module:@the-/code.processors.processFileEnd",
-    "kind": "function",
     "longname": "module:@the-/code.processors.processFileEnd",
-    "memberof": "module:@the-/code.processors",
-    "meta": {
-      "filename": "processFileEnd.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
-    },
     "name": "processFileEnd",
-    "order": 49,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/code.processors",
     "params": [
       {
         "type": {
@@ -857,20 +852,20 @@
         "description": "processed"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "processFileEnd.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
+    },
+    "order": 49
   },
   {
     "id": "module:@the-/code.processors.processJSBlock",
-    "kind": "function",
     "longname": "module:@the-/code.processors.processJSBlock",
-    "memberof": "module:@the-/code.processors",
-    "meta": {
-      "filename": "processJSBlock.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
-    },
     "name": "processJSBlock",
-    "order": 50,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/code.processors",
     "params": [
       {
         "type": {
@@ -891,20 +886,20 @@
         "description": "processed"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "processJSBlock.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
+    },
+    "order": 50
   },
   {
     "id": "module:@the-/code.processors.processClass",
-    "kind": "function",
     "longname": "module:@the-/code.processors.processClass",
-    "memberof": "module:@the-/code.processors",
-    "meta": {
-      "filename": "processJSClass.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
-    },
     "name": "processClass",
-    "order": 51,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/code.processors",
     "params": [
       {
         "type": {
@@ -925,20 +920,20 @@
         "description": "processed"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "processJSClass.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
+    },
+    "order": 51
   },
   {
     "id": "module:@the-/code.processors.processComment",
-    "kind": "function",
     "longname": "module:@the-/code.processors.processComment",
-    "memberof": "module:@the-/code.processors",
-    "meta": {
-      "filename": "processJSComment.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
-    },
     "name": "processComment",
-    "order": 52,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/code.processors",
     "params": [
       {
         "type": {
@@ -959,20 +954,20 @@
         "description": "processed"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "processJSComment.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
+    },
+    "order": 52
   },
   {
     "id": "module:@the-/code.processors.processJSDoc",
-    "kind": "function",
     "longname": "module:@the-/code.processors.processJSDoc",
-    "memberof": "module:@the-/code.processors",
-    "meta": {
-      "filename": "processJSDoc.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
-    },
     "name": "processJSDoc",
-    "order": 53,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/code.processors",
     "params": [
       {
         "type": {
@@ -993,21 +988,21 @@
         "name": "options"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "processJSDoc.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
+    },
+    "order": 53
   },
   {
-    "description": "Process export statement",
     "id": "module:@the-/code.processors.processJSExport",
-    "kind": "function",
     "longname": "module:@the-/code.processors.processJSExport",
-    "memberof": "module:@the-/code.processors",
-    "meta": {
-      "filename": "processJSExport.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
-    },
     "name": "processJSExport",
-    "order": 54,
+    "kind": "function",
+    "scope": "static",
+    "description": "Process export statement",
+    "memberof": "module:@the-/code.processors",
     "params": [
       {
         "type": {
@@ -1028,21 +1023,21 @@
         "description": "processed"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "processJSExport.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
+    },
+    "order": 54
   },
   {
-    "description": "Process function expressions",
     "id": "module:@the-/code.processors.processJSFunction",
-    "kind": "function",
     "longname": "module:@the-/code.processors.processJSFunction",
-    "memberof": "module:@the-/code.processors",
-    "meta": {
-      "filename": "processJSFunction.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
-    },
     "name": "processJSFunction",
-    "order": 55,
+    "kind": "function",
+    "scope": "static",
+    "description": "Process function expressions",
+    "memberof": "module:@the-/code.processors",
     "params": [
       {
         "type": {
@@ -1063,21 +1058,21 @@
         "description": "processed"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "processJSFunction.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
+    },
+    "order": 55
   },
   {
-    "description": "Process import statement",
     "id": "module:@the-/code.processors.processJSImport",
-    "kind": "function",
     "longname": "module:@the-/code.processors.processJSImport",
-    "memberof": "module:@the-/code.processors",
-    "meta": {
-      "filename": "processJSImport.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
-    },
     "name": "processJSImport",
-    "order": 56,
+    "kind": "function",
+    "scope": "static",
+    "description": "Process import statement",
+    "memberof": "module:@the-/code.processors",
     "params": [
       {
         "type": {
@@ -1098,21 +1093,21 @@
         "description": "processed"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "processJSImport.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
+    },
+    "order": 56
   },
   {
-    "description": "Process object expressions",
     "id": "module:@the-/code.processors.processJSObject",
-    "kind": "function",
     "longname": "module:@the-/code.processors.processJSObject",
-    "memberof": "module:@the-/code.processors",
-    "meta": {
-      "filename": "processJSObject.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
-    },
     "name": "processJSObject",
-    "order": 57,
+    "kind": "function",
+    "scope": "static",
+    "description": "Process object expressions",
+    "memberof": "module:@the-/code.processors",
     "params": [
       {
         "type": {
@@ -1133,34 +1128,34 @@
         "description": "processed"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "processJSObject.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
+    },
+    "order": 57
   },
   {
     "id": "module:@the-/code.processors.processJSON",
-    "kind": "function",
     "longname": "module:@the-/code.processors.processJSON",
+    "name": "processJSON",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/code.processors",
     "meta": {
-      "filename": "processJSON.js",
       "lineno": 1,
+      "filename": "processJSON.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
     },
-    "name": "processJSON",
-    "order": 58,
-    "scope": "static"
+    "order": 58
   },
   {
     "id": "module:@the-/code.processors.processJSPrettier",
-    "kind": "function",
     "longname": "module:@the-/code.processors.processJSPrettier",
-    "memberof": "module:@the-/code.processors",
-    "meta": {
-      "filename": "processJSPrettier.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
-    },
     "name": "processJSPrettier",
-    "order": 59,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/code.processors",
     "params": [
       {
         "type": {
@@ -1181,56 +1176,56 @@
         "description": "processed"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "processJSPrettier.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
+    },
+    "order": 59
   },
   {
+    "id": "module:@the-/code.processors.processJSRequire",
+    "longname": "module:@the-/code.processors.processJSRequire",
+    "name": "processJSRequire",
+    "kind": "function",
+    "scope": "static",
     "description": "Process require statement",
-    "id": "module:@the-/code.processors.processJSRequire",
-    "kind": "function",
-    "longname": "module:@the-/code.processors.processJSRequire",
     "memberof": "module:@the-/code.processors",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "content"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "processed"
+      }
+    ],
     "meta": {
+      "lineno": 1,
       "filename": "processJSRequire.js",
-      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
     },
-    "name": "processJSRequire",
-    "order": 60,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "name": "content"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "processed"
-      }
-    ],
-    "scope": "static"
+    "order": 60
   },
   {
-    "description": "Process js \"use strict\" statement",
     "id": "module:@the-/code.processors.processJSRequire",
-    "kind": "function",
     "longname": "module:@the-/code.processors.processJSRequire",
-    "memberof": "module:@the-/code.processors",
-    "meta": {
-      "filename": "processJSStrict.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
-    },
     "name": "processJSRequire",
-    "order": 61,
+    "kind": "function",
+    "scope": "static",
+    "description": "Process js \"use strict\" statement",
+    "memberof": "module:@the-/code.processors",
     "params": [
       {
         "type": {
@@ -1251,21 +1246,21 @@
         "description": "processed"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "processJSStrict.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
+    },
+    "order": 61
   },
   {
-    "description": "Process js switch statement",
     "id": "module:@the-/code.processors.processJSSwitch",
-    "kind": "function",
     "longname": "module:@the-/code.processors.processJSSwitch",
-    "memberof": "module:@the-/code.processors",
-    "meta": {
-      "filename": "processJSSwitch.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
-    },
     "name": "processJSSwitch",
-    "order": 62,
+    "kind": "function",
+    "scope": "static",
+    "description": "Process js switch statement",
+    "memberof": "module:@the-/code.processors",
     "params": [
       {
         "type": {
@@ -1286,21 +1281,21 @@
         "description": "processed"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "processJSSwitch.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
+    },
+    "order": 62
   },
   {
-    "description": "Removed unused vars",
     "id": "module:@the-/code.processors.processJSUnused",
-    "kind": "function",
     "longname": "module:@the-/code.processors.processJSUnused",
-    "memberof": "module:@the-/code.processors",
-    "meta": {
-      "filename": "processJSUnused.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
-    },
     "name": "processJSUnused",
-    "order": 63,
+    "kind": "function",
+    "scope": "static",
+    "description": "Removed unused vars",
+    "memberof": "module:@the-/code.processors",
     "params": [
       {
         "type": {
@@ -1321,21 +1316,21 @@
         "description": "processed"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "processJSUnused.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
+    },
+    "order": 63
   },
   {
-    "description": "Process JSX attributes",
     "id": "module:@the-/code.processors.processJSXAttribute",
-    "kind": "function",
     "longname": "module:@the-/code.processors.processJSXAttribute",
-    "memberof": "module:@the-/code.processors",
-    "meta": {
-      "filename": "processJSXAttribute.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
-    },
     "name": "processJSXAttribute",
-    "order": 64,
+    "kind": "function",
+    "scope": "static",
+    "description": "Process JSX attributes",
+    "memberof": "module:@the-/code.processors",
     "params": [
       {
         "type": {
@@ -1356,20 +1351,20 @@
         "description": "processed"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "processJSXAttribute.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
+    },
+    "order": 64
   },
   {
     "id": "module:@the-/code.processors.processYAML",
-    "kind": "function",
     "longname": "module:@the-/code.processors.processYAML",
-    "memberof": "module:@the-/code.processors",
-    "meta": {
-      "filename": "processYAML.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
-    },
     "name": "processYAML",
-    "order": 65,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/code.processors",
     "params": [
       {
         "type": {
@@ -1389,6 +1384,11 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "processYAML.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
+    },
+    "order": 65
   }
 ]

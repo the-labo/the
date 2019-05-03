@@ -9,19 +9,19 @@ Check utility for the-framework
 **License**: MIT  
 
 * [@the-/check](#module_@the-/check)
-    * [.canTouch()](#module_@the-/check.canTouch) ⇒ <code>Boolean</code>
+    * [.canTouch()](#module_@the-/check.canTouch) ⇒ <code>boolean</code>
     * [.hasBin(binName, [options])](#module_@the-/check.hasBin) ⇒ <code>Promise.&lt;boolean&gt;</code>
-    * [.isBrowser()](#module_@the-/check.isBrowser) ⇒ <code>Boolean</code>
-    * [.isChrome()](#module_@the-/check.isChrome) ⇒ <code>Boolean</code>
-    * [.isFirefox()](#module_@the-/check.isFirefox) ⇒ <code>Boolean</code>
-    * [.isiOS()](#module_@the-/check.isiOS) ⇒ <code>Boolean</code>
+    * [.isBrowser()](#module_@the-/check.isBrowser) ⇒ <code>boolean</code>
+    * [.isChrome()](#module_@the-/check.isChrome) ⇒ <code>boolean</code>
+    * [.isFirefox()](#module_@the-/check.isFirefox) ⇒ <code>boolean</code>
+    * [.isiOS()](#module_@the-/check.isiOS) ⇒ <code>boolean</code>
     * [.isMacOS()](#module_@the-/check.isMacOS) ⇒ <code>boolean</code>
-    * [.isProduction()](#module_@the-/check.isProduction) ⇒ <code>Boolean</code>
+    * [.isProduction()](#module_@the-/check.isProduction) ⇒ <code>boolean</code>
     * [.unlessProduction(handler)](#module_@the-/check.unlessProduction)
 
 <a name="module_@the-/check.canTouch"></a>
 
-### check.canTouch() ⇒ <code>Boolean</code>
+### check.canTouch() ⇒ <code>boolean</code>
 Check touch supported
 
 **Kind**: static method of [<code>@the-/check</code>](#module_@the-/check)  
@@ -39,25 +39,25 @@ Check if a bin available
 
 <a name="module_@the-/check.isBrowser"></a>
 
-### check.isBrowser() ⇒ <code>Boolean</code>
+### check.isBrowser() ⇒ <code>boolean</code>
 Detect if browser side
 
 **Kind**: static method of [<code>@the-/check</code>](#module_@the-/check)  
 <a name="module_@the-/check.isChrome"></a>
 
-### check.isChrome() ⇒ <code>Boolean</code>
+### check.isChrome() ⇒ <code>boolean</code>
 Detect chrome or not
 
 **Kind**: static method of [<code>@the-/check</code>](#module_@the-/check)  
 <a name="module_@the-/check.isFirefox"></a>
 
-### check.isFirefox() ⇒ <code>Boolean</code>
+### check.isFirefox() ⇒ <code>boolean</code>
 Detect Firefox or not
 
 **Kind**: static method of [<code>@the-/check</code>](#module_@the-/check)  
 <a name="module_@the-/check.isiOS"></a>
 
-### check.isiOS() ⇒ <code>Boolean</code>
+### check.isiOS() ⇒ <code>boolean</code>
 Detect iOS or not
 
 **Kind**: static method of [<code>@the-/check</code>](#module_@the-/check)  
@@ -69,11 +69,11 @@ Detect is mac OS
 **Kind**: static method of [<code>@the-/check</code>](#module_@the-/check)  
 <a name="module_@the-/check.isProduction"></a>
 
-### check.isProduction() ⇒ <code>Boolean</code>
+### check.isProduction() ⇒ <code>boolean</code>
 Do unless production env
 
 **Kind**: static method of [<code>@the-/check</code>](#module_@the-/check)  
-**Returns**: <code>Boolean</code> - Is production or not  
+**Returns**: <code>boolean</code> - Is production or not  
 <a name="module_@the-/check.unlessProduction"></a>
 
 ### check.unlessProduction(handler)
@@ -83,4 +83,5 @@ Do unless production env
 
 | Param | Type |
 | --- | --- |
-| handler | <code>function</code> |
+| handler | <code>function</code> | 
+

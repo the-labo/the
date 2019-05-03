@@ -23,13 +23,13 @@
 <dt><a href="#quelize">quelize(values)</a></dt>
 <dd><p>Inject queries on location change</p>
 </dd>
-<dt><a href="#secure">secure([options])</a> ⇒ <code>Boolean</code></dt>
+<dt><a href="#secure">secure([options])</a> ⇒ <code>boolean</code></dt>
 <dd><p>Make sure to be secure</p>
 </dd>
 <dt><a href="#singleton">singleton([options])</a></dt>
 <dd><p>Make sure that entrypoint loaded only once</p>
 </dd>
-<dt><a href="#workers">workers(swUrls)</a> ⇒ <code>Promise.&lt;void&gt;</code></dt>
+<dt><a href="#workers">workers(swUrls)</a> ⇒ <code>Promise.&lt;undefined&gt;</code></dt>
 <dd><p>Register service workers</p>
 </dd>
 <dt><a href="#createStyleElement">createStyleElement()</a> ⇒ <code>HTMLElement</code></dt>
@@ -89,11 +89,11 @@ Inject queries on location change
 
 <a name="secure"></a>
 
-## secure([options]) ⇒ <code>Boolean</code>
+## secure([options]) ⇒ <code>boolean</code>
 Make sure to be secure
 
 **Kind**: global function  
-**Returns**: <code>Boolean</code> - Redirect triggered  
+**Returns**: <code>boolean</code> - Redirect triggered  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -112,7 +112,7 @@ Make sure that entrypoint loaded only once
 
 <a name="workers"></a>
 
-## workers(swUrls) ⇒ <code>Promise.&lt;void&gt;</code>
+## workers(swUrls) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Register service workers
 
 **Kind**: global function  
@@ -126,4 +126,4 @@ Register service workers
 ## createStyleElement() ⇒ <code>HTMLElement</code>
 Create Style element
 
-**Kind**: global function
+**Kind**: global function  

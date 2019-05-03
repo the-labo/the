@@ -1,7 +1,7 @@
 /**
- * Alias of {@memberof module:@the-/rtc
+ * Alias of {@link module:@the-/rtc.create}
+ * @memberof module:@the-/rtc
  * @function default
- * @link module:@the-/rtc.create}
  */
 'use strict'
 

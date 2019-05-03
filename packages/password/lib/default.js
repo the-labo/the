@@ -1,7 +1,7 @@
 /**
- * Alias of {@memberof module:@the-/password
+ * Alias of {@link module:@the-/password}
+ * @memberof module:@the-/password
  * @function default
- * @link module:@the-/password}
  */
 'use strict'
 

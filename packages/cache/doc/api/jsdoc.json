@@ -1,73 +1,48 @@
 [
   {
-    "description": "Cache manager of the-frameworks",
     "id": "module:@the-/cache",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/cache",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/cache/lib"
-    },
     "name": "@the-/cache",
-    "order": 2,
+    "kind": "module",
+    "description": "Cache manager of the-frameworks",
+    "version": "15.4.1",
+    "license": "MIT",
     "typicalname": "cache",
-    "version": "15.4.1"
-  },
-  {
-    "customTags": [
-      {
-        "tag": "link",
-        "value": "module:@the-/cache.create}"
-      }
-    ],
-    "description": "Alias of {@memberof module:@the-/cache",
-    "id": "default",
-    "kind": "function",
-    "longname": "default",
     "meta": {
-      "filename": "default.js",
-      "lineno": 1,
+      "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/cache/lib"
     },
-    "name": "default",
-    "order": 1,
-    "scope": "global"
+    "order": 2
   },
   {
+    "id": "module:@the-/cache.TheCache",
+    "longname": "module:@the-/cache.TheCache",
+    "name": "TheCache",
+    "kind": "class",
+    "scope": "static",
     "augments": [
       "LRUCache"
     ],
-    "id": "module:@the-/cache.TheCache",
-    "kind": "class",
-    "longname": "module:@the-/cache.TheCache",
     "memberof": "module:@the-/cache",
-    "meta": {
-      "filename": "TheCache.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/cache/lib"
-    },
-    "name": "TheCache",
-    "order": 3,
-    "scope": "static",
     "see": [
       "https://github.com/isaacs/node-lru-cache#readme"
-    ]
-  },
-  {
-    "description": "Create a TheCache instance",
-    "id": "module:@the-/cache.create",
-    "kind": "function",
-    "longname": "module:@the-/cache.create",
-    "memberof": "module:@the-/cache",
+    ],
     "meta": {
-      "filename": "create.js",
       "lineno": 1,
+      "filename": "TheCache.js",
       "path": "/Users/okuni/Projects/the/packages/cache/lib"
     },
+    "order": 3
+  },
+  {
+    "id": "module:@the-/cache.create",
+    "longname": "module:@the-/cache.create",
     "name": "create",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheCache instance",
+    "memberof": "module:@the-/cache",
     "params": [
       {
         "type": {
@@ -88,6 +63,26 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/cache/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/cache.default",
+    "longname": "module:@the-/cache.default",
+    "name": "default",
+    "kind": "function",
+    "scope": "static",
+    "description": "Alias of {@link module:@the-/cache.default}",
+    "memberof": "module:@the-/cache",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/cache/lib"
+    },
+    "order": 1
   }
 ]

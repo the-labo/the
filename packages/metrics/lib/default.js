@@ -1,7 +1,7 @@
 /**
- * Alias of {@memberof module:@the-/metrics
+ * Alias of {@link module:@the-/metrics.create}
+ * @memberof module:@the-/metrics
  * @function default
- * @link module:@the-/metrics.create}
  */
 'use strict'
 

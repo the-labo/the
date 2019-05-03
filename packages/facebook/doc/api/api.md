@@ -65,4 +65,5 @@ Create a TheFacebook instance
 
 | Param | Type |
 | --- | --- |
-| ...args | <code>\*</code> |
+| ...args | <code>\*</code> | 
+
