@@ -24,9 +24,9 @@ console.log(shirt)
  * @link x`,
     })
     equal(annotations[0].kind.name, 'module')
-    equal(annotations[2].value, 'x')
+    equal(annotations[2].body.value, 'x')
     equal(
-      annotations[1].value,
+      annotations[1].body.value,
       `const shirt = require('my/shirt')
 console.log(shirt)`,
     )

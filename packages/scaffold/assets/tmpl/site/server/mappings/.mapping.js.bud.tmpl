@@ -1,0 +1,36 @@
+/**
+ * Bud file for mappings
+ */
+'use strict'
+
+const { camelcase } = require('stringcase')
+const { mapping } = require('@the-/templates')
+const c = require('../controllers')
+const r = require('../db/resources')
+
+module.exports = Object.entries({
+  ControllerMapping: {
+    cjs: true,
+    mapping: Object.keys(c)
+      .filter((name) => !['Ctrl'].includes(name))
+      .map((name) => ({
+        className: name,
+        instanceName: camelcase(name),
+      })),
+    requireAs: 'c',
+    requirePath: '../controllers',
+  },
+  ResourceMapping: {
+    cjs: true,
+    mapping: Object.keys(r).map((name) => ({
+      className: name,
+      instanceName: name.replace(/Resource$/, ''),
+    })),
+    requireAs: 'r',
+    requirePath: '../db/resources',
+  },
+}).map(([name, values]) => mapping({ name, ...values }))
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

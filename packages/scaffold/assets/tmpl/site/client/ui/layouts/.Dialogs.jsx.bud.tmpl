@@ -1,0 +1,15 @@
+/**
+ * Bud file for dialogs
+ */
+'use strict'
+
+const { Dialogs } = require('@the-/templates')
+
+module.exports = Dialogs({
+  dirname: `${__dirname}/../stateful`,
+  from: '../stateful',
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

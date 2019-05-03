@@ -1,0 +1,120 @@
+{
+  "client/scenes/!(index).js": {
+    "callRule": {
+      "keypathArguments": {
+        "bindScope": "client/scopes"
+      }
+    },
+    "contentRule": {
+      "endsWithNewLine": true,
+      "maxLines": 200
+    },
+    "decorateRule": {
+      "declared": true
+    },
+    "filenameRule": {
+      "endsWith": "Scene.js"
+    }
+  },
+  "client/ui/**/*.jsx": {
+    "callRule": {
+      "keypathArguments": {
+        "l": "conf/locales/en"
+      }
+    },
+    "contentRule": {
+      "endsWithNewLine": true,
+      "maxLines": 200
+    },
+    "decorateRule": {
+      "declared": true
+    },
+    "depsRule": {
+      "importFrom": [
+        ".mjs",
+        ".js",
+        ".jsx",
+        ".json",
+        ".pcss"
+      ],
+      "requireFrom": [
+        ".js",
+        ".json"
+      ]
+    },
+    "propRule": {
+      "keypathAccess": {
+        "state": "client/store/scopes",
+        "Urls": "conf/Urls"
+      }
+    }
+  },
+  "client/ui/+(stateful|stateless)/**/!(index).jsx": {
+    "usageRule": {
+      "ignore": [
+        "client/shim",
+        "client/ui/**/index.jsx"
+      ],
+      "usedIn": "client/ui/**/*.jsx"
+    }
+  },
+  "client/ui/views/**/!(index).jsx": {
+    "filenameRule": {
+      "endsWith": "View.jsx"
+    }
+  },
+  "conf/Icons.js": {
+    "moduleRule": {
+      "keyPattern": "/^[A-Z_]+_ICON/",
+      "type": "object"
+    }
+  },
+  "conf/Urls.js": {
+    "moduleRule": {
+      "keyPattern": "/^[A-Z_]+_URL$/",
+      "type": "object",
+      "valuePattern": "/^//",
+      "valueUnique": true
+    }
+  },
+  "server/**/*.js": {
+    "contentRule": {
+      "endsWithNewLine": true,
+      "maxLines": 100
+    },
+    "depsRule": {
+      "importFrom": [
+        ".mjs",
+        ".js",
+        ".json"
+      ],
+      "requireFrom": [
+        ".js",
+        ".json"
+      ]
+    }
+  },
+  "server/controllers/!(index).js": {
+    "filenameRule": {
+      "endsWith": "Ctrl.js"
+    },
+    "moduleRule": {
+      "namedFromDefault": true,
+      "type": "function"
+    }
+  },
+  "server/db/resources/!(index).js": {
+    "filenameRule": {
+      "endsWith": "Resource.js"
+    },
+    "moduleRule": {
+      "namedFromDefault": true,
+      "type": "function"
+    }
+  },
+  "server/db/seeds/**/!(index|_*).js": {
+    "filenameRule": {
+      "endsWith": ".seed.js"
+    }
+  }
+}

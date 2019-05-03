@@ -1,0 +1,14 @@
+'use strict'
+
+const { dir } = require('@the-/templates')
+
+module.exports = dir({
+  cjs: true,
+  description: 'Db resource classes',
+  dirname: __dirname,
+  name: 'resources',
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

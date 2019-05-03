@@ -25,7 +25,7 @@ const findJSDocAnnotationsInCommendNode_ = require('./findJSDocAnnotationsInComm
 const findRequireDeclarationOnProgramNode_ = require('./findRequireDeclarationOnProgramNode')
 const mergeDuplicateImportOnProgramNode_ = require('./mergeDuplicateImportOnProgramNode')
 const modifyNodeDeprecatedOnRequireDeclaration_ = require('./modifyNodeDeprecatedOnRequireDeclaration')
-const normalizeJSDocSynonymsOnCommentNode_ = require('./normalizeJSDocSynonymsOnCommentNode')
+const normalizeJSDocAnnotationsOnCommentNode_ = require('./normalizeJSDocAnnotationsOnCommentNode')
 const normalizeSrcPathOnImportDeclarationNode_ = require('./normalizeSrcPathOnImportDeclarationNode')
 const normalizeSrcPathOnRequireArgumentNode_ = require('./normalizeSrcPathOnRequireArgumentNode')
 const sortAnnotationsOnCommentNode_ = require('./sortAnnotationsOnCommentNode')
@@ -54,7 +54,7 @@ exports.findJSDocAnnotationsInCommendNode = findJSDocAnnotationsInCommendNode_
 exports.findRequireDeclarationOnProgramNode = findRequireDeclarationOnProgramNode_
 exports.mergeDuplicateImportOnProgramNode = mergeDuplicateImportOnProgramNode_
 exports.modifyNodeDeprecatedOnRequireDeclaration = modifyNodeDeprecatedOnRequireDeclaration_
-exports.normalizeJSDocSynonymsOnCommentNode = normalizeJSDocSynonymsOnCommentNode_
+exports.normalizeJSDocAnnotationsOnCommentNode = normalizeJSDocAnnotationsOnCommentNode_
 exports.normalizeSrcPathOnImportDeclarationNode = normalizeSrcPathOnImportDeclarationNode_
 exports.normalizeSrcPathOnRequireArgumentNode = normalizeSrcPathOnRequireArgumentNode_
 exports.sortAnnotationsOnCommentNode = sortAnnotationsOnCommentNode_
@@ -83,7 +83,7 @@ module.exports = {
   findRequireDeclarationOnProgramNode: findRequireDeclarationOnProgramNode_,
   mergeDuplicateImportOnProgramNode: mergeDuplicateImportOnProgramNode_,
   modifyNodeDeprecatedOnRequireDeclaration: modifyNodeDeprecatedOnRequireDeclaration_,
-  normalizeJSDocSynonymsOnCommentNode: normalizeJSDocSynonymsOnCommentNode_,
+  normalizeJSDocAnnotationsOnCommentNode: normalizeJSDocAnnotationsOnCommentNode_,
   normalizeSrcPathOnImportDeclarationNode: normalizeSrcPathOnImportDeclarationNode_,
   normalizeSrcPathOnRequireArgumentNode: normalizeSrcPathOnRequireArgumentNode_,
   sortAnnotationsOnCommentNode: sortAnnotationsOnCommentNode_,

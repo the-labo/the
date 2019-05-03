@@ -1,0 +1,17 @@
+/**
+ * Bud file for LICENSE
+ */
+'use strict'
+
+const { License } = require('@the-/templates')
+const { license, repository } = require('./package')
+
+module.exports = License({
+  holder: repository.split(/\//).shift(),
+  type: license,
+  year: 2019,
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

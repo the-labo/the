@@ -1,0 +1,12 @@
+/**
+ * Bud file for lint
+ */
+'use strict'
+
+const { prettierrc } = require('@the-/templates')
+
+module.exports = [prettierrc()]
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

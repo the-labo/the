@@ -1,0 +1,26 @@
+'use strict'
+
+const path = require('path')
+const { View } = require('@the-/templates')
+
+module.exports = [].reduce((buds, name) => {
+  return [
+    ...buds,
+    View({ name }),
+    {
+      data: { name },
+      force: false,
+      mkdirp: true,
+      mode: '644',
+      path: `${name}.pcss`,
+      tmpl: `
+.self {
+
+}`,
+    },
+  ]
+}, [])
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

@@ -1,0 +1,35 @@
+/**
+* @class {{name}}
+* @augments TheResource
+*/
+'use strict'
+
+const {
+  TheResource,
+  DataTypes: {STRING, ENTITY},
+} = require('the-resource-base')
+
+/** @lends {{name}} */
+class {{name}} extends TheResource {
+  static get schema () {
+    return {
+      name: {
+        description: 'Name of resource',
+        type: STRING,
+        unique: true,
+        required: true,
+        trim: true,
+        minLength: 2
+      }
+    }
+  }
+
+  static entityClass (ResourceEntity) {
+    /** @class */
+    class {{name}}Entity extends ResourceEntity {
+    }
+    return {{name}}Entity
+  }
+}
+
+module.exports = {{name}}

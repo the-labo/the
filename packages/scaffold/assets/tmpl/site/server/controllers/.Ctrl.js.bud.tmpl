@@ -1,0 +1,17 @@
+/**
+ * Bud file for Ctrls
+ */
+'use strict'
+
+const { Ctrl } = require('@the-/templates')
+
+module.exports = ['AppCtrl'].map((name) =>
+  Ctrl({
+    cjs: true,
+    name,
+  }),
+)
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

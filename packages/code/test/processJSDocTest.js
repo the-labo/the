@@ -95,6 +95,21 @@ describe('process-js-doc', () => {
 `,
     )
   })
+
+  it('Fix types', async () => {
+    equal(
+      await processJSDoc(`
+/**
+ *  @param {String}
+ *  @returns {Promise.<void>}
+ */`),
+      `
+/**
+ *  @param {string}
+ *  @returns {Promise<undefined>}
+ */`,
+    )
+  })
 })
 
 /* global describe, before, after, it */
