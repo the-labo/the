@@ -94,11 +94,15 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [keyPathMap(keyPath,options)](./doc/api/api.md#keyPathMap)
-- [randomFind()](./doc/api/api.md#randomFind)
-- [shuffleSort()](./doc/api/api.md#shuffleSort)
-- [uniqueFilter(options)](./doc/api/api.md#uniqueFilter)
+
+- global
+  - [keyPathMap(keyPath,options)](./doc/api/api.md#keyPathMap)
+  - [randomFind()](./doc/api/api.md#randomFind)
+  - [shuffleSort()](./doc/api/api.md#shuffleSort)
+  - [uniqueFilter(options)](./doc/api/api.md#uniqueFilter)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>
