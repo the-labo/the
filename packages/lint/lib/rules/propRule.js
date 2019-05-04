@@ -9,6 +9,7 @@
 
 const { has } = require('json-pointer')
 const path = require('path')
+const interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault')
 const { parse, walk } = require('@the-/ast')
 
 /** @lends module:@the-/lint.rules.propRule */
@@ -53,7 +54,9 @@ function propRule(config) {
     })
 
     for (const [name, target] of Object.entries(keypathAccess)) {
-      const targetModule = require(path.resolve(target))
+      const { default: targetModule } = interopRequireDefault(
+        require(path.resolve(target)),
+      )
       for (const expression of MemberExpressions) {
         switch (expression.property.type) {
           case 'Identifier': {

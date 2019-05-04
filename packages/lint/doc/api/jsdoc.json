@@ -5,7 +5,7 @@
     "name": "@the-/lint",
     "kind": "module",
     "description": "Lint of the-frameworks",
-    "version": "15.4.1",
+    "version": "15.4.2",
     "license": "MIT",
     "typicalname": "lint",
     "meta": {
