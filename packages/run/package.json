@@ -1,7 +1,4 @@
 {
-  "name": "@the-/run",
-  "description": "Script runner for the-framework",
-  "version": "15.4.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -19,6 +16,7 @@
     "fkill": "^6.1.0",
     "pretty-exceptions": "^1.4.0"
   },
+  "description": "Script runner for the-framework",
   "devDependencies": {
     "aport": "^2.0.0"
   },
@@ -33,6 +31,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/run",
   "publishConfig": {
     "access": "public"
   },
@@ -43,5 +42,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.2"
 }

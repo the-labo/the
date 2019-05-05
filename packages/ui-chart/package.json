@@ -1,7 +1,4 @@
 {
-  "name": "@the-/ui-chart",
-  "description": "Chart for the-components",
-  "version": "15.4.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,13 +8,14 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.4.1",
+    "@the-/check": "^15.5.0",
     "@the-/ui-style": "^15.4.0",
     "@the-/util-ui": "^15.4.1",
     "chart.js": "^2.8.0",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
+  "description": "Chart for the-components",
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
     "coz": "^7.0.19"
@@ -33,6 +31,7 @@
   ],
   "license": "MIT",
   "main": "shim",
+  "name": "@the-/ui-chart",
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
@@ -46,5 +45,6 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.2"
 }

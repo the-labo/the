@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-body
  * @typicalname uiBody
- * @version 15.4.0
+ * @version 15.4.2
  * @description Body of the-components
  */
 'use strict'

@@ -69,4 +69,4 @@ Create a TheSetting instance
 ### setting.default()
 Alias of [create](#module_@the-/setting.create)
 
-**Kind**: static method of [<code>@the-/setting</code>](#module_@the-/setting)  
+**Kind**: static method of [<code>@the-/setting</code>](#module_@the-/setting)
