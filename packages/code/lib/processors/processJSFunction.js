@@ -32,8 +32,10 @@ function processJSFunction(content, options = {}) {
       NodeTypes.FunctionExpression,
       NodeTypes.ArrowFunctionExpression,
       NodeTypes.ClassMethod,
+      NodeTypes.ObjectMethod,
       NodeTypes.ClassPrivateMethod,
     ])
+    // console.log(parsed)
     const converted = applyToNodes(Functions, convertFunctionNode)
     if (converted) {
       return converted

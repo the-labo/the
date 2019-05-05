@@ -71,7 +71,8 @@ class J {
     return await Promise.resolve(1)
   } 
 }
-      `), `
+      `),
+      `
 class J {
   async h () {
     if (x>2) {
@@ -80,7 +81,25 @@ class J {
     return Promise.resolve(1)
   } 
 }
-      `)
+      `,
+    )
+  })
+
+  it('Object methods', async () => {
+    equal(
+      await processJSFunction(`
+const systemSentenceManager = {
+    async a() {
+      return await Promise(1)
+    },
+}
+    `),`
+const systemSentenceManager = {
+    async a() {
+      return Promise(1)
+    },
+}
+    `)
   })
 })
 
