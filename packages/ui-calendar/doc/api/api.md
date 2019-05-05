@@ -29,7 +29,7 @@
 ## @the-/ui-calendar
 Calendar of the-components
 
-**Version**: 15.4.0  
+**Version**: 15.4.3  
 <a name="TheCalendar"></a>
 
 ## TheCalendar
@@ -41,4 +41,4 @@ Calendar of the-components
 ## TheCalendarStyle()
 Style for TheCalendar
 
-**Kind**: global function
+**Kind**: global function  

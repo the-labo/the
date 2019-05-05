@@ -5,7 +5,7 @@
 ## @the-/url
 URL utility for the-framework
 
-**Version**: 15.4.1  
+**Version**: 15.4.3  
 **License**: MIT  
 
 * [@the-/url](#module_@the-/url)
@@ -37,3 +37,4 @@ Format urls
 | --- | --- | --- | --- |
 | urlString | <code>string</code> |  | URL format string |
 | [params] | <code>Object</code> | <code>{}</code> | Params to inject |
+

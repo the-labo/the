@@ -9,12 +9,13 @@
 'use strict'
 
 const qs = require('qs')
+const { get } = require('@the-/window')
 
 /** @lends addUrlQuery */
 function addUrlQuery(urlString, query = {}) {
   const isRelative = urlString.match(/^\//)
   const url = isRelative
-    ? new URL(urlString, 'relative:///')
+    ? new URL(urlString, get('location.origin') || 'relative:///')
     : new URL(urlString)
   const queryString = url.search.replace(/^\?/, '')
   url.search = qs.stringify({ ...qs.parse(queryString), ...query })

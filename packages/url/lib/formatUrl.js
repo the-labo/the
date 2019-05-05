@@ -9,13 +9,14 @@
 'use strict'
 
 const { unlessProduction } = require('@the-/check')
+const { get } = require('@the-/window')
 const PARAM_PREFIX = /^:/
 
 /** @lends formatUrl */
 function formatUrl(urlString, params = {}) {
   const isRelative = urlString.match(/^\//)
   const url = isRelative
-    ? new URL(urlString, 'relative:///')
+    ? new URL(urlString, get('location.origin') || 'relative:///')
     : new URL(urlString)
   const { pathname, search } = url
   const paramsKeys = Object.keys(params)
