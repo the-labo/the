@@ -5,12 +5,11 @@
 ## @the-/check
 Check utility for the-framework
 
-**Version**: 15.4.1  
+**Version**: 15.5.0  
 **License**: MIT  
 
 * [@the-/check](#module_@the-/check)
     * [.canTouch()](#module_@the-/check.canTouch) ⇒ <code>boolean</code>
-    * [.hasBin(binName, [options])](#module_@the-/check.hasBin) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.isBrowser()](#module_@the-/check.isBrowser) ⇒ <code>boolean</code>
     * [.isChrome()](#module_@the-/check.isChrome) ⇒ <code>boolean</code>
     * [.isFirefox()](#module_@the-/check.isFirefox) ⇒ <code>boolean</code>
@@ -25,18 +24,6 @@ Check utility for the-framework
 Check touch supported
 
 **Kind**: static method of [<code>@the-/check</code>](#module_@the-/check)  
-<a name="module_@the-/check.hasBin"></a>
-
-### check.hasBin(binName, [options]) ⇒ <code>Promise.&lt;boolean&gt;</code>
-Check if a bin available
-
-**Kind**: static method of [<code>@the-/check</code>](#module_@the-/check)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| binName | <code>string</code> |  | Name of bin |
-| [options] | <code>Object</code> | <code>{}</code> |  |
-
 <a name="module_@the-/check.isBrowser"></a>
 
 ### check.isBrowser() ⇒ <code>boolean</code>
@@ -83,4 +70,5 @@ Do unless production env
 
 | Param | Type |
 | --- | --- |
-| handler | <code>function</code> |
+| handler | <code>function</code> | 
+

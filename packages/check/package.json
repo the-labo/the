@@ -1,7 +1,4 @@
 {
-  "name": "@the-/check",
-  "description": "Check utility for the-framework",
-  "version": "15.4.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -10,7 +7,6 @@
   "browser": {
     ".": "./shim",
     "fs": false,
-    "hasbin": false,
     "lib": "./shim",
     "os": "os-browserify",
     "path": "path-browserify"
@@ -22,10 +18,10 @@
     "@the-/window": "^15.4.1",
     "asenv": "^3.0.2",
     "bowser": "^2.4.0",
-    "hasbin": "^1.2.3",
     "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.0"
   },
+  "description": "Check utility for the-framework",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -38,6 +34,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/check",
   "publishConfig": {
     "access": "public"
   },
@@ -48,5 +45,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.5.0"
 }

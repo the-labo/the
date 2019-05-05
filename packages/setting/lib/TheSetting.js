@@ -48,6 +48,8 @@ class TheSetting extends TheSettingBase {
     this.logger.disabled = false
 
     abind(this)
+
+    this.save()
   }
 
   /**
