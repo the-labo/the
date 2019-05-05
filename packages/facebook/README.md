@@ -78,6 +78,8 @@ async function tryExample() {
   const data = await fb.userDataFor(token, appToken, {
     fields: 'name,email,picture,timezone,gender,locale',
   })
+  console.log(data)
+  /* ... */
 }
 
 tryExample().catch((err) => console.error(err))

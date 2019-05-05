@@ -1,7 +1,4 @@
 {
-  "name": "@the-/polyfill",
-  "description": "Polyfill of the-frameworks",
-  "version": "15.4.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -22,6 +19,7 @@
     "proxy-polyfill": "^0.3.0",
     "raf": "^3.4.1"
   },
+  "description": "Polyfill of the-frameworks",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -34,6 +32,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/polyfill",
   "publishConfig": {
     "access": "public"
   },
@@ -44,5 +43,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.2"
 }

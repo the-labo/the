@@ -1,7 +1,4 @@
 {
-  "name": "@the-/metrics-presets",
-  "description": "Preset of the-metrics",
-  "version": "15.4.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,6 +9,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {},
+  "description": "Preset of the-metrics",
   "devDependencies": {
     "@the-/metrics": "file:../metrics"
   },
@@ -26,6 +24,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/metrics-presets",
   "peerDependencies": {
     "@the-/metrics": ">=15"
   },
@@ -39,5 +38,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.2"
 }

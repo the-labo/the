@@ -1,27 +1,28 @@
 [
   {
-    "id": "module:@the-/handle",
-    "longname": "module:@the-/handle",
-    "name": "@the-/handle",
-    "kind": "module",
     "description": "Action handler for the-framework",
-    "version": "15.4.2",
+    "id": "module:@the-/handle",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "handle",
+    "longname": "module:@the-/handle",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/handle/lib"
     },
-    "order": 3
+    "name": "@the-/handle",
+    "order": 3,
+    "typicalname": "handle",
+    "version": "15.4.2"
   },
   {
-    "id": "module:@the-/handle.TheHandle()",
-    "longname": "module:@the-/handle.TheHandle",
-    "name": "TheHandle",
-    "kind": "constructor",
     "description": "Shared action handler",
+    "id": "module:@the-/handle.TheHandle()",
+    "kind": "constructor",
+    "longname": "module:@the-/handle.TheHandle",
     "memberof": "module:@the-/handle.TheHandle",
+    "name": "TheHandle",
+    "order": 5,
     "params": [
       {
         "type": {
@@ -43,17 +44,21 @@
         "description": "Props value to share with scenes",
         "name": "attributes"
       }
-    ],
-    "order": 5
+    ]
   },
   {
-    "id": "module:@the-/handle.TheHandle#load",
-    "longname": "module:@the-/handle.TheHandle#load",
-    "name": "load",
-    "kind": "function",
-    "scope": "instance",
     "description": "Load a scene",
+    "id": "module:@the-/handle.TheHandle#load",
+    "kind": "function",
+    "longname": "module:@the-/handle.TheHandle#load",
     "memberof": "module:@the-/handle.TheHandle",
+    "meta": {
+      "filename": "TheHandle.js",
+      "lineno": 48,
+      "path": "/Users/okuni/Projects/the/packages/handle/lib"
+    },
+    "name": "load",
+    "order": 6,
     "params": [
       {
         "type": {
@@ -85,21 +90,21 @@
         "description": "Loaded scope"
       }
     ],
-    "meta": {
-      "lineno": 48,
-      "filename": "TheHandle.js",
-      "path": "/Users/okuni/Projects/the/packages/handle/lib"
-    },
-    "order": 6
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/handle.TheHandle#loadFromMapping",
-    "longname": "module:@the-/handle.TheHandle#loadFromMapping",
-    "name": "loadFromMapping",
-    "kind": "function",
-    "scope": "instance",
     "description": "Load scenes from mapping",
+    "id": "module:@the-/handle.TheHandle#loadFromMapping",
+    "kind": "function",
+    "longname": "module:@the-/handle.TheHandle#loadFromMapping",
     "memberof": "module:@the-/handle.TheHandle",
+    "meta": {
+      "filename": "TheHandle.js",
+      "lineno": 97,
+      "path": "/Users/okuni/Projects/the/packages/handle/lib"
+    },
+    "name": "loadFromMapping",
+    "order": 7,
     "params": [
       {
         "type": {
@@ -111,21 +116,21 @@
         "name": "SceneMapping"
       }
     ],
-    "meta": {
-      "lineno": 97,
-      "filename": "TheHandle.js",
-      "path": "/Users/okuni/Projects/the/packages/handle/lib"
-    },
-    "order": 7
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/handle.TheHandle#setAttributes",
-    "longname": "module:@the-/handle.TheHandle#setAttributes",
-    "name": "setAttributes",
-    "kind": "function",
-    "scope": "instance",
     "description": "Set attributes value. All attributes will be shared in scenes",
+    "id": "module:@the-/handle.TheHandle#setAttributes",
+    "kind": "function",
+    "longname": "module:@the-/handle.TheHandle#setAttributes",
     "memberof": "module:@the-/handle.TheHandle",
+    "meta": {
+      "filename": "TheHandle.js",
+      "lineno": 117,
+      "path": "/Users/okuni/Projects/the/packages/handle/lib"
+    },
+    "name": "setAttributes",
+    "order": 8,
     "params": [
       {
         "type": {
@@ -136,21 +141,21 @@
         "name": "attributes"
       }
     ],
-    "meta": {
-      "lineno": 117,
-      "filename": "TheHandle.js",
-      "path": "/Users/okuni/Projects/the/packages/handle/lib"
-    },
-    "order": 8
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/handle.toHandleSceneClass~HandleSceneClass#load",
-    "longname": "module:@the-/handle.toHandleSceneClass~HandleSceneClass#load",
-    "name": "load",
-    "kind": "function",
-    "scope": "instance",
     "description": "Load sub scenes",
+    "id": "module:@the-/handle.toHandleSceneClass~HandleSceneClass#load",
+    "kind": "function",
+    "longname": "module:@the-/handle.toHandleSceneClass~HandleSceneClass#load",
     "memberof": "module:@the-/handle.toHandleSceneClass~HandleSceneClass",
+    "meta": {
+      "filename": "toHandleSceneClass.js",
+      "lineno": 22,
+      "path": "/Users/okuni/Projects/the/packages/handle/lib"
+    },
+    "name": "load",
+    "order": 11,
     "params": [
       {
         "type": {
@@ -172,49 +177,49 @@
         "name": "names"
       }
     ],
-    "meta": {
-      "lineno": 22,
-      "filename": "toHandleSceneClass.js",
-      "path": "/Users/okuni/Projects/the/packages/handle/lib"
-    },
-    "order": 11
+    "scope": "instance"
   },
   {
     "id": "module:@the-/handle.TheHandle",
-    "longname": "module:@the-/handle.TheHandle",
-    "name": "TheHandle",
     "kind": "class",
-    "scope": "static",
+    "longname": "module:@the-/handle.TheHandle",
     "memberof": "module:@the-/handle",
     "meta": {
-      "lineno": 1,
       "filename": "TheHandle.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/handle/lib"
     },
-    "order": 4
+    "name": "TheHandle",
+    "order": 4,
+    "scope": "static"
   },
   {
     "id": "module:@the-/handle.helpers",
-    "longname": "module:@the-/handle.helpers",
-    "name": "helpers",
     "kind": "namespace",
-    "scope": "static",
+    "longname": "module:@the-/handle.helpers",
     "memberof": "module:@the-/handle",
     "meta": {
-      "lineno": 1,
       "filename": "helpers.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/handle/lib"
     },
-    "order": 2
+    "name": "helpers",
+    "order": 2,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/handle.create",
-    "longname": "module:@the-/handle.create",
-    "name": "create",
-    "kind": "function",
-    "scope": "static",
     "description": "Create a TheHandle instance",
+    "id": "module:@the-/handle.create",
+    "kind": "function",
+    "longname": "module:@the-/handle.create",
     "memberof": "module:@the-/handle",
+    "meta": {
+      "filename": "create.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/handle/lib"
+    },
+    "name": "create",
+    "order": 0,
     "params": [
       {
         "type": {
@@ -235,55 +240,50 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "create.js",
-      "path": "/Users/okuni/Projects/the/packages/handle/lib"
-    },
-    "order": 0
+    "scope": "static"
   },
   {
-    "id": "module:@the-/handle.default",
-    "longname": "module:@the-/handle.default",
-    "name": "default",
-    "kind": "function",
-    "scope": "static",
     "description": "Alias of {@link module:@the-/handle.create}",
+    "id": "module:@the-/handle.default",
+    "kind": "function",
+    "longname": "module:@the-/handle.default",
     "memberof": "module:@the-/handle",
     "meta": {
-      "lineno": 1,
       "filename": "default.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/handle/lib"
     },
-    "order": 1
+    "name": "default",
+    "order": 1,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/handle.toHandleSceneClass",
-    "longname": "module:@the-/handle.toHandleSceneClass",
-    "name": "toHandleSceneClass",
-    "kind": "function",
-    "scope": "static",
     "description": "Convert into handle scene class",
+    "id": "module:@the-/handle.toHandleSceneClass",
+    "kind": "function",
+    "longname": "module:@the-/handle.toHandleSceneClass",
     "memberof": "module:@the-/handle",
     "meta": {
-      "lineno": 1,
       "filename": "toHandleSceneClass.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/handle/lib"
     },
-    "order": 9
+    "name": "toHandleSceneClass",
+    "order": 9,
+    "scope": "static"
   },
   {
     "id": "module:@the-/handle.toHandleSceneClass~HandleSceneClass",
-    "longname": "module:@the-/handle.toHandleSceneClass~HandleSceneClass",
-    "name": "HandleSceneClass",
     "kind": "class",
-    "scope": "inner",
+    "longname": "module:@the-/handle.toHandleSceneClass~HandleSceneClass",
     "memberof": "module:@the-/handle.toHandleSceneClass",
     "meta": {
-      "lineno": 16,
       "filename": "toHandleSceneClass.js",
+      "lineno": 16,
       "path": "/Users/okuni/Projects/the/packages/handle/lib"
     },
-    "order": 10
+    "name": "HandleSceneClass",
+    "order": 10,
+    "scope": "inner"
   }
 ]

@@ -4,8 +4,8 @@
  */
 'use strict'
 
-const helpers = require('../lib/helpers')
 const { deepEqual } = require('assert').strict
+const helpers = require('../lib/helpers')
 
 describe('helpers', () => {
   before(() => {})
