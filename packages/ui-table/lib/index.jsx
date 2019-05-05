@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-table
  * @typicalname uiTable
- * @version 15.4.0
+ * @version 15.4.2
  * @description Table for the-components
  */
 'use strict'

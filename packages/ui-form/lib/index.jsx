@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-form
  * @typicalname uiForm
- * @version 15.4.0
+ * @version 15.4.2
  * @description Form of the-components
  */
 'use strict'

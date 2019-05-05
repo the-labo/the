@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-route
  * @typicalname uiRoute
- * @version 15.4.0
+ * @version 15.4.2
  * @description Route of the-components
  */
 'use strict'

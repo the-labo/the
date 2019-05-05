@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-input
  * @typicalname uiInput
- * @version 15.4.0
+ * @version 15.4.2
  * @description Input of the-components
  */
 'use strict'

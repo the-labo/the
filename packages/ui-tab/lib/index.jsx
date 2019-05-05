@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-tab
  * @typicalname uiTab
- * @version 15.4.0
+ * @version 15.4.2
  * @description Tab for the-components
  */
 'use strict'

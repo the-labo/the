@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-spin
  * @typicalname uiSpin
- * @version 15.4.0
+ * @version 15.4.2
  * @description Spin of the-components
  */
 'use strict'

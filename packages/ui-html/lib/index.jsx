@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-html
  * @typicalname uiHtml
- * @version 15.4.0
+ * @version 15.4.2
  * @description Html of the-components
  */
 'use strict'

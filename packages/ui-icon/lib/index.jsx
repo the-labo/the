@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-icon
  * @typicalname uiIcon
- * @version 15.4.0
+ * @version 15.4.2
  * @description Icon of the-components
  */
 'use strict'

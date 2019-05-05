@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-flick
  * @typicalname uiFlick
- * @version 15.4.0
+ * @version 15.4.2
  * @description Flickable viewer of the-components
  */
 'use strict'

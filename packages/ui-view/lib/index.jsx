@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-view
  * @typicalname uiView
- * @version 15.4.0
+ * @version 15.4.2
  * @description View of the-components
  */
 'use strict'

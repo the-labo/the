@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-paint
  * @typicalname uiPaint
- * @version 15.4.0
+ * @version 15.4.2
  * @description Hand write painting
  */
 'use strict'
