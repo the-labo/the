@@ -24,6 +24,7 @@ var/
 /packages/client/lib/index.js
 /packages/client/lib/mixins/index.js
 /packages/code/lib/ast/nodes/index.js
+/packages/code/lib/constants/index.js
 /packages/code/lib/helpers/index.js
 /packages/code/lib/index.js
 /packages/code/lib/parsers/index.js
@@ -74,6 +75,7 @@ var/
 /packages/handle/lib/index.js
 /packages/hash/lib/index.js
 /packages/jitter/lib/index.js
+/packages/jsdoc/lib/index.js
 /packages/lint/lib/helpers/index.js
 /packages/lint/lib/index.js
 /packages/lint/lib/rules/index.js

@@ -78,6 +78,7 @@ root for the-project
 - [handle](./packages/handle)
 - [hash](./packages/hash)
 - [jitter](./packages/jitter)
+- [jsdoc](./packages/jsdoc)
 - [lint](./packages/lint)
 - [loc](./packages/loc)
 - [mail](./packages/mail)

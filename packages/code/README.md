@@ -151,6 +151,7 @@ tryExample().catch((err) => console.error(err))
   - [.processJSSwitch(content)](./doc/api/api.md#module_@the-/code.processors.processJSSwitch)
   - [.processJSUnused(content)](./doc/api/api.md#module_@the-/code.processors.processJSUnused)
   - [.processJSXAttribute(content)](./doc/api/api.md#module_@the-/code.processors.processJSXAttribute)
+  - [.processPackageJSON()](./doc/api/api.md#module_@the-/code.processors.processPackageJSON)
   - [.processYAML(content)](./doc/api/api.md#module_@the-/code.processors.processYAML)
 - module:@the-/code.TheCode
   - [#format(pattern,options)](./doc/api/api.md#module_@the-/code.TheCode#format)

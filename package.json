@@ -51,7 +51,7 @@
     "@the-/eslint-config-standard-jsx": "^15.4.2",
     "@the-/refactor": "^15.4.1",
     "@the-/script-build": "^15.4.7",
-    "@the-/script-doc": "^15.2.0",
+    "@the-/script-doc": "^15.4.3",
     "@the-/script-test": "^15.4.0",
     "@the-/templates": "^15.4.11",
     "@the-/ui-demo": "^15.4.0",
