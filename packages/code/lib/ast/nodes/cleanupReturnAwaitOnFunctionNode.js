@@ -32,10 +32,10 @@ function cleanupReturnAwaitOnFunctionNode(FunctionNode, { get, replace }) {
   const Returns = finder.findByTypes(FunctionNode, [NodeTypes.ReturnStatement])
   for (const Return of Returns) {
     if (TryReturns.includes(Return)) {
-      return
+      continue
     }
     if (!Return.argument) {
-      return
+      continue
     }
     const isAwait = Return.argument.type === 'AwaitExpression'
     if (isAwait) {

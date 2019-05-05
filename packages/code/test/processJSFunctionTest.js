@@ -59,6 +59,29 @@ class X {
       `,
     )
   })
+
+  it('Return await on class methods 2', async () => {
+    equal(
+      await processJSFunction(`
+class J {
+  async h () {
+    if (x>2) {
+      return
+    }
+    return await Promise.resolve(1)
+  } 
+}
+      `), `
+class J {
+  async h () {
+    if (x>2) {
+      return
+    }
+    return Promise.resolve(1)
+  } 
+}
+      `)
+  })
 })
 
 /* global describe, before, after, it */
