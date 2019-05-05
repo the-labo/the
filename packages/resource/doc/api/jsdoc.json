@@ -1,41 +1,36 @@
 [
   {
-    "description": "Base of the-resource",
     "id": "module:@the-/resource",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/resource",
+    "name": "@the-/resource",
+    "kind": "module",
+    "description": "Base of the-resource",
+    "version": "15.4.3",
+    "license": "MIT",
+    "typicalname": "resource",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/resource/lib"
     },
-    "name": "@the-/resource",
-    "order": 3,
-    "typicalname": "resource",
-    "version": "15.4.3"
+    "order": 3
   },
   {
-    "description": "Resource for the DB",
     "id": "module:@the-/resource.TheResource()",
-    "kind": "constructor",
     "longname": "module:@the-/resource.TheResource",
-    "memberof": "module:@the-/resource.TheResource",
     "name": "TheResource",
+    "kind": "constructor",
+    "description": "Resource for the DB",
+    "memberof": "module:@the-/resource.TheResource",
     "order": 6
   },
   {
-    "description": "Listen to create",
     "id": "listenToCreate",
-    "kind": "function",
     "longname": "listenToCreate",
-    "meta": {
-      "filename": "listenMix.js",
-      "lineno": 77,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
-    },
     "name": "listenToCreate",
-    "order": 17,
+    "kind": "function",
+    "scope": "global",
+    "description": "Listen to create",
     "params": [
       {
         "type": {
@@ -56,20 +51,20 @@
         "description": "close function"
       }
     ],
-    "scope": "global"
-  },
-  {
-    "description": "Listen to destroy",
-    "id": "listenToDestroy",
-    "kind": "function",
-    "longname": "listenToDestroy",
     "meta": {
+      "lineno": 77,
       "filename": "listenMix.js",
-      "lineno": 101,
       "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
     },
+    "order": 17
+  },
+  {
+    "id": "listenToDestroy",
+    "longname": "listenToDestroy",
     "name": "listenToDestroy",
-    "order": 18,
+    "kind": "function",
+    "scope": "global",
+    "description": "Listen to destroy",
     "params": [
       {
         "type": {
@@ -90,20 +85,20 @@
         "description": "close function"
       }
     ],
-    "scope": "global"
-  },
-  {
-    "description": "Listen to drop",
-    "id": "listenToDrop",
-    "kind": "function",
-    "longname": "listenToDrop",
     "meta": {
+      "lineno": 101,
       "filename": "listenMix.js",
-      "lineno": 138,
       "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
     },
+    "order": 18
+  },
+  {
+    "id": "listenToDrop",
+    "longname": "listenToDrop",
     "name": "listenToDrop",
-    "order": 19,
+    "kind": "function",
+    "scope": "global",
+    "description": "Listen to drop",
     "params": [
       {
         "type": {
@@ -124,20 +119,20 @@
         "description": "close function"
       }
     ],
-    "scope": "global"
-  },
-  {
-    "description": "Listen to update",
-    "id": "listenToUpdate",
-    "kind": "function",
-    "longname": "listenToUpdate",
     "meta": {
+      "lineno": 138,
       "filename": "listenMix.js",
-      "lineno": 152,
       "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
     },
+    "order": 19
+  },
+  {
+    "id": "listenToUpdate",
+    "longname": "listenToUpdate",
     "name": "listenToUpdate",
-    "order": 20,
+    "kind": "function",
+    "scope": "global",
+    "description": "Listen to update",
     "params": [
       {
         "type": {
@@ -158,21 +153,21 @@
         "description": "close function"
       }
     ],
-    "scope": "global"
+    "meta": {
+      "lineno": 152,
+      "filename": "listenMix.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+    },
+    "order": 20
   },
   {
-    "description": "Get ref of id",
     "id": "module:@the-/resource.TheResource#refOf",
-    "kind": "function",
     "longname": "module:@the-/resource.TheResource#refOf",
-    "memberof": "module:@the-/resource.TheResource",
-    "meta": {
-      "filename": "TheResource.js",
-      "lineno": 64,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib"
-    },
     "name": "refOf",
-    "order": 9,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get ref of id",
+    "memberof": "module:@the-/resource.TheResource",
     "params": [
       {
         "type": {
@@ -195,22 +190,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Create empty list",
-    "id": "module:@the-/resource.TheResource#emptyList",
-    "kind": "function",
-    "longname": "module:@the-/resource.TheResource#emptyList",
-    "memberof": "module:@the-/resource.TheResource",
     "meta": {
+      "lineno": 64,
       "filename": "TheResource.js",
-      "lineno": 79,
       "path": "/Users/okuni/Projects/the/packages/resource/lib"
     },
+    "order": 9
+  },
+  {
+    "id": "module:@the-/resource.TheResource#emptyList",
+    "longname": "module:@the-/resource.TheResource#emptyList",
     "name": "emptyList",
-    "order": 10,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Create empty list",
+    "memberof": "module:@the-/resource.TheResource",
     "params": [],
     "returns": [
       {
@@ -221,22 +215,22 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Get invalidated attributes",
-    "id": "module:@the-/resource.TheResource#invalidated",
-    "kind": "function",
-    "longname": "module:@the-/resource.TheResource#invalidated",
-    "memberof": "module:@the-/resource.TheResource",
     "meta": {
+      "lineno": 79,
       "filename": "TheResource.js",
-      "lineno": 88,
       "path": "/Users/okuni/Projects/the/packages/resource/lib"
     },
+    "async": true,
+    "order": 10
+  },
+  {
+    "id": "module:@the-/resource.TheResource#invalidated",
+    "longname": "module:@the-/resource.TheResource#invalidated",
     "name": "invalidated",
-    "order": 11,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get invalidated attributes",
+    "memberof": "module:@the-/resource.TheResource",
     "params": [
       {
         "type": {
@@ -256,22 +250,22 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Refresh clay entity",
-    "id": "module:@the-/resource.TheResource#refresh",
-    "kind": "function",
-    "longname": "module:@the-/resource.TheResource#refresh",
-    "memberof": "module:@the-/resource.TheResource",
     "meta": {
+      "lineno": 88,
       "filename": "TheResource.js",
-      "lineno": 97,
       "path": "/Users/okuni/Projects/the/packages/resource/lib"
     },
+    "async": true,
+    "order": 11
+  },
+  {
+    "id": "module:@the-/resource.TheResource#refresh",
+    "longname": "module:@the-/resource.TheResource#refresh",
     "name": "refresh",
-    "order": 12,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Refresh clay entity",
+    "memberof": "module:@the-/resource.TheResource",
     "params": [
       {
         "type": {
@@ -291,22 +285,22 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 97,
+      "filename": "TheResource.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+    },
+    "async": true,
+    "order": 12
   },
   {
-    "async": true,
-    "description": "Refresh all",
     "id": "module:@the-/resource.TheResource#refreshAll",
-    "kind": "function",
     "longname": "module:@the-/resource.TheResource#refreshAll",
-    "memberof": "module:@the-/resource.TheResource",
-    "meta": {
-      "filename": "TheResource.js",
-      "lineno": 124,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib"
-    },
     "name": "refreshAll",
-    "order": 13,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Refresh all",
+    "memberof": "module:@the-/resource.TheResource",
     "params": [],
     "returns": [
       {
@@ -317,22 +311,22 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Resave all",
-    "id": "module:@the-/resource.TheResource#resaveAll",
-    "kind": "function",
-    "longname": "module:@the-/resource.TheResource#resaveAll",
-    "memberof": "module:@the-/resource.TheResource",
     "meta": {
+      "lineno": 124,
       "filename": "TheResource.js",
-      "lineno": 134,
       "path": "/Users/okuni/Projects/the/packages/resource/lib"
     },
+    "async": true,
+    "order": 13
+  },
+  {
+    "id": "module:@the-/resource.TheResource#resaveAll",
+    "longname": "module:@the-/resource.TheResource#resaveAll",
     "name": "resaveAll",
-    "order": 14,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Resave all",
+    "memberof": "module:@the-/resource.TheResource",
     "params": [],
     "returns": [
       {
@@ -343,9 +337,20 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 134,
+      "filename": "TheResource.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+    },
+    "async": true,
+    "order": 14
   },
   {
+    "id": "module:@the-/resource.TheResource",
+    "longname": "module:@the-/resource.TheResource",
+    "name": "TheResource",
+    "kind": "class",
+    "scope": "static",
     "augments": [
       "TheResourceBase",
       "ClayResource",
@@ -353,96 +358,86 @@
       "module:@the-/resource.mixins.queueMix~QueueMixed",
       "module:@the-/resource.mixins.writeOnceMix~WriteOnceMixed"
     ],
-    "id": "module:@the-/resource.TheResource",
-    "kind": "class",
-    "longname": "module:@the-/resource.TheResource",
     "memberof": "module:@the-/resource",
     "meta": {
-      "filename": "TheResource.js",
       "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib"
-    },
-    "name": "TheResource",
-    "order": 5,
-    "scope": "static"
-  },
-  {
-    "access": "protected",
-    "id": "module:@the-/resource.TheResourceBase",
-    "kind": "class",
-    "longname": "module:@the-/resource.TheResourceBase",
-    "memberof": "module:@the-/resource",
-    "meta": {
       "filename": "TheResource.js",
-      "lineno": 18,
       "path": "/Users/okuni/Projects/the/packages/resource/lib"
     },
-    "name": "TheResourceBase",
-    "order": 7,
-    "scope": "static"
+    "order": 5
   },
   {
+    "id": "module:@the-/resource.TheResourceBase",
+    "longname": "module:@the-/resource.TheResourceBase",
+    "name": "TheResourceBase",
+    "kind": "class",
+    "scope": "static",
+    "memberof": "module:@the-/resource",
+    "access": "protected",
+    "meta": {
+      "lineno": 18,
+      "filename": "TheResource.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "module:@the-/resource.TheResource.cascaded",
+    "longname": "module:@the-/resource.TheResource.cascaded",
+    "name": "cascaded",
+    "kind": "member",
+    "scope": "static",
     "description": "Cascade destroy condition",
+    "memberof": "module:@the-/resource.TheResource",
+    "params": [],
     "examples": [
       "class MyResource extends TheResource {\n     get cascaded () {\n       return { User: (ref) => ({user: {$ref: ref}}) }\n     }\n   }"
     ],
-    "id": "module:@the-/resource.TheResource.cascaded",
-    "kind": "member",
-    "longname": "module:@the-/resource.TheResource.cascaded",
-    "memberof": "module:@the-/resource.TheResource",
     "meta": {
-      "filename": "TheResource.js",
       "lineno": 39,
+      "filename": "TheResource.js",
       "path": "/Users/okuni/Projects/the/packages/resource/lib"
     },
-    "name": "cascaded",
-    "order": 8,
-    "params": [],
-    "scope": "static"
+    "order": 8
   },
   {
-    "description": "Data types",
     "id": "module:@the-/resource.DataTypes",
-    "kind": "namespace",
     "longname": "module:@the-/resource.DataTypes",
+    "name": "DataTypes",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Data types",
     "memberof": "module:@the-/resource",
     "meta": {
-      "filename": "DataTypes.js",
       "lineno": 1,
+      "filename": "DataTypes.js",
       "path": "/Users/okuni/Projects/the/packages/resource/lib"
     },
-    "name": "DataTypes",
-    "order": 1,
-    "scope": "static"
+    "order": 1
   },
   {
-    "description": "Mixin functions",
     "id": "module:@the-/resource.mixins",
-    "kind": "namespace",
     "longname": "module:@the-/resource.mixins",
+    "name": "mixins",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Mixin functions",
     "memberof": "module:@the-/resource",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
     },
-    "name": "mixins",
-    "order": 15,
-    "scope": "static"
+    "order": 15
   },
   {
-    "description": "Create a TheResource instance",
     "id": "module:@the-/resource.create",
-    "kind": "function",
     "longname": "module:@the-/resource.create",
-    "memberof": "module:@the-/resource",
-    "meta": {
-      "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib"
-    },
     "name": "create",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheResource instance",
+    "memberof": "module:@the-/resource",
     "params": [
       {
         "type": {
@@ -463,35 +458,35 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link module:@the-/resource.create}",
-    "id": "module:@the-/resource.default",
-    "kind": "function",
-    "longname": "module:@the-/resource.default",
-    "memberof": "module:@the-/resource",
     "meta": {
-      "filename": "default.js",
       "lineno": 1,
+      "filename": "create.js",
       "path": "/Users/okuni/Projects/the/packages/resource/lib"
     },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/resource.default",
+    "longname": "module:@the-/resource.default",
     "name": "default",
-    "order": 2,
-    "scope": "static"
+    "kind": "function",
+    "scope": "static",
+    "description": "Alias of {@link module:@the-/resource.create}",
+    "memberof": "module:@the-/resource",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+    },
+    "order": 2
   },
   {
     "id": "module:@the-/resource.isResourceClass",
-    "kind": "function",
     "longname": "module:@the-/resource.isResourceClass",
-    "memberof": "module:@the-/resource",
-    "meta": {
-      "filename": "isResourceClass.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib"
-    },
     "name": "isResourceClass",
-    "order": 4,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/resource",
     "returns": [
       {
         "type": {
@@ -501,21 +496,21 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "isResourceClass.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+    },
+    "order": 4
   },
   {
-    "description": "Mixins for listen",
     "id": "module:@the-/resource.mixins.listenMix",
-    "kind": "function",
     "longname": "module:@the-/resource.mixins.listenMix",
-    "memberof": "module:@the-/resource.mixins",
-    "meta": {
-      "filename": "listenMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
-    },
     "name": "listenMix",
-    "order": 16,
+    "kind": "function",
+    "scope": "static",
+    "description": "Mixins for listen",
+    "memberof": "module:@the-/resource.mixins",
     "params": [
       {
         "type": {
@@ -536,21 +531,21 @@
         "description": "Mixed class"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "listenMix.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+    },
+    "order": 16
   },
   {
-    "description": "Mixin for queue",
     "id": "module:@the-/resource.mixins.queueMix",
-    "kind": "function",
     "longname": "module:@the-/resource.mixins.queueMix",
-    "memberof": "module:@the-/resource.mixins",
-    "meta": {
-      "filename": "queueMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
-    },
     "name": "queueMix",
-    "order": 21,
+    "kind": "function",
+    "scope": "static",
+    "description": "Mixin for queue",
+    "memberof": "module:@the-/resource.mixins",
     "params": [
       {
         "type": {
@@ -571,21 +566,21 @@
         "description": "Mixed class"
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Mixin for writeOnce",
-    "id": "module:@the-/resource.mixins.writeOnceMix",
-    "kind": "function",
-    "longname": "module:@the-/resource.mixins.writeOnceMix",
-    "memberof": "module:@the-/resource.mixins",
     "meta": {
-      "filename": "writeOnceMix.js",
       "lineno": 1,
+      "filename": "queueMix.js",
       "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
     },
+    "order": 21
+  },
+  {
+    "id": "module:@the-/resource.mixins.writeOnceMix",
+    "longname": "module:@the-/resource.mixins.writeOnceMix",
     "name": "writeOnceMix",
-    "order": 23,
+    "kind": "function",
+    "scope": "static",
+    "description": "Mixin for writeOnce",
+    "memberof": "module:@the-/resource.mixins",
     "params": [
       {
         "type": {
@@ -605,34 +600,39 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "writeOnceMix.js",
+      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+    },
+    "order": 23
   },
   {
     "id": "module:@the-/resource.mixins.queueMix~QueueMixed",
-    "kind": "class",
     "longname": "module:@the-/resource.mixins.queueMix~QueueMixed",
+    "name": "QueueMixed",
+    "kind": "class",
+    "scope": "inner",
     "memberof": "module:@the-/resource.mixins.queueMix",
     "meta": {
-      "filename": "queueMix.js",
       "lineno": 18,
+      "filename": "queueMix.js",
       "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
     },
-    "name": "QueueMixed",
-    "order": 22,
-    "scope": "inner"
+    "order": 22
   },
   {
     "id": "module:@the-/resource.mixins.writeOnceMix~WriteOnce",
-    "kind": "class",
     "longname": "module:@the-/resource.mixins.writeOnceMix~WriteOnce",
+    "name": "WriteOnce",
+    "kind": "class",
+    "scope": "inner",
     "memberof": "module:@the-/resource.mixins.writeOnceMix",
     "meta": {
-      "filename": "writeOnceMix.js",
       "lineno": 16,
+      "filename": "writeOnceMix.js",
       "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
     },
-    "name": "WriteOnce",
-    "order": 24,
-    "scope": "inner"
+    "order": 24
   }
 ]

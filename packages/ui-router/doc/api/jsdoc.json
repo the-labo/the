@@ -1,61 +1,61 @@
 [
   {
-    "description": "Router of the-components",
     "id": "module:@the-/ui-router",
-    "kind": "module",
     "longname": "module:@the-/ui-router",
-    "meta": {
-      "filename": "index.jsx",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-router/lib"
-    },
     "name": "@the-/ui-router",
-    "order": 0,
-    "typicalname": "uiRouter",
-    "version": "15.4.0"
-  },
-  {
+    "kind": "module",
     "description": "Router of the-components",
+    "version": "15.4.2",
+    "typicalname": "uiRouter",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-router/lib"
+    },
+    "order": 0
+  },
+  {
     "id": "TheRouter",
-    "kind": "class",
     "longname": "TheRouter",
-    "meta": {
-      "filename": "TheRouter.jsx",
-      "lineno": 16,
-      "path": "/Users/okuni/Projects/the/packages/ui-router/lib"
-    },
     "name": "TheRouter",
-    "order": 1,
-    "scope": "global"
-  },
-  {
-    "description": "Style for TheRouter",
-    "id": "TheRouterStyle",
-    "kind": "function",
-    "longname": "TheRouterStyle",
+    "kind": "class",
+    "scope": "global",
+    "description": "Router of the-components",
     "meta": {
-      "filename": "TheRouterStyle.jsx",
-      "lineno": 9,
+      "lineno": 16,
+      "filename": "TheRouter.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-router/lib"
     },
-    "name": "TheRouterStyle",
-    "order": 2,
-    "params": [],
-    "scope": "global"
+    "order": 1
   },
   {
-    "description": "Style options",
+    "id": "TheRouterStyle",
+    "longname": "TheRouterStyle",
+    "name": "TheRouterStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheRouter",
+    "params": [],
+    "meta": {
+      "lineno": 9,
+      "filename": "TheRouterStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-router/lib"
+    },
+    "order": 2
+  },
+  {
     "id": "TheRouterStyle.propTypes.options",
-    "kind": "member",
     "longname": "TheRouterStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
     "memberof": "TheRouterStyle.propTypes",
     "meta": {
-      "filename": "TheRouterStyle.jsx",
       "lineno": 20,
+      "filename": "TheRouterStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-router/lib"
     },
-    "name": "options",
-    "order": 3,
-    "scope": "static"
+    "order": 3
   }
 ]

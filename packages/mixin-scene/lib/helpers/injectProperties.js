@@ -1,4 +1,5 @@
 /**
+ * @memberof module:@the-/mixin-scene.helpers
  * @function injectProperties
  * @param {function()} Class
  * @returns {function()} Injected Class

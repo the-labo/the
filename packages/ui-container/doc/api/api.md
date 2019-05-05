@@ -29,7 +29,7 @@
 ## @the-/ui-container
 Container of the-components
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 <a name="TheContainer"></a>
 
 ## TheContainer
@@ -41,4 +41,4 @@ Container of the-components
 ## TheContainerStyle()
 Style for TheContainer
 
-**Kind**: global function
+**Kind**: global function  

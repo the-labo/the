@@ -1,5 +1,6 @@
 /**
  * Define as class mixin
+ * @memberof module:@the-/mixin-scene.helpers
  * @function asClassMixin
  */
 'use strict'

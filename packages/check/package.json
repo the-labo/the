@@ -1,4 +1,7 @@
 {
+  "name": "@the-/check",
+  "description": "Check utility for the-framework",
+  "version": "15.5.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -21,7 +24,6 @@
     "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.0"
   },
-  "description": "Check utility for the-framework",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -34,7 +36,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/check",
   "publishConfig": {
     "access": "public"
   },
@@ -45,6 +46,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.5.0"
+  }
 }

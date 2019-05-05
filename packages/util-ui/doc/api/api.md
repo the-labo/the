@@ -5,7 +5,7 @@
 ## @the-/util-ui
 Utility for the-components
 
-**Version**: 15.4.1  
+**Version**: 15.4.2  
 **License**: MIT  
 
 * [@the-/util-ui](#module_@the-/util-ui)
@@ -164,3 +164,4 @@ Toggle class on document body
 | --- | --- | --- |
 | className | <code>string</code> | Class name to toggle |
 | [state=] | <code>boolean</code> | Enabled or not |
+

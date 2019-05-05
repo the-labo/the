@@ -24,7 +24,7 @@
 ## @the-/scope
 State scope for the-store
 
-**Version**: 15.4.1  
+**Version**: 15.4.2  
 **License**: MIT  
 
 * [@the-/scope](#module_@the-/scope)
@@ -418,4 +418,5 @@ Reset to values
 
 | Param | Type |
 | --- | --- |
-| values | <code>Object</code> |
+| values | <code>Object</code> | 
+

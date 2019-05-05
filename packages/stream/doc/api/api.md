@@ -5,7 +5,7 @@
 ## @the-/stream
 Base of the streams
 
-**Version**: 15.4.1  
+**Version**: 15.4.2  
 **License**: MIT  
 
 * [@the-/stream](#module_@the-/stream)
@@ -76,4 +76,4 @@ Helper functions
 #### helpers.generatorFromReadable()
 Create generator from readable
 
-**Kind**: static method of [<code>helpers</code>](#module_@the-/stream.helpers)
+**Kind**: static method of [<code>helpers</code>](#module_@the-/stream.helpers)  

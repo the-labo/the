@@ -5,7 +5,7 @@
 ## @the-/util-path
 Utility for file path
 
-**Version**: 15.4.1  
+**Version**: 15.4.2  
 **License**: MIT  
 <a name="module_@the-/util-path.findupDir"></a>
 
@@ -17,3 +17,4 @@ Find up directory contains path
 | Param | Type | Description |
 | --- | --- | --- |
 | basedir | <code>string</code> | Base directory |
+

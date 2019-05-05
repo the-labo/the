@@ -32,7 +32,7 @@
 ## @the-/ui-section
 Section of the-components
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 <a name="TheAccordionSection"></a>
 
 ## TheAccordionSection
@@ -50,4 +50,4 @@ Section of the-components
 ## TheSectionStyle()
 Style for TheSection
 
-**Kind**: global function
+**Kind**: global function  

@@ -5,7 +5,7 @@
 ## @the-/error
 Error for the-framework
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 **License**: MIT  
 
 * [@the-/error](#module_@the-/error)
@@ -160,4 +160,4 @@ Create a TheError instance
 Define an error class
 
 **Kind**: static method of [<code>@the-/error</code>](#module_@the-/error)  
-**Returns**: <code>function</code> - Error class
+**Returns**: <code>function</code> - Error class  

@@ -9,7 +9,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.0",
+    "@the-/check": "^15.5.1",
     "debug": "^4.1.1"
   },
   "description": "Mixins for stream",

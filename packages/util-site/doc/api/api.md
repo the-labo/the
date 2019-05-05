@@ -74,7 +74,7 @@
 ## @the-/util-site
 Utility for site
 
-**Version**: 15.4.0  
+**Version**: 15.4.4  
 **License**: MIT  
 <a name="appendQueryToSearch"></a>
 
@@ -285,3 +285,4 @@ User name for
 | --- | --- | --- | --- |
 | name | <code>string</code> |  | Name for seat |
 | [bytes] | <code>number</code> | <code>4</code> | Length of byte for hash |
+

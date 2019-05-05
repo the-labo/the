@@ -101,55 +101,19 @@ tryExample().catch((err) => console.error(err))
 
 
 - global
-  - [addEntities(entities,options)](./doc/api/api.md#addEntities)
-  - [addEntity(entity,options)](./doc/api/api.md#addEntity)
-  - [addTargets(targets)](./doc/api/api.md#addTargets)
   - [asClassMixin()](./doc/api/api.md#asClassMixin)
-  - [busyFor(duration)](./doc/api/api.md#busyFor)
-  - [busyWhile(task)](./doc/api/api.md#busyWhile)
   - [changeLocationTo(href)](./doc/api/api.md#changeLocationTo)
-  - [deleteEntity(entity)](./doc/api/api.md#deleteEntity)
-  - [getEntities()](./doc/api/api.md#getEntities)
-  - [getEntry(options)](./doc/api/api.md#getEntry)
-  - [getFilter()](./doc/api/api.md#getFilter)
   - [getId()](./doc/api/api.md#getId)
-  - [getLimit()](./doc/api/api.md#getLimit)
   - [getLocationHash()](./doc/api/api.md#getLocationHash)
-  - [getPage()](./doc/api/api.md#getPage)
   - [getQueryFromSearch(search)](./doc/api/api.md#getQueryFromSearch)
-  - [getTargetIds()](./doc/api/api.md#getTargetIds)
-  - [getTargetRefs()](./doc/api/api.md#getTargetRefs)
-  - [getTargets()](./doc/api/api.md#getTargets)
-  - [goBack()](./doc/api/api.md#goBack)
-  - [hasEntryErrorFor(name)](./doc/api/api.md#hasEntryErrorFor)
-  - [ifReady(task)](./doc/api/api.md#ifReady)
   - [injectProperties(Class)](./doc/api/api.md#injectProperties)
-  - [isBusy()](./doc/api/api.md#isBusy)
   - [isKnownId(id)](./doc/api/api.md#isKnownId)
   - [mergeQueryToSearch(query)](./doc/api/api.md#mergeQueryToSearch)
-  - [nextLimit()](./doc/api/api.md#nextLimit)
-  - [processEntry(handler)](./doc/api/api.md#processEntry)
   - [queryWithSearch(search)](./doc/api/api.md#queryWithSearch)
-  - [readyWhen(task)](./doc/api/api.md#readyWhen)
-  - [receiveEntity(entity,options)](./doc/api/api.md#receiveEntity)
   - [reloadLocation()](./doc/api/api.md#reloadLocation)
   - [replaceHistoryByQuery(query)](./doc/api/api.md#replaceHistoryByQuery)
-  - [reset(queues)](./doc/api/api.md#reset)
-  - [resetEntry()](./doc/api/api.md#resetEntry)
   - [resultFor(action)](./doc/api/api.md#resultFor)
-  - [setEntry(values)](./doc/api/api.md#setEntry)
-  - [setEntryErrors(errors)](./doc/api/api.md#setEntryErrors)
-  - [setFilter(filter)](./doc/api/api.md#setFilter)
-  - [setFilterByQ()](./doc/api/api.md#setFilterByQ)
-  - [setLimit(limit)](./doc/api/api.md#setLimit)
   - [setLocationHash(hash)](./doc/api/api.md#setLocationHash)
-  - [showError(message)](./doc/api/api.md#showError)
-  - [showInfo(message)](./doc/api/api.md#showInfo)
-  - [showWarn(message)](./doc/api/api.md#showWarn)
-  - [unlessReady(task)](./doc/api/api.md#unlessReady)
-  - [updateEntity(entity)](./doc/api/api.md#updateEntity)
-  - [updateToNextLimit()](./doc/api/api.md#updateToNextLimit)
-  - [waitWhileBusy()](./doc/api/api.md#waitWhileBusy)
 - module:@the-/mixin-scene
   - [.bindDefaults()](./doc/api/api.md#module_@the-/mixin-scene.bindDefaults)
   - [.bindScope()](./doc/api/api.md#module_@the-/mixin-scene.bindScope)
@@ -174,6 +138,76 @@ tryExample().catch((err) => console.error(err))
   - [.withValues(Class)](./doc/api/api.md#module_@the-/mixin-scene.withValues)
 - module:@the-/mixin-scene.helpers
   - [.asMethodWrap()](./doc/api/api.md#module_@the-/mixin-scene.helpers.asMethodWrap)
+- module:@the-/mixin-scene.siteToast
+  - [~SiteToastMixed](./doc/api/api.md#module_@the-/mixin-scene.siteToast~SiteToastMixed)
+- module:@the-/mixin-scene.siteToast~SiteToastMixed
+  - [.reset(queues)](./doc/api/api.md#module_@the-/mixin-scene.siteToast~SiteToastMixed.reset)
+  - [.showError(message)](./doc/api/api.md#module_@the-/mixin-scene.siteToast~SiteToastMixed.showError)
+  - [.showInfo(message)](./doc/api/api.md#module_@the-/mixin-scene.siteToast~SiteToastMixed.showInfo)
+  - [.showWarn(message)](./doc/api/api.md#module_@the-/mixin-scene.siteToast~SiteToastMixed.showWarn)
+- module:@the-/mixin-scene.withBack
+  - [~WithBackMixed](./doc/api/api.md#module_@the-/mixin-scene.withBack~WithBackMixed)
+- module:@the-/mixin-scene.withBack~WithBackMixed
+  - [.goBack()](./doc/api/api.md#module_@the-/mixin-scene.withBack~WithBackMixed.goBack)
+- module:@the-/mixin-scene.withBusy.WithBusyMixed
+  - [.busyFor(duration)](./doc/api/api.md#module_@the-/mixin-scene.withBusy.WithBusyMixed.busyFor)
+  - [.busyWhile(task)](./doc/api/api.md#module_@the-/mixin-scene.withBusy.WithBusyMixed.busyWhile)
+  - [.isBusy()](./doc/api/api.md#module_@the-/mixin-scene.withBusy.WithBusyMixed.isBusy)
+  - [.waitWhileBusy()](./doc/api/api.md#module_@the-/mixin-scene.withBusy.WithBusyMixed.waitWhileBusy)
+- module:@the-/mixin-scene.withBusy
+  - [~WithBusyMixed](./doc/api/api.md#module_@the-/mixin-scene.withBusy~WithBusyMixed)
+- module:@the-/mixin-scene.withEntities
+  - [~WithEntities](./doc/api/api.md#module_@the-/mixin-scene.withEntities~WithEntities)
+- module:@the-/mixin-scene.withEntities~WithEntities
+  - [.addEntities(entities,options)](./doc/api/api.md#module_@the-/mixin-scene.withEntities~WithEntities.addEntities)
+  - [.addEntity(entity,options)](./doc/api/api.md#module_@the-/mixin-scene.withEntities~WithEntities.addEntity)
+  - [.deleteEntity(entity)](./doc/api/api.md#module_@the-/mixin-scene.withEntities~WithEntities.deleteEntity)
+  - [.getEntities()](./doc/api/api.md#module_@the-/mixin-scene.withEntities~WithEntities.getEntities)
+  - [.receiveEntity(entity,options)](./doc/api/api.md#module_@the-/mixin-scene.withEntities~WithEntities.receiveEntity)
+  - [.updateEntity(entity)](./doc/api/api.md#module_@the-/mixin-scene.withEntities~WithEntities.updateEntity)
+- module:@the-/mixin-scene.withEntry
+  - [~WithEntryMixed](./doc/api/api.md#module_@the-/mixin-scene.withEntry~WithEntryMixed)
+- module:@the-/mixin-scene.withEntry~WithEntryMixed
+  - [.getEntry(options)](./doc/api/api.md#module_@the-/mixin-scene.withEntry~WithEntryMixed.getEntry)
+  - [.hasEntryErrorFor(name)](./doc/api/api.md#module_@the-/mixin-scene.withEntry~WithEntryMixed.hasEntryErrorFor)
+  - [.processEntry(handler)](./doc/api/api.md#module_@the-/mixin-scene.withEntry~WithEntryMixed.processEntry)
+  - [.resetEntry()](./doc/api/api.md#module_@the-/mixin-scene.withEntry~WithEntryMixed.resetEntry)
+  - [.setEntry(newValues)](./doc/api/api.md#module_@the-/mixin-scene.withEntry~WithEntryMixed.setEntry)
+  - [.setEntryErrors(errors)](./doc/api/api.md#module_@the-/mixin-scene.withEntry~WithEntryMixed.setEntryErrors)
+- module:@the-/mixin-scene.withFilter
+  - [~WithFilterMixed](./doc/api/api.md#module_@the-/mixin-scene.withFilter~WithFilterMixed)
+- module:@the-/mixin-scene.withFilter~WithFilterMixed
+  - [.getFilter()](./doc/api/api.md#module_@the-/mixin-scene.withFilter~WithFilterMixed.getFilter)
+  - [.setFilter(filter)](./doc/api/api.md#module_@the-/mixin-scene.withFilter~WithFilterMixed.setFilter)
+  - [.setFilterByQ()](./doc/api/api.md#module_@the-/mixin-scene.withFilter~WithFilterMixed.setFilterByQ)
+- module:@the-/mixin-scene.withLimit
+  - [~WithLimitMixed](./doc/api/api.md#module_@the-/mixin-scene.withLimit~WithLimitMixed)
+- module:@the-/mixin-scene.withLimit~WithLimitMixed
+  - [.getLimit()](./doc/api/api.md#module_@the-/mixin-scene.withLimit~WithLimitMixed.getLimit)
+  - [.nextLimit()](./doc/api/api.md#module_@the-/mixin-scene.withLimit~WithLimitMixed.nextLimit)
+  - [.setLimit(limit)](./doc/api/api.md#module_@the-/mixin-scene.withLimit~WithLimitMixed.setLimit)
+  - [.updateToNextLimit()](./doc/api/api.md#module_@the-/mixin-scene.withLimit~WithLimitMixed.updateToNextLimit)
+- module:@the-/mixin-scene.withPage.WithPageMixed
+  - [.getPage()](./doc/api/api.md#module_@the-/mixin-scene.withPage.WithPageMixed.getPage)
+- module:@the-/mixin-scene.withPage
+  - [~WithPageMixed](./doc/api/api.md#module_@the-/mixin-scene.withPage~WithPageMixed)
+- module:@the-/mixin-scene.withReady
+  - [~WithReadyMixed](./doc/api/api.md#module_@the-/mixin-scene.withReady~WithReadyMixed)
+- module:@the-/mixin-scene.withReady~WithReadyMixed
+  - [.ifReady(task)](./doc/api/api.md#module_@the-/mixin-scene.withReady~WithReadyMixed.ifReady)
+  - [.readyWhen(task)](./doc/api/api.md#module_@the-/mixin-scene.withReady~WithReadyMixed.readyWhen)
+  - [.unlessReady(task)](./doc/api/api.md#module_@the-/mixin-scene.withReady~WithReadyMixed.unlessReady)
+- module:@the-/mixin-scene.withResult
+  - [~WithResultMixed](./doc/api/api.md#module_@the-/mixin-scene.withResult~WithResultMixed)
+- module:@the-/mixin-scene.withSort
+  - [~WithSortMixed](./doc/api/api.md#module_@the-/mixin-scene.withSort~WithSortMixed)
+- module:@the-/mixin-scene.withTargets
+  - [~WithTargetsMixed](./doc/api/api.md#module_@the-/mixin-scene.withTargets~WithTargetsMixed)
+- module:@the-/mixin-scene.withTargets~WithTargetsMixed
+  - [.addTargets(targets)](./doc/api/api.md#module_@the-/mixin-scene.withTargets~WithTargetsMixed.addTargets)
+  - [.getTargetIds()](./doc/api/api.md#module_@the-/mixin-scene.withTargets~WithTargetsMixed.getTargetIds)
+  - [.getTargetRefs()](./doc/api/api.md#module_@the-/mixin-scene.withTargets~WithTargetsMixed.getTargetRefs)
+  - [.getTargets()](./doc/api/api.md#module_@the-/mixin-scene.withTargets~WithTargetsMixed.getTargets)
 
 See [API Guide](./doc/api/api.md) for more detail
 

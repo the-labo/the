@@ -21,10 +21,10 @@
 ## @the-/ui-cycle
 Component with life cycle
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 <a name="TheCycle"></a>
 
 ## TheCycle
 Component with life cycle
 
-**Kind**: global class
+**Kind**: global class  

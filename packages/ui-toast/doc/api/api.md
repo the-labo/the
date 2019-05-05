@@ -32,7 +32,7 @@
 ## @the-/ui-toast
 Toast of the-components
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 <a name="TheToast"></a>
 
 ## TheToast
@@ -50,4 +50,4 @@ ToastGroup
 ## TheToastStyle()
 Style for TheToast
 
-**Kind**: global function
+**Kind**: global function  

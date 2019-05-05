@@ -1,32 +1,27 @@
 [
   {
-    "description": "Mixins for stream",
     "id": "module:@the-/mixin-stream",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/mixin-stream",
+    "name": "@the-/mixin-stream",
+    "kind": "module",
+    "description": "Mixins for stream",
+    "version": "15.4.2",
+    "license": "MIT",
+    "typicalname": "mixinStream",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-stream/lib"
     },
-    "name": "@the-/mixin-stream",
-    "order": 1,
-    "typicalname": "mixinStream",
-    "version": "15.4.0"
+    "order": 1
   },
   {
-    "description": "Compose multiple mixins into one",
     "id": "compose",
-    "kind": "function",
     "longname": "compose",
-    "meta": {
-      "filename": "compose.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mixin-stream/lib"
-    },
     "name": "compose",
-    "order": 0,
+    "kind": "function",
+    "scope": "global",
+    "description": "Compose multiple mixins into one",
     "params": [
       {
         "type": {
@@ -48,19 +43,19 @@
         "description": "Composed mixin"
       }
     ],
-    "scope": "global"
+    "meta": {
+      "lineno": 1,
+      "filename": "compose.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-stream/lib"
+    },
+    "order": 0
   },
   {
     "id": "withDebug",
-    "kind": "function",
     "longname": "withDebug",
-    "meta": {
-      "filename": "withDebug.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mixin-stream/lib"
-    },
     "name": "withDebug",
-    "order": 2,
+    "kind": "function",
+    "scope": "global",
     "params": [
       {
         "type": {
@@ -82,6 +77,11 @@
         "description": "Mixed class"
       }
     ],
-    "scope": "global"
+    "meta": {
+      "lineno": 1,
+      "filename": "withDebug.js",
+      "path": "/Users/okuni/Projects/the/packages/mixin-stream/lib"
+    },
+    "order": 2
   }
 ]

@@ -133,4 +133,4 @@ Create a TheMedia instance
 ### media.default()
 Alias of [create](#module_@the-/media.create)
 
-**Kind**: static method of [<code>@the-/media</code>](#module_@the-/media)
+**Kind**: static method of [<code>@the-/media</code>](#module_@the-/media)  

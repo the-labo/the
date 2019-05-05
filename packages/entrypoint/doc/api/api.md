@@ -42,7 +42,7 @@
 ## @the-/entrypoint
 Browser entrypoint for the-framework
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 **License**: MIT  
 <a name="mount"></a>
 
@@ -126,4 +126,4 @@ Register service workers
 ## createStyleElement() ⇒ <code>HTMLElement</code>
 Create Style element
 
-**Kind**: global function
+**Kind**: global function  

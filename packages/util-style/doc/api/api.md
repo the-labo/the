@@ -21,7 +21,7 @@
 ## @the-/util-style
 Utility for style
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 **License**: MIT  
 <a name="styleString"></a>
 
@@ -36,3 +36,4 @@ Convert style into style string
 | selector | <code>string</code> |  | Selector string |
 | style | <code>Object</code> |  | Style string |
 | [atRule] | <code>string</code> | <code>null</code> |  |
+

@@ -1,61 +1,61 @@
 [
   {
-    "description": "Dynamic meta attribute injector for the-components",
     "id": "module:@the-/ui-meta",
-    "kind": "module",
     "longname": "module:@the-/ui-meta",
-    "meta": {
-      "filename": "index.jsx",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-meta/lib"
-    },
     "name": "@the-/ui-meta",
-    "order": 0,
-    "typicalname": "uiMeta",
-    "version": "15.4.0"
-  },
-  {
+    "kind": "module",
     "description": "Dynamic meta attribute injector for the-components",
+    "version": "15.4.2",
+    "typicalname": "uiMeta",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-meta/lib"
+    },
+    "order": 0
+  },
+  {
     "id": "TheMeta",
-    "kind": "class",
     "longname": "TheMeta",
-    "meta": {
-      "filename": "TheMeta.jsx",
-      "lineno": 13,
-      "path": "/Users/okuni/Projects/the/packages/ui-meta/lib"
-    },
     "name": "TheMeta",
-    "order": 1,
-    "scope": "global"
+    "kind": "class",
+    "scope": "global",
+    "description": "Dynamic meta attribute injector for the-components",
+    "meta": {
+      "lineno": 13,
+      "filename": "TheMeta.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-meta/lib"
+    },
+    "order": 1
   },
   {
-    "description": "Render children",
     "id": "TheMeta.propTypes.render",
-    "kind": "member",
     "longname": "TheMeta.propTypes.render",
+    "name": "render",
+    "kind": "member",
+    "scope": "static",
+    "description": "Render children",
     "memberof": "TheMeta.propTypes",
     "meta": {
-      "filename": "TheMeta.jsx",
       "lineno": 89,
+      "filename": "TheMeta.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-meta/lib"
     },
-    "name": "render",
-    "order": 2,
-    "scope": "static"
+    "order": 2
   },
   {
-    "description": "Document title",
     "id": "TheMeta.propTypes.title",
-    "kind": "member",
     "longname": "TheMeta.propTypes.title",
+    "name": "title",
+    "kind": "member",
+    "scope": "static",
+    "description": "Document title",
     "memberof": "TheMeta.propTypes",
     "meta": {
-      "filename": "TheMeta.jsx",
       "lineno": 91,
+      "filename": "TheMeta.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-meta/lib"
     },
-    "name": "title",
-    "order": 3,
-    "scope": "static"
+    "order": 3
   }
 ]

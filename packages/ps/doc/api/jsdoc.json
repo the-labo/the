@@ -1,27 +1,26 @@
 [
   {
-    "description": "Process manager for the-framework",
     "id": "module:@the-/ps",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/ps",
+    "name": "@the-/ps",
+    "kind": "module",
+    "description": "Process manager for the-framework",
+    "version": "15.4.2",
+    "license": "MIT",
+    "typicalname": "ps",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/ps/lib"
     },
-    "name": "@the-/ps",
-    "order": 3,
-    "typicalname": "ps",
-    "version": "15.4.2"
+    "order": 3
   },
   {
     "id": "module:@the-/ps.ThePS()",
-    "kind": "constructor",
     "longname": "module:@the-/ps.ThePS",
-    "memberof": "module:@the-/ps.ThePS",
     "name": "ThePS",
-    "order": 5,
+    "kind": "constructor",
+    "memberof": "module:@the-/ps.ThePS",
     "params": [
       {
         "type": {
@@ -54,22 +53,17 @@
         "description": "Enable logs",
         "name": "options.logging"
       }
-    ]
+    ],
+    "order": 5
   },
   {
-    "async": true,
-    "description": "Generate pid and remove on exit.",
     "id": "module:@the-/ps.ThePS#acquire",
-    "kind": "function",
     "longname": "module:@the-/ps.ThePS#acquire",
-    "memberof": "module:@the-/ps.ThePS",
-    "meta": {
-      "filename": "ThePS.js",
-      "lineno": 75,
-      "path": "/Users/okuni/Projects/the/packages/ps/lib"
-    },
     "name": "acquire",
-    "order": 6,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Generate pid and remove on exit.",
+    "memberof": "module:@the-/ps.ThePS",
     "params": [],
     "returns": [
       {
@@ -80,50 +74,51 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 75,
+      "filename": "ThePS.js",
+      "path": "/Users/okuni/Projects/the/packages/ps/lib"
+    },
+    "async": true,
+    "order": 6
   },
   {
     "id": "module:@the-/ps.ThePS",
-    "kind": "class",
     "longname": "module:@the-/ps.ThePS",
-    "memberof": "module:@the-/ps",
-    "meta": {
-      "filename": "ThePS.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/ps/lib"
-    },
     "name": "ThePS",
-    "order": 4,
-    "scope": "static"
+    "kind": "class",
+    "scope": "static",
+    "memberof": "module:@the-/ps",
+    "meta": {
+      "lineno": 1,
+      "filename": "ThePS.js",
+      "path": "/Users/okuni/Projects/the/packages/ps/lib"
+    },
+    "order": 4
   },
   {
-    "description": "Acquire process",
     "id": "module:@the-/ps.acquire",
-    "kind": "function",
     "longname": "module:@the-/ps.acquire",
+    "name": "acquire",
+    "kind": "function",
+    "scope": "static",
+    "description": "Acquire process",
     "memberof": "module:@the-/ps",
     "meta": {
-      "filename": "acquire.js",
       "lineno": 1,
+      "filename": "acquire.js",
       "path": "/Users/okuni/Projects/the/packages/ps/lib"
     },
-    "name": "acquire",
-    "order": 0,
-    "scope": "static"
+    "order": 0
   },
   {
-    "description": "Create a ThePS instance",
     "id": "module:@the-/ps.create",
-    "kind": "function",
     "longname": "module:@the-/ps.create",
-    "memberof": "module:@the-/ps",
-    "meta": {
-      "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/ps/lib"
-    },
     "name": "create",
-    "order": 1,
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a ThePS instance",
+    "memberof": "module:@the-/ps",
     "params": [
       {
         "type": {
@@ -144,21 +139,26 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link module:@the-/ps.create}",
-    "id": "module:@the-/ps.default",
-    "kind": "function",
-    "longname": "module:@the-/ps.default",
-    "memberof": "module:@the-/ps",
     "meta": {
-      "filename": "default.js",
       "lineno": 1,
+      "filename": "create.js",
       "path": "/Users/okuni/Projects/the/packages/ps/lib"
     },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/ps.default",
+    "longname": "module:@the-/ps.default",
     "name": "default",
-    "order": 2,
-    "scope": "static"
+    "kind": "function",
+    "scope": "static",
+    "description": "Alias of {@link module:@the-/ps.create}",
+    "memberof": "module:@the-/ps",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/ps/lib"
+    },
+    "order": 2
   }
 ]

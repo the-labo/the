@@ -20,12 +20,12 @@
 ## @the-/mail
 Mail client for the-framework
 
-**Version**: 15.4.1  
+**Version**: 15.4.2  
 **License**: MIT  
 
 * [@the-/mail](#module_@the-/mail)
     * [.TheMail](#module_@the-/mail.TheMail)
-        * [.send()](#module_@the-/mail.TheMail+send) ⇒ <code>Promise</code>
+        * [.send(config)](#module_@the-/mail.TheMail+send) ⇒ <code>Promise</code>
     * [.helpers](#module_@the-/mail.helpers) : <code>object</code>
     * [.sending](#module_@the-/mail.sending) : <code>object</code>
         * [.sendMock()](#module_@the-/mail.sending.sendMock)
@@ -40,13 +40,14 @@ Mail client for the-framework
 **Kind**: static class of [<code>@the-/mail</code>](#module_@the-/mail)  
 <a name="module_@the-/mail.TheMail+send"></a>
 
-#### theMail.send() ⇒ <code>Promise</code>
+#### theMail.send(config) ⇒ <code>Promise</code>
 Send mail
 
 **Kind**: instance method of [<code>TheMail</code>](#module_@the-/mail.TheMail)  
 
 | Param | Type | Description |
 | --- | --- | --- |
+| config | <code>Object</code> |  |
 | config.from | <code>string</code> | From address |
 | config.to | <code>string</code> | To address |
 | config.subject | <code>string</code> | Mail subject |
@@ -104,4 +105,4 @@ Alias of [create](#module_@the-/mail.create)
 <a name="toLowerKeys"></a>
 
 ## toLowerKeys()
-**Kind**: global function
+**Kind**: global function  

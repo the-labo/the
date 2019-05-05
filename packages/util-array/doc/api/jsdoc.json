@@ -1,35 +1,27 @@
 [
   {
-    "description": "Array utility of the-framework",
     "id": "module:@the-/util-array",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/util-array",
+    "name": "@the-/util-array",
+    "kind": "module",
+    "description": "Array utility of the-framework",
+    "version": "15.4.2",
+    "license": "MIT",
+    "typicalname": "utilArray",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/util-array/lib"
     },
-    "name": "@the-/util-array",
-    "order": 0,
-    "typicalname": "utilArray",
-    "version": "15.4.1"
+    "order": 0
   },
   {
-    "description": "Map entries with key path",
-    "examples": [
-      "[{foo:{bar:10}}, {foo:{bar:20}}].map(keyPathMap('foo.bar'))"
-    ],
     "id": "keyPathMap",
-    "kind": "function",
     "longname": "keyPathMap",
-    "meta": {
-      "filename": "keyPathMap.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-array/lib"
-    },
     "name": "keyPathMap",
-    "order": 1,
+    "kind": "function",
+    "scope": "global",
+    "description": "Map entries with key path",
     "params": [
       {
         "type": {
@@ -52,6 +44,9 @@
         "name": "options"
       }
     ],
+    "examples": [
+      "[{foo:{bar:10}}, {foo:{bar:20}}].map(keyPathMap('foo.bar'))"
+    ],
     "returns": [
       {
         "type": {
@@ -61,23 +56,23 @@
         }
       }
     ],
-    "scope": "global"
+    "meta": {
+      "lineno": 1,
+      "filename": "keyPathMap.js",
+      "path": "/Users/okuni/Projects/the/packages/util-array/lib"
+    },
+    "order": 1
   },
   {
+    "id": "randomFind",
+    "longname": "randomFind",
+    "name": "randomFind",
+    "kind": "function",
+    "scope": "global",
     "description": "Find randomly",
     "examples": [
       "[1,2,3].find(randomFind())"
     ],
-    "id": "randomFind",
-    "kind": "function",
-    "longname": "randomFind",
-    "meta": {
-      "filename": "randomFind.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-array/lib"
-    },
-    "name": "randomFind",
-    "order": 2,
     "returns": [
       {
         "type": {
@@ -87,23 +82,23 @@
         }
       }
     ],
-    "scope": "global"
+    "meta": {
+      "lineno": 1,
+      "filename": "randomFind.js",
+      "path": "/Users/okuni/Projects/the/packages/util-array/lib"
+    },
+    "order": 2
   },
   {
+    "id": "shuffleSort",
+    "longname": "shuffleSort",
+    "name": "shuffleSort",
+    "kind": "function",
+    "scope": "global",
     "description": "Find randomly",
     "examples": [
       "[1,2,3].sort(shuffleSort())"
     ],
-    "id": "shuffleSort",
-    "kind": "function",
-    "longname": "shuffleSort",
-    "meta": {
-      "filename": "shuffleSort.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-array/lib"
-    },
-    "name": "shuffleSort",
-    "order": 3,
     "returns": [
       {
         "type": {
@@ -113,23 +108,20 @@
         }
       }
     ],
-    "scope": "global"
-  },
-  {
-    "description": "defineUniqueFilter",
-    "examples": [
-      "['a', 'b', 'a'].filter(uniqueFilter())"
-    ],
-    "id": "uniqueFilter",
-    "kind": "function",
-    "longname": "uniqueFilter",
     "meta": {
-      "filename": "uniqueFilter.js",
       "lineno": 1,
+      "filename": "shuffleSort.js",
       "path": "/Users/okuni/Projects/the/packages/util-array/lib"
     },
+    "order": 3
+  },
+  {
+    "id": "uniqueFilter",
+    "longname": "uniqueFilter",
     "name": "uniqueFilter",
-    "order": 4,
+    "kind": "function",
+    "scope": "global",
+    "description": "defineUniqueFilter",
     "params": [
       {
         "type": {
@@ -155,6 +147,9 @@
         "name": "options.by"
       }
     ],
+    "examples": [
+      "['a', 'b', 'a'].filter(uniqueFilter())"
+    ],
     "returns": [
       {
         "type": {
@@ -164,6 +159,11 @@
         }
       }
     ],
-    "scope": "global"
+    "meta": {
+      "lineno": 1,
+      "filename": "uniqueFilter.js",
+      "path": "/Users/okuni/Projects/the/packages/util-array/lib"
+    },
+    "order": 4
   }
 ]

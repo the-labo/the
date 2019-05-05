@@ -31,7 +31,7 @@
 ## @the-/driver-mongo
 Mongo driver for the-db
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 **License**: MIT  
 <a name="MongoDriver"></a>
 
@@ -59,4 +59,4 @@ Create a MongoDriver instance
 ## mongoMix()
 Mixin of mongodb
 
-**Kind**: global function
+**Kind**: global function  

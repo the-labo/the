@@ -1,7 +1,8 @@
 /**
  * withQuery mixin
- * @memberof module:@the-/mixin-scene
  * @function withQuery
+ * @deprecated
+ * @memberof module:@the-/mixin-scene
  * @param {function()} Class - Class to mix
  * @returns {function()} Mixed class
  */

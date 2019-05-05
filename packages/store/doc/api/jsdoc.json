@@ -1,28 +1,27 @@
 [
   {
-    "description": "Redux wrapper for the-framework",
     "id": "module:@the-/store",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/store",
+    "name": "@the-/store",
+    "kind": "module",
+    "description": "Redux wrapper for the-framework",
+    "version": "15.4.2",
+    "license": "MIT",
+    "typicalname": "store",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/store/lib"
     },
-    "name": "@the-/store",
-    "order": 3,
-    "typicalname": "store",
-    "version": "15.4.0"
+    "order": 3
   },
   {
-    "description": "Scoped redux store",
     "id": "module:@the-/store.TheStore()",
-    "kind": "constructor",
     "longname": "module:@the-/store.TheStore",
-    "memberof": "module:@the-/store.TheStore",
     "name": "TheStore",
-    "order": 5,
+    "kind": "constructor",
+    "description": "Scoped redux store",
+    "memberof": "module:@the-/store.TheStore",
     "params": [
       {
         "type": {
@@ -67,21 +66,17 @@
         "description": "Redux middleware functions",
         "name": "options.middlewares"
       }
-    ]
+    ],
+    "order": 5
   },
   {
-    "description": "Load a scope",
     "id": "module:@the-/store.TheStore#load",
-    "kind": "function",
     "longname": "module:@the-/store.TheStore#load",
-    "memberof": "module:@the-/store.TheStore",
-    "meta": {
-      "filename": "TheStore.js",
-      "lineno": 107,
-      "path": "/Users/okuni/Projects/the/packages/store/lib"
-    },
     "name": "load",
-    "order": 6,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Load a scope",
+    "memberof": "module:@the-/store.TheStore",
     "params": [
       {
         "type": {
@@ -113,53 +108,53 @@
         "description": "Loaded scope"
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 107,
+      "filename": "TheStore.js",
+      "path": "/Users/okuni/Projects/the/packages/store/lib"
+    },
+    "order": 6
   },
   {
-    "deprecated": true,
     "id": "module:@the-/store.TheStore#loadFromDefaults",
-    "kind": "function",
     "longname": "module:@the-/store.TheStore#loadFromDefaults",
-    "memberof": "module:@the-/store.TheStore",
-    "meta": {
-      "filename": "TheStore.js",
-      "lineno": 170,
-      "path": "/Users/okuni/Projects/the/packages/store/lib"
-    },
     "name": "loadFromDefaults",
-    "order": 7,
+    "kind": "function",
+    "scope": "instance",
+    "memberof": "module:@the-/store.TheStore",
     "params": [],
-    "scope": "instance"
-  },
-  {
     "deprecated": true,
-    "id": "module:@the-/store.TheStore#loadFromDefs",
-    "kind": "function",
-    "longname": "module:@the-/store.TheStore#loadFromDefs",
-    "memberof": "module:@the-/store.TheStore",
     "meta": {
+      "lineno": 170,
       "filename": "TheStore.js",
-      "lineno": 189,
       "path": "/Users/okuni/Projects/the/packages/store/lib"
     },
-    "name": "loadFromDefs",
-    "order": 8,
-    "params": [],
-    "scope": "instance"
+    "order": 7
   },
   {
-    "description": "Load scopes",
-    "id": "module:@the-/store.TheStore#loadScopesFromDefs",
+    "id": "module:@the-/store.TheStore#loadFromDefs",
+    "longname": "module:@the-/store.TheStore#loadFromDefs",
+    "name": "loadFromDefs",
     "kind": "function",
-    "longname": "module:@the-/store.TheStore#loadScopesFromDefs",
+    "scope": "instance",
     "memberof": "module:@the-/store.TheStore",
+    "params": [],
+    "deprecated": true,
     "meta": {
+      "lineno": 189,
       "filename": "TheStore.js",
-      "lineno": 201,
       "path": "/Users/okuni/Projects/the/packages/store/lib"
     },
+    "order": 8
+  },
+  {
+    "id": "module:@the-/store.TheStore#loadScopesFromDefs",
+    "longname": "module:@the-/store.TheStore#loadScopesFromDefs",
     "name": "loadScopesFromDefs",
-    "order": 9,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Load scopes",
+    "memberof": "module:@the-/store.TheStore",
     "params": [
       {
         "type": {
@@ -182,21 +177,21 @@
         "name": "options"
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Sub scribe store change",
-    "id": "module:@the-/store.TheStore#subscribe",
-    "kind": "function",
-    "longname": "module:@the-/store.TheStore#subscribe",
-    "memberof": "module:@the-/store.TheStore",
     "meta": {
+      "lineno": 201,
       "filename": "TheStore.js",
-      "lineno": 228,
       "path": "/Users/okuni/Projects/the/packages/store/lib"
     },
+    "order": 9
+  },
+  {
+    "id": "module:@the-/store.TheStore#subscribe",
+    "longname": "module:@the-/store.TheStore#subscribe",
     "name": "subscribe",
-    "order": 10,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Sub scribe store change",
+    "memberof": "module:@the-/store.TheStore",
     "params": [
       {
         "type": {
@@ -218,21 +213,21 @@
         "description": "- Unsubscribe function"
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Load sub scopes",
-    "id": "StoreScopeClass#load",
-    "kind": "function",
-    "longname": "StoreScopeClass#load",
-    "memberof": "StoreScopeClass",
     "meta": {
-      "filename": "toStoreScopeClass.js",
-      "lineno": 20,
+      "lineno": 228,
+      "filename": "TheStore.js",
       "path": "/Users/okuni/Projects/the/packages/store/lib"
     },
+    "order": 10
+  },
+  {
+    "id": "StoreScopeClass#load",
+    "longname": "StoreScopeClass#load",
     "name": "load",
-    "order": 12,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Load sub scopes",
+    "memberof": "StoreScopeClass",
     "params": [
       {
         "type": {
@@ -254,21 +249,21 @@
         "name": "names"
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Load sub scopes from scope class mapping",
-    "id": "StoreScopeClass#loadFromMapping",
-    "kind": "function",
-    "longname": "StoreScopeClass#loadFromMapping",
-    "memberof": "StoreScopeClass",
     "meta": {
+      "lineno": 20,
       "filename": "toStoreScopeClass.js",
-      "lineno": 29,
       "path": "/Users/okuni/Projects/the/packages/store/lib"
     },
+    "order": 12
+  },
+  {
+    "id": "StoreScopeClass#loadFromMapping",
+    "longname": "StoreScopeClass#loadFromMapping",
     "name": "loadFromMapping",
-    "order": 13,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Load sub scopes from scope class mapping",
+    "memberof": "StoreScopeClass",
     "params": [
       {
         "type": {
@@ -290,49 +285,49 @@
         "description": "Loaded scopes"
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 29,
+      "filename": "toStoreScopeClass.js",
+      "path": "/Users/okuni/Projects/the/packages/store/lib"
+    },
+    "order": 13
   },
   {
     "id": "module:@the-/store.TheStore",
-    "kind": "class",
     "longname": "module:@the-/store.TheStore",
+    "name": "TheStore",
+    "kind": "class",
+    "scope": "static",
     "memberof": "module:@the-/store",
     "meta": {
-      "filename": "TheStore.js",
       "lineno": 1,
+      "filename": "TheStore.js",
       "path": "/Users/okuni/Projects/the/packages/store/lib"
     },
-    "name": "TheStore",
-    "order": 4,
-    "scope": "static"
+    "order": 4
   },
   {
     "id": "module:@the-/store.helpers",
-    "kind": "namespace",
     "longname": "module:@the-/store.helpers",
+    "name": "helpers",
+    "kind": "namespace",
+    "scope": "static",
     "memberof": "module:@the-/store",
     "meta": {
-      "filename": "helpers.js",
       "lineno": 1,
+      "filename": "helpers.js",
       "path": "/Users/okuni/Projects/the/packages/store/lib"
     },
-    "name": "helpers",
-    "order": 2,
-    "scope": "static"
+    "order": 2
   },
   {
-    "description": "Create a TheStore instance",
     "id": "module:@the-/store.create",
-    "kind": "function",
     "longname": "module:@the-/store.create",
-    "memberof": "module:@the-/store",
-    "meta": {
-      "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/store/lib"
-    },
     "name": "create",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheStore instance",
+    "memberof": "module:@the-/store",
     "params": [
       {
         "type": {
@@ -353,36 +348,36 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/store/lib"
+    },
+    "order": 0
   },
   {
-    "description": "Alias of {@link module:@the-/store}",
     "id": "module:@the-/store.create",
-    "kind": "function",
     "longname": "module:@the-/store.create",
+    "name": "create",
+    "kind": "function",
+    "scope": "static",
+    "description": "Alias of {@link module:@the-/store}",
     "memberof": "module:@the-/store",
     "meta": {
-      "filename": "default.js",
       "lineno": 1,
+      "filename": "default.js",
       "path": "/Users/okuni/Projects/the/packages/store/lib"
     },
-    "name": "create",
-    "order": 1,
-    "scope": "static"
+    "order": 1
   },
   {
-    "description": "Convert into store scope class",
     "id": "module:@the-/store.toStoreScopeClass",
-    "kind": "function",
     "longname": "module:@the-/store.toStoreScopeClass",
-    "memberof": "module:@the-/store",
-    "meta": {
-      "filename": "toStoreScopeClass.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/store/lib"
-    },
     "name": "toStoreScopeClass",
-    "order": 11,
+    "kind": "function",
+    "scope": "static",
+    "description": "Convert into store scope class",
+    "memberof": "module:@the-/store",
     "params": [
       {
         "type": {
@@ -402,6 +397,11 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "toStoreScopeClass.js",
+      "path": "/Users/okuni/Projects/the/packages/store/lib"
+    },
+    "order": 11
   }
 ]

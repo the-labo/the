@@ -1,42 +1,37 @@
 [
   {
-    "description": "Date utility for the-framework",
     "id": "module:@the-/date",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/date",
+    "name": "@the-/date",
+    "kind": "module",
+    "description": "Date utility for the-framework",
+    "version": "15.4.2",
+    "license": "MIT",
+    "typicalname": "date",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/date/lib"
     },
-    "name": "@the-/date",
-    "order": 3,
-    "typicalname": "date",
-    "version": "15.4.2"
+    "order": 3
   },
   {
-    "description": "Date manipulator",
     "id": "module:@the-/date.TheDate()",
-    "kind": "constructor",
     "longname": "module:@the-/date.TheDate",
-    "memberof": "module:@the-/date.TheDate",
     "name": "TheDate",
+    "kind": "constructor",
+    "description": "Date manipulator",
+    "memberof": "module:@the-/date.TheDate",
     "order": 5
   },
   {
-    "description": "Format into string",
     "id": "module:@the-/date.TheDate#format",
-    "kind": "function",
     "longname": "module:@the-/date.TheDate#format",
-    "memberof": "module:@the-/date.TheDate",
-    "meta": {
-      "filename": "TheDate.js",
-      "lineno": 64,
-      "path": "/Users/okuni/Projects/the/packages/date/lib"
-    },
     "name": "format",
-    "order": 7,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Format into string",
+    "memberof": "module:@the-/date.TheDate",
     "params": [
       {
         "type": {
@@ -58,21 +53,21 @@
         "description": "- Formatted string"
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Date string from now",
-    "id": "module:@the-/date.TheDate#fromNow",
-    "kind": "function",
-    "longname": "module:@the-/date.TheDate#fromNow",
-    "memberof": "module:@the-/date.TheDate",
     "meta": {
+      "lineno": 64,
       "filename": "TheDate.js",
-      "lineno": 73,
       "path": "/Users/okuni/Projects/the/packages/date/lib"
     },
+    "order": 7
+  },
+  {
+    "id": "module:@the-/date.TheDate#fromNow",
+    "longname": "module:@the-/date.TheDate#fromNow",
     "name": "fromNow",
-    "order": 8,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Date string from now",
+    "memberof": "module:@the-/date.TheDate",
     "params": [],
     "returns": [
       {
@@ -84,21 +79,21 @@
         "nullable": true
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Covert into date",
-    "id": "module:@the-/date.TheDate#toDate",
-    "kind": "function",
-    "longname": "module:@the-/date.TheDate#toDate",
-    "memberof": "module:@the-/date.TheDate",
     "meta": {
+      "lineno": 73,
       "filename": "TheDate.js",
-      "lineno": 82,
       "path": "/Users/okuni/Projects/the/packages/date/lib"
     },
+    "order": 8
+  },
+  {
+    "id": "module:@the-/date.TheDate#toDate",
+    "longname": "module:@the-/date.TheDate#toDate",
     "name": "toDate",
-    "order": 9,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Covert into date",
+    "memberof": "module:@the-/date.TheDate",
     "params": [],
     "returns": [
       {
@@ -109,21 +104,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Convert into JSON String",
-    "id": "module:@the-/date.TheDate#toJSON",
-    "kind": "function",
-    "longname": "module:@the-/date.TheDate#toJSON",
-    "memberof": "module:@the-/date.TheDate",
     "meta": {
+      "lineno": 82,
       "filename": "TheDate.js",
-      "lineno": 90,
       "path": "/Users/okuni/Projects/the/packages/date/lib"
     },
+    "order": 9
+  },
+  {
+    "id": "module:@the-/date.TheDate#toJSON",
+    "longname": "module:@the-/date.TheDate#toJSON",
     "name": "toJSON",
-    "order": 10,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Convert into JSON String",
+    "memberof": "module:@the-/date.TheDate",
     "params": [],
     "returns": [
       {
@@ -134,21 +129,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Convert to number",
-    "id": "module:@the-/date.TheDate#toNumber",
-    "kind": "function",
-    "longname": "module:@the-/date.TheDate#toNumber",
-    "memberof": "module:@the-/date.TheDate",
     "meta": {
+      "lineno": 90,
       "filename": "TheDate.js",
-      "lineno": 98,
       "path": "/Users/okuni/Projects/the/packages/date/lib"
     },
+    "order": 10
+  },
+  {
+    "id": "module:@the-/date.TheDate#toNumber",
+    "longname": "module:@the-/date.TheDate#toNumber",
     "name": "toNumber",
-    "order": 11,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Convert to number",
+    "memberof": "module:@the-/date.TheDate",
     "params": [],
     "returns": [
       {
@@ -159,21 +154,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Convert into string",
-    "id": "module:@the-/date.TheDate#toString",
-    "kind": "function",
-    "longname": "module:@the-/date.TheDate#toString",
-    "memberof": "module:@the-/date.TheDate",
     "meta": {
+      "lineno": 98,
       "filename": "TheDate.js",
-      "lineno": 106,
       "path": "/Users/okuni/Projects/the/packages/date/lib"
     },
+    "order": 11
+  },
+  {
+    "id": "module:@the-/date.TheDate#toString",
+    "longname": "module:@the-/date.TheDate#toString",
     "name": "toString",
-    "order": 12,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Convert into string",
+    "memberof": "module:@the-/date.TheDate",
     "params": [],
     "returns": [
       {
@@ -184,21 +179,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 106,
+      "filename": "TheDate.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib"
+    },
+    "order": 12
   },
   {
-    "description": "Date after",
     "id": "AddMixed#add",
-    "kind": "function",
     "longname": "AddMixed#add",
-    "memberof": "AddMixed",
-    "meta": {
-      "filename": "addMix.js",
-      "lineno": 29,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "add",
-    "order": 16,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Date after",
+    "memberof": "AddMixed",
     "params": [
       {
         "type": {
@@ -229,24 +224,24 @@
         }
       }
     ],
-    "scope": "instance",
     "see": [
       "https://momentjs.com/docs/#/manipulating/add/"
-    ]
-  },
-  {
-    "description": "Add years",
-    "id": "AddMixed#addYears",
-    "kind": "function",
-    "longname": "AddMixed#addYears",
-    "memberof": "AddMixed",
+    ],
     "meta": {
+      "lineno": 29,
       "filename": "addMix.js",
-      "lineno": 45,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 16
+  },
+  {
+    "id": "AddMixed#addYears",
+    "longname": "AddMixed#addYears",
     "name": "addYears",
-    "order": 17,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add years",
+    "memberof": "AddMixed",
     "params": [
       {
         "type": {
@@ -267,21 +262,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Add year",
-    "id": "AddMixed#addYear",
-    "kind": "function",
-    "longname": "AddMixed#addYear",
-    "memberof": "AddMixed",
     "meta": {
+      "lineno": 45,
       "filename": "addMix.js",
-      "lineno": 54,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 17
+  },
+  {
+    "id": "AddMixed#addYear",
+    "longname": "AddMixed#addYear",
     "name": "addYear",
-    "order": 18,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add year",
+    "memberof": "AddMixed",
     "params": [
       {
         "type": {
@@ -302,21 +297,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Add quarters",
-    "id": "AddMixed#addQuarters",
-    "kind": "function",
-    "longname": "AddMixed#addQuarters",
-    "memberof": "AddMixed",
     "meta": {
+      "lineno": 54,
       "filename": "addMix.js",
-      "lineno": 63,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 18
+  },
+  {
+    "id": "AddMixed#addQuarters",
+    "longname": "AddMixed#addQuarters",
     "name": "addQuarters",
-    "order": 19,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add quarters",
+    "memberof": "AddMixed",
     "params": [
       {
         "type": {
@@ -337,21 +332,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Add quarter",
-    "id": "AddMixed#addQuarter",
-    "kind": "function",
-    "longname": "AddMixed#addQuarter",
-    "memberof": "AddMixed",
     "meta": {
+      "lineno": 63,
       "filename": "addMix.js",
-      "lineno": 72,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 19
+  },
+  {
+    "id": "AddMixed#addQuarter",
+    "longname": "AddMixed#addQuarter",
     "name": "addQuarter",
-    "order": 20,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add quarter",
+    "memberof": "AddMixed",
     "params": [
       {
         "type": {
@@ -372,21 +367,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Add months",
-    "id": "AddMixed#addMonths",
-    "kind": "function",
-    "longname": "AddMixed#addMonths",
-    "memberof": "AddMixed",
     "meta": {
+      "lineno": 72,
       "filename": "addMix.js",
-      "lineno": 81,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 20
+  },
+  {
+    "id": "AddMixed#addMonths",
+    "longname": "AddMixed#addMonths",
     "name": "addMonths",
-    "order": 21,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add months",
+    "memberof": "AddMixed",
     "params": [
       {
         "type": {
@@ -407,21 +402,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Add month",
-    "id": "AddMixed#addMonth",
-    "kind": "function",
-    "longname": "AddMixed#addMonth",
-    "memberof": "AddMixed",
     "meta": {
+      "lineno": 81,
       "filename": "addMix.js",
-      "lineno": 90,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 21
+  },
+  {
+    "id": "AddMixed#addMonth",
+    "longname": "AddMixed#addMonth",
     "name": "addMonth",
-    "order": 22,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add month",
+    "memberof": "AddMixed",
     "params": [
       {
         "type": {
@@ -442,21 +437,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Add weeks",
-    "id": "AddMixed#addWeeks",
-    "kind": "function",
-    "longname": "AddMixed#addWeeks",
-    "memberof": "AddMixed",
     "meta": {
+      "lineno": 90,
       "filename": "addMix.js",
-      "lineno": 99,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 22
+  },
+  {
+    "id": "AddMixed#addWeeks",
+    "longname": "AddMixed#addWeeks",
     "name": "addWeeks",
-    "order": 23,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add weeks",
+    "memberof": "AddMixed",
     "params": [
       {
         "type": {
@@ -477,21 +472,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Add week",
-    "id": "AddMixed#addWeek",
-    "kind": "function",
-    "longname": "AddMixed#addWeek",
-    "memberof": "AddMixed",
     "meta": {
+      "lineno": 99,
       "filename": "addMix.js",
-      "lineno": 108,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 23
+  },
+  {
+    "id": "AddMixed#addWeek",
+    "longname": "AddMixed#addWeek",
     "name": "addWeek",
-    "order": 24,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add week",
+    "memberof": "AddMixed",
     "params": [
       {
         "type": {
@@ -512,21 +507,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Add days",
-    "id": "AddMixed#addDays",
-    "kind": "function",
-    "longname": "AddMixed#addDays",
-    "memberof": "AddMixed",
     "meta": {
+      "lineno": 108,
       "filename": "addMix.js",
-      "lineno": 117,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 24
+  },
+  {
+    "id": "AddMixed#addDays",
+    "longname": "AddMixed#addDays",
     "name": "addDays",
-    "order": 25,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add days",
+    "memberof": "AddMixed",
     "params": [
       {
         "type": {
@@ -547,21 +542,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Add day",
-    "id": "AddMixed#addDay",
-    "kind": "function",
-    "longname": "AddMixed#addDay",
-    "memberof": "AddMixed",
     "meta": {
+      "lineno": 117,
       "filename": "addMix.js",
-      "lineno": 126,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 25
+  },
+  {
+    "id": "AddMixed#addDay",
+    "longname": "AddMixed#addDay",
     "name": "addDay",
-    "order": 26,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add day",
+    "memberof": "AddMixed",
     "params": [
       {
         "type": {
@@ -582,21 +577,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Add hours",
-    "id": "AddMixed#addHours",
-    "kind": "function",
-    "longname": "AddMixed#addHours",
-    "memberof": "AddMixed",
     "meta": {
+      "lineno": 126,
       "filename": "addMix.js",
-      "lineno": 135,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 26
+  },
+  {
+    "id": "AddMixed#addHours",
+    "longname": "AddMixed#addHours",
     "name": "addHours",
-    "order": 27,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add hours",
+    "memberof": "AddMixed",
     "params": [
       {
         "type": {
@@ -617,21 +612,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Add hour",
-    "id": "AddMixed#addHour",
-    "kind": "function",
-    "longname": "AddMixed#addHour",
-    "memberof": "AddMixed",
     "meta": {
+      "lineno": 135,
       "filename": "addMix.js",
-      "lineno": 144,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 27
+  },
+  {
+    "id": "AddMixed#addHour",
+    "longname": "AddMixed#addHour",
     "name": "addHour",
-    "order": 28,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add hour",
+    "memberof": "AddMixed",
     "params": [
       {
         "type": {
@@ -652,21 +647,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Add minutes",
-    "id": "AddMixed#addMinutes",
-    "kind": "function",
-    "longname": "AddMixed#addMinutes",
-    "memberof": "AddMixed",
     "meta": {
+      "lineno": 144,
       "filename": "addMix.js",
-      "lineno": 153,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 28
+  },
+  {
+    "id": "AddMixed#addMinutes",
+    "longname": "AddMixed#addMinutes",
     "name": "addMinutes",
-    "order": 29,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add minutes",
+    "memberof": "AddMixed",
     "params": [
       {
         "type": {
@@ -687,21 +682,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Add minute",
-    "id": "AddMixed#addMinute",
-    "kind": "function",
-    "longname": "AddMixed#addMinute",
-    "memberof": "AddMixed",
     "meta": {
+      "lineno": 153,
       "filename": "addMix.js",
-      "lineno": 162,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 29
+  },
+  {
+    "id": "AddMixed#addMinute",
+    "longname": "AddMixed#addMinute",
     "name": "addMinute",
-    "order": 30,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add minute",
+    "memberof": "AddMixed",
     "params": [
       {
         "type": {
@@ -722,21 +717,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Add seconds",
-    "id": "AddMixed#addSeconds",
-    "kind": "function",
-    "longname": "AddMixed#addSeconds",
-    "memberof": "AddMixed",
     "meta": {
+      "lineno": 162,
       "filename": "addMix.js",
-      "lineno": 171,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 30
+  },
+  {
+    "id": "AddMixed#addSeconds",
+    "longname": "AddMixed#addSeconds",
     "name": "addSeconds",
-    "order": 31,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add seconds",
+    "memberof": "AddMixed",
     "params": [
       {
         "type": {
@@ -757,21 +752,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Add second",
-    "id": "AddMixed#addSecond",
-    "kind": "function",
-    "longname": "AddMixed#addSecond",
-    "memberof": "AddMixed",
     "meta": {
+      "lineno": 171,
       "filename": "addMix.js",
-      "lineno": 180,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 31
+  },
+  {
+    "id": "AddMixed#addSecond",
+    "longname": "AddMixed#addSecond",
     "name": "addSecond",
-    "order": 32,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add second",
+    "memberof": "AddMixed",
     "params": [
       {
         "type": {
@@ -792,21 +787,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Add milliseconds",
-    "id": "AddMixed#addMilliseconds",
-    "kind": "function",
-    "longname": "AddMixed#addMilliseconds",
-    "memberof": "AddMixed",
     "meta": {
+      "lineno": 180,
       "filename": "addMix.js",
-      "lineno": 189,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 32
+  },
+  {
+    "id": "AddMixed#addMilliseconds",
+    "longname": "AddMixed#addMilliseconds",
     "name": "addMilliseconds",
-    "order": 33,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add milliseconds",
+    "memberof": "AddMixed",
     "params": [
       {
         "type": {
@@ -827,21 +822,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Add millisecond",
-    "id": "AddMixed#addMillisecond",
-    "kind": "function",
-    "longname": "AddMixed#addMillisecond",
-    "memberof": "AddMixed",
     "meta": {
+      "lineno": 189,
       "filename": "addMix.js",
-      "lineno": 198,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 33
+  },
+  {
+    "id": "AddMixed#addMillisecond",
+    "longname": "AddMixed#addMillisecond",
     "name": "addMillisecond",
-    "order": 34,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Add millisecond",
+    "memberof": "AddMixed",
     "params": [
       {
         "type": {
@@ -862,21 +857,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Date for end of",
-    "id": "EndOfMixed#endOf",
-    "kind": "function",
-    "longname": "EndOfMixed#endOf",
-    "memberof": "EndOfMixed",
     "meta": {
-      "filename": "endOfMix.js",
-      "lineno": 28,
+      "lineno": 198,
+      "filename": "addMix.js",
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 34
+  },
+  {
+    "id": "EndOfMixed#endOf",
+    "longname": "EndOfMixed#endOf",
     "name": "endOf",
-    "order": 37,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Date for end of",
+    "memberof": "EndOfMixed",
     "params": [
       {
         "type": {
@@ -898,24 +893,24 @@
         }
       }
     ],
-    "scope": "instance",
     "see": [
       "https://momentjs.com/docs/#/manipulating/end-of/"
-    ]
+    ],
+    "meta": {
+      "lineno": 28,
+      "filename": "endOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 37
   },
   {
-    "description": "End of year",
     "id": "EndOfMixed#endOfYear",
-    "kind": "function",
     "longname": "EndOfMixed#endOfYear",
-    "memberof": "EndOfMixed",
-    "meta": {
-      "filename": "endOfMix.js",
-      "lineno": 43,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "endOfYear",
-    "order": 38,
+    "kind": "function",
+    "scope": "instance",
+    "description": "End of year",
+    "memberof": "EndOfMixed",
     "params": [],
     "returns": [
       {
@@ -926,21 +921,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 43,
+      "filename": "endOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 38
   },
   {
-    "description": "End of month",
     "id": "EndOfMixed#endOfMonth",
-    "kind": "function",
     "longname": "EndOfMixed#endOfMonth",
-    "memberof": "EndOfMixed",
-    "meta": {
-      "filename": "endOfMix.js",
-      "lineno": 51,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "endOfMonth",
-    "order": 39,
+    "kind": "function",
+    "scope": "instance",
+    "description": "End of month",
+    "memberof": "EndOfMixed",
     "params": [],
     "returns": [
       {
@@ -951,21 +946,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 51,
+      "filename": "endOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 39
   },
   {
-    "description": "End of quarter",
     "id": "EndOfMixed#endOfQuarter",
-    "kind": "function",
     "longname": "EndOfMixed#endOfQuarter",
-    "memberof": "EndOfMixed",
-    "meta": {
-      "filename": "endOfMix.js",
-      "lineno": 59,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "endOfQuarter",
-    "order": 40,
+    "kind": "function",
+    "scope": "instance",
+    "description": "End of quarter",
+    "memberof": "EndOfMixed",
     "params": [],
     "returns": [
       {
@@ -976,21 +971,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 59,
+      "filename": "endOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 40
   },
   {
-    "description": "End of week",
     "id": "EndOfMixed#endOfWeek",
-    "kind": "function",
     "longname": "EndOfMixed#endOfWeek",
-    "memberof": "EndOfMixed",
-    "meta": {
-      "filename": "endOfMix.js",
-      "lineno": 67,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "endOfWeek",
-    "order": 41,
+    "kind": "function",
+    "scope": "instance",
+    "description": "End of week",
+    "memberof": "EndOfMixed",
     "params": [],
     "returns": [
       {
@@ -1001,21 +996,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 67,
+      "filename": "endOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 41
   },
   {
-    "description": "End of isoWeek",
     "id": "EndOfMixed#endOfIsoWeek",
-    "kind": "function",
     "longname": "EndOfMixed#endOfIsoWeek",
-    "memberof": "EndOfMixed",
-    "meta": {
-      "filename": "endOfMix.js",
-      "lineno": 75,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "endOfIsoWeek",
-    "order": 42,
+    "kind": "function",
+    "scope": "instance",
+    "description": "End of isoWeek",
+    "memberof": "EndOfMixed",
     "params": [],
     "returns": [
       {
@@ -1026,21 +1021,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 75,
+      "filename": "endOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 42
   },
   {
-    "description": "End of day",
     "id": "EndOfMixed#endOfDay",
-    "kind": "function",
     "longname": "EndOfMixed#endOfDay",
-    "memberof": "EndOfMixed",
-    "meta": {
-      "filename": "endOfMix.js",
-      "lineno": 83,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "endOfDay",
-    "order": 43,
+    "kind": "function",
+    "scope": "instance",
+    "description": "End of day",
+    "memberof": "EndOfMixed",
     "params": [],
     "returns": [
       {
@@ -1051,21 +1046,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 83,
+      "filename": "endOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 43
   },
   {
-    "description": "End of date",
     "id": "EndOfMixed#endOfDate",
-    "kind": "function",
     "longname": "EndOfMixed#endOfDate",
-    "memberof": "EndOfMixed",
-    "meta": {
-      "filename": "endOfMix.js",
-      "lineno": 91,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "endOfDate",
-    "order": 44,
+    "kind": "function",
+    "scope": "instance",
+    "description": "End of date",
+    "memberof": "EndOfMixed",
     "params": [],
     "returns": [
       {
@@ -1076,21 +1071,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 91,
+      "filename": "endOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 44
   },
   {
-    "description": "End of hour",
     "id": "EndOfMixed#endOfHour",
-    "kind": "function",
     "longname": "EndOfMixed#endOfHour",
-    "memberof": "EndOfMixed",
-    "meta": {
-      "filename": "endOfMix.js",
-      "lineno": 99,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "endOfHour",
-    "order": 45,
+    "kind": "function",
+    "scope": "instance",
+    "description": "End of hour",
+    "memberof": "EndOfMixed",
     "params": [],
     "returns": [
       {
@@ -1101,46 +1096,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 99,
+      "filename": "endOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 45
   },
   {
-    "description": "End of minute",
     "id": "EndOfMixed#endOfMinute",
-    "kind": "function",
     "longname": "EndOfMixed#endOfMinute",
-    "memberof": "EndOfMixed",
-    "meta": {
-      "filename": "endOfMix.js",
-      "lineno": 107,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "endOfMinute",
-    "order": 46,
-    "params": [],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "TheDate"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "End of second",
-    "id": "EndOfMixed#endOfSecond",
     "kind": "function",
-    "longname": "EndOfMixed#endOfSecond",
+    "scope": "instance",
+    "description": "End of minute",
     "memberof": "EndOfMixed",
-    "meta": {
-      "filename": "endOfMix.js",
-      "lineno": 115,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
-    "name": "endOfSecond",
-    "order": 47,
     "params": [],
     "returns": [
       {
@@ -1151,21 +1121,46 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Get value of",
-    "id": "GetMixed#get",
-    "kind": "function",
-    "longname": "GetMixed#get",
-    "memberof": "GetMixed",
     "meta": {
-      "filename": "getMix.js",
-      "lineno": 27,
+      "lineno": 107,
+      "filename": "endOfMix.js",
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 46
+  },
+  {
+    "id": "EndOfMixed#endOfSecond",
+    "longname": "EndOfMixed#endOfSecond",
+    "name": "endOfSecond",
+    "kind": "function",
+    "scope": "instance",
+    "description": "End of second",
+    "memberof": "EndOfMixed",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheDate"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 115,
+      "filename": "endOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 47
+  },
+  {
+    "id": "GetMixed#get",
+    "longname": "GetMixed#get",
     "name": "get",
-    "order": 50,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get value of",
+    "memberof": "GetMixed",
     "params": [
       {
         "type": {
@@ -1187,24 +1182,24 @@
         }
       }
     ],
-    "scope": "instance",
     "see": [
       "https://momentjs.com/docs/#/get-set/get/"
-    ]
+    ],
+    "meta": {
+      "lineno": 27,
+      "filename": "getMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 50
   },
   {
-    "description": "Get year",
     "id": "GetMixed#getYear",
-    "kind": "function",
     "longname": "GetMixed#getYear",
-    "memberof": "GetMixed",
-    "meta": {
-      "filename": "getMix.js",
-      "lineno": 41,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "getYear",
-    "order": 51,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get year",
+    "memberof": "GetMixed",
     "params": [],
     "returns": [
       {
@@ -1215,21 +1210,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 41,
+      "filename": "getMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 51
   },
   {
-    "description": "Get month",
     "id": "GetMixed#getMonth",
-    "kind": "function",
     "longname": "GetMixed#getMonth",
-    "memberof": "GetMixed",
-    "meta": {
-      "filename": "getMix.js",
-      "lineno": 49,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "getMonth",
-    "order": 52,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get month",
+    "memberof": "GetMixed",
     "params": [],
     "returns": [
       {
@@ -1240,21 +1235,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 49,
+      "filename": "getMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 52
   },
   {
-    "description": "Get date",
     "id": "GetMixed#getDate",
-    "kind": "function",
     "longname": "GetMixed#getDate",
-    "memberof": "GetMixed",
-    "meta": {
-      "filename": "getMix.js",
-      "lineno": 57,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "getDate",
-    "order": 53,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get date",
+    "memberof": "GetMixed",
     "params": [],
     "returns": [
       {
@@ -1265,21 +1260,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 57,
+      "filename": "getMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 53
   },
   {
-    "description": "Get hour",
     "id": "GetMixed#getHour",
-    "kind": "function",
     "longname": "GetMixed#getHour",
-    "memberof": "GetMixed",
-    "meta": {
-      "filename": "getMix.js",
-      "lineno": 65,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "getHour",
-    "order": 54,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get hour",
+    "memberof": "GetMixed",
     "params": [],
     "returns": [
       {
@@ -1290,21 +1285,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 65,
+      "filename": "getMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 54
   },
   {
-    "description": "Get minute",
     "id": "GetMixed#getMinute",
-    "kind": "function",
     "longname": "GetMixed#getMinute",
-    "memberof": "GetMixed",
-    "meta": {
-      "filename": "getMix.js",
-      "lineno": 73,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "getMinute",
-    "order": 55,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get minute",
+    "memberof": "GetMixed",
     "params": [],
     "returns": [
       {
@@ -1315,46 +1310,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 73,
+      "filename": "getMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 55
   },
   {
-    "description": "Get second",
     "id": "GetMixed#getSecond",
-    "kind": "function",
     "longname": "GetMixed#getSecond",
-    "memberof": "GetMixed",
-    "meta": {
-      "filename": "getMix.js",
-      "lineno": 81,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "getSecond",
-    "order": 56,
-    "params": [],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "TheDate"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Get millisecond",
-    "id": "GetMixed#getMillisecond",
     "kind": "function",
-    "longname": "GetMixed#getMillisecond",
+    "scope": "instance",
+    "description": "Get second",
     "memberof": "GetMixed",
-    "meta": {
-      "filename": "getMix.js",
-      "lineno": 89,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
-    "name": "getMillisecond",
-    "order": 57,
     "params": [],
     "returns": [
       {
@@ -1365,21 +1335,46 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Moment to date",
-    "id": "MomentMixed#toMoment",
-    "kind": "function",
-    "longname": "MomentMixed#toMoment",
-    "memberof": "MomentMixed",
     "meta": {
-      "filename": "momentMix.js",
-      "lineno": 36,
+      "lineno": 81,
+      "filename": "getMix.js",
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 56
+  },
+  {
+    "id": "GetMixed#getMillisecond",
+    "longname": "GetMixed#getMillisecond",
+    "name": "getMillisecond",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get millisecond",
+    "memberof": "GetMixed",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheDate"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 89,
+      "filename": "getMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 57
+  },
+  {
+    "id": "MomentMixed#toMoment",
+    "longname": "MomentMixed#toMoment",
     "name": "toMoment",
-    "order": 61,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Moment to date",
+    "memberof": "MomentMixed",
     "params": [],
     "returns": [
       {
@@ -1391,21 +1386,21 @@
         "description": "moment instance"
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Set value of",
-    "id": "SetMixed#set",
-    "kind": "function",
-    "longname": "SetMixed#set",
-    "memberof": "SetMixed",
     "meta": {
-      "filename": "setMix.js",
-      "lineno": 35,
+      "lineno": 36,
+      "filename": "momentMix.js",
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 61
+  },
+  {
+    "id": "SetMixed#set",
+    "longname": "SetMixed#set",
     "name": "set",
-    "order": 64,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Set value of",
+    "memberof": "SetMixed",
     "params": [
       {
         "type": {
@@ -1435,24 +1430,24 @@
         }
       }
     ],
-    "scope": "instance",
     "see": [
       "https://momentjs.com/docs/#/set-set/set/"
-    ]
+    ],
+    "meta": {
+      "lineno": 35,
+      "filename": "setMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 64
   },
   {
-    "description": "Set year",
     "id": "SetMixed#setYear",
-    "kind": "function",
     "longname": "SetMixed#setYear",
-    "memberof": "SetMixed",
-    "meta": {
-      "filename": "setMix.js",
-      "lineno": 54,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "setYear",
-    "order": 65,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Set year",
+    "memberof": "SetMixed",
     "params": [
       {
         "type": {
@@ -1472,21 +1467,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 54,
+      "filename": "setMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 65
   },
   {
-    "description": "Set month",
     "id": "SetMixed#setMonth",
-    "kind": "function",
     "longname": "SetMixed#setMonth",
-    "memberof": "SetMixed",
-    "meta": {
-      "filename": "setMix.js",
-      "lineno": 63,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "setMonth",
-    "order": 66,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Set month",
+    "memberof": "SetMixed",
     "params": [
       {
         "type": {
@@ -1506,21 +1501,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 63,
+      "filename": "setMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 66
   },
   {
-    "description": "Set date",
     "id": "SetMixed#setDate",
-    "kind": "function",
     "longname": "SetMixed#setDate",
-    "memberof": "SetMixed",
-    "meta": {
-      "filename": "setMix.js",
-      "lineno": 72,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "setDate",
-    "order": 67,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Set date",
+    "memberof": "SetMixed",
     "params": [
       {
         "type": {
@@ -1540,21 +1535,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 72,
+      "filename": "setMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 67
   },
   {
-    "description": "Set hour",
     "id": "SetMixed#setHour",
-    "kind": "function",
     "longname": "SetMixed#setHour",
-    "memberof": "SetMixed",
-    "meta": {
-      "filename": "setMix.js",
-      "lineno": 81,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "setHour",
-    "order": 68,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Set hour",
+    "memberof": "SetMixed",
     "params": [
       {
         "type": {
@@ -1574,21 +1569,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 81,
+      "filename": "setMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 68
   },
   {
-    "description": "Set minute",
     "id": "SetMixed#setMinute",
-    "kind": "function",
     "longname": "SetMixed#setMinute",
-    "memberof": "SetMixed",
-    "meta": {
-      "filename": "setMix.js",
-      "lineno": 90,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "setMinute",
-    "order": 69,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Set minute",
+    "memberof": "SetMixed",
     "params": [
       {
         "type": {
@@ -1608,55 +1603,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 90,
+      "filename": "setMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 69
   },
   {
-    "description": "Set second",
     "id": "SetMixed#setSecond",
-    "kind": "function",
     "longname": "SetMixed#setSecond",
-    "memberof": "SetMixed",
-    "meta": {
-      "filename": "setMix.js",
-      "lineno": 99,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "setSecond",
-    "order": 70,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "number"
-          ]
-        },
-        "name": "value"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "TheDate"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Set millisecond",
-    "id": "SetMixed#setMillisecond",
     "kind": "function",
-    "longname": "SetMixed#setMillisecond",
+    "scope": "instance",
+    "description": "Set second",
     "memberof": "SetMixed",
-    "meta": {
-      "filename": "setMix.js",
-      "lineno": 108,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
-    "name": "setMillisecond",
-    "order": 71,
     "params": [
       {
         "type": {
@@ -1676,21 +1637,55 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Date for start of",
-    "id": "StartOfMixed#startOf",
-    "kind": "function",
-    "longname": "StartOfMixed#startOf",
-    "memberof": "StartOfMixed",
     "meta": {
-      "filename": "startOfMix.js",
-      "lineno": 28,
+      "lineno": 99,
+      "filename": "setMix.js",
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 70
+  },
+  {
+    "id": "SetMixed#setMillisecond",
+    "longname": "SetMixed#setMillisecond",
+    "name": "setMillisecond",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Set millisecond",
+    "memberof": "SetMixed",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "name": "value"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheDate"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 108,
+      "filename": "setMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 71
+  },
+  {
+    "id": "StartOfMixed#startOf",
+    "longname": "StartOfMixed#startOf",
     "name": "startOf",
-    "order": 74,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Date for start of",
+    "memberof": "StartOfMixed",
     "params": [
       {
         "type": {
@@ -1712,24 +1707,24 @@
         }
       }
     ],
-    "scope": "instance",
     "see": [
       "https://momentjs.com/docs/#/manipulating/start-of/"
-    ]
+    ],
+    "meta": {
+      "lineno": 28,
+      "filename": "startOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 74
   },
   {
-    "description": "Start of year",
     "id": "StartOfMixed#startOfYear",
-    "kind": "function",
     "longname": "StartOfMixed#startOfYear",
-    "memberof": "StartOfMixed",
-    "meta": {
-      "filename": "startOfMix.js",
-      "lineno": 43,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "startOfYear",
-    "order": 75,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Start of year",
+    "memberof": "StartOfMixed",
     "params": [],
     "returns": [
       {
@@ -1740,21 +1735,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 43,
+      "filename": "startOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 75
   },
   {
-    "description": "Start of month",
     "id": "StartOfMixed#startOfMonth",
-    "kind": "function",
     "longname": "StartOfMixed#startOfMonth",
-    "memberof": "StartOfMixed",
-    "meta": {
-      "filename": "startOfMix.js",
-      "lineno": 51,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "startOfMonth",
-    "order": 76,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Start of month",
+    "memberof": "StartOfMixed",
     "params": [],
     "returns": [
       {
@@ -1765,21 +1760,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 51,
+      "filename": "startOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 76
   },
   {
-    "description": "Start of quarter",
     "id": "StartOfMixed#startOfQuarter",
-    "kind": "function",
     "longname": "StartOfMixed#startOfQuarter",
-    "memberof": "StartOfMixed",
-    "meta": {
-      "filename": "startOfMix.js",
-      "lineno": 59,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "startOfQuarter",
-    "order": 77,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Start of quarter",
+    "memberof": "StartOfMixed",
     "params": [],
     "returns": [
       {
@@ -1790,21 +1785,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 59,
+      "filename": "startOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 77
   },
   {
-    "description": "Start of week",
     "id": "StartOfMixed#startOfWeek",
-    "kind": "function",
     "longname": "StartOfMixed#startOfWeek",
-    "memberof": "StartOfMixed",
-    "meta": {
-      "filename": "startOfMix.js",
-      "lineno": 67,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "startOfWeek",
-    "order": 78,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Start of week",
+    "memberof": "StartOfMixed",
     "params": [],
     "returns": [
       {
@@ -1815,21 +1810,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 67,
+      "filename": "startOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 78
   },
   {
-    "description": "Start of isoWeek",
     "id": "StartOfMixed#startOfIsoWeek",
-    "kind": "function",
     "longname": "StartOfMixed#startOfIsoWeek",
-    "memberof": "StartOfMixed",
-    "meta": {
-      "filename": "startOfMix.js",
-      "lineno": 75,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "startOfIsoWeek",
-    "order": 79,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Start of isoWeek",
+    "memberof": "StartOfMixed",
     "params": [],
     "returns": [
       {
@@ -1840,21 +1835,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 75,
+      "filename": "startOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 79
   },
   {
-    "description": "Start of day",
     "id": "StartOfMixed#startOfDay",
-    "kind": "function",
     "longname": "StartOfMixed#startOfDay",
-    "memberof": "StartOfMixed",
-    "meta": {
-      "filename": "startOfMix.js",
-      "lineno": 83,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "startOfDay",
-    "order": 80,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Start of day",
+    "memberof": "StartOfMixed",
     "params": [],
     "returns": [
       {
@@ -1865,21 +1860,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 83,
+      "filename": "startOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 80
   },
   {
-    "description": "Start of date",
     "id": "StartOfMixed#startOfDate",
-    "kind": "function",
     "longname": "StartOfMixed#startOfDate",
-    "memberof": "StartOfMixed",
-    "meta": {
-      "filename": "startOfMix.js",
-      "lineno": 91,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "startOfDate",
-    "order": 81,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Start of date",
+    "memberof": "StartOfMixed",
     "params": [],
     "returns": [
       {
@@ -1890,21 +1885,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 91,
+      "filename": "startOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 81
   },
   {
-    "description": "Start of hour",
     "id": "StartOfMixed#startOfHour",
-    "kind": "function",
     "longname": "StartOfMixed#startOfHour",
-    "memberof": "StartOfMixed",
-    "meta": {
-      "filename": "startOfMix.js",
-      "lineno": 99,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "startOfHour",
-    "order": 82,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Start of hour",
+    "memberof": "StartOfMixed",
     "params": [],
     "returns": [
       {
@@ -1915,46 +1910,21 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 99,
+      "filename": "startOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 82
   },
   {
-    "description": "Start of minute",
     "id": "StartOfMixed#startOfMinute",
-    "kind": "function",
     "longname": "StartOfMixed#startOfMinute",
-    "memberof": "StartOfMixed",
-    "meta": {
-      "filename": "startOfMix.js",
-      "lineno": 107,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "startOfMinute",
-    "order": 83,
-    "params": [],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "TheDate"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Start of second",
-    "id": "StartOfMixed#startOfSecond",
     "kind": "function",
-    "longname": "StartOfMixed#startOfSecond",
+    "scope": "instance",
+    "description": "Start of minute",
     "memberof": "StartOfMixed",
-    "meta": {
-      "filename": "startOfMix.js",
-      "lineno": 115,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
-    "name": "startOfSecond",
-    "order": 84,
     "params": [],
     "returns": [
       {
@@ -1965,21 +1935,46 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Date after",
-    "id": "SubtractMixed#subtract",
-    "kind": "function",
-    "longname": "SubtractMixed#subtract",
-    "memberof": "SubtractMixed",
     "meta": {
-      "filename": "subtractMix.js",
-      "lineno": 29,
+      "lineno": 107,
+      "filename": "startOfMix.js",
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 83
+  },
+  {
+    "id": "StartOfMixed#startOfSecond",
+    "longname": "StartOfMixed#startOfSecond",
+    "name": "startOfSecond",
+    "kind": "function",
+    "scope": "instance",
+    "description": "Start of second",
+    "memberof": "StartOfMixed",
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheDate"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 115,
+      "filename": "startOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 84
+  },
+  {
+    "id": "SubtractMixed#subtract",
+    "longname": "SubtractMixed#subtract",
     "name": "subtract",
-    "order": 87,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Date after",
+    "memberof": "SubtractMixed",
     "params": [
       {
         "type": {
@@ -2010,24 +2005,24 @@
         }
       }
     ],
-    "scope": "instance",
     "see": [
       "https://momentjs.com/docs/#/manipulating/subtract/"
-    ]
-  },
-  {
-    "description": "Subtract years",
-    "id": "SubtractMixed#subtractYears",
-    "kind": "function",
-    "longname": "SubtractMixed#subtractYears",
-    "memberof": "SubtractMixed",
+    ],
     "meta": {
+      "lineno": 29,
       "filename": "subtractMix.js",
-      "lineno": 45,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 87
+  },
+  {
+    "id": "SubtractMixed#subtractYears",
+    "longname": "SubtractMixed#subtractYears",
     "name": "subtractYears",
-    "order": 88,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subtract years",
+    "memberof": "SubtractMixed",
     "params": [
       {
         "type": {
@@ -2048,21 +2043,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Subtract year",
-    "id": "SubtractMixed#subtractYear",
-    "kind": "function",
-    "longname": "SubtractMixed#subtractYear",
-    "memberof": "SubtractMixed",
     "meta": {
+      "lineno": 45,
       "filename": "subtractMix.js",
-      "lineno": 54,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 88
+  },
+  {
+    "id": "SubtractMixed#subtractYear",
+    "longname": "SubtractMixed#subtractYear",
     "name": "subtractYear",
-    "order": 89,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subtract year",
+    "memberof": "SubtractMixed",
     "params": [
       {
         "type": {
@@ -2083,21 +2078,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Subtract quarters",
-    "id": "SubtractMixed#subtractQuarters",
-    "kind": "function",
-    "longname": "SubtractMixed#subtractQuarters",
-    "memberof": "SubtractMixed",
     "meta": {
+      "lineno": 54,
       "filename": "subtractMix.js",
-      "lineno": 63,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 89
+  },
+  {
+    "id": "SubtractMixed#subtractQuarters",
+    "longname": "SubtractMixed#subtractQuarters",
     "name": "subtractQuarters",
-    "order": 90,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subtract quarters",
+    "memberof": "SubtractMixed",
     "params": [
       {
         "type": {
@@ -2118,21 +2113,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Subtract quarter",
-    "id": "SubtractMixed#subtractQuarter",
-    "kind": "function",
-    "longname": "SubtractMixed#subtractQuarter",
-    "memberof": "SubtractMixed",
     "meta": {
+      "lineno": 63,
       "filename": "subtractMix.js",
-      "lineno": 72,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 90
+  },
+  {
+    "id": "SubtractMixed#subtractQuarter",
+    "longname": "SubtractMixed#subtractQuarter",
     "name": "subtractQuarter",
-    "order": 91,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subtract quarter",
+    "memberof": "SubtractMixed",
     "params": [
       {
         "type": {
@@ -2153,21 +2148,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Subtract months",
-    "id": "SubtractMixed#subtractMonths",
-    "kind": "function",
-    "longname": "SubtractMixed#subtractMonths",
-    "memberof": "SubtractMixed",
     "meta": {
+      "lineno": 72,
       "filename": "subtractMix.js",
-      "lineno": 81,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 91
+  },
+  {
+    "id": "SubtractMixed#subtractMonths",
+    "longname": "SubtractMixed#subtractMonths",
     "name": "subtractMonths",
-    "order": 92,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subtract months",
+    "memberof": "SubtractMixed",
     "params": [
       {
         "type": {
@@ -2188,21 +2183,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Subtract month",
-    "id": "SubtractMixed#subtractMonth",
-    "kind": "function",
-    "longname": "SubtractMixed#subtractMonth",
-    "memberof": "SubtractMixed",
     "meta": {
+      "lineno": 81,
       "filename": "subtractMix.js",
-      "lineno": 90,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 92
+  },
+  {
+    "id": "SubtractMixed#subtractMonth",
+    "longname": "SubtractMixed#subtractMonth",
     "name": "subtractMonth",
-    "order": 93,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subtract month",
+    "memberof": "SubtractMixed",
     "params": [
       {
         "type": {
@@ -2223,21 +2218,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Subtract weeks",
-    "id": "SubtractMixed#subtractWeeks",
-    "kind": "function",
-    "longname": "SubtractMixed#subtractWeeks",
-    "memberof": "SubtractMixed",
     "meta": {
+      "lineno": 90,
       "filename": "subtractMix.js",
-      "lineno": 99,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 93
+  },
+  {
+    "id": "SubtractMixed#subtractWeeks",
+    "longname": "SubtractMixed#subtractWeeks",
     "name": "subtractWeeks",
-    "order": 94,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subtract weeks",
+    "memberof": "SubtractMixed",
     "params": [
       {
         "type": {
@@ -2258,21 +2253,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Subtract week",
-    "id": "SubtractMixed#subtractWeek",
-    "kind": "function",
-    "longname": "SubtractMixed#subtractWeek",
-    "memberof": "SubtractMixed",
     "meta": {
+      "lineno": 99,
       "filename": "subtractMix.js",
-      "lineno": 108,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 94
+  },
+  {
+    "id": "SubtractMixed#subtractWeek",
+    "longname": "SubtractMixed#subtractWeek",
     "name": "subtractWeek",
-    "order": 95,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subtract week",
+    "memberof": "SubtractMixed",
     "params": [
       {
         "type": {
@@ -2293,21 +2288,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Subtract days",
-    "id": "SubtractMixed#subtractDays",
-    "kind": "function",
-    "longname": "SubtractMixed#subtractDays",
-    "memberof": "SubtractMixed",
     "meta": {
+      "lineno": 108,
       "filename": "subtractMix.js",
-      "lineno": 117,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 95
+  },
+  {
+    "id": "SubtractMixed#subtractDays",
+    "longname": "SubtractMixed#subtractDays",
     "name": "subtractDays",
-    "order": 96,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subtract days",
+    "memberof": "SubtractMixed",
     "params": [
       {
         "type": {
@@ -2328,21 +2323,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Subtract day",
-    "id": "SubtractMixed#subtractDay",
-    "kind": "function",
-    "longname": "SubtractMixed#subtractDay",
-    "memberof": "SubtractMixed",
     "meta": {
+      "lineno": 117,
       "filename": "subtractMix.js",
-      "lineno": 126,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 96
+  },
+  {
+    "id": "SubtractMixed#subtractDay",
+    "longname": "SubtractMixed#subtractDay",
     "name": "subtractDay",
-    "order": 97,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subtract day",
+    "memberof": "SubtractMixed",
     "params": [
       {
         "type": {
@@ -2363,21 +2358,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Subtract hours",
-    "id": "SubtractMixed#subtractHours",
-    "kind": "function",
-    "longname": "SubtractMixed#subtractHours",
-    "memberof": "SubtractMixed",
     "meta": {
+      "lineno": 126,
       "filename": "subtractMix.js",
-      "lineno": 135,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 97
+  },
+  {
+    "id": "SubtractMixed#subtractHours",
+    "longname": "SubtractMixed#subtractHours",
     "name": "subtractHours",
-    "order": 98,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subtract hours",
+    "memberof": "SubtractMixed",
     "params": [
       {
         "type": {
@@ -2398,21 +2393,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Subtract hour",
-    "id": "SubtractMixed#subtractHour",
-    "kind": "function",
-    "longname": "SubtractMixed#subtractHour",
-    "memberof": "SubtractMixed",
     "meta": {
+      "lineno": 135,
       "filename": "subtractMix.js",
-      "lineno": 144,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 98
+  },
+  {
+    "id": "SubtractMixed#subtractHour",
+    "longname": "SubtractMixed#subtractHour",
     "name": "subtractHour",
-    "order": 99,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subtract hour",
+    "memberof": "SubtractMixed",
     "params": [
       {
         "type": {
@@ -2433,21 +2428,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Subtract minutes",
-    "id": "SubtractMixed#subtractMinutes",
-    "kind": "function",
-    "longname": "SubtractMixed#subtractMinutes",
-    "memberof": "SubtractMixed",
     "meta": {
+      "lineno": 144,
       "filename": "subtractMix.js",
-      "lineno": 153,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 99
+  },
+  {
+    "id": "SubtractMixed#subtractMinutes",
+    "longname": "SubtractMixed#subtractMinutes",
     "name": "subtractMinutes",
-    "order": 100,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subtract minutes",
+    "memberof": "SubtractMixed",
     "params": [
       {
         "type": {
@@ -2468,21 +2463,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Subtract minute",
-    "id": "SubtractMixed#subtractMinute",
-    "kind": "function",
-    "longname": "SubtractMixed#subtractMinute",
-    "memberof": "SubtractMixed",
     "meta": {
+      "lineno": 153,
       "filename": "subtractMix.js",
-      "lineno": 162,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 100
+  },
+  {
+    "id": "SubtractMixed#subtractMinute",
+    "longname": "SubtractMixed#subtractMinute",
     "name": "subtractMinute",
-    "order": 101,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subtract minute",
+    "memberof": "SubtractMixed",
     "params": [
       {
         "type": {
@@ -2503,21 +2498,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Subtract seconds",
-    "id": "SubtractMixed#subtractSeconds",
-    "kind": "function",
-    "longname": "SubtractMixed#subtractSeconds",
-    "memberof": "SubtractMixed",
     "meta": {
+      "lineno": 162,
       "filename": "subtractMix.js",
-      "lineno": 171,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 101
+  },
+  {
+    "id": "SubtractMixed#subtractSeconds",
+    "longname": "SubtractMixed#subtractSeconds",
     "name": "subtractSeconds",
-    "order": 102,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subtract seconds",
+    "memberof": "SubtractMixed",
     "params": [
       {
         "type": {
@@ -2538,21 +2533,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Subtract second",
-    "id": "SubtractMixed#subtractSecond",
-    "kind": "function",
-    "longname": "SubtractMixed#subtractSecond",
-    "memberof": "SubtractMixed",
     "meta": {
+      "lineno": 171,
       "filename": "subtractMix.js",
-      "lineno": 180,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 102
+  },
+  {
+    "id": "SubtractMixed#subtractSecond",
+    "longname": "SubtractMixed#subtractSecond",
     "name": "subtractSecond",
-    "order": 103,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subtract second",
+    "memberof": "SubtractMixed",
     "params": [
       {
         "type": {
@@ -2573,21 +2568,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Subtract milliseconds",
-    "id": "SubtractMixed#subtractMilliseconds",
-    "kind": "function",
-    "longname": "SubtractMixed#subtractMilliseconds",
-    "memberof": "SubtractMixed",
     "meta": {
+      "lineno": 180,
       "filename": "subtractMix.js",
-      "lineno": 189,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 103
+  },
+  {
+    "id": "SubtractMixed#subtractMilliseconds",
+    "longname": "SubtractMixed#subtractMilliseconds",
     "name": "subtractMilliseconds",
-    "order": 104,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subtract milliseconds",
+    "memberof": "SubtractMixed",
     "params": [
       {
         "type": {
@@ -2608,21 +2603,21 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Subtract millisecond",
-    "id": "SubtractMixed#subtractMillisecond",
-    "kind": "function",
-    "longname": "SubtractMixed#subtractMillisecond",
-    "memberof": "SubtractMixed",
     "meta": {
+      "lineno": 189,
       "filename": "subtractMix.js",
-      "lineno": 198,
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 104
+  },
+  {
+    "id": "SubtractMixed#subtractMillisecond",
+    "longname": "SubtractMixed#subtractMillisecond",
     "name": "subtractMillisecond",
-    "order": 105,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Subtract millisecond",
+    "memberof": "SubtractMixed",
     "params": [
       {
         "type": {
@@ -2643,9 +2638,19 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 198,
+      "filename": "subtractMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 105
   },
   {
+    "id": "module:@the-/date.TheDate",
+    "longname": "module:@the-/date.TheDate",
+    "name": "TheDate",
+    "kind": "class",
+    "scope": "static",
     "augments": [
       "module:@the-/date.mixins.addMix~AddMixed",
       "module:@the-/date.mixins.endOfMix~EndOfMixed",
@@ -2656,92 +2661,82 @@
       "module:@the-/date.mixins.subtractMix~SubtractMixed",
       "module:@the-/date.TheDateBase"
     ],
-    "id": "module:@the-/date.TheDate",
-    "kind": "class",
-    "longname": "module:@the-/date.TheDate",
     "memberof": "module:@the-/date",
     "meta": {
-      "filename": "TheDate.js",
       "lineno": 1,
+      "filename": "TheDate.js",
       "path": "/Users/okuni/Projects/the/packages/date/lib"
     },
-    "name": "TheDate",
-    "order": 4,
-    "scope": "static"
+    "order": 4
   },
   {
-    "access": "protected",
     "id": "module:@the-/date.TheDateBase",
-    "kind": "class",
     "longname": "module:@the-/date.TheDateBase",
-    "memberof": "module:@the-/date",
-    "meta": {
-      "filename": "TheDate.js",
-      "lineno": 29,
-      "path": "/Users/okuni/Projects/the/packages/date/lib"
-    },
     "name": "TheDateBase",
-    "order": 6,
-    "scope": "static"
+    "kind": "class",
+    "scope": "static",
+    "memberof": "module:@the-/date",
+    "access": "protected",
+    "meta": {
+      "lineno": 29,
+      "filename": "TheDate.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib"
+    },
+    "order": 6
   },
   {
-    "description": "Constant variables",
     "id": "module:@the-/date.Durations",
-    "kind": "namespace",
     "longname": "module:@the-/date.Durations",
-    "memberof": "module:@the-/date",
-    "meta": {
-      "filename": "Durations.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/date/lib"
-    },
     "name": "Durations",
-    "order": 2,
-    "scope": "static"
-  },
-  {
-    "description": "Date units",
-    "id": "module:@the-/date.units",
     "kind": "namespace",
-    "longname": "module:@the-/date.units",
+    "scope": "static",
+    "description": "Constant variables",
     "memberof": "module:@the-/date",
     "meta": {
-      "filename": "units.js",
       "lineno": 1,
+      "filename": "Durations.js",
       "path": "/Users/okuni/Projects/the/packages/date/lib"
     },
-    "name": "units",
-    "order": 13,
-    "scope": "static"
+    "order": 2
   },
   {
-    "description": "Mixin functions",
-    "id": "module:@the-/date.mixins",
+    "id": "module:@the-/date.units",
+    "longname": "module:@the-/date.units",
+    "name": "units",
     "kind": "namespace",
-    "longname": "module:@the-/date.mixins",
+    "scope": "static",
+    "description": "Date units",
     "memberof": "module:@the-/date",
     "meta": {
-      "filename": "index.js",
+      "lineno": 1,
+      "filename": "units.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib"
+    },
+    "order": 13
+  },
+  {
+    "id": "module:@the-/date.mixins",
+    "longname": "module:@the-/date.mixins",
+    "name": "mixins",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Mixin functions",
+    "memberof": "module:@the-/date",
+    "meta": {
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
-    "name": "mixins",
-    "order": 58,
-    "scope": "static"
+    "order": 58
   },
   {
-    "description": "Create a TheDate instance",
     "id": "module:@the-/date.create",
-    "kind": "function",
     "longname": "module:@the-/date.create",
-    "memberof": "module:@the-/date",
-    "meta": {
-      "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/date/lib"
-    },
     "name": "create",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheDate instance",
+    "memberof": "module:@the-/date",
     "params": [
       {
         "type": {
@@ -2762,21 +2757,21 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Default exports",
-    "id": "module:@the-/date.default",
-    "kind": "function",
-    "longname": "module:@the-/date.default",
-    "memberof": "module:@the-/date",
     "meta": {
-      "filename": "default.js",
       "lineno": 1,
+      "filename": "create.js",
       "path": "/Users/okuni/Projects/the/packages/date/lib"
     },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/date.default",
+    "longname": "module:@the-/date.default",
     "name": "default",
-    "order": 1,
+    "kind": "function",
+    "scope": "static",
+    "description": "Default exports",
+    "memberof": "module:@the-/date",
     "returns": [
       {
         "type": {
@@ -2786,129 +2781,129 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "access": "protected",
-    "description": "Mixin for add",
-    "id": "module:@the-/date.mixins.addMix",
-    "kind": "function",
-    "longname": "module:@the-/date.mixins.addMix",
-    "memberof": "module:@the-/date.mixins",
     "meta": {
-      "filename": "addMix.js",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
-    "name": "addMix",
-    "order": 14,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Class"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "access": "protected",
-    "description": "Mixin for endOf",
-    "id": "module:@the-/date.mixins.endOf",
-    "kind": "function",
-    "longname": "module:@the-/date.mixins.endOf",
-    "memberof": "module:@the-/date.mixins",
-    "meta": {
-      "filename": "endOfMix.js",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
-    "name": "endOf",
-    "order": 35,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Class"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "access": "protected",
-    "description": "Mixin for get",
-    "id": "module:@the-/date.mixins.getMix",
-    "kind": "function",
-    "longname": "module:@the-/date.mixins.getMix",
-    "memberof": "module:@the-/date.mixins",
-    "meta": {
-      "filename": "getMix.js",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
-    "name": "getMix",
-    "order": 48,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Class"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Mixin for moment",
-    "id": "module:@the-/date.mixins.momentMix",
-    "kind": "function",
-    "longname": "module:@the-/date.mixins.momentMix",
-    "memberof": "module:@the-/date.mixins",
-    "meta": {
-      "filename": "momentMix.js",
       "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/date.mixins.addMix",
+    "longname": "module:@the-/date.mixins.addMix",
+    "name": "addMix",
+    "kind": "function",
+    "scope": "static",
+    "description": "Mixin for add",
+    "memberof": "module:@the-/date.mixins",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "access": "protected",
+    "meta": {
+      "lineno": 2,
+      "filename": "addMix.js",
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
+    "order": 14
+  },
+  {
+    "id": "module:@the-/date.mixins.endOf",
+    "longname": "module:@the-/date.mixins.endOf",
+    "name": "endOf",
+    "kind": "function",
+    "scope": "static",
+    "description": "Mixin for endOf",
+    "memberof": "module:@the-/date.mixins",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "access": "protected",
+    "meta": {
+      "lineno": 2,
+      "filename": "endOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 35
+  },
+  {
+    "id": "module:@the-/date.mixins.getMix",
+    "longname": "module:@the-/date.mixins.getMix",
+    "name": "getMix",
+    "kind": "function",
+    "scope": "static",
+    "description": "Mixin for get",
+    "memberof": "module:@the-/date.mixins",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
+    "access": "protected",
+    "meta": {
+      "lineno": 2,
+      "filename": "getMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 48
+  },
+  {
+    "id": "module:@the-/date.mixins.momentMix",
+    "longname": "module:@the-/date.mixins.momentMix",
     "name": "momentMix",
-    "order": 59,
+    "kind": "function",
+    "scope": "static",
+    "description": "Mixin for moment",
+    "memberof": "module:@the-/date.mixins",
     "params": [
       {
         "type": {
@@ -2929,22 +2924,21 @@
         "description": "Class"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "momentMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 59
   },
   {
-    "access": "protected",
-    "description": "Mixin for set",
     "id": "module:@the-/date.mixins.setMix",
-    "kind": "function",
     "longname": "module:@the-/date.mixins.setMix",
-    "memberof": "module:@the-/date.mixins",
-    "meta": {
-      "filename": "setMix.js",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "setMix",
-    "order": 62,
+    "kind": "function",
+    "scope": "static",
+    "description": "Mixin for set",
+    "memberof": "module:@the-/date.mixins",
     "params": [
       {
         "type": {
@@ -2965,22 +2959,22 @@
         "description": "Class"
       }
     ],
-    "scope": "static"
+    "access": "protected",
+    "meta": {
+      "lineno": 2,
+      "filename": "setMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 62
   },
   {
-    "access": "protected",
-    "description": "Mixin for startOf",
     "id": "module:@the-/date.mixins.startOf",
-    "kind": "function",
     "longname": "module:@the-/date.mixins.startOf",
-    "memberof": "module:@the-/date.mixins",
-    "meta": {
-      "filename": "startOfMix.js",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "startOf",
-    "order": 72,
+    "kind": "function",
+    "scope": "static",
+    "description": "Mixin for startOf",
+    "memberof": "module:@the-/date.mixins",
     "params": [
       {
         "type": {
@@ -3001,22 +2995,22 @@
         "description": "Class"
       }
     ],
-    "scope": "static"
+    "access": "protected",
+    "meta": {
+      "lineno": 2,
+      "filename": "startOfMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 72
   },
   {
-    "access": "protected",
-    "description": "Mixin for subtract",
     "id": "module:@the-/date.mixins.subtractMix",
-    "kind": "function",
     "longname": "module:@the-/date.mixins.subtractMix",
-    "memberof": "module:@the-/date.mixins",
-    "meta": {
-      "filename": "subtractMix.js",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
-    },
     "name": "subtractMix",
-    "order": 85,
+    "kind": "function",
+    "scope": "static",
+    "description": "Mixin for subtract",
+    "memberof": "module:@the-/date.mixins",
     "params": [
       {
         "type": {
@@ -3037,104 +3031,110 @@
         "description": "Class"
       }
     ],
-    "scope": "static"
+    "access": "protected",
+    "meta": {
+      "lineno": 2,
+      "filename": "subtractMix.js",
+      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+    },
+    "order": 85
   },
   {
     "id": "module:@the-/date.mixins.addMix~AddMixed",
-    "kind": "class",
     "longname": "module:@the-/date.mixins.addMix~AddMixed",
+    "name": "AddMixed",
+    "kind": "class",
+    "scope": "inner",
     "memberof": "module:@the-/date.mixins.addMix",
     "meta": {
-      "filename": "addMix.js",
       "lineno": 16,
+      "filename": "addMix.js",
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
-    "name": "AddMixed",
-    "order": 15,
-    "scope": "inner"
+    "order": 15
   },
   {
     "id": "module:@the-/date.mixins.endOf~EndOfMixed",
-    "kind": "class",
     "longname": "module:@the-/date.mixins.endOf~EndOfMixed",
+    "name": "EndOfMixed",
+    "kind": "class",
+    "scope": "inner",
     "memberof": "module:@the-/date.mixins.endOf",
     "meta": {
-      "filename": "endOfMix.js",
       "lineno": 16,
+      "filename": "endOfMix.js",
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
-    "name": "EndOfMixed",
-    "order": 36,
-    "scope": "inner"
+    "order": 36
   },
   {
     "id": "module:@the-/date.mixins.getMix~GetMixed",
-    "kind": "class",
     "longname": "module:@the-/date.mixins.getMix~GetMixed",
+    "name": "GetMixed",
+    "kind": "class",
+    "scope": "inner",
     "memberof": "module:@the-/date.mixins.getMix",
     "meta": {
-      "filename": "getMix.js",
       "lineno": 15,
+      "filename": "getMix.js",
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
-    "name": "GetMixed",
-    "order": 49,
-    "scope": "inner"
+    "order": 49
   },
   {
     "id": "module:@the-/date.mixins.momentMix~MomentMixed",
-    "kind": "class",
     "longname": "module:@the-/date.mixins.momentMix~MomentMixed",
+    "name": "MomentMixed",
+    "kind": "class",
+    "scope": "inner",
     "memberof": "module:@the-/date.mixins.momentMix",
     "meta": {
-      "filename": "momentMix.js",
       "lineno": 22,
+      "filename": "momentMix.js",
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
-    "name": "MomentMixed",
-    "order": 60,
-    "scope": "inner"
+    "order": 60
   },
   {
     "id": "module:@the-/date.mixins.setMix~SetMixed",
-    "kind": "class",
     "longname": "module:@the-/date.mixins.setMix~SetMixed",
+    "name": "SetMixed",
+    "kind": "class",
+    "scope": "inner",
     "memberof": "module:@the-/date.mixins.setMix",
     "meta": {
-      "filename": "setMix.js",
       "lineno": 16,
+      "filename": "setMix.js",
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
-    "name": "SetMixed",
-    "order": 63,
-    "scope": "inner"
+    "order": 63
   },
   {
     "id": "module:@the-/date.mixins.startOfMix~StartOfMixed",
-    "kind": "class",
     "longname": "module:@the-/date.mixins.startOfMix~StartOfMixed",
+    "name": "StartOfMixed",
+    "kind": "class",
+    "scope": "inner",
     "memberof": "module:@the-/date.mixins.startOfMix",
     "meta": {
-      "filename": "startOfMix.js",
       "lineno": 16,
+      "filename": "startOfMix.js",
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
-    "name": "StartOfMixed",
-    "order": 73,
-    "scope": "inner"
+    "order": 73
   },
   {
     "id": "module:@the-/date.mixins.subtractMix~SubtractMixed",
-    "kind": "class",
     "longname": "module:@the-/date.mixins.subtractMix~SubtractMixed",
+    "name": "SubtractMixed",
+    "kind": "class",
+    "scope": "inner",
     "memberof": "module:@the-/date.mixins.subtractMix",
     "meta": {
-      "filename": "subtractMix.js",
       "lineno": 16,
+      "filename": "subtractMix.js",
       "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
     },
-    "name": "SubtractMixed",
-    "order": 86,
-    "scope": "inner"
+    "order": 86
   }
 ]

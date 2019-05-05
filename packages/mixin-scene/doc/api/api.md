@@ -8,88 +8,9 @@
 </dd>
 </dl>
 
-## Members
-
-<dl>
-<dt><a href="#isReady">isReady</a></dt>
-<dd><p>Get is ready or not</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
-<dt><a href="#reset">reset(queues)</a></dt>
-<dd><p>Rest toasts</p>
-</dd>
-<dt><a href="#showError">showError(message)</a></dt>
-<dd><p>Show error toast</p>
-</dd>
-<dt><a href="#showInfo">showInfo(message)</a></dt>
-<dd><p>Show info toast</p>
-</dd>
-<dt><a href="#showWarn">showWarn(message)</a></dt>
-<dd><p>Show warn toast</p>
-</dd>
-<dt><a href="#goBack">goBack()</a></dt>
-<dd><p>Go Back</p>
-</dd>
-<dt><a href="#busyFor">busyFor(duration)</a> ⇒ <code>Promise.&lt;undefined&gt;</code></dt>
-<dd><p>Wait busy for</p>
-</dd>
-<dt><a href="#busyWhile">busyWhile(task)</a> ⇒ <code>Promise.&lt;undefined&gt;</code></dt>
-<dd><p>Set busy true while task active</p>
-</dd>
-<dt><a href="#isBusy">isBusy()</a> ⇒ <code>boolean</code></dt>
-<dd><p>Is busy or not</p>
-</dd>
-<dt><a href="#waitWhileBusy">waitWhileBusy()</a> ⇒ <code>Promise.&lt;undefined&gt;</code></dt>
-<dd><p>Wait while busy</p>
-</dd>
-<dt><a href="#addEntities">addEntities(entities, [options])</a></dt>
-<dd><p>Add entities</p>
-</dd>
-<dt><a href="#addEntity">addEntity(entity, [options])</a></dt>
-<dd><p>Add a entity</p>
-</dd>
-<dt><a href="#deleteEntity">deleteEntity(entity)</a></dt>
-<dd><p>Delete entity</p>
-</dd>
-<dt><a href="#getEntities">getEntities()</a> ⇒ <code>Array.&lt;Object&gt;</code></dt>
-<dd><p>Get entities</p>
-</dd>
-<dt><a href="#receiveEntity">receiveEntity(entity, [options])</a></dt>
-<dd><p>Receive an entity</p>
-</dd>
-<dt><a href="#updateEntity">updateEntity(entity)</a></dt>
-<dd><p>Update existing entity</p>
-</dd>
-<dt><a href="#getEntry">getEntry([options])</a> ⇒ <code>Object</code></dt>
-<dd><p>Get entry values</p>
-</dd>
-<dt><a href="#hasEntryErrorFor">hasEntryErrorFor(name)</a> ⇒ <code>boolean</code></dt>
-<dd></dd>
-<dt><a href="#processEntry">processEntry(handler)</a> ⇒ <code>Promise.&lt;undefined&gt;</code></dt>
-<dd><p>Process an entry</p>
-</dd>
-<dt><a href="#resetEntry">resetEntry()</a></dt>
-<dd><p>Reset entry</p>
-</dd>
-<dt><a href="#setEntry">setEntry(values)</a></dt>
-<dd><p>Set entry values</p>
-</dd>
-<dt><a href="#setEntryErrors">setEntryErrors(errors)</a></dt>
-<dd><p>Set entry errors</p>
-</dd>
-<dt><a href="#getFilter">getFilter()</a> ⇒ <code>Object</code></dt>
-<dd><p>Get filter</p>
-</dd>
-<dt><a href="#setFilter">setFilter(filter)</a></dt>
-<dd><p>Set filter</p>
-</dd>
-<dt><a href="#setFilterByQ">setFilterByQ()</a></dt>
-<dd><p>Set filters by q</p>
-</dd>
 <dt><a href="#replaceHistoryByQuery">replaceHistoryByQuery(query)</a></dt>
 <dd><p>Replace history with query</p>
 </dd>
@@ -98,18 +19,6 @@
 </dd>
 <dt><a href="#isKnownId">isKnownId(id)</a> ⇒ <code>boolean</code></dt>
 <dd><p>Check if the id is known</p>
-</dd>
-<dt><a href="#getLimit">getLimit()</a> ⇒ <code>number</code></dt>
-<dd><p>Get limit</p>
-</dd>
-<dt><a href="#nextLimit">nextLimit()</a> ⇒ <code>number</code></dt>
-<dd><p>Next limit</p>
-</dd>
-<dt><a href="#setLimit">setLimit(limit)</a></dt>
-<dd><p>Set limit</p>
-</dd>
-<dt><a href="#updateToNextLimit">updateToNextLimit()</a></dt>
-<dd><p>Update to next limit</p>
 </dd>
 <dt><a href="#changeLocationTo">changeLocationTo(href)</a></dt>
 <dd><p>Change location to url</p>
@@ -123,9 +32,6 @@
 <dt><a href="#setLocationHash">setLocationHash(hash)</a></dt>
 <dd><p>Set location hash</p>
 </dd>
-<dt><a href="#getPage">getPage()</a> ⇒ <code>Object</code></dt>
-<dd><p>Get page data</p>
-</dd>
 <dt><a href="#getQueryFromSearch">getQueryFromSearch([search])</a> ⇒ <code>Object</code></dt>
 <dd><p>Get query from search</p>
 </dd>
@@ -135,29 +41,8 @@
 <dt><a href="#queryWithSearch">queryWithSearch(search)</a> ⇒ <code>Object</code></dt>
 <dd><p>Query with search</p>
 </dd>
-<dt><a href="#ifReady">ifReady(task)</a> ⇒ <code>Promise.&lt;*&gt;</code></dt>
-<dd><p>Do only if ready</p>
-</dd>
-<dt><a href="#readyWhen">readyWhen(task)</a> ⇒ <code>Promise.&lt;*&gt;</code></dt>
-<dd><p>Set ready when done</p>
-</dd>
-<dt><a href="#unlessReady">unlessReady(task)</a> ⇒ <code>Promise.&lt;*&gt;</code></dt>
-<dd><p>Do unless ready</p>
-</dd>
 <dt><a href="#resultFor">resultFor(action)</a> ⇒ <code>Promise.&lt;*&gt;</code></dt>
 <dd><p>Do action and store result</p>
-</dd>
-<dt><a href="#addTargets">addTargets(targets)</a></dt>
-<dd><p>Add targets</p>
-</dd>
-<dt><a href="#getTargetIds">getTargetIds()</a> ⇒ <code>Array.&lt;string&gt;</code></dt>
-<dd><p>Get ids of target</p>
-</dd>
-<dt><a href="#getTargetRefs">getTargetRefs()</a> ⇒ <code>Array.&lt;string&gt;</code></dt>
-<dd><p>Get refs of target</p>
-</dd>
-<dt><a href="#getTargets">getTargets()</a></dt>
-<dd><p>Get target values</p>
 </dd>
 <dt><a href="#asClassMixin">asClassMixin()</a></dt>
 <dd><p>Define as class mixin</p>
@@ -171,30 +56,74 @@
 ## @the-/mixin-scene
 Mixins for the-scene
 
-**Version**: 15.4.2  
+**Version**: 15.4.4  
 **License**: MIT  
 
 * [@the-/mixin-scene](#module_@the-/mixin-scene)
     * [.bindDefaults()](#module_@the-/mixin-scene.bindDefaults) ⇒ <code>function</code>
     * [.bindScope()](#module_@the-/mixin-scene.bindScope) ⇒ <code>function</code>
     * ~~[.siteToast()](#module_@the-/mixin-scene.siteToast) ⇒ <code>function</code>~~
+        * [~SiteToastMixed](#module_@the-/mixin-scene.siteToast..SiteToastMixed)
+            * [.reset(queues)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.reset)
+            * [.showError(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showError)
+            * [.showInfo(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showInfo)
+            * [.showWarn(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showWarn)
     * [.withBack(Class)](#module_@the-/mixin-scene.withBack) ⇒ <code>function</code>
+        * [~WithBackMixed](#module_@the-/mixin-scene.withBack..WithBackMixed)
+            * [.goBack()](#module_@the-/mixin-scene.withBack..WithBackMixed.goBack)
     * [.withBusy(Class)](#module_@the-/mixin-scene.withBusy) ⇒ <code>function</code>
+        * [~WithBusyMixed](#module_@the-/mixin-scene.withBusy..WithBusyMixed)
     * [.withEntities(Class)](#module_@the-/mixin-scene.withEntities) ⇒ <code>function</code>
+        * [~WithEntities](#module_@the-/mixin-scene.withEntities..WithEntities)
+            * [.addEntities(entities, [options])](#module_@the-/mixin-scene.withEntities..WithEntities.addEntities)
+            * [.addEntity(entity, [options])](#module_@the-/mixin-scene.withEntities..WithEntities.addEntity)
+            * [.deleteEntity(entity)](#module_@the-/mixin-scene.withEntities..WithEntities.deleteEntity)
+            * [.getEntities()](#module_@the-/mixin-scene.withEntities..WithEntities.getEntities) ⇒ <code>Array.&lt;Object&gt;</code>
+            * [.receiveEntity(entity, [options])](#module_@the-/mixin-scene.withEntities..WithEntities.receiveEntity)
+            * [.updateEntity(entity)](#module_@the-/mixin-scene.withEntities..WithEntities.updateEntity)
     * [.withEntry(Class)](#module_@the-/mixin-scene.withEntry) ⇒ <code>function</code>
+        * [~WithEntryMixed](#module_@the-/mixin-scene.withEntry..WithEntryMixed)
+            * [.getEntry([options])](#module_@the-/mixin-scene.withEntry..WithEntryMixed.getEntry) ⇒ <code>Object</code>
+            * [.hasEntryErrorFor(name)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.hasEntryErrorFor) ⇒ <code>boolean</code>
+            * [.processEntry(handler)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.processEntry) ⇒ <code>Promise.&lt;undefined&gt;</code>
+            * [.resetEntry()](#module_@the-/mixin-scene.withEntry..WithEntryMixed.resetEntry)
+            * [.setEntry(newValues)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.setEntry)
+            * [.setEntryErrors(errors)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.setEntryErrors)
     * [.withFailure(Class)](#module_@the-/mixin-scene.withFailure) ⇒ <code>function</code>
     * [.withFilter(Class)](#module_@the-/mixin-scene.withFilter) ⇒ <code>function</code>
+        * [~WithFilterMixed](#module_@the-/mixin-scene.withFilter..WithFilterMixed)
+            * [.getFilter()](#module_@the-/mixin-scene.withFilter..WithFilterMixed.getFilter) ⇒ <code>Object</code>
+            * [.setFilter(filter)](#module_@the-/mixin-scene.withFilter..WithFilterMixed.setFilter)
+            * [.setFilterByQ()](#module_@the-/mixin-scene.withFilter..WithFilterMixed.setFilterByQ)
     * ~~[.withForm(Class)](#module_@the-/mixin-scene.withForm) ⇒ <code>function</code>~~
     * [.withHistory(Class)](#module_@the-/mixin-scene.withHistory) ⇒ <code>function</code>
     * [.withId(Class)](#module_@the-/mixin-scene.withId) ⇒ <code>function</code>
     * [.withLimit(Class)](#module_@the-/mixin-scene.withLimit) ⇒ <code>function</code>
+        * [~WithLimitMixed](#module_@the-/mixin-scene.withLimit..WithLimitMixed)
+            * [.getLimit()](#module_@the-/mixin-scene.withLimit..WithLimitMixed.getLimit) ⇒ <code>number</code>
+            * [.nextLimit()](#module_@the-/mixin-scene.withLimit..WithLimitMixed.nextLimit) ⇒ <code>number</code>
+            * [.setLimit(limit)](#module_@the-/mixin-scene.withLimit..WithLimitMixed.setLimit)
+            * [.updateToNextLimit()](#module_@the-/mixin-scene.withLimit..WithLimitMixed.updateToNextLimit)
     * [.withLocation(Class)](#module_@the-/mixin-scene.withLocation) ⇒ <code>function</code>
     * [.withPage(Class)](#module_@the-/mixin-scene.withPage) ⇒ <code>function</code>
-    * [.withQuery(Class)](#module_@the-/mixin-scene.withQuery) ⇒ <code>function</code>
+        * [~WithPageMixed](#module_@the-/mixin-scene.withPage..WithPageMixed)
+    * ~~[.withQuery(Class)](#module_@the-/mixin-scene.withQuery) ⇒ <code>function</code>~~
     * [.withReady(Class)](#module_@the-/mixin-scene.withReady) ⇒ <code>function</code>
+        * [~WithReadyMixed](#module_@the-/mixin-scene.withReady..WithReadyMixed)
+            * [.isReady](#module_@the-/mixin-scene.withReady..WithReadyMixed.isReady)
+            * [.ifReady(task)](#module_@the-/mixin-scene.withReady..WithReadyMixed.ifReady) ⇒ <code>Promise.&lt;\*&gt;</code>
+            * [.readyWhen(task)](#module_@the-/mixin-scene.withReady..WithReadyMixed.readyWhen) ⇒ <code>Promise.&lt;\*&gt;</code>
+            * [.unlessReady(task)](#module_@the-/mixin-scene.withReady..WithReadyMixed.unlessReady) ⇒ <code>Promise.&lt;\*&gt;</code>
     * [.withResult(Class)](#module_@the-/mixin-scene.withResult) ⇒ <code>function</code>
+        * [~WithResultMixed](#module_@the-/mixin-scene.withResult..WithResultMixed)
     * [.withSort(Class)](#module_@the-/mixin-scene.withSort) ⇒ <code>function</code>
+        * [~WithSortMixed](#module_@the-/mixin-scene.withSort..WithSortMixed)
     * [.withTargets(Class)](#module_@the-/mixin-scene.withTargets) ⇒ <code>function</code>
+        * [~WithTargetsMixed](#module_@the-/mixin-scene.withTargets..WithTargetsMixed)
+            * [.addTargets(targets)](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.addTargets)
+            * [.getTargetIds()](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargetIds) ⇒ <code>Array.&lt;string&gt;</code>
+            * [.getTargetRefs()](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargetRefs) ⇒ <code>Array.&lt;string&gt;</code>
+            * [.getTargets()](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargets)
     * [.withValues(Class)](#module_@the-/mixin-scene.withValues) ⇒ <code>function</code>
 
 <a name="module_@the-/mixin-scene.bindDefaults"></a>
@@ -220,6 +149,69 @@ Site toast mix
 
 **Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
 **Returns**: <code>function</code> - Annotated class  
+
+* ~~[.siteToast()](#module_@the-/mixin-scene.siteToast) ⇒ <code>function</code>~~
+    * [~SiteToastMixed](#module_@the-/mixin-scene.siteToast..SiteToastMixed)
+        * [.reset(queues)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.reset)
+        * [.showError(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showError)
+        * [.showInfo(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showInfo)
+        * [.showWarn(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showWarn)
+
+<a name="module_@the-/mixin-scene.siteToast..SiteToastMixed"></a>
+
+#### siteToast~SiteToastMixed
+**Kind**: inner class of [<code>siteToast</code>](#module_@the-/mixin-scene.siteToast)  
+
+* [~SiteToastMixed](#module_@the-/mixin-scene.siteToast..SiteToastMixed)
+    * [.reset(queues)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.reset)
+    * [.showError(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showError)
+    * [.showInfo(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showInfo)
+    * [.showWarn(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showWarn)
+
+<a name="module_@the-/mixin-scene.siteToast..SiteToastMixed.reset"></a>
+
+##### SiteToastMixed.reset(queues)
+Rest toasts
+
+**Kind**: static method of [<code>SiteToastMixed</code>](#module_@the-/mixin-scene.siteToast..SiteToastMixed)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| queues | <code>Object.&lt;string, Array.&lt;string&gt;&gt;</code> | Toast queue |
+
+<a name="module_@the-/mixin-scene.siteToast..SiteToastMixed.showError"></a>
+
+##### SiteToastMixed.showError(message)
+Show error toast
+
+**Kind**: static method of [<code>SiteToastMixed</code>](#module_@the-/mixin-scene.siteToast..SiteToastMixed)  
+
+| Param | Type |
+| --- | --- |
+| message | <code>string</code> | 
+
+<a name="module_@the-/mixin-scene.siteToast..SiteToastMixed.showInfo"></a>
+
+##### SiteToastMixed.showInfo(message)
+Show info toast
+
+**Kind**: static method of [<code>SiteToastMixed</code>](#module_@the-/mixin-scene.siteToast..SiteToastMixed)  
+
+| Param | Type |
+| --- | --- |
+| message | <code>string</code> | 
+
+<a name="module_@the-/mixin-scene.siteToast..SiteToastMixed.showWarn"></a>
+
+##### SiteToastMixed.showWarn(message)
+Show warn toast
+
+**Kind**: static method of [<code>SiteToastMixed</code>](#module_@the-/mixin-scene.siteToast..SiteToastMixed)  
+
+| Param | Type |
+| --- | --- |
+| message | <code>string</code> | 
+
 <a name="module_@the-/mixin-scene.withBack"></a>
 
 ### mixinScene.withBack(Class) ⇒ <code>function</code>
@@ -232,6 +224,21 @@ withBack mixin
 | --- | --- | --- |
 | Class | <code>function</code> | Class to mix |
 
+
+* [.withBack(Class)](#module_@the-/mixin-scene.withBack) ⇒ <code>function</code>
+    * [~WithBackMixed](#module_@the-/mixin-scene.withBack..WithBackMixed)
+        * [.goBack()](#module_@the-/mixin-scene.withBack..WithBackMixed.goBack)
+
+<a name="module_@the-/mixin-scene.withBack..WithBackMixed"></a>
+
+#### withBack~WithBackMixed
+**Kind**: inner class of [<code>withBack</code>](#module_@the-/mixin-scene.withBack)  
+<a name="module_@the-/mixin-scene.withBack..WithBackMixed.goBack"></a>
+
+##### WithBackMixed.goBack()
+Go Back
+
+**Kind**: static method of [<code>WithBackMixed</code>](#module_@the-/mixin-scene.withBack..WithBackMixed)  
 <a name="module_@the-/mixin-scene.withBusy"></a>
 
 ### mixinScene.withBusy(Class) ⇒ <code>function</code>
@@ -244,6 +251,10 @@ withBusy mixin
 | --- | --- | --- |
 | Class | <code>function</code> | Class to mix |
 
+<a name="module_@the-/mixin-scene.withBusy..WithBusyMixed"></a>
+
+#### withBusy~WithBusyMixed
+**Kind**: inner class of [<code>withBusy</code>](#module_@the-/mixin-scene.withBusy)  
 <a name="module_@the-/mixin-scene.withEntities"></a>
 
 ### mixinScene.withEntities(Class) ⇒ <code>function</code>
@@ -256,6 +267,93 @@ withEntities mixin
 | --- | --- | --- |
 | Class | <code>function</code> | Class to mix |
 
+
+* [.withEntities(Class)](#module_@the-/mixin-scene.withEntities) ⇒ <code>function</code>
+    * [~WithEntities](#module_@the-/mixin-scene.withEntities..WithEntities)
+        * [.addEntities(entities, [options])](#module_@the-/mixin-scene.withEntities..WithEntities.addEntities)
+        * [.addEntity(entity, [options])](#module_@the-/mixin-scene.withEntities..WithEntities.addEntity)
+        * [.deleteEntity(entity)](#module_@the-/mixin-scene.withEntities..WithEntities.deleteEntity)
+        * [.getEntities()](#module_@the-/mixin-scene.withEntities..WithEntities.getEntities) ⇒ <code>Array.&lt;Object&gt;</code>
+        * [.receiveEntity(entity, [options])](#module_@the-/mixin-scene.withEntities..WithEntities.receiveEntity)
+        * [.updateEntity(entity)](#module_@the-/mixin-scene.withEntities..WithEntities.updateEntity)
+
+<a name="module_@the-/mixin-scene.withEntities..WithEntities"></a>
+
+#### withEntities~WithEntities
+**Kind**: inner class of [<code>withEntities</code>](#module_@the-/mixin-scene.withEntities)  
+
+* [~WithEntities](#module_@the-/mixin-scene.withEntities..WithEntities)
+    * [.addEntities(entities, [options])](#module_@the-/mixin-scene.withEntities..WithEntities.addEntities)
+    * [.addEntity(entity, [options])](#module_@the-/mixin-scene.withEntities..WithEntities.addEntity)
+    * [.deleteEntity(entity)](#module_@the-/mixin-scene.withEntities..WithEntities.deleteEntity)
+    * [.getEntities()](#module_@the-/mixin-scene.withEntities..WithEntities.getEntities) ⇒ <code>Array.&lt;Object&gt;</code>
+    * [.receiveEntity(entity, [options])](#module_@the-/mixin-scene.withEntities..WithEntities.receiveEntity)
+    * [.updateEntity(entity)](#module_@the-/mixin-scene.withEntities..WithEntities.updateEntity)
+
+<a name="module_@the-/mixin-scene.withEntities..WithEntities.addEntities"></a>
+
+##### WithEntities.addEntities(entities, [options])
+Add entities
+
+**Kind**: static method of [<code>WithEntities</code>](#module_@the-/mixin-scene.withEntities..WithEntities)  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| entities | <code>Array.&lt;Object&gt;</code> |  |  |
+| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
+
+<a name="module_@the-/mixin-scene.withEntities..WithEntities.addEntity"></a>
+
+##### WithEntities.addEntity(entity, [options])
+Add a entity
+
+**Kind**: static method of [<code>WithEntities</code>](#module_@the-/mixin-scene.withEntities..WithEntities)  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| entity | <code>Object</code> |  |  |
+| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
+
+<a name="module_@the-/mixin-scene.withEntities..WithEntities.deleteEntity"></a>
+
+##### WithEntities.deleteEntity(entity)
+Delete entity
+
+**Kind**: static method of [<code>WithEntities</code>](#module_@the-/mixin-scene.withEntities..WithEntities)  
+
+| Param | Type |
+| --- | --- |
+| entity | <code>Object</code> | 
+
+<a name="module_@the-/mixin-scene.withEntities..WithEntities.getEntities"></a>
+
+##### WithEntities.getEntities() ⇒ <code>Array.&lt;Object&gt;</code>
+Get entities
+
+**Kind**: static method of [<code>WithEntities</code>](#module_@the-/mixin-scene.withEntities..WithEntities)  
+<a name="module_@the-/mixin-scene.withEntities..WithEntities.receiveEntity"></a>
+
+##### WithEntities.receiveEntity(entity, [options])
+Receive an entity
+
+**Kind**: static method of [<code>WithEntities</code>](#module_@the-/mixin-scene.withEntities..WithEntities)  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| entity | <code>Object</code> |  | Entity to set |
+| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
+
+<a name="module_@the-/mixin-scene.withEntities..WithEntities.updateEntity"></a>
+
+##### WithEntities.updateEntity(entity)
+Update existing entity
+
+**Kind**: static method of [<code>WithEntities</code>](#module_@the-/mixin-scene.withEntities..WithEntities)  
+
+| Param | Type |
+| --- | --- |
+| entity | <code>Object</code> | 
+
 <a name="module_@the-/mixin-scene.withEntry"></a>
 
 ### mixinScene.withEntry(Class) ⇒ <code>function</code>
@@ -267,6 +365,88 @@ withEntry mixin
 | Param | Type | Description |
 | --- | --- | --- |
 | Class | <code>function</code> | Class to mix |
+
+
+* [.withEntry(Class)](#module_@the-/mixin-scene.withEntry) ⇒ <code>function</code>
+    * [~WithEntryMixed](#module_@the-/mixin-scene.withEntry..WithEntryMixed)
+        * [.getEntry([options])](#module_@the-/mixin-scene.withEntry..WithEntryMixed.getEntry) ⇒ <code>Object</code>
+        * [.hasEntryErrorFor(name)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.hasEntryErrorFor) ⇒ <code>boolean</code>
+        * [.processEntry(handler)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.processEntry) ⇒ <code>Promise.&lt;undefined&gt;</code>
+        * [.resetEntry()](#module_@the-/mixin-scene.withEntry..WithEntryMixed.resetEntry)
+        * [.setEntry(newValues)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.setEntry)
+        * [.setEntryErrors(errors)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.setEntryErrors)
+
+<a name="module_@the-/mixin-scene.withEntry..WithEntryMixed"></a>
+
+#### withEntry~WithEntryMixed
+**Kind**: inner class of [<code>withEntry</code>](#module_@the-/mixin-scene.withEntry)  
+
+* [~WithEntryMixed](#module_@the-/mixin-scene.withEntry..WithEntryMixed)
+    * [.getEntry([options])](#module_@the-/mixin-scene.withEntry..WithEntryMixed.getEntry) ⇒ <code>Object</code>
+    * [.hasEntryErrorFor(name)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.hasEntryErrorFor) ⇒ <code>boolean</code>
+    * [.processEntry(handler)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.processEntry) ⇒ <code>Promise.&lt;undefined&gt;</code>
+    * [.resetEntry()](#module_@the-/mixin-scene.withEntry..WithEntryMixed.resetEntry)
+    * [.setEntry(newValues)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.setEntry)
+    * [.setEntryErrors(errors)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.setEntryErrors)
+
+<a name="module_@the-/mixin-scene.withEntry..WithEntryMixed.getEntry"></a>
+
+##### WithEntryMixed.getEntry([options]) ⇒ <code>Object</code>
+Get entry values
+
+**Kind**: static method of [<code>WithEntryMixed</code>](#module_@the-/mixin-scene.withEntry..WithEntryMixed)  
+
+| Param | Type | Default |
+| --- | --- | --- |
+| [options] | <code>Object</code> | <code>{}</code> | 
+
+<a name="module_@the-/mixin-scene.withEntry..WithEntryMixed.hasEntryErrorFor"></a>
+
+##### WithEntryMixed.hasEntryErrorFor(name) ⇒ <code>boolean</code>
+**Kind**: static method of [<code>WithEntryMixed</code>](#module_@the-/mixin-scene.withEntry..WithEntryMixed)  
+
+| Param | Type |
+| --- | --- |
+| name | <code>string</code> | 
+
+<a name="module_@the-/mixin-scene.withEntry..WithEntryMixed.processEntry"></a>
+
+##### WithEntryMixed.processEntry(handler) ⇒ <code>Promise.&lt;undefined&gt;</code>
+Process an entry
+
+**Kind**: static method of [<code>WithEntryMixed</code>](#module_@the-/mixin-scene.withEntry..WithEntryMixed)  
+
+| Param | Type |
+| --- | --- |
+| handler | <code>function</code> | 
+
+<a name="module_@the-/mixin-scene.withEntry..WithEntryMixed.resetEntry"></a>
+
+##### WithEntryMixed.resetEntry()
+Reset entry
+
+**Kind**: static method of [<code>WithEntryMixed</code>](#module_@the-/mixin-scene.withEntry..WithEntryMixed)  
+<a name="module_@the-/mixin-scene.withEntry..WithEntryMixed.setEntry"></a>
+
+##### WithEntryMixed.setEntry(newValues)
+Set entry values
+
+**Kind**: static method of [<code>WithEntryMixed</code>](#module_@the-/mixin-scene.withEntry..WithEntryMixed)  
+
+| Param | Type |
+| --- | --- |
+| newValues | <code>Object</code> | 
+
+<a name="module_@the-/mixin-scene.withEntry..WithEntryMixed.setEntryErrors"></a>
+
+##### WithEntryMixed.setEntryErrors(errors)
+Set entry errors
+
+**Kind**: static method of [<code>WithEntryMixed</code>](#module_@the-/mixin-scene.withEntry..WithEntryMixed)  
+
+| Param | Type |
+| --- | --- |
+| errors | <code>Object</code> | 
 
 <a name="module_@the-/mixin-scene.withFailure"></a>
 
@@ -292,6 +472,46 @@ withFilter mixin
 | --- | --- | --- |
 | Class | <code>function</code> | Class to mix |
 
+
+* [.withFilter(Class)](#module_@the-/mixin-scene.withFilter) ⇒ <code>function</code>
+    * [~WithFilterMixed](#module_@the-/mixin-scene.withFilter..WithFilterMixed)
+        * [.getFilter()](#module_@the-/mixin-scene.withFilter..WithFilterMixed.getFilter) ⇒ <code>Object</code>
+        * [.setFilter(filter)](#module_@the-/mixin-scene.withFilter..WithFilterMixed.setFilter)
+        * [.setFilterByQ()](#module_@the-/mixin-scene.withFilter..WithFilterMixed.setFilterByQ)
+
+<a name="module_@the-/mixin-scene.withFilter..WithFilterMixed"></a>
+
+#### withFilter~WithFilterMixed
+**Kind**: inner class of [<code>withFilter</code>](#module_@the-/mixin-scene.withFilter)  
+
+* [~WithFilterMixed](#module_@the-/mixin-scene.withFilter..WithFilterMixed)
+    * [.getFilter()](#module_@the-/mixin-scene.withFilter..WithFilterMixed.getFilter) ⇒ <code>Object</code>
+    * [.setFilter(filter)](#module_@the-/mixin-scene.withFilter..WithFilterMixed.setFilter)
+    * [.setFilterByQ()](#module_@the-/mixin-scene.withFilter..WithFilterMixed.setFilterByQ)
+
+<a name="module_@the-/mixin-scene.withFilter..WithFilterMixed.getFilter"></a>
+
+##### WithFilterMixed.getFilter() ⇒ <code>Object</code>
+Get filter
+
+**Kind**: static method of [<code>WithFilterMixed</code>](#module_@the-/mixin-scene.withFilter..WithFilterMixed)  
+<a name="module_@the-/mixin-scene.withFilter..WithFilterMixed.setFilter"></a>
+
+##### WithFilterMixed.setFilter(filter)
+Set filter
+
+**Kind**: static method of [<code>WithFilterMixed</code>](#module_@the-/mixin-scene.withFilter..WithFilterMixed)  
+
+| Param | Type |
+| --- | --- |
+| filter | <code>Object</code> | 
+
+<a name="module_@the-/mixin-scene.withFilter..WithFilterMixed.setFilterByQ"></a>
+
+##### WithFilterMixed.setFilterByQ()
+Set filters by q
+
+**Kind**: static method of [<code>WithFilterMixed</code>](#module_@the-/mixin-scene.withFilter..WithFilterMixed)  
 <a name="module_@the-/mixin-scene.withForm"></a>
 
 ### ~~mixinScene.withForm(Class) ⇒ <code>function</code>~~
@@ -342,6 +562,54 @@ withLimit mixin
 | --- | --- | --- |
 | Class | <code>function</code> | Class to mix |
 
+
+* [.withLimit(Class)](#module_@the-/mixin-scene.withLimit) ⇒ <code>function</code>
+    * [~WithLimitMixed](#module_@the-/mixin-scene.withLimit..WithLimitMixed)
+        * [.getLimit()](#module_@the-/mixin-scene.withLimit..WithLimitMixed.getLimit) ⇒ <code>number</code>
+        * [.nextLimit()](#module_@the-/mixin-scene.withLimit..WithLimitMixed.nextLimit) ⇒ <code>number</code>
+        * [.setLimit(limit)](#module_@the-/mixin-scene.withLimit..WithLimitMixed.setLimit)
+        * [.updateToNextLimit()](#module_@the-/mixin-scene.withLimit..WithLimitMixed.updateToNextLimit)
+
+<a name="module_@the-/mixin-scene.withLimit..WithLimitMixed"></a>
+
+#### withLimit~WithLimitMixed
+**Kind**: inner class of [<code>withLimit</code>](#module_@the-/mixin-scene.withLimit)  
+
+* [~WithLimitMixed](#module_@the-/mixin-scene.withLimit..WithLimitMixed)
+    * [.getLimit()](#module_@the-/mixin-scene.withLimit..WithLimitMixed.getLimit) ⇒ <code>number</code>
+    * [.nextLimit()](#module_@the-/mixin-scene.withLimit..WithLimitMixed.nextLimit) ⇒ <code>number</code>
+    * [.setLimit(limit)](#module_@the-/mixin-scene.withLimit..WithLimitMixed.setLimit)
+    * [.updateToNextLimit()](#module_@the-/mixin-scene.withLimit..WithLimitMixed.updateToNextLimit)
+
+<a name="module_@the-/mixin-scene.withLimit..WithLimitMixed.getLimit"></a>
+
+##### WithLimitMixed.getLimit() ⇒ <code>number</code>
+Get limit
+
+**Kind**: static method of [<code>WithLimitMixed</code>](#module_@the-/mixin-scene.withLimit..WithLimitMixed)  
+<a name="module_@the-/mixin-scene.withLimit..WithLimitMixed.nextLimit"></a>
+
+##### WithLimitMixed.nextLimit() ⇒ <code>number</code>
+Next limit
+
+**Kind**: static method of [<code>WithLimitMixed</code>](#module_@the-/mixin-scene.withLimit..WithLimitMixed)  
+<a name="module_@the-/mixin-scene.withLimit..WithLimitMixed.setLimit"></a>
+
+##### WithLimitMixed.setLimit(limit)
+Set limit
+
+**Kind**: static method of [<code>WithLimitMixed</code>](#module_@the-/mixin-scene.withLimit..WithLimitMixed)  
+
+| Param | Type |
+| --- | --- |
+| limit | <code>number</code> | 
+
+<a name="module_@the-/mixin-scene.withLimit..WithLimitMixed.updateToNextLimit"></a>
+
+##### WithLimitMixed.updateToNextLimit()
+Update to next limit
+
+**Kind**: static method of [<code>WithLimitMixed</code>](#module_@the-/mixin-scene.withLimit..WithLimitMixed)  
 <a name="module_@the-/mixin-scene.withLocation"></a>
 
 ### mixinScene.withLocation(Class) ⇒ <code>function</code>
@@ -366,9 +634,15 @@ withPage mixin
 | --- | --- | --- |
 | Class | <code>function</code> | Class to mix |
 
+<a name="module_@the-/mixin-scene.withPage..WithPageMixed"></a>
+
+#### withPage~WithPageMixed
+**Kind**: inner class of [<code>withPage</code>](#module_@the-/mixin-scene.withPage)  
 <a name="module_@the-/mixin-scene.withQuery"></a>
 
-### mixinScene.withQuery(Class) ⇒ <code>function</code>
+### ~~mixinScene.withQuery(Class) ⇒ <code>function</code>~~
+***Deprecated***
+
 withQuery mixin
 
 **Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
@@ -390,6 +664,70 @@ withReady mixin
 | --- | --- | --- |
 | Class | <code>function</code> | Class to mix |
 
+
+* [.withReady(Class)](#module_@the-/mixin-scene.withReady) ⇒ <code>function</code>
+    * [~WithReadyMixed](#module_@the-/mixin-scene.withReady..WithReadyMixed)
+        * [.isReady](#module_@the-/mixin-scene.withReady..WithReadyMixed.isReady)
+        * [.ifReady(task)](#module_@the-/mixin-scene.withReady..WithReadyMixed.ifReady) ⇒ <code>Promise.&lt;\*&gt;</code>
+        * [.readyWhen(task)](#module_@the-/mixin-scene.withReady..WithReadyMixed.readyWhen) ⇒ <code>Promise.&lt;\*&gt;</code>
+        * [.unlessReady(task)](#module_@the-/mixin-scene.withReady..WithReadyMixed.unlessReady) ⇒ <code>Promise.&lt;\*&gt;</code>
+
+<a name="module_@the-/mixin-scene.withReady..WithReadyMixed"></a>
+
+#### withReady~WithReadyMixed
+**Kind**: inner class of [<code>withReady</code>](#module_@the-/mixin-scene.withReady)  
+
+* [~WithReadyMixed](#module_@the-/mixin-scene.withReady..WithReadyMixed)
+    * [.isReady](#module_@the-/mixin-scene.withReady..WithReadyMixed.isReady)
+    * [.ifReady(task)](#module_@the-/mixin-scene.withReady..WithReadyMixed.ifReady) ⇒ <code>Promise.&lt;\*&gt;</code>
+    * [.readyWhen(task)](#module_@the-/mixin-scene.withReady..WithReadyMixed.readyWhen) ⇒ <code>Promise.&lt;\*&gt;</code>
+    * [.unlessReady(task)](#module_@the-/mixin-scene.withReady..WithReadyMixed.unlessReady) ⇒ <code>Promise.&lt;\*&gt;</code>
+
+<a name="module_@the-/mixin-scene.withReady..WithReadyMixed.isReady"></a>
+
+##### WithReadyMixed.isReady
+Get is ready or not
+
+**Kind**: static property of [<code>WithReadyMixed</code>](#module_@the-/mixin-scene.withReady..WithReadyMixed)  
+**Properties**
+
+| Name | Type |
+| --- | --- |
+| isReady | <code>boolean</code> | 
+
+<a name="module_@the-/mixin-scene.withReady..WithReadyMixed.ifReady"></a>
+
+##### WithReadyMixed.ifReady(task) ⇒ <code>Promise.&lt;\*&gt;</code>
+Do only if ready
+
+**Kind**: static method of [<code>WithReadyMixed</code>](#module_@the-/mixin-scene.withReady..WithReadyMixed)  
+
+| Param | Type |
+| --- | --- |
+| task | <code>function</code> | 
+
+<a name="module_@the-/mixin-scene.withReady..WithReadyMixed.readyWhen"></a>
+
+##### WithReadyMixed.readyWhen(task) ⇒ <code>Promise.&lt;\*&gt;</code>
+Set ready when done
+
+**Kind**: static method of [<code>WithReadyMixed</code>](#module_@the-/mixin-scene.withReady..WithReadyMixed)  
+
+| Param | Type |
+| --- | --- |
+| task | <code>function</code> | 
+
+<a name="module_@the-/mixin-scene.withReady..WithReadyMixed.unlessReady"></a>
+
+##### WithReadyMixed.unlessReady(task) ⇒ <code>Promise.&lt;\*&gt;</code>
+Do unless ready
+
+**Kind**: static method of [<code>WithReadyMixed</code>](#module_@the-/mixin-scene.withReady..WithReadyMixed)  
+
+| Param | Type |
+| --- | --- |
+| task | <code>function</code> | 
+
 <a name="module_@the-/mixin-scene.withResult"></a>
 
 ### mixinScene.withResult(Class) ⇒ <code>function</code>
@@ -402,6 +740,10 @@ withResult mixin
 | --- | --- | --- |
 | Class | <code>function</code> | Class to mix |
 
+<a name="module_@the-/mixin-scene.withResult..WithResultMixed"></a>
+
+#### withResult~WithResultMixed
+**Kind**: inner class of [<code>withResult</code>](#module_@the-/mixin-scene.withResult)  
 <a name="module_@the-/mixin-scene.withSort"></a>
 
 ### mixinScene.withSort(Class) ⇒ <code>function</code>
@@ -414,6 +756,10 @@ withSort mixin
 | --- | --- | --- |
 | Class | <code>function</code> | Class to mix |
 
+<a name="module_@the-/mixin-scene.withSort..WithSortMixed"></a>
+
+#### withSort~WithSortMixed
+**Kind**: inner class of [<code>withSort</code>](#module_@the-/mixin-scene.withSort)  
 <a name="module_@the-/mixin-scene.withTargets"></a>
 
 ### mixinScene.withTargets(Class) ⇒ <code>function</code>
@@ -426,6 +772,54 @@ withTargets mixin
 | --- | --- | --- |
 | Class | <code>function</code> | Class to mix |
 
+
+* [.withTargets(Class)](#module_@the-/mixin-scene.withTargets) ⇒ <code>function</code>
+    * [~WithTargetsMixed](#module_@the-/mixin-scene.withTargets..WithTargetsMixed)
+        * [.addTargets(targets)](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.addTargets)
+        * [.getTargetIds()](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargetIds) ⇒ <code>Array.&lt;string&gt;</code>
+        * [.getTargetRefs()](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargetRefs) ⇒ <code>Array.&lt;string&gt;</code>
+        * [.getTargets()](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargets)
+
+<a name="module_@the-/mixin-scene.withTargets..WithTargetsMixed"></a>
+
+#### withTargets~WithTargetsMixed
+**Kind**: inner class of [<code>withTargets</code>](#module_@the-/mixin-scene.withTargets)  
+
+* [~WithTargetsMixed](#module_@the-/mixin-scene.withTargets..WithTargetsMixed)
+    * [.addTargets(targets)](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.addTargets)
+    * [.getTargetIds()](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargetIds) ⇒ <code>Array.&lt;string&gt;</code>
+    * [.getTargetRefs()](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargetRefs) ⇒ <code>Array.&lt;string&gt;</code>
+    * [.getTargets()](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargets)
+
+<a name="module_@the-/mixin-scene.withTargets..WithTargetsMixed.addTargets"></a>
+
+##### WithTargetsMixed.addTargets(targets)
+Add targets
+
+**Kind**: static method of [<code>WithTargetsMixed</code>](#module_@the-/mixin-scene.withTargets..WithTargetsMixed)  
+
+| Param | Type |
+| --- | --- |
+| targets | <code>Array</code> | 
+
+<a name="module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargetIds"></a>
+
+##### WithTargetsMixed.getTargetIds() ⇒ <code>Array.&lt;string&gt;</code>
+Get ids of target
+
+**Kind**: static method of [<code>WithTargetsMixed</code>](#module_@the-/mixin-scene.withTargets..WithTargetsMixed)  
+<a name="module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargetRefs"></a>
+
+##### WithTargetsMixed.getTargetRefs() ⇒ <code>Array.&lt;string&gt;</code>
+Get refs of target
+
+**Kind**: static method of [<code>WithTargetsMixed</code>](#module_@the-/mixin-scene.withTargets..WithTargetsMixed)  
+<a name="module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargets"></a>
+
+##### WithTargetsMixed.getTargets()
+Get target values
+
+**Kind**: static method of [<code>WithTargetsMixed</code>](#module_@the-/mixin-scene.withTargets..WithTargetsMixed)  
 <a name="module_@the-/mixin-scene.withValues"></a>
 
 ### mixinScene.withValues(Class) ⇒ <code>function</code>
@@ -438,248 +832,6 @@ withValues mixin
 | --- | --- | --- |
 | Class | <code>function</code> | Class to mix |
 
-<a name="isReady"></a>
-
-## isReady
-Get is ready or not
-
-**Kind**: global variable  
-**Properties**
-
-| Name | Type |
-| --- | --- |
-| isReady | <code>boolean</code> | 
-
-<a name="reset"></a>
-
-## reset(queues)
-Rest toasts
-
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| queues | <code>Object.&lt;string, Array.&lt;string&gt;&gt;</code> | Toast queue |
-
-<a name="showError"></a>
-
-## showError(message)
-Show error toast
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| message | <code>string</code> | 
-
-<a name="showInfo"></a>
-
-## showInfo(message)
-Show info toast
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| message | <code>string</code> | 
-
-<a name="showWarn"></a>
-
-## showWarn(message)
-Show warn toast
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| message | <code>string</code> | 
-
-<a name="goBack"></a>
-
-## goBack()
-Go Back
-
-**Kind**: global function  
-<a name="busyFor"></a>
-
-## busyFor(duration) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Wait busy for
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| duration | <code>number</code> | 
-
-<a name="busyWhile"></a>
-
-## busyWhile(task) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Set busy true while task active
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| task | <code>function</code> | 
-
-<a name="isBusy"></a>
-
-## isBusy() ⇒ <code>boolean</code>
-Is busy or not
-
-**Kind**: global function  
-<a name="waitWhileBusy"></a>
-
-## waitWhileBusy() ⇒ <code>Promise.&lt;undefined&gt;</code>
-Wait while busy
-
-**Kind**: global function  
-<a name="addEntities"></a>
-
-## addEntities(entities, [options])
-Add entities
-
-**Kind**: global function  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| entities | <code>Array.&lt;Object&gt;</code> |  |  |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
-<a name="addEntity"></a>
-
-## addEntity(entity, [options])
-Add a entity
-
-**Kind**: global function  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| entity | <code>Object</code> |  |  |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
-<a name="deleteEntity"></a>
-
-## deleteEntity(entity)
-Delete entity
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| entity | <code>Object</code> | 
-
-<a name="getEntities"></a>
-
-## getEntities() ⇒ <code>Array.&lt;Object&gt;</code>
-Get entities
-
-**Kind**: global function  
-<a name="receiveEntity"></a>
-
-## receiveEntity(entity, [options])
-Receive an entity
-
-**Kind**: global function  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| entity | <code>Object</code> |  | Entity to set |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
-<a name="updateEntity"></a>
-
-## updateEntity(entity)
-Update existing entity
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| entity | <code>Object</code> | 
-
-<a name="getEntry"></a>
-
-## getEntry([options]) ⇒ <code>Object</code>
-Get entry values
-
-**Kind**: global function  
-
-| Param | Type | Default |
-| --- | --- | --- |
-| [options] | <code>Object</code> | <code>{}</code> | 
-
-<a name="hasEntryErrorFor"></a>
-
-## hasEntryErrorFor(name) ⇒ <code>boolean</code>
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| name | <code>string</code> | 
-
-<a name="processEntry"></a>
-
-## processEntry(handler) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Process an entry
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| handler | <code>function</code> | 
-
-<a name="resetEntry"></a>
-
-## resetEntry()
-Reset entry
-
-**Kind**: global function  
-<a name="setEntry"></a>
-
-## setEntry(values)
-Set entry values
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| values | <code>Object</code> | 
-
-<a name="setEntryErrors"></a>
-
-## setEntryErrors(errors)
-Set entry errors
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| errors | <code>Object</code> | 
-
-<a name="getFilter"></a>
-
-## getFilter() ⇒ <code>Object</code>
-Get filter
-
-**Kind**: global function  
-<a name="setFilter"></a>
-
-## setFilter(filter)
-Set filter
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| filter | <code>Object</code> | 
-
-<a name="setFilterByQ"></a>
-
-## setFilterByQ()
-Set filters by q
-
-**Kind**: global function  
 <a name="replaceHistoryByQuery"></a>
 
 ## replaceHistoryByQuery(query)
@@ -709,35 +861,6 @@ Check if the id is known
 | --- | --- |
 | id | <code>string</code> | 
 
-<a name="getLimit"></a>
-
-## getLimit() ⇒ <code>number</code>
-Get limit
-
-**Kind**: global function  
-<a name="nextLimit"></a>
-
-## nextLimit() ⇒ <code>number</code>
-Next limit
-
-**Kind**: global function  
-<a name="setLimit"></a>
-
-## setLimit(limit)
-Set limit
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| limit | <code>number</code> | 
-
-<a name="updateToNextLimit"></a>
-
-## updateToNextLimit()
-Update to next limit
-
-**Kind**: global function  
 <a name="changeLocationTo"></a>
 
 ## changeLocationTo(href)
@@ -772,12 +895,6 @@ Set location hash
 | --- | --- | --- |
 | hash | <code>string</code> | Location hash to set |
 
-<a name="getPage"></a>
-
-## getPage() ⇒ <code>Object</code>
-Get page data
-
-**Kind**: global function  
 <a name="getQueryFromSearch"></a>
 
 ## getQueryFromSearch([search]) ⇒ <code>Object</code>
@@ -811,39 +928,6 @@ Query with search
 | --- | --- | --- |
 | search | <code>string</code> | Location search string |
 
-<a name="ifReady"></a>
-
-## ifReady(task) ⇒ <code>Promise.&lt;\*&gt;</code>
-Do only if ready
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| task | <code>function</code> | 
-
-<a name="readyWhen"></a>
-
-## readyWhen(task) ⇒ <code>Promise.&lt;\*&gt;</code>
-Set ready when done
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| task | <code>function</code> | 
-
-<a name="unlessReady"></a>
-
-## unlessReady(task) ⇒ <code>Promise.&lt;\*&gt;</code>
-Do unless ready
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| task | <code>function</code> | 
-
 <a name="resultFor"></a>
 
 ## resultFor(action) ⇒ <code>Promise.&lt;\*&gt;</code>
@@ -856,35 +940,6 @@ Do action and store result
 | --- | --- |
 | action | <code>function</code> | 
 
-<a name="addTargets"></a>
-
-## addTargets(targets)
-Add targets
-
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| targets | <code>Array</code> | 
-
-<a name="getTargetIds"></a>
-
-## getTargetIds() ⇒ <code>Array.&lt;string&gt;</code>
-Get ids of target
-
-**Kind**: global function  
-<a name="getTargetRefs"></a>
-
-## getTargetRefs() ⇒ <code>Array.&lt;string&gt;</code>
-Get refs of target
-
-**Kind**: global function  
-<a name="getTargets"></a>
-
-## getTargets()
-Get target values
-
-**Kind**: global function  
 <a name="asClassMixin"></a>
 
 ## asClassMixin()
@@ -899,4 +954,5 @@ Define as class mixin
 
 | Param | Type |
 | --- | --- |
-| Class | <code>function</code> |
+| Class | <code>function</code> | 
+

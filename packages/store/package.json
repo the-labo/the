@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@the-/assert": "^15.4.1",
-    "@the-/check": "^15.5.0",
+    "@the-/check": "^15.5.1",
     "@the-/scope": "^15.4.1",
     "argx": "^4.0.0",
     "asobj": "^3.0.1",

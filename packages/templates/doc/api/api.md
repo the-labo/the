@@ -277,4 +277,5 @@ View
 
 | Param | Type |
 | --- | --- |
-| config | <code>Object</code> |
+| config | <code>Object</code> | 
+

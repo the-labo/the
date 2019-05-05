@@ -1,106 +1,106 @@
 [
   {
-    "description": "Table for the-components",
     "id": "module:@the-/ui-table",
-    "kind": "module",
     "longname": "module:@the-/ui-table",
-    "meta": {
-      "filename": "index.jsx",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
-    },
     "name": "@the-/ui-table",
-    "order": 0,
-    "typicalname": "uiTable",
-    "version": "15.4.0"
-  },
-  {
+    "kind": "module",
     "description": "Table for the-components",
+    "version": "15.4.2",
+    "typicalname": "uiTable",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
+    },
+    "order": 0
+  },
+  {
     "id": "TheTable",
-    "kind": "class",
     "longname": "TheTable",
-    "meta": {
-      "filename": "TheTable.jsx",
-      "lineno": 14,
-      "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
-    },
     "name": "TheTable",
-    "order": 1,
-    "scope": "global"
+    "kind": "class",
+    "scope": "global",
+    "description": "Table for the-components",
+    "meta": {
+      "lineno": 14,
+      "filename": "TheTable.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
+    },
+    "order": 1
   },
   {
-    "description": "Style for TheTable",
     "id": "TheTableStyle",
-    "kind": "function",
     "longname": "TheTableStyle",
-    "meta": {
-      "filename": "TheTableStyle.jsx",
-      "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
-    },
     "name": "TheTableStyle",
-    "order": 5,
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheTable",
     "params": [],
-    "scope": "global"
+    "meta": {
+      "lineno": 11,
+      "filename": "TheTableStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
+    },
+    "order": 5
   },
   {
-    "description": "Alt for empty",
     "id": "TheTable.propTypes.alt",
-    "kind": "member",
     "longname": "TheTable.propTypes.alt",
-    "memberof": "TheTable.propTypes",
-    "meta": {
-      "filename": "TheTable.jsx",
-      "lineno": 172,
-      "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
-    },
     "name": "alt",
-    "order": 2,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Alt for empty",
+    "memberof": "TheTable.propTypes",
+    "meta": {
+      "lineno": 172,
+      "filename": "TheTable.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
+    },
+    "order": 2
   },
   {
-    "description": "Show as empty",
     "id": "TheTable.propTypes.empty",
-    "kind": "member",
     "longname": "TheTable.propTypes.empty",
-    "memberof": "TheTable.propTypes",
-    "meta": {
-      "filename": "TheTable.jsx",
-      "lineno": 174,
-      "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
-    },
     "name": "empty",
-    "order": 3,
-    "scope": "static"
-  },
-  {
-    "description": "Show as wide",
-    "id": "TheTable.propTypes.width",
     "kind": "member",
-    "longname": "TheTable.propTypes.width",
+    "scope": "static",
+    "description": "Show as empty",
     "memberof": "TheTable.propTypes",
     "meta": {
+      "lineno": 174,
       "filename": "TheTable.jsx",
-      "lineno": 176,
       "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
     },
-    "name": "width",
-    "order": 4,
-    "scope": "static"
+    "order": 3
   },
   {
-    "description": "Style options",
-    "id": "TheTableStyle.propTypes.options",
+    "id": "TheTable.propTypes.width",
+    "longname": "TheTable.propTypes.width",
+    "name": "width",
     "kind": "member",
+    "scope": "static",
+    "description": "Show as wide",
+    "memberof": "TheTable.propTypes",
+    "meta": {
+      "lineno": 176,
+      "filename": "TheTable.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheTableStyle.propTypes.options",
     "longname": "TheTableStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
     "memberof": "TheTableStyle.propTypes",
     "meta": {
-      "filename": "TheTableStyle.jsx",
       "lineno": 22,
+      "filename": "TheTableStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
     },
-    "name": "options",
-    "order": 6,
-    "scope": "static"
+    "order": 6
   }
 ]

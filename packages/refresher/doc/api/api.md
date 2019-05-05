@@ -5,7 +5,7 @@
 ## @the-/refresher
 Refresher of the-db
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 **License**: MIT  
 
 * [@the-/refresher](#module_@the-/refresher)
@@ -73,4 +73,4 @@ Create a TheRefresher instance
 ### refresher.default()
 Alias of [create](#module_@the-/refresher.create)
 
-**Kind**: static method of [<code>@the-/refresher</code>](#module_@the-/refresher)
+**Kind**: static method of [<code>@the-/refresher</code>](#module_@the-/refresher)  

@@ -1,28 +1,27 @@
 [
   {
-    "description": "Encrypt json object with master password",
     "id": "module:@the-/seal",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/seal",
+    "name": "@the-/seal",
+    "kind": "module",
+    "description": "Encrypt json object with master password",
+    "version": "15.4.2",
+    "license": "MIT",
+    "typicalname": "seal",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/seal/lib"
     },
-    "name": "@the-/seal",
-    "order": 2,
-    "typicalname": "seal",
-    "version": "15.4.1"
+    "order": 2
   },
   {
-    "description": "Seal handler",
     "id": "module:@the-/seal.TheSeal()",
-    "kind": "constructor",
     "longname": "module:@the-/seal.TheSeal",
-    "memberof": "module:@the-/seal.TheSeal",
     "name": "TheSeal",
-    "order": 4,
+    "kind": "constructor",
+    "description": "Seal handler",
+    "memberof": "module:@the-/seal.TheSeal",
     "params": [
       {
         "type": {
@@ -55,21 +54,17 @@
         "description": "Hash algorithm",
         "name": "options.algorithm"
       }
-    ]
+    ],
+    "order": 4
   },
   {
-    "description": "Seal values",
     "id": "module:@the-/seal.TheSeal#seal",
-    "kind": "function",
     "longname": "module:@the-/seal.TheSeal#seal",
-    "memberof": "module:@the-/seal.TheSeal",
-    "meta": {
-      "filename": "TheSeal.js",
-      "lineno": 29,
-      "path": "/Users/okuni/Projects/the/packages/seal/lib"
-    },
     "name": "seal",
-    "order": 5,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Seal values",
+    "memberof": "module:@the-/seal.TheSeal",
     "params": [
       {
         "type": {
@@ -90,21 +85,21 @@
         "description": "seal string"
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Verify sealed",
-    "id": "module:@the-/seal.TheSeal#verify",
-    "kind": "function",
-    "longname": "module:@the-/seal.TheSeal#verify",
-    "memberof": "module:@the-/seal.TheSeal",
     "meta": {
+      "lineno": 29,
       "filename": "TheSeal.js",
-      "lineno": 43,
       "path": "/Users/okuni/Projects/the/packages/seal/lib"
     },
+    "order": 5
+  },
+  {
+    "id": "module:@the-/seal.TheSeal#verify",
+    "longname": "module:@the-/seal.TheSeal#verify",
     "name": "verify",
-    "order": 6,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Verify sealed",
+    "memberof": "module:@the-/seal.TheSeal",
     "params": [
       {
         "type": {
@@ -135,35 +130,35 @@
         "description": "Valid or not"
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 43,
+      "filename": "TheSeal.js",
+      "path": "/Users/okuni/Projects/the/packages/seal/lib"
+    },
+    "order": 6
   },
   {
     "id": "module:@the-/seal.TheSeal",
-    "kind": "class",
     "longname": "module:@the-/seal.TheSeal",
+    "name": "TheSeal",
+    "kind": "class",
+    "scope": "static",
     "memberof": "module:@the-/seal",
     "meta": {
-      "filename": "TheSeal.js",
       "lineno": 1,
+      "filename": "TheSeal.js",
       "path": "/Users/okuni/Projects/the/packages/seal/lib"
     },
-    "name": "TheSeal",
-    "order": 3,
-    "scope": "static"
+    "order": 3
   },
   {
-    "description": "Create a TheSeal instance",
     "id": "module:@the-/seal.create",
-    "kind": "function",
     "longname": "module:@the-/seal.create",
-    "memberof": "module:@the-/seal",
-    "meta": {
-      "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/seal/lib"
-    },
     "name": "create",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheSeal instance",
+    "memberof": "module:@the-/seal",
     "params": [
       {
         "type": {
@@ -184,21 +179,26 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link module:@the-/seal.create}",
-    "id": "module:@the-/seal.default",
-    "kind": "function",
-    "longname": "module:@the-/seal.default",
-    "memberof": "module:@the-/seal",
     "meta": {
-      "filename": "default.js",
       "lineno": 1,
+      "filename": "create.js",
       "path": "/Users/okuni/Projects/the/packages/seal/lib"
     },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/seal.default",
+    "longname": "module:@the-/seal.default",
     "name": "default",
-    "order": 1,
-    "scope": "static"
+    "kind": "function",
+    "scope": "static",
+    "description": "Alias of {@link module:@the-/seal.create}",
+    "memberof": "module:@the-/seal",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/seal/lib"
+    },
+    "order": 1
   }
 ]

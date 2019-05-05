@@ -29,7 +29,7 @@
 ## @the-/ui-pager
 Pager of the-components
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 <a name="ThePager"></a>
 
 ## ThePager
@@ -41,4 +41,4 @@ Pager of the-components
 ## ThePagerStyle()
 Style for ThePager
 
-**Kind**: global function
+**Kind**: global function  

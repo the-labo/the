@@ -5,7 +5,7 @@
 ## @the-/check
 Check utility for the-framework
 
-**Version**: 15.5.0  
+**Version**: 15.5.1  
 **License**: MIT  
 
 * [@the-/check](#module_@the-/check)
@@ -70,4 +70,5 @@ Do unless production env
 
 | Param | Type |
 | --- | --- |
-| handler | <code>function</code> |
+| handler | <code>function</code> | 
+

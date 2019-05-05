@@ -44,7 +44,7 @@ Default exports
 ## @the-/facebook
 Facebook utility for the-framework
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 **License**: MIT  
 <a name="TheFacebook"></a>
 
@@ -65,4 +65,5 @@ Create a TheFacebook instance
 
 | Param | Type |
 | --- | --- |
-| ...args | <code>\*</code> |
+| ...args | <code>\*</code> | 
+

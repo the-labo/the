@@ -1,91 +1,91 @@
 [
   {
-    "description": "Component to show caught errors",
     "id": "module:@the-/ui-caught",
-    "kind": "module",
     "longname": "module:@the-/ui-caught",
-    "meta": {
-      "filename": "index.jsx",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
-    },
     "name": "@the-/ui-caught",
-    "order": 0,
-    "typicalname": "uiCaught",
-    "version": "15.4.0"
-  },
-  {
+    "kind": "module",
     "description": "Component to show caught errors",
+    "version": "15.4.2",
+    "typicalname": "uiCaught",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
+    },
+    "order": 0
+  },
+  {
     "id": "TheCaught",
-    "kind": "class",
     "longname": "TheCaught",
-    "meta": {
-      "filename": "TheCaught.jsx",
-      "lineno": 13,
-      "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
-    },
     "name": "TheCaught",
-    "order": 1,
-    "scope": "global"
+    "kind": "class",
+    "scope": "global",
+    "description": "Component to show caught errors",
+    "meta": {
+      "lineno": 13,
+      "filename": "TheCaught.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
+    },
+    "order": 1
   },
   {
-    "description": "Style for TheCaught",
     "id": "TheCaughtStyle",
-    "kind": "function",
     "longname": "TheCaughtStyle",
-    "meta": {
-      "filename": "TheCaughtStyle.jsx",
-      "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
-    },
     "name": "TheCaughtStyle",
-    "order": 4,
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheCaught",
     "params": [],
-    "scope": "global"
+    "meta": {
+      "lineno": 10,
+      "filename": "TheCaughtStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
+    },
+    "order": 4
   },
   {
-    "description": "Caught error",
     "id": "TheCaught.propTypes.error",
-    "kind": "member",
     "longname": "TheCaught.propTypes.error",
-    "memberof": "TheCaught.propTypes",
-    "meta": {
-      "filename": "TheCaught.jsx",
-      "lineno": 47,
-      "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
-    },
     "name": "error",
-    "order": 2,
-    "scope": "static"
-  },
-  {
-    "description": "Error Info",
-    "id": "TheCaught.propTypes.info",
     "kind": "member",
-    "longname": "TheCaught.propTypes.info",
+    "scope": "static",
+    "description": "Caught error",
     "memberof": "TheCaught.propTypes",
     "meta": {
+      "lineno": 47,
       "filename": "TheCaught.jsx",
-      "lineno": 49,
       "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
     },
-    "name": "info",
-    "order": 3,
-    "scope": "static"
+    "order": 2
   },
   {
-    "description": "Style options",
-    "id": "TheCaughtStyle.propTypes.options",
+    "id": "TheCaught.propTypes.info",
+    "longname": "TheCaught.propTypes.info",
+    "name": "info",
     "kind": "member",
+    "scope": "static",
+    "description": "Error Info",
+    "memberof": "TheCaught.propTypes",
+    "meta": {
+      "lineno": 49,
+      "filename": "TheCaught.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "TheCaughtStyle.propTypes.options",
     "longname": "TheCaughtStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
     "memberof": "TheCaughtStyle.propTypes",
     "meta": {
-      "filename": "TheCaughtStyle.jsx",
       "lineno": 21,
+      "filename": "TheCaughtStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
     },
-    "name": "options",
-    "order": 5,
-    "scope": "static"
+    "order": 5
   }
 ]

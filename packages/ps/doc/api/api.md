@@ -63,4 +63,4 @@ Create a ThePS instance
 ### ps.default()
 Alias of [create](#module_@the-/ps.create)
 
-**Kind**: static method of [<code>@the-/ps</code>](#module_@the-/ps)
+**Kind**: static method of [<code>@the-/ps</code>](#module_@the-/ps)  

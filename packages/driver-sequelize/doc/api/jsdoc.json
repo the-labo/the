@@ -1,33 +1,28 @@
 [
   {
-    "description": "Sequelize driver for the-framework",
     "id": "module:@the-/driver-sequelize",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/driver-sequelize",
+    "name": "@the-/driver-sequelize",
+    "kind": "module",
+    "description": "Sequelize driver for the-framework",
+    "version": "15.4.2",
+    "license": "MIT",
+    "typicalname": "driverSequelize",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
     },
-    "name": "@the-/driver-sequelize",
-    "order": 2,
-    "typicalname": "driverSequelize",
-    "version": "15.4.2"
+    "order": 2
   },
   {
-    "description": "Define schema",
     "id": "@the-/driver-sequelize.TheDriverSequelize#define",
-    "kind": "function",
     "longname": "@the-/driver-sequelize.TheDriverSequelize#define",
-    "memberof": "@the-/driver-sequelize.TheDriverSequelize",
-    "meta": {
-      "filename": "TheDriverSequelize.js",
-      "lineno": 76,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
-    },
     "name": "define",
-    "order": 4,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Define schema",
+    "memberof": "@the-/driver-sequelize.TheDriverSequelize",
     "params": [
       {
         "type": {
@@ -46,22 +41,21 @@
         "name": "schema"
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Wait until ready",
-    "id": "@the-/driver-sequelize.TheDriverSequelize#untilReady",
-    "kind": "function",
-    "longname": "@the-/driver-sequelize.TheDriverSequelize#untilReady",
-    "memberof": "@the-/driver-sequelize.TheDriverSequelize",
     "meta": {
+      "lineno": 76,
       "filename": "TheDriverSequelize.js",
-      "lineno": 256,
       "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
     },
+    "order": 4
+  },
+  {
+    "id": "@the-/driver-sequelize.TheDriverSequelize#untilReady",
+    "longname": "@the-/driver-sequelize.TheDriverSequelize#untilReady",
     "name": "untilReady",
-    "order": 5,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Wait until ready",
+    "memberof": "@the-/driver-sequelize.TheDriverSequelize",
     "params": [],
     "returns": [
       {
@@ -72,187 +66,188 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 256,
+      "filename": "TheDriverSequelize.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
+    },
+    "async": true,
+    "order": 5
   },
   {
     "id": "@the-/driver-sequelize.TheDriverSequelize",
-    "kind": "class",
     "longname": "@the-/driver-sequelize.TheDriverSequelize",
+    "name": "TheDriverSequelize",
+    "kind": "class",
+    "scope": "static",
     "memberof": "@the-/driver-sequelize",
     "meta": {
-      "filename": "TheDriverSequelize.js",
       "lineno": 1,
+      "filename": "TheDriverSequelize.js",
       "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
     },
-    "name": "TheDriverSequelize",
-    "order": 3,
-    "scope": "static"
+    "order": 3
   },
   {
     "id": "module:@the-/driver-sequelize.helpers.Logger",
-    "kind": "member",
     "longname": "module:@the-/driver-sequelize.helpers.Logger",
+    "name": "Logger",
+    "kind": "member",
+    "scope": "static",
     "memberof": "module:@the-/driver-sequelize.helpers",
     "meta": {
-      "filename": "logger.js",
       "lineno": 1,
+      "filename": "logger.js",
       "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/helpers"
     },
-    "name": "Logger",
-    "order": 13,
-    "scope": "static"
+    "order": 13
   },
   {
+    "id": "module:@the-/driver-sequelize.constants",
+    "longname": "module:@the-/driver-sequelize.constants",
+    "name": "constants",
+    "kind": "namespace",
+    "scope": "static",
+    "memberof": "module:@the-/driver-sequelize",
     "customTags": [
       {
         "tag": "descriptions",
         "value": "constant variables"
       }
     ],
-    "id": "module:@the-/driver-sequelize.constants",
-    "kind": "namespace",
-    "longname": "module:@the-/driver-sequelize.constants",
-    "memberof": "module:@the-/driver-sequelize",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/constants"
     },
-    "name": "constants",
-    "order": 6,
-    "scope": "static"
+    "order": 6
   },
   {
-    "access": "protected",
-    "description": "Converter functions",
     "id": "module:@the-/driver-sequelize.converters",
-    "kind": "namespace",
     "longname": "module:@the-/driver-sequelize.converters",
+    "name": "converters",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Converter functions",
     "memberof": "module:@the-/driver-sequelize",
+    "access": "protected",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/converters"
     },
-    "name": "converters",
-    "order": 11,
-    "scope": "static"
+    "order": 11
   },
   {
-    "access": "protected",
-    "description": "Helper functions",
     "id": "module:@the-/driver-sequelize.helpers",
-    "kind": "namespace",
     "longname": "module:@the-/driver-sequelize.helpers",
+    "name": "helpers",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Helper functions",
     "memberof": "module:@the-/driver-sequelize",
+    "access": "protected",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/helpers"
     },
-    "name": "helpers",
-    "order": 12,
-    "scope": "static"
+    "order": 12
   },
   {
-    "access": "protected",
-    "description": "Mixin functions",
     "id": "module:@the-/driver-sequelize.mixins",
-    "kind": "namespace",
     "longname": "module:@the-/driver-sequelize.mixins",
+    "name": "mixins",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Mixin functions",
     "memberof": "module:@the-/driver-sequelize",
+    "access": "protected",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/mixins"
     },
-    "name": "mixins",
-    "order": 14,
-    "scope": "static"
+    "order": 14
   },
   {
-    "access": "protected",
-    "description": "Modeling functions",
     "id": "module:@the-/driver-sequelize.modeling",
-    "kind": "namespace",
     "longname": "module:@the-/driver-sequelize.modeling",
+    "name": "modeling",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Modeling functions",
     "memberof": "module:@the-/driver-sequelize",
+    "access": "protected",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/modeling"
     },
-    "name": "modeling",
-    "order": 18,
-    "scope": "static"
+    "order": 18
   },
   {
-    "access": "protected",
-    "description": "Parsing functions",
     "id": "module:@the-/driver-sequelize.parsing",
-    "kind": "namespace",
     "longname": "module:@the-/driver-sequelize.parsing",
+    "name": "parsing",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Parsing functions",
     "memberof": "module:@the-/driver-sequelize",
+    "access": "protected",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/parsing"
     },
-    "name": "parsing",
-    "order": 20,
-    "scope": "static"
+    "order": 20
   },
   {
     "id": "module:@the-/driver-sequelize.constants.MetaColumnNames",
-    "kind": "enum",
     "longname": "module:@the-/driver-sequelize.constants.MetaColumnNames",
-    "memberof": "module:@the-/driver-sequelize.constants",
-    "meta": {
-      "filename": "MetaColumnNames.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/constants"
-    },
     "name": "MetaColumnNames",
-    "order": 7,
+    "kind": "enum",
     "scope": "static",
+    "memberof": "module:@the-/driver-sequelize.constants",
     "type": {
       "names": [
         "string"
       ]
-    }
+    },
+    "meta": {
+      "lineno": 1,
+      "filename": "MetaColumnNames.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/constants"
+    },
+    "order": 7
   },
   {
     "id": "module:@the-/driver-sequelize.constants.MetaColumnNamesReversed",
-    "kind": "enum",
     "longname": "module:@the-/driver-sequelize.constants.MetaColumnNamesReversed",
-    "memberof": "module:@the-/driver-sequelize.constants",
-    "meta": {
-      "filename": "MetaColumnNamesReversed.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/constants"
-    },
     "name": "MetaColumnNamesReversed",
-    "order": 8,
+    "kind": "enum",
     "scope": "static",
+    "memberof": "module:@the-/driver-sequelize.constants",
     "type": {
       "names": [
         "string"
       ]
-    }
+    },
+    "meta": {
+      "lineno": 1,
+      "filename": "MetaColumnNamesReversed.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/constants"
+    },
+    "order": 8
   },
   {
-    "description": "Create a TheDriverSequelize instance",
     "id": "@the-/driver-sequelize.create",
-    "kind": "function",
     "longname": "@the-/driver-sequelize.create",
-    "memberof": "@the-/driver-sequelize",
-    "meta": {
-      "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
-    },
     "name": "create",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheDriverSequelize instance",
+    "memberof": "@the-/driver-sequelize",
     "params": [
       {
         "type": {
@@ -273,79 +268,79 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link module:@the-/driver-sequelize}",
-    "id": "module:@the-/driver-sequelize.default",
-    "kind": "function",
-    "longname": "module:@the-/driver-sequelize.default",
-    "memberof": "module:@the-/driver-sequelize",
     "meta": {
-      "filename": "default.js",
       "lineno": 1,
+      "filename": "create.js",
       "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
     },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/driver-sequelize.default",
+    "longname": "module:@the-/driver-sequelize.default",
     "name": "default",
-    "order": 1,
-    "scope": "static"
+    "kind": "function",
+    "scope": "static",
+    "description": "Alias of {@link module:@the-/driver-sequelize}",
+    "memberof": "module:@the-/driver-sequelize",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
+    },
+    "order": 1
   },
   {
     "id": "module:@the-/driver-sequelize.converters.convertInbound",
-    "kind": "function",
     "longname": "module:@the-/driver-sequelize.converters.convertInbound",
+    "name": "convertInbound",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/driver-sequelize.converters",
     "meta": {
-      "filename": "convertInbound.js",
       "lineno": 1,
+      "filename": "convertInbound.js",
       "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/converters"
     },
-    "name": "convertInbound",
-    "order": 9,
-    "scope": "static"
+    "order": 9
   },
   {
     "id": "module:@the-/driver-sequelize.converters.convertOutbound",
-    "kind": "function",
     "longname": "module:@the-/driver-sequelize.converters.convertOutbound",
+    "name": "convertOutbound",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/driver-sequelize.converters",
     "meta": {
-      "filename": "convertOutbound.js",
       "lineno": 1,
+      "filename": "convertOutbound.js",
       "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/converters"
     },
-    "name": "convertOutbound",
-    "order": 10,
-    "scope": "static"
+    "order": 10
   },
   {
-    "description": "Mixin of sequelize",
     "id": "module:@the-/driver-sequelize.mixins.sequelizeMix",
-    "kind": "function",
     "longname": "module:@the-/driver-sequelize.mixins.sequelizeMix",
+    "name": "sequelizeMix",
+    "kind": "function",
+    "scope": "static",
+    "description": "Mixin of sequelize",
     "memberof": "module:@the-/driver-sequelize.mixins",
     "meta": {
-      "filename": "sequelizeMix.js",
       "lineno": 1,
+      "filename": "sequelizeMix.js",
       "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/mixins"
     },
-    "name": "sequelizeMix",
-    "order": 15,
-    "scope": "static"
+    "order": 15
   },
   {
-    "description": "Parse schema",
     "id": "module:@the-/driver-sequelize.modeling.defineModel",
-    "kind": "function",
     "longname": "module:@the-/driver-sequelize.modeling.defineModel",
-    "memberof": "module:@the-/driver-sequelize.modeling",
-    "meta": {
-      "filename": "defineModel.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/modeling"
-    },
     "name": "defineModel",
-    "order": 16,
+    "kind": "function",
+    "scope": "static",
+    "description": "Parse schema",
+    "memberof": "module:@the-/driver-sequelize.modeling",
     "params": [
       {
         "type": {
@@ -364,21 +359,21 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Define model column",
-    "id": "module:@the-/driver-sequelize.modeling.defineModelColumn",
-    "kind": "function",
-    "longname": "module:@the-/driver-sequelize.modeling.defineModelColumn",
-    "memberof": "module:@the-/driver-sequelize.modeling",
     "meta": {
-      "filename": "defineModelColumn.js",
       "lineno": 1,
+      "filename": "defineModel.js",
       "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/modeling"
     },
+    "order": 16
+  },
+  {
+    "id": "module:@the-/driver-sequelize.modeling.defineModelColumn",
+    "longname": "module:@the-/driver-sequelize.modeling.defineModelColumn",
     "name": "defineModelColumn",
-    "order": 17,
+    "kind": "function",
+    "scope": "static",
+    "description": "Define model column",
+    "memberof": "module:@the-/driver-sequelize.modeling",
     "params": [
       {
         "type": {
@@ -397,20 +392,20 @@
         "name": "def"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "defineModelColumn.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/modeling"
+    },
+    "order": 17
   },
   {
     "id": "module:@the-/driver-sequelize.modeling.prepareModel",
-    "kind": "function",
     "longname": "module:@the-/driver-sequelize.modeling.prepareModel",
-    "memberof": "module:@the-/driver-sequelize.modeling",
-    "meta": {
-      "filename": "prepareModel.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/modeling"
-    },
     "name": "prepareModel",
-    "order": 19,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/driver-sequelize.modeling",
     "returns": [
       {
         "type": {
@@ -420,20 +415,20 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "prepareModel.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/modeling"
+    },
+    "order": 19
   },
   {
     "id": "module:@the-/driver-sequelize.parsing.parseAttributeName",
-    "kind": "function",
     "longname": "module:@the-/driver-sequelize.parsing.parseAttributeName",
-    "memberof": "module:@the-/driver-sequelize.parsing",
-    "meta": {
-      "filename": "parseAttributeName.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/parsing"
-    },
     "name": "parseAttributeName",
-    "order": 21,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/driver-sequelize.parsing",
     "params": [
       {
         "type": {
@@ -452,34 +447,39 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "parseAttributeName.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/parsing"
+    },
+    "order": 21
   },
   {
     "id": "module:@the-/driver-sequelize.parsing.parseFilter",
-    "kind": "function",
     "longname": "module:@the-/driver-sequelize.parsing.parseFilter",
+    "name": "parseFilter",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/driver-sequelize.parsing",
     "meta": {
-      "filename": "parseFilter.js",
       "lineno": 1,
+      "filename": "parseFilter.js",
       "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/parsing"
     },
-    "name": "parseFilter",
-    "order": 22,
-    "scope": "static"
+    "order": 22
   },
   {
     "id": "module:@the-/driver-sequelize.parsing.parseSort",
-    "kind": "function",
     "longname": "module:@the-/driver-sequelize.parsing.parseSort",
+    "name": "parseSort",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/driver-sequelize.parsing",
     "meta": {
-      "filename": "parseSort.js",
       "lineno": 1,
+      "filename": "parseSort.js",
       "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/parsing"
     },
-    "name": "parseSort",
-    "order": 23,
-    "scope": "static"
+    "order": 23
   }
 ]

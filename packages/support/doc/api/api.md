@@ -30,7 +30,7 @@
 ## @the-/support
 JS support version checker
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 **License**: MIT  
 <a name="TheSupport"></a>
 
@@ -58,4 +58,4 @@ Create a TheSupport instance
 <a name="findEvalCode"></a>
 
 ## findEvalCode()
-**Kind**: global function
+**Kind**: global function  

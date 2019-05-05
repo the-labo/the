@@ -1,61 +1,61 @@
 [
   {
-    "description": "Body of the-components",
     "id": "module:@the-/ui-body",
-    "kind": "module",
     "longname": "module:@the-/ui-body",
-    "meta": {
-      "filename": "index.jsx",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-body/lib"
-    },
     "name": "@the-/ui-body",
-    "order": 0,
-    "typicalname": "uiBody",
-    "version": "15.4.0"
-  },
-  {
+    "kind": "module",
     "description": "Body of the-components",
+    "version": "15.4.2",
+    "typicalname": "uiBody",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-body/lib"
+    },
+    "order": 0
+  },
+  {
     "id": "TheBody",
-    "kind": "class",
     "longname": "TheBody",
-    "meta": {
-      "filename": "TheBody.jsx",
-      "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-body/lib"
-    },
     "name": "TheBody",
-    "order": 1,
-    "scope": "global"
-  },
-  {
-    "description": "Style for TheBody",
-    "id": "TheBodyStyle",
-    "kind": "function",
-    "longname": "TheBodyStyle",
+    "kind": "class",
+    "scope": "global",
+    "description": "Body of the-components",
     "meta": {
-      "filename": "TheBodyStyle.jsx",
-      "lineno": 10,
+      "lineno": 11,
+      "filename": "TheBody.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-body/lib"
     },
-    "name": "TheBodyStyle",
-    "order": 2,
-    "params": [],
-    "scope": "global"
+    "order": 1
   },
   {
-    "description": "Style options",
+    "id": "TheBodyStyle",
+    "longname": "TheBodyStyle",
+    "name": "TheBodyStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheBody",
+    "params": [],
+    "meta": {
+      "lineno": 10,
+      "filename": "TheBodyStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-body/lib"
+    },
+    "order": 2
+  },
+  {
     "id": "TheBodyStyle.propTypes.options",
-    "kind": "member",
     "longname": "TheBodyStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
     "memberof": "TheBodyStyle.propTypes",
     "meta": {
-      "filename": "TheBodyStyle.jsx",
       "lineno": 21,
+      "filename": "TheBodyStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-body/lib"
     },
-    "name": "options",
-    "order": 3,
-    "scope": "static"
+    "order": 3
   }
 ]

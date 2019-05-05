@@ -1,27 +1,26 @@
 [
   {
-    "description": "Geo location utility",
     "id": "module:@the-/geo",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/geo",
+    "name": "@the-/geo",
+    "kind": "module",
+    "description": "Geo location utility",
+    "version": "15.4.2",
+    "license": "MIT",
+    "typicalname": "geo",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/geo/lib"
     },
-    "name": "@the-/geo",
-    "order": 2,
-    "typicalname": "geo",
-    "version": "15.4.1"
+    "order": 2
   },
   {
     "id": "module:@the-/geo.TheGeo()",
-    "kind": "constructor",
     "longname": "module:@the-/geo.TheGeo",
-    "memberof": "module:@the-/geo.TheGeo",
     "name": "TheGeo",
-    "order": 4,
+    "kind": "constructor",
+    "memberof": "module:@the-/geo.TheGeo",
     "params": [
       {
         "type": {
@@ -34,21 +33,17 @@
         "description": "Optional settings",
         "name": "options"
       }
-    ]
+    ],
+    "order": 4
   },
   {
-    "description": "Watch position change",
     "id": "module:@the-/geo.TheGeo#watch",
-    "kind": "function",
     "longname": "module:@the-/geo.TheGeo#watch",
-    "memberof": "module:@the-/geo.TheGeo",
-    "meta": {
-      "filename": "TheGeo.js",
-      "lineno": 58,
-      "path": "/Users/okuni/Projects/the/packages/geo/lib"
-    },
     "name": "watch",
-    "order": 5,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Watch position change",
+    "memberof": "module:@the-/geo.TheGeo",
     "params": [
       {
         "type": {
@@ -69,22 +64,21 @@
         "name": "options"
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Detect current geo location",
-    "id": "module:@the-/geo.TheGeo#detect",
-    "kind": "function",
-    "longname": "module:@the-/geo.TheGeo#detect",
-    "memberof": "module:@the-/geo.TheGeo",
     "meta": {
+      "lineno": 58,
       "filename": "TheGeo.js",
-      "lineno": 86,
       "path": "/Users/okuni/Projects/the/packages/geo/lib"
     },
+    "order": 5
+  },
+  {
+    "id": "module:@the-/geo.TheGeo#detect",
+    "longname": "module:@the-/geo.TheGeo#detect",
     "name": "detect",
-    "order": 6,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Detect current geo location",
+    "memberof": "module:@the-/geo.TheGeo",
     "params": [
       {
         "type": {
@@ -105,35 +99,36 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 86,
+      "filename": "TheGeo.js",
+      "path": "/Users/okuni/Projects/the/packages/geo/lib"
+    },
+    "async": true,
+    "order": 6
   },
   {
     "id": "module:@the-/geo.TheGeo",
-    "kind": "class",
     "longname": "module:@the-/geo.TheGeo",
+    "name": "TheGeo",
+    "kind": "class",
+    "scope": "static",
     "memberof": "module:@the-/geo",
     "meta": {
-      "filename": "TheGeo.js",
       "lineno": 1,
+      "filename": "TheGeo.js",
       "path": "/Users/okuni/Projects/the/packages/geo/lib"
     },
-    "name": "TheGeo",
-    "order": 3,
-    "scope": "static"
+    "order": 3
   },
   {
-    "description": "Create a TheGeo instance",
     "id": "module:@the-/geo.create",
-    "kind": "function",
     "longname": "module:@the-/geo.create",
-    "memberof": "module:@the-/geo",
-    "meta": {
-      "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/geo/lib"
-    },
     "name": "create",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheGeo instance",
+    "memberof": "module:@the-/geo",
     "params": [
       {
         "type": {
@@ -154,21 +149,26 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Alias of {@link module:@the-/geo.create}",
-    "id": "module:@the-/geo.default",
-    "kind": "function",
-    "longname": "module:@the-/geo.default",
-    "memberof": "module:@the-/geo",
     "meta": {
-      "filename": "default.js",
       "lineno": 1,
+      "filename": "create.js",
       "path": "/Users/okuni/Projects/the/packages/geo/lib"
     },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/geo.default",
+    "longname": "module:@the-/geo.default",
     "name": "default",
-    "order": 1,
-    "scope": "static"
+    "kind": "function",
+    "scope": "static",
+    "description": "Alias of {@link module:@the-/geo.create}",
+    "memberof": "module:@the-/geo",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/geo/lib"
+    },
+    "order": 1
   }
 ]

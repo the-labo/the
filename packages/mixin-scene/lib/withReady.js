@@ -5,6 +5,11 @@
  * @param {function()} Class - Class to mix
  * @returns {function()} Mixed class
  */
+/**
+ * @memberOf module:@the-/mixin-scene.withReady
+ * @inner
+ * @class WithReadyMixed
+ */
 'use strict'
 
 const asClassMixin = require('./helpers/asClassMixin')
@@ -13,7 +18,9 @@ const injectProperties = require('./helpers/injectProperties')
 
 /** @lends module:@the-/mixin-scene.withReady */
 const withReady = asClassMixin((Class) => {
-  injectProperties(Class, {
+  injectProperties(Class,
+    /** @lends module:@the-/mixin-scene.withReady~WithReadyMixed */
+    {
     /**
      * Do only if ready
      * @param {Function} task

@@ -9,7 +9,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.0",
+    "@the-/check": "^15.5.1",
     "msgpack-lite": "^0.1.26"
   },
   "description": "Message pack wrapper for the-components",

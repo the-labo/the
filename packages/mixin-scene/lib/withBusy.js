@@ -5,6 +5,11 @@
  * @param {function()} Class - Class to mix
  * @returns {function()} Mixed class
  */
+/**
+ * @memberof module:@the-/mixin-scene.withBusy
+ * @class WithBusyMixed
+ * @inner
+ */
 'use strict'
 
 const asleep = require('asleep')
@@ -14,48 +19,52 @@ const injectProperties = require('./helpers/injectProperties')
 
 /** @lends module:@the-/mixin-scene.withBusy */
 const withBusy = asClassMixin((Class) => {
-  injectProperties(Class, {
-    /**
-     * Wait busy for
-     * @param {number} duration
-     * @returns {Promise<undefined>}
-     */
-    async busyFor(duration = 0) {
-      this.set({ busy: true })
-      await asleep(duration)
-      this.set({ busy: false })
-    },
-    /**
-     * Set busy true while task active
-     * @param {Function} task
-     * @returns {Promise<undefined>}
-     */
-    async busyWhile(task) {
-      this.set({ busy: true })
-      try {
-        return await task.call(this)
-      } finally {
+  injectProperties(
+    Class,
+    /** @lends module:@the-/mixin-scene.withBusy.WithBusyMixed */
+    {
+      /**
+       * Wait busy for
+       * @param {number} duration
+       * @returns {Promise<undefined>}
+       */
+      async busyFor(duration = 0) {
+        this.set({ busy: true })
+        await asleep(duration)
         this.set({ busy: false })
-      }
-    },
-    /**
-     * Is busy or not
-     * @returns {boolean}
-     */
-    isBusy() {
-      return this.get('busy')
-    },
-    /**
-     * Wait while busy
-     * @returns {Promise<undefined>}
-     */
-    async waitWhileBusy() {
-      await asleep(1)
-      while (this.isBusy()) {
+      },
+      /**
+       * Set busy true while task active
+       * @param {Function} task
+       * @returns {Promise<undefined>}
+       */
+      async busyWhile(task) {
+        this.set({ busy: true })
+        try {
+          return await task.call(this)
+        } finally {
+          this.set({ busy: false })
+        }
+      },
+      /**
+       * Is busy or not
+       * @returns {boolean}
+       */
+      isBusy() {
+        return this.get('busy')
+      },
+      /**
+       * Wait while busy
+       * @returns {Promise<undefined>}
+       */
+      async waitWhileBusy() {
         await asleep(1)
-      }
+        while (this.isBusy()) {
+          await asleep(1)
+        }
+      },
     },
-  })
+  )
 })
 
 module.exports = Object.assign(

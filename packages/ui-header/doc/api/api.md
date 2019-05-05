@@ -29,7 +29,7 @@
 ## @the-/ui-header
 Header of the-components
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 <a name="TheHeader"></a>
 
 ## TheHeader
@@ -41,4 +41,4 @@ Header of the-components
 ## TheHeaderStyle()
 Style for TheHeader
 
-**Kind**: global function
+**Kind**: global function  

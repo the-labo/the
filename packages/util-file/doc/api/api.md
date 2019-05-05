@@ -95,4 +95,5 @@ Read as json
 | Param | Type |
 | --- | --- |
 | filename | <code>string</code> | 
-| data | <code>Object</code> |
+| data | <code>Object</code> | 
+

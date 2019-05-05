@@ -5,7 +5,7 @@
 ## @the-/password
 Password util for the-framework
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 **License**: MIT  
 
 * [@the-/password](#module_@the-/password)
@@ -33,4 +33,4 @@ Create a ThePassword instance
 ### password.default()
 Alias of [@the-/password](#module_@the-/password)
 
-**Kind**: static method of [<code>@the-/password</code>](#module_@the-/password)
+**Kind**: static method of [<code>@the-/password</code>](#module_@the-/password)  

@@ -5,7 +5,7 @@
 ## @the-/cache
 Cache manager of the-frameworks
 
-**Version**: 15.4.1  
+**Version**: 15.4.2  
 **License**: MIT  
 
 * [@the-/cache](#module_@the-/cache)
@@ -35,4 +35,4 @@ Create a TheCache instance
 ### cache.default()
 Alias of [default](#module_@the-/cache.default)
 
-**Kind**: static method of [<code>@the-/cache</code>](#module_@the-/cache)
+**Kind**: static method of [<code>@the-/cache</code>](#module_@the-/cache)  

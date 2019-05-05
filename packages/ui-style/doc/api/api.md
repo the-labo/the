@@ -21,10 +21,10 @@
 ## @the-/ui-style
 Style of the-components
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 <a name="TheStyle"></a>
 
 ## TheStyle
 Style of the-components
 
-**Kind**: global class
+**Kind**: global class  

@@ -5,7 +5,7 @@
 ## @the-/script-test
 Test script for the-project
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 <a name="module_@the-/script-test.test"></a>
 
 ### @the-/script-test.test([dirname], [options]) ⇒ <code>Promise</code>
@@ -17,3 +17,4 @@ Test project
 | --- | --- | --- | --- |
 | [dirname] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | Project directory name |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
+

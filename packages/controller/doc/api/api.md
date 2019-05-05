@@ -5,7 +5,7 @@
 ## @the-/controller
 Base of the-controllers
 
-**Version**: 15.4.1  
+**Version**: 15.4.2  
 **License**: MIT  
 
 * [@the-/controller](#module_@the-/controller)
@@ -92,7 +92,7 @@ Hook after invocation
 
 | Param | Type | Description |
 | --- | --- | --- |
-| invocation | <code>Invocation</code> | Action invocation |
+| invocation | <code>Object</code> | Action invocation |
 
 <a name="module_@the-/controller.TheCtrl.beforeInvocation"></a>
 
@@ -103,7 +103,7 @@ Hook before invocation
 
 | Param | Type | Description |
 | --- | --- | --- |
-| invocation | <code>Invocation</code> | Action invocation |
+| invocation | <code>Object</code> | Action invocation |
 
 <a name="module_@the-/controller.TheCtrl.rescueInvocation"></a>
 
@@ -114,7 +114,7 @@ Hook rescue invocation error
 
 | Param | Type | Description |
 | --- | --- | --- |
-| invocation | <code>Invocation</code> | Action invocation |
+| invocation | <code>Object</code> | Action invocation |
 
 <a name="module_@the-/controller.create"></a>
 
@@ -132,4 +132,4 @@ Create a TheControllerBase instance
 ### controller.default()
 Alias of [create](#module_@the-/controller.create)
 
-**Kind**: static method of [<code>@the-/controller</code>](#module_@the-/controller)
+**Kind**: static method of [<code>@the-/controller</code>](#module_@the-/controller)  

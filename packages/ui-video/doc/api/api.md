@@ -29,7 +29,7 @@
 ## @the-/ui-video
 Video for the-components
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 <a name="TheVideo"></a>
 
 ## TheVideo
@@ -41,4 +41,4 @@ Video for the-components
 ## TheVideoStyle()
 Style for TheVideo
 
-**Kind**: global function
+**Kind**: global function  

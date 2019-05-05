@@ -14,7 +14,7 @@ Hash object to hold key-value pairs
         * [.get(key)](#module_@the-/hash.TheHash+get) ⇒ <code>\*</code>
         * [.has(key)](#module_@the-/hash.TheHash+has) ⇒ <code>boolean</code>
         * [.set(key, value)](#module_@the-/hash.TheHash+set)
-        * [.toProxy(options)](#module_@the-/hash.TheHash+toProxy) ⇒ <code>\*</code>
+        * [.toProxy([options])](#module_@the-/hash.TheHash+toProxy) ⇒ <code>\*</code>
     * [.create(...args)](#module_@the-/hash.create) ⇒ <code>TheHash</code>
     * [.default()](#module_@the-/hash.default) ⇒ [<code>TheHash</code>](#module_@the-/hash.TheHash)
     * [.proxy(src, [options])](#module_@the-/hash.proxy) ⇒ <code>Proxy</code>
@@ -29,7 +29,7 @@ Hash object to hold key-value pairs
     * [.get(key)](#module_@the-/hash.TheHash+get) ⇒ <code>\*</code>
     * [.has(key)](#module_@the-/hash.TheHash+has) ⇒ <code>boolean</code>
     * [.set(key, value)](#module_@the-/hash.TheHash+set)
-    * [.toProxy(options)](#module_@the-/hash.TheHash+toProxy) ⇒ <code>\*</code>
+    * [.toProxy([options])](#module_@the-/hash.TheHash+toProxy) ⇒ <code>\*</code>
 
 <a name="new_module_@the-/hash.TheHash_new"></a>
 
@@ -68,21 +68,21 @@ Set value for key
 
 **Kind**: instance method of [<code>TheHash</code>](#module_@the-/hash.TheHash)  
 
-| Param | Type |
-| --- | --- |
-| key | <code>string</code> | 
-| value |  | 
+| Param | Type | Description |
+| --- | --- | --- |
+| key | <code>string</code> | Key to set |
+| value | <code>\*</code> | Value to set |
 
 <a name="module_@the-/hash.TheHash+toProxy"></a>
 
-#### theHash.toProxy(options) ⇒ <code>\*</code>
+#### theHash.toProxy([options]) ⇒ <code>\*</code>
 Convert into proxy
 
 **Kind**: instance method of [<code>TheHash</code>](#module_@the-/hash.TheHash)  
 
-| Param |
-| --- |
-| options | 
+| Param | Type | Default |
+| --- | --- | --- |
+| [options] | <code>Object</code> | <code>{}</code> | 
 
 <a name="module_@the-/hash.create"></a>
 
@@ -114,3 +114,4 @@ Create proxy for hash object
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 | [options.name] | <code>string</code> |  | Name of object |
 | [options.unknownCheck] | <code>boolean</code> |  | Enable unknown checking |
+

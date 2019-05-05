@@ -8,7 +8,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.0",
+    "@the-/check": "^15.5.1",
     "@the-/ui-style": "^15.4.0",
     "@the-/util-ui": "^15.4.1",
     "chart.js": "^2.8.0",

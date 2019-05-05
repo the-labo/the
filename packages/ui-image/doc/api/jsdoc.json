@@ -1,181 +1,181 @@
 [
   {
-    "description": "Image of the-components",
     "id": "module:@the-/ui-image",
-    "kind": "module",
     "longname": "module:@the-/ui-image",
-    "meta": {
-      "filename": "index.jsx",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
-    },
     "name": "@the-/ui-image",
-    "order": 0,
-    "typicalname": "uiImage",
-    "version": "15.4.0"
-  },
-  {
+    "kind": "module",
     "description": "Image of the-components",
+    "version": "15.4.2",
+    "typicalname": "uiImage",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+    },
+    "order": 0
+  },
+  {
     "id": "TheImage",
-    "kind": "class",
     "longname": "TheImage",
-    "meta": {
-      "filename": "TheImage.jsx",
-      "lineno": 12,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
-    },
     "name": "TheImage",
-    "order": 1,
-    "scope": "global"
+    "kind": "class",
+    "scope": "global",
+    "description": "Image of the-components",
+    "meta": {
+      "lineno": 12,
+      "filename": "TheImage.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+    },
+    "order": 1
   },
   {
-    "description": "Style for TheImage",
     "id": "TheImageStyle",
-    "kind": "function",
     "longname": "TheImageStyle",
-    "meta": {
-      "filename": "TheImageStyle.jsx",
-      "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
-    },
     "name": "TheImageStyle",
-    "order": 10,
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheImage",
     "params": [],
-    "scope": "global"
+    "meta": {
+      "lineno": 11,
+      "filename": "TheImageStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+    },
+    "order": 10
   },
   {
-    "description": "Render as link",
     "id": "TheImage.propTypes.asLink",
-    "kind": "member",
     "longname": "TheImage.propTypes.asLink",
-    "memberof": "TheImage.propTypes",
-    "meta": {
-      "filename": "TheImage.jsx",
-      "lineno": 150,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
-    },
     "name": "asLink",
-    "order": 2,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Render as link",
+    "memberof": "TheImage.propTypes",
+    "meta": {
+      "lineno": 150,
+      "filename": "TheImage.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+    },
+    "order": 2
   },
   {
-    "description": "Image draggable",
     "id": "TheImage.propTypes.draggable",
-    "kind": "member",
     "longname": "TheImage.propTypes.draggable",
-    "memberof": "TheImage.propTypes",
-    "meta": {
-      "filename": "TheImage.jsx",
-      "lineno": 152,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
-    },
     "name": "draggable",
-    "order": 3,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Image draggable",
+    "memberof": "TheImage.propTypes",
+    "meta": {
+      "lineno": 152,
+      "filename": "TheImage.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+    },
+    "order": 3
   },
   {
-    "description": "Image height",
     "id": "TheImage.propTypes.height",
-    "kind": "member",
     "longname": "TheImage.propTypes.height",
-    "memberof": "TheImage.propTypes",
-    "meta": {
-      "filename": "TheImage.jsx",
-      "lineno": 154,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
-    },
     "name": "height",
-    "order": 4,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Image height",
+    "memberof": "TheImage.propTypes",
+    "meta": {
+      "lineno": 154,
+      "filename": "TheImage.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+    },
+    "order": 4
   },
   {
-    "description": "Message when not found",
     "id": "TheImage.propTypes.notFoundMessage",
-    "kind": "member",
     "longname": "TheImage.propTypes.notFoundMessage",
-    "memberof": "TheImage.propTypes",
-    "meta": {
-      "filename": "TheImage.jsx",
-      "lineno": 156,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
-    },
     "name": "notFoundMessage",
-    "order": 5,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Message when not found",
+    "memberof": "TheImage.propTypes",
+    "meta": {
+      "lineno": 156,
+      "filename": "TheImage.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+    },
+    "order": 5
   },
   {
-    "description": "Handler for failed event",
     "id": "TheImage.propTypes.onError",
-    "kind": "member",
     "longname": "TheImage.propTypes.onError",
-    "memberof": "TheImage.propTypes",
-    "meta": {
-      "filename": "TheImage.jsx",
-      "lineno": 158,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
-    },
     "name": "onError",
-    "order": 6,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Handler for failed event",
+    "memberof": "TheImage.propTypes",
+    "meta": {
+      "lineno": 158,
+      "filename": "TheImage.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+    },
+    "order": 6
   },
   {
-    "description": "Handler for load event",
     "id": "TheImage.propTypes.onLoad",
-    "kind": "member",
     "longname": "TheImage.propTypes.onLoad",
-    "memberof": "TheImage.propTypes",
-    "meta": {
-      "filename": "TheImage.jsx",
-      "lineno": 160,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
-    },
     "name": "onLoad",
-    "order": 7,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Handler for load event",
+    "memberof": "TheImage.propTypes",
+    "meta": {
+      "lineno": 160,
+      "filename": "TheImage.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+    },
+    "order": 7
   },
   {
-    "description": "Interval for resize",
     "id": "TheImage.propTypes.resizeInterval",
-    "kind": "member",
     "longname": "TheImage.propTypes.resizeInterval",
-    "memberof": "TheImage.propTypes",
-    "meta": {
-      "filename": "TheImage.jsx",
-      "lineno": 162,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
-    },
     "name": "resizeInterval",
-    "order": 8,
-    "scope": "static"
-  },
-  {
-    "description": "How to scale image",
-    "id": "TheImage.propTypes.scale",
     "kind": "member",
-    "longname": "TheImage.propTypes.scale",
+    "scope": "static",
+    "description": "Interval for resize",
     "memberof": "TheImage.propTypes",
     "meta": {
+      "lineno": 162,
       "filename": "TheImage.jsx",
-      "lineno": 164,
       "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
     },
-    "name": "scale",
-    "order": 9,
-    "scope": "static"
+    "order": 8
   },
   {
-    "description": "Style options",
-    "id": "TheImageStyle.propTypes.options",
+    "id": "TheImage.propTypes.scale",
+    "longname": "TheImage.propTypes.scale",
+    "name": "scale",
     "kind": "member",
+    "scope": "static",
+    "description": "How to scale image",
+    "memberof": "TheImage.propTypes",
+    "meta": {
+      "lineno": 164,
+      "filename": "TheImage.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+    },
+    "order": 9
+  },
+  {
+    "id": "TheImageStyle.propTypes.options",
     "longname": "TheImageStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
     "memberof": "TheImageStyle.propTypes",
     "meta": {
-      "filename": "TheImageStyle.jsx",
       "lineno": 22,
+      "filename": "TheImageStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
     },
-    "name": "options",
-    "order": 11,
-    "scope": "static"
+    "order": 11
   }
 ]

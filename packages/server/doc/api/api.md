@@ -19,8 +19,6 @@
 ## Functions
 
 <dl>
-<dt><a href="#assertMethods">assertMethods(Class, reservedNames)</a></dt>
-<dd></dd>
 <dt><a href="#IOEvents">IOEvents()</a></dt>
 <dd><p>Events for IO</p>
 </dd>
@@ -52,6 +50,7 @@ HTTP/RPC Server of the-framework
     * [.adapters](#module_@the-/server.adapters) : <code>object</code>
         * [.redisAdapter()](#module_@the-/server.adapters.redisAdapter)
     * [.assert](#module_@the-/server.assert) : <code>object</code>
+        * [.assertMethods(Class, reservedNames)](#module_@the-/server.assert.assertMethods)
     * [.constants](#module_@the-/server.constants) : <code>object</code>
         * [.DefaultValues](#module_@the-/server.constants.DefaultValues) : <code>object</code>
     * [.helpers](#module_@the-/server.helpers) : <code>object</code>
@@ -224,6 +223,20 @@ Define redis adapter for sockets
 Assert functions
 
 **Kind**: static namespace of [<code>@the-/server</code>](#module_@the-/server)  
+<a name="module_@the-/server.assert.assertMethods"></a>
+
+#### assert.assertMethods(Class, reservedNames)
+**Kind**: static method of [<code>assert</code>](#module_@the-/server.assert)  
+**Throws**:
+
+- <code>Error</code> The server error
+
+
+| Param | Type |
+| --- | --- |
+| Class | <code>function</code> | 
+| reservedNames | <code>Array.&lt;string&gt;</code> | 
+
 <a name="module_@the-/server.constants"></a>
 
 ### server.constants : <code>object</code>
@@ -695,23 +708,9 @@ Alias of [create](#module_@the-/server.create)
 module:@the-/server.mixins.keepmix
 
 **Kind**: global class  
-<a name="assertMethods"></a>
-
-## assertMethods(Class, reservedNames)
-**Kind**: global function  
-**Throws**:
-
-- <code>Error</code> The server error
-
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-| reservedNames | <code>Array.&lt;string&gt;</code> | 
-
 <a name="IOEvents"></a>
 
 ## IOEvents()
 Events for IO
 
-**Kind**: global function
+**Kind**: global function  

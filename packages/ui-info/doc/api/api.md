@@ -29,7 +29,7 @@
 ## @the-/ui-info
 Info of the-component
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 <a name="TheInfo"></a>
 
 ## TheInfo
@@ -41,4 +41,4 @@ Info of the-component
 ## TheInfoStyle()
 Style for TheInfo
 
-**Kind**: global function
+**Kind**: global function  

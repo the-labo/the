@@ -1,61 +1,61 @@
 [
   {
-    "description": "Conditional renderer for the-components",
     "id": "module:@the-/ui-condition",
-    "kind": "module",
     "longname": "module:@the-/ui-condition",
-    "meta": {
-      "filename": "index.jsx",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-condition/lib"
-    },
     "name": "@the-/ui-condition",
-    "order": 0,
-    "typicalname": "uiCondition",
-    "version": "15.4.0"
-  },
-  {
+    "kind": "module",
     "description": "Conditional renderer for the-components",
+    "version": "15.4.2",
+    "typicalname": "uiCondition",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-condition/lib"
+    },
+    "order": 0
+  },
+  {
     "id": "TheCondition",
-    "kind": "class",
     "longname": "TheCondition",
-    "meta": {
-      "filename": "TheCondition.jsx",
-      "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-condition/lib"
-    },
     "name": "TheCondition",
-    "order": 1,
-    "scope": "global"
-  },
-  {
-    "description": "Style for TheCondition",
-    "id": "TheConditionStyle",
-    "kind": "function",
-    "longname": "TheConditionStyle",
+    "kind": "class",
+    "scope": "global",
+    "description": "Conditional renderer for the-components",
     "meta": {
-      "filename": "TheConditionStyle.jsx",
       "lineno": 10,
+      "filename": "TheCondition.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-condition/lib"
     },
-    "name": "TheConditionStyle",
-    "order": 2,
-    "params": [],
-    "scope": "global"
+    "order": 1
   },
   {
-    "description": "Style options",
+    "id": "TheConditionStyle",
+    "longname": "TheConditionStyle",
+    "name": "TheConditionStyle",
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheCondition",
+    "params": [],
+    "meta": {
+      "lineno": 10,
+      "filename": "TheConditionStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-condition/lib"
+    },
+    "order": 2
+  },
+  {
     "id": "TheConditionStyle.propTypes.options",
-    "kind": "member",
     "longname": "TheConditionStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
     "memberof": "TheConditionStyle.propTypes",
     "meta": {
-      "filename": "TheConditionStyle.jsx",
       "lineno": 21,
+      "filename": "TheConditionStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-condition/lib"
     },
-    "name": "options",
-    "order": 3,
-    "scope": "static"
+    "order": 3
   }
 ]

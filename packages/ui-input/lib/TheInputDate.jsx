@@ -32,8 +32,10 @@ class TheInputDate extends React.PureComponent {
           minDate: this.props.minDate,
           noCalendar: this.props.noCalendar,
           onChange: (selectedDates, dateStr) => {
-            const { name, onUpdate } = this.props
-            onUpdate && onUpdate({ [name]: dateStr })
+            const { name, onUpdate, value } = this.props
+            if (value !== dateStr) {
+              onUpdate && onUpdate({ [name]: dateStr })
+            }
           },
         },
         { delNull: true },
@@ -52,9 +54,11 @@ class TheInputDate extends React.PureComponent {
   }
 
   handleBlur(e) {
-    const { name, onBlur, onUpdate } = this.props
+    const { name, onBlur, onUpdate, value } = this.props
     onBlur && onBlur(e)
-    onUpdate && onUpdate({ [name]: e.target.value })
+    if (value !== e.target.value) {
+      onUpdate && onUpdate({ [name]: e.target.value })
+    }
   }
 
   render() {

@@ -23,7 +23,7 @@
 ## @the-/mixin-stream
 Mixins for stream
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 **License**: MIT  
 <a name="compose"></a>
 
@@ -46,3 +46,4 @@ Compose multiple mixins into one
 | Param | Type | Description |
 | --- | --- | --- |
 | Base | <code>function</code> | class |
+

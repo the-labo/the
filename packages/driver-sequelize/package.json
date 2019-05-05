@@ -9,7 +9,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.0",
+    "@the-/check": "^15.5.1",
     "@the-/resource": "^15.4.3",
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.3",

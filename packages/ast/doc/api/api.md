@@ -11,7 +11,7 @@ AST (abstract syntax tree) parser
 * [@the-/ast](#module_@the-/ast)
     * [.analyzer](#module_@the-/ast.analyzer) : <code>object</code>
     * [.finder](#module_@the-/ast.finder) : <code>object</code>
-        * [.findByTypes(node, types)](#module_@the-/ast.finder.findByTypes) ⇒ <code>Array.&lt;Node&gt;</code>
+        * [.findByTypes(node, types)](#module_@the-/ast.finder.findByTypes) ⇒ <code>Array.&lt;Object&gt;</code>
     * [.constants](#module_@the-/ast.constants) : <code>object</code>
     * [.NodeTypes](#module_@the-/ast.NodeTypes) : <code>object</code>
     * [.parse(src, [options])](#module_@the-/ast.parse) ⇒ <code>Object</code>
@@ -30,15 +30,15 @@ Find node from node
 **Kind**: static namespace of [<code>@the-/ast</code>](#module_@the-/ast)  
 <a name="module_@the-/ast.finder.findByTypes"></a>
 
-#### finder.findByTypes(node, types) ⇒ <code>Array.&lt;Node&gt;</code>
+#### finder.findByTypes(node, types) ⇒ <code>Array.&lt;Object&gt;</code>
 Find nodes by types
 
 **Kind**: static method of [<code>finder</code>](#module_@the-/ast.finder)  
-**Returns**: <code>Array.&lt;Node&gt;</code> - Found nodes  
+**Returns**: <code>Array.&lt;Object&gt;</code> - Found nodes  
 
 | Param | Type |
 | --- | --- |
-| node | <code>Node</code> | 
+| node | <code>Object</code> | 
 | types | <code>Array.&lt;string&gt;</code> | 
 
 <a name="module_@the-/ast.constants"></a>
@@ -68,4 +68,5 @@ Parse source code
 | Param | Type | Default |
 | --- | --- | --- |
 | src | <code>string</code> |  | 
-| [options] | <code>Object</code> | <code>{}</code> |
+| [options] | <code>Object</code> | <code>{}</code> | 
+

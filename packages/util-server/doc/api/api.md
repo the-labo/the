@@ -40,7 +40,7 @@
 ## @the-/util-server
 Utility for server
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 **License**: MIT  
 <a name="generateFile"></a>
 
@@ -130,3 +130,4 @@ Wait until file exists
 | --- | --- | --- | --- |
 | condition | <code>function</code> |  |  |
 | [options] | <code>Object</code> | <code>{}</code> | Optional setting |
+

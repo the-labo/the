@@ -1,211 +1,211 @@
 [
   {
-    "description": "Repeatable of the-component",
     "id": "module:@the-/ui-repeatable",
-    "kind": "module",
     "longname": "module:@the-/ui-repeatable",
-    "meta": {
-      "filename": "index.jsx",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
-    },
     "name": "@the-/ui-repeatable",
-    "order": 0,
-    "typicalname": "uiRepeatable",
-    "version": "15.4.0"
-  },
-  {
+    "kind": "module",
     "description": "Repeatable of the-component",
+    "version": "15.4.2",
+    "typicalname": "uiRepeatable",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+    },
+    "order": 0
+  },
+  {
     "id": "TheRepeatable",
-    "kind": "class",
     "longname": "TheRepeatable",
-    "meta": {
-      "filename": "TheRepeatable.jsx",
-      "lineno": 14,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
-    },
     "name": "TheRepeatable",
-    "order": 1,
-    "scope": "global"
+    "kind": "class",
+    "scope": "global",
+    "description": "Repeatable of the-component",
+    "meta": {
+      "lineno": 14,
+      "filename": "TheRepeatable.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+    },
+    "order": 1
   },
   {
-    "description": "Style for TheRepeatable",
     "id": "TheRepeatableStyle",
-    "kind": "function",
     "longname": "TheRepeatableStyle",
-    "meta": {
-      "filename": "TheRepeatableStyle.jsx",
-      "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
-    },
     "name": "TheRepeatableStyle",
-    "order": 12,
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheRepeatable",
     "params": [],
-    "scope": "global"
+    "meta": {
+      "lineno": 10,
+      "filename": "TheRepeatableStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+    },
+    "order": 12
   },
   {
-    "description": "Item component",
     "id": "TheRepeatable.propTypes.ItemComponent",
-    "kind": "member",
     "longname": "TheRepeatable.propTypes.ItemComponent",
-    "memberof": "TheRepeatable.propTypes",
-    "meta": {
-      "filename": "TheRepeatable.jsx",
-      "lineno": 70,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
-    },
     "name": "ItemComponent",
-    "order": 2,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Item component",
+    "memberof": "TheRepeatable.propTypes",
+    "meta": {
+      "lineno": 70,
+      "filename": "TheRepeatable.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+    },
+    "order": 2
   },
   {
-    "description": "List component",
     "id": "TheRepeatable.propTypes.ListComponent",
-    "kind": "member",
     "longname": "TheRepeatable.propTypes.ListComponent",
-    "memberof": "TheRepeatable.propTypes",
-    "meta": {
-      "filename": "TheRepeatable.jsx",
-      "lineno": 72,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
-    },
     "name": "ListComponent",
-    "order": 3,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "List component",
+    "memberof": "TheRepeatable.propTypes",
+    "meta": {
+      "lineno": 72,
+      "filename": "TheRepeatable.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+    },
+    "order": 3
   },
   {
-    "description": "Alt text when empty",
     "id": "TheRepeatable.propTypes.alt",
-    "kind": "member",
     "longname": "TheRepeatable.propTypes.alt",
-    "memberof": "TheRepeatable.propTypes",
-    "meta": {
-      "filename": "TheRepeatable.jsx",
-      "lineno": 74,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
-    },
     "name": "alt",
-    "order": 4,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Alt text when empty",
+    "memberof": "TheRepeatable.propTypes",
+    "meta": {
+      "lineno": 74,
+      "filename": "TheRepeatable.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+    },
+    "order": 4
   },
   {
-    "description": "Items to render",
     "id": "TheRepeatable.propTypes.data",
-    "kind": "member",
     "longname": "TheRepeatable.propTypes.data",
-    "memberof": "TheRepeatable.propTypes",
-    "meta": {
-      "filename": "TheRepeatable.jsx",
-      "lineno": 76,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
-    },
     "name": "data",
-    "order": 5,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Items to render",
+    "memberof": "TheRepeatable.propTypes",
+    "meta": {
+      "lineno": 76,
+      "filename": "TheRepeatable.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+    },
+    "order": 5
   },
   {
-    "description": "Render as horizontal list",
     "id": "TheRepeatable.propTypes.horizontal",
-    "kind": "member",
     "longname": "TheRepeatable.propTypes.horizontal",
-    "memberof": "TheRepeatable.propTypes",
-    "meta": {
-      "filename": "TheRepeatable.jsx",
-      "lineno": 78,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
-    },
     "name": "horizontal",
-    "order": 6,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Render as horizontal list",
+    "memberof": "TheRepeatable.propTypes",
+    "meta": {
+      "lineno": 78,
+      "filename": "TheRepeatable.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+    },
+    "order": 6
   },
   {
-    "description": "Intro item",
     "id": "TheRepeatable.propTypes.introItem",
-    "kind": "member",
     "longname": "TheRepeatable.propTypes.introItem",
-    "memberof": "TheRepeatable.propTypes",
-    "meta": {
-      "filename": "TheRepeatable.jsx",
-      "lineno": 80,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
-    },
     "name": "introItem",
-    "order": 7,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Intro item",
+    "memberof": "TheRepeatable.propTypes",
+    "meta": {
+      "lineno": 80,
+      "filename": "TheRepeatable.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+    },
+    "order": 7
   },
   {
-    "description": "Get key for data",
     "id": "TheRepeatable.propTypes.keyFor",
-    "kind": "member",
     "longname": "TheRepeatable.propTypes.keyFor",
-    "memberof": "TheRepeatable.propTypes",
-    "meta": {
-      "filename": "TheRepeatable.jsx",
-      "lineno": 82,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
-    },
     "name": "keyFor",
-    "order": 8,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Get key for data",
+    "memberof": "TheRepeatable.propTypes",
+    "meta": {
+      "lineno": 82,
+      "filename": "TheRepeatable.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+    },
+    "order": 8
   },
   {
-    "description": "Outro item",
     "id": "TheRepeatable.propTypes.outroItem",
-    "kind": "member",
     "longname": "TheRepeatable.propTypes.outroItem",
-    "memberof": "TheRepeatable.propTypes",
-    "meta": {
-      "filename": "TheRepeatable.jsx",
-      "lineno": 84,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
-    },
     "name": "outroItem",
-    "order": 9,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Outro item",
+    "memberof": "TheRepeatable.propTypes",
+    "meta": {
+      "lineno": 84,
+      "filename": "TheRepeatable.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+    },
+    "order": 9
   },
   {
-    "description": "Renderer",
     "id": "TheRepeatable.propTypes.render",
-    "kind": "member",
     "longname": "TheRepeatable.propTypes.render",
-    "memberof": "TheRepeatable.propTypes",
-    "meta": {
-      "filename": "TheRepeatable.jsx",
-      "lineno": 86,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
-    },
     "name": "render",
-    "order": 10,
-    "scope": "static"
-  },
-  {
-    "description": "Shows spinner",
-    "id": "TheRepeatable.propTypes.spinning",
     "kind": "member",
-    "longname": "TheRepeatable.propTypes.spinning",
+    "scope": "static",
+    "description": "Renderer",
     "memberof": "TheRepeatable.propTypes",
     "meta": {
+      "lineno": 86,
       "filename": "TheRepeatable.jsx",
-      "lineno": 88,
       "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
     },
-    "name": "spinning",
-    "order": 11,
-    "scope": "static"
+    "order": 10
   },
   {
-    "description": "Style options",
-    "id": "TheRepeatableStyle.propTypes.options",
+    "id": "TheRepeatable.propTypes.spinning",
+    "longname": "TheRepeatable.propTypes.spinning",
+    "name": "spinning",
     "kind": "member",
+    "scope": "static",
+    "description": "Shows spinner",
+    "memberof": "TheRepeatable.propTypes",
+    "meta": {
+      "lineno": 88,
+      "filename": "TheRepeatable.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+    },
+    "order": 11
+  },
+  {
+    "id": "TheRepeatableStyle.propTypes.options",
     "longname": "TheRepeatableStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
     "memberof": "TheRepeatableStyle.propTypes",
     "meta": {
-      "filename": "TheRepeatableStyle.jsx",
       "lineno": 21,
+      "filename": "TheRepeatableStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
     },
-    "name": "options",
-    "order": 13,
-    "scope": "static"
+    "order": 13
   }
 ]

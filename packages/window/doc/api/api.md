@@ -21,7 +21,7 @@
 ## @the-/window
 Browser utility for the-framework
 
-**Version**: 15.4.1  
+**Version**: 15.4.2  
 **License**: MIT  
 
 * [@the-/window](#module_@the-/window)
@@ -101,3 +101,4 @@ Handle event rescue on document
 | --- | --- | --- |
 | event | <code>string</code> | Name of event |
 | handler | <code>function</code> | Event handler |
+

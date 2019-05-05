@@ -5,7 +5,7 @@
 ## @the-/run
 Script runner for the-framework
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 **License**: MIT  
 
 * [@the-/run](#module_@the-/run)
@@ -57,4 +57,5 @@ Create and run
 | Param | Type | Default |
 | --- | --- | --- |
 | filename | <code>string</code> |  | 
-| [options] | <code>Object</code> | <code>{}</code> |
+| [options] | <code>Object</code> | <code>{}</code> | 
+

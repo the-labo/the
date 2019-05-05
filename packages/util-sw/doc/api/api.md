@@ -27,7 +27,7 @@
 ## @the-/util-sw
 Utility for service workers
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 **License**: MIT  
 <a name="appCache"></a>
 
@@ -63,4 +63,5 @@ Parse url
 
 | Param | Type |
 | --- | --- |
-| urlString | <code>string</code> |
+| urlString | <code>string</code> | 
+

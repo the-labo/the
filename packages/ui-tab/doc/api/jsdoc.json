@@ -1,121 +1,121 @@
 [
   {
-    "description": "Tab for the-components",
     "id": "module:@the-/ui-tab",
-    "kind": "module",
     "longname": "module:@the-/ui-tab",
-    "meta": {
-      "filename": "index.jsx",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
-    },
     "name": "@the-/ui-tab",
-    "order": 0,
-    "typicalname": "uiTab",
-    "version": "15.4.0"
-  },
-  {
+    "kind": "module",
     "description": "Tab for the-components",
+    "version": "15.4.2",
+    "typicalname": "uiTab",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
+    },
+    "order": 0
+  },
+  {
     "id": "TheTab",
-    "kind": "class",
     "longname": "TheTab",
-    "meta": {
-      "filename": "TheTab.jsx",
-      "lineno": 36,
-      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
-    },
     "name": "TheTab",
-    "order": 1,
-    "scope": "global"
+    "kind": "class",
+    "scope": "global",
+    "description": "Tab for the-components",
+    "meta": {
+      "lineno": 36,
+      "filename": "TheTab.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
+    },
+    "order": 1
   },
   {
-    "description": "Style for TheTab",
     "id": "TheTabStyle",
-    "kind": "function",
     "longname": "TheTabStyle",
-    "meta": {
-      "filename": "TheTabStyle.jsx",
-      "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
-    },
     "name": "TheTabStyle",
-    "order": 6,
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheTab",
     "params": [],
-    "scope": "global"
+    "meta": {
+      "lineno": 11,
+      "filename": "TheTabStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
+    },
+    "order": 6
   },
   {
-    "description": "Active tab index",
     "id": "TheTab.propTypes.activeIndex",
-    "kind": "member",
     "longname": "TheTab.propTypes.activeIndex",
-    "memberof": "TheTab.propTypes",
-    "meta": {
-      "filename": "TheTab.jsx",
-      "lineno": 384,
-      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
-    },
     "name": "activeIndex",
-    "order": 2,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Active tab index",
+    "memberof": "TheTab.propTypes",
+    "meta": {
+      "lineno": 384,
+      "filename": "TheTab.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
+    },
+    "order": 2
   },
   {
-    "description": "Tab buttons",
     "id": "TheTab.propTypes.buttons",
-    "kind": "member",
     "longname": "TheTab.propTypes.buttons",
-    "memberof": "TheTab.propTypes",
-    "meta": {
-      "filename": "TheTab.jsx",
-      "lineno": 386,
-      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
-    },
     "name": "buttons",
-    "order": 3,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Tab buttons",
+    "memberof": "TheTab.propTypes",
+    "meta": {
+      "lineno": 386,
+      "filename": "TheTab.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
+    },
+    "order": 3
   },
   {
-    "description": "Disable touch action",
     "id": "TheTab.propTypes.disableTouchAction",
-    "kind": "member",
     "longname": "TheTab.propTypes.disableTouchAction",
-    "memberof": "TheTab.propTypes",
-    "meta": {
-      "filename": "TheTab.jsx",
-      "lineno": 388,
-      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
-    },
     "name": "disableTouchAction",
-    "order": 4,
-    "scope": "static"
-  },
-  {
-    "description": "Change handler",
-    "id": "TheTab.propTypes.onChange",
     "kind": "member",
-    "longname": "TheTab.propTypes.onChange",
+    "scope": "static",
+    "description": "Disable touch action",
     "memberof": "TheTab.propTypes",
     "meta": {
+      "lineno": 388,
       "filename": "TheTab.jsx",
-      "lineno": 390,
       "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
     },
-    "name": "onChange",
-    "order": 5,
-    "scope": "static"
+    "order": 4
   },
   {
-    "description": "Style options",
-    "id": "TheTabStyle.propTypes.options",
+    "id": "TheTab.propTypes.onChange",
+    "longname": "TheTab.propTypes.onChange",
+    "name": "onChange",
     "kind": "member",
+    "scope": "static",
+    "description": "Change handler",
+    "memberof": "TheTab.propTypes",
+    "meta": {
+      "lineno": 390,
+      "filename": "TheTab.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
+    },
+    "order": 5
+  },
+  {
+    "id": "TheTabStyle.propTypes.options",
     "longname": "TheTabStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
     "memberof": "TheTabStyle.propTypes",
     "meta": {
-      "filename": "TheTabStyle.jsx",
       "lineno": 22,
+      "filename": "TheTabStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
     },
-    "name": "options",
-    "order": 7,
-    "scope": "static"
+    "order": 7
   }
 ]

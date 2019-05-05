@@ -5,7 +5,7 @@
 ## @the-/store
 Redux wrapper for the-framework
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 **License**: MIT  
 
 * [@the-/store](#module_@the-/store)
@@ -126,4 +126,5 @@ Convert into store scope class
 
 | Param | Type |
 | --- | --- |
-| BaseClass | <code>function</code> |
+| BaseClass | <code>function</code> | 
+

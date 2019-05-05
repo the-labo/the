@@ -29,7 +29,7 @@
 ## @the-/ui-caught
 Component to show caught errors
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 <a name="TheCaught"></a>
 
 ## TheCaught
@@ -41,4 +41,4 @@ Component to show caught errors
 ## TheCaughtStyle()
 Style for TheCaught
 
-**Kind**: global function
+**Kind**: global function  

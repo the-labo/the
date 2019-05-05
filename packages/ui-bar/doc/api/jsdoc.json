@@ -1,165 +1,165 @@
 [
   {
-    "description": "Bar of the-components",
     "id": "module:@the-/ui-bar",
-    "kind": "module",
     "longname": "module:@the-/ui-bar",
-    "meta": {
-      "filename": "index.jsx",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
-    },
     "name": "@the-/ui-bar",
-    "order": 0,
+    "kind": "module",
+    "description": "Bar of the-components",
+    "version": "15.4.2",
     "typicalname": "uiBar",
-    "version": "15.4.0"
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+    },
+    "order": 0
   },
   {
-    "description": "Bar of the-component",
     "id": "TheActionBar",
-    "kind": "class",
     "longname": "TheActionBar",
-    "meta": {
-      "filename": "TheActionBar.jsx",
-      "lineno": 14,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
-    },
     "name": "TheActionBar",
-    "order": 1,
-    "scope": "global"
-  },
-  {
-    "description": "Bar of the-component",
-    "id": "TheBar",
     "kind": "class",
+    "scope": "global",
+    "description": "Bar of the-component",
+    "meta": {
+      "lineno": 14,
+      "filename": "TheActionBar.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+    },
+    "order": 1
+  },
+  {
+    "id": "TheBar",
     "longname": "TheBar",
-    "meta": {
-      "filename": "TheBar.jsx",
-      "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
-    },
     "name": "TheBar",
-    "order": 8,
-    "scope": "global"
+    "kind": "class",
+    "scope": "global",
+    "description": "Bar of the-component",
+    "meta": {
+      "lineno": 11,
+      "filename": "TheBar.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+    },
+    "order": 8
   },
   {
-    "description": "Style for TheBar",
     "id": "TheBarStyle",
-    "kind": "function",
     "longname": "TheBarStyle",
-    "meta": {
-      "filename": "TheBarStyle.jsx",
-      "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
-    },
     "name": "TheBarStyle",
-    "order": 9,
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheBar",
     "params": [],
-    "scope": "global"
+    "meta": {
+      "lineno": 10,
+      "filename": "TheBarStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+    },
+    "order": 9
   },
   {
-    "description": "Button texts",
     "id": "TheActionBar.propTypes.buttons",
-    "kind": "member",
     "longname": "TheActionBar.propTypes.buttons",
-    "memberof": "TheActionBar.propTypes",
-    "meta": {
-      "filename": "TheActionBar.jsx",
-      "lineno": 62,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
-    },
     "name": "buttons",
-    "order": 2,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Button texts",
+    "memberof": "TheActionBar.propTypes",
+    "meta": {
+      "lineno": 62,
+      "filename": "TheActionBar.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+    },
+    "order": 2
   },
   {
-    "description": "Danger marks",
     "id": "TheActionBar.propTypes.danger",
-    "kind": "member",
     "longname": "TheActionBar.propTypes.danger",
-    "memberof": "TheActionBar.propTypes",
-    "meta": {
-      "filename": "TheActionBar.jsx",
-      "lineno": 64,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
-    },
     "name": "danger",
-    "order": 3,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Danger marks",
+    "memberof": "TheActionBar.propTypes",
+    "meta": {
+      "lineno": 64,
+      "filename": "TheActionBar.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+    },
+    "order": 3
   },
   {
-    "description": "Handler functions",
     "id": "TheActionBar.propTypes.handlers",
-    "kind": "member",
     "longname": "TheActionBar.propTypes.handlers",
-    "memberof": "TheActionBar.propTypes",
-    "meta": {
-      "filename": "TheActionBar.jsx",
-      "lineno": 66,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
-    },
     "name": "handlers",
-    "order": 4,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Handler functions",
+    "memberof": "TheActionBar.propTypes",
+    "meta": {
+      "lineno": 66,
+      "filename": "TheActionBar.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+    },
+    "order": 4
   },
   {
-    "description": "Hidden or not",
     "id": "TheActionBar.propTypes.hidden",
-    "kind": "member",
     "longname": "TheActionBar.propTypes.hidden",
-    "memberof": "TheActionBar.propTypes",
-    "meta": {
-      "filename": "TheActionBar.jsx",
-      "lineno": 68,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
-    },
     "name": "hidden",
-    "order": 5,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Hidden or not",
+    "memberof": "TheActionBar.propTypes",
+    "meta": {
+      "lineno": 68,
+      "filename": "TheActionBar.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+    },
+    "order": 5
   },
   {
-    "description": "Icon class names",
     "id": "TheActionBar.propTypes.icons",
-    "kind": "member",
     "longname": "TheActionBar.propTypes.icons",
-    "memberof": "TheActionBar.propTypes",
-    "meta": {
-      "filename": "TheActionBar.jsx",
-      "lineno": 70,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
-    },
     "name": "icons",
-    "order": 6,
-    "scope": "static"
-  },
-  {
-    "description": "Lead text",
-    "id": "TheActionBar.propTypes.lead",
     "kind": "member",
-    "longname": "TheActionBar.propTypes.lead",
+    "scope": "static",
+    "description": "Icon class names",
     "memberof": "TheActionBar.propTypes",
     "meta": {
+      "lineno": 70,
       "filename": "TheActionBar.jsx",
-      "lineno": 72,
       "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
     },
-    "name": "lead",
-    "order": 7,
-    "scope": "static"
+    "order": 6
   },
   {
-    "description": "Style options",
-    "id": "TheBarStyle.propTypes.options",
+    "id": "TheActionBar.propTypes.lead",
+    "longname": "TheActionBar.propTypes.lead",
+    "name": "lead",
     "kind": "member",
+    "scope": "static",
+    "description": "Lead text",
+    "memberof": "TheActionBar.propTypes",
+    "meta": {
+      "lineno": 72,
+      "filename": "TheActionBar.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+    },
+    "order": 7
+  },
+  {
+    "id": "TheBarStyle.propTypes.options",
     "longname": "TheBarStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
     "memberof": "TheBarStyle.propTypes",
     "meta": {
-      "filename": "TheBarStyle.jsx",
       "lineno": 21,
+      "filename": "TheBarStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
     },
-    "name": "options",
-    "order": 10,
-    "scope": "static"
+    "order": 10
   }
 ]

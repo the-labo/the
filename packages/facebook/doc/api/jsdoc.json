@@ -1,72 +1,67 @@
 [
   {
-    "description": "Default exports",
     "id": "module:default",
-    "kind": "module",
     "longname": "module:default",
+    "name": "default",
+    "kind": "module",
+    "description": "Default exports",
     "meta": {
-      "filename": "default.js",
       "lineno": 1,
+      "filename": "default.js",
       "path": "/Users/okuni/Projects/the/packages/facebook/lib"
     },
-    "name": "default",
     "order": 2
   },
   {
-    "description": "Facebook utility for the-framework",
     "id": "module:@the-/facebook",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/facebook",
+    "name": "@the-/facebook",
+    "kind": "module",
+    "description": "Facebook utility for the-framework",
+    "version": "15.4.2",
+    "license": "MIT",
+    "typicalname": "facebook",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/facebook/lib"
     },
-    "name": "@the-/facebook",
-    "order": 3,
-    "typicalname": "facebook",
-    "version": "15.4.0"
+    "order": 3
   },
   {
     "id": "TheFacebook",
-    "kind": "class",
     "longname": "TheFacebook",
-    "meta": {
-      "filename": "TheFacebook.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/facebook/lib"
-    },
     "name": "TheFacebook",
-    "order": 4,
-    "scope": "global"
+    "kind": "class",
+    "scope": "global",
+    "meta": {
+      "lineno": 1,
+      "filename": "TheFacebook.js",
+      "path": "/Users/okuni/Projects/the/packages/facebook/lib"
+    },
+    "order": 4
   },
   {
-    "description": "Constant variables",
     "id": "Constants",
-    "kind": "namespace",
     "longname": "Constants",
+    "name": "Constants",
+    "kind": "namespace",
+    "scope": "global",
+    "description": "Constant variables",
     "meta": {
-      "filename": "Constants.js",
       "lineno": 1,
+      "filename": "Constants.js",
       "path": "/Users/okuni/Projects/the/packages/facebook/lib"
     },
-    "name": "Constants",
-    "order": 0,
-    "scope": "global"
+    "order": 0
   },
   {
-    "description": "Create a TheFacebook instance",
     "id": "create",
-    "kind": "function",
     "longname": "create",
-    "meta": {
-      "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/facebook/lib"
-    },
     "name": "create",
-    "order": 1,
+    "kind": "function",
+    "scope": "global",
+    "description": "Create a TheFacebook instance",
     "params": [
       {
         "type": {
@@ -87,6 +82,11 @@
         }
       }
     ],
-    "scope": "global"
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/facebook/lib"
+    },
+    "order": 1
   }
 ]

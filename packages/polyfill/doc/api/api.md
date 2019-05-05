@@ -5,7 +5,7 @@
 ## @the-/polyfill
 Polyfill of the-frameworks
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 **License**: MIT  
 
 * [@the-/polyfill](#module_@the-/polyfill)
@@ -38,4 +38,4 @@ Create a ThePolyfill instance
 ### polyfill.default()
 Alias of [create](#module_@the-/polyfill.create)
 
-**Kind**: static method of [<code>@the-/polyfill</code>](#module_@the-/polyfill)
+**Kind**: static method of [<code>@the-/polyfill</code>](#module_@the-/polyfill)  

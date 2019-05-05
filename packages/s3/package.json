@@ -9,7 +9,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.0",
+    "@the-/check": "^15.5.1",
     "aws-sdk": "^2.449.0",
     "debug": "^4.1.1",
     "mime": "^2.4.2"

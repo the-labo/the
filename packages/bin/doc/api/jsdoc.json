@@ -1,27 +1,26 @@
 [
   {
-    "description": "Bin manager for the-frameworks",
     "id": "module:@the-/bin",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/bin",
+    "name": "@the-/bin",
+    "kind": "module",
+    "description": "Bin manager for the-frameworks",
+    "version": "15.4.2",
+    "license": "MIT",
+    "typicalname": "bin",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/bin/lib"
     },
-    "name": "@the-/bin",
-    "order": 1,
-    "typicalname": "bin",
-    "version": "15.4.2"
+    "order": 1
   },
   {
     "id": "module:@the-/bin.TheBin()",
-    "kind": "constructor",
     "longname": "module:@the-/bin.TheBin",
-    "memberof": "module:@the-/bin.TheBin",
     "name": "TheBin",
-    "order": 3,
+    "kind": "constructor",
+    "memberof": "module:@the-/bin.TheBin",
     "params": [
       {
         "type": {
@@ -64,22 +63,17 @@
         "description": "Option string for version",
         "name": "options.versionOption"
       }
-    ]
+    ],
+    "order": 3
   },
   {
-    "async": true,
-    "description": "Execute bin file",
     "id": "module:@the-/bin.TheBin#exec",
-    "kind": "function",
     "longname": "module:@the-/bin.TheBin#exec",
-    "memberof": "module:@the-/bin.TheBin",
-    "meta": {
-      "filename": "TheBin.js",
-      "lineno": 60,
-      "path": "/Users/okuni/Projects/the/packages/bin/lib"
-    },
     "name": "exec",
-    "order": 4,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Execute bin file",
+    "memberof": "module:@the-/bin.TheBin",
     "params": [
       {
         "type": {
@@ -101,22 +95,22 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Check if bin exists",
-    "id": "module:@the-/bin.TheBin#exists",
-    "kind": "function",
-    "longname": "module:@the-/bin.TheBin#exists",
-    "memberof": "module:@the-/bin.TheBin",
     "meta": {
+      "lineno": 60,
       "filename": "TheBin.js",
-      "lineno": 75,
       "path": "/Users/okuni/Projects/the/packages/bin/lib"
     },
+    "async": true,
+    "order": 4
+  },
+  {
+    "id": "module:@the-/bin.TheBin#exists",
+    "longname": "module:@the-/bin.TheBin#exists",
     "name": "exists",
-    "order": 5,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Check if bin exists",
+    "memberof": "module:@the-/bin.TheBin",
     "params": [],
     "returns": [
       {
@@ -127,22 +121,22 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Satisfies version or not",
-    "id": "module:@the-/bin.TheBin#satisfiesVersion",
-    "kind": "function",
-    "longname": "module:@the-/bin.TheBin#satisfiesVersion",
-    "memberof": "module:@the-/bin.TheBin",
     "meta": {
+      "lineno": 75,
       "filename": "TheBin.js",
-      "lineno": 92,
       "path": "/Users/okuni/Projects/the/packages/bin/lib"
     },
+    "async": true,
+    "order": 5
+  },
+  {
+    "id": "module:@the-/bin.TheBin#satisfiesVersion",
+    "longname": "module:@the-/bin.TheBin#satisfiesVersion",
     "name": "satisfiesVersion",
-    "order": 6,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Satisfies version or not",
+    "memberof": "module:@the-/bin.TheBin",
     "params": [
       {
         "type": {
@@ -163,22 +157,22 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Verify the bin",
-    "id": "module:@the-/bin.TheBin#verify",
-    "kind": "function",
-    "longname": "module:@the-/bin.TheBin#verify",
-    "memberof": "module:@the-/bin.TheBin",
     "meta": {
+      "lineno": 92,
       "filename": "TheBin.js",
-      "lineno": 116,
       "path": "/Users/okuni/Projects/the/packages/bin/lib"
     },
+    "async": true,
+    "order": 6
+  },
+  {
+    "id": "module:@the-/bin.TheBin#verify",
+    "longname": "module:@the-/bin.TheBin#verify",
     "name": "verify",
-    "order": 7,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Verify the bin",
+    "memberof": "module:@the-/bin.TheBin",
     "params": [
       {
         "type": {
@@ -201,22 +195,22 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Get command version",
-    "id": "module:@the-/bin.TheBin#version",
-    "kind": "function",
-    "longname": "module:@the-/bin.TheBin#version",
-    "memberof": "module:@the-/bin.TheBin",
     "meta": {
+      "lineno": 116,
       "filename": "TheBin.js",
-      "lineno": 135,
       "path": "/Users/okuni/Projects/the/packages/bin/lib"
     },
+    "async": true,
+    "order": 7
+  },
+  {
+    "id": "module:@the-/bin.TheBin#version",
+    "longname": "module:@the-/bin.TheBin#version",
     "name": "version",
-    "order": 8,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get command version",
+    "memberof": "module:@the-/bin.TheBin",
     "params": [],
     "returns": [
       {
@@ -227,35 +221,36 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 135,
+      "filename": "TheBin.js",
+      "path": "/Users/okuni/Projects/the/packages/bin/lib"
+    },
+    "async": true,
+    "order": 8
   },
   {
     "id": "module:@the-/bin.TheBin",
-    "kind": "class",
     "longname": "module:@the-/bin.TheBin",
+    "name": "TheBin",
+    "kind": "class",
+    "scope": "static",
     "memberof": "module:@the-/bin",
     "meta": {
-      "filename": "TheBin.js",
       "lineno": 1,
+      "filename": "TheBin.js",
       "path": "/Users/okuni/Projects/the/packages/bin/lib"
     },
-    "name": "TheBin",
-    "order": 2,
-    "scope": "static"
+    "order": 2
   },
   {
-    "description": "Create a TheBin instance",
     "id": "module:@the-/bin.create",
-    "kind": "function",
     "longname": "module:@the-/bin.create",
-    "memberof": "module:@the-/bin",
-    "meta": {
-      "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/bin/lib"
-    },
     "name": "create",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheBin instance",
+    "memberof": "module:@the-/bin",
     "params": [
       {
         "type": {
@@ -276,6 +271,11 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/bin/lib"
+    },
+    "order": 0
   }
 ]

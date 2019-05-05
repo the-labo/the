@@ -1,4 +1,7 @@
 {
+  "name": "@the-/ui-input",
+  "description": "Input of the-components",
+  "version": "15.4.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -8,8 +11,8 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.0",
-    "@the-/const-ui": "^2.0.11",
+    "@the-/check": "^15.5.1",
+    "@the-/const-ui": "^15.4.2",
     "@the-/ui-condition": "^15.4.0",
     "@the-/ui-icon": "^15.4.0",
     "@the-/ui-spin": "^15.4.0",
@@ -28,9 +31,8 @@
     "regex-url": "^1.0.0",
     "video-extensions": "^1.1.0"
   },
-  "description": "Input of the-components",
   "devDependencies": {
-    "@the-/ui-demo": "file:../ui-demo",
+    "@the-/ui-demo": "^15.4.0",
     "@the-/ui-router": "^15.2.0",
     "coz": "^7.0.19"
   },
@@ -45,7 +47,6 @@
   ],
   "license": "MIT",
   "main": "shim",
-  "name": "@the-/ui-input",
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
@@ -59,6 +60,5 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.2"
+  }
 }

@@ -21,7 +21,7 @@
 ## @the-/metrics-presets
 Preset of the-metrics
 
-**Version**: 15.4.0  
+**Version**: 15.4.2  
 **License**: MIT  
 <a name="RenderingCountMetrics"></a>
 
@@ -34,3 +34,4 @@ Count metrics for component rendering
 | --- | --- | --- | --- |
 | Components | <code>Object</code> |  | Components to count |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
+

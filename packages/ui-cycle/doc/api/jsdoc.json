@@ -1,91 +1,91 @@
 [
   {
-    "description": "Component with life cycle",
     "id": "module:@the-/ui-cycle",
-    "kind": "module",
     "longname": "module:@the-/ui-cycle",
-    "meta": {
-      "filename": "index.jsx",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-cycle/lib"
-    },
     "name": "@the-/ui-cycle",
-    "order": 0,
-    "typicalname": "uiCycle",
-    "version": "15.4.0"
-  },
-  {
+    "kind": "module",
     "description": "Component with life cycle",
+    "version": "15.4.2",
+    "typicalname": "uiCycle",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-cycle/lib"
+    },
+    "order": 0
+  },
+  {
     "id": "TheCycle",
-    "kind": "class",
     "longname": "TheCycle",
-    "meta": {
-      "filename": "TheCycle.jsx",
-      "lineno": 16,
-      "path": "/Users/okuni/Projects/the/packages/ui-cycle/lib"
-    },
     "name": "TheCycle",
-    "order": 1,
-    "scope": "global"
+    "kind": "class",
+    "scope": "global",
+    "description": "Component with life cycle",
+    "meta": {
+      "lineno": 16,
+      "filename": "TheCycle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-cycle/lib"
+    },
+    "order": 1
   },
   {
-    "description": "Handler for component mount",
     "id": "TheCycle.propTypes.onMount",
-    "kind": "member",
     "longname": "TheCycle.propTypes.onMount",
-    "memberof": "TheCycle.propTypes",
-    "meta": {
-      "filename": "TheCycle.jsx",
-      "lineno": 61,
-      "path": "/Users/okuni/Projects/the/packages/ui-cycle/lib"
-    },
     "name": "onMount",
-    "order": 2,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Handler for component mount",
+    "memberof": "TheCycle.propTypes",
+    "meta": {
+      "lineno": 61,
+      "filename": "TheCycle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-cycle/lib"
+    },
+    "order": 2
   },
   {
-    "description": "Handler for new prop values",
     "id": "TheCycle.propTypes.onReceive",
-    "kind": "member",
     "longname": "TheCycle.propTypes.onReceive",
-    "memberof": "TheCycle.propTypes",
-    "meta": {
-      "filename": "TheCycle.jsx",
-      "lineno": 63,
-      "path": "/Users/okuni/Projects/the/packages/ui-cycle/lib"
-    },
     "name": "onReceive",
-    "order": 3,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Handler for new prop values",
+    "memberof": "TheCycle.propTypes",
+    "meta": {
+      "lineno": 63,
+      "filename": "TheCycle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-cycle/lib"
+    },
+    "order": 3
   },
   {
-    "description": "Handler for component unmount",
     "id": "TheCycle.propTypes.onUnmount",
-    "kind": "member",
     "longname": "TheCycle.propTypes.onUnmount",
+    "name": "onUnmount",
+    "kind": "member",
+    "scope": "static",
+    "description": "Handler for component unmount",
     "memberof": "TheCycle.propTypes",
     "meta": {
-      "filename": "TheCycle.jsx",
       "lineno": 65,
+      "filename": "TheCycle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-cycle/lib"
     },
-    "name": "onUnmount",
-    "order": 4,
-    "scope": "static"
+    "order": 4
   },
   {
-    "description": "Values to receive",
     "id": "TheCycle.propTypes.values",
-    "kind": "member",
     "longname": "TheCycle.propTypes.values",
+    "name": "values",
+    "kind": "member",
+    "scope": "static",
+    "description": "Values to receive",
     "memberof": "TheCycle.propTypes",
     "meta": {
-      "filename": "TheCycle.jsx",
       "lineno": 67,
+      "filename": "TheCycle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-cycle/lib"
     },
-    "name": "values",
-    "order": 5,
-    "scope": "static"
+    "order": 5
   }
 ]

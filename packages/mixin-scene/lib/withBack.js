@@ -5,20 +5,32 @@
  * @param {function()} Class - Class to mix
  * @returns {function()} Mixed class
  */
+/**
+ * @memberof module:@the-/mixin-scene.withBack
+ * @class WithBackMixed
+ * @inner
+ */
 'use strict'
 
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends module:@the-/mixin-scene.withBack */
+/**
+ * @deprecated
+
+ * @lends module:@the-/mixin-scene.withBack */
 const withBack = asClassMixin((Class) => {
-  injectProperties(Class, {
-    /** Go Back */
-    async goBack() {
-      const url = this.get('back') || '/'
-      await this.goTo(url)
+  injectProperties(
+    Class,
+    /** @lends module:@the-/mixin-scene.withBack~WithBackMixed */
+    {
+      /** Go Back */
+      async goBack() {
+        const url = this.get('back') || '/'
+        await this.goTo(url)
+      },
     },
-  })
+  )
 })
 
 module.exports = withBack
