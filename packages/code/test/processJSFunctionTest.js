@@ -93,13 +93,15 @@ const systemSentenceManager = {
       return await Promise(1)
     },
 }
-    `),`
+    `),
+      `
 const systemSentenceManager = {
     async a() {
       return Promise(1)
     },
 }
-    `)
+    `,
+    )
   })
 })
 
