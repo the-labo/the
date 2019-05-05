@@ -5,7 +5,7 @@
 ## @the-/setting
 Setting manager for the-framework
 
-**Version**: 15.4.3  
+**Version**: 15.4.6  
 **License**: MIT  
 
 * [@the-/setting](#module_@the-/setting)
@@ -69,4 +69,4 @@ Create a TheSetting instance
 ### setting.default()
 Alias of [create](#module_@the-/setting.create)
 
-**Kind**: static method of [<code>@the-/setting</code>](#module_@the-/setting)
+**Kind**: static method of [<code>@the-/setting</code>](#module_@the-/setting)  

@@ -44,12 +44,11 @@ class TheSetting extends TheSettingBase {
 
     this.logger.disabled = true
     const existing = this.get()
-    this.set(Object.assign({}, defaultValues, existing || {}))
+    const values = Object.assign({}, defaultValues, existing || {})
+    this.set(values)
     this.logger.disabled = false
 
     abind(this)
-
-    this.save()
   }
 
   /**
@@ -65,7 +64,12 @@ class TheSetting extends TheSettingBase {
         logger.debug(`Value deleted: "${name}"`)
       }
     }
-    this.save(Object.assign({}, values))
+    this.flush()
+  }
+
+  flush() {
+    const values = this.get()
+    this.saveValues(values)
   }
 
   /**
@@ -99,7 +103,7 @@ class TheSetting extends TheSettingBase {
     }
   }
 
-  save(values) {
+  saveValues(values) {
     const { backupFilename, filename } = this
     this.lock()
     copyAsJsonSync(filename, backupFilename)
@@ -118,7 +122,7 @@ class TheSetting extends TheSettingBase {
     }
     const { logger } = this
     const current = this.get()
-    this.save(Object.assign({}, current, values))
+    this.saveValues(Object.assign({}, current, values))
     logger.debug(`Data saved`)
     for (const name of Object.keys(values)) {
       logger.trace(`  ${name}: ${JSON.stringify(values[name])}`)

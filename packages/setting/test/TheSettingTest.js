@@ -19,6 +19,7 @@ describe('the-setting', function() {
     const setting = new TheSetting(`${__dirname}/../tmp/test-setting.json`, {
       foo: 1,
     })
+    equal(setting.get('foo'), 1)
 
     setting.set('foo', 1)
     equal(setting.get('foo'), 1)
