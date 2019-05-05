@@ -1,11 +1,11 @@
 {
-  "HOGE_HOGE": "THIS IS HOGE",
   "msg": {
     "a": {
       "b": {
         "c": 1
       }
     },
-    "SOME_MESSAGE_2": "This is message 2"
+    "SOME_MESSAGE_2": "This is message 2",
+    "SOME_MESSAGE_3": "This is message 3"
   }
 }

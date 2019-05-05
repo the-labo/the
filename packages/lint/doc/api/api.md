@@ -5,7 +5,7 @@
 ## @the-/lint
 Lint of the-frameworks
 
-**Version**: 15.4.2  
+**Version**: 15.4.5  
 **License**: MIT  
 
 * [@the-/lint](#module_@the-/lint)
@@ -208,4 +208,4 @@ Create a TheLint instance
 ### lint.default()
 Alias of [create](#module_@the-/lint.create)
 
-**Kind**: static method of [<code>@the-/lint</code>](#module_@the-/lint)
+**Kind**: static method of [<code>@the-/lint</code>](#module_@the-/lint)  

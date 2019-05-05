@@ -1,4 +1,7 @@
 {
+  "name": "@the-/util-site",
+  "description": "Utility for site",
+  "version": "15.4.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -17,7 +20,6 @@
     "email-regex": "^3.0.0",
     "qs": "^6.7.0"
   },
-  "description": "Utility for site",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -30,7 +32,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/util-site",
   "publishConfig": {
     "access": "public"
   },
@@ -41,6 +42,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.0"
+  }
 }

@@ -1,4 +1,7 @@
 {
+  "name": "@the-/ui-pager",
+  "description": "Pager of the-components",
+  "version": "15.4.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -16,7 +19,6 @@
     "numcal": "^4.0.0",
     "prop-types": "^15.7.2"
   },
-  "description": "Pager of the-components",
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
     "coz": "^7.0.19"
@@ -32,7 +34,6 @@
   ],
   "license": "MIT",
   "main": "shim",
-  "name": "@the-/ui-pager",
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
@@ -46,6 +47,5 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.0"
+  }
 }

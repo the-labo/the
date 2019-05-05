@@ -11,6 +11,7 @@
 
 const aglob = require('aglob')
 const { readFileAsync } = require('asfs')
+const { flatten } = require('objnest')
 const path = require('path')
 const stringcase = require('stringcase')
 
@@ -24,6 +25,7 @@ const transformFuncFor = (name) => {
 /** @lends module:@the-/lint.rules.usageRule */
 function usageRule(config) {
   const {
+    flattenKeysUsedIn = null,
     ignore = '**/node_modules/**',
     keysUsedIn = null,
     transform = null,
@@ -73,13 +75,28 @@ function usageRule(config) {
         })
     }
     if (keysUsedIn) {
-      const keys = Object.keys(require(path.resolve(filename)))
+      const required = require(path.resolve(filename))
+      const keys = Object.keys(required)
       const unusedNames = await findUnusedName(keys, keysUsedIn)
       const ok = unusedNames.length === 0
       !ok &&
         report('Module key not used in anywhere', {
           actual: false,
           expect: keysUsedIn,
+          keys: unusedNames,
+          module: moduleName,
+          where: path.resolve(filename),
+        })
+    }
+    if (flattenKeysUsedIn) {
+      const required = require(path.resolve(filename))
+      const flattenKeys = Object.keys(flatten(required))
+      const unusedNames = await findUnusedName(flattenKeys, flattenKeysUsedIn)
+      const ok = unusedNames.length === 0
+      !ok &&
+        report('Module key not used in anywhere', {
+          actual: false,
+          expect: flattenKeysUsedIn,
           keys: unusedNames,
           module: moduleName,
           where: path.resolve(filename),

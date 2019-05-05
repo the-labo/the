@@ -1,4 +1,7 @@
 {
+  "name": "@the-/ui-map",
+  "description": "Geo map for the-components",
+  "version": "15.4.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -24,7 +27,6 @@
     "leaflet": "^1.4.0",
     "prop-types": "^15.7.2"
   },
-  "description": "Geo map for the-components",
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
     "coz": "^7.0.19",
@@ -41,7 +43,6 @@
   ],
   "license": "MIT",
   "main": "shim",
-  "name": "@the-/ui-map",
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
@@ -55,6 +56,5 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.0"
+  }
 }

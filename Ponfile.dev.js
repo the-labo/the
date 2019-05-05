@@ -80,8 +80,9 @@ module.exports = pon({
   // -----------------------------------
   ...{
     format: ['format:root', 'format:packages'],
-    prepare: [...tasks.prepare, 'pkg:sync', 'eslint:fix', 'eslint:check'],
+    prepare: [...tasks.prepare, 'pkg:sync', 'lint'],
     install: ['pkg:install'],
+    lint: ['eslint:fix', 'eslint:check'],
     build: [...tasks.build, 'pkg:run:build', 'format'],
     doc: ['pkg:run:doc'],
     test: ['test:root', 'pkg:run:test'],

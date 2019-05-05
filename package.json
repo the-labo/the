@@ -1,7 +1,7 @@
 {
   "name": "the",
   "description": "root for the-project",
-  "version": "15.4.1",
+  "version": "15.4.2",
   "author": {
     "name": "Taka Okunishi",
     "email": "okunishinishi@gmail.com",
@@ -45,7 +45,7 @@
     "@babel/runtime": "^7.4.2",
     "@okunishinishi/fixpack": "^3.0.1",
     "@the-/code": "^15.4.15",
-    "@the-/eslint-config-jsdoc": "^15.4.2",
+    "@the-/eslint-config-jsdoc": "^15.4.6",
     "@the-/eslint-config-prettier": "^15.4.4",
     "@the-/eslint-config-standard": "^15.4.1",
     "@the-/eslint-config-standard-jsx": "^15.4.2",
@@ -63,7 +63,7 @@
     "eslint": "^5.15.1",
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jsdoc": "^4.8.3",
-    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-node": "^9.0.1",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.13.0",

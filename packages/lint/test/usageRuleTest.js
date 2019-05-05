@@ -44,13 +44,14 @@ describe('usage-rule', () => {
     const reported = []
     const filename = require.resolve('../misc/mocks/mock-loc.json')
     await usageRule({
-      keysUsedIn: `${path.dirname(filename)}/*.*`,
+      flattenKeysUsedIn: `${path.dirname(filename)}/*.*`,
     })({
       content: fs.readFileSync(filename),
       filename,
       report: (...args) => reported.push(args),
     })
     ok(reported[0])
+    equal(reported[0][1].keys[0], 'msg.SOME_MESSAGE_3')
   })
 })
 

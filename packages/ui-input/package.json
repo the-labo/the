@@ -1,4 +1,7 @@
 {
+  "name": "@the-/ui-input",
+  "description": "Input of the-components",
+  "version": "15.4.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -28,7 +31,6 @@
     "regex-url": "^1.0.0",
     "video-extensions": "^1.1.0"
   },
-  "description": "Input of the-components",
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
     "@the-/ui-router": "^15.2.0",
@@ -45,7 +47,6 @@
   ],
   "license": "MIT",
   "main": "shim",
-  "name": "@the-/ui-input",
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
@@ -59,6 +60,5 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.0"
+  }
 }
