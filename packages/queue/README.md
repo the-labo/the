@@ -92,19 +92,6 @@ async function tryExample() {
 
 tryExample().catch((err) => console.error(err))
 
-{
-  const { TheQueue } = require('@the-/queue')
-
-  class Client {
-    constructor() {
-      this.queue = queue
-    }
-    async send() {
-      await client.wait({})
-    }
-  }
-}
-
 ```
 
 
@@ -117,15 +104,19 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [default()](./doc/api/api.md#default)
-- [#push(task)](./doc/api/api.md#module_@the-/queue.TheQueue#push)
-- [#start()](./doc/api/api.md#module_@the-/queue.TheQueue#start)
-- [#stop()](./doc/api/api.md#module_@the-/queue.TheQueue#stop)
-- [#wait(options)](./doc/api/api.md#module_@the-/queue.TheQueue#wait)
-- [.create(args)](./doc/api/api.md#module_@the-/queue.create)
-### class
-- [.TheQueue](./doc/api/api.md#module_@the-/queue.TheQueue)
+
+- module:@the-/queue
+  - [.create(args)](./doc/api/api.md#module_@the-/queue.create)
+  - [.default()](./doc/api/api.md#module_@the-/queue.default)
+  - [.TheQueue](./doc/api/api.md#module_@the-/queue.TheQueue)
+- module:@the-/queue.TheQueue
+  - [#push(task)](./doc/api/api.md#module_@the-/queue.TheQueue#push)
+  - [#start()](./doc/api/api.md#module_@the-/queue.TheQueue#start)
+  - [#stop()](./doc/api/api.md#module_@the-/queue.TheQueue#stop)
+  - [#wait(options)](./doc/api/api.md#module_@the-/queue.TheQueue#wait)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

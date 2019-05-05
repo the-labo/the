@@ -126,21 +126,24 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [create()](./doc/api/api.md#create)
-- [#load(ScopeClass,names)](./doc/api/api.md#module_@the-/store.TheStore#load)
-- [#loadFromDefaults()](./doc/api/api.md#module_@the-/store.TheStore#loadFromDefaults)
-- [#loadFromDefs()](./doc/api/api.md#module_@the-/store.TheStore#loadFromDefs)
-- [#loadScopesFromDefs(defs,options)](./doc/api/api.md#module_@the-/store.TheStore#loadScopesFromDefs)
-- [#subscribe(listener)](./doc/api/api.md#module_@the-/store.TheStore#subscribe)
-- [#load(ScopeClass,names)](./doc/api/api.md#StoreScopeClass#load)
-- [#loadFromMapping(mapping)](./doc/api/api.md#StoreScopeClass#loadFromMapping)
-- [.create(args)](./doc/api/api.md#module_@the-/store.create)
-- [.toStoreScopeClass(BaseClass)](./doc/api/api.md#module_@the-/store.toStoreScopeClass)
-### class
-- [.TheStore](./doc/api/api.md#module_@the-/store.TheStore)
-### namespace
-- [.helpers](./doc/api/api.md#module_@the-/store.helpers)
+
+- module:@the-/store
+  - [.create(args)](./doc/api/api.md#module_@the-/store.create)
+  - [.create()](./doc/api/api.md#module_@the-/store.create)
+  - [.TheStore](./doc/api/api.md#module_@the-/store.TheStore)
+  - [.toStoreScopeClass(BaseClass)](./doc/api/api.md#module_@the-/store.toStoreScopeClass)
+- module:@the-/store.TheStore
+  - [#load(ScopeClass,names)](./doc/api/api.md#module_@the-/store.TheStore#load)
+  - [#loadFromDefaults()](./doc/api/api.md#module_@the-/store.TheStore#loadFromDefaults)
+  - [#loadFromDefs()](./doc/api/api.md#module_@the-/store.TheStore#loadFromDefs)
+  - [#loadScopesFromDefs(defs,options)](./doc/api/api.md#module_@the-/store.TheStore#loadScopesFromDefs)
+  - [#subscribe(listener)](./doc/api/api.md#module_@the-/store.TheStore#subscribe)
+- StoreScopeClass
+  - [#load(ScopeClass,names)](./doc/api/api.md#StoreScopeClass#load)
+  - [#loadFromMapping(mapping)](./doc/api/api.md#StoreScopeClass#loadFromMapping)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

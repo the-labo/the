@@ -80,6 +80,10 @@ Usage
 ## API Guide
 
 
+
+See [API Guide](./doc/api/api.md) for more detail
+
+
 <!-- LICENSE Start -->
 <a name="license"></a>
 

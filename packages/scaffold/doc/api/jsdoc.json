@@ -1,52 +1,57 @@
 [
   {
-    "id": "module:@the-/scaffold",
-    "longname": "module:@the-/scaffold",
-    "name": "@the-/scaffold",
-    "kind": "module",
     "description": "Scaffold for the-projects",
+    "id": "module:@the-/scaffold",
+    "kind": "module",
+    "longname": "module:@the-/scaffold",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/scaffold/lib"
     },
+    "name": "@the-/scaffold",
     "order": 0
   },
   {
     "id": "module:@the-/scaffold.listTypes",
-    "longname": "module:@the-/scaffold.listTypes",
-    "name": "listTypes",
     "kind": "function",
-    "scope": "static",
+    "longname": "module:@the-/scaffold.listTypes",
     "memberof": "module:@the-/scaffold",
     "meta": {
-      "lineno": 1,
       "filename": "listTypes.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/scaffold/lib"
     },
-    "order": 1
+    "name": "listTypes",
+    "order": 1,
+    "scope": "static"
   },
   {
     "id": "module:@the-/scaffold.render",
-    "longname": "module:@the-/scaffold.render",
-    "name": "render",
     "kind": "function",
-    "scope": "static",
+    "longname": "module:@the-/scaffold.render",
     "memberof": "module:@the-/scaffold",
     "meta": {
-      "lineno": 1,
       "filename": "render.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/scaffold/lib"
     },
-    "order": 2
+    "name": "render",
+    "order": 2,
+    "scope": "static"
   },
   {
     "id": "module:@the-/scaffold.theScaffold",
-    "longname": "module:@the-/scaffold.theScaffold",
-    "name": "theScaffold",
     "kind": "function",
-    "scope": "static",
+    "longname": "module:@the-/scaffold.theScaffold",
     "memberof": "module:@the-/scaffold",
+    "meta": {
+      "filename": "theScaffold.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/scaffold/lib"
+    },
+    "name": "theScaffold",
+    "order": 3,
     "params": [
       {
         "type": {
@@ -118,11 +123,6 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "theScaffold.js",
-      "path": "/Users/okuni/Projects/the/packages/scaffold/lib"
-    },
-    "order": 3
+    "scope": "static"
   }
 ]

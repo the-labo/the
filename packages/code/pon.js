@@ -3,7 +3,7 @@
  * @function theCodeTask
  * @param {string} pattern
  * @param {Object} [options={}]
- * @returns {function} Task function
+ * @returns {function()} Task function
  */
 'use strict'
 

@@ -2,7 +2,7 @@
  * Demo of the-components
  * @memberof module:@the-/demo-ui
  * @class TheDemoUi
- * @extends React.Component
+ * @augments React.Component
  */
 'use strict'
 

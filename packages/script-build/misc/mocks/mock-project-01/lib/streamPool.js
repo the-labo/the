@@ -15,7 +15,7 @@ class StreamPool {
 
   cleanup(cid) {
     const instances = this.instances[cid] || {}
-    for (const [sid, instance] of Object.entries(instances)) {
+    for (const [, instance] of Object.entries(instances)) {
       if (!instance.closed) {
         instance.abort()
       }

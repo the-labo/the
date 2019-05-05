@@ -95,15 +95,20 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [#get(key)](./doc/api/api.md#module_@the-/hash.TheHash#get)
-- [#has(key)](./doc/api/api.md#module_@the-/hash.TheHash#has)
-- [#set(key,value)](./doc/api/api.md#module_@the-/hash.TheHash#set)
-- [#toProxy(options)](./doc/api/api.md#module_@the-/hash.TheHash#toProxy)
-- [.create(args)](./doc/api/api.md#module_@the-/hash.create)
-- [.proxy(src,options)](./doc/api/api.md#module_@the-/hash.proxy)
-### class
-- [.TheHash](./doc/api/api.md#module_@the-/hash.TheHash)
+
+- module:@the-/hash
+  - [.create(args)](./doc/api/api.md#module_@the-/hash.create)
+  - [.default()](./doc/api/api.md#module_@the-/hash.default)
+  - [.proxy(src,options)](./doc/api/api.md#module_@the-/hash.proxy)
+  - [.TheHash](./doc/api/api.md#module_@the-/hash.TheHash)
+- module:@the-/hash.TheHash
+  - [#get(key)](./doc/api/api.md#module_@the-/hash.TheHash#get)
+  - [#has(key)](./doc/api/api.md#module_@the-/hash.TheHash#has)
+  - [#set(key,value)](./doc/api/api.md#module_@the-/hash.TheHash#set)
+  - [#toProxy(options)](./doc/api/api.md#module_@the-/hash.TheHash#toProxy)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

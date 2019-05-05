@@ -84,32 +84,34 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [default()](./doc/api/api.md#default)
-- [#define(resourceName,schema)](./doc/api/api.md#@the-/driver-sequelize.TheDriverSequelize#define)
-- [#untilReady()](./doc/api/api.md#@the-/driver-sequelize.TheDriverSequelize#untilReady)
-- [.create(args)](./doc/api/api.md#@the-/driver-sequelize.create)
-- [.convertInbound()](./doc/api/api.md#module_@the-/driver-sequelize.converters.convertInbound)
-- [.convertOutbound()](./doc/api/api.md#module_@the-/driver-sequelize.converters.convertOutbound)
-- [.sequelizeMix()](./doc/api/api.md#module_@the-/driver-sequelize.mixins.sequelizeMix)
-- [.defineModel()](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModel)
-- [.defineModelColumn(propertyName,def)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModelColumn)
-- [.prepareModel()](./doc/api/api.md#module_@the-/driver-sequelize.modeling.prepareModel)
-- [.parseAttributeName()](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseAttributeName)
-- [.parseFilter()](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseFilter)
-- [.parseSort()](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseSort)
-### class
-- [.TheDriverSequelize](./doc/api/api.md#@the-/driver-sequelize.TheDriverSequelize)
-### namespace
-- [.constants](./doc/api/api.md#module_@the-/driver-sequelize.constants)
-- [.converters](./doc/api/api.md#module_@the-/driver-sequelize.converters)
-- [.helpers](./doc/api/api.md#module_@the-/driver-sequelize.helpers)
-- [.mixins](./doc/api/api.md#module_@the-/driver-sequelize.mixins)
-- [.modeling](./doc/api/api.md#module_@the-/driver-sequelize.modeling)
-- [.parsing](./doc/api/api.md#module_@the-/driver-sequelize.parsing)
-### enum
-- [.MetaColumnNames](./doc/api/api.md#module_@the-/driver-sequelize.constants.MetaColumnNames)
-- [.MetaColumnNamesReversed](./doc/api/api.md#module_@the-/driver-sequelize.constants.MetaColumnNamesReversed)
+
+- @the-/driver-sequelize
+  - [.create(args)](./doc/api/api.md#@the-/driver-sequelize.create)
+  - [.TheDriverSequelize](./doc/api/api.md#@the-/driver-sequelize.TheDriverSequelize)
+- @the-/driver-sequelize.TheDriverSequelize
+  - [#define(resourceName,schema)](./doc/api/api.md#@the-/driver-sequelize.TheDriverSequelize#define)
+  - [#untilReady()](./doc/api/api.md#@the-/driver-sequelize.TheDriverSequelize#untilReady)
+- module:@the-/driver-sequelize.constants
+  - [.MetaColumnNames](./doc/api/api.md#module_@the-/driver-sequelize.constants.MetaColumnNames)
+  - [.MetaColumnNamesReversed](./doc/api/api.md#module_@the-/driver-sequelize.constants.MetaColumnNamesReversed)
+- module:@the-/driver-sequelize.converters
+  - [.convertInbound()](./doc/api/api.md#module_@the-/driver-sequelize.converters.convertInbound)
+  - [.convertOutbound()](./doc/api/api.md#module_@the-/driver-sequelize.converters.convertOutbound)
+- module:@the-/driver-sequelize
+  - [.default()](./doc/api/api.md#module_@the-/driver-sequelize.default)
+- module:@the-/driver-sequelize.mixins
+  - [.sequelizeMix()](./doc/api/api.md#module_@the-/driver-sequelize.mixins.sequelizeMix)
+- module:@the-/driver-sequelize.modeling
+  - [.defineModel()](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModel)
+  - [.defineModelColumn(propertyName,def)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModelColumn)
+  - [.prepareModel()](./doc/api/api.md#module_@the-/driver-sequelize.modeling.prepareModel)
+- module:@the-/driver-sequelize.parsing
+  - [.parseAttributeName()](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseAttributeName)
+  - [.parseFilter()](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseFilter)
+  - [.parseSort()](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseSort)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

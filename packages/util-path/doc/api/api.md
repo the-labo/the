@@ -17,4 +17,3 @@ Find up directory contains path
 | Param | Type | Description |
 | --- | --- | --- |
 | basedir | <code>string</code> | Base directory |
-

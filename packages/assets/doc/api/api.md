@@ -75,5 +75,4 @@ Alias of [create](#module_@the-/assets.create)
 
 | Param | Type |
 | --- | --- |
-| ...args | <code>\*</code> | 
-
+| ...args | <code>\*</code> |

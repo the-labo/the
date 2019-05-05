@@ -84,10 +84,10 @@ console.log(SupportedProps.mouseEvents.split(','))
 
 ## API Guide
 
-### namespace
-- [.SupportedProps](./doc/api/api.md#module_@the-/const-ui.SupportedProps)
-- [.ThemeValues](./doc/api/api.md#module_@the-/const-ui.ThemeValues)
-- [.VendorColors](./doc/api/api.md#module_@the-/const-ui.VendorColors)
+
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

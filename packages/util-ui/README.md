@@ -79,19 +79,23 @@ Usage
 
 ## API Guide
 
-### function
-- [.asHOC()](./doc/api/api.md#module_@the-/util-ui.asHOC)
-- [.asStyleData(scopeSelector,data)](./doc/api/api.md#module_@the-/util-ui.asStyleData)
-- [.changedProps(prevProps,props)](./doc/api/api.md#module_@the-/util-ui.changedProps)
-- [.colorAlpha(color,alpha)](./doc/api/api.md#module_@the-/util-ui.colorAlpha)
-- [.eventHandlersFor(props,options)](./doc/api/api.md#module_@the-/util-ui.eventHandlersFor)
-- [.htmlAttributesFor(props,options)](./doc/api/api.md#module_@the-/util-ui.htmlAttributesFor)
-- [.isKeyCode(code,name)](./doc/api/api.md#module_@the-/util-ui.isKeyCode)
-- [.isServerSide()](./doc/api/api.md#module_@the-/util-ui.isServerSide)
-- [.isVideoSrc(src)](./doc/api/api.md#module_@the-/util-ui.isVideoSrc)
-- [.newId(options)](./doc/api/api.md#module_@the-/util-ui.newId)
-- [.readFileAsDataURL()](./doc/api/api.md#module_@the-/util-ui.readFileAsDataURL)
-- [.toggleBodyClass(className,state&#x3D;)](./doc/api/api.md#module_@the-/util-ui.toggleBodyClass)
+
+- module:@the-/util-ui
+  - [.asHOC()](./doc/api/api.md#module_@the-/util-ui.asHOC)
+  - [.asStyleData(scopeSelector,data)](./doc/api/api.md#module_@the-/util-ui.asStyleData)
+  - [.changedProps(prevProps,props)](./doc/api/api.md#module_@the-/util-ui.changedProps)
+  - [.colorAlpha(color,alpha)](./doc/api/api.md#module_@the-/util-ui.colorAlpha)
+  - [.eventHandlersFor(props,options)](./doc/api/api.md#module_@the-/util-ui.eventHandlersFor)
+  - [.htmlAttributesFor(props,options)](./doc/api/api.md#module_@the-/util-ui.htmlAttributesFor)
+  - [.isKeyCode(code,name)](./doc/api/api.md#module_@the-/util-ui.isKeyCode)
+  - [.isServerSide()](./doc/api/api.md#module_@the-/util-ui.isServerSide)
+  - [.isVideoSrc(src)](./doc/api/api.md#module_@the-/util-ui.isVideoSrc)
+  - [.newId(options)](./doc/api/api.md#module_@the-/util-ui.newId)
+  - [.readFileAsDataURL()](./doc/api/api.md#module_@the-/util-ui.readFileAsDataURL)
+  - [.toggleBodyClass(className,state&#x3D;)](./doc/api/api.md#module_@the-/util-ui.toggleBodyClass)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

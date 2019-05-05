@@ -30,11 +30,13 @@ class TheResource extends TheResourceBase {
   /**
    * Cascade destroy condition
    * @example
+   * ```
    * class MyResource extends TheResource
    *   get cascaded () {
    *     return { User: (ref) => ({user: {$ref: ref}}) }
    *   }
    * }
+   * ```
    */
   static get cascaded() {
     return {}
@@ -74,7 +76,7 @@ class TheResource extends TheResourceBase {
 
   /**
    * Create empty list
-   * @returns {Promise<lib.Collection>}
+   * @returns {Promise<Object>}
    */
   async emptyList() {
     return new Collection()
@@ -91,7 +93,7 @@ class TheResource extends TheResourceBase {
 
   /**
    * Refresh clay entity
-   * @param {Entity} entity
+   * @param {Object} entity
    * @returns {Promise<undefined>}
    */
   async refresh(entity) {

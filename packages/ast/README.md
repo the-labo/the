@@ -89,15 +89,16 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### namespace
-- [.analyzer](./doc/api/api.md#module_@the-/ast.analyzer)
-- [.finder](./doc/api/api.md#module_@the-/ast.finder)
-- [.constants](./doc/api/api.md#module_@the-/ast.constants)
-- [.NodeTypes](./doc/api/api.md#module_@the-/ast.NodeTypes)
-### function
-- [.findByTypes(node,types)](./doc/api/api.md#module_@the-/ast.finder.findByTypes)
-- [.parse(src,options)](./doc/api/api.md#module_@the-/ast.parse)
-- [.exports()](./doc/api/api.md#module.exports)
+
+- module:@the-/ast.finder
+  - [.findByTypes(node,types)](./doc/api/api.md#module_@the-/ast.finder.findByTypes)
+- module:@the-/ast
+  - [.parse(src,options)](./doc/api/api.md#module_@the-/ast.parse)
+- module
+  - [.exports()](./doc/api/api.md#module.exports)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

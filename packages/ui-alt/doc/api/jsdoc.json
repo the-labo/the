@@ -1,61 +1,61 @@
 [
   {
+    "description": "Alt text for the-components",
     "id": "module:@the-/ui-alt",
-    "longname": "module:@the-/ui-alt",
-    "name": "@the-/ui-alt",
     "kind": "module",
-    "description": "Alt text for the-components",
-    "version": "15.4.0",
-    "typicalname": "uiAlt",
+    "longname": "module:@the-/ui-alt",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-alt/lib"
     },
-    "order": 0
+    "name": "@the-/ui-alt",
+    "order": 0,
+    "typicalname": "uiAlt",
+    "version": "15.4.0"
   },
   {
-    "id": "TheAlt",
-    "longname": "TheAlt",
-    "name": "TheAlt",
-    "kind": "class",
-    "scope": "global",
     "description": "Alt text for the-components",
+    "id": "TheAlt",
+    "kind": "class",
+    "longname": "TheAlt",
     "meta": {
-      "lineno": 11,
       "filename": "TheAlt.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-alt/lib"
-    },
-    "order": 1
-  },
-  {
-    "id": "TheAltStyle",
-    "longname": "TheAltStyle",
-    "name": "TheAltStyle",
-    "kind": "function",
-    "scope": "global",
-    "description": "Style for TheAlt",
-    "params": [],
-    "meta": {
       "lineno": 11,
-      "filename": "TheAltStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-alt/lib"
     },
-    "order": 2
+    "name": "TheAlt",
+    "order": 1,
+    "scope": "global"
   },
   {
-    "id": "TheAltStyle.propTypes.options",
-    "longname": "TheAltStyle.propTypes.options",
-    "name": "options",
-    "kind": "member",
-    "scope": "static",
+    "description": "Style for TheAlt",
+    "id": "TheAltStyle",
+    "kind": "function",
+    "longname": "TheAltStyle",
+    "meta": {
+      "filename": "TheAltStyle.jsx",
+      "lineno": 11,
+      "path": "/Users/okuni/Projects/the/packages/ui-alt/lib"
+    },
+    "name": "TheAltStyle",
+    "order": 2,
+    "params": [],
+    "scope": "global"
+  },
+  {
     "description": "Style options",
+    "id": "TheAltStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheAltStyle.propTypes.options",
     "memberof": "TheAltStyle.propTypes",
     "meta": {
-      "lineno": 22,
       "filename": "TheAltStyle.jsx",
+      "lineno": 22,
       "path": "/Users/okuni/Projects/the/packages/ui-alt/lib"
     },
-    "order": 3
+    "name": "options",
+    "order": 3,
+    "scope": "static"
   }
 ]

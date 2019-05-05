@@ -86,7 +86,6 @@ class ThePS {
       const abort = exists && !(await this.canKill(pid))
       if (abort) {
         throw new Error(`[the-ps] Failed to acquire`)
-        process.exit(1)
       }
       try {
         const killed = await this.kill(pid)

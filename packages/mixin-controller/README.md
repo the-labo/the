@@ -97,17 +97,21 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [compose(mixins)](./doc/api/api.md#compose)
-- [withAuthorized()](./doc/api/api.md#withAuthorized)
-- [withClient()](./doc/api/api.md#withClient)
-- [withDebug(Base)](./doc/api/api.md#withDebug)
-- [withListen()](./doc/api/api.md#withListen)
-- [withPreference()](./doc/api/api.md#withPreference)
-- [withSeal()](./doc/api/api.md#withSeal)
-- [getAllPropertyDescriptors()](./doc/api/api.md#getAllPropertyDescriptors)
-- [instanceMethodNamesFor()](./doc/api/api.md#instanceMethodNamesFor)
-- [omitLongString()](./doc/api/api.md#omitLongString)
+
+- global
+  - [compose(mixins)](./doc/api/api.md#compose)
+  - [getAllPropertyDescriptors()](./doc/api/api.md#getAllPropertyDescriptors)
+  - [instanceMethodNamesFor()](./doc/api/api.md#instanceMethodNamesFor)
+  - [omitLongString()](./doc/api/api.md#omitLongString)
+  - [withAuthorized()](./doc/api/api.md#withAuthorized)
+  - [withClient()](./doc/api/api.md#withClient)
+  - [withDebug(Base)](./doc/api/api.md#withDebug)
+  - [withListen()](./doc/api/api.md#withListen)
+  - [withPreference()](./doc/api/api.md#withPreference)
+  - [withSeal()](./doc/api/api.md#withSeal)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

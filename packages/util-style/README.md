@@ -84,8 +84,12 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [styleString(selector,style,atRule)](./doc/api/api.md#styleString)
+
+- global
+  - [styleString(selector,style,atRule)](./doc/api/api.md#styleString)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

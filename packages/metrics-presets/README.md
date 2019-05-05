@@ -98,8 +98,12 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [RenderingCountMetrics(Components,options)](./doc/api/api.md#RenderingCountMetrics)
+
+- global
+  - [RenderingCountMetrics(Components,options)](./doc/api/api.md#RenderingCountMetrics)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

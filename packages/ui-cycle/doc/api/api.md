@@ -27,4 +27,4 @@ Component with life cycle
 ## TheCycle
 Component with life cycle
 
-**Kind**: global class  
+**Kind**: global class

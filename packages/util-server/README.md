@@ -89,16 +89,19 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [generateFile(filename,generator)](./doc/api/api.md#generateFile)
-- [generateFile()](./doc/api/api.md#generateFile)
-- [isBase64(data)](./doc/api/api.md#isBase64)
-- [nameFile(options)](./doc/api/api.md#nameFile)
-- [pipeToFile(src,dest)](./doc/api/api.md#pipeToFile)
-- [saveBase64(dirname,basename,data)](./doc/api/api.md#saveBase64)
-- [saveBase64Image()](./doc/api/api.md#saveBase64Image)
-- [valuesFromEntity()](./doc/api/api.md#valuesFromEntity)
-- [waitForFile(condition,options)](./doc/api/api.md#waitForFile)
+
+- global
+  - [generateFile(filename,generator)](./doc/api/api.md#generateFile)
+  - [isBase64(data)](./doc/api/api.md#isBase64)
+  - [nameFile(options)](./doc/api/api.md#nameFile)
+  - [pipeToFile(src,dest)](./doc/api/api.md#pipeToFile)
+  - [saveBase64(dirname,basename,data)](./doc/api/api.md#saveBase64)
+  - [saveBase64Image()](./doc/api/api.md#saveBase64Image)
+  - [valuesFromEntity()](./doc/api/api.md#valuesFromEntity)
+  - [waitForFile(condition,options)](./doc/api/api.md#waitForFile)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

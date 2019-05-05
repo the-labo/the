@@ -95,10 +95,14 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [appCache(name,version,options)](./doc/api/api.md#appCache)
-- [cachedFetch(cache,request)](./doc/api/api.md#cachedFetch)
-- [parseUrl(urlString)](./doc/api/api.md#parseUrl)
+
+- global
+  - [appCache(name,version,options)](./doc/api/api.md#appCache)
+  - [cachedFetch(cache,request)](./doc/api/api.md#cachedFetch)
+  - [parseUrl(urlString)](./doc/api/api.md#parseUrl)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

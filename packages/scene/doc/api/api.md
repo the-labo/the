@@ -176,4 +176,4 @@ Create a TheScene instance
 ### scene.default()
 Alias of [create](#module_@the-/scene.create)
 
-**Kind**: static method of [<code>@the-/scene</code>](#module_@the-/scene)  
+**Kind**: static method of [<code>@the-/scene</code>](#module_@the-/scene)

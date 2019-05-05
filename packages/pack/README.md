@@ -92,16 +92,17 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [#bind()](./doc/api/api.md#module_@the-/pack.ThePack#bind)
-- [#decode(buffer)](./doc/api/api.md#module_@the-/pack.ThePack#decode)
-- [#encode(data)](./doc/api/api.md#module_@the-/pack.ThePack#encode)
-- [.create(args)](./doc/api/api.md#module_@the-/pack.create)
-### class
-- [.ThePack](./doc/api/api.md#module_@the-/pack.ThePack)
-### namespace
-- [.Converters](./doc/api/api.md#module_@the-/pack.Converters)
-- [.default](./doc/api/api.md#module_@the-/pack.default)
+
+- module:@the-/pack
+  - [.create(args)](./doc/api/api.md#module_@the-/pack.create)
+  - [.ThePack](./doc/api/api.md#module_@the-/pack.ThePack)
+- module:@the-/pack.ThePack
+  - [#bind()](./doc/api/api.md#module_@the-/pack.ThePack#bind)
+  - [#decode(buffer)](./doc/api/api.md#module_@the-/pack.ThePack#decode)
+  - [#encode(data)](./doc/api/api.md#module_@the-/pack.ThePack#encode)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

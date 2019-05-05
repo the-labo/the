@@ -79,4 +79,4 @@ Create a TheSeal instance
 ### seal.default()
 Alias of [create](#module_@the-/seal.create)
 
-**Kind**: static method of [<code>@the-/seal</code>](#module_@the-/seal)  
+**Kind**: static method of [<code>@the-/seal</code>](#module_@the-/seal)

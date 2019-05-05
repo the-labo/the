@@ -90,11 +90,14 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [TheSupport](./doc/api/api.md#TheSupport)
-### function
-- [create(args)](./doc/api/api.md#create)
-- [findEvalCode()](./doc/api/api.md#findEvalCode)
+
+- global
+  - [create(args)](./doc/api/api.md#create)
+  - [findEvalCode()](./doc/api/api.md#findEvalCode)
+  - [TheSupport](./doc/api/api.md#TheSupport)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

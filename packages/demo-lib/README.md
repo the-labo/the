@@ -88,11 +88,14 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [.TheDemoLib](./doc/api/api.md#module_@the-/demo-lib.TheDemoLib)
-### function
-- [.create(args)](./doc/api/api.md#module_@the-/demo-lib.create)
-- [.theDemoLib()](./doc/api/api.md#module_@the-/demo-lib.theDemoLib)
+
+- module:@the-/demo-lib
+  - [.create(args)](./doc/api/api.md#module_@the-/demo-lib.create)
+  - [.theDemoLib()](./doc/api/api.md#module_@the-/demo-lib.theDemoLib)
+  - [.TheDemoLib](./doc/api/api.md#module_@the-/demo-lib.TheDemoLib)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

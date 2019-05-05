@@ -95,18 +95,22 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [default()](./doc/api/api.md#default)
-- [#convert(src,dest,options)](./doc/api/api.md#module_@the-/resize.TheResize#convert)
-- [#convertDir(src,dest,options)](./doc/api/api.md#module_@the-/resize.TheResize#convertDir)
-- [#convertFile(src,dest,options)](./doc/api/api.md#module_@the-/resize.TheResize#convertFile)
-- [#overwrite(filename,options)](./doc/api/api.md#module_@the-/resize.TheResize#overwrite)
-- [#overwriteDir(dirname,options)](./doc/api/api.md#module_@the-/resize.TheResize#overwriteDir)
-- [#overwriteFile(src,options)](./doc/api/api.md#module_@the-/resize.TheResize#overwriteFile)
-- [#overwriteIfPossible(filename,options)](./doc/api/api.md#module_@the-/resize.TheResize#overwriteIfPossible)
-- [.create(args)](./doc/api/api.md#module_@the-/resize.create)
-### class
-- [.TheResize](./doc/api/api.md#module_@the-/resize.TheResize)
+
+- module:@the-/resize
+  - [.create(args)](./doc/api/api.md#module_@the-/resize.create)
+  - [.default()](./doc/api/api.md#module_@the-/resize.default)
+  - [.TheResize](./doc/api/api.md#module_@the-/resize.TheResize)
+- module:@the-/resize.TheResize
+  - [#convert(src,dest,options)](./doc/api/api.md#module_@the-/resize.TheResize#convert)
+  - [#convertDir(src,dest,options)](./doc/api/api.md#module_@the-/resize.TheResize#convertDir)
+  - [#convertFile(src,dest,options)](./doc/api/api.md#module_@the-/resize.TheResize#convertFile)
+  - [#overwrite(filename,options)](./doc/api/api.md#module_@the-/resize.TheResize#overwrite)
+  - [#overwriteDir(dirname,options)](./doc/api/api.md#module_@the-/resize.TheResize#overwriteDir)
+  - [#overwriteFile(src,options)](./doc/api/api.md#module_@the-/resize.TheResize#overwriteFile)
+  - [#overwriteIfPossible(filename,options)](./doc/api/api.md#module_@the-/resize.TheResize#overwriteIfPossible)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -12,7 +12,7 @@
     "@the-/check": "^15.4.1",
     "@the-/driver-mongo": "^15.4.0",
     "@the-/driver-sequelize": "^15.4.0",
-    "@the-/hash": "^15.4.2",
+    "@the-/hash": "^15.4.3",
     "@the-/refresher": "^15.4.0",
     "@the-/resource": "^15.4.2",
     "@the-/util-db": "^15.4.0",
@@ -68,5 +68,5 @@
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
   },
-  "version": "15.4.2"
+  "version": "15.4.3"
 }

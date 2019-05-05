@@ -281,7 +281,9 @@ describe('the-driver-sequelize', function() {
     })
     const a1 = await driver.create('X', { [p[3]]: 3, [p[5]]: 5, [p[1]]: 1 })
     const a2 = await driver.update('X', a1.id, { [p[4]]: 4 })
+    equal(a2[p[4]], 4)
     const a22 = await driver.update('X', a1.id, { [p[4]]: 4 })
+    equal(a22[p[4]], 4)
     const a3 = await driver.update('X', a1.id, { [p[2]]: 2 })
     deepEqual(
       Object.keys(a3).sort(),
@@ -464,19 +466,21 @@ describe('the-driver-sequelize', function() {
       x: 1,
       y: 2,
     })
+    equal(created01.name, 'b01')
     const created02 = await driver.create('Box', {
       date: null,
       name: 'b02',
       x: 1,
       y: 3,
     })
+    equal(created02.name, 'b02')
     const created03 = await driver.create('Box', {
       date: null,
       name: 'b03',
       x: 2,
       y: 3,
     })
-
+    equal(created03.name, 'b03')
     equal(
       (await driver.list('Box', {
         filter: {

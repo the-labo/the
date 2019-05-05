@@ -41,4 +41,4 @@ iFrame of the-components
 ## TheFrameStyle()
 Style for TheFrame
 
-**Kind**: global function  
+**Kind**: global function

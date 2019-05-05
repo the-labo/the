@@ -98,44 +98,46 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [#scope(names)](./doc/api/api.md#module_@the-/state.state.ScopedState#scope)
-- [#del(name)](./doc/api/api.md#module_@the-/state.state.State#del)
-- [#drop()](./doc/api/api.md#module_@the-/state.state.State#drop)
-- [#get(name)](./doc/api/api.md#module_@the-/state.state.State#get)
-- [#keys()](./doc/api/api.md#module_@the-/state.state.State#keys)
-- [#publish()](./doc/api/api.md#module_@the-/state.state.State#publish)
-- [#set(values)](./doc/api/api.md#module_@the-/state.state.State#set)
-- [#subscribe(callback)](./doc/api/api.md#module_@the-/state.state.State#subscribe)
-- [#unsubscribe(callback)](./doc/api/api.md#module_@the-/state.state.State#unsubscribe)
-- [#del(name)](./doc/api/api.md#module_@the-/state.state.RootState#del)
-- [#drop()](./doc/api/api.md#module_@the-/state.state.RootState#drop)
-- [#get(name)](./doc/api/api.md#module_@the-/state.state.RootState#get)
-- [#keys()](./doc/api/api.md#module_@the-/state.state.RootState#keys)
-- [#publish()](./doc/api/api.md#module_@the-/state.state.RootState#publish)
-- [#set(values)](./doc/api/api.md#module_@the-/state.state.RootState#set)
-- [#subscribe(callback)](./doc/api/api.md#module_@the-/state.state.RootState#subscribe)
-- [#unsubscribe(callback)](./doc/api/api.md#module_@the-/state.state.RootState#unsubscribe)
-- [#del(name)](./doc/api/api.md#module_@the-/state.state.ScopedState#del)
-- [#drop()](./doc/api/api.md#module_@the-/state.state.ScopedState#drop)
-- [#get(name)](./doc/api/api.md#module_@the-/state.state.ScopedState#get)
-- [#keys()](./doc/api/api.md#module_@the-/state.state.ScopedState#keys)
-- [#publish()](./doc/api/api.md#module_@the-/state.state.ScopedState#publish)
-- [#set(values)](./doc/api/api.md#module_@the-/state.state.ScopedState#set)
-- [#subscribe(callback)](./doc/api/api.md#module_@the-/state.state.ScopedState#subscribe)
-- [#unsubscribe(callback)](./doc/api/api.md#module_@the-/state.state.ScopedState#unsubscribe)
-- [.create(args)](./doc/api/api.md#module_@the-/state.create)
-- [.default()](./doc/api/api.md#module_@the-/state.default)
-### class
-- [.TheState](./doc/api/api.md#module_@the-/state.TheState)
-- [.RootState](./doc/api/api.md#module_@the-/state.state.RootState)
-- [.ScopedState](./doc/api/api.md#module_@the-/state.state.ScopedState)
-- [.State](./doc/api/api.md#module_@the-/state.state.State)
-### namespace
-- [.ActionTypes](./doc/api/api.md#module_@the-/state.constants.ActionTypes)
-- [.constants](./doc/api/api.md#module_@the-/state.constants)
-- [.helpers](./doc/api/api.md#module_@the-/state.helpers)
-- [.state](./doc/api/api.md#module_@the-/state.state)
+
+- module:@the-/state
+  - [.create(args)](./doc/api/api.md#module_@the-/state.create)
+  - [.default()](./doc/api/api.md#module_@the-/state.default)
+  - [.TheState](./doc/api/api.md#module_@the-/state.TheState)
+- module:@the-/state.state
+  - [.RootState](./doc/api/api.md#module_@the-/state.state.RootState)
+  - [.ScopedState](./doc/api/api.md#module_@the-/state.state.ScopedState)
+  - [.State](./doc/api/api.md#module_@the-/state.state.State)
+- module:@the-/state.state.RootState
+  - [#del(name)](./doc/api/api.md#module_@the-/state.state.RootState#del)
+  - [#drop()](./doc/api/api.md#module_@the-/state.state.RootState#drop)
+  - [#get(name)](./doc/api/api.md#module_@the-/state.state.RootState#get)
+  - [#keys()](./doc/api/api.md#module_@the-/state.state.RootState#keys)
+  - [#publish()](./doc/api/api.md#module_@the-/state.state.RootState#publish)
+  - [#set(values)](./doc/api/api.md#module_@the-/state.state.RootState#set)
+  - [#subscribe(callback)](./doc/api/api.md#module_@the-/state.state.RootState#subscribe)
+  - [#unsubscribe(callback)](./doc/api/api.md#module_@the-/state.state.RootState#unsubscribe)
+- module:@the-/state.state.ScopedState
+  - [#del(name)](./doc/api/api.md#module_@the-/state.state.ScopedState#del)
+  - [#drop()](./doc/api/api.md#module_@the-/state.state.ScopedState#drop)
+  - [#get(name)](./doc/api/api.md#module_@the-/state.state.ScopedState#get)
+  - [#keys()](./doc/api/api.md#module_@the-/state.state.ScopedState#keys)
+  - [#publish()](./doc/api/api.md#module_@the-/state.state.ScopedState#publish)
+  - [#scope(names)](./doc/api/api.md#module_@the-/state.state.ScopedState#scope)
+  - [#set(values)](./doc/api/api.md#module_@the-/state.state.ScopedState#set)
+  - [#subscribe(callback)](./doc/api/api.md#module_@the-/state.state.ScopedState#subscribe)
+  - [#unsubscribe(callback)](./doc/api/api.md#module_@the-/state.state.ScopedState#unsubscribe)
+- module:@the-/state.state.State
+  - [#del(name)](./doc/api/api.md#module_@the-/state.state.State#del)
+  - [#drop()](./doc/api/api.md#module_@the-/state.state.State#drop)
+  - [#get(name)](./doc/api/api.md#module_@the-/state.state.State#get)
+  - [#keys()](./doc/api/api.md#module_@the-/state.state.State#keys)
+  - [#publish()](./doc/api/api.md#module_@the-/state.state.State#publish)
+  - [#set(values)](./doc/api/api.md#module_@the-/state.state.State#set)
+  - [#subscribe(callback)](./doc/api/api.md#module_@the-/state.state.State#subscribe)
+  - [#unsubscribe(callback)](./doc/api/api.md#module_@the-/state.state.State#unsubscribe)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

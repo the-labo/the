@@ -17,7 +17,7 @@
     "clay-driver-base": "^4.1.7",
     "clay-list-pager": "^3.0.1",
     "clay-resource-name": "^4.0.5",
-    "sequelize": "^5.8.1",
+    "sequelize": "^5.8.4",
     "utf8": "^3.0.0"
   },
   "description": "Sequelize driver for the-framework",

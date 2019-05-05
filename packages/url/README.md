@@ -89,9 +89,13 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [.addQuery(urlString,query)](./doc/api/api.md#module_@the-/url.addQuery)
-- [.formatUrl(urlString,params)](./doc/api/api.md#module_@the-/url.formatUrl)
+
+- module:@the-/url
+  - [.addQuery(urlString,query)](./doc/api/api.md#module_@the-/url.addQuery)
+  - [.formatUrl(urlString,params)](./doc/api/api.md#module_@the-/url.formatUrl)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

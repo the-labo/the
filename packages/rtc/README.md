@@ -102,31 +102,33 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [SFUProxy](./doc/api/api.md#SFUProxy)
-- [SFUProxyEdge](./doc/api/api.md#SFUProxyEdge)
-- [SFUProxyEdgeAnswerer](./doc/api/api.md#SFUProxyEdgeAnswerer)
-- [SFUProxyEdgeOfferer](./doc/api/api.md#SFUProxyEdgeOfferer)
-- [SFUProxyPool](./doc/api/api.md#SFUProxyPool)
-- [.TheRTC](./doc/api/api.md#module_@the-/rtc.TheRTC)
-### function
-- [default()](./doc/api/api.md#default)
-- [httpMix(Class)](./doc/api/api.md#httpMix)
-- [.create(args)](./doc/api/api.md#module_@the-/rtc.create)
-- [.handleUnknownKeys()](./doc/api/api.md#module_@the-/rtc.helpers.handleUnknownKeys)
-- [.parseTurn secret(secret)](./doc/api/api.md#module_@the-/rtc.helpers.parseTurn secret)
-- [.ioMix(Class)](./doc/api/api.md#module_@the-/rtc.mixins.ioMix)
-- [.sfuMix(Class)](./doc/api/api.md#module_@the-/rtc.mixins.sfuMix)
-- [.turnMix(Class)](./doc/api/api.md#module_@the-/rtc.mixins.turnMix)
-### namespace
-- [.constants](./doc/api/api.md#module_@the-/rtc.constants)
-- [.helpers](./doc/api/api.md#module_@the-/rtc.helpers)
-- [.mixins](./doc/api/api.md#module_@the-/rtc.mixins)
-### enum
-- [.ChannelNames](./doc/api/api.md#module_@the-/rtc.constants.ChannelNames)
-- [.IOEvents](./doc/api/api.md#module_@the-/rtc.constants.IOEvents)
-- [.PeerEvents](./doc/api/api.md#module_@the-/rtc.constants.PeerEvents)
-- [.TopologyTypes](./doc/api/api.md#module_@the-/rtc.constants.TopologyTypes)
+
+- global
+  - [httpMix(Class)](./doc/api/api.md#httpMix)
+  - [SFUProxy](./doc/api/api.md#SFUProxy)
+  - [SFUProxyEdge](./doc/api/api.md#SFUProxyEdge)
+  - [SFUProxyEdgeAnswerer](./doc/api/api.md#SFUProxyEdgeAnswerer)
+  - [SFUProxyEdgeOfferer](./doc/api/api.md#SFUProxyEdgeOfferer)
+  - [SFUProxyPool](./doc/api/api.md#SFUProxyPool)
+- module:@the-/rtc.constants
+  - [.ChannelNames](./doc/api/api.md#module_@the-/rtc.constants.ChannelNames)
+  - [.IOEvents](./doc/api/api.md#module_@the-/rtc.constants.IOEvents)
+  - [.PeerEvents](./doc/api/api.md#module_@the-/rtc.constants.PeerEvents)
+  - [.TopologyTypes](./doc/api/api.md#module_@the-/rtc.constants.TopologyTypes)
+- module:@the-/rtc
+  - [.create(args)](./doc/api/api.md#module_@the-/rtc.create)
+  - [.default()](./doc/api/api.md#module_@the-/rtc.default)
+  - [.TheRTC](./doc/api/api.md#module_@the-/rtc.TheRTC)
+- module:@the-/rtc.helpers
+  - [.handleUnknownKeys()](./doc/api/api.md#module_@the-/rtc.helpers.handleUnknownKeys)
+  - [.parseTurn secret(secret)](./doc/api/api.md#module_@the-/rtc.helpers.parseTurn secret)
+- module:@the-/rtc.mixins
+  - [.ioMix(Class)](./doc/api/api.md#module_@the-/rtc.mixins.ioMix)
+  - [.sfuMix(Class)](./doc/api/api.md#module_@the-/rtc.mixins.sfuMix)
+  - [.turnMix(Class)](./doc/api/api.md#module_@the-/rtc.mixins.turnMix)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

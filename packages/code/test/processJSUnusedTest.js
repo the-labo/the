@@ -529,7 +529,7 @@ console.log(a, b, x, y)
   })
 
   it('In nested jsx function', async () => {
-    console.log(
+    equal(
       await processJSUnused(`
 class X {
   render () {
@@ -543,6 +543,50 @@ class X {
   }
 }
 `),
+      `
+class X {
+  render () {
+    return this.#stateful(({a,}) => {
+      return (
+        <Y renderItem={() => {
+           return <Z a={a}/>            
+        }}/>
+      )
+    })
+  }
+}
+`,
+    )
+  })
+
+  it('Process unused array pattern on loop', async () => {
+    equal(
+      await processJSUnused(`
+class X {
+  a () {
+    for (const [name, scene] of scenes) {
+      scene.init()
+    }
+  }
+  b () {
+    for (const [name, scene] of scenes) {
+      scene.init()
+    }
+  }
+}`),
+      `
+class X {
+  a () {
+    for (const [, scene] of scenes) {
+      scene.init()
+    }
+  }
+  b () {
+    for (const [, scene] of scenes) {
+      scene.init()
+    }
+  }
+}`,
     )
   })
 })

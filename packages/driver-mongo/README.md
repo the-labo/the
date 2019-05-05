@@ -84,11 +84,14 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [MongoDriver](./doc/api/api.md#MongoDriver)
-### function
-- [create(args)](./doc/api/api.md#create)
-- [mongoMix()](./doc/api/api.md#mongoMix)
+
+- global
+  - [create(args)](./doc/api/api.md#create)
+  - [MongoDriver](./doc/api/api.md#MongoDriver)
+  - [mongoMix()](./doc/api/api.md#mongoMix)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -84,30 +84,36 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [listenToCreate(onCreate)](./doc/api/api.md#listenToCreate)
-- [listenToDestroy(onDestroy)](./doc/api/api.md#listenToDestroy)
-- [listenToDrop(onDrop)](./doc/api/api.md#listenToDrop)
-- [listenToUpdate(onUpdate)](./doc/api/api.md#listenToUpdate)
-- [#refOf(id)](./doc/api/api.md#module_@the-/resource.TheResource#refOf)
-- [#emptyList()](./doc/api/api.md#module_@the-/resource.TheResource#emptyList)
-- [#invalidated(attributes)](./doc/api/api.md#module_@the-/resource.TheResource#invalidated)
-- [#refresh(entity)](./doc/api/api.md#module_@the-/resource.TheResource#refresh)
-- [#refreshAll()](./doc/api/api.md#module_@the-/resource.TheResource#refreshAll)
-- [#resaveAll()](./doc/api/api.md#module_@the-/resource.TheResource#resaveAll)
-- [.create(args)](./doc/api/api.md#module_@the-/resource.create)
-- [.isResourceClass()](./doc/api/api.md#module_@the-/resource.isResourceClass)
-- [.listenMix(Class)](./doc/api/api.md#module_@the-/resource.mixins.listenMix)
-- [.queueMix(Class)](./doc/api/api.md#module_@the-/resource.mixins.queueMix)
-- [.writeOnceMix(Class)](./doc/api/api.md#module_@the-/resource.mixins.writeOnceMix)
-### class
-- [.TheResource](./doc/api/api.md#module_@the-/resource.TheResource)
-- [.TheResourceBase](./doc/api/api.md#module_@the-/resource.TheResourceBase)
-- [~QueueMixed](./doc/api/api.md#module_@the-/resource.mixins.queueMix~QueueMixed)
-- [~WriteOnce](./doc/api/api.md#module_@the-/resource.mixins.writeOnceMix~WriteOnce)
-### namespace
-- [.DataTypes](./doc/api/api.md#module_@the-/resource.DataTypes)
-- [.mixins](./doc/api/api.md#module_@the-/resource.mixins)
+
+- global
+  - [listenToCreate(onCreate)](./doc/api/api.md#listenToCreate)
+  - [listenToDestroy(onDestroy)](./doc/api/api.md#listenToDestroy)
+  - [listenToDrop(onDrop)](./doc/api/api.md#listenToDrop)
+  - [listenToUpdate(onUpdate)](./doc/api/api.md#listenToUpdate)
+- module:@the-/resource
+  - [.create(args)](./doc/api/api.md#module_@the-/resource.create)
+  - [.default()](./doc/api/api.md#module_@the-/resource.default)
+  - [.isResourceClass()](./doc/api/api.md#module_@the-/resource.isResourceClass)
+  - [.TheResource](./doc/api/api.md#module_@the-/resource.TheResource)
+  - [.TheResourceBase](./doc/api/api.md#module_@the-/resource.TheResourceBase)
+- module:@the-/resource.mixins
+  - [.listenMix(Class)](./doc/api/api.md#module_@the-/resource.mixins.listenMix)
+  - [.queueMix(Class)](./doc/api/api.md#module_@the-/resource.mixins.queueMix)
+  - [.writeOnceMix(Class)](./doc/api/api.md#module_@the-/resource.mixins.writeOnceMix)
+- module:@the-/resource.mixins.queueMix
+  - [~QueueMixed](./doc/api/api.md#module_@the-/resource.mixins.queueMix~QueueMixed)
+- module:@the-/resource.mixins.writeOnceMix
+  - [~WriteOnce](./doc/api/api.md#module_@the-/resource.mixins.writeOnceMix~WriteOnce)
+- module:@the-/resource.TheResource
+  - [#emptyList()](./doc/api/api.md#module_@the-/resource.TheResource#emptyList)
+  - [#invalidated(attributes)](./doc/api/api.md#module_@the-/resource.TheResource#invalidated)
+  - [#refOf(id)](./doc/api/api.md#module_@the-/resource.TheResource#refOf)
+  - [#refresh(entity)](./doc/api/api.md#module_@the-/resource.TheResource#refresh)
+  - [#refreshAll()](./doc/api/api.md#module_@the-/resource.TheResource#refreshAll)
+  - [#resaveAll()](./doc/api/api.md#module_@the-/resource.TheResource#resaveAll)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

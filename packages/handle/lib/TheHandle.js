@@ -34,7 +34,7 @@ class TheHandle {
       .sort(([a], [b]) =>
         shortNameOfScene(a).localeCompare(shortNameOfScene(b)),
       )
-    for (const [name, scene] of scenes) {
+    for (const [, scene] of scenes) {
       scene.init()
     }
   }

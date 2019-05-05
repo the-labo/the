@@ -107,15 +107,20 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [#decrementCount()](./doc/api/api.md#module_@the-/jitter.TheJitter#decrementCount)
-- [#incrementCount()](./doc/api/api.md#module_@the-/jitter.TheJitter#incrementCount)
-- [#resetCount()](./doc/api/api.md#module_@the-/jitter.TheJitter#resetCount)
-- [#handle(action)](./doc/api/api.md#module_@the-/jitter.TheJitter#handle)
-- [#wait()](./doc/api/api.md#module_@the-/jitter.TheJitter#wait)
-- [.create(args)](./doc/api/api.md#module_@the-/jitter.create)
-### class
-- [.TheJitter](./doc/api/api.md#module_@the-/jitter.TheJitter)
+
+- module:@the-/jitter
+  - [.create(args)](./doc/api/api.md#module_@the-/jitter.create)
+  - [.default()](./doc/api/api.md#module_@the-/jitter.default)
+  - [.TheJitter](./doc/api/api.md#module_@the-/jitter.TheJitter)
+- module:@the-/jitter.TheJitter
+  - [#decrementCount()](./doc/api/api.md#module_@the-/jitter.TheJitter#decrementCount)
+  - [#handle(action)](./doc/api/api.md#module_@the-/jitter.TheJitter#handle)
+  - [#incrementCount()](./doc/api/api.md#module_@the-/jitter.TheJitter#incrementCount)
+  - [#resetCount()](./doc/api/api.md#module_@the-/jitter.TheJitter#resetCount)
+  - [#wait()](./doc/api/api.md#module_@the-/jitter.TheJitter#wait)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

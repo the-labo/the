@@ -1,28 +1,33 @@
 [
   {
-    "id": "module:@the-/util-db",
-    "longname": "module:@the-/util-db",
-    "name": "@the-/util-db",
-    "kind": "module",
     "description": "Utility for the-db",
-    "version": "15.4.0",
+    "id": "module:@the-/util-db",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "utilDb",
+    "longname": "module:@the-/util-db",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/util-db/lib"
     },
-    "order": 1
+    "name": "@the-/util-db",
+    "order": 1,
+    "typicalname": "utilDb",
+    "version": "15.4.0"
   },
   {
-    "id": "module:@the-/util-db.evalScript",
-    "longname": "module:@the-/util-db.evalScript",
-    "name": "evalScript",
-    "kind": "function",
-    "scope": "static",
     "description": "Eval script",
+    "id": "module:@the-/util-db.evalScript",
+    "kind": "function",
+    "longname": "module:@the-/util-db.evalScript",
     "memberof": "module:@the-/util-db",
+    "meta": {
+      "filename": "evalScript.js",
+      "lineno": 2,
+      "path": "/Users/okuni/Projects/the/packages/util-db/lib"
+    },
+    "name": "evalScript",
+    "order": 0,
     "returns": [
       {
         "type": {
@@ -32,21 +37,21 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 2,
-      "filename": "evalScript.js",
-      "path": "/Users/okuni/Projects/the/packages/util-db/lib"
-    },
-    "order": 0
+    "scope": "static"
   },
   {
-    "id": "module:@the-/util-db.toLowerKeys",
-    "longname": "module:@the-/util-db.toLowerKeys",
-    "name": "toLowerKeys",
-    "kind": "function",
-    "scope": "static",
     "description": "Make object keys to lower",
+    "id": "module:@the-/util-db.toLowerKeys",
+    "kind": "function",
+    "longname": "module:@the-/util-db.toLowerKeys",
     "memberof": "module:@the-/util-db",
+    "meta": {
+      "filename": "toLowerKeys.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/util-db/lib"
+    },
+    "name": "toLowerKeys",
+    "order": 2,
     "params": [
       {
         "type": {
@@ -66,11 +71,6 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "toLowerKeys.js",
-      "path": "/Users/okuni/Projects/the/packages/util-db/lib"
-    },
-    "order": 2
+    "scope": "static"
   }
 ]

@@ -1,4 +1,5 @@
 /**
+ * @memberof module:@the-/server.assert
  * @function assertMethods
  * @param {function()} Class
  * @param {string[]} reservedNames
@@ -6,7 +7,7 @@
  */
 'use strict'
 
-/** @lends assertMethods */
+/** @lends module:@the-/server.assert.assertMethods */
 function assertMethods(Class, reservedNames) {
   for (const name of reservedNames) {
     const hit = Class.prototype[name]

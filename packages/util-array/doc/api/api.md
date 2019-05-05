@@ -30,7 +30,7 @@
 ## @the-/util-array
 Array utility of the-framework
 
-**Version**: 15.4.0  
+**Version**: 15.4.1  
 **License**: MIT  
 <a name="keyPathMap"></a>
 

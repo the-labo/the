@@ -25,10 +25,7 @@ class ThePack {
 
   /**
    * Bind methods
-   * @returns {{
-   *   decode: function,
-   *   encode: function
-   * }}
+   * @returns {Object}
    */
   bind() {
     return {

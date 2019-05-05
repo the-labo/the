@@ -84,8 +84,12 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [.findupDir(basedir)](./doc/api/api.md#module_@the-/util-path.findupDir)
+
+- module:@the-/util-path
+  - [.findupDir(basedir)](./doc/api/api.md#module_@the-/util-path.findupDir)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

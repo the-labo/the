@@ -272,4 +272,4 @@ var/
 
 # Other paths
 **/doc/demo/bundle.js
-packages/code/misc/mocks/
+/packages/*/misc/mocks

@@ -124,17 +124,19 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [#pull()](./doc/api/api.md#module_@the-/stream#pull)
-- [#push(chunks)](./doc/api/api.md#module_@the-/stream#push)
-- [#pushEnd()](./doc/api/api.md#module_@the-/stream#pushEnd)
-- [.generatorFromReadable()](./doc/api/api.md#module_@the-/stream.helpers.generatorFromReadable)
-### class
-- [.Consumer](./doc/api/api.md#module_@the-/stream.Consumer)
-- [.Provider](./doc/api/api.md#module_@the-/stream.Provider)
-- [.TheStream](./doc/api/api.md#module_@the-/stream.TheStream)
-### namespace
-- [.helpers](./doc/api/api.md#module_@the-/stream.helpers)
+
+- module:@the-/stream
+  - [.Consumer](./doc/api/api.md#module_@the-/stream.Consumer)
+  - [.Provider](./doc/api/api.md#module_@the-/stream.Provider)
+  - [.TheStream](./doc/api/api.md#module_@the-/stream.TheStream)
+  - [#pull()](./doc/api/api.md#module_@the-/stream#pull)
+  - [#push(chunks)](./doc/api/api.md#module_@the-/stream#push)
+  - [#pushEnd()](./doc/api/api.md#module_@the-/stream#pushEnd)
+- module:@the-/stream.helpers
+  - [.generatorFromReadable()](./doc/api/api.md#module_@the-/stream.helpers.generatorFromReadable)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -89,19 +89,23 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### namespace
-- [.helpers](./doc/api/api.md#module_@the-/file.helpers)
-### function
-- [.copyAsJsonSync(src,dest)](./doc/api/api.md#module_@the-/util-file.copyAsJsonSync)
-- [.delSync(filename)](./doc/api/api.md#module.module_@the-/util-file.delSync)
-- [.fileTypeOf(filename)](./doc/api/api.md#module_@the-/util-file.fileTypeOf)
-- [.isJSON5File(filename)](./doc/api/api.md#module_@the-/util-file.isJSON5File)
-- [.readAsJson(filename)](./doc/api/api.md#module_@the-/util-file.readAsJson)
-- [.readAsJsonSync(filename)](./doc/api/api.md#module_@the-/util-file.readAsJsonSync)
-- [.statSync(filename)](./doc/api/api.md#module_@the-/util-file.statSync)
-- [.writeAsJsonSync(filename,data)](./doc/api/api.md#module_@the-/util-file.writeAsJsonSync)
-- [.writeAsJsonSync(filename,data)](./doc/api/api.md#module_@the-/util-file.writeAsJsonSync)
-- [.sortProperties()](./doc/api/api.md#module_@the-/util-file.helpers.sortProperties)
+
+- module:@the-/util-file
+  - [.copyAsJsonSync(src,dest)](./doc/api/api.md#module_@the-/util-file.copyAsJsonSync)
+  - [.fileTypeOf(filename)](./doc/api/api.md#module_@the-/util-file.fileTypeOf)
+  - [.isJSON5File(filename)](./doc/api/api.md#module_@the-/util-file.isJSON5File)
+  - [.readAsJson(filename)](./doc/api/api.md#module_@the-/util-file.readAsJson)
+  - [.readAsJsonSync(filename)](./doc/api/api.md#module_@the-/util-file.readAsJsonSync)
+  - [.statSync(filename)](./doc/api/api.md#module_@the-/util-file.statSync)
+  - [.writeAsJsonSync(filename,data)](./doc/api/api.md#module_@the-/util-file.writeAsJsonSync)
+  - [.writeAsJsonSync(filename,data)](./doc/api/api.md#module_@the-/util-file.writeAsJsonSync)
+- module:@the-/util-file.helpers
+  - [.sortProperties()](./doc/api/api.md#module_@the-/util-file.helpers.sortProperties)
+- module.module:@the-/util-file
+  - [.delSync(filename)](./doc/api/api.md#module.module_@the-/util-file.delSync)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -90,24 +90,31 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [#for()](./doc/api/api.md#module_@the-/scene.TheScene#for)
-- [#get()](./doc/api/api.md#module_@the-/scene.TheScene#get)
-- [#has(namepath)](./doc/api/api.md#module_@the-/scene.TheScene#has)
-- [#init()](./doc/api/api.md#module_@the-/scene.TheScene#init)
-- [#set()](./doc/api/api.md#module_@the-/scene.TheScene#set)
-- [#subFor(namepath)](./doc/api/api.md#module_@the-/scene.mixins.subMix~SubMixed#subFor)
-- [.create(args)](./doc/api/api.md#module_@the-/scene.create)
-- [.errorMix(BaseClass)](./doc/api/api.md#module_@the-/scene.mixins.errorMix)
-- [.goMix(BaseClass)](./doc/api/api.md#module_@the-/scene.mixins.goMix)
-- [.subMix(BaseClass)](./doc/api/api.md#module_@the-/scene.mixins.subMix)
-### class
-- [.TheScene](./doc/api/api.md#module_@the-/scene.TheScene)
-- [~ErrorMixed](./doc/api/api.md#module_@the-/scene.mixins.goMix~ErrorMixed)
-- [~GoMixed](./doc/api/api.md#module_@the-/scene.mixins.goMix~GoMixed)
-- [~SubMixed](./doc/api/api.md#module_@the-/scene.mixins.subMix~SubMixed)
-### namespace
-- [.mixins](./doc/api/api.md#module_@the-/scene.mixins)
+
+- module:@the-/scene
+  - [.create(args)](./doc/api/api.md#module_@the-/scene.create)
+  - [.default()](./doc/api/api.md#module_@the-/scene.default)
+  - [.TheScene](./doc/api/api.md#module_@the-/scene.TheScene)
+- module:@the-/scene.mixins
+  - [.errorMix(BaseClass)](./doc/api/api.md#module_@the-/scene.mixins.errorMix)
+  - [.goMix(BaseClass)](./doc/api/api.md#module_@the-/scene.mixins.goMix)
+  - [.subMix(BaseClass)](./doc/api/api.md#module_@the-/scene.mixins.subMix)
+- module:@the-/scene.mixins.goMix
+  - [~ErrorMixed](./doc/api/api.md#module_@the-/scene.mixins.goMix~ErrorMixed)
+  - [~GoMixed](./doc/api/api.md#module_@the-/scene.mixins.goMix~GoMixed)
+- module:@the-/scene.mixins.subMix
+  - [~SubMixed](./doc/api/api.md#module_@the-/scene.mixins.subMix~SubMixed)
+- module:@the-/scene.mixins.subMix~SubMixed
+  - [#subFor(namepath)](./doc/api/api.md#module_@the-/scene.mixins.subMix~SubMixed#subFor)
+- module:@the-/scene.TheScene
+  - [#for()](./doc/api/api.md#module_@the-/scene.TheScene#for)
+  - [#get()](./doc/api/api.md#module_@the-/scene.TheScene#get)
+  - [#has(namepath)](./doc/api/api.md#module_@the-/scene.TheScene#has)
+  - [#init()](./doc/api/api.md#module_@the-/scene.TheScene#init)
+  - [#set()](./doc/api/api.md#module_@the-/scene.TheScene#set)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

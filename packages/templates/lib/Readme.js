@@ -31,12 +31,14 @@ const _apiLink = (item) => {
         .filter((name) => !/\./.test(name))
       return {
         link,
+        memberof,
         name: `${name}(${paramNames.join(',')})`,
       }
     }
     default: {
       return {
         link,
+        memberof,
         name,
       }
     }
@@ -45,7 +47,7 @@ const _apiLink = (item) => {
 
 /** @lends module:@the-/templates.readmeBud */
 function readmeBud(config = {}) {
-  const { api, pkg, repo, sections } = config
+  const { api, path: path_ = 'README.md', pkg, repo, sections } = config
   assert.ok(pkg, 'config.pkg is required.')
   assert.ok(sections, 'config.sections is required.')
   assert.ok(repo, 'config.repo is required.')
@@ -54,18 +56,16 @@ function readmeBud(config = {}) {
       api: api && {
         links: api.jsdoc
           .filter(({ kind }) =>
-            ['class', 'namespace', 'enum', 'typedef', 'function'].includes(
-              kind,
-            ),
+            ['class', 'enum', 'typedef', 'function'].includes(kind),
           )
+          .sort((a, b) => {
+            return a.longname.localeCompare(b.longname)
+          })
           .reduce((reduced, item) => {
-            const { kind } = item
+            const { memberof = 'global' } = item
             return {
               ...reduced,
-              [kind]: [
-                ...(reduced.hasOwnProperty(kind) ? reduced[kind] : []),
-                _apiLink(item),
-              ],
+              [memberof]: [...(reduced[memberof] || []), _apiLink(item)],
             }
           }, {}),
         path: api.path,
@@ -92,7 +92,7 @@ function readmeBud(config = {}) {
     force: true,
     mkdirp: true,
     mode: '444',
-    path: 'README.md',
+    path: path_,
     tmpl: _tmpl('README.hbs'),
   }
 }

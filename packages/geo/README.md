@@ -91,12 +91,17 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [#watch(callback,options)](./doc/api/api.md#module_@the-/geo.TheGeo#watch)
-- [#detect(options)](./doc/api/api.md#module_@the-/geo.TheGeo#detect)
-- [.create(args)](./doc/api/api.md#module_@the-/geo.create)
-### class
-- [.TheGeo](./doc/api/api.md#module_@the-/geo.TheGeo)
+
+- module:@the-/geo
+  - [.create(args)](./doc/api/api.md#module_@the-/geo.create)
+  - [.default()](./doc/api/api.md#module_@the-/geo.default)
+  - [.TheGeo](./doc/api/api.md#module_@the-/geo.TheGeo)
+- module:@the-/geo.TheGeo
+  - [#detect(options)](./doc/api/api.md#module_@the-/geo.TheGeo#detect)
+  - [#watch(callback,options)](./doc/api/api.md#module_@the-/geo.TheGeo#watch)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

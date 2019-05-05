@@ -1,88 +1,93 @@
 [
   {
-    "id": "module:@the-/ast",
-    "longname": "module:@the-/ast",
-    "name": "@the-/ast",
-    "kind": "module",
     "description": "AST (abstract syntax tree) parser",
-    "version": "15.4.2",
+    "id": "module:@the-/ast",
+    "kind": "module",
     "license": "MIT",
+    "longname": "module:@the-/ast",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 2,
+      "path": "/Users/okuni/Projects/the/packages/ast/lib"
+    },
+    "name": "@the-/ast",
+    "order": 3,
     "typicalname": "ast",
-    "meta": {
-      "lineno": 2,
-      "filename": "index.js",
-      "path": "/Users/okuni/Projects/the/packages/ast/lib"
-    },
-    "order": 3
+    "version": "15.4.2"
   },
   {
-    "id": "module:@the-/ast.analyzer",
-    "longname": "module:@the-/ast.analyzer",
-    "name": "analyzer",
-    "kind": "namespace",
-    "scope": "static",
     "description": "Analyze node",
+    "id": "module:@the-/ast.analyzer",
+    "kind": "namespace",
+    "longname": "module:@the-/ast.analyzer",
     "memberof": "module:@the-/ast",
     "meta": {
-      "lineno": 1,
       "filename": "analyser.js",
-      "path": "/Users/okuni/Projects/the/packages/ast/lib"
-    },
-    "order": 0
-  },
-  {
-    "id": "module:@the-/ast.finder",
-    "longname": "module:@the-/ast.finder",
-    "name": "finder",
-    "kind": "namespace",
-    "scope": "static",
-    "description": "Find node from node",
-    "memberof": "module:@the-/ast",
-    "meta": {
       "lineno": 1,
-      "filename": "finder.js",
       "path": "/Users/okuni/Projects/the/packages/ast/lib"
     },
-    "order": 1
+    "name": "analyzer",
+    "order": 0,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/ast.constants",
-    "longname": "module:@the-/ast.constants",
-    "name": "constants",
+    "description": "Find node from node",
+    "id": "module:@the-/ast.finder",
     "kind": "namespace",
-    "scope": "static",
+    "longname": "module:@the-/ast.finder",
+    "memberof": "module:@the-/ast",
+    "meta": {
+      "filename": "finder.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/ast/lib"
+    },
+    "name": "finder",
+    "order": 1,
+    "scope": "static"
+  },
+  {
     "description": "Constant variables",
-    "memberof": "module:@the-/ast",
-    "meta": {
-      "lineno": 2,
-      "filename": "index.js",
-      "path": "/Users/okuni/Projects/the/packages/ast/lib/constants"
-    },
-    "order": 5
-  },
-  {
-    "id": "module:@the-/ast.NodeTypes",
-    "longname": "module:@the-/ast.NodeTypes",
-    "name": "NodeTypes",
+    "id": "module:@the-/ast.constants",
     "kind": "namespace",
-    "scope": "static",
-    "description": "Node types",
+    "longname": "module:@the-/ast.constants",
     "memberof": "module:@the-/ast",
     "meta": {
+      "filename": "index.js",
       "lineno": 2,
-      "filename": "NodeTypes.js",
       "path": "/Users/okuni/Projects/the/packages/ast/lib/constants"
     },
-    "order": 6
+    "name": "constants",
+    "order": 5,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/ast.finder.findByTypes",
-    "longname": "module:@the-/ast.finder.findByTypes",
-    "name": "findByTypes",
-    "kind": "function",
-    "scope": "static",
+    "description": "Node types",
+    "id": "module:@the-/ast.NodeTypes",
+    "kind": "namespace",
+    "longname": "module:@the-/ast.NodeTypes",
+    "memberof": "module:@the-/ast",
+    "meta": {
+      "filename": "NodeTypes.js",
+      "lineno": 2,
+      "path": "/Users/okuni/Projects/the/packages/ast/lib/constants"
+    },
+    "name": "NodeTypes",
+    "order": 6,
+    "scope": "static"
+  },
+  {
     "description": "Find nodes by types",
+    "id": "module:@the-/ast.finder.findByTypes",
+    "kind": "function",
+    "longname": "module:@the-/ast.finder.findByTypes",
     "memberof": "module:@the-/ast.finder",
+    "meta": {
+      "filename": "finder.js",
+      "lineno": 19,
+      "path": "/Users/okuni/Projects/the/packages/ast/lib"
+    },
+    "name": "findByTypes",
+    "order": 2,
     "params": [
       {
         "type": {
@@ -111,21 +116,31 @@
         "description": "Found nodes"
       }
     ],
-    "meta": {
-      "lineno": 19,
-      "filename": "finder.js",
-      "path": "/Users/okuni/Projects/the/packages/ast/lib"
-    },
-    "order": 2
+    "scope": "static"
   },
   {
-    "id": "module:@the-/ast.parse",
-    "longname": "module:@the-/ast.parse",
-    "name": "parse",
-    "kind": "function",
-    "scope": "static",
     "description": "Parse source code",
+    "exceptions": [
+      {
+        "type": {
+          "names": [
+            "Error"
+          ]
+        },
+        "description": "Parser file error"
+      }
+    ],
+    "id": "module:@the-/ast.parse",
+    "kind": "function",
+    "longname": "module:@the-/ast.parse",
     "memberof": "module:@the-/ast",
+    "meta": {
+      "filename": "parse.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/ast/lib"
+    },
+    "name": "parse",
+    "order": 4,
     "params": [
       {
         "type": {
@@ -156,36 +171,21 @@
         "description": "parsed Object"
       }
     ],
-    "exceptions": [
-      {
-        "type": {
-          "names": [
-            "Error"
-          ]
-        },
-        "description": "Parser file error"
-      }
-    ],
-    "meta": {
-      "lineno": 1,
-      "filename": "parse.js",
-      "path": "/Users/okuni/Projects/the/packages/ast/lib"
-    },
-    "order": 4
+    "scope": "static"
   },
   {
-    "id": "module.exports",
-    "longname": "module.exports",
-    "name": "exports",
-    "kind": "function",
-    "scope": "static",
     "description": "explode() will take a visitor object with all of the various shorthands\nthat we support, and validates & normalizes it into a common format, ready\nto be used in traversal\n\nThe various shorthands are:\n* `Identifier() { ... }` -> `Identifier: { enter() { ... } }`\n* `\"Identifier|NumericLiteral\": { ... }` -> `Identifier: { ... }, NumericLiteral: { ... }`\n* Aliases in `babel-types`: e.g. `Property: { ... }` -> `ObjectProperty: { ... }, ClassProperty: { ... }`\n\nOther normalizations are:\n* `enter` and `exit` functions are wrapped in arrays, to ease merging of\n  visitors",
+    "id": "module.exports",
+    "kind": "function",
+    "longname": "module.exports",
     "memberof": "module",
     "meta": {
-      "lineno": 23,
       "filename": "explode.js",
+      "lineno": 23,
       "path": "/Users/okuni/Projects/the/packages/ast/lib/walk"
     },
-    "order": 7
+    "name": "exports",
+    "order": 7,
+    "scope": "static"
   }
 ]

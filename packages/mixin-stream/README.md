@@ -96,9 +96,13 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [compose(mixins)](./doc/api/api.md#compose)
-- [withDebug(Base)](./doc/api/api.md#withDebug)
+
+- global
+  - [compose(mixins)](./doc/api/api.md#compose)
+  - [withDebug(Base)](./doc/api/api.md#withDebug)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

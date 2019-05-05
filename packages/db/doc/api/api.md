@@ -5,7 +5,7 @@
 ## @the-/db
 DB for the-framework
 
-**Version**: 15.4.2  
+**Version**: 15.4.3  
 **License**: MIT  
 
 * [@the-/db](#module_@the-/db)
@@ -13,7 +13,7 @@ DB for the-framework
         * [.TheDB](#module_@the-/db.TheDB) ⇐ [<code>CascadeMixed</code>](#module_@the-/db.cascadeMix..CascadeMixed)
             * [new TheDB(config)](#new_module_@the-/db.TheDB_new)
             * [.hooksFromMapping(HookMapping)](#module_@the-/db.TheDB+hooksFromMapping)
-            * [.load(ResourceClass, resourceName)](#module_@the-/db.TheDB+load) ⇒ <code>ClayResource</code>
+            * [.load(ResourceClass, resourceName)](#module_@the-/db.TheDB+load) ⇒ <code>Object</code>
             * [.loadFromMapping(ResourceMapping)](#module_@the-/db.TheDB+loadFromMapping)
             * [.pluginFromMapping(PluginMapping)](#module_@the-/db.TheDB+pluginFromMapping)
             * [.unref()](#module_@the-/db.TheDB+unref) ⇒ <code>TheDB</code>
@@ -26,7 +26,7 @@ DB for the-framework
             * [.stopRefreshLoop()](#module_@the-/db.refreshMix..RefreshMixed+stopRefreshLoop)
             * [.waitToRefresh(entityRef, [options])](#module_@the-/db.refreshMix..RefreshMixed+waitToRefresh) ⇒ <code>Promise.&lt;boolean&gt;</code>
             * [.assertResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+assertResource)
-            * [.getResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+getResource) ⇒ <code>TheResource</code>
+            * [.getResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+getResource) ⇒ <code>Object</code>
             * [.hasResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+hasResource) ⇒ <code>boolean</code>
         * [.TheDBBase](#module_@the-/db.TheDBBase)
         * [.TheLogResource](#module_@the-/db.TheLogResource)
@@ -61,7 +61,7 @@ DB for the-framework
         * [.resourceMix()](#module_@the-/db.resourceMix)
             * [~ResourceMixed](#module_@the-/db.resourceMix..ResourceMixed)
                 * [.assertResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+assertResource)
-                * [.getResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+getResource) ⇒ <code>TheResource</code>
+                * [.getResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+getResource) ⇒ <code>Object</code>
                 * [.hasResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+hasResource) ⇒ <code>boolean</code>
     * _inner_
         * [~ExportImportMixed](#module_@the-/db..ExportImportMixed)
@@ -77,7 +77,7 @@ DB for the-framework
 * [.TheDB](#module_@the-/db.TheDB) ⇐ [<code>CascadeMixed</code>](#module_@the-/db.cascadeMix..CascadeMixed)
     * [new TheDB(config)](#new_module_@the-/db.TheDB_new)
     * [.hooksFromMapping(HookMapping)](#module_@the-/db.TheDB+hooksFromMapping)
-    * [.load(ResourceClass, resourceName)](#module_@the-/db.TheDB+load) ⇒ <code>ClayResource</code>
+    * [.load(ResourceClass, resourceName)](#module_@the-/db.TheDB+load) ⇒ <code>Object</code>
     * [.loadFromMapping(ResourceMapping)](#module_@the-/db.TheDB+loadFromMapping)
     * [.pluginFromMapping(PluginMapping)](#module_@the-/db.TheDB+pluginFromMapping)
     * [.unref()](#module_@the-/db.TheDB+unref) ⇒ <code>TheDB</code>
@@ -90,7 +90,7 @@ DB for the-framework
     * [.stopRefreshLoop()](#module_@the-/db.refreshMix..RefreshMixed+stopRefreshLoop)
     * [.waitToRefresh(entityRef, [options])](#module_@the-/db.refreshMix..RefreshMixed+waitToRefresh) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.assertResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+assertResource)
-    * [.getResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+getResource) ⇒ <code>TheResource</code>
+    * [.getResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+getResource) ⇒ <code>Object</code>
     * [.hasResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+hasResource) ⇒ <code>boolean</code>
 
 <a name="new_module_@the-/db.TheDB_new"></a>
@@ -125,11 +125,11 @@ Register hooks from mapping
 
 <a name="module_@the-/db.TheDB+load"></a>
 
-#### theDB.load(ResourceClass, resourceName) ⇒ <code>ClayResource</code>
+#### theDB.load(ResourceClass, resourceName) ⇒ <code>Object</code>
 Register resource form Resource Class
 
 **Kind**: instance method of [<code>TheDB</code>](#module_@the-/db.TheDB)  
-**Returns**: <code>ClayResource</code> - Loaded resource class  
+**Returns**: <code>Object</code> - Loaded resource instance  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -263,10 +263,11 @@ Check if resource exists
 
 <a name="module_@the-/db.resourceMix..ResourceMixed+getResource"></a>
 
-#### theDB.getResource(resourceName) ⇒ <code>TheResource</code>
+#### theDB.getResource(resourceName) ⇒ <code>Object</code>
 Get resource with name
 
 **Kind**: instance method of [<code>TheDB</code>](#module_@the-/db.TheDB)  
+**Returns**: <code>Object</code> - Resource instance  
 
 | Param | Type |
 | --- | --- |
@@ -519,7 +520,7 @@ Wait until refresh
 * [.resourceMix()](#module_@the-/db.resourceMix)
     * [~ResourceMixed](#module_@the-/db.resourceMix..ResourceMixed)
         * [.assertResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+assertResource)
-        * [.getResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+getResource) ⇒ <code>TheResource</code>
+        * [.getResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+getResource) ⇒ <code>Object</code>
         * [.hasResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+hasResource) ⇒ <code>boolean</code>
 
 <a name="module_@the-/db.resourceMix..ResourceMixed"></a>
@@ -529,7 +530,7 @@ Wait until refresh
 
 * [~ResourceMixed](#module_@the-/db.resourceMix..ResourceMixed)
     * [.assertResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+assertResource)
-    * [.getResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+getResource) ⇒ <code>TheResource</code>
+    * [.getResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+getResource) ⇒ <code>Object</code>
     * [.hasResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+hasResource) ⇒ <code>boolean</code>
 
 <a name="module_@the-/db.resourceMix..ResourceMixed+assertResource"></a>
@@ -549,10 +550,11 @@ Check if resource exists
 
 <a name="module_@the-/db.resourceMix..ResourceMixed+getResource"></a>
 
-##### resourceMixed.getResource(resourceName) ⇒ <code>TheResource</code>
+##### resourceMixed.getResource(resourceName) ⇒ <code>Object</code>
 Get resource with name
 
 **Kind**: instance method of [<code>ResourceMixed</code>](#module_@the-/db.resourceMix..ResourceMixed)  
+**Returns**: <code>Object</code> - Resource instance  
 
 | Param | Type |
 | --- | --- |
@@ -588,4 +590,3 @@ Run database migration
 | Param | Type | Description |
 | --- | --- | --- |
 | handlers | <code>Object.&lt;string, function()&gt;</code> | Migration handler for each versions |
-

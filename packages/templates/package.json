@@ -42,5 +42,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
   },
-  "version": "15.4.10"
+  "version": "15.4.11"
 }

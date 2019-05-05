@@ -109,25 +109,28 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [#add(pattern,checker)](./doc/api/api.md#module_@the-/lint.TheLint#add)
-- [#run()](./doc/api/api.md#module_@the-/lint.TheLint#run)
-- [.create(args)](./doc/api/api.md#module_@the-/lint.create)
-- [.default()](./doc/api/api.md#module_@the-/lint.default)
-- [.callRule(config,keypathArguments)](./doc/api/api.md#module_@the-/lint.rules.callRule)
-- [.contentRule(config)](./doc/api/api.md#module_@the-/lint.rules.contentRule)
-- [.decorateRule(config)](./doc/api/api.md#module_@the-/lint.rules.decorateRule)
-- [.depsRule(config)](./doc/api/api.md#module_@the-/lint.rules.depsRule)
-- [.filenameRule(config)](./doc/api/api.md#module_@the-/lint.rules.filenameRule)
-- [.moduleRule(config)](./doc/api/api.md#module_@the-/lint.rules.moduleRule)
-- [.propRule(config)](./doc/api/api.md#module_@the-/lint.rules.propRule)
-- [.usageRule(config)](./doc/api/api.md#module_@the-/lint.rules.usageRule)
-### class
-- [.TheLint](./doc/api/api.md#module_@the-/lint.TheLint)
-- [.LintCache](./doc/api/api.md#module_@the-/lint.helpers.LintCache)
-### namespace
-- [.helpers](./doc/api/api.md#module_@the-/lint.helpers)
-- [.rules](./doc/api/api.md#module_@the-/lint.rules)
+
+- module:@the-/lint
+  - [.create(args)](./doc/api/api.md#module_@the-/lint.create)
+  - [.default()](./doc/api/api.md#module_@the-/lint.default)
+  - [.TheLint](./doc/api/api.md#module_@the-/lint.TheLint)
+- module:@the-/lint.helpers
+  - [.LintCache](./doc/api/api.md#module_@the-/lint.helpers.LintCache)
+- module:@the-/lint.rules
+  - [.callRule(config,keypathArguments)](./doc/api/api.md#module_@the-/lint.rules.callRule)
+  - [.contentRule(config)](./doc/api/api.md#module_@the-/lint.rules.contentRule)
+  - [.decorateRule(config)](./doc/api/api.md#module_@the-/lint.rules.decorateRule)
+  - [.depsRule(config)](./doc/api/api.md#module_@the-/lint.rules.depsRule)
+  - [.filenameRule(config)](./doc/api/api.md#module_@the-/lint.rules.filenameRule)
+  - [.moduleRule(config)](./doc/api/api.md#module_@the-/lint.rules.moduleRule)
+  - [.propRule(config)](./doc/api/api.md#module_@the-/lint.rules.propRule)
+  - [.usageRule(config)](./doc/api/api.md#module_@the-/lint.rules.usageRule)
+- module:@the-/lint.TheLint
+  - [#add(pattern,checker)](./doc/api/api.md#module_@the-/lint.TheLint#add)
+  - [#run()](./doc/api/api.md#module_@the-/lint.TheLint#run)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

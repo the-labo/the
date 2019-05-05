@@ -11,7 +11,6 @@ const {
   constants: { NodeTypes },
   finder,
   parse,
-  walk,
 } = require('@the-/ast')
 const {
   cleanupEmptyArrayPatternParamsOnFunctionNode,
@@ -33,21 +32,6 @@ function processJSUnused(content, options = {}) {
     const parsed = parse(content, options)
     const { enclosedRange, get, replace } = contentAccess(content)
 
-    const ObjectPatterns = []
-    const ArrayPatterns = []
-    const VariableDeclarations = []
-    const ConsumingIdentifiers = []
-    const ImportDeclarations = []
-    walk.ancestor(parsed, {
-      ArrayPattern: (node) => ArrayPatterns.push(node),
-      Identifier: (node) => {
-        ConsumingIdentifiers.push(node)
-      },
-      ImportDeclaration: (node) => ImportDeclarations.push(node),
-      JSXIdentifier: (node) => ConsumingIdentifiers.push(node),
-      ObjectPattern: (node) => ObjectPatterns.push(node),
-      VariableDeclaration: (node) => VariableDeclarations.push(node),
-    })
     {
       const FunctionNodes = finder.findByTypes(parsed, [
         NodeTypes.FunctionDeclaration,
@@ -95,34 +79,63 @@ function processJSUnused(content, options = {}) {
       }
     }
 
-    const converted =
-      applyToNodes(ObjectPatterns, (ObjectPattern) =>
-        cleanupUnusedOnObjectPatternNode(ObjectPattern, {
-          ConsumingIdentifiers,
-          replace,
-        }),
-      ) ||
-      applyToNodes(ArrayPatterns, (ArrayPattern) =>
-        cleanupUnusedOnArrayPatternNode(ArrayPattern, {
-          ConsumingIdentifiers,
-          replace,
-        }),
-      ) ||
-      applyToNodes(VariableDeclarations, (VariableDeclaration) =>
-        cleanupUnusedOnVariableNode(VariableDeclaration, {
-          ConsumingIdentifiers,
-          replace,
-        }),
-      ) ||
-      applyToNodes(ImportDeclarations, (ImportDeclaration) =>
-        cleanupUnusedOnImportNode(ImportDeclaration, {
-          ConsumingIdentifiers,
-          get,
-          replace,
-        }),
-      )
-    if (converted) {
-      return converted
+    {
+      const Contexts = [
+        parsed,
+        ...finder.findByTypes(parsed, [
+          NodeTypes.ClassMethod,
+          NodeTypes.FunctionDeclaration,
+        ]),
+      ]
+      for (const Context of Contexts) {
+        const ObjectPatterns = finder.findByTypes(Context, [
+          NodeTypes.ObjectPattern,
+        ])
+        const ArrayPatterns = finder.findByTypes(Context, [
+          NodeTypes.ArrayPattern,
+        ])
+        const VariableDeclarations = finder.findByTypes(Context, [
+          NodeTypes.VariableDeclaration,
+        ])
+        const ConsumingIdentifiers = finder.findByTypes(Context, [
+          NodeTypes.Identifier,
+          NodeTypes.JSXIdentifier,
+        ])
+        const ImportDeclarations = finder.findByTypes(Context, [
+          NodeTypes.Identifier,
+          NodeTypes.ImportDeclaration,
+        ])
+
+        const converted =
+          applyToNodes(ObjectPatterns, (ObjectPattern) =>
+            cleanupUnusedOnObjectPatternNode(ObjectPattern, {
+              ConsumingIdentifiers,
+              replace,
+            }),
+          ) ||
+          applyToNodes(ArrayPatterns, (ArrayPattern) =>
+            cleanupUnusedOnArrayPatternNode(ArrayPattern, {
+              ConsumingIdentifiers,
+              replace,
+            }),
+          ) ||
+          applyToNodes(VariableDeclarations, (VariableDeclaration) =>
+            cleanupUnusedOnVariableNode(VariableDeclaration, {
+              ConsumingIdentifiers,
+              replace,
+            }),
+          ) ||
+          applyToNodes(ImportDeclarations, (ImportDeclaration) =>
+            cleanupUnusedOnImportNode(ImportDeclaration, {
+              ConsumingIdentifiers,
+              get,
+              replace,
+            }),
+          )
+        if (converted) {
+          return converted
+        }
+      }
     }
     return content
   })

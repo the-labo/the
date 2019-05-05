@@ -98,19 +98,24 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### typedef
-- [GenerateResult](./doc/api/api.md#GenerateResult)
-- [GenerateDirResult](./doc/api/api.md#GenerateDirResult)
-### function
-- [#generateDirSync(options)](./doc/api/api.md#module_@the-/tmp.TheTmp#generateDirSync)
-- [#generateSync(options)](./doc/api/api.md#module_@the-/tmp.TheTmp#generateSync)
-- [#generate(options)](./doc/api/api.md#module_@the-/tmp.TheTmp#generate)
-- [#generateDir(options)](./doc/api/api.md#module_@the-/tmp.TheTmp#generateDir)
-- [#while(handler,options)](./doc/api/api.md#module_@the-/tmp.TheTmp#while)
-- [#whileDir(handler,options)](./doc/api/api.md#module_@the-/tmp.TheTmp#whileDir)
-- [.create(args)](./doc/api/api.md#module_@the-/tmp.create)
-### class
-- [.TheTmp](./doc/api/api.md#module_@the-/tmp.TheTmp)
+
+- global
+  - [GenerateDirResult](./doc/api/api.md#GenerateDirResult)
+  - [GenerateResult](./doc/api/api.md#GenerateResult)
+- module:@the-/tmp
+  - [.create(args)](./doc/api/api.md#module_@the-/tmp.create)
+  - [.default()](./doc/api/api.md#module_@the-/tmp.default)
+  - [.TheTmp](./doc/api/api.md#module_@the-/tmp.TheTmp)
+- module:@the-/tmp.TheTmp
+  - [#generate(options)](./doc/api/api.md#module_@the-/tmp.TheTmp#generate)
+  - [#generateDir(options)](./doc/api/api.md#module_@the-/tmp.TheTmp#generateDir)
+  - [#generateDirSync(options)](./doc/api/api.md#module_@the-/tmp.TheTmp#generateDirSync)
+  - [#generateSync(options)](./doc/api/api.md#module_@the-/tmp.TheTmp#generateSync)
+  - [#while(handler,options)](./doc/api/api.md#module_@the-/tmp.TheTmp#while)
+  - [#whileDir(handler,options)](./doc/api/api.md#module_@the-/tmp.TheTmp#whileDir)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

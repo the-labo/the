@@ -88,11 +88,15 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [colorWithAlpha(color,alpha)](./doc/api/api.md#colorWithAlpha)
-- [colorWithText(text,options)](./doc/api/api.md#colorWithText)
-- [rotatedColorsFor(base,options)](./doc/api/api.md#rotatedColorsFor)
-- [textColorFor(backgroundColor)](./doc/api/api.md#textColorFor)
+
+- module:@the-/util-color
+  - [.colorWithAlpha(color,alpha)](./doc/api/api.md#module_@the-/util-color.colorWithAlpha)
+  - [.colorWithText(text,options)](./doc/api/api.md#module_@the-/util-color.colorWithText)
+  - [.rotatedColorsFor(base,options)](./doc/api/api.md#module_@the-/util-color.rotatedColorsFor)
+  - [.textColorFor(backgroundColor)](./doc/api/api.md#module_@the-/util-color.textColorFor)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

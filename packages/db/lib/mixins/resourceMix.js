@@ -26,7 +26,7 @@ function resourceMix(Class) {
     /**
      * Get resource with name
      * @param {string} resourceName
-     * @returns {?TheResource}
+     * @returns {?Object} Resource instance
      */
     getResource(resourceName) {
       const has = this.resources.has(resourceName)

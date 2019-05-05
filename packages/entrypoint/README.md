@@ -84,15 +84,19 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [mount(element,containerId,options)](./doc/api/api.md#mount)
-- [online(options)](./doc/api/api.md#online)
-- [patch()](./doc/api/api.md#patch)
-- [quelize(values)](./doc/api/api.md#quelize)
-- [secure(options)](./doc/api/api.md#secure)
-- [singleton(options)](./doc/api/api.md#singleton)
-- [workers(swUrls)](./doc/api/api.md#workers)
-- [createStyleElement()](./doc/api/api.md#createStyleElement)
+
+- global
+  - [createStyleElement()](./doc/api/api.md#createStyleElement)
+  - [mount(element,containerId,options)](./doc/api/api.md#mount)
+  - [online(options)](./doc/api/api.md#online)
+  - [patch()](./doc/api/api.md#patch)
+  - [quelize(values)](./doc/api/api.md#quelize)
+  - [secure(options)](./doc/api/api.md#secure)
+  - [singleton(options)](./doc/api/api.md#singleton)
+  - [workers(swUrls)](./doc/api/api.md#workers)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

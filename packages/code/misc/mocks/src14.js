@@ -119,9 +119,7 @@ class ListScene extends ListSceneBase {
   }
 
   async doSyncOne(id) {
-    const {
-      entities: [one],
-    } = await this.dealWith({
+    const {} = await this.dealWith({
       filter: { id },
       page: { number: 1, size: 1 },
     })

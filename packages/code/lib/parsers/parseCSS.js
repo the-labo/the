@@ -1,12 +1,12 @@
 /**
- * @memberof module:@the-/code/lib/parsers
+ * @memberof module:@the-/code.parsers
  * @function parseCSS
  */
 'use strict'
 
 const postcss = require('postcss')
 
-/** @lends parseCSS */
+/** @lends module:@the-/code.parsers.parseCSS */
 async function parseCSS(content, options = {}) {
   return postcss.parse(content)
 }

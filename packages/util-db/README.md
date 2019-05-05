@@ -84,9 +84,13 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [.evalScript()](./doc/api/api.md#module_@the-/util-db.evalScript)
-- [.toLowerKeys(obj)](./doc/api/api.md#module_@the-/util-db.toLowerKeys)
+
+- module:@the-/util-db
+  - [.evalScript()](./doc/api/api.md#module_@the-/util-db.evalScript)
+  - [.toLowerKeys(obj)](./doc/api/api.md#module_@the-/util-db.toLowerKeys)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

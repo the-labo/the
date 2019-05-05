@@ -93,8 +93,12 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [readFile(file)](./doc/api/api.md#readFile)
+
+- global
+  - [readFile(file)](./doc/api/api.md#readFile)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

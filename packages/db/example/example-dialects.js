@@ -8,6 +8,8 @@ const { TheDB } = require('@the-/db')
     dialect: 'sqlite', // Uses "clay-driver-sqlite" package
     storage: 'var/my-app.db', // File path to save
   })
+  sqlite.setup()
+  /* ... */
 }
 
 // Using json
@@ -16,6 +18,8 @@ const { TheDB } = require('@the-/db')
     dialect: 'json', // Uses "clay-driver-json" package
     storage: 'var/my-app.json', // File path to save
   })
+  json.setup()
+  /* ... */
 }
 
 // Using mysql
@@ -27,4 +31,6 @@ const { TheDB } = require('@the-/db')
     password: 'xxxxxxxxxxx',
     username: 'user01',
   })
+  mysql.setup()
+  /* ... */
 }

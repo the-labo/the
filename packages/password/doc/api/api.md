@@ -33,4 +33,4 @@ Create a ThePassword instance
 ### password.default()
 Alias of [@the-/password](#module_@the-/password)
 
-**Kind**: static method of [<code>@the-/password</code>](#module_@the-/password)  
+**Kind**: static method of [<code>@the-/password</code>](#module_@the-/password)

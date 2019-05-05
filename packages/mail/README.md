@@ -98,18 +98,22 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [toLowerKeys()](./doc/api/api.md#toLowerKeys)
-- [#send()](./doc/api/api.md#module_@the-/mail.TheMail#send)
-- [.create(args)](./doc/api/api.md#module_@the-/mail.create)
-- [.sendMock()](./doc/api/api.md#module_@the-/mail.sending.sendMock)
-- [.sendSendgrid()](./doc/api/api.md#module_@the-/mail.sending.sendSendgrid)
-- [.sendSMTP()](./doc/api/api.md#module_@the-/mail.sending.sendSMTP)
-### class
-- [.TheMail](./doc/api/api.md#module_@the-/mail.TheMail)
-### namespace
-- [.helpers](./doc/api/api.md#module_@the-/mail.helpers)
-- [.sending](./doc/api/api.md#module_@the-/mail.sending)
+
+- module:@the-/mail
+  - [.create(args)](./doc/api/api.md#module_@the-/mail.create)
+  - [.default()](./doc/api/api.md#module_@the-/mail.default)
+  - [.TheMail](./doc/api/api.md#module_@the-/mail.TheMail)
+- module:@the-/mail.sending
+  - [.sendMock()](./doc/api/api.md#module_@the-/mail.sending.sendMock)
+  - [.sendSendgrid()](./doc/api/api.md#module_@the-/mail.sending.sendSendgrid)
+  - [.sendSMTP()](./doc/api/api.md#module_@the-/mail.sending.sendSMTP)
+- module:@the-/mail.TheMail
+  - [#send()](./doc/api/api.md#module_@the-/mail.TheMail#send)
+- global
+  - [toLowerKeys()](./doc/api/api.md#toLowerKeys)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

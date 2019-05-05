@@ -17,8 +17,7 @@ const t = require('@babel/types')
  * * Aliases in `babel-types`: e.g. `Property: { ... }` -> `ObjectProperty: { ... }, ClassProperty: { ... }`
  *
  * Other normalizations are:
- * * `enter` and `exit` functions are wrapped in arrays, to ease merging of
- *   visitors
+ * * `enter` and `exit` functions are wrapped in arrays, to ease merging of visitors
  */
 module.exports = function explode(visitor) {
   if (visitor._exploded) return visitor

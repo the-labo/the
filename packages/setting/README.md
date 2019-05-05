@@ -94,19 +94,23 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [#del(names)](./doc/api/api.md#TheSetting#del)
-- [#get(name)](./doc/api/api.md#TheSetting#get)
-- [#set(values)](./doc/api/api.md#TheSetting#set)
-- [.create(args)](./doc/api/api.md#module_@the-/setting.create)
-- [.lockMix()](./doc/api/api.md#module_@the-/setting.mixins.lockMix)
-### class
-- [.TheSetting](./doc/api/api.md#module_@the-/setting.TheSetting)
-- [.TheSettingBase](./doc/api/api.md#module_@the-/setting.TheSettingBase)
-- [~LockMixed](./doc/api/api.md#module_@the-/setting.mixins.lockMix~LockMixed)
-### namespace
-- [.helpers](./doc/api/api.md#module_@the-/setting.helpers)
-- [.mixins](./doc/api/api.md#module_@the-/setting.mixins)
+
+- module:@the-/setting
+  - [.create(args)](./doc/api/api.md#module_@the-/setting.create)
+  - [.default()](./doc/api/api.md#module_@the-/setting.default)
+  - [.TheSetting](./doc/api/api.md#module_@the-/setting.TheSetting)
+  - [.TheSettingBase](./doc/api/api.md#module_@the-/setting.TheSettingBase)
+- module:@the-/setting.mixins
+  - [.lockMix()](./doc/api/api.md#module_@the-/setting.mixins.lockMix)
+- module:@the-/setting.mixins.lockMix
+  - [~LockMixed](./doc/api/api.md#module_@the-/setting.mixins.lockMix~LockMixed)
+- TheSetting
+  - [#del(names)](./doc/api/api.md#TheSetting#del)
+  - [#get(name)](./doc/api/api.md#TheSetting#get)
+  - [#set(values)](./doc/api/api.md#TheSetting#set)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

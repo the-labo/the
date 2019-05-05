@@ -91,22 +91,26 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [#decrypt()](./doc/api/api.md#module_@the-/secret.TheSecret#decrypt)
-- [#encrypt()](./doc/api/api.md#module_@the-/secret.TheSecret#encrypt)
-- [#get(name)](./doc/api/api.md#module_@the-/secret.TheSecret#get)
-- [#writeout(filename)](./doc/api/api.md#module_@the-/secret.TheSecret#writeout)
-- [.create(args)](./doc/api/api.md#module_@the-/secret.create)
-- [.theSecret()](./doc/api/api.md#module_@the-/secret.theSecret)
-- [.cryptoMix()](./doc/api/api.md#module_@the-/secret.mixins.cryptoMix)
-- [.lockMix()](./doc/api/api.md#module_@the-/secret.mixins.lockMix)
-### class
-- [.TheSecret](./doc/api/api.md#module_@the-/secret.TheSecret)
-- [~CryptoMixed](./doc/api/api.md#module_@the-/secret.mixins.cryptoMix~CryptoMixed)
-- [~LockMixed](./doc/api/api.md#module_@the-/secret.mixins.lockMix~LockMixed)
-### namespace
-- [.cipher](./doc/api/api.md#module_@the-/secret.helpers.cipher)
-- [.mixins](./doc/api/api.md#module_@the-/secret.mixins)
+
+- module:@the-/secret
+  - [.create(args)](./doc/api/api.md#module_@the-/secret.create)
+  - [.theSecret()](./doc/api/api.md#module_@the-/secret.theSecret)
+  - [.TheSecret](./doc/api/api.md#module_@the-/secret.TheSecret)
+- module:@the-/secret.mixins
+  - [.cryptoMix()](./doc/api/api.md#module_@the-/secret.mixins.cryptoMix)
+  - [.lockMix()](./doc/api/api.md#module_@the-/secret.mixins.lockMix)
+- module:@the-/secret.mixins.cryptoMix
+  - [~CryptoMixed](./doc/api/api.md#module_@the-/secret.mixins.cryptoMix~CryptoMixed)
+- module:@the-/secret.mixins.lockMix
+  - [~LockMixed](./doc/api/api.md#module_@the-/secret.mixins.lockMix~LockMixed)
+- module:@the-/secret.TheSecret
+  - [#decrypt()](./doc/api/api.md#module_@the-/secret.TheSecret#decrypt)
+  - [#encrypt()](./doc/api/api.md#module_@the-/secret.TheSecret#encrypt)
+  - [#get(name)](./doc/api/api.md#module_@the-/secret.TheSecret#get)
+  - [#writeout(filename)](./doc/api/api.md#module_@the-/secret.TheSecret#writeout)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

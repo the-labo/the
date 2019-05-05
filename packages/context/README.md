@@ -79,18 +79,22 @@ Usage
 
 ## API Guide
 
-### function
-- [default()](./doc/api/api.md#default)
-- [#del(name)](./doc/api/api.md#@the-/context.TheContext#del)
-- [#get(name,options)](./doc/api/api.md#@the-/context.TheContext#get)
-- [#set(values)](./doc/api/api.md#@the-/context.TheContext#set)
-- [.create(args)](./doc/api/api.md#module_@the-/context.create)
-- [.ContextRootFor()](./doc/api/api.md#module_@the-/context.helpers.ContextRootFor)
-### class
-- [.TheContext](./doc/api/api.md#@the-/context.TheContext)
-- [.ContextEntry](./doc/api/api.md#module_@the-/context.helpers.ContextEntry)
-### namespace
-- [.helpers](./doc/api/api.md#module_@the-/context.helpers)
+
+- @the-/context
+  - [.TheContext](./doc/api/api.md#@the-/context.TheContext)
+- @the-/context.TheContext
+  - [#del(name)](./doc/api/api.md#@the-/context.TheContext#del)
+  - [#get(name,options)](./doc/api/api.md#@the-/context.TheContext#get)
+  - [#set(values)](./doc/api/api.md#@the-/context.TheContext#set)
+- module:@the-/context
+  - [.create(args)](./doc/api/api.md#module_@the-/context.create)
+  - [.default()](./doc/api/api.md#module_@the-/context.default)
+- module:@the-/context.helpers
+  - [.ContextEntry](./doc/api/api.md#module_@the-/context.helpers.ContextEntry)
+  - [.ContextRootFor()](./doc/api/api.md#module_@the-/context.helpers.ContextRootFor)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

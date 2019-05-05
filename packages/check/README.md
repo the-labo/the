@@ -97,16 +97,20 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [.canTouch()](./doc/api/api.md#module_@the-/check.canTouch)
-- [.hasBin(binName,options)](./doc/api/api.md#module_@the-/check.hasBin)
-- [.isBrowser()](./doc/api/api.md#module_@the-/check.isBrowser)
-- [.isChrome()](./doc/api/api.md#module_@the-/check.isChrome)
-- [.isFirefox()](./doc/api/api.md#module_@the-/check.isFirefox)
-- [.isiOS()](./doc/api/api.md#module_@the-/check.isiOS)
-- [.isMacOS()](./doc/api/api.md#module_@the-/check.isMacOS)
-- [.isProduction()](./doc/api/api.md#module_@the-/check.isProduction)
-- [.unlessProduction(handler)](./doc/api/api.md#module_@the-/check.unlessProduction)
+
+- module:@the-/check
+  - [.canTouch()](./doc/api/api.md#module_@the-/check.canTouch)
+  - [.hasBin(binName,options)](./doc/api/api.md#module_@the-/check.hasBin)
+  - [.isBrowser()](./doc/api/api.md#module_@the-/check.isBrowser)
+  - [.isChrome()](./doc/api/api.md#module_@the-/check.isChrome)
+  - [.isFirefox()](./doc/api/api.md#module_@the-/check.isFirefox)
+  - [.isiOS()](./doc/api/api.md#module_@the-/check.isiOS)
+  - [.isMacOS()](./doc/api/api.md#module_@the-/check.isMacOS)
+  - [.isProduction()](./doc/api/api.md#module_@the-/check.isProduction)
+  - [.unlessProduction(handler)](./doc/api/api.md#module_@the-/check.unlessProduction)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

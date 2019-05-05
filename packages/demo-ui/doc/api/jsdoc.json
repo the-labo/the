@@ -1,73 +1,73 @@
 [
   {
-    "id": "module:@the-/demo-ui",
-    "longname": "module:@the-/demo-ui",
-    "name": "@the-/demo-ui",
-    "kind": "module",
     "description": "Demo of the-components",
-    "version": "15.4.0",
-    "typicalname": "demoUi",
+    "id": "module:@the-/demo-ui",
+    "kind": "module",
+    "longname": "module:@the-/demo-ui",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/demo-ui/lib"
     },
-    "order": 0
+    "name": "@the-/demo-ui",
+    "order": 0,
+    "typicalname": "demoUi",
+    "version": "15.4.0"
   },
   {
-    "id": "module:@the-/demo-ui.TheDemoUi()",
-    "longname": "module:@the-/demo-ui.TheDemoUi",
-    "name": "TheDemoUi",
-    "kind": "constructor",
     "description": "Demo of the-components",
+    "id": "module:@the-/demo-ui.TheDemoUi()",
+    "kind": "constructor",
+    "longname": "module:@the-/demo-ui.TheDemoUi",
     "memberof": "module:@the-/demo-ui.TheDemoUi",
+    "name": "TheDemoUi",
     "order": 2
   },
   {
-    "id": "module:@the-/demo-ui.TheDemoUi",
-    "longname": "module:@the-/demo-ui.TheDemoUi",
-    "name": "TheDemoUi",
-    "kind": "class",
-    "scope": "static",
     "augments": [
       "React.Component"
     ],
+    "id": "module:@the-/demo-ui.TheDemoUi",
+    "kind": "class",
+    "longname": "module:@the-/demo-ui.TheDemoUi",
     "memberof": "module:@the-/demo-ui",
     "meta": {
-      "lineno": 1,
       "filename": "TheDemoUi.jsx",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/demo-ui/lib"
     },
-    "order": 1
+    "name": "TheDemoUi",
+    "order": 1,
+    "scope": "static"
   },
   {
-    "id": "TheDemoUiStyle.propTypes.options",
-    "longname": "TheDemoUiStyle.propTypes.options",
-    "name": "options",
-    "kind": "member",
-    "scope": "static",
     "description": "Style options",
+    "id": "TheDemoUiStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheDemoUiStyle.propTypes.options",
     "memberof": "TheDemoUiStyle.propTypes",
     "meta": {
-      "lineno": 26,
       "filename": "TheDemoUiStyle.jsx",
+      "lineno": 26,
       "path": "/Users/okuni/Projects/the/packages/demo-ui/lib"
     },
-    "order": 4
+    "name": "options",
+    "order": 4,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/demo-ui.TheDemoUiStyle",
-    "longname": "module:@the-/demo-ui.TheDemoUiStyle",
-    "name": "TheDemoUiStyle",
-    "kind": "function",
-    "scope": "static",
     "description": "Style for TheDemoUi",
+    "id": "module:@the-/demo-ui.TheDemoUiStyle",
+    "kind": "function",
+    "longname": "module:@the-/demo-ui.TheDemoUiStyle",
     "memberof": "module:@the-/demo-ui",
     "meta": {
-      "lineno": 1,
       "filename": "TheDemoUiStyle.jsx",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/demo-ui/lib"
     },
-    "order": 3
+    "name": "TheDemoUiStyle",
+    "order": 3,
+    "scope": "static"
   }
 ]

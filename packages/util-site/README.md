@@ -89,26 +89,30 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [appendQueryToSearch(query)](./doc/api/api.md#appendQueryToSearch)
-- [countSuffix(count,options)](./doc/api/api.md#countSuffix)
-- [createStyleElement(css,options)](./doc/api/api.md#createStyleElement)
-- [envOf()](./doc/api/api.md#envOf)
-- [hasMoreFor()](./doc/api/api.md#hasMoreFor)
-- [isEmail(email)](./doc/api/api.md#isEmail)
-- [isPhoneNumber(value)](./doc/api/api.md#isPhoneNumber)
-- [formatString()](./doc/api/api.md#formatString)
-- [queryFromSearch(search)](./doc/api/api.md#queryFromSearch)
-- [refOf()](./doc/api/api.md#refOf)
-- [scrollToElement(element)](./doc/api/api.md#scrollToElement)
-- [seatAccess()](./doc/api/api.md#seatAccess)
-- [containerNameFor(name,bytes)](./doc/api/api.md#containerNameFor)
-- [networkNameFor(name,bytes)](./doc/api/api.md#networkNameFor)
-- [portNumberFor(name,base,increment)](./doc/api/api.md#portNumberFor)
-- [portNumberRangeFor(name,base,length)](./doc/api/api.md#portNumberRangeFor)
-- [processNameFor(name,bytes)](./doc/api/api.md#processNameFor)
-- [secretFor(name,bytes)](./doc/api/api.md#secretFor)
-- [userNameFor(name,bytes)](./doc/api/api.md#userNameFor)
+
+- global
+  - [appendQueryToSearch(query)](./doc/api/api.md#appendQueryToSearch)
+  - [containerNameFor(name,bytes)](./doc/api/api.md#containerNameFor)
+  - [countSuffix(count,options)](./doc/api/api.md#countSuffix)
+  - [createStyleElement(css,options)](./doc/api/api.md#createStyleElement)
+  - [envOf()](./doc/api/api.md#envOf)
+  - [formatString()](./doc/api/api.md#formatString)
+  - [hasMoreFor()](./doc/api/api.md#hasMoreFor)
+  - [isEmail(email)](./doc/api/api.md#isEmail)
+  - [isPhoneNumber(value)](./doc/api/api.md#isPhoneNumber)
+  - [networkNameFor(name,bytes)](./doc/api/api.md#networkNameFor)
+  - [portNumberFor(name,base,increment)](./doc/api/api.md#portNumberFor)
+  - [portNumberRangeFor(name,base,length)](./doc/api/api.md#portNumberRangeFor)
+  - [processNameFor(name,bytes)](./doc/api/api.md#processNameFor)
+  - [queryFromSearch(search)](./doc/api/api.md#queryFromSearch)
+  - [refOf()](./doc/api/api.md#refOf)
+  - [scrollToElement(element)](./doc/api/api.md#scrollToElement)
+  - [seatAccess()](./doc/api/api.md#seatAccess)
+  - [secretFor(name,bytes)](./doc/api/api.md#secretFor)
+  - [userNameFor(name,bytes)](./doc/api/api.md#userNameFor)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -4,8 +4,8 @@
  */
 'use strict'
 
-const Readme = require('../lib/Readme')
 const coz = require('coz')
+const Readme = require('../lib/Readme')
 const jsdoc = require('../misc/mocks/mock-jsdoc')
 
 describe('readme', () => {
@@ -16,14 +16,14 @@ describe('readme', () => {
   it('Do test', () => {
     coz.render(
       Readme({
+        api: {
+          jsdoc,
+          path: `${__dirname}/../tmp/foo/test-api.md`,
+        },
         path: `${__dirname}/../tmp/foo/test-README.md`,
         pkg: {},
-        sections: '*.md.hbs',
-        api: {
-          path: `${__dirname}/../tmp/foo/test-api.md`,
-          jsdoc,
-        },
         repo: 'https://example.com',
+        sections: '*.md.hbs',
       }),
     )
   })

@@ -50,5 +50,4 @@ Alias of [create](#module_@the-/assert.create)
 
 | Param | Type |
 | --- | --- |
-| ...args | <code>\*</code> | 
-
+| ...args | <code>\*</code> |

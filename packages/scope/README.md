@@ -106,56 +106,70 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [default()](./doc/api/api.md#default)
-- [set(index,entry)](./doc/api/api.md#set)
-- [reset(values)](./doc/api/api.md#reset)
-- [#concat(values)](./doc/api/api.md#ArrayScope#concat)
-- [#pop()](./doc/api/api.md#ArrayScope#pop)
-- [#push(entry)](./doc/api/api.md#ArrayScope#push)
-- [#reset(values)](./doc/api/api.md#ArrayScope#reset)
-- [#shift()](./doc/api/api.md#ArrayScope#shift)
-- [#unshift(entry)](./doc/api/api.md#ArrayScope#unshift)
-- [#toggle(value)](./doc/api/api.md#BooleanScope#toggle)
-- [#false()](./doc/api/api.md#module_@the-/scope.scopes.BooleanScope#false)
-- [#set()](./doc/api/api.md#module_@the-/scope.scopes.BooleanScope#set)
-- [#true()](./doc/api/api.md#module_@the-/scope.scopes.BooleanScope#true)
-- [#decrement(amount)](./doc/api/api.md#NumberScope#decrement)
-- [#increment(amount)](./doc/api/api.md#NumberScope#increment)
-- [#set(n)](./doc/api/api.md#NumberScope#set)
-- [#isNegative()](./doc/api/api.md#module_@the-/scope.scopes.NumberScope#isNegative)
-- [#isPositive()](./doc/api/api.md#module_@the-/scope.scopes.NumberScope#isPositive)
-- [#isZero()](./doc/api/api.md#module_@the-/scope.scopes.NumberScope#isZero)
-- [#del(names)](./doc/api/api.md#ObjectScope#del)
-- [#drop()](./doc/api/api.md#ObjectScope#drop)
-- [#set(name,value)](./doc/api/api.md#ObjectScope#set)
-- [#get()](./doc/api/api.md#module_@the-/scope.scopes.ObjectScope#get)
-- [#has()](./doc/api/api.md#module_@the-/scope.scopes.ObjectScope#has)
-- [#get(namepath)](./doc/api/api.md#module_@the-/scope.scopes.ScopeScope#get)
-- [#has(namepath)](./doc/api/api.md#module_@the-/scope.scopes.ScopeScope#has)
-- [#init(names)](./doc/api/api.md#module_@the-/scope.scopes.ScopeScope#init)
-- [#of(namepath)](./doc/api/api.md#module_@the-/scope.scopes.ScopeScope#of)
-- [#set(namepath,value)](./doc/api/api.md#module_@the-/scope.scopes.ScopeScope#set)
-- [#del()](./doc/api/api.md#StringScope#del)
-- [#replace(from,to)](./doc/api/api.md#StringScope#replace)
-- [#set(value)](./doc/api/api.md#StringScope#set)
-- [#del()](./doc/api/api.md#ValueScope#del)
-- [#set(value)](./doc/api/api.md#ValueScope#set)
-- [.create(args)](./doc/api/api.md#module_@the-/scope.create)
-- [.withDefault()](./doc/api/api.md#module_@the-/scope.scopes.Scope.withDefault)
-### class
-- [.TheScope](./doc/api/api.md#module_@the-/scope.TheScope)
-- [.ArrayScope](./doc/api/api.md#module_@the-/scope.scopes.ArrayScope)
-- [.BooleanScope](./doc/api/api.md#module_@the-/scope.scopes.BooleanScope)
-- [.NullScope](./doc/api/api.md#module_@the-/scope.scopes.NullScope)
-- [.NumberScope](./doc/api/api.md#module_@the-/scope.scopes.NumberScope)
-- [.ObjectScope](./doc/api/api.md#module_@the-/scope.scopes.ObjectScope)
-- [.Scope](./doc/api/api.md#module_@the-/scope.scopes.Scope)
-- [.ScopeScope](./doc/api/api.md#module_@the-/scope.scopes.ScopeScope)
-- [.StringScope](./doc/api/api.md#module_@the-/scope.scopes.StringScope)
-- [.ValueScope](./doc/api/api.md#module_@the-/scope.scopes.ValueScope)
-### namespace
-- [.scopes](./doc/api/api.md#module_@the-/scope.scopes)
+
+- ArrayScope
+  - [#concat(values)](./doc/api/api.md#ArrayScope#concat)
+  - [#pop()](./doc/api/api.md#ArrayScope#pop)
+  - [#push(entry)](./doc/api/api.md#ArrayScope#push)
+  - [#reset(values)](./doc/api/api.md#ArrayScope#reset)
+  - [#shift()](./doc/api/api.md#ArrayScope#shift)
+  - [#unshift(entry)](./doc/api/api.md#ArrayScope#unshift)
+- BooleanScope
+  - [#toggle(value)](./doc/api/api.md#BooleanScope#toggle)
+- module:@the-/scope
+  - [.create(args)](./doc/api/api.md#module_@the-/scope.create)
+  - [.default()](./doc/api/api.md#module_@the-/scope.default)
+  - [.TheScope](./doc/api/api.md#module_@the-/scope.TheScope)
+- module:@the-/scope.scopes
+  - [.ArrayScope](./doc/api/api.md#module_@the-/scope.scopes.ArrayScope)
+  - [.BooleanScope](./doc/api/api.md#module_@the-/scope.scopes.BooleanScope)
+  - [.NullScope](./doc/api/api.md#module_@the-/scope.scopes.NullScope)
+  - [.NumberScope](./doc/api/api.md#module_@the-/scope.scopes.NumberScope)
+  - [.ObjectScope](./doc/api/api.md#module_@the-/scope.scopes.ObjectScope)
+  - [.Scope](./doc/api/api.md#module_@the-/scope.scopes.Scope)
+  - [.ScopeScope](./doc/api/api.md#module_@the-/scope.scopes.ScopeScope)
+  - [.StringScope](./doc/api/api.md#module_@the-/scope.scopes.StringScope)
+  - [.ValueScope](./doc/api/api.md#module_@the-/scope.scopes.ValueScope)
+- module:@the-/scope.scopes.BooleanScope
+  - [#false()](./doc/api/api.md#module_@the-/scope.scopes.BooleanScope#false)
+  - [#set()](./doc/api/api.md#module_@the-/scope.scopes.BooleanScope#set)
+  - [#true()](./doc/api/api.md#module_@the-/scope.scopes.BooleanScope#true)
+- module:@the-/scope.scopes.NumberScope
+  - [#isNegative()](./doc/api/api.md#module_@the-/scope.scopes.NumberScope#isNegative)
+  - [#isPositive()](./doc/api/api.md#module_@the-/scope.scopes.NumberScope#isPositive)
+  - [#isZero()](./doc/api/api.md#module_@the-/scope.scopes.NumberScope#isZero)
+- module:@the-/scope.scopes.ObjectScope
+  - [#get()](./doc/api/api.md#module_@the-/scope.scopes.ObjectScope#get)
+  - [#has()](./doc/api/api.md#module_@the-/scope.scopes.ObjectScope#has)
+- module:@the-/scope.scopes.Scope
+  - [.withDefault()](./doc/api/api.md#module_@the-/scope.scopes.Scope.withDefault)
+- module:@the-/scope.scopes.ScopeScope
+  - [#get(namepath)](./doc/api/api.md#module_@the-/scope.scopes.ScopeScope#get)
+  - [#has(namepath)](./doc/api/api.md#module_@the-/scope.scopes.ScopeScope#has)
+  - [#init(names)](./doc/api/api.md#module_@the-/scope.scopes.ScopeScope#init)
+  - [#of(namepath)](./doc/api/api.md#module_@the-/scope.scopes.ScopeScope#of)
+  - [#set(namepath,value)](./doc/api/api.md#module_@the-/scope.scopes.ScopeScope#set)
+- NumberScope
+  - [#decrement(amount)](./doc/api/api.md#NumberScope#decrement)
+  - [#increment(amount)](./doc/api/api.md#NumberScope#increment)
+  - [#set(n)](./doc/api/api.md#NumberScope#set)
+- ObjectScope
+  - [#del(names)](./doc/api/api.md#ObjectScope#del)
+  - [#drop()](./doc/api/api.md#ObjectScope#drop)
+  - [#set(name,value)](./doc/api/api.md#ObjectScope#set)
+- global
+  - [reset(values)](./doc/api/api.md#reset)
+  - [set(index,entry)](./doc/api/api.md#set)
+- StringScope
+  - [#del()](./doc/api/api.md#StringScope#del)
+  - [#replace(from,to)](./doc/api/api.md#StringScope#replace)
+  - [#set(value)](./doc/api/api.md#StringScope#set)
+- ValueScope
+  - [#del()](./doc/api/api.md#ValueScope#del)
+  - [#set(value)](./doc/api/api.md#ValueScope#set)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

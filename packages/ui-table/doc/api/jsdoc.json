@@ -1,106 +1,106 @@
 [
   {
+    "description": "Table for the-components",
     "id": "module:@the-/ui-table",
-    "longname": "module:@the-/ui-table",
-    "name": "@the-/ui-table",
     "kind": "module",
-    "description": "Table for the-components",
-    "version": "15.4.0",
-    "typicalname": "uiTable",
+    "longname": "module:@the-/ui-table",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
     },
-    "order": 0
+    "name": "@the-/ui-table",
+    "order": 0,
+    "typicalname": "uiTable",
+    "version": "15.4.0"
   },
   {
-    "id": "TheTable",
-    "longname": "TheTable",
-    "name": "TheTable",
-    "kind": "class",
-    "scope": "global",
     "description": "Table for the-components",
+    "id": "TheTable",
+    "kind": "class",
+    "longname": "TheTable",
     "meta": {
+      "filename": "TheTable.jsx",
       "lineno": 14,
-      "filename": "TheTable.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
     },
-    "order": 1
+    "name": "TheTable",
+    "order": 1,
+    "scope": "global"
   },
   {
-    "id": "TheTableStyle",
-    "longname": "TheTableStyle",
-    "name": "TheTableStyle",
-    "kind": "function",
-    "scope": "global",
     "description": "Style for TheTable",
-    "params": [],
+    "id": "TheTableStyle",
+    "kind": "function",
+    "longname": "TheTableStyle",
     "meta": {
-      "lineno": 11,
       "filename": "TheTableStyle.jsx",
+      "lineno": 11,
       "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
     },
-    "order": 5
+    "name": "TheTableStyle",
+    "order": 5,
+    "params": [],
+    "scope": "global"
   },
   {
-    "id": "TheTable.propTypes.alt",
-    "longname": "TheTable.propTypes.alt",
-    "name": "alt",
-    "kind": "member",
-    "scope": "static",
     "description": "Alt for empty",
+    "id": "TheTable.propTypes.alt",
+    "kind": "member",
+    "longname": "TheTable.propTypes.alt",
     "memberof": "TheTable.propTypes",
     "meta": {
+      "filename": "TheTable.jsx",
       "lineno": 172,
-      "filename": "TheTable.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
     },
-    "order": 2
+    "name": "alt",
+    "order": 2,
+    "scope": "static"
   },
   {
-    "id": "TheTable.propTypes.empty",
-    "longname": "TheTable.propTypes.empty",
-    "name": "empty",
-    "kind": "member",
-    "scope": "static",
     "description": "Show as empty",
+    "id": "TheTable.propTypes.empty",
+    "kind": "member",
+    "longname": "TheTable.propTypes.empty",
     "memberof": "TheTable.propTypes",
     "meta": {
+      "filename": "TheTable.jsx",
       "lineno": 174,
-      "filename": "TheTable.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
     },
-    "order": 3
+    "name": "empty",
+    "order": 3,
+    "scope": "static"
   },
   {
-    "id": "TheTable.propTypes.width",
-    "longname": "TheTable.propTypes.width",
-    "name": "width",
-    "kind": "member",
-    "scope": "static",
     "description": "Show as wide",
+    "id": "TheTable.propTypes.width",
+    "kind": "member",
+    "longname": "TheTable.propTypes.width",
     "memberof": "TheTable.propTypes",
     "meta": {
-      "lineno": 176,
       "filename": "TheTable.jsx",
+      "lineno": 176,
       "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
     },
-    "order": 4
+    "name": "width",
+    "order": 4,
+    "scope": "static"
   },
   {
-    "id": "TheTableStyle.propTypes.options",
-    "longname": "TheTableStyle.propTypes.options",
-    "name": "options",
-    "kind": "member",
-    "scope": "static",
     "description": "Style options",
+    "id": "TheTableStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheTableStyle.propTypes.options",
     "memberof": "TheTableStyle.propTypes",
     "meta": {
-      "lineno": 22,
       "filename": "TheTableStyle.jsx",
+      "lineno": 22,
       "path": "/Users/okuni/Projects/the/packages/ui-table/lib"
     },
-    "order": 6
+    "name": "options",
+    "order": 6,
+    "scope": "static"
   }
 ]

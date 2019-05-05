@@ -127,25 +127,27 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [default()](./doc/api/api.md#default)
-- [#acquire(key,next)](./doc/api/api.md#module_@the-/seat.TheSeat#acquire)
-- [#acquireNumber(key,options)](./doc/api/api.md#module_@the-/seat.TheSeat#acquireNumber)
-- [#acquireString(key,options)](./doc/api/api.md#module_@the-/seat.TheSeat#acquireString)
-- [#bind(key)](./doc/api/api.md#module_@the-/seat.TheSeat#bind)
-- [#canTake(key,value)](./doc/api/api.md#module_@the-/seat.TheSeat#canTake)
-- [#get(key)](./doc/api/api.md#module_@the-/seat.TheSeat#get)
-- [#release(key)](./doc/api/api.md#module_@the-/seat.TheSeat#release)
-- [#scope(scopeName)](./doc/api/api.md#module_@the-/seat.TheSeat#scope)
-- [#take(key,value)](./doc/api/api.md#module_@the-/seat.TheSeat#take)
-- [.create(args)](./doc/api/api.md#module_@the-/seat.create)
-- [.lockMix()](./doc/api/api.md#module_@the-/seat.mixins.lockMix)
-- [.scopeMix()](./doc/api/api.md#module_@the-/seat.scopeMix)
-### class
-- [.TheSeat](./doc/api/api.md#module_@the-/seat.TheSeat)
-### namespace
-- [.helpers](./doc/api/api.md#module_@the-/seat.helpers)
-- [.mixins](./doc/api/api.md#module_@the-/seat.mixins)
+
+- module:@the-/seat
+  - [.create(args)](./doc/api/api.md#module_@the-/seat.create)
+  - [.default()](./doc/api/api.md#module_@the-/seat.default)
+  - [.scopeMix()](./doc/api/api.md#module_@the-/seat.scopeMix)
+  - [.TheSeat](./doc/api/api.md#module_@the-/seat.TheSeat)
+- module:@the-/seat.mixins
+  - [.lockMix()](./doc/api/api.md#module_@the-/seat.mixins.lockMix)
+- module:@the-/seat.TheSeat
+  - [#acquire(key,next)](./doc/api/api.md#module_@the-/seat.TheSeat#acquire)
+  - [#acquireNumber(key,options)](./doc/api/api.md#module_@the-/seat.TheSeat#acquireNumber)
+  - [#acquireString(key,options)](./doc/api/api.md#module_@the-/seat.TheSeat#acquireString)
+  - [#bind(key)](./doc/api/api.md#module_@the-/seat.TheSeat#bind)
+  - [#canTake(key,value)](./doc/api/api.md#module_@the-/seat.TheSeat#canTake)
+  - [#get(key)](./doc/api/api.md#module_@the-/seat.TheSeat#get)
+  - [#release(key)](./doc/api/api.md#module_@the-/seat.TheSeat#release)
+  - [#scope(scopeName)](./doc/api/api.md#module_@the-/seat.TheSeat#scope)
+  - [#take(key,value)](./doc/api/api.md#module_@the-/seat.TheSeat#take)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

@@ -104,4 +104,4 @@ Alias of [create](#module_@the-/mail.create)
 <a name="toLowerKeys"></a>
 
 ## toLowerKeys()
-**Kind**: global function  
+**Kind**: global function

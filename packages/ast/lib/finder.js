@@ -12,9 +12,9 @@ const finder = Object.freeze(
   {
     /**
      * Find nodes by types
-     * @param {Node} node
+     * @param {Object} node
      * @param {string[]} types
-     * @returns {Node[]} Found nodes
+     * @returns {Object[]} Found nodes
      */
     findByTypes: (node, types) => {
       const found = []

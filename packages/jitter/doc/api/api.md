@@ -91,4 +91,4 @@ Create a TheJitter instance
 ### jitter.default()
 Alias of [create](#module_@the-/jitter.create)
 
-**Kind**: static method of [<code>@the-/jitter</code>](#module_@the-/jitter)  
+**Kind**: static method of [<code>@the-/jitter</code>](#module_@the-/jitter)

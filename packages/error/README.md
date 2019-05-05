@@ -88,21 +88,24 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### class
-- [.TheConflictError](./doc/api/api.md#module_@the-/error.TheConflictError)
-- [.TheError](./doc/api/api.md#module_@the-/error.TheError)
-- [.TheExpiredError](./doc/api/api.md#module_@the-/error.TheExpiredError)
-- [.TheForbiddenError](./doc/api/api.md#module_@the-/error.TheForbiddenError)
-- [.TheGoneError](./doc/api/api.md#module_@the-/error.TheGoneError)
-- [.TheInvalidParameterError](./doc/api/api.md#module_@the-/error.TheInvalidParameterError)
-- [.TheNotAcceptableError](./doc/api/api.md#module_@the-/error.TheNotAcceptableError)
-- [.TheNotFoundError](./doc/api/api.md#module_@the-/error.TheNotFoundError)
-- [.TheRequestTimeoutError](./doc/api/api.md#module_@the-/error.TheRequestTimeoutError)
-- [.TheServerRottenError](./doc/api/api.md#module_@the-/error.TheServerRottenError)
-- [.TheUnauthorizedError](./doc/api/api.md#module_@the-/error.TheUnauthorizedError)
-### function
-- [.create(args)](./doc/api/api.md#module_@the-/error.create)
-- [.define()](./doc/api/api.md#module_@the-/error.define)
+
+- module:@the-/error
+  - [.create(args)](./doc/api/api.md#module_@the-/error.create)
+  - [.define()](./doc/api/api.md#module_@the-/error.define)
+  - [.TheConflictError](./doc/api/api.md#module_@the-/error.TheConflictError)
+  - [.TheError](./doc/api/api.md#module_@the-/error.TheError)
+  - [.TheExpiredError](./doc/api/api.md#module_@the-/error.TheExpiredError)
+  - [.TheForbiddenError](./doc/api/api.md#module_@the-/error.TheForbiddenError)
+  - [.TheGoneError](./doc/api/api.md#module_@the-/error.TheGoneError)
+  - [.TheInvalidParameterError](./doc/api/api.md#module_@the-/error.TheInvalidParameterError)
+  - [.TheNotAcceptableError](./doc/api/api.md#module_@the-/error.TheNotAcceptableError)
+  - [.TheNotFoundError](./doc/api/api.md#module_@the-/error.TheNotFoundError)
+  - [.TheRequestTimeoutError](./doc/api/api.md#module_@the-/error.TheRequestTimeoutError)
+  - [.TheServerRottenError](./doc/api/api.md#module_@the-/error.TheServerRottenError)
+  - [.TheUnauthorizedError](./doc/api/api.md#module_@the-/error.TheUnauthorizedError)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

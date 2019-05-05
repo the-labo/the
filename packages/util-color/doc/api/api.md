@@ -64,5 +64,4 @@ Get text color for background color
 
 | Param | Type |
 | --- | --- |
-| backgroundColor | <code>string</code> | 
-
+| backgroundColor | <code>string</code> |

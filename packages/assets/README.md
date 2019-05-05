@@ -89,15 +89,18 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [default(args)](./doc/api/api.md#default)
-- [#installTo(dirname,options)](./doc/api/api.md#module_@the-/assets.TheAssets#installTo)
-- [.create(args)](./doc/api/api.md#module_@the-/assets.create)
-- [.installFiles(srcDir,destDir,options)](./doc/api/api.md#module_@the-/assets.helpers.installFiles)
-### class
-- [.TheAssets](./doc/api/api.md#module_@the-/assets.TheAssets)
-### namespace
-- [.helpers](./doc/api/api.md#module_@the-/assets.helpers)
+
+- module:@the-/assets
+  - [.create(args)](./doc/api/api.md#module_@the-/assets.create)
+  - [.default(args)](./doc/api/api.md#module_@the-/assets.default)
+  - [.TheAssets](./doc/api/api.md#module_@the-/assets.TheAssets)
+- module:@the-/assets.helpers
+  - [.installFiles(srcDir,destDir,options)](./doc/api/api.md#module_@the-/assets.helpers.installFiles)
+- module:@the-/assets.TheAssets
+  - [#installTo(dirname,options)](./doc/api/api.md#module_@the-/assets.TheAssets#installTo)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

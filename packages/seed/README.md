@@ -100,12 +100,17 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [#apply(seed)](./doc/api/api.md#module_@the-/seed.TheSeed#apply)
-- [#explode(seed,counts)](./doc/api/api.md#module_@the-/seed.TheSeed#explode)
-- [.create(args)](./doc/api/api.md#module_@the-/seed.create)
-### class
-- [.TheSeed](./doc/api/api.md#module_@the-/seed.TheSeed)
+
+- module:@the-/seed
+  - [.create(args)](./doc/api/api.md#module_@the-/seed.create)
+  - [.default()](./doc/api/api.md#module_@the-/seed.default)
+  - [.TheSeed](./doc/api/api.md#module_@the-/seed.TheSeed)
+- module:@the-/seed.TheSeed
+  - [#apply(seed)](./doc/api/api.md#module_@the-/seed.TheSeed#apply)
+  - [#explode(seed,counts)](./doc/api/api.md#module_@the-/seed.TheSeed#explode)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

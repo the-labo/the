@@ -96,11 +96,14 @@ tryExample().catch((err) => console.error(err))
 
 ## API Guide
 
-### function
-- [default()](./doc/api/api.md#default)
-- [.create(args)](./doc/api/api.md#module_@the-/cache.create)
-### class
-- [.TheCache](./doc/api/api.md#module_@the-/cache.TheCache)
+
+- module:@the-/cache
+  - [.create(args)](./doc/api/api.md#module_@the-/cache.create)
+  - [.default()](./doc/api/api.md#module_@the-/cache.default)
+  - [.TheCache](./doc/api/api.md#module_@the-/cache.TheCache)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

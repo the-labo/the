@@ -5,7 +5,7 @@
 ## @the-/code
 Code formatter of the-frameworks
 
-**Version**: 15.4.12  
+**Version**: 15.4.15  
 **License**: MIT  
 
 * [@the-/code](#module_@the-/code)
@@ -23,6 +23,7 @@ Code formatter of the-frameworks
         * ~~[.isRequireExpression()](#module_@the-/code.astHelper.isRequireExpression)~~
     * [.helpers](#module_@the-/code.helpers) : <code>object</code>
     * [.parsers](#module_@the-/code.parsers) : <code>object</code>
+        * [.parseCSS()](#module_@the-/code.parsers.parseCSS)
     * [.processors](#module_@the-/code.processors) : <code>object</code>
         * [.processCSSProp(content)](#module_@the-/code.processors.processCSSProp) ⇒ <code>Promise.&lt;string&gt;</code>
         * [.processCSSRule(content)](#module_@the-/code.processors.processCSSRule) ⇒ <code>Promise.&lt;string&gt;</code>
@@ -156,6 +157,10 @@ Parser functions
 
 **Kind**: static namespace of [<code>@the-/code</code>](#module_@the-/code)  
 **Access**: protected  
+<a name="module_@the-/code.parsers.parseCSS"></a>
+
+#### parsers.parseCSS()
+**Kind**: static method of [<code>parsers</code>](#module_@the-/code.parsers)  
 <a name="module_@the-/code.processors"></a>
 
 ### code.processors : <code>object</code>
@@ -410,4 +415,4 @@ Create a TheCode instance
 ### code.contentAccess()
 Define content access methods
 
-**Kind**: static method of [<code>@the-/code</code>](#module_@the-/code)  
+**Kind**: static method of [<code>@the-/code</code>](#module_@the-/code)

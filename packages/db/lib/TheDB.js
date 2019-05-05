@@ -145,7 +145,7 @@ class TheDB extends TheDBBase {
    * Register resource form Resource Class
    * @param {Function} ResourceClass - Resource class to register
    * @param {string} resourceName - Name of resource
-   * @returns {ClayResource} Loaded resource class
+   * @returns {Object} Loaded resource instance
    */
   load(ResourceClass, resourceName) {
     unlessProduction(() => {

@@ -1,28 +1,33 @@
 [
   {
-    "id": "module:@the-/setting",
-    "longname": "module:@the-/setting",
-    "name": "@the-/setting",
-    "kind": "module",
     "description": "Setting manager for the-framework",
-    "version": "15.4.2",
+    "id": "module:@the-/setting",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "setting",
+    "longname": "module:@the-/setting",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/setting/lib"
     },
-    "order": 3
+    "name": "@the-/setting",
+    "order": 3,
+    "typicalname": "setting",
+    "version": "15.4.2"
   },
   {
-    "id": "TheSetting#del",
-    "longname": "TheSetting#del",
-    "name": "del",
-    "kind": "function",
-    "scope": "instance",
     "description": "Delete value for name",
+    "id": "TheSetting#del",
+    "kind": "function",
+    "longname": "TheSetting#del",
     "memberof": "TheSetting",
+    "meta": {
+      "filename": "TheSetting.js",
+      "lineno": 57,
+      "path": "/Users/okuni/Projects/the/packages/setting/lib"
+    },
+    "name": "del",
+    "order": 6,
     "params": [
       {
         "type": {
@@ -34,21 +39,21 @@
         "name": "names"
       }
     ],
-    "meta": {
-      "lineno": 57,
-      "filename": "TheSetting.js",
-      "path": "/Users/okuni/Projects/the/packages/setting/lib"
-    },
-    "order": 6
+    "scope": "instance"
   },
   {
-    "id": "TheSetting#get",
-    "longname": "TheSetting#get",
-    "name": "get",
-    "kind": "function",
-    "scope": "instance",
     "description": "Get value for name",
+    "id": "TheSetting#get",
+    "kind": "function",
+    "longname": "TheSetting#get",
     "memberof": "TheSetting",
+    "meta": {
+      "filename": "TheSetting.js",
+      "lineno": 74,
+      "path": "/Users/okuni/Projects/the/packages/setting/lib"
+    },
+    "name": "get",
+    "order": 7,
     "params": [
       {
         "type": {
@@ -70,21 +75,21 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 74,
-      "filename": "TheSetting.js",
-      "path": "/Users/okuni/Projects/the/packages/setting/lib"
-    },
-    "order": 7
+    "scope": "instance"
   },
   {
-    "id": "TheSetting#set",
-    "longname": "TheSetting#set",
-    "name": "set",
-    "kind": "function",
-    "scope": "instance",
     "description": "Set values",
+    "id": "TheSetting#set",
+    "kind": "function",
+    "longname": "TheSetting#set",
     "memberof": "TheSetting",
+    "meta": {
+      "filename": "TheSetting.js",
+      "lineno": 112,
+      "path": "/Users/okuni/Projects/the/packages/setting/lib"
+    },
+    "name": "set",
+    "order": 8,
     "params": [
       {
         "type": {
@@ -96,84 +101,84 @@
         "name": "values"
       }
     ],
-    "meta": {
-      "lineno": 112,
-      "filename": "TheSetting.js",
-      "path": "/Users/okuni/Projects/the/packages/setting/lib"
-    },
-    "order": 8
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/setting.TheSetting",
-    "longname": "module:@the-/setting.TheSetting",
-    "name": "TheSetting",
-    "kind": "class",
-    "scope": "static",
     "augments": [
       "module:@the-/setting.TheSettingBase",
       "module:@the-/setting.mixins.lockMix~LockMixed"
     ],
-    "memberof": "module:@the-/setting",
-    "meta": {
-      "lineno": 1,
-      "filename": "TheSetting.js",
-      "path": "/Users/okuni/Projects/the/packages/setting/lib"
-    },
-    "order": 4
-  },
-  {
-    "id": "module:@the-/setting.TheSettingBase",
-    "longname": "module:@the-/setting.TheSettingBase",
-    "name": "TheSettingBase",
+    "id": "module:@the-/setting.TheSetting",
     "kind": "class",
-    "scope": "static",
+    "longname": "module:@the-/setting.TheSetting",
     "memberof": "module:@the-/setting",
-    "access": "protected",
     "meta": {
-      "lineno": 21,
       "filename": "TheSetting.js",
-      "path": "/Users/okuni/Projects/the/packages/setting/lib"
-    },
-    "order": 5
-  },
-  {
-    "id": "module:@the-/setting.helpers",
-    "longname": "module:@the-/setting.helpers",
-    "name": "helpers",
-    "kind": "namespace",
-    "scope": "static",
-    "description": "Helper utility",
-    "memberof": "module:@the-/setting",
-    "meta": {
       "lineno": 1,
-      "filename": "helpers.js",
       "path": "/Users/okuni/Projects/the/packages/setting/lib"
     },
-    "order": 2
+    "name": "TheSetting",
+    "order": 4,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/setting.mixins",
-    "longname": "module:@the-/setting.mixins",
-    "name": "mixins",
-    "kind": "namespace",
-    "scope": "static",
-    "description": "Mix functions",
+    "access": "protected",
+    "id": "module:@the-/setting.TheSettingBase",
+    "kind": "class",
+    "longname": "module:@the-/setting.TheSettingBase",
     "memberof": "module:@the-/setting",
     "meta": {
-      "lineno": 2,
+      "filename": "TheSetting.js",
+      "lineno": 21,
+      "path": "/Users/okuni/Projects/the/packages/setting/lib"
+    },
+    "name": "TheSettingBase",
+    "order": 5,
+    "scope": "static"
+  },
+  {
+    "description": "Helper utility",
+    "id": "module:@the-/setting.helpers",
+    "kind": "namespace",
+    "longname": "module:@the-/setting.helpers",
+    "memberof": "module:@the-/setting",
+    "meta": {
+      "filename": "helpers.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/setting/lib"
+    },
+    "name": "helpers",
+    "order": 2,
+    "scope": "static"
+  },
+  {
+    "description": "Mix functions",
+    "id": "module:@the-/setting.mixins",
+    "kind": "namespace",
+    "longname": "module:@the-/setting.mixins",
+    "memberof": "module:@the-/setting",
+    "meta": {
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/setting/lib/mixins"
     },
-    "order": 9
+    "name": "mixins",
+    "order": 9,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/setting.create",
-    "longname": "module:@the-/setting.create",
-    "name": "create",
-    "kind": "function",
-    "scope": "static",
     "description": "Create a TheSetting instance",
+    "id": "module:@the-/setting.create",
+    "kind": "function",
+    "longname": "module:@the-/setting.create",
     "memberof": "module:@the-/setting",
+    "meta": {
+      "filename": "create.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/setting/lib"
+    },
+    "name": "create",
+    "order": 0,
     "params": [
       {
         "type": {
@@ -194,54 +199,49 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "create.js",
-      "path": "/Users/okuni/Projects/the/packages/setting/lib"
-    },
-    "order": 0
+    "scope": "static"
   },
   {
-    "id": "module:@the-/setting.default",
-    "longname": "module:@the-/setting.default",
-    "name": "default",
-    "kind": "function",
-    "scope": "static",
     "description": "Alias of {@link module:@the-/setting.create}",
+    "id": "module:@the-/setting.default",
+    "kind": "function",
+    "longname": "module:@the-/setting.default",
     "memberof": "module:@the-/setting",
     "meta": {
-      "lineno": 1,
       "filename": "default.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/setting/lib"
     },
-    "order": 1
+    "name": "default",
+    "order": 1,
+    "scope": "static"
   },
   {
     "id": "module:@the-/setting.mixins.lockMix",
-    "longname": "module:@the-/setting.mixins.lockMix",
-    "name": "lockMix",
     "kind": "function",
-    "scope": "static",
+    "longname": "module:@the-/setting.mixins.lockMix",
     "memberof": "module:@the-/setting.mixins",
     "meta": {
-      "lineno": 1,
       "filename": "lockMix.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/setting/lib/mixins"
     },
-    "order": 10
+    "name": "lockMix",
+    "order": 10,
+    "scope": "static"
   },
   {
     "id": "module:@the-/setting.mixins.lockMix~LockMixed",
-    "longname": "module:@the-/setting.mixins.lockMix~LockMixed",
-    "name": "LockMixed",
     "kind": "class",
-    "scope": "inner",
+    "longname": "module:@the-/setting.mixins.lockMix~LockMixed",
     "memberof": "module:@the-/setting.mixins.lockMix",
     "meta": {
-      "lineno": 17,
       "filename": "lockMix.js",
+      "lineno": 17,
       "path": "/Users/okuni/Projects/the/packages/setting/lib/mixins"
     },
-    "order": 11
+    "name": "LockMixed",
+    "order": 11,
+    "scope": "inner"
   }
 ]

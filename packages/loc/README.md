@@ -86,22 +86,25 @@ console.log(en('titles.WELCOME_TITLE')) // -> "Welcome to hello-world!"
 
 ## API Guide
 
-### function
-- [#bind(lang)](./doc/api/api.md#module_@the-/loc.TheLoc#bind)
-- [#register(namespace,values,options)](./doc/api/api.md#module_@the-/loc.TheLoc#register)
-- [#resolve(lang,keypaths)](./doc/api/api.md#module_@the-/loc.TheLoc#resolve)
-- [#toCompound()](./doc/api/api.md#module_@the-/loc.TheLoc#toCompound)
-- [#validate()](./doc/api/api.md#module_@the-/loc.TheLoc#validate)
-- [.create(args)](./doc/api/api.md#module_@the-/loc.create)
-- [.default()](./doc/api/api.md#module_@the-/loc.default)
-- [.mergedLocales(l1,l2)](./doc/api/api.md#module_@the-/loc.helpers.mergedLocales)
-- [.resolveInScope(data,keypath)](./doc/api/api.md#module_@the-/loc.helpers.resolveInScope)
-- [.toCompoundLocale()](./doc/api/api.md#module_@the-/loc.helpers.toCompoundLocale)
-- [.checkLocales()](./doc/api/api.md#module_@the-/loc.helpers.checkLocales)
-### class
-- [.TheLoc](./doc/api/api.md#module_@the-/loc.TheLoc)
-### namespace
-- [.helpers](./doc/api/api.md#module_@the-/loc.helpers)
+
+- module:@the-/loc
+  - [.create(args)](./doc/api/api.md#module_@the-/loc.create)
+  - [.default()](./doc/api/api.md#module_@the-/loc.default)
+  - [.TheLoc](./doc/api/api.md#module_@the-/loc.TheLoc)
+- module:@the-/loc.helpers
+  - [.checkLocales()](./doc/api/api.md#module_@the-/loc.helpers.checkLocales)
+  - [.mergedLocales(l1,l2)](./doc/api/api.md#module_@the-/loc.helpers.mergedLocales)
+  - [.resolveInScope(data,keypath)](./doc/api/api.md#module_@the-/loc.helpers.resolveInScope)
+  - [.toCompoundLocale()](./doc/api/api.md#module_@the-/loc.helpers.toCompoundLocale)
+- module:@the-/loc.TheLoc
+  - [#bind(lang)](./doc/api/api.md#module_@the-/loc.TheLoc#bind)
+  - [#register(namespace,values,options)](./doc/api/api.md#module_@the-/loc.TheLoc#register)
+  - [#resolve(lang,keypaths)](./doc/api/api.md#module_@the-/loc.TheLoc#resolve)
+  - [#toCompound()](./doc/api/api.md#module_@the-/loc.TheLoc#toCompound)
+  - [#validate()](./doc/api/api.md#module_@the-/loc.TheLoc#validate)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

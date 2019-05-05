@@ -23,16 +23,3 @@ async function tryExample() {
 }
 
 tryExample().catch((err) => console.error(err))
-
-{
-  const { TheQueue } = require('@the-/queue')
-
-  class Client {
-    constructor() {
-      this.queue = queue
-    }
-    async send() {
-      await client.wait({})
-    }
-  }
-}
