@@ -589,6 +589,32 @@ class X {
 }`,
     )
   })
+
+  it('Keep destructuring keys', async () => {
+    equal(
+      await processJSUnused(`
+const {
+  a: [one],
+  b: { two },
+  c: {},
+  d: [],
+} = get()
+if (one) {
+  this.updateEntity(one)
+}
+console.log(two)
+`),
+      `
+const {
+  a: [one],
+  b: { two },} = get()
+if (one) {
+  this.updateEntity(one)
+}
+console.log(two)
+`,
+    )
+  })
 })
 
 /* global describe, before, after, it */

@@ -12,9 +12,9 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "abind": "^1.0.3",
-    "arequest": "^3.0.1",
-    "qs": "^6.5.2"
+    "abind": "^1.0.5",
+    "arequest": "^3.0.2",
+    "qs": "^6.7.0"
   },
   "devDependencies": {},
   "engines": {

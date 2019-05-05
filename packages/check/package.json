@@ -21,7 +21,7 @@
   "dependencies": {
     "@the-/window": "^15.4.1",
     "asenv": "^3.0.2",
-    "bowser": "^2.3.0",
+    "bowser": "^2.4.0",
     "hasbin": "^1.2.3",
     "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.0"

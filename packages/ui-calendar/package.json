@@ -11,13 +11,13 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/const-ui": "^15.4.0",
-    "@the-/date": "^15.2.1",
+    "@the-/const-ui": "^15.4.2",
+    "@the-/date": "^15.4.2",
     "@the-/ui-button": "^15.4.0",
     "@the-/ui-condition": "^15.4.0",
     "@the-/ui-style": "^15.4.0",
     "@the-/util-color": "^15.4.0",
-    "@the-/util-ui": "^15.4.0",
+    "@the-/util-ui": "^15.4.1",
     "classnames": "^2.2.6",
     "moment": "^2.24.0",
     "objnest": "^5.0.6",

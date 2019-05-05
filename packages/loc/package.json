@@ -8,7 +8,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/util-array": "^15.4.0",
+    "@the-/util-array": "^15.4.1",
     "argx": "^4.0.0",
     "evaljson": "^6.0.4",
     "objnest": "^5.0.6",

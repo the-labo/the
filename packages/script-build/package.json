@@ -22,7 +22,7 @@
     "@babel/preset-react": "7.0.0",
     "@babel/runtime": "^7.4.4",
     "@okunishinishi/fixpack": "^3.0.1",
-    "@the-/code": "^15.4.12",
+    "@the-/code": "^15.4.15",
     "@the-/tmp": "^15.4.1",
     "ababel": "^6.0.0",
     "aglob": "^3.0.2",

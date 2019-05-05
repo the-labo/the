@@ -33,11 +33,25 @@ function cleanupUnusedOnObjectPatternNode(
       return replace([start, end], '')
     }
 
-    const isEmptyObjectPattern =
-      property.value.type === 'ObjectPattern' &&
-      property.value.properties.length === 0
-    if (isEmptyObjectPattern) {
-      return removeProperty()
+    const hasObjectPatternValue = property.value.type === 'ObjectPattern'
+
+    if (hasObjectPatternValue) {
+      const isEmptyObjectPattern = property.value.properties.length === 0
+      if (isEmptyObjectPattern) {
+        return removeProperty()
+      } else {
+        continue
+      }
+    }
+
+    const hasArrayPatternValue = property.value.type === 'ArrayPattern'
+    if (hasArrayPatternValue) {
+      const isEmptyArrayPattern = property.value.elements.length === 0
+      if (isEmptyArrayPattern) {
+        return removeProperty()
+      } else {
+        continue
+      }
     }
 
     const isAssigment = isAssignmentPattern(property.value)

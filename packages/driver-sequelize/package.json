@@ -10,14 +10,14 @@
   },
   "dependencies": {
     "@the-/check": "^15.4.1",
-    "@the-/resource": "^15.4.2",
+    "@the-/resource": "^15.4.3",
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.3",
     "clay-collection": "^3.1.5",
     "clay-driver-base": "^4.1.7",
     "clay-list-pager": "^3.0.1",
     "clay-resource-name": "^4.0.5",
-    "sequelize": "^5.8.4",
+    "sequelize": "^5.8.5",
     "utf8": "^3.0.0"
   },
   "description": "Sequelize driver for the-framework",

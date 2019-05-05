@@ -17,7 +17,7 @@
     "@the-/ui-input": "^15.4.0",
     "@the-/ui-spin": "^15.4.0",
     "@the-/ui-style": "^15.4.0",
-    "@the-/util-ui": "^15.4.0",
+    "@the-/util-ui": "^15.4.1",
     "@the-/window": "^15.4.1",
     "asobj": "^3.0.1",
     "classnames": "^2.2.6",

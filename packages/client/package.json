@@ -29,7 +29,7 @@
   },
   "description": "Client for the-server",
   "devDependencies": {
-    "@the-/server": "^15.4.1",
+    "@the-/server": "^15.4.2",
     "aport": "^2.0.0"
   },
   "engines": {
