@@ -3,10 +3,13 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir.recursive({
-  description: 'Fragment components',
+  annotations: {
+    description: 'Fragment components',
+    memberof: 'module:client',
+    namespace: 'stateless',
+  },
   dirname: __dirname,
   ext: '.jsx',
-  name: 'stateless',
 })
 
 if (!module.parent) {

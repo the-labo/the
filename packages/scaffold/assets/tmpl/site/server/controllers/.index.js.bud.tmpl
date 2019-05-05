@@ -3,11 +3,14 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir.recursive({
+  annotations: {
+    description: 'Server controllers',
+    memberOf: 'module:server',
+    namespace: 'controllers',
+  },
   cjs: true,
-  description: 'Server controllers',
   dirname: __dirname,
   ignore: ['concerns/*.js'],
-  name: 'controllers',
 })
 
 if (!module.parent) {

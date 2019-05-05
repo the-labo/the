@@ -1,3 +1,7 @@
+/**
+ * Client module
+ * @module client
+ */
 'use strict'
 
 import createClient from './client/create'

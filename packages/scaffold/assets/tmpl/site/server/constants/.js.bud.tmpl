@@ -1,0 +1,20 @@
+/**
+ * Bud file for conf
+ */
+'use strict'
+
+const path = require('path')
+
+module.exports = ['setting/SettingValues'].map((name) => ({
+  data: {
+    name: path.basename(name),
+  },
+  force: false,
+  mkdirp: true,
+  mode: '644',
+  path: `${name}.js`,
+}))
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

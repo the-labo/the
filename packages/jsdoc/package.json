@@ -1,0 +1,42 @@
+{
+  "name": "@the-/jsdoc",
+  "description": "JSDoc generator",
+  "version": "15.4.3",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "browser": "shim",
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "@the-/util-array": "^15.4.1",
+    "aglob": "^3.0.2",
+    "jsdoc-to-markdown": "^4.0.1",
+    "writeout": "^2.2.4"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/jsdoc#readme",
+  "keywords": [
+    "lib",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
+  "scripts": {
+    "build": "../../misc/scripts/pkgBuild.js",
+    "doc": "../../misc/scripts/pkgDoc.js",
+    "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
+    "test": "../../misc/scripts/pkgTest.js"
+  }
+}

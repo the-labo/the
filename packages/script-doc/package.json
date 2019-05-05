@@ -1,4 +1,7 @@
 {
+  "name": "@the-/script-doc",
+  "description": "Doc script for the-projects",
+  "version": "15.4.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,6 +14,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/jsdoc": "^15.4.3",
     "@the-/util-array": "^15.4.1",
     "aglob": "^3.0.1",
     "argx": "^4.0.0",
@@ -21,9 +25,7 @@
     "stringcase": "^4.3.1",
     "writeout": "^2.2.4"
   },
-  "description": "Doc script for the-projects",
   "devDependencies": {
-    "@the-/script-build": "^15.2.0",
     "injectmock": "^2.0.0"
   },
   "engines": {
@@ -37,7 +39,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/script-doc",
   "publishConfig": {
     "access": "public"
   },
@@ -47,6 +48,5 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.2"
+  }
 }

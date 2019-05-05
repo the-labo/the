@@ -14,7 +14,6 @@ const asleep = require('asleep')
 const awatch = require('awatch')
 const coz = require('coz')
 const path = require('path')
-const fixpack = require('@okunishinishi/fixpack')
 const theCode = require('@the-/code')
 const buildDemo = require('./builders/buildDemo')
 const buildESM = require('./builders/buildESM')
@@ -39,7 +38,6 @@ async function build(dirname = process.cwd(), options = {}) {
   const pkgPath = path.resolve(dirname, 'package.json')
   const esmShimDir = shimDir + '/esm'
 
-  fixpack(pkgPath)
   const pkg = require(pkgPath)
 
   const presetsFor = ({ modules } = {}) => [
@@ -54,9 +52,10 @@ async function build(dirname = process.cwd(), options = {}) {
     ['@babel/plugin-transform-runtime', {}, 'the-script-build-runtime'],
   ]
   const buildBud = async () => coz.render(budPattern)
-  const buildJs = async () => {
+  const buildFiles = async () => {
     await theCode().format([
       '*.*',
+      '*.md',
       '.*.bud',
       '+(bin|doc|misc|lib|example|test)/**/*.*',
       '+(bin|doc|misc|lib|example|test)/**/.*.bud',
@@ -82,7 +81,7 @@ async function build(dirname = process.cwd(), options = {}) {
   process.chdir(dirname)
 
   const demoExists = await existsAsync(demoSrc)
-  await buildJs()
+  await buildFiles()
   await buildBud()
 
   const demo = async () =>
@@ -123,7 +122,7 @@ async function build(dirname = process.cwd(), options = {}) {
         }
         if (needsBuildJs) {
           needsBuildJs = false
-          await buildJs()
+          await buildFiles()
           if (demoExists) {
             await demo()
           }

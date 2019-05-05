@@ -6,10 +6,13 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir({
+  annotations: {
+    description: 'Module mappings',
+    memberof: 'module:server',
+    namespace: 'mappings',
+  },
   cjs: true,
-  description: 'Module mappings',
   dirname: __dirname,
-  name: 'mappings',
 })
 
 if (!module.parent) {

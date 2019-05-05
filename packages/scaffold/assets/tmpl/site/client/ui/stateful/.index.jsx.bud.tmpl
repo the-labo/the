@@ -3,10 +3,13 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir.recursive({
-  description: 'Stateful components',
+  annotations: {
+    description: 'Stateful components',
+    memberof: 'module:client.ui',
+    namespace: 'stateful',
+  },
   dirname: __dirname,
   ext: '.jsx',
-  name: 'stateful',
 })
 
 if (!module.parent) {

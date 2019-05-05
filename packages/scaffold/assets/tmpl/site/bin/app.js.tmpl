@@ -6,19 +6,16 @@
 'use strict'
 
 const { server } = require('../server')
-
-const Local = require('../Local')
+const { DockerPorts, WebApps } = require('../server/constants')
 
 void (async function() {
-  const { port = Local.APP_PORT } = process.env
+  const { port = WebApps.Default.PORT } = process.env
 
   await server.listen(port)
   console.log(`
   =============================
   
-  Access to http://localhost:${
-    Local.DOCKER_NGINX_CONTAINER_PORT
-  } in your browser
+  Access to http://localhost:${DockerPorts.NGINX_CONTAINER_PORT} in your browser
   
   =============================
   `)

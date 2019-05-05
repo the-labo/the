@@ -61,7 +61,9 @@ async function theScaffold(type, dest, options = {}) {
     author_email: user.email,
     author_name: user.name,
     author_url: user.url,
-    package_unscoped_name: config.package_name.replace(/@/, ''),
+    package_unscoped_name: config.package_name
+      .replace(/@/, '')
+      .replace(/\//, '-'),
     ...config,
   }
 

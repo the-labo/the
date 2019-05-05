@@ -12,6 +12,27 @@
 <a name="module_mock-project-01"></a>
 
 ## mock-project-01
+
+* [mock-project-01](#module_mock-project-01)
+    * [.Hoge](#module_mock-project-01.Hoge)
+        * [.say(msg)](#module_mock-project-01.Hoge+say)
+    * [.foo(a1)](#module_mock-project-01.foo)
+
+<a name="module_mock-project-01.Hoge"></a>
+
+### mock-project-01.Hoge
+This is hoge
+
+**Kind**: static class of [<code>mock-project-01</code>](#module_mock-project-01)  
+<a name="module_mock-project-01.Hoge+say"></a>
+
+#### hoge.say(msg)
+**Kind**: instance method of [<code>Hoge</code>](#module_mock-project-01.Hoge)  
+
+| Param | Type |
+| --- | --- |
+| msg | <code>string</code> | 
+
 <a name="module_mock-project-01.foo"></a>
 
 ### mock-project-01.foo(a1)
@@ -24,22 +45,3 @@
 <a name="module_hoge2"></a>
 
 ## hoge2
-
-* [hoge2](#module_hoge2)
-    * [~Hoge](#module_hoge2..Hoge)
-        * [.say(msg)](#module_hoge2..Hoge+say)
-
-<a name="module_hoge2..Hoge"></a>
-
-### hoge2~Hoge
-This is hoge
-
-**Kind**: inner class of [<code>hoge2</code>](#module_hoge2)  
-<a name="module_hoge2..Hoge+say"></a>
-
-#### hoge.say(msg)
-**Kind**: instance method of [<code>Hoge</code>](#module_hoge2..Hoge)  
-
-| Param | Type |
-| --- | --- |
-| msg | <code>string</code> |

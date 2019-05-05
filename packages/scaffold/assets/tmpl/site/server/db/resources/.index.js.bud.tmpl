@@ -3,10 +3,13 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir({
+  annotations: {
+    description: 'Db resource classes',
+    memberof: 'module:server.db',
+    namespace: 'resources',
+  },
   cjs: true,
-  description: 'Db resource classes',
   dirname: __dirname,
-  name: 'resources',
 })
 
 if (!module.parent) {

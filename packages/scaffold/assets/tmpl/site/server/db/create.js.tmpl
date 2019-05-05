@@ -1,26 +1,28 @@
 /**
  * Create an db instance
+ * @memberof module:server.db
  * @function create
+ * @param {Object} [config]
  * @returns {TheDB}
  */
 'use strict'
 
 const theDB = require('@the-/db')
+const { MysqlConnections } = require('../constants')
 const { ResourceMapping } = require('../mappings')
-const Local = require('../../Local')
 
 const defaultConfig = {
-  database: Local.DB_DATABASE,
-  dialect: Local.DB_DIALECT,
-  host: Local.DB_HOST,
-  password: Local.DB_PASSWORD,
-  port: Local.DB_PORT,
-  rootPassword: Local.DB_ROOT_PASSWORD,
-  rootUsername: Local.DB_ROOT_USERNAME,
-  username: Local.DB_USERNAME,
+  database: MysqlConnections.Default.DATABASE,
+  dialect: MysqlConnections.Default.DIALECT,
+  host: MysqlConnections.Default.HOST,
+  password: MysqlConnections.Default.PASSWORD,
+  port: MysqlConnections.Default.PORT,
+  rootPassword: MysqlConnections.Default.ROOT_PASSWORD,
+  rootUsername: MysqlConnections.Default.ROOT_USERNAME,
+  username: MysqlConnections.Default.USERNAME,
 }
 
-/** @lends create */
+/** @lends module:server.db.create */
 function create(config = defaultConfig, options = {}) {
   return theDB({
     resources: ResourceMapping,

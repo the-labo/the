@@ -6,10 +6,13 @@
  */
 'use strict'
 
-/** @lends foo */
+/** @lends module:mock-project-01.foo */
 async function foo() {}
 
-/** This is hoge */
+/**
+ * This is hoge
+ * @memberof module:mock-project-01
+ */
 class Hoge {
   /** @param {string} msg */
   say(msg) {}

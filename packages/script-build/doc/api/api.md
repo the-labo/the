@@ -5,7 +5,7 @@
 ## @the-/script-build
 Build script for the-projects
 
-**Version**: 15.4.6  
+**Version**: 15.4.7  
 <a name="module_@the-/script-build.build"></a>
 
 ### @the-/script-build.build([dirname], [options]) ⇒ <code>Promise</code>
@@ -17,3 +17,4 @@ Build project
 | --- | --- | --- | --- |
 | [dirname] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | Project directory name |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
+

@@ -1,6 +1,7 @@
 /**
  * Database module
- * @module db
+ * @memberof module:server
+ * @namespace db
  */
 'use strict'
 

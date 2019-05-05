@@ -1,7 +1,9 @@
 /**
  * Client a site client
+ * @memberof module:client.client
  * @function create
- * @returns {TheClient} - A client instance
+ * @param {Object} [config={}]
+ * @returns {TheClient} A client instance
  */
 'use strict'
 
@@ -12,7 +14,7 @@ import { get } from '@the-/window'
 
 class Client extends TheClient {}
 
-/** @lends create */
+/** @lends module:client.client.create */
 function create(config = {}) {
   const { v } = get(GlobalKeys.PROPS) || {}
   return new Client({
@@ -38,4 +40,4 @@ create.for = (namespace, options = {}) => {
   return client
 }
 
-module.exports = create
+export default create

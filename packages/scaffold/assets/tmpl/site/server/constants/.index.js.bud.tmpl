@@ -1,0 +1,17 @@
+'use strict'
+
+const { dir } = require('@the-/templates')
+
+module.exports = dir({
+  annotations: {
+    description: 'Server constant variables',
+    memberof: 'module:server',
+    namespace: 'constants',
+  },
+  cjs: true,
+  dirname: __dirname,
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

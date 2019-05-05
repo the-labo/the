@@ -5,7 +5,7 @@
 ## @the-/code
 Code formatter of the-frameworks
 
-**Version**: 15.4.20  
+**Version**: 15.4.22  
 **License**: MIT  
 
 * [@the-/code](#module_@the-/code)
@@ -14,6 +14,9 @@ Code formatter of the-frameworks
         * [.format(pattern, [options])](#module_@the-/code.TheCode+format) ⇒ <code>Promise.&lt;Array&gt;</code>
         * [.formatFile(filename)](#module_@the-/code.TheCode+formatFile) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.FormatCache](#module_@the-/code.FormatCache)
+    * [.constants](#module_@the-/code.constants) : <code>object</code>
+        * [.TypeNamings](#module_@the-/code.constants.TypeNamings) : <code>object</code>
+        * [.Types](#module_@the-/code.constants.Types) : <code>object</code>
     * [.astHelper](#module_@the-/code.astHelper) : <code>object</code>
         * ~~[.isAssignmentPattern()](#module_@the-/code.astHelper.isAssignmentPattern)~~
         * ~~[.isEmptyObjectPattern()](#module_@the-/code.astHelper.isEmptyObjectPattern)~~
@@ -43,6 +46,7 @@ Code formatter of the-frameworks
         * [.processJSSwitch(content)](#module_@the-/code.processors.processJSSwitch) ⇒ <code>string</code>
         * [.processJSUnused(content)](#module_@the-/code.processors.processJSUnused) ⇒ <code>string</code>
         * [.processJSXAttribute(content)](#module_@the-/code.processors.processJSXAttribute) ⇒ <code>string</code>
+        * [.processPackageJSON()](#module_@the-/code.processors.processPackageJSON)
         * [.processYAML(content)](#module_@the-/code.processors.processYAML) ⇒ <code>string</code>
     * [.create(...args)](#module_@the-/code.create) ⇒ <code>TheCode</code>
     * [.run()](#module_@the-/code.run)
@@ -94,6 +98,30 @@ Format a single file
 
 ### code.FormatCache
 **Kind**: static class of [<code>@the-/code</code>](#module_@the-/code)  
+<a name="module_@the-/code.constants"></a>
+
+### code.constants : <code>object</code>
+Constant variables
+
+**Kind**: static namespace of [<code>@the-/code</code>](#module_@the-/code)  
+**Access**: protected  
+
+* [.constants](#module_@the-/code.constants) : <code>object</code>
+    * [.TypeNamings](#module_@the-/code.constants.TypeNamings) : <code>object</code>
+    * [.Types](#module_@the-/code.constants.Types) : <code>object</code>
+
+<a name="module_@the-/code.constants.TypeNamings"></a>
+
+#### constants.TypeNamings : <code>object</code>
+Naming for each types
+
+**Kind**: static namespace of [<code>constants</code>](#module_@the-/code.constants)  
+<a name="module_@the-/code.constants.Types"></a>
+
+#### constants.Types : <code>object</code>
+Types
+
+**Kind**: static namespace of [<code>constants</code>](#module_@the-/code.constants)  
 <a name="module_@the-/code.astHelper"></a>
 
 ### code.astHelper : <code>object</code>
@@ -188,6 +216,7 @@ Processor functions
     * [.processJSSwitch(content)](#module_@the-/code.processors.processJSSwitch) ⇒ <code>string</code>
     * [.processJSUnused(content)](#module_@the-/code.processors.processJSUnused) ⇒ <code>string</code>
     * [.processJSXAttribute(content)](#module_@the-/code.processors.processJSXAttribute) ⇒ <code>string</code>
+    * [.processPackageJSON()](#module_@the-/code.processors.processPackageJSON)
     * [.processYAML(content)](#module_@the-/code.processors.processYAML) ⇒ <code>string</code>
 
 <a name="module_@the-/code.processors.processCSSProp"></a>
@@ -382,6 +411,10 @@ Process JSX attributes
 | --- | --- |
 | content | <code>string</code> | 
 
+<a name="module_@the-/code.processors.processPackageJSON"></a>
+
+#### processors.processPackageJSON()
+**Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
 <a name="module_@the-/code.processors.processYAML"></a>
 
 #### processors.processYAML(content) ⇒ <code>string</code>

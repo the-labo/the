@@ -3,10 +3,13 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir({
+  annotations: {
+    description: 'Project configurations',
+    memberof: 'module:conf',
+    namespace: 'conf',
+  },
   cjs: true,
-  description: 'Project configurations',
   dirname: __dirname,
-  name: 'conf',
 })
 
 if (!module.parent) {

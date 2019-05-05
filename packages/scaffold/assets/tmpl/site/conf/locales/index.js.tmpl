@@ -1,3 +1,8 @@
+/**
+ * Message resources
+ * @memberof module:conf
+ * @namespace locales
+ */
 'use strict'
 
 const theLoc = require('@the-/loc').create

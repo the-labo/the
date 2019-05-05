@@ -7,9 +7,12 @@ const name = path.basename(__dirname)
 
 module.exports = dir({
   dirname: __dirname,
-  name,
+  annotations: {
+    memberof: 'module:conf.locales',
+    namespace: name,
+    description: `${name} locales`,
+  },
   cjs: true,
-  description: `${name} locales`
 })
 
 if (!module.parent) {

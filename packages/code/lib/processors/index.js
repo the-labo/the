@@ -25,6 +25,7 @@ const processJSStrict_ = require('./processJSStrict')
 const processJSSwitch_ = require('./processJSSwitch')
 const processJSUnused_ = require('./processJSUnused')
 const processJSXAttribute_ = require('./processJSXAttribute')
+const processPackageJSON_ = require('./processPackageJSON')
 const processYAML_ = require('./processYAML')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
@@ -46,6 +47,7 @@ exports.processJSStrict = processJSStrict_
 exports.processJSSwitch = processJSSwitch_
 exports.processJSUnused = processJSUnused_
 exports.processJSXAttribute = processJSXAttribute_
+exports.processPackageJSON = processPackageJSON_
 exports.processYAML = processYAML_
 
 module.exports = {
@@ -67,5 +69,6 @@ module.exports = {
   processJSSwitch: processJSSwitch_,
   processJSUnused: processJSUnused_,
   processJSXAttribute: processJSXAttribute_,
+  processPackageJSON: processPackageJSON_,
   processYAML: processYAML_,
 }

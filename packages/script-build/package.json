@@ -21,8 +21,7 @@
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "7.0.0",
     "@babel/runtime": "^7.4.4",
-    "@okunishinishi/fixpack": "^3.0.1",
-    "@the-/code": "^15.4.16",
+    "@the-/code": "^15.4.22",
     "@the-/tmp": "^15.4.1",
     "ababel": "^6.0.0",
     "aglob": "^3.0.2",
@@ -65,5 +64,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build; npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
   },
-  "version": "15.4.6"
+  "version": "15.4.7"
 }

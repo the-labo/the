@@ -20,12 +20,12 @@ const theCode = require('@the-/code/pon')
 const theLint = require('@the-/lint/pon')
 const theSupport = require('@the-/support/pon')
 const locales = require('./conf/locales')
-const Local = require('./Local')
 const Containers = require('./misc/docker/Containers')
 const Drawings = require('./misc/icon/Drawings')
 const Rules = require('./misc/lint/Rules')
 const PondocDev = require('./misc/project/Pondoc.dev')
 const { cwd, doc, tasks } = require('./Ponfile')
+const { DockerPorts, WebApps } = require('./server/constants')
 
 module.exports = pon(
   /** @module tasks */
@@ -93,7 +93,7 @@ module.exports = pon(
           'nodemon',
           '--config',
           'misc/dev/Nodemon.json',
-          `--inspect=${Local.APP_INSPECT_PORT}`,
+          `--inspect=${WebApps.Default.INSPECT_PORT}`,
           'bin/app.js',
         ),
       ],
@@ -139,14 +139,7 @@ module.exports = pon(
       ),
       /** Format conf files */
       'format:conf': theCode(
-        [
-          'Local.js',
-          'Ponfile.js',
-          'Ponfile.*.js',
-          'conf/*.js',
-          'conf/.*.bud',
-          '.*.bud',
-        ],
+        ['Ponfile.js', 'Ponfile.*.js', 'conf/*.js', 'conf/.*.bud', '.*.bud'],
         { ignore: 'conf/index.js' },
       ),
       /** Format json files */
@@ -180,7 +173,7 @@ module.exports = pon(
     // -----------------------------------
     ...{
       /** Open app in browser */
-      'open:app': open(`http://localhost:${Local.DOCKER_NGINX_CONTAINER_PORT}`),
+      'open:app': open(`http://localhost:${DockerPorts.NGINX_CONTAINER_PORT}`),
       /** Open homepage field in package.json */
       'open:repo': npm('docs'),
     },

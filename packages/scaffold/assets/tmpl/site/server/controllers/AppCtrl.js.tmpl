@@ -1,12 +1,13 @@
 /**
  * Application controller
+ * @memberof module:server.controllers
  * @class AppCtrl
  */
 'use strict'
 
 const Ctrl = require('./Ctrl')
 
-/** @lends AppCtrl */
+/** @lends module:server.controllers.AppCtrl */
 class AppCtrl extends Ctrl {
   // TODO Remove this
   // Just an example

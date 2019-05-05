@@ -8,6 +8,7 @@ const { Ctrl } = require('@the-/templates')
 module.exports = ['AppCtrl'].map((name) =>
   Ctrl({
     cjs: true,
+    memberOf: 'module:server.controllers',
     name,
   }),
 )

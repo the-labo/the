@@ -4,6 +4,7 @@ const { scopes } = require('@the-/templates')
 
 module.exports = scopes({
   dirname: __dirname,
+  memberof: 'module:client',
 })
 
 if (!module.parent) {

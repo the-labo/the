@@ -1,0 +1,91 @@
+[
+  {
+    "id": "module:@the-/jsdoc",
+    "longname": "module:@the-/jsdoc",
+    "name": "@the-/jsdoc",
+    "kind": "module",
+    "description": "JSDoc generator",
+    "version": "15.4.3",
+    "license": "MIT",
+    "typicalname": "jsdoc",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/jsdoc/lib"
+    },
+    "order": 2
+  },
+  {
+    "id": "module:jsdoc.Jsdoc",
+    "longname": "module:jsdoc.Jsdoc",
+    "name": "Jsdoc",
+    "kind": "class",
+    "scope": "static",
+    "memberof": "module:jsdoc",
+    "meta": {
+      "lineno": 1,
+      "filename": "Jsdoc.js",
+      "path": "/Users/okuni/Projects/the/packages/jsdoc/lib"
+    },
+    "order": 3
+  },
+  {
+    "id": "module:jsdoc.create",
+    "longname": "module:jsdoc.create",
+    "name": "create",
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a Jsdoc instance",
+    "memberof": "module:jsdoc",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Jsdoc"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/jsdoc/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:jsdoc.jsdoc",
+    "longname": "module:jsdoc.jsdoc",
+    "name": "jsdoc",
+    "kind": "function",
+    "scope": "static",
+    "description": "Default exports",
+    "memberof": "module:jsdoc",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Jsdoc"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/jsdoc/lib"
+    },
+    "order": 1
+  }
+]

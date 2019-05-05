@@ -1,15 +1,16 @@
 /**
-* @class {{name}}
-* @augments TheResource
-*/
+ * @class {{name}}
+ * @memberof {{memberof}}
+ * @augments TheResource
+ */
 'use strict'
 
 const {
   TheResource,
-  DataTypes: {STRING, ENTITY},
+  DataTypes: { STRING, ENTITY },
 } = require('the-resource-base')
 
-/** @lends {{name}} */
+/** @lends {{memberof}}.{{name}} */
 class {{name}} extends TheResource {
   static get schema () {
     return {

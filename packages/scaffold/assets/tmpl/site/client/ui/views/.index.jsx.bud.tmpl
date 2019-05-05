@@ -3,10 +3,13 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir.recursive({
-  description: 'View components with lazy loading',
+  annotations: {
+    description: 'View components with lazy loading',
+    memberof: 'module:client.ui.views',
+    namespace: 'views',
+  },
   dirname: __dirname,
   ext: '.jsx',
-  name: 'views',
   tmpl: './.index.jsx.hbs',
 })
 

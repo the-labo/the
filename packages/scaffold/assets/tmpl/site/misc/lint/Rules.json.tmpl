@@ -44,7 +44,7 @@
     },
     "propRule": {
       "keypathAccess": {
-        "state": "client/store/scopes",
+        "state": "client/shim/store/scopes",
         "Urls": "conf/Urls"
       }
     }
@@ -67,6 +67,15 @@
     "moduleRule": {
       "keyPattern": "/^[A-Z_]+_ICON/",
       "type": "object"
+    }
+  },
+  "conf/locales/**/*.json": {
+    "usageRule": {
+      "flattenKeysUsedIn": [
+        "server/**/*.js",
+        "client/**/*.js",
+        "client/**/*.jsx"
+      ]
     }
   },
   "conf/Urls.js": {

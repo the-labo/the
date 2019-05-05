@@ -3,10 +3,13 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir({
-  description: 'Layout Components',
+  annotations: {
+    description: 'Layout Components',
+    memberof: 'module:client.ui',
+    namespace: 'layouts',
+  },
   dirname: __dirname,
   ext: '.jsx',
-  name: 'layouts',
 })
 
 if (!module.parent) {

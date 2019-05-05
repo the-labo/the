@@ -9,6 +9,7 @@ const aglob = require('aglob')
 const { canWriteAsync, readFileAsync, statAsync } = require('asfs')
 const path = require('path')
 const writeout = require('writeout')
+const Types = require('./constants/Types')
 const { typeHelper } = require('./helpers')
 const FormatCache = require('./helpers/FormatCache')
 const p = require('./processors')
@@ -39,7 +40,7 @@ class TheCode {
       yaml = true,
     } = config
     this.processers = {
-      javascript: [
+      [Types.JAVA_SCRIPT]: [
         jsFunction && p.processJSFunction,
         jsObject && p.processJSObject,
         jsBlock && p.processJSBlock,
@@ -55,16 +56,17 @@ class TheCode {
         fileEnd && p.processFileEnd,
         jsPrettier && p.processJSPrettier,
       ].filter(Boolean),
-      json: [json && p.processJSON, fileEnd && p.processFileEnd].filter(
+      [Types.JSON]: [json && p.processJSON, fileEnd && p.processFileEnd].filter(
         Boolean,
       ),
-      stylesheet: [
+      [Types.JSON_PACKAGE_JSON]: [p.processPackageJSON].filter(Boolean),
+      [Types.STYLE_SHEET]: [
         cssRule && p.processCSSRule,
         cssProp && p.processCSSProp,
         fileEnd && p.processFileEnd,
       ].filter(Boolean),
-      text: [fileEnd && p.processFileEnd].filter(Boolean),
-      yaml: [yaml && p.processYAML].filter(Boolean),
+      [Types.TEXT]: [fileEnd && p.processFileEnd].filter(Boolean),
+      [Types.YAML]: [yaml && p.processYAML].filter(Boolean),
     }
     this.cache = new FormatCache(cacheFile)
   }

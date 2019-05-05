@@ -48,5 +48,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && ./misc/tmplify.js",
     "test": "../../misc/scripts/pkgTest.js"
   },
-  "version": "15.4.2"
+  "version": "15.4.3"
 }

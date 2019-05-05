@@ -94,8 +94,9 @@ class ListScene extends ListSceneBase {
   }
 
   /**
-   * Do sync for more
-   * @returns {Promise<undefined>}
+   * Do sync for more.
+   *
+   * @returns {Promise}
    */
   async doSyncMore() {
     this.set({ moreBusy: true })
@@ -119,9 +120,7 @@ class ListScene extends ListSceneBase {
   }
 
   async doSyncOne(id) {
-    const {
-      entities: [one],
-    } = await this.dealWith({
+    const {} = await this.dealWith({
       filter: { id },
       page: { number: 1, size: 1 },
     })

@@ -3,11 +3,14 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir({
+  annotations: {
+    description: 'Scene classes',
+    memberof: 'module:client',
+    namespace: 'scenes',
+  },
   cjs: false,
-  description: 'Scene classes',
   dirname: __dirname,
   ext: '.js',
-  name: 'scenes',
 })
 
 if (!module.parent) {
