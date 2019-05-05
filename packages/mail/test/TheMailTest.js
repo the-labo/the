@@ -5,7 +5,6 @@
 'use strict'
 
 const { ok } = require('assert').strict
-const theSecret = require('@the-/secret').default
 const TheMail = require('../lib/TheMail')
 
 describe('the-mail', function() {
@@ -30,36 +29,35 @@ describe('the-mail', function() {
 
   it('Use SMTP', async () => {
     ok(TheMail)
-    return // FIXME
-    const mail = new TheMail({
-      service: 'smtp',
-      url: 'smtps://username:password@smtp.zoho.com/?pool=true',
-    })
-    await mail.send({
-      content: '<h3>The mail!</h3>',
-      from: 'support@kini-naru.site',
-      subject: 'This is the mail test',
-      to: 'okunishinishi@gmail.com',
-    })
+    // const mail = new TheMail({
+    //   service: 'smtp',
+    //   url: 'smtps://username:password@smtp.zoho.com/?pool=true',
+    // })
+    // await mail.send({
+    //   content: '<h3>The mail!</h3>',
+    //   from: 'support@kini-naru.site',
+    //   subject: 'This is the mail test',
+    //   to: 'okunishinishi@gmail.com',
+    // })
   })
 
   it('Send grid', async () => {
-    return // FIXME
-    const mail = new TheMail({
-      key: '',
-      service: 'sendgrid',
-    })
-
-    await mail
-      .send({
-        content: '<h3>The mail!</h3>',
-        from: 'support@the-demo-site.com',
-        subject: 'This is the mail test',
-        to: 'okunishinishi@gmail.com',
-      })
-      .catch((e) => {
-        console.error('error', e)
-      })
+    // const theSecret = require('@the-/secret')
+    // const mail = new TheMail({
+    //   key: '',
+    //   service: 'sendgrid',
+    // })
+    //
+    // await mail
+    //   .send({
+    //     content: '<h3>The mail!</h3>',
+    //     from: 'support@the-demo-site.com',
+    //     subject: 'This is the mail test',
+    //     to: 'okunishinishi@gmail.com',
+    //   })
+    //   .catch((e) => {
+    //     console.error('error', e)
+    //   })
   })
 })
 

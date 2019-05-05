@@ -21,7 +21,7 @@ const withReady = asClassMixin((Class) => {
      */
     async ifReady(task) {
       if (this.isReady) {
-        return await task()
+        return task()
       }
     },
     /**

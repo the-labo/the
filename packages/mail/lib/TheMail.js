@@ -22,6 +22,7 @@ class TheMail {
 
   /**
    * Send mail
+   * @param {Object} config
    * @param {string} config.from - From address
    * @param {string} config.to - To address
    * @param {string} config.subject - Mail subject

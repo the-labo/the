@@ -11,10 +11,10 @@ describe('supported-props', function() {
   this.timeout(3000)
 
   it('Supported props', () => {
-    for (let name of Object.keys(SupportedProps)) {
+    for (const name of Object.keys(SupportedProps)) {
       ok(SupportedProps[name])
     }
   })
 })
 
-/* global describe, before, after, it */
+/* global describe, it */

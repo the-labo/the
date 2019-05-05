@@ -30,7 +30,7 @@
 ## @the-/resource
 Base of the-resource
 
-**Version**: 15.4.2  
+**Version**: 15.4.3  
 **License**: MIT  
 
 * [@the-/resource](#module_@the-/resource)
@@ -38,7 +38,7 @@ Base of the-resource
         * [new TheResource()](#new_module_@the-/resource.TheResource_new)
         * _instance_
             * [.refOf(id)](#module_@the-/resource.TheResource+refOf) ⇒ <code>string</code> \| <code>Object</code>
-            * [.emptyList()](#module_@the-/resource.TheResource+emptyList) ⇒ <code>Promise.&lt;lib.Collection&gt;</code>
+            * [.emptyList()](#module_@the-/resource.TheResource+emptyList) ⇒ <code>Promise.&lt;Object&gt;</code>
             * [.invalidated(attributes)](#module_@the-/resource.TheResource+invalidated) ⇒ <code>Promise.&lt;Object&gt;</code>
             * [.refresh(entity)](#module_@the-/resource.TheResource+refresh) ⇒ <code>Promise.&lt;undefined&gt;</code>
             * [.refreshAll()](#module_@the-/resource.TheResource+refreshAll) ⇒ <code>Promise.&lt;undefined&gt;</code>
@@ -67,7 +67,7 @@ Base of the-resource
     * [new TheResource()](#new_module_@the-/resource.TheResource_new)
     * _instance_
         * [.refOf(id)](#module_@the-/resource.TheResource+refOf) ⇒ <code>string</code> \| <code>Object</code>
-        * [.emptyList()](#module_@the-/resource.TheResource+emptyList) ⇒ <code>Promise.&lt;lib.Collection&gt;</code>
+        * [.emptyList()](#module_@the-/resource.TheResource+emptyList) ⇒ <code>Promise.&lt;Object&gt;</code>
         * [.invalidated(attributes)](#module_@the-/resource.TheResource+invalidated) ⇒ <code>Promise.&lt;Object&gt;</code>
         * [.refresh(entity)](#module_@the-/resource.TheResource+refresh) ⇒ <code>Promise.&lt;undefined&gt;</code>
         * [.refreshAll()](#module_@the-/resource.TheResource+refreshAll) ⇒ <code>Promise.&lt;undefined&gt;</code>
@@ -87,13 +87,13 @@ Get ref of id
 
 **Kind**: instance method of [<code>TheResource</code>](#module_@the-/resource.TheResource)  
 
-| Param | Description |
-| --- | --- |
-| id | Id (or may be an entity) |
+| Param | Type | Description |
+| --- | --- | --- |
+| id | <code>string</code> \| <code>Object</code> | Id (or may be an entity) |
 
 <a name="module_@the-/resource.TheResource+emptyList"></a>
 
-#### theResource.emptyList() ⇒ <code>Promise.&lt;lib.Collection&gt;</code>
+#### theResource.emptyList() ⇒ <code>Promise.&lt;Object&gt;</code>
 Create empty list
 
 **Kind**: instance method of [<code>TheResource</code>](#module_@the-/resource.TheResource)  
@@ -117,7 +117,7 @@ Refresh clay entity
 
 | Param | Type |
 | --- | --- |
-| entity | <code>Entity</code> | 
+| entity | <code>Object</code> | 
 
 <a name="module_@the-/resource.TheResource+refreshAll"></a>
 
@@ -139,11 +139,11 @@ Cascade destroy condition
 **Kind**: static property of [<code>TheResource</code>](#module_@the-/resource.TheResource)  
 **Example**  
 ```js
-class MyResource extends TheResource
-  get cascaded () {
-    return { User: (ref) => ({user: {$ref: ref}}) }
-  }
-}
+class MyResource extends TheResource {
+     get cascaded () {
+       return { User: (ref) => ({user: {$ref: ref}}) }
+     }
+   }
 ```
 <a name="module_@the-/resource.TheResourceBase"></a>
 
@@ -280,4 +280,5 @@ Listen to update
 
 | Param | Type |
 | --- | --- |
-| onUpdate | <code>function</code> |
+| onUpdate | <code>function</code> | 
+

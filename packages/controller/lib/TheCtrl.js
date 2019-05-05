@@ -11,7 +11,7 @@ const passed = (date) => new Date() - date
 class TheCtrl {
   /**
    * Hook after invocation
-   * @param {Invocation} invocation - Action invocation
+   * @param {Object} invocation - Action invocation
    * @returns {Promise<undefined>}
    */
   static async afterInvocation(invocation) {
@@ -24,7 +24,7 @@ class TheCtrl {
 
   /**
    * Hook before invocation
-   * @param {Invocation} invocation - Action invocation
+   * @param {Object} invocation - Action invocation
    * @returns {Promise<undefined>}
    */
   static async beforeInvocation(invocation) {
@@ -37,7 +37,7 @@ class TheCtrl {
 
   /**
    * Hook rescue invocation error
-   * @param {Invocation} invocation - Action invocation
+   * @param {Object} invocation - Action invocation
    * @returns {Promise<undefined>}
    */
   static async rescueInvocation(invocation) {

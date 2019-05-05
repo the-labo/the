@@ -30,13 +30,11 @@ class TheResource extends TheResourceBase {
   /**
    * Cascade destroy condition
    * @example
-   * ```
-   * class MyResource extends TheResource
-   *   get cascaded () {
-   *     return { User: (ref) => ({user: {$ref: ref}}) }
-   *   }
-   * }
-   * ```
+   class MyResource extends TheResource {
+     get cascaded () {
+       return { User: (ref) => ({user: {$ref: ref}}) }
+     }
+   }
    */
   static get cascaded() {
     return {}
@@ -60,7 +58,7 @@ class TheResource extends TheResourceBase {
 
   /**
    * Get ref of id
-   * @param id - Id (or may be an entity)
+   * @param {string|Object} id - Id (or may be an entity)
    * @returns {string|Object}
    */
   refOf(id) {

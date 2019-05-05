@@ -152,7 +152,7 @@ class TheClient extends TheClientBase {
       console.log('Arguments', values)
       console.groupEnd()
     })
-    callback(...values)
+    callback(...values) // eslint-disable-line
   }
 
   markAsGone(reason) {

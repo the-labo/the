@@ -12,6 +12,11 @@ const pkgInstall = require('./misc/tasks/pkgInstall')
 const pkgPublish = require('./misc/tasks/pkgPublish')
 const theCode = require('@the-/code/pon')
 const { mocha } = require('pon-task-dev')
+const {
+  command: {
+    spawn: { npx },
+  },
+} = require('pon-task-basic')
 
 const { cwd, tasks } = require('./Ponfile')
 
@@ -24,6 +29,14 @@ module.exports = pon({
   ...{
     $cwd: cwd,
     $dev: true,
+  },
+
+  // -----------------------------------
+  // Eslint
+  // -----------------------------------
+  ...{
+    'eslint:check': npx('eslint', __dirname, '--cache'),
+    'eslint:fix': npx('eslint', __dirname, '--cache', '--fix'),
   },
 
   // -----------------------------------
@@ -67,7 +80,7 @@ module.exports = pon({
   // -----------------------------------
   ...{
     format: ['format:root', 'format:packages'],
-    prepare: [...tasks.prepare, ...['pkg:sync']],
+    prepare: [...tasks.prepare, 'pkg:sync', 'eslint:fix', 'eslint:check'],
     install: ['pkg:install'],
     build: [...tasks.build, 'pkg:run:build', 'format'],
     doc: ['pkg:run:doc'],

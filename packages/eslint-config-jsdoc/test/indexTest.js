@@ -10,7 +10,8 @@ describe('index', () => {
   it('rules', () => {
     for (const [k, v] of Object.entries(index.rules)) {
       ok(/jsdoc/.test(k), `[${k}] valid prefix`)
-      ok(['error', 'warn', 'off'].includes(v), `[${k}] valid value`)
+      const level = Array.isArray(v) ? v[0] : v
+      ok(['error', 'warn', 'off'].includes(level), `[${k}] valid level`)
     }
   })
 })

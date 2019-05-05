@@ -7,7 +7,7 @@
 function getAllPropertyDescriptors(instance) {
   let descriptors = {}
   {
-    let { __proto__ } = instance
+    let __proto__ = Object.getPrototypeOf(instance)
     while (__proto__) {
       const { constructor } = __proto__
       if (constructor === Object) {
@@ -15,7 +15,7 @@ function getAllPropertyDescriptors(instance) {
       }
       const found = Object.getOwnPropertyDescriptors(__proto__)
       descriptors = Object.assign({}, found, descriptors)
-      __proto__ = __proto__.__proto__
+      __proto__ = Object.getPrototypeOf(__proto__)
     }
   }
   return descriptors

@@ -25,7 +25,7 @@ class TheInfo extends React.Component {
     )
   }
 
-  static Row({ children, className, label, value }) {
+  static Row({ className, label, value }) {
     return (
       <div className={classnames('the-info-row', className)} role='row'>
         <label className='the-info-row-label' role='rowheader'>

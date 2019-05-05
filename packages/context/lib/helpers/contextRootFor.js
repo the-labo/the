@@ -13,10 +13,6 @@ function contextRootFor(context, { value }) {
   const { Provider } = context
 
   class ContextRoot extends React.Component {
-    constructor(props) {
-      super(props)
-    }
-
     componentDidMount() {}
 
     componentWillUnmount() {}

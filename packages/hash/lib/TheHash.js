@@ -34,8 +34,8 @@ class TheHash extends Object {
 
   /**
    * Set value for key
-   * @param {string} key
-   * @param value
+   * @param {string} key - Key to set
+   * @param {*} value - Value to set
    */
   set(key, value) {
     const byObj = arguments.length === 1 && typeof arguments[0] === 'object'
@@ -50,7 +50,7 @@ class TheHash extends Object {
 
   /**
    * Convert into proxy
-   * @param options
+   * @param {Object} [options={}]
    * @returns {*}
    */
   toProxy(options = {}) {

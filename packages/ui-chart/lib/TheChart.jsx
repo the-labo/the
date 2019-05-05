@@ -38,7 +38,7 @@ class TheChart extends React.Component {
 
   render() {
     const { props } = this
-    const { className, data, height, options, type, width } = props
+    const { className, height, width } = props
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className', 'data'] })}

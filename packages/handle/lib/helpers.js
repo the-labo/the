@@ -9,7 +9,7 @@ module.exports = {
   allMethodNames(instance) {
     const names = []
     const namesToIgnore = ['constructor']
-    let { __proto__ } = instance
+    let __proto__ = Object.getPrototypeOf(instance)
     while (__proto__) {
       const { constructor } = __proto__
       if (constructor === Object) {
@@ -23,7 +23,7 @@ module.exports = {
         })
         .filter((name) => typeof instance[name] === 'function')
       names.unshift(...found)
-      __proto__ = __proto__.__proto__
+      __proto__ = Object.getPrototypeOf(__proto__)
     }
     return names
   },

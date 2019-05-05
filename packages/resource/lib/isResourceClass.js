@@ -20,7 +20,7 @@ function isResourceClass(Class) {
     if (hit) {
       return true
     }
-    named = named.__proto__
+    named = Object.getPrototypeOf(named)
   }
   return false
 }

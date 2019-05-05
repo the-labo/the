@@ -45,7 +45,7 @@
 ## @the-/mixin-controller
 Mixins for the-controller
 
-**Version**: 15.4.0  
+**Version**: 15.4.1  
 **License**: MIT  
 <a name="compose"></a>
 
@@ -112,4 +112,4 @@ Wrap controller with seal
 <a name="omitLongString"></a>
 
 ## omitLongString()
-**Kind**: global function
+**Kind**: global function  

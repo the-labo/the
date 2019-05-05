@@ -37,7 +37,8 @@ function listenMix(Class) {
       const { resourceName } = this
       for (const [event, handler] of Object.entries(handlers)) {
         const handlerWrap = async function eventListenerWrap(...args) {
-          return new Promise(handler(...args)).catch((e) => {
+          const promise = Promise.resolve(handler(...args))
+          return promise.catch((e) => {
             console.error(
               `[the-resource][${resourceName}] Error on listener`,
               e,
@@ -101,12 +102,12 @@ function listenMix(Class) {
       return this.listenEvents({
         [ENTITY_DESTROY]: async ({ destroyed, gone, id }) =>
           destroyed > 0 &&
-          (await onDestroy({
+          onDestroy({
             destroyed,
             event: ENTITY_DESTROY,
             gone,
             id,
-          })),
+          }),
         [ENTITY_DESTROY_BULK]: async ({ destroyed, gone, ids }) =>
           Promise.all(
             ids

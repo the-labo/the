@@ -1,9 +1,9 @@
 /**
  * Mount into component demo
  * @function mount
- * @param {function} Component - Component class
+ * @param {function()} Component - Component class
  * @param {Object} props - Root props
- * @param {function} callback
+ * @param {function()} callback
  */
 'use strict'
 

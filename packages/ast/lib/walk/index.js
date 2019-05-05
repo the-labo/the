@@ -48,7 +48,7 @@ exports.ancestor = function ancestor(node, visitors, state) {
 
     const { enter, exit } = visitors[node.type] || {}
 
-    let isNew = node != ancestors[ancestors.length - 1]
+    let isNew = node !== ancestors[ancestors.length - 1]
     if (isNew) ancestors.push(node)
 
     if (enter) {

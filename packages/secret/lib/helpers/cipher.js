@@ -14,7 +14,7 @@ exports.cipherText = function cipher(algorithm, password, text, options = {}) {
   const { iv = null } = options
   if (!iv) {
     // For old format data
-    const cipher = crypto.createCipher(algorithm, password)
+    const cipher = crypto.createCipher(algorithm, password) // eslint-disable-line node/no-deprecated-api
     return (
       cipher.update(text, TEXT_ENCODE, CRYPTO_ENCODE) +
       cipher.final(CRYPTO_ENCODE)
@@ -37,7 +37,7 @@ exports.decipherText = function decipher(
   const { iv = null } = options
   if (!iv) {
     // For old format data
-    const decipher = crypto.createDecipher(algorithm, password)
+    const decipher = crypto.createDecipher(algorithm, password) // eslint-disable-line node/no-deprecated-api
     return (
       decipher.update(encrypted, CRYPTO_ENCODE, TEXT_ENCODE) +
       decipher.final(TEXT_ENCODE)
