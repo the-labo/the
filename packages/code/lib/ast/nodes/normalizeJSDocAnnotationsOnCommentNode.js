@@ -58,19 +58,28 @@ function normalizeJSDocAnnotationsOnCommentNode(CommentNode, { replace }) {
           type.value.replace('.<', '<'),
         )
       }
-      const subTypeMatch = type.value.match(/(.*<)(.*)(>.*)/)
+      const subTypeMatch = type.value && type.value.match(/(.*<)(.*)(>.*)/)
       if (subTypeMatch) {
-        const [, before, subType, after] = subTypeMatch
-        const normalizedSubType = typesMap[subType]
-        if (normalizedSubType) {
+        const [, before, subTypes, after] = subTypeMatch
+        const normalizedSubTypes = subTypes
+          .split('|')
+          .filter(Boolean)
+          .map((subType) => typesMap[subType] || subType)
+          .join('|')
+        if (subTypes !== normalizedSubTypes) {
           return replace(
             [type.start + 1, type.end - 1],
-            [before, normalizedSubType, after].join(''),
+            [before, normalizedSubTypes, after].join(''),
           )
         }
       }
-      const normalizedType = typesMap[type.value]
-      if (normalizedType) {
+      const normalizedType =
+        type.value &&
+        type.value
+          .split('|')
+          .map((typeValue) => typesMap[typeValue] || typeValue)
+          .join('|')
+      if (normalizedType !== type.value) {
         return replace([type.start + 1, type.end - 1], normalizedType)
       }
     }

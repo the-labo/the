@@ -96,17 +96,19 @@ describe('process-js-doc', () => {
     )
   })
 
-  it('Fix types', async () => {
+  it('Fix types 2', async () => {
     equal(
       await processJSDoc(`
 /**
  *  @param {String}
- *  @returns {Promise.<void>}
+ *  @param {String|Boolean}
+ *  @returns {Promise.<void|Boolean>}
  */`),
       `
 /**
  *  @param {string}
- *  @returns {Promise<undefined>}
+ *  @param {string|boolean}
+ *  @returns {Promise<undefined|boolean>}
  */`,
     )
   })
