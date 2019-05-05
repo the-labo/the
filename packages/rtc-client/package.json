@@ -13,7 +13,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.4.1",
+    "@the-/check": "^15.5.0",
     "@the-/media": "^15.4.2",
     "@the-/pack": "^15.4.0",
     "@the-/window": "^15.4.1",

@@ -100,7 +100,6 @@ tryExample().catch((err) => console.error(err))
 
 - module:@the-/check
   - [.canTouch()](./doc/api/api.md#module_@the-/check.canTouch)
-  - [.hasBin(binName,options)](./doc/api/api.md#module_@the-/check.hasBin)
   - [.isBrowser()](./doc/api/api.md#module_@the-/check.isBrowser)
   - [.isChrome()](./doc/api/api.md#module_@the-/check.isChrome)
   - [.isFirefox()](./doc/api/api.md#module_@the-/check.isFirefox)

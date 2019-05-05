@@ -1,148 +1,129 @@
 [
   {
-    "id": "module:@the-/check",
-    "longname": "module:@the-/check",
-    "name": "@the-/check",
-    "kind": "module",
     "description": "Check utility for the-framework",
-    "version": "15.5.0",
+    "id": "module:@the-/check",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "check",
+    "longname": "module:@the-/check",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/check/lib"
     },
-    "order": 1
+    "name": "@the-/check",
+    "order": 1,
+    "typicalname": "check",
+    "version": "15.5.0"
   },
   {
-    "id": "module:@the-/check.canTouch",
-    "longname": "module:@the-/check.canTouch",
-    "name": "canTouch",
-    "kind": "function",
-    "scope": "static",
     "description": "Check touch supported",
+    "id": "module:@the-/check.canTouch",
+    "kind": "function",
+    "longname": "module:@the-/check.canTouch",
     "memberof": "module:@the-/check",
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "boolean"
-          ]
-        }
-      }
-    ],
     "meta": {
-      "lineno": 1,
       "filename": "canTouch.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/check/lib"
     },
-    "order": 0
+    "name": "canTouch",
+    "order": 0,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
   },
   {
-    "id": "module:@the-/check.isBrowser",
-    "longname": "module:@the-/check.isBrowser",
-    "name": "isBrowser",
-    "kind": "function",
-    "scope": "static",
     "description": "Detect if browser side",
+    "id": "module:@the-/check.isBrowser",
+    "kind": "function",
+    "longname": "module:@the-/check.isBrowser",
     "memberof": "module:@the-/check",
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "boolean"
-          ]
-        }
-      }
-    ],
     "meta": {
-      "lineno": 1,
       "filename": "isBrowser.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/check/lib"
     },
-    "order": 2
+    "name": "isBrowser",
+    "order": 2,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
   },
   {
-    "id": "module:@the-/check.isChrome",
-    "longname": "module:@the-/check.isChrome",
-    "name": "isChrome",
-    "kind": "function",
-    "scope": "static",
     "description": "Detect chrome or not",
+    "id": "module:@the-/check.isChrome",
+    "kind": "function",
+    "longname": "module:@the-/check.isChrome",
     "memberof": "module:@the-/check",
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "boolean"
-          ]
-        }
-      }
-    ],
     "meta": {
-      "lineno": 1,
       "filename": "isChrome.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/check/lib"
     },
-    "order": 3
+    "name": "isChrome",
+    "order": 3,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
   },
   {
-    "id": "module:@the-/check.isFirefox",
-    "longname": "module:@the-/check.isFirefox",
-    "name": "isFirefox",
-    "kind": "function",
-    "scope": "static",
     "description": "Detect Firefox or not",
+    "id": "module:@the-/check.isFirefox",
+    "kind": "function",
+    "longname": "module:@the-/check.isFirefox",
     "memberof": "module:@the-/check",
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "boolean"
-          ]
-        }
-      }
-    ],
     "meta": {
-      "lineno": 1,
       "filename": "isFirefox.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/check/lib"
     },
-    "order": 4
+    "name": "isFirefox",
+    "order": 4,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
   },
   {
-    "id": "module:@the-/check.isiOS",
-    "longname": "module:@the-/check.isiOS",
-    "name": "isiOS",
-    "kind": "function",
-    "scope": "static",
     "description": "Detect iOS or not",
+    "id": "module:@the-/check.isiOS",
+    "kind": "function",
+    "longname": "module:@the-/check.isiOS",
     "memberof": "module:@the-/check",
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "boolean"
-          ]
-        }
-      }
-    ],
     "meta": {
-      "lineno": 1,
       "filename": "isiOS.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/check/lib"
     },
-    "order": 5
-  },
-  {
-    "id": "module:@the-/check.isMacOS",
-    "longname": "module:@the-/check.isMacOS",
-    "name": "isMacOS",
-    "kind": "function",
-    "scope": "static",
-    "description": "Detect is mac OS",
-    "memberof": "module:@the-/check",
+    "name": "isiOS",
+    "order": 5,
     "returns": [
       {
         "type": {
@@ -152,21 +133,45 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "isMacOS.js",
-      "path": "/Users/okuni/Projects/the/packages/check/lib"
-    },
-    "order": 6
+    "scope": "static"
   },
   {
-    "id": "module:@the-/check.isProduction",
-    "longname": "module:@the-/check.isProduction",
-    "name": "isProduction",
+    "description": "Detect is mac OS",
+    "id": "module:@the-/check.isMacOS",
     "kind": "function",
-    "scope": "static",
-    "description": "Do unless production env",
+    "longname": "module:@the-/check.isMacOS",
     "memberof": "module:@the-/check",
+    "meta": {
+      "filename": "isMacOS.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/check/lib"
+    },
+    "name": "isMacOS",
+    "order": 6,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Do unless production env",
+    "id": "module:@the-/check.isProduction",
+    "kind": "function",
+    "longname": "module:@the-/check.isProduction",
+    "memberof": "module:@the-/check",
+    "meta": {
+      "filename": "isProduction.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/check/lib"
+    },
+    "name": "isProduction",
+    "order": 7,
     "returns": [
       {
         "type": {
@@ -177,21 +182,21 @@
         "description": "Is production or not"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "isProduction.js",
-      "path": "/Users/okuni/Projects/the/packages/check/lib"
-    },
-    "order": 7
+    "scope": "static"
   },
   {
-    "id": "module:@the-/check.unlessProduction",
-    "longname": "module:@the-/check.unlessProduction",
-    "name": "unlessProduction",
-    "kind": "function",
-    "scope": "static",
     "description": "Do unless production env",
+    "id": "module:@the-/check.unlessProduction",
+    "kind": "function",
+    "longname": "module:@the-/check.unlessProduction",
     "memberof": "module:@the-/check",
+    "meta": {
+      "filename": "unlessProduction.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/check/lib"
+    },
+    "name": "unlessProduction",
+    "order": 8,
     "params": [
       {
         "type": {
@@ -202,11 +207,6 @@
         "name": "handler"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "unlessProduction.js",
-      "path": "/Users/okuni/Projects/the/packages/check/lib"
-    },
-    "order": 8
+    "scope": "static"
   }
 ]

@@ -80,8 +80,8 @@ async function tryExample() {
   class FruitShopCtrl extends TheCtrl {
     async buy(name, amount = 1) {
       // Controller instance will be created per client
-      const {} = this
       /* ... */
+      console.log(name, amount)
     }
   }
 
