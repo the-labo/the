@@ -24,7 +24,7 @@ async function prepareModel(Model, Schema) {
       const type = defined.type.toSql ? defined.type.toSql() : defined.type.key
       const changed =
         ['allowNull', 'primaryKey', 'unique'].some(
-          (k) => described[k] !== described[k],
+          (k) => described[k] !== defined[k],
         ) || type !== described.type
       if (changed) {
         await queryInterface.changeColumn(tableName, attributeName, defined)
