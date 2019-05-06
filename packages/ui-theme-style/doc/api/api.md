@@ -21,10 +21,10 @@
 ## @the-/ui-theme-style
 Theme style for the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.3  
 <a name="TheThemeStyle"></a>
 
 ## TheThemeStyle()
 Theme Style of the-components
 
-**Kind**: global function
+**Kind**: global function  

@@ -29,7 +29,7 @@
 ## @the-/ui-qr
 QRCode the-component
 
-**Version**: 15.4.2  
+**Version**: 15.4.3  
 <a name="TheQr"></a>
 
 ## TheQr
@@ -41,4 +41,4 @@ QRCode the-component
 ## TheQrStyle()
 Style for TheQr
 
-**Kind**: global function
+**Kind**: global function  

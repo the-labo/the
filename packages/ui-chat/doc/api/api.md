@@ -38,7 +38,7 @@
 ## @the-/ui-chat
 Chat UI of the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.3  
 <a name="TheChat"></a>
 
 ## TheChat
@@ -68,4 +68,4 @@ Chat Time line item
 ## TheChatStyle()
 Style for TheChat
 
-**Kind**: global function
+**Kind**: global function  

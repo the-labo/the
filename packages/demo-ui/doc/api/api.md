@@ -27,4 +27,4 @@ Demo of the-components
 ### demoUi.TheDemoUiStyle()
 Style for TheDemoUi
 
-**Kind**: static method of [<code>@the-/demo-ui</code>](#module_@the-/demo-ui)  
+**Kind**: static method of [<code>@the-/demo-ui</code>](#module_@the-/demo-ui)

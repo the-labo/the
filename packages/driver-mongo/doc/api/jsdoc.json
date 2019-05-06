@@ -1,70 +1,75 @@
 [
   {
-    "id": "module:@the-/driver-mongo",
-    "longname": "module:@the-/driver-mongo",
-    "name": "@the-/driver-mongo",
-    "kind": "module",
     "description": "Mongo driver for the-db",
-    "version": "15.4.4",
+    "id": "module:@the-/driver-mongo",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "driverMongo",
+    "longname": "module:@the-/driver-mongo",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib"
     },
-    "order": 1
+    "name": "@the-/driver-mongo",
+    "order": 1,
+    "typicalname": "driverMongo",
+    "version": "15.4.4"
   },
   {
-    "id": "module:@the-/driver-mongo.MongoDriver()",
-    "longname": "module:@the-/driver-mongo.MongoDriver",
-    "name": "MongoDriver",
-    "kind": "constructor",
     "description": "Driver for mongo db",
+    "id": "module:@the-/driver-mongo.MongoDriver()",
+    "kind": "constructor",
+    "longname": "module:@the-/driver-mongo.MongoDriver",
     "memberof": "module:@the-/driver-mongo.MongoDriver",
+    "name": "MongoDriver",
     "order": 3
   },
   {
-    "id": "module:@the-/driver-mongo.MongoDriver",
-    "longname": "module:@the-/driver-mongo.MongoDriver",
-    "name": "MongoDriver",
-    "kind": "class",
-    "scope": "static",
     "augments": [
       "Driver"
     ],
+    "id": "module:@the-/driver-mongo.MongoDriver",
+    "inheritdoc": "",
+    "kind": "class",
+    "longname": "module:@the-/driver-mongo.MongoDriver",
     "memberof": "module:@the-/driver-mongo",
     "meta": {
-      "lineno": 1,
       "filename": "MongoDriver.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib"
     },
-    "inheritdoc": "",
-    "order": 2
+    "name": "MongoDriver",
+    "order": 2,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/driver-mongo.mixins",
-    "longname": "module:@the-/driver-mongo.mixins",
-    "name": "mixins",
-    "kind": "namespace",
-    "scope": "static",
     "description": "Client mixin functions",
+    "id": "module:@the-/driver-mongo.mixins",
+    "kind": "namespace",
+    "longname": "module:@the-/driver-mongo.mixins",
     "memberof": "module:@the-/driver-mongo",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib/mixins"
     },
-    "order": 4
+    "name": "mixins",
+    "order": 4,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/driver-mongo.create",
-    "longname": "module:@the-/driver-mongo.create",
-    "name": "create",
-    "kind": "function",
-    "scope": "static",
     "description": "Create a MongoDriver instance",
+    "id": "module:@the-/driver-mongo.create",
+    "kind": "function",
+    "longname": "module:@the-/driver-mongo.create",
     "memberof": "module:@the-/driver-mongo",
+    "meta": {
+      "filename": "create.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib"
+    },
+    "name": "create",
+    "order": 0,
     "params": [
       {
         "type": {
@@ -85,26 +90,21 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "create.js",
-      "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib"
-    },
-    "order": 0
+    "scope": "static"
   },
   {
-    "id": "module:@the-/driver-mongo.mixins.mongoMix",
-    "longname": "module:@the-/driver-mongo.mixins.mongoMix",
-    "name": "mongoMix",
-    "kind": "function",
-    "scope": "static",
     "description": "Mixin of mongodb",
+    "id": "module:@the-/driver-mongo.mixins.mongoMix",
+    "kind": "function",
+    "longname": "module:@the-/driver-mongo.mixins.mongoMix",
     "memberof": "module:@the-/driver-mongo.mixins",
     "meta": {
-      "lineno": 1,
       "filename": "mongoMix.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib/mixins"
     },
-    "order": 5
+    "name": "mongoMix",
+    "order": 5,
+    "scope": "static"
   }
 ]

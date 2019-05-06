@@ -132,4 +132,4 @@ Create a TheControllerBase instance
 ### controller.default()
 Alias of [create](#module_@the-/controller.create)
 
-**Kind**: static method of [<code>@the-/controller</code>](#module_@the-/controller)  
+**Kind**: static method of [<code>@the-/controller</code>](#module_@the-/controller)

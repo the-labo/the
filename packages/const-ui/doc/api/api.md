@@ -127,4 +127,4 @@ Vendor Colors
 ## containerWidth
 Width of container
 
-**Kind**: global variable  
+**Kind**: global variable

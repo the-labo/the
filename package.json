@@ -22,8 +22,7 @@
   "dependencies": {
     "asfs": "^2.2.3",
     "pon": "^5.2.14",
-    "pon-task-basic": "^4.2.19",
-    "the-file-util": "^1.2.3"
+    "pon-task-basic": "^4.2.19"
   },
   "engines": {
     "node": ">=10",
@@ -54,8 +53,6 @@
     "@the-/script-doc": "^15.4.3",
     "@the-/script-test": "^15.4.0",
     "@the-/templates": "^15.4.12",
-    "@the-/ui-demo": "^15.4.0",
-    "@the-/ui-router": "^15.4.0",
     "@the-/util-file": "^15.4.3",
     "aglob": "^3.0.2",
     "babel-eslint": "^10.0.1",
@@ -68,13 +65,10 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-standard": "^4.0.0",
-    "npm-install-if-needed": "^1.0.4",
+    "npm-install-if-needed": "^1.0.5",
     "pon-task-dev": "^1.0.8",
     "prettier": "^1.17.0",
     "publish-if-needed": "^1.1.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0",
     "rimraf": "^2.6.3",
     "semver": "^6.0.0"
   }

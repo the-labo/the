@@ -3,8 +3,8 @@
 const aglob = require('aglob')
 const path = require('path')
 const semver = require('semver')
-const { writeAsJson } = require('the-file-util')
 const fixpack = require('@okunishinishi/fixpack')
+const { writeAsJson } = require('@the-/util-file')
 
 function pkgSync(src, targets) {
   return async function task(ctx) {

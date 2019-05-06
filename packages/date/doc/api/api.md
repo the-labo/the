@@ -268,4 +268,4 @@ Create a TheDate instance
 ### date.default() ⇒ <code>TheDate</code>
 Default exports
 
-**Kind**: static method of [<code>@the-/date</code>](#module_@the-/date)  
+**Kind**: static method of [<code>@the-/date</code>](#module_@the-/date)

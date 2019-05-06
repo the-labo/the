@@ -29,7 +29,7 @@
 ## @the-/ui-flick
 Flickable viewer of the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.3  
 <a name="TheFlick"></a>
 
 ## TheFlick
@@ -41,4 +41,4 @@ Flickable viewer of the-components
 ## TheFlickStyle()
 Style for TheFlick
 
-**Kind**: global function
+**Kind**: global function  

@@ -29,7 +29,7 @@
 ## @the-/ui-chart
 Chart for the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.3  
 <a name="TheChart"></a>
 
 ## TheChart
@@ -41,4 +41,4 @@ Chart for the-components
 ## TheChartStyle()
 Style for TheChart
 
-**Kind**: global function
+**Kind**: global function  

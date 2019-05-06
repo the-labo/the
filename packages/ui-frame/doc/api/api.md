@@ -29,7 +29,7 @@
 ## @the-/ui-frame
 iFrame of the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.3  
 <a name="TheFrame"></a>
 
 ## TheFrame
@@ -41,4 +41,4 @@ iFrame of the-components
 ## TheFrameStyle()
 Style for TheFrame
 
-**Kind**: global function
+**Kind**: global function  

@@ -40,7 +40,7 @@ Route of the-components
 ## @the-/ui-route
 Route of the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.3  
 <a name="TheRoute"></a>
 
 ## TheRoute
@@ -58,4 +58,4 @@ Tab for the-components
 ## TheRouteStyle()
 Style for TheRoute
 
-**Kind**: global function
+**Kind**: global function  

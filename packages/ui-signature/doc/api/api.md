@@ -29,7 +29,7 @@
 ## @the-/ui-signature
 Signature pad of the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.3  
 <a name="TheSignature"></a>
 
 ## TheSignature
@@ -41,4 +41,4 @@ Signature pad of the-components
 ## TheSignatureStyle()
 Style for TheSignature
 
-**Kind**: global function
+**Kind**: global function  

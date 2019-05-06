@@ -22,7 +22,10 @@
   },
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
-    "coz": "^7.0.19"
+    "coz": "^7.0.19",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0"
   },
   "engines": {
     "node": ">=10",

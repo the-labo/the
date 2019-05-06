@@ -21,10 +21,10 @@
 ## @the-/ui-head
 Head of the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.3  
 <a name="TheHead"></a>
 
 ## TheHead
 Head of the-components
 
-**Kind**: global class
+**Kind**: global class  

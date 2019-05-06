@@ -32,7 +32,7 @@
 ## @the-/ui-button
 Button of the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.3  
 <a name="TheButton"></a>
 
 ## TheButton
@@ -50,4 +50,4 @@ Group of buttons
 ## TheButtonStyle()
 Style for TheButton
 
-**Kind**: global function
+**Kind**: global function  

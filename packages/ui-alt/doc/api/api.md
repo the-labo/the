@@ -30,4 +30,3 @@ Alt text for the-components
 
 #### new TheAltStyle()
 Style for the-alt
-

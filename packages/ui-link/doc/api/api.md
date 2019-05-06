@@ -29,7 +29,7 @@
 ## @the-/ui-link
 Link of the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.3  
 <a name="TheLink"></a>
 
 ## TheLink
@@ -41,4 +41,4 @@ Link of the-components
 ## TheLinkStyle()
 Style for TheLink
 
-**Kind**: global function
+**Kind**: global function  
