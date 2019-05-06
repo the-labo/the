@@ -36,7 +36,7 @@
 ## @the-/rtc
 RTC server for the-frameworks
 
-**Version**: 15.4.2  
+**Version**: 15.4.4  
 **License**: MIT  
 
 * [@the-/rtc](#module_@the-/rtc)
@@ -246,4 +246,5 @@ Mixin for http
 
 | Param | Type |
 | --- | --- |
-| Class | <code>function</code> |
+| Class | <code>function</code> | 
+

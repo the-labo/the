@@ -36,7 +36,7 @@ describe('the-rtc', () => {
       })
       client.emit(IOEvents.ROOM_JOIN, { roomName: 'hoge' })
       client.emit(IOEvents.ROOM_LEAVE)
-      await asleep(100)
+      await asleep(200)
       client.close()
       ok(received.iceServers)
       ok(received.roomState)
