@@ -14,9 +14,9 @@
     "@the-/const-ui": "^15.4.2",
     "@the-/ui-button": "^15.4.0",
     "@the-/ui-condition": "^15.4.4",
-    "@the-/ui-icon": "^15.4.0",
-    "@the-/ui-spin": "^15.4.0",
-    "@the-/ui-style": "^15.4.0",
+    "@the-/ui-icon": "^15.4.4",
+    "@the-/ui-spin": "^15.4.4",
+    "@the-/ui-style": "^15.4.4",
     "@the-/util-ui": "^15.4.1",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
