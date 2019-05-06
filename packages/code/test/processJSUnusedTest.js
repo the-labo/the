@@ -632,6 +632,23 @@ console.log(c, e)
 `,
     )
   })
+
+  it('Cleanup unused destructing 2', async () => {
+    equal(
+      await processJSUnused(`
+const x = arr.map(({a}) => keys[a])
+const {a,b} = x[0]
+const j = {...{a}}
+console.log(j)
+      `),
+      `
+const x = arr.map(({a}) => keys[a])
+const {a,} = x[0]
+const j = {...{a}}
+console.log(j)
+      `,
+    )
+  })
 })
 
 /* global describe, before, after, it */

@@ -31,6 +31,7 @@ function processJSUnused(content, options = {}) {
   const _consumingIdentifiersFor = (Context) => {
     const asMember = finder
       .findByTypes(Context, [NodeTypes.MemberExpression])
+      .filter((exp) => !exp.computed)
       .map((exp) => exp.property)
       .filter((property) => property.type === NodeTypes.Identifier)
     const asPropKey = finder

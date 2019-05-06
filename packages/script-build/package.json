@@ -1,4 +1,7 @@
 {
+  "name": "@the-/script-build",
+  "description": "Build script for the-projects",
+  "version": "15.4.7",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -21,7 +24,7 @@
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "7.0.0",
     "@babel/runtime": "^7.4.4",
-    "@the-/code": "^15.4.22",
+    "@the-/code": "^15.4.25",
     "@the-/tmp": "^15.4.1",
     "ababel": "^6.0.0",
     "aglob": "^3.0.2",
@@ -37,7 +40,6 @@
     "lebab": "^3.0.5",
     "webpack": "^4.30.0"
   },
-  "description": "Build script for the-projects",
   "devDependencies": {
     "@the-/ast": "^15.4.2",
     "injectmock": "^2.0.0"
@@ -53,7 +55,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/script-build",
   "publishConfig": {
     "access": "public"
   },
@@ -63,6 +64,5 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build; npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.7"
+  }
 }
