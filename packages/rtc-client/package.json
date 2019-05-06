@@ -1,7 +1,7 @@
 {
   "name": "@the-/rtc-client",
   "description": "Client for the-rtc",
-  "version": "15.4.4",
+  "version": "15.4.5",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -20,16 +20,16 @@
     "@the-/media": "^15.4.2",
     "@the-/pack": "^15.4.0",
     "@the-/window": "^15.4.1",
-    "argx": "^3.0.2",
+    "argx": "^4.0.0",
     "asobj": "^3.0.1",
     "debug": "^4.1.1",
     "qs": "^6.7.0",
     "socket.io-client": "^2.2.0",
     "uuid": "^3.3.2",
-    "wrtc": "^0.3.7"
+    "wrtc": "^0.4.0"
   },
   "devDependencies": {
-    "@the-/rtc": "^15.4.1",
+    "@the-/rtc": "^15.4.4",
     "aport": "^2.0.0",
     "asleep": "^1.0.3",
     "webpack-cli": "^3.3.2",
