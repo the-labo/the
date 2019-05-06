@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-chat
  * @typicalname uiChat
- * @version 15.4.2
+ * @version 15.4.3
  * @description Chat UI of the-components
  */
 'use strict'

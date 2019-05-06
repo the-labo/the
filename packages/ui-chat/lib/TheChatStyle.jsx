@@ -31,8 +31,6 @@ TheChatStyle.data = (options) => {
     backgroundColor = ThemeValues.backgroundColor,
     backgroundForLeftText = '#F0F0F0',
     backgroundForRightText = '#808080',
-    dominantColor = ThemeValues.dominantColor,
-    lightBorderColor = ThemeValues.lightBorderColor,
     lightTextColor = ThemeValues.lightTextColor,
     textColor = ThemeValues.textColor,
   } = options
