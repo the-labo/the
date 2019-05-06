@@ -5,7 +5,7 @@
 ## @the-/demo-lib
 Demo of the-lib packages
 
-**Version**: 15.4.2  
+**Version**: 15.4.3  
 **License**: MIT  
 
 * [@the-/demo-lib](#module_@the-/demo-lib)
@@ -33,4 +33,4 @@ Create a TheDemoLib instance
 ### demoLib.theDemoLib() ⇒ <code>TheDemoLib</code>
 Default exports
 
-**Kind**: static method of [<code>@the-/demo-lib</code>](#module_@the-/demo-lib)
+**Kind**: static method of [<code>@the-/demo-lib</code>](#module_@the-/demo-lib)  

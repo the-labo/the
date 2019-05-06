@@ -5,7 +5,7 @@
 ## @the-/assert
 Assert for the-framework
 
-**Version**: 15.4.2  
+**Version**: 15.4.3  
 **License**: MIT  
 
 * [@the-/assert](#module_@the-/assert)
@@ -50,4 +50,5 @@ Alias of [create](#module_@the-/assert.create)
 
 | Param | Type |
 | --- | --- |
-| ...args | <code>\*</code> |
+| ...args | <code>\*</code> | 
+

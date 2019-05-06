@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-signature
  * @typicalname uiSignature
- * @version 15.4.2
+ * @version 15.4.3
  * @description Signature pad of the-components
  */
 'use strict'

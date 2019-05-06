@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-cam
  * @typicalname uiCam
- * @version 15.4.2
+ * @version 15.4.3
  * @description Embed camera component
  */
 'use strict'

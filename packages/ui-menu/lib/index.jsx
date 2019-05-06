@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-menu
  * @typicalname uiMenu
- * @version 15.4.2
+ * @version 15.4.3
  * @description Menu of the-components
  */
 'use strict'

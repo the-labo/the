@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-repeatable
  * @typicalname uiRepeatable
- * @version 15.4.2
+ * @version 15.4.3
  * @description Repeatable of the-component
  */
 'use strict'

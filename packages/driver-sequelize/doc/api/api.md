@@ -166,4 +166,4 @@ Parsing functions
 ### driverSequelize.default()
 Alias of [@the-/driver-sequelize](#module_@the-/driver-sequelize)
 
-**Kind**: static method of [<code>@the-/driver-sequelize</code>](#module_@the-/driver-sequelize)
+**Kind**: static method of [<code>@the-/driver-sequelize</code>](#module_@the-/driver-sequelize)  

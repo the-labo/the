@@ -5,7 +5,7 @@
 ## @the-/bin
 Bin manager for the-frameworks
 
-**Version**: 15.4.2  
+**Version**: 15.4.3  
 **License**: MIT  
 
 * [@the-/bin](#module_@the-/bin)
@@ -96,4 +96,5 @@ Create a TheBin instance
 
 | Param | Type |
 | --- | --- |
-| ...args | <code>\*</code> |
+| ...args | <code>\*</code> | 
+

@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-container
  * @typicalname uiContainer
- * @version 15.4.2
+ * @version 15.4.3
  * @description Container of the-components
  */
 'use strict'

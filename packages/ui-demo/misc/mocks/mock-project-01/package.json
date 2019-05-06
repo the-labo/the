@@ -1,6 +1,6 @@
 {
-  "homepage": "http://example.com",
   "name": "mock-project-01",
-  "repository": "the-labo/the-component-demo",
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "homepage": "http://example.com",
+  "repository": "the-labo/the-component-demo"
 }

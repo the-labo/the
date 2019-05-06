@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-chart
  * @typicalname uiChart
- * @version 15.4.2
+ * @version 15.4.3
  * @description Chart for the-components
  */
 'use strict'

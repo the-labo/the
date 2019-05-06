@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-frame
  * @typicalname uiFrame
- * @version 15.4.2
+ * @version 15.4.3
  * @description iFrame of the-components
  */
 'use strict'

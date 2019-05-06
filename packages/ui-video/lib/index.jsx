@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-video
  * @typicalname uiVideo
- * @version 15.4.2
+ * @version 15.4.3
  * @description Video for the-components
  */
 'use strict'

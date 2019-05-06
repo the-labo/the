@@ -5,7 +5,7 @@
 ## @the-/controller
 Base of the-controllers
 
-**Version**: 15.4.2  
+**Version**: 15.4.3  
 **License**: MIT  
 
 * [@the-/controller](#module_@the-/controller)
@@ -132,4 +132,4 @@ Create a TheControllerBase instance
 ### controller.default()
 Alias of [create](#module_@the-/controller.create)
 
-**Kind**: static method of [<code>@the-/controller</code>](#module_@the-/controller)
+**Kind**: static method of [<code>@the-/controller</code>](#module_@the-/controller)  

@@ -1,7 +1,7 @@
 {
   "name": "@the-/rtc",
   "description": "RTC server for the-frameworks",
-  "version": "15.4.3",
+  "version": "15.4.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "socket.io": "^2.2.0",
-    "wrtc": "^0.3.7"
+    "wrtc": "^0.4.0"
   },
   "devDependencies": {
     "@the-/rtc-client": "file:../rtc-client",

@@ -21,7 +21,7 @@
 ## @the-/const-ui
 Constants for the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.3  
 **License**: MIT  
 
 * [@the-/const-ui](#module_@the-/const-ui)
@@ -127,4 +127,4 @@ Vendor Colors
 ## containerWidth
 Width of container
 
-**Kind**: global variable
+**Kind**: global variable  

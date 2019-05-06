@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-copyboard
  * @typicalname uiCopyboard
- * @version 15.4.2
+ * @version 15.4.3
  * @description Component for clip-to-copy
  */
 'use strict'

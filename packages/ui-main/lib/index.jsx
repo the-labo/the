@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-main
  * @typicalname uiMain
- * @version 15.4.2
+ * @version 15.4.3
  * @description Main for the-components
  */
 'use strict'

@@ -1,47 +1,42 @@
 [
   {
-    "description": "Demo of the-lib packages",
     "id": "module:@the-/demo-lib",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/demo-lib",
+    "name": "@the-/demo-lib",
+    "kind": "module",
+    "description": "Demo of the-lib packages",
+    "version": "15.4.3",
+    "license": "MIT",
+    "typicalname": "demoLib",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/demo-lib/lib"
     },
-    "name": "@the-/demo-lib",
-    "order": 2,
-    "typicalname": "demoLib",
-    "version": "15.4.2"
+    "order": 2
   },
   {
     "id": "module:@the-/demo-lib.TheDemoLib",
-    "kind": "class",
     "longname": "module:@the-/demo-lib.TheDemoLib",
+    "name": "TheDemoLib",
+    "kind": "class",
+    "scope": "static",
     "memberof": "module:@the-/demo-lib",
     "meta": {
-      "filename": "TheDemoLib.js",
       "lineno": 1,
+      "filename": "TheDemoLib.js",
       "path": "/Users/okuni/Projects/the/packages/demo-lib/lib"
     },
-    "name": "TheDemoLib",
-    "order": 3,
-    "scope": "static"
+    "order": 3
   },
   {
-    "description": "Create a TheDemoLib instance",
     "id": "module:@the-/demo-lib.create",
-    "kind": "function",
     "longname": "module:@the-/demo-lib.create",
-    "memberof": "module:@the-/demo-lib",
-    "meta": {
-      "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/demo-lib/lib"
-    },
     "name": "create",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheDemoLib instance",
+    "memberof": "module:@the-/demo-lib",
     "params": [
       {
         "type": {
@@ -62,21 +57,21 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Default exports",
-    "id": "module:@the-/demo-lib.theDemoLib",
-    "kind": "function",
-    "longname": "module:@the-/demo-lib.theDemoLib",
-    "memberof": "module:@the-/demo-lib",
     "meta": {
-      "filename": "default.js",
       "lineno": 1,
+      "filename": "create.js",
       "path": "/Users/okuni/Projects/the/packages/demo-lib/lib"
     },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/demo-lib.theDemoLib",
+    "longname": "module:@the-/demo-lib.theDemoLib",
     "name": "theDemoLib",
-    "order": 1,
+    "kind": "function",
+    "scope": "static",
+    "description": "Default exports",
+    "memberof": "module:@the-/demo-lib",
     "returns": [
       {
         "type": {
@@ -86,6 +81,11 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/demo-lib/lib"
+    },
+    "order": 1
   }
 ]

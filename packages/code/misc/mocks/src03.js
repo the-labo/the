@@ -4,8 +4,8 @@
  */
 'use strict'
 
-const { a, b, n, ...rest } = { a: 1, b: 5, n: 3 }
-const { j, z } = {}
+const { ...rest } = { a: 1, b: 5, n: 3 }
+const {} = {}
 
 module.exports = Object.freeze(
   /** @lends GlobalKeys */

@@ -116,3 +116,4 @@ Register service workers
 | Param | Type | Description |
 | --- | --- | --- |
 | swUrls | <code>Array.&lt;string&gt;</code> | Service worker urls |
+

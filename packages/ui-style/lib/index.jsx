@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-style
  * @typicalname uiStyle
- * @version 15.4.2
+ * @version 15.4.3
  * @description Style of the-components
  */
 'use strict'

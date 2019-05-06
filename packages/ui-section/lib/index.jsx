@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-section
  * @typicalname uiSection
- * @version 15.4.2
+ * @version 15.4.3
  * @description Section of the-components
  */
 'use strict'
