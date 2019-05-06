@@ -2,7 +2,7 @@
 /**
  * Build script for the-projects
  * @module @the-/script-build
- * @version 15.4.11
+ * @version 15.4.14
  */
 
 'use strict'
