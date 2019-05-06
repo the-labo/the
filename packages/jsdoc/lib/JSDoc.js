@@ -27,6 +27,7 @@ class JSDoc {
   }
   async generate(src = process.cwd(), dest = 'doc/api', options = {}) {
     const {
+      cwd = process.cwd(),
       ignore = [],
       jsonFile = 'jsdoc.json',
       mdFile = 'api.md',
@@ -38,7 +39,14 @@ class JSDoc {
 
     // Render json file
     if (jsonFile) {
-      const data = await jsdocToMarkdown.getTemplateData({ files: filenames })
+      const data = (await jsdocToMarkdown.getTemplateData({
+        files: filenames,
+      })).map((data) => {
+        if (data.meta && data.meta.path) {
+          data.meta.path = path.join('.', path.relative(cwd, data.meta.path))
+        }
+        return data
+      })
       await this.write(
         path.resolve(dest, jsonFile),
         JSON.stringify(data, null, 2) + EOL,
