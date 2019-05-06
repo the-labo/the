@@ -24,7 +24,7 @@
     "postcss": "^7.0.16",
     "prettier": "^1.17.0",
     "writeout": "^2.2.4",
-    "yaml": "^1.5.0"
+    "yaml": "^1.5.1"
   },
   "description": "Code formatter of the-frameworks",
   "devDependencies": {
