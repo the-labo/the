@@ -23,7 +23,7 @@ async function tryExample() {
     // Provide values for `stream.pull()`
     async *provide() {
       do {
-        yield await this.counts--
+        yield this.counts--
         console.log('pulled', this.counts)
       } while (this.counts > 0)
     }
