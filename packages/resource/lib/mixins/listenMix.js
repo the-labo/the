@@ -25,8 +25,9 @@ function listenMix(Class) {
   /**
    * @memberof module:@the-/resource.mixins.listenMix
    * @inner
+   * @class ListenMixed
    */
-  return class ListenMixed extends Class {
+  class ListenMixed extends Class {
     increaseListenerMax(amount = 1) {
       const maxListeners = this.getMaxListeners()
       this.setMaxListeners(maxListeners + amount)
@@ -172,6 +173,7 @@ function listenMix(Class) {
       })
     }
   }
+  return ListenMixed
 }
 
 module.exports = listenMix

@@ -114,4 +114,3 @@ Create proxy for hash object
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 | [options.name] | <code>string</code> |  | Name of object |
 | [options.unknownCheck] | <code>boolean</code> |  | Enable unknown checking |
-

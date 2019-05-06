@@ -50,4 +50,4 @@ Group of buttons
 ## TheButtonStyle()
 Style for TheButton
 
-**Kind**: global function  
+**Kind**: global function

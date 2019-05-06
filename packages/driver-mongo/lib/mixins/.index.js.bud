@@ -3,9 +3,13 @@
 const { dir } = require('@the-/templates')
 
 module.exports = dir({
+  annotations: {
+    description: 'Client mixin functions',
+    memberOf: 'module:@the-/driver-mongo',
+    namespace: 'mixins',
+  },
   cjs: true,
   dirname: __dirname,
-  name: 'mixins',
 })
 
 if (!module.parent) {

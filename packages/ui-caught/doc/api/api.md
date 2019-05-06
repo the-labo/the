@@ -41,4 +41,4 @@ Component to show caught errors
 ## TheCaughtStyle()
 Style for TheCaught
 
-**Kind**: global function  
+**Kind**: global function

@@ -1009,4 +1009,3 @@ withValues mixin
 | Param | Type | Description |
 | --- | --- | --- |
 | Class | <code>function</code> | Class to mix |
-

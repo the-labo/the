@@ -5,7 +5,7 @@
     "name": "@the-/driver-sequelize",
     "kind": "module",
     "description": "Sequelize driver for the-framework",
-    "version": "15.4.2",
+    "version": "15.4.3",
     "license": "MIT",
     "typicalname": "driverSequelize",
     "meta": {

@@ -18,7 +18,7 @@ class StringScope extends Scope {
     return {
       /**
        * Delete property
-       * @function StringScope#del
+       * @function module:@the-/scope.scopes.StringScope#del
        */
       del() {
         return () => null
@@ -28,7 +28,7 @@ class StringScope extends Scope {
       },
       /**
        * Replace string
-       * @function StringScope#replace
+       * @function module:@the-/scope.scopes.StringScope#replace
        * @param {string|RegExp} from - Value replace from
        * @param {string} to - Value replace to
        */
@@ -37,7 +37,7 @@ class StringScope extends Scope {
       },
       /**
        * Set property
-       * @function StringScope#set
+       * @function module:@the-/scope.scopes.StringScope#set
        * @param {*} value - Value to set
        */
       set(value) {

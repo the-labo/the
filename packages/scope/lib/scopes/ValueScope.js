@@ -18,7 +18,7 @@ class ValueScope extends Scope {
     return {
       /**
        * Delete property
-       * @function ValueScope#del
+       * @function module:@the-/scope.scopes.ValueScope#del
        */
       del() {
         return () => null
@@ -28,7 +28,7 @@ class ValueScope extends Scope {
       },
       /**
        * Set property
-       * @function ValueScope#set
+       * @function module:@the-/scope.scopes.ValueScope#set
        * @param {*} value - Value to set
        */
       set(value) {

@@ -6,7 +6,8 @@ const { spawnSync } = require('child_process')
 const path = require('path')
 const { writeAsJson } = require('@the-/util-file')
 
-const baseDir = `${__dirname}/../..`(async () => {
+;(async () => {
+  const baseDir = `${__dirname}/../..`
   const prepareSnippet = '../../misc/scripts/pkgSharedInstall.sh'
   const pkg = require('../../package')
   const subPkgFiles = await aglob(
@@ -15,7 +16,7 @@ const baseDir = `${__dirname}/../..`(async () => {
   for (const subPkgFile of subPkgFiles) {
     const subPkg = require(subPkgFile)
     const { scripts = {} } = subPkg
-    const { prepare = '' } = subPkg.scripts
+    const { prepare = '' } = scripts
     if (!prepare.includes(prepareSnippet)) {
       subPkg.scripts = {
         ...scripts,

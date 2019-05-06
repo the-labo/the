@@ -452,4 +452,4 @@ Create a TheState instance
 ### state.default()
 Default exports
 
-**Kind**: static method of [<code>@the-/state</code>](#module_@the-/state)  
+**Kind**: static method of [<code>@the-/state</code>](#module_@the-/state)

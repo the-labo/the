@@ -1,28 +1,33 @@
 [
   {
-    "id": "module:@the-/seed",
-    "longname": "module:@the-/seed",
-    "name": "@the-/seed",
-    "kind": "module",
     "description": "Data generator for the-db",
-    "version": "15.4.2",
+    "id": "module:@the-/seed",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "seed",
+    "longname": "module:@the-/seed",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/seed/lib"
     },
-    "order": 2
+    "name": "@the-/seed",
+    "order": 2,
+    "typicalname": "seed",
+    "version": "15.4.2"
   },
   {
-    "id": "module:@the-/seed.TheSeed#apply",
-    "longname": "module:@the-/seed.TheSeed#apply",
-    "name": "apply",
-    "kind": "function",
-    "scope": "instance",
     "description": "Generate data with seed",
+    "id": "module:@the-/seed.TheSeed#apply",
+    "kind": "function",
+    "longname": "module:@the-/seed.TheSeed#apply",
     "memberof": "module:@the-/seed.TheSeed",
+    "meta": {
+      "filename": "TheSeed.js",
+      "lineno": 38,
+      "path": "/Users/okuni/Projects/the/packages/seed/lib"
+    },
+    "name": "apply",
+    "order": 4,
     "params": [
       {
         "type": {
@@ -43,21 +48,21 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 38,
-      "filename": "TheSeed.js",
-      "path": "/Users/okuni/Projects/the/packages/seed/lib"
-    },
-    "order": 4
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/seed.TheSeed#explode",
-    "longname": "module:@the-/seed.TheSeed#explode",
-    "name": "explode",
-    "kind": "function",
-    "scope": "instance",
     "description": "Generate data with seed",
+    "id": "module:@the-/seed.TheSeed#explode",
+    "kind": "function",
+    "longname": "module:@the-/seed.TheSeed#explode",
     "memberof": "module:@the-/seed.TheSeed",
+    "meta": {
+      "filename": "TheSeed.js",
+      "lineno": 48,
+      "path": "/Users/okuni/Projects/the/packages/seed/lib"
+    },
+    "name": "explode",
+    "order": 5,
     "params": [
       {
         "type": {
@@ -87,35 +92,35 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 48,
-      "filename": "TheSeed.js",
-      "path": "/Users/okuni/Projects/the/packages/seed/lib"
-    },
-    "order": 5
+    "scope": "instance"
   },
   {
     "id": "module:@the-/seed.TheSeed",
-    "longname": "module:@the-/seed.TheSeed",
-    "name": "TheSeed",
     "kind": "class",
-    "scope": "static",
+    "longname": "module:@the-/seed.TheSeed",
     "memberof": "module:@the-/seed",
     "meta": {
-      "lineno": 1,
       "filename": "TheSeed.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/seed/lib"
     },
-    "order": 3
+    "name": "TheSeed",
+    "order": 3,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/seed.create",
-    "longname": "module:@the-/seed.create",
-    "name": "create",
-    "kind": "function",
-    "scope": "static",
     "description": "Create a TheSeed instance",
+    "id": "module:@the-/seed.create",
+    "kind": "function",
+    "longname": "module:@the-/seed.create",
     "memberof": "module:@the-/seed",
+    "meta": {
+      "filename": "create.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/seed/lib"
+    },
+    "name": "create",
+    "order": 0,
     "params": [
       {
         "type": {
@@ -136,26 +141,21 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "create.js",
-      "path": "/Users/okuni/Projects/the/packages/seed/lib"
-    },
-    "order": 0
+    "scope": "static"
   },
   {
-    "id": "module:@the-/seed.default",
-    "longname": "module:@the-/seed.default",
-    "name": "default",
-    "kind": "function",
-    "scope": "static",
     "description": "Alias of {@link module:@the-/seed.create}",
+    "id": "module:@the-/seed.default",
+    "kind": "function",
+    "longname": "module:@the-/seed.default",
     "memberof": "module:@the-/seed",
     "meta": {
-      "lineno": 1,
       "filename": "default.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/seed/lib"
     },
-    "order": 1
+    "name": "default",
+    "order": 1,
+    "scope": "static"
   }
 ]

@@ -1,26 +1,27 @@
 [
   {
-    "id": "module:@the-/stream",
-    "longname": "module:@the-/stream",
-    "name": "@the-/stream",
-    "kind": "module",
     "description": "Base of the streams",
-    "version": "15.4.2",
+    "id": "module:@the-/stream",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "stream",
+    "longname": "module:@the-/stream",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/stream/lib"
     },
-    "order": 1
+    "name": "@the-/stream",
+    "order": 1,
+    "typicalname": "stream",
+    "version": "15.4.2"
   },
   {
     "id": "module:@the-/stream.TheStream()",
-    "longname": "module:@the-/stream.TheStream",
-    "name": "TheStream",
     "kind": "constructor",
+    "longname": "module:@the-/stream.TheStream",
     "memberof": "module:@the-/stream.TheStream",
+    "name": "TheStream",
+    "order": 4,
     "params": [
       {
         "type": {
@@ -32,17 +33,22 @@
         "defaultvalue": "{}",
         "name": "options"
       }
-    ],
-    "order": 4
+    ]
   },
   {
-    "id": "module:@the-/stream#pull",
-    "longname": "module:@the-/stream#pull",
-    "name": "pull",
-    "kind": "function",
-    "scope": "instance",
+    "async": true,
     "description": "Pull next chunk",
+    "id": "module:@the-/stream#pull",
+    "kind": "function",
+    "longname": "module:@the-/stream#pull",
     "memberof": "module:@the-/stream",
+    "meta": {
+      "filename": "TheStream.js",
+      "lineno": 92,
+      "path": "/Users/okuni/Projects/the/packages/stream/lib"
+    },
+    "name": "pull",
+    "order": 5,
     "params": [],
     "returns": [
       {
@@ -53,22 +59,22 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 92,
-      "filename": "TheStream.js",
-      "path": "/Users/okuni/Projects/the/packages/stream/lib"
-    },
-    "async": true,
-    "order": 5
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/stream#push",
-    "longname": "module:@the-/stream#push",
-    "name": "push",
-    "kind": "function",
-    "scope": "instance",
+    "async": true,
     "description": "Push chunk",
+    "id": "module:@the-/stream#push",
+    "kind": "function",
+    "longname": "module:@the-/stream#push",
     "memberof": "module:@the-/stream",
+    "meta": {
+      "filename": "TheStream.js",
+      "lineno": 104,
+      "path": "/Users/okuni/Projects/the/packages/stream/lib"
+    },
+    "name": "push",
+    "order": 6,
     "params": [
       {
         "type": {
@@ -90,22 +96,22 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 104,
-      "filename": "TheStream.js",
-      "path": "/Users/okuni/Projects/the/packages/stream/lib"
-    },
-    "async": true,
-    "order": 6
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/stream#pushEnd",
-    "longname": "module:@the-/stream#pushEnd",
-    "name": "pushEnd",
-    "kind": "function",
-    "scope": "instance",
+    "async": true,
     "description": "Finish pushing",
+    "id": "module:@the-/stream#pushEnd",
+    "kind": "function",
+    "longname": "module:@the-/stream#pushEnd",
     "memberof": "module:@the-/stream",
+    "meta": {
+      "filename": "TheStream.js",
+      "lineno": 123,
+      "path": "/Users/okuni/Projects/the/packages/stream/lib"
+    },
+    "name": "pushEnd",
+    "order": 7,
     "params": [],
     "returns": [
       {
@@ -116,85 +122,79 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 123,
-      "filename": "TheStream.js",
-      "path": "/Users/okuni/Projects/the/packages/stream/lib"
-    },
-    "async": true,
-    "order": 7
+    "scope": "instance"
   },
   {
     "id": "module:@the-/stream.Consumer",
-    "longname": "module:@the-/stream.Consumer",
-    "name": "Consumer",
     "kind": "class",
-    "scope": "static",
+    "longname": "module:@the-/stream.Consumer",
     "memberof": "module:@the-/stream",
     "meta": {
-      "lineno": 1,
       "filename": "Consumer.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/stream/lib"
     },
-    "order": 0
+    "name": "Consumer",
+    "order": 0,
+    "scope": "static"
   },
   {
     "id": "module:@the-/stream.Provider",
-    "longname": "module:@the-/stream.Provider",
-    "name": "Provider",
     "kind": "class",
-    "scope": "static",
+    "longname": "module:@the-/stream.Provider",
     "memberof": "module:@the-/stream",
     "meta": {
-      "lineno": 1,
       "filename": "Provider.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/stream/lib"
     },
-    "order": 2
+    "name": "Provider",
+    "order": 2,
+    "scope": "static"
   },
   {
     "id": "module:@the-/stream.TheStream",
-    "longname": "module:@the-/stream.TheStream",
-    "name": "TheStream",
     "kind": "class",
-    "scope": "static",
+    "longname": "module:@the-/stream.TheStream",
     "memberof": "module:@the-/stream",
     "meta": {
-      "lineno": 1,
       "filename": "TheStream.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/stream/lib"
     },
-    "order": 3
+    "name": "TheStream",
+    "order": 3,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/stream.helpers",
-    "longname": "module:@the-/stream.helpers",
-    "name": "helpers",
-    "kind": "namespace",
-    "scope": "static",
-    "description": "Helper functions",
-    "memberof": "module:@the-/stream",
     "access": "protected",
+    "description": "Helper functions",
+    "id": "module:@the-/stream.helpers",
+    "kind": "namespace",
+    "longname": "module:@the-/stream.helpers",
+    "memberof": "module:@the-/stream",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/stream/lib/helpers"
     },
-    "order": 9
+    "name": "helpers",
+    "order": 9,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/stream.helpers.generatorFromReadable",
-    "longname": "module:@the-/stream.helpers.generatorFromReadable",
-    "name": "generatorFromReadable",
-    "kind": "function",
-    "scope": "static",
     "description": "Create generator from readable",
+    "id": "module:@the-/stream.helpers.generatorFromReadable",
+    "kind": "function",
+    "longname": "module:@the-/stream.helpers.generatorFromReadable",
     "memberof": "module:@the-/stream.helpers",
     "meta": {
-      "lineno": 1,
       "filename": "generatorFromReadable.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/stream/lib/helpers"
     },
-    "order": 8
+    "name": "generatorFromReadable",
+    "order": 8,
+    "scope": "static"
   }
 ]

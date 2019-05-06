@@ -1,4 +1,7 @@
 {
+  "name": "@the-/bin",
+  "description": "Bin manager for the-frameworks",
+  "version": "15.4.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,7 +17,6 @@
     "hasbin": "^1.2.3",
     "semver": "^6.0.0"
   },
-  "description": "Bin manager for the-frameworks",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -27,7 +29,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/bin",
   "publishConfig": {
     "access": "public"
   },
@@ -38,6 +39,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.2"
+  }
 }

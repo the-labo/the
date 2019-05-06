@@ -58,6 +58,7 @@ var/
 /packages/driver-sequelize/lib/mixins/index.js
 /packages/driver-sequelize/lib/modeling/index.js
 /packages/driver-sequelize/lib/parsing/index.js
+/packages/entrypoint/lib/helpers/index.js
 /packages/entrypoint/lib/index.js
 /packages/error/lib/TheConflictError.js
 /packages/error/lib/TheExpiredError.js
@@ -90,6 +91,7 @@ var/
 /packages/metrics/lib/index.js
 /packages/mixin-controller/lib/helpers/index.js
 /packages/mixin-controller/lib/index.js
+/packages/mixin-scene/lib/helpers/index.js
 /packages/mixin-scene/lib/index.js
 /packages/mixin-stream/lib/index.js
 /packages/pack/lib/index.js
@@ -147,6 +149,7 @@ var/
 /packages/store/lib/index.js
 /packages/stream/lib/helpers/index.js
 /packages/stream/lib/index.js
+/packages/support/lib/helpers/index.js
 /packages/support/lib/index.js
 /packages/templates/lib/eslintignore.js
 /packages/templates/lib/index.js

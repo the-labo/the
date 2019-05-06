@@ -615,6 +615,16 @@ console.log(two)
 `,
     )
   })
+
+  it('Cleanup unsed destructoring', async () => {
+    console.log(
+      await processJSUnused(`
+const x =  { a: 1, b: 2}
+const { a = x.a, b, c } = opt
+console.log(c)
+`),
+    )
+  })
 })
 
 /* global describe, before, after, it */

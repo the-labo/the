@@ -1,5 +1,6 @@
 /**
  * Find randomly
+ * @memberof module:@the-/util-array
  * @function randomFind
  * @returns {function()}
  * @example
@@ -7,7 +8,7 @@
  */
 'use strict'
 
-/** @lends randomFind */
+/** @lends module:@the-/util-array.randomFind */
 function randomFind() {
   if (arguments.length > 2) {
     throw new Error('[randomFind] Invalid args.')

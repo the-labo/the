@@ -18,7 +18,7 @@ class ObjectScope extends Scope {
     return {
       /**
        * Delete property
-       * @function ObjectScope#del
+       * @function module:@the-/scope.scopes.ObjectScope#del
        * @param {...string} names - Name to delete
        */
       del(...names) {
@@ -40,7 +40,7 @@ class ObjectScope extends Scope {
       },
       /**
        * Delete all
-       * @function ObjectScope#drop
+       * @function module:@the-/scope.scopes.ObjectScope#drop
        */
       drop() {
         return () => ({})
@@ -50,6 +50,7 @@ class ObjectScope extends Scope {
       },
       /**
        * Reset to values
+       * @function module:@the-/scope.scopes.ObjectScope#reset
        * @param {Object} values
        */
       reset(values = {}) {
@@ -65,7 +66,7 @@ class ObjectScope extends Scope {
       },
       /**
        * Set property
-       * @function ObjectScope#set
+       * @function module:@the-/scope.scopes.ObjectScope#set
        * @param {string} name - name to set
        * @param {*} value - Value to set
        */

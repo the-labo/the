@@ -1,5 +1,6 @@
 /**
  * Driver for mongo db
+ * @memberof module:@the-/driver-mongo
  * @class MongoDriver
  * @augments Driver
  * @inheritdoc
@@ -32,7 +33,7 @@ const MongoDriverBase = [m.mongoMix].reduce(
   Driver,
 )
 
-/** @lends MongoDriver */
+/** @lends module:@the-/driver-mongo.MongoDriver */
 class MongoDriver extends MongoDriverBase {
   constructor(config) {
     super()

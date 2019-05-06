@@ -76,4 +76,4 @@ Create a TheMetrics instance
 ### metrics.default()
 Alias of [create](#module_@the-/metrics.create)
 
-**Kind**: static method of [<code>@the-/metrics</code>](#module_@the-/metrics)  
+**Kind**: static method of [<code>@the-/metrics</code>](#module_@the-/metrics)

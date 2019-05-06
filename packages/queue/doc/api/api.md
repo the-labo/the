@@ -92,4 +92,4 @@ Create a TheQueue instance
 ### queue.default()
 Alias of [@the-/queue](#module_@the-/queue)
 
-**Kind**: static method of [<code>@the-/queue</code>](#module_@the-/queue)  
+**Kind**: static method of [<code>@the-/queue</code>](#module_@the-/queue)

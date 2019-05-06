@@ -85,10 +85,11 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 
-- global
-  - [create(args)](./doc/api/api.md#create)
-  - [MongoDriver](./doc/api/api.md#MongoDriver)
-  - [mongoMix()](./doc/api/api.md#mongoMix)
+- module:@the-/driver-mongo
+  - [.create(args)](./doc/api/api.md#module_@the-/driver-mongo.create)
+  - [.MongoDriver](./doc/api/api.md#module_@the-/driver-mongo.MongoDriver)
+- module:@the-/driver-mongo.mixins
+  - [.mongoMix()](./doc/api/api.md#module_@the-/driver-mongo.mixins.mongoMix)
 
 See [API Guide](./doc/api/api.md) for more detail
 

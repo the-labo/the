@@ -1,27 +1,32 @@
 [
   {
-    "id": "module:@the-/mixin-stream",
-    "longname": "module:@the-/mixin-stream",
-    "name": "@the-/mixin-stream",
-    "kind": "module",
     "description": "Mixins for stream",
-    "version": "15.4.2",
+    "id": "module:@the-/mixin-stream",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "mixinStream",
+    "longname": "module:@the-/mixin-stream",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/mixin-stream/lib"
     },
-    "order": 1
+    "name": "@the-/mixin-stream",
+    "order": 1,
+    "typicalname": "mixinStream",
+    "version": "15.4.2"
   },
   {
-    "id": "compose",
-    "longname": "compose",
-    "name": "compose",
-    "kind": "function",
-    "scope": "global",
     "description": "Compose multiple mixins into one",
+    "id": "compose",
+    "kind": "function",
+    "longname": "compose",
+    "meta": {
+      "filename": "compose.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/mixin-stream/lib"
+    },
+    "name": "compose",
+    "order": 0,
     "params": [
       {
         "type": {
@@ -43,19 +48,19 @@
         "description": "Composed mixin"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "compose.js",
-      "path": "/Users/okuni/Projects/the/packages/mixin-stream/lib"
-    },
-    "order": 0
+    "scope": "global"
   },
   {
     "id": "withDebug",
-    "longname": "withDebug",
-    "name": "withDebug",
     "kind": "function",
-    "scope": "global",
+    "longname": "withDebug",
+    "meta": {
+      "filename": "withDebug.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/mixin-stream/lib"
+    },
+    "name": "withDebug",
+    "order": 2,
     "params": [
       {
         "type": {
@@ -77,11 +82,6 @@
         "description": "Mixed class"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "withDebug.js",
-      "path": "/Users/okuni/Projects/the/packages/mixin-stream/lib"
-    },
-    "order": 2
+    "scope": "global"
   }
 ]

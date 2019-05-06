@@ -85,11 +85,11 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 
-- global
-  - [listenToCreate(onCreate)](./doc/api/api.md#listenToCreate)
-  - [listenToDestroy(onDestroy)](./doc/api/api.md#listenToDestroy)
-  - [listenToDrop(onDrop)](./doc/api/api.md#listenToDrop)
-  - [listenToUpdate(onUpdate)](./doc/api/api.md#listenToUpdate)
+- ListenMixed
+  - [#listenToCreate(onCreate)](./doc/api/api.md#ListenMixed#listenToCreate)
+  - [#listenToDestroy(onDestroy)](./doc/api/api.md#ListenMixed#listenToDestroy)
+  - [#listenToDrop(onDrop)](./doc/api/api.md#ListenMixed#listenToDrop)
+  - [#listenToUpdate(onUpdate)](./doc/api/api.md#ListenMixed#listenToUpdate)
 - module:@the-/resource
   - [.create(args)](./doc/api/api.md#module_@the-/resource.create)
   - [.default()](./doc/api/api.md#module_@the-/resource.default)
@@ -100,6 +100,8 @@ tryExample().catch((err) => console.error(err))
   - [.listenMix(Class)](./doc/api/api.md#module_@the-/resource.mixins.listenMix)
   - [.queueMix(Class)](./doc/api/api.md#module_@the-/resource.mixins.queueMix)
   - [.writeOnceMix(Class)](./doc/api/api.md#module_@the-/resource.mixins.writeOnceMix)
+- module:@the-/resource.mixins.listenMix
+  - [~ListenMixed](./doc/api/api.md#module_@the-/resource.mixins.listenMix~ListenMixed)
 - module:@the-/resource.mixins.queueMix
   - [~QueueMixed](./doc/api/api.md#module_@the-/resource.mixins.queueMix~QueueMixed)
 - module:@the-/resource.mixins.writeOnceMix

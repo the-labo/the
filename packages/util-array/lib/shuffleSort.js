@@ -1,5 +1,6 @@
 /**
  * Find randomly
+ * @memberof module:@the-/util-array
  * @function shuffleSort
  * @returns {function()}
  * @example
@@ -7,7 +8,7 @@
  */
 'use strict'
 
-/** @lends shuffleSort */
+/** @lends module:@the-/util-array.shuffleSort */
 function shuffleSort() {
   if (arguments.length > 2) {
     throw new Error('[shuffleSort] Invalid args.')

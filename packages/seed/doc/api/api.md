@@ -63,4 +63,4 @@ Create a TheSeed instance
 ### seed.default()
 Alias of [create](#module_@the-/seed.create)
 
-**Kind**: static method of [<code>@the-/seed</code>](#module_@the-/seed)  
+**Kind**: static method of [<code>@the-/seed</code>](#module_@the-/seed)

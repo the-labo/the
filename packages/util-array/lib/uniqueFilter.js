@@ -1,15 +1,16 @@
 /**
  * defineUniqueFilter
+ * @memberof module:@the-/util-array
  * @function uniqueFilter
  * @param {Object} [options={}] - Optional settings
- * @param {function|string} [options.by=(v)=>v] - Key extractor
+ * @param {function()|string} [options.by=(v)=>v] - Key extractor
  * @returns {function()}
  * @example
  *  ['a', 'b', 'a'].filter(uniqueFilter())
  */
 'use strict'
 
-/** @lends uniqueFilter */
+/** @lends module:@the-/util-array.uniqueFilter */
 function uniqueFilter(options = {}) {
   if (arguments.length > 1) {
     throw new Error('[uniqueFilter] Invalid args.')

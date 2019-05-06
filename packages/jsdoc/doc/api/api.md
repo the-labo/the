@@ -6,4 +6,4 @@
 JSDoc generator
 
 **Version**: 15.4.3  
-**License**: MIT  
+**License**: MIT

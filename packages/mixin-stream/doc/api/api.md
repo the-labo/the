@@ -46,4 +46,3 @@ Compose multiple mixins into one
 | Param | Type | Description |
 | --- | --- | --- |
 | Base | <code>function</code> | class |
-

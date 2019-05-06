@@ -5,7 +5,7 @@
     "name": "@the-/driver-mongo",
     "kind": "module",
     "description": "Mongo driver for the-db",
-    "version": "15.4.2",
+    "version": "15.4.4",
     "license": "MIT",
     "typicalname": "driverMongo",
     "meta": {
@@ -16,23 +16,24 @@
     "order": 1
   },
   {
-    "id": "MongoDriver()",
-    "longname": "MongoDriver",
+    "id": "module:@the-/driver-mongo.MongoDriver()",
+    "longname": "module:@the-/driver-mongo.MongoDriver",
     "name": "MongoDriver",
     "kind": "constructor",
     "description": "Driver for mongo db",
-    "memberof": "MongoDriver",
+    "memberof": "module:@the-/driver-mongo.MongoDriver",
     "order": 3
   },
   {
-    "id": "MongoDriver",
-    "longname": "MongoDriver",
+    "id": "module:@the-/driver-mongo.MongoDriver",
+    "longname": "module:@the-/driver-mongo.MongoDriver",
     "name": "MongoDriver",
     "kind": "class",
-    "scope": "global",
+    "scope": "static",
     "augments": [
       "Driver"
     ],
+    "memberof": "module:@the-/driver-mongo",
     "meta": {
       "lineno": 1,
       "filename": "MongoDriver.js",
@@ -42,12 +43,28 @@
     "order": 2
   },
   {
-    "id": "create",
-    "longname": "create",
+    "id": "module:@the-/driver-mongo.mixins",
+    "longname": "module:@the-/driver-mongo.mixins",
+    "name": "mixins",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Client mixin functions",
+    "memberof": "module:@the-/driver-mongo",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib/mixins"
+    },
+    "order": 4
+  },
+  {
+    "id": "module:@the-/driver-mongo.create",
+    "longname": "module:@the-/driver-mongo.create",
     "name": "create",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Create a MongoDriver instance",
+    "memberof": "module:@the-/driver-mongo",
     "params": [
       {
         "type": {
@@ -76,17 +93,18 @@
     "order": 0
   },
   {
-    "id": "mongoMix",
-    "longname": "mongoMix",
+    "id": "module:@the-/driver-mongo.mixins.mongoMix",
+    "longname": "module:@the-/driver-mongo.mixins.mongoMix",
     "name": "mongoMix",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Mixin of mongodb",
+    "memberof": "module:@the-/driver-mongo.mixins",
     "meta": {
       "lineno": 1,
       "filename": "mongoMix.js",
       "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib/mixins"
     },
-    "order": 4
+    "order": 5
   }
 ]

@@ -73,4 +73,4 @@ Create a TheRefresher instance
 ### refresher.default()
 Alias of [create](#module_@the-/refresher.create)
 
-**Kind**: static method of [<code>@the-/refresher</code>](#module_@the-/refresher)  
+**Kind**: static method of [<code>@the-/refresher</code>](#module_@the-/refresher)

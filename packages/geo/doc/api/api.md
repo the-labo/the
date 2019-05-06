@@ -73,4 +73,4 @@ Create a TheGeo instance
 ### geo.default()
 Alias of [create](#module_@the-/geo.create)
 
-**Kind**: static method of [<code>@the-/geo</code>](#module_@the-/geo)  
+**Kind**: static method of [<code>@the-/geo</code>](#module_@the-/geo)

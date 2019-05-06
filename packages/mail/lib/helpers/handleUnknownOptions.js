@@ -2,7 +2,7 @@
 
 function handleUnknownOptions(values) {
   const keys = Object.keys(values)
-  if (keys > 0) {
+  if (keys.length > 0) {
     console.warn(`[TheMail] Unknown options`, keys)
   }
 }

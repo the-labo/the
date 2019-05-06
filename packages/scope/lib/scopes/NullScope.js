@@ -16,6 +16,9 @@ class NullScope extends Scope {
 
   static get reducerFactories() {
     return {
+      /**
+       * @function module:@the-/scope.scopes.NullScope#init
+       */
       init() {
         return () => NullScope.initialState
       },

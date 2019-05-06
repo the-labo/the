@@ -1,4 +1,7 @@
 {
+  "name": "@the-/client",
+  "description": "Client for the-server",
+  "version": "15.4.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -27,7 +30,6 @@
     "url": "^0.11.0",
     "uuid": "^3.3.2"
   },
-  "description": "Client for the-server",
   "devDependencies": {
     "@the-/server": "^15.4.2",
     "aport": "^2.0.0"
@@ -43,7 +45,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/client",
   "publishConfig": {
     "access": "public"
   },
@@ -54,6 +55,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.3"
+  }
 }

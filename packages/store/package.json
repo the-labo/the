@@ -1,4 +1,7 @@
 {
+  "name": "@the-/store",
+  "description": "Redux wrapper for the-framework",
+  "version": "15.4.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,7 +14,7 @@
   "dependencies": {
     "@the-/assert": "^15.4.1",
     "@the-/check": "^15.5.1",
-    "@the-/scope": "^15.4.1",
+    "@the-/scope": "^15.4.3",
     "argx": "^4.0.0",
     "asobj": "^3.0.1",
     "bredux": "^3.0.7",
@@ -22,7 +25,6 @@
     "redux-actions": "^2.6.5",
     "redux-promise": "^0.6.0"
   },
-  "description": "Redux wrapper for the-framework",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -35,7 +37,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/store",
   "publishConfig": {
     "access": "public"
   },
@@ -46,6 +47,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.2"
+  }
 }

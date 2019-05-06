@@ -5,7 +5,7 @@
     "name": "@the-/util-array",
     "kind": "module",
     "description": "Array utility of the-framework",
-    "version": "15.4.2",
+    "version": "15.4.3",
     "license": "MIT",
     "typicalname": "utilArray",
     "meta": {
@@ -16,12 +16,13 @@
     "order": 0
   },
   {
-    "id": "keyPathMap",
-    "longname": "keyPathMap",
+    "id": "module:@the-/util-array.keyPathMap",
+    "longname": "module:@the-/util-array.keyPathMap",
     "name": "keyPathMap",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Map entries with key path",
+    "memberof": "module:@the-/util-array",
     "params": [
       {
         "type": {
@@ -64,12 +65,13 @@
     "order": 1
   },
   {
-    "id": "randomFind",
-    "longname": "randomFind",
+    "id": "module:@the-/util-array.randomFind",
+    "longname": "module:@the-/util-array.randomFind",
     "name": "randomFind",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Find randomly",
+    "memberof": "module:@the-/util-array",
     "examples": [
       "[1,2,3].find(randomFind())"
     ],
@@ -90,12 +92,13 @@
     "order": 2
   },
   {
-    "id": "shuffleSort",
-    "longname": "shuffleSort",
+    "id": "module:@the-/util-array.shuffleSort",
+    "longname": "module:@the-/util-array.shuffleSort",
     "name": "shuffleSort",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Find randomly",
+    "memberof": "module:@the-/util-array",
     "examples": [
       "[1,2,3].sort(shuffleSort())"
     ],
@@ -116,12 +119,13 @@
     "order": 3
   },
   {
-    "id": "uniqueFilter",
-    "longname": "uniqueFilter",
+    "id": "module:@the-/util-array.uniqueFilter",
+    "longname": "module:@the-/util-array.uniqueFilter",
     "name": "uniqueFilter",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "defineUniqueFilter",
+    "memberof": "module:@the-/util-array",
     "params": [
       {
         "type": {

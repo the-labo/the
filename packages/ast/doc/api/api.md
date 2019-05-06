@@ -68,5 +68,4 @@ Parse source code
 | Param | Type | Default |
 | --- | --- | --- |
 | src | <code>string</code> |  | 
-| [options] | <code>Object</code> | <code>{}</code> | 
-
+| [options] | <code>Object</code> | <code>{}</code> |

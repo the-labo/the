@@ -1,15 +1,16 @@
 /**
  * sumReducer
+ * @memberof module:@the-/util-array
  * @param {function()}
  * @param {Object} [options={}] - Optional settings
- * @param {function|string} [options.of=(v)=>v] - Key extractor
+ * @param {function()|string} [options.of=(v)=>v] - Key extractor
  * @returns {function()}
  * @example
  *  [2,2,4].filter(sumReducer())
  */
 'use strict'
 
-/** @lends sumReducer */
+/** @lends module:@the-/util-array.sumReducer */
 function sumReducer(options = {}) {
   if (arguments.length > 1) {
     throw new Error('[sumReducer] Invalid args.')

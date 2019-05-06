@@ -1,27 +1,28 @@
 [
   {
-    "id": "module:@the-/run",
-    "longname": "module:@the-/run",
-    "name": "@the-/run",
-    "kind": "module",
     "description": "Script runner for the-framework",
-    "version": "15.4.2",
+    "id": "module:@the-/run",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "run",
+    "longname": "module:@the-/run",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/run/lib"
     },
-    "order": 2
+    "name": "@the-/run",
+    "order": 2,
+    "typicalname": "run",
+    "version": "15.4.2"
   },
   {
-    "id": "module:@the-/run.TheRun()",
-    "longname": "module:@the-/run.TheRun",
-    "name": "TheRun",
-    "kind": "constructor",
     "description": "Script runner",
+    "id": "module:@the-/run.TheRun()",
+    "kind": "constructor",
+    "longname": "module:@the-/run.TheRun",
     "memberof": "module:@the-/run.TheRun",
+    "name": "TheRun",
+    "order": 5,
     "params": [
       {
         "type": {
@@ -45,31 +46,35 @@
         "description": "Inspect port",
         "name": "options.inspect"
       }
-    ],
-    "order": 5
+    ]
   },
   {
     "id": "module:@the-/run.TheRun",
-    "longname": "module:@the-/run.TheRun",
-    "name": "TheRun",
     "kind": "class",
-    "scope": "static",
+    "longname": "module:@the-/run.TheRun",
     "memberof": "module:@the-/run",
     "meta": {
-      "lineno": 1,
       "filename": "TheRun.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/run/lib"
     },
-    "order": 4
+    "name": "TheRun",
+    "order": 4,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/run.create",
-    "longname": "module:@the-/run.create",
-    "name": "create",
-    "kind": "function",
-    "scope": "static",
     "description": "Create a TheRun instance",
+    "id": "module:@the-/run.create",
+    "kind": "function",
+    "longname": "module:@the-/run.create",
     "memberof": "module:@the-/run",
+    "meta": {
+      "filename": "create.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/run/lib"
+    },
+    "name": "create",
+    "order": 0,
     "params": [
       {
         "type": {
@@ -90,36 +95,36 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "create.js",
-      "path": "/Users/okuni/Projects/the/packages/run/lib"
-    },
-    "order": 0
+    "scope": "static"
   },
   {
-    "id": "module:@the-/run.default",
-    "longname": "module:@the-/run.default",
-    "name": "default",
-    "kind": "function",
-    "scope": "static",
     "description": "Alias of {@link module:@the-/run.create}",
+    "id": "module:@the-/run.default",
+    "kind": "function",
+    "longname": "module:@the-/run.default",
     "memberof": "module:@the-/run",
     "meta": {
-      "lineno": 1,
       "filename": "default.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/run/lib"
     },
-    "order": 1
+    "name": "default",
+    "order": 1,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/run.run",
-    "longname": "module:@the-/run.run",
-    "name": "run",
-    "kind": "function",
-    "scope": "static",
     "description": "Create and run",
+    "id": "module:@the-/run.run",
+    "kind": "function",
+    "longname": "module:@the-/run.run",
     "memberof": "module:@the-/run",
+    "meta": {
+      "filename": "run.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/run/lib"
+    },
+    "name": "run",
+    "order": 3,
     "params": [
       {
         "type": {
@@ -140,11 +145,6 @@
         "name": "options"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "run.js",
-      "path": "/Users/okuni/Projects/the/packages/run/lib"
-    },
-    "order": 3
+    "scope": "static"
   }
 ]

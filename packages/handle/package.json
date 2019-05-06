@@ -1,4 +1,7 @@
 {
+  "name": "@the-/handle",
+  "description": "Action handler for the-framework",
+  "version": "15.4.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -15,7 +18,6 @@
     "asenv": "^3.0.2",
     "asobj": "^3.0.1"
   },
-  "description": "Action handler for the-framework",
   "devDependencies": {
     "@the-/scene": "file:../scene"
   },
@@ -30,7 +32,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/handle",
   "publishConfig": {
     "access": "public"
   },
@@ -41,6 +42,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.2"
+  }
 }

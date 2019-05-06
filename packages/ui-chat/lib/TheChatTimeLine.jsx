@@ -103,7 +103,7 @@ class TheChatTimeLine extends React.Component {
       whoImageSize,
     } = props
 
-    const groupedItems = items.reduce((grouped, item) => {
+    const groupedItems = (items || []).reduce((grouped, item) => {
       const title = theDate(item.at, { lang }).format('LL')
       return Object.assign(grouped, {
         [title]: [...(grouped[title] || []), item],

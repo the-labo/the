@@ -1,4 +1,7 @@
 {
+  "name": "@the-/db",
+  "description": "DB for the-framework",
+  "version": "15.4.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,7 +17,7 @@
     "@the-/driver-sequelize": "^15.4.2",
     "@the-/hash": "^15.4.3",
     "@the-/refresher": "^15.4.0",
-    "@the-/resource": "^15.4.3",
+    "@the-/resource": "^15.4.5",
     "@the-/util-db": "^15.4.0",
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.3",
@@ -38,7 +41,6 @@
     "the-driver-rdb": "^2.3.5",
     "uuid": "^3.3.2"
   },
-  "description": "DB for the-framework",
   "devDependencies": {
     "colorprint": "^5.0.3",
     "eslint": "^5.16.0",
@@ -56,7 +58,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/db",
   "publishConfig": {
     "access": "public"
   },
@@ -67,6 +68,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.3"
+  }
 }

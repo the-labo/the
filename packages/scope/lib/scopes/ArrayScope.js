@@ -18,7 +18,7 @@ class ArrayScope extends Scope {
     return {
       /**
        * Concat values
-       * @function ArrayScope#concat
+       * @function module:@the-/scope.scopes.ArrayScope#concat
        * @param {*} values - Valeus to concat
        */
       concat(...values) {
@@ -29,14 +29,14 @@ class ArrayScope extends Scope {
       },
       /**
        * Pop entry
-       * @function ArrayScope#pop
+       * @function module:@the-/scope.scopes.ArrayScope#pop
        */
       pop() {
         return (state) => state.slice(0, state.length - 1)
       },
       /**
        * Push entry
-       * @function ArrayScope#push
+       * @function module:@the-/scope.scopes.ArrayScope#push
        * @param {*} entry
        */
       push(entry) {
@@ -44,7 +44,7 @@ class ArrayScope extends Scope {
       },
       /**
        * Reset state with values
-       * @function ArrayScope#reset
+       * @function module:@the-/scope.scopes.ArrayScope#reset
        * @param {Array} values - Values to override
        */
       reset(values) {
@@ -52,6 +52,7 @@ class ArrayScope extends Scope {
       },
       /**
        * Set entry at index
+       * @function module:@the-/scope.scopes.ArrayScope#set
        * @param {number} index - Array index
        * @param {*} entry - Value to set
        */
@@ -66,14 +67,14 @@ class ArrayScope extends Scope {
       },
       /**
        * Shift entry
-       * @function ArrayScope#shift
+       * @function module:@the-/scope.scopes.ArrayScope#shift
        */
       shift() {
         return (state) => state.slice(1)
       },
       /**
        * Unshift entry
-       * @function ArrayScope#unshift
+       * @function module:@the-/scope.scopes.ArrayScope#unshift
        * @param {*} entry - Value to unshift
        */
       unshift(entry) {

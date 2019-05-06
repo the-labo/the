@@ -108,7 +108,7 @@ tryExample().catch((err) => console.error(err))
   - [.sendSendgrid()](./doc/api/api.md#module_@the-/mail.sending.sendSendgrid)
   - [.sendSMTP()](./doc/api/api.md#module_@the-/mail.sending.sendSMTP)
 - module:@the-/mail.TheMail
-  - [#send()](./doc/api/api.md#module_@the-/mail.TheMail#send)
+  - [#send(config)](./doc/api/api.md#module_@the-/mail.TheMail#send)
 - global
   - [toLowerKeys()](./doc/api/api.md#toLowerKeys)
 

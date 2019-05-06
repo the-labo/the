@@ -38,4 +38,4 @@ Create a ThePolyfill instance
 ### polyfill.default()
 Alias of [create](#module_@the-/polyfill.create)
 
-**Kind**: static method of [<code>@the-/polyfill</code>](#module_@the-/polyfill)  
+**Kind**: static method of [<code>@the-/polyfill</code>](#module_@the-/polyfill)

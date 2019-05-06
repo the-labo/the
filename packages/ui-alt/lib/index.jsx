@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-alt
  * @typicalname uiAlt
- * @version 15.4.2
+ * @version 15.4.3
  * @description Alt text for the-components
  */
 'use strict'

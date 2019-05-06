@@ -95,11 +95,11 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 
-- global
-  - [keyPathMap(keyPath,options)](./doc/api/api.md#keyPathMap)
-  - [randomFind()](./doc/api/api.md#randomFind)
-  - [shuffleSort()](./doc/api/api.md#shuffleSort)
-  - [uniqueFilter(options)](./doc/api/api.md#uniqueFilter)
+- module:@the-/util-array
+  - [.keyPathMap(keyPath,options)](./doc/api/api.md#module_@the-/util-array.keyPathMap)
+  - [.randomFind()](./doc/api/api.md#module_@the-/util-array.randomFind)
+  - [.shuffleSort()](./doc/api/api.md#module_@the-/util-array.shuffleSort)
+  - [.uniqueFilter(options)](./doc/api/api.md#module_@the-/util-array.uniqueFilter)
 
 See [API Guide](./doc/api/api.md) for more detail
 

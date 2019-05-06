@@ -1,5 +1,6 @@
 /**
  * Map entries with key path
+ * @memberof module:@the-/util-array
  * @function keyPathMap
  * @param {string} keyPath - Attribute key path
  * @param {Object} [options={}] - Optional settings
@@ -9,7 +10,7 @@
  */
 'use strict'
 
-/** @lends keyPathMap */
+/** @lends module:@the-/util-array.keyPathMap */
 function keyPathMap(keyPath = '', options = {}) {
   if (arguments.length > 2) {
     throw new Error('[keyPathMap] Invalid args.')

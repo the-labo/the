@@ -2,7 +2,7 @@
 /**
  * @module @the-/demo-ui
  * @typicalname demoUi
- * @version 15.4.2
+ * @version 15.4.3
  * @description Demo of the-components
  */
 'use strict'

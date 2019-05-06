@@ -5,7 +5,7 @@
 ## @the-/db
 DB for the-framework
 
-**Version**: 15.4.3  
+**Version**: 15.4.4  
 **License**: MIT  
 
 * [@the-/db](#module_@the-/db)

@@ -18,7 +18,7 @@ class NumberScope extends Scope {
     return {
       /**
        * Decrement value
-       * @function NumberScope#decrement
+       * @function module:@the-/scope.scopes.NumberScope#decrement
        * @param {number} [amount=1] - Amount to decrement
        */
       decrement(amount = 1) {
@@ -26,7 +26,7 @@ class NumberScope extends Scope {
       },
       /**
        * Increment value
-       * @function NumberScope#increment
+       * @function module:@the-/scope.scopes.NumberScope#increment
        * @param {number} [amount=1] - Amount to increment
        */
       increment(amount = 1) {
@@ -37,7 +37,7 @@ class NumberScope extends Scope {
       },
       /**
        * Set number
-       * @function NumberScope#set
+       * @function module:@the-/scope.scopes.NumberScope#set
        * @param {number} n
        */
       set(n) {

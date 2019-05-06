@@ -70,5 +70,4 @@ Do unless production env
 
 | Param | Type |
 | --- | --- |
-| handler | <code>function</code> | 
-
+| handler | <code>function</code> |

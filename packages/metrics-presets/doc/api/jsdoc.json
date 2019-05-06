@@ -1,27 +1,32 @@
 [
   {
-    "id": "module:@the-/metrics-presets",
-    "longname": "module:@the-/metrics-presets",
-    "name": "@the-/metrics-presets",
-    "kind": "module",
     "description": "Preset of the-metrics",
-    "version": "15.4.2",
+    "id": "module:@the-/metrics-presets",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "metricsPresets",
+    "longname": "module:@the-/metrics-presets",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/metrics-presets/lib"
     },
-    "order": 0
+    "name": "@the-/metrics-presets",
+    "order": 0,
+    "typicalname": "metricsPresets",
+    "version": "15.4.2"
   },
   {
-    "id": "RenderingCountMetrics",
-    "longname": "RenderingCountMetrics",
-    "name": "RenderingCountMetrics",
-    "kind": "function",
-    "scope": "global",
     "description": "Count metrics for component rendering",
+    "id": "RenderingCountMetrics",
+    "kind": "function",
+    "longname": "RenderingCountMetrics",
+    "meta": {
+      "filename": "RenderingCountMetrics.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/metrics-presets/lib"
+    },
+    "name": "RenderingCountMetrics",
+    "order": 1,
     "params": [
       {
         "type": {
@@ -44,11 +49,6 @@
         "name": "options"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "RenderingCountMetrics.js",
-      "path": "/Users/okuni/Projects/the/packages/metrics-presets/lib"
-    },
-    "order": 1
+    "scope": "global"
   }
 ]

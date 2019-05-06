@@ -21,7 +21,7 @@ class BooleanScope extends Scope {
       },
       /**
        * Toggle value
-       * @function BooleanScope#toggle
+       * @function module:@the-/scope.scopes.BooleanScope#toggle
        * @param {?boolean} [value]
        */
       toggle(value) {

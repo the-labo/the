@@ -143,13 +143,12 @@ const { createElement: c } = React
 ## API Guide
 
 
-- global
-  - [assertMethods(Class,reservedNames)](./doc/api/api.md#assertMethods)
-  - [IOEvents()](./doc/api/api.md#IOEvents)
-  - [KeepMixed](./doc/api/api.md#KeepMixed)
 - ControllerModuleBind
   - [#reloadSession(options)](./doc/api/api.md#ControllerModuleBind#reloadSession)
   - [#saveSession(options)](./doc/api/api.md#ControllerModuleBind#saveSession)
+- global
+  - [IOEvents()](./doc/api/api.md#IOEvents)
+  - [KeepMixed](./doc/api/api.md#KeepMixed)
 - module:@the-/server.adapters
   - [.redisAdapter()](./doc/api/api.md#module_@the-/server.adapters.redisAdapter)
 - module:@the-/server
@@ -157,6 +156,8 @@ const { createElement: c } = React
   - [.create(args)](./doc/api/api.md#module_@the-/server.create)
   - [.default()](./doc/api/api.md#module_@the-/server.default)
   - [.TheServer](./doc/api/api.md#module_@the-/server.TheServer)
+- module:@the-/server.assert
+  - [.assertMethods(Class,reservedNames)](./doc/api/api.md#module_@the-/server.assert.assertMethods)
 - module:@the-/server.helpers
   - [.asStrictSession(session)](./doc/api/api.md#module_@the-/server.helpers.asStrictSession)
   - [.callbacksProxy()](./doc/api/api.md#module_@the-/server.helpers.callbacksProxy)
