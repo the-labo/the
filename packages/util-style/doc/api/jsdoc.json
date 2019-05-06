@@ -1,27 +1,32 @@
 [
   {
-    "id": "module:@the-/util-style",
-    "longname": "module:@the-/util-style",
-    "name": "@the-/util-style",
-    "kind": "module",
     "description": "Utility for style",
-    "version": "15.4.2",
+    "id": "module:@the-/util-style",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "utilStyle",
+    "longname": "module:@the-/util-style",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/util-style/lib"
     },
-    "order": 0
+    "name": "@the-/util-style",
+    "order": 0,
+    "typicalname": "utilStyle",
+    "version": "15.4.2"
   },
   {
-    "id": "styleString",
-    "longname": "styleString",
-    "name": "styleString",
-    "kind": "function",
-    "scope": "global",
     "description": "Convert style into style string",
+    "id": "styleString",
+    "kind": "function",
+    "longname": "styleString",
+    "meta": {
+      "filename": "styleString.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/util-style/lib"
+    },
+    "name": "styleString",
+    "order": 1,
     "params": [
       {
         "type": {
@@ -62,11 +67,6 @@
         "description": "Style object"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "styleString.js",
-      "path": "/Users/okuni/Projects/the/packages/util-style/lib"
-    },
-    "order": 1
+    "scope": "global"
   }
 ]

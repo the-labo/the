@@ -41,4 +41,4 @@ View of the-components
 ## TheViewStyle()
 Style for TheView
 
-**Kind**: global function  
+**Kind**: global function

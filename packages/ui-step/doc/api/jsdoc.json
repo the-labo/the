@@ -1,61 +1,61 @@
 [
   {
-    "id": "module:@the-/ui-step",
-    "longname": "module:@the-/ui-step",
-    "name": "@the-/ui-step",
-    "kind": "module",
     "description": "Steps for the-components",
-    "version": "15.4.2",
-    "typicalname": "uiStep",
+    "id": "module:@the-/ui-step",
+    "kind": "module",
+    "longname": "module:@the-/ui-step",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-step/lib"
     },
-    "order": 0
+    "name": "@the-/ui-step",
+    "order": 0,
+    "typicalname": "uiStep",
+    "version": "15.4.2"
   },
   {
-    "id": "TheStep",
-    "longname": "TheStep",
-    "name": "TheStep",
-    "kind": "class",
-    "scope": "global",
     "description": "Steps for the-component",
+    "id": "TheStep",
+    "kind": "class",
+    "longname": "TheStep",
     "meta": {
-      "lineno": 15,
       "filename": "TheStep.jsx",
+      "lineno": 15,
       "path": "/Users/okuni/Projects/the/packages/ui-step/lib"
     },
-    "order": 1
+    "name": "TheStep",
+    "order": 1,
+    "scope": "global"
   },
   {
-    "id": "TheStepStyle",
-    "longname": "TheStepStyle",
-    "name": "TheStepStyle",
-    "kind": "function",
-    "scope": "global",
     "description": "Style for TheStep",
-    "params": [],
+    "id": "TheStepStyle",
+    "kind": "function",
+    "longname": "TheStepStyle",
     "meta": {
-      "lineno": 11,
       "filename": "TheStepStyle.jsx",
+      "lineno": 11,
       "path": "/Users/okuni/Projects/the/packages/ui-step/lib"
     },
-    "order": 2
+    "name": "TheStepStyle",
+    "order": 2,
+    "params": [],
+    "scope": "global"
   },
   {
-    "id": "TheStepStyle.propTypes.options",
-    "longname": "TheStepStyle.propTypes.options",
-    "name": "options",
-    "kind": "member",
-    "scope": "static",
     "description": "Style options",
+    "id": "TheStepStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheStepStyle.propTypes.options",
     "memberof": "TheStepStyle.propTypes",
     "meta": {
-      "lineno": 22,
       "filename": "TheStepStyle.jsx",
+      "lineno": 22,
       "path": "/Users/okuni/Projects/the/packages/ui-step/lib"
     },
-    "order": 3
+    "name": "options",
+    "order": 3,
+    "scope": "static"
   }
 ]

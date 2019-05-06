@@ -1,181 +1,181 @@
 [
   {
+    "description": "Video for the-components",
     "id": "module:@the-/ui-video",
-    "longname": "module:@the-/ui-video",
-    "name": "@the-/ui-video",
     "kind": "module",
-    "description": "Video for the-components",
-    "version": "15.4.2",
-    "typicalname": "uiVideo",
+    "longname": "module:@the-/ui-video",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
-    "order": 0
+    "name": "@the-/ui-video",
+    "order": 0,
+    "typicalname": "uiVideo",
+    "version": "15.4.2"
   },
   {
-    "id": "TheVideo",
-    "longname": "TheVideo",
-    "name": "TheVideo",
-    "kind": "class",
-    "scope": "global",
     "description": "Video for the-components",
+    "id": "TheVideo",
+    "kind": "class",
+    "longname": "TheVideo",
     "meta": {
+      "filename": "TheVideo.jsx",
       "lineno": 12,
-      "filename": "TheVideo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
-    "order": 1
+    "name": "TheVideo",
+    "order": 1,
+    "scope": "global"
   },
   {
-    "id": "TheVideoStyle",
-    "longname": "TheVideoStyle",
-    "name": "TheVideoStyle",
-    "kind": "function",
-    "scope": "global",
     "description": "Style for TheVideo",
-    "params": [],
+    "id": "TheVideoStyle",
+    "kind": "function",
+    "longname": "TheVideoStyle",
     "meta": {
-      "lineno": 11,
       "filename": "TheVideoStyle.jsx",
+      "lineno": 11,
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
-    "order": 10
+    "name": "TheVideoStyle",
+    "order": 10,
+    "params": [],
+    "scope": "global"
   },
   {
-    "id": "TheVideo.propTypes.asLink",
-    "longname": "TheVideo.propTypes.asLink",
-    "name": "asLink",
-    "kind": "member",
-    "scope": "static",
     "description": "Render as link",
+    "id": "TheVideo.propTypes.asLink",
+    "kind": "member",
+    "longname": "TheVideo.propTypes.asLink",
     "memberof": "TheVideo.propTypes",
     "meta": {
+      "filename": "TheVideo.jsx",
       "lineno": 167,
-      "filename": "TheVideo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
-    "order": 2
+    "name": "asLink",
+    "order": 2,
+    "scope": "static"
   },
   {
-    "id": "TheVideo.propTypes.height",
-    "longname": "TheVideo.propTypes.height",
-    "name": "height",
-    "kind": "member",
-    "scope": "static",
     "description": "Image height",
+    "id": "TheVideo.propTypes.height",
+    "kind": "member",
+    "longname": "TheVideo.propTypes.height",
     "memberof": "TheVideo.propTypes",
     "meta": {
+      "filename": "TheVideo.jsx",
       "lineno": 169,
-      "filename": "TheVideo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
-    "order": 3
+    "name": "height",
+    "order": 3,
+    "scope": "static"
   },
   {
-    "id": "TheVideo.propTypes.notFoundMessage",
-    "longname": "TheVideo.propTypes.notFoundMessage",
-    "name": "notFoundMessage",
-    "kind": "member",
-    "scope": "static",
     "description": "Message when not found",
+    "id": "TheVideo.propTypes.notFoundMessage",
+    "kind": "member",
+    "longname": "TheVideo.propTypes.notFoundMessage",
     "memberof": "TheVideo.propTypes",
     "meta": {
+      "filename": "TheVideo.jsx",
       "lineno": 171,
-      "filename": "TheVideo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
-    "order": 4
+    "name": "notFoundMessage",
+    "order": 4,
+    "scope": "static"
   },
   {
-    "id": "TheVideo.propTypes.onError",
-    "longname": "TheVideo.propTypes.onError",
-    "name": "onError",
-    "kind": "member",
-    "scope": "static",
     "description": "Handler for failed event",
+    "id": "TheVideo.propTypes.onError",
+    "kind": "member",
+    "longname": "TheVideo.propTypes.onError",
     "memberof": "TheVideo.propTypes",
     "meta": {
+      "filename": "TheVideo.jsx",
       "lineno": 173,
-      "filename": "TheVideo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
-    "order": 5
+    "name": "onError",
+    "order": 5,
+    "scope": "static"
   },
   {
-    "id": "TheVideo.propTypes.onLoad",
-    "longname": "TheVideo.propTypes.onLoad",
-    "name": "onLoad",
-    "kind": "member",
-    "scope": "static",
     "description": "Handler for load event",
+    "id": "TheVideo.propTypes.onLoad",
+    "kind": "member",
+    "longname": "TheVideo.propTypes.onLoad",
     "memberof": "TheVideo.propTypes",
     "meta": {
+      "filename": "TheVideo.jsx",
       "lineno": 175,
-      "filename": "TheVideo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
-    "order": 6
+    "name": "onLoad",
+    "order": 6,
+    "scope": "static"
   },
   {
-    "id": "TheVideo.propTypes.resizeInterval",
-    "longname": "TheVideo.propTypes.resizeInterval",
-    "name": "resizeInterval",
-    "kind": "member",
-    "scope": "static",
     "description": "Interval for resize",
+    "id": "TheVideo.propTypes.resizeInterval",
+    "kind": "member",
+    "longname": "TheVideo.propTypes.resizeInterval",
     "memberof": "TheVideo.propTypes",
     "meta": {
+      "filename": "TheVideo.jsx",
       "lineno": 178,
-      "filename": "TheVideo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
-    "order": 7
+    "name": "resizeInterval",
+    "order": 7,
+    "scope": "static"
   },
   {
-    "id": "TheVideo.propTypes.scale",
-    "longname": "TheVideo.propTypes.scale",
-    "name": "scale",
-    "kind": "member",
-    "scope": "static",
     "description": "How to scale video",
+    "id": "TheVideo.propTypes.scale",
+    "kind": "member",
+    "longname": "TheVideo.propTypes.scale",
     "memberof": "TheVideo.propTypes",
     "meta": {
+      "filename": "TheVideo.jsx",
       "lineno": 180,
-      "filename": "TheVideo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
-    "order": 8
+    "name": "scale",
+    "order": 8,
+    "scope": "static"
   },
   {
-    "id": "TheVideo.propTypes.videoRef",
-    "longname": "TheVideo.propTypes.videoRef",
-    "name": "videoRef",
-    "kind": "member",
-    "scope": "static",
     "description": "Handle video ref",
+    "id": "TheVideo.propTypes.videoRef",
+    "kind": "member",
+    "longname": "TheVideo.propTypes.videoRef",
     "memberof": "TheVideo.propTypes",
     "meta": {
-      "lineno": 182,
       "filename": "TheVideo.jsx",
+      "lineno": 182,
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
-    "order": 9
+    "name": "videoRef",
+    "order": 9,
+    "scope": "static"
   },
   {
-    "id": "TheVideoStyle.propTypes.options",
-    "longname": "TheVideoStyle.propTypes.options",
-    "name": "options",
-    "kind": "member",
-    "scope": "static",
     "description": "Style options",
+    "id": "TheVideoStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheVideoStyle.propTypes.options",
     "memberof": "TheVideoStyle.propTypes",
     "meta": {
-      "lineno": 22,
       "filename": "TheVideoStyle.jsx",
+      "lineno": 22,
       "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
     },
-    "order": 11
+    "name": "options",
+    "order": 11,
+    "scope": "static"
   }
 ]

@@ -1,4 +1,7 @@
 {
+  "name": "@the-/ast",
+  "description": "AST (abstract syntax tree) parser",
+  "version": "15.4.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,7 +16,6 @@
     "@babel/types": "^7.4.4",
     "lodash.clone": "^4.5.0"
   },
-  "description": "AST (abstract syntax tree) parser",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -26,7 +28,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/ast",
   "publishConfig": {
     "access": "public"
   },
@@ -37,6 +38,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.2"
+  }
 }

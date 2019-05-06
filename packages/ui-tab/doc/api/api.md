@@ -41,4 +41,4 @@ Tab for the-components
 ## TheTabStyle()
 Style for TheTab
 
-**Kind**: global function  
+**Kind**: global function

@@ -41,4 +41,4 @@ Root element of the-components
 ## TheRootStyle()
 Style for TheRoot
 
-**Kind**: global function  
+**Kind**: global function

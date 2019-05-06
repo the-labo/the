@@ -4,12 +4,19 @@
  */
 'use strict'
 
+const { throws } = require('assert').strict
+const NodeTypes = require('../lib/constants/NodeTypes')
+
 describe('node-types', () => {
   before(() => {})
 
   after(() => {})
 
-  it('Do test', () => {})
+  it('Should be freezed', () => {
+    throws(() => {
+      NodeTypes.xxx = 1
+    })
+  })
 })
 
 /* global describe, before, after, it */

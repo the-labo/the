@@ -6,11 +6,12 @@
  */
 'use strict'
 
-module.exports = Object.freeze(
+module.exports =
   /** @lends module:@the-/ast.NodeTypes */
   {
     {{#each types}}
     {{this}}: '{{this}}',
     {{/each}}
-  },
-)
+  }
+
+Object.freeze(module.exports)

@@ -1,76 +1,76 @@
 [
   {
+    "description": "Main for the-components",
     "id": "module:@the-/ui-main",
-    "longname": "module:@the-/ui-main",
-    "name": "@the-/ui-main",
     "kind": "module",
-    "description": "Main for the-components",
-    "version": "15.4.2",
-    "typicalname": "uiMain",
+    "longname": "module:@the-/ui-main",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-main/lib"
     },
-    "order": 0
+    "name": "@the-/ui-main",
+    "order": 0,
+    "typicalname": "uiMain",
+    "version": "15.4.2"
   },
   {
-    "id": "TheMain",
-    "longname": "TheMain",
-    "name": "TheMain",
-    "kind": "class",
-    "scope": "global",
     "description": "Main for the-components",
+    "id": "TheMain",
+    "kind": "class",
+    "longname": "TheMain",
     "meta": {
-      "lineno": 13,
       "filename": "TheMain.jsx",
+      "lineno": 13,
       "path": "/Users/okuni/Projects/the/packages/ui-main/lib"
     },
-    "order": 1
+    "name": "TheMain",
+    "order": 1,
+    "scope": "global"
   },
   {
-    "id": "TheMainStyle",
-    "longname": "TheMainStyle",
-    "name": "TheMainStyle",
-    "kind": "function",
-    "scope": "global",
     "description": "Style for TheMain",
-    "params": [],
+    "id": "TheMainStyle",
+    "kind": "function",
+    "longname": "TheMainStyle",
     "meta": {
-      "lineno": 10,
       "filename": "TheMainStyle.jsx",
+      "lineno": 10,
       "path": "/Users/okuni/Projects/the/packages/ui-main/lib"
     },
-    "order": 3
+    "name": "TheMainStyle",
+    "order": 3,
+    "params": [],
+    "scope": "global"
   },
   {
-    "id": "TheMain.propTypes.spinning",
-    "longname": "TheMain.propTypes.spinning",
-    "name": "spinning",
-    "kind": "member",
-    "scope": "static",
     "description": "Show spinner",
+    "id": "TheMain.propTypes.spinning",
+    "kind": "member",
+    "longname": "TheMain.propTypes.spinning",
     "memberof": "TheMain.propTypes",
     "meta": {
-      "lineno": 36,
       "filename": "TheMain.jsx",
+      "lineno": 36,
       "path": "/Users/okuni/Projects/the/packages/ui-main/lib"
     },
-    "order": 2
+    "name": "spinning",
+    "order": 2,
+    "scope": "static"
   },
   {
-    "id": "TheMainStyle.propTypes.options",
-    "longname": "TheMainStyle.propTypes.options",
-    "name": "options",
-    "kind": "member",
-    "scope": "static",
     "description": "Style options",
+    "id": "TheMainStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheMainStyle.propTypes.options",
     "memberof": "TheMainStyle.propTypes",
     "meta": {
-      "lineno": 21,
       "filename": "TheMainStyle.jsx",
+      "lineno": 21,
       "path": "/Users/okuni/Projects/the/packages/ui-main/lib"
     },
-    "order": 4
+    "name": "options",
+    "order": 4,
+    "scope": "static"
   }
 ]

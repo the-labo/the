@@ -1,493 +1,493 @@
 [
   {
+    "description": "Dialog for the-components",
     "id": "module:@the-/ui-dialog",
-    "longname": "module:@the-/ui-dialog",
-    "name": "@the-/ui-dialog",
     "kind": "module",
-    "description": "Dialog for the-components",
-    "version": "15.4.2",
-    "typicalname": "uiDialog",
+    "longname": "module:@the-/ui-dialog",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
     },
-    "order": 0
+    "name": "@the-/ui-dialog",
+    "order": 0,
+    "typicalname": "uiDialog",
+    "version": "15.4.2"
   },
   {
-    "id": "TheConfirmDialog",
-    "longname": "TheConfirmDialog",
-    "name": "TheConfirmDialog",
-    "kind": "class",
-    "scope": "global",
     "description": "Confirm Dialog",
+    "id": "TheConfirmDialog",
+    "kind": "class",
+    "longname": "TheConfirmDialog",
     "meta": {
+      "filename": "TheConfirmDialog.jsx",
       "lineno": 13,
-      "filename": "TheConfirmDialog.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
     },
-    "order": 1
+    "name": "TheConfirmDialog",
+    "order": 1,
+    "scope": "global"
   },
   {
-    "id": "TheDialog",
-    "longname": "TheDialog",
-    "name": "TheDialog",
-    "kind": "class",
-    "scope": "global",
     "description": "Dialog for the-components",
+    "id": "TheDialog",
+    "kind": "class",
+    "longname": "TheDialog",
     "meta": {
+      "filename": "TheDialog.jsx",
       "lineno": 18,
-      "filename": "TheDialog.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
     },
-    "order": 9
+    "name": "TheDialog",
+    "order": 9,
+    "scope": "global"
   },
   {
-    "id": "TheOkDialog",
-    "longname": "TheOkDialog",
-    "name": "TheOkDialog",
-    "kind": "class",
-    "scope": "global",
     "description": "Ok Dialog",
-    "meta": {
-      "lineno": 11,
-      "filename": "TheOkDialog.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
-    },
-    "order": 20
-  },
-  {
-    "id": "TheYesNoDialog",
-    "longname": "TheYesNoDialog",
-    "name": "TheYesNoDialog",
+    "id": "TheOkDialog",
     "kind": "class",
-    "scope": "global",
+    "longname": "TheOkDialog",
+    "meta": {
+      "filename": "TheOkDialog.jsx",
+      "lineno": 11,
+      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+    },
+    "name": "TheOkDialog",
+    "order": 20,
+    "scope": "global"
+  },
+  {
     "description": "Yes No Dialog",
+    "id": "TheYesNoDialog",
+    "kind": "class",
+    "longname": "TheYesNoDialog",
     "meta": {
-      "lineno": 11,
       "filename": "TheYesNoDialog.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
-    },
-    "order": 25
-  },
-  {
-    "id": "TheDialogStyle",
-    "longname": "TheDialogStyle",
-    "name": "TheDialogStyle",
-    "kind": "function",
-    "scope": "global",
-    "description": "Style for TheDialog",
-    "params": [],
-    "meta": {
       "lineno": 11,
+      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+    },
+    "name": "TheYesNoDialog",
+    "order": 25,
+    "scope": "global"
+  },
+  {
+    "description": "Style for TheDialog",
+    "id": "TheDialogStyle",
+    "kind": "function",
+    "longname": "TheDialogStyle",
+    "meta": {
       "filename": "TheDialogStyle.jsx",
+      "lineno": 11,
       "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
     },
-    "order": 18
+    "name": "TheDialogStyle",
+    "order": 18,
+    "params": [],
+    "scope": "global"
   },
   {
-    "id": "TheConfirmDialog.propTypes.checkText",
-    "longname": "TheConfirmDialog.propTypes.checkText",
-    "name": "checkText",
-    "kind": "member",
-    "scope": "static",
     "description": "Text of NO button",
+    "id": "TheConfirmDialog.propTypes.checkText",
+    "kind": "member",
+    "longname": "TheConfirmDialog.propTypes.checkText",
     "memberof": "TheConfirmDialog.propTypes",
     "meta": {
+      "filename": "TheConfirmDialog.jsx",
       "lineno": 58,
-      "filename": "TheConfirmDialog.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
     },
-    "order": 2
+    "name": "checkText",
+    "order": 2,
+    "scope": "static"
   },
   {
+    "description": "Close handler",
     "id": "TheConfirmDialog.propTypes.onClose",
+    "kind": "member",
     "longname": "TheConfirmDialog.propTypes.onClose",
-    "name": "onClose",
-    "kind": "member",
-    "scope": "static",
-    "description": "Close handler",
     "memberof": "TheConfirmDialog.propTypes",
     "meta": {
+      "filename": "TheConfirmDialog.jsx",
       "lineno": 60,
-      "filename": "TheConfirmDialog.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
     },
-    "order": 3
-  },
-  {
-    "id": "TheConfirmDialog.propTypes.onSubmit",
-    "longname": "TheConfirmDialog.propTypes.onSubmit",
-    "name": "onSubmit",
-    "kind": "member",
-    "scope": "static",
-    "description": "Handler for submit",
-    "memberof": "TheConfirmDialog.propTypes",
-    "meta": {
-      "lineno": 62,
-      "filename": "TheConfirmDialog.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
-    },
-    "order": 4
-  },
-  {
-    "id": "TheConfirmDialog.propTypes.present",
-    "longname": "TheConfirmDialog.propTypes.present",
-    "name": "present",
-    "kind": "member",
-    "scope": "static",
-    "description": "Shows the dialog",
-    "memberof": "TheConfirmDialog.propTypes",
-    "meta": {
-      "lineno": 64,
-      "filename": "TheConfirmDialog.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
-    },
-    "order": 5
-  },
-  {
-    "id": "TheConfirmDialog.propTypes.spinning",
-    "longname": "TheConfirmDialog.propTypes.spinning",
-    "name": "spinning",
-    "kind": "member",
-    "scope": "static",
-    "description": "Show spin",
-    "memberof": "TheConfirmDialog.propTypes",
-    "meta": {
-      "lineno": 66,
-      "filename": "TheConfirmDialog.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
-    },
-    "order": 6
-  },
-  {
-    "id": "TheConfirmDialog.propTypes.submitText",
-    "longname": "TheConfirmDialog.propTypes.submitText",
-    "name": "submitText",
-    "kind": "member",
-    "scope": "static",
-    "description": "Text of submit button",
-    "memberof": "TheConfirmDialog.propTypes",
-    "meta": {
-      "lineno": 68,
-      "filename": "TheConfirmDialog.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
-    },
-    "order": 7
-  },
-  {
-    "id": "TheConfirmDialog.propTypes.title",
-    "longname": "TheConfirmDialog.propTypes.title",
-    "name": "title",
-    "kind": "member",
-    "scope": "static",
-    "description": "Dialog Title",
-    "memberof": "TheConfirmDialog.propTypes",
-    "meta": {
-      "lineno": 70,
-      "filename": "TheConfirmDialog.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
-    },
-    "order": 8
-  },
-  {
-    "id": "TheDialog.propTypes.hideCloseButton",
-    "longname": "TheDialog.propTypes.hideCloseButton",
-    "name": "hideCloseButton",
-    "kind": "member",
-    "scope": "static",
-    "description": "Hide Close Button",
-    "memberof": "TheDialog.propTypes",
-    "meta": {
-      "lineno": 160,
-      "filename": "TheDialog.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
-    },
-    "order": 10
-  },
-  {
-    "id": "TheDialog.propTypes.icon",
-    "longname": "TheDialog.propTypes.icon",
-    "name": "icon",
-    "kind": "member",
-    "scope": "static",
-    "description": "Dialog icon",
-    "memberof": "TheDialog.propTypes",
-    "meta": {
-      "lineno": 162,
-      "filename": "TheDialog.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
-    },
-    "order": 11
-  },
-  {
-    "id": "TheDialog.propTypes.lead",
-    "longname": "TheDialog.propTypes.lead",
-    "name": "lead",
-    "kind": "member",
-    "scope": "static",
-    "description": "Lead text of dialog body",
-    "memberof": "TheDialog.propTypes",
-    "meta": {
-      "lineno": 164,
-      "filename": "TheDialog.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
-    },
-    "order": 12
-  },
-  {
-    "id": "TheDialog.propTypes.onClose",
-    "longname": "TheDialog.propTypes.onClose",
     "name": "onClose",
-    "kind": "member",
-    "scope": "static",
-    "description": "Close handler",
-    "memberof": "TheDialog.propTypes",
-    "meta": {
-      "lineno": 166,
-      "filename": "TheDialog.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
-    },
-    "order": 13
+    "order": 3,
+    "scope": "static"
   },
   {
-    "id": "TheDialog.propTypes.present",
-    "longname": "TheDialog.propTypes.present",
-    "name": "present",
+    "description": "Handler for submit",
+    "id": "TheConfirmDialog.propTypes.onSubmit",
     "kind": "member",
-    "scope": "static",
+    "longname": "TheConfirmDialog.propTypes.onSubmit",
+    "memberof": "TheConfirmDialog.propTypes",
+    "meta": {
+      "filename": "TheConfirmDialog.jsx",
+      "lineno": 62,
+      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+    },
+    "name": "onSubmit",
+    "order": 4,
+    "scope": "static"
+  },
+  {
     "description": "Shows the dialog",
-    "memberof": "TheDialog.propTypes",
+    "id": "TheConfirmDialog.propTypes.present",
+    "kind": "member",
+    "longname": "TheConfirmDialog.propTypes.present",
+    "memberof": "TheConfirmDialog.propTypes",
     "meta": {
-      "lineno": 168,
-      "filename": "TheDialog.jsx",
+      "filename": "TheConfirmDialog.jsx",
+      "lineno": 64,
       "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
     },
-    "order": 14
+    "name": "present",
+    "order": 5,
+    "scope": "static"
   },
   {
-    "id": "TheDialog.propTypes.spinning",
-    "longname": "TheDialog.propTypes.spinning",
-    "name": "spinning",
-    "kind": "member",
-    "scope": "static",
     "description": "Show spin",
-    "memberof": "TheDialog.propTypes",
+    "id": "TheConfirmDialog.propTypes.spinning",
+    "kind": "member",
+    "longname": "TheConfirmDialog.propTypes.spinning",
+    "memberof": "TheConfirmDialog.propTypes",
     "meta": {
-      "lineno": 170,
-      "filename": "TheDialog.jsx",
+      "filename": "TheConfirmDialog.jsx",
+      "lineno": 66,
       "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
     },
-    "order": 15
+    "name": "spinning",
+    "order": 6,
+    "scope": "static"
   },
   {
-    "id": "TheDialog.propTypes.title",
-    "longname": "TheDialog.propTypes.title",
-    "name": "title",
+    "description": "Text of submit button",
+    "id": "TheConfirmDialog.propTypes.submitText",
     "kind": "member",
-    "scope": "static",
+    "longname": "TheConfirmDialog.propTypes.submitText",
+    "memberof": "TheConfirmDialog.propTypes",
+    "meta": {
+      "filename": "TheConfirmDialog.jsx",
+      "lineno": 68,
+      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+    },
+    "name": "submitText",
+    "order": 7,
+    "scope": "static"
+  },
+  {
     "description": "Dialog Title",
+    "id": "TheConfirmDialog.propTypes.title",
+    "kind": "member",
+    "longname": "TheConfirmDialog.propTypes.title",
+    "memberof": "TheConfirmDialog.propTypes",
+    "meta": {
+      "filename": "TheConfirmDialog.jsx",
+      "lineno": 70,
+      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+    },
+    "name": "title",
+    "order": 8,
+    "scope": "static"
+  },
+  {
+    "description": "Hide Close Button",
+    "id": "TheDialog.propTypes.hideCloseButton",
+    "kind": "member",
+    "longname": "TheDialog.propTypes.hideCloseButton",
     "memberof": "TheDialog.propTypes",
     "meta": {
+      "filename": "TheDialog.jsx",
+      "lineno": 160,
+      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+    },
+    "name": "hideCloseButton",
+    "order": 10,
+    "scope": "static"
+  },
+  {
+    "description": "Dialog icon",
+    "id": "TheDialog.propTypes.icon",
+    "kind": "member",
+    "longname": "TheDialog.propTypes.icon",
+    "memberof": "TheDialog.propTypes",
+    "meta": {
+      "filename": "TheDialog.jsx",
+      "lineno": 162,
+      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+    },
+    "name": "icon",
+    "order": 11,
+    "scope": "static"
+  },
+  {
+    "description": "Lead text of dialog body",
+    "id": "TheDialog.propTypes.lead",
+    "kind": "member",
+    "longname": "TheDialog.propTypes.lead",
+    "memberof": "TheDialog.propTypes",
+    "meta": {
+      "filename": "TheDialog.jsx",
+      "lineno": 164,
+      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+    },
+    "name": "lead",
+    "order": 12,
+    "scope": "static"
+  },
+  {
+    "description": "Close handler",
+    "id": "TheDialog.propTypes.onClose",
+    "kind": "member",
+    "longname": "TheDialog.propTypes.onClose",
+    "memberof": "TheDialog.propTypes",
+    "meta": {
+      "filename": "TheDialog.jsx",
+      "lineno": 166,
+      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+    },
+    "name": "onClose",
+    "order": 13,
+    "scope": "static"
+  },
+  {
+    "description": "Shows the dialog",
+    "id": "TheDialog.propTypes.present",
+    "kind": "member",
+    "longname": "TheDialog.propTypes.present",
+    "memberof": "TheDialog.propTypes",
+    "meta": {
+      "filename": "TheDialog.jsx",
+      "lineno": 168,
+      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+    },
+    "name": "present",
+    "order": 14,
+    "scope": "static"
+  },
+  {
+    "description": "Show spin",
+    "id": "TheDialog.propTypes.spinning",
+    "kind": "member",
+    "longname": "TheDialog.propTypes.spinning",
+    "memberof": "TheDialog.propTypes",
+    "meta": {
+      "filename": "TheDialog.jsx",
+      "lineno": 170,
+      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+    },
+    "name": "spinning",
+    "order": 15,
+    "scope": "static"
+  },
+  {
+    "description": "Dialog Title",
+    "id": "TheDialog.propTypes.title",
+    "kind": "member",
+    "longname": "TheDialog.propTypes.title",
+    "memberof": "TheDialog.propTypes",
+    "meta": {
+      "filename": "TheDialog.jsx",
       "lineno": 172,
-      "filename": "TheDialog.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
     },
-    "order": 16
+    "name": "title",
+    "order": 16,
+    "scope": "static"
   },
   {
-    "id": "TheDialog.propTypes.zIndex",
-    "longname": "TheDialog.propTypes.zIndex",
-    "name": "zIndex",
-    "kind": "member",
-    "scope": "static",
     "description": "Z index of dialog",
+    "id": "TheDialog.propTypes.zIndex",
+    "kind": "member",
+    "longname": "TheDialog.propTypes.zIndex",
     "memberof": "TheDialog.propTypes",
     "meta": {
-      "lineno": 174,
       "filename": "TheDialog.jsx",
+      "lineno": 174,
       "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
     },
-    "order": 17
+    "name": "zIndex",
+    "order": 17,
+    "scope": "static"
   },
   {
-    "id": "TheDialogStyle.propTypes.options",
-    "longname": "TheDialogStyle.propTypes.options",
-    "name": "options",
-    "kind": "member",
-    "scope": "static",
     "description": "Style options",
+    "id": "TheDialogStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheDialogStyle.propTypes.options",
     "memberof": "TheDialogStyle.propTypes",
     "meta": {
-      "lineno": 22,
       "filename": "TheDialogStyle.jsx",
+      "lineno": 22,
       "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
     },
-    "order": 19
+    "name": "options",
+    "order": 19,
+    "scope": "static"
   },
   {
-    "id": "TheOkDialog.propTypes.okText",
-    "longname": "TheOkDialog.propTypes.okText",
-    "name": "okText",
-    "kind": "member",
-    "scope": "static",
     "description": "Text for OK button",
+    "id": "TheOkDialog.propTypes.okText",
+    "kind": "member",
+    "longname": "TheOkDialog.propTypes.okText",
     "memberof": "TheOkDialog.propTypes",
     "meta": {
+      "filename": "TheOkDialog.jsx",
       "lineno": 39,
-      "filename": "TheOkDialog.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
     },
-    "order": 21
+    "name": "okText",
+    "order": 21,
+    "scope": "static"
   },
   {
+    "description": "Close handler",
     "id": "TheOkDialog.propTypes.onClose",
+    "kind": "member",
     "longname": "TheOkDialog.propTypes.onClose",
-    "name": "onClose",
-    "kind": "member",
-    "scope": "static",
-    "description": "Close handler",
     "memberof": "TheOkDialog.propTypes",
     "meta": {
+      "filename": "TheOkDialog.jsx",
       "lineno": 41,
-      "filename": "TheOkDialog.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
     },
-    "order": 22
-  },
-  {
-    "id": "TheOkDialog.propTypes.spinning",
-    "longname": "TheOkDialog.propTypes.spinning",
-    "name": "spinning",
-    "kind": "member",
-    "scope": "static",
-    "description": "Show spin",
-    "memberof": "TheOkDialog.propTypes",
-    "meta": {
-      "lineno": 44,
-      "filename": "TheOkDialog.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
-    },
-    "order": 23
-  },
-  {
-    "id": "TheOkDialog.propTypes.title",
-    "longname": "TheOkDialog.propTypes.title",
-    "name": "title",
-    "kind": "member",
-    "scope": "static",
-    "description": "Dialog Title",
-    "memberof": "TheOkDialog.propTypes",
-    "meta": {
-      "lineno": 46,
-      "filename": "TheOkDialog.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
-    },
-    "order": 24
-  },
-  {
-    "id": "TheYesNoDialog.propTypes.noText",
-    "longname": "TheYesNoDialog.propTypes.noText",
-    "name": "noText",
-    "kind": "member",
-    "scope": "static",
-    "description": "Text of NO button",
-    "memberof": "TheYesNoDialog.propTypes",
-    "meta": {
-      "lineno": 42,
-      "filename": "TheYesNoDialog.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
-    },
-    "order": 26
-  },
-  {
-    "id": "TheYesNoDialog.propTypes.onClose",
-    "longname": "TheYesNoDialog.propTypes.onClose",
     "name": "onClose",
-    "kind": "member",
-    "scope": "static",
-    "description": "Close handler",
-    "memberof": "TheYesNoDialog.propTypes",
-    "meta": {
-      "lineno": 44,
-      "filename": "TheYesNoDialog.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
-    },
-    "order": 27
+    "order": 22,
+    "scope": "static"
   },
   {
-    "id": "TheYesNoDialog.propTypes.onNo",
-    "longname": "TheYesNoDialog.propTypes.onNo",
-    "name": "onNo",
-    "kind": "member",
-    "scope": "static",
-    "description": "Handler for tapping NO",
-    "memberof": "TheYesNoDialog.propTypes",
-    "meta": {
-      "lineno": 46,
-      "filename": "TheYesNoDialog.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
-    },
-    "order": 28
-  },
-  {
-    "id": "TheYesNoDialog.propTypes.onYes",
-    "longname": "TheYesNoDialog.propTypes.onYes",
-    "name": "onYes",
-    "kind": "member",
-    "scope": "static",
-    "description": "Handler for tapping YES",
-    "memberof": "TheYesNoDialog.propTypes",
-    "meta": {
-      "lineno": 48,
-      "filename": "TheYesNoDialog.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
-    },
-    "order": 29
-  },
-  {
-    "id": "TheYesNoDialog.propTypes.spinning",
-    "longname": "TheYesNoDialog.propTypes.spinning",
-    "name": "spinning",
-    "kind": "member",
-    "scope": "static",
     "description": "Show spin",
-    "memberof": "TheYesNoDialog.propTypes",
+    "id": "TheOkDialog.propTypes.spinning",
+    "kind": "member",
+    "longname": "TheOkDialog.propTypes.spinning",
+    "memberof": "TheOkDialog.propTypes",
     "meta": {
-      "lineno": 51,
-      "filename": "TheYesNoDialog.jsx",
+      "filename": "TheOkDialog.jsx",
+      "lineno": 44,
       "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
     },
-    "order": 30
+    "name": "spinning",
+    "order": 23,
+    "scope": "static"
   },
   {
-    "id": "TheYesNoDialog.propTypes.title",
-    "longname": "TheYesNoDialog.propTypes.title",
-    "name": "title",
-    "kind": "member",
-    "scope": "static",
     "description": "Dialog Title",
-    "memberof": "TheYesNoDialog.propTypes",
+    "id": "TheOkDialog.propTypes.title",
+    "kind": "member",
+    "longname": "TheOkDialog.propTypes.title",
+    "memberof": "TheOkDialog.propTypes",
     "meta": {
-      "lineno": 53,
-      "filename": "TheYesNoDialog.jsx",
+      "filename": "TheOkDialog.jsx",
+      "lineno": 46,
       "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
     },
-    "order": 31
+    "name": "title",
+    "order": 24,
+    "scope": "static"
   },
   {
-    "id": "TheYesNoDialog.propTypes.yesText",
-    "longname": "TheYesNoDialog.propTypes.yesText",
-    "name": "yesText",
+    "description": "Text of NO button",
+    "id": "TheYesNoDialog.propTypes.noText",
     "kind": "member",
-    "scope": "static",
-    "description": "Text of YES button",
+    "longname": "TheYesNoDialog.propTypes.noText",
     "memberof": "TheYesNoDialog.propTypes",
     "meta": {
-      "lineno": 55,
       "filename": "TheYesNoDialog.jsx",
+      "lineno": 42,
       "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
     },
-    "order": 32
+    "name": "noText",
+    "order": 26,
+    "scope": "static"
+  },
+  {
+    "description": "Close handler",
+    "id": "TheYesNoDialog.propTypes.onClose",
+    "kind": "member",
+    "longname": "TheYesNoDialog.propTypes.onClose",
+    "memberof": "TheYesNoDialog.propTypes",
+    "meta": {
+      "filename": "TheYesNoDialog.jsx",
+      "lineno": 44,
+      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+    },
+    "name": "onClose",
+    "order": 27,
+    "scope": "static"
+  },
+  {
+    "description": "Handler for tapping NO",
+    "id": "TheYesNoDialog.propTypes.onNo",
+    "kind": "member",
+    "longname": "TheYesNoDialog.propTypes.onNo",
+    "memberof": "TheYesNoDialog.propTypes",
+    "meta": {
+      "filename": "TheYesNoDialog.jsx",
+      "lineno": 46,
+      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+    },
+    "name": "onNo",
+    "order": 28,
+    "scope": "static"
+  },
+  {
+    "description": "Handler for tapping YES",
+    "id": "TheYesNoDialog.propTypes.onYes",
+    "kind": "member",
+    "longname": "TheYesNoDialog.propTypes.onYes",
+    "memberof": "TheYesNoDialog.propTypes",
+    "meta": {
+      "filename": "TheYesNoDialog.jsx",
+      "lineno": 48,
+      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+    },
+    "name": "onYes",
+    "order": 29,
+    "scope": "static"
+  },
+  {
+    "description": "Show spin",
+    "id": "TheYesNoDialog.propTypes.spinning",
+    "kind": "member",
+    "longname": "TheYesNoDialog.propTypes.spinning",
+    "memberof": "TheYesNoDialog.propTypes",
+    "meta": {
+      "filename": "TheYesNoDialog.jsx",
+      "lineno": 51,
+      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+    },
+    "name": "spinning",
+    "order": 30,
+    "scope": "static"
+  },
+  {
+    "description": "Dialog Title",
+    "id": "TheYesNoDialog.propTypes.title",
+    "kind": "member",
+    "longname": "TheYesNoDialog.propTypes.title",
+    "memberof": "TheYesNoDialog.propTypes",
+    "meta": {
+      "filename": "TheYesNoDialog.jsx",
+      "lineno": 53,
+      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+    },
+    "name": "title",
+    "order": 31,
+    "scope": "static"
+  },
+  {
+    "description": "Text of YES button",
+    "id": "TheYesNoDialog.propTypes.yesText",
+    "kind": "member",
+    "longname": "TheYesNoDialog.propTypes.yesText",
+    "memberof": "TheYesNoDialog.propTypes",
+    "meta": {
+      "filename": "TheYesNoDialog.jsx",
+      "lineno": 55,
+      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+    },
+    "name": "yesText",
+    "order": 32,
+    "scope": "static"
   }
 ]

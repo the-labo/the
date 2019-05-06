@@ -27,5 +27,4 @@ Make object keys to lower
 
 | Param | Type |
 | --- | --- |
-| obj | <code>Object</code> | 
-
+| obj | <code>Object</code> |

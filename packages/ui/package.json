@@ -1,4 +1,7 @@
 {
+  "name": "@the-/ui",
+  "description": "React components of THE framework",
+  "version": "15.4.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -51,7 +54,6 @@
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
-  "description": "React components of THE framework",
   "devDependencies": {
     "@the-/ui-demo": "^15.2.4",
     "fmtjson": "^4.0.6",
@@ -71,7 +73,6 @@
   ],
   "license": "MIT",
   "main": "shim",
-  "name": "@the-/ui",
   "peerDependencies": {
     "react": ">=15",
     "react-dom": ">=15",
@@ -86,6 +87,5 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.2"
+  }
 }

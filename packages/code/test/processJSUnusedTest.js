@@ -31,7 +31,7 @@ console.log(a, d, n2, n4, ee)
       `.trim(),
       ),
       `
-const {a, b, 'e-e': ee, f} = { a:1, b:2, 'e-e':8, f:9 }
+const {a,'e-e': ee,} = { a:1, b:2, 'e-e':8, f:9 }
 const c4 = {}
 const d = 2
 let j
@@ -616,13 +616,20 @@ console.log(two)
     )
   })
 
-  it('Cleanup unsed destructoring', async () => {
-    console.log(
+  it('Cleanup unused destructing', async () => {
+    equal(
       await processJSUnused(`
-const x =  { a: 1, b: 2}
-const { a = x.a, b, c } = opt
-console.log(c)
+const d = 'DD'
+const x =  { a: 1, b: 2, [d]: 3}
+const { a = x.a, b, c, e = x.b } = opt
+console.log(c, e)
 `),
+      `
+const d = 'DD'
+const x =  { a: 1, b: 2, [d]: 3}
+const { c, e = x.b } = opt
+console.log(c, e)
+`,
     )
   })
 })

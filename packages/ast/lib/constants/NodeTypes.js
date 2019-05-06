@@ -6,7 +6,7 @@
  */
 'use strict'
 
-module.exports = Object.freeze(
+module.exports =
   /** @lends module:@the-/ast.NodeTypes */
   {
     ArrayExpression: 'ArrayExpression',
@@ -232,5 +232,6 @@ module.exports = Object.freeze(
     TSTypeParameterInstantiation: 'TSTypeParameterInstantiation',
     TSTypeParameterDeclaration: 'TSTypeParameterDeclaration',
     TSTypeParameter: 'TSTypeParameter',
-  },
-)
+  }
+
+Object.freeze(module.exports)

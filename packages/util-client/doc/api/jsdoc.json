@@ -1,27 +1,32 @@
 [
   {
-    "id": "module:@the-/util-client",
-    "longname": "module:@the-/util-client",
-    "name": "@the-/util-client",
-    "kind": "module",
     "description": "Utility for client side",
-    "version": "15.4.2",
+    "id": "module:@the-/util-client",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "utilClient",
+    "longname": "module:@the-/util-client",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/util-client/lib"
     },
-    "order": 0
+    "name": "@the-/util-client",
+    "order": 0,
+    "typicalname": "utilClient",
+    "version": "15.4.2"
   },
   {
-    "id": "readFile",
-    "longname": "readFile",
-    "name": "readFile",
-    "kind": "function",
-    "scope": "global",
     "description": "Read file as array buffer",
+    "id": "readFile",
+    "kind": "function",
+    "longname": "readFile",
+    "meta": {
+      "filename": "readFile.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/util-client/lib"
+    },
+    "name": "readFile",
+    "order": 1,
     "params": [
       {
         "type": {
@@ -43,11 +48,6 @@
         "description": "- Array buffer"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "readFile.js",
-      "path": "/Users/okuni/Projects/the/packages/util-client/lib"
-    },
-    "order": 1
+    "scope": "global"
   }
 ]

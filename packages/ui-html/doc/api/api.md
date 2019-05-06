@@ -53,4 +53,4 @@ Define style
 ## TheHtmlStyle()
 Style for TheHtml
 
-**Kind**: global function  
+**Kind**: global function

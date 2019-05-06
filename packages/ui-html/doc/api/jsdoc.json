@@ -1,131 +1,136 @@
 [
   {
+    "description": "Html of the-components",
     "id": "module:@the-/ui-html",
-    "longname": "module:@the-/ui-html",
-    "name": "@the-/ui-html",
     "kind": "module",
-    "description": "Html of the-components",
-    "version": "15.4.2",
-    "typicalname": "uiHtml",
+    "longname": "module:@the-/ui-html",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
     },
-    "order": 0
+    "name": "@the-/ui-html",
+    "order": 0,
+    "typicalname": "uiHtml",
+    "version": "15.4.2"
   },
   {
-    "id": "TheHtml",
-    "longname": "TheHtml",
-    "name": "TheHtml",
-    "kind": "class",
-    "scope": "global",
     "description": "Html of the-components",
+    "id": "TheHtml",
+    "kind": "class",
+    "longname": "TheHtml",
     "meta": {
+      "filename": "TheHtml.jsx",
       "lineno": 10,
-      "filename": "TheHtml.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
     },
-    "order": 1
+    "name": "TheHtml",
+    "order": 1,
+    "scope": "global"
   },
   {
-    "id": "TheHtmlStyle",
-    "longname": "TheHtmlStyle",
-    "name": "TheHtmlStyle",
-    "kind": "function",
-    "scope": "global",
     "description": "Style for TheHtml",
-    "params": [],
+    "id": "TheHtmlStyle",
+    "kind": "function",
+    "longname": "TheHtmlStyle",
     "meta": {
-      "lineno": 9,
       "filename": "TheHtmlStyle.jsx",
+      "lineno": 9,
       "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
     },
-    "order": 7
+    "name": "TheHtmlStyle",
+    "order": 7,
+    "params": [],
+    "scope": "global"
   },
   {
-    "id": "TheHtml.propTypes.className",
-    "longname": "TheHtml.propTypes.className",
-    "name": "className",
-    "kind": "member",
-    "scope": "static",
     "description": "CSS class name",
+    "id": "TheHtml.propTypes.className",
+    "kind": "member",
+    "longname": "TheHtml.propTypes.className",
     "memberof": "TheHtml.propTypes",
     "meta": {
+      "filename": "TheHtml.jsx",
       "lineno": 39,
-      "filename": "TheHtml.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
     },
-    "order": 3
+    "name": "className",
+    "order": 3,
+    "scope": "static"
   },
   {
-    "id": "TheHtml.propTypes.id",
-    "longname": "TheHtml.propTypes.id",
-    "name": "id",
-    "kind": "member",
-    "scope": "static",
     "description": "DOM Id",
+    "id": "TheHtml.propTypes.id",
+    "kind": "member",
+    "longname": "TheHtml.propTypes.id",
     "memberof": "TheHtml.propTypes",
     "meta": {
+      "filename": "TheHtml.jsx",
       "lineno": 41,
-      "filename": "TheHtml.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
     },
-    "order": 4
+    "name": "id",
+    "order": 4,
+    "scope": "static"
   },
   {
-    "id": "TheHtml.propTypes.lang",
-    "longname": "TheHtml.propTypes.lang",
-    "name": "lang",
-    "kind": "member",
-    "scope": "static",
     "description": "Lang",
+    "id": "TheHtml.propTypes.lang",
+    "kind": "member",
+    "longname": "TheHtml.propTypes.lang",
     "memberof": "TheHtml.propTypes",
     "meta": {
+      "filename": "TheHtml.jsx",
       "lineno": 43,
-      "filename": "TheHtml.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
     },
-    "order": 5
+    "name": "lang",
+    "order": 5,
+    "scope": "static"
   },
   {
-    "id": "TheHtml.propTypes.styles",
-    "longname": "TheHtml.propTypes.styles",
-    "name": "styles",
-    "kind": "member",
-    "scope": "static",
     "description": "Style objects",
+    "id": "TheHtml.propTypes.styles",
+    "kind": "member",
+    "longname": "TheHtml.propTypes.styles",
     "memberof": "TheHtml.propTypes",
     "meta": {
-      "lineno": 45,
       "filename": "TheHtml.jsx",
+      "lineno": 45,
       "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
     },
-    "order": 6
+    "name": "styles",
+    "order": 6,
+    "scope": "static"
   },
   {
-    "id": "TheHtmlStyle.propTypes.options",
-    "longname": "TheHtmlStyle.propTypes.options",
-    "name": "options",
-    "kind": "member",
-    "scope": "static",
     "description": "Style options",
+    "id": "TheHtmlStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheHtmlStyle.propTypes.options",
     "memberof": "TheHtmlStyle.propTypes",
     "meta": {
-      "lineno": 20,
       "filename": "TheHtmlStyle.jsx",
+      "lineno": 20,
       "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
     },
-    "order": 8
+    "name": "options",
+    "order": 8,
+    "scope": "static"
   },
   {
-    "id": "TheHtml.styles",
-    "longname": "TheHtml.styles",
-    "name": "styles",
-    "kind": "function",
-    "scope": "static",
     "description": "Define style",
+    "id": "TheHtml.styles",
+    "kind": "function",
+    "longname": "TheHtml.styles",
     "memberof": "TheHtml",
+    "meta": {
+      "filename": "TheHtml.jsx",
+      "lineno": 16,
+      "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
+    },
+    "name": "styles",
+    "order": 2,
     "params": [
       {
         "optional": true,
@@ -143,11 +148,6 @@
         "description": "Style object"
       }
     ],
-    "meta": {
-      "lineno": 16,
-      "filename": "TheHtml.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
-    },
-    "order": 2
+    "scope": "static"
   }
 ]

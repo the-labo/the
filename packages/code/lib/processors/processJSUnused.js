@@ -28,6 +28,25 @@ const contentAccess = require('../helpers/contentAccess')
 
 /** @lends module:@the-/code.processors.processJSUnused */
 function processJSUnused(content, options = {}) {
+  const _consumingIdentifiersFor = (Context) => {
+    const asMember = finder
+      .findByTypes(Context, [NodeTypes.MemberExpression])
+      .map((exp) => exp.property)
+      .filter((property) => property.type === NodeTypes.Identifier)
+    const asPropKey = finder
+      .findByTypes(Context, [NodeTypes.ObjectProperty])
+      .filter((prop) => !prop.computed)
+      .map((prop) => prop.key)
+      .filter((property) => property.type === NodeTypes.Identifier)
+    const startsToSkip = new Set([
+      ...asMember.map(({ start }) => start),
+      ...asPropKey.map(({ start }) => start),
+    ])
+    return finder
+      .findByTypes(Context, [NodeTypes.Identifier, NodeTypes.JSXIdentifier])
+      .filter((Identeifier) => !startsToSkip.has(Identeifier.start))
+  }
+
   return applyConverter(content, (content) => {
     const parsed = parse(content, options)
     const { enclosedRange, get, replace } = contentAccess(content)
@@ -40,10 +59,7 @@ function processJSUnused(content, options = {}) {
         NodeTypes.ObjectMethod,
       ])
       for (const FunctionNode of FunctionNodes) {
-        const ConsumingIdentifiers = finder.findByTypes(FunctionNode, [
-          NodeTypes.Identifier,
-          NodeTypes.JSXIdentifier,
-        ])
+        const ConsumingIdentifiers = _consumingIdentifiersFor(FunctionNode)
 
         const converted =
           cleanupUnusedArgumentsOnFunctionNode(FunctionNode, {
@@ -97,10 +113,8 @@ function processJSUnused(content, options = {}) {
         const VariableDeclarations = finder.findByTypes(Context, [
           NodeTypes.VariableDeclaration,
         ])
-        const ConsumingIdentifiers = finder.findByTypes(Context, [
-          NodeTypes.Identifier,
-          NodeTypes.JSXIdentifier,
-        ])
+
+        const ConsumingIdentifiers = _consumingIdentifiersFor(Context)
         const ImportDeclarations = finder.findByTypes(Context, [
           NodeTypes.Identifier,
           NodeTypes.ImportDeclaration,

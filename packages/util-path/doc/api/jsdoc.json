@@ -1,28 +1,33 @@
 [
   {
-    "id": "module:@the-/util-path",
-    "longname": "module:@the-/util-path",
-    "name": "@the-/util-path",
-    "kind": "module",
     "description": "Utility for file path",
-    "version": "15.4.2",
+    "id": "module:@the-/util-path",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "utilPath",
+    "longname": "module:@the-/util-path",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/util-path/lib"
     },
-    "order": 1
+    "name": "@the-/util-path",
+    "order": 1,
+    "typicalname": "utilPath",
+    "version": "15.4.2"
   },
   {
-    "id": "module:@the-/util-path.findupDir",
-    "longname": "module:@the-/util-path.findupDir",
-    "name": "findupDir",
-    "kind": "function",
-    "scope": "static",
     "description": "Find up directory contains path",
+    "id": "module:@the-/util-path.findupDir",
+    "kind": "function",
+    "longname": "module:@the-/util-path.findupDir",
     "memberof": "module:@the-/util-path",
+    "meta": {
+      "filename": "findupDir.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/util-path/lib"
+    },
+    "name": "findupDir",
+    "order": 0,
     "params": [
       {
         "type": {
@@ -34,11 +39,6 @@
         "name": "basedir"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "findupDir.js",
-      "path": "/Users/okuni/Projects/the/packages/util-path/lib"
-    },
-    "order": 0
+    "scope": "static"
   }
 ]

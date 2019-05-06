@@ -1,135 +1,135 @@
 [
   {
+    "description": "Toast of the-components",
     "id": "module:@the-/ui-toast",
-    "longname": "module:@the-/ui-toast",
-    "name": "@the-/ui-toast",
     "kind": "module",
-    "description": "Toast of the-components",
-    "version": "15.4.2",
-    "typicalname": "uiToast",
+    "longname": "module:@the-/ui-toast",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-toast/lib"
     },
-    "order": 0
+    "name": "@the-/ui-toast",
+    "order": 0,
+    "typicalname": "uiToast",
+    "version": "15.4.2"
   },
   {
-    "id": "TheToast",
-    "longname": "TheToast",
-    "name": "TheToast",
-    "kind": "class",
-    "scope": "global",
     "description": "Toast of the-components",
-    "meta": {
-      "lineno": 24,
-      "filename": "TheToast.jsx",
-      "path": "/Users/okuni/Projects/the/packages/ui-toast/lib"
-    },
-    "order": 1
-  },
-  {
-    "id": "TheToastGroup",
-    "longname": "TheToastGroup",
-    "name": "TheToastGroup",
+    "id": "TheToast",
     "kind": "class",
-    "scope": "global",
+    "longname": "TheToast",
+    "meta": {
+      "filename": "TheToast.jsx",
+      "lineno": 24,
+      "path": "/Users/okuni/Projects/the/packages/ui-toast/lib"
+    },
+    "name": "TheToast",
+    "order": 1,
+    "scope": "global"
+  },
+  {
     "description": "ToastGroup",
+    "id": "TheToastGroup",
+    "kind": "class",
+    "longname": "TheToastGroup",
     "meta": {
-      "lineno": 10,
       "filename": "TheToastGroup.jsx",
+      "lineno": 10,
       "path": "/Users/okuni/Projects/the/packages/ui-toast/lib"
     },
-    "order": 6
+    "name": "TheToastGroup",
+    "order": 6,
+    "scope": "global"
   },
   {
-    "id": "TheToastStyle",
-    "longname": "TheToastStyle",
-    "name": "TheToastStyle",
-    "kind": "function",
-    "scope": "global",
     "description": "Style for TheToast",
-    "params": [],
+    "id": "TheToastStyle",
+    "kind": "function",
+    "longname": "TheToastStyle",
     "meta": {
-      "lineno": 11,
       "filename": "TheToastStyle.jsx",
+      "lineno": 11,
       "path": "/Users/okuni/Projects/the/packages/ui-toast/lib"
     },
-    "order": 7
+    "name": "TheToastStyle",
+    "order": 7,
+    "params": [],
+    "scope": "global"
   },
   {
-    "id": "TheToast.propTypes.clearAfter",
-    "longname": "TheToast.propTypes.clearAfter",
-    "name": "clearAfter",
-    "kind": "member",
-    "scope": "static",
     "description": "Clear message after seconds",
+    "id": "TheToast.propTypes.clearAfter",
+    "kind": "member",
+    "longname": "TheToast.propTypes.clearAfter",
     "memberof": "TheToast.propTypes",
     "meta": {
+      "filename": "TheToast.jsx",
       "lineno": 138,
-      "filename": "TheToast.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-toast/lib"
     },
-    "order": 2
+    "name": "clearAfter",
+    "order": 2,
+    "scope": "static"
   },
   {
-    "id": "TheToast.propTypes.level",
-    "longname": "TheToast.propTypes.level",
-    "name": "level",
-    "kind": "member",
-    "scope": "static",
     "description": "Level of toast",
+    "id": "TheToast.propTypes.level",
+    "kind": "member",
+    "longname": "TheToast.propTypes.level",
     "memberof": "TheToast.propTypes",
     "meta": {
+      "filename": "TheToast.jsx",
       "lineno": 140,
-      "filename": "TheToast.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-toast/lib"
     },
-    "order": 3
+    "name": "level",
+    "order": 3,
+    "scope": "static"
   },
   {
-    "id": "TheToast.propTypes.messages",
-    "longname": "TheToast.propTypes.messages",
-    "name": "messages",
-    "kind": "member",
-    "scope": "static",
     "description": "Messages to show",
+    "id": "TheToast.propTypes.messages",
+    "kind": "member",
+    "longname": "TheToast.propTypes.messages",
     "memberof": "TheToast.propTypes",
     "meta": {
+      "filename": "TheToast.jsx",
       "lineno": 142,
-      "filename": "TheToast.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-toast/lib"
     },
-    "order": 4
+    "name": "messages",
+    "order": 4,
+    "scope": "static"
   },
   {
-    "id": "TheToast.propTypes.onUpdate",
-    "longname": "TheToast.propTypes.onUpdate",
-    "name": "onUpdate",
-    "kind": "member",
-    "scope": "static",
     "description": "Handle update",
+    "id": "TheToast.propTypes.onUpdate",
+    "kind": "member",
+    "longname": "TheToast.propTypes.onUpdate",
     "memberof": "TheToast.propTypes",
     "meta": {
-      "lineno": 144,
       "filename": "TheToast.jsx",
+      "lineno": 144,
       "path": "/Users/okuni/Projects/the/packages/ui-toast/lib"
     },
-    "order": 5
+    "name": "onUpdate",
+    "order": 5,
+    "scope": "static"
   },
   {
-    "id": "TheToastStyle.propTypes.options",
-    "longname": "TheToastStyle.propTypes.options",
-    "name": "options",
-    "kind": "member",
-    "scope": "static",
     "description": "Style options",
+    "id": "TheToastStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheToastStyle.propTypes.options",
     "memberof": "TheToastStyle.propTypes",
     "meta": {
-      "lineno": 22,
       "filename": "TheToastStyle.jsx",
+      "lineno": 22,
       "path": "/Users/okuni/Projects/the/packages/ui-toast/lib"
     },
-    "order": 8
+    "name": "options",
+    "order": 8,
+    "scope": "static"
   }
 ]

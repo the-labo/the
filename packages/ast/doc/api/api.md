@@ -5,7 +5,7 @@
 ## @the-/ast
 AST (abstract syntax tree) parser
 
-**Version**: 15.4.2  
+**Version**: 15.4.4  
 **License**: MIT  
 
 * [@the-/ast](#module_@the-/ast)
@@ -68,4 +68,5 @@ Parse source code
 | Param | Type | Default |
 | --- | --- | --- |
 | src | <code>string</code> |  | 
-| [options] | <code>Object</code> | <code>{}</code> |
+| [options] | <code>Object</code> | <code>{}</code> | 
+

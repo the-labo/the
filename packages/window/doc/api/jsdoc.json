@@ -1,27 +1,32 @@
 [
   {
-    "id": "module:@the-/window",
-    "longname": "module:@the-/window",
-    "name": "@the-/window",
-    "kind": "module",
     "description": "Browser utility for the-framework",
-    "version": "15.4.2",
+    "id": "module:@the-/window",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "window",
+    "longname": "module:@the-/window",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/window/lib"
     },
-    "order": 1
+    "name": "@the-/window",
+    "order": 1,
+    "typicalname": "window",
+    "version": "15.4.2"
   },
   {
-    "id": "rescue",
-    "longname": "rescue",
-    "name": "rescue",
-    "kind": "function",
-    "scope": "global",
     "description": "Handle event rescue on document",
+    "id": "rescue",
+    "kind": "function",
+    "longname": "rescue",
+    "meta": {
+      "filename": "rescue.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/window/lib"
+    },
+    "name": "rescue",
+    "order": 4,
     "params": [
       {
         "type": {
@@ -42,21 +47,21 @@
         "name": "handler"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "rescue.js",
-      "path": "/Users/okuni/Projects/the/packages/window/lib"
-    },
-    "order": 4
+    "scope": "global"
   },
   {
-    "id": "module:@the-/window.get",
-    "longname": "module:@the-/window.get",
-    "name": "get",
-    "kind": "function",
-    "scope": "static",
     "description": "Get global values",
+    "id": "module:@the-/window.get",
+    "kind": "function",
+    "longname": "module:@the-/window.get",
     "memberof": "module:@the-/window",
+    "meta": {
+      "filename": "get.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/window/lib"
+    },
+    "name": "get",
+    "order": 0,
     "params": [
       {
         "type": {
@@ -77,21 +82,21 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "get.js",
-      "path": "/Users/okuni/Projects/the/packages/window/lib"
-    },
-    "order": 0
+    "scope": "static"
   },
   {
-    "id": "module:@the-/window.line",
-    "longname": "module:@the-/window.line",
-    "name": "line",
-    "kind": "function",
-    "scope": "static",
     "description": "Handle toggle online/offline",
+    "id": "module:@the-/window.line",
+    "kind": "function",
+    "longname": "module:@the-/window.line",
     "memberof": "module:@the-/window",
+    "meta": {
+      "filename": "line.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/window/lib"
+    },
+    "name": "line",
+    "order": 2,
     "params": [
       {
         "type": {
@@ -125,21 +130,21 @@
         "name": "options.delay"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "line.js",
-      "path": "/Users/okuni/Projects/the/packages/window/lib"
-    },
-    "order": 2
+    "scope": "static"
   },
   {
-    "id": "module:@the-/window.once",
-    "longname": "module:@the-/window.once",
-    "name": "once",
-    "kind": "function",
-    "scope": "static",
     "description": "Handle event once on document",
+    "id": "module:@the-/window.once",
+    "kind": "function",
+    "longname": "module:@the-/window.once",
     "memberof": "module:@the-/window",
+    "meta": {
+      "filename": "once.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/window/lib"
+    },
+    "name": "once",
+    "order": 3,
     "params": [
       {
         "type": {
@@ -160,21 +165,21 @@
         "name": "handler"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "once.js",
-      "path": "/Users/okuni/Projects/the/packages/window/lib"
-    },
-    "order": 3
+    "scope": "static"
   },
   {
-    "id": "module:@the-/window.set",
-    "longname": "module:@the-/window.set",
-    "name": "set",
-    "kind": "function",
-    "scope": "static",
     "description": "Set global values",
+    "id": "module:@the-/window.set",
+    "kind": "function",
+    "longname": "module:@the-/window.set",
     "memberof": "module:@the-/window",
+    "meta": {
+      "filename": "set.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/window/lib"
+    },
+    "name": "set",
+    "order": 5,
     "params": [
       {
         "type": {
@@ -204,21 +209,21 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "set.js",
-      "path": "/Users/okuni/Projects/the/packages/window/lib"
-    },
-    "order": 5
+    "scope": "static"
   },
   {
-    "id": "module:@the-/window.show",
-    "longname": "module:@the-/window.show",
-    "name": "show",
-    "kind": "function",
-    "scope": "static",
     "description": "Show page",
+    "id": "module:@the-/window.show",
+    "kind": "function",
+    "longname": "module:@the-/window.show",
     "memberof": "module:@the-/window",
+    "meta": {
+      "filename": "show.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/window/lib"
+    },
+    "name": "show",
+    "order": 6,
     "params": [
       {
         "type": {
@@ -239,11 +244,6 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "show.js",
-      "path": "/Users/okuni/Projects/the/packages/window/lib"
-    },
-    "order": 6
+    "scope": "static"
   }
 ]

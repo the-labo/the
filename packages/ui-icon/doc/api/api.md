@@ -41,4 +41,4 @@ Icon of the-components
 ## TheIconStyle()
 Style for TheIcon
 
-**Kind**: global function  
+**Kind**: global function

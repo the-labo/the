@@ -1,91 +1,91 @@
 [
   {
+    "description": "Style of the-components",
     "id": "module:@the-/ui-style",
-    "longname": "module:@the-/ui-style",
-    "name": "@the-/ui-style",
     "kind": "module",
-    "description": "Style of the-components",
-    "version": "15.4.2",
-    "typicalname": "uiStyle",
+    "longname": "module:@the-/ui-style",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-style/lib"
     },
-    "order": 0
+    "name": "@the-/ui-style",
+    "order": 0,
+    "typicalname": "uiStyle",
+    "version": "15.4.2"
   },
   {
-    "id": "TheStyle",
-    "longname": "TheStyle",
-    "name": "TheStyle",
-    "kind": "class",
-    "scope": "global",
     "description": "Style of the-components",
+    "id": "TheStyle",
+    "kind": "class",
+    "longname": "TheStyle",
     "meta": {
+      "filename": "TheStyle.jsx",
       "lineno": 12,
-      "filename": "TheStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-style/lib"
     },
-    "order": 1
+    "name": "TheStyle",
+    "order": 1,
+    "scope": "global"
   },
   {
-    "id": "TheStyle.propTypes.className",
-    "longname": "TheStyle.propTypes.className",
-    "name": "className",
-    "kind": "member",
-    "scope": "static",
     "description": "CSS class name",
+    "id": "TheStyle.propTypes.className",
+    "kind": "member",
+    "longname": "TheStyle.propTypes.className",
     "memberof": "TheStyle.propTypes",
     "meta": {
+      "filename": "TheStyle.jsx",
       "lineno": 67,
-      "filename": "TheStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-style/lib"
     },
-    "order": 2
+    "name": "className",
+    "order": 2,
+    "scope": "static"
   },
   {
-    "id": "TheStyle.propTypes.id",
-    "longname": "TheStyle.propTypes.id",
-    "name": "id",
-    "kind": "member",
-    "scope": "static",
     "description": "DOM Id",
+    "id": "TheStyle.propTypes.id",
+    "kind": "member",
+    "longname": "TheStyle.propTypes.id",
     "memberof": "TheStyle.propTypes",
     "meta": {
+      "filename": "TheStyle.jsx",
       "lineno": 69,
-      "filename": "TheStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-style/lib"
     },
-    "order": 3
+    "name": "id",
+    "order": 3,
+    "scope": "static"
   },
   {
-    "id": "TheStyle.propTypes.prefix",
-    "longname": "TheStyle.propTypes.prefix",
-    "name": "prefix",
-    "kind": "member",
-    "scope": "static",
     "description": "Style selector prefix",
+    "id": "TheStyle.propTypes.prefix",
+    "kind": "member",
+    "longname": "TheStyle.propTypes.prefix",
     "memberof": "TheStyle.propTypes",
     "meta": {
-      "lineno": 71,
       "filename": "TheStyle.jsx",
+      "lineno": 71,
       "path": "/Users/okuni/Projects/the/packages/ui-style/lib"
     },
-    "order": 4
+    "name": "prefix",
+    "order": 4,
+    "scope": "static"
   },
   {
-    "id": "TheStyle.propTypes.type",
-    "longname": "TheStyle.propTypes.type",
-    "name": "type",
-    "kind": "member",
-    "scope": "static",
     "description": "Script type",
+    "id": "TheStyle.propTypes.type",
+    "kind": "member",
+    "longname": "TheStyle.propTypes.type",
     "memberof": "TheStyle.propTypes",
     "meta": {
-      "lineno": 73,
       "filename": "TheStyle.jsx",
+      "lineno": 73,
       "path": "/Users/okuni/Projects/the/packages/ui-style/lib"
     },
-    "order": 5
+    "name": "type",
+    "order": 5,
+    "scope": "static"
   }
 ]

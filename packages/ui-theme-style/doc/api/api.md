@@ -27,4 +27,4 @@ Theme style for the-components
 ## TheThemeStyle()
 Theme Style of the-components
 
-**Kind**: global function  
+**Kind**: global function

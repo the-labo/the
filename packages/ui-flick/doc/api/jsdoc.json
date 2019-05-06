@@ -1,151 +1,151 @@
 [
   {
+    "description": "Flickable viewer of the-components",
     "id": "module:@the-/ui-flick",
-    "longname": "module:@the-/ui-flick",
-    "name": "@the-/ui-flick",
     "kind": "module",
-    "description": "Flickable viewer of the-components",
-    "version": "15.4.2",
-    "typicalname": "uiFlick",
+    "longname": "module:@the-/ui-flick",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
     },
-    "order": 0
+    "name": "@the-/ui-flick",
+    "order": 0,
+    "typicalname": "uiFlick",
+    "version": "15.4.2"
   },
   {
-    "id": "TheFlick",
-    "longname": "TheFlick",
-    "name": "TheFlick",
-    "kind": "class",
-    "scope": "global",
     "description": "Flickable viewer of the-components",
+    "id": "TheFlick",
+    "kind": "class",
+    "longname": "TheFlick",
     "meta": {
+      "filename": "TheFlick.jsx",
       "lineno": 26,
-      "filename": "TheFlick.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
     },
-    "order": 1
+    "name": "TheFlick",
+    "order": 1,
+    "scope": "global"
   },
   {
-    "id": "TheFlickStyle",
-    "longname": "TheFlickStyle",
-    "name": "TheFlickStyle",
-    "kind": "function",
-    "scope": "global",
     "description": "Style for TheFlick",
-    "params": [],
+    "id": "TheFlickStyle",
+    "kind": "function",
+    "longname": "TheFlickStyle",
     "meta": {
-      "lineno": 10,
       "filename": "TheFlickStyle.jsx",
+      "lineno": 10,
       "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
     },
-    "order": 8
+    "name": "TheFlickStyle",
+    "order": 8,
+    "params": [],
+    "scope": "global"
   },
   {
-    "id": "TheFlick.propTypes.activeIndex",
-    "longname": "TheFlick.propTypes.activeIndex",
-    "name": "activeIndex",
-    "kind": "member",
-    "scope": "static",
     "description": "Active index of images",
+    "id": "TheFlick.propTypes.activeIndex",
+    "kind": "member",
+    "longname": "TheFlick.propTypes.activeIndex",
     "memberof": "TheFlick.propTypes",
     "meta": {
+      "filename": "TheFlick.jsx",
       "lineno": 339,
-      "filename": "TheFlick.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
     },
-    "order": 2
+    "name": "activeIndex",
+    "order": 2,
+    "scope": "static"
   },
   {
-    "id": "TheFlick.propTypes.images",
-    "longname": "TheFlick.propTypes.images",
-    "name": "images",
-    "kind": "member",
-    "scope": "static",
     "description": "Images to flip",
+    "id": "TheFlick.propTypes.images",
+    "kind": "member",
+    "longname": "TheFlick.propTypes.images",
     "memberof": "TheFlick.propTypes",
     "meta": {
+      "filename": "TheFlick.jsx",
       "lineno": 341,
-      "filename": "TheFlick.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
     },
-    "order": 3
+    "name": "images",
+    "order": 3,
+    "scope": "static"
   },
   {
-    "id": "TheFlick.propTypes.onChange",
-    "longname": "TheFlick.propTypes.onChange",
-    "name": "onChange",
-    "kind": "member",
-    "scope": "static",
     "description": "Handle index change",
+    "id": "TheFlick.propTypes.onChange",
+    "kind": "member",
+    "longname": "TheFlick.propTypes.onChange",
     "memberof": "TheFlick.propTypes",
     "meta": {
+      "filename": "TheFlick.jsx",
       "lineno": 345,
-      "filename": "TheFlick.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
     },
-    "order": 4
+    "name": "onChange",
+    "order": 4,
+    "scope": "static"
   },
   {
-    "id": "TheFlick.propTypes.onClose",
-    "longname": "TheFlick.propTypes.onClose",
-    "name": "onClose",
-    "kind": "member",
-    "scope": "static",
     "description": "Close handler",
+    "id": "TheFlick.propTypes.onClose",
+    "kind": "member",
+    "longname": "TheFlick.propTypes.onClose",
     "memberof": "TheFlick.propTypes",
     "meta": {
+      "filename": "TheFlick.jsx",
       "lineno": 347,
-      "filename": "TheFlick.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
     },
-    "order": 5
+    "name": "onClose",
+    "order": 5,
+    "scope": "static"
   },
   {
-    "id": "TheFlick.propTypes.present",
-    "longname": "TheFlick.propTypes.present",
-    "name": "present",
-    "kind": "member",
-    "scope": "static",
     "description": "Shows the dialog",
+    "id": "TheFlick.propTypes.present",
+    "kind": "member",
+    "longname": "TheFlick.propTypes.present",
     "memberof": "TheFlick.propTypes",
     "meta": {
+      "filename": "TheFlick.jsx",
       "lineno": 349,
-      "filename": "TheFlick.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
     },
-    "order": 6
+    "name": "present",
+    "order": 6,
+    "scope": "static"
   },
   {
-    "id": "TheFlick.propTypes.spinning",
-    "longname": "TheFlick.propTypes.spinning",
-    "name": "spinning",
-    "kind": "member",
-    "scope": "static",
     "description": "Show spin",
+    "id": "TheFlick.propTypes.spinning",
+    "kind": "member",
+    "longname": "TheFlick.propTypes.spinning",
     "memberof": "TheFlick.propTypes",
     "meta": {
-      "lineno": 351,
       "filename": "TheFlick.jsx",
+      "lineno": 351,
       "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
     },
-    "order": 7
+    "name": "spinning",
+    "order": 7,
+    "scope": "static"
   },
   {
-    "id": "TheFlickStyle.propTypes.options",
-    "longname": "TheFlickStyle.propTypes.options",
-    "name": "options",
-    "kind": "member",
-    "scope": "static",
     "description": "Style options",
+    "id": "TheFlickStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheFlickStyle.propTypes.options",
     "memberof": "TheFlickStyle.propTypes",
     "meta": {
-      "lineno": 21,
       "filename": "TheFlickStyle.jsx",
+      "lineno": 21,
       "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
     },
-    "order": 9
+    "name": "options",
+    "order": 9,
+    "scope": "static"
   }
 ]

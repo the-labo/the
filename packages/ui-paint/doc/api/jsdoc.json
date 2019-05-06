@@ -1,104 +1,104 @@
 [
   {
-    "id": "module:@the-/ui-paint",
-    "longname": "module:@the-/ui-paint",
-    "name": "@the-/ui-paint",
-    "kind": "module",
     "description": "Hand write painting",
-    "version": "15.4.2",
-    "typicalname": "uiPaint",
+    "id": "module:@the-/ui-paint",
+    "kind": "module",
+    "longname": "module:@the-/ui-paint",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
     },
-    "order": 0
+    "name": "@the-/ui-paint",
+    "order": 0,
+    "typicalname": "uiPaint",
+    "version": "15.4.2"
   },
   {
-    "id": "ThePaint",
-    "longname": "ThePaint",
-    "name": "ThePaint",
-    "kind": "class",
-    "scope": "global",
     "description": "Hand write painting",
+    "id": "ThePaint",
+    "kind": "class",
+    "longname": "ThePaint",
     "meta": {
-      "lineno": 19,
       "filename": "ThePaint.jsx",
+      "lineno": 19,
       "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
     },
-    "order": 1
+    "name": "ThePaint",
+    "order": 1,
+    "scope": "global"
   },
   {
     "id": "DrawerLayer",
-    "longname": "DrawerLayer",
-    "name": "DrawerLayer",
     "kind": "class",
-    "scope": "global",
+    "longname": "DrawerLayer",
     "meta": {
-      "lineno": 1,
       "filename": "DrawerLayer.jsx",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/ui-paint/lib/helpers"
     },
-    "order": 6
+    "name": "DrawerLayer",
+    "order": 6,
+    "scope": "global"
   },
   {
-    "id": "ThePaintStyle",
-    "longname": "ThePaintStyle",
-    "name": "ThePaintStyle",
-    "kind": "function",
-    "scope": "global",
     "description": "Style for ThePaint",
-    "params": [],
+    "id": "ThePaintStyle",
+    "kind": "function",
+    "longname": "ThePaintStyle",
     "meta": {
-      "lineno": 10,
       "filename": "ThePaintStyle.jsx",
+      "lineno": 10,
       "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
     },
-    "order": 4
+    "name": "ThePaintStyle",
+    "order": 4,
+    "params": [],
+    "scope": "global"
   },
   {
-    "id": "ThePaint.propTypes.method",
-    "longname": "ThePaint.propTypes.method",
-    "name": "method",
-    "kind": "member",
-    "scope": "static",
     "description": "Method of drawing",
+    "id": "ThePaint.propTypes.method",
+    "kind": "member",
+    "longname": "ThePaint.propTypes.method",
     "memberof": "ThePaint.propTypes",
     "meta": {
+      "filename": "ThePaint.jsx",
       "lineno": 174,
-      "filename": "ThePaint.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
     },
-    "order": 2
+    "name": "method",
+    "order": 2,
+    "scope": "static"
   },
   {
-    "id": "ThePaint.propTypes.onDrawer",
-    "longname": "ThePaint.propTypes.onDrawer",
-    "name": "onDrawer",
-    "kind": "member",
-    "scope": "static",
     "description": "Get drawer ref",
+    "id": "ThePaint.propTypes.onDrawer",
+    "kind": "member",
+    "longname": "ThePaint.propTypes.onDrawer",
     "memberof": "ThePaint.propTypes",
     "meta": {
-      "lineno": 178,
       "filename": "ThePaint.jsx",
+      "lineno": 178,
       "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
     },
-    "order": 3
+    "name": "onDrawer",
+    "order": 3,
+    "scope": "static"
   },
   {
-    "id": "ThePaintStyle.propTypes.options",
-    "longname": "ThePaintStyle.propTypes.options",
-    "name": "options",
-    "kind": "member",
-    "scope": "static",
     "description": "Style options",
+    "id": "ThePaintStyle.propTypes.options",
+    "kind": "member",
+    "longname": "ThePaintStyle.propTypes.options",
     "memberof": "ThePaintStyle.propTypes",
     "meta": {
-      "lineno": 21,
       "filename": "ThePaintStyle.jsx",
+      "lineno": 21,
       "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
     },
-    "order": 5
+    "name": "options",
+    "order": 5,
+    "scope": "static"
   }
 ]
