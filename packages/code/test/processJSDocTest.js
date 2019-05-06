@@ -127,6 +127,27 @@ describe('process-js-doc', () => {
  */`,
     )
   })
+
+  it('Sort type def', async () => {
+    equal(
+      await processJSDoc(`
+/**
+ * @property {function()} cleanup
+ * @property {Object} descriptor
+ * @property {string} path - Filename
+ * @typedef {Object} GenerateResult
+ */
+`),
+      `
+/**
+ * @typedef {Object} GenerateResult
+ * @property {Object} descriptor
+ * @property {string} path - Filename
+ * @property {function()} cleanup
+ */
+`,
+    )
+  })
 })
 
 /* global describe, before, after, it */

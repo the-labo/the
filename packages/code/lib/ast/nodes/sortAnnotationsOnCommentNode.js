@@ -31,9 +31,17 @@ function sortAnnotationsOnCommentNode(CommentNode, { swap }) {
         weight -= 100
         break
       }
+      case 'property': {
+        weight += 10
+        break
+      }
       case 'return':
       case 'returns': {
-        weight += 10
+        weight += 50
+        break
+      }
+      case 'typedef': {
+        weight -= 50
         break
       }
       default:
@@ -47,7 +55,10 @@ function sortAnnotationsOnCommentNode(CommentNode, { swap }) {
     if (aWeight !== bWeight) {
       return aWeight - bWeight
     }
-    return a.kind.name.localeCompare(b.kind.name)
+    if (a.kind.name !== b.kind.name) {
+      return a.kind.name.localeCompare(b.kind.name)
+    }
+    return 0
   })
   const rangeFor = (annotation) => [annotation.start, annotation.end]
   for (let i = 0; i < annotations.length; i++) {

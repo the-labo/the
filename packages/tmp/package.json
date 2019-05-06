@@ -1,7 +1,7 @@
 {
   "name": "@the-/tmp",
   "description": "Tmp file creator",
-  "version": "15.4.3",
+  "version": "15.4.5",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "tmp": "0.0.33"
+    "tmp": "^0.1.0"
   },
   "devDependencies": {},
   "engines": {

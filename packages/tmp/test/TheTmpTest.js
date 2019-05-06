@@ -4,6 +4,7 @@
  */
 'use strict'
 
+const asleep = require('asleep')
 const { doesNotThrow, ok, throws } = require('assert').strict
 const fs = require('fs')
 const TheTmp = require('../lib/TheTmp')
@@ -24,7 +25,7 @@ describe('the-tmp', () => {
       },
       { prefix: 'the-test-tmp' },
     )
-
+    await asleep(50)
     throws(() => fs.statSync(created))
   })
 
@@ -34,6 +35,7 @@ describe('the-tmp', () => {
     ok(filename)
     doesNotThrow(() => fs.statSync(filename))
     cleanup()
+    await asleep(50)
     throws(() => fs.statSync(filename))
   })
 
@@ -43,6 +45,7 @@ describe('the-tmp', () => {
     ok(dirname)
     doesNotThrow(() => fs.statSync(dirname))
     cleanup()
+    await asleep(50)
     throws(() => fs.statSync(dirname))
   })
 
@@ -57,7 +60,7 @@ describe('the-tmp', () => {
       },
       { prefix: 'the-test-tmp' },
     )
-
+    await asleep(50)
     throws(() => fs.statSync(created))
   })
 })

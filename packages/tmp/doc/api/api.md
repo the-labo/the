@@ -22,7 +22,7 @@
 ## @the-/tmp
 Tmp file creator
 
-**Version**: 15.4.2  
+**Version**: 15.4.5  
 **License**: MIT  
 
 * [@the-/tmp](#module_@the-/tmp)
@@ -159,3 +159,4 @@ Alias of [create](#module_@the-/tmp.create)
 | --- | --- | --- |
 | cleanup | <code>function</code> |  |
 | path | <code>string</code> | Directory name |
+
