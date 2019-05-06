@@ -11,7 +11,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/ui-style": "^15.4.0",
+    "@the-/ui-style": "^15.4.4",
     "asobj": "^3.0.1",
     "debug": "^4.1.1",
     "prop-types": "^15.7.2"

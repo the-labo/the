@@ -1,120 +1,120 @@
 [
   {
-    "description": "Section of the-components",
     "id": "module:@the-/ui-section",
-    "kind": "module",
     "longname": "module:@the-/ui-section",
-    "meta": {
-      "filename": "index.jsx",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
-    },
     "name": "@the-/ui-section",
-    "order": 0,
-    "typicalname": "uiSection",
-    "version": "15.4.2"
-  },
-  {
-    "description": "Accordion section",
-    "id": "TheAccordionSection",
-    "kind": "class",
-    "longname": "TheAccordionSection",
-    "meta": {
-      "filename": "TheAccordionSection.jsx",
-      "lineno": 13,
-      "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
-    },
-    "name": "TheAccordionSection",
-    "order": 1,
-    "scope": "global"
-  },
-  {
+    "kind": "module",
     "description": "Section of the-components",
-    "id": "TheSection",
+    "version": "15.4.4",
+    "typicalname": "uiSection",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "TheAccordionSection",
+    "longname": "TheAccordionSection",
+    "name": "TheAccordionSection",
     "kind": "class",
-    "longname": "TheSection",
+    "scope": "global",
+    "description": "Accordion section",
     "meta": {
-      "filename": "TheSection.jsx",
       "lineno": 13,
+      "filename": "TheAccordionSection.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
     },
+    "order": 1
+  },
+  {
+    "id": "TheSection",
+    "longname": "TheSection",
     "name": "TheSection",
-    "order": 5,
-    "scope": "global"
+    "kind": "class",
+    "scope": "global",
+    "description": "Section of the-components",
+    "meta": {
+      "lineno": 13,
+      "filename": "TheSection.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
+    },
+    "order": 5
   },
   {
-    "description": "Style for TheSection",
     "id": "TheSectionStyle",
-    "kind": "function",
     "longname": "TheSectionStyle",
-    "meta": {
-      "filename": "TheSectionStyle.jsx",
-      "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
-    },
     "name": "TheSectionStyle",
-    "order": 6,
+    "kind": "function",
+    "scope": "global",
+    "description": "Style for TheSection",
     "params": [],
-    "scope": "global"
+    "meta": {
+      "lineno": 11,
+      "filename": "TheSectionStyle.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
+    },
+    "order": 6
   },
   {
-    "description": "Heading component",
     "id": "TheAccordionSection.propTypes.heading",
-    "kind": "member",
     "longname": "TheAccordionSection.propTypes.heading",
-    "memberof": "TheAccordionSection.propTypes",
-    "meta": {
-      "filename": "TheAccordionSection.jsx",
-      "lineno": 125,
-      "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
-    },
     "name": "heading",
-    "order": 2,
-    "scope": "static"
+    "kind": "member",
+    "scope": "static",
+    "description": "Heading component",
+    "memberof": "TheAccordionSection.propTypes",
+    "meta": {
+      "lineno": 125,
+      "filename": "TheAccordionSection.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
+    },
+    "order": 2
   },
   {
-    "description": "Callback when toggle",
     "id": "TheAccordionSection.propTypes.onToggle",
-    "kind": "member",
     "longname": "TheAccordionSection.propTypes.onToggle",
-    "memberof": "TheAccordionSection.propTypes",
-    "meta": {
-      "filename": "TheAccordionSection.jsx",
-      "lineno": 127,
-      "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
-    },
     "name": "onToggle",
-    "order": 3,
-    "scope": "static"
-  },
-  {
-    "description": "Open  when mounted",
-    "id": "TheAccordionSection.propTypes.open",
     "kind": "member",
-    "longname": "TheAccordionSection.propTypes.open",
+    "scope": "static",
+    "description": "Callback when toggle",
     "memberof": "TheAccordionSection.propTypes",
     "meta": {
+      "lineno": 127,
       "filename": "TheAccordionSection.jsx",
-      "lineno": 129,
       "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
     },
-    "name": "open",
-    "order": 4,
-    "scope": "static"
+    "order": 3
   },
   {
-    "description": "Style options",
-    "id": "TheSectionStyle.propTypes.options",
+    "id": "TheAccordionSection.propTypes.open",
+    "longname": "TheAccordionSection.propTypes.open",
+    "name": "open",
     "kind": "member",
+    "scope": "static",
+    "description": "Open  when mounted",
+    "memberof": "TheAccordionSection.propTypes",
+    "meta": {
+      "lineno": 129,
+      "filename": "TheAccordionSection.jsx",
+      "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
+    },
+    "order": 4
+  },
+  {
+    "id": "TheSectionStyle.propTypes.options",
     "longname": "TheSectionStyle.propTypes.options",
+    "name": "options",
+    "kind": "member",
+    "scope": "static",
+    "description": "Style options",
     "memberof": "TheSectionStyle.propTypes",
     "meta": {
-      "filename": "TheSectionStyle.jsx",
       "lineno": 22,
+      "filename": "TheSectionStyle.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
     },
-    "name": "options",
-    "order": 7,
-    "scope": "static"
+    "order": 7
   }
 ]

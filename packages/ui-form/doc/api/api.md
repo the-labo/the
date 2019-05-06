@@ -29,7 +29,7 @@
 ## @the-/ui-form
 Form of the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.4  
 <a name="TheForm"></a>
 
 ## TheForm
@@ -41,4 +41,4 @@ Form of the-components
 ## TheFormStyle()
 Style for TheForm
 
-**Kind**: global function
+**Kind**: global function  

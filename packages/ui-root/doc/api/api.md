@@ -29,7 +29,7 @@
 ## @the-/ui-root
 Root element of the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.4  
 <a name="TheRoot"></a>
 
 ## TheRoot
@@ -41,4 +41,4 @@ Root element of the-components
 ## TheRootStyle()
 Style for TheRoot
 
-**Kind**: global function
+**Kind**: global function  

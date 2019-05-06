@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-dialog",
   "description": "Dialog for the-components",
-  "version": "15.4.3",
+  "version": "15.4.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,12 +11,12 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/const-ui": "^2.0.11",
+    "@the-/const-ui": "^15.4.2",
     "@the-/ui-button": "^15.4.0",
-    "@the-/ui-icon": "^15.4.0",
+    "@the-/ui-icon": "^15.4.4",
     "@the-/ui-input": "^15.4.3",
-    "@the-/ui-spin": "^15.4.0",
-    "@the-/ui-style": "^15.4.0",
+    "@the-/ui-spin": "^15.4.4",
+    "@the-/ui-style": "^15.4.4",
     "@the-/util-ui": "^15.4.1",
     "@the-/window": "^15.4.1",
     "asobj": "^3.0.1",

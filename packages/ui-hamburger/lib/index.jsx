@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-hamburger
  * @typicalname uiHamburger
- * @version 15.4.3
+ * @version 15.4.4
  * @description Hamburger menu for the-components
  */
 'use strict'

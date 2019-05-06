@@ -29,7 +29,7 @@
 ## @the-/ui-icon
 Icon of the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.4  
 <a name="TheIcon"></a>
 
 ## TheIcon
@@ -41,4 +41,4 @@ Icon of the-components
 ## TheIconStyle()
 Style for TheIcon
 
-**Kind**: global function
+**Kind**: global function  

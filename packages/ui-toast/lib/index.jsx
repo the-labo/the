@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-toast
  * @typicalname uiToast
- * @version 15.4.3
+ * @version 15.4.4
  * @description Toast of the-components
  */
 'use strict'

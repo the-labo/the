@@ -29,7 +29,7 @@
 ## @the-/ui-view
 View of the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.4  
 <a name="TheView"></a>
 
 ## TheView
@@ -41,4 +41,4 @@ View of the-components
 ## TheViewStyle()
 Style for TheView
 
-**Kind**: global function
+**Kind**: global function  

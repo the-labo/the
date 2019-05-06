@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-pager
  * @typicalname uiPager
- * @version 15.4.3
+ * @version 15.4.4
  * @description Pager of the-components
  */
 'use strict'

@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-info
  * @typicalname uiInfo
- * @version 15.4.3
+ * @version 15.4.4
  * @description Info of the-component
  */
 'use strict'

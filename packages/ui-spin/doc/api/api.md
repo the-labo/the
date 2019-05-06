@@ -29,7 +29,7 @@
 ## @the-/ui-spin
 Spin of the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.4  
 <a name="TheSpin"></a>
 
 ## TheSpin
@@ -41,4 +41,4 @@ Spin of the-components
 ## TheSpinStyle()
 Style for TheSpin
 
-**Kind**: global function
+**Kind**: global function  

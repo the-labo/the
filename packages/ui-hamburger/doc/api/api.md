@@ -29,7 +29,7 @@
 ## @the-/ui-hamburger
 Hamburger menu for the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.4  
 <a name="TheHamburger"></a>
 
 ## TheHamburger
@@ -41,4 +41,4 @@ Hamburger menu for the-components
 ## TheHamburgerStyle()
 Style for TheHamburger
 
-**Kind**: global function
+**Kind**: global function  

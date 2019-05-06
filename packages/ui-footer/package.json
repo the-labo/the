@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-footer",
   "description": "Footer of the-components",
-  "version": "15.4.3",
+  "version": "15.4.5",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,10 +11,10 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/const-ui": "^2.0.11",
-    "@the-/ui-container": "^15.4.0",
+    "@the-/const-ui": "^15.4.2",
+    "@the-/ui-container": "^15.4.4",
     "@the-/ui-link": "^15.4.0",
-    "@the-/ui-style": "^15.4.0",
+    "@the-/ui-style": "^15.4.4",
     "@the-/util-ui": "^15.4.1",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"

@@ -38,7 +38,7 @@
 ## @the-/ui-dialog
 Dialog for the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.4  
 <a name="TheConfirmDialog"></a>
 
 ## TheConfirmDialog
@@ -68,4 +68,4 @@ Yes No Dialog
 ## TheDialogStyle()
 Style for TheDialog
 
-**Kind**: global function
+**Kind**: global function  

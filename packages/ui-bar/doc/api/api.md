@@ -32,7 +32,7 @@
 ## @the-/ui-bar
 Bar of the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.4  
 <a name="TheActionBar"></a>
 
 ## TheActionBar
@@ -50,4 +50,4 @@ Bar of the-component
 ## TheBarStyle()
 Style for TheBar
 
-**Kind**: global function
+**Kind**: global function  

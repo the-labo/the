@@ -29,7 +29,7 @@
 ## @the-/ui-tab
 Tab for the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.4  
 <a name="TheTab"></a>
 
 ## TheTab
@@ -41,4 +41,4 @@ Tab for the-components
 ## TheTabStyle()
 Style for TheTab
 
-**Kind**: global function
+**Kind**: global function  

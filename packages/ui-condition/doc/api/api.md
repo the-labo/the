@@ -29,7 +29,7 @@
 ## @the-/ui-condition
 Conditional renderer for the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.4  
 <a name="TheCondition"></a>
 
 ## TheCondition
@@ -41,4 +41,4 @@ Conditional renderer for the-components
 ## TheConditionStyle()
 Style for TheCondition
 
-**Kind**: global function
+**Kind**: global function  
