@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-caught",
   "description": "Component to show caught errors",
-  "version": "15.4.2",
+  "version": "15.4.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,6 +14,7 @@
     "@the-/check": "^15.5.1",
     "@the-/ui-condition": "^15.4.0",
     "@the-/ui-style": "^15.4.0",
+    "@the-/util-ui": "^15.4.1",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },

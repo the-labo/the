@@ -1,4 +1,7 @@
 {
+  "name": "@the-/ui-form",
+  "description": "Form of the-components",
+  "version": "15.4.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,7 +21,6 @@
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
-  "description": "Form of the-components",
   "devDependencies": {
     "@the-/ui-button": "^15.2.4",
     "@the-/ui-demo": "file:../ui-demo",
@@ -37,7 +39,6 @@
   ],
   "license": "MIT",
   "main": "shim",
-  "name": "@the-/ui-form",
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
@@ -51,6 +52,5 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.2"
+  }
 }

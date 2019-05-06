@@ -1,4 +1,7 @@
 {
+  "name": "@the-/scene",
+  "description": "Base class of the-scene",
+  "version": "15.4.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -17,7 +20,6 @@
     "objnest": "^5.0.6",
     "qs": "^6.7.0"
   },
-  "description": "Base class of the-scene",
   "devDependencies": {
     "@the-/scope": "file:../scope",
     "@the-/store": "file:../store"
@@ -33,7 +35,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/scene",
   "publishConfig": {
     "access": "public"
   },
@@ -44,6 +45,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.2"
+  }
 }

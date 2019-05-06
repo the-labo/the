@@ -8,14 +8,6 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheCaught">TheCaught</a></dt>
-<dd><p>Component to show caught errors</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
@@ -29,16 +21,24 @@
 ## @the-/ui-caught
 Component to show caught errors
 
-**Version**: 15.4.2  
-<a name="TheCaught"></a>
+**Version**: 15.4.3  
 
-## TheCaught
+* [@the-/ui-caught](#module_@the-/ui-caught)
+    * [.TheCaught](#module_@the-/ui-caught.TheCaught)
+        * [new TheCaught()](#new_module_@the-/ui-caught.TheCaught_new)
+
+<a name="module_@the-/ui-caught.TheCaught"></a>
+
+### uiCaught.TheCaught
+**Kind**: static class of [<code>@the-/ui-caught</code>](#module_@the-/ui-caught)  
+<a name="new_module_@the-/ui-caught.TheCaught_new"></a>
+
+#### new TheCaught()
 Component to show caught errors
 
-**Kind**: global class  
 <a name="TheCaughtStyle"></a>
 
 ## TheCaughtStyle()
 Style for TheCaught
 
-**Kind**: global function
+**Kind**: global function  

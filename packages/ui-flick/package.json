@@ -1,4 +1,7 @@
 {
+  "name": "@the-/ui-flick",
+  "description": "Flickable viewer of the-components",
+  "version": "15.4.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -22,7 +25,6 @@
     "prop-types": "^15.7.2",
     "react-draggable": "^3.3.0"
   },
-  "description": "Flickable viewer of the-components",
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
     "coz": "^7.0.19"
@@ -38,7 +40,6 @@
   ],
   "license": "MIT",
   "main": "shim",
-  "name": "@the-/ui-flick",
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
@@ -52,6 +53,5 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.2"
+  }
 }

@@ -1,3 +1,8 @@
+/**
+ * Component to show caught errors
+ * @memberof module:@the-/ui-caught
+ * @class TheCaught
+ */
 'use strict'
 
 import c from 'classnames'
@@ -7,9 +12,7 @@ import { isProduction } from '@the-/check'
 import { TheCondition } from '@the-/ui-condition'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
-/**
- * Component to show caught errors
- */
+/** @lends module:@the-/ui-caught.TheCaught */
 class TheCaught extends React.Component {
   render() {
     const { props } = this

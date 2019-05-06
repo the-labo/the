@@ -1,4 +1,7 @@
 {
+  "name": "@the-/util-path",
+  "description": "Utility for file path",
+  "version": "15.4.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,7 +14,6 @@
   "dependencies": {
     "aglob": "^3.0.2"
   },
-  "description": "Utility for file path",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -24,7 +26,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/util-path",
   "publishConfig": {
     "access": "public"
   },
@@ -35,6 +36,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.2"
+  }
 }

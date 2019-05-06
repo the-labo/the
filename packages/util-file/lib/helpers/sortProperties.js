@@ -22,7 +22,7 @@ function sortProperties(data) {
     default:
       break
   }
-  const isObject = data && data.constructor === Object
+  const isObject = data.constructor === Object
   if (!isObject) {
     return data
   }

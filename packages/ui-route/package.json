@@ -1,4 +1,7 @@
 {
+  "name": "@the-/ui-route",
+  "description": "Route of the-components",
+  "version": "15.4.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -17,7 +20,6 @@
     "debug": "^4.1.1",
     "prop-types": "^15.7.2"
   },
-  "description": "Route of the-components",
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
     "@the-/ui-link": "^15.2.3",
@@ -34,7 +36,6 @@
   ],
   "license": "MIT",
   "main": "shim",
-  "name": "@the-/ui-route",
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16",
@@ -49,6 +50,5 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.2"
+  }
 }
