@@ -5,7 +5,7 @@
 ## @the-/jsdoc
 JSDoc generator
 
-**Version**: 15.4.6  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/jsdoc](#module_@the-/jsdoc)
@@ -33,4 +33,4 @@ Create a JSDoc instance
 ### jsdoc.jsdoc() ⇒ <code>JSDoc</code>
 Default exports
 
-**Kind**: static method of [<code>@the-/jsdoc</code>](#module_@the-/jsdoc)
+**Kind**: static method of [<code>@the-/jsdoc</code>](#module_@the-/jsdoc)  
