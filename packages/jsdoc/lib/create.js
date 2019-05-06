@@ -1,17 +1,17 @@
 /**
- * Create a Jsdoc instance
- * @memberof module:jsdoc
+ * Create a JSDoc instance
+ * @memberof module:@the-/jsdoc
  * @function create
  * @param {...*} args
- * @returns {Jsdoc}
+ * @returns {JSDoc}
  */
 'use strict'
 
-const Jsdoc = require('./Jsdoc')
+const JSDoc = require('./JSDoc')
 
-/** @lends module:jsdoc.create */
+/** @lends module:@the-/jsdoc.create */
 function create(...args) {
-  const jsdoc = new Jsdoc(...args)
+  const jsdoc = new JSDoc(...args)
   return jsdoc.bind()
 }
 

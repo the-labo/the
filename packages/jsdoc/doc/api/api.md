@@ -5,5 +5,32 @@
 ## @the-/jsdoc
 JSDoc generator
 
-**Version**: 15.4.3  
-**License**: MIT
+**Version**: 15.4.6  
+**License**: MIT  
+
+* [@the-/jsdoc](#module_@the-/jsdoc)
+    * [.JSDoc](#module_@the-/jsdoc.JSDoc)
+    * [.create(...args)](#module_@the-/jsdoc.create) ⇒ <code>JSDoc</code>
+    * [.jsdoc()](#module_@the-/jsdoc.jsdoc) ⇒ <code>JSDoc</code>
+
+<a name="module_@the-/jsdoc.JSDoc"></a>
+
+### jsdoc.JSDoc
+**Kind**: static class of [<code>@the-/jsdoc</code>](#module_@the-/jsdoc)  
+<a name="module_@the-/jsdoc.create"></a>
+
+### jsdoc.create(...args) ⇒ <code>JSDoc</code>
+Create a JSDoc instance
+
+**Kind**: static method of [<code>@the-/jsdoc</code>](#module_@the-/jsdoc)  
+
+| Param | Type |
+| --- | --- |
+| ...args | <code>\*</code> | 
+
+<a name="module_@the-/jsdoc.jsdoc"></a>
+
+### jsdoc.jsdoc() ⇒ <code>JSDoc</code>
+Default exports
+
+**Kind**: static method of [<code>@the-/jsdoc</code>](#module_@the-/jsdoc)  

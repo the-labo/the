@@ -1,11 +1,11 @@
 /**
- * Test for Jsdoc.
+ * Test for JSDoc.
  * Runs with mocha.
  */
 'use strict'
 
 const { ok } = require('assert').strict
-const Jsdoc = require('../lib/Jsdoc')
+const JSDoc = require('../lib/JSDoc')
 
 describe('jsdoc', () => {
   before(() => {})
@@ -13,9 +13,9 @@ describe('jsdoc', () => {
   after(() => {})
 
   it('Do test', async () => {
-    ok(Jsdoc)
+    ok(JSDoc)
 
-    const jd = new Jsdoc()
+    const jd = new JSDoc()
     await jd.generate(
       `${__dirname}/../lib`,
       `${__dirname}/../tmp/testing-doc/api`,

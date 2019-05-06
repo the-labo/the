@@ -1,13 +1,13 @@
 /**
  * Default exports
- * @memberof module:jsdoc
+ * @memberof module:@the-/jsdoc
  * @function jsdoc
- * @returns {Jsdoc}
+ * @returns {JSDoc}
  */
 'use strict'
 
 const create = require('./create')
-const Jsdoc = require('./Jsdoc')
+const JSDoc = require('./JSDoc')
 
 const lib = create.bind(create)
 
@@ -15,7 +15,7 @@ module.exports = Object.assign(
   lib,
   /** @lends jsdoc */
   {
-    Jsdoc,
+    JSDoc,
     create,
   },
 )

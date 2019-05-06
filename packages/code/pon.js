@@ -1,6 +1,11 @@
 /**
  * As pon task
- * @function theCodeTask
+ * @module @the-/code/pon
+ */
+/**
+ * As pon task
+ * @memberof module:@the-/code/pon
+ * @function code
  * @param {string} pattern
  * @param {Object} [options={}]
  * @returns {function()} Task function
@@ -10,8 +15,8 @@
 const path = require('path')
 const theCode = require('./lib/create')
 
-/** @lends theCodeTask */
-function theCodeTask(pattern, options = {}) {
+/** @lends module:@the-/code/pon.code */
+function code(pattern, options = {}) {
   const { ignore = [], ...config } = options
   return async function task(ctx) {
     const { logger } = ctx
@@ -30,4 +35,4 @@ function theCodeTask(pattern, options = {}) {
   }
 }
 
-module.exports = theCodeTask
+module.exports = Object.assign(code, { code })

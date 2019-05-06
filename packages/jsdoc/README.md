@@ -89,10 +89,10 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 
-- module:jsdoc
-  - [.create(args)](./doc/api/api.md#module_jsdoc.create)
-  - [.jsdoc()](./doc/api/api.md#module_jsdoc.jsdoc)
-  - [.Jsdoc](./doc/api/api.md#module_jsdoc.Jsdoc)
+- module:@the-/jsdoc
+  - [.create(args)](./doc/api/api.md#module_@the-/jsdoc.create)
+  - [.jsdoc()](./doc/api/api.md#module_@the-/jsdoc.jsdoc)
+  - [.JSDoc](./doc/api/api.md#module_@the-/jsdoc.JSDoc)
 
 See [API Guide](./doc/api/api.md) for more detail
 
