@@ -2,8 +2,8 @@
  * @memberof module:@the-/media
  * @class TheMedia
  * @param {Object} [options={}] - Optional settings
- * @param {Object|Boolean} [options.video] - Video constraint
- * @param {Object|Boolean} [options.audio] - Audio constraint
+ * @param {Object|boolean} [options.video] - Video constraint
+ * @param {Object|boolean} [options.audio] - Audio constraint
  */
 'use strict'
 

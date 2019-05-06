@@ -1,4 +1,7 @@
 {
+  "name": "@the-/templates",
+  "description": "Templates for the-projects",
+  "version": "15.4.11",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -16,7 +19,6 @@
     "reserved": "^0.1.2",
     "stringcase": "^4.3.1"
   },
-  "description": "Templates for the-projects",
   "devDependencies": {
     "injectmock": "^2.0.0"
   },
@@ -31,7 +33,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/templates",
   "publishConfig": {
     "access": "public"
   },
@@ -41,6 +42,5 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.11"
+  }
 }

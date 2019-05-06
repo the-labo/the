@@ -3,7 +3,7 @@
  * @memberof module:@the-/run
  * @class TheRun
  * @param {Object} [options={}] - Optional settings
- * @param {number|Boolean} [options.inspect] -  Inspect port
+ * @param {number|boolean} [options.inspect] -  Inspect port
  */
 'use strict'
 

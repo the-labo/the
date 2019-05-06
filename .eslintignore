@@ -123,6 +123,7 @@ var/
 /packages/scope/lib/index.js
 /packages/scope/lib/scopes/index.js
 /packages/script-build/lib/index.js
+/packages/script-build/misc/mocks/mock-project-01/doc/demo/bundle.js
 /packages/script-build/misc/mocks/mock-project-01/lib/index.js
 /packages/script-doc/lib/index.js
 /packages/script-test/lib/index.js

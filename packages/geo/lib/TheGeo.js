@@ -34,7 +34,7 @@ class TheGeo {
     const valid =
       !!cached && cached._at + this.cacheDuration > new Date().getTime()
     if (valid) {
-      const { _at, ...data } = cached
+      const { ...data } = cached
       return data
     }
 
