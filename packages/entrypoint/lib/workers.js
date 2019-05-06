@@ -1,5 +1,6 @@
 /**
  * Register service workers
+ * @memberof module:@the-/entrypoint
  * @function workers
  * @param {string[]} swUrls - Service worker urls
  * @returns {Promise<undefined>}
@@ -8,9 +9,9 @@
 
 const { get } = require('@the-/window')
 
-const fullPath = (url) => new URL(url, location.href).href
+const fullPath = (url) => new URL(url, get('location.origin')).href
 
-/** @lends workers */
+/** @lends module:@the-/entrypoint.workers */
 async function workers(swUrls, options = {}) {
   const { purge = true } = options
   const serviceWorker = get('navigator.serviceWorker')

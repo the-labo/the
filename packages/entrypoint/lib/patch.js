@@ -1,5 +1,6 @@
 /**
  * Apply patch
+ * @memberof module:@the-/entrypoint
  * @function patch
  */
 'use strict'
@@ -8,7 +9,7 @@ const { isFirefox, isiOS, unlessProduction } = require('@the-/check')
 const { get } = require('@the-/window')
 const createStyleElement = require('./helpers/createStyleElement')
 
-/** @lends patch */
+/** @lends module:@the-/entrypoint.patch */
 function patch() {
   if (isFirefox()) {
     patch.firefox()

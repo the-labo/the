@@ -91,10 +91,12 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 
-- global
-  - [create(args)](./doc/api/api.md#create)
-  - [findEvalCode()](./doc/api/api.md#findEvalCode)
-  - [TheSupport](./doc/api/api.md#TheSupport)
+- module:@the-/support
+  - [.create(args)](./doc/api/api.md#module_@the-/support.create)
+  - [.TheSupport](./doc/api/api.md#module_@the-/support.TheSupport)
+- module:@the-/support.helpers
+  - [.detectUnsupportedCode()](./doc/api/api.md#module_@the-/support.helpers.detectUnsupportedCode)
+  - [.findEvalCode()](./doc/api/api.md#module_@the-/support.helpers.findEvalCode)
 
 See [API Guide](./doc/api/api.md) for more detail
 

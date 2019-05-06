@@ -1,10 +1,11 @@
 /**
+ * @memberof module:@the-/support.helpers
  * @function findEvalCode
  */
 'use strict'
 const { finder, parse } = require('@the-/ast')
 
-/** @lends findEvalCode */
+/** @lends module:@the-/support.helpersfindEvalCode */
 function findEvalCode(src) {
   const parsed = parse(String(src), {})
   const CallExpressions = finder.findByTypes(parsed, ['CallExpression'])

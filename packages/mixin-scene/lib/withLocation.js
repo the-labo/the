@@ -6,7 +6,7 @@
  * @returns {function()} Mixed class
  */
 /**
- * @memberOf module:@the-/mixin-scene.withLocation
+ * @memberof module:@the-/mixin-scene.withLocation
  * @inner
  * @class WithLocationMixed
  */
@@ -19,54 +19,56 @@ const injectProperties = require('./helpers/injectProperties')
 
 /** @lends module:@the-/mixin-scene.withLocation */
 const withLocation = asClassMixin((Class) => {
-  injectProperties(Class,
-  /** @lends module:@the-/mixin-scene.withLocation~WithLocationMixed */  
+  injectProperties(
+    Class,
+    /** @lends module:@the-/mixin-scene.withLocation~WithLocationMixed */
     {
-    /**
-     * Change location to url
-     * @param {string} href
-     */
-    changeLocationTo(href) {
-      this.location.href = href
-    },
-    /**
-     * Get location hash
-     * @returns {*}
-     */
-    getLocationHash() {
-      const { location } = this
-      if (!location) {
-        return null
-      }
-      return location.hash
-    },
-    location: {
-      get() {
-        return get('location')
+      /**
+       * Change location to url
+       * @param {string} href
+       */
+      changeLocationTo(href) {
+        this.location.href = href
+      },
+      /**
+       * Get location hash
+       * @returns {*}
+       */
+      getLocationHash() {
+        const { location } = this
+        if (!location) {
+          return null
+        }
+        return location.hash
+      },
+      location: {
+        get() {
+          return get('location')
+        },
+      },
+      /**
+       * Reload current location
+       * @returns {Promise<undefined>}
+       */
+      async reloadLocation(options = {}) {
+        const { timeout = 30 * 1000 } = options
+        this.location.reload()
+        await asleep(timeout) // Wait for reload
+        throw new Error(`Failed to reload`)
+      },
+      /**
+       * Set location hash
+       * @param {string} hash - Location hash to set
+       */
+      setLocationHash(hash) {
+        const { location } = this
+        if (!location) {
+          return
+        }
+        location.hash = hash
       },
     },
-    /**
-     * Reload current location
-     * @returns {Promise<undefined>}
-     */
-    async reloadLocation(options = {}) {
-      const { timeout = 30 * 1000 } = options
-      this.location.reload()
-      await asleep(timeout) // Wait for reload
-      throw new Error(`Failed to reload`)
-    },
-    /**
-     * Set location hash
-     * @param {string} hash - Location hash to set
-     */
-    setLocationHash(hash) {
-      const { location } = this
-      if (!location) {
-        return
-      }
-      location.hash = hash
-    },
-  })
+  )
 })
 
 module.exports = withLocation

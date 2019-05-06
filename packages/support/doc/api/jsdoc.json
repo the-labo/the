@@ -1,26 +1,27 @@
 [
   {
-    "id": "module:@the-/support",
-    "longname": "module:@the-/support",
-    "name": "@the-/support",
-    "kind": "module",
     "description": "JS support version checker",
-    "version": "15.4.2",
+    "id": "module:@the-/support",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "support",
+    "longname": "module:@the-/support",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/support/lib"
     },
-    "order": 1
+    "name": "@the-/support",
+    "order": 1,
+    "typicalname": "support",
+    "version": "15.4.2"
   },
   {
-    "id": "TheSupport()",
-    "longname": "TheSupport",
-    "name": "TheSupport",
+    "id": "module:@the-/support.TheSupport()",
     "kind": "constructor",
-    "memberof": "TheSupport",
+    "longname": "module:@the-/support.TheSupport",
+    "memberof": "module:@the-/support.TheSupport",
+    "name": "TheSupport",
+    "order": 3,
     "params": [
       {
         "type": {
@@ -31,29 +32,51 @@
         "description": "Filename pattern",
         "name": "pattern"
       }
-    ],
-    "order": 3
+    ]
   },
   {
-    "id": "TheSupport",
-    "longname": "TheSupport",
-    "name": "TheSupport",
+    "id": "module:@the-/support.TheSupport",
     "kind": "class",
-    "scope": "global",
+    "longname": "module:@the-/support.TheSupport",
+    "memberof": "module:@the-/support",
     "meta": {
-      "lineno": 1,
       "filename": "TheSupport.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/support/lib"
     },
-    "order": 2
+    "name": "TheSupport",
+    "order": 2,
+    "scope": "static"
   },
   {
-    "id": "create",
-    "longname": "create",
-    "name": "create",
-    "kind": "function",
-    "scope": "global",
+    "access": "protected",
+    "description": "Helper functions",
+    "id": "module:@the-/support.helpers",
+    "kind": "namespace",
+    "longname": "module:@the-/support.helpers",
+    "memberof": "module:@the-/support",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 2,
+      "path": "/Users/okuni/Projects/the/packages/support/lib/helpers"
+    },
+    "name": "helpers",
+    "order": 6,
+    "scope": "static"
+  },
+  {
     "description": "Create a TheSupport instance",
+    "id": "module:@the-/support.create",
+    "kind": "function",
+    "longname": "module:@the-/support.create",
+    "memberof": "module:@the-/support",
+    "meta": {
+      "filename": "create.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/support/lib"
+    },
+    "name": "create",
+    "order": 0,
     "params": [
       {
         "type": {
@@ -74,24 +97,35 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "create.js",
-      "path": "/Users/okuni/Projects/the/packages/support/lib"
-    },
-    "order": 0
+    "scope": "static"
   },
   {
-    "id": "findEvalCode",
-    "longname": "findEvalCode",
-    "name": "findEvalCode",
+    "description": "Detect unsupported",
+    "id": "module:@the-/support.helpers.detectUnsupportedCode",
     "kind": "function",
-    "scope": "global",
+    "longname": "module:@the-/support.helpers.detectUnsupportedCode",
+    "memberof": "module:@the-/support.helpers",
     "meta": {
+      "filename": "detectUnsupportedCode.js",
       "lineno": 1,
-      "filename": "findEvalCode.js",
       "path": "/Users/okuni/Projects/the/packages/support/lib/helpers"
     },
-    "order": 4
+    "name": "detectUnsupportedCode",
+    "order": 4,
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/support.helpers.findEvalCode",
+    "kind": "function",
+    "longname": "module:@the-/support.helpers.findEvalCode",
+    "memberof": "module:@the-/support.helpers",
+    "meta": {
+      "filename": "findEvalCode.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/support/lib/helpers"
+    },
+    "name": "findEvalCode",
+    "order": 5,
+    "scope": "static"
   }
 ]

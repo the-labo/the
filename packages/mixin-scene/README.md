@@ -100,20 +100,6 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 
-- global
-  - [asClassMixin()](./doc/api/api.md#asClassMixin)
-  - [changeLocationTo(href)](./doc/api/api.md#changeLocationTo)
-  - [getId()](./doc/api/api.md#getId)
-  - [getLocationHash()](./doc/api/api.md#getLocationHash)
-  - [getQueryFromSearch(search)](./doc/api/api.md#getQueryFromSearch)
-  - [injectProperties(Class)](./doc/api/api.md#injectProperties)
-  - [isKnownId(id)](./doc/api/api.md#isKnownId)
-  - [mergeQueryToSearch(query)](./doc/api/api.md#mergeQueryToSearch)
-  - [queryWithSearch(search)](./doc/api/api.md#queryWithSearch)
-  - [reloadLocation()](./doc/api/api.md#reloadLocation)
-  - [replaceHistoryByQuery(query)](./doc/api/api.md#replaceHistoryByQuery)
-  - [resultFor(action)](./doc/api/api.md#resultFor)
-  - [setLocationHash(hash)](./doc/api/api.md#setLocationHash)
 - module:@the-/mixin-scene
   - [.bindDefaults()](./doc/api/api.md#module_@the-/mixin-scene.bindDefaults)
   - [.bindScope()](./doc/api/api.md#module_@the-/mixin-scene.bindScope)
@@ -137,7 +123,9 @@ tryExample().catch((err) => console.error(err))
   - [.withTargets(Class)](./doc/api/api.md#module_@the-/mixin-scene.withTargets)
   - [.withValues(Class)](./doc/api/api.md#module_@the-/mixin-scene.withValues)
 - module:@the-/mixin-scene.helpers
+  - [.asClassMixin()](./doc/api/api.md#module_@the-/mixin-scene.helpers.asClassMixin)
   - [.asMethodWrap()](./doc/api/api.md#module_@the-/mixin-scene.helpers.asMethodWrap)
+  - [.injectProperties(Class)](./doc/api/api.md#module_@the-/mixin-scene.helpers.injectProperties)
 - module:@the-/mixin-scene.siteToast
   - [~SiteToastMixed](./doc/api/api.md#module_@the-/mixin-scene.siteToast~SiteToastMixed)
 - module:@the-/mixin-scene.siteToast~SiteToastMixed
@@ -180,6 +168,15 @@ tryExample().catch((err) => console.error(err))
   - [.getFilter()](./doc/api/api.md#module_@the-/mixin-scene.withFilter~WithFilterMixed.getFilter)
   - [.setFilter(filter)](./doc/api/api.md#module_@the-/mixin-scene.withFilter~WithFilterMixed.setFilter)
   - [.setFilterByQ()](./doc/api/api.md#module_@the-/mixin-scene.withFilter~WithFilterMixed.setFilterByQ)
+- module:@the-/mixin-scene.withHistory
+  - [~WithHistoryMixed](./doc/api/api.md#module_@the-/mixin-scene.withHistory~WithHistoryMixed)
+- module:@the-/mixin-scene.withHistory~WithHistoryMixed
+  - [.replaceHistoryByQuery(query)](./doc/api/api.md#module_@the-/mixin-scene.withHistory~WithHistoryMixed.replaceHistoryByQuery)
+- module:@the-/mixin-scene.withId
+  - [~WithHistoryMixed](./doc/api/api.md#module_@the-/mixin-scene.withId~WithHistoryMixed)
+- module:@the-/mixin-scene.withId~WithHistoryMixed
+  - [.getId()](./doc/api/api.md#module_@the-/mixin-scene.withId~WithHistoryMixed.getId)
+  - [.isKnownId(id)](./doc/api/api.md#module_@the-/mixin-scene.withId~WithHistoryMixed.isKnownId)
 - module:@the-/mixin-scene.withLimit
   - [~WithLimitMixed](./doc/api/api.md#module_@the-/mixin-scene.withLimit~WithLimitMixed)
 - module:@the-/mixin-scene.withLimit~WithLimitMixed
@@ -187,10 +184,23 @@ tryExample().catch((err) => console.error(err))
   - [.nextLimit()](./doc/api/api.md#module_@the-/mixin-scene.withLimit~WithLimitMixed.nextLimit)
   - [.setLimit(limit)](./doc/api/api.md#module_@the-/mixin-scene.withLimit~WithLimitMixed.setLimit)
   - [.updateToNextLimit()](./doc/api/api.md#module_@the-/mixin-scene.withLimit~WithLimitMixed.updateToNextLimit)
+- module:@the-/mixin-scene.withLocation
+  - [~WithLocationMixed](./doc/api/api.md#module_@the-/mixin-scene.withLocation~WithLocationMixed)
+- module:@the-/mixin-scene.withLocation~WithLocationMixed
+  - [.changeLocationTo(href)](./doc/api/api.md#module_@the-/mixin-scene.withLocation~WithLocationMixed.changeLocationTo)
+  - [.getLocationHash()](./doc/api/api.md#module_@the-/mixin-scene.withLocation~WithLocationMixed.getLocationHash)
+  - [.reloadLocation()](./doc/api/api.md#module_@the-/mixin-scene.withLocation~WithLocationMixed.reloadLocation)
+  - [.setLocationHash(hash)](./doc/api/api.md#module_@the-/mixin-scene.withLocation~WithLocationMixed.setLocationHash)
 - module:@the-/mixin-scene.withPage.WithPageMixed
   - [.getPage()](./doc/api/api.md#module_@the-/mixin-scene.withPage.WithPageMixed.getPage)
 - module:@the-/mixin-scene.withPage
   - [~WithPageMixed](./doc/api/api.md#module_@the-/mixin-scene.withPage~WithPageMixed)
+- module:@the-/mixin-scene.withQuery
+  - [~WithQueryMixed](./doc/api/api.md#module_@the-/mixin-scene.withQuery~WithQueryMixed)
+- module:@the-/mixin-scene.withQuery~WithQueryMixed
+  - [.getQueryFromSearch(search)](./doc/api/api.md#module_@the-/mixin-scene.withQuery~WithQueryMixed.getQueryFromSearch)
+  - [.mergeQueryToSearch(query)](./doc/api/api.md#module_@the-/mixin-scene.withQuery~WithQueryMixed.mergeQueryToSearch)
+  - [.queryWithSearch(search)](./doc/api/api.md#module_@the-/mixin-scene.withQuery~WithQueryMixed.queryWithSearch)
 - module:@the-/mixin-scene.withReady
   - [~WithReadyMixed](./doc/api/api.md#module_@the-/mixin-scene.withReady~WithReadyMixed)
 - module:@the-/mixin-scene.withReady~WithReadyMixed
@@ -199,6 +209,8 @@ tryExample().catch((err) => console.error(err))
   - [.unlessReady(task)](./doc/api/api.md#module_@the-/mixin-scene.withReady~WithReadyMixed.unlessReady)
 - module:@the-/mixin-scene.withResult
   - [~WithResultMixed](./doc/api/api.md#module_@the-/mixin-scene.withResult~WithResultMixed)
+- module:@the-/mixin-scene.withResult~WithResultMixed
+  - [.resultFor(action)](./doc/api/api.md#module_@the-/mixin-scene.withResult~WithResultMixed.resultFor)
 - module:@the-/mixin-scene.withSort
   - [~WithSortMixed](./doc/api/api.md#module_@the-/mixin-scene.withSort~WithSortMixed)
 - module:@the-/mixin-scene.withTargets

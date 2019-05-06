@@ -1,7 +1,13 @@
+/**
+ * Detect unsupported
+ * @memberof module:@the-/support.helpers
+ * @function detectUnsupportedCode
+ */
 'use strict'
 const acorn = require('acorn')
 const logSyntaxError = require('log-syntax-error')
 
+/** @lends module:@the-/support.helpers.detectUnsupportedCode */
 function detectUnsupportedCode(code, ecmaVersion) {
   try {
     acorn.parse(code, { ecmaVersion, silent: true })

@@ -1,5 +1,6 @@
 /**
  * Handle when online
+ * @memberof module:@the-/entrypoint
  * @function online
  * @param {Object} [options=[]] - Optional settings
  */
@@ -7,7 +8,7 @@
 
 const { get, line } = require('@the-/window')
 
-/** @lends online */
+/** @lends module:@the-/entrypoint.online */
 function online() {
   let isOffline = false
   line((detected) => {

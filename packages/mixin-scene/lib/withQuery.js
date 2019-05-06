@@ -7,7 +7,7 @@
  * @returns {function()} Mixed class
  */
 /**
- * @memberOf module:@the-/mixin-scene.withQuery
+ * @memberof module:@the-/mixin-scene.withQuery
  * @inner
  * @class WithQueryMixed
  */
@@ -21,55 +21,57 @@ const injectProperties = require('./helpers/injectProperties')
 
 /** @lends module:@the-/mixin-scene.withQuery */
 const withQuery = asClassMixin((Class) => {
-  injectProperties(Class,
-  /** @lends module:@the-/mixin-scene.withQuery~WithQueryMixed */
+  injectProperties(
+    Class,
+    /** @lends module:@the-/mixin-scene.withQuery~WithQueryMixed */
     {
-    /**
-     * Get query from search
-     * @param {string} [search=location.search]
-     * @returns {Object}
-     */
-    getQueryFromSearch(search = get('location.search')) {
-      if (!search) {
-        return {}
-      }
-      return qs.parse(search, { ignoreQueryPrefix: true })
-    },
-    /**
-     * Merge additional query into search
-     * @param {Object} query
-     */
-    mergeQueryToSearch(query) {
-      const merged = cleanup(
-        {
-          ...this.getQueryFromSearch(),
-          ...query,
-        },
-        {
-          delEmptyString: true,
-          delNull: true,
-        },
-      )
-      const search = '?' + qs.stringify(merged)
+      /**
+       * Get query from search
+       * @param {string} [search=location.search]
+       * @returns {Object}
+       */
+      getQueryFromSearch(search = get('location.search')) {
+        if (!search) {
+          return {}
+        }
+        return qs.parse(search, { ignoreQueryPrefix: true })
+      },
+      /**
+       * Merge additional query into search
+       * @param {Object} query
+       */
+      mergeQueryToSearch(query) {
+        const merged = cleanup(
+          {
+            ...this.getQueryFromSearch(),
+            ...query,
+          },
+          {
+            delEmptyString: true,
+            delNull: true,
+          },
+        )
+        const search = '?' + qs.stringify(merged)
 
-      const { history } = this
-      if (history.location.search !== search) {
-        const { hash } = history.location
-        history.replace({
-          hash,
-          search,
-        })
-      }
+        const { history } = this
+        if (history.location.search !== search) {
+          const { hash } = history.location
+          history.replace({
+            hash,
+            search,
+          })
+        }
+      },
+      /**
+       * Query with search
+       * @param {string} search - Location search string
+       * @returns {Object}
+       */
+      queryWithSearch(search) {
+        return qs.parse(search, { ignoreQueryPrefix: true })
+      },
     },
-    /**
-     * Query with search
-     * @param {string} search - Location search string
-     * @returns {Object}
-     */
-    queryWithSearch(search) {
-      return qs.parse(search, { ignoreQueryPrefix: true })
-    },
-  })
+  )
 })
 
 module.exports = withQuery

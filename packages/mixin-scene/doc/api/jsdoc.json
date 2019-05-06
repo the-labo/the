@@ -5,7 +5,7 @@
     "name": "@the-/mixin-scene",
     "kind": "module",
     "description": "Mixins for the-scene",
-    "version": "15.4.5",
+    "version": "15.4.6",
     "license": "MIT",
     "typicalname": "mixinScene",
     "meta": {
@@ -1152,7 +1152,7 @@
       }
     ],
     "meta": {
-      "lineno": 27,
+      "lineno": 28,
       "filename": "withId.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
     },
@@ -1186,7 +1186,7 @@
       }
     ],
     "meta": {
-      "lineno": 35,
+      "lineno": 36,
       "filename": "withId.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
     },
@@ -1371,7 +1371,7 @@
       }
     ],
     "meta": {
-      "lineno": 29,
+      "lineno": 30,
       "filename": "withLocation.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
     },
@@ -1395,7 +1395,7 @@
       }
     ],
     "meta": {
-      "lineno": 36,
+      "lineno": 37,
       "filename": "withLocation.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
     },
@@ -1419,7 +1419,7 @@
       }
     ],
     "meta": {
-      "lineno": 52,
+      "lineno": 53,
       "filename": "withLocation.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
     },
@@ -1445,7 +1445,7 @@
       }
     ],
     "meta": {
-      "lineno": 62,
+      "lineno": 63,
       "filename": "withLocation.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
     },
@@ -1578,7 +1578,7 @@
       }
     ],
     "meta": {
-      "lineno": 32,
+      "lineno": 33,
       "filename": "withQuery.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
     },
@@ -1603,7 +1603,7 @@
       }
     ],
     "meta": {
-      "lineno": 42,
+      "lineno": 43,
       "filename": "withQuery.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
     },
@@ -1638,7 +1638,7 @@
       }
     ],
     "meta": {
-      "lineno": 69,
+      "lineno": 70,
       "filename": "withQuery.js",
       "path": "/Users/okuni/Projects/the/packages/mixin-scene/lib"
     },

@@ -1,14 +1,20 @@
 /**
  * Provide seat access functions
+ * @memberof module:@the-/util-site
  * @function seatAccess
  * @deprecated Use `the-seat/handy/seatAccess` instead
  * @returns {Object}
  */
 'use strict'
 
-/** @lends seatAccess */
+/** @lends module:@the-/util-site.seatAccess */
 function seatAccess(seat) {
-  return {
+  /**
+   * @memberof module:@the-/util-site.seatAccess
+   * @inner
+   * @name seatAccessBound
+   */
+  const seatAccessBound = {
     /**
      * Container name for
      * @param {string} name - Name of container
@@ -101,6 +107,7 @@ function seatAccess(seat) {
       ].join('-')
     },
   }
+  return seatAccessBound
 }
 
 module.exports = seatAccess

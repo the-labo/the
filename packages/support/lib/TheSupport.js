@@ -1,4 +1,5 @@
 /**
+ * @memberof module:@the-/support
  * @class TheSupport
  * @param {string} pattern - Filename pattern
  */
@@ -10,7 +11,7 @@ const path = require('path')
 const detectUnsupportedCode = require('./helpers/detectUnsupportedCode')
 const findEvalCode = require('./helpers/findEvalCode')
 
-/** @lends TheSupport */
+/** @lends module:@the-/support.TheSupport */
 class TheSupport {
   static async checkECMASupport(filename, ecmaVersion) {
     const relativeFilename = path.relative(process.cwd(), filename)

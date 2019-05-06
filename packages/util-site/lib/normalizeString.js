@@ -1,4 +1,5 @@
 /**
+ * @memberof module:@the-/util-site
  * Convert into japanese strings.
  * 英数字記号は半角、カナは全角へ
  * @function formatString
@@ -189,7 +190,7 @@ const replacePairs = [
   ...hankakuKana.map((_, i) => [hankakuKana[i], zenkakuKana[i]]),
 ]
 
-/** @lends normalizeString */
+/** @lends module:@the-/util-site.normalizeString */
 function normalizeString(src) {
   if (!src) {
     return src

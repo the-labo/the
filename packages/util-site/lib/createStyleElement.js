@@ -1,4 +1,5 @@
 /**
+ * @memberof module:@the-/util-site
  * @function createStyleElement
  * @param {string} css - CSS String
  * @param {object} [options={}] - Optional settings
@@ -7,7 +8,7 @@
 
 const { get } = require('bwindow')
 
-/** @lends createStyleElement */
+/** @lends module:@the-/util-site.createStyleElement */
 function createStyleElement(css, options = {}) {
   const {
     className = 'the-dynamic-style',

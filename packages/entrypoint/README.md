@@ -85,15 +85,17 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 
-- global
-  - [createStyleElement()](./doc/api/api.md#createStyleElement)
-  - [mount(element,containerId,options)](./doc/api/api.md#mount)
-  - [online(options)](./doc/api/api.md#online)
-  - [patch()](./doc/api/api.md#patch)
-  - [quelize(values)](./doc/api/api.md#quelize)
-  - [secure(options)](./doc/api/api.md#secure)
-  - [singleton(options)](./doc/api/api.md#singleton)
-  - [workers(swUrls)](./doc/api/api.md#workers)
+- module:@the-/entrypoint.helpers
+  - [.createStyleElement()](./doc/api/api.md#module_@the-/entrypoint.helpers.createStyleElement)
+- module:@the-/entrypoint
+  - [.history()](./doc/api/api.md#module_@the-/entrypoint.history)
+  - [.mount(element,containerId,options)](./doc/api/api.md#module_@the-/entrypoint.mount)
+  - [.online(options)](./doc/api/api.md#module_@the-/entrypoint.online)
+  - [.patch()](./doc/api/api.md#module_@the-/entrypoint.patch)
+  - [.quelize(values)](./doc/api/api.md#module_@the-/entrypoint.quelize)
+  - [.secure(options)](./doc/api/api.md#module_@the-/entrypoint.secure)
+  - [.singleton(options)](./doc/api/api.md#module_@the-/entrypoint.singleton)
+  - [.workers(swUrls)](./doc/api/api.md#module_@the-/entrypoint.workers)
 
 See [API Guide](./doc/api/api.md) for more detail
 

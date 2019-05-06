@@ -1,5 +1,6 @@
 /**
  * Mount element on DOM
+ * @memberof module:@the-/entrypoint
  * @function mount
  * @param {*} element - React element
  * @param {string} containerId - Id of container dom
@@ -16,7 +17,7 @@ const { TheRouter } = require('@the-/ui-router')
 const { get } = require('@the-/window')
 const history = require('./history')
 
-/** @lends mount */
+/** @lends module:@the-/entrypoint.mount */
 function mount(element, containerId, options = {}) {
   const { router = false, strictMode = false } = options
   const document = get('window.document')

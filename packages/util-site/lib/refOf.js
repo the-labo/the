@@ -1,5 +1,6 @@
 /**
  * Convert into ref
+ * @memberof module:@the-/util-site
  * @function refOf
  */
 'use strict'
@@ -7,7 +8,7 @@
 const { refTo } = require('clay-resource-ref')
 const { unlessProduction } = require('@the-/check')
 
-/** @lends refOf */
+/** @lends module:@the-/util-site.refOf */
 function refOf(entity) {
   if (!entity) {
     return null

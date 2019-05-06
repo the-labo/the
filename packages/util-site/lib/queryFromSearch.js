@@ -1,5 +1,6 @@
 /**
  * Get query from search
+ * @memberof module:@the-/util-site
  * @function queryFromSearch
  * @param {string} search
  * @returns {Object}
@@ -9,7 +10,7 @@
 const { get } = require('bwindow')
 const qs = require('qs')
 
-/** @lends queryFromSearch */
+/** @lends module:@the-/util-site.queryFromSearch */
 function queryFromSearch(search = get('location.search')) {
   if (!search) {
     return {}

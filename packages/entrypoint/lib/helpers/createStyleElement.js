@@ -1,5 +1,6 @@
 /**
  * Create Style element
+ * @memberof module:@the-/entrypoint.helpers
  * @function createStyleElement
  * @returns {HTMLElement}
  */
@@ -7,7 +8,7 @@
 
 const { get } = require('@the-/window')
 
-/** @lends createStyleElement */
+/** @lends module:@the-/entrypoint.helpers.createStyleElement */
 function createStyleElement(cssString, options = {}) {
   const { className } = options
   const document = get('document')

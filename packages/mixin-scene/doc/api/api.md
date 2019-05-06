@@ -5,7 +5,7 @@
 ## @the-/mixin-scene
 Mixins for the-scene
 
-**Version**: 15.4.5  
+**Version**: 15.4.6  
 **License**: MIT  
 
 * [@the-/mixin-scene](#module_@the-/mixin-scene)

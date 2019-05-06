@@ -90,26 +90,32 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 
-- global
-  - [appendQueryToSearch(query)](./doc/api/api.md#appendQueryToSearch)
-  - [containerNameFor(name,bytes)](./doc/api/api.md#containerNameFor)
-  - [countSuffix(count,options)](./doc/api/api.md#countSuffix)
-  - [createStyleElement(css,options)](./doc/api/api.md#createStyleElement)
-  - [envOf()](./doc/api/api.md#envOf)
-  - [formatString()](./doc/api/api.md#formatString)
-  - [hasMoreFor()](./doc/api/api.md#hasMoreFor)
-  - [isEmail(email)](./doc/api/api.md#isEmail)
-  - [isPhoneNumber(value)](./doc/api/api.md#isPhoneNumber)
-  - [networkNameFor(name,bytes)](./doc/api/api.md#networkNameFor)
-  - [portNumberFor(name,base,increment)](./doc/api/api.md#portNumberFor)
-  - [portNumberRangeFor(name,base,length)](./doc/api/api.md#portNumberRangeFor)
-  - [processNameFor(name,bytes)](./doc/api/api.md#processNameFor)
-  - [queryFromSearch(search)](./doc/api/api.md#queryFromSearch)
-  - [refOf()](./doc/api/api.md#refOf)
-  - [scrollToElement(element)](./doc/api/api.md#scrollToElement)
-  - [seatAccess()](./doc/api/api.md#seatAccess)
-  - [secretFor(name,bytes)](./doc/api/api.md#secretFor)
-  - [userNameFor(name,bytes)](./doc/api/api.md#userNameFor)
+- module:@the-/util-site
+Convert into japanese strings.
+英数字記号は半角、カナは全角へ
+  - [.formatString()](./doc/api/api.md#module_@the-/util-site
+Convert into japanese strings.
+英数字記号は半角、カナは全角へ.formatString)
+- module:@the-/util-site
+  - [.appendQueryToSearch(query)](./doc/api/api.md#module_@the-/util-site.appendQueryToSearch)
+  - [.countSuffix(count,options)](./doc/api/api.md#module_@the-/util-site.countSuffix)
+  - [.createStyleElement(css,options)](./doc/api/api.md#module_@the-/util-site.createStyleElement)
+  - [.envOf()](./doc/api/api.md#module_@the-/util-site.envOf)
+  - [.hasMoreFor()](./doc/api/api.md#module_@the-/util-site.hasMoreFor)
+  - [.isEmail(email)](./doc/api/api.md#module_@the-/util-site.isEmail)
+  - [.isPhoneNumber(value)](./doc/api/api.md#module_@the-/util-site.isPhoneNumber)
+  - [.queryFromSearch(search)](./doc/api/api.md#module_@the-/util-site.queryFromSearch)
+  - [.refOf()](./doc/api/api.md#module_@the-/util-site.refOf)
+  - [.scrollToElement(element)](./doc/api/api.md#module_@the-/util-site.scrollToElement)
+  - [.seatAccess()](./doc/api/api.md#module_@the-/util-site.seatAccess)
+- module:@the-/util-site.seatAccess~seatAccessBound
+  - [.containerNameFor(name,bytes)](./doc/api/api.md#module_@the-/util-site.seatAccess~seatAccessBound.containerNameFor)
+  - [.networkNameFor(name,bytes)](./doc/api/api.md#module_@the-/util-site.seatAccess~seatAccessBound.networkNameFor)
+  - [.portNumberFor(name,base,increment)](./doc/api/api.md#module_@the-/util-site.seatAccess~seatAccessBound.portNumberFor)
+  - [.portNumberRangeFor(name,base,length)](./doc/api/api.md#module_@the-/util-site.seatAccess~seatAccessBound.portNumberRangeFor)
+  - [.processNameFor(name,bytes)](./doc/api/api.md#module_@the-/util-site.seatAccess~seatAccessBound.processNameFor)
+  - [.secretFor(name,bytes)](./doc/api/api.md#module_@the-/util-site.seatAccess~seatAccessBound.secretFor)
+  - [.userNameFor(name,bytes)](./doc/api/api.md#module_@the-/util-site.seatAccess~seatAccessBound.userNameFor)
 
 See [API Guide](./doc/api/api.md) for more detail
 

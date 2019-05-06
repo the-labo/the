@@ -5,7 +5,7 @@
     "name": "@the-/entrypoint",
     "kind": "module",
     "description": "Browser entrypoint for the-framework",
-    "version": "15.4.2",
+    "version": "15.4.3",
     "license": "MIT",
     "typicalname": "entrypoint",
     "meta": {
@@ -13,15 +13,57 @@
       "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
     },
+    "order": 1
+  },
+  {
+    "id": "module:@the-/entrypoint.helpers",
+    "longname": "module:@the-/entrypoint.helpers",
+    "name": "helpers",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Helper functions",
+    "memberof": "module:@the-/entrypoint",
+    "access": "protected",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/entrypoint/lib/helpers"
+    },
+    "order": 10
+  },
+  {
+    "id": "module:@the-/entrypoint.history",
+    "longname": "module:@the-/entrypoint.history",
+    "name": "history",
+    "kind": "function",
+    "scope": "static",
+    "description": "Get history object",
+    "memberof": "module:@the-/entrypoint",
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "history"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "history.js",
+      "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
+    },
     "order": 0
   },
   {
-    "id": "mount",
-    "longname": "mount",
+    "id": "module:@the-/entrypoint.mount",
+    "longname": "module:@the-/entrypoint.mount",
     "name": "mount",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Mount element on DOM",
+    "memberof": "module:@the-/entrypoint",
     "params": [
       {
         "type": {
@@ -86,15 +128,16 @@
       "filename": "mount.js",
       "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
     },
-    "order": 1
+    "order": 2
   },
   {
-    "id": "online",
-    "longname": "online",
+    "id": "module:@the-/entrypoint.online",
+    "longname": "module:@the-/entrypoint.online",
     "name": "online",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Handle when online",
+    "memberof": "module:@the-/entrypoint",
     "params": [
       {
         "type": {
@@ -113,29 +156,31 @@
       "filename": "online.js",
       "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
     },
-    "order": 2
+    "order": 3
   },
   {
-    "id": "patch",
-    "longname": "patch",
+    "id": "module:@the-/entrypoint.patch",
+    "longname": "module:@the-/entrypoint.patch",
     "name": "patch",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Apply patch",
+    "memberof": "module:@the-/entrypoint",
     "meta": {
       "lineno": 1,
       "filename": "patch.js",
       "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
     },
-    "order": 3
+    "order": 4
   },
   {
-    "id": "quelize",
-    "longname": "quelize",
+    "id": "module:@the-/entrypoint.quelize",
+    "longname": "module:@the-/entrypoint.quelize",
     "name": "quelize",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Inject queries on location change",
+    "memberof": "module:@the-/entrypoint",
     "params": [
       {
         "type": {
@@ -153,15 +198,16 @@
       "filename": "quelize.js",
       "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
     },
-    "order": 4
+    "order": 5
   },
   {
-    "id": "secure",
-    "longname": "secure",
+    "id": "module:@the-/entrypoint.secure",
+    "longname": "module:@the-/entrypoint.secure",
     "name": "secure",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Make sure to be secure",
+    "memberof": "module:@the-/entrypoint",
     "params": [
       {
         "type": {
@@ -190,15 +236,16 @@
       "filename": "secure.js",
       "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
     },
-    "order": 5
+    "order": 6
   },
   {
-    "id": "singleton",
-    "longname": "singleton",
+    "id": "module:@the-/entrypoint.singleton",
+    "longname": "module:@the-/entrypoint.singleton",
     "name": "singleton",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Make sure that entrypoint loaded only once",
+    "memberof": "module:@the-/entrypoint",
     "params": [
       {
         "type": {
@@ -217,15 +264,16 @@
       "filename": "singleton.js",
       "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
     },
-    "order": 6
+    "order": 7
   },
   {
-    "id": "workers",
-    "longname": "workers",
+    "id": "module:@the-/entrypoint.workers",
+    "longname": "module:@the-/entrypoint.workers",
     "name": "workers",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Register service workers",
+    "memberof": "module:@the-/entrypoint",
     "params": [
       {
         "type": {
@@ -251,15 +299,16 @@
       "filename": "workers.js",
       "path": "/Users/okuni/Projects/the/packages/entrypoint/lib"
     },
-    "order": 7
+    "order": 8
   },
   {
-    "id": "createStyleElement",
-    "longname": "createStyleElement",
+    "id": "module:@the-/entrypoint.helpers.createStyleElement",
+    "longname": "module:@the-/entrypoint.helpers.createStyleElement",
     "name": "createStyleElement",
     "kind": "function",
-    "scope": "global",
+    "scope": "static",
     "description": "Create Style element",
+    "memberof": "module:@the-/entrypoint.helpers",
     "returns": [
       {
         "type": {
@@ -274,6 +323,6 @@
       "filename": "createStyleElement.js",
       "path": "/Users/okuni/Projects/the/packages/entrypoint/lib/helpers"
     },
-    "order": 8
+    "order": 9
   }
 ]

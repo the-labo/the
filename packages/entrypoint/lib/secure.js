@@ -1,5 +1,6 @@
 /**
  * Make sure to be secure
+ * @memberof module:@the-/entrypoint
  * @function secure
  * @param {Object} [options={}] - Optional settings
  * @returns {boolean} Redirect triggered
@@ -8,7 +9,7 @@
 
 const { get } = require('@the-/window')
 
-/** @lends secure */
+/** @lends module:@the-/entrypoint.secure */
 function secure(options = {}) {
   const {
     from = 'http:',
