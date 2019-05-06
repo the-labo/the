@@ -6,6 +6,11 @@
  * @param {function()} Class - Class to mix
  * @returns {function()} Mixed class
  */
+/**
+ * @memberOf module:@the-/mixin-scene.withQuery
+ * @inner
+ * @class WithQueryMixed
+ */
 'use strict'
 
 const { cleanup } = require('asobj')
@@ -16,7 +21,9 @@ const injectProperties = require('./helpers/injectProperties')
 
 /** @lends module:@the-/mixin-scene.withQuery */
 const withQuery = asClassMixin((Class) => {
-  injectProperties(Class, {
+  injectProperties(Class,
+  /** @lends module:@the-/mixin-scene.withQuery~WithQueryMixed */
+    {
     /**
      * Get query from search
      * @param {string} [search=location.search]

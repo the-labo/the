@@ -20,8 +20,7 @@ const injectProperties = require('./helpers/injectProperties')
 const withResult = asClassMixin((Class) => {
   injectProperties(
     Class,
-    /** module:@the-/mixin-scene.withResult~WithResultMixed */
-
+    /** @lends module:@the-/mixin-scene.withResult~WithResultMixed */
     {
       /**
        * Do action and store result
@@ -49,7 +48,7 @@ const withResult = asClassMixin((Class) => {
 
 module.exports = Object.assign(
   withResult,
-  /** @lends withResult */
+  /** @lends module:@the-/mixin-scene.withResult */
   {
     save: asMethodWrap((method) => {
       return async function resultSave(...args) {

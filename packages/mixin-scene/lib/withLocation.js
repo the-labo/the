@@ -5,6 +5,11 @@
  * @param {function()} Class - Class to mix
  * @returns {function()} Mixed class
  */
+/**
+ * @memberOf module:@the-/mixin-scene.withLocation
+ * @inner
+ * @class WithLocationMixed
+ */
 'use strict'
 
 const asleep = require('asleep')
@@ -14,7 +19,9 @@ const injectProperties = require('./helpers/injectProperties')
 
 /** @lends module:@the-/mixin-scene.withLocation */
 const withLocation = asClassMixin((Class) => {
-  injectProperties(Class, {
+  injectProperties(Class,
+  /** @lends module:@the-/mixin-scene.withLocation~WithLocationMixed */  
+    {
     /**
      * Change location to url
      * @param {string} href

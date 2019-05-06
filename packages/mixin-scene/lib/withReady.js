@@ -6,7 +6,7 @@
  * @returns {function()} Mixed class
  */
 /**
- * @memberOf module:@the-/mixin-scene.withReady
+ * @memberof module:@the-/mixin-scene.withReady
  * @inner
  * @class WithReadyMixed
  */
@@ -18,51 +18,53 @@ const injectProperties = require('./helpers/injectProperties')
 
 /** @lends module:@the-/mixin-scene.withReady */
 const withReady = asClassMixin((Class) => {
-  injectProperties(Class,
+  injectProperties(
+    Class,
     /** @lends module:@the-/mixin-scene.withReady~WithReadyMixed */
     {
-    /**
-     * Do only if ready
-     * @param {Function} task
-     * @returns {Promise<*>}
-     */
-    async ifReady(task) {
-      if (this.isReady) {
-        return task()
-      }
-    },
-    /**
-     * Get is ready or not
-     * @property {boolean} isReady
-     */
-    isReady: {
-      get() {
-        return this.get('ready')
+      /**
+       * Do only if ready
+       * @param {Function} task
+       * @returns {Promise<*>}
+       */
+      async ifReady(task) {
+        if (this.isReady) {
+          return task()
+        }
+      },
+      /**
+       * Get is ready or not
+       * @property {boolean} isReady
+       */
+      isReady: {
+        get() {
+          return this.get('ready')
+        },
+      },
+      /**
+       * Set ready when done
+       * @param {Function} task
+       * @returns {Promise<*>}
+       */
+      async readyWhen(task) {
+        try {
+          return task()
+        } finally {
+          this.set({ ready: true })
+        }
+      },
+      /**
+       * Do unless ready
+       * @param {Function} task
+       * @returns {Promise<*>}
+       */
+      async unlessReady(task) {
+        if (!this.isReady) {
+          return task()
+        }
       },
     },
-    /**
-     * Set ready when done
-     * @param {Function} task
-     * @returns {Promise<*>}
-     */
-    async readyWhen(task) {
-      try {
-        return task()
-      } finally {
-        this.set({ ready: true })
-      }
-    },
-    /**
-     * Do unless ready
-     * @param {Function} task
-     * @returns {Promise<*>}
-     */
-    async unlessReady(task) {
-      if (!this.isReady) {
-        return task()
-      }
-    },
-  })
+  )
 })
 
 module.exports = Object.assign(
