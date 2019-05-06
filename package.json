@@ -44,7 +44,7 @@
     "@babel/preset-react": "7.0.0",
     "@babel/runtime": "^7.4.2",
     "@okunishinishi/fixpack": "^3.0.1",
-    "@the-/code": "^15.4.25",
+    "@the-/code": "^15.4.29",
     "@the-/eslint-config-jsdoc": "^15.4.6",
     "@the-/eslint-config-prettier": "^15.4.4",
     "@the-/eslint-config-standard": "^15.4.1",

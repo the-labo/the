@@ -649,6 +649,18 @@ console.log(j)
       `,
     )
   })
+  it('Cleanup unused destructing 3', async () => {
+    equal(
+      await processJSUnused(`
+const {a,b} = x[0]
+console.log({...{a}})
+      `),
+      `
+const {a,} = x[0]
+console.log({...{a}})
+      `,
+    )
+  })
 })
 
 /* global describe, before, after, it */

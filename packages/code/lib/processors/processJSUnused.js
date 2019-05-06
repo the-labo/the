@@ -37,6 +37,7 @@ function processJSUnused(content, options = {}) {
     const asPropKey = finder
       .findByTypes(Context, [NodeTypes.ObjectProperty])
       .filter((prop) => !prop.computed)
+      .filter((prop) => !prop.shorthand)
       .map((prop) => prop.key)
       .filter((property) => property.type === NodeTypes.Identifier)
     const startsToSkip = new Set([
