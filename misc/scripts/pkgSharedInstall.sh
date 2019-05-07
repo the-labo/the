@@ -1,5 +1,6 @@
 #!/bin/bash
-# Install deps if needed
+#
+# Install on root deps if needed
 
 set -eu
 

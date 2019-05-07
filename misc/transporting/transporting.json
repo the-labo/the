@@ -511,6 +511,10 @@
     "kind": "ui",
     "name": "ui-video"
   },
+  "the-video-converter": {
+    "kind": "lib",
+    "name": "video-converter"
+  },
   "the-view": {
     "kind": "ui",
     "name": "ui-view"

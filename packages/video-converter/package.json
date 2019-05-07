@@ -1,0 +1,46 @@
+{
+  "name": "@the-/video-converter",
+  "description": "Video file converter",
+  "version": "15.4.3",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "browser": "shim",
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.17",
+    "@ffprobe-installer/ffprobe": "^1.0.10",
+    "@the-/assert": "^15.4.1",
+    "@the-/tmp": "^15.4.5",
+    "asfs": "^2.2.3",
+    "filecopy": "^4.0.2",
+    "video-extensions": "^1.1.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/video-converter#readme",
+  "keywords": [
+    "lib",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
+  "scripts": {
+    "build": "../../misc/scripts/pkgBuild.js",
+    "doc": "../../misc/scripts/pkgDoc.js",
+    "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
+    "prepublishOnly": "npm run test",
+    "test": "../../misc/scripts/pkgTest.js"
+  }
+}
