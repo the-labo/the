@@ -14,7 +14,12 @@ const _tmpl = require('./_tmpl')
 
 /** @lends module:@the-/templates.Dialogs */
 function Dialogs(config) {
-  let { dirname, from = '../stateful', pattern = [`**/*Dialog.jsx`] } = config
+  let {
+    dirname,
+    from = '../stateful',
+    memberof = 'ui',
+    pattern = [`**/*Dialog.jsx`],
+  } = config
 
   const components = aglob
     .sync(pattern, { cwd: dirname })
@@ -29,6 +34,7 @@ function Dialogs(config) {
     data: {
       components,
       from,
+      memberof,
     },
     force: true,
     mode: '444',

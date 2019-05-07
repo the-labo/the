@@ -1,5 +1,6 @@
 /**
  * Mixins for mp4
+ * @memberof module:@the-/video-converter.mixins
  * @function mp4Mix
  */
 'use strict'
@@ -7,11 +8,15 @@
 const path = require('path')
 const theAssert = require('@the-/assert')
 
-/** @lends mp4Mix */
+/** @lends module:@the-/video-converter..mixins.mp4Mix */
 function mp4Mix(Class) {
   const assert = theAssert('TheVideoConverter<MP4Mixed>')
 
-  /** @class MP4Mixed */
+  /**
+   * @class MP4Mixed
+   * @inner
+   * @memberOf module:@the-/video-converter.mixins.mp4Mix
+   */
   class MP4Mixed extends Class {
     /**
      * Convert into mp4

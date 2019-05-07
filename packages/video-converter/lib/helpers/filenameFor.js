@@ -1,13 +1,14 @@
 /**
  * Change file extension
- * @function changeExtension
+ * @memberof module:@the-/video-converter
+ * @function filenameFor
  * @param {Object} config
  */
 'use strict'
 
 const path = require('path')
 
-/** @lends filenameFor */
+/** @lends module:@the-/video-converter.filenameFor */
 function filenameFor(filename, config = {}) {
   const { extname = path.extname(filename), suffix = '' } = config
   const dirname = path.dirname(filename)

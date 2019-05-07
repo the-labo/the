@@ -90,21 +90,23 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 
-- global
-  - [changeExtension(config)](./doc/api/api.md#changeExtension)
-  - [create(args)](./doc/api/api.md#create)
-  - [isVideoSrc()](./doc/api/api.md#isVideoSrc)
-  - [mp4Mix()](./doc/api/api.md#mp4Mix)
-  - [MP4Mixed](./doc/api/api.md#MP4Mixed)
-  - [TheVideoConverter](./doc/api/api.md#TheVideoConverter)
+- module:@the-/video-converter
+  - [.create(args)](./doc/api/api.md#module_@the-/video-converter.create)
+  - [.default()](./doc/api/api.md#module_@the-/video-converter.default)
+  - [.filenameFor(config)](./doc/api/api.md#module_@the-/video-converter.filenameFor)
+  - [.isVideoSrc()](./doc/api/api.md#module_@the-/video-converter.isVideoSrc)
+  - [.TheVideoConverter](./doc/api/api.md#module_@the-/video-converter.TheVideoConverter)
+- module:@the-/video-converter.mixins
+  - [.mp4Mix()](./doc/api/api.md#module_@the-/video-converter.mixins.mp4Mix)
+- module:@the-/video-converter.mixins.mp4Mix
+  - [~MP4Mixed](./doc/api/api.md#module_@the-/video-converter.mixins.mp4Mix~MP4Mixed)
+- module:@the-/video-converter.TheVideoConverter
+  - [#convert(src,dest,options)](./doc/api/api.md#module_@the-/video-converter.TheVideoConverter#convert)
+  - [#inspect(filename,options)](./doc/api/api.md#module_@the-/video-converter.TheVideoConverter#inspect)
+  - [#isVideoSrc(src)](./doc/api/api.md#module_@the-/video-converter.TheVideoConverter#isVideoSrc)
+  - [#process(src,options)](./doc/api/api.md#module_@the-/video-converter.TheVideoConverter#process)
 - MP4Mixed
   - [#convertIntoMP4(src,dest,options)](./doc/api/api.md#MP4Mixed#convertIntoMP4)
-- TheVideoConverter
-  - [#convert(src,dest,options)](./doc/api/api.md#TheVideoConverter#convert)
-  - [#convertIntoMP4(src,dest,options)](./doc/api/api.md#TheVideoConverter#convertIntoMP4)
-  - [#inspect(filename,options)](./doc/api/api.md#TheVideoConverter#inspect)
-  - [#isVideoSrc(src)](./doc/api/api.md#TheVideoConverter#isVideoSrc)
-  - [#process(src,options)](./doc/api/api.md#TheVideoConverter#process)
 
 See [API Guide](./doc/api/api.md) for more detail
 

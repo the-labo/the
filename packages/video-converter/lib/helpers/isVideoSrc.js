@@ -1,15 +1,15 @@
 /**
+ * @memberof module:@the-/video-converter
  * @function isVideoSrc
  */
 'use strict'
 
 const path = require('path')
-const url = require('url')
 const videoExtensions = require('video-extensions')
 
-/** @lends isVideoSrc */
+/** @lends module:@the-/video-converter.isVideoSrc */
 function isVideoSrc(src) {
-  const { pathname } = url.parse(src)
+  const { pathname } = new URL(src, 'relative:///')
   const extension = path.extname(pathname).replace(/^\./, '')
   return videoExtensions.includes(extension)
 }

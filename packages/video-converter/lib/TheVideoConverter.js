@@ -1,7 +1,8 @@
 /**
  * Video converter
+ * @memberof module:@the-/video-converter
  * @class TheVideoConverter
- * @augments MP4Mixed
+ * @augments module:@the-/video-converter.mixins.mp4Mix~MP4Mixed
  */
 'use strict'
 
@@ -19,7 +20,7 @@ const assert = theAssert('TheVideoConverter')
 
 const TheVideoConverterBase = [mp4Mix].reduce((C, mix) => mix(C), class Base {})
 
-/** @lends TheVideoConverter */
+/** @lends module:@the-/video-converter.TheVideoConverter */
 class TheVideoConverter extends TheVideoConverterBase {
   /**
    * Detect
@@ -72,6 +73,7 @@ class TheVideoConverter extends TheVideoConverterBase {
    */
   async inspect(filename, options = {}) {
     const { logLevel = 'panic' } = options
+    assert(filename)
     return new Promise((resolve, reject) => {
       exec(
         `${
