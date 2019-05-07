@@ -24,8 +24,8 @@ const TheVideoConverterBase = [mp4Mix].reduce((C, mix) => mix(C), class Base {})
 class TheVideoConverter extends TheVideoConverterBase {
   /**
    * Detect
-   * @param src
-   * @returns {*}
+   * @param {string} src
+   * @returns {Boolean}
    */
   isVideoSrc(src) {
     return isVideoSrc(src)

@@ -26,7 +26,7 @@
     "@the-/demo-lib": "file:../demo-lib",
     "@the-/demo-ui": "file:../demo-ui",
     "injectmock": "^2.0.0",
-    "pon-demo-site": "^8.0.3"
+    "pon-demo-site": "^8.0.7"
   },
   "engines": {
     "node": ">=10",
