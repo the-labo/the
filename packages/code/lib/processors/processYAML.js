@@ -40,7 +40,17 @@ const _processYAMLNode = (node) => {
 async function processYAML(content) {
   const doc = YAML.parseDocument(content)
   doc.contents = _processYAMLNode(doc.contents)
-  return String(doc)
+  try {
+    return String(doc)
+  } catch (e) {
+    if (/Alias node must be after source node/.test(e.message)) {
+      console.warn(
+        `[@the-/code][processYAML] Failed to sort yaml due to anchor/alias order problem (see https://github.com/yaml/yaml/issues/12)`,
+      )
+      return content
+    }
+    throw e
+  }
 }
 
 module.exports = processYAML

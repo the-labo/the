@@ -5,7 +5,7 @@
     "name": "@the-/code",
     "kind": "module",
     "description": "Code formatter of the-frameworks",
-    "version": "15.4.36",
+    "version": "15.4.37",
     "license": "MIT",
     "typicalname": "code",
     "meta": {

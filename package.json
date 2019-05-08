@@ -52,7 +52,7 @@
     "@the-/script-build": "^15.4.14",
     "@the-/script-doc": "^15.4.3",
     "@the-/script-test": "^15.4.0",
-    "@the-/templates": "^15.4.12",
+    "@the-/templates": "^15.4.15",
     "@the-/util-file": "^15.4.3",
     "aglob": "^3.0.2",
     "babel-eslint": "^10.0.1",

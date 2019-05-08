@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { equal } = require('assert').strict
+const { equal, doesNotReject } = require('assert').strict
 const processYAML = require('../lib/processors/processYAML')
 
 describe('process-yam-l', () => {
@@ -58,6 +58,18 @@ a: # this is a
     x: 2
 b: this is b
 `,
+    )
+  })
+
+  it('With anchor', async () => {
+    await doesNotReject(() =>
+      processYAML(`
+x: 
+  b: &bbb
+    n: 123
+  a: 
+    <<: *bbb
+`),
     )
   })
 })
