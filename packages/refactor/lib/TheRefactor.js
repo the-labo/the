@@ -54,9 +54,9 @@ class TheRefactor {
     const { cwd, ignore } = options
     return this._each(
       pattern,
-      ({ content }) => {
+      ({ content, filename }) => {
         return {
-          content: converter(content),
+          content: converter(content, { filename }),
         }
       },
       { cwd, ignore },
