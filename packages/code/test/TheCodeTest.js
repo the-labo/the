@@ -206,10 +206,20 @@ describe('the-code', () => {
     await code.formatFile(target)
   })
 
-  it('S®2rc19', async () => {
+  it('Src19', async () => {
     const target = `${__dirname}/../tmp/dest19.jsx`
     await filecopy(
       `${__dirname}/../misc/mocks/src19.jsx`,
+      target,
+    )
+    const code = new TheCode()
+    await code.formatFile(target)
+  })
+
+  it('Src20', async () => {
+    const target = `${__dirname}/../tmp/dest20.js`
+    await filecopy(
+      `${__dirname}/../misc/mocks/src20.js`,
       target,
     )
     const code = new TheCode()

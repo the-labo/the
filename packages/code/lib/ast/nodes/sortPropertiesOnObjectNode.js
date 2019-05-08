@@ -46,7 +46,7 @@ const _weightProperty = ({ computed, key }) => {
 }
 
 /** @lends module:@the-/code.ast.nodes.sortPropertiesOnObjectNode */
-function sortPropertiesOnObjectNode(obj, { swap }) {
+function sortPropertiesOnObjectNode(obj, { get, swap }) {
   const { properties } = obj
   if (!properties) {
     return
@@ -82,8 +82,8 @@ function sortPropertiesOnObjectNode(obj, { swap }) {
       if (aWeight !== bWeight) {
         return aWeight - bWeight
       }
-      const aName = _nameOfPropKey(a.key)
-      const bName = _nameOfPropKey(b.key)
+      const aName = _nameOfPropKey(a.key) || get([a.key.start, a.key.end])
+      const bName = _nameOfPropKey(b.key) || get([b.key.start, b.key.end])
       return compareStrings(aName, bName)
     })
     const rangeFor = (PropertyNode) => {

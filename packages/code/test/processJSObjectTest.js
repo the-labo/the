@@ -342,6 +342,13 @@ const x =  {'': {}, a:{}}
       `,
     )
   })
+
+  it('Dynamic keys', async () => {
+    equal(
+      await processJSObject('const x = {[`${n+1}/bbb`]:1, [`${n+1}/aaa`]:2}'),
+      'const x = {[`${n+1}/aaa`]:2, [`${n+1}/bbb`]:1}',
+    )
+  })
 })
 
 /* global describe, before, after, it */

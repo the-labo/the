@@ -26,11 +26,12 @@ const contentAccess = require('../helpers/contentAccess')
 function processJSObject(content, options = {}) {
   return applyConverter(content, (content) => {
     const parsed = parse(content, options)
-    const { replace, swap } = contentAccess(content)
+    const { get, replace, swap } = contentAccess(content)
 
     function convertObjectNode(ObjectNode) {
       const converted =
         sortPropertiesOnObjectNode(ObjectNode, {
+          get,
           swap,
         }) ||
         cleanupRedundantAliasOnObjectPatternNode(ObjectNode, {
