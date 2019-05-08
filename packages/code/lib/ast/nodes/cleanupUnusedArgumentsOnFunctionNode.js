@@ -31,6 +31,9 @@ function cleanupUnusedArgumentsOnFunctionNode(
     left: '(',
     right: ')',
   })
+  if (paramsRange[0] < 0) {
+    return replace([firstParam.start, firstParam.end], '()')
+  }
   const start = prevParam ? prevParam.end : lastParam.start
   const end = paramsRange[1] - 1
   return replace([start, end], '')

@@ -661,6 +661,11 @@ console.log({...{a}})
       `,
     )
   })
+
+  it('Cleanup unused single arg arrow func', async () => {
+    equal(await processJSUnused(`const x = (a) => 1`), 'const x = () => 1')
+    equal(await processJSUnused(`const x = a => 1`), 'const x = () => 1')
+  })
 })
 
 /* global describe, before, after, it */
