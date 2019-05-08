@@ -5,8 +5,45 @@
 ## @the-/util-path
 Utility for file path
 
-**Version**: 15.4.2  
+**Version**: 15.4.4  
 **License**: MIT  
+
+* [@the-/util-path](#module_@the-/util-path)
+    * [.helpers](#module_@the-/util-path.helpers) : <code>object</code>
+        * [.exists(filename)](#module_@the-/util-path.helpers.exists) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.findupSync(filename, [options])](#module_@the-/util-path.findupSync) ⇒ <code>string</code>
+    * [.findupDir(basedir)](#module_@the-/util-path.findupDir)
+
+<a name="module_@the-/util-path.helpers"></a>
+
+### utilPath.helpers : <code>object</code>
+Helper functions
+
+**Kind**: static namespace of [<code>@the-/util-path</code>](#module_@the-/util-path)  
+**Access**: protected  
+<a name="module_@the-/util-path.helpers.exists"></a>
+
+#### helpers.exists(filename) ⇒ <code>Promise.&lt;boolean&gt;</code>
+Check file exists
+
+**Kind**: static method of [<code>helpers</code>](#module_@the-/util-path.helpers)  
+
+| Param | Type |
+| --- | --- |
+| filename | <code>string</code> | 
+
+<a name="module_@the-/util-path.findupSync"></a>
+
+### utilPath.findupSync(filename, [options]) ⇒ <code>string</code>
+Find up file
+
+**Kind**: static method of [<code>@the-/util-path</code>](#module_@the-/util-path)  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| filename | <code>string</code> |  | to find up |
+| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
+
 <a name="module_@the-/util-path.findupDir"></a>
 
 ### utilPath.findupDir(basedir)
@@ -17,3 +54,4 @@ Find up directory contains path
 | Param | Type | Description |
 | --- | --- | --- |
 | basedir | <code>string</code> | Base directory |
+

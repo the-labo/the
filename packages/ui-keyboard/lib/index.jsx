@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-keyboard
  * @typicalname uiKeyboard
- * @version 15.4.3
+ * @version 15.4.4
  * @description Keyboard component
  */
 'use strict'

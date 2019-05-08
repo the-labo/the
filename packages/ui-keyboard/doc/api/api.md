@@ -29,7 +29,7 @@
 ## @the-/ui-keyboard
 Keyboard component
 
-**Version**: 15.4.3  
+**Version**: 15.4.4  
 <a name="TheKeyboard"></a>
 
 ## TheKeyboard
@@ -41,4 +41,4 @@ Keyboard component
 ## TheKeyboardStyle()
 Style for TheKeyboard
 
-**Kind**: global function
+**Kind**: global function  
