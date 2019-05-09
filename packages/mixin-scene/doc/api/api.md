@@ -5,7 +5,7 @@
 ## @the-/mixin-scene
 Mixins for the-scene
 
-**Version**: 15.4.6  
+**Version**: 16.0.0  
 **License**: MIT  
 
 * [@the-/mixin-scene](#module_@the-/mixin-scene)
@@ -21,9 +21,6 @@ Mixins for the-scene
             * [.showError(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showError)
             * [.showInfo(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showInfo)
             * [.showWarn(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showWarn)
-    * [.withBack(Class)](#module_@the-/mixin-scene.withBack) ⇒ <code>function</code>
-        * [~WithBackMixed](#module_@the-/mixin-scene.withBack..WithBackMixed)
-            * [.goBack()](#module_@the-/mixin-scene.withBack..WithBackMixed.goBack)
     * [.withBusy(Class)](#module_@the-/mixin-scene.withBusy) ⇒ <code>function</code>
         * [~WithBusyMixed](#module_@the-/mixin-scene.withBusy..WithBusyMixed)
     * [.withEntities(Class)](#module_@the-/mixin-scene.withEntities) ⇒ <code>function</code>
@@ -42,7 +39,6 @@ Mixins for the-scene
             * [.resetEntry()](#module_@the-/mixin-scene.withEntry..WithEntryMixed.resetEntry)
             * [.setEntry(newValues)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.setEntry)
             * [.setEntryErrors(errors)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.setEntryErrors)
-    * [.withFailure(Class)](#module_@the-/mixin-scene.withFailure) ⇒ <code>function</code>
     * [.withFilter(Class)](#module_@the-/mixin-scene.withFilter) ⇒ <code>function</code>
         * [~WithFilterMixed](#module_@the-/mixin-scene.withFilter..WithFilterMixed)
             * [.getFilter()](#module_@the-/mixin-scene.withFilter..WithFilterMixed.getFilter) ⇒ <code>Object</code>
@@ -215,33 +211,6 @@ Show warn toast
 | --- | --- |
 | message | <code>string</code> | 
 
-<a name="module_@the-/mixin-scene.withBack"></a>
-
-### mixinScene.withBack(Class) ⇒ <code>function</code>
-withBack mixin
-
-**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
-
-* [.withBack(Class)](#module_@the-/mixin-scene.withBack) ⇒ <code>function</code>
-    * [~WithBackMixed](#module_@the-/mixin-scene.withBack..WithBackMixed)
-        * [.goBack()](#module_@the-/mixin-scene.withBack..WithBackMixed.goBack)
-
-<a name="module_@the-/mixin-scene.withBack..WithBackMixed"></a>
-
-#### withBack~WithBackMixed
-**Kind**: inner class of [<code>withBack</code>](#module_@the-/mixin-scene.withBack)  
-<a name="module_@the-/mixin-scene.withBack..WithBackMixed.goBack"></a>
-
-##### WithBackMixed.goBack()
-Go Back
-
-**Kind**: static method of [<code>WithBackMixed</code>](#module_@the-/mixin-scene.withBack..WithBackMixed)  
 <a name="module_@the-/mixin-scene.withBusy"></a>
 
 ### mixinScene.withBusy(Class) ⇒ <code>function</code>
@@ -450,18 +419,6 @@ Set entry errors
 | Param | Type |
 | --- | --- |
 | errors | <code>Object</code> | 
-
-<a name="module_@the-/mixin-scene.withFailure"></a>
-
-### mixinScene.withFailure(Class) ⇒ <code>function</code>
-withFailure mixin
-
-**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
 
 <a name="module_@the-/mixin-scene.withFilter"></a>
 
@@ -1009,3 +966,4 @@ withValues mixin
 | Param | Type | Description |
 | --- | --- | --- |
 | Class | <code>function</code> | Class to mix |
+

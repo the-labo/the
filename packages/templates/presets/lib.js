@@ -8,7 +8,12 @@ const path = require('path')
 const { Readme, dir, test } = require('../lib')
 const { camelcase } = require('stringcase')
 
-exports.Readme = (dirname) => {
+exports.Readme = (dirname, options = {}) => {
+  const {
+    jsdocPath = './doc/api/jsdoc',
+    jsdocLink = './doc/api/api.md',
+    linksPath = './doc/links',
+  } = options
   const requireIfPossible = (id) => {
     try {
       return require(id)
@@ -18,8 +23,8 @@ exports.Readme = (dirname) => {
   }
 
   const pkg = requireIfPossible(path.resolve(dirname, 'package.json'))
-  const links = requireIfPossible(path.resolve(dirname, './doc/links'))
-  const jsdoc = requireIfPossible(path.resolve(dirname, './doc/api/jsdoc'))
+  const links = requireIfPossible(path.resolve(dirname, linksPath))
+  const jsdoc = requireIfPossible(path.resolve(dirname, jsdocPath))
   return Readme({
     badges: { npm: !pkg.private },
     links: links,
@@ -28,7 +33,7 @@ exports.Readme = (dirname) => {
     repo: pkg.repository,
     sections: 'doc/readme/*.md.hbs',
     api: jsdoc && {
-      path: './doc/api/api.md',
+      path: jsdocLink,
       jsdoc: jsdoc,
     },
   })

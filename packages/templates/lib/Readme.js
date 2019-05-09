@@ -56,7 +56,9 @@ function readmeBud(config = {}) {
       api: api && {
         links: api.jsdoc
           .filter(({ kind }) =>
-            ['class', 'enum', 'typedef', 'function'].includes(kind),
+            ['class', 'enum', 'typedef', 'function', 'namespace'].includes(
+              kind,
+            ),
           )
           .sort((a, b) => {
             return a.longname.localeCompare(b.longname)
