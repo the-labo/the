@@ -6,11 +6,14 @@
  */
 'use strict'
 
+const path = require('path')
 const prettier = require('prettier')
 
-
 /** @lends module:@the-/code.processors.processJSPrettier */
-async function processJSPrettier(content) {
+async function processJSPrettier(content, { filename } = {}) {
+  const config = filename
+    ? await prettier.resolveConfig(path.dirname(filename))
+    : {}
   return prettier.format(content, {
     arrowParens: 'always',
     jsxBracketSameLine: false,
@@ -20,6 +23,7 @@ async function processJSPrettier(content) {
     semi: false,
     singleQuote: true,
     trailingComma: 'all',
+    ...(config || {}),
   })
 }
 
