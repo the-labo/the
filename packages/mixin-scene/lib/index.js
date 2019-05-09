@@ -12,11 +12,9 @@ const bindDefaults_ = require('./bindDefaults')
 const bindScope_ = require('./bindScope')
 const helpers_ = require('./helpers')
 const siteToast_ = require('./siteToast')
-const withBack_ = require('./withBack')
 const withBusy_ = require('./withBusy')
 const withEntities_ = require('./withEntities')
 const withEntry_ = require('./withEntry')
-const withFailure_ = require('./withFailure')
 const withFilter_ = require('./withFilter')
 const withForm_ = require('./withForm')
 const withHistory_ = require('./withHistory')
@@ -36,11 +34,9 @@ exports.bindDefaults = bindDefaults_
 exports.bindScope = bindScope_
 exports.helpers = helpers_
 exports.siteToast = siteToast_
-exports.withBack = withBack_
 exports.withBusy = withBusy_
 exports.withEntities = withEntities_
 exports.withEntry = withEntry_
-exports.withFailure = withFailure_
 exports.withFilter = withFilter_
 exports.withForm = withForm_
 exports.withHistory = withHistory_
@@ -60,11 +56,9 @@ module.exports = {
   bindScope: bindScope_,
   helpers: helpers_,
   siteToast: siteToast_,
-  withBack: withBack_,
   withBusy: withBusy_,
   withEntities: withEntities_,
   withEntry: withEntry_,
-  withFailure: withFailure_,
   withFilter: withFilter_,
   withForm: withForm_,
   withHistory: withHistory_,

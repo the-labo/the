@@ -25,7 +25,9 @@
     "params": [
       {
         "type": {
-          "names": ["Object"]
+          "names": [
+            "Object"
+          ]
         },
         "optional": true,
         "defaultvalue": "{}",
@@ -51,14 +53,18 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "description": "file name",
         "name": "pattern"
       },
       {
         "type": {
-          "names": ["Object"]
+          "names": [
+            "Object"
+          ]
         },
         "optional": true,
         "defaultvalue": "{}",
@@ -69,7 +75,9 @@
     "returns": [
       {
         "type": {
-          "names": ["Promise.<Array>"]
+          "names": [
+            "Promise.<Array>"
+          ]
         }
       }
     ],
@@ -92,7 +100,9 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "name": "filename"
       }
@@ -100,7 +110,9 @@
     "returns": [
       {
         "type": {
-          "names": ["Promise.<undefined>"]
+          "names": [
+            "Promise.<undefined>"
+          ]
         }
       }
     ],
@@ -228,7 +240,9 @@
     "params": [
       {
         "type": {
-          "names": ["*"]
+          "names": [
+            "*"
+          ]
         },
         "variable": true,
         "name": "args"
@@ -237,7 +251,9 @@
     "returns": [
       {
         "type": {
-          "names": ["TheCode"]
+          "names": [
+            "TheCode"
+          ]
         }
       }
     ],
@@ -756,7 +772,9 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "name": "content"
       }
@@ -764,7 +782,9 @@
     "returns": [
       {
         "type": {
-          "names": ["Promise.<string>"]
+          "names": [
+            "Promise.<string>"
+          ]
         },
         "description": "processed"
       }
@@ -786,7 +806,9 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "name": "content"
       }
@@ -794,7 +816,9 @@
     "returns": [
       {
         "type": {
-          "names": ["Promise.<string>"]
+          "names": [
+            "Promise.<string>"
+          ]
         },
         "description": "processed"
       }
@@ -816,7 +840,9 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "name": "content"
       }
@@ -824,7 +850,9 @@
     "returns": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "description": "processed"
       }
@@ -846,7 +874,9 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "name": "content"
       }
@@ -854,7 +884,9 @@
     "returns": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "description": "processed"
       }
@@ -876,7 +908,9 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "name": "content"
       }
@@ -884,7 +918,9 @@
     "returns": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "description": "processed"
       }
@@ -906,7 +942,9 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "name": "content"
       }
@@ -914,7 +952,9 @@
     "returns": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "description": "processed"
       }
@@ -936,13 +976,17 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "name": "content"
       },
       {
         "type": {
-          "names": ["Object"]
+          "names": [
+            "Object"
+          ]
         },
         "optional": true,
         "defaultvalue": "{}",
@@ -967,7 +1011,9 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "name": "content"
       }
@@ -975,7 +1021,9 @@
     "returns": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "description": "processed"
       }
@@ -998,7 +1046,9 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "name": "content"
       }
@@ -1006,7 +1056,9 @@
     "returns": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "description": "processed"
       }
@@ -1029,7 +1081,9 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "name": "content"
       }
@@ -1037,7 +1091,9 @@
     "returns": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "description": "processed"
       }
@@ -1060,7 +1116,9 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "name": "content"
       }
@@ -1068,7 +1126,9 @@
     "returns": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "description": "processed"
       }
@@ -1104,7 +1164,9 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "name": "content"
       }
@@ -1112,7 +1174,9 @@
     "returns": [
       {
         "type": {
-          "names": ["Promise.<string>"]
+          "names": [
+            "Promise.<string>"
+          ]
         },
         "description": "processed"
       }
@@ -1135,7 +1199,9 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "name": "content"
       }
@@ -1143,7 +1209,9 @@
     "returns": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "description": "processed"
       }
@@ -1166,7 +1234,9 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "name": "content"
       }
@@ -1174,7 +1244,9 @@
     "returns": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "description": "processed"
       }
@@ -1197,7 +1269,9 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "name": "content"
       }
@@ -1205,7 +1279,9 @@
     "returns": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "description": "processed"
       }
@@ -1228,7 +1304,9 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "name": "content"
       }
@@ -1236,7 +1314,9 @@
     "returns": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "description": "processed"
       }
@@ -1259,7 +1339,9 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "name": "content"
       }
@@ -1267,7 +1349,9 @@
     "returns": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "description": "processed"
       }
@@ -1289,7 +1373,9 @@
     "params": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         },
         "name": "content"
       }
@@ -1297,7 +1383,9 @@
     "returns": [
       {
         "type": {
-          "names": ["string"]
+          "names": [
+            "string"
+          ]
         }
       }
     ],

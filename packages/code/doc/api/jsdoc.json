@@ -5,7 +5,7 @@
     "name": "@the-/code",
     "kind": "module",
     "description": "Code formatter of the-frameworks",
-    "version": "15.4.42",
+    "version": "15.4.44",
     "license": "MIT",
     "typicalname": "code",
     "meta": {
@@ -76,7 +76,7 @@
       }
     ],
     "meta": {
-      "lineno": 94,
+      "lineno": 96,
       "filename": "TheCode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib"
     },
@@ -111,7 +111,7 @@
       }
     ],
     "meta": {
-      "lineno": 108,
+      "lineno": 110,
       "filename": "TheCode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib"
     },

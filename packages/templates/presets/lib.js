@@ -21,7 +21,7 @@ exports.Readme = (dirname) => {
   const links = requireIfPossible(path.resolve(dirname, './doc/links'))
   const jsdoc = requireIfPossible(path.resolve(dirname, './doc/api/jsdoc'))
   return Readme({
-    badges: { npm: true },
+    badges: { npm: !pkg.private },
     links: links,
     overview: 'doc/overview.md',
     pkg,

@@ -8,6 +8,7 @@
 
 const prettier = require('prettier')
 
+
 /** @lends module:@the-/code.processors.processJSPrettier */
 async function processJSPrettier(content) {
   return prettier.format(content, {
