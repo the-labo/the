@@ -1,44 +1,49 @@
 [
   {
-    "id": "module:@the-/util-path",
-    "longname": "module:@the-/util-path",
-    "name": "@the-/util-path",
-    "kind": "module",
     "description": "Utility for file path",
-    "version": "15.4.4",
+    "id": "module:@the-/util-path",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "utilPath",
+    "longname": "module:@the-/util-path",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/util-path/lib"
     },
-    "order": 2
+    "name": "@the-/util-path",
+    "order": 2,
+    "typicalname": "utilPath",
+    "version": "15.4.4"
   },
   {
-    "id": "module:@the-/util-path.helpers",
-    "longname": "module:@the-/util-path.helpers",
-    "name": "helpers",
-    "kind": "namespace",
-    "scope": "static",
-    "description": "Helper functions",
-    "memberof": "module:@the-/util-path",
     "access": "protected",
+    "description": "Helper functions",
+    "id": "module:@the-/util-path.helpers",
+    "kind": "namespace",
+    "longname": "module:@the-/util-path.helpers",
+    "memberof": "module:@the-/util-path",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/util-path/lib/helpers"
     },
-    "order": 4
+    "name": "helpers",
+    "order": 4,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/util-path.findupSync",
-    "longname": "module:@the-/util-path.findupSync",
-    "name": "findupSync",
-    "kind": "function",
-    "scope": "static",
     "description": "Find up file",
+    "id": "module:@the-/util-path.findupSync",
+    "kind": "function",
+    "longname": "module:@the-/util-path.findupSync",
     "memberof": "module:@the-/util-path",
+    "meta": {
+      "filename": "findup.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/util-path/lib"
+    },
+    "name": "findupSync",
+    "order": 0,
     "params": [
       {
         "type": {
@@ -71,21 +76,21 @@
         "nullable": true
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "findup.js",
-      "path": "/Users/okuni/Projects/the/packages/util-path/lib"
-    },
-    "order": 0
+    "scope": "static"
   },
   {
-    "id": "module:@the-/util-path.findupDir",
-    "longname": "module:@the-/util-path.findupDir",
-    "name": "findupDir",
-    "kind": "function",
-    "scope": "static",
     "description": "Find up directory contains path",
+    "id": "module:@the-/util-path.findupDir",
+    "kind": "function",
+    "longname": "module:@the-/util-path.findupDir",
     "memberof": "module:@the-/util-path",
+    "meta": {
+      "filename": "findupDir.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/util-path/lib"
+    },
+    "name": "findupDir",
+    "order": 1,
     "params": [
       {
         "type": {
@@ -97,21 +102,21 @@
         "name": "basedir"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "findupDir.js",
-      "path": "/Users/okuni/Projects/the/packages/util-path/lib"
-    },
-    "order": 1
+    "scope": "static"
   },
   {
-    "id": "module:@the-/util-path.helpers.exists",
-    "longname": "module:@the-/util-path.helpers.exists",
-    "name": "exists",
-    "kind": "function",
-    "scope": "static",
     "description": "Check file exists",
+    "id": "module:@the-/util-path.helpers.exists",
+    "kind": "function",
+    "longname": "module:@the-/util-path.helpers.exists",
     "memberof": "module:@the-/util-path.helpers",
+    "meta": {
+      "filename": "exists.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/util-path/lib/helpers"
+    },
+    "name": "exists",
+    "order": 3,
     "params": [
       {
         "type": {
@@ -131,11 +136,6 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "exists.js",
-      "path": "/Users/okuni/Projects/the/packages/util-path/lib/helpers"
-    },
-    "order": 3
+    "scope": "static"
   }
 ]

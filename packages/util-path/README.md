@@ -87,6 +87,9 @@ tryExample().catch((err) => console.error(err))
 
 - module:@the-/util-path
   - [.findupDir(basedir)](./doc/api/api.md#module_@the-/util-path.findupDir)
+  - [.findupSync(filename,options)](./doc/api/api.md#module_@the-/util-path.findupSync)
+- module:@the-/util-path.helpers
+  - [.exists(filename)](./doc/api/api.md#module_@the-/util-path.helpers.exists)
 
 See [API Guide](./doc/api/api.md) for more detail
 

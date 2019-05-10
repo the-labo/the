@@ -5,7 +5,7 @@
 ## @the-/lint
 Lint of the-frameworks
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/lint](#module_@the-/lint)

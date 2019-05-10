@@ -152,4 +152,4 @@ Change file extension
 <a name="module_@the-/video-converter.isVideoSrc"></a>
 
 ### videoConverter.isVideoSrc()
-**Kind**: static method of [<code>@the-/video-converter</code>](#module_@the-/video-converter)  
+**Kind**: static method of [<code>@the-/video-converter</code>](#module_@the-/video-converter)

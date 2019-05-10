@@ -41,4 +41,4 @@ Table for the-components
 ## TheTableStyle()
 Style for TheTable
 
-**Kind**: global function  
+**Kind**: global function

@@ -50,4 +50,4 @@ ToastGroup
 ## TheToastStyle()
 Style for TheToast
 
-**Kind**: global function  
+**Kind**: global function

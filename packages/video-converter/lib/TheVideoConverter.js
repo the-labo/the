@@ -25,7 +25,7 @@ class TheVideoConverter extends TheVideoConverterBase {
   /**
    * Detect
    * @param {string} src
-   * @returns {Boolean}
+   * @returns {boolean}
    */
   isVideoSrc(src) {
     return isVideoSrc(src)

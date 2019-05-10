@@ -130,4 +130,4 @@ Style for TheInput
 <a name="TheInputUploadStyleData"></a>
 
 ## TheInputUploadStyleData()
-**Kind**: global function  
+**Kind**: global function

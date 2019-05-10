@@ -38,7 +38,7 @@ function parse(content, options = {}) {
       sourceType,
     })
   } catch (e) {
-    throw new Error(`[TheCode] ${e.message}
+    throw new Error(`[@the-/ast] ${e.message}
 
 \`\`\`javascript
 ${content}

@@ -1,150 +1,150 @@
 [
   {
+    "description": "Embed camera component",
     "id": "module:@the-/ui-cam",
-    "longname": "module:@the-/ui-cam",
-    "name": "@the-/ui-cam",
     "kind": "module",
-    "description": "Embed camera component",
-    "version": "15.4.3",
-    "typicalname": "uiCam",
+    "longname": "module:@the-/ui-cam",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
     },
-    "order": 0
+    "name": "@the-/ui-cam",
+    "order": 0,
+    "typicalname": "uiCam",
+    "version": "15.4.3"
   },
   {
+    "description": "Embed camera component",
     "id": "TheCam",
+    "kind": "class",
     "longname": "TheCam",
-    "name": "TheCam",
-    "kind": "class",
-    "scope": "global",
-    "description": "Embed camera component",
     "meta": {
+      "filename": "TheCam.jsx",
       "lineno": 19,
-      "filename": "TheCam.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
     },
-    "order": 1
+    "name": "TheCam",
+    "order": 1,
+    "scope": "global"
   },
   {
-    "id": "TheCamInput",
-    "longname": "TheCamInput",
-    "name": "TheCamInput",
-    "kind": "class",
-    "scope": "global",
     "description": "Embed camera component",
+    "id": "TheCamInput",
+    "kind": "class",
+    "longname": "TheCamInput",
     "meta": {
-      "lineno": 21,
       "filename": "TheCamInput.jsx",
+      "lineno": 21,
       "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
     },
-    "order": 7
+    "name": "TheCamInput",
+    "order": 7,
+    "scope": "global"
   },
   {
-    "id": "TheCamStyle",
-    "longname": "TheCamStyle",
-    "name": "TheCamStyle",
-    "kind": "function",
-    "scope": "global",
     "description": "Style for TheCam",
-    "params": [],
+    "id": "TheCamStyle",
+    "kind": "function",
+    "longname": "TheCamStyle",
     "meta": {
-      "lineno": 12,
       "filename": "TheCamStyle.jsx",
+      "lineno": 12,
       "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
     },
-    "order": 8
+    "name": "TheCamStyle",
+    "order": 8,
+    "params": [],
+    "scope": "global"
   },
   {
-    "id": "TheCam.propTypes.audio",
-    "longname": "TheCam.propTypes.audio",
-    "name": "audio",
-    "kind": "member",
-    "scope": "static",
     "description": "Audio media constraint",
+    "id": "TheCam.propTypes.audio",
+    "kind": "member",
+    "longname": "TheCam.propTypes.audio",
     "memberof": "TheCam.propTypes",
     "meta": {
+      "filename": "TheCam.jsx",
       "lineno": 166,
-      "filename": "TheCam.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
     },
-    "order": 2
+    "name": "audio",
+    "order": 2,
+    "scope": "static"
   },
   {
-    "id": "TheCam.propTypes.disabled",
-    "longname": "TheCam.propTypes.disabled",
-    "name": "disabled",
-    "kind": "member",
-    "scope": "static",
     "description": "Camera disabled",
+    "id": "TheCam.propTypes.disabled",
+    "kind": "member",
+    "longname": "TheCam.propTypes.disabled",
     "memberof": "TheCam.propTypes",
     "meta": {
+      "filename": "TheCam.jsx",
       "lineno": 168,
-      "filename": "TheCam.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
     },
-    "order": 3
+    "name": "disabled",
+    "order": 3,
+    "scope": "static"
   },
   {
-    "id": "TheCam.propTypes.onStream",
-    "longname": "TheCam.propTypes.onStream",
-    "name": "onStream",
-    "kind": "member",
-    "scope": "static",
     "description": "Handle for stream",
+    "id": "TheCam.propTypes.onStream",
+    "kind": "member",
+    "longname": "TheCam.propTypes.onStream",
     "memberof": "TheCam.propTypes",
     "meta": {
+      "filename": "TheCam.jsx",
       "lineno": 171,
-      "filename": "TheCam.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
     },
-    "order": 4
+    "name": "onStream",
+    "order": 4,
+    "scope": "static"
   },
   {
-    "id": "TheCam.propTypes.rejectedMessage",
-    "longname": "TheCam.propTypes.rejectedMessage",
-    "name": "rejectedMessage",
-    "kind": "member",
-    "scope": "static",
     "description": "Message to show when camera access rejected",
+    "id": "TheCam.propTypes.rejectedMessage",
+    "kind": "member",
+    "longname": "TheCam.propTypes.rejectedMessage",
     "memberof": "TheCam.propTypes",
     "meta": {
+      "filename": "TheCam.jsx",
       "lineno": 173,
-      "filename": "TheCam.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
     },
-    "order": 5
+    "name": "rejectedMessage",
+    "order": 5,
+    "scope": "static"
   },
   {
-    "id": "TheCam.propTypes.video",
-    "longname": "TheCam.propTypes.video",
-    "name": "video",
-    "kind": "member",
-    "scope": "static",
     "description": "Video media constraint",
+    "id": "TheCam.propTypes.video",
+    "kind": "member",
+    "longname": "TheCam.propTypes.video",
     "memberof": "TheCam.propTypes",
     "meta": {
-      "lineno": 175,
       "filename": "TheCam.jsx",
+      "lineno": 175,
       "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
     },
-    "order": 6
+    "name": "video",
+    "order": 6,
+    "scope": "static"
   },
   {
-    "id": "TheCamStyle.propTypes.options",
-    "longname": "TheCamStyle.propTypes.options",
-    "name": "options",
-    "kind": "member",
-    "scope": "static",
     "description": "Style options",
+    "id": "TheCamStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheCamStyle.propTypes.options",
     "memberof": "TheCamStyle.propTypes",
     "meta": {
-      "lineno": 23,
       "filename": "TheCamStyle.jsx",
+      "lineno": 23,
       "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
     },
-    "order": 9
+    "name": "options",
+    "order": 9,
+    "scope": "static"
   }
 ]

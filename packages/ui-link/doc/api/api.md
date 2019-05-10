@@ -41,4 +41,4 @@ Link of the-components
 ## TheLinkStyle()
 Style for TheLink
 
-**Kind**: global function  
+**Kind**: global function

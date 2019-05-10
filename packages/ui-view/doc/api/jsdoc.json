@@ -1,76 +1,76 @@
 [
   {
+    "description": "View of the-components",
     "id": "module:@the-/ui-view",
-    "longname": "module:@the-/ui-view",
-    "name": "@the-/ui-view",
     "kind": "module",
-    "description": "View of the-components",
-    "version": "15.4.4",
-    "typicalname": "uiView",
+    "longname": "module:@the-/ui-view",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-view/lib"
     },
-    "order": 0
+    "name": "@the-/ui-view",
+    "order": 0,
+    "typicalname": "uiView",
+    "version": "15.4.4"
   },
   {
-    "id": "TheView",
-    "longname": "TheView",
-    "name": "TheView",
-    "kind": "class",
-    "scope": "global",
     "description": "View of the-components",
+    "id": "TheView",
+    "kind": "class",
+    "longname": "TheView",
     "meta": {
-      "lineno": 16,
       "filename": "TheView.jsx",
+      "lineno": 16,
       "path": "/Users/okuni/Projects/the/packages/ui-view/lib"
     },
-    "order": 1
+    "name": "TheView",
+    "order": 1,
+    "scope": "global"
   },
   {
-    "id": "TheViewStyle",
-    "longname": "TheViewStyle",
-    "name": "TheViewStyle",
-    "kind": "function",
-    "scope": "global",
     "description": "Style for TheView",
-    "params": [],
+    "id": "TheViewStyle",
+    "kind": "function",
+    "longname": "TheViewStyle",
     "meta": {
-      "lineno": 11,
       "filename": "TheViewStyle.jsx",
+      "lineno": 11,
       "path": "/Users/okuni/Projects/the/packages/ui-view/lib"
     },
-    "order": 3
+    "name": "TheViewStyle",
+    "order": 3,
+    "params": [],
+    "scope": "global"
   },
   {
-    "id": "TheView.propTypes.fixed",
-    "longname": "TheView.propTypes.fixed",
-    "name": "fixed",
-    "kind": "member",
-    "scope": "static",
     "description": "Mark as fixed",
+    "id": "TheView.propTypes.fixed",
+    "kind": "member",
+    "longname": "TheView.propTypes.fixed",
     "memberof": "TheView.propTypes",
     "meta": {
-      "lineno": 154,
       "filename": "TheView.jsx",
+      "lineno": 154,
       "path": "/Users/okuni/Projects/the/packages/ui-view/lib"
     },
-    "order": 2
+    "name": "fixed",
+    "order": 2,
+    "scope": "static"
   },
   {
-    "id": "TheViewStyle.propTypes.options",
-    "longname": "TheViewStyle.propTypes.options",
-    "name": "options",
-    "kind": "member",
-    "scope": "static",
     "description": "Style options",
+    "id": "TheViewStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheViewStyle.propTypes.options",
     "memberof": "TheViewStyle.propTypes",
     "meta": {
-      "lineno": 22,
       "filename": "TheViewStyle.jsx",
+      "lineno": 22,
       "path": "/Users/okuni/Projects/the/packages/ui-view/lib"
     },
-    "order": 4
+    "name": "options",
+    "order": 4,
+    "scope": "static"
   }
 ]

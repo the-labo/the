@@ -1,106 +1,106 @@
 [
   {
+    "description": "Hamburger menu for the-components",
     "id": "module:@the-/ui-hamburger",
-    "longname": "module:@the-/ui-hamburger",
-    "name": "@the-/ui-hamburger",
     "kind": "module",
-    "description": "Hamburger menu for the-components",
-    "version": "15.4.4",
-    "typicalname": "uiHamburger",
+    "longname": "module:@the-/ui-hamburger",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-hamburger/lib"
     },
-    "order": 0
+    "name": "@the-/ui-hamburger",
+    "order": 0,
+    "typicalname": "uiHamburger",
+    "version": "15.4.4"
   },
   {
-    "id": "TheHamburger",
-    "longname": "TheHamburger",
-    "name": "TheHamburger",
-    "kind": "class",
-    "scope": "global",
     "description": "Hamburger menu for the-components",
+    "id": "TheHamburger",
+    "kind": "class",
+    "longname": "TheHamburger",
     "meta": {
+      "filename": "TheHamburger.jsx",
       "lineno": 12,
-      "filename": "TheHamburger.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-hamburger/lib"
     },
-    "order": 1
+    "name": "TheHamburger",
+    "order": 1,
+    "scope": "global"
   },
   {
-    "id": "TheHamburgerStyle",
-    "longname": "TheHamburgerStyle",
-    "name": "TheHamburgerStyle",
-    "kind": "function",
-    "scope": "global",
     "description": "Style for TheHamburger",
-    "params": [],
+    "id": "TheHamburgerStyle",
+    "kind": "function",
+    "longname": "TheHamburgerStyle",
     "meta": {
-      "lineno": 11,
       "filename": "TheHamburgerStyle.jsx",
+      "lineno": 11,
       "path": "/Users/okuni/Projects/the/packages/ui-hamburger/lib"
     },
-    "order": 5
+    "name": "TheHamburgerStyle",
+    "order": 5,
+    "params": [],
+    "scope": "global"
   },
   {
-    "id": "TheHamburger.propTypes.hidden",
-    "longname": "TheHamburger.propTypes.hidden",
-    "name": "hidden",
-    "kind": "member",
-    "scope": "static",
     "description": "Hidden or not",
+    "id": "TheHamburger.propTypes.hidden",
+    "kind": "member",
+    "longname": "TheHamburger.propTypes.hidden",
     "memberof": "TheHamburger.propTypes",
     "meta": {
+      "filename": "TheHamburger.jsx",
       "lineno": 97,
-      "filename": "TheHamburger.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-hamburger/lib"
     },
-    "order": 2
+    "name": "hidden",
+    "order": 2,
+    "scope": "static"
   },
   {
-    "id": "TheHamburger.propTypes.onToggle",
-    "longname": "TheHamburger.propTypes.onToggle",
-    "name": "onToggle",
-    "kind": "member",
-    "scope": "static",
     "description": "Hidden state change",
+    "id": "TheHamburger.propTypes.onToggle",
+    "kind": "member",
+    "longname": "TheHamburger.propTypes.onToggle",
     "memberof": "TheHamburger.propTypes",
     "meta": {
+      "filename": "TheHamburger.jsx",
       "lineno": 99,
-      "filename": "TheHamburger.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-hamburger/lib"
     },
-    "order": 3
+    "name": "onToggle",
+    "order": 3,
+    "scope": "static"
   },
   {
-    "id": "TheHamburger.propTypes.spinning",
-    "longname": "TheHamburger.propTypes.spinning",
-    "name": "spinning",
-    "kind": "member",
-    "scope": "static",
     "description": "Shows spinner",
+    "id": "TheHamburger.propTypes.spinning",
+    "kind": "member",
+    "longname": "TheHamburger.propTypes.spinning",
     "memberof": "TheHamburger.propTypes",
     "meta": {
-      "lineno": 101,
       "filename": "TheHamburger.jsx",
+      "lineno": 101,
       "path": "/Users/okuni/Projects/the/packages/ui-hamburger/lib"
     },
-    "order": 4
+    "name": "spinning",
+    "order": 4,
+    "scope": "static"
   },
   {
-    "id": "TheHamburgerStyle.propTypes.options",
-    "longname": "TheHamburgerStyle.propTypes.options",
-    "name": "options",
-    "kind": "member",
-    "scope": "static",
     "description": "Style options",
+    "id": "TheHamburgerStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheHamburgerStyle.propTypes.options",
     "memberof": "TheHamburgerStyle.propTypes",
     "meta": {
-      "lineno": 22,
       "filename": "TheHamburgerStyle.jsx",
+      "lineno": 22,
       "path": "/Users/okuni/Projects/the/packages/ui-hamburger/lib"
     },
-    "order": 6
+    "name": "options",
+    "order": 6,
+    "scope": "static"
   }
 ]

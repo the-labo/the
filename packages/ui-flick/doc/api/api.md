@@ -41,4 +41,4 @@ Flickable viewer of the-components
 ## TheFlickStyle()
 Style for TheFlick
 
-**Kind**: global function  
+**Kind**: global function

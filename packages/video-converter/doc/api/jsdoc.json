@@ -1,37 +1,42 @@
 [
   {
-    "id": "module:@the-/video-converter",
-    "longname": "module:@the-/video-converter",
-    "name": "@the-/video-converter",
-    "kind": "module",
     "description": "Video file converter",
-    "version": "15.4.5",
+    "id": "module:@the-/video-converter",
+    "kind": "module",
     "license": "MIT",
-    "typicalname": "videoConverter",
+    "longname": "module:@the-/video-converter",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/video-converter/lib"
     },
-    "order": 2
+    "name": "@the-/video-converter",
+    "order": 2,
+    "typicalname": "videoConverter",
+    "version": "15.4.5"
   },
   {
-    "id": "module:@the-/video-converter.TheVideoConverter()",
-    "longname": "module:@the-/video-converter.TheVideoConverter",
-    "name": "TheVideoConverter",
-    "kind": "constructor",
     "description": "Video converter",
+    "id": "module:@the-/video-converter.TheVideoConverter()",
+    "kind": "constructor",
+    "longname": "module:@the-/video-converter.TheVideoConverter",
     "memberof": "module:@the-/video-converter.TheVideoConverter",
+    "name": "TheVideoConverter",
     "order": 4
   },
   {
-    "id": "module:@the-/video-converter.TheVideoConverter#isVideoSrc",
-    "longname": "module:@the-/video-converter.TheVideoConverter#isVideoSrc",
-    "name": "isVideoSrc",
-    "kind": "function",
-    "scope": "instance",
     "description": "Detect",
+    "id": "module:@the-/video-converter.TheVideoConverter#isVideoSrc",
+    "kind": "function",
+    "longname": "module:@the-/video-converter.TheVideoConverter#isVideoSrc",
     "memberof": "module:@the-/video-converter.TheVideoConverter",
+    "meta": {
+      "filename": "TheVideoConverter.js",
+      "lineno": 30,
+      "path": "/Users/okuni/Projects/the/packages/video-converter/lib"
+    },
+    "name": "isVideoSrc",
+    "order": 5,
     "params": [
       {
         "name": "src"
@@ -46,21 +51,22 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 30,
-      "filename": "TheVideoConverter.js",
-      "path": "/Users/okuni/Projects/the/packages/video-converter/lib"
-    },
-    "order": 5
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/video-converter.TheVideoConverter#convert",
-    "longname": "module:@the-/video-converter.TheVideoConverter#convert",
-    "name": "convert",
-    "kind": "function",
-    "scope": "instance",
+    "async": true,
     "description": "Convert video files",
+    "id": "module:@the-/video-converter.TheVideoConverter#convert",
+    "kind": "function",
+    "longname": "module:@the-/video-converter.TheVideoConverter#convert",
     "memberof": "module:@the-/video-converter.TheVideoConverter",
+    "meta": {
+      "filename": "TheVideoConverter.js",
+      "lineno": 41,
+      "path": "/Users/okuni/Projects/the/packages/video-converter/lib"
+    },
+    "name": "convert",
+    "order": 6,
     "params": [
       {
         "type": {
@@ -101,22 +107,22 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 41,
-      "filename": "TheVideoConverter.js",
-      "path": "/Users/okuni/Projects/the/packages/video-converter/lib"
-    },
-    "async": true,
-    "order": 6
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/video-converter.TheVideoConverter#inspect",
-    "longname": "module:@the-/video-converter.TheVideoConverter#inspect",
-    "name": "inspect",
-    "kind": "function",
-    "scope": "instance",
+    "async": true,
     "description": "Inspect file",
+    "id": "module:@the-/video-converter.TheVideoConverter#inspect",
+    "kind": "function",
+    "longname": "module:@the-/video-converter.TheVideoConverter#inspect",
     "memberof": "module:@the-/video-converter.TheVideoConverter",
+    "meta": {
+      "filename": "TheVideoConverter.js",
+      "lineno": 74,
+      "path": "/Users/okuni/Projects/the/packages/video-converter/lib"
+    },
+    "name": "inspect",
+    "order": 7,
     "params": [
       {
         "type": {
@@ -147,22 +153,22 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 74,
-      "filename": "TheVideoConverter.js",
-      "path": "/Users/okuni/Projects/the/packages/video-converter/lib"
-    },
-    "async": true,
-    "order": 7
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/video-converter.TheVideoConverter#process",
-    "longname": "module:@the-/video-converter.TheVideoConverter#process",
-    "name": "process",
-    "kind": "function",
-    "scope": "instance",
+    "async": true,
     "description": "Convert video file if needed",
+    "id": "module:@the-/video-converter.TheVideoConverter#process",
+    "kind": "function",
+    "longname": "module:@the-/video-converter.TheVideoConverter#process",
     "memberof": "module:@the-/video-converter.TheVideoConverter",
+    "meta": {
+      "filename": "TheVideoConverter.js",
+      "lineno": 101,
+      "path": "/Users/okuni/Projects/the/packages/video-converter/lib"
+    },
+    "name": "process",
+    "order": 8,
     "params": [
       {
         "type": {
@@ -214,22 +220,22 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 101,
-      "filename": "TheVideoConverter.js",
-      "path": "/Users/okuni/Projects/the/packages/video-converter/lib"
-    },
-    "async": true,
-    "order": 8
+    "scope": "instance"
   },
   {
-    "id": "MP4Mixed#convertIntoMP4",
-    "longname": "MP4Mixed#convertIntoMP4",
-    "name": "convertIntoMP4",
-    "kind": "function",
-    "scope": "instance",
+    "async": true,
     "description": "Convert into mp4",
+    "id": "MP4Mixed#convertIntoMP4",
+    "kind": "function",
+    "longname": "MP4Mixed#convertIntoMP4",
     "memberof": "MP4Mixed",
+    "meta": {
+      "filename": "mp4Mix.js",
+      "lineno": 28,
+      "path": "/Users/okuni/Projects/the/packages/video-converter/lib/mixins"
+    },
+    "name": "convertIntoMP4",
+    "order": 15,
     "params": [
       {
         "type": {
@@ -267,71 +273,70 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 28,
-      "filename": "mp4Mix.js",
-      "path": "/Users/okuni/Projects/the/packages/video-converter/lib/mixins"
-    },
-    "async": true,
-    "order": 15
+    "scope": "instance"
   },
   {
-    "id": "module:@the-/video-converter.TheVideoConverter",
-    "longname": "module:@the-/video-converter.TheVideoConverter",
-    "name": "TheVideoConverter",
-    "kind": "class",
-    "scope": "static",
     "augments": [
       "module:@the-/video-converter.mixins.mp4Mix~MP4Mixed"
     ],
+    "id": "module:@the-/video-converter.TheVideoConverter",
+    "kind": "class",
+    "longname": "module:@the-/video-converter.TheVideoConverter",
     "memberof": "module:@the-/video-converter",
     "meta": {
-      "lineno": 1,
       "filename": "TheVideoConverter.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/video-converter/lib"
     },
-    "order": 3
+    "name": "TheVideoConverter",
+    "order": 3,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/video-converter.helpers",
-    "longname": "module:@the-/video-converter.helpers",
-    "name": "helpers",
-    "kind": "namespace",
-    "scope": "static",
-    "description": "Helper functions",
-    "memberof": "module:@the-/video-converter",
     "access": "protected",
+    "description": "Helper functions",
+    "id": "module:@the-/video-converter.helpers",
+    "kind": "namespace",
+    "longname": "module:@the-/video-converter.helpers",
+    "memberof": "module:@the-/video-converter",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/video-converter/lib/helpers"
     },
-    "order": 10
+    "name": "helpers",
+    "order": 10,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/video-converter.mixins",
-    "longname": "module:@the-/video-converter.mixins",
-    "name": "mixins",
-    "kind": "namespace",
-    "scope": "static",
-    "description": "Mixin functions",
-    "memberof": "module:@the-/video-converter",
     "access": "protected",
+    "description": "Mixin functions",
+    "id": "module:@the-/video-converter.mixins",
+    "kind": "namespace",
+    "longname": "module:@the-/video-converter.mixins",
+    "memberof": "module:@the-/video-converter",
     "meta": {
-      "lineno": 2,
       "filename": "index.js",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/video-converter/lib/mixins"
     },
-    "order": 12
+    "name": "mixins",
+    "order": 12,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/video-converter.create",
-    "longname": "module:@the-/video-converter.create",
-    "name": "create",
-    "kind": "function",
-    "scope": "static",
     "description": "Create a TheVideoConverter instance",
+    "id": "module:@the-/video-converter.create",
+    "kind": "function",
+    "longname": "module:@the-/video-converter.create",
     "memberof": "module:@the-/video-converter",
+    "meta": {
+      "filename": "create.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/video-converter/lib"
+    },
+    "name": "create",
+    "order": 0,
     "params": [
       {
         "type": {
@@ -352,36 +357,36 @@
         }
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "create.js",
-      "path": "/Users/okuni/Projects/the/packages/video-converter/lib"
-    },
-    "order": 0
+    "scope": "static"
   },
   {
-    "id": "module:@the-/video-converter.default",
-    "longname": "module:@the-/video-converter.default",
-    "name": "default",
-    "kind": "function",
-    "scope": "static",
     "description": "Alias of {@link module:@the-/video-converter.create}",
+    "id": "module:@the-/video-converter.default",
+    "kind": "function",
+    "longname": "module:@the-/video-converter.default",
     "memberof": "module:@the-/video-converter",
     "meta": {
-      "lineno": 1,
       "filename": "default.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/video-converter/lib"
     },
-    "order": 1
+    "name": "default",
+    "order": 1,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/video-converter.filenameFor",
-    "longname": "module:@the-/video-converter.filenameFor",
-    "name": "filenameFor",
-    "kind": "function",
-    "scope": "static",
     "description": "Change file extension",
+    "id": "module:@the-/video-converter.filenameFor",
+    "kind": "function",
+    "longname": "module:@the-/video-converter.filenameFor",
     "memberof": "module:@the-/video-converter",
+    "meta": {
+      "filename": "filenameFor.js",
+      "lineno": 1,
+      "path": "/Users/okuni/Projects/the/packages/video-converter/lib/helpers"
+    },
+    "name": "filenameFor",
+    "order": 9,
     "params": [
       {
         "type": {
@@ -392,54 +397,49 @@
         "name": "config"
       }
     ],
-    "meta": {
-      "lineno": 1,
-      "filename": "filenameFor.js",
-      "path": "/Users/okuni/Projects/the/packages/video-converter/lib/helpers"
-    },
-    "order": 9
+    "scope": "static"
   },
   {
     "id": "module:@the-/video-converter.isVideoSrc",
-    "longname": "module:@the-/video-converter.isVideoSrc",
-    "name": "isVideoSrc",
     "kind": "function",
-    "scope": "static",
+    "longname": "module:@the-/video-converter.isVideoSrc",
     "memberof": "module:@the-/video-converter",
     "meta": {
-      "lineno": 1,
       "filename": "isVideoSrc.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/video-converter/lib/helpers"
     },
-    "order": 11
+    "name": "isVideoSrc",
+    "order": 11,
+    "scope": "static"
   },
   {
-    "id": "module:@the-/video-converter.mixins.mp4Mix",
-    "longname": "module:@the-/video-converter.mixins.mp4Mix",
-    "name": "mp4Mix",
-    "kind": "function",
-    "scope": "static",
     "description": "Mixins for mp4",
+    "id": "module:@the-/video-converter.mixins.mp4Mix",
+    "kind": "function",
+    "longname": "module:@the-/video-converter.mixins.mp4Mix",
     "memberof": "module:@the-/video-converter.mixins",
     "meta": {
-      "lineno": 1,
       "filename": "mp4Mix.js",
+      "lineno": 1,
       "path": "/Users/okuni/Projects/the/packages/video-converter/lib/mixins"
     },
-    "order": 13
+    "name": "mp4Mix",
+    "order": 13,
+    "scope": "static"
   },
   {
     "id": "module:@the-/video-converter.mixins.mp4Mix~MP4Mixed",
-    "longname": "module:@the-/video-converter.mixins.mp4Mix~MP4Mixed",
-    "name": "MP4Mixed",
     "kind": "class",
-    "scope": "inner",
+    "longname": "module:@the-/video-converter.mixins.mp4Mix~MP4Mixed",
     "memberof": "module:@the-/video-converter.mixins.mp4Mix",
     "meta": {
-      "lineno": 15,
       "filename": "mp4Mix.js",
+      "lineno": 15,
       "path": "/Users/okuni/Projects/the/packages/video-converter/lib/mixins"
     },
-    "order": 14
+    "name": "MP4Mixed",
+    "order": 14,
+    "scope": "inner"
   }
 ]

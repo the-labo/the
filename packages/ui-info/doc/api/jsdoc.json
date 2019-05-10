@@ -1,106 +1,106 @@
 [
   {
+    "description": "Info of the-component",
     "id": "module:@the-/ui-info",
-    "longname": "module:@the-/ui-info",
-    "name": "@the-/ui-info",
     "kind": "module",
-    "description": "Info of the-component",
-    "version": "15.4.4",
-    "typicalname": "uiInfo",
+    "longname": "module:@the-/ui-info",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-info/lib"
     },
-    "order": 0
+    "name": "@the-/ui-info",
+    "order": 0,
+    "typicalname": "uiInfo",
+    "version": "15.4.4"
   },
   {
-    "id": "TheInfo",
-    "longname": "TheInfo",
-    "name": "TheInfo",
-    "kind": "class",
-    "scope": "global",
     "description": "Info of the-component",
+    "id": "TheInfo",
+    "kind": "class",
+    "longname": "TheInfo",
     "meta": {
-      "lineno": 11,
       "filename": "TheInfo.jsx",
+      "lineno": 11,
       "path": "/Users/okuni/Projects/the/packages/ui-info/lib"
     },
-    "order": 1
+    "name": "TheInfo",
+    "order": 1,
+    "scope": "global"
   },
   {
-    "id": "TheInfoStyle",
-    "longname": "TheInfoStyle",
-    "name": "TheInfoStyle",
-    "kind": "function",
-    "scope": "global",
     "description": "Style for TheInfo",
-    "params": [],
+    "id": "TheInfoStyle",
+    "kind": "function",
+    "longname": "TheInfoStyle",
     "meta": {
-      "lineno": 11,
       "filename": "TheInfoStyle.jsx",
+      "lineno": 11,
       "path": "/Users/okuni/Projects/the/packages/ui-info/lib"
     },
-    "order": 5
+    "name": "TheInfoStyle",
+    "order": 5,
+    "params": [],
+    "scope": "global"
   },
   {
-    "id": "TheInfo.propTypes.data",
-    "longname": "TheInfo.propTypes.data",
-    "name": "data",
-    "kind": "member",
-    "scope": "static",
     "description": "Info data",
+    "id": "TheInfo.propTypes.data",
+    "kind": "member",
+    "longname": "TheInfo.propTypes.data",
     "memberof": "TheInfo.propTypes",
     "meta": {
+      "filename": "TheInfo.jsx",
       "lineno": 64,
-      "filename": "TheInfo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-info/lib"
     },
-    "order": 2
+    "name": "data",
+    "order": 2,
+    "scope": "static"
   },
   {
-    "id": "TheInfo.propTypes.keys",
-    "longname": "TheInfo.propTypes.keys",
-    "name": "keys",
-    "kind": "member",
-    "scope": "static",
     "description": "Keys to show",
+    "id": "TheInfo.propTypes.keys",
+    "kind": "member",
+    "longname": "TheInfo.propTypes.keys",
     "memberof": "TheInfo.propTypes",
     "meta": {
+      "filename": "TheInfo.jsx",
       "lineno": 66,
-      "filename": "TheInfo.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-info/lib"
     },
-    "order": 3
+    "name": "keys",
+    "order": 3,
+    "scope": "static"
   },
   {
-    "id": "TheInfo.propTypes.title",
-    "longname": "TheInfo.propTypes.title",
-    "name": "title",
-    "kind": "member",
-    "scope": "static",
     "description": "Info title",
+    "id": "TheInfo.propTypes.title",
+    "kind": "member",
+    "longname": "TheInfo.propTypes.title",
     "memberof": "TheInfo.propTypes",
     "meta": {
-      "lineno": 68,
       "filename": "TheInfo.jsx",
+      "lineno": 68,
       "path": "/Users/okuni/Projects/the/packages/ui-info/lib"
     },
-    "order": 4
+    "name": "title",
+    "order": 4,
+    "scope": "static"
   },
   {
-    "id": "TheInfoStyle.propTypes.options",
-    "longname": "TheInfoStyle.propTypes.options",
-    "name": "options",
-    "kind": "member",
-    "scope": "static",
     "description": "Style options",
+    "id": "TheInfoStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheInfoStyle.propTypes.options",
     "memberof": "TheInfoStyle.propTypes",
     "meta": {
-      "lineno": 22,
       "filename": "TheInfoStyle.jsx",
+      "lineno": 22,
       "path": "/Users/okuni/Projects/the/packages/ui-info/lib"
     },
-    "order": 6
+    "name": "options",
+    "order": 6,
+    "scope": "static"
   }
 ]

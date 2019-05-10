@@ -268,12 +268,16 @@ var/
 /packages/util-db/lib/index.js
 /packages/util-file/lib/helpers/index.js
 /packages/util-file/lib/index.js
+/packages/util-path/lib/helpers/index.js
 /packages/util-path/lib/index.js
 /packages/util-server/lib/index.js
 /packages/util-site/lib/index.js
 /packages/util-style/lib/index.js
 /packages/util-sw/lib/index.js
 /packages/util-ui/lib/index.js
+/packages/video-converter/lib/helpers/index.js
+/packages/video-converter/lib/index.js
+/packages/video-converter/lib/mixins/index.js
 /packages/window/lib/index.js
 
 # Other paths

@@ -123,6 +123,7 @@ tryExample().catch((err) => console.error(err))
   - [.depsRule(config)](./doc/api/api.md#module_@the-/lint.rules.depsRule)
   - [.filenameRule(config)](./doc/api/api.md#module_@the-/lint.rules.filenameRule)
   - [.moduleRule(config)](./doc/api/api.md#module_@the-/lint.rules.moduleRule)
+  - [.packageRule(config)](./doc/api/api.md#module_@the-/lint.rules.packageRule)
   - [.propRule(config)](./doc/api/api.md#module_@the-/lint.rules.propRule)
   - [.usageRule(config)](./doc/api/api.md#module_@the-/lint.rules.usageRule)
 - module:@the-/lint.TheLint

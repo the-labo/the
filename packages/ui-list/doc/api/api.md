@@ -59,4 +59,4 @@ Item of list
 ## TheListStyle()
 Style for TheList
 
-**Kind**: global function  
+**Kind**: global function

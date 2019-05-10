@@ -19,8 +19,8 @@ const {
 /** @lends module:@the-/lint.rules.packageRule */
 function packageRule(config) {
   const {
-    depsUsedIn = '**/*.js',
-    devDepsUsedIn = '**/*.js',
+    depsUsedIn = [],
+    devDepsUsedIn = [],
     except = [],
     ignore = '**/node_modules/**',
     ...rest
@@ -35,6 +35,13 @@ function packageRule(config) {
       throw new Error(`[@the-/lint] Failed to parse as json: ${filename}`)
     }
   }
+  const _parse = ({ content, filename }) => {
+    try {
+      return parse(content)
+    } catch (e) {
+      throw new Error(`[@the-/lint] Failed to parse js: ${filename}`)
+    }
+  }
   return async function packageRuleCheck({ content, filename, report }) {
     const pkg = _json({ content, filename })
     const doCheck = async (deps, usedIn, { as }) => {
@@ -47,7 +54,7 @@ function packageRule(config) {
       )
       for (const filename of await aglob(usedIn, { ignore })) {
         const content = String(await readFileAsync(filename))
-        const parsed = parse(content)
+        const parsed = _parse({ content, filename })
         const stringLiterals = finder.findByTypes(parsed, [
           NodeTypes.StringLiteral,
         ])

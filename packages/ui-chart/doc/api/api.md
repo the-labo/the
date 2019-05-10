@@ -41,4 +41,4 @@ Chart for the-components
 ## TheChartStyle()
 Style for TheChart
 
-**Kind**: global function  
+**Kind**: global function
