@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-map",
   "description": "Geo map for the-components",
-  "version": "15.4.3",
+  "version": "15.4.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -44,6 +44,7 @@
   "license": "MIT",
   "main": "shim",
   "peerDependencies": {
+    "leaflet": "*",
     "react": ">=16",
     "react-dom": ">=16"
   },

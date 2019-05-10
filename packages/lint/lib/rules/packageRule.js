@@ -9,13 +9,13 @@
 
 const aglob = require('aglob')
 const { readFileAsync } = require('asfs')
-const { parsePattern } = require('../helpers/parseHelper')
 const path = require('path')
 const {
   constants: { NodeTypes },
   finder,
   parse,
 } = require('@the-/ast')
+const { parsePattern } = require('../helpers/parseHelper')
 
 /** @lends module:@the-/lint.rules.packageRule */
 function packageRule(config) {
@@ -43,6 +43,15 @@ function packageRule(config) {
       throw new Error(`[@the-/lint] Failed to parse js: ${filename}`)
     }
   }
+  const peerDependencyNamesFor = (moduleId) => {
+    try {
+      const pkg = require(`${moduleId}/package.json`)
+      const { peerDependencies = {} } = pkg
+      return Object.keys(peerDependencies)
+    } catch (e) {
+      return []
+    }
+  }
   return async function packageRuleCheck({ content, filename, report }) {
     const pkg = _json({ content, filename })
     const doCheck = async (deps, usedIn, { as }) => {
@@ -50,12 +59,22 @@ function packageRule(config) {
         return
       }
       const depsNames = Object.keys(deps)
+      const peerDepsNames = depsNames.reduce(
+        (peerDepsNames, depName) => [
+          ...peerDepsNames,
+          ...peerDependencyNamesFor(depName),
+        ],
+        [],
+      )
       const unusedNames = new Set(
         depsNames
           .filter((name) => !except.includes(name))
+          .filter((name) => !peerDepsNames.includes(name))
           .filter(
             (name) =>
-              !except.some((ex) => !!name.match && name.match(parsePattern(ex))),
+              !except.some(
+                (ex) => !!name.match && name.match(parsePattern(ex)),
+              ),
           ),
       )
       for (const filename of await aglob(usedIn, { ignore })) {
@@ -72,13 +91,17 @@ function packageRule(config) {
             unusedNames.delete(name)
           }
         }
+        const done = unusedNames.size === 0
+        if (done) {
+          return
+        }
       }
-      const ok = unusedNames.length === 0
+      const ok = unusedNames.size === 0
       !ok &&
-        report('dependencies is not used', {
+        report('Unused dependencies detected', {
           actual: false,
           as,
-          deps: [...unusedNames.values()],
+          dependencies: [...unusedNames.values()],
           expect: true,
           where: path.resolve(filename),
         })
