@@ -30,7 +30,7 @@ describe('package-rule', () => {
       report: (...args) => reported.push(args),
     })
     equal(reported.length, 1)
-    deepEqual(reported[0][1].deps, ['hogehoge'])
+    deepEqual(reported[0][1].dependencies, ['hogehoge'])
   })
 })
 
