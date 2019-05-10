@@ -5,7 +5,7 @@
 ## @the-/mixin-scene
 Mixins for the-scene
 
-**Version**: 16.0.0  
+**Version**: 16.0.1  
 **License**: MIT  
 
 * [@the-/mixin-scene](#module_@the-/mixin-scene)
@@ -966,3 +966,4 @@ withValues mixin
 | Param | Type | Description |
 | --- | --- | --- |
 | Class | <code>function</code> | Class to mix |
+
