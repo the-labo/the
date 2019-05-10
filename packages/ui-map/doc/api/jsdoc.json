@@ -5,7 +5,7 @@
     "name": "@the-/ui-map",
     "kind": "module",
     "description": "Geo map for the-components",
-    "version": "15.4.4",
+    "version": "15.4.5",
     "typicalname": "uiMap",
     "meta": {
       "lineno": 2,

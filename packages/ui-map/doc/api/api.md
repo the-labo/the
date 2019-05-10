@@ -33,7 +33,7 @@
 ## @the-/ui-map
 Geo map for the-components
 
-**Version**: 15.4.4  
+**Version**: 15.4.5  
 <a name="TheMap"></a>
 
 ## TheMap
