@@ -9,6 +9,7 @@
 
 const aglob = require('aglob')
 const { readFileAsync } = require('asfs')
+const { parsePattern } = require('../helpers/parseHelper')
 const path = require('path')
 const {
   constants: { NodeTypes },
@@ -50,7 +51,12 @@ function packageRule(config) {
       }
       const depsNames = Object.keys(deps)
       const unusedNames = new Set(
-        depsNames.filter((name) => !except.includes(name)),
+        depsNames
+          .filter((name) => !except.includes(name))
+          .filter(
+            (name) =>
+              !except.some((ex) => !!name.match && name.match(parsePattern(ex))),
+          ),
       )
       for (const filename of await aglob(usedIn, { ignore })) {
         const content = String(await readFileAsync(filename))
@@ -59,7 +65,9 @@ function packageRule(config) {
           NodeTypes.StringLiteral,
         ])
         for (const name of unusedNames) {
-          const used = stringLiterals.some((str) => str.value === name)
+          const used = stringLiterals.some(
+            (str) => str.value === name || str.value.indexOf(`${name}/`) === 0,
+          )
           if (used) {
             unusedNames.delete(name)
           }

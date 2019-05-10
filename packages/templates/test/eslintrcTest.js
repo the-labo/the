@@ -15,7 +15,9 @@ describe('eslintrc', function() {
   after(async () => {})
 
   it('Eslintrc', async () => {
-    const bud = eslintrc()
+    const bud = eslintrc({
+      jsdoc: false,
+    })
     bud.mkdirp = true
     bud.path = `${__dirname}/../tmp/eslintrc/.eslintrc.yml`
     await coz.render(bud)
