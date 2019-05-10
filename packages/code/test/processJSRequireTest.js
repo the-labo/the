@@ -123,6 +123,25 @@ const { strictEqual, throws } = require('assert')
         `,
     )
   })
+
+  it('With chdir', async () => {
+    equal(
+      await processJSRequire(`
+const BASE_DIR = \`\${__dirname}/../..\`
+process.chdir(BASE_DIR)
+const path = require('path')
+const { spawn } = require('child_process')
+const PackageFiles = require('../packaging/PackageFiles')
+`),
+      `
+const BASE_DIR = \`\${__dirname}/../..\`
+process.chdir(BASE_DIR)
+const { spawn } = require('child_process')
+const path = require('path')
+const PackageFiles = require('../packaging/PackageFiles')
+`,
+    )
+  })
 })
 
 /* global describe, before, after, it */

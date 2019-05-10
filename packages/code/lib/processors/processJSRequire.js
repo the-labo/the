@@ -98,6 +98,7 @@ function processJSRequire(content, options = {}) {
     }
 
     const startsForRequire = RequireDeclarations.map(({ start }) => start)
+    const minStartForRequire = Math.min(...startsForRequire)
 
     const OtherDeclarations = finder
       .findByTypes(parsed, [
@@ -105,6 +106,7 @@ function processJSRequire(content, options = {}) {
         NodeTypes.VariableDeclaration,
       ])
       .filter(({ start }) => !startsForRequire.includes(start))
+      .filter(({ start }) => start > minStartForRequire)
 
     for (const Declaration of OtherDeclarations.sort(
       (a, b) => b.start - a.start,
