@@ -13,6 +13,7 @@ const decorateRule_ = require('./decorateRule')
 const depsRule_ = require('./depsRule')
 const filenameRule_ = require('./filenameRule')
 const moduleRule_ = require('./moduleRule')
+const packageRule_ = require('./packageRule')
 const propRule_ = require('./propRule')
 const usageRule_ = require('./usageRule')
 
@@ -23,6 +24,7 @@ exports.decorateRule = decorateRule_
 exports.depsRule = depsRule_
 exports.filenameRule = filenameRule_
 exports.moduleRule = moduleRule_
+exports.packageRule = packageRule_
 exports.propRule = propRule_
 exports.usageRule = usageRule_
 
@@ -33,6 +35,7 @@ module.exports = {
   depsRule: depsRule_,
   filenameRule: filenameRule_,
   moduleRule: moduleRule_,
+  packageRule: packageRule_,
   propRule: propRule_,
   usageRule: usageRule_,
 }

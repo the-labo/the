@@ -5,7 +5,7 @@
 ## @the-/lint
 Lint of the-frameworks
 
-**Version**: 15.4.5  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/lint](#module_@the-/lint)
@@ -22,6 +22,7 @@ Lint of the-frameworks
         * [.depsRule(config)](#module_@the-/lint.rules.depsRule) ⇒ <code>function</code>
         * [.filenameRule(config)](#module_@the-/lint.rules.filenameRule) ⇒ <code>function</code>
         * [.moduleRule(config)](#module_@the-/lint.rules.moduleRule) ⇒ <code>function</code>
+        * [.packageRule(config)](#module_@the-/lint.rules.packageRule) ⇒ <code>function</code>
         * [.propRule(config)](#module_@the-/lint.rules.propRule) ⇒ <code>function</code>
         * [.usageRule(config)](#module_@the-/lint.rules.usageRule) ⇒ <code>function</code>
     * [.create(...args)](#module_@the-/lint.create) ⇒ <code>TheLint</code>
@@ -86,6 +87,7 @@ Rule functions
     * [.depsRule(config)](#module_@the-/lint.rules.depsRule) ⇒ <code>function</code>
     * [.filenameRule(config)](#module_@the-/lint.rules.filenameRule) ⇒ <code>function</code>
     * [.moduleRule(config)](#module_@the-/lint.rules.moduleRule) ⇒ <code>function</code>
+    * [.packageRule(config)](#module_@the-/lint.rules.packageRule) ⇒ <code>function</code>
     * [.propRule(config)](#module_@the-/lint.rules.propRule) ⇒ <code>function</code>
     * [.usageRule(config)](#module_@the-/lint.rules.usageRule) ⇒ <code>function</code>
 
@@ -166,6 +168,18 @@ Create "moduleRule" lint
 | --- | --- | --- |
 | config | <code>Object</code> | Lint config |
 
+<a name="module_@the-/lint.rules.packageRule"></a>
+
+#### rules.packageRule(config) ⇒ <code>function</code>
+Create "packageRule" lint
+
+**Kind**: static method of [<code>rules</code>](#module_@the-/lint.rules)  
+**Returns**: <code>function</code> - Lint function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| config | <code>Object</code> | Lint config |
+
 <a name="module_@the-/lint.rules.propRule"></a>
 
 #### rules.propRule(config) ⇒ <code>function</code>
@@ -208,4 +222,4 @@ Create a TheLint instance
 ### lint.default()
 Alias of [create](#module_@the-/lint.create)
 
-**Kind**: static method of [<code>@the-/lint</code>](#module_@the-/lint)
+**Kind**: static method of [<code>@the-/lint</code>](#module_@the-/lint)  

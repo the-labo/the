@@ -1,6 +1,6 @@
 'use strict'
 
-const names = ['usageRule']
+const names = ['packageRule']
 module.exports = names.map((name) => ({
   data: { name },
   force: false,

@@ -26,7 +26,7 @@
     "debug": "^4.1.1",
     "mongo-escape": "^2.0.6",
     "mongo-uri-builder": "^2.0.0",
-    "mongodb": "^3.2.3"
+    "mongodb": "^3.2.4"
   },
   "devDependencies": {
     "clay-driver-tests": "^3.0.1",
