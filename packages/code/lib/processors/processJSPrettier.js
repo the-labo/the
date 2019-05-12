@@ -8,6 +8,7 @@
 
 const path = require('path')
 const prettier = require('prettier')
+const { PrettierConfig } = require('@the-/const-code')
 
 /** @lends module:@the-/code.processors.processJSPrettier */
 async function processJSPrettier(content, { filename } = {}) {
@@ -15,14 +16,7 @@ async function processJSPrettier(content, { filename } = {}) {
     ? await prettier.resolveConfig(path.dirname(filename))
     : {}
   return prettier.format(content, {
-    arrowParens: 'always',
-    jsxBracketSameLine: false,
-    jsxSingleQuote: true,
-    parser: 'babel',
-    quoteProps: 'as-needed',
-    semi: false,
-    singleQuote: true,
-    trailingComma: 'all',
+    ...PrettierConfig,
     ...(config || {}),
   })
 }

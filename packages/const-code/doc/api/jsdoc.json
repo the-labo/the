@@ -1,0 +1,33 @@
+[
+  {
+    "id": "module:@the-/const-code",
+    "longname": "module:@the-/const-code",
+    "name": "@the-/const-code",
+    "kind": "module",
+    "description": "Constants for the-components",
+    "version": "15.4.7",
+    "license": "MIT",
+    "typicalname": "constCode",
+    "meta": {
+      "lineno": 2,
+      "filename": "index.js",
+      "path": "/Users/okuni/Projects/the/packages/const-code/lib"
+    },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/const-code.PrettierConfig",
+    "longname": "module:@the-/const-code.PrettierConfig",
+    "name": "PrettierConfig",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Configuration for prettier",
+    "memberof": "module:@the-/const-code",
+    "meta": {
+      "lineno": 1,
+      "filename": "PrettierConfig.js",
+      "path": "/Users/okuni/Projects/the/packages/const-code/lib"
+    },
+    "order": 1
+  }
+]

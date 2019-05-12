@@ -7,12 +7,18 @@
  */
 'use strict'
 
+const { PrettierConfig } = require('@the-/const-code')
 const _tmpl = require('./_tmpl')
 
 /** @lends module:@the-/templates.prettierrc */
 function prettierrc(config = {}) {
   return {
-    data: {},
+    data: {
+      values: {
+        ...PrettierConfig,
+        ...config,
+      },
+    },
     force: true,
     mode: '444',
     path: `.prettierrc.yml`,

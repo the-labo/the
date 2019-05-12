@@ -1,0 +1,40 @@
+{
+  "name": "@the-/const-code",
+  "description": "Constants for the-components",
+  "version": "15.4.7",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "browser": "shim",
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "injectmock": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/const-code#readme",
+  "keywords": [
+    "const",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
+  "scripts": {
+    "build": "../../misc/scripts/pkgBuild.js",
+    "doc": "../../misc/scripts/pkgDoc.js",
+    "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
+    "prepublishOnly": "npm run test",
+    "test": "../../misc/scripts/pkgTest.js"
+  }
+}
