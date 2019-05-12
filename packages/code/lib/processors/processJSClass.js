@@ -1,6 +1,6 @@
 /**
  * @memberof module:@the-/code.processors
- * @function processClass
+ * @function processJSClass
  * @param {string} content
  * @returns {string} processed
  */
@@ -15,8 +15,8 @@ const { sortMethodsOnClassNode } = require('../ast/nodes')
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends module:@the-/code.processors.processClass */
-function processClass(content, options = {}) {
+/** @lends module:@the-/code.processors.processJSClass */
+function processJSClass(content, options = {}) {
   return applyConverter(content, (content) => {
     const parsed = parse(content, options)
     const { swap } = contentAccess(content)
@@ -38,4 +38,4 @@ function processClass(content, options = {}) {
   })
 }
 
-module.exports = processClass
+module.exports = processJSClass

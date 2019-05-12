@@ -72,6 +72,24 @@ x:
 `),
     )
   })
+
+  it('Sort sets', async () => {
+    equal(
+      await processYAML(`
+x:
+  ? c
+  ? d
+  ? b
+  ? a
+      `),
+      `x:
+  ? a
+  ? b
+  ? c
+  ? d
+`,
+    )
+  })
 })
 
 /* global describe, before, after, it */

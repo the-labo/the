@@ -39,6 +39,15 @@ const _processYAMLNode = (node) => {
 /** @lends module:@the-/code.processors.processYAML */
 async function processYAML(content) {
   const doc = YAML.parseDocument(content)
+  const [error] = doc.errors || []
+  if (error) {
+    console.log(
+      `[@the-/code][processYAML] Failed to parse yaml with error: ${
+        error.message
+      }`,
+    )
+    return content
+  }
   doc.contents = _processYAMLNode(doc.contents)
   try {
     return String(doc)

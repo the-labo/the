@@ -22,6 +22,7 @@ const processJSObject_ = require('./processJSObject')
 const processJSPrettier_ = require('./processJSPrettier')
 const processJSRequire_ = require('./processJSRequire')
 const processJSStrict_ = require('./processJSStrict')
+const processJSString_ = require('./processJSString')
 const processJSSwitch_ = require('./processJSSwitch')
 const processJSUnused_ = require('./processJSUnused')
 const processJSXAttribute_ = require('./processJSXAttribute')
@@ -44,6 +45,7 @@ exports.processJSObject = processJSObject_
 exports.processJSPrettier = processJSPrettier_
 exports.processJSRequire = processJSRequire_
 exports.processJSStrict = processJSStrict_
+exports.processJSString = processJSString_
 exports.processJSSwitch = processJSSwitch_
 exports.processJSUnused = processJSUnused_
 exports.processJSXAttribute = processJSXAttribute_
@@ -66,6 +68,7 @@ module.exports = {
   processJSPrettier: processJSPrettier_,
   processJSRequire: processJSRequire_,
   processJSStrict: processJSStrict_,
+  processJSString: processJSString_,
   processJSSwitch: processJSSwitch_,
   processJSUnused: processJSUnused_,
   processJSXAttribute: processJSXAttribute_,

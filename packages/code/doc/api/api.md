@@ -5,7 +5,7 @@
 ## @the-/code
 Code formatter of the-frameworks
 
-**Version**: 15.4.46  
+**Version**: 15.4.50  
 **License**: MIT  
 
 * [@the-/code](#module_@the-/code)
@@ -32,7 +32,7 @@ Code formatter of the-frameworks
         * [.processCSSRule(content)](#module_@the-/code.processors.processCSSRule) ⇒ <code>Promise.&lt;string&gt;</code>
         * [.processFileEnd(content)](#module_@the-/code.processors.processFileEnd) ⇒ <code>string</code>
         * [.processJSBlock(content)](#module_@the-/code.processors.processJSBlock) ⇒ <code>string</code>
-        * [.processClass(content)](#module_@the-/code.processors.processClass) ⇒ <code>string</code>
+        * [.processJSClass(content)](#module_@the-/code.processors.processJSClass) ⇒ <code>string</code>
         * [.processComment(content)](#module_@the-/code.processors.processComment) ⇒ <code>string</code>
         * [.processJSDoc(content, [options])](#module_@the-/code.processors.processJSDoc)
         * [.processJSExport(content)](#module_@the-/code.processors.processJSExport) ⇒ <code>string</code>
@@ -43,6 +43,7 @@ Code formatter of the-frameworks
         * [.processJSPrettier(content)](#module_@the-/code.processors.processJSPrettier) ⇒ <code>Promise.&lt;string&gt;</code>
         * [.processJSRequire(content)](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
         * [.processJSRequire(content)](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
+        * [.processJSString(content)](#module_@the-/code.processors.processJSString) ⇒ <code>string</code>
         * [.processJSSwitch(content)](#module_@the-/code.processors.processJSSwitch) ⇒ <code>string</code>
         * [.processJSUnused(content)](#module_@the-/code.processors.processJSUnused) ⇒ <code>string</code>
         * [.processJSXAttribute(content)](#module_@the-/code.processors.processJSXAttribute) ⇒ <code>string</code>
@@ -202,7 +203,7 @@ Processor functions
     * [.processCSSRule(content)](#module_@the-/code.processors.processCSSRule) ⇒ <code>Promise.&lt;string&gt;</code>
     * [.processFileEnd(content)](#module_@the-/code.processors.processFileEnd) ⇒ <code>string</code>
     * [.processJSBlock(content)](#module_@the-/code.processors.processJSBlock) ⇒ <code>string</code>
-    * [.processClass(content)](#module_@the-/code.processors.processClass) ⇒ <code>string</code>
+    * [.processJSClass(content)](#module_@the-/code.processors.processJSClass) ⇒ <code>string</code>
     * [.processComment(content)](#module_@the-/code.processors.processComment) ⇒ <code>string</code>
     * [.processJSDoc(content, [options])](#module_@the-/code.processors.processJSDoc)
     * [.processJSExport(content)](#module_@the-/code.processors.processJSExport) ⇒ <code>string</code>
@@ -213,6 +214,7 @@ Processor functions
     * [.processJSPrettier(content)](#module_@the-/code.processors.processJSPrettier) ⇒ <code>Promise.&lt;string&gt;</code>
     * [.processJSRequire(content)](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
     * [.processJSRequire(content)](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
+    * [.processJSString(content)](#module_@the-/code.processors.processJSString) ⇒ <code>string</code>
     * [.processJSSwitch(content)](#module_@the-/code.processors.processJSSwitch) ⇒ <code>string</code>
     * [.processJSUnused(content)](#module_@the-/code.processors.processJSUnused) ⇒ <code>string</code>
     * [.processJSXAttribute(content)](#module_@the-/code.processors.processJSXAttribute) ⇒ <code>string</code>
@@ -259,9 +261,9 @@ Processor functions
 | --- | --- |
 | content | <code>string</code> | 
 
-<a name="module_@the-/code.processors.processClass"></a>
+<a name="module_@the-/code.processors.processJSClass"></a>
 
-#### processors.processClass(content) ⇒ <code>string</code>
+#### processors.processJSClass(content) ⇒ <code>string</code>
 **Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
 **Returns**: <code>string</code> - processed  
 
@@ -375,6 +377,16 @@ Process js "use strict" statement
 | --- | --- |
 | content | <code>string</code> | 
 
+<a name="module_@the-/code.processors.processJSString"></a>
+
+#### processors.processJSString(content) ⇒ <code>string</code>
+**Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
+**Returns**: <code>string</code> - processed  
+
+| Param | Type |
+| --- | --- |
+| content | <code>string</code> | 
+
 <a name="module_@the-/code.processors.processJSSwitch"></a>
 
 #### processors.processJSSwitch(content) ⇒ <code>string</code>
@@ -448,4 +460,4 @@ Create a TheCode instance
 ### code.contentAccess()
 Define content access methods
 
-**Kind**: static method of [<code>@the-/code</code>](#module_@the-/code)
+**Kind**: static method of [<code>@the-/code</code>](#module_@the-/code)  
