@@ -1,7 +1,7 @@
 {
   "name": "@the-/templates",
   "description": "Templates for the-projects",
-  "version": "15.4.26",
+  "version": "15.4.27",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@the-/assert": "^15.4.1",
-    "@the-/const-code": "^15.4.7",
+    "@the-/const-code": "^15.4.8",
     "@the-/util-path": "^15.4.4",
     "aglob": "^3.0.2",
     "evaljson": "^6.0.4",

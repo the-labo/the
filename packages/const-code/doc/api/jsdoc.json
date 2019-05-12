@@ -5,7 +5,7 @@
     "name": "@the-/const-code",
     "kind": "module",
     "description": "Constants for the-components",
-    "version": "15.4.7",
+    "version": "15.4.8",
     "license": "MIT",
     "typicalname": "constCode",
     "meta": {

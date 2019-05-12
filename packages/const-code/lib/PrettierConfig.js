@@ -8,7 +8,7 @@
 module.exports = Object.freeze(
   /** @lends module:@the-/const-code.PrettierConfig */
   {
-    arrowParens: 'avoid',
+    arrowParens: 'always',
     jsxBracketSameLine: false,
     jsxSingleQuote: true,
     parser: 'babel',
