@@ -67,9 +67,11 @@ ${rendered}`,
     }
   }
 
-  async write(filename, content) {
+  async write(filename, content, options = {}) {
+    const { mode = '444' } = options
     const { skipped } = await writeout(filename, content, {
       force: true,
+      mode,
       mkdirp: true,
       skipIfIdentical: true,
     })
