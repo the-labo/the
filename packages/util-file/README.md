@@ -99,8 +99,6 @@ tryExample().catch((err) => console.error(err))
   - [.statSync(filename)](./doc/api/api.md#module_@the-/util-file.statSync)
   - [.writeAsJsonSync(filename,data)](./doc/api/api.md#module_@the-/util-file.writeAsJsonSync)
   - [.writeAsJsonSync(filename,data)](./doc/api/api.md#module_@the-/util-file.writeAsJsonSync)
-- module:@the-/util-file.helpers
-  - [.sortProperties()](./doc/api/api.md#module_@the-/util-file.helpers.sortProperties)
 - module.module:@the-/util-file
   - [.delSync(filename)](./doc/api/api.md#module.module_@the-/util-file.delSync)
 

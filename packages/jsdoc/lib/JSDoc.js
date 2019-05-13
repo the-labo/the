@@ -5,6 +5,7 @@
 'use strict'
 
 const aglob = require('aglob')
+const { sortProperties } = require('fmtjson')
 const jsdocToMarkdown = require('jsdoc-to-markdown')
 const { EOL } = require('os')
 const path = require('path')
@@ -49,7 +50,7 @@ class JSDoc {
       })
       await this.write(
         path.resolve(dest, jsonFile),
-        JSON.stringify(data, null, 2) + EOL,
+        JSON.stringify(sortProperties(data), null, 2) + EOL,
       )
     }
 
@@ -71,8 +72,8 @@ ${rendered}`,
     const { mode = '444' } = options
     const { skipped } = await writeout(filename, content, {
       force: true,
-      mode,
       mkdirp: true,
+      mode,
       skipIfIdentical: true,
     })
     if (!skipped) {

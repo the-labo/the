@@ -1,7 +1,7 @@
 {
   "name": "@the-/script-doc",
   "description": "Doc script for the-projects",
-  "version": "15.4.4",
+  "version": "15.4.5",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,7 +14,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/jsdoc": "^15.4.8",
+    "@the-/jsdoc": "^15.4.9",
     "@the-/util-array": "^15.4.3",
     "aglob": "^3.0.1",
     "argx": "^4.0.0",

@@ -5,7 +5,7 @@
 ## @the-/util-file
 File utility for the-framework
 
-**Version**: 15.4.3  
+**Version**: 15.4.6  
 **License**: MIT  
 
 * [@the-/util-file](#module_@the-/util-file)
@@ -95,4 +95,5 @@ Read as json
 | Param | Type |
 | --- | --- |
 | filename | <code>string</code> | 
-| data | <code>Object</code> |
+| data | <code>Object</code> | 
+

@@ -8,10 +8,10 @@
 'use strict'
 
 const { mkdirpAsync, writeFileAsync } = require('asfs')
+const { sortProperties } = require('fmtjson')
 const JSON5 = require('json5')
 const { EOL } = require('os')
 const path = require('path')
-const sortProperties = require('./helpers/sortProperties')
 const isJSON5File = require('./isJSON5File')
 
 /** @lends module:@the-/util-file.writeAsJsonSync */
