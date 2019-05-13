@@ -5,7 +5,7 @@
 ## @the-/templates
 Templates for the-projects
 
-**Version**: 15.4.27  
+**Version**: 15.4.29  
 **License**: MIT  
 
 * [@the-/templates](#module_@the-/templates)
@@ -277,4 +277,5 @@ View
 
 | Param | Type |
 | --- | --- |
-| config | <code>Object</code> |
+| config | <code>Object</code> | 
+

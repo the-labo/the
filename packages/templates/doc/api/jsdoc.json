@@ -1,33 +1,28 @@
 [
   {
-    "description": "Templates for the-projects",
     "id": "module:@the-/templates",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/templates",
+    "name": "@the-/templates",
+    "kind": "module",
+    "description": "Templates for the-projects",
+    "version": "15.4.29",
+    "license": "MIT",
+    "typicalname": "templates",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
-    "name": "@the-/templates",
-    "order": 8,
-    "typicalname": "templates",
-    "version": "15.4.27"
+    "order": 8
   },
   {
-    "description": "Define bud for bin scripts",
     "id": "module:@the-/templates.bin",
-    "kind": "function",
     "longname": "module:@the-/templates.bin",
-    "memberof": "module:@the-/templates",
-    "meta": {
-      "filename": "bin.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/templates/lib"
-    },
     "name": "bin",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "description": "Define bud for bin scripts",
+    "memberof": "module:@the-/templates",
     "params": [
       {
         "type": {
@@ -58,21 +53,21 @@
         "description": "- Bud object."
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Define bud for server controller",
-    "id": "module:@the-/templates.Ctrl",
-    "kind": "function",
-    "longname": "module:@the-/templates.Ctrl",
-    "memberof": "module:@the-/templates",
     "meta": {
-      "filename": "Ctrl.js",
       "lineno": 1,
+      "filename": "bin.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/templates.Ctrl",
+    "longname": "module:@the-/templates.Ctrl",
     "name": "Ctrl",
-    "order": 1,
+    "kind": "function",
+    "scope": "static",
+    "description": "Define bud for server controller",
+    "memberof": "module:@the-/templates",
     "params": [
       {
         "type": {
@@ -111,21 +106,21 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "Ctrl.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 1
   },
   {
-    "description": "Define bud for Dialog components",
     "id": "module:@the-/templates.Dialogs",
-    "kind": "function",
     "longname": "module:@the-/templates.Dialogs",
-    "memberof": "module:@the-/templates",
-    "meta": {
-      "filename": "Dialogs.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/templates/lib"
-    },
     "name": "Dialogs",
-    "order": 2,
+    "kind": "function",
+    "scope": "static",
+    "description": "Define bud for Dialog components",
+    "memberof": "module:@the-/templates",
     "params": [
       {
         "type": {
@@ -145,21 +140,21 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "Dialogs.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 2
   },
   {
-    "description": "Define bud for dir",
     "id": "module:@the-/templates.dir",
-    "kind": "function",
     "longname": "module:@the-/templates.dir",
-    "memberof": "module:@the-/templates",
-    "meta": {
-      "filename": "dir.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/templates/lib"
-    },
     "name": "dir",
-    "order": 3,
+    "kind": "function",
+    "scope": "static",
+    "description": "Define bud for dir",
+    "memberof": "module:@the-/templates",
     "params": [
       {
         "type": {
@@ -179,21 +174,21 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "dir.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 3
   },
   {
-    "description": "Error page",
     "id": "module:@the-/templates.errorPage",
-    "kind": "function",
     "longname": "module:@the-/templates.errorPage",
-    "memberof": "module:@the-/templates",
-    "meta": {
-      "filename": "errorPage.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/templates/lib"
-    },
     "name": "errorPage",
-    "order": 4,
+    "kind": "function",
+    "scope": "static",
+    "description": "Error page",
+    "memberof": "module:@the-/templates",
     "params": [
       {
         "type": {
@@ -213,21 +208,21 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "errorPage.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 4
   },
   {
-    "description": "eslintignore",
     "id": "module:@the-/templates.eslintignore",
-    "kind": "function",
     "longname": "module:@the-/templates.eslintignore",
-    "memberof": "module:@the-/templates",
-    "meta": {
-      "filename": "eslintignore.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/templates/lib"
-    },
     "name": "eslintignore",
-    "order": 5,
+    "kind": "function",
+    "scope": "static",
+    "description": "eslintignore",
+    "memberof": "module:@the-/templates",
     "params": [
       {
         "type": {
@@ -247,21 +242,21 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "eslintignore.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 5
   },
   {
-    "description": "Define bud for eslintrc",
     "id": "module:@the-/templates.eslintrc",
-    "kind": "function",
     "longname": "module:@the-/templates.eslintrc",
-    "memberof": "module:@the-/templates",
-    "meta": {
-      "filename": "eslintrc.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/templates/lib"
-    },
     "name": "eslintrc",
-    "order": 6,
+    "kind": "function",
+    "scope": "static",
+    "description": "Define bud for eslintrc",
+    "memberof": "module:@the-/templates",
     "params": [
       {
         "type": {
@@ -281,21 +276,21 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "eslintrc.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 6
   },
   {
-    "description": "Hook",
     "id": "module:@the-/templates.Hook",
-    "kind": "function",
     "longname": "module:@the-/templates.Hook",
-    "memberof": "module:@the-/templates",
-    "meta": {
-      "filename": "Hook.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/templates/lib"
-    },
     "name": "Hook",
-    "order": 7,
+    "kind": "function",
+    "scope": "static",
+    "description": "Hook",
+    "memberof": "module:@the-/templates",
     "params": [
       {
         "type": {
@@ -315,21 +310,21 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Define bud for LICENSE",
-    "id": "module:@the-/templates.License",
-    "kind": "function",
-    "longname": "module:@the-/templates.License",
-    "memberof": "module:@the-/templates",
     "meta": {
-      "filename": "License.js",
       "lineno": 1,
+      "filename": "Hook.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
+    "order": 7
+  },
+  {
+    "id": "module:@the-/templates.License",
+    "longname": "module:@the-/templates.License",
     "name": "License",
-    "order": 9,
+    "kind": "function",
+    "scope": "static",
+    "description": "Define bud for LICENSE",
+    "memberof": "module:@the-/templates",
     "params": [
       {
         "type": {
@@ -378,21 +373,21 @@
         "description": "- Bud object."
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Define bud for mapping",
-    "id": "module:@the-/templates.mapping",
-    "kind": "function",
-    "longname": "module:@the-/templates.mapping",
-    "memberof": "module:@the-/templates",
     "meta": {
-      "filename": "mapping.js",
       "lineno": 1,
+      "filename": "License.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
+    "order": 9
+  },
+  {
+    "id": "module:@the-/templates.mapping",
+    "longname": "module:@the-/templates.mapping",
     "name": "mapping",
-    "order": 10,
+    "kind": "function",
+    "scope": "static",
+    "description": "Define bud for mapping",
+    "memberof": "module:@the-/templates",
     "returns": [
       {
         "type": {
@@ -402,21 +397,21 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Define bud for nginx conf file",
-    "id": "module:@the-/templates.nginx",
-    "kind": "function",
-    "longname": "module:@the-/templates.nginx",
-    "memberof": "module:@the-/templates",
     "meta": {
-      "filename": "nginx.js",
       "lineno": 1,
+      "filename": "mapping.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
+    "order": 10
+  },
+  {
+    "id": "module:@the-/templates.nginx",
+    "longname": "module:@the-/templates.nginx",
     "name": "nginx",
-    "order": 11,
+    "kind": "function",
+    "scope": "static",
+    "description": "Define bud for nginx conf file",
+    "memberof": "module:@the-/templates",
     "params": [
       {
         "type": {
@@ -436,21 +431,21 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Variables for pcss",
-    "id": "module:@the-/templates.pcssVars",
-    "kind": "function",
-    "longname": "module:@the-/templates.pcssVars",
-    "memberof": "module:@the-/templates",
     "meta": {
-      "filename": "pcssVars.js",
       "lineno": 1,
+      "filename": "nginx.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
+    "order": 11
+  },
+  {
+    "id": "module:@the-/templates.pcssVars",
+    "longname": "module:@the-/templates.pcssVars",
     "name": "pcssVars",
-    "order": 12,
+    "kind": "function",
+    "scope": "static",
+    "description": "Variables for pcss",
+    "memberof": "module:@the-/templates",
     "params": [
       {
         "type": {
@@ -478,21 +473,21 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Define bud for prettierrc",
-    "id": "module:@the-/templates.prettierrc",
-    "kind": "function",
-    "longname": "module:@the-/templates.prettierrc",
-    "memberof": "module:@the-/templates",
     "meta": {
-      "filename": "prettierrc.js",
       "lineno": 1,
+      "filename": "pcssVars.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
+    "order": 12
+  },
+  {
+    "id": "module:@the-/templates.prettierrc",
+    "longname": "module:@the-/templates.prettierrc",
     "name": "prettierrc",
-    "order": 13,
+    "kind": "function",
+    "scope": "static",
+    "description": "Define bud for prettierrc",
+    "memberof": "module:@the-/templates",
     "params": [
       {
         "type": {
@@ -512,21 +507,21 @@
         }
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Define bud for README.md",
-    "id": "module:@the-/templates.Readme",
-    "kind": "function",
-    "longname": "module:@the-/templates.Readme",
-    "memberof": "module:@the-/templates",
     "meta": {
-      "filename": "Readme.js",
       "lineno": 1,
+      "filename": "prettierrc.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
+    "order": 13
+  },
+  {
+    "id": "module:@the-/templates.Readme",
+    "longname": "module:@the-/templates.Readme",
     "name": "Readme",
-    "order": 14,
+    "kind": "function",
+    "scope": "static",
+    "description": "Define bud for README.md",
+    "memberof": "module:@the-/templates",
     "params": [
       {
         "type": {
@@ -611,35 +606,35 @@
         "description": "- Bud object."
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "Readme.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 14
   },
   {
     "id": "module:@the-/templates.Resources",
-    "kind": "function",
     "longname": "module:@the-/templates.Resources",
+    "name": "Resources",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/templates",
     "meta": {
-      "filename": "Resources.js",
       "lineno": 1,
+      "filename": "Resources.js",
       "path": "/Users/okuni/Projects/the/packages/templates/lib"
     },
-    "name": "Resources",
-    "order": 15,
-    "scope": "static"
+    "order": 15
   },
   {
-    "description": "Scene",
     "id": "module:@the-/templates.Scene",
-    "kind": "function",
     "longname": "module:@the-/templates.Scene",
-    "memberof": "module:@the-/templates",
-    "meta": {
-      "filename": "Scene.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/templates/lib"
-    },
     "name": "Scene",
-    "order": 16,
+    "kind": "function",
+    "scope": "static",
+    "description": "Scene",
+    "memberof": "module:@the-/templates",
     "params": [
       {
         "type": {
@@ -659,35 +654,35 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "Scene.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 16
   },
   {
     "id": "module:@the-/templates.scopes",
-    "kind": "function",
     "longname": "module:@the-/templates.scopes",
-    "memberof": "module:@the-/templates",
-    "meta": {
-      "filename": "scopes.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/templates/lib"
-    },
     "name": "scopes",
-    "order": 17,
-    "scope": "static"
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/templates",
+    "meta": {
+      "lineno": 1,
+      "filename": "scopes.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 17
   },
   {
-    "description": "Stateful",
     "id": "module:@the-/templates.Stateful",
-    "kind": "function",
     "longname": "module:@the-/templates.Stateful",
-    "memberof": "module:@the-/templates",
-    "meta": {
-      "filename": "Stateful.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/templates/lib"
-    },
     "name": "Stateful",
-    "order": 18,
+    "kind": "function",
+    "scope": "static",
+    "description": "Stateful",
+    "memberof": "module:@the-/templates",
     "params": [
       {
         "type": {
@@ -707,21 +702,21 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "Stateful.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 18
   },
   {
-    "description": "Stateless",
     "id": "module:@the-/templates.Stateless",
-    "kind": "function",
     "longname": "module:@the-/templates.Stateless",
-    "memberof": "module:@the-/templates",
-    "meta": {
-      "filename": "Stateless.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/templates/lib"
-    },
     "name": "Stateless",
-    "order": 19,
+    "kind": "function",
+    "scope": "static",
+    "description": "Stateless",
+    "memberof": "module:@the-/templates",
     "params": [
       {
         "type": {
@@ -741,21 +736,21 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "Stateless.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 19
   },
   {
-    "description": "Stream",
     "id": "module:@the-/templates.Stream",
-    "kind": "function",
     "longname": "module:@the-/templates.Stream",
-    "memberof": "module:@the-/templates",
-    "meta": {
-      "filename": "Stream.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/templates/lib"
-    },
     "name": "Stream",
-    "order": 20,
+    "kind": "function",
+    "scope": "static",
+    "description": "Stream",
+    "memberof": "module:@the-/templates",
     "params": [
       {
         "type": {
@@ -775,21 +770,21 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "Stream.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 20
   },
   {
-    "description": "Define bud for readme",
     "id": "module:@the-/templates.test",
-    "kind": "function",
     "longname": "module:@the-/templates.test",
-    "memberof": "module:@the-/templates",
-    "meta": {
-      "filename": "test.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/templates/lib"
-    },
     "name": "test",
-    "order": 21,
+    "kind": "function",
+    "scope": "static",
+    "description": "Define bud for readme",
+    "memberof": "module:@the-/templates",
     "returns": [
       {
         "type": {
@@ -799,21 +794,21 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "test.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 21
   },
   {
-    "description": "Error page",
     "id": "module:@the-/templates.vhost",
-    "kind": "function",
     "longname": "module:@the-/templates.vhost",
-    "memberof": "module:@the-/templates",
-    "meta": {
-      "filename": "vhost.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/templates/lib"
-    },
     "name": "vhost",
-    "order": 22,
+    "kind": "function",
+    "scope": "static",
+    "description": "Error page",
+    "memberof": "module:@the-/templates",
     "params": [
       {
         "type": {
@@ -833,21 +828,21 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "vhost.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 22
   },
   {
-    "description": "View",
     "id": "module:@the-/templates.View",
-    "kind": "function",
     "longname": "module:@the-/templates.View",
-    "memberof": "module:@the-/templates",
-    "meta": {
-      "filename": "View.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/templates/lib"
-    },
     "name": "View",
-    "order": 23,
+    "kind": "function",
+    "scope": "static",
+    "description": "View",
+    "memberof": "module:@the-/templates",
     "params": [
       {
         "type": {
@@ -867,6 +862,11 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "View.js",
+      "path": "/Users/okuni/Projects/the/packages/templates/lib"
+    },
+    "order": 23
   }
 ]
