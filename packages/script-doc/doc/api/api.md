@@ -5,7 +5,7 @@
 ## @the-/script-doc
 Doc script for the-projects
 
-**Version**: 15.4.3  
+**Version**: 15.4.5  
 <a name="module_@the-/script-doc.doc"></a>
 
 ### @the-/script-doc.doc([dirname], [options]) ⇒ <code>Promise</code>
@@ -17,3 +17,4 @@ Generate jsdoc
 | --- | --- | --- | --- |
 | [dirname] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | Project directory name |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
+

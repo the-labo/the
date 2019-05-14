@@ -77,13 +77,9 @@ ${rendered}`,
       skipIfIdentical: true,
     })
     if (!skipped) {
+      const generated = path.relative(process.cwd(), filename)
       this.logging &&
-        this.logging(
-          `[${this.prefix}] File generated: ${path.relative(
-            process.cwd(),
-            filename,
-          )}`,
-        )
+        this.logging(`[${this.prefix}] File generated: ${generated}`)
     }
   }
 }
