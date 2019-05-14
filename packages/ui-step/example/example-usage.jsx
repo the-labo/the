@@ -21,7 +21,12 @@ class ExampleComponent extends React.Component {
         <TheButtonStyle />
 
         <TheStepBar
-          nodes={['The first step', 'The second step', 'The third step']}
+          nodes={[
+            'The first step',
+            'The second step',
+            'The third step',
+            'The fourth step',
+          ]}
           onStep={(step) => this.setState({ step })}
           step={this.state.step}
         />

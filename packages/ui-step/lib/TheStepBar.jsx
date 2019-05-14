@@ -4,18 +4,43 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { TheIcon } from '@the-/ui-icon'
+import { changedProps } from '@the-/util-ui'
 
 class TheStepBar extends React.Component {
+  constructor(props) {
+    super(props)
+    this.elmRef = React.createRef()
+  }
+  componentDidUpdate(prevProps) {
+    const diff = changedProps(prevProps, this.props)
+    if ('step' in diff) {
+      this.scrollToStep(diff.step)
+    }
+  }
+
   render() {
     const { nodes, onStep, step } = this.props
 
     return (
-      <div className={c('the-step-bar')} role='tablist'>
+      <div className={c('the-step-bar')} ref={this.elmRef} role='tablist'>
         {nodes.map((node, index) => (
           <TheStepBar.Item key={index} {...{ index, node, onStep, step }} />
         ))}
       </div>
     )
+  }
+
+  scrollToStep(step) {
+    const elm = this.elmRef.current
+    if (!elm) {
+      return
+    }
+    const child = (elm.childNodes || [])[step]
+    if (!child) {
+      return
+    }
+    const center = child.offsetLeft + child.offsetWidth / 2
+    elm.scrollLeft = center - elm.offsetWidth / 2
   }
 }
 

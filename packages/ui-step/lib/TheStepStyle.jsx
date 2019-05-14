@@ -81,11 +81,15 @@ TheStepStyle.data = (options) => {
     asStyleData({
       '.the-step-bar': {
         alignItems: 'stretch',
+        boxSizing: 'border-box',
         display: 'flex',
         flexWrap: 'nowrap',
         fontSize: 'small',
         justifyContent: 'space-between',
-        margin: '8px 0',
+        margin: '8px 0 -12px',
+        overflow: 'auto',
+        paddingBottom: '20px',
+        scrollBehavior: 'smooth',
       },
       '.the-step-bar-item': {
         '&:first-child': {
@@ -129,11 +133,13 @@ TheStepStyle.data = (options) => {
           cursor: 'pointer',
         },
         alignItems: 'center',
+        boxSizing: 'border-box',
         color: lightTextColor,
         display: 'inline-flex',
         flexDirection: 'column',
         flexGrow: 1,
         justifyContent: 'flex-start',
+        minWidth: 64,
         width: 'auto',
       },
       '.the-step-bar-item-content': {
