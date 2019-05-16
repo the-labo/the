@@ -5,7 +5,7 @@
     "name": "@the-/ui-step",
     "kind": "module",
     "description": "Steps for the-components",
-    "version": "15.4.5",
+    "version": "15.4.6",
     "typicalname": "uiStep",
     "meta": {
       "lineno": 2,
