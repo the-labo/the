@@ -8,10 +8,12 @@ const { readAsJson, unlinkAsync, writeAsJson } = require('@the-/util-file')
 
 /** @lends module:@the-/code.FormatCache */
 class FormatCache {
-  constructor(filename) {
+  constructor(filename, options = {}) {
+    const { version = 'unknown' } = options
     this.filename = filename
     this.needsSync = true
     this.data = null
+    this.version = version
   }
 
   async clear() {
@@ -63,11 +65,19 @@ class FormatCache {
   }
 
   async _readFile() {
-    return (await readAsJson(this.filename).catch(() => null)) || {}
+    const data = (await readAsJson(this.filename).catch(() => null)) || {}
+    if (data.$$version !== this.version) {
+      return {}
+    }
+    delete data.$$version
+    return data
   }
 
   async _writeFile(data) {
-    await writeAsJson(this.filename, data || {})
+    await writeAsJson(this.filename, {
+      ...(data || {}),
+      $$version: this.version,
+    })
   }
 }
 

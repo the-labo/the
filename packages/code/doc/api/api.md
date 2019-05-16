@@ -5,7 +5,7 @@
 ## @the-/code
 Code formatter of the-frameworks
 
-**Version**: 15.4.56  
+**Version**: 15.5.0  
 **License**: MIT  
 
 * [@the-/code](#module_@the-/code)

@@ -13,6 +13,7 @@ const Types = require('./constants/Types')
 const { typeHelper } = require('./helpers')
 const FormatCache = require('./helpers/FormatCache')
 const p = require('./processors')
+const pkg = require('../package')
 const debug = require('debug')('the:code')
 
 /** @lends module:@the-/code.TheCode */
@@ -70,7 +71,9 @@ class TheCode {
       [Types.TEXT]: [fileEnd && p.processFileEnd].filter(Boolean),
       [Types.YAML]: [yaml && p.processYAML].filter(Boolean),
     }
-    this.cache = new FormatCache(cacheFile)
+    this.cache = new FormatCache(cacheFile, {
+      version: pkg.version,
+    })
   }
 
   shouldSkipContent(content) {
