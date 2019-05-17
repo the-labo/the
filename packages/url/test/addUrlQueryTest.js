@@ -30,6 +30,10 @@ describe('add-query', () => {
       addUrlQuery('https://hoge.com:8080', { a: 'a1' }),
       'https://hoge.com:8080/?a=a1',
     )
+    equal(
+      addUrlQuery('/jj?x=1', { w: 0, y: null, z: void 0 }),
+      '/jj?x=1&w=0&y=',
+    )
   })
 })
 

@@ -1,33 +1,28 @@
 [
   {
-    "description": "URL utility for the-framework",
     "id": "module:@the-/url",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/url",
+    "name": "@the-/url",
+    "kind": "module",
+    "description": "URL utility for the-framework",
+    "version": "15.4.4",
+    "license": "MIT",
+    "typicalname": "url",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/url/lib"
     },
-    "name": "@the-/url",
-    "order": 2,
-    "typicalname": "url",
-    "version": "15.4.3"
+    "order": 2
   },
   {
-    "description": "Add query to url string",
     "id": "module:@the-/url.addQuery",
-    "kind": "function",
     "longname": "module:@the-/url.addQuery",
-    "memberof": "module:@the-/url",
-    "meta": {
-      "filename": "addUrlQuery.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/url/lib"
-    },
     "name": "addQuery",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "description": "Add query to url string",
+    "memberof": "module:@the-/url",
     "params": [
       {
         "type": {
@@ -58,21 +53,21 @@
         "description": "Added url string"
       }
     ],
-    "scope": "static"
-  },
-  {
-    "description": "Format urls",
-    "id": "module:@the-/url.formatUrl",
-    "kind": "function",
-    "longname": "module:@the-/url.formatUrl",
-    "memberof": "module:@the-/url",
     "meta": {
-      "filename": "formatUrl.js",
       "lineno": 1,
+      "filename": "addUrlQuery.js",
       "path": "/Users/okuni/Projects/the/packages/url/lib"
     },
+    "order": 0
+  },
+  {
+    "id": "module:@the-/url.formatUrl",
+    "longname": "module:@the-/url.formatUrl",
     "name": "formatUrl",
-    "order": 1,
+    "kind": "function",
+    "scope": "static",
+    "description": "Format urls",
+    "memberof": "module:@the-/url",
     "params": [
       {
         "type": {
@@ -105,6 +100,11 @@
         "description": "Formatted string"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "formatUrl.js",
+      "path": "/Users/okuni/Projects/the/packages/url/lib"
+    },
+    "order": 1
   }
 ]
