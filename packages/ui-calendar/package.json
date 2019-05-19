@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-calendar",
   "description": "Calendar of the-components",
-  "version": "15.4.4",
+  "version": "15.4.5",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,15 +18,21 @@
     "@the-/ui-style": "^15.4.4",
     "@the-/util-color": "^15.4.0",
     "@the-/util-ui": "^15.4.1",
+    "bui": "^0.1.16",
     "classnames": "^2.2.6",
     "moment": "^2.24.0",
+    "npm": "^6.9.0",
     "objnest": "^5.0.6",
     "prop-types": "^15.7.2",
-    "react-big-calendar": "^0.20.4"
+    "react": "^16.8.6",
+    "react-big-calendar": "^0.21.0",
+    "react-dom": "^16.8.6",
+    "run": "^1.4.0"
   },
   "devDependencies": {
     "@the-/ui-demo": "^15.2.4",
-    "coz": "^7.0.19"
+    "coz": "^7.0.19",
+    "react-router-dom": "^5.0.0"
   },
   "engines": {
     "node": ">=10",
