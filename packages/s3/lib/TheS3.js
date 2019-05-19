@@ -15,8 +15,11 @@ const fs = require('fs')
 const mime = require('mime')
 const path = require('path')
 const { promisify } = require('util')
+const theAssert = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
 const readFileAsync = promisify(fs.readFile)
+
+const assert = theAssert('TheS3')
 
 /** @lends module:@the-/s3.TheS3 */
 class TheS3 {
@@ -31,6 +34,8 @@ class TheS3 {
     } = config
 
     unlessProduction(() => {
+      assert(accessKeyId, 'accessKeyId is required')
+      assert(secretAccessKey, 'secretAccessKey is required')
       const restKeys = Object.keys(rest)
       if (restKeys.length > 0) {
         console.warn('[TheS3] Unknown configurations:', restKeys)
