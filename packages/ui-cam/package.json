@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@the-/check": "^15.5.2",
-    "@the-/const-ui": "^15.4.2",
+    "@the-/const-ui": "^15.4.5",
     "@the-/media": "^15.4.2",
     "@the-/ui-icon": "^15.4.4",
     "@the-/ui-spin": "^15.4.4",

@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/util-file": "^15.4.3",
+    "@the-/util-file": "^15.4.6",
     "abind": "^1.0.3",
     "asfs": "^2.1.1",
     "json-pointer": "^0.6.0",

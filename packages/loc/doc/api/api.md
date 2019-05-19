@@ -5,7 +5,7 @@
 ## @the-/loc
 Locale resolver for the-framework
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/loc](#module_@the-/loc)
@@ -119,4 +119,4 @@ Create a TheLoc instance
 ### loc.default()
 Default exports
 
-**Kind**: static method of [<code>@the-/loc</code>](#module_@the-/loc)
+**Kind**: static method of [<code>@the-/loc</code>](#module_@the-/loc)  

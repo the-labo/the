@@ -20,13 +20,13 @@
     "clay-driver-base": "^4.1.7",
     "clay-list-pager": "^3.0.1",
     "clay-resource-name": "^4.0.5",
-    "sequelize": "^5.8.5",
+    "sequelize": "^5.8.6",
     "utf8": "^3.0.0"
   },
   "devDependencies": {
     "clay-lump": "^4.4.25",
     "mysql2": "^1.6.5",
-    "sqlite3": "^4.0.7"
+    "sqlite3": "^4.0.8"
   },
   "engines": {
     "node": ">=10",

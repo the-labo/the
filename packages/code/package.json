@@ -17,7 +17,7 @@
   "dependencies": {
     "@the-/ast": "^15.4.5",
     "@the-/const-code": "^15.4.8",
-    "@the-/util-file": "^15.4.3",
+    "@the-/util-file": "^15.4.6",
     "@the-/util-path": "^15.4.4",
     "aglob": "^3.0.2",
     "asfs": "^2.2.3",
@@ -26,7 +26,7 @@
     "debug": "^4.1.1",
     "fmtjson": "^4.0.6",
     "postcss": "^7.0.16",
-    "prettier": "^1.17.0",
+    "prettier": "^1.17.1",
     "writeout": "^2.2.4",
     "yaml": "^1.5.1"
   },

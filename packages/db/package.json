@@ -45,7 +45,7 @@
     "colorprint": "^5.0.3",
     "eslint": "^5.16.0",
     "jsdoc-strip-async-await": "^0.1.0",
-    "sqlite3": "^4.0.7"
+    "sqlite3": "^4.0.8"
   },
   "engines": {
     "node": ">=10",

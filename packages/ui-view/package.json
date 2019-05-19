@@ -11,7 +11,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/const-ui": "^15.4.2",
+    "@the-/const-ui": "^15.4.5",
     "@the-/ui-button": "^15.4.0",
     "@the-/ui-container": "^15.4.4",
     "@the-/ui-icon": "^15.4.4",

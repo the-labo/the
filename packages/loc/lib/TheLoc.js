@@ -34,7 +34,9 @@ class TheLoc {
   bind(lang) {
     let scope = this[lang]
     if (!scope) {
-      const defaultLang = Object.keys(this)[0]
+      const defaultLang = Object.keys(this)
+        .filter((k) => !/^\$/.test(k))
+        .filter((k) => !/^_/.test(k))[0]
       console.warn(
         `[TheLoc] lang "${lang}" is not found. Using "${defaultLang}" instead.`,
       )

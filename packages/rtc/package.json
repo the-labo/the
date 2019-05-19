@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "socket.io": "^2.2.0",
-    "wrtc": "^0.4.0"
+    "wrtc": "^0.4.1"
   },
   "devDependencies": {
     "@the-/rtc-client": "file:../rtc-client",

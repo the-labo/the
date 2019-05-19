@@ -4,7 +4,7 @@ const { TheResize } = require('@the-/resize')
 
 async function tryExample() {
   const resize = new TheResize({
-    fit: 'inside',
+    fit: 'inside', // 'cover','contain','fill', 'inside' or 'outside'
 
     height: 200,
     width: 200,

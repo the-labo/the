@@ -1,7 +1,7 @@
 {
   "name": "@the-/jsdoc",
   "description": "JSDoc generator",
-  "version": "15.4.10",
+  "version": "15.4.11",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -15,7 +15,7 @@
     "@the-/util-array": "^15.4.3",
     "aglob": "^3.0.2",
     "fmtjson": "^4.0.6",
-    "jsdoc-to-markdown": "^4.0.1",
+    "jsdoc-to-markdown": "^5.0.0",
     "writeout": "^2.2.4"
   },
   "devDependencies": {},

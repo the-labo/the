@@ -14,7 +14,7 @@
   "dependencies": {
     "@the-/check": "^15.5.2",
     "@the-/ui-router": "^15.4.0",
-    "@the-/url": "^15.4.3",
+    "@the-/url": "^15.4.4",
     "@the-/window": "^15.4.1",
     "history": "^4.9.0"
   },

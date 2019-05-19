@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@the-/tmp": "^15.4.5",
-    "@the-/util-file": "^15.4.3",
+    "@the-/util-file": "^15.4.6",
     "aglob": "^3.0.2",
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.3",
