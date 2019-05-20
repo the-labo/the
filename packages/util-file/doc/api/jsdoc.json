@@ -230,9 +230,9 @@
     "order": 7
   },
   {
-    "id": "module:@the-/util-file.writeAsJsonSync",
-    "longname": "module:@the-/util-file.writeAsJsonSync",
-    "name": "writeAsJsonSync",
+    "id": "module:@the-/util-file.writeAsJson",
+    "longname": "module:@the-/util-file.writeAsJson",
+    "name": "writeAsJson",
     "kind": "function",
     "scope": "static",
     "memberof": "module:@the-/util-file",
@@ -252,6 +252,25 @@
           ]
         },
         "name": "data"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": true,
+        "name": "options.sort"
       }
     ],
     "returns": [
@@ -293,6 +312,25 @@
           ]
         },
         "name": "data"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": true,
+        "name": "options.sort"
       }
     ],
     "meta": {

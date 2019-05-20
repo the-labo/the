@@ -3,6 +3,8 @@
  * @function writeAsJsonSync
  * @param {string} filename
  * @param {Object} data
+ * @param {Object} [options]
+ * @param {boolean} [options.sort=true]
  */
 'use strict'
 
@@ -15,9 +17,12 @@ const path = require('path')
 const isJSON5File = require('./isJSON5File')
 
 /** @lends module:@the-/util-file.writeAsJsonSync */
-function writeAsJsonSync(filename, data) {
+function writeAsJsonSync(filename, data, options = {}) {
   mkdirp.sync(path.dirname(filename))
-  data = sortProperties(data)
+  const { sort = true } = options
+  if (sort) {
+    data = sortProperties(data)
+  }
   const isJSON5 = isJSON5File(filename)
   const content = isJSON5
     ? JSON5.stringify(data, null, 2) + EOL
