@@ -5,7 +5,7 @@
 ## @the-/seat
 Shared value manager
 
-**Version**: 15.4.2  
+**Version**: 15.4.6  
 **License**: MIT  
 
 * [@the-/seat](#module_@the-/seat)
@@ -188,4 +188,4 @@ Alias of [create](#module_@the-/seat.create)
 <a name="module_@the-/seat.scopeMix"></a>
 
 ### seat.scopeMix()
-**Kind**: static method of [<code>@the-/seat</code>](#module_@the-/seat)
+**Kind**: static method of [<code>@the-/seat</code>](#module_@the-/seat)  

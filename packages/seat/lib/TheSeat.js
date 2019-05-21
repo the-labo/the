@@ -147,7 +147,7 @@ class TheSeat extends TheSeatBase {
     this.lock()
     mkdirp.sync(path.dirname(filename))
     copyAsJsonSync(filename, backupFilename)
-    writeAsJsonSync(filename, data || {}, null, 2)
+    writeAsJsonSync(filename, data || {})
     this.unlock()
   }
 
