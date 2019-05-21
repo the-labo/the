@@ -97,8 +97,8 @@ tryExample().catch((err) => console.error(err))
   - [.readAsJson(filename)](./doc/api/api.md#module_@the-/util-file.readAsJson)
   - [.readAsJsonSync(filename)](./doc/api/api.md#module_@the-/util-file.readAsJsonSync)
   - [.statSync(filename)](./doc/api/api.md#module_@the-/util-file.statSync)
-  - [.writeAsJsonSync(filename,data)](./doc/api/api.md#module_@the-/util-file.writeAsJsonSync)
-  - [.writeAsJsonSync(filename,data)](./doc/api/api.md#module_@the-/util-file.writeAsJsonSync)
+  - [.writeAsJson(filename,data,options)](./doc/api/api.md#module_@the-/util-file.writeAsJson)
+  - [.writeAsJsonSync(filename,data,options)](./doc/api/api.md#module_@the-/util-file.writeAsJsonSync)
 - module.module:@the-/util-file
   - [.delSync(filename)](./doc/api/api.md#module.module_@the-/util-file.delSync)
 

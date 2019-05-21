@@ -15,8 +15,8 @@ File utility for the-framework
     * [.readAsJson(filename)](#module_@the-/util-file.readAsJson) ⇒ <code>Promise.&lt;Object&gt;</code>
     * [.readAsJsonSync(filename)](#module_@the-/util-file.readAsJsonSync) ⇒ <code>Object</code>
     * [.statSync(filename)](#module_@the-/util-file.statSync)
-    * [.writeAsJsonSync(filename, data)](#module_@the-/util-file.writeAsJsonSync) ⇒ <code>Promise</code>
-    * [.writeAsJsonSync(filename, data)](#module_@the-/util-file.writeAsJsonSync)
+    * [.writeAsJson(filename, data, [options])](#module_@the-/util-file.writeAsJson) ⇒ <code>Promise</code>
+    * [.writeAsJsonSync(filename, data, [options])](#module_@the-/util-file.writeAsJsonSync)
 
 <a name="module_@the-/util-file.copyAsJsonSync"></a>
 
@@ -77,23 +77,27 @@ Read as json
 | --- | --- |
 | filename | <code>string</code> | 
 
-<a name="module_@the-/util-file.writeAsJsonSync"></a>
+<a name="module_@the-/util-file.writeAsJson"></a>
 
-### utilFile.writeAsJsonSync(filename, data) ⇒ <code>Promise</code>
+### utilFile.writeAsJson(filename, data, [options]) ⇒ <code>Promise</code>
 **Kind**: static method of [<code>@the-/util-file</code>](#module_@the-/util-file)  
 
-| Param | Type |
-| --- | --- |
-| filename | <code>string</code> | 
-| data | <code>Object</code> | 
+| Param | Type | Default |
+| --- | --- | --- |
+| filename | <code>string</code> |  | 
+| data | <code>Object</code> |  | 
+| [options] | <code>Object</code> |  | 
+| [options.sort] | <code>boolean</code> | <code>true</code> | 
 
 <a name="module_@the-/util-file.writeAsJsonSync"></a>
 
-### utilFile.writeAsJsonSync(filename, data)
+### utilFile.writeAsJsonSync(filename, data, [options])
 **Kind**: static method of [<code>@the-/util-file</code>](#module_@the-/util-file)  
 
-| Param | Type |
-| --- | --- |
-| filename | <code>string</code> | 
-| data | <code>Object</code> | 
+| Param | Type | Default |
+| --- | --- | --- |
+| filename | <code>string</code> |  | 
+| data | <code>Object</code> |  | 
+| [options] | <code>Object</code> |  | 
+| [options.sort] | <code>boolean</code> | <code>true</code> | 
 
