@@ -73,6 +73,12 @@ class TheSecret extends TheSecretBase {
     const meta = qs.parse(data[this.metaFieldKey] || '')
     const iv =
       'iv' in meta ? Buffer.from(meta.iv, 'hex') : crypto.randomBytes(IV_LENGTH)
+    const needsEncrypt = Object.entries(data)
+      .filter(([k]) => !/^_/.test(k))
+      .some(([, v]) => !this.isEncrypted(v))
+    if (!needsEncrypt) {
+      return
+    }
     const encrypted = this.encryptData(data, { iv })
     this.save({
       ...encrypted,

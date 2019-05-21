@@ -32,6 +32,9 @@ describe('the-secret', () => {
     deepEqual(data, { v1: 'this is v1' })
     secret.encrypt()
     secret.encrypt()
+    const data2 = readAsJsonSync(filename)
+    ok(data2)
+    ok(/data:encrypted/.test(data2.v1))
   })
 })
 

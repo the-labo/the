@@ -5,7 +5,7 @@
 ## @the-/secret
 Secret store for the-frameworks
 
-**Version**: 15.4.4  
+**Version**: 15.4.5  
 **License**: MIT  
 
 * [@the-/secret](#module_@the-/secret)
