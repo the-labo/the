@@ -1,7 +1,7 @@
 {
   "name": "@the-/db",
   "description": "DB for the-framework",
-  "version": "15.4.4",
+  "version": "15.4.7",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -38,7 +38,7 @@
     "msgpack5": "^4.2.1",
     "mysql2": "^1.6.5",
     "path": "^0.12.7",
-    "the-driver-rdb": "^2.3.5",
+    "the-driver-rdb": "^2.3.7",
     "uuid": "^3.3.2"
   },
   "devDependencies": {

@@ -1,27 +1,26 @@
 [
   {
-    "description": "DB for the-framework",
     "id": "module:@the-/db",
-    "kind": "module",
-    "license": "MIT",
     "longname": "module:@the-/db",
+    "name": "@the-/db",
+    "kind": "module",
+    "description": "DB for the-framework",
+    "version": "15.4.6",
+    "license": "MIT",
+    "typicalname": "db",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib"
     },
-    "name": "@the-/db",
-    "order": 4,
-    "typicalname": "db",
-    "version": "15.4.4"
+    "order": 4
   },
   {
     "id": "module:@the-/db.TheDB()",
-    "kind": "constructor",
     "longname": "module:@the-/db.TheDB",
-    "memberof": "module:@the-/db.TheDB",
     "name": "TheDB",
-    "order": 7,
+    "kind": "constructor",
+    "memberof": "module:@the-/db.TheDB",
     "params": [
       {
         "type": {
@@ -143,39 +142,35 @@
         "description": "Database resource classes",
         "name": "config.resources"
       }
-    ]
+    ],
+    "order": 7
   },
   {
-    "description": "Resource of data history",
     "id": "module:@the-/db.TheLogResource()",
-    "kind": "constructor",
     "longname": "module:@the-/db.TheLogResource",
-    "memberof": "module:@the-/db.TheLogResource",
     "name": "TheLogResource",
+    "kind": "constructor",
+    "description": "Resource of data history",
+    "memberof": "module:@the-/db.TheLogResource",
     "order": 48
   },
   {
-    "description": "Resource to manage schema",
     "id": "module:@the-/db.TheSchemaResource()",
-    "kind": "constructor",
     "longname": "module:@the-/db.TheSchemaResource",
-    "memberof": "module:@the-/db.TheSchemaResource",
     "name": "TheSchemaResource",
+    "kind": "constructor",
+    "description": "Resource to manage schema",
+    "memberof": "module:@the-/db.TheSchemaResource",
     "order": 50
   },
   {
-    "description": "Register hooks from mapping",
     "id": "module:@the-/db.TheDB#hooksFromMapping",
-    "kind": "function",
     "longname": "module:@the-/db.TheDB#hooksFromMapping",
-    "memberof": "module:@the-/db.TheDB",
-    "meta": {
-      "filename": "TheDB.js",
-      "lineno": 133,
-      "path": "/Users/okuni/Projects/the/packages/db/lib"
-    },
     "name": "hooksFromMapping",
-    "order": 9,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Register hooks from mapping",
+    "memberof": "module:@the-/db.TheDB",
     "params": [
       {
         "type": {
@@ -186,21 +181,21 @@
         "name": "HookMapping"
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Register resource form Resource Class",
-    "id": "module:@the-/db.TheDB#load",
-    "kind": "function",
-    "longname": "module:@the-/db.TheDB#load",
-    "memberof": "module:@the-/db.TheDB",
     "meta": {
+      "lineno": 133,
       "filename": "TheDB.js",
-      "lineno": 150,
       "path": "/Users/okuni/Projects/the/packages/db/lib"
     },
+    "order": 9
+  },
+  {
+    "id": "module:@the-/db.TheDB#load",
+    "longname": "module:@the-/db.TheDB#load",
     "name": "load",
-    "order": 10,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Register resource form Resource Class",
+    "memberof": "module:@the-/db.TheDB",
     "params": [
       {
         "type": {
@@ -231,21 +226,21 @@
         "description": "Loaded resource instance"
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Load resources from mapping object",
-    "id": "module:@the-/db.TheDB#loadFromMapping",
-    "kind": "function",
-    "longname": "module:@the-/db.TheDB#loadFromMapping",
-    "memberof": "module:@the-/db.TheDB",
     "meta": {
+      "lineno": 150,
       "filename": "TheDB.js",
-      "lineno": 272,
       "path": "/Users/okuni/Projects/the/packages/db/lib"
     },
+    "order": 10
+  },
+  {
+    "id": "module:@the-/db.TheDB#loadFromMapping",
+    "longname": "module:@the-/db.TheDB#loadFromMapping",
     "name": "loadFromMapping",
-    "order": 11,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Load resources from mapping object",
+    "memberof": "module:@the-/db.TheDB",
     "params": [
       {
         "type": {
@@ -257,21 +252,21 @@
         "name": "ResourceMapping"
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Register plugins from mapping",
-    "id": "module:@the-/db.TheDB#pluginFromMapping",
-    "kind": "function",
-    "longname": "module:@the-/db.TheDB#pluginFromMapping",
-    "memberof": "module:@the-/db.TheDB",
     "meta": {
+      "lineno": 272,
       "filename": "TheDB.js",
-      "lineno": 282,
       "path": "/Users/okuni/Projects/the/packages/db/lib"
     },
+    "order": 11
+  },
+  {
+    "id": "module:@the-/db.TheDB#pluginFromMapping",
+    "longname": "module:@the-/db.TheDB#pluginFromMapping",
     "name": "pluginFromMapping",
-    "order": 12,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Register plugins from mapping",
+    "memberof": "module:@the-/db.TheDB",
     "params": [
       {
         "type": {
@@ -282,21 +277,21 @@
         "name": "PluginMapping"
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Aut close before exit",
-    "id": "module:@the-/db.TheDB#unref",
-    "kind": "function",
-    "longname": "module:@the-/db.TheDB#unref",
-    "memberof": "module:@the-/db.TheDB",
     "meta": {
+      "lineno": 282,
       "filename": "TheDB.js",
-      "lineno": 295,
       "path": "/Users/okuni/Projects/the/packages/db/lib"
     },
+    "order": 12
+  },
+  {
+    "id": "module:@the-/db.TheDB#unref",
+    "longname": "module:@the-/db.TheDB#unref",
     "name": "unref",
-    "order": 13,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Aut close before exit",
+    "memberof": "module:@the-/db.TheDB",
     "params": [],
     "returns": [
       {
@@ -308,22 +303,21 @@
         "description": "this"
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Drop database",
-    "id": "module:@the-/db.TheDB#drop",
-    "kind": "function",
-    "longname": "module:@the-/db.TheDB#drop",
-    "memberof": "module:@the-/db.TheDB",
     "meta": {
+      "lineno": 295,
       "filename": "TheDB.js",
-      "lineno": 338,
       "path": "/Users/okuni/Projects/the/packages/db/lib"
     },
+    "order": 13
+  },
+  {
+    "id": "module:@the-/db.TheDB#drop",
+    "longname": "module:@the-/db.TheDB#drop",
     "name": "drop",
-    "order": 14,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Drop database",
+    "memberof": "module:@the-/db.TheDB",
     "params": [],
     "returns": [
       {
@@ -334,22 +328,22 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Invalidate entity",
-    "id": "module:@the-/db.TheDB#invalidate",
-    "kind": "function",
-    "longname": "module:@the-/db.TheDB#invalidate",
-    "memberof": "module:@the-/db.TheDB",
     "meta": {
+      "lineno": 338,
       "filename": "TheDB.js",
-      "lineno": 369,
       "path": "/Users/okuni/Projects/the/packages/db/lib"
     },
+    "async": true,
+    "order": 14
+  },
+  {
+    "id": "module:@the-/db.TheDB#invalidate",
+    "longname": "module:@the-/db.TheDB#invalidate",
     "name": "invalidate",
-    "order": 15,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Invalidate entity",
+    "memberof": "module:@the-/db.TheDB",
     "params": [
       {
         "type": {
@@ -369,22 +363,22 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Create transaction",
-    "id": "module:@the-/db.TheDB#transaction",
-    "kind": "function",
-    "longname": "module:@the-/db.TheDB#transaction",
-    "memberof": "module:@the-/db.TheDB",
     "meta": {
+      "lineno": 369,
       "filename": "TheDB.js",
-      "lineno": 399,
       "path": "/Users/okuni/Projects/the/packages/db/lib"
     },
+    "async": true,
+    "order": 15
+  },
+  {
+    "id": "module:@the-/db.TheDB#transaction",
+    "longname": "module:@the-/db.TheDB#transaction",
     "name": "transaction",
-    "order": 16,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Create transaction",
+    "memberof": "module:@the-/db.TheDB",
     "params": [
       {
         "type": {
@@ -405,22 +399,22 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Update database migration version",
-    "id": "module:@the-/db.TheDB#updateVersion",
-    "kind": "function",
-    "longname": "module:@the-/db.TheDB#updateVersion",
-    "memberof": "module:@the-/db.TheDB",
     "meta": {
+      "lineno": 399,
       "filename": "TheDB.js",
-      "lineno": 416,
       "path": "/Users/okuni/Projects/the/packages/db/lib"
     },
+    "async": true,
+    "order": 16
+  },
+  {
+    "id": "module:@the-/db.TheDB#updateVersion",
+    "longname": "module:@the-/db.TheDB#updateVersion",
     "name": "updateVersion",
-    "order": 17,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Update database migration version",
+    "memberof": "module:@the-/db.TheDB",
     "params": [
       {
         "type": {
@@ -442,22 +436,22 @@
         "description": "Success or not"
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 416,
+      "filename": "TheDB.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "async": true,
+    "order": 17
   },
   {
-    "async": true,
-    "description": "Run database migration",
     "id": "module:@the-/db~MigrateMixed#migrate",
-    "kind": "function",
     "longname": "module:@the-/db~MigrateMixed#migrate",
-    "memberof": "module:@the-/db~MigrateMixed",
-    "meta": {
-      "filename": "migrateMix.js",
-      "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
-    },
     "name": "migrate",
-    "order": 34,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Run database migration",
+    "memberof": "module:@the-/db~MigrateMixed",
     "params": [
       {
         "type": {
@@ -479,241 +473,22 @@
         "description": "Migration result"
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 22,
+      "filename": "migrateMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "async": true,
+    "order": 34
   },
   {
-    "description": "Request to refresh entity",
     "id": "module:@the-/db.refreshMix~RefreshMixed#requestToRefresh",
-    "kind": "function",
     "longname": "module:@the-/db.refreshMix~RefreshMixed#requestToRefresh",
-    "memberof": "module:@the-/db.refreshMix~RefreshMixed",
-    "meta": {
-      "filename": "refreshMix.js",
-      "lineno": 37,
-      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
-    },
     "name": "requestToRefresh",
-    "order": 37,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "name": "entityRef"
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Start refreshing loop",
-    "id": "module:@the-/db.refreshMix~RefreshMixed#startRefreshLoop",
     "kind": "function",
-    "longname": "module:@the-/db.refreshMix~RefreshMixed#startRefreshLoop",
-    "memberof": "module:@the-/db.refreshMix~RefreshMixed",
-    "meta": {
-      "filename": "refreshMix.js",
-      "lineno": 49,
-      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
-    },
-    "name": "startRefreshLoop",
-    "order": 38,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "number"
-          ]
-        },
-        "name": "interval"
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Stop refreshing loop",
-    "id": "module:@the-/db.refreshMix~RefreshMixed#stopRefreshLoop",
-    "kind": "function",
-    "longname": "module:@the-/db.refreshMix~RefreshMixed#stopRefreshLoop",
-    "memberof": "module:@the-/db.refreshMix~RefreshMixed",
-    "meta": {
-      "filename": "refreshMix.js",
-      "lineno": 65,
-      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
-    },
-    "name": "stopRefreshLoop",
-    "order": 39,
-    "params": [],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Wait until refresh",
-    "id": "module:@the-/db.refreshMix~RefreshMixed#waitToRefresh",
-    "kind": "function",
-    "longname": "module:@the-/db.refreshMix~RefreshMixed#waitToRefresh",
-    "memberof": "module:@the-/db.refreshMix~RefreshMixed",
-    "meta": {
-      "filename": "refreshMix.js",
-      "lineno": 105,
-      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
-    },
-    "name": "waitToRefresh",
-    "order": 40,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "name": "entityRef"
-      },
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "optional": true,
-        "defaultvalue": "{}",
-        "description": "Optional settings",
-        "name": "options"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<boolean>"
-          ]
-        },
-        "description": "- Full filled"
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Check if resource exists",
-    "exceptions": [
-      {
-        "type": {
-          "names": [
-            "Error"
-          ]
-        },
-        "description": "Resource not found error"
-      }
-    ],
-    "id": "module:@the-/db.resourceMix~ResourceMixed#assertResource",
-    "kind": "function",
-    "longname": "module:@the-/db.resourceMix~ResourceMixed#assertResource",
-    "memberof": "module:@the-/db.resourceMix~ResourceMixed",
-    "meta": {
-      "filename": "resourceMix.js",
-      "lineno": 19,
-      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
-    },
-    "name": "assertResource",
-    "order": 43,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "name": "resourceName"
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Get resource with name",
-    "id": "module:@the-/db.resourceMix~ResourceMixed#getResource",
-    "kind": "function",
-    "longname": "module:@the-/db.resourceMix~ResourceMixed#getResource",
-    "memberof": "module:@the-/db.resourceMix~ResourceMixed",
-    "meta": {
-      "filename": "resourceMix.js",
-      "lineno": 31,
-      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
-    },
-    "name": "getResource",
-    "order": 44,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "name": "resourceName"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "nullable": true,
-        "description": "Resource instance"
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Check if resource exists",
-    "id": "module:@the-/db.resourceMix~ResourceMixed#hasResource",
-    "kind": "function",
-    "longname": "module:@the-/db.resourceMix~ResourceMixed#hasResource",
-    "memberof": "module:@the-/db.resourceMix~ResourceMixed",
-    "meta": {
-      "filename": "resourceMix.js",
-      "lineno": 44,
-      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
-    },
-    "name": "hasResource",
-    "order": 45,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "name": "resourceName"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "boolean"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
+    "scope": "instance",
     "description": "Request to refresh entity",
-    "id": "module:@the-/db.TheDB#requestToRefresh",
-    "inherited": true,
-    "inherits": "module:@the-/db.refreshMix~RefreshMixed#requestToRefresh",
-    "kind": "function",
-    "longname": "module:@the-/db.TheDB#requestToRefresh",
-    "memberof": "module:@the-/db.TheDB",
-    "meta": {
-      "filename": "refreshMix.js",
-      "lineno": 37,
-      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
-    },
-    "name": "requestToRefresh",
-    "order": 55,
+    "memberof": "module:@the-/db.refreshMix~RefreshMixed",
     "params": [
       {
         "type": {
@@ -724,23 +499,21 @@
         "name": "entityRef"
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Start refreshing loop",
-    "id": "module:@the-/db.TheDB#startRefreshLoop",
-    "inherited": true,
-    "inherits": "module:@the-/db.refreshMix~RefreshMixed#startRefreshLoop",
-    "kind": "function",
-    "longname": "module:@the-/db.TheDB#startRefreshLoop",
-    "memberof": "module:@the-/db.TheDB",
     "meta": {
+      "lineno": 37,
       "filename": "refreshMix.js",
-      "lineno": 49,
       "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
     },
+    "order": 37
+  },
+  {
+    "id": "module:@the-/db.refreshMix~RefreshMixed#startRefreshLoop",
+    "longname": "module:@the-/db.refreshMix~RefreshMixed#startRefreshLoop",
     "name": "startRefreshLoop",
-    "order": 56,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Start refreshing loop",
+    "memberof": "module:@the-/db.refreshMix~RefreshMixed",
     "params": [
       {
         "type": {
@@ -751,42 +524,37 @@
         "name": "interval"
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Stop refreshing loop",
-    "id": "module:@the-/db.TheDB#stopRefreshLoop",
-    "inherited": true,
-    "inherits": "module:@the-/db.refreshMix~RefreshMixed#stopRefreshLoop",
-    "kind": "function",
-    "longname": "module:@the-/db.TheDB#stopRefreshLoop",
-    "memberof": "module:@the-/db.TheDB",
     "meta": {
+      "lineno": 49,
       "filename": "refreshMix.js",
-      "lineno": 65,
       "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
     },
+    "order": 38
+  },
+  {
+    "id": "module:@the-/db.refreshMix~RefreshMixed#stopRefreshLoop",
+    "longname": "module:@the-/db.refreshMix~RefreshMixed#stopRefreshLoop",
     "name": "stopRefreshLoop",
-    "order": 57,
-    "params": [],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Wait until refresh",
-    "id": "module:@the-/db.TheDB#waitToRefresh",
-    "inherited": true,
-    "inherits": "module:@the-/db.refreshMix~RefreshMixed#waitToRefresh",
     "kind": "function",
-    "longname": "module:@the-/db.TheDB#waitToRefresh",
-    "memberof": "module:@the-/db.TheDB",
+    "scope": "instance",
+    "description": "Stop refreshing loop",
+    "memberof": "module:@the-/db.refreshMix~RefreshMixed",
+    "params": [],
     "meta": {
+      "lineno": 65,
       "filename": "refreshMix.js",
-      "lineno": 105,
       "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
     },
+    "order": 39
+  },
+  {
+    "id": "module:@the-/db.refreshMix~RefreshMixed#waitToRefresh",
+    "longname": "module:@the-/db.refreshMix~RefreshMixed#waitToRefresh",
     "name": "waitToRefresh",
-    "order": 58,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Wait until refresh",
+    "memberof": "module:@the-/db.refreshMix~RefreshMixed",
     "params": [
       {
         "type": {
@@ -818,33 +586,22 @@
         "description": "- Full filled"
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Check if resource exists",
-    "exceptions": [
-      {
-        "type": {
-          "names": [
-            "Error"
-          ]
-        },
-        "description": "Resource not found error"
-      }
-    ],
-    "id": "module:@the-/db.TheDB#assertResource",
-    "inherited": true,
-    "inherits": "module:@the-/db.resourceMix~ResourceMixed#assertResource",
-    "kind": "function",
-    "longname": "module:@the-/db.TheDB#assertResource",
-    "memberof": "module:@the-/db.TheDB",
     "meta": {
-      "filename": "resourceMix.js",
-      "lineno": 19,
+      "lineno": 105,
+      "filename": "refreshMix.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
     },
+    "async": true,
+    "order": 40
+  },
+  {
+    "id": "module:@the-/db.resourceMix~ResourceMixed#assertResource",
+    "longname": "module:@the-/db.resourceMix~ResourceMixed#assertResource",
     "name": "assertResource",
-    "order": 59,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Check if resource exists",
+    "memberof": "module:@the-/db.resourceMix~ResourceMixed",
     "params": [
       {
         "type": {
@@ -855,23 +612,31 @@
         "name": "resourceName"
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Get resource with name",
-    "id": "module:@the-/db.TheDB#getResource",
-    "inherited": true,
-    "inherits": "module:@the-/db.resourceMix~ResourceMixed#getResource",
-    "kind": "function",
-    "longname": "module:@the-/db.TheDB#getResource",
-    "memberof": "module:@the-/db.TheDB",
+    "exceptions": [
+      {
+        "type": {
+          "names": [
+            "Error"
+          ]
+        },
+        "description": "Resource not found error"
+      }
+    ],
     "meta": {
+      "lineno": 19,
       "filename": "resourceMix.js",
-      "lineno": 31,
       "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
     },
+    "order": 43
+  },
+  {
+    "id": "module:@the-/db.resourceMix~ResourceMixed#getResource",
+    "longname": "module:@the-/db.resourceMix~ResourceMixed#getResource",
     "name": "getResource",
-    "order": 60,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Get resource with name",
+    "memberof": "module:@the-/db.resourceMix~ResourceMixed",
     "params": [
       {
         "type": {
@@ -893,23 +658,21 @@
         "description": "Resource instance"
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Check if resource exists",
-    "id": "module:@the-/db.TheDB#hasResource",
-    "inherited": true,
-    "inherits": "module:@the-/db.resourceMix~ResourceMixed#hasResource",
-    "kind": "function",
-    "longname": "module:@the-/db.TheDB#hasResource",
-    "memberof": "module:@the-/db.TheDB",
     "meta": {
+      "lineno": 31,
       "filename": "resourceMix.js",
-      "lineno": 44,
       "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
     },
+    "order": 44
+  },
+  {
+    "id": "module:@the-/db.resourceMix~ResourceMixed#hasResource",
+    "longname": "module:@the-/db.resourceMix~ResourceMixed#hasResource",
     "name": "hasResource",
-    "order": 61,
+    "kind": "function",
+    "scope": "instance",
+    "description": "Check if resource exists",
+    "memberof": "module:@the-/db.resourceMix~ResourceMixed",
     "params": [
       {
         "type": {
@@ -929,9 +692,251 @@
         }
       }
     ],
-    "scope": "instance"
+    "meta": {
+      "lineno": 44,
+      "filename": "resourceMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 45
   },
   {
+    "id": "module:@the-/db.TheDB#requestToRefresh",
+    "longname": "module:@the-/db.TheDB#requestToRefresh",
+    "name": "requestToRefresh",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "module:@the-/db.refreshMix~RefreshMixed#requestToRefresh",
+    "inherited": true,
+    "description": "Request to refresh entity",
+    "memberof": "module:@the-/db.TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "entityRef"
+      }
+    ],
+    "meta": {
+      "lineno": 37,
+      "filename": "refreshMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 55
+  },
+  {
+    "id": "module:@the-/db.TheDB#startRefreshLoop",
+    "longname": "module:@the-/db.TheDB#startRefreshLoop",
+    "name": "startRefreshLoop",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "module:@the-/db.refreshMix~RefreshMixed#startRefreshLoop",
+    "inherited": true,
+    "description": "Start refreshing loop",
+    "memberof": "module:@the-/db.TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "name": "interval"
+      }
+    ],
+    "meta": {
+      "lineno": 49,
+      "filename": "refreshMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 56
+  },
+  {
+    "id": "module:@the-/db.TheDB#stopRefreshLoop",
+    "longname": "module:@the-/db.TheDB#stopRefreshLoop",
+    "name": "stopRefreshLoop",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "module:@the-/db.refreshMix~RefreshMixed#stopRefreshLoop",
+    "inherited": true,
+    "description": "Stop refreshing loop",
+    "memberof": "module:@the-/db.TheDB",
+    "params": [],
+    "meta": {
+      "lineno": 65,
+      "filename": "refreshMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 57
+  },
+  {
+    "id": "module:@the-/db.TheDB#waitToRefresh",
+    "longname": "module:@the-/db.TheDB#waitToRefresh",
+    "name": "waitToRefresh",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "module:@the-/db.refreshMix~RefreshMixed#waitToRefresh",
+    "inherited": true,
+    "description": "Wait until refresh",
+    "memberof": "module:@the-/db.TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "entityRef"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<boolean>"
+          ]
+        },
+        "description": "- Full filled"
+      }
+    ],
+    "meta": {
+      "lineno": 105,
+      "filename": "refreshMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "async": true,
+    "order": 58
+  },
+  {
+    "id": "module:@the-/db.TheDB#assertResource",
+    "longname": "module:@the-/db.TheDB#assertResource",
+    "name": "assertResource",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "module:@the-/db.resourceMix~ResourceMixed#assertResource",
+    "inherited": true,
+    "description": "Check if resource exists",
+    "memberof": "module:@the-/db.TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "resourceName"
+      }
+    ],
+    "exceptions": [
+      {
+        "type": {
+          "names": [
+            "Error"
+          ]
+        },
+        "description": "Resource not found error"
+      }
+    ],
+    "meta": {
+      "lineno": 19,
+      "filename": "resourceMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 59
+  },
+  {
+    "id": "module:@the-/db.TheDB#getResource",
+    "longname": "module:@the-/db.TheDB#getResource",
+    "name": "getResource",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "module:@the-/db.resourceMix~ResourceMixed#getResource",
+    "inherited": true,
+    "description": "Get resource with name",
+    "memberof": "module:@the-/db.TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "resourceName"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "nullable": true,
+        "description": "Resource instance"
+      }
+    ],
+    "meta": {
+      "lineno": 31,
+      "filename": "resourceMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 60
+  },
+  {
+    "id": "module:@the-/db.TheDB#hasResource",
+    "longname": "module:@the-/db.TheDB#hasResource",
+    "name": "hasResource",
+    "kind": "function",
+    "scope": "instance",
+    "inherits": "module:@the-/db.resourceMix~ResourceMixed#hasResource",
+    "inherited": true,
+    "description": "Check if resource exists",
+    "memberof": "module:@the-/db.TheDB",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "resourceName"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "lineno": 44,
+      "filename": "resourceMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 61
+  },
+  {
+    "id": "module:@the-/db.TheDB",
+    "longname": "module:@the-/db.TheDB",
+    "name": "TheDB",
+    "kind": "class",
+    "scope": "static",
     "augments": [
       "module:@the-/db.cascadeMix~CascadeMixed",
       "module:@the-/db.cliMix~CliMixed",
@@ -940,134 +945,124 @@
       "module:@the-/db.refreshMix~RefreshMixed",
       "module:@the-/db.resourceMix~ResourceMixed"
     ],
-    "id": "module:@the-/db.TheDB",
-    "kind": "class",
-    "longname": "module:@the-/db.TheDB",
     "memberof": "module:@the-/db",
     "meta": {
-      "filename": "TheDB.js",
       "lineno": 1,
+      "filename": "TheDB.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib"
     },
-    "name": "TheDB",
-    "order": 6,
-    "scope": "static"
+    "order": 6
   },
   {
     "id": "module:@the-/db.TheDBBase",
-    "kind": "class",
     "longname": "module:@the-/db.TheDBBase",
+    "name": "TheDBBase",
+    "kind": "class",
+    "scope": "static",
     "memberof": "module:@the-/db",
     "meta": {
-      "filename": "TheDB.js",
       "lineno": 46,
+      "filename": "TheDB.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib"
     },
-    "name": "TheDBBase",
-    "order": 8,
-    "scope": "static"
+    "order": 8
   },
   {
     "id": "module:@the-/db.TheLogResource",
-    "kind": "class",
     "longname": "module:@the-/db.TheLogResource",
+    "name": "TheLogResource",
+    "kind": "class",
+    "scope": "static",
     "memberof": "module:@the-/db",
     "meta": {
-      "filename": "TheLogResource.js",
       "lineno": 1,
+      "filename": "TheLogResource.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/resources"
     },
-    "name": "TheLogResource",
-    "order": 47,
-    "scope": "static"
+    "order": 47
   },
   {
     "id": "module:@the-/db.TheSchemaResource",
-    "kind": "class",
     "longname": "module:@the-/db.TheSchemaResource",
+    "name": "TheSchemaResource",
+    "kind": "class",
+    "scope": "static",
     "memberof": "module:@the-/db",
     "meta": {
-      "filename": "TheSchemaResource.js",
       "lineno": 1,
+      "filename": "TheSchemaResource.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/resources"
     },
-    "name": "TheSchemaResource",
-    "order": 49,
-    "scope": "static"
+    "order": 49
   },
   {
     "id": "module:@the-/db.helpers.binder",
-    "kind": "namespace",
     "longname": "module:@the-/db.helpers.binder",
+    "name": "binder",
+    "kind": "namespace",
+    "scope": "static",
     "memberof": "module:@the-/db.helpers",
     "meta": {
-      "filename": "binder.js",
       "lineno": 1,
+      "filename": "binder.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/helpers"
     },
-    "name": "binder",
-    "order": 18,
-    "scope": "static"
+    "order": 18
   },
   {
-    "access": "protected",
-    "description": "Helper functions",
     "id": "module:@the-/db.helpers",
-    "kind": "namespace",
     "longname": "module:@the-/db.helpers",
+    "name": "helpers",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Helper functions",
     "memberof": "module:@the-/db",
+    "access": "protected",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/helpers"
     },
-    "name": "helpers",
-    "order": 22,
-    "scope": "static"
+    "order": 22
   },
   {
-    "description": "Mixin functions",
     "id": "module:@the-/db.mixins",
-    "kind": "namespace",
     "longname": "module:@the-/db.mixins",
+    "name": "mixins",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Mixin functions",
     "memberof": "module:@the-/db",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
     },
-    "name": "mixins",
-    "order": 31,
-    "scope": "static"
+    "order": 31
   },
   {
-    "description": "Buildin resources",
     "id": "module:@the-/db.resources",
-    "kind": "namespace",
     "longname": "module:@the-/db.resources",
+    "name": "resources",
+    "kind": "namespace",
+    "scope": "static",
+    "description": "Buildin resources",
     "memberof": "module:@the-/db",
     "meta": {
-      "filename": "index.js",
       "lineno": 2,
+      "filename": "index.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/resources"
     },
-    "name": "resources",
-    "order": 46,
-    "scope": "static"
+    "order": 46
   },
   {
-    "description": "Create a TheDB instance",
     "id": "module:@the-/db.create",
-    "kind": "function",
     "longname": "module:@the-/db.create",
-    "memberof": "module:@the-/db",
-    "meta": {
-      "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/db/lib"
-    },
     "name": "create",
-    "order": 0,
+    "kind": "function",
+    "scope": "static",
+    "description": "Create a TheDB instance",
+    "memberof": "module:@the-/db",
     "params": [
       {
         "type": {
@@ -1088,138 +1083,138 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "create.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "order": 0
   },
   {
-    "description": "Alias of {@link module:@the-/db.create}",
     "id": "module:@the-/db.default",
-    "kind": "function",
     "longname": "module:@the-/db.default",
-    "memberof": "module:@the-/db",
-    "meta": {
-      "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/db/lib"
-    },
     "name": "default",
-    "order": 1,
-    "scope": "static"
+    "kind": "function",
+    "scope": "static",
+    "description": "Alias of {@link module:@the-/db.create}",
+    "memberof": "module:@the-/db",
+    "meta": {
+      "lineno": 1,
+      "filename": "default.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "order": 1
   },
   {
-    "description": "Create driver from env",
     "id": "module:@the-/db.driverFromEnv",
-    "kind": "function",
     "longname": "module:@the-/db.driverFromEnv",
-    "memberof": "module:@the-/db",
-    "meta": {
-      "filename": "driverFromEnv.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/db/lib"
-    },
     "name": "driverFromEnv",
-    "order": 2,
-    "scope": "static"
+    "kind": "function",
+    "scope": "static",
+    "description": "Create driver from env",
+    "memberof": "module:@the-/db",
+    "meta": {
+      "lineno": 1,
+      "filename": "driverFromEnv.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib"
+    },
+    "order": 2
   },
   {
-    "description": "Do exec for env",
     "id": "module:@the-/db.execForEnv",
-    "kind": "function",
     "longname": "module:@the-/db.execForEnv",
+    "name": "execForEnv",
+    "kind": "function",
+    "scope": "static",
+    "description": "Do exec for env",
     "memberof": "module:@the-/db",
     "meta": {
-      "filename": "execForEnv.js",
       "lineno": 1,
+      "filename": "execForEnv.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib"
     },
-    "name": "execForEnv",
-    "order": 3,
-    "scope": "static"
+    "order": 3
   },
   {
-    "description": "Do setup for env",
     "id": "module:@the-/db.setupForEnv",
-    "kind": "function",
     "longname": "module:@the-/db.setupForEnv",
+    "name": "setupForEnv",
+    "kind": "function",
+    "scope": "static",
+    "description": "Do setup for env",
     "memberof": "module:@the-/db",
     "meta": {
-      "filename": "setupForEnv.js",
       "lineno": 1,
+      "filename": "setupForEnv.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib"
     },
-    "name": "setupForEnv",
-    "order": 5,
-    "scope": "static"
+    "order": 5
   },
   {
     "id": "module:@the-/db.helpers.createTerminal",
-    "kind": "function",
     "longname": "module:@the-/db.helpers.createTerminal",
+    "name": "createTerminal",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/db.helpers",
     "meta": {
-      "filename": "createTerminal.js",
       "lineno": 1,
+      "filename": "createTerminal.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/helpers"
     },
-    "name": "createTerminal",
-    "order": 19,
-    "scope": "static"
+    "order": 19
   },
   {
     "id": "module:@the-/db.helpers.execMysql",
-    "kind": "function",
     "longname": "module:@the-/db.helpers.execMysql",
+    "name": "execMysql",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/db.helpers",
     "meta": {
-      "filename": "execMysql.js",
       "lineno": 1,
+      "filename": "execMysql.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/helpers"
     },
-    "name": "execMysql",
-    "order": 20,
-    "scope": "static"
+    "order": 20
   },
   {
     "id": "module:@the-/db.helpers.execSqlite",
-    "kind": "function",
     "longname": "module:@the-/db.helpers.execSqlite",
+    "name": "execSqlite",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/db.helpers",
     "meta": {
-      "filename": "execSqlite.js",
       "lineno": 1,
+      "filename": "execSqlite.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/helpers"
     },
-    "name": "execSqlite",
-    "order": 21,
-    "scope": "static"
+    "order": 21
   },
   {
-    "description": "Parse db policy",
     "id": "execSqlite.parsePolicy",
-    "kind": "function",
     "longname": "execSqlite.parsePolicy",
+    "name": "parsePolicy",
+    "kind": "function",
+    "scope": "static",
+    "description": "Parse db policy",
     "memberof": "execSqlite",
     "meta": {
-      "filename": "parsePolicy.js",
       "lineno": 1,
+      "filename": "parsePolicy.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/helpers"
     },
-    "name": "parsePolicy",
-    "order": 23,
-    "scope": "static"
+    "order": 23
   },
   {
-    "description": "Parse schema",
     "id": "module:@the-/db.helpers.parseSchema",
-    "kind": "function",
     "longname": "module:@the-/db.helpers.parseSchema",
-    "memberof": "module:@the-/db.helpers",
-    "meta": {
-      "filename": "parseSchema.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/db/lib/helpers"
-    },
     "name": "parseSchema",
-    "order": 24,
+    "kind": "function",
+    "scope": "static",
+    "description": "Parse schema",
+    "memberof": "module:@the-/db.helpers",
     "params": [
       {
         "type": {
@@ -1240,20 +1235,20 @@
         "name": "options"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "parseSchema.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/helpers"
+    },
+    "order": 24
   },
   {
     "id": "module:@the-/db.cascadeMix",
-    "kind": "function",
     "longname": "module:@the-/db.cascadeMix",
-    "memberof": "module:@the-/db",
-    "meta": {
-      "filename": "cascadeMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
-    },
     "name": "cascadeMix",
-    "order": 25,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/db",
     "params": [
       {
         "type": {
@@ -1274,36 +1269,36 @@
         "description": "Mixed Class"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "cascadeMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 25
   },
   {
-    "description": "Add cli methods",
     "id": "module:@the-/db.cliMix",
-    "kind": "function",
     "longname": "module:@the-/db.cliMix",
-    "memberof": "module:@the-/db",
-    "meta": {
-      "filename": "cliMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
-    },
     "name": "cliMix",
-    "order": 27,
-    "scope": "static"
+    "kind": "function",
+    "scope": "static",
+    "description": "Add cli methods",
+    "memberof": "module:@the-/db",
+    "meta": {
+      "lineno": 1,
+      "filename": "cliMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 27
   },
   {
-    "description": "Add export/import methods",
     "id": "module:@the-/db.exportImportMix",
-    "kind": "function",
     "longname": "module:@the-/db.exportImportMix",
-    "memberof": "module:@the-/db",
-    "meta": {
-      "filename": "exportImportMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
-    },
     "name": "exportImportMix",
-    "order": 29,
+    "kind": "function",
+    "scope": "static",
+    "description": "Add export/import methods",
+    "memberof": "module:@the-/db",
     "params": [
       {
         "type": {
@@ -1322,21 +1317,21 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "exportImportMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 29
   },
   {
-    "description": "Add migrate methods",
     "id": "module:@the-/db.migrateMix",
-    "kind": "function",
     "longname": "module:@the-/db.migrateMix",
-    "memberof": "module:@the-/db",
-    "meta": {
-      "filename": "migrateMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
-    },
     "name": "migrateMix",
-    "order": 32,
+    "kind": "function",
+    "scope": "static",
+    "description": "Add migrate methods",
+    "memberof": "module:@the-/db",
     "params": [
       {
         "type": {
@@ -1355,20 +1350,20 @@
         }
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "migrateMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 32
   },
   {
     "id": "module:@the-/db.refreshMix",
-    "kind": "function",
     "longname": "module:@the-/db.refreshMix",
-    "memberof": "module:@the-/db",
-    "meta": {
-      "filename": "refreshMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
-    },
     "name": "refreshMix",
-    "order": 35,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/db",
     "params": [
       {
         "type": {
@@ -1389,34 +1384,34 @@
         "description": "Mixed Class"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "refreshMix.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
+    },
+    "order": 35
   },
   {
     "id": "module:@the-/db.resourceMix",
-    "kind": "function",
     "longname": "module:@the-/db.resourceMix",
+    "name": "resourceMix",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/db",
     "meta": {
-      "filename": "resourceMix.js",
       "lineno": 1,
+      "filename": "resourceMix.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
     },
-    "name": "resourceMix",
-    "order": 41,
-    "scope": "static"
+    "order": 41
   },
   {
     "id": "module:@the-/db.setup.setupMongo",
-    "kind": "function",
     "longname": "module:@the-/db.setup.setupMongo",
-    "memberof": "module:@the-/db.setup",
-    "meta": {
-      "filename": "setupMongo.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/db/lib/setup"
-    },
     "name": "setupMongo",
-    "order": 51,
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/db.setup",
     "params": [
       {
         "type": {
@@ -1427,132 +1422,137 @@
         "name": "config"
       }
     ],
-    "scope": "static"
+    "meta": {
+      "lineno": 1,
+      "filename": "setupMongo.js",
+      "path": "/Users/okuni/Projects/the/packages/db/lib/setup"
+    },
+    "order": 51
   },
   {
     "id": "module:@the-/db.setup.setupMysql",
-    "kind": "function",
     "longname": "module:@the-/db.setup.setupMysql",
+    "name": "setupMysql",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/db.setup",
     "meta": {
-      "filename": "setupMysql.js",
       "lineno": 1,
+      "filename": "setupMysql.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/setup"
     },
-    "name": "setupMysql",
-    "order": 52,
-    "scope": "static"
+    "order": 52
   },
   {
     "id": "module:@the-/db.setup.setupPostgres",
-    "kind": "function",
     "longname": "module:@the-/db.setup.setupPostgres",
+    "name": "setupPostgres",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/db.setup",
     "meta": {
-      "filename": "setupPostgres.js",
       "lineno": 1,
+      "filename": "setupPostgres.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/setup"
     },
-    "name": "setupPostgres",
-    "order": 53,
-    "scope": "static"
+    "order": 53
   },
   {
     "id": "module:@the-/db.setup.setupSqlite",
-    "kind": "function",
     "longname": "module:@the-/db.setup.setupSqlite",
+    "name": "setupSqlite",
+    "kind": "function",
+    "scope": "static",
     "memberof": "module:@the-/db.setup",
     "meta": {
-      "filename": "setupSqlite.js",
       "lineno": 1,
+      "filename": "setupSqlite.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/setup"
     },
-    "name": "setupSqlite",
-    "order": 54,
-    "scope": "static"
+    "order": 54
   },
   {
     "id": "module:@the-/db.cascadeMix~CascadeMixed",
-    "kind": "class",
     "longname": "module:@the-/db.cascadeMix~CascadeMixed",
+    "name": "CascadeMixed",
+    "kind": "class",
+    "scope": "inner",
     "memberof": "module:@the-/db.cascadeMix",
     "meta": {
-      "filename": "cascadeMix.js",
       "lineno": 13,
+      "filename": "cascadeMix.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
     },
-    "name": "CascadeMixed",
-    "order": 26,
-    "scope": "inner"
+    "order": 26
   },
   {
     "id": "module:@the-/db.cliMix~CliMixed",
-    "kind": "class",
     "longname": "module:@the-/db.cliMix~CliMixed",
+    "name": "CliMixed",
+    "kind": "class",
+    "scope": "inner",
     "memberof": "module:@the-/db.cliMix",
     "meta": {
-      "filename": "cliMix.js",
       "lineno": 20,
+      "filename": "cliMix.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
     },
-    "name": "CliMixed",
-    "order": 28,
-    "scope": "inner"
+    "order": 28
   },
   {
     "id": "module:@the-/db~ExportImportMixed",
-    "kind": "class",
     "longname": "module:@the-/db~ExportImportMixed",
+    "name": "ExportImportMixed",
+    "kind": "class",
+    "scope": "inner",
     "memberof": "module:@the-/db",
     "meta": {
-      "filename": "exportImportMix.js",
       "lineno": 32,
+      "filename": "exportImportMix.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
     },
-    "name": "ExportImportMixed",
-    "order": 30,
-    "scope": "inner"
+    "order": 30
   },
   {
     "id": "module:@the-/db~MigrateMixed",
-    "kind": "class",
     "longname": "module:@the-/db~MigrateMixed",
+    "name": "MigrateMixed",
+    "kind": "class",
+    "scope": "inner",
     "memberof": "module:@the-/db",
     "meta": {
-      "filename": "migrateMix.js",
       "lineno": 16,
+      "filename": "migrateMix.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
     },
-    "name": "MigrateMixed",
-    "order": 33,
-    "scope": "inner"
+    "order": 33
   },
   {
     "id": "module:@the-/db.refreshMix~RefreshMixed",
-    "kind": "class",
     "longname": "module:@the-/db.refreshMix~RefreshMixed",
+    "name": "RefreshMixed",
+    "kind": "class",
+    "scope": "inner",
     "memberof": "module:@the-/db.refreshMix",
     "meta": {
-      "filename": "refreshMix.js",
       "lineno": 27,
+      "filename": "refreshMix.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
     },
-    "name": "RefreshMixed",
-    "order": 36,
-    "scope": "inner"
+    "order": 36
   },
   {
     "id": "module:@the-/db.resourceMix~ResourceMixed",
-    "kind": "class",
     "longname": "module:@the-/db.resourceMix~ResourceMixed",
+    "name": "ResourceMixed",
+    "kind": "class",
+    "scope": "inner",
     "memberof": "module:@the-/db.resourceMix",
     "meta": {
-      "filename": "resourceMix.js",
       "lineno": 13,
+      "filename": "resourceMix.js",
       "path": "/Users/okuni/Projects/the/packages/db/lib/mixins"
     },
-    "name": "ResourceMixed",
-    "order": 42,
-    "scope": "inner"
+    "order": 42
   }
 ]

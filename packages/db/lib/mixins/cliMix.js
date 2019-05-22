@@ -34,6 +34,9 @@ function cliMix(Class) {
       logger.info('')
       await createTerminal(
         (line) => {
+          if (!line) {
+            return
+          }
           // TODO Support multi-line script
           try {
             return evalScript(line, {
