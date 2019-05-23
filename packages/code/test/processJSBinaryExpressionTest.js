@@ -23,7 +23,7 @@ describe('process-js-logical-expression', () => {
     )
   })
 
-  it('Keep in operator', async () => {
+  it('Keep operators', async () => {
     equal(
       await processJSBinaryExpression(`for(const a in b) {} `),
       `for(const a in b) {} `,
@@ -31,6 +31,10 @@ describe('process-js-logical-expression', () => {
     equal(
       await processJSBinaryExpression(`for(const a of b) {} `),
       `for(const a of b) {} `,
+    )
+    equal(
+      await processJSBinaryExpression(`const x = a + 1; const y = b + 1;`),
+      `const x = a + 1; const y = b + 1;`,
     )
   })
 
@@ -113,6 +117,19 @@ describe('process-js-logical-expression', () => {
     )
 
     equal(await processJSBinaryExpression(`const a = 1 + x`), 'const a = 1 + x')
+  })
+
+  it('Fix yoda', async () => {
+    equal(await processJSBinaryExpression(`x = a === 1`), `x = a === 1`)
+    equal(await processJSBinaryExpression(`x = 1 === a`), `x = a === 1`)
+    equal(await processJSBinaryExpression(`x = a == 1`), `x = a == 1`)
+    equal(await processJSBinaryExpression(`x = 1 == a`), `x = a == 1`)
+    equal(await processJSBinaryExpression(`x = a !== 1`), `x = a !== 1`)
+    equal(await processJSBinaryExpression(`x = 1 !== a`), `x = a !== 1`)
+    equal(await processJSBinaryExpression(`x = a != 1`), `x = a != 1`)
+    equal(await processJSBinaryExpression(`x = 1 != a`), `x = a != 1`)
+    equal(await processJSBinaryExpression(`x = b() != a`), `x = b() != a`)
+    equal(await processJSBinaryExpression(`x = a != b()`), `x = a != b()`)
   })
 })
 
