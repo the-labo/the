@@ -43,14 +43,26 @@ function packageRule(config) {
       throw new Error(`[@the-/lint] Failed to parse js: ${filename}`)
     }
   }
+  const findPkg = (moduleId) => {
+    const pkgPaths = [
+      `${moduleId}/package.json`,
+      `node_modules/${moduleId}/package.json`,
+      `${process.cwd()}/node_modules/${moduleId}/package.json`,
+    ]
+    for (const pkgPath of pkgPaths) {
+      try {
+        return require(pkgPath)
+      } catch (e) {}
+    }
+    return null
+  }
   const peerDependencyNamesFor = (moduleId) => {
-    try {
-      const pkg = require(`${moduleId}/package.json`)
-      const { peerDependencies = {} } = pkg
-      return Object.keys(peerDependencies)
-    } catch (e) {
+    const pkg = findPkg(moduleId)
+    if (!pkg) {
       return []
     }
+    const { peerDependencies = {} } = pkg
+    return Object.keys(peerDependencies)
   }
   const peerDependencyNamesForPkg = (pkg) => {
     const depsNames = Object.keys({
