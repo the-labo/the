@@ -5,7 +5,7 @@
 ## @the-/code
 Code formatter of the-frameworks
 
-**Version**: 15.5.0  
+**Version**: 15.5.2  
 **License**: MIT  
 
 * [@the-/code](#module_@the-/code)
@@ -31,6 +31,7 @@ Code formatter of the-frameworks
         * [.processCSSProp(content)](#module_@the-/code.processors.processCSSProp) ⇒ <code>Promise.&lt;string&gt;</code>
         * [.processCSSRule(content)](#module_@the-/code.processors.processCSSRule) ⇒ <code>Promise.&lt;string&gt;</code>
         * [.processFileEnd(content)](#module_@the-/code.processors.processFileEnd) ⇒ <code>string</code>
+        * [.processJSBinaryExpression(content)](#module_@the-/code.processors.processJSBinaryExpression) ⇒ <code>string</code>
         * [.processJSBlock(content)](#module_@the-/code.processors.processJSBlock) ⇒ <code>string</code>
         * [.processJSClass(content)](#module_@the-/code.processors.processJSClass) ⇒ <code>string</code>
         * [.processComment(content)](#module_@the-/code.processors.processComment) ⇒ <code>string</code>
@@ -202,6 +203,7 @@ Processor functions
     * [.processCSSProp(content)](#module_@the-/code.processors.processCSSProp) ⇒ <code>Promise.&lt;string&gt;</code>
     * [.processCSSRule(content)](#module_@the-/code.processors.processCSSRule) ⇒ <code>Promise.&lt;string&gt;</code>
     * [.processFileEnd(content)](#module_@the-/code.processors.processFileEnd) ⇒ <code>string</code>
+    * [.processJSBinaryExpression(content)](#module_@the-/code.processors.processJSBinaryExpression) ⇒ <code>string</code>
     * [.processJSBlock(content)](#module_@the-/code.processors.processJSBlock) ⇒ <code>string</code>
     * [.processJSClass(content)](#module_@the-/code.processors.processJSClass) ⇒ <code>string</code>
     * [.processComment(content)](#module_@the-/code.processors.processComment) ⇒ <code>string</code>
@@ -244,6 +246,16 @@ Processor functions
 <a name="module_@the-/code.processors.processFileEnd"></a>
 
 #### processors.processFileEnd(content) ⇒ <code>string</code>
+**Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
+**Returns**: <code>string</code> - processed  
+
+| Param | Type |
+| --- | --- |
+| content | <code>string</code> | 
+
+<a name="module_@the-/code.processors.processJSBinaryExpression"></a>
+
+#### processors.processJSBinaryExpression(content) ⇒ <code>string</code>
 **Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
 **Returns**: <code>string</code> - processed  
 

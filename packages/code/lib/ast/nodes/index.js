@@ -24,6 +24,7 @@ const findCJSExportsAssignmentsExpressionOnProgramNode_ = require('./findCJSExpo
 const findJSDocAnnotationsInCommendNode_ = require('./findJSDocAnnotationsInCommendNode')
 const findRequireDeclarationOnProgramNode_ = require('./findRequireDeclarationOnProgramNode')
 const mergeDuplicateImportOnProgramNode_ = require('./mergeDuplicateImportOnProgramNode')
+const mergeStringConcatenate_ = require('./mergeStringConcatenate')
 const modifyNodeDeprecatedOnRequireDeclaration_ = require('./modifyNodeDeprecatedOnRequireDeclaration')
 const normalizeJSDocAnnotationsOnCommentNode_ = require('./normalizeJSDocAnnotationsOnCommentNode')
 const normalizeSrcPathOnImportDeclarationNode_ = require('./normalizeSrcPathOnImportDeclarationNode')
@@ -53,6 +54,7 @@ exports.findCJSExportsAssignmentsExpressionOnProgramNode = findCJSExportsAssignm
 exports.findJSDocAnnotationsInCommendNode = findJSDocAnnotationsInCommendNode_
 exports.findRequireDeclarationOnProgramNode = findRequireDeclarationOnProgramNode_
 exports.mergeDuplicateImportOnProgramNode = mergeDuplicateImportOnProgramNode_
+exports.mergeStringConcatenate = mergeStringConcatenate_
 exports.modifyNodeDeprecatedOnRequireDeclaration = modifyNodeDeprecatedOnRequireDeclaration_
 exports.normalizeJSDocAnnotationsOnCommentNode = normalizeJSDocAnnotationsOnCommentNode_
 exports.normalizeSrcPathOnImportDeclarationNode = normalizeSrcPathOnImportDeclarationNode_
@@ -82,6 +84,7 @@ module.exports = {
   findJSDocAnnotationsInCommendNode: findJSDocAnnotationsInCommendNode_,
   findRequireDeclarationOnProgramNode: findRequireDeclarationOnProgramNode_,
   mergeDuplicateImportOnProgramNode: mergeDuplicateImportOnProgramNode_,
+  mergeStringConcatenate: mergeStringConcatenate_,
   modifyNodeDeprecatedOnRequireDeclaration: modifyNodeDeprecatedOnRequireDeclaration_,
   normalizeJSDocAnnotationsOnCommentNode: normalizeJSDocAnnotationsOnCommentNode_,
   normalizeSrcPathOnImportDeclarationNode: normalizeSrcPathOnImportDeclarationNode_,

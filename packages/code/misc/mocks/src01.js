@@ -1,37 +1,39 @@
-'use strict'
+const src02 = require('../tmp/src02')
 
 const p1 = 'P1'
 let d = {
-  a: 1,
   b: 2,
+  a: 1,
+
 
   c: {
+    'p2': 'This is p2',
     [p1]: 'This is p1',
-    p2: 'This is p2',
-    p3: `This is ${Object.keys({ f2: 2, f5: 5 }).join(',')}p3`,
-
     z: {
-      aaa: 8777,
-      dd: 1,
-      jj: 234,
+      dd: 1, jj: 234, aaa: 8777
     },
-    ...{ b: 1 },
 
-    notDoSomething() {},
+    ['p3']: `This is ${Object.keys({f5: 5, f2: 2}).join(',')}p3`,
+    ...{b: 1},
+
+    notDoSomething () {},
 
     // HOGE HOGE
     x: {
-      get ao() {},
+      get ao () {},
+      oooo () {},
       c: 1,
       d: 2,
       /* hogehoge */
       hogehoge: 1234,
-      oooo() {},
     },
 
-    ...{ a: 1 },
-    ...{ c: 2 },
+    ...{a: 1},
+    ...{c: 2},
 
-    doSomething() {},
-  },
+    doSomething () {
+
+    },
+  }
 }
+
