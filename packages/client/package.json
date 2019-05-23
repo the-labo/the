@@ -32,7 +32,9 @@
   },
   "devDependencies": {
     "@the-/server": "^15.4.2",
-    "aport": "^2.0.0"
+    "aport": "^2.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "engines": {
     "node": ">=10",
