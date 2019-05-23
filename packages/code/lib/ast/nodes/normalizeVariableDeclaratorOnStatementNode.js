@@ -4,12 +4,11 @@
  */
 'use strict'
 
+const { EOL } = require('os')
 const {
   constants: { NodeTypes },
   finder,
-  parse,
 } = require('@the-/ast')
-const { EOL } = require('os')
 
 /** @lends module:@the-/code.ast.nodes.normalizeVariableDeclaratorOnStatementNode */
 function normalizeVariableDeclaratorOnStatementNode(
@@ -36,7 +35,7 @@ function normalizeVariableDeclaratorOnStatementNode(
     ),
   )
   for (const VariableDeclaration of VariableDeclarations) {
-    const { kind, declarations } = VariableDeclaration
+    const { declarations, kind } = VariableDeclaration
     if (declarations.length === 0) {
       continue
     }
@@ -46,7 +45,7 @@ function normalizeVariableDeclaratorOnStatementNode(
       return replace(
         [VariableDeclaration.start, VariableDeclaration.end],
         declarations
-          .map(({ id, init, end }) => `${kind} ${get([id.start, end])}`)
+          .map(({ end, id }) => `${kind} ${get([id.start, end])}`)
           .join(EOL + prefix),
       )
     }

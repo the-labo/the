@@ -4,12 +4,15 @@
  */
 'use strict'
 
-const OperatorsToNormalize = {
-  '!=': '!==',
-  '==': '===',
-}
+const {
+  constants: { NodeTypes },
+} = require('@the-/ast')
+
+const OperatorsToConvert = {}
 
 const OperatorsToSwap = {
+  '<': '>',
+  '<=': '>=',
   '>': '<',
   '>=': '<=',
 }
@@ -17,18 +20,17 @@ const OperatorsToSwap = {
 /** @lends module:@the-/code.ast.nodes.normalizeBinaryExpressionNode */
 function normalizeBinaryExpressionNode(BinaryExpression, { get, replace }) {
   const { end, left, operator, right, start } = BinaryExpression
-  if (operator in OperatorsToNormalize) {
-    return replace(
-      [left.end, right.start],
-      ` ${OperatorsToNormalize[operator]} `,
-    )
+  if (operator in OperatorsToConvert) {
+    return replace([left.end, right.start], ` ${OperatorsToConvert[operator]} `)
   }
-  if (operator in OperatorsToSwap) {
+  const isYoda =
+    left.type !== NodeTypes.Identifier && right.type === NodeTypes.Identifier
+  if (isYoda) {
     return replace(
       [start, end],
       [
         get([right.start, right.end]),
-        OperatorsToSwap[operator],
+        OperatorsToSwap[operator] || operator,
         get([left.start, left.end]),
       ].join(' '),
     )

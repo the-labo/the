@@ -4,9 +4,8 @@
  */
 'use strict'
 
+const { equal } = require('assert').strict
 const processJSDeclarations = require('../lib/processors/processJSDeclarations')
-
-const { ok, equal, deepEqual } = require('assert').strict
 
 describe('process-js-declarations', () => {
   before(() => {})

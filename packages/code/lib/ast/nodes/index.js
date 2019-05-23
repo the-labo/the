@@ -30,6 +30,7 @@ const normalizeBinaryExpressionNode_ = require('./normalizeBinaryExpressionNode'
 const normalizeJSDocAnnotationsOnCommentNode_ = require('./normalizeJSDocAnnotationsOnCommentNode')
 const normalizeSrcPathOnImportDeclarationNode_ = require('./normalizeSrcPathOnImportDeclarationNode')
 const normalizeSrcPathOnRequireArgumentNode_ = require('./normalizeSrcPathOnRequireArgumentNode')
+const normalizeVariableDeclaratorOnStatementNode_ = require('./normalizeVariableDeclaratorOnStatementNode')
 const sortAnnotationsOnCommentNode_ = require('./sortAnnotationsOnCommentNode')
 const sortCasesOnSwitchStatementNode_ = require('./sortCasesOnSwitchStatementNode')
 const sortMethodsOnClassNode_ = require('./sortMethodsOnClassNode')
@@ -61,6 +62,7 @@ exports.normalizeBinaryExpressionNode = normalizeBinaryExpressionNode_
 exports.normalizeJSDocAnnotationsOnCommentNode = normalizeJSDocAnnotationsOnCommentNode_
 exports.normalizeSrcPathOnImportDeclarationNode = normalizeSrcPathOnImportDeclarationNode_
 exports.normalizeSrcPathOnRequireArgumentNode = normalizeSrcPathOnRequireArgumentNode_
+exports.normalizeVariableDeclaratorOnStatementNode = normalizeVariableDeclaratorOnStatementNode_
 exports.sortAnnotationsOnCommentNode = sortAnnotationsOnCommentNode_
 exports.sortCasesOnSwitchStatementNode = sortCasesOnSwitchStatementNode_
 exports.sortMethodsOnClassNode = sortMethodsOnClassNode_
@@ -92,6 +94,7 @@ module.exports = {
   normalizeJSDocAnnotationsOnCommentNode: normalizeJSDocAnnotationsOnCommentNode_,
   normalizeSrcPathOnImportDeclarationNode: normalizeSrcPathOnImportDeclarationNode_,
   normalizeSrcPathOnRequireArgumentNode: normalizeSrcPathOnRequireArgumentNode_,
+  normalizeVariableDeclaratorOnStatementNode: normalizeVariableDeclaratorOnStatementNode_,
   sortAnnotationsOnCommentNode: sortAnnotationsOnCommentNode_,
   sortCasesOnSwitchStatementNode: sortCasesOnSwitchStatementNode_,
   sortMethodsOnClassNode: sortMethodsOnClassNode_,

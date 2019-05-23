@@ -10,9 +10,9 @@ const {
   finder,
   parse,
 } = require('@the-/ast')
+const normalizeVariableDeclaratorOnStatementNode = require('../ast/nodes/normalizeVariableDeclaratorOnStatementNode')
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
-const normalizeVariableDeclaratorOnStatementNode = require('../ast/nodes/normalizeVariableDeclaratorOnStatementNode')
 
 /** @lends module:@the-/code.processors.processJSDeclarations */
 function processJSDeclarations(content, options = {}) {
@@ -26,7 +26,10 @@ function processJSDeclarations(content, options = {}) {
     ])
 
     for (const Statement of Statements) {
-      const converted = normalizeVariableDeclaratorOnStatementNode(Statement, {get, replace})
+      const converted = normalizeVariableDeclaratorOnStatementNode(Statement, {
+        get,
+        replace,
+      })
       if (converted) {
         return converted
       }

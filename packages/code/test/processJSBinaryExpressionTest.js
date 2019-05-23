@@ -81,10 +81,19 @@ describe('process-js-logical-expression', () => {
   })
 
   it('Swap compare operator', async () => {
-    equal(await processJSBinaryExpression(`const a = x > 1`), 'const a = 1 < x')
+    equal(await processJSBinaryExpression(`const a = x > 1`), 'const a = x > 1')
+    equal(await processJSBinaryExpression(`const a = 1 > x`), 'const a = x < 1')
     equal(
       await processJSBinaryExpression(`const a = x >= 1`),
-      'const a = 1 <= x',
+      'const a = x >= 1',
+    )
+    equal(
+      await processJSBinaryExpression(`const a = 1 >= x`),
+      'const a = x <= 1',
+    )
+    equal(
+      await processJSBinaryExpression(`const a = 1 <= x`),
+      'const a = x >= 1',
     )
   })
 })

@@ -14,6 +14,7 @@ const processJSBinaryExpression_ = require('./processJSBinaryExpression')
 const processJSBlock_ = require('./processJSBlock')
 const processJSClass_ = require('./processJSClass')
 const processJSComment_ = require('./processJSComment')
+const processJSDeclarations_ = require('./processJSDeclarations')
 const processJSDoc_ = require('./processJSDoc')
 const processJSExport_ = require('./processJSExport')
 const processJSFunction_ = require('./processJSFunction')
@@ -38,6 +39,7 @@ exports.processJSBinaryExpression = processJSBinaryExpression_
 exports.processJSBlock = processJSBlock_
 exports.processJSClass = processJSClass_
 exports.processJSComment = processJSComment_
+exports.processJSDeclarations = processJSDeclarations_
 exports.processJSDoc = processJSDoc_
 exports.processJSExport = processJSExport_
 exports.processJSFunction = processJSFunction_
@@ -62,6 +64,7 @@ module.exports = {
   processJSBlock: processJSBlock_,
   processJSClass: processJSClass_,
   processJSComment: processJSComment_,
+  processJSDeclarations: processJSDeclarations_,
   processJSDoc: processJSDoc_,
   processJSExport: processJSExport_,
   processJSFunction: processJSFunction_,
