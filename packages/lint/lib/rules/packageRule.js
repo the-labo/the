@@ -52,20 +52,28 @@ function packageRule(config) {
       return []
     }
   }
+  const peerDependencyNamesForPkg = (pkg) => {
+    const depsNames = Object.keys({
+      ...(pkg.dependencies || {}),
+      ...(pkg.dependencies || {}),
+    })
+    return depsNames.reduce(
+      (peerDepsNames, depName) => [
+        ...peerDepsNames,
+        ...peerDependencyNamesFor(depName),
+      ],
+      [],
+    )
+  }
   return async function packageRuleCheck({ content, filename, report }) {
     const pkg = _json({ content, filename })
+
+    const peerDepsNames = peerDependencyNamesForPkg(pkg)
     const doCheck = async (deps, usedIn, { as }) => {
       if (!deps) {
         return
       }
       const depsNames = Object.keys(deps)
-      const peerDepsNames = depsNames.reduce(
-        (peerDepsNames, depName) => [
-          ...peerDepsNames,
-          ...peerDependencyNamesFor(depName),
-        ],
-        [],
-      )
       const unusedNames = new Set(
         depsNames
           .filter((name) => !except.includes(name))
