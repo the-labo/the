@@ -1,11 +1,14 @@
 /**
  * @memberof module:@the-/code.ast.nodes
- * @function mergeStringConcatenate
+ * @function mergeStringConcatenateOnBinaryExpressionNode
  */
 'use strict'
 
-/** @lends module:@the-/code.ast.nodes.mergeStringConcatenate */
-function mergeStringConcatenate(BinaryExpression, { get, replace }) {
+/** @lends module:@the-/code.ast.nodes.mergeStringConcatenateOnBinaryExpressionNode */
+function mergeStringConcatenateOnBinaryExpressionNode(
+  BinaryExpression,
+  { get, replace },
+) {
   const { left, right } = BinaryExpression
 
   const content = [left, right]
@@ -29,4 +32,4 @@ function mergeStringConcatenate(BinaryExpression, { get, replace }) {
   )
 }
 
-module.exports = mergeStringConcatenate
+module.exports = mergeStringConcatenateOnBinaryExpressionNode

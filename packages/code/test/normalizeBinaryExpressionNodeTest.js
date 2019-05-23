@@ -1,10 +1,10 @@
 /**
- * Test for mergeStringConcatenate.
+ * Test for normalizeBinaryExpressionNode.
  * Runs with mocha.
  */
 'use strict'
 
-describe('merge-string-concatenate', () => {
+describe('normalize-binary-expression-node', () => {
   before(() => {})
 
   after(() => {})

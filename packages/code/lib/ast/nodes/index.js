@@ -24,8 +24,9 @@ const findCJSExportsAssignmentsExpressionOnProgramNode_ = require('./findCJSExpo
 const findJSDocAnnotationsInCommendNode_ = require('./findJSDocAnnotationsInCommendNode')
 const findRequireDeclarationOnProgramNode_ = require('./findRequireDeclarationOnProgramNode')
 const mergeDuplicateImportOnProgramNode_ = require('./mergeDuplicateImportOnProgramNode')
-const mergeStringConcatenate_ = require('./mergeStringConcatenate')
+const mergeStringConcatenateOnBinaryExpressionNode_ = require('./mergeStringConcatenateOnBinaryExpressionNode')
 const modifyNodeDeprecatedOnRequireDeclaration_ = require('./modifyNodeDeprecatedOnRequireDeclaration')
+const normalizeBinaryExpressionNode_ = require('./normalizeBinaryExpressionNode')
 const normalizeJSDocAnnotationsOnCommentNode_ = require('./normalizeJSDocAnnotationsOnCommentNode')
 const normalizeSrcPathOnImportDeclarationNode_ = require('./normalizeSrcPathOnImportDeclarationNode')
 const normalizeSrcPathOnRequireArgumentNode_ = require('./normalizeSrcPathOnRequireArgumentNode')
@@ -54,8 +55,9 @@ exports.findCJSExportsAssignmentsExpressionOnProgramNode = findCJSExportsAssignm
 exports.findJSDocAnnotationsInCommendNode = findJSDocAnnotationsInCommendNode_
 exports.findRequireDeclarationOnProgramNode = findRequireDeclarationOnProgramNode_
 exports.mergeDuplicateImportOnProgramNode = mergeDuplicateImportOnProgramNode_
-exports.mergeStringConcatenate = mergeStringConcatenate_
+exports.mergeStringConcatenateOnBinaryExpressionNode = mergeStringConcatenateOnBinaryExpressionNode_
 exports.modifyNodeDeprecatedOnRequireDeclaration = modifyNodeDeprecatedOnRequireDeclaration_
+exports.normalizeBinaryExpressionNode = normalizeBinaryExpressionNode_
 exports.normalizeJSDocAnnotationsOnCommentNode = normalizeJSDocAnnotationsOnCommentNode_
 exports.normalizeSrcPathOnImportDeclarationNode = normalizeSrcPathOnImportDeclarationNode_
 exports.normalizeSrcPathOnRequireArgumentNode = normalizeSrcPathOnRequireArgumentNode_
@@ -84,8 +86,9 @@ module.exports = {
   findJSDocAnnotationsInCommendNode: findJSDocAnnotationsInCommendNode_,
   findRequireDeclarationOnProgramNode: findRequireDeclarationOnProgramNode_,
   mergeDuplicateImportOnProgramNode: mergeDuplicateImportOnProgramNode_,
-  mergeStringConcatenate: mergeStringConcatenate_,
+  mergeStringConcatenateOnBinaryExpressionNode: mergeStringConcatenateOnBinaryExpressionNode_,
   modifyNodeDeprecatedOnRequireDeclaration: modifyNodeDeprecatedOnRequireDeclaration_,
+  normalizeBinaryExpressionNode: normalizeBinaryExpressionNode_,
   normalizeJSDocAnnotationsOnCommentNode: normalizeJSDocAnnotationsOnCommentNode_,
   normalizeSrcPathOnImportDeclarationNode: normalizeSrcPathOnImportDeclarationNode_,
   normalizeSrcPathOnRequireArgumentNode: normalizeSrcPathOnRequireArgumentNode_,

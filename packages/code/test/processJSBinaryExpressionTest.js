@@ -60,6 +60,33 @@ describe('process-js-logical-expression', () => {
       'const a = `aaabbb\\${x}`',
     )
   })
+
+  it('Normalize operator', async () => {
+    equal(
+      await processJSBinaryExpression(`const a = b == 'x'`),
+      "const a = b === 'x'",
+    )
+    equal(
+      await processJSBinaryExpression(`const a = b === 'x'`),
+      "const a = b === 'x'",
+    )
+    equal(
+      await processJSBinaryExpression(`const a = b != 'x'`),
+      "const a = b !== 'x'",
+    )
+    equal(
+      await processJSBinaryExpression(`const a = b !== 'x'`),
+      "const a = b !== 'x'",
+    )
+  })
+
+  it('Swap compare operator', async () => {
+    equal(await processJSBinaryExpression(`const a = x > 1`), 'const a = 1 < x')
+    equal(
+      await processJSBinaryExpression(`const a = x >= 1`),
+      'const a = 1 <= x',
+    )
+  })
 })
 
 /* global describe, before, after, it */

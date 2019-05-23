@@ -11,7 +11,8 @@ const {
   finder,
   parse,
 } = require('@the-/ast')
-const mergeStringConcatenate = require('../ast/nodes/mergeStringConcatenate')
+const mergeStringConcatenateOnBinaryExpressionNode = require('../ast/nodes/mergeStringConcatenateOnBinaryExpressionNode')
+const normalizeBinaryExpressionNode = require('../ast/nodes/normalizeBinaryExpressionNode')
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 
@@ -32,13 +33,24 @@ function processJSBinaryExpression(content, options = {}) {
         operator === '+' &&
         [left, right].some((side) => StringTypes.includes(side.type))
       if (isStringConcat) {
-        const merged = mergeStringConcatenate(BinaryExpression, {
-          get,
-          replace,
-        })
+        const merged = mergeStringConcatenateOnBinaryExpressionNode(
+          BinaryExpression,
+          {
+            get,
+            replace,
+          },
+        )
         if (merged) {
           return merged
         }
+      }
+
+      const normalized = normalizeBinaryExpressionNode(BinaryExpression, {
+        get,
+        replace,
+      })
+      if (normalized) {
+        return normalized
       }
     }
     return content
