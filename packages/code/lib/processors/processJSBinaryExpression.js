@@ -26,11 +26,11 @@ function processJSBinaryExpression(content, options = {}) {
     ])
 
     for (const BinaryExpression of BinaryExpressions) {
-      const { left, right } = BinaryExpression
-      const StringTypes = [NodeTypes.StringLiteral, NodeTypes.TemplateLiteral];
-      const isStringConcat = [left, right].some(
-        (side) => StringTypes.includes(side.type)
-      )
+      const { left, operator, right } = BinaryExpression
+      const StringTypes = [NodeTypes.StringLiteral, NodeTypes.TemplateLiteral]
+      const isStringConcat =
+        operator === '+' &&
+        [left, right].some((side) => StringTypes.includes(side.type))
       if (isStringConcat) {
         const merged = mergeStringConcatenate(BinaryExpression, {
           get,

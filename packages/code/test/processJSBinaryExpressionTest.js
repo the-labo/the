@@ -12,6 +12,12 @@ describe('process-js-logical-expression', () => {
 
   after(() => {})
 
+  it('Compare operator', async () => {
+    equal(
+      await processJSBinaryExpression(`if (action === 'PUSH') {}`),
+      "if (action === 'PUSH') {}",
+    )
+  })
   it('Embed value', async () => {
     equal(
       await processJSBinaryExpression(`const a = "aaa" + bbb`),
@@ -41,10 +47,7 @@ describe('process-js-logical-expression', () => {
       await processJSBinaryExpression(`z = \`aaa\${x}nn\` + " bbb"`),
       'z = `aaa${x}nn bbb`',
     )
-    equal(
-      await processJSBinaryExpression("z = `a` + `b`"),
-      "z = `ab`"
-    )
+    equal(await processJSBinaryExpression('z = `a` + `b`'), 'z = `ab`')
   })
 
   it('With back slash', async () => {
