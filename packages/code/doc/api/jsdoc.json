@@ -5,7 +5,7 @@
     "name": "@the-/code",
     "kind": "module",
     "description": "Code formatter of the-frameworks",
-    "version": "15.5.14",
+    "version": "15.5.17",
     "license": "MIT",
     "typicalname": "code",
     "meta": {
@@ -76,7 +76,7 @@
       }
     ],
     "meta": {
-      "lineno": 103,
+      "lineno": 109,
       "filename": "TheCode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib"
     },
@@ -111,7 +111,7 @@
       }
     ],
     "meta": {
-      "lineno": 117,
+      "lineno": 123,
       "filename": "TheCode.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib"
     },
@@ -1544,6 +1544,20 @@
     "order": 74
   },
   {
+    "id": "module:@the-/code.processors.processPackageLockJSON",
+    "longname": "module:@the-/code.processors.processPackageLockJSON",
+    "name": "processPackageLockJSON",
+    "kind": "function",
+    "scope": "static",
+    "memberof": "module:@the-/code.processors",
+    "meta": {
+      "lineno": 1,
+      "filename": "processPackageLockJSON.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
+    },
+    "order": 75
+  },
+  {
     "id": "module:@the-/code.processors.processYAML",
     "longname": "module:@the-/code.processors.processYAML",
     "name": "processYAML",
@@ -1574,6 +1588,6 @@
       "filename": "processYAML.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
     },
-    "order": 75
+    "order": 76
   }
 ]

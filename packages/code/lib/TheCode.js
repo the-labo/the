@@ -64,7 +64,13 @@ class TheCode {
       [Types.JSON]: [json && p.processJSON, fileEnd && p.processFileEnd].filter(
         Boolean,
       ),
-      [Types.JSON_PACKAGE_JSON]: [p.processPackageJSON].filter(Boolean),
+      [Types.JSON_PACKAGE_JSON]: [
+        p.processPackageJSON,
+        fileEnd && p.processFileEnd,
+      ].filter(Boolean),
+      [Types.JSON_PACKAGE_LOCK_JSON]: [p.processPackageLockJSON].filter(
+        Boolean,
+      ),
       [Types.STYLE_SHEET]: [
         cssRule && p.processCSSRule,
         cssProp && p.processCSSProp,

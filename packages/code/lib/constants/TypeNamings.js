@@ -12,6 +12,7 @@ module.exports =
   {
     Basenames: {
       [Types.JSON_PACKAGE_JSON]: 'package.json',
+      [Types.JSON_PACKAGE_LOCK_JSON]: 'package-lock.json',
     },
     Extensions: {
       [Types.JAVA_SCRIPT]: '.js,.mjs,.jsx,.bud',

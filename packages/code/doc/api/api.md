@@ -5,7 +5,7 @@
 ## @the-/code
 Code formatter of the-frameworks
 
-**Version**: 15.5.14  
+**Version**: 15.5.17  
 **License**: MIT  
 
 * [@the-/code](#module_@the-/code)
@@ -50,6 +50,7 @@ Code formatter of the-frameworks
         * [.processJSUnused(content)](#module_@the-/code.processors.processJSUnused) ⇒ <code>string</code>
         * [.processJSXAttribute(content)](#module_@the-/code.processors.processJSXAttribute) ⇒ <code>string</code>
         * [.processPackageJSON()](#module_@the-/code.processors.processPackageJSON)
+        * [.processPackageLockJSON()](#module_@the-/code.processors.processPackageLockJSON)
         * [.processYAML(content)](#module_@the-/code.processors.processYAML) ⇒ <code>string</code>
     * [.create(...args)](#module_@the-/code.create) ⇒ <code>TheCode</code>
     * [.run()](#module_@the-/code.run)
@@ -223,6 +224,7 @@ Processor functions
     * [.processJSUnused(content)](#module_@the-/code.processors.processJSUnused) ⇒ <code>string</code>
     * [.processJSXAttribute(content)](#module_@the-/code.processors.processJSXAttribute) ⇒ <code>string</code>
     * [.processPackageJSON()](#module_@the-/code.processors.processPackageJSON)
+    * [.processPackageLockJSON()](#module_@the-/code.processors.processPackageLockJSON)
     * [.processYAML(content)](#module_@the-/code.processors.processYAML) ⇒ <code>string</code>
 
 <a name="module_@the-/code.processors.processCSSProp"></a>
@@ -446,6 +448,10 @@ Process JSX attributes
 <a name="module_@the-/code.processors.processPackageJSON"></a>
 
 #### processors.processPackageJSON()
+**Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
+<a name="module_@the-/code.processors.processPackageLockJSON"></a>
+
+#### processors.processPackageLockJSON()
 **Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
 <a name="module_@the-/code.processors.processYAML"></a>
 
