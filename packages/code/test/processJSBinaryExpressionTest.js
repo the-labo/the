@@ -100,25 +100,6 @@ describe('process-js-logical-expression', () => {
     )
   })
 
-  it('Swap compare operator', async () => {
-    equal(await processJSBinaryExpression(`const a = x > 1`), 'const a = 1 < x')
-    equal(await processJSBinaryExpression(`const a = 1 > x`), 'const a = x < 1')
-    equal(
-      await processJSBinaryExpression(`const a = x >= 1`),
-      'const a = 1 <= x',
-    )
-    equal(
-      await processJSBinaryExpression(`const a = 1 >= x`),
-      'const a = x <= 1',
-    )
-    equal(
-      await processJSBinaryExpression(`const a = 1 <= x`),
-      'const a = 1 <= x',
-    )
-
-    equal(await processJSBinaryExpression(`const a = 1 + x`), 'const a = 1 + x')
-  })
-
   it('Fix yoda', async () => {
     equal(await processJSBinaryExpression(`x = a === 1`), `x = a === 1`)
     equal(await processJSBinaryExpression(`x = 1 === a`), `x = a === 1`)

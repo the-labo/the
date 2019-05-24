@@ -19,6 +19,5 @@ module.exports = {
   rules: {
     ...standard.rules,
     'no-irregular-whitespace': 'warn',
-    yoda: ['error', 'never', { onlyEquality: true }],
   },
 }

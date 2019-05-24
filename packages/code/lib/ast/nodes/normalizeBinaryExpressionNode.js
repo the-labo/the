@@ -10,11 +10,6 @@ const {
 
 const OperatorsToConvert = {}
 
-const OperatorsToSwap = {
-  '>': '<',
-  '>=': '<=',
-}
-
 const equalityOperators = new Set(['==', '===', '!=', '!=='])
 const LiteralTypes = new Set([
   NodeTypes.StringLiteral,
@@ -43,16 +38,6 @@ function normalizeBinaryExpressionNode(BinaryExpression, { get, replace }) {
       [
         get([right.start, right.end]),
         operator,
-        get([left.start, left.end]),
-      ].join(' '),
-    )
-  }
-  if (operator in OperatorsToSwap) {
-    return replace(
-      [start, end],
-      [
-        get([right.start, right.end]),
-        OperatorsToSwap[operator],
         get([left.start, left.end]),
       ].join(' '),
     )
