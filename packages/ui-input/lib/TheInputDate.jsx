@@ -136,6 +136,7 @@ class TheInputDate extends React.PureComponent {
             spellCheck,
             tabIndex,
             type,
+            value,
           }}
         />
         {children}

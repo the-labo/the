@@ -96,5 +96,7 @@ module.exports = pon({
     f: 'format',
     /** Shortcut for 'test` task */
     t: 'test',
+    /** Shortcut for 'lint` task */
+    l: 'lint',s
   },
 })

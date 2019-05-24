@@ -62,7 +62,7 @@
 ## @the-/ui-input
 Input of the-components
 
-**Version**: 15.4.4  
+**Version**: 15.4.7  
 <a name="TheInput"></a>
 
 ## TheInput
@@ -130,4 +130,4 @@ Style for TheInput
 <a name="TheInputUploadStyleData"></a>
 
 ## TheInputUploadStyleData()
-**Kind**: global function
+**Kind**: global function  

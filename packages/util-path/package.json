@@ -1,7 +1,7 @@
 {
   "name": "@the-/util-path",
   "description": "Utility for file path",
-  "version": "15.4.4",
+  "version": "15.4.5",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",

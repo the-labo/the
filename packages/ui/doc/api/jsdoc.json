@@ -5,7 +5,7 @@
     "name": "@the-/ui",
     "kind": "module",
     "description": "React components of THE framework",
-    "version": "15.4.9",
+    "version": "15.4.10",
     "meta": {
       "lineno": 2,
       "filename": "index.jsx",
