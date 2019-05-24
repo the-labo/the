@@ -41,6 +41,7 @@ class TheInputDate extends React.PureComponent {
         { delNull: true },
       ),
     )
+    // this.updatePicker(this.props)
   }
 
   componentDidUpdate(prevProps) {

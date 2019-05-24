@@ -22,7 +22,8 @@ async function createTerminal(handler, options = {}) {
         .then((result) => {
           const empty = typeof result === 'undefined' || result === ''
           if (!empty) {
-w          }
+            console.log(inspect(result))
+          }
           next()
         })
         .catch((e) => {

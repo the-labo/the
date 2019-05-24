@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-input",
   "description": "Input of the-components",
-  "version": "15.4.4",
+  "version": "15.4.6",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -34,7 +34,10 @@
   "devDependencies": {
     "@the-/ui-demo": "^15.4.0",
     "@the-/ui-router": "^15.2.0",
-    "coz": "^7.0.19"
+    "coz": "^7.0.19",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0"
   },
   "engines": {
     "node": ">=10",

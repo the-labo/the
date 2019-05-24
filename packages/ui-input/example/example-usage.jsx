@@ -8,7 +8,9 @@ class ExampleComponent extends React.PureComponent {
   constructor(props) {
     super(props)
     this.state = {
-      values: {},
+      values: {
+        'value-date-01': '2018-08-01',
+      },
     }
     this.onUpdate = this.onUpdate.bind(this)
   }

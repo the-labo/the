@@ -41,7 +41,7 @@ describe('process-js-logical-expression', () => {
   it('Embed value', async () => {
     equal(
       await processJSBinaryExpression(`const a = "aaa" + bbb`),
-      'const a = `aaa${bbb}`',
+      `const a = \`aaa\${bbb}\``,
     )
     equal(
       await processJSBinaryExpression(`const a = "aaa" + 'bbb'`),
@@ -50,7 +50,7 @@ describe('process-js-logical-expression', () => {
 
     equal(
       await processJSBinaryExpression(`const a = "aaa" + '\${bbb}'`),
-      'const a = `aaa\\${bbb}`',
+      `const a = \`aaa\\\${bbb}\``,
     )
   })
 
