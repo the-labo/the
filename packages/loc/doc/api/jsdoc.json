@@ -5,7 +5,7 @@
     "name": "@the-/loc",
     "kind": "module",
     "description": "Locale resolver for the-framework",
-    "version": "15.4.7",
+    "version": "15.4.8",
     "license": "MIT",
     "typicalname": "loc",
     "meta": {

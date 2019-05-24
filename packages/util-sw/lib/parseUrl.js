@@ -14,4 +14,12 @@ function parseUrl(urlString, options = {}) {
   return new URL(urlString, parseQuery)
 }
 
+parseUrl.forRegistration = (registration, options = {}) => {
+  const url = registration && registration.active && registration.scriptURL
+  if (!url) {
+    return null
+  }
+  return parseUrl(url, options)
+}
+
 module.exports = parseUrl
