@@ -5,7 +5,7 @@
 ## @the-/code
 Code formatter of the-frameworks
 
-**Version**: 15.5.19  
+**Version**: 15.5.20  
 **License**: MIT  
 
 * [@the-/code](#module_@the-/code)
@@ -35,7 +35,7 @@ Code formatter of the-frameworks
         * [.processJSBlock(content)](#module_@the-/code.processors.processJSBlock) ⇒ <code>string</code>
         * [.processJSClass(content)](#module_@the-/code.processors.processJSClass) ⇒ <code>string</code>
         * [.processComment(content)](#module_@the-/code.processors.processComment) ⇒ <code>string</code>
-        * [.processJSDeclarations()](#module_@the-/code.processors.processJSDeclarations)
+        * [.processJSDeclaration()](#module_@the-/code.processors.processJSDeclaration)
         * [.processJSDoc(content, [options])](#module_@the-/code.processors.processJSDoc)
         * [.processJSExport(content)](#module_@the-/code.processors.processJSExport) ⇒ <code>string</code>
         * [.processJSFunction(content)](#module_@the-/code.processors.processJSFunction) ⇒ <code>string</code>
@@ -209,7 +209,7 @@ Processor functions
     * [.processJSBlock(content)](#module_@the-/code.processors.processJSBlock) ⇒ <code>string</code>
     * [.processJSClass(content)](#module_@the-/code.processors.processJSClass) ⇒ <code>string</code>
     * [.processComment(content)](#module_@the-/code.processors.processComment) ⇒ <code>string</code>
-    * [.processJSDeclarations()](#module_@the-/code.processors.processJSDeclarations)
+    * [.processJSDeclaration()](#module_@the-/code.processors.processJSDeclaration)
     * [.processJSDoc(content, [options])](#module_@the-/code.processors.processJSDoc)
     * [.processJSExport(content)](#module_@the-/code.processors.processJSExport) ⇒ <code>string</code>
     * [.processJSFunction(content)](#module_@the-/code.processors.processJSFunction) ⇒ <code>string</code>
@@ -297,9 +297,9 @@ Processor functions
 | --- | --- |
 | content | <code>string</code> | 
 
-<a name="module_@the-/code.processors.processJSDeclarations"></a>
+<a name="module_@the-/code.processors.processJSDeclaration"></a>
 
-#### processors.processJSDeclarations()
+#### processors.processJSDeclaration()
 Process declarations
 
 **Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  

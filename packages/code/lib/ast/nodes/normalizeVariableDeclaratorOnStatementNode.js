@@ -50,7 +50,7 @@ function normalizeVariableDeclaratorOnStatementNode(
       )
     }
     const [declaration] = declarations
-    const { id } = declaration
+    const { id, init } = declaration
     const hasAssigned = assignedNames.has(id.name) || updatedNames.has(id.name)
     const isLet = kind === 'let'
     const isVar = kind === 'var'
@@ -64,6 +64,23 @@ function normalizeVariableDeclaratorOnStatementNode(
     }
     if (isVar) {
       return replace([VariableDeclaration.start, declaration.id.start], 'let ')
+    }
+
+    const isMemberAssign = init && init.type === NodeTypes.MemberExpression
+    const shouldDestructure =
+      isMemberAssign &&
+      !init.computed &&
+      init.property.type === NodeTypes.Identifier
+    if (shouldDestructure) {
+      if (id.type === NodeTypes.Identifier) {
+        const as = id.name
+        const key = init.property.name
+        const specifier = as === key ? `{ ${key} }` : `{ ${key}: ${as} }`
+        return replace(
+          [VariableDeclaration.start, VariableDeclaration.end],
+          `${kind} ${specifier} = ${get([init.object.start, init.object.end])}`,
+        )
+      }
     }
   }
 }

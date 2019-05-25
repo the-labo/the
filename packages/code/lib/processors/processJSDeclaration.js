@@ -1,7 +1,7 @@
 /**
  * Process declarations
  * @memberof module:@the-/code.processors
- * @function processJSDeclarations
+ * @function processJSDeclaration
  */
 'use strict'
 
@@ -14,8 +14,8 @@ const normalizeVariableDeclaratorOnStatementNode = require('../ast/nodes/normali
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends module:@the-/code.processors.processJSDeclarations */
-function processJSDeclarations(content, options = {}) {
+/** @lends module:@the-/code.processors.processJSDeclaration */
+function processJSDeclaration(content, options = {}) {
   return applyConverter(content, (content) => {
     const parsed = parse(content, options)
     const { get, replace } = contentAccess(content)
@@ -38,4 +38,4 @@ function processJSDeclarations(content, options = {}) {
   })
 }
 
-module.exports = processJSDeclarations
+module.exports = processJSDeclaration

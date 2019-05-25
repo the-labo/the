@@ -1,11 +1,11 @@
 /**
- * Test for processJSDeclarations.
+ * Test for processJSDeclaration.
  * Runs with mocha.
  */
 'use strict'
 
 const { equal } = require('assert').strict
-const processJSDeclarations = require('../lib/processors/processJSDeclarations')
+const processJSDeclaration = require('../lib/processors/processJSDeclaration')
 
 describe('process-js-declarations', () => {
   before(() => {})
@@ -14,7 +14,7 @@ describe('process-js-declarations', () => {
 
   it('Split multiple declarations', async () => {
     equal(
-      await processJSDeclarations(`
+      await processJSDeclaration(`
 const z = () => {
   let a = 1, b = 2
 }
@@ -30,7 +30,7 @@ const z = () => {
 
   it('Do test', async () => {
     equal(
-      await processJSDeclarations(`
+      await processJSDeclaration(`
 const a = () => { 
   let x = 1
   var x2 = 1
@@ -59,6 +59,13 @@ const a = () => {
 }
 `,
     )
+  })
+
+  it('Destructor if possible', async () => {
+    equal(await processJSDeclaration(`const a = x.a`), `const { a } = x`)
+    equal(await processJSDeclaration(`const a = x.b`), `const { b: a } = x`)
+    equal(await processJSDeclaration(`const a = x.b.c`), `const { c: a } = x.b`)
+    equal(await processJSDeclaration(`const { c } = x.a`), `const { c } = x.a`)
   })
 })
 
