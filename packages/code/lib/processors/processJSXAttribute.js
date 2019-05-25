@@ -26,7 +26,62 @@ function processJSXAttribute(content, options = {}) {
   }
   return applyConverter(content, (content) => {
     const parsed = parse(content, options)
-    const { swap } = contentAccess(content)
+    const { get, replace, swap } = contentAccess(content)
+
+    function removeDuplicateAttributes(elm) {
+      const attributes = elm.openingElement.attributes
+      const knownNames = new Set()
+      for (let i = attributes.length - 1; i >= 0; i--) {
+        const attribute = attributes[i]
+        const skip = attribute.type === NodeTypes.JSXSpreadAttribute
+        if (skip) {
+          continue
+        }
+        const name = attribute.name.name
+        if (knownNames.has(name)) {
+          const prev = attributes[i - 1]
+          const start = prev ? prev.end : attribute.start - 1
+          const end = attribute.end
+          return replace([start, end], '')
+        }
+        knownNames.add(name)
+      }
+    }
+    function removeSpreadAttributes(elm) {
+      const attributes = elm.openingElement.attributes.filter(
+        (a) => a.type === NodeTypes.JSXSpreadAttribute,
+      )
+      for (const attribute of attributes) {
+        const { argument, end, start } = attribute
+        if (argument.type !== NodeTypes.ObjectExpression) {
+          continue
+        }
+        const { properties } = argument
+        const expandable = properties.some((property) => !property.computed)
+        if (!expandable) {
+          continue
+        }
+        return replace(
+          [start, end],
+          properties
+            .map((property) => {
+              const { computed, key, method, value } = property
+              if (method) {
+                return `${key.name}={function ${get([
+                  property.start,
+                  property.end,
+                ])}}`
+              }
+              const valueContent = get([value.start, value.end])
+              if (computed) {
+                return `{...{[${key.name}]:${valueContent}}}`
+              }
+              return `${key.name}={${valueContent}}`
+            })
+            .join(' '),
+        )
+      }
+    }
 
     function swapAttributes(elm) {
       const attributes = elm.openingElement.attributes
@@ -35,7 +90,7 @@ function processJSXAttribute(content, options = {}) {
       }
       const sortableAttributes = attributes.reduce(
         (sliced, attribute) => {
-          if (attribute.type === 'JSXSpreadAttribute') {
+          if (attribute.type === NodeTypes.JSXSpreadAttribute) {
             sliced.push([])
           } else {
             sliced[sliced.length - 1].push(attribute)
@@ -61,7 +116,10 @@ function processJSXAttribute(content, options = {}) {
     }
 
     function convertElement(elm) {
-      const converted = swapAttributes(elm)
+      const converted =
+        removeDuplicateAttributes(elm) ||
+        swapAttributes(elm) ||
+        removeSpreadAttributes(elm)
       if (converted) {
         return converted
       }
