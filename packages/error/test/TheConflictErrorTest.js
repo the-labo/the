@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheConflictError.
  * Runs with mocha.
  */
-'use strict'
-
 describe('the-conflict-error', () => {
   before(() => {})
 

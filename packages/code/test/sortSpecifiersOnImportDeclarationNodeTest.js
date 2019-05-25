@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for sortSpecifiersOnImportDeclarationNode.
  * Runs with mocha.
  */
-'use strict'
-
 describe('sort-specifiers-on-import-declaration-node', () => {
   before(() => {})
 

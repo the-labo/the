@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for NodeTypes.
  * Runs with mocha.
  */
-'use strict'
-
 const { throws } = require('assert').strict
 const NodeTypes = require('../lib/constants/NodeTypes')
 

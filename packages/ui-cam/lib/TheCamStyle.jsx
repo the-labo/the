@@ -11,8 +11,8 @@ import CamInputStyleData from './styleData/CamInputStyleData'
 /** Style for TheCam */
 const TheCamStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-cam-style', className)}
+    id={id}
     styles={TheCamStyle.data(options)}
   />
 )

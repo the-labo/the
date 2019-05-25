@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/rtc.create}
  * @memberof module:@the-/rtc
  * @function default
  */
-'use strict'
-
 const constants = require('./constants')
 const create = require('./create')
 const TheRTC = require('./TheRTC')

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function spaceOnCommentNode
  */
-'use strict'
-
 const { EOL } = require('os')
 
 /** @lends module:@the-/code.ast.nodes.spaceOnCommentNode */

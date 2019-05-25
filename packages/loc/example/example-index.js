@@ -1,5 +1,4 @@
 'use strict'
-
 const { create: theLoc } = require('@the-/loc')
 
 const env = theLoc({

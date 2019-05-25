@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Get rotated colors for color
  * @memberof module:@the-/util-color
@@ -7,8 +8,6 @@
  * @param {number} [options.count=12] - Count of colors
  * @returns {string[]} Colors
  */
-'use strict'
-
 const { rotate } = require('acolor')
 
 /** @lends module:@the-/util-color.rotatedColorsFor */

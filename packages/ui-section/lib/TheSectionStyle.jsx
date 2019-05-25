@@ -10,8 +10,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheSection */
 const TheSectionStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={classnames('the-section-style', className)}
+    id={id}
     styles={TheSectionStyle.data(options)}
   />
 )

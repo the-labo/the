@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Entry component
  * @memberof module:@the-/context.helpers
  * @class ContextEntry
  */
-'use strict'
-
 const { shallowEqual } = require('asobj')
 const PropTypes = require('prop-types')
 const React = require('react')
@@ -18,11 +17,9 @@ function contextEntryFor(context, { store }) {
       this.pipeProxy = new Proxy(
         {},
         {
-          get: (target, name) => {
-            return this.state.piped[name]
-          },
+          get: (target, name) => this.state.piped[name],
           set: () => {
-            throw new Error(`[TheContext] Cannot set value on pipeProxy`)
+            throw new Error('[TheContext] Cannot set value on pipeProxy')
           },
         },
       )

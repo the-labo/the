@@ -1,5 +1,4 @@
 'use strict'
-
 const { colorWithAlpha } = require('@the-/util-color')
 
 async function tryExample() {

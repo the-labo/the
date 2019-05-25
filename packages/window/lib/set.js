@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Set global values
  * @memberof module:@the-/window
@@ -6,8 +7,6 @@
  * @param {*} value - Value to set
  * @returns {*}
  */
-'use strict'
-
 const { set: setOne } = require('bwindow')
 const debug = require('debug')('the:window:set')
 

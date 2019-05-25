@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for execForEnv.
  * Runs with mocha.
  */
-'use strict'
-
 describe('exec-for-env', () => {
   before(() => {})
 

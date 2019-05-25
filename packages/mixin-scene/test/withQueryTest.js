@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withQuery.
  * Runs with mocha.
  */
-'use strict'
-
 describe('with-query', () => {
   before(() => {})
 

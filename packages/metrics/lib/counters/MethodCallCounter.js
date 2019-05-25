@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Count react rendering counts
  * @memberof module:@the-/metrics.counters
  * @class MethodCallCounter
  * @augments Counter
  */
-'use strict'
-
 const Counter = require('./Counter')
 
 /** @lends module:@the-/metrics.counters.MethodCallCounter */
@@ -25,7 +24,7 @@ class MethodCallCounter extends Counter {
       return
     }
     if (method.$$theMetricsInjected) {
-      throw new Error(`[TheMetrics] already injected`)
+      throw new Error('[TheMetrics] already injected')
     }
     const counter = this
 

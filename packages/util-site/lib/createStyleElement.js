@@ -1,11 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/util-site
  * @function createStyleElement
  * @param {string} css - CSS String
  * @param {object} [options={}] - Optional settings
  */
-'use strict'
-
 const { get } = require('bwindow')
 
 /** @lends module:@the-/util-site.createStyleElement */

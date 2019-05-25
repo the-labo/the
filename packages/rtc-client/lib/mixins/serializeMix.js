@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Mixin for serialize
  * @memberof module:@the-/rtc.constants.mixins
@@ -5,8 +6,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-'use strict'
-
 const { Converters, ThePack } = require('@the-/pack')
 
 const { decode, encode } = new ThePack({

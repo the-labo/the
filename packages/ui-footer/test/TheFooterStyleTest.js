@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheFooterStyle.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheFooterStyle = require('../shim/TheFooterStyle').default

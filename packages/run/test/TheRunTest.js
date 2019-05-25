@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheRun.
  * Runs with mocha.
  */
-'use strict'
-
 const aport = require('aport')
 const { ok } = require('assert').strict
 const TheRun = require('../lib/TheRun')

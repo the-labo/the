@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/scope.create}
  * @memberof module:@the-/scope
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const scopes = require('./scopes')
 const TheScope = require('./TheScope')

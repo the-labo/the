@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for convertOutbound.
  * Runs with mocha.
  */
-'use strict'
-
 describe('convert-outbound', () => {
   before(() => {})
 

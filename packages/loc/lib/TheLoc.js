@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Locale resolver
  * @memberof module:@the-/loc
  * @class TheLoc
  * @param {Object<string, Object>} config - Localed values
  */
-'use strict'
-
 const argx = require('argx')
 const evaljson = require('evaljson')
 const { sprintf } = require('sprintf-js')
@@ -18,7 +17,7 @@ const validateLocales = require('./helpers/validateLocales')
 class TheLoc {
   constructor(config, options = {}) {
     if ('buildin' in options) {
-      throw new Error(`[TheLoc] buildin is no longer supported`)
+      throw new Error('[TheLoc] buildin is no longer supported')
     }
     for (const namespace of Object.keys(config || {})) {
       const values = mergedLocales(config[namespace])
@@ -79,7 +78,7 @@ class TheLoc {
       .filter(Boolean)
       .join('.')
     if (!this[lang]) {
-      throw new Error('Unknown lang:' + lang)
+      throw new Error(`Unknown lang:${lang}`)
     }
     const searchingLang = [
       lang,

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * withTargets mixin
  * @memberof module:@the-/mixin-scene
@@ -10,8 +11,6 @@
  * @inner
  * @class WithTargetsMixed
  */
-'use strict'
-
 const { uniqueFilter } = require('@the-/util-array')
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for isServerSide.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const isServerSide = require('../lib/isServerSide')
 

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * withPage mixin
  * @memberof module:@the-/mixin-scene
@@ -10,8 +11,6 @@
  * @inner
  * @class WithPageMixed
  */
-'use strict'
-
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code
  * @function run
  */
-'use strict'
-
 const logger = require('colorprint')
 const path = require('path')
 const create = require('./create')

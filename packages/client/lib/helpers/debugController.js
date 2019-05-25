@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Wrap controller instance with debug utility
  * @memberof module:@the-/client.helpers
  * @function debugController
  */
-'use strict'
-
 const methodsToSkip = [
   'debugWrap',
   'toString',
@@ -23,7 +22,7 @@ function debugController(controller) {
     get(instance, name) {
       const value = instance[name]
       if (name === 'session') {
-        console.warn(`[TheClient] You cannot access session on client side`)
+        console.warn('[TheClient] You cannot access session on client side')
       }
       const shouldWrap =
         typeof value === 'function' && !methodsToSkip.includes(value.name)
@@ -56,7 +55,7 @@ function debugController(controller) {
           console.log('Signature', `\`${controllerName}.${name}()\``)
           console.log('Arguments', args)
           if (caught) {
-            console.log(`Exception`, caught)
+            console.log('Exception', caught)
           } else {
             console.log('Result', result)
           }

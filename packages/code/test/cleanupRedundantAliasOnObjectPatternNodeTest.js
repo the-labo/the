@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for cleanupRedundantAliasOnObjectPatternNode.
  * Runs with mocha.
  */
-'use strict'
-
 describe('cleanup-redundant-alias-on-object-pattern-node', () => {
   before(() => {})
 

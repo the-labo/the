@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/resource.create}
  * @memberof module:@the-/resource
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const DataTypes = require('./DataTypes')
 const isResourceClass = require('./isResourceClass')

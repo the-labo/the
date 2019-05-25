@@ -1,8 +1,7 @@
+'use strict'
 /**
  * @function getAllPropertyDescriptors
  */
-'use strict'
-
 /** @lends getAllPropertyDescriptor */
 function getAllPropertyDescriptors(instance) {
   let descriptors = {}

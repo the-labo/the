@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheFrameStyle.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheFrameStyle = require('../shim/TheFrameStyle').default

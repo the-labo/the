@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withTargets.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const withTargets = require('../lib/withTargets')
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for parsePolicy.
  * Runs with mocha.
  */
-'use strict'
-
 describe('parse-policy', () => {
   before(() => {})
 

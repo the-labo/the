@@ -1,3 +1,4 @@
+'use strict'
 /**
  * @memberof module:@the-/resize
  * @class TheResize
@@ -5,8 +6,6 @@
  * @param {string} [config.fit] - Fit policy ('cover','contain','fill', 'inside' or 'outside')
  * @see http://sharp.pixelplumbing.com/en/stable/api-resize/#parameters
  */
-'use strict'
-
 const aglob = require('aglob')
 const amkdirp = require('amkdirp')
 const { statAsync } = require('asfs')

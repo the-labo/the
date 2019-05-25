@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for readAsJsonSync.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const readAsJsonSync = require('../lib/readAsJsonSync')
 

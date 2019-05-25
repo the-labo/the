@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Assert module
  * @memberof module:@the-/assert
@@ -6,8 +7,6 @@
  * @param {Object} [options={}] - Optional settings
  * @param {Object} [options.skipOnProduction] - Skip asserting on production
  */
-'use strict'
-
 const invariant = require('invariant')
 
 const isNullish = (v) => v === null || typeof v === 'undefined'

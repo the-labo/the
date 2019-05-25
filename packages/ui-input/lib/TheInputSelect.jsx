@@ -285,14 +285,18 @@ class TheInputSelect extends React.PureComponent {
 
         <input
           className='the-input-select-input'
-          {...{ id, name, placeholder, tabIndex, type }}
+          id={id}
+          name={name}
           onBlur={this.handleBlur}
           onChange={noop}
           onFocus={this.handleFocus}
           onKeyDown={this.handleKeyDown}
           onKeyUp={this.handleKeyUp}
+          placeholder={placeholder}
           readOnly
           ref={this.inputElmRef}
+          tabIndex={tabIndex}
+          type={type}
           value={value || ''}
         />
 
@@ -322,7 +326,6 @@ class TheInputSelect extends React.PureComponent {
         {children}
         {!readOnly && suggesting && (
           <TheInputSelectOptionList
-            {...{ options, parser, sorter, suggestingIndex }}
             disabledValues={disabledValues}
             full={fullScreen}
             nullable={nullable}
@@ -330,7 +333,11 @@ class TheInputSelect extends React.PureComponent {
             onClose={this.offSuggestion}
             onNull={this.handleNull}
             onSelect={this.handleSelect}
+            options={options}
             optionsRef={this.optionsElmRef}
+            parser={parser}
+            sorter={sorter}
+            suggestingIndex={suggestingIndex}
           />
         )}
       </div>

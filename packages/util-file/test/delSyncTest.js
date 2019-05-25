@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for delSync.
  * Runs with mocha.
  */
-'use strict'
-
 describe('del-sync', () => {
   before(() => {})
 

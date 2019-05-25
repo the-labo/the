@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for filenameFor.
  * Runs with mocha.
  */
-'use strict'
-
 describe('filename-for', () => {
   before(() => {})
 

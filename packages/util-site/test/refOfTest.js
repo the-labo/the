@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for refOf.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const refOf = require('../lib/refOf')
 

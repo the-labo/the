@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for sfuMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('sfu-mix', () => {
   before(() => {})
 

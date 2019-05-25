@@ -38,9 +38,15 @@ class TheInputRadio extends React.PureComponent {
         role='radio'
       >
         <input
+          checked={checked}
           className='the-input-radio-radio'
+          disabled={disabled}
+          id={id}
+          name={name}
+          onChange={onChange}
+          tabIndex={tabIndex}
           type='radio'
-          {...{ checked, disabled, id, name, onChange, tabIndex, value }}
+          value={value}
         />
         <label className='the-input-radio-label' htmlFor={id}>
           <TheIcon className={c('the-input-radio-icon', icon)} />
@@ -89,7 +95,7 @@ class TheInputRadio extends React.PureComponent {
     unlessProduction(() => {
       if (asToggle && asButton) {
         throw new Error(
-          `[TheButton] You cannot use \`asToggle\` and \`asButton\` at same time`,
+          '[TheButton] You cannot use `asToggle` and `asButton` at same time',
         )
       }
     })

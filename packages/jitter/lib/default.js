@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/jitter.create}
  * @memberof module:@the-/jitter
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const TheJitter = require('./TheJitter')
 

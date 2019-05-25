@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheInvalidParameterError.
  * Runs with mocha.
  */
-'use strict'
-
 describe('the-invalid-parameter-error', () => {
   before(() => {})
 

@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Process declarations
  * @memberof module:@the-/code.processors
  * @function processJSDeclaration
  */
-'use strict'
-
 const {
   constants: { NodeTypes },
   finder,
@@ -16,26 +15,33 @@ const contentAccess = require('../helpers/contentAccess')
 
 /** @lends module:@the-/code.processors.processJSDeclaration */
 function processJSDeclaration(content, options = {}) {
-  return applyConverter(content, (content) => {
-    const parsed = parse(content, options)
-    const { get, replace } = contentAccess(content)
+  return applyConverter(
+    content,
+    (content) => {
+      const parsed = parse(content, options)
+      const { get, replace } = contentAccess(content)
 
-    const Statements = finder.findByTypes(parsed, [
-      NodeTypes.Program,
-      NodeTypes.BlockStatement,
-    ])
+      const Statements = finder.findByTypes(parsed, [
+        NodeTypes.Program,
+        NodeTypes.BlockStatement,
+      ])
 
-    for (const Statement of Statements) {
-      const converted = normalizeVariableDeclaratorOnStatementNode(Statement, {
-        get,
-        replace,
-      })
-      if (converted) {
-        return converted
+      for (const Statement of Statements) {
+        const converted = normalizeVariableDeclaratorOnStatementNode(
+          Statement,
+          {
+            get,
+            replace,
+          },
+        )
+        if (converted) {
+          return converted
+        }
       }
-    }
-    return content
-  })
+      return content
+    },
+    { name: 'processJSDeclaration' },
+  )
 }
 
 module.exports = processJSDeclaration

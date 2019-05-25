@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for isJSON5File.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const isJSON5File = require('../lib/isJSON5File')
 

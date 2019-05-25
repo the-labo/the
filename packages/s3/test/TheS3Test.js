@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheS3.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const TheS3 = require('../lib/TheS3')
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/seat
  * @function scopeMix
  */
-'use strict'
-
 const { escape } = require('json-pointer')
 
 /** @lends module:@the-/seat.scopeMix */

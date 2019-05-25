@@ -25,8 +25,8 @@ import UploadStyleData from './styleData/UploadStyleData'
 /** Style for TheInput */
 const TheInputStyle = ({ className, id, options }) => [
   <TheStyle
-    {...{ id }}
     className={c('the-input-style', className)}
+    id={id}
     key='base'
     styles={TheInputStyle.data(options)}
   />,

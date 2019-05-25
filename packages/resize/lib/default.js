@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/resize.create}
  * @memberof module:@the-/resize
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const TheResize = require('./TheResize')
 

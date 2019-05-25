@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for toggleBodyClass.
  * Runs with mocha.
  */
-'use strict'
-
 const toggleBodyClass = require('../lib/toggleBodyClass')
 
 describe('toggle-body-class', () => {

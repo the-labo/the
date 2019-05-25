@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for asMethodWrap.
  * Runs with mocha.
  */
-'use strict'
-
 describe('as-method-wrap', () => {
   before(() => {})
 

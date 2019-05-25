@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Resource to manage schema
  * @memberof module:@the-/db
  * @class TheSchemaResource
  */
-'use strict'
-
 const { DataTypes, TheResource } = require('@the-/resource')
 
 const { DATE, STRING } = DataTypes

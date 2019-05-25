@@ -5,8 +5,6 @@
  * @param {Object} [options={}]
  * @returns {function()} Task function
  */
-'use strict'
-
 const chalk = require('chalk')
 const path = require('path')
 const theSupport = require('./lib/create')

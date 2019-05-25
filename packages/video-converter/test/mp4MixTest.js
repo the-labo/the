@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for mp4Mix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('mp4-mix', () => {
   before(() => {})
 

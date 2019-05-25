@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/server.constants
  * @namespace DefaultValues
  */
-'use strict'
-
 module.exports = Object.freeze(
   /** @lends module:@the-/server.DefaultValues */
   {

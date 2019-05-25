@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheYesNoDialog.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheYesNoDialog = require('../shim/TheYesNoDialog').default

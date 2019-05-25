@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheInputSelect.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheInputSelect = require('../shim/TheInputSelect').default

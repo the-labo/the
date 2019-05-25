@@ -1,8 +1,7 @@
+'use strict'
 /**
  * @class SFUProxyPool
  */
-'use strict'
-
 const SFUProxy = require('./SFUProxy')
 
 /** @lends SFUProxyPool */

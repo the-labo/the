@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/cache/lib"
+      "path": "lib"
     },
     "name": "@the-/cache",
     "order": 2,
     "typicalname": "cache",
-    "version": "15.4.3"
+    "version": "15.4.5"
   },
   {
     "augments": [
@@ -25,8 +25,8 @@
     "memberof": "module:@the-/cache",
     "meta": {
       "filename": "TheCache.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/cache/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheCache",
     "order": 3,
@@ -43,8 +43,8 @@
     "memberof": "module:@the-/cache",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/cache/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -78,8 +78,8 @@
     "memberof": "module:@the-/cache",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/cache/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for decorateRule.
  * Runs with mocha.
  */
-'use strict'
-
 const fs = require('fs')
 const decorateRule = require('../lib/rules/decorateRule')
 

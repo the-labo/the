@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function sortCasesOnSwitchStatementNode
  */
-'use strict'
-
 const { compareStrings } = require('../../helpers/arrayHelper')
 
 /** @lends module:@the-/code.ast.nodes.sortCasesOnSwitchStatementNode */

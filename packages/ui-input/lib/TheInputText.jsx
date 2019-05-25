@@ -304,29 +304,27 @@ class TheInputText extends React.PureComponent {
           <span className='the-input-text-input-wrap'>
             {prefix}
             <input
+              autoCapitalize={autoCapitalize}
+              autoComplete={autoComplete}
+              autoCorrect={autoCorrect}
+              autoFocus={autoFocus}
               className='the-input-text-input'
-              {...{
-                autoCapitalize,
-                autoComplete,
-                autoCorrect,
-                autoFocus,
-                id,
-                maxLength,
-                name,
-                placeholder,
-                readOnly,
-                required,
-                spellCheck,
-                tabIndex,
-                type,
-              }}
+              id={id}
+              maxLength={maxLength}
+              name={name}
               onBlur={this.handleBlur}
               onChange={this.handleChange}
               onFocus={this.handleFocus}
               onKeyDown={this.handleKeyDown}
               onKeyPress={this.handleKeyPress}
               onKeyUp={this.handleKeyUp}
+              placeholder={placeholder}
+              readOnly={readOnly}
               ref={inputRef}
+              required={required}
+              spellCheck={spellCheck}
+              tabIndex={tabIndex}
+              type={type}
               value={value || ''}
             />
             {suffix}
@@ -335,8 +333,10 @@ class TheInputText extends React.PureComponent {
 
         {!readOnly && suggesting && (
           <TheInputText.Options
-            {...{ candidates, parser, selectedCandidate }}
+            candidates={candidates}
             onSelect={({ value }) => this.enterCandidate(value)}
+            parser={parser}
+            selectedCandidate={selectedCandidate}
           />
         )}
       </div>
@@ -410,12 +410,9 @@ TheInputText.propTypes = {
 
 TheInputText.defaultProps = {
   error: null,
-  matcher: (candidate, value) => {
-    return (
-      candidate.indexOf(value) !== -1 ||
-      candidate.toLowerCase().indexOf(value.toLowerCase()) !== -1
-    )
-  },
+  matcher: (candidate, value) =>
+    candidate.indexOf(value) !== -1 ||
+    candidate.toLowerCase().indexOf(value.toLowerCase()) !== -1,
   onEnter: null,
   options: {},
   parser: (v) => String(v || ''),

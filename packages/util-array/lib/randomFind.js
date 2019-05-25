@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Find randomly
  * @memberof module:@the-/util-array
@@ -6,8 +7,6 @@
  * @example
  *   [1,2,3].find(randomFind())
  */
-'use strict'
-
 /** @lends module:@the-/util-array.randomFind */
 function randomFind() {
   if (arguments.length > 2) {

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheS3 instance
  * @memberof module:@the-/s3
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {TheS3}
  */
-'use strict'
-
 const TheS3 = require('./TheS3')
 
 /** @lends create */

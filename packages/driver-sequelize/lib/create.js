@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheDriverSequelize instance
  * @memberof @the-/driver-sequelize
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {TheDriverSequelize}
  */
-'use strict'
-
 const TheDriverSequelize = require('./TheDriverSequelize')
 
 /** @lends @the-/driver-sequelize.create */

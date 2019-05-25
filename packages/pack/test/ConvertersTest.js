@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for Converters.
  * Runs with mocha.
  */
-'use strict'
-
 describe('converters', () => {
   before(() => {})
 

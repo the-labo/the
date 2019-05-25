@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheDemoLib instance
  * @memberof module:@the-/demo-lib
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {TheDemoLib}
  */
-'use strict'
-
 const TheDemoLib = require('./TheDemoLib')
 
 /** @lends module:@the-/demo-lib.create */

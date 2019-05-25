@@ -206,20 +206,24 @@ class TheInputRange extends React.PureComponent {
               />
             </div>
             <TheInputRange.Handle
-              {...{ maxX, minX, x: fromX }}
               elmRef={(fromHandleElm) => {
                 this.fromHandleElm = fromHandleElm
                 this.handleResize()
               }}
+              maxX={maxX}
+              minX={minX}
               onMove={(e) => this.handleFromHandleMove(e)}
+              x={fromX}
             />
             <TheInputRange.Handle
-              {...{ maxX, minX, x: toX }}
               elmRef={(toHandleElm) => {
                 this.toHandleElm = toHandleElm
                 this.handleResize()
               }}
+              maxX={maxX}
+              minX={minX}
               onMove={(e) => this.handleToHandleMove(e)}
+              x={toX}
             />
           </div>
           <TheCondition unless={barOnly}>

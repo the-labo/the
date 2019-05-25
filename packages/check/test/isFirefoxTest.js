@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for isFirefox.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const isFirefox = require('../lib/isFirefox')
 

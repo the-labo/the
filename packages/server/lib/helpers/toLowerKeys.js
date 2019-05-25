@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/server.helpers
  * @function toLowerKeys
  */
-'use strict'
-
 /** @lends module:@the-/server.helpers.toLowerKeys */
 function toLowerKeys(values = {}) {
   return Object.keys(values).reduce(

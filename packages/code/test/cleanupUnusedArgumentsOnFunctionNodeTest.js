@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for cleanupUnusedArgumentsOnFunctionNode.
  * Runs with mocha.
  */
-'use strict'
-
 describe('cleanup-unused-arguments-on-function-node', () => {
   before(() => {})
 

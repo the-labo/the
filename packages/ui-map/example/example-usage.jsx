@@ -137,14 +137,16 @@ class ExampleComponent extends React.Component {
         <TheSpinStyle />
         <TheMapStyle />
         <TheMap
-          onChange={this.handleChange}
-          onLeafletMap={this.handleLeafletMap}
-          {...{ lat, lng, zoom }}
           height={'50vh'}
+          lat={lat}
           layers={MapLayers}
+          lng={lng}
           markers={markers}
+          onChange={this.handleChange}
           onClick={this.handleClick}
+          onLeafletMap={this.handleLeafletMap}
           width={'480px'}
+          zoom={zoom}
         />
 
         <hr />

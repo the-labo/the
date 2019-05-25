@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for processJSComment.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const processJSComment = require('../lib/processors/processJSComment')
 

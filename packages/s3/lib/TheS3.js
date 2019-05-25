@@ -1,3 +1,4 @@
+'use strict'
 /**
  * @memberof module:@the-/s3
  * @class TheS3
@@ -8,8 +9,6 @@
  * @param {string} [config.secretAccessKey]
  * @param {string} [config.signatureVersion]
  */
-'use strict'
-
 const AWS = require('aws-sdk')
 const fs = require('fs')
 const mime = require('mime')

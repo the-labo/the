@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for mapping.
  * Runs with mocha.
  */
-'use strict'
-
 const coz = require('coz')
 const mapping = require('../lib/mapping')
 

@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Mark as RPCController
  * @memberof module:@the-/server
  * @function asControllerModule
  */
-'use strict'
-
 const { unlessProduction } = require('@the-/check')
 const { assertMethods } = require('./assert')
 
@@ -24,7 +23,7 @@ function asControllerModule(Class, options = {}) {
       .map((name) => ({
         [name]: async function controllerMethodProxy({ cid }, ...params) {
           if (!cid) {
-            throw new Error(`[TheServer] cid is required`)
+            throw new Error('[TheServer] cid is required')
           }
           const instance = await instantiateController(controllerName, cid)
           await instance.reloadSession()

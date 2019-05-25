@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/setting.create}
  * @memberof module:@the-/setting
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const helpers = require('./helpers')
 const TheSetting = require('./TheSetting')

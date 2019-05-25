@@ -5,7 +5,7 @@
 ## @the-/date
 Date utility for the-framework
 
-**Version**: 15.4.3  
+**Version**: 15.4.5  
 **License**: MIT  
 
 * [@the-/date](#module_@the-/date)
@@ -268,4 +268,4 @@ Create a TheDate instance
 ### date.default() ⇒ <code>TheDate</code>
 Default exports
 
-**Kind**: static method of [<code>@the-/date</code>](#module_@the-/date)
+**Kind**: static method of [<code>@the-/date</code>](#module_@the-/date)  

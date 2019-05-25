@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-qr
  * @typicalname uiQr
- * @version 15.4.3
+ * @version 15.4.5
  * @description QRCode the-component
  */
 'use strict'

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheScene.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok, throws } = require('assert').strict
 const {
   scopes: { ScopeScope, StringScope },

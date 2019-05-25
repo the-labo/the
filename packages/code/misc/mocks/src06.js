@@ -41,8 +41,8 @@ const Vars = Object.freeze(
   /** @lends Local */
   {
     APP_PORT: portNumberFor(`app@${__dirname}`),
-    APP_PROCESS_NAME: processNameFor(`${pkg.name}@${__dirname}`) + '-app',
-    BACKUP_PROCESS_NAME: processNameFor(`${pkg.name}@${__dirname}`) + '-backup',
+    APP_PROCESS_NAME: `${processNameFor(`${pkg.name}@${__dirname}`)}-app`,
+    BACKUP_PROCESS_NAME: `${processNameFor(`${pkg.name}@${__dirname}`)}-backup`,
     INSPECT_PORT: portNumberFor(`inspect@${__dirname}`),
     // Mysql
     MYSQL_CONTAINER_NAME: containerNameFor(`${pkg.name}-mysql@${__dirname}`),

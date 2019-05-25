@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for countSuffix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('count-suffix', () => {
   before(() => {})
 

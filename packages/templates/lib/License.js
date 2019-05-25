@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Define bud for LICENSE
  * @memberof module:@the-/templates
@@ -8,8 +9,6 @@
  * @param {string} config.holder - License holder name.
  * @returns {object} - Bud object.
  */
-'use strict'
-
 const assert = require('assert')
 const _tmpl = require('./_tmpl')
 

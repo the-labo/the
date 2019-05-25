@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for processJSExport.
  * Runs with mocha.
  */
-'use strict'
-
 const processJSExport = require('../lib/processors/processJSExport')
 
 describe('process-js-export', () => {

@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/refactor.create}
  * @memberof module:@the-/refactor
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const TheRefactor = require('./TheRefactor')
 

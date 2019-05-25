@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/refactor
  * @class TheRefactor
  */
-'use strict'
-
 const abind = require('abind')
 const aglob = require('aglob')
 const {
@@ -54,11 +53,9 @@ class TheRefactor {
     const { cwd, ignore } = options
     return this._each(
       pattern,
-      ({ content, filename }) => {
-        return {
-          content: converter(content, { filename }),
-        }
-      },
+      ({ content, filename }) => ({
+        content: converter(content, { filename }),
+      }),
       { cwd, ignore },
     )
   }

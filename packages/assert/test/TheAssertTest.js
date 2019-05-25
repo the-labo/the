@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheAssert.
  * Runs with mocha.
  */
-'use strict'
-
 const { doesNotThrow, ok } = require('assert').strict
 const TheAssert = require('../lib/TheAssert')
 

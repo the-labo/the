@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withClient.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const withClient = require('../lib/withClient')
 

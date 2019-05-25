@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for history.
  * Runs with mocha.
  */
-'use strict'
-
 describe('history', () => {
   before(() => {})
 

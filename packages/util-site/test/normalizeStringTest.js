@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for normalizeString.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const normalizeString = require('../lib/normalizeString')
 

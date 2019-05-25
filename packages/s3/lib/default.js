@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/s3}
  * @memberof module:@the-/s3
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const TheS3 = require('./TheS3')
 

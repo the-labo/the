@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Define bud for mapping
  * @memberof module:@the-/templates
  * @function mapping
  * @returns {Object}
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const _tmpl = require('./_tmpl')
 

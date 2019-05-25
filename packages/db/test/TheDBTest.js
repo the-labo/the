@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheDB.
  * Runs with mocha.
  */
-'use strict'
-
 const asleep = require('asleep')
 const { deepEqual, equal, ok } = require('assert').strict
 const { TheRefresher } = require('@the-/refresher')
@@ -98,7 +97,7 @@ describe('the-db', function() {
     }
 
     {
-      let called = []
+      const called = []
       const handlers = {
         async '1.1.0'(db) {
           called.push('1.1.0')
@@ -123,7 +122,7 @@ describe('the-db', function() {
     await asleep(100)
 
     for (let i = 0; i < 10; i++) {
-      await db.resource('Ball').create({ name: 'ball-' + i })
+      await db.resource('Ball').create({ name: `ball-${i}` })
     }
 
     const dataDir = `${__dirname}/../tmp/foo/exports`

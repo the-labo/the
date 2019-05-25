@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for uniqueFilter.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepEqual } = require('assert').strict
 const uniqueFilter = require('../lib/uniqueFilter')
 

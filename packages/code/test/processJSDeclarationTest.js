@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for processJSDeclaration.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const processJSDeclaration = require('../lib/processors/processJSDeclaration')
 
@@ -62,10 +61,47 @@ const a = () => {
   })
 
   it('Destructor if possible', async () => {
-    equal(await processJSDeclaration(`const a = x.a`), `const { a } = x`)
-    equal(await processJSDeclaration(`const a = x.b`), `const { b: a } = x`)
-    equal(await processJSDeclaration(`const a = x.b.c`), `const { c: a } = x.b`)
-    equal(await processJSDeclaration(`const { c } = x.a`), `const { c } = x.a`)
+    equal(await processJSDeclaration('const a = x.a'), 'const { a } = x')
+    equal(await processJSDeclaration('const a = x.b'), 'const { b: a } = x')
+    equal(await processJSDeclaration('const a = x[b]'), 'const a = x[b]')
+    equal(
+      await processJSDeclaration('const a = x.b.c'),
+      'const { b: { c: a } } = x',
+    )
+    equal(
+      await processJSDeclaration('const { c } = x.a'),
+      'const { a: { c } } = x',
+    )
+    equal(
+      await processJSDeclaration('const [ c ] = x.a'),
+      'const { a: [ c ] } = x',
+    )
+    equal(
+      await processJSDeclaration("const a = require('x').a"),
+      "const { a } = require('x')",
+    )
+    equal(
+      await processJSDeclaration("const b = require('x').a"),
+      "const { a: b } = require('x')",
+    )
+  })
+
+  it('Array Destructor if possible', async () => {
+    equal(await processJSDeclaration('const a = x[1]'), 'const [ , a ] = x')
+    equal(await processJSDeclaration('const a = x[3]'), 'const [ , , , a ] = x')
+    equal(
+      await processJSDeclaration('const [ a ] = x[1]'),
+      'const [ , [ a ] ] = x',
+    )
+    equal(
+      await processJSDeclaration('const { a } = x[1]'),
+      'const [ , { a } ] = x',
+    )
+
+    equal(
+      await processJSDeclaration("const shortName = name.split('@')[0]"),
+      "const [ shortName ] = name.split('@')",
+    )
   })
 })
 

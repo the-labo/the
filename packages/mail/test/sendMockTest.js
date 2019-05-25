@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for sendMock.
  * Runs with mocha.
  */
-'use strict'
-
 const sendMock = require('../lib/sending/sendMock')
 
 describe('send-mock', () => {

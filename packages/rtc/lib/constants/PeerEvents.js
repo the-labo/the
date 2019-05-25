@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Events for peer
  * @memberof module:@the-/rtc.constants
  * @enum {string}
  * @name PeerEvents
  */
-'use strict'
-
 module.exports = Object.freeze(
   /** @lends module:@the-/rtc.constants.PeerEvents */
   {

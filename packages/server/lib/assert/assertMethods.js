@@ -1,3 +1,4 @@
+'use strict'
 /**
  * @memberof module:@the-/server.assert
  * @function assertMethods
@@ -5,8 +6,6 @@
  * @param {string[]} reservedNames
  * @throws {Error} The server error
  */
-'use strict'
-
 /** @lends module:@the-/server.assert.assertMethods */
 function assertMethods(Class, reservedNames) {
   for (const name of reservedNames) {

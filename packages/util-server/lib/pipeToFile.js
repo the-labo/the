@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Pipe to file
  * @function pipeToFile
@@ -5,8 +6,6 @@
  * @param {string} dest - Destination file path
  * @returns {Promise}
  */
-'use strict'
-
 const amkdirp = require('amkdirp')
 const fs = require('fs')
 const path = require('path')

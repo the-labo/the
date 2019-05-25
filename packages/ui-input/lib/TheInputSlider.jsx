@@ -163,12 +163,14 @@ class TheInputSlider extends React.PureComponent {
               />
             </div>
             <TheInputSlider.Handle
-              {...{ maxX, minX, x }}
               elmRef={(handleElm) => {
                 this.handleElm = handleElm
                 this.handleResize()
               }}
+              maxX={maxX}
+              minX={minX}
               onMove={(e) => this.handleHandleMove(e)}
+              x={x}
             />
           </div>
           <TheCondition unless={barOnly}>

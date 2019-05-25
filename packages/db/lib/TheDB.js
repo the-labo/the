@@ -1,3 +1,4 @@
+'use strict'
 /**
  * @memberof module:@the-/db
  * @class TheDB
@@ -20,8 +21,6 @@
  * @param {object} [config.hooks] - Database hook creators
  * @param {object} [config.resources] - Database resource classes
  */
-'use strict'
-
 const { unlinkAsync } = require('asfs')
 const asleep = require('asleep')
 const { clone } = require('asobj')
@@ -294,7 +293,7 @@ class TheDB extends TheDBBase {
    */
   unref() {
     if (this._unref) {
-      throw new Error(`Already unref`)
+      throw new Error('Already unref')
     }
     process.setMaxListeners(process.getMaxListeners() + 1)
     process.on('beforeExit', () => {
@@ -353,7 +352,7 @@ class TheDB extends TheDBBase {
         break
     }
     if (!driver.drop) {
-      throw new Error(`[TheDB] drop() is not implemented!`)
+      throw new Error('[TheDB] drop() is not implemented!')
     }
     for (const resourceName of Object.keys(resources)) {
       await driver.drop(resourceName)
@@ -399,7 +398,7 @@ class TheDB extends TheDBBase {
   async transaction(callback) {
     const { driver } = this
     if (!driver.transaction) {
-      console.warn(`[TheDB] transaction() is not implemented!`)
+      console.warn('[TheDB] transaction() is not implemented!')
       if (callback) {
         callback(null)
       }

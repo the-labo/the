@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for define.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const define = require('../lib/define')
 
@@ -13,8 +12,8 @@ describe('define', () => {
   after(() => {})
 
   it('Do test', () => {
-    let HogeError = define('HogeError')
-    let error = new HogeError()
+    const HogeError = define('HogeError')
+    const error = new HogeError()
     ok(error)
     equal(error.name, 'HogeError')
   })

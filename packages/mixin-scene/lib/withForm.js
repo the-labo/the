@@ -1,3 +1,4 @@
+'use strict'
 /**
  * withForm mixin
  * @function withForm
@@ -6,8 +7,6 @@
  * @param {function()} Class - Class to mix
  * @returns {function()} Mixed class
  */
-'use strict'
-
 const { get } = require('bwindow')
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')

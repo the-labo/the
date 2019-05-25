@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for nameFile.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const nameFile = require('../lib/nameFile')
 

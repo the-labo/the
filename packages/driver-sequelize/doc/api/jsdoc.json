@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
+      "path": "lib"
     },
     "name": "@the-/driver-sequelize",
     "order": 2,
     "typicalname": "driverSequelize",
-    "version": "15.4.3"
+    "version": "15.4.5"
   },
   {
     "description": "Define schema",
@@ -23,8 +23,8 @@
     "memberof": "@the-/driver-sequelize.TheDriverSequelize",
     "meta": {
       "filename": "TheDriverSequelize.js",
-      "lineno": 76,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
+      "lineno": 75,
+      "path": "lib"
     },
     "name": "define",
     "order": 4,
@@ -57,8 +57,8 @@
     "memberof": "@the-/driver-sequelize.TheDriverSequelize",
     "meta": {
       "filename": "TheDriverSequelize.js",
-      "lineno": 256,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
+      "lineno": 255,
+      "path": "lib"
     },
     "name": "untilReady",
     "order": 5,
@@ -81,8 +81,8 @@
     "memberof": "@the-/driver-sequelize",
     "meta": {
       "filename": "TheDriverSequelize.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheDriverSequelize",
     "order": 3,
@@ -95,8 +95,8 @@
     "memberof": "module:@the-/driver-sequelize.helpers",
     "meta": {
       "filename": "logger.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "Logger",
     "order": 13,
@@ -116,7 +116,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/constants"
+      "path": "lib/constants"
     },
     "name": "constants",
     "order": 6,
@@ -132,7 +132,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/converters"
+      "path": "lib/converters"
     },
     "name": "converters",
     "order": 11,
@@ -148,7 +148,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/helpers"
+      "path": "lib/helpers"
     },
     "name": "helpers",
     "order": 12,
@@ -164,7 +164,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "mixins",
     "order": 14,
@@ -180,7 +180,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/modeling"
+      "path": "lib/modeling"
     },
     "name": "modeling",
     "order": 18,
@@ -196,7 +196,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/parsing"
+      "path": "lib/parsing"
     },
     "name": "parsing",
     "order": 20,
@@ -209,8 +209,8 @@
     "memberof": "module:@the-/driver-sequelize.constants",
     "meta": {
       "filename": "MetaColumnNames.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/constants"
+      "lineno": 2,
+      "path": "lib/constants"
     },
     "name": "MetaColumnNames",
     "order": 7,
@@ -228,8 +228,8 @@
     "memberof": "module:@the-/driver-sequelize.constants",
     "meta": {
       "filename": "MetaColumnNamesReversed.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/constants"
+      "lineno": 2,
+      "path": "lib/constants"
     },
     "name": "MetaColumnNamesReversed",
     "order": 8,
@@ -248,8 +248,8 @@
     "memberof": "@the-/driver-sequelize",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -283,8 +283,8 @@
     "memberof": "module:@the-/driver-sequelize",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,
@@ -297,8 +297,8 @@
     "memberof": "module:@the-/driver-sequelize.converters",
     "meta": {
       "filename": "convertInbound.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/converters"
+      "lineno": 2,
+      "path": "lib/converters"
     },
     "name": "convertInbound",
     "order": 9,
@@ -311,8 +311,8 @@
     "memberof": "module:@the-/driver-sequelize.converters",
     "meta": {
       "filename": "convertOutbound.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/converters"
+      "lineno": 2,
+      "path": "lib/converters"
     },
     "name": "convertOutbound",
     "order": 10,
@@ -326,8 +326,8 @@
     "memberof": "module:@the-/driver-sequelize.mixins",
     "meta": {
       "filename": "sequelizeMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "sequelizeMix",
     "order": 15,
@@ -341,8 +341,8 @@
     "memberof": "module:@the-/driver-sequelize.modeling",
     "meta": {
       "filename": "defineModel.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/modeling"
+      "lineno": 2,
+      "path": "lib/modeling"
     },
     "name": "defineModel",
     "order": 16,
@@ -374,8 +374,8 @@
     "memberof": "module:@the-/driver-sequelize.modeling",
     "meta": {
       "filename": "defineModelColumn.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/modeling"
+      "lineno": 2,
+      "path": "lib/modeling"
     },
     "name": "defineModelColumn",
     "order": 17,
@@ -406,8 +406,8 @@
     "memberof": "module:@the-/driver-sequelize.modeling",
     "meta": {
       "filename": "prepareModel.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/modeling"
+      "lineno": 2,
+      "path": "lib/modeling"
     },
     "name": "prepareModel",
     "order": 19,
@@ -429,8 +429,8 @@
     "memberof": "module:@the-/driver-sequelize.parsing",
     "meta": {
       "filename": "parseAttributeName.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/parsing"
+      "lineno": 2,
+      "path": "lib/parsing"
     },
     "name": "parseAttributeName",
     "order": 21,
@@ -461,8 +461,8 @@
     "memberof": "module:@the-/driver-sequelize.parsing",
     "meta": {
       "filename": "parseFilter.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/parsing"
+      "lineno": 2,
+      "path": "lib/parsing"
     },
     "name": "parseFilter",
     "order": 22,
@@ -475,8 +475,8 @@
     "memberof": "module:@the-/driver-sequelize.parsing",
     "meta": {
       "filename": "parseSort.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-sequelize/lib/parsing"
+      "lineno": 2,
+      "path": "lib/parsing"
     },
     "name": "parseSort",
     "order": 23,

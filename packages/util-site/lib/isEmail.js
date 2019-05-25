@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Check if is email
  * @memberof module:@the-/util-site
@@ -6,8 +7,6 @@
  * @param {string} email
  * @returns {boolean} Email or not
  */
-'use strict'
-
 const emailRegex = require('email-regex')
 
 /** @lends module:@the-/util-site.isEmail */

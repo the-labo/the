@@ -9,8 +9,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheFlick */
 const TheFlickStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-flick-style', className)}
+    id={id}
     styles={TheFlickStyle.data(options)}
   />
 )
@@ -69,7 +69,7 @@ TheFlickStyle.data = (options) => {
         display: 'inline-flex',
         fontSize: '16px',
         justifyContent: 'center',
-        lineHeight: `16px`,
+        lineHeight: '16px',
         padding: '16px',
         zIndex: 44,
       },

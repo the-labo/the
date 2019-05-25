@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/mail
  * @class TheMail
  */
-'use strict'
-
 const { clone } = require('asobj')
 const { unlessProduction } = require('@the-/check')
 const { toLowerKeys } = require('./helpers')

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for processJSImport.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const processJSImport = require('../lib/processors/processJSImport')
 
@@ -52,7 +51,7 @@ import {c, n as a, z,} from 'x'
 
   it('Normalize path', async () => {
     equal(
-      await processJSImport(`import x from '../b/x.js'`, {
+      await processJSImport("import x from '../b/x.js'", {
         filename: '/a/b/c.js',
         sourceType: 'module',
       }),

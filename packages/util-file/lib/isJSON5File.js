@@ -1,10 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/util-file
  * @function isJSON5File
  * @param {string} filename
  * @returns {boolean}
  */
-'use strict'
 const path = require('path')
 
 /** @lends module:@the-/util-file.isJSON5File */

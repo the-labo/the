@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheSeal instance
  * @memberof module:@the-/seal
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {TheSeal}
  */
-'use strict'
-
 const TheSeal = require('./TheSeal')
 
 /** @lends module:@the-/seal.create */

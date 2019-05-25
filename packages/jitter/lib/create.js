@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheJitter instance
  * @memberof module:@the-/jitter
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {TheJitter}
  */
-'use strict'
-
 const TheJitter = require('./TheJitter')
 
 /** @lends module:@the-/jitter.create */

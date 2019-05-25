@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for sortCasesOnSwitchStatementNode.
  * Runs with mocha.
  */
-'use strict'
-
 describe('sort-cases-on-switch-statement-node', () => {
   before(() => {})
 

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * @memberof module:@the-/media
  * @class TheMedia
@@ -5,8 +6,6 @@
  * @param {Object|boolean} [options.video] - Video constraint
  * @param {Object|boolean} [options.audio] - Audio constraint
  */
-'use strict'
-
 const { get } = require('@the-/window')
 
 /** @lends module:@the-/media.TheMedia */
@@ -122,11 +121,11 @@ class TheMedia {
    */
   async start() {
     if (this.running) {
-      throw new Error(`[TheMedia] Already running`)
+      throw new Error('[TheMedia] Already running')
     }
     const stream = await TheMedia.createMediaStream(this.constrains)
     if (!stream) {
-      throw new Error(`[TheMedia] Failed to get user media stream`)
+      throw new Error('[TheMedia] Failed to get user media stream')
     }
     this.stream = stream
     this.running = true
@@ -145,7 +144,7 @@ class TheMedia {
    */
   async stop() {
     if (!this.running) {
-      throw new Error(`[TheMedia] Not running`)
+      throw new Error('[TheMedia] Not running')
     }
     for (const track of this.stream.getTracks()) {
       await track.stop()

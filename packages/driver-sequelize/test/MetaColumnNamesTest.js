@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for MetaColumnNames.
  * Runs with mocha.
  */
-'use strict'
-
 describe('meta-column-names', () => {
   before(() => {})
 

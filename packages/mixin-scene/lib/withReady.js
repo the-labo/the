@@ -1,3 +1,4 @@
+'use strict'
 /**
  * withReady mixin
  * @memberof module:@the-/mixin-scene
@@ -10,8 +11,6 @@
  * @inner
  * @class WithReadyMixed
  */
-'use strict'
-
 const asClassMixin = require('./helpers/asClassMixin')
 const asMethodWrap = require('./helpers/asMethodWrap')
 const injectProperties = require('./helpers/injectProperties')
@@ -71,10 +70,11 @@ module.exports = Object.assign(
   withReady,
   /** @lends withReady */
   {
-    when: asMethodWrap((method) => {
-      return async function readyWhenWrap(...args) {
-        return this.readyWhen(async () => method.apply(this, args))
-      }
-    }),
+    when: asMethodWrap(
+      (method) =>
+        async function readyWhenWrap(...args) {
+          return this.readyWhen(async () => method.apply(this, args))
+        },
+    ),
   },
 )

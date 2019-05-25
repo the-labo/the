@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for addUrlQuery.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const addUrlQuery = require('../lib/addUrlQuery')
 

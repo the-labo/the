@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Scope to hold object
  * @memberof module:@the-/scope.scopes
  * @class ObjectScope
  * @augments module:@the-/scope.scopes.Scope
  */
-'use strict'
-
 const Scope = require('./Scope')
 
 /** @lends module:@the-/scope.scopes.ObjectScope */
@@ -23,7 +22,7 @@ class ObjectScope extends Scope {
        */
       del(...names) {
         return (state) => {
-          let needsToDelete = names.some((name) => state.hasOwnProperty(name))
+          const needsToDelete = names.some((name) => state.hasOwnProperty(name))
           if (!needsToDelete) {
             return state
           }

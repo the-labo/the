@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-list
  * @typicalname uiList
- * @version 15.4.4
+ * @version 15.4.5
  * @description List of the-components
  */
 'use strict'

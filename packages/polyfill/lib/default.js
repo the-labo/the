@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/polyfill.create}
  * @memberof module:@the-/polyfill
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const ThePolyfill = require('./ThePolyfill')
 

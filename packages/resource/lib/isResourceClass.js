@@ -1,10 +1,9 @@
+'use strict'
 /**
  * @memberof module:@the-/resource
  * @function isResourceClass
  * @returns {boolean}
  */
-'use strict'
-
 const TheResource = require('./TheResource')
 
 /** @lends module:@the-/resource.isResourceClass */

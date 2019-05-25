@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for processJSBlock.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const processJSBlock = require('../lib/processors/processJSBlock')
 

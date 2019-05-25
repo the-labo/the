@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for queueMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('queue-mix', () => {
   before(() => {})
 

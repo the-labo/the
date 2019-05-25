@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Lint runner
  * @memberof module:@the-/lint
  * @class TheLint
  */
-'use strict'
-
 const aglob = require('aglob')
 const { canWriteAsync, readFileAsync, statAsync } = require('asfs')
 const colorprint = require('colorprint')
@@ -41,7 +40,7 @@ class TheLint {
   }
 
   constructor(config = {}) {
-    const { cacheFile = `node_modules/.cache/the-lint/cache.json` } = config
+    const { cacheFile = 'node_modules/.cache/the-lint/cache.json' } = config
     this.checkers = {}
     this.cache = new LintCache(cacheFile)
   }

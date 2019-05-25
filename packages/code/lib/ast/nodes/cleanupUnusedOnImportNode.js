@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupUnusedOnImportNode
  */
-'use strict'
-
 const {
   isImportDefaultSpecifier,
   isImportSpecifier,
@@ -31,9 +30,7 @@ function cleanupUnusedOnImportNode(
         (Identifier) => Identifier !== specifier.local,
       )
         .filter((Identifier) => Identifier !== specifier.imported)
-        .filter((Identifier) => {
-          return Identifier.name === specifier.local.name
-        }),
+        .filter((Identifier) => Identifier.name === specifier.local.name),
     ]
     const unused = usages.length === 0
     if (!unused) {
@@ -45,11 +42,11 @@ function cleanupUnusedOnImportNode(
         ImportDeclaration.loc.start.column === 0
           ? ImportDeclaration.start - 1
           : ImportDeclaration.start
-      const end = ImportDeclaration.end
+      const { end } = ImportDeclaration
       return replace([start, end], '')
     } else {
       if (isImportDefaultSpecifier(specifier)) {
-        const start = specifier.start
+        const { start } = specifier
         const end = nextSpecifier ? nextSpecifier.start - 1 : specifier.end
         return replace([start, end], '')
       }
@@ -72,7 +69,7 @@ function cleanupUnusedOnImportNode(
             `import ${as} from ${from}`,
           )
         }
-        const start = specifier.start
+        const { start } = specifier
         const end = nextSpecifier ? nextSpecifier.start : specifier.end
         return replace([start, end], '')
       }

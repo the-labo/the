@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for ThePack.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepStrictEqual: deepEqual, ok, strictEqual: equal } = require('assert')
 const ThePack = require('../lib/ThePack')
 

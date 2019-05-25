@@ -1,3 +1,4 @@
+'use strict'
 /**
  * withLocation mixin
  * @memberof module:@the-/mixin-scene
@@ -10,8 +11,6 @@
  * @inner
  * @class WithLocationMixed
  */
-'use strict'
-
 const asleep = require('asleep')
 const { get } = require('bwindow')
 const asClassMixin = require('./helpers/asClassMixin')
@@ -54,7 +53,7 @@ const withLocation = asClassMixin((Class) => {
         const { timeout = 30 * 1000 } = options
         this.location.reload()
         await asleep(timeout) // Wait for reload
-        throw new Error(`Failed to reload`)
+        throw new Error('Failed to reload')
       },
       /**
        * Set location hash

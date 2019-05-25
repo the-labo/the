@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for processPackageJSON.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const processPackageJSON = require('../lib/processors/processPackageJSON')
 
@@ -15,7 +14,7 @@ describe('process-package-jso-n', () => {
   it('Do test', async () => {
     equal(
       await processPackageJSON(
-        `{"version":"1.2.3", "name":"hoge", "dependencies": {"b":"1", "a":"2"}}`,
+        '{"version":"1.2.3", "name":"hoge", "dependencies": {"b":"1", "a":"2"}}',
       ),
       `{
   "name": "hoge",

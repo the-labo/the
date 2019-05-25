@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function modifyNodeDeprecatedOnRequireDeclaration
  */
-'use strict'
-
 /** @lends module:@the-/code.ast.nodes.modifyNodeDeprecatedOnRequireDeclaration */
 function modifyNodeDeprecatedOnRequireDeclaration(Declaration, options = {}) {
   const { get, replace } = options
@@ -12,7 +11,7 @@ function modifyNodeDeprecatedOnRequireDeclaration(Declaration, options = {}) {
     (declaration) => declaration.init.type === 'CallExpression',
   )
   const assertDeclarations = CallDeclarations.filter((declaration) => {
-    const [arg] = declaration.init['arguments'] || []
+    const [arg] = declaration.init.arguments || []
     return arg && arg.type === 'StringLiteral' && arg.value === 'assert'
   })
 
@@ -25,7 +24,7 @@ function modifyNodeDeprecatedOnRequireDeclaration(Declaration, options = {}) {
       if (needsStrict) {
         return replace(
           [Declaration.start, Declaration.end],
-          get([Declaration.start, Declaration.end]) + '.strict',
+          `${get([Declaration.start, Declaration.end])}.strict`,
         )
       }
     }

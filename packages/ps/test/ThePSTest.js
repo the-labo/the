@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for ThePS.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const ThePS = require('../lib/ThePS')
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withBusy.
  * Runs with mocha.
  */
-'use strict'
-
 const withBusy = require('../lib/withBusy')
 
 describe('with-busy', () => {

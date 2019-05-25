@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for channelMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('channel-mix', () => {
   before(() => {})
 

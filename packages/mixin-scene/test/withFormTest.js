@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withForm.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const withForm = require('../lib/withForm')
 

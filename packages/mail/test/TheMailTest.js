@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheMail.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const TheMail = require('../lib/TheMail')
 

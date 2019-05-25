@@ -1,5 +1,4 @@
 'use strict'
-
 const aglob = require('aglob')
 const path = require('path')
 const publishIfNeeded = require('publish-if-needed')

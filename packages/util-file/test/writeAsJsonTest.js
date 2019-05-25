@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for writeAsJson.
  * Runs with mocha.
  */
-'use strict'
-
 const writeAsJson = require('../lib/writeAsJson')
 
 describe('write-as-json', () => {

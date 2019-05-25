@@ -1,10 +1,9 @@
+'use strict'
 /**
  * @memberof module:@the-/metrics.counters
  * @abstract
  * @class Counter
  */
-'use strict'
-
 /** @lends module:@the-/metrics.counters.Counter */
 class Counter {
   constructor(context = {}) {

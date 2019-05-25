@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Parse schema
  * @memberof module:@the-/db.helpers
@@ -5,8 +6,6 @@
  * @param {Object} Schema
  * @param {Object} [options={}]
  */
-'use strict'
-
 const {
   DataTypes: { STRING },
 } = require('@the-/resource')

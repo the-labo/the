@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/bin/lib"
+      "path": "lib"
     },
     "name": "@the-/bin",
     "order": 1,
     "typicalname": "bin",
-    "version": "15.4.3"
+    "version": "15.4.5"
   },
   {
     "id": "module:@the-/bin.TheBin()",
@@ -75,8 +75,8 @@
     "memberof": "module:@the-/bin.TheBin",
     "meta": {
       "filename": "TheBin.js",
-      "lineno": 60,
-      "path": "/Users/okuni/Projects/the/packages/bin/lib"
+      "lineno": 59,
+      "path": "lib"
     },
     "name": "exec",
     "order": 4,
@@ -112,8 +112,8 @@
     "memberof": "module:@the-/bin.TheBin",
     "meta": {
       "filename": "TheBin.js",
-      "lineno": 75,
-      "path": "/Users/okuni/Projects/the/packages/bin/lib"
+      "lineno": 74,
+      "path": "lib"
     },
     "name": "exists",
     "order": 5,
@@ -138,8 +138,8 @@
     "memberof": "module:@the-/bin.TheBin",
     "meta": {
       "filename": "TheBin.js",
-      "lineno": 92,
-      "path": "/Users/okuni/Projects/the/packages/bin/lib"
+      "lineno": 91,
+      "path": "lib"
     },
     "name": "satisfiesVersion",
     "order": 6,
@@ -174,8 +174,8 @@
     "memberof": "module:@the-/bin.TheBin",
     "meta": {
       "filename": "TheBin.js",
-      "lineno": 116,
-      "path": "/Users/okuni/Projects/the/packages/bin/lib"
+      "lineno": 115,
+      "path": "lib"
     },
     "name": "verify",
     "order": 7,
@@ -212,8 +212,8 @@
     "memberof": "module:@the-/bin.TheBin",
     "meta": {
       "filename": "TheBin.js",
-      "lineno": 135,
-      "path": "/Users/okuni/Projects/the/packages/bin/lib"
+      "lineno": 134,
+      "path": "lib"
     },
     "name": "version",
     "order": 8,
@@ -236,8 +236,8 @@
     "memberof": "module:@the-/bin",
     "meta": {
       "filename": "TheBin.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/bin/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheBin",
     "order": 2,
@@ -251,8 +251,8 @@
     "memberof": "module:@the-/bin",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/bin/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,

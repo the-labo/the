@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheStore.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepEqual, equal, ok } = require('assert').strict
 const TheStore = require('../lib/TheStore')
 const { BooleanScope, NumberScope, ObjectScope, Scope } = TheStore
@@ -43,13 +42,13 @@ describe('the-store', () => {
       }
     }
 
-    let store = new TheStore({})
+    const store = new TheStore({})
 
     store.load(CounterScope, 'counterA')
     store.load(CounterScope, 'counterB')
 
     {
-      let { counterA, counterB } = store
+      const { counterA, counterB } = store
 
       counterA.increment(1)
       counterA.increment(1)
@@ -70,7 +69,7 @@ describe('the-store', () => {
   })
 
   it('Nested scope', () => {
-    let store = new TheStore({
+    const store = new TheStore({
       state: {
         'scopeB.enabled': true,
       },
@@ -91,7 +90,7 @@ describe('the-store', () => {
     })
 
     {
-      let { scopeA } = store
+      const { scopeA } = store
 
       scopeA.set('foo', 'bar')
       scopeA.enabled.toggle(true)

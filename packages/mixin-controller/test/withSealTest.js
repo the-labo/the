@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withSeal.
  * Runs with mocha.
  */
-'use strict'
-
 describe('with-seal', () => {
   before(() => {})
 

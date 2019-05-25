@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheAltStyle.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheAltStyle = require('../shim/TheAltStyle').default

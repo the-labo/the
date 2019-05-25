@@ -9,8 +9,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheSignature */
 const TheSignatureStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-signature-style', className)}
+    id={id}
     styles={TheSignatureStyle.data(options)}
   />
 )
@@ -25,8 +25,8 @@ TheSignatureStyle.defaultProps = {
   options: {},
 }
 
-TheSignatureStyle.data = () => {
-  return asStyleData({
+TheSignatureStyle.data = () =>
+  asStyleData({
     '.the-signature': {
       display: 'block',
       position: 'relative',
@@ -38,6 +38,5 @@ TheSignatureStyle.data = () => {
       display: 'block',
     },
   })
-}
 
 export default TheSignatureStyle

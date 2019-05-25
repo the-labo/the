@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Driver for mongo db
  * @memberof module:@the-/driver-mongo
@@ -5,8 +6,6 @@
  * @augments Driver
  * @inheritdoc
  */
-'use strict'
-
 const asleep = require('asleep')
 const clayCollection = require('clay-collection')
 const { Driver } = require('clay-driver-base')
@@ -50,7 +49,7 @@ class MongoDriver extends MongoDriverBase {
     unlessProduction(() => {
       const restKeys = Object.keys(rest)
       if (restKeys.length > 0) {
-        console.warn(`[MongoDriver] Unknown config`, restKeys)
+        console.warn('[MongoDriver] Unknown config', restKeys)
       }
     })
 
@@ -204,7 +203,7 @@ class MongoDriver extends MongoDriverBase {
   async _collectionFor(resourceName) {
     await this._dbConnecting
     if (!this.db) {
-      throw new Error(`DB Already closed`)
+      throw new Error('DB Already closed')
     }
     const collection = this.db.collection(resourceName)
     await collection.createIndex('id')

@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-button
  * @typicalname uiButton
- * @version 15.4.3
+ * @version 15.4.5
  * @description Button of the-components
  */
 'use strict'

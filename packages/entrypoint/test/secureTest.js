@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for secure.
  * Runs with mocha.
  */
-'use strict'
-
 describe('secure', () => {
   before(() => {})
 

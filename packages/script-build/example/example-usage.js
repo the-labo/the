@@ -1,5 +1,4 @@
 'use strict'
-
 const build = require('@the-/script-build')
 
 async function tryExample() {

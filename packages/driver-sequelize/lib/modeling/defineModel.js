@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Parse schema
  * @memberof module:@the-/driver-sequelize.modeling
@@ -5,8 +6,6 @@
  * @param {Object}
  * @returns {Object}
  */
-'use strict'
-
 const clayId = require('clay-id')
 const Sequelize = require('sequelize')
 const defineModelColumn = require('./defineModelColumn')

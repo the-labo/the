@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Check locales
  * @function checkLocales
@@ -6,8 +7,6 @@
  * @memberOf module:@the-/loc.helpers
  * @returns {Object}
  */
-'use strict'
-
 const { flatten } = require('objnest')
 const { uniqueFilter } = require('@the-/util-array')
 

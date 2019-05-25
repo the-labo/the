@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for callbacksProxy.
  * Runs with mocha.
  */
-'use strict'
-
 describe('callbacks-proxy', () => {
   before(() => {})
 

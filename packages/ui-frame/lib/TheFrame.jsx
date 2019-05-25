@@ -68,8 +68,8 @@ class TheFrame extends React.Component {
           <iframe
             className='the-frame-iframe'
             onLoad={this.handleLoad}
-            {...{ src }}
             ref={this.iframeRef}
+            src={src}
           />
         </TheCondition>
         <TheCondition if={embed}>
@@ -99,7 +99,7 @@ class TheFrame extends React.Component {
     if (!body) {
       return
     }
-    iframe.style.height = body.scrollHeight + 'px'
+    iframe.style.height = `${body.scrollHeight}px`
   }
 
   async load(src) {
@@ -122,7 +122,7 @@ class TheFrame extends React.Component {
       const text = await res.text()
       this.setState({ embedContent: text })
     } else {
-      throw new Error(`[TheFrame] Failed to `)
+      throw new Error('[TheFrame] Failed to ')
     }
   }
 }

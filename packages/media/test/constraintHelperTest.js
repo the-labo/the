@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for constraintHelper.
  * Runs with mocha.
  */
-'use strict'
-
 describe('constraint-helper', () => {
   before(() => {})
 

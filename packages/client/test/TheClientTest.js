@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheClient.
  * Runs with mocha.
  */
-'use strict'
-
 const aport = require('aport')
 const asleep = require('asleep')
 const { deepEqual, equal, ok } = require('assert').strict
@@ -68,7 +67,7 @@ describe('the-client', () => {
       {
         const controllers = await client01.useAll()
         deepEqual(Object.keys(controllers), ['fruitShop'])
-        ok(controllers['fruitShop'])
+        ok(controllers.fruitShop)
       }
 
       deepEqual(await fruitShop01.buy('orange', 100), {

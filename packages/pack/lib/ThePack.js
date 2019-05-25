@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Pack handler
  * @memberof module:@the-/pack
  * @class ThePack
  */
-'use strict'
-
 const msgpack = require('msgpack-lite')
 const { inspect } = require('util')
 const { isBrowser } = require('@the-/check')

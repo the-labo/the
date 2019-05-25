@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for goMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('go-mix', () => {
   before(() => {})
 

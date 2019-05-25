@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/scaffold
  * @function render
  */
-'use strict'
-
 const tmplconv = require('tmplconv')
 
 const prefix = '~~~~'

@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Default exports
  * @memberof module:@the-/loc
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const TheLoc = require('./TheLoc')
 

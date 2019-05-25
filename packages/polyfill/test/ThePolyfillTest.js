@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for ThePolyfill.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const ThePolyfill = require('../lib/ThePolyfill')
 

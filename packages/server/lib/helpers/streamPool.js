@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Stream pool
  * @memberof module:@the-/server.helpers
  * @function streamPool
  */
-'use strict'
-
 /**
  * @memberof module:@the-/server.helpers
  * @inner

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/db
  * @function resourceMix
  */
-'use strict'
-
 /** @lends module:@the-/db.resourceMix */
 function resourceMix(Class) {
   /**

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withId.
  * Runs with mocha.
  */
-'use strict'
-
 describe('with-id', () => {
   before(() => {})
 

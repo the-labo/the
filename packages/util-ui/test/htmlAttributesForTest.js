@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for htmlAttributesFor.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepEqual } = require('assert').strict
 const htmlAttributesFor = require('../lib/htmlAttributesFor')
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheCaught.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheCaught = require('../shim/TheCaught').default

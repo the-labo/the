@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for listTypes.
  * Runs with mocha.
  */
-'use strict'
-
 const listTypes = require('../lib/listTypes')
 
 describe('list-types', () => {

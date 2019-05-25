@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withListen.
  * Runs with mocha.
  */
-'use strict'
-
 describe('with-listen', () => {
   before(() => {})
 

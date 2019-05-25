@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Count metrics for component rendering
  * @function RenderingCountMetrics
  * @param {Object} Components - Components to count
  * @param {Object} [options={}] - Optional settings
  */
-'use strict'
-
 const { TheMetrics } = require('@the-/metrics')
 
 const hasSymbol = typeof Symbol === 'function' && !!Symbol.for

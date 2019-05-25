@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheOkDialog.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheOkDialog = require('../shim/TheOkDialog').default

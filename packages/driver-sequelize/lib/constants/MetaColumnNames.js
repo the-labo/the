@@ -1,10 +1,9 @@
+'use strict'
 /**
  * @memberof module:@the-/driver-sequelize.constants
  * @enum {string}
  * @name MetaColumnNames
  */
-'use strict'
-
 module.exports = Object.freeze(
   /** @lends module:@the-/driver-sequelize.constants.MetaColumnNames */
   {

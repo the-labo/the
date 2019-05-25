@@ -9,8 +9,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheMain */
 const TheMainStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={classnames('the-main-style', className)}
+    id={id}
     styles={TheMainStyle.data(options)}
   />
 )
@@ -25,8 +25,8 @@ TheMainStyle.defaultProps = {
   options: {},
 }
 
-TheMainStyle.data = () => {
-  return asStyleData('.the-main', {
+TheMainStyle.data = () =>
+  asStyleData('.the-main', {
     '.the-main-spin.the-spinner-cover': {
       background: 'rgba(255,255,255,0.98)',
       zIndex: 999,
@@ -37,6 +37,5 @@ TheMainStyle.data = () => {
       width: '100%',
     },
   })
-}
 
 export default TheMainStyle

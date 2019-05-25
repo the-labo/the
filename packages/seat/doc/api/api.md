@@ -188,4 +188,4 @@ Alias of [create](#module_@the-/seat.create)
 <a name="module_@the-/seat.scopeMix"></a>
 
 ### seat.scopeMix()
-**Kind**: static method of [<code>@the-/seat</code>](#module_@the-/seat)  
+**Kind**: static method of [<code>@the-/seat</code>](#module_@the-/seat)

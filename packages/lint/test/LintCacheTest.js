@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for LintCache.
  * Runs with mocha.
  */
-'use strict'
-
 describe('lint-cache', () => {
   before(() => {})
 

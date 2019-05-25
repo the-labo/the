@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for getUserAgent.
  * Runs with mocha.
  */
-'use strict'
-
 describe('get-user-agent', () => {
   before(() => {})
 

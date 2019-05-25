@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for convertInbound.
  * Runs with mocha.
  */
-'use strict'
-
 describe('convert-inbound', () => {
   before(() => {})
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Wrap controller
  * @function withListen
  */
-'use strict'
-
 /** @lends withListen */
 function withListen(Class, options = {}) {
   class WithListen extends Class {}

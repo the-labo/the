@@ -64,8 +64,13 @@ class TheLink extends React.Component {
         {...htmlAttributesFor(props, { except: ['className', 'style'] })}
         {...eventHandlersFor(props, { except: [] })}
         activeClassName={c('the-link-active', activeClassName)}
+        activeStyle={activeStyle}
         className={c('the-link', className)}
-        {...{ activeStyle, exact, replace, strict, style, to }}
+        exact={exact}
+        replace={replace}
+        strict={strict}
+        style={style}
+        to={to}
       >
         {icon && <TheIcon className={c('the-link-icon', icon)} />}
         {children}

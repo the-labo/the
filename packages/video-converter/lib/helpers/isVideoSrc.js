@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/video-converter
  * @function isVideoSrc
  */
-'use strict'
-
 const path = require('path')
 const videoExtensions = require('video-extensions')
 

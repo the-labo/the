@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheConditionStyle.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheConditionStyle = require('../shim/TheConditionStyle').default

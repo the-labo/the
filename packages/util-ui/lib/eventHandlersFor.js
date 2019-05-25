@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Extract event handlers for component props
  * @memberof module:@the-/util-ui
@@ -7,8 +8,6 @@
  * @param {string[]} [options.except] - Exception names
  * @returns {Object} Props for html attributes
  */
-'use strict'
-
 const { SupportedProps } = require('@the-/const-ui')
 
 const handlerNames = [
@@ -22,7 +21,7 @@ const handlerNames = [
 
 /** @lends module:@the-/util-ui.eventHandlersFor */
 function eventHandlersFor(props, options = {}) {
-  let { except = [] } = options
+  const { except = [] } = options
   return Object.keys(props)
     .filter((name) => !except.includes(name))
     .filter((name) => handlerNames.includes(name))

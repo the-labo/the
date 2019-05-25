@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/db.helpers
  * @function execMysql
  */
-'use strict'
-
 const { cleanup } = require('asobj')
 const mysql = require('mysql2')
 

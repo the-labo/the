@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for createStyleElement.
  * Runs with mocha.
  */
-'use strict'
-
 describe('create-style-element', () => {
   before(() => {})
 

@@ -68,8 +68,8 @@ class TheCopyboard extends React.Component {
           </span>
         )}
         <Anchor
-          {...{ href }}
           className='the-copyboard-anchor'
+          href={href}
           onClick={this.handleClick}
           ref={(anchor) => {
             this.anchor = anchor

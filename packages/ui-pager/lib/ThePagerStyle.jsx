@@ -10,8 +10,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for ThePager */
 const ThePagerStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={classnames('the-pager-style', className)}
+    id={id}
     styles={ThePagerStyle.data(options)}
   />
 )

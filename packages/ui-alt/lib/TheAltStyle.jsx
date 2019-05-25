@@ -15,8 +15,8 @@ import { asStyleData } from '@the-/util-ui'
 /** @lends module:@the-/ui-alt.TheAltStyle */
 const TheAltStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-alt-style', className)}
+    id={id}
     styles={TheAltStyle.data(options)}
   />
 )

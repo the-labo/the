@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for copyAsJsonSync.
  * Runs with mocha.
  */
-'use strict'
-
 const copyAsJsonSync = require('../lib/copyAsJsonSync')
 
 describe('copy-as-json-sync', () => {

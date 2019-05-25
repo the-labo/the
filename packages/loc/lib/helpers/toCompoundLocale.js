@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Compound tow locales
  * @function toCompoundLocale
@@ -6,8 +7,6 @@
  * @memberOf module:@the-/loc.helpers
  * @returns {Object}
  */
-'use strict'
-
 const { flatten } = require('objnest')
 
 /** @lends toCompoundLocale */

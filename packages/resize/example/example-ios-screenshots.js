@@ -1,5 +1,4 @@
 #!/usr/bin/env
-
 'use strict'
 
 const theResize = require('@the-/resize')

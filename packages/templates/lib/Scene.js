@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Scene
  * @memberof module:@the-/templates
@@ -6,8 +7,6 @@
  * @param {Object} config
  * @returns {Object}
  */
-'use strict'
-
 const assert = require('assert')
 const path = require('path')
 const { snakecase } = require('stringcase')
@@ -22,7 +21,7 @@ function Scene(config) {
   return {
     data: {
       memberof,
-      name: path.basename(name) + 'Scene',
+      name: `${path.basename(name)}Scene`,
       scopePath: snakecase(name).replace(/_/g, '.'),
     },
     force: false,

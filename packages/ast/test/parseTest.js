@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for parse.
  * Runs with mocha.
  */
-'use strict'
-
 const amkdirp = require('amkdirp')
 const { equal, ok } = require('assert').strict
 const fs = require('fs')

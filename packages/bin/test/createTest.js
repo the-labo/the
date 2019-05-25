@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for create.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const create = require('../lib/create')
 

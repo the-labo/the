@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheSetting.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const TheSetting = require('../lib/TheSetting')
 

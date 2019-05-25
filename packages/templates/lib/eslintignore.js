@@ -33,7 +33,7 @@ function eslintignore(paths = []) {
     },
     force: true,
     mode: '444',
-    path: `.eslintignore`,
+    path: '.eslintignore',
     tmpl: _tmpl('eslintignore.hbs'),
   }
 }

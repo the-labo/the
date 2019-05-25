@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for httpMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('http-mix', () => {
   before(() => {})
 

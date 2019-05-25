@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for webStreams.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const { ReadableStream, WritableStream } = require('../lib/helpers/webStreams')
 

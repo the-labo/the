@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/polyfill
  * @namespace helpers
  */
-'use strict'
-
 const { get } = require('bwindow')
 
 const hasBabelPolyfill = () => !!get('global._babelPolyfill')

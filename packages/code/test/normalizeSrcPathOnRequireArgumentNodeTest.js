@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for normalizeSrcPathOnRequireArgumentNode.
  * Runs with mocha.
  */
-'use strict'
-
 describe('normalize-src-path-on-require-argument-node', () => {
   before(() => {})
 

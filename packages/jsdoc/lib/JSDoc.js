@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/jsdoc
  * @class JSDoc
  */
-'use strict'
-
 const aglob = require('aglob')
 const { sortProperties } = require('fmtjson')
 const jsdocToMarkdown = require('jsdoc-to-markdown')

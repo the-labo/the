@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Extract html attributes for component props
  * @memberof module:@the-/util-ui
@@ -7,8 +8,6 @@
  * @param {string[]} [options.except] - Exception names
  * @returns {Object} Props for html attributes
  */
-'use strict'
-
 const { SupportedProps } = require('@the-/const-ui')
 
 const htmlAttributes = SupportedProps.htmlAttributes.split(',')

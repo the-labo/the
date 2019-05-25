@@ -53,7 +53,7 @@ class TheInputTextArea extends React.PureComponent {
       if (height < 0) {
         break
       }
-      textarea.style.height = height + 'px'
+      textarea.style.height = `${height}px`
     }
     const minScrollHeight = textarea.scrollHeight
     textarea.style.height = originalHeight
@@ -179,22 +179,24 @@ class TheInputTextArea extends React.PureComponent {
           <pre className='the-input-textarea-readonly'>{value || ''}</pre>
         ) : (
           <textarea
-            className='the-input-textarea-input'
-            {...{
-              autoFocus,
-              id,
-              name,
-              placeholder,
-              required,
-              role,
-              spellCheck,
-            }}
-            {...{ onBlur, onFocus, onKeyPress, onKeyUp, readOnly }}
             aria-multiline='true'
+            autoFocus={autoFocus}
+            className='the-input-textarea-input'
+            id={id}
+            name={name}
+            onBlur={onBlur}
             onChange={this.handleChange}
+            onFocus={onFocus}
             onKeyDown={this.handleKeyDown}
+            onKeyPress={onKeyPress}
+            onKeyUp={onKeyUp}
+            placeholder={placeholder}
+            readOnly={readOnly}
             ref={this.textareaRef}
+            required={required}
+            role={role}
             rows={rows}
+            spellCheck={spellCheck}
             tabIndex={tabIndex}
             value={value || ''}
           />

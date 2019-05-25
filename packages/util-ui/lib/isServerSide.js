@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Detect is serverside
  * @memberof module:@the-/util-ui
  * @function isServerSide
  * @returns {boolean}
  */
-'use strict'
-
 const { get } = require('bwindow')
 
 /** @lends module:@the-/util-ui.isServerSide */

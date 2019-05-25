@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Detect iOS or not
  * @memberof module:@the-/check
  * @function isiOS
  * @returns {boolean}
  */
-'use strict'
-
 const Bowser = require('bowser')
 const getUserAgent = require('./helpers/getUserAgent')
 

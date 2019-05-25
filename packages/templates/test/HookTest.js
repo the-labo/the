@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for hook.
  * Runs with mocha.
  */
-'use strict'
-
 const coz = require('coz')
 const hook = require('../lib/Hook')
 

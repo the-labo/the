@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for asControllerModule.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const asControllerModule = require('../lib/asControllerModule')
 

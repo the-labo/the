@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheTableStyle.
  * Runs with mocha.
  */
-'use strict'
-
 import { ok } from 'assert'
 import React from 'react'
 import { render } from '@the-/script-test'
@@ -15,7 +14,7 @@ describe('the-table-style', () => {
   after(() => {})
 
   it('Render a component', () => {
-    let element = render(<TheTableStyle />)
+    const element = render(<TheTableStyle />)
     ok(element)
   })
 })

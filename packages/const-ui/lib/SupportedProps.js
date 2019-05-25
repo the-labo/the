@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Supported props
  * @memberof module:@the-/const-ui
  * @namespace SupportedProps
  */
-'use strict'
-
 const SupportedProps = Object.freeze(
   /** @lends module:@the-/const-ui.SupportedProps */
   {

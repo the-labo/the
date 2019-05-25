@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for statSync.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const statSync = require('../lib/statSync')
 

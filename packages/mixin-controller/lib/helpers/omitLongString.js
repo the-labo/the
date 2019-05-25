@@ -1,8 +1,7 @@
+'use strict'
 /**
  * @function omitLongString
  */
-'use strict'
-
 /** @lends omitLongString */
 function omitLongString(value, options = {}) {
   const { __recursiveDeps = 0, maxLength = 100 } = options
@@ -13,7 +12,7 @@ function omitLongString(value, options = {}) {
     return value
   }
   if (typeof value === 'string') {
-    return value.length > maxLength ? value.slice(0, maxLength) + '...' : value
+    return value.length > maxLength ? `${value.slice(0, maxLength)}...` : value
   }
   if (Array.isArray(value)) {
     const array = value.map((v) =>

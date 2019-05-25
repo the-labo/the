@@ -71,7 +71,7 @@ class DrawerLayer {
     } else if (image) {
       // TODO
     } else {
-      console.warn(`[DrawerLayer] Failed to restore`, serialized)
+      console.warn('[DrawerLayer] Failed to restore', serialized)
     }
   }
 

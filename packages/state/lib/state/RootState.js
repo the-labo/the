@@ -1,3 +1,4 @@
+'use strict'
 /**
  * State works as root
  * @memberof module:@the-/state.state
@@ -6,8 +7,6 @@
  * @param {Object} [options={}] - Optional settings
  * @param {Object} [options.defaults={}] - Default values
  */
-'use strict'
-
 const { get } = require('@the-/window')
 const ScopedState = require('./ScopedState')
 const ActionTypes = require('../constants/ActionTypes')

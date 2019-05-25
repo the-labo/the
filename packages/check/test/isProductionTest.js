@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for isProduction.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const isProduction = require('../lib/isProduction')
 

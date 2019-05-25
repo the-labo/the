@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for endOfMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('end-of-mix', () => {
   before(() => {})
 

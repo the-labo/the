@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheGeo.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const TheGeo = require('../lib/TheGeo')
 

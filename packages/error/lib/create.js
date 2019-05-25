@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheError instance
  * @memberof module:@the-/error
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {TheError}
  */
-'use strict'
-
 const TheError = require('./TheError')
 
 /** @lends create */

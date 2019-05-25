@@ -1,13 +1,12 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function findRequireDeclarationOnProgramNode
  */
-'use strict'
-
 const { walk } = require('@the-/ast')
 
 const isRequireCall = (call) => {
-  const arg = call['arguments'][0]
+  const arg = call.arguments[0]
   return call.callee.name === 'require' && arg && arg.type === 'StringLiteral'
 }
 

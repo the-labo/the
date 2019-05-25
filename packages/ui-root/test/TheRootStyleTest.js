@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheRootStyle.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheRootStyle = require('../shim/TheRootStyle').default

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for randomFind.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const randomFind = require('../lib/randomFind')
 

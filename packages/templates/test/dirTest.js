@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for dir.
  * Runs with mocha.
  */
-'use strict'
-
 const coz = require('coz')
 const dir = require('../lib/dir')
 

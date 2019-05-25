@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for ScopedState.
  * Runs with mocha.
  */
-'use strict'
-
 describe('scoped-state', () => {
   before(() => {})
 

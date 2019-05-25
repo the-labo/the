@@ -1,11 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/code.processors
  * @function processYAML
  * @param {string} content
  * @returns {string}
  */
-'use strict'
-
 const YAML = require('yaml')
 
 const _processYAMLNode = (node) => {
@@ -54,7 +53,7 @@ async function processYAML(content) {
   } catch (e) {
     if (/Alias node must be after source node/.test(e.message)) {
       console.warn(
-        `[@the-/code][processYAML] Failed to sort yaml due to anchor/alias order problem (see https://github.com/yaml/yaml/issues/12)`,
+        '[@the-/code][processYAML] Failed to sort yaml due to anchor/alias order problem (see https://github.com/yaml/yaml/issues/12)',
       )
       return content
     }

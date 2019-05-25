@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for cipher.
  * Runs with mocha.
  */
-'use strict'
-
 describe('cipher', () => {
   before(() => {})
 

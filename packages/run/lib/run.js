@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create and run
  * @memberof module:@the-/run
@@ -5,8 +6,6 @@
  * @param {string} filename
  * @param {Object} [options={}]
  */
-'use strict'
-
 const create = require('./create')
 
 /** @lends module:@the-/run.run */

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/secret.helpers
  * @namespace cipher
  */
-'use strict'
-
 const crypto = require('crypto')
 
 const TEXT_ENCODE = 'utf-8'

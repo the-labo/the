@@ -1,3 +1,4 @@
+'use strict'
 /* eslint-disable no-new-func */
 /**
  * Eval script
@@ -5,8 +6,6 @@
  * @function evalScript
  * @returns {*}
  */
-'use strict'
-
 /** @lends module:@the-/util-db.evalScript */
 function evalScript(script, options = {}) {
   const { prefix = '', variables = {} } = options

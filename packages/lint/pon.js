@@ -1,8 +1,6 @@
 /**
  * As pon task
  */
-'use strict'
-
 const chalk = require('chalk')
 const rules = require('./lib/rules')
 const TheLint = require('./lib/TheLint')

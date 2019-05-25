@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Scroll to DOM element
  * @memberof module:@the-/util-site
  * @function scrollToElement
  * @param {string|HTMLDOMElement} element - Element or it's selector
  */
-'use strict'
-
 const { get } = require('bwindow')
 
 /** @lends module:@the-/util-site.scrollToElement */

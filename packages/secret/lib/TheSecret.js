@@ -1,11 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/secret
  * @class TheSecret
  * @augments CryptoMixed
  * @augments LockMixed
  */
-'use strict'
-
 const abind = require('abind')
 const aslogger = require('aslogger')
 const crypto = require('crypto')
@@ -33,10 +32,10 @@ class TheSecret extends TheSecretBase {
     } = options
     super()
     if (!password) {
-      throw new Error(`[TheSecret] Password is required`)
+      throw new Error('[TheSecret] Password is required')
     }
     this.filename = filename
-    this.lockFilename = filename + '.lock'
+    this.lockFilename = `${filename}.lock`
     this.metaFieldKey = metaFieldKey
     this.logger = aslogger({
       PREFIX: prefix,

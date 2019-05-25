@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Detect src url is video or not
  * @memberof module:@the-/util-ui
@@ -5,8 +6,6 @@
  * @param {string} src - Url to detect
  * @returns {boolean} Video or not
  */
-'use strict'
-
 const { get } = require('bwindow')
 const path = require('path')
 const { URL } = require('url')

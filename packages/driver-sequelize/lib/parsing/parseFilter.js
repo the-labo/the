@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/driver-sequelize.parsing
  * @function parseFilter
  */
-'use strict'
-
 const {
   DataTypes: { OBJECT },
 } = require('clay-constants')

@@ -83,7 +83,7 @@ class TheInputUpload extends React.PureComponent {
         if (onError) {
           onError(error)
         } else {
-          console.error(`[TheInputUpload] File change failed`, error)
+          console.error('[TheInputUpload] File change failed', error)
         }
       } finally {
         this.setState({ spinning: false })
@@ -194,16 +194,18 @@ class TheInputUpload extends React.PureComponent {
                 >
                   {isVideoUrl(url) ? (
                     <video
-                      src={url}
-                      {...{ height, width }}
                       className={c('the-input-upload-preview-video')}
+                      height={height}
                       preload='metadata'
+                      src={url}
+                      width={width}
                     />
                   ) : (
                     <img
-                      src={url}
-                      {...{ height, width }}
                       className={c('the-input-upload-preview-img')}
+                      height={height}
+                      src={url}
+                      width={width}
                     />
                   )}
                 </div>

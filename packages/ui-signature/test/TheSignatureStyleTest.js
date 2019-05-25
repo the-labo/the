@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheSignatureStyle.
  * Runs with mocha.
  */
-'use strict'
-
 import { ok } from 'assert'
 import React from 'react'
 import { render } from '@the-/script-test'
@@ -15,7 +14,7 @@ describe('the-signature-style', () => {
   after(() => {})
 
   it('Render a component', () => {
-    let element = render(<TheSignatureStyle />)
+    const element = render(<TheSignatureStyle />)
     ok(element)
   })
 })

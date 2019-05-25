@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Script runner
  * @memberof module:@the-/run
@@ -5,8 +6,6 @@
  * @param {Object} [options={}] - Optional settings
  * @param {number|boolean} [options.inspect] -  Inspect port
  */
-'use strict'
-
 const { spawn } = require('child_process')
 const fkill = require('fkill')
 
@@ -30,7 +29,7 @@ class TheRun {
         [
           ...(inspectPort ? [`--inspect=${inspectPort}`] : []),
           ...(catcherEnabled
-            ? [`--require`, require.resolve('../catcher')]
+            ? ['--require', require.resolve('../catcher')]
             : []),
           filename,
         ],

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for streamPool.
  * Runs with mocha.
  */
-'use strict'
-
 describe('stream-pool', () => {
   before(() => {})
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for nginx.
  * Runs with mocha.
  */
-'use strict'
-
 const coz = require('coz')
 const nginx = require('../lib/nginx')
 
@@ -15,7 +14,7 @@ describe('nginx', function() {
   after(async () => {})
 
   it('Nginx', async () => {
-    let bud = nginx({})
+    const bud = nginx({})
 
     bud.mkdirp = true
     bud.path = `${__dirname}/../tmp/foo/nginx.vhost`

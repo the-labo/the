@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Types
  * @memberof module:@the-/code.constants
  * @namespace Types
  */
-'use strict'
-
 module.exports =
   /** @lends module:@the-/code.constants.Types */
   {

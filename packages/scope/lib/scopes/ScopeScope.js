@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Scope to other scopes
  * @memberof module:@the-/scope.scopes
  * @class ScopeScope
  * @augments module:@the-/scope.scopes.Scope
  */
-'use strict'
-
 const { unlessProduction } = require('@the-/check')
 const Scope = require('./Scope')
 
@@ -73,7 +72,7 @@ class ScopeScope extends Scope {
     }
     const names = namepath.split('.')
     let scope = this
-    let resolvedNames = []
+    const resolvedNames = []
     while (names.length > 0) {
       const name = names.shift()
       resolvedNames.push(name)

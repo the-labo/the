@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for generateFile.
  * Runs with mocha.
  */
-'use strict'
-
 const generateFile = require('../lib/generateFile')
 
 describe('generate-file', () => {

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/driver-sequelize.converters
  * @function convertInbound
  */
-'use strict'
-
 const MetaColumnNames = require('../constants/MetaColumnNames')
 const { logger } = require('../helpers')
 const serializer = require('../helpers/serializer')

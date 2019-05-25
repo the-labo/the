@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for quelize.
  * Runs with mocha.
  */
-'use strict'
-
 describe('quelize', () => {
   before(() => {})
 

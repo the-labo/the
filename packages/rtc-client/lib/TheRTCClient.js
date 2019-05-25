@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/rtc-client
  * @class TheRTCClient
  */
-'use strict'
-
 const argx = require('argx')
 const uuid = require('uuid')
 const { get } = require('@the-/window')
@@ -322,7 +321,7 @@ class TheRTCClient extends TheRTCClientBase {
   async receivePeerIce(coming) {
     const { ice, pid, to } = coming
     if (to !== this.rid) {
-      console.warn(`[TheRTCClient] Invalid ice:`, coming)
+      console.warn('[TheRTCClient] Invalid ice:', coming)
       return
     }
     if (!ice) {
@@ -337,7 +336,7 @@ class TheRTCClient extends TheRTCClientBase {
 
   async receivePeerOffer(offer) {
     if (offer.to !== this.rid) {
-      console.warn(`[TheRTCClient] Invalid offer:`, offer)
+      console.warn('[TheRTCClient] Invalid offer:', offer)
       return
     }
     await this.answerToPeerOffer(offer)

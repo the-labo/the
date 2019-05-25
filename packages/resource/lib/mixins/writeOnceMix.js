@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Mixin for writeOnce
  * @memberof module:@the-/resource.mixins
@@ -5,8 +6,6 @@
  * @param {function()} Class
  * @returns {function()}
  */
-'use strict'
-
 /** @lends module:@the-/resource.mixins.writeOnceMix */
 function writeOnceMix(Class) {
   /**

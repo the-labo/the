@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for scene.
  * Runs with mocha.
  */
-'use strict'
-
 const coz = require('coz')
 const scene = require('../lib/Scene')
 

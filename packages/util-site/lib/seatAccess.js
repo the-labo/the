@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Provide seat access functions
  * @memberof module:@the-/util-site
@@ -5,8 +6,6 @@
  * @deprecated Use `the-seat/handy/seatAccess` instead
  * @returns {Object}
  */
-'use strict'
-
 /** @lends module:@the-/util-site.seatAccess */
 function seatAccess(seat) {
   /**

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Events for IO
  * @function IOEvents
  */
-'use strict'
-
 const IOEvents = {
   CLIENT_CALLBACK: 'client:callback',
   CONNECTION: 'connection',

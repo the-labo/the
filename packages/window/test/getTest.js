@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for get.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const get = require('../lib/get')
 

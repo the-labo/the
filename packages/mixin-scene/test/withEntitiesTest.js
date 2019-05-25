@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withEntities.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const withEntities = require('../lib/withEntities')
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for cssHelper.
  * Runs with mocha.
  */
-'use strict'
-
 describe('css-helper', () => {
   before(() => {})
 

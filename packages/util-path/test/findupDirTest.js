@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for findupDir.
  * Runs with mocha.
  */
-'use strict'
-
 const { strictEqual: equal } = require('assert')
 const path = require('path')
 const findupDir = require('../lib/findupDir')

@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-dialog
  * @typicalname uiDialog
- * @version 15.4.4
+ * @version 15.4.5
  * @description Dialog for the-components
  */
 'use strict'

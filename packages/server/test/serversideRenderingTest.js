@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for serversideRendering.
  * Runs with mocha.
  */
-'use strict'
-
 describe('serverside-rendering', () => {
   before(() => {})
 

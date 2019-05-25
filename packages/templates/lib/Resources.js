@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/templates
  * @function Resources
  */
-'use strict'
-
 const _tmpl = require('./_tmpl')
 
 /** @lends module:@the-/templates.Resources */

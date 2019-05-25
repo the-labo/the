@@ -1,10 +1,9 @@
+'use strict'
 /**
  * @function directorySeat
  * @param {string} dirname
- * @param {function} mapper
+ * @param {function()} mapper
  */
-'use strict'
-
 const seatAccess = require('./seatAccess')
 
 /** @lends directorySeat */

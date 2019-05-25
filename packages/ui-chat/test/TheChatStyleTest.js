@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheChatStyle.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheChatStyle = require('../shim/TheChatStyle').default

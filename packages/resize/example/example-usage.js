@@ -1,5 +1,4 @@
 'use strict'
-
 const { TheResize } = require('@the-/resize')
 
 async function tryExample() {

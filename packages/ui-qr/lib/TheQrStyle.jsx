@@ -10,8 +10,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheQr */
 const TheQrStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={classnames('the-qr-style', className)}
+    id={id}
     styles={TheQrStyle.data(options)}
   />
 )

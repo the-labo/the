@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for toCompoundLocale.
  * Runs with mocha.
  */
-'use strict'
-
 describe('to-compound-locale', () => {
   before(() => {})
 

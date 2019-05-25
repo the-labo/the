@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for Types.
  * Runs with mocha.
  */
-'use strict'
-
 describe('types', () => {
   before(() => {})
 

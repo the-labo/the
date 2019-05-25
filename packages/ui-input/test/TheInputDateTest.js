@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheInputDate.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheInputDate = require('../shim/TheInputDate').default

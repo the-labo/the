@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for cleanupExtOnImportDeclarationNode.
  * Runs with mocha.
  */
-'use strict'
-
 describe('cleanup-ext-on-import-declaration-node', () => {
   before(() => {})
 

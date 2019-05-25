@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/db.setup
  * @function setupMysql
  */
-'use strict'
-
 const asleep = require('asleep')
 const colorprint = require('colorprint')
 const execMysql = require('../helpers/execMysql')
@@ -57,7 +56,7 @@ async function setupMysql(env, options = {}) {
     }
   }
 
-  colorprint.debug(`  Executing SQL...`)
+  colorprint.debug('  Executing SQL...')
   await _waitToSetup()
   colorprint.trace(setupSQL.join('\n'))
   await execute(setupSQL)

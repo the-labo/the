@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for readAsJson.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const readAsJson = require('../lib/readAsJson')
 

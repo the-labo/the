@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for buildDemo.
  * Runs with mocha.
  */
-'use strict'
-
 describe('build-demo', () => {
   before(() => {})
 

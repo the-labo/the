@@ -1,5 +1,4 @@
 'use strict'
-
 async function waitChannelOpen(channel, options = {}) {
   const { prefix = 'TheRTCClient', timeout = 3 * 1000 } = options
   if (channel.readyState === 'open') {

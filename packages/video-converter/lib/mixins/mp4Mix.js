@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Mixins for mp4
  * @memberof module:@the-/video-converter.mixins
  * @function mp4Mix
  */
-'use strict'
-
 const path = require('path')
 const theAssert = require('@the-/assert')
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheServerRottenError.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const TheServerRottenError = require('../lib/TheServerRottenError')
 

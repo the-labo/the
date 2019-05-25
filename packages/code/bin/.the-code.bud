@@ -6,7 +6,7 @@
 const { bin } = require('@the-/templates')
 
 module.exports = bin({
-  lib: `../lib/run`,
+  lib: '../lib/run',
   path: 'the-code',
   signature: require('../signature'),
 })

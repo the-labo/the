@@ -1,3 +1,4 @@
+'use strict'
 /**
  * State works as scope
  * @memberof module:@the-/state.state
@@ -5,8 +6,6 @@
  * @augments module:@the-/state.state.State
  * @param {string} name - Name of scope
  */
-'use strict'
-
 const State = require('./State')
 const NAME_SEPARATE_PATTERN = /\./
 

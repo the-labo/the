@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheRTC.
  * Runs with mocha.
  */
-'use strict'
-
 const aport = require('aport')
 const asleep = require('asleep')
 const { equal, ok } = require('assert').strict

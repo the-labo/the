@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheRefresher instance
  * @memberof module:@the-/refresher
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {TheRefresher}
  */
-'use strict'
-
 const TheRefresher = require('./TheRefresher')
 
 /** @lends module:@the-/refresher.create */

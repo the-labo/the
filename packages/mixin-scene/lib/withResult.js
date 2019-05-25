@@ -1,3 +1,4 @@
+'use strict'
 /**
  * withResult mixin
  * @memberof module:@the-/mixin-scene
@@ -10,8 +11,6 @@
  * @inner
  * @class WithResultMixed
  */
-'use strict'
-
 const asClassMixin = require('./helpers/asClassMixin')
 const asMethodWrap = require('./helpers/asMethodWrap')
 const injectProperties = require('./helpers/injectProperties')
@@ -50,10 +49,11 @@ module.exports = Object.assign(
   withResult,
   /** @lends module:@the-/mixin-scene.withResult */
   {
-    save: asMethodWrap((method) => {
-      return async function resultSave(...args) {
-        return this.resultFor(async () => method.apply(this, args))
-      }
-    }),
+    save: asMethodWrap(
+      (method) =>
+        async function resultSave(...args) {
+          return this.resultFor(async () => method.apply(this, args))
+        },
+    ),
   },
 )

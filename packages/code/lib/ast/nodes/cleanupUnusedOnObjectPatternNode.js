@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupUnusedOnObjectPatternNode
  */
-'use strict'
-
 const {
   isAssignmentPattern,
   isObjectPattern,
@@ -71,9 +70,7 @@ function cleanupUnusedOnObjectPatternNode(
       .filter(
         (Identifier) => !isAssigment || Identifier !== property.value.left,
       )
-      .filter((Identifier) => {
-        return Identifier.name === name
-      })
+      .filter((Identifier) => Identifier.name === name)
     const unused = usages.length === 0
     if (unused) {
       return removeProperty()

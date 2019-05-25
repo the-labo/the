@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for SFUProxyEdge.
  * Runs with mocha.
  */
-'use strict'
-
 describe('s-f-u-proxy-edge', () => {
   before(() => {})
 

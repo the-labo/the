@@ -3,7 +3,6 @@
  * @file Ponfile
  * @see https://gitlab.com/realglobe-Inc/pon
  */
-'use strict'
 
 const pon = require('pon')
 const { coz } = require('pon-task-basic')

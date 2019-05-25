@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for commentModuleOnProgramNode.
  * Runs with mocha.
  */
-'use strict'
-
 describe('comment-module-on-program-node', () => {
   before(() => {})
 

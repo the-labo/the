@@ -29,7 +29,7 @@ module.exports = {
             .map((v) => {
               let str = JSON.stringify(v)
               if (str.length > 255) {
-                str = str.substr(0, 255) + '...'
+                str = `${str.substr(0, 255)}...`
               }
               return str
             })

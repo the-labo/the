@@ -4,8 +4,6 @@
  * @param {Object} props - Props for ComponentDemo
  * @returns {string} Static markup string
  */
-'use strict'
-
 const React = require('react')
 const ReactDOMServer = require('react-dom/server')
 const TheComponentDemo = require('./shim/TheComponentDemo').default

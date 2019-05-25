@@ -1,10 +1,9 @@
+'use strict'
 /**
  * @memberof module:@the-/server.helpers
  * @function toControllerModuleBind
  * @returns {function()}
  */
-'use strict'
-
 const { unlessProduction } = require('@the-/check')
 const {
   getAllPropertyDescriptors,
@@ -104,8 +103,8 @@ function toControllerModuleBind(Class, options = {}) {
   return ControllerModuleBind
 }
 
-toControllerModuleBind.all = ({ controllerClasses, ...options }) => {
-  return Object.assign(
+toControllerModuleBind.all = ({ controllerClasses, ...options }) =>
+  Object.assign(
     {},
     ...Object.entries(controllerClasses).map(([name, Class]) => ({
       [name]: toControllerModuleBind(Class, {
@@ -115,6 +114,5 @@ toControllerModuleBind.all = ({ controllerClasses, ...options }) => {
       }),
     })),
   )
-}
 
 module.exports = toControllerModuleBind

@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Build in endpoints
  * @memberof module:@the-/server
  * @namespace buildInEndpoints
  */
-'use strict'
-
 /** @lends module:@the-/server.buildInEndpoints */
 module.exports = {
   '/the/info': async (ctx) => {

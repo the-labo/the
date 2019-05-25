@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for execMysql.
  * Runs with mocha.
  */
-'use strict'
-
 describe('exec-mysql', () => {
   before(() => {})
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for render.
  * Runs with mocha.
  */
-'use strict'
-
 describe('render', () => {
   before(() => {})
 

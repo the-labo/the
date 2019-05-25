@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for sendSendgrid.
  * Runs with mocha.
  */
-'use strict'
-
 describe('send-sendgrid', () => {
   before(() => {})
 

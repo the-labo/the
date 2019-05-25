@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Build project
  * @memberof module:@the-/script-build
@@ -6,8 +7,6 @@
  * @param {Object} [options={}] - Optional settings
  * @returns {Promise}
  */
-'use strict'
-
 const argx = require('argx')
 const { existsAsync } = require('asfs')
 const asleep = require('asleep')
@@ -36,7 +35,7 @@ async function build(dirname = process.cwd(), options = {}) {
   } = options
 
   const pkgPath = path.resolve(dirname, 'package.json')
-  const esmShimDir = shimDir + '/esm'
+  const esmShimDir = `${shimDir}/esm`
 
   const pkg = require(pkgPath)
 

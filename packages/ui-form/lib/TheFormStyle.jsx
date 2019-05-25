@@ -10,8 +10,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheForm */
 const TheFormStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={classnames('the-form-style', className)}
+    id={id}
     styles={TheFormStyle.data(options)}
   />
 )

@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Convert into handle scene class
  * @memberof module:@the-/handle
  * @function toHandleSceneClass
  */
-'use strict'
-
 /** @lends module:@the-/handle.toHandleSceneClass */
 function toHandleSceneClass(BaseClass, config = {}) {
   const { load } = config

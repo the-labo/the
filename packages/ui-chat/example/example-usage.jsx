@@ -61,7 +61,7 @@ class ExampleComponent extends React.Component {
           at: new Date('2017/10/08 14:38'),
           image: images[2],
           status: 'Read',
-          text: `This is an text\n hoge fuge fuge`,
+          text: 'This is an text\n hoge fuge fuge',
           who: {
             name: 'hoge',
           },

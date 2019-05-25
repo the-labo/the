@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Default exports
  * @memberof module:@the-/pack
  * @namespace default
  */
-'use strict'
-
 const Converters = require('./Converters')
 const create = require('./create')
 const ThePack = require('./ThePack')

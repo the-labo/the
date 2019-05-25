@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheInputUpload.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheInputUpload = require('../shim/TheInputUpload').default

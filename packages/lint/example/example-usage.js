@@ -1,5 +1,4 @@
 'use strict'
-
 const { TheLint, rules } = require('@the-/lint')
 
 async function tryExample() {

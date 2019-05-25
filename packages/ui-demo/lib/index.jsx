@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-demo
  * @typicalname uiDemo
- * @version 15.4.4
+ * @version 15.4.5
  * @description Live demo of the-components
  */
 'use strict'

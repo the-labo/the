@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for Stateless.
  * Runs with mocha.
  */
-'use strict'
-
 describe('stateless', () => {
   before(() => {})
 

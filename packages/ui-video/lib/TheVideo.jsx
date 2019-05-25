@@ -108,24 +108,22 @@ class TheVideo extends React.Component {
           )}
           {
             <video
+              alt={alt}
+              autoPlay={autoPlay}
               className={c('the-video-video', {
                 'the-video-video-failed': failed,
               })}
-              {...{
-                alt,
-                autoPlay,
-                controls,
-                loop,
-                muted,
-                playsInline,
-                poster,
-                preload,
-                src,
-              }}
+              controls={controls}
               height={height}
+              loop={loop}
+              muted={muted}
               onCanPlay={this.handleLoad}
               onError={this.handleError}
+              playsInline={playsInline}
+              poster={poster}
+              preload={preload}
               ref={this.videoRef}
+              src={src}
               width={width}
             />
           }

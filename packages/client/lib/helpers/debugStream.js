@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Wrap stream with debug utility
  * @memberof module:@the-/client.helpers
  * @function debugStream
  */
-'use strict'
-
 const methodsToWrap = ['open', 'close']
 
 /** @lends module:@the-/client.helpers.debugStream */

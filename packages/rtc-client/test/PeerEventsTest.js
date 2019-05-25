@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for PeerEvents.
  * Runs with mocha.
  */
-'use strict'
-
 describe('peer-events', () => {
   before(() => {})
 

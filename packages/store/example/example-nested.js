@@ -1,5 +1,4 @@
 'use strict'
-
 const theStore = require('@the-/store').default
 const { BooleanScope, ObjectScope } = theStore
 

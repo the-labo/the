@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for isEmail.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const isEmail = require('../lib/isEmail')
 

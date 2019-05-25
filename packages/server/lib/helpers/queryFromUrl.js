@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/server.helpers
  * @function queryFromUrl
  */
-'use strict'
-
 const qs = require('qs')
 const { get } = require('@the-/window')
 

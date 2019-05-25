@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Mixin for moment
  * @memberof module:@the-/date.mixins
@@ -5,8 +6,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-'use strict'
-
 const moment = require('moment')
 const momentTz = require('moment-timezone')
 

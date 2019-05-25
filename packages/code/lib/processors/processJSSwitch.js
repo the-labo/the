@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Process js switch statement
  * @memberof module:@the-/code.processors
@@ -5,8 +6,6 @@
  * @param {string} content
  * @returns {string} processed
  */
-'use strict'
-
 const {
   constants: { NodeTypes },
   finder,
@@ -19,20 +18,24 @@ const contentAccess = require('../helpers/contentAccess')
 
 /** @lends module:@the-/code.processors.processJSSwitch */
 function processJSSwitch(content, options = {}) {
-  return applyConverter(content, (content) => {
-    const { swap } = contentAccess(content)
-    const parsed = parse(content, options)
-    const SwitchStatements = finder.findByTypes(parsed, [
-      NodeTypes.SwitchStatement,
-    ])
-    const converted = applyToNodes(SwitchStatements, (SwitchCase) =>
-      sortCasesOnSwitchStatementNode(SwitchCase, { swap }),
-    )
-    if (converted) {
-      return converted
-    }
-    return content
-  })
+  return applyConverter(
+    content,
+    (content) => {
+      const { swap } = contentAccess(content)
+      const parsed = parse(content, options)
+      const SwitchStatements = finder.findByTypes(parsed, [
+        NodeTypes.SwitchStatement,
+      ])
+      const converted = applyToNodes(SwitchStatements, (SwitchCase) =>
+        sortCasesOnSwitchStatementNode(SwitchCase, { swap }),
+      )
+      if (converted) {
+        return converted
+      }
+      return content
+    },
+    { name: 'processJSSwitch' },
+  )
 }
 
 module.exports = processJSSwitch

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheDB instance
  * @memberof module:@the-/db
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {module:@the-/db.TheDB}
  */
-'use strict'
-
 const TheDB = require('./TheDB')
 
 /** @lends module:@the-/db.create */

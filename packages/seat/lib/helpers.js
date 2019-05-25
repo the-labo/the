@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Helper utility
  * @memberof module:@the-/seat
  * @namespace helpers
  */
-'use strict'
-
 const crypto = require('crypto')
 
 exports.numberIfPossible = (val) => {
@@ -12,9 +11,8 @@ exports.numberIfPossible = (val) => {
   return isNaN(valAsNumber) ? val : valAsNumber
 }
 
-exports.randomString = (byteLength) => {
-  return crypto.randomBytes(byteLength).toString('hex')
-}
+exports.randomString = (byteLength) =>
+  crypto.randomBytes(byteLength).toString('hex')
 
 exports.handleUnknownOptions = (options) => {
   const restKeys = Object.keys(options)

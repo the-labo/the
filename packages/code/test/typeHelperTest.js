@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for typeHelper.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const Types = require('../lib/constants/Types')
 const typeHelper = require('../lib/helpers/typeHelper')

@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Get history object
  * @memberof module:@the-/entrypoint
  * @function history
  * @returns {Object} history
  */
-'use strict'
-
 const { createBrowserHistory, createMemoryHistory } = require('history')
 const { get } = require('@the-/window')
 

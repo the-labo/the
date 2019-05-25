@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Define as class mixin
  * @memberof module:@the-/mixin-scene.helpers
  * @function asClassMixin
  */
-'use strict'
-
 const invariant = require('invariant')
 
 /** @lends asClassMixin */

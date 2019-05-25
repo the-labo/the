@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Handle when online
  * @memberof module:@the-/entrypoint
  * @function online
  * @param {Object} [options=[]] - Optional settings
  */
-'use strict'
-
 const { get, line } = require('@the-/window')
 
 /** @lends module:@the-/entrypoint.online */

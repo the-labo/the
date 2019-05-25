@@ -1,10 +1,9 @@
+'use strict'
 /**
  * @memberof module:@the-/server.helpers
  * @function asStrictSession
  * @param {Object} session
  */
-'use strict'
-
 /** @lends module:@the-/server.helpers.asStrictSession */
 function asStrictSession(session) {
   return new Proxy(session, {
@@ -31,7 +30,7 @@ function asStrictSession(session) {
     set(target, k, v) {
       switch (typeof v) {
         case 'function': {
-          throw new Error(`[TheServer] You cannot set session value`)
+          throw new Error('[TheServer] You cannot set session value')
         }
         default: {
           target[k] = v

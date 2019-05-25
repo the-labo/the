@@ -1,11 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/code.processors
  * @function processJSBlock
  * @param {string} content
  * @returns {string} processed
  */
-'use strict'
-
 const {
   constants: { NodeTypes },
   finder,
@@ -16,38 +15,42 @@ const contentAccess = require('../helpers/contentAccess')
 
 /** @lends module:@the-/code.processors.processJSBlock */
 function processJSBlock(content, options = {}) {
-  return applyConverter(content, (content) => {
-    const parsed = parse(content, options)
-    const { get, replace } = contentAccess(content)
+  return applyConverter(
+    content,
+    (content) => {
+      const parsed = parse(content, options)
+      const { get, replace } = contentAccess(content)
 
-    const BlockStatementsContainers = [
-      parsed.program,
-      ...finder.findByTypes(parsed, [NodeTypes.BlockStatement]),
-    ].filter(Boolean)
+      const BlockStatementsContainers = [
+        parsed.program,
+        ...finder.findByTypes(parsed, [NodeTypes.BlockStatement]),
+      ].filter(Boolean)
 
-    for (const Container of BlockStatementsContainers) {
-      const BlockStatements = (Container.body || []).filter(
-        (Node) => Node.type === 'BlockStatement',
-      )
-      for (const Block of BlockStatements) {
-        const declarations = Block.body.filter((Node) =>
-          [
-            NodeTypes.VariableDeclaration,
-            NodeTypes.ClassDeclaration,
-            NodeTypes.FunctionDeclaration,
-          ].includes(Node.type),
+      for (const Container of BlockStatementsContainers) {
+        const BlockStatements = (Container.body || []).filter(
+          (Node) => Node.type === 'BlockStatement',
         )
-        const redundant = declarations.length === 0
-        if (redundant) {
-          return replace(
-            [Block.start, Block.end],
-            get([Block.body[0].start, Block.body[Block.body.length - 1].end]),
+        for (const Block of BlockStatements) {
+          const declarations = Block.body.filter((Node) =>
+            [
+              NodeTypes.VariableDeclaration,
+              NodeTypes.ClassDeclaration,
+              NodeTypes.FunctionDeclaration,
+            ].includes(Node.type),
           )
+          const redundant = declarations.length === 0
+          if (redundant) {
+            return replace(
+              [Block.start, Block.end],
+              get([Block.body[0].start, Block.body[Block.body.length - 1].end]),
+            )
+          }
         }
       }
-    }
-    return content
-  })
+      return content
+    },
+    { name: 'processJSBlock' },
+  )
 }
 
 module.exports = processJSBlock

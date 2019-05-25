@@ -66,11 +66,12 @@ class TheChatForm extends React.Component {
           <TheInput.TextArea
             autoExpand={autoExpand}
             disabled={disabled}
+            maxRows={maxRows}
+            minRows={minRows}
             name='text'
             onKeyDown={this.handleKeyDown}
             onUpdate={this.handleUpdate}
             value={values['text']}
-            {...{ maxRows, minRows }}
           />
           <TheButton
             disabled={!canSubmit || disabled}

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create proxy for hash object
  * @memberof module:@the-/hash
@@ -8,8 +9,6 @@
  * @param {boolean} [options.unknownCheck] - Enable unknown checking
  * @returns {Proxy}
  */
-'use strict'
-
 /** @lends module:@the-/hash.proxy */
 function proxy(src, options = {}) {
   const { name = 'proxy', unknownCheck = true } = options

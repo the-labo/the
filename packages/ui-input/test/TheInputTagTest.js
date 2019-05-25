@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheInputTag.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheInputTag = require('../shim/TheInputTag').default

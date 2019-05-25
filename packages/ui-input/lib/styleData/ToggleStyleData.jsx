@@ -84,10 +84,10 @@ function ToggleStyleData({
       display: 'none',
     },
     '.the-input-toggle.the-input-toggle-off .the-input-toggle-on-label': {
-      width: `0 !important`,
+      width: '0 !important',
     },
     '.the-input-toggle.the-input-toggle-on .the-input-toggle-off-label': {
-      width: `0 !important`,
+      width: '0 !important',
     },
   })
 }

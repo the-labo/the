@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for styleString.
  * Runs with mocha.
  */
-'use strict'
-
 const { strictEqual: equal } = require('assert')
 const styleString = require('../lib/styleString')
 
@@ -20,7 +19,7 @@ describe('style-string', () => {
     })
     equal(
       result,
-      `\n.foo {\n    background-color:green;\n    color:white;\n    max-width:1024px;\n}\n`,
+      '\n.foo {\n    background-color:green;\n    color:white;\n    max-width:1024px;\n}\n',
     )
   })
 

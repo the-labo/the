@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/lint.helpers
  * @class LintCache
  */
-'use strict'
-
 const { readAsJson, unlinkAsync, writeAsJson } = require('@the-/util-file')
 
 /** @lends module:@the-/lint.helpers.LintCache */

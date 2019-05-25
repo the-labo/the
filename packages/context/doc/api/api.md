@@ -5,7 +5,7 @@
 ## @the-/context
 React context for the-components
 
-**Version**: 15.4.3  
+**Version**: 15.4.5  
 **License**: MIT  
 
 * [@the-/context](#module_@the-/context)
@@ -60,4 +60,4 @@ Create a TheContext instance
 ### context.default()
 Alias of [create](#module_@the-/context.create)
 
-**Kind**: static method of [<code>@the-/context</code>](#module_@the-/context)
+**Kind**: static method of [<code>@the-/context</code>](#module_@the-/context)  

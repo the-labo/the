@@ -1,11 +1,10 @@
+'use strict'
 /**
  * For bindDefaults
  * @memberof module:@the-/mixin-scene
  * @function bindDefaults
  * @returns {function()} method annotation function
  */
-'use strict'
-
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 

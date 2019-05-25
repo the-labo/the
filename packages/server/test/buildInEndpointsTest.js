@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for buildInEndpoints.
  * Runs with mocha.
  */
-'use strict'
-
 describe('build-in-endpoints', () => {
   before(() => {})
 

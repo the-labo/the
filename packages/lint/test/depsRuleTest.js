@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for depsRule.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const fs = require('fs')
 const depsRule = require('../lib/rules/depsRule')

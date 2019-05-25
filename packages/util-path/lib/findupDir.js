@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Find up directory contains path
  * @memberof module:@the-/util-path
  * @function findupDir
  * @param {string} basedir - Base directory
  */
-'use strict'
-
 const aglob = require('aglob')
 const path = require('path')
 

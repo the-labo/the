@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/driver-sequelize.helpers
  * @name Logger
  */
-'use strict'
-
 const LogLevels = ['all', 'debug', 'info', 'warn', 'error', 'fatal']
 
 const shouldSkip = (level) =>
@@ -16,6 +15,6 @@ module.exports = {
     if (shouldSkip('warn')) {
       return
     }
-    console.warn('[TheDriverSequelize] ' + msg, ...values)
+    console.warn(`[TheDriverSequelize] ${msg}`, ...values)
   },
 }

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheMenu.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheMenu = require('../shim/TheMenu').default

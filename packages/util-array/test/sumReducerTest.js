@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for sumReducer.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepEqual } = require('assert').strict
 const sumReducer = require('../lib/sumReducer')
 

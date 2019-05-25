@@ -1,3 +1,4 @@
+'use strict'
 /**
  * HTTP server for the-framework
  * @memberof module:@the-/server
@@ -8,8 +9,6 @@
  * @param {string} logFile - Log file
  * @param {function[]} middlewares - Koa middlewares
  */
-'use strict'
-
 const { ARedis } = require('aredis')
 const asleep = require('asleep')
 const http = require('http')
@@ -200,7 +199,7 @@ class TheServer extends TheServerBase {
    */
   async close(...args) {
     if (this.closeAt) {
-      throw new Error(`[TheServer] Already closed`)
+      throw new Error('[TheServer] Already closed')
     }
     this.closeAt = new Date()
     this.listenAt = null
@@ -384,7 +383,7 @@ class TheServer extends TheServerBase {
     stream.session = new Proxy(session, {
       get: (target, k) => target[k],
       set: () => {
-        throw new Error(`[TheServer] Cannot update session from stream`)
+        throw new Error('[TheServer] Cannot update session from stream')
       },
     })
     this.streamPool.setInstance(cid, sid, stream)
@@ -397,7 +396,7 @@ class TheServer extends TheServerBase {
       throw new Error(`[TheServer] Unknown controller: ${controllerName}`)
     }
     if (!cid) {
-      throw new Error(`[TheServer] cid is required`)
+      throw new Error('[TheServer] cid is required')
     }
     const known = this.controllerInstances[controllerName][cid]
     if (known) {
@@ -431,7 +430,7 @@ class TheServer extends TheServerBase {
    */
   async listen(port) {
     if (this.listenAt) {
-      throw new Error(`[TheServer] Already listening`)
+      throw new Error('[TheServer] Already listening')
     }
     this.listenAt = new Date()
     this.closeAt = null

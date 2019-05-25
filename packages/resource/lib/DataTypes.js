@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Data types
  * @memberof module:@the-/resource
  * @namespace DataTypes
  */
-'use strict'
-
 const { DataTypes } = require('clay-constants')
 const { isProduction } = require('@the-/check')
 const { TheHash } = require('@the-/hash')

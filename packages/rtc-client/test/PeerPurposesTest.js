@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for PeerPurposes.
  * Runs with mocha.
  */
-'use strict'
-
 describe('peer-purposes', () => {
   before(() => {})
 

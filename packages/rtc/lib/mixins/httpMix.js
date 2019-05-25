@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Mixin for http
  * @function httpMix
  * @param {function()} Class
  * @returns {function()} Class
  */
-'use strict'
-
 const http = require('http')
 
 /** @lends httpMix */

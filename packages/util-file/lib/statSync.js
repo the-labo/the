@@ -1,10 +1,9 @@
+'use strict'
 /**
  * @memberof module:@the-/util-file
  * @function statSync
  * @param {string} filename
  */
-'use strict'
-
 const fs = require('fs')
 
 /** @lends module:@the-/util-file.statSync */

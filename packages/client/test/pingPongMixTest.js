@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for pingPongMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('ping-pong-mix', () => {
   before(() => {})
 

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Get env variables
  * @memberof module:@the-/util-site
@@ -5,8 +6,6 @@
  * @param {string} - name - Name of env
  * @param {Object} [options.strict]
  */
-'use strict'
-
 /** @lends module:@the-/util-site.envOf */
 function envOf(name, options = {}) {
   const { strict = false } = options

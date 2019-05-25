@@ -1,5 +1,4 @@
 'use strict'
-
 const { TheDB } = require('@the-/db')
 const { TheResource } = require('@the-/resource')
 

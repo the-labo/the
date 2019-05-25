@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for parseHelper.
  * Runs with mocha.
  */
-'use strict'
-
 describe('parse-helper', () => {
   before(() => {})
 

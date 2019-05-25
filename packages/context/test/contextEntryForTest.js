@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for contextEntryFor.
  * Runs with mocha.
  */
-'use strict'
-
 describe('context-entry-for', () => {
   before(() => {})
 

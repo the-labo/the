@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withEntry.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepEqual, ok } = require('assert').strict
 const withEntry = require('../lib/withEntry')
 

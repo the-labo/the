@@ -41,9 +41,15 @@ class TheInputCheckbox extends React.PureComponent {
         role='checkbox'
       >
         <input
+          checked={checked}
           className='the-input-checkbox-checkbox'
+          disabled={disabled}
+          id={id}
+          name={name}
+          onChange={onChange}
+          tabIndex={tabIndex}
           type='checkbox'
-          {...{ checked, disabled, id, name, onChange, tabIndex, value }}
+          value={value}
         />
         <label className='the-input-checkbox-label' htmlFor={id}>
           <TheIcon className={c('the-input-checkbox-icon', icon)} />

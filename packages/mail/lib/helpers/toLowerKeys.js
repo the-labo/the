@@ -1,8 +1,7 @@
+'use strict'
 /**
  * @function toLowerKeys
  */
-'use strict'
-
 const { snakecase } = require('stringcase')
 
 /** @lends toLowerKeys */

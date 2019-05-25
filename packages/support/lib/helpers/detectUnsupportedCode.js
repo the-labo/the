@@ -1,9 +1,9 @@
+'use strict'
 /**
  * Detect unsupported
  * @memberof module:@the-/support.helpers
  * @function detectUnsupportedCode
  */
-'use strict'
 const acorn = require('acorn')
 const logSyntaxError = require('log-syntax-error')
 

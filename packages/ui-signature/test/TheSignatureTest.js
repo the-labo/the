@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheSignature.
  * Runs with mocha.
  */
-'use strict'
-
 import { ok } from 'assert'
 import React from 'react'
 import { render } from '@the-/script-test'
@@ -15,7 +14,7 @@ describe('the-signature', () => {
   after(() => {})
 
   it('Render a component', () => {
-    let element = render(<TheSignature />)
+    const element = render(<TheSignature />)
     ok(element)
   })
 })

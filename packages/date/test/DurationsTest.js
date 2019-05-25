@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for Durations.
  * Runs with mocha.
  */
-'use strict'
-
 describe('durations', () => {
   before(() => {})
 

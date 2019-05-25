@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Wait until file exists
  * @function waitForFile
@@ -5,8 +6,6 @@
  * @param {Object} [options={}] - Optional setting
  * @returns {Promise}
  */
-'use strict'
-
 const asleep = require('asleep')
 
 /** @lends waitFor */

@@ -1,11 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/util-file
  * @function readAsJsonSync
  * @param {string} filename
  * @returns {Object}
  */
-'use strict'
-
 const { readFileSync } = require('fs')
 const JSON5 = require('json5')
 const isJSON5File = require('./isJSON5File')

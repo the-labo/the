@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for ValueScope.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok, strictEqual } = require('assert')
 const { TheStore } = require('@the-/store')
 const ValueScope = require('../lib/scopes/ValueScope')

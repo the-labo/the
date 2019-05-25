@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for ioMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('io-mix', () => {
   before(() => {})
 

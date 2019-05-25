@@ -1,5 +1,3 @@
-'use strict'
-
 const aglob = require('aglob')
 const { ok } = require('assert').strict
 

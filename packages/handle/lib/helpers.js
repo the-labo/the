@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/handle
  * @namespace helpers
  */
-'use strict'
-
 /** @lends module:@the-/handle.helpers */
 module.exports = {
   allMethodNames(instance) {
@@ -28,10 +27,10 @@ module.exports = {
     return names
   },
   setByNamepath(target, namepath, value, separtor = '.') {
-    let names = namepath.split(separtor)
-    let resolvedNames = []
+    const names = namepath.split(separtor)
+    const resolvedNames = []
     while (names.length > 1) {
-      let name = names.shift()
+      const name = names.shift()
       resolvedNames.push(name)
       if (!(name in target)) {
         target[name] = {}

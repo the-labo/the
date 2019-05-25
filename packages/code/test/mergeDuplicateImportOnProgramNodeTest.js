@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for mergeDuplicateImportOnProgramNode.
  * Runs with mocha.
  */
-'use strict'
-
 describe('merge-duplicate-import-on-program-node', () => {
   before(() => {})
 

@@ -1,5 +1,4 @@
 'use strict'
-
 const theHandle = require('@the-/handle')
 
 async function tryExample() {

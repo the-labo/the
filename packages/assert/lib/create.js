@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheAssert instance
  * @memberof module:@the-/assert
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {module:@the-/assert.TheAssert}
  */
-'use strict'
-
 const TheAssert = require('./TheAssert')
 
 /** @lends module:@the-/assert.create */

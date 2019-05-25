@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for singleton.
  * Runs with mocha.
  */
-'use strict'
-
 describe('singleton', () => {
   before(() => {})
 

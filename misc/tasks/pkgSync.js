@@ -1,5 +1,4 @@
 'use strict'
-
 const aglob = require('aglob')
 const path = require('path')
 const semver = require('semver')
@@ -23,21 +22,20 @@ function pkgSync(src, targets) {
       path.resolve(cwd, filename),
     )
     logger.trace(
-      `Package inf to sync:\n` +
-        JSON.stringify(
-          {
-            author,
-            bugs,
-            engines,
-            homepage,
-            license,
-            publishConfig,
-            repository,
-            version,
-          },
-          null,
-          2,
-        ),
+      `Package inf to sync:\n${JSON.stringify(
+        {
+          author,
+          bugs,
+          engines,
+          homepage,
+          license,
+          publishConfig,
+          repository,
+          version,
+        },
+        null,
+        2,
+      )}`,
     )
     for (const subPkgPath of subPkgPaths) {
       const subPkg = require(subPkgPath)

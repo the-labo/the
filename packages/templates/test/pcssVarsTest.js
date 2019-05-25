@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for pcssVars.
  * Runs with mocha.
  */
-'use strict'
-
 describe('pcss-vars', () => {
   before(() => {})
 

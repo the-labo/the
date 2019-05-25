@@ -1,5 +1,4 @@
 'use strict'
-
 module.exports = {
   weightModuleName(name) {
     if (!name) {

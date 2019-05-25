@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for subtractMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('subtract-mix', () => {
   before(() => {})
 

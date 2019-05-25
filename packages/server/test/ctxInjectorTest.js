@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for ctxInjector.
  * Runs with mocha.
  */
-'use strict'
-
 describe('ctx-injector', () => {
   before(() => {})
 

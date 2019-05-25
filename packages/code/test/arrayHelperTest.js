@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for arrayHelper.
  * Runs with mocha.
  */
-'use strict'
-
 describe('array-helper', () => {
   before(() => {})
 

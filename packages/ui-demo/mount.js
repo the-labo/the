@@ -5,15 +5,13 @@
  * @param {Object} props - Root props
  * @param {function()} callback
  */
-'use strict'
-
 const React = require('react')
 const ReactDOM = require('react-dom')
 
 /** @lends mount */
 function mount(Component, props, callback) {
-  let container = document.getElementById('the-demo')
-  let component = React.createElement(Component, props)
+  const container = document.getElementById('the-demo')
+  const component = React.createElement(Component, props)
   ReactDOM.render(component, container, () => {
     if (callback) {
       callback()

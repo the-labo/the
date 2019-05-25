@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for formatUrl.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const formatUrl = require('../lib/formatUrl')
 

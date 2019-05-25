@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for findJSDocAnnotationsInCommendNode.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const findJSDocAnnotationsInCommendNode = require('../lib/ast/nodes/findJSDocAnnotationsInCommendNode')
 

@@ -1,8 +1,7 @@
+'use strict'
 /**
  * @module PeerPurposes
  */
-'use strict'
-
 module.exports = Object.freeze(
   /** @lends PeerPurposes */
   {

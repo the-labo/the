@@ -1,11 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/driver-sequelize.parsing
  * @function parseAttributeName
  * @param {string}
  * @returns {string}
  */
-'use strict'
-
 const { MetaColumnNames, MetaColumnNamesReversed } = require('../constants')
 
 /** @lends module:@the-/driver-sequelize.parsing.parseAttributeName */

@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Parse db policy
  * @memberof execSqlite
  * @function parsePolicy
  */
-'use strict'
-
 const {
   DataTypes: { ENTITY, REF },
 } = require('@the-/resource')

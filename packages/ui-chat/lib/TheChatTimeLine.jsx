@@ -145,7 +145,9 @@ class TheChatTimeLine extends React.Component {
                               .join('-')
                           }
                           {...item}
-                          {...{ onWho, whoBaseColor, whoImageSize }}
+                          onWho={onWho}
+                          whoBaseColor={whoBaseColor}
+                          whoImageSize={whoImageSize}
                         />
                       ))}
                   </div>

@@ -21,9 +21,7 @@ class TheStyle extends React.PureComponent {
     }
     return []
       .concat(children)
-      .map((child) => {
-        return child
-      })
+      .map((child) => child)
       .join(EOL)
   }
 
@@ -55,8 +53,9 @@ class TheStyle extends React.PureComponent {
     return (
       <style
         className={c('the-style', className)}
-        {...{ id, type }}
         dangerouslySetInnerHTML={{ __html: this.getInnerHTML() }}
+        id={id}
+        type={type}
       />
     )
   }

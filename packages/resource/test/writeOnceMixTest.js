@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for writeOnceMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('write-once-mix', () => {
   before(() => {})
 

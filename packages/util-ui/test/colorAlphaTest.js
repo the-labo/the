@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for colorAlpha.
  * Runs with mocha.
  */
-'use strict'
-
 describe('color-alpha', () => {
   before(() => {})
 

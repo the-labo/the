@@ -1,5 +1,4 @@
 'use strict'
-
 const { exec } = require('child_process')
 
 module.exports = async function resetMysqlDatabase(
@@ -21,7 +20,7 @@ module.exports = async function resetMysqlDatabase(
   if (rootPassword) {
     env.MYSQL_PWD = rootPassword
   }
-  let { stderr, stdout } = await new Promise((resolve, reject) =>
+  const { stderr, stdout } = await new Promise((resolve, reject) =>
     exec(command, { env }, (err, stdout, stderr) =>
       err ? reject(err) : resolve({ stderr, stdout }),
     ),

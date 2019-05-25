@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Wrap controller
  * @function withPreference
  */
-'use strict'
-
 /** @lends withPreference */
 function withPreference(Class) {
   class WithPreference extends Class {

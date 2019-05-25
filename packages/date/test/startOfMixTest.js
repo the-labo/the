@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for startOfMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('start-of-mix', () => {
   before(() => {})
 

@@ -1,11 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/db
  * @function refreshMix
  * @param {function()} Class
  * @returns {function()} Mixed Class
  */
-'use strict'
-
 const asleep = require('asleep')
 const { parse: parseEntityRef } = require('clay-resource-ref')
 const { unlessProduction } = require('@the-/check')
@@ -48,7 +47,7 @@ function refreshMix(Class) {
      */
     startRefreshLoop({ interval = 300 } = {}) {
       if (this._refresher) {
-        throw new Error(`[TheDB]refreshLoop already started`)
+        throw new Error('[TheDB]refreshLoop already started')
       }
       this._refresher = new TheRefresher(
         async (entityRef) => this.doRefresh(entityRef),

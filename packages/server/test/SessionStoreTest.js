@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for SessionStore.
  * Runs with mocha.
  */
-'use strict'
-
 describe('session-store', () => {
   before(() => {})
 

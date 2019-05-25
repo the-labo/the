@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-link
  * @typicalname uiLink
- * @version 15.4.3
+ * @version 15.4.5
  * @description Link of the-components
  */
 'use strict'

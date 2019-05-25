@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for processJSSwitch.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const processJSSwitch = require('../lib/processors/processJSSwitch')
 

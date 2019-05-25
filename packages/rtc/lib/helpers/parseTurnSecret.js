@@ -1,11 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/rtc.helpers
  * @function parseTurn secret
  * @param {string} secret
  * @returns {Object} Parsed values
  */
-'use strict'
-
 const crypto = require('crypto')
 
 /** @lends module:@the-/rtc.helpers.parseTurnSecret */

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/stream
  * @class Provider
  */
-'use strict'
-
 const generatorFromReadable = require('./helpers/generatorFromReadable')
 const { ReadableStream } = require('./helpers/webStreams')
 
@@ -46,7 +45,7 @@ class Provider {
 
   async read() {
     if (this.done) {
-      throw new Error(`[TheStream][Provider] Already done!`)
+      throw new Error('[TheStream][Provider] Already done!')
     }
     const { done, value } = await this.reader.read()
     this.done = done

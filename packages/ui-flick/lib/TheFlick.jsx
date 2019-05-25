@@ -26,10 +26,11 @@ const toggleDocumentScroll = (enabled) =>
 class TheFlick extends React.Component {
   static FlipButton({ className, icon, onClick, style }) {
     return (
-      <div className='the-flick-flip-button-wrap' {...{ style }}>
+      <div className='the-flick-flip-button-wrap' style={style}>
         <TheButton
           className={c('the-flick-flip-button', className)}
-          {...{ icon, onClick }}
+          icon={icon}
+          onClick={onClick}
         />
       </div>
     )

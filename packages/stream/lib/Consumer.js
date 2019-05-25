@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/stream
  * @class Consumer
  */
-'use strict'
-
 const generatorFromReadable = require('./helpers/generatorFromReadable')
 const { ReadableStream, WritableStream } = require('./helpers/webStreams')
 
@@ -28,7 +27,7 @@ class Consumer {
 
   assertNotClosed() {
     if (this.closed) {
-      throw new Error(`[TheStream][Consumer] Already closed!`)
+      throw new Error('[TheStream][Consumer] Already closed!')
     }
   }
 

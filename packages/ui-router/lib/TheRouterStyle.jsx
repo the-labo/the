@@ -8,8 +8,8 @@ import { TheStyle } from '@the-/ui-style'
 /** Style for TheRouter */
 const TheRouterStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={classnames('the-html-style', className)}
+    id={id}
     styles={TheRouterStyle.data(options)}
   />
 )

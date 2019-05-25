@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for sequelizeMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('sequelize-mix', () => {
   before(() => {})
 

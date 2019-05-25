@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheControllerBase instance
  * @memberof module:@the-/controller
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {TheControllerBase}
  */
-'use strict'
-
 const TheCtrl = require('./TheCtrl')
 
 /** @lends module:@the-/controller.create */

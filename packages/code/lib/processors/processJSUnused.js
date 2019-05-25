@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Removed unused vars
  * @memberof module:@the-/code.processors
@@ -5,8 +6,6 @@
  * @param {string} content
  * @returns {string} processed
  */
-'use strict'
-
 const {
   constants: { NodeTypes },
   finder,
@@ -49,112 +48,116 @@ function processJSUnused(content, options = {}) {
       .filter((Identeifier) => !startsToSkip.has(Identeifier.start))
   }
 
-  return applyConverter(content, (content) => {
-    const parsed = parse(content, options)
-    const { enclosedRange, get, replace } = contentAccess(content)
+  return applyConverter(
+    content,
+    (content) => {
+      const parsed = parse(content, options)
+      const { enclosedRange, get, replace } = contentAccess(content)
 
-    {
-      const FunctionNodes = finder.findByTypes(parsed, [
-        NodeTypes.FunctionDeclaration,
-        NodeTypes.FunctionExpression,
-        NodeTypes.ArrowFunctionExpression,
-        NodeTypes.ObjectMethod,
-      ])
-      for (const FunctionNode of FunctionNodes) {
-        const ConsumingIdentifiers = _consumingIdentifiersFor(FunctionNode)
+      {
+        const FunctionNodes = finder.findByTypes(parsed, [
+          NodeTypes.FunctionDeclaration,
+          NodeTypes.FunctionExpression,
+          NodeTypes.ArrowFunctionExpression,
+          NodeTypes.ObjectMethod,
+        ])
+        for (const FunctionNode of FunctionNodes) {
+          const ConsumingIdentifiers = _consumingIdentifiersFor(FunctionNode)
 
-        const converted =
-          cleanupUnusedArgumentsOnFunctionNode(FunctionNode, {
-            ConsumingIdentifiers,
-            enclosedRange,
-            replace,
-          }) ||
-          cleanupEmptyObjectPatternParamsOnFunctionNode(FunctionNode, {
-            replace,
-          }) ||
-          cleanupEmptyArrayPatternParamsOnFunctionNode(FunctionNode, {
-            replace,
-          }) ||
-          applyToNodes(
-            FunctionNode.params.filter(byType('ObjectPattern')),
-            (ObjectPattern) =>
+          const converted =
+            cleanupUnusedArgumentsOnFunctionNode(FunctionNode, {
+              ConsumingIdentifiers,
+              enclosedRange,
+              replace,
+            }) ||
+            cleanupEmptyObjectPatternParamsOnFunctionNode(FunctionNode, {
+              replace,
+            }) ||
+            cleanupEmptyArrayPatternParamsOnFunctionNode(FunctionNode, {
+              replace,
+            }) ||
+            applyToNodes(
+              FunctionNode.params.filter(byType('ObjectPattern')),
+              (ObjectPattern) =>
+                cleanupUnusedOnObjectPatternNode(ObjectPattern, {
+                  ConsumingIdentifiers,
+                  replace,
+                }),
+            ) ||
+            applyToNodes(
+              FunctionNode.params.filter(byType('ArrayPattern')),
+              (ArrayPattern) =>
+                cleanupUnusedOnArrayPatternNode(ArrayPattern, {
+                  ConsumingIdentifiers,
+                  replace,
+                }),
+            )
+          if (converted) {
+            return converted
+          }
+        }
+      }
+
+      {
+        const Contexts = [
+          parsed,
+          ...finder.findByTypes(parsed, [
+            NodeTypes.ClassMethod,
+            NodeTypes.FunctionDeclaration,
+          ]),
+        ]
+        for (const Context of Contexts) {
+          const ObjectPatterns = finder.findByTypes(Context, [
+            NodeTypes.ObjectPattern,
+          ])
+          const ArrayPatterns = finder.findByTypes(Context, [
+            NodeTypes.ArrayPattern,
+          ])
+          const VariableDeclarations = finder.findByTypes(Context, [
+            NodeTypes.VariableDeclaration,
+          ])
+
+          const ConsumingIdentifiers = _consumingIdentifiersFor(Context)
+          const ImportDeclarations = finder.findByTypes(Context, [
+            NodeTypes.Identifier,
+            NodeTypes.ImportDeclaration,
+          ])
+
+          const converted =
+            applyToNodes(ObjectPatterns, (ObjectPattern) =>
               cleanupUnusedOnObjectPatternNode(ObjectPattern, {
                 ConsumingIdentifiers,
                 replace,
               }),
-          ) ||
-          applyToNodes(
-            FunctionNode.params.filter(byType('ArrayPattern')),
-            (ArrayPattern) =>
+            ) ||
+            applyToNodes(ArrayPatterns, (ArrayPattern) =>
               cleanupUnusedOnArrayPatternNode(ArrayPattern, {
                 ConsumingIdentifiers,
                 replace,
               }),
-          )
-        if (converted) {
-          return converted
+            ) ||
+            applyToNodes(VariableDeclarations, (VariableDeclaration) =>
+              cleanupUnusedOnVariableNode(VariableDeclaration, {
+                ConsumingIdentifiers,
+                replace,
+              }),
+            ) ||
+            applyToNodes(ImportDeclarations, (ImportDeclaration) =>
+              cleanupUnusedOnImportNode(ImportDeclaration, {
+                ConsumingIdentifiers,
+                get,
+                replace,
+              }),
+            )
+          if (converted) {
+            return converted
+          }
         }
       }
-    }
-
-    {
-      const Contexts = [
-        parsed,
-        ...finder.findByTypes(parsed, [
-          NodeTypes.ClassMethod,
-          NodeTypes.FunctionDeclaration,
-        ]),
-      ]
-      for (const Context of Contexts) {
-        const ObjectPatterns = finder.findByTypes(Context, [
-          NodeTypes.ObjectPattern,
-        ])
-        const ArrayPatterns = finder.findByTypes(Context, [
-          NodeTypes.ArrayPattern,
-        ])
-        const VariableDeclarations = finder.findByTypes(Context, [
-          NodeTypes.VariableDeclaration,
-        ])
-
-        const ConsumingIdentifiers = _consumingIdentifiersFor(Context)
-        const ImportDeclarations = finder.findByTypes(Context, [
-          NodeTypes.Identifier,
-          NodeTypes.ImportDeclaration,
-        ])
-
-        const converted =
-          applyToNodes(ObjectPatterns, (ObjectPattern) =>
-            cleanupUnusedOnObjectPatternNode(ObjectPattern, {
-              ConsumingIdentifiers,
-              replace,
-            }),
-          ) ||
-          applyToNodes(ArrayPatterns, (ArrayPattern) =>
-            cleanupUnusedOnArrayPatternNode(ArrayPattern, {
-              ConsumingIdentifiers,
-              replace,
-            }),
-          ) ||
-          applyToNodes(VariableDeclarations, (VariableDeclaration) =>
-            cleanupUnusedOnVariableNode(VariableDeclaration, {
-              ConsumingIdentifiers,
-              replace,
-            }),
-          ) ||
-          applyToNodes(ImportDeclarations, (ImportDeclaration) =>
-            cleanupUnusedOnImportNode(ImportDeclaration, {
-              ConsumingIdentifiers,
-              get,
-              replace,
-            }),
-          )
-        if (converted) {
-          return converted
-        }
-      }
-    }
-    return content
-  })
+      return content
+    },
+    { name: 'processJSUnused' },
+  )
 }
 
 module.exports = processJSUnused

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupExtOnRequireDeclarationArgumentNode
  */
-'use strict'
-
 const path = require('path')
 
 /** @lends module:@the-/code.ast.nodes.cleanupExtOnRequireDeclarationArgumentNode */

@@ -11,8 +11,8 @@ import PositionInputStyleData from './styleData/PositionInputStyleData'
 /** Style for TheMap */
 const TheMapStyle = ({ className, id, options }) => [
   <TheStyle
-    {...{ id }}
     className={c('the-map-style', className)}
+    id={id}
     key='base'
     styles={TheMapStyle.data(options)}
   />,

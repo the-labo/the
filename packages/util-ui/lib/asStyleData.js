@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Mark  : style data
  * @memberof module:@the-/util-ui
@@ -6,8 +7,6 @@
  * @param {Object} data - Style data
  * @returns {Object} Style data
  */
-'use strict'
-
 const argx = require('argx')
 
 const combineSelectors = (...selectors) =>
@@ -54,24 +53,26 @@ function asStyleData(scopeSelector, data) {
   const args = argx(arguments)
   scopeSelector = args.shift('string')
   data = args.pop('object')
-  return Object.keys(data).reduce((scoped, selector) => {
-    return Object.assign(
-      scoped,
-      ...selector.split(',').map((aSelector) => {
-        const created = selectorData(
-          combineSelectors(scopeSelector, aSelector),
-          data[selector],
-        )
-        return Object.keys(created).reduce(
-          (result, key) =>
-            Object.assign(result, {
-              [key]: Object.assign({}, scoped[key] || {}, created[key]),
-            }),
-          {},
-        )
-      }),
-    )
-  }, {})
+  return Object.keys(data).reduce(
+    (scoped, selector) =>
+      Object.assign(
+        scoped,
+        ...selector.split(',').map((aSelector) => {
+          const created = selectorData(
+            combineSelectors(scopeSelector, aSelector),
+            data[selector],
+          )
+          return Object.keys(created).reduce(
+            (result, key) =>
+              Object.assign(result, {
+                [key]: Object.assign({}, scoped[key] || {}, created[key]),
+              }),
+            {},
+          )
+        }),
+      ),
+    {},
+  )
 }
 
 module.exports = asStyleData

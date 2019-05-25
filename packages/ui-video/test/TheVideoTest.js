@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheVideo.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheVideo = require('../shim/TheVideo').default

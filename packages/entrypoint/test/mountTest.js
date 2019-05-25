@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for mount.
  * Runs with mocha.
  */
-'use strict'
-
 describe('mount', () => {
   before(() => {})
 

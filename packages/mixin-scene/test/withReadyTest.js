@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withReady.
  * Runs with mocha.
  */
-'use strict'
-
 describe('with-ready', () => {
   before(() => {})
 

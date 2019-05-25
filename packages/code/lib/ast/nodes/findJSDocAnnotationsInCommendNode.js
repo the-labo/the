@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function findJSDocAnnotationsInCommendNode
  */
-'use strict'
-
 const { EOL } = require('os')
 
 function findJSDocAnnotationsInCommendNode(CommentNode) {

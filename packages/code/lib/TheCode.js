@@ -3,7 +3,6 @@
  * @class TheCode
  * @param {Object} [config={}] - Code config
  */
-'use strict'
 
 const aglob = require('aglob')
 const { canWriteAsync, readFileAsync, statAsync } = require('asfs')
@@ -146,7 +145,9 @@ class TheCode {
             }),
           )
           .catch((err) => {
-            err.message = `<${filename}> ${err.message}`
+            err.message = `[${process.name || 'unknown'}]<${filename}> ${
+              err.message
+            }`
             throw err
           }),
       input,

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for handleUnknownKeys.
  * Runs with mocha.
  */
-'use strict'
-
 describe('handle-unknown-keys', () => {
   before(() => {})
 

@@ -1,4 +1,4 @@
 'use strict'
 module.exports = () => {
-  console.log(`this is es6!`)
+  console.log('this is es6!')
 }

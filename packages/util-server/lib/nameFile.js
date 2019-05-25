@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Name a file
  * @function nameFile
@@ -7,8 +8,6 @@
  * @param {string} [options.type] -  Type of file
  * @returns {string}
  */
-'use strict'
-
 const mime = require('mime')
 const path = require('path')
 const uuid = require('uuid')

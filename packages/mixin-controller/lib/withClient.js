@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Wrap controller with client
  * @function withClient
  */
-'use strict'
-
 const qs = require('qs')
 
 /** @lends withClient */

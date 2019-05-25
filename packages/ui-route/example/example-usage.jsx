@@ -107,7 +107,7 @@ class ExampleComponent extends React.Component {
                       componentDidMount() {
                         console.log('View03 did mount')
                         const { history, location } = this.props
-                        history.replace(location.pathname + '?a=b')
+                        history.replace(`${location.pathname}?a=b`)
                       }
 
                       render() {

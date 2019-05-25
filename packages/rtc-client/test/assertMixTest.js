@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for assertMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('assert-mix', () => {
   before(() => {})
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupEmptyObjectPatternParamsOnFunctionNode
  */
-'use strict'
-
 /** @lends module:@the-/code.ast.nodes.cleanupEmptyObjectPatternParamsOnFunctionNode */
 function cleanupEmptyObjectPatternParamsOnFunctionNode(
   FunctionNode,

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for isResourceClass.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const isResourceClass = require('../lib/isResourceClass')
 const TheResource = require('../lib/TheResource')

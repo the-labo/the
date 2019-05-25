@@ -1,11 +1,10 @@
+'use strict'
 /**
  * For bindScope
  * @memberof module:@the-/mixin-scene
  * @function bindScope
  * @returns {function()} Class annotation function
  */
-'use strict'
-
 const { unlessProduction } = require('@the-/check')
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
@@ -14,7 +13,7 @@ const injectProperties = require('./helpers/injectProperties')
 function bindScope(name) {
   unlessProduction(() => {
     if (!name) {
-      throw new Error(`[bindScope] name is required`)
+      throw new Error('[bindScope] name is required')
     }
   })
   return asClassMixin((Class) => {

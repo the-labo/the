@@ -1,3 +1,4 @@
+'use strict'
 /**
  * withHistory mixin
  * @memberof module:@the-/mixin-scene
@@ -11,8 +12,6 @@
  * @inner
  * @class WithHistoryMixed
  */
-'use strict'
-
 const qs = require('qs')
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')

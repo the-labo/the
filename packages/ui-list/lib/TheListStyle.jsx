@@ -10,8 +10,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheList */
 const TheListStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={classnames('the-list-style', className)}
+    id={id}
     styles={TheListStyle.data(options)}
   />
 )

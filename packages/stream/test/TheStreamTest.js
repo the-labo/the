@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheStream.
  * Runs with mocha.
  */
-'use strict'
-
 const asleep = require('asleep')
 const { deepEqual, ok } = require('assert').strict
 const TheStream = require('../lib/TheStream')

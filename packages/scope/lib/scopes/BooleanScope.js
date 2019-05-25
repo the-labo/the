@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Scope to hold boolean
  * @memberof module:@the-/scope.scopes
  * @class BooleanScope
  * @augments module:@the-/scope.scopes.Scope
  */
-'use strict'
-
 const Scope = require('./Scope')
 
 /** @lends module:@the-/scope.scopes.BooleanScope */

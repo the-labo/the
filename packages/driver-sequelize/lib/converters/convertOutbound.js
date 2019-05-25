@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/driver-sequelize.converters
  * @function convertOutbound
  */
-'use strict'
-
 const clayEntity = require('clay-entity')
 const { MetaColumnNames } = require('../constants')
 const { logger } = require('../helpers')

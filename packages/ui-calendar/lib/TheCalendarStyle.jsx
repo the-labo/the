@@ -11,8 +11,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheCalendar */
 const TheCalendarStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-calendar-style', className)}
+    id={id}
     styles={TheCalendarStyle.data(options)}
   />
 )

@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Parse url
  * @function parseUrl
  * @param {string} urlString
  * @returns {URL}
  */
-'use strict'
-
 const URL = require('url-parse')
 
 /** @lends parseUrl */

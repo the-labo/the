@@ -16,26 +16,46 @@ class ExampleComponent extends React.PureComponent {
         <TheVideoStyle />
         <TheVideo
           controls
-          {...{ height, width }}
+          height={height}
           scale='none'
           src={VIDEO_URL}
+          width={width}
         />
         <TheVideo
           controls
-          {...{ height, width }}
+          height={height}
           scale='fill'
           src={VIDEO_URL}
+          width={width}
         />
-        <TheVideo controls {...{ height, width }} scale='fit' src={VIDEO_URL} />
-        <TheVideo controls {...{ height, width }} src={'__invalid_url__'} />
         <TheVideo
           controls
-          {...{ height, width }}
-          asLink
+          height={height}
           scale='fit'
           src={VIDEO_URL}
+          width={width}
         />
-        <TheVideo controls {...{ height, width }} scale='fit' src={null} />
+        <TheVideo
+          controls
+          height={height}
+          src={'__invalid_url__'}
+          width={width}
+        />
+        <TheVideo
+          asLink
+          controls
+          height={height}
+          scale='fit'
+          src={VIDEO_URL}
+          width={width}
+        />
+        <TheVideo
+          controls
+          height={height}
+          scale='fit'
+          src={null}
+          width={width}
+        />
 
         <hr />
         <div style={{ background: '#CCC', height: 120, width: 120 }}>

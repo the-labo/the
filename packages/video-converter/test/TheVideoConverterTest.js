@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheVideoConverter.
  * Runs with mocha.
  */
-'use strict'
-
 const { copyAsync } = require('asfs')
 const { equal, ok } = require('assert').strict
 const TheVideoConverter = require('../lib/TheVideoConverter')

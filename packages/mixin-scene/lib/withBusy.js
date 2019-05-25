@@ -1,3 +1,4 @@
+'use strict'
 /**
  * withBusy mixin
  * @memberof module:@the-/mixin-scene
@@ -10,8 +11,6 @@
  * @class WithBusyMixed
  * @inner
  */
-'use strict'
-
 const asleep = require('asleep')
 const asClassMixin = require('./helpers/asClassMixin')
 const asMethodWrap = require('./helpers/asMethodWrap')
@@ -71,16 +70,18 @@ module.exports = Object.assign(
   withBusy,
   /** @lends withBusy */
   {
-    sequential: asMethodWrap((method) => {
-      return async function busyWhileWrap(...args) {
-        await this.waitWhileBusy()
-        return method.apply(this, args)
-      }
-    }),
-    while: asMethodWrap((method) => {
-      return async function busyWhileWrap(...args) {
-        return this.busyWhile(async () => method.apply(this, args))
-      }
-    }),
+    sequential: asMethodWrap(
+      (method) =>
+        async function busyWhileWrap(...args) {
+          await this.waitWhileBusy()
+          return method.apply(this, args)
+        },
+    ),
+    while: asMethodWrap(
+      (method) =>
+        async function busyWhileWrap(...args) {
+          return this.busyWhile(async () => method.apply(this, args))
+        },
+    ),
   },
 )

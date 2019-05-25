@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheSeat.
  * Runs with mocha.
  */
-'use strict'
-
 const { doesNotThrow, equal, notEqual, ok, throws } = require('assert').strict
 const TheSeat = require('../lib/TheSeat')
 

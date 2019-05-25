@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for vhost.
  * Runs with mocha.
  */
-'use strict'
-
 const coz = require('coz')
 const vhost = require('../lib/vhost')
 

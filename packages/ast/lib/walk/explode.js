@@ -24,16 +24,16 @@ module.exports = function explode(visitor) {
   visitor._exploded = true
 
   // normalise pipes
-  for (let nodeType in visitor) {
+  for (const nodeType in visitor) {
     if (shouldIgnoreKey(nodeType)) continue
 
-    let parts = nodeType.split('|')
+    const parts = nodeType.split('|')
     if (parts.length === 1) continue
 
-    let fns = visitor[nodeType]
+    const fns = visitor[nodeType]
     delete visitor[nodeType]
 
-    for (let part of parts) {
+    for (const part of parts) {
       visitor[part] = fns
     }
   }
@@ -52,14 +52,14 @@ module.exports = function explode(visitor) {
   ensureCallbackArrays(visitor)
 
   // add aliases
-  for (let nodeType in visitor) {
+  for (const nodeType in visitor) {
     if (shouldIgnoreKey(nodeType)) continue
 
-    let fns = visitor[nodeType]
+    const fns = visitor[nodeType]
 
     let aliases = t.FLIPPED_ALIAS_KEYS[nodeType]
 
-    let deprecratedKey = t.DEPRECATED_KEYS[nodeType]
+    const deprecratedKey = t.DEPRECATED_KEYS[nodeType]
     if (deprecratedKey) {
       console.trace(
         `Visitor defined for ${nodeType} but it has been renamed to ${deprecratedKey}`,
@@ -72,8 +72,8 @@ module.exports = function explode(visitor) {
     // clear it from the visitor
     delete visitor[nodeType]
 
-    for (let alias of aliases) {
-      let existing = visitor[alias]
+    for (const alias of aliases) {
+      const existing = visitor[alias]
       if (existing) {
         mergePair(existing, fns)
       } else {
@@ -82,7 +82,7 @@ module.exports = function explode(visitor) {
     }
   }
 
-  for (let nodeType in visitor) {
+  for (const nodeType in visitor) {
     if (shouldIgnoreKey(nodeType)) continue
 
     ensureCallbackArrays(visitor[nodeType])
@@ -101,7 +101,7 @@ function verify(visitor) {
     )
   }
 
-  for (let nodeType in visitor) {
+  for (const nodeType in visitor) {
     if (nodeType === 'enter' || nodeType === 'exit') {
       validateVisitorMethods(nodeType, visitor[nodeType])
     }
@@ -115,9 +115,9 @@ function verify(visitor) {
       )
     }
 
-    let visitors = visitor[nodeType]
+    const visitors = visitor[nodeType]
     if (typeof visitors === 'object') {
-      for (let visitorKey in visitors) {
+      for (const visitorKey in visitors) {
         if (visitorKey === 'enter' || visitorKey === 'exit') {
           // verify that it just contains functions
           validateVisitorMethods(
@@ -138,8 +138,8 @@ function verify(visitor) {
 }
 
 function validateVisitorMethods(path, val) {
-  let fns = [].concat(val)
-  for (let fn of fns) {
+  const fns = [].concat(val)
+  for (const fn of fns) {
     if (typeof fn !== 'function') {
       throw new TypeError(
         `Non-function found defined in ${path} with type ${typeof fn}`,
@@ -149,10 +149,10 @@ function validateVisitorMethods(path, val) {
 }
 
 function ensureEntranceObjects(obj) {
-  for (let key in obj) {
+  for (const key in obj) {
     if (shouldIgnoreKey(key)) continue
 
-    let fns = obj[key]
+    const fns = obj[key]
     if (typeof fns === 'function') {
       obj[key] = { enter: fns }
     }
@@ -179,7 +179,7 @@ function shouldIgnoreKey(key) {
 }
 
 function mergePair(dest, src) {
-  for (let key in src) {
+  for (const key in src) {
     dest[key] = [].concat(dest[key] || [], src[key])
   }
 }

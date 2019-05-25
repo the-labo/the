@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/pack
  * @namespace Converters
  */
-'use strict'
-
 const NoopConverter = (v) => v
 const UInt8ArrayConverter = (v) => new Uint8Array(v)
 

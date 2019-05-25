@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for cleanupEmptyArrayPatternParamsOnFunctionNode.
  * Runs with mocha.
  */
-'use strict'
-
 describe('cleanup-empty-array-pattern-params-on-function-node', () => {
   before(() => {})
 

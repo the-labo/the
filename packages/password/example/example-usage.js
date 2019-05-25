@@ -1,5 +1,4 @@
 'use strict'
-
 const thePassword = require('@the-/password')
 
 async function tryExample() {

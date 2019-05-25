@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withResult.
  * Runs with mocha.
  */
-'use strict'
-
 describe('with-result', () => {
   before(() => {})
 

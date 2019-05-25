@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Define bud for readme
  * @memberof module:@the-/templates
  * @function test
  * @returns {Object}
  */
-'use strict'
-
 const aglob = require('aglob')
 const { ok } = require('assert').strict
 const path = require('path')
@@ -13,7 +12,7 @@ const _tmpl = require('./_tmpl')
 
 /** @lends module:@the-/templates.test */
 function test(config) {
-  let {
+  const {
     cjs = config.node,
     content = () => '',
     deps = {},
@@ -41,7 +40,7 @@ function test(config) {
       const suffix = 'Test'
       const name = String(basename)
       const varNameChanged = ['default'].includes(name)
-      const varName = varNameChanged ? name + '_' : name
+      const varName = varNameChanged ? `${name}_` : name
       return {
         data: {
           content: content({ name, varName }),
@@ -72,7 +71,7 @@ test.dir = function testDir(config) {
   } = config
   const TMPL_PATH = cjs ? _tmpl('cjs_test.hbs') : _tmpl('test.hbs')
   ok(!!src, 'config.src is required.')
-  let suffix = 'Test'
+  const suffix = 'Test'
   return [].concat(src).map((src) => {
     const name = path.basename(src)
     return {

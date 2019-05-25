@@ -9,8 +9,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheCopyboard */
 const TheCopyboardStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={classnames('the-copyboard-style', className)}
+    id={id}
     styles={TheCopyboardStyle.data(options)}
   />
 )

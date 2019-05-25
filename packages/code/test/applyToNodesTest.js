@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for applyToNodes.
  * Runs with mocha.
  */
-'use strict'
-
 describe('apply-to-nodes', () => {
   before(() => {})
 

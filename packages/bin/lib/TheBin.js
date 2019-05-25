@@ -1,3 +1,4 @@
+'use strict'
 /**
  * @memberof module:@the-/bin
  * @class TheBin
@@ -6,8 +7,6 @@
  * @param {string} [options.guide] - Guide string
  * @param {string} [options.versionOption=--version] - Option string for version
  */
-'use strict'
-
 const { exec, spawn } = require('child_process')
 const fs = require('fs')
 const hasbin = require('hasbin')
@@ -29,7 +28,7 @@ class TheBin {
       }
       const unknownOptions = Object.keys(rest)
       if (unknownOptions.length > 0) {
-        console.warn(`[TheBin] Unknown options: `, unknownOptions)
+        console.warn('[TheBin] Unknown options: ', unknownOptions)
       }
     })
 

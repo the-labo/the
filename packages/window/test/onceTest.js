@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for once.
  * Runs with mocha.
  */
-'use strict'
-
 describe('once', () => {
   before(() => {})
 

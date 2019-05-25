@@ -1,8 +1,7 @@
+'use strict'
 /**
  * @function instanceMethodNamesFor
  */
-'use strict'
-
 /** @lends instanceMethodNamesFor */
 function instanceMethodNamesFor(instance, descriptors) {
   return Object.keys(descriptors)

@@ -20,7 +20,7 @@
 ## @the-/client
 Client for the-server
 
-**Version**: 15.4.3  
+**Version**: 15.4.5  
 **License**: MIT  
 
 * [@the-/client](#module_@the-/client)
@@ -351,5 +351,6 @@ Default exports
 
 | Name | Type | Description |
 | --- | --- | --- |
-| callerKey | <code>string</code> |  |
 | cid | <code>string</code> | Client id |
+| callerKey | <code>string</code> |  |
+

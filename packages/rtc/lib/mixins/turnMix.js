@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Mixin for turn
  * @memberof module:@the-/rtc.mixins
@@ -5,8 +6,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-'use strict'
-
 const crypto = require('crypto')
 
 /** @lends module:@the-/rtc.mixins.turnMix */
@@ -21,8 +20,8 @@ function turnMix(Class) {
       }
       const hmac = crypto.createHmac('sha1', secret)
       // default to 86400 seconds timeout unless specified
-      const username =
-        Math.floor(new Date().getTime() / 1000) + parseInt(expiry, 10) + ''
+      const username = `${Math.floor(new Date().getTime() / 1000) +
+        parseInt(expiry, 10)}`
       hmac.update(username)
       return {
         credential: hmac.digest('base64'),

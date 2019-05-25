@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for addMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('add-mix', () => {
   before(() => {})
 

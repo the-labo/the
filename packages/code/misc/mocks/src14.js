@@ -66,7 +66,7 @@ class ListScene extends ListSceneBase {
   }
 
   async dealWith(condition) {
-    throw new Error(`Not implemented`)
+    throw new Error('Not implemented')
   }
 
   @withBusy.while

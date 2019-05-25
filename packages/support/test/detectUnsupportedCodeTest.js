@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for detectUnsupportedCode.
  * Runs with mocha.
  */
-'use strict'
-
 describe('detect-unsupported-code', () => {
   before(() => {})
 

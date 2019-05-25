@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function mergeDuplicateImportOnProgramNode
  */
-'use strict'
-
 const { EOL } = require('os')
 const {
   constants: { NodeTypes },
@@ -37,8 +36,8 @@ function mergeDuplicateImportOnProgramNode(programNode, { get, replace }) {
     if (specifiers.length === 0) {
       continue
     }
-    const start = declarations[0].start
-    const end = declarations[declarations.length - 1].end
+    const { start } = declarations[0]
+    const { end } = declarations[declarations.length - 1]
     const original = get([start, end])
     const merged = declarations
       .sort(compareStart)

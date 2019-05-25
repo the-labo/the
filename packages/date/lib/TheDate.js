@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Date manipulator
  * @memberof module:@the-/date
@@ -11,8 +12,6 @@
  * @augments module:@the-/date.mixins.subtractMix~SubtractMixed
  * @augments module:@the-/date.TheDateBase
  */
-'use strict'
-
 const abind = require('abind')
 const {
   addMix,

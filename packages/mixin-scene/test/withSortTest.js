@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withSort.
  * Runs with mocha.
  */
-'use strict'
-
 describe('with-sort', () => {
   before(() => {})
 

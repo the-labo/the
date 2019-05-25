@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for assertMethods.
  * Runs with mocha.
  */
-'use strict'
-
 describe('assert-methods', () => {
   before(() => {})
 

@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/password}
  * @memberof module:@the-/password
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const ThePassword = require('./ThePassword')
 

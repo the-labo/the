@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Add export/import methods
  * @memberof module:@the-/db
@@ -5,8 +6,6 @@
  * @param {function()}
  * @returns {function()}
  */
-'use strict'
-
 const amkdirp = require('amkdirp')
 const asleep = require('asleep')
 const aslogger = require('aslogger')
@@ -41,7 +40,7 @@ function exportImportMix(Class) {
         if (skip) {
           continue
         }
-        const filename = path.join(dirname, rName + '.dat')
+        const filename = path.join(dirname, `${rName}.dat`)
         await writeFileAsync(filename, '')
         logger.point(`Exporting "${rName}"...`)
 

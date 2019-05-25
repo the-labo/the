@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-bar
  * @typicalname uiBar
- * @version 15.4.4
+ * @version 15.4.5
  * @description Bar of the-components
  */
 'use strict'

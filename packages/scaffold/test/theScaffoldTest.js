@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for theScaffold.
  * Runs with mocha.
  */
-'use strict'
-
 const theScaffold = require('../lib/theScaffold')
 
 describe('the-scaffold', function() {

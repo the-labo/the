@@ -22,7 +22,7 @@ class TheFooter extends React.PureComponent {
 
   static Link({ children, className, to }) {
     return (
-      <TheLink className={classnames('the-footer-link', className)} {...{ to }}>
+      <TheLink className={classnames('the-footer-link', className)} to={to}>
         {children}
       </TheLink>
     )

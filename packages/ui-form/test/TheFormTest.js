@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheForm.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheForm = require('../shim/TheForm').default

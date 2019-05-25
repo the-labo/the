@@ -10,8 +10,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheSpin */
 const TheSpinStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-spin-style', className)}
+    id={id}
     styles={TheSpinStyle.data(options)}
   />
 )

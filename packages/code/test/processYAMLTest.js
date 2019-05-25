@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for processYAML.
  * Runs with mocha.
  */
-'use strict'
-
 const { doesNotReject, equal } = require('assert').strict
 const processYAML = require('../lib/processors/processYAML')
 

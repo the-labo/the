@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheRouter.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheRouter = require('../shim/TheRouter').default

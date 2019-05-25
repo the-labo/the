@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Check file exists
  * @memberof module:@the-/util-path.helpers
@@ -5,8 +6,6 @@
  * @param {string} filename
  * @returns {Promise<boolean>}
  */
-'use strict'
-
 const fs = require('fs')
 
 /** @lends module:@the-/util-path.helpers.exists */

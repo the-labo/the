@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for pipeToFile.
  * Runs with mocha.
  */
-'use strict'
-
 const pipeToFile = require('../lib/pipeToFile')
 
 describe('pipe-to-file', () => {

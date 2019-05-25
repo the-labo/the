@@ -1,3 +1,4 @@
+'use strict'
 /**
  * @memberof module:@the-/client.helpers
  * @function asController
@@ -7,8 +8,6 @@
  * @param {Object} [options={}]
  * @returns Object
  */
-'use strict'
-
 /** @lends asController */
 function asController(instance, spec, context, options = {}) {
   const { onToggleHandler = () => null } = options

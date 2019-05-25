@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for omitLongString.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepStrictEqual, equal } = require('assert').strict
 const omitLongString = require('../lib/helpers/omitLongString')
 

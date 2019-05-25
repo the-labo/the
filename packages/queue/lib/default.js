@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/queue}
  * @memberof module:@the-/queue
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const TheQueue = require('./TheQueue')
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withFailure.
  * Runs with mocha.
  */
-'use strict'
-
 describe('with-failure', () => {
   before(() => {})
 

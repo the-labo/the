@@ -77,16 +77,14 @@ class TheCamInput extends React.Component {
       >
         {!rejected && (
           <TheCam
-            {...{
-              audio,
-              height,
-              video,
-              width,
-            }}
+            audio={audio}
             disabled={hasValue}
+            height={height}
             onMedia={this.handleMedia}
             onReject={this.handleReject}
             spinning={busy}
+            video={video}
+            width={width}
           >
             <input
               name={name}
@@ -106,10 +104,11 @@ class TheCamInput extends React.Component {
               capture
               className='the-cam-input-upload-input'
               id={`${id}-file`}
-              type='file'
-              {...{ name, readOnly }}
+              name={name}
               onChange={this.handleUploadChange}
+              readOnly={readOnly}
               tabIndex={-1}
+              type='file'
               value={value || ''}
             />
             <label

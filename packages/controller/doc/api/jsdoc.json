@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/controller/lib"
+      "path": "lib"
     },
     "name": "@the-/controller",
     "order": 2,
     "typicalname": "controller",
-    "version": "15.4.3"
+    "version": "15.4.5"
   },
   {
     "description": "Controller action invocation",
@@ -32,8 +32,8 @@
     "memberof": "module:@the-/controller.TheCtrl",
     "meta": {
       "filename": "TheCtrl.js",
-      "lineno": 71,
-      "path": "/Users/okuni/Projects/the/packages/controller/lib"
+      "lineno": 70,
+      "path": "lib"
     },
     "name": "controllerDidAttach",
     "order": 9,
@@ -48,8 +48,8 @@
     "memberof": "module:@the-/controller.TheCtrl",
     "meta": {
       "filename": "TheCtrl.js",
-      "lineno": 74,
-      "path": "/Users/okuni/Projects/the/packages/controller/lib"
+      "lineno": 73,
+      "path": "lib"
     },
     "name": "controllerMethodDidInvoke",
     "order": 10,
@@ -64,8 +64,8 @@
     "memberof": "module:@the-/controller.TheCtrl",
     "meta": {
       "filename": "TheCtrl.js",
-      "lineno": 77,
-      "path": "/Users/okuni/Projects/the/packages/controller/lib"
+      "lineno": 76,
+      "path": "lib"
     },
     "name": "controllerMethodWillInvoke",
     "order": 11,
@@ -80,8 +80,8 @@
     "memberof": "module:@the-/controller.TheCtrl",
     "meta": {
       "filename": "TheCtrl.js",
-      "lineno": 80,
-      "path": "/Users/okuni/Projects/the/packages/controller/lib"
+      "lineno": 79,
+      "path": "lib"
     },
     "name": "controllerWillDetach",
     "order": 12,
@@ -95,8 +95,8 @@
     "memberof": "module:@the-/controller",
     "meta": {
       "filename": "Invocation.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/controller/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "Invocation",
     "order": 3,
@@ -158,8 +158,8 @@
     "memberof": "module:@the-/controller",
     "meta": {
       "filename": "TheCtrl.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/controller/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheCtrl",
     "order": 5,
@@ -173,8 +173,8 @@
     "memberof": "module:@the-/controller",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/controller/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -208,8 +208,8 @@
     "memberof": "module:@the-/controller",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/controller/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,
@@ -224,8 +224,8 @@
     "memberof": "module:@the-/controller.TheCtrl",
     "meta": {
       "filename": "TheCtrl.js",
-      "lineno": 17,
-      "path": "/Users/okuni/Projects/the/packages/controller/lib"
+      "lineno": 16,
+      "path": "lib"
     },
     "name": "afterInvocation",
     "order": 6,
@@ -260,8 +260,8 @@
     "memberof": "module:@the-/controller.TheCtrl",
     "meta": {
       "filename": "TheCtrl.js",
-      "lineno": 30,
-      "path": "/Users/okuni/Projects/the/packages/controller/lib"
+      "lineno": 29,
+      "path": "lib"
     },
     "name": "beforeInvocation",
     "order": 7,
@@ -296,8 +296,8 @@
     "memberof": "module:@the-/controller.TheCtrl",
     "meta": {
       "filename": "TheCtrl.js",
-      "lineno": 43,
-      "path": "/Users/okuni/Projects/the/packages/controller/lib"
+      "lineno": 42,
+      "path": "lib"
     },
     "name": "rescueInvocation",
     "order": 8,

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheInputCheckbox.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheInputCheckbox = require('../shim/TheInputCheckbox').default

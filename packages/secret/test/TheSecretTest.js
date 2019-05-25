@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheSecret.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepEqual, equal, ok } = require('assert').strict
 const { readAsJsonSync, writeAsJsonSync } = require('@the-/util-file')
 const TheSecret = require('../lib/TheSecret')

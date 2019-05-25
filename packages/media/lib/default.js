@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/media.create}
  * @memberof module:@the-/media
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const TheMedia = require('./TheMedia')
 

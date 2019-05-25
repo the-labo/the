@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for listenMix.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const EventEmitter = require('events')
 const listenMix = require('../lib/mixins/listenMix')

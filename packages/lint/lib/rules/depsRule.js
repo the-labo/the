@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create "depsRule" lint
  * @memberof module:@the-/lint.rules
@@ -5,8 +6,6 @@
  * @param {Object} config - Lint config
  * @returns {function()} Lint function
  */
-'use strict'
-
 const path = require('path')
 const {
   constants: { NodeTypes },
@@ -19,7 +18,7 @@ const {
 function depsRule(config) {
   const { importFrom = false, requireFrom = false, ...rest } = config
   if (Object.keys(rest).length > 0) {
-    console.warn(`[depsRule] Unknown options`, Object.keys(rest))
+    console.warn('[depsRule] Unknown options', Object.keys(rest))
   }
   return async function depsRuleCheck({ content, filename, report }) {
     const parsed = parse(String(content), {
@@ -48,7 +47,7 @@ function depsRule(config) {
     }
 
     const requiredName = (node) => {
-      const FirstArg = node['arguments'][0]
+      const FirstArg = node.arguments[0]
       return FirstArg && FirstArg.value
     }
 
@@ -57,7 +56,7 @@ function depsRule(config) {
         ImportDeclaration: (node) => {
           const modulePaths = modulePathsFor(node.source.value, importFrom)
           const ok = modulePaths.some((modulePath) => canRequire(modulePath))
-          let { column, line } = node.loc.start
+          const { column, line } = node.loc.start
           !ok &&
             report('Module not found', {
               actual: false,
@@ -75,7 +74,7 @@ function depsRule(config) {
       NodeTypes.CallExpression,
     ])
     const RequireCallNodes = CallExpressions.filter((node) => {
-      const arg = node['arguments'][0]
+      const arg = node.arguments[0]
       return (
         node.callee.name === 'require' &&
         arg &&
@@ -86,7 +85,7 @@ function depsRule(config) {
       const name = requiredName(node)
       const modulePaths = modulePathsFor(name, requireFrom)
       const ok = modulePaths.some((modulePath) => canRequire(modulePath))
-      let { column, line } = node.loc.start
+      const { column, line } = node.loc.start
       !ok &&
         report('Module not found', {
           actual: false,

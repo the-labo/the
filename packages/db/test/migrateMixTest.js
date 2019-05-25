@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for migrateMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('migrate-mix', () => {
   before(() => {})
 

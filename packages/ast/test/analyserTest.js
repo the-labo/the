@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for analyser.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const analyser = require('../lib/analyser')
 const finder = require('../lib/finder')

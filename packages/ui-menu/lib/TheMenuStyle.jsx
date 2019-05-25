@@ -10,8 +10,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheMenu */
 const TheMenuStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-menu-style', className)}
+    id={id}
     styles={TheMenuStyle.data(options)}
   />
 )
@@ -153,7 +153,7 @@ TheMenuStyle.data = (options) => {
       },
       '.the-dropdown-menu-inner': {
         backgroundColor: overlayBackgroundColor,
-        border: `1px solid transparent`,
+        border: '1px solid transparent',
         boxShadow: '0px 0px 0px rgba(0,0,0,0.33)',
         maxWidth: '100vw',
         minWidth: tappableHeight * 3,

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * @function mergedLocales
  * @param {Object} l1
@@ -5,8 +6,6 @@
  * @private
  * @memberOf module:@the-/loc.helpers
  */
-'use strict'
-
 const { expand, flatten } = require('objnest')
 
 /** @lends mergedLocales */

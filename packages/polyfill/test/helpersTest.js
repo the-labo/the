@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for helpers.
  * Runs with mocha.
  */
-'use strict'
-
 describe('helpers', () => {
   before(() => {})
 

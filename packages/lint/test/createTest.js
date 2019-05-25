@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for create.
  * Runs with mocha.
  */
-'use strict'
-
 describe('create', () => {
   before(() => {})
 

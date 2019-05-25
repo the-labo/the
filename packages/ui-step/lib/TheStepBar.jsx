@@ -24,7 +24,13 @@ class TheStepBar extends React.Component {
     return (
       <div className={c('the-step-bar')} ref={this.elmRef} role='tablist'>
         {nodes.map((node, index) => (
-          <TheStepBar.Item key={index} {...{ index, node, onStep, step }} />
+          <TheStepBar.Item
+            index={index}
+            key={index}
+            node={node}
+            onStep={onStep}
+            step={step}
+          />
         ))}
       </div>
     )

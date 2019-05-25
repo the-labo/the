@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheSecret instance
  * @memberof module:@the-/secret
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {module:@the-/secret.TheSecret}
  */
-'use strict'
-
 const TheSecret = require('./TheSecret')
 
 /** @lends create */

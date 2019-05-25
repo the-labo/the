@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheUnauthorizedError.
  * Runs with mocha.
  */
-'use strict'
-
 describe('the-unauthorized-error', () => {
   before(() => {})
 

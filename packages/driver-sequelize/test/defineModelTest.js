@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for defineModel.
  * Runs with mocha.
  */
-'use strict'
-
 describe('define-model', () => {
   before(() => {})
 

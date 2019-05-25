@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for RenderingCountMetrics.
  * Runs with mocha.
  */
-'use strict'
-
 describe('rendering-count-metrics', () => {
   before(() => {})
 

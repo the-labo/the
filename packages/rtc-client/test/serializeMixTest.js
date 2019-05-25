@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for serializeMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('serialize-mix', () => {
   before(() => {})
 

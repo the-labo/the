@@ -1,3 +1,4 @@
+'use strict'
 /**
  * withQuery mixin
  * @function withQuery
@@ -11,8 +12,6 @@
  * @inner
  * @class WithQueryMixed
  */
-'use strict'
-
 const { cleanup } = require('asobj')
 const { get } = require('bwindow')
 const qs = require('qs')
@@ -51,7 +50,7 @@ const withQuery = asClassMixin((Class) => {
             delNull: true,
           },
         )
-        const search = '?' + qs.stringify(merged)
+        const search = `?${qs.stringify(merged)}`
 
         const { history } = this
         if (history.location.search !== search) {

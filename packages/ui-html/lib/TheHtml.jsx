@@ -25,8 +25,9 @@ class TheHtml extends React.PureComponent {
     return (
       <html
         className={classnames('the-html', className)}
+        id={id}
+        lang={lang}
         style={styles.root}
-        {...{ id, lang }}
       >
         {children}
       </html>

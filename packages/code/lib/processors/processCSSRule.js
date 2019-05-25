@@ -1,11 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/code.processors
  * @function processCSSRule
  * @param {string} content
  * @returns {Promise<string>} processed
  */
-'use strict'
-
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 const { bindCssRange } = require('../helpers/cssHelper')
@@ -44,9 +43,9 @@ async function processCSSRule(content) {
       rulesHash[key] = [...(rulesHash[key] || []), node]
     })
     for (const rules of Object.values(rulesHash)) {
-      const sortedByStart = [...rules].sort((a, b) => {
-        return indexOf(a.source.start) - indexOf(b.source.start)
-      })
+      const sortedByStart = [...rules].sort(
+        (a, b) => indexOf(a.source.start) - indexOf(b.source.start),
+      )
       const sortedByName = [...rules].sort((a, b) => {
         const aWeight = weightSelector(a.selector)
         const bWeight = weightSelector(b.selector)

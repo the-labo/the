@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for exportImportMix.
  * Runs with mocha.
  */
-'use strict'
-
 const asleep = require('asleep')
 const { equal } = require('assert').strict
 const { TheResource } = require('@the-/resource')

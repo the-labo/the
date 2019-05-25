@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/seat
  * @class TheSeat
  */
-'use strict'
-
 const abind = require('abind')
 const { get, has, remove, set } = require('json-pointer')
 const mkdirp = require('mkdirp')
@@ -35,8 +34,8 @@ class TheSeat extends TheSeatBase {
     this.syncAt = null
     this.data = null
     this.filename = filename
-    this.lockFilename = filename + '.lock'
-    this.backupFilename = filename + '.bk'
+    this.lockFilename = `${filename}.lock`
+    this.backupFilename = `${filename}.bk`
     this.scopeName = scopeName
     handleUnknownOptions(rest)
     abind(this)

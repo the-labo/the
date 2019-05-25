@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Mount element on DOM
  * @memberof module:@the-/entrypoint
@@ -9,8 +10,6 @@
  * @param {boolean} [options.router] - Use router
  * @returns {Promise}
  */
-'use strict'
-
 const { StrictMode, createElement: c } = require('react')
 const { render } = require('react-dom')
 const { TheRouter } = require('@the-/ui-router')

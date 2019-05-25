@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheQueue instance
  * @memberof module:@the-/queue
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {TheQueue}
  */
-'use strict'
-
 const TheQueue = require('./TheQueue')
 
 /** @lends module:@the-/queue.create */

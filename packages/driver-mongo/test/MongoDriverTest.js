@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for MongoDriver.
  * Runs with mocha.
  */
-'use strict'
-
 const asleep = require('asleep')
 const { equal, ok } = require('assert').strict
 const clayDriverTests = require('clay-driver-tests')

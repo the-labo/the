@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Add query to url string
  * @memberof module:@the-/url
@@ -6,8 +7,6 @@
  * @param {Object} query - Query to add
  * @returns {string} Added url string
  */
-'use strict'
-
 const qs = require('qs')
 const { get } = require('@the-/window')
 

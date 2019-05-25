@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Show page
  * @memberof module:@the-/window
@@ -5,15 +6,13 @@
  * @param {string} url - URL to show
  * @returns {*}
  */
-'use strict'
-
 const get = require('./get')
 
 /** @lends module:@the-/window.show */
 function show(url) {
   const location = get('location')
   if (!location) {
-    console.warn(`Failed to show because there no location object`)
+    console.warn('Failed to show because there no location object')
     return
   }
   location.href = url

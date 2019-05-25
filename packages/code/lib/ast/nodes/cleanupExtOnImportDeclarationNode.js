@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupExtOnImportDeclarationNode
  */
-'use strict'
-
 const path = require('path')
 
 const isRelative = (filename) => /^\./.test(filename)

@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Default exports
  * @memberof module:@the-/demo-lib
  * @function theDemoLib
  * @returns {TheDemoLib}
  */
-'use strict'
-
 const create = require('./create')
 const TheDemoLib = require('./TheDemoLib')
 

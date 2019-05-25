@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for queryFromUrl.
  * Runs with mocha.
  */
-'use strict'
-
 describe('query-from-url', () => {
   before(() => {})
 

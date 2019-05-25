@@ -10,8 +10,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheImage */
 const TheImageStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={classnames('the-image-style', className)}
+    id={id}
     styles={TheImageStyle.data(options)}
   />
 )

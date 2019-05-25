@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Default exports
  * @memberof module:@the-/client
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const TheClient = require('./TheClient')
 

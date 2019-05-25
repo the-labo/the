@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for exists.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const exists = require('../lib/helpers/exists')
 

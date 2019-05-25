@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Mixin for sfu
  * @memberof module:@the-/rtc.mixins
@@ -5,8 +6,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-'use strict'
-
 const SFUProxyPool = require('../sfu/SFUProxyPool')
 
 /** @lends module:@the-/rtc.mixins.sfuMix */

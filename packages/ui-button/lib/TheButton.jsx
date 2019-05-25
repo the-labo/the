@@ -128,10 +128,12 @@ class TheButton extends React.Component {
           'the-button-vertical': !!largeIcon,
           'the-button-wide': wide,
         })}
-        onClick={this.handleClick}
-        {...{ style, target, to }}
         href={(!to && props.href) || 'javascript:void(0)'}
+        onClick={this.handleClick}
         onKeyDown={this.handleKeyDown}
+        style={style}
+        target={target}
+        to={to}
       >
         <span className='the-button-inner'>
           {spinning && <TheButton.Spinner />}

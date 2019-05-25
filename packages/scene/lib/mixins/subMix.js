@@ -1,11 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/scene.mixins
  * @function subMix
  * @param {function()} BaseClass
  * @returns {function()} MixedClass
  */
-'use strict'
-
 /** @lends module:@the-/scene.mixins.subMix */
 function subMix(BaseClass) {
   /**

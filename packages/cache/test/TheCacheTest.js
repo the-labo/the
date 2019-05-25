@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheCache.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const TheCache = require('../lib/TheCache')
 

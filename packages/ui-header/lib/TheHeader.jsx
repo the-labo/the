@@ -90,7 +90,13 @@ class TheHeader extends React.Component {
     if (to) {
       return (
         <li className={c('the-header-tab-item', className)} role='tab'>
-          <TheLink {...{ activeClassName, activeStyle, exact, onClick, to }}>
+          <TheLink
+            activeClassName={activeClassName}
+            activeStyle={activeStyle}
+            exact={exact}
+            onClick={onClick}
+            to={to}
+          >
             {icon && <TheIcon className={icon} />}
             {text && <span className='the-header-tab-item-text'>{text}</span>}
             <span className='the-header-tab-item-children'>{children}</span>
@@ -100,7 +106,7 @@ class TheHeader extends React.Component {
     } else {
       return (
         <li className={c('the-header-tab-item', className)} role='tab'>
-          <a {...{ onClick }}>
+          <a onClick={onClick}>
             {icon && <TheIcon className={icon} />}
             {text && <span className='the-header-tab-item-text'>{text}</span>}
             <span className='the-header-tab-item-children'>{children}</span>

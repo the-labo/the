@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Vendor Colors
  * @memberof module:@the-/const-ui
  * @namespace VendorColors
  */
-'use strict'
-
 module.exports = Object.freeze(
   /** @lends module:@the-/const-ui.VendorColors */
   {

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Wrap controller with seal
  * @function withAuthorized
  */
-'use strict'
-
 const { TheUnauthorizedError } = require('@the-/error')
 
 /** @lends withAuthorized */

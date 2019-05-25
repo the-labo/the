@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for parseTurnSecret.
  * Runs with mocha.
  */
-'use strict'
-
 describe('parse-turn-secret', () => {
   before(() => {})
 

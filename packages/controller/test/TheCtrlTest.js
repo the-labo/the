@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheCtrl.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const TheCtrl = require('../lib/TheCtrl')
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/seed
  * @class TheSeed
  */
-'use strict'
-
 const abind = require('abind')
 const argx = require('argx')
 const evaljson = require('evaljson')

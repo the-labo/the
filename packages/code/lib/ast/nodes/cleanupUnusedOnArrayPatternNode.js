@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupUnusedOnArrayPatternNode
  */
-'use strict'
-
 /** @lends module:@the-/code.ast.nodes.cleanupUnusedOnArrayPatternNode */
 function cleanupUnusedOnArrayPatternNode(
   ArrayPattern,
@@ -27,7 +26,7 @@ function cleanupUnusedOnArrayPatternNode(
         const unused = usages.length === 0
         if (unused) {
           const start = prevElement ? prevElement.end + 1 : element.start
-          const end = element.end
+          const { end } = element
           return replace([start, end], '')
         }
         break
@@ -39,7 +38,7 @@ function cleanupUnusedOnArrayPatternNode(
         const unused = usages.length === 0
         if (unused) {
           const start = prevElement ? prevElement.end + 1 : element.start
-          const end = element.end
+          const { end } = element
           return replace([start, end], '')
         }
         break

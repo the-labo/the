@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for isiOS.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const isiOS = require('../lib/isiOS')
 

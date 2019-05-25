@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code
  * @namespace astHelper
  */
-'use strict'
-
 const astHelper = Object.freeze(
   /** @lends module:@the-/code.astHelper */
   {

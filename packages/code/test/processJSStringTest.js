@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for processJSString.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const processJSString = require('../lib/processors/processJSString')
 

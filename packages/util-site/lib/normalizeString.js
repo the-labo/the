@@ -1,3 +1,4 @@
+'use strict'
 /**
  * @memberof module:@the-/util-site
  * Convert into japanese strings.
@@ -7,8 +8,6 @@
  * @see https://gist.github.com/think49/964592/96c2d034ee07d6c2044e501d4e06b73a6a9e1c72
  * @returns {string}
  */
-'use strict'
-
 const hankakuKana = [
   'ｧ',
   'ｨ',

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheCamInput.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheCamInput = require('../shim/TheCamInput').default

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Define bud for prettierrc
  * @memberof module:@the-/templates
@@ -5,8 +6,6 @@
  * @param {Object} config
  * @returns {Object}
  */
-'use strict'
-
 const { PrettierConfig } = require('@the-/const-code')
 const _tmpl = require('./_tmpl')
 
@@ -21,7 +20,7 @@ function prettierrc(config = {}) {
     },
     force: true,
     mode: '444',
-    path: `.prettierrc.yml`,
+    path: '.prettierrc.yml',
     tmpl: _tmpl('prettierrc.hbs'),
   }
 }

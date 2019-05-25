@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withValues.
  * Runs with mocha.
  */
-'use strict'
-
 describe('with-values', () => {
   before(() => {})
 

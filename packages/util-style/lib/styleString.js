@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Convert style into style string
  * @function styleString
@@ -6,8 +7,6 @@
  * @param {string} [atRule=null]
  * @returns {Object} Style object
  */
-'use strict'
-
 const nanoCSS = require('nano-css')
 const { addon: keyframes } = require('nano-css/addon/keyframes')
 const { addon: prefixer } = require('nano-css/addon/prefixer')
@@ -30,11 +29,10 @@ function styleString(selector, style, atRule = null) {
   return String(nano.raw)
 }
 
-styleString.fromStyles = (styles) => {
-  return Object.keys(styles)
+styleString.fromStyles = (styles) =>
+  Object.keys(styles)
     .map((selector) => styleString(selector, styles[selector]))
     .filter(Boolean)
     .join(EOL)
-}
 
 module.exports = styleString

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Handle toggle online/offline
  * @memberof module:@the-/window
@@ -6,8 +7,6 @@
  * @param {Object} [options={}] - Optional settings
  * @param {number} [options.delay=100] Delay for callback
  */
-'use strict'
-
 const debug = require('debug')
 const get = require('./get')
 

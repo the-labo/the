@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TypeNamings.
  * Runs with mocha.
  */
-'use strict'
-
 describe('type-namings', () => {
   before(() => {})
 

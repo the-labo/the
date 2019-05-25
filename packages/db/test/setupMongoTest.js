@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for setupMongo.
  * Runs with mocha.
  */
-'use strict'
-
 describe('setup-mongo', () => {
   before(() => {})
 

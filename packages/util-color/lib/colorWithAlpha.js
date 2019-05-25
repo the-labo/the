@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Get color with alpha
  * @memberof module:@the-/util-color
@@ -6,8 +7,6 @@
  * @param {number} alpha
  * @returns {string} color
  */
-'use strict'
-
 const { alpha: withAlpha } = require('acolor')
 
 /** @lends module:@the-/util-color.colorWithAlpha */

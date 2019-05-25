@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Mixins for metrics
  * @memberof module:@the-/server.mixins
@@ -5,8 +6,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-'use strict'
-
 /** @lends module:@the-/server.mixins.metricsMix */
 function metricsMix(Class) {
   /**

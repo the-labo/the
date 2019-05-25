@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for langDetector.
  * Runs with mocha.
  */
-'use strict'
-
 describe('lang-detector', () => {
   before(() => {})
 

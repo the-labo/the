@@ -1,3 +1,4 @@
+'use strict'
 /**
  * @memberof module:@the-/util-file
  * @function writeAsJsonSync
@@ -6,8 +7,6 @@
  * @param {Object} [options]
  * @param {boolean} [options.sort=true]
  */
-'use strict'
-
 const { sortProperties } = require('fmtjson')
 const { writeFileSync } = require('fs')
 const JSON5 = require('json5')

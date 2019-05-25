@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheResource instance
  * @memberof module:@the-/resource
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {TheResource}
  */
-'use strict'
-
 const TheResource = require('./TheResource')
 
 /** @lends module:@the-/resource.create */

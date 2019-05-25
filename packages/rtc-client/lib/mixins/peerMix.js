@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Mixin for peer
  * @memberof module:@the-/rtc.constants.mixins
@@ -5,8 +6,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-'use strict'
-
 const wrtc = require('wrtc')
 const { get } = require('@the-/window')
 const ChannelNames = require('../constants/ChannelNames')

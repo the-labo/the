@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheRepeatable.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheRepeatable = require('../shim/TheRepeatable').default

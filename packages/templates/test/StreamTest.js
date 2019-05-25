@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for Stream.
  * Runs with mocha.
  */
-'use strict'
-
 describe('stream', () => {
   before(() => {})
 

@@ -27,7 +27,7 @@ const mergeDuplicateImportOnProgramNode_ = require('./mergeDuplicateImportOnProg
 const mergeStringConcatenateOnBinaryExpressionNode_ = require('./mergeStringConcatenateOnBinaryExpressionNode')
 const modifyNodeDeprecatedOnRequireDeclaration_ = require('./modifyNodeDeprecatedOnRequireDeclaration')
 const normalizeBinaryExpressionNode_ = require('./normalizeBinaryExpressionNode')
-const normalizeFunctionBodyOnFunctionNode_ = require('./normalizeFunctionBodyOnFunctionNode')
+const normalizeFunctionReturnOnFunctionNode_ = require('./normalizeFunctionReturnOnFunctionNode')
 const normalizeJSDocAnnotationsOnCommentNode_ = require('./normalizeJSDocAnnotationsOnCommentNode')
 const normalizeSrcPathOnImportDeclarationNode_ = require('./normalizeSrcPathOnImportDeclarationNode')
 const normalizeSrcPathOnRequireArgumentNode_ = require('./normalizeSrcPathOnRequireArgumentNode')
@@ -60,7 +60,7 @@ exports.mergeDuplicateImportOnProgramNode = mergeDuplicateImportOnProgramNode_
 exports.mergeStringConcatenateOnBinaryExpressionNode = mergeStringConcatenateOnBinaryExpressionNode_
 exports.modifyNodeDeprecatedOnRequireDeclaration = modifyNodeDeprecatedOnRequireDeclaration_
 exports.normalizeBinaryExpressionNode = normalizeBinaryExpressionNode_
-exports.normalizeFunctionBodyOnFunctionNode = normalizeFunctionBodyOnFunctionNode_
+exports.normalizeFunctionReturnOnFunctionNode = normalizeFunctionReturnOnFunctionNode_
 exports.normalizeJSDocAnnotationsOnCommentNode = normalizeJSDocAnnotationsOnCommentNode_
 exports.normalizeSrcPathOnImportDeclarationNode = normalizeSrcPathOnImportDeclarationNode_
 exports.normalizeSrcPathOnRequireArgumentNode = normalizeSrcPathOnRequireArgumentNode_
@@ -93,7 +93,7 @@ module.exports = {
   mergeStringConcatenateOnBinaryExpressionNode: mergeStringConcatenateOnBinaryExpressionNode_,
   modifyNodeDeprecatedOnRequireDeclaration: modifyNodeDeprecatedOnRequireDeclaration_,
   normalizeBinaryExpressionNode: normalizeBinaryExpressionNode_,
-  normalizeFunctionBodyOnFunctionNode: normalizeFunctionBodyOnFunctionNode_,
+  normalizeFunctionReturnOnFunctionNode: normalizeFunctionReturnOnFunctionNode_,
   normalizeJSDocAnnotationsOnCommentNode: normalizeJSDocAnnotationsOnCommentNode_,
   normalizeSrcPathOnImportDeclarationNode: normalizeSrcPathOnImportDeclarationNode_,
   normalizeSrcPathOnRequireArgumentNode: normalizeSrcPathOnRequireArgumentNode_,

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/password
  * @class ThePassword
  */
-'use strict'
-
 const abind = require('abind')
 const crypto = require('crypto')
 
@@ -12,7 +11,7 @@ class ThePassword {
   constructor(options = {}) {
     if (options.algorithm) {
       console.warn(
-        `[the-password] Passing algorithm on constructor is now deprecated`,
+        '[the-password] Passing algorithm on constructor is now deprecated',
       )
     }
     const { algorithm = 'sha1' } = options

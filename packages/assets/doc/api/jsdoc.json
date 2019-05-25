@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/assets/lib"
+      "path": "lib"
     },
     "name": "@the-/assets",
     "order": 2,
     "typicalname": "assets",
-    "version": "15.4.3"
+    "version": "15.4.5"
   },
   {
     "async": true,
@@ -24,8 +24,8 @@
     "memberof": "module:@the-/assets.TheAssets",
     "meta": {
       "filename": "TheAssets.js",
-      "lineno": 19,
-      "path": "/Users/okuni/Projects/the/packages/assets/lib"
+      "lineno": 18,
+      "path": "lib"
     },
     "name": "installTo",
     "order": 4,
@@ -80,8 +80,8 @@
     "memberof": "module:@the-/assets",
     "meta": {
       "filename": "TheAssets.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/assets/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheAssets",
     "order": 3,
@@ -97,7 +97,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/assets/lib/helpers"
+      "path": "lib/helpers"
     },
     "name": "helpers",
     "order": 5,
@@ -111,8 +111,8 @@
     "memberof": "module:@the-/assets",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/assets/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -146,8 +146,8 @@
     "memberof": "module:@the-/assets",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/assets/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,
@@ -182,8 +182,8 @@
     "memberof": "module:@the-/assets.helpers",
     "meta": {
       "filename": "installFiles.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/assets/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "installFiles",
     "order": 6,

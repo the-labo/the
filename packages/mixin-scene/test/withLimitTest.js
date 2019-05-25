@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withLimit.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const withLimit = require('../lib/withLimit')
 

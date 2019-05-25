@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for setupPostgres.
  * Runs with mocha.
  */
-'use strict'
-
 describe('setup-postgres', () => {
   before(() => {})
 

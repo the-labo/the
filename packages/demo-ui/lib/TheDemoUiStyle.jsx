@@ -14,8 +14,8 @@ import { asStyleData } from '@the-/util-ui'
 /** @lends TheDemoUiStyle */
 const TheDemoUiStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-demo-ui-style', className)}
+    id={id}
     styles={TheDemoUiStyle.data(options)}
   />
 )
@@ -30,10 +30,9 @@ TheDemoUiStyle.defaultProps = {
   options: {},
 }
 
-TheDemoUiStyle.data = () => {
-  return asStyleData({
+TheDemoUiStyle.data = () =>
+  asStyleData({
     '.the-demo-ui': {},
   })
-}
 
 export default TheDemoUiStyle

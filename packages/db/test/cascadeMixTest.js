@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for cascadeMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('cascade-mix', () => {
   before(() => {})
 

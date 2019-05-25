@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for processFileEnd.
  * Runs with mocha.
  */
-'use strict'
-
 describe('process-file-end', () => {
   before(() => {})
 

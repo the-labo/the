@@ -23,9 +23,14 @@ class TheInputToggle extends React.PureComponent {
   static Radio({ checked, id, name, onChange, onClick, value }) {
     return (
       <input
-        type='radio'
-        {...{ checked, id, name, onChange, onClick, value }}
+        checked={checked}
         className='the-input-toggle-radio'
+        id={id}
+        name={name}
+        onChange={onChange}
+        onClick={onClick}
+        type='radio'
+        value={value}
       />
     )
   }
@@ -63,13 +68,13 @@ class TheInputToggle extends React.PureComponent {
       <div
         {...htmlAttributesFor(props, { except: ['id', 'className'] })}
         {...eventHandlersFor(props, { except: [] })}
-        {...{ id }}
         aria-checked={on}
         className={c('the-input-toggle', className, {
           'the-input-error': !!error,
           'the-input-toggle-off': !on,
           'the-input-toggle-on': on,
         })}
+        id={id}
         role='switch'
         style={Object.assign({}, style, { width })}
       >

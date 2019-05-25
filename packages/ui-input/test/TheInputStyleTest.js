@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheInputStyle.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheInputStyle = require('../shim/TheInputStyle').default

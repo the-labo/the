@@ -1,3 +1,4 @@
+'use strict'
 /**
  * withEntry mixin
  * @memberof module:@the-/mixin-scene
@@ -10,8 +11,6 @@
  * @inner
  * @class WithEntryMixed
  */
-'use strict'
-
 const { expand, flatten } = require('objnest')
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')

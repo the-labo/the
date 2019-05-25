@@ -1,10 +1,9 @@
+'use strict'
 /**
  * @memberof module:@the-/support
  * @class TheSupport
  * @param {string} pattern - Filename pattern
  */
-'use strict'
-
 const aglob = require('aglob')
 const { readFileAsync } = require('asfs')
 const path = require('path')
@@ -78,7 +77,7 @@ class TheSupport {
     const results = {}
     const filenames = await aglob(this.pattern)
     if (filenames.length === 0) {
-      console.warn(`[TheSupport] Not file found with pattern`, this.pattern)
+      console.warn('[TheSupport] Not file found with pattern', this.pattern)
       return results
     }
     for (const filename of filenames) {

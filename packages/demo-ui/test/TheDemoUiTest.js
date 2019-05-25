@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheDemoUi.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheDemoUi = require('../shim/TheDemoUi').default

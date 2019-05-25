@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Mixin of sequelize
  * @memberof module:@the-/driver-sequelize.mixins
  * @function sequelizeMix
  */
-'use strict'
-
 const Sequelize = require('sequelize')
 
 /** @lends module:@the-/driver-sequelize.mixins.sequelizeMix */

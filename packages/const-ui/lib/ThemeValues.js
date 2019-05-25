@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Style theme values
  * @memberof module:@the-/const-ui
  * @namespace {string} ThemeValues
  */
-'use strict'
-
 const ThemeValues = Object.freeze(
   /** @lends module:@the-/const-ui.ThemeValues */
   {

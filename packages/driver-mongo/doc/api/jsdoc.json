@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib"
+      "path": "lib"
     },
     "name": "@the-/driver-mongo",
     "order": 1,
     "typicalname": "driverMongo",
-    "version": "15.4.4"
+    "version": "15.4.5"
   },
   {
     "description": "Driver for mongo db",
@@ -35,8 +35,8 @@
     "memberof": "module:@the-/driver-mongo",
     "meta": {
       "filename": "MongoDriver.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "MongoDriver",
     "order": 2,
@@ -51,7 +51,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "mixins",
     "order": 4,
@@ -65,8 +65,8 @@
     "memberof": "module:@the-/driver-mongo",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -100,8 +100,8 @@
     "memberof": "module:@the-/driver-mongo.mixins",
     "meta": {
       "filename": "mongoMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/driver-mongo/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "mongoMix",
     "order": 5,

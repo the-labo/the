@@ -1,5 +1,4 @@
 'use strict'
-
 const { TheJitter } = require('@the-/jitter')
 
 async function tryExample() {

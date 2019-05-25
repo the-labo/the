@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for colorWithText.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const colorWithText = require('../lib/colorWithText')
 

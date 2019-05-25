@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheLoc.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepEqual, doesNotThrow, equal, ok } = require('assert').strict
 const TheLoc = require('../lib/TheLoc')
 

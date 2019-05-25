@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a MongoDriver instance
  * @memberof module:@the-/driver-mongo
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {MongoDriver}
  */
-'use strict'
-
 const MongoDriver = require('./MongoDriver')
 
 /** @lends module:@the-/driver-mongo.create */

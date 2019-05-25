@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheHamburger.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheHamburger = require('../shim/TheHamburger').default

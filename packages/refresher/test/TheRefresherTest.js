@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheRefresher.
  * Runs with mocha.
  */
-'use strict'
-
 const asleep = require('asleep')
 const { ok } = require('assert').strict
 const TheRefresher = require('../lib/TheRefresher')

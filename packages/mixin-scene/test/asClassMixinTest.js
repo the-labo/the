@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for asClassMixin.
  * Runs with mocha.
  */
-'use strict'
-
 describe('as-class-mixin', () => {
   before(() => {})
 

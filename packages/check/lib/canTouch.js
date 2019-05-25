@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Check touch supported
  * @memberof module:@the-/check
  * @function canTouch
  * @returns {boolean}
  */
-'use strict'
-
 /** @lends module:@the-/check.canTouch */
 function canTouch() {
   if (typeof document === 'undefined') {

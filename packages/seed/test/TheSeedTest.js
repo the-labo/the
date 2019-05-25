@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheSeed.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const TheSeed = require('../lib/TheSeed')
 

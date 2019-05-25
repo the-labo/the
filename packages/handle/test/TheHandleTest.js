@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheHandle.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const { TheScene } = require('@the-/scene')
 const TheHandle = require('../lib/TheHandle')
@@ -27,7 +26,7 @@ describe('the-handle', () => {
       }
 
       hey() {
-        return this.l() + 'hey'
+        return `${this.l()}hey`
       }
     }
 
@@ -61,7 +60,7 @@ describe('the-handle', () => {
 
   it('init all', () => {
     const handle = new TheHandle({})
-    let initialized = {}
+    const initialized = {}
 
     class MyScene extends TheScene {
       get scope() {

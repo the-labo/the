@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Read file  : data url
  * @memberof module:@the-/util-ui
@@ -6,8 +7,6 @@
  * @param {File} - File to read
  * @returns {Promise<string>} Data url
  */
-'use strict'
-
 const { get } = require('bwindow')
 
 /** @lends module:@the-/util-ui.readFileAsDataURL */

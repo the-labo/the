@@ -1,10 +1,9 @@
+'use strict'
 /**
  * @memberof module:@the-/metrics
  * @class TheMetrics
  * @param {Object} [options={}] - Optional settings
  */
-'use strict'
-
 const { MethodCallCounter } = require('./counters')
 
 /** @lends module:@the-/metrics.TheMetrics */

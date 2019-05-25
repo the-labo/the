@@ -1,9 +1,8 @@
 #!/usr/bin/env node
+'use strict'
 
 /**
  * @file Generate doc for package
  */
-'use strict'
-
 const test = require('@the-/script-test')
 test()

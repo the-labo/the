@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for parseAttributeName.
  * Runs with mocha.
  */
-'use strict'
-
 describe('parse-attribute-name', () => {
   before(() => {})
 

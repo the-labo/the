@@ -9,8 +9,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheRepeatable */
 const TheRepeatableStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-repeatable-style', className)}
+    id={id}
     styles={TheRepeatableStyle.data(options)}
   />
 )
@@ -25,8 +25,8 @@ TheRepeatableStyle.defaultProps = {
   options: {},
 }
 
-TheRepeatableStyle.data = () => {
-  return asStyleData({
+TheRepeatableStyle.data = () =>
+  asStyleData({
     '.the-repeatable': {
       minHeight: '84px',
       position: 'relative',
@@ -64,6 +64,5 @@ TheRepeatableStyle.data = () => {
       },
     },
   })
-}
 
 export default TheRepeatableStyle

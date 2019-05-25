@@ -1,5 +1,4 @@
 'use strict'
-
 const { withDebug } = require('@the-/mixin-stream')
 const { TheStream } = require('@the-/stream')
 

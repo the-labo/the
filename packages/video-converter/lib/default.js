@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/video-converter.create}
  * @memberof module:@the-/video-converter
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const TheVideoConverter = require('./TheVideoConverter')
 

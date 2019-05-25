@@ -1,8 +1,7 @@
+'use strict'
 /**
  * Test case for index
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const index = require('../index')
 

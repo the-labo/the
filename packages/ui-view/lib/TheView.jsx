@@ -100,8 +100,11 @@ class TheView extends React.Component {
     return (
       <TheButton
         className='the-view-header-button'
+        icon={icon}
+        onClick={onClick}
         simple
-        {...{ icon, onClick, text, to }}
+        text={text}
+        to={to}
       />
     )
   }

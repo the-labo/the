@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/context/lib"
+      "path": "lib"
     },
     "name": "@the-/context",
     "order": 2,
     "typicalname": "context",
-    "version": "15.4.3"
+    "version": "15.4.5"
   },
   {
     "description": "Context",
@@ -62,8 +62,8 @@
     "memberof": "@the-/context.TheContext",
     "meta": {
       "filename": "TheContext.js",
-      "lineno": 32,
-      "path": "/Users/okuni/Projects/the/packages/context/lib"
+      "lineno": 31,
+      "path": "lib"
     },
     "name": "del",
     "order": 5,
@@ -87,8 +87,8 @@
     "memberof": "@the-/context.TheContext",
     "meta": {
       "filename": "TheContext.js",
-      "lineno": 42,
-      "path": "/Users/okuni/Projects/the/packages/context/lib"
+      "lineno": 41,
+      "path": "lib"
     },
     "name": "get",
     "order": 6,
@@ -132,8 +132,8 @@
     "memberof": "@the-/context.TheContext",
     "meta": {
       "filename": "TheContext.js",
-      "lineno": 50,
-      "path": "/Users/okuni/Projects/the/packages/context/lib"
+      "lineno": 49,
+      "path": "lib"
     },
     "name": "set",
     "order": 7,
@@ -157,8 +157,8 @@
     "memberof": "@the-/context",
     "meta": {
       "filename": "TheContext.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/context/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheContext",
     "order": 3,
@@ -171,8 +171,8 @@
     "memberof": "module:@the-/context.helpers",
     "meta": {
       "filename": "contextEntryFor.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/context/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "ContextEntry",
     "order": 8,
@@ -188,7 +188,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/context/lib/helpers"
+      "path": "lib/helpers"
     },
     "name": "helpers",
     "order": 11,
@@ -202,8 +202,8 @@
     "memberof": "module:@the-/context",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/context/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -237,8 +237,8 @@
     "memberof": "module:@the-/context",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/context/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,
@@ -252,8 +252,8 @@
     "memberof": "module:@the-/context.helpers",
     "meta": {
       "filename": "contextRootFor.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/context/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "ContextRootFor",
     "order": 10,

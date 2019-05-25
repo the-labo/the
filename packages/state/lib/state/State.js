@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Abstract state
  * @memberof module:@the-/state.state
  * @abstract
  * @class State
  */
-'use strict'
-
 const theAssert = require('@the-/assert')
 const assert = theAssert('TheState')
 
@@ -46,7 +45,7 @@ class State {
    * @returns {*}
    */
   get(name) {
-    assert(!!name, `[TheState] name is required]`)
+    assert(!!name, '[TheState] name is required]')
     return this.$$state[name]
   }
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for buildShim.
  * Runs with mocha.
  */
-'use strict'
-
 describe('build-shim', () => {
   before(() => {})
 

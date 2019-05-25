@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Create Style element
  * @memberof module:@the-/entrypoint.helpers
  * @function createStyleElement
  * @returns {HTMLElement}
  */
-'use strict'
-
 const { get } = require('@the-/window')
 
 /** @lends module:@the-/entrypoint.helpers.createStyleElement */

@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Detect chrome or not
  * @memberof module:@the-/check
  * @function isChrome
  * @returns {boolean}
  */
-'use strict'
-
 const Bowser = require('bowser')
 const getUserAgent = require('./helpers/getUserAgent')
 

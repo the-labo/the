@@ -9,8 +9,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheCondition */
 const TheConditionStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-condition-style', className)}
+    id={id}
     styles={TheConditionStyle.data(options)}
   />
 )
@@ -25,10 +25,9 @@ TheConditionStyle.defaultProps = {
   options: {},
 }
 
-TheConditionStyle.data = () => {
-  return asStyleData('.the-condition', {
+TheConditionStyle.data = () =>
+  asStyleData('.the-condition', {
     '&': {},
   })
-}
 
 export default TheConditionStyle

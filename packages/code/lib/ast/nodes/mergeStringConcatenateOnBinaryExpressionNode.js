@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function mergeStringConcatenateOnBinaryExpressionNode
  */
-'use strict'
-
 /** @lends module:@the-/code.ast.nodes.mergeStringConcatenateOnBinaryExpressionNode */
 function mergeStringConcatenateOnBinaryExpressionNode(
   BinaryExpression,

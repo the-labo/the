@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for findup.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const findup = require('../lib/findup')
 

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheSetting instance
  * @memberof module:@the-/setting
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {TheSetting}
  */
-'use strict'
-
 const TheSetting = require('./TheSetting')
 
 /** @lends create */

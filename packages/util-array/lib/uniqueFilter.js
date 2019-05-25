@@ -1,3 +1,4 @@
+'use strict'
 /**
  * defineUniqueFilter
  * @memberof module:@the-/util-array
@@ -8,8 +9,6 @@
  * @example
  *  ['a', 'b', 'a'].filter(uniqueFilter())
  */
-'use strict'
-
 /** @lends module:@the-/util-array.uniqueFilter */
 function uniqueFilter(options = {}) {
   if (arguments.length > 1) {

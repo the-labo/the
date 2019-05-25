@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Process require statement
  * @memberof module:@the-/code.processors
@@ -5,8 +6,6 @@
  * @param {string} content
  * @returns {string} processed
  */
-'use strict'
-
 const path = require('path')
 const {
   constants: { NodeTypes },
@@ -35,7 +34,7 @@ function processJSRequire(content, options = {}) {
   const requireArg = (d) => {
     const declaration = d.declarations && d.declarations[0]
     const call = declaration.init.object || declaration.init
-    const args = call && call['arguments']
+    const args = call && call.arguments
     return args && args[0]
   }
 
@@ -44,119 +43,126 @@ function processJSRequire(content, options = {}) {
     return value
   }
 
-  return applyConverter(content, (content) => {
-    const parsed = parse(content, options)
-    const { get, rangeOf, replace, swap } = contentAccess(content)
+  return applyConverter(
+    content,
+    (content) => {
+      const parsed = parse(content, options)
+      const { get, rangeOf, replace, swap } = contentAccess(content)
 
-    const RequireDeclarations = findRequireDeclarationOnProgramNode(
-      parsed.program,
-    ).filter((Declaration) => {
-      return Declaration.loc.start.column === 0 // Only top level
-    })
-
-    for (const RequireDeclaration of RequireDeclarations) {
-      const converted = modifyNodeDeprecatedOnRequireDeclaration(
-        RequireDeclaration,
-        {
-          get,
-          replace,
-        },
+      const RequireDeclarations = findRequireDeclarationOnProgramNode(
+        parsed.program,
+      ).filter(
+        (Declaration) => Declaration.loc.start.column === 0, // Only top level
       )
-      if (converted) {
-        return converted
-      }
-    }
 
-    const sortedByStart = [...RequireDeclarations].sort(
-      (a, b) => a.start - b.start,
-    )
-    const sortedByName = [...RequireDeclarations].sort((a, b) => {
-      const aName = requiredName(a)
-      const bName = requiredName(b)
-      const aWeight = weightModuleName(aName)
-      const bWeight = weightModuleName(bName)
-      if (aWeight !== bWeight) {
-        return aWeight - bWeight
-      }
-      return aName.localeCompare(bName)
-    })
-    for (let i = 0; i < sortedByStart.length; i++) {
-      const byStart = sortedByStart[i]
-      const byName = sortedByName[i]
-      if (byStart.start !== byName.start) {
-        return swap(rangeOf(byStart), rangeOf(byName))
-      }
-    }
-
-    // No empty line between require statements
-    for (let i = 0; i < sortedByStart.length - 1; i++) {
-      const start = sortedByStart[i].end
-      const end = sortedByStart[i + 1].start - 1
-      if (/^\s+$/.test(content.substring(start, end))) {
-        return replace([start, end], '')
-      }
-    }
-
-    const startsForRequire = RequireDeclarations.map(({ start }) => start)
-    const minStartForRequire = Math.min(...startsForRequire)
-
-    const OtherDeclarations = finder
-      .findByTypes(parsed, [
-        NodeTypes.FunctionDeclaration,
-        NodeTypes.VariableDeclaration,
-      ])
-      .filter(({ start }) => !startsForRequire.includes(start))
-      .filter(({ start }) => start > minStartForRequire)
-
-    for (const Declaration of OtherDeclarations.sort(
-      (a, b) => b.start - a.start,
-    )) {
-      const Require = sortedByStart[sortedByStart.length - 1]
-      if (Require && Declaration.start < Require.start) {
-        return swap(
-          [Declaration.start, Declaration.end],
-          [Require.start, Require.end],
-        )
-      }
-    }
-
-    if (filename) {
-      const dirname = path.dirname(filename)
-      const extToRemove = /\.js$|\.json$/
       for (const RequireDeclaration of RequireDeclarations) {
-        const ArgumentNode = requireArg(RequireDeclaration)
-        if (!ArgumentNode) {
-          continue
-        }
-        if (ArgumentNode.type !== 'StringLiteral') {
-          continue
-        }
-        const value = ArgumentNode.value
-        if (!isRelative(value)) {
-          continue
-        }
-        const extRemoved = cleanupExtOnRequireDeclarationArgumentNode(
-          ArgumentNode,
+        const converted = modifyNodeDeprecatedOnRequireDeclaration(
+          RequireDeclaration,
           {
-            extToRemove,
+            get,
             replace,
           },
         )
-        if (extRemoved) {
-          return extRemoved
-        }
-
-        const normalized = normalizeSrcPathOnRequireArgumentNode(ArgumentNode, {
-          dirname,
-          replace,
-        })
-        if (normalized) {
-          return normalized
+        if (converted) {
+          return converted
         }
       }
-    }
-    return content
-  })
+
+      const sortedByStart = [...RequireDeclarations].sort(
+        (a, b) => a.start - b.start,
+      )
+      const sortedByName = [...RequireDeclarations].sort((a, b) => {
+        const aName = requiredName(a)
+        const bName = requiredName(b)
+        const aWeight = weightModuleName(aName)
+        const bWeight = weightModuleName(bName)
+        if (aWeight !== bWeight) {
+          return aWeight - bWeight
+        }
+        return aName.localeCompare(bName)
+      })
+      for (let i = 0; i < sortedByStart.length; i++) {
+        const byStart = sortedByStart[i]
+        const byName = sortedByName[i]
+        if (byStart.start !== byName.start) {
+          return swap(rangeOf(byStart), rangeOf(byName))
+        }
+      }
+
+      // No empty line between require statements
+      for (let i = 0; i < sortedByStart.length - 1; i++) {
+        const start = sortedByStart[i].end
+        const end = sortedByStart[i + 1].start - 1
+        if (/^\s+$/.test(content.substring(start, end))) {
+          return replace([start, end], '')
+        }
+      }
+
+      const startsForRequire = RequireDeclarations.map(({ start }) => start)
+      const minStartForRequire = Math.min(...startsForRequire)
+
+      const OtherDeclarations = finder
+        .findByTypes(parsed, [
+          NodeTypes.FunctionDeclaration,
+          NodeTypes.VariableDeclaration,
+        ])
+        .filter(({ start }) => !startsForRequire.includes(start))
+        .filter(({ start }) => start > minStartForRequire)
+
+      for (const Declaration of OtherDeclarations.sort(
+        (a, b) => b.start - a.start,
+      )) {
+        const Require = sortedByStart[sortedByStart.length - 1]
+        if (Require && Declaration.start < Require.start) {
+          return swap(
+            [Declaration.start, Declaration.end],
+            [Require.start, Require.end],
+          )
+        }
+      }
+
+      if (filename) {
+        const dirname = path.dirname(filename)
+        const extToRemove = /\.js$|\.json$/
+        for (const RequireDeclaration of RequireDeclarations) {
+          const ArgumentNode = requireArg(RequireDeclaration)
+          if (!ArgumentNode) {
+            continue
+          }
+          if (ArgumentNode.type !== 'StringLiteral') {
+            continue
+          }
+          const { value } = ArgumentNode
+          if (!isRelative(value)) {
+            continue
+          }
+          const extRemoved = cleanupExtOnRequireDeclarationArgumentNode(
+            ArgumentNode,
+            {
+              extToRemove,
+              replace,
+            },
+          )
+          if (extRemoved) {
+            return extRemoved
+          }
+
+          const normalized = normalizeSrcPathOnRequireArgumentNode(
+            ArgumentNode,
+            {
+              dirname,
+              replace,
+            },
+          )
+          if (normalized) {
+            return normalized
+          }
+        }
+      }
+      return content
+    },
+    { name: 'processJSRequire' },
+  )
 }
 
 module.exports = processJSRequire

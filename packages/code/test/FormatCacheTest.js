@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for FormatCache.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const FormatCache = require('../lib/helpers/FormatCache')
 
@@ -13,7 +12,7 @@ describe('format-cache', () => {
   after(() => {})
 
   it('Do test', async () => {
-    let filename = `${__dirname}/../tmp/cache/testing-cache.json`
+    const filename = `${__dirname}/../tmp/cache/testing-cache.json`
     const cache = new FormatCache(filename)
     await cache.set('a', 1)
     await cache.flush()

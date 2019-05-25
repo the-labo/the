@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for bindDefaults.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const bindDefaults = require('../lib/bindDefaults')
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/mail.sending
  * @function sendSMTP
  */
-'use strict'
-
 const nodemailer = require('nodemailer')
 const handleUnknownOptions = require('../helpers/handleUnknownOptions')
 

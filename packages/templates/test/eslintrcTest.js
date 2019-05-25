@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for eslintrc.
  * Runs with mocha.
  */
-'use strict'
-
 const coz = require('coz')
 const eslintrc = require('../lib/eslintrc')
 

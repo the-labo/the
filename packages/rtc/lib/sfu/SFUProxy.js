@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Webrtc proxy connections
  * @class SFUProxy
  */
-'use strict'
-
 const SFUProxyEdgeAnswerer = require('./SFUProxyEdgeAnswerer')
 const SFUProxyEdgeOfferer = require('./SFUProxyEdgeOfferer')
 
@@ -11,7 +10,7 @@ class SFUProxy {
   constructor(config = {}) {
     const { answerer, iceServers, offerer, pid, purpose, signaling } = config
     if (!iceServers) {
-      console.warn(`[SFUProxy] iceServers is empty`)
+      console.warn('[SFUProxy] iceServers is empty')
     }
     const answererEdge = new SFUProxyEdgeAnswerer({
       iceServers,

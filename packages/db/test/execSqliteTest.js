@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for execSqlite.
  * Runs with mocha.
  */
-'use strict'
-
 describe('exec-sqlite', () => {
   before(() => {})
 

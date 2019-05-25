@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for processJSRequire.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const processJSRequire = require('../lib/processors/processJSRequire')
 
@@ -76,19 +75,19 @@ const pkg = require('./package.json')
 
   it('Normalize path', async () => {
     equal(
-      await processJSRequire(`const x = require('../b/x')`, {
+      await processJSRequire("const x = require('../b/x')", {
         filename: '/a/b/c.js',
       }),
-      `const x = require('./x')`,
+      "const x = require('./x')",
     )
   })
 
   it('Remove ext path', async () => {
     equal(
-      await processJSRequire(`const x = require('../b/x.js')`, {
+      await processJSRequire("const x = require('../b/x.js')", {
         filename: '/a/b/c.js',
       }),
-      `const x = require('./x')`,
+      "const x = require('./x')",
     )
   })
 

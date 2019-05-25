@@ -12,8 +12,6 @@
  * @param {Object} [options={}]
  * @returns {function()} Task function
  */
-'use strict'
-
 const theJSDoc = require('./lib/create')
 
 /** @lends module:@the-/jsdoc/pon.jsdoc */

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for colorWithAlpha.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const colorWithAlpha = require('../lib/colorWithAlpha')
 

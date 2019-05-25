@@ -103,13 +103,15 @@ class TheImage extends React.Component {
             )}
 
             <img
+              alt={alt}
               className={c('the-image-img', {
                 'the-image-img-failed': failed,
               })}
-              {...{ alt, draggable, src }}
+              draggable={draggable}
               height={actualHeight || height}
               onError={this.handleError}
               onLoad={this.handleLoad}
+              src={src}
               width={actualWidth || width}
             />
             {children}

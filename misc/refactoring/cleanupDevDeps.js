@@ -35,7 +35,7 @@ const { writeAsJson } = require('@the-/util-file')
           subPkgFile,
         )} ...`,
       )
-      spawnSync(`npm`, ['un', ...devDependenciesToRemove, '-D'], {
+      spawnSync('npm', ['un', ...devDependenciesToRemove, '-D'], {
         cwd: path.dirname(subPkgFile),
         stdio: 'inherit',
       })

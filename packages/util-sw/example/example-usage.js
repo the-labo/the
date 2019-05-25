@@ -1,5 +1,4 @@
 'use strict'
-
 const { appCache, cachingFetch } = require('@the-/util-sw')
 
 async function tryExample() {

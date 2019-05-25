@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheToastStyle.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheToastStyle = require('../shim/TheToastStyle').default

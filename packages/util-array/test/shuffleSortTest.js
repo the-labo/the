@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for shuffleSort.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const shuffleSort = require('../lib/shuffleSort')
 

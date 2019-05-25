@@ -1,3 +1,4 @@
+'use strict'
 /**
  * As pon task
  * @module @the-/code/pon
@@ -10,8 +11,6 @@
  * @param {Object} [options={}]
  * @returns {function()} Task function
  */
-'use strict'
-
 const path = require('path')
 const theCode = require('./lib/create')
 

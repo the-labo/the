@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Abstract state class
  * @memberof module:@the-/scope
@@ -6,8 +7,6 @@
  * @param {string} name - Name of state
  * @param {Object} config - TheScope config
  */
-'use strict'
-
 const {
   ArrayScope,
   BooleanScope,

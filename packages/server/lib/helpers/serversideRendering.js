@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Define koa middleware function to do serverside rendering
  * @memberof module:@the-/server.helpers
@@ -6,8 +7,6 @@
  * @param {Object} [options={}] - Optional settings
  * @returns {function()} Koa middleware function
  */
-'use strict'
-
 const adigest = require('adigest')
 const { mkdirpAsync, readFileAsync, writeFileAsync } = require('asfs')
 const path = require('path')

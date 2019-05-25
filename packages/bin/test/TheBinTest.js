@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheBin.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const TheBin = require('../lib/TheBin')
 
@@ -19,7 +18,7 @@ describe('the-bin', () => {
     ok(await ls.exists())
     await ls.exec('-l')
 
-    const invalid = new TheBin(`__some_invalid_cmd_`)
+    const invalid = new TheBin('__some_invalid_cmd_')
     ok(!(await invalid.exists()))
   })
 

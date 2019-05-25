@@ -1,5 +1,4 @@
 'use strict'
-
 const thePS = require('@the-/ps').default
 
 async function tryExample() {

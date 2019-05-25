@@ -1,8 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/mail.sending
  * @function sendMock
  */
-'use strict'
 const handleUnknownOptions = require('../helpers/handleUnknownOptions')
 
 const BAR = '=========================='

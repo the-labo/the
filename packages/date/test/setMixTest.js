@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for setMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('set-mix', () => {
   before(() => {})
 

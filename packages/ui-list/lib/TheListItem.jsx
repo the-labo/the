@@ -106,8 +106,8 @@ class TheListItem extends React.Component {
             </Col>
           )}
           <Col wide>
-            {title && <Title {...{ title }} />}
-            {subTitle && <SubTitle {...{ subTitle }} />}
+            {title && <Title title={title} />}
+            {subTitle && <SubTitle subTitle={subTitle} />}
             {children}
           </Col>
           {appendix && <Col>{appendix}</Col>}

@@ -1,11 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/client.mixins
  * @function streamMix
  * @param {function()}
  * @returns {function()}
  */
-'use strict'
-
 const asleep = require('asleep')
 const uuid = require('uuid')
 const { unlessProduction } = require('@the-/check')
@@ -68,7 +67,7 @@ class RemoteStream extends TheStream {
     this.fireRemoteEvent(IOEvents.STREAM_CLOSE, {})
     await new Promise((resolve, reject) => {
       const timeoutTimer = setTimeout(() => {
-        reject(new Error(`[TheClient] Stream close timeout`))
+        reject(new Error('[TheClient] Stream close timeout'))
       }, this.tmieout)
       this.listenToRemoteEvent(IOEvents.STREAM_DID_CLOSE, () => {
         clearTimeout(timeoutTimer)
@@ -124,7 +123,7 @@ class RemoteStream extends TheStream {
     })
     await new Promise((resolve, reject) => {
       const timeoutTimer = setTimeout(() => {
-        reject(new Error(`[TheClient] Stream open timeout`))
+        reject(new Error('[TheClient] Stream open timeout'))
       }, this.tmieout)
       this.listenToRemoteEvent(IOEvents.STREAM_DID_OPEN, () => {
         clearTimeout(timeoutTimer)

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Handle event once on document
  * @memberof module:@the-/window
@@ -5,8 +6,6 @@
  * @param {string} event - Name of event
  * @param {function()} handler - Event handler
  */
-'use strict'
-
 const get = require('./get')
 const debug = require('debug')('the:window:once')
 

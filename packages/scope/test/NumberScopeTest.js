@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for NumberScope.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const { TheStore } = require('@the-/store')
 const NumberScope = require('../lib/scopes/NumberScope')

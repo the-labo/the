@@ -1,5 +1,4 @@
 'use strict'
-
 const { equal, ok } = require('assert').strict
 const { unlessProduction } = require('@the-/check')
 

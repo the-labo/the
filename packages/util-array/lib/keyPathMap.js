@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Map entries with key path
  * @memberof module:@the-/util-array
@@ -8,8 +9,6 @@
  * @example
  *  [{foo:{bar:10}}, {foo:{bar:20}}].map(keyPathMap('foo.bar'))
  */
-'use strict'
-
 /** @lends module:@the-/util-array.keyPathMap */
 function keyPathMap(keyPath = '', options = {}) {
   if (arguments.length > 2) {

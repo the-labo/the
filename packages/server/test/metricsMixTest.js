@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for metricsMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('metrics-mix', () => {
   before(() => {})
 

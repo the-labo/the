@@ -33,7 +33,7 @@ ${msg}
       spawnSync('git', ['add', '.'], { cwd: fromDir })
       spawnSync('git', ['commit', '-m', 'Deprecate'], { cwd: fromDir })
       spawnSync('git', ['push'], { cwd: fromDir })
-      spawnSync(`npm`, ['deprecate', path.basename(fromDir), msg], {
+      spawnSync('npm', ['deprecate', path.basename(fromDir), msg], {
         cwd: fromDir,
       })
     }

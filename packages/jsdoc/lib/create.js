@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a JSDoc instance
  * @memberof module:@the-/jsdoc
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {JSDoc}
  */
-'use strict'
-
 const JSDoc = require('./JSDoc')
 
 /** @lends module:@the-/jsdoc.create */

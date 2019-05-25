@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Convert into store scope class
  * @memberof module:@the-/store
@@ -5,8 +6,6 @@
  * @param {Function} BaseClass
  * @returns {Function}
  */
-'use strict'
-
 /** @lends module:@the-/store.toStoreScopeClass */
 function toStoreScopeClass(BaseClass, config = {}) {
   const { dispatch, initialState, load, name, reducerFactories } = config

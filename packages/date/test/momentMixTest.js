@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for momentMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('moment-mix', () => {
   before(() => {})
 

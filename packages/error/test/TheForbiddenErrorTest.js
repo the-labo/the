@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheForbiddenError.
  * Runs with mocha.
  */
-'use strict'
-
 describe('the-forbidden-error', () => {
   before(() => {})
 

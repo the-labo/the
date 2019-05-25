@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/assert.create}
  * @memberof module:@the-/assert
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {module:@the-/assert.TheAssert.TheAssert}
  */
-'use strict'
-
 const create = require('./create')
 const TheAssert = require('./TheAssert')
 

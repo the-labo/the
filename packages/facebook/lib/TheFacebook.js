@@ -1,8 +1,7 @@
+'use strict'
 /**
  * @class TheFacebook
  */
-'use strict'
-
 const abind = require('abind')
 const arequest = require('arequest')
 const qs = require('qs')

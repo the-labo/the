@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Stream
  * @memberof module:@the-/templates
@@ -5,8 +6,6 @@
  * @param {Object} config
  * @returns {Object}
  */
-'use strict'
-
 const assert = require('assert')
 const path = require('path')
 const _tmpl = require('./_tmpl')
@@ -22,7 +21,7 @@ function Stream(config) {
   return {
     data: {
       memberof,
-      name: path.basename(name) + 'Stream',
+      name: `${path.basename(name)}Stream`,
     },
     force: false,
     mode: '644',

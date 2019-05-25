@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Define bud for eslintrc
  * @memberof module:@the-/templates
@@ -5,13 +6,11 @@
  * @param {Object} config
  * @returns {Object}
  */
-'use strict'
-
 const _tmpl = require('./_tmpl')
 
 /** @lends module:@the-/templates.eslintrc */
 function eslintrc(config = {}) {
-  const { jsdoc = true, prettier = true, standard = true } = config
+  const { code = true, jsdoc = true, prettier = true, standard = true } = config
   return {
     data: {
       extends: [
@@ -19,11 +18,12 @@ function eslintrc(config = {}) {
         standard && '@the-/eslint-config-standard-jsx',
         prettier && '@the-/eslint-config-prettier',
         jsdoc && '@the-/eslint-config-jsdoc',
+        code && '@the-/eslint-config-code',
       ].filter(Boolean),
     },
     force: true,
     mode: '444',
-    path: `.eslintrc.yml`,
+    path: '.eslintrc.yml',
     tmpl: _tmpl('eslintrc.hbs'),
   }
 }

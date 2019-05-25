@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Process export statement
  * @memberof module:@the-/code.processors
@@ -5,15 +6,11 @@
  * @param {string} content
  * @returns {string} processed
  */
-'use strict'
-
 const applyConverter = require('../helpers/applyConverter')
 
 /** @lends module:@the-/code.processors.processJSExport */
 function processJSExport(content, options = {}) {
-  return applyConverter(content, (content) => {
-    return content
-  })
+  return applyConverter(content, (content) => content)
 }
 
 module.exports = processJSExport

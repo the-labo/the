@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheInputPinCode.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheInputPinCode = require('../shim/TheInputPinCode').default

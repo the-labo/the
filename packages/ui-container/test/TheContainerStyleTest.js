@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheContainerStyle.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheContainerStyle = require('../shim/TheContainerStyle').default

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for keyPathMap.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepEqual } = require('assert').strict
 const keyPathMap = require('../lib/keyPathMap')
 

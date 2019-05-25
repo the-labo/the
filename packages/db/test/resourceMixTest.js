@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for resourceMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('resource-mix', () => {
   before(() => {})
 

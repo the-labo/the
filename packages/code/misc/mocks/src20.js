@@ -126,7 +126,8 @@ module.exports = pon(
     deploy: deploy({
       host: '13.73.30.218',
       privateKey: '/tmp/deploy_rsa',
-      projectPath: `/home/daisan/apps/dev.drone-scope.realglobe.work/drone-scope`,
+      projectPath:
+        '/home/daisan/apps/dev.drone-scope.realglobe.work/drone-scope',
       targetBranch: 'latest',
       username: 'daisan',
     }),
@@ -227,7 +228,7 @@ module.exports = pon(
       /** Prepare database for production */
       'prod:db': ['env:prod', 'db'],
       /** Compile js files for production */
-      'prod:js': ccjs.dir(`public/build`, `public${Urls.PROD_ASSET_URL}`, {}),
+      'prod:js': ccjs.dir('public/build', `public${Urls.PROD_ASSET_URL}`, {}),
       /** Delete source map files for production */
       'prod:map': del('public/**/*.map'),
     },
@@ -237,8 +238,8 @@ module.exports = pon(
     'struct:compile': [es('conf', 'shim/conf')],
     'struct:cp': cp(
       {
-        [`${assets.IMAGE_DIR}/leaflet`]: 'public/images/leaflet',
         [`${assets.IMAGE_DIR}/icons`]: 'public/images/icons',
+        [`${assets.IMAGE_DIR}/leaflet`]: 'public/images/leaflet',
         [`${assets.IMAGE_DIR}/logos`]: 'public/images/logos',
         'assets/css': 'public/css',
         'assets/html/errors': 'public/errors',
@@ -263,7 +264,7 @@ module.exports = pon(
           {
             bundle: 'ui/entrypoint.js',
           },
-          `public/build/[name].js`,
+          'public/build/[name].js',
           {
             context: `${__dirname}/client/shim`,
             env: BrowserEnv,
@@ -302,7 +303,7 @@ module.exports = pon(
     }),
     'ui:workers': env.dynamic(
       () =>
-        browser.all('workers', `public`, {
+        browser.all('workers', 'public', {
           context: `${__dirname}/client/shim`,
           env: BrowserEnv,
         }),

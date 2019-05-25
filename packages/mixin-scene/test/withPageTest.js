@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withPage.
  * Runs with mocha.
  */
-'use strict'
-
 describe('with-page', () => {
   before(() => {})
 

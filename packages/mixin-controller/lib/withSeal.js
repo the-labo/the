@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Wrap controller with seal
  * @function withSeal
  */
-'use strict'
-
 const { TheInvalidParameterError } = require('@the-/error')
 
 /** @lends withSeal */
@@ -13,7 +12,7 @@ function withSeal(Class) {
       const { seal } = this.app
       const ok = seal.verify(sealString, envelop)
       if (!ok) {
-        throw new TheInvalidParameterError(`Invalid parameter`, envelop)
+        throw new TheInvalidParameterError('Invalid parameter', envelop)
       }
     }
 

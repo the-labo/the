@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Mixin for io
  * @memberof module:@the-/rtc.mixins
@@ -5,8 +6,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-'use strict'
-
 const { IOEvents } = require('../constants')
 const { handleUnknownKeys } = require('../helpers')
 const NAMESPACE = '/rtc'

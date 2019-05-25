@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create "usageRule" lint.
  * This rule makes sure target files is used in somewhere
@@ -7,8 +8,6 @@
  * @param {string} config.usedIn - Files that may use the module
  * @returns {function()} Lint function
  */
-'use strict'
-
 const aglob = require('aglob')
 const { readFileAsync } = require('asfs')
 const { flatten } = require('objnest')
@@ -33,7 +32,7 @@ function usageRule(config) {
     ...rest
   } = config
   if (Object.keys(rest).length > 0) {
-    console.warn(`[usageRule] Unknown options`, Object.keys(rest))
+    console.warn('[usageRule] Unknown options', Object.keys(rest))
   }
 
   return async function usageRuleCheck({ content, filename, report }) {

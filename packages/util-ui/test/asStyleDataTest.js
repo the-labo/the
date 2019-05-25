@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for asStyleData.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepEqual, ok } = require('assert').strict
 const asStyleData = require('../lib/asStyleData')
 
@@ -38,7 +37,7 @@ describe('as-style-data', () => {
   })
 
   it('More complex data', () => {
-    let data = asStyleData('.the-button-group', {
+    const data = asStyleData('.the-button-group', {
       '&': {
         alignItems: 'center',
         display: 'flex',

@@ -9,8 +9,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheBar */
 const TheBarStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={classnames('the-bar-style', className)}
+    id={id}
     styles={TheBarStyle.data(options)}
   />
 )
@@ -25,8 +25,8 @@ TheBarStyle.defaultProps = {
   options: {},
 }
 
-TheBarStyle.data = () => {
-  return Object.assign(
+TheBarStyle.data = () =>
+  Object.assign(
     {},
     ...[
       asStyleData({
@@ -65,6 +65,5 @@ TheBarStyle.data = () => {
       }),
     ],
   )
-}
 
 export default TheBarStyle

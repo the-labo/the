@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Resolve value in a scope
  * @function resolveInScope
@@ -6,8 +7,6 @@
  * @private
  * @memberOf module:@the-/loc.helpers
  */
-'use strict'
-
 /** @lends resolveInScope */
 function resolveInScope(scope, keypath) {
   let data = scope

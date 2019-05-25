@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for ThePassword.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const ThePassword = require('../lib/ThePassword')
 

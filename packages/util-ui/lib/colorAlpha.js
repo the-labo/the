@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Change color alpha
  * @memberof module:@the-/util-ui
@@ -7,8 +8,6 @@
  * @param {number} [alpha=1] - Alpha value to set
  * @returns {string} Color string
  */
-'use strict'
-
 const { alpha: setAlpha } = require('acolor')
 
 /** @lends module:@the-/util-ui.colorAlpha */

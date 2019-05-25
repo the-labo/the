@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for IOEvents.
  * Runs with mocha.
  */
-'use strict'
-
 describe('i-o-events', () => {
   before(() => {})
 

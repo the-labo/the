@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheHash instance
  * @memberof module:@the-/hash
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {TheHash}
  */
-'use strict'
-
 const TheHash = require('./TheHash')
 
 /** @lends module:@the-/hash.create */

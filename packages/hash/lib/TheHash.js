@@ -1,10 +1,9 @@
+'use strict'
 /**
  * @memberof module:@the-/hash
  * @class TheHash
  * @param {Object} props
  */
-'use strict'
-
 const proxy = require('./proxy')
 
 /** @lends module:@the-/hash.TheHash */

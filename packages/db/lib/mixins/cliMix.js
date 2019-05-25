@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Add cli methods
  * @memberof module:@the-/db
  * @function cliMix
  */
-'use strict'
-
 const aslogger = require('aslogger')
 const { clone } = require('asobj')
 const { inspect } = require('util')
@@ -26,9 +25,9 @@ function cliMix(Class) {
         without: ['password', 'rootPassword', 'root_password'],
       })
       logger.point('Welcome to the-db prompt!')
-      logger.trace(`DB Env:`, inspect(info, { breakLength: Infinity }))
+      logger.trace('DB Env:', inspect(info, { breakLength: Infinity }))
       logger.trace(
-        `DB Resources:`,
+        'DB Resources:',
         inspect(resourceNames, { breakLength: Infinity }),
       )
       logger.info('')

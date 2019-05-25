@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for cleanupReturnAwaitOnFunctionNode.
  * Runs with mocha.
  */
-'use strict'
-
 describe('cleanup-return-await-on-function-node', () => {
   before(() => {})
 

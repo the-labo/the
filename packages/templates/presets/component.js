@@ -3,10 +3,9 @@
  * Presets for `@the-/*` packages
  * @module @the-script/presets/component
  */
-
 const path = require('path')
-const { Readme, dir, test } = require('../lib')
 const { camelcase } = require('stringcase')
+const { Readme, dir, test } = require('../lib')
 
 exports.Readme = (dirname) => {
   const requireIfPossible = (id) => {
@@ -22,7 +21,7 @@ exports.Readme = (dirname) => {
   const jsdoc = requireIfPossible(path.resolve(dirname, './doc/api/jsdoc'))
   return Readme({
     badges: { npm: true },
-    links: links,
+    links,
     overview: 'doc/overview.md',
     pkg,
     repo: pkg.repository,
@@ -45,25 +44,24 @@ exports.Index = (dirname) => {
 
   return {
     ...dir({
-      dirname: dirname,
       annotations: {
+        description: pkg.description,
         module: pkg.name,
         typicalname: camelcase(pkg.name.split('/').pop()),
         version: pkg.version,
-        description: pkg.description,
       },
+      dirname,
     }),
     path: `${dirname}/index.jsx`,
   }
 }
 
-exports.Test = (dirname) => {
-  return test({
+exports.Test = (dirname) =>
+  test({
+    cjs: true,
+    content: ({ varName }) => `ok(React.createElement(${varName}))`,
+    deps: { React: 'react' },
+    dest: dirname,
     src: [`${dirname}/../shim/*.js`],
     useDefault: true,
-    deps: { React: 'react' },
-    content: ({ varName }) => `ok(React.createElement(${varName}))`,
-    dest: dirname,
-    cjs: true,
   })
-}

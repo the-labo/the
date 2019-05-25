@@ -6,8 +6,14 @@
 const { eslintignore, eslintrc } = require('@the-/templates')
 
 module.exports = [
-  eslintrc(),
-  eslintignore(['**/doc/demo/bundle.js', '/packages/*/misc/mocks']),
+  eslintrc({
+    jsdoc: false,
+  }),
+  eslintignore([
+    '**/doc/demo/bundle.js',
+    '/packages/*/misc/mocks',
+    '/packages/*/assets',
+  ]),
 ]
 
 if (!module.parent) {

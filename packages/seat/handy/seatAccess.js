@@ -1,16 +1,28 @@
+'use strict'
 /**
  * Provide seat access functions
  * @function seatAccess
  * @returns {Object}
  */
-'use strict'
-
 const theSeat = require('../lib')
 
 /** @lends seatAccess */
 function seatAccess() {
   const seat = theSeat()
   return {
+    /**
+     * Container name for
+     * @param {string} name - Name for seat
+     * @param {number} [bytes=4] - Byte length for hash
+     * @returns {string}
+     */
+    containerNameFor(name, bytes = 4) {
+      const shortName = name.split('@')[0]
+      return seat.scope('containerNames').acquireString(name, {
+        bytes,
+        prefix: `${shortName}-`,
+      })
+    },
     /**
      * Port number for
      * @param {string} name - Name for seat
@@ -43,26 +55,13 @@ function seatAccess() {
       return [min, max]
     },
     /**
-     * Container name for
-     * @param {string} name - Name for seat
-     * @param {number} [bytes=4] - Byte length for hash
-     * @returns {string}
-     */
-    containerNameFor(name, bytes = 4) {
-      const shortName = name.split('@')[0]
-      return seat.scope('containerNames').acquireString(name, {
-        bytes,
-        prefix: `${shortName}-`,
-      })
-    },
-    /**
      * Process name for
      * @param {string} name - Name for seat
      * @param {number} [bytes=4] - Byte length for hash
      * @returns {string}
      */
     processNameFor(name, bytes = 4) {
-      let shortName = name.split('@')[0]
+      const shortName = name.split('@')[0]
       return seat.scope('processNames').acquireString(name, {
         bytes,
         prefix: `${shortName}-`,

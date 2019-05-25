@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Mixins for IO
  * @memberof module:@the-/server.mixins
@@ -5,8 +6,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-'use strict'
-
 const asleep = require('asleep')
 const { Converters: ThePackConverters, ThePack } = require('@the-/pack')
 const { IOEvents } = require('../constants')

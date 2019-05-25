@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for parseSort.
  * Runs with mocha.
  */
-'use strict'
-
 describe('parse-sort', () => {
   before(() => {})
 

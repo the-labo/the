@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Mixin for queue
  * @memberof module:@the-/resource.mixins
@@ -5,8 +6,6 @@
  * @param {function()} Class
  * @returns {function()} Mixed class
  */
-'use strict'
-
 const asleep = require('asleep')
 
 /** @lends module:@the-/resource.mixins.queueMix */

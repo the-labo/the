@@ -1,5 +1,4 @@
 'use strict'
-
 const { get } = require('@the-/window')
 
 function getUserAgent() {

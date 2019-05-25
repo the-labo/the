@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for MethodCallCounter.
  * Runs with mocha.
  */
-'use strict'
-
 describe('method-call-counter', () => {
   before(() => {})
 

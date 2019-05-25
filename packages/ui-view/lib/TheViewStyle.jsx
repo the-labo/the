@@ -10,8 +10,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheView */
 const TheViewStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={classnames('the-view-style', className)}
+    id={id}
     styles={TheViewStyle.data(options)}
   />
 )

@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Acquire process
  * @memberof module:@the-/ps
  * @function acquire
  */
-'use strict'
-
 const ThePS = require('./ThePS')
 
 /** @lends module:@the-/ps.acquire */

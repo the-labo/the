@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheServer.
  * Runs with mocha.
  */
-'use strict'
-
 const aport = require('aport')
 const arequest = require('arequest')
 const asleep = require('asleep')
@@ -39,7 +38,7 @@ describe('the-server', function() {
     )
 
     const received = []
-    socket.on(`client:callback/1/jCtrl/onHoge`, (data) => {
+    socket.on('client:callback/1/jCtrl/onHoge', (data) => {
       received.push(msgpack.decode(data))
     })
     await new Promise((resolve, reject) => {
@@ -108,7 +107,7 @@ describe('the-server', function() {
 
       async buy(name, amount) {
         const { session } = this
-        let { total = 0 } = session
+        const { total = 0 } = session
         session.total = total + amount
         // console.log('this.hoge', this.hoge())
         return { amount, name, total: session.total }
@@ -257,7 +256,7 @@ describe('the-server', function() {
       const times = []
       {
         const startAt = new Date()
-        let { body, statusCode } = await arequest(
+        const { body, statusCode } = await arequest(
           `http://localhost:${port}/a?hoge`,
         )
         equal(statusCode, 200)
@@ -267,7 +266,7 @@ describe('the-server', function() {
 
       {
         const startAt = new Date()
-        let { body, statusCode } = await arequest(
+        const { body, statusCode } = await arequest(
           `http://localhost:${port}/a?hoge`,
         )
         equal(statusCode, 200)
@@ -277,7 +276,7 @@ describe('the-server', function() {
 
       {
         const startAt = new Date()
-        let { body, statusCode } = await arequest(
+        const { body, statusCode } = await arequest(
           `http://localhost:${port}/a?hoge`,
         )
         equal(statusCode, 200)
@@ -289,7 +288,7 @@ describe('the-server', function() {
     }
 
     {
-      let { body, statusCode } = await arequest(
+      const { body, statusCode } = await arequest(
         `http://localhost:${port}/foo/bar/3`,
       )
       equal(statusCode, 200)
@@ -297,7 +296,7 @@ describe('the-server', function() {
     }
 
     {
-      let { body, statusCode } = await arequest(`http://localhost:${port}`)
+      const { body, statusCode } = await arequest(`http://localhost:${port}`)
       ok(body)
       ok(statusCode)
     }
@@ -338,7 +337,7 @@ describe('the-server', function() {
 
     await asleep(10)
     {
-      let client01 = theClient({ cid: 'client01', port })
+      const client01 = theClient({ cid: 'client01', port })
       const lifecycle = await client01.use('lifecycle')
 
       equal(await lifecycle.hi(), 'hi')
@@ -456,7 +455,7 @@ describe('the-server', function() {
       streams: {
         xStream: class extends TheServer.Stream {
           async *provide() {
-            let count = Number(this.params.count)
+            const count = Number(this.params.count)
             for (let i = 0; i < count; i++) {
               yield i
             }

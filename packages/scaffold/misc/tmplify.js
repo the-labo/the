@@ -1,10 +1,9 @@
 #!/usr/bin/env node
+'use strict'
 
 /**
  * Tmplify prototype.
  */
-'use strict'
-
 process.chdir(`${__dirname}/..`)
 
 const { cleanup } = require('asobj')
@@ -18,7 +17,7 @@ const prefix = '~~~~'
 const suffix = '~~~~'
 
 async function tmplify() {
-  for (let type of Object.keys(demos)) {
+  for (const type of Object.keys(demos)) {
     const demoName = demos[type]
     const demoDir = path.dirname(require.resolve(`${demoName}/package.json`))
     const demoPkg = require(`${demoName}/package.json`)
@@ -103,7 +102,7 @@ async function tmplify() {
         scripts: pkg.scripts,
         version: '1.0.0',
       }
-      for (let name of Object.keys(newPkg)) {
+      for (const name of Object.keys(newPkg)) {
         if (!newPkg[name]) {
           delete newPkg[name]
         }

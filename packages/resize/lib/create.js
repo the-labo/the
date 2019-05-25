@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheResize instance
  * @memberof module:@the-/resize
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {TheResize}
  */
-'use strict'
-
 const TheResize = require('./TheResize')
 
 /** @lends module:@the-/resize.create */

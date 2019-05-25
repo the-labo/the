@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheDate instance
  * @memberof module:@the-/date
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {TheDate}
  */
-'use strict'
-
 const TheDate = require('./TheDate')
 
 /** @lends module:@the-/date.create */

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheResource.
  * Runs with mocha.
  */
-'use strict'
-
 const asleep = require('asleep')
 const { equal, ok } = require('assert').strict
 const theDb = require('@the-/db')
@@ -25,11 +24,9 @@ describe('the-resource', () => {
 
     const User = db.load(TheResource, 'User')
     const History = db.load(TheResource.WriteOnce, 'History')
-    User.invalidated = async () => {
-      return {
-        vv: v,
-      }
-    }
+    User.invalidated = async () => ({
+      vv: v,
+    })
 
     equal(User.refOf('1'), 'User#1')
     equal(User.refOf({ id: '1' }), 'User#1')

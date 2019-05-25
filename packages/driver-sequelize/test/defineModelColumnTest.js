@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for defineModelColumn.
  * Runs with mocha.
  */
-'use strict'
-
 describe('define-model-column', () => {
   before(() => {})
 

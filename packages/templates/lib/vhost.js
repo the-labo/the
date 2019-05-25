@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Error page
  * @memberof module:@the-/templates
@@ -5,8 +6,6 @@
  * @param {Object} config
  * @returns {Object}
  */
-'use strict'
-
 const assert = require('assert')
 const _tmpl = require('./_tmpl')
 

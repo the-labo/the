@@ -15,8 +15,8 @@ import TheStepStyle from './TheStepStyle'
 class TheStep extends React.Component {
   static Content({ children, className, spinning = false }) {
     return (
-      <div className={c(`the-step-content`, className)}>
-        <TheSpin className={`the-step-spin`} cover enabled={spinning} />
+      <div className={c('the-step-content', className)}>
+        <TheSpin className={'the-step-spin'} cover enabled={spinning} />
         {children}
       </div>
     )
@@ -89,7 +89,7 @@ class TheStep extends React.Component {
         className={c('the-step', className)}
         data-step={step}
       >
-        <TheSpin className={`the-step-spin`} cover enabled={spinning} />
+        <TheSpin className={'the-step-spin'} cover enabled={spinning} />
         <div
           className='the-step-scroll'
           style={{ height: this.state.contentHeight }}

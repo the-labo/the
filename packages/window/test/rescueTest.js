@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for rescue.
  * Runs with mocha.
  */
-'use strict'
-
 describe('rescue', () => {
   before(() => {})
 

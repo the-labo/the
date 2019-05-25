@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Define bud for bin scripts
  * @memberof module:@the-/templates
@@ -6,8 +7,6 @@
  * @param {object} config.signature - bin signature.
  * @returns {object} - Bud object.
  */
-'use strict'
-
 const assert = require('assert')
 const evaljson = require('evaljson')
 const objnest = require('objnest')
@@ -15,7 +14,7 @@ const _tmpl = require('./_tmpl')
 
 /** @lends module:@the-/templates.module:@the-/templates.bin */
 function bin(config) {
-  let { signature } = config
+  const { signature } = config
   assert.ok(signature, 'config.signature is required.')
   return {
     data: {

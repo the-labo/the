@@ -1,13 +1,12 @@
+'use strict'
 /**
  * Test for TheResize.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const TheResize = require('../lib/TheResize')
 
-describe('the' + '-resize', () => {
+describe('the-resize', () => {
   before(() => {})
 
   after(() => {})

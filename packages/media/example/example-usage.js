@@ -1,5 +1,4 @@
 'use strict'
-
 const { TheMedia } = require('@the-/media')
 
 async function tryExample() {

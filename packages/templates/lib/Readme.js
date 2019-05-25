@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Define bud for README.md
  * @memberof module:@the-/templates
@@ -12,8 +13,6 @@
  * @param {object} config.vars - Custom variables.
  * @returns {object} - Bud object.
  */
-'use strict'
-
 const aglob = require('aglob')
 const assert = require('assert')
 const path = require('path')
@@ -21,8 +20,8 @@ const _tmpl = require('./_tmpl')
 
 const _apiLink = (item) => {
   const { kind, longname, memberof } = item
-  let link = longname.replace(':', '_')
-  let name = longname.replace(memberof, '')
+  const link = longname.replace(':', '_')
+  const name = longname.replace(memberof, '')
   switch (kind) {
     case 'function': {
       const { params = [] } = item
@@ -60,9 +59,7 @@ function readmeBud(config = {}) {
               kind,
             ),
           )
-          .sort((a, b) => {
-            return a.longname.localeCompare(b.longname)
-          })
+          .sort((a, b) => a.longname.localeCompare(b.longname))
           .reduce((reduced, item) => {
             const { memberof = 'global' } = item
             return {

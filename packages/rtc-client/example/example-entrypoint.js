@@ -1,5 +1,4 @@
 'use strict'
-
 const { TheRTCClient } = require('../lib')
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -46,7 +45,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const setVideoStream = (video, stream) => {
     if (!stream) {
-      console.warn(`No stream`)
+      console.warn('No stream')
       return
     }
     const knownId = video.srcObject && video.srcObject.id

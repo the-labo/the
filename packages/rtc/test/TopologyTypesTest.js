@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TopologyTypes.
  * Runs with mocha.
  */
-'use strict'
-
 describe('topology-types', () => {
   before(() => {})
 

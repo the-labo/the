@@ -1,11 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/scene.mixins
  * @function errorMix
  * @param {function()} BaseClass
  * @returns {function()} MixedClass
  */
-'use strict'
-
 /** @lends module:@the-/scene.mixins.errorMix */
 function errorMix(BaseClass) {
   /**
@@ -25,7 +24,7 @@ function errorMix(BaseClass) {
 
     parseAppError(err, options = {}) {
       const { l } = this
-      let { field, messageKey = options.defaultMessageKey } = err.detail
+      const { field, messageKey = options.defaultMessageKey } = err.detail
       return {
         [field]: l('errors', messageKey),
       }

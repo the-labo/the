@@ -1,5 +1,4 @@
 'use strict'
-
 const ababel = require('ababel')
 const aglob = require('aglob')
 const filecopy = require('filecopy')

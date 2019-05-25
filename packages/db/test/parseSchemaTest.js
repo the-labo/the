@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for parseSchema.
  * Runs with mocha.
  */
-'use strict'
-
 describe('parse-schema', () => {
   before(() => {})
 

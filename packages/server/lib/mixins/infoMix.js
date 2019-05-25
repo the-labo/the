@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Mixins for info
  * @memberof module:@the-/server.mixins
@@ -5,8 +6,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-'use strict'
-
 const { mkdirpAsync, writeFileAsync } = require('asfs')
 const { isMaster } = require('cluster')
 const path = require('path')

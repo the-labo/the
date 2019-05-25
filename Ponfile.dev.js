@@ -3,7 +3,6 @@
  * @file Ponfile
  * @see https://gitlab.com/realglobe-Inc/pon
  */
-'use strict'
 
 const pon = require('pon')
 const pkgSync = require('./misc/tasks/pkgSync')
@@ -59,8 +58,8 @@ module.exports = pon({
     'format:root': theCode(['.*.bud', '.travis.yml', '+(misc)/**/*.*']),
     'format:packages': theCode(
       [
-        'packages/*/+(bin|example|doc|lib|misc|test)/**/*.js',
-        'packages/*/+(bin|example|doc|lib|misc|test)/**/.*.bud',
+        'packages/*/+(bin|example|doc|lib|misc|test|handy|presets)/**/*.js',
+        'packages/*/+(bin|example|doc|lib|misc|test|handy|presets)/**/.*.bud',
         'packages/*/.*.bud',
       ],
       {

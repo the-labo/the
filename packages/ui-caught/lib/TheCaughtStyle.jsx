@@ -9,8 +9,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheCaught */
 const TheCaughtStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-caught-style', className)}
+    id={id}
     styles={TheCaughtStyle.data(options)}
   />
 )
@@ -25,8 +25,8 @@ TheCaughtStyle.defaultProps = {
   options: {},
 }
 
-TheCaughtStyle.data = () => {
-  return asStyleData({
+TheCaughtStyle.data = () =>
+  asStyleData({
     '.the-caught': {
       background: '#FEE',
       border: '2px solid #A55',
@@ -56,6 +56,5 @@ TheCaughtStyle.data = () => {
       padding: '4px',
     },
   })
-}
 
 export default TheCaughtStyle

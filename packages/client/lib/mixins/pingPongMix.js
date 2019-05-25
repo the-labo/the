@@ -1,11 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/client.mixins
  * @function pingPongMix
  * @param {function()} Class - Class to mix
  * @returns {function()} Mixed class
  */
-'use strict'
-
 const DEFAULT_PING_URL = '/the/ping'
 
 /** @lends module:@the-/client.mixins.pingPongMix */
@@ -33,7 +32,7 @@ function pingPongMix(Class) {
         count++
         if (retryMax <= count) {
           close()
-          throw new Error(`Exceed retry max`)
+          throw new Error('Exceed retry max')
         }
         const ok = await this.ping({ pingUrl })
         if (ok) {

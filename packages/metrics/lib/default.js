@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/metrics.create}
  * @memberof module:@the-/metrics
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const TheMetrics = require('./TheMetrics')
 

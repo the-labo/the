@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for doc.
  * Runs with mocha.
  */
-'use strict'
-
 const doc = require('../lib/doc')
 
 describe('doc', function() {

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for cryptoMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('crypto-mix', () => {
   before(() => {})
 

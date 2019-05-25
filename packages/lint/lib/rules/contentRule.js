@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create "contentRule" lint
  * @memberof module:@the-/lint.rules
@@ -7,8 +8,6 @@
  * @param {string|RegExp} config.endsWith - Ends with
  * @returns {function()} Lint function
  */
-'use strict'
-
 const { EOL } = require('os')
 const path = require('path')
 
@@ -17,7 +16,7 @@ function contentRule(config) {
   const { endsWithNewLine, maxLines, ...rest } = config
 
   if (Object.keys(rest).length > 0) {
-    console.warn(`[contentRule] Unknown options`, Object.keys(rest))
+    console.warn('[contentRule] Unknown options', Object.keys(rest))
   }
   return async function contentRuleCheck({ content, filename, report }) {
     if (endsWithNewLine) {

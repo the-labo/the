@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheContext instance
  * @memberof module:@the-/context
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {TheContext}
  */
-'use strict'
-
 const TheContext = require('./TheContext')
 
 /** @lends module:@the-/context.create */

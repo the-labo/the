@@ -5,7 +5,7 @@
 ## @the-/driver-sequelize
 Sequelize driver for the-framework
 
-**Version**: 15.4.3  
+**Version**: 15.4.5  
 **License**: MIT  
 
 * [@the-/driver-sequelize](#module_@the-/driver-sequelize)
@@ -166,4 +166,4 @@ Parsing functions
 ### driverSequelize.default()
 Alias of [@the-/driver-sequelize](#module_@the-/driver-sequelize)
 
-**Kind**: static method of [<code>@the-/driver-sequelize</code>](#module_@the-/driver-sequelize)
+**Kind**: static method of [<code>@the-/driver-sequelize</code>](#module_@the-/driver-sequelize)  

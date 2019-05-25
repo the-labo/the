@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for astHelper.
  * Runs with mocha.
  */
-'use strict'
-
 describe('ast-helper', () => {
   before(() => {})
 

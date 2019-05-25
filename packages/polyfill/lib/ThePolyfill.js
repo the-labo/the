@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/polyfill
  * @class ThePolyfill
  */
-'use strict'
-
 const abind = require('abind')
 const helpers = require('./helpers')
 const { hasBabelPolyfill, withDocument, withWindow } = helpers

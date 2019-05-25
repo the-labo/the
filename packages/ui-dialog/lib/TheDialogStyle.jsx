@@ -10,8 +10,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheDialog */
 const TheDialogStyle = ({ className, id, options = {} }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-dialog-style', className)}
+    id={id}
     styles={TheDialogStyle.data(options)}
   />
 )

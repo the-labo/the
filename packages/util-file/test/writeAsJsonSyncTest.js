@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for writeAsJsonSync.
  * Runs with mocha.
  */
-'use strict'
-
 const writeAsJsonSync = require('../lib/writeAsJsonSync')
 
 describe('write-as-json-sync', () => {

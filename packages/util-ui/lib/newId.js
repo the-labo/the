@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Generate new id
  * @memberof module:@the-/util-ui
@@ -6,8 +7,6 @@
  * @param {string} [options.prefix-'the'] - Id prefix
  * @returns {string}
  */
-'use strict'
-
 const uuid = require('uuid')
 
 /** @lends module:@the-/util-ui.newId */

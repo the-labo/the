@@ -10,8 +10,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheTab */
 const TheTabStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-tab-style', className)}
+    id={id}
     styles={TheTabStyle.data(options)}
   />
 )

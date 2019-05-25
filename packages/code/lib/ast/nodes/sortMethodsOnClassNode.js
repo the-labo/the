@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function sortMethodsOnClassNode
  */
-'use strict'
-
 const {
   byType,
   compareBy,

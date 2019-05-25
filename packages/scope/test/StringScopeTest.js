@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for StringScope.
  * Runs with mocha.
  */
-'use strict'
-
 describe('string-scope', () => {
   before(() => {})
 

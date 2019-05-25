@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheGeo instance
  * @memberof module:@the-/geo
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {TheGeo}
  */
-'use strict'
-
 const TheGeo = require('./TheGeo')
 
 /** @lends module:@the-/geo.create */

@@ -9,8 +9,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheFrame */
 const TheFrameStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-frame-style', className)}
+    id={id}
     styles={TheFrameStyle.data(options)}
   />
 )
@@ -25,8 +25,8 @@ TheFrameStyle.defaultProps = {
   options: {},
 }
 
-TheFrameStyle.data = () => {
-  return asStyleData('.the-frame', {
+TheFrameStyle.data = () =>
+  asStyleData('.the-frame', {
     '.the-frame-embed-content': {
       height: 'fit-content',
     },
@@ -40,6 +40,5 @@ TheFrameStyle.data = () => {
       position: 'relative',
     },
   })
-}
 
 export default TheFrameStyle

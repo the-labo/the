@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Site toast mix
  * @function siteToast
@@ -10,8 +11,6 @@
  * @class SiteToastMixed
  * @inner
  */
-'use strict'
-
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for ConnectionStore.
  * Runs with mocha.
  */
-'use strict'
-
 describe('connection-store', () => {
   before(() => {})
 

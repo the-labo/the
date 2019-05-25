@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheButtonGroup.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheButtonGroup = require('../shim/TheButtonGroup').default

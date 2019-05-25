@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheCache instance
  * @memberof module:@the-/cache
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {module:@the-/cache.TheCache}
  */
-'use strict'
-
 const TheCache = require('./TheCache')
 
 /** @lends module:@the-/cache.create */

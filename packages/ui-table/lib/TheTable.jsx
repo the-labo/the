@@ -49,10 +49,12 @@ class TheTable extends React.Component {
         className={c('the-table-checkbox-cell', className)}
       >
         <TheInput.Checkbox
-          {...{ name, onUpdate, value }}
           className={c('the-table-checkbox')}
+          name={name}
+          onUpdate={onUpdate}
           options={[true]}
           role='checkbox'
+          value={value}
         />
       </TheTable.Cell>
     )
@@ -119,7 +121,7 @@ class TheTable extends React.Component {
   static SortableHeaderCell(props) {
     const { children, className, name, onSort, sort } = props
     const asc = name === sort
-    const desc = `-${name}` === sort
+    const desc = sort === `-${name}`
     return (
       <TheTable.HeaderCell
         {...htmlAttributesFor(props, { except: ['className'] })}

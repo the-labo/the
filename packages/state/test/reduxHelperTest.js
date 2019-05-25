@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for reduxHelper.
  * Runs with mocha.
  */
-'use strict'
-
 describe('redux-helper', () => {
   before(() => {})
 

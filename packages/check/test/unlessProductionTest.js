@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for unlessProduction.
  * Runs with mocha.
  */
-'use strict'
-
 const unlessProduction = require('../lib/unlessProduction')
 
 describe('unless-production', () => {

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function sortAnnotationsOnCommentNode
  */
-'use strict'
-
 const findJSDocAnnotationsInCommendNode = require('./findJSDocAnnotationsInCommendNode')
 
 /** @lends module:@the-/code.ast.nodes.sortAnnotationsOnCommentNode */

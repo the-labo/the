@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Mixin to keep
  * @memberof module:@the-/server.mixins
@@ -5,8 +6,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-'use strict'
-
 /** @lends module:@the-/server.mixins.keepMix */
 function keepMix(Class) {
   /**

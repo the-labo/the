@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheIcon.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheIcon = require('../shim/TheIcon').default

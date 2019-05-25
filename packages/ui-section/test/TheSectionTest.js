@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheSection.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheSection = require('../shim/TheSection').default

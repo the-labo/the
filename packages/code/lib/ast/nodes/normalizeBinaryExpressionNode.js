@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function normalizeBinaryExpressionNode
  */
-'use strict'
-
 const {
   constants: { NodeTypes },
 } = require('@the-/ast')

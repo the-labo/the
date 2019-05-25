@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for changeExt.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const changeExt = require('../lib/changeExt')
 

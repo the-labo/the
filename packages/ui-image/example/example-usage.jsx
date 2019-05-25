@@ -13,11 +13,17 @@ class ExampleComponent extends React.PureComponent {
     return (
       <div>
         <TheImageStyle />
-        <TheImage {...{ height, width }} scale='none' src={IMAGE_URL} />
-        <TheImage {...{ height, width }} scale='fill' src={IMAGE_URL} />
-        <TheImage {...{ height, width }} scale='fit' src={IMAGE_URL} />
-        <TheImage {...{ height, width }} src={'__invalid_url__'} />
-        <TheImage {...{ height, width }} asLink scale='fit' src={IMAGE_URL} />
+        <TheImage height={height} scale='none' src={IMAGE_URL} width={width} />
+        <TheImage height={height} scale='fill' src={IMAGE_URL} width={width} />
+        <TheImage height={height} scale='fit' src={IMAGE_URL} width={width} />
+        <TheImage height={height} src={'__invalid_url__'} width={width} />
+        <TheImage
+          asLink
+          height={height}
+          scale='fit'
+          src={IMAGE_URL}
+          width={width}
+        />
 
         <hr />
 

@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Mixin of mongodb
  * @memberof module:@the-/driver-mongo.mixins
  * @function mongoMix
  */
-'use strict'
-
 const { cleanup } = require('asobj')
 const uriBuilder = require('mongo-uri-builder')
 const { MongoClient, ObjectID } = require('mongodb')

@@ -1,5 +1,4 @@
 'use strict'
-
 const { escape, unescape } = require('mongo-escape')
 const SORT_DEST_PREFIX = /^-/
 

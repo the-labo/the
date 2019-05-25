@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for build.
  * Runs with mocha.
  */
-'use strict'
-
 const build = require('../lib/build')
 
 describe('build', function() {

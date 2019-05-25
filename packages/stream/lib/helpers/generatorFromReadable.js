@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Create generator from readable
  * @memberof module:@the-/stream.helpers
  * @function generatorFromReadable
  */
-'use strict'
-
 /** @lends module:@the-/stream.generatorFromReadable */
 function generatorFromReadable(readable) {
   const generator = {

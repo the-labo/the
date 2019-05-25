@@ -10,8 +10,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheStep */
 const TheStepStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-step-style', className)}
+    id={id}
     styles={TheStepStyle.data(options)}
   />
 )

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Generate jsdoc
  * @memberof module:@the-/script-doc
@@ -6,8 +7,6 @@
  * @param {Object} [options={}] - Optional settings
  * @returns {Promise}
  */
-'use strict'
-
 const argx = require('argx')
 const path = require('path')
 const jsdoc = require('@the-/jsdoc')

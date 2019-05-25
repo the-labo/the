@@ -8,8 +8,8 @@ import { TheStyle } from '@the-/ui-style'
 /** Style for TheHtml */
 const TheHtmlStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={classnames('the-html-style', className)}
+    id={id}
     styles={TheHtmlStyle.data(options)}
   />
 )

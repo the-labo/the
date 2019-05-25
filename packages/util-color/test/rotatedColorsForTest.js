@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for rotatedColorsFor.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const rotatedColorsFor = require('../lib/rotatedColorsFor')
 

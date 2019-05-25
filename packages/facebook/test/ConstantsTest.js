@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for Constants.
  * Runs with mocha.
  */
-'use strict'
-
 describe('constants', () => {
   before(() => {})
 

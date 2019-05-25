@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheTable.
  * Runs with mocha.
  */
-'use strict'
-
 import { ok } from 'assert'
 import React from 'react'
 import { render } from '@the-/script-test'
@@ -15,7 +14,7 @@ describe('the-table', () => {
   after(() => {})
 
   it('Render a component', () => {
-    let element = render(<TheTable />)
+    const element = render(<TheTable />)
     ok(element)
   })
 })

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheHash.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepEqual, equal, ok } = require('assert').strict
 const TheHash = require('../lib/TheHash')
 
@@ -24,7 +23,7 @@ describe('the-hash', () => {
     deepEqual(Object.keys(h), ['a'])
 
     const p = h.toProxy()
-    equal(p['a'], 1)
+    equal(p.a, 1)
 
     p.set({ x: 1, y: 2 })
     p.n = 3

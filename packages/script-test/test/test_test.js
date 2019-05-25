@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for test.
  * Runs with mocha.
  */
-'use strict'
-
 const test = require('../lib/test')
 
 describe('test', function() {

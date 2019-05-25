@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for ffmpeg.
  * Runs with mocha.
  */
-'use strict'
-
 describe('ffmpeg', () => {
   before(() => {})
 

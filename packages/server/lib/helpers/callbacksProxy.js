@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Callback proxy
  * @memberof module:@the-/server.helpers
  * @function callbacksProxy
  * @returns {Proxy} Proxy instance
  */
-'use strict'
-
 /** @lends module:@the-/server.helpers.callbacksProxy */
 function callbacksProxy(options = {}) {
   const { client, controllerName, onCallback } = options

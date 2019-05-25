@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for index.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const lib = require('../shim')
 
@@ -13,9 +12,9 @@ describe('index', () => {
   after(() => {})
 
   it('Exports components', () => {
-    let names = Object.keys(lib)
+    const names = Object.keys(lib)
     ok(names.length > 0)
-    for (let name of names) {
+    for (const name of names) {
       ok(lib[name], `${name} should exists`)
     }
   })

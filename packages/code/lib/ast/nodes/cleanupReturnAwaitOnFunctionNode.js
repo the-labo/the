@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupReturnAwaitOnFunctionNode
  */
-'use strict'
-
 const {
   constants: { NodeTypes },
   finder,

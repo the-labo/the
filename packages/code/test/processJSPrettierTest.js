@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for processJSPrettier.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const processJSPrettier = require('../lib/processors/processJSPrettier')
 
@@ -54,10 +53,10 @@ console.log(x)
 
   it('resolveConfig ', async () => {
     equal(
-      await processJSPrettier(`const x = (a) => a + 1`, {
+      await processJSPrettier('const x = (a) => a + 1', {
         filename: `${__dirname}/../misc/mocks/custom-prettier/hoge.txt`,
       }),
-      `const x = a => a + 1\n`,
+      'const x = a => a + 1\n',
     )
   })
 })

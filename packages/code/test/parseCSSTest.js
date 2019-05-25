@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for parseCSS.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const parseCSS = require('../lib/parsers/parseCSS')
 

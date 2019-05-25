@@ -9,8 +9,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheIcon */
 const TheIconStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-icon-style', className)}
+    id={id}
     styles={TheIconStyle.data(options)}
   />
 )
@@ -25,13 +25,12 @@ TheIconStyle.defaultProps = {
   options: {},
 }
 
-TheIconStyle.data = () => {
-  return asStyleData({
+TheIconStyle.data = () =>
+  asStyleData({
     '.the-icon': {
       display: 'inline-block',
       margin: '0 2px',
     },
   })
-}
 
 export default TheIconStyle

@@ -1,5 +1,4 @@
 'use strict'
-
 const path = require('path')
 const isRelative = (filename) => /^\.\/|^\.\./.test(filename)
 

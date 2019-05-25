@@ -222,4 +222,4 @@ Create a TheLint instance
 ### lint.default()
 Alias of [create](#module_@the-/lint.create)
 
-**Kind**: static method of [<code>@the-/lint</code>](#module_@the-/lint)  
+**Kind**: static method of [<code>@the-/lint</code>](#module_@the-/lint)

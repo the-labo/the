@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Default exports
  * @module default
  */
-'use strict'
-
 const create = require('./create')
 const TheFacebook = require('./TheFacebook')
 

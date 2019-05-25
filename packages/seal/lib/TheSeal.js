@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Seal handler
  * @memberof module:@the-/seal
@@ -6,8 +7,6 @@
  * @param {Object} [options={}] - Optional settings
  * @param {string} [options.algorithm='sha512'] - Hash algorithm
  */
-'use strict'
-
 const abind = require('abind')
 const crypto = require('crypto')
 const { stringify } = require('qs')

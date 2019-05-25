@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for prepareModel.
  * Runs with mocha.
  */
-'use strict'
-
 describe('prepare-model', () => {
   before(() => {})
 

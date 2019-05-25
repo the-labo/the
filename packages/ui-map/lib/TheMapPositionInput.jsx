@@ -40,16 +40,14 @@ class TheMapPositionInput extends React.Component {
     return (
       <div className='the-map-position-input' id={id} style={{ height, width }}>
         <TheMap
-          {...{
-            height,
-            layers,
-            width,
-            zoom,
-          }}
+          height={height}
           lat={Number(lat)}
           layerControlEnabled={false}
+          layers={layers}
           lng={Number(lng)}
           onChange={this.handleChange}
+          width={width}
+          zoom={zoom}
         />
         <input
           className='the-map-position-input-input'

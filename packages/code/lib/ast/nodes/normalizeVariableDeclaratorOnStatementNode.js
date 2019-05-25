@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function normalizeVariableDeclaratorOnStatementNode
  */
-'use strict'
-
 const { EOL } = require('os')
 const {
   constants: { NodeTypes },
@@ -67,19 +66,55 @@ function normalizeVariableDeclaratorOnStatementNode(
     }
 
     const isMemberAssign = init && init.type === NodeTypes.MemberExpression
-    const shouldDestructure =
+    const shouldObjectDestructure =
       isMemberAssign &&
       !init.computed &&
       init.property.type === NodeTypes.Identifier
-    if (shouldDestructure) {
-      if (id.type === NodeTypes.Identifier) {
-        const as = id.name
-        const key = init.property.name
-        const specifier = as === key ? `{ ${key} }` : `{ ${key}: ${as} }`
-        return replace(
-          [VariableDeclaration.start, VariableDeclaration.end],
-          `${kind} ${specifier} = ${get([init.object.start, init.object.end])}`,
-        )
+
+    const asDestructor = (specifier) =>
+      replace(
+        [VariableDeclaration.start, VariableDeclaration.end],
+        `${kind} ${specifier} = ${get([init.object.start, init.object.end])}`,
+      )
+
+    if (shouldObjectDestructure) {
+      switch (id.type) {
+        case NodeTypes.ArrayPattern:
+        case NodeTypes.ObjectPattern: {
+          const key = init.property.name
+          const specifier = `{ ${key}: ${get([id.start, id.end])} }`
+          return asDestructor(specifier)
+        }
+        case NodeTypes.Identifier: {
+          const as = id.name
+          const key = init.property.name
+          const specifier = as === key ? `{ ${key} }` : `{ ${key}: ${as} }`
+          return asDestructor(specifier)
+        }
+        default:
+          break
+      }
+    }
+    const shouldArrayDestructure =
+      isMemberAssign &&
+      init.computed &&
+      init.property.type === NodeTypes.NumericLiteral
+    if (shouldArrayDestructure) {
+      const index = init.property.value
+      const filling = new Array(index + 1).fill('').join(', ')
+      switch (id.type) {
+        case NodeTypes.ArrayPattern:
+        case NodeTypes.ObjectPattern: {
+          const specifier = `[ ${filling}${get([id.start, id.end])} ]`
+          return asDestructor(specifier)
+        }
+        case NodeTypes.Identifier: {
+          const as = id.name
+          const specifier = `[ ${filling}${as} ]`
+          return asDestructor(specifier)
+        }
+        default:
+          break
       }
     }
   }

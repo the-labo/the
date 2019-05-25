@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-head
  * @typicalname uiHead
- * @version 15.4.3
+ * @version 15.4.5
  * @description Head of the-components
  */
 'use strict'

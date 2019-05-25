@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheBin instance
  * @memberof module:@the-/bin
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {module:@the-/bin.TheBin}
  */
-'use strict'
-
 const TheBin = require('./TheBin')
 
 /** @lends module:@the-/bin.create */

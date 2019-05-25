@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Shared action handler
  * @memberof module:@the-/handle
@@ -5,8 +6,6 @@
  * @param {Object} [options={}] - optional settings
  * @param {Object} attributes - Props value to share with scenes
  */
-'use strict'
-
 const theAssert = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
 const helpers = require('./helpers')

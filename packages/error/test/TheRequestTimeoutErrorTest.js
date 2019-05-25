@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheRequestTimeoutError.
  * Runs with mocha.
  */
-'use strict'
-
 describe('the-request-timeout-error', () => {
   before(() => {})
 

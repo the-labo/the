@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Find randomly
  * @memberof module:@the-/util-array
@@ -6,8 +7,6 @@
  * @example
  *   [1,2,3].sort(shuffleSort())
  */
-'use strict'
-
 /** @lends module:@the-/util-array.shuffleSort */
 function shuffleSort() {
   if (arguments.length > 2) {

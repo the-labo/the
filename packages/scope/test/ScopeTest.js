@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for Scope.
  * Runs with mocha.
  */
-'use strict'
-
 describe('scope', () => {
   before(() => {})
 

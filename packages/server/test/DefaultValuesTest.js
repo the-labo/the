@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for DefaultValues.
  * Runs with mocha.
  */
-'use strict'
-
 describe('default-values', () => {
   before(() => {})
 

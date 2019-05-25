@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Scope to hold array
  * @memberof module:@the-/scope.scopes
  * @class ArrayScope
  * @augments module:@the-/scope.scopes.Scope
  */
-'use strict'
-
 const Scope = require('./Scope')
 
 /** @lends module:@the-/scope.scopes.ArrayScope */
@@ -59,11 +58,10 @@ class ArrayScope extends Scope {
       set(index, entry) {
         const args = [...arguments]
         const isResetting = args.length === 1 && Array.isArray(args[0])
-        return (state) => {
-          return isResetting
+        return (state) =>
+          isResetting
             ? args[0]
             : [...state.slice(0, index), entry, ...state.slice(index + 1)]
-        }
       },
       /**
        * Shift entry

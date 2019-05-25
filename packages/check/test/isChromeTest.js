@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for isChrome.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const isChrome = require('../lib/isChrome')
 

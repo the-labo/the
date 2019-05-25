@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for processCSSProp.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const processCSSProp = require('../lib/processors/processCSSProp')
 

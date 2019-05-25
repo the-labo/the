@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withDebug.
  * Runs with mocha.
  */
-'use strict'
-
 describe('with-debug', () => {
   before(() => {})
 

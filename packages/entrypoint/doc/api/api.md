@@ -5,7 +5,7 @@
 ## @the-/entrypoint
 Browser entrypoint for the-framework
 
-**Version**: 15.4.3  
+**Version**: 15.4.5  
 **License**: MIT  
 
 * [@the-/entrypoint](#module_@the-/entrypoint)
@@ -116,3 +116,4 @@ Register service workers
 | Param | Type | Description |
 | --- | --- | --- |
 | swUrls | <code>Array.&lt;string&gt;</code> | Service worker urls |
+

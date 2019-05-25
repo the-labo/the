@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for dialogs.
  * Runs with mocha.
  */
-'use strict'
-
 const coz = require('coz')
 const dialogs = require('../lib/Dialogs')
 

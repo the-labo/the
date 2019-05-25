@@ -9,8 +9,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheKeyboard */
 const TheKeyboardStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-keyboard-style', className)}
+    id={id}
     styles={TheKeyboardStyle.data(options)}
   />
 )

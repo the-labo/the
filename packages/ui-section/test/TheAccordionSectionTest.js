@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheAccordionSection.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheAccordionSection = require('../shim/TheAccordionSection').default

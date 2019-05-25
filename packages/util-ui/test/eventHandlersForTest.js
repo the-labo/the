@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for eventHandlersFor.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepEqual } = require('assert').strict
 const eventHandlersFor = require('../lib/eventHandlersFor')
 
@@ -15,7 +14,7 @@ describe('event-handlers-for', () => {
   it('Render a component', () => {
     const onClick = () => {}
     const foo = () => {}
-    let handlers = eventHandlersFor({
+    const handlers = eventHandlersFor({
       foo,
       onClick,
     })

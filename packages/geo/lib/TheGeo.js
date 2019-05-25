@@ -1,10 +1,9 @@
+'use strict'
 /**
  * @memberof module:@the-/geo
  * @class TheGeo
  * @param {Object} [options={}] - Optional settings
  */
-'use strict'
-
 const { purge, restore, save } = require('bstorage')
 const { get } = require('@the-/window')
 
@@ -66,7 +65,7 @@ class TheGeo {
         callback(data)
       },
       (err) => {
-        console.warn(`[TheGeo] Failed to watch `, err)
+        console.warn('[TheGeo] Failed to watch ', err)
       },
       {
         enableHighAccuracy,

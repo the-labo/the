@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/scene
  * @class TheScene
  */
-'use strict'
-
 const asobj = require('asobj')
 const { errorMix, goMix, subMix } = require('./mixins')
 

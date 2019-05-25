@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for clientMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('client-mix', () => {
   before(() => {})
 

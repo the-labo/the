@@ -1,5 +1,4 @@
 'use strict'
-
 const theSetting = require('@the-/setting')
 
 async function tryExample() {

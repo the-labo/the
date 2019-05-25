@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for turnMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('turn-mix', () => {
   before(() => {})
 

@@ -1,10 +1,9 @@
+'use strict'
 /**
  * @memberof module.module:@the-/util-file
  * @function delSync
  * @param {string} filename
  */
-'use strict'
-
 const fs = require('fs')
 
 /** @lends module:@the-/util-file.delSync */

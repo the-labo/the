@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for cliMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('cli-mix', () => {
   before(() => {})
 

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Controller action invocation
  * @memberof module:@the-/controller
@@ -8,8 +9,6 @@
  * @property {?*} result - Invocation Result
  * @property {?Error} error - Invocation error
  */
-'use strict'
-
 /** @lends module:@the-/controller.Invocation */
 class Invocation {
   constructor(values = {}) {

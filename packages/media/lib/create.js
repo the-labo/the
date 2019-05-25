@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheMedia instance
  * @memberof module:@the-/media
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {TheMedia}
  */
-'use strict'
-
 const TheMedia = require('./TheMedia')
 
 /** @lends create */

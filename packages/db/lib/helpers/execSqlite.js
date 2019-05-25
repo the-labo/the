@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/db.helpers
  * @function execSqlite
  */
-'use strict'
-
 const execcli = require('execcli')
 
 /** @lends module:@the-/db.helpers.execSqlite */

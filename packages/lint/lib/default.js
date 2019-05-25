@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/lint.create}
  * @memberof module:@the-/lint
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const TheLint = require('./TheLint')
 

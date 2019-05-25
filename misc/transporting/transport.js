@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 'use strict'
 
 const aglob = require('aglob')
@@ -40,7 +39,7 @@ ${msg}
     stdio: 'inherit',
   })
   spawnSync('git', ['push'], { cwd: fromDir, stdio: 'inherit' })
-  spawnSync(`npm`, ['deprecate', path.basename(fromDir), msg], {
+  spawnSync('npm', ['deprecate', path.basename(fromDir), msg], {
     cwd: fromDir,
     stdio: 'inherit',
   })
@@ -199,7 +198,7 @@ const _removeDevDeps = async (baseDir, names) => {
             delete scripts.buid
             devDependencies['@babel/runtime'] =
               demoComponentPkg.devDependencies['@babel/runtime']
-            devDependencies['react'] = demoComponentPkg.devDependencies['react']
+            devDependencies.react = demoComponentPkg.devDependencies.react
             devDependencies['react-dom'] =
               demoComponentPkg.devDependencies['react-dom']
             devDependencies['react-router-dom'] =
@@ -208,8 +207,7 @@ const _removeDevDeps = async (baseDir, names) => {
               devDependencies['@the-/router'] =
                 demoComponentPkg.devDependencies['@the-/router']
             }
-            peerDependencies['react'] =
-              demoComponentPkg.peerDependencies['react']
+            peerDependencies.react = demoComponentPkg.peerDependencies.react
             peerDependencies['react-dom'] =
               demoComponentPkg.peerDependencies['react-dom']
             return { devDependencies, peerDependencies, scripts }
@@ -244,7 +242,7 @@ const _removeDevDeps = async (baseDir, names) => {
           const basename = path.basename(testJsx, '.jsx')
           rename(
             path.resolve(toDir, testJsx),
-            path.resolve(toDir, 'test', basename + '.js'),
+            path.resolve(toDir, 'test', `${basename}.js`),
           )
         }
       }

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Define bud for server controller
  * @memberof module:@the-/templates
@@ -7,8 +8,6 @@
  * @param {string} [config.name]
  * @returns {Object}
  */
-'use strict'
-
 const assert = require('assert')
 const path = require('path')
 const _tmpl = require('./_tmpl')
@@ -24,7 +23,7 @@ function Ctrl(config) {
   return {
     data: {
       memberof,
-      name: path.basename(name) + 'Ctrl',
+      name: `${path.basename(name)}Ctrl`,
     },
     force: false,
     mode: '644',

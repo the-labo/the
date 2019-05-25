@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Process JSX attributes
  * @memberof module:@the-/code.processors
@@ -5,8 +6,6 @@
  * @param {string} content
  * @returns {string} processed
  */
-'use strict'
-
 const {
   constants: { NodeTypes },
   finder,
@@ -18,18 +17,14 @@ const contentAccess = require('../helpers/contentAccess')
 
 /** @lends module:@the-/code.processors.processJSXAttribute */
 function processJSXAttribute(content, options = {}) {
-  const nameOfAttribute = (attribute) => {
-    return attribute.name.name
-  }
-  const rangeFor = (attribute) => {
-    return [attribute.start, attribute.end]
-  }
+  const nameOfAttribute = (attribute) => attribute.name.name
+  const rangeFor = (attribute) => [attribute.start, attribute.end]
   return applyConverter(content, (content) => {
     const parsed = parse(content, options)
     const { get, replace, swap } = contentAccess(content)
 
     function removeDuplicateAttributes(elm) {
-      const attributes = elm.openingElement.attributes
+      const { attributes } = elm.openingElement
       const knownNames = new Set()
       for (let i = attributes.length - 1; i >= 0; i--) {
         const attribute = attributes[i]
@@ -37,11 +32,11 @@ function processJSXAttribute(content, options = {}) {
         if (skip) {
           continue
         }
-        const name = attribute.name.name
+        const { name } = attribute.name
         if (knownNames.has(name)) {
           const prev = attributes[i - 1]
           const start = prev ? prev.end : attribute.start - 1
-          const end = attribute.end
+          const { end } = attribute
           return replace([start, end], '')
         }
         knownNames.add(name)
@@ -84,7 +79,7 @@ function processJSXAttribute(content, options = {}) {
     }
 
     function swapAttributes(elm) {
-      const attributes = elm.openingElement.attributes
+      const { attributes } = elm.openingElement
       if (attributes.length === 0) {
         return
       }
@@ -101,9 +96,9 @@ function processJSXAttribute(content, options = {}) {
       )
       for (const attributes of sortableAttributes) {
         const sortedByStart = [...attributes].sort(compareBy('start'))
-        const sortedByName = [...attributes].sort((a, b) => {
-          return compareStrings(nameOfAttribute(a), nameOfAttribute(b))
-        })
+        const sortedByName = [...attributes].sort((a, b) =>
+          compareStrings(nameOfAttribute(a), nameOfAttribute(b)),
+        )
 
         for (let i = 0; i < sortedByStart.length; i++) {
           const byStart = sortedByStart[i]

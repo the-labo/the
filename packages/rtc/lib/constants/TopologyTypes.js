@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Topology type of web rtc
  * @memberof module:@the-/rtc.constants
@@ -7,8 +8,6 @@
  * @see https://webrtcglossary.com/sfu/
  * @see https://webrtcglossary.com/mcu/
  */
-'use strict'
-
 const TopologyTypes = Object.freeze(
   /** @lends module:@the-/rtc.constants.TopologyTypes */
   {

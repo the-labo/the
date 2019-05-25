@@ -1,3 +1,4 @@
+'use strict'
 /**
  * @memberof module:@the-/rtc
  * @class TheRTC
@@ -11,8 +12,6 @@
  * @param {string} [config.topology='mesh'] - 'mesh', 'sfu'
  *
  */
-'use strict'
-
 const socketIO = require('socket.io')
 const { TopologyTypes } = require('./constants')
 const { handleUnknownKeys, parseTurnSecret } = require('./helpers')
@@ -55,7 +54,7 @@ class TheRTC extends TheRTCBase {
 
   async listen(port) {
     if (this.listenAt) {
-      throw new Error(`[TheRTC] Already listening`)
+      throw new Error('[TheRTC] Already listening')
     }
     this.listenAt = new Date()
     const server = this.createHTTPServer()

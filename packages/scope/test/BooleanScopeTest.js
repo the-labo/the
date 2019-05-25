@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for BooleanScope.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const { TheStore } = require('@the-/store')
 const BooleanScope = require('../lib/scopes/BooleanScope')

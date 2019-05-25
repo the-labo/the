@@ -9,8 +9,8 @@ import { TheStyle } from '@the-/ui-style'
 /** Style for TheLink */
 const TheLinkStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-link-style', className)}
+    id={id}
     styles={TheLinkStyle.data(options)}
   />
 )

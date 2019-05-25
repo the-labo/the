@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for processJSObject.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const processJSObject = require('../lib/processors/processJSObject')
 
@@ -14,18 +13,18 @@ describe('process-object-property', async () => {
 
   it('Do test', async () => {
     equal(
-      await processJSObject(`const a = { x: 1, z: 5, y: 2 }`),
+      await processJSObject('const a = { x: 1, z: 5, y: 2 }'),
       'const a = { x: 1, y: 2, z: 5 }',
     )
 
     equal(
-      await processJSObject(`const a = { x: 1, z: 5, y: 2 }`),
+      await processJSObject('const a = { x: 1, z: 5, y: 2 }'),
       'const a = { x: 1, y: 2, z: 5 }',
     )
 
     equal(
       await processJSObject(
-        `const a = { x: 1, z: 5, y: 2, i: { inner: { n1: 1, n2: () => {} } } }`,
+        'const a = { x: 1, z: 5, y: 2, i: { inner: { n1: 1, n2: () => {} } } }',
       ),
       'const a = { i: { inner: { n1: 1, n2: () => {} } }, x: 1, y: 2, z: 5 }',
     )
@@ -68,7 +67,7 @@ describe('process-object-property', async () => {
   it('Destructuring', async () => {
     equal(
       await processJSObject(
-        `const { a, j: jj, d, b: { z, nn=5, f }, ...zz } = require('hoge')`,
+        "const { a, j: jj, d, b: { z, nn=5, f }, ...zz } = require('hoge')",
       ),
       "const { a, b: { f, nn=5, z }, d, j: jj, ...zz } = require('hoge')",
     )
@@ -77,7 +76,7 @@ describe('process-object-property', async () => {
   // https://github.com/the-labo/the-code/issues/1
   it('Simple inline Destructuring', async () => {
     equal(
-      await processJSObject(`const { a } = { a : 1 }`),
+      await processJSObject('const { a } = { a : 1 }'),
       'const { a } = { a : 1 }',
     )
   })
@@ -85,9 +84,9 @@ describe('process-object-property', async () => {
   it('dynamic props', async () => {
     equal(
       await processJSObject(
-        `const n = "NN";const x = { d: 1, c: 4, 'b': 2, 'a': 8, [n]: 5, _hoge: 1, $$fuge: 2, '3j': 128, 'k k': 1 }`,
+        "const n = \"NN\";const x = { d: 1, c: 4, 'b': 2, 'a': 8, [n]: 5, _hoge: 1, $$fuge: 2, '3j': 128, 'k k': 1 }",
       ),
-      `const n = "NN";const x = { $$fuge: 2, [n]: 5, '3j': 128, 'k k': 1, _hoge: 1, a: 8, b: 2, c: 4, d: 1 }`,
+      "const n = \"NN\";const x = { $$fuge: 2, [n]: 5, '3j': 128, 'k k': 1, _hoge: 1, a: 8, b: 2, c: 4, d: 1 }",
     )
   })
 
@@ -105,7 +104,7 @@ describe('process-object-property', async () => {
   it('Inside array', async () => {
     equal(
       await processJSObject(
-        `const a = [ { z: 1, a: 3, d: [ { n: 1, b: 8 } ] } ]`,
+        'const a = [ { z: 1, a: 3, d: [ { n: 1, b: 8 } ] } ]',
       ),
       'const a = [ { a: 3, d: [ { b: 8, n: 1 } ], z: 1 } ]',
     )
@@ -126,8 +125,8 @@ describe('process-object-property', async () => {
 
   it('optionalChaining', async () => {
     equal(
-      await processJSObject(`const a = { x: global?.x, b: 'a' }`),
-      `const a = { b: 'a', x: global?.x }`,
+      await processJSObject("const a = { x: global?.x, b: 'a' }"),
+      "const a = { b: 'a', x: global?.x }",
     )
   })
 
@@ -327,8 +326,8 @@ const v2 = value2 => a ? value2 : { value2 }
 
   it('Remove unneeded key quote', async () => {
     equal(
-      await processJSObject(`const x = {a: 1, 'b': 2, 'c&c':5 }`),
-      `const x = {'c&c':5, a: 1, b: 2 }`,
+      await processJSObject("const x = {a: 1, 'b': 2, 'c&c':5 }"),
+      "const x = {'c&c':5, a: 1, b: 2 }",
     )
   })
 
@@ -345,10 +344,8 @@ const x =  {'': {}, a:{}}
 
   it('Dynamic keys', async () => {
     equal(
-      await processJSObject(
-        `const x = {[\`\${n+1}/bbb\`]:1, [\`\${n+1}/aaa\`]:2}`,
-      ),
-      `const x = {[\`\${n+1}/aaa\`]:2, [\`\${n+1}/bbb\`]:1}`,
+      await processJSObject('const x = {[`${n+1}/bbb`]:1, [`${n+1}/aaa`]:2}'),
+      'const x = {[`${n+1}/aaa`]:2, [`${n+1}/bbb`]:1}',
     )
   })
 })

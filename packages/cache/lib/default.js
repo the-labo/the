@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/cache.default}
  * @memberof module:@the-/cache
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const TheCache = require('./TheCache')
 

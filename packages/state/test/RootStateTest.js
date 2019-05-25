@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for RootState.
  * Runs with mocha.
  */
-'use strict'
-
 describe('root-state', () => {
   before(() => {})
 

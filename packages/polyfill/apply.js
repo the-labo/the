@@ -4,8 +4,6 @@
  *
  * import 'the-polyfill/apply'
  */
-'use strict'
-
 require('./shim')
   .create()
   .apply()

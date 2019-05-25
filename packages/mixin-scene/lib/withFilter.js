@@ -1,3 +1,4 @@
+'use strict'
 /**
  * withFilter mixin
  * @memberof module:@the-/mixin-scene
@@ -10,8 +11,6 @@
  * @inner
  * @class WithFilterMixed
  */
-'use strict'
-
 const { cleanup } = require('asobj')
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')

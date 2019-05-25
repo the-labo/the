@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Define koa middleware function to detect locale
  * @memberof module:@the-/server.helpers
@@ -6,8 +7,6 @@
  * @param {Object} [options={}] - Optional setting
  * @returns {function()}
  */
-'use strict'
-
 const { Locales } = require('locale')
 
 /** @lends module:@the-/server.helpers.langDetector */

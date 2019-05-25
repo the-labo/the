@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for debugStream.
  * Runs with mocha.
  */
-'use strict'
-
 describe('debug-stream', () => {
   before(() => {})
 

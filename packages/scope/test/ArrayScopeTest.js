@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for ArrayScope.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepEqual } = require('assert').strict
 const { TheStore } = require('@the-/store')
 const ArrayScope = require('../lib/scopes/ArrayScope')

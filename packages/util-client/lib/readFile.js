@@ -1,18 +1,17 @@
+'use strict'
 /**
  * Read file as array buffer
  * @function readFile
  * @param {File} file - File to read
  * @returns {Promise<ArrayBuffer>} - Array buffer
  */
-'use strict'
-
 const { get } = require('@the-/window')
 
 /** @lends readFile */
 async function readFile(file) {
   const FileReader = get('window.FileReader')
   if (!FileReader) {
-    console.warn(`[the-client-util] FileReader is not supported`)
+    console.warn('[the-client-util] FileReader is not supported')
     return null
   }
   return new Promise((resolve, reject) => {

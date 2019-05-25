@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for processJSUnused.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const processJSUnused = require('../lib/processors/processJSUnused')
 
@@ -456,8 +455,8 @@ const a = ( x) => { console.log(x) }
 
   it('cleanup object pattern', async () => {
     equal(
-      await processJSUnused(`const b = ({x,y})=>console.log(y)`),
-      `const b = ({y})=>console.log(y)`,
+      await processJSUnused('const b = ({x,y})=>console.log(y)'),
+      'const b = ({y})=>console.log(y)',
     )
   })
 
@@ -663,8 +662,8 @@ console.log({...{a}})
   })
 
   it('Cleanup unused single arg arrow func', async () => {
-    equal(await processJSUnused(`const x = (a) => 1`), 'const x = () => 1')
-    equal(await processJSUnused(`const x = a => 1`), 'const x = () => 1')
+    equal(await processJSUnused('const x = (a) => 1'), 'const x = () => 1')
+    equal(await processJSUnused('const x = a => 1'), 'const x = () => 1')
   })
 })
 

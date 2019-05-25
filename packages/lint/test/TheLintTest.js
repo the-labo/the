@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheLint.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const rules = require('../lib/rules')
 const TheLint = require('../lib/TheLint')

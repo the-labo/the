@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Abstract scope class
  * @memberof module:@the-/scope.scopes
@@ -6,8 +7,6 @@
  * @param {string} name - Name of state
  * @param {Object} config - Scope config
  */
-'use strict'
-
 const theAssert = require('@the-/assert').create
 const { unlessProduction } = require('@the-/check')
 

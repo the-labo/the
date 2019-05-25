@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a ThePolyfill instance
  * @memberof module:@the-/polyfill
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {ThePolyfill}
  */
-'use strict'
-
 const ThePolyfill = require('./ThePolyfill')
 
 /** @lends module:@the-/polyfill.create */

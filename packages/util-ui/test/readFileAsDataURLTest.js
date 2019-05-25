@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for readFileAsDataURL.
  * Runs with mocha.
  */
-'use strict'
-
 describe('read-file-as-data-u-r-l', () => {
   before(() => {})
 

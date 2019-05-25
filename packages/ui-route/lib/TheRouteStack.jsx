@@ -56,9 +56,10 @@ class TheRouteStack extends React.Component {
       const popPath = i > 0 ? stack[i - 1][0] : null
       return (
         <TheRouteStackRoute
-          {...{ path, popPath }}
           component={Component}
           key={path}
+          path={path}
+          popPath={popPath}
           requestResize={this.requestResize}
         />
       )
@@ -133,8 +134,8 @@ class TheRouteStackRoute extends React.Component {
     const { path, popPath } = this.props
     return (
       <TheRoute
-        {...{ path }}
         component={this.renderComponent}
+        path={path}
         popPath={popPath}
         scrollToTop
       />
@@ -156,7 +157,13 @@ class TheRouteStackRoute extends React.Component {
 
     this.match = match
     return match ? (
-      <Component {...{ history, location, match, pop, popTo }} />
+      <Component
+        history={history}
+        location={location}
+        match={match}
+        pop={pop}
+        popTo={popTo}
+      />
     ) : null
   }
 }

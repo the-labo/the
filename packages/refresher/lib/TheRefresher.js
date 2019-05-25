@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/refresher
  * @class TheRefresher
  */
-'use strict'
-
 const { EventEmitter } = require('events')
 const debug = require('debug')('the:refresher')
 
@@ -40,7 +39,7 @@ class TheRefresher extends EventEmitter {
    */
   start() {
     if (this._refreshTimer !== -1) {
-      throw new Error(`Refresh loop already started`)
+      throw new Error('Refresh loop already started')
     }
     const { handler, interval } = this
     this._stopped = false

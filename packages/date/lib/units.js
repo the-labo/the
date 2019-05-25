@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Date units
  * @memberof module:@the-/date
  * @namespace units
  */
-'use strict'
-
 const Durations = require('./Durations')
 
 module.exports = {

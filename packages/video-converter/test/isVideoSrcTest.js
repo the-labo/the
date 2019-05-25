@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for isVideoSrc.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const isVideoSrc = require('../lib/helpers/isVideoSrc')
 

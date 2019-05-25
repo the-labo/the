@@ -1,10 +1,9 @@
+'use strict'
 /**
- * Test for normalizeFunctionBodyOnFunctionNode.
+ * Test for normalizeFunctionReturnOnFunctionNode.
  * Runs with mocha.
  */
-'use strict'
-
-describe('normalize-function-body-on-function-node', () => {
+describe('normalize-function-return-on-function-node', () => {
   before(() => {})
 
   after(() => {})

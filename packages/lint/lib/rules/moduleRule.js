@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create "moduleRule" lint
  * @memberof module:@the-/lint.rules
@@ -5,8 +6,6 @@
  * @param {Object} config - Lint config
  * @returns {function()} Lint function
  */
-'use strict'
-
 const path = require('path')
 const { parsePattern } = require('../helpers/parseHelper')
 
@@ -24,7 +23,7 @@ function moduleRule(config) {
     ...rest
   } = config
   if (Object.keys(rest).length > 0) {
-    console.warn(`[moduleRule] Unknown options`, Object.keys(rest))
+    console.warn('[moduleRule] Unknown options', Object.keys(rest))
   }
   return async function moduleRuleCheck({ filename, report }) {
     const basename = path.basename(filename, path.extname(filename))

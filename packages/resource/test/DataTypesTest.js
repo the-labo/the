@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for DataTypes.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const DataTypes = require('../lib/DataTypes')
 

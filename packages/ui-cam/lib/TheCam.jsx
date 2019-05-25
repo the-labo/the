@@ -47,7 +47,7 @@ class TheCam extends React.Component {
 
     unlessProduction(() => {
       if ('videoRef' in diff) {
-        throw new Error(`[TheCam] Video ref can not be changed`)
+        throw new Error('[TheCam] Video ref can not be changed')
       }
     })
   }

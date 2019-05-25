@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for isBrowser.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const isBrowser = require('../lib/isBrowser')
 

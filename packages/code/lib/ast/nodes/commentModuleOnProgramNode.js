@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function commentModuleOnProgramNode
  */
-'use strict'
-
 const path = require('path')
 const {
   constants: { NodeTypes },

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for ChannelNames.
  * Runs with mocha.
  */
-'use strict'
-
 describe('channel-names', () => {
   before(() => {})
 

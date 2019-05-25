@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Write from chunk generator function
  * @function generateFile
@@ -5,8 +6,6 @@
  * @param {function()} generator - Chunk data generator
  * @returns {Promise<undefined>}
  */
-'use strict'
-
 const amkdirp = require('amkdirp')
 const fs = require('fs')
 const path = require('path')

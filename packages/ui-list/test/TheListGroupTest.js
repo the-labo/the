@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheListGroup.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheListGroup = require('../shim/TheListGroup').default

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Mixin for socket
  * @memberof module:@the-/rtc.constants.mixins
@@ -5,8 +6,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-'use strict'
-
 const { cleanup } = require('asobj')
 const qs = require('qs')
 const io = require('socket.io-client')
@@ -23,7 +22,7 @@ function socketMix(Class) {
 
     assertHasSocket() {
       if (!this.socket) {
-        throw new Error(`[TheRTCClient] Socket not ready`)
+        throw new Error('[TheRTCClient] Socket not ready')
       }
     }
 

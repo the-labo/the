@@ -412,7 +412,7 @@ module.exports = pon(
     'ui:map': map('public', 'public', { pattern: '**/*.js', watchDelay: 400 }),
     /** Compile react components */
     'ui:react': react('client', 'client/shim', {
-      extractCss: `client/shim/ui/bundle.pcss`,
+      extractCss: 'client/shim/ui/bundle.pcss',
       pattern: ['*.js', '*.jsx', '!(shim)/**/+(*.jsx|*.js|*.json)'],
       sourceRoot: '..',
       watchTargets: 'client/ui/**/*.pcss',

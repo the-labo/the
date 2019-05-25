@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withAuthorized.
  * Runs with mocha.
  */
-'use strict'
-
 describe('with-authorized', () => {
   before(() => {})
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for setupMysql.
  * Runs with mocha.
  */
-'use strict'
-
 describe('setup-mysql', function() {
   this.timeout(8000)
   before(() => {})

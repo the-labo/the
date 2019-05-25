@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for SFUProxyPool.
  * Runs with mocha.
  */
-'use strict'
-
 describe('s-f-u-proxy-pool', () => {
   before(() => {})
 

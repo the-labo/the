@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheMainStyle.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheMainStyle = require('../shim/TheMainStyle').default

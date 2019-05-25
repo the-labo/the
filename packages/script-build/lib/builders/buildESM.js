@@ -1,5 +1,4 @@
 'use strict'
-
 const aglob = require('aglob')
 const { readFileAsync, statAsync } = require('asfs')
 const filecopy = require('filecopy')

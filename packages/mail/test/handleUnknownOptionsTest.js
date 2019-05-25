@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for handleUnknownOptions.
  * Runs with mocha.
  */
-'use strict'
-
 describe('handle-unknown-options', () => {
   before(() => {})
 

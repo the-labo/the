@@ -1,5 +1,4 @@
 'use strict'
-
 const { RenderingCountMetrics } = require('@the-/metrics-presets')
 
 async function tryExample() {

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for parser.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepEqual } = require('assert').strict
 const { parseSort } = require('../lib/helpers/parser')
 

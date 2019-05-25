@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for scopeMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('scope-mix', () => {
   before(() => {})
 

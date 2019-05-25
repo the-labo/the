@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for sortMethodsOnClassNode.
  * Runs with mocha.
  */
-'use strict'
-
 describe('sort-methods-on-class-node', () => {
   before(() => {})
 

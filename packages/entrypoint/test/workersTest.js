@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for workers.
  * Runs with mocha.
  */
-'use strict'
-
 const injectmock = require('injectmock')
 const workers = require('../lib/workers')
 

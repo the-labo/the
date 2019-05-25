@@ -1,5 +1,4 @@
 'use strict'
-
 const theMail = require('@the-/mail').default
 
 async function tryExample() {

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for test.
  * Runs with mocha.
  */
-'use strict'
-
 const coz = require('coz')
 const test = require('../lib/test')
 
@@ -15,7 +14,7 @@ describe('test', function() {
   after(async () => {})
 
   it('Test', async () => {
-    let bud = test({
+    const bud = test({
       dest: `${__dirname}/../tmp/foo/test`,
       src: `${__dirname}/../misc/mocks/*.jsx`,
     })
@@ -23,7 +22,7 @@ describe('test', function() {
   })
 
   it('TestDir', async () => {
-    let bud = test.dir({
+    const bud = test.dir({
       dest: `${__dirname}/../tmp/foo/test/`,
       node: true,
       src: `${__dirname}/../misc/mocks`,

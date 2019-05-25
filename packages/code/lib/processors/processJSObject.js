@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Process object expressions
  * @memberof module:@the-/code.processors
@@ -5,8 +6,6 @@
  * @param {string} content
  * @returns {string} processed
  */
-'use strict'
-
 const {
   constants: { NodeTypes },
   finder,
@@ -24,52 +23,57 @@ const contentAccess = require('../helpers/contentAccess')
 
 /** @lends module:@the-/code.processors.processJSObject */
 function processJSObject(content, options = {}) {
-  return applyConverter(content, (content) => {
-    const parsed = parse(content, options)
-    const { get, replace, swap } = contentAccess(content)
+  return applyConverter(
+    content,
+    (content) => {
+      const parsed = parse(content, options)
+      const { get, replace, swap } = contentAccess(content)
 
-    function convertObjectNode(ObjectNode) {
-      const converted =
-        sortPropertiesOnObjectNode(ObjectNode, {
-          get,
-          swap,
-        }) ||
-        cleanupRedundantAliasOnObjectPatternNode(ObjectNode, {
-          replace,
-        }) ||
-        cleanupRedundantQuoteOnObjectPatternNode(ObjectNode, {
-          replace,
-        })
-      if (converted) {
-        return converted
-      }
-
-      {
-        const ObjectSpreadElements = (ObjectNode.properties || [])
-          .filter(byType('SpreadElement'))
-          .filter(
-            ({ argument }) => argument && argument.type === 'ObjectExpression',
-          )
-        const Objects = ObjectSpreadElements.map(
-          ({ argument }) => argument,
-        ).filter(Boolean)
-        const converted = applyToNodes(Objects, convertObjectNode)
+      function convertObjectNode(ObjectNode) {
+        const converted =
+          sortPropertiesOnObjectNode(ObjectNode, {
+            get,
+            swap,
+          }) ||
+          cleanupRedundantAliasOnObjectPatternNode(ObjectNode, {
+            replace,
+          }) ||
+          cleanupRedundantQuoteOnObjectPatternNode(ObjectNode, {
+            replace,
+          })
         if (converted) {
           return converted
         }
-      }
-    }
 
-    const Objects = finder.findByTypes(parsed, [
-      NodeTypes.ObjectExpression,
-      NodeTypes.ObjectPattern,
-    ])
-    const converted = applyToNodes(Objects, convertObjectNode)
-    if (converted) {
-      return converted
-    }
-    return content
-  })
+        {
+          const ObjectSpreadElements = (ObjectNode.properties || [])
+            .filter(byType('SpreadElement'))
+            .filter(
+              ({ argument }) =>
+                argument && argument.type === 'ObjectExpression',
+            )
+          const Objects = ObjectSpreadElements.map(
+            ({ argument }) => argument,
+          ).filter(Boolean)
+          const converted = applyToNodes(Objects, convertObjectNode)
+          if (converted) {
+            return converted
+          }
+        }
+      }
+
+      const Objects = finder.findByTypes(parsed, [
+        NodeTypes.ObjectExpression,
+        NodeTypes.ObjectPattern,
+      ])
+      const converted = applyToNodes(Objects, convertObjectNode)
+      if (converted) {
+        return converted
+      }
+      return content
+    },
+    { name: 'processJSObject' },
+  )
 }
 
 module.exports = processJSObject

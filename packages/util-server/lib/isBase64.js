@@ -1,10 +1,9 @@
+'use strict'
 /**
  * @function isBase64
  * @param {string} data
  * @returns {boolean}
  */
-'use strict'
-
 const PREFIX_PATTERN = /^data:\w+\/[a-zA-Z0-9+\-.]+;base64/
 
 /** @lends isBase64 */

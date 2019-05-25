@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Define class mixin
  * @memberof module:@the-/util-ui
  * @function asHOC
  */
-'use strict'
-
 /** @lends module:@the-/util-ui.asHOC */
 function asHOC(decorator) {
   return function classMixin(ClassDescriptor) {
@@ -13,7 +12,7 @@ function asHOC(decorator) {
       const Class = ClassDescriptor
       return decorator(Class)
     }
-    throw new Error(`[asHOC] Not implemented yet`)
+    throw new Error('[asHOC] Not implemented yet')
   }
 }
 

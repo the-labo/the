@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for refreshMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('refresh-mix', () => {
   before(() => {})
 

@@ -4,8 +4,6 @@
  * @param {string} pattern
  * @param {Object} [options={}]
  */
-'use strict'
-
 const theResize = require('./lib/create')
 
 /** @lends theResizeTask */

@@ -50,10 +50,10 @@ async function main() {
           '.*.bud',
         ],
         {
-          [`require('${oldName}')`]: [`require('${newName}')`],
-          [`require('${oldName}/`]: [`require('${newName}/`],
           [`from '${oldName}'`]: [`from '${newName}'`],
           [`from '${oldName}/`]: [`from '${newName}/`],
+          [`require('${oldName}')`]: [`require('${newName}')`],
+          [`require('${oldName}/`]: [`require('${newName}/`],
         },
         { cwd: pkgDir },
       )

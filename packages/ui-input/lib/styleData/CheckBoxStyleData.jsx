@@ -79,7 +79,7 @@ function CheckBoxStyleData({
       },
       '.the-input-checkbox-item': {
         background: backgroundColor,
-        border: `1px solid #CCC`,
+        border: '1px solid #CCC',
         borderRadius: '4px',
         flexGow: '1',
         fontSize: 'smaller',

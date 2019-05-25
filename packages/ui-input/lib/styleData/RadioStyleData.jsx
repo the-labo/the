@@ -74,7 +74,7 @@ function RadioStyleData({
       },
       '.the-input-radio-item': {
         background: backgroundColor,
-        border: `1px solid #CCC`,
+        border: '1px solid #CCC',
         borderRadius: '4px',
         fontSize: 'smaller',
         margin: '4px',
@@ -115,7 +115,7 @@ function RadioStyleData({
           zIndex: 1,
         },
         background: backgroundColor,
-        border: `1px solid #CCC`,
+        border: '1px solid #CCC',
         borderRadius: '0',
         fontSize: 'smaller',
         margin: '4px -1px 4px 0',

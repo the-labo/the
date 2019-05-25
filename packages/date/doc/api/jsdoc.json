@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/date/lib"
+      "path": "lib"
     },
     "name": "@the-/date",
     "order": 3,
     "typicalname": "date",
-    "version": "15.4.3"
+    "version": "15.4.5"
   },
   {
     "description": "Date manipulator",
@@ -32,8 +32,8 @@
     "memberof": "module:@the-/date.TheDate",
     "meta": {
       "filename": "TheDate.js",
-      "lineno": 64,
-      "path": "/Users/okuni/Projects/the/packages/date/lib"
+      "lineno": 63,
+      "path": "lib"
     },
     "name": "format",
     "order": 7,
@@ -68,8 +68,8 @@
     "memberof": "module:@the-/date.TheDate",
     "meta": {
       "filename": "TheDate.js",
-      "lineno": 73,
-      "path": "/Users/okuni/Projects/the/packages/date/lib"
+      "lineno": 72,
+      "path": "lib"
     },
     "name": "fromNow",
     "order": 8,
@@ -94,8 +94,8 @@
     "memberof": "module:@the-/date.TheDate",
     "meta": {
       "filename": "TheDate.js",
-      "lineno": 82,
-      "path": "/Users/okuni/Projects/the/packages/date/lib"
+      "lineno": 81,
+      "path": "lib"
     },
     "name": "toDate",
     "order": 9,
@@ -119,8 +119,8 @@
     "memberof": "module:@the-/date.TheDate",
     "meta": {
       "filename": "TheDate.js",
-      "lineno": 90,
-      "path": "/Users/okuni/Projects/the/packages/date/lib"
+      "lineno": 89,
+      "path": "lib"
     },
     "name": "toJSON",
     "order": 10,
@@ -144,8 +144,8 @@
     "memberof": "module:@the-/date.TheDate",
     "meta": {
       "filename": "TheDate.js",
-      "lineno": 98,
-      "path": "/Users/okuni/Projects/the/packages/date/lib"
+      "lineno": 97,
+      "path": "lib"
     },
     "name": "toNumber",
     "order": 11,
@@ -169,8 +169,8 @@
     "memberof": "module:@the-/date.TheDate",
     "meta": {
       "filename": "TheDate.js",
-      "lineno": 106,
-      "path": "/Users/okuni/Projects/the/packages/date/lib"
+      "lineno": 105,
+      "path": "lib"
     },
     "name": "toString",
     "order": 12,
@@ -195,7 +195,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 29,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "add",
     "order": 16,
@@ -243,7 +243,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 45,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "addYears",
     "order": 17,
@@ -278,7 +278,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 54,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "addYear",
     "order": 18,
@@ -313,7 +313,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 63,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "addQuarters",
     "order": 19,
@@ -348,7 +348,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 72,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "addQuarter",
     "order": 20,
@@ -383,7 +383,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 81,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "addMonths",
     "order": 21,
@@ -418,7 +418,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 90,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "addMonth",
     "order": 22,
@@ -453,7 +453,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 99,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "addWeeks",
     "order": 23,
@@ -488,7 +488,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 108,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "addWeek",
     "order": 24,
@@ -523,7 +523,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 117,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "addDays",
     "order": 25,
@@ -558,7 +558,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 126,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "addDay",
     "order": 26,
@@ -593,7 +593,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 135,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "addHours",
     "order": 27,
@@ -628,7 +628,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 144,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "addHour",
     "order": 28,
@@ -663,7 +663,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 153,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "addMinutes",
     "order": 29,
@@ -698,7 +698,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 162,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "addMinute",
     "order": 30,
@@ -733,7 +733,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 171,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "addSeconds",
     "order": 31,
@@ -768,7 +768,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 180,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "addSecond",
     "order": 32,
@@ -803,7 +803,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 189,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "addMilliseconds",
     "order": 33,
@@ -838,7 +838,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 198,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "addMillisecond",
     "order": 34,
@@ -873,7 +873,7 @@
     "meta": {
       "filename": "endOfMix.js",
       "lineno": 28,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "endOf",
     "order": 37,
@@ -912,7 +912,7 @@
     "meta": {
       "filename": "endOfMix.js",
       "lineno": 43,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "endOfYear",
     "order": 38,
@@ -937,7 +937,7 @@
     "meta": {
       "filename": "endOfMix.js",
       "lineno": 51,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "endOfMonth",
     "order": 39,
@@ -962,7 +962,7 @@
     "meta": {
       "filename": "endOfMix.js",
       "lineno": 59,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "endOfQuarter",
     "order": 40,
@@ -987,7 +987,7 @@
     "meta": {
       "filename": "endOfMix.js",
       "lineno": 67,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "endOfWeek",
     "order": 41,
@@ -1012,7 +1012,7 @@
     "meta": {
       "filename": "endOfMix.js",
       "lineno": 75,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "endOfIsoWeek",
     "order": 42,
@@ -1037,7 +1037,7 @@
     "meta": {
       "filename": "endOfMix.js",
       "lineno": 83,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "endOfDay",
     "order": 43,
@@ -1062,7 +1062,7 @@
     "meta": {
       "filename": "endOfMix.js",
       "lineno": 91,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "endOfDate",
     "order": 44,
@@ -1087,7 +1087,7 @@
     "meta": {
       "filename": "endOfMix.js",
       "lineno": 99,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "endOfHour",
     "order": 45,
@@ -1112,7 +1112,7 @@
     "meta": {
       "filename": "endOfMix.js",
       "lineno": 107,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "endOfMinute",
     "order": 46,
@@ -1137,7 +1137,7 @@
     "meta": {
       "filename": "endOfMix.js",
       "lineno": 115,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "endOfSecond",
     "order": 47,
@@ -1162,7 +1162,7 @@
     "meta": {
       "filename": "getMix.js",
       "lineno": 27,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "get",
     "order": 50,
@@ -1201,7 +1201,7 @@
     "meta": {
       "filename": "getMix.js",
       "lineno": 41,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "getYear",
     "order": 51,
@@ -1226,7 +1226,7 @@
     "meta": {
       "filename": "getMix.js",
       "lineno": 49,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "getMonth",
     "order": 52,
@@ -1251,7 +1251,7 @@
     "meta": {
       "filename": "getMix.js",
       "lineno": 57,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "getDate",
     "order": 53,
@@ -1276,7 +1276,7 @@
     "meta": {
       "filename": "getMix.js",
       "lineno": 65,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "getHour",
     "order": 54,
@@ -1301,7 +1301,7 @@
     "meta": {
       "filename": "getMix.js",
       "lineno": 73,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "getMinute",
     "order": 55,
@@ -1326,7 +1326,7 @@
     "meta": {
       "filename": "getMix.js",
       "lineno": 81,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "getSecond",
     "order": 56,
@@ -1351,7 +1351,7 @@
     "meta": {
       "filename": "getMix.js",
       "lineno": 89,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "getMillisecond",
     "order": 57,
@@ -1375,8 +1375,8 @@
     "memberof": "MomentMixed",
     "meta": {
       "filename": "momentMix.js",
-      "lineno": 36,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "lineno": 35,
+      "path": "lib/mixins"
     },
     "name": "toMoment",
     "order": 61,
@@ -1402,7 +1402,7 @@
     "meta": {
       "filename": "setMix.js",
       "lineno": 35,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "set",
     "order": 64,
@@ -1449,7 +1449,7 @@
     "meta": {
       "filename": "setMix.js",
       "lineno": 54,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "setYear",
     "order": 65,
@@ -1483,7 +1483,7 @@
     "meta": {
       "filename": "setMix.js",
       "lineno": 63,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "setMonth",
     "order": 66,
@@ -1517,7 +1517,7 @@
     "meta": {
       "filename": "setMix.js",
       "lineno": 72,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "setDate",
     "order": 67,
@@ -1551,7 +1551,7 @@
     "meta": {
       "filename": "setMix.js",
       "lineno": 81,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "setHour",
     "order": 68,
@@ -1585,7 +1585,7 @@
     "meta": {
       "filename": "setMix.js",
       "lineno": 90,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "setMinute",
     "order": 69,
@@ -1619,7 +1619,7 @@
     "meta": {
       "filename": "setMix.js",
       "lineno": 99,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "setSecond",
     "order": 70,
@@ -1653,7 +1653,7 @@
     "meta": {
       "filename": "setMix.js",
       "lineno": 108,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "setMillisecond",
     "order": 71,
@@ -1687,7 +1687,7 @@
     "meta": {
       "filename": "startOfMix.js",
       "lineno": 28,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "startOf",
     "order": 74,
@@ -1726,7 +1726,7 @@
     "meta": {
       "filename": "startOfMix.js",
       "lineno": 43,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "startOfYear",
     "order": 75,
@@ -1751,7 +1751,7 @@
     "meta": {
       "filename": "startOfMix.js",
       "lineno": 51,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "startOfMonth",
     "order": 76,
@@ -1776,7 +1776,7 @@
     "meta": {
       "filename": "startOfMix.js",
       "lineno": 59,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "startOfQuarter",
     "order": 77,
@@ -1801,7 +1801,7 @@
     "meta": {
       "filename": "startOfMix.js",
       "lineno": 67,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "startOfWeek",
     "order": 78,
@@ -1826,7 +1826,7 @@
     "meta": {
       "filename": "startOfMix.js",
       "lineno": 75,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "startOfIsoWeek",
     "order": 79,
@@ -1851,7 +1851,7 @@
     "meta": {
       "filename": "startOfMix.js",
       "lineno": 83,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "startOfDay",
     "order": 80,
@@ -1876,7 +1876,7 @@
     "meta": {
       "filename": "startOfMix.js",
       "lineno": 91,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "startOfDate",
     "order": 81,
@@ -1901,7 +1901,7 @@
     "meta": {
       "filename": "startOfMix.js",
       "lineno": 99,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "startOfHour",
     "order": 82,
@@ -1926,7 +1926,7 @@
     "meta": {
       "filename": "startOfMix.js",
       "lineno": 107,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "startOfMinute",
     "order": 83,
@@ -1951,7 +1951,7 @@
     "meta": {
       "filename": "startOfMix.js",
       "lineno": 115,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "startOfSecond",
     "order": 84,
@@ -1976,7 +1976,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 29,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtract",
     "order": 87,
@@ -2024,7 +2024,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 45,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtractYears",
     "order": 88,
@@ -2059,7 +2059,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 54,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtractYear",
     "order": 89,
@@ -2094,7 +2094,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 63,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtractQuarters",
     "order": 90,
@@ -2129,7 +2129,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 72,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtractQuarter",
     "order": 91,
@@ -2164,7 +2164,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 81,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtractMonths",
     "order": 92,
@@ -2199,7 +2199,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 90,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtractMonth",
     "order": 93,
@@ -2234,7 +2234,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 99,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtractWeeks",
     "order": 94,
@@ -2269,7 +2269,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 108,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtractWeek",
     "order": 95,
@@ -2304,7 +2304,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 117,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtractDays",
     "order": 96,
@@ -2339,7 +2339,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 126,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtractDay",
     "order": 97,
@@ -2374,7 +2374,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 135,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtractHours",
     "order": 98,
@@ -2409,7 +2409,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 144,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtractHour",
     "order": 99,
@@ -2444,7 +2444,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 153,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtractMinutes",
     "order": 100,
@@ -2479,7 +2479,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 162,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtractMinute",
     "order": 101,
@@ -2514,7 +2514,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 171,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtractSeconds",
     "order": 102,
@@ -2549,7 +2549,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 180,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtractSecond",
     "order": 103,
@@ -2584,7 +2584,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 189,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtractMilliseconds",
     "order": 104,
@@ -2619,7 +2619,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 198,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtractMillisecond",
     "order": 105,
@@ -2662,8 +2662,8 @@
     "memberof": "module:@the-/date",
     "meta": {
       "filename": "TheDate.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/date/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheDate",
     "order": 4,
@@ -2677,8 +2677,8 @@
     "memberof": "module:@the-/date",
     "meta": {
       "filename": "TheDate.js",
-      "lineno": 29,
-      "path": "/Users/okuni/Projects/the/packages/date/lib"
+      "lineno": 28,
+      "path": "lib"
     },
     "name": "TheDateBase",
     "order": 6,
@@ -2692,8 +2692,8 @@
     "memberof": "module:@the-/date",
     "meta": {
       "filename": "Durations.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/date/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "Durations",
     "order": 2,
@@ -2707,8 +2707,8 @@
     "memberof": "module:@the-/date",
     "meta": {
       "filename": "units.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/date/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "units",
     "order": 13,
@@ -2723,7 +2723,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "mixins",
     "order": 58,
@@ -2737,8 +2737,8 @@
     "memberof": "module:@the-/date",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/date/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -2772,8 +2772,8 @@
     "memberof": "module:@the-/date",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/date/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,
@@ -2798,7 +2798,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "addMix",
     "order": 14,
@@ -2834,7 +2834,7 @@
     "meta": {
       "filename": "endOfMix.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "endOf",
     "order": 35,
@@ -2870,7 +2870,7 @@
     "meta": {
       "filename": "getMix.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "getMix",
     "order": 48,
@@ -2904,8 +2904,8 @@
     "memberof": "module:@the-/date.mixins",
     "meta": {
       "filename": "momentMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "momentMix",
     "order": 59,
@@ -2941,7 +2941,7 @@
     "meta": {
       "filename": "setMix.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "setMix",
     "order": 62,
@@ -2977,7 +2977,7 @@
     "meta": {
       "filename": "startOfMix.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "startOf",
     "order": 72,
@@ -3013,7 +3013,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "subtractMix",
     "order": 85,
@@ -3047,7 +3047,7 @@
     "meta": {
       "filename": "addMix.js",
       "lineno": 16,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "AddMixed",
     "order": 15,
@@ -3061,7 +3061,7 @@
     "meta": {
       "filename": "endOfMix.js",
       "lineno": 16,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "EndOfMixed",
     "order": 36,
@@ -3075,7 +3075,7 @@
     "meta": {
       "filename": "getMix.js",
       "lineno": 15,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "GetMixed",
     "order": 49,
@@ -3088,8 +3088,8 @@
     "memberof": "module:@the-/date.mixins.momentMix",
     "meta": {
       "filename": "momentMix.js",
-      "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "lineno": 21,
+      "path": "lib/mixins"
     },
     "name": "MomentMixed",
     "order": 60,
@@ -3103,7 +3103,7 @@
     "meta": {
       "filename": "setMix.js",
       "lineno": 16,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "SetMixed",
     "order": 63,
@@ -3117,7 +3117,7 @@
     "meta": {
       "filename": "startOfMix.js",
       "lineno": 16,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "StartOfMixed",
     "order": 73,
@@ -3131,7 +3131,7 @@
     "meta": {
       "filename": "subtractMix.js",
       "lineno": 16,
-      "path": "/Users/okuni/Projects/the/packages/date/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "SubtractMixed",
     "order": 86,

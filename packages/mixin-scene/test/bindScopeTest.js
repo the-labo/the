@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for bindScope.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const bindScope = require('../lib/bindScope')
 

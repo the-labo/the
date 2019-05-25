@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for applyConverter.
  * Runs with mocha.
  */
-'use strict'
-
 describe('apply-converter', () => {
   before(() => {})
 

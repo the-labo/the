@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Get app cache from WorkerGlobalScope
  * @function appCache
@@ -5,8 +6,6 @@
  * @param {string} [version='unknown'] - Version of app
  * @param {Object} [options={}]
  */
-'use strict'
-
 const { unlessProduction } = require('@the-/check')
 
 const SCOPE_SEPARATOR = '/'

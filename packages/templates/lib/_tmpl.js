@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Resolve template file path.
  * @function _tmpl
@@ -5,8 +6,6 @@
  * @param {string} name - Template name.
  * @returns {string} - Resolved path.
  */
-'use strict'
-
 const path = require('path')
 const TMPL_DIR = path.resolve(__dirname, '../asset/templates')
 

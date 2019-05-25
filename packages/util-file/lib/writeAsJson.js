@@ -1,3 +1,4 @@
+'use strict'
 /**
  * @memberof module:@the-/util-file
  * @function writeAsJson
@@ -7,8 +8,6 @@
  * @param {boolean} [options.sort=true]
  * @returns {Promise}
  */
-'use strict'
-
 const { mkdirpAsync, writeFileAsync } = require('asfs')
 const { sortProperties } = require('fmtjson')
 const JSON5 = require('json5')

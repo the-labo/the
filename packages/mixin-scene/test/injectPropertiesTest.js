@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for injectProperties.
  * Runs with mocha.
  */
-'use strict'
-
 describe('inject-properties', () => {
   before(() => {})
 

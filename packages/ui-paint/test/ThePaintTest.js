@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for ThePaint.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const ThePaint = require('../shim/ThePaint').default

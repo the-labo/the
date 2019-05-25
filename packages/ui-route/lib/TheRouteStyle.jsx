@@ -9,8 +9,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheRoute */
 const TheRouteStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-button-style', className)}
+    id={id}
     styles={TheRouteStyle.data(options)}
   />
 )

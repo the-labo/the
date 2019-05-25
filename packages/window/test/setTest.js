@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for set.
  * Runs with mocha.
  */
-'use strict'
-
 describe('set', () => {
   before(() => {})
 

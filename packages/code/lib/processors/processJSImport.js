@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Process import statement
  * @memberof module:@the-/code.processors
@@ -5,8 +6,6 @@
  * @param {string} content
  * @returns {string} processed
  */
-'use strict'
-
 const path = require('path')
 const { parse, walk } = require('@the-/ast')
 const {
@@ -23,9 +22,7 @@ const { weightModuleName } = require('../helpers/weightHelper')
 function processJSImport(content, options = {}) {
   const { filename } = options
 
-  const importName = (d) => {
-    return d.source.value
-  }
+  const importName = (d) => d.source.value
 
   return applyConverter(content, (content) => {
     const parsed = parse(content, options)
@@ -49,9 +46,9 @@ function processJSImport(content, options = {}) {
       ImportDeclaration: (node) => ImportDeclarations.push(node),
       VariableDeclaration: (node) => VariableDeclarations.push(node),
     })
-    const ImportDeclarationsToSort = ImportDeclarations.filter((dec) => {
-      return dec.specifiers.length > 0
-    })
+    const ImportDeclarationsToSort = ImportDeclarations.filter(
+      (dec) => dec.specifiers.length > 0,
+    )
     const sortedByStart = [...ImportDeclarationsToSort].sort(
       (a, b) => a.start - b.start,
     )

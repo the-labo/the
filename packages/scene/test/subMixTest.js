@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for subMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('sub-mix', () => {
   before(() => {})
 

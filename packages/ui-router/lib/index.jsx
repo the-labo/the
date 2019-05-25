@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-router
  * @typicalname uiRouter
- * @version 15.4.3
+ * @version 15.4.5
  * @description Router of the-components
  */
 'use strict'

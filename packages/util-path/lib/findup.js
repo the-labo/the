@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Find up file
  * @memberof module:@the-/util-path
@@ -6,8 +7,6 @@
  * @param {Object} [options={}] - Optional settings
  * @returns {?string}
  */
-'use strict'
-
 const path = require('path')
 const exists = require('./helpers/exists')
 

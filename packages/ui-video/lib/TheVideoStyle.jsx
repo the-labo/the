@@ -10,8 +10,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheVideo */
 const TheVideoStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={classnames('the-video-style', className)}
+    id={id}
     styles={TheVideoStyle.data(options)}
   />
 )

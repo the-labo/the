@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for validateLocales.
  * Runs with mocha.
  */
-'use strict'
-
 const validateLocales = require('../lib/helpers/validateLocales')
 
 describe('validate-locales', () => {

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for mergedLocales.
  * Runs with mocha.
  */
-'use strict'
-
 describe('merged-locales', () => {
   before(() => {})
 

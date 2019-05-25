@@ -33,20 +33,22 @@ class TheFlickImage extends React.Component {
         <div className='the-flick-image-inner' ref={this.innerRef}>
           <TheCondition if={isVideo}>
             <TheVideo
+              alt={alt}
               className={c('the-flick-image-image')}
               controls
               onLoad={this.handleLoad}
               preload='metadata'
               scale='fit'
-              {...{ alt, src }}
+              src={src}
             />
           </TheCondition>
           <TheCondition unless={isVideo}>
             <TheImage
+              alt={alt}
               className={c('the-flick-image-image')}
-              scale='fit'
-              {...{ alt, src }}
               height='auto'
+              scale='fit'
+              src={src}
               width='auto'
             />
           </TheCondition>

@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Mixin for lock
  * @memberof module:@the-/secret.mixins
  * @function lockMix
  */
-'use strict'
-
 const { delSync, readAsJsonSync, writeAsJsonSync } = require('@the-/util-file')
 
 const LOCK_DURATION = 1500

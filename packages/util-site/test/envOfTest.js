@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for envOf.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const envOf = require('../lib/envOf')
 

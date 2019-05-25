@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheSeal.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const TheSeal = require('../lib/TheSeal')
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withHistory.
  * Runs with mocha.
  */
-'use strict'
-
 describe('with-history', () => {
   before(() => {})
 

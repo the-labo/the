@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/controller
  * @class TheCtrl
  */
-'use strict'
-
 const debug = require('debug')('the:ctrl')
 const passed = (date) => new Date() - date
 

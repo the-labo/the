@@ -1,5 +1,4 @@
 'use strict'
-
 const t = require('@babel/types')
 const explode = require('./explode')
 
@@ -13,15 +12,15 @@ exports.simple = function simple(node, visitors, state) {
     const { enter, exit } = visitors[node.type] || {}
 
     if (enter) {
-      for (let visitor of enter) {
+      for (const visitor of enter) {
         visitor(node, state)
       }
     }
 
-    for (let key of t.VISITOR_KEYS[node.type] || []) {
-      let subNode = node[key]
+    for (const key of t.VISITOR_KEYS[node.type] || []) {
+      const subNode = node[key]
       if (Array.isArray(subNode)) {
-        for (let subSubNode of subNode) {
+        for (const subSubNode of subNode) {
           c(subSubNode)
         }
       } else {
@@ -30,7 +29,7 @@ exports.simple = function simple(node, visitors, state) {
     }
 
     if (exit) {
-      for (let visitor of exit) {
+      for (const visitor of exit) {
         visitor(node, state)
       }
     }
@@ -41,26 +40,26 @@ exports.ancestor = function ancestor(node, visitors, state) {
   if (!node) return
 
   visitors = explode(visitors)
-  let ancestors = []
+  const ancestors = []
 
   ;(function c(node) {
     if (!node) return
 
     const { enter, exit } = visitors[node.type] || {}
 
-    let isNew = node !== ancestors[ancestors.length - 1]
+    const isNew = node !== ancestors[ancestors.length - 1]
     if (isNew) ancestors.push(node)
 
     if (enter) {
-      for (let visitor of enter) {
+      for (const visitor of enter) {
         visitor(node, state || ancestors, ancestors)
       }
     }
 
-    for (let key of t.VISITOR_KEYS[node.type] || []) {
-      let subNode = node[key]
+    for (const key of t.VISITOR_KEYS[node.type] || []) {
+      const subNode = node[key]
       if (Array.isArray(subNode)) {
-        for (let subSubNode of subNode) {
+        for (const subSubNode of subNode) {
           c(subSubNode)
         }
       } else {
@@ -69,7 +68,7 @@ exports.ancestor = function ancestor(node, visitors, state) {
     }
 
     if (exit) {
-      for (let visitor of exit) {
+      for (const visitor of exit) {
         visitor(node, state || ancestors, ancestors)
       }
     }
@@ -88,14 +87,14 @@ exports.recursive = function recursive(node, visitors, state) {
     const { enter } = visitors[node.type] || {}
 
     if (enter && enter.length) {
-      for (let visitor of enter) {
+      for (const visitor of enter) {
         visitor(node, state, c)
       }
     } else {
-      for (let key of t.VISITOR_KEYS[node.type] || []) {
-        let subNode = node[key]
+      for (const key of t.VISITOR_KEYS[node.type] || []) {
+        const subNode = node[key]
         if (Array.isArray(subNode)) {
-          for (let subSubNode of subNode) {
+          for (const subSubNode of subNode) {
             c(subSubNode)
           }
         } else {

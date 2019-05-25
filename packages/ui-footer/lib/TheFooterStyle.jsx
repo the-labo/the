@@ -10,8 +10,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheFooter */
 const TheFooterStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={classnames('the-footer-style', className)}
+    id={id}
     styles={TheFooterStyle.data(options)}
   />
 )

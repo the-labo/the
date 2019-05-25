@@ -84,7 +84,7 @@ class TheRoute extends React.Component {
 
   handlePopTo(popPath) {
     if (!popPath) {
-      throw new Error(`[TheRoute] popPath is required`)
+      throw new Error('[TheRoute] popPath is required')
     }
     const { history } = this
     if (typeof popPath !== 'string') {
@@ -96,7 +96,7 @@ class TheRoute extends React.Component {
     }
     this.setState({ gone: true })
     if (!this.props.popPath) {
-      console.warn(`[TheRoute] No where to pop`)
+      console.warn('[TheRoute] No where to pop')
       return
     }
     clearTimeout(this.popTimer)
@@ -116,11 +116,16 @@ class TheRoute extends React.Component {
     const { exact, location, path, scrollToTop, strict } = props
 
     const element = (
-      <Route {...{ exact, path, strict }} children={this.handleChildren} />
+      <Route
+        children={this.handleChildren}
+        exact={exact}
+        path={path}
+        strict={strict}
+      />
     )
 
     return scrollToTop ? (
-      <TheRoute.ScrollToTop {...{ location }}>{element}</TheRoute.ScrollToTop>
+      <TheRoute.ScrollToTop location={location}>{element}</TheRoute.ScrollToTop>
     ) : (
       element
     )

@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 'use strict'
 
 const theScaffold = require('@the-/scaffold')

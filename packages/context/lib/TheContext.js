@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Context
  * @memberof @the-/context
@@ -5,8 +6,6 @@
  * @param {Object} values
  * @param {Object} [options={}] - Optional settings
  */
-'use strict'
-
 const React = require('react')
 const { TheState } = require('@the-/state')
 const contextEntryFor = require('./helpers/contextEntryFor')

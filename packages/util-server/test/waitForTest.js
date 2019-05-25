@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for waitFor.
  * Runs with mocha.
  */
-'use strict'
-
 const waitFor = require('../lib/waitFor')
 
 describe('wait-for-file', () => {

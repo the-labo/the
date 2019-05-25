@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheQueue.
  * Runs with mocha.
  */
-'use strict'
-
 const asleep = require('asleep')
 const { deepEqual, equal, ok } = require('assert').strict
 const TheQueue = require('../lib/TheQueue')

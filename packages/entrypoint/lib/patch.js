@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Apply patch
  * @memberof module:@the-/entrypoint
  * @function patch
  */
-'use strict'
-
 const { isFirefox, isiOS, unlessProduction } = require('@the-/check')
 const { get } = require('@the-/window')
 const createStyleElement = require('./helpers/createStyleElement')
@@ -38,7 +37,7 @@ Object.assign(patch, {
       },
     )
     unlessProduction(() => {
-      console.log(`[TheEntrypoint] firefox patch apply`)
+      console.log('[TheEntrypoint] firefox patch apply')
     })
   },
   ios() {
@@ -59,7 +58,7 @@ textarea {
       },
     )
     unlessProduction(() => {
-      console.log(`[TheEntrypoint] iOS patch apply`)
+      console.log('[TheEntrypoint] iOS patch apply')
     })
   },
 })

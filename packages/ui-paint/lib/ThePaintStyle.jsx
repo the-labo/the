@@ -9,8 +9,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for ThePaint */
 const ThePaintStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-paint-style', className)}
+    id={id}
     styles={ThePaintStyle.data(options)}
   />
 )
@@ -25,8 +25,8 @@ ThePaintStyle.defaultProps = {
   options: {},
 }
 
-ThePaintStyle.data = () => {
-  return asStyleData({
+ThePaintStyle.data = () =>
+  asStyleData({
     '.the-paint': {},
     '.the-paint-canvas': {
       background: 'transparent',
@@ -43,6 +43,5 @@ ThePaintStyle.data = () => {
       top: 0,
     },
   })
-}
 
 export default ThePaintStyle

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for JSDoc.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const JSDoc = require('../lib/JSDoc')
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheDriverSequelize.
  * Runs with mocha.
  */
-'use strict'
-
 const { unlinkAsync } = require('asfs')
 const { deepStrictEqual: deepEqual, ok, strictEqual: equal } = require('assert')
 const {
@@ -279,7 +278,7 @@ describe('the-driver-sequelize', function() {
         {},
       ),
     })
-    const a1 = await driver.create('X', { [p[3]]: 3, [p[5]]: 5, [p[1]]: 1 })
+    const a1 = await driver.create('X', { [p[1]]: 1, [p[3]]: 3, [p[5]]: 5 })
     const a2 = await driver.update('X', a1.id, { [p[4]]: 4 })
     equal(a2[p[4]], 4)
     const a22 = await driver.update('X', a1.id, { [p[4]]: 4 })

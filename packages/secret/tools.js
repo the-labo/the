@@ -2,8 +2,6 @@
  * Handy tools
  * @module @the-/secret/tools
  */
-'use strict'
-
 const aglob = require('aglob')
 const path = require('path')
 const theSecret = require('./lib/create')

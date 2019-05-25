@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for setupSqlite.
  * Runs with mocha.
  */
-'use strict'
-
 describe('setup-sqlite', () => {
   before(() => {})
 

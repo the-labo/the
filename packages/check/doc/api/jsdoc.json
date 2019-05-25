@@ -8,7 +8,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/check/lib"
+      "path": "lib"
     },
     "name": "@the-/check",
     "order": 1,
@@ -23,8 +23,8 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "canTouch.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/check/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "canTouch",
     "order": 0,
@@ -47,8 +47,8 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "isBrowser.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/check/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "isBrowser",
     "order": 2,
@@ -71,8 +71,8 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "isChrome.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/check/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "isChrome",
     "order": 3,
@@ -95,8 +95,8 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "isFirefox.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/check/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "isFirefox",
     "order": 4,
@@ -119,8 +119,8 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "isiOS.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/check/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "isiOS",
     "order": 5,
@@ -143,8 +143,8 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "isMacOS.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/check/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "isMacOS",
     "order": 6,
@@ -167,8 +167,8 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "isProduction.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/check/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "isProduction",
     "order": 7,
@@ -192,8 +192,8 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "unlessProduction.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/check/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "unlessProduction",
     "order": 8,

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Resource for the DB
  * @memberof module:@the-/resource
@@ -8,8 +9,6 @@
  * @augments module:@the-/resource.mixins.queueMix~QueueMixed
  * @augments module:@the-/resource.mixins.writeOnceMix~WriteOnceMixed
  */
-'use strict'
-
 const { Collection } = require('clay-collection')
 const { ClayResource } = require('clay-resource')
 const { create: clayResourceName } = require('clay-resource-name')
@@ -63,7 +62,7 @@ class TheResource extends TheResourceBase {
    */
   refOf(id) {
     if (!id) {
-      throw new Error(`[TheResource.refOf] id is required`)
+      throw new Error('[TheResource.refOf] id is required')
     }
     const { $ref } = arguments[0]
     if ($ref) {

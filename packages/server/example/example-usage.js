@@ -1,5 +1,4 @@
 'use strict'
-
 const React = require('react')
 const theServer = require('@the-/server')
 const { Ctrl, Stream } = theServer

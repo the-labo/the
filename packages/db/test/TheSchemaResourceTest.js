@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheSchemaResource.
  * Runs with mocha.
  */
-'use strict'
-
 describe('the-schema-resource', () => {
   before(() => {})
 

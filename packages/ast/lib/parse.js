@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Parse source code
  * @memberof module:@the-/ast
@@ -7,8 +8,7 @@
  * @throws {Error} Parser file error
  * @returns {Object} parsed Object
  */
-'use strict'
-
+const { EOL } = require('os')
 const babelParser = require('@babel/parser')
 
 /** @lends module:@the-/ast.parse */
@@ -38,10 +38,14 @@ function parse(content, options = {}) {
       sourceType,
     })
   } catch (e) {
+    const code = String(content)
+      .split(EOL)
+      .map((line, i) => `${String(i).padStart(4, ' ')}: ${line}`)
+      .join(EOL)
     throw new Error(`[@the-/ast] ${e.message}
 
 \`\`\`javascript
-${content}
+${code}
 \`\`\`
 
 `)

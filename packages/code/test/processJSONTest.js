@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for processJSON.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const processJSON = require('../lib/processors/processJSON')
 
@@ -14,7 +13,7 @@ describe('process-json', () => {
 
   it('Do test', async () => {
     equal(
-      await processJSON(`{"foo":"bar", "a":1}`),
+      await processJSON('{"foo":"bar", "a":1}'),
       `{
   "a": 1,
   "foo": "bar"

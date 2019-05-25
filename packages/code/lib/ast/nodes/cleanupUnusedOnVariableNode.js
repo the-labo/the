@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupUnusedOnVariableNode
  */
-'use strict'
-
 const {
   isEmptyObjectPattern,
   isRequireExpression,
@@ -28,7 +27,7 @@ function cleanupUnusedOnVariableNode(
           VariableDeclaration.loc.start.column === 0
             ? VariableDeclaration.start - 1
             : VariableDeclaration.start
-        const end = VariableDeclaration.end
+        const { end } = VariableDeclaration
         return replace([start, end], '')
       }
       const start = prevDeclaration
@@ -58,9 +57,7 @@ function cleanupUnusedOnVariableNode(
       (Identifier) => Identifier !== id,
     )
       .filter((Identifier) => Identifier !== id)
-      .filter((Identifier) => {
-        return Identifier.name === id.name
-      })
+      .filter((Identifier) => Identifier.name === id.name)
     const unused = usages.length === 0
     if (!unused) {
       continue

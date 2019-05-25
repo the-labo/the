@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for instanceMethodNamesFor.
  * Runs with mocha.
  */
-'use strict'
-
 describe('instance-method-names-for', () => {
   before(() => {})
 

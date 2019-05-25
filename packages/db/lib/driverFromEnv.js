@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Create driver from env
  * @memberof module:@the-/db
  * @function driverFromEnv
  */
-'use strict'
-
 const mkdirp = require('mkdirp')
 const path = require('path')
 const { isProduction } = require('@the-/check')
@@ -45,7 +44,7 @@ function driverFromEnv(env) {
       })
     case 'mysql':
     case 'sqlite':
-      throw new Error(`No longer supported`)
+      throw new Error('No longer supported')
     case 'rdb/mysql':
       return require('the-driver-rdb')({
         database,

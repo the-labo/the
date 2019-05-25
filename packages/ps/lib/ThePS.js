@@ -1,3 +1,4 @@
+'use strict'
 /**
  * @memberof module:@the-/ps
  * @class ThePS
@@ -5,8 +6,6 @@
  * @param {Object} [options={}] - Optional settings
  * @param {boolean} [options.logging=false] - Enable logs
  */
-'use strict'
-
 const asleep = require('asleep')
 const fs = require('fs')
 const mkdirp = require('mkdirp')
@@ -85,12 +84,12 @@ class ThePS {
       )
       const abort = exists && !(await this.canKill(pid))
       if (abort) {
-        throw new Error(`[the-ps] Failed to acquire`)
+        throw new Error('[the-ps] Failed to acquire')
       }
       try {
         const killed = await this.kill(pid)
         if (killed) {
-          this.log(`[the-ps] Process killed:`, killed)
+          this.log('[the-ps] Process killed:', killed)
         }
       } catch (e) {
         // Do nothing
@@ -99,7 +98,7 @@ class ThePS {
     const { filename } = this
     this.write()
     this.log(
-      `[the-ps] PID file created:`,
+      '[the-ps] PID file created:',
       path.relative(process.cwd(), filename),
     )
 
@@ -107,7 +106,7 @@ class ThePS {
       const cleaned = this.cleanup()
       if (cleaned) {
         this.log(
-          `[the-ps] PID file deleted:`,
+          '[the-ps] PID file deleted:',
           path.relative(process.cwd(), filename),
         )
       }

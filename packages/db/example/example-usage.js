@@ -1,5 +1,4 @@
 'use strict'
-
 const { TheDB } = require('@the-/db')
 const {
   DataTypes: { STRING },
@@ -27,7 +26,7 @@ class UserResource extends TheResource {
   static entityClass(ResourceEntity) {
     return class UserResourceEntity extends ResourceEntity {
       get fullName() {
-        let { firstName, lastName } = this
+        const { firstName, lastName } = this
         return [firstName, lastName].filter(Boolean).join(' ')
       }
     }

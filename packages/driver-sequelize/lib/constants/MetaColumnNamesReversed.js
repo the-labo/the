@@ -1,10 +1,9 @@
+'use strict'
 /**
  * @memberof module:@the-/driver-sequelize.constants
  * @enum {string}
  * @name MetaColumnNamesReversed
  */
-'use strict'
-
 const MetaColumnNames = require('./MetaColumnNames')
 
 /** @lends module:@the-/driver-sequelize.constantsMetaColumnNamesReversed */

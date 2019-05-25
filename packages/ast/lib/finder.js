@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Find node from node
  * @memberof module:@the-/ast
  * @namespace finder
  */
-'use strict'
-
 const walk = require('./walk')
 
 const finder = Object.freeze(

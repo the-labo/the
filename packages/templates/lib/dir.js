@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Define bud for dir
  * @memberof module:@the-/templates
@@ -5,8 +6,6 @@
  * @param {Object} config
  * @returns {Object}
  */
-'use strict'
-
 const aglob = require('aglob')
 const fs = require('fs')
 const path = require('path')
@@ -14,13 +13,10 @@ const reserved = require('reserved')
 const _tmpl = require('./_tmpl')
 const assert = require('@the-/assert')('[@the-/templates][dir]')
 
-const shouldRequire = (name) => {
-  return (
-    !/^[._]/.test(name) &&
-    !['index.jsx', 'index.js', 'package.json'].includes(name) &&
-    ['.jsx', '.js', '.json', '.mjs', ''].includes(path.extname(name))
-  )
-}
+const shouldRequire = (name) =>
+  !/^[._]/.test(name) &&
+  !['index.jsx', 'index.js', 'package.json'].includes(name) &&
+  ['.jsx', '.js', '.json', '.mjs', ''].includes(path.extname(name))
 
 const handleRestConfig = (rest, at) => {
   const restKeys = Object.keys(rest)
@@ -55,7 +51,7 @@ function dir(config) {
       return {
         name,
         path: pathName,
-        varName: (varNameChanged ? name + '_' : name) + '_',
+        varName: `${varNameChanged ? `${name}_` : name}_`,
         varNameChanged,
       }
     })
@@ -102,7 +98,7 @@ Object.assign(dir, {
             path.relative(dirname, path.dirname(filename)),
             basename,
           ),
-          varName: (varNameChanged ? name + '_' : name) + '_',
+          varName: `${varNameChanged ? `${name}_` : name}_`,
           varNameChanged,
         }
       })

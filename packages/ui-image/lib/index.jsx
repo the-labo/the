@@ -2,7 +2,7 @@
 /**
  * @module @the-/ui-image
  * @typicalname uiImage
- * @version 15.4.4
+ * @version 15.4.5
  * @description Image of the-components
  */
 'use strict'

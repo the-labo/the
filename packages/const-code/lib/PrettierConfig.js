@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Configuration for prettier
  * @memberof module:@the-/const-code
  * @namespace PrettierConfig
  */
-'use strict'
-
 module.exports = Object.freeze(
   /** @lends module:@the-/const-code.PrettierConfig */
   {

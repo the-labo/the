@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create "callRule" lint
  * @memberof module:@the-/lint.rules
@@ -6,8 +7,6 @@
  * @param {Object} keypathArguments
  * @returns {function()} Lint function
  */
-'use strict'
-
 const { has } = require('json-pointer')
 const path = require('path')
 const { parse, walk } = require('@the-/ast')
@@ -16,7 +15,7 @@ const { parse, walk } = require('@the-/ast')
 function callRule(config) {
   const { keypathArguments = {}, ...rest } = config
   if (Object.keys(rest).length > 0) {
-    console.warn(`[callRule] Unknown options`, Object.keys(rest))
+    console.warn('[callRule] Unknown options', Object.keys(rest))
   }
   return async function callRuleCheck({ content, filename, report }) {
     const parsed = parse(String(content), {
@@ -33,14 +32,14 @@ function callRule(config) {
         ({ callee }) => callee.name === name,
       )
       for (const expression of expressions) {
-        const stringArgs = expression['arguments'].filter(
+        const stringArgs = expression.arguments.filter(
           ({ type }) => type === 'StringLiteral',
         )
         for (const arg of stringArgs) {
-          let value = arg.value
-          const key = ('/' + value.replace(/\./g, '/')).replace(/^\/+/, '/')
+          const { value } = arg
+          const key = `/${value.replace(/\./g, '/')}`.replace(/^\/+/, '/')
           const ok = has(targetModule, key) || value in targetModule
-          let { column, line } = expression.loc.start
+          const { column, line } = expression.loc.start
           !ok &&
             report('Keypath not found', {
               actual: true,

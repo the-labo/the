@@ -1,11 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/code.processors
  * @function processJSBinaryExpression
  * @param {string} content
  * @returns {string} processed
  */
-'use strict'
-
 const {
   constants: { NodeTypes },
   finder,
@@ -18,43 +17,47 @@ const contentAccess = require('../helpers/contentAccess')
 
 /** @lends module:@the-/code.processors.processJSBinaryExpression */
 function processJSBinaryExpression(content, options = {}) {
-  return applyConverter(content, (content) => {
-    const parsed = parse(content, options)
-    const { get, replace } = contentAccess(content)
+  return applyConverter(
+    content,
+    (content) => {
+      const parsed = parse(content, options)
+      const { get, replace } = contentAccess(content)
 
-    const BinaryExpressions = finder.findByTypes(parsed, [
-      NodeTypes.BinaryExpression,
-    ])
+      const BinaryExpressions = finder.findByTypes(parsed, [
+        NodeTypes.BinaryExpression,
+      ])
 
-    for (const BinaryExpression of BinaryExpressions) {
-      const { left, operator, right } = BinaryExpression
-      const StringTypes = [NodeTypes.StringLiteral, NodeTypes.TemplateLiteral]
-      const isStringConcat =
-        operator === '+' &&
-        [left, right].some((side) => StringTypes.includes(side.type))
-      if (isStringConcat) {
-        const merged = mergeStringConcatenateOnBinaryExpressionNode(
-          BinaryExpression,
-          {
-            get,
-            replace,
-          },
-        )
-        if (merged) {
-          return merged
+      for (const BinaryExpression of BinaryExpressions) {
+        const { left, operator, right } = BinaryExpression
+        const StringTypes = [NodeTypes.StringLiteral, NodeTypes.TemplateLiteral]
+        const isStringConcat =
+          operator === '+' &&
+          [left, right].some((side) => StringTypes.includes(side.type))
+        if (isStringConcat) {
+          const merged = mergeStringConcatenateOnBinaryExpressionNode(
+            BinaryExpression,
+            {
+              get,
+              replace,
+            },
+          )
+          if (merged) {
+            return merged
+          }
+        }
+
+        const normalized = normalizeBinaryExpressionNode(BinaryExpression, {
+          get,
+          replace,
+        })
+        if (normalized) {
+          return normalized
         }
       }
-
-      const normalized = normalizeBinaryExpressionNode(BinaryExpression, {
-        get,
-        replace,
-      })
-      if (normalized) {
-        return normalized
-      }
-    }
-    return content
-  })
+      return content
+    },
+    { name: 'processJSBinaryExpression' },
+  )
 }
 
 module.exports = processJSBinaryExpression

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for keepMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('keep-mix', () => {
   before(() => {})
 

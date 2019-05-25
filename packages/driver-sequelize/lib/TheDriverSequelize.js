@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof @the-/driver-sequelize
  * @class TheDriverSequelize
  */
-'use strict'
-
 const amkdirp = require('amkdirp')
 const clayCollection = require('clay-collection')
 const { Driver } = require('clay-driver-base')
@@ -62,9 +61,9 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
   assertOpen() {
     if (this.closed) {
       if (!isProduction()) {
-        console.trace(`[TheDriverSequelize] DB access after closed`)
+        console.trace('[TheDriverSequelize] DB access after closed')
       }
-      throw new Error(`[TheDriverSequelize] DB Already closed`)
+      throw new Error('[TheDriverSequelize] DB Already closed')
     }
   }
 
@@ -231,7 +230,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
       await this._preparing
       this._prepared = true
     } catch (e) {
-      console.error(`[TheDriverSequelize] Prepare failed`, e)
+      console.error('[TheDriverSequelize] Prepare failed', e)
       process.exit(1)
     } finally {
     }

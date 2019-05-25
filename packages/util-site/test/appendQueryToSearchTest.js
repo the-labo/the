@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for appendQueryToSearch.
  * Runs with mocha.
  */
-'use strict'
-
 describe('append-query-to-search', () => {
   before(() => {})
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for peerMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('peer-mix', () => {
   before(() => {})
 

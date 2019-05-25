@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for isKeyCode.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const isKeyCode = require('../lib/isKeyCode')
 

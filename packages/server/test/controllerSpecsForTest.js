@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for controllerSpecsFor.
  * Runs with mocha.
  */
-'use strict'
-
 describe('controller-specs-for', () => {
   before(() => {})
 

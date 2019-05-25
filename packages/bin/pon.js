@@ -2,8 +2,6 @@
  * As pon tasks
  * @module @the-/bin/pon
  */
-'use strict'
-
 const chalk = require('chalk')
 const { isProduction } = require('@the-/check')
 const theBin = require('./lib/create')

@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Inject queries on location change
  * @memberof module:@the-/entrypoint
  * @function quelize
  * @param {function()|object} values or its builder
  */
-'use strict'
-
 const { addUrlQuery } = require('@the-/url')
 const { get } = require('@the-/window')
 

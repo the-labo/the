@@ -1,10 +1,9 @@
+'use strict'
 /**
  * ContextRoot component
  * @memberof module:@the-/context.helpers
  * @function ContextRootFor
  */
-'use strict'
-
 const React = require('react')
 const { createElement } = React
 

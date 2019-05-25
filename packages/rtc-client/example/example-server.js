@@ -1,5 +1,4 @@
 'use strict'
-
 const theRTC = require('../../rtc')
 // const theRTC = require('@the-/rtc')
 

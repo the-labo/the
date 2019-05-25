@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for valuesFromEntity.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepStrictEqual: deepEqual } = require('assert').strict
 const valuesFromEntity = require('../lib/valuesFromEntity')
 

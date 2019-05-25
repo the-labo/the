@@ -9,8 +9,8 @@ import { TheStyle } from '@the-/ui-style'
 /** Style for TheContainer */
 const TheContainerStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-container-style', className)}
+    id={id}
     styles={TheContainerStyle.data(options)}
   />
 )

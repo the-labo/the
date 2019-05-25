@@ -1,3 +1,4 @@
+'use strict'
 /**
  * @memberof module:@the-/client
  * @class TheClient
@@ -8,8 +9,6 @@
  * @param {string} url
  * @param {Object} config
  */
-'use strict'
-
 const argx = require('argx')
 const cookies = require('browser-cookies')
 const { restore, save } = require('bstorage')
@@ -124,7 +123,7 @@ class TheClient extends TheClientBase {
 
   assertNotClosed() {
     if (this.closed) {
-      throw new Error(`[TheClient] Already closed!`)
+      throw new Error('[TheClient] Already closed!')
     }
   }
 
@@ -388,7 +387,7 @@ TheClient.newCID = () => uuid.v4()
 module.exports = TheClient
 
 /**
- * @property {string} callerKey
- * @property {string} cid - Client id
  * @typedef {Object} TheClientScope
+ * @property {string} cid - Client id
+ * @property {string} callerKey
  */

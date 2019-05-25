@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create "filenameRule" lint
  * @memberof module:@the-/lint.rules
@@ -7,8 +8,6 @@
  * @param {string|RegExp} config.endsWith - Ends with
  * @returns {function()} Lint function
  */
-'use strict'
-
 const path = require('path')
 const { parsePattern } = require('../helpers/parseHelper')
 
@@ -16,7 +15,7 @@ const { parsePattern } = require('../helpers/parseHelper')
 function filenameRule(config) {
   const { endsWith, pattern, startsWith, ...rest } = config
   if (Object.keys(rest).length > 0) {
-    console.warn(`[filenameRule] Unknown options`, Object.keys(rest))
+    console.warn('[filenameRule] Unknown options', Object.keys(rest))
   }
   return async function filenameRuleCheck({ filename, report }) {
     const basename = path.basename(filename)

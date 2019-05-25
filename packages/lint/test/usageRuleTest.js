@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for usageRule.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const fs = require('fs')
 const path = require('path')

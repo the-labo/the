@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for cachingFetch.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const fetch = require('cross-fetch')
 const injectmock = require('injectmock')

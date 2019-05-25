@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheContext.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const React = require('react')
 const RectDOM = require('react-dom/server')

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for units.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const units = require('../lib/units')
 

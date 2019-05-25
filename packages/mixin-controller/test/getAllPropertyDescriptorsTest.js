@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for getAllPropertyDescriptors.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const getAllPropertyDescriptors = require('../lib/helpers/getAllPropertyDescriptors')
 

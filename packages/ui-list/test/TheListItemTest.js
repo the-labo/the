@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheListItem.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheListItem = require('../shim/TheListItem').default

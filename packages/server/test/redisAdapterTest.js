@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for redisAdapter.
  * Runs with mocha.
  */
-'use strict'
-
 describe('redis-adapter', () => {
   before(() => {})
 

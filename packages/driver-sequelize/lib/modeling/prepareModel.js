@@ -1,10 +1,9 @@
+'use strict'
 /**
  * @memberof module:@the-/driver-sequelize.modeling
  * @function prepareModel
  * @returns {Promise}
  */
-'use strict'
-
 const defineModelColumn = require('./defineModelColumn')
 const parseAttributeName = require('../parsing/parseAttributeName')
 

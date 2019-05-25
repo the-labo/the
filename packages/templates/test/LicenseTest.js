@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for license.
  * Runs with mocha.
  */
-'use strict'
-
 const coz = require('coz')
 const License = require('../lib/License')
 

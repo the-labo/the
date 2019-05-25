@@ -1,3 +1,4 @@
+'use strict'
 /**
  * @memberof module:@the-/scaffold
  * @function theScaffold
@@ -9,8 +10,6 @@
  * @param {boolean} [options.silent=false] - Disable logs.
  * @returns {Promise}
  */
-'use strict'
-
 const argx = require('argx')
 const { statAsync } = require('asfs')
 const askconfig = require('askconfig')
@@ -43,7 +42,7 @@ async function theScaffold(type, dest, options = {}) {
   }
   let user = await gitconfig.get('user')
   user = user || { name: '__user_name__' }
-  let defaults = Object.assign(
+  const defaults = Object.assign(
     {
       github_repository: [user.name, path.basename(dest)].join('/'),
       package_description: '',
@@ -70,11 +69,11 @@ async function theScaffold(type, dest, options = {}) {
   if (!tmpls[type]) {
     throw new Error(`Unknown type: ${type}`)
   }
-  let tmpl = path.resolve(__dirname, '..', tmpls[type])
+  const tmpl = path.resolve(__dirname, '..', tmpls[type])
   await render(tmpl, dest, data, {
     silent: options.silent,
   })
-  let bins = path.join(dest, '+(ci|bin)/**/*.*')
+  const bins = path.join(dest, '+(ci|bin)/**/*.*')
   await filemode(bins, '755')
 }
 

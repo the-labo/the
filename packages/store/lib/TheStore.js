@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Scoped redux store
  * @memberof module:@the-/store
@@ -7,8 +8,6 @@
  * @param {string[]} [options.persists={}] - Scope names to persistize in local storage
  * @param {function[]} [options.middlewares=[]] - Redux middleware functions
  */
-'use strict'
-
 const {
   applyMiddleware,
   create: createStore,
@@ -32,15 +31,15 @@ const NAMEPATH_SEPARATOR = '.'
 /** @lends module:@the-/store.TheStore */
 class TheStore {
   constructor(options = {}) {
-    let {
+    const {
       enhancers = [],
       middlewares = [],
       persists = [],
       reducer: customReducer,
       scopes: scopeDefs = {},
-      state: preloadedState = {},
       types = {},
     } = options
+    let { state: preloadedState = {} } = options
 
     const restored = persistize.regain(persists) || {}
     const restoredKeys = Object.keys(restored)
@@ -84,7 +83,7 @@ class TheStore {
     Object.assign(this, store, { store })
 
     store.subscribe(() => {
-      const state = this.state
+      const { state } = this
       for (const name of Object.keys(this.scopes)) {
         const scope = this.scopes[name]
         scope.$$setState(state[name])
@@ -128,11 +127,8 @@ class TheStore {
         `[TheStore] Failed to load state with name "${namepath}" because it is reserved`,
       )
     }
-    let {
-      initialState = null,
-      reducerFactories = {},
-      subScopeClasses = {},
-    } = ScopeClass
+    let { initialState = null } = ScopeClass
+    const { reducerFactories = {}, subScopeClasses = {} } = ScopeClass
 
     if (this._preloadedState.hasOwnProperty(namepath)) {
       initialState = this._preloadedState[namepath]

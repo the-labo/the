@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for proxy.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok, strictEqual: equal } = require('assert')
 const proxy = require('../lib/proxy')
 

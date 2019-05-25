@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withLocation.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const injectmock = require('injectmock')
 const withLocation = require('../lib/withLocation')

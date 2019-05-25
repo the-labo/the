@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for debugController.
  * Runs with mocha.
  */
-'use strict'
-
 describe('debug-controller', () => {
   before(() => {})
 

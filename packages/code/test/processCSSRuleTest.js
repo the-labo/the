@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for processCSSRule.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const processCSSRule = require('../lib/processors/processCSSRule')
 

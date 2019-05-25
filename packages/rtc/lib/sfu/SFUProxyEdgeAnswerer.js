@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @class SFUProxyEdgeAnswerer
  * @augments SFUProxyEdge
  */
-'use strict'
-
 const SFUProxyEdge = require('./SFUProxyEdge')
 const { ChannelNames } = require('../constants')
 

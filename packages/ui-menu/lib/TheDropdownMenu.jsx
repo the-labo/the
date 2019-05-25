@@ -30,8 +30,8 @@ class TheDropDownMenu extends React.Component {
         {...htmlAttributesFor(props, { except: ['className'] })}
         {...eventHandlersFor(props, { except: [] })}
         className={c('the-dropdown-menu-button', className)}
+        onClick={onClick}
         role='menubar'
-        {...{ onClick }}
       >
         <span className='the-dropdown-menu-button-text'>{children}</span>
         <TheIcon className={c('the-dropdown-menu-button-icon', icon)} />

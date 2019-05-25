@@ -46,10 +46,7 @@ class TheComponentDemo extends React.PureComponent {
       snippet,
     } = props
     return (
-      <TheHtml
-        className={classnames('the-component-demo', className)}
-        {...{ id }}
-      >
+      <TheHtml className={classnames('the-component-demo', className)} id={id}>
         <TheHead
           description={`Demo of ${pkg.name} package`}
           js={js}

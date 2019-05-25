@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/store
  * @namespace helpers
  */
-'use strict'
-
 const { get, has } = require('json-pointer')
 const { flatten } = require('objnest')
 
@@ -57,7 +56,7 @@ module.exports = {
     const resolvedNames = []
     const names = namepath.split(separator)
     while (names.length > 1) {
-      let name = names.shift()
+      const name = names.shift()
       resolvedNames.push(name)
       target = target[name]
       if (!target) {

@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/controller.create}
  * @memberof module:@the-/controller
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const TheCtrl = require('./TheCtrl')
 

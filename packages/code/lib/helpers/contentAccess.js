@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Define content access methods
  * @memberof module:@the-/code
  * @function contentAccess
  */
-'use strict'
-
 const { EOL } = require('os')
 const debug = require('debug')('the:code:contentAccess')
 
@@ -36,15 +35,12 @@ function contentAccess(content) {
       const [start, end] = range
       return content.substring(start, end)
     },
-    indexOf: ({ column, line }) => {
-      return (
-        [...contentLines]
-          .splice(0, line - 1)
-          .reduce((i, { length }) => i + length + EOL.length, 0) +
-        column -
-        1
-      )
-    },
+    indexOf: ({ column, line }) =>
+      [...contentLines]
+        .splice(0, line - 1)
+        .reduce((i, { length }) => i + length + EOL.length, 0) +
+      column -
+      1,
     rangeOf: (declaration) => {
       let { end, loc, start, trailingComments } = declaration
       const comments = (trailingComments || []).filter(

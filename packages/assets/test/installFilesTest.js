@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for installFiles.
  * Runs with mocha.
  */
-'use strict'
-
 describe('install-files', () => {
   before(() => {})
 

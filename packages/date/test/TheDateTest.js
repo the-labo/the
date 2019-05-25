@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheDate.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const TheDate = require('../lib/TheDate')
 

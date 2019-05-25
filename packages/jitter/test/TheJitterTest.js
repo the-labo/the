@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheJitter.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const TheJitter = require('../lib/TheJitter')
 

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create "decorateRule" lint
  * @memberof module:@the-/lint.rules
@@ -5,8 +6,6 @@
  * @param {Object} config - Lint config
  * @returns {function()} Lint function
  */
-'use strict'
-
 const path = require('path')
 const { parse, walk } = require('@the-/ast')
 
@@ -14,7 +13,7 @@ const { parse, walk } = require('@the-/ast')
 function decorateRule(config) {
   const { declared = false, ...rest } = config
   if (Object.keys(rest).length > 0) {
-    console.warn(`[decorateRule] Unknown options`, Object.keys(rest))
+    console.warn('[decorateRule] Unknown options', Object.keys(rest))
   }
   return async function decorateRuleCheck({ content, filename, report }) {
     const parsed = parse(String(content), {

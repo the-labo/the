@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Define method wrapper
  * @memberof module:@the-/mixin-scene.helpers
  * @function asMethodWrap
  */
-'use strict'
-
 const invariant = require('invariant')
 
 /** @lends module:@the-/mixin-scene.helpers.asMethodWrap */

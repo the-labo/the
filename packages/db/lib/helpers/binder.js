@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/db.helpers
  * @namespace binder
  */
-'use strict'
-
 const { unlessProduction } = require('@the-/check')
 
 const noop = (v) => v

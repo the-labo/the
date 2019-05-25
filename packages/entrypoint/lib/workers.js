@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Register service workers
  * @memberof module:@the-/entrypoint
@@ -5,8 +6,6 @@
  * @param {string[]} swUrls - Service worker urls
  * @returns {Promise<undefined>}
  */
-'use strict'
-
 const { get } = require('@the-/window')
 
 const fullPath = (url) => new URL(url, get('location.origin')).href
@@ -36,13 +35,13 @@ async function workers(swUrls, options = {}) {
       const invalidScript = !supportedScripts.includes(scriptURL)
       if (invalidScript) {
         await registration.unregister()
-        console.warn(`[TheEntrypoint] Unregister worker with script`, scriptURL)
+        console.warn('[TheEntrypoint] Unregister worker with script', scriptURL)
       }
       const invalidScope = !supportedScopes.includes(registration.scope)
       if (invalidScope) {
         await registration.unregister()
         console.warn(
-          `[TheEntrypoint] Unregister worker with scope`,
+          '[TheEntrypoint] Unregister worker with scope',
           registration.scope,
         )
       }

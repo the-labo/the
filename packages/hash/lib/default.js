@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/hash.create}
  * @memberof module:@the-/hash
  * @function default
  * @returns {module:@the-/hash.TheHash}
  */
-'use strict'
-
 const create = require('./create')
 const proxy = require('./proxy')
 const TheHash = require('./TheHash')

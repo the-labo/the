@@ -1,5 +1,4 @@
 'use strict'
-
 const { TheState } = require('@the-/state')
 
 async function tryExample() {

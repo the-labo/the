@@ -16,7 +16,11 @@ import { htmlAttributesFor } from '@the-/util-ui'
 class TheRouter extends React.Component {
   static Hash({ basename, children, getUserConfirmation, hashType }) {
     return (
-      <HashRouter {...{ basename, getUserConfirmation, hashType }}>
+      <HashRouter
+        basename={basename}
+        getUserConfirmation={getUserConfirmation}
+        hashType={hashType}
+      >
         <div className='the-router-hash'>{children}</div>
       </HashRouter>
     )
@@ -24,7 +28,7 @@ class TheRouter extends React.Component {
 
   static Static({ basename, children, context, location }) {
     return (
-      <StaticRouter {...{ basename, context, location }}>
+      <StaticRouter basename={basename} context={context} location={location}>
         <div className='the-router-static'>{children}</div>
       </StaticRouter>
     )
@@ -73,12 +77,10 @@ class TheRouter extends React.Component {
     const Router = history ? AbstractRouter : BrowserRouter
     return (
       <Router
-        {...{
-          basename,
-          getUserConfirmation,
-          history,
-          keyLength,
-        }}
+        basename={basename}
+        getUserConfirmation={getUserConfirmation}
+        history={history}
+        keyLength={keyLength}
       >
         <div
           {...htmlAttributesFor(props, { except: ['className'] })}

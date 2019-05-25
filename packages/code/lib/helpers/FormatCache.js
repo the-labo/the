@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/code
  * @class FormatCache
  */
-'use strict'
-
 const { readAsJson, unlinkAsync, writeAsJson } = require('@the-/util-file')
 
 /** @lends module:@the-/code.FormatCache */

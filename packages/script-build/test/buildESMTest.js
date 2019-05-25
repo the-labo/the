@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for buildESM.
  * Runs with mocha.
  */
-'use strict'
-
 describe('build-es-m', () => {
   before(() => {})
 

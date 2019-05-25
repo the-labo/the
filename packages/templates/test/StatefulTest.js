@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for stateful.
  * Runs with mocha.
  */
-'use strict'
-
 const coz = require('coz')
 const Stateful = require('../lib/Stateful')
 

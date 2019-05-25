@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for toHandleSceneClass.
  * Runs with mocha.
  */
-'use strict'
-
 describe('to-handle-scene-class', () => {
   before(() => {})
 

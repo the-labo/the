@@ -1,5 +1,4 @@
 'use strict'
-
 const { DataTypes } = require('clay-constants')
 const { refTo } = require('clay-resource-ref')
 const { typeOf } = require('clay-serial')

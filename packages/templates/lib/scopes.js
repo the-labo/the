@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/templates
  * @function scopes
  */
-'use strict'
-
 const aglob = require('aglob')
 const path = require('path')
 const { camelcase } = require('stringcase')
@@ -32,8 +31,8 @@ function scopes(config) {
     ...filenames.map((filename) => ({
       [withoutExt(filename).replace(/\//g, '.')]: {
         namespace: false,
-        path: './' + filename,
-        varName: camelcase(withoutExt(filename).replace(/\//g, '_')) + '_',
+        path: `./${filename}`,
+        varName: `${camelcase(withoutExt(filename).replace(/\//g, '_'))}_`,
       },
     })),
   )

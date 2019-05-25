@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Events for IO
  * @memberof module:@the-/rtc.constants
  * @enum {string}
  * @name IOEvents
  */
-'use strict'
-
 const IOEvents = Object.freeze(
   /** @lends module:@the-/rtc.constants.IOEvents */
   {

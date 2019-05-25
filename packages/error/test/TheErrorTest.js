@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheError.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const TheError = require('../lib/TheError')
 

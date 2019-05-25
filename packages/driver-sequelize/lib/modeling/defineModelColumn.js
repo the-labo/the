@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Define model column
  * @memberof module:@the-/driver-sequelize.modeling
@@ -5,8 +6,6 @@
  * @param {string} propertyName
  * @param {Object} def
  */
-'use strict'
-
 const {
   DataTypes: { BOOLEAN, DATE, ENTITY, ID, NULL, NUMBER, OBJECT, REF, STRING },
 } = require('clay-constants')
@@ -21,7 +20,7 @@ function defineModelColumn(propertyName, def = {}) {
     defaultValue,
   }
   if (Array.isArray(type)) {
-    throw new Error(`[TheDriverSequelize] Multiple type is not supported`)
+    throw new Error('[TheDriverSequelize] Multiple type is not supported')
   }
   switch (type) {
     case BOOLEAN:

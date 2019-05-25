@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for withDebug.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const withDebug = require('../lib/withDebug')
 

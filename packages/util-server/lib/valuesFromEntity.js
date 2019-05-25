@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Get values from entity
  * @function valuesFromEntity
  * @param {Object}
  * @returns {Object}
  */
-'use strict'
-
 const META_FIELD_PREFIX = /^\$/
 
 /** @lends valuesFromEntity */

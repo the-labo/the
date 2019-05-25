@@ -1,3 +1,4 @@
+'use strict'
 /**
  * @memberof module:@the-/state
  * @class TheState
@@ -5,8 +6,6 @@
  * @param {Object} [options={}] - Optional settings
  * @param {Object} [options.defaults={}] - Default values
  */
-'use strict'
-
 const RootState = require('./state/RootState')
 
 /** @lends module:@the-/state.TheState */

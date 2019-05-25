@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for PrettierConfig.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const PrettierConfig = require('../lib/PrettierConfig')
 

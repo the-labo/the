@@ -1,8 +1,7 @@
+'use strict'
 /**
  * @class SFUProxyEdge
  */
-'use strict'
-
 const {
   RTCIceCandidate,
   RTCPeerConnection,
@@ -23,7 +22,7 @@ class SFUProxyEdge {
       const { connection } = this
       // Register initial channel
       {
-        const channel = connection.createDataChannel(`@@sfu`)
+        const channel = connection.createDataChannel('@@sfu')
         this.registerChannel(channel)
       }
       connection.addEventListener(PeerEvents.ICE_CANDIDATE, (e) => {

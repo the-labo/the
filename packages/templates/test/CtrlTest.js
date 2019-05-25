@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for ctrl.
  * Runs with mocha.
  */
-'use strict'
-
 const coz = require('coz')
 const ctrl = require('../lib/Ctrl')
 

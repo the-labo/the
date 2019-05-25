@@ -201,20 +201,18 @@ class TheCalendar extends React.Component {
           </div>
         </div>
         <BigCalendar
-          {...{
-            components,
-            date,
-            events,
-            localizer,
-            onNavigate,
-            onView,
-            view,
-            views,
-          }}
+          components={components}
           culture={lang}
+          date={date}
+          events={events}
+          localizer={localizer}
           onEvrn
+          onNavigate={onNavigate}
           onSelectEvent={this.handleEventSelect}
+          onView={onView}
           toolbar={false}
+          view={view}
+          views={views}
         />
       </div>
     )

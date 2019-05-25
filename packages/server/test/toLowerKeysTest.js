@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for toLowerKeys.
  * Runs with mocha.
  */
-'use strict'
-
 describe('to-lower-keys', () => {
   before(() => {})
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for appCache.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepEqual } = require('assert').strict
 const injectmock = require('injectmock')
 const appCache = require('../lib/appCache')

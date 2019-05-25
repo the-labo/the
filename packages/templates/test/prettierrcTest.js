@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for prettierrc.
  * Runs with mocha.
  */
-'use strict'
-
 const coz = require('coz')
 const prettierrc = require('../lib/prettierrc')
 

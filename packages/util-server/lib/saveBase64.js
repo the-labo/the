@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Save base64 string into file
  * @function saveBase64
@@ -6,8 +7,6 @@
  * @param {string} data
  * @returns {Promise}
  */
-'use strict'
-
 const amkdirp = require('amkdirp')
 const fs = require('fs')
 const path = require('path')
@@ -26,7 +25,7 @@ const Extensions = {
 /** @lends saveBase64 */
 async function saveBase64(dirname, basename, data) {
   if (!isBase64(data)) {
-    throw new Error(`[saveBase64] data must be base64`)
+    throw new Error('[saveBase64] data must be base64')
   }
   await amkdirp(dirname)
   const matched = data.match(TYPE_EXTRACT_PATTERN)

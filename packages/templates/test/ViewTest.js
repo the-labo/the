@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for view.
  * Runs with mocha.
  */
-'use strict'
-
 const coz = require('coz')
 const view = require('../lib/View')
 

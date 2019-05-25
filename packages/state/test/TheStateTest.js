@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheState.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepEqual, equal, ok } = require('assert').strict
 const TheState = require('../lib/TheState')
 
@@ -34,7 +33,7 @@ describe('the-state', () => {
 
     equal(state.scope('scope01').get('v2'), 'This is v2')
 
-    equal(state.get('scope01')['v2'], 'This is v2')
+    equal(state.get('scope01').v2, 'This is v2')
 
     state.scope('scope01').del('v2')
     equal(state.scope('scope01').get('v2'), void 0)

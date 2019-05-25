@@ -5,7 +5,7 @@
 ## @the-/ast
 AST (abstract syntax tree) parser
 
-**Version**: 15.4.5  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/ast](#module_@the-/ast)

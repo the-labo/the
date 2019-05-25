@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for compose.
  * Runs with mocha.
  */
-'use strict'
-
 describe('compose', () => {
   before(() => {})
 

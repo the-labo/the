@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Parse caller URL
  * @memberof module:@the-/client.helpers
@@ -5,8 +6,6 @@
  * @param {Object|string} - URL string or config
  * @returns {string} - Parsed url
  */
-'use strict'
-
 const { get } = require('bwindow')
 const { DEFAULT_URL } = require('rfunc-constants')
 const { format: formatUrl } = require('url')
@@ -16,7 +15,7 @@ function parseClientUrl(url) {
   if (typeof url === 'string') {
     const { pathname } = new URL(url)
     if (pathname === '/') {
-      let suggestion = new URL(DEFAULT_URL, url).href
+      const suggestion = new URL(DEFAULT_URL, url).href
       console.warn(
         `[TheClient] Passed URL "${url}" seems to be wrong. Did you mean "${suggestion}"`,
       )

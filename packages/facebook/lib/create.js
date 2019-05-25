@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Create a TheFacebook instance
  * @function create
  * @param {...*} args
  * @returns {TheFacebook}
  */
-'use strict'
-
 const TheFacebook = require('./TheFacebook')
 
 /** @lends create */

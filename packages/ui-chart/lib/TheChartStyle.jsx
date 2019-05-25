@@ -9,8 +9,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheChart */
 const TheChartStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-chart-style', className)}
+    id={id}
     styles={TheChartStyle.data(options)}
   />
 )
@@ -25,11 +25,10 @@ TheChartStyle.defaultProps = {
   options: {},
 }
 
-TheChartStyle.data = () => {
-  return asStyleData('.the-chart', {
+TheChartStyle.data = () =>
+  asStyleData('.the-chart', {
     '.the-chart-canvas': {},
     '&': {},
   })
-}
 
 export default TheChartStyle

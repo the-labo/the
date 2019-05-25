@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for Counter.
  * Runs with mocha.
  */
-'use strict'
-
 describe('counter', () => {
   before(() => {})
 

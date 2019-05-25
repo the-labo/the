@@ -1,11 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/util-file
  * @function copyAsJsonSync
  * @param {string} src
  * @param {string} dest
  */
-'use strict'
-
 const readAsJsonSync = require('./readAsJsonSync')
 const writeAsJsonSync = require('./writeAsJsonSync')
 

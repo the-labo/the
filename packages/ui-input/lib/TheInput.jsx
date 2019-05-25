@@ -71,18 +71,15 @@ class TheInput extends React.PureComponent {
         {renderErrorMessage(error)}
         {children}
         <input
-          type='the-input-input'
-          {...{
-            autoComplete,
-            autoFocus,
-            id,
-            name,
-            placeholder,
-            required,
-            type,
-          }}
+          autoComplete={autoComplete}
+          autoFocus={autoFocus}
+          id={id}
+          name={name}
           onChange={(e) => this.handleChange(e)}
+          placeholder={placeholder}
           ref={inputRef}
+          required={required}
+          type={type}
           value={value || ''}
         />
       </div>

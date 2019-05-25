@@ -1,11 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/code.processors
  * @function processJSPrettier
  * @param {string} content
  * @returns {Promise<string>} processed
  */
-'use strict'
-
 const path = require('path')
 const prettier = require('prettier')
 const { PrettierConfig } = require('@the-/const-code')

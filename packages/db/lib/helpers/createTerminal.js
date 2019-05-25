@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @memberof module:@the-/db.helpers
  * @function createTerminal
  */
-'use strict'
-
 const readline = require('readline')
 const { inspect } = require('util')
 

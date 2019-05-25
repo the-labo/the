@@ -1,11 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/setting
  * @class TheSetting
  * @augments module:@the-/setting.TheSettingBase
  * @augments module:@the-/setting.mixins.lockMix~LockMixed
  */
-'use strict'
-
 const abind = require('abind')
 const askconfig = require('askconfig')
 const aslogger = require('aslogger')
@@ -36,8 +35,8 @@ class TheSetting extends TheSettingBase {
     this.cache = null
     this.cacheAt = null
     this.filename = filename
-    this.lockFilename = filename + '.lock'
-    this.backupFilename = filename + '.bk'
+    this.lockFilename = `${filename}.lock`
+    this.backupFilename = `${filename}.bk`
     this.logger = aslogger({
       PREFIX: prefix,
     })
@@ -86,7 +85,7 @@ class TheSetting extends TheSettingBase {
     const { filename } = this
     const stat = statSync(filename)
     const mtimeMs = stat && stat.mtimeMs
-    let notChanged = mtimeMs && mtimeMs === this.cacheAt
+    const notChanged = mtimeMs && mtimeMs === this.cacheAt
     if (notChanged) {
       return this.cache
     }
@@ -123,7 +122,7 @@ class TheSetting extends TheSettingBase {
     const { logger } = this
     const current = this.get()
     this.saveValues(Object.assign({}, current, values))
-    logger.debug(`Data saved`)
+    logger.debug('Data saved')
     for (const name of Object.keys(values)) {
       logger.trace(`  ${name}: ${JSON.stringify(values[name])}`)
     }
@@ -140,7 +139,7 @@ class TheSetting extends TheSettingBase {
 
     for (const key of Object.keys(current)) {
       const from = current[key]
-      let to = numberIfPossible(asked[key])
+      const to = numberIfPossible(asked[key])
       if (from === to) {
         continue
       }

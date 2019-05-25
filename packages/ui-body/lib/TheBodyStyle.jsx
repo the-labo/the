@@ -9,8 +9,8 @@ import { TheStyle } from '@the-/ui-style'
 /** Style for TheBody */
 const TheBodyStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={classnames('the-body-style', className)}
+    id={id}
     styles={TheBodyStyle.data(options)}
   />
 )

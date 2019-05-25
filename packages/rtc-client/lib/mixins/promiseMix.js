@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Mixin for promise
  * @memberof module:@the-/rtc.constants.mixins
@@ -5,8 +6,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-'use strict'
-
 /** @lends module:@the-/rtc.constants.mixins.promiseMix */
 function promiseMix(Class) {
   class PromiseMixed extends Class {

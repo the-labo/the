@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for canTouch.
  * Runs with mocha.
  */
-'use strict'
-
 describe('can-touch', () => {
   before(() => {})
 

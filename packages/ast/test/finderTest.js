@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for finder.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const finder = require('../lib/finder')
 const parse = require('../lib/parse')

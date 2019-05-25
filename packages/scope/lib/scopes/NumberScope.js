@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Scope to hold number
  * @memberof module:@the-/scope.scopes
  * @class NumberScope
  * @augments module:@the-/scope.scopes.Scope
  */
-'use strict'
-
 const Scope = require('./Scope')
 
 /** @lends module:@the-/scope.scopes.NumberScope */

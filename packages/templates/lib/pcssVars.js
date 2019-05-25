@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Variables for pcss
  * @memberof module:@the-/templates
@@ -6,8 +7,6 @@
  * @param {Object} config.values
  * @returns {Object}
  */
-'use strict'
-
 const _tmpl = require('./_tmpl')
 
 /** @lends module:@the-/templates.pcssVars */

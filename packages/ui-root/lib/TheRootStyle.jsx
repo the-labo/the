@@ -9,8 +9,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheRoot */
 const TheRootStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-root-style', className)}
+    id={id}
     styles={TheRootStyle.data(options)}
   />
 )
@@ -25,8 +25,8 @@ TheRootStyle.defaultProps = {
   options: {},
 }
 
-TheRootStyle.data = () => {
-  return Object.assign(
+TheRootStyle.data = () =>
+  Object.assign(
     {},
     asStyleData({
       '.the-root': {
@@ -37,6 +37,5 @@ TheRootStyle.data = () => {
       },
     }),
   )
-}
 
 export default TheRootStyle

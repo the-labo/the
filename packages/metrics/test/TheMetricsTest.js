@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheMetrics.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepStrictEqual: deepEqual } = require('assert').strict
 const TheMetrics = require('../lib/TheMetrics')
 

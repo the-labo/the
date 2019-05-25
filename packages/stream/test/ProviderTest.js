@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for Provider.
  * Runs with mocha.
  */
-'use strict'
-
 describe('provider', () => {
   before(() => {})
 

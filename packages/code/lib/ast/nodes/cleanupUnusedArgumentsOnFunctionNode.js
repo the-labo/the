@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Cleanup unused function node
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupUnusedOnFunctionArgumentNode
  */
-'use strict'
-
 /** @lends module:@the-/code.ast.nodes.cleanupUnusedArgumentsOnFunctionNode */
 function cleanupUnusedArgumentsOnFunctionNode(
   FunctionNode,

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for fileTypeOf.
  * Runs with mocha.
  */
-'use strict'
-
 const { deepEqual } = require('assert').strict
 const fileTypeOf = require('../lib/fileTypeOf')
 

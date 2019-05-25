@@ -1,20 +1,18 @@
+'use strict'
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function sortPropertiesOnObjectNode
  */
-'use strict'
-
 const { compareBy, compareStrings } = require('../../helpers/arrayHelper')
 
-const _nameOfPropKey = (key) => {
-  return String(
+const _nameOfPropKey = (key) =>
+  String(
     key.name ||
       key.value ||
       key.raw ||
       (key.property && key.property.name) ||
       '',
   )
-}
 
 const _weightProperty = ({ computed, key }) => {
   let weight = 0

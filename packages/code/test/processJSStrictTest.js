@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for processJSStrict.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal } = require('assert').strict
 const processJSStrict = require('../lib/processors/processJSStrict')
 
@@ -29,8 +28,8 @@ describe('process-j-s-strict', () => {
 
   it('Inject', async () => {
     equal(
-      await processJSStrict(`const a = 1`),
-      await processJSStrict(`'use strict'\nconst a = 1`),
+      await processJSStrict('const a = 1'),
+      await processJSStrict("'use strict'\nconst a = 1"),
     )
   })
 })

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Define bud for Dialog components
  * @memberof module:@the-/templates
@@ -5,8 +6,6 @@
  * @param {Object} config
  * @returns {Object}
  */
-'use strict'
-
 const aglob = require('aglob')
 const { ok } = require('assert').strict
 const path = require('path')
@@ -14,11 +13,11 @@ const _tmpl = require('./_tmpl')
 
 /** @lends module:@the-/templates.Dialogs */
 function Dialogs(config) {
-  let {
+  const {
     dirname,
     from = '../stateful',
     memberof = 'ui',
-    pattern = [`**/*Dialog.jsx`],
+    pattern = ['**/*Dialog.jsx'],
   } = config
 
   const components = aglob

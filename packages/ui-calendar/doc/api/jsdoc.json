@@ -1,151 +1,151 @@
 [
   {
+    "description": "Calendar of the-components",
     "id": "module:@the-/ui-calendar",
-    "longname": "module:@the-/ui-calendar",
-    "name": "@the-/ui-calendar",
     "kind": "module",
-    "description": "Calendar of the-components",
-    "version": "15.4.5",
-    "typicalname": "uiCalendar",
+    "longname": "module:@the-/ui-calendar",
     "meta": {
-      "lineno": 2,
       "filename": "index.jsx",
+      "lineno": 2,
       "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
     },
-    "order": 0
+    "name": "@the-/ui-calendar",
+    "order": 0,
+    "typicalname": "uiCalendar",
+    "version": "15.4.5"
   },
   {
-    "id": "TheCalendar",
-    "longname": "TheCalendar",
-    "name": "TheCalendar",
-    "kind": "class",
-    "scope": "global",
     "description": "Calendar of the-components",
+    "id": "TheCalendar",
+    "kind": "class",
+    "longname": "TheCalendar",
     "meta": {
+      "filename": "TheCalendar.jsx",
       "lineno": 47,
-      "filename": "TheCalendar.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
     },
-    "order": 1
+    "name": "TheCalendar",
+    "order": 1,
+    "scope": "global"
   },
   {
-    "id": "TheCalendarStyle",
-    "longname": "TheCalendarStyle",
-    "name": "TheCalendarStyle",
-    "kind": "function",
-    "scope": "global",
     "description": "Style for TheCalendar",
-    "params": [],
+    "id": "TheCalendarStyle",
+    "kind": "function",
+    "longname": "TheCalendarStyle",
     "meta": {
-      "lineno": 12,
       "filename": "TheCalendarStyle.jsx",
+      "lineno": 12,
       "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
     },
-    "order": 8
+    "name": "TheCalendarStyle",
+    "order": 8,
+    "params": [],
+    "scope": "global"
   },
   {
-    "id": "TheCalendar.propTypes.date",
-    "longname": "TheCalendar.propTypes.date",
-    "name": "date",
-    "kind": "member",
-    "scope": "static",
     "description": "Showing date object",
+    "id": "TheCalendar.propTypes.date",
+    "kind": "member",
+    "longname": "TheCalendar.propTypes.date",
     "memberof": "TheCalendar.propTypes",
     "meta": {
+      "filename": "TheCalendar.jsx",
       "lineno": 229,
-      "filename": "TheCalendar.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
     },
-    "order": 2
+    "name": "date",
+    "order": 2,
+    "scope": "static"
   },
   {
-    "id": "TheCalendar.propTypes.events",
-    "longname": "TheCalendar.propTypes.events",
-    "name": "events",
-    "kind": "member",
-    "scope": "static",
     "description": "Events to show",
+    "id": "TheCalendar.propTypes.events",
+    "kind": "member",
+    "longname": "TheCalendar.propTypes.events",
     "memberof": "TheCalendar.propTypes",
     "meta": {
+      "filename": "TheCalendar.jsx",
       "lineno": 231,
-      "filename": "TheCalendar.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
     },
-    "order": 3
+    "name": "events",
+    "order": 3,
+    "scope": "static"
   },
   {
-    "id": "TheCalendar.propTypes.lang",
-    "longname": "TheCalendar.propTypes.lang",
-    "name": "lang",
-    "kind": "member",
-    "scope": "static",
     "description": "Lang",
+    "id": "TheCalendar.propTypes.lang",
+    "kind": "member",
+    "longname": "TheCalendar.propTypes.lang",
     "memberof": "TheCalendar.propTypes",
     "meta": {
+      "filename": "TheCalendar.jsx",
       "lineno": 233,
-      "filename": "TheCalendar.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
     },
-    "order": 4
+    "name": "lang",
+    "order": 4,
+    "scope": "static"
   },
   {
-    "id": "TheCalendar.propTypes.onNavigate",
-    "longname": "TheCalendar.propTypes.onNavigate",
-    "name": "onNavigate",
-    "kind": "member",
-    "scope": "static",
     "description": "Navigate to date",
+    "id": "TheCalendar.propTypes.onNavigate",
+    "kind": "member",
+    "longname": "TheCalendar.propTypes.onNavigate",
     "memberof": "TheCalendar.propTypes",
     "meta": {
+      "filename": "TheCalendar.jsx",
       "lineno": 235,
-      "filename": "TheCalendar.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
     },
-    "order": 5
+    "name": "onNavigate",
+    "order": 5,
+    "scope": "static"
   },
   {
-    "id": "TheCalendar.propTypes.onView",
-    "longname": "TheCalendar.propTypes.onView",
-    "name": "onView",
-    "kind": "member",
-    "scope": "static",
     "description": "Change view",
+    "id": "TheCalendar.propTypes.onView",
+    "kind": "member",
+    "longname": "TheCalendar.propTypes.onView",
     "memberof": "TheCalendar.propTypes",
     "meta": {
+      "filename": "TheCalendar.jsx",
       "lineno": 237,
-      "filename": "TheCalendar.jsx",
       "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
     },
-    "order": 6
+    "name": "onView",
+    "order": 6,
+    "scope": "static"
   },
   {
-    "id": "TheCalendar.propTypes.view",
-    "longname": "TheCalendar.propTypes.view",
-    "name": "view",
-    "kind": "member",
-    "scope": "static",
     "description": "View of calendar",
+    "id": "TheCalendar.propTypes.view",
+    "kind": "member",
+    "longname": "TheCalendar.propTypes.view",
     "memberof": "TheCalendar.propTypes",
     "meta": {
-      "lineno": 239,
       "filename": "TheCalendar.jsx",
+      "lineno": 239,
       "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
     },
-    "order": 7
+    "name": "view",
+    "order": 7,
+    "scope": "static"
   },
   {
-    "id": "TheCalendarStyle.propTypes.options",
-    "longname": "TheCalendarStyle.propTypes.options",
-    "name": "options",
-    "kind": "member",
-    "scope": "static",
     "description": "Style options",
+    "id": "TheCalendarStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheCalendarStyle.propTypes.options",
     "memberof": "TheCalendarStyle.propTypes",
     "meta": {
-      "lineno": 23,
       "filename": "TheCalendarStyle.jsx",
+      "lineno": 23,
       "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
     },
-    "order": 9
+    "name": "options",
+    "order": 9,
+    "scope": "static"
   }
 ]

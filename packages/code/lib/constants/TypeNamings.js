@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Naming for each types
  * @memberof module:@the-/code.constants
  * @namespace TypeNamings
  */
-'use strict'
-
 const Types = require('./Types')
 
 module.exports =

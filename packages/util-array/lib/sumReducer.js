@@ -1,3 +1,4 @@
+'use strict'
 /**
  * sumReducer
  * @memberof module:@the-/util-array
@@ -8,8 +9,6 @@
  * @example
  *  [2,2,4].filter(sumReducer())
  */
-'use strict'
-
 /** @lends module:@the-/util-array.sumReducer */
 function sumReducer(options = {}) {
   if (arguments.length > 1) {

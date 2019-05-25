@@ -119,25 +119,22 @@ class TheInputDate extends React.PureComponent {
       >
         {renderErrorMessage(error)}
         <input
+          autoCapitalize={autoCapitalize}
+          autoComplete={autoComplete}
+          autoCorrect={autoCorrect}
+          autoFocus={autoFocus}
           className='the-input-date-input'
+          id={id}
           name={name}
           onBlur={this.handleBlur}
+          placeholder={placeholder}
+          readOnly={readOnly}
           ref={this.elmRef}
-          {...{
-            autoCapitalize,
-            autoComplete,
-            autoCorrect,
-            autoFocus,
-            id,
-            name,
-            placeholder,
-            readOnly,
-            required,
-            spellCheck,
-            tabIndex,
-            type,
-            value,
-          }}
+          required={required}
+          spellCheck={spellCheck}
+          tabIndex={tabIndex}
+          type={type}
+          value={value}
         />
         {children}
       </div>

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Get query from search
  * @memberof module:@the-/util-site
@@ -5,8 +6,6 @@
  * @param {string} search
  * @returns {Object}
  */
-'use strict'
-
 const { get } = require('bwindow')
 const qs = require('qs')
 

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * @memberof module:@the-/queue
  * @class TheQueue
@@ -6,8 +7,6 @@
  * @param {number} [options.max=1000]
  * @param {string} [options.name]
  */
-'use strict'
-
 const asleep = require('asleep')
 
 /** @lends module:@the-/queue.TheQueue */

@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/db.create}
  * @memberof module:@the-/db
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const helpers = require('./helpers')
 const TheDB = require('./TheDB')

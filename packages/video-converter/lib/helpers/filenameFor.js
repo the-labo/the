@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Change file extension
  * @memberof module:@the-/video-converter
  * @function filenameFor
  * @param {Object} config
  */
-'use strict'
-
 const path = require('path')
 
 /** @lends module:@the-/video-converter.filenameFor */

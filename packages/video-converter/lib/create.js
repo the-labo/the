@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheVideoConverter instance
  * @memberof module:@the-/video-converter
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {TheVideoConverter}
  */
-'use strict'
-
 const TheVideoConverter = require('./TheVideoConverter')
 
 /** @lends module:@the-/video-converter.create */

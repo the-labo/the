@@ -10,8 +10,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheTable */
 const TheTableStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-table-style', className)}
+    id={id}
     styles={TheTableStyle.data(options)}
   />
 )

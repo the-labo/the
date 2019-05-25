@@ -1,11 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/scene.mixins
  * @function goMix
  * @param {function()} BaseClass
  * @returns {function()} MixedClass
  */
-'use strict'
-
 const { get } = require('bwindow')
 const { formatUrl } = require('@the-/url')
 

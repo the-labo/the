@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for explode.
  * Runs with mocha.
  */
-'use strict'
-
 describe('explode', () => {
   before(() => {})
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for asStrictSession.
  * Runs with mocha.
  */
-'use strict'
-
 describe('as-strict-session', () => {
   before(() => {})
 

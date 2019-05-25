@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/client/lib"
+      "path": "lib"
     },
     "name": "@the-/client",
     "order": 2,
     "typicalname": "client",
-    "version": "15.4.3"
+    "version": "15.4.5"
   },
   {
     "id": "module:@the-/client.TheClient()",
@@ -47,8 +47,8 @@
     "longname": "TheClientScope",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 390,
-      "path": "/Users/okuni/Projects/the/packages/client/lib"
+      "lineno": 389,
+      "path": "lib"
     },
     "name": "TheClientScope",
     "order": 3,
@@ -59,7 +59,8 @@
             "string"
           ]
         },
-        "name": "callerKey"
+        "description": "Client id",
+        "name": "cid"
       },
       {
         "type": {
@@ -67,8 +68,7 @@
             "string"
           ]
         },
-        "description": "Client id",
-        "name": "cid"
+        "name": "callerKey"
       }
     ],
     "scope": "global",
@@ -87,8 +87,8 @@
     "memberof": "module:@the-/client.TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 180,
-      "path": "/Users/okuni/Projects/the/packages/client/lib"
+      "lineno": 179,
+      "path": "lib"
     },
     "name": "invoke",
     "order": 8,
@@ -132,8 +132,8 @@
     "memberof": "module:@the-/client.TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 292,
-      "path": "/Users/okuni/Projects/the/packages/client/lib"
+      "lineno": 291,
+      "path": "lib"
     },
     "name": "stream",
     "order": 9,
@@ -197,8 +197,8 @@
     "memberof": "module:@the-/client.TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 309,
-      "path": "/Users/okuni/Projects/the/packages/client/lib"
+      "lineno": 308,
+      "path": "lib"
     },
     "name": "use",
     "order": 10,
@@ -254,8 +254,8 @@
     "memberof": "module:@the-/client.TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 357,
-      "path": "/Users/okuni/Projects/the/packages/client/lib"
+      "lineno": 356,
+      "path": "lib"
     },
     "name": "useAll",
     "order": 11,
@@ -292,8 +292,8 @@
     "memberof": "module:@the-/client.mixins.infoMix~InfoMixed",
     "meta": {
       "filename": "infoMix.js",
-      "lineno": 29,
-      "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
+      "lineno": 28,
+      "path": "lib/mixins"
     },
     "name": "serverInfo",
     "order": 22,
@@ -328,8 +328,8 @@
     "memberof": "module:@the-/client.mixins.pingPongMix~PingPongMixed",
     "meta": {
       "filename": "pingPongMix.js",
-      "lineno": 24,
-      "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
+      "lineno": 23,
+      "path": "lib/mixins"
     },
     "name": "pingPongAnd",
     "order": 25,
@@ -377,8 +377,8 @@
     "memberof": "module:@the-/client.TheClient",
     "meta": {
       "filename": "infoMix.js",
-      "lineno": 29,
-      "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
+      "lineno": 28,
+      "path": "lib/mixins"
     },
     "name": "serverInfo",
     "order": 28,
@@ -415,8 +415,8 @@
     "memberof": "module:@the-/client.TheClient",
     "meta": {
       "filename": "pingPongMix.js",
-      "lineno": 24,
-      "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
+      "lineno": 23,
+      "path": "lib/mixins"
     },
     "name": "pingPongAnd",
     "order": 29,
@@ -466,8 +466,8 @@
     "memberof": "module:@the-/client",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/client/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheClient",
     "order": 4,
@@ -481,8 +481,8 @@
     "memberof": "module:@the-/client",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 34,
-      "path": "/Users/okuni/Projects/the/packages/client/lib"
+      "lineno": 33,
+      "path": "lib"
     },
     "name": "TheClientBase",
     "order": 6,
@@ -497,7 +497,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/client/lib/constants"
+      "path": "lib/constants"
     },
     "name": "constants",
     "order": 12,
@@ -512,7 +512,7 @@
     "meta": {
       "filename": "IOEvents.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/client/lib/constants"
+      "path": "lib/constants"
     },
     "name": "IOEvents",
     "order": 13,
@@ -528,7 +528,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/client/lib/helpers"
+      "path": "lib/helpers"
     },
     "name": "helpers",
     "order": 17,
@@ -543,7 +543,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "mixins",
     "order": 19,
@@ -557,8 +557,8 @@
     "memberof": "module:@the-/client",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/client/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -592,8 +592,8 @@
     "memberof": "module:@the-/client",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/client/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,
@@ -607,8 +607,8 @@
     "memberof": "module:@the-/client.TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 54,
-      "path": "/Users/okuni/Projects/the/packages/client/lib"
+      "lineno": 53,
+      "path": "lib"
     },
     "name": "for",
     "order": 7,
@@ -651,8 +651,8 @@
     "memberof": "module:@the-/client.helpers",
     "meta": {
       "filename": "asController.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/client/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "asController",
     "order": 14,
@@ -707,8 +707,8 @@
     "memberof": "module:@the-/client.helpers",
     "meta": {
       "filename": "debugController.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/client/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "debugController",
     "order": 15,
@@ -722,8 +722,8 @@
     "memberof": "module:@the-/client.helpers",
     "meta": {
       "filename": "debugStream.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/client/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "debugStream",
     "order": 16,
@@ -737,8 +737,8 @@
     "memberof": "module:@the-/client.helpers",
     "meta": {
       "filename": "parseClientUrl.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/client/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "parseClientUrl",
     "order": 18,
@@ -772,8 +772,8 @@
     "memberof": "module:@the-/client.mixins",
     "meta": {
       "filename": "infoMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "infoMix",
     "order": 20,
@@ -805,8 +805,8 @@
     "memberof": "module:@the-/client.mixins",
     "meta": {
       "filename": "pingPongMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "pingPongMix",
     "order": 23,
@@ -840,8 +840,8 @@
     "memberof": "module:@the-/client.mixins",
     "meta": {
       "filename": "streamMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "streamMix",
     "order": 26,
@@ -873,7 +873,7 @@
     "meta": {
       "filename": "infoMix.js",
       "lineno": 18,
-      "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "InfoMixed",
     "order": 21,
@@ -886,8 +886,8 @@
     "memberof": "module:@the-/client.mixins.pingPongMix",
     "meta": {
       "filename": "pingPongMix.js",
-      "lineno": 17,
-      "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
+      "lineno": 16,
+      "path": "lib/mixins"
     },
     "name": "PingPongMixed",
     "order": 24,
@@ -900,8 +900,8 @@
     "memberof": "module:@the-/client.mixins.streamMix",
     "meta": {
       "filename": "streamMix.js",
-      "lineno": 149,
-      "path": "/Users/okuni/Projects/the/packages/client/lib/mixins"
+      "lineno": 148,
+      "path": "lib/mixins"
     },
     "name": "StreamMixed",
     "order": 27,

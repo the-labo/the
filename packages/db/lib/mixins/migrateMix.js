@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Add migrate methods
  * @memberof module:@the-/db
@@ -5,8 +6,6 @@
  * @param {function()}
  * @returns {function()}
  */
-'use strict'
-
 /** @lends module:@the-/db.migrateMix */
 function migrateMix(Class) {
   /**

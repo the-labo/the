@@ -1,11 +1,10 @@
+'use strict'
 /**
  * @memberof module:@the-/code.processors
  * @function processFileEnd
  * @param {string} content
  * @returns {string} processed
  */
-'use strict'
-
 const { EOL } = require('os')
 
 /** @lends module:@the-/code.processors.processFileEnd */

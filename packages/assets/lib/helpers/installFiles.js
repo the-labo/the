@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Install files
  * @memberof module:@the-/assets.helpers
@@ -9,8 +10,6 @@
  * @function installFiles
  * @returns {Promise}
  */
-'use strict'
-
 const aglob = require('aglob')
 const filecopy = require('filecopy')
 const filelink = require('filelink')

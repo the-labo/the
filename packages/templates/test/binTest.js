@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for bin.
  * Runs with mocha.
  */
-'use strict'
-
 describe('bin', () => {
   before(() => {})
 

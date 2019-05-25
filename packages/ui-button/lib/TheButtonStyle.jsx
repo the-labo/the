@@ -10,8 +10,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheButton */
 const TheButtonStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-button-style', className)}
+    id={id}
     styles={TheButtonStyle.data(options)}
   />
 )
@@ -45,7 +45,7 @@ TheButtonStyle.data = (options) => {
       '.the-button': {
         alignItems: 'center',
         backgroundColor,
-        border: `1px solid`,
+        border: '1px solid',
         borderRadius: '4px',
         boxSizing: 'border-box',
         color: dominantColor,

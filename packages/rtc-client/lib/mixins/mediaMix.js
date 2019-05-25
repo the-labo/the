@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Mixin for media
  * @memberof module:@the-/rtc.constants.mixins
@@ -5,8 +6,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-'use strict'
-
 const { TheMedia } = require('@the-/media')
 
 /** @lends module:@the-/rtc.constants.mixins.mediaMix */

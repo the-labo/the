@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Mixins for listen
  * @memberof module:@the-/resource.mixins
@@ -5,8 +6,6 @@
  * @param {function()} Class
  * @returns {function()} Mixed class
  */
-'use strict'
-
 const {
   ResourceEvents: {
     ENTITY_CREATE,

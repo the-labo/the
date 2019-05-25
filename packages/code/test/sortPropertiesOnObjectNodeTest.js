@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for sortPropertiesOnObjectNode.
  * Runs with mocha.
  */
-'use strict'
-
 describe('sort-properties-on-object-node', () => {
   before(() => {})
 

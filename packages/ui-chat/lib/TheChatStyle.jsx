@@ -10,8 +10,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheChat */
 const TheChatStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-chat-style', className)}
+    id={id}
     styles={TheChatStyle.data(options)}
   />
 )

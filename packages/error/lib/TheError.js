@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Basic error
  * @memberof module:@the-/error
  * @class TheError
  */
-'use strict'
-
 /** @lends TheError */
 class TheError extends Error {
   constructor(message, detail = {}, options = {}) {

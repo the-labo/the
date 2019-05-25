@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheRTCClient.
  * Runs with mocha.
  */
-'use strict'
-
 const aport = require('aport')
 const asleep = require('asleep')
 const { equal, ok } = require('assert').strict
@@ -35,7 +34,7 @@ describe('the-rtc-client', function() {
         await c02.join('hoge')
 
         const received = await new Promise((resolve, reject) => {
-          setTimeout(() => reject(new Error(`Timeout`)), 1000)
+          setTimeout(() => reject(new Error('Timeout')), 1000)
           c01.subscribe('greeting', ({ payload, topic }) => {
             resolve(payload, topic)
           })

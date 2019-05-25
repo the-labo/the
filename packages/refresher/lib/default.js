@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/refresher.create}
  * @memberof module:@the-/refresher
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const TheRefresher = require('./TheRefresher')
 

@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/mail.create}
  * @memberof module:@the-/mail
  * @function default
  */
-'use strict'
-
 const create = require('./create')
 const helpers = require('./helpers')
 const TheMail = require('./TheMail')

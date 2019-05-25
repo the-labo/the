@@ -1,9 +1,8 @@
+'use strict'
 /**
  * @class SFUProxyEdgeOfferer
  * @augments SFUProxyEdge
  */
-'use strict'
-
 const SFUProxyEdge = require('./SFUProxyEdge')
 
 /** @lends SFUProxyEdgeOfferer */

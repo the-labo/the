@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create "packageRule" lint
  * @memberof module:@the-/lint.rules
@@ -5,8 +6,6 @@
  * @param {Object} config - Lint config
  * @returns {function()} Lint function
  */
-'use strict'
-
 const aglob = require('aglob')
 const { readFileAsync } = require('asfs')
 const path = require('path')
@@ -27,7 +26,7 @@ function packageRule(config) {
     ...rest
   } = config
   if (Object.keys(rest).length > 0) {
-    console.warn(`[packageRule] Unknown options`, Object.keys(rest))
+    console.warn('[packageRule] Unknown options', Object.keys(rest))
   }
   const _json = ({ content, filename }) => {
     try {

@@ -1,10 +1,9 @@
+'use strict'
 /**
  * Resource of data history
  * @memberof module:@the-/db
  * @class TheLogResource
  */
-'use strict'
-
 const amkdirp = require('amkdirp')
 const {
   ResourceEvents: {
@@ -70,7 +69,7 @@ class TheLogResource extends TheResource {
         try {
           await Log.flushData()
         } catch (e) {
-          console.warn(`[the-db]Failed to flush log data`, e)
+          console.warn('[the-db]Failed to flush log data', e)
         }
         if (Log.flushLoop) {
           Log.flushTimer = flushTick()

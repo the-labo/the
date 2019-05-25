@@ -37,7 +37,7 @@ class TileLayer extends L.TileLayer {
     {
       const loadingMsg = document.createElement('div')
       loadingMsg.classList.add('the-map-title-loading-msg')
-      loadingMsg.innerHTML = `<i class="fas fa-spin fa-sync"/>`
+      loadingMsg.innerHTML = '<i class="fas fa-spin fa-sync"/>'
       tile.appendChild(loadingMsg)
     }
     return tile

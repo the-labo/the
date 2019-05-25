@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for asController.
  * Runs with mocha.
  */
-'use strict'
-
 const { equal, ok } = require('assert').strict
 const asController = require('../lib/helpers/asController')
 

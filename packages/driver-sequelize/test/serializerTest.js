@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for serializer.
  * Runs with mocha.
  */
-'use strict'
-
 describe('serializer', () => {
   before(() => {})
 

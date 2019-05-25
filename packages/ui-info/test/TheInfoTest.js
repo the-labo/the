@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheInfo.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheInfo = require('../shim/TheInfo').default

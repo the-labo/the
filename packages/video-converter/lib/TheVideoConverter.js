@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Video converter
  * @memberof module:@the-/video-converter
  * @class TheVideoConverter
  * @augments module:@the-/video-converter.mixins.mp4Mix~MP4Mixed
  */
-'use strict'
-
 const { mkdirpAsync, unlinkAsync } = require('asfs')
 const { exec, spawn } = require('child_process')
 const path = require('path')

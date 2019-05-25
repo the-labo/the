@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for ThemeValues.
  * Runs with mocha.
  */
-'use strict'
-
 describe('theme-values', () => {
   before(() => {})
 

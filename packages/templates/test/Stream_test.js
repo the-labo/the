@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test case for stream.
  * Runs with mocha.
  */
-'use strict'
-
 describe('stream', function() {
   this.timeout(3000)
 

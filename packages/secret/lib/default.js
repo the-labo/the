@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Default exports
  * @memberof module:@the-/secret
  * @function theSecret
  * @returns {TheSecret}
  */
-'use strict'
-
 const create = require('./create')
 const TheSecret = require('./TheSecret')
 

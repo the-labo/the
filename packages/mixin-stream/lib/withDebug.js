@@ -1,10 +1,9 @@
+'use strict'
 /**
  * @function withDebug
  * @param {function()} Base class
  * @returns {function()} Mixed class
  */
-'use strict'
-
 const Debug = require('debug')
 const { unlessProduction } = require('@the-/check')
 

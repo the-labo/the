@@ -1,10 +1,9 @@
+'use strict'
 /**
  * @memberof module:@the-/stream
  * @class TheStream
  * @param {Object} [options={}]
  */
-'use strict'
-
 const asleep = require('asleep')
 const Consumer = require('./Consumer')
 const Provider = require('./Provider')
@@ -21,18 +20,18 @@ class TheStream {
 
   assertNotClosed() {
     if (this.closed) {
-      throw new Error(`[TheStream] Stream already closed!`)
+      throw new Error('[TheStream] Stream already closed!')
     }
   }
 
   assertNotOpened() {
     if (this.opened) {
-      throw new Error(`[TheStream] Stream already opened!`)
+      throw new Error('[TheStream] Stream already opened!')
     }
   }
 
   streamDidCatch(e) {
-    console.error(`[TheStream] Error`, e)
+    console.error('[TheStream] Error', e)
   }
 
   streamDidOpen() {}

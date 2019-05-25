@@ -10,8 +10,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheToast */
 const TheToastStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-toast-style', className)}
+    id={id}
     styles={TheToastStyle.data(options)}
   />
 )

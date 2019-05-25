@@ -63,5 +63,4 @@ Parse url
 
 | Param | Type |
 | --- | --- |
-| urlString | <code>string</code> | 
-
+| urlString | <code>string</code> |

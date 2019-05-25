@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create a TheRefactor instance
  * @memberof module:@the-/refactor
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {TheRefactor}
  */
-'use strict'
-
 const TheRefactor = require('./TheRefactor')
 
 /** @lends module:@the-/refactor.create */

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Alias of {@link module:@the-/assets.create}
  * @memberof module:@the-/assets
@@ -5,8 +6,6 @@
  * @param {...*} args
  * @returns {module:@the-/assets.TheAssert}
  */
-'use strict'
-
 const create = require('./create')
 const TheAssets = require('./TheAssets')
 const lib = create.bind(create)

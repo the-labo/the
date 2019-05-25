@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for Readme.
  * Runs with mocha.
  */
-'use strict'
-
 const coz = require('coz')
 const Readme = require('../lib/Readme')
 const jsdoc = require('../misc/mocks/mock-jsdoc')

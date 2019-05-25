@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for State.
  * Runs with mocha.
  */
-'use strict'
-
 describe('state', () => {
   before(() => {})
 

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for TheFrame.
  * Runs with mocha.
  */
-'use strict'
-
 const { ok } = require('assert').strict
 const React = require('react')
 const TheFrame = require('../shim/TheFrame').default

@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for mediaMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('media-mix', () => {
   before(() => {})
 

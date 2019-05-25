@@ -1,11 +1,10 @@
+'use strict'
 /**
  * Default exports
  * @memberof module:@the-/date
  * @function default
  * @returns {TheDate}
  */
-'use strict'
-
 const create = require('./create')
 const Durations = require('./Durations')
 const TheDate = require('./TheDate')

@@ -1,5 +1,4 @@
 'use strict'
-
 const { ThePack } = require('@the-/pack')
 
 async function tryExample() {

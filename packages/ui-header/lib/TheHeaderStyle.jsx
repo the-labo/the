@@ -10,8 +10,8 @@ import { asStyleData } from '@the-/util-ui'
 /** Style for TheHeader */
 const TheHeaderStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('the-header-style', className)}
+    id={id}
     styles={TheHeaderStyle.data(options)}
   />
 )

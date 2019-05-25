@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for binder.
  * Runs with mocha.
  */
-'use strict'
-
 describe('binder', () => {
   before(() => {})
 

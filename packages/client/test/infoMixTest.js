@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for infoMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('info-mix', () => {
   before(() => {})
 

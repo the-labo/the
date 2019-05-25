@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for lockMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('lock-mix', () => {
   before(() => {})
 

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create count suffix strings
  * @memberof module:@the-/util-site
@@ -6,8 +7,6 @@
  * @param {Object} [options={}] - Optional settings
  * @returns {string} - Suffix string
  */
-'use strict'
-
 /** @lends module:@the-/util-site.countSuffix */
 function countSuffix(count, options = {}) {
   const isEmpty = typeof count === 'undefined' || count === null

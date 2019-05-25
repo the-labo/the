@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for ffprobe.
  * Runs with mocha.
  */
-'use strict'
-
 describe('ffprobe', () => {
   before(() => {})
 

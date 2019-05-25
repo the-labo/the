@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for driverFromEnv.
  * Runs with mocha.
  */
-'use strict'
-
 describe('driver-from-env', () => {
   before(() => {})
 

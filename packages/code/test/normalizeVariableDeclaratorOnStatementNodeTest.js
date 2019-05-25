@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for normalizeVariableDeclaratorOnStatementNode.
  * Runs with mocha.
  */
-'use strict'
-
 describe('normalize-variable-declarator-on-statement-node', () => {
   before(() => {})
 

@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Process js "use strict" statement
  * @memberof module:@the-/code.processors
@@ -5,8 +6,6 @@
  * @param {string} content
  * @returns {string} processed
  */
-'use strict'
-
 const { EOL } = require('os')
 const {
   constants: { NodeTypes },
@@ -17,26 +16,30 @@ const applyConverter = require('../helpers/applyConverter')
 
 /** @lends module:@the-/code.processors.processJSRequire */
 function processJSRequire(content, options = {}) {
-  return applyConverter(content, (content) => {
-    const parsed = parse(content, options)
-    const Directives = finder.findByTypes(parsed, [NodeTypes.Directive])
-    const isStrict =
-      Directives.map(({ value }) => value)
-        .filter(Boolean)
-        .filter(({ type }) => type === 'DirectiveLiteral')
-        .filter(({ value }) => value === 'use strict').length > 0
-    if (isStrict) {
-      return content
-    }
-    const contentString = String(content)
-    const hasHashBang = /^#!/.test(contentString)
-    if (hasHashBang) {
-      const [hashBang, ...body] = contentString.split(EOL)
-      return [hashBang, "'use strict'", ...body].join(EOL)
-    } else {
-      return ["'use strict'", contentString].join(EOL)
-    }
-  })
+  return applyConverter(
+    content,
+    (content) => {
+      const parsed = parse(content, options)
+      const Directives = finder.findByTypes(parsed, [NodeTypes.Directive])
+      const isStrict =
+        Directives.map(({ value }) => value)
+          .filter(Boolean)
+          .filter(({ type }) => type === 'DirectiveLiteral')
+          .filter(({ value }) => value === 'use strict').length > 0
+      if (isStrict) {
+        return content
+      }
+      const contentString = String(content)
+      const hasHashBang = /^#!/.test(contentString)
+      if (hasHashBang) {
+        const [hashBang, ...body] = contentString.split(EOL)
+        return [hashBang, "'use strict'", ...body].join(EOL)
+      } else {
+        return ["'use strict'", contentString].join(EOL)
+      }
+    },
+    { name: 'processJSRequire' },
+  )
 }
 
 module.exports = processJSRequire

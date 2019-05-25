@@ -1,9 +1,8 @@
+'use strict'
 /**
  * Test for socketMix.
  * Runs with mocha.
  */
-'use strict'
-
 describe('socket-mix', () => {
   before(() => {})
 
