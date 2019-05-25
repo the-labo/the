@@ -5,7 +5,7 @@
 ## @the-/code
 Code formatter of the-frameworks
 
-**Version**: 15.5.22  
+**Version**: 15.5.26  
 **License**: MIT  
 
 * [@the-/code](#module_@the-/code)
@@ -39,6 +39,7 @@ Code formatter of the-frameworks
         * [.processJSDoc(content, [options])](#module_@the-/code.processors.processJSDoc)
         * [.processJSExport(content)](#module_@the-/code.processors.processJSExport) ⇒ <code>string</code>
         * [.processJSFunction(content)](#module_@the-/code.processors.processJSFunction) ⇒ <code>string</code>
+        * [.processJSIf(content)](#module_@the-/code.processors.processJSIf) ⇒ <code>string</code>
         * [.processJSImport(content)](#module_@the-/code.processors.processJSImport) ⇒ <code>string</code>
         * [.processJSObject(content)](#module_@the-/code.processors.processJSObject) ⇒ <code>string</code>
         * [.processJSON()](#module_@the-/code.processors.processJSON)
@@ -213,6 +214,7 @@ Processor functions
     * [.processJSDoc(content, [options])](#module_@the-/code.processors.processJSDoc)
     * [.processJSExport(content)](#module_@the-/code.processors.processJSExport) ⇒ <code>string</code>
     * [.processJSFunction(content)](#module_@the-/code.processors.processJSFunction) ⇒ <code>string</code>
+    * [.processJSIf(content)](#module_@the-/code.processors.processJSIf) ⇒ <code>string</code>
     * [.processJSImport(content)](#module_@the-/code.processors.processJSImport) ⇒ <code>string</code>
     * [.processJSObject(content)](#module_@the-/code.processors.processJSObject) ⇒ <code>string</code>
     * [.processJSON()](#module_@the-/code.processors.processJSON)
@@ -329,6 +331,18 @@ Process export statement
 
 #### processors.processJSFunction(content) ⇒ <code>string</code>
 Process function expressions
+
+**Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
+**Returns**: <code>string</code> - processed  
+
+| Param | Type |
+| --- | --- |
+| content | <code>string</code> | 
+
+<a name="module_@the-/code.processors.processJSIf"></a>
+
+#### processors.processJSIf(content) ⇒ <code>string</code>
+Process if statemens
 
 **Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
 **Returns**: <code>string</code> - processed  

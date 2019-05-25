@@ -5,7 +5,7 @@
     "name": "@the-/code",
     "kind": "module",
     "description": "Code formatter of the-frameworks",
-    "version": "15.5.22",
+    "version": "15.5.26",
     "license": "MIT",
     "typicalname": "code",
     "meta": {
@@ -1217,6 +1217,41 @@
     "order": 64
   },
   {
+    "id": "module:@the-/code.processors.processJSIf",
+    "longname": "module:@the-/code.processors.processJSIf",
+    "name": "processJSIf",
+    "kind": "function",
+    "scope": "static",
+    "description": "Process if statemens",
+    "memberof": "module:@the-/code.processors",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "content"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "processed"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "processJSIf.js",
+      "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
+    },
+    "order": 65
+  },
+  {
     "id": "module:@the-/code.processors.processJSImport",
     "longname": "module:@the-/code.processors.processJSImport",
     "name": "processJSImport",
@@ -1249,7 +1284,7 @@
       "filename": "processJSImport.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
     },
-    "order": 65
+    "order": 66
   },
   {
     "id": "module:@the-/code.processors.processJSObject",
@@ -1284,7 +1319,7 @@
       "filename": "processJSObject.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
     },
-    "order": 66
+    "order": 67
   },
   {
     "id": "module:@the-/code.processors.processJSON",
@@ -1298,7 +1333,7 @@
       "filename": "processJSON.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
     },
-    "order": 67
+    "order": 68
   },
   {
     "id": "module:@the-/code.processors.processJSPrettier",
@@ -1332,7 +1367,7 @@
       "filename": "processJSPrettier.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
     },
-    "order": 68
+    "order": 69
   },
   {
     "id": "module:@the-/code.processors.processJSRequire",
@@ -1367,7 +1402,7 @@
       "filename": "processJSRequire.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
     },
-    "order": 69
+    "order": 70
   },
   {
     "id": "module:@the-/code.processors.processJSRequire",
@@ -1402,7 +1437,7 @@
       "filename": "processJSStrict.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
     },
-    "order": 70
+    "order": 71
   },
   {
     "id": "module:@the-/code.processors.processJSString",
@@ -1436,7 +1471,7 @@
       "filename": "processJSString.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
     },
-    "order": 71
+    "order": 72
   },
   {
     "id": "module:@the-/code.processors.processJSSwitch",
@@ -1471,7 +1506,7 @@
       "filename": "processJSSwitch.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
     },
-    "order": 72
+    "order": 73
   },
   {
     "id": "module:@the-/code.processors.processJSUnused",
@@ -1506,7 +1541,7 @@
       "filename": "processJSUnused.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
     },
-    "order": 73
+    "order": 74
   },
   {
     "id": "module:@the-/code.processors.processJSXAttribute",
@@ -1541,7 +1576,7 @@
       "filename": "processJSXAttribute.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
     },
-    "order": 74
+    "order": 75
   },
   {
     "id": "module:@the-/code.processors.processPackageJSON",
@@ -1555,7 +1590,7 @@
       "filename": "processPackageJSON.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
     },
-    "order": 75
+    "order": 76
   },
   {
     "id": "module:@the-/code.processors.processPackageLockJSON",
@@ -1569,7 +1604,7 @@
       "filename": "processPackageLockJSON.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
     },
-    "order": 76
+    "order": 77
   },
   {
     "id": "module:@the-/code.processors.processYAML",
@@ -1602,6 +1637,6 @@
       "filename": "processYAML.js",
       "path": "/Users/okuni/Projects/the/packages/code/lib/processors"
     },
-    "order": 77
+    "order": 78
   }
 ]

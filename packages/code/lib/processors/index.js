@@ -18,6 +18,7 @@ const processJSDeclaration_ = require('./processJSDeclaration')
 const processJSDoc_ = require('./processJSDoc')
 const processJSExport_ = require('./processJSExport')
 const processJSFunction_ = require('./processJSFunction')
+const processJSIf_ = require('./processJSIf')
 const processJSImport_ = require('./processJSImport')
 const processJSON_ = require('./processJSON')
 const processJSObject_ = require('./processJSObject')
@@ -44,6 +45,7 @@ exports.processJSDeclaration = processJSDeclaration_
 exports.processJSDoc = processJSDoc_
 exports.processJSExport = processJSExport_
 exports.processJSFunction = processJSFunction_
+exports.processJSIf = processJSIf_
 exports.processJSImport = processJSImport_
 exports.processJSON = processJSON_
 exports.processJSObject = processJSObject_
@@ -70,6 +72,7 @@ module.exports = {
   processJSDoc: processJSDoc_,
   processJSExport: processJSExport_,
   processJSFunction: processJSFunction_,
+  processJSIf: processJSIf_,
   processJSImport: processJSImport_,
   processJSON: processJSON_,
   processJSObject: processJSObject_,
