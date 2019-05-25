@@ -12,7 +12,10 @@ const {
   finder,
   parse,
 } = require('@the-/ast')
-const { cleanupReturnAwaitOnFunctionNode } = require('../ast/nodes')
+const {
+  cleanupReturnAwaitOnFunctionNode,
+  normalizeFunctionBodyOnFunctionNode,
+} = require('../ast/nodes')
 const applyConverter = require('../helpers/applyConverter')
 const applyToNodes = require('../helpers/applyToNodes')
 const contentAccess = require('../helpers/contentAccess')
@@ -21,10 +24,18 @@ const contentAccess = require('../helpers/contentAccess')
 function processJSFunction(content, options = {}) {
   return applyConverter(content, (content) => {
     const parsed = parse(content, options)
+    const { comments } = parsed
     const { get, replace } = contentAccess(content)
 
     function convertFunctionNode(FunctionNode) {
-      return cleanupReturnAwaitOnFunctionNode(FunctionNode, { get, replace })
+      return (
+        cleanupReturnAwaitOnFunctionNode(FunctionNode, { get, replace }) ||
+        normalizeFunctionBodyOnFunctionNode(FunctionNode, {
+          comments,
+          get,
+          replace,
+        })
+      )
     }
 
     const Functions = finder.findByTypes(parsed, [
@@ -35,7 +46,6 @@ function processJSFunction(content, options = {}) {
       NodeTypes.ObjectMethod,
       NodeTypes.ClassPrivateMethod,
     ])
-    // console.log(parsed)
     const converted = applyToNodes(Functions, convertFunctionNode)
     if (converted) {
       return converted

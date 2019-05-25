@@ -26,8 +26,8 @@ async function g() { if (1>2) return console.log('hoge') }
       `),
       `
 const z = async () => Promise('z')
-const a = async () => { return Promise('a') }      
-const b = async () => { return Promise('b') }      
+const a = async () => Promise('a')      
+const b = async () => Promise('b')      
 const c = async () => { try { return await Promise('c') } catch (e) {} }
 const d = async function () { return Promise('d') }      
 const e = function () { return Promise('e') }      
@@ -101,6 +101,28 @@ const systemSentenceManager = {
     },
 }
     `,
+    )
+  })
+
+  it('Expression on simple return', async () => {
+    equal(
+      await processJSFunction(`const a = () => { return 'a' }`),
+      `const a = () => 'a'`,
+    )
+    equal(
+      await processJSFunction(
+        `const a = () => { /* comment 01 */ return 'a' }`,
+      ),
+      `const a = () => { /* comment 01 */ return 'a' }`,
+      'Keep body with comment',
+    )
+    equal(
+      await processJSFunction(`function a () { return 'a' }`),
+      `function a () { return 'a' }`,
+    )
+    equal(
+      await processJSFunction(`const a = { say: () => { return 'a' } }`),
+      `const a = { say: () => 'a' }`,
     )
   })
 })
