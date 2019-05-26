@@ -1,7 +1,7 @@
 {
   "name": "@the-/eslint-config-code",
   "description": "eslint-config for @the-/code",
-  "version": "15.4.12",
+  "version": "15.4.13",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",

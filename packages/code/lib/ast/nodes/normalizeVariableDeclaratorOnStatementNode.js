@@ -65,7 +65,7 @@ function normalizeVariableDeclaratorOnStatementNode(
       }) ||
       normalizeAssignmentOnVariableDeclarationNode(VariableDeclaration, {
         get,
-        replace
+        replace,
       }) ||
       modifyToDestructorOnDeclarationNode(VariableDeclaration, {
         get,

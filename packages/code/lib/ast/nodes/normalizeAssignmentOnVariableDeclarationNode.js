@@ -11,7 +11,7 @@ const {
 /** @lends module:@the-/code.ast.nodes.normalizeAssignmentOnVariableDeclarationNode */
 function normalizeAssignmentOnVariableDeclarationNode(
   VariableDeclaration,
-  { get, replace },
+  { replace },
 ) {
   const {
     declarations: [declaration],

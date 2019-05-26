@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-bar",
     "order": 0,
     "typicalname": "uiBar",
-    "version": "15.4.4"
+    "version": "15.4.5"
   },
   {
     "description": "Bar of the-component",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheActionBar.jsx",
       "lineno": 14,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+      "path": "lib"
     },
     "name": "TheActionBar",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheBar.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+      "path": "lib"
     },
     "name": "TheBar",
     "order": 8,
@@ -50,7 +50,7 @@
     "meta": {
       "filename": "TheBarStyle.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+      "path": "lib"
     },
     "name": "TheBarStyle",
     "order": 9,
@@ -65,8 +65,8 @@
     "memberof": "TheActionBar.propTypes",
     "meta": {
       "filename": "TheActionBar.jsx",
-      "lineno": 62,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+      "lineno": 65,
+      "path": "lib"
     },
     "name": "buttons",
     "order": 2,
@@ -80,8 +80,8 @@
     "memberof": "TheActionBar.propTypes",
     "meta": {
       "filename": "TheActionBar.jsx",
-      "lineno": 64,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+      "lineno": 67,
+      "path": "lib"
     },
     "name": "danger",
     "order": 3,
@@ -95,8 +95,8 @@
     "memberof": "TheActionBar.propTypes",
     "meta": {
       "filename": "TheActionBar.jsx",
-      "lineno": 66,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+      "lineno": 69,
+      "path": "lib"
     },
     "name": "handlers",
     "order": 4,
@@ -110,8 +110,8 @@
     "memberof": "TheActionBar.propTypes",
     "meta": {
       "filename": "TheActionBar.jsx",
-      "lineno": 68,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+      "lineno": 71,
+      "path": "lib"
     },
     "name": "hidden",
     "order": 5,
@@ -125,8 +125,8 @@
     "memberof": "TheActionBar.propTypes",
     "meta": {
       "filename": "TheActionBar.jsx",
-      "lineno": 70,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+      "lineno": 73,
+      "path": "lib"
     },
     "name": "icons",
     "order": 6,
@@ -140,8 +140,8 @@
     "memberof": "TheActionBar.propTypes",
     "meta": {
       "filename": "TheActionBar.jsx",
-      "lineno": 72,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+      "lineno": 75,
+      "path": "lib"
     },
     "name": "lead",
     "order": 7,
@@ -156,7 +156,7 @@
     "meta": {
       "filename": "TheBarStyle.jsx",
       "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/ui-bar/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 10,

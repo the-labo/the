@@ -28,6 +28,7 @@ const mergeDuplicateImportOnProgramNode_ = require('./mergeDuplicateImportOnProg
 const mergeStringConcatenateOnBinaryExpressionNode_ = require('./mergeStringConcatenateOnBinaryExpressionNode')
 const modifyNodeDeprecatedOnRequireDeclaration_ = require('./modifyNodeDeprecatedOnRequireDeclaration')
 const modifyToDestructorOnDeclarationNode_ = require('./modifyToDestructorOnDeclarationNode')
+const normalizeAssignmentOnVariableDeclarationNode_ = require('./normalizeAssignmentOnVariableDeclarationNode')
 const normalizeBinaryExpressionNode_ = require('./normalizeBinaryExpressionNode')
 const normalizeFunctionReturnOnFunctionNode_ = require('./normalizeFunctionReturnOnFunctionNode')
 const normalizeJSDocAnnotationsOnCommentNode_ = require('./normalizeJSDocAnnotationsOnCommentNode')
@@ -64,6 +65,7 @@ exports.mergeDuplicateImportOnProgramNode = mergeDuplicateImportOnProgramNode_
 exports.mergeStringConcatenateOnBinaryExpressionNode = mergeStringConcatenateOnBinaryExpressionNode_
 exports.modifyNodeDeprecatedOnRequireDeclaration = modifyNodeDeprecatedOnRequireDeclaration_
 exports.modifyToDestructorOnDeclarationNode = modifyToDestructorOnDeclarationNode_
+exports.normalizeAssignmentOnVariableDeclarationNode = normalizeAssignmentOnVariableDeclarationNode_
 exports.normalizeBinaryExpressionNode = normalizeBinaryExpressionNode_
 exports.normalizeFunctionReturnOnFunctionNode = normalizeFunctionReturnOnFunctionNode_
 exports.normalizeJSDocAnnotationsOnCommentNode = normalizeJSDocAnnotationsOnCommentNode_
@@ -100,6 +102,7 @@ module.exports = {
   mergeStringConcatenateOnBinaryExpressionNode: mergeStringConcatenateOnBinaryExpressionNode_,
   modifyNodeDeprecatedOnRequireDeclaration: modifyNodeDeprecatedOnRequireDeclaration_,
   modifyToDestructorOnDeclarationNode: modifyToDestructorOnDeclarationNode_,
+  normalizeAssignmentOnVariableDeclarationNode: normalizeAssignmentOnVariableDeclarationNode_,
   normalizeBinaryExpressionNode: normalizeBinaryExpressionNode_,
   normalizeFunctionReturnOnFunctionNode: normalizeFunctionReturnOnFunctionNode_,
   normalizeJSDocAnnotationsOnCommentNode: normalizeJSDocAnnotationsOnCommentNode_,
