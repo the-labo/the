@@ -24,8 +24,9 @@ const asControllerModule = require('./asControllerModule')
 const buildInEndpoints = require('./buildInEndpoints')
 const DefaultValues = require('./constants/DefaultValues')
 const IOEvents = require('./constants/IOEvents')
-const { callbacksProxy, toControllerModuleBind } = require('./helpers')
 const {
+  callbacksProxy,
+  toControllerModuleBind,
   controllerSpecsFor,
   ctxInjector,
   langDetector,

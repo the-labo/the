@@ -143,6 +143,13 @@ const PackageFiles = require('../packaging/PackageFiles')
 `,
     )
   })
+
+  it('With deep strict', async () => {
+    equal(
+      await processJSRequire("const {deepStrictEqual} = require('assert')"),
+      "const {deepStrictEqual} = require('assert')",
+    )
+  })
 })
 
 /* global describe, before, after, it */

@@ -19,6 +19,7 @@ const cleanupUnusedOnArrayPatternNode_ = require('./cleanupUnusedOnArrayPatternN
 const cleanupUnusedOnImportNode_ = require('./cleanupUnusedOnImportNode')
 const cleanupUnusedOnObjectPatternNode_ = require('./cleanupUnusedOnObjectPatternNode')
 const cleanupUnusedOnVariableNode_ = require('./cleanupUnusedOnVariableNode')
+const combineObjectPatternOnStatementNode_ = require('./combineObjectPatternOnStatementNode')
 const commentModuleOnProgramNode_ = require('./commentModuleOnProgramNode')
 const findCJSExportsAssignmentsExpressionOnProgramNode_ = require('./findCJSExportsAssignmentsExpressionOnProgramNode')
 const findJSDocAnnotationsInCommendNode_ = require('./findJSDocAnnotationsInCommendNode')
@@ -54,6 +55,7 @@ exports.cleanupUnusedOnArrayPatternNode = cleanupUnusedOnArrayPatternNode_
 exports.cleanupUnusedOnImportNode = cleanupUnusedOnImportNode_
 exports.cleanupUnusedOnObjectPatternNode = cleanupUnusedOnObjectPatternNode_
 exports.cleanupUnusedOnVariableNode = cleanupUnusedOnVariableNode_
+exports.combineObjectPatternOnStatementNode = combineObjectPatternOnStatementNode_
 exports.commentModuleOnProgramNode = commentModuleOnProgramNode_
 exports.findCJSExportsAssignmentsExpressionOnProgramNode = findCJSExportsAssignmentsExpressionOnProgramNode_
 exports.findJSDocAnnotationsInCommendNode = findJSDocAnnotationsInCommendNode_
@@ -89,6 +91,7 @@ module.exports = {
   cleanupUnusedOnImportNode: cleanupUnusedOnImportNode_,
   cleanupUnusedOnObjectPatternNode: cleanupUnusedOnObjectPatternNode_,
   cleanupUnusedOnVariableNode: cleanupUnusedOnVariableNode_,
+  combineObjectPatternOnStatementNode: combineObjectPatternOnStatementNode_,
   commentModuleOnProgramNode: commentModuleOnProgramNode_,
   findCJSExportsAssignmentsExpressionOnProgramNode: findCJSExportsAssignmentsExpressionOnProgramNode_,
   findJSDocAnnotationsInCommendNode: findJSDocAnnotationsInCommendNode_,

@@ -9,6 +9,7 @@ const {
   finder,
   parse,
 } = require('@the-/ast')
+const combineObjectPatternOnStatementNode = require('../ast/nodes/combineObjectPatternOnStatementNode')
 const normalizeVariableDeclaratorOnStatementNode = require('../ast/nodes/normalizeVariableDeclaratorOnStatementNode')
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
@@ -27,13 +28,15 @@ function processJSDeclaration(content, options = {}) {
       ])
 
       for (const Statement of Statements) {
-        const converted = normalizeVariableDeclaratorOnStatementNode(
-          Statement,
-          {
+        const converted =
+          normalizeVariableDeclaratorOnStatementNode(Statement, {
             get,
             replace,
-          },
-        )
+          }) ||
+          combineObjectPatternOnStatementNode(Statement, {
+            get,
+            replace,
+          })
         if (converted) {
           return converted
         }

@@ -19,7 +19,7 @@ function modifyNodeDeprecatedOnRequireDeclaration(Declaration, options = {}) {
     const { id } = assertDeclaration
     if (id.type === 'ObjectPattern') {
       const needsStrict = id.properties.every(
-        (Node) => !/strict/.test(Node.key.name),
+        (Node) => !/strict/i.test(Node.key.name),
       )
       if (needsStrict) {
         return replace(

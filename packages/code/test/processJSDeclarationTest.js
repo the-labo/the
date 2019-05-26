@@ -132,6 +132,39 @@ const a = () => {
       "const [ shortName ] = name.split('@')",
     )
   })
+
+  it('Compile object pattern', async () => {
+    equal(
+      await processJSDeclaration(`
+const {a} = x
+const {b} = x
+y = () => {
+  const {c} = x
+  const {d} = x
+}
+`),
+      `
+const {a, b} = x
+y = () => {
+  const {c, d} = x  
+}
+`,
+    )
+    equal(
+      await processJSDeclaration(`
+const {a} = x
+const {b:bb} = x
+const {b:bbb} = x
+const {c=2} = x
+const {d: dd=3} = x
+const {e: {f}} = x
+const {e2: {f2}} = x
+`),
+      `
+const {a, b:bb, b:bbb, c=2, d: dd=3, e: {f}, e2: {f2}} = x
+`,
+    )
+  })
 })
 
 /* global describe, before, after, it */

@@ -337,8 +337,9 @@ class TheDB extends TheDBBase {
    * @returns {Promise<undefined>}
    */
   async drop() {
-    const { driver, resources } = this
     const {
+      driver,
+      resources,
       env: { database, dialect, storage },
     } = this
     switch (String(dialect).trim()) {
