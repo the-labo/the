@@ -9,6 +9,7 @@ const {
   finder,
 } = require('@the-/ast')
 const modifyToDestructorOnDeclarationNode = require('./modifyToDestructorOnDeclarationNode')
+const normalizeAssignmentOnVariableDeclarationNode = require('./normalizeAssignmentOnVariableDeclarationNode')
 const normalizeKindOnVariableDeclarationNode = require('./normalizeKindOnVariableDeclarationNode')
 
 /** @lends module:@the-/code.ast.nodes.normalizeVariableDeclaratorOnStatementNode */
@@ -61,6 +62,10 @@ function normalizeVariableDeclaratorOnStatementNode(
         get,
         replace,
         updatedNames,
+      }) ||
+      normalizeAssignmentOnVariableDeclarationNode(VariableDeclaration, {
+        get,
+        replace
       }) ||
       modifyToDestructorOnDeclarationNode(VariableDeclaration, {
         get,
