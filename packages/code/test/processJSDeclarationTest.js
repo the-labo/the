@@ -193,6 +193,29 @@ const {c, d} = x
 `,
     )
   })
+
+  it('Combine sub destructing', async () => {
+    equal(
+      await processJSDeclaration(`
+const { y, z } = x
+const { a, b } = y
+console.log(y, a, b, z)
+`),
+      `
+const { y, y: { a, b }, z } = x
+
+console.log(y, a, b, z)
+`,
+    )
+    equal(
+      await processJSDeclaration(`
+const { w, y:yy} = x
+const { a } = yy`),
+      `
+const { w, y:yy, y: { a }} = x
+`,
+    )
+  })
 })
 
 /* global describe, before, after, it */

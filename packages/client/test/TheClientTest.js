@@ -24,8 +24,12 @@ describe('the-client', () => {
 
     class FruitShopCtrl extends TheServer.Ctrl {
       buy(name, amount) {
-        const { callbacks, session } = this
-        const { total = 0 } = session
+        const {
+          callbacks,
+          session,
+          session: { total = 0 },
+        } = this
+
         session.total = total + amount
         const result = { amount, name, total: session.total }
         asleep(10)

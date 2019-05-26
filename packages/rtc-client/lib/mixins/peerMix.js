@@ -41,8 +41,11 @@ function peerMix(Class) {
           debug('connectionState', peer.connectionState, this.rid)
         },
         [PeerEvents.DATA_CHANNEL]: (e) => {
-          const { channel } = e
-          const { label: channelName } = channel
+          const {
+            channel,
+            channel: { label: channelName },
+          } = e
+
           peer.extra.channels[channelName] = channel
           onDataChannel && onDataChannel(channel)
         },

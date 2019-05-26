@@ -7,6 +7,7 @@
 const { EOL } = require('os')
 const {
   constants: { NodeTypes },
+  finder,
 } = require('@the-/ast')
 
 /** @lends module:@the-/code.ast.nodes.combineObjectPatternOnStatementNode */
@@ -16,6 +17,9 @@ function combineObjectPatternOnStatementNode(Statement, { get, replace }) {
   }
 
   const doCombine = (VariableDeclarations) => {
+    if (VariableDeclarations.length < 2) {
+      return
+    }
     const [first, ...restDeclarations] = VariableDeclarations
     const {
       declarations: [{ init }],
@@ -55,6 +59,52 @@ function combineObjectPatternOnStatementNode(Statement, { get, replace }) {
     )
   }
 
+  const doNest = (VariableDeclarations) => {
+    const _escape = (name) => `${name}____`
+    const byInitNameHash = VariableDeclarations.reduce(
+      (byInitNameHash, VariableDeclaration) => {
+        const {
+          declarations: [{ init }],
+        } = VariableDeclaration
+        if (init.type === NodeTypes.Identifier) {
+          const key = _escape(init.name)
+          return {
+            ...byInitNameHash,
+            [key]: [...(byInitNameHash[key] || []), VariableDeclaration],
+          }
+        }
+        return { ...byInitNameHash }
+      },
+      {},
+    )
+    for (const VariableDeclaration of VariableDeclarations) {
+      const ObjectProperties = finder
+        .findByTypes(VariableDeclaration, [NodeTypes.ObjectProperty])
+        .filter((property) => {
+          const { value } = property
+          return value && value.type === NodeTypes.Identifier
+        })
+      for (const property of ObjectProperties) {
+        const { value } = property
+        const [nested] = byInitNameHash[_escape(value.name)] || []
+        const shouldNest = !!nested && property.start < nested.start
+        if (shouldNest) {
+          const {
+            declarations: [declaration],
+          } = nested
+          return replace(
+            [property.start, nested.end],
+            [
+              get([property.start, property.end]),
+              `, ${property.key.name}: ${get(declaration.id.range)}`,
+              get([property.end, nested.start]),
+            ].join(''),
+          )
+        }
+      }
+    }
+  }
+
   const VariableDeclarationGroups = (Statement.body || []).reduce(
     (groups, node) => {
       const isDeclaration = node.type === NodeTypes.VariableDeclaration
@@ -87,10 +137,21 @@ function combineObjectPatternOnStatementNode(Statement, { get, replace }) {
     }
     for (const [, group] of Object.entries(hash)) {
       for (const [, VariableDeclarations] of Object.entries(group)) {
-        if (VariableDeclarations.length > 1) {
-          const combined = doCombine(VariableDeclarations)
+        const combined = doCombine(VariableDeclarations)
+        if (combined) {
           return combined
         }
+      }
+      const inGroups = Object.entries(group).reduce(
+        (inGroups, [, VariableDeclarations]) => [
+          ...VariableDeclarations,
+          ...inGroups,
+        ],
+        [],
+      )
+      const nested = doNest(inGroups)
+      if (nested) {
+        return nested
       }
     }
   }

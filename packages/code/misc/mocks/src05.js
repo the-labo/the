@@ -25,7 +25,16 @@ const es = require('pon-task-es')
 const icon = require('pon-task-icon')
 const md = require('pon-task-md')
 const pm2 = require('pon-task-pm2')
-const { browser, ccjs, css, map, react } = require('pon-task-web')
+const {
+  browser,
+  browser: {
+    transforms: { envify },
+  },
+  ccjs,
+  css,
+  map,
+  react,
+} = require('pon-task-web')
 const theAssets = require('@the-/assets')
 const { isProduction } = require('@the-/check')
 const theCode = require('@the-/code/pon')
@@ -41,9 +50,7 @@ const Rules = require('./misc/lint/Rules')
 const Directories = require('./misc/project/Directories')
 const Pondoc = require('./misc/project/Pondoc')
 const migration = require('./server/db/migration')
-const {
-  transforms: { envify },
-} = browser
+
 const { secret, setting } = Local
 const createDB = () => require('./server/db/create').forTask()
 

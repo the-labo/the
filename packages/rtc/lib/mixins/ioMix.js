@@ -104,9 +104,11 @@ function ioMix(Class) {
       const namespace = io.of(NAMESPACE)
       namespace.on(IOEvents.CONNECTION, (socket) => {
         const {
-          handshake: { query: client },
+          handshake: {
+            query: { rid },
+          },
         } = socket
-        const { rid } = client
+
         socket.theRTCState = {
           info: {},
           rid,

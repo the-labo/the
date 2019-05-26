@@ -1,6 +1,8 @@
 'use strict'
-const { default: theStore } = require('@the-/store')
-const { BooleanScope, ObjectScope } = theStore
+const {
+  default: theStore,
+  default: { BooleanScope, ObjectScope },
+} = require('@the-/store')
 
 async function tryExample() {
   const store = theStore()

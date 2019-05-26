@@ -4,9 +4,10 @@
  * @memberof module:@the-/db
  * @class TheSchemaResource
  */
-const { DataTypes, TheResource } = require('@the-/resource')
-
-const { DATE, STRING } = DataTypes
+const {
+  DataTypes: { DATE, STRING },
+  TheResource,
+} = require('@the-/resource')
 
 /** @lends module:@the-/db.TheSchemaResource */
 class TheSchemaResource extends TheResource {

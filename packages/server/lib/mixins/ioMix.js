@@ -31,9 +31,12 @@ function ioMix(Class) {
     registerIO(io) {
       io.of(NAMESPACE).on(IOEvents.CONNECTION, (socket) => {
         const {
-          handshake: { query: client },
+          handshake: {
+            query: client,
+            query: { cid, via },
+          },
         } = socket
-        const { cid, via } = client
+
         if (via === 'client') {
           const { id: socketId } = socket
           void this.handleIOClientCame(cid, socketId, client)

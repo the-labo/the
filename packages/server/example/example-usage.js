@@ -8,15 +8,20 @@ const { createElement: c } = React
   // Define RPC Controller Class
   class FruitShopCtrl extends Ctrl {
     async addToCart(name, amount = 1) {
-      const { session } = this
-      const { cart = {} } = session
+      const {
+        session,
+        session: { cart = {} },
+      } = this
+
       cart[name] = (cart[name] || 0) + amount
       session.cart = cart
     }
 
     async buy() {
-      const { session } = this
-      const { cart = {} } = session
+      const {
+        session: { cart = {} },
+      } = this
+
       console.log(cart)
       /* ... */
     }

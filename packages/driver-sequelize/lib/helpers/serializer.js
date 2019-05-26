@@ -1,9 +1,11 @@
 'use strict'
-const { DataTypes } = require('clay-constants')
+const {
+  DataTypes: { ENTITY, ID, OBJECT, REF, STRING },
+} = require('clay-constants')
 const { refTo } = require('clay-resource-ref')
 const { typeOf } = require('clay-serial')
 const utf8 = require('utf8')
-const { ENTITY, ID, OBJECT, REF, STRING } = DataTypes
+
 const isEmpty = (v) => v === null || typeof v === 'undefined'
 
 exports.serialize = (value, options = {}) => {

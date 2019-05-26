@@ -19,8 +19,10 @@ const cluster = require('cluster')
 const fs = require('fs')
 const { EOL } = require('os')
 const path = require('path')
-const { DataTypes, TheResource } = require('@the-/resource')
-const { DATE, STRING } = DataTypes
+const {
+  DataTypes: { DATE, STRING },
+  TheResource,
+} = require('@the-/resource')
 
 /** @lends module:@the-/db.TheLogResource */
 class TheLogResource extends TheResource {

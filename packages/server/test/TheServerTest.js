@@ -108,8 +108,11 @@ describe('the-server', function() {
       }
 
       async buy(name, amount) {
-        const { session } = this
-        const { total = 0 } = session
+        const {
+          session,
+          session: { total = 0 },
+        } = this
+
         session.total = total + amount
         // console.log('this.hoge', this.hoge())
         return { amount, name, total: session.total }
