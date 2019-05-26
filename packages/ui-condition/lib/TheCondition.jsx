@@ -9,8 +9,10 @@ import TheConditionStyle from './TheConditionStyle'
  */
 class TheCondition extends React.Component {
   render() {
-    const { props } = this
-    const { children } = props
+    const {
+      props: { children },
+    } = this
+
     if (!this.shouldRender()) {
       return null
     }
@@ -18,9 +20,10 @@ class TheCondition extends React.Component {
   }
 
   shouldRender() {
-    const { props } = this
+    const {
+      props: { allOf, if: if_, someOf, unless },
+    } = this
 
-    const { allOf, if: if_, someOf, unless } = props
     if (if_ !== null) {
       if (!if_) {
         return false

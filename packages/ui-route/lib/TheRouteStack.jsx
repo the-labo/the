@@ -71,9 +71,12 @@ class TheRouteStack extends React.Component {
   }
 
   render() {
-    const { props, state } = this
-    const { height } = state
-    const { className, direction } = props
+    const {
+      props,
+      props: { className, direction },
+      state: { height },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className', 'style'] })}

@@ -123,15 +123,18 @@ class TheView extends React.Component {
   }
 
   render() {
-    const { props } = this
-    const { children, className, fixed, spinning } = props
+    const {
+      props,
+      props: { children, className, fixed, spinning },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}
         {...eventHandlersFor(props, { except: [] })}
         aria-busy={spinning}
         className={c('the-view', className, {
-          ['the-view-fixed']: fixed,
+          'the-view-fixed': fixed,
         })}
       >
         <TheSpin

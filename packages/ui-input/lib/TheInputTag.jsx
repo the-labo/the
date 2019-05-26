@@ -105,14 +105,15 @@ class TheInputTag extends React.PureComponent {
   }
 
   render() {
-    const { props } = this
+    const {
+      props,
+      state: { focused },
+    } = this
     const [edittingValue, ...tagValues] = this.splitValue()
     const inputProps = clone(props, {
       without: ['value', 'splitter', 'options'],
     })
-    const {
-      state: { focused },
-    } = this
+
     return (
       <TheInputText
         {...inputProps}
@@ -149,10 +150,9 @@ class TheInputTag extends React.PureComponent {
   splitValue() {
     const {
       props: { splitter, value },
-    } = this
-    const {
       state: { focused },
     } = this
+
     const split = String(value || '')
       .split(splitter)
       .reverse()

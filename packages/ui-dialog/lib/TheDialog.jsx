@@ -82,21 +82,24 @@ class TheDialog extends React.Component {
   }
 
   render() {
-    const { props } = this
     const {
-      children,
-      className,
-      footer,
-      full = false,
-      hideCloseButton,
-      icon,
-      lead,
-      onClose,
-      present,
-      spinning,
-      title,
-      zIndex,
-    } = props
+      props,
+      props: {
+        children,
+        className,
+        footer,
+        full = false,
+        hideCloseButton,
+        icon,
+        lead,
+        onClose,
+        present,
+        spinning,
+        title,
+        zIndex,
+      },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, {

@@ -286,3 +286,4 @@ var/
 **/doc/demo/bundle.js
 /packages/*/misc/mocks
 /packages/*/assets
+/packages/ui-theme-style/lib/TheThemeStyle.jsx

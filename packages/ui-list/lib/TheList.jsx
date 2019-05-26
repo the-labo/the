@@ -13,8 +13,11 @@ import TheListItem from './TheListItem'
  */
 class TheList extends React.Component {
   render() {
-    const { props } = this
-    const { alt, children, className, horizontal, spinning } = props
+    const {
+      props,
+      props: { alt, children, className, horizontal, spinning },
+    } = this
+
     const empty = props.empty || React.Children.count(children) === 0
     return (
       <ul

@@ -90,8 +90,11 @@ class TheForm extends React.PureComponent {
   }
 
   render() {
-    const { props } = this
-    const { children, className, errorLead, errors, inline, spinning } = props
+    const {
+      props,
+      props: { children, className, errorLead, errors, inline, spinning },
+    } = this
+
     const hasError = Object.keys(errors || {}).length > 0
     return (
       <div

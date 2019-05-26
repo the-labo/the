@@ -73,9 +73,12 @@ class TheAccordionSection extends React.Component {
   }
 
   render() {
-    const { props, state } = this
-    const { children, className, heading } = props
-    const { maxHeight, open } = state
+    const {
+      props,
+      props: { children, className, heading },
+      state: { maxHeight, open },
+    } = this
+
     const { Body, Header } = TheAccordionSection
     return (
       <TheSection

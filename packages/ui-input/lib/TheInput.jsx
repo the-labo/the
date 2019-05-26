@@ -37,21 +37,24 @@ class TheInput extends React.PureComponent {
   }
 
   render() {
-    const { props } = this
     const {
-      autoComplete,
-      autoFocus,
-      children,
-      className,
-      error,
-      id,
-      inputRef,
-      name,
-      placeholder,
-      required,
-      type,
-      value,
-    } = props
+      props,
+      props: {
+        autoComplete,
+        autoFocus,
+        children,
+        className,
+        error,
+        id,
+        inputRef,
+        name,
+        placeholder,
+        required,
+        type,
+        value,
+      },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, {

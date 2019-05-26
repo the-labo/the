@@ -10,8 +10,11 @@ import TheRootStyle from './TheRootStyle'
  */
 class TheRoot extends React.Component {
   render() {
-    const { props } = this
-    const { children, className } = props
+    const {
+      props,
+      props: { children, className },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}

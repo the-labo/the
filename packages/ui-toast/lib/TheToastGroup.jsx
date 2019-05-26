@@ -9,8 +9,11 @@ import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
  */
 class TheToastGroup extends React.Component {
   render() {
-    const { props } = this
-    const { children, className } = props
+    const {
+      props,
+      props: { children, className },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}

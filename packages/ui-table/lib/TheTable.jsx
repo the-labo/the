@@ -109,7 +109,7 @@ class TheTable extends React.Component {
         {...htmlAttributesFor(props, { except: ['className', 'selected'] })}
         {...eventHandlersFor(props, { except: [] })}
         className={c(className, 'the-table-row', {
-          ['the-table-row-selected']: selected,
+          'the-table-row-selected': selected,
         })}
         role='row'
       >
@@ -144,8 +144,10 @@ class TheTable extends React.Component {
   }
 
   render() {
-    const { props } = this
-    const { alt, children, className, empty, wide } = props
+    const {
+      props,
+      props: { alt, children, className, empty, wide },
+    } = this
 
     const Component = empty ? 'div' : 'table'
     return (

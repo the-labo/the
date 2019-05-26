@@ -10,8 +10,11 @@ import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
  */
 class TheButtonGroup extends React.Component {
   render() {
-    const { props } = this
-    const { align, children, className, collapsed, nowrap } = props
+    const {
+      props,
+      props: { align, children, className, collapsed, nowrap },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}

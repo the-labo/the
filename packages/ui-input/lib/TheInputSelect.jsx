@@ -113,10 +113,11 @@ class TheInputSelect extends React.PureComponent {
 
   handleDisplayClick() {
     clearTimeout(this._suggestOffTimer)
-    const { state } = this
     const {
       inputElmRef: { current: inputElm },
+      state,
     } = this
+
     const suggesting = !state.suggesting
     if (suggesting) {
       inputElm && inputElm.focus()
@@ -240,30 +241,32 @@ class TheInputSelect extends React.PureComponent {
   }
 
   render() {
-    const { props } = this
     const {
-      children,
-      className,
-      disabledValues = [],
-      error,
-      fullScreen,
-      id,
-      name,
-      nullable,
-      nullText,
-      parser,
-      placeholder,
-      readOnly,
-      sorter,
-      spinning = false,
-      tabIndex,
-      type,
-      value,
-    } = props
-    const options = normalizeOptions(props.options)
-    const {
+      props,
+      props: {
+        children,
+        className,
+        disabledValues = [],
+        error,
+        fullScreen,
+        id,
+        name,
+        nullable,
+        nullText,
+        parser,
+        placeholder,
+        readOnly,
+        sorter,
+        spinning = false,
+        tabIndex,
+        type,
+        value,
+      },
       state: { suggesting, suggestingIndex },
     } = this
+
+    const options = normalizeOptions(props.options)
+
     const selectedValue = options[value]
     const hasSelect = typeof selectedValue !== 'undefined'
     return (

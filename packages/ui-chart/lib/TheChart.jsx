@@ -19,8 +19,8 @@ class TheChart extends React.Component {
 
   componentDidMount() {
     const {
-      props: { data, onChat, options, type },
       canvasRef: { current: canvas },
+      props: { data, onChat, options, type },
     } = this
     const chart = (this.chart = new Chart(canvas, {
       data,
@@ -31,16 +31,22 @@ class TheChart extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { chart, props } = this
-    const { data, options } = props
+    const {
+      chart,
+      props: { data, options },
+    } = this
+
     chart.data = data
     chart.options = options
     chart.update()
   }
 
   render() {
-    const { props } = this
-    const { className, height, width } = props
+    const {
+      props,
+      props: { className, height, width },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className', 'data'] })}

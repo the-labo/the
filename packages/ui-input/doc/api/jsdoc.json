@@ -6,7 +6,7 @@
     "meta": {
       "filename": "helpers.jsx",
       "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "path": "lib"
     },
     "name": "helpers",
     "order": 0
@@ -19,12 +19,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-input",
     "order": 1,
     "typicalname": "uiInput",
-    "version": "15.4.7"
+    "version": "15.4.10"
   },
   {
     "description": "Input of the-components",
@@ -34,7 +34,7 @@
     "meta": {
       "filename": "TheInput.jsx",
       "lineno": 27,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "path": "lib"
     },
     "name": "TheInput",
     "order": 2,
@@ -47,8 +47,8 @@
     "longname": "TheInputCheckbox",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 17,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 62,
+      "path": "lib"
     },
     "name": "TheInputCheckbox",
     "order": 7,
@@ -61,8 +61,8 @@
     "longname": "TheInputRadio",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 14,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 59,
+      "path": "lib"
     },
     "name": "TheInputRadio",
     "order": 14,
@@ -75,8 +75,8 @@
     "longname": "TheInputRange",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 17,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 51,
+      "path": "lib"
     },
     "name": "TheInputRange",
     "order": 25,
@@ -89,8 +89,8 @@
     "longname": "TheInputSelect",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 18,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 19,
+      "path": "lib"
     },
     "name": "TheInputSelect",
     "order": 33,
@@ -103,8 +103,8 @@
     "longname": "TheInputSlider",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 17,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 51,
+      "path": "lib"
     },
     "name": "TheInputSlider",
     "order": 45,
@@ -117,8 +117,8 @@
     "longname": "TheInputText",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 19,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 44,
+      "path": "lib"
     },
     "name": "TheInputText",
     "order": 55,
@@ -131,8 +131,8 @@
     "longname": "TheInputTextArea",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 12,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 13,
+      "path": "lib"
     },
     "name": "TheInputTextArea",
     "order": 74,
@@ -145,8 +145,8 @@
     "longname": "TheInputToggle",
     "meta": {
       "filename": "TheInputToggle.jsx",
-      "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 38,
+      "path": "lib"
     },
     "name": "TheInputToggle",
     "order": 83,
@@ -160,7 +160,7 @@
     "meta": {
       "filename": "TheInputStyle.jsx",
       "lineno": 26,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "path": "lib"
     },
     "name": "TheInputStyle",
     "order": 53,
@@ -174,7 +174,7 @@
     "meta": {
       "filename": "DateStyleData.jsx",
       "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib/styleData"
+      "path": "lib/styleData"
     },
     "name": "TheInputDateStyleData",
     "order": 100,
@@ -187,7 +187,7 @@
     "meta": {
       "filename": "UploadStyleData.jsx",
       "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib/styleData"
+      "path": "lib/styleData"
     },
     "name": "TheInputUploadStyleData",
     "order": 101,
@@ -201,8 +201,8 @@
     "memberof": "TheInput.propTypes",
     "meta": {
       "filename": "TheInput.jsx",
-      "lineno": 111,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 115,
+      "path": "lib"
     },
     "name": "error",
     "order": 3,
@@ -216,8 +216,8 @@
     "memberof": "TheInput.propTypes",
     "meta": {
       "filename": "TheInput.jsx",
-      "lineno": 113,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 117,
+      "path": "lib"
     },
     "name": "name",
     "order": 4,
@@ -231,8 +231,8 @@
     "memberof": "TheInput.propTypes",
     "meta": {
       "filename": "TheInput.jsx",
-      "lineno": 115,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 119,
+      "path": "lib"
     },
     "name": "onUpdate",
     "order": 5,
@@ -246,8 +246,8 @@
     "memberof": "TheInput.propTypes",
     "meta": {
       "filename": "TheInput.jsx",
-      "lineno": 118,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 122,
+      "path": "lib"
     },
     "name": "value",
     "order": 6,
@@ -261,8 +261,8 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 159,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 181,
+      "path": "lib"
     },
     "name": "disabledValues",
     "order": 8,
@@ -276,8 +276,8 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 163,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 185,
+      "path": "lib"
     },
     "name": "onUpdate",
     "order": 9,
@@ -291,8 +291,8 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 165,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 187,
+      "path": "lib"
     },
     "name": "options",
     "order": 10,
@@ -306,8 +306,8 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 171,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 193,
+      "path": "lib"
     },
     "name": "parser",
     "order": 11,
@@ -321,8 +321,8 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 173,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 195,
+      "path": "lib"
     },
     "name": "splitter",
     "order": 12,
@@ -336,8 +336,8 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 175,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 197,
+      "path": "lib"
     },
     "name": "value",
     "order": 13,
@@ -351,8 +351,8 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 145,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 159,
+      "path": "lib"
     },
     "name": "asButton",
     "order": 15,
@@ -366,8 +366,8 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 147,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 161,
+      "path": "lib"
     },
     "name": "asToggle",
     "order": 16,
@@ -381,8 +381,8 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 149,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 163,
+      "path": "lib"
     },
     "name": "disabledValues",
     "order": 17,
@@ -396,8 +396,8 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 151,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 165,
+      "path": "lib"
     },
     "name": "error",
     "order": 18,
@@ -411,8 +411,8 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 153,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 167,
+      "path": "lib"
     },
     "name": "name",
     "order": 19,
@@ -426,8 +426,8 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 155,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 169,
+      "path": "lib"
     },
     "name": "onUpdate",
     "order": 20,
@@ -441,8 +441,8 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 157,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 171,
+      "path": "lib"
     },
     "name": "options",
     "order": 21,
@@ -456,8 +456,8 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 162,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 176,
+      "path": "lib"
     },
     "name": "parser",
     "order": 22,
@@ -471,8 +471,8 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 164,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 178,
+      "path": "lib"
     },
     "name": "sorter",
     "order": 23,
@@ -486,8 +486,8 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 166,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 180,
+      "path": "lib"
     },
     "name": "value",
     "order": 24,
@@ -501,8 +501,8 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 309,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 348,
+      "path": "lib"
     },
     "name": "barOnly",
     "order": 26,
@@ -516,8 +516,8 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 311,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 350,
+      "path": "lib"
     },
     "name": "error",
     "order": 27,
@@ -531,8 +531,8 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 313,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 352,
+      "path": "lib"
     },
     "name": "max",
     "order": 28,
@@ -546,8 +546,8 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 315,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 354,
+      "path": "lib"
     },
     "name": "min",
     "order": 29,
@@ -561,8 +561,8 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 318,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 357,
+      "path": "lib"
     },
     "name": "onUpdate",
     "order": 30,
@@ -576,8 +576,8 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 320,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 359,
+      "path": "lib"
     },
     "name": "step",
     "order": 31,
@@ -591,8 +591,8 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 322,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 361,
+      "path": "lib"
     },
     "name": "value",
     "order": 32,
@@ -606,8 +606,8 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 345,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 381,
+      "path": "lib"
     },
     "name": "disabledValues",
     "order": 34,
@@ -621,8 +621,8 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 347,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 383,
+      "path": "lib"
     },
     "name": "error",
     "order": 35,
@@ -636,8 +636,8 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 349,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 385,
+      "path": "lib"
     },
     "name": "name",
     "order": 36,
@@ -651,8 +651,8 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 351,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 387,
+      "path": "lib"
     },
     "name": "nullable",
     "order": 37,
@@ -666,8 +666,8 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 353,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 389,
+      "path": "lib"
     },
     "name": "nullText",
     "order": 38,
@@ -681,8 +681,8 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 355,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 391,
+      "path": "lib"
     },
     "name": "onEnter",
     "order": 39,
@@ -696,8 +696,8 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 357,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 393,
+      "path": "lib"
     },
     "name": "onUpdate",
     "order": 40,
@@ -711,8 +711,8 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 359,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 395,
+      "path": "lib"
     },
     "name": "options",
     "order": 41,
@@ -726,8 +726,8 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 364,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 400,
+      "path": "lib"
     },
     "name": "parser",
     "order": 42,
@@ -741,8 +741,8 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 366,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 402,
+      "path": "lib"
     },
     "name": "sorter",
     "order": 43,
@@ -756,8 +756,8 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 369,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 405,
+      "path": "lib"
     },
     "name": "value",
     "order": 44,
@@ -771,8 +771,8 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 237,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 250,
+      "path": "lib"
     },
     "name": "barOnly",
     "order": 46,
@@ -786,8 +786,8 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 239,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 252,
+      "path": "lib"
     },
     "name": "error",
     "order": 47,
@@ -801,8 +801,8 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 241,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 254,
+      "path": "lib"
     },
     "name": "max",
     "order": 48,
@@ -816,8 +816,8 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 243,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 256,
+      "path": "lib"
     },
     "name": "min",
     "order": 49,
@@ -831,8 +831,8 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 246,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 259,
+      "path": "lib"
     },
     "name": "onUpdate",
     "order": 50,
@@ -846,8 +846,8 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 248,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 261,
+      "path": "lib"
     },
     "name": "step",
     "order": 51,
@@ -861,8 +861,8 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 250,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 263,
+      "path": "lib"
     },
     "name": "value",
     "order": 52,
@@ -877,7 +877,7 @@
     "meta": {
       "filename": "TheInputStyle.jsx",
       "lineno": 46,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 54,
@@ -891,8 +891,8 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 371,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 410,
+      "path": "lib"
     },
     "name": "error",
     "order": 56,
@@ -906,8 +906,8 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 373,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 412,
+      "path": "lib"
     },
     "name": "matcher",
     "order": 57,
@@ -921,8 +921,8 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 375,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 414,
+      "path": "lib"
     },
     "name": "name",
     "order": 58,
@@ -936,8 +936,8 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 377,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 416,
+      "path": "lib"
     },
     "name": "onDown",
     "order": 59,
@@ -951,8 +951,8 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 379,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 418,
+      "path": "lib"
     },
     "name": "onEnter",
     "order": 60,
@@ -966,8 +966,8 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 381,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 420,
+      "path": "lib"
     },
     "name": "onLeft",
     "order": 61,
@@ -981,8 +981,8 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 383,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 422,
+      "path": "lib"
     },
     "name": "onRight",
     "order": 62,
@@ -996,8 +996,8 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 385,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 424,
+      "path": "lib"
     },
     "name": "onUp",
     "order": 63,
@@ -1011,8 +1011,8 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 387,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 426,
+      "path": "lib"
     },
     "name": "onUpdate",
     "order": 64,
@@ -1026,8 +1026,8 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 389,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 428,
+      "path": "lib"
     },
     "name": "options",
     "order": 65,
@@ -1041,8 +1041,8 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 394,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 433,
+      "path": "lib"
     },
     "name": "parser",
     "order": 66,
@@ -1056,8 +1056,8 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 396,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 435,
+      "path": "lib"
     },
     "name": "pattern",
     "order": 67,
@@ -1071,8 +1071,8 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 398,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 437,
+      "path": "lib"
     },
     "name": "patternWarning",
     "order": 68,
@@ -1086,8 +1086,8 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 400,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 439,
+      "path": "lib"
     },
     "name": "prefix",
     "order": 69,
@@ -1101,8 +1101,8 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 402,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 441,
+      "path": "lib"
     },
     "name": "suffix",
     "order": 70,
@@ -1116,8 +1116,8 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 404,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 443,
+      "path": "lib"
     },
     "name": "tabIndex",
     "order": 71,
@@ -1131,8 +1131,8 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 406,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 445,
+      "path": "lib"
     },
     "name": "type",
     "order": 72,
@@ -1146,8 +1146,8 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 408,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 447,
+      "path": "lib"
     },
     "name": "value",
     "order": 73,
@@ -1161,8 +1161,8 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 210,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 230,
+      "path": "lib"
     },
     "name": "autoExpand",
     "order": 75,
@@ -1176,8 +1176,8 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 212,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 232,
+      "path": "lib"
     },
     "name": "maxRows",
     "order": 76,
@@ -1191,8 +1191,8 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 214,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 234,
+      "path": "lib"
     },
     "name": "minRows",
     "order": 77,
@@ -1206,8 +1206,8 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 216,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 236,
+      "path": "lib"
     },
     "name": "name",
     "order": 78,
@@ -1221,8 +1221,8 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 218,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 238,
+      "path": "lib"
     },
     "name": "onUpdate",
     "order": 79,
@@ -1236,8 +1236,8 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 220,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 240,
+      "path": "lib"
     },
     "name": "parser",
     "order": 80,
@@ -1251,8 +1251,8 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 222,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 242,
+      "path": "lib"
     },
     "name": "rows",
     "order": 81,
@@ -1266,8 +1266,8 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 224,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 244,
+      "path": "lib"
     },
     "name": "value",
     "order": 82,
@@ -1281,8 +1281,8 @@
     "memberof": "TheInputToggle.propTypes",
     "meta": {
       "filename": "TheInputToggle.jsx",
-      "lineno": 116,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 128,
+      "path": "lib"
     },
     "name": "offTitle",
     "order": 84,
@@ -1296,8 +1296,8 @@
     "memberof": "TheInputToggle.propTypes",
     "meta": {
       "filename": "TheInputToggle.jsx",
-      "lineno": 118,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 130,
+      "path": "lib"
     },
     "name": "on",
     "order": 85,
@@ -1311,8 +1311,8 @@
     "memberof": "TheInputToggle.propTypes",
     "meta": {
       "filename": "TheInputToggle.jsx",
-      "lineno": 120,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 132,
+      "path": "lib"
     },
     "name": "onTitle",
     "order": 86,
@@ -1326,8 +1326,8 @@
     "memberof": "TheInputToggle.propTypes",
     "meta": {
       "filename": "TheInputToggle.jsx",
-      "lineno": 122,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 134,
+      "path": "lib"
     },
     "name": "width",
     "order": 87,
@@ -1341,8 +1341,8 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 224,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 235,
+      "path": "lib"
     },
     "name": "accept",
     "order": 88,
@@ -1356,8 +1356,8 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 226,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 237,
+      "path": "lib"
     },
     "name": "convertFile",
     "order": 89,
@@ -1371,8 +1371,8 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 228,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 239,
+      "path": "lib"
     },
     "name": "error",
     "order": 90,
@@ -1386,8 +1386,8 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 230,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 241,
+      "path": "lib"
     },
     "name": "height",
     "order": 91,
@@ -1401,8 +1401,8 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 232,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 243,
+      "path": "lib"
     },
     "name": "multiple",
     "order": 92,
@@ -1416,8 +1416,8 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 235,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 246,
+      "path": "lib"
     },
     "name": "onError",
     "order": 93,
@@ -1431,8 +1431,8 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 237,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 248,
+      "path": "lib"
     },
     "name": "onLoad",
     "order": 94,
@@ -1446,8 +1446,8 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 239,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 250,
+      "path": "lib"
     },
     "name": "onUpdate",
     "order": 95,
@@ -1461,8 +1461,8 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 241,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 252,
+      "path": "lib"
     },
     "name": "spinner",
     "order": 96,
@@ -1476,8 +1476,8 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 243,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 254,
+      "path": "lib"
     },
     "name": "text",
     "order": 97,
@@ -1491,8 +1491,8 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 245,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 256,
+      "path": "lib"
     },
     "name": "value",
     "order": 98,
@@ -1506,8 +1506,8 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 247,
-      "path": "/Users/okuni/Projects/the/packages/ui-input/lib"
+      "lineno": 258,
+      "path": "lib"
     },
     "name": "width",
     "order": 99,

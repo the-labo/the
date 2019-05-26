@@ -67,23 +67,26 @@ class TheInputDate extends React.PureComponent {
   }
 
   render() {
-    const { props } = this
     const {
-      autoComplete,
-      autoFocus,
-      children,
-      className,
-      error,
-      id,
-      name,
-      placeholder,
-      readOnly,
-      required,
-      spellCheck,
-      tabIndex,
-      type,
-      value,
-    } = props
+      props,
+      props: {
+        autoComplete,
+        autoFocus,
+        children,
+        className,
+        error,
+        id,
+        name,
+        placeholder,
+        readOnly,
+        required,
+        spellCheck,
+        tabIndex,
+        type,
+        value,
+      },
+    } = this
+
     const autoCapitalize = onOffBoolean(props.autoCapitalize)
     const autoCorrect = onOffBoolean(props.autoCorrect)
     return (

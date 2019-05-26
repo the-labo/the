@@ -368,9 +368,12 @@ class TheMap extends React.Component {
   }
 
   render() {
-    const { props, state } = this
-    const { children, className, freezed, height, spinning, width } = props
-    const { mapMarkersNodes } = state
+    const {
+      props,
+      props: { children, className, freezed, height, spinning, width },
+      state: { mapMarkersNodes },
+    } = this
+
     const style = { ...props.style, height, width }
     return (
       <div

@@ -61,8 +61,11 @@ class TheSection extends React.Component {
   }
 
   render() {
-    const { props } = this
-    const { children, className, spinning } = props
+    const {
+      props,
+      props: { children, className, spinning },
+    } = this
+
     return (
       <section
         {...htmlAttributesFor(props, { except: ['className'] })}

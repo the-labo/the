@@ -27,27 +27,31 @@ class TheChatTimeLineItem extends React.Component {
   }
 
   render() {
-    const { props } = this
     const {
-      align,
-      at,
-      atText,
-      children,
-      className,
-      image,
-      node,
-      onWho,
-      raw,
-      status,
-      text,
-      video,
-      who,
-      whoBaseColor,
-      whoImageSize,
-    } = props
-    const {
-      color: whoColor = colorWithText(who.name, { base: whoBaseColor }),
-    } = who
+      props,
+      props: {
+        align,
+        at,
+        atText,
+        children,
+        className,
+        image,
+        node,
+        onWho,
+        raw,
+        status,
+        text,
+        video,
+        who,
+        who: {
+          color: whoColor = colorWithText(who.name, {
+            base: this.props.whoBaseColor,
+          }),
+        },
+        whoImageSize,
+      },
+    } = this
+
     if (raw) {
       return <div className='the-chat-time-line-item-raw'>{node}</div>
     }

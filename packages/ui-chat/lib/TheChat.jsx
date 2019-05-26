@@ -12,8 +12,11 @@ import TheChatTimeLineItem from './TheChatTimeLineItem'
  */
 class TheChat extends React.Component {
   render() {
-    const { props } = this
-    const { children, className } = props
+    const {
+      props,
+      props: { children, className },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}

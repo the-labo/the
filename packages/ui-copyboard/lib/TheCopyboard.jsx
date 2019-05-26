@@ -27,8 +27,11 @@ class TheCopyboard extends React.Component {
   }
 
   doCopy() {
-    const { anchor, props } = this
-    const { text } = props
+    const {
+      anchor,
+      props: { text },
+    } = this
+
     copy(text)
     select(anchor)
     this.showTip()
@@ -50,10 +53,12 @@ class TheCopyboard extends React.Component {
   }
 
   render() {
-    const { props, state } = this
-    const { href, text } = props
-    const { tipShown } = state
-    const { children, className, tipText } = props
+    const {
+      props,
+      props: { children, className, href, text, tipText },
+      state: { tipShown },
+    } = this
+
     const Anchor = href ? 'a' : 'span'
     return (
       <span

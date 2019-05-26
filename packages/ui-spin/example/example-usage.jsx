@@ -10,22 +10,22 @@ class ExampleComponent extends React.PureComponent {
       <div>
         <TheSpinStyle />
         <span style={spinStyle}>
-          <TheSpin enabled={true} size='xx-large' theme='A' />
+          <TheSpin enabled size='xx-large' theme='A' />
         </span>
         <span style={spinStyle}>
-          <TheSpin enabled={true} size='xx-large' theme='B' />
+          <TheSpin enabled size='xx-large' theme='B' />
         </span>
         <span style={spinStyle}>
-          <TheSpin enabled={true} size='xx-large' theme='C' />
+          <TheSpin enabled size='xx-large' theme='C' />
         </span>
         <span style={spinStyle}>
-          <TheSpin enabled={true} size='xx-large' theme='D' />
+          <TheSpin enabled size='xx-large' theme='D' />
         </span>
         <span style={spinStyle}>
-          <TheSpin enabled={true} size='xx-large' theme='E' />
+          <TheSpin enabled size='xx-large' theme='E' />
         </span>
         <span style={spinStyle}>
-          <TheSpin enabled={true} size='xx-large' theme='F' />
+          <TheSpin enabled size='xx-large' theme='F' />
         </span>
 
         <br />
@@ -49,7 +49,7 @@ class ExampleComponent extends React.PureComponent {
               key={i}
               style={{ display: 'inline-block', height: '32px', width: '32px' }}
             >
-              <TheSpin enabled={true} size='small' />
+              <TheSpin enabled size='small' />
             </span>
           ))}
         </div>

@@ -31,7 +31,7 @@ class ExampleComponent extends React.PureComponent {
         <TheRepeatable
           data={data}
           render={(data) => <div>This is data: {data.name}</div>}
-          spinning={true}
+          spinning
         />
 
         <h3>Empty</h3>

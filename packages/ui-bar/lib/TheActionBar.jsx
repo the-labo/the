@@ -13,17 +13,20 @@ import TheBarStyle from './TheBarStyle'
  */
 class TheActionBar extends React.Component {
   render() {
-    const { props } = this
     const {
-      buttons,
-      children,
-      className,
-      danger,
-      handlers,
-      hidden,
-      icons,
-      lead,
-    } = props
+      props,
+      props: {
+        buttons,
+        children,
+        className,
+        danger,
+        handlers,
+        hidden,
+        icons,
+        lead,
+      },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className', 'hidden'] })}

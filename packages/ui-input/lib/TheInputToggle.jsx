@@ -55,18 +55,21 @@ class TheInputToggle extends React.PureComponent {
   }
 
   render() {
-    const { props } = this
     const {
-      className,
-      error,
-      id = this.id,
-      name,
-      offTitle,
-      on,
-      onTitle,
-      style,
-      width,
-    } = props
+      props,
+      props: {
+        className,
+        error,
+        id = this.id,
+        name,
+        offTitle,
+        on,
+        onTitle,
+        style,
+        width,
+      },
+    } = this
+
     const { Label, Radio } = TheInputToggle
     return (
       <div

@@ -112,8 +112,8 @@ class Drawer {
   start({ x, y }) {
     this.active = true
     const {
-      tmpCanvas,
       canvasAccess: { height, width },
+      tmpCanvas,
     } = this
     this.tmpLayer = new DrawerLayer(tmpCanvas, {
       method: this.method,
@@ -166,3 +166,5 @@ class Drawer {
 }
 
 export default Drawer
+
+/* global Image */

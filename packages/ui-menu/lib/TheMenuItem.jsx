@@ -12,8 +12,11 @@ import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
  */
 class TheMenuItem extends React.Component {
   render() {
-    const { props } = this
-    const { active, children, className, icon, text, to } = props
+    const {
+      props,
+      props: { active, children, className, icon, text, to },
+    } = this
+
     const Inner = to ? TheLink : 'span'
     return (
       <li

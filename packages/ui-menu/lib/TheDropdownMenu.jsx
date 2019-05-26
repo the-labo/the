@@ -102,15 +102,18 @@ class TheDropDownMenu extends React.Component {
   }
 
   render() {
-    const { props, state } = this
     const {
-      children,
-      className,
-      icon = TheDropDownMenu.UP_ICON,
-      label,
-      righted,
-    } = props
-    const { open } = state
+      props,
+      props: {
+        children,
+        className,
+        icon = TheDropDownMenu.UP_ICON,
+        label,
+        righted,
+      },
+      state: { open },
+    } = this
+
     return (
       <ClickOutside onClickOutside={this.handleClickOutside}>
         <div

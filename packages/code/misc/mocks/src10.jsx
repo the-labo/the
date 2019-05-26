@@ -17,13 +17,15 @@ const { Field, Label, Value } = TheForm
 class AccountProfileForm extends React.Component {
   render() {
     const {
-      getFormAttributes,
-      getInputAttributesOf,
-      getLabelAttributesOf,
-      l,
-      onFBSync,
-      user,
-    } = this.props
+      props: {
+        getFormAttributes,
+        getInputAttributesOf,
+        getLabelAttributesOf,
+        l,
+        onFBSync,
+        user,
+      },
+    } = this
     return (
       <TheForm {...getFormAttributes()} required={['name']}>
         <FBImportButtonContainer>

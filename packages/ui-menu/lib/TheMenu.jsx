@@ -12,8 +12,11 @@ import TheMenuStyle from './TheMenuStyle'
  */
 class TheMenu extends React.Component {
   render() {
-    const { props } = this
-    const { children, className, grid } = props
+    const {
+      props,
+      props: { children, className, grid },
+    } = this
+
     return (
       <ul
         {...htmlAttributesFor(props, { except: ['className'] })}

@@ -28,9 +28,13 @@ class TheChatForm extends React.Component {
 
   handleSubmit() {
     const {
-      props: { onSubmit, values },
+      props: {
+        onSubmit,
+        values,
+        values: { text },
+      },
     } = this
-    const { text } = values
+
     if (!text) {
       return
     }
@@ -45,20 +49,23 @@ class TheChatForm extends React.Component {
   }
 
   render() {
-    const { props } = this
     const {
-      autoExpand,
-      children,
-      className,
-      disabled,
-      maxRows,
-      minLength,
-      minRows,
-      spinning,
-      submitText,
-      values,
-    } = props
-    const canSubmit = (values['text'] || '').trim().length >= minLength
+      props,
+      props: {
+        autoExpand,
+        children,
+        className,
+        disabled,
+        maxRows,
+        minLength,
+        minRows,
+        spinning,
+        submitText,
+        values,
+      },
+    } = this
+
+    const canSubmit = (values.text || '').trim().length >= minLength
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}
@@ -75,7 +82,7 @@ class TheChatForm extends React.Component {
             name='text'
             onKeyDown={this.handleKeyDown}
             onUpdate={this.handleUpdate}
-            value={values['text']}
+            value={values.text}
           />
           <TheButton
             disabled={!canSubmit || disabled}

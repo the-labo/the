@@ -76,8 +76,14 @@ class DrawerLayer {
   }
 
   serialize() {
-    const { canvasAccess, config, method, points } = this
-    const { height, width } = canvasAccess
+    const {
+      canvasAccess,
+      canvasAccess: { height, width },
+      config,
+      method,
+      points,
+    } = this
+
     return {
       config: { ...config },
       image: canvasAccess.toSVG(),

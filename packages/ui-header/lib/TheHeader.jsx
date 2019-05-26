@@ -173,18 +173,21 @@ class TheHeader extends React.Component {
   }
 
   render() {
-    const { props, state } = this
     const {
-      asOverlay,
-      asStatic,
-      children,
-      className,
-      notices,
-      reversed,
-      ribbon,
-      style,
-    } = props
-    const { innerHeight } = state
+      props,
+      props: {
+        asOverlay,
+        asStatic,
+        children,
+        className,
+        notices,
+        reversed,
+        ribbon,
+        style,
+      },
+      state: { innerHeight },
+    } = this
+
     const { length: noticeCount } = Object.keys(notices || {})
     return (
       <header

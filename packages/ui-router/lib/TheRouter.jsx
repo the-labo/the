@@ -68,15 +68,17 @@ class TheRouter extends React.Component {
   }
 
   render() {
-    const { props } = this
     const {
-      basename,
-      children,
-      className,
-      getUserConfirmation,
-      history,
-      keyLength,
-    } = props
+      props,
+      props: {
+        basename,
+        children,
+        className,
+        getUserConfirmation,
+        history,
+        keyLength,
+      },
+    } = this
 
     const Router = history ? AbstractRouter : BrowserRouter
     return (

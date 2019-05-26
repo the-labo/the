@@ -43,8 +43,11 @@ class TheFooter extends React.PureComponent {
   }
 
   render() {
-    const { props } = this
-    const { children, className } = props
+    const {
+      props,
+      props: { children, className },
+    } = this
+
     return (
       <footer
         {...htmlAttributesFor(props, { except: ['className'] })}

@@ -18,8 +18,10 @@ class TheOkDialog extends React.Component {
   }
 
   render() {
-    const { props } = this
-    const { okText, onClose } = props
+    const {
+      props,
+      props: { okText, onClose },
+    } = this
 
     const dialogProps = clone(props, { except: ['okText'] })
 

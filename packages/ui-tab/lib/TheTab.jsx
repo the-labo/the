@@ -122,8 +122,10 @@ class TheTab extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { props } = this
-    const { activeIndex: nextIndex } = props
+    const {
+      props: { activeIndex: nextIndex },
+    } = this
+
     const updateNextIndex =
       nextIndex === null || prevProps.activeIndex !== nextIndex
     if (updateNextIndex) {
@@ -168,12 +170,11 @@ class TheTab extends React.Component {
       return
     }
     const {
+      props: { activeIndex, onChange },
       state: { translateX },
     } = this
     const amount = this.movingAmountFor(translateX)
-    const {
-      props: { activeIndex, onChange },
-    } = this
+
     const toLeft = amount < 0
     if (toLeft) {
       this.moveTo(body.offsetWidth, () =>
@@ -282,10 +283,13 @@ class TheTab extends React.Component {
     }
     const threshold = Math.min(80, body.offsetWidth / 2)
     const {
-      props: { activeIndex, buttons },
+      props: {
+        activeIndex,
+        buttons: { length: count },
+      },
     } = this
-    const { length: count } = buttons
-    const toLeft = threshold < x && 0 < activeIndex
+
+    const toLeft = threshold < x && activeIndex > 0
     if (toLeft) {
       return -1
     }
@@ -307,17 +311,20 @@ class TheTab extends React.Component {
   }
 
   render() {
-    const { props, state } = this
-    const { animating, bodyHeight, movingRate, nextIndex, translateX } = state
     const {
-      activeIndex,
-      buttons,
-      children,
-      className,
-      disableTouchAction,
-      onChange,
-    } = props
-    const { length: count } = buttons
+      props,
+      props: {
+        activeIndex,
+        buttons,
+        buttons: { length: count },
+        children,
+        className,
+        disableTouchAction,
+        onChange,
+      },
+      state: { animating, bodyHeight, movingRate, nextIndex, translateX },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}

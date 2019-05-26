@@ -99,9 +99,11 @@ class TheInputText extends React.PureComponent {
   }
 
   getPatternWarning() {
-    const { props, state } = this
-    const { pattern, patternWarning, value } = props
-    const { committedValue } = state
+    const {
+      props: { pattern, patternWarning, value },
+      state: { committedValue },
+    } = this
+
     if (!committedValue) {
       return null
     }
@@ -252,29 +254,33 @@ class TheInputText extends React.PureComponent {
   }
 
   render() {
-    const { props, state } = this
     const {
-      autoFocus,
-      children,
-      className,
-      error,
-      id,
-      inputRef,
-      maxLength,
-      name,
-      parser,
-      placeholder,
-      prefix,
-      readOnly,
-      required,
-      spellCheck,
-      suffix,
-      tabIndex,
-      type,
-      value,
-    } = props
+      props,
+      props: {
+        autoFocus,
+        children,
+        className,
+        error,
+        id,
+        inputRef,
+        maxLength,
+        name,
+        parser,
+        placeholder,
+        prefix,
+        readOnly,
+        required,
+        spellCheck,
+        suffix,
+        tabIndex,
+        type,
+        value,
+      },
+      state: { candidates, selectedCandidate, suggesting },
+    } = this
+
     let { autoCapitalize, autoComplete, autoCorrect } = props
-    const { candidates, selectedCandidate, suggesting } = state
+
     if (!autoComplete && candidates.length >= 0) {
       autoComplete = 'off'
     }
@@ -371,7 +377,10 @@ class TheInputText extends React.PureComponent {
 
   updateCandidates(index) {
     let {
-      props: { matcher, options, value },
+      props: { options, value },
+    } = this
+    const {
+      props: { matcher },
     } = this
     options = normalizeOptions(options)
     value = value && String(value).trim()

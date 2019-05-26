@@ -166,10 +166,20 @@ class TheInputRange extends React.PureComponent {
   }
 
   render() {
-    const { props, state } = this
-    const { barOnly, className, error, max, min, name, value } = props
-    const { fromX, maxX, minX, toX } = state
-    const { from, to } = value
+    const {
+      props,
+      props: {
+        barOnly,
+        className,
+        error,
+        max,
+        min,
+        name,
+        value: { from, to },
+      },
+      state: { fromX, maxX, minX, toX },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, {
@@ -249,15 +259,20 @@ class TheInputRange extends React.PureComponent {
   }
 
   setRangeValue(from, to) {
-    const { props, state } = this
-    const { maxX, minX } = state
+    const {
+      props,
+      state: { maxX, minX },
+    } = this
+
     if (minX === maxX) {
       return
     }
-    const { name, step } = props
     const {
+      name,
+      step,
       value: [currentFrom, currentTo],
     } = props
+
     if (to < from) {
       if (from === currentFrom) {
         from = to - step
@@ -298,16 +313,19 @@ class TheInputRange extends React.PureComponent {
   }
 
   _rateWithValue(value) {
-    const { props } = this
-    const { max, min } = props
+    const {
+      props: { max, min },
+    } = this
 
     value = rangecal.round(min, max, value)
     return chopcal.round(rangecal.rate(min, max, value), 0.01)
   }
 
   _rateWithX(x) {
-    const { state } = this
-    const { maxX, minX } = state
+    const {
+      state: { maxX, minX },
+    } = this
+
     if (minX === maxX) {
       return 0
     }
@@ -315,8 +333,9 @@ class TheInputRange extends React.PureComponent {
   }
 
   _valueWithRate(rate) {
-    const { props } = this
-    const { max, min } = props
+    const {
+      props: { max, min },
+    } = this
 
     const value = chopcal.round(rangecal.value(min, max, rate), 0.01)
     return rangecal.round(min, max, value)

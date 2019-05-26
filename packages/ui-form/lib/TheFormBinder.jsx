@@ -31,8 +31,11 @@ class TheFormBinder extends React.Component {
   }
 
   formPropsOf(name) {
-    const { props } = this
-    const { errors } = props
+    const {
+      props,
+      props: { errors },
+    } = this
+
     return Object.assign(
       {
         error: nullIfUndefined(errors['*']),
@@ -52,8 +55,10 @@ class TheFormBinder extends React.Component {
   }
 
   handleSubmit() {
-    const { props } = this
-    const { onError, onSubmit, required, values } = props
+    const {
+      props: { onError, onSubmit, required, values },
+    } = this
+
     const missing = []
       .concat(required)
       .filter(Boolean)
@@ -66,21 +71,25 @@ class TheFormBinder extends React.Component {
         })),
       )
       onError && onError(errors)
-      console.error(`[${componentName}] Required fields missing:`, missing)
+      console.error(`[${this.name}] Required fields missing:`, missing)
       return
     }
     onSubmit && onSubmit(values)
   }
 
   handleUpdate(values) {
-    const { props } = this
-    const { onUpdate } = props
+    const {
+      props: { onUpdate },
+    } = this
+
     onUpdate && onUpdate(values)
   }
 
   idOf(...names) {
-    const { props } = this
-    const { id = this.theID } = props
+    const {
+      props: { id = this.theID },
+    } = this
+
     return [id, ...names].filter(Boolean).join('-')
   }
 
@@ -91,8 +100,11 @@ class TheFormBinder extends React.Component {
    */
   inputPropsOf(name) {
     assert(name, 'name is required')
-    const { handleUpdate, props } = this
-    const { errors, tabIndex, values } = props
+    const {
+      handleUpdate,
+      props: { errors, tabIndex, values },
+    } = this
+
     return {
       error: nullIfUndefined(errors[name]),
       id: this.idOf(name),

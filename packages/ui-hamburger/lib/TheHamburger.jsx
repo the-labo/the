@@ -56,8 +56,11 @@ class TheHamburger extends React.Component {
   }
 
   render() {
-    const { props } = this
-    const { children, className, footer, header, hidden } = props
+    const {
+      props,
+      props: { children, className, footer, header, hidden },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className', 'hidden'] })}

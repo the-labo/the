@@ -10,8 +10,11 @@ import TheBodyStyle from './TheBodyStyle'
  */
 class TheBody extends React.PureComponent {
   render() {
-    const { props } = this
-    const { children, className } = props
+    const {
+      props,
+      props: { children, className },
+    } = this
+
     return (
       <body
         {...htmlAttributesFor(props, { except: ['className'] })}

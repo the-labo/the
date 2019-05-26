@@ -31,7 +31,7 @@
 ## @the-/ui-paint
 Hand write painting
 
-**Version**: 15.4.3  
+**Version**: 15.4.6  
 <a name="ThePaint"></a>
 
 ## ThePaint
@@ -47,4 +47,4 @@ Hand write painting
 ## ThePaintStyle()
 Style for ThePaint
 
-**Kind**: global function
+**Kind**: global function  

@@ -31,14 +31,12 @@ class ThePaint extends React.Component {
   componentDidMount() {
     const {
       canvasRef: { current: canvas },
-    } = this
-    const {
+      props: { background, onDrawer },
       tmpCanvasRef: { current: tmpCanvas },
     } = this
+
     const drawer = new Drawer(canvas, tmpCanvas, {})
-    const {
-      props: { background, onDrawer },
-    } = this
+
     if (background) {
       void drawer.registerBackground(background)
     }
@@ -93,7 +91,7 @@ class ThePaint extends React.Component {
     const {
       props: { onDrawEnd },
     } = this
-    onDrawEnd && onDrawEnd({ drawer, pos, snapshot })
+    onDrawEnd && onDrawEnd({ drawer, snapshot })
   }
 
   handleDrawStart(e) {
@@ -132,8 +130,14 @@ class ThePaint extends React.Component {
   }
 
   render() {
-    const { handleDraw, handleDrawEnd, handleDrawStart, props } = this
-    const { children, className, height, style, width } = props
+    const {
+      handleDraw,
+      handleDrawEnd,
+      handleDrawStart,
+      props,
+      props: { children, className, height, style, width },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, {
@@ -172,9 +176,10 @@ class ThePaint extends React.Component {
 
   updateDrawer() {
     const {
+      drawer,
       props: { lineColor, lineWidth, method },
     } = this
-    const { drawer } = this
+
     if (!drawer) {
       return
     }

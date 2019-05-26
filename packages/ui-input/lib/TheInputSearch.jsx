@@ -30,9 +30,12 @@ class TheInputSearch extends React.PureComponent {
   }
 
   render() {
-    const { props, state } = this
-    const { value } = props
-    const { open } = state
+    const {
+      props,
+      props: { value },
+      state: { open },
+    } = this
+
     return (
       <TheInputText
         {...props}

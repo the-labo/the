@@ -26,10 +26,9 @@ class TheInputTextArea extends React.PureComponent {
   adjustRows() {
     const {
       props: { maxRows, minRows },
-    } = this
-    const {
       textareaRef: { current: textarea },
     } = this
+
     if (!textarea) {
       return
     }
@@ -45,7 +44,7 @@ class TheInputTextArea extends React.PureComponent {
     } = textarea
     let { offsetHeight: height } = textarea
     let retry = 100
-    while (0 < retry--) {
+    while (retry-- > 0) {
       if (this.gone) {
         break
       }
@@ -136,27 +135,30 @@ class TheInputTextArea extends React.PureComponent {
   }
 
   render() {
-    const { props } = this
     const {
-      autoExpand,
-      autoFocus,
-      children,
-      className,
-      error,
-      id,
-      name,
-      onBlur,
-      onFocus,
-      onKeyPress,
-      onKeyUp,
-      placeholder,
-      readOnly,
-      required,
-      role,
-      spellCheck,
-      tabIndex,
-      value,
-    } = props
+      props,
+      props: {
+        autoExpand,
+        autoFocus,
+        children,
+        className,
+        error,
+        id,
+        name,
+        onBlur,
+        onFocus,
+        onKeyPress,
+        onKeyUp,
+        placeholder,
+        readOnly,
+        required,
+        role,
+        spellCheck,
+        tabIndex,
+        value,
+      },
+    } = this
+
     const rows = autoExpand ? this.state.actualRows : this.props.rows
     return (
       <div

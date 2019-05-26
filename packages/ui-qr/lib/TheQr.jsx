@@ -20,6 +20,18 @@ class TheQr extends React.PureComponent {
     }
   }
 
+  WrapperFor() {
+    const { props, state } = this
+    if (props.asLink) {
+      return (props) => (
+        <a {...props} href={state.url} target='_blank'>
+          {props.children}
+        </a>
+      )
+    }
+    return 'div'
+  }
+
   componentDidMount() {
     const { props } = this
     this.drawAsQR(props.text)
@@ -59,18 +71,14 @@ class TheQr extends React.PureComponent {
   }
 
   render() {
-    const s = this
-    const { props, state } = s
-    const { alt, asLink, children, className, displaySize, size, text } = props
-    const style = { height: displaySize || size, width: displaySize || size }
+    const {
+      props,
+      props: { alt, children, className, displaySize, size, text },
+      state,
+    } = this
 
-    const Wrapper = asLink
-      ? (props) => (
-          <a {...props} href={state.url} target='_blank'>
-            {props.children}
-          </a>
-        )
-      : 'div'
+    const style = { height: displaySize || size, width: displaySize || size }
+    const Wrapper = this.WrapperFor()
 
     return (
       <Wrapper

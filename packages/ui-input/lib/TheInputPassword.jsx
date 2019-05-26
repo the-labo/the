@@ -18,9 +18,12 @@ class TheInputPassword extends React.PureComponent {
   }
 
   render() {
-    const { props, state } = this
-    const { value } = props
-    const { showing } = state
+    const {
+      props,
+      props: { value },
+      state: { showing },
+    } = this
+
     const icon = showing
       ? TheInputPassword.HIDE_ICON
       : TheInputPassword.SHOW_ICON

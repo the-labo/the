@@ -27,8 +27,11 @@ const DEFAULT_SIZE = 'large'
  */
 class TheSpin extends React.PureComponent {
   render() {
-    const { props } = this
-    const { children, className, cover, enabled, size, theme } = props
+    const {
+      props,
+      props: { children, className, cover, enabled, size, theme },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}

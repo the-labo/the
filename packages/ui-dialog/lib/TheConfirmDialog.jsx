@@ -17,9 +17,11 @@ class TheConfirmDialog extends React.Component {
   }
 
   render() {
-    const { props, state } = this
-    const { checkText, children, onSubmit, submitText } = props
-    const { confirmed } = state
+    const {
+      props,
+      props: { checkText, children, onSubmit, submitText },
+      state: { confirmed },
+    } = this
 
     const dialogProps = clone(props, {
       except: ['onSubmit', 'submitText', 'checkText'],

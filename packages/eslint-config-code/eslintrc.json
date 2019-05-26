@@ -19,6 +19,7 @@
     "no-empty-pattern": "error",
     "no-func-assign": "error",
     "no-sparse-arrays": "error",
+    "no-use-before-define": "error",
     "no-var": "error",
     "prefer-const": "error",
     "prefer-destructuring": [

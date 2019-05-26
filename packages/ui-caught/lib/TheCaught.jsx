@@ -15,8 +15,11 @@ import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 /** @lends module:@the-/ui-caught.TheCaught */
 class TheCaught extends React.Component {
   render() {
-    const { props } = this
-    const { children, className, error, info } = props
+    const {
+      props,
+      props: { children, className, error, info },
+    } = this
+
     const { componentStack } = info || {}
     if (!error) {
       return null

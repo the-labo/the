@@ -50,21 +50,24 @@ class TheCamInput extends React.Component {
   }
 
   render() {
-    const { props, state } = this
     const {
-      audio,
-      children,
-      className,
-      height,
-      id = this.id,
-      name,
-      readOnly,
-      style = {},
-      value,
-      video,
-      width,
-    } = props
-    const { busy, rejected } = state
+      props,
+      props: {
+        audio,
+        children,
+        className,
+        height,
+        id = this.id,
+        name,
+        readOnly,
+        style = {},
+        value,
+        video,
+        width,
+      },
+      state: { busy, rejected },
+    } = this
+
     const hasValue = !!value
     return (
       <div
@@ -163,8 +166,11 @@ class TheCamInput extends React.Component {
   async handleShutter() {
     this.setState({ busy: true })
     try {
-      const { media, props } = this
-      const { convertFile, name, onUpdate } = props
+      const {
+        media,
+        props: { convertFile, name, onUpdate },
+      } = this
+
       const File = get('File', { strict: true })
       const blob = await media.takePhoto({})
       const filename = newId({ prefix: 'the-cam-input-value' })

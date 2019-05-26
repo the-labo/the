@@ -81,20 +81,22 @@ class TheInputRadio extends React.PureComponent {
   }
 
   render() {
-    const { props } = this
     const {
-      asButton,
-      asToggle,
-      className,
-      disabledValues,
-      error,
-      id = this.id,
-      name,
-      readOnly,
-      sorter,
-      tabIndex,
-      value,
-    } = props
+      props,
+      props: {
+        asButton,
+        asToggle,
+        className,
+        disabledValues,
+        error,
+        id = this.id,
+        name,
+        readOnly,
+        sorter,
+        tabIndex,
+        value,
+      },
+    } = this
 
     const options = normalizeOptions(props.options)
 

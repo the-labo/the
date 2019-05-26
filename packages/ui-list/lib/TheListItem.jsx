@@ -65,22 +65,25 @@ class TheListItem extends React.Component {
   }
 
   render() {
-    const { props } = this
-    const { Col, SubTitle, Title } = TheListItem
     const {
-      appendix,
-      borderless,
-      children,
-      className,
-      disclosure,
-      icon,
-      subTitle,
-      thumbnail,
-      thumbnailHeight,
-      thumbnailWidth,
-      title,
-      to,
-    } = props
+      props,
+      props: {
+        appendix,
+        borderless,
+        children,
+        className,
+        disclosure,
+        icon,
+        subTitle,
+        thumbnail,
+        thumbnailHeight,
+        thumbnailWidth,
+        title,
+        to,
+      },
+    } = this
+    const { Col, SubTitle, Title } = TheListItem
+
     const Inner = to ? TheLink : 'span'
     return (
       <li

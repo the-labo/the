@@ -5,10 +5,15 @@
 
 import path from 'path'
 import React from 'react'
-import url from 'url'
 import videoExtensions from 'video-extensions'
+import { get } from '@the-/window'
 
-const { parse: parseUrl } = url
+const parseUrl = (urlString) => {
+  const isRelative = urlString.match(/^\//)
+  return isRelative
+    ? new URL(urlString, get('location.origin') || 'relative:///')
+    : new URL(urlString)
+}
 
 export const normalizeOptions = (options) =>
   []
@@ -107,3 +112,5 @@ export default {
   renderErrorMessage,
   renderWarningMessage,
 }
+
+/* global URL */

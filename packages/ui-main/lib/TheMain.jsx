@@ -12,8 +12,11 @@ import TheMainStyle from './TheMainStyle'
  */
 class TheMain extends React.Component {
   render() {
-    const { props } = this
-    const { children, className, spinning } = props
+    const {
+      props,
+      props: { children, className, spinning },
+    } = this
+
     return (
       <main
         {...htmlAttributesFor(props, { except: ['className'] })}

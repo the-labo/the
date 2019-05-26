@@ -109,12 +109,13 @@ class TheInputPinCode extends React.PureComponent {
   }
 
   render() {
-    const { props } = this
-    const inputProps = clone(props, { without: ['digit'] })
     const {
+      props,
+      props: { digit, id = this.id },
       state: { focused, index },
     } = this
-    const { digit, id = this.id } = props
+    const inputProps = clone(props, { without: ['digit'] })
+
     return (
       <TheInputText
         {...inputProps}

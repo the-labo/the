@@ -11,8 +11,11 @@ import TheKeyboardButton from './TheKeyboardButton'
  */
 class TheKeyboard extends React.Component {
   render() {
-    const { props } = this
-    const { children, className, keys, onKeyPress } = props
+    const {
+      props,
+      props: { children, className, keys, onKeyPress },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}

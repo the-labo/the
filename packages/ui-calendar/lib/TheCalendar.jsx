@@ -141,18 +141,12 @@ class TheCalendar extends React.Component {
   }
 
   render() {
-    const { props } = this
     const {
-      className,
-      date,
-      events,
-      lang,
-      onNavigate,
-      onView,
-      view,
-      views,
-    } = props
-    const switcherLabels = SwitcherLabels[lang] || SwitcherLabels['en']
+      props,
+      props: { className, date, events, lang, onNavigate, onView, view, views },
+    } = this
+
+    const switcherLabels = SwitcherLabels[lang] || SwitcherLabels.en
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}

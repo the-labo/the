@@ -69,23 +69,25 @@ class TheStep extends React.Component {
   }
 
   render() {
-    const { props } = this
     const stepCount = this.getStepCount()
+    const step = Number(this.props.step)
     const {
-      step,
-      backText = 'Back',
-      children,
-      className,
-      hasBack = 0 < step,
-      hasNext = step < stepCount - 1,
-      hideActions = false,
-      isSubmit = step === stepCount - 1,
-      nextText = 'Next',
-      onSubmit,
-      primaryOnSubmit = true,
-      spinning,
-      submitText = nextText,
-    } = props
+      props,
+      props: {
+        backText = 'Back',
+        children,
+        className,
+        hasBack = step > 0,
+        hasNext = step < stepCount - 1,
+        hideActions = false,
+        isSubmit = step === stepCount - 1,
+        nextText = 'Next',
+        onSubmit,
+        primaryOnSubmit = true,
+        spinning,
+        submitText = nextText,
+      },
+    } = this
 
     return (
       <div

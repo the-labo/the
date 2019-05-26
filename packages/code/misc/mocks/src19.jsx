@@ -9,8 +9,8 @@ import { asStyleData } from '@the-/util-component'
 /** Style for TheFooter */
 const TheFooterStyle = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={classnames('the-footer-style', className)}
+    id={id}
     styles={TheFooterStyle.data(options)}
   />
 )
@@ -27,7 +27,7 @@ TheFooterStyle.defaultProps = {
 
 TheFooterStyle.data = (options) => {
   const { ThemeValues } = TheStyle
-  let {
+  const {
     lightBorderColor = ThemeValues.lightBorderColor,
     lightLinkColor = ThemeValues.lightLinkColor,
   } = options

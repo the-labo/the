@@ -35,16 +35,18 @@ const githubRepoFor = (pkg) => {
  */
 class TheComponentDemo extends React.PureComponent {
   render() {
-    const { props } = this
     const {
-      children,
-      className,
-      id,
-      js,
-      pkg,
-      renderingContext = {},
-      snippet,
-    } = props
+      props: {
+        children,
+        className,
+        id,
+        js,
+        pkg,
+        renderingContext = {},
+        snippet,
+      },
+    } = this
+
     return (
       <TheHtml className={classnames('the-component-demo', className)} id={id}>
         <TheHead

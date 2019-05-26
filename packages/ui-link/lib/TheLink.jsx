@@ -42,20 +42,23 @@ class TheLink extends React.Component {
   }
 
   render() {
-    const { props } = this
     const {
-      activeClassName,
-      activeStyle,
-      children,
-      className,
-      color,
-      exact,
-      icon,
-      replace,
-      strict,
-      style = {},
-      to,
-    } = props
+      props,
+      props: {
+        activeClassName,
+        activeStyle,
+        children,
+        className,
+        color,
+        exact,
+        icon,
+        replace,
+        strict,
+        style = {},
+        to,
+      },
+    } = this
+
     if (color && style) {
       style.color = color
     }

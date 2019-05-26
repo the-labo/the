@@ -18,8 +18,11 @@ class TheIcon extends React.Component {
   }
 
   render() {
-    const { props } = this
-    const { children, className } = props
+    const {
+      props,
+      props: { children, className },
+    } = this
+
     return (
       <i
         {...htmlAttributesFor(props, { except: ['className'] })}

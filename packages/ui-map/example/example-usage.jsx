@@ -186,3 +186,5 @@ class ExampleComponent extends React.Component {
 }
 
 export default ExampleComponent
+
+/* global alert */

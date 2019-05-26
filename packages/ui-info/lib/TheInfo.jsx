@@ -39,8 +39,11 @@ class TheInfo extends React.Component {
   }
 
   render() {
-    const { props } = this
-    const { children, className, data, keys, title } = props
+    const {
+      props,
+      props: { children, className, data, keys, title },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className', 'data'] })}

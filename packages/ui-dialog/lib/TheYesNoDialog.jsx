@@ -18,8 +18,10 @@ class TheYesNoDialog extends React.Component {
   }
 
   render() {
-    const { props } = this
-    const { noText, onNo, onYes, yesText } = props
+    const {
+      props,
+      props: { noText, onNo, onYes, yesText },
+    } = this
 
     const dialogProps = clone(props, {
       except: ['onYes', 'onNo', 'yesText', 'noText'],

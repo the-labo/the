@@ -164,7 +164,7 @@ class ExampleComponent extends React.Component {
         <hr />
 
         <TheChat>
-          <TheChat.TimeLine alt='Not chat yet' empty={true} />
+          <TheChat.TimeLine alt='Not chat yet' empty />
         </TheChat>
       </div>
     )

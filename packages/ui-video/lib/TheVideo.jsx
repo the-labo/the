@@ -71,27 +71,30 @@ class TheVideo extends React.Component {
   }
 
   render() {
-    const { props, state } = this
     const {
-      alt,
-      asLink,
-      autoPlay,
-      children,
-      className,
-      controls,
-      height,
-      loop,
-      muted,
-      notFoundMessage,
-      playsInline,
-      poster,
-      preload,
-      scale,
-      spinning,
-      src,
-      width,
-    } = props
-    const { failed } = state
+      props,
+      props: {
+        alt,
+        asLink,
+        autoPlay,
+        children,
+        className,
+        controls,
+        height,
+        loop,
+        muted,
+        notFoundMessage,
+        playsInline,
+        poster,
+        preload,
+        scale,
+        spinning,
+        src,
+        width,
+      },
+      state: { failed },
+    } = this
+
     const Wrap = asLink ? 'a' : 'div'
     const asLinkProps = asLink ? { href: src, target: '_blank' } : {}
     return (

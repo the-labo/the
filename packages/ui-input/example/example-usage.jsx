@@ -24,8 +24,8 @@ class ExampleComponent extends React.PureComponent {
 
   render() {
     const {
-      state: { values },
       onUpdate,
+      state: { values },
     } = this
 
     const {
@@ -57,7 +57,7 @@ class ExampleComponent extends React.PureComponent {
           onUpdate={onUpdate}
           options={['Banana', 'Orange', 'Apple']}
           placeholder='value01'
-          value={values['value01']}
+          value={values.value01}
         />
 
         <Text
@@ -69,7 +69,7 @@ class ExampleComponent extends React.PureComponent {
           parser={(v) => String(v).toUpperCase()}
           placeholder='value01 only with uppercase parser'
           selectWhenFocused
-          value={values['value01']}
+          value={values.value01}
         />
 
         <Text
@@ -79,7 +79,7 @@ class ExampleComponent extends React.PureComponent {
           placeholder='value01'
           prefix={'Oh!'}
           suffix={', Yes it is!'}
-          value={values['value01']}
+          value={values.value01}
         />
 
         <h3>Text with hint</h3>
@@ -90,7 +90,7 @@ class ExampleComponent extends React.PureComponent {
           pattern={Text.EMAIL_PATTERN}
           patternHint='Needs to be email'
           placeholder='eg: hoge@example.com'
-          value={values['value01']}
+          value={values.value01}
         />
 
         <h3>Select on focus</h3>
@@ -100,7 +100,7 @@ class ExampleComponent extends React.PureComponent {
           onUpdate={onUpdate}
           placeholder='Select on focus'
           selectOnFocus
-          value={values['value01']}
+          value={values.value01}
         />
 
         <br />
@@ -110,7 +110,7 @@ class ExampleComponent extends React.PureComponent {
           name='value01'
           onUpdate={onUpdate}
           placeholder='value01'
-          value={values['value01']}
+          value={values.value01}
         />
 
         <br />
@@ -120,7 +120,7 @@ class ExampleComponent extends React.PureComponent {
           name='value01'
           onUpdate={onUpdate}
           placeholder='value01'
-          value={values['value01']}
+          value={values.value01}
         />
 
         <br />
@@ -132,7 +132,7 @@ class ExampleComponent extends React.PureComponent {
           onEnter={() => console.log('enter')}
           onUpdate={onUpdate}
           placeholder='value01'
-          value={values['value01']}
+          value={values.value01}
         />
 
         <TextArea
@@ -144,7 +144,7 @@ class ExampleComponent extends React.PureComponent {
           onEnter={() => console.log('enter')}
           onUpdate={onUpdate}
           placeholder='auto expand'
-          value={values['value01']}
+          value={values.value01}
         />
 
         <TextArea
@@ -152,7 +152,7 @@ class ExampleComponent extends React.PureComponent {
           onUpdate={onUpdate}
           placeholder='value01 readonly'
           readOnly
-          value={values['value01']}
+          value={values.value01}
         />
 
         <hr />
@@ -164,7 +164,7 @@ class ExampleComponent extends React.PureComponent {
             name='value02'
             onUpdate={onUpdate}
             options={['Car', 'Ship', 'Plane']}
-            value={values['value02']}
+            value={values.value02}
           />
         </div>
 
@@ -174,7 +174,7 @@ class ExampleComponent extends React.PureComponent {
             name='value02'
             onUpdate={onUpdate}
             options={['Car', 'Ship', 'Plane']}
-            value={values['value02']}
+            value={values.value02}
           />
         </div>
 
@@ -184,7 +184,7 @@ class ExampleComponent extends React.PureComponent {
             name='value02'
             onUpdate={onUpdate}
             options={['Car', 'Ship', 'Plane']}
-            value={values['value02']}
+            value={values.value02}
           />
         </div>
 
@@ -197,7 +197,7 @@ class ExampleComponent extends React.PureComponent {
             name='value03'
             onUpdate={onUpdate}
             options={['Green', 'Pink', 'Brown']}
-            value={values['value03']}
+            value={values.value03}
           />
         </div>
 
@@ -207,7 +207,7 @@ class ExampleComponent extends React.PureComponent {
             name='value03'
             onUpdate={onUpdate}
             options={['Green', 'Pink', 'Brown']}
-            value={values['value03']}
+            value={values.value03}
           />
         </div>
 
@@ -228,7 +228,7 @@ class ExampleComponent extends React.PureComponent {
             ]}
             placeholder='Any drink?'
             sorter={(a, b) => a.localeCompare(b)}
-            value={values['value04']}
+            value={values.value04}
           />
 
           <Select
@@ -244,7 +244,7 @@ class ExampleComponent extends React.PureComponent {
               ...new Array(100).fill(null).map((_, i) => `option-${i}`),
             ]}
             placeholder='Full screen select'
-            value={values['value04']}
+            value={values.value04}
           />
 
           <Select.WithOptionsArray
@@ -254,7 +254,7 @@ class ExampleComponent extends React.PureComponent {
               ['Tea', 'This is Tea!'],
               ['Water', 'This is Water!'],
             ]}
-            value={values['value04']}
+            value={values.value04}
           />
         </div>
 
@@ -264,7 +264,7 @@ class ExampleComponent extends React.PureComponent {
         <div>
           <Toggle
             name='value05'
-            on={Boolean(values['value05'])}
+            on={Boolean(values.value05)}
             onUpdate={onUpdate}
           />
         </div>
@@ -273,7 +273,7 @@ class ExampleComponent extends React.PureComponent {
           <Toggle
             name='value05'
             offTitle='This is off'
-            on={Boolean(values['value05'])}
+            on={Boolean(values.value05)}
             onTitle='This is on'
             onUpdate={onUpdate}
           />
@@ -289,7 +289,7 @@ class ExampleComponent extends React.PureComponent {
             name='value06'
             onUpdate={onUpdate}
             step={1}
-            value={values['value06'] || 10}
+            value={values.value06 || 10}
           />
         </div>
 
@@ -303,7 +303,7 @@ class ExampleComponent extends React.PureComponent {
             name='value07'
             onUpdate={onUpdate}
             step={1}
-            value={values['value07'] || [10, 80]}
+            value={values.value07 || [10, 80]}
           />
         </div>
 
@@ -312,10 +312,10 @@ class ExampleComponent extends React.PureComponent {
 
         <div>
           <Upload
-            multiple={true}
+            multiple
             name='value08'
             onUpdate={onUpdate}
-            value={values['value08']}
+            value={values.value08}
           />
         </div>
 
@@ -327,7 +327,7 @@ class ExampleComponent extends React.PureComponent {
           onUpdate={onUpdate}
           options={['Banana', 'Orange', 'Apple']}
           placeholder='value01'
-          value={values['value01']}
+          value={values.value01}
         />
 
         <hr />
@@ -403,7 +403,7 @@ class ExampleComponent extends React.PureComponent {
           onUpdate={onUpdate}
           options={['Banana', 'Orange', 'Apple']}
           placeholder='value01'
-          value={values['value01']}
+          value={values.value01}
         />
 
         <Password
@@ -411,7 +411,7 @@ class ExampleComponent extends React.PureComponent {
           name='value01'
           onUpdate={onUpdate}
           placeholder='value01'
-          value={values['value01']}
+          value={values.value01}
         />
 
         <TextArea
@@ -420,7 +420,7 @@ class ExampleComponent extends React.PureComponent {
           onKeyDown={(e) => console.log('key down', e.keyCode)}
           onUpdate={onUpdate}
           placeholder='value01'
-          value={values['value01']}
+          value={values.value01}
         />
 
         <Select
@@ -428,7 +428,7 @@ class ExampleComponent extends React.PureComponent {
           name='value04'
           onUpdate={onUpdate}
           options={['Tea', 'Coffee', 'Water']}
-          value={values['value04']}
+          value={values.value04}
         />
 
         <Select
@@ -437,7 +437,7 @@ class ExampleComponent extends React.PureComponent {
           onUpdate={onUpdate}
           options={['Tea', 'Coffee', 'Water']}
           spinning
-          value={values['value04']}
+          value={values.value04}
         />
 
         <Radio
@@ -445,7 +445,7 @@ class ExampleComponent extends React.PureComponent {
           name='value02'
           onUpdate={onUpdate}
           options={['Car', 'Ship', 'Plane']}
-          value={values['value02']}
+          value={values.value02}
         />
         <Checkbox
           disabledValues={['Pink']}
@@ -453,15 +453,15 @@ class ExampleComponent extends React.PureComponent {
           name='value03'
           onUpdate={onUpdate}
           options={['Green', 'Pink', 'Brown']}
-          value={values['value03']}
+          value={values.value03}
         />
 
         <Upload
           error='Something Wrong with This!'
-          multiple={true}
+          multiple
           name='value08'
           onUpdate={onUpdate}
-          value={values['value08']}
+          value={values.value08}
         />
 
         <br />
@@ -477,7 +477,7 @@ class ExampleComponent extends React.PureComponent {
           onUpdate={onUpdate}
           placeholder='value01'
           readOnly
-          value={values['value01']}
+          value={values.value01}
         />
 
         <Select
@@ -485,7 +485,7 @@ class ExampleComponent extends React.PureComponent {
           onUpdate={onUpdate}
           options={['Tea', 'Coffee', 'Water']}
           readOnly
-          value={values['value04']}
+          value={values.value04}
         />
 
         <Radio
@@ -493,22 +493,22 @@ class ExampleComponent extends React.PureComponent {
           onUpdate={onUpdate}
           options={['Car', 'Ship', 'Plane']}
           readOnly
-          value={values['value02']}
+          value={values.value02}
         />
         <Checkbox
           name='value03'
           onUpdate={onUpdate}
           options={['Green', 'Pink', 'Brown']}
           readOnly
-          value={values['value03']}
+          value={values.value03}
         />
 
         <Upload
-          multiple={true}
+          multiple
           name='value08'
           onUpdate={onUpdate}
           readOnly
-          value={values['value08']}
+          value={values.value08}
         />
       </div>
     )

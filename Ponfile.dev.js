@@ -18,7 +18,17 @@ const {
 } = require('pon-task-basic')
 
 const { cwd, tasks } = require('./Ponfile')
-
+const eslint = (dirname, options = {}) => {
+  const { fix = false } = options
+  return npx(
+    'eslint',
+    __dirname,
+    '--cache',
+    '--ext',
+    '.jsx,.js',
+    ...(fix ? ['--fix'] : []),
+  )
+}
 const SUB_PACKAGES = 'packages/*/package.json'
 
 module.exports = pon({
@@ -34,8 +44,8 @@ module.exports = pon({
   // Eslint
   // -----------------------------------
   ...{
-    'eslint:check': npx('eslint', __dirname, '--cache'),
-    'eslint:fix': npx('eslint', __dirname, '--cache', '--fix'),
+    'eslint:check': eslint(__dirname),
+    'eslint:fix': eslint(__dirname, { fix: true }),
   },
 
   // -----------------------------------
@@ -58,7 +68,7 @@ module.exports = pon({
     'format:root': theCode(['.*.bud', '.travis.yml', '+(misc)/**/*.*']),
     'format:packages': theCode(
       [
-        'packages/*/+(bin|example|doc|lib|misc|test|handy|presets)/**/*.js',
+        'packages/*/+(bin|example|doc|lib|misc|test|handy|presets)/**/+(*.js|*.jsx)',
         'packages/*/+(bin|example|doc|lib|misc|test|handy|presets)/**/.*.bud',
         'packages/*/.*.bud',
       ],

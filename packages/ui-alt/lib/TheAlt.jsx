@@ -13,8 +13,11 @@ import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 /** @lends module:@the-/ui-alt.TheAlt */
 class TheAlt extends React.Component {
   render() {
-    const { props } = this
-    const { children, className, enabled, text } = props
+    const {
+      props,
+      props: { children, className, enabled, text },
+    } = this
+
     if (!enabled) {
       return null
     }

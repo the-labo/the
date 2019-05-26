@@ -75,30 +75,33 @@ class TheButton extends React.Component {
   }
 
   render() {
-    const { props } = this
     const {
-      children,
-      className,
-      color,
-      danger,
-      disabled,
-      floated,
-      icon,
-      iconRight,
-      large,
-      largeIcon,
-      light,
-      primary,
-      rounded,
-      simple,
-      small,
-      spinning,
-      style = {},
-      target,
-      text,
-      to,
-      wide,
-    } = props
+      props,
+      props: {
+        children,
+        className,
+        color,
+        danger,
+        disabled,
+        floated,
+        icon,
+        iconRight,
+        large,
+        largeIcon,
+        light,
+        primary,
+        rounded,
+        simple,
+        small,
+        spinning,
+        style = {},
+        target,
+        text,
+        to,
+        wide,
+      },
+    } = this
+
     const A = to ? TheLink : 'a'
 
     const applyColor = color && !danger && !disabled

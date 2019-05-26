@@ -65,11 +65,18 @@ class TheInputCheckbox extends React.PureComponent {
   }
 
   handleChange(e) {
-    let {
-      props: { onChange, onUpdate, parser, splitter, value },
+    const {
+      props: { onChange, onUpdate, parser, splitter },
     } = this
     let {
-      target: { checked, name, value: changedValue },
+      props: { value },
+    } = this
+
+    let {
+      target: { value: changedValue },
+    } = e
+    const {
+      target: { checked, name },
     } = e
     changedValue = String(changedValue).trim()
     value = normalizeArrayValue(value, splitter).map((value) =>
@@ -97,20 +104,23 @@ class TheInputCheckbox extends React.PureComponent {
   }
 
   render() {
-    const { props } = this
+    const {
+      props: {
+        asButton,
+        className,
+        disabledValues,
+        error,
+        id = this.id,
+        name,
+        readOnly,
+        splitter,
+        tabIndex,
+      },
+      props,
+    } = this
     let {
-      asButton,
-      className,
-      disabledValues,
-      error,
-      id = this.id,
-      name,
-      options,
-      readOnly,
-      splitter,
-      tabIndex,
-      value,
-    } = props
+      props: { options, value },
+    } = this
 
     options = normalizeOptions(options)
     value = normalizeArrayValue(value, splitter).map((value) =>

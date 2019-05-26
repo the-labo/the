@@ -14,10 +14,6 @@ const debug = Debug('the:cycle')
  * Component with life cycle
  */
 class TheCycle extends React.Component {
-  constructor(...args) {
-    super(...args)
-  }
-
   componentDidMount() {
     const {
       props: { onMount, values },
@@ -58,8 +54,10 @@ class TheCycle extends React.Component {
   }
 
   render() {
-    const { props } = this
-    const { children } = props
+    const {
+      props: { children },
+    } = this
+
     return <React.Fragment>{children}</React.Fragment>
   }
 }

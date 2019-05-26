@@ -122,9 +122,12 @@ class TheInputSlider extends React.PureComponent {
   }
 
   render() {
-    const { props, state } = this
-    const { barOnly, className, error, max, min, name, value } = props
-    const { maxX, minX, x } = state
+    const {
+      props,
+      props: { barOnly, className, error, max, min, name, value },
+      state: { maxX, minX, x },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, {
@@ -182,8 +185,12 @@ class TheInputSlider extends React.PureComponent {
   }
 
   setSliderValue(value) {
-    const { props, state } = this
-    const { name, onUpdate, step } = props
+    const {
+      props,
+      props: { name, onUpdate, step },
+      state,
+    } = this
+
     const duplicate = props.value === value
     if (duplicate) {
       return
@@ -208,16 +215,19 @@ class TheInputSlider extends React.PureComponent {
   }
 
   _rateWithValue(value) {
-    const { props } = this
-    const { max, min } = props
+    const {
+      props: { max, min },
+    } = this
 
     value = rangecal.round(min, max, value)
     return chopcal.round(rangecal.rate(min, max, value), 0.01)
   }
 
   _rateWithX(x) {
-    const { state } = this
-    const { maxX, minX } = state
+    const {
+      state: { maxX, minX },
+    } = this
+
     if (minX === maxX) {
       return 0
     }
@@ -225,8 +235,9 @@ class TheInputSlider extends React.PureComponent {
   }
 
   _valueWithRate(rate) {
-    const { props } = this
-    const { max, min } = props
+    const {
+      props: { max, min },
+    } = this
 
     const value = chopcal.round(rangecal.value(min, max, rate), 0.01)
     return rangecal.round(min, max, value)

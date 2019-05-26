@@ -52,8 +52,10 @@ class TheStyle extends React.PureComponent {
   }
 
   render() {
-    const { props } = this
-    const { className, id, type } = props
+    const {
+      props: { className, id, type },
+    } = this
+
     return (
       <style
         className={c('the-style', className)}

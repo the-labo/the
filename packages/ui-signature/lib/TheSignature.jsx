@@ -76,24 +76,29 @@ class TheSignature extends React.Component {
   }
 
   handleBegin() {
-    const { pad } = this
     const {
+      pad,
       props: { onBegin },
     } = this
+
     onBegin && onBegin({ pad })
   }
 
   handleEnd() {
-    const { pad } = this
     const {
+      pad,
       props: { onEnd },
     } = this
+
     onEnd && onEnd({ pad })
   }
 
   render() {
-    const { props } = this
-    const { children, className, height, width } = props
+    const {
+      props,
+      props: { children, className, height, width },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, {
@@ -115,8 +120,9 @@ class TheSignature extends React.Component {
   resize() {
     const {
       canvasRef: { current: canvas },
+      pad,
     } = this
-    const { pad } = this
+
     const skip = !canvas || !pad
     if (skip) {
       return

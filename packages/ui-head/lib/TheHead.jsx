@@ -74,27 +74,29 @@ document.addEventListener('DOMContentLoaded', function(event) {
   }
 
   render() {
-    const { props } = this
     const {
-      base,
-      baseTarget,
-      charSet,
-      children,
-      className,
-      color,
-      css,
-      fallbackUnless,
-      icon,
-      id,
-      itemProps,
-      js,
-      manifest,
-      metaContents,
-      metaProperties,
-      ogpContents,
-      title,
-      viewPort,
-    } = props
+      props,
+      props: {
+        base,
+        baseTarget,
+        charSet,
+        children,
+        className,
+        color,
+        css,
+        fallbackUnless,
+        icon,
+        id,
+        itemProps,
+        js,
+        manifest,
+        metaContents,
+        metaProperties,
+        ogpContents,
+        title,
+        viewPort,
+      },
+    } = this
 
     const globals = expand(props.globals || {})
 

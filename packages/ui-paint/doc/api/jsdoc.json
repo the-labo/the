@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-paint",
     "order": 0,
     "typicalname": "uiPaint",
-    "version": "15.4.3"
+    "version": "15.4.6"
   },
   {
     "description": "Hand write painting",
@@ -21,8 +21,8 @@
     "longname": "ThePaint",
     "meta": {
       "filename": "ThePaint.jsx",
-      "lineno": 19,
-      "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
+      "lineno": 20,
+      "path": "lib"
     },
     "name": "ThePaint",
     "order": 1,
@@ -35,7 +35,7 @@
     "meta": {
       "filename": "DrawerLayer.jsx",
       "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/ui-paint/lib/helpers"
+      "path": "lib/helpers"
     },
     "name": "DrawerLayer",
     "order": 6,
@@ -49,7 +49,7 @@
     "meta": {
       "filename": "ThePaintStyle.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
+      "path": "lib"
     },
     "name": "ThePaintStyle",
     "order": 4,
@@ -64,8 +64,8 @@
     "memberof": "ThePaint.propTypes",
     "meta": {
       "filename": "ThePaint.jsx",
-      "lineno": 174,
-      "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
+      "lineno": 197,
+      "path": "lib"
     },
     "name": "method",
     "order": 2,
@@ -79,8 +79,8 @@
     "memberof": "ThePaint.propTypes",
     "meta": {
       "filename": "ThePaint.jsx",
-      "lineno": 178,
-      "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
+      "lineno": 201,
+      "path": "lib"
     },
     "name": "onDrawer",
     "order": 3,
@@ -95,7 +95,7 @@
     "meta": {
       "filename": "ThePaintStyle.jsx",
       "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/ui-paint/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 5,

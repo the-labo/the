@@ -59,11 +59,10 @@ class TheFlick extends React.Component {
 
   changeIndexTo(nextIndex) {
     const {
+      bodyRef: { current: body },
       props: { activeIndex, onChange },
     } = this
-    const {
-      bodyRef: { current: body },
-    } = this
+
     if (!body) {
       return
     }
@@ -197,13 +196,14 @@ class TheFlick extends React.Component {
   moveAmountFor(x) {
     const {
       bodyRef: { current: body },
+      props: {
+        activeIndex,
+        images: { length: count },
+      },
     } = this
     const threshold = Math.min(80, body.offsetWidth / 2)
-    const {
-      props: { activeIndex, images },
-    } = this
-    const { length: count } = images
-    const toLeft = threshold < x && 0 < activeIndex
+
+    const toLeft = threshold < x && activeIndex > 0
     if (toLeft) {
       return -1
     }
@@ -228,18 +228,21 @@ class TheFlick extends React.Component {
   }
 
   render() {
-    const { props, state } = this
-    const { animating, bodyWidth, draggingPosition } = state
     const {
-      activeIndex,
-      children,
-      className,
-      images,
-      present,
-      spinning,
-      title,
-    } = props
-    const { length: count } = images
+      props,
+      props: {
+        activeIndex,
+        children,
+        className,
+        images,
+        images: { length: count },
+        present,
+        spinning,
+        title,
+      },
+      state: { animating, bodyWidth, draggingPosition },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}

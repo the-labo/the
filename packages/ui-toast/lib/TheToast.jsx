@@ -82,8 +82,11 @@ class TheToast extends React.PureComponent {
   }
 
   render() {
-    const { props } = this
-    const { children, className, level } = props
+    const {
+      props,
+      props: { children, className, level },
+    } = this
+
     let { messages } = props
     messages = normalizeMessages(messages)
     const icon = TheToast.iconForLevel(level)

@@ -114,8 +114,9 @@ class TheRoute extends React.Component {
   }
 
   render() {
-    const { props } = this
-    const { exact, location, path, scrollToTop, strict } = props
+    const {
+      props: { exact, location, path, scrollToTop, strict },
+    } = this
 
     const element = (
       <Route

@@ -38,8 +38,10 @@ class TheInputUpload extends React.PureComponent {
   componentDidMount() {}
 
   componentDidUpdate(prevProps) {
-    const { props } = this
-    const { value } = props
+    const {
+      props: { value },
+    } = this
+
     const hasValue = value && value.length > 0
     if (hasValue && prevProps.value !== value) {
       this.setState({ urls: [].concat(value) })
@@ -51,17 +53,20 @@ class TheInputUpload extends React.PureComponent {
   }
 
   handleChange(e) {
-    const { props } = this
-    const { target } = e
     const {
-      convertFile,
-      multiple,
-      name,
-      onChange,
-      onError,
-      onLoad,
-      onUpdate,
-    } = props
+      props,
+      props: {
+        convertFile,
+        multiple,
+        name,
+        onChange,
+        onError,
+        onLoad,
+        onUpdate,
+      },
+    } = this
+    const { target } = e
+
     if (target.files.length === 0) {
       return
     }
@@ -92,8 +97,10 @@ class TheInputUpload extends React.PureComponent {
   }
 
   handleRemove() {
-    const { props } = this
-    const { name, onLoad, onUpdate } = props
+    const {
+      props: { name, onLoad, onUpdate },
+    } = this
+
     const urls = []
     this.setState({
       error: null,
@@ -104,24 +111,26 @@ class TheInputUpload extends React.PureComponent {
   }
 
   render() {
-    const { props, state } = this
     const {
-      accept,
-      children,
-      className,
-      closeIcon,
-      error,
-      guideIcon,
-      height,
-      id = this.id,
-      multiple,
-      name,
-      readOnly,
-      text,
-      value,
-      width,
-    } = props
-    const { spinning, urls } = state
+      props,
+      props: {
+        accept,
+        children,
+        className,
+        closeIcon,
+        error,
+        guideIcon,
+        height,
+        id = this.id,
+        multiple,
+        name,
+        readOnly,
+        text,
+        value,
+        width,
+      },
+      state: { spinning, urls },
+    } = this
 
     const hasImage = !!urls && urls.length > 0
     return (

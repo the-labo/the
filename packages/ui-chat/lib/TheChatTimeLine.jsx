@@ -40,8 +40,8 @@ class TheChatTimeLine extends React.Component {
 
   componentDidMount() {
     const {
-      scrollerRef: { current: scroller },
       handleScroll,
+      scrollerRef: { current: scroller },
     } = this
     scroller.addEventListener('scroll', handleScroll)
 
@@ -68,8 +68,8 @@ class TheChatTimeLine extends React.Component {
 
   componentWillUnmount() {
     const {
-      scrollerRef: { current: scroller },
       handleScroll,
+      scrollerRef: { current: scroller },
     } = this
     scroller.removeEventListener('scroll', handleScroll)
   }
@@ -97,19 +97,21 @@ class TheChatTimeLine extends React.Component {
   }
 
   render() {
-    const { props } = this
     const {
-      alt,
-      children,
-      className,
-      empty = props.items && props.items.length === 0,
-      items,
-      lang,
-      onWho,
-      spinning,
-      whoBaseColor,
-      whoImageSize,
-    } = props
+      props,
+      props: {
+        alt,
+        children,
+        className,
+        empty = props.items && props.items.length === 0,
+        items,
+        lang,
+        onWho,
+        spinning,
+        whoBaseColor,
+        whoImageSize,
+      },
+    } = this
 
     const groupedItems = (items || []).reduce((grouped, item) => {
       const title = theDate(item.at, { lang }).format('LL')

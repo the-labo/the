@@ -13,21 +13,24 @@ import TheRepeatableStyle from './TheRepeatableStyle'
  */
 class TheRepeatable extends React.Component {
   render() {
-    const { props } = this
     const {
-      ItemComponent,
-      ListComponent,
-      alt,
-      children,
-      className,
-      data = [],
-      horizontal,
-      introItem,
-      keyFor,
-      outroItem,
-      render,
-      spinning,
-    } = props
+      props,
+      props: {
+        ItemComponent,
+        ListComponent,
+        alt,
+        children,
+        className,
+        data = [],
+        horizontal,
+        introItem,
+        keyFor,
+        outroItem,
+        render,
+        spinning,
+      },
+    } = this
+
     const empty = !spinning && data.length === 0
     return (
       <div

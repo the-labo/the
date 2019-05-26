@@ -68,22 +68,25 @@ class TheImage extends React.Component {
   }
 
   render() {
-    const { props, state } = this
     const {
-      alt,
-      asLink,
-      background,
-      children,
-      className,
-      draggable,
-      height,
-      notFoundMessage,
-      scale,
-      src,
-      style,
-      width,
-    } = props
-    const { actualHeight, actualWidth, failed, loading } = state
+      props,
+      props: {
+        alt,
+        asLink,
+        background,
+        children,
+        className,
+        draggable,
+        height,
+        notFoundMessage,
+        scale,
+        src,
+        style,
+        width,
+      },
+      state: { actualHeight, actualWidth, failed, loading },
+    } = this
+
     const Wrap = asLink ? 'a' : 'div'
     const asLinkProps = asLink ? { href: src, target: '_blank' } : {}
     const spinning = !!src && loading && !failed

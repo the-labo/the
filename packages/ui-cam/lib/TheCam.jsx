@@ -34,7 +34,9 @@ class TheCam extends React.Component {
   componentDidMount() {
     void this.applyEnabled(!this.props.disabled)
 
-    const { onMedia, onVideo } = this.props
+    const {
+      props: { onMedia, onVideo },
+    } = this
     onVideo && onVideo(this.videoRef.current)
     onMedia && onMedia(this.media)
   }
@@ -59,21 +61,19 @@ class TheCam extends React.Component {
   }
 
   handleVideoLoad() {
-    const { onReady } = this.props
+    const {
+      props: { onReady },
+    } = this
     onReady && onReady()
   }
 
   render() {
-    const { props, state } = this
     const {
-      children,
-      className,
-      height,
-      rejectedMessage,
-      spinning,
-      width,
-    } = props
-    const { busy, rejected } = state
+      props,
+      props: { children, className, height, rejectedMessage, spinning, width },
+      state: { busy, rejected },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}
@@ -119,11 +119,15 @@ class TheCam extends React.Component {
       await media.start()
     } catch (e) {
       this.setState({ busy: false, rejected: true, running: false })
-      const { onReject } = this.props
+      const {
+        props: { onReject },
+      } = this
       onReject && onReject(e)
       throw e
     }
-    const video = this.videoRef.current
+    const {
+      videoRef: { current: video },
+    } = this
     if (video) {
       await media.bindVideo(video, {})
       this.setState({ busy: false, rejected: false, running: true })
@@ -132,15 +136,20 @@ class TheCam extends React.Component {
     // Call backs
     {
       const { stream } = media
-      const { onStart, onStream } = this.props
+      const {
+        props: { onStart, onStream },
+      } = this
       onStream && onStream(stream)
       onStart && onStart({ cam: this, stream, video })
     }
   }
 
   async stop() {
-    const video = this.videoRef.current
-    const { media } = this
+    const {
+      media,
+      videoRef: { current: video },
+    } = this
+
     if (video) {
       video.srcObject = null
       this.setState({ busy: false, rejected: false, running: false })
@@ -155,7 +164,9 @@ class TheCam extends React.Component {
     // Callbacks
     {
       const { stream } = media
-      const { onStop } = this.props
+      const {
+        props: { onStop },
+      } = this
       onStop && onStop({ cam: this, stream, video })
     }
   }

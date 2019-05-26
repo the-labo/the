@@ -20,8 +20,10 @@ class TheHtml extends React.PureComponent {
   }
 
   render() {
-    const { props } = this
-    const { children, className, id, lang, styles } = props
+    const {
+      props: { children, className, id, lang, styles },
+    } = this
+
     return (
       <html
         className={classnames('the-html', className)}

@@ -74,3 +74,5 @@ class CanvasAccess {
 }
 
 export default CanvasAccess
+
+/* global Image */
