@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Eslint config for jsdoc
  * @module @the-/eslint-config-jsdoc

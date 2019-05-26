@@ -1,3 +1,4 @@
+'use strict'
 /**
  * As pon task
  * @function theResizeTask

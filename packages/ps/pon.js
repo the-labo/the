@@ -1,3 +1,4 @@
+'use strict'
 /**
  * As pon task
  * @module @the-/ps/pon

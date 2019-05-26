@@ -1,3 +1,4 @@
+'use strict'
 const standardJSX = require('eslint-config-standard-jsx')
 
 module.exports = {
