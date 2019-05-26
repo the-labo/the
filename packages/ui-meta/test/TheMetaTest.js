@@ -3,9 +3,11 @@
  * Test for TheMeta.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheMeta = require('../shim/TheMeta').default
+const { default: TheMeta } = require('../shim/TheMeta')
 
 describe('the-meta', () => {
   before(() => {})

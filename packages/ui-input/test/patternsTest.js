@@ -3,9 +3,11 @@
  * Test for patterns.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const patterns = require('../shim/patterns').default
+const { default: patterns } = require('../shim/patterns')
 
 describe('patterns', () => {
   before(() => {})

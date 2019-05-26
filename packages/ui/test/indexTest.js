@@ -3,7 +3,9 @@
  * Test case for index.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const lib = require('../shim')
 
 describe('index', () => {

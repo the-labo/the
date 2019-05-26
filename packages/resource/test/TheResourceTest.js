@@ -4,7 +4,9 @@
  * Runs with mocha.
  */
 const asleep = require('asleep')
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const theDb = require('@the-/db')
 const TheResource = require('../lib/TheResource')
 

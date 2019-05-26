@@ -3,9 +3,11 @@
  * Test for TheDemoUi.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheDemoUi = require('../shim/TheDemoUi').default
+const { default: TheDemoUi } = require('../shim/TheDemoUi')
 
 describe('the-demo-ui', () => {
   before(() => {})

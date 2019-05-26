@@ -3,9 +3,11 @@
  * Test for TheRepeatable.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheRepeatable = require('../shim/TheRepeatable').default
+const { default: TheRepeatable } = require('../shim/TheRepeatable')
 
 describe('the-repeatable', () => {
   before(() => {})

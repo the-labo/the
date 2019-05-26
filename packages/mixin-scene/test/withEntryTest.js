@@ -3,7 +3,9 @@
  * Test for withEntry.
  * Runs with mocha.
  */
-const { deepEqual, ok } = require('assert').strict
+const {
+  strict: { deepEqual, ok },
+} = require('assert')
 const withEntry = require('../lib/withEntry')
 
 describe('with-entry', () => {

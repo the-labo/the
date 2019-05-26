@@ -3,7 +3,9 @@
  * Test for withForm.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const withForm = require('../lib/withForm')
 
 describe('with-form', () => {

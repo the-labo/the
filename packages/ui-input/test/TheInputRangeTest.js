@@ -3,9 +3,11 @@
  * Test for TheInputRange.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheInputRange = require('../shim/TheInputRange').default
+const { default: TheInputRange } = require('../shim/TheInputRange')
 
 describe('the-input-range', () => {
   before(() => {})

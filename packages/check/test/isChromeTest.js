@@ -3,7 +3,9 @@
  * Test for isChrome.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const isChrome = require('../lib/isChrome')
 
 describe('is-chrome', () => {

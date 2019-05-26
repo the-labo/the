@@ -33,10 +33,14 @@ class TheRouteStack extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { onChange, stack } = this.props
+    const {
+      props: { onChange, stack },
+    } = this
     const stackChanged = stackIdOf(stack) !== stackIdOf(prevProps.stack)
     if (stackChanged) {
-      const innerElm = this.innerRef.current
+      const {
+        innerRef: { current: innerElm },
+      } = this
       if (innerElm) {
         innerElm.scrollTop = 0
       }
@@ -98,7 +102,9 @@ class TheRouteStack extends React.Component {
   }
 
   resize() {
-    const innerElm = this.innerRef.current
+    const {
+      innerRef: { current: innerElm },
+    } = this
     if (!innerElm) {
       return
     }
@@ -131,7 +137,9 @@ class TheRouteStackRoute extends React.Component {
   }
 
   render() {
-    const { path, popPath } = this.props
+    const {
+      props: { path, popPath },
+    } = this
     return (
       <TheRoute
         component={this.renderComponent}
@@ -143,7 +151,9 @@ class TheRouteStackRoute extends React.Component {
   }
 
   renderComponent({ history, location, match, pop, popTo }) {
-    const { component: Component, requestResize } = this.props
+    const {
+      props: { component: Component, requestResize },
+    } = this
     requestResize()
 
     // Hack to keep immutability of `match` object

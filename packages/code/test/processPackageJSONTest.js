@@ -3,7 +3,9 @@
  * Test for processPackageJSON.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const processPackageJSON = require('../lib/processors/processPackageJSON')
 
 describe('process-package-jso-n', () => {

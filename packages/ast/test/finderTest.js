@@ -3,7 +3,9 @@
  * Test for finder.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const finder = require('../lib/finder')
 const parse = require('../lib/parse')
 

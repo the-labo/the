@@ -3,9 +3,11 @@
  * Test for TheInputPassword.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheInputPassword = require('../shim/TheInputPassword').default
+const { default: TheInputPassword } = require('../shim/TheInputPassword')
 
 describe('the-input-password', () => {
   before(() => {})

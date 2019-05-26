@@ -3,7 +3,9 @@
  * Test for valuesFromEntity.
  * Runs with mocha.
  */
-const { deepStrictEqual: deepEqual } = require('assert').strict
+const {
+  strict: { deepStrictEqual: deepEqual },
+} = require('assert')
 const valuesFromEntity = require('../lib/valuesFromEntity')
 
 describe('values-from-entity', () => {

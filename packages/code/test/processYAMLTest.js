@@ -3,7 +3,9 @@
  * Test for processYAML.
  * Runs with mocha.
  */
-const { doesNotReject, equal } = require('assert').strict
+const {
+  strict: { doesNotReject, equal },
+} = require('assert')
 const processYAML = require('../lib/processors/processYAML')
 
 describe('process-yam-l', () => {

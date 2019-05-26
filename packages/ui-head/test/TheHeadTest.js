@@ -3,9 +3,11 @@
  * Test for TheHead.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheHead = require('../shim/TheHead').default
+const { default: TheHead } = require('../shim/TheHead')
 
 describe('the-head', () => {
   before(() => {})

@@ -3,9 +3,11 @@
  * Test for TheLink.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheLink = require('../shim/TheLink').default
+const { default: TheLink } = require('../shim/TheLink')
 
 describe('the-link', () => {
   before(() => {})

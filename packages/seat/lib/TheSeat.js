@@ -24,7 +24,9 @@ const TheSeatBase = [m.lockMix, m.scopeMix].reduce(
 /** @lends module:@the-/seat.TheSeat */
 class TheSeat extends TheSeatBase {
   static get DEFAULT_FILENAME() {
-    const { HOME = '~' } = process.env
+    const {
+      env: { HOME = '~' },
+    } = process
     return path.resolve(HOME, '.seat.json')
   }
 

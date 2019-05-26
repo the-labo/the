@@ -3,9 +3,11 @@
  * Test for TheLinkStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheLinkStyle = require('../shim/TheLinkStyle').default
+const { default: TheLinkStyle } = require('../shim/TheLinkStyle')
 
 describe('the-link-style', () => {
   before(() => {})

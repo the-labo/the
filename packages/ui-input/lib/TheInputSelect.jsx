@@ -44,7 +44,9 @@ class TheInputSelect extends React.PureComponent {
   }
 
   componentDidUpdate() {
-    const optionsElm = this.optionsElmRef.current
+    const {
+      optionsElmRef: { current: optionsElm },
+    } = this
     if (optionsElm) {
       const minY = get('document.body.clientTop')
       const maxY = get('document.body.clientHeight')
@@ -73,7 +75,9 @@ class TheInputSelect extends React.PureComponent {
       suggesting: false,
       suggestingIndex: this.getIndexForValue(value),
     })
-    const { name } = this.props
+    const {
+      props: { name },
+    } = this
     this.handleChange({
       target: { name, value },
     })
@@ -90,13 +94,19 @@ class TheInputSelect extends React.PureComponent {
   }
 
   handleBlur(e) {
-    const { onBlur } = this.props
+    const {
+      props: { onBlur },
+    } = this
     onBlur && onBlur(e)
   }
 
   handleChange(e) {
-    const { onChange, onUpdate, parser } = this.props
-    const { name, value } = e.target
+    const {
+      props: { onChange, onUpdate, parser },
+    } = this
+    const {
+      target: { name, value },
+    } = e
     onChange && onChange(e)
     onUpdate && onUpdate({ [name]: parser(value) })
   }
@@ -104,7 +114,9 @@ class TheInputSelect extends React.PureComponent {
   handleDisplayClick() {
     clearTimeout(this._suggestOffTimer)
     const { state } = this
-    const inputElm = this.inputElmRef.current
+    const {
+      inputElmRef: { current: inputElm },
+    } = this
     const suggesting = !state.suggesting
     if (suggesting) {
       inputElm && inputElm.focus()
@@ -118,7 +130,9 @@ class TheInputSelect extends React.PureComponent {
   }
 
   handleDocumentClick(e) {
-    const elm = this.elmRef.current
+    const {
+      elmRef: { current: elm },
+    } = this
 
     if (!elm) {
       return
@@ -132,19 +146,25 @@ class TheInputSelect extends React.PureComponent {
   handleFocus(e) {
     clearTimeout(this._suggestOffTimer)
     this.setState({ suggesting: true })
-    const { onFocus } = this.props
+    const {
+      props: { onFocus },
+    } = this
     e.preventDefault()
     e.stopPropagation()
     onFocus && onFocus(e)
   }
 
   handleKeyDown(e) {
-    const { onEnter, onKeyDown } = this.props
+    const {
+      props: { onEnter, onKeyDown },
+    } = this
     switch (e.keyCode) {
       // Enter
       case 13: {
         const values = this.getOptionValues()
-        const { suggestingIndex } = this.state
+        const {
+          state: { suggestingIndex },
+        } = this
         this.enterSuggested(values[suggestingIndex])
         if (onEnter) {
           onEnter()
@@ -180,12 +200,16 @@ class TheInputSelect extends React.PureComponent {
   }
 
   handleKeyUp(e) {
-    const { onKeyUp } = this.props
+    const {
+      props: { onKeyUp },
+    } = this
     onKeyUp && onKeyUp(e)
   }
 
   handleNull() {
-    const { name, onUpdate } = this.props
+    const {
+      props: { name, onUpdate },
+    } = this
     onUpdate && onUpdate({ [name]: null })
     this.setState({ suggesting: false })
   }
@@ -237,7 +261,9 @@ class TheInputSelect extends React.PureComponent {
       value,
     } = props
     const options = normalizeOptions(props.options)
-    const { suggesting, suggestingIndex } = this.state
+    const {
+      state: { suggesting, suggestingIndex },
+    } = this
     const selectedValue = options[value]
     const hasSelect = typeof selectedValue !== 'undefined'
     return (
@@ -397,12 +423,16 @@ TheInputSelect.WithOptionsArray = class WithOptionsArray extends React.Component
     this.compareOptions = this.compareOptions.bind(this)
   }
   compareOptions(a, b) {
-    const { optionsArray } = this.props
+    const {
+      props: { optionsArray },
+    } = this
     const valueArray = optionsArray.map(([v]) => v)
     return valueArray.indexOf(a) - valueArray.indexOf(b)
   }
   render() {
-    const { optionsArray, ...props } = this.props
+    const {
+      props: { optionsArray, ...props },
+    } = this
     return (
       <TheInputSelect
         {...props}
@@ -421,19 +451,21 @@ TheInputSelect.WithOptionsArray = class WithOptionsArray extends React.Component
 class TheInputSelectOptionList extends React.PureComponent {
   render() {
     const {
-      disabledValues,
-      full = false,
-      nullable = false,
-      nullText,
-      onClose,
-      onNull,
-      onSelect,
-      options,
-      optionsRef,
-      parser,
-      sorter,
-      suggestingIndex,
-    } = this.props
+      props: {
+        disabledValues,
+        full = false,
+        nullable = false,
+        nullText,
+        onClose,
+        onNull,
+        onSelect,
+        options,
+        optionsRef,
+        parser,
+        sorter,
+        suggestingIndex,
+      },
+    } = this
     const optionValues = Object.keys(options)
     if (optionValues.length === 0) {
       return null
@@ -480,12 +512,16 @@ class TheInputSelectOptionListItem extends React.PureComponent {
   }
 
   handleClick() {
-    const { onSelect, value } = this.props
+    const {
+      props: { onSelect, value },
+    } = this
     onSelect && onSelect({ value })
   }
 
   render() {
-    const { children, disabled, selected, value } = this.props
+    const {
+      props: { children, disabled, selected, value },
+    } = this
     return (
       <li
         className={c('the-input-select-option', {

@@ -34,7 +34,9 @@ class TheInputNumber extends React.PureComponent {
   }
 
   changeValue(amount) {
-    const { name, onUpdate, step, value } = this.props
+    const {
+      props: { name, onUpdate, step, value },
+    } = this
     onUpdate &&
       onUpdate({
         [name]: sureNumber(value) + sureNumber(amount) * sureNumber(step),

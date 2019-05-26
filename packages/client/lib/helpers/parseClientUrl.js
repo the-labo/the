@@ -15,7 +15,7 @@ function parseClientUrl(url) {
   if (typeof url === 'string') {
     const { pathname } = new URL(url)
     if (pathname === '/') {
-      const suggestion = new URL(DEFAULT_URL, url).href
+      const { href: suggestion } = new URL(DEFAULT_URL, url)
       console.warn(
         `[TheClient] Passed URL "${url}" seems to be wrong. Did you mean "${suggestion}"`,
       )

@@ -22,7 +22,7 @@ function bindScope(name) {
         configurable: false,
         get() {
           const nameComponents = name.split('.')
-          let scope = this.store
+          let { store: scope } = this
           while (nameComponents.length > 0) {
             scope = scope[nameComponents.shift()]
             unlessProduction(() => {

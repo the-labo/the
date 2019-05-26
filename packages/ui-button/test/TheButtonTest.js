@@ -3,9 +3,11 @@
  * Test for TheButton.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheButton = require('../shim/TheButton').default
+const { default: TheButton } = require('../shim/TheButton')
 
 describe('the-button', () => {
   before(() => {})

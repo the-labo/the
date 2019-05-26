@@ -19,7 +19,9 @@ class TheStepBar extends React.Component {
   }
 
   render() {
-    const { nodes, onStep, step } = this.props
+    const {
+      props: { nodes, onStep, step },
+    } = this
 
     return (
       <div className={c('the-step-bar')} ref={this.elmRef} role='tablist'>
@@ -37,7 +39,9 @@ class TheStepBar extends React.Component {
   }
 
   scrollToStep(step) {
-    const elm = this.elmRef.current
+    const {
+      elmRef: { current: elm },
+    } = this
     if (!elm) {
       return
     }
@@ -57,12 +61,16 @@ class TheStepBarItem extends React.Component {
   }
 
   handleStep() {
-    const { index, onStep } = this.props
+    const {
+      props: { index, onStep },
+    } = this
     onStep && onStep(index)
   }
 
   render() {
-    const { index, node, step } = this.props
+    const {
+      props: { index, node, step },
+    } = this
     const done = index < step
     const current = index === step
     const active = done || current

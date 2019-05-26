@@ -61,7 +61,9 @@ class TheDropDownMenu extends React.Component {
   }
 
   bindHistory(history) {
-    const { eventsToClose } = this.props
+    const {
+      props: { eventsToClose },
+    } = this
     const window = get('window')
     for (const event of eventsToClose) {
       window.addEventListener(event, this.close)
@@ -85,7 +87,9 @@ class TheDropDownMenu extends React.Component {
   }
 
   componentWillUnmount() {
-    const { eventsToClose } = this.props
+    const {
+      props: { eventsToClose },
+    } = this
     const window = get('window')
     for (const event of eventsToClose) {
       window.removeEventListener(event, this.close)

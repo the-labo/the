@@ -3,7 +3,9 @@
  * Test for withFilter.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const withFilter = require('../lib/withFilter')
 
 describe('with-filter', () => {

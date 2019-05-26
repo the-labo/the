@@ -21,7 +21,7 @@ function withDebug(Class, options = {}) {
     constructor(...args) {
       super(...args)
       unlessProduction(() => {
-        const Constructor = this.constructor
+        const { constructor: Constructor } = this
         const controllerName = this.name || Constructor.name
         const {
           contextFilter = ({ client }) => client,

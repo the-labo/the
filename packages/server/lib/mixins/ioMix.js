@@ -30,10 +30,12 @@ function ioMix(Class) {
 
     registerIO(io) {
       io.of(NAMESPACE).on(IOEvents.CONNECTION, (socket) => {
-        const client = socket.handshake.query
+        const {
+          handshake: { query: client },
+        } = socket
         const { cid, via } = client
         if (via === 'client') {
-          const socketId = socket.id
+          const { id: socketId } = socket
           void this.handleIOClientCame(cid, socketId, client)
           socket.on(IOEvents.RPC_CALL, (config) => {
             config = decode(config)

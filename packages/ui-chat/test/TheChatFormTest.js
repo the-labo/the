@@ -3,9 +3,11 @@
  * Test for TheChatForm.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheChatForm = require('../shim/TheChatForm').default
+const { default: TheChatForm } = require('../shim/TheChatForm')
 
 describe('the-chat-form', () => {
   before(() => {})

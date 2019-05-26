@@ -39,7 +39,9 @@ class TheStep extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    const step = this.props.step
+    const {
+      props: { step },
+    } = this
     const updateStage = prevProps.step !== step
     if (updateStage) {
       this.resize(step)
@@ -51,12 +53,16 @@ class TheStep extends React.Component {
   }
 
   getStepCount() {
-    const { children, stepCount = children.length } = this.props
+    const {
+      props: { children, stepCount = children.length },
+    } = this
     return stepCount
   }
 
   moveStep(amount) {
-    const { onStep, step } = this.props
+    const {
+      props: { onStep, step },
+    } = this
     const stepCount = this.getStepCount()
     const newStep = Math.min(stepCount - 1, Math.max(step + amount, 0))
     onStep(newStep)

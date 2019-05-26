@@ -3,9 +3,11 @@
  * Test for TheMapPositionInput.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheMapPositionInput = require('../shim/TheMapPositionInput').default
+const { default: TheMapPositionInput } = require('../shim/TheMapPositionInput')
 
 describe('the-map-position-input', () => {
   before(() => {})

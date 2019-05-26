@@ -3,9 +3,11 @@
  * Test for TheVideoStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheVideoStyle = require('../shim/TheVideoStyle').default
+const { default: TheVideoStyle } = require('../shim/TheVideoStyle')
 
 describe('the-video-style', () => {
   before(() => {})

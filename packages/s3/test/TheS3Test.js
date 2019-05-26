@@ -3,7 +3,9 @@
  * Test for TheS3.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const TheS3 = require('../lib/TheS3')
 
 describe('the-s3', () => {

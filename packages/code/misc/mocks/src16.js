@@ -8,12 +8,14 @@ const log = (...args) => console.log(new Date(), '[uploader]', ...args)
 class PhotoUploader {
   constructor(config = {}) {
     const {
-      AZURE_CDN_HOST,
-      AZURE_STORAGE_ACCESS_KEY,
-      AZURE_STORAGE_ACCOUNT,
-      AZURE_STORAGE_CONTAINER,
-      MAPPER_APP_PROCESS_NAME,
-    } = process.env
+      env: {
+        AZURE_CDN_HOST,
+        AZURE_STORAGE_ACCESS_KEY,
+        AZURE_STORAGE_ACCOUNT,
+        AZURE_STORAGE_CONTAINER,
+        MAPPER_APP_PROCESS_NAME,
+      },
+    } = process
     this.accountName = AZURE_STORAGE_ACCOUNT
     this.accountKey = AZURE_STORAGE_ACCESS_KEY
     this.containerName = AZURE_STORAGE_CONTAINER

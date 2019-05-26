@@ -3,7 +3,9 @@
  * Test for TheError.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const TheError = require('../lib/TheError')
 
 describe('the-error', () => {

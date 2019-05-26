@@ -3,7 +3,9 @@
  * Test for BooleanScope.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const { TheStore } = require('@the-/store')
 const BooleanScope = require('../lib/scopes/BooleanScope')
 

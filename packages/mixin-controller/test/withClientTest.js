@@ -3,7 +3,9 @@
  * Test for withClient.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const withClient = require('../lib/withClient')
 
 describe('with-client', () => {

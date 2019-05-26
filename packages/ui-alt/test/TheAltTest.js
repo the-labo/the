@@ -3,9 +3,11 @@
  * Test for TheAlt.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheAlt = require('../shim/TheAlt').default
+const { default: TheAlt } = require('../shim/TheAlt')
 
 describe('the-alt', () => {
   before(() => {})

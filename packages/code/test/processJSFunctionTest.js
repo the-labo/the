@@ -3,7 +3,9 @@
  * Test for processJSFunction.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const processJSFunction = require('../lib/processors/processJSFunction')
 
 describe('process-js-function', () => {

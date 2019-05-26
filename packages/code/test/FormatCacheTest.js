@@ -3,7 +3,9 @@
  * Test for FormatCache.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const FormatCache = require('../lib/helpers/FormatCache')
 
 describe('format-cache', () => {

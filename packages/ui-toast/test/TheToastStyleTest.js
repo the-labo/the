@@ -3,9 +3,11 @@
  * Test for TheToastStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheToastStyle = require('../shim/TheToastStyle').default
+const { default: TheToastStyle } = require('../shim/TheToastStyle')
 
 describe('the-toast-style', () => {
   before(() => {})

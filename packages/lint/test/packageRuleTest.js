@@ -3,7 +3,9 @@
  * Test for packageRule.
  * Runs with mocha.
  */
-const { deepEqual, equal } = require('assert').strict
+const {
+  strict: { deepEqual, equal },
+} = require('assert')
 const fs = require('fs')
 const path = require('path')
 const packageRule = require('../lib/rules/packageRule')

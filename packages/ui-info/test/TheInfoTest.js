@@ -3,9 +3,11 @@
  * Test for TheInfo.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheInfo = require('../shim/TheInfo').default
+const { default: TheInfo } = require('../shim/TheInfo')
 
 describe('the-info', () => {
   before(() => {})

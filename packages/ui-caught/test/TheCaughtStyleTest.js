@@ -3,9 +3,11 @@
  * Test for TheCaughtStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheCaughtStyle = require('../shim/TheCaughtStyle').default
+const { default: TheCaughtStyle } = require('../shim/TheCaughtStyle')
 
 describe('the-caught-style', () => {
   before(() => {})

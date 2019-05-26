@@ -3,9 +3,11 @@
  * Test for TheInputToggle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheInputToggle = require('../shim/TheInputToggle').default
+const { default: TheInputToggle } = require('../shim/TheInputToggle')
 
 describe('the-input-toggle', () => {
   before(() => {})

@@ -3,7 +3,9 @@
  * Test for TheScene.
  * Runs with mocha.
  */
-const { equal, ok, throws } = require('assert').strict
+const {
+  strict: { equal, ok, throws },
+} = require('assert')
 const {
   scopes: { ScopeScope, StringScope },
 } = require('@the-/scope')

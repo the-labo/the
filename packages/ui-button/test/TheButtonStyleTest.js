@@ -3,9 +3,11 @@
  * Test for TheButtonStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheButtonStyle = require('../shim/TheButtonStyle').default
+const { default: TheButtonStyle } = require('../shim/TheButtonStyle')
 
 describe('the-button-style', () => {
   before(() => {})

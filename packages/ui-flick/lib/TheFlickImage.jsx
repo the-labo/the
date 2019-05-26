@@ -20,12 +20,16 @@ class TheFlickImage extends React.Component {
   componentWillUnmount() {}
 
   handleLoad(e) {
-    const { onLoad } = this.props
+    const {
+      props: { onLoad },
+    } = this
     onLoad && onLoad(e)
   }
 
   render() {
-    const { alt, description, src, title, type } = this.props
+    const {
+      props: { alt, description, src, title, type },
+    } = this
 
     const isVideo = type === 'video' || isVideoSrc(src)
     return (

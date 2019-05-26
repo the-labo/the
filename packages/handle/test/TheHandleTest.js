@@ -3,7 +3,9 @@
  * Test for TheHandle.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const { TheScene } = require('@the-/scene')
 const TheHandle = require('../lib/TheHandle')
 
@@ -37,7 +39,9 @@ describe('the-handle', () => {
 
     ok(handle.foo)
     ok(handle.foo.bar)
-    const { bar } = handle.foo
+    const {
+      foo: { bar },
+    } = handle
     equal(bar.hey(), 'lhey')
     equal(handle['foo.bar.hey'](), 'lhey')
 

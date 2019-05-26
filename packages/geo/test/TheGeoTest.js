@@ -3,7 +3,9 @@
  * Test for TheGeo.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const TheGeo = require('../lib/TheGeo')
 
 describe('the-geo', () => {

@@ -3,9 +3,11 @@
  * Test for TheListStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheListStyle = require('../shim/TheListStyle').default
+const { default: TheListStyle } = require('../shim/TheListStyle')
 
 describe('the-list-style', () => {
   before(() => {})

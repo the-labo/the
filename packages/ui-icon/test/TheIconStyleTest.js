@@ -3,9 +3,11 @@
  * Test for TheIconStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheIconStyle = require('../shim/TheIconStyle').default
+const { default: TheIconStyle } = require('../shim/TheIconStyle')
 
 describe('the-icon-style', () => {
   before(() => {})

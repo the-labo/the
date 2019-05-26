@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Create element and render to static markup
  * @function markup
@@ -6,7 +7,7 @@
  */
 const React = require('react')
 const ReactDOMServer = require('react-dom/server')
-const TheComponentDemo = require('./shim/TheComponentDemo').default
+const { default: TheComponentDemo } = require('./shim/TheComponentDemo')
 
 /** @lends markup */
 function markup(props) {

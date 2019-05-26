@@ -13,7 +13,7 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
 
   const bodyFor = (annotation) => {
     const valueStart = annotation.kind.end + 1
-    const valueEnd = annotation.end
+    const { end: valueEnd } = annotation
     return {
       end: valueEnd,
       start: valueStart,
@@ -52,7 +52,7 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
 
     const kindEnded = hitsEmpty && !workingAnnotation.kind
     if (kindEnded) {
-      const kindStart = workingAnnotation.start
+      const { start: kindStart } = workingAnnotation
       const kindEnd = Number(i) + offset
       workingAnnotation.kind = {
         end: kindEnd,

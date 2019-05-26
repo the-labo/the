@@ -3,7 +3,9 @@
  * Test for TheCtrl.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const TheCtrl = require('../lib/TheCtrl')
 
 describe('the-ctrl', () => {

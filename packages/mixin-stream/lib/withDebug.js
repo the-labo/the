@@ -15,7 +15,7 @@ function withDebug(Class) {
     constructor(...args) {
       super(...args)
       unlessProduction(() => {
-        const Constructor = this.constructor
+        const { constructor: Constructor } = this
         const streamName = this.name || Constructor.name
         const debugKey = `app:${streamName}`
         const debug = Debug(debugKey)

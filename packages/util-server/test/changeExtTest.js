@@ -3,7 +3,9 @@
  * Test for changeExt.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const changeExt = require('../lib/changeExt')
 
 describe('change-ext', () => {

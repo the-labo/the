@@ -3,7 +3,9 @@
  * Test for define.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const define = require('../lib/define')
 
 describe('define', () => {

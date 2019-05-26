@@ -17,7 +17,9 @@ function contextRootFor(context, { value }) {
     componentWillUnmount() {}
 
     render() {
-      const { children } = this.props
+      const {
+        props: { children },
+      } = this
       return createElement(Provider, { value }, children)
     }
   }

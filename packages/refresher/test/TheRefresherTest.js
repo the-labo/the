@@ -4,7 +4,9 @@
  * Runs with mocha.
  */
 const asleep = require('asleep')
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const TheRefresher = require('../lib/TheRefresher')
 
 describe('the-refresher', () => {

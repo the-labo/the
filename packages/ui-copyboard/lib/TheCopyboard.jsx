@@ -83,7 +83,9 @@ class TheCopyboard extends React.Component {
   }
 
   showTip() {
-    const { tipDuration } = this.props
+    const {
+      props: { tipDuration },
+    } = this
     clearTimeout(this.tipOffTimer)
     this.setState({ tipShown: true })
     this.tipOffTimer = setTimeout(() => {

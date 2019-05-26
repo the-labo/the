@@ -3,9 +3,11 @@
  * Test for TheFrame.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheFrame = require('../shim/TheFrame').default
+const { default: TheFrame } = require('../shim/TheFrame')
 
 describe('the-frame', () => {
   before(() => {})

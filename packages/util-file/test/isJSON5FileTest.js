@@ -3,7 +3,9 @@
  * Test for isJSON5File.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const isJSON5File = require('../lib/isJSON5File')
 
 describe('is-j-s-o-n5-file', () => {

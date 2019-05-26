@@ -3,7 +3,9 @@
  * Test for usageRule.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const fs = require('fs')
 const path = require('path')
 const usageRule = require('../lib/rules/usageRule')

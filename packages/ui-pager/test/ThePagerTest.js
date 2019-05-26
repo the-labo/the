@@ -3,9 +3,11 @@
  * Test for ThePager.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const ThePager = require('../shim/ThePager').default
+const { default: ThePager } = require('../shim/ThePager')
 
 describe('the-pager', () => {
   before(() => {})

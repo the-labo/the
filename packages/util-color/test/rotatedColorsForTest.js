@@ -3,7 +3,9 @@
  * Test for rotatedColorsFor.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const rotatedColorsFor = require('../lib/rotatedColorsFor')
 
 describe('rotated-colors-for', () => {

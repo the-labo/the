@@ -6,7 +6,9 @@
 const { walk } = require('@the-/ast')
 
 const isRequireCall = (call) => {
-  const arg = call.arguments[0]
+  const {
+    arguments: [arg],
+  } = call
   return call.callee.name === 'require' && arg && arg.type === 'StringLiteral'
 }
 

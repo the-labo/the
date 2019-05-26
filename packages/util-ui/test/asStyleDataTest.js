@@ -3,7 +3,9 @@
  * Test for asStyleData.
  * Runs with mocha.
  */
-const { deepEqual, ok } = require('assert').strict
+const {
+  strict: { deepEqual, ok },
+} = require('assert')
 const asStyleData = require('../lib/asStyleData')
 
 describe('as-style-data', () => {

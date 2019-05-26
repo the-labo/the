@@ -3,7 +3,9 @@
  * Test for processJSImport.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const processJSImport = require('../lib/processors/processJSImport')
 
 describe('process-j-s-import', () => {

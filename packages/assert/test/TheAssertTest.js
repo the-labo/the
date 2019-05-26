@@ -3,7 +3,9 @@
  * Test for TheAssert.
  * Runs with mocha.
  */
-const { doesNotThrow, ok } = require('assert').strict
+const {
+  strict: { doesNotThrow, ok },
+} = require('assert')
 const TheAssert = require('../lib/TheAssert')
 
 describe('the-assert', () => {

@@ -3,7 +3,9 @@
  * Test for TheLoc.
  * Runs with mocha.
  */
-const { deepEqual, doesNotThrow, equal, ok } = require('assert').strict
+const {
+  strict: { deepEqual, doesNotThrow, equal, ok },
+} = require('assert')
 const TheLoc = require('../lib/TheLoc')
 
 describe('the-loc', () => {

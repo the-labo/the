@@ -3,9 +3,11 @@
  * Test for TheHtmlStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheHtmlStyle = require('../shim/TheHtmlStyle').default
+const { default: TheHtmlStyle } = require('../shim/TheHtmlStyle')
 
 describe('the-html-style', () => {
   before(() => {})

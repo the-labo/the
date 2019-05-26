@@ -3,7 +3,9 @@
  * Test for propRule.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const fs = require('fs')
 const propRule = require('../lib/rules/propRule')
 

@@ -17,7 +17,7 @@ function channelMix(Class) {
     }
 
     receiveDataChannel(channel, { from }) {
-      const channelName = channel.label
+      const { label: channelName } = channel
       const isMeta = /^@@/.test(channelName)
       if (isMeta) {
         return

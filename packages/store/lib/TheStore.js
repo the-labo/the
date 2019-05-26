@@ -17,7 +17,7 @@ const {
 } = require('bredux')
 const { get } = require('bwindow')
 const { flatten } = require('objnest')
-const theAssert = require('@the-/assert').create
+const { create: theAssert } = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
 const { scopes } = require('@the-/scope')
 const helpers = require('./helpers')

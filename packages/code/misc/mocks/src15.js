@@ -2,7 +2,9 @@
 const { createChannels } = require('drone-scope-channels')
 const processName = require('./processName')
 const { FULL, THUMBNAIL } = processName
-const { CHANNEL_SIZE } = process.env
+const {
+  env: { CHANNEL_SIZE },
+} = process
 if (!CHANNEL_SIZE) {
   throw new Error('Env var CHANNEL_SIZE is required.')
 }

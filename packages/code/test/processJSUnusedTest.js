@@ -3,7 +3,9 @@
  * Test for processJSUnused.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const processJSUnused = require('../lib/processors/processJSUnused')
 
 describe('process-j-s-unused', () => {

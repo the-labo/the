@@ -3,9 +3,11 @@
  * Test for TheCamStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheCamStyle = require('../shim/TheCamStyle').default
+const { default: TheCamStyle } = require('../shim/TheCamStyle')
 
 describe('the-cam-style', () => {
   before(() => {})

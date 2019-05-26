@@ -3,9 +3,11 @@
  * Test for TheToastGroup.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheToastGroup = require('../shim/TheToastGroup').default
+const { default: TheToastGroup } = require('../shim/TheToastGroup')
 
 describe('the-toast-group', () => {
   before(() => {})

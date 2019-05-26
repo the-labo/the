@@ -10,7 +10,7 @@ TheStyle.theme.TEXT_COLOR = '#555'
 
 class ExampleComponent extends React.PureComponent {
   render() {
-    let styles = TheStyle.styles({
+    const styles = TheStyle.styles({
       body: {
         backgroundColor: 'white',
         color: '#555',

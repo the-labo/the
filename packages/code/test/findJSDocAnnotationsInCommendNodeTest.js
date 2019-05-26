@@ -3,7 +3,9 @@
  * Test for findJSDocAnnotationsInCommendNode.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const findJSDocAnnotationsInCommendNode = require('../lib/ast/nodes/findJSDocAnnotationsInCommendNode')
 
 describe('find-js-doc-annotations-in-commend-node', () => {

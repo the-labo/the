@@ -3,7 +3,9 @@
  * Test for sumReducer.
  * Runs with mocha.
  */
-const { deepEqual } = require('assert').strict
+const {
+  strict: { deepEqual },
+} = require('assert')
 const sumReducer = require('../lib/sumReducer')
 
 describe('sum-reducer', () => {

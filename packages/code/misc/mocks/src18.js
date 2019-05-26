@@ -4,7 +4,9 @@
 
 const { copyAsync, copyDirAsync } = require('asfs')
 const { spawnSync } = require('child_process')
-const { chmod, readFile, stat, unlink, writeFile } = require('fs').promises
+const {
+  promises: { chmod, readFile, stat, unlink, writeFile },
+} = require('fs')
 const path = require('path')
 const rimraf = require('rimraf')
 const transporting = require('./transporting')

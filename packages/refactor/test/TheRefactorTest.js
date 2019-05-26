@@ -4,7 +4,9 @@
  * Runs with mocha.
  */
 const { mkdirpAsync, statAsync, writeFileAsync } = require('asfs')
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const path = require('path')
 const TheRefactor = require('../lib/TheRefactor')
 

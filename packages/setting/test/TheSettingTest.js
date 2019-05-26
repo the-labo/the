@@ -3,7 +3,9 @@
  * Test for TheSetting.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const TheSetting = require('../lib/TheSetting')
 
 describe('the-setting', function() {

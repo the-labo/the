@@ -3,7 +3,9 @@
  * Test for ScopeScope.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const { TheStore } = require('@the-/store')
 const NumberScope = require('../lib/scopes/NumberScope')
 const ScopeScope = require('../lib/scopes/ScopeScope')

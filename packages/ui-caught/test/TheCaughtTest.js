@@ -3,9 +3,11 @@
  * Test for TheCaught.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheCaught = require('../shim/TheCaught').default
+const { default: TheCaught } = require('../shim/TheCaught')
 
 describe('the-caught', () => {
   before(() => {})

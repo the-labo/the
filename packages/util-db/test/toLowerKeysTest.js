@@ -3,7 +3,9 @@
  * Test for toLowerKeys.
  * Runs with mocha.
  */
-const { deepEqual } = require('assert').strict
+const {
+  strict: { deepEqual },
+} = require('assert')
 const toLowerKeys = require('../lib/toLowerKeys')
 
 describe('to-lower-keys', () => {

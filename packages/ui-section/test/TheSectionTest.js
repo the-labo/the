@@ -3,9 +3,11 @@
  * Test for TheSection.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheSection = require('../shim/TheSection').default
+const { default: TheSection } = require('../shim/TheSection')
 
 describe('the-section', () => {
   before(() => {})

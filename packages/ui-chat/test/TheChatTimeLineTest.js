@@ -3,9 +3,11 @@
  * Test for TheChatTimeLine.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheChatTimeLine = require('../shim/TheChatTimeLine').default
+const { default: TheChatTimeLine } = require('../shim/TheChatTimeLine')
 
 describe('the-chat-time-line', () => {
   before(() => {})

@@ -3,7 +3,9 @@
  * Test for ThePS.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const ThePS = require('../lib/ThePS')
 
 describe('the-ps', () => {

@@ -3,7 +3,9 @@
  * Test for processJSDoc.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const processJSDoc = require('../lib/processors/processJSDoc')
 
 describe('process-js-doc', () => {

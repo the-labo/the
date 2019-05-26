@@ -98,7 +98,9 @@ function exportImportMix(Class) {
           )
           const knowns = []
           const unknowns = []
-          for (let { attributes, id } of decodedLines) {
+          for (const decodedLine of decodedLines) {
+            let { attributes } = decodedLine
+            const { id } = decodedLine
             attributes = deserialize.all(attributes)
             const known = await resource.one(id)
             if (known) {

@@ -3,9 +3,11 @@
  * Test for TheRouteStack.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheRouteStack = require('../shim/TheRouteStack').default
+const { default: TheRouteStack } = require('../shim/TheRouteStack')
 
 describe('the-route-stack', () => {
   before(() => {})

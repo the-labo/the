@@ -24,7 +24,9 @@ function processJSXAttribute(content, options = {}) {
     const { get, replace, swap } = contentAccess(content)
 
     function removeDuplicateAttributes(elm) {
-      const { attributes } = elm.openingElement
+      const {
+        openingElement: { attributes },
+      } = elm
       const knownNames = new Set()
       for (let i = attributes.length - 1; i >= 0; i--) {
         const attribute = attributes[i]
@@ -32,7 +34,9 @@ function processJSXAttribute(content, options = {}) {
         if (skip) {
           continue
         }
-        const { name } = attribute.name
+        const {
+          name: { name },
+        } = attribute
         if (knownNames.has(name)) {
           const prev = attributes[i - 1]
           const start = prev ? prev.end : attribute.start - 1
@@ -52,7 +56,9 @@ function processJSXAttribute(content, options = {}) {
           continue
         }
         const { properties } = argument
-        const expandable = properties.some((property) => !property.computed)
+        const expandable = properties.some(
+          (property) => !property.computed && !!property.value,
+        )
         if (!expandable) {
           continue
         }
@@ -67,6 +73,9 @@ function processJSXAttribute(content, options = {}) {
                   property.end,
                 ])}}`
               }
+              if (property.type === NodeTypes.SpreadElement) {
+                return `{...${property.argument.name}}`
+              }
               const valueContent = get([value.start, value.end])
               if (computed) {
                 return `{...{[${key.name}]:${valueContent}}}`
@@ -79,7 +88,9 @@ function processJSXAttribute(content, options = {}) {
     }
 
     function swapAttributes(elm) {
-      const { attributes } = elm.openingElement
+      const {
+        openingElement: { attributes },
+      } = elm
       if (attributes.length === 0) {
         return
       }

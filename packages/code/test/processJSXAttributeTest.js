@@ -3,7 +3,9 @@
  * Test for processJSXAttribute.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const processJSXAttribute = require('../lib/processors/processJSXAttribute')
 
 describe('process-j-s-x-attribute', () => {
@@ -47,6 +49,13 @@ describe('process-j-s-x-attribute', () => {
       `
         const a = <div a={b} className='d' href='javascript:void(0)' id='hoge'></div>
       `,
+    )
+  })
+
+  it('Nested destructuring', async () => {
+    equal(
+      await processJSXAttribute('<div {...{...a,b}}/>'),
+      '<div {...a} b={b}/>',
     )
   })
 })

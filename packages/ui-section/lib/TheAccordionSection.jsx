@@ -113,7 +113,9 @@ class TheAccordionSection extends React.Component {
   toggleOpen() {
     const open = !this.state.open
     this.setState({ open })
-    const { onToggle } = this.props
+    const {
+      props: { onToggle },
+    } = this
     onToggle && onToggle(open)
   }
 }

@@ -164,7 +164,7 @@ class TheClient extends TheClientBase {
 
   async close() {
     this._closed = true
-    const socket = this._socket
+    const { _socket: socket } = this
     if (socket) {
       socket.close()
     }
@@ -200,7 +200,7 @@ class TheClient extends TheClientBase {
         if (ok) {
           resolve(data)
         } else {
-          const e = errors[0]
+          const [e] = errors
           reject(e.message || e)
         }
       }
@@ -244,7 +244,7 @@ class TheClient extends TheClientBase {
   async newSocket() {
     this.assertNotClosed()
     const query = qs.stringify(this.scope)
-    const ioURL = new URL(`${NAMESPACE}?${query}`, this.baseUrl).href
+    const { href: ioURL } = new URL(`${NAMESPACE}?${query}`, this.baseUrl)
     const socket = io(ioURL, {
       forceNew: this._forceNewSocket,
     })
@@ -356,7 +356,7 @@ class TheClient extends TheClientBase {
   async useAll(options = {}) {
     const serverInfo = await this.serverInfo()
     const controllers = {}
-    const controllerSpecs = serverInfo.controllers
+    const { controllers: controllerSpecs } = serverInfo
     for (const { methods, name } of controllerSpecs) {
       this.specs[name] = { methods, name }
       controllers[name] = await this.use(name, options)

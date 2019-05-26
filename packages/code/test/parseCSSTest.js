@@ -3,7 +3,9 @@
  * Test for parseCSS.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const parseCSS = require('../lib/parsers/parseCSS')
 
 describe('parse-c-s-s', () => {

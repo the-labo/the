@@ -3,7 +3,9 @@
  * Test for seatAccess.
  * Runs with mocha.
  */
-const { deepEqual, equal } = require('assert').strict
+const {
+  strict: { deepEqual, equal },
+} = require('assert')
 const theSeat = require('@the-/seat')
 const seatAccess = require('../lib/seatAccess')
 

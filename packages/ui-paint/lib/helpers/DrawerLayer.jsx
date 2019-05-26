@@ -89,7 +89,9 @@ class DrawerLayer {
 
   setUp({ config, height, width, x, y }) {
     this.canvasAccess.setSize({ height, width })
-    const { ctx } = this.canvasAccess
+    const {
+      canvasAccess: { ctx },
+    } = this
     ctx.save()
     ctx.moveTo(x, y)
     ctx.beginPath()
@@ -98,7 +100,9 @@ class DrawerLayer {
   }
 
   tearDown() {
-    const { ctx } = this.canvasAccess
+    const {
+      canvasAccess: { ctx },
+    } = this
     ctx.restore()
     this.canvasAccess.clear()
   }

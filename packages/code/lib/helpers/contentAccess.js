@@ -13,7 +13,7 @@ function contentAccess(content) {
   return {
     enclosedRange: (range, options = {}) => {
       const { left = '(', right = ')' } = options
-      let leftIndex = range[0]
+      let [leftIndex] = range
       while (leftIndex >= 0) {
         const hit = content.substr(leftIndex, left.length) === left
         if (hit) {
@@ -21,7 +21,7 @@ function contentAccess(content) {
         }
         leftIndex--
       }
-      let rightIndex = range[1]
+      let [, rightIndex] = range
       while (rightIndex <= content.length) {
         const hit = content.substr(rightIndex, right.length) === right
         if (hit) {
@@ -42,7 +42,8 @@ function contentAccess(content) {
       column -
       1,
     rangeOf: (declaration) => {
-      let { end, loc, start, trailingComments } = declaration
+      let { end } = declaration
+      const { loc, start, trailingComments } = declaration
       const comments = (trailingComments || []).filter(
         (comment) => comment.loc.start.line === loc.end.line,
       )

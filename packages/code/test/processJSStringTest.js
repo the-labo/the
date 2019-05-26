@@ -3,7 +3,9 @@
  * Test for processJSString.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const processJSString = require('../lib/processors/processJSString')
 
 describe('process-js-string', () => {

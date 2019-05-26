@@ -3,9 +3,11 @@
  * Test for TheMapMarker.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheMapMarker = require('../shim/TheMapMarker').default
+const { default: TheMapMarker } = require('../shim/TheMapMarker')
 
 describe('the-map-marker', () => {
   before(() => {})

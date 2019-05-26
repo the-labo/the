@@ -58,8 +58,12 @@ class TheFlick extends React.Component {
   }
 
   changeIndexTo(nextIndex) {
-    const { activeIndex, onChange } = this.props
-    const body = this.bodyRef.current
+    const {
+      props: { activeIndex, onChange },
+    } = this
+    const {
+      bodyRef: { current: body },
+    } = this
     if (!body) {
       return
     }
@@ -70,12 +74,16 @@ class TheFlick extends React.Component {
   }
 
   changeToNext() {
-    const { activeIndex } = this.props
+    const {
+      props: { activeIndex },
+    } = this
     this.changeIndexTo(activeIndex + 1)
   }
 
   changeToPrev() {
-    const { activeIndex } = this.props
+    const {
+      props: { activeIndex },
+    } = this
     this.changeIndexTo(activeIndex - 1)
   }
 
@@ -101,7 +109,7 @@ class TheFlick extends React.Component {
     if (shouldResize) {
       this.resize()
     }
-    const nextIndex = props.activeIndex
+    const { activeIndex: nextIndex } = props
     const updateNextIndex =
       nextIndex === null || prevProps.activeIndex !== nextIndex
     if (updateNextIndex) {
@@ -117,7 +125,9 @@ class TheFlick extends React.Component {
   }
 
   getBounds() {
-    const { activeIndex, images } = this.props
+    const {
+      props: { activeIndex, images },
+    } = this
     const bounds = { bottom: 0, top: 0 }
     if (activeIndex === 0) {
       bounds.right = 20
@@ -129,16 +139,22 @@ class TheFlick extends React.Component {
   }
 
   handleClose() {
-    const { onClose } = this.props
+    const {
+      props: { onClose },
+    } = this
     onClose && onClose()
   }
 
   handleDragDrag(e, data) {
-    const body = this.bodyRef.current
+    const {
+      bodyRef: { current: body },
+    } = this
     if (!body) {
       return
     }
-    const { activeIndex } = this.props
+    const {
+      props: { activeIndex },
+    } = this
     const { x } = data
     const amount = this.moveAmountFor(x)
     const nextIndex = activeIndex + amount
@@ -157,7 +173,9 @@ class TheFlick extends React.Component {
   }
 
   handleDragStop(e, data) {
-    const body = this.bodyRef.current
+    const {
+      bodyRef: { current: body },
+    } = this
     if (!body) {
       return
     }
@@ -177,10 +195,14 @@ class TheFlick extends React.Component {
   }
 
   moveAmountFor(x) {
-    const body = this.bodyRef.current
+    const {
+      bodyRef: { current: body },
+    } = this
     const threshold = Math.min(80, body.offsetWidth / 2)
-    const { activeIndex, images } = this.props
-    const count = images.length
+    const {
+      props: { activeIndex, images },
+    } = this
+    const { length: count } = images
     const toLeft = threshold < x && 0 < activeIndex
     if (toLeft) {
       return -1
@@ -217,7 +239,7 @@ class TheFlick extends React.Component {
       spinning,
       title,
     } = props
-    const count = images.length
+    const { length: count } = images
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}
@@ -315,11 +337,13 @@ class TheFlick extends React.Component {
   }
 
   resize() {
-    const body = this.bodyRef.current
+    const {
+      bodyRef: { current: body },
+    } = this
     if (!body) {
       return
     }
-    const bodyWidth = body.offsetWidth
+    const { offsetWidth: bodyWidth } = body
     if (bodyWidth === 0) {
       return
     }

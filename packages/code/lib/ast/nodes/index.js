@@ -26,9 +26,11 @@ const findRequireDeclarationOnProgramNode_ = require('./findRequireDeclarationOn
 const mergeDuplicateImportOnProgramNode_ = require('./mergeDuplicateImportOnProgramNode')
 const mergeStringConcatenateOnBinaryExpressionNode_ = require('./mergeStringConcatenateOnBinaryExpressionNode')
 const modifyNodeDeprecatedOnRequireDeclaration_ = require('./modifyNodeDeprecatedOnRequireDeclaration')
+const modifyToDestructorOnDeclarationNode_ = require('./modifyToDestructorOnDeclarationNode')
 const normalizeBinaryExpressionNode_ = require('./normalizeBinaryExpressionNode')
 const normalizeFunctionReturnOnFunctionNode_ = require('./normalizeFunctionReturnOnFunctionNode')
 const normalizeJSDocAnnotationsOnCommentNode_ = require('./normalizeJSDocAnnotationsOnCommentNode')
+const normalizeKindOnVariableDeclarationNode_ = require('./normalizeKindOnVariableDeclarationNode')
 const normalizeSrcPathOnImportDeclarationNode_ = require('./normalizeSrcPathOnImportDeclarationNode')
 const normalizeSrcPathOnRequireArgumentNode_ = require('./normalizeSrcPathOnRequireArgumentNode')
 const normalizeVariableDeclaratorOnStatementNode_ = require('./normalizeVariableDeclaratorOnStatementNode')
@@ -59,9 +61,11 @@ exports.findRequireDeclarationOnProgramNode = findRequireDeclarationOnProgramNod
 exports.mergeDuplicateImportOnProgramNode = mergeDuplicateImportOnProgramNode_
 exports.mergeStringConcatenateOnBinaryExpressionNode = mergeStringConcatenateOnBinaryExpressionNode_
 exports.modifyNodeDeprecatedOnRequireDeclaration = modifyNodeDeprecatedOnRequireDeclaration_
+exports.modifyToDestructorOnDeclarationNode = modifyToDestructorOnDeclarationNode_
 exports.normalizeBinaryExpressionNode = normalizeBinaryExpressionNode_
 exports.normalizeFunctionReturnOnFunctionNode = normalizeFunctionReturnOnFunctionNode_
 exports.normalizeJSDocAnnotationsOnCommentNode = normalizeJSDocAnnotationsOnCommentNode_
+exports.normalizeKindOnVariableDeclarationNode = normalizeKindOnVariableDeclarationNode_
 exports.normalizeSrcPathOnImportDeclarationNode = normalizeSrcPathOnImportDeclarationNode_
 exports.normalizeSrcPathOnRequireArgumentNode = normalizeSrcPathOnRequireArgumentNode_
 exports.normalizeVariableDeclaratorOnStatementNode = normalizeVariableDeclaratorOnStatementNode_
@@ -92,9 +96,11 @@ module.exports = {
   mergeDuplicateImportOnProgramNode: mergeDuplicateImportOnProgramNode_,
   mergeStringConcatenateOnBinaryExpressionNode: mergeStringConcatenateOnBinaryExpressionNode_,
   modifyNodeDeprecatedOnRequireDeclaration: modifyNodeDeprecatedOnRequireDeclaration_,
+  modifyToDestructorOnDeclarationNode: modifyToDestructorOnDeclarationNode_,
   normalizeBinaryExpressionNode: normalizeBinaryExpressionNode_,
   normalizeFunctionReturnOnFunctionNode: normalizeFunctionReturnOnFunctionNode_,
   normalizeJSDocAnnotationsOnCommentNode: normalizeJSDocAnnotationsOnCommentNode_,
+  normalizeKindOnVariableDeclarationNode: normalizeKindOnVariableDeclarationNode_,
   normalizeSrcPathOnImportDeclarationNode: normalizeSrcPathOnImportDeclarationNode_,
   normalizeSrcPathOnRequireArgumentNode: normalizeSrcPathOnRequireArgumentNode_,
   normalizeVariableDeclaratorOnStatementNode: normalizeVariableDeclaratorOnStatementNode_,

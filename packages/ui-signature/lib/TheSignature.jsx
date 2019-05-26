@@ -32,7 +32,9 @@ class TheSignature extends React.Component {
   }
 
   componentDidMount() {
-    const canvas = this.canvasRef.current
+    const {
+      canvasRef: { current: canvas },
+    } = this
     this.pad = new SignaturePad(canvas, {
       onBegin: this.handleBegin,
       onEnd: this.handleEnd,
@@ -46,7 +48,9 @@ class TheSignature extends React.Component {
 
     this.resize()
 
-    const { onPad } = this.props
+    const {
+      props: { onPad },
+    } = this
     onPad && onPad(this.pad)
   }
 
@@ -73,13 +77,17 @@ class TheSignature extends React.Component {
 
   handleBegin() {
     const { pad } = this
-    const { onBegin } = this.props
+    const {
+      props: { onBegin },
+    } = this
     onBegin && onBegin({ pad })
   }
 
   handleEnd() {
     const { pad } = this
-    const { onEnd } = this.props
+    const {
+      props: { onEnd },
+    } = this
     onEnd && onEnd({ pad })
   }
 
@@ -105,7 +113,9 @@ class TheSignature extends React.Component {
   }
 
   resize() {
-    const canvas = this.canvasRef.current
+    const {
+      canvasRef: { current: canvas },
+    } = this
     const { pad } = this
     const skip = !canvas || !pad
     if (skip) {
@@ -128,7 +138,9 @@ class TheSignature extends React.Component {
     if (!pad) {
       return
     }
-    const { color } = this.props
+    const {
+      props: { color },
+    } = this
     pad.penColor = color
   }
 }

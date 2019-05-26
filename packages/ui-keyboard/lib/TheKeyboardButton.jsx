@@ -10,12 +10,16 @@ class TheKeyboardButton extends React.Component {
   }
 
   handleClick() {
-    const { onClick, value } = this.props
+    const {
+      props: { onClick, value },
+    } = this
     onClick && onClick(value)
   }
 
   render() {
-    const { value } = this.props
+    const {
+      props: { value },
+    } = this
     return (
       <a
         className={c('the-keyboard-button', {

@@ -3,9 +3,11 @@
  * Test for TheStepBar.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheStepBar = require('../shim/TheStepBar').default
+const { default: TheStepBar } = require('../shim/TheStepBar')
 
 describe('the-step-bar', () => {
   before(() => {})

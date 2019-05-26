@@ -45,7 +45,9 @@ class TheFrame extends React.Component {
   }
 
   handleLoad(e) {
-    const { onLoad } = this.props
+    const {
+      props: { onLoad },
+    } = this
     this.resize()
     this.setState({ loaded: true })
     onLoad && onLoad(e)
@@ -87,7 +89,9 @@ class TheFrame extends React.Component {
   }
 
   resize() {
-    const iframe = this.iframeRef.current
+    const {
+      iframeRef: { current: iframe },
+    } = this
     if (!iframe) {
       return
     }
@@ -95,7 +99,7 @@ class TheFrame extends React.Component {
     if (!document) {
       return
     }
-    const body = document.body
+    const { body } = document
     if (!body) {
       return
     }
@@ -103,7 +107,9 @@ class TheFrame extends React.Component {
   }
 
   async load(src) {
-    const { embed } = this.props
+    const {
+      props: { embed },
+    } = this
     if (embed) {
       await this.loadAsEmbed(src)
     }

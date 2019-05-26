@@ -8,6 +8,8 @@ const {
   constants: { NodeTypes },
   finder,
 } = require('@the-/ast')
+const modifyToDestructorOnDeclarationNode = require('./modifyToDestructorOnDeclarationNode')
+const normalizeKindOnVariableDeclarationNode = require('./normalizeKindOnVariableDeclarationNode')
 
 /** @lends module:@the-/code.ast.nodes.normalizeVariableDeclaratorOnStatementNode */
 function normalizeVariableDeclaratorOnStatementNode(
@@ -39,7 +41,11 @@ function normalizeVariableDeclaratorOnStatementNode(
       continue
     }
     if (declarations.length > 1) {
-      const padding = VariableDeclaration.loc.start.column
+      const {
+        loc: {
+          start: { column: padding },
+        },
+      } = VariableDeclaration
       const prefix = new Array(padding).fill(' ').join('')
       return replace(
         [VariableDeclaration.start, VariableDeclaration.end],
@@ -48,74 +54,20 @@ function normalizeVariableDeclaratorOnStatementNode(
           .join(EOL + prefix),
       )
     }
-    const [declaration] = declarations
-    const { id, init } = declaration
-    const hasAssigned = assignedNames.has(id.name) || updatedNames.has(id.name)
-    const isLet = kind === 'let'
-    const isVar = kind === 'var'
-    const shouldConst =
-      (isLet || isVar) && id.type === 'Identifier' && !hasAssigned
-    if (shouldConst) {
-      return replace(
-        [VariableDeclaration.start, declaration.id.start],
-        'const ',
-      )
-    }
-    if (isVar) {
-      return replace([VariableDeclaration.start, declaration.id.start], 'let ')
-    }
 
-    const isMemberAssign = init && init.type === NodeTypes.MemberExpression
-    const shouldObjectDestructure =
-      isMemberAssign &&
-      !init.computed &&
-      init.property.type === NodeTypes.Identifier
-
-    const asDestructor = (specifier) =>
-      replace(
-        [VariableDeclaration.start, VariableDeclaration.end],
-        `${kind} ${specifier} = ${get([init.object.start, init.object.end])}`,
-      )
-
-    if (shouldObjectDestructure) {
-      switch (id.type) {
-        case NodeTypes.ArrayPattern:
-        case NodeTypes.ObjectPattern: {
-          const key = init.property.name
-          const specifier = `{ ${key}: ${get([id.start, id.end])} }`
-          return asDestructor(specifier)
-        }
-        case NodeTypes.Identifier: {
-          const as = id.name
-          const key = init.property.name
-          const specifier = as === key ? `{ ${key} }` : `{ ${key}: ${as} }`
-          return asDestructor(specifier)
-        }
-        default:
-          break
-      }
-    }
-    const shouldArrayDestructure =
-      isMemberAssign &&
-      init.computed &&
-      init.property.type === NodeTypes.NumericLiteral
-    if (shouldArrayDestructure) {
-      const index = init.property.value
-      const filling = new Array(index + 1).fill('').join(', ')
-      switch (id.type) {
-        case NodeTypes.ArrayPattern:
-        case NodeTypes.ObjectPattern: {
-          const specifier = `[ ${filling}${get([id.start, id.end])} ]`
-          return asDestructor(specifier)
-        }
-        case NodeTypes.Identifier: {
-          const as = id.name
-          const specifier = `[ ${filling}${as} ]`
-          return asDestructor(specifier)
-        }
-        default:
-          break
-      }
+    const modified =
+      normalizeKindOnVariableDeclarationNode(VariableDeclaration, {
+        assignedNames,
+        get,
+        replace,
+        updatedNames,
+      }) ||
+      modifyToDestructorOnDeclarationNode(VariableDeclaration, {
+        get,
+        replace,
+      })
+    if (modified) {
+      return modified
     }
   }
 }

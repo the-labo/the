@@ -3,9 +3,11 @@
  * Test for TheMenuStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheMenuStyle = require('../shim/TheMenuStyle').default
+const { default: TheMenuStyle } = require('../shim/TheMenuStyle')
 
 describe('the-menu-style', () => {
   before(() => {})

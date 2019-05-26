@@ -3,7 +3,9 @@
  * Test for processJSDeclaration.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const processJSDeclaration = require('../lib/processors/processJSDeclaration')
 
 describe('process-js-declarations', () => {
@@ -57,6 +59,33 @@ const a = () => {
   return x + y + w + z
 }
 `,
+    )
+  })
+
+  it('Const on object destructure', async () => {
+    equal(
+      await processJSDeclaration('let {a, b} = x;console.log(x, b)'),
+      'const {a, b} = x;console.log(x, b)',
+    )
+    equal(
+      await processJSDeclaration('let {a, b} = x;b=2;console.log(x, b)'),
+      'let {a, b} = x;b=2;console.log(x, b)',
+    )
+    equal(
+      await processJSDeclaration('let {a, b:c} = x;c=3;console.log(x, c)'),
+      'let {a, b:c} = x;c=3;console.log(x, c)',
+    )
+    equal(
+      await processJSDeclaration('let {a, b:d=2} = x;d=3;console.log(x, c)'),
+      'let {a, b:d=2} = x;d=3;console.log(x, c)',
+    )
+    equal(
+      await processJSDeclaration('let {a:{b}} = x;console.log(b)'),
+      'const {a:{b}} = x;console.log(b)',
+    )
+    equal(
+      await processJSDeclaration('let {a:{b}} = x;b=2;console.log(b)'),
+      'let {a:{b}} = x;b=2;console.log(b)',
     )
   })
 

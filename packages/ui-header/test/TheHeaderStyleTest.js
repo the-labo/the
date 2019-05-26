@@ -3,9 +3,11 @@
  * Test for TheHeaderStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheHeaderStyle = require('../shim/TheHeaderStyle').default
+const { default: TheHeaderStyle } = require('../shim/TheHeaderStyle')
 
 describe('the-header-style', () => {
   before(() => {})

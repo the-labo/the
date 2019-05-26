@@ -3,7 +3,9 @@
  * Test for isBase64.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const isBase64 = require('../lib/isBase64')
 
 describe('is-base64', () => {

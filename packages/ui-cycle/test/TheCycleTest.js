@@ -3,9 +3,11 @@
  * Test for TheCycle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheCycle = require('../shim/TheCycle').default
+const { default: TheCycle } = require('../shim/TheCycle')
 
 describe('the-cycle', () => {
   before(() => {})

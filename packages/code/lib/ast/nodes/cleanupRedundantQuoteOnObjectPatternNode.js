@@ -20,7 +20,9 @@ function cleanupRedundantAliasOnObjectPatternNode(ObjectPattern, { replace }) {
     if (property.key.type !== 'StringLiteral') {
       continue
     }
-    const { value } = property.key
+    const {
+      key: { value },
+    } = property
     const canBeIdentifier = /^[a-zA-Z_]*$/.test(value) && value.length > 0
     if (canBeIdentifier) {
       return replace([property.key.start, property.key.end], value)

@@ -3,9 +3,11 @@
  * Test for TheInputSearch.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheInputSearch = require('../shim/TheInputSearch').default
+const { default: TheInputSearch } = require('../shim/TheInputSearch')
 
 describe('the-input-search', () => {
   before(() => {})

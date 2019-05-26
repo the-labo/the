@@ -30,7 +30,8 @@ function debugController(controller) {
         return async function debugWrap(...args) {
           const { controllerName } = controller
           const startAt = new Date()
-          let result, caught
+          let result
+          let caught
           let timeoutTimer = setTimeout(() => {
             const done =
               typeof caught !== 'undefined' || typeof result !== 'undefined'

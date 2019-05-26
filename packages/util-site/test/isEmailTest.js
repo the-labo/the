@@ -3,7 +3,9 @@
  * Test for isEmail.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const isEmail = require('../lib/isEmail')
 
 describe('is-email', () => {

@@ -3,7 +3,9 @@
  * Test for JSDoc.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const JSDoc = require('../lib/JSDoc')
 
 describe('jsdoc', () => {

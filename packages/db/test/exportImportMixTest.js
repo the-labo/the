@@ -4,7 +4,9 @@
  * Runs with mocha.
  */
 const asleep = require('asleep')
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const { TheResource } = require('@the-/resource')
 const TheDB = require('../lib/TheDB')
 
@@ -38,7 +40,9 @@ describe('export-import-mix', function() {
   })
 
   it('Do test', async () => {
-    const { User } = db.resources
+    const {
+      resources: { User },
+    } = db
 
     const DATA_COUNT = 123
 

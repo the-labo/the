@@ -3,7 +3,9 @@
  * Test for TheHash.
  * Runs with mocha.
  */
-const { deepEqual, equal, ok } = require('assert').strict
+const {
+  strict: { deepEqual, equal, ok },
+} = require('assert')
 const TheHash = require('../lib/TheHash')
 
 describe('the-hash', () => {

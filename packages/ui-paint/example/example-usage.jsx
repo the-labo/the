@@ -16,7 +16,9 @@ class ExampleComponent extends React.Component {
   onDrawStart = ({ drawer, snapshot }) => {
     console.log('Drawing started', { drawer, snapshot })
     this.drawers[drawer.id] = drawer
-    const { snapshots } = this.state
+    const {
+      state: { snapshots },
+    } = this
     this.setState({
       snapshots: {
         ...snapshots,
@@ -30,7 +32,9 @@ class ExampleComponent extends React.Component {
   }
 
   undo = async () => {
-    const { snapshots } = this.state
+    const {
+      state: { snapshots },
+    } = this
     for (const [drawerId, drawer] of Object.entries(this.drawers)) {
       const snapshot = (snapshots[drawerId] || []).pop()
       if (!snapshot) {

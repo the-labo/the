@@ -3,9 +3,11 @@
  * Test for TheFlickStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheFlickStyle = require('../shim/TheFlickStyle').default
+const { default: TheFlickStyle } = require('../shim/TheFlickStyle')
 
 describe('the-flick-style', () => {
   before(() => {})

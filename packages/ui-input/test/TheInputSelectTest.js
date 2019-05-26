@@ -3,9 +3,11 @@
  * Test for TheInputSelect.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheInputSelect = require('../shim/TheInputSelect').default
+const { default: TheInputSelect } = require('../shim/TheInputSelect')
 
 describe('the-input-select', () => {
   before(() => {})

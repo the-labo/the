@@ -14,7 +14,9 @@ class TheMapPositionInput extends React.Component {
   }
 
   handleChange({ lat, lng, zoom }) {
-    const { name, onUpdate, value } = this.props
+    const {
+      props: { name, onUpdate, value },
+    } = this
     const isStringBase = typeof value === 'string'
     onUpdate({
       [name]: isStringBase ? [lat, lng, zoom].join(',') : { lat, lng, zoom },
@@ -31,7 +33,9 @@ class TheMapPositionInput extends React.Component {
   }
 
   render() {
-    const { height, id, layers, value, width } = this.props
+    const {
+      props: { height, id, layers, value, width },
+    } = this
     if (!value) {
       return null
     }

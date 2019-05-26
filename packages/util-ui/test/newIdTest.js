@@ -3,7 +3,9 @@
  * Test for newId.
  * Runs with mocha.
  */
-const { notEqual, ok } = require('assert').strict
+const {
+  strict: { notEqual, ok },
+} = require('assert')
 const newId = require('../lib/newId')
 
 describe('new-id', () => {

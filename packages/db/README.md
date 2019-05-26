@@ -135,7 +135,9 @@ db.load(UserResource, 'User')
 
 async function tryExample() {
   // Use the connected resource
-  const { User } = db.resources
+  const {
+    resources: { User },
+  } = db
   const user = await User.create({
     password: 'Super Cool',
     username: 'Black Fire',

@@ -3,9 +3,11 @@
  * Test for TheConditionStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheConditionStyle = require('../shim/TheConditionStyle').default
+const { default: TheConditionStyle } = require('../shim/TheConditionStyle')
 
 describe('the-condition-style', () => {
   before(() => {})

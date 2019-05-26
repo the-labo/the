@@ -3,7 +3,9 @@
  * Test for addUrlQuery.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const addUrlQuery = require('../lib/addUrlQuery')
 
 describe('add-query', () => {

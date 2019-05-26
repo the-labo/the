@@ -4,7 +4,9 @@
  * Runs with mocha.
  */
 const asleep = require('asleep')
-const { deepEqual, ok } = require('assert').strict
+const {
+  strict: { deepEqual, ok },
+} = require('assert')
 const TheStream = require('../lib/TheStream')
 
 describe('the-stream', () => {

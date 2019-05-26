@@ -3,7 +3,9 @@
  * Test for processJSComment.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const processJSComment = require('../lib/processors/processJSComment')
 
 describe('process-comment', () => {

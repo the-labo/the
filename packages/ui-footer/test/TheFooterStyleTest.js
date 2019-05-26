@@ -3,9 +3,11 @@
  * Test for TheFooterStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheFooterStyle = require('../shim/TheFooterStyle').default
+const { default: TheFooterStyle } = require('../shim/TheFooterStyle')
 
 describe('the-footer-style', () => {
   before(() => {})

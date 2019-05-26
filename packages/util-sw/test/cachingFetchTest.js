@@ -3,7 +3,9 @@
  * Test for cachingFetch.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const fetch = require('cross-fetch')
 const injectmock = require('injectmock')
 const cachingFetch = require('../lib/cachingFetch')

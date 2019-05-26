@@ -13,7 +13,9 @@ class TheSignatureInput extends React.Component {
   }
 
   handleEnd({ pad }) {
-    const { name, onEnd, onUpdate } = this.props
+    const {
+      props: { name, onEnd, onUpdate },
+    } = this
 
     onEnd && onEnd({ pad })
     onUpdate &&
@@ -23,7 +25,9 @@ class TheSignatureInput extends React.Component {
   }
 
   render() {
-    const { name, value } = this.props
+    const {
+      props: { name, value },
+    } = this
     return (
       <TheSignature {...this.props} onEnd={this.handleEnd}>
         <input name={name} onChange={noop} type='hidden' value={value || ''} />

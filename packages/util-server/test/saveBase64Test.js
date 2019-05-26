@@ -3,7 +3,9 @@
  * Test for saveBase64Test.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const saveBase64 = require('../lib/saveBase64')
 
 describe('save-base64', () => {

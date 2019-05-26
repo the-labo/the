@@ -3,7 +3,9 @@
  * Test for DataTypes.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const DataTypes = require('../lib/DataTypes')
 
 describe('data-types', () => {

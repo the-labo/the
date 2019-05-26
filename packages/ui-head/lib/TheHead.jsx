@@ -29,7 +29,9 @@ class TheHead extends React.Component {
       return null
     }
     const vQuery = this.getVersionQuery()
-    const { css, js } = this.props
+    const {
+      props: { css, js },
+    } = this
     const fallbackHTML = [
       ...[]
         .concat(css)
@@ -65,7 +67,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
   }
 
   getVersionQuery() {
-    const { version, versionKey } = this.props
+    const {
+      props: { version, versionKey },
+    } = this
     return [versionKey, version].join('=')
   }
 
@@ -217,7 +221,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
   }
 
   urlFor(url) {
-    const { cdn } = this.props
+    const {
+      props: { cdn },
+    } = this
     const vQuery = this.getVersionQuery()
     if (vQuery) {
       url = addQuery(url, vQuery)

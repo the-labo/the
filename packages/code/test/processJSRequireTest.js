@@ -3,7 +3,9 @@
  * Test for processJSRequire.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const processJSRequire = require('../lib/processors/processJSRequire')
 
 describe('process-require', async () => {

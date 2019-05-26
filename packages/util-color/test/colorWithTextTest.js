@@ -3,7 +3,9 @@
  * Test for colorWithText.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const colorWithText = require('../lib/colorWithText')
 
 describe('color-with-text', () => {

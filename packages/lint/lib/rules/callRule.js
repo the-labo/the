@@ -39,7 +39,11 @@ function callRule(config) {
           const { value } = arg
           const key = `/${value.replace(/\./g, '/')}`.replace(/^\/+/, '/')
           const ok = has(targetModule, key) || value in targetModule
-          const { column, line } = expression.loc.start
+          const {
+            loc: {
+              start: { column, line },
+            },
+          } = expression
           !ok &&
             report('Keypath not found', {
               actual: true,

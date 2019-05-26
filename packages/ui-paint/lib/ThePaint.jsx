@@ -29,10 +29,16 @@ class ThePaint extends React.Component {
   }
 
   componentDidMount() {
-    const canvas = this.canvasRef.current
-    const tmpCanvas = this.tmpCanvasRef.current
+    const {
+      canvasRef: { current: canvas },
+    } = this
+    const {
+      tmpCanvasRef: { current: tmpCanvas },
+    } = this
     const drawer = new Drawer(canvas, tmpCanvas, {})
-    const { background, onDrawer } = this.props
+    const {
+      props: { background, onDrawer },
+    } = this
     if (background) {
       void drawer.registerBackground(background)
     }
@@ -51,7 +57,9 @@ class ThePaint extends React.Component {
     {
       const diff = changedProps(prevProps, this.props)
       if ('background' in diff) {
-        const { background } = this.props
+        const {
+          props: { background },
+        } = this
         void drawer.registerBackground(background)
       }
     }
@@ -69,7 +77,9 @@ class ThePaint extends React.Component {
     }
     const pos = this.positionForEvent(e)
     drawer.draw(pos)
-    const { onDraw } = this.props
+    const {
+      props: { onDraw },
+    } = this
     onDraw && onDraw({ drawer, pos })
   }
 
@@ -80,7 +90,9 @@ class ThePaint extends React.Component {
     }
     drawer.end()
     const snapshot = drawer.snapshot()
-    const { onDrawEnd } = this.props
+    const {
+      props: { onDrawEnd },
+    } = this
     onDrawEnd && onDrawEnd({ drawer, pos, snapshot })
   }
 
@@ -92,7 +104,9 @@ class ThePaint extends React.Component {
     const snapshot = drawer.snapshot()
     const pos = this.positionForEvent(e)
     drawer.start(pos)
-    const { onDrawStart } = this.props
+    const {
+      props: { onDrawStart },
+    } = this
     onDrawStart && onDrawStart({ drawer, pos, snapshot })
   }
 
@@ -102,7 +116,9 @@ class ThePaint extends React.Component {
   }
 
   positionForEvent(e) {
-    const canvas = this.canvasRef.current
+    const {
+      canvasRef: { current: canvas },
+    } = this
     if (!canvas) {
       return null
     }
@@ -155,7 +171,9 @@ class ThePaint extends React.Component {
   }
 
   updateDrawer() {
-    const { lineColor, lineWidth, method } = this.props
+    const {
+      props: { lineColor, lineWidth, method },
+    } = this
     const { drawer } = this
     if (!drawer) {
       return

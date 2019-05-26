@@ -41,7 +41,9 @@ const Rules = require('./misc/lint/Rules')
 const Directories = require('./misc/project/Directories')
 const Pondoc = require('./misc/project/Pondoc')
 const migration = require('./server/db/migration')
-const { envify } = browser.transforms
+const {
+  transforms: { envify },
+} = browser
 const { secret, setting } = Local
 const createDB = () => require('./server/db/create').forTask()
 

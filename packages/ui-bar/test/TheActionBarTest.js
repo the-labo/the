@@ -3,9 +3,11 @@
  * Test for TheActionBar.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheActionBar = require('../shim/TheActionBar').default
+const { default: TheActionBar } = require('../shim/TheActionBar')
 
 describe('the-action-bar', () => {
   before(() => {})

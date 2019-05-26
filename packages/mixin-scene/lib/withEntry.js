@@ -22,7 +22,9 @@ const withEntry = asClassMixin((Class) => {
     /** @lends module:@the-/mixin-scene.withEntry~WithEntryMixed */
     {
       dropEntry() {
-        const { entry, entryErrors } = this.scope
+        const {
+          scope: { entry, entryErrors },
+        } = this
         entry.drop()
         entryErrors.drop()
       },
@@ -53,7 +55,9 @@ const withEntry = asClassMixin((Class) => {
        * @returns {Promise<undefined>}
        */
       async processEntry(handler) {
-        const { entryErrors } = this.scope
+        const {
+          scope: { entryErrors },
+        } = this
         entryErrors.drop()
         const values = this.getEntry()
         try {
@@ -79,7 +83,9 @@ const withEntry = asClassMixin((Class) => {
        * @param {Object} newValues
        */
       setEntry(newValues = {}) {
-        const { entry, entryErrors } = this.scope
+        const {
+          scope: { entry, entryErrors },
+        } = this
         const current = this.getEntry()
         let values = flatten({ ...current, ...newValues })
         // TODO Remove legacy
@@ -108,7 +114,9 @@ const withEntry = asClassMixin((Class) => {
        * @param {Object} errors
        */
       setEntryErrors(errors) {
-        const { entryErrors } = this.scope
+        const {
+          scope: { entryErrors },
+        } = this
         entryErrors.set(errors)
       },
     },

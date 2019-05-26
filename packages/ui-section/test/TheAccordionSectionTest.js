@@ -3,9 +3,11 @@
  * Test for TheAccordionSection.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheAccordionSection = require('../shim/TheAccordionSection').default
+const { default: TheAccordionSection } = require('../shim/TheAccordionSection')
 
 describe('the-accordion-section', () => {
   before(() => {})

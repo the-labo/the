@@ -3,7 +3,9 @@
  * Test for TheState.
  * Runs with mocha.
  */
-const { deepEqual, equal, ok } = require('assert').strict
+const {
+  strict: { deepEqual, equal, ok },
+} = require('assert')
 const TheState = require('../lib/TheState')
 
 describe('the-state', () => {

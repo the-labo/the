@@ -1,9 +1,12 @@
-'use strict'
 /**
  * Test for processJSObject.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+/* eslint-disable no-template-curly-in-string */
+'use strict'
+const {
+  strict: { equal },
+} = require('assert')
 const processJSObject = require('../lib/processors/processJSObject')
 
 describe('process-object-property', async () => {

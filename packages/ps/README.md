@@ -60,7 +60,7 @@ Usage
 
 ```javascript
 'use strict'
-const thePS = require('@the-/ps').default
+const { default: thePS } = require('@the-/ps')
 
 async function tryExample() {
   const ps = thePS('var/my-process.pid')

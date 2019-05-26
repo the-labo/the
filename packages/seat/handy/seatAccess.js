@@ -17,7 +17,7 @@ function seatAccess() {
      * @returns {string}
      */
     containerNameFor(name, bytes = 4) {
-      const shortName = name.split('@')[0]
+      const [shortName] = name.split('@')
       return seat.scope('containerNames').acquireString(name, {
         bytes,
         prefix: `${shortName}-`,
@@ -61,7 +61,7 @@ function seatAccess() {
      * @returns {string}
      */
     processNameFor(name, bytes = 4) {
-      const shortName = name.split('@')[0]
+      const [shortName] = name.split('@')
       return seat.scope('processNames').acquireString(name, {
         bytes,
         prefix: `${shortName}-`,

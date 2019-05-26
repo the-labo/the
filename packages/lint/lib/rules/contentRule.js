@@ -30,7 +30,7 @@ function contentRule(config) {
     }
 
     if (maxLines) {
-      const lines = content.split(EOL).length
+      const { length: lines } = content.split(EOL)
       const ok = lines <= maxLines
       !ok &&
         report('Too many lines', {

@@ -3,9 +3,11 @@
  * Test for TheSpin.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheSpin = require('../shim/TheSpin').default
+const { default: TheSpin } = require('../shim/TheSpin')
 
 describe('the-spin', () => {
   before(() => {})

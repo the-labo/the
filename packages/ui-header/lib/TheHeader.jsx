@@ -185,7 +185,7 @@ class TheHeader extends React.Component {
       style,
     } = props
     const { innerHeight } = state
-    const noticeCount = Object.keys(notices || {}).length
+    const { length: noticeCount } = Object.keys(notices || {})
     return (
       <header
         {...htmlAttributesFor(props, { except: ['className', 'style'] })}

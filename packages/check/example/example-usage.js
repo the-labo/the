@@ -1,5 +1,7 @@
 'use strict'
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const { unlessProduction } = require('@the-/check')
 
 async function tryExample() {

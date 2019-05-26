@@ -3,9 +3,11 @@
  * Test for TheChatStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheChatStyle = require('../shim/TheChatStyle').default
+const { default: TheChatStyle } = require('../shim/TheChatStyle')
 
 describe('the-chat-style', () => {
   before(() => {})

@@ -3,7 +3,9 @@
  * Test for TheLint.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const rules = require('../lib/rules')
 const TheLint = require('../lib/TheLint')
 

@@ -3,7 +3,9 @@
  * Test for normalizeString.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const normalizeString = require('../lib/normalizeString')
 
 describe('to-hankaku', () => {

@@ -95,7 +95,9 @@ class TheBin {
 
   async throwIfNotExists() {
     const exists = await this.exists()
-    const { guide } = this.config
+    const {
+      config: { guide },
+    } = this
     if (!exists) {
       const message = [
         `[TheBin]${this.cmd} not exists`,

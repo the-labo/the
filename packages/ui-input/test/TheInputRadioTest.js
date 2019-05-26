@@ -3,9 +3,11 @@
  * Test for TheInputRadio.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheInputRadio = require('../shim/TheInputRadio').default
+const { default: TheInputRadio } = require('../shim/TheInputRadio')
 
 describe('the-input-radio', () => {
   before(() => {})

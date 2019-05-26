@@ -3,7 +3,9 @@
  * Test for processJSON.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const processJSON = require('../lib/processors/processJSON')
 
 describe('process-json', () => {

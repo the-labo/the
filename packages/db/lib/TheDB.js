@@ -107,7 +107,9 @@ class TheDB extends TheDBBase {
       ...hooks,
     })
 
-    const { TheDBLog } = this._resources
+    const {
+      _resources: { TheDBLog },
+    } = this
     TheDBLog.filename = resourceLogFile
     this.startRefreshLoop({ interval: refreshInterval })
     this.startCascadeLink()
@@ -336,7 +338,9 @@ class TheDB extends TheDBBase {
    */
   async drop() {
     const { driver, resources } = this
-    const { database, dialect, storage } = this.env
+    const {
+      env: { database, dialect, storage },
+    } = this
     switch (String(dialect).trim()) {
       case 'mysql': {
         await this.close().catch(() => null)

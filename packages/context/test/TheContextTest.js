@@ -3,12 +3,14 @@
  * Test for TheContext.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const React = require('react')
 const RectDOM = require('react-dom/server')
 const TheContext = require('../lib/TheContext')
 
-const c = React.createElement
+const { createElement: c } = React
 
 describe('the-context', () => {
   before(() => {})

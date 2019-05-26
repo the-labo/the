@@ -19,7 +19,9 @@ function migrateMix(Class) {
      * @returns {Promise<?Object>} Migration result
      */
     async migrate(handlers = {}) {
-      const { TheDBSchema } = this.resources
+      const {
+        resources: { TheDBSchema },
+      } = this
 
       const schema = await TheDBSchema.current()
 
@@ -47,7 +49,9 @@ function migrateMix(Class) {
     }
 
     async updateMigrationVersion(version) {
-      const { TheDBSchema } = this.resources
+      const {
+        resources: { TheDBSchema },
+      } = this
       if (await TheDBSchema.exists({ version })) {
         throw new Error(`Version ${version} already exists!`)
       }

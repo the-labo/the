@@ -3,7 +3,9 @@
  * Test for TheServerRottenError.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const TheServerRottenError = require('../lib/TheServerRottenError')
 
 describe('the-server-rotten-error', () => {

@@ -3,9 +3,11 @@
  * Test for TheHamburgerStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheHamburgerStyle = require('../shim/TheHamburgerStyle').default
+const { default: TheHamburgerStyle } = require('../shim/TheHamburgerStyle')
 
 describe('the-hamburger-style', () => {
   before(() => {})

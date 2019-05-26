@@ -282,7 +282,8 @@ class TheServer extends TheServerBase {
       controller.controllerName || controller.name || moduleName
     this.startKeepTimer(cid, iid, { controllerName })
     await asleep(10 * Math.random())
-    let data, errors
+    let data
+    let errors
     this.rpcInvocations[cid] = this.rpcInvocations[cid] || {}
     this.rpcInvocations[cid][iid] = { iid, methodName, moduleName, socketId }
     try {

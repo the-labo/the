@@ -3,7 +3,9 @@
  * Test for isiOS.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const isiOS = require('../lib/isiOS')
 
 describe('isi-o-s', () => {

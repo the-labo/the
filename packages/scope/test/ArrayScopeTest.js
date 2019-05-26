@@ -3,7 +3,9 @@
  * Test for ArrayScope.
  * Runs with mocha.
  */
-const { deepEqual } = require('assert').strict
+const {
+  strict: { deepEqual },
+} = require('assert')
 const { TheStore } = require('@the-/store')
 const ArrayScope = require('../lib/scopes/ArrayScope')
 

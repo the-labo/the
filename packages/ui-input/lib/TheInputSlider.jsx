@@ -109,7 +109,7 @@ class TheInputSlider extends React.PureComponent {
     if (!barElm) {
       return
     }
-    const w = barElm.offsetWidth
+    const { offsetWidth: w } = barElm
     const handleRadius = this.getHandleRadius()
     const minX = 0 - handleRadius
     const maxX = w - handleRadius

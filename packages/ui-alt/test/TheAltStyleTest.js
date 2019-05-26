@@ -3,9 +3,11 @@
  * Test for TheAltStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheAltStyle = require('../shim/TheAltStyle').default
+const { default: TheAltStyle } = require('../shim/TheAltStyle')
 
 describe('the-alt-style', () => {
   before(() => {})

@@ -3,9 +3,11 @@
  * Test for TheRoot.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheRoot = require('../shim/TheRoot').default
+const { default: TheRoot } = require('../shim/TheRoot')
 
 describe('the-root', () => {
   before(() => {})

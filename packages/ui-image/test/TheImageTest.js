@@ -3,9 +3,11 @@
  * Test for TheImage.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheImage = require('../shim/TheImage').default
+const { default: TheImage } = require('../shim/TheImage')
 
 describe('the-image', () => {
   before(() => {})

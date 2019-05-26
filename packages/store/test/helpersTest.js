@@ -3,7 +3,9 @@
  * Test for helpers.
  * Runs with mocha.
  */
-const { deepEqual } = require('assert').strict
+const {
+  strict: { deepEqual },
+} = require('assert')
 const helpers = require('../lib/helpers')
 
 describe('helpers', () => {

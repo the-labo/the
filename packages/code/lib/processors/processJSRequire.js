@@ -91,7 +91,7 @@ function processJSRequire(content, options = {}) {
 
       // No empty line between require statements
       for (let i = 0; i < sortedByStart.length - 1; i++) {
-        const start = sortedByStart[i].end
+        const { end: start } = sortedByStart[i]
         const end = sortedByStart[i + 1].start - 1
         if (/^\s+$/.test(content.substring(start, end))) {
           return replace([start, end], '')

@@ -3,9 +3,11 @@
  * Test for TheToast.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheToast = require('../shim/TheToast').default
+const { default: TheToast } = require('../shim/TheToast')
 
 describe('the-toast', () => {
   before(() => {})

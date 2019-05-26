@@ -112,7 +112,9 @@ class Drawer {
   start({ x, y }) {
     this.active = true
     const { tmpCanvas } = this
-    const { height, width } = this.canvasAccess
+    const {
+      canvasAccess: { height, width },
+    } = this
     this.tmpLayer = new DrawerLayer(tmpCanvas, {
       method: this.method,
     })

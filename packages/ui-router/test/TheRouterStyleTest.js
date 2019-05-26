@@ -3,9 +3,11 @@
  * Test for TheRouterStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheRouterStyle = require('../shim/TheRouterStyle').default
+const { default: TheRouterStyle } = require('../shim/TheRouterStyle')
 
 describe('the-router-style', () => {
   before(() => {})

@@ -3,7 +3,9 @@
  * Test for ThePassword.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const ThePassword = require('../lib/ThePassword')
 
 describe('the-password', () => {

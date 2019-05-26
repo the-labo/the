@@ -49,7 +49,7 @@ class TheRoute extends React.Component {
     if (disabled) {
       return null
     }
-    const history = routeProps.history
+    const { history } = routeProps
     const active = !!matchPath(history.location.pathname, {
       exact,
       path,
@@ -90,7 +90,9 @@ class TheRoute extends React.Component {
     if (typeof popPath !== 'string') {
       throw new Error(`[TheRoute] Invalid pop path: ${popPath}`)
     }
-    const { gone, ready } = this.state
+    const {
+      state: { gone, ready },
+    } = this
     if (gone || !ready) {
       return
     }

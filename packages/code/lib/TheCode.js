@@ -15,6 +15,8 @@ const p = require('./processors')
 const pkg = require('../package')
 const debug = require('debug')('the:code')
 
+const MB = 1000 * 1000
+
 /** @lends module:@the-/code.TheCode */
 class TheCode {
   constructor(config = {}) {
@@ -42,6 +44,7 @@ class TheCode {
       jsDeclaration = true,
       jsxAttribute = true,
       yaml = true,
+      maxFileSize = 1.5 * MB,
     } = config
     this.processers = {
       [Types.JAVA_SCRIPT]: [
@@ -85,6 +88,7 @@ class TheCode {
     this.cache = new FormatCache(cacheFile, {
       version: pkg.version,
     })
+    this.maxFileSize = maxFileSize
   }
 
   shouldSkipContent(content) {
@@ -169,6 +173,16 @@ class TheCode {
   async shouldSkipFile(filename) {
     const stat = await statAsync(filename).catch(() => null)
     if (!stat) {
+      return false
+    }
+    const tooLarge = stat.size > this.maxFileSize
+    if (tooLarge) {
+      const relativeName = path.relative(process.cwd(), filename)
+      console.warn(
+        `[TheCode] Skipp to large file: ${relativeName} ( ${(
+          stat.size / MB
+        ).toFixed(2)}MB )`,
+      )
       return false
     }
     const canWrite = await canWriteAsync(filename)

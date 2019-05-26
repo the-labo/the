@@ -3,9 +3,11 @@
  * Test for TheCam.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheCam = require('../shim/TheCam').default
+const { default: TheCam } = require('../shim/TheCam')
 
 describe('the-cam', () => {
   before(() => {})

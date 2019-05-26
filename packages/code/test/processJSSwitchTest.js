@@ -3,7 +3,9 @@
  * Test for processJSSwitch.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const processJSSwitch = require('../lib/processors/processJSSwitch')
 
 describe('process-js-switch', () => {

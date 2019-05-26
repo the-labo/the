@@ -3,7 +3,9 @@
  * Test for analyser.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const analyser = require('../lib/analyser')
 const finder = require('../lib/finder')
 const parse = require('../lib/parse')

@@ -3,7 +3,9 @@
  * Test for nameFile.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const nameFile = require('../lib/nameFile')
 
 describe('name-file', () => {

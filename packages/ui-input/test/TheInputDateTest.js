@@ -3,9 +3,11 @@
  * Test for TheInputDate.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheInputDate = require('../shim/TheInputDate').default
+const { default: TheInputDate } = require('../shim/TheInputDate')
 
 describe('the-input-date', () => {
   before(() => {})

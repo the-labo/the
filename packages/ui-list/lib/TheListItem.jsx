@@ -58,7 +58,9 @@ class TheListItem extends React.Component {
   handleThumbnail(e) {
     e.stopPropagation()
     e.preventDefault()
-    const { onThumbnail, thumbnail } = this.props
+    const {
+      props: { onThumbnail, thumbnail },
+    } = this
     onThumbnail && onThumbnail(thumbnail)
   }
 

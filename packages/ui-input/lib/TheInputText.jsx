@@ -62,7 +62,9 @@ class TheInputText extends React.PureComponent {
   }
 
   commitValue() {
-    const { name, onUpdate, parser, value } = this.props
+    const {
+      props: { name, onUpdate, parser, value },
+    } = this
     const committedValue = parser(value)
     onUpdate && onUpdate({ [name]: committedValue || '' })
 
@@ -84,7 +86,9 @@ class TheInputText extends React.PureComponent {
   }
 
   enterCandidate(value) {
-    const { name } = this.props
+    const {
+      props: { name },
+    } = this
     this.handleChange({
       target: {
         name,
@@ -116,20 +120,28 @@ class TheInputText extends React.PureComponent {
   }
 
   handleBlur(e) {
-    const { onBlur } = this.props
+    const {
+      props: { onBlur },
+    } = this
     onBlur && onBlur(e)
     this.commitValue()
   }
 
   handleChange(e) {
-    const { onChange, onUpdate } = this.props
-    const { name, value } = e.target
+    const {
+      props: { onChange, onUpdate },
+    } = this
+    const {
+      target: { name, value },
+    } = e
     onChange && onChange(e)
     onUpdate && onUpdate({ [name]: value || '' })
   }
 
   handleDocumentClick(e) {
-    const elm = this.elmRef.current
+    const {
+      elmRef: { current: elm },
+    } = this
 
     if (!elm) {
       return
@@ -144,11 +156,15 @@ class TheInputText extends React.PureComponent {
     clearTimeout(this._offSuggestionOffTimer)
     this.setState({ suggesting: true })
     this.updateCandidates(-1)
-    const { onFocus, selectOnFocus } = this.props
+    const {
+      props: { onFocus, selectOnFocus },
+    } = this
     onFocus && onFocus(e)
 
     if (selectOnFocus) {
-      const elm = this.elmRef.current
+      const {
+        elmRef: { current: elm },
+      } = this
       if (elm) {
         clearTimeout(this._selectOnFocusTimer)
         this._selectOnFocusTimer = setTimeout(() => {
@@ -159,11 +175,15 @@ class TheInputText extends React.PureComponent {
   }
 
   handleKeyDown(e) {
-    const { onDown, onEnter, onKeyDown, onLeft, onRight, onUp } = this.props
+    const {
+      props: { onDown, onEnter, onKeyDown, onLeft, onRight, onUp },
+    } = this
     switch (e.keyCode) {
       case 13: {
         // Enter
-        const { selectedCandidate } = this.state
+        const {
+          state: { selectedCandidate },
+        } = this
         if (selectedCandidate) {
           this.enterCandidate(selectedCandidate)
         }
@@ -195,18 +215,24 @@ class TheInputText extends React.PureComponent {
   }
 
   handleKeyPress(e) {
-    const { onKeyPress } = this.props
+    const {
+      props: { onKeyPress },
+    } = this
     onKeyPress && onKeyPress(e)
   }
 
   handleKeyUp(e) {
     this.updateCandidates()
-    const { onKeyUp } = this.props
+    const {
+      props: { onKeyUp },
+    } = this
     onKeyUp && onKeyUp(e)
   }
 
   moveCandidateIndex(amount) {
-    const { candidates, selectedCandidate } = this.state
+    const {
+      state: { candidates, selectedCandidate },
+    } = this
     if (!candidates) {
       return
     }
@@ -344,10 +370,14 @@ class TheInputText extends React.PureComponent {
   }
 
   updateCandidates(index) {
-    let { matcher, options, value } = this.props
+    let {
+      props: { matcher, options, value },
+    } = this
     options = normalizeOptions(options)
     value = value && String(value).trim()
-    const { selectedCandidate } = this.state
+    const {
+      state: { selectedCandidate },
+    } = this
     const candidates = Object.keys(options)
       .map((name) => options[name])
       .map((candidate) => String(candidate).trim())

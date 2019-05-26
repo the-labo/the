@@ -19,7 +19,9 @@ class TheCycle extends React.Component {
   }
 
   componentDidMount() {
-    const { onMount, values } = this.props
+    const {
+      props: { onMount, values },
+    } = this
     onMount && onMount()
     debug('onMount')
     const received = cleanup({ ...values })
@@ -27,18 +29,24 @@ class TheCycle extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { values } = this.props
+    const {
+      props: { values },
+    } = this
     this.handleReceive(prevProps.values, values)
   }
 
   componentWillUnmount() {
-    const { onUnmount } = this.props
+    const {
+      props: { onUnmount },
+    } = this
     onUnmount && onUnmount()
     debug('onUnmount')
   }
 
   handleReceive(prevValues, values) {
-    const { onReceive } = this.props
+    const {
+      props: { onReceive },
+    } = this
     const received = prevValues
       ? changedProps(prevValues, values)
       : { ...values }

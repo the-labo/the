@@ -3,9 +3,11 @@
  * Test for TheRepeatableStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheRepeatableStyle = require('../shim/TheRepeatableStyle').default
+const { default: TheRepeatableStyle } = require('../shim/TheRepeatableStyle')
 
 describe('the-repeatable-style', () => {
   before(() => {})

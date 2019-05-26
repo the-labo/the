@@ -3,7 +3,9 @@
  * Test for TheSeed.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const TheSeed = require('../lib/TheSeed')
 
 describe('the-seed', () => {

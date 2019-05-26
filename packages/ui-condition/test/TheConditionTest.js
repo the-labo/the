@@ -3,9 +3,11 @@
  * Test for TheCondition.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheCondition = require('../shim/TheCondition').default
+const { default: TheCondition } = require('../shim/TheCondition')
 
 describe('the-condition', () => {
   before(() => {})

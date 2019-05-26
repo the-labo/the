@@ -3,7 +3,9 @@
  * Test for PrettierConfig.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const PrettierConfig = require('../lib/PrettierConfig')
 
 describe('prettier-config', () => {

@@ -3,7 +3,9 @@
  * Test for isMacOS.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const isMacOS = require('../lib/isMacOS')
 
 describe('is-mac-o-s', () => {

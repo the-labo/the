@@ -34,7 +34,9 @@ function ioMix(Class) {
         },
         [IOEvents.DISCONNECT]: () => {
           if (this.sfuEnabled) {
-            const { sfu } = socket.theRTCState
+            const {
+              theRTCState: { sfu },
+            } = socket
             this.cleanupSFU(sfu.peerIds)
           }
           // TODO mark as gone?
@@ -101,7 +103,9 @@ function ioMix(Class) {
       }
       const namespace = io.of(NAMESPACE)
       namespace.on(IOEvents.CONNECTION, (socket) => {
-        const client = socket.handshake.query
+        const {
+          handshake: { query: client },
+        } = socket
         const { rid } = client
         socket.theRTCState = {
           info: {},
@@ -155,7 +159,9 @@ function ioMix(Class) {
     }
 
     async handleIOClientState(socket, state = {}) {
-      const { roomName } = socket.theRTCState
+      const {
+        theRTCState: { roomName },
+      } = socket
       socket.theRTCState = {
         ...socket.theRTCState,
         ...state,
@@ -195,7 +201,9 @@ function ioMix(Class) {
     }
 
     async handleIORoomJoin(socket, roomName) {
-      const currentRoom = socket.theRTCState.roomName
+      const {
+        theRTCState: { roomName: currentRoom },
+      } = socket
       if (currentRoom) {
         if (currentRoom === roomName) {
           console.warn(

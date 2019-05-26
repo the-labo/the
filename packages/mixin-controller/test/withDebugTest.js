@@ -3,7 +3,9 @@
  * Test for withDebug.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const withDebug = require('../lib/withDebug')
 
 describe('with-debug', () => {

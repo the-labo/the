@@ -3,7 +3,9 @@
  * Test for ThePolyfill.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const ThePolyfill = require('../lib/ThePolyfill')
 
 describe('the-polyfill', () => {

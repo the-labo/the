@@ -3,9 +3,11 @@
  * Test for TheFlick.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheFlick = require('../shim/TheFlick').default
+const { default: TheFlick } = require('../shim/TheFlick')
 
 describe('the-flick', () => {
   before(() => {})

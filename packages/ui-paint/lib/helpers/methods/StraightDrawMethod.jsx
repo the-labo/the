@@ -11,7 +11,7 @@ function StraightDrawMethod(ctx, points) {
     return
   }
   ctx.beginPath()
-  const start = points[0]
+  const [start] = points
   const last = points[points.length - 1]
   ctx.moveTo(start.x, start.y)
   ctx.lineTo(last.x, last.y)

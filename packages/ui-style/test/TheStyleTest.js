@@ -3,9 +3,11 @@
  * Test for TheStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheStyle = require('../shim/TheStyle').default
+const { default: TheStyle } = require('../shim/TheStyle')
 
 describe('the-style', () => {
   before(() => {})

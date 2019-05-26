@@ -30,10 +30,12 @@ class ExampleComponent extends React.Component {
     console.log('bounds changed', { east, north, south, west })
   }
   handleClick = ({ lat, lng }) => {
-    const { markers } = this.state
+    const {
+      state: { markers },
+    } = this
     console.log('Map clicked', { lat, lng })
-    let name = `m${String(markers.length + 1).padStart(2, '0')}`
-    let markerValues = {
+    const name = `m${String(markers.length + 1).padStart(2, '0')}`
+    const markerValues = {
       lat,
       lng,
       node: (
@@ -174,7 +176,9 @@ class ExampleComponent extends React.Component {
   }
 
   setMarker(key, values) {
-    const { markers } = this.state
+    const {
+      state: { markers },
+    } = this
     this.setState({
       markers: [...markers.filter((m) => m.key !== key), { key, ...values }],
     })

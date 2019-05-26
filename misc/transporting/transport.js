@@ -5,13 +5,8 @@ const aglob = require('aglob')
 const { copyAsync, copyDirAsync } = require('asfs')
 const { spawnSync } = require('child_process')
 const {
-  chmod,
-  readFile,
-  rename,
-  stat,
-  unlink,
-  writeFile,
-} = require('fs').promises
+  promises: { chmod, readFile, rename, stat, unlink, writeFile },
+} = require('fs')
 const { EOL } = require('os')
 const path = require('path')
 const rimraf = require('rimraf')

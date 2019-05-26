@@ -6,7 +6,9 @@
 const aport = require('aport')
 const arequest = require('arequest')
 const asleep = require('asleep')
-const { deepEqual, equal, ok } = require('assert').strict
+const {
+  strict: { deepEqual, equal, ok },
+} = require('assert')
 const msgpack = require('msgpack-lite')
 const React = require('react')
 const socketIOClient = require('socket.io-client')

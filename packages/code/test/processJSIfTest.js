@@ -3,7 +3,9 @@
  * Test for processJSIf.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const processJSIf = require('../lib/processors/processJSIf')
 
 describe('process-js-if', () => {

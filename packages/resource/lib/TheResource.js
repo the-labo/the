@@ -64,7 +64,7 @@ class TheResource extends TheResourceBase {
     if (!id) {
       throw new Error('[TheResource.refOf] id is required')
     }
-    const { $ref } = arguments[0]
+    const [{ $ref }] = arguments
     if ($ref) {
       return $ref
     }

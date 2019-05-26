@@ -3,7 +3,9 @@
  * Test for fileTypeOf.
  * Runs with mocha.
  */
-const { deepEqual } = require('assert').strict
+const {
+  strict: { deepEqual },
+} = require('assert')
 const fileTypeOf = require('../lib/fileTypeOf')
 
 describe('file-type-of', () => {

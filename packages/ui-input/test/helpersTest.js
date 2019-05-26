@@ -3,9 +3,11 @@
  * Test for helpers.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const helpers = require('../shim/helpers').default
+const { default: helpers } = require('../shim/helpers')
 
 describe('helpers', () => {
   before(() => {})

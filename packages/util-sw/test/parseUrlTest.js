@@ -3,7 +3,9 @@
  * Test for parseUrl.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const parseUrl = require('../lib/parseUrl')
 
 describe('parse-url', () => {

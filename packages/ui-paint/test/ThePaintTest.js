@@ -3,9 +3,11 @@
  * Test for ThePaint.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const ThePaint = require('../shim/ThePaint').default
+const { default: ThePaint } = require('../shim/ThePaint')
 
 describe('the-paint', () => {
   before(() => {})

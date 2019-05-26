@@ -22,7 +22,9 @@ class TheInputSearch extends React.PureComponent {
     clearTimeout(this._focusTimer)
   }
   handleFocus(e) {
-    const { onFocus } = this.props
+    const {
+      props: { onFocus },
+    } = this
     onFocus && onFocus(e)
     this.toggleOpen(true)
   }
@@ -64,7 +66,9 @@ class TheInputSearch extends React.PureComponent {
     this.setState({ open })
     clearTimeout(this._focusTimer)
     this._focusTimer = setTimeout(() => {
-      const input = this.inputRef.current
+      const {
+        inputRef: { current: input },
+      } = this
       if (open && input) {
         input.focus()
       }

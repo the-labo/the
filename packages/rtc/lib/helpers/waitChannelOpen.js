@@ -10,7 +10,7 @@ async function waitChannelOpen(channel, options = {}) {
       resolve(channel)
       clearTimeout(timeoutTimer)
     }
-    const channelName = channel.label
+    const { label: channelName } = channel
     channel.addEventListener('open', onOpen)
     const timeoutTimer = setTimeout(
       () =>

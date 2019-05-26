@@ -3,7 +3,9 @@
  * Test for TheMetrics.
  * Runs with mocha.
  */
-const { deepStrictEqual: deepEqual } = require('assert').strict
+const {
+  strict: { deepStrictEqual: deepEqual },
+} = require('assert')
 const TheMetrics = require('../lib/TheMetrics')
 
 describe('the-metrics', () => {

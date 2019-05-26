@@ -71,7 +71,7 @@ class SFUProxyEdge {
   }
 
   registerChannel(channel) {
-    const channelName = channel.label
+    const { label: channelName } = channel
     if (this.channels[channelName]) {
       throw new Error(
         `[${this.constructor.name}] Channel already exists: ${channelName}`,
@@ -103,7 +103,7 @@ class SFUProxyEdge {
 
   async receiveCounterpartChannel(counterpartChannel, options = {}) {
     const { retry = 5, retryInterval = 100 } = options
-    const channelName = counterpartChannel.label
+    const { label: channelName } = counterpartChannel
     const channel = this.channels[channelName]
     if (!channel) {
       const failed = retry <= 0

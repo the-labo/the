@@ -4,7 +4,9 @@
  * Runs with mocha.
  */
 const asleep = require('asleep')
-const { deepEqual, equal, ok } = require('assert').strict
+const {
+  strict: { deepEqual, equal, ok },
+} = require('assert')
 const TheQueue = require('../lib/TheQueue')
 
 describe('the-queue', () => {

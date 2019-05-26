@@ -3,7 +3,9 @@
  * Test for processJSBlock.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const processJSBlock = require('../lib/processors/processJSBlock')
 
 describe('process-js-block', () => {

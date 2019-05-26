@@ -3,7 +3,9 @@
  * Test for isPhoneNumber.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const isPhoneNumber = require('../lib/isPhoneNumber')
 
 describe('is-phone-number', () => {

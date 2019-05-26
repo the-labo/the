@@ -7,7 +7,7 @@
  * @param {string} name - Name of state
  * @param {Object} config - Scope config
  */
-const theAssert = require('@the-/assert').create
+const { create: theAssert } = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
 
 const assert = theAssert('the:scope')

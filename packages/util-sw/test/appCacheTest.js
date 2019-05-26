@@ -3,7 +3,9 @@
  * Test for appCache.
  * Runs with mocha.
  */
-const { deepEqual } = require('assert').strict
+const {
+  strict: { deepEqual },
+} = require('assert')
 const injectmock = require('injectmock')
 const appCache = require('../lib/appCache')
 

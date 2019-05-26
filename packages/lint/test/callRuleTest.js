@@ -3,7 +3,9 @@
  * Test for callRule.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const fs = require('fs')
 const callRule = require('../lib/rules/callRule')
 

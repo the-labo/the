@@ -35,7 +35,9 @@ class TheRouter extends React.Component {
   }
 
   componentDidMount() {
-    const { forceRefresh, history } = this.props
+    const {
+      props: { forceRefresh, history },
+    } = this
     if (history) {
       this.unlisten = history.listen(() => {
         if (forceRefresh) {
@@ -46,7 +48,9 @@ class TheRouter extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { history } = this.props
+    const {
+      props: { history },
+    } = this
 
     if (history) {
       const historyChanged = prevProps.history && prevProps.history !== history

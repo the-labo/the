@@ -3,9 +3,11 @@
  * Test for TheIcon.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheIcon = require('../shim/TheIcon').default
+const { default: TheIcon } = require('../shim/TheIcon')
 
 describe('the-icon', () => {
   before(() => {})

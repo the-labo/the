@@ -32,7 +32,9 @@ function contextEntryFor(context, { store }) {
     }
 
     applyRenderer(renderable) {
-      const { children: renderer } = this.props
+      const {
+        props: { children: renderer },
+      } = this
       return renderer(renderable)
     }
 
@@ -46,12 +48,16 @@ function contextEntryFor(context, { store }) {
     }
 
     getPiped() {
-      const { pipe } = this.props
+      const {
+        props: { pipe },
+      } = this
       return pipe(store.state)
     }
 
     render() {
-      const { initialized, piped } = this.state
+      const {
+        state: { initialized, piped },
+      } = this
       return this.applyRenderer({
         ...initialized,
         ...piped,

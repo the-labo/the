@@ -3,7 +3,9 @@
  * Test for asControllerModule.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const asControllerModule = require('../lib/asControllerModule')
 
 describe('as-controller-module', () => {

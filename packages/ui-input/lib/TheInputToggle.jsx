@@ -41,12 +41,16 @@ class TheInputToggle extends React.PureComponent {
   }
 
   handleChange(e) {
-    const { onChange } = this.props
+    const {
+      props: { onChange },
+    } = this
     onChange && onChange(e)
   }
 
   handleClick(e) {
-    const { name, on, onUpdate } = this.props
+    const {
+      props: { name, on, onUpdate },
+    } = this
     onUpdate && onUpdate({ [name]: !on })
   }
 

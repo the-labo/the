@@ -63,14 +63,20 @@ class TheInputRadio extends React.PureComponent {
   }
 
   handleChange(e) {
-    const { onChange, onUpdate, parser } = this.props
-    const { name, value } = e.target
+    const {
+      props: { onChange, onUpdate, parser },
+    } = this
+    const {
+      target: { name, value },
+    } = e
     onChange && onChange(e)
     onUpdate && onUpdate({ [name]: parser(value) })
   }
 
   idFor(optionValue) {
-    const { id = this.id } = this.props
+    const {
+      props: { id = this.id },
+    } = this
     return [id, optionValue].join('-')
   }
 

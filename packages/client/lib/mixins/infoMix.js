@@ -31,7 +31,7 @@ function infoMix(Class) {
       if (!force && loaded) {
         return loaded
       }
-      const cached = this._serverInfo
+      const { _serverInfo: cached } = this
       if (!force && cached) {
         return cached
       }

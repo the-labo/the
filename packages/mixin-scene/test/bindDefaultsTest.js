@@ -3,7 +3,9 @@
  * Test for bindDefaults.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const bindDefaults = require('../lib/bindDefaults')
 
 describe('bindDefaults', () => {

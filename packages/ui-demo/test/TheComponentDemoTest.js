@@ -3,9 +3,11 @@
  * Test for TheComponentDemo.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheComponentDemo = require('../shim/TheComponentDemo').default
+const { default: TheComponentDemo } = require('../shim/TheComponentDemo')
 
 describe('the-component-demo', () => {
   before(() => {})

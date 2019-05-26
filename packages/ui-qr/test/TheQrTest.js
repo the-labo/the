@@ -3,9 +3,11 @@
  * Test for TheQr.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheQr = require('../shim/TheQr').default
+const { default: TheQr } = require('../shim/TheQr')
 
 describe('the-qr', () => {
   before(() => {})

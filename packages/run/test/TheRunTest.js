@@ -4,7 +4,9 @@
  * Runs with mocha.
  */
 const aport = require('aport')
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const TheRun = require('../lib/TheRun')
 
 describe('the-run', () => {

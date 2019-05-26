@@ -23,7 +23,9 @@ class ExampleComponent extends React.PureComponent {
   }
 
   render() {
-    const { values } = this.state
+    const {
+      state: { values },
+    } = this
     const { onUpdate } = this
 
     const {

@@ -7,7 +7,9 @@
  * @returns {Object}
  */
 const aglob = require('aglob')
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const path = require('path')
 const _tmpl = require('./_tmpl')
 

@@ -3,7 +3,9 @@
  * Test for isVideoSrc.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const isVideoSrc = require('../lib/helpers/isVideoSrc')
 
 describe('is-video-src', () => {

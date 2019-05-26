@@ -1,7 +1,7 @@
 'use strict'
 
 const p1 = 'P1'
-let d = {
+const d = {
   a: 1,
   b: 2,
 

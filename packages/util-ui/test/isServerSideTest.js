@@ -3,7 +3,9 @@
  * Test for isServerSide.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const isServerSide = require('../lib/isServerSide')
 
 describe('is-server-side', () => {

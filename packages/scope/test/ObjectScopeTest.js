@@ -3,7 +3,9 @@
  * Test for ObjectScope.
  * Runs with mocha.
  */
-const { deepEqual, equal, ok } = require('assert').strict
+const {
+  strict: { deepEqual, equal, ok },
+} = require('assert')
 const { TheStore } = require('@the-/store')
 const ObjectScope = require('../lib/scopes/ObjectScope')
 
@@ -21,12 +23,18 @@ describe('object-scope', () => {
 
     deepEqual(store.foo.state, {})
 
-    const state01 = store.foo.state
+    const {
+      foo: { state: state01 },
+    } = store
     store.foo.set('a', 1)
-    const state02 = store.foo.state
+    const {
+      foo: { state: state02 },
+    } = store
     ok(state01 !== state02)
     store.foo.set('a', 1)
-    const state03 = store.foo.state
+    const {
+      foo: { state: state03 },
+    } = store
     ok(state02 === state03)
     store.foo.set('b', 2)
     ok(store.foo.has('b'))

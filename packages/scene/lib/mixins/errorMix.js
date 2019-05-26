@@ -24,7 +24,9 @@ function errorMix(BaseClass) {
 
     parseAppError(err, options = {}) {
       const { l } = this
-      const { field, messageKey = options.defaultMessageKey } = err.detail
+      const {
+        detail: { field, messageKey = options.defaultMessageKey },
+      } = err
       return {
         [field]: l('errors', messageKey),
       }
@@ -32,7 +34,9 @@ function errorMix(BaseClass) {
 
     parsePolicyError(err) {
       const { l } = this
-      const { conflict = {}, failures = {}, missing = [] } = err.detail
+      const {
+        detail: { conflict = {}, failures = {}, missing = [] },
+      } = err
       const messages = {}
       for (const name of Object.keys(failures)) {
         const failure = failures[name]

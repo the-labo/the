@@ -3,7 +3,9 @@
  * Test for units.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const units = require('../lib/units')
 
 describe('units', () => {

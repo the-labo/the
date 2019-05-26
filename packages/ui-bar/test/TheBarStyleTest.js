@@ -3,9 +3,11 @@
  * Test for TheBarStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheBarStyle = require('../shim/TheBarStyle').default
+const { default: TheBarStyle } = require('../shim/TheBarStyle')
 
 describe('the-bar-style', () => {
   before(() => {})

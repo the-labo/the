@@ -3,7 +3,9 @@
  * Test for TheSecret.
  * Runs with mocha.
  */
-const { deepEqual, equal, ok } = require('assert').strict
+const {
+  strict: { deepEqual, equal, ok },
+} = require('assert')
 const { readAsJsonSync, writeAsJsonSync } = require('@the-/util-file')
 const TheSecret = require('../lib/TheSecret')
 

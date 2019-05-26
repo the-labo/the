@@ -3,9 +3,11 @@
  * Test for TheViewStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheViewStyle = require('../shim/TheViewStyle').default
+const { default: TheViewStyle } = require('../shim/TheViewStyle')
 
 describe('the-view-style', () => {
   before(() => {})

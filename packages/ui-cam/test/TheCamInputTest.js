@@ -3,9 +3,11 @@
  * Test for TheCamInput.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheCamInput = require('../shim/TheCamInput').default
+const { default: TheCamInput } = require('../shim/TheCamInput')
 
 describe('the-cam-input', () => {
   before(() => {})

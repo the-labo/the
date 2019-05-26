@@ -17,7 +17,9 @@ function mergeDuplicateImportOnProgramNode(programNode, { get, replace }) {
     NodeTypes.ImportDeclaration,
   ])
   const bySource = ImportDeclarations.reduce((reduced, ImportDeclaration) => {
-    const from = ImportDeclaration.source.value
+    const {
+      source: { value: from },
+    } = ImportDeclaration
     return {
       ...reduced,
       [from]: [...(reduced[from] || []), ImportDeclaration].sort(compareStart),
@@ -36,7 +38,7 @@ function mergeDuplicateImportOnProgramNode(programNode, { get, replace }) {
     if (specifiers.length === 0) {
       continue
     }
-    const { start } = declarations[0]
+    const [{ start }] = declarations
     const { end } = declarations[declarations.length - 1]
     const original = get([start, end])
     const merged = declarations

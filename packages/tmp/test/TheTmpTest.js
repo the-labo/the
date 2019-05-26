@@ -5,7 +5,9 @@
 'use strict'
 
 const asleep = require('asleep')
-const { doesNotThrow, ok, throws } = require('assert').strict
+const {
+  strict: { doesNotThrow, ok, throws },
+} = require('assert')
 const fs = require('fs')
 const TheTmp = require('../lib/TheTmp')
 

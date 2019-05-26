@@ -3,7 +3,9 @@
  * Test for TheCache.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const TheCache = require('../lib/TheCache')
 
 describe('the-cache', () => {

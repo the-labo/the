@@ -3,9 +3,11 @@
  * Test for TheInputStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheInputStyle = require('../shim/TheInputStyle').default
+const { default: TheInputStyle } = require('../shim/TheInputStyle')
 
 describe('the-input-style', () => {
   before(() => {})

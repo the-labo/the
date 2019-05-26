@@ -3,9 +3,11 @@
  * Test for TheListItem.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheListItem = require('../shim/TheListItem').default
+const { default: TheListItem } = require('../shim/TheListItem')
 
 describe('the-list-item', () => {
   before(() => {})

@@ -63,7 +63,13 @@ module.exports = pon({
         'packages/*/.*.bud',
       ],
       {
-        ignore: '**/node_modules/**/*.*',
+        ignore: [
+          '**/node_modules/**/*.*',
+          '**/shim/**/*.*',
+          '**/tmp/**/*.*',
+          '**/demo/bundle.js',
+          '**/var/**/*.*',
+        ],
       },
     ),
   },

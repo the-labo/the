@@ -3,7 +3,9 @@
  * Test for webStreams.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const { ReadableStream, WritableStream } = require('../lib/helpers/webStreams')
 
 describe('web-streams', () => {

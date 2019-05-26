@@ -3,7 +3,9 @@
  * Test for Invocation.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const Invocation = require('../lib/Invocation')
 
 describe('invocation', () => {

@@ -3,7 +3,9 @@
  * Test for isProduction.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const isProduction = require('../lib/isProduction')
 
 describe('is-production', () => {

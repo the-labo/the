@@ -104,7 +104,11 @@ class TheInputRange extends React.PureComponent {
     const xWithToX = Math.abs(x - toX)
     const rate = this._rateWithX(x)
     const value = this._valueWithRate(rate)
-    const [from, to] = this.props.value
+    const {
+      props: {
+        value: [from, to],
+      },
+    } = this
     if (xWithFromX > xWithToX) {
       this.setState({ toX: x })
       this.setRangeValue(from, value)
@@ -117,7 +121,11 @@ class TheInputRange extends React.PureComponent {
   handleFromHandleMove({ x }) {
     const rate = this._rateWithX(x)
     const from = this._valueWithRate(rate)
-    const [, to] = this.props.value
+    const {
+      props: {
+        value: [, to],
+      },
+    } = this
     this.setRangeValue(from, to)
   }
 
@@ -126,14 +134,16 @@ class TheInputRange extends React.PureComponent {
     if (!barElm) {
       return
     }
-    const w = barElm.offsetWidth
+    const { offsetWidth: w } = barElm
     const handleRadius = this.getHandleRadius()
     const minX = 0 - handleRadius
     const maxX = w - handleRadius
     if (minX === maxX) {
       return
     }
-    const [from, to] = props.value
+    const {
+      value: [from, to],
+    } = props
     const fromRate = this._rateWithValue(from)
     const toRate = this._rateWithValue(to)
     this.setState({
@@ -147,7 +157,11 @@ class TheInputRange extends React.PureComponent {
   handleToHandleMove({ x }) {
     const rate = this._rateWithX(x)
     const to = this._valueWithRate(rate)
-    const [from] = this.props.value
+    const {
+      props: {
+        value: [from],
+      },
+    } = this
     this.setRangeValue(from, to)
   }
 
@@ -241,7 +255,9 @@ class TheInputRange extends React.PureComponent {
       return
     }
     const { name, step } = props
-    const [currentFrom, currentTo] = props.value
+    const {
+      value: [currentFrom, currentTo],
+    } = props
     if (to < from) {
       if (from === currentFrom) {
         from = to - step
@@ -302,7 +318,7 @@ class TheInputRange extends React.PureComponent {
     const { props } = this
     const { max, min } = props
 
-    let value = chopcal.round(rangecal.value(min, max, rate), 0.01)
+    const value = chopcal.round(rangecal.value(min, max, rate), 0.01)
     return rangecal.round(min, max, value)
   }
 }

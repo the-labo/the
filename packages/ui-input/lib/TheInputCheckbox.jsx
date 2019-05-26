@@ -65,8 +65,12 @@ class TheInputCheckbox extends React.PureComponent {
   }
 
   handleChange(e) {
-    let { onChange, onUpdate, parser, splitter, value } = this.props
-    let { checked, name, value: changedValue } = e.target
+    let {
+      props: { onChange, onUpdate, parser, splitter, value },
+    } = this
+    let {
+      target: { checked, name, value: changedValue },
+    } = e
     changedValue = String(changedValue).trim()
     value = normalizeArrayValue(value, splitter).map((value) =>
       String(value).trim(),
@@ -86,7 +90,9 @@ class TheInputCheckbox extends React.PureComponent {
   }
 
   idFor(optionValue) {
-    const { id = this.id } = this.props
+    const {
+      props: { id = this.id },
+    } = this
     return [id, ...[].concat(optionValue)].join('-')
   }
 

@@ -3,9 +3,11 @@
  * Test for TheBody.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheBody = require('../shim/TheBody').default
+const { default: TheBody } = require('../shim/TheBody')
 
 describe('the-body', () => {
   before(() => {})

@@ -5,7 +5,9 @@
  * @function mapping
  * @returns {Object}
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const _tmpl = require('./_tmpl')
 
 /** @lends module:@the-/templates.mapping */

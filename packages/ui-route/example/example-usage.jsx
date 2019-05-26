@@ -73,7 +73,9 @@ class ExampleComponent extends React.Component {
                       }
 
                       render() {
-                        const { pop } = this.props
+                        const {
+                          props: { pop },
+                        } = this
                         return (
                           <div
                             style={{
@@ -106,12 +108,16 @@ class ExampleComponent extends React.Component {
                     class View03 extends React.Component {
                       componentDidMount() {
                         console.log('View03 did mount')
-                        const { history, location } = this.props
+                        const {
+                          props: { history, location },
+                        } = this
                         history.replace(`${location.pathname}?a=b`)
                       }
 
                       render() {
-                        const { pop } = this.props
+                        const {
+                          props: { pop },
+                        } = this
                         return (
                           <div style={{ background: '#AAE', padding: '50px' }}>
                             <h3>This is view 03</h3>

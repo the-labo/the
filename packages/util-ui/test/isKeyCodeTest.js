@@ -3,7 +3,9 @@
  * Test for isKeyCode.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const isKeyCode = require('../lib/isKeyCode')
 
 describe('is-key-code', () => {

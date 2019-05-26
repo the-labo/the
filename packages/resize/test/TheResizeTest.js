@@ -3,7 +3,9 @@
  * Test for TheResize.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const TheResize = require('../lib/TheResize')
 
 describe('the-resize', () => {

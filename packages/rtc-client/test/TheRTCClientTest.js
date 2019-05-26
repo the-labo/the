@@ -5,7 +5,9 @@
  */
 const aport = require('aport')
 const asleep = require('asleep')
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const theRTC = require('@the-/rtc')
 const TheRTCClient = require('../lib/TheRTCClient')
 

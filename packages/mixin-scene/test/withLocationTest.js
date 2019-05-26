@@ -3,7 +3,9 @@
  * Test for withLocation.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const injectmock = require('injectmock')
 const withLocation = require('../lib/withLocation')
 

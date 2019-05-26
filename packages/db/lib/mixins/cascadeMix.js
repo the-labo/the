@@ -22,7 +22,9 @@ function cascadeMix(Class) {
 
     startCascadeLink() {
       for (const [, follower] of Object.entries(this.resources)) {
-        const { cascaded = {} } = follower.constructor
+        const {
+          constructor: { cascaded = {} },
+        } = follower
         for (const [followeeName, creator] of Object.entries(cascaded)) {
           const followee = this.getResource(followeeName)
           this._cascadeListeners.push(

@@ -3,7 +3,9 @@
  * Test for TheJitter.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const TheJitter = require('../lib/TheJitter')
 
 describe('the-jitter', () => {

@@ -33,7 +33,9 @@ class TheInputTag extends React.PureComponent {
   }
 
   handleBlur(e) {
-    const { onBlur } = this.props
+    const {
+      props: { onBlur },
+    } = this
     const [edittingValue, ...tagValues] = this.splitValue()
     if (edittingValue.length > 0) {
       this.updateBySplitValues(['', edittingValue, ...tagValues])
@@ -51,7 +53,9 @@ class TheInputTag extends React.PureComponent {
   }
 
   handleFocus(e) {
-    const { onFocus } = this.props
+    const {
+      props: { onFocus },
+    } = this
     onFocus && onFocus(e)
     this.setState({ focused: true })
   }
@@ -61,7 +65,9 @@ class TheInputTag extends React.PureComponent {
   }
 
   handleKeyDown(e) {
-    const { onKeyDown } = this.props
+    const {
+      props: { onKeyDown },
+    } = this
     switch (e.keyCode) {
       case 13:
         this.handleEnter()
@@ -76,14 +82,18 @@ class TheInputTag extends React.PureComponent {
   }
 
   handleUpdate(values) {
-    const { name } = this.props
+    const {
+      props: { name },
+    } = this
     const edittingValue = values[name]
     const [, ...tagValues] = this.splitValue()
     this.updateBySplitValues([edittingValue, ...tagValues])
   }
 
   optionsFor(tagValues) {
-    const { options } = this.props
+    const {
+      props: { options },
+    } = this
     return []
       .concat(options || [])
       .filter((option) => !tagValues.includes(option))
@@ -100,7 +110,9 @@ class TheInputTag extends React.PureComponent {
     const inputProps = clone(props, {
       without: ['value', 'splitter', 'options'],
     })
-    const { focused } = this.state
+    const {
+      state: { focused },
+    } = this
     return (
       <TheInputText
         {...inputProps}
@@ -135,8 +147,12 @@ class TheInputTag extends React.PureComponent {
   }
 
   splitValue() {
-    const { splitter, value } = this.props
-    const { focused } = this.state
+    const {
+      props: { splitter, value },
+    } = this
+    const {
+      state: { focused },
+    } = this
     const split = String(value || '')
       .split(splitter)
       .reverse()
@@ -144,7 +160,9 @@ class TheInputTag extends React.PureComponent {
   }
 
   updateBySplitValues(splitValues) {
-    const { name, onUpdate } = this.props
+    const {
+      props: { name, onUpdate },
+    } = this
     const [edittingValue, ...tagValues] = splitValues
     const value = [edittingValue, ...tagValues.filter(uniqueFilter())]
       .reverse()

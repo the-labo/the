@@ -3,7 +3,9 @@
  * Test for depsRule.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const fs = require('fs')
 const depsRule = require('../lib/rules/depsRule')
 

@@ -3,9 +3,11 @@
  * Test for TheInputTag.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheInputTag = require('../shim/TheInputTag').default
+const { default: TheInputTag } = require('../shim/TheInputTag')
 
 describe('the-input-tag', () => {
   before(() => {})

@@ -57,7 +57,9 @@ class TheToast extends React.PureComponent {
   }
 
   clearMessage(message) {
-    const { level, messages, onUpdate } = this.props
+    const {
+      props: { level, messages, onUpdate },
+    } = this
 
     onUpdate &&
       onUpdate({
@@ -114,12 +116,14 @@ class TheToast extends React.PureComponent {
   }
 
   reserveClearings() {
-    const { clearAfter, messages } = this.props
+    const {
+      props: { clearAfter, messages },
+    } = this
     if (clearAfter > 0) {
       const messagesToClear = normalizeMessages(messages).filter(
         (message) => !this._clearTimers[message],
       )
-      for (let message of messagesToClear) {
+      for (const message of messagesToClear) {
         this._clearTimers[message] = setTimeout(() => {
           this.clearMessage(message)
           delete this._clearTimers[message]

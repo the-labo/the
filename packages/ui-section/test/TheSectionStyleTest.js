@@ -3,9 +3,11 @@
  * Test for TheSectionStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheSectionStyle = require('../shim/TheSectionStyle').default
+const { default: TheSectionStyle } = require('../shim/TheSectionStyle')
 
 describe('the-section-style', () => {
   before(() => {})

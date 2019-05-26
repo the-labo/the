@@ -29,7 +29,9 @@ class TheInputPinCode extends React.PureComponent {
   handleBack() {}
 
   handleBlur(e) {
-    const { onBlur } = this.props
+    const {
+      props: { onBlur },
+    } = this
 
     onBlur && onBlur(e)
     this.setState({
@@ -38,12 +40,16 @@ class TheInputPinCode extends React.PureComponent {
   }
 
   handleEnter(e) {
-    const { onEnter } = this.props
+    const {
+      props: { onEnter },
+    } = this
     onEnter && onEnter(e)
   }
 
   handleFocus(e) {
-    const { onFocus, value } = this.props
+    const {
+      props: { onFocus, value },
+    } = this
     onFocus && onFocus(e)
     this.setState({
       focused: true,
@@ -55,14 +61,18 @@ class TheInputPinCode extends React.PureComponent {
     this.setState({
       index,
     })
-    const { name, onUpdate, value } = this.props
+    const {
+      props: { name, onUpdate, value },
+    } = this
     if (value.length > index) {
       onUpdate && onUpdate({ [name]: value.substr(0, index) })
     }
   }
 
   handleKeyDown(e) {
-    const { onKeyDown } = this.props
+    const {
+      props: { onKeyDown },
+    } = this
     switch (e.keyCode) {
       case 13:
         this.handleEnter()
@@ -77,7 +87,9 @@ class TheInputPinCode extends React.PureComponent {
   }
 
   handleUpdate(values) {
-    const { digit, name, only, onUpdate, value } = this.props
+    const {
+      props: { digit, name, only, onUpdate, value },
+    } = this
     const newValue = String(values[name])
       .split('')
       .filter((v) => (only ? only.test(v) : !!v))
@@ -99,7 +111,9 @@ class TheInputPinCode extends React.PureComponent {
   render() {
     const { props } = this
     const inputProps = clone(props, { without: ['digit'] })
-    const { focused, index } = this.state
+    const {
+      state: { focused, index },
+    } = this
     const { digit, id = this.id } = props
     return (
       <TheInputText
@@ -139,12 +153,16 @@ class TheInputPinCodeItem extends React.PureComponent {
   }
 
   handleClick() {
-    const { index, onClick } = this.props
+    const {
+      props: { index, onClick },
+    } = this
     onClick && onClick(index)
   }
 
   render() {
-    const { htmlFor, selected, value } = this.props
+    const {
+      props: { htmlFor, selected, value },
+    } = this
     return (
       <label
         className={c('the-input-pin-code-item', {

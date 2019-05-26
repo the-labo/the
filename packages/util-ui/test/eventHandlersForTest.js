@@ -3,7 +3,9 @@
  * Test for eventHandlersFor.
  * Runs with mocha.
  */
-const { deepEqual } = require('assert').strict
+const {
+  strict: { deepEqual },
+} = require('assert')
 const eventHandlersFor = require('../lib/eventHandlersFor')
 
 describe('event-handlers-for', () => {

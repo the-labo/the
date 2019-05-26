@@ -2,7 +2,9 @@
 /**
  * Test case for index
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const index = require('../index')
 
 describe('index', () => {

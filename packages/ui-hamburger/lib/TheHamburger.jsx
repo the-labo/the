@@ -84,7 +84,9 @@ class TheHamburger extends React.Component {
   }
 
   toggle(hidden) {
-    const { onToggle } = this.props
+    const {
+      props: { onToggle },
+    } = this
     onToggle && onToggle(hidden)
   }
 }

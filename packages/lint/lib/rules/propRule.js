@@ -19,7 +19,11 @@ function propRule(config) {
   }
   return async function propRuleCheck({ content, filename, report }) {
     function reportKeypathExpression(expression, given) {
-      const { column, line } = expression.loc.start
+      const {
+        loc: {
+          start: { column, line },
+        },
+      } = expression
       report(`Keypath not found: "${given}"`, {
         actual: true,
         code: String(content).substring(expression.start, expression.end),
@@ -70,7 +74,9 @@ function propRule(config) {
           }
           case 'StringLiteral': {
             if (expression.object.name === name) {
-              const { value } = expression.property
+              const {
+                property: { value },
+              } = expression
               const key = `/${value.replace(/\./g, '/')}`.replace(/^\/+/, '/')
               const ok = has(targetModule, key) || value in targetModule
               !ok && reportKeypathExpression(expression, value)

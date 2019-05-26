@@ -3,9 +3,11 @@
  * Test for TheFooter.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheFooter = require('../shim/TheFooter').default
+const { default: TheFooter } = require('../shim/TheFooter')
 
 describe('the-footer', () => {
   before(() => {})

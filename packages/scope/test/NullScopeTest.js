@@ -3,7 +3,9 @@
  * Test for NullScope.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const { TheStore } = require('@the-/store')
 const NullScope = require('../lib/scopes/NullScope')
 

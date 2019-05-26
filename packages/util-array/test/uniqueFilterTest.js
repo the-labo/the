@@ -3,7 +3,9 @@
  * Test for uniqueFilter.
  * Runs with mocha.
  */
-const { deepEqual } = require('assert').strict
+const {
+  strict: { deepEqual },
+} = require('assert')
 const uniqueFilter = require('../lib/uniqueFilter')
 
 describe('unique-filter', () => {

@@ -3,9 +3,11 @@
  * Test for TheRootStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheRootStyle = require('../shim/TheRootStyle').default
+const { default: TheRootStyle } = require('../shim/TheRootStyle')
 
 describe('the-root-style', () => {
   before(() => {})

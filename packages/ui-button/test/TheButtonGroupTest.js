@@ -3,9 +3,11 @@
  * Test for TheButtonGroup.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheButtonGroup = require('../shim/TheButtonGroup').default
+const { default: TheButtonGroup } = require('../shim/TheButtonGroup')
 
 describe('the-button-group', () => {
   before(() => {})

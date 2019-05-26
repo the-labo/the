@@ -60,7 +60,7 @@ Usage
 
 ```javascript
 'use strict'
-const theMail = require('@the-/mail').default
+const { default: theMail } = require('@the-/mail')
 
 async function tryExample() {
   const mail = theMail({

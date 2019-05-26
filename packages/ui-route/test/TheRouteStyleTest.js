@@ -3,9 +3,11 @@
  * Test for TheRouteStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheRouteStyle = require('../shim/TheRouteStyle').default
+const { default: TheRouteStyle } = require('../shim/TheRouteStyle')
 
 describe('the-route-style', () => {
   before(() => {})

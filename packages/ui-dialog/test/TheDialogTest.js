@@ -3,9 +3,11 @@
  * Test for TheDialog.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheDialog = require('../shim/TheDialog').default
+const { default: TheDialog } = require('../shim/TheDialog')
 
 describe('the-dialog', () => {
   before(() => {})

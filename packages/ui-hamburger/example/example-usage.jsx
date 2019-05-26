@@ -14,7 +14,9 @@ class ExampleComponent extends React.Component {
 
   render() {
     const onToggle = () => this.setState({ hidden: !this.state.hidden })
-    const { hidden } = this.state
+    const {
+      state: { hidden },
+    } = this
     return (
       <TheRouter.Hash>
         <div>

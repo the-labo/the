@@ -3,9 +3,11 @@
  * Test for TheRouter.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheRouter = require('../shim/TheRouter').default
+const { default: TheRouter } = require('../shim/TheRouter')
 
 describe('the-router', () => {
   before(() => {})

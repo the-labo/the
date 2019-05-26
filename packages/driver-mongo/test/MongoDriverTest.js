@@ -4,7 +4,9 @@
  * Runs with mocha.
  */
 const asleep = require('asleep')
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const clayDriverTests = require('clay-driver-tests')
 const clayResource = require('clay-resource')
 const MongoDriver = require('../lib/MongoDriver')

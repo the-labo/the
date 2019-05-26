@@ -4,7 +4,9 @@
  * Runs with mocha.
  */
 const { copyAsync } = require('asfs')
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const TheVideoConverter = require('../lib/TheVideoConverter')
 
 describe('the-video-converter', async function() {

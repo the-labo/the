@@ -3,7 +3,9 @@
  * Test case for SupportedProps.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const SupportedProps = require('../lib/SupportedProps')
 
 describe('supported-props', function() {

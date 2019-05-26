@@ -3,9 +3,11 @@
  * Test for TheStepStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheStepStyle = require('../shim/TheStepStyle').default
+const { default: TheStepStyle } = require('../shim/TheStepStyle')
 
 describe('the-step-style', () => {
   before(() => {})

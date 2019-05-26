@@ -15,7 +15,9 @@ class MethodCallCounter extends Counter {
   }
 
   inject() {
-    const { class: class_, methodName, name } = this.context
+    const {
+      context: { class: class_, methodName, name },
+    } = this
     const method = class_.prototype && class_.prototype[methodName]
     if (!method) {
       console.warn(

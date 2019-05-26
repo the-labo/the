@@ -3,9 +3,11 @@
  * Test for TheBodyStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheBodyStyle = require('../shim/TheBodyStyle').default
+const { default: TheBodyStyle } = require('../shim/TheBodyStyle')
 
 describe('the-body-style', () => {
   before(() => {})

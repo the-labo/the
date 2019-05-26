@@ -24,7 +24,9 @@ class TheFormBinder extends React.Component {
   }
 
   applyRenderer() {
-    const { children: renderer } = this.props
+    const {
+      props: { children: renderer },
+    } = this
     return renderer(this.bounds)
   }
 
@@ -118,7 +120,9 @@ class TheFormBinder extends React.Component {
   }
 
   readOnlyOf(name) {
-    const { readOnly } = this.props
+    const {
+      props: { readOnly },
+    } = this
     return [].concat(readOnly).includes(name)
   }
 
@@ -127,7 +131,9 @@ class TheFormBinder extends React.Component {
   }
 
   requiredOf(name) {
-    const { required } = this.props
+    const {
+      props: { required },
+    } = this
     return [].concat(required).includes(name)
   }
 

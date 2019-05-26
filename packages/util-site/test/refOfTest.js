@@ -3,7 +3,9 @@
  * Test for refOf.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const refOf = require('../lib/refOf')
 
 describe('ref-of', () => {

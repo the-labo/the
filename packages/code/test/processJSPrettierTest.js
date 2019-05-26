@@ -3,7 +3,9 @@
  * Test for processJSPrettier.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const processJSPrettier = require('../lib/processors/processJSPrettier')
 
 describe('process-j-s-prettier', () => {

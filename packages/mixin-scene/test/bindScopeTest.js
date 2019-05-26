@@ -3,7 +3,9 @@
  * Test for bindScope.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const bindScope = require('../lib/bindScope')
 
 describe('bindScope', () => {

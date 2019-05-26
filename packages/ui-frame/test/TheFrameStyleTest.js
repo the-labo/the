@@ -3,9 +3,11 @@
  * Test for TheFrameStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheFrameStyle = require('../shim/TheFrameStyle').default
+const { default: TheFrameStyle } = require('../shim/TheFrameStyle')
 
 describe('the-frame-style', () => {
   before(() => {})

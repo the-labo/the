@@ -45,14 +45,18 @@ function sortMethodsOnClassNode(ClassNode, { swap }) {
 }
 
 const _nameOfMethod = (method) => {
-  const { id, name } = method.key
+  const {
+    key: { id, name },
+  } = method
   if (name) {
     return name
   }
   if (id && id.name) {
     return id.name
   }
-  const { object, property } = method.key
+  const {
+    key: { object, property },
+  } = method
   return [property.name, object.name].join('.')
 }
 

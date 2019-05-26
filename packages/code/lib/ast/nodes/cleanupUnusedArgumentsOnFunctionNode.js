@@ -17,7 +17,9 @@ function cleanupUnusedArgumentsOnFunctionNode(
   if (skip) {
     return
   }
-  const firstParam = FunctionNode.params[0]
+  const {
+    params: [firstParam],
+  } = FunctionNode
   const usages = ConsumingIdentifiers.filter(
     (Identifier) => Identifier !== lastParam,
   ).filter((Identifier) => Identifier.name === lastParam.name)

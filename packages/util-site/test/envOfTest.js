@@ -3,7 +3,9 @@
  * Test for envOf.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const envOf = require('../lib/envOf')
 
 describe('env-of', () => {

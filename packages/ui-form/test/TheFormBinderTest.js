@@ -3,9 +3,11 @@
  * Test for TheFormBinder.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheFormBinder = require('../shim/TheFormBinder').default
+const { default: TheFormBinder } = require('../shim/TheFormBinder')
 
 describe('the-form-binder', () => {
   before(() => {})

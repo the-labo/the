@@ -9,7 +9,9 @@ const { TheInvalidParameterError } = require('@the-/error')
 function withSeal(Class) {
   class WithSeal extends Class {
     async _assertSeal(sealString, envelop) {
-      const { seal } = this.app
+      const {
+        app: { seal },
+      } = this
       const ok = seal.verify(sealString, envelop)
       if (!ok) {
         throw new TheInvalidParameterError('Invalid parameter', envelop)
@@ -17,7 +19,9 @@ function withSeal(Class) {
     }
 
     async _sealFor(envelop) {
-      const { seal } = this.app
+      const {
+        app: { seal },
+      } = this
       return seal.seal(envelop)
     }
   }

@@ -3,7 +3,9 @@
  * Test for textColorFor.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const textColorFor = require('../lib/textColorFor')
 
 describe('text-color-for', () => {

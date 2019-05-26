@@ -3,9 +3,11 @@
  * Test for TheView.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheView = require('../shim/TheView').default
+const { default: TheView } = require('../shim/TheView')
 
 describe('the-view', () => {
   before(() => {})

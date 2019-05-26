@@ -3,7 +3,9 @@
  * Test for withEntities.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const withEntities = require('../lib/withEntities')
 
 describe('with-entities', () => {

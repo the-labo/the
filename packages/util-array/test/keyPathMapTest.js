@@ -3,7 +3,9 @@
  * Test for keyPathMap.
  * Runs with mocha.
  */
-const { deepEqual } = require('assert').strict
+const {
+  strict: { deepEqual },
+} = require('assert')
 const keyPathMap = require('../lib/keyPathMap')
 
 describe('key-path-map', () => {

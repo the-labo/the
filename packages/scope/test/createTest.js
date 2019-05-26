@@ -3,7 +3,9 @@
  * Test for create.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const create = require('../lib/create')
 
 describe('create', () => {

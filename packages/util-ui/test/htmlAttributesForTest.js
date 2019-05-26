@@ -3,7 +3,9 @@
  * Test for htmlAttributesFor.
  * Runs with mocha.
  */
-const { deepEqual } = require('assert').strict
+const {
+  strict: { deepEqual },
+} = require('assert')
 const htmlAttributesFor = require('../lib/htmlAttributesFor')
 
 describe('html-attributes-for', () => {

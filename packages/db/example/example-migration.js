@@ -24,7 +24,9 @@ async function tryExample() {
 
     // Called only if no migration has ever executed
     async none(db) {
-      const { User } = db.resources
+      const {
+        resources: { User },
+      } = db
 
       // Migration scripts
       await User.each(async (user) => {

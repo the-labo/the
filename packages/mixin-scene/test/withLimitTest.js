@@ -3,7 +3,9 @@
  * Test for withLimit.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const withLimit = require('../lib/withLimit')
 
 describe('with-limit', () => {

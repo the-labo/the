@@ -3,9 +3,11 @@
  * Test for TheContainer.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheContainer = require('../shim/TheContainer').default
+const { default: TheContainer } = require('../shim/TheContainer')
 
 describe('the-container', () => {
   before(() => {})

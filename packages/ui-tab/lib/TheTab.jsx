@@ -108,7 +108,9 @@ class TheTab extends React.Component {
   }
 
   componentDidMount() {
-    const inner = this.innerRef.current
+    const {
+      innerRef: { current: inner },
+    } = this
     this.resize(this.props.activeIndex)
     this.resizeTimer = setInterval(() => this.resize(this.state.nextIndex), 300)
 
@@ -121,7 +123,7 @@ class TheTab extends React.Component {
 
   componentDidUpdate(prevProps) {
     const { props } = this
-    const nextIndex = props.activeIndex
+    const { activeIndex: nextIndex } = props
     const updateNextIndex =
       nextIndex === null || prevProps.activeIndex !== nextIndex
     if (updateNextIndex) {
@@ -135,7 +137,9 @@ class TheTab extends React.Component {
   componentWillUnmount() {
     clearInterval(this.resizeTimer)
     clearTimeout(this.movingTimer)
-    const inner = this.innerRef.current
+    const {
+      innerRef: { current: inner },
+    } = this
 
     for (const [event, handler] of Object.entries(this.touchHandlers)) {
       inner && inner.removeEventListener(event, handler)
@@ -143,7 +147,9 @@ class TheTab extends React.Component {
   }
 
   getBounds() {
-    const { activeIndex, buttons } = this.props
+    const {
+      props: { activeIndex, buttons },
+    } = this
     const bounds = { bottom: 0, top: 0 }
     if (activeIndex === 0) {
       bounds.right = 20
@@ -155,13 +161,19 @@ class TheTab extends React.Component {
   }
 
   handleTouchEnd(e) {
-    const body = this.bodyRef.current
+    const {
+      bodyRef: { current: body },
+    } = this
     if (!body) {
       return
     }
-    const { translateX } = this.state
+    const {
+      state: { translateX },
+    } = this
     const amount = this.movingAmountFor(translateX)
-    const { activeIndex, onChange } = this.props
+    const {
+      props: { activeIndex, onChange },
+    } = this
     const toLeft = amount < 0
     if (toLeft) {
       this.moveTo(body.offsetWidth, () =>
@@ -206,9 +218,11 @@ class TheTab extends React.Component {
     const vy = point.y - this.touchPoint.y
     const avy = Math.abs(vy)
     const avx = Math.abs(vx)
-    let isHorizontal = avy < 20 && avy < avx
+    const isHorizontal = avy < 20 && avy < avx
     if (isHorizontal) {
-      const { activeIndex } = this.props
+      const {
+        props: { activeIndex },
+      } = this
       const translateX = this.state.translateX + vx
       this.setState({ translateX })
 
@@ -229,7 +243,9 @@ class TheTab extends React.Component {
   }
 
   handleTouchStart(e) {
-    const header = this.headerRef.current
+    const {
+      headerRef: { current: header },
+    } = this
     this.touchedScroll = sourceElementScrollFor(e)
     this.touchPoint = pointFromTouchEvent(e)
     this.touchMoveCount = 0
@@ -258,13 +274,17 @@ class TheTab extends React.Component {
   }
 
   movingAmountFor(x) {
-    const body = this.bodyRef.current
+    const {
+      bodyRef: { current: body },
+    } = this
     if (!body) {
       return
     }
     const threshold = Math.min(80, body.offsetWidth / 2)
-    const { activeIndex, buttons } = this.props
-    const count = buttons.length
+    const {
+      props: { activeIndex, buttons },
+    } = this
+    const { length: count } = buttons
     const toLeft = threshold < x && 0 < activeIndex
     if (toLeft) {
       return -1
@@ -277,7 +297,9 @@ class TheTab extends React.Component {
   }
 
   movingRateFor(x) {
-    const body = this.bodyRef.current
+    const {
+      bodyRef: { current: body },
+    } = this
     if (!body) {
       return
     }
@@ -295,7 +317,7 @@ class TheTab extends React.Component {
       disableTouchAction,
       onChange,
     } = props
-    const count = buttons.length
+    const { length: count } = buttons
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}

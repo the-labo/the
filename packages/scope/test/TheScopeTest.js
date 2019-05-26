@@ -3,7 +3,9 @@
  * Test for TheScope.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const TheScope = require('../lib/TheScope')
 
 describe('the-scope', () => {

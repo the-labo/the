@@ -3,7 +3,9 @@
  * Test for processJSClass.
  * Runs with mocha.
  */
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const processJSClass = require('../lib/processors/processJSClass')
 
 describe('process-class', () => {

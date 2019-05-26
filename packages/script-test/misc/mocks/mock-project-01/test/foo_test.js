@@ -1,6 +1,8 @@
 'use strict'
 
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 
 describe('build', function() {
   this.timeout(3000)

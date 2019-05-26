@@ -3,7 +3,9 @@
  * Test for TheAssets.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const TheAssets = require('../lib/TheAssets')
 
 describe('the-assets', () => {

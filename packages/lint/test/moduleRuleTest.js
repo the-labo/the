@@ -3,7 +3,9 @@
  * Test for moduleRule.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const moduleRule = require('../lib/rules/moduleRule')
 
 describe('module-rule-test', () => {

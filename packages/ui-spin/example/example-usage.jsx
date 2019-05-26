@@ -5,7 +5,7 @@ import { TheSpin, TheSpinStyle } from '@the-/ui-spin'
 
 class ExampleComponent extends React.PureComponent {
   render() {
-    let spinStyle = { display: 'inline-block', height: 180, width: 120 }
+    const spinStyle = { display: 'inline-block', height: 180, width: 120 }
     return (
       <div>
         <TheSpinStyle />

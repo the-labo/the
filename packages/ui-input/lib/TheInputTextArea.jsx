@@ -24,8 +24,12 @@ class TheInputTextArea extends React.PureComponent {
   }
 
   adjustRows() {
-    const { maxRows, minRows } = this.props
-    const textarea = this.textareaRef.current
+    const {
+      props: { maxRows, minRows },
+    } = this
+    const {
+      textareaRef: { current: textarea },
+    } = this
     if (!textarea) {
       return
     }
@@ -36,8 +40,10 @@ class TheInputTextArea extends React.PureComponent {
 
     // 入力行数が少なくなったらそれに合わせてテキストエリアの行数も減らす
     // テキストエリアが offsetHeight < scrollHeight になるまで高さを小さくして、scrollHeight の最小値を求める
-    const originalHeight = textarea.style.height
-    let height = textarea.offsetHeight
+    const {
+      style: { height: originalHeight },
+    } = textarea
+    let { offsetHeight: height } = textarea
     let retry = 100
     while (0 < retry--) {
       if (this.gone) {
@@ -55,7 +61,7 @@ class TheInputTextArea extends React.PureComponent {
       }
       textarea.style.height = `${height}px`
     }
-    const minScrollHeight = textarea.scrollHeight
+    const { scrollHeight: minScrollHeight } = textarea
     textarea.style.height = originalHeight
 
     let rows = Math.round(minScrollHeight / lineHeight)
@@ -76,7 +82,9 @@ class TheInputTextArea extends React.PureComponent {
   }
 
   componentDidUpdate() {
-    const { autoExpand } = this.props
+    const {
+      props: { autoExpand },
+    } = this
     if (autoExpand) {
       clearInterval(this.adjustRowTimer)
       this.adjustRowTimer = setTimeout(() => this.adjustRows(), 300)
@@ -89,19 +97,27 @@ class TheInputTextArea extends React.PureComponent {
   }
 
   handleChange(e) {
-    const { onChange, onUpdate, parser } = this.props
-    const { name, value } = e.target
+    const {
+      props: { onChange, onUpdate, parser },
+    } = this
+    const {
+      target: { name, value },
+    } = e
     onChange && onChange(e)
     onUpdate && onUpdate({ [name]: parser(value) })
 
-    const { autoExpand } = this.props
+    const {
+      props: { autoExpand },
+    } = this
     if (autoExpand) {
       this.adjustRows()
     }
   }
 
   handleKeyDown(e) {
-    const { onCombineEnter, onEnter, onKeyDown } = this.props
+    const {
+      props: { onCombineEnter, onEnter, onKeyDown },
+    } = this
     switch (e.keyCode) {
       case 13: {
         // Enter

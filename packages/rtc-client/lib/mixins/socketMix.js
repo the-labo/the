@@ -28,7 +28,7 @@ function socketMix(Class) {
 
     createSocket(url, { forceNew, path, query }) {
       const queryString = qs.stringify(cleanup(query))
-      const ioURL = new URL(`${NAMESPACE}?${queryString}`, url).href
+      const { href: ioURL } = new URL(`${NAMESPACE}?${queryString}`, url)
       debug('ioURL', ioURL)
       const socket = io(ioURL, {
         forceNew,

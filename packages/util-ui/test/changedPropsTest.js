@@ -3,7 +3,9 @@
  * Test for changedProps.
  * Runs with mocha.
  */
-const { deepEqual } = require('assert').strict
+const {
+  strict: { deepEqual },
+} = require('assert')
 const changedProps = require('../lib/changedProps')
 describe('changed-props', () => {
   before(() => {})

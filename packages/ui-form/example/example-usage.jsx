@@ -23,7 +23,9 @@ class ExampleComponent extends React.PureComponent {
   render() {
     const { Field, FieldSet, Label, Legend, Value } = TheForm
 
-    const { values } = this.state
+    const {
+      state: { values },
+    } = this
     return (
       <div>
         <TheFormStyle />

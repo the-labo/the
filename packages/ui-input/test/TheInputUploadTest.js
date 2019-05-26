@@ -3,9 +3,11 @@
  * Test for TheInputUpload.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheInputUpload = require('../shim/TheInputUpload').default
+const { default: TheInputUpload } = require('../shim/TheInputUpload')
 
 describe('the-input-upload', () => {
   before(() => {})

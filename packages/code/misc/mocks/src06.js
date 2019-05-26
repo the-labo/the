@@ -5,9 +5,9 @@
 'use strict'
 
 const { inspect } = require('util')
-const theSeat = require('@the-/seat').default
-const theSecret = require('@the-/secret').default
-const theSetting = require('@the-/setting').default
+const { default: theSeat } = require('@the-/seat')
+const { default: theSecret } = require('@the-/secret')
+const { default: theSetting } = require('@the-/setting')
 const { envOf, seatAccess } = require('@the-/util-site')
 const pkg = require('./package')
 

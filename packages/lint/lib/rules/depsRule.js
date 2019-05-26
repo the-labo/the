@@ -47,7 +47,9 @@ function depsRule(config) {
     }
 
     const requiredName = (node) => {
-      const FirstArg = node.arguments[0]
+      const {
+        arguments: [FirstArg],
+      } = node
       return FirstArg && FirstArg.value
     }
 
@@ -56,7 +58,11 @@ function depsRule(config) {
         ImportDeclaration: (node) => {
           const modulePaths = modulePathsFor(node.source.value, importFrom)
           const ok = modulePaths.some((modulePath) => canRequire(modulePath))
-          const { column, line } = node.loc.start
+          const {
+            loc: {
+              start: { column, line },
+            },
+          } = node
           !ok &&
             report('Module not found', {
               actual: false,
@@ -74,7 +80,9 @@ function depsRule(config) {
       NodeTypes.CallExpression,
     ])
     const RequireCallNodes = CallExpressions.filter((node) => {
-      const arg = node.arguments[0]
+      const {
+        arguments: [arg],
+      } = node
       return (
         node.callee.name === 'require' &&
         arg &&
@@ -85,7 +93,11 @@ function depsRule(config) {
       const name = requiredName(node)
       const modulePaths = modulePathsFor(name, requireFrom)
       const ok = modulePaths.some((modulePath) => canRequire(modulePath))
-      const { column, line } = node.loc.start
+      const {
+        loc: {
+          start: { column, line },
+        },
+      } = node
       !ok &&
         report('Module not found', {
           actual: false,

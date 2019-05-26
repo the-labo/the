@@ -3,9 +3,11 @@
  * Test for TheBar.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheBar = require('../shim/TheBar').default
+const { default: TheBar } = require('../shim/TheBar')
 
 describe('the-bar', () => {
   before(() => {})

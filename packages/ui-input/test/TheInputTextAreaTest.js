@@ -3,9 +3,11 @@
  * Test for TheInputTextArea.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheInputTextArea = require('../shim/TheInputTextArea').default
+const { default: TheInputTextArea } = require('../shim/TheInputTextArea')
 
 describe('the-input-text-area', () => {
   before(() => {})

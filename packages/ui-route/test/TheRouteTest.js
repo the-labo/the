@@ -3,9 +3,11 @@
  * Test for TheRoute.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheRoute = require('../shim/TheRoute').default
+const { default: TheRoute } = require('../shim/TheRoute')
 
 describe('the-route', () => {
   before(() => {})

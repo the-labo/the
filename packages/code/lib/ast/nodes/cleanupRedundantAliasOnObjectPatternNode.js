@@ -26,9 +26,15 @@ function cleanupRedundantAliasOnObjectPatternNode(ObjectPattern, { replace }) {
     if (property.key === property.value) {
       continue
     }
-    const keyName = property.key.name
+    const {
+      key: { name: keyName },
+    } = property
     if (property.value.type === 'AssignmentPattern') {
-      const valueName = property.value.left.name
+      const {
+        value: {
+          left: { name: valueName },
+        },
+      } = property
       if (keyName !== valueName) {
         continue
       }
@@ -37,7 +43,9 @@ function cleanupRedundantAliasOnObjectPatternNode(ObjectPattern, { replace }) {
       }
       return replace([property.key.end, property.value.left.end])
     }
-    const valueName = property.value.name
+    const {
+      value: { name: valueName },
+    } = property
     if (keyName !== valueName) {
       continue
     }

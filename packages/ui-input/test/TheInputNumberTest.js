@@ -3,9 +3,11 @@
  * Test for TheInputNumber.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheInputNumber = require('../shim/TheInputNumber').default
+const { default: TheInputNumber } = require('../shim/TheInputNumber')
 
 describe('the-input-number', () => {
   before(() => {})

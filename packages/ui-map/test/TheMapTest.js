@@ -3,9 +3,11 @@
  * Test for TheMap.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheMap = require('../shim/TheMap').default
+const { default: TheMap } = require('../shim/TheMap')
 
 describe('the-map', () => {
   before(() => {})

@@ -3,7 +3,9 @@
  * Test for TheStore.
  * Runs with mocha.
  */
-const { deepEqual, equal, ok } = require('assert').strict
+const {
+  strict: { deepEqual, equal, ok },
+} = require('assert')
 const TheStore = require('../lib/TheStore')
 const { BooleanScope, NumberScope, ObjectScope, Scope } = TheStore
 

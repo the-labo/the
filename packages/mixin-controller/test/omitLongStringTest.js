@@ -3,7 +3,9 @@
  * Test for omitLongString.
  * Runs with mocha.
  */
-const { deepStrictEqual, equal } = require('assert').strict
+const {
+  strict: { deepStrictEqual, equal },
+} = require('assert')
 const omitLongString = require('../lib/helpers/omitLongString')
 
 describe('omit-too-long-string', () => {

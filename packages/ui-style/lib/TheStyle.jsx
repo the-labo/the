@@ -15,7 +15,9 @@ class TheStyle extends React.PureComponent {
   }
 
   getChildrenAsString() {
-    const { children } = this.props
+    const {
+      props: { children },
+    } = this
     if (!children) {
       return null
     }
@@ -32,7 +34,9 @@ class TheStyle extends React.PureComponent {
   }
 
   getStylesAsString() {
-    const { prefix, styles } = this.props
+    const {
+      props: { prefix, styles },
+    } = this
     if (!styles) {
       return null
     }

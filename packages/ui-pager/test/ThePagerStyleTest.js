@@ -3,9 +3,11 @@
  * Test for ThePagerStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const ThePagerStyle = require('../shim/ThePagerStyle').default
+const { default: ThePagerStyle } = require('../shim/ThePagerStyle')
 
 describe('the-pager-style', () => {
   before(() => {})

@@ -18,7 +18,9 @@ class TheMeta extends React.Component {
   }
 
   get id() {
-    const { id = this._id } = this.props
+    const {
+      props: { id = this._id },
+    } = this
     return id
   }
 
@@ -41,7 +43,9 @@ class TheMeta extends React.Component {
 
   getTitle(options = {}) {
     const { full } = options
-    const { title } = this.props
+    const {
+      props: { title },
+    } = this
     const { title: baseTitle } = this.context || {}
     return [title, full ? baseTitle : null]
       .filter(Boolean)
@@ -50,7 +54,9 @@ class TheMeta extends React.Component {
   }
 
   render() {
-    const { children, render } = this.props
+    const {
+      props: { children, render },
+    } = this
     return (
       <React.Fragment>
         {render({ title: this.getTitle() })}

@@ -3,7 +3,9 @@
  * Test for TheSeat.
  * Runs with mocha.
  */
-const { doesNotThrow, equal, notEqual, ok, throws } = require('assert').strict
+const {
+  strict: { doesNotThrow, equal, notEqual, ok, throws },
+} = require('assert')
 const TheSeat = require('../lib/TheSeat')
 
 describe('the-seat', function() {

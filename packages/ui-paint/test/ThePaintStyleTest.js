@@ -3,9 +3,11 @@
  * Test for ThePaintStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const ThePaintStyle = require('../shim/ThePaintStyle').default
+const { default: ThePaintStyle } = require('../shim/ThePaintStyle')
 
 describe('the-paint-style', () => {
   before(() => {})

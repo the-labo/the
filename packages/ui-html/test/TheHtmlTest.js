@@ -3,9 +3,11 @@
  * Test for TheHtml.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheHtml = require('../shim/TheHtml').default
+const { default: TheHtml } = require('../shim/TheHtml')
 
 describe('the-html', () => {
   before(() => {})

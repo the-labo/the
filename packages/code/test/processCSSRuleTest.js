@@ -3,7 +3,9 @@
  * Test for processCSSRule.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const processCSSRule = require('../lib/processors/processCSSRule')
 
 describe('process-c-s-s-rule', () => {

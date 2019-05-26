@@ -3,7 +3,9 @@
  * Test for processJSStrict.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const processJSStrict = require('../lib/processors/processJSStrict')
 
 describe('process-j-s-strict', () => {

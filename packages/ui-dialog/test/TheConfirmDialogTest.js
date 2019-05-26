@@ -3,9 +3,11 @@
  * Test for TheConfirmDialog.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheConfirmDialog = require('../shim/TheConfirmDialog').default
+const { default: TheConfirmDialog } = require('../shim/TheConfirmDialog')
 
 describe('the-confirm-dialog', () => {
   before(() => {})

@@ -72,7 +72,7 @@ class State {
    * @returns {*}
    */
   set(values) {
-    const current = this.$$state
+    const { $$state: current } = this
     const skip =
       !!current && Object.entries(values).every(([k, v]) => current[k] === v)
     if (skip) {

@@ -54,7 +54,9 @@ const withQuery = asClassMixin((Class) => {
 
         const { history } = this
         if (history.location.search !== search) {
-          const { hash } = history.location
+          const {
+            location: { hash },
+          } = history
           history.replace({
             hash,
             search,

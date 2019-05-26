@@ -6,10 +6,6 @@
  */
 const walk = require('./walk')
 
-const x = [1, 2, 3]
-const { a } = x[1]
-console.log(a)
-
 const finder = Object.freeze(
   /** @lends module:@the-/ast.finder */
   {
@@ -37,7 +33,7 @@ const finder = Object.freeze(
     },
     findLastElement: (node) => {
       const { elements } = node
-      const lastElement = [...elements].reverse()[0]
+      const [lastElement] = [...elements].reverse()
       return lastElement || null
     },
   },

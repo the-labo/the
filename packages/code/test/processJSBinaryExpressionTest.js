@@ -1,9 +1,12 @@
-'use strict'
 /**
  * Test for processJSBinaryExpression.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+'use strict'
+/* eslint-disable no-template-curly-in-string */
+const {
+  strict: { equal },
+} = require('assert')
 const processJSBinaryExpression = require('../lib/processors/processJSBinaryExpression')
 
 describe('process-js-logical-expression', () => {
@@ -57,12 +60,11 @@ describe('process-js-logical-expression', () => {
     equal(await processJSBinaryExpression("z = `aaa` + 'bbb'"), 'z = `aaabbb`')
     equal(
       await processJSBinaryExpression('z = `aaa${x}` + "bbb"'),
-      // eslint-disable-next-line no-template-curly-in-string
+
       'z = `aaa${x}bbb`',
     )
     equal(
       await processJSBinaryExpression('z = `aaa${x}nn` + " bbb"'),
-      // eslint-disable-next-line no-template-curly-in-string
       'z = `aaa${x}nn bbb`',
     )
     equal(await processJSBinaryExpression('z = `a` + `b`'), 'z = `ab`')
@@ -74,9 +76,7 @@ describe('process-js-logical-expression', () => {
       'const a = `aaabbb\\``',
     )
     equal(
-      // eslint-disable-next-line no-template-curly-in-string
       await processJSBinaryExpression('const a = "aaa" + \'bbb${x}\''),
-      // eslint-disable-next-line no-template-curly-in-string
       'const a = `aaabbb\\${x}`',
     )
   })

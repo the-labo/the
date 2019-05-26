@@ -3,9 +3,11 @@
  * Test for TheMain.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheMain = require('../shim/TheMain').default
+const { default: TheMain } = require('../shim/TheMain')
 
 describe('the-main', () => {
   before(() => {})

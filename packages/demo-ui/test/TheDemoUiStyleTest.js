@@ -3,9 +3,11 @@
  * Test for TheDemoUiStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheDemoUiStyle = require('../shim/TheDemoUiStyle').default
+const { default: TheDemoUiStyle } = require('../shim/TheDemoUiStyle')
 
 describe('the-demo-ui-style', () => {
   before(() => {})

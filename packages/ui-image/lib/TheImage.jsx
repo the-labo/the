@@ -24,7 +24,9 @@ class TheImage extends React.Component {
   }
 
   componentDidMount() {
-    const { resizeInterval } = this.props
+    const {
+      props: { resizeInterval },
+    } = this
     if (resizeInterval > 0) {
       this.resizeTimer = setInterval(this.resize, resizeInterval)
     }
@@ -32,7 +34,9 @@ class TheImage extends React.Component {
 
   componentDidUpdate(prevProps) {
     const { src: prevSrc } = prevProps
-    const { src } = this.props
+    const {
+      props: { src },
+    } = this
     const isNewSrc = src && src !== prevSrc
     if (isNewSrc) {
       this.setState({
@@ -47,13 +51,17 @@ class TheImage extends React.Component {
   }
 
   handleError(e) {
-    const { onError } = this.props
+    const {
+      props: { onError },
+    } = this
     onError && onError(e)
     this.setState({ failed: true, loading: false })
   }
 
   handleLoad(e) {
-    const { onLoad } = this.props
+    const {
+      props: { onLoad },
+    } = this
     onLoad && onLoad(e)
     this.setState({ loading: false })
     this.resize()
@@ -122,12 +130,16 @@ class TheImage extends React.Component {
   }
 
   resize() {
-    const elm = this.elmRef.current
+    const {
+      elmRef: { current: elm },
+    } = this
     if (!elm) {
       return
     }
     const elmRect = elm.getBoundingClientRect()
-    const { actualHeight, actualWidth, loading } = this.state
+    const {
+      state: { actualHeight, actualWidth, loading },
+    } = this
     if (loading) {
       return
     }

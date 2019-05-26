@@ -22,7 +22,7 @@ function cleanupReturnAwaitOnFunctionNode(FunctionNode, { get, replace }) {
     [],
   )
   if (FunctionNode.body && FunctionNode.body.type === 'AwaitExpression') {
-    const AwaitNode = FunctionNode.body
+    const { body: AwaitNode } = FunctionNode
     return replace(
       [AwaitNode.start, AwaitNode.end],
       get([AwaitNode.argument.start, AwaitNode.argument.end]),
@@ -38,7 +38,7 @@ function cleanupReturnAwaitOnFunctionNode(FunctionNode, { get, replace }) {
     }
     const isAwait = Return.argument.type === 'AwaitExpression'
     if (isAwait) {
-      const AwaitNode = Return.argument
+      const { argument: AwaitNode } = Return
       return replace(
         [AwaitNode.start, AwaitNode.end],
         get([AwaitNode.argument.start, AwaitNode.argument.end]),

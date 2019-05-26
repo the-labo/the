@@ -3,9 +3,11 @@
  * Test for TheYesNoDialog.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheYesNoDialog = require('../shim/TheYesNoDialog').default
+const { default: TheYesNoDialog } = require('../shim/TheYesNoDialog')
 
 describe('the-yes-no-dialog', () => {
   before(() => {})

@@ -102,7 +102,7 @@ class TheLogResource extends TheResource {
     // Flush Logs if needed
     {
       const WATERMARK = 100
-      const counts = Object.keys(Log.data[resourceName]).length
+      const { length: counts } = Object.keys(Log.data[resourceName])
       const needsFlush = WATERMARK <= counts && counts % WATERMARK === 0
       if (needsFlush) {
         void this.flushData()

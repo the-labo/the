@@ -3,7 +3,9 @@
  * Test for processCSSProp.
  * Runs with mocha.
  */
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const processCSSProp = require('../lib/processors/processCSSProp')
 
 describe('process-c-s-s-props', () => {

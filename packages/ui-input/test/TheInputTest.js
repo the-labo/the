@@ -3,9 +3,11 @@
  * Test for TheInput.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheInput = require('../shim/TheInput').default
+const { default: TheInput } = require('../shim/TheInput')
 
 describe('the-input', () => {
   before(() => {})

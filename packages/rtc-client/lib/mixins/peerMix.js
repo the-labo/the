@@ -42,7 +42,7 @@ function peerMix(Class) {
         },
         [PeerEvents.DATA_CHANNEL]: (e) => {
           const { channel } = e
-          const channelName = channel.label
+          const { label: channelName } = channel
           peer.extra.channels[channelName] = channel
           onDataChannel && onDataChannel(channel)
         },
@@ -191,7 +191,9 @@ function peerMix(Class) {
 
     async destroyPeer(pid) {
       const peer = this.getPeer(pid)
-      const { channels } = peer.extra
+      const {
+        extra: { channels },
+      } = peer
       for (const [, channel] of Object.entries(channels)) {
         await channel.close()
       }

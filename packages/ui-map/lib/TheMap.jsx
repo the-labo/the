@@ -16,7 +16,7 @@ import DivIcon from './classes/DivIcon'
 import TileLayer from './classes/TileLayer'
 import TheMapMarker from './TheMapMarker'
 
-const tappableSize = ThemeValues.tappableHeight
+const { tappableHeight: tappableSize } = ThemeValues
 const nullOrUndefined = (v) => v === null || typeof v === 'undefined'
 
 /**
@@ -37,8 +37,12 @@ class TheMap extends React.Component {
     }
     this.mapEventHandlers = {
       click: (e) => {
-        const { onClick } = this.props
-        const { lat, lng } = e.latlng
+        const {
+          props: { onClick },
+        } = this
+        const {
+          latlng: { lat, lng },
+        } = e
         onClick && onClick({ lat, lng })
       },
       load: () => {},
@@ -77,7 +81,9 @@ class TheMap extends React.Component {
       }
       return
     }
-    const { layerControlPosition } = this.props
+    const {
+      props: { layerControlPosition },
+    } = this
     const mapLayerControl = (this.mapLayerControl = L.control.layers(
       Object.assign(
         {},
@@ -196,7 +202,9 @@ class TheMap extends React.Component {
       }
       return
     }
-    const { zoomControlPosition } = this.props
+    const {
+      props: { zoomControlPosition },
+    } = this
     const mapZoomControl = (this.mapZoomControl = L.control.zoom({
       position: zoomControlPosition,
     }))
@@ -204,22 +212,26 @@ class TheMap extends React.Component {
   }
 
   componentDidMount() {
-    const mapElm = this.mapElmRef.current
+    const {
+      mapElmRef: { current: mapElm },
+    } = this
     const map = L.map(mapElm.id, {
       fadeAnimation: false,
       zoomControl: false,
     })
     this.map = map
     const {
-      lat,
-      layerControlEnabled,
-      layers,
-      lng,
-      markers,
-      onLeafletMap,
-      zoom,
-      zoomControlEnabled,
-    } = this.props
+      props: {
+        lat,
+        layerControlEnabled,
+        layers,
+        lng,
+        markers,
+        onLeafletMap,
+        zoom,
+        zoomControlEnabled,
+      },
+    } = this
     onLeafletMap && onLeafletMap(map)
     for (const [event, handler] of Object.entries(this.mapEventHandlers)) {
       map.on(event, handler)
@@ -339,7 +351,9 @@ class TheMap extends React.Component {
 
   needsChange(options = {}) {
     const { force = false } = options
-    const { onChange } = this.props
+    const {
+      props: { onChange },
+    } = this
     const mapData = this.getMapData()
     if (!mapData) {
       return

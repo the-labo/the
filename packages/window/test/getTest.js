@@ -3,7 +3,9 @@
  * Test for get.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const get = require('../lib/get')
 
 describe('get', () => {

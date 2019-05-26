@@ -3,9 +3,11 @@
  * Test for TheMenu.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheMenu = require('../shim/TheMenu').default
+const { default: TheMenu } = require('../shim/TheMenu')
 
 describe('the-menu', () => {
   before(() => {})

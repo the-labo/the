@@ -32,7 +32,11 @@ function spaceOnCommentNode(CommentNode, options = {}) {
           return replace([CommentNode.start + 2, CommentNode.end], SEPARATOR)
         }
         {
-          const { column, line } = CommentNode.loc.start
+          const {
+            loc: {
+              start: { column, line },
+            },
+          } = CommentNode
           const before = content.split(EOL)[line - 2]
           const needsSpace = !/^\s*\/\/|^\s*$/.test(before)
           if (needsSpace) {

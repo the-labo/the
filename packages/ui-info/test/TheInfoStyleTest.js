@@ -3,9 +3,11 @@
  * Test for TheInfoStyle.
  * Runs with mocha.
  */
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const TheInfoStyle = require('../shim/TheInfoStyle').default
+const { default: TheInfoStyle } = require('../shim/TheInfoStyle')
 
 describe('the-info-style', () => {
   before(() => {})

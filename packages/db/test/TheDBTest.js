@@ -4,7 +4,9 @@
  * Runs with mocha.
  */
 const asleep = require('asleep')
-const { deepEqual, equal, ok } = require('assert').strict
+const {
+  strict: { deepEqual, equal, ok },
+} = require('assert')
 const { TheRefresher } = require('@the-/refresher')
 const {
   DataTypes: { ENTITY, STRING },
@@ -73,7 +75,9 @@ describe('the-db', function() {
 
     db.load(UserResource, 'User')
 
-    const { User } = db.resources
+    const {
+      resources: { User },
+    } = db
 
     const user = await User.create({ password: 'hogehoge', username: 'foo' })
     equal(typeof user.id, 'string')
@@ -144,7 +148,9 @@ describe('the-db', function() {
 
     db.load(UserResource, 'User')
 
-    const { User } = db.resources
+    const {
+      resources: { User },
+    } = db
     const refresher = new TheRefresher(
       (entity) => {
         refreshed.push(entity)
@@ -284,7 +290,9 @@ describe('the-db', function() {
       env,
       resources: { A: AResource, B: BResource },
     })
-    const { A, B } = db.resources
+    const {
+      resources: { A, B },
+    } = db
     const b01 = await B.create({ name: 'b01' })
     const b02 = await B.create({ name: 'b02' })
     await A.create({ b: b01 })

@@ -4,7 +4,9 @@
  * Runs with mocha.
  */
 const amkdirp = require('amkdirp')
-const { equal, ok } = require('assert').strict
+const {
+  strict: { equal, ok },
+} = require('assert')
 const fs = require('fs')
 const path = require('path')
 const parse = require('../lib/parse')
