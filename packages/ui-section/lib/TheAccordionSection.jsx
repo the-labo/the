@@ -12,7 +12,7 @@ import TheSection from './TheSection'
  */
 class TheAccordionSection extends React.Component {
   static Body(props) {
-    let { children, className } = props
+    const { children, className } = props
     return (
       <TheSection.Body
         {...htmlAttributesFor(props, { except: ['className'] })}

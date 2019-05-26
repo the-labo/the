@@ -28,9 +28,11 @@ const components = {
   event: class TheCalendarEvent extends React.Component {
     render() {
       const {
-        event: { id, node = null },
-        title,
-      } = this.props
+        props: {
+          event: { id, node = null },
+          title,
+        },
+      } = this
       return (
         <div className='the-calendar-event' data-calendar-event-id={id}>
           {title}
@@ -56,7 +58,9 @@ class TheCalendar extends React.Component {
   }
 
   get title() {
-    const { date, lang, view } = this.props
+    const {
+      props: { date, lang, view },
+    } = this
     switch (view) {
       case 'day':
         return theDate(date, { lang }).format('LL')
@@ -82,7 +86,9 @@ class TheCalendar extends React.Component {
   }
 
   dateForAmount(amount) {
-    const { date, view } = this.props
+    const {
+      props: { date, view },
+    } = this
     switch (view) {
       case 'day':
         return theDate(date)
@@ -106,7 +112,9 @@ class TheCalendar extends React.Component {
   }
 
   handleEventSelect(selected) {
-    const { events } = this.props
+    const {
+      props: { events },
+    } = this
     for (const event of events) {
       const { id, onSelect } = event
       const hit = id === selected.id || event === selected

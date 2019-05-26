@@ -26,12 +26,12 @@ const DefaultValues = require('./constants/DefaultValues')
 const IOEvents = require('./constants/IOEvents')
 const {
   callbacksProxy,
-  toControllerModuleBind,
   controllerSpecsFor,
   ctxInjector,
   langDetector,
   serversideRendering,
   streamPool,
+  toControllerModuleBind,
 } = require('./helpers')
 const { clientMix, infoMix, ioMix, keepMix, metricsMix } = require('./mixins')
 const { ConnectionStore, SessionStore } = require('./stores')

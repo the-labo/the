@@ -27,7 +27,7 @@ TheTableStyle.defaultProps = {
 }
 
 TheTableStyle.data = (options) => {
-  let {
+  const {
     dominantColor = ThemeValues.dominantColor,
     lightBorderColor = ThemeValues.lightBorderColor,
     lightTextColor = ThemeValues.lightTextColor,

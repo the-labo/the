@@ -56,7 +56,7 @@ class TheInputToggle extends React.PureComponent {
 
   render() {
     const { props } = this
-    let {
+    const {
       className,
       error,
       id = this.id,

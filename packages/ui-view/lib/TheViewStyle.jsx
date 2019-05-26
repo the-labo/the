@@ -27,7 +27,7 @@ TheViewStyle.defaultProps = {
 }
 
 TheViewStyle.data = (options) => {
-  let {
+  const {
     backgroundColor = ThemeValues.backgroundColor,
     contentWidth = ThemeValues.contentWidth,
     lightTextColor = ThemeValues.lightTextColor,

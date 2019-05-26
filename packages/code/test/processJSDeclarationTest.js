@@ -133,20 +133,28 @@ const a = () => {
     )
   })
 
-  it('Compile object pattern', async () => {
+  it('Combine object pattern', async () => {
     equal(
       await processJSDeclaration(`
 const {a} = x
+const d = 1
 const {b} = x
+console.log(c)
 y = () => {
   const {c} = x
   const {d} = x
+  console.log(c,d)
 }
 `),
       `
 const {a, b} = x
+const d = 1
+
+console.log(c)
 y = () => {
-  const {c, d} = x  
+  const {c, d} = x
+  
+  console.log(c,d)
 }
 `,
     )
@@ -162,6 +170,26 @@ const {e2: {f2}} = x
 `),
       `
 const {a, b:bb, b:bbb, c=2, d: dd=3, e: {f}, e2: {f2}} = x
+
+`,
+    )
+  })
+
+  it('Combine as grouping', async () => {
+    equal(
+      await processJSDeclaration(`
+const {a} = x
+const {b} = x
+doSomething()
+const {c} = x
+const {d} = x
+`),
+      `
+const {a, b} = x
+
+doSomething()
+const {c, d} = x
+
 `,
     )
   })

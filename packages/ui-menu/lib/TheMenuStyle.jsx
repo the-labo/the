@@ -27,7 +27,7 @@ TheMenuStyle.defaultProps = {
 }
 
 TheMenuStyle.data = (options) => {
-  let {
+  const {
     activeOpacity = ThemeValues.activeOpacity,
     animationDuration = 200,
     backgroundColor = ThemeValues.backgroundColor,

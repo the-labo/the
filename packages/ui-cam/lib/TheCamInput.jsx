@@ -40,7 +40,9 @@ class TheCamInput extends React.Component {
   componentWillUnmount() {}
 
   handleReject(e) {
-    const { onReject } = this.props
+    const {
+      props: { onReject },
+    } = this
     this.setState({
       rejected: true,
     })
@@ -148,7 +150,9 @@ class TheCamInput extends React.Component {
   }
 
   async handleClear() {
-    const { name, onUpdate } = this.props
+    const {
+      props: { name, onUpdate },
+    } = this
     onUpdate({ [name]: null })
   }
 
@@ -163,7 +167,7 @@ class TheCamInput extends React.Component {
       const { convertFile, name, onUpdate } = props
       const File = get('File', { strict: true })
       const blob = await media.takePhoto({})
-      let filename = newId({ prefix: 'the-cam-input-value' })
+      const filename = newId({ prefix: 'the-cam-input-value' })
       const file = await convertFile(
         new File([blob], filename, {
           type: blob.type,
@@ -176,10 +180,16 @@ class TheCamInput extends React.Component {
   }
 
   async handleUploadChange(e) {
-    const { convertFile, name, onUpdate } = this.props
+    const {
+      props: { convertFile, name, onUpdate },
+    } = this
     this.setState({ busy: true })
     try {
-      const [file] = e.target.files
+      const {
+        target: {
+          files: [file],
+        },
+      } = e
       const converted = file ? await convertFile(file) : null
       onUpdate({ [name]: converted })
     } finally {

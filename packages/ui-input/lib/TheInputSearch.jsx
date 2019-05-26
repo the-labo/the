@@ -31,8 +31,8 @@ class TheInputSearch extends React.PureComponent {
 
   render() {
     const { props, state } = this
-    let { value } = props
-    let { open } = state
+    const { value } = props
+    const { open } = state
     return (
       <TheInputText
         {...props}

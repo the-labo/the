@@ -27,7 +27,9 @@ class TheChatForm extends React.Component {
   }
 
   handleSubmit() {
-    const { onSubmit, values } = this.props
+    const {
+      props: { onSubmit, values },
+    } = this
     const { text } = values
     if (!text) {
       return
@@ -36,7 +38,9 @@ class TheChatForm extends React.Component {
   }
 
   handleUpdate(values) {
-    const { onUpdate } = this.props
+    const {
+      props: { onUpdate },
+    } = this
     onUpdate && onUpdate(values)
   }
 

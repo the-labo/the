@@ -27,7 +27,7 @@ TheFooterStyle.defaultProps = {
 }
 
 TheFooterStyle.data = (options) => {
-  let {
+  const {
     lightBorderColor = ThemeValues.lightBorderColor,
     lightLinkColor = ThemeValues.lightLinkColor,
   } = options

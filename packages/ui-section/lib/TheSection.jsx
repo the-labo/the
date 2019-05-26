@@ -12,7 +12,7 @@ import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
  */
 class TheSection extends React.Component {
   static Body(props) {
-    let { children, className } = props
+    const { children, className } = props
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}

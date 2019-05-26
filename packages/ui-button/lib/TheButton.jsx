@@ -38,7 +38,9 @@ class TheButton extends React.Component {
   }
 
   handleClick(e) {
-    const { minInterval, onClick, onSubmit } = this.props
+    const {
+      props: { minInterval, onClick, onSubmit },
+    } = this
     if (this.lastClickedAt) {
       const sinceLast = new Date() - this.lastClickedAt
       const tooSoon = sinceLast < minInterval
@@ -57,7 +59,9 @@ class TheButton extends React.Component {
   }
 
   handleKeyDown(e) {
-    const { onClick, onKeyDown, onSubmit } = this.props
+    const {
+      props: { onClick, onKeyDown, onSubmit },
+    } = this
     switch (e.keyCode) {
       case 32: // Space key
         e.preventDefault()

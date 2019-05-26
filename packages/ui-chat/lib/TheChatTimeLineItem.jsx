@@ -20,7 +20,9 @@ class TheChatTimeLineItem extends React.Component {
   }
 
   handleWho() {
-    const { onWho, who } = this.props
+    const {
+      props: { onWho, who },
+    } = this
     onWho && onWho(who)
   }
 

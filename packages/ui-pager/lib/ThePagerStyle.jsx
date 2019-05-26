@@ -27,7 +27,7 @@ ThePagerStyle.defaultProps = {
 }
 
 ThePagerStyle.data = (options) => {
-  let {
+  const {
     backgroundColor = ThemeValues.backgroundColor,
     dominantColor = ThemeValues.dominantColor,
     size = 24,

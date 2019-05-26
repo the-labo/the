@@ -39,8 +39,10 @@ class TheChatTimeLine extends React.Component {
   }
 
   componentDidMount() {
-    const scroller = this.scrollerRef.current
-    const { handleScroll } = this
+    const {
+      scrollerRef: { current: scroller },
+      handleScroll,
+    } = this
     scroller.addEventListener('scroll', handleScroll)
 
     this.scrollToBottom()
@@ -65,8 +67,10 @@ class TheChatTimeLine extends React.Component {
   }
 
   componentWillUnmount() {
-    const scroller = this.scrollerRef.current
-    const { handleScroll } = this
+    const {
+      scrollerRef: { current: scroller },
+      handleScroll,
+    } = this
     scroller.removeEventListener('scroll', handleScroll)
   }
 
@@ -74,14 +78,18 @@ class TheChatTimeLine extends React.Component {
     const { offsetHeight, scrollHeight, scrollTop } = e.target || e.srcElement
     const reachTop = scrollTop === 0
     if (reachTop) {
-      const { onScrollReachTop } = this.props
+      const {
+        props: { onScrollReachTop },
+      } = this
       onScrollReachTop && onScrollReachTop()
     }
 
     const fromBottom = scrollHeight - offsetHeight - scrollTop
     const reachBottom = fromBottom <= 0
     if (reachBottom) {
-      const { onScrollReachBottom } = this.props
+      const {
+        props: { onScrollReachBottom },
+      } = this
       onScrollReachBottom && onScrollReachBottom()
     }
 
@@ -160,7 +168,9 @@ class TheChatTimeLine extends React.Component {
   }
 
   scrollToBottom() {
-    const scroller = this.scrollerRef.current
+    const {
+      scrollerRef: { current: scroller },
+    } = this
     if (scroller) {
       scroller.scrollTop = scroller.scrollHeight
     }

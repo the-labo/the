@@ -71,8 +71,8 @@ class TheStep extends React.Component {
   render() {
     const { props } = this
     const stepCount = this.getStepCount()
-    const { step } = props
     const {
+      step,
       backText = 'Back',
       children,
       className,

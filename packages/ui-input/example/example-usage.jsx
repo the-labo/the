@@ -25,8 +25,8 @@ class ExampleComponent extends React.PureComponent {
   render() {
     const {
       state: { values },
+      onUpdate,
     } = this
-    const { onUpdate } = this
 
     const {
       Checkbox,

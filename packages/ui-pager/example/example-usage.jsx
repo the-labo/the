@@ -12,7 +12,7 @@ class ExampleComponent extends React.PureComponent {
 
   render() {
     const s = this
-    let { state } = s
+    const { state } = s
     return (
       <div>
         <ThePagerStyle />

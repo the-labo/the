@@ -36,7 +36,7 @@ const githubRepoFor = (pkg) => {
 class TheComponentDemo extends React.PureComponent {
   render() {
     const { props } = this
-    let {
+    const {
       children,
       className,
       id,

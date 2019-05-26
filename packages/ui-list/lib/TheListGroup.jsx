@@ -9,7 +9,7 @@ import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
  */
 class TheListGroup extends React.Component {
   static Body(props) {
-    let { children, className } = props
+    const { children, className } = props
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}
@@ -22,7 +22,7 @@ class TheListGroup extends React.Component {
   }
 
   static Header(props) {
-    let { children, className } = props
+    const { children, className } = props
     return (
       <h3
         {...htmlAttributesFor(props, { except: ['className'] })}

@@ -339,8 +339,8 @@ class TheDB extends TheDBBase {
   async drop() {
     const {
       driver,
-      resources,
       env: { database, dialect, storage },
+      resources,
     } = this
     switch (String(dialect).trim()) {
       case 'mysql': {

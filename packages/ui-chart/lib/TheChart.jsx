@@ -18,8 +18,10 @@ class TheChart extends React.Component {
   }
 
   componentDidMount() {
-    const { data, onChat, options, type } = this.props
-    const canvas = this.canvasRef.current
+    const {
+      props: { data, onChat, options, type },
+      canvasRef: { current: canvas },
+    } = this
     const chart = (this.chart = new Chart(canvas, {
       data,
       options,

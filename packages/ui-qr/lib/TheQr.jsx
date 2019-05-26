@@ -61,7 +61,7 @@ class TheQr extends React.PureComponent {
   render() {
     const s = this
     const { props, state } = s
-    let { alt, asLink, children, className, displaySize, size, text } = props
+    const { alt, asLink, children, className, displaySize, size, text } = props
     const style = { height: displaySize || size, width: displaySize || size }
 
     const Wrapper = asLink

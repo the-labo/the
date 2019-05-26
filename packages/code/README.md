@@ -97,6 +97,7 @@ tryExample().catch((err) => console.error(err))
 - module:@the-/code.ast
   - [.nodes](./doc/api/api.md#module_@the-/code.ast.nodes)
 - module:@the-/code.ast.nodes
+  - [.{combineObjectPatternOnStatementNode}()](./doc/api/api.md#module_@the-/code.ast.nodes.{combineObjectPatternOnStatementNode})
   - [.cleanupEmptyArrayPatternParamsOnFunctionNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupEmptyArrayPatternParamsOnFunctionNode)
   - [.cleanupEmptyObjectPatternParamsOnFunctionNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupEmptyObjectPatternParamsOnFunctionNode)
   - [.cleanupExtOnImportDeclarationNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupExtOnImportDeclarationNode)

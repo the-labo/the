@@ -38,7 +38,7 @@ class TheInput extends React.PureComponent {
 
   render() {
     const { props } = this
-    let {
+    const {
       autoComplete,
       autoFocus,
       children,

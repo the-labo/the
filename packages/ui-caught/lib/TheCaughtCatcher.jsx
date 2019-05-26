@@ -10,7 +10,9 @@ class TheCaughtCatcher extends React.Component {
   }
 
   componentDidCatch(error, info) {
-    const { title } = this.props
+    const {
+      props: { title },
+    } = this
     const caughtError = {
       message: [title, error.message || error].join(' - '),
       stack: error.stack,
@@ -24,8 +26,10 @@ class TheCaughtCatcher extends React.Component {
   }
 
   render() {
-    const { children } = this.props
-    const { caught } = this.state
+    const {
+      props: { children },
+      state: { caught },
+    } = this
     if (!caught) {
       return children
     }

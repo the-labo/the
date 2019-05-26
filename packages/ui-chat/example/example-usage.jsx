@@ -86,7 +86,9 @@ class ExampleComponent extends React.Component {
 
   componentDidMount() {
     this._timer = setInterval(() => {
-      const { items } = this.state
+      const {
+        state: { items },
+      } = this
       if (window.DISABLE_THE_CHAT_PUSH) {
         return
       }
@@ -113,7 +115,9 @@ class ExampleComponent extends React.Component {
   }
 
   render() {
-    const { items } = this.state
+    const {
+      state: { items },
+    } = this
     return (
       <div>
         <TheVideoStyle />
