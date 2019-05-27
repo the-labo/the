@@ -25,8 +25,11 @@ function processJSIf(content, options = {}) {
 
       const IfStatements = finder.findByTypes(parsed, [NodeTypes.IfStatement])
 
-      const hasBody = (node) => {
-        const { body, end, start } = node
+      const hasContent = (node) => {
+        const { body, end, expression, start } = node
+        if (expression) {
+          return true
+        }
         if (!body) {
           return false
         }
@@ -41,7 +44,7 @@ function processJSIf(content, options = {}) {
       for (const IfStatement of IfStatements.reverse()) {
         const { alternate, consequent } = IfStatement
         const hasEmptyAlternate =
-          !!alternate && !alternate.alternate && !hasBody(alternate)
+          !!alternate && !alternate.alternate && !hasContent(alternate)
         if (hasEmptyAlternate) {
           return replace([consequent.end, alternate.end], '')
         }
@@ -50,7 +53,7 @@ function processJSIf(content, options = {}) {
           alternate &&
           alternate.type === NodeTypes.IfStatement &&
           !alternate.alternate &&
-          !hasBody(alternate.consequent)
+          !hasContent(alternate.consequent)
         if (hasEmptyElseIf) {
           return replace([consequent.end, alternate.consequent.end], '')
         }

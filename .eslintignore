@@ -255,6 +255,7 @@ var/
 /packages/ui-table/doc/demo/bundle.js
 /packages/ui-table/lib/index.jsx
 /packages/ui-theme-style/doc/demo/bundle.js
+/packages/ui-theme-style/lib/TheThemeStyle.jsx
 /packages/ui-theme-style/lib/index.jsx
 /packages/ui-toast/doc/demo/bundle.js
 /packages/ui-toast/lib/index.jsx

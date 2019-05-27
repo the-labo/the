@@ -25,6 +25,18 @@ describe('process-js-if', () => {
       "if (x) { console.log('x2') } else if (y) {} else { /* this is else */}",
     )
   })
+  it('Without body', async () => {
+    equal(
+      await processJSIf(`
+if (x > 1) a()
+else b()
+`),
+      `
+if (x > 1) a()
+else b()
+`,
+    )
+  })
 })
 
 /* global describe, before, after, it */
