@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/loc/lib"
+      "path": "lib"
     },
     "name": "@the-/loc",
     "order": 2,
     "typicalname": "loc",
-    "version": "15.4.8"
+    "version": "15.4.9"
   },
   {
     "description": "Locale resolver",
@@ -43,8 +43,8 @@
     "memberof": "module:@the-/loc.TheLoc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 34,
-      "path": "/Users/okuni/Projects/the/packages/loc/lib"
+      "lineno": 33,
+      "path": "lib"
     },
     "name": "bind",
     "order": 5,
@@ -78,8 +78,8 @@
     "memberof": "module:@the-/loc.TheLoc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 58,
-      "path": "/Users/okuni/Projects/the/packages/loc/lib"
+      "lineno": 57,
+      "path": "lib"
     },
     "name": "register",
     "order": 6,
@@ -150,8 +150,8 @@
     "memberof": "module:@the-/loc.TheLoc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 73,
-      "path": "/Users/okuni/Projects/the/packages/loc/lib"
+      "lineno": 72,
+      "path": "lib"
     },
     "name": "resolve",
     "order": 7,
@@ -196,8 +196,8 @@
     "memberof": "module:@the-/loc.TheLoc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 115,
-      "path": "/Users/okuni/Projects/the/packages/loc/lib"
+      "lineno": 114,
+      "path": "lib"
     },
     "name": "toCompound",
     "order": 8,
@@ -222,8 +222,8 @@
     "memberof": "module:@the-/loc.TheLoc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 127,
-      "path": "/Users/okuni/Projects/the/packages/loc/lib"
+      "lineno": 126,
+      "path": "lib"
     },
     "name": "validate",
     "order": 9,
@@ -237,8 +237,8 @@
     "memberof": "module:@the-/loc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/loc/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheLoc",
     "order": 3,
@@ -254,7 +254,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/loc/lib/helpers"
+      "path": "lib/helpers"
     },
     "name": "helpers",
     "order": 10,
@@ -268,8 +268,8 @@
     "memberof": "module:@the-/loc",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/loc/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -303,8 +303,8 @@
     "memberof": "module:@the-/loc",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/loc/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,
@@ -318,8 +318,8 @@
     "memberof": "module:@the-/loc.helpers",
     "meta": {
       "filename": "mergedLocales.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/loc/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "mergedLocales",
     "order": 11,
@@ -352,8 +352,8 @@
     "memberof": "module:@the-/loc.helpers",
     "meta": {
       "filename": "resolveInScope.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/loc/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "resolveInScope",
     "order": 12,
@@ -386,8 +386,8 @@
     "memberof": "module:@the-/loc.helpers",
     "meta": {
       "filename": "toCompoundLocale.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/loc/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "toCompoundLocale",
     "order": 13,
@@ -420,8 +420,8 @@
     "memberof": "module:@the-/loc.helpers",
     "meta": {
       "filename": "validateLocales.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/loc/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "checkLocales",
     "order": 14,

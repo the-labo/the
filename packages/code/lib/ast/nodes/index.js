@@ -20,6 +20,8 @@ const cleanupUnusedOnImportNode_ = require('./cleanupUnusedOnImportNode')
 const cleanupUnusedOnObjectPatternNode_ = require('./cleanupUnusedOnObjectPatternNode')
 const cleanupUnusedOnVariableNode_ = require('./cleanupUnusedOnVariableNode')
 const combineObjectPatternOnStatementNode_ = require('./combineObjectPatternOnStatementNode')
+const combineOnVariableDeclarationNodes_ = require('./combineOnVariableDeclarationNodes')
+const combinePropertiesOnObjectPattern_ = require('./combinePropertiesOnObjectPattern')
 const commentModuleOnProgramNode_ = require('./commentModuleOnProgramNode')
 const findCJSExportsAssignmentsExpressionOnProgramNode_ = require('./findCJSExportsAssignmentsExpressionOnProgramNode')
 const findJSDocAnnotationsInCommendNode_ = require('./findJSDocAnnotationsInCommendNode')
@@ -57,6 +59,8 @@ exports.cleanupUnusedOnImportNode = cleanupUnusedOnImportNode_
 exports.cleanupUnusedOnObjectPatternNode = cleanupUnusedOnObjectPatternNode_
 exports.cleanupUnusedOnVariableNode = cleanupUnusedOnVariableNode_
 exports.combineObjectPatternOnStatementNode = combineObjectPatternOnStatementNode_
+exports.combineOnVariableDeclarationNodes = combineOnVariableDeclarationNodes_
+exports.combinePropertiesOnObjectPattern = combinePropertiesOnObjectPattern_
 exports.commentModuleOnProgramNode = commentModuleOnProgramNode_
 exports.findCJSExportsAssignmentsExpressionOnProgramNode = findCJSExportsAssignmentsExpressionOnProgramNode_
 exports.findJSDocAnnotationsInCommendNode = findJSDocAnnotationsInCommendNode_
@@ -94,6 +98,8 @@ module.exports = {
   cleanupUnusedOnObjectPatternNode: cleanupUnusedOnObjectPatternNode_,
   cleanupUnusedOnVariableNode: cleanupUnusedOnVariableNode_,
   combineObjectPatternOnStatementNode: combineObjectPatternOnStatementNode_,
+  combineOnVariableDeclarationNodes: combineOnVariableDeclarationNodes_,
+  combinePropertiesOnObjectPattern: combinePropertiesOnObjectPattern_,
   commentModuleOnProgramNode: commentModuleOnProgramNode_,
   findCJSExportsAssignmentsExpressionOnProgramNode: findCJSExportsAssignmentsExpressionOnProgramNode_,
   findJSDocAnnotationsInCommendNode: findJSDocAnnotationsInCommendNode_,

@@ -13,6 +13,17 @@ function combinePropertiesOnObjectPattern(objectPatternNode, { get, replace }) {
   if (objectPatternNode.type !== NodeTypes.ObjectPattern) {
     return
   }
+  for (const property of objectPatternNode.properties) {
+    const { value } = property
+    const isNestedObjectPattern =
+      !!value && value.type === NodeTypes.ObjectPattern
+    if (isNestedObjectPattern) {
+      const combined = combinePropertiesOnObjectPattern(value, { get, replace })
+      if (combined) {
+        return combined
+      }
+    }
+  }
   const objectPropertyHash = objectPatternNode.properties
     .filter(
       (property) =>

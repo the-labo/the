@@ -215,6 +215,15 @@ const { a } = yy`),
 const { w, y:yy, y: { a }} = x
 `,
     )
+
+    equal(
+      await processJSDeclaration(`
+const { a: { b: {d} }, a: {b: {e}}} = x
+`),
+      `
+const { a: { b: { d, e } } } = x
+`,
+    )
   })
 
   it('Destructuring with alias usage', async () => {

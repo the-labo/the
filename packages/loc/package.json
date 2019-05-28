@@ -1,7 +1,7 @@
 {
   "name": "@the-/loc",
   "description": "Locale resolver for the-framework",
-  "version": "15.4.8",
+  "version": "15.4.9",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
