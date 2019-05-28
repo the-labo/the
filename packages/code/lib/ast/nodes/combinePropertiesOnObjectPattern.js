@@ -25,9 +25,10 @@ function combinePropertiesOnObjectPattern(objectPatternNode, { get, replace }) {
       const {
         key: { name: keyName },
       } = property
+      const existing = reduced.hasOwnProperty(keyName) ? reduced[keyName] : []
       return {
         ...reduced,
-        [keyName]: [...(reduced[keyName] || []), property],
+        [keyName]: [...existing, property],
       }
     }, {})
 

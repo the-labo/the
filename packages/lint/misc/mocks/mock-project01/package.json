@@ -1,8 +1,8 @@
 {
   "name": "@example/mock-project",
   "devDependencies": {
-    "hogehoge": "*",
+    "aglob": "*",
     "fugefuge": "*",
-    "aglob": "*"
+    "hogehoge": "*"
   }
 }

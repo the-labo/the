@@ -29,7 +29,8 @@ function code(pattern, options = {}) {
       }
       return filenames
     } catch (e) {
-      logger.error(e.message || e)
+      const { message, stack } = e
+      logger.error(`${message}\n${stack}`)
     }
   }
 }

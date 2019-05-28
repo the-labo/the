@@ -31,7 +31,7 @@ function normalizeAssignmentOnVariableDeclarationNode(
     return
   }
   const scopes =
-    declaration.init.type === NodeTypes.Identifier
+    declaration.init && declaration.init.type === NodeTypes.Identifier
       ? scopesFor(declaration.init.name, declaration.id)
       : {}
   const AssignmentPatterns = declaration.id.properties

@@ -1,7 +1,7 @@
 {
   "name": "@the-/polyfill",
   "description": "Polyfill of the-frameworks",
-  "version": "15.4.5",
+  "version": "15.4.7",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",

@@ -227,6 +227,11 @@ const { w, y:yy, y: { a }} = x
       'const { a = b, b = 1 } = x',
     )
     equal('const {a:{b:{c}}, d = c} = x', 'const {a:{b:{c}}, d = c} = x')
+
+    equal(
+      await processJSDeclaration('const { a = b, b = 1, d, n:nn, ...c } = x'),
+      'const { a = b, b = 1, d, n:nn, ...c } = x',
+    )
   })
 
   it('Combine nested', async () => {
