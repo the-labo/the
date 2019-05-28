@@ -277,7 +277,10 @@ class TheMap extends React.Component {
   }
 
   createLayer(url, { title, ...options } = {}) {
-    const layer = new TileLayer(url, options)
+    const {
+      props: { TileLayerClass = TileLayer },
+    } = this
+    const layer = new TileLayerClass(url, options)
     layer.title = title
     layer.bindHandlers()
     return layer
@@ -431,6 +434,8 @@ class TheMap extends React.Component {
 }
 
 TheMap.propTypes = {
+  /** Class for tile layer */
+  TileLayerClass: PropTypes.func,
   /** Disable all interactions */
   freezed: PropTypes.bool,
   /** Height of map */
@@ -448,6 +453,7 @@ TheMap.propTypes = {
 }
 
 TheMap.defaultProps = {
+  TileLayerClass: TileLayer,
   freezed: false,
   height: null,
   layerControlEnabled: true,

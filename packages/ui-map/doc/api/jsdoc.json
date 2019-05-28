@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-map",
     "order": 0,
     "typicalname": "uiMap",
-    "version": "15.4.5"
+    "version": "15.4.8"
   },
   {
     "description": "Geo map for the-components",
@@ -21,8 +21,8 @@
     "longname": "TheMap",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 25,
-      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+      "lineno": 26,
+      "path": "lib"
     },
     "name": "TheMap",
     "order": 1,
@@ -38,10 +38,10 @@
     "meta": {
       "filename": "DivIcon.jsx",
       "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/ui-map/lib/classes"
+      "path": "lib/classes"
     },
     "name": "DivIcon",
-    "order": 11,
+    "order": 12,
     "scope": "global"
   },
   {
@@ -54,10 +54,10 @@
     "meta": {
       "filename": "TileLayer.jsx",
       "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/ui-map/lib/classes"
+      "path": "lib/classes"
     },
     "name": "TileLayer",
-    "order": 12,
+    "order": 13,
     "scope": "global"
   },
   {
@@ -68,12 +68,27 @@
     "meta": {
       "filename": "TheMapStyle.jsx",
       "lineno": 12,
-      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+      "path": "lib"
     },
     "name": "TheMapStyle",
-    "order": 9,
+    "order": 10,
     "params": [],
     "scope": "global"
+  },
+  {
+    "description": "Class for tile layer",
+    "id": "TheMap.propTypes.TileLayerClass",
+    "kind": "member",
+    "longname": "TheMap.propTypes.TileLayerClass",
+    "memberof": "TheMap.propTypes",
+    "meta": {
+      "filename": "TheMap.jsx",
+      "lineno": 438,
+      "path": "lib"
+    },
+    "name": "TileLayerClass",
+    "order": 2,
+    "scope": "static"
   },
   {
     "description": "Disable all interactions",
@@ -83,11 +98,11 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 418,
-      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+      "lineno": 440,
+      "path": "lib"
     },
     "name": "freezed",
-    "order": 2,
+    "order": 3,
     "scope": "static"
   },
   {
@@ -98,11 +113,11 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 420,
-      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+      "lineno": 442,
+      "path": "lib"
     },
     "name": "height",
-    "order": 3,
+    "order": 4,
     "scope": "static"
   },
   {
@@ -113,11 +128,11 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 422,
-      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+      "lineno": 444,
+      "path": "lib"
     },
     "name": "lat",
-    "order": 4,
+    "order": 5,
     "scope": "static"
   },
   {
@@ -128,11 +143,11 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 424,
-      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+      "lineno": 446,
+      "path": "lib"
     },
     "name": "lng",
-    "order": 5,
+    "order": 6,
     "scope": "static"
   },
   {
@@ -143,11 +158,11 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 426,
-      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+      "lineno": 448,
+      "path": "lib"
     },
     "name": "onLeafletMap",
-    "order": 6,
+    "order": 7,
     "scope": "static"
   },
   {
@@ -158,11 +173,11 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 428,
-      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+      "lineno": 450,
+      "path": "lib"
     },
     "name": "spinning",
-    "order": 7,
+    "order": 8,
     "scope": "static"
   },
   {
@@ -173,11 +188,11 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 430,
-      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+      "lineno": 452,
+      "path": "lib"
     },
     "name": "width",
-    "order": 8,
+    "order": 9,
     "scope": "static"
   },
   {
@@ -189,10 +204,10 @@
     "meta": {
       "filename": "TheMapStyle.jsx",
       "lineno": 32,
-      "path": "/Users/okuni/Projects/the/packages/ui-map/lib"
+      "path": "lib"
     },
     "name": "options",
-    "order": 10,
+    "order": 11,
     "scope": "static"
   }
 ]

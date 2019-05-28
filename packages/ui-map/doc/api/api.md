@@ -33,7 +33,7 @@
 ## @the-/ui-map
 Geo map for the-components
 
-**Version**: 15.4.5  
+**Version**: 15.4.8  
 <a name="TheMap"></a>
 
 ## TheMap
@@ -55,4 +55,4 @@ Geo map for the-components
 ## TheMapStyle()
 Style for TheMap
 
-**Kind**: global function
+**Kind**: global function  
