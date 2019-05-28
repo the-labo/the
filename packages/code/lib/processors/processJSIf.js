@@ -26,8 +26,11 @@ function processJSIf(content, options = {}) {
       const IfStatements = finder.findByTypes(parsed, [NodeTypes.IfStatement])
 
       const hasContent = (node) => {
-        const { body, end, expression, start } = node
+        const { body, consequent, end, expression, start } = node
         if (expression) {
+          return true
+        }
+        if (consequent) {
           return true
         }
         if (!body) {

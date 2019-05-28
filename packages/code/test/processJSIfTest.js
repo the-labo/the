@@ -37,6 +37,33 @@ else b()
 `,
     )
   })
+
+  it('From bug report', async () => {
+    equal(
+      await processJSIf(`
+if (
+  isTextAreaHide(clientHeight, height, getActiveElementPosition()) &&
+  activeElementNeedsKeyboard()
+) {
+  ipcRenderer.send('lift', height)
+} else if (!activeElementNeedsKeyboard()) {
+  ipcRenderer.send('lift', 0)
+  hideKeyboard()
+}
+`),
+      `
+if (
+  isTextAreaHide(clientHeight, height, getActiveElementPosition()) &&
+  activeElementNeedsKeyboard()
+) {
+  ipcRenderer.send('lift', height)
+} else if (!activeElementNeedsKeyboard()) {
+  ipcRenderer.send('lift', 0)
+  hideKeyboard()
+}
+`,
+    )
+  })
 })
 
 /* global describe, before, after, it */
