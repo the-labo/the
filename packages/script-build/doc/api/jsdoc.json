@@ -11,7 +11,7 @@
     },
     "name": "@the-/script-build",
     "order": 1,
-    "version": "15.4.26"
+    "version": "15.4.28"
   },
   {
     "description": "Build project",

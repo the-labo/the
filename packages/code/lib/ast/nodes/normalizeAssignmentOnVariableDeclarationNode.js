@@ -21,6 +21,7 @@ function normalizeAssignmentOnVariableDeclarationNode(
     Object.assign(
       {},
       ...(ObjectPattern.properties || {})
+        .filter((property) => property.type !== NodeTypes.RestElement)
         .filter((property) => property.value.type === NodeTypes.Identifier)
         .map((property) => ({
           [property.value.name]: [namespace, property.value.name].join('.'),

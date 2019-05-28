@@ -136,7 +136,7 @@ const a = () => {
   it('Combine object pattern', async () => {
     equal(
       await processJSDeclaration(`
-const {a} = x
+const {a, ...e} = x
 const d = 1
 const {b} = x
 console.log(c)
@@ -147,7 +147,7 @@ y = () => {
 }
 `),
       `
-const {a, b} = x
+const {a, b, ...e} = x
 const d = 1
 
 console.log(c)
@@ -227,6 +227,15 @@ const { w, y:yy, y: { a }} = x
       'const { a = b, b = 1 } = x',
     )
     equal('const {a:{b:{c}}, d = c} = x', 'const {a:{b:{c}}, d = c} = x')
+  })
+
+  it('Combine nested', async () => {
+    equal(
+      await processJSDeclaration(
+        'const { a: {b}, e, a: {c = 2, d: {f}}, d } = x',
+      ),
+      'const { a: { b, c = 2, d: {f} }, e, d } = x',
+    )
   })
 })
 

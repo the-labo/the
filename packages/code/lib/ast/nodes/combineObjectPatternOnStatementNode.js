@@ -4,59 +4,16 @@
  */
 'use strict'
 
-const { EOL } = require('os')
 const {
   constants: { NodeTypes },
   finder,
 } = require('@the-/ast')
+const combineOnVariableDeclarationNodes = require('./combineOnVariableDeclarationNodes')
 
 /** @lends module:@the-/code.ast.nodes.combineObjectPatternOnStatementNode */
 function combineObjectPatternOnStatementNode(Statement, { get, replace }) {
   if (!Statement) {
     return
-  }
-
-  const doCombine = (VariableDeclarations) => {
-    if (VariableDeclarations.length < 2) {
-      return
-    }
-    const [first, ...restDeclarations] = VariableDeclarations
-    const {
-      declarations: [{ init }],
-      kind,
-    } = first
-    const last = VariableDeclarations[VariableDeclarations.length - 1]
-    const properties = VariableDeclarations.map((v) => v.declarations[0])
-      .reduce(
-        (properties, declaration) => [
-          ...properties,
-          ...declaration.id.properties,
-        ],
-        [],
-      )
-      .filter(Boolean)
-    const id = `{${properties
-      .map((property) => get(property.range))
-      .join(', ')}}`
-
-    return replace(
-      [first.start, last.end],
-      [
-        `${kind} ${id} = ${get([init.start, init.end])}`,
-        ...restDeclarations.map((cur, i, arr) => {
-          const prev = arr[i - 1] || first
-          return get([prev.end, cur.start])
-        }),
-      ]
-        .join('')
-        .split(EOL)
-        .filter((line, i, lines) => {
-          const prev = lines[i - 1]
-          const skip = line === '' && i > 0 && prev === ''
-          return !skip
-        })
-        .join(EOL),
-    )
   }
 
   const doNest = (VariableDeclarations) => {
@@ -137,7 +94,13 @@ function combineObjectPatternOnStatementNode(Statement, { get, replace }) {
     }
     for (const [, group] of Object.entries(hash)) {
       for (const [, VariableDeclarations] of Object.entries(group)) {
-        const combined = doCombine(VariableDeclarations)
+        const combined = combineOnVariableDeclarationNodes(
+          VariableDeclarations,
+          {
+            get,
+            replace,
+          },
+        )
         if (combined) {
           return combined
         }
