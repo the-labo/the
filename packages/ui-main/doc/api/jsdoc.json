@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-main/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-main",
     "order": 0,
     "typicalname": "uiMain",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Main for the-components",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheMain.jsx",
       "lineno": 13,
-      "path": "/Users/okuni/Projects/the/packages/ui-main/lib"
+      "path": "lib"
     },
     "name": "TheMain",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheMainStyle.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-main/lib"
+      "path": "lib"
     },
     "name": "TheMainStyle",
     "order": 3,
@@ -51,8 +51,8 @@
     "memberof": "TheMain.propTypes",
     "meta": {
       "filename": "TheMain.jsx",
-      "lineno": 36,
-      "path": "/Users/okuni/Projects/the/packages/ui-main/lib"
+      "lineno": 39,
+      "path": "lib"
     },
     "name": "spinning",
     "order": 2,
@@ -67,7 +67,7 @@
     "meta": {
       "filename": "TheMainStyle.jsx",
       "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/ui-main/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 4,

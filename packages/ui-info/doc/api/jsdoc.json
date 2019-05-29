@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-info/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-info",
     "order": 0,
     "typicalname": "uiInfo",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Info of the-component",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheInfo.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-info/lib"
+      "path": "lib"
     },
     "name": "TheInfo",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheInfoStyle.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-info/lib"
+      "path": "lib"
     },
     "name": "TheInfoStyle",
     "order": 5,
@@ -51,8 +51,8 @@
     "memberof": "TheInfo.propTypes",
     "meta": {
       "filename": "TheInfo.jsx",
-      "lineno": 64,
-      "path": "/Users/okuni/Projects/the/packages/ui-info/lib"
+      "lineno": 67,
+      "path": "lib"
     },
     "name": "data",
     "order": 2,
@@ -66,8 +66,8 @@
     "memberof": "TheInfo.propTypes",
     "meta": {
       "filename": "TheInfo.jsx",
-      "lineno": 66,
-      "path": "/Users/okuni/Projects/the/packages/ui-info/lib"
+      "lineno": 69,
+      "path": "lib"
     },
     "name": "keys",
     "order": 3,
@@ -81,8 +81,8 @@
     "memberof": "TheInfo.propTypes",
     "meta": {
       "filename": "TheInfo.jsx",
-      "lineno": 68,
-      "path": "/Users/okuni/Projects/the/packages/ui-info/lib"
+      "lineno": 71,
+      "path": "lib"
     },
     "name": "title",
     "order": 4,
@@ -97,7 +97,7 @@
     "meta": {
       "filename": "TheInfoStyle.jsx",
       "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/ui-info/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 6,

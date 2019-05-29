@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/util-style/lib"
+      "path": "lib"
     },
     "name": "@the-/util-style",
     "order": 0,
     "typicalname": "utilStyle",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "description": "Convert style into style string",
@@ -22,8 +22,8 @@
     "longname": "styleString",
     "meta": {
       "filename": "styleString.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-style/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "styleString",
     "order": 1,

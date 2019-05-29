@@ -24,7 +24,7 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "7.0.0",
     "@babel/runtime": "^7.4.5",
-    "@the-/code": "^15.5.61",
+    "@the-/code": "^15.5.64",
     "@the-/tmp": "^15.4.5",
     "ababel": "^6.0.0",
     "aglob": "^3.0.2",

@@ -5,7 +5,7 @@
 ## @the-/run
 Script runner for the-framework
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/run](#module_@the-/run)
@@ -28,7 +28,7 @@ Script runner
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-| [options.inspect] | <code>number</code> \| <code>Boolean</code> |  | Inspect port |
+| [options.inspect] | <code>number</code> \| <code>boolean</code> |  | Inspect port |
 
 <a name="module_@the-/run.create"></a>
 
@@ -57,4 +57,5 @@ Create and run
 | Param | Type | Default |
 | --- | --- | --- |
 | filename | <code>string</code> |  | 
-| [options] | <code>Object</code> | <code>{}</code> |
+| [options] | <code>Object</code> | <code>{}</code> | 
+

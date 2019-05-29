@@ -1,12 +1,13 @@
+'use strict'
 /**
  * Test for ~~~~package_unscoped_name@pascalcase~~~~Style.
  * Runs with mocha.
  */
-'use strict'
-
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const React = require('react')
-const ~~~~package_unscoped_name@pascalcase~~~~Style = require('../shim/~~~~package_unscoped_name@pascalcase~~~~Style').default
+const { default: ~~~~package_unscoped_name@pascalcase~~~~Style } = require('../shim/~~~~package_unscoped_name@pascalcase~~~~Style')
 
 describe('~~~~package_unscoped_name~~~~-style', () => {
   before(() => {})

@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-video",
     "order": 0,
     "typicalname": "uiVideo",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Video for the-components",
@@ -21,8 +21,8 @@
     "longname": "TheVideo",
     "meta": {
       "filename": "TheVideo.jsx",
-      "lineno": 12,
-      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
+      "lineno": 13,
+      "path": "lib"
     },
     "name": "TheVideo",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheVideoStyle.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
+      "path": "lib"
     },
     "name": "TheVideoStyle",
     "order": 10,
@@ -51,8 +51,8 @@
     "memberof": "TheVideo.propTypes",
     "meta": {
       "filename": "TheVideo.jsx",
-      "lineno": 167,
-      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
+      "lineno": 180,
+      "path": "lib"
     },
     "name": "asLink",
     "order": 2,
@@ -66,8 +66,8 @@
     "memberof": "TheVideo.propTypes",
     "meta": {
       "filename": "TheVideo.jsx",
-      "lineno": 169,
-      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
+      "lineno": 182,
+      "path": "lib"
     },
     "name": "height",
     "order": 3,
@@ -81,8 +81,8 @@
     "memberof": "TheVideo.propTypes",
     "meta": {
       "filename": "TheVideo.jsx",
-      "lineno": 171,
-      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
+      "lineno": 184,
+      "path": "lib"
     },
     "name": "notFoundMessage",
     "order": 4,
@@ -96,8 +96,8 @@
     "memberof": "TheVideo.propTypes",
     "meta": {
       "filename": "TheVideo.jsx",
-      "lineno": 173,
-      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
+      "lineno": 186,
+      "path": "lib"
     },
     "name": "onError",
     "order": 5,
@@ -111,8 +111,8 @@
     "memberof": "TheVideo.propTypes",
     "meta": {
       "filename": "TheVideo.jsx",
-      "lineno": 175,
-      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
+      "lineno": 188,
+      "path": "lib"
     },
     "name": "onLoad",
     "order": 6,
@@ -126,8 +126,8 @@
     "memberof": "TheVideo.propTypes",
     "meta": {
       "filename": "TheVideo.jsx",
-      "lineno": 178,
-      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
+      "lineno": 191,
+      "path": "lib"
     },
     "name": "resizeInterval",
     "order": 7,
@@ -141,8 +141,8 @@
     "memberof": "TheVideo.propTypes",
     "meta": {
       "filename": "TheVideo.jsx",
-      "lineno": 180,
-      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
+      "lineno": 193,
+      "path": "lib"
     },
     "name": "scale",
     "order": 8,
@@ -156,8 +156,8 @@
     "memberof": "TheVideo.propTypes",
     "meta": {
       "filename": "TheVideo.jsx",
-      "lineno": 182,
-      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
+      "lineno": 195,
+      "path": "lib"
     },
     "name": "videoRef",
     "order": 9,
@@ -172,7 +172,7 @@
     "meta": {
       "filename": "TheVideoStyle.jsx",
       "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/ui-video/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 11,

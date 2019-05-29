@@ -5,7 +5,7 @@
 ## @the-/date
 Date utility for the-framework
 
-**Version**: 15.4.5  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/date](#module_@the-/date)

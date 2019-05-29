@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-frame",
     "order": 0,
     "typicalname": "uiFrame",
-    "version": "15.4.3"
+    "version": "15.4.7"
   },
   {
     "description": "iFrame of the-components",
@@ -21,8 +21,8 @@
     "longname": "TheFrame",
     "meta": {
       "filename": "TheFrame.jsx",
-      "lineno": 15,
-      "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
+      "lineno": 16,
+      "path": "lib"
     },
     "name": "TheFrame",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheFrameStyle.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
+      "path": "lib"
     },
     "name": "TheFrameStyle",
     "order": 7,
@@ -51,8 +51,8 @@
     "memberof": "TheFrame.propTypes",
     "meta": {
       "filename": "TheFrame.jsx",
-      "lineno": 134,
-      "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
+      "lineno": 143,
+      "path": "lib"
     },
     "name": "alt",
     "order": 2,
@@ -66,8 +66,8 @@
     "memberof": "TheFrame.propTypes",
     "meta": {
       "filename": "TheFrame.jsx",
-      "lineno": 136,
-      "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
+      "lineno": 145,
+      "path": "lib"
     },
     "name": "embed",
     "order": 3,
@@ -81,8 +81,8 @@
     "memberof": "TheFrame.propTypes",
     "meta": {
       "filename": "TheFrame.jsx",
-      "lineno": 138,
-      "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
+      "lineno": 147,
+      "path": "lib"
     },
     "name": "onLoad",
     "order": 4,
@@ -96,8 +96,8 @@
     "memberof": "TheFrame.propTypes",
     "meta": {
       "filename": "TheFrame.jsx",
-      "lineno": 140,
-      "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
+      "lineno": 149,
+      "path": "lib"
     },
     "name": "spinning",
     "order": 5,
@@ -111,8 +111,8 @@
     "memberof": "TheFrame.propTypes",
     "meta": {
       "filename": "TheFrame.jsx",
-      "lineno": 142,
-      "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
+      "lineno": 151,
+      "path": "lib"
     },
     "name": "src",
     "order": 6,
@@ -127,7 +127,7 @@
     "meta": {
       "filename": "TheFrameStyle.jsx",
       "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/ui-frame/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 8,

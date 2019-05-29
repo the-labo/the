@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/handle/lib"
+      "path": "lib"
     },
     "name": "@the-/handle",
     "order": 3,
     "typicalname": "handle",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "description": "Shared action handler",
@@ -54,8 +54,8 @@
     "memberof": "module:@the-/handle.TheHandle",
     "meta": {
       "filename": "TheHandle.js",
-      "lineno": 48,
-      "path": "/Users/okuni/Projects/the/packages/handle/lib"
+      "lineno": 47,
+      "path": "lib"
     },
     "name": "load",
     "order": 6,
@@ -100,8 +100,8 @@
     "memberof": "module:@the-/handle.TheHandle",
     "meta": {
       "filename": "TheHandle.js",
-      "lineno": 97,
-      "path": "/Users/okuni/Projects/the/packages/handle/lib"
+      "lineno": 96,
+      "path": "lib"
     },
     "name": "loadFromMapping",
     "order": 7,
@@ -126,8 +126,8 @@
     "memberof": "module:@the-/handle.TheHandle",
     "meta": {
       "filename": "TheHandle.js",
-      "lineno": 117,
-      "path": "/Users/okuni/Projects/the/packages/handle/lib"
+      "lineno": 116,
+      "path": "lib"
     },
     "name": "setAttributes",
     "order": 8,
@@ -151,8 +151,8 @@
     "memberof": "module:@the-/handle.toHandleSceneClass~HandleSceneClass",
     "meta": {
       "filename": "toHandleSceneClass.js",
-      "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/handle/lib"
+      "lineno": 21,
+      "path": "lib"
     },
     "name": "load",
     "order": 11,
@@ -186,8 +186,8 @@
     "memberof": "module:@the-/handle",
     "meta": {
       "filename": "TheHandle.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/handle/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheHandle",
     "order": 4,
@@ -200,8 +200,8 @@
     "memberof": "module:@the-/handle",
     "meta": {
       "filename": "helpers.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/handle/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "helpers",
     "order": 2,
@@ -215,8 +215,8 @@
     "memberof": "module:@the-/handle",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/handle/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -250,8 +250,8 @@
     "memberof": "module:@the-/handle",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/handle/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,
@@ -265,8 +265,8 @@
     "memberof": "module:@the-/handle",
     "meta": {
       "filename": "toHandleSceneClass.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/handle/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "toHandleSceneClass",
     "order": 9,
@@ -279,8 +279,8 @@
     "memberof": "module:@the-/handle.toHandleSceneClass",
     "meta": {
       "filename": "toHandleSceneClass.js",
-      "lineno": 16,
-      "path": "/Users/okuni/Projects/the/packages/handle/lib"
+      "lineno": 15,
+      "path": "lib"
     },
     "name": "HandleSceneClass",
     "order": 10,

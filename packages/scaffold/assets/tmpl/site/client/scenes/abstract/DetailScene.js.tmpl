@@ -1,5 +1,6 @@
 /**
  * DetailScene
+ * @memberof module:~~~~package_name~~~~/client.scenes.abstract
  * @class DetailScene
  */
 'use strict'
@@ -12,10 +13,10 @@ import Scene from './Scene'
 @withReady
 class DetailSceneBase extends Scene {}
 
-/** @lends DetailScene */
+/** @lends module:~~~~package_name~~~~/client.scenes.abstract.DetailScene */
 class DetailScene extends DetailSceneBase {
   async dealWith(id) {
-    throw new Error(`Not implemented`)
+    throw new Error('Not implemented')
   }
 
   @withBusy.while

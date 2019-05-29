@@ -1,5 +1,6 @@
 /**
  * ConnectionRetryScene
+ * @memberof module:~~~~package_name~~~~/client.scenes
  * @class ConnectionRetryScene
  */
 'use strict'
@@ -12,8 +13,12 @@ import Scene from './abstract/Scene'
 @bindScope('connection.retry')
 class ConnectionRetrySceneBase extends Scene {}
 
-/** @lends ConnectionRetryScene */
+/** @lends module:~~~~package_name~~~~/client.scenes.ConnectionRetryScene */
 class ConnectionRetryScene extends ConnectionRetrySceneBase {
+  start() {
+    this.set({ active: true, busy: false })
+  }
+
   @withBusy.while
   async doExec() {
     await this.reloadLocation()

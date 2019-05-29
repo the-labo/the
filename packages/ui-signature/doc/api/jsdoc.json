@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-signature/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-signature",
     "order": 0,
     "typicalname": "uiSignature",
-    "version": "15.4.3"
+    "version": "15.4.7"
   },
   {
     "description": "Signature pad of the-components",
@@ -21,8 +21,8 @@
     "longname": "TheSignature",
     "meta": {
       "filename": "TheSignature.jsx",
-      "lineno": 17,
-      "path": "/Users/okuni/Projects/the/packages/ui-signature/lib"
+      "lineno": 18,
+      "path": "lib"
     },
     "name": "TheSignature",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheSignatureStyle.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-signature/lib"
+      "path": "lib"
     },
     "name": "TheSignatureStyle",
     "order": 2,
@@ -52,7 +52,7 @@
     "meta": {
       "filename": "TheSignatureStyle.jsx",
       "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/ui-signature/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 3,

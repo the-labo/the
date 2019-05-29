@@ -29,7 +29,7 @@
 ## @the-/ui-repeatable
 Repeatable of the-component
 
-**Version**: 15.4.4  
+**Version**: 15.4.7  
 <a name="TheRepeatable"></a>
 
 ## TheRepeatable
@@ -41,4 +41,4 @@ Repeatable of the-component
 ## TheRepeatableStyle()
 Style for TheRepeatable
 
-**Kind**: global function
+**Kind**: global function  

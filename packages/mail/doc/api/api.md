@@ -20,7 +20,7 @@
 ## @the-/mail
 Mail client for the-framework
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/mail](#module_@the-/mail)
@@ -105,4 +105,4 @@ Alias of [create](#module_@the-/mail.create)
 <a name="toLowerKeys"></a>
 
 ## toLowerKeys()
-**Kind**: global function
+**Kind**: global function  

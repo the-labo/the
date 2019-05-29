@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-view/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-view",
     "order": 0,
     "typicalname": "uiView",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "View of the-components",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheView.jsx",
       "lineno": 16,
-      "path": "/Users/okuni/Projects/the/packages/ui-view/lib"
+      "path": "lib"
     },
     "name": "TheView",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheViewStyle.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-view/lib"
+      "path": "lib"
     },
     "name": "TheViewStyle",
     "order": 3,
@@ -51,8 +51,8 @@
     "memberof": "TheView.propTypes",
     "meta": {
       "filename": "TheView.jsx",
-      "lineno": 154,
-      "path": "/Users/okuni/Projects/the/packages/ui-view/lib"
+      "lineno": 160,
+      "path": "lib"
     },
     "name": "fixed",
     "order": 2,
@@ -67,7 +67,7 @@
     "meta": {
       "filename": "TheViewStyle.jsx",
       "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/ui-view/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 4,

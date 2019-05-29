@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-body/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-body",
     "order": 0,
     "typicalname": "uiBody",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Body of the-components",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheBody.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-body/lib"
+      "path": "lib"
     },
     "name": "TheBody",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheBodyStyle.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-body/lib"
+      "path": "lib"
     },
     "name": "TheBodyStyle",
     "order": 2,
@@ -52,7 +52,7 @@
     "meta": {
       "filename": "TheBodyStyle.jsx",
       "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/ui-body/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 3,

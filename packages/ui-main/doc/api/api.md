@@ -29,7 +29,7 @@
 ## @the-/ui-main
 Main for the-components
 
-**Version**: 15.4.4  
+**Version**: 15.4.7  
 <a name="TheMain"></a>
 
 ## TheMain
@@ -41,4 +41,4 @@ Main for the-components
 ## TheMainStyle()
 Style for TheMain
 
-**Kind**: global function
+**Kind**: global function  

@@ -13,7 +13,7 @@
     "name": "@the-/date",
     "order": 3,
     "typicalname": "date",
-    "version": "15.4.5"
+    "version": "15.4.7"
   },
   {
     "description": "Date manipulator",

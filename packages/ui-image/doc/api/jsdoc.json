@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-image",
     "order": 0,
     "typicalname": "uiImage",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Image of the-components",
@@ -21,8 +21,8 @@
     "longname": "TheImage",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 12,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+      "lineno": 13,
+      "path": "lib"
     },
     "name": "TheImage",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheImageStyle.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+      "path": "lib"
     },
     "name": "TheImageStyle",
     "order": 10,
@@ -51,8 +51,8 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 150,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+      "lineno": 167,
+      "path": "lib"
     },
     "name": "asLink",
     "order": 2,
@@ -66,8 +66,8 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 152,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+      "lineno": 169,
+      "path": "lib"
     },
     "name": "draggable",
     "order": 3,
@@ -81,8 +81,8 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 154,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+      "lineno": 171,
+      "path": "lib"
     },
     "name": "height",
     "order": 4,
@@ -96,8 +96,8 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 156,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+      "lineno": 173,
+      "path": "lib"
     },
     "name": "notFoundMessage",
     "order": 5,
@@ -111,8 +111,8 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 158,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+      "lineno": 175,
+      "path": "lib"
     },
     "name": "onError",
     "order": 6,
@@ -126,8 +126,8 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 160,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+      "lineno": 177,
+      "path": "lib"
     },
     "name": "onLoad",
     "order": 7,
@@ -141,8 +141,8 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 162,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+      "lineno": 179,
+      "path": "lib"
     },
     "name": "resizeInterval",
     "order": 8,
@@ -156,8 +156,8 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 164,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+      "lineno": 181,
+      "path": "lib"
     },
     "name": "scale",
     "order": 9,
@@ -172,7 +172,7 @@
     "meta": {
       "filename": "TheImageStyle.jsx",
       "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/ui-image/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 11,

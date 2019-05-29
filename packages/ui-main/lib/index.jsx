@@ -3,7 +3,7 @@
  * @description Main for the-components
  * @module @the-/ui-main
  * @typicalname uiMain
- * @version 15.4.5
+ * @version 15.4.7
  */
 'use strict'
 

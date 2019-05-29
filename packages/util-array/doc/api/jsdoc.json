@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/util-array/lib"
+      "path": "lib"
     },
     "name": "@the-/util-array",
     "order": 0,
     "typicalname": "utilArray",
-    "version": "15.4.3"
+    "version": "15.4.7"
   },
   {
     "description": "Map entries with key path",
@@ -26,8 +26,8 @@
     "memberof": "module:@the-/util-array",
     "meta": {
       "filename": "keyPathMap.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-array/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "keyPathMap",
     "order": 1,
@@ -75,8 +75,8 @@
     "memberof": "module:@the-/util-array",
     "meta": {
       "filename": "randomFind.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-array/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "randomFind",
     "order": 2,
@@ -102,8 +102,8 @@
     "memberof": "module:@the-/util-array",
     "meta": {
       "filename": "shuffleSort.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-array/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "shuffleSort",
     "order": 3,
@@ -129,8 +129,8 @@
     "memberof": "module:@the-/util-array",
     "meta": {
       "filename": "uniqueFilter.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-array/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "uniqueFilter",
     "order": 4,

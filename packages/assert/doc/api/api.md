@@ -5,7 +5,7 @@
 ## @the-/assert
 Assert for the-framework
 
-**Version**: 15.4.5  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/assert](#module_@the-/assert)

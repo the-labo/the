@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/hash/lib"
+      "path": "lib"
     },
     "name": "@the-/hash",
     "order": 2,
     "typicalname": "hash",
-    "version": "15.4.3"
+    "version": "15.4.7"
   },
   {
     "id": "module:@the-/hash.TheHash()",
@@ -41,8 +41,8 @@
     "memberof": "module:@the-/hash.TheHash",
     "meta": {
       "filename": "TheHash.js",
-      "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/hash/lib"
+      "lineno": 21,
+      "path": "lib"
     },
     "name": "get",
     "order": 6,
@@ -75,8 +75,8 @@
     "memberof": "module:@the-/hash.TheHash",
     "meta": {
       "filename": "TheHash.js",
-      "lineno": 31,
-      "path": "/Users/okuni/Projects/the/packages/hash/lib"
+      "lineno": 30,
+      "path": "lib"
     },
     "name": "has",
     "order": 7,
@@ -109,8 +109,8 @@
     "memberof": "module:@the-/hash.TheHash",
     "meta": {
       "filename": "TheHash.js",
-      "lineno": 40,
-      "path": "/Users/okuni/Projects/the/packages/hash/lib"
+      "lineno": 39,
+      "path": "lib"
     },
     "name": "set",
     "order": 8,
@@ -144,8 +144,8 @@
     "memberof": "module:@the-/hash.TheHash",
     "meta": {
       "filename": "TheHash.js",
-      "lineno": 56,
-      "path": "/Users/okuni/Projects/the/packages/hash/lib"
+      "lineno": 55,
+      "path": "lib"
     },
     "name": "toProxy",
     "order": 9,
@@ -179,8 +179,8 @@
     "memberof": "module:@the-/hash",
     "meta": {
       "filename": "TheHash.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/hash/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheHash",
     "order": 4,
@@ -194,8 +194,8 @@
     "memberof": "module:@the-/hash",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/hash/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -229,8 +229,8 @@
     "memberof": "module:@the-/hash",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/hash/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,
@@ -253,8 +253,8 @@
     "memberof": "module:@the-/hash",
     "meta": {
       "filename": "proxy.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/hash/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "proxy",
     "order": 3,

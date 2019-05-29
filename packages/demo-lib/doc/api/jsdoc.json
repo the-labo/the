@@ -13,7 +13,7 @@
     "name": "@the-/demo-lib",
     "order": 2,
     "typicalname": "demoLib",
-    "version": "15.4.5"
+    "version": "15.4.7"
   },
   {
     "id": "module:@the-/demo-lib.TheDemoLib",

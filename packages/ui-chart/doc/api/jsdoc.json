@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-chart/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-chart",
     "order": 0,
     "typicalname": "uiChart",
-    "version": "15.4.3"
+    "version": "15.4.7"
   },
   {
     "description": "Chart for the-components",
@@ -21,8 +21,8 @@
     "longname": "TheChart",
     "meta": {
       "filename": "TheChart.jsx",
-      "lineno": 13,
-      "path": "/Users/okuni/Projects/the/packages/ui-chart/lib"
+      "lineno": 14,
+      "path": "lib"
     },
     "name": "TheChart",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheChartStyle.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-chart/lib"
+      "path": "lib"
     },
     "name": "TheChartStyle",
     "order": 5,
@@ -51,8 +51,8 @@
     "memberof": "TheChart.propTypes",
     "meta": {
       "filename": "TheChart.jsx",
-      "lineno": 64,
-      "path": "/Users/okuni/Projects/the/packages/ui-chart/lib"
+      "lineno": 72,
+      "path": "lib"
     },
     "name": "data",
     "order": 2,
@@ -66,8 +66,8 @@
     "memberof": "TheChart.propTypes",
     "meta": {
       "filename": "TheChart.jsx",
-      "lineno": 66,
-      "path": "/Users/okuni/Projects/the/packages/ui-chart/lib"
+      "lineno": 74,
+      "path": "lib"
     },
     "name": "onChart",
     "order": 3,
@@ -81,8 +81,8 @@
     "memberof": "TheChart.propTypes",
     "meta": {
       "filename": "TheChart.jsx",
-      "lineno": 68,
-      "path": "/Users/okuni/Projects/the/packages/ui-chart/lib"
+      "lineno": 76,
+      "path": "lib"
     },
     "name": "options",
     "order": 4,
@@ -97,7 +97,7 @@
     "meta": {
       "filename": "TheChartStyle.jsx",
       "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/ui-chart/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 6,

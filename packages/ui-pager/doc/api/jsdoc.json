@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-pager/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-pager",
     "order": 0,
     "typicalname": "uiPager",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Pager of the-components",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "ThePager.jsx",
       "lineno": 13,
-      "path": "/Users/okuni/Projects/the/packages/ui-pager/lib"
+      "path": "lib"
     },
     "name": "ThePager",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "ThePagerStyle.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-pager/lib"
+      "path": "lib"
     },
     "name": "ThePagerStyle",
     "order": 7,
@@ -51,8 +51,8 @@
     "memberof": "ThePager.propTypes",
     "meta": {
       "filename": "ThePager.jsx",
-      "lineno": 150,
-      "path": "/Users/okuni/Projects/the/packages/ui-pager/lib"
+      "lineno": 153,
+      "path": "lib"
     },
     "name": "hrefPattern",
     "order": 2,
@@ -66,8 +66,8 @@
     "memberof": "ThePager.propTypes",
     "meta": {
       "filename": "ThePager.jsx",
-      "lineno": 152,
-      "path": "/Users/okuni/Projects/the/packages/ui-pager/lib"
+      "lineno": 155,
+      "path": "lib"
     },
     "name": "onChange",
     "order": 3,
@@ -81,8 +81,8 @@
     "memberof": "ThePager.propTypes",
     "meta": {
       "filename": "ThePager.jsx",
-      "lineno": 154,
-      "path": "/Users/okuni/Projects/the/packages/ui-pager/lib"
+      "lineno": 157,
+      "path": "lib"
     },
     "name": "page",
     "order": 4,
@@ -96,8 +96,8 @@
     "memberof": "ThePager.propTypes",
     "meta": {
       "filename": "ThePager.jsx",
-      "lineno": 156,
-      "path": "/Users/okuni/Projects/the/packages/ui-pager/lib"
+      "lineno": 159,
+      "path": "lib"
     },
     "name": "size",
     "order": 5,
@@ -111,8 +111,8 @@
     "memberof": "ThePager.propTypes",
     "meta": {
       "filename": "ThePager.jsx",
-      "lineno": 158,
-      "path": "/Users/okuni/Projects/the/packages/ui-pager/lib"
+      "lineno": 161,
+      "path": "lib"
     },
     "name": "total",
     "order": 6,
@@ -127,7 +127,7 @@
     "meta": {
       "filename": "ThePagerStyle.jsx",
       "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/ui-pager/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 8,

@@ -5,7 +5,7 @@
 ## @the-/util-color
 Color utility for the-framework
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/util-color](#module_@the-/util-color)
@@ -64,4 +64,5 @@ Get text color for background color
 
 | Param | Type |
 | --- | --- |
-| backgroundColor | <code>string</code> |
+| backgroundColor | <code>string</code> | 
+

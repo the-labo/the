@@ -35,7 +35,7 @@
 ## @the-/ui-menu
 Menu of the-components
 
-**Version**: 15.4.3  
+**Version**: 15.4.7  
 <a name="TheDropDownMenu"></a>
 
 ## TheDropDownMenu
@@ -59,4 +59,4 @@ Menu of the-components
 ## TheMenuStyle()
 Style for TheMenu
 
-**Kind**: global function
+**Kind**: global function  

@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-meta/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-meta",
     "order": 0,
     "typicalname": "uiMeta",
-    "version": "15.4.3"
+    "version": "15.4.7"
   },
   {
     "description": "Dynamic meta attribute injector for the-components",
@@ -21,8 +21,8 @@
     "longname": "TheMeta",
     "meta": {
       "filename": "TheMeta.jsx",
-      "lineno": 13,
-      "path": "/Users/okuni/Projects/the/packages/ui-meta/lib"
+      "lineno": 14,
+      "path": "lib"
     },
     "name": "TheMeta",
     "order": 1,
@@ -36,8 +36,8 @@
     "memberof": "TheMeta.propTypes",
     "meta": {
       "filename": "TheMeta.jsx",
-      "lineno": 89,
-      "path": "/Users/okuni/Projects/the/packages/ui-meta/lib"
+      "lineno": 95,
+      "path": "lib"
     },
     "name": "render",
     "order": 2,
@@ -51,8 +51,8 @@
     "memberof": "TheMeta.propTypes",
     "meta": {
       "filename": "TheMeta.jsx",
-      "lineno": 91,
-      "path": "/Users/okuni/Projects/the/packages/ui-meta/lib"
+      "lineno": 97,
+      "path": "lib"
     },
     "name": "title",
     "order": 3,

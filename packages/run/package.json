@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "commander": "^2.20.0",
-    "fkill": "^6.1.0",
+    "fkill": "^6.2.0",
     "pretty-exceptions": "^1.4.0"
   },
   "devDependencies": {

@@ -5,13 +5,13 @@
 ## @the-/video-converter
 Video file converter
 
-**Version**: 15.4.5  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/video-converter](#module_@the-/video-converter)
     * [.TheVideoConverter](#module_@the-/video-converter.TheVideoConverter) ⇐ [<code>MP4Mixed</code>](#module_@the-/video-converter.mixins.mp4Mix..MP4Mixed)
         * [new TheVideoConverter()](#new_module_@the-/video-converter.TheVideoConverter_new)
-        * [.isVideoSrc(src)](#module_@the-/video-converter.TheVideoConverter+isVideoSrc) ⇒ <code>\*</code>
+        * [.isVideoSrc(src)](#module_@the-/video-converter.TheVideoConverter+isVideoSrc) ⇒ <code>boolean</code>
         * [.convert(src, dest, [options])](#module_@the-/video-converter.TheVideoConverter+convert) ⇒ <code>Promise.&lt;\*&gt;</code>
         * [.inspect(filename, [options])](#module_@the-/video-converter.TheVideoConverter+inspect) ⇒ <code>Promise.&lt;\*&gt;</code>
         * [.process(src, [options])](#module_@the-/video-converter.TheVideoConverter+process) ⇒ <code>Promise.&lt;string&gt;</code>
@@ -32,7 +32,7 @@ Video file converter
 
 * [.TheVideoConverter](#module_@the-/video-converter.TheVideoConverter) ⇐ [<code>MP4Mixed</code>](#module_@the-/video-converter.mixins.mp4Mix..MP4Mixed)
     * [new TheVideoConverter()](#new_module_@the-/video-converter.TheVideoConverter_new)
-    * [.isVideoSrc(src)](#module_@the-/video-converter.TheVideoConverter+isVideoSrc) ⇒ <code>\*</code>
+    * [.isVideoSrc(src)](#module_@the-/video-converter.TheVideoConverter+isVideoSrc) ⇒ <code>boolean</code>
     * [.convert(src, dest, [options])](#module_@the-/video-converter.TheVideoConverter+convert) ⇒ <code>Promise.&lt;\*&gt;</code>
     * [.inspect(filename, [options])](#module_@the-/video-converter.TheVideoConverter+inspect) ⇒ <code>Promise.&lt;\*&gt;</code>
     * [.process(src, [options])](#module_@the-/video-converter.TheVideoConverter+process) ⇒ <code>Promise.&lt;string&gt;</code>
@@ -44,14 +44,14 @@ Video converter
 
 <a name="module_@the-/video-converter.TheVideoConverter+isVideoSrc"></a>
 
-#### theVideoConverter.isVideoSrc(src) ⇒ <code>\*</code>
+#### theVideoConverter.isVideoSrc(src) ⇒ <code>boolean</code>
 Detect
 
 **Kind**: instance method of [<code>TheVideoConverter</code>](#module_@the-/video-converter.TheVideoConverter)  
 
-| Param |
-| --- |
-| src | 
+| Param | Type |
+| --- | --- |
+| src | <code>string</code> | 
 
 <a name="module_@the-/video-converter.TheVideoConverter+convert"></a>
 
@@ -152,4 +152,4 @@ Change file extension
 <a name="module_@the-/video-converter.isVideoSrc"></a>
 
 ### videoConverter.isVideoSrc()
-**Kind**: static method of [<code>@the-/video-converter</code>](#module_@the-/video-converter)
+**Kind**: static method of [<code>@the-/video-converter</code>](#module_@the-/video-converter)  

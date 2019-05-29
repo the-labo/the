@@ -21,10 +21,10 @@
 ## @the-/ui-meta
 Dynamic meta attribute injector for the-components
 
-**Version**: 15.4.3  
+**Version**: 15.4.7  
 <a name="TheMeta"></a>
 
 ## TheMeta
 Dynamic meta attribute injector for the-components
 
-**Kind**: global class
+**Kind**: global class  

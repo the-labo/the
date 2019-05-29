@@ -7,7 +7,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-route",
     "order": 0
@@ -20,12 +20,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-route",
     "order": 1,
     "typicalname": "uiRoute",
-    "version": "15.4.3"
+    "version": "15.4.7"
   },
   {
     "description": "Route of the-components",
@@ -34,8 +34,8 @@
     "longname": "TheRoute",
     "meta": {
       "filename": "TheRoute.jsx",
-      "lineno": 16,
-      "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
+      "lineno": 17,
+      "path": "lib"
     },
     "name": "TheRoute",
     "order": 2,
@@ -48,8 +48,8 @@
     "longname": "TheRouteStack",
     "meta": {
       "filename": "TheRouteStack.jsx",
-      "lineno": 15,
-      "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
+      "lineno": 16,
+      "path": "lib"
     },
     "name": "TheRouteStack",
     "order": 9,
@@ -63,7 +63,7 @@
     "meta": {
       "filename": "TheRouteStyle.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
+      "path": "lib"
     },
     "name": "TheRouteStyle",
     "order": 13,
@@ -78,8 +78,8 @@
     "memberof": "TheRoute.propTypes",
     "meta": {
       "filename": "TheRoute.jsx",
-      "lineno": 132,
-      "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
+      "lineno": 140,
+      "path": "lib"
     },
     "name": "animationDuration",
     "order": 3,
@@ -93,8 +93,8 @@
     "memberof": "TheRoute.propTypes",
     "meta": {
       "filename": "TheRoute.jsx",
-      "lineno": 134,
-      "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
+      "lineno": 142,
+      "path": "lib"
     },
     "name": "component",
     "order": 4,
@@ -108,8 +108,8 @@
     "memberof": "TheRoute.propTypes",
     "meta": {
       "filename": "TheRoute.jsx",
-      "lineno": 136,
-      "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
+      "lineno": 144,
+      "path": "lib"
     },
     "name": "exact",
     "order": 5,
@@ -123,8 +123,8 @@
     "memberof": "TheRoute.propTypes",
     "meta": {
       "filename": "TheRoute.jsx",
-      "lineno": 138,
-      "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
+      "lineno": 146,
+      "path": "lib"
     },
     "name": "path",
     "order": 6,
@@ -138,8 +138,8 @@
     "memberof": "TheRoute.propTypes",
     "meta": {
       "filename": "TheRoute.jsx",
-      "lineno": 140,
-      "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
+      "lineno": 148,
+      "path": "lib"
     },
     "name": "scrollToTop",
     "order": 7,
@@ -153,8 +153,8 @@
     "memberof": "TheRoute.propTypes",
     "meta": {
       "filename": "TheRoute.jsx",
-      "lineno": 142,
-      "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
+      "lineno": 150,
+      "path": "lib"
     },
     "name": "strict",
     "order": 8,
@@ -168,8 +168,8 @@
     "memberof": "TheRouteStack.propTypes",
     "meta": {
       "filename": "TheRouteStack.jsx",
-      "lineno": 166,
-      "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
+      "lineno": 186,
+      "path": "lib"
     },
     "name": "direction",
     "order": 10,
@@ -183,8 +183,8 @@
     "memberof": "TheRouteStack.propTypes",
     "meta": {
       "filename": "TheRouteStack.jsx",
-      "lineno": 168,
-      "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
+      "lineno": 188,
+      "path": "lib"
     },
     "name": "onChange",
     "order": 11,
@@ -198,8 +198,8 @@
     "memberof": "TheRouteStack.propTypes",
     "meta": {
       "filename": "TheRouteStack.jsx",
-      "lineno": 170,
-      "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
+      "lineno": 190,
+      "path": "lib"
     },
     "name": "stack",
     "order": 12,
@@ -214,7 +214,7 @@
     "meta": {
       "filename": "TheRouteStyle.jsx",
       "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/ui-route/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 14,

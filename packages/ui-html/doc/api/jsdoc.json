@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-html",
     "order": 0,
     "typicalname": "uiHtml",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Html of the-components",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheHtml.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
+      "path": "lib"
     },
     "name": "TheHtml",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheHtmlStyle.jsx",
       "lineno": 9,
-      "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
+      "path": "lib"
     },
     "name": "TheHtmlStyle",
     "order": 7,
@@ -51,8 +51,8 @@
     "memberof": "TheHtml.propTypes",
     "meta": {
       "filename": "TheHtml.jsx",
-      "lineno": 39,
-      "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
+      "lineno": 42,
+      "path": "lib"
     },
     "name": "className",
     "order": 3,
@@ -66,8 +66,8 @@
     "memberof": "TheHtml.propTypes",
     "meta": {
       "filename": "TheHtml.jsx",
-      "lineno": 41,
-      "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
+      "lineno": 44,
+      "path": "lib"
     },
     "name": "id",
     "order": 4,
@@ -81,8 +81,8 @@
     "memberof": "TheHtml.propTypes",
     "meta": {
       "filename": "TheHtml.jsx",
-      "lineno": 43,
-      "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
+      "lineno": 46,
+      "path": "lib"
     },
     "name": "lang",
     "order": 5,
@@ -96,8 +96,8 @@
     "memberof": "TheHtml.propTypes",
     "meta": {
       "filename": "TheHtml.jsx",
-      "lineno": 45,
-      "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
+      "lineno": 48,
+      "path": "lib"
     },
     "name": "styles",
     "order": 6,
@@ -112,7 +112,7 @@
     "meta": {
       "filename": "TheHtmlStyle.jsx",
       "lineno": 20,
-      "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 8,
@@ -127,7 +127,7 @@
     "meta": {
       "filename": "TheHtml.jsx",
       "lineno": 16,
-      "path": "/Users/okuni/Projects/the/packages/ui-html/lib"
+      "path": "lib"
     },
     "name": "styles",
     "order": 2,

@@ -7,7 +7,7 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-spin/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-spin",
     "order": 0,
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheSpin.jsx",
       "lineno": 28,
-      "path": "/Users/okuni/Projects/the/packages/ui-spin/lib"
+      "path": "lib"
     },
     "name": "TheSpin",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheSpinStyle.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-spin/lib"
+      "path": "lib"
     },
     "name": "TheSpinStyle",
     "order": 5,
@@ -51,8 +51,8 @@
     "memberof": "TheSpin.propTypes",
     "meta": {
       "filename": "TheSpin.jsx",
-      "lineno": 58,
-      "path": "/Users/okuni/Projects/the/packages/ui-spin/lib"
+      "lineno": 61,
+      "path": "lib"
     },
     "name": "cover",
     "order": 2,
@@ -66,8 +66,8 @@
     "memberof": "TheSpin.propTypes",
     "meta": {
       "filename": "TheSpin.jsx",
-      "lineno": 61,
-      "path": "/Users/okuni/Projects/the/packages/ui-spin/lib"
+      "lineno": 64,
+      "path": "lib"
     },
     "name": "size",
     "order": 3,
@@ -81,8 +81,8 @@
     "memberof": "TheSpin.propTypes",
     "meta": {
       "filename": "TheSpin.jsx",
-      "lineno": 63,
-      "path": "/Users/okuni/Projects/the/packages/ui-spin/lib"
+      "lineno": 66,
+      "path": "lib"
     },
     "name": "theme",
     "order": 4,
@@ -97,7 +97,7 @@
     "meta": {
       "filename": "TheSpinStyle.jsx",
       "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/ui-spin/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 6,

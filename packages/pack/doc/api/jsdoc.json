@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/pack/lib"
+      "path": "lib"
     },
     "name": "@the-/pack",
     "order": 3,
     "typicalname": "pack",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "description": "Pack handler",
@@ -32,8 +32,8 @@
     "memberof": "module:@the-/pack.ThePack",
     "meta": {
       "filename": "ThePack.js",
-      "lineno": 30,
-      "path": "/Users/okuni/Projects/the/packages/pack/lib"
+      "lineno": 29,
+      "path": "lib"
     },
     "name": "bind",
     "order": 6,
@@ -57,8 +57,8 @@
     "memberof": "module:@the-/pack.ThePack",
     "meta": {
       "filename": "ThePack.js",
-      "lineno": 42,
-      "path": "/Users/okuni/Projects/the/packages/pack/lib"
+      "lineno": 41,
+      "path": "lib"
     },
     "name": "decode",
     "order": 7,
@@ -94,8 +94,8 @@
     "memberof": "module:@the-/pack.ThePack",
     "meta": {
       "filename": "ThePack.js",
-      "lineno": 67,
-      "path": "/Users/okuni/Projects/the/packages/pack/lib"
+      "lineno": 66,
+      "path": "lib"
     },
     "name": "encode",
     "order": 8,
@@ -130,8 +130,8 @@
     "memberof": "module:@the-/pack",
     "meta": {
       "filename": "ThePack.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/pack/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "ThePack",
     "order": 4,
@@ -144,8 +144,8 @@
     "memberof": "module:@the-/pack",
     "meta": {
       "filename": "Converters.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/pack/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "Converters",
     "order": 0,
@@ -159,8 +159,8 @@
     "memberof": "module:@the-/pack",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/pack/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 2,
@@ -174,8 +174,8 @@
     "memberof": "module:@the-/pack",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/pack/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 1,

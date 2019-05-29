@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/util-db/lib"
+      "path": "lib"
     },
     "name": "@the-/util-db",
     "order": 1,
     "typicalname": "utilDb",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "description": "Eval script",
@@ -23,8 +23,8 @@
     "memberof": "module:@the-/util-db",
     "meta": {
       "filename": "evalScript.js",
-      "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/util-db/lib"
+      "lineno": 3,
+      "path": "lib"
     },
     "name": "evalScript",
     "order": 0,
@@ -47,8 +47,8 @@
     "memberof": "module:@the-/util-db",
     "meta": {
       "filename": "toLowerKeys.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-db/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "toLowerKeys",
     "order": 2,

@@ -5,7 +5,7 @@
 ## @the-/resize
 Resize image files
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/resize](#module_@the-/resize)
@@ -149,4 +149,4 @@ Create a TheResize instance
 ### resize.default()
 Alias of [create](#module_@the-/resize.create)
 
-**Kind**: static method of [<code>@the-/resize</code>](#module_@the-/resize)
+**Kind**: static method of [<code>@the-/resize</code>](#module_@the-/resize)  

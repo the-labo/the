@@ -3,7 +3,7 @@
  * @description Body of the-components
  * @module @the-/ui-body
  * @typicalname uiBody
- * @version 15.4.5
+ * @version 15.4.7
  */
 'use strict'
 

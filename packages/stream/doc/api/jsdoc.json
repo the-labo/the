@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/stream/lib"
+      "path": "lib"
     },
     "name": "@the-/stream",
     "order": 1,
     "typicalname": "stream",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "id": "module:@the-/stream.TheStream()",
@@ -44,8 +44,8 @@
     "memberof": "module:@the-/stream",
     "meta": {
       "filename": "TheStream.js",
-      "lineno": 92,
-      "path": "/Users/okuni/Projects/the/packages/stream/lib"
+      "lineno": 91,
+      "path": "lib"
     },
     "name": "pull",
     "order": 5,
@@ -70,8 +70,8 @@
     "memberof": "module:@the-/stream",
     "meta": {
       "filename": "TheStream.js",
-      "lineno": 104,
-      "path": "/Users/okuni/Projects/the/packages/stream/lib"
+      "lineno": 103,
+      "path": "lib"
     },
     "name": "push",
     "order": 6,
@@ -107,8 +107,8 @@
     "memberof": "module:@the-/stream",
     "meta": {
       "filename": "TheStream.js",
-      "lineno": 123,
-      "path": "/Users/okuni/Projects/the/packages/stream/lib"
+      "lineno": 122,
+      "path": "lib"
     },
     "name": "pushEnd",
     "order": 7,
@@ -131,8 +131,8 @@
     "memberof": "module:@the-/stream",
     "meta": {
       "filename": "Consumer.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/stream/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "Consumer",
     "order": 0,
@@ -145,8 +145,8 @@
     "memberof": "module:@the-/stream",
     "meta": {
       "filename": "Provider.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/stream/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "Provider",
     "order": 2,
@@ -159,8 +159,8 @@
     "memberof": "module:@the-/stream",
     "meta": {
       "filename": "TheStream.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/stream/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheStream",
     "order": 3,
@@ -176,7 +176,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/stream/lib/helpers"
+      "path": "lib/helpers"
     },
     "name": "helpers",
     "order": 9,
@@ -190,8 +190,8 @@
     "memberof": "module:@the-/stream.helpers",
     "meta": {
       "filename": "generatorFromReadable.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/stream/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "generatorFromReadable",
     "order": 8,

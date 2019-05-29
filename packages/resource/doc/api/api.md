@@ -5,7 +5,7 @@
 ## @the-/resource
 Base of the-resource
 
-**Version**: 15.4.5  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/resource](#module_@the-/resource)
@@ -214,4 +214,4 @@ Alias of [create](#module_@the-/resource.create)
 <a name="module_@the-/resource.isResourceClass"></a>
 
 ### resource.isResourceClass() ⇒ <code>boolean</code>
-**Kind**: static method of [<code>@the-/resource</code>](#module_@the-/resource)
+**Kind**: static method of [<code>@the-/resource</code>](#module_@the-/resource)  

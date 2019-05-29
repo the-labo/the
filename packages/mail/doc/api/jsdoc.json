@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/mail/lib"
+      "path": "lib"
     },
     "name": "@the-/mail",
     "order": 2,
     "typicalname": "mail",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "id": "toLowerKeys",
@@ -21,8 +21,8 @@
     "longname": "toLowerKeys",
     "meta": {
       "filename": "toLowerKeys.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mail/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "toLowerKeys",
     "order": 6,
@@ -37,8 +37,8 @@
     "memberof": "module:@the-/mail.TheMail",
     "meta": {
       "filename": "TheMail.js",
-      "lineno": 32,
-      "path": "/Users/okuni/Projects/the/packages/mail/lib"
+      "lineno": 31,
+      "path": "lib"
     },
     "name": "send",
     "order": 4,
@@ -106,8 +106,8 @@
     "memberof": "module:@the-/mail",
     "meta": {
       "filename": "TheMail.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mail/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheMail",
     "order": 3,
@@ -123,7 +123,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/mail/lib/helpers"
+      "path": "lib/helpers"
     },
     "name": "helpers",
     "order": 5,
@@ -139,7 +139,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/mail/lib/sending"
+      "path": "lib/sending"
     },
     "name": "sending",
     "order": 7,
@@ -153,8 +153,8 @@
     "memberof": "module:@the-/mail",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mail/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -188,8 +188,8 @@
     "memberof": "module:@the-/mail",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mail/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,
@@ -202,8 +202,8 @@
     "memberof": "module:@the-/mail.sending",
     "meta": {
       "filename": "sendMock.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mail/lib/sending"
+      "lineno": 2,
+      "path": "lib/sending"
     },
     "name": "sendMock",
     "order": 8,
@@ -216,8 +216,8 @@
     "memberof": "module:@the-/mail.sending",
     "meta": {
       "filename": "sendSendgrid.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mail/lib/sending"
+      "lineno": 2,
+      "path": "lib/sending"
     },
     "name": "sendSendgrid",
     "order": 9,
@@ -230,8 +230,8 @@
     "memberof": "module:@the-/mail.sending",
     "meta": {
       "filename": "sendSMTP.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mail/lib/sending"
+      "lineno": 2,
+      "path": "lib/sending"
     },
     "name": "sendSMTP",
     "order": 10,

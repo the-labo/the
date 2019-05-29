@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/run/lib"
+      "path": "lib"
     },
     "name": "@the-/run",
     "order": 2,
     "typicalname": "run",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "description": "Script runner",
@@ -39,7 +39,7 @@
         "type": {
           "names": [
             "number",
-            "Boolean"
+            "boolean"
           ]
         },
         "optional": true,
@@ -55,8 +55,8 @@
     "memberof": "module:@the-/run",
     "meta": {
       "filename": "TheRun.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/run/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheRun",
     "order": 4,
@@ -70,8 +70,8 @@
     "memberof": "module:@the-/run",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/run/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -105,8 +105,8 @@
     "memberof": "module:@the-/run",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/run/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,
@@ -120,8 +120,8 @@
     "memberof": "module:@the-/run",
     "meta": {
       "filename": "run.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/run/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "run",
     "order": 3,

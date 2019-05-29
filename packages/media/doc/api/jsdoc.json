@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/media/lib"
+      "path": "lib"
     },
     "name": "@the-/media",
     "order": 2,
     "typicalname": "media",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "id": "module:@the-/media.TheMedia()",
@@ -38,7 +38,7 @@
         "type": {
           "names": [
             "Object",
-            "Boolean"
+            "boolean"
           ]
         },
         "optional": true,
@@ -49,7 +49,7 @@
         "type": {
           "names": [
             "Object",
-            "Boolean"
+            "boolean"
           ]
         },
         "optional": true,
@@ -66,8 +66,8 @@
     "memberof": "module:@the-/media.TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 43,
-      "path": "/Users/okuni/Projects/the/packages/media/lib"
+      "lineno": 42,
+      "path": "lib"
     },
     "name": "createAudioRecorder",
     "order": 5,
@@ -110,8 +110,8 @@
     "memberof": "module:@the-/media.TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 70,
-      "path": "/Users/okuni/Projects/the/packages/media/lib"
+      "lineno": 69,
+      "path": "lib"
     },
     "name": "getStreamTracks",
     "order": 6,
@@ -144,8 +144,8 @@
     "memberof": "module:@the-/media.TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 90,
-      "path": "/Users/okuni/Projects/the/packages/media/lib"
+      "lineno": 89,
+      "path": "lib"
     },
     "name": "toggleEnabled",
     "order": 7,
@@ -178,8 +178,8 @@
     "memberof": "module:@the-/media.TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 107,
-      "path": "/Users/okuni/Projects/the/packages/media/lib"
+      "lineno": 106,
+      "path": "lib"
     },
     "name": "bindVideo",
     "order": 8,
@@ -224,8 +224,8 @@
     "memberof": "module:@the-/media.TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 123,
-      "path": "/Users/okuni/Projects/the/packages/media/lib"
+      "lineno": 122,
+      "path": "lib"
     },
     "name": "start",
     "order": 9,
@@ -250,8 +250,8 @@
     "memberof": "module:@the-/media.TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 146,
-      "path": "/Users/okuni/Projects/the/packages/media/lib"
+      "lineno": 145,
+      "path": "lib"
     },
     "name": "stop",
     "order": 10,
@@ -276,8 +276,8 @@
     "memberof": "module:@the-/media.TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 168,
-      "path": "/Users/okuni/Projects/the/packages/media/lib"
+      "lineno": 167,
+      "path": "lib"
     },
     "name": "takePhoto",
     "order": 11,
@@ -313,8 +313,8 @@
     "memberof": "module:@the-/media",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/media/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheMedia",
     "order": 3,
@@ -328,8 +328,8 @@
     "memberof": "module:@the-/media",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/media/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -363,8 +363,8 @@
     "memberof": "module:@the-/media",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/media/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,

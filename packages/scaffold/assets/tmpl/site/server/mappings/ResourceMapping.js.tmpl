@@ -8,9 +8,10 @@
 
 const r = require('../db/resources')
 
-module.exports = Object.freeze(
+module.exports =
   /** mappings.ResourceMapping */
   {
     Room: r.RoomResource,
   }
-)
+
+Object.freeze(module.exports)

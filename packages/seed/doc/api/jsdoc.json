@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/seed/lib"
+      "path": "lib"
     },
     "name": "@the-/seed",
     "order": 2,
     "typicalname": "seed",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "description": "Generate data with seed",
@@ -23,8 +23,8 @@
     "memberof": "module:@the-/seed.TheSeed",
     "meta": {
       "filename": "TheSeed.js",
-      "lineno": 38,
-      "path": "/Users/okuni/Projects/the/packages/seed/lib"
+      "lineno": 37,
+      "path": "lib"
     },
     "name": "apply",
     "order": 4,
@@ -58,8 +58,8 @@
     "memberof": "module:@the-/seed.TheSeed",
     "meta": {
       "filename": "TheSeed.js",
-      "lineno": 48,
-      "path": "/Users/okuni/Projects/the/packages/seed/lib"
+      "lineno": 47,
+      "path": "lib"
     },
     "name": "explode",
     "order": 5,
@@ -101,8 +101,8 @@
     "memberof": "module:@the-/seed",
     "meta": {
       "filename": "TheSeed.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/seed/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheSeed",
     "order": 3,
@@ -116,8 +116,8 @@
     "memberof": "module:@the-/seed",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/seed/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -151,8 +151,8 @@
     "memberof": "module:@the-/seed",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/seed/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,

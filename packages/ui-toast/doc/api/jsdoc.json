@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-toast/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-toast",
     "order": 0,
     "typicalname": "uiToast",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Toast of the-components",
@@ -21,8 +21,8 @@
     "longname": "TheToast",
     "meta": {
       "filename": "TheToast.jsx",
-      "lineno": 24,
-      "path": "/Users/okuni/Projects/the/packages/ui-toast/lib"
+      "lineno": 54,
+      "path": "lib"
     },
     "name": "TheToast",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheToastGroup.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-toast/lib"
+      "path": "lib"
     },
     "name": "TheToastGroup",
     "order": 6,
@@ -50,7 +50,7 @@
     "meta": {
       "filename": "TheToastStyle.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-toast/lib"
+      "path": "lib"
     },
     "name": "TheToastStyle",
     "order": 7,
@@ -65,8 +65,8 @@
     "memberof": "TheToast.propTypes",
     "meta": {
       "filename": "TheToast.jsx",
-      "lineno": 138,
-      "path": "/Users/okuni/Projects/the/packages/ui-toast/lib"
+      "lineno": 145,
+      "path": "lib"
     },
     "name": "clearAfter",
     "order": 2,
@@ -80,8 +80,8 @@
     "memberof": "TheToast.propTypes",
     "meta": {
       "filename": "TheToast.jsx",
-      "lineno": 140,
-      "path": "/Users/okuni/Projects/the/packages/ui-toast/lib"
+      "lineno": 147,
+      "path": "lib"
     },
     "name": "level",
     "order": 3,
@@ -95,8 +95,8 @@
     "memberof": "TheToast.propTypes",
     "meta": {
       "filename": "TheToast.jsx",
-      "lineno": 142,
-      "path": "/Users/okuni/Projects/the/packages/ui-toast/lib"
+      "lineno": 149,
+      "path": "lib"
     },
     "name": "messages",
     "order": 4,
@@ -110,8 +110,8 @@
     "memberof": "TheToast.propTypes",
     "meta": {
       "filename": "TheToast.jsx",
-      "lineno": 144,
-      "path": "/Users/okuni/Projects/the/packages/ui-toast/lib"
+      "lineno": 151,
+      "path": "lib"
     },
     "name": "onUpdate",
     "order": 5,
@@ -126,7 +126,7 @@
     "meta": {
       "filename": "TheToastStyle.jsx",
       "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/ui-toast/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 8,

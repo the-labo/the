@@ -26,7 +26,11 @@ class {{name}} extends TheResource {
   }
 
   static entityClass (ResourceEntity) {
-    /** @class */
+    /*
+     * @memberof {{memberof}}.{{name}}
+     * @inner
+     * @class {{name}}Entity
+     */
     class {{name}}Entity extends ResourceEntity {
     }
     return {{name}}Entity

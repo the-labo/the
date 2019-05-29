@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-flick",
     "order": 0,
     "typicalname": "uiFlick",
-    "version": "15.4.3"
+    "version": "15.4.7"
   },
   {
     "description": "Flickable viewer of the-components",
@@ -21,8 +21,8 @@
     "longname": "TheFlick",
     "meta": {
       "filename": "TheFlick.jsx",
-      "lineno": 26,
-      "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
+      "lineno": 39,
+      "path": "lib"
     },
     "name": "TheFlick",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheFlickStyle.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
+      "path": "lib"
     },
     "name": "TheFlickStyle",
     "order": 8,
@@ -51,8 +51,8 @@
     "memberof": "TheFlick.propTypes",
     "meta": {
       "filename": "TheFlick.jsx",
-      "lineno": 339,
-      "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
+      "lineno": 367,
+      "path": "lib"
     },
     "name": "activeIndex",
     "order": 2,
@@ -66,8 +66,8 @@
     "memberof": "TheFlick.propTypes",
     "meta": {
       "filename": "TheFlick.jsx",
-      "lineno": 341,
-      "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
+      "lineno": 369,
+      "path": "lib"
     },
     "name": "images",
     "order": 3,
@@ -81,8 +81,8 @@
     "memberof": "TheFlick.propTypes",
     "meta": {
       "filename": "TheFlick.jsx",
-      "lineno": 345,
-      "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
+      "lineno": 373,
+      "path": "lib"
     },
     "name": "onChange",
     "order": 4,
@@ -96,8 +96,8 @@
     "memberof": "TheFlick.propTypes",
     "meta": {
       "filename": "TheFlick.jsx",
-      "lineno": 347,
-      "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
+      "lineno": 375,
+      "path": "lib"
     },
     "name": "onClose",
     "order": 5,
@@ -111,8 +111,8 @@
     "memberof": "TheFlick.propTypes",
     "meta": {
       "filename": "TheFlick.jsx",
-      "lineno": 349,
-      "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
+      "lineno": 377,
+      "path": "lib"
     },
     "name": "present",
     "order": 6,
@@ -126,8 +126,8 @@
     "memberof": "TheFlick.propTypes",
     "meta": {
       "filename": "TheFlick.jsx",
-      "lineno": 351,
-      "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
+      "lineno": 379,
+      "path": "lib"
     },
     "name": "spinning",
     "order": 7,
@@ -142,7 +142,7 @@
     "meta": {
       "filename": "TheFlickStyle.jsx",
       "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/ui-flick/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 9,

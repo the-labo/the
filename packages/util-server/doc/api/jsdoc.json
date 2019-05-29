@@ -8,12 +8,46 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/util-server/lib"
+      "path": "lib"
     },
     "name": "@the-/util-server",
-    "order": 1,
+    "order": 2,
     "typicalname": "utilServer",
-    "version": "15.4.2"
+    "version": "15.4.7"
+  },
+  {
+    "description": "Change file extension",
+    "id": "path",
+    "kind": "constant",
+    "longname": "path",
+    "meta": {
+      "filename": "changeExt.js",
+      "lineno": 7,
+      "path": "lib"
+    },
+    "name": "path",
+    "order": 0,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Filename to change",
+        "name": "filename"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "New file extension",
+        "name": "ext"
+      }
+    ],
+    "scope": "global"
   },
   {
     "description": "Write from chunk generator function",
@@ -22,11 +56,11 @@
     "longname": "generateFile",
     "meta": {
       "filename": "generateFile.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-server/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "generateFile",
-    "order": 0,
+    "order": 1,
     "params": [
       {
         "type": {
@@ -64,11 +98,11 @@
     "longname": "isBase64",
     "meta": {
       "filename": "isBase64.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-server/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "isBase64",
-    "order": 2,
+    "order": 3,
     "params": [
       {
         "type": {
@@ -97,11 +131,11 @@
     "longname": "nameFile",
     "meta": {
       "filename": "nameFile.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-server/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "nameFile",
-    "order": 3,
+    "order": 4,
     "params": [
       {
         "type": {
@@ -165,11 +199,11 @@
     "longname": "pipeToFile",
     "meta": {
       "filename": "pipeToFile.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-server/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "pipeToFile",
-    "order": 4,
+    "order": 5,
     "params": [
       {
         "type": {
@@ -208,11 +242,11 @@
     "longname": "saveBase64",
     "meta": {
       "filename": "saveBase64.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-server/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "saveBase64",
-    "order": 5,
+    "order": 6,
     "params": [
       {
         "type": {
@@ -260,10 +294,10 @@
     "meta": {
       "filename": "saveBase64Image.js",
       "lineno": 5,
-      "path": "/Users/okuni/Projects/the/packages/util-server/lib"
+      "path": "lib"
     },
     "name": "saveBase64Image",
-    "order": 6,
+    "order": 7,
     "params": [],
     "scope": "global"
   },
@@ -274,11 +308,11 @@
     "longname": "valuesFromEntity",
     "meta": {
       "filename": "valuesFromEntity.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-server/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "valuesFromEntity",
-    "order": 7,
+    "order": 8,
     "params": [
       {
         "type": {
@@ -306,11 +340,11 @@
     "longname": "waitForFile",
     "meta": {
       "filename": "waitFor.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-server/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "waitForFile",
-    "order": 8,
+    "order": 9,
     "params": [
       {
         "type": {

@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-keyboard/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-keyboard",
     "order": 0,
     "typicalname": "uiKeyboard",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Keyboard component",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheKeyboard.jsx",
       "lineno": 12,
-      "path": "/Users/okuni/Projects/the/packages/ui-keyboard/lib"
+      "path": "lib"
     },
     "name": "TheKeyboard",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheKeyboardStyle.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-keyboard/lib"
+      "path": "lib"
     },
     "name": "TheKeyboardStyle",
     "order": 4,
@@ -51,8 +51,8 @@
     "memberof": "TheKeyboard.propTypes",
     "meta": {
       "filename": "TheKeyboard.jsx",
-      "lineno": 43,
-      "path": "/Users/okuni/Projects/the/packages/ui-keyboard/lib"
+      "lineno": 46,
+      "path": "lib"
     },
     "name": "keys",
     "order": 2,
@@ -66,8 +66,8 @@
     "memberof": "TheKeyboard.propTypes",
     "meta": {
       "filename": "TheKeyboard.jsx",
-      "lineno": 45,
-      "path": "/Users/okuni/Projects/the/packages/ui-keyboard/lib"
+      "lineno": 48,
+      "path": "lib"
     },
     "name": "onKeyPress",
     "order": 3,
@@ -82,7 +82,7 @@
     "meta": {
       "filename": "TheKeyboardStyle.jsx",
       "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/ui-keyboard/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 5,

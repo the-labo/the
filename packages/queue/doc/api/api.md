@@ -5,7 +5,7 @@
 ## @the-/queue
 Queue for the-framework
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/queue](#module_@the-/queue)
@@ -92,4 +92,4 @@ Create a TheQueue instance
 ### queue.default()
 Alias of [@the-/queue](#module_@the-/queue)
 
-**Kind**: static method of [<code>@the-/queue</code>](#module_@the-/queue)
+**Kind**: static method of [<code>@the-/queue</code>](#module_@the-/queue)  

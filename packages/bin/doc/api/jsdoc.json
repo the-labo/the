@@ -13,7 +13,7 @@
     "name": "@the-/bin",
     "order": 1,
     "typicalname": "bin",
-    "version": "15.4.5"
+    "version": "15.4.7"
   },
   {
     "id": "module:@the-/bin.TheBin()",
@@ -174,7 +174,7 @@
     "memberof": "module:@the-/bin.TheBin",
     "meta": {
       "filename": "TheBin.js",
-      "lineno": 115,
+      "lineno": 117,
       "path": "lib"
     },
     "name": "verify",
@@ -212,7 +212,7 @@
     "memberof": "module:@the-/bin.TheBin",
     "meta": {
       "filename": "TheBin.js",
-      "lineno": 134,
+      "lineno": 136,
       "path": "lib"
     },
     "name": "version",

@@ -5,7 +5,7 @@
 ## @the-/scene
 Base class of the-scene
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/scene](#module_@the-/scene)
@@ -176,4 +176,4 @@ Create a TheScene instance
 ### scene.default()
 Alias of [create](#module_@the-/scene.create)
 
-**Kind**: static method of [<code>@the-/scene</code>](#module_@the-/scene)
+**Kind**: static method of [<code>@the-/scene</code>](#module_@the-/scene)  

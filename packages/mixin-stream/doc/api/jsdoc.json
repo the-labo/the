@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/mixin-stream/lib"
+      "path": "lib"
     },
     "name": "@the-/mixin-stream",
     "order": 1,
     "typicalname": "mixinStream",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "description": "Compose multiple mixins into one",
@@ -22,8 +22,8 @@
     "longname": "compose",
     "meta": {
       "filename": "compose.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mixin-stream/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "compose",
     "order": 0,
@@ -56,8 +56,8 @@
     "longname": "withDebug",
     "meta": {
       "filename": "withDebug.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mixin-stream/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "withDebug",
     "order": 2,

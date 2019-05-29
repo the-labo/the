@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib"
+      "path": "lib"
     },
     "name": "@the-/scene",
     "order": 2,
     "typicalname": "scene",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "description": "Scene scope",
@@ -23,8 +23,8 @@
     "memberof": "module:@the-/scene.TheScene",
     "meta": {
       "filename": "TheScene.js",
-      "lineno": 37,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib"
+      "lineno": 36,
+      "path": "lib"
     },
     "name": "scope",
     "order": 4,
@@ -48,8 +48,8 @@
     "memberof": "module:@the-/scene.TheScene",
     "meta": {
       "filename": "TheScene.js",
-      "lineno": 42,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib"
+      "lineno": 41,
+      "path": "lib"
     },
     "name": "for",
     "order": 5,
@@ -64,8 +64,8 @@
     "memberof": "module:@the-/scene.TheScene",
     "meta": {
       "filename": "TheScene.js",
-      "lineno": 47,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib"
+      "lineno": 46,
+      "path": "lib"
     },
     "name": "get",
     "order": 6,
@@ -80,8 +80,8 @@
     "memberof": "module:@the-/scene.TheScene",
     "meta": {
       "filename": "TheScene.js",
-      "lineno": 66,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib"
+      "lineno": 65,
+      "path": "lib"
     },
     "name": "has",
     "order": 7,
@@ -114,8 +114,8 @@
     "memberof": "module:@the-/scene.TheScene",
     "meta": {
       "filename": "TheScene.js",
-      "lineno": 78,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib"
+      "lineno": 77,
+      "path": "lib"
     },
     "name": "init",
     "order": 8,
@@ -130,8 +130,8 @@
     "memberof": "module:@the-/scene.TheScene",
     "meta": {
       "filename": "TheScene.js",
-      "lineno": 99,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib"
+      "lineno": 98,
+      "path": "lib"
     },
     "name": "set",
     "order": 9,
@@ -146,8 +146,8 @@
     "memberof": "module:@the-/scene.mixins.subMix~SubMixed",
     "meta": {
       "filename": "subMix.js",
-      "lineno": 26,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
+      "lineno": 25,
+      "path": "lib/mixins"
     },
     "name": "subFor",
     "order": 17,
@@ -180,8 +180,8 @@
     "memberof": "module:@the-/scene",
     "meta": {
       "filename": "TheScene.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheScene",
     "order": 3,
@@ -196,7 +196,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "mixins",
     "order": 14,
@@ -210,8 +210,8 @@
     "memberof": "module:@the-/scene",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -245,8 +245,8 @@
     "memberof": "module:@the-/scene",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,
@@ -259,8 +259,8 @@
     "memberof": "module:@the-/scene.mixins",
     "meta": {
       "filename": "errorMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "errorMix",
     "order": 10,
@@ -293,8 +293,8 @@
     "memberof": "module:@the-/scene.mixins",
     "meta": {
       "filename": "goMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "goMix",
     "order": 12,
@@ -327,8 +327,8 @@
     "memberof": "module:@the-/scene.mixins",
     "meta": {
       "filename": "subMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "subMix",
     "order": 15,
@@ -361,8 +361,8 @@
     "memberof": "module:@the-/scene.mixins.goMix",
     "meta": {
       "filename": "errorMix.js",
-      "lineno": 15,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
+      "lineno": 14,
+      "path": "lib/mixins"
     },
     "name": "ErrorMixed",
     "order": 11,
@@ -375,8 +375,8 @@
     "memberof": "module:@the-/scene.mixins.goMix",
     "meta": {
       "filename": "goMix.js",
-      "lineno": 18,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
+      "lineno": 17,
+      "path": "lib/mixins"
     },
     "name": "GoMixed",
     "order": 13,
@@ -390,7 +390,7 @@
     "meta": {
       "filename": "subMix.js",
       "lineno": 15,
-      "path": "/Users/okuni/Projects/the/packages/scene/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "SubMixed",
     "order": 16,

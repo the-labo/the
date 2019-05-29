@@ -14,8 +14,8 @@ import { asStyleData } from '@the-/util-ui'
 /** @lends ~~~~package_unscoped_name@pascalcase~~~~Style */
 const ~~~~package_unscoped_name@pascalcase~~~~Style = ({ className, id, options }) => (
   <TheStyle
-    {...{ id }}
     className={c('~~~~package_unscoped_name~~~~-style', className)}
+    id={id}
     styles={~~~~package_unscoped_name@pascalcase~~~~Style.data(options)}
   />
 )
@@ -30,10 +30,9 @@ const ~~~~package_unscoped_name@pascalcase~~~~Style = ({ className, id, options 
   options: {},
 }
 
-~~~~package_unscoped_name@pascalcase~~~~Style.data = () => {
-  return asStyleData({
+~~~~package_unscoped_name@pascalcase~~~~Style.data = () =>
+  asStyleData({
     '.~~~~package_unscoped_name~~~~': {},
   })
-}
 
 export default ~~~~package_unscoped_name@pascalcase~~~~Style

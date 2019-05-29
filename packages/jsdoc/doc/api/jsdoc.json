@@ -8,7 +8,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/jsdoc/lib"
+      "path": "lib"
     },
     "name": "@the-/jsdoc",
     "order": 2,
@@ -22,8 +22,8 @@
     "memberof": "module:@the-/jsdoc",
     "meta": {
       "filename": "JSDoc.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/jsdoc/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "JSDoc",
     "order": 3,
@@ -37,8 +37,8 @@
     "memberof": "module:@the-/jsdoc",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/jsdoc/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -72,8 +72,8 @@
     "memberof": "module:@the-/jsdoc",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/jsdoc/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "jsdoc",
     "order": 1,

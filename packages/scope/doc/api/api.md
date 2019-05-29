@@ -5,7 +5,7 @@
 ## @the-/scope
 State scope for the-store
 
-**Version**: 15.4.3  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/scope](#module_@the-/scope)
@@ -654,4 +654,4 @@ Create a TheScope instance
 ### scope.default()
 Alias of [create](#module_@the-/scope.create)
 
-**Kind**: static method of [<code>@the-/scope</code>](#module_@the-/scope)
+**Kind**: static method of [<code>@the-/scope</code>](#module_@the-/scope)  

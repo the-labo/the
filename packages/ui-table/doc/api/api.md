@@ -29,7 +29,7 @@
 ## @the-/ui-table
 Table for the-components
 
-**Version**: 15.4.4  
+**Version**: 15.4.7  
 <a name="TheTable"></a>
 
 ## TheTable
@@ -41,4 +41,4 @@ Table for the-components
 ## TheTableStyle()
 Style for TheTable
 
-**Kind**: global function
+**Kind**: global function  

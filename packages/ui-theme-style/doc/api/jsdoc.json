@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-theme-style/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-theme-style",
     "order": 0,
     "typicalname": "uiThemeStyle",
-    "version": "15.4.3"
+    "version": "15.4.7"
   },
   {
     "description": "Theme Style of the-components",
@@ -21,8 +21,8 @@
     "longname": "TheThemeStyle",
     "meta": {
       "filename": "TheThemeStyle.jsx",
-      "lineno": 47,
-      "path": "/Users/okuni/Projects/the/packages/ui-theme-style/lib"
+      "lineno": 48,
+      "path": "lib"
     },
     "name": "TheThemeStyle",
     "order": 1,
@@ -37,8 +37,8 @@
     "memberof": "TheThemeStyle.propTypes",
     "meta": {
       "filename": "TheThemeStyle.jsx",
-      "lineno": 57,
-      "path": "/Users/okuni/Projects/the/packages/ui-theme-style/lib"
+      "lineno": 58,
+      "path": "lib"
     },
     "name": "options",
     "order": 2,
@@ -52,8 +52,8 @@
     "memberof": "TheThemeStyle.propTypes",
     "meta": {
       "filename": "TheThemeStyle.jsx",
-      "lineno": 60,
-      "path": "/Users/okuni/Projects/the/packages/ui-theme-style/lib"
+      "lineno": 61,
+      "path": "lib"
     },
     "name": "prefix",
     "order": 3,

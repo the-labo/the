@@ -8,7 +8,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
+      "path": "lib"
     },
     "name": "@the-/util-file",
     "order": 3,
@@ -22,8 +22,8 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "copyAsJsonSync.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "copyAsJsonSync",
     "order": 0,
@@ -54,8 +54,8 @@
     "memberof": "module.module:@the-/util-file",
     "meta": {
       "filename": "delSync.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "delSync",
     "order": 1,
@@ -79,8 +79,8 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "fileTypeOf.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "fileTypeOf",
     "order": 2,
@@ -112,8 +112,8 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "isJSON5File.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "isJSON5File",
     "order": 4,
@@ -146,8 +146,8 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "readAsJson.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "readAsJson",
     "order": 5,
@@ -179,8 +179,8 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "readAsJsonSync.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "readAsJsonSync",
     "order": 6,
@@ -212,8 +212,8 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "statSync.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "statSync",
     "order": 7,
@@ -236,8 +236,8 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "writeAsJson.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "writeAsJson",
     "order": 8,
@@ -296,8 +296,8 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "writeAsJsonSync.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-file/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "writeAsJsonSync",
     "order": 9,

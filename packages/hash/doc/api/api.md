@@ -5,7 +5,7 @@
 ## @the-/hash
 Hash object to hold key-value pairs
 
-**Version**: 15.4.3  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/hash](#module_@the-/hash)
@@ -114,3 +114,4 @@ Create proxy for hash object
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 | [options.name] | <code>string</code> |  | Name of object |
 | [options.unknownCheck] | <code>boolean</code> |  | Enable unknown checking |
+

@@ -29,7 +29,7 @@
 ## @the-/ui-image
 Image of the-components
 
-**Version**: 15.4.4  
+**Version**: 15.4.7  
 <a name="TheImage"></a>
 
 ## TheImage
@@ -41,4 +41,4 @@ Image of the-components
 ## TheImageStyle()
 Style for TheImage
 
-**Kind**: global function
+**Kind**: global function  

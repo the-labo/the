@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-section",
     "order": 0,
     "typicalname": "uiSection",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Accordion section",
@@ -21,8 +21,8 @@
     "longname": "TheAccordionSection",
     "meta": {
       "filename": "TheAccordionSection.jsx",
-      "lineno": 13,
-      "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
+      "lineno": 46,
+      "path": "lib"
     },
     "name": "TheAccordionSection",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheSection.jsx",
       "lineno": 13,
-      "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
+      "path": "lib"
     },
     "name": "TheSection",
     "order": 5,
@@ -50,7 +50,7 @@
     "meta": {
       "filename": "TheSectionStyle.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
+      "path": "lib"
     },
     "name": "TheSectionStyle",
     "order": 6,
@@ -65,8 +65,8 @@
     "memberof": "TheAccordionSection.propTypes",
     "meta": {
       "filename": "TheAccordionSection.jsx",
-      "lineno": 125,
-      "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
+      "lineno": 130,
+      "path": "lib"
     },
     "name": "heading",
     "order": 2,
@@ -80,8 +80,8 @@
     "memberof": "TheAccordionSection.propTypes",
     "meta": {
       "filename": "TheAccordionSection.jsx",
-      "lineno": 127,
-      "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
+      "lineno": 132,
+      "path": "lib"
     },
     "name": "onToggle",
     "order": 3,
@@ -95,8 +95,8 @@
     "memberof": "TheAccordionSection.propTypes",
     "meta": {
       "filename": "TheAccordionSection.jsx",
-      "lineno": 129,
-      "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
+      "lineno": 134,
+      "path": "lib"
     },
     "name": "open",
     "order": 4,
@@ -111,7 +111,7 @@
     "meta": {
       "filename": "TheSectionStyle.jsx",
       "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/ui-section/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 7,

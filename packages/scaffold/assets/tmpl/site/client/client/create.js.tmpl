@@ -1,6 +1,6 @@
 /**
  * Client a site client
- * @memberof module:client.client
+ * @memberof module:~~~~package_name~~~~/client.client
  * @function create
  * @param {Object} [config={}]
  * @returns {TheClient} A client instance
@@ -14,7 +14,7 @@ import { get } from '@the-/window'
 
 class Client extends TheClient {}
 
-/** @lends module:client.client.create */
+/** @lends module:~~~~package_name~~~~/client.client.create */
 function create(config = {}) {
   const { v } = get(GlobalKeys.PROPS) || {}
   return new Client({
@@ -30,7 +30,7 @@ create.for = (namespace, options = {}) => {
   const client = Client.for(namespace, {
     onGone: () => {
       setTimeout(() => {
-        connectionRetryScene.set({ active: true, busy: false })
+        connectionRetryScene.start()
         unlessProduction(() =>
           client.pingPongAnd(() => connectionRetryScene.doExec()),
         )

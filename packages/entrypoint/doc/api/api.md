@@ -5,7 +5,7 @@
 ## @the-/entrypoint
 Browser entrypoint for the-framework
 
-**Version**: 15.4.5  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/entrypoint](#module_@the-/entrypoint)

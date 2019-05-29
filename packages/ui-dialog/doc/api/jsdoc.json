@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-dialog",
     "order": 0,
     "typicalname": "uiDialog",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Confirm Dialog",
@@ -21,8 +21,8 @@
     "longname": "TheConfirmDialog",
     "meta": {
       "filename": "TheConfirmDialog.jsx",
-      "lineno": 13,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 14,
+      "path": "lib"
     },
     "name": "TheConfirmDialog",
     "order": 1,
@@ -35,8 +35,8 @@
     "longname": "TheDialog",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 18,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 58,
+      "path": "lib"
     },
     "name": "TheDialog",
     "order": 9,
@@ -50,7 +50,7 @@
     "meta": {
       "filename": "TheOkDialog.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "path": "lib"
     },
     "name": "TheOkDialog",
     "order": 20,
@@ -64,7 +64,7 @@
     "meta": {
       "filename": "TheYesNoDialog.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "path": "lib"
     },
     "name": "TheYesNoDialog",
     "order": 25,
@@ -78,7 +78,7 @@
     "meta": {
       "filename": "TheDialogStyle.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "path": "lib"
     },
     "name": "TheDialogStyle",
     "order": 18,
@@ -93,8 +93,8 @@
     "memberof": "TheConfirmDialog.propTypes",
     "meta": {
       "filename": "TheConfirmDialog.jsx",
-      "lineno": 58,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 60,
+      "path": "lib"
     },
     "name": "checkText",
     "order": 2,
@@ -108,8 +108,8 @@
     "memberof": "TheConfirmDialog.propTypes",
     "meta": {
       "filename": "TheConfirmDialog.jsx",
-      "lineno": 60,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 62,
+      "path": "lib"
     },
     "name": "onClose",
     "order": 3,
@@ -123,8 +123,8 @@
     "memberof": "TheConfirmDialog.propTypes",
     "meta": {
       "filename": "TheConfirmDialog.jsx",
-      "lineno": 62,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 64,
+      "path": "lib"
     },
     "name": "onSubmit",
     "order": 4,
@@ -138,8 +138,8 @@
     "memberof": "TheConfirmDialog.propTypes",
     "meta": {
       "filename": "TheConfirmDialog.jsx",
-      "lineno": 64,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 66,
+      "path": "lib"
     },
     "name": "present",
     "order": 5,
@@ -153,8 +153,8 @@
     "memberof": "TheConfirmDialog.propTypes",
     "meta": {
       "filename": "TheConfirmDialog.jsx",
-      "lineno": 66,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 68,
+      "path": "lib"
     },
     "name": "spinning",
     "order": 6,
@@ -168,8 +168,8 @@
     "memberof": "TheConfirmDialog.propTypes",
     "meta": {
       "filename": "TheConfirmDialog.jsx",
-      "lineno": 68,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 70,
+      "path": "lib"
     },
     "name": "submitText",
     "order": 7,
@@ -183,8 +183,8 @@
     "memberof": "TheConfirmDialog.propTypes",
     "meta": {
       "filename": "TheConfirmDialog.jsx",
-      "lineno": 70,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 72,
+      "path": "lib"
     },
     "name": "title",
     "order": 8,
@@ -198,8 +198,8 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 160,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 163,
+      "path": "lib"
     },
     "name": "hideCloseButton",
     "order": 10,
@@ -213,8 +213,8 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 162,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 165,
+      "path": "lib"
     },
     "name": "icon",
     "order": 11,
@@ -228,8 +228,8 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 164,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 167,
+      "path": "lib"
     },
     "name": "lead",
     "order": 12,
@@ -243,8 +243,8 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 166,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 169,
+      "path": "lib"
     },
     "name": "onClose",
     "order": 13,
@@ -258,8 +258,8 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 168,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 171,
+      "path": "lib"
     },
     "name": "present",
     "order": 14,
@@ -273,8 +273,8 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 170,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 173,
+      "path": "lib"
     },
     "name": "spinning",
     "order": 15,
@@ -288,8 +288,8 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 172,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 175,
+      "path": "lib"
     },
     "name": "title",
     "order": 16,
@@ -303,8 +303,8 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 174,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 177,
+      "path": "lib"
     },
     "name": "zIndex",
     "order": 17,
@@ -319,7 +319,7 @@
     "meta": {
       "filename": "TheDialogStyle.jsx",
       "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 19,
@@ -333,8 +333,8 @@
     "memberof": "TheOkDialog.propTypes",
     "meta": {
       "filename": "TheOkDialog.jsx",
-      "lineno": 39,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 41,
+      "path": "lib"
     },
     "name": "okText",
     "order": 21,
@@ -348,8 +348,8 @@
     "memberof": "TheOkDialog.propTypes",
     "meta": {
       "filename": "TheOkDialog.jsx",
-      "lineno": 41,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 43,
+      "path": "lib"
     },
     "name": "onClose",
     "order": 22,
@@ -363,8 +363,8 @@
     "memberof": "TheOkDialog.propTypes",
     "meta": {
       "filename": "TheOkDialog.jsx",
-      "lineno": 44,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 46,
+      "path": "lib"
     },
     "name": "spinning",
     "order": 23,
@@ -378,8 +378,8 @@
     "memberof": "TheOkDialog.propTypes",
     "meta": {
       "filename": "TheOkDialog.jsx",
-      "lineno": 46,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 48,
+      "path": "lib"
     },
     "name": "title",
     "order": 24,
@@ -393,8 +393,8 @@
     "memberof": "TheYesNoDialog.propTypes",
     "meta": {
       "filename": "TheYesNoDialog.jsx",
-      "lineno": 42,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 44,
+      "path": "lib"
     },
     "name": "noText",
     "order": 26,
@@ -408,8 +408,8 @@
     "memberof": "TheYesNoDialog.propTypes",
     "meta": {
       "filename": "TheYesNoDialog.jsx",
-      "lineno": 44,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 46,
+      "path": "lib"
     },
     "name": "onClose",
     "order": 27,
@@ -423,8 +423,8 @@
     "memberof": "TheYesNoDialog.propTypes",
     "meta": {
       "filename": "TheYesNoDialog.jsx",
-      "lineno": 46,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 48,
+      "path": "lib"
     },
     "name": "onNo",
     "order": 28,
@@ -438,8 +438,8 @@
     "memberof": "TheYesNoDialog.propTypes",
     "meta": {
       "filename": "TheYesNoDialog.jsx",
-      "lineno": 48,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 50,
+      "path": "lib"
     },
     "name": "onYes",
     "order": 29,
@@ -453,8 +453,8 @@
     "memberof": "TheYesNoDialog.propTypes",
     "meta": {
       "filename": "TheYesNoDialog.jsx",
-      "lineno": 51,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 53,
+      "path": "lib"
     },
     "name": "spinning",
     "order": 30,
@@ -468,8 +468,8 @@
     "memberof": "TheYesNoDialog.propTypes",
     "meta": {
       "filename": "TheYesNoDialog.jsx",
-      "lineno": 53,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 55,
+      "path": "lib"
     },
     "name": "title",
     "order": 31,
@@ -483,8 +483,8 @@
     "memberof": "TheYesNoDialog.propTypes",
     "meta": {
       "filename": "TheYesNoDialog.jsx",
-      "lineno": 55,
-      "path": "/Users/okuni/Projects/the/packages/ui-dialog/lib"
+      "lineno": 57,
+      "path": "lib"
     },
     "name": "yesText",
     "order": 32,

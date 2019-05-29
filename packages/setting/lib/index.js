@@ -4,7 +4,7 @@
  * @license MIT
  * @module @the-/setting
  * @typicalname setting
- * @version 15.4.6
+ * @version 15.4.7
  */
 'use strict'
 

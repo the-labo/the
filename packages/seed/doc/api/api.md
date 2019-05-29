@@ -5,7 +5,7 @@
 ## @the-/seed
 Data generator for the-db
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/seed](#module_@the-/seed)
@@ -63,4 +63,4 @@ Create a TheSeed instance
 ### seed.default()
 Alias of [create](#module_@the-/seed.create)
 
-**Kind**: static method of [<code>@the-/seed</code>](#module_@the-/seed)
+**Kind**: static method of [<code>@the-/seed</code>](#module_@the-/seed)  

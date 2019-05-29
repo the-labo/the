@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-hamburger/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-hamburger",
     "order": 0,
     "typicalname": "uiHamburger",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Hamburger menu for the-components",
@@ -21,8 +21,8 @@
     "longname": "TheHamburger",
     "meta": {
       "filename": "TheHamburger.jsx",
-      "lineno": 12,
-      "path": "/Users/okuni/Projects/the/packages/ui-hamburger/lib"
+      "lineno": 44,
+      "path": "lib"
     },
     "name": "TheHamburger",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheHamburgerStyle.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-hamburger/lib"
+      "path": "lib"
     },
     "name": "TheHamburgerStyle",
     "order": 5,
@@ -51,8 +51,8 @@
     "memberof": "TheHamburger.propTypes",
     "meta": {
       "filename": "TheHamburger.jsx",
-      "lineno": 97,
-      "path": "/Users/okuni/Projects/the/packages/ui-hamburger/lib"
+      "lineno": 102,
+      "path": "lib"
     },
     "name": "hidden",
     "order": 2,
@@ -66,8 +66,8 @@
     "memberof": "TheHamburger.propTypes",
     "meta": {
       "filename": "TheHamburger.jsx",
-      "lineno": 99,
-      "path": "/Users/okuni/Projects/the/packages/ui-hamburger/lib"
+      "lineno": 104,
+      "path": "lib"
     },
     "name": "onToggle",
     "order": 3,
@@ -81,8 +81,8 @@
     "memberof": "TheHamburger.propTypes",
     "meta": {
       "filename": "TheHamburger.jsx",
-      "lineno": 101,
-      "path": "/Users/okuni/Projects/the/packages/ui-hamburger/lib"
+      "lineno": 106,
+      "path": "lib"
     },
     "name": "spinning",
     "order": 4,
@@ -97,7 +97,7 @@
     "meta": {
       "filename": "TheHamburgerStyle.jsx",
       "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/ui-hamburger/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 6,

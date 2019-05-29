@@ -8,7 +8,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/util-sw/lib"
+      "path": "lib"
     },
     "name": "@the-/util-sw",
     "order": 2,
@@ -22,8 +22,8 @@
     "longname": "appCache",
     "meta": {
       "filename": "appCache.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-sw/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "appCache",
     "order": 0,
@@ -68,8 +68,8 @@
     "longname": "cachedFetch",
     "meta": {
       "filename": "cachingFetch.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-sw/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "cachedFetch",
     "order": 1,
@@ -100,8 +100,8 @@
     "longname": "parseUrl",
     "meta": {
       "filename": "parseUrl.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-sw/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "parseUrl",
     "order": 3,

@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-head",
     "order": 0,
     "typicalname": "uiHead",
-    "version": "15.4.3"
+    "version": "15.4.5"
   },
   {
     "description": "Head of the-components",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheHead.jsx",
       "lineno": 26,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "path": "lib"
     },
     "name": "TheHead",
     "order": 1,
@@ -36,8 +36,8 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 235,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "lineno": 243,
+      "path": "lib"
     },
     "name": "base",
     "order": 2,
@@ -51,8 +51,8 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 237,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "lineno": 245,
+      "path": "lib"
     },
     "name": "baseTarget",
     "order": 3,
@@ -66,8 +66,8 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 239,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "lineno": 247,
+      "path": "lib"
     },
     "name": "cdn",
     "order": 4,
@@ -81,8 +81,8 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 241,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "lineno": 249,
+      "path": "lib"
     },
     "name": "charSet",
     "order": 5,
@@ -96,8 +96,8 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 244,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "lineno": 252,
+      "path": "lib"
     },
     "name": "color",
     "order": 6,
@@ -111,8 +111,8 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 246,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "lineno": 254,
+      "path": "lib"
     },
     "name": "fallbackUnless",
     "order": 7,
@@ -126,8 +126,8 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 248,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "lineno": 256,
+      "path": "lib"
     },
     "name": "globals",
     "order": 8,
@@ -141,8 +141,8 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 250,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "lineno": 258,
+      "path": "lib"
     },
     "name": "icon",
     "order": 9,
@@ -156,8 +156,8 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 252,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "lineno": 260,
+      "path": "lib"
     },
     "name": "id",
     "order": 10,
@@ -171,8 +171,8 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 254,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "lineno": 262,
+      "path": "lib"
     },
     "name": "itemProps",
     "order": 11,
@@ -186,8 +186,8 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 256,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "lineno": 264,
+      "path": "lib"
     },
     "name": "manifest",
     "order": 12,
@@ -201,8 +201,8 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 258,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "lineno": 266,
+      "path": "lib"
     },
     "name": "metaContents",
     "order": 13,
@@ -216,8 +216,8 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 260,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "lineno": 268,
+      "path": "lib"
     },
     "name": "metaProperties",
     "order": 14,
@@ -231,8 +231,8 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 262,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "lineno": 270,
+      "path": "lib"
     },
     "name": "ogpContents",
     "order": 15,
@@ -246,8 +246,8 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 264,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "lineno": 272,
+      "path": "lib"
     },
     "name": "title",
     "order": 16,
@@ -261,8 +261,8 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 266,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "lineno": 274,
+      "path": "lib"
     },
     "name": "version",
     "order": 17,
@@ -276,8 +276,8 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 268,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "lineno": 276,
+      "path": "lib"
     },
     "name": "versionKey",
     "order": 18,
@@ -291,8 +291,8 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 270,
-      "path": "/Users/okuni/Projects/the/packages/ui-head/lib"
+      "lineno": 278,
+      "path": "lib"
     },
     "name": "viewPort",
     "order": 19,

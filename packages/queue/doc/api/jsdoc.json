@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/queue/lib"
+      "path": "lib"
     },
     "name": "@the-/queue",
     "order": 2,
     "typicalname": "queue",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "id": "module:@the-/queue.TheQueue()",
@@ -72,8 +72,8 @@
     "memberof": "module:@the-/queue.TheQueue",
     "meta": {
       "filename": "TheQueue.js",
-      "lineno": 43,
-      "path": "/Users/okuni/Projects/the/packages/queue/lib"
+      "lineno": 42,
+      "path": "lib"
     },
     "name": "push",
     "order": 5,
@@ -98,8 +98,8 @@
     "memberof": "module:@the-/queue.TheQueue",
     "meta": {
       "filename": "TheQueue.js",
-      "lineno": 66,
-      "path": "/Users/okuni/Projects/the/packages/queue/lib"
+      "lineno": 65,
+      "path": "lib"
     },
     "name": "start",
     "order": 6,
@@ -114,8 +114,8 @@
     "memberof": "module:@the-/queue.TheQueue",
     "meta": {
       "filename": "TheQueue.js",
-      "lineno": 74,
-      "path": "/Users/okuni/Projects/the/packages/queue/lib"
+      "lineno": 73,
+      "path": "lib"
     },
     "name": "stop",
     "order": 7,
@@ -131,8 +131,8 @@
     "memberof": "module:@the-/queue.TheQueue",
     "meta": {
       "filename": "TheQueue.js",
-      "lineno": 107,
-      "path": "/Users/okuni/Projects/the/packages/queue/lib"
+      "lineno": 106,
+      "path": "lib"
     },
     "name": "wait",
     "order": 8,
@@ -178,8 +178,8 @@
     "memberof": "module:@the-/queue",
     "meta": {
       "filename": "TheQueue.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/queue/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheQueue",
     "order": 3,
@@ -193,8 +193,8 @@
     "memberof": "module:@the-/queue",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/queue/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -228,8 +228,8 @@
     "memberof": "module:@the-/queue",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/queue/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,

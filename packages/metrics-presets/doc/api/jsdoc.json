@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/metrics-presets/lib"
+      "path": "lib"
     },
     "name": "@the-/metrics-presets",
     "order": 0,
     "typicalname": "metricsPresets",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "description": "Count metrics for component rendering",
@@ -22,8 +22,8 @@
     "longname": "RenderingCountMetrics",
     "meta": {
       "filename": "RenderingCountMetrics.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/metrics-presets/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "RenderingCountMetrics",
     "order": 1,

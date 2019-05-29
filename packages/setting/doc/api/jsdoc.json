@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/setting/lib"
+      "path": "lib"
     },
     "name": "@the-/setting",
     "order": 3,
     "typicalname": "setting",
-    "version": "15.4.6"
+    "version": "15.4.7"
   },
   {
     "description": "Delete value for name",
@@ -23,8 +23,8 @@
     "memberof": "TheSetting",
     "meta": {
       "filename": "TheSetting.js",
-      "lineno": 58,
-      "path": "/Users/okuni/Projects/the/packages/setting/lib"
+      "lineno": 57,
+      "path": "lib"
     },
     "name": "del",
     "order": 6,
@@ -49,8 +49,8 @@
     "memberof": "TheSetting",
     "meta": {
       "filename": "TheSetting.js",
-      "lineno": 80,
-      "path": "/Users/okuni/Projects/the/packages/setting/lib"
+      "lineno": 79,
+      "path": "lib"
     },
     "name": "get",
     "order": 7,
@@ -85,8 +85,8 @@
     "memberof": "TheSetting",
     "meta": {
       "filename": "TheSetting.js",
-      "lineno": 118,
-      "path": "/Users/okuni/Projects/the/packages/setting/lib"
+      "lineno": 117,
+      "path": "lib"
     },
     "name": "set",
     "order": 8,
@@ -114,8 +114,8 @@
     "memberof": "module:@the-/setting",
     "meta": {
       "filename": "TheSetting.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/setting/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheSetting",
     "order": 4,
@@ -129,8 +129,8 @@
     "memberof": "module:@the-/setting",
     "meta": {
       "filename": "TheSetting.js",
-      "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/setting/lib"
+      "lineno": 20,
+      "path": "lib"
     },
     "name": "TheSettingBase",
     "order": 5,
@@ -144,8 +144,8 @@
     "memberof": "module:@the-/setting",
     "meta": {
       "filename": "helpers.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/setting/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "helpers",
     "order": 2,
@@ -160,7 +160,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/setting/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "mixins",
     "order": 9,
@@ -174,8 +174,8 @@
     "memberof": "module:@the-/setting",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/setting/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -209,8 +209,8 @@
     "memberof": "module:@the-/setting",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/setting/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,
@@ -223,8 +223,8 @@
     "memberof": "module:@the-/setting.mixins",
     "meta": {
       "filename": "lockMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/setting/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "lockMix",
     "order": 10,
@@ -237,8 +237,8 @@
     "memberof": "module:@the-/setting.mixins.lockMix",
     "meta": {
       "filename": "lockMix.js",
-      "lineno": 17,
-      "path": "/Users/okuni/Projects/the/packages/setting/lib/mixins"
+      "lineno": 16,
+      "path": "lib/mixins"
     },
     "name": "LockMixed",
     "order": 11,

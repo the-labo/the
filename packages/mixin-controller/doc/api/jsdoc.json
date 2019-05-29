@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
+      "path": "lib"
     },
     "name": "@the-/mixin-controller",
     "order": 1,
     "typicalname": "mixinController",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "description": "Compose multiple mixins into one",
@@ -22,8 +22,8 @@
     "longname": "compose",
     "meta": {
       "filename": "compose.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "compose",
     "order": 0,
@@ -57,8 +57,8 @@
     "longname": "withAuthorized",
     "meta": {
       "filename": "withAuthorized.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "withAuthorized",
     "order": 2,
@@ -71,8 +71,8 @@
     "longname": "withClient",
     "meta": {
       "filename": "withClient.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "withClient",
     "order": 3,
@@ -85,8 +85,8 @@
     "longname": "withDebug",
     "meta": {
       "filename": "withDebug.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "withDebug",
     "order": 4,
@@ -120,8 +120,8 @@
     "longname": "withListen",
     "meta": {
       "filename": "withListen.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "withListen",
     "order": 5,
@@ -134,8 +134,8 @@
     "longname": "withPreference",
     "meta": {
       "filename": "withPreference.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "withPreference",
     "order": 6,
@@ -148,8 +148,8 @@
     "longname": "withSeal",
     "meta": {
       "filename": "withSeal.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "withSeal",
     "order": 7,
@@ -161,8 +161,8 @@
     "longname": "getAllPropertyDescriptors",
     "meta": {
       "filename": "getAllPropertyDescriptors.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "getAllPropertyDescriptors",
     "order": 8,
@@ -174,8 +174,8 @@
     "longname": "instanceMethodNamesFor",
     "meta": {
       "filename": "instanceMethodNamesFor.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "instanceMethodNamesFor",
     "order": 9,
@@ -187,8 +187,8 @@
     "longname": "omitLongString",
     "meta": {
       "filename": "omitLongString.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/mixin-controller/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "omitLongString",
     "order": 10,

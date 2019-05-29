@@ -254,3 +254,4 @@ User name for
 | --- | --- | --- | --- |
 | name | <code>string</code> |  | Name for seat |
 | [bytes] | <code>number</code> | <code>4</code> | Length of byte for hash |
+

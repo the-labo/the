@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+      "path": "lib"
     },
     "name": "@the-/resource",
     "order": 3,
     "typicalname": "resource",
-    "version": "15.4.5"
+    "version": "15.4.7"
   },
   {
     "description": "Resource for the DB",
@@ -32,8 +32,8 @@
     "memberof": "module:@the-/resource.TheResource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 64,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+      "lineno": 63,
+      "path": "lib"
     },
     "name": "refOf",
     "order": 9,
@@ -70,8 +70,8 @@
     "memberof": "module:@the-/resource.TheResource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 79,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+      "lineno": 78,
+      "path": "lib"
     },
     "name": "emptyList",
     "order": 10,
@@ -96,8 +96,8 @@
     "memberof": "module:@the-/resource.TheResource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 88,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+      "lineno": 87,
+      "path": "lib"
     },
     "name": "invalidated",
     "order": 11,
@@ -131,8 +131,8 @@
     "memberof": "module:@the-/resource.TheResource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 97,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+      "lineno": 96,
+      "path": "lib"
     },
     "name": "refresh",
     "order": 12,
@@ -166,8 +166,8 @@
     "memberof": "module:@the-/resource.TheResource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 124,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+      "lineno": 123,
+      "path": "lib"
     },
     "name": "refreshAll",
     "order": 13,
@@ -192,8 +192,8 @@
     "memberof": "module:@the-/resource.TheResource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 134,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+      "lineno": 133,
+      "path": "lib"
     },
     "name": "resaveAll",
     "order": 14,
@@ -217,8 +217,8 @@
     "memberof": "ListenMixed",
     "meta": {
       "filename": "listenMix.js",
-      "lineno": 78,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+      "lineno": 77,
+      "path": "lib/mixins"
     },
     "name": "listenToCreate",
     "order": 18,
@@ -252,8 +252,8 @@
     "memberof": "ListenMixed",
     "meta": {
       "filename": "listenMix.js",
-      "lineno": 102,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+      "lineno": 101,
+      "path": "lib/mixins"
     },
     "name": "listenToDestroy",
     "order": 19,
@@ -287,8 +287,8 @@
     "memberof": "ListenMixed",
     "meta": {
       "filename": "listenMix.js",
-      "lineno": 139,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+      "lineno": 138,
+      "path": "lib/mixins"
     },
     "name": "listenToDrop",
     "order": 20,
@@ -322,8 +322,8 @@
     "memberof": "ListenMixed",
     "meta": {
       "filename": "listenMix.js",
-      "lineno": 153,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+      "lineno": 152,
+      "path": "lib/mixins"
     },
     "name": "listenToUpdate",
     "order": 21,
@@ -363,8 +363,8 @@
     "memberof": "module:@the-/resource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheResource",
     "order": 5,
@@ -378,8 +378,8 @@
     "memberof": "module:@the-/resource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 18,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+      "lineno": 17,
+      "path": "lib"
     },
     "name": "TheResourceBase",
     "order": 7,
@@ -396,8 +396,8 @@
     "memberof": "module:@the-/resource.TheResource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 39,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+      "lineno": 38,
+      "path": "lib"
     },
     "name": "cascaded",
     "order": 8,
@@ -412,8 +412,8 @@
     "memberof": "module:@the-/resource",
     "meta": {
       "filename": "DataTypes.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "DataTypes",
     "order": 1,
@@ -428,7 +428,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "mixins",
     "order": 15,
@@ -442,8 +442,8 @@
     "memberof": "module:@the-/resource",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -477,8 +477,8 @@
     "memberof": "module:@the-/resource",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 2,
@@ -491,8 +491,8 @@
     "memberof": "module:@the-/resource",
     "meta": {
       "filename": "isResourceClass.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "isResourceClass",
     "order": 4,
@@ -515,8 +515,8 @@
     "memberof": "module:@the-/resource.mixins",
     "meta": {
       "filename": "listenMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "listenMix",
     "order": 16,
@@ -550,8 +550,8 @@
     "memberof": "module:@the-/resource.mixins",
     "meta": {
       "filename": "queueMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "queueMix",
     "order": 22,
@@ -585,8 +585,8 @@
     "memberof": "module:@the-/resource.mixins",
     "meta": {
       "filename": "writeOnceMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "writeOnceMix",
     "order": 24,
@@ -618,8 +618,8 @@
     "memberof": "module:@the-/resource.mixins.listenMix",
     "meta": {
       "filename": "listenMix.js",
-      "lineno": 25,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+      "lineno": 24,
+      "path": "lib/mixins"
     },
     "name": "ListenMixed",
     "order": 17,
@@ -633,7 +633,7 @@
     "meta": {
       "filename": "queueMix.js",
       "lineno": 18,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "QueueMixed",
     "order": 23,
@@ -646,8 +646,8 @@
     "memberof": "module:@the-/resource.mixins.writeOnceMix",
     "meta": {
       "filename": "writeOnceMix.js",
-      "lineno": 16,
-      "path": "/Users/okuni/Projects/the/packages/resource/lib/mixins"
+      "lineno": 15,
+      "path": "lib/mixins"
     },
     "name": "WriteOnce",
     "order": 25,

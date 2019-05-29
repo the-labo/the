@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@babel/parser": "^7.4.4",
+    "@babel/parser": "^7.4.5",
     "@babel/types": "^7.4.4",
     "lodash.clone": "^4.5.0"
   },

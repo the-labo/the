@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/url/lib"
+      "path": "lib"
     },
     "name": "@the-/url",
     "order": 2,
     "typicalname": "url",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Add query to url string",
@@ -23,8 +23,8 @@
     "memberof": "module:@the-/url",
     "meta": {
       "filename": "addUrlQuery.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/url/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "addQuery",
     "order": 0,
@@ -68,8 +68,8 @@
     "memberof": "module:@the-/url",
     "meta": {
       "filename": "formatUrl.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/url/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "formatUrl",
     "order": 1,

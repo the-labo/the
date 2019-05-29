@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/util-client/lib"
+      "path": "lib"
     },
     "name": "@the-/util-client",
     "order": 0,
     "typicalname": "utilClient",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "description": "Read file as array buffer",
@@ -22,8 +22,8 @@
     "longname": "readFile",
     "meta": {
       "filename": "readFile.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-client/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "readFile",
     "order": 1,

@@ -15,7 +15,7 @@
     "@babel/polyfill": "^7.4.4",
     "abind": "^1.0.5",
     "bwindow": "^2.0.3",
-    "cross-fetch": "^3.0.2",
+    "cross-fetch": "^3.0.3",
     "fastclick": "^1.0.6",
     "image-capture": "^0.4.0",
     "process": "^0.11.10",

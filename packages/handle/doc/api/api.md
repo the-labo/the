@@ -5,7 +5,7 @@
 ## @the-/handle
 Action handler for the-framework
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/handle](#module_@the-/handle)
@@ -125,3 +125,4 @@ Load sub scenes
 | --- | --- | --- |
 | SceneClass | <code>function</code> | Scope class to load |
 | ...names | <code>string</code> | Sub names |
+

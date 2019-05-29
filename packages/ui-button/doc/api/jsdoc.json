@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-button",
     "order": 0,
     "typicalname": "uiButton",
-    "version": "15.4.3"
+    "version": "15.4.7"
   },
   {
     "description": "Button of the-components",
@@ -21,8 +21,8 @@
     "longname": "TheButton",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 16,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "lineno": 33,
+      "path": "lib"
     },
     "name": "TheButton",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheButtonGroup.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "path": "lib"
     },
     "name": "TheButtonGroup",
     "order": 19,
@@ -50,7 +50,7 @@
     "meta": {
       "filename": "TheButtonStyle.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "path": "lib"
     },
     "name": "TheButtonStyle",
     "order": 21,
@@ -65,8 +65,8 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 165,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "lineno": 174,
+      "path": "lib"
     },
     "name": "color",
     "order": 2,
@@ -80,8 +80,8 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 167,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "lineno": 176,
+      "path": "lib"
     },
     "name": "danger",
     "order": 3,
@@ -95,8 +95,8 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 169,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "lineno": 178,
+      "path": "lib"
     },
     "name": "disabled",
     "order": 4,
@@ -110,8 +110,8 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 171,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "lineno": 180,
+      "path": "lib"
     },
     "name": "floated",
     "order": 5,
@@ -125,8 +125,8 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 173,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "lineno": 182,
+      "path": "lib"
     },
     "name": "icon",
     "order": 6,
@@ -140,8 +140,8 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 175,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "lineno": 184,
+      "path": "lib"
     },
     "name": "large",
     "order": 7,
@@ -155,8 +155,8 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 177,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "lineno": 186,
+      "path": "lib"
     },
     "name": "largeIcon",
     "order": 8,
@@ -170,8 +170,8 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 179,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "lineno": 188,
+      "path": "lib"
     },
     "name": "light",
     "order": 9,
@@ -185,8 +185,8 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 181,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "lineno": 190,
+      "path": "lib"
     },
     "name": "minInterval",
     "order": 10,
@@ -200,8 +200,8 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 183,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "lineno": 192,
+      "path": "lib"
     },
     "name": "onSubmit",
     "order": 11,
@@ -215,8 +215,8 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 185,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "lineno": 194,
+      "path": "lib"
     },
     "name": "primary",
     "order": 12,
@@ -230,8 +230,8 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 187,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "lineno": 196,
+      "path": "lib"
     },
     "name": "rounded",
     "order": 13,
@@ -245,8 +245,8 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 189,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "lineno": 198,
+      "path": "lib"
     },
     "name": "simple",
     "order": 14,
@@ -260,8 +260,8 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 191,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "lineno": 200,
+      "path": "lib"
     },
     "name": "small",
     "order": 15,
@@ -275,8 +275,8 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 193,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "lineno": 202,
+      "path": "lib"
     },
     "name": "spinning",
     "order": 16,
@@ -290,8 +290,8 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 195,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "lineno": 204,
+      "path": "lib"
     },
     "name": "text",
     "order": 17,
@@ -305,8 +305,8 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 197,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "lineno": 206,
+      "path": "lib"
     },
     "name": "wide",
     "order": 18,
@@ -320,8 +320,8 @@
     "memberof": "TheButtonGroup.propTypes",
     "meta": {
       "filename": "TheButtonGroup.jsx",
-      "lineno": 36,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "lineno": 39,
+      "path": "lib"
     },
     "name": "align",
     "order": 20,
@@ -336,7 +336,7 @@
     "meta": {
       "filename": "TheButtonStyle.jsx",
       "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/ui-button/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 22,

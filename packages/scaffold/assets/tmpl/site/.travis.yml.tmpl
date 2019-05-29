@@ -1,18 +1,18 @@
-language: node_js
-services:
-  - docker
-node_js:
-  - '10'
+after_success:
+  - publish-if-needed
 before_install:
   - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
   - npm install publish-if-needed npm@latest pm2 pon jsdoc -g
-install:
-  - npm install
-script:
-  - pon prepare
-  - pon build
-after_success:
-  - publish-if-needed
 env:
   global:
     - secure: akbUT2UD7+RyxPkqxCrzQKa6UDuU7rK56PsIrtIoTsV39lHyRd4fjq8ftngkFu8oynTd5wQAydgbi+hTNRUtyWLrbwfIdIk+L2gEf0nVYGYdfBxVBwx3jCHCamQjTZqzp/BwnDR+wAHBSNCAS8klYz7f4wespol6RWLPG/WVl8oYNO+DbFqcx+wscmLo/H/15cuy07M5FGl8OM0nPdN/YLSUpsF/VmVE84HCgmb3Z5zY4ErWA8oiBXXNflsOiXYIkyX0g7KrwYyhH6rr2ajPNsR2KkBPCZjoZ3YMA2/zkMZeo6zvwZ9vYMTCM18RUMwn6T5CEhuNKGb5Eg9e69gE1ylHL4pd9Jf0rcuEdUBquchuQIBOy7QTe3SB8co0zRZ4VVqNROXh9sZxAPC3ZzMLHS+nVe5Gv9D7QC2iCGw1o225CPZHBIaK02yEJWf3W4CQvBDILHCt6HZKhy7oOzfSNrDLpLhqGRndALFUArFQPaFaXG4CVms4LniVKZcE9UX1vFxgI437XHI0I1pjPgSQGLN2aZLK4KZFtQ5e8nLqoOWfVfMbsABma2RdQLiIcriJZwv7tT/lKdA3evwwgp8Q3EgKOKIFuvsJ7qKaRsZgQ0k3B1+N9MB9ja5dsscDydZoR+BOirs0Z+cY8z50tty0d2CZFNSPgFzUjLceYwEdtps=
+install:
+  - npm install
+language: node_js
+node_js:
+  - '10'
+script:
+  - pon prepare
+  - pon build
+services:
+  - docker

@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-calendar",
     "order": 0,
     "typicalname": "uiCalendar",
-    "version": "15.4.5"
+    "version": "15.4.7"
   },
   {
     "description": "Calendar of the-components",
@@ -21,8 +21,8 @@
     "longname": "TheCalendar",
     "meta": {
       "filename": "TheCalendar.jsx",
-      "lineno": 47,
-      "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
+      "lineno": 50,
+      "path": "lib"
     },
     "name": "TheCalendar",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheCalendarStyle.jsx",
       "lineno": 12,
-      "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
+      "path": "lib"
     },
     "name": "TheCalendarStyle",
     "order": 8,
@@ -52,7 +52,7 @@
     "meta": {
       "filename": "TheCalendar.jsx",
       "lineno": 229,
-      "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
+      "path": "lib"
     },
     "name": "date",
     "order": 2,
@@ -67,7 +67,7 @@
     "meta": {
       "filename": "TheCalendar.jsx",
       "lineno": 231,
-      "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
+      "path": "lib"
     },
     "name": "events",
     "order": 3,
@@ -82,7 +82,7 @@
     "meta": {
       "filename": "TheCalendar.jsx",
       "lineno": 233,
-      "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
+      "path": "lib"
     },
     "name": "lang",
     "order": 4,
@@ -97,7 +97,7 @@
     "meta": {
       "filename": "TheCalendar.jsx",
       "lineno": 235,
-      "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
+      "path": "lib"
     },
     "name": "onNavigate",
     "order": 5,
@@ -112,7 +112,7 @@
     "meta": {
       "filename": "TheCalendar.jsx",
       "lineno": 237,
-      "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
+      "path": "lib"
     },
     "name": "onView",
     "order": 6,
@@ -127,7 +127,7 @@
     "meta": {
       "filename": "TheCalendar.jsx",
       "lineno": 239,
-      "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
+      "path": "lib"
     },
     "name": "view",
     "order": 7,
@@ -142,7 +142,7 @@
     "meta": {
       "filename": "TheCalendarStyle.jsx",
       "lineno": 23,
-      "path": "/Users/okuni/Projects/the/packages/ui-calendar/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 9,

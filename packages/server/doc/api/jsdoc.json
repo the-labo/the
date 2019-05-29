@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/server/lib"
+      "path": "lib"
     },
     "name": "@the-/server",
     "order": 4,
     "typicalname": "server",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "description": "HTTP server for the-framework",
@@ -96,7 +96,7 @@
     "meta": {
       "filename": "keepMix.js",
       "lineno": 16,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "KeepMixed",
     "order": 50,
@@ -109,8 +109,8 @@
     "longname": "IOEvents",
     "meta": {
       "filename": "IOEvents.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/constants"
+      "lineno": 2,
+      "path": "lib/constants"
     },
     "name": "IOEvents",
     "order": 24,
@@ -126,7 +126,7 @@
     "meta": {
       "filename": "TheServer.js",
       "lineno": 201,
-      "path": "/Users/okuni/Projects/the/packages/server/lib"
+      "path": "lib"
     },
     "name": "close",
     "order": 7,
@@ -163,7 +163,7 @@
     "meta": {
       "filename": "TheServer.js",
       "lineno": 225,
-      "path": "/Users/okuni/Projects/the/packages/server/lib"
+      "path": "lib"
     },
     "name": "destroyAllSessions",
     "order": 8,
@@ -189,7 +189,7 @@
     "meta": {
       "filename": "TheServer.js",
       "lineno": 237,
-      "path": "/Users/okuni/Projects/the/packages/server/lib"
+      "path": "lib"
     },
     "name": "handleIOClientCame",
     "order": 9,
@@ -206,7 +206,7 @@
     "meta": {
       "filename": "TheServer.js",
       "lineno": 249,
-      "path": "/Users/okuni/Projects/the/packages/server/lib"
+      "path": "lib"
     },
     "name": "handleIOClientGone",
     "order": 10,
@@ -223,7 +223,7 @@
     "meta": {
       "filename": "TheServer.js",
       "lineno": 274,
-      "path": "/Users/okuni/Projects/the/packages/server/lib"
+      "path": "lib"
     },
     "name": "handleIORPCAbort",
     "order": 11,
@@ -240,7 +240,7 @@
     "meta": {
       "filename": "TheServer.js",
       "lineno": 279,
-      "path": "/Users/okuni/Projects/the/packages/server/lib"
+      "path": "lib"
     },
     "name": "handleIORPCCall",
     "order": 12,
@@ -256,8 +256,8 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 313,
-      "path": "/Users/okuni/Projects/the/packages/server/lib"
+      "lineno": 314,
+      "path": "lib"
     },
     "name": "handleIOStreamChunk",
     "order": 13,
@@ -273,8 +273,8 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 320,
-      "path": "/Users/okuni/Projects/the/packages/server/lib"
+      "lineno": 321,
+      "path": "lib"
     },
     "name": "handleIOStreamClose",
     "order": 14,
@@ -290,8 +290,8 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 329,
-      "path": "/Users/okuni/Projects/the/packages/server/lib"
+      "lineno": 330,
+      "path": "lib"
     },
     "name": "handleIOStreamFin",
     "order": 15,
@@ -307,8 +307,8 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 341,
-      "path": "/Users/okuni/Projects/the/packages/server/lib"
+      "lineno": 342,
+      "path": "lib"
     },
     "name": "handleIOStreamOpen",
     "order": 16,
@@ -325,8 +325,8 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 432,
-      "path": "/Users/okuni/Projects/the/packages/server/lib"
+      "lineno": 433,
+      "path": "lib"
     },
     "name": "listen",
     "order": 17,
@@ -361,8 +361,8 @@
     "memberof": "ControllerModuleBind",
     "meta": {
       "filename": "toControllerModuleBind.js",
-      "lineno": 48,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+      "lineno": 47,
+      "path": "lib/helpers"
     },
     "name": "reloadSession",
     "order": 37,
@@ -399,8 +399,8 @@
     "memberof": "ControllerModuleBind",
     "meta": {
       "filename": "toControllerModuleBind.js",
-      "lineno": 79,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+      "lineno": 78,
+      "path": "lib/helpers"
     },
     "name": "saveSession",
     "order": 38,
@@ -436,8 +436,8 @@
     "memberof": "module:@the-/server.mixins.infoMix~InfoMixed",
     "meta": {
       "filename": "infoMix.js",
-      "lineno": 27,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+      "lineno": 26,
+      "path": "lib/mixins"
     },
     "name": "info",
     "order": 45,
@@ -453,8 +453,8 @@
     "memberof": "module:@the-/server.mixins.infoMix~InfoMixed",
     "meta": {
       "filename": "infoMix.js",
-      "lineno": 39,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+      "lineno": 38,
+      "path": "lib/mixins"
     },
     "name": "flushInfo",
     "order": 46,
@@ -470,8 +470,8 @@
     "memberof": "module:@the-/server.stores.Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 32,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+      "lineno": 31,
+      "path": "lib/stores"
     },
     "name": "cleanup",
     "order": 60,
@@ -496,8 +496,8 @@
     "memberof": "module:@the-/server.stores.Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 54,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+      "lineno": 53,
+      "path": "lib/stores"
     },
     "name": "del",
     "order": 61,
@@ -532,8 +532,8 @@
     "memberof": "module:@the-/server.stores.Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 63,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+      "lineno": 62,
+      "path": "lib/stores"
     },
     "name": "delAll",
     "order": 62,
@@ -558,8 +558,8 @@
     "memberof": "module:@the-/server.stores.Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 77,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+      "lineno": 76,
+      "path": "lib/stores"
     },
     "name": "get",
     "order": 63,
@@ -594,8 +594,8 @@
     "memberof": "module:@the-/server.stores.Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 93,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+      "lineno": 92,
+      "path": "lib/stores"
     },
     "name": "has",
     "order": 64,
@@ -630,8 +630,8 @@
     "memberof": "module:@the-/server.stores.Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 101,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+      "lineno": 100,
+      "path": "lib/stores"
     },
     "name": "ids",
     "order": 65,
@@ -656,8 +656,8 @@
     "memberof": "module:@the-/server.stores.Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 112,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+      "lineno": 111,
+      "path": "lib/stores"
     },
     "name": "set",
     "order": 66,
@@ -703,12 +703,11 @@
     "memberof": "module:@the-/server.stores.ConnectionStore",
     "meta": {
       "filename": "Store.js",
-      "lineno": 32,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+      "lineno": 31,
+      "path": "lib/stores"
     },
     "name": "cleanup",
     "order": 67,
-    "params": [],
     "returns": [
       {
         "type": {
@@ -731,8 +730,8 @@
     "memberof": "module:@the-/server.stores.ConnectionStore",
     "meta": {
       "filename": "Store.js",
-      "lineno": 54,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+      "lineno": 53,
+      "path": "lib/stores"
     },
     "name": "del",
     "order": 68,
@@ -769,12 +768,11 @@
     "memberof": "module:@the-/server.stores.ConnectionStore",
     "meta": {
       "filename": "Store.js",
-      "lineno": 63,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+      "lineno": 62,
+      "path": "lib/stores"
     },
     "name": "delAll",
     "order": 69,
-    "params": [],
     "returns": [
       {
         "type": {
@@ -797,8 +795,8 @@
     "memberof": "module:@the-/server.stores.ConnectionStore",
     "meta": {
       "filename": "Store.js",
-      "lineno": 77,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+      "lineno": 76,
+      "path": "lib/stores"
     },
     "name": "get",
     "order": 70,
@@ -835,8 +833,8 @@
     "memberof": "module:@the-/server.stores.ConnectionStore",
     "meta": {
       "filename": "Store.js",
-      "lineno": 93,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+      "lineno": 92,
+      "path": "lib/stores"
     },
     "name": "has",
     "order": 71,
@@ -873,12 +871,11 @@
     "memberof": "module:@the-/server.stores.ConnectionStore",
     "meta": {
       "filename": "Store.js",
-      "lineno": 101,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+      "lineno": 100,
+      "path": "lib/stores"
     },
     "name": "ids",
     "order": 72,
-    "params": [],
     "returns": [
       {
         "type": {
@@ -901,8 +898,8 @@
     "memberof": "module:@the-/server.stores.ConnectionStore",
     "meta": {
       "filename": "Store.js",
-      "lineno": 112,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+      "lineno": 111,
+      "path": "lib/stores"
     },
     "name": "set",
     "order": 73,
@@ -948,8 +945,8 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheServer",
     "order": 5,
@@ -965,8 +962,8 @@
     "memberof": "module:@the-/server.stores",
     "meta": {
       "filename": "ConnectionStore.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+      "lineno": 2,
+      "path": "lib/stores"
     },
     "name": "ConnectionStore",
     "order": 53,
@@ -982,8 +979,8 @@
     "memberof": "module:@the-/server.stores",
     "meta": {
       "filename": "SessionStore.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+      "lineno": 2,
+      "path": "lib/stores"
     },
     "name": "SessionStore",
     "order": 56,
@@ -996,8 +993,8 @@
     "memberof": "module:@the-/server.stores",
     "meta": {
       "filename": "Store.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+      "lineno": 2,
+      "path": "lib/stores"
     },
     "name": "Store",
     "order": 58,
@@ -1011,8 +1008,8 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "buildInEndpoints.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "buildInEndpoints",
     "order": 1,
@@ -1027,7 +1024,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/adapters"
+      "path": "lib/adapters"
     },
     "name": "adapters",
     "order": 18,
@@ -1042,7 +1039,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/assert"
+      "path": "lib/assert"
     },
     "name": "assert",
     "order": 21,
@@ -1055,8 +1052,8 @@
     "memberof": "module:@the-/server.constants",
     "meta": {
       "filename": "DefaultValues.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/constants"
+      "lineno": 2,
+      "path": "lib/constants"
     },
     "name": "DefaultValues",
     "order": 22,
@@ -1071,7 +1068,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/constants"
+      "path": "lib/constants"
     },
     "name": "constants",
     "order": 23,
@@ -1087,7 +1084,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+      "path": "lib/helpers"
     },
     "name": "helpers",
     "order": 29,
@@ -1102,7 +1099,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "mixins",
     "order": 42,
@@ -1117,7 +1114,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/stores"
+      "path": "lib/stores"
     },
     "name": "stores",
     "order": 55,
@@ -1131,8 +1128,8 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "asControllerModule.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "asControllerModule",
     "order": 0,
@@ -1146,8 +1143,8 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 2,
@@ -1181,8 +1178,8 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 3,
@@ -1196,8 +1193,8 @@
     "memberof": "module:@the-/server.adapters",
     "meta": {
       "filename": "redisAdapter.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/adapters"
+      "lineno": 2,
+      "path": "lib/adapters"
     },
     "name": "redisAdapter",
     "order": 19,
@@ -1220,8 +1217,8 @@
     "memberof": "module:@the-/server.assert",
     "meta": {
       "filename": "assertMethods.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/assert"
+      "lineno": 2,
+      "path": "lib/assert"
     },
     "name": "assertMethods",
     "order": 20,
@@ -1252,8 +1249,8 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "asStrictSession.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "asStrictSession",
     "order": 25,
@@ -1277,8 +1274,8 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "callbacksProxy.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "callbacksProxy",
     "order": 26,
@@ -1301,8 +1298,8 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "controllerSpecsFor.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "controllerSpecsFor",
     "order": 27,
@@ -1316,8 +1313,8 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "ctxInjector.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "ctxInjector",
     "order": 28,
@@ -1350,8 +1347,8 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "langDetector.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "langDetector",
     "order": 30,
@@ -1397,8 +1394,8 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "queryFromUrl.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "queryFromUrl",
     "order": 31,
@@ -1412,8 +1409,8 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "serversideRendering.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "serverRendering",
     "order": 32,
@@ -1458,8 +1455,8 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "serversideRendering.js",
-      "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+      "lineno": 20,
+      "path": "lib/helpers"
     },
     "name": "serverRendering",
     "order": 33,
@@ -1473,8 +1470,8 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "streamPool.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "streamPool",
     "order": 34,
@@ -1487,8 +1484,8 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "toControllerModuleBind.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "toControllerModuleBind",
     "order": 36,
@@ -1510,8 +1507,8 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "toLowerKeys.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "toLowerKeys",
     "order": 39,
@@ -1525,8 +1522,8 @@
     "memberof": "module:@the-/server.mixins",
     "meta": {
       "filename": "clientMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "clientMix",
     "order": 40,
@@ -1560,8 +1557,8 @@
     "memberof": "module:@the-/server.mixins",
     "meta": {
       "filename": "infoMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "infoMix",
     "order": 43,
@@ -1595,8 +1592,8 @@
     "memberof": "module:@the-/server.mixins",
     "meta": {
       "filename": "ioMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "ioMix",
     "order": 47,
@@ -1630,8 +1627,8 @@
     "memberof": "module:@the-/server.mixins",
     "meta": {
       "filename": "keepMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "keepMix",
     "order": 49,
@@ -1665,8 +1662,8 @@
     "memberof": "module:@the-/server.mixins",
     "meta": {
       "filename": "metricsMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "metricsMix",
     "order": 51,
@@ -1699,8 +1696,8 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "streamPool.js",
-      "lineno": 8,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/helpers"
+      "lineno": 7,
+      "path": "lib/helpers"
     },
     "name": "StreamPool",
     "order": 35,
@@ -1713,8 +1710,8 @@
     "memberof": "module:@the-/server.mixins.clientMix",
     "meta": {
       "filename": "clientMix.js",
-      "lineno": 16,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+      "lineno": 15,
+      "path": "lib/mixins"
     },
     "name": "ClientMixed",
     "order": 41,
@@ -1728,7 +1725,7 @@
     "meta": {
       "filename": "infoMix.js",
       "lineno": 20,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "InfoMixed",
     "order": 44,
@@ -1741,8 +1738,8 @@
     "memberof": "module:@the-/server.mixins.ioMix",
     "meta": {
       "filename": "ioMix.js",
-      "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+      "lineno": 20,
+      "path": "lib/mixins"
     },
     "name": "IOMixed",
     "order": 48,
@@ -1755,8 +1752,8 @@
     "memberof": "module:@the-/server.mixins.metricsMix",
     "meta": {
       "filename": "metricsMix.js",
-      "lineno": 12,
-      "path": "/Users/okuni/Projects/the/packages/server/lib/mixins"
+      "lineno": 11,
+      "path": "lib/mixins"
     },
     "name": "MetricsMix",
     "order": 52,

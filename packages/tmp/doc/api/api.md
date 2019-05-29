@@ -22,7 +22,7 @@
 ## @the-/tmp
 Tmp file creator
 
-**Version**: 15.4.5  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/tmp](#module_@the-/tmp)
@@ -145,9 +145,9 @@ Alias of [create](#module_@the-/tmp.create)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| cleanup | <code>function</code> |  |
 | descriptor | <code>Object</code> |  |
 | path | <code>string</code> | Filename |
+| cleanup | <code>function</code> |  |
 
 <a name="GenerateDirResult"></a>
 
@@ -157,5 +157,6 @@ Alias of [create](#module_@the-/tmp.create)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| cleanup | <code>function</code> |  |
 | path | <code>string</code> | Directory name |
+| cleanup | <code>function</code> |  |
+

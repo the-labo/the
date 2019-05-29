@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-root/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-root",
     "order": 0,
     "typicalname": "uiRoot",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Root element of the-components",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheRoot.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-root/lib"
+      "path": "lib"
     },
     "name": "TheRoot",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheRootStyle.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-root/lib"
+      "path": "lib"
     },
     "name": "TheRootStyle",
     "order": 2,
@@ -52,7 +52,7 @@
     "meta": {
       "filename": "TheRootStyle.jsx",
       "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/ui-root/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 3,

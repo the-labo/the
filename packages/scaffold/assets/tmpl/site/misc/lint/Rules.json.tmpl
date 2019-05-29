@@ -71,7 +71,7 @@
   },
   "conf/locales/**/*.json": {
     "usageRule": {
-      "flattenKeysUsedIn": [
+      "keysUsedIn": [
         "server/**/*.js",
         "client/**/*.js",
         "client/**/*.jsx"
@@ -84,6 +84,31 @@
       "type": "object",
       "valuePattern": "/^//",
       "valueUnique": true
+    }
+  },
+  "package.json": {
+    "packageRule": {
+      "depsUsedIn": [
+        "*.js",
+        ".*.bud",
+        "+(bin|conf|client|misc|assets|server)/**/+(*.js|*.jsx)",
+        "+(bin|conf|client|misc|assets|server)/**/.*.bud"
+      ],
+      "devDepsUsedIn": [
+        "*.js",
+        ".*.bud",
+        "+(bin|conf|client|misc|assets|server)/**/+(*.js|*.jsx)",
+        "+(bin|conf|client|misc|assets|server)/**/.*.bud"
+      ],
+      "except": [
+        "@babel/runtime",
+        "@the-/run",
+        "@the-/metrics",
+        "/.*-plugin-.*/",
+        "sqlite3",
+        "git-hooks",
+        "/@the-/eslint-config-.*/"
+      ]
     }
   },
   "server/**/*.js": {

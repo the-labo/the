@@ -1,6 +1,6 @@
 /**
  * Create an db instance
- * @memberof module:server.db
+ * @memberof module:~~~~package_name~~~~/server.db
  * @function create
  * @param {Object} [config]
  * @returns {TheDB}
@@ -22,7 +22,7 @@ const defaultConfig = {
   username: MysqlConnections.Default.USERNAME,
 }
 
-/** @lends module:server.db.create */
+/** @lends module:~~~~package_name~~~~/server.db.create */
 function create(config = defaultConfig, options = {}) {
   return theDB({
     resources: ResourceMapping,

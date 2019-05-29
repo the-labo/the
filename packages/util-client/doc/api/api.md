@@ -21,7 +21,7 @@
 ## @the-/util-client
 Utility for client side
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
 <a name="readFile"></a>
 
@@ -34,3 +34,4 @@ Read file as array buffer
 | Param | Type | Description |
 | --- | --- | --- |
 | file | <code>File</code> | File to read |
+

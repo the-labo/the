@@ -5,7 +5,7 @@
 ## @the-/state
 State holder for the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/state](#module_@the-/state)
@@ -452,4 +452,4 @@ Create a TheState instance
 ### state.default()
 Default exports
 
-**Kind**: static method of [<code>@the-/state</code>](#module_@the-/state)
+**Kind**: static method of [<code>@the-/state</code>](#module_@the-/state)  

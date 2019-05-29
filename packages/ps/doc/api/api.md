@@ -5,7 +5,7 @@
 ## @the-/ps
 Process manager for the-framework
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/ps](#module_@the-/ps)
@@ -63,4 +63,4 @@ Create a ThePS instance
 ### ps.default()
 Alias of [create](#module_@the-/ps.create)
 
-**Kind**: static method of [<code>@the-/ps</code>](#module_@the-/ps)
+**Kind**: static method of [<code>@the-/ps</code>](#module_@the-/ps)  

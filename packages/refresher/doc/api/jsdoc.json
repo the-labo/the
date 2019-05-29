@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/refresher/lib"
+      "path": "lib"
     },
     "name": "@the-/refresher",
     "order": 2,
     "typicalname": "refresher",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "description": "Check the refresh has the target",
@@ -23,8 +23,8 @@
     "memberof": "module:@the-/refresher.TheRefresher",
     "meta": {
       "filename": "TheRefresher.js",
-      "lineno": 27,
-      "path": "/Users/okuni/Projects/the/packages/refresher/lib"
+      "lineno": 26,
+      "path": "lib"
     },
     "name": "has",
     "order": 4,
@@ -57,8 +57,8 @@
     "memberof": "module:@the-/refresher.TheRefresher",
     "meta": {
       "filename": "TheRefresher.js",
-      "lineno": 32,
-      "path": "/Users/okuni/Projects/the/packages/refresher/lib"
+      "lineno": 31,
+      "path": "lib"
     },
     "name": "request",
     "order": 5,
@@ -73,8 +73,8 @@
     "memberof": "module:@the-/refresher.TheRefresher",
     "meta": {
       "filename": "TheRefresher.js",
-      "lineno": 41,
-      "path": "/Users/okuni/Projects/the/packages/refresher/lib"
+      "lineno": 40,
+      "path": "lib"
     },
     "name": "start",
     "order": 6,
@@ -98,8 +98,8 @@
     "memberof": "module:@the-/refresher.TheRefresher",
     "meta": {
       "filename": "TheRefresher.js",
-      "lineno": 68,
-      "path": "/Users/okuni/Projects/the/packages/refresher/lib"
+      "lineno": 67,
+      "path": "lib"
     },
     "name": "stop",
     "order": 7,
@@ -113,8 +113,8 @@
     "memberof": "module:@the-/refresher",
     "meta": {
       "filename": "TheRefresher.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/refresher/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheRefresher",
     "order": 3,
@@ -128,8 +128,8 @@
     "memberof": "module:@the-/refresher",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/refresher/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -163,8 +163,8 @@
     "memberof": "module:@the-/refresher",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/refresher/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,

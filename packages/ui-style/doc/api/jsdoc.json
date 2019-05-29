@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-style/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-style",
     "order": 0,
     "typicalname": "uiStyle",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Style of the-components",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheStyle.jsx",
       "lineno": 12,
-      "path": "/Users/okuni/Projects/the/packages/ui-style/lib"
+      "path": "lib"
     },
     "name": "TheStyle",
     "order": 1,
@@ -36,8 +36,8 @@
     "memberof": "TheStyle.propTypes",
     "meta": {
       "filename": "TheStyle.jsx",
-      "lineno": 67,
-      "path": "/Users/okuni/Projects/the/packages/ui-style/lib"
+      "lineno": 72,
+      "path": "lib"
     },
     "name": "className",
     "order": 2,
@@ -51,8 +51,8 @@
     "memberof": "TheStyle.propTypes",
     "meta": {
       "filename": "TheStyle.jsx",
-      "lineno": 69,
-      "path": "/Users/okuni/Projects/the/packages/ui-style/lib"
+      "lineno": 74,
+      "path": "lib"
     },
     "name": "id",
     "order": 3,
@@ -66,8 +66,8 @@
     "memberof": "TheStyle.propTypes",
     "meta": {
       "filename": "TheStyle.jsx",
-      "lineno": 71,
-      "path": "/Users/okuni/Projects/the/packages/ui-style/lib"
+      "lineno": 76,
+      "path": "lib"
     },
     "name": "prefix",
     "order": 4,
@@ -81,8 +81,8 @@
     "memberof": "TheStyle.propTypes",
     "meta": {
       "filename": "TheStyle.jsx",
-      "lineno": 73,
-      "path": "/Users/okuni/Projects/the/packages/ui-style/lib"
+      "lineno": 78,
+      "path": "lib"
     },
     "name": "type",
     "order": 5,

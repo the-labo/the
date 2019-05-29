@@ -7,11 +7,11 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/script-doc/lib"
+      "path": "lib"
     },
     "name": "@the-/script-doc",
     "order": 1,
-    "version": "15.4.5"
+    "version": "15.4.7"
   },
   {
     "description": "Generate jsdoc",
@@ -21,8 +21,8 @@
     "memberof": "module:@the-/script-doc",
     "meta": {
       "filename": "doc.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/script-doc/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "doc",
     "order": 0,

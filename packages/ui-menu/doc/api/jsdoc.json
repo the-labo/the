@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-menu",
     "order": 0,
     "typicalname": "uiMenu",
-    "version": "15.4.3"
+    "version": "15.4.7"
   },
   {
     "description": "Drop down menu",
@@ -21,8 +21,8 @@
     "longname": "TheDropDownMenu",
     "meta": {
       "filename": "TheDropdownMenu.jsx",
-      "lineno": 20,
-      "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
+      "lineno": 53,
+      "path": "lib"
     },
     "name": "TheDropDownMenu",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheMenu.jsx",
       "lineno": 13,
-      "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
+      "path": "lib"
     },
     "name": "TheMenu",
     "order": 6,
@@ -50,7 +50,7 @@
     "meta": {
       "filename": "TheMenuItem.jsx",
       "lineno": 13,
-      "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
+      "path": "lib"
     },
     "name": "TheMenuItem",
     "order": 8,
@@ -63,8 +63,8 @@
     "longname": "TheMenuStyle",
     "meta": {
       "filename": "TheMenuStyle.jsx",
-      "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
+      "lineno": 12,
+      "path": "lib"
     },
     "name": "TheMenuStyle",
     "order": 12,
@@ -79,8 +79,8 @@
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
       "filename": "TheDropdownMenu.jsx",
-      "lineno": 149,
-      "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
+      "lineno": 156,
+      "path": "lib"
     },
     "name": "eventsToClose",
     "order": 2,
@@ -94,8 +94,8 @@
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
       "filename": "TheDropdownMenu.jsx",
-      "lineno": 151,
-      "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
+      "lineno": 158,
+      "path": "lib"
     },
     "name": "label",
     "order": 3,
@@ -109,8 +109,8 @@
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
       "filename": "TheDropdownMenu.jsx",
-      "lineno": 153,
-      "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
+      "lineno": 160,
+      "path": "lib"
     },
     "name": "open",
     "order": 4,
@@ -124,8 +124,8 @@
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
       "filename": "TheDropdownMenu.jsx",
-      "lineno": 155,
-      "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
+      "lineno": 162,
+      "path": "lib"
     },
     "name": "righted",
     "order": 5,
@@ -139,8 +139,8 @@
     "memberof": "TheMenu.propTypes",
     "meta": {
       "filename": "TheMenu.jsx",
-      "lineno": 37,
-      "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
+      "lineno": 40,
+      "path": "lib"
     },
     "name": "grid",
     "order": 7,
@@ -154,8 +154,8 @@
     "memberof": "TheMenuItem.propTypes",
     "meta": {
       "filename": "TheMenuItem.jsx",
-      "lineno": 38,
-      "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
+      "lineno": 41,
+      "path": "lib"
     },
     "name": "active",
     "order": 9,
@@ -169,8 +169,8 @@
     "memberof": "TheMenuItem.propTypes",
     "meta": {
       "filename": "TheMenuItem.jsx",
-      "lineno": 40,
-      "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
+      "lineno": 43,
+      "path": "lib"
     },
     "name": "icon",
     "order": 10,
@@ -184,8 +184,8 @@
     "memberof": "TheMenuItem.propTypes",
     "meta": {
       "filename": "TheMenuItem.jsx",
-      "lineno": 42,
-      "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
+      "lineno": 45,
+      "path": "lib"
     },
     "name": "to",
     "order": 11,
@@ -199,8 +199,8 @@
     "memberof": "TheMenuStyle.propTypes",
     "meta": {
       "filename": "TheMenuStyle.jsx",
-      "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/ui-menu/lib"
+      "lineno": 23,
+      "path": "lib"
     },
     "name": "options",
     "order": 13,

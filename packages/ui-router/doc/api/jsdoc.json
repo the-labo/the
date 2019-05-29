@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-router/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-router",
     "order": 0,
     "typicalname": "uiRouter",
-    "version": "15.4.3"
+    "version": "15.4.7"
   },
   {
     "description": "Router of the-components",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheRouter.jsx",
       "lineno": 16,
-      "path": "/Users/okuni/Projects/the/packages/ui-router/lib"
+      "path": "lib"
     },
     "name": "TheRouter",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheRouterStyle.jsx",
       "lineno": 9,
-      "path": "/Users/okuni/Projects/the/packages/ui-router/lib"
+      "path": "lib"
     },
     "name": "TheRouterStyle",
     "order": 2,
@@ -52,7 +52,7 @@
     "meta": {
       "filename": "TheRouterStyle.jsx",
       "lineno": 20,
-      "path": "/Users/okuni/Projects/the/packages/ui-router/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 3,

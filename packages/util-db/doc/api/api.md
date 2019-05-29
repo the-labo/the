@@ -5,7 +5,7 @@
 ## @the-/util-db
 Utility for the-db
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/util-db](#module_@the-/util-db)
@@ -27,4 +27,5 @@ Make object keys to lower
 
 | Param | Type |
 | --- | --- |
-| obj | <code>Object</code> |
+| obj | <code>Object</code> | 
+

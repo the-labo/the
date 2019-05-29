@@ -13,8 +13,11 @@ import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 /** @lends ~~~~package_unscoped_name@pascalcase~~~~ */
 class ~~~~package_unscoped_name@pascalcase~~~~ extends React.Component {
   render() {
-    const { props } = this
-    const { children, className } = props
+    const {
+      props,
+      props: { children, className },
+    } = this
+
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}

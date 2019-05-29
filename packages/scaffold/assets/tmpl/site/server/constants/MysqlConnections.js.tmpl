@@ -1,6 +1,6 @@
 /**
  * MysqlConnections
- * @memberof module:server.constants
+ * @memberof module:~~~~package_name~~~~/server.constants
  * @namespace MysqlConnections
  */
 'use strict'
@@ -12,8 +12,8 @@ const DockerPorts = require('./DockerPorts')
 const Project = require('./Project')
 const SecretValues = require('./secret/SecretValues')
 
-const MysqlConnections = Object.freeze(
-  /** @lends module:server.constants.MysqlConnections */
+module.exports =
+  /** @lends module:~~~~package_name~~~~/server.constants.MysqlConnections */
   {
     Default: {
       ...(isProduction()
@@ -38,10 +38,8 @@ const MysqlConnections = Object.freeze(
             USERNAME: `${snakecase(Project.SHORT_NAME)}_dev`,
           }),
     },
-  },
-)
-
-module.exports = MysqlConnections
+  }
+Object.freeze(module.exports)
 
 if (!isProduction()) {
   module.exports = theHash.proxy(module.exports, {

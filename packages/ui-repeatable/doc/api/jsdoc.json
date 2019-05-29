@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-repeatable",
     "order": 0,
     "typicalname": "uiRepeatable",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Repeatable of the-component",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheRepeatable.jsx",
       "lineno": 14,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+      "path": "lib"
     },
     "name": "TheRepeatable",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheRepeatableStyle.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+      "path": "lib"
     },
     "name": "TheRepeatableStyle",
     "order": 12,
@@ -51,8 +51,8 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 70,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+      "lineno": 73,
+      "path": "lib"
     },
     "name": "ItemComponent",
     "order": 2,
@@ -66,8 +66,8 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 72,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+      "lineno": 75,
+      "path": "lib"
     },
     "name": "ListComponent",
     "order": 3,
@@ -81,8 +81,8 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 74,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+      "lineno": 77,
+      "path": "lib"
     },
     "name": "alt",
     "order": 4,
@@ -96,8 +96,8 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 76,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+      "lineno": 79,
+      "path": "lib"
     },
     "name": "data",
     "order": 5,
@@ -111,8 +111,8 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 78,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+      "lineno": 81,
+      "path": "lib"
     },
     "name": "horizontal",
     "order": 6,
@@ -126,8 +126,8 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 80,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+      "lineno": 83,
+      "path": "lib"
     },
     "name": "introItem",
     "order": 7,
@@ -141,8 +141,8 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 82,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+      "lineno": 85,
+      "path": "lib"
     },
     "name": "keyFor",
     "order": 8,
@@ -156,8 +156,8 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 84,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+      "lineno": 87,
+      "path": "lib"
     },
     "name": "outroItem",
     "order": 9,
@@ -171,8 +171,8 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 86,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+      "lineno": 89,
+      "path": "lib"
     },
     "name": "render",
     "order": 10,
@@ -186,8 +186,8 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 88,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+      "lineno": 91,
+      "path": "lib"
     },
     "name": "spinning",
     "order": 11,
@@ -202,7 +202,7 @@
     "meta": {
       "filename": "TheRepeatableStyle.jsx",
       "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/ui-repeatable/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 13,

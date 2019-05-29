@@ -29,7 +29,7 @@
 ## @the-/ui-router
 Router of the-components
 
-**Version**: 15.4.3  
+**Version**: 15.4.7  
 <a name="TheRouter"></a>
 
 ## TheRouter
@@ -41,4 +41,4 @@ Router of the-components
 ## TheRouterStyle()
 Style for TheRouter
 
-**Kind**: global function
+**Kind**: global function  

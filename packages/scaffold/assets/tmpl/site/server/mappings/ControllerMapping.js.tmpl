@@ -8,9 +8,10 @@
 
 const c = require('../controllers')
 
-module.exports = Object.freeze(
+module.exports =
   /** mappings.ControllerMapping */
   {
     appCtrl: c.AppCtrl,
   }
-)
+
+Object.freeze(module.exports)

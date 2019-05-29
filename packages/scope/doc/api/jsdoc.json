@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib"
+      "path": "lib"
     },
     "name": "@the-/scope",
     "order": 2,
     "typicalname": "scope",
-    "version": "15.4.3"
+    "version": "15.4.7"
   },
   {
     "description": "Abstract state class",
@@ -152,8 +152,8 @@
     "memberof": "module:@the-/scope.scopes.ArrayScope",
     "meta": {
       "filename": "ArrayScope.js",
-      "lineno": 87,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 85,
+      "path": "lib/scopes"
     },
     "name": "length",
     "order": 14,
@@ -177,8 +177,8 @@
     "memberof": "module:@the-/scope.scopes.ArrayScope",
     "meta": {
       "filename": "ArrayScope.js",
-      "lineno": 19,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 18,
+      "path": "lib/scopes"
     },
     "name": "concat",
     "order": 7,
@@ -203,8 +203,8 @@
     "memberof": "module:@the-/scope.scopes.ArrayScope",
     "meta": {
       "filename": "ArrayScope.js",
-      "lineno": 30,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 29,
+      "path": "lib/scopes"
     },
     "name": "pop",
     "order": 8,
@@ -218,8 +218,8 @@
     "memberof": "module:@the-/scope.scopes.ArrayScope",
     "meta": {
       "filename": "ArrayScope.js",
-      "lineno": 37,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 36,
+      "path": "lib/scopes"
     },
     "name": "push",
     "order": 9,
@@ -243,8 +243,8 @@
     "memberof": "module:@the-/scope.scopes.ArrayScope",
     "meta": {
       "filename": "ArrayScope.js",
-      "lineno": 45,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 44,
+      "path": "lib/scopes"
     },
     "name": "reset",
     "order": 10,
@@ -269,8 +269,8 @@
     "memberof": "module:@the-/scope.scopes.ArrayScope",
     "meta": {
       "filename": "ArrayScope.js",
-      "lineno": 53,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 52,
+      "path": "lib/scopes"
     },
     "name": "set",
     "order": 11,
@@ -304,8 +304,8 @@
     "memberof": "module:@the-/scope.scopes.ArrayScope",
     "meta": {
       "filename": "ArrayScope.js",
-      "lineno": 68,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 66,
+      "path": "lib/scopes"
     },
     "name": "shift",
     "order": 12,
@@ -319,8 +319,8 @@
     "memberof": "module:@the-/scope.scopes.ArrayScope",
     "meta": {
       "filename": "ArrayScope.js",
-      "lineno": 75,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 73,
+      "path": "lib/scopes"
     },
     "name": "unshift",
     "order": 13,
@@ -345,8 +345,8 @@
     "memberof": "module:@the-/scope.scopes.BooleanScope",
     "meta": {
       "filename": "BooleanScope.js",
-      "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 21,
+      "path": "lib/scopes"
     },
     "name": "toggle",
     "order": 17,
@@ -372,8 +372,8 @@
     "memberof": "module:@the-/scope.scopes.BooleanScope",
     "meta": {
       "filename": "BooleanScope.js",
-      "lineno": 37,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 36,
+      "path": "lib/scopes"
     },
     "name": "false",
     "order": 18,
@@ -388,8 +388,8 @@
     "memberof": "module:@the-/scope.scopes.BooleanScope",
     "meta": {
       "filename": "BooleanScope.js",
-      "lineno": 44,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 43,
+      "path": "lib/scopes"
     },
     "name": "set",
     "order": 19,
@@ -404,8 +404,8 @@
     "memberof": "module:@the-/scope.scopes.BooleanScope",
     "meta": {
       "filename": "BooleanScope.js",
-      "lineno": 52,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 51,
+      "path": "lib/scopes"
     },
     "name": "true",
     "order": 20,
@@ -419,8 +419,8 @@
     "memberof": "module:@the-/scope.scopes.NullScope",
     "meta": {
       "filename": "NullScope.js",
-      "lineno": 19,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 18,
+      "path": "lib/scopes"
     },
     "name": "init",
     "order": 24,
@@ -434,8 +434,8 @@
     "memberof": "module:@the-/scope.scopes.NumberScope",
     "meta": {
       "filename": "NumberScope.js",
-      "lineno": 19,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 18,
+      "path": "lib/scopes"
     },
     "name": "decrement",
     "order": 27,
@@ -462,8 +462,8 @@
     "memberof": "module:@the-/scope.scopes.NumberScope",
     "meta": {
       "filename": "NumberScope.js",
-      "lineno": 27,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 26,
+      "path": "lib/scopes"
     },
     "name": "increment",
     "order": 28,
@@ -490,8 +490,8 @@
     "memberof": "module:@the-/scope.scopes.NumberScope",
     "meta": {
       "filename": "NumberScope.js",
-      "lineno": 38,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 37,
+      "path": "lib/scopes"
     },
     "name": "set",
     "order": 29,
@@ -515,8 +515,8 @@
     "memberof": "module:@the-/scope.scopes.NumberScope",
     "meta": {
       "filename": "NumberScope.js",
-      "lineno": 53,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 52,
+      "path": "lib/scopes"
     },
     "name": "isNegative",
     "order": 30,
@@ -540,8 +540,8 @@
     "memberof": "module:@the-/scope.scopes.NumberScope",
     "meta": {
       "filename": "NumberScope.js",
-      "lineno": 61,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 60,
+      "path": "lib/scopes"
     },
     "name": "isPositive",
     "order": 31,
@@ -565,8 +565,8 @@
     "memberof": "module:@the-/scope.scopes.NumberScope",
     "meta": {
       "filename": "NumberScope.js",
-      "lineno": 69,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 68,
+      "path": "lib/scopes"
     },
     "name": "isZero",
     "order": 32,
@@ -590,8 +590,8 @@
     "memberof": "module:@the-/scope.scopes.ObjectScope",
     "meta": {
       "filename": "ObjectScope.js",
-      "lineno": 19,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 18,
+      "path": "lib/scopes"
     },
     "name": "del",
     "order": 35,
@@ -617,8 +617,8 @@
     "memberof": "module:@the-/scope.scopes.ObjectScope",
     "meta": {
       "filename": "ObjectScope.js",
-      "lineno": 41,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 40,
+      "path": "lib/scopes"
     },
     "name": "drop",
     "order": 36,
@@ -632,8 +632,8 @@
     "memberof": "module:@the-/scope.scopes.ObjectScope",
     "meta": {
       "filename": "ObjectScope.js",
-      "lineno": 51,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 50,
+      "path": "lib/scopes"
     },
     "name": "reset",
     "order": 37,
@@ -657,8 +657,8 @@
     "memberof": "module:@the-/scope.scopes.ObjectScope",
     "meta": {
       "filename": "ObjectScope.js",
-      "lineno": 67,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 66,
+      "path": "lib/scopes"
     },
     "name": "set",
     "order": 38,
@@ -692,8 +692,8 @@
     "memberof": "module:@the-/scope.scopes.ObjectScope",
     "meta": {
       "filename": "ObjectScope.js",
-      "lineno": 95,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 94,
+      "path": "lib/scopes"
     },
     "name": "get",
     "order": 39,
@@ -708,8 +708,8 @@
     "memberof": "module:@the-/scope.scopes.ObjectScope",
     "meta": {
       "filename": "ObjectScope.js",
-      "lineno": 100,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 99,
+      "path": "lib/scopes"
     },
     "name": "has",
     "order": 40,
@@ -724,8 +724,8 @@
     "memberof": "module:@the-/scope.scopes.ScopeScope",
     "meta": {
       "filename": "ScopeScope.js",
-      "lineno": 27,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 26,
+      "path": "lib/scopes"
     },
     "name": "get",
     "order": 46,
@@ -760,8 +760,8 @@
     "memberof": "module:@the-/scope.scopes.ScopeScope",
     "meta": {
       "filename": "ScopeScope.js",
-      "lineno": 36,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 35,
+      "path": "lib/scopes"
     },
     "name": "has",
     "order": 47,
@@ -795,8 +795,8 @@
     "memberof": "module:@the-/scope.scopes.ScopeScope",
     "meta": {
       "filename": "ScopeScope.js",
-      "lineno": 48,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 47,
+      "path": "lib/scopes"
     },
     "name": "init",
     "order": 48,
@@ -822,8 +822,8 @@
     "memberof": "module:@the-/scope.scopes.ScopeScope",
     "meta": {
       "filename": "ScopeScope.js",
-      "lineno": 70,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 69,
+      "path": "lib/scopes"
     },
     "name": "of",
     "order": 49,
@@ -857,8 +857,8 @@
     "memberof": "module:@the-/scope.scopes.ScopeScope",
     "meta": {
       "filename": "ScopeScope.js",
-      "lineno": 96,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 95,
+      "path": "lib/scopes"
     },
     "name": "set",
     "order": 50,
@@ -892,8 +892,8 @@
     "memberof": "module:@the-/scope.scopes.StringScope",
     "meta": {
       "filename": "StringScope.js",
-      "lineno": 19,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 18,
+      "path": "lib/scopes"
     },
     "name": "del",
     "order": 53,
@@ -907,8 +907,8 @@
     "memberof": "module:@the-/scope.scopes.StringScope",
     "meta": {
       "filename": "StringScope.js",
-      "lineno": 29,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 28,
+      "path": "lib/scopes"
     },
     "name": "replace",
     "order": 54,
@@ -943,8 +943,8 @@
     "memberof": "module:@the-/scope.scopes.StringScope",
     "meta": {
       "filename": "StringScope.js",
-      "lineno": 38,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 37,
+      "path": "lib/scopes"
     },
     "name": "set",
     "order": 55,
@@ -969,8 +969,8 @@
     "memberof": "module:@the-/scope.scopes.ValueScope",
     "meta": {
       "filename": "ValueScope.js",
-      "lineno": 19,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 18,
+      "path": "lib/scopes"
     },
     "name": "del",
     "order": 58,
@@ -984,8 +984,8 @@
     "memberof": "module:@the-/scope.scopes.ValueScope",
     "meta": {
       "filename": "ValueScope.js",
-      "lineno": 29,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 28,
+      "path": "lib/scopes"
     },
     "name": "set",
     "order": 59,
@@ -1009,8 +1009,8 @@
     "memberof": "module:@the-/scope",
     "meta": {
       "filename": "TheScope.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheScope",
     "order": 3,
@@ -1027,8 +1027,8 @@
     "memberof": "module:@the-/scope.scopes",
     "meta": {
       "filename": "ArrayScope.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 2,
+      "path": "lib/scopes"
     },
     "name": "ArrayScope",
     "order": 5,
@@ -1044,8 +1044,8 @@
     "memberof": "module:@the-/scope.scopes",
     "meta": {
       "filename": "BooleanScope.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 2,
+      "path": "lib/scopes"
     },
     "name": "BooleanScope",
     "order": 15,
@@ -1061,8 +1061,8 @@
     "memberof": "module:@the-/scope.scopes",
     "meta": {
       "filename": "NullScope.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 2,
+      "path": "lib/scopes"
     },
     "name": "NullScope",
     "order": 22,
@@ -1078,8 +1078,8 @@
     "memberof": "module:@the-/scope.scopes",
     "meta": {
       "filename": "NumberScope.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 2,
+      "path": "lib/scopes"
     },
     "name": "NumberScope",
     "order": 25,
@@ -1095,8 +1095,8 @@
     "memberof": "module:@the-/scope.scopes",
     "meta": {
       "filename": "ObjectScope.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 2,
+      "path": "lib/scopes"
     },
     "name": "ObjectScope",
     "order": 33,
@@ -1109,8 +1109,8 @@
     "memberof": "module:@the-/scope.scopes",
     "meta": {
       "filename": "Scope.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 2,
+      "path": "lib/scopes"
     },
     "name": "Scope",
     "order": 41,
@@ -1127,8 +1127,8 @@
     "memberof": "module:@the-/scope.scopes",
     "meta": {
       "filename": "ScopeScope.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 2,
+      "path": "lib/scopes"
     },
     "name": "ScopeScope",
     "order": 44,
@@ -1144,8 +1144,8 @@
     "memberof": "module:@the-/scope.scopes",
     "meta": {
       "filename": "StringScope.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 2,
+      "path": "lib/scopes"
     },
     "name": "StringScope",
     "order": 51,
@@ -1161,8 +1161,8 @@
     "memberof": "module:@the-/scope.scopes",
     "meta": {
       "filename": "ValueScope.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 2,
+      "path": "lib/scopes"
     },
     "name": "ValueScope",
     "order": 56,
@@ -1178,7 +1178,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "path": "lib/scopes"
     },
     "name": "scopes",
     "order": 21,
@@ -1192,8 +1192,8 @@
     "memberof": "module:@the-/scope",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -1227,8 +1227,8 @@
     "memberof": "module:@the-/scope",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,
@@ -1242,8 +1242,8 @@
     "memberof": "module:@the-/scope.scopes.Scope",
     "meta": {
       "filename": "Scope.js",
-      "lineno": 19,
-      "path": "/Users/okuni/Projects/the/packages/scope/lib/scopes"
+      "lineno": 18,
+      "path": "lib/scopes"
     },
     "name": "withDefault",
     "order": 43,

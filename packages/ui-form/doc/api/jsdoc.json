@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-form",
     "order": 0,
     "typicalname": "uiForm",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Form of the-components",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheForm.jsx",
       "lineno": 13,
-      "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
+      "path": "lib"
     },
     "name": "TheForm",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheFormStyle.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
+      "path": "lib"
     },
     "name": "TheFormStyle",
     "order": 16,
@@ -51,8 +51,8 @@
     "memberof": "TheFormBinder",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 90,
-      "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
+      "lineno": 101,
+      "path": "lib"
     },
     "name": "inputPropsOf",
     "order": 5,
@@ -87,8 +87,8 @@
     "memberof": "TheFormBinder",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 111,
-      "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
+      "lineno": 125,
+      "path": "lib"
     },
     "name": "labelPropsOf",
     "order": 6,
@@ -123,8 +123,8 @@
     "memberof": "TheForm.propTypes",
     "meta": {
       "filename": "TheForm.jsx",
-      "lineno": 117,
-      "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
+      "lineno": 120,
+      "path": "lib"
     },
     "name": "errorLead",
     "order": 2,
@@ -138,8 +138,8 @@
     "memberof": "TheForm.propTypes",
     "meta": {
       "filename": "TheForm.jsx",
-      "lineno": 119,
-      "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
+      "lineno": 122,
+      "path": "lib"
     },
     "name": "inline",
     "order": 3,
@@ -153,8 +153,8 @@
     "memberof": "TheForm.propTypes",
     "meta": {
       "filename": "TheForm.jsx",
-      "lineno": 121,
-      "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
+      "lineno": 124,
+      "path": "lib"
     },
     "name": "spinning",
     "order": 4,
@@ -168,8 +168,8 @@
     "memberof": "TheFormBinder.propTypes",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 151,
-      "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
+      "lineno": 169,
+      "path": "lib"
     },
     "name": "errors",
     "order": 7,
@@ -183,8 +183,8 @@
     "memberof": "TheFormBinder.propTypes",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 153,
-      "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
+      "lineno": 171,
+      "path": "lib"
     },
     "name": "id",
     "order": 8,
@@ -198,8 +198,8 @@
     "memberof": "TheFormBinder.propTypes",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 155,
-      "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
+      "lineno": 173,
+      "path": "lib"
     },
     "name": "onError",
     "order": 9,
@@ -213,8 +213,8 @@
     "memberof": "TheFormBinder.propTypes",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 157,
-      "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
+      "lineno": 175,
+      "path": "lib"
     },
     "name": "onSubmit",
     "order": 10,
@@ -228,8 +228,8 @@
     "memberof": "TheFormBinder.propTypes",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 159,
-      "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
+      "lineno": 177,
+      "path": "lib"
     },
     "name": "onUpdate",
     "order": 11,
@@ -243,8 +243,8 @@
     "memberof": "TheFormBinder.propTypes",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 161,
-      "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
+      "lineno": 179,
+      "path": "lib"
     },
     "name": "readOnly",
     "order": 12,
@@ -258,8 +258,8 @@
     "memberof": "TheFormBinder.propTypes",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 163,
-      "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
+      "lineno": 181,
+      "path": "lib"
     },
     "name": "required",
     "order": 13,
@@ -273,8 +273,8 @@
     "memberof": "TheFormBinder.propTypes",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 165,
-      "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
+      "lineno": 183,
+      "path": "lib"
     },
     "name": "tabIndex",
     "order": 14,
@@ -288,8 +288,8 @@
     "memberof": "TheFormBinder.propTypes",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 167,
-      "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
+      "lineno": 185,
+      "path": "lib"
     },
     "name": "values",
     "order": 15,
@@ -304,7 +304,7 @@
     "meta": {
       "filename": "TheFormStyle.jsx",
       "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/ui-form/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 17,

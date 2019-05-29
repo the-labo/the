@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+      "path": "lib"
     },
     "name": "@the-/tmp",
     "order": 3,
     "typicalname": "tmp",
-    "version": "15.4.5"
+    "version": "15.4.7"
   },
   {
     "id": "GenerateResult",
@@ -22,19 +22,11 @@
     "meta": {
       "filename": "TheTmp.js",
       "lineno": 118,
-      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+      "path": "lib"
     },
     "name": "GenerateResult",
     "order": 4,
     "properties": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "cleanup"
-      },
       {
         "type": {
           "names": [
@@ -51,6 +43,14 @@
         },
         "description": "Filename",
         "name": "path"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "cleanup"
       }
     ],
     "scope": "global",
@@ -67,19 +67,11 @@
     "meta": {
       "filename": "TheTmp.js",
       "lineno": 124,
-      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+      "path": "lib"
     },
     "name": "GenerateDirResult",
     "order": 5,
     "properties": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "cleanup"
-      },
       {
         "type": {
           "names": [
@@ -88,6 +80,14 @@
         },
         "description": "Directory name",
         "name": "path"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "cleanup"
       }
     ],
     "scope": "global",
@@ -106,7 +106,7 @@
     "meta": {
       "filename": "TheTmp.js",
       "lineno": 17,
-      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+      "path": "lib"
     },
     "name": "generateDirSync",
     "order": 7,
@@ -154,7 +154,7 @@
     "meta": {
       "filename": "TheTmp.js",
       "lineno": 31,
-      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+      "path": "lib"
     },
     "name": "generateSync",
     "order": 8,
@@ -192,7 +192,7 @@
     "meta": {
       "filename": "TheTmp.js",
       "lineno": 47,
-      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+      "path": "lib"
     },
     "name": "generate",
     "order": 9,
@@ -241,7 +241,7 @@
     "meta": {
       "filename": "TheTmp.js",
       "lineno": 66,
-      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+      "path": "lib"
     },
     "name": "generateDir",
     "order": 10,
@@ -290,7 +290,7 @@
     "meta": {
       "filename": "TheTmp.js",
       "lineno": 91,
-      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+      "path": "lib"
     },
     "name": "while",
     "order": 11,
@@ -335,7 +335,7 @@
     "meta": {
       "filename": "TheTmp.js",
       "lineno": 106,
-      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+      "path": "lib"
     },
     "name": "whileDir",
     "order": 12,
@@ -378,7 +378,7 @@
     "meta": {
       "filename": "TheTmp.js",
       "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+      "path": "lib"
     },
     "name": "TheTmp",
     "order": 6,
@@ -392,7 +392,7 @@
     "meta": {
       "filename": "default.js",
       "lineno": 15,
-      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+      "path": "lib"
     },
     "name": "exports",
     "order": 2,
@@ -412,7 +412,7 @@
     "meta": {
       "filename": "create.js",
       "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -447,7 +447,7 @@
     "meta": {
       "filename": "default.js",
       "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/tmp/lib"
+      "path": "lib"
     },
     "name": "default",
     "order": 1,

@@ -19,7 +19,7 @@
     "aglob": "^3.0.1",
     "argx": "^4.0.0",
     "commander": "^2.19.0",
-    "filedel": "^4.0.2",
+    "filedel": "^4.1.1",
     "findout": "^3.0.2",
     "stringcase": "^4.3.1",
     "writeout": "^2.2.4"

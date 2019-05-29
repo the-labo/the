@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-cam",
     "order": 0,
     "typicalname": "uiCam",
-    "version": "15.4.3"
+    "version": "15.4.7"
   },
   {
     "description": "Embed camera component",
@@ -21,8 +21,8 @@
     "longname": "TheCam",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 19,
-      "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
+      "lineno": 20,
+      "path": "lib"
     },
     "name": "TheCam",
     "order": 1,
@@ -35,8 +35,8 @@
     "longname": "TheCamInput",
     "meta": {
       "filename": "TheCamInput.jsx",
-      "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
+      "lineno": 22,
+      "path": "lib"
     },
     "name": "TheCamInput",
     "order": 7,
@@ -50,7 +50,7 @@
     "meta": {
       "filename": "TheCamStyle.jsx",
       "lineno": 12,
-      "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
+      "path": "lib"
     },
     "name": "TheCamStyle",
     "order": 8,
@@ -65,8 +65,8 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 166,
-      "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
+      "lineno": 177,
+      "path": "lib"
     },
     "name": "audio",
     "order": 2,
@@ -80,8 +80,8 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 168,
-      "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
+      "lineno": 179,
+      "path": "lib"
     },
     "name": "disabled",
     "order": 3,
@@ -95,8 +95,8 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 171,
-      "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
+      "lineno": 182,
+      "path": "lib"
     },
     "name": "onStream",
     "order": 4,
@@ -110,8 +110,8 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 173,
-      "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
+      "lineno": 184,
+      "path": "lib"
     },
     "name": "rejectedMessage",
     "order": 5,
@@ -125,8 +125,8 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 175,
-      "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
+      "lineno": 186,
+      "path": "lib"
     },
     "name": "video",
     "order": 6,
@@ -141,7 +141,7 @@
     "meta": {
       "filename": "TheCamStyle.jsx",
       "lineno": 23,
-      "path": "/Users/okuni/Projects/the/packages/ui-cam/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 9,

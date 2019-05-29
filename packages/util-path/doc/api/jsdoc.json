@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/util-path/lib"
+      "path": "lib"
     },
     "name": "@the-/util-path",
     "order": 2,
     "typicalname": "utilPath",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "access": "protected",
@@ -25,7 +25,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/util-path/lib/helpers"
+      "path": "lib/helpers"
     },
     "name": "helpers",
     "order": 4,
@@ -39,8 +39,8 @@
     "memberof": "module:@the-/util-path",
     "meta": {
       "filename": "findup.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-path/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "findupSync",
     "order": 0,
@@ -86,8 +86,8 @@
     "memberof": "module:@the-/util-path",
     "meta": {
       "filename": "findupDir.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-path/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "findupDir",
     "order": 1,
@@ -112,8 +112,8 @@
     "memberof": "module:@the-/util-path.helpers",
     "meta": {
       "filename": "exists.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-path/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "exists",
     "order": 3,

@@ -8,7 +8,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/lint/lib"
+      "path": "lib"
     },
     "name": "@the-/lint",
     "order": 2,
@@ -32,8 +32,8 @@
     "memberof": "module:@the-/lint.TheLint",
     "meta": {
       "filename": "TheLint.js",
-      "lineno": 54,
-      "path": "/Users/okuni/Projects/the/packages/lint/lib"
+      "lineno": 53,
+      "path": "lib"
     },
     "name": "add",
     "order": 5,
@@ -68,8 +68,8 @@
     "memberof": "module:@the-/lint.TheLint",
     "meta": {
       "filename": "TheLint.js",
-      "lineno": 122,
-      "path": "/Users/okuni/Projects/the/packages/lint/lib"
+      "lineno": 121,
+      "path": "lib"
     },
     "name": "run",
     "order": 6,
@@ -92,8 +92,8 @@
     "memberof": "module:@the-/lint",
     "meta": {
       "filename": "TheLint.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/lint/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheLint",
     "order": 3,
@@ -106,11 +106,25 @@
     "memberof": "module:@the-/lint.helpers",
     "meta": {
       "filename": "LintCache.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/lint/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "LintCache",
     "order": 8,
+    "scope": "static"
+  },
+  {
+    "id": "module.exports",
+    "kind": "member",
+    "longname": "module.exports",
+    "memberof": "module",
+    "meta": {
+      "filename": "parseHelper.js",
+      "lineno": 4,
+      "path": "lib/helpers"
+    },
+    "name": "exports",
+    "order": 9,
     "scope": "static"
   },
   {
@@ -123,7 +137,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/lint/lib/helpers"
+      "path": "lib/helpers"
     },
     "name": "helpers",
     "order": 7,
@@ -139,10 +153,10 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
+      "path": "lib/rules"
     },
     "name": "rules",
-    "order": 14,
+    "order": 15,
     "scope": "static"
   },
   {
@@ -153,8 +167,8 @@
     "memberof": "module:@the-/lint",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/lint/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -188,8 +202,8 @@
     "memberof": "module:@the-/lint",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/lint/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,
@@ -203,11 +217,11 @@
     "memberof": "module:@the-/lint.rules",
     "meta": {
       "filename": "callRule.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
+      "lineno": 2,
+      "path": "lib/rules"
     },
     "name": "callRule",
-    "order": 9,
+    "order": 10,
     "params": [
       {
         "type": {
@@ -247,11 +261,11 @@
     "memberof": "module:@the-/lint.rules",
     "meta": {
       "filename": "contentRule.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
+      "lineno": 2,
+      "path": "lib/rules"
     },
     "name": "contentRule",
-    "order": 10,
+    "order": 11,
     "params": [
       {
         "type": {
@@ -303,11 +317,11 @@
     "memberof": "module:@the-/lint.rules",
     "meta": {
       "filename": "decorateRule.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
+      "lineno": 2,
+      "path": "lib/rules"
     },
     "name": "decorateRule",
-    "order": 11,
+    "order": 12,
     "params": [
       {
         "type": {
@@ -339,11 +353,11 @@
     "memberof": "module:@the-/lint.rules",
     "meta": {
       "filename": "depsRule.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
+      "lineno": 2,
+      "path": "lib/rules"
     },
     "name": "depsRule",
-    "order": 12,
+    "order": 13,
     "params": [
       {
         "type": {
@@ -375,11 +389,11 @@
     "memberof": "module:@the-/lint.rules",
     "meta": {
       "filename": "filenameRule.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
+      "lineno": 2,
+      "path": "lib/rules"
     },
     "name": "filenameRule",
-    "order": 13,
+    "order": 14,
     "params": [
       {
         "type": {
@@ -431,11 +445,11 @@
     "memberof": "module:@the-/lint.rules",
     "meta": {
       "filename": "moduleRule.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
+      "lineno": 2,
+      "path": "lib/rules"
     },
     "name": "moduleRule",
-    "order": 15,
+    "order": 16,
     "params": [
       {
         "type": {
@@ -467,11 +481,11 @@
     "memberof": "module:@the-/lint.rules",
     "meta": {
       "filename": "packageRule.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
+      "lineno": 2,
+      "path": "lib/rules"
     },
     "name": "packageRule",
-    "order": 16,
+    "order": 17,
     "params": [
       {
         "type": {
@@ -503,11 +517,11 @@
     "memberof": "module:@the-/lint.rules",
     "meta": {
       "filename": "propRule.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
+      "lineno": 2,
+      "path": "lib/rules"
     },
     "name": "propRule",
-    "order": 17,
+    "order": 18,
     "params": [
       {
         "type": {
@@ -539,11 +553,11 @@
     "memberof": "module:@the-/lint.rules",
     "meta": {
       "filename": "usageRule.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/lint/lib/rules"
+      "lineno": 2,
+      "path": "lib/rules"
     },
     "name": "usageRule",
-    "order": 18,
+    "order": 19,
     "params": [
       {
         "type": {

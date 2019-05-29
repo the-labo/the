@@ -3,7 +3,7 @@
  * @description Footer of the-components
  * @module @the-/ui-footer
  * @typicalname uiFooter
- * @version 15.4.5
+ * @version 15.4.7
  */
 'use strict'
 

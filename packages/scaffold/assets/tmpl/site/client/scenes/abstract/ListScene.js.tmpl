@@ -1,7 +1,8 @@
 /**
  * ListScene
- * @abstract
  * @class ListScene
+ * @abstract
+ * @memberOf module:~~~~package_name~~~~/client.scenes.abstract
  */
 'use strict'
 
@@ -34,7 +35,7 @@ import Scene from './Scene'
 })
 class ListSceneBase extends Scene {}
 
-/** @lends ListScene */
+/** @lends module:~~~~package_name~~~~/client.scenes.abstract.ListScene */
 class ListScene extends ListSceneBase {
   static qField = ['name']
 
@@ -66,7 +67,7 @@ class ListScene extends ListSceneBase {
   }
 
   async dealWith(condition) {
-    throw new Error(`Not implemented`)
+    throw new Error('Not implemented')
   }
 
   @withBusy.while
@@ -95,7 +96,6 @@ class ListScene extends ListSceneBase {
 
   /**
    * Do sync for more.
-   *
    * @returns {Promise}
    */
   async doSyncMore() {
@@ -120,7 +120,9 @@ class ListScene extends ListSceneBase {
   }
 
   async doSyncOne(id) {
-    const {} = await this.dealWith({
+    const {
+      entities: [one],
+    } = await this.dealWith({
       filter: { id },
       page: { number: 1, size: 1 },
     })

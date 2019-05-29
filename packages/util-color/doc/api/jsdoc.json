@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/util-color/lib"
+      "path": "lib"
     },
     "name": "@the-/util-color",
     "order": 2,
     "typicalname": "utilColor",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "description": "Get color with alpha",
@@ -23,8 +23,8 @@
     "memberof": "module:@the-/util-color",
     "meta": {
       "filename": "colorWithAlpha.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-color/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "colorWithAlpha",
     "order": 0,
@@ -66,8 +66,8 @@
     "memberof": "module:@the-/util-color",
     "meta": {
       "filename": "colorWithText.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-color/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "colorWithText",
     "order": 1,
@@ -113,8 +113,8 @@
     "memberof": "module:@the-/util-color",
     "meta": {
       "filename": "rotatedColorsFor.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-color/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "rotatedColorsFor",
     "order": 3,
@@ -173,8 +173,8 @@
     "memberof": "module:@the-/util-color",
     "meta": {
       "filename": "textColorFor.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/util-color/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "textColorFor",
     "order": 4,

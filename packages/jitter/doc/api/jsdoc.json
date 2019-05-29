@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/jitter/lib"
+      "path": "lib"
     },
     "name": "@the-/jitter",
     "order": 2,
     "typicalname": "jitter",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "id": "module:@the-/jitter.TheJitter()",
@@ -44,8 +44,8 @@
     "memberof": "module:@the-/jitter.TheJitter",
     "meta": {
       "filename": "TheJitter.js",
-      "lineno": 28,
-      "path": "/Users/okuni/Projects/the/packages/jitter/lib"
+      "lineno": 27,
+      "path": "lib"
     },
     "name": "decrementCount",
     "order": 5,
@@ -60,8 +60,8 @@
     "memberof": "module:@the-/jitter.TheJitter",
     "meta": {
       "filename": "TheJitter.js",
-      "lineno": 43,
-      "path": "/Users/okuni/Projects/the/packages/jitter/lib"
+      "lineno": 42,
+      "path": "lib"
     },
     "name": "incrementCount",
     "order": 6,
@@ -76,8 +76,8 @@
     "memberof": "module:@the-/jitter.TheJitter",
     "meta": {
       "filename": "TheJitter.js",
-      "lineno": 62,
-      "path": "/Users/okuni/Projects/the/packages/jitter/lib"
+      "lineno": 61,
+      "path": "lib"
     },
     "name": "resetCount",
     "order": 7,
@@ -93,8 +93,8 @@
     "memberof": "module:@the-/jitter.TheJitter",
     "meta": {
       "filename": "TheJitter.js",
-      "lineno": 71,
-      "path": "/Users/okuni/Projects/the/packages/jitter/lib"
+      "lineno": 70,
+      "path": "lib"
     },
     "name": "handle",
     "order": 8,
@@ -128,8 +128,8 @@
     "memberof": "module:@the-/jitter.TheJitter",
     "meta": {
       "filename": "TheJitter.js",
-      "lineno": 86,
-      "path": "/Users/okuni/Projects/the/packages/jitter/lib"
+      "lineno": 85,
+      "path": "lib"
     },
     "name": "wait",
     "order": 9,
@@ -152,8 +152,8 @@
     "memberof": "module:@the-/jitter",
     "meta": {
       "filename": "TheJitter.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/jitter/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheJitter",
     "order": 3,
@@ -167,8 +167,8 @@
     "memberof": "module:@the-/jitter",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/jitter/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -202,8 +202,8 @@
     "memberof": "module:@the-/jitter",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/jitter/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,

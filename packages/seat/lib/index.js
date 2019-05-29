@@ -4,7 +4,7 @@
  * @license MIT
  * @module @the-/seat
  * @typicalname seat
- * @version 15.4.6
+ * @version 15.4.7
  */
 'use strict'
 

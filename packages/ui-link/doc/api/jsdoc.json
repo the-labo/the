@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-link",
     "order": 0,
     "typicalname": "uiLink",
-    "version": "15.4.3"
+    "version": "15.4.7"
   },
   {
     "description": "Link of the-components",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheLink.jsx",
       "lineno": 25,
-      "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
+      "path": "lib"
     },
     "name": "TheLink",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheLinkStyle.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
+      "path": "lib"
     },
     "name": "TheLinkStyle",
     "order": 9,
@@ -51,8 +51,8 @@
     "memberof": "TheLink.propTypes",
     "meta": {
       "filename": "TheLink.jsx",
-      "lineno": 81,
-      "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
+      "lineno": 89,
+      "path": "lib"
     },
     "name": "activeClassName",
     "order": 2,
@@ -66,8 +66,8 @@
     "memberof": "TheLink.propTypes",
     "meta": {
       "filename": "TheLink.jsx",
-      "lineno": 83,
-      "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
+      "lineno": 91,
+      "path": "lib"
     },
     "name": "activeStyle",
     "order": 3,
@@ -81,8 +81,8 @@
     "memberof": "TheLink.propTypes",
     "meta": {
       "filename": "TheLink.jsx",
-      "lineno": 85,
-      "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
+      "lineno": 93,
+      "path": "lib"
     },
     "name": "color",
     "order": 4,
@@ -96,8 +96,8 @@
     "memberof": "TheLink.propTypes",
     "meta": {
       "filename": "TheLink.jsx",
-      "lineno": 87,
-      "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
+      "lineno": 95,
+      "path": "lib"
     },
     "name": "exact",
     "order": 5,
@@ -111,8 +111,8 @@
     "memberof": "TheLink.propTypes",
     "meta": {
       "filename": "TheLink.jsx",
-      "lineno": 89,
-      "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
+      "lineno": 97,
+      "path": "lib"
     },
     "name": "icon",
     "order": 6,
@@ -126,8 +126,8 @@
     "memberof": "TheLink.propTypes",
     "meta": {
       "filename": "TheLink.jsx",
-      "lineno": 91,
-      "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
+      "lineno": 99,
+      "path": "lib"
     },
     "name": "strict",
     "order": 7,
@@ -141,8 +141,8 @@
     "memberof": "TheLink.propTypes",
     "meta": {
       "filename": "TheLink.jsx",
-      "lineno": 93,
-      "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
+      "lineno": 101,
+      "path": "lib"
     },
     "name": "to",
     "order": 8,
@@ -157,7 +157,7 @@
     "meta": {
       "filename": "TheLinkStyle.jsx",
       "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/ui-link/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 10,

@@ -65,4 +65,4 @@ Create a TheS3 instance
 ### s3.default()
 Alias of [@the-/s3](#module_@the-/s3)
 
-**Kind**: static method of [<code>@the-/s3</code>](#module_@the-/s3)
+**Kind**: static method of [<code>@the-/s3</code>](#module_@the-/s3)  

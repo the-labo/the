@@ -5,7 +5,7 @@
 ## @the-/media
 User media handler
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/media](#module_@the-/media)
@@ -43,8 +43,8 @@ User media handler
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-| [options.video] | <code>Object</code> \| <code>Boolean</code> |  | Video constraint |
-| [options.audio] | <code>Object</code> \| <code>Boolean</code> |  | Audio constraint |
+| [options.video] | <code>Object</code> \| <code>boolean</code> |  | Video constraint |
+| [options.audio] | <code>Object</code> \| <code>boolean</code> |  | Audio constraint |
 
 <a name="module_@the-/media.TheMedia+createAudioRecorder"></a>
 
@@ -133,4 +133,4 @@ Create a TheMedia instance
 ### media.default()
 Alias of [create](#module_@the-/media.create)
 
-**Kind**: static method of [<code>@the-/media</code>](#module_@the-/media)
+**Kind**: static method of [<code>@the-/media</code>](#module_@the-/media)  

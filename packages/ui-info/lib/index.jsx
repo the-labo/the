@@ -3,7 +3,7 @@
  * @description Info of the-component
  * @module @the-/ui-info
  * @typicalname uiInfo
- * @version 15.4.5
+ * @version 15.4.7
  */
 'use strict'
 

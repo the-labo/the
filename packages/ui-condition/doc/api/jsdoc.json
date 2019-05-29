@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-condition/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-condition",
     "order": 0,
     "typicalname": "uiCondition",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Conditional renderer for the-components",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheCondition.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-condition/lib"
+      "path": "lib"
     },
     "name": "TheCondition",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheConditionStyle.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-condition/lib"
+      "path": "lib"
     },
     "name": "TheConditionStyle",
     "order": 2,
@@ -52,7 +52,7 @@
     "meta": {
       "filename": "TheConditionStyle.jsx",
       "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/ui-condition/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 3,

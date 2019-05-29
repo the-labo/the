@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/support/lib"
+      "path": "lib"
     },
     "name": "@the-/support",
     "order": 1,
     "typicalname": "support",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "id": "module:@the-/support.TheSupport()",
@@ -41,8 +41,8 @@
     "memberof": "module:@the-/support",
     "meta": {
       "filename": "TheSupport.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/support/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheSupport",
     "order": 2,
@@ -58,7 +58,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/support/lib/helpers"
+      "path": "lib/helpers"
     },
     "name": "helpers",
     "order": 6,
@@ -72,8 +72,8 @@
     "memberof": "module:@the-/support",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/support/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -107,8 +107,8 @@
     "memberof": "module:@the-/support.helpers",
     "meta": {
       "filename": "detectUnsupportedCode.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/support/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "detectUnsupportedCode",
     "order": 4,
@@ -121,8 +121,8 @@
     "memberof": "module:@the-/support.helpers",
     "meta": {
       "filename": "findEvalCode.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/support/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "findEvalCode",
     "order": 5,

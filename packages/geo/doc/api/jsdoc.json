@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/geo/lib"
+      "path": "lib"
     },
     "name": "@the-/geo",
     "order": 2,
     "typicalname": "geo",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "id": "module:@the-/geo.TheGeo()",
@@ -44,8 +44,8 @@
     "memberof": "module:@the-/geo.TheGeo",
     "meta": {
       "filename": "TheGeo.js",
-      "lineno": 58,
-      "path": "/Users/okuni/Projects/the/packages/geo/lib"
+      "lineno": 57,
+      "path": "lib"
     },
     "name": "watch",
     "order": 5,
@@ -80,8 +80,8 @@
     "memberof": "module:@the-/geo.TheGeo",
     "meta": {
       "filename": "TheGeo.js",
-      "lineno": 86,
-      "path": "/Users/okuni/Projects/the/packages/geo/lib"
+      "lineno": 85,
+      "path": "lib"
     },
     "name": "detect",
     "order": 6,
@@ -114,8 +114,8 @@
     "memberof": "module:@the-/geo",
     "meta": {
       "filename": "TheGeo.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/geo/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheGeo",
     "order": 3,
@@ -129,8 +129,8 @@
     "memberof": "module:@the-/geo",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/geo/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -164,8 +164,8 @@
     "memberof": "module:@the-/geo",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/geo/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,

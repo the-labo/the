@@ -41,4 +41,4 @@ Header of the-components
 ## TheHeaderStyle()
 Style for TheHeader
 
-**Kind**: global function
+**Kind**: global function  

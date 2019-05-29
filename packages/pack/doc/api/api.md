@@ -5,7 +5,7 @@
 ## @the-/pack
 Message pack wrapper for the-components
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/pack](#module_@the-/pack)
@@ -83,4 +83,5 @@ Create a ThePack instance
 
 | Param | Type |
 | --- | --- |
-| ...args | <code>\*</code> |
+| ...args | <code>\*</code> | 
+

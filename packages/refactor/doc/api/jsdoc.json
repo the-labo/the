@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+      "path": "lib"
     },
     "name": "@the-/refactor",
     "order": 2,
     "typicalname": "refactor",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "async": true,
@@ -24,8 +24,8 @@
     "memberof": "module:@the-/refactor.TheRefactor",
     "meta": {
       "filename": "TheRefactor.js",
-      "lineno": 53,
-      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+      "lineno": 52,
+      "path": "lib"
     },
     "name": "convert",
     "order": 4,
@@ -78,8 +78,8 @@
     "memberof": "module:@the-/refactor.TheRefactor",
     "meta": {
       "filename": "TheRefactor.js",
-      "lineno": 73,
-      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+      "lineno": 70,
+      "path": "lib"
     },
     "name": "rename",
     "order": 5,
@@ -134,8 +134,8 @@
     "memberof": "module:@the-/refactor.TheRefactor",
     "meta": {
       "filename": "TheRefactor.js",
-      "lineno": 104,
-      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+      "lineno": 101,
+      "path": "lib"
     },
     "name": "renameDir",
     "order": 6,
@@ -179,8 +179,8 @@
     "memberof": "module:@the-/refactor.TheRefactor",
     "meta": {
       "filename": "TheRefactor.js",
-      "lineno": 132,
-      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+      "lineno": 129,
+      "path": "lib"
     },
     "name": "rewrite",
     "order": 7,
@@ -236,8 +236,8 @@
     "memberof": "module:@the-/refactor.TheRefactor",
     "meta": {
       "filename": "TheRefactor.js",
-      "lineno": 156,
-      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+      "lineno": 153,
+      "path": "lib"
     },
     "name": "scatter",
     "order": 8,
@@ -277,8 +277,8 @@
     "memberof": "module:@the-/refactor",
     "meta": {
       "filename": "TheRefactor.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheRefactor",
     "order": 3,
@@ -292,8 +292,8 @@
     "memberof": "module:@the-/refactor",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -327,8 +327,8 @@
     "memberof": "module:@the-/refactor",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/refactor/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,

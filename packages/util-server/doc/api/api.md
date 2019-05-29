@@ -8,6 +8,14 @@
 </dd>
 </dl>
 
+## Constants
+
+<dl>
+<dt><a href="#path">path</a></dt>
+<dd><p>Change file extension</p>
+</dd>
+</dl>
+
 ## Functions
 
 <dl>
@@ -40,8 +48,20 @@
 ## @the-/util-server
 Utility for server
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
+<a name="path"></a>
+
+## path
+Change file extension
+
+**Kind**: global constant  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| filename | <code>string</code> | Filename to change |
+| ext | <code>string</code> | New file extension |
+
 <a name="generateFile"></a>
 
 ## generateFile(filename, generator) ⇒ <code>Promise.&lt;undefined&gt;</code>
@@ -130,3 +150,4 @@ Wait until file exists
 | --- | --- | --- | --- |
 | condition | <code>function</code> |  |  |
 | [options] | <code>Object</code> | <code>{}</code> | Optional setting |
+

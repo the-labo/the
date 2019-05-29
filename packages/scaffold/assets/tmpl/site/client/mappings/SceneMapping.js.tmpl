@@ -8,7 +8,7 @@
 
 const sc = require('../scenes')
 
-module.exports = Object.freeze(
+module.exports =
   /** mappings.SceneMapping */
   {
     appScene: sc.AppScene,
@@ -16,4 +16,5 @@ module.exports = Object.freeze(
     homeScene: sc.HomeScene,
     toastScene: sc.ToastScene,
   }
-)
+
+Object.freeze(module.exports)

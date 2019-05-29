@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-footer/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-footer",
     "order": 0,
     "typicalname": "uiFooter",
-    "version": "15.4.5"
+    "version": "15.4.7"
   },
   {
     "description": "Footer of the-components",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheFooter.jsx",
       "lineno": 13,
-      "path": "/Users/okuni/Projects/the/packages/ui-footer/lib"
+      "path": "lib"
     },
     "name": "TheFooter",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheFooterStyle.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-footer/lib"
+      "path": "lib"
     },
     "name": "TheFooterStyle",
     "order": 2,
@@ -52,7 +52,7 @@
     "meta": {
       "filename": "TheFooterStyle.jsx",
       "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/ui-footer/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 3,

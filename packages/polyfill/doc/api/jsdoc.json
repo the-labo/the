@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/polyfill/lib"
+      "path": "lib"
     },
     "name": "@the-/polyfill",
     "order": 3,
     "typicalname": "polyfill",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "id": "module:@the-/polyfill.ThePolyfill",
@@ -22,8 +22,8 @@
     "memberof": "module:@the-/polyfill",
     "meta": {
       "filename": "ThePolyfill.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/polyfill/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "ThePolyfill",
     "order": 4,
@@ -36,8 +36,8 @@
     "memberof": "module:@the-/polyfill",
     "meta": {
       "filename": "helpers.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/polyfill/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "helpers",
     "order": 2,
@@ -51,8 +51,8 @@
     "memberof": "module:@the-/polyfill",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/polyfill/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -86,8 +86,8 @@
     "memberof": "module:@the-/polyfill",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/polyfill/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,

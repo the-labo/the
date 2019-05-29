@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ps/lib"
+      "path": "lib"
     },
     "name": "@the-/ps",
     "order": 3,
     "typicalname": "ps",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "id": "module:@the-/ps.ThePS()",
@@ -65,8 +65,8 @@
     "memberof": "module:@the-/ps.ThePS",
     "meta": {
       "filename": "ThePS.js",
-      "lineno": 75,
-      "path": "/Users/okuni/Projects/the/packages/ps/lib"
+      "lineno": 74,
+      "path": "lib"
     },
     "name": "acquire",
     "order": 6,
@@ -89,8 +89,8 @@
     "memberof": "module:@the-/ps",
     "meta": {
       "filename": "ThePS.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/ps/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "ThePS",
     "order": 4,
@@ -104,8 +104,8 @@
     "memberof": "module:@the-/ps",
     "meta": {
       "filename": "acquire.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/ps/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "acquire",
     "order": 0,
@@ -119,8 +119,8 @@
     "memberof": "module:@the-/ps",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/ps/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 1,
@@ -154,8 +154,8 @@
     "memberof": "module:@the-/ps",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/ps/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 2,

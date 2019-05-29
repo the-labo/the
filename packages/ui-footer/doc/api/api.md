@@ -29,7 +29,7 @@
 ## @the-/ui-footer
 Footer of the-components
 
-**Version**: 15.4.5  
+**Version**: 15.4.7  
 <a name="TheFooter"></a>
 
 ## TheFooter
@@ -41,4 +41,4 @@ Footer of the-components
 ## TheFooterStyle()
 Style for TheFooter
 
-**Kind**: global function
+**Kind**: global function  

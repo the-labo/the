@@ -5,7 +5,7 @@
 ## @the-/driver-mongo
 Mongo driver for the-db
 
-**Version**: 15.4.5  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/driver-mongo](#module_@the-/driver-mongo)

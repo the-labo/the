@@ -1,6 +1,6 @@
 /**
  * WebApps
- * @memberof module:server.constants
+ * @memberof module:~~~~package_name~~~~/server.constants
  * @namespace WebApps
  */
 'use strict'
@@ -11,7 +11,7 @@ const _seat = require('./_seat')
 const Project = require('./Project')
 const SettingValues = require('./setting/SettingValues')
 
-/** @namespace module:server.constants.WebApps~seated */
+/** @namespace module:~~~~package_name~~~~/server.constants.WebApps~seated */
 const seated = _seat(({ portNumberFor, processNameFor, secretFor }) => ({
   APP_INSPECT_PORT: portNumberFor('inspect'),
   APP_PORT: portNumberFor('app'),
@@ -19,21 +19,22 @@ const seated = _seat(({ portNumberFor, processNameFor, secretFor }) => ({
   APP_SEAL_SECRET: secretFor('seal'),
 }))
 
-/** @lends module:server.constants.WebApps */
-const WebApps = {
-  Default: {
-    CDN_URL: SettingValues.APP_CDN_URL,
-    DOMAIN: SettingValues.APP_DOMAIN,
-    INSPECT_PORT: seated.APP_INSPECT_PORT,
-    PORT: seated.APP_PORT,
-    PROCESS_NAME: seated.APP_PROCESS_NAME,
-    PUBLIC_DIR: `${Project.BASE_DIR}/public`,
-    SEAL_SECRET: seated.APP_SEAL_SECRET,
-    VERSION: Project.VERSION,
-  },
-}
+module.exports =
+  /** @lends module:~~~~package_name~~~~/server.constants.WebApps */
+  {
+    Default: {
+      CDN_URL: SettingValues.APP_CDN_URL,
+      DOMAIN: SettingValues.APP_DOMAIN,
+      INSPECT_PORT: seated.APP_INSPECT_PORT,
+      PORT: seated.APP_PORT,
+      PROCESS_NAME: seated.APP_PROCESS_NAME,
+      PUBLIC_DIR: `${Project.BASE_DIR}/public`,
+      SEAL_SECRET: seated.APP_SEAL_SECRET,
+      VERSION: Project.VERSION,
+    },
+  }
 
-module.exports = WebApps
+Object.freeze(module.exports)
 
 if (!isProduction()) {
   module.exports = theHash.proxy(module.exports, {

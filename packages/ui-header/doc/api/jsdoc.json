@@ -7,7 +7,7 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-header/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-header",
     "order": 0,
@@ -21,8 +21,8 @@
     "longname": "TheHeader",
     "meta": {
       "filename": "TheHeader.jsx",
-      "lineno": 18,
-      "path": "/Users/okuni/Projects/the/packages/ui-header/lib"
+      "lineno": 119,
+      "path": "lib"
     },
     "name": "TheHeader",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheHeaderStyle.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-header/lib"
+      "path": "lib"
     },
     "name": "TheHeaderStyle",
     "order": 7,
@@ -51,8 +51,8 @@
     "memberof": "TheHeader.propTypes",
     "meta": {
       "filename": "TheHeader.jsx",
-      "lineno": 222,
-      "path": "/Users/okuni/Projects/the/packages/ui-header/lib"
+      "lineno": 231,
+      "path": "lib"
     },
     "name": "asOverlay",
     "order": 2,
@@ -66,8 +66,8 @@
     "memberof": "TheHeader.propTypes",
     "meta": {
       "filename": "TheHeader.jsx",
-      "lineno": 224,
-      "path": "/Users/okuni/Projects/the/packages/ui-header/lib"
+      "lineno": 233,
+      "path": "lib"
     },
     "name": "asStatic",
     "order": 3,
@@ -81,8 +81,8 @@
     "memberof": "TheHeader.propTypes",
     "meta": {
       "filename": "TheHeader.jsx",
-      "lineno": 226,
-      "path": "/Users/okuni/Projects/the/packages/ui-header/lib"
+      "lineno": 235,
+      "path": "lib"
     },
     "name": "notices",
     "order": 4,
@@ -96,8 +96,8 @@
     "memberof": "TheHeader.propTypes",
     "meta": {
       "filename": "TheHeader.jsx",
-      "lineno": 228,
-      "path": "/Users/okuni/Projects/the/packages/ui-header/lib"
+      "lineno": 237,
+      "path": "lib"
     },
     "name": "reversed",
     "order": 5,
@@ -111,8 +111,8 @@
     "memberof": "TheHeader.propTypes",
     "meta": {
       "filename": "TheHeader.jsx",
-      "lineno": 230,
-      "path": "/Users/okuni/Projects/the/packages/ui-header/lib"
+      "lineno": 239,
+      "path": "lib"
     },
     "name": "ribbon",
     "order": 6,
@@ -127,7 +127,7 @@
     "meta": {
       "filename": "TheHeaderStyle.jsx",
       "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/ui-header/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 8,

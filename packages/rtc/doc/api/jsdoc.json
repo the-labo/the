@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib"
+      "path": "lib"
     },
     "name": "@the-/rtc",
     "order": 2,
     "typicalname": "rtc",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "id": "module:@the-/rtc.TheRTC()",
@@ -124,8 +124,8 @@
     "longname": "SFUProxy",
     "meta": {
       "filename": "SFUProxy.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/sfu"
+      "lineno": 2,
+      "path": "lib/sfu"
     },
     "name": "SFUProxy",
     "order": 18,
@@ -137,8 +137,8 @@
     "longname": "SFUProxyEdge",
     "meta": {
       "filename": "SFUProxyEdge.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/sfu"
+      "lineno": 2,
+      "path": "lib/sfu"
     },
     "name": "SFUProxyEdge",
     "order": 20,
@@ -153,8 +153,8 @@
     "longname": "SFUProxyEdgeAnswerer",
     "meta": {
       "filename": "SFUProxyEdgeAnswerer.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/sfu"
+      "lineno": 2,
+      "path": "lib/sfu"
     },
     "name": "SFUProxyEdgeAnswerer",
     "order": 21,
@@ -169,8 +169,8 @@
     "longname": "SFUProxyEdgeOfferer",
     "meta": {
       "filename": "SFUProxyEdgeOfferer.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/sfu"
+      "lineno": 2,
+      "path": "lib/sfu"
     },
     "name": "SFUProxyEdgeOfferer",
     "order": 22,
@@ -182,8 +182,8 @@
     "longname": "SFUProxyPool",
     "meta": {
       "filename": "SFUProxyPool.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/sfu"
+      "lineno": 2,
+      "path": "lib/sfu"
     },
     "name": "SFUProxyPool",
     "order": 23,
@@ -196,8 +196,8 @@
     "longname": "httpMix",
     "meta": {
       "filename": "httpMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "httpMix",
     "order": 13,
@@ -230,8 +230,8 @@
     "memberof": "module:@the-/rtc",
     "meta": {
       "filename": "TheRTC.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheRTC",
     "order": 3,
@@ -246,7 +246,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/constants"
+      "path": "lib/constants"
     },
     "name": "constants",
     "order": 6,
@@ -261,7 +261,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/helpers"
+      "path": "lib/helpers"
     },
     "name": "helpers",
     "order": 11,
@@ -276,7 +276,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "mixins",
     "order": 14,
@@ -290,8 +290,8 @@
     "memberof": "module:@the-/rtc.constants",
     "meta": {
       "filename": "ChannelNames.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/constants"
+      "lineno": 2,
+      "path": "lib/constants"
     },
     "name": "ChannelNames",
     "order": 5,
@@ -310,8 +310,8 @@
     "memberof": "module:@the-/rtc.constants",
     "meta": {
       "filename": "IOEvents.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/constants"
+      "lineno": 2,
+      "path": "lib/constants"
     },
     "name": "IOEvents",
     "order": 7,
@@ -330,8 +330,8 @@
     "memberof": "module:@the-/rtc.constants",
     "meta": {
       "filename": "PeerEvents.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/constants"
+      "lineno": 2,
+      "path": "lib/constants"
     },
     "name": "PeerEvents",
     "order": 8,
@@ -350,8 +350,8 @@
     "memberof": "module:@the-/rtc.constants",
     "meta": {
       "filename": "TopologyTypes.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/constants"
+      "lineno": 2,
+      "path": "lib/constants"
     },
     "name": "TopologyTypes",
     "order": 9,
@@ -375,8 +375,8 @@
     "memberof": "module:@the-/rtc",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -410,8 +410,8 @@
     "memberof": "module:@the-/rtc",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,
@@ -424,8 +424,8 @@
     "memberof": "module:@the-/rtc.helpers",
     "meta": {
       "filename": "handleUnknownKeys.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "handleUnknownKeys",
     "order": 10,
@@ -438,8 +438,8 @@
     "memberof": "module:@the-/rtc.helpers",
     "meta": {
       "filename": "parseTurnSecret.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/helpers"
+      "lineno": 2,
+      "path": "lib/helpers"
     },
     "name": "parseTurn secret",
     "order": 12,
@@ -473,8 +473,8 @@
     "memberof": "module:@the-/rtc.mixins",
     "meta": {
       "filename": "ioMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "ioMix",
     "order": 15,
@@ -508,8 +508,8 @@
     "memberof": "module:@the-/rtc.mixins",
     "meta": {
       "filename": "sfuMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "sfuMix",
     "order": 16,
@@ -543,8 +543,8 @@
     "memberof": "module:@the-/rtc.mixins",
     "meta": {
       "filename": "turnMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/rtc/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "turnMix",
     "order": 17,

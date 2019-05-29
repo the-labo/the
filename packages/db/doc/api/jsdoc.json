@@ -171,7 +171,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 132,
+      "lineno": 134,
       "path": "lib"
     },
     "name": "hooksFromMapping",
@@ -196,7 +196,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 149,
+      "lineno": 151,
       "path": "lib"
     },
     "name": "load",
@@ -241,7 +241,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 271,
+      "lineno": 273,
       "path": "lib"
     },
     "name": "loadFromMapping",
@@ -267,7 +267,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 281,
+      "lineno": 283,
       "path": "lib"
     },
     "name": "pluginFromMapping",
@@ -292,7 +292,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 294,
+      "lineno": 296,
       "path": "lib"
     },
     "name": "unref",
@@ -319,7 +319,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 337,
+      "lineno": 339,
       "path": "lib"
     },
     "name": "drop",
@@ -345,7 +345,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 368,
+      "lineno": 373,
       "path": "lib"
     },
     "name": "invalidate",
@@ -380,7 +380,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 398,
+      "lineno": 403,
       "path": "lib"
     },
     "name": "transaction",
@@ -416,7 +416,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 415,
+      "lineno": 420,
       "path": "lib"
     },
     "name": "updateVersion",

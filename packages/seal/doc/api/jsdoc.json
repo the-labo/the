@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/seal/lib"
+      "path": "lib"
     },
     "name": "@the-/seal",
     "order": 2,
     "typicalname": "seal",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "description": "Seal handler",
@@ -65,8 +65,8 @@
     "memberof": "module:@the-/seal.TheSeal",
     "meta": {
       "filename": "TheSeal.js",
-      "lineno": 29,
-      "path": "/Users/okuni/Projects/the/packages/seal/lib"
+      "lineno": 28,
+      "path": "lib"
     },
     "name": "seal",
     "order": 5,
@@ -100,8 +100,8 @@
     "memberof": "module:@the-/seal.TheSeal",
     "meta": {
       "filename": "TheSeal.js",
-      "lineno": 43,
-      "path": "/Users/okuni/Projects/the/packages/seal/lib"
+      "lineno": 42,
+      "path": "lib"
     },
     "name": "verify",
     "order": 6,
@@ -144,8 +144,8 @@
     "memberof": "module:@the-/seal",
     "meta": {
       "filename": "TheSeal.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/seal/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheSeal",
     "order": 3,
@@ -159,8 +159,8 @@
     "memberof": "module:@the-/seal",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/seal/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -194,8 +194,8 @@
     "memberof": "module:@the-/seal",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/seal/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,

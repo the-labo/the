@@ -3,7 +3,7 @@
  * @description Dynamic meta attribute injector for the-components
  * @module @the-/ui-meta
  * @typicalname uiMeta
- * @version 15.4.5
+ * @version 15.4.7
  */
 'use strict'
 

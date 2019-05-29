@@ -5,7 +5,7 @@
 ## @the-/jitter
 Random delay timer
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/jitter](#module_@the-/jitter)
@@ -91,4 +91,4 @@ Create a TheJitter instance
 ### jitter.default()
 Alias of [create](#module_@the-/jitter.create)
 
-**Kind**: static method of [<code>@the-/jitter</code>](#module_@the-/jitter)
+**Kind**: static method of [<code>@the-/jitter</code>](#module_@the-/jitter)  

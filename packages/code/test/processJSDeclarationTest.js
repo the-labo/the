@@ -194,6 +194,8 @@ const {c, d} = x
     )
   })
 
+  it('Combine object pattern')
+
   it('Combine sub destructing', async () => {
     equal(
       await processJSDeclaration(`

@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-caught",
     "order": 0,
     "typicalname": "uiCaught",
-    "version": "15.4.3"
+    "version": "15.4.7"
   },
   {
     "description": "Component to show caught errors",
@@ -31,7 +31,7 @@
     "meta": {
       "filename": "TheCaughtStyle.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
+      "path": "lib"
     },
     "name": "TheCaughtStyle",
     "order": 5,
@@ -46,7 +46,7 @@
     "meta": {
       "filename": "TheCaught.jsx",
       "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
+      "path": "lib"
     },
     "name": "TheCaught",
     "order": 1,
@@ -60,8 +60,8 @@
     "memberof": "module:@the-/ui-caught.TheCaught.propTypes",
     "meta": {
       "filename": "TheCaught.jsx",
-      "lineno": 50,
-      "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
+      "lineno": 53,
+      "path": "lib"
     },
     "name": "error",
     "order": 3,
@@ -75,8 +75,8 @@
     "memberof": "module:@the-/ui-caught.TheCaught.propTypes",
     "meta": {
       "filename": "TheCaught.jsx",
-      "lineno": 52,
-      "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
+      "lineno": 55,
+      "path": "lib"
     },
     "name": "info",
     "order": 4,
@@ -91,7 +91,7 @@
     "meta": {
       "filename": "TheCaughtStyle.jsx",
       "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/ui-caught/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 6,

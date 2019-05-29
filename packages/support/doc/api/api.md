@@ -5,7 +5,7 @@
 ## @the-/support
 JS support version checker
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/support](#module_@the-/support)
@@ -59,4 +59,5 @@ Create a TheSupport instance
 
 | Param | Type |
 | --- | --- |
-| ...args | <code>\*</code> |
+| ...args | <code>\*</code> | 
+

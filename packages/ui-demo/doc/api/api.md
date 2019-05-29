@@ -21,10 +21,10 @@
 ## @the-/ui-demo
 Live demo of the-components
 
-**Version**: 15.4.4  
+**Version**: 15.4.7  
 <a name="TheComponentDemo"></a>
 
 ## TheComponentDemo
 Live demo of the-components
 
-**Kind**: global class
+**Kind**: global class  

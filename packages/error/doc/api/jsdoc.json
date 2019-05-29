@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/error/lib"
+      "path": "lib"
     },
     "name": "@the-/error",
     "order": 2,
     "typicalname": "error",
-    "version": "15.4.3"
+    "version": "15.4.7"
   },
   {
     "description": "Error With status 409",
@@ -125,7 +125,7 @@
     "meta": {
       "filename": "TheConflictError.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/error/lib"
+      "path": "lib"
     },
     "name": "TheConflictError",
     "order": 3,
@@ -138,8 +138,8 @@
     "memberof": "module:@the-/error",
     "meta": {
       "filename": "TheError.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/error/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheError",
     "order": 5,
@@ -156,7 +156,7 @@
     "meta": {
       "filename": "TheExpiredError.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/error/lib"
+      "path": "lib"
     },
     "name": "TheExpiredError",
     "order": 7,
@@ -173,7 +173,7 @@
     "meta": {
       "filename": "TheForbiddenError.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/error/lib"
+      "path": "lib"
     },
     "name": "TheForbiddenError",
     "order": 9,
@@ -190,7 +190,7 @@
     "meta": {
       "filename": "TheGoneError.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/error/lib"
+      "path": "lib"
     },
     "name": "TheGoneError",
     "order": 11,
@@ -207,7 +207,7 @@
     "meta": {
       "filename": "TheInvalidParameterError.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/error/lib"
+      "path": "lib"
     },
     "name": "TheInvalidParameterError",
     "order": 13,
@@ -224,7 +224,7 @@
     "meta": {
       "filename": "TheNotAcceptableError.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/error/lib"
+      "path": "lib"
     },
     "name": "TheNotAcceptableError",
     "order": 15,
@@ -241,7 +241,7 @@
     "meta": {
       "filename": "TheNotFoundError.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/error/lib"
+      "path": "lib"
     },
     "name": "TheNotFoundError",
     "order": 17,
@@ -258,7 +258,7 @@
     "meta": {
       "filename": "TheRequestTimeoutError.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/error/lib"
+      "path": "lib"
     },
     "name": "TheRequestTimeoutError",
     "order": 19,
@@ -275,7 +275,7 @@
     "meta": {
       "filename": "TheServerRottenError.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/error/lib"
+      "path": "lib"
     },
     "name": "TheServerRottenError",
     "order": 21,
@@ -292,7 +292,7 @@
     "meta": {
       "filename": "TheUnauthorizedError.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/error/lib"
+      "path": "lib"
     },
     "name": "TheUnauthorizedError",
     "order": 23,
@@ -306,8 +306,8 @@
     "memberof": "module:@the-/error",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/error/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -341,8 +341,8 @@
     "memberof": "module:@the-/error",
     "meta": {
       "filename": "define.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/error/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "define",
     "order": 1,

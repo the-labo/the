@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/password/lib"
+      "path": "lib"
     },
     "name": "@the-/password",
     "order": 2,
     "typicalname": "password",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "id": "module:@the-/password.ThePassword",
@@ -22,8 +22,8 @@
     "memberof": "module:@the-/password",
     "meta": {
       "filename": "ThePassword.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/password/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "ThePassword",
     "order": 3,
@@ -37,8 +37,8 @@
     "memberof": "module:@the-/password",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/password/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -72,8 +72,8 @@
     "memberof": "module:@the-/password",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/password/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,

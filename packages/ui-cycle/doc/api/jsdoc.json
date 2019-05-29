@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-cycle/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-cycle",
     "order": 0,
     "typicalname": "uiCycle",
-    "version": "15.4.3"
+    "version": "15.4.7"
   },
   {
     "description": "Component with life cycle",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheCycle.jsx",
       "lineno": 16,
-      "path": "/Users/okuni/Projects/the/packages/ui-cycle/lib"
+      "path": "lib"
     },
     "name": "TheCycle",
     "order": 1,
@@ -36,8 +36,8 @@
     "memberof": "TheCycle.propTypes",
     "meta": {
       "filename": "TheCycle.jsx",
-      "lineno": 61,
-      "path": "/Users/okuni/Projects/the/packages/ui-cycle/lib"
+      "lineno": 67,
+      "path": "lib"
     },
     "name": "onMount",
     "order": 2,
@@ -51,8 +51,8 @@
     "memberof": "TheCycle.propTypes",
     "meta": {
       "filename": "TheCycle.jsx",
-      "lineno": 63,
-      "path": "/Users/okuni/Projects/the/packages/ui-cycle/lib"
+      "lineno": 69,
+      "path": "lib"
     },
     "name": "onReceive",
     "order": 3,
@@ -66,8 +66,8 @@
     "memberof": "TheCycle.propTypes",
     "meta": {
       "filename": "TheCycle.jsx",
-      "lineno": 65,
-      "path": "/Users/okuni/Projects/the/packages/ui-cycle/lib"
+      "lineno": 71,
+      "path": "lib"
     },
     "name": "onUnmount",
     "order": 4,
@@ -81,8 +81,8 @@
     "memberof": "TheCycle.propTypes",
     "meta": {
       "filename": "TheCycle.jsx",
-      "lineno": 67,
-      "path": "/Users/okuni/Projects/the/packages/ui-cycle/lib"
+      "lineno": 73,
+      "path": "lib"
     },
     "name": "values",
     "order": 5,

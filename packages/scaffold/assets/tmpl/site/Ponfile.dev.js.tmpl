@@ -8,15 +8,17 @@
 const pon = require('pon')
 const {
   command: {
-    spawn: { npm, npx },
+    spawn: { git, npm, npx },
   },
   fs: { del },
   open,
 } = require('pon-task-basic')
+const changelog = require('pon-task-changelog')
 const { eslint, fmtjson, mocha, pondoc } = require('pon-task-dev')
 const docker = require('pon-task-docker')
 const icon = require('pon-task-icon')
 const theCode = require('@the-/code/pon')
+const jsdoc = require('@the-/jsdoc/pon')
 const theLint = require('@the-/lint/pon')
 const theSupport = require('@the-/support/pon')
 const locales = require('./conf/locales')
@@ -102,9 +104,24 @@ module.exports = pon(
     },
 
     // -----------------------------------
+    // Sub Tasks for git
+    // -----------------------------------
+    ...{
+      /** Generate changelog file */
+      'git:changelog': [changelog(), git('add', 'CHANGELOG.md')],
+    },
+
+    // -----------------------------------
     // Sub Tasks for Document
     // -----------------------------------
     ...{
+      /** Generate jsdoc */
+      'doc:jsdoc': jsdoc(__dirname, 'doc/jsdoc', {
+        ignore: '**/shim/**/*.*',
+        jsonFile: 'jsdoc.json',
+        mdFile: 'jsdoc.md',
+        patterns: '+(conf|client|server)/**/*.js',
+      }),
       /** Generate pondoc file */
       'doc:pondoc': pondoc('Ponfile.js', 'misc/project/Pondoc.json'),
       'doc:pondoc:dev': pondoc(
@@ -117,8 +134,8 @@ module.exports = pon(
     // Sub Tasks for ESLint
     // -----------------------------------
     ...{
-      'eslint:check': eslint('.'),
-      'eslint:fix': eslint('.', { fix: true }),
+      'eslint:check': eslint(__dirname),
+      'eslint:fix': eslint(__dirname, { fix: true }),
     },
 
     // -----------------------------------
@@ -139,7 +156,15 @@ module.exports = pon(
       ),
       /** Format conf files */
       'format:conf': theCode(
-        ['Ponfile.js', 'Ponfile.*.js', 'conf/*.js', 'conf/.*.bud', '.*.bud'],
+        [
+          '*.yml',
+          '.*.yml',
+          'Ponfile.js',
+          'Ponfile.*.js',
+          'conf/*.js',
+          'conf/.*.bud',
+          '.*.bud',
+        ],
         { ignore: 'conf/index.js' },
       ),
       /** Format json files */

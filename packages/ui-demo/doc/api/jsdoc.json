@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-demo/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-demo",
     "order": 0,
     "typicalname": "uiDemo",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Live demo of the-components",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheComponentDemo.jsx",
       "lineno": 36,
-      "path": "/Users/okuni/Projects/the/packages/ui-demo/lib"
+      "path": "lib"
     },
     "name": "TheComponentDemo",
     "order": 1,
@@ -36,8 +36,8 @@
     "memberof": "TheComponentDemo.propTypes",
     "meta": {
       "filename": "TheComponentDemo.jsx",
-      "lineno": 113,
-      "path": "/Users/okuni/Projects/the/packages/ui-demo/lib"
+      "lineno": 112,
+      "path": "lib"
     },
     "name": "className",
     "order": 2,
@@ -51,8 +51,8 @@
     "memberof": "TheComponentDemo.propTypes",
     "meta": {
       "filename": "TheComponentDemo.jsx",
-      "lineno": 115,
-      "path": "/Users/okuni/Projects/the/packages/ui-demo/lib"
+      "lineno": 114,
+      "path": "lib"
     },
     "name": "pkg",
     "order": 3,
@@ -66,8 +66,8 @@
     "memberof": "TheComponentDemo.propTypes",
     "meta": {
       "filename": "TheComponentDemo.jsx",
-      "lineno": 117,
-      "path": "/Users/okuni/Projects/the/packages/ui-demo/lib"
+      "lineno": 116,
+      "path": "lib"
     },
     "name": "snippet",
     "order": 4,

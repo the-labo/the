@@ -35,7 +35,7 @@
 ## @the-/ui-list
 List of the-components
 
-**Version**: 15.4.4  
+**Version**: 15.4.7  
 <a name="TheList"></a>
 
 ## TheList
@@ -59,4 +59,4 @@ Item of list
 ## TheListStyle()
 Style for TheList
 
-**Kind**: global function
+**Kind**: global function  

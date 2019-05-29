@@ -5,7 +5,7 @@
 ## @the-/refactor
 Refactoring tool for the-components
 
-**Version**: 15.4.4  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/refactor](#module_@the-/refactor)
@@ -109,4 +109,4 @@ Create a TheRefactor instance
 ### refactor.default()
 Alias of [create](#module_@the-/refactor.create)
 
-**Kind**: static method of [<code>@the-/refactor</code>](#module_@the-/refactor)
+**Kind**: static method of [<code>@the-/refactor</code>](#module_@the-/refactor)  

@@ -5,7 +5,7 @@
 ## @the-/metrics
 Performance measures for the-framework
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/metrics](#module_@the-/metrics)
@@ -76,4 +76,4 @@ Create a TheMetrics instance
 ### metrics.default()
 Alias of [create](#module_@the-/metrics.create)
 
-**Kind**: static method of [<code>@the-/metrics</code>](#module_@the-/metrics)
+**Kind**: static method of [<code>@the-/metrics</code>](#module_@the-/metrics)  

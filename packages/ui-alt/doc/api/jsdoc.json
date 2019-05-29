@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-alt/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-alt",
     "order": 0,
     "typicalname": "uiAlt",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Alt text for the-components",
@@ -40,7 +40,7 @@
     "meta": {
       "filename": "TheAlt.jsx",
       "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/ui-alt/lib"
+      "path": "lib"
     },
     "name": "TheAlt",
     "order": 1,
@@ -54,7 +54,7 @@
     "meta": {
       "filename": "TheAltStyle.jsx",
       "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/ui-alt/lib"
+      "path": "lib"
     },
     "name": "TheAltStyle",
     "order": 3,
@@ -69,7 +69,7 @@
     "meta": {
       "filename": "TheAltStyle.jsx",
       "lineno": 27,
-      "path": "/Users/okuni/Projects/the/packages/ui-alt/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 5,

@@ -5,7 +5,7 @@
 ## @the-/controller
 Base of the-controllers
 
-**Version**: 15.4.5  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/controller](#module_@the-/controller)

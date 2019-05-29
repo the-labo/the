@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-tab",
     "order": 0,
     "typicalname": "uiTab",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "Tab for the-components",
@@ -21,8 +21,8 @@
     "longname": "TheTab",
     "meta": {
       "filename": "TheTab.jsx",
-      "lineno": 36,
-      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
+      "lineno": 83,
+      "path": "lib"
     },
     "name": "TheTab",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheTabStyle.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
+      "path": "lib"
     },
     "name": "TheTabStyle",
     "order": 6,
@@ -51,8 +51,8 @@
     "memberof": "TheTab.propTypes",
     "meta": {
       "filename": "TheTab.jsx",
-      "lineno": 384,
-      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
+      "lineno": 413,
+      "path": "lib"
     },
     "name": "activeIndex",
     "order": 2,
@@ -66,8 +66,8 @@
     "memberof": "TheTab.propTypes",
     "meta": {
       "filename": "TheTab.jsx",
-      "lineno": 386,
-      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
+      "lineno": 415,
+      "path": "lib"
     },
     "name": "buttons",
     "order": 3,
@@ -81,8 +81,8 @@
     "memberof": "TheTab.propTypes",
     "meta": {
       "filename": "TheTab.jsx",
-      "lineno": 388,
-      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
+      "lineno": 417,
+      "path": "lib"
     },
     "name": "disableTouchAction",
     "order": 4,
@@ -96,8 +96,8 @@
     "memberof": "TheTab.propTypes",
     "meta": {
       "filename": "TheTab.jsx",
-      "lineno": 390,
-      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
+      "lineno": 419,
+      "path": "lib"
     },
     "name": "onChange",
     "order": 5,
@@ -112,7 +112,7 @@
     "meta": {
       "filename": "TheTabStyle.jsx",
       "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/ui-tab/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 7,

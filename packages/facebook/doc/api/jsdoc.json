@@ -6,8 +6,8 @@
     "longname": "module:default",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/facebook/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 2
@@ -21,12 +21,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/facebook/lib"
+      "path": "lib"
     },
     "name": "@the-/facebook",
     "order": 3,
     "typicalname": "facebook",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "id": "TheFacebook",
@@ -34,8 +34,8 @@
     "longname": "TheFacebook",
     "meta": {
       "filename": "TheFacebook.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/facebook/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheFacebook",
     "order": 4,
@@ -48,8 +48,8 @@
     "longname": "Constants",
     "meta": {
       "filename": "Constants.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/facebook/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "Constants",
     "order": 0,
@@ -62,8 +62,8 @@
     "longname": "create",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/facebook/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 1,

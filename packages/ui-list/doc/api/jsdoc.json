@@ -7,12 +7,12 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-list/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-list",
     "order": 0,
     "typicalname": "uiList",
-    "version": "15.4.4"
+    "version": "15.4.7"
   },
   {
     "description": "List components",
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheList.jsx",
       "lineno": 14,
-      "path": "/Users/okuni/Projects/the/packages/ui-list/lib"
+      "path": "lib"
     },
     "name": "TheList",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheListGroup.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-list/lib"
+      "path": "lib"
     },
     "name": "TheListGroup",
     "order": 2,
@@ -49,8 +49,8 @@
     "longname": "TheListItem",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 14,
-      "path": "/Users/okuni/Projects/the/packages/ui-list/lib"
+      "lineno": 53,
+      "path": "lib"
     },
     "name": "TheListItem",
     "order": 3,
@@ -64,7 +64,7 @@
     "meta": {
       "filename": "TheListStyle.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-list/lib"
+      "path": "lib"
     },
     "name": "TheListStyle",
     "order": 14,
@@ -79,8 +79,8 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 131,
-      "path": "/Users/okuni/Projects/the/packages/ui-list/lib"
+      "lineno": 136,
+      "path": "lib"
     },
     "name": "appendix",
     "order": 4,
@@ -94,8 +94,8 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 133,
-      "path": "/Users/okuni/Projects/the/packages/ui-list/lib"
+      "lineno": 138,
+      "path": "lib"
     },
     "name": "borderless",
     "order": 5,
@@ -109,8 +109,8 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 135,
-      "path": "/Users/okuni/Projects/the/packages/ui-list/lib"
+      "lineno": 140,
+      "path": "lib"
     },
     "name": "disclosure",
     "order": 6,
@@ -124,8 +124,8 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 137,
-      "path": "/Users/okuni/Projects/the/packages/ui-list/lib"
+      "lineno": 142,
+      "path": "lib"
     },
     "name": "icon",
     "order": 7,
@@ -139,8 +139,8 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 139,
-      "path": "/Users/okuni/Projects/the/packages/ui-list/lib"
+      "lineno": 144,
+      "path": "lib"
     },
     "name": "subTitle",
     "order": 8,
@@ -154,8 +154,8 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 141,
-      "path": "/Users/okuni/Projects/the/packages/ui-list/lib"
+      "lineno": 146,
+      "path": "lib"
     },
     "name": "thumbnail",
     "order": 9,
@@ -169,8 +169,8 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 143,
-      "path": "/Users/okuni/Projects/the/packages/ui-list/lib"
+      "lineno": 148,
+      "path": "lib"
     },
     "name": "thumbnailHeight",
     "order": 10,
@@ -184,8 +184,8 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 145,
-      "path": "/Users/okuni/Projects/the/packages/ui-list/lib"
+      "lineno": 150,
+      "path": "lib"
     },
     "name": "thumbnailWidth",
     "order": 11,
@@ -199,8 +199,8 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 147,
-      "path": "/Users/okuni/Projects/the/packages/ui-list/lib"
+      "lineno": 152,
+      "path": "lib"
     },
     "name": "title",
     "order": 12,
@@ -214,8 +214,8 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 149,
-      "path": "/Users/okuni/Projects/the/packages/ui-list/lib"
+      "lineno": 154,
+      "path": "lib"
     },
     "name": "to",
     "order": 13,
@@ -230,7 +230,7 @@
     "meta": {
       "filename": "TheListStyle.jsx",
       "lineno": 22,
-      "path": "/Users/okuni/Projects/the/packages/ui-list/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 15,

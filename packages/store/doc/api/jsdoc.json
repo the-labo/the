@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/store/lib"
+      "path": "lib"
     },
     "name": "@the-/store",
     "order": 3,
     "typicalname": "store",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "description": "Scoped redux store",
@@ -77,8 +77,8 @@
     "memberof": "module:@the-/store.TheStore",
     "meta": {
       "filename": "TheStore.js",
-      "lineno": 107,
-      "path": "/Users/okuni/Projects/the/packages/store/lib"
+      "lineno": 106,
+      "path": "lib"
     },
     "name": "load",
     "order": 6,
@@ -123,8 +123,8 @@
     "memberof": "module:@the-/store.TheStore",
     "meta": {
       "filename": "TheStore.js",
-      "lineno": 170,
-      "path": "/Users/okuni/Projects/the/packages/store/lib"
+      "lineno": 166,
+      "path": "lib"
     },
     "name": "loadFromDefaults",
     "order": 7,
@@ -139,8 +139,8 @@
     "memberof": "module:@the-/store.TheStore",
     "meta": {
       "filename": "TheStore.js",
-      "lineno": 189,
-      "path": "/Users/okuni/Projects/the/packages/store/lib"
+      "lineno": 185,
+      "path": "lib"
     },
     "name": "loadFromDefs",
     "order": 8,
@@ -155,8 +155,8 @@
     "memberof": "module:@the-/store.TheStore",
     "meta": {
       "filename": "TheStore.js",
-      "lineno": 201,
-      "path": "/Users/okuni/Projects/the/packages/store/lib"
+      "lineno": 197,
+      "path": "lib"
     },
     "name": "loadScopesFromDefs",
     "order": 9,
@@ -192,8 +192,8 @@
     "memberof": "module:@the-/store.TheStore",
     "meta": {
       "filename": "TheStore.js",
-      "lineno": 228,
-      "path": "/Users/okuni/Projects/the/packages/store/lib"
+      "lineno": 224,
+      "path": "lib"
     },
     "name": "subscribe",
     "order": 10,
@@ -228,8 +228,8 @@
     "memberof": "StoreScopeClass",
     "meta": {
       "filename": "toStoreScopeClass.js",
-      "lineno": 20,
-      "path": "/Users/okuni/Projects/the/packages/store/lib"
+      "lineno": 19,
+      "path": "lib"
     },
     "name": "load",
     "order": 12,
@@ -264,8 +264,8 @@
     "memberof": "StoreScopeClass",
     "meta": {
       "filename": "toStoreScopeClass.js",
-      "lineno": 29,
-      "path": "/Users/okuni/Projects/the/packages/store/lib"
+      "lineno": 28,
+      "path": "lib"
     },
     "name": "loadFromMapping",
     "order": 13,
@@ -299,8 +299,8 @@
     "memberof": "module:@the-/store",
     "meta": {
       "filename": "TheStore.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/store/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheStore",
     "order": 4,
@@ -313,8 +313,8 @@
     "memberof": "module:@the-/store",
     "meta": {
       "filename": "helpers.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/store/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "helpers",
     "order": 2,
@@ -328,8 +328,8 @@
     "memberof": "module:@the-/store",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/store/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -363,8 +363,8 @@
     "memberof": "module:@the-/store",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/store/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 1,
@@ -378,8 +378,8 @@
     "memberof": "module:@the-/store",
     "meta": {
       "filename": "toStoreScopeClass.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/store/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "toStoreScopeClass",
     "order": 11,

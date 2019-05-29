@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/metrics/lib"
+      "path": "lib"
     },
     "name": "@the-/metrics",
     "order": 2,
     "typicalname": "metrics",
-    "version": "15.4.2"
+    "version": "15.4.7"
   },
   {
     "id": "module:@the-/metrics.TheMetrics()",
@@ -53,8 +53,8 @@
     "memberof": "module:@the-/metrics.TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 42,
-      "path": "/Users/okuni/Projects/the/packages/metrics/lib"
+      "lineno": 41,
+      "path": "lib"
     },
     "name": "bindMethodCallCounter",
     "order": 5,
@@ -87,8 +87,8 @@
     "memberof": "module:@the-/metrics.TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 57,
-      "path": "/Users/okuni/Projects/the/packages/metrics/lib"
+      "lineno": 56,
+      "path": "lib"
     },
     "name": "flush",
     "order": 6,
@@ -103,8 +103,8 @@
     "memberof": "module:@the-/metrics.TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 76,
-      "path": "/Users/okuni/Projects/the/packages/metrics/lib"
+      "lineno": 75,
+      "path": "lib"
     },
     "name": "start",
     "order": 7,
@@ -118,8 +118,8 @@
     "memberof": "module:@the-/metrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/metrics/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheMetrics",
     "order": 3,
@@ -132,8 +132,8 @@
     "memberof": "module:@the-/metrics.counters",
     "meta": {
       "filename": "Counter.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/metrics/lib/counters"
+      "lineno": 2,
+      "path": "lib/counters"
     },
     "name": "Counter",
     "order": 8,
@@ -150,8 +150,8 @@
     "memberof": "module:@the-/metrics.counters",
     "meta": {
       "filename": "MethodCallCounter.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/metrics/lib/counters"
+      "lineno": 2,
+      "path": "lib/counters"
     },
     "name": "MethodCallCounter",
     "order": 9,
@@ -165,8 +165,8 @@
     "memberof": "module:@the-/metrics",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/metrics/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -200,8 +200,8 @@
     "memberof": "module:@the-/metrics",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/metrics/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,

@@ -99,4 +99,5 @@ Read as json
 | filename | <code>string</code> |  | 
 | data | <code>Object</code> |  | 
 | [options] | <code>Object</code> |  | 
-| [options.sort] | <code>boolean</code> | <code>true</code> |
+| [options.sort] | <code>boolean</code> | <code>true</code> | 
+

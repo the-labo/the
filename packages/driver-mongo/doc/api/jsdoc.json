@@ -13,7 +13,7 @@
     "name": "@the-/driver-mongo",
     "order": 1,
     "typicalname": "driverMongo",
-    "version": "15.4.5"
+    "version": "15.4.7"
   },
   {
     "description": "Driver for mongo db",

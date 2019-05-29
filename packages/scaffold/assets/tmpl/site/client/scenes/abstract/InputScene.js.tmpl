@@ -1,5 +1,6 @@
 /**
  * CreateScene
+ * @memberof module:~~~~package_name~~~~/client.scenes.abstract
  * @class CreateScene
  */
 'use strict'
@@ -12,7 +13,7 @@ import Scene from './Scene'
 @withResult
 class InputSceneBase extends Scene {}
 
-/** @lends InputScene */
+/** @lends module:~~~~package_name~~~~/client.scenes.abstract.InputScene */
 class InputScene extends InputSceneBase {
   static entitySkipFields = [/^\$/]
 
@@ -22,7 +23,7 @@ class InputScene extends InputSceneBase {
   }
 
   async dealWith(values) {
-    throw new Error(`Not implemented`)
+    throw new Error('Not implemented')
   }
 
   @withBusy.while

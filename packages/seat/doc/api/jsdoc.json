@@ -8,12 +8,12 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+      "path": "lib"
     },
     "name": "@the-/seat",
     "order": 3,
     "typicalname": "seat",
-    "version": "15.4.6"
+    "version": "15.4.7"
   },
   {
     "description": "Acquire value with",
@@ -23,8 +23,8 @@
     "memberof": "module:@the-/seat.TheSeat",
     "meta": {
       "filename": "TheSeat.js",
-      "lineno": 50,
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+      "lineno": 51,
+      "path": "lib"
     },
     "name": "acquire",
     "order": 5,
@@ -58,8 +58,8 @@
     "memberof": "module:@the-/seat.TheSeat",
     "meta": {
       "filename": "TheSeat.js",
-      "lineno": 70,
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+      "lineno": 71,
+      "path": "lib"
     },
     "name": "acquireNumber",
     "order": 6,
@@ -126,8 +126,8 @@
     "memberof": "module:@the-/seat.TheSeat",
     "meta": {
       "filename": "TheSeat.js",
-      "lineno": 85,
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+      "lineno": 86,
+      "path": "lib"
     },
     "name": "acquireString",
     "order": 7,
@@ -203,8 +203,8 @@
     "memberof": "module:@the-/seat.TheSeat",
     "meta": {
       "filename": "TheSeat.js",
-      "lineno": 98,
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+      "lineno": 99,
+      "path": "lib"
     },
     "name": "bind",
     "order": 8,
@@ -239,8 +239,8 @@
     "memberof": "module:@the-/seat.TheSeat",
     "meta": {
       "filename": "TheSeat.js",
-      "lineno": 123,
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+      "lineno": 124,
+      "path": "lib"
     },
     "name": "canTake",
     "order": 9,
@@ -282,8 +282,8 @@
     "memberof": "module:@the-/seat.TheSeat",
     "meta": {
       "filename": "TheSeat.js",
-      "lineno": 159,
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+      "lineno": 160,
+      "path": "lib"
     },
     "name": "get",
     "order": 10,
@@ -317,8 +317,8 @@
     "memberof": "module:@the-/seat.TheSeat",
     "meta": {
       "filename": "TheSeat.js",
-      "lineno": 184,
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+      "lineno": 185,
+      "path": "lib"
     },
     "name": "release",
     "order": 11,
@@ -343,8 +343,8 @@
     "memberof": "module:@the-/seat.TheSeat",
     "meta": {
       "filename": "TheSeat.js",
-      "lineno": 196,
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+      "lineno": 197,
+      "path": "lib"
     },
     "name": "scope",
     "order": 12,
@@ -378,8 +378,8 @@
     "memberof": "module:@the-/seat.TheSeat",
     "meta": {
       "filename": "TheSeat.js",
-      "lineno": 223,
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+      "lineno": 224,
+      "path": "lib"
     },
     "name": "take",
     "order": 13,
@@ -420,8 +420,8 @@
     "memberof": "module:@the-/seat",
     "meta": {
       "filename": "TheSeat.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "TheSeat",
     "order": 4,
@@ -435,8 +435,8 @@
     "memberof": "module:@the-/seat",
     "meta": {
       "filename": "helpers.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "helpers",
     "order": 2,
@@ -451,7 +451,7 @@
     "meta": {
       "filename": "index.js",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/seat/lib/mixins"
+      "path": "lib/mixins"
     },
     "name": "mixins",
     "order": 14,
@@ -465,8 +465,8 @@
     "memberof": "module:@the-/seat",
     "meta": {
       "filename": "create.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "create",
     "order": 0,
@@ -500,8 +500,8 @@
     "memberof": "module:@the-/seat",
     "meta": {
       "filename": "default.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/seat/lib"
+      "lineno": 2,
+      "path": "lib"
     },
     "name": "default",
     "order": 1,
@@ -514,8 +514,8 @@
     "memberof": "module:@the-/seat.mixins",
     "meta": {
       "filename": "lockMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/seat/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "lockMix",
     "order": 15,
@@ -528,8 +528,8 @@
     "memberof": "module:@the-/seat",
     "meta": {
       "filename": "scopeMix.js",
-      "lineno": 1,
-      "path": "/Users/okuni/Projects/the/packages/seat/lib/mixins"
+      "lineno": 2,
+      "path": "lib/mixins"
     },
     "name": "scopeMix",
     "order": 16,

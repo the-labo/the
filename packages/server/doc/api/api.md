@@ -29,7 +29,7 @@
 ## @the-/server
 HTTP/RPC Server of the-framework
 
-**Version**: 15.4.2  
+**Version**: 15.4.7  
 **License**: MIT  
 
 * [@the-/server](#module_@the-/server)
@@ -713,4 +713,4 @@ module:@the-/server.mixins.keepmix
 ## IOEvents()
 Events for IO
 
-**Kind**: global function
+**Kind**: global function  

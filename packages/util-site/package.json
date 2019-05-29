@@ -14,7 +14,7 @@
   "dependencies": {
     "@the-/check": "^15.5.2",
     "@the-/error": "^15.4.0",
-    "@the-/seat": "^15.2.0",
+    "@the-/seat": "^15.4.6",
     "bwindow": "^2.0.3",
     "clay-resource-ref": "^2.0.8",
     "email-regex": "^3.0.0",

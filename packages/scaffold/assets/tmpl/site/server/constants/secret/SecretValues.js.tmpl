@@ -14,10 +14,11 @@ const theSecret = require('@the-/secret')
 const Project = require('../Project')
 const secret = theSecret(Project.SECRETS_FILE, Project.SECRET_MASTER_PASSWORD)
 
-module.exports = Object.freeze(
+module.exports =
   /** @lends SecretValues */
-  { ...secret.get() },
-)
+  { ...secret.get() }
+
+Object.freeze(module.exports)
 
 if (!isProduction()) {
   module.exports = theHash.proxy(module.exports, {

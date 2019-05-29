@@ -7,7 +7,7 @@
     "meta": {
       "filename": "index.jsx",
       "lineno": 2,
-      "path": "/Users/okuni/Projects/the/packages/ui-container/lib"
+      "path": "lib"
     },
     "name": "@the-/ui-container",
     "order": 0,
@@ -22,7 +22,7 @@
     "meta": {
       "filename": "TheContainer.jsx",
       "lineno": 11,
-      "path": "/Users/okuni/Projects/the/packages/ui-container/lib"
+      "path": "lib"
     },
     "name": "TheContainer",
     "order": 1,
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheContainerStyle.jsx",
       "lineno": 10,
-      "path": "/Users/okuni/Projects/the/packages/ui-container/lib"
+      "path": "lib"
     },
     "name": "TheContainerStyle",
     "order": 2,
@@ -52,7 +52,7 @@
     "meta": {
       "filename": "TheContainerStyle.jsx",
       "lineno": 21,
-      "path": "/Users/okuni/Projects/the/packages/ui-container/lib"
+      "path": "lib"
     },
     "name": "options",
     "order": 3,
