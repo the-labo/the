@@ -8,7 +8,6 @@
  */
 const { get } = require('bwindow')
 const path = require('path')
-const { URL } = require('url')
 const videoExtensions = require('video-extensions')
 
 const videoExtNames = [...videoExtensions]

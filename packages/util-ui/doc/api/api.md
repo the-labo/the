@@ -5,7 +5,7 @@
 ## @the-/util-ui
 Utility for the-components
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/util-ui](#module_@the-/util-ui)
