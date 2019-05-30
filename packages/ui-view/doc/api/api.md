@@ -29,7 +29,7 @@
 ## @the-/ui-view
 View of the-components
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 <a name="TheView"></a>
 
 ## TheView

@@ -1,0 +1,41 @@
+#!/usr/bin/env node
+/**
+ * 短縮 URL からデバイスの情報を取得する
+ */
+'use strict'
+
+process.chdir(`${__dirname}/..`)
+
+const {
+  argv: [, , aliasUrl],
+} = process
+
+if (!aliasUrl) {
+  console.error(`
+Usage:
+  $ ./example/examplePassport.js [Alias URL]
+`)
+  process.exit()
+}
+
+const { exec } = require('child_process')
+const decode = require('decode-html')
+
+const execAsync = require('util').promisify(exec)
+const request = require('request-promise')
+
+;(async () => {
+  const { stdout } = await execAsync(`curl ${aliasUrl}`)
+  const matching = stdout.match(/<a.+>([^<>]+)<\/a>/)
+  const [, originalUrl] = matching
+  const [protocol] = aliasUrl.match(/^https?:/)
+  const httpOriginalUrl = decode(originalUrl.replace(/^[^/]+/, protocol))
+
+  const res = await request({
+    json: true,
+    method: 'POST',
+    url: httpOriginalUrl,
+  })
+
+  console.log(JSON.stringify(res, null, '  '))
+})()

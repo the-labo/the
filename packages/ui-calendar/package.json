@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-calendar",
   "description": "Calendar of the-components",
-  "version": "15.4.7",
+  "version": "15.4.8",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,10 +14,10 @@
     "@the-/const-ui": "^15.4.5",
     "@the-/date": "^15.4.2",
     "@the-/ui-button": "^15.4.0",
-    "@the-/ui-condition": "^15.4.4",
+    "@the-/ui-condition": "^15.4.8",
     "@the-/ui-style": "^15.4.4",
     "@the-/util-color": "^15.4.0",
-    "@the-/util-ui": "^15.4.1",
+    "@the-/util-ui": "^15.4.8",
     "bui": "^0.1.16",
     "classnames": "^2.2.6",
     "moment": "^2.24.0",

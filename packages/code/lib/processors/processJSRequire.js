@@ -108,10 +108,9 @@ function processJSRequire(content, options = {}) {
         ])
         .filter(({ start }) => !startsForRequire.includes(start))
         .filter(({ start }) => start > minStartForRequire)
+        .sort((a, b) => b.start - a.start)
 
-      for (const Declaration of OtherDeclarations.sort(
-        (a, b) => b.start - a.start,
-      )) {
+      for (const Declaration of OtherDeclarations) {
         const Require = sortedByStart[sortedByStart.length - 1]
         if (Require && Declaration.start < Require.start) {
           return swap(

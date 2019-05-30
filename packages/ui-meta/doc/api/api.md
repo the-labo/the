@@ -21,7 +21,7 @@
 ## @the-/ui-meta
 Dynamic meta attribute injector for the-components
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 <a name="TheMeta"></a>
 
 ## TheMeta

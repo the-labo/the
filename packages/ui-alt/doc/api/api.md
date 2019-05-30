@@ -5,7 +5,7 @@
 ## @the-/ui-alt
 Alt text for the-components
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 
 * [@the-/ui-alt](#module_@the-/ui-alt)
     * [.TheAlt](#module_@the-/ui-alt.TheAlt)

@@ -29,7 +29,7 @@
 ## @the-/ui-info
 Info of the-component
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 <a name="TheInfo"></a>
 
 ## TheInfo

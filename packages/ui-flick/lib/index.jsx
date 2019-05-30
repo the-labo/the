@@ -3,7 +3,7 @@
  * @description Flickable viewer of the-components
  * @module @the-/ui-flick
  * @typicalname uiFlick
- * @version 15.4.8
+ * @version 15.4.9
  */
 'use strict'
 

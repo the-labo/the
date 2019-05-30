@@ -3,7 +3,7 @@
  * @description Steps for the-components
  * @module @the-/ui-step
  * @typicalname uiStep
- * @version 15.4.7
+ * @version 15.4.8
  */
 'use strict'
 

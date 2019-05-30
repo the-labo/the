@@ -12,7 +12,7 @@
     "name": "@the-/ui-caught",
     "order": 0,
     "typicalname": "uiCaught",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "description": "Component to show caught errors",

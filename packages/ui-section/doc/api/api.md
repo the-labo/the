@@ -32,7 +32,7 @@
 ## @the-/ui-section
 Section of the-components
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 <a name="TheAccordionSection"></a>
 
 ## TheAccordionSection

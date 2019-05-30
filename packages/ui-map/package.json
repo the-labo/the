@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-map",
   "description": "Geo map for the-components",
-  "version": "15.4.8",
+  "version": "15.4.9",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,7 +18,7 @@
   "dependencies": {
     "@okunishinishi/leaflet-shim": "^1.0.2",
     "@the-/const-ui": "^15.4.5",
-    "@the-/ui-spin": "^15.4.4",
+    "@the-/ui-spin": "^15.4.8",
     "@the-/ui-style": "^15.4.4",
     "@the-/util-ui": "^15.4.8",
     "@the-/window": "^15.2.0",

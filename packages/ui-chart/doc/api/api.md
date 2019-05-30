@@ -29,7 +29,7 @@
 ## @the-/ui-chart
 Chart for the-components
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 <a name="TheChart"></a>
 
 ## TheChart

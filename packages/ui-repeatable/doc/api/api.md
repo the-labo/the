@@ -29,7 +29,7 @@
 ## @the-/ui-repeatable
 Repeatable of the-component
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 <a name="TheRepeatable"></a>
 
 ## TheRepeatable

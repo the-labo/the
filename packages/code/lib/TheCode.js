@@ -114,10 +114,10 @@ class TheCode {
    * @returns {Promise<Array>}
    */
   async format(pattern, options = {}) {
-    const { ignore } = options
+    const { ignore, force } = options
     const filenames = await aglob(pattern, { ignore })
     const results = await Promise.all(
-      filenames.map((filename) => this.formatFile(filename)),
+      filenames.map((filename) => this.formatFile(filename, {force})),
     )
     return results.filter(Boolean)
   }
@@ -125,9 +125,11 @@ class TheCode {
   /**
    * Format a single file
    * @param {string} filename
+   * @param {Object} [options={}] - Optional setting
    * @returns {Promise<undefined>}
    */
-  async formatFile(filename) {
+  async formatFile(filename, options={}) {
+    const {force} = options
     const shouldSkipFile = await this.shouldSkipFile(filename)
     if (shouldSkipFile) {
       debug('Skip', filename)
@@ -136,7 +138,7 @@ class TheCode {
     const { cache } = this
     const input = String(await readFileAsync(filename))
     const shouldSkipContent = this.shouldSkipContent(input)
-    if (shouldSkipContent) {
+    if (!force && shouldSkipContent) {
       debug('Skip', filename)
       return Promise.resolve({ filename, skipped: true })
     }

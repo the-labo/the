@@ -29,7 +29,7 @@
 ## @the-/ui-copyboard
 Component for clip-to-copy
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 <a name="TheCopyboard"></a>
 
 ## TheCopyboard

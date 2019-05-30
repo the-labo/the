@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-step",
   "description": "Steps for the-components",
-  "version": "15.4.7",
+  "version": "15.4.8",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,9 +13,9 @@
   "dependencies": {
     "@the-/const-ui": "^15.4.5",
     "@the-/ui-button": "^15.4.0",
-    "@the-/ui-condition": "^15.4.4",
-    "@the-/ui-icon": "^15.4.4",
-    "@the-/ui-spin": "^15.4.4",
+    "@the-/ui-condition": "^15.4.8",
+    "@the-/ui-icon": "^15.4.8",
+    "@the-/ui-spin": "^15.4.8",
     "@the-/ui-style": "^15.4.4",
     "@the-/util-ui": "^15.4.8",
     "classnames": "^2.2.6",
