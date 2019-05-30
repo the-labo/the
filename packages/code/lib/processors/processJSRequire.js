@@ -55,6 +55,18 @@ function processJSRequire(content, options = {}) {
         (Declaration) => Declaration.loc.start.column === 0, // Only top level
       )
 
+      const swapDeclarations = (rangeA, rangeB) => {
+        const ranges = [rangeA, rangeB].map((range) => {
+          const content = get(range)
+          const match = content.match(/\n+;$/)
+          if (match) {
+            return [range[0], range[1] - match[0].length]
+          }
+          return range
+        })
+        return swap(...ranges)
+      }
+
       for (const RequireDeclaration of RequireDeclarations) {
         const converted = modifyNodeDeprecatedOnRequireDeclaration(
           RequireDeclaration,
@@ -85,7 +97,7 @@ function processJSRequire(content, options = {}) {
         const byStart = sortedByStart[i]
         const byName = sortedByName[i]
         if (byStart.start !== byName.start) {
-          return swap(rangeOf(byStart), rangeOf(byName))
+          return swapDeclarations(rangeOf(byStart), rangeOf(byName))
         }
       }
 
@@ -113,7 +125,7 @@ function processJSRequire(content, options = {}) {
       for (const Declaration of OtherDeclarations) {
         const Require = sortedByStart[sortedByStart.length - 1]
         if (Require && Declaration.start < Require.start) {
-          return swap(
+          return swapDeclarations(
             [Declaration.start, Declaration.end],
             [Require.start, Require.end],
           )

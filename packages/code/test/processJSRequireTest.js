@@ -150,6 +150,16 @@ const PackageFiles = require('../packaging/PackageFiles')
       "const {deepStrictEqual} = require('assert')",
     )
   })
+
+  it('Swap with semi', async () => {
+    console.log(
+      await processJSRequire(`
+const b = require('b')
+const a = require('a')
+;(() => {})()
+`),
+    )
+  })
 })
 
 /* global describe, before, after, it */

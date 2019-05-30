@@ -5,14 +5,14 @@
 ## @the-/code
 Code formatter of the-frameworks
 
-**Version**: 15.5.64  
+**Version**: 15.5.66  
 **License**: MIT  
 
 * [@the-/code](#module_@the-/code)
     * [.TheCode](#module_@the-/code.TheCode)
         * [new TheCode([config])](#new_module_@the-/code.TheCode_new)
         * [.format(pattern, [options])](#module_@the-/code.TheCode+format) ⇒ <code>Promise.&lt;Array&gt;</code>
-        * [.formatFile(filename)](#module_@the-/code.TheCode+formatFile) ⇒ <code>Promise.&lt;undefined&gt;</code>
+        * [.formatFile(filename, [options])](#module_@the-/code.TheCode+formatFile) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.FormatCache](#module_@the-/code.FormatCache)
     * [.constants](#module_@the-/code.constants) : <code>object</code>
         * [.TypeNamings](#module_@the-/code.constants.TypeNamings) : <code>object</code>
@@ -66,7 +66,7 @@ Code formatter of the-frameworks
 * [.TheCode](#module_@the-/code.TheCode)
     * [new TheCode([config])](#new_module_@the-/code.TheCode_new)
     * [.format(pattern, [options])](#module_@the-/code.TheCode+format) ⇒ <code>Promise.&lt;Array&gt;</code>
-    * [.formatFile(filename)](#module_@the-/code.TheCode+formatFile) ⇒ <code>Promise.&lt;undefined&gt;</code>
+    * [.formatFile(filename, [options])](#module_@the-/code.TheCode+formatFile) ⇒ <code>Promise.&lt;undefined&gt;</code>
 
 <a name="new_module_@the-/code.TheCode_new"></a>
 
@@ -90,14 +90,15 @@ Format files
 
 <a name="module_@the-/code.TheCode+formatFile"></a>
 
-#### theCode.formatFile(filename) ⇒ <code>Promise.&lt;undefined&gt;</code>
+#### theCode.formatFile(filename, [options]) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Format a single file
 
 **Kind**: instance method of [<code>TheCode</code>](#module_@the-/code.TheCode)  
 
-| Param | Type |
-| --- | --- |
-| filename | <code>string</code> | 
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| filename | <code>string</code> |  |  |
+| [options] | <code>Object</code> | <code>{}</code> | Optional setting |
 
 <a name="module_@the-/code.FormatCache"></a>
 

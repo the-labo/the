@@ -13,7 +13,7 @@
     "name": "@the-/code",
     "order": 1,
     "typicalname": "code",
-    "version": "15.5.64"
+    "version": "15.5.66"
   },
   {
     "id": "module:@the-/code.TheCode()",
@@ -92,7 +92,7 @@
     "memberof": "module:@the-/code.TheCode",
     "meta": {
       "filename": "TheCode.js",
-      "lineno": 130,
+      "lineno": 131,
       "path": "lib"
     },
     "name": "formatFile",
@@ -105,6 +105,17 @@
           ]
         },
         "name": "filename"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional setting",
+        "name": "options"
       }
     ],
     "returns": [
