@@ -13,7 +13,7 @@
     "name": "@the-/video-converter",
     "order": 2,
     "typicalname": "videoConverter",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "description": "Video converter",
@@ -169,7 +169,7 @@
     "memberof": "module:@the-/video-converter.TheVideoConverter",
     "meta": {
       "filename": "TheVideoConverter.js",
-      "lineno": 100,
+      "lineno": 101,
       "path": "lib"
     },
     "name": "process",
