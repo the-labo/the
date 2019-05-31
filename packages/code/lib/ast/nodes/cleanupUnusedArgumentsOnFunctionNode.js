@@ -1,9 +1,14 @@
-'use strict'
 /**
  * Cleanup unused function node
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupUnusedOnFunctionArgumentNode
  */
+'use strict'
+
+const {
+  constants: { NodeTypes },
+} = require('@the-/ast')
+
 /** @lends module:@the-/code.ast.nodes.cleanupUnusedArgumentsOnFunctionNode */
 function cleanupUnusedArgumentsOnFunctionNode(
   FunctionNode,
@@ -13,10 +18,28 @@ function cleanupUnusedArgumentsOnFunctionNode(
   if (!lastParam) {
     return
   }
+
+  const isObjectAssigment =
+    lastParam.type === NodeTypes.AssignmentPattern &&
+    lastParam.left &&
+    lastParam.left.type === NodeTypes.ObjectPattern
+  if (isObjectAssigment) {
+    const { left: ObjectNode } = lastParam
+    const prevParam = FunctionNode.params[FunctionNode.params.length - 2]
+    const isEmpty = ObjectNode.properties.length === 0
+    if (isEmpty) {
+      return replace(
+        [prevParam ? prevParam.end : lastParam.start, lastParam.end],
+        '',
+      )
+    }
+  }
+
   const skip = lastParam.type !== 'Identifier'
   if (skip) {
     return
   }
+
   const {
     params: [firstParam],
   } = FunctionNode

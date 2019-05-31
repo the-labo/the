@@ -170,7 +170,7 @@ tryExample().catch((err) => console.error(err))
   - [.processYAML(content)](./doc/api/api.md#module_@the-/code.processors.processYAML)
 - module:@the-/code.TheCode
   - [#format(pattern,options)](./doc/api/api.md#module_@the-/code.TheCode#format)
-  - [#formatFile(filename)](./doc/api/api.md#module_@the-/code.TheCode#formatFile)
+  - [#formatFile(filename,options)](./doc/api/api.md#module_@the-/code.TheCode#formatFile)
 
 See [API Guide](./doc/api/api.md) for more detail
 

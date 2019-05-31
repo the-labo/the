@@ -667,6 +667,21 @@ console.log({...{a}})
     equal(await processJSUnused('const x = (a) => 1'), 'const x = () => 1')
     equal(await processJSUnused('const x = a => 1'), 'const x = () => 1')
   })
+
+  it('Cleanup empty object assign', async () => {
+    equal(
+      await processJSUnused('const x = (a, b, {} = {}, ) => b'),
+      'const x = (a, b, ) => b',
+    )
+    equal(
+      await processJSUnused('const x = (a, b, {} = {}, d) => b'),
+      'const x = (a, b) => b',
+    )
+    equal(
+      await processJSUnused('const x = (a, b, {} = {}, d) => b && d'),
+      'const x = (a, b, {} = {}, d) => b && d',
+    )
+  })
 })
 
 /* global describe, before, after, it */

@@ -13,7 +13,7 @@
     "name": "@the-/code",
     "order": 1,
     "typicalname": "code",
-    "version": "15.5.66"
+    "version": "15.5.68"
   },
   {
     "id": "module:@the-/code.TheCode()",
@@ -436,7 +436,7 @@
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
       "filename": "cleanupUnusedArgumentsOnFunctionNode.js",
-      "lineno": 2,
+      "lineno": 1,
       "path": "lib/ast/nodes"
     },
     "name": "cleanupUnusedOnFunctionArgumentNode",
