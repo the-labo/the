@@ -4,20 +4,12 @@
  */
 'use strict'
 
-const writer = require('../lib/helpers/writer')
-
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('writer', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-    
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

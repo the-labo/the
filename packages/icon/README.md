@@ -113,10 +113,18 @@ Themes
 ## API Guide
 
 
-- module:icon
-  - [.create(args)](./doc/api/api.md#module_icon.create)
-  - [.icon()](./doc/api/api.md#module_icon.icon)
-  - [.Icon](./doc/api/api.md#module_icon.Icon)
+- module:@the-/icon
+  - [.create(args)](./doc/api/api.md#module_@the-/icon.create)
+  - [.helpers](./doc/api/api.md#module_@the-/icon.helpers)
+  - [.icon()](./doc/api/api.md#module_@the-/icon.icon)
+  - [.TheIcon](./doc/api/api.md#module_@the-/icon.TheIcon)
+  - [.Themes](./doc/api/api.md#module_@the-/icon.Themes)
+- module:@the-/icon.helpers
+  - [.applier](./doc/api/api.md#module_@the-/icon.helpers.applier)
+  - [.drawer](./doc/api/api.md#module_@the-/icon.helpers.drawer)
+  - [.writer](./doc/api/api.md#module_@the-/icon.helpers.writer)
+- module:@the-/icon.TheIcon
+  - [#saveAs(filename)](./doc/api/api.md#module_@the-/icon.TheIcon#saveAs)
 
 See [API Guide](./doc/api/api.md) for more detail
 

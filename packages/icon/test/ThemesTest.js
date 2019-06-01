@@ -4,20 +4,12 @@
  */
 'use strict'
 
-const Themes = require('../lib/Themes')
-
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('themes', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-    
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */
