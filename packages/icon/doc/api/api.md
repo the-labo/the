@@ -5,7 +5,7 @@
 ## @the-/icon
 Icon generator
 
-**Version**: 15.4.9  
+**Version**: 15.4.12  
 **License**: MIT  
 
 * [@the-/icon](#module_@the-/icon)

@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const { createCanvas } = require('canvas')
+const { createCanvas, registerFont } = require('canvas')
 const applier = require('./helpers/applier')
 const drawer = require('./helpers/drawer')
 const writer = require('./helpers/writer')
@@ -12,11 +12,18 @@ const writer = require('./helpers/writer')
 /** @lends module:@the-/icon.TheIcon */
 class TheIcon {
   constructor(config = {}) {
-    const { color, height = 512, text, theme, width = 512 } = config
+    const {
+      color,
+      font: fontFile,
+      height = 512,
+      text,
+      theme,
+      width = 512,
+    } = config
     this.canvas = createCanvas(width, height)
-
+    const font = this.registerFont(fontFile)
     if (theme) {
-      this.applyTheme(theme, { color, text })
+      this.applyTheme(theme, { color, font, text })
     }
   }
 
@@ -28,12 +35,21 @@ class TheIcon {
     return this.canvas.width
   }
 
-  applyTheme(theme, { color, text }) {
+  applyTheme(theme, { color, font, text }) {
     const apply = applier[theme]
     if (!apply) {
       throw new Error(`[TheIcon] Unknown theme: ${theme}`)
     }
-    apply(this, { color, text })
+    apply(this, { color, font, text })
+  }
+
+  registerFont(filename) {
+    if (!filename) {
+      return
+    }
+    const name = `font-${new Date().getTime()}`
+    registerFont(filename, { family: name })
+    return name
   }
 
   setBackground(options = {}) {

@@ -117,7 +117,7 @@ class TheCode {
     const { ignore, force } = options
     const filenames = await aglob(pattern, { ignore })
     const results = await Promise.all(
-      filenames.map((filename) => this.formatFile(filename, {force})),
+      filenames.map((filename) => this.formatFile(filename, { force })),
     )
     return results.filter(Boolean)
   }
@@ -128,8 +128,8 @@ class TheCode {
    * @param {Object} [options={}] - Optional setting
    * @returns {Promise<undefined>}
    */
-  async formatFile(filename, options={}) {
-    const {force} = options
+  async formatFile(filename, options = {}) {
+    const { force } = options
     const shouldSkipFile = await this.shouldSkipFile(filename)
     if (shouldSkipFile) {
       debug('Skip', filename)

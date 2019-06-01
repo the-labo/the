@@ -25,10 +25,10 @@ const drawer = {
     const h2 = height / 2
     ctx.lineWidth = lineWidth
     ctx.beginPath()
-    const left = cx - w2 + lineWidth
-    const top = cy - h2 + lineWidth
-    const right = cx + w2 - lineWidth
-    const bottom = cy + h2 - lineWidth
+    const left = cx - w2 + lineWidth / 2
+    const top = cy - h2 + lineWidth / 2
+    const right = cx + w2 - lineWidth / 2
+    const bottom = cy + h2 - lineWidth / 2
     ctx.moveTo(left + r, top)
     ctx.arcTo(right, top, right, bottom, r)
     ctx.arcTo(right, bottom, left, bottom, r)

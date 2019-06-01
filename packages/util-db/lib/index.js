@@ -4,7 +4,7 @@
  * @license MIT
  * @module @the-/util-db
  * @typicalname utilDb
- * @version 15.4.7
+ * @version 15.4.8
  */
 'use strict'
 

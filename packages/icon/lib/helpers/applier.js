@@ -15,6 +15,7 @@ const applier = {
       borderRadius = icon.width / 2,
       borderWidth = icon.width / 50,
       color,
+      font,
       text,
     },
   ) => {
@@ -24,7 +25,7 @@ const applier = {
       margin: borderWidth,
     })
     icon.setBorder({ borderRadius, color, width: borderWidth })
-    icon.setText(text, { color })
+    icon.setText(text, { color, font })
   },
   [Themes.CIRCLE_FILL]: (
     icon,
@@ -39,6 +40,7 @@ const applier = {
       borderRadius = icon.width / 10,
       borderWidth = icon.width / 50,
       color,
+      font,
       text,
     },
   ) => {
@@ -48,23 +50,26 @@ const applier = {
       margin: borderWidth,
     })
     icon.setBorder({ borderRadius, color, width: borderWidth })
-    icon.setText(text, { color })
+    icon.setText(text, { color, font })
   },
   [Themes.ROUND_FILL]: (
     icon,
-    { borderRadius = icon.width / 10, color, text },
+    { borderRadius = icon.width / 10, color, font, text },
   ) => {
     icon.setBackground({ borderRadius, color, margin: 0 })
-    icon.setText(text, { color: textColorFor(color) })
+    icon.setText(text, { color: textColorFor(color), font })
   },
-  [Themes.SQUARE]: (icon, { borderWidth = icon.width / 50, color, text }) => {
+  [Themes.SQUARE]: (
+    icon,
+    { borderWidth = icon.width / 50, color, font, text },
+  ) => {
     icon.setBackground({ color: textColorFor(color), margin: borderWidth })
     icon.setBorder({ color, width: borderWidth })
-    icon.setText(text, { color })
+    icon.setText(text, { color, font })
   },
-  [Themes.SQUARE_FILL]: (icon, { color, text }) => {
+  [Themes.SQUARE_FILL]: (icon, { color, font, text }) => {
     icon.setBackground({ color, margin: 0 })
-    icon.setText(text, { color: textColorFor(color) })
+    icon.setText(text, { color: textColorFor(color), font })
   },
 }
 

@@ -73,6 +73,7 @@ async function tryExample() {
 
   await theIcon({
     color,
+    font: 'fonts/comicsans.ttf',
     text,
     theme: Themes.SQUARE,
   }).saveAs('foo/square-icon.png')
@@ -95,12 +96,12 @@ Themes
 
 | Theme | Sample Output | Sample code |
 | ---  | ---- | ---- |
-| `Themes.CIRCLE` | <img src="example/images/circle.png" height="80"/> |`theIcon({ theme:Themes.CIRCLE, text:'APE', color: '#A11', }).saveAs('circle.png')` |
-| `Themes.CIRCLE_FILL` | <img src="example/images/circle-fill.png" height="80"/> |`theIcon({ theme:Themes.CIRCLE_FILL, text:'APE', color: '#A11', }).saveAs('circle-fill.png')` |
-| `Themes.ROUND` | <img src="example/images/round.png" height="80"/> |`theIcon({ theme:Themes.ROUND, text:'APE', color: '#A11', }).saveAs('round.png')` |
-| `Themes.ROUND_FILL` | <img src="example/images/round-fill.png" height="80"/> |`theIcon({ theme:Themes.ROUND_FILL, text:'APE', color: '#A11', }).saveAs('round-fill.png')` |
-| `Themes.SQUARE` | <img src="example/images/square.png" height="80"/> |`theIcon({ theme:Themes.SQUARE, text:'APE', color: '#A11', }).saveAs('square.png')` |
-| `Themes.SQUARE_FILL` | <img src="example/images/square-fill.png" height="80"/> |`theIcon({ theme:Themes.SQUARE_FILL, text:'APE', color: '#A11', }).saveAs('square-fill.png')` |
+| `Themes.CIRCLE` | <img src="./example/images/circle.png" height="80"/> |`theIcon({ theme:Themes.CIRCLE, text:'APE', color: '#A11', }).saveAs('circle.png')` |
+| `Themes.CIRCLE_FILL` | <img src="./example/images/circle-fill.png" height="80"/> |`theIcon({ theme:Themes.CIRCLE_FILL, text:'APE', color: '#A11', }).saveAs('circle-fill.png')` |
+| `Themes.ROUND` | <img src="./example/images/round.png" height="80"/> |`theIcon({ theme:Themes.ROUND, text:'APE', color: '#A11', }).saveAs('round.png')` |
+| `Themes.ROUND_FILL` | <img src="./example/images/round-fill.png" height="80"/> |`theIcon({ theme:Themes.ROUND_FILL, text:'APE', color: '#A11', }).saveAs('round-fill.png')` |
+| `Themes.SQUARE` | <img src="./example/images/square.png" height="80"/> |`theIcon({ theme:Themes.SQUARE, text:'APE', color: '#A11', }).saveAs('square.png')` |
+| `Themes.SQUARE_FILL` | <img src="./example/images/square-fill.png" height="80"/> |`theIcon({ theme:Themes.SQUARE_FILL, text:'APE', color: '#A11', }).saveAs('square-fill.png')` |
 
 
 <!-- Section from "doc/readme/03.Themes.md.hbs" End -->

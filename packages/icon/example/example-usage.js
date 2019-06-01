@@ -12,6 +12,7 @@ async function tryExample() {
 
   await theIcon({
     color,
+    font: 'fonts/comicsans.ttf',
     text,
     theme: Themes.SQUARE,
   }).saveAs('foo/square-icon.png')

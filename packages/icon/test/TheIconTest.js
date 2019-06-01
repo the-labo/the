@@ -35,33 +35,40 @@ describe('icon', () => {
     const dir = `${__dirname}/../tmp/themes`
     const text = 'APE'
     const color = '#A11'
+    const font = `${__dirname}/../misc/mocks/fonts/Raleway/Raleway-Thin.ttf`
     await new TheIcon({
       color,
+      font,
       text,
       theme: Themes.SQUARE,
     }).saveAs(`${dir}/square.png`)
     await new TheIcon({
       color,
+      font,
       text,
       theme: Themes.SQUARE_FILL,
     }).saveAs(`${dir}/square-fill.png`)
     await new TheIcon({
       color,
+      font,
       text,
       theme: Themes.ROUND,
     }).saveAs(`${dir}/round.png`)
     await new TheIcon({
       color,
+      font,
       text,
       theme: Themes.ROUND_FILL,
     }).saveAs(`${dir}/round-fill.png`)
     await new TheIcon({
       color,
+      font,
       text,
       theme: Themes.CIRCLE,
     }).saveAs(`${dir}/circle.png`)
     await new TheIcon({
       color,
+      font,
       text,
       theme: Themes.CIRCLE_FILL,
     }).saveAs(`${dir}/circle-fill.png`)

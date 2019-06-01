@@ -13,7 +13,7 @@
     "name": "@the-/icon",
     "order": 2,
     "typicalname": "icon",
-    "version": "15.4.9"
+    "version": "15.4.12"
   },
   {
     "async": true,
@@ -24,7 +24,7 @@
     "memberof": "module:@the-/icon.TheIcon",
     "meta": {
       "filename": "TheIcon.js",
-      "lineno": 84,
+      "lineno": 100,
       "path": "lib"
     },
     "name": "saveAs",

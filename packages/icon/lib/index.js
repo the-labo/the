@@ -4,7 +4,7 @@
  * @license MIT
  * @module @the-/icon
  * @typicalname icon
- * @version 15.4.9
+ * @version 15.4.12
  */
 'use strict'
 
