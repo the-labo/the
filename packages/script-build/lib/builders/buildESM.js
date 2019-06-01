@@ -11,6 +11,15 @@ const buildShim = require('./buildShim')
 const _tmpl = (filename) =>
   path.resolve(`${__dirname}/../../assets/tmpl`, filename)
 
+const transform = (content) => {
+  try {
+    const { code } = lebab.transform(content, ['commonjs'])
+    return code
+  } catch (e) {
+    return null
+  }
+}
+
 module.exports = async function buildESM(
   srcDir,
   destDir,
@@ -23,16 +32,12 @@ module.exports = async function buildESM(
     for (const filename of filenames) {
       const src = path.resolve(srcDir, filename)
       const dest = path.resolve(tmpDir, filename)
-      try {
-        const srcContent = String(await readFileAsync(src))
-        const { code } = lebab.transform(srcContent, ['commonjs'])
-        await writeout(dest, code, {
-          mkdirp: true,
-          skipIfIdentical: true,
-        })
-      } catch (e) {
-        console.warn('[the-script-build] Failed to lebab:', src, e)
-      }
+      const srcContent = String(await readFileAsync(src))
+      const transformed = transform(srcContent) || srcContent
+      await writeout(dest, transformed, {
+        mkdirp: true,
+        skipIfIdentical: true,
+      })
     }
     await buildShim(tmpDir, destDir, { jsPattern, plugins, presets })
 

@@ -12,6 +12,7 @@ exports.Readme = (dirname, options = {}) => {
     jsdocLink = './doc/api/api.md',
     jsdocPath = './doc/api/jsdoc',
     linksPath = './doc/links',
+    vars = {},
   } = options
   const requireIfPossible = (id) => {
     try {
@@ -35,6 +36,7 @@ exports.Readme = (dirname, options = {}) => {
     pkg,
     repo: pkg.repository,
     sections: 'doc/readme/*.md.hbs',
+    vars,
   })
 }
 

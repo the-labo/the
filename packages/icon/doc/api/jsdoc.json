@@ -1,0 +1,198 @@
+[
+  {
+    "description": "Icon generator",
+    "id": "module:@the-/icon",
+    "kind": "module",
+    "license": "MIT",
+    "longname": "module:@the-/icon",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 2,
+      "path": "lib"
+    },
+    "name": "@the-/icon",
+    "order": 2,
+    "typicalname": "icon",
+    "version": "15.4.9"
+  },
+  {
+    "async": true,
+    "description": "Save as file",
+    "id": "module:@the-/icon.TheIcon#saveAs",
+    "kind": "function",
+    "longname": "module:@the-/icon.TheIcon#saveAs",
+    "memberof": "module:@the-/icon.TheIcon",
+    "meta": {
+      "filename": "TheIcon.js",
+      "lineno": 84,
+      "path": "lib"
+    },
+    "name": "saveAs",
+    "order": 4,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "filename"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<undefined>"
+          ]
+        }
+      }
+    ],
+    "scope": "instance"
+  },
+  {
+    "id": "module:@the-/icon.TheIcon",
+    "kind": "class",
+    "longname": "module:@the-/icon.TheIcon",
+    "memberof": "module:@the-/icon",
+    "meta": {
+      "filename": "TheIcon.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "TheIcon",
+    "order": 3,
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/icon.Themes",
+    "kind": "class",
+    "longname": "module:@the-/icon.Themes",
+    "memberof": "module:@the-/icon",
+    "meta": {
+      "filename": "Themes.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "Themes",
+    "order": 5,
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/icon.helpers.applier",
+    "kind": "namespace",
+    "longname": "module:@the-/icon.helpers.applier",
+    "memberof": "module:@the-/icon.helpers",
+    "meta": {
+      "filename": "applier.js",
+      "lineno": 1,
+      "path": "lib/helpers"
+    },
+    "name": "applier",
+    "order": 6,
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/icon.helpers.drawer",
+    "kind": "namespace",
+    "longname": "module:@the-/icon.helpers.drawer",
+    "memberof": "module:@the-/icon.helpers",
+    "meta": {
+      "filename": "drawer.js",
+      "lineno": 1,
+      "path": "lib/helpers"
+    },
+    "name": "drawer",
+    "order": 7,
+    "scope": "static"
+  },
+  {
+    "access": "protected",
+    "description": "Helper functions",
+    "id": "module:@the-/icon.helpers",
+    "kind": "namespace",
+    "longname": "module:@the-/icon.helpers",
+    "memberof": "module:@the-/icon",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 2,
+      "path": "lib/helpers"
+    },
+    "name": "helpers",
+    "order": 8,
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/icon.helpers.writer",
+    "kind": "namespace",
+    "longname": "module:@the-/icon.helpers.writer",
+    "memberof": "module:@the-/icon.helpers",
+    "meta": {
+      "filename": "writer.js",
+      "lineno": 1,
+      "path": "lib/helpers"
+    },
+    "name": "writer",
+    "order": 9,
+    "scope": "static"
+  },
+  {
+    "description": "Create a Icon instance",
+    "id": "module:@the-/icon.create",
+    "kind": "function",
+    "longname": "module:@the-/icon.create",
+    "memberof": "module:@the-/icon",
+    "meta": {
+      "filename": "create.js",
+      "lineno": 2,
+      "path": "lib"
+    },
+    "name": "create",
+    "order": 0,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Icon"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Default exports",
+    "id": "module:@the-/icon.icon",
+    "kind": "function",
+    "longname": "module:@the-/icon.icon",
+    "memberof": "module:@the-/icon",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 2,
+      "path": "lib"
+    },
+    "name": "icon",
+    "order": 1,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Icon"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  }
+]

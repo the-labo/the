@@ -1,0 +1,21 @@
+/**
+ * Bud file for README.md
+ */
+'use strict'
+
+const stringcase = require('stringcase')
+const { Readme } = require('@the-/templates/presets/lib')
+const Themes = require('./lib/Themes')
+
+module.exports = Readme(__dirname, {
+  vars: {
+    themes: Object.entries(Themes).map(([k]) => ({
+      filename: `${stringcase.spinalcase(k).toLowerCase()}.png`,
+      key: k,
+    })),
+  },
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

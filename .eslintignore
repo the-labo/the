@@ -78,6 +78,8 @@ var/
 /packages/geo/lib/index.js
 /packages/handle/lib/index.js
 /packages/hash/lib/index.js
+/packages/icon/lib/helpers/index.js
+/packages/icon/lib/index.js
 /packages/jitter/lib/index.js
 /packages/jsdoc/lib/index.js
 /packages/lint/lib/helpers/index.js

@@ -72,6 +72,7 @@ root for the-project
 - [geo](./packages/geo)
 - [handle](./packages/handle)
 - [hash](./packages/hash)
+- [icon](./packages/icon)
 - [jitter](./packages/jitter)
 - [jsdoc](./packages/jsdoc)
 - [lint](./packages/lint)
