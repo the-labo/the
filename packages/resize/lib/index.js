@@ -4,7 +4,7 @@
  * @license MIT
  * @module @the-/resize
  * @typicalname resize
- * @version 15.4.7
+ * @version 15.4.8
  */
 'use strict'
 
