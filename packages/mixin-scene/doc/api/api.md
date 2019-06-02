@@ -5,7 +5,7 @@
 ## @the-/mixin-scene
 Mixins for the-scene
 
-**Version**: 16.0.1  
+**Version**: 17.1.2  
 **License**: MIT  
 
 * [@the-/mixin-scene](#module_@the-/mixin-scene)
@@ -15,15 +15,9 @@ Mixins for the-scene
         * [.injectProperties(Class)](#module_@the-/mixin-scene.helpers.injectProperties) ⇒ <code>function</code>
     * [.bindDefaults()](#module_@the-/mixin-scene.bindDefaults) ⇒ <code>function</code>
     * [.bindScope()](#module_@the-/mixin-scene.bindScope) ⇒ <code>function</code>
-    * ~~[.siteToast()](#module_@the-/mixin-scene.siteToast) ⇒ <code>function</code>~~
-        * [~SiteToastMixed](#module_@the-/mixin-scene.siteToast..SiteToastMixed)
-            * [.reset(queues)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.reset)
-            * [.showError(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showError)
-            * [.showInfo(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showInfo)
-            * [.showWarn(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showWarn)
     * [.withBusy(Class)](#module_@the-/mixin-scene.withBusy) ⇒ <code>function</code>
         * [~WithBusyMixed](#module_@the-/mixin-scene.withBusy..WithBusyMixed)
-    * [.withEntities(Class)](#module_@the-/mixin-scene.withEntities) ⇒ <code>function</code>
+    * ~~[.withEntities(Class)](#module_@the-/mixin-scene.withEntities) ⇒ <code>function</code>~~
         * [~WithEntities](#module_@the-/mixin-scene.withEntities..WithEntities)
             * [.addEntities(entities, [options])](#module_@the-/mixin-scene.withEntities..WithEntities.addEntities)
             * [.addEntity(entity, [options])](#module_@the-/mixin-scene.withEntities..WithEntities.addEntity)
@@ -44,10 +38,6 @@ Mixins for the-scene
             * [.getFilter()](#module_@the-/mixin-scene.withFilter..WithFilterMixed.getFilter) ⇒ <code>Object</code>
             * [.setFilter(filter)](#module_@the-/mixin-scene.withFilter..WithFilterMixed.setFilter)
             * [.setFilterByQ()](#module_@the-/mixin-scene.withFilter..WithFilterMixed.setFilterByQ)
-    * ~~[.withForm(Class)](#module_@the-/mixin-scene.withForm) ⇒ <code>function</code>~~
-    * ~~[.withHistory(Class)](#module_@the-/mixin-scene.withHistory) ⇒ <code>function</code>~~
-        * [~WithHistoryMixed](#module_@the-/mixin-scene.withHistory..WithHistoryMixed)
-            * [.replaceHistoryByQuery(query)](#module_@the-/mixin-scene.withHistory..WithHistoryMixed.replaceHistoryByQuery)
     * [.withId(Class)](#module_@the-/mixin-scene.withId) ⇒ <code>function</code>
         * [~WithHistoryMixed](#module_@the-/mixin-scene.withId..WithHistoryMixed)
             * [.getId()](#module_@the-/mixin-scene.withId..WithHistoryMixed.getId) ⇒ <code>string</code>
@@ -58,12 +48,6 @@ Mixins for the-scene
             * [.nextLimit()](#module_@the-/mixin-scene.withLimit..WithLimitMixed.nextLimit) ⇒ <code>number</code>
             * [.setLimit(limit)](#module_@the-/mixin-scene.withLimit..WithLimitMixed.setLimit)
             * [.updateToNextLimit()](#module_@the-/mixin-scene.withLimit..WithLimitMixed.updateToNextLimit)
-    * [.withLocation(Class)](#module_@the-/mixin-scene.withLocation) ⇒ <code>function</code>
-        * [~WithLocationMixed](#module_@the-/mixin-scene.withLocation..WithLocationMixed)
-            * [.changeLocationTo(href)](#module_@the-/mixin-scene.withLocation..WithLocationMixed.changeLocationTo)
-            * [.getLocationHash()](#module_@the-/mixin-scene.withLocation..WithLocationMixed.getLocationHash) ⇒ <code>\*</code>
-            * [.reloadLocation()](#module_@the-/mixin-scene.withLocation..WithLocationMixed.reloadLocation) ⇒ <code>Promise.&lt;undefined&gt;</code>
-            * [.setLocationHash(hash)](#module_@the-/mixin-scene.withLocation..WithLocationMixed.setLocationHash)
     * [.withPage(Class)](#module_@the-/mixin-scene.withPage) ⇒ <code>function</code>
         * [~WithPageMixed](#module_@the-/mixin-scene.withPage..WithPageMixed)
     * ~~[.withQuery(Class)](#module_@the-/mixin-scene.withQuery) ⇒ <code>function</code>~~
@@ -82,13 +66,6 @@ Mixins for the-scene
             * [.resultFor(action)](#module_@the-/mixin-scene.withResult..WithResultMixed.resultFor) ⇒ <code>Promise.&lt;\*&gt;</code>
     * [.withSort(Class)](#module_@the-/mixin-scene.withSort) ⇒ <code>function</code>
         * [~WithSortMixed](#module_@the-/mixin-scene.withSort..WithSortMixed)
-    * [.withTargets(Class)](#module_@the-/mixin-scene.withTargets) ⇒ <code>function</code>
-        * [~WithTargetsMixed](#module_@the-/mixin-scene.withTargets..WithTargetsMixed)
-            * [.addTargets(targets)](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.addTargets)
-            * [.getTargetIds()](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargetIds) ⇒ <code>Array.&lt;string&gt;</code>
-            * [.getTargetRefs()](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargetRefs) ⇒ <code>Array.&lt;string&gt;</code>
-            * [.getTargets()](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargets)
-    * [.withValues(Class)](#module_@the-/mixin-scene.withValues) ⇒ <code>function</code>
 
 <a name="module_@the-/mixin-scene.helpers"></a>
 
@@ -139,78 +116,6 @@ For bindScope
 
 **Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
 **Returns**: <code>function</code> - Class annotation function  
-<a name="module_@the-/mixin-scene.siteToast"></a>
-
-### ~~mixinScene.siteToast() ⇒ <code>function</code>~~
-***Deprecated***
-
-Site toast mix
-
-**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
-**Returns**: <code>function</code> - Annotated class  
-
-* ~~[.siteToast()](#module_@the-/mixin-scene.siteToast) ⇒ <code>function</code>~~
-    * [~SiteToastMixed](#module_@the-/mixin-scene.siteToast..SiteToastMixed)
-        * [.reset(queues)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.reset)
-        * [.showError(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showError)
-        * [.showInfo(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showInfo)
-        * [.showWarn(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showWarn)
-
-<a name="module_@the-/mixin-scene.siteToast..SiteToastMixed"></a>
-
-#### siteToast~SiteToastMixed
-**Kind**: inner class of [<code>siteToast</code>](#module_@the-/mixin-scene.siteToast)  
-
-* [~SiteToastMixed](#module_@the-/mixin-scene.siteToast..SiteToastMixed)
-    * [.reset(queues)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.reset)
-    * [.showError(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showError)
-    * [.showInfo(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showInfo)
-    * [.showWarn(message)](#module_@the-/mixin-scene.siteToast..SiteToastMixed.showWarn)
-
-<a name="module_@the-/mixin-scene.siteToast..SiteToastMixed.reset"></a>
-
-##### SiteToastMixed.reset(queues)
-Rest toasts
-
-**Kind**: static method of [<code>SiteToastMixed</code>](#module_@the-/mixin-scene.siteToast..SiteToastMixed)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| queues | <code>Object.&lt;string, Array.&lt;string&gt;&gt;</code> | Toast queue |
-
-<a name="module_@the-/mixin-scene.siteToast..SiteToastMixed.showError"></a>
-
-##### SiteToastMixed.showError(message)
-Show error toast
-
-**Kind**: static method of [<code>SiteToastMixed</code>](#module_@the-/mixin-scene.siteToast..SiteToastMixed)  
-
-| Param | Type |
-| --- | --- |
-| message | <code>string</code> | 
-
-<a name="module_@the-/mixin-scene.siteToast..SiteToastMixed.showInfo"></a>
-
-##### SiteToastMixed.showInfo(message)
-Show info toast
-
-**Kind**: static method of [<code>SiteToastMixed</code>](#module_@the-/mixin-scene.siteToast..SiteToastMixed)  
-
-| Param | Type |
-| --- | --- |
-| message | <code>string</code> | 
-
-<a name="module_@the-/mixin-scene.siteToast..SiteToastMixed.showWarn"></a>
-
-##### SiteToastMixed.showWarn(message)
-Show warn toast
-
-**Kind**: static method of [<code>SiteToastMixed</code>](#module_@the-/mixin-scene.siteToast..SiteToastMixed)  
-
-| Param | Type |
-| --- | --- |
-| message | <code>string</code> | 
-
 <a name="module_@the-/mixin-scene.withBusy"></a>
 
 ### mixinScene.withBusy(Class) ⇒ <code>function</code>
@@ -229,7 +134,9 @@ withBusy mixin
 **Kind**: inner class of [<code>withBusy</code>](#module_@the-/mixin-scene.withBusy)  
 <a name="module_@the-/mixin-scene.withEntities"></a>
 
-### mixinScene.withEntities(Class) ⇒ <code>function</code>
+### ~~mixinScene.withEntities(Class) ⇒ <code>function</code>~~
+***Deprecated***
+
 withEntities mixin
 
 **Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
@@ -240,7 +147,7 @@ withEntities mixin
 | Class | <code>function</code> | Class to mix |
 
 
-* [.withEntities(Class)](#module_@the-/mixin-scene.withEntities) ⇒ <code>function</code>
+* ~~[.withEntities(Class)](#module_@the-/mixin-scene.withEntities) ⇒ <code>function</code>~~
     * [~WithEntities](#module_@the-/mixin-scene.withEntities..WithEntities)
         * [.addEntities(entities, [options])](#module_@the-/mixin-scene.withEntities..WithEntities.addEntities)
         * [.addEntity(entity, [options])](#module_@the-/mixin-scene.withEntities..WithEntities.addEntity)
@@ -472,54 +379,6 @@ Set filter
 Set filters by q
 
 **Kind**: static method of [<code>WithFilterMixed</code>](#module_@the-/mixin-scene.withFilter..WithFilterMixed)  
-<a name="module_@the-/mixin-scene.withForm"></a>
-
-### ~~mixinScene.withForm(Class) ⇒ <code>function</code>~~
-***Deprecated***
-
-withForm mixin
-
-**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
-<a name="module_@the-/mixin-scene.withHistory"></a>
-
-### ~~mixinScene.withHistory(Class) ⇒ <code>function</code>~~
-***Deprecated***
-
-withHistory mixin
-
-**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
-
-* ~~[.withHistory(Class)](#module_@the-/mixin-scene.withHistory) ⇒ <code>function</code>~~
-    * [~WithHistoryMixed](#module_@the-/mixin-scene.withHistory..WithHistoryMixed)
-        * [.replaceHistoryByQuery(query)](#module_@the-/mixin-scene.withHistory..WithHistoryMixed.replaceHistoryByQuery)
-
-<a name="module_@the-/mixin-scene.withHistory..WithHistoryMixed"></a>
-
-#### withHistory~WithHistoryMixed
-**Kind**: inner class of [<code>withHistory</code>](#module_@the-/mixin-scene.withHistory)  
-<a name="module_@the-/mixin-scene.withHistory..WithHistoryMixed.replaceHistoryByQuery"></a>
-
-##### WithHistoryMixed.replaceHistoryByQuery(query)
-Replace history with query
-
-**Kind**: static method of [<code>WithHistoryMixed</code>](#module_@the-/mixin-scene.withHistory..WithHistoryMixed)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| query | <code>Object</code> | Query data |
-
 <a name="module_@the-/mixin-scene.withId"></a>
 
 ### mixinScene.withId(Class) ⇒ <code>function</code>
@@ -625,71 +484,6 @@ Set limit
 Update to next limit
 
 **Kind**: static method of [<code>WithLimitMixed</code>](#module_@the-/mixin-scene.withLimit..WithLimitMixed)  
-<a name="module_@the-/mixin-scene.withLocation"></a>
-
-### mixinScene.withLocation(Class) ⇒ <code>function</code>
-withLocation mixin
-
-**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
-
-* [.withLocation(Class)](#module_@the-/mixin-scene.withLocation) ⇒ <code>function</code>
-    * [~WithLocationMixed](#module_@the-/mixin-scene.withLocation..WithLocationMixed)
-        * [.changeLocationTo(href)](#module_@the-/mixin-scene.withLocation..WithLocationMixed.changeLocationTo)
-        * [.getLocationHash()](#module_@the-/mixin-scene.withLocation..WithLocationMixed.getLocationHash) ⇒ <code>\*</code>
-        * [.reloadLocation()](#module_@the-/mixin-scene.withLocation..WithLocationMixed.reloadLocation) ⇒ <code>Promise.&lt;undefined&gt;</code>
-        * [.setLocationHash(hash)](#module_@the-/mixin-scene.withLocation..WithLocationMixed.setLocationHash)
-
-<a name="module_@the-/mixin-scene.withLocation..WithLocationMixed"></a>
-
-#### withLocation~WithLocationMixed
-**Kind**: inner class of [<code>withLocation</code>](#module_@the-/mixin-scene.withLocation)  
-
-* [~WithLocationMixed](#module_@the-/mixin-scene.withLocation..WithLocationMixed)
-    * [.changeLocationTo(href)](#module_@the-/mixin-scene.withLocation..WithLocationMixed.changeLocationTo)
-    * [.getLocationHash()](#module_@the-/mixin-scene.withLocation..WithLocationMixed.getLocationHash) ⇒ <code>\*</code>
-    * [.reloadLocation()](#module_@the-/mixin-scene.withLocation..WithLocationMixed.reloadLocation) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * [.setLocationHash(hash)](#module_@the-/mixin-scene.withLocation..WithLocationMixed.setLocationHash)
-
-<a name="module_@the-/mixin-scene.withLocation..WithLocationMixed.changeLocationTo"></a>
-
-##### WithLocationMixed.changeLocationTo(href)
-Change location to url
-
-**Kind**: static method of [<code>WithLocationMixed</code>](#module_@the-/mixin-scene.withLocation..WithLocationMixed)  
-
-| Param | Type |
-| --- | --- |
-| href | <code>string</code> | 
-
-<a name="module_@the-/mixin-scene.withLocation..WithLocationMixed.getLocationHash"></a>
-
-##### WithLocationMixed.getLocationHash() ⇒ <code>\*</code>
-Get location hash
-
-**Kind**: static method of [<code>WithLocationMixed</code>](#module_@the-/mixin-scene.withLocation..WithLocationMixed)  
-<a name="module_@the-/mixin-scene.withLocation..WithLocationMixed.reloadLocation"></a>
-
-##### WithLocationMixed.reloadLocation() ⇒ <code>Promise.&lt;undefined&gt;</code>
-Reload current location
-
-**Kind**: static method of [<code>WithLocationMixed</code>](#module_@the-/mixin-scene.withLocation..WithLocationMixed)  
-<a name="module_@the-/mixin-scene.withLocation..WithLocationMixed.setLocationHash"></a>
-
-##### WithLocationMixed.setLocationHash(hash)
-Set location hash
-
-**Kind**: static method of [<code>WithLocationMixed</code>](#module_@the-/mixin-scene.withLocation..WithLocationMixed)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| hash | <code>string</code> | Location hash to set |
-
 <a name="module_@the-/mixin-scene.withPage"></a>
 
 ### mixinScene.withPage(Class) ⇒ <code>function</code>
@@ -895,75 +689,3 @@ withSort mixin
 
 #### withSort~WithSortMixed
 **Kind**: inner class of [<code>withSort</code>](#module_@the-/mixin-scene.withSort)  
-<a name="module_@the-/mixin-scene.withTargets"></a>
-
-### mixinScene.withTargets(Class) ⇒ <code>function</code>
-withTargets mixin
-
-**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
-
-* [.withTargets(Class)](#module_@the-/mixin-scene.withTargets) ⇒ <code>function</code>
-    * [~WithTargetsMixed](#module_@the-/mixin-scene.withTargets..WithTargetsMixed)
-        * [.addTargets(targets)](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.addTargets)
-        * [.getTargetIds()](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargetIds) ⇒ <code>Array.&lt;string&gt;</code>
-        * [.getTargetRefs()](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargetRefs) ⇒ <code>Array.&lt;string&gt;</code>
-        * [.getTargets()](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargets)
-
-<a name="module_@the-/mixin-scene.withTargets..WithTargetsMixed"></a>
-
-#### withTargets~WithTargetsMixed
-**Kind**: inner class of [<code>withTargets</code>](#module_@the-/mixin-scene.withTargets)  
-
-* [~WithTargetsMixed](#module_@the-/mixin-scene.withTargets..WithTargetsMixed)
-    * [.addTargets(targets)](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.addTargets)
-    * [.getTargetIds()](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargetIds) ⇒ <code>Array.&lt;string&gt;</code>
-    * [.getTargetRefs()](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargetRefs) ⇒ <code>Array.&lt;string&gt;</code>
-    * [.getTargets()](#module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargets)
-
-<a name="module_@the-/mixin-scene.withTargets..WithTargetsMixed.addTargets"></a>
-
-##### WithTargetsMixed.addTargets(targets)
-Add targets
-
-**Kind**: static method of [<code>WithTargetsMixed</code>](#module_@the-/mixin-scene.withTargets..WithTargetsMixed)  
-
-| Param | Type |
-| --- | --- |
-| targets | <code>Array</code> | 
-
-<a name="module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargetIds"></a>
-
-##### WithTargetsMixed.getTargetIds() ⇒ <code>Array.&lt;string&gt;</code>
-Get ids of target
-
-**Kind**: static method of [<code>WithTargetsMixed</code>](#module_@the-/mixin-scene.withTargets..WithTargetsMixed)  
-<a name="module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargetRefs"></a>
-
-##### WithTargetsMixed.getTargetRefs() ⇒ <code>Array.&lt;string&gt;</code>
-Get refs of target
-
-**Kind**: static method of [<code>WithTargetsMixed</code>](#module_@the-/mixin-scene.withTargets..WithTargetsMixed)  
-<a name="module_@the-/mixin-scene.withTargets..WithTargetsMixed.getTargets"></a>
-
-##### WithTargetsMixed.getTargets()
-Get target values
-
-**Kind**: static method of [<code>WithTargetsMixed</code>](#module_@the-/mixin-scene.withTargets..WithTargetsMixed)  
-<a name="module_@the-/mixin-scene.withValues"></a>
-
-### mixinScene.withValues(Class) ⇒ <code>function</code>
-withValues mixin
-
-**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-

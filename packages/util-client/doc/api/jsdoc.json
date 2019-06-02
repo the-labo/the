@@ -11,22 +11,58 @@
       "path": "lib"
     },
     "name": "@the-/util-client",
-    "order": 0,
+    "order": 1,
     "typicalname": "utilClient",
-    "version": "15.4.7"
+    "version": "15.5.0"
+  },
+  {
+    "description": "Create from data from object",
+    "id": "module:@the-/util-client.createFormData",
+    "kind": "function",
+    "longname": "module:@the-/util-client.createFormData",
+    "memberof": "module:@the-/util-client",
+    "meta": {
+      "filename": "createFormData.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "createFormData",
+    "order": 0,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Form data object",
+        "name": "values"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "FormData"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
   },
   {
     "description": "Read file as array buffer",
-    "id": "readFile",
+    "id": "module:@the-/util-client.readFile",
     "kind": "function",
-    "longname": "readFile",
+    "longname": "module:@the-/util-client.readFile",
+    "memberof": "module:@the-/util-client",
     "meta": {
       "filename": "readFile.js",
       "lineno": 2,
       "path": "lib"
     },
     "name": "readFile",
-    "order": 1,
+    "order": 2,
     "params": [
       {
         "type": {
@@ -48,6 +84,51 @@
         "description": "- Array buffer"
       }
     ],
-    "scope": "global"
+    "scope": "static"
+  },
+  {
+    "description": "Send form data",
+    "id": "module:@the-/util-client.sendForm",
+    "kind": "function",
+    "longname": "module:@the-/util-client.sendForm",
+    "memberof": "module:@the-/util-client",
+    "meta": {
+      "filename": "sendForm.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "sendForm",
+    "order": 3,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Form url",
+        "name": "url"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "values"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "scope": "static"
   }
 ]

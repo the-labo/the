@@ -13,41 +13,7 @@
     "name": "@the-/window",
     "order": 1,
     "typicalname": "window",
-    "version": "15.4.7"
-  },
-  {
-    "description": "Handle event rescue on document",
-    "id": "rescue",
-    "kind": "function",
-    "longname": "rescue",
-    "meta": {
-      "filename": "rescue.js",
-      "lineno": 2,
-      "path": "lib"
-    },
-    "name": "rescue",
-    "order": 4,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Name of event",
-        "name": "event"
-      },
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Event handler",
-        "name": "handler"
-      }
-    ],
-    "scope": "global"
+    "version": "15.5.0"
   },
   {
     "description": "Get global values",
@@ -168,6 +134,78 @@
     "scope": "static"
   },
   {
+    "description": "Reload location",
+    "id": "module:@the-/window.reload",
+    "kind": "function",
+    "longname": "module:@the-/window.reload",
+    "memberof": "module:@the-/window",
+    "meta": {
+      "filename": "reload.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "reload",
+    "order": 4,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional setting",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<undefined>"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Handle event rescue on document",
+    "id": "module:@the-/window.rescue",
+    "kind": "function",
+    "longname": "module:@the-/window.rescue",
+    "memberof": "module:@the-/window",
+    "meta": {
+      "filename": "rescue.js",
+      "lineno": 2,
+      "path": "lib"
+    },
+    "name": "rescue",
+    "order": 5,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Name of event",
+        "name": "event"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Event handler",
+        "name": "handler"
+      }
+    ],
+    "scope": "static"
+  },
+  {
     "description": "Set global values",
     "id": "module:@the-/window.set",
     "kind": "function",
@@ -179,7 +217,7 @@
       "path": "lib"
     },
     "name": "set",
-    "order": 5,
+    "order": 6,
     "params": [
       {
         "type": {
@@ -223,7 +261,7 @@
       "path": "lib"
     },
     "name": "show",
-    "order": 6,
+    "order": 7,
     "params": [
       {
         "type": {

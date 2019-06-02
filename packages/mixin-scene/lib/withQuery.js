@@ -1,6 +1,7 @@
 'use strict'
 /**
  * withQuery mixin
+ * @deprecated
  * @function withQuery
  * @deprecated
  * @memberof module:@the-/mixin-scene

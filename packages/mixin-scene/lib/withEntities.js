@@ -1,8 +1,9 @@
 'use strict'
 /**
  * withEntities mixin
- * @memberof module:@the-/mixin-scene
  * @function withEntities
+ * @deprecated
+ * @memberof module:@the-/mixin-scene
  * @param {function()} Class - Class to mix
  * @returns {function()} Mixed class
  */

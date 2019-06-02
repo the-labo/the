@@ -1,6 +1,7 @@
 'use strict'
 /**
  * Handle event rescue on document
+ * @memberof module:@the-/window
  * @function rescue
  * @param {string} event - Name of event
  * @param {function()} handler - Event handler

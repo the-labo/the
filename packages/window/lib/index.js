@@ -4,13 +4,14 @@
  * @license MIT
  * @module @the-/window
  * @typicalname window
- * @version 15.4.8
+ * @version 15.5.0
  */
 'use strict'
 
 const get_ = require('./get')
 const line_ = require('./line')
 const once_ = require('./once')
+const reload_ = require('./reload')
 const rescue_ = require('./rescue')
 const set_ = require('./set')
 const show_ = require('./show')
@@ -19,6 +20,7 @@ const show_ = require('./show')
 exports.get = get_
 exports.line = line_
 exports.once = once_
+exports.reload = reload_
 exports.rescue = rescue_
 exports.set = set_
 exports.show = show_
@@ -27,6 +29,7 @@ module.exports = {
   get: get_,
   line: line_,
   once: once_,
+  reload: reload_,
   rescue: rescue_,
   set: set_,
   show: show_,

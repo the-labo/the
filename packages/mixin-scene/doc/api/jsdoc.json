@@ -13,7 +13,7 @@
     "name": "@the-/mixin-scene",
     "order": 2,
     "typicalname": "mixinScene",
-    "version": "16.0.1"
+    "version": "17.1.2"
   },
   {
     "description": "Get is ready or not",
@@ -27,7 +27,7 @@
       "path": "lib"
     },
     "name": "isReady",
-    "order": 67,
+    "order": 51,
     "properties": [
       {
         "type": {
@@ -53,7 +53,7 @@
       "path": "lib/helpers"
     },
     "name": "helpers",
-    "order": 84,
+    "order": 61,
     "scope": "static"
   },
   {
@@ -107,133 +107,6 @@
     "scope": "static"
   },
   {
-    "deprecated": true,
-    "description": "Site toast mix",
-    "id": "module:@the-/mixin-scene.siteToast",
-    "kind": "function",
-    "longname": "module:@the-/mixin-scene.siteToast",
-    "memberof": "module:@the-/mixin-scene",
-    "meta": {
-      "filename": "siteToast.js",
-      "lineno": 2,
-      "path": "lib"
-    },
-    "name": "siteToast",
-    "order": 3,
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Annotated class"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Rest toasts",
-    "id": "module:@the-/mixin-scene.siteToast~SiteToastMixed.reset",
-    "kind": "function",
-    "longname": "module:@the-/mixin-scene.siteToast~SiteToastMixed.reset",
-    "memberof": "module:@the-/mixin-scene.siteToast~SiteToastMixed",
-    "meta": {
-      "filename": "siteToast.js",
-      "lineno": 28,
-      "path": "lib"
-    },
-    "name": "reset",
-    "order": 5,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "Object.<string, Array.<string>>"
-          ]
-        },
-        "description": "Toast queue",
-        "name": "queues"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Show error toast",
-    "id": "module:@the-/mixin-scene.siteToast~SiteToastMixed.showError",
-    "kind": "function",
-    "longname": "module:@the-/mixin-scene.siteToast~SiteToastMixed.showError",
-    "memberof": "module:@the-/mixin-scene.siteToast~SiteToastMixed",
-    "meta": {
-      "filename": "siteToast.js",
-      "lineno": 37,
-      "path": "lib"
-    },
-    "name": "showError",
-    "order": 6,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "name": "message"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Show info toast",
-    "id": "module:@the-/mixin-scene.siteToast~SiteToastMixed.showInfo",
-    "kind": "function",
-    "longname": "module:@the-/mixin-scene.siteToast~SiteToastMixed.showInfo",
-    "memberof": "module:@the-/mixin-scene.siteToast~SiteToastMixed",
-    "meta": {
-      "filename": "siteToast.js",
-      "lineno": 44,
-      "path": "lib"
-    },
-    "name": "showInfo",
-    "order": 7,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "name": "message"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Show warn toast",
-    "id": "module:@the-/mixin-scene.siteToast~SiteToastMixed.showWarn",
-    "kind": "function",
-    "longname": "module:@the-/mixin-scene.siteToast~SiteToastMixed.showWarn",
-    "memberof": "module:@the-/mixin-scene.siteToast~SiteToastMixed",
-    "meta": {
-      "filename": "siteToast.js",
-      "lineno": 51,
-      "path": "lib"
-    },
-    "name": "showWarn",
-    "order": 8,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "name": "message"
-      }
-    ],
-    "scope": "static"
-  },
-  {
     "description": "withBusy mixin",
     "id": "module:@the-/mixin-scene.withBusy",
     "kind": "function",
@@ -245,7 +118,7 @@
       "path": "lib"
     },
     "name": "withBusy",
-    "order": 9,
+    "order": 3,
     "params": [
       {
         "type": {
@@ -281,7 +154,7 @@
       "path": "lib"
     },
     "name": "busyFor",
-    "order": 11,
+    "order": 5,
     "params": [
       {
         "type": {
@@ -315,7 +188,7 @@
       "path": "lib"
     },
     "name": "busyWhile",
-    "order": 12,
+    "order": 6,
     "params": [
       {
         "type": {
@@ -349,7 +222,7 @@
       "path": "lib"
     },
     "name": "isBusy",
-    "order": 13,
+    "order": 7,
     "returns": [
       {
         "type": {
@@ -373,7 +246,7 @@
       "path": "lib"
     },
     "name": "waitWhileBusy",
-    "order": 14,
+    "order": 8,
     "returns": [
       {
         "type": {
@@ -386,6 +259,7 @@
     "scope": "static"
   },
   {
+    "deprecated": true,
     "description": "withEntities mixin",
     "id": "module:@the-/mixin-scene.withEntities",
     "kind": "function",
@@ -397,7 +271,7 @@
       "path": "lib"
     },
     "name": "withEntities",
-    "order": 15,
+    "order": 9,
     "params": [
       {
         "type": {
@@ -429,11 +303,11 @@
     "memberof": "module:@the-/mixin-scene.withEntities~WithEntities",
     "meta": {
       "filename": "withEntities.js",
-      "lineno": 29,
+      "lineno": 30,
       "path": "lib"
     },
     "name": "addEntities",
-    "order": 17,
+    "order": 11,
     "params": [
       {
         "type": {
@@ -465,11 +339,11 @@
     "memberof": "module:@the-/mixin-scene.withEntities~WithEntities",
     "meta": {
       "filename": "withEntities.js",
-      "lineno": 43,
+      "lineno": 44,
       "path": "lib"
     },
     "name": "addEntity",
-    "order": 18,
+    "order": 12,
     "params": [
       {
         "type": {
@@ -501,11 +375,11 @@
     "memberof": "module:@the-/mixin-scene.withEntities~WithEntities",
     "meta": {
       "filename": "withEntities.js",
-      "lineno": 50,
+      "lineno": 51,
       "path": "lib"
     },
     "name": "deleteEntity",
-    "order": 19,
+    "order": 13,
     "params": [
       {
         "type": {
@@ -526,11 +400,11 @@
     "memberof": "module:@the-/mixin-scene.withEntities~WithEntities",
     "meta": {
       "filename": "withEntities.js",
-      "lineno": 60,
+      "lineno": 61,
       "path": "lib"
     },
     "name": "getEntities",
-    "order": 20,
+    "order": 14,
     "returns": [
       {
         "type": {
@@ -550,11 +424,11 @@
     "memberof": "module:@the-/mixin-scene.withEntities~WithEntities",
     "meta": {
       "filename": "withEntities.js",
-      "lineno": 76,
+      "lineno": 77,
       "path": "lib"
     },
     "name": "receiveEntity",
-    "order": 21,
+    "order": 15,
     "params": [
       {
         "type": {
@@ -587,11 +461,11 @@
     "memberof": "module:@the-/mixin-scene.withEntities~WithEntities",
     "meta": {
       "filename": "withEntities.js",
-      "lineno": 89,
+      "lineno": 90,
       "path": "lib"
     },
     "name": "updateEntity",
-    "order": 22,
+    "order": 16,
     "params": [
       {
         "type": {
@@ -616,7 +490,7 @@
       "path": "lib"
     },
     "name": "withEntry",
-    "order": 23,
+    "order": 17,
     "params": [
       {
         "type": {
@@ -652,7 +526,7 @@
       "path": "lib"
     },
     "name": "getEntry",
-    "order": 25,
+    "order": 19,
     "params": [
       {
         "type": {
@@ -687,7 +561,7 @@
       "path": "lib"
     },
     "name": "hasEntryErrorFor",
-    "order": 26,
+    "order": 20,
     "params": [
       {
         "type": {
@@ -721,7 +595,7 @@
       "path": "lib"
     },
     "name": "processEntry",
-    "order": 27,
+    "order": 21,
     "params": [
       {
         "type": {
@@ -755,7 +629,7 @@
       "path": "lib"
     },
     "name": "resetEntry",
-    "order": 28,
+    "order": 22,
     "scope": "static"
   },
   {
@@ -770,7 +644,7 @@
       "path": "lib"
     },
     "name": "setEntry",
-    "order": 29,
+    "order": 23,
     "params": [
       {
         "type": {
@@ -795,7 +669,7 @@
       "path": "lib"
     },
     "name": "setEntryErrors",
-    "order": 30,
+    "order": 24,
     "params": [
       {
         "type": {
@@ -820,7 +694,7 @@
       "path": "lib"
     },
     "name": "withFilter",
-    "order": 31,
+    "order": 25,
     "params": [
       {
         "type": {
@@ -856,7 +730,7 @@
       "path": "lib"
     },
     "name": "getFilter",
-    "order": 33,
+    "order": 27,
     "returns": [
       {
         "type": {
@@ -880,7 +754,7 @@
       "path": "lib"
     },
     "name": "setFilter",
-    "order": 34,
+    "order": 28,
     "params": [
       {
         "type": {
@@ -905,108 +779,7 @@
       "path": "lib"
     },
     "name": "setFilterByQ",
-    "order": 35,
-    "scope": "static"
-  },
-  {
-    "deprecated": true,
-    "description": "withForm mixin",
-    "id": "module:@the-/mixin-scene.withForm",
-    "kind": "function",
-    "longname": "module:@the-/mixin-scene.withForm",
-    "memberof": "module:@the-/mixin-scene",
-    "meta": {
-      "filename": "withForm.js",
-      "lineno": 2,
-      "path": "lib"
-    },
-    "name": "withForm",
-    "order": 36,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Class to mix",
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Mixed class"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "deprecated": true,
-    "description": "withHistory mixin",
-    "id": "module:@the-/mixin-scene.withHistory",
-    "kind": "function",
-    "longname": "module:@the-/mixin-scene.withHistory",
-    "memberof": "module:@the-/mixin-scene",
-    "meta": {
-      "filename": "withHistory.js",
-      "lineno": 2,
-      "path": "lib"
-    },
-    "name": "withHistory",
-    "order": 37,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Class to mix",
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Mixed class"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Replace history with query",
-    "id": "module:@the-/mixin-scene.withHistory~WithHistoryMixed.replaceHistoryByQuery",
-    "kind": "function",
-    "longname": "module:@the-/mixin-scene.withHistory~WithHistoryMixed.replaceHistoryByQuery",
-    "memberof": "module:@the-/mixin-scene.withHistory~WithHistoryMixed",
-    "meta": {
-      "filename": "withHistory.js",
-      "lineno": 29,
-      "path": "lib"
-    },
-    "name": "replaceHistoryByQuery",
-    "order": 39,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "nullable": true,
-        "description": "Query data",
-        "name": "query"
-      }
-    ],
+    "order": 29,
     "scope": "static"
   },
   {
@@ -1021,7 +794,7 @@
       "path": "lib"
     },
     "name": "withId",
-    "order": 40,
+    "order": 30,
     "params": [
       {
         "type": {
@@ -1057,7 +830,7 @@
       "path": "lib"
     },
     "name": "getId",
-    "order": 42,
+    "order": 32,
     "returns": [
       {
         "type": {
@@ -1083,7 +856,7 @@
       "path": "lib"
     },
     "name": "isKnownId",
-    "order": 43,
+    "order": 33,
     "params": [
       {
         "type": {
@@ -1117,7 +890,7 @@
       "path": "lib"
     },
     "name": "withLimit",
-    "order": 44,
+    "order": 34,
     "params": [
       {
         "type": {
@@ -1153,7 +926,7 @@
       "path": "lib"
     },
     "name": "getLimit",
-    "order": 46,
+    "order": 36,
     "returns": [
       {
         "type": {
@@ -1177,7 +950,7 @@
       "path": "lib"
     },
     "name": "nextLimit",
-    "order": 47,
+    "order": 37,
     "returns": [
       {
         "type": {
@@ -1201,7 +974,7 @@
       "path": "lib"
     },
     "name": "setLimit",
-    "order": 48,
+    "order": 38,
     "params": [
       {
         "type": {
@@ -1226,142 +999,7 @@
       "path": "lib"
     },
     "name": "updateToNextLimit",
-    "order": 49,
-    "scope": "static"
-  },
-  {
-    "description": "withLocation mixin",
-    "id": "module:@the-/mixin-scene.withLocation",
-    "kind": "function",
-    "longname": "module:@the-/mixin-scene.withLocation",
-    "memberof": "module:@the-/mixin-scene",
-    "meta": {
-      "filename": "withLocation.js",
-      "lineno": 2,
-      "path": "lib"
-    },
-    "name": "withLocation",
-    "order": 50,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Class to mix",
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Mixed class"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Change location to url",
-    "id": "module:@the-/mixin-scene.withLocation~WithLocationMixed.changeLocationTo",
-    "kind": "function",
-    "longname": "module:@the-/mixin-scene.withLocation~WithLocationMixed.changeLocationTo",
-    "memberof": "module:@the-/mixin-scene.withLocation~WithLocationMixed",
-    "meta": {
-      "filename": "withLocation.js",
-      "lineno": 29,
-      "path": "lib"
-    },
-    "name": "changeLocationTo",
-    "order": 52,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "name": "href"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Get location hash",
-    "id": "module:@the-/mixin-scene.withLocation~WithLocationMixed.getLocationHash",
-    "kind": "function",
-    "longname": "module:@the-/mixin-scene.withLocation~WithLocationMixed.getLocationHash",
-    "memberof": "module:@the-/mixin-scene.withLocation~WithLocationMixed",
-    "meta": {
-      "filename": "withLocation.js",
-      "lineno": 36,
-      "path": "lib"
-    },
-    "name": "getLocationHash",
-    "order": 53,
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        }
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Reload current location",
-    "id": "module:@the-/mixin-scene.withLocation~WithLocationMixed.reloadLocation",
-    "kind": "function",
-    "longname": "module:@the-/mixin-scene.withLocation~WithLocationMixed.reloadLocation",
-    "memberof": "module:@the-/mixin-scene.withLocation~WithLocationMixed",
-    "meta": {
-      "filename": "withLocation.js",
-      "lineno": 52,
-      "path": "lib"
-    },
-    "name": "reloadLocation",
-    "order": 54,
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<undefined>"
-          ]
-        }
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Set location hash",
-    "id": "module:@the-/mixin-scene.withLocation~WithLocationMixed.setLocationHash",
-    "kind": "function",
-    "longname": "module:@the-/mixin-scene.withLocation~WithLocationMixed.setLocationHash",
-    "memberof": "module:@the-/mixin-scene.withLocation~WithLocationMixed",
-    "meta": {
-      "filename": "withLocation.js",
-      "lineno": 62,
-      "path": "lib"
-    },
-    "name": "setLocationHash",
-    "order": 55,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Location hash to set",
-        "name": "hash"
-      }
-    ],
+    "order": 39,
     "scope": "static"
   },
   {
@@ -1376,7 +1014,7 @@
       "path": "lib"
     },
     "name": "withPage",
-    "order": 56,
+    "order": 40,
     "params": [
       {
         "type": {
@@ -1412,7 +1050,7 @@
       "path": "lib"
     },
     "name": "getPage",
-    "order": 58,
+    "order": 42,
     "returns": [
       {
         "type": {
@@ -1437,7 +1075,7 @@
       "path": "lib"
     },
     "name": "withQuery",
-    "order": 59,
+    "order": 43,
     "params": [
       {
         "type": {
@@ -1469,11 +1107,11 @@
     "memberof": "module:@the-/mixin-scene.withQuery~WithQueryMixed",
     "meta": {
       "filename": "withQuery.js",
-      "lineno": 32,
+      "lineno": 33,
       "path": "lib"
     },
     "name": "getQueryFromSearch",
-    "order": 61,
+    "order": 45,
     "params": [
       {
         "type": {
@@ -1505,11 +1143,11 @@
     "memberof": "module:@the-/mixin-scene.withQuery~WithQueryMixed",
     "meta": {
       "filename": "withQuery.js",
-      "lineno": 42,
+      "lineno": 43,
       "path": "lib"
     },
     "name": "mergeQueryToSearch",
-    "order": 62,
+    "order": 46,
     "params": [
       {
         "type": {
@@ -1530,11 +1168,11 @@
     "memberof": "module:@the-/mixin-scene.withQuery~WithQueryMixed",
     "meta": {
       "filename": "withQuery.js",
-      "lineno": 71,
+      "lineno": 72,
       "path": "lib"
     },
     "name": "queryWithSearch",
-    "order": 63,
+    "order": 47,
     "params": [
       {
         "type": {
@@ -1569,7 +1207,7 @@
       "path": "lib"
     },
     "name": "withReady",
-    "order": 64,
+    "order": 48,
     "params": [
       {
         "type": {
@@ -1605,7 +1243,7 @@
       "path": "lib"
     },
     "name": "ifReady",
-    "order": 66,
+    "order": 50,
     "params": [
       {
         "type": {
@@ -1639,7 +1277,7 @@
       "path": "lib"
     },
     "name": "readyWhen",
-    "order": 68,
+    "order": 52,
     "params": [
       {
         "type": {
@@ -1673,7 +1311,7 @@
       "path": "lib"
     },
     "name": "unlessReady",
-    "order": 69,
+    "order": 53,
     "params": [
       {
         "type": {
@@ -1707,7 +1345,7 @@
       "path": "lib"
     },
     "name": "withResult",
-    "order": 70,
+    "order": 54,
     "params": [
       {
         "type": {
@@ -1743,7 +1381,7 @@
       "path": "lib"
     },
     "name": "resultFor",
-    "order": 72,
+    "order": 56,
     "params": [
       {
         "type": {
@@ -1778,167 +1416,7 @@
       "path": "lib"
     },
     "name": "withSort",
-    "order": 73,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Class to mix",
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Mixed class"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "withTargets mixin",
-    "id": "module:@the-/mixin-scene.withTargets",
-    "kind": "function",
-    "longname": "module:@the-/mixin-scene.withTargets",
-    "memberof": "module:@the-/mixin-scene",
-    "meta": {
-      "filename": "withTargets.js",
-      "lineno": 2,
-      "path": "lib"
-    },
-    "name": "withTargets",
-    "order": 75,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Class to mix",
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Mixed class"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Add targets",
-    "id": "module:@the-/mixin-scene.withTargets~WithTargetsMixed.addTargets",
-    "kind": "function",
-    "longname": "module:@the-/mixin-scene.withTargets~WithTargetsMixed.addTargets",
-    "memberof": "module:@the-/mixin-scene.withTargets~WithTargetsMixed",
-    "meta": {
-      "filename": "withTargets.js",
-      "lineno": 28,
-      "path": "lib"
-    },
-    "name": "addTargets",
-    "order": 77,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "Array"
-          ]
-        },
-        "name": "targets"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Get ids of target",
-    "id": "module:@the-/mixin-scene.withTargets~WithTargetsMixed.getTargetIds",
-    "kind": "function",
-    "longname": "module:@the-/mixin-scene.withTargets~WithTargetsMixed.getTargetIds",
-    "memberof": "module:@the-/mixin-scene.withTargets~WithTargetsMixed",
-    "meta": {
-      "filename": "withTargets.js",
-      "lineno": 39,
-      "path": "lib"
-    },
-    "name": "getTargetIds",
-    "order": 78,
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Array.<string>"
-          ]
-        }
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Get refs of target",
-    "id": "module:@the-/mixin-scene.withTargets~WithTargetsMixed.getTargetRefs",
-    "kind": "function",
-    "longname": "module:@the-/mixin-scene.withTargets~WithTargetsMixed.getTargetRefs",
-    "memberof": "module:@the-/mixin-scene.withTargets~WithTargetsMixed",
-    "meta": {
-      "filename": "withTargets.js",
-      "lineno": 48,
-      "path": "lib"
-    },
-    "name": "getTargetRefs",
-    "order": 79,
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Array.<string>"
-          ]
-        }
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Get target values",
-    "id": "module:@the-/mixin-scene.withTargets~WithTargetsMixed.getTargets",
-    "kind": "function",
-    "longname": "module:@the-/mixin-scene.withTargets~WithTargetsMixed.getTargets",
-    "memberof": "module:@the-/mixin-scene.withTargets~WithTargetsMixed",
-    "meta": {
-      "filename": "withTargets.js",
-      "lineno": 56,
-      "path": "lib"
-    },
-    "name": "getTargets",
-    "order": 80,
-    "scope": "static"
-  },
-  {
-    "description": "withValues mixin",
-    "id": "module:@the-/mixin-scene.withValues",
-    "kind": "function",
-    "longname": "module:@the-/mixin-scene.withValues",
-    "memberof": "module:@the-/mixin-scene",
-    "meta": {
-      "filename": "withValues.js",
-      "lineno": 2,
-      "path": "lib"
-    },
-    "name": "withValues",
-    "order": 81,
+    "order": 57,
     "params": [
       {
         "type": {
@@ -1974,7 +1452,7 @@
       "path": "lib/helpers"
     },
     "name": "asClassMixin",
-    "order": 82,
+    "order": 59,
     "scope": "static"
   },
   {
@@ -1989,7 +1467,7 @@
       "path": "lib/helpers"
     },
     "name": "asMethodWrap",
-    "order": 83,
+    "order": 60,
     "scope": "static"
   },
   {
@@ -2003,7 +1481,7 @@
       "path": "lib/helpers"
     },
     "name": "injectProperties",
-    "order": 85,
+    "order": 62,
     "params": [
       {
         "type": {
@@ -2027,20 +1505,6 @@
     "scope": "static"
   },
   {
-    "id": "module:@the-/mixin-scene.siteToast~SiteToastMixed",
-    "kind": "class",
-    "longname": "module:@the-/mixin-scene.siteToast~SiteToastMixed",
-    "memberof": "module:@the-/mixin-scene.siteToast",
-    "meta": {
-      "filename": "siteToast.js",
-      "lineno": 9,
-      "path": "lib"
-    },
-    "name": "SiteToastMixed",
-    "order": 4,
-    "scope": "inner"
-  },
-  {
     "id": "module:@the-/mixin-scene.withBusy~WithBusyMixed",
     "kind": "class",
     "longname": "module:@the-/mixin-scene.withBusy~WithBusyMixed",
@@ -2051,7 +1515,7 @@
       "path": "lib"
     },
     "name": "WithBusyMixed",
-    "order": 10,
+    "order": 4,
     "scope": "inner"
   },
   {
@@ -2061,11 +1525,11 @@
     "memberof": "module:@the-/mixin-scene.withEntities",
     "meta": {
       "filename": "withEntities.js",
-      "lineno": 9,
+      "lineno": 10,
       "path": "lib"
     },
     "name": "WithEntities",
-    "order": 16,
+    "order": 10,
     "scope": "inner"
   },
   {
@@ -2079,7 +1543,7 @@
       "path": "lib"
     },
     "name": "WithEntryMixed",
-    "order": 24,
+    "order": 18,
     "scope": "inner"
   },
   {
@@ -2093,21 +1557,7 @@
       "path": "lib"
     },
     "name": "WithFilterMixed",
-    "order": 32,
-    "scope": "inner"
-  },
-  {
-    "id": "module:@the-/mixin-scene.withHistory~WithHistoryMixed",
-    "kind": "class",
-    "longname": "module:@the-/mixin-scene.withHistory~WithHistoryMixed",
-    "memberof": "module:@the-/mixin-scene.withHistory",
-    "meta": {
-      "filename": "withHistory.js",
-      "lineno": 10,
-      "path": "lib"
-    },
-    "name": "WithHistoryMixed",
-    "order": 38,
+    "order": 26,
     "scope": "inner"
   },
   {
@@ -2121,7 +1571,7 @@
       "path": "lib"
     },
     "name": "WithHistoryMixed",
-    "order": 41,
+    "order": 31,
     "scope": "inner"
   },
   {
@@ -2135,21 +1585,7 @@
       "path": "lib"
     },
     "name": "WithLimitMixed",
-    "order": 45,
-    "scope": "inner"
-  },
-  {
-    "id": "module:@the-/mixin-scene.withLocation~WithLocationMixed",
-    "kind": "class",
-    "longname": "module:@the-/mixin-scene.withLocation~WithLocationMixed",
-    "memberof": "module:@the-/mixin-scene.withLocation",
-    "meta": {
-      "filename": "withLocation.js",
-      "lineno": 9,
-      "path": "lib"
-    },
-    "name": "WithLocationMixed",
-    "order": 51,
+    "order": 35,
     "scope": "inner"
   },
   {
@@ -2163,7 +1599,7 @@
       "path": "lib"
     },
     "name": "WithPageMixed",
-    "order": 57,
+    "order": 41,
     "scope": "inner"
   },
   {
@@ -2173,11 +1609,11 @@
     "memberof": "module:@the-/mixin-scene.withQuery",
     "meta": {
       "filename": "withQuery.js",
-      "lineno": 10,
+      "lineno": 11,
       "path": "lib"
     },
     "name": "WithQueryMixed",
-    "order": 60,
+    "order": 44,
     "scope": "inner"
   },
   {
@@ -2191,7 +1627,7 @@
       "path": "lib"
     },
     "name": "WithReadyMixed",
-    "order": 65,
+    "order": 49,
     "scope": "inner"
   },
   {
@@ -2205,7 +1641,7 @@
       "path": "lib"
     },
     "name": "WithResultMixed",
-    "order": 71,
+    "order": 55,
     "scope": "inner"
   },
   {
@@ -2219,21 +1655,7 @@
       "path": "lib"
     },
     "name": "WithSortMixed",
-    "order": 74,
-    "scope": "inner"
-  },
-  {
-    "id": "module:@the-/mixin-scene.withTargets~WithTargetsMixed",
-    "kind": "class",
-    "longname": "module:@the-/mixin-scene.withTargets~WithTargetsMixed",
-    "memberof": "module:@the-/mixin-scene.withTargets",
-    "meta": {
-      "filename": "withTargets.js",
-      "lineno": 9,
-      "path": "lib"
-    },
-    "name": "WithTargetsMixed",
-    "order": 76,
+    "order": 58,
     "scope": "inner"
   }
 ]

@@ -4,15 +4,21 @@
  * @license MIT
  * @module @the-/util-client
  * @typicalname utilClient
- * @version 15.4.8
+ * @version 15.5.0
  */
 'use strict'
 
+const createFormData_ = require('./createFormData')
 const readFile_ = require('./readFile')
+const sendForm_ = require('./sendForm')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
+exports.createFormData = createFormData_
 exports.readFile = readFile_
+exports.sendForm = sendForm_
 
 module.exports = {
+  createFormData: createFormData_,
   readFile: readFile_,
+  sendForm: sendForm_,
 }

@@ -4,7 +4,7 @@
  * @license MIT
  * @module @the-/lint
  * @typicalname lint
- * @version 15.4.19
+ * @version 15.4.20
  */
 'use strict'
 

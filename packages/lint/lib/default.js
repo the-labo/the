@@ -5,6 +5,7 @@
  * @function default
  */
 const create = require('./create')
+const rules = require('./rules')
 const TheLint = require('./TheLint')
 
 const lib = create.bind(create)
@@ -16,4 +17,5 @@ exports.create = create
 module.exports = Object.assign(lib, {
   TheLint,
   create,
+  rules,
 })

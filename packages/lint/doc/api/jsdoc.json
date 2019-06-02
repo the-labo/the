@@ -13,7 +13,7 @@
     "name": "@the-/lint",
     "order": 2,
     "typicalname": "lint",
-    "version": "15.4.19"
+    "version": "15.4.20"
   },
   {
     "description": "Lint runner",

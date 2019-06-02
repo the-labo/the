@@ -1,13 +1,14 @@
 'use strict'
 /**
  * Read file as array buffer
+ * @memberof module:@the-/util-client
  * @function readFile
  * @param {File} file - File to read
  * @returns {Promise<ArrayBuffer>} - Array buffer
  */
 const { get } = require('@the-/window')
 
-/** @lends readFile */
+/** @lends module:@the-/util-client.1readFile */
 async function readFile(file) {
   const FileReader = get('window.FileReader')
   if (!FileReader) {
