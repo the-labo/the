@@ -13,7 +13,7 @@
     "name": "@the-/rtc",
     "order": 2,
     "typicalname": "rtc",
-    "version": "15.4.7"
+    "version": "15.4.12"
   },
   {
     "id": "module:@the-/rtc.TheRTC()",
@@ -116,7 +116,7 @@
     "longname": "SFUProxy",
     "memberof": "SFUProxy",
     "name": "SFUProxy",
-    "order": 19
+    "order": 18
   },
   {
     "id": "SFUProxy",
@@ -128,7 +128,7 @@
       "path": "lib/sfu"
     },
     "name": "SFUProxy",
-    "order": 18,
+    "order": 17,
     "scope": "global"
   },
   {
@@ -141,7 +141,7 @@
       "path": "lib/sfu"
     },
     "name": "SFUProxyEdge",
-    "order": 20,
+    "order": 19,
     "scope": "global"
   },
   {
@@ -157,7 +157,7 @@
       "path": "lib/sfu"
     },
     "name": "SFUProxyEdgeAnswerer",
-    "order": 21,
+    "order": 20,
     "scope": "global"
   },
   {
@@ -173,7 +173,7 @@
       "path": "lib/sfu"
     },
     "name": "SFUProxyEdgeOfferer",
-    "order": 22,
+    "order": 21,
     "scope": "global"
   },
   {
@@ -186,7 +186,7 @@
       "path": "lib/sfu"
     },
     "name": "SFUProxyPool",
-    "order": 23,
+    "order": 22,
     "scope": "global"
   },
   {
@@ -513,41 +513,6 @@
     },
     "name": "sfuMix",
     "order": 16,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Class"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Mixin for turn",
-    "id": "module:@the-/rtc.mixins.turnMix",
-    "kind": "function",
-    "longname": "module:@the-/rtc.mixins.turnMix",
-    "memberof": "module:@the-/rtc.mixins",
-    "meta": {
-      "filename": "turnMix.js",
-      "lineno": 2,
-      "path": "lib/mixins"
-    },
-    "name": "turnMix",
-    "order": 17,
     "params": [
       {
         "type": {

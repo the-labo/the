@@ -120,7 +120,6 @@ tryExample().catch((err) => console.error(err))
 - module:@the-/rtc.mixins
   - [.ioMix(Class)](./doc/api/api.md#module_@the-/rtc.mixins.ioMix)
   - [.sfuMix(Class)](./doc/api/api.md#module_@the-/rtc.mixins.sfuMix)
-  - [.turnMix(Class)](./doc/api/api.md#module_@the-/rtc.mixins.turnMix)
 
 See [API Guide](./doc/api/api.md) for more detail
 

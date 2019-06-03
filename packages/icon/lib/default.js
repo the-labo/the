@@ -7,6 +7,7 @@
  */
 const create = require('./create')
 const TheIcon = require('./TheIcon')
+const Themes = require('./Themes')
 
 const lib = create.bind(create)
 
@@ -15,6 +16,7 @@ module.exports = Object.assign(
   /** @lends module:@the-/icon.icon */
   {
     TheIcon,
+    Themes,
     create,
   },
 )

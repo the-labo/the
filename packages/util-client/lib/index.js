@@ -4,7 +4,7 @@
  * @license MIT
  * @module @the-/util-client
  * @typicalname utilClient
- * @version 15.6.1
+ * @version 15.6.2
  */
 'use strict'
 

@@ -36,7 +36,7 @@
 ## @the-/rtc
 RTC server for the-frameworks
 
-**Version**: 15.4.7  
+**Version**: 15.4.12  
 **License**: MIT  
 
 * [@the-/rtc](#module_@the-/rtc)
@@ -53,7 +53,6 @@ RTC server for the-frameworks
     * [.mixins](#module_@the-/rtc.mixins) : <code>object</code>
         * [.ioMix(Class)](#module_@the-/rtc.mixins.ioMix) ⇒ <code>function</code>
         * [.sfuMix(Class)](#module_@the-/rtc.mixins.sfuMix) ⇒ <code>function</code>
-        * [.turnMix(Class)](#module_@the-/rtc.mixins.turnMix) ⇒ <code>function</code>
     * [.create(...args)](#module_@the-/rtc.create) ⇒ <code>TheRTC</code>
     * [.default()](#module_@the-/rtc.default)
 
@@ -154,7 +153,6 @@ Class mixins
 * [.mixins](#module_@the-/rtc.mixins) : <code>object</code>
     * [.ioMix(Class)](#module_@the-/rtc.mixins.ioMix) ⇒ <code>function</code>
     * [.sfuMix(Class)](#module_@the-/rtc.mixins.sfuMix) ⇒ <code>function</code>
-    * [.turnMix(Class)](#module_@the-/rtc.mixins.turnMix) ⇒ <code>function</code>
 
 <a name="module_@the-/rtc.mixins.ioMix"></a>
 
@@ -172,18 +170,6 @@ Mixin for io
 
 #### mixins.sfuMix(Class) ⇒ <code>function</code>
 Mixin for sfu
-
-**Kind**: static method of [<code>mixins</code>](#module_@the-/rtc.mixins)  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-<a name="module_@the-/rtc.mixins.turnMix"></a>
-
-#### mixins.turnMix(Class) ⇒ <code>function</code>
-Mixin for turn
 
 **Kind**: static method of [<code>mixins</code>](#module_@the-/rtc.mixins)  
 **Returns**: <code>function</code> - Class  

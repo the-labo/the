@@ -20,7 +20,13 @@ async function sendForm(url, values, options = {}) {
     body,
     method,
   })
-  return response.json()
+  const type = response.headers.get('content-type')
+  const isJSON = /json/.test(type)
+  if (isJSON) {
+    return response.json()
+  } else {
+    return response.text()
+  }
 }
 
 module.exports = sendForm

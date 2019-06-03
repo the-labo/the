@@ -13,7 +13,7 @@
     "name": "@the-/util-client",
     "order": 1,
     "typicalname": "utilClient",
-    "version": "15.6.1"
+    "version": "15.6.2"
   },
   {
     "description": "Create from data from object",

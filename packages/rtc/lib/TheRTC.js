@@ -68,15 +68,27 @@ class TheRTC extends TheRTCBase {
       ...[]
         .concat(this.turnConfig)
         .filter(Boolean)
-        .map(({ expiry = 86400, secret, url = [], urls = [] }) => {
-          const { credential, username } = parseTurnSecret(secret, expiry)
-          return {
-            credential,
-            expiry,
-            urls: [].concat(url, urls),
-            username,
-          }
-        }),
+        .map(
+          ({ expiry = 86400, password, secret, url = [], urls, username }) => {
+            if (urls) {
+              console.warn('[TheRTC] "urls" is deprecated. Use "url" instead.')
+              url = [].concat(url, urls).filter(Boolean)
+            }
+            const hasSecret = !!secret
+            if (hasSecret) {
+              // Dynamic credential
+              const { credential, username } = parseTurnSecret(secret, expiry)
+              return {
+                credential,
+                expiry,
+                urls: [].concat(url),
+                username,
+              }
+            } else {
+              return { credential: password, urls: [].concat(url), username }
+            }
+          },
+        ),
     ]
     this.registerIO(io, { iceServers })
     await new Promise((resolve, reject) =>
