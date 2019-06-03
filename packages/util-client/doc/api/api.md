@@ -5,7 +5,7 @@
 ## @the-/util-client
 Utility for client side
 
-**Version**: 15.6.0  
+**Version**: 15.6.1  
 **License**: MIT  
 
 * [@the-/util-client](#module_@the-/util-client)
