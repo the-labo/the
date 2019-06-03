@@ -4,3 +4,4 @@ module.exports = {
   foo2: 'This is foo',
   hoge: '/hoge',
 }
+

@@ -4,20 +4,12 @@
  */
 'use strict'
 
-const sendForm = require('../lib/sendForm')
-
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('send-form', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-    
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

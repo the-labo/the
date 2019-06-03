@@ -4,7 +4,7 @@
  * @license MIT
  * @module @the-/mixin-scene
  * @typicalname mixinScene
- * @version 17.1.2
+ * @version 17.1.4
  */
 'use strict'
 
@@ -15,7 +15,6 @@ const withBusy_ = require('./withBusy')
 const withEntities_ = require('./withEntities')
 const withEntry_ = require('./withEntry')
 const withFilter_ = require('./withFilter')
-const withId_ = require('./withId')
 const withLimit_ = require('./withLimit')
 const withPage_ = require('./withPage')
 const withQuery_ = require('./withQuery')
@@ -31,7 +30,6 @@ exports.withBusy = withBusy_
 exports.withEntities = withEntities_
 exports.withEntry = withEntry_
 exports.withFilter = withFilter_
-exports.withId = withId_
 exports.withLimit = withLimit_
 exports.withPage = withPage_
 exports.withQuery = withQuery_
@@ -47,7 +45,6 @@ module.exports = {
   withEntities: withEntities_,
   withEntry: withEntry_,
   withFilter: withFilter_,
-  withId: withId_,
   withLimit: withLimit_,
   withPage: withPage_,
   withQuery: withQuery_,

@@ -66,10 +66,12 @@ const withQuery = asClassMixin((Class) => {
       },
       /**
        * Query with search
+       * @deprecated
        * @param {string} search - Location search string
        * @returns {Object}
        */
       queryWithSearch(search) {
+        console.warn('queryWithSearch is now deprecated')
         return qs.parse(search, { ignoreQueryPrefix: true })
       },
     },

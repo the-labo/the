@@ -4,11 +4,11 @@
  * @class TheScene
  */
 const asobj = require('asobj')
-const { errorMix, goMix, subMix } = require('./mixins')
+const { errorMix, goMix } = require('./mixins')
 
 const { cleanup } = asobj
 
-const TheSceneMixed = [errorMix, goMix, subMix].reduce(
+const TheSceneMixed = [errorMix, goMix].reduce(
   (Clazz, mix) => mix(Clazz),
   class Root {},
 )
@@ -35,11 +35,6 @@ class TheScene extends TheSceneMixed {
    */
   get scope() {
     return null
-  }
-
-  /** Alias for `this.subFor` */
-  for(...args) {
-    return this.subFor(...args)
   }
 
   /** Alias for `this.scope.get` */

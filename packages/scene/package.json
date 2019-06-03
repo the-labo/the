@@ -1,7 +1,7 @@
 {
   "name": "@the-/scene",
   "description": "Base class of the-scene",
-  "version": "15.4.8",
+  "version": "16.0.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,9 +14,9 @@
   "dependencies": {
     "@the-/error": "^15.4.0",
     "@the-/url": "^15.4.4",
+    "@the-/window": "^15.5.0",
     "asleep": "^1.0.3",
     "asobj": "^3.0.1",
-    "bwindow": "^2.0.3",
     "objnest": "^5.0.6",
     "qs": "^6.7.0"
   },

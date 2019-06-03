@@ -100,7 +100,6 @@ tryExample().catch((err) => console.error(err))
   - [.withEntities(Class)](./doc/api/api.md#module_@the-/mixin-scene.withEntities)
   - [.withEntry(Class)](./doc/api/api.md#module_@the-/mixin-scene.withEntry)
   - [.withFilter(Class)](./doc/api/api.md#module_@the-/mixin-scene.withFilter)
-  - [.withHistory(Class)](./doc/api/api.md#module_@the-/mixin-scene.withHistory)
   - [.withId(Class)](./doc/api/api.md#module_@the-/mixin-scene.withId)
   - [.withLimit(Class)](./doc/api/api.md#module_@the-/mixin-scene.withLimit)
   - [.withPage(Class)](./doc/api/api.md#module_@the-/mixin-scene.withPage)
@@ -143,10 +142,6 @@ tryExample().catch((err) => console.error(err))
   - [.getFilter()](./doc/api/api.md#module_@the-/mixin-scene.withFilter~WithFilterMixed.getFilter)
   - [.setFilter(filter)](./doc/api/api.md#module_@the-/mixin-scene.withFilter~WithFilterMixed.setFilter)
   - [.setFilterByQ()](./doc/api/api.md#module_@the-/mixin-scene.withFilter~WithFilterMixed.setFilterByQ)
-- module:@the-/mixin-scene.withHistory
-  - [~WithHistoryMixed](./doc/api/api.md#module_@the-/mixin-scene.withHistory~WithHistoryMixed)
-- module:@the-/mixin-scene.withHistory~WithHistoryMixed
-  - [.replaceHistoryByQuery(query)](./doc/api/api.md#module_@the-/mixin-scene.withHistory~WithHistoryMixed.replaceHistoryByQuery)
 - module:@the-/mixin-scene.withId
   - [~WithHistoryMixed](./doc/api/api.md#module_@the-/mixin-scene.withId~WithHistoryMixed)
 - module:@the-/mixin-scene.withId~WithHistoryMixed

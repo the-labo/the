@@ -54,6 +54,20 @@ describe('usage-rule', () => {
     ok(reported[0])
     equal(reported[0][1].keys[0], 'msg.SOME_MESSAGE_3')
   })
+
+  it('Methods used in', async () => {
+    const reported = []
+    const filename = require.resolve('../misc/mocks/mock-class.js')
+
+    await usageRule({
+      methodsUsedIn: `${path.dirname(filename)}/*.*`,
+    })({
+      content: fs.readFileSync(filename),
+      filename,
+      report: (...args) => reported.push(args),
+    })
+    ok(reported[0])
+  })
 })
 
 /* global describe, before, after, it */

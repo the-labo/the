@@ -5,11 +5,12 @@
 ## @the-/util-client
 Utility for client side
 
-**Version**: 15.5.0  
+**Version**: 15.6.0  
 **License**: MIT  
 
 * [@the-/util-client](#module_@the-/util-client)
     * [.createFormData(values)](#module_@the-/util-client.createFormData) ⇒ <code>FormData</code>
+    * [.queryWithSearch()](#module_@the-/util-client.queryWithSearch)
     * [.readFile(file)](#module_@the-/util-client.readFile) ⇒ <code>Promise.&lt;ArrayBuffer&gt;</code>
     * [.sendForm(url, values, [options])](#module_@the-/util-client.sendForm)
 
@@ -24,6 +25,10 @@ Create from data from object
 | --- | --- | --- |
 | values | <code>Object</code> | Form data object |
 
+<a name="module_@the-/util-client.queryWithSearch"></a>
+
+### utilClient.queryWithSearch()
+**Kind**: static method of [<code>@the-/util-client</code>](#module_@the-/util-client)  
 <a name="module_@the-/util-client.readFile"></a>
 
 ### utilClient.readFile(file) ⇒ <code>Promise.&lt;ArrayBuffer&gt;</code>

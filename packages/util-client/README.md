@@ -86,8 +86,10 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 
-- global
-  - [readFile(file)](./doc/api/api.md#readFile)
+- module:@the-/util-client
+  - [.createFormData(values)](./doc/api/api.md#module_@the-/util-client.createFormData)
+  - [.readFile(file)](./doc/api/api.md#module_@the-/util-client.readFile)
+  - [.sendForm(url,values,options)](./doc/api/api.md#module_@the-/util-client.sendForm)
 
 See [API Guide](./doc/api/api.md) for more detail
 

@@ -13,6 +13,11 @@ const { readFileAsync } = require('asfs')
 const { flatten } = require('objnest')
 const path = require('path')
 const stringcase = require('stringcase')
+const {
+  constants: { NodeTypes },
+  finder,
+  parse,
+} = require('@the-/ast')
 
 const transformFuncFor = (name) => {
   if (!stringcase[name]) {
@@ -27,6 +32,7 @@ function usageRule(config) {
     flattenKeysUsedIn = null,
     ignore = '**/node_modules/**',
     keysUsedIn = null,
+    methodsUsedIn = null,
     transform = null,
     usedIn = null,
     ...rest
@@ -100,6 +106,32 @@ function usageRule(config) {
           module: moduleName,
           where: path.resolve(filename),
         })
+    }
+
+    if (methodsUsedIn) {
+      const src = String(await readFileAsync(path.resolve(filename)))
+      const Classes = finder.findByTypes(parse(src), [
+        NodeTypes.ClassDeclaration,
+      ])
+      for (const Class of Classes) {
+        const ClassMethods = finder.findByTypes(Class, [NodeTypes.ClassMethod])
+        const ClassMethodNames = ClassMethods.map(
+          (ClassMethod) => ClassMethod.key && ClassMethod.key.name,
+        ).filter(Boolean)
+        const unusedNames = await findUnusedName(
+          ClassMethodNames,
+          methodsUsedIn,
+        )
+        const ok = unusedNames.length === 0
+        !ok &&
+          report('Class method not used in anywhere', {
+            actual: false,
+            expect: methodsUsedIn,
+            keys: unusedNames,
+            module: moduleName,
+            where: path.resolve(filename),
+          })
+      }
     }
   }
 }

@@ -13,7 +13,7 @@
     "name": "@the-/util-client",
     "order": 1,
     "typicalname": "utilClient",
-    "version": "15.5.0"
+    "version": "15.6.0"
   },
   {
     "description": "Create from data from object",
@@ -51,6 +51,20 @@
     "scope": "static"
   },
   {
+    "id": "module:@the-/util-client.queryWithSearch",
+    "kind": "function",
+    "longname": "module:@the-/util-client.queryWithSearch",
+    "memberof": "module:@the-/util-client",
+    "meta": {
+      "filename": "queryWithSearch.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "queryWithSearch",
+    "order": 2,
+    "scope": "static"
+  },
+  {
     "description": "Read file as array buffer",
     "id": "module:@the-/util-client.readFile",
     "kind": "function",
@@ -62,7 +76,7 @@
       "path": "lib"
     },
     "name": "readFile",
-    "order": 2,
+    "order": 3,
     "params": [
       {
         "type": {
@@ -98,7 +112,7 @@
       "path": "lib"
     },
     "name": "sendForm",
-    "order": 3,
+    "order": 4,
     "params": [
       {
         "type": {

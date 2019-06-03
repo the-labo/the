@@ -5,7 +5,7 @@
 ## @the-/mixin-scene
 Mixins for the-scene
 
-**Version**: 17.1.2  
+**Version**: 17.1.4  
 **License**: MIT  
 
 * [@the-/mixin-scene](#module_@the-/mixin-scene)
@@ -38,10 +38,6 @@ Mixins for the-scene
             * [.getFilter()](#module_@the-/mixin-scene.withFilter..WithFilterMixed.getFilter) ⇒ <code>Object</code>
             * [.setFilter(filter)](#module_@the-/mixin-scene.withFilter..WithFilterMixed.setFilter)
             * [.setFilterByQ()](#module_@the-/mixin-scene.withFilter..WithFilterMixed.setFilterByQ)
-    * [.withId(Class)](#module_@the-/mixin-scene.withId) ⇒ <code>function</code>
-        * [~WithHistoryMixed](#module_@the-/mixin-scene.withId..WithHistoryMixed)
-            * [.getId()](#module_@the-/mixin-scene.withId..WithHistoryMixed.getId) ⇒ <code>string</code>
-            * [.isKnownId(id)](#module_@the-/mixin-scene.withId..WithHistoryMixed.isKnownId) ⇒ <code>boolean</code>
     * [.withLimit(Class)](#module_@the-/mixin-scene.withLimit) ⇒ <code>function</code>
         * [~WithLimitMixed](#module_@the-/mixin-scene.withLimit..WithLimitMixed)
             * [.getLimit()](#module_@the-/mixin-scene.withLimit..WithLimitMixed.getLimit) ⇒ <code>number</code>
@@ -54,7 +50,7 @@ Mixins for the-scene
         * [~WithQueryMixed](#module_@the-/mixin-scene.withQuery..WithQueryMixed)
             * [.getQueryFromSearch([search])](#module_@the-/mixin-scene.withQuery..WithQueryMixed.getQueryFromSearch) ⇒ <code>Object</code>
             * [.mergeQueryToSearch(query)](#module_@the-/mixin-scene.withQuery..WithQueryMixed.mergeQueryToSearch)
-            * [.queryWithSearch(search)](#module_@the-/mixin-scene.withQuery..WithQueryMixed.queryWithSearch) ⇒ <code>Object</code>
+            * ~~[.queryWithSearch(search)](#module_@the-/mixin-scene.withQuery..WithQueryMixed.queryWithSearch) ⇒ <code>Object</code>~~
     * [.withReady(Class)](#module_@the-/mixin-scene.withReady) ⇒ <code>function</code>
         * [~WithReadyMixed](#module_@the-/mixin-scene.withReady..WithReadyMixed)
             * [.isReady](#module_@the-/mixin-scene.withReady..WithReadyMixed.isReady)
@@ -379,51 +375,6 @@ Set filter
 Set filters by q
 
 **Kind**: static method of [<code>WithFilterMixed</code>](#module_@the-/mixin-scene.withFilter..WithFilterMixed)  
-<a name="module_@the-/mixin-scene.withId"></a>
-
-### mixinScene.withId(Class) ⇒ <code>function</code>
-withId mixin
-
-**Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
-
-* [.withId(Class)](#module_@the-/mixin-scene.withId) ⇒ <code>function</code>
-    * [~WithHistoryMixed](#module_@the-/mixin-scene.withId..WithHistoryMixed)
-        * [.getId()](#module_@the-/mixin-scene.withId..WithHistoryMixed.getId) ⇒ <code>string</code>
-        * [.isKnownId(id)](#module_@the-/mixin-scene.withId..WithHistoryMixed.isKnownId) ⇒ <code>boolean</code>
-
-<a name="module_@the-/mixin-scene.withId..WithHistoryMixed"></a>
-
-#### withId~WithHistoryMixed
-**Kind**: inner class of [<code>withId</code>](#module_@the-/mixin-scene.withId)  
-
-* [~WithHistoryMixed](#module_@the-/mixin-scene.withId..WithHistoryMixed)
-    * [.getId()](#module_@the-/mixin-scene.withId..WithHistoryMixed.getId) ⇒ <code>string</code>
-    * [.isKnownId(id)](#module_@the-/mixin-scene.withId..WithHistoryMixed.isKnownId) ⇒ <code>boolean</code>
-
-<a name="module_@the-/mixin-scene.withId..WithHistoryMixed.getId"></a>
-
-##### WithHistoryMixed.getId() ⇒ <code>string</code>
-Get id
-
-**Kind**: static method of [<code>WithHistoryMixed</code>](#module_@the-/mixin-scene.withId..WithHistoryMixed)  
-**Returns**: <code>string</code> - id  
-<a name="module_@the-/mixin-scene.withId..WithHistoryMixed.isKnownId"></a>
-
-##### WithHistoryMixed.isKnownId(id) ⇒ <code>boolean</code>
-Check if the id is known
-
-**Kind**: static method of [<code>WithHistoryMixed</code>](#module_@the-/mixin-scene.withId..WithHistoryMixed)  
-
-| Param | Type |
-| --- | --- |
-| id | <code>string</code> | 
-
 <a name="module_@the-/mixin-scene.withLimit"></a>
 
 ### mixinScene.withLimit(Class) ⇒ <code>function</code>
@@ -519,7 +470,7 @@ withQuery mixin
     * [~WithQueryMixed](#module_@the-/mixin-scene.withQuery..WithQueryMixed)
         * [.getQueryFromSearch([search])](#module_@the-/mixin-scene.withQuery..WithQueryMixed.getQueryFromSearch) ⇒ <code>Object</code>
         * [.mergeQueryToSearch(query)](#module_@the-/mixin-scene.withQuery..WithQueryMixed.mergeQueryToSearch)
-        * [.queryWithSearch(search)](#module_@the-/mixin-scene.withQuery..WithQueryMixed.queryWithSearch) ⇒ <code>Object</code>
+        * ~~[.queryWithSearch(search)](#module_@the-/mixin-scene.withQuery..WithQueryMixed.queryWithSearch) ⇒ <code>Object</code>~~
 
 <a name="module_@the-/mixin-scene.withQuery..WithQueryMixed"></a>
 
@@ -529,7 +480,7 @@ withQuery mixin
 * [~WithQueryMixed](#module_@the-/mixin-scene.withQuery..WithQueryMixed)
     * [.getQueryFromSearch([search])](#module_@the-/mixin-scene.withQuery..WithQueryMixed.getQueryFromSearch) ⇒ <code>Object</code>
     * [.mergeQueryToSearch(query)](#module_@the-/mixin-scene.withQuery..WithQueryMixed.mergeQueryToSearch)
-    * [.queryWithSearch(search)](#module_@the-/mixin-scene.withQuery..WithQueryMixed.queryWithSearch) ⇒ <code>Object</code>
+    * ~~[.queryWithSearch(search)](#module_@the-/mixin-scene.withQuery..WithQueryMixed.queryWithSearch) ⇒ <code>Object</code>~~
 
 <a name="module_@the-/mixin-scene.withQuery..WithQueryMixed.getQueryFromSearch"></a>
 
@@ -555,7 +506,9 @@ Merge additional query into search
 
 <a name="module_@the-/mixin-scene.withQuery..WithQueryMixed.queryWithSearch"></a>
 
-##### WithQueryMixed.queryWithSearch(search) ⇒ <code>Object</code>
+##### ~~WithQueryMixed.queryWithSearch(search) ⇒ <code>Object</code>~~
+***Deprecated***
+
 Query with search
 
 **Kind**: static method of [<code>WithQueryMixed</code>](#module_@the-/mixin-scene.withQuery..WithQueryMixed)  
