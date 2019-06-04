@@ -10,6 +10,22 @@ const { get } = require('@the-/window')
 
 /** @lends module:@the-/media.TheMedia */
 class TheMedia {
+  static async applyTrackConstraints(track, constraint) {
+    switch (typeof constraint) {
+      case 'boolean': {
+        track.enabled = Boolean(constraint)
+        break
+      }
+      case 'object': {
+        await track.applyConstraints(constraint)
+        break
+      }
+      default: {
+        break
+      }
+    }
+  }
+
   static async createMediaStream(constrains = {}) {
     const mediaDevices = get('navigator.mediaDevices')
     if (!mediaDevices) {
@@ -177,6 +193,28 @@ class TheMedia {
       imageWidth: width || maxWidth,
     })
     return blob
+  }
+
+  /**
+   * Update constrains on run time
+   * @param {Object} [constrains={}]
+   * @param {Object} [constrains.video] - Video constrains
+   * @param {Object} [constrains.audio] - Audio constrains
+   * @returns {Promise<undefined>}
+   */
+  async updateConstrains(constrains = {}) {
+    const { audio, video } = constrains
+    this.constrains = { audio, video }
+    const { stream } = this
+    if (!stream) {
+      return
+    }
+    for (const track of stream.getVideoTracks()) {
+      await TheMedia.applyTrackConstraints(track, video)
+    }
+    for (const track of stream.getAudioTracks()) {
+      await TheMedia.applyTrackConstraints(track, audio)
+    }
   }
 }
 

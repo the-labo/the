@@ -5,7 +5,7 @@
 ## @the-/media
 User media handler
 
-**Version**: 15.4.7  
+**Version**: 15.5.1  
 **License**: MIT  
 
 * [@the-/media](#module_@the-/media)
@@ -18,6 +18,7 @@ User media handler
         * [.start()](#module_@the-/media.TheMedia+start) ⇒ <code>Promise.&lt;undefined&gt;</code>
         * [.stop()](#module_@the-/media.TheMedia+stop) ⇒ <code>Promise.&lt;undefined&gt;</code>
         * [.takePhoto([options])](#module_@the-/media.TheMedia+takePhoto) ⇒ <code>Promise.&lt;window.Blob&gt;</code>
+        * [.updateConstrains([constrains])](#module_@the-/media.TheMedia+updateConstrains) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.create(...args)](#module_@the-/media.create) ⇒ <code>TheMedia</code>
     * [.default()](#module_@the-/media.default)
 
@@ -35,6 +36,7 @@ User media handler
     * [.start()](#module_@the-/media.TheMedia+start) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.stop()](#module_@the-/media.TheMedia+stop) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.takePhoto([options])](#module_@the-/media.TheMedia+takePhoto) ⇒ <code>Promise.&lt;window.Blob&gt;</code>
+    * [.updateConstrains([constrains])](#module_@the-/media.TheMedia+updateConstrains) ⇒ <code>Promise.&lt;undefined&gt;</code>
 
 <a name="new_module_@the-/media.TheMedia_new"></a>
 
@@ -116,6 +118,19 @@ Take photo image
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
+
+<a name="module_@the-/media.TheMedia+updateConstrains"></a>
+
+#### theMedia.updateConstrains([constrains]) ⇒ <code>Promise.&lt;undefined&gt;</code>
+Update constrains on run time
+
+**Kind**: instance method of [<code>TheMedia</code>](#module_@the-/media.TheMedia)  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [constrains] | <code>Object</code> | <code>{}</code> |  |
+| [constrains.video] | <code>Object</code> |  | Video constrains |
+| [constrains.audio] | <code>Object</code> |  | Audio constrains |
 
 <a name="module_@the-/media.create"></a>
 

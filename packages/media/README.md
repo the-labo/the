@@ -98,6 +98,7 @@ tryExample().catch((err) => console.error(err))
   - [#stop()](./doc/api/api.md#module_@the-/media.TheMedia#stop)
   - [#takePhoto(options)](./doc/api/api.md#module_@the-/media.TheMedia#takePhoto)
   - [#toggleEnabled(kind,enabled)](./doc/api/api.md#module_@the-/media.TheMedia#toggleEnabled)
+  - [#updateConstrains(constrains)](./doc/api/api.md#module_@the-/media.TheMedia#updateConstrains)
 
 See [API Guide](./doc/api/api.md) for more detail
 

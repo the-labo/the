@@ -13,7 +13,7 @@
     "name": "@the-/media",
     "order": 2,
     "typicalname": "media",
-    "version": "15.4.7"
+    "version": "15.5.1"
   },
   {
     "id": "module:@the-/media.TheMedia()",
@@ -66,7 +66,7 @@
     "memberof": "module:@the-/media.TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 42,
+      "lineno": 58,
       "path": "lib"
     },
     "name": "createAudioRecorder",
@@ -110,7 +110,7 @@
     "memberof": "module:@the-/media.TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 69,
+      "lineno": 85,
       "path": "lib"
     },
     "name": "getStreamTracks",
@@ -144,7 +144,7 @@
     "memberof": "module:@the-/media.TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 89,
+      "lineno": 105,
       "path": "lib"
     },
     "name": "toggleEnabled",
@@ -178,7 +178,7 @@
     "memberof": "module:@the-/media.TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 106,
+      "lineno": 122,
       "path": "lib"
     },
     "name": "bindVideo",
@@ -224,7 +224,7 @@
     "memberof": "module:@the-/media.TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 122,
+      "lineno": 138,
       "path": "lib"
     },
     "name": "start",
@@ -250,7 +250,7 @@
     "memberof": "module:@the-/media.TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 145,
+      "lineno": 161,
       "path": "lib"
     },
     "name": "stop",
@@ -276,7 +276,7 @@
     "memberof": "module:@the-/media.TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 167,
+      "lineno": 183,
       "path": "lib"
     },
     "name": "takePhoto",
@@ -302,6 +302,63 @@
           ]
         },
         "description": "Blob"
+      }
+    ],
+    "scope": "instance"
+  },
+  {
+    "async": true,
+    "description": "Update constrains on run time",
+    "id": "module:@the-/media.TheMedia#updateConstrains",
+    "kind": "function",
+    "longname": "module:@the-/media.TheMedia#updateConstrains",
+    "memberof": "module:@the-/media.TheMedia",
+    "meta": {
+      "filename": "TheMedia.js",
+      "lineno": 205,
+      "path": "lib"
+    },
+    "name": "updateConstrains",
+    "order": 12,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "constrains"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "description": "Video constrains",
+        "name": "constrains.video"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "description": "Audio constrains",
+        "name": "constrains.audio"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<undefined>"
+          ]
+        }
       }
     ],
     "scope": "instance"
