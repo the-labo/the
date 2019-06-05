@@ -17,7 +17,15 @@ function contextEntryFor(context, { store }) {
       this.pipeProxy = new Proxy(
         {},
         {
-          get: (target, name) => this.state.piped[name],
+          get: (target, name) => {
+            const {
+              state: { piped },
+            } = this
+            if (!piped) {
+              return null
+            }
+            return piped[name]
+          },
           set: () => {
             throw new Error('[TheContext] Cannot set value on pipeProxy')
           },

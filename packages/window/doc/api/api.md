@@ -5,7 +5,7 @@
 ## @the-/window
 Browser utility for the-framework
 
-**Version**: 15.5.0  
+**Version**: 15.5.2  
 **License**: MIT  
 
 * [@the-/window](#module_@the-/window)

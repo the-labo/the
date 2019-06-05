@@ -13,7 +13,7 @@
     "name": "@the-/lint",
     "order": 2,
     "typicalname": "lint",
-    "version": "15.4.21"
+    "version": "15.4.22"
   },
   {
     "description": "Lint runner",
@@ -68,7 +68,7 @@
     "memberof": "module:@the-/lint.TheLint",
     "meta": {
       "filename": "TheLint.js",
-      "lineno": 121,
+      "lineno": 124,
       "path": "lib"
     },
     "name": "run",

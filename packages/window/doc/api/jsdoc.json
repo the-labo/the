@@ -13,7 +13,7 @@
     "name": "@the-/window",
     "order": 1,
     "typicalname": "window",
-    "version": "15.5.0"
+    "version": "15.5.2"
   },
   {
     "description": "Get global values",

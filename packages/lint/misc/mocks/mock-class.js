@@ -1,6 +1,7 @@
+'use strict'
 class MockClass {
-  hoge() {}
   abc() {}
+  hoge() {}
 }
 
 module.exports = MockClass
