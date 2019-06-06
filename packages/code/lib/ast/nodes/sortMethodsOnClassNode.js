@@ -82,6 +82,7 @@ const _weightMethod = (method) => {
   }
   switch (method.type) {
     case 'ClassProperty':
+    case 'ClassPrivateProperty':
       weight -= 100
       break
     default:

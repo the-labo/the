@@ -216,12 +216,20 @@ class Rect extends Struct {
 class X {
   x () {}
   #e () {}
+  static k = () => null
+  static n () {}
+  static #a () {}
+  static #b = () => null
   c = () => null
   #b = () => null
 }
 `),
       `
 class X {
+  static #b = () => null
+  static #a () {}
+  static k = () => null
+  static n () {}
   #b = () => null
   #e () {}
   c = () => null

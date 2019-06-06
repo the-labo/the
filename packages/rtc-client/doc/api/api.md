@@ -24,7 +24,7 @@
 ## @the-/rtc-client
 Client for the-rtc
 
-**Version**: 15.5.4  
+**Version**: 15.5.6  
 **License**: MIT  
 
 * [@the-/rtc-client](#module_@the-/rtc-client)

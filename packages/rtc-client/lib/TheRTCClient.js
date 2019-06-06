@@ -347,34 +347,6 @@ class TheRTCClient extends TheRTCClientBase {
     await this.answerToPeerOffer(offer)
   }
 
-  async updateMediaConstrains(mediaConstrains) {
-    const { media, peers } = this
-    await media.stopIfNeeded()
-    const newMedia = this.createMedia(mediaConstrains)
-    this.media = newMedia
-    await newMedia.startIfNeeded()
-    const newTracksHash = newMedia.stream.getTracks().reduce(
-      (hash, track) => ({
-        ...hash,
-        [track.kind]: [...(hash[track.kind] || []), track],
-      }),
-      {},
-    )
-    for (const [, peer] of peers) {
-      for (const sender of peer.getSenders()) {
-        const { track } = sender
-        const newTracks = newTracksHash[track.kind]
-        const newTrack = newTracks && newTracks.shift()
-        if (newTrack) {
-          track.stop()
-          await sender.replaceTrack(newTrack)
-        } else {
-          console.warn('[TheRTCClient] Track lost', track.kind)
-        }
-      }
-    }
-  }
-
   async syncState() {
     const {
       media: { stream },
@@ -404,6 +376,34 @@ class TheRTCClient extends TheRTCClientBase {
     this.assertHasRoom()
     this.media.toggleVideoEnabled(enabled)
     await this.syncState()
+  }
+
+  async updateMediaConstrains(mediaConstrains) {
+    const { media, peers } = this
+    await media.stopIfNeeded()
+    const newMedia = this.createMedia(mediaConstrains)
+    this.media = newMedia
+    await newMedia.startIfNeeded()
+    const newTracksHash = newMedia.stream.getTracks().reduce(
+      (hash, track) => ({
+        ...hash,
+        [track.kind]: [...(hash[track.kind] || []), track],
+      }),
+      {},
+    )
+    for (const [, peer] of Object.entries(peers)) {
+      for (const sender of peer.getSenders()) {
+        const { track } = sender
+        const newTracks = newTracksHash[track.kind]
+        const newTrack = newTracks && newTracks.shift()
+        if (newTrack) {
+          track.stop()
+          await sender.replaceTrack(newTrack)
+        } else {
+          console.warn('[TheRTCClient] Track lost', track.kind)
+        }
+      }
+    }
   }
 }
 
