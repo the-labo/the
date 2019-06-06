@@ -13,7 +13,7 @@
     "name": "@the-/rtc-client",
     "order": 2,
     "typicalname": "rtcClient",
-    "version": "15.4.10"
+    "version": "15.5.4"
   },
   {
     "description": "ChannelNames",
@@ -200,7 +200,7 @@
     "memberof": "module:@the-/rtc-client.TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 149,
+      "lineno": 154,
       "path": "lib"
     },
     "name": "connect",
@@ -246,7 +246,7 @@
     "memberof": "module:@the-/rtc-client.TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 194,
+      "lineno": 199,
       "path": "lib"
     },
     "name": "disconnect",
@@ -272,7 +272,7 @@
     "memberof": "module:@the-/rtc-client.TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 305,
+      "lineno": 310,
       "path": "lib"
     },
     "name": "publish",

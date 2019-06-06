@@ -209,6 +209,27 @@ class Rect extends Struct {
       `,
     )
   })
+
+  it('With private properties', async () => {
+    equal(
+      await processJSClass(`
+class X {
+  x () {}
+  #e () {}
+  c = () => null
+  #b = () => null
+}
+`),
+      `
+class X {
+  #b = () => null
+  #e () {}
+  c = () => null
+  x () {}
+}
+`,
+    )
+  })
 })
 
 /* global describe, before, after, it */

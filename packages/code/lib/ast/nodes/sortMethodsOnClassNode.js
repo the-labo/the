@@ -15,6 +15,7 @@ function sortMethodsOnClassNode(ClassNode, { swap }) {
     ...ClassNode.body.filter(byType('ClassMethod')),
     ...ClassNode.body.filter(byType('ClassPrivateMethod')),
     ...ClassNode.body.filter(byType('ClassProperty')),
+    ...ClassNode.body.filter(byType('ClassPrivateProperty')),
   ]
   const sortedByStart = [...ClassMethods].sort(compareBy('start'))
   const sortedByName = [...ClassMethods].sort((a, b) => {

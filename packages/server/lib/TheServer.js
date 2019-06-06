@@ -77,6 +77,11 @@ class TheServer extends TheServerBase {
       if (restKeys.length > 0) {
         console.warn(`[TheServer] Unknown config: ${JSON.stringify(restKeys)}`)
       }
+
+      const invalidLang = langs.find((lang) => /^\$/.test(lang))
+      if (invalidLang) {
+        throw new Error(`[TheServer] Invalid lang: ${invalidLang}`)
+      }
     })
 
     const appScope = asAppScope({ config }, scope)

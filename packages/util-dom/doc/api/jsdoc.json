@@ -1,0 +1,102 @@
+[
+  {
+    "description": "Dom utility for the-framework",
+    "id": "module:@the-/util-dom",
+    "kind": "module",
+    "license": "MIT",
+    "longname": "module:@the-/util-dom",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 2,
+      "path": "lib"
+    },
+    "name": "@the-/util-dom",
+    "order": 2,
+    "typicalname": "utilDom",
+    "version": "15.4.11"
+  },
+  {
+    "description": "Get element by id",
+    "id": "module:@the-/util-dom.byId",
+    "kind": "function",
+    "longname": "module:@the-/util-dom.byId",
+    "memberof": "module:@the-/util-dom",
+    "meta": {
+      "filename": "byId.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "byId",
+    "order": 0,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Id of dom element",
+        "name": "id"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "HTMLElement"
+          ]
+        },
+        "nullable": true,
+        "description": "- Found element"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Get element by id",
+    "id": "module:@the-/util-dom.byId.withRetry",
+    "kind": "function",
+    "longname": "module:@the-/util-dom.byId.withRetry",
+    "memberof": "module:@the-/util-dom.byId",
+    "meta": {
+      "filename": "byId.js",
+      "lineno": 22,
+      "path": "lib"
+    },
+    "name": "withRetry",
+    "order": 1,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Id of dom element",
+        "name": "id"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<?HTMLElement>"
+          ]
+        },
+        "description": "- Found element"
+      }
+    ],
+    "scope": "static"
+  }
+]

@@ -13,7 +13,7 @@
     "name": "@the-/server",
     "order": 4,
     "typicalname": "server",
-    "version": "15.4.7"
+    "version": "15.4.9"
   },
   {
     "description": "HTTP server for the-framework",
@@ -125,7 +125,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 201,
+      "lineno": 206,
       "path": "lib"
     },
     "name": "close",
@@ -162,7 +162,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 225,
+      "lineno": 230,
       "path": "lib"
     },
     "name": "destroyAllSessions",
@@ -188,7 +188,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 237,
+      "lineno": 242,
       "path": "lib"
     },
     "name": "handleIOClientCame",
@@ -205,7 +205,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 249,
+      "lineno": 254,
       "path": "lib"
     },
     "name": "handleIOClientGone",
@@ -222,7 +222,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 274,
+      "lineno": 279,
       "path": "lib"
     },
     "name": "handleIORPCAbort",
@@ -239,7 +239,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 279,
+      "lineno": 284,
       "path": "lib"
     },
     "name": "handleIORPCCall",
@@ -256,7 +256,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 314,
+      "lineno": 319,
       "path": "lib"
     },
     "name": "handleIOStreamChunk",
@@ -273,7 +273,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 321,
+      "lineno": 326,
       "path": "lib"
     },
     "name": "handleIOStreamClose",
@@ -290,7 +290,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 330,
+      "lineno": 335,
       "path": "lib"
     },
     "name": "handleIOStreamFin",
@@ -307,7 +307,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 342,
+      "lineno": 347,
       "path": "lib"
     },
     "name": "handleIOStreamOpen",
@@ -325,7 +325,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 433,
+      "lineno": 438,
       "path": "lib"
     },
     "name": "listen",

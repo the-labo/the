@@ -1,46 +1,29 @@
 {
-  "name": "@the-/code",
-  "description": "Code formatter of the-frameworks",
-  "version": "15.5.70",
+  "name": "@the-/util-dom",
+  "description": "Dom utility for the-framework",
+  "version": "15.4.11",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
     "url": "http://okunishitaka.com"
-  },
-  "bin": {
-    "the-code": "bin/the-code"
   },
   "browser": "shim",
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/ast": "^15.4.7",
-    "@the-/const-code": "^15.4.8",
-    "@the-/util-file": "^15.4.7",
-    "@the-/util-path": "^15.4.4",
-    "aglob": "^3.0.2",
-    "asfs": "^2.2.3",
-    "colorprint": "^5.0.3",
-    "commander": "^2.20.0",
-    "debug": "^4.1.1",
-    "fmtjson": "^4.0.6",
-    "postcss": "^7.0.16",
-    "prettier": "^1.17.1",
-    "writeout": "^2.2.4",
-    "yaml": "^1.6.0"
+    "@the-/window": "^15.5.2",
+    "asleep": "^1.0.3"
   },
-  "devDependencies": {
-    "filecopy": "^4.0.2"
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/code#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/util-dom#readme",
   "keywords": [
-    "lib",
-    "the"
+    "the",
+    "util"
   ],
   "license": "MIT",
   "main": "lib",
