@@ -93,6 +93,8 @@ tryExample().catch((err) => console.error(err))
   - [.create(args)](./doc/api/api.md#module_@the-/cache.create)
   - [.default()](./doc/api/api.md#module_@the-/cache.default)
   - [.TheCache](./doc/api/api.md#module_@the-/cache.TheCache)
+- module:@the-/cache.TheCache
+  - [#for(key,initializer)](./doc/api/api.md#module_@the-/cache.TheCache#for)
 
 See [API Guide](./doc/api/api.md) for more detail
 

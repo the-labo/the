@@ -5,7 +5,7 @@
 ## @the-/util-file
 File utility for the-framework
 
-**Version**: 15.4.7  
+**Version**: 15.5.0  
 **License**: MIT  
 
 * [@the-/util-file](#module_@the-/util-file)
@@ -14,9 +14,11 @@ File utility for the-framework
     * [.isJSON5File(filename)](#module_@the-/util-file.isJSON5File) ⇒ <code>boolean</code>
     * [.readAsJson(filename)](#module_@the-/util-file.readAsJson) ⇒ <code>Promise.&lt;Object&gt;</code>
     * [.readAsJsonSync(filename)](#module_@the-/util-file.readAsJsonSync) ⇒ <code>Object</code>
+    * [.readAsYaml()](#module_@the-/util-file.readAsYaml) ⇒ <code>Promise.&lt;Object&gt;</code>
     * [.statSync(filename)](#module_@the-/util-file.statSync)
     * [.writeAsJson(filename, data, [options])](#module_@the-/util-file.writeAsJson) ⇒ <code>Promise</code>
     * [.writeAsJsonSync(filename, data, [options])](#module_@the-/util-file.writeAsJsonSync)
+    * [.writeAsYaml(filename, data)](#module_@the-/util-file.writeAsYaml) ⇒ <code>Promise.&lt;Object&gt;</code>
 
 <a name="module_@the-/util-file.copyAsJsonSync"></a>
 
@@ -68,6 +70,13 @@ Read as json
 | --- | --- |
 | filename | <code>string</code> | 
 
+<a name="module_@the-/util-file.readAsYaml"></a>
+
+### utilFile.readAsYaml() ⇒ <code>Promise.&lt;Object&gt;</code>
+Read file as YAML
+
+**Kind**: static method of [<code>@the-/util-file</code>](#module_@the-/util-file)  
+**Returns**: <code>Promise.&lt;Object&gt;</code> - yaml data  
 <a name="module_@the-/util-file.statSync"></a>
 
 ### utilFile.statSync(filename)
@@ -100,4 +109,17 @@ Read as json
 | data | <code>Object</code> |  | 
 | [options] | <code>Object</code> |  | 
 | [options.sort] | <code>boolean</code> | <code>true</code> | 
+
+<a name="module_@the-/util-file.writeAsYaml"></a>
+
+### utilFile.writeAsYaml(filename, data) ⇒ <code>Promise.&lt;Object&gt;</code>
+Read file as YAML
+
+**Kind**: static method of [<code>@the-/util-file</code>](#module_@the-/util-file)  
+**Returns**: <code>Promise.&lt;Object&gt;</code> - yaml data  
+
+| Param | Type |
+| --- | --- |
+| filename | <code>string</code> | 
+| data | <code>Object</code> | 
 

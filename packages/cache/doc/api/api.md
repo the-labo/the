@@ -5,11 +5,12 @@
 ## @the-/cache
 Cache manager of the-frameworks
 
-**Version**: 15.4.7  
+**Version**: 15.5.1  
 **License**: MIT  
 
 * [@the-/cache](#module_@the-/cache)
     * [.TheCache](#module_@the-/cache.TheCache) ⇐ <code>LRUCache</code>
+        * [.for(key, initializer)](#module_@the-/cache.TheCache+for) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.create(...args)](#module_@the-/cache.create) ⇒ [<code>TheCache</code>](#module_@the-/cache.TheCache)
     * [.default()](#module_@the-/cache.default)
 
@@ -19,6 +20,18 @@ Cache manager of the-frameworks
 **Kind**: static class of [<code>@the-/cache</code>](#module_@the-/cache)  
 **Extends**: <code>LRUCache</code>  
 **See**: https://github.com/isaacs/node-lru-cache#readme  
+<a name="module_@the-/cache.TheCache+for"></a>
+
+#### theCache.for(key, initializer) ⇒ <code>Promise.&lt;undefined&gt;</code>
+Get cache or initialize and set
+
+**Kind**: instance method of [<code>TheCache</code>](#module_@the-/cache.TheCache)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| key | <code>string</code> | Cache key |
+| initializer | <code>function</code> | Initializer async function |
+
 <a name="module_@the-/cache.create"></a>
 
 ### cache.create(...args) ⇒ [<code>TheCache</code>](#module_@the-/cache.TheCache)

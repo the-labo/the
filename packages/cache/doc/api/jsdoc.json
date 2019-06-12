@@ -13,7 +13,52 @@
     "name": "@the-/cache",
     "order": 2,
     "typicalname": "cache",
-    "version": "15.4.7"
+    "version": "15.5.1"
+  },
+  {
+    "async": true,
+    "description": "Get cache or initialize and set",
+    "id": "module:@the-/cache.TheCache#for",
+    "kind": "function",
+    "longname": "module:@the-/cache.TheCache#for",
+    "memberof": "module:@the-/cache.TheCache",
+    "meta": {
+      "filename": "TheCache.js",
+      "lineno": 18,
+      "path": "lib"
+    },
+    "name": "for",
+    "order": 4,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Cache key",
+        "name": "key"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Initializer async function",
+        "name": "initializer"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<undefined>"
+          ]
+        }
+      }
+    ],
+    "scope": "instance"
   },
   {
     "augments": [

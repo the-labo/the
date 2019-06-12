@@ -13,7 +13,7 @@
     "name": "@the-/util-sw",
     "order": 2,
     "typicalname": "utilSw",
-    "version": "15.5.0"
+    "version": "15.5.1"
   },
   {
     "description": "Get app cache from WorkerGlobalScope",

@@ -14,7 +14,8 @@ function parseUrl(urlString, options = {}) {
 }
 
 parseUrl.forRegistration = (registration, options = {}) => {
-  const url = registration && registration.active && registration.scriptURL
+  const { active } = registration || {}
+  const url = active && active.scriptURL
   if (!url) {
     return null
   }

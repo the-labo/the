@@ -13,7 +13,7 @@
     "name": "@the-/util-file",
     "order": 3,
     "typicalname": "utilFile",
-    "version": "15.4.7"
+    "version": "15.5.0"
   },
   {
     "id": "module:@the-/util-file.copyAsJsonSync",
@@ -206,6 +206,31 @@
     "scope": "static"
   },
   {
+    "description": "Read file as YAML",
+    "id": "module:@the-/util-file.readAsYaml",
+    "kind": "function",
+    "longname": "module:@the-/util-file.readAsYaml",
+    "memberof": "module:@the-/util-file",
+    "meta": {
+      "filename": "readAsYaml.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "readAsYaml",
+    "order": 7,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Object>"
+          ]
+        },
+        "description": "yaml data"
+      }
+    ],
+    "scope": "static"
+  },
+  {
     "id": "module:@the-/util-file.statSync",
     "kind": "function",
     "longname": "module:@the-/util-file.statSync",
@@ -216,7 +241,7 @@
       "path": "lib"
     },
     "name": "statSync",
-    "order": 7,
+    "order": 8,
     "params": [
       {
         "type": {
@@ -240,7 +265,7 @@
       "path": "lib"
     },
     "name": "writeAsJson",
-    "order": 8,
+    "order": 9,
     "params": [
       {
         "type": {
@@ -300,7 +325,7 @@
       "path": "lib"
     },
     "name": "writeAsJsonSync",
-    "order": 9,
+    "order": 10,
     "params": [
       {
         "type": {
@@ -336,6 +361,49 @@
         "optional": true,
         "defaultvalue": true,
         "name": "options.sort"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Read file as YAML",
+    "id": "module:@the-/util-file.writeAsYaml",
+    "kind": "function",
+    "longname": "module:@the-/util-file.writeAsYaml",
+    "memberof": "module:@the-/util-file",
+    "meta": {
+      "filename": "writeAsYaml.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "writeAsYaml",
+    "order": 11,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "filename"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "data"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Object>"
+          ]
+        },
+        "description": "yaml data"
       }
     ],
     "scope": "static"

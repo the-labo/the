@@ -1,7 +1,7 @@
 {
   "name": "@the-/driver-sequelize",
   "description": "Sequelize driver for the-framework",
-  "version": "15.4.8",
+  "version": "15.4.9",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -20,7 +20,7 @@
     "clay-driver-base": "^4.1.7",
     "clay-list-pager": "^3.0.1",
     "clay-resource-name": "^4.0.5",
-    "sequelize": "^5.8.7",
+    "sequelize": "5.8.8",
     "utf8": "^3.0.0"
   },
   "devDependencies": {

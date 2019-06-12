@@ -13,7 +13,7 @@ describe('the-cache', () => {
 
   after(() => {})
 
-  it('Do test', () => {
+  it('Do test', async () => {
     ok(TheCache)
 
     const cache = new TheCache({})
@@ -22,6 +22,9 @@ describe('the-cache', () => {
     equal(cache.get('foo'), 'bar')
     cache.reset()
     ok(!cache.get('foo'))
+
+    equal(await cache.for('x', () => 'This is x'), 'This is x')
+    equal(cache.get('x'), 'This is x')
   })
 })
 

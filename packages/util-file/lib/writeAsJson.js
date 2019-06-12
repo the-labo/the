@@ -17,7 +17,6 @@ const isJSON5File = require('./isJSON5File')
 
 /** @lends module:@the-/util-file.writeAsJson */
 async function writeAsJson(filename, data, options = {}) {
-  await mkdirpAsync(path.dirname(filename))
   const { sort = true } = options
   if (sort) {
     data = sortProperties(data)
@@ -26,6 +25,7 @@ async function writeAsJson(filename, data, options = {}) {
   const content = isJSON5
     ? JSON5.stringify(data, null, 2) + EOL
     : JSON.stringify(data, null, 2) + EOL
+  await mkdirpAsync(path.dirname(filename))
   await writeFileAsync(filename, content)
 }
 
