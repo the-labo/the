@@ -1,7 +1,7 @@
 {
   "name": "@the-/check",
   "description": "Check utility for the-framework",
-  "version": "15.5.2",
+  "version": "15.5.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,7 +18,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/window": "^15.4.1",
+    "@the-/window": "^15.5.2",
     "asenv": "^3.0.2",
     "bowser": "^2.4.0",
     "os-browserify": "^0.3.0",
