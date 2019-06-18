@@ -84,7 +84,7 @@ class TheClient extends TheClientBase {
       )
     }
     super(url, restOptions)
-    this._onGone = onGone
+    this.onGone(onGone)
     this._forceNewSocket = forceNewSocket
     this._gone = false
     this._controllers = {}
@@ -160,6 +160,10 @@ class TheClient extends TheClientBase {
     }
     this._onGone && this._onGone(reason)
     this._gone = true
+  }
+
+  onGone(onGone) {
+    this._onGone = onGone
   }
 
   async close() {

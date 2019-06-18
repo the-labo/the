@@ -1,7 +1,7 @@
 {
   "name": "@the-/util-site",
   "description": "Utility for site",
-  "version": "15.4.8",
+  "version": "15.4.9",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.2",
+    "@the-/check": "^15.5.3",
     "@the-/error": "^15.4.0",
     "@the-/seat": "^15.4.6",
     "bwindow": "^2.0.3",

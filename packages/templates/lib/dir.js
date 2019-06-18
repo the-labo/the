@@ -35,7 +35,14 @@ const isModule = (filename) => {
 
 /** @lends module:@the-/templates.dir */
 function dir(config) {
-  const { annotations, cjs = config.node, dirname, ext, ...rest } = config
+  const {
+    annotations,
+    cjs = config.node,
+    ignore,
+    dirname,
+    ext,
+    ...rest
+  } = config
   assert(!!dirname, 'dirname is required')
   handleRestConfig(rest, path.relative(process.cwd(), dirname))
   const TMPL_PATH = cjs ? _tmpl('cjs_dir.hbs') : _tmpl('dir.hbs')

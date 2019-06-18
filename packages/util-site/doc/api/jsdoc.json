@@ -13,7 +13,7 @@
     "name": "@the-/util-site",
     "order": 5,
     "typicalname": "utilSite",
-    "version": "15.4.7"
+    "version": "15.4.9"
   },
   {
     "id": "module:@the-/util-site.appendQueryToSearch",
