@@ -128,7 +128,7 @@ class TheClient extends TheClientBase {
   }
 
   handleCallback(controllerName, handleName, data) {
-    const values = decode(data)
+    const values = decode(data) || []
     const controller = this._controllers[controllerName]
     if (!controller) {
       console.warn(
