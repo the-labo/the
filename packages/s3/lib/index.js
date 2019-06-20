@@ -4,7 +4,7 @@
  * @license MIT
  * @module @the-/s3
  * @typicalname s3
- * @version 15.5.0
+ * @version 15.5.1
  */
 'use strict'
 

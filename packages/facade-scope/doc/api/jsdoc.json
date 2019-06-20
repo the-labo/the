@@ -1,0 +1,147 @@
+[
+  {
+    "description": "Facade to wrap scopes",
+    "id": "module:@the-/facade-scope",
+    "kind": "module",
+    "license": "MIT",
+    "longname": "module:@the-/facade-scope",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 2,
+      "path": "lib"
+    },
+    "name": "@the-/facade-scope",
+    "order": 6,
+    "typicalname": "facadeScope",
+    "version": "15.4.11"
+  },
+  {
+    "description": "State of busy",
+    "id": "module:@the-/facade-scope.busyFor~busy.state",
+    "kind": "member",
+    "longname": "module:@the-/facade-scope.busyFor~busy.state",
+    "memberof": "module:@the-/facade-scope.busyFor~busy",
+    "meta": {
+      "filename": "busyFor.js",
+      "lineno": 25,
+      "path": "lib"
+    },
+    "name": "state",
+    "order": 3,
+    "scope": "static"
+  },
+  {
+    "description": "Bush scope access",
+    "id": "module:@the-/facade-scope.busyFor",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.busyFor",
+    "memberof": "module:@the-/facade-scope",
+    "meta": {
+      "filename": "busyFor.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "busyFor",
+    "order": 0,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "scope"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "- Face object for busy access"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Set to false",
+    "id": "module:@the-/facade-scope.busyFor~busy.false",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.busyFor~busy.false",
+    "memberof": "module:@the-/facade-scope.busyFor~busy",
+    "meta": {
+      "filename": "busyFor.js",
+      "lineno": 21,
+      "path": "lib"
+    },
+    "name": "false",
+    "order": 2,
+    "scope": "static"
+  },
+  {
+    "description": "Set to true",
+    "id": "module:@the-/facade-scope.busyFor~busy.true",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.busyFor~busy.true",
+    "memberof": "module:@the-/facade-scope.busyFor~busy",
+    "meta": {
+      "filename": "busyFor.js",
+      "lineno": 31,
+      "path": "lib"
+    },
+    "name": "true",
+    "order": 4,
+    "scope": "static"
+  },
+  {
+    "description": "Set busy while handle pending",
+    "id": "module:@the-/facade-scope.busyFor~busy.while",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.busyFor~busy.while",
+    "memberof": "module:@the-/facade-scope.busyFor~busy",
+    "meta": {
+      "filename": "busyFor.js",
+      "lineno": 39,
+      "path": "lib"
+    },
+    "name": "while",
+    "order": 5,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Async handler",
+        "name": "handler"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/facade-scope~busy",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-scope~busy",
+    "memberof": "module:@the-/facade-scope",
+    "meta": {
+      "filename": "busyFor.js",
+      "lineno": 12,
+      "path": "lib"
+    },
+    "name": "busy",
+    "order": 1,
+    "scope": "inner"
+  }
+]
