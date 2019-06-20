@@ -51,6 +51,26 @@ class TheS3 {
   }
 
   /**
+   * Check an object exists or not
+   * @param {Object} params - S3 object params
+   * @returns {Promise<boolean>}
+   */
+  async exists(params) {
+    const { name, namespace } = params
+    const { s3 } = this
+    const Key = path.join(...[namespace, name].filter(Boolean))
+    try {
+      await s3.headObject({ Key }).promise()
+      return true
+    } catch (e) {
+      if (e.code === 'NotFound') {
+        return false
+      }
+      throw e
+    }
+  }
+
+  /**
    * Upload file into s3
    * @param {string} src - Source file
    * @param {Object} [options={}] - Optional settings

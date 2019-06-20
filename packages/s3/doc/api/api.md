@@ -11,6 +11,7 @@ S3 upload helper
 * [@the-/s3](#module_@the-/s3)
     * [.TheS3](#module_@the-/s3.TheS3)
         * [new TheS3(config)](#new_module_@the-/s3.TheS3_new)
+        * [.exists(params)](#module_@the-/s3.TheS3+exists) ⇒ <code>Promise.&lt;boolean&gt;</code>
         * [.upload(src, [options])](#module_@the-/s3.TheS3+upload) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.create(...args)](#module_@the-/s3.create) ⇒ <code>TheS3</code>
     * [.default()](#module_@the-/s3.default)
@@ -22,6 +23,7 @@ S3 upload helper
 
 * [.TheS3](#module_@the-/s3.TheS3)
     * [new TheS3(config)](#new_module_@the-/s3.TheS3_new)
+    * [.exists(params)](#module_@the-/s3.TheS3+exists) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.upload(src, [options])](#module_@the-/s3.TheS3+upload) ⇒ <code>Promise.&lt;undefined&gt;</code>
 
 <a name="new_module_@the-/s3.TheS3_new"></a>
@@ -36,6 +38,17 @@ S3 upload helper
 | [config.region] | <code>string</code> | 
 | [config.secretAccessKey] | <code>string</code> | 
 | [config.signatureVersion] | <code>string</code> | 
+
+<a name="module_@the-/s3.TheS3+exists"></a>
+
+#### theS3.exists(params) ⇒ <code>Promise.&lt;boolean&gt;</code>
+Check an object exists or not
+
+**Kind**: instance method of [<code>TheS3</code>](#module_@the-/s3.TheS3)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>Object</code> | S3 object params |
 
 <a name="module_@the-/s3.TheS3+upload"></a>
 
