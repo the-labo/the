@@ -80,6 +80,42 @@
   },
   {
     "async": true,
+    "description": "Check an object exists or not",
+    "id": "module:@the-/s3.TheS3#exists",
+    "kind": "function",
+    "longname": "module:@the-/s3.TheS3#exists",
+    "memberof": "module:@the-/s3.TheS3",
+    "meta": {
+      "filename": "TheS3.js",
+      "lineno": 58,
+      "path": "lib"
+    },
+    "name": "exists",
+    "order": 5,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "S3 object params",
+        "name": "params"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<boolean>"
+          ]
+        }
+      }
+    ],
+    "scope": "instance"
+  },
+  {
+    "async": true,
     "description": "Upload file into s3",
     "id": "module:@the-/s3.TheS3#upload",
     "kind": "function",
@@ -87,11 +123,11 @@
     "memberof": "module:@the-/s3.TheS3",
     "meta": {
       "filename": "TheS3.js",
-      "lineno": 59,
+      "lineno": 79,
       "path": "lib"
     },
     "name": "upload",
-    "order": 5,
+    "order": 6,
     "params": [
       {
         "type": {
