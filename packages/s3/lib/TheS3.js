@@ -9,7 +9,7 @@
  * @param {string} [config.secretAccessKey]
  * @param {string} [config.signatureVersion]
  */
-const AWS = require('aws-sdk')
+const S3 = require('aws-sdk/clients/s3')
 const fs = require('fs')
 const mime = require('mime')
 const path = require('path')
@@ -41,7 +41,7 @@ class TheS3 {
       }
     })
 
-    this.s3 = new AWS.S3({
+    this.s3 = new S3({
       accessKeyId,
       params: { Bucket },
       region,
