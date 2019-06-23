@@ -1,0 +1,55 @@
+/**
+ * Bush scope access
+ * @memberof module:@the-/facade-scope
+ * @function editOperationForFor
+ * @param {Object} scope
+ * @returns {Object} - Face object for editOperationFor access
+ */
+'use strict'
+
+const busyAccessFor = require('../busyAccessFor')
+const entityAccessFor = require('../entityAccessFor')
+const entryAccessFor = require('../entryAccessFor')
+const idAccessFor = require('../idAccessFor')
+
+/** @lends module:@the-/facade-scope.editOperationForFor */
+function editOperationForFor(scope) {
+  const idAccess = idAccessFor(scope)
+  const entryAccess = entryAccessFor(scope)
+  const busyAccess = busyAccessFor(scope)
+  const entityAccess = entityAccessFor(scope)
+
+  /**
+   * @memberof module:@the-/facade-scope.editOperationForFor
+   * @inner
+   * @namespace editOperationFor
+   */
+  const editOperationFor = {
+    busyAccess,
+    entityAccess,
+    entryAccess,
+    async exec(handler) {
+      await busyAccess.while(async () => entryAccess.process(handler))
+    },
+    idAccess,
+    init() {
+      scope.init()
+    },
+    setId(id) {
+      idAccess.set(id)
+    },
+    async sync(handler) {
+      return busyAccess.while(async () => {
+        const { state: id } = idAccess
+        const entity = await handler(id)
+        entityAccess.set(entity)
+      })
+    },
+  }
+
+  Object.freeze(editOperationFor)
+
+  return editOperationFor
+}
+
+module.exports = editOperationForFor

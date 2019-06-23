@@ -33,6 +33,7 @@ const typesMap = {
   Number: 'number',
   String: 'string',
   Void: 'undefined',
+  any: '*',
   function: 'function()',
   void: 'undefined',
 }

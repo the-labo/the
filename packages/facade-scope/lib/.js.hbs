@@ -1,0 +1,25 @@
+/**
+ * Bush scope access
+ * @memberof module:@the-/facade-scope
+ * @function {{name}}For
+ * @param {Object} scope
+ * @returns {Object} - Face object for {{name}} access
+ */
+'use strict'
+
+/** @lends module:@the-/facade-scope.{{name}}For */
+function {{name}}For(scope) {
+  /**
+   * @memberof module:@the-/facade-scope.{{name}}For
+   * @inner
+   * @namespace {{name}}
+   */
+  const {{name}} = {
+  }
+
+  Object.freeze({{name}})
+
+  return {{name}}
+}
+
+module.exports = {{name}}For

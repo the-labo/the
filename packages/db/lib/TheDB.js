@@ -68,12 +68,21 @@ class TheDB extends TheDBBase {
       refreshInterval = 300,
       resourceLogFile = 'var/db/resources.log',
       resources = {},
+      extend = {},
+      ...rest
     } = config
     const env = toLowerKeys(
       config.env || clone(config, { without: ['name', 'resources'] }),
     )
     const driver = driverFromEnv(env)
     super(name, { driver })
+
+    {
+      const resetKeys = Object.keys(rest)
+      if (resetKeys.length > 0) {
+        console.warn(`[TheDB] Unknown config: `, resetKeys)
+      }
+    }
 
     this._unref = false
     this._env = env
@@ -106,7 +115,6 @@ class TheDB extends TheDBBase {
     this.hooksFromMapping({
       ...hooks,
     })
-
     const {
       _resources: { TheDBLog },
     } = this

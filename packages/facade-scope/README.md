@@ -45,10 +45,92 @@ Facade to wrap scopes
 
 
 - module:@the-/facade-scope
-  - [.busyFor(scope)](./doc/api/api.md#module_@the-/facade-scope.busyFor)
-  - [~busy](./doc/api/api.md#module_@the-/facade-scope~busy)
-- module:@the-/facade-scope.busyFor~busy
-  - [.while(handler)](./doc/api/api.md#module_@the-/facade-scope.busyFor~busy.while)
+  - [.busyAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.busyAccessFor)
+  - [.countsAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.countsAccessFor)
+  - [.createOperationForFor(scope)](./doc/api/api.md#module_@the-/facade-scope.createOperationForFor)
+  - [.destroyOperationForFor(scope)](./doc/api/api.md#module_@the-/facade-scope.destroyOperationForFor)
+  - [.detailOperationFor(scope)](./doc/api/api.md#module_@the-/facade-scope.detailOperationFor)
+  - [.editOperationForFor(scope)](./doc/api/api.md#module_@the-/facade-scope.editOperationForFor)
+  - [.entitiesAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.entitiesAccessFor)
+  - [.entryAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.entryAccessFor)
+  - [.filterAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.filterAccessFor)
+  - [.idAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.idAccessFor)
+  - [.listOperationFor()](./doc/api/api.md#module_@the-/facade-scope.listOperationFor)
+  - [.moreAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.moreAccessFor)
+  - [.pageAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.pageAccessFor)
+  - [.readyAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.readyAccessFor)
+  - [.sortAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.sortAccessFor)
+- module:@the-/facade-scope.busyAccessFor
+  - [~busyAccess](./doc/api/api.md#module_@the-/facade-scope.busyAccessFor~busyAccess)
+- module:@the-/facade-scope.busyAccessFor~busyAccess
+  - [.false()](./doc/api/api.md#module_@the-/facade-scope.busyAccessFor~busyAccess.false)
+  - [.true()](./doc/api/api.md#module_@the-/facade-scope.busyAccessFor~busyAccess.true)
+  - [.while(handler)](./doc/api/api.md#module_@the-/facade-scope.busyAccessFor~busyAccess.while)
+- module:@the-/facade-scope.countsAccessFor
+  - [~countsAccess](./doc/api/api.md#module_@the-/facade-scope.countsAccessFor~countsAccess)
+- module:@the-/facade-scope.countsAccessFor~countsAccess
+  - [.hasMore()](./doc/api/api.md#module_@the-/facade-scope.countsAccessFor~countsAccess.hasMore)
+  - [.set(counts)](./doc/api/api.md#module_@the-/facade-scope.countsAccessFor~countsAccess.set)
+- module:@the-/facade-scope.createOperationForFor
+  - [~createOperationFor](./doc/api/api.md#module_@the-/facade-scope.createOperationForFor~createOperationFor)
+- module:@the-/facade-scope.destroyOperationForFor
+  - [~destroyOperationFor](./doc/api/api.md#module_@the-/facade-scope.destroyOperationForFor~destroyOperationFor)
+- module:@the-/facade-scope.detailOperationFor
+  - [~detailOperation](./doc/api/api.md#module_@the-/facade-scope.detailOperationFor~detailOperation)
+- module:@the-/facade-scope.editOperationForFor
+  - [~editOperationFor](./doc/api/api.md#module_@the-/facade-scope.editOperationForFor~editOperationFor)
+- module:@the-/facade-scope.entitiesAccessFor
+  - [.Entity](./doc/api/api.md#module_@the-/facade-scope.entitiesAccessFor.Entity)
+  - [~entitiesAccess](./doc/api/api.md#module_@the-/facade-scope.entitiesAccessFor~entitiesAccess)
+- module:@the-/facade-scope.entitiesAccessFor~entitiesAccess
+  - [.add(entities,options)](./doc/api/api.md#module_@the-/facade-scope.entitiesAccessFor~entitiesAccess.add)
+  - [.addOne(entity,options)](./doc/api/api.md#module_@the-/facade-scope.entitiesAccessFor~entitiesAccess.addOne)
+  - [.receiveOne(entity,options)](./doc/api/api.md#module_@the-/facade-scope.entitiesAccessFor~entitiesAccess.receiveOne)
+  - [.removeOne(entity)](./doc/api/api.md#module_@the-/facade-scope.entitiesAccessFor~entitiesAccess.removeOne)
+  - [.updateOne(entity)](./doc/api/api.md#module_@the-/facade-scope.entitiesAccessFor~entitiesAccess.updateOne)
+- module:@the-/facade-scope.entryAccessFor
+  - [~entryAccess](./doc/api/api.md#module_@the-/facade-scope.entryAccessFor~entryAccess)
+- module:@the-/facade-scope.filterAccessFor
+  - [~filterAccess](./doc/api/api.md#module_@the-/facade-scope.filterAccessFor~filterAccess)
+- module:@the-/facade-scope.filterAccessFor~filterAccess
+  - [.set(filter)](./doc/api/api.md#module_@the-/facade-scope.filterAccessFor~filterAccess.set)
+- module:@the-/facade-scope.idAccessFor
+  - [~idAccess](./doc/api/api.md#module_@the-/facade-scope.idAccessFor~idAccess)
+- module:@the-/facade-scope.idAccessFor~idAccess
+  - [.isKnown(id)](./doc/api/api.md#module_@the-/facade-scope.idAccessFor~idAccess.isKnown)
+  - [.set(id)](./doc/api/api.md#module_@the-/facade-scope.idAccessFor~idAccess.set)
+- module:@the-/facade-scope.listOperationAccessFor~listOperation
+  - [.sync(handler)](./doc/api/api.md#module_@the-/facade-scope.listOperationAccessFor~listOperation.sync)
+- module:@the-/facade-scope.listOperationFor
+  - [~listOperation](./doc/api/api.md#module_@the-/facade-scope.listOperationFor~listOperation)
+- module:@the-/facade-scope.moreAccessFor
+  - [~moreAccess](./doc/api/api.md#module_@the-/facade-scope.moreAccessFor~moreAccess)
+- module:@the-/facade-scope.moreAccessFor~moreAccess
+  - [.busyWhile(handler)](./doc/api/api.md#module_@the-/facade-scope.moreAccessFor~moreAccess.busyWhile)
+  - [.setBusy(moreBusy)](./doc/api/api.md#module_@the-/facade-scope.moreAccessFor~moreAccess.setBusy)
+  - [.setHas(hasMore)](./doc/api/api.md#module_@the-/facade-scope.moreAccessFor~moreAccess.setHas)
+- module:@the-/facade-scope.pageAccessFor
+  - [~pageAccess](./doc/api/api.md#module_@the-/facade-scope.pageAccessFor~pageAccess)
+- module:@the-/facade-scope.pageAccessFor~pageAccess
+  - [.getNumber()](./doc/api/api.md#module_@the-/facade-scope.pageAccessFor~pageAccess.getNumber)
+  - [.getSize()](./doc/api/api.md#module_@the-/facade-scope.pageAccessFor~pageAccess.getSize)
+  - [.more(options)](./doc/api/api.md#module_@the-/facade-scope.pageAccessFor~pageAccess.more)
+  - [.next()](./doc/api/api.md#module_@the-/facade-scope.pageAccessFor~pageAccess.next)
+  - [.set(page)](./doc/api/api.md#module_@the-/facade-scope.pageAccessFor~pageAccess.set)
+  - [.setNumber(pageNumber)](./doc/api/api.md#module_@the-/facade-scope.pageAccessFor~pageAccess.setNumber)
+  - [.setSize(pageSize)](./doc/api/api.md#module_@the-/facade-scope.pageAccessFor~pageAccess.setSize)
+- module:@the-/facade-scope.readyAccessFor
+  - [~readyAccess](./doc/api/api.md#module_@the-/facade-scope.readyAccessFor~readyAccess)
+- module:@the-/facade-scope.readyAccessFor~readyAccess
+  - [.false()](./doc/api/api.md#module_@the-/facade-scope.readyAccessFor~readyAccess.false)
+  - [.true()](./doc/api/api.md#module_@the-/facade-scope.readyAccessFor~readyAccess.true)
+  - [.when(handler)](./doc/api/api.md#module_@the-/facade-scope.readyAccessFor~readyAccess.when)
+- module:@the-/facade-scope.sortAccessFor
+  - [~sortAccess](./doc/api/api.md#module_@the-/facade-scope.sortAccessFor~sortAccess)
+- module:@the-/facade-scope.sortAccessFor~sortAccess
+  - [.set(name)](./doc/api/api.md#module_@the-/facade-scope.sortAccessFor~sortAccess.set)
+- global
+  - [operation](./doc/api/api.md#operation)
 
 See [API Guide](./doc/api/api.md) for more detail
 

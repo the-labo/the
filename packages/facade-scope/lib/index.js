@@ -4,15 +4,48 @@
  * @license MIT
  * @module @the-/facade-scope
  * @typicalname facadeScope
- * @version 15.4.11
+ * @version 16.0.0
  */
 'use strict'
 
-const busyFor_ = require('./busyFor')
+const busyAccessFor_ = require('./busyAccessFor')
+const countsAccessFor_ = require('./countsAccessFor')
+const entitiesAccessFor_ = require('./entitiesAccessFor')
+const entityAccessForFor_ = require('./entityAccessForFor')
+const entryAccessFor_ = require('./entryAccessFor')
+const filterAccessFor_ = require('./filterAccessFor')
+const idAccessFor_ = require('./idAccessFor')
+const moreAccessFor_ = require('./moreAccessFor')
+const operations_ = require('./operations')
+const pageAccessFor_ = require('./pageAccessFor')
+const readyAccessFor_ = require('./readyAccessFor')
+const sortAccessFor_ = require('./sortAccessFor')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
-exports.busyFor = busyFor_
+exports.busyAccessFor = busyAccessFor_
+exports.countsAccessFor = countsAccessFor_
+exports.entitiesAccessFor = entitiesAccessFor_
+exports.entityAccessForFor = entityAccessForFor_
+exports.entryAccessFor = entryAccessFor_
+exports.filterAccessFor = filterAccessFor_
+exports.idAccessFor = idAccessFor_
+exports.moreAccessFor = moreAccessFor_
+exports.operations = operations_
+exports.pageAccessFor = pageAccessFor_
+exports.readyAccessFor = readyAccessFor_
+exports.sortAccessFor = sortAccessFor_
 
 module.exports = {
-  busyFor: busyFor_,
+  busyAccessFor: busyAccessFor_,
+  countsAccessFor: countsAccessFor_,
+  entitiesAccessFor: entitiesAccessFor_,
+  entityAccessForFor: entityAccessForFor_,
+  entryAccessFor: entryAccessFor_,
+  filterAccessFor: filterAccessFor_,
+  idAccessFor: idAccessFor_,
+  moreAccessFor: moreAccessFor_,
+  operations: operations_,
+  pageAccessFor: pageAccessFor_,
+  readyAccessFor: readyAccessFor_,
+  sortAccessFor: sortAccessFor_,
 }

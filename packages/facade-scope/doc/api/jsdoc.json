@@ -11,37 +11,192 @@
       "path": "lib"
     },
     "name": "@the-/facade-scope",
-    "order": 6,
+    "order": 35,
     "typicalname": "facadeScope",
-    "version": "15.4.11"
+    "version": "16.0.0"
   },
   {
-    "description": "State of busy",
-    "id": "module:@the-/facade-scope.busyFor~busy.state",
-    "kind": "member",
-    "longname": "module:@the-/facade-scope.busyFor~busy.state",
-    "memberof": "module:@the-/facade-scope.busyFor~busy",
+    "description": "Operation handlers",
+    "id": "operation",
+    "kind": "namespace",
+    "longname": "operation",
     "meta": {
-      "filename": "busyFor.js",
-      "lineno": 25,
+      "filename": "index.js",
+      "lineno": 2,
+      "path": "lib/operations"
+    },
+    "name": "operation",
+    "order": 71,
+    "scope": "global"
+  },
+  {
+    "description": "State of busyAccess",
+    "id": "module:@the-/facade-scope.busyAccessFor~busyAccess.state",
+    "kind": "member",
+    "longname": "module:@the-/facade-scope.busyAccessFor~busyAccess.state",
+    "memberof": "module:@the-/facade-scope.busyAccessFor~busyAccess",
+    "meta": {
+      "filename": "busyAccessFor.js",
+      "lineno": 28,
       "path": "lib"
     },
     "name": "state",
     "order": 3,
-    "scope": "static"
+    "scope": "static",
+    "type": {
+      "names": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "description": "Counts",
+    "id": "module:@the-/facade-scope.countsAccessFor~countsAccess.state",
+    "kind": "member",
+    "longname": "module:@the-/facade-scope.countsAccessFor~countsAccess.state",
+    "memberof": "module:@the-/facade-scope.countsAccessFor~countsAccess",
+    "meta": {
+      "filename": "countsAccessFor.js",
+      "lineno": 43,
+      "path": "lib"
+    },
+    "name": "state",
+    "order": 10,
+    "scope": "static",
+    "type": {
+      "names": [
+        "Object"
+      ]
+    }
+  },
+  {
+    "id": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess.state",
+    "kind": "member",
+    "longname": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess.state",
+    "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
+    "meta": {
+      "filename": "entitiesAccessFor.js",
+      "lineno": 78,
+      "path": "lib"
+    },
+    "name": "state",
+    "order": 18,
+    "scope": "static",
+    "type": {
+      "names": [
+        "Array.<module:@the-/facade-scope.entitiesAccessFor.Entity>"
+      ]
+    }
+  },
+  {
+    "id": "module:@the-/facade-scope.entityAccessForFor~entityAccessFor.state",
+    "kind": "member",
+    "longname": "module:@the-/facade-scope.entityAccessForFor~entityAccessFor.state",
+    "memberof": "module:@the-/facade-scope.entityAccessForFor~entityAccessFor",
+    "meta": {
+      "filename": "entityAccessForFor.js",
+      "lineno": 28,
+      "path": "lib"
+    },
+    "name": "state",
+    "order": 23,
+    "scope": "static",
+    "type": {
+      "names": [
+        "object"
+      ]
+    }
+  },
+  {
+    "id": "module:@the-/facade-scope.filterAccessFor~filterAccess.state",
+    "kind": "member",
+    "longname": "module:@the-/facade-scope.filterAccessFor~filterAccess.state",
+    "memberof": "module:@the-/facade-scope.filterAccessFor~filterAccess",
+    "meta": {
+      "filename": "filterAccessFor.js",
+      "lineno": 28,
+      "path": "lib"
+    },
+    "name": "state",
+    "order": 29,
+    "scope": "static",
+    "type": {
+      "names": [
+        "Object"
+      ]
+    }
+  },
+  {
+    "id": "module:@the-/facade-scope.idAccessFor~idAccess.state",
+    "kind": "member",
+    "longname": "module:@the-/facade-scope.idAccessFor~idAccess.state",
+    "memberof": "module:@the-/facade-scope.idAccessFor~idAccess",
+    "meta": {
+      "filename": "idAccessFor.js",
+      "lineno": 36,
+      "path": "lib"
+    },
+    "name": "state",
+    "order": 34,
+    "scope": "static",
+    "type": {
+      "names": [
+        "string"
+      ]
+    }
+  },
+  {
+    "description": "Page object",
+    "id": "module:@the-/facade-scope.pageAccessFor~pageAccess.state",
+    "kind": "member",
+    "longname": "module:@the-/facade-scope.pageAccessFor~pageAccess.state",
+    "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
+    "meta": {
+      "filename": "pageAccessFor.js",
+      "lineno": 76,
+      "path": "lib"
+    },
+    "name": "state",
+    "order": 50,
+    "scope": "static",
+    "type": {
+      "names": [
+        "Object"
+      ]
+    }
+  },
+  {
+    "description": "Sort value",
+    "id": "module:@the-/facade-scope.sortAccessFor~sortAccess.state",
+    "kind": "member",
+    "longname": "module:@the-/facade-scope.sortAccessFor~sortAccess.state",
+    "memberof": "module:@the-/facade-scope.sortAccessFor~sortAccess",
+    "meta": {
+      "filename": "sortAccessFor.js",
+      "lineno": 31,
+      "path": "lib"
+    },
+    "name": "state",
+    "order": 59,
+    "scope": "static",
+    "type": {
+      "names": [
+        "string"
+      ]
+    }
   },
   {
     "description": "Bush scope access",
-    "id": "module:@the-/facade-scope.busyFor",
+    "id": "module:@the-/facade-scope.busyAccessFor",
     "kind": "function",
-    "longname": "module:@the-/facade-scope.busyFor",
+    "longname": "module:@the-/facade-scope.busyAccessFor",
     "memberof": "module:@the-/facade-scope",
     "meta": {
-      "filename": "busyFor.js",
+      "filename": "busyAccessFor.js",
       "lineno": 1,
       "path": "lib"
     },
-    "name": "busyFor",
+    "name": "busyAccessFor",
     "order": 0,
     "params": [
       {
@@ -57,7 +212,7 @@
       {
         "type": {
           "names": [
-            "Object"
+            "module:@the-/facade-scope.busyAccessFor~busyAccess"
           ]
         },
         "description": "- Face object for busy access"
@@ -67,12 +222,12 @@
   },
   {
     "description": "Set to false",
-    "id": "module:@the-/facade-scope.busyFor~busy.false",
+    "id": "module:@the-/facade-scope.busyAccessFor~busyAccess.false",
     "kind": "function",
-    "longname": "module:@the-/facade-scope.busyFor~busy.false",
-    "memberof": "module:@the-/facade-scope.busyFor~busy",
+    "longname": "module:@the-/facade-scope.busyAccessFor~busyAccess.false",
+    "memberof": "module:@the-/facade-scope.busyAccessFor~busyAccess",
     "meta": {
-      "filename": "busyFor.js",
+      "filename": "busyAccessFor.js",
       "lineno": 21,
       "path": "lib"
     },
@@ -82,13 +237,13 @@
   },
   {
     "description": "Set to true",
-    "id": "module:@the-/facade-scope.busyFor~busy.true",
+    "id": "module:@the-/facade-scope.busyAccessFor~busyAccess.true",
     "kind": "function",
-    "longname": "module:@the-/facade-scope.busyFor~busy.true",
-    "memberof": "module:@the-/facade-scope.busyFor~busy",
+    "longname": "module:@the-/facade-scope.busyAccessFor~busyAccess.true",
+    "memberof": "module:@the-/facade-scope.busyAccessFor~busyAccess",
     "meta": {
-      "filename": "busyFor.js",
-      "lineno": 31,
+      "filename": "busyAccessFor.js",
+      "lineno": 34,
       "path": "lib"
     },
     "name": "true",
@@ -96,14 +251,17 @@
     "scope": "static"
   },
   {
-    "description": "Set busy while handle pending",
-    "id": "module:@the-/facade-scope.busyFor~busy.while",
+    "description": "Set busyAccess while handle pending",
+    "examples": [
+      "busyAccess.while(async () => {\n  await doSomethingAsync()\n})"
+    ],
+    "id": "module:@the-/facade-scope.busyAccessFor~busyAccess.while",
     "kind": "function",
-    "longname": "module:@the-/facade-scope.busyFor~busy.while",
-    "memberof": "module:@the-/facade-scope.busyFor~busy",
+    "longname": "module:@the-/facade-scope.busyAccessFor~busyAccess.while",
+    "memberof": "module:@the-/facade-scope.busyAccessFor~busyAccess",
     "meta": {
-      "filename": "busyFor.js",
-      "lineno": 39,
+      "filename": "busyAccessFor.js",
+      "lineno": 46,
       "path": "lib"
     },
     "name": "while",
@@ -131,17 +289,1596 @@
     "scope": "static"
   },
   {
-    "id": "module:@the-/facade-scope~busy",
-    "kind": "namespace",
-    "longname": "module:@the-/facade-scope~busy",
+    "description": "Bush scope access",
+    "id": "module:@the-/facade-scope.countsAccessFor",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.countsAccessFor",
     "memberof": "module:@the-/facade-scope",
     "meta": {
-      "filename": "busyFor.js",
+      "filename": "countsAccessFor.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "countsAccessFor",
+    "order": 6,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "scope"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "- Face object for counts access"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Has more or not",
+    "id": "module:@the-/facade-scope.countsAccessFor~countsAccess.hasMore",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.countsAccessFor~countsAccess.hasMore",
+    "memberof": "module:@the-/facade-scope.countsAccessFor~countsAccess",
+    "meta": {
+      "filename": "countsAccessFor.js",
+      "lineno": 22,
+      "path": "lib"
+    },
+    "name": "hasMore",
+    "order": 8,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Set counts",
+    "id": "module:@the-/facade-scope.countsAccessFor~countsAccess.set",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.countsAccessFor~countsAccess.set",
+    "memberof": "module:@the-/facade-scope.countsAccessFor~countsAccess",
+    "meta": {
+      "filename": "countsAccessFor.js",
+      "lineno": 35,
+      "path": "lib"
+    },
+    "name": "set",
+    "order": 9,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "counts"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Bush scope access",
+    "id": "module:@the-/facade-scope.entitiesAccessFor",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.entitiesAccessFor",
+    "memberof": "module:@the-/facade-scope",
+    "meta": {
+      "filename": "entitiesAccessFor.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "entitiesAccessFor",
+    "order": 12,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "scope"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "module:@the-/facade-scope.entitiesAccessFor~entities"
+          ]
+        },
+        "description": "- Face object for entities access"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Add entities",
+    "id": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess.add",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess.add",
+    "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
+    "meta": {
+      "filename": "entitiesAccessFor.js",
+      "lineno": 25,
+      "path": "lib"
+    },
+    "name": "add",
+    "order": 14,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Array.<module:@the-/facade-scope.entitiesAccessFor.Entity>"
+          ]
+        },
+        "name": "entities"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Add an module:@the-/facade-scope.entitiesAccessFor.Entity",
+    "id": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess.addOne",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess.addOne",
+    "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
+    "meta": {
+      "filename": "entitiesAccessFor.js",
+      "lineno": 38,
+      "path": "lib"
+    },
+    "name": "addOne",
+    "order": 15,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Entity to add",
+        "name": "entity"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Receive one",
+    "id": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess.receiveOne",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess.receiveOne",
+    "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
+    "meta": {
+      "filename": "entitiesAccessFor.js",
+      "lineno": 52,
+      "path": "lib"
+    },
+    "name": "receiveOne",
+    "order": 16,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "module:@the-/facade-scope.entitiesAccessFor.Entity"
+          ]
+        },
+        "name": "entity"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Optional settings",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": null,
+        "description": "Entity array sorter function",
+        "name": "options.sorter"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Delete one",
+    "id": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess.removeOne",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess.removeOne",
+    "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
+    "meta": {
+      "filename": "entitiesAccessFor.js",
+      "lineno": 65,
+      "path": "lib"
+    },
+    "name": "removeOne",
+    "order": 17,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "module:@the-/facade-scope.entitiesAccessFor.Entity"
+          ]
+        },
+        "description": "Deleting id",
+        "name": "entity"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Update one",
+    "id": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess.updateOne",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess.updateOne",
+    "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
+    "meta": {
+      "filename": "entitiesAccessFor.js",
+      "lineno": 85,
+      "path": "lib"
+    },
+    "name": "updateOne",
+    "order": 19,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "module:@the-/facade-scope.entitiesAccessFor.Entity"
+          ]
+        },
+        "description": "Entity to update",
+        "name": "entity"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Bush scope access",
+    "id": "module:@the-/facade-scope.entityAccessForFor",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.entityAccessForFor",
+    "memberof": "module:@the-/facade-scope",
+    "meta": {
+      "filename": "entityAccessForFor.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "entityAccessForFor",
+    "order": 20,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "scope"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "- Face object for entityAccessFor access"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Set entity",
+    "id": "module:@the-/facade-scope.entityAccessForFor~entityAccessFor.set",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.entityAccessForFor~entityAccessFor.set",
+    "memberof": "module:@the-/facade-scope.entityAccessForFor~entityAccessFor",
+    "meta": {
+      "filename": "entityAccessForFor.js",
+      "lineno": 22,
+      "path": "lib"
+    },
+    "name": "set",
+    "order": 22,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "name": "entity"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Bush scope access",
+    "id": "module:@the-/facade-scope.entryAccessFor",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.entryAccessFor",
+    "memberof": "module:@the-/facade-scope",
+    "meta": {
+      "filename": "entryAccessFor.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "entryAccessFor",
+    "order": 24,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "scope"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "- Face object for entryAccess access"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Bush scope access",
+    "id": "module:@the-/facade-scope.filterAccessFor",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.filterAccessFor",
+    "memberof": "module:@the-/facade-scope",
+    "meta": {
+      "filename": "filterAccessFor.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "filterAccessFor",
+    "order": 26,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "scope"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "- Face object for filter access"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Set filter",
+    "id": "module:@the-/facade-scope.filterAccessFor~filterAccess.set",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.filterAccessFor~filterAccess.set",
+    "memberof": "module:@the-/facade-scope.filterAccessFor~filterAccess",
+    "meta": {
+      "filename": "filterAccessFor.js",
+      "lineno": 22,
+      "path": "lib"
+    },
+    "name": "set",
+    "order": 28,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "filter"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Bush scope access",
+    "id": "module:@the-/facade-scope.idAccessFor",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.idAccessFor",
+    "memberof": "module:@the-/facade-scope",
+    "meta": {
+      "filename": "idAccessFor.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "idAccessFor",
+    "order": 30,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "scope"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "- Face object for id access"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Known or not",
+    "id": "module:@the-/facade-scope.idAccessFor~idAccess.isKnown",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.idAccessFor~idAccess.isKnown",
+    "memberof": "module:@the-/facade-scope.idAccessFor~idAccess",
+    "meta": {
+      "filename": "idAccessFor.js",
+      "lineno": 23,
+      "path": "lib"
+    },
+    "name": "isKnown",
+    "order": 32,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "id"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Set id",
+    "id": "module:@the-/facade-scope.idAccessFor~idAccess.set",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.idAccessFor~idAccess.set",
+    "memberof": "module:@the-/facade-scope.idAccessFor~idAccess",
+    "meta": {
+      "filename": "idAccessFor.js",
+      "lineno": 30,
+      "path": "lib"
+    },
+    "name": "set",
+    "order": 33,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "id"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Bush scope access",
+    "id": "module:@the-/facade-scope.moreAccessFor",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.moreAccessFor",
+    "memberof": "module:@the-/facade-scope",
+    "meta": {
+      "filename": "moreAccessFor.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "moreAccessFor",
+    "order": 36,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "scope"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "- Face object for more access"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Busy true while handling",
+    "id": "module:@the-/facade-scope.moreAccessFor~moreAccess.busyWhile",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.moreAccessFor~moreAccess.busyWhile",
+    "memberof": "module:@the-/facade-scope.moreAccessFor~moreAccess",
+    "meta": {
+      "filename": "moreAccessFor.js",
+      "lineno": 23,
+      "path": "lib"
+    },
+    "name": "busyWhile",
+    "order": 38,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "handler"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Set moreBusy flag",
+    "id": "module:@the-/facade-scope.moreAccessFor~moreAccess.setBusy",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.moreAccessFor~moreAccess.setBusy",
+    "memberof": "module:@the-/facade-scope.moreAccessFor~moreAccess",
+    "meta": {
+      "filename": "moreAccessFor.js",
+      "lineno": 35,
+      "path": "lib"
+    },
+    "name": "setBusy",
+    "order": 39,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "name": "moreBusy"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Set hasMore flag",
+    "id": "module:@the-/facade-scope.moreAccessFor~moreAccess.setHas",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.moreAccessFor~moreAccess.setHas",
+    "memberof": "module:@the-/facade-scope.moreAccessFor~moreAccess",
+    "meta": {
+      "filename": "moreAccessFor.js",
+      "lineno": 42,
+      "path": "lib"
+    },
+    "name": "setHas",
+    "order": 40,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "name": "hasMore"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Bush scope access",
+    "id": "module:@the-/facade-scope.pageAccessFor",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.pageAccessFor",
+    "memberof": "module:@the-/facade-scope",
+    "meta": {
+      "filename": "pageAccessFor.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "pageAccessFor",
+    "order": 41,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "scope"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "- Face object for page access"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Get page number",
+    "id": "module:@the-/facade-scope.pageAccessFor~pageAccess.getNumber",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.pageAccessFor~pageAccess.getNumber",
+    "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
+    "meta": {
+      "filename": "pageAccessFor.js",
+      "lineno": 22,
+      "path": "lib"
+    },
+    "name": "getNumber",
+    "order": 43,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "description": "- Number of page"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Get page size",
+    "id": "module:@the-/facade-scope.pageAccessFor~pageAccess.getSize",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.pageAccessFor~pageAccess.getSize",
+    "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
+    "meta": {
+      "filename": "pageAccessFor.js",
+      "lineno": 29,
+      "path": "lib"
+    },
+    "name": "getSize",
+    "order": 44,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Increment page size",
+    "id": "module:@the-/facade-scope.pageAccessFor~pageAccess.more",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.pageAccessFor~pageAccess.more",
+    "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
+    "meta": {
+      "filename": "pageAccessFor.js",
+      "lineno": 36,
+      "path": "lib"
+    },
+    "name": "more",
+    "order": 45,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional setting",
+        "name": "options"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Increment page number",
+    "id": "module:@the-/facade-scope.pageAccessFor~pageAccess.next",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.pageAccessFor~pageAccess.next",
+    "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
+    "meta": {
+      "filename": "pageAccessFor.js",
+      "lineno": 44,
+      "path": "lib"
+    },
+    "name": "next",
+    "order": 46,
+    "scope": "static"
+  },
+  {
+    "description": "Set",
+    "id": "module:@the-/facade-scope.pageAccessFor~pageAccess.set",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.pageAccessFor~pageAccess.set",
+    "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
+    "meta": {
+      "filename": "pageAccessFor.js",
+      "lineno": 53,
+      "path": "lib"
+    },
+    "name": "set",
+    "order": 47,
+    "params": [
+      {
+        "name": "page"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Set number",
+    "id": "module:@the-/facade-scope.pageAccessFor~pageAccess.setNumber",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.pageAccessFor~pageAccess.setNumber",
+    "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
+    "meta": {
+      "filename": "pageAccessFor.js",
+      "lineno": 62,
+      "path": "lib"
+    },
+    "name": "setNumber",
+    "order": 48,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "name": "pageNumber"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Set size",
+    "id": "module:@the-/facade-scope.pageAccessFor~pageAccess.setSize",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.pageAccessFor~pageAccess.setSize",
+    "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
+    "meta": {
+      "filename": "pageAccessFor.js",
+      "lineno": 69,
+      "path": "lib"
+    },
+    "name": "setSize",
+    "order": 49,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "name": "pageSize"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Bush scope access",
+    "id": "module:@the-/facade-scope.readyAccessFor",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.readyAccessFor",
+    "memberof": "module:@the-/facade-scope",
+    "meta": {
+      "filename": "readyAccessFor.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "readyAccessFor",
+    "order": 51,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "scope"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "- Face object for ready access"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Set to false",
+    "id": "module:@the-/facade-scope.readyAccessFor~readyAccess.false",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.readyAccessFor~readyAccess.false",
+    "memberof": "module:@the-/facade-scope.readyAccessFor~readyAccess",
+    "meta": {
+      "filename": "readyAccessFor.js",
+      "lineno": 21,
+      "path": "lib"
+    },
+    "name": "false",
+    "order": 53,
+    "scope": "static"
+  },
+  {
+    "description": "Set to true",
+    "id": "module:@the-/facade-scope.readyAccessFor~readyAccess.true",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.readyAccessFor~readyAccess.true",
+    "memberof": "module:@the-/facade-scope.readyAccessFor~readyAccess",
+    "meta": {
+      "filename": "readyAccessFor.js",
+      "lineno": 27,
+      "path": "lib"
+    },
+    "name": "true",
+    "order": 54,
+    "scope": "static"
+  },
+  {
+    "description": "Set busy while handle pending",
+    "id": "module:@the-/facade-scope.readyAccessFor~readyAccess.when",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.readyAccessFor~readyAccess.when",
+    "memberof": "module:@the-/facade-scope.readyAccessFor~readyAccess",
+    "meta": {
+      "filename": "readyAccessFor.js",
+      "lineno": 35,
+      "path": "lib"
+    },
+    "name": "when",
+    "order": 55,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Async handler",
+        "name": "handler"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Bush scope access",
+    "id": "module:@the-/facade-scope.sortAccessFor",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.sortAccessFor",
+    "memberof": "module:@the-/facade-scope",
+    "meta": {
+      "filename": "sortAccessFor.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "sortAccessFor",
+    "order": 56,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "scope"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "- Face object for sort access"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Set sort",
+    "id": "module:@the-/facade-scope.sortAccessFor~sortAccess.set",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.sortAccessFor~sortAccess.set",
+    "memberof": "module:@the-/facade-scope.sortAccessFor~sortAccess",
+    "meta": {
+      "filename": "sortAccessFor.js",
+      "lineno": 24,
+      "path": "lib"
+    },
+    "name": "set",
+    "order": 58,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "name"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Bush scope access",
+    "id": "module:@the-/facade-scope.createOperationForFor",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.createOperationForFor",
+    "memberof": "module:@the-/facade-scope",
+    "meta": {
+      "filename": "createOperationForFor.js",
+      "lineno": 1,
+      "path": "lib/operations"
+    },
+    "name": "createOperationForFor",
+    "order": 60,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "scope"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "- Face object for createOperationFor access"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Execute creating",
+    "examples": [
+      "await createOperation.exec(async (values) => {\n  await someCtrl.create(values)\n})"
+    ],
+    "id": "module:@the-/facade-scope.createOperationForFor~createOperationFor.exec",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.createOperationForFor~createOperationFor.exec",
+    "memberof": "module:@the-/facade-scope.createOperationForFor~createOperationFor",
+    "meta": {
+      "filename": "createOperationForFor.js",
+      "lineno": 35,
+      "path": "lib/operations"
+    },
+    "name": "exec",
+    "order": 62,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "handler"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<undefined>"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Init scope",
+    "id": "module:@the-/facade-scope.createOperationForFor~createOperationFor.init",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.createOperationForFor~createOperationFor.init",
+    "memberof": "module:@the-/facade-scope.createOperationForFor~createOperationFor",
+    "meta": {
+      "filename": "createOperationForFor.js",
+      "lineno": 41,
+      "path": "lib/operations"
+    },
+    "name": "init",
+    "order": 63,
+    "scope": "static"
+  },
+  {
+    "description": "Set entry",
+    "id": "module:@the-/facade-scope.createOperationForFor~createOperationFor.setEntry",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.createOperationForFor~createOperationFor.setEntry",
+    "memberof": "module:@the-/facade-scope.createOperationForFor~createOperationFor",
+    "meta": {
+      "filename": "createOperationForFor.js",
+      "lineno": 49,
+      "path": "lib/operations"
+    },
+    "name": "setEntry",
+    "order": 64,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "entry"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<undefined>"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Bush scope access",
+    "id": "module:@the-/facade-scope.destroyOperationForFor",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.destroyOperationForFor",
+    "memberof": "module:@the-/facade-scope",
+    "meta": {
+      "filename": "destroyOperationForFor.js",
+      "lineno": 1,
+      "path": "lib/operations"
+    },
+    "name": "destroyOperationForFor",
+    "order": 65,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "scope"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "- Face object for destroyOperationFor access"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Bush scope access",
+    "id": "module:@the-/facade-scope.detailOperationFor",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.detailOperationFor",
+    "memberof": "module:@the-/facade-scope",
+    "meta": {
+      "filename": "detailOperationFor.js",
+      "lineno": 1,
+      "path": "lib/operations"
+    },
+    "name": "detailOperationFor",
+    "order": 67,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "scope"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "- Face object for detailOperation access"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Bush scope access",
+    "id": "module:@the-/facade-scope.editOperationForFor",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.editOperationForFor",
+    "memberof": "module:@the-/facade-scope",
+    "meta": {
+      "filename": "editOperationForFor.js",
+      "lineno": 1,
+      "path": "lib/operations"
+    },
+    "name": "editOperationForFor",
+    "order": 69,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "scope"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "- Face object for editOperationFor access"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "List for entity",
+    "id": "module:@the-/facade-scope.listOperationFor",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.listOperationFor",
+    "memberof": "module:@the-/facade-scope",
+    "meta": {
+      "filename": "listOperationFor.js",
+      "lineno": 1,
+      "path": "lib/operations"
+    },
+    "name": "listOperationFor",
+    "order": 72,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "module:@the-/facade-scope.listOperationFor~listOperation"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/facade-scope.listOperationAccessFor~listOperation.sync",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.listOperationAccessFor~listOperation.sync",
+    "memberof": "module:@the-/facade-scope.listOperationAccessFor~listOperation",
+    "meta": {
+      "filename": "listOperationFor.js",
+      "lineno": 70,
+      "path": "lib/operations"
+    },
+    "name": "sync",
+    "order": 74,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Async handler",
+        "name": "handler"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<(*|Promise.<*>)>"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Bush scope access",
+    "id": "module:@the-/facade-scope.operationForFor",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.operationForFor",
+    "memberof": "module:@the-/facade-scope",
+    "meta": {
+      "filename": "operationForFor.js",
+      "lineno": 1,
+      "path": "lib/operations"
+    },
+    "name": "operationForFor",
+    "order": 75,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "scope"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "- Face object for operationFor access"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/facade-scope.entitiesAccessFor.Entity",
+    "kind": "typedef",
+    "longname": "module:@the-/facade-scope.entitiesAccessFor.Entity",
+    "memberof": "module:@the-/facade-scope.entitiesAccessFor",
+    "meta": {
+      "filename": "entitiesAccessFor.js",
+      "lineno": 100,
+      "path": "lib"
+    },
+    "name": "Entity",
+    "order": 11,
+    "properties": [
+      {
+        "type": {
+          "names": [
+            "id"
+          ]
+        },
+        "description": "Id"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/facade-scope.busyAccessFor~busyAccess",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-scope.busyAccessFor~busyAccess",
+    "memberof": "module:@the-/facade-scope.busyAccessFor",
+    "meta": {
+      "filename": "busyAccessFor.js",
       "lineno": 12,
       "path": "lib"
     },
-    "name": "busy",
+    "name": "busyAccess",
     "order": 1,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/facade-scope.countsAccessFor~countsAccess",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-scope.countsAccessFor~countsAccess",
+    "memberof": "module:@the-/facade-scope.countsAccessFor",
+    "meta": {
+      "filename": "countsAccessFor.js",
+      "lineno": 12,
+      "path": "lib"
+    },
+    "name": "countsAccess",
+    "order": 7,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
+    "memberof": "module:@the-/facade-scope.entitiesAccessFor",
+    "meta": {
+      "filename": "entitiesAccessFor.js",
+      "lineno": 14,
+      "path": "lib"
+    },
+    "name": "entitiesAccess",
+    "order": 13,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/facade-scope.entityAccessForFor~entityAccessFor",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-scope.entityAccessForFor~entityAccessFor",
+    "memberof": "module:@the-/facade-scope.entityAccessForFor",
+    "meta": {
+      "filename": "entityAccessForFor.js",
+      "lineno": 12,
+      "path": "lib"
+    },
+    "name": "entityAccessFor",
+    "order": 21,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/facade-scope.entryAccessFor~entryAccess",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-scope.entryAccessFor~entryAccess",
+    "memberof": "module:@the-/facade-scope.entryAccessFor",
+    "meta": {
+      "filename": "entryAccessFor.js",
+      "lineno": 14,
+      "path": "lib"
+    },
+    "name": "entryAccess",
+    "order": 25,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/facade-scope.filterAccessFor~filterAccess",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-scope.filterAccessFor~filterAccess",
+    "memberof": "module:@the-/facade-scope.filterAccessFor",
+    "meta": {
+      "filename": "filterAccessFor.js",
+      "lineno": 12,
+      "path": "lib"
+    },
+    "name": "filterAccess",
+    "order": 27,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/facade-scope.idAccessFor~idAccess",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-scope.idAccessFor~idAccess",
+    "memberof": "module:@the-/facade-scope.idAccessFor",
+    "meta": {
+      "filename": "idAccessFor.js",
+      "lineno": 12,
+      "path": "lib"
+    },
+    "name": "idAccess",
+    "order": 31,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/facade-scope.moreAccessFor~moreAccess",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-scope.moreAccessFor~moreAccess",
+    "memberof": "module:@the-/facade-scope.moreAccessFor",
+    "meta": {
+      "filename": "moreAccessFor.js",
+      "lineno": 12,
+      "path": "lib"
+    },
+    "name": "moreAccess",
+    "order": 37,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/facade-scope.pageAccessFor~pageAccess",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-scope.pageAccessFor~pageAccess",
+    "memberof": "module:@the-/facade-scope.pageAccessFor",
+    "meta": {
+      "filename": "pageAccessFor.js",
+      "lineno": 12,
+      "path": "lib"
+    },
+    "name": "pageAccess",
+    "order": 42,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/facade-scope.readyAccessFor~readyAccess",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-scope.readyAccessFor~readyAccess",
+    "memberof": "module:@the-/facade-scope.readyAccessFor",
+    "meta": {
+      "filename": "readyAccessFor.js",
+      "lineno": 12,
+      "path": "lib"
+    },
+    "name": "readyAccess",
+    "order": 52,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/facade-scope.sortAccessFor~sortAccess",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-scope.sortAccessFor~sortAccess",
+    "memberof": "module:@the-/facade-scope.sortAccessFor",
+    "meta": {
+      "filename": "sortAccessFor.js",
+      "lineno": 14,
+      "path": "lib"
+    },
+    "name": "sortAccess",
+    "order": 57,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/facade-scope.createOperationForFor~createOperationFor",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-scope.createOperationForFor~createOperationFor",
+    "memberof": "module:@the-/facade-scope.createOperationForFor",
+    "meta": {
+      "filename": "createOperationForFor.js",
+      "lineno": 18,
+      "path": "lib/operations"
+    },
+    "name": "createOperationFor",
+    "order": 61,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/facade-scope.destroyOperationForFor~destroyOperationFor",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-scope.destroyOperationForFor~destroyOperationFor",
+    "memberof": "module:@the-/facade-scope.destroyOperationForFor",
+    "meta": {
+      "filename": "destroyOperationForFor.js",
+      "lineno": 19,
+      "path": "lib/operations"
+    },
+    "name": "destroyOperationFor",
+    "order": 66,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/facade-scope.detailOperationFor~detailOperation",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-scope.detailOperationFor~detailOperation",
+    "memberof": "module:@the-/facade-scope.detailOperationFor",
+    "meta": {
+      "filename": "detailOperationFor.js",
+      "lineno": 21,
+      "path": "lib/operations"
+    },
+    "name": "detailOperation",
+    "order": 68,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/facade-scope.editOperationForFor~editOperationFor",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-scope.editOperationForFor~editOperationFor",
+    "memberof": "module:@the-/facade-scope.editOperationForFor",
+    "meta": {
+      "filename": "editOperationForFor.js",
+      "lineno": 22,
+      "path": "lib/operations"
+    },
+    "name": "editOperationFor",
+    "order": 70,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/facade-scope.listOperationFor~listOperation",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-scope.listOperationFor~listOperation",
+    "memberof": "module:@the-/facade-scope.listOperationFor",
+    "meta": {
+      "filename": "listOperationFor.js",
+      "lineno": 29,
+      "path": "lib/operations"
+    },
+    "name": "listOperation",
+    "order": 73,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/facade-scope.operationForFor~operationFor",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-scope.operationForFor~operationFor",
+    "memberof": "module:@the-/facade-scope.operationForFor",
+    "meta": {
+      "filename": "operationForFor.js",
+      "lineno": 15,
+      "path": "lib/operations"
+    },
+    "name": "operationFor",
+    "order": 76,
     "scope": "inner"
   }
 ]

@@ -149,6 +149,23 @@ describe('process-js-doc', () => {
 `,
     )
   })
+
+  it('Handle any', async () => {
+    equal(
+      await processJSDoc(`
+/**
+ * @function hoge
+ * @returns {Promise.<any>} 
+ */
+`),
+      `
+/**
+ * @function hoge
+ * @returns {Promise<*>} 
+ */
+`,
+    )
+  })
 })
 
 /* global describe, before, after, it */

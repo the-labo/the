@@ -1,7 +1,7 @@
 {
   "name": "@the-/facade-scope",
   "description": "Facade to wrap scopes",
-  "version": "15.4.11",
+  "version": "16.0.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,7 +11,10 @@
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@the-/util-array": "^15.4.3",
+    "objnest": "^5.0.6"
+  },
   "devDependencies": {
     "@the-/scope": "^15.4.3",
     "@the-/store": "file:../store"
