@@ -13,7 +13,7 @@
     "name": "@the-/facade-scope",
     "order": 35,
     "typicalname": "facadeScope",
-    "version": "16.0.0"
+    "version": "16.0.1"
   },
   {
     "description": "Operation handlers",
@@ -89,12 +89,12 @@
     }
   },
   {
-    "id": "module:@the-/facade-scope.entityAccessForFor~entityAccessFor.state",
+    "id": "module:@the-/facade-scope.entityAccessFor~entityAccessFor.state",
     "kind": "member",
-    "longname": "module:@the-/facade-scope.entityAccessForFor~entityAccessFor.state",
-    "memberof": "module:@the-/facade-scope.entityAccessForFor~entityAccessFor",
+    "longname": "module:@the-/facade-scope.entityAccessFor~entityAccessFor.state",
+    "memberof": "module:@the-/facade-scope.entityAccessFor~entityAccessFor",
     "meta": {
-      "filename": "entityAccessForFor.js",
+      "filename": "entityAccessFor.js",
       "lineno": 28,
       "path": "lib"
     },
@@ -577,16 +577,16 @@
   },
   {
     "description": "Bush scope access",
-    "id": "module:@the-/facade-scope.entityAccessForFor",
+    "id": "module:@the-/facade-scope.entityAccessFor",
     "kind": "function",
-    "longname": "module:@the-/facade-scope.entityAccessForFor",
+    "longname": "module:@the-/facade-scope.entityAccessFor",
     "memberof": "module:@the-/facade-scope",
     "meta": {
-      "filename": "entityAccessForFor.js",
+      "filename": "entityAccessFor.js",
       "lineno": 1,
       "path": "lib"
     },
-    "name": "entityAccessForFor",
+    "name": "entityAccessFor",
     "order": 20,
     "params": [
       {
@@ -612,12 +612,12 @@
   },
   {
     "description": "Set entity",
-    "id": "module:@the-/facade-scope.entityAccessForFor~entityAccessFor.set",
+    "id": "module:@the-/facade-scope.entityAccessFor~entityAccessFor.set",
     "kind": "function",
-    "longname": "module:@the-/facade-scope.entityAccessForFor~entityAccessFor.set",
-    "memberof": "module:@the-/facade-scope.entityAccessForFor~entityAccessFor",
+    "longname": "module:@the-/facade-scope.entityAccessFor~entityAccessFor.set",
+    "memberof": "module:@the-/facade-scope.entityAccessFor~entityAccessFor",
     "meta": {
-      "filename": "entityAccessForFor.js",
+      "filename": "entityAccessFor.js",
       "lineno": 22,
       "path": "lib"
     },
@@ -1302,16 +1302,16 @@
   },
   {
     "description": "Bush scope access",
-    "id": "module:@the-/facade-scope.createOperationForFor",
+    "id": "module:@the-/facade-scope.createOperationFor",
     "kind": "function",
-    "longname": "module:@the-/facade-scope.createOperationForFor",
+    "longname": "module:@the-/facade-scope.createOperationFor",
     "memberof": "module:@the-/facade-scope",
     "meta": {
-      "filename": "createOperationForFor.js",
+      "filename": "createOperationFor.js",
       "lineno": 1,
       "path": "lib/operations"
     },
-    "name": "createOperationForFor",
+    "name": "createOperationFor",
     "order": 60,
     "params": [
       {
@@ -1340,12 +1340,12 @@
     "examples": [
       "await createOperation.exec(async (values) => {\n  await someCtrl.create(values)\n})"
     ],
-    "id": "module:@the-/facade-scope.createOperationForFor~createOperationFor.exec",
+    "id": "module:@the-/facade-scope.createOperationFor~createOperationFor.exec",
     "kind": "function",
-    "longname": "module:@the-/facade-scope.createOperationForFor~createOperationFor.exec",
-    "memberof": "module:@the-/facade-scope.createOperationForFor~createOperationFor",
+    "longname": "module:@the-/facade-scope.createOperationFor~createOperationFor.exec",
+    "memberof": "module:@the-/facade-scope.createOperationFor~createOperationFor",
     "meta": {
-      "filename": "createOperationForFor.js",
+      "filename": "createOperationFor.js",
       "lineno": 35,
       "path": "lib/operations"
     },
@@ -1374,12 +1374,12 @@
   },
   {
     "description": "Init scope",
-    "id": "module:@the-/facade-scope.createOperationForFor~createOperationFor.init",
+    "id": "module:@the-/facade-scope.createOperationFor~createOperationFor.init",
     "kind": "function",
-    "longname": "module:@the-/facade-scope.createOperationForFor~createOperationFor.init",
-    "memberof": "module:@the-/facade-scope.createOperationForFor~createOperationFor",
+    "longname": "module:@the-/facade-scope.createOperationFor~createOperationFor.init",
+    "memberof": "module:@the-/facade-scope.createOperationFor~createOperationFor",
     "meta": {
-      "filename": "createOperationForFor.js",
+      "filename": "createOperationFor.js",
       "lineno": 41,
       "path": "lib/operations"
     },
@@ -1389,12 +1389,12 @@
   },
   {
     "description": "Set entry",
-    "id": "module:@the-/facade-scope.createOperationForFor~createOperationFor.setEntry",
+    "id": "module:@the-/facade-scope.createOperationFor~createOperationFor.setEntry",
     "kind": "function",
-    "longname": "module:@the-/facade-scope.createOperationForFor~createOperationFor.setEntry",
-    "memberof": "module:@the-/facade-scope.createOperationForFor~createOperationFor",
+    "longname": "module:@the-/facade-scope.createOperationFor~createOperationFor.setEntry",
+    "memberof": "module:@the-/facade-scope.createOperationFor~createOperationFor",
     "meta": {
-      "filename": "createOperationForFor.js",
+      "filename": "createOperationFor.js",
       "lineno": 49,
       "path": "lib/operations"
     },
@@ -1423,16 +1423,16 @@
   },
   {
     "description": "Bush scope access",
-    "id": "module:@the-/facade-scope.destroyOperationForFor",
+    "id": "module:@the-/facade-scope.destroyOperationFor",
     "kind": "function",
-    "longname": "module:@the-/facade-scope.destroyOperationForFor",
+    "longname": "module:@the-/facade-scope.destroyOperationFor",
     "memberof": "module:@the-/facade-scope",
     "meta": {
-      "filename": "destroyOperationForFor.js",
+      "filename": "destroyOperationFor.js",
       "lineno": 1,
       "path": "lib/operations"
     },
-    "name": "destroyOperationForFor",
+    "name": "destroyOperationFor",
     "order": 65,
     "params": [
       {
@@ -1493,16 +1493,16 @@
   },
   {
     "description": "Bush scope access",
-    "id": "module:@the-/facade-scope.editOperationForFor",
+    "id": "module:@the-/facade-scope.editOperationFor",
     "kind": "function",
-    "longname": "module:@the-/facade-scope.editOperationForFor",
+    "longname": "module:@the-/facade-scope.editOperationFor",
     "memberof": "module:@the-/facade-scope",
     "meta": {
-      "filename": "editOperationForFor.js",
+      "filename": "editOperationFor.js",
       "lineno": 1,
       "path": "lib/operations"
     },
-    "name": "editOperationForFor",
+    "name": "editOperationFor",
     "order": 69,
     "params": [
       {
@@ -1586,16 +1586,16 @@
   },
   {
     "description": "Bush scope access",
-    "id": "module:@the-/facade-scope.operationForFor",
+    "id": "module:@the-/facade-scope.operationFor",
     "kind": "function",
-    "longname": "module:@the-/facade-scope.operationForFor",
+    "longname": "module:@the-/facade-scope.operationFor",
     "memberof": "module:@the-/facade-scope",
     "meta": {
-      "filename": "operationForFor.js",
+      "filename": "operationFor.js",
       "lineno": 1,
       "path": "lib/operations"
     },
-    "name": "operationForFor",
+    "name": "operationFor",
     "order": 75,
     "params": [
       {
@@ -1686,12 +1686,12 @@
     "scope": "inner"
   },
   {
-    "id": "module:@the-/facade-scope.entityAccessForFor~entityAccessFor",
+    "id": "module:@the-/facade-scope.entityAccessFor~entityAccessFor",
     "kind": "namespace",
-    "longname": "module:@the-/facade-scope.entityAccessForFor~entityAccessFor",
-    "memberof": "module:@the-/facade-scope.entityAccessForFor",
+    "longname": "module:@the-/facade-scope.entityAccessFor~entityAccessFor",
+    "memberof": "module:@the-/facade-scope.entityAccessFor",
     "meta": {
-      "filename": "entityAccessForFor.js",
+      "filename": "entityAccessFor.js",
       "lineno": 12,
       "path": "lib"
     },
@@ -1798,12 +1798,12 @@
     "scope": "inner"
   },
   {
-    "id": "module:@the-/facade-scope.createOperationForFor~createOperationFor",
+    "id": "module:@the-/facade-scope.createOperationFor~createOperationFor",
     "kind": "namespace",
-    "longname": "module:@the-/facade-scope.createOperationForFor~createOperationFor",
-    "memberof": "module:@the-/facade-scope.createOperationForFor",
+    "longname": "module:@the-/facade-scope.createOperationFor~createOperationFor",
+    "memberof": "module:@the-/facade-scope.createOperationFor",
     "meta": {
-      "filename": "createOperationForFor.js",
+      "filename": "createOperationFor.js",
       "lineno": 18,
       "path": "lib/operations"
     },
@@ -1812,12 +1812,12 @@
     "scope": "inner"
   },
   {
-    "id": "module:@the-/facade-scope.destroyOperationForFor~destroyOperationFor",
+    "id": "module:@the-/facade-scope.destroyOperationFor~destroyOperationFor",
     "kind": "namespace",
-    "longname": "module:@the-/facade-scope.destroyOperationForFor~destroyOperationFor",
-    "memberof": "module:@the-/facade-scope.destroyOperationForFor",
+    "longname": "module:@the-/facade-scope.destroyOperationFor~destroyOperationFor",
+    "memberof": "module:@the-/facade-scope.destroyOperationFor",
     "meta": {
-      "filename": "destroyOperationForFor.js",
+      "filename": "destroyOperationFor.js",
       "lineno": 19,
       "path": "lib/operations"
     },
@@ -1840,12 +1840,12 @@
     "scope": "inner"
   },
   {
-    "id": "module:@the-/facade-scope.editOperationForFor~editOperationFor",
+    "id": "module:@the-/facade-scope.editOperationFor~editOperationFor",
     "kind": "namespace",
-    "longname": "module:@the-/facade-scope.editOperationForFor~editOperationFor",
-    "memberof": "module:@the-/facade-scope.editOperationForFor",
+    "longname": "module:@the-/facade-scope.editOperationFor~editOperationFor",
+    "memberof": "module:@the-/facade-scope.editOperationFor",
     "meta": {
-      "filename": "editOperationForFor.js",
+      "filename": "editOperationFor.js",
       "lineno": 22,
       "path": "lib/operations"
     },
@@ -1868,12 +1868,12 @@
     "scope": "inner"
   },
   {
-    "id": "module:@the-/facade-scope.operationForFor~operationFor",
+    "id": "module:@the-/facade-scope.operationFor~operationFor",
     "kind": "namespace",
-    "longname": "module:@the-/facade-scope.operationForFor~operationFor",
-    "memberof": "module:@the-/facade-scope.operationForFor",
+    "longname": "module:@the-/facade-scope.operationFor~operationFor",
+    "memberof": "module:@the-/facade-scope.operationFor",
     "meta": {
-      "filename": "operationForFor.js",
+      "filename": "operationFor.js",
       "lineno": 15,
       "path": "lib/operations"
     },

@@ -4,14 +4,14 @@
  * @license MIT
  * @module @the-/facade-scope
  * @typicalname facadeScope
- * @version 16.0.0
+ * @version 16.0.1
  */
 'use strict'
 
 const busyAccessFor_ = require('./busyAccessFor')
 const countsAccessFor_ = require('./countsAccessFor')
 const entitiesAccessFor_ = require('./entitiesAccessFor')
-const entityAccessForFor_ = require('./entityAccessForFor')
+const entityAccessFor_ = require('./entityAccessFor')
 const entryAccessFor_ = require('./entryAccessFor')
 const filterAccessFor_ = require('./filterAccessFor')
 const idAccessFor_ = require('./idAccessFor')
@@ -25,7 +25,7 @@ const sortAccessFor_ = require('./sortAccessFor')
 exports.busyAccessFor = busyAccessFor_
 exports.countsAccessFor = countsAccessFor_
 exports.entitiesAccessFor = entitiesAccessFor_
-exports.entityAccessForFor = entityAccessForFor_
+exports.entityAccessFor = entityAccessFor_
 exports.entryAccessFor = entryAccessFor_
 exports.filterAccessFor = filterAccessFor_
 exports.idAccessFor = idAccessFor_
@@ -39,7 +39,7 @@ module.exports = {
   busyAccessFor: busyAccessFor_,
   countsAccessFor: countsAccessFor_,
   entitiesAccessFor: entitiesAccessFor_,
-  entityAccessForFor: entityAccessForFor_,
+  entityAccessFor: entityAccessFor_,
   entryAccessFor: entryAccessFor_,
   filterAccessFor: filterAccessFor_,
   idAccessFor: idAccessFor_,

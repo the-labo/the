@@ -1,7 +1,7 @@
 /**
  * Bush scope access
  * @memberof module:@the-/facade-scope
- * @function operationForFor
+ * @function operationFor
  * @param {Object} scope
  * @returns {Object} - Face object for operationFor access
  */
@@ -9,11 +9,11 @@
 
 const busyAccessFor = require('../busyAccessFor')
 
-/** @lends module:@the-/facade-scope.operationForFor */
-function operationForFor(scope) {
+/** @lends module:@the-/facade-scope.operationFor */
+function operationFor(scope) {
   const busyAccess = busyAccessFor(scope)
   /**
-   * @memberof module:@the-/facade-scope.operationForFor
+   * @memberof module:@the-/facade-scope.operationFor
    * @inner
    * @namespace operationFor
    */
@@ -29,4 +29,4 @@ function operationForFor(scope) {
   return operationFor
 }
 
-module.exports = operationForFor
+module.exports = operationFor

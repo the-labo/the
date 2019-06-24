@@ -4,20 +4,12 @@
  */
 'use strict'
 
-const sortAccessFor = require('../lib/sortAccessFor')
-
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('sort-access-for', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-    
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

@@ -4,20 +4,12 @@
  */
 'use strict'
 
-const moreAccessFor = require('../lib/moreAccessFor')
-
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('more-access-for', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-    
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

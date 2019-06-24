@@ -5,26 +5,26 @@
  */
 'use strict'
 
-const createOperationForFor_ = require('./createOperationForFor')
-const destroyOperationForFor_ = require('./destroyOperationForFor')
+const createOperationFor_ = require('./createOperationFor')
+const destroyOperationFor_ = require('./destroyOperationFor')
 const detailOperationFor_ = require('./detailOperationFor')
-const editOperationForFor_ = require('./editOperationForFor')
+const editOperationFor_ = require('./editOperationFor')
 const listOperationFor_ = require('./listOperationFor')
-const operationForFor_ = require('./operationForFor')
+const operationFor_ = require('./operationFor')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
-exports.createOperationForFor = createOperationForFor_
-exports.destroyOperationForFor = destroyOperationForFor_
+exports.createOperationFor = createOperationFor_
+exports.destroyOperationFor = destroyOperationFor_
 exports.detailOperationFor = detailOperationFor_
-exports.editOperationForFor = editOperationForFor_
+exports.editOperationFor = editOperationFor_
 exports.listOperationFor = listOperationFor_
-exports.operationForFor = operationForFor_
+exports.operationFor = operationFor_
 
 module.exports = {
-  createOperationForFor: createOperationForFor_,
-  destroyOperationForFor: destroyOperationForFor_,
+  createOperationFor: createOperationFor_,
+  destroyOperationFor: destroyOperationFor_,
   detailOperationFor: detailOperationFor_,
-  editOperationForFor: editOperationForFor_,
+  editOperationFor: editOperationFor_,
   listOperationFor: listOperationFor_,
-  operationForFor: operationForFor_,
+  operationFor: operationFor_,
 }

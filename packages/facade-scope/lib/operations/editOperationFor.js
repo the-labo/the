@@ -1,33 +1,35 @@
 /**
  * Bush scope access
  * @memberof module:@the-/facade-scope
- * @function destroyOperationForFor
+ * @function editOperationFor
  * @param {Object} scope
- * @returns {Object} - Face object for destroyOperationFor access
+ * @returns {Object} - Face object for editOperationFor access
  */
 'use strict'
 
 const busyAccessFor = require('../busyAccessFor')
 const entityAccessFor = require('../entityAccessFor')
+const entryAccessFor = require('../entryAccessFor')
 const idAccessFor = require('../idAccessFor')
 
-/** @lends module:@the-/facade-scope.destroyOperationForFor */
-function destroyOperationForFor(scope) {
-  const busyAccess = busyAccessFor(scope)
+/** @lends module:@the-/facade-scope.editOperationFor */
+function editOperationFor(scope) {
   const idAccess = idAccessFor(scope)
+  const entryAccess = entryAccessFor(scope)
+  const busyAccess = busyAccessFor(scope)
   const entityAccess = entityAccessFor(scope)
+
   /**
-   * @memberof module:@the-/facade-scope.destroyOperationForFor
+   * @memberof module:@the-/facade-scope.editOperationFor
    * @inner
-   * @namespace destroyOperationFor
+   * @namespace editOperationFor
    */
-  const destroyOperationFor = {
+  const editOperationFor = {
     busyAccess,
     entityAccess,
+    entryAccess,
     async exec(handler) {
-      await busyAccess.while(async () => {
-        await handler()
-      })
+      await busyAccess.while(async () => entryAccess.process(handler))
     },
     idAccess,
     init() {
@@ -45,9 +47,9 @@ function destroyOperationForFor(scope) {
     },
   }
 
-  Object.freeze(destroyOperationFor)
+  Object.freeze(editOperationFor)
 
-  return destroyOperationFor
+  return editOperationFor
 }
 
-module.exports = destroyOperationForFor
+module.exports = editOperationFor

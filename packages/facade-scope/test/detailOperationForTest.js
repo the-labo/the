@@ -4,20 +4,12 @@
  */
 'use strict'
 
-const detailOperationFor = require('../lib/operations/detailOperationFor')
-
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('detail-operation-for', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-    
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

@@ -1,16 +1,16 @@
 /**
  * Bush scope access
  * @memberof module:@the-/facade-scope
- * @function entityAccessForFor
+ * @function entityAccessFor
  * @param {Object} scope
  * @returns {Object} - Face object for entityAccessFor access
  */
 'use strict'
 
-/** @lends module:@the-/facade-scope.entityAccessForFor */
-function entityAccessForFor(scope) {
+/** @lends module:@the-/facade-scope.entityAccessFor */
+function entityAccessFor(scope) {
   /**
-   * @memberof module:@the-/facade-scope.entityAccessForFor
+   * @memberof module:@the-/facade-scope.entityAccessFor
    * @inner
    * @namespace entityAccessFor
    */
@@ -35,4 +35,4 @@ function entityAccessForFor(scope) {
   return entityAccessFor
 }
 
-module.exports = entityAccessForFor
+module.exports = entityAccessFor

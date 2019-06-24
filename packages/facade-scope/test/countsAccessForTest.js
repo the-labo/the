@@ -4,20 +4,12 @@
  */
 'use strict'
 
-const countsAccessFor = require('../lib/countsAccessFor')
-
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('counts-access-for', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-    
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

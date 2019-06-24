@@ -1,10 +1,10 @@
 /**
- * Test for pageAccessFor.
+ * Test for destroyOperationFor.
  * Runs with mocha.
  */
 'use strict'
 
-describe('page-access-for', () => {
+describe('destroy-operation-for', () => {
   before(() => {})
 
   after(() => {})

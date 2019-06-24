@@ -1,10 +1,10 @@
 /**
- * Test for pageAccessFor.
+ * Test for operationFor.
  * Runs with mocha.
  */
 'use strict'
 
-describe('page-access-for', () => {
+describe('operation-for', () => {
   before(() => {})
 
   after(() => {})

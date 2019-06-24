@@ -4,20 +4,12 @@
  */
 'use strict'
 
-const entryAccessFor = require('../lib/entryAccessFor')
-
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('entry-access-for', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-    
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

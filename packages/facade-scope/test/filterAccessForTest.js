@@ -4,20 +4,12 @@
  */
 'use strict'
 
-const filterAccessFor = require('../lib/filterAccessFor')
-
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('filter-access-for', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-    
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

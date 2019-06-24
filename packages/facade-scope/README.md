@@ -52,11 +52,13 @@ Facade to wrap scopes
   - [.detailOperationFor(scope)](./doc/api/api.md#module_@the-/facade-scope.detailOperationFor)
   - [.editOperationForFor(scope)](./doc/api/api.md#module_@the-/facade-scope.editOperationForFor)
   - [.entitiesAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.entitiesAccessFor)
+  - [.entityAccessForFor(scope)](./doc/api/api.md#module_@the-/facade-scope.entityAccessForFor)
   - [.entryAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.entryAccessFor)
   - [.filterAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.filterAccessFor)
   - [.idAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.idAccessFor)
   - [.listOperationFor()](./doc/api/api.md#module_@the-/facade-scope.listOperationFor)
   - [.moreAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.moreAccessFor)
+  - [.operationForFor(scope)](./doc/api/api.md#module_@the-/facade-scope.operationForFor)
   - [.pageAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.pageAccessFor)
   - [.readyAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.readyAccessFor)
   - [.sortAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.sortAccessFor)
@@ -73,6 +75,10 @@ Facade to wrap scopes
   - [.set(counts)](./doc/api/api.md#module_@the-/facade-scope.countsAccessFor~countsAccess.set)
 - module:@the-/facade-scope.createOperationForFor
   - [~createOperationFor](./doc/api/api.md#module_@the-/facade-scope.createOperationForFor~createOperationFor)
+- module:@the-/facade-scope.createOperationForFor~createOperationFor
+  - [.exec(handler)](./doc/api/api.md#module_@the-/facade-scope.createOperationForFor~createOperationFor.exec)
+  - [.init()](./doc/api/api.md#module_@the-/facade-scope.createOperationForFor~createOperationFor.init)
+  - [.setEntry(entry)](./doc/api/api.md#module_@the-/facade-scope.createOperationForFor~createOperationFor.setEntry)
 - module:@the-/facade-scope.destroyOperationForFor
   - [~destroyOperationFor](./doc/api/api.md#module_@the-/facade-scope.destroyOperationForFor~destroyOperationFor)
 - module:@the-/facade-scope.detailOperationFor
@@ -88,6 +94,10 @@ Facade to wrap scopes
   - [.receiveOne(entity,options)](./doc/api/api.md#module_@the-/facade-scope.entitiesAccessFor~entitiesAccess.receiveOne)
   - [.removeOne(entity)](./doc/api/api.md#module_@the-/facade-scope.entitiesAccessFor~entitiesAccess.removeOne)
   - [.updateOne(entity)](./doc/api/api.md#module_@the-/facade-scope.entitiesAccessFor~entitiesAccess.updateOne)
+- module:@the-/facade-scope.entityAccessForFor
+  - [~entityAccessFor](./doc/api/api.md#module_@the-/facade-scope.entityAccessForFor~entityAccessFor)
+- module:@the-/facade-scope.entityAccessForFor~entityAccessFor
+  - [.set(entity)](./doc/api/api.md#module_@the-/facade-scope.entityAccessForFor~entityAccessFor.set)
 - module:@the-/facade-scope.entryAccessFor
   - [~entryAccess](./doc/api/api.md#module_@the-/facade-scope.entryAccessFor~entryAccess)
 - module:@the-/facade-scope.filterAccessFor
@@ -109,6 +119,8 @@ Facade to wrap scopes
   - [.busyWhile(handler)](./doc/api/api.md#module_@the-/facade-scope.moreAccessFor~moreAccess.busyWhile)
   - [.setBusy(moreBusy)](./doc/api/api.md#module_@the-/facade-scope.moreAccessFor~moreAccess.setBusy)
   - [.setHas(hasMore)](./doc/api/api.md#module_@the-/facade-scope.moreAccessFor~moreAccess.setHas)
+- module:@the-/facade-scope.operationForFor
+  - [~operationFor](./doc/api/api.md#module_@the-/facade-scope.operationForFor~operationFor)
 - module:@the-/facade-scope.pageAccessFor
   - [~pageAccess](./doc/api/api.md#module_@the-/facade-scope.pageAccessFor~pageAccess)
 - module:@the-/facade-scope.pageAccessFor~pageAccess

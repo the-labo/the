@@ -1,10 +1,10 @@
 /**
- * Test for pageAccessFor.
+ * Test for entityAccessFor.
  * Runs with mocha.
  */
 'use strict'
 
-describe('page-access-for', () => {
+describe('entity-access-for', () => {
   before(() => {})
 
   after(() => {})
