@@ -24,7 +24,7 @@ function entitiesAccessFor(scope) {
      */
     add(entities, options = {}) {
       const { sorter = null, unique = true } = options
-      const added = [...entities.state, ...adding]
+      const added = [].concat(entitiesAccess.state, entities)
       const filtered = unique ? added.filter(uniqueFilter.by('id')) : [...added]
       const sorted = sorter ? filtered.sort(sorter) : added
       entitiesAccess.set(sorted)
@@ -76,7 +76,7 @@ function entitiesAccessFor(scope) {
      * @type {Array<module:@the-/facade-scope.entitiesAccessFor.Entity>}
      */
     get state() {
-      return scope.get('entitiesAccess') || []
+      return scope.get('entities') || []
     },
     /**
      * Update one
