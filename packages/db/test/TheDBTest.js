@@ -232,7 +232,7 @@ describe('the-db', function() {
     class ArticleResource extends TheResource {
       static get policy() {
         return {
-          starCount: { default: () => 0, type: 'NUMBER' },
+          starCount: { type: 'NUMBER', default: () => 0 },
         }
       }
 

@@ -16,6 +16,16 @@ function pageAccessFor(scope) {
    */
   const pageAccess = {
     /**
+     * Page object
+     * @type {Object}
+     */
+    get state() {
+      return {
+        number: pageAccess.getSize(),
+        size: pageAccess.getSize(),
+      }
+    },
+    /**
      * Get page number
      * @returns {number} - Number of page
      */
@@ -68,16 +78,6 @@ function pageAccessFor(scope) {
      */
     setSize(pageSize) {
       scope.set({ pageSize })
-    },
-    /**
-     * Page object
-     * @type {Object}
-     */
-    get state() {
-      return {
-        number: pageAccess.getSize(),
-        size: pageAccess.getSize(),
-      }
     },
   }
 

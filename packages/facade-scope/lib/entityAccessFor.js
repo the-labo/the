@@ -16,17 +16,17 @@ function entityAccessFor(scope) {
    */
   const entityAccessFor = {
     /**
+     * @type {object}
+     */
+    get state() {
+      return scope.get('entity')
+    },
+    /**
      * Set entity
      * @param {object} entity
      */
     set(entity) {
       scope.set({ entity })
-    },
-    /**
-     * @type {object}
-     */
-    get state() {
-      return scope.get('entity')
     },
   }
 

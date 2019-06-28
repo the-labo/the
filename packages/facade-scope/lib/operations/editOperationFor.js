@@ -20,20 +20,14 @@ function editOperationFor(scope) {
   const entityAccess = entityAccessFor(scope)
 
   /**
-   * @memberof module:@the-/facade-scope.editOperationFor
+   * @memberof module:@the-/facade-scope.editOperation
    * @inner
-   * @namespace editOperationFor
+   * @namespace editOperation
    */
-  const editOperationFor = {
+  const editOperation = {
     busyAccess,
     entityAccess,
     entryAccess,
-    async exec(handler) {
-      const { state: id } = idAccess
-      await busyAccess.while(async () =>
-        entryAccess.process((entry) => handler(id, entry)),
-      )
-    },
     idAccess,
     init() {
       scope.init()
@@ -44,6 +38,12 @@ function editOperationFor(scope) {
     setId(id) {
       idAccess.set(id)
     },
+    async exec(handler) {
+      const { state: id } = idAccess
+      await busyAccess.while(async () =>
+        entryAccess.process((entry) => handler(id, entry)),
+      )
+    },
     async sync(handler) {
       return busyAccess.while(async () => {
         const { state: id } = idAccess
@@ -53,9 +53,9 @@ function editOperationFor(scope) {
     },
   }
 
-  Object.freeze(editOperationFor)
+  Object.freeze(editOperation)
 
-  return editOperationFor
+  return editOperation
 }
 
 module.exports = editOperationFor

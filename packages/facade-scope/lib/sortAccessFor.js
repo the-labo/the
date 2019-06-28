@@ -18,18 +18,18 @@ function sortAccessFor(scope) {
    */
   const sortAccess = {
     /**
-     * Set sort
-     * @param {string} name
-     */
-    set(name) {
-      scope.set({ sort: name })
-    },
-    /**
      * Sort value
      * @type {string}
      */
     get state() {
       return scope.get('sort')
+    },
+    /**
+     * Set sort
+     * @param {string} name
+     */
+    set(name) {
+      scope.set({ sort: name })
     },
 
     toggle(name) {

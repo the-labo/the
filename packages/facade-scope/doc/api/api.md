@@ -21,7 +21,7 @@
 ## @the-/facade-scope
 Facade to wrap scopes
 
-**Version**: 16.0.5  
+**Version**: 16.0.7  
 **License**: MIT  
 
 * [@the-/facade-scope](#module_@the-/facade-scope)
@@ -65,9 +65,9 @@ Facade to wrap scopes
             * [.set(id)](#module_@the-/facade-scope.idAccessFor..idAccess.set)
     * [.moreAccessFor(scope)](#module_@the-/facade-scope.moreAccessFor) ⇒ <code>Object</code>
         * [~moreAccess](#module_@the-/facade-scope.moreAccessFor..moreAccess) : <code>object</code>
-            * [.busyWhile(handler)](#module_@the-/facade-scope.moreAccessFor..moreAccess.busyWhile) ⇒ <code>Promise.&lt;\*&gt;</code>
             * [.setBusy(moreBusy)](#module_@the-/facade-scope.moreAccessFor..moreAccess.setBusy)
             * [.setHas(hasMore)](#module_@the-/facade-scope.moreAccessFor..moreAccess.setHas)
+            * [.busyWhile(handler)](#module_@the-/facade-scope.moreAccessFor..moreAccess.busyWhile) ⇒ <code>Promise.&lt;\*&gt;</code>
     * [.pageAccessFor(scope)](#module_@the-/facade-scope.pageAccessFor) ⇒ <code>Object</code>
         * [~pageAccess](#module_@the-/facade-scope.pageAccessFor..pageAccess) : <code>object</code>
             * [.state](#module_@the-/facade-scope.pageAccessFor..pageAccess.state) : <code>Object</code>
@@ -88,16 +88,15 @@ Facade to wrap scopes
             * [.state](#module_@the-/facade-scope.sortAccessFor..sortAccess.state) : <code>string</code>
             * [.set(name)](#module_@the-/facade-scope.sortAccessFor..sortAccess.set)
     * [.createOperationFor(scope)](#module_@the-/facade-scope.createOperationFor) ⇒ <code>Object</code>
-        * [~createOperationFor](#module_@the-/facade-scope.createOperationFor..createOperationFor) : <code>object</code>
-            * [.exec(handler)](#module_@the-/facade-scope.createOperationFor..createOperationFor.exec) ⇒ <code>Promise.&lt;undefined&gt;</code>
-            * [.init()](#module_@the-/facade-scope.createOperationFor..createOperationFor.init)
-            * [.setEntry(entry)](#module_@the-/facade-scope.createOperationFor..createOperationFor.setEntry) ⇒ <code>Promise.&lt;undefined&gt;</code>
+        * [~createOperation](#module_@the-/facade-scope.createOperationFor..createOperation) : <code>object</code>
+            * [.init()](#module_@the-/facade-scope.createOperationFor..createOperation.init)
+            * [.exec(handler)](#module_@the-/facade-scope.createOperationFor..createOperation.exec) ⇒ <code>Promise.&lt;undefined&gt;</code>
+            * [.setEntry(entry)](#module_@the-/facade-scope.createOperationFor..createOperation.setEntry) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.destroyOperationFor(scope)](#module_@the-/facade-scope.destroyOperationFor) ⇒ <code>Object</code>
-        * [~destroyOperationFor](#module_@the-/facade-scope.destroyOperationFor..destroyOperationFor) : <code>object</code>
+        * [~destroyOperation](#module_@the-/facade-scope.destroyOperationFor..destroyOperation) : <code>object</code>
     * [.detailOperationFor(scope)](#module_@the-/facade-scope.detailOperationFor) ⇒ <code>Object</code>
         * [~detailOperation](#module_@the-/facade-scope.detailOperationFor..detailOperation) : <code>object</code>
     * [.editOperationFor(scope)](#module_@the-/facade-scope.editOperationFor) ⇒ <code>Object</code>
-        * [~editOperationFor](#module_@the-/facade-scope.editOperationFor..editOperationFor) : <code>object</code>
     * [.listOperationFor()](#module_@the-/facade-scope.listOperationFor) ⇒ [<code>listOperation</code>](#module_@the-/facade-scope.listOperationFor..listOperation)
         * [~listOperation](#module_@the-/facade-scope.listOperationFor..listOperation) : <code>object</code>
     * [.operationFor(scope)](#module_@the-/facade-scope.operationFor) ⇒ <code>Object</code>
@@ -515,9 +514,9 @@ Bush scope access
 
 * [.moreAccessFor(scope)](#module_@the-/facade-scope.moreAccessFor) ⇒ <code>Object</code>
     * [~moreAccess](#module_@the-/facade-scope.moreAccessFor..moreAccess) : <code>object</code>
-        * [.busyWhile(handler)](#module_@the-/facade-scope.moreAccessFor..moreAccess.busyWhile) ⇒ <code>Promise.&lt;\*&gt;</code>
         * [.setBusy(moreBusy)](#module_@the-/facade-scope.moreAccessFor..moreAccess.setBusy)
         * [.setHas(hasMore)](#module_@the-/facade-scope.moreAccessFor..moreAccess.setHas)
+        * [.busyWhile(handler)](#module_@the-/facade-scope.moreAccessFor..moreAccess.busyWhile) ⇒ <code>Promise.&lt;\*&gt;</code>
 
 <a name="module_@the-/facade-scope.moreAccessFor..moreAccess"></a>
 
@@ -525,20 +524,9 @@ Bush scope access
 **Kind**: inner namespace of [<code>moreAccessFor</code>](#module_@the-/facade-scope.moreAccessFor)  
 
 * [~moreAccess](#module_@the-/facade-scope.moreAccessFor..moreAccess) : <code>object</code>
-    * [.busyWhile(handler)](#module_@the-/facade-scope.moreAccessFor..moreAccess.busyWhile) ⇒ <code>Promise.&lt;\*&gt;</code>
     * [.setBusy(moreBusy)](#module_@the-/facade-scope.moreAccessFor..moreAccess.setBusy)
     * [.setHas(hasMore)](#module_@the-/facade-scope.moreAccessFor..moreAccess.setHas)
-
-<a name="module_@the-/facade-scope.moreAccessFor..moreAccess.busyWhile"></a>
-
-##### moreAccess.busyWhile(handler) ⇒ <code>Promise.&lt;\*&gt;</code>
-Busy true while handling
-
-**Kind**: static method of [<code>moreAccess</code>](#module_@the-/facade-scope.moreAccessFor..moreAccess)  
-
-| Param | Type |
-| --- | --- |
-| handler | <code>function</code> | 
+    * [.busyWhile(handler)](#module_@the-/facade-scope.moreAccessFor..moreAccess.busyWhile) ⇒ <code>Promise.&lt;\*&gt;</code>
 
 <a name="module_@the-/facade-scope.moreAccessFor..moreAccess.setBusy"></a>
 
@@ -561,6 +549,17 @@ Set hasMore flag
 | Param | Type |
 | --- | --- |
 | hasMore | <code>boolean</code> | 
+
+<a name="module_@the-/facade-scope.moreAccessFor..moreAccess.busyWhile"></a>
+
+##### moreAccess.busyWhile(handler) ⇒ <code>Promise.&lt;\*&gt;</code>
+Busy true while handling
+
+**Kind**: static method of [<code>moreAccess</code>](#module_@the-/facade-scope.moreAccessFor..moreAccess)  
+
+| Param | Type |
+| --- | --- |
+| handler | <code>function</code> | 
 
 <a name="module_@the-/facade-scope.pageAccessFor"></a>
 
@@ -780,27 +779,33 @@ Bush scope access
 
 
 * [.createOperationFor(scope)](#module_@the-/facade-scope.createOperationFor) ⇒ <code>Object</code>
-    * [~createOperationFor](#module_@the-/facade-scope.createOperationFor..createOperationFor) : <code>object</code>
-        * [.exec(handler)](#module_@the-/facade-scope.createOperationFor..createOperationFor.exec) ⇒ <code>Promise.&lt;undefined&gt;</code>
-        * [.init()](#module_@the-/facade-scope.createOperationFor..createOperationFor.init)
-        * [.setEntry(entry)](#module_@the-/facade-scope.createOperationFor..createOperationFor.setEntry) ⇒ <code>Promise.&lt;undefined&gt;</code>
+    * [~createOperation](#module_@the-/facade-scope.createOperationFor..createOperation) : <code>object</code>
+        * [.init()](#module_@the-/facade-scope.createOperationFor..createOperation.init)
+        * [.exec(handler)](#module_@the-/facade-scope.createOperationFor..createOperation.exec) ⇒ <code>Promise.&lt;undefined&gt;</code>
+        * [.setEntry(entry)](#module_@the-/facade-scope.createOperationFor..createOperation.setEntry) ⇒ <code>Promise.&lt;undefined&gt;</code>
 
-<a name="module_@the-/facade-scope.createOperationFor..createOperationFor"></a>
+<a name="module_@the-/facade-scope.createOperationFor..createOperation"></a>
 
-#### createOperationFor~createOperationFor : <code>object</code>
+#### createOperationFor~createOperation : <code>object</code>
 **Kind**: inner namespace of [<code>createOperationFor</code>](#module_@the-/facade-scope.createOperationFor)  
 
-* [~createOperationFor](#module_@the-/facade-scope.createOperationFor..createOperationFor) : <code>object</code>
-    * [.exec(handler)](#module_@the-/facade-scope.createOperationFor..createOperationFor.exec) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * [.init()](#module_@the-/facade-scope.createOperationFor..createOperationFor.init)
-    * [.setEntry(entry)](#module_@the-/facade-scope.createOperationFor..createOperationFor.setEntry) ⇒ <code>Promise.&lt;undefined&gt;</code>
+* [~createOperation](#module_@the-/facade-scope.createOperationFor..createOperation) : <code>object</code>
+    * [.init()](#module_@the-/facade-scope.createOperationFor..createOperation.init)
+    * [.exec(handler)](#module_@the-/facade-scope.createOperationFor..createOperation.exec) ⇒ <code>Promise.&lt;undefined&gt;</code>
+    * [.setEntry(entry)](#module_@the-/facade-scope.createOperationFor..createOperation.setEntry) ⇒ <code>Promise.&lt;undefined&gt;</code>
 
-<a name="module_@the-/facade-scope.createOperationFor..createOperationFor.exec"></a>
+<a name="module_@the-/facade-scope.createOperationFor..createOperation.init"></a>
 
-##### createOperationFor.exec(handler) ⇒ <code>Promise.&lt;undefined&gt;</code>
+##### createOperation.init()
+Init scope
+
+**Kind**: static method of [<code>createOperation</code>](#module_@the-/facade-scope.createOperationFor..createOperation)  
+<a name="module_@the-/facade-scope.createOperationFor..createOperation.exec"></a>
+
+##### createOperation.exec(handler) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Execute creating
 
-**Kind**: static method of [<code>createOperationFor</code>](#module_@the-/facade-scope.createOperationFor..createOperationFor)  
+**Kind**: static method of [<code>createOperation</code>](#module_@the-/facade-scope.createOperationFor..createOperation)  
 
 | Param | Type |
 | --- | --- |
@@ -812,18 +817,12 @@ await createOperation.exec(async (values) => {
   await someCtrl.create(values)
 })
 ```
-<a name="module_@the-/facade-scope.createOperationFor..createOperationFor.init"></a>
+<a name="module_@the-/facade-scope.createOperationFor..createOperation.setEntry"></a>
 
-##### createOperationFor.init()
-Init scope
-
-**Kind**: static method of [<code>createOperationFor</code>](#module_@the-/facade-scope.createOperationFor..createOperationFor)  
-<a name="module_@the-/facade-scope.createOperationFor..createOperationFor.setEntry"></a>
-
-##### createOperationFor.setEntry(entry) ⇒ <code>Promise.&lt;undefined&gt;</code>
+##### createOperation.setEntry(entry) ⇒ <code>Promise.&lt;undefined&gt;</code>
 Set entry
 
-**Kind**: static method of [<code>createOperationFor</code>](#module_@the-/facade-scope.createOperationFor..createOperationFor)  
+**Kind**: static method of [<code>createOperation</code>](#module_@the-/facade-scope.createOperationFor..createOperation)  
 
 | Param | Type |
 | --- | --- |
@@ -841,9 +840,9 @@ Bush scope access
 | --- | --- |
 | scope | <code>Object</code> | 
 
-<a name="module_@the-/facade-scope.destroyOperationFor..destroyOperationFor"></a>
+<a name="module_@the-/facade-scope.destroyOperationFor..destroyOperation"></a>
 
-#### destroyOperationFor~destroyOperationFor : <code>object</code>
+#### destroyOperationFor~destroyOperation : <code>object</code>
 **Kind**: inner namespace of [<code>destroyOperationFor</code>](#module_@the-/facade-scope.destroyOperationFor)  
 <a name="module_@the-/facade-scope.detailOperationFor"></a>
 
@@ -873,10 +872,6 @@ Bush scope access
 | --- | --- |
 | scope | <code>Object</code> | 
 
-<a name="module_@the-/facade-scope.editOperationFor..editOperationFor"></a>
-
-#### editOperationFor~editOperationFor : <code>object</code>
-**Kind**: inner namespace of [<code>editOperationFor</code>](#module_@the-/facade-scope.editOperationFor)  
 <a name="module_@the-/facade-scope.listOperationFor"></a>
 
 ### facadeScope.listOperationFor() ⇒ [<code>listOperation</code>](#module_@the-/facade-scope.listOperationFor..listOperation)

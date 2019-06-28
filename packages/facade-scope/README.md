@@ -74,17 +74,17 @@ Facade to wrap scopes
   - [.hasMore()](./doc/api/api.md#module_@the-/facade-scope.countsAccessFor~countsAccess.hasMore)
   - [.set(counts)](./doc/api/api.md#module_@the-/facade-scope.countsAccessFor~countsAccess.set)
 - module:@the-/facade-scope.createOperationFor
-  - [~createOperationFor](./doc/api/api.md#module_@the-/facade-scope.createOperationFor~createOperationFor)
-- module:@the-/facade-scope.createOperationFor~createOperationFor
-  - [.exec(handler)](./doc/api/api.md#module_@the-/facade-scope.createOperationFor~createOperationFor.exec)
-  - [.init()](./doc/api/api.md#module_@the-/facade-scope.createOperationFor~createOperationFor.init)
-  - [.setEntry(entry)](./doc/api/api.md#module_@the-/facade-scope.createOperationFor~createOperationFor.setEntry)
+  - [~createOperation](./doc/api/api.md#module_@the-/facade-scope.createOperationFor~createOperation)
+- module:@the-/facade-scope.createOperationFor~createOperation
+  - [.exec(handler)](./doc/api/api.md#module_@the-/facade-scope.createOperationFor~createOperation.exec)
+  - [.init()](./doc/api/api.md#module_@the-/facade-scope.createOperationFor~createOperation.init)
+  - [.setEntry(entry)](./doc/api/api.md#module_@the-/facade-scope.createOperationFor~createOperation.setEntry)
 - module:@the-/facade-scope.destroyOperationFor
-  - [~destroyOperationFor](./doc/api/api.md#module_@the-/facade-scope.destroyOperationFor~destroyOperationFor)
+  - [~destroyOperation](./doc/api/api.md#module_@the-/facade-scope.destroyOperationFor~destroyOperation)
 - module:@the-/facade-scope.detailOperationFor
   - [~detailOperation](./doc/api/api.md#module_@the-/facade-scope.detailOperationFor~detailOperation)
-- module:@the-/facade-scope.editOperationFor
-  - [~editOperationFor](./doc/api/api.md#module_@the-/facade-scope.editOperationFor~editOperationFor)
+- module:@the-/facade-scope.editOperation
+  - [~editOperation](./doc/api/api.md#module_@the-/facade-scope.editOperation~editOperation)
 - module:@the-/facade-scope.entitiesAccessFor
   - [.Entity](./doc/api/api.md#module_@the-/facade-scope.entitiesAccessFor.Entity)
   - [~entitiesAccess](./doc/api/api.md#module_@the-/facade-scope.entitiesAccessFor~entitiesAccess)

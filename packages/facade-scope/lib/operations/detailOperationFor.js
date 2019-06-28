@@ -29,10 +29,10 @@ function detailOperationFor(scope) {
     entityAccess,
 
     idAccess,
+    readyAccess,
     init() {
       scope.init()
     },
-    readyAccess,
     setId(id) {
       idAccess.set(id)
     },

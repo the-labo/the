@@ -41,9 +41,7 @@ async function processYAML(content) {
   const [error] = doc.errors || []
   if (error) {
     console.log(
-      `[@the-/code][processYAML] Failed to parse yaml with error: ${
-        error.message
-      }`,
+      `[@the-/code][processYAML] Failed to parse yaml with error: ${error.message}`,
     )
     return content
   }

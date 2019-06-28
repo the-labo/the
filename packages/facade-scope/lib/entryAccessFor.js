@@ -17,6 +17,9 @@ function entryAccessFor(scope) {
    * @namespace entryAccess
    */
   const entryAccess = {
+    get state() {
+      return entryAccess.getEntry({ raw: true })
+    },
     delError(...names) {
       scope.entryErrors.del(...names)
     },
@@ -35,15 +38,6 @@ function entryAccessFor(scope) {
       const errors = entryAccess.getErrors()
       return name in errors
     },
-    async process(handler) {
-      const entry = entryAccess.getEntry()
-      try {
-        await handler(entry)
-      } catch (e) {
-        // TODO Handle error
-        throw e
-      }
-    },
     set(entry) {
       const current = entryAccess.getEntry()
       scope.set({
@@ -57,8 +51,14 @@ function entryAccessFor(scope) {
         entryAccess.delError(...names)
       }
     },
-    get state() {
-      return entryAccess.getEntry({ raw: true })
+    async process(handler) {
+      const entry = entryAccess.getEntry()
+      try {
+        await handler(entry)
+      } catch (e) {
+        // TODO Handle error
+        throw e
+      }
     },
   }
 

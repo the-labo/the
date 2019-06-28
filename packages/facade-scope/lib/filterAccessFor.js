@@ -16,17 +16,17 @@ function filterAccessFor(scope) {
    */
   const filterAccess = {
     /**
+     * @type {Object}
+     */
+    get state() {
+      return scope.get('filter')
+    },
+    /**
      * Set filter
      * @param {Object} filter
      */
     set(filter) {
       scope.set({ filter })
-    },
-    /**
-     * @type {Object}
-     */
-    get state() {
-      return scope.get('filter')
     },
   }
 

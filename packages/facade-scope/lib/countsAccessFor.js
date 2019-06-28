@@ -16,6 +16,13 @@ function countsAccessFor(scope) {
    */
   const countsAccess = {
     /**
+     * Counts
+     * @type {Object}
+     */
+    get state() {
+      return scope.get('counts')
+    },
+    /**
      * Has more or not
      * @returns {boolean}
      */
@@ -28,20 +35,13 @@ function countsAccessFor(scope) {
       } = countsAccess
       return offset + length < total
     },
+
     /**
      * Set counts
      * @param {Object} counts
      */
     set(counts) {
       scope.set({ counts })
-    },
-
-    /**
-     * Counts
-     * @type {Object}
-     */
-    get state() {
-      return scope.get('counts')
     },
   }
 

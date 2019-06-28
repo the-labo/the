@@ -18,11 +18,17 @@ function createOperationFor(scope) {
   /**
    * @memberof module:@the-/facade-scope.createOperationFor
    * @inner
-   * @namespace createOperationFor
+   * @namespace createOperation
    */
-  const createOperationFor = {
+  const createOperation = {
     busyAccess,
     entryAccess,
+    /**
+     * Init scope
+     */
+    init() {
+      scope.init()
+    },
     /**
      * Execute creating
      * @param {function(object): Promise} handler
@@ -36,12 +42,6 @@ function createOperationFor(scope) {
       await busyAccess.while(async () => entryAccess.process(handler))
     },
     /**
-     * Init scope
-     */
-    init() {
-      scope.init()
-    },
-    /**
      * Set entry
      * @param {Object} entry
      * @returns {Promise<undefined>}
@@ -51,9 +51,9 @@ function createOperationFor(scope) {
     },
   }
 
-  Object.freeze(createOperationFor)
+  Object.freeze(createOperation)
 
-  return createOperationFor
+  return createOperation
 }
 
 module.exports = createOperationFor

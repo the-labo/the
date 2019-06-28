@@ -590,4 +590,3 @@ Run database migration
 | Param | Type | Description |
 | --- | --- | --- |
 | handlers | <code>Object.&lt;string, function()&gt;</code> | Migration handler for each versions |
-

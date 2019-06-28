@@ -16,19 +16,6 @@ function moreAccessFor(scope) {
    */
   const moreAccess = {
     /**
-     * Busy true while handling
-     * @param {function()} handler
-     * @returns {Promise<*>}
-     */
-    async busyWhile(handler) {
-      moreAccess.setBusy(true)
-      try {
-        return await handler()
-      } finally {
-        moreAccess.setBusy(false)
-      }
-    },
-    /**
      * Set moreBusy flag
      * @param {boolean} moreBusy
      */
@@ -41,6 +28,19 @@ function moreAccessFor(scope) {
      */
     setHas(hasMore) {
       scope.set({ hasMore })
+    },
+    /**
+     * Busy true while handling
+     * @param {function()} handler
+     * @returns {Promise<*>}
+     */
+    async busyWhile(handler) {
+      moreAccess.setBusy(true)
+      try {
+        return await handler()
+      } finally {
+        moreAccess.setBusy(false)
+      }
     },
   }
 

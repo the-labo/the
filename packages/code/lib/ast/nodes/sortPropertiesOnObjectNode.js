@@ -14,7 +14,14 @@ const _nameOfPropKey = (key) =>
       '',
   )
 
-const _weightProperty = ({ computed, key }) => {
+const _weightProperty = ({
+  async: async_,
+  computed,
+  key,
+  kind,
+  method,
+  value,
+}) => {
   let weight = 0
   if (computed) {
     weight -= 500
@@ -25,6 +32,32 @@ const _weightProperty = ({ computed, key }) => {
       break
     default:
       weight += 100
+      break
+  }
+  switch (kind) {
+    case 'get':
+      weight = -10
+      break
+    case 'set':
+      weight = -11
+      break
+    default:
+      break
+  }
+  if (method) {
+    weight += 100
+  }
+  if (async_) {
+    weight += 3
+  }
+  switch (value && value.type) {
+    case 'ArrowFunctionExpression':
+      weight += 2
+      break
+    case 'FunctionExpression':
+      weight += 1
+      break
+    default:
       break
   }
   const name = _nameOfPropKey(key)

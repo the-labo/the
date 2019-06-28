@@ -1,7 +1,7 @@
 {
   "name": "@the-/script-build",
   "description": "Build script for the-projects",
-  "version": "15.4.35",
+  "version": "15.4.36",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -24,7 +24,7 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "7.0.0",
     "@babel/runtime": "^7.4.5",
-    "@the-/code": "^15.5.68",
+    "@the-/code": "^15.5.75",
     "@the-/tmp": "^15.4.5",
     "ababel": "^6.0.0",
     "aglob": "^3.0.2",
@@ -37,8 +37,8 @@
     "commander": "^2.20.0",
     "coz": "^7.0.19",
     "filecopy": "^4.0.2",
-    "lebab": "^3.0.5",
-    "webpack": "^4.32.2"
+    "lebab": "^3.1.0",
+    "webpack": "^4.35.0"
   },
   "devDependencies": {
     "@the-/ast": "^15.4.7",

@@ -68,7 +68,6 @@ class TheDB extends TheDBBase {
       refreshInterval = 300,
       resourceLogFile = 'var/db/resources.log',
       resources = {},
-      extend = {},
       ...rest
     } = config
     const env = toLowerKeys(
@@ -80,7 +79,7 @@ class TheDB extends TheDBBase {
     {
       const resetKeys = Object.keys(rest)
       if (resetKeys.length > 0) {
-        console.warn(`[TheDB] Unknown config: `, resetKeys)
+        console.warn('[TheDB] Unknown config: ', resetKeys)
       }
     }
 

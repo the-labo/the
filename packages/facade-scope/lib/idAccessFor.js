@@ -16,6 +16,12 @@ function idAccessFor(scope) {
    */
   const idAccess = {
     /**
+     * @type {string}
+     */
+    get state() {
+      return scope.get('id')
+    },
+    /**
      * Known or not
      * @param {string} id
      * @returns {boolean}
@@ -29,12 +35,6 @@ function idAccessFor(scope) {
      */
     set(id) {
       scope.set({ id })
-    },
-    /**
-     * @type {string}
-     */
-    get state() {
-      return scope.get('id')
     },
   }
 

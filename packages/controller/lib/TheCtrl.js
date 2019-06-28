@@ -28,9 +28,7 @@ class TheCtrl {
    */
   static async beforeInvocation(invocation) {
     debug(
-      `Start action "${invocation.action}" with params: ${
-        invocation.params
-      }...`,
+      `Start action "${invocation.action}" with params: ${invocation.params}...`,
     )
   }
 

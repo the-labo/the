@@ -18,6 +18,13 @@ function entitiesAccessFor(scope) {
    */
   const entitiesAccess = {
     /**
+     * @type {Array<module:@the-/facade-scope.entitiesAccessFor.Entity>}
+     */
+    get state() {
+      return scope.get('entities') || []
+    },
+
+    /**
      * Add entities
      * @param {Array<module:@the-/facade-scope.entitiesAccessFor.Entity>} entities
      * @param {Object} options - Optional settings
@@ -42,7 +49,6 @@ function entitiesAccessFor(scope) {
     isKnownOne(entity) {
       return entitiesAccess.state.some((e) => e.id === entity.id)
     },
-
     /**
      * Receive one
      * @param {module:@the-/facade-scope.entitiesAccessFor.Entity} entity
@@ -68,19 +74,13 @@ function entitiesAccessFor(scope) {
       )
       entitiesAccess.set(removed)
     },
+
     /**
      * Set entities
      * @param {module:@the-/facade-scope.entitiesAccessFor.Entity[]} entities - Entities to set
      */
     set(entities) {
       scope.set({ entities })
-    },
-
-    /**
-     * @type {Array<module:@the-/facade-scope.entitiesAccessFor.Entity>}
-     */
-    get state() {
-      return scope.get('entities') || []
     },
     /**
      * Update one

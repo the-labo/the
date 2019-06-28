@@ -351,6 +351,34 @@ const x =  {'': {}, a:{}}
       'const x = {[`${n+1}/aaa`]:2, [`${n+1}/bbb`]:1}',
     )
   })
+
+  it('Object methods', async () => {
+    console.log(
+      await processJSObject(
+        `
+const x = { 
+  z, 
+  d(){}, 
+  set e (v) { },
+  n:() => null, 
+  get c() { return 1 },
+  async a(){},   
+  j() {},
+}`,
+        `
+const x = { 
+  set e (v) { }, 
+  get c() { return 1 }, 
+  z,
+  n:() => null, 
+  d(){},
+  j() {},   
+  async a(){},
+}
+`,
+      ),
+    )
+  })
 })
 
 /* global describe, before, after, it */

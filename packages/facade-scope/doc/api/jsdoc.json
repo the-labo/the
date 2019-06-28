@@ -13,7 +13,7 @@
     "name": "@the-/facade-scope",
     "order": 36,
     "typicalname": "facadeScope",
-    "version": "16.0.5"
+    "version": "16.0.7"
   },
   {
     "description": "Operation handlers",
@@ -37,11 +37,11 @@
     "memberof": "module:@the-/facade-scope.busyAccessFor~busyAccess",
     "meta": {
       "filename": "busyAccessFor.js",
-      "lineno": 28,
+      "lineno": 22,
       "path": "lib"
     },
     "name": "state",
-    "order": 3,
+    "order": 2,
     "scope": "static",
     "type": {
       "names": [
@@ -57,11 +57,11 @@
     "memberof": "module:@the-/facade-scope.countsAccessFor~countsAccess",
     "meta": {
       "filename": "countsAccessFor.js",
-      "lineno": 43,
+      "lineno": 22,
       "path": "lib"
     },
     "name": "state",
-    "order": 10,
+    "order": 8,
     "scope": "static",
     "type": {
       "names": [
@@ -76,11 +76,11 @@
     "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
     "meta": {
       "filename": "entitiesAccessFor.js",
-      "lineno": 82,
+      "lineno": 23,
       "path": "lib"
     },
     "name": "state",
-    "order": 19,
+    "order": 14,
     "scope": "static",
     "type": {
       "names": [
@@ -95,11 +95,11 @@
     "memberof": "module:@the-/facade-scope.entityAccessFor~entityAccessFor",
     "meta": {
       "filename": "entityAccessFor.js",
-      "lineno": 28,
+      "lineno": 21,
       "path": "lib"
     },
     "name": "state",
-    "order": 24,
+    "order": 23,
     "scope": "static",
     "type": {
       "names": [
@@ -114,11 +114,11 @@
     "memberof": "module:@the-/facade-scope.filterAccessFor~filterAccess",
     "meta": {
       "filename": "filterAccessFor.js",
-      "lineno": 28,
+      "lineno": 21,
       "path": "lib"
     },
     "name": "state",
-    "order": 30,
+    "order": 29,
     "scope": "static",
     "type": {
       "names": [
@@ -133,11 +133,11 @@
     "memberof": "module:@the-/facade-scope.idAccessFor~idAccess",
     "meta": {
       "filename": "idAccessFor.js",
-      "lineno": 36,
+      "lineno": 21,
       "path": "lib"
     },
     "name": "state",
-    "order": 35,
+    "order": 33,
     "scope": "static",
     "type": {
       "names": [
@@ -153,11 +153,11 @@
     "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
     "meta": {
       "filename": "pageAccessFor.js",
-      "lineno": 76,
+      "lineno": 22,
       "path": "lib"
     },
     "name": "state",
-    "order": 51,
+    "order": 44,
     "scope": "static",
     "type": {
       "names": [
@@ -173,11 +173,11 @@
     "memberof": "module:@the-/facade-scope.sortAccessFor~sortAccess",
     "meta": {
       "filename": "sortAccessFor.js",
-      "lineno": 31,
+      "lineno": 24,
       "path": "lib"
     },
     "name": "state",
-    "order": 60,
+    "order": 59,
     "scope": "static",
     "type": {
       "names": [
@@ -228,11 +228,11 @@
     "memberof": "module:@the-/facade-scope.busyAccessFor~busyAccess",
     "meta": {
       "filename": "busyAccessFor.js",
-      "lineno": 21,
+      "lineno": 28,
       "path": "lib"
     },
     "name": "false",
-    "order": 2,
+    "order": 3,
     "scope": "static"
   },
   {
@@ -331,11 +331,11 @@
     "memberof": "module:@the-/facade-scope.countsAccessFor~countsAccess",
     "meta": {
       "filename": "countsAccessFor.js",
-      "lineno": 22,
+      "lineno": 29,
       "path": "lib"
     },
     "name": "hasMore",
-    "order": 8,
+    "order": 9,
     "returns": [
       {
         "type": {
@@ -355,11 +355,11 @@
     "memberof": "module:@the-/facade-scope.countsAccessFor~countsAccess",
     "meta": {
       "filename": "countsAccessFor.js",
-      "lineno": 35,
+      "lineno": 43,
       "path": "lib"
     },
     "name": "set",
-    "order": 9,
+    "order": 10,
     "params": [
       {
         "type": {
@@ -415,11 +415,11 @@
     "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
     "meta": {
       "filename": "entitiesAccessFor.js",
-      "lineno": 25,
+      "lineno": 32,
       "path": "lib"
     },
     "name": "add",
-    "order": 14,
+    "order": 15,
     "params": [
       {
         "type": {
@@ -449,11 +449,11 @@
     "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
     "meta": {
       "filename": "entitiesAccessFor.js",
-      "lineno": 38,
+      "lineno": 45,
       "path": "lib"
     },
     "name": "addOne",
-    "order": 15,
+    "order": 16,
     "params": [
       {
         "type": {
@@ -486,11 +486,11 @@
     "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
     "meta": {
       "filename": "entitiesAccessFor.js",
-      "lineno": 52,
+      "lineno": 58,
       "path": "lib"
     },
     "name": "receiveOne",
-    "order": 16,
+    "order": 17,
     "params": [
       {
         "type": {
@@ -531,11 +531,11 @@
     "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
     "meta": {
       "filename": "entitiesAccessFor.js",
-      "lineno": 65,
+      "lineno": 71,
       "path": "lib"
     },
     "name": "removeOne",
-    "order": 17,
+    "order": 18,
     "params": [
       {
         "type": {
@@ -557,11 +557,11 @@
     "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
     "meta": {
       "filename": "entitiesAccessFor.js",
-      "lineno": 75,
+      "lineno": 82,
       "path": "lib"
     },
     "name": "set",
-    "order": 18,
+    "order": 19,
     "params": [
       {
         "type": {
@@ -644,11 +644,11 @@
     "memberof": "module:@the-/facade-scope.entityAccessFor~entityAccessFor",
     "meta": {
       "filename": "entityAccessFor.js",
-      "lineno": 22,
+      "lineno": 28,
       "path": "lib"
     },
     "name": "set",
-    "order": 23,
+    "order": 24,
     "params": [
       {
         "type": {
@@ -739,11 +739,11 @@
     "memberof": "module:@the-/facade-scope.filterAccessFor~filterAccess",
     "meta": {
       "filename": "filterAccessFor.js",
-      "lineno": 22,
+      "lineno": 28,
       "path": "lib"
     },
     "name": "set",
-    "order": 29,
+    "order": 30,
     "params": [
       {
         "type": {
@@ -799,11 +799,11 @@
     "memberof": "module:@the-/facade-scope.idAccessFor~idAccess",
     "meta": {
       "filename": "idAccessFor.js",
-      "lineno": 23,
+      "lineno": 29,
       "path": "lib"
     },
     "name": "isKnown",
-    "order": 33,
+    "order": 34,
     "params": [
       {
         "type": {
@@ -833,11 +833,11 @@
     "memberof": "module:@the-/facade-scope.idAccessFor~idAccess",
     "meta": {
       "filename": "idAccessFor.js",
-      "lineno": 30,
+      "lineno": 36,
       "path": "lib"
     },
     "name": "set",
-    "order": 34,
+    "order": 35,
     "params": [
       {
         "type": {
@@ -886,40 +886,6 @@
     "scope": "static"
   },
   {
-    "description": "Busy true while handling",
-    "id": "module:@the-/facade-scope.moreAccessFor~moreAccess.busyWhile",
-    "kind": "function",
-    "longname": "module:@the-/facade-scope.moreAccessFor~moreAccess.busyWhile",
-    "memberof": "module:@the-/facade-scope.moreAccessFor~moreAccess",
-    "meta": {
-      "filename": "moreAccessFor.js",
-      "lineno": 23,
-      "path": "lib"
-    },
-    "name": "busyWhile",
-    "order": 39,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "handler"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<*>"
-          ]
-        }
-      }
-    ],
-    "scope": "static"
-  },
-  {
     "description": "Set moreBusy flag",
     "id": "module:@the-/facade-scope.moreAccessFor~moreAccess.setBusy",
     "kind": "function",
@@ -927,11 +893,11 @@
     "memberof": "module:@the-/facade-scope.moreAccessFor~moreAccess",
     "meta": {
       "filename": "moreAccessFor.js",
-      "lineno": 35,
+      "lineno": 22,
       "path": "lib"
     },
     "name": "setBusy",
-    "order": 40,
+    "order": 39,
     "params": [
       {
         "type": {
@@ -952,11 +918,11 @@
     "memberof": "module:@the-/facade-scope.moreAccessFor~moreAccess",
     "meta": {
       "filename": "moreAccessFor.js",
-      "lineno": 42,
+      "lineno": 29,
       "path": "lib"
     },
     "name": "setHas",
-    "order": 41,
+    "order": 40,
     "params": [
       {
         "type": {
@@ -965,6 +931,40 @@
           ]
         },
         "name": "hasMore"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Busy true while handling",
+    "id": "module:@the-/facade-scope.moreAccessFor~moreAccess.busyWhile",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.moreAccessFor~moreAccess.busyWhile",
+    "memberof": "module:@the-/facade-scope.moreAccessFor~moreAccess",
+    "meta": {
+      "filename": "moreAccessFor.js",
+      "lineno": 37,
+      "path": "lib"
+    },
+    "name": "busyWhile",
+    "order": 41,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "handler"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
       }
     ],
     "scope": "static"
@@ -1012,11 +1012,11 @@
     "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
     "meta": {
       "filename": "pageAccessFor.js",
-      "lineno": 22,
+      "lineno": 32,
       "path": "lib"
     },
     "name": "getNumber",
-    "order": 44,
+    "order": 45,
     "returns": [
       {
         "type": {
@@ -1037,11 +1037,11 @@
     "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
     "meta": {
       "filename": "pageAccessFor.js",
-      "lineno": 29,
+      "lineno": 39,
       "path": "lib"
     },
     "name": "getSize",
-    "order": 45,
+    "order": 46,
     "returns": [
       {
         "type": {
@@ -1061,11 +1061,11 @@
     "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
     "meta": {
       "filename": "pageAccessFor.js",
-      "lineno": 36,
+      "lineno": 46,
       "path": "lib"
     },
     "name": "more",
-    "order": 46,
+    "order": 47,
     "params": [
       {
         "type": {
@@ -1089,11 +1089,11 @@
     "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
     "meta": {
       "filename": "pageAccessFor.js",
-      "lineno": 44,
+      "lineno": 54,
       "path": "lib"
     },
     "name": "next",
-    "order": 47,
+    "order": 48,
     "scope": "static"
   },
   {
@@ -1104,11 +1104,11 @@
     "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
     "meta": {
       "filename": "pageAccessFor.js",
-      "lineno": 53,
+      "lineno": 63,
       "path": "lib"
     },
     "name": "set",
-    "order": 48,
+    "order": 49,
     "params": [
       {
         "name": "page"
@@ -1124,11 +1124,11 @@
     "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
     "meta": {
       "filename": "pageAccessFor.js",
-      "lineno": 62,
+      "lineno": 72,
       "path": "lib"
     },
     "name": "setNumber",
-    "order": 49,
+    "order": 50,
     "params": [
       {
         "type": {
@@ -1149,11 +1149,11 @@
     "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
     "meta": {
       "filename": "pageAccessFor.js",
-      "lineno": 69,
+      "lineno": 79,
       "path": "lib"
     },
     "name": "setSize",
-    "order": 50,
+    "order": 51,
     "params": [
       {
         "type": {
@@ -1309,11 +1309,11 @@
     "memberof": "module:@the-/facade-scope.sortAccessFor~sortAccess",
     "meta": {
       "filename": "sortAccessFor.js",
-      "lineno": 24,
+      "lineno": 31,
       "path": "lib"
     },
     "name": "set",
-    "order": 59,
+    "order": 60,
     "params": [
       {
         "type": {
@@ -1362,21 +1362,36 @@
     "scope": "static"
   },
   {
+    "description": "Init scope",
+    "id": "module:@the-/facade-scope.createOperationFor~createOperation.init",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.createOperationFor~createOperation.init",
+    "memberof": "module:@the-/facade-scope.createOperationFor~createOperation",
+    "meta": {
+      "filename": "createOperationFor.js",
+      "lineno": 29,
+      "path": "lib/operations"
+    },
+    "name": "init",
+    "order": 63,
+    "scope": "static"
+  },
+  {
     "description": "Execute creating",
     "examples": [
       "await createOperation.exec(async (values) => {\n  await someCtrl.create(values)\n})"
     ],
-    "id": "module:@the-/facade-scope.createOperationFor~createOperationFor.exec",
+    "id": "module:@the-/facade-scope.createOperationFor~createOperation.exec",
     "kind": "function",
-    "longname": "module:@the-/facade-scope.createOperationFor~createOperationFor.exec",
-    "memberof": "module:@the-/facade-scope.createOperationFor~createOperationFor",
+    "longname": "module:@the-/facade-scope.createOperationFor~createOperation.exec",
+    "memberof": "module:@the-/facade-scope.createOperationFor~createOperation",
     "meta": {
       "filename": "createOperationFor.js",
-      "lineno": 35,
+      "lineno": 41,
       "path": "lib/operations"
     },
     "name": "exec",
-    "order": 63,
+    "order": 64,
     "params": [
       {
         "type": {
@@ -1399,26 +1414,11 @@
     "scope": "static"
   },
   {
-    "description": "Init scope",
-    "id": "module:@the-/facade-scope.createOperationFor~createOperationFor.init",
-    "kind": "function",
-    "longname": "module:@the-/facade-scope.createOperationFor~createOperationFor.init",
-    "memberof": "module:@the-/facade-scope.createOperationFor~createOperationFor",
-    "meta": {
-      "filename": "createOperationFor.js",
-      "lineno": 41,
-      "path": "lib/operations"
-    },
-    "name": "init",
-    "order": 64,
-    "scope": "static"
-  },
-  {
     "description": "Set entry",
-    "id": "module:@the-/facade-scope.createOperationFor~createOperationFor.setEntry",
+    "id": "module:@the-/facade-scope.createOperationFor~createOperation.setEntry",
     "kind": "function",
-    "longname": "module:@the-/facade-scope.createOperationFor~createOperationFor.setEntry",
-    "memberof": "module:@the-/facade-scope.createOperationFor~createOperationFor",
+    "longname": "module:@the-/facade-scope.createOperationFor~createOperation.setEntry",
+    "memberof": "module:@the-/facade-scope.createOperationFor~createOperation",
     "meta": {
       "filename": "createOperationFor.js",
       "lineno": 49,
@@ -1824,30 +1824,30 @@
     "scope": "inner"
   },
   {
-    "id": "module:@the-/facade-scope.createOperationFor~createOperationFor",
+    "id": "module:@the-/facade-scope.createOperationFor~createOperation",
     "kind": "namespace",
-    "longname": "module:@the-/facade-scope.createOperationFor~createOperationFor",
+    "longname": "module:@the-/facade-scope.createOperationFor~createOperation",
     "memberof": "module:@the-/facade-scope.createOperationFor",
     "meta": {
       "filename": "createOperationFor.js",
       "lineno": 18,
       "path": "lib/operations"
     },
-    "name": "createOperationFor",
+    "name": "createOperation",
     "order": 62,
     "scope": "inner"
   },
   {
-    "id": "module:@the-/facade-scope.destroyOperationFor~destroyOperationFor",
+    "id": "module:@the-/facade-scope.destroyOperationFor~destroyOperation",
     "kind": "namespace",
-    "longname": "module:@the-/facade-scope.destroyOperationFor~destroyOperationFor",
+    "longname": "module:@the-/facade-scope.destroyOperationFor~destroyOperation",
     "memberof": "module:@the-/facade-scope.destroyOperationFor",
     "meta": {
       "filename": "destroyOperationFor.js",
       "lineno": 19,
       "path": "lib/operations"
     },
-    "name": "destroyOperationFor",
+    "name": "destroyOperation",
     "order": 67,
     "scope": "inner"
   },
@@ -1866,16 +1866,16 @@
     "scope": "inner"
   },
   {
-    "id": "module:@the-/facade-scope.editOperationFor~editOperationFor",
+    "id": "module:@the-/facade-scope.editOperation~editOperation",
     "kind": "namespace",
-    "longname": "module:@the-/facade-scope.editOperationFor~editOperationFor",
-    "memberof": "module:@the-/facade-scope.editOperationFor",
+    "longname": "module:@the-/facade-scope.editOperation~editOperation",
+    "memberof": "module:@the-/facade-scope.editOperation",
     "meta": {
       "filename": "editOperationFor.js",
       "lineno": 22,
       "path": "lib/operations"
     },
-    "name": "editOperationFor",
+    "name": "editOperation",
     "order": 71,
     "scope": "inner"
   },

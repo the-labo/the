@@ -17,26 +17,26 @@ function defineModel(sequelize, resourceName, schema) {
   const attributes = {
     [MetaColumnNames.$$at]: {
       comment: 'Updated date',
-      defaultValue: () => new Date(),
       required: true,
       type: Sequelize.DATE,
+      defaultValue: () => new Date(),
     },
     [MetaColumnNames.$$num]: {
       autoIncrement: true,
       comment: 'Version number',
-      defaultValue: () => 0,
       required: true,
       type: Sequelize.INTEGER,
       unique: true,
+      defaultValue: () => 0,
     },
     id: {
       allowNull: false,
       comment: 'Clay ID',
-      defaultValue: () => String(clayId()),
       primaryKey: true,
       required: true,
       type: Sequelize.STRING,
       unique: true,
+      defaultValue: () => String(clayId()),
     },
     ...Object.entries(schema).reduce(
       (columns, [propertyName, def]) => ({

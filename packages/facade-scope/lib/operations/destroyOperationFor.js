@@ -19,22 +19,22 @@ function destroyOperationFor(scope) {
   /**
    * @memberof module:@the-/facade-scope.destroyOperationFor
    * @inner
-   * @namespace destroyOperationFor
+   * @namespace destroyOperation
    */
-  const destroyOperationFor = {
+  const destroyOperation = {
     busyAccess,
     entityAccess,
-    async exec(handler) {
-      await busyAccess.while(async () => {
-        await handler()
-      })
-    },
     idAccess,
     init() {
       scope.init()
     },
     setId(id) {
       idAccess.set(id)
+    },
+    async exec(handler) {
+      await busyAccess.while(async () => {
+        await handler()
+      })
     },
     async sync(handler) {
       return busyAccess.while(async () => {
@@ -45,9 +45,9 @@ function destroyOperationFor(scope) {
     },
   }
 
-  Object.freeze(destroyOperationFor)
+  Object.freeze(destroyOperation)
 
-  return destroyOperationFor
+  return destroyOperation
 }
 
 module.exports = destroyOperationFor

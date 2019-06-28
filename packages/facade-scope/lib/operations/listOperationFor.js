@@ -32,6 +32,25 @@ function listOperationFor(scope) {
    * @namespace listOperation
    */
   const listOperation = {
+    busyAccess,
+    countsAccess,
+    entitiesAccess,
+    filterAccess,
+
+    moreAccess,
+
+    pageAccess,
+    readyAccess,
+    sortAccess,
+    init() {
+      scope.init()
+    },
+    setCondition(condition) {
+      const { filter, page, sort } = condition
+      filterAccess.set(filter)
+      sortAccess.set(sort)
+      pageAccess.set(page)
+    },
     async _fetch(handler) {
       const { state: filter } = filterAccess
       const { state: page } = pageAccess
@@ -44,25 +63,6 @@ function listOperationFor(scope) {
       const hasMore = countsAccess.hasMore()
       moreAccess.setHas(hasMore)
     },
-    busyAccess,
-    countsAccess,
-
-    entitiesAccess,
-
-    filterAccess,
-    init() {
-      scope.init()
-    },
-    moreAccess,
-    pageAccess,
-    readyAccess,
-    setCondition(condition) {
-      const { filter, page, sort } = condition
-      filterAccess.set(filter)
-      sortAccess.set(sort)
-      pageAccess.set(page)
-    },
-    sortAccess,
     /**
      * @param {function(Object)} handler - Async handler
      * @returns {Promise<*|Promise<*>>}

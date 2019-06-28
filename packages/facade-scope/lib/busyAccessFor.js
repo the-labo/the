@@ -16,17 +16,17 @@ function busyAccessFor(scope) {
    */
   const busyAccess = {
     /**
-     * Set to false
-     */
-    false() {
-      scope.set({ busy: false })
-    },
-    /**
      * State of busyAccess
      * @type {boolean}
      */
     get state() {
       return scope.get('busy')
+    },
+    /**
+     * Set to false
+     */
+    false() {
+      scope.set({ busy: false })
     },
     /**
      * Set to true

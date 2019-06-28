@@ -26,9 +26,7 @@ const asBound = (bound = noop) => async (resource, array, actionContext) =>
       unlessProduction(() => {
         if (typeof result === 'undefined') {
           throw new Error(
-            `[TheDB][${
-              resource.resourceName
-            }] Failed to bound. May be you forgot to return value on inbound() / outbound()`,
+            `[TheDB][${resource.resourceName}] Failed to bound. May be you forgot to return value on inbound() / outbound()`,
           )
         }
       })
@@ -53,9 +51,7 @@ const indexBounds = (indices = []) => ({
       if (rotten) {
         unlessProduction(() => {
           console.warn(
-            `[TheDB] Index had rotten on "${name}" for "${entity.$$as}#${
-              entity.id
-            }"`,
+            `[TheDB] Index had rotten on "${name}" for "${entity.$$as}#${entity.id}"`,
             {
               actual: value,
               indexed: entity[name],

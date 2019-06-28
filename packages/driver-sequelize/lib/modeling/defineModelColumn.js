@@ -36,8 +36,8 @@ function defineModelColumn(propertyName, def = {}) {
       return {
         ...base,
         defaultValue: false,
-        get: () => null,
         type: Sequelize.BOOLEAN,
+        get: () => null,
       }
     case NUMBER:
       return { ...base, type: Sequelize.FLOAT }

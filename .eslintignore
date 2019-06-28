@@ -74,6 +74,8 @@ var/
 /packages/error/lib/TheServerRottenError.js
 /packages/error/lib/TheUnauthorizedError.js
 /packages/error/lib/index.js
+/packages/facade-scope/lib/index.js
+/packages/facade-scope/lib/operations/index.js
 /packages/facebook/lib/index.js
 /packages/geo/lib/index.js
 /packages/handle/lib/index.js
@@ -124,7 +126,6 @@ var/
 /packages/s3/lib/index.js
 /packages/scaffold/lib/index.js
 /packages/scene/lib/index.js
-/packages/scene/lib/mixins/index.js
 /packages/scope/lib/index.js
 /packages/scope/lib/scopes/index.js
 /packages/script-build/lib/index.js
@@ -272,6 +273,7 @@ var/
 /packages/util-client/lib/index.js
 /packages/util-color/lib/index.js
 /packages/util-db/lib/index.js
+/packages/util-dom/lib/index.js
 /packages/util-file/lib/index.js
 /packages/util-path/lib/helpers/index.js
 /packages/util-path/lib/index.js
