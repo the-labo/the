@@ -43,6 +43,15 @@ describe('the-pack', () => {
     }
     ok(caught)
   })
+
+  it('to string', () => {
+    const pack = new ThePack()
+    const data = { d: new Date(), xxxxasdfasdf: 1, y: { z: 0 } }
+    const encoded = pack.encode(data)
+    const str = encoded.toString('base64')
+    const restored = pack.decode(Buffer.from(str, 'base64'))
+    deepEqual(data, restored)
+  })
 })
 
 /* global describe, before, after, it */

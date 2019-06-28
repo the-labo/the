@@ -21,7 +21,7 @@
 ## @the-/facade-scope
 Facade to wrap scopes
 
-**Version**: 16.0.3  
+**Version**: 16.0.5  
 **License**: MIT  
 
 * [@the-/facade-scope](#module_@the-/facade-scope)
@@ -46,6 +46,7 @@ Facade to wrap scopes
                 * [.addOne(entity, [options])](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.addOne)
                 * [.receiveOne(entity, options)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.receiveOne)
                 * [.removeOne(entity)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.removeOne)
+                * [.set(entities)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.set)
                 * [.updateOne(entity)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.updateOne)
     * [.entityAccessFor(scope)](#module_@the-/facade-scope.entityAccessFor) ⇒ <code>Object</code>
         * [~entityAccessFor](#module_@the-/facade-scope.entityAccessFor..entityAccessFor) : <code>object</code>
@@ -243,6 +244,7 @@ Bush scope access
             * [.addOne(entity, [options])](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.addOne)
             * [.receiveOne(entity, options)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.receiveOne)
             * [.removeOne(entity)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.removeOne)
+            * [.set(entities)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.set)
             * [.updateOne(entity)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.updateOne)
 
 <a name="module_@the-/facade-scope.entitiesAccessFor.Entity"></a>
@@ -266,6 +268,7 @@ Bush scope access
     * [.addOne(entity, [options])](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.addOne)
     * [.receiveOne(entity, options)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.receiveOne)
     * [.removeOne(entity)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.removeOne)
+    * [.set(entities)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.set)
     * [.updateOne(entity)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.updateOne)
 
 <a name="module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.state"></a>
@@ -319,6 +322,17 @@ Delete one
 | Param | Type | Description |
 | --- | --- | --- |
 | entity | [<code>Entity</code>](#module_@the-/facade-scope.entitiesAccessFor.Entity) | Deleting id |
+
+<a name="module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.set"></a>
+
+##### entitiesAccess.set(entities)
+Set entities
+
+**Kind**: static method of [<code>entitiesAccess</code>](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| entities | [<code>Array.&lt;Entity&gt;</code>](#module_@the-/facade-scope.entitiesAccessFor.Entity) | Entities to set |
 
 <a name="module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.updateOne"></a>
 

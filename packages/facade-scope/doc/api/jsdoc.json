@@ -11,9 +11,9 @@
       "path": "lib"
     },
     "name": "@the-/facade-scope",
-    "order": 35,
+    "order": 36,
     "typicalname": "facadeScope",
-    "version": "16.0.3"
+    "version": "16.0.5"
   },
   {
     "description": "Operation handlers",
@@ -26,7 +26,7 @@
       "path": "lib/operations"
     },
     "name": "operation",
-    "order": 71,
+    "order": 72,
     "scope": "global"
   },
   {
@@ -76,11 +76,11 @@
     "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
     "meta": {
       "filename": "entitiesAccessFor.js",
-      "lineno": 78,
+      "lineno": 82,
       "path": "lib"
     },
     "name": "state",
-    "order": 18,
+    "order": 19,
     "scope": "static",
     "type": {
       "names": [
@@ -99,7 +99,7 @@
       "path": "lib"
     },
     "name": "state",
-    "order": 23,
+    "order": 24,
     "scope": "static",
     "type": {
       "names": [
@@ -118,7 +118,7 @@
       "path": "lib"
     },
     "name": "state",
-    "order": 29,
+    "order": 30,
     "scope": "static",
     "type": {
       "names": [
@@ -137,7 +137,7 @@
       "path": "lib"
     },
     "name": "state",
-    "order": 34,
+    "order": 35,
     "scope": "static",
     "type": {
       "names": [
@@ -157,7 +157,7 @@
       "path": "lib"
     },
     "name": "state",
-    "order": 50,
+    "order": 51,
     "scope": "static",
     "type": {
       "names": [
@@ -177,7 +177,7 @@
       "path": "lib"
     },
     "name": "state",
-    "order": 59,
+    "order": 60,
     "scope": "static",
     "type": {
       "names": [
@@ -550,6 +550,32 @@
     "scope": "static"
   },
   {
+    "description": "Set entities",
+    "id": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess.set",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess.set",
+    "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
+    "meta": {
+      "filename": "entitiesAccessFor.js",
+      "lineno": 75,
+      "path": "lib"
+    },
+    "name": "set",
+    "order": 18,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Array.<module:@the-/facade-scope.entitiesAccessFor.Entity>"
+          ]
+        },
+        "description": "Entities to set",
+        "name": "entities"
+      }
+    ],
+    "scope": "static"
+  },
+  {
     "description": "Update one",
     "id": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess.updateOne",
     "kind": "function",
@@ -557,11 +583,11 @@
     "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
     "meta": {
       "filename": "entitiesAccessFor.js",
-      "lineno": 85,
+      "lineno": 89,
       "path": "lib"
     },
     "name": "updateOne",
-    "order": 19,
+    "order": 20,
     "params": [
       {
         "type": {
@@ -587,7 +613,7 @@
       "path": "lib"
     },
     "name": "entityAccessFor",
-    "order": 20,
+    "order": 21,
     "params": [
       {
         "type": {
@@ -622,7 +648,7 @@
       "path": "lib"
     },
     "name": "set",
-    "order": 22,
+    "order": 23,
     "params": [
       {
         "type": {
@@ -647,7 +673,7 @@
       "path": "lib"
     },
     "name": "entryAccessFor",
-    "order": 24,
+    "order": 25,
     "params": [
       {
         "type": {
@@ -682,7 +708,7 @@
       "path": "lib"
     },
     "name": "filterAccessFor",
-    "order": 26,
+    "order": 27,
     "params": [
       {
         "type": {
@@ -717,7 +743,7 @@
       "path": "lib"
     },
     "name": "set",
-    "order": 28,
+    "order": 29,
     "params": [
       {
         "type": {
@@ -742,7 +768,7 @@
       "path": "lib"
     },
     "name": "idAccessFor",
-    "order": 30,
+    "order": 31,
     "params": [
       {
         "type": {
@@ -777,7 +803,7 @@
       "path": "lib"
     },
     "name": "isKnown",
-    "order": 32,
+    "order": 33,
     "params": [
       {
         "type": {
@@ -811,7 +837,7 @@
       "path": "lib"
     },
     "name": "set",
-    "order": 33,
+    "order": 34,
     "params": [
       {
         "type": {
@@ -836,7 +862,7 @@
       "path": "lib"
     },
     "name": "moreAccessFor",
-    "order": 36,
+    "order": 37,
     "params": [
       {
         "type": {
@@ -871,7 +897,7 @@
       "path": "lib"
     },
     "name": "busyWhile",
-    "order": 38,
+    "order": 39,
     "params": [
       {
         "type": {
@@ -905,7 +931,7 @@
       "path": "lib"
     },
     "name": "setBusy",
-    "order": 39,
+    "order": 40,
     "params": [
       {
         "type": {
@@ -930,7 +956,7 @@
       "path": "lib"
     },
     "name": "setHas",
-    "order": 40,
+    "order": 41,
     "params": [
       {
         "type": {
@@ -955,7 +981,7 @@
       "path": "lib"
     },
     "name": "pageAccessFor",
-    "order": 41,
+    "order": 42,
     "params": [
       {
         "type": {
@@ -990,7 +1016,7 @@
       "path": "lib"
     },
     "name": "getNumber",
-    "order": 43,
+    "order": 44,
     "returns": [
       {
         "type": {
@@ -1015,7 +1041,7 @@
       "path": "lib"
     },
     "name": "getSize",
-    "order": 44,
+    "order": 45,
     "returns": [
       {
         "type": {
@@ -1039,7 +1065,7 @@
       "path": "lib"
     },
     "name": "more",
-    "order": 45,
+    "order": 46,
     "params": [
       {
         "type": {
@@ -1067,7 +1093,7 @@
       "path": "lib"
     },
     "name": "next",
-    "order": 46,
+    "order": 47,
     "scope": "static"
   },
   {
@@ -1082,7 +1108,7 @@
       "path": "lib"
     },
     "name": "set",
-    "order": 47,
+    "order": 48,
     "params": [
       {
         "name": "page"
@@ -1102,7 +1128,7 @@
       "path": "lib"
     },
     "name": "setNumber",
-    "order": 48,
+    "order": 49,
     "params": [
       {
         "type": {
@@ -1127,7 +1153,7 @@
       "path": "lib"
     },
     "name": "setSize",
-    "order": 49,
+    "order": 50,
     "params": [
       {
         "type": {
@@ -1152,7 +1178,7 @@
       "path": "lib"
     },
     "name": "readyAccessFor",
-    "order": 51,
+    "order": 52,
     "params": [
       {
         "type": {
@@ -1187,7 +1213,7 @@
       "path": "lib"
     },
     "name": "false",
-    "order": 53,
+    "order": 54,
     "scope": "static"
   },
   {
@@ -1202,7 +1228,7 @@
       "path": "lib"
     },
     "name": "true",
-    "order": 54,
+    "order": 55,
     "scope": "static"
   },
   {
@@ -1217,7 +1243,7 @@
       "path": "lib"
     },
     "name": "when",
-    "order": 55,
+    "order": 56,
     "params": [
       {
         "type": {
@@ -1252,7 +1278,7 @@
       "path": "lib"
     },
     "name": "sortAccessFor",
-    "order": 56,
+    "order": 57,
     "params": [
       {
         "type": {
@@ -1287,7 +1313,7 @@
       "path": "lib"
     },
     "name": "set",
-    "order": 58,
+    "order": 59,
     "params": [
       {
         "type": {
@@ -1312,7 +1338,7 @@
       "path": "lib/operations"
     },
     "name": "createOperationFor",
-    "order": 60,
+    "order": 61,
     "params": [
       {
         "type": {
@@ -1350,7 +1376,7 @@
       "path": "lib/operations"
     },
     "name": "exec",
-    "order": 62,
+    "order": 63,
     "params": [
       {
         "type": {
@@ -1384,7 +1410,7 @@
       "path": "lib/operations"
     },
     "name": "init",
-    "order": 63,
+    "order": 64,
     "scope": "static"
   },
   {
@@ -1399,7 +1425,7 @@
       "path": "lib/operations"
     },
     "name": "setEntry",
-    "order": 64,
+    "order": 65,
     "params": [
       {
         "type": {
@@ -1433,7 +1459,7 @@
       "path": "lib/operations"
     },
     "name": "destroyOperationFor",
-    "order": 65,
+    "order": 66,
     "params": [
       {
         "type": {
@@ -1468,7 +1494,7 @@
       "path": "lib/operations"
     },
     "name": "detailOperationFor",
-    "order": 67,
+    "order": 68,
     "params": [
       {
         "type": {
@@ -1503,7 +1529,7 @@
       "path": "lib/operations"
     },
     "name": "editOperationFor",
-    "order": 69,
+    "order": 70,
     "params": [
       {
         "type": {
@@ -1538,7 +1564,7 @@
       "path": "lib/operations"
     },
     "name": "listOperationFor",
-    "order": 72,
+    "order": 73,
     "returns": [
       {
         "type": {
@@ -1561,7 +1587,7 @@
       "path": "lib/operations"
     },
     "name": "sync",
-    "order": 74,
+    "order": 75,
     "params": [
       {
         "type": {
@@ -1596,7 +1622,7 @@
       "path": "lib/operations"
     },
     "name": "operationFor",
-    "order": 75,
+    "order": 76,
     "params": [
       {
         "type": {
@@ -1626,7 +1652,7 @@
     "memberof": "module:@the-/facade-scope.entitiesAccessFor",
     "meta": {
       "filename": "entitiesAccessFor.js",
-      "lineno": 100,
+      "lineno": 104,
       "path": "lib"
     },
     "name": "Entity",
@@ -1696,7 +1722,7 @@
       "path": "lib"
     },
     "name": "entityAccessFor",
-    "order": 21,
+    "order": 22,
     "scope": "inner"
   },
   {
@@ -1710,7 +1736,7 @@
       "path": "lib"
     },
     "name": "entryAccess",
-    "order": 25,
+    "order": 26,
     "scope": "inner"
   },
   {
@@ -1724,7 +1750,7 @@
       "path": "lib"
     },
     "name": "filterAccess",
-    "order": 27,
+    "order": 28,
     "scope": "inner"
   },
   {
@@ -1738,7 +1764,7 @@
       "path": "lib"
     },
     "name": "idAccess",
-    "order": 31,
+    "order": 32,
     "scope": "inner"
   },
   {
@@ -1752,7 +1778,7 @@
       "path": "lib"
     },
     "name": "moreAccess",
-    "order": 37,
+    "order": 38,
     "scope": "inner"
   },
   {
@@ -1766,7 +1792,7 @@
       "path": "lib"
     },
     "name": "pageAccess",
-    "order": 42,
+    "order": 43,
     "scope": "inner"
   },
   {
@@ -1780,7 +1806,7 @@
       "path": "lib"
     },
     "name": "readyAccess",
-    "order": 52,
+    "order": 53,
     "scope": "inner"
   },
   {
@@ -1794,7 +1820,7 @@
       "path": "lib"
     },
     "name": "sortAccess",
-    "order": 57,
+    "order": 58,
     "scope": "inner"
   },
   {
@@ -1808,7 +1834,7 @@
       "path": "lib/operations"
     },
     "name": "createOperationFor",
-    "order": 61,
+    "order": 62,
     "scope": "inner"
   },
   {
@@ -1822,7 +1848,7 @@
       "path": "lib/operations"
     },
     "name": "destroyOperationFor",
-    "order": 66,
+    "order": 67,
     "scope": "inner"
   },
   {
@@ -1836,7 +1862,7 @@
       "path": "lib/operations"
     },
     "name": "detailOperation",
-    "order": 68,
+    "order": 69,
     "scope": "inner"
   },
   {
@@ -1850,7 +1876,7 @@
       "path": "lib/operations"
     },
     "name": "editOperationFor",
-    "order": 70,
+    "order": 71,
     "scope": "inner"
   },
   {
@@ -1864,7 +1890,7 @@
       "path": "lib/operations"
     },
     "name": "listOperation",
-    "order": 73,
+    "order": 74,
     "scope": "inner"
   },
   {
@@ -1878,7 +1904,7 @@
       "path": "lib/operations"
     },
     "name": "operationFor",
-    "order": 76,
+    "order": 77,
     "scope": "inner"
   }
 ]

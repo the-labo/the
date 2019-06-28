@@ -68,6 +68,10 @@ function entitiesAccessFor(scope) {
       )
       entitiesAccess.set(removed)
     },
+    /**
+     * Set entities
+     * @param {module:@the-/facade-scope.entitiesAccessFor.Entity[]} entities - Entities to set
+     */
     set(entities) {
       scope.set({ entities })
     },
@@ -83,8 +87,8 @@ function entitiesAccessFor(scope) {
      * @param {module:@the-/facade-scope.entitiesAccessFor.Entity} entity Entity to update
      */
     updateOne(entity) {
-      const updated = [...entity.state].map((e) =>
-        e.id === entity ? entity : e,
+      const updated = [...entitiesAccess.state].map((e) =>
+        e.id === entity.id ? entity : e,
       )
       entitiesAccess.set(updated)
     },

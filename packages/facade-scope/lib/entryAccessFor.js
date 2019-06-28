@@ -22,7 +22,7 @@ function entryAccessFor(scope) {
     },
     getEntry(options = {}) {
       const { raw = false } = options
-      const entry = entryAccess.get('entry')
+      const entry = scope.get('entry')
       if (raw) {
         return entry
       }
@@ -54,7 +54,7 @@ function entryAccessFor(scope) {
         const names = Object.keys(entry).filter((name) =>
           entryAccess.hasErrorFor(name),
         )
-        entryAccessFor.delError(...names)
+        entryAccess.delError(...names)
       }
     },
     get state() {

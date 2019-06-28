@@ -29,11 +29,17 @@ function editOperationFor(scope) {
     entityAccess,
     entryAccess,
     async exec(handler) {
-      await busyAccess.while(async () => entryAccess.process(handler))
+      const { state: id } = idAccess
+      await busyAccess.while(async () =>
+        entryAccess.process((entry) => handler(id, entry)),
+      )
     },
     idAccess,
     init() {
       scope.init()
+    },
+    setEntry(entry) {
+      entryAccess.set(entry)
     },
     setId(id) {
       idAccess.set(id)

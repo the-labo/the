@@ -5,7 +5,7 @@
 'use strict'
 
 const {
-  strict: { ok, equal },
+  strict: { equal, ok },
 } = require('assert')
 const {
   scopes: { ArrayScope, ScopeScope },
@@ -25,14 +25,16 @@ describe('entities-access-for', () => {
     x.load(ArrayScope, 'entities')
     const entitiesAccess = entitiesAccessFor(x)
     ok(Array.isArray(entitiesAccess.state))
-    entitiesAccess.add([{id:1}])
-    entitiesAccess.addOne({id:2})
+    entitiesAccess.add([{ id: 1 }])
+    entitiesAccess.addOne({ id: 2 })
     equal(entitiesAccess.state.length, 2)
-    entitiesAccess.removeOne(({id:2}))
+    entitiesAccess.removeOne({ id: 2 })
     equal(entitiesAccess.state.length, 1)
-    entitiesAccess.receiveOne({id:4})
-    entitiesAccess.receiveOne({id:2})
-    equal(entitiesAccess.state.length, 2)
+    entitiesAccess.receiveOne({ id: 4 })
+    entitiesAccess.receiveOne({ id: 2 })
+    entitiesAccess.receiveOne({ id: 2, name: '222' })
+    equal(entitiesAccess.state.length, 3)
+    equal(entitiesAccess.state[2].name, '222')
   })
 })
 

@@ -21,14 +21,14 @@ async function cachingFetch(cache, request) {
     try {
       await cache.delete(request)
     } catch (e) {
-      console.warn('[cachingFetch] Failed to delete cache', e.message || e)
+      console.warn('[cachingFetch] Failed to delete cache:', e.message || e)
     }
     return fetched
   }
   try {
     await cache.put(request, fetched.clone())
   } catch (e) {
-    console.warn('[cachingFetch] Failed to put cache', e.message || e)
+    console.warn('[cachingFetch] Failed to put cache:', e.message || e)
   }
   return fetched
 }

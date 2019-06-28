@@ -93,6 +93,7 @@ Facade to wrap scopes
   - [.addOne(entity,options)](./doc/api/api.md#module_@the-/facade-scope.entitiesAccessFor~entitiesAccess.addOne)
   - [.receiveOne(entity,options)](./doc/api/api.md#module_@the-/facade-scope.entitiesAccessFor~entitiesAccess.receiveOne)
   - [.removeOne(entity)](./doc/api/api.md#module_@the-/facade-scope.entitiesAccessFor~entitiesAccess.removeOne)
+  - [.set(entities)](./doc/api/api.md#module_@the-/facade-scope.entitiesAccessFor~entitiesAccess.set)
   - [.updateOne(entity)](./doc/api/api.md#module_@the-/facade-scope.entitiesAccessFor~entitiesAccess.updateOne)
 - module:@the-/facade-scope.entityAccessFor
   - [~entityAccessFor](./doc/api/api.md#module_@the-/facade-scope.entityAccessFor~entityAccessFor)
