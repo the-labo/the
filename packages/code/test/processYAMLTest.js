@@ -74,6 +74,20 @@ x:
     )
   })
 
+  it('Keep long line', async () => {
+    const longWord = new Array(100)
+      .fill(null)
+      .map(() => 'abc')
+      .join('')
+    equal(
+      await processYAML(`
+x: ${longWord}
+`),
+      `x: ${longWord}
+`,
+    )
+  })
+
   it('Sort sets', async () => {
     equal(
       await processYAML(`

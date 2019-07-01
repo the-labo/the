@@ -6,11 +6,11 @@
 'use strict'
 
 import React from 'react'
-import context from '{{contextPath}}'
+import { Stateless } from '{{contextPath}}'
 
 /** @lends {{memberOf}}.{{pascalcase name}} */
 class {{pascalcase name}} extends React.Component {
-  #stateless = context.stateless()
+  #stateless = Stateless()
 
   render () {
     return this.#stateless(

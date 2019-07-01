@@ -43,9 +43,7 @@ class TheQueue {
     const isFull = this.length >= this.max
     if (isFull) {
       throw new Error(
-        `[TheQueue][${this.name}] Too many tasks (max: ${this.max}, pending: ${
-          this.length
-        })`,
+        `[TheQueue][${this.name}] Too many tasks (max: ${this.max}, pending: ${this.length})`,
       )
     }
     return new Promise((resolve, reject) => {
@@ -113,9 +111,7 @@ class TheQueue {
       const tooLong = timeout < passed
       if (tooLong) {
         throw new Error(
-          `[TheQueue][${
-            this.name
-          }] Timeout to wait (timeout: ${timeout}ms, passed: ${passed}ms)`,
+          `[TheQueue][${this.name}] Timeout to wait (timeout: ${timeout}ms, passed: ${passed}ms)`,
         )
       }
     }

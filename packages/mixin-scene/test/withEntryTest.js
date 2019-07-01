@@ -16,6 +16,7 @@ describe('with-entry', () => {
   it('Do test', () => {
     const scope = {
       entry: {
+        state: {},
         drop() {
           this.state = {}
         },
@@ -28,7 +29,6 @@ describe('with-entry', () => {
         set(values) {
           Object.assign(this.state, values)
         },
-        state: {},
       },
       entryErrors: {
         state: {},

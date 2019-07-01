@@ -103,9 +103,7 @@ class ScopeScope extends Scope {
     unlessProduction(() => {
       if (typeof value === 'undefined') {
         console.warn(
-          `[${
-            this.name
-          }] Value can not be undefined for namepath "${namepath}". Use \`null\` to clear value`,
+          `[${this.name}] Value can not be undefined for namepath "${namepath}". Use \`null\` to clear value`,
         )
         value = null
       }

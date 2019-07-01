@@ -1,5 +1,5 @@
 /**
- * Bush scope access
+ * Scope access
  * @memberof module:@the-/facade-scope
  * @function entityAccessFor
  * @param {Object} scope

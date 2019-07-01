@@ -50,27 +50,6 @@ const withEntry = asClassMixin((Class) => {
         return name in entryErrors
       },
       /**
-       * Process an entry
-       * @param {Function} handler
-       * @returns {Promise<undefined>}
-       */
-      async processEntry(handler) {
-        const {
-          scope: { entryErrors },
-        } = this
-        entryErrors.drop()
-        const values = this.getEntry()
-        try {
-          return await Promise.resolve(handler.call(this, values))
-        } catch (e) {
-          if (this.catchEntryError) {
-            entryErrors.set(this.catchEntryError(e))
-            return
-          }
-          throw e
-        }
-      },
-      /**
        * Reset entry
        */
       resetEntry() {
@@ -118,6 +97,27 @@ const withEntry = asClassMixin((Class) => {
           scope: { entryErrors },
         } = this
         entryErrors.set(errors)
+      },
+      /**
+       * Process an entry
+       * @param {Function} handler
+       * @returns {Promise<undefined>}
+       */
+      async processEntry(handler) {
+        const {
+          scope: { entryErrors },
+        } = this
+        entryErrors.drop()
+        const values = this.getEntry()
+        try {
+          return await Promise.resolve(handler.call(this, values))
+        } catch (e) {
+          if (this.catchEntryError) {
+            entryErrors.set(this.catchEntryError(e))
+            return
+          }
+          throw e
+        }
       },
     },
   )

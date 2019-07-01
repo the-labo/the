@@ -7,11 +7,11 @@
 'use strict'
 
 import React from 'react'
-import context from '{{contextPath}}'
+import { Stateful } from '{{contextPath}}'
 
 /** @lends {{memberOf}}.{{pascalcase name}} */
 class {{pascalcase name}} extends React.Component {
-  #stateful = context.stateful(
+  #stateful = Stateful(
     (state) => ({
     }),
     () => ({

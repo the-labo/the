@@ -103,9 +103,7 @@ class TheResource extends TheResourceBase {
     }
     if (typeof values === 'undefined') {
       console.warn(
-        `[TheResource][${
-          this.resourceName
-        }] You should return \`null\` or valid object from \`.invalidated(attributes)\``,
+        `[TheResource][${this.resourceName}] You should return \`null\` or valid object from \`.invalidated(attributes)\``,
       )
       return null
     }

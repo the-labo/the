@@ -38,9 +38,7 @@ class TheSupport {
       handleDetected(
         detected,
         (message) =>
-          `[TheSupport] ES${ecmaVersion} failed with eval code in ${loc.line}:${
-            loc.column
-          } at ${relativeFilename} ( ${message} )`,
+          `[TheSupport] ES${ecmaVersion} failed with eval code in ${loc.line}:${loc.column} at ${relativeFilename} ( ${message} )`,
       )
     }
   }

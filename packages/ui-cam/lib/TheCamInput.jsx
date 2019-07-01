@@ -216,13 +216,13 @@ TheCamInput.propTypes = {
 
 TheCamInput.defaultProps = {
   audio: TheCam.defaultProps.audio,
-  convertFile: (file) => readFileAsDataURL(file),
   height: TheCam.defaultProps.height,
   onReject: null,
   onUpdate: null,
   value: null,
   video: TheCam.defaultProps.video,
   width: TheCam.defaultProps.width,
+  convertFile: (file) => readFileAsDataURL(file),
 }
 
 TheCamInput.UPLOAD_ICON = 'fas fa-cloud-upload-alt'

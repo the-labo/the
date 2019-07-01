@@ -26,10 +26,10 @@ function asClassMixin(enhancer) {
     )
     return {
       elements: [...elements],
+      kind,
       finisher: (Class) => {
         enhancer(Class)
       },
-      kind,
     }
   }
 }

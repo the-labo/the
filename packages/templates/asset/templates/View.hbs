@@ -9,11 +9,11 @@
 import React from 'react'
 import { TheMeta, TheView, TheCycle } from '@the-/ui'
 import styles from './{{pascalcase name}}.pcss'
-import context from '../../context'
+import { Stateful } from '../../context'
 
 /** @lends class {{memberOf}}.{{pascalcase name}} */
 class {{pascalcase name}} extends React.PureComponent {
-  #stateful = context.stateful(
+  #stateful = Stateful(
     (state) => ({
     }),
     ({}) => ({

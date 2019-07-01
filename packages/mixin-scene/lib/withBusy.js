@@ -23,6 +23,13 @@ const withBusy = asClassMixin((Class) => {
     /** @lends module:@the-/mixin-scene.withBusy.WithBusyMixed */
     {
       /**
+       * Is busy or not
+       * @returns {boolean}
+       */
+      isBusy() {
+        return this.get('busy')
+      },
+      /**
        * Wait busy for
        * @param {number} duration
        * @returns {Promise<undefined>}
@@ -44,13 +51,6 @@ const withBusy = asClassMixin((Class) => {
         } finally {
           this.set({ busy: false })
         }
-      },
-      /**
-       * Is busy or not
-       * @returns {boolean}
-       */
-      isBusy() {
-        return this.get('busy')
       },
       /**
        * Wait while busy

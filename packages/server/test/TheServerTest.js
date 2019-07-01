@@ -227,9 +227,6 @@ describe('the-server', function() {
     const server = new TheServer({
       cacheDir: `${__dirname}/../tmp/testing-cache`,
       endpoints: {
-        '/foo/bar/:id': (ctx) => {
-          ctx.body = { id: ctx.params.id, rendered: true }
-        },
         '/hoge/:key': {
           GET: (ctx) => {
             console.log('hoge')
@@ -237,6 +234,9 @@ describe('the-server', function() {
               key: ctx.params.key,
             }
           },
+        },
+        '/foo/bar/:id': (ctx) => {
+          ctx.body = { id: ctx.params.id, rendered: true }
         },
       },
       html: () => React.createElement('html', { id: 'hoge' }),

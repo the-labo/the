@@ -1,5 +1,5 @@
 /**
- * Bush scope access
+ * Scope access
  * @memberof module:@the-/facade-scope
  * @function moreAccessFor
  * @param {Object} scope

@@ -18,11 +18,11 @@ function bin(config) {
   assert.ok(signature, 'config.signature is required.')
   return {
     data: {
-      done: config.done,
-      lib: config.lib || '../lib',
       get signature() {
         return evaljson(objnest.expand(signature))
       },
+      done: config.done,
+      lib: config.lib || '../lib',
     },
     force: true,
     mkdirp: true,

@@ -106,11 +106,6 @@ const { createElement: c } = React
       fruitShop: FruitShopCtrl,
     },
     /**
-     * View renderer
-     * @param {*} children
-     */
-    html: ({ children }) => c('html', {}, c('body', {}, children)),
-    /**
      * Redis config
      */
     redis: { db: 1, host: '127.0.0.1', port: '6379' },
@@ -118,10 +113,15 @@ const { createElement: c } = React
      * Directory path to serve static files
      */
     static: 'public',
-
     streams: {
       countdown: CountdownStream,
     },
+
+    /**
+     * View renderer
+     * @param {*} children
+     */
+    html: ({ children }) => c('html', {}, c('body', {}, children)),
   })
 
   await server.listen(3000)

@@ -40,6 +40,7 @@ const normalizeSrcPathOnRequireArgumentNode_ = require('./normalizeSrcPathOnRequ
 const normalizeVariableDeclaratorOnStatementNode_ = require('./normalizeVariableDeclaratorOnStatementNode')
 const sortAnnotationsOnCommentNode_ = require('./sortAnnotationsOnCommentNode')
 const sortCasesOnSwitchStatementNode_ = require('./sortCasesOnSwitchStatementNode')
+const sortExportNamedDeclarationsOnProgramNode_ = require('./sortExportNamedDeclarationsOnProgramNode')
 const sortMethodsOnClassNode_ = require('./sortMethodsOnClassNode')
 const sortPropertiesOnObjectNode_ = require('./sortPropertiesOnObjectNode')
 const sortSpecifiersOnImportDeclarationNode_ = require('./sortSpecifiersOnImportDeclarationNode')
@@ -79,6 +80,7 @@ exports.normalizeSrcPathOnRequireArgumentNode = normalizeSrcPathOnRequireArgumen
 exports.normalizeVariableDeclaratorOnStatementNode = normalizeVariableDeclaratorOnStatementNode_
 exports.sortAnnotationsOnCommentNode = sortAnnotationsOnCommentNode_
 exports.sortCasesOnSwitchStatementNode = sortCasesOnSwitchStatementNode_
+exports.sortExportNamedDeclarationsOnProgramNode = sortExportNamedDeclarationsOnProgramNode_
 exports.sortMethodsOnClassNode = sortMethodsOnClassNode_
 exports.sortPropertiesOnObjectNode = sortPropertiesOnObjectNode_
 exports.sortSpecifiersOnImportDeclarationNode = sortSpecifiersOnImportDeclarationNode_
@@ -118,6 +120,7 @@ module.exports = {
   normalizeVariableDeclaratorOnStatementNode: normalizeVariableDeclaratorOnStatementNode_,
   sortAnnotationsOnCommentNode: sortAnnotationsOnCommentNode_,
   sortCasesOnSwitchStatementNode: sortCasesOnSwitchStatementNode_,
+  sortExportNamedDeclarationsOnProgramNode: sortExportNamedDeclarationsOnProgramNode_,
   sortMethodsOnClassNode: sortMethodsOnClassNode_,
   sortPropertiesOnObjectNode: sortPropertiesOnObjectNode_,
   sortSpecifiersOnImportDeclarationNode: sortSpecifiersOnImportDeclarationNode_,

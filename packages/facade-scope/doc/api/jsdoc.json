@@ -13,7 +13,7 @@
     "name": "@the-/facade-scope",
     "order": 36,
     "typicalname": "facadeScope",
-    "version": "16.0.7"
+    "version": "16.0.8"
   },
   {
     "description": "Operation handlers",
@@ -1886,7 +1886,7 @@
     "memberof": "module:@the-/facade-scope.listOperationFor",
     "meta": {
       "filename": "listOperationFor.js",
-      "lineno": 29,
+      "lineno": 31,
       "path": "lib/operations"
     },
     "name": "listOperation",

@@ -22,6 +22,15 @@ const withReady = asClassMixin((Class) => {
     /** @lends module:@the-/mixin-scene.withReady~WithReadyMixed */
     {
       /**
+       * Get is ready or not
+       * @property {boolean} isReady
+       */
+      isReady: {
+        get() {
+          return this.get('ready')
+        },
+      },
+      /**
        * Do only if ready
        * @param {Function} task
        * @returns {Promise<*>}
@@ -30,15 +39,6 @@ const withReady = asClassMixin((Class) => {
         if (this.isReady) {
           return task()
         }
-      },
-      /**
-       * Get is ready or not
-       * @property {boolean} isReady
-       */
-      isReady: {
-        get() {
-          return this.get('ready')
-        },
       },
       /**
        * Set ready when done

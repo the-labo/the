@@ -6,6 +6,7 @@
  */
 'use strict'
 
+const theAssert = require('@the-/assert')
 const busyAccessFor = require('../busyAccessFor')
 const countsAccessFor = require('../countsAccessFor')
 const entitiesAccessFor = require('../entitiesAccessFor')
@@ -25,6 +26,7 @@ function listOperationFor(scope) {
   const filterAccess = filterAccessFor(scope)
   const entitiesAccess = entitiesAccessFor(scope)
   const countsAccess = countsAccessFor(scope)
+  const assert = theAssert(`${scope.name} - listOperation`)
 
   /**
    * @memberof module:@the-/facade-scope.listOperationFor
@@ -36,9 +38,7 @@ function listOperationFor(scope) {
     countsAccess,
     entitiesAccess,
     filterAccess,
-
     moreAccess,
-
     pageAccess,
     readyAccess,
     sortAccess,
@@ -46,7 +46,7 @@ function listOperationFor(scope) {
       scope.init()
     },
     setCondition(condition) {
-      const { filter, page, sort } = condition
+      const { filter = {}, page = {}, sort = [] } = condition
       filterAccess.set(filter)
       sortAccess.set(sort)
       pageAccess.set(page)
@@ -71,6 +71,7 @@ function listOperationFor(scope) {
       return busyAccess.while(async () =>
         readyAccess.when(async () => {
           const result = await listOperation._fetch(handler)
+          assert(result, 'sync handle must returns result')
           listOperation._save(result)
         }),
       )

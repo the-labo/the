@@ -114,6 +114,7 @@ class TheServer extends TheServerBase {
       ...Object.entries(controllerClasses).map(([name, Class]) => ({
         [name]: asControllerModule(Class, {
           controllerName: name,
+          instantiateController,
           describeController(controllerName) {
             const ControllerModuleBind = ControllerModuleBinds[controllerName]
             if (!ControllerModuleBind) {
@@ -123,7 +124,6 @@ class TheServer extends TheServerBase {
             }
             return ControllerModuleBind.describe({ app: appScope })
           },
-          instantiateController,
         }),
       })),
     )

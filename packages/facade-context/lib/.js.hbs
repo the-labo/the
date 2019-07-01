@@ -1,0 +1,25 @@
+/**
+ * Context wrapper
+ * @memberof module:@the-/facade-context
+ * @function {{name}}For
+ * @param {Object} context
+ * @returns {Object} - Face object for {{name}} access
+ */
+'use strict'
+
+/** @lends module:@the-/facade-context.{{name}}For */
+function {{name}}For(context) {
+  /**
+   * @memberof module:@the-/facade-context.{{name}}For
+   * @inner
+   * @namespace {{name}}
+   */
+  const {{name}} = {
+  }
+
+  Object.freeze({{name}})
+
+  return {{name}}
+}
+
+module.exports = {{name}}For
