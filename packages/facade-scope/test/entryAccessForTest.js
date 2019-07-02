@@ -5,7 +5,7 @@
 'use strict'
 
 const {
-  strict: { doesThrow, ok },
+  strict: { ok },
 } = require('assert')
 const {
   scopes: { ObjectScope, ScopeScope },
@@ -25,8 +25,8 @@ describe('entry-access-for', () => {
     x.load(ObjectScope, 'entry')
     x.load(ObjectScope, 'entryErrors')
     const entryAccess = entryAccessFor(x)
-    doesThrow(() => {
-      entryAccess.process(() => {
+    const caught = entryAccess
+      .process(() => {
         const e = new Error('failed to input')
         e.entryErrors = {
           username: {
@@ -36,7 +36,9 @@ describe('entry-access-for', () => {
         }
         throw e
       })
-    })
+      .then(() => null)
+      .catch((e) => e)
+    ok(!!caught)
     ok(entryAccess.getEntryErrors())
   })
 })

@@ -33,6 +33,7 @@ describe('list-operation-for', () => {
     x.load(NumberScope, 'pageSize')
     x.load(NumberScope, 'pageNumber')
     x.load(StringScope, 'sort')
+    x.load(BooleanScope, 'ready')
     x.load(BooleanScope, 'busy')
     x.load(ValueScope, 'filter')
     x.load(ValueScope, 'counts')

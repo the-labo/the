@@ -52,7 +52,7 @@ function entryAccessFor(scope) {
       }
     },
     setEntryErrors(entryErrors) {
-      scope.set(entryErrors)
+      scope.set({ entryErrors })
     },
     async process(handler) {
       const entry = entryAccess.getEntry()
