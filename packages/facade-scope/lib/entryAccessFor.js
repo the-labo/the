@@ -20,7 +20,7 @@ function entryAccessFor(scope) {
     get state() {
       return entryAccess.getEntry({ raw: true })
     },
-    delError(...names) {
+    deleteEntryError(...names) {
       scope.entryErrors.del(...names)
     },
     getEntry(options = {}) {
@@ -31,11 +31,14 @@ function entryAccessFor(scope) {
       }
       return expand(entry)
     },
-    getErrors() {
+    getEntryErrors() {
       return scope.get('entryErrors')
     },
-    hasErrorFor(name) {
-      const errors = entryAccess.getErrors()
+    setEntryErrors(entryErrors){
+      scope.set(entryErrors)
+    },
+    hasEntryErrorFor(name) {
+      const errors = entryAccess.getEntryErrors()
       return name in errors
     },
     set(entry) {
@@ -46,9 +49,9 @@ function entryAccessFor(scope) {
       // Create errors
       {
         const names = Object.keys(entry).filter((name) =>
-          entryAccess.hasErrorFor(name),
+          entryAccess.hasEntryErrorFor(name),
         )
-        entryAccess.delError(...names)
+        entryAccess.deleteEntryError(...names)
       }
     },
     async process(handler) {
@@ -56,7 +59,10 @@ function entryAccessFor(scope) {
       try {
         await handler(entry)
       } catch (e) {
-        // TODO Handle error
+        const {entryErrors} = e
+        if(entryErrors){
+          entryAccess.setEntryErrors(entryErrors)
+        }
         throw e
       }
     },

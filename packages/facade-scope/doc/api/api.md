@@ -21,7 +21,7 @@
 ## @the-/facade-scope
 Facade to wrap scopes
 
-**Version**: 16.0.8  
+**Version**: 16.1.0  
 **License**: MIT  
 
 * [@the-/facade-scope](#module_@the-/facade-scope)
@@ -105,7 +105,7 @@ Facade to wrap scopes
 <a name="module_@the-/facade-scope.busyAccessFor"></a>
 
 ### facadeScope.busyAccessFor(scope) ⇒ [<code>busyAccess</code>](#module_@the-/facade-scope.busyAccessFor..busyAccess)
-Bush scope access
+Scope access
 
 **Kind**: static method of [<code>@the-/facade-scope</code>](#module_@the-/facade-scope)  
 **Returns**: [<code>busyAccess</code>](#module_@the-/facade-scope.busyAccessFor..busyAccess) - - Face object for busy access  
@@ -171,7 +171,7 @@ busyAccess.while(async () => {
 <a name="module_@the-/facade-scope.countsAccessFor"></a>
 
 ### facadeScope.countsAccessFor(scope) ⇒ <code>Object</code>
-Bush scope access
+Scope access
 
 **Kind**: static method of [<code>@the-/facade-scope</code>](#module_@the-/facade-scope)  
 **Returns**: <code>Object</code> - - Face object for counts access  
@@ -223,7 +223,7 @@ Set counts
 <a name="module_@the-/facade-scope.entitiesAccessFor"></a>
 
 ### facadeScope.entitiesAccessFor(scope) ⇒ <code>module:@the-/facade-scope.entitiesAccessFor~entities</code>
-Bush scope access
+Scope access
 
 **Kind**: static method of [<code>@the-/facade-scope</code>](#module_@the-/facade-scope)  
 **Returns**: <code>module:@the-/facade-scope.entitiesAccessFor~entities</code> - - Face object for entities access  
@@ -347,7 +347,7 @@ Update one
 <a name="module_@the-/facade-scope.entityAccessFor"></a>
 
 ### facadeScope.entityAccessFor(scope) ⇒ <code>Object</code>
-Bush scope access
+Scope access
 
 **Kind**: static method of [<code>@the-/facade-scope</code>](#module_@the-/facade-scope)  
 **Returns**: <code>Object</code> - - Face object for entityAccessFor access  
@@ -389,7 +389,7 @@ Set entity
 <a name="module_@the-/facade-scope.entryAccessFor"></a>
 
 ### facadeScope.entryAccessFor(scope) ⇒ <code>Object</code>
-Bush scope access
+Scope access
 
 **Kind**: static method of [<code>@the-/facade-scope</code>](#module_@the-/facade-scope)  
 **Returns**: <code>Object</code> - - Face object for entryAccess access  
@@ -405,7 +405,7 @@ Bush scope access
 <a name="module_@the-/facade-scope.filterAccessFor"></a>
 
 ### facadeScope.filterAccessFor(scope) ⇒ <code>Object</code>
-Bush scope access
+Scope access
 
 **Kind**: static method of [<code>@the-/facade-scope</code>](#module_@the-/facade-scope)  
 **Returns**: <code>Object</code> - - Face object for filter access  
@@ -447,7 +447,7 @@ Set filter
 <a name="module_@the-/facade-scope.idAccessFor"></a>
 
 ### facadeScope.idAccessFor(scope) ⇒ <code>Object</code>
-Bush scope access
+Scope access
 
 **Kind**: static method of [<code>@the-/facade-scope</code>](#module_@the-/facade-scope)  
 **Returns**: <code>Object</code> - - Face object for id access  
@@ -502,7 +502,7 @@ Set id
 <a name="module_@the-/facade-scope.moreAccessFor"></a>
 
 ### facadeScope.moreAccessFor(scope) ⇒ <code>Object</code>
-Bush scope access
+Scope access
 
 **Kind**: static method of [<code>@the-/facade-scope</code>](#module_@the-/facade-scope)  
 **Returns**: <code>Object</code> - - Face object for more access  
@@ -564,7 +564,7 @@ Busy true while handling
 <a name="module_@the-/facade-scope.pageAccessFor"></a>
 
 ### facadeScope.pageAccessFor(scope) ⇒ <code>Object</code>
-Bush scope access
+Scope access
 
 **Kind**: static method of [<code>@the-/facade-scope</code>](#module_@the-/facade-scope)  
 **Returns**: <code>Object</code> - - Face object for page access  
@@ -672,7 +672,7 @@ Set size
 <a name="module_@the-/facade-scope.readyAccessFor"></a>
 
 ### facadeScope.readyAccessFor(scope) ⇒ <code>Object</code>
-Bush scope access
+Scope access
 
 **Kind**: static method of [<code>@the-/facade-scope</code>](#module_@the-/facade-scope)  
 **Returns**: <code>Object</code> - - Face object for ready access  
@@ -724,7 +724,7 @@ Set busy while handle pending
 <a name="module_@the-/facade-scope.sortAccessFor"></a>
 
 ### facadeScope.sortAccessFor(scope) ⇒ <code>Object</code>
-Bush scope access
+Scope access
 
 **Kind**: static method of [<code>@the-/facade-scope</code>](#module_@the-/facade-scope)  
 **Returns**: <code>Object</code> - - Face object for sort access  
@@ -768,7 +768,7 @@ Set sort
 <a name="module_@the-/facade-scope.createOperationFor"></a>
 
 ### facadeScope.createOperationFor(scope) ⇒ <code>Object</code>
-Bush scope access
+Scope access
 
 **Kind**: static method of [<code>@the-/facade-scope</code>](#module_@the-/facade-scope)  
 **Returns**: <code>Object</code> - - Face object for createOperationFor access  
@@ -831,7 +831,7 @@ Set entry
 <a name="module_@the-/facade-scope.destroyOperationFor"></a>
 
 ### facadeScope.destroyOperationFor(scope) ⇒ <code>Object</code>
-Bush scope access
+Scope access
 
 **Kind**: static method of [<code>@the-/facade-scope</code>](#module_@the-/facade-scope)  
 **Returns**: <code>Object</code> - - Face object for destroyOperationFor access  
@@ -847,7 +847,7 @@ Bush scope access
 <a name="module_@the-/facade-scope.detailOperationFor"></a>
 
 ### facadeScope.detailOperationFor(scope) ⇒ <code>Object</code>
-Bush scope access
+Scope access
 
 **Kind**: static method of [<code>@the-/facade-scope</code>](#module_@the-/facade-scope)  
 **Returns**: <code>Object</code> - - Face object for detailOperation access  
@@ -863,7 +863,7 @@ Bush scope access
 <a name="module_@the-/facade-scope.editOperationFor"></a>
 
 ### facadeScope.editOperationFor(scope) ⇒ <code>Object</code>
-Bush scope access
+Scope access
 
 **Kind**: static method of [<code>@the-/facade-scope</code>](#module_@the-/facade-scope)  
 **Returns**: <code>Object</code> - - Face object for editOperationFor access  
@@ -885,7 +885,7 @@ List for entity
 <a name="module_@the-/facade-scope.operationFor"></a>
 
 ### facadeScope.operationFor(scope) ⇒ <code>Object</code>
-Bush scope access
+Scope access
 
 **Kind**: static method of [<code>@the-/facade-scope</code>](#module_@the-/facade-scope)  
 **Returns**: <code>Object</code> - - Face object for operationFor access  

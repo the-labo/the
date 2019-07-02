@@ -13,7 +13,7 @@
     "name": "@the-/facade-scope",
     "order": 36,
     "typicalname": "facadeScope",
-    "version": "16.0.8"
+    "version": "16.1.0"
   },
   {
     "description": "Operation handlers",
@@ -186,7 +186,7 @@
     }
   },
   {
-    "description": "Bush scope access",
+    "description": "Scope access",
     "id": "module:@the-/facade-scope.busyAccessFor",
     "kind": "function",
     "longname": "module:@the-/facade-scope.busyAccessFor",
@@ -289,7 +289,7 @@
     "scope": "static"
   },
   {
-    "description": "Bush scope access",
+    "description": "Scope access",
     "id": "module:@the-/facade-scope.countsAccessFor",
     "kind": "function",
     "longname": "module:@the-/facade-scope.countsAccessFor",
@@ -373,7 +373,7 @@
     "scope": "static"
   },
   {
-    "description": "Bush scope access",
+    "description": "Scope access",
     "id": "module:@the-/facade-scope.entitiesAccessFor",
     "kind": "function",
     "longname": "module:@the-/facade-scope.entitiesAccessFor",
@@ -602,7 +602,7 @@
     "scope": "static"
   },
   {
-    "description": "Bush scope access",
+    "description": "Scope access",
     "id": "module:@the-/facade-scope.entityAccessFor",
     "kind": "function",
     "longname": "module:@the-/facade-scope.entityAccessFor",
@@ -662,7 +662,7 @@
     "scope": "static"
   },
   {
-    "description": "Bush scope access",
+    "description": "Scope access",
     "id": "module:@the-/facade-scope.entryAccessFor",
     "kind": "function",
     "longname": "module:@the-/facade-scope.entryAccessFor",
@@ -697,7 +697,7 @@
     "scope": "static"
   },
   {
-    "description": "Bush scope access",
+    "description": "Scope access",
     "id": "module:@the-/facade-scope.filterAccessFor",
     "kind": "function",
     "longname": "module:@the-/facade-scope.filterAccessFor",
@@ -757,7 +757,7 @@
     "scope": "static"
   },
   {
-    "description": "Bush scope access",
+    "description": "Scope access",
     "id": "module:@the-/facade-scope.idAccessFor",
     "kind": "function",
     "longname": "module:@the-/facade-scope.idAccessFor",
@@ -851,7 +851,7 @@
     "scope": "static"
   },
   {
-    "description": "Bush scope access",
+    "description": "Scope access",
     "id": "module:@the-/facade-scope.moreAccessFor",
     "kind": "function",
     "longname": "module:@the-/facade-scope.moreAccessFor",
@@ -970,7 +970,7 @@
     "scope": "static"
   },
   {
-    "description": "Bush scope access",
+    "description": "Scope access",
     "id": "module:@the-/facade-scope.pageAccessFor",
     "kind": "function",
     "longname": "module:@the-/facade-scope.pageAccessFor",
@@ -1167,7 +1167,7 @@
     "scope": "static"
   },
   {
-    "description": "Bush scope access",
+    "description": "Scope access",
     "id": "module:@the-/facade-scope.readyAccessFor",
     "kind": "function",
     "longname": "module:@the-/facade-scope.readyAccessFor",
@@ -1267,7 +1267,7 @@
     "scope": "static"
   },
   {
-    "description": "Bush scope access",
+    "description": "Scope access",
     "id": "module:@the-/facade-scope.sortAccessFor",
     "kind": "function",
     "longname": "module:@the-/facade-scope.sortAccessFor",
@@ -1327,7 +1327,7 @@
     "scope": "static"
   },
   {
-    "description": "Bush scope access",
+    "description": "Scope access",
     "id": "module:@the-/facade-scope.createOperationFor",
     "kind": "function",
     "longname": "module:@the-/facade-scope.createOperationFor",
@@ -1448,7 +1448,7 @@
     "scope": "static"
   },
   {
-    "description": "Bush scope access",
+    "description": "Scope access",
     "id": "module:@the-/facade-scope.destroyOperationFor",
     "kind": "function",
     "longname": "module:@the-/facade-scope.destroyOperationFor",
@@ -1483,7 +1483,7 @@
     "scope": "static"
   },
   {
-    "description": "Bush scope access",
+    "description": "Scope access",
     "id": "module:@the-/facade-scope.detailOperationFor",
     "kind": "function",
     "longname": "module:@the-/facade-scope.detailOperationFor",
@@ -1518,7 +1518,7 @@
     "scope": "static"
   },
   {
-    "description": "Bush scope access",
+    "description": "Scope access",
     "id": "module:@the-/facade-scope.editOperationFor",
     "kind": "function",
     "longname": "module:@the-/facade-scope.editOperationFor",
@@ -1611,7 +1611,7 @@
     "scope": "static"
   },
   {
-    "description": "Bush scope access",
+    "description": "Scope access",
     "id": "module:@the-/facade-scope.operationFor",
     "kind": "function",
     "longname": "module:@the-/facade-scope.operationFor",

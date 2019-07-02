@@ -30,8 +30,17 @@ function detailOperationFor(scope) {
 
     idAccess,
     readyAccess,
+    getEntity() {
+      return entityAccess.state
+    },
+    getId() {
+      return idAccess.state
+    },
     init() {
       scope.init()
+    },
+    setEntity(entity) {
+      entityAccess.set(entity)
     },
     setId(id) {
       idAccess.set(id)
