@@ -13,7 +13,7 @@
     "name": "@the-/facade-scope",
     "order": 36,
     "typicalname": "facadeScope",
-    "version": "16.1.0"
+    "version": "16.1.2"
   },
   {
     "description": "Operation handlers",
@@ -1209,7 +1209,7 @@
     "memberof": "module:@the-/facade-scope.readyAccessFor~readyAccess",
     "meta": {
       "filename": "readyAccessFor.js",
-      "lineno": 21,
+      "lineno": 24,
       "path": "lib"
     },
     "name": "false",
@@ -1224,7 +1224,7 @@
     "memberof": "module:@the-/facade-scope.readyAccessFor~readyAccess",
     "meta": {
       "filename": "readyAccessFor.js",
-      "lineno": 27,
+      "lineno": 30,
       "path": "lib"
     },
     "name": "true",
@@ -1239,7 +1239,7 @@
     "memberof": "module:@the-/facade-scope.readyAccessFor~readyAccess",
     "meta": {
       "filename": "readyAccessFor.js",
-      "lineno": 35,
+      "lineno": 38,
       "path": "lib"
     },
     "name": "when",

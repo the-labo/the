@@ -15,6 +15,9 @@ function readyAccessFor(scope) {
    * @namespace readyAccess
    */
   const readyAccess = {
+    get state() {
+      return scope.get('ready')
+    },
     /**
      * Set to false
      */
@@ -25,7 +28,7 @@ function readyAccessFor(scope) {
      * Set to true
      */
     true() {
-      scope.set({ busy: true })
+      scope.set({ ready: true })
     },
     /**
      * Set busy while handle pending

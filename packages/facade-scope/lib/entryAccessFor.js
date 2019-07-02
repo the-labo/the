@@ -34,9 +34,6 @@ function entryAccessFor(scope) {
     getEntryErrors() {
       return scope.get('entryErrors')
     },
-    setEntryErrors(entryErrors){
-      scope.set(entryErrors)
-    },
     hasEntryErrorFor(name) {
       const errors = entryAccess.getEntryErrors()
       return name in errors
@@ -54,13 +51,16 @@ function entryAccessFor(scope) {
         entryAccess.deleteEntryError(...names)
       }
     },
+    setEntryErrors(entryErrors) {
+      scope.set(entryErrors)
+    },
     async process(handler) {
       const entry = entryAccess.getEntry()
       try {
         await handler(entry)
       } catch (e) {
-        const {entryErrors} = e
-        if(entryErrors){
+        const { entryErrors } = e
+        if (entryErrors) {
           entryAccess.setEntryErrors(entryErrors)
         }
         throw e

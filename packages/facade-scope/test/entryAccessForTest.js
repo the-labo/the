@@ -5,10 +5,10 @@
 'use strict'
 
 const {
-  strict: { deepEqual, equal, ok, doesThrow },
+  strict: { doesThrow, ok },
 } = require('assert')
 const {
-  scopes: {ObjectScope, BooleanScope, ScopeScope, StringScope, ValueScope },
+  scopes: { ObjectScope, ScopeScope },
 } = require('@the-/scope')
 const theStore = require('@the-/store')
 const entryAccessFor = require('../lib/entryAccessFor')
@@ -30,9 +30,9 @@ describe('entry-access-for', () => {
         const e = new Error('failed to input')
         e.entryErrors = {
           username: {
-            reason: 'TOO_SHORT',
             minLength: '1',
-          }
+            reason: 'TOO_SHORT',
+          },
         }
         throw e
       })
