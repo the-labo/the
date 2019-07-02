@@ -21,7 +21,7 @@ function pageAccessFor(scope) {
      */
     get state() {
       return {
-        number: pageAccess.getSize(),
+        number: pageAccess.getNumber(),
         size: pageAccess.getSize(),
       }
     },

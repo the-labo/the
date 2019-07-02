@@ -51,7 +51,8 @@ describe('list-operation-for', () => {
       fetched = { condition, entities: [], meta: {} }
       return fetched
     })
-    equal(fetched.condition.page.number, 20)
+    equal(fetched.condition.page.number, 2)
+    equal(fetched.condition.page.size, 20)
   })
 })
 
