@@ -13,7 +13,7 @@
     "name": "@the-/bin",
     "order": 1,
     "typicalname": "bin",
-    "version": "15.4.7"
+    "version": "15.4.9"
   },
   {
     "id": "module:@the-/bin.TheBin()",
