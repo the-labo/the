@@ -1,7 +1,7 @@
 {
   "name": "@the-/server",
   "description": "HTTP/RPC Server of the-framework",
-  "version": "15.4.9",
+  "version": "15.4.10",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,11 +11,11 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/cache": "^15.4.1",
-    "@the-/check": "^15.5.2",
+    "@the-/cache": "^15.5.1",
+    "@the-/check": "^15.5.3",
     "@the-/controller": "^15.4.1",
     "@the-/mixin-controller": "^15.4.1",
-    "@the-/pack": "^15.4.0",
+    "@the-/pack": "^15.4.9",
     "@the-/stream": "^15.4.1",
     "@the-/tmp": "^15.4.5",
     "adigest": "^3.0.1",
@@ -26,7 +26,7 @@
     "debug": "^4.1.1",
     "locale": "^0.1.0",
     "qs": "^6.7.0",
-    "rfunc": "^4.0.11",
+    "rfunc": "^4.0.13",
     "rimraf": "^2.6.3",
     "socket.io": "^2.2.0",
     "socket.io-client": "^2.2.0",
@@ -34,7 +34,7 @@
     "stringcase": "^4.3.1"
   },
   "devDependencies": {
-    "@the-/client": "^15.4.1",
+    "@the-/client": "^15.4.10",
     "arequest": "^3.0.2",
     "msgpack-lite": "^0.1.26"
   },

@@ -1,7 +1,7 @@
 {
   "name": "@the-/facade-scope",
   "description": "Facade to wrap scopes",
-  "version": "16.1.8",
+  "version": "16.1.9",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",

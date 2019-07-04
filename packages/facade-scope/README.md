@@ -61,6 +61,7 @@ Facade to wrap scopes
   - [.operationFor(scope)](./doc/api/api.md#module_@the-/facade-scope.operationFor)
   - [.pageAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.pageAccessFor)
   - [.readyAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.readyAccessFor)
+  - [.resultAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.resultAccessFor)
   - [.sortAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.sortAccessFor)
 - module:@the-/facade-scope.busyAccessFor
   - [~busyAccess](./doc/api/api.md#module_@the-/facade-scope.busyAccessFor~busyAccess)
@@ -138,6 +139,8 @@ Facade to wrap scopes
   - [.false()](./doc/api/api.md#module_@the-/facade-scope.readyAccessFor~readyAccess.false)
   - [.true()](./doc/api/api.md#module_@the-/facade-scope.readyAccessFor~readyAccess.true)
   - [.when(handler)](./doc/api/api.md#module_@the-/facade-scope.readyAccessFor~readyAccess.when)
+- module:@the-/facade-scope.resultAccessFor
+  - [~resultAccess](./doc/api/api.md#module_@the-/facade-scope.resultAccessFor~resultAccess)
 - module:@the-/facade-scope.sortAccessFor
   - [~sortAccess](./doc/api/api.md#module_@the-/facade-scope.sortAccessFor~sortAccess)
 - module:@the-/facade-scope.sortAccessFor~sortAccess
