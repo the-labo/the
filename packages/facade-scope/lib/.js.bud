@@ -2,7 +2,7 @@
 
 const path = require('path')
 
-module.exports = ['operations/operation'].map((name) => ({
+module.exports = ['resultAccess'].map((name) => ({
   data: {
     name: path.basename(name),
   },

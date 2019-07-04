@@ -8,7 +8,7 @@ const {
   strict: { equal, ok },
 } = require('assert')
 const {
-  scopes: { BooleanScope, ObjectScope, ScopeScope },
+  scopes: { BooleanScope, ObjectScope, ScopeScope, ValueScope },
 } = require('@the-/scope')
 const theStore = require('@the-/store')
 const createOperationFor = require('../lib/operations/createOperationFor')
@@ -25,6 +25,7 @@ describe('create-operation-for', () => {
     x.load(ObjectScope, 'entry')
     x.load(BooleanScope, 'busy')
     x.load(ObjectScope, 'entryErrors')
+    x.load(ValueScope, 'result')
 
     const createOperation = createOperationFor(x)
     ok(createOperation)
@@ -33,8 +34,12 @@ describe('create-operation-for', () => {
     let saved
     await createOperation.exec((entry) => {
       saved = { entry }
+      return entry
     })
     equal(saved.entry.x, 1)
+
+    const result = createOperation.getResult()
+    equal(result.x, 1)
   })
 })
 

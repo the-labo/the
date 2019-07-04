@@ -21,7 +21,7 @@
 ## @the-/facade-scope
 Facade to wrap scopes
 
-**Version**: 16.1.7  
+**Version**: 16.1.8  
 **License**: MIT  
 
 * [@the-/facade-scope](#module_@the-/facade-scope)
@@ -83,6 +83,8 @@ Facade to wrap scopes
             * [.false()](#module_@the-/facade-scope.readyAccessFor..readyAccess.false)
             * [.true()](#module_@the-/facade-scope.readyAccessFor..readyAccess.true)
             * [.when(handler)](#module_@the-/facade-scope.readyAccessFor..readyAccess.when) ⇒ <code>Promise.&lt;\*&gt;</code>
+    * [.resultAccessFor(scope)](#module_@the-/facade-scope.resultAccessFor) ⇒ <code>Object</code>
+        * [~resultAccess](#module_@the-/facade-scope.resultAccessFor..resultAccess) : <code>object</code>
     * [.sortAccessFor(scope)](#module_@the-/facade-scope.sortAccessFor) ⇒ <code>Object</code>
         * [~sortAccess](#module_@the-/facade-scope.sortAccessFor..sortAccess) : <code>object</code>
             * [.state](#module_@the-/facade-scope.sortAccessFor..sortAccess.state) : <code>string</code>
@@ -721,6 +723,22 @@ Set busy while handle pending
 | --- | --- | --- |
 | handler | <code>function</code> | Async handler |
 
+<a name="module_@the-/facade-scope.resultAccessFor"></a>
+
+### facadeScope.resultAccessFor(scope) ⇒ <code>Object</code>
+Scope access
+
+**Kind**: static method of [<code>@the-/facade-scope</code>](#module_@the-/facade-scope)  
+**Returns**: <code>Object</code> - - Face object for resultAccess access  
+
+| Param | Type |
+| --- | --- |
+| scope | <code>Object</code> | 
+
+<a name="module_@the-/facade-scope.resultAccessFor..resultAccess"></a>
+
+#### resultAccessFor~resultAccess : <code>object</code>
+**Kind**: inner namespace of [<code>resultAccessFor</code>](#module_@the-/facade-scope.resultAccessFor)  
 <a name="module_@the-/facade-scope.sortAccessFor"></a>
 
 ### facadeScope.sortAccessFor(scope) ⇒ <code>Object</code>

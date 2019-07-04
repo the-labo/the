@@ -86,7 +86,7 @@ console.log(Z, Z2)
       `
 import a1 from 'aa'            
 import A2 from 'aa2'      
-import {y, z as zzzz} from 'aa3'      
+import  {y, z as zzzz} from 'aa3'      
 import A4 from 'aa4'      
 import {B2} from 'bb'
 import 'z'      
@@ -680,6 +680,21 @@ console.log({...{a}})
     equal(
       await processJSUnused('const x = (a, b, {} = {}, d) => b && d'),
       'const x = (a, b, {} = {}, d) => b && d',
+    )
+  })
+
+  it('Cleanup mixed default and named', async () => {
+    equal(
+      await processJSUnused(
+        `
+import context, { Stateful, getSettings } from '../../context'
+getSettings()
+`,
+      ),
+      `
+import  { getSettings } from '../../context'
+getSettings()
+`,
     )
   })
 })

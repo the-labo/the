@@ -9,10 +9,12 @@
 
 const busyAccessFor = require('../busyAccessFor')
 const entryAccessFor = require('../entryAccessFor')
+const resultAccessFor = require('../resultAccessFor')
 
 /** @lends module:@the-/facade-scope.createOperationFor */
 function createOperationFor(scope) {
   const entryAccess = entryAccessFor(scope)
+  const resultAccess = resultAccessFor(scope)
   const busyAccess = busyAccessFor(scope)
 
   /**
@@ -23,12 +25,20 @@ function createOperationFor(scope) {
   const createOperation = {
     busyAccess,
     entryAccess,
+    resultAccess,
+    getEntry() {
+      return entryAccess.state
+    },
+    getResult() {
+      return resultAccess.state
+    },
     /**
      * Init scope
      */
     init() {
       scope.init()
     },
+
     /**
      * Execute creating
      * @param {function(object): Promise} handler
@@ -39,8 +49,11 @@ function createOperationFor(scope) {
      * })
      */
     async exec(handler) {
-      await busyAccess.while(async () => entryAccess.process(handler))
+      return resultAccess.save(async () =>
+        busyAccess.while(async () => entryAccess.process(handler)),
+      )
     },
+
     /**
      * Set entry
      * @param {Object} entry

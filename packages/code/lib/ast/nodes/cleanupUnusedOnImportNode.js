@@ -11,7 +11,7 @@ const {
 /** @lends module:@the-/code.ast.nodes.cleanupUnusedOnImportNode */
 function cleanupUnusedOnImportNode(
   ImportDeclaration,
-  { ConsumingIdentifiers, get, keep = ['React'], replace },
+  { ConsumingIdentifiers, get, keep = ['React'], replace, search },
 ) {
   const { specifiers } = ImportDeclaration
   if (!specifiers) {
@@ -47,7 +47,11 @@ function cleanupUnusedOnImportNode(
     } else {
       if (isImportDefaultSpecifier(specifier)) {
         const { start } = specifier
-        const end = nextSpecifier ? nextSpecifier.start - 1 : specifier.end
+        const commaAt = search(',', {
+          finish: ImportDeclaration.end,
+          offset: specifier.end,
+        })
+        const end = nextSpecifier ? commaAt + 1 : specifier.end
         return replace([start, end], '')
       }
       if (isImportSpecifier(specifier)) {

@@ -13,7 +13,7 @@
     "name": "@the-/facade-scope",
     "order": 36,
     "typicalname": "facadeScope",
-    "version": "16.1.7"
+    "version": "16.1.8"
   },
   {
     "description": "Operation handlers",
@@ -26,7 +26,7 @@
       "path": "lib/operations"
     },
     "name": "operation",
-    "order": 72,
+    "order": 74,
     "scope": "global"
   },
   {
@@ -177,7 +177,7 @@
       "path": "lib"
     },
     "name": "state",
-    "order": 59,
+    "order": 61,
     "scope": "static",
     "type": {
       "names": [
@@ -1268,6 +1268,41 @@
   },
   {
     "description": "Scope access",
+    "id": "module:@the-/facade-scope.resultAccessFor",
+    "kind": "function",
+    "longname": "module:@the-/facade-scope.resultAccessFor",
+    "memberof": "module:@the-/facade-scope",
+    "meta": {
+      "filename": "resultAccessFor.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "resultAccessFor",
+    "order": 57,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "scope"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "- Face object for resultAccess access"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Scope access",
     "id": "module:@the-/facade-scope.sortAccessFor",
     "kind": "function",
     "longname": "module:@the-/facade-scope.sortAccessFor",
@@ -1278,7 +1313,7 @@
       "path": "lib"
     },
     "name": "sortAccessFor",
-    "order": 57,
+    "order": 59,
     "params": [
       {
         "type": {
@@ -1313,7 +1348,7 @@
       "path": "lib"
     },
     "name": "set",
-    "order": 60,
+    "order": 62,
     "params": [
       {
         "type": {
@@ -1338,7 +1373,7 @@
       "path": "lib/operations"
     },
     "name": "createOperationFor",
-    "order": 61,
+    "order": 63,
     "params": [
       {
         "type": {
@@ -1369,11 +1404,11 @@
     "memberof": "module:@the-/facade-scope.createOperationFor~createOperation",
     "meta": {
       "filename": "createOperationFor.js",
-      "lineno": 29,
+      "lineno": 38,
       "path": "lib/operations"
     },
     "name": "init",
-    "order": 63,
+    "order": 65,
     "scope": "static"
   },
   {
@@ -1387,11 +1422,11 @@
     "memberof": "module:@the-/facade-scope.createOperationFor~createOperation",
     "meta": {
       "filename": "createOperationFor.js",
-      "lineno": 41,
+      "lineno": 51,
       "path": "lib/operations"
     },
     "name": "exec",
-    "order": 64,
+    "order": 66,
     "params": [
       {
         "type": {
@@ -1421,11 +1456,11 @@
     "memberof": "module:@the-/facade-scope.createOperationFor~createOperation",
     "meta": {
       "filename": "createOperationFor.js",
-      "lineno": 49,
+      "lineno": 62,
       "path": "lib/operations"
     },
     "name": "setEntry",
-    "order": 65,
+    "order": 67,
     "params": [
       {
         "type": {
@@ -1459,7 +1494,7 @@
       "path": "lib/operations"
     },
     "name": "destroyOperationFor",
-    "order": 66,
+    "order": 68,
     "params": [
       {
         "type": {
@@ -1494,7 +1529,7 @@
       "path": "lib/operations"
     },
     "name": "detailOperationFor",
-    "order": 68,
+    "order": 70,
     "params": [
       {
         "type": {
@@ -1529,7 +1564,7 @@
       "path": "lib/operations"
     },
     "name": "editOperationFor",
-    "order": 70,
+    "order": 72,
     "params": [
       {
         "type": {
@@ -1564,7 +1599,7 @@
       "path": "lib/operations"
     },
     "name": "listOperationFor",
-    "order": 73,
+    "order": 75,
     "returns": [
       {
         "type": {
@@ -1587,7 +1622,7 @@
       "path": "lib/operations"
     },
     "name": "sync",
-    "order": 75,
+    "order": 77,
     "params": [
       {
         "type": {
@@ -1622,7 +1657,7 @@
       "path": "lib/operations"
     },
     "name": "operationFor",
-    "order": 76,
+    "order": 78,
     "params": [
       {
         "type": {
@@ -1810,6 +1845,20 @@
     "scope": "inner"
   },
   {
+    "id": "module:@the-/facade-scope.resultAccessFor~resultAccess",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-scope.resultAccessFor~resultAccess",
+    "memberof": "module:@the-/facade-scope.resultAccessFor",
+    "meta": {
+      "filename": "resultAccessFor.js",
+      "lineno": 12,
+      "path": "lib"
+    },
+    "name": "resultAccess",
+    "order": 58,
+    "scope": "inner"
+  },
+  {
     "id": "module:@the-/facade-scope.sortAccessFor~sortAccess",
     "kind": "namespace",
     "longname": "module:@the-/facade-scope.sortAccessFor~sortAccess",
@@ -1820,7 +1869,7 @@
       "path": "lib"
     },
     "name": "sortAccess",
-    "order": 58,
+    "order": 60,
     "scope": "inner"
   },
   {
@@ -1830,11 +1879,11 @@
     "memberof": "module:@the-/facade-scope.createOperationFor",
     "meta": {
       "filename": "createOperationFor.js",
-      "lineno": 18,
+      "lineno": 20,
       "path": "lib/operations"
     },
     "name": "createOperation",
-    "order": 62,
+    "order": 64,
     "scope": "inner"
   },
   {
@@ -1848,7 +1897,7 @@
       "path": "lib/operations"
     },
     "name": "destroyOperation",
-    "order": 67,
+    "order": 69,
     "scope": "inner"
   },
   {
@@ -1862,7 +1911,7 @@
       "path": "lib/operations"
     },
     "name": "detailOperation",
-    "order": 69,
+    "order": 71,
     "scope": "inner"
   },
   {
@@ -1876,7 +1925,7 @@
       "path": "lib/operations"
     },
     "name": "editOperation",
-    "order": 71,
+    "order": 73,
     "scope": "inner"
   },
   {
@@ -1890,7 +1939,7 @@
       "path": "lib/operations"
     },
     "name": "listOperation",
-    "order": 74,
+    "order": 76,
     "scope": "inner"
   },
   {
@@ -1904,7 +1953,7 @@
       "path": "lib/operations"
     },
     "name": "operationFor",
-    "order": 77,
+    "order": 79,
     "scope": "inner"
   }
 ]

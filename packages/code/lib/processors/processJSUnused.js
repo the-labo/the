@@ -52,7 +52,7 @@ function processJSUnused(content, options = {}) {
     content,
     (content) => {
       const parsed = parse(content, options)
-      const { enclosedRange, get, replace } = contentAccess(content)
+      const { enclosedRange, get, replace, search } = contentAccess(content)
 
       {
         const FunctionNodes = finder.findByTypes(parsed, [
@@ -147,6 +147,7 @@ function processJSUnused(content, options = {}) {
                 ConsumingIdentifiers,
                 get,
                 replace,
+                search,
               }),
             )
           if (converted) {

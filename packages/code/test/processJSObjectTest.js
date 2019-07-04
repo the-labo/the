@@ -353,30 +353,48 @@ const x =  {'': {}, a:{}}
   })
 
   it('Object methods', async () => {
-    console.log(
+    equal(
       await processJSObject(
         `
 const x = { 
-  z, 
-  d(){}, 
+  z,
+  d(){},
   set e (v) { },
   n:() => null, 
   get c() { return 1 },
   async a(){},   
   j() {},
 }`,
-        `
+      ),
+      `
 const x = { 
-  set e (v) { }, 
-  get c() { return 1 }, 
-  z,
-  n:() => null, 
+  set e (v) { },
+  get c() { return 1 },
+  n:() => null,
+  z, 
   d(){},
   j() {},   
   async a(){},
-}
-`,
-      ),
+}`,
+    )
+  })
+
+  it('Object methods 2', async () => {
+    equal(
+      await processJSObject(`
+const x = {
+ a () {},
+ b: () => {},
+ c: null,
+ d: () => {},
+}`),
+      `
+const x = {
+ b: () => {},
+ c: null,
+ d: () => {},
+ a () {},
+}`,
     )
   })
 })

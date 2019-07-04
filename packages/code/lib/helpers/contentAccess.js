@@ -90,6 +90,16 @@ function contentAccess(content) {
       debug('swapped', swapped)
       return swapped
     },
+    search(word, options = {}) {
+      const { finish = content.length, offset = 0 } = options
+      const { length: len } = word
+      for (let start = offset; start < finish - len; start++) {
+        const hit = word === content.substr(start, len)
+        if (hit) {
+          return start
+        }
+      }
+    },
   }
 }
 

@@ -57,7 +57,7 @@ function entryAccessFor(scope) {
     async process(handler) {
       const entry = entryAccess.getEntry()
       try {
-        await handler(entry)
+        return await handler(entry)
       } catch (e) {
         const { entryErrors } = e
         if (entryErrors) {
