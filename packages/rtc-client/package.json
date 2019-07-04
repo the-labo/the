@@ -1,7 +1,7 @@
 {
   "name": "@the-/rtc-client",
   "description": "Client for the-rtc",
-  "version": "15.5.6",
+  "version": "15.5.7",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -16,11 +16,11 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.2",
+    "@the-/check": "^15.5.3",
     "@the-/media": "^15.5.1",
-    "@the-/pack": "^15.4.0",
+    "@the-/pack": "^15.4.9",
     "@the-/window": "^15.5.2",
-    "argx": "^4.0.0",
+    "argx": "^4.0.2",
     "asobj": "^3.0.1",
     "debug": "^4.1.1",
     "qs": "^6.7.0",
@@ -32,8 +32,8 @@
     "@the-/rtc": "^15.4.12",
     "aport": "^2.0.0",
     "asleep": "^1.0.3",
-    "webpack-cli": "^3.3.2",
-    "webrtc-adapter": "^7.2.3"
+    "webpack-cli": "^3.3.5",
+    "webrtc-adapter": "^7.2.4"
   },
   "engines": {
     "node": ">=10",
