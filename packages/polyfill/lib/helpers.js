@@ -5,8 +5,6 @@
  */
 const { get } = require('bwindow')
 
-const hasBabelPolyfill = () => !!get('global._babelPolyfill')
-
 const withDocument = (callback) => {
   const document = get('document')
   if (!document) {
@@ -33,7 +31,6 @@ const withWindow = (callback) => {
 
 /** @lends module:@the-/polyfill.helpers */
 module.exports = {
-  hasBabelPolyfill,
   withDocument,
   withWindow,
 }

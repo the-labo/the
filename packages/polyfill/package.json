@@ -1,7 +1,7 @@
 {
   "name": "@the-/polyfill",
   "description": "Polyfill of the-frameworks",
-  "version": "15.4.8",
+  "version": "16.0.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,15 +12,16 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.4.4",
     "abind": "^1.0.5",
     "bwindow": "^2.0.3",
+    "core-js": "^3.1.4",
     "cross-fetch": "^3.0.3",
     "fastclick": "^1.0.6",
     "image-capture": "^0.4.0",
     "process": "^0.11.10",
     "proxy-polyfill": "^0.3.0",
-    "raf": "^3.4.1"
+    "raf": "^3.4.1",
+    "regenerator-runtime": "^0.13.2"
   },
   "devDependencies": {},
   "engines": {

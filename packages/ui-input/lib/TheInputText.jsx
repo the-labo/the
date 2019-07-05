@@ -449,12 +449,8 @@ TheInputText.propTypes = {
 
 TheInputText.defaultProps = {
   error: null,
-  matcher: (candidate, value) =>
-    candidate.indexOf(value) !== -1 ||
-    candidate.toLowerCase().indexOf(value.toLowerCase()) !== -1,
   onEnter: null,
   options: {},
-  parser: (v) => String(v || ''),
   pattern: null,
   patternWarning: null,
   prefix: null,
@@ -464,6 +460,10 @@ TheInputText.defaultProps = {
   suffix: null,
   type: 'text',
   value: '',
+  matcher: (candidate, value) =>
+    candidate.indexOf(value) !== -1 ||
+    candidate.toLowerCase().indexOf(value.toLowerCase()) !== -1,
+  parser: (v) => String(v || ''),
 }
 
 TheInputText.displayName = 'TheInputText'

@@ -5,7 +5,7 @@
  */
 const abind = require('abind')
 const helpers = require('./helpers')
-const { hasBabelPolyfill, withDocument, withWindow } = helpers
+const { withDocument, withWindow } = helpers
 
 /** @lends module:@the-/polyfill.ThePolyfill */
 class ThePolyfill {
@@ -29,10 +29,12 @@ class ThePolyfill {
         window.process = require('process/browser')
       }
     })
-    if (!hasBabelPolyfill()) {
-      require('@babel/polyfill')
+    if (!this.done) {
+      require('core-js/stable')
+      require('regenerator-runtime/runtime')
       require('proxy-polyfill/proxy.min.js')
       require('raf/polyfill')
+      this.done = true
     }
     withDocument((document) => {
       const fastclick = require('fastclick')

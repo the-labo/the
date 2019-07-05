@@ -188,8 +188,8 @@ TheInputRadio.defaultProps = {
   options: {},
   parser: String,
   role: 'radiogroup',
-  sorter: (v1, v2) => String(v1).localeCompare(v2),
   value: '',
+  sorter: (v1, v2) => String(v1).localeCompare(v2),
 }
 
 TheInputRadio.displayName = 'TheInputRadio'
