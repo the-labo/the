@@ -5,7 +5,7 @@
  * @class ThePack
  */
 const msgpack = require('msgpack-lite')
-const { inspect } = require('util')
+const inspect = require('util-inspect')
 const { isBrowser } = require('@the-/check')
 const Converters = require('./Converters')
 

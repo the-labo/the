@@ -13,7 +13,7 @@
     "name": "@the-/pack",
     "order": 3,
     "typicalname": "pack",
-    "version": "15.4.9"
+    "version": "15.4.10"
   },
   {
     "description": "Pack handler",

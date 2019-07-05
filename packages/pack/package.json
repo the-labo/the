@@ -1,7 +1,7 @@
 {
   "name": "@the-/pack",
   "description": "Message pack wrapper for the-components",
-  "version": "15.4.9",
+  "version": "15.4.10",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "@the-/check": "^15.5.3",
-    "msgpack-lite": "^0.1.26"
+    "msgpack-lite": "^0.1.26",
+    "util-inspect": "^0.1.8"
   },
   "devDependencies": {},
   "engines": {
