@@ -5,7 +5,6 @@
  * @class ThePack
  */
 const msgpack = require('msgpack-lite')
-const inspect = require('util-inspect')
 const { isBrowser } = require('@the-/check')
 const Converters = require('./Converters')
 
@@ -72,11 +71,7 @@ class ThePack {
       const encoded = msgpack.encode(data)
       return converter(encoded)
     } catch (e) {
-      throw new Error(
-        `[ThePack] Failed to encode data: ${inspect(data)} (reason ${
-          e.message
-        })`,
-      )
+      throw new Error(`[ThePack] Failed to encode data: ${e.message}`)
     }
   }
 }

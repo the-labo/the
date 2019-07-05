@@ -20,7 +20,7 @@
 ## @the-/client
 Client for the-server
 
-**Version**: 15.4.12  
+**Version**: 15.4.13  
 **License**: MIT  
 
 * [@the-/client](#module_@the-/client)

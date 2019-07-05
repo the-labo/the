@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui",
   "description": "React components of THE framework",
-  "version": "15.4.13",
+  "version": "15.4.14",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -31,8 +31,8 @@
     "@the-/ui-icon": "^15.4.9",
     "@the-/ui-image": "^15.4.8",
     "@the-/ui-info": "^15.4.8",
-    "@the-/ui-input": "^15.4.11",
-    "@the-/ui-link": "^15.4.8",
+    "@the-/ui-input": "^15.4.12",
+    "@the-/ui-link": "^15.4.9",
     "@the-/ui-list": "^15.4.8",
     "@the-/ui-main": "^15.4.8",
     "@the-/ui-menu": "^15.4.9",
@@ -60,7 +60,7 @@
     "injectmock": "^2.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0"
+    "react-router-dom": "^5.0.1"
   },
   "engines": {
     "node": ">=10",

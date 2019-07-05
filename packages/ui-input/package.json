@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-input",
   "description": "Input of the-components",
-  "version": "15.4.12",
+  "version": "15.4.13",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -25,7 +25,7 @@
     "classnames": "^2.2.6",
     "flatpickr": "^4.6.1",
     "prop-types": "^15.7.2",
-    "rangecal": "^2.0.3",
+    "rangecal": "^2.0.4",
     "react-draggable": "^3.3.0",
     "regex-email": "^1.0.2",
     "regex-url": "^1.0.0",
