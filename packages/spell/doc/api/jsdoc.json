@@ -1,0 +1,200 @@
+[
+  {
+    "description": "Spell checker",
+    "id": "module:@the-/spell",
+    "kind": "module",
+    "license": "MIT",
+    "longname": "module:@the-/spell",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 2,
+      "path": "lib"
+    },
+    "name": "@the-/spell",
+    "order": 2,
+    "typicalname": "spell",
+    "version": "15.6.8"
+  },
+  {
+    "id": "module:@the-/spell.TheSpell()",
+    "kind": "constructor",
+    "longname": "module:@the-/spell.TheSpell",
+    "memberof": "module:@the-/spell.TheSpell",
+    "name": "TheSpell",
+    "order": 4,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Spelling config",
+        "name": "config"
+      }
+    ]
+  },
+  {
+    "async": true,
+    "description": "Check files",
+    "id": "module:@the-/spell.TheSpell#check",
+    "kind": "function",
+    "longname": "module:@the-/spell.TheSpell#check",
+    "memberof": "module:@the-/spell.TheSpell",
+    "meta": {
+      "filename": "TheSpell.js",
+      "lineno": 87,
+      "path": "lib"
+    },
+    "name": "check",
+    "order": 5,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "File name patterns",
+        "name": "pattern"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Array>"
+          ]
+        }
+      }
+    ],
+    "scope": "instance"
+  },
+  {
+    "id": "module:@the-/spell.TheSpell",
+    "kind": "class",
+    "longname": "module:@the-/spell.TheSpell",
+    "memberof": "module:@the-/spell",
+    "meta": {
+      "filename": "TheSpell.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "TheSpell",
+    "order": 3,
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/lint.helpers.SpellCache",
+    "kind": "class",
+    "longname": "module:@the-/lint.helpers.SpellCache",
+    "memberof": "module:@the-/lint.helpers",
+    "meta": {
+      "filename": "SpellCache.js",
+      "lineno": 2,
+      "path": "lib/helpers"
+    },
+    "name": "SpellCache",
+    "order": 8,
+    "scope": "static"
+  },
+  {
+    "description": "Pre defined words",
+    "id": "module:@the-/spell.Array",
+    "kind": "member",
+    "longname": "module:@the-/spell.Array",
+    "memberof": "module:@the-/spell",
+    "meta": {
+      "filename": "Words.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "Array",
+    "order": 6,
+    "scope": "static",
+    "type": {
+      "names": [
+        "Array.<string>"
+      ]
+    }
+  },
+  {
+    "access": "protected",
+    "description": "Helper functions",
+    "id": "module:@the-/spell.helpers",
+    "kind": "namespace",
+    "longname": "module:@the-/spell.helpers",
+    "memberof": "module:@the-/spell",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 2,
+      "path": "lib/helpers"
+    },
+    "name": "helpers",
+    "order": 7,
+    "scope": "static"
+  },
+  {
+    "description": "Create a TheSpell instance",
+    "id": "module:@the-/spell.create",
+    "kind": "function",
+    "longname": "module:@the-/spell.create",
+    "memberof": "module:@the-/spell",
+    "meta": {
+      "filename": "create.js",
+      "lineno": 2,
+      "path": "lib"
+    },
+    "name": "create",
+    "order": 0,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheSpell"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Alias of {@link module:@the-/spell.create}",
+    "id": "module:@the-/spell.default",
+    "kind": "function",
+    "longname": "module:@the-/spell.default",
+    "memberof": "module:@the-/spell",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 2,
+      "path": "lib"
+    },
+    "name": "default",
+    "order": 1,
+    "scope": "static"
+  }
+]

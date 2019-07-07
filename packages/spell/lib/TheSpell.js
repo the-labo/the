@@ -52,10 +52,12 @@ class TheSpell {
     const {
       cacheFile = 'node_modules/.cache/the-spell/cache.json',
       maxFileSize = 1.5 * MB,
+      maxWordLength = 24,
       minWordLength = 3,
       words: customWords = [],
     } = config
 
+    this.maxWordLength = maxWordLength
     this.minWordLength = minWordLength
     this.maxFileSize = maxFileSize
 
@@ -131,13 +133,15 @@ class TheSpell {
   }
 
   async checkStringLine(line, options = {}) {
-    const { minWordLength, spellChecker } = this
+    const { maxWordLength, minWordLength, spellChecker } = this
     const { filename, lineNumber } = options
     const words = line
       .split(/[\W_]+/)
       .filter(Boolean)
       .filter((word) => /^[a-zA-Z]+$/.test(word))
-      .filter((word) => word.length >= minWordLength)
+      .filter(
+        (word) => minWordLength <= word.length && word.length <= maxWordLength,
+      )
       .map((word) => String(word).trim())
     const reports = []
     for (const word of words) {
@@ -147,7 +151,8 @@ class TheSpell {
         const [correction] =
           spellChecker.getCorrectionsForMisspelling(word) || []
         const shortWord =
-          correction && correction.replace(/[\W_]+/g, '') === word
+          correction &&
+          correction.replace(/[\W_]+/g, '').toLowerCase() === word.toLowerCase()
         if (shortWord) {
           continue
         }
