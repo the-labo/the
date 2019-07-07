@@ -20,7 +20,11 @@ function defineModelColumn(propertyName, def = {}) {
     defaultValue,
   }
   if (Array.isArray(type)) {
-    throw new Error('[TheDriverSequelize] Multiple type is not supported')
+    throw new Error(
+      `[TheDriverSequelize][${propertyName} Multiple type is not supported: ${JSON.stringify(
+        type,
+      )}`,
+    )
   }
   switch (type) {
     case BOOLEAN:

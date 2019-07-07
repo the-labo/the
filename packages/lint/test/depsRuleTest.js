@@ -39,6 +39,31 @@ describe('deps-rule', () => {
     })
     equal(reported.length, 1)
   })
+
+  it('Import from pattern', async () => {
+    const reported = []
+    const forbidImportFrom = '//lib$/'
+    await depsRule({
+      forbidImportFrom,
+    })({
+      content: `
+import x from 'x'
+`,
+      filename: 'xxx.jsx',
+      report: (...args) => reported.push(args),
+    })
+    await depsRule({
+      forbidImportFrom,
+    })({
+      content: `
+import x from 'x/lib'
+`,
+      filename: 'xxx.jsx',
+      report: (...args) => reported.push(args),
+    })
+    console.log(reported[0])
+    equal(reported.length, 1)
+  })
 })
 
 /* global describe, before, after, it */

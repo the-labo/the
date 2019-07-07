@@ -131,7 +131,7 @@ class TheCode {
   async formatFile(filename, options = {}) {
     const { force } = options
     const shouldSkipFile = await this.shouldSkipFile(filename)
-    if (shouldSkipFile) {
+    if (!force && shouldSkipFile) {
       debug('Skip', filename)
       return Promise.resolve({ filename, skipped: true })
     }

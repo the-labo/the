@@ -84,7 +84,6 @@ function moduleRule(config) {
       !ok &&
         report('Name not match', {
           actual: name || displayName,
-          expect: basename,
           where: path.resolve(filename),
         })
     }

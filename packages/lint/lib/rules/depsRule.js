@@ -13,10 +13,16 @@ const {
   parse,
   walk,
 } = require('@the-/ast')
+const { parsePattern } = require('../helpers/parseHelper')
 
 /** @lends module:@the-/lint.rules.depsRule */
 function depsRule(config) {
-  const { importFrom = false, requireFrom = false, ...rest } = config
+  const {
+    forbidImportFrom = null,
+    importFrom = false,
+    requireFrom = false,
+    ...rest
+  } = config
   if (Object.keys(rest).length > 0) {
     console.warn('[depsRule] Unknown options', Object.keys(rest))
   }
@@ -70,6 +76,34 @@ function depsRule(config) {
               expect: true,
               loc: { column, line },
               module: node.source.value,
+              where: path.resolve(filename),
+            })
+        },
+      })
+    }
+
+    if (forbidImportFrom) {
+      const patterns = []
+        .concat(forbidImportFrom)
+        .filter(Boolean)
+        .map((pattern) => parsePattern(pattern))
+      walk.simple(parsed.program, {
+        ImportDeclaration: (node) => {
+          const {
+            loc: {
+              start: { column, line },
+            },
+            source: { value: from },
+          } = node
+
+          const ok = []
+            .concat(patterns)
+            .every((pattern) => !from.match(pattern))
+          !ok &&
+            report('Invalid import from', {
+              actual: from,
+              expect: patterns,
+              loc: { column, line },
               where: path.resolve(filename),
             })
         },

@@ -1,7 +1,7 @@
 {
   "name": "@the-/driver-sequelize",
   "description": "Sequelize driver for the-framework",
-  "version": "15.4.9",
+  "version": "15.4.11",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.2",
+    "@the-/check": "^15.5.3",
     "@the-/resource": "^15.4.5",
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.3",
@@ -20,13 +20,13 @@
     "clay-driver-base": "^4.1.7",
     "clay-list-pager": "^3.0.1",
     "clay-resource-name": "^4.0.5",
-    "sequelize": "5.8.8",
+    "sequelize": "^5.9.3",
     "utf8": "^3.0.0"
   },
   "devDependencies": {
     "clay-lump": "^4.4.25",
     "mysql2": "^1.6.5",
-    "sqlite3": "^4.0.8"
+    "sqlite3": "^4.0.9"
   },
   "engines": {
     "node": ">=10",

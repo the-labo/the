@@ -11,9 +11,9 @@
       "path": "lib"
     },
     "name": "@the-/util-file",
-    "order": 3,
+    "order": 4,
     "typicalname": "utilFile",
-    "version": "15.5.0"
+    "version": "15.5.2"
   },
   {
     "id": "module:@the-/util-file.copyAsJsonSync",
@@ -72,6 +72,30 @@
     "scope": "static"
   },
   {
+    "description": "Get size of file",
+    "id": "module:@the-/util-file.fileSizeOf",
+    "kind": "function",
+    "longname": "module:@the-/util-file.fileSizeOf",
+    "memberof": "module:@the-/util-file",
+    "meta": {
+      "filename": "fileSizeOf.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "fileSizeOf",
+    "order": 2,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<number>"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
     "description": "Get file type of file",
     "id": "module:@the-/util-file.fileTypeOf",
     "kind": "function",
@@ -79,11 +103,11 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "fileTypeOf.js",
-      "lineno": 2,
+      "lineno": 1,
       "path": "lib"
     },
     "name": "fileTypeOf",
-    "order": 2,
+    "order": 3,
     "params": [
       {
         "type": {
@@ -116,7 +140,7 @@
       "path": "lib"
     },
     "name": "isJSON5File",
-    "order": 4,
+    "order": 5,
     "params": [
       {
         "type": {
@@ -150,7 +174,7 @@
       "path": "lib"
     },
     "name": "readAsJson",
-    "order": 5,
+    "order": 6,
     "params": [
       {
         "type": {
@@ -183,7 +207,7 @@
       "path": "lib"
     },
     "name": "readAsJsonSync",
-    "order": 6,
+    "order": 7,
     "params": [
       {
         "type": {
@@ -217,7 +241,7 @@
       "path": "lib"
     },
     "name": "readAsYaml",
-    "order": 7,
+    "order": 8,
     "returns": [
       {
         "type": {
@@ -241,7 +265,7 @@
       "path": "lib"
     },
     "name": "statSync",
-    "order": 8,
+    "order": 9,
     "params": [
       {
         "type": {
@@ -265,7 +289,7 @@
       "path": "lib"
     },
     "name": "writeAsJson",
-    "order": 9,
+    "order": 10,
     "params": [
       {
         "type": {
@@ -325,7 +349,7 @@
       "path": "lib"
     },
     "name": "writeAsJsonSync",
-    "order": 10,
+    "order": 11,
     "params": [
       {
         "type": {
@@ -377,7 +401,7 @@
       "path": "lib"
     },
     "name": "writeAsYaml",
-    "order": 11,
+    "order": 12,
     "params": [
       {
         "type": {

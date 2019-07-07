@@ -4,12 +4,13 @@
  * @license MIT
  * @module @the-/util-file
  * @typicalname utilFile
- * @version 15.5.0
+ * @version 15.5.2
  */
 'use strict'
 
 const copyAsJsonSync_ = require('./copyAsJsonSync')
 const delSync_ = require('./delSync')
+const fileSizeOf_ = require('./fileSizeOf')
 const fileTypeOf_ = require('./fileTypeOf')
 const isJSON5File_ = require('./isJSON5File')
 const readAsJson_ = require('./readAsJson')
@@ -23,6 +24,7 @@ const writeAsYaml_ = require('./writeAsYaml')
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
 exports.copyAsJsonSync = copyAsJsonSync_
 exports.delSync = delSync_
+exports.fileSizeOf = fileSizeOf_
 exports.fileTypeOf = fileTypeOf_
 exports.isJSON5File = isJSON5File_
 exports.readAsJson = readAsJson_
@@ -36,6 +38,7 @@ exports.writeAsYaml = writeAsYaml_
 module.exports = {
   copyAsJsonSync: copyAsJsonSync_,
   delSync: delSync_,
+  fileSizeOf: fileSizeOf_,
   fileTypeOf: fileTypeOf_,
   isJSON5File: isJSON5File_,
   readAsJson: readAsJson_,

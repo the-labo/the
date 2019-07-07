@@ -1,0 +1,18 @@
+'use strict'
+
+const { dir } = require('@the-/templates')
+
+module.exports = dir({
+  annotations: {
+    access: 'protected',
+    description: 'Helper functions',
+    memberOf: 'module:@the-/spell',
+    namespace: 'helpers',
+  },
+  cjs: true,
+  dirname: __dirname,
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

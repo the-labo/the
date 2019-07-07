@@ -5,11 +5,12 @@
 ## @the-/util-file
 File utility for the-framework
 
-**Version**: 15.5.0  
+**Version**: 15.5.2  
 **License**: MIT  
 
 * [@the-/util-file](#module_@the-/util-file)
     * [.copyAsJsonSync(src, dest)](#module_@the-/util-file.copyAsJsonSync)
+    * [.fileSizeOf()](#module_@the-/util-file.fileSizeOf) ⇒ <code>Promise.&lt;number&gt;</code>
     * [.fileTypeOf(filename)](#module_@the-/util-file.fileTypeOf) ⇒ <code>Object</code>
     * [.isJSON5File(filename)](#module_@the-/util-file.isJSON5File) ⇒ <code>boolean</code>
     * [.readAsJson(filename)](#module_@the-/util-file.readAsJson) ⇒ <code>Promise.&lt;Object&gt;</code>
@@ -30,6 +31,12 @@ File utility for the-framework
 | src | <code>string</code> | 
 | dest | <code>string</code> | 
 
+<a name="module_@the-/util-file.fileSizeOf"></a>
+
+### utilFile.fileSizeOf() ⇒ <code>Promise.&lt;number&gt;</code>
+Get size of file
+
+**Kind**: static method of [<code>@the-/util-file</code>](#module_@the-/util-file)  
 <a name="module_@the-/util-file.fileTypeOf"></a>
 
 ### utilFile.fileTypeOf(filename) ⇒ <code>Object</code>

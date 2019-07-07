@@ -1,4 +1,3 @@
-'use strict'
 /**
  * Get file type of file
  * @memberof module:@the-/util-file
@@ -6,6 +5,8 @@
  * @param {string} filename
  * @returns {Object}
  */
+'use strict'
+
 const fileType = require('file-type')
 const readChunk = require('read-chunk')
 
