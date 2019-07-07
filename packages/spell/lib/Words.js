@@ -6,8 +6,11 @@
  */
 'use strict'
 
+const binaryExtensions = require('binary-extensions')
 const builtinModules = require('builtin-modules')
+const compressedExtensions = require('compressed-extensions')
 const CssColorKeywords = require('css-color-keywords')
+const fontExtensions = require('font-extensions')
 const httpVerbs = require('http-verbs')
 const imageExtensions = require('image-extensions')
 const os = require('os')
@@ -27,7 +30,10 @@ module.exports = [
   ...Object.keys(util),
   ...videoExtensions,
   ...textExtensions,
+  ...binaryExtensions,
   ...imageExtensions,
+  ...fontExtensions,
+  ...compressedExtensions,
   ...builtinModules,
   ...Object.keys(get('global') || {}),
   ...Object.keys(get('process.env') || {}),
@@ -38,12 +44,16 @@ module.exports = [
     'eslint',
     'ffmpeg',
     'ffprobe',
+    'git',
     'jsdoc',
     'lebab',
     'nginx',
     'ngrok',
     'nodemon',
     'npx',
+    'npm',
+    'node',
+    'nodejs',
     'nuxt',
     'nuxtjs',
     'openresty',
@@ -58,7 +68,7 @@ module.exports = [
     'vuex',
     'webpack',
   ],
-  ...['pcss', 'js', 'jsx', 'css', 'html', 'git'],
+  ...['pcss', 'js', 'jsx', 'css', 'html', 'ttf', 'webm'],
   ...[
     'act',
     'asc',

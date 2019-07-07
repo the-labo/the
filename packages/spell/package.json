@@ -1,7 +1,7 @@
 {
   "name": "@the-/spell",
   "description": "Spell checker",
-  "version": "15.6.8",
+  "version": "15.6.10",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -17,10 +17,13 @@
     "aglob": "^3.0.2",
     "asfs": "^2.2.3",
     "asobj": "^3.0.1",
+    "binary-extensions": "^2.0.0",
     "builtin-modules": "^3.1.0",
     "colorprint": "^5.0.3",
+    "compressed-extensions": "^2.1.0",
     "css-color-keywords": "^1.0.0",
     "debug": "^4.1.1",
+    "font-extensions": "^1.0.0",
     "http-verbs": "^1.0.0",
     "image-extensions": "^1.1.0",
     "reserved": "^0.1.2",

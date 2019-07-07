@@ -33,6 +33,7 @@ class TheSpell {
       reportedWords.add(word)
       colorprint.errorDetail(INDENT, `${message} ( ${relativePath(filename)} )`)
       const tracing = Object.entries({
+        filename,
         word,
         ...options,
       })
@@ -121,11 +122,11 @@ class TheSpell {
     const { filename } = options
     const lines = content.split(EOL)
     const result = []
-    for (let lineNumber = 0; lineNumber < lines.length; lineNumber++) {
-      const line = lines[lineNumber]
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i]
       const lineResult = await this.checkStringLine(line, {
         filename,
-        lineNumber,
+        lineNumber: i + 1,
       })
       result.push(...lineResult)
     }
