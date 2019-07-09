@@ -13,7 +13,7 @@
     "name": "@the-/db",
     "order": 4,
     "typicalname": "db",
-    "version": "15.4.13"
+    "version": "15.4.15"
   },
   {
     "id": "module:@the-/db.TheDB()",
@@ -171,7 +171,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 141,
+      "lineno": 133,
       "path": "lib"
     },
     "name": "hooksFromMapping",
@@ -196,7 +196,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 158,
+      "lineno": 150,
       "path": "lib"
     },
     "name": "load",
@@ -241,7 +241,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 280,
+      "lineno": 277,
       "path": "lib"
     },
     "name": "loadFromMapping",
@@ -267,7 +267,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 290,
+      "lineno": 287,
       "path": "lib"
     },
     "name": "pluginFromMapping",
@@ -292,7 +292,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 303,
+      "lineno": 300,
       "path": "lib"
     },
     "name": "unref",
@@ -319,7 +319,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 346,
+      "lineno": 343,
       "path": "lib"
     },
     "name": "drop",
@@ -345,7 +345,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 380,
+      "lineno": 377,
       "path": "lib"
     },
     "name": "invalidate",
@@ -380,7 +380,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 410,
+      "lineno": 407,
       "path": "lib"
     },
     "name": "transaction",
@@ -416,7 +416,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 427,
+      "lineno": 424,
       "path": "lib"
     },
     "name": "updateVersion",

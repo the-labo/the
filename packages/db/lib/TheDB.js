@@ -68,20 +68,12 @@ class TheDB extends TheDBBase {
       refreshInterval = 300,
       resourceLogFile = 'var/db/resources.log',
       resources = {},
-      ...rest
     } = config
     const env = toLowerKeys(
       config.env || clone(config, { without: ['name', 'resources'] }),
     )
     const driver = driverFromEnv(env)
     super(name, { driver })
-
-    {
-      const resetKeys = Object.keys(rest)
-      if (resetKeys.length > 0) {
-        console.warn('[TheDB] Unknown config: ', resetKeys)
-      }
-    }
 
     this._unref = false
     this._env = env
@@ -164,7 +156,10 @@ class TheDB extends TheDBBase {
       )
     })
 
-    const { driver } = this
+    const {
+      driver,
+      env: { dialect },
+    } = this
     const {
       collectionClass,
       entityClass,
@@ -203,7 +198,9 @@ class TheDB extends TheDBBase {
       if (driver.define) {
         driver.define(resourceName, parseSchema(schema, { indices }))
       } else {
-        if (!/^The/.test(resourceName)) {
+        const schemaLess = ['memory'].includes(dialect)
+        const shouldWarn = !schemaLess && !/^The/.test(resourceName)
+        if (shouldWarn) {
           console.warn(`[TheDB] Schema not defined: ${resourceName}`)
         }
       }

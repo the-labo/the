@@ -39,7 +39,7 @@ class TheSchemaResource extends TheResource {
 
   async current() {
     const Schema = this
-    const latest = await Schema.first({}, { sort: ['-createdAt'] })
+    const latest = await Schema.first({}, { sort: ['-createdAt', '-$$num'] })
     if (latest) {
       return latest
     }
