@@ -5,7 +5,7 @@
 ## @the-/spell
 Spell checker
 
-**Version**: 15.6.10  
+**Version**: 15.6.12  
 **License**: MIT  
 
 * [@the-/spell](#module_@the-/spell)

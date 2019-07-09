@@ -11,10 +11,10 @@ const { cleanup } = require('asobj')
 const colorprint = require('colorprint')
 const { EOL } = require('os')
 const path = require('path')
-const { Spellchecker } = require('spellchecker')
 const { inspect } = require('util')
 const SpellCache = require('./helpers/SpellCache')
 const Words = require('./Words')
+const { Spellchecker } = require('spellchecker') || {}
 const debug = require('debug')('the:spell')
 
 const MB = 1000 * 1000

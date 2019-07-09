@@ -13,20 +13,27 @@ function theSpellTask(patterns, opitons = {}) {
     const spell = new TheSpell({
       words,
     })
+    const errorReports = {}
     for (const pattern of [].concat(patterns).filter(Boolean)) {
       const reports = await spell.check(pattern, {
         ignore,
       })
       const ok = reports.length === 0
+      if (!ok) {
+        errorReports[pattern] = reports
+      }
       const icon = ok ? chalk.green('✓') : chalk.red('⚠')
       subLogger.trace(`${icon} ${ok ? pattern : chalk.red(pattern)}`)
-      if (ok) {
-        logger.debug('Everything is OK.')
-      } else {
-        logger.fatal('Spell failed.')
+    }
+    const allOK = Object.keys(errorReports).length === 0
+    if (allOK) {
+      logger.debug('Everything is OK.')
+    } else {
+      logger.fatal('Spell failed.')
+      for (const [, reports] of Object.entries(errorReports)) {
         TheSpell.logErrorReports(reports)
-        process.exitCode = 1
       }
+      process.exitCode = 1
     }
   }
 }

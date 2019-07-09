@@ -1,7 +1,7 @@
 {
   "name": "@the-/spell",
   "description": "Spell checker",
-  "version": "15.6.10",
+  "version": "15.6.12",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -27,7 +27,6 @@
     "http-verbs": "^1.0.0",
     "image-extensions": "^1.1.0",
     "reserved": "^0.1.2",
-    "spellchecker": "^3.6.1",
     "text-extensions": "^2.0.0",
     "video-extensions": "^1.1.0"
   },
@@ -43,6 +42,9 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "optionalDependencies": {
+    "spellchecker": "^3.6.1"
+  },
   "publishConfig": {
     "access": "public"
   },
