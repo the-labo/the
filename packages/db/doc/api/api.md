@@ -5,7 +5,7 @@
 ## @the-/db
 DB for the-framework
 
-**Version**: 15.4.9  
+**Version**: 15.4.13  
 **License**: MIT  
 
 * [@the-/db](#module_@the-/db)
@@ -590,3 +590,4 @@ Run database migration
 | Param | Type | Description |
 | --- | --- | --- |
 | handlers | <code>Object.&lt;string, function()&gt;</code> | Migration handler for each versions |
+

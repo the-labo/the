@@ -13,7 +13,7 @@
     "name": "@the-/db",
     "order": 4,
     "typicalname": "db",
-    "version": "15.4.9"
+    "version": "15.4.13"
   },
   {
     "id": "module:@the-/db.TheDB()",
@@ -171,7 +171,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 134,
+      "lineno": 141,
       "path": "lib"
     },
     "name": "hooksFromMapping",
@@ -196,7 +196,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 151,
+      "lineno": 158,
       "path": "lib"
     },
     "name": "load",
@@ -241,7 +241,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 273,
+      "lineno": 280,
       "path": "lib"
     },
     "name": "loadFromMapping",
@@ -267,7 +267,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 283,
+      "lineno": 290,
       "path": "lib"
     },
     "name": "pluginFromMapping",
@@ -292,7 +292,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 296,
+      "lineno": 303,
       "path": "lib"
     },
     "name": "unref",
@@ -319,7 +319,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 339,
+      "lineno": 346,
       "path": "lib"
     },
     "name": "drop",
@@ -345,7 +345,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 373,
+      "lineno": 380,
       "path": "lib"
     },
     "name": "invalidate",
@@ -380,7 +380,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 403,
+      "lineno": 410,
       "path": "lib"
     },
     "name": "transaction",
@@ -416,7 +416,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 420,
+      "lineno": 427,
       "path": "lib"
     },
     "name": "updateVersion",
@@ -453,7 +453,7 @@
     "memberof": "module:@the-/db~MigrateMixed",
     "meta": {
       "filename": "migrateMix.js",
-      "lineno": 21,
+      "lineno": 24,
       "path": "lib/mixins"
     },
     "name": "migrate",
@@ -1331,7 +1331,7 @@
     "memberof": "module:@the-/db",
     "meta": {
       "filename": "migrateMix.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/mixins"
     },
     "name": "migrateMix",
@@ -1519,7 +1519,7 @@
     "memberof": "module:@the-/db",
     "meta": {
       "filename": "migrateMix.js",
-      "lineno": 15,
+      "lineno": 18,
       "path": "lib/mixins"
     },
     "name": "MigrateMixed",

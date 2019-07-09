@@ -1,4 +1,7 @@
 'use strict'
+
+const asleep = require('asleep')
+
 /**
  * Add migrate methods
  * @memberof module:@the-/db
@@ -36,6 +39,7 @@ function migrateMix(Class) {
       }
       await handler(this, { schema })
 
+      await asleep(10) // increment migratedAt
       await schema.update({ migratedAt: new Date() })
 
       const { version: newVersion } = await TheDBSchema.current()
