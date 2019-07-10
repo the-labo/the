@@ -24,7 +24,7 @@ function processJSXExpression(content, options = {}) {
       const { expression, range } = Container
       switch (expression && expression.type) {
         case NodeTypes.StringLiteral:
-          return replace(range, Container.value)
+          return replace(range, expression.value)
         case NodeTypes.JSXElement:
           return replace(range, get(expression.range))
         default:
