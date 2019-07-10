@@ -5,7 +5,7 @@
 ## @the-/code
 Code formatter of the-frameworks
 
-**Version**: 15.5.82  
+**Version**: 15.5.83  
 **License**: MIT  
 
 * [@the-/code](#module_@the-/code)
@@ -50,6 +50,7 @@ Code formatter of the-frameworks
         * [.processJSSwitch(content)](#module_@the-/code.processors.processJSSwitch) ⇒ <code>string</code>
         * [.processJSUnused(content)](#module_@the-/code.processors.processJSUnused) ⇒ <code>string</code>
         * [.processJSXAttribute(content)](#module_@the-/code.processors.processJSXAttribute) ⇒ <code>string</code>
+        * [.processJSXExpression(content)](#module_@the-/code.processors.processJSXExpression) ⇒ <code>string</code>
         * [.processPackageJSON()](#module_@the-/code.processors.processPackageJSON)
         * [.processPackageLockJSON()](#module_@the-/code.processors.processPackageLockJSON)
         * [.processYAML(content)](#module_@the-/code.processors.processYAML) ⇒ <code>string</code>
@@ -226,6 +227,7 @@ Processor functions
     * [.processJSSwitch(content)](#module_@the-/code.processors.processJSSwitch) ⇒ <code>string</code>
     * [.processJSUnused(content)](#module_@the-/code.processors.processJSUnused) ⇒ <code>string</code>
     * [.processJSXAttribute(content)](#module_@the-/code.processors.processJSXAttribute) ⇒ <code>string</code>
+    * [.processJSXExpression(content)](#module_@the-/code.processors.processJSXExpression) ⇒ <code>string</code>
     * [.processPackageJSON()](#module_@the-/code.processors.processPackageJSON)
     * [.processPackageLockJSON()](#module_@the-/code.processors.processPackageLockJSON)
     * [.processYAML(content)](#module_@the-/code.processors.processYAML) ⇒ <code>string</code>
@@ -451,6 +453,18 @@ Removed unused vars
 <a name="module_@the-/code.processors.processJSXAttribute"></a>
 
 #### processors.processJSXAttribute(content) ⇒ <code>string</code>
+Process JSX attributes
+
+**Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
+**Returns**: <code>string</code> - processed  
+
+| Param | Type |
+| --- | --- |
+| content | <code>string</code> | 
+
+<a name="module_@the-/code.processors.processJSXExpression"></a>
+
+#### processors.processJSXExpression(content) ⇒ <code>string</code>
 Process JSX attributes
 
 **Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  

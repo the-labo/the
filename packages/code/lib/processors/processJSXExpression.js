@@ -18,19 +18,28 @@ const contentAccess = require('../helpers/contentAccess')
 function processJSXExpression(content, options = {}) {
   return applyConverter(content, (content) => {
     const parsed = parse(content, options)
-    const { replace } = contentAccess(content)
+    const { replace, get } = contentAccess(content)
 
+    const convertExpressionContainer = (Container) => {
+      const { expression, range } = Container
+      switch (expression && expression.type) {
+        case NodeTypes.StringLiteral:
+          return replace(range, Container.value)
+        case NodeTypes.JSXElement:
+          return replace(range, get(expression.range))
+        default:
+          return
+      }
+    }
     const convertElement = (Elm) => {
       const Containers = Elm.children.filter(
         (node) => node.type === NodeTypes.JSXExpressionContainer,
       )
-      const StringContainer = Containers.find(
-        (Container) =>
-          Container.expression &&
-          Container.expression.type === NodeTypes.StringLiteral,
-      )
-      if (StringContainer) {
-        return replace(StringContainer.range, StringContainer.expression.value)
+      for (const Container of Containers) {
+        const converted = convertExpressionContainer(Container)
+        if (converted) {
+          return converted
+        }
       }
     }
 

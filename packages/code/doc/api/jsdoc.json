@@ -13,7 +13,7 @@
     "name": "@the-/code",
     "order": 1,
     "typicalname": "code",
-    "version": "15.5.82"
+    "version": "15.5.83"
   },
   {
     "id": "module:@the-/code.TheCode()",
@@ -45,7 +45,7 @@
     "memberof": "module:@the-/code.TheCode",
     "meta": {
       "filename": "TheCode.js",
-      "lineno": 116,
+      "lineno": 118,
       "path": "lib"
     },
     "name": "format",
@@ -92,7 +92,7 @@
     "memberof": "module:@the-/code.TheCode",
     "meta": {
       "filename": "TheCode.js",
-      "lineno": 131,
+      "lineno": 133,
       "path": "lib"
     },
     "name": "formatFile",
@@ -1660,6 +1660,41 @@
     "scope": "static"
   },
   {
+    "description": "Process JSX attributes",
+    "id": "module:@the-/code.processors.processJSXExpression",
+    "kind": "function",
+    "longname": "module:@the-/code.processors.processJSXExpression",
+    "memberof": "module:@the-/code.processors",
+    "meta": {
+      "filename": "processJSXExpression.js",
+      "lineno": 2,
+      "path": "lib/processors"
+    },
+    "name": "processJSXExpression",
+    "order": 81,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "content"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "processed"
+      }
+    ],
+    "scope": "static"
+  },
+  {
     "id": "module:@the-/code.processors.processPackageJSON",
     "kind": "function",
     "longname": "module:@the-/code.processors.processPackageJSON",
@@ -1670,7 +1705,7 @@
       "path": "lib/processors"
     },
     "name": "processPackageJSON",
-    "order": 81,
+    "order": 82,
     "scope": "static"
   },
   {
@@ -1684,7 +1719,7 @@
       "path": "lib/processors"
     },
     "name": "processPackageLockJSON",
-    "order": 82,
+    "order": 83,
     "scope": "static"
   },
   {
@@ -1698,7 +1733,7 @@
       "path": "lib/processors"
     },
     "name": "processYAML",
-    "order": 83,
+    "order": 84,
     "params": [
       {
         "type": {

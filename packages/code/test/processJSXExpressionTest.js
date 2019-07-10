@@ -22,6 +22,13 @@ describe('process-jsx-expression', () => {
       'const X = <span> hoge{n}abc{`this is ${b}`}</span>',
     )
   })
+
+  it('Child jsx', async () => {
+    equal(
+      await processJSXExpression('<span>{<a>hoge</a>}</span>'),
+      '<span><a>hoge</a></span>',
+    )
+  })
 })
 
 /* global describe, before, after, it */
