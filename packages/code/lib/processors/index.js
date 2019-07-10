@@ -29,6 +29,7 @@ const processJSString_ = require('./processJSString')
 const processJSSwitch_ = require('./processJSSwitch')
 const processJSUnused_ = require('./processJSUnused')
 const processJSXAttribute_ = require('./processJSXAttribute')
+const processJSXExpression_ = require('./processJSXExpression')
 const processPackageJSON_ = require('./processPackageJSON')
 const processPackageLockJSON_ = require('./processPackageLockJSON')
 const processYAML_ = require('./processYAML')
@@ -56,6 +57,7 @@ exports.processJSString = processJSString_
 exports.processJSSwitch = processJSSwitch_
 exports.processJSUnused = processJSUnused_
 exports.processJSXAttribute = processJSXAttribute_
+exports.processJSXExpression = processJSXExpression_
 exports.processPackageJSON = processPackageJSON_
 exports.processPackageLockJSON = processPackageLockJSON_
 exports.processYAML = processYAML_
@@ -83,6 +85,7 @@ module.exports = {
   processJSSwitch: processJSSwitch_,
   processJSUnused: processJSUnused_,
   processJSXAttribute: processJSXAttribute_,
+  processJSXExpression: processJSXExpression_,
   processPackageJSON: processPackageJSON_,
   processPackageLockJSON: processPackageLockJSON_,
   processYAML: processYAML_,

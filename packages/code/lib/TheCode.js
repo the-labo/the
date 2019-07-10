@@ -43,6 +43,7 @@ class TheCode {
       jsUnused = true,
       jsDeclaration = true,
       jsxAttribute = true,
+      jsxExpression = true,
       yaml = true,
       maxFileSize = 1.5 * MB,
     } = config
@@ -63,6 +64,7 @@ class TheCode {
         jsBinaryExpression && p.processJSBinaryExpression,
         jsString && p.processJSString,
         jsxAttribute && p.processJSXAttribute,
+        jsxExpression && p.processJSXExpression,
         jsDeclaration && p.processJSDeclaration,
         jsUnused && p.processJSUnused,
         jsPrettier && p.processJSPrettier,
