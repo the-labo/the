@@ -53,6 +53,7 @@ class TheSpell {
     const {
       cacheFile = 'node_modules/.cache/the-spell/cache.json',
       maxFileSize = 1.5 * MB,
+      maxOccurrence = 3,
       maxWordLength = 24,
       minWordLength = 3,
       words: customWords = [],
@@ -61,6 +62,7 @@ class TheSpell {
     this.maxWordLength = maxWordLength
     this.minWordLength = minWordLength
     this.maxFileSize = maxFileSize
+    this.maxOccurrence = maxOccurrence
 
     const spellChecker = new Spellchecker()
     const knownWords = [...Words, ...customWords]
@@ -130,7 +132,17 @@ class TheSpell {
       })
       result.push(...lineResult)
     }
-    return result
+    const wordCounts = result.reduce(
+      (counts, report) => ({
+        ...counts,
+        [report.word]: (counts[report.word] || 0) + 1,
+      }),
+      {},
+    )
+    const wordsToSkip = Object.keys(wordCounts).filter(
+      (word) => wordCounts[word] > this.maxOccurrence,
+    )
+    return result.filter((report) => !wordsToSkip.includes(report.word))
   }
 
   async checkStringLine(line, options = {}) {

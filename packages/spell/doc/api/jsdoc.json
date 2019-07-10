@@ -13,7 +13,7 @@
     "name": "@the-/spell",
     "order": 2,
     "typicalname": "spell",
-    "version": "15.6.12"
+    "version": "15.6.14"
   },
   {
     "id": "module:@the-/spell.TheSpell()",
@@ -45,7 +45,7 @@
     "memberof": "module:@the-/spell.TheSpell",
     "meta": {
       "filename": "TheSpell.js",
-      "lineno": 88,
+      "lineno": 90,
       "path": "lib"
     },
     "name": "check",

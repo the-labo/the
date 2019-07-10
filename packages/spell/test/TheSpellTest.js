@@ -37,6 +37,23 @@ const n4 = doSomethingFunny()
     equal(reports[1].word, 'fxx')
     equal(reports.length, 2)
   })
+
+  it('maxOccurrence', async () => {
+    const spell = new TheSpell({ maxOccurrence: 3 })
+    ok(spell)
+    const reports = await spell.checkString(`
+
+let hogehgoeghoeh = 1
+hogehgoeghoeh = 2
+hogehgoeghoeh = 3
+hogehgoeghoeh = 4
+hogehgoeghoeh = 5
+hogehgoeghoeh = 6
+fugefugefugefuge = 7
+    
+    `)
+    equal(reports.length, 1)
+  })
 })
 
 /* global describe, before, after, it */
