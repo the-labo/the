@@ -13,7 +13,7 @@
     "name": "@the-/client",
     "order": 2,
     "typicalname": "client",
-    "version": "15.4.13"
+    "version": "15.5.2"
   },
   {
     "id": "module:@the-/client.TheClient()",
@@ -42,12 +42,148 @@
     ]
   },
   {
+    "description": "Add callback function",
+    "id": "addCallback",
+    "kind": "function",
+    "longname": "addCallback",
+    "meta": {
+      "filename": "asController.js",
+      "lineno": 32,
+      "path": "lib/helpers"
+    },
+    "name": "addCallback",
+    "order": 15,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "handleName"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "callbackFunc"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Cleanup functions"
+      }
+    ],
+    "scope": "global"
+  },
+  {
+    "description": "Add multiple callback functions at once",
+    "id": "addCallbacks",
+    "kind": "function",
+    "longname": "addCallbacks",
+    "meta": {
+      "filename": "asController.js",
+      "lineno": 46,
+      "path": "lib/helpers"
+    },
+    "name": "addCallbacks",
+    "order": 16,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object.<string, function()>"
+          ]
+        },
+        "name": "callbackFuncs"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "cleanup function"
+      }
+    ],
+    "scope": "global"
+  },
+  {
+    "deprecated": true,
+    "id": "delCallback",
+    "kind": "function",
+    "longname": "delCallback",
+    "meta": {
+      "filename": "asController.js",
+      "lineno": 58,
+      "path": "lib/helpers"
+    },
+    "name": "delCallback",
+    "order": 17,
+    "scope": "global"
+  },
+  {
+    "description": "Remove callbacks",
+    "id": "removeCallback",
+    "kind": "function",
+    "longname": "removeCallback",
+    "meta": {
+      "filename": "asController.js",
+      "lineno": 74,
+      "path": "lib/helpers"
+    },
+    "name": "removeCallback",
+    "order": 18,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "handleName"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "callbackFunc"
+      }
+    ],
+    "scope": "global"
+  },
+  {
+    "deprecated": true,
+    "id": "setCallback",
+    "kind": "function",
+    "longname": "setCallback",
+    "meta": {
+      "filename": "asController.js",
+      "lineno": 86,
+      "path": "lib/helpers"
+    },
+    "name": "setCallback",
+    "order": 19,
+    "scope": "global"
+  },
+  {
     "id": "TheClientScope",
     "kind": "typedef",
     "longname": "TheClientScope",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 393,
+      "lineno": 397,
       "path": "lib"
     },
     "name": "TheClientScope",
@@ -87,7 +223,7 @@
     "memberof": "module:@the-/client.TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 183,
+      "lineno": 187,
       "path": "lib"
     },
     "name": "invoke",
@@ -132,7 +268,7 @@
     "memberof": "module:@the-/client.TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 295,
+      "lineno": 299,
       "path": "lib"
     },
     "name": "stream",
@@ -197,7 +333,7 @@
     "memberof": "module:@the-/client.TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 312,
+      "lineno": 316,
       "path": "lib"
     },
     "name": "use",
@@ -254,7 +390,7 @@
     "memberof": "module:@the-/client.TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 360,
+      "lineno": 364,
       "path": "lib"
     },
     "name": "useAll",
@@ -296,7 +432,7 @@
       "path": "lib/mixins"
     },
     "name": "serverInfo",
-    "order": 22,
+    "order": 27,
     "params": [
       {
         "type": {
@@ -332,7 +468,7 @@
       "path": "lib/mixins"
     },
     "name": "pingPongAnd",
-    "order": 25,
+    "order": 30,
     "params": [
       {
         "type": {
@@ -381,7 +517,7 @@
       "path": "lib/mixins"
     },
     "name": "serverInfo",
-    "order": 28,
+    "order": 33,
     "params": [
       {
         "type": {
@@ -419,7 +555,7 @@
       "path": "lib/mixins"
     },
     "name": "pingPongAnd",
-    "order": 29,
+    "order": 34,
     "params": [
       {
         "type": {
@@ -531,7 +667,7 @@
       "path": "lib/helpers"
     },
     "name": "helpers",
-    "order": 17,
+    "order": 22,
     "scope": "static"
   },
   {
@@ -546,7 +682,7 @@
       "path": "lib/mixins"
     },
     "name": "mixins",
-    "order": 19,
+    "order": 24,
     "scope": "static"
   },
   {
@@ -711,7 +847,7 @@
       "path": "lib/helpers"
     },
     "name": "debugController",
-    "order": 15,
+    "order": 20,
     "scope": "static"
   },
   {
@@ -726,7 +862,7 @@
       "path": "lib/helpers"
     },
     "name": "debugStream",
-    "order": 16,
+    "order": 21,
     "scope": "static"
   },
   {
@@ -741,7 +877,7 @@
       "path": "lib/helpers"
     },
     "name": "parseClientUrl",
-    "order": 18,
+    "order": 23,
     "params": [
       {
         "type": {
@@ -776,7 +912,7 @@
       "path": "lib/mixins"
     },
     "name": "infoMix",
-    "order": 20,
+    "order": 25,
     "params": [
       {
         "type": {
@@ -809,7 +945,7 @@
       "path": "lib/mixins"
     },
     "name": "pingPongMix",
-    "order": 23,
+    "order": 28,
     "params": [
       {
         "type": {
@@ -844,7 +980,7 @@
       "path": "lib/mixins"
     },
     "name": "streamMix",
-    "order": 26,
+    "order": 31,
     "params": [
       {
         "type": {
@@ -876,7 +1012,7 @@
       "path": "lib/mixins"
     },
     "name": "InfoMixed",
-    "order": 21,
+    "order": 26,
     "scope": "inner"
   },
   {
@@ -890,7 +1026,7 @@
       "path": "lib/mixins"
     },
     "name": "PingPongMixed",
-    "order": 24,
+    "order": 29,
     "scope": "inner"
   },
   {
@@ -904,7 +1040,7 @@
       "path": "lib/mixins"
     },
     "name": "StreamMixed",
-    "order": 27,
+    "order": 32,
     "scope": "inner"
   }
 ]

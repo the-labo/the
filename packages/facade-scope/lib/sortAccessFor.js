@@ -24,6 +24,10 @@ function sortAccessFor(scope) {
     get state() {
       return scope.get('sort')
     },
+    get() {
+      return sortAccess.state
+    },
+
     /**
      * Set sort
      * @param {string} name

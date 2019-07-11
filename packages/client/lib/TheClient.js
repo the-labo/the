@@ -136,22 +136,26 @@ class TheClient extends TheClientBase {
       )
       return
     }
-    const callback = controller.callbacks[handleName]
-    if (!callback) {
+    const callbacks = []
+      .concat(controller.callbacks[handleName])
+      .filter(Boolean)
+    if (callbacks.length === 0) {
       console.warn(
         `[TheClient] Callback controller not found: ${controllerName}`,
       )
       return
     }
-    unlessProduction(() => {
-      console.groupCollapsed(
-        `[TheClient] Callback \`${controllerName}.${handleName}()\``,
-      )
-      console.log('Signature', `\`${controllerName}.${handleName}()\``)
-      console.log('Arguments', values)
-      console.groupEnd()
-    })
-    callback(...values) // eslint-disable-line
+    for (const callback of callbacks) {
+      unlessProduction(() => {
+        console.groupCollapsed(
+          `[TheClient] Callback \`${controllerName}.${handleName}()\``,
+        )
+        console.log('Signature', `\`${controllerName}.${handleName}()\``)
+        console.log('Arguments', values)
+        console.groupEnd()
+      })
+      callback(...values) // eslint-disable-line
+    }
   }
 
   markAsGone(reason) {

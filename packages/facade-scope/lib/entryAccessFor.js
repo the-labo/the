@@ -23,6 +23,9 @@ function entryAccessFor(scope) {
     deleteEntryError(...names) {
       scope.entryErrors.del(...names)
     },
+    get(options = {}) {
+      return entryAccess.getEntry(options)
+    },
     getEntry(options = {}) {
       const { raw = false } = options
       const entry = scope.get('entry')
@@ -39,6 +42,9 @@ function entryAccessFor(scope) {
       return name in errors
     },
     set(entry) {
+      return entryAccess.setEntry(entry)
+    },
+    setEntry(entry) {
       const current = entryAccess.getEntry()
       scope.set({
         entry: flatten({ ...current, ...entry }),

@@ -25,6 +25,9 @@ function pageAccessFor(scope) {
         size: pageAccess.getSize(),
       }
     },
+    get() {
+      return pageAccess.state
+    },
     /**
      * Get page number
      * @returns {number} - Number of page

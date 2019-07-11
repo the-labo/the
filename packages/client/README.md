@@ -85,6 +85,13 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 
+- global
+  - [addCallback(handleName,callbackFunc)](./doc/api/api.md#addCallback)
+  - [addCallbacks(callbackFuncs)](./doc/api/api.md#addCallbacks)
+  - [delCallback()](./doc/api/api.md#delCallback)
+  - [removeCallback(handleName,callbackFunc)](./doc/api/api.md#removeCallback)
+  - [setCallback()](./doc/api/api.md#setCallback)
+  - [TheClientScope](./doc/api/api.md#TheClientScope)
 - module:@the-/client
   - [.constants](./doc/api/api.md#module_@the-/client.constants)
   - [.create(args)](./doc/api/api.md#module_@the-/client.create)
@@ -122,8 +129,6 @@ tryExample().catch((err) => console.error(err))
   - [#stream(name,params,options)](./doc/api/api.md#module_@the-/client.TheClient#stream)
   - [#use(controllerName,options)](./doc/api/api.md#module_@the-/client.TheClient#use)
   - [#useAll(options)](./doc/api/api.md#module_@the-/client.TheClient#useAll)
-- global
-  - [TheClientScope](./doc/api/api.md#TheClientScope)
 
 See [API Guide](./doc/api/api.md) for more detail
 

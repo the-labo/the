@@ -70,11 +70,6 @@ module.exports = pon(
     /** Make sure that not production */
     'assert:not-prod': env.notFor('production'),
 
-    // -----------------------------------
-    // Sub Tasks for Assets
-    // -----------------------------------
-    /** Install asset files */
-    'assets:install': () => theAssets().installTo('assets', { copy: true }),
     /** Render markdown assets */
     'assets:markdown': md('assets/markdowns', 'public/partials', {
       vars: { ...locales },
@@ -83,14 +78,12 @@ module.exports = pon(
     'clean:cache': del('tmp/cache/**/*.*'),
     /** Cleanup public files */
     'clean:public': del('public/build/*.*'),
-
     // -----------------------------------
     // Sub Tasks for Clean Up
     // -----------------------------------
     /** Cleanup shim files */
     'clean:shim': del(['shim/**/*.*', 'client/shim/**/*.*']),
-    /** Open database cli */
-    'db:cli': () => createDB().cli(),
+
     /** Drop database */
     'db:drop': ['assert:not-prod', db.drop(createDB)],
     /** Dump data */
@@ -107,13 +100,11 @@ module.exports = pon(
     'db:reset': ['assert:not-prod', 'db:drop', 'db:setup', 'db:seed'],
     /** Generate test data */
     'db:seed': db.seed(createDB, 'server/db/seeds/:env/*.seed.js'),
-
     // -----------------------------------
     // Sub Tasks for Database
     // -----------------------------------
     /** Setup database */
     'db:setup': db.setup(createDB),
-
     // -----------------------------------
     // Sub Tasks for Debug
     // -----------------------------------
@@ -141,13 +132,14 @@ module.exports = pon(
     // -----------------------------------
     /** Prepare mysql docker container */
     'docker:mysql': mysql(Containers.mysql.name, Containers.mysql.options),
+
     /** Prepare nginx docker container */
     'docker:nginx': nginx(Containers.nginx.name, Containers.nginx.options),
+
     /** Prepare redis docker container */
     'docker:redis': redis(Containers.redis.name, Containers.redis.options),
     /** Set env variables for debug */
     'env:debug': env('development', { DEBUG: 'app:*', ...Local }),
-
     // -----------------------------------
     // Sub Tasks for Environment
     // -----------------------------------
@@ -168,6 +160,7 @@ module.exports = pon(
     'format:conf': theCode(['Local.js', 'Ponfile.js', 'conf/*.js'], {
       ignore: 'conf/index.js',
     }),
+
     /** Format json files */
     'format:json': fmtjson(
       [
@@ -181,13 +174,11 @@ module.exports = pon(
     ),
     /** Format server files */
     'format:server': theCode('server/**/*.js', {}),
-
     // -----------------------------------
     // Sub Tasks for Git
     // -----------------------------------
     /** Catch up to latest git */
     'git:catchup': [git('stash'), git('pull')],
-
     // -----------------------------------
     // Sub Tasks for Icon
     // -----------------------------------
@@ -202,28 +193,14 @@ module.exports = pon(
           Drawings.officialAccountIcon,
         ),
     ].filter(Boolean),
-    /** Validate locales */
-    'lint:loc': () => locales.validate(),
 
     // -----------------------------------
     // Sub Tasks for Lint
     // -----------------------------------
     'lint:rules': theLint(Rules),
 
-    // -----------------------------------
-    // Sub Tasks for Locales
-    // -----------------------------------
-    /** Print locale settings */
-    'loc:print': () => console.log(locales.toCompound()),
-
-    // -----------------------------------
-    // Sub Tasks for Local Config
-    // -----------------------------------
-    /** Print local settings */
-    'local:print': () => Local.print(),
     /** Disable maintenance mode */
     'maint:off': del('public/status/maintenance'),
-
     // -----------------------------------
     // Sub Tasks for Maintenance
     // -----------------------------------
@@ -241,6 +218,7 @@ module.exports = pon(
     // -----------------------------------
     /** Fix package.json */
     'pkg:fix': npx('fixpack'),
+
     /** Install packages */
     'pkg:install': npx('yarn', 'install', '--ignore-scripts'),
     /** Link self packages */
@@ -260,11 +238,13 @@ module.exports = pon(
     // -----------------------------------
     /** Run app with pm2 */
     'pm2:app': pm2('./bin/app.js', { name: Local.APP_PROCESS_NAME }),
+
     /** Run backup cron with pm2 */
     'pm2:backup:dump': pm2.pon('db:dump', {
       cron: Local.DUMP_SCHEDULE,
       name: `${Local.BACKUP_PROCESS_NAME}:dump`,
     }),
+
     /** Compile files for production */
     'prod:compile': ['env:prod', 'build', 'prod:map', 'prod:css', 'prod:js'],
     /** Compile css files for production */
@@ -279,32 +259,22 @@ module.exports = pon(
     ),
     /** Prepare database for production */
     'prod:db': ['env:prod', 'db'],
+
     /** Compile js files for production */
     'prod:js': ccjs(
       [`public${Urls.JS_EXTERNAL_URL}`, `public${Urls.JS_BUNDLE_URL}`],
       `public${Urls.PRODUCTION_JS_URL}`,
     ),
-
     // -----------------------------------
     // Sub Tasks for Production
     // -----------------------------------
     /** Delete source map files for production */
     'prod:map': del('public/**/*.map'),
-
     // -----------------------------------
     // Sub Tasks for Process
     // -----------------------------------
     /** Check another process exists */
     'ps:debug': thePS('var/app/debug.pid'),
-
-    // -----------------------------------
-    // Sub Tasks for Secret
-    // -----------------------------------
-    /** Decrypt secret file */
-    'secret:dec': () => secret.decrypt(),
-    /** Encrypt secret file */
-    'secret:enc': () => secret.encrypt(),
-
     // -----------------------------------
     // Sub Tasks for Structure
     // -----------------------------------
@@ -331,8 +301,10 @@ module.exports = pon(
       },
       { force: true },
     ),
+
     /** Generate project directories */
     'struct:mkdir': mkdir([...Object.keys(Directories)]),
+
     /** Prepare sub packages */
     'struct:pkg': [
       cp(
@@ -343,6 +315,7 @@ module.exports = pon(
       ),
       del('package-lock.json'), // Using yarn
     ],
+
     /** Render coz templates */
     'struct:render': [
       coz([
@@ -351,12 +324,12 @@ module.exports = pon(
         '.*.bud',
       ]),
     ],
-
     // -----------------------------------
     // Sub Tasks for Test
     // -----------------------------------
     /** Run client tests */
     'test:client': mocha('client/test/**/*.js', { timeout: 3000 }),
+
     /** Run server tests */
     'test:server': mocha('server/test/**/*.js', { timeout: 3000 }),
     /** Bundle browser script */
@@ -390,7 +363,6 @@ module.exports = pon(
         ),
       { sub: ['deps'] },
     ),
-
     // -----------------------------------
     // Sub Tasks for UI
     // -----------------------------------
@@ -419,6 +391,7 @@ module.exports = pon(
     'ui:css/watch': 'ui:css/*/watch',
     /** Extract map files */
     'ui:map': map('public', 'public', { pattern: '**/*.js', watchDelay: 400 }),
+
     /** Compile react components */
     'ui:react': react('client', 'client/shim', {
       extractCss: 'client/shim/ui/bundle.pcss',
@@ -426,6 +399,33 @@ module.exports = pon(
       sourceRoot: '..',
       watchTargets: 'client/ui/**/*.pcss',
     }),
+    // -----------------------------------
+    // Sub Tasks for Assets
+    // -----------------------------------
+    /** Install asset files */
+    'assets:install': () => theAssets().installTo('assets', { copy: true }),
+    /** Open database cli */
+    'db:cli': () => createDB().cli(),
+    /** Validate locales */
+    'lint:loc': () => locales.validate(),
+
+    // -----------------------------------
+    // Sub Tasks for Locales
+    // -----------------------------------
+    /** Print locale settings */
+    'loc:print': () => console.log(locales.toCompound()),
+    // -----------------------------------
+    // Sub Tasks for Local Config
+    // -----------------------------------
+    /** Print local settings */
+    'local:print': () => Local.print(),
+    // -----------------------------------
+    // Sub Tasks for Secret
+    // -----------------------------------
+    /** Decrypt secret file */
+    'secret:dec': () => secret.decrypt(),
+    /** Encrypt secret file */
+    'secret:enc': () => secret.encrypt(),
 
     // -----------------------------------
     // Main Tasks
@@ -472,8 +472,6 @@ module.exports = pon(
       prod: ['env:prod', 'prod:compile', 'prod:db', 'start'],
       /** Restart app as daemon */
       restart: ['pm2:app/restart', 'pm2:backup:*/restart'],
-      /** Update project settings with interactive shell */
-      setting: () => setting.ask(),
       /** Show app daemon status */
       show: ['pm2:app/show'],
       /** Start app as daemon */
@@ -497,6 +495,8 @@ module.exports = pon(
       ui: ['ui:css', 'ui:react', 'ui:browser', 'ui:browser-external', 'ui:map'],
       /** Run watches */
       watch: ['ui:*', 'ui:*/watch'],
+      /** Update project settings with interactive shell */
+      setting: () => setting.ask(),
     },
 
     // -----------------------------------

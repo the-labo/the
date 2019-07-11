@@ -21,6 +21,9 @@ function filterAccessFor(scope) {
     get state() {
       return scope.get('filter')
     },
+    get() {
+      return filterAccess.state
+    },
     /**
      * Set filter
      * @param {Object} filter

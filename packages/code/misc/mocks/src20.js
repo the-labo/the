@@ -93,8 +93,6 @@ module.exports = pon(
     // Sub Tasks for Database
     // -----------------------------------
     ...{
-      /** Open database cli */
-      'db:cli': () => createDB().cli(),
       /** Drop database */
       'db:drop': ['unless:production', drop(createDB)],
       /** Dump data */
@@ -122,6 +120,8 @@ module.exports = pon(
       ],
       /** Create user */
       'db:user:create': fork('misc/scripts/createUser.js'),
+      /** Open database cli */
+      'db:cli': () => createDB().cli(),
     },
     deploy: deploy({
       host: '13.73.30.218',

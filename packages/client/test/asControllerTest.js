@@ -18,9 +18,9 @@ describe('as-controller', () => {
     const ctrl = asController({}, spec, {})
     ok(ctrl)
     ctrl.setCallback('hoge', () => {})
-    equal(Object.keys(ctrl.callbacks).length, 1)
+    equal(ctrl.callbacks.hoge.length, 1)
     ctrl.delCallback('hoge')
-    equal(Object.keys(ctrl.callbacks).length, 0)
+    equal(ctrl.callbacks.hoge.length, 0)
   })
 })
 

@@ -13,7 +13,7 @@
     "name": "@the-/facade-scope",
     "order": 36,
     "typicalname": "facadeScope",
-    "version": "16.1.10"
+    "version": "16.1.13"
   },
   {
     "description": "Operation handlers",
@@ -739,7 +739,7 @@
     "memberof": "module:@the-/facade-scope.filterAccessFor~filterAccess",
     "meta": {
       "filename": "filterAccessFor.js",
-      "lineno": 28,
+      "lineno": 31,
       "path": "lib"
     },
     "name": "set",
@@ -1012,7 +1012,7 @@
     "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
     "meta": {
       "filename": "pageAccessFor.js",
-      "lineno": 32,
+      "lineno": 35,
       "path": "lib"
     },
     "name": "getNumber",
@@ -1037,7 +1037,7 @@
     "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
     "meta": {
       "filename": "pageAccessFor.js",
-      "lineno": 39,
+      "lineno": 42,
       "path": "lib"
     },
     "name": "getSize",
@@ -1061,7 +1061,7 @@
     "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
     "meta": {
       "filename": "pageAccessFor.js",
-      "lineno": 46,
+      "lineno": 49,
       "path": "lib"
     },
     "name": "more",
@@ -1089,7 +1089,7 @@
     "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
     "meta": {
       "filename": "pageAccessFor.js",
-      "lineno": 54,
+      "lineno": 57,
       "path": "lib"
     },
     "name": "next",
@@ -1104,7 +1104,7 @@
     "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
     "meta": {
       "filename": "pageAccessFor.js",
-      "lineno": 63,
+      "lineno": 66,
       "path": "lib"
     },
     "name": "set",
@@ -1124,7 +1124,7 @@
     "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
     "meta": {
       "filename": "pageAccessFor.js",
-      "lineno": 72,
+      "lineno": 75,
       "path": "lib"
     },
     "name": "setNumber",
@@ -1149,7 +1149,7 @@
     "memberof": "module:@the-/facade-scope.pageAccessFor~pageAccess",
     "meta": {
       "filename": "pageAccessFor.js",
-      "lineno": 79,
+      "lineno": 82,
       "path": "lib"
     },
     "name": "setSize",
@@ -1344,7 +1344,7 @@
     "memberof": "module:@the-/facade-scope.sortAccessFor~sortAccess",
     "meta": {
       "filename": "sortAccessFor.js",
-      "lineno": 31,
+      "lineno": 35,
       "path": "lib"
     },
     "name": "set",
@@ -1618,7 +1618,7 @@
     "memberof": "module:@the-/facade-scope.listOperationAccessFor~listOperation",
     "meta": {
       "filename": "listOperationFor.js",
-      "lineno": 70,
+      "lineno": 74,
       "path": "lib/operations"
     },
     "name": "sync",

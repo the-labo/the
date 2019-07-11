@@ -17,8 +17,10 @@ describe('process-jsx-expression', () => {
   it('Do test', async () => {
     equal(
       await processJSXExpression(
+        // eslint-disable-next-line
         'const X = <span>{" "}{\'hoge\'}{n}abc{`this is ${b}`}</span>',
       ),
+      // eslint-disable-next-line
       'const X = <span> hoge{n}abc{`this is ${b}`}</span>',
     )
   })

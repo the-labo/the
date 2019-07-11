@@ -17,8 +17,6 @@ const d = {
     },
     ...{ b: 1 },
 
-    notDoSomething() {},
-
     // HOGE HOGE
     x: {
       get ao() {},
@@ -28,6 +26,8 @@ const d = {
       hogehoge: 1234,
       oooo() {},
     },
+
+    notDoSomething() {},
 
     ...{ a: 1 },
     ...{ c: 2 },

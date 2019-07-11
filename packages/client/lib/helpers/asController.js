@@ -23,23 +23,72 @@ function asController(instance, spec, context, options = {}) {
       },
     })),
     {
-      delCallback(...handlerNames) {
-        for (const handleName of handlerNames) {
-          delete this.callbacks[handleName]
-          onToggleHandler(handleName, false)
+      /**
+       * Add callback function
+       * @param {string} handleName
+       * @param {function()} callbackFunc
+       * @returns {function()} Cleanup functions
+       */
+      addCallback(handleName, callbackFunc) {
+        const callbacks = this.callbacks[handleName] || []
+        const added = [...callbacks, callbackFunc]
+        if (callbacks.length === 0) {
+          onToggleHandler(handleName, true)
+        }
+        this.callbacks = { ...this.callbacks, [handleName]: added }
+        return () => this.removeCallback(handleName, callbackFunc)
+      },
+      /**
+       * Add multiple callback functions at once
+       * @param {Object<string, function>} callbackFuncs
+       * @returns {function()} cleanup function
+       */
+      addCallbacks(callbackFuncs) {
+        const closeFuncs = Object.entries(callbackFuncs).map(
+          ([handleName, callback]) => this.addCallback(handleName, callback),
+        )
+        return () => {
+          for (const closeFunc of closeFuncs) {
+            closeFunc()
+          }
         }
       },
+
+      /** @deprecated */
+      delCallback(...handleNames) {
+        for (const handleName of handleNames) {
+          this.removeAllCallbacksFor(handleName)
+        }
+      },
+      removeAllCallbacksFor(handleName) {
+        const callbacks = this.callbacks[handleName] || []
+        for (const callback of callbacks) {
+          this.removeCallback(handleName, callback)
+        }
+      },
+      /**
+       * Remove callbacks
+       * @param {string} handleName
+       * @param {function()} callbackFunc
+       */
+      removeCallback(handleName, callbackFunc) {
+        const callbacks = this.callbacks[handleName] || []
+        const removed = callbacks.filter((c) => c !== callbackFunc)
+        if (removed.length === 0) {
+          onToggleHandler(handleName, false)
+        }
+        this.callbacks = {
+          ...this.callbacks,
+          [handleName]: removed,
+        }
+      },
+      /** @deprecated */
       setCallback(handleName, callback) {
-        let callbacks
         if (arguments.length >= 2) {
-          callbacks = { [handleName]: callback }
+          this.addCallback(handleName, callback)
         } else {
-          callbacks = arguments[0] || {}
+          this.addCallbacks(arguments[0])
         }
-        for (const [handleName, callback] of Object.entries(callbacks)) {
-          onToggleHandler(handleName, !!callback)
-        }
-        this.callbacks = { ...this.callbacks, ...callbacks }
       },
     },
   )

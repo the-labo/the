@@ -18,15 +18,15 @@ const contentAccess = require('../helpers/contentAccess')
 function processJSXExpression(content, options = {}) {
   return applyConverter(content, (content) => {
     const parsed = parse(content, options)
-    const { replace, get } = contentAccess(content)
+    const { get, replace } = contentAccess(content)
 
     const convertExpressionContainer = (Container) => {
       const { expression, range } = Container
       switch (expression && expression.type) {
-        case NodeTypes.StringLiteral:
-          return replace(range, expression.value)
         case NodeTypes.JSXElement:
           return replace(range, get(expression.range))
+        case NodeTypes.StringLiteral:
+          return replace(range, expression.value)
         default:
           return
       }

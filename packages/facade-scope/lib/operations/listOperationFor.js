@@ -46,7 +46,11 @@ function listOperationFor(scope) {
       scope.init()
     },
     setCondition(condition) {
-      const { filter = {}, page = {}, sort = [] } = condition
+      const {
+        filter = filterAccess.state,
+        page = pageAccess.state,
+        sort = sortAccess.state,
+      } = condition
       filterAccess.set(filter)
       sortAccess.set(sort)
       pageAccess.set(page)

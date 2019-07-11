@@ -8,6 +8,24 @@
 </dd>
 </dl>
 
+## Functions
+
+<dl>
+<dt><a href="#addCallback">addCallback(handleName, callbackFunc)</a> ⇒ <code>function</code></dt>
+<dd><p>Add callback function</p>
+</dd>
+<dt><a href="#addCallbacks">addCallbacks(callbackFuncs)</a> ⇒ <code>function</code></dt>
+<dd><p>Add multiple callback functions at once</p>
+</dd>
+<dt><del><a href="#delCallback">delCallback()</a></del></dt>
+<dd></dd>
+<dt><a href="#removeCallback">removeCallback(handleName, callbackFunc)</a></dt>
+<dd><p>Remove callbacks</p>
+</dd>
+<dt><del><a href="#setCallback">setCallback()</a></del></dt>
+<dd></dd>
+</dl>
+
 ## Typedefs
 
 <dl>
@@ -20,7 +38,7 @@
 ## @the-/client
 Client for the-server
 
-**Version**: 15.4.13  
+**Version**: 15.5.2  
 **License**: MIT  
 
 * [@the-/client](#module_@the-/client)
@@ -343,6 +361,55 @@ Create a TheClient instance
 Default exports
 
 **Kind**: static method of [<code>@the-/client</code>](#module_@the-/client)  
+<a name="addCallback"></a>
+
+## addCallback(handleName, callbackFunc) ⇒ <code>function</code>
+Add callback function
+
+**Kind**: global function  
+**Returns**: <code>function</code> - Cleanup functions  
+
+| Param | Type |
+| --- | --- |
+| handleName | <code>string</code> | 
+| callbackFunc | <code>function</code> | 
+
+<a name="addCallbacks"></a>
+
+## addCallbacks(callbackFuncs) ⇒ <code>function</code>
+Add multiple callback functions at once
+
+**Kind**: global function  
+**Returns**: <code>function</code> - cleanup function  
+
+| Param | Type |
+| --- | --- |
+| callbackFuncs | <code>Object.&lt;string, function()&gt;</code> | 
+
+<a name="delCallback"></a>
+
+## ~~delCallback()~~
+***Deprecated***
+
+**Kind**: global function  
+<a name="removeCallback"></a>
+
+## removeCallback(handleName, callbackFunc)
+Remove callbacks
+
+**Kind**: global function  
+
+| Param | Type |
+| --- | --- |
+| handleName | <code>string</code> | 
+| callbackFunc | <code>function</code> | 
+
+<a name="setCallback"></a>
+
+## ~~setCallback()~~
+***Deprecated***
+
+**Kind**: global function  
 <a name="TheClientScope"></a>
 
 ## TheClientScope : <code>Object</code>
