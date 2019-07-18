@@ -13,7 +13,7 @@
     "name": "@the-/client",
     "order": 2,
     "typicalname": "client",
-    "version": "15.5.2"
+    "version": "15.5.4"
   },
   {
     "id": "module:@the-/client.TheClient()",
@@ -170,7 +170,7 @@
     "longname": "setCallback",
     "meta": {
       "filename": "asController.js",
-      "lineno": 86,
+      "lineno": 91,
       "path": "lib/helpers"
     },
     "name": "setCallback",

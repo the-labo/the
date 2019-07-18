@@ -45,31 +45,6 @@ function driverFromEnv(env) {
     case 'mysql':
     case 'sqlite':
       throw new Error('No longer supported')
-    case 'rdb/mysql':
-      return require('the-driver-rdb')({
-        database,
-        dialect: 'mysql',
-        dialectOptions: { ssl },
-        host,
-        password,
-        pool: {
-          idle: poolIdle,
-          max: poolMax,
-          min: poolMin,
-        },
-        port,
-        ssl,
-        username,
-      })
-    case 'rdb/sqlite':
-      mkdirp.sync(path.dirname(storage))
-      return require('the-driver-rdb')({
-        database,
-        dialect: 'sqlite',
-        isolationLevel: 'READ COMMITTED',
-        retry: { match: ['SQLITE_BUSY: database is locked'], max: 10 },
-        storage,
-      })
     case 'sequelize/mysql':
       return require('@the-/driver-sequelize')({
         database,

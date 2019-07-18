@@ -40,7 +40,7 @@ function editOperationFor(scope) {
     },
     async exec(handler) {
       const { state: id } = idAccess
-      await busyAccess.while(async () =>
+      return busyAccess.while(async () =>
         entryAccess.process((entry) => handler(id, entry)),
       )
     },

@@ -18,7 +18,7 @@ describe('export-import-mix', function() {
     const storage = `${__dirname}/../tmp/exp-imp-test/test.db`
     db = new TheDB({
       env: {
-        dialect: 'rdb/sqlite',
+        dialect: 'memory',
         storage,
       },
     })
@@ -36,7 +36,7 @@ describe('export-import-mix', function() {
   })
 
   after(async () => {
-    await db.drop()
+    db && (await db.drop())
   })
 
   it('Do test', async () => {

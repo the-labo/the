@@ -25,8 +25,7 @@ function cascadeMix(Class) {
         const {
           constructor: { cascaded = {} },
         } = follower
-        for (const [followeeName, creator] of Object.entries(
-          cascaded)) {
+        for (const [followeeName, creator] of Object.entries(cascaded)) {
           const followee = this.getResource(followeeName)
           this._cascadeListeners.push(
             followee.listenToDestroy(async ({ gone }) => {

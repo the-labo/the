@@ -5,14 +5,14 @@
 ## @the-/geo
 Geo location utility
 
-**Version**: 15.4.7  
+**Version**: 15.4.10  
 **License**: MIT  
 
 * [@the-/geo](#module_@the-/geo)
     * [.TheGeo](#module_@the-/geo.TheGeo)
         * [new TheGeo([options])](#new_module_@the-/geo.TheGeo_new)
         * [.watch(callback, [options])](#module_@the-/geo.TheGeo+watch)
-        * [.detect(options)](#module_@the-/geo.TheGeo+detect) ⇒ <code>Promise.&lt;\*&gt;</code>
+        * [.detect([options])](#module_@the-/geo.TheGeo+detect) ⇒ <code>Promise.&lt;Object&gt;</code>
     * [.create(...args)](#module_@the-/geo.create) ⇒ <code>TheGeo</code>
     * [.default()](#module_@the-/geo.default)
 
@@ -24,7 +24,7 @@ Geo location utility
 * [.TheGeo](#module_@the-/geo.TheGeo)
     * [new TheGeo([options])](#new_module_@the-/geo.TheGeo_new)
     * [.watch(callback, [options])](#module_@the-/geo.TheGeo+watch)
-    * [.detect(options)](#module_@the-/geo.TheGeo+detect) ⇒ <code>Promise.&lt;\*&gt;</code>
+    * [.detect([options])](#module_@the-/geo.TheGeo+detect) ⇒ <code>Promise.&lt;Object&gt;</code>
 
 <a name="new_module_@the-/geo.TheGeo_new"></a>
 
@@ -48,14 +48,14 @@ Watch position change
 
 <a name="module_@the-/geo.TheGeo+detect"></a>
 
-#### theGeo.detect(options) ⇒ <code>Promise.&lt;\*&gt;</code>
+#### theGeo.detect([options]) ⇒ <code>Promise.&lt;Object&gt;</code>
 Detect current geo location
 
 **Kind**: instance method of [<code>TheGeo</code>](#module_@the-/geo.TheGeo)  
 
-| Param | Type | Description |
-| --- | --- | --- |
-| options | <code>Object</code> | Optional settings |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 
 <a name="module_@the-/geo.create"></a>
 

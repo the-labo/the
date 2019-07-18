@@ -29,6 +29,10 @@ function filterAccessFor(scope) {
      * @param {Object} filter
      */
     set(filter) {
+      if (filter === null) {
+        scope.init('filter')
+        return
+      }
       scope.set({ filter })
     },
   }

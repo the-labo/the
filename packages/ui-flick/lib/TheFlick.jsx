@@ -383,11 +383,11 @@ TheFlick.propTypes = {
 TheFlick.defaultProps = {
   activeIndex: 0,
   images: [],
-  onChange: () => {},
-  onClose: () => {},
   present: false,
   spinning: false,
   title: null,
+  onChange: () => {},
+  onClose: () => {},
 }
 
 TheFlick.displayName = 'TheFlick'

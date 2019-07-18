@@ -79,8 +79,8 @@ class TheGeo {
 
   /**
    * Detect current geo location
-   * @param {Object} options - Optional settings
-   * @returns {Promise<*>}
+   * @param {Object} [options={}] - Optional settings
+   * @returns {Promise<Object>}
    */
   async detect(options = {}) {
     const { force = false } = options
@@ -92,8 +92,8 @@ class TheGeo {
     if (!fromGeolocation) {
       return null
     }
-    const { latitude: lat, longitude: lng } = fromGeolocation
-    const data = { lat, lng }
+    const { accuracy, latitude: lat, longitude: lng } = fromGeolocation
+    const data = { accuracy, lat, lng }
     this.setCache(data)
     return data
   }

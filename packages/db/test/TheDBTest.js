@@ -318,60 +318,9 @@ describe('the-db', function() {
     await db.close()
   })
 
-  it('rdb/Mysql', async () => {
-    const env = {
-      database: 'the-db-test-rdb',
-      dialect: 'rdb/mysql',
-      logging: console.log,
-      password: 'fuge',
-      username: 'hoge',
-    }
-    const db = new TheDB({
-      env,
-    })
-    await db.setup()
-    await db.exec('SHOW TABLES')
-
-    class UserResource extends TheResource {
-      async invalidated(user) {
-        const profile = await Profile.first({ user })
-        return {
-          profile,
-        }
-      }
-    }
-
-    class ProfileResource extends TheResource {}
-
-    const User = db.load(UserResource, 'User')
-    const user01 = await User.create({ name: 'user01' })
-    ok(user01.id)
-    await User.update(user01.id, { name: 'user01-updated' })
-
-    const Profile = db.load(ProfileResource, 'Profile')
-    const profile01 = await Profile.create({
-      'foo.bar': 'This is foo bar',
-      name: '🍣🍺',
-      user: user01,
-    })
-    ok(profile01.user)
-    equal(profile01['foo.bar'], 'This is foo bar')
-
-    await User.refresh(user01)
-
-    await db.transaction(async (transaction) => {
-      await User.create({ n: 1 }, { transaction })
-    })
-
-    await db.invalidate(user01)
-
-    await db.drop()
-    await db.close()
-  })
-
   it('sequelize/Mysql', async () => {
     const env = {
-      database: 'the-db-test-sequelize',
+      database: 'the-db-test-sequelize123',
       dialect: 'sequelize/mysql',
       logging: console.log,
       password: 'fuge',

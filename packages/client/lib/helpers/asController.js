@@ -82,6 +82,11 @@ function asController(instance, spec, context, options = {}) {
           [handleName]: removed,
         }
       },
+      removeCallbacks(callbackFuncs) {
+        for (const [handleName, callback] of Object.entries(callbackFuncs)) {
+          this.removeCallback(handleName, callback)
+        }
+      },
       /** @deprecated */
       setCallback(handleName, callback) {
         if (arguments.length >= 2) {

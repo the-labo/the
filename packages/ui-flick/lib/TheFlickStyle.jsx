@@ -147,7 +147,7 @@ TheFlickStyle.data = (options) => {
       '.the-flick-image': {
         '.the-image': {
           background: 'transparent',
-          height: 'fit-content !important',
+          height: 'fit-content',
           minHeight: minMediaSize,
           minWidth: minMediaSize,
         },
