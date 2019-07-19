@@ -5,7 +5,7 @@
 'use strict'
 
 const {
-  strict: { equal, ok },
+  strict: { deepEqual, equal, ok },
 } = require('assert')
 const TheSpell = require('../lib/TheSpell')
 
@@ -53,6 +53,12 @@ fugefugefugefuge = 7
     
     `)
     equal(reports.length, 1)
+  })
+
+  it('Custom plurals', async () => {
+    const spell = new TheSpell({ words: ['okunishi'] })
+    deepEqual(await spell.checkStringLine('This is okunishi'), [])
+    deepEqual(await spell.checkStringLine('This is okunishis'), [])
   })
 })
 

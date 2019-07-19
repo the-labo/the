@@ -11,6 +11,7 @@ const { cleanup } = require('asobj')
 const colorprint = require('colorprint')
 const { EOL } = require('os')
 const path = require('path')
+const pluralize = require('pluralize')
 const { inspect } = require('util')
 const SpellCache = require('./helpers/SpellCache')
 const Words = require('./Words')
@@ -63,15 +64,18 @@ class TheSpell {
     this.minWordLength = minWordLength
     this.maxFileSize = maxFileSize
     this.maxOccurrence = maxOccurrence
-
-    const spellChecker = new Spellchecker()
-    const knownWords = [...Words, ...customWords]
-    for (const word of knownWords) {
-      spellChecker.add(word)
-    }
-    this.knownWords = knownWords
-    this.spellChecker = spellChecker
+    this.spellChecker = new Spellchecker()
+    this.knownWords = []
     this.cache = new SpellCache(cacheFile)
+    this.addWords([...Words, ...customWords])
+  }
+
+  addWords(words) {
+    for (const word of words) {
+      this.spellChecker.add(word)
+      this.spellChecker.add(pluralize(word))
+      this.knownWords.push(word)
+    }
   }
 
   shouldSkipContent(content) {

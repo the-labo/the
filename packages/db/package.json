@@ -1,7 +1,7 @@
 {
   "name": "@the-/db",
   "description": "DB for the-framework",
-  "version": "16.0.1",
+  "version": "16.0.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -42,8 +42,6 @@
   },
   "devDependencies": {
     "colorprint": "^5.0.3",
-    "eslint": "^5.16.0",
-    "jsdoc-strip-async-await": "^0.1.0",
     "sqlite3": "^4.0.9"
   },
   "engines": {
