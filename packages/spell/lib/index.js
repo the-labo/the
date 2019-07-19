@@ -4,7 +4,7 @@
  * @license MIT
  * @module @the-/spell
  * @typicalname spell
- * @version 15.6.15
+ * @version 15.6.18
  */
 'use strict'
 

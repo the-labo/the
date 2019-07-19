@@ -11,7 +11,6 @@ const { cleanup } = require('asobj')
 const colorprint = require('colorprint')
 const { EOL } = require('os')
 const path = require('path')
-const pluralize = require('pluralize')
 const { inspect } = require('util')
 const SpellCache = require('./helpers/SpellCache')
 const Words = require('./Words')
@@ -65,16 +64,25 @@ class TheSpell {
     this.maxFileSize = maxFileSize
     this.maxOccurrence = maxOccurrence
     this.spellChecker = new Spellchecker()
-    this.knownWords = []
+    this.knownWords = new Set()
     this.cache = new SpellCache(cacheFile)
     this.addWords([...Words, ...customWords])
   }
 
+  addWord(word) {
+    if (this.knownWords.has(word)) {
+      return
+    }
+    const variations = [word]
+    for (const variation of variations) {
+      this.spellChecker.add(variation)
+      this.knownWords.add(variation)
+    }
+  }
+
   addWords(words) {
     for (const word of words) {
-      this.spellChecker.add(word)
-      this.spellChecker.add(pluralize(word))
-      this.knownWords.push(word)
+      this.addWord(word)
     }
   }
 
@@ -163,16 +171,10 @@ class TheSpell {
     const reports = []
     for (const word of words) {
       const offset = line.indexOf(word)
-      const isMisspelled = await spellChecker.isMisspelled(word)
+      const isMisspelled = await this.isMisspelled(word)
       if (isMisspelled) {
         const [correction] =
           spellChecker.getCorrectionsForMisspelling(word) || []
-        const shortWord =
-          correction &&
-          correction.replace(/[\W_]+/g, '').toLowerCase() === word.toLowerCase()
-        if (shortWord) {
-          continue
-        }
         reports.push(
           cleanup({
             filename,
@@ -188,6 +190,22 @@ class TheSpell {
       }
     }
     return reports
+  }
+
+  async isMisspelled(word) {
+    const { spellChecker } = this
+    const isMisspelled = await spellChecker.isMisspelled(word)
+    if (!isMisspelled) {
+      return false
+    }
+    const [correction] = spellChecker.getCorrectionsForMisspelling(word) || []
+    const shortWord =
+      correction &&
+      correction.replace(/[\W_]+/g, '').toLowerCase() === word.toLowerCase()
+    if (shortWord) {
+      return false
+    }
+    return true
   }
 
   async shouldSkipFile(filename, { cacheKey }) {

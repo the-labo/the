@@ -60,6 +60,19 @@ fugefugefugefuge = 7
     deepEqual(await spell.checkStringLine('This is okunishi'), [])
     deepEqual(await spell.checkStringLine('This is okunishis'), [])
   })
+
+  it('Pascal cases', async () => {
+    const spell = new TheSpell({ words: ['p-queue'] })
+    deepEqual(await spell.checkStringLine('You know PQueue?'), [])
+    deepEqual(await spell.checkStringLine('You know p_queue?'), [])
+  })
+
+  it('isMisspelled check', async () => {
+    const spell = new TheSpell({ words: ['hoge'] })
+    equal(await spell.isMisspelled('Hoge'), false)
+    equal(await spell.isMisspelled('dirnames'), false)
+    equal(await spell.isMisspelled('asdfasdfa'), true)
+  })
 })
 
 /* global describe, before, after, it */

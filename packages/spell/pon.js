@@ -6,11 +6,13 @@ const chalk = require('chalk')
 const TheSpell = require('./lib/TheSpell')
 
 function theSpellTask(patterns, opitons = {}) {
-  const { ignore = [], words } = opitons
+  const { ignore = [], maxWordLength, minWordLength, words } = opitons
   return async function task(ctx) {
     const { logger } = ctx
     const subLogger = logger.withoutPrefix ? logger.withoutPrefix() : logger
     const spell = new TheSpell({
+      maxWordLength,
+      minWordLength,
       words,
     })
     const errorReports = {}

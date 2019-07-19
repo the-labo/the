@@ -19,7 +19,6 @@ const reserved = require('reserved')
 const textExtensions = require('text-extensions')
 const util = require('util')
 const videoExtensions = require('video-extensions')
-const { get } = require('@the-/window')
 
 module.exports = [
   ...reserved,
@@ -35,9 +34,9 @@ module.exports = [
   ...fontExtensions,
   ...compressedExtensions,
   ...builtinModules,
-  ...Object.keys(get('global') || {}),
-  ...Object.keys(get('process.env') || {}),
-  ...Object.keys(get('process') || {}),
+  ...Object.keys(global),
+  ...Object.keys(process.env),
+  ...Object.keys(process),
   ...[
     'android',
     'aws',
@@ -109,3 +108,5 @@ module.exports = [
     'worklet',
   ],
 ].sort()
+
+/* global global, process */
