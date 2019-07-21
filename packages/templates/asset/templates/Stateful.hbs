@@ -1,36 +1,32 @@
 /**
  * {{pascalcase name}} component
  * @memberof {{memberOf}}
- * @class {{pascalcase name}}
- * @augments React.Component
+ * @function {{pascalcase name}}
  */
 'use strict'
 
 import React from 'react'
 import { Stateful } from '{{contextPath}}'
 
+const stateful = Stateful(
+  (state) => ({
+  }),
+  () => ({
+  }),
+)
+
 /** @lends {{memberOf}}.{{pascalcase name}} */
-class {{pascalcase name}} extends React.Component {
-  #stateful = Stateful(
-    (state) => ({
-    }),
-    () => ({
-    }),
+const {{pascalcase name}} = React.memo(() => {
+  return this.#stateful(
+   ({
+      l,
+   }) => {
+     return (
+       <div>
+       </div>
+     )
+   }
   )
-
-  render () {
-    return this.#stateful(
-     ({
-        l,
-     }) => {
-       return (
-         <div>
-
-         </div>
-       )
-     }
-    )
-  }
 }
 
 export default {{pascalcase name}}

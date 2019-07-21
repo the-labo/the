@@ -94,6 +94,7 @@ tryExample().catch((err) => console.error(err))
   - [.TheRefactor](./doc/api/api.md#module_@the-/refactor.TheRefactor)
 - module:@the-/refactor.TheRefactor
   - [#convert(pattern,converter,options)](./doc/api/api.md#module_@the-/refactor.TheRefactor#convert)
+  - [#process(pattern,from,to,options)](./doc/api/api.md#module_@the-/refactor.TheRefactor#process)
   - [#rename(pattern,convert,options)](./doc/api/api.md#module_@the-/refactor.TheRefactor#rename)
   - [#renameDir(src,dest)](./doc/api/api.md#module_@the-/refactor.TheRefactor#renameDir)
   - [#rewrite(pattern,rules,options)](./doc/api/api.md#module_@the-/refactor.TheRefactor#rewrite)

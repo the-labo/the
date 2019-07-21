@@ -13,7 +13,7 @@
     "name": "@the-/refactor",
     "order": 2,
     "typicalname": "refactor",
-    "version": "15.4.7"
+    "version": "15.5.1"
   },
   {
     "async": true,
@@ -24,7 +24,7 @@
     "memberof": "module:@the-/refactor.TheRefactor",
     "meta": {
       "filename": "TheRefactor.js",
-      "lineno": 52,
+      "lineno": 53,
       "path": "lib"
     },
     "name": "convert",
@@ -71,6 +71,72 @@
   },
   {
     "async": true,
+    "description": "Process files to rename",
+    "id": "module:@the-/refactor.TheRefactor#process",
+    "kind": "function",
+    "longname": "module:@the-/refactor.TheRefactor#process",
+    "memberof": "module:@the-/refactor.TheRefactor",
+    "meta": {
+      "filename": "TheRefactor.js",
+      "lineno": 72,
+      "path": "lib"
+    },
+    "name": "process",
+    "order": 5,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string",
+            "Array.<string>"
+          ]
+        },
+        "description": "Patterns to process",
+        "name": "pattern"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "From text",
+        "name": "from"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "TO text",
+        "name": "to"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<undefined>"
+          ]
+        }
+      }
+    ],
+    "scope": "instance"
+  },
+  {
+    "async": true,
     "description": "Rename files",
     "id": "module:@the-/refactor.TheRefactor#rename",
     "kind": "function",
@@ -78,11 +144,11 @@
     "memberof": "module:@the-/refactor.TheRefactor",
     "meta": {
       "filename": "TheRefactor.js",
-      "lineno": 70,
+      "lineno": 113,
       "path": "lib"
     },
     "name": "rename",
-    "order": 5,
+    "order": 6,
     "params": [
       {
         "type": {
@@ -134,11 +200,11 @@
     "memberof": "module:@the-/refactor.TheRefactor",
     "meta": {
       "filename": "TheRefactor.js",
-      "lineno": 101,
+      "lineno": 144,
       "path": "lib"
     },
     "name": "renameDir",
-    "order": 6,
+    "order": 7,
     "params": [
       {
         "type": {
@@ -179,11 +245,11 @@
     "memberof": "module:@the-/refactor.TheRefactor",
     "meta": {
       "filename": "TheRefactor.js",
-      "lineno": 129,
+      "lineno": 172,
       "path": "lib"
     },
     "name": "rewrite",
-    "order": 7,
+    "order": 8,
     "params": [
       {
         "type": {
@@ -229,6 +295,7 @@
   },
   {
     "async": true,
+    "deprecated": true,
     "description": "Scatter a file to directories",
     "id": "module:@the-/refactor.TheRefactor#scatter",
     "kind": "function",
@@ -236,11 +303,11 @@
     "memberof": "module:@the-/refactor.TheRefactor",
     "meta": {
       "filename": "TheRefactor.js",
-      "lineno": 153,
+      "lineno": 197,
       "path": "lib"
     },
     "name": "scatter",
-    "order": 8,
+    "order": 9,
     "params": [
       {
         "type": {

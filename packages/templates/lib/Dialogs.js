@@ -18,7 +18,7 @@ function Dialogs(config) {
   const {
     dirname,
     from = '../stateful',
-    memberof = 'ui',
+    memberof = config.memberOf || 'ui',
     pattern = ['**/*Dialog.jsx'],
   } = config
 

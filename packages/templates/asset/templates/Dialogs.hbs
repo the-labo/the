@@ -2,7 +2,7 @@
 /**
  * Dialogs Component
  * @memberof {{memberof}}
- * @class Dialogs
+ * @function Dialogs
  */
 'use strict'
 
@@ -13,15 +13,13 @@ import {
 } from '{{{from}}}'
 
 /** @lends {{memberof}}.Dialogs */
-class Dialogs extends React.Component {
-  render() {
-    return (
-      <>
-{{#each components}}        <{{this}} />
+const Dialogs = React.memo(() =>
+  (
+    <React.Fragment>
+{{#each components}}      <{{this}} />
 {{/each}}
-      </>
-    )
-  }
-}
+    </React.Fragment>
+  )
+)
 
 export default Dialogs

@@ -1,26 +1,24 @@
 /**
  * {{pascalcase name}} component
  * @memberOf {{memberOf}}
- *
+ * @function {{pascalcase name}}
  */
 'use strict'
 
 import React from 'react'
 import { Stateless } from '{{contextPath}}'
 
-/** @lends {{memberOf}}.{{pascalcase name}} */
-class {{pascalcase name}} extends React.Component {
-  #stateless = Stateless()
+const stateless = Stateless()
 
-  render () {
-    return this.#stateless(
-      ({ l, }) => {
-        return (
-          <div></div>
-        )
-      }
-    )
-  }
+/** @lends {{memberOf}}.{{pascalcase name}} */
+const {{pascalcase name}} = React.memo(() => {
+  return stateless(
+    ({ l, }) => {
+      return (
+        <div></div>
+      )
+    }
+  )
 }
 
 

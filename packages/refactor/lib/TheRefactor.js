@@ -14,6 +14,7 @@ const {
 } = require('asfs')
 const filecopy = require('filecopy')
 const path = require('path')
+const stringcase = require('stringcase')
 
 const _relativePath = (pathname) => path.relative(process.cwd(), pathname)
 const _restoreRegExp = (v) =>
@@ -54,9 +55,51 @@ class TheRefactor {
     return this._each(
       pattern,
       ({ content, filename }) => ({
-        content: converter(content, { filename }),
+        content: converter(content, { filename }) || content,
       }),
       { cwd, ignore },
+    )
+  }
+
+  /**
+   * Process files to rename
+   * @param {string|string[]} pattern - Patterns to process
+   * @param {string} from - From text
+   * @param {string} to - TO text
+   * @param {Object} [options={}] - Optional settings
+   * @returns {Promise<undefined>}
+   */
+  async process(pattern, from, to, options = {}) {
+    const { cwd } = options
+    const rules = [
+      stringcase.camelcase,
+      stringcase.enumcase,
+      stringcase.pascalcase,
+      stringcase.capitalcase,
+      stringcase.spinalcase,
+      stringcase.snakecase,
+      stringcase.spinalcase,
+      stringcase.pathcase,
+      stringcase.uppercase,
+      stringcase.lowercase,
+      stringcase.dotcase,
+    ].reduce(
+      (rules, c) => ({
+        ...rules,
+        [c(from)]: c(to),
+      }),
+      { [from]: to },
+    )
+    const convert = (v) =>
+      Object.entries(rules).reduce((v, [from, to]) => v.replace(from, to), v)
+    await this.rewrite(pattern, rules, { cwd })
+    await this.rename(
+      pattern,
+      ({ basename, dirname }) => ({
+        basename: convert(basename),
+        dirname: convert(dirname),
+      }),
+      { cwd },
     )
   }
 
@@ -146,6 +189,7 @@ class TheRefactor {
 
   /**
    * Scatter a file to directories
+   * @deprecated
    * @param {string} src
    * @param {string[]} dirnames
    * @returns {Promise<undefined>}

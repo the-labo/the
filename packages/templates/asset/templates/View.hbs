@@ -1,8 +1,7 @@
 /**
  * {{pascalcase name}} component
  * @memberof {{memberOf}}
- * @class {{pascalcase name}}
- * @augments React.PureComponent
+ * @function {{pascalcase name}}
  */
 'use strict'
 
@@ -11,42 +10,40 @@ import { TheMeta, TheView, TheCycle } from '@the-/ui'
 import styles from './{{pascalcase name}}.pcss'
 import { Stateful } from '../../context'
 
-/** @lends class {{memberOf}}.{{pascalcase name}} */
-class {{pascalcase name}} extends React.PureComponent {
-  #stateful = Stateful(
-    (state) => ({
-    }),
-    ({}) => ({
-      onMount: () => {},
-      onUnmount: () => {},
-    })
-  )
+const stateful = useCallback(Stateful(
+  (state) => ({
+  }),
+  ({}) => ({
+    onMount: () => {},
+    onUnmount: () => {},
+  })
+)
 
-  render () {
-    return this.#stateful(
-      ({
-        l,
-        onMount,
-        onUnmount,
-      }) => {
-        const title = null
-        return (
-          <TheCycle {...{ onMount, onUnmount, }}>
-            <TheMeta title={title}>
-              <TheView className={styles.self}>
-                <TheView.Header icon={null}
-                                text={title}
-                />
-                <TheView.Body>
-                  This is {{pascalcase name}}!
-                </TheView.Body>
-              </TheView>
-            </TheMeta>
-          </TheCycle>
-        )
-      }
-    )
-  }
+/** @lends {{memberOf}}.{{pascalcase name}} */
+const {{pascalcase name}} = React.memo(() => {
+  return stateful(
+    ({
+      l,
+      onMount,
+      onUnmount,
+    }) => {
+      const title = null
+      return (
+        <TheCycle {...{ onMount, onUnmount, }}>
+          <TheMeta title={title}>
+            <TheView className={styles.self}>
+              <TheView.Header icon={null}
+                              text={title}
+              />
+              <TheView.Body>
+                This is {{pascalcase name}}!
+              </TheView.Body>
+            </TheView>
+          </TheMeta>
+        </TheCycle>
+      )
+    }
+  )
 }
 
 export default {{pascalcase name}}

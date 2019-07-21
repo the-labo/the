@@ -13,7 +13,7 @@
     "name": "@the-/facade-scope",
     "order": 36,
     "typicalname": "facadeScope",
-    "version": "16.1.15"
+    "version": "16.1.16"
   },
   {
     "description": "Operation handlers",
@@ -449,7 +449,7 @@
     "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
     "meta": {
       "filename": "entitiesAccessFor.js",
-      "lineno": 45,
+      "lineno": 47,
       "path": "lib"
     },
     "name": "addOne",
@@ -486,7 +486,7 @@
     "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
     "meta": {
       "filename": "entitiesAccessFor.js",
-      "lineno": 58,
+      "lineno": 60,
       "path": "lib"
     },
     "name": "receiveOne",
@@ -531,7 +531,7 @@
     "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
     "meta": {
       "filename": "entitiesAccessFor.js",
-      "lineno": 71,
+      "lineno": 73,
       "path": "lib"
     },
     "name": "removeOne",
@@ -557,7 +557,7 @@
     "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
     "meta": {
       "filename": "entitiesAccessFor.js",
-      "lineno": 82,
+      "lineno": 84,
       "path": "lib"
     },
     "name": "set",
@@ -583,7 +583,7 @@
     "memberof": "module:@the-/facade-scope.entitiesAccessFor~entitiesAccess",
     "meta": {
       "filename": "entitiesAccessFor.js",
-      "lineno": 89,
+      "lineno": 91,
       "path": "lib"
     },
     "name": "updateOne",
@@ -1687,7 +1687,7 @@
     "memberof": "module:@the-/facade-scope.entitiesAccessFor",
     "meta": {
       "filename": "entitiesAccessFor.js",
-      "lineno": 104,
+      "lineno": 106,
       "path": "lib"
     },
     "name": "Entity",

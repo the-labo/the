@@ -32,7 +32,9 @@ function entitiesAccessFor(scope) {
     add(entities, options = {}) {
       const { sorter = null, unique = true } = options
       const added = [].concat(entitiesAccess.state, entities)
-      const filtered = unique ? added.filter(uniqueFilter.by('id')) : [...added]
+      const filtered = unique
+        ? added.filter(uniqueFilter.by('id'))
+        : [...added].filter(Boolean)
       const sorted = sorter ? filtered.sort(sorter) : added
       entitiesAccess.set(sorted)
     },

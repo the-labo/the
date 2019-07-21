@@ -12,7 +12,7 @@ const _tmpl = require('./_tmpl')
 
 /** @lends module:@the-/templates.Stateful */
 function Stateful(config) {
-  const { memberOf = 'ui.stateful', name } = config
+  const { memberOf = config.memberof || 'ui.stateful', name } = config
   assert(name, 'name is required')
 
   const tmpl = _tmpl('Stateful.hbs')
