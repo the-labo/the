@@ -99,14 +99,17 @@ tryExample().catch((err) => console.error(err))
 
 
 - module:@the-/metrics.counters
+  - [.ClassMethodCallCounter](./doc/api/api.md#module_@the-/metrics.counters.ClassMethodCallCounter)
   - [.Counter](./doc/api/api.md#module_@the-/metrics.counters.Counter)
-  - [.MethodCallCounter](./doc/api/api.md#module_@the-/metrics.counters.MethodCallCounter)
+  - [.counters](./doc/api/api.md#module_@the-/metrics.counters.counters)
+  - [.ObjectMethodCallCounter](./doc/api/api.md#module_@the-/metrics.counters.ObjectMethodCallCounter)
 - module:@the-/metrics
   - [.create(args)](./doc/api/api.md#module_@the-/metrics.create)
   - [.default()](./doc/api/api.md#module_@the-/metrics.default)
   - [.TheMetrics](./doc/api/api.md#module_@the-/metrics.TheMetrics)
 - module:@the-/metrics.TheMetrics
-  - [#bindMethodCallCounter(name,config)](./doc/api/api.md#module_@the-/metrics.TheMetrics#bindMethodCallCounter)
+  - [#bindClassMethodCallCounter(name,config)](./doc/api/api.md#module_@the-/metrics.TheMetrics#bindClassMethodCallCounter)
+  - [#bindObjectMethodCallCounter(name,config)](./doc/api/api.md#module_@the-/metrics.TheMetrics#bindObjectMethodCallCounter)
   - [#flush()](./doc/api/api.md#module_@the-/metrics.TheMetrics#flush)
   - [#start()](./doc/api/api.md#module_@the-/metrics.TheMetrics#start)
 

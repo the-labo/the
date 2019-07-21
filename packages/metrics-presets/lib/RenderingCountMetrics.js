@@ -10,7 +10,7 @@ const { TheMetrics } = require('@the-/metrics')
 
 const hasSymbol = typeof Symbol === 'function' && !!Symbol.for
 const REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4
-const REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
+const REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3
 
 /** @lends module:@the-/metrics-presets.RenderingCountMetrics */
 async function RenderingCountMetrics(Components, options = {}) {
@@ -27,14 +27,14 @@ async function RenderingCountMetrics(Components, options = {}) {
       continue
     }
     const isMemo = Component.$$typeof === REACT_MEMO_TYPE
-    if(isMemo){
+    if (isMemo) {
       metrics.bindObjectMethodCallCounter(`${name}()`, {
-        object: Component,
         methodName: 'type',
+        object: Component,
       })
       continue
     }
-    metrics.bindMethodCallCounter(`${name}#render()`, {
+    metrics.bindClassMethodCallCounter(`${name}#render()`, {
       class: Component,
       methodName: 'render',
     })

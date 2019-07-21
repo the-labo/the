@@ -5,13 +5,14 @@
 ## @the-/metrics
 Performance measures for the-framework
 
-**Version**: 15.5.0  
+**Version**: 15.5.1  
 **License**: MIT  
 
 * [@the-/metrics](#module_@the-/metrics)
     * [.TheMetrics](#module_@the-/metrics.TheMetrics)
         * [new TheMetrics([options])](#new_module_@the-/metrics.TheMetrics_new)
         * [.bindClassMethodCallCounter(name, config)](#module_@the-/metrics.TheMetrics+bindClassMethodCallCounter)
+        * ~~[.bindMethodCallCounter()](#module_@the-/metrics.TheMetrics+bindMethodCallCounter)~~
         * [.bindObjectMethodCallCounter(name, config)](#module_@the-/metrics.TheMetrics+bindObjectMethodCallCounter)
         * [.flush()](#module_@the-/metrics.TheMetrics+flush)
         * [.start()](#module_@the-/metrics.TheMetrics+start)
@@ -26,6 +27,7 @@ Performance measures for the-framework
 * [.TheMetrics](#module_@the-/metrics.TheMetrics)
     * [new TheMetrics([options])](#new_module_@the-/metrics.TheMetrics_new)
     * [.bindClassMethodCallCounter(name, config)](#module_@the-/metrics.TheMetrics+bindClassMethodCallCounter)
+    * ~~[.bindMethodCallCounter()](#module_@the-/metrics.TheMetrics+bindMethodCallCounter)~~
     * [.bindObjectMethodCallCounter(name, config)](#module_@the-/metrics.TheMetrics+bindObjectMethodCallCounter)
     * [.flush()](#module_@the-/metrics.TheMetrics+flush)
     * [.start()](#module_@the-/metrics.TheMetrics+start)
@@ -50,6 +52,12 @@ Bind class method call counter
 | name | <code>string</code> | Name of counter |
 | config | <code>Object</code> |  |
 
+<a name="module_@the-/metrics.TheMetrics+bindMethodCallCounter"></a>
+
+#### ~~theMetrics.bindMethodCallCounter()~~
+***Deprecated***
+
+**Kind**: instance method of [<code>TheMetrics</code>](#module_@the-/metrics.TheMetrics)  
 <a name="module_@the-/metrics.TheMetrics+bindObjectMethodCallCounter"></a>
 
 #### theMetrics.bindObjectMethodCallCounter(name, config)

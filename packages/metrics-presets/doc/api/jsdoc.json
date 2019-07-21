@@ -13,13 +13,14 @@
     "name": "@the-/metrics-presets",
     "order": 0,
     "typicalname": "metricsPresets",
-    "version": "15.4.7"
+    "version": "15.5.0"
   },
   {
     "description": "Count metrics for component rendering",
-    "id": "RenderingCountMetrics",
+    "id": "module:@the-/metrics-presets.RenderingCountMetrics",
     "kind": "function",
-    "longname": "RenderingCountMetrics",
+    "longname": "module:@the-/metrics-presets.RenderingCountMetrics",
+    "memberof": "module:@the-/metrics-presets",
     "meta": {
       "filename": "RenderingCountMetrics.js",
       "lineno": 2,
@@ -49,6 +50,6 @@
         "name": "options"
       }
     ],
-    "scope": "global"
+    "scope": "static"
   }
 ]

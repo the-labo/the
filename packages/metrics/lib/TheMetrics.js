@@ -53,6 +53,10 @@ class TheMetrics {
     this.counters[name] = counter
   }
 
+  /** @deprecated */
+  bindMethodCallCounter(name, config) {
+    return this.bindClassMethodCallCounter(name, config)
+  }
   /**
    * Bind object method call counter
    * @param {string} name - Name of counter

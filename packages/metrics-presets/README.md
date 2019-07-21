@@ -91,8 +91,8 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 
-- global
-  - [RenderingCountMetrics(Components,options)](./doc/api/api.md#RenderingCountMetrics)
+- module:@the-/metrics-presets
+  - [.RenderingCountMetrics(Components,options)](./doc/api/api.md#module_@the-/metrics-presets.RenderingCountMetrics)
 
 See [API Guide](./doc/api/api.md) for more detail
 
