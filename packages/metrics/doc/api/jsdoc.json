@@ -13,7 +13,7 @@
     "name": "@the-/metrics",
     "order": 2,
     "typicalname": "metrics",
-    "version": "15.4.7"
+    "version": "15.5.0"
   },
   {
     "id": "module:@the-/metrics.TheMetrics()",
@@ -38,26 +38,69 @@
   },
   {
     "description": "Count react rendering counts",
-    "id": "module:@the-/metrics.counters.MethodCallCounter()",
+    "id": "module:@the-/metrics.counters.ClassMethodCallCounter()",
     "kind": "constructor",
-    "longname": "module:@the-/metrics.counters.MethodCallCounter",
-    "memberof": "module:@the-/metrics.counters.MethodCallCounter",
-    "name": "MethodCallCounter",
+    "longname": "module:@the-/metrics.counters.ClassMethodCallCounter",
+    "memberof": "module:@the-/metrics.counters.ClassMethodCallCounter",
+    "name": "ClassMethodCallCounter",
     "order": 10
   },
   {
-    "description": "Bind method call counter",
-    "id": "module:@the-/metrics.TheMetrics#bindMethodCallCounter",
+    "description": "Count react rendering counts",
+    "id": "module:@the-/metrics.counters.ObjectMethodCallCounter()",
+    "kind": "constructor",
+    "longname": "module:@the-/metrics.counters.ObjectMethodCallCounter",
+    "memberof": "module:@the-/metrics.counters.ObjectMethodCallCounter",
+    "name": "ObjectMethodCallCounter",
+    "order": 14
+  },
+  {
+    "description": "Bind class method call counter",
+    "id": "module:@the-/metrics.TheMetrics#bindClassMethodCallCounter",
     "kind": "function",
-    "longname": "module:@the-/metrics.TheMetrics#bindMethodCallCounter",
+    "longname": "module:@the-/metrics.TheMetrics#bindClassMethodCallCounter",
     "memberof": "module:@the-/metrics.TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 41,
+      "lineno": 37,
       "path": "lib"
     },
-    "name": "bindMethodCallCounter",
+    "name": "bindClassMethodCallCounter",
     "order": 5,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Name of counter",
+        "name": "name"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      }
+    ],
+    "scope": "instance"
+  },
+  {
+    "description": "Bind object method call counter",
+    "id": "module:@the-/metrics.TheMetrics#bindObjectMethodCallCounter",
+    "kind": "function",
+    "longname": "module:@the-/metrics.TheMetrics#bindObjectMethodCallCounter",
+    "memberof": "module:@the-/metrics.TheMetrics",
+    "meta": {
+      "filename": "TheMetrics.js",
+      "lineno": 61,
+      "path": "lib"
+    },
+    "name": "bindObjectMethodCallCounter",
+    "order": 6,
     "params": [
       {
         "type": {
@@ -87,11 +130,11 @@
     "memberof": "module:@the-/metrics.TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 56,
+      "lineno": 76,
       "path": "lib"
     },
     "name": "flush",
-    "order": 6,
+    "order": 7,
     "params": [],
     "scope": "instance"
   },
@@ -103,11 +146,11 @@
     "memberof": "module:@the-/metrics.TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 75,
+      "lineno": 95,
       "path": "lib"
     },
     "name": "start",
-    "order": 7,
+    "order": 8,
     "params": [],
     "scope": "instance"
   },
@@ -126,6 +169,23 @@
     "scope": "static"
   },
   {
+    "augments": [
+      "Counter"
+    ],
+    "id": "module:@the-/metrics.counters.ClassMethodCallCounter",
+    "kind": "class",
+    "longname": "module:@the-/metrics.counters.ClassMethodCallCounter",
+    "memberof": "module:@the-/metrics.counters",
+    "meta": {
+      "filename": "ClassMethodCallCounter.js",
+      "lineno": 2,
+      "path": "lib/counters"
+    },
+    "name": "ClassMethodCallCounter",
+    "order": 9,
+    "scope": "static"
+  },
+  {
     "id": "module:@the-/metrics.counters.Counter",
     "kind": "class",
     "longname": "module:@the-/metrics.counters.Counter",
@@ -136,7 +196,7 @@
       "path": "lib/counters"
     },
     "name": "Counter",
-    "order": 8,
+    "order": 11,
     "scope": "static",
     "virtual": true
   },
@@ -144,17 +204,32 @@
     "augments": [
       "Counter"
     ],
-    "id": "module:@the-/metrics.counters.MethodCallCounter",
+    "id": "module:@the-/metrics.counters.ObjectMethodCallCounter",
     "kind": "class",
-    "longname": "module:@the-/metrics.counters.MethodCallCounter",
+    "longname": "module:@the-/metrics.counters.ObjectMethodCallCounter",
     "memberof": "module:@the-/metrics.counters",
     "meta": {
-      "filename": "MethodCallCounter.js",
+      "filename": "ObjectMethodCallCounter.js",
       "lineno": 2,
       "path": "lib/counters"
     },
-    "name": "MethodCallCounter",
-    "order": 9,
+    "name": "ObjectMethodCallCounter",
+    "order": 13,
+    "scope": "static"
+  },
+  {
+    "description": "Count implementations",
+    "id": "module:@the-/metrics.counters.counters",
+    "kind": "namespace",
+    "longname": "module:@the-/metrics.counters.counters",
+    "memberof": "module:@the-/metrics.counters",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 2,
+      "path": "lib/counters"
+    },
+    "name": "counters",
+    "order": 12,
     "scope": "static"
   },
   {

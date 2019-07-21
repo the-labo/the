@@ -5,13 +5,14 @@
 ## @the-/metrics
 Performance measures for the-framework
 
-**Version**: 15.4.7  
+**Version**: 15.5.0  
 **License**: MIT  
 
 * [@the-/metrics](#module_@the-/metrics)
     * [.TheMetrics](#module_@the-/metrics.TheMetrics)
         * [new TheMetrics([options])](#new_module_@the-/metrics.TheMetrics_new)
-        * [.bindMethodCallCounter(name, config)](#module_@the-/metrics.TheMetrics+bindMethodCallCounter)
+        * [.bindClassMethodCallCounter(name, config)](#module_@the-/metrics.TheMetrics+bindClassMethodCallCounter)
+        * [.bindObjectMethodCallCounter(name, config)](#module_@the-/metrics.TheMetrics+bindObjectMethodCallCounter)
         * [.flush()](#module_@the-/metrics.TheMetrics+flush)
         * [.start()](#module_@the-/metrics.TheMetrics+start)
     * [.create(...args)](#module_@the-/metrics.create) ⇒ <code>TheMetrics</code>
@@ -24,7 +25,8 @@ Performance measures for the-framework
 
 * [.TheMetrics](#module_@the-/metrics.TheMetrics)
     * [new TheMetrics([options])](#new_module_@the-/metrics.TheMetrics_new)
-    * [.bindMethodCallCounter(name, config)](#module_@the-/metrics.TheMetrics+bindMethodCallCounter)
+    * [.bindClassMethodCallCounter(name, config)](#module_@the-/metrics.TheMetrics+bindClassMethodCallCounter)
+    * [.bindObjectMethodCallCounter(name, config)](#module_@the-/metrics.TheMetrics+bindObjectMethodCallCounter)
     * [.flush()](#module_@the-/metrics.TheMetrics+flush)
     * [.start()](#module_@the-/metrics.TheMetrics+start)
 
@@ -36,10 +38,22 @@ Performance measures for the-framework
 | --- | --- | --- | --- |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 
-<a name="module_@the-/metrics.TheMetrics+bindMethodCallCounter"></a>
+<a name="module_@the-/metrics.TheMetrics+bindClassMethodCallCounter"></a>
 
-#### theMetrics.bindMethodCallCounter(name, config)
-Bind method call counter
+#### theMetrics.bindClassMethodCallCounter(name, config)
+Bind class method call counter
+
+**Kind**: instance method of [<code>TheMetrics</code>](#module_@the-/metrics.TheMetrics)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| name | <code>string</code> | Name of counter |
+| config | <code>Object</code> |  |
+
+<a name="module_@the-/metrics.TheMetrics+bindObjectMethodCallCounter"></a>
+
+#### theMetrics.bindObjectMethodCallCounter(name, config)
+Bind object method call counter
 
 **Kind**: instance method of [<code>TheMetrics</code>](#module_@the-/metrics.TheMetrics)  
 

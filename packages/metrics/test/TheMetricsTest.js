@@ -33,15 +33,15 @@ describe('the-metrics', () => {
     }
 
     const theMetrics = new TheMetrics({})
-    theMetrics.bindMethodCallCounter('person.hi', {
+    theMetrics.bindClassMethodCallCounter('person.hi', {
       class: Person,
       methodName: 'hi',
     })
-    theMetrics.bindMethodCallCounter('person.foo', {
+    theMetrics.bindClassMethodCallCounter('person.foo', {
       class: Person,
       methodName: 'foo',
     })
-    theMetrics.bindMethodCallCounter('person.yo', {
+    theMetrics.bindClassMethodCallCounter('person.yo', {
       class: Person,
       methodName: 'yo',
     })
@@ -59,6 +59,26 @@ describe('the-metrics', () => {
     })
 
     theMetrics.flush()
+  })
+
+  it('Object method', () => {
+    const obj01 = {
+      bar() {},
+      foo() {},
+    }
+    const theMetrics = new TheMetrics({})
+    theMetrics.bindObjectMethodCallCounter('obj01.foo', {
+      methodName: 'foo',
+      object: obj01,
+    })
+    theMetrics.bindObjectMethodCallCounter('obj01.bar', {
+      methodName: 'bar',
+      object: obj01,
+    })
+    obj01.foo()
+    obj01.foo()
+    obj01.bar()
+    deepEqual(theMetrics.data, { 'obj01.bar': 1, 'obj01.foo': 2 })
   })
 })
 

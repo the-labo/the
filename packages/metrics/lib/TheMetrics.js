@@ -4,7 +4,10 @@
  * @class TheMetrics
  * @param {Object} [options={}] - Optional settings
  */
-const { MethodCallCounter } = require('./counters')
+const {
+  ClassMethodCallCounter,
+  ObjectMethodCallCounter,
+} = require('./counters')
 
 /** @lends module:@the-/metrics.TheMetrics */
 class TheMetrics {
@@ -26,6 +29,23 @@ class TheMetrics {
     return data
   }
 
+  /**
+   * Bind class method call counter
+   * @param {string} name - Name of counter
+   * @param {Object} config
+   */
+  bindClassMethodCallCounter(name, config = {}) {
+    const { class: class_, methodName } = config
+    this.bindCounter(
+      name,
+      new ClassMethodCallCounter({
+        class: class_,
+        methodName,
+        name,
+      }),
+    )
+  }
+
   bindCounter(name, counter) {
     if (this.counters[name]) {
       throw new Error(`[TheMetrics] "${name}" is already bound`)
@@ -34,18 +54,18 @@ class TheMetrics {
   }
 
   /**
-   * Bind method call counter
+   * Bind object method call counter
    * @param {string} name - Name of counter
    * @param {Object} config
    */
-  bindMethodCallCounter(name, config = {}) {
-    const { class: class_, methodName } = config
+  bindObjectMethodCallCounter(name, config = {}) {
+    const { methodName, object: object_ } = config
     this.bindCounter(
       name,
-      new MethodCallCounter({
-        class: class_,
+      new ObjectMethodCallCounter({
         methodName,
         name,
+        object: object_,
       }),
     )
   }
