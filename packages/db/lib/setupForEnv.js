@@ -27,7 +27,6 @@ async function setupForEnv(env) {
   ) {
     case 'mongo':
       return require('./setup/setupMongo')({})
-    case 'rdb/mysql':
     case 'sequelize/mysql':
     case 'mysql':
       return require('./setup/setupMysql')({
@@ -39,7 +38,6 @@ async function setupForEnv(env) {
         rootUsername,
         username,
       })
-    case 'rdb/sqlite':
     case 'sequelize/sqlite':
     case 'sqlite':
       return require('./setup/setupSqlite')({ storage })
