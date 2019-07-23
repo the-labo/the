@@ -109,6 +109,7 @@ tryExample().catch((err) => console.error(err))
   - [.TheMetrics](./doc/api/api.md#module_@the-/metrics.TheMetrics)
 - module:@the-/metrics.TheMetrics
   - [#bindClassMethodCallCounter(name,config)](./doc/api/api.md#module_@the-/metrics.TheMetrics#bindClassMethodCallCounter)
+  - [#bindMethodCallCounter()](./doc/api/api.md#module_@the-/metrics.TheMetrics#bindMethodCallCounter)
   - [#bindObjectMethodCallCounter(name,config)](./doc/api/api.md#module_@the-/metrics.TheMetrics#bindObjectMethodCallCounter)
   - [#flush()](./doc/api/api.md#module_@the-/metrics.TheMetrics#flush)
   - [#start()](./doc/api/api.md#module_@the-/metrics.TheMetrics#start)

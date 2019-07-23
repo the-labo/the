@@ -12,14 +12,14 @@
   },
   "dependencies": {
     "@the-/const-ui": "^15.4.5",
-    "@the-/ui-style": "^15.4.4",
+    "@the-/ui-style": "^15.4.8",
     "@the-/util-ui": "^15.4.8",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui-demo": "^15.2.4",
-    "@the-/ui-router": "^15.2.0",
+    "@the-/ui-demo": "^15.4.8",
+    "@the-/ui-router": "^15.4.8",
     "coz": "^7.0.19"
   },
   "engines": {

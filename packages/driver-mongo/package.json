@@ -12,21 +12,21 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.2",
+    "@the-/check": "^15.5.3",
     "asleep": "^1.0.3",
     "asobj": "^3.0.1",
     "clay-collection": "^3.1.5",
-    "clay-constants": "^3.4.4",
+    "clay-constants": "^3.5.1",
     "clay-driver-base": "^4.1.7",
-    "clay-entity": "^2.1.10",
+    "clay-entity": "^2.1.11",
     "clay-list-pager": "^3.0.1",
     "clay-resource-name": "^4.0.5",
-    "clay-resource-ref": "^2.0.8",
+    "clay-resource-ref": "^2.0.9",
     "clay-serial": "^2.1.4",
     "debug": "^4.1.1",
     "mongo-escape": "^2.0.6",
     "mongo-uri-builder": "^2.0.0",
-    "mongodb": "^3.2.6"
+    "mongodb": "^3.2.7"
   },
   "devDependencies": {
     "clay-driver-tests": "^3.0.1",

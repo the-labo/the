@@ -18,22 +18,22 @@
   "dependencies": {
     "@okunishinishi/leaflet-shim": "^1.0.2",
     "@the-/const-ui": "^15.4.5",
-    "@the-/ui-spin": "^15.4.8",
-    "@the-/ui-style": "^15.4.4",
+    "@the-/ui-spin": "^15.4.9",
+    "@the-/ui-style": "^15.4.8",
     "@the-/util-ui": "^15.4.8",
-    "@the-/window": "^15.2.0",
+    "@the-/window": "^15.5.2",
     "classnames": "^2.2.6",
     "formatcoords": "^1.1.3",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui-demo": "^15.4.0",
+    "@the-/ui-demo": "^15.4.8",
     "coz": "^7.0.19",
     "leaflet": "^1.5.1",
     "objnest": "^5.0.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0"
+    "react-router-dom": "^5.0.1"
   },
   "engines": {
     "node": ">=10",

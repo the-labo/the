@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "amocha": "^6.0.0",
-    "argx": "^4.0.0",
+    "argx": "^4.0.2",
     "commander": "^2.19.0"
   },
   "devDependencies": {

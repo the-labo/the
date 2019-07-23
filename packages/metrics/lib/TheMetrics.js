@@ -36,6 +36,10 @@ class TheMetrics {
    */
   bindClassMethodCallCounter(name, config = {}) {
     const { class: class_, methodName } = config
+    if (!class_) {
+      console.warn(`[TheMetrics][${name}] class is missing`)
+      return
+    }
     this.bindCounter(
       name,
       new ClassMethodCallCounter({
@@ -64,6 +68,10 @@ class TheMetrics {
    */
   bindObjectMethodCallCounter(name, config = {}) {
     const { methodName, object: object_ } = config
+    if (!object_) {
+      console.warn(`[TheMetrics][${name}] object is missing`)
+      return
+    }
     this.bindCounter(
       name,
       new ObjectMethodCallCounter({

@@ -12,16 +12,16 @@
   },
   "dependencies": {
     "@the-/const-ui": "^15.4.5",
-    "@the-/ui-icon": "^15.4.8",
-    "@the-/ui-style": "^15.4.4",
+    "@the-/ui-icon": "^15.4.9",
+    "@the-/ui-style": "^15.4.8",
     "@the-/util-ui": "^15.4.8",
     "asobj": "^3.0.1",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui-demo": "^15.2.4",
-    "@the-/ui-router": "^15.2.0",
+    "@the-/ui-demo": "^15.4.8",
+    "@the-/ui-router": "^15.4.8",
     "coz": "^7.0.19"
   },
   "engines": {

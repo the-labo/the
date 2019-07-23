@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.2",
+    "@the-/check": "^15.5.3",
     "@the-/error": "^15.4.0",
     "@the-/util-array": "^15.4.3",
     "asleep": "^1.0.3",

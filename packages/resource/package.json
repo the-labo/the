@@ -12,10 +12,10 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.2",
+    "@the-/check": "^15.5.3",
     "@the-/hash": "^15.4.3",
     "asleep": "^1.0.3",
-    "clay-constants": "^3.4.4",
+    "clay-constants": "^3.5.1",
     "clay-resource": "^5.6.3",
     "clay-resource-name": "^4.0.5"
   },

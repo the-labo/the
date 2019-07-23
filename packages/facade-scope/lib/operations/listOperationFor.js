@@ -81,6 +81,7 @@ function listOperationFor(scope) {
       )
     },
     async syncMore(handler) {
+      pageAccess.more({})
       return moreAccess.busyWhile(async () => {
         const result = await listOperation._fetch(handler)
         listOperation._save(result)

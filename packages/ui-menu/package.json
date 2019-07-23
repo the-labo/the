@@ -12,22 +12,22 @@
   },
   "dependencies": {
     "@the-/const-ui": "^15.4.5",
-    "@the-/ui-icon": "^15.4.8",
-    "@the-/ui-link": "^15.4.0",
-    "@the-/ui-style": "^15.4.4",
+    "@the-/ui-icon": "^15.4.9",
+    "@the-/ui-link": "^15.4.9",
+    "@the-/ui-style": "^15.4.8",
     "@the-/util-ui": "^15.4.8",
-    "@the-/window": "^15.2.0",
+    "@the-/window": "^15.5.2",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
     "react-click-outside": "github:tj/react-click-outside"
   },
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
-    "@the-/ui-router": "^15.4.0",
+    "@the-/ui-router": "^15.4.8",
     "coz": "^7.0.19",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0"
+    "react-router-dom": "^5.0.1"
   },
   "engines": {
     "node": ">=10",

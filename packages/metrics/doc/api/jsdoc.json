@@ -13,7 +13,7 @@
     "name": "@the-/metrics",
     "order": 2,
     "typicalname": "metrics",
-    "version": "15.5.1"
+    "version": "15.5.2"
   },
   {
     "id": "module:@the-/metrics.TheMetrics()",
@@ -96,7 +96,7 @@
     "memberof": "module:@the-/metrics.TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 57,
+      "lineno": 61,
       "path": "lib"
     },
     "name": "bindMethodCallCounter",
@@ -112,7 +112,7 @@
     "memberof": "module:@the-/metrics.TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 65,
+      "lineno": 69,
       "path": "lib"
     },
     "name": "bindObjectMethodCallCounter",
@@ -146,7 +146,7 @@
     "memberof": "module:@the-/metrics.TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 80,
+      "lineno": 88,
       "path": "lib"
     },
     "name": "flush",
@@ -162,7 +162,7 @@
     "memberof": "module:@the-/metrics.TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 99,
+      "lineno": 107,
       "path": "lib"
     },
     "name": "start",

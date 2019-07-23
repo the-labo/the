@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "abind": "^1.0.5",
-    "argx": "^4.0.0",
+    "argx": "^4.0.2",
     "evaljson": "^6.0.4",
     "faker": "^4.1.0"
   },

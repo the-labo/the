@@ -37,10 +37,10 @@ class TheQr extends React.PureComponent {
     this.drawAsQR(props.text)
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentDidUpdate(prevProps, prevState, snapshot) {
     const { props } = this
-    if (props.text !== nextProps.text) {
-      this.drawAsQR(nextProps.text)
+    if (props.text !== prevProps.text) {
+      this.drawAsQR(props.text)
     }
   }
 
@@ -123,10 +123,10 @@ TheQr.defaultProps = {
   alt: 'NO TEXT FOUND',
   asLink: false,
   displaySize: null,
-  onError: (err) => console.error(err),
-  onGenerate: () => {},
   size: 256,
   text: '',
+  onError: (err) => console.error(err),
+  onGenerate: () => {},
 }
 
 TheQr.displayName = 'TheQr'

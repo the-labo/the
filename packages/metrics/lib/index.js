@@ -4,7 +4,7 @@
  * @license MIT
  * @module @the-/metrics
  * @typicalname metrics
- * @version 15.5.1
+ * @version 15.5.2
  */
 'use strict'
 

@@ -49,7 +49,7 @@ function pageAccessFor(scope) {
     more(options = {}) {
       const { adding = 0, rate = 2 } = options
       const size = pageAccess.getSize()
-      pageAccess.setSize(size * rate + adding)
+      pageAccess.setSize(Math.floor(size * rate) + adding)
     },
     /**
      * Increment page number

@@ -38,6 +38,7 @@ describe('list-operation-for', () => {
     x.load(ValueScope, 'filter')
     x.load(ValueScope, 'counts')
     x.load(BooleanScope, 'hasMore')
+    x.load(BooleanScope, 'moreBusy')
 
     const listOperation = listOperationFor(x)
     ok(listOperation)
@@ -47,12 +48,16 @@ describe('list-operation-for', () => {
       page: { number: 2, size: 20 },
       sort: '-createdAt',
     })
-    await listOperation.sync(async (condition) => {
+    const _sync = async (condition) => {
       fetched = { condition, entities: [], meta: {} }
       return fetched
-    })
+    }
+    await listOperation.sync(_sync)
     equal(fetched.condition.page.number, 2)
     equal(fetched.condition.page.size, 20)
+
+    await listOperation.syncMore(_sync)
+    ok(x.get('pageSize') > 20)
   })
 })
 

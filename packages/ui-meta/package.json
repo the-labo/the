@@ -11,15 +11,15 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/ui-style": "^15.4.4",
+    "@the-/ui-style": "^15.4.8",
     "@the-/util-ui": "^15.4.8",
-    "@the-/window": "^15.2.0",
+    "@the-/window": "^15.5.2",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
-    "@the-/ui-router": "^15.2.0",
+    "@the-/ui-router": "^15.4.8",
     "coz": "^7.0.19",
     "objnest": "^5.0.6"
   },

@@ -13,10 +13,10 @@
   },
   "dependencies": {
     "@sendgrid/mail": "^6.4.0",
-    "@the-/check": "^15.5.2",
+    "@the-/check": "^15.5.3",
     "asobj": "^3.0.1",
     "handlebars": "^4.1.2",
-    "nodemailer": "^6.2.1",
+    "nodemailer": "^6.3.0",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
