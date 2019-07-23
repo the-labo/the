@@ -3,7 +3,8 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import SignaturePad from 'signature_pad'
+// See https://github.com/szimek/signature_pad/issues/405#issuecomment-448974643
+import * as SignaturePad from 'signature_pad/dist/signature_pad'
 import {
   changedProps,
   eventHandlersFor,
@@ -160,10 +161,10 @@ TheSignature.propTypes = {
 TheSignature.defaultProps = {
   color: '#555',
   height: '150px',
+  width: '100%',
   onBegin: () => null,
   onEnd: () => null,
   onPad: () => null,
-  width: '100%',
 }
 
 TheSignature.displayName = 'TheSignature'
