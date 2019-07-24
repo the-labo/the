@@ -28,7 +28,6 @@ function processJSXExpression(content, options = {}) {
         case NodeTypes.StringLiteral:
           return replace(range, expression.value)
         default:
-          return
       }
     }
     const convertElement = (Elm) => {

@@ -8,7 +8,7 @@
 'use strict'
 
 /** @lends module:@the-/facade-context.storeLoaderFor */
-function storeLoaderFor (context) {
+function storeLoaderFor(context) {
   /**
    * @memberof module:@the-/facade-context.storeLoaderFor
    * @inner
@@ -20,11 +20,11 @@ function storeLoaderFor (context) {
      * @param {Object} store - Store object
      * @returns {Object} Loaded store
      */
-    load (store) {
+    load(store) {
       store.subscribe(() => context.set({ state: store.state }))
       context.set({ state: store.state })
       return store
-    }
+    },
   }
 
   Object.freeze(storeLoader)

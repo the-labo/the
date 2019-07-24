@@ -1,6 +1,6 @@
 {
-  "name": "@the-/eslint-config-standard-jsx",
-  "version": "15.4.8",
+  "name": "@the-/eslint-config-react",
+  "version": "15.4.9",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -9,24 +9,24 @@
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
-  "dependencies": {
-    "eslint-config-standard-jsx": "^6.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-eslint": "^10.0.2",
-    "eslint-plugin-react": "^7.14.3"
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.6.1"
   },
   "engines": {
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/eslint-config-standard-jsx#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/eslint-config-react#readme",
   "keywords": [],
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
     "babel-eslint": ">=10",
-    "eslint-plugin-react": ">=7"
+    "eslint-plugin-react": ">=7",
+    "eslint-plugin-react-hooks": ">=1.6"
   },
   "publishConfig": {
     "access": "public"

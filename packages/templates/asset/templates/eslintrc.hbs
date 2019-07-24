@@ -3,6 +3,13 @@
 # RC file for ESLint (See https://eslint.org/docs/user-guide/configuring )
 {{#if extends}}# `npm install -D{{#each extends}} {{{this}}}{{/each}}`{{/if}}
 
+{{#if plugins}}
+plugins:
+{{#each plugins}}
+- "{{{this}}}"
+{{/each}}
+{{/if}}
+
 extends:
 {{#each extends}}
 - "{{{this}}}"

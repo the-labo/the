@@ -12,7 +12,7 @@
     "name": "@the-/ui-signature",
     "order": 0,
     "typicalname": "uiSignature",
-    "version": "15.4.8"
+    "version": "15.4.9"
   },
   {
     "description": "Signature pad of the-components",
@@ -21,7 +21,7 @@
     "longname": "TheSignature",
     "meta": {
       "filename": "TheSignature.jsx",
-      "lineno": 18,
+      "lineno": 19,
       "path": "lib"
     },
     "name": "TheSignature",

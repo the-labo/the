@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-signature",
   "description": "Signature pad of the-components",
-  "version": "15.4.8",
+  "version": "15.4.9",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -20,8 +20,12 @@
   },
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
+    "@the-/ui-router": "^15.4.8",
     "coz": "^7.0.19",
-    "objnest": "^5.0.6"
+    "objnest": "^5.0.6",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1"
   },
   "engines": {
     "node": ">=10",
