@@ -21,13 +21,17 @@ module.exports = {
     'react/jsx-equals-spacing': ['error', 'never'],
     'react/jsx-indent': ['error', 2],
     'react/jsx-indent-props': ['error', 2],
-    'react/jsx-key': 'warn',
-    'react/jsx-no-bind': 'warn',
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-undef': 'error',
     'react/jsx-tag-spacing': ['error', { beforeSelfClosing: 'always' }],
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/self-closing-comp': 'error',
+  },
+  settings: {
+    react: {
+      pragma: 'React', // Pragma to use, default to "React"
+      version: 'detect', // React version. "detect" automatically picks the version you have installed.
+    },
   },
 }
