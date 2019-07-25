@@ -21,6 +21,8 @@ module.exports = {
     'react/jsx-equals-spacing': ['error', 'never'],
     'react/jsx-indent': ['error', 2],
     'react/jsx-indent-props': ['error', 2],
+    'react/jsx-key': 'warn',
+    'react/jsx-no-bind': 'warn',
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-undef': 'error',
     'react/jsx-tag-spacing': ['error', { beforeSelfClosing: 'always' }],
