@@ -5,8 +5,11 @@
  * @class ContextEntry
  */
 const { shallowEqual } = require('asobj')
+const memoizeOne = require('memoize-one')
 const PropTypes = require('prop-types')
 const React = require('react')
+
+const ComponentWithRenderer = memoizeOne((renderer) => React.memo(renderer))
 
 /** @lends module:@the-/context.helpers.contextEntryFor */
 function contextEntryFor(context, { store }) {
@@ -14,26 +17,9 @@ function contextEntryFor(context, { store }) {
     constructor(props) {
       super(props)
       this.unsubscribeStore = null
-      this.pipeProxy = new Proxy(
-        {},
-        {
-          get: (target, name) => {
-            const {
-              state: { piped },
-            } = this
-            if (!piped) {
-              return null
-            }
-            return piped[name]
-          },
-          set: () => {
-            throw new Error('[TheContext] Cannot set value on pipeProxy')
-          },
-        },
-      )
       const { init } = props
       {
-        const initialized = init(store.state, this.pipeProxy)
+        const initialized = init(store.state)
         const piped = this.getPiped()
         this.state = { initialized, piped }
       }
@@ -43,7 +29,10 @@ function contextEntryFor(context, { store }) {
       const {
         props: { children: renderer },
       } = this
-      return renderer(renderable)
+      const Component = ComponentWithRenderer(renderer)
+      return React.createElement(Component, {
+        ...renderable,
+      })
     }
 
     componentDidMount() {
