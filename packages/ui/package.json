@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui",
   "description": "React components of THE framework",
-  "version": "15.4.17",
+  "version": "15.4.18",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -35,7 +35,7 @@
     "@the-/ui-link": "^15.4.9",
     "@the-/ui-list": "^15.4.8",
     "@the-/ui-main": "^15.4.8",
-    "@the-/ui-menu": "^15.4.9",
+    "@the-/ui-menu": "^15.4.12",
     "@the-/ui-meta": "^15.4.8",
     "@the-/ui-pager": "^15.4.8",
     "@the-/ui-repeatable": "^15.4.8",
