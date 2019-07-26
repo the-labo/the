@@ -145,6 +145,10 @@ class TheDropDownMenu extends React.Component {
     if (arguments.length === 0) {
       open = !this.state.open
     }
+    const skip = this.state.open === open
+    if (skip) {
+      return
+    }
     this.setState({ open })
   }
 }
@@ -170,9 +174,5 @@ TheDropDownMenu.defaultProps = {
 }
 
 TheDropDownMenu.displayName = 'TheDropDownMenu'
-
-TheDropDownMenu.contextTypes = {
-  history: PropTypes.object,
-}
 
 export default TheDropDownMenu
