@@ -28,28 +28,11 @@
     "no-use-before-define": "error",
     "no-useless-catch": "error",
     "no-var": "error",
-    "prefer-const": "error",
-    "prefer-destructuring": [
-      "error",
-      {
-        "VariableDeclarator": {
-          "array": true,
-          "object": true
-        },
-        "AssignmentExpression": {
-          "array": false,
-          "object": false
-        }
-      },
-      {
-        "enforceForRenamedProperties": false
-      }
-    ],
     "padding-line-between-statements": [
       "error",
       {
         "blankLine": "always",
-        "prev":[
+        "prev": [
           "class",
           "function",
           "cjs-export",
@@ -81,6 +64,23 @@
           "cjs-import",
           "import"
         ]
+      }
+    ],
+    "prefer-const": "error",
+    "prefer-destructuring": [
+      "error",
+      {
+        "VariableDeclarator": {
+          "array": true,
+          "object": true
+        },
+        "AssignmentExpression": {
+          "array": false,
+          "object": false
+        }
+      },
+      {
+        "enforceForRenamedProperties": false
       }
     ],
     "use-isnan": "error"
