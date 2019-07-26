@@ -99,7 +99,6 @@ class TheServer extends TheServerBase {
       this.instantiateController(controllerName, cid)
     const ControllerModuleBinds = toControllerModuleBind.all({
       controllerClasses,
-      instantiateController,
       sessionCache,
       sessionStore,
     })

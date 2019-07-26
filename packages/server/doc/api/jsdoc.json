@@ -13,7 +13,7 @@
     "name": "@the-/server",
     "order": 4,
     "typicalname": "server",
-    "version": "15.4.11"
+    "version": "16.0.0"
   },
   {
     "description": "HTTP server for the-framework",
@@ -125,7 +125,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 206,
+      "lineno": 205,
       "path": "lib"
     },
     "name": "close",
@@ -162,7 +162,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 230,
+      "lineno": 229,
       "path": "lib"
     },
     "name": "destroyAllSessions",
@@ -188,7 +188,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 242,
+      "lineno": 241,
       "path": "lib"
     },
     "name": "handleIOClientCame",
@@ -205,7 +205,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 254,
+      "lineno": 253,
       "path": "lib"
     },
     "name": "handleIOClientGone",
@@ -222,7 +222,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 279,
+      "lineno": 278,
       "path": "lib"
     },
     "name": "handleIORPCAbort",
@@ -239,7 +239,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 284,
+      "lineno": 283,
       "path": "lib"
     },
     "name": "handleIORPCCall",
@@ -256,7 +256,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 319,
+      "lineno": 318,
       "path": "lib"
     },
     "name": "handleIOStreamChunk",
@@ -273,7 +273,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 326,
+      "lineno": 325,
       "path": "lib"
     },
     "name": "handleIOStreamClose",
@@ -290,7 +290,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 335,
+      "lineno": 334,
       "path": "lib"
     },
     "name": "handleIOStreamFin",
@@ -307,7 +307,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 347,
+      "lineno": 346,
       "path": "lib"
     },
     "name": "handleIOStreamOpen",
@@ -325,7 +325,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 438,
+      "lineno": 437,
       "path": "lib"
     },
     "name": "listen",
@@ -361,7 +361,7 @@
     "memberof": "ControllerModuleBind",
     "meta": {
       "filename": "toControllerModuleBind.js",
-      "lineno": 47,
+      "lineno": 42,
       "path": "lib/helpers"
     },
     "name": "reloadSession",
@@ -399,7 +399,7 @@
     "memberof": "ControllerModuleBind",
     "meta": {
       "filename": "toControllerModuleBind.js",
-      "lineno": 78,
+      "lineno": 73,
       "path": "lib/helpers"
     },
     "name": "saveSession",

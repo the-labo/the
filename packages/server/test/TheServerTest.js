@@ -117,13 +117,6 @@ describe('the-server', function() {
         // console.log('this.hoge', this.hoge())
         return { amount, name, total: session.total }
       }
-
-      async callSayHi() {
-        const say = await this.useController('say')
-        const hi = await say.sayHi()
-        await asleep(300)
-        return hi
-      }
     }
 
     const server = new TheServer({
@@ -173,8 +166,6 @@ describe('the-server', function() {
         ok(caught)
       }
 
-      equal(await fruitShop01.callSayHi(), 'hi')
-
       await client01.close()
 
       {
@@ -202,7 +193,6 @@ describe('the-server', function() {
         {
           methods: {
             buy: { desc: 'buy' },
-            callSayHi: { desc: 'callSayHi' },
             clear: { desc: 'clear' },
             getTotal: { desc: 'getTotal' },
             hoge: { desc: 'hoge' },

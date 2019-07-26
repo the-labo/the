@@ -19,12 +19,7 @@ function toControllerModuleBind(Class, options = {}) {
       )
     }
   })
-  const {
-    controllerClasses,
-    instantiateController,
-    sessionCache,
-    sessionStore,
-  } = options
+  const { sessionCache, sessionStore } = options
 
   class ControllerModuleBind extends Class {
     static describe(config) {
@@ -91,12 +86,7 @@ function toControllerModuleBind(Class, options = {}) {
     }
 
     async useController(name) {
-      const Class = controllerClasses[name]
-      if (!Class) {
-        throw new Error(`[TheServer] Unknown controller name: ${name}`)
-      }
-      const { client } = this
-      return instantiateController(name, client.cid)
+      throw new Error('[@the-/server] useController is no longer available')
     }
   }
 
@@ -108,7 +98,6 @@ toControllerModuleBind.all = ({ controllerClasses, ...options }) =>
     {},
     ...Object.entries(controllerClasses).map(([name, Class]) => ({
       [name]: toControllerModuleBind(Class, {
-        controllerClasses,
         controllerName: name,
         ...options,
       }),
