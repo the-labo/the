@@ -8,21 +8,18 @@
 
 const clientMix_ = require('./clientMix')
 const infoMix_ = require('./infoMix')
-const ioMix_ = require('./ioMix')
 const keepMix_ = require('./keepMix')
 const metricsMix_ = require('./metricsMix')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
 exports.clientMix = clientMix_
 exports.infoMix = infoMix_
-exports.ioMix = ioMix_
 exports.keepMix = keepMix_
 exports.metricsMix = metricsMix_
 
 module.exports = {
   clientMix: clientMix_,
   infoMix: infoMix_,
-  ioMix: ioMix_,
   keepMix: keepMix_,
   metricsMix: metricsMix_,
 }

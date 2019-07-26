@@ -20,7 +20,10 @@ function keepMix(Class) {
     }
 
     handleKeepTick(cid, iid, { controllerName, keepDuration } = {}) {
-      void this.sendIORPCKeep(cid, iid, keepDuration)
+      const { ioConnector } = this
+      if (ioConnector) {
+        void ioConnector.sendRPCKeep(cid, iid, keepDuration)
+      }
       this.addInvocationKeepCountMetrics(controllerName, 1)
     }
 

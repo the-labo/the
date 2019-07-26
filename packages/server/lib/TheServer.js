@@ -3,7 +3,6 @@
  * HTTP server for the-framework
  * @memberof module:@the-/server
  * @class TheServer
- * @augments IOMixed
  * @param {Object} config
  * @param {string[]} langs - Supported langs
  * @param {string} logFile - Log file
@@ -22,6 +21,7 @@ const theTmp = require('@the-/tmp')
 const { redisAdapter } = require('./adapters')
 const asControllerModule = require('./asControllerModule')
 const buildInEndpoints = require('./buildInEndpoints')
+const { IOConnector } = require('./connectors')
 const DefaultValues = require('./constants/DefaultValues')
 const IOEvents = require('./constants/IOEvents')
 const {
@@ -33,11 +33,12 @@ const {
   streamPool,
   toControllerModuleBind,
 } = require('./helpers')
-const { clientMix, infoMix, ioMix, keepMix, metricsMix } = require('./mixins')
+const { clientMix, infoMix, keepMix, metricsMix } = require('./mixins')
 const { ConnectionStore, SessionStore } = require('./stores')
+
 const debug = require('debug')('the:server')
 
-const TheServerBase = [ioMix, infoMix, metricsMix, keepMix, clientMix].reduce(
+const TheServerBase = [infoMix, metricsMix, keepMix, clientMix].reduce(
   (C, mix) => mix(C),
   RFunc,
 )
@@ -102,12 +103,6 @@ class TheServer extends TheServerBase {
       sessionCache,
       sessionStore,
     })
-    const controllerInstances = Object.assign(
-      {},
-      ...Object.entries(controllerClasses).map(([name]) => ({
-        [name]: {},
-      })),
-    )
     const controllerModules = Object.assign(
       {},
       ...Object.entries(controllerClasses).map(([name, Class]) => ({
@@ -157,7 +152,7 @@ class TheServer extends TheServerBase {
     this.sessionStore = sessionStore
     this.sessionCache = sessionCache
     this.connectionStore = connectionStore
-    this.controllerInstances = controllerInstances
+    this.controllerInstances = {}
     this.controllerModules = controllerModules
     this.controllerSpecs = controllerSpecsFor(controllerModules)
     this.langs = langs
@@ -186,7 +181,7 @@ class TheServer extends TheServerBase {
       controllerName,
       handlerName,
     ].join('/')
-    void this.sendToIOClient(cid, event, values, { pack: true })
+    void this.ioConnector.sendToIOClient(cid, event, values, { pack: true })
   }
 
   async cleanupController(cid, controllerName) {
@@ -194,7 +189,9 @@ class TheServer extends TheServerBase {
     await instance.reloadSession()
     await instance.controllerWillDetach()
     await instance.saveSession()
-    delete this.controllerInstances[controllerName][cid]
+    if (this.controllerInstances[controllerName]) {
+      delete this.controllerInstances[controllerName][cid]
+    }
   }
 
   /**
@@ -213,7 +210,7 @@ class TheServer extends TheServerBase {
     const closed = await super.close(...args)
     this.connectionStore.closed = true
     await asleep(100) // Wait to flush
-    this.io.close()
+    this.ioConnector.close()
     if (this.closeRedisAdapter) {
       await this.closeRedisAdapter()
     }
@@ -237,165 +234,6 @@ class TheServer extends TheServerBase {
     return cached || (await sessionStore.get(cid)) || {}
   }
 
-  /** @override */
-  async handleIOClientCame(cid, socketId, client) {
-    await this.saveClientSocket(cid, socketId, client)
-    for (const { name: controllerName } of this.controllerSpecs) {
-      const instance = await this.instantiateController(controllerName, cid)
-      await instance.reloadSession()
-      await instance.controllerDidAttach()
-      this.addControllerAttachCountMetrics(controllerName, 1)
-      await instance.saveSession()
-    }
-  }
-
-  /** @override */
-  async handleIOClientGone(cid, socketId, reason) {
-    const { sessionCache } = this
-    const hasConnection = await this.hasClientConnection(cid)
-    if (!hasConnection) {
-      console.warn('[TheServer] Connection already gone for cid:', cid)
-    }
-    sessionCache.del(cid)
-    for (const { name: controllerName } of this.controllerSpecs) {
-      try {
-        await this.cleanupController(cid, controllerName)
-        this.addControllerDetachCountMetrics(controllerName, 1)
-      } catch (e) {
-        console.warn(
-          `[TheServer] Failed to cleanup controller ${controllerName}`,
-          e,
-        )
-      }
-    }
-    this.streamPool.cleanup(cid)
-    this.stopKeepTimersFor(cid)
-
-    await this.removeClientSocket(cid, socketId, reason)
-  }
-
-  /** @override */
-  async handleIORPCAbort() {
-    // TODO Support aborting RPC Call
-  }
-
-  /** @override */
-  async handleIORPCCall(cid, socketId, config) {
-    const { iid, methodName, moduleName, params } = config
-    const controller = this.controllerModules[moduleName]
-    const controllerName =
-      controller.controllerName || controller.name || moduleName
-    this.startKeepTimer(cid, iid, { controllerName })
-    await asleep(10 * Math.random())
-    let data
-    let errors
-    this.rpcInvocations[cid] = this.rpcInvocations[cid] || {}
-    this.rpcInvocations[cid][iid] = { iid, methodName, moduleName, socketId }
-    try {
-      data = await controller[methodName](...params)
-    } catch (e) {
-      const error = { ...e }
-      delete error.stack
-      unlessProduction(() => {
-        error.stack = e.stack
-      })
-      errors = [error]
-    } finally {
-      this.stopKeepTimerIfNeeded(cid, iid)
-      delete this.rpcInvocations[cid][iid]
-    }
-    if (this.closed) {
-      return
-    }
-    if (errors) {
-      await this.sendIORPCError(cid, iid, errors)
-    } else {
-      await this.sendIORPCSuccess(cid, iid, data)
-    }
-  }
-
-  /** @override */
-  async handleIOStreamChunk(cid, socketId, config) {
-    const { chunk, sid } = config
-    const stream = this.streamPool.getInstance(cid, sid)
-    await stream.push(chunk)
-  }
-
-  /** @override */
-  async handleIOStreamClose(cid, socketId, config) {
-    await asleep(10)
-    const { sid } = config
-    const stream = this.streamPool.getInstance(cid, sid)
-    this.streamPool.delInstance(cid, sid)
-    await stream.close()
-  }
-
-  /** @override */
-  async handleIOStreamFin(cid, socketId, config) {
-    const { sid } = config
-    const exists = this.streamPool.hasInstance(cid, sid)
-    if (!exists) {
-      // DO nothing if already gone
-      return
-    }
-    const stream = this.streamPool.getInstance(cid, sid)
-    await stream.pushEnd()
-  }
-
-  /** @override */
-  async handleIOStreamOpen(cid, socketId, config) {
-    const { params, sid, streamName } = config
-    const Class = this.streamClasses[streamName]
-    if (!Class) {
-      throw new Error(`[TheServer] Unknown stream: ${streamName}`)
-    }
-
-    const server = this
-
-    class Stream extends Class {
-      async streamDidCatch(error) {
-        const result = await super.streamDidCatch(error)
-        void server.sendIOStreamError(cid, sid, error)
-        return result
-      }
-
-      async streamDidOpen() {
-        const result = await super.streamDidOpen()
-        await server.sendIOStreamDidOpen(cid, sid)
-        for await (const chunk of this.provider.toGenerator()) {
-          await server.sendIOStreamChunk(cid, sid, chunk)
-        }
-        await asleep(10)
-        await server.sendIOStreamFin(cid, sid)
-        return result
-      }
-
-      async streamWillClose() {
-        const result = await super.streamWillClose()
-        await server.sendIOStreamDidClose(cid, sid)
-        return result
-      }
-    }
-
-    const { appScope } = this
-    const stream = new Stream({
-      app: appScope,
-      client: { cid },
-      params,
-    })
-    stream.streamName = streamName
-    stream.sid = sid
-    const session = await this.getSessionFor(cid)
-    stream.session = new Proxy(session, {
-      get: (target, k) => target[k],
-      set: () => {
-        throw new Error('[TheServer] Cannot update session from stream')
-      },
-    })
-    this.streamPool.setInstance(cid, sid, stream)
-    await stream.open()
-  }
-
   async instantiateController(controllerName, cid) {
     const ControllerModuleBind = this.ControllerModuleBinds[controllerName]
     if (!ControllerModuleBind) {
@@ -403,6 +241,9 @@ class TheServer extends TheServerBase {
     }
     if (!cid) {
       throw new Error('[TheServer] cid is required')
+    }
+    if (!this.controllerInstances[controllerName]) {
+      this.controllerInstances[controllerName] = {}
     }
     const known = this.controllerInstances[controllerName][cid]
     if (known) {
@@ -445,7 +286,169 @@ class TheServer extends TheServerBase {
     const io = socketIO(server)
     void this.startInfoFlush(this.infoFile)
     this.closeRedisAdapter = redisAdapter(io, this.redisConfig)
-    this.registerIO(io)
+    this.ioConnector = IOConnector(io, {
+      connectionStore: this.connectionStore,
+      onIOClientCame: async (cid, socketId, client) => {
+        await this.saveClientSocket(cid, socketId, client)
+        for (const { name: controllerName } of this.controllerSpecs) {
+          const instance = await this.instantiateController(controllerName, cid)
+          await instance.reloadSession()
+          await instance.controllerDidAttach()
+          this.addControllerAttachCountMetrics(controllerName, 1)
+          await instance.saveSession()
+        }
+      },
+
+      onIOClientGone: async (cid, socketId, reason) => {
+        const { sessionCache } = this
+        const hasConnection = await this.hasClientConnection(cid)
+        if (!hasConnection) {
+          console.warn('[TheServer] Connection already gone for cid:', cid)
+        }
+        sessionCache.del(cid)
+        for (const { name: controllerName } of this.controllerSpecs) {
+          try {
+            await this.cleanupController(cid, controllerName)
+            this.addControllerDetachCountMetrics(controllerName, 1)
+          } catch (e) {
+            console.warn(
+              `[TheServer] Failed to cleanup controller ${controllerName}`,
+              e,
+            )
+          }
+        }
+        this.streamPool.cleanup(cid)
+        this.stopKeepTimersFor(cid)
+
+        await this.removeClientSocket(cid, socketId, reason)
+      },
+
+      onIORPCAbort: async () => {
+        // TODO Support aborting RPC Call
+      },
+
+      onIORPCCall: async (cid, socketId, config) => {
+        const { iid, methodName, moduleName, params } = config
+        const controller = this.controllerModules[moduleName]
+        const controllerName =
+          controller.controllerName || controller.name || moduleName
+        this.startKeepTimer(cid, iid, { controllerName })
+        await asleep(10 * Math.random())
+        let data
+        let errors
+        this.rpcInvocations[cid] = this.rpcInvocations[cid] || {}
+        this.rpcInvocations[cid][iid] = {
+          iid,
+          methodName,
+          moduleName,
+          socketId,
+        }
+        try {
+          data = await controller[methodName](...params)
+        } catch (e) {
+          const error = { ...e }
+          delete error.stack
+          unlessProduction(() => {
+            error.stack = e.stack
+          })
+          errors = [error]
+        } finally {
+          this.stopKeepTimerIfNeeded(cid, iid)
+          delete this.rpcInvocations[cid][iid]
+        }
+        if (this.closed) {
+          return
+        }
+        if (errors) {
+          await this.ioConnector.sendRPCError(cid, iid, errors)
+        } else {
+          await this.ioConnector.sendRPCSuccess(cid, iid, data)
+        }
+      },
+
+      onIOStreamChunk: async (cid, socketId, config) => {
+        const { chunk, sid } = config
+        const stream = this.streamPool.getInstance(cid, sid)
+        await stream.push(chunk)
+      },
+
+      onIOStreamClose: async (cid, socketId, config) => {
+        await asleep(10)
+        const { sid } = config
+        const stream = this.streamPool.getInstance(cid, sid)
+        this.streamPool.delInstance(cid, sid)
+        await stream.close()
+      },
+
+      onIOStreamError: async (e) => {
+        // TODO
+        console.error('[TheServer] Stream error:', e)
+      },
+
+      onIOStreamFin: async (cid, socketId, config) => {
+        const { sid } = config
+        const exists = this.streamPool.hasInstance(cid, sid)
+        if (!exists) {
+          // DO nothing if already gone
+          return
+        }
+        const stream = this.streamPool.getInstance(cid, sid)
+        await stream.pushEnd()
+      },
+
+      onIOStreamOpen: async (cid, socketId, config) => {
+        const { params, sid, streamName } = config
+        const Class = this.streamClasses[streamName]
+        if (!Class) {
+          throw new Error(`[TheServer] Unknown stream: ${streamName}`)
+        }
+
+        const { ioConnector } = this
+
+        class Stream extends Class {
+          async streamDidCatch(error) {
+            const result = await super.streamDidCatch(error)
+            void ioConnector.sendStreamError(cid, sid, error)
+            return result
+          }
+
+          async streamDidOpen() {
+            const result = await super.streamDidOpen()
+            await ioConnector.sendStreamDidOpen(cid, sid)
+            for await (const chunk of this.provider.toGenerator()) {
+              await ioConnector.sendStreamChunk(cid, sid, chunk)
+            }
+            await asleep(10)
+            await ioConnector.sendStreamFin(cid, sid)
+            return result
+          }
+
+          async streamWillClose() {
+            const result = await super.streamWillClose()
+            await ioConnector.sendStreamDidClose(cid, sid)
+            return result
+          }
+        }
+
+        const { appScope } = this
+        const stream = new Stream({
+          app: appScope,
+          client: { cid },
+          params,
+        })
+        stream.streamName = streamName
+        stream.sid = sid
+        const session = await this.getSessionFor(cid)
+        stream.session = new Proxy(session, {
+          get: (target, k) => target[k],
+          set: () => {
+            throw new Error('[TheServer] Cannot update session from stream')
+          },
+        })
+        this.streamPool.setInstance(cid, sid, stream)
+        await stream.open()
+      },
+    })
     await new Promise((resolve) => server.listen(port, () => resolve())).then(
       () => this,
     )
