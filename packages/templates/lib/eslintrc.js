@@ -1,4 +1,3 @@
-'use strict'
 /**
  * Define bud for eslintrc
  * @memberof module:@the-/templates
@@ -6,6 +5,9 @@
  * @param {Object} config
  * @returns {Object}
  */
+'use strict'
+
+const yaml = require('js-yaml')
 const _tmpl = require('./_tmpl')
 
 /** @lends module:@the-/templates.eslintrc */
@@ -30,8 +32,10 @@ function eslintrc(config = {}) {
         code && '@the-/eslint-config-code',
         ...extends_,
       ].filter(Boolean),
+      hasRules: Object.keys(rules || {}).length > 0,
       plugins,
       rules,
+      rulesYaml: yaml.safeDump({ rules: rules || {} }),
     },
     force: true,
     mode: '444',

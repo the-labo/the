@@ -14,3 +14,8 @@ extends:
 {{#each extends}}
 - "{{{this}}}"
 {{/each}}
+
+
+{{#if hasRules}}
+{{{rulesYaml}}}
+{{/if}}

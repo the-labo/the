@@ -15,6 +15,11 @@ describe('eslintrc', function() {
 
   it('Eslintrc', async () => {
     const bud = eslintrc({
+      additional: {
+        rules: {
+          'use-isnan': 'error',
+        },
+      },
       jsdoc: false,
     })
     bud.mkdirp = true

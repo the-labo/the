@@ -1,7 +1,7 @@
 {
   "name": "@the-/templates",
   "description": "Templates for the-projects",
-  "version": "16.0.5",
+  "version": "16.0.6",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -16,6 +16,7 @@
     "@the-/util-path": "^15.4.4",
     "aglob": "^3.0.2",
     "evaljson": "^6.0.4",
+    "js-yaml": "^3.13.1",
     "objnest": "^5.0.6",
     "reserved": "^0.1.2",
     "stringcase": "^4.3.1"
