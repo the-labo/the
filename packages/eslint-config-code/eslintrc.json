@@ -45,6 +45,44 @@
         "enforceForRenamedProperties": false
       }
     ],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev":[
+          "class",
+          "function",
+          "cjs-export",
+          "export",
+          "cjs-import",
+          "import"
+        ],
+        "next": "*"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": [
+          "class",
+          "function",
+          "cjs-export",
+          "export",
+          "cjs-import",
+          "import"
+        ]
+      },
+      {
+        "blankLine": "never",
+        "prev": [
+          "cjs-import",
+          "import"
+        ],
+        "next": [
+          "cjs-import",
+          "import"
+        ]
+      }
+    ],
     "use-isnan": "error"
   }
 }
