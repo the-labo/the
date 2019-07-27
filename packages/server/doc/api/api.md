@@ -29,28 +29,22 @@
 ## @the-/server
 HTTP/RPC Server of the-framework
 
-**Version**: 16.0.0  
+**Version**: 16.0.3  
 **License**: MIT  
 
 * [@the-/server](#module_@the-/server)
-    * [.TheServer](#module_@the-/server.TheServer) ⇐ <code>IOMixed</code>
+    * [.TheServer](#module_@the-/server.TheServer)
         * [new TheServer(config, langs, logFile, middlewares)](#new_module_@the-/server.TheServer_new)
         * [.close(...args)](#module_@the-/server.TheServer+close) ⇒ <code>Promise.&lt;\*&gt;</code>
         * [.destroyAllSessions()](#module_@the-/server.TheServer+destroyAllSessions) ⇒ <code>Promise.&lt;number&gt;</code>
-        * [.handleIOClientCame()](#module_@the-/server.TheServer+handleIOClientCame)
-        * [.handleIOClientGone()](#module_@the-/server.TheServer+handleIOClientGone)
-        * [.handleIORPCAbort()](#module_@the-/server.TheServer+handleIORPCAbort)
-        * [.handleIORPCCall()](#module_@the-/server.TheServer+handleIORPCCall)
-        * [.handleIOStreamChunk()](#module_@the-/server.TheServer+handleIOStreamChunk)
-        * [.handleIOStreamClose()](#module_@the-/server.TheServer+handleIOStreamClose)
-        * [.handleIOStreamFin()](#module_@the-/server.TheServer+handleIOStreamFin)
-        * [.handleIOStreamOpen()](#module_@the-/server.TheServer+handleIOStreamOpen)
         * [.listen(port)](#module_@the-/server.TheServer+listen) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.buildInEndpoints](#module_@the-/server.buildInEndpoints) : <code>object</code>
     * [.adapters](#module_@the-/server.adapters) : <code>object</code>
         * [.redisAdapter()](#module_@the-/server.adapters.redisAdapter)
     * [.assert](#module_@the-/server.assert) : <code>object</code>
         * [.assertMethods(Class, reservedNames)](#module_@the-/server.assert.assertMethods)
+    * [.connectors](#module_@the-/server.connectors) : <code>object</code>
+        * [.IOConnector()](#module_@the-/server.connectors.IOConnector)
     * [.constants](#module_@the-/server.constants) : <code>object</code>
         * [.DefaultValues](#module_@the-/server.constants.DefaultValues) : <code>object</code>
     * [.helpers](#module_@the-/server.helpers) : <code>object</code>
@@ -75,8 +69,6 @@ HTTP/RPC Server of the-framework
             * [~InfoMixed](#module_@the-/server.mixins.infoMix..InfoMixed)
                 * [.info()](#module_@the-/server.mixins.infoMix..InfoMixed+info)
                 * [.flushInfo()](#module_@the-/server.mixins.infoMix..InfoMixed+flushInfo)
-        * [.ioMix(Class)](#module_@the-/server.mixins.ioMix) ⇒ <code>function</code>
-            * [~IOMixed](#module_@the-/server.mixins.ioMix..IOMixed)
         * [.keepMix(Class)](#module_@the-/server.mixins.keepMix) ⇒ <code>function</code>
         * [.metricsMix(Class)](#module_@the-/server.mixins.metricsMix) ⇒ <code>function</code>
             * [~MetricsMix](#module_@the-/server.mixins.metricsMix..MetricsMix)
@@ -107,22 +99,13 @@ HTTP/RPC Server of the-framework
 
 <a name="module_@the-/server.TheServer"></a>
 
-### server.TheServer ⇐ <code>IOMixed</code>
+### server.TheServer
 **Kind**: static class of [<code>@the-/server</code>](#module_@the-/server)  
-**Extends**: <code>IOMixed</code>  
 
-* [.TheServer](#module_@the-/server.TheServer) ⇐ <code>IOMixed</code>
+* [.TheServer](#module_@the-/server.TheServer)
     * [new TheServer(config, langs, logFile, middlewares)](#new_module_@the-/server.TheServer_new)
     * [.close(...args)](#module_@the-/server.TheServer+close) ⇒ <code>Promise.&lt;\*&gt;</code>
     * [.destroyAllSessions()](#module_@the-/server.TheServer+destroyAllSessions) ⇒ <code>Promise.&lt;number&gt;</code>
-    * [.handleIOClientCame()](#module_@the-/server.TheServer+handleIOClientCame)
-    * [.handleIOClientGone()](#module_@the-/server.TheServer+handleIOClientGone)
-    * [.handleIORPCAbort()](#module_@the-/server.TheServer+handleIORPCAbort)
-    * [.handleIORPCCall()](#module_@the-/server.TheServer+handleIORPCCall)
-    * [.handleIOStreamChunk()](#module_@the-/server.TheServer+handleIOStreamChunk)
-    * [.handleIOStreamClose()](#module_@the-/server.TheServer+handleIOStreamClose)
-    * [.handleIOStreamFin()](#module_@the-/server.TheServer+handleIOStreamFin)
-    * [.handleIOStreamOpen()](#module_@the-/server.TheServer+handleIOStreamOpen)
     * [.listen(port)](#module_@the-/server.TheServer+listen) ⇒ <code>Promise.&lt;undefined&gt;</code>
 
 <a name="new_module_@the-/server.TheServer_new"></a>
@@ -156,38 +139,6 @@ Destroy all sessions
 
 **Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
 **Returns**: <code>Promise.&lt;number&gt;</code> - Deleted count  
-<a name="module_@the-/server.TheServer+handleIOClientCame"></a>
-
-#### theServer.handleIOClientCame()
-**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
-<a name="module_@the-/server.TheServer+handleIOClientGone"></a>
-
-#### theServer.handleIOClientGone()
-**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
-<a name="module_@the-/server.TheServer+handleIORPCAbort"></a>
-
-#### theServer.handleIORPCAbort()
-**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
-<a name="module_@the-/server.TheServer+handleIORPCCall"></a>
-
-#### theServer.handleIORPCCall()
-**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
-<a name="module_@the-/server.TheServer+handleIOStreamChunk"></a>
-
-#### theServer.handleIOStreamChunk()
-**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
-<a name="module_@the-/server.TheServer+handleIOStreamClose"></a>
-
-#### theServer.handleIOStreamClose()
-**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
-<a name="module_@the-/server.TheServer+handleIOStreamFin"></a>
-
-#### theServer.handleIOStreamFin()
-**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
-<a name="module_@the-/server.TheServer+handleIOStreamOpen"></a>
-
-#### theServer.handleIOStreamOpen()
-**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
 <a name="module_@the-/server.TheServer+listen"></a>
 
 #### theServer.listen(port) ⇒ <code>Promise.&lt;undefined&gt;</code>
@@ -237,6 +188,17 @@ Assert functions
 | Class | <code>function</code> | 
 | reservedNames | <code>Array.&lt;string&gt;</code> | 
 
+<a name="module_@the-/server.connectors"></a>
+
+### server.connectors : <code>object</code>
+connector functions
+
+**Kind**: static namespace of [<code>@the-/server</code>](#module_@the-/server)  
+**Access**: protected  
+<a name="module_@the-/server.connectors.IOConnector"></a>
+
+#### connectors.IOConnector()
+**Kind**: static method of [<code>connectors</code>](#module_@the-/server.connectors)  
 <a name="module_@the-/server.constants"></a>
 
 ### server.constants : <code>object</code>
@@ -367,8 +329,6 @@ Mixin functions
         * [~InfoMixed](#module_@the-/server.mixins.infoMix..InfoMixed)
             * [.info()](#module_@the-/server.mixins.infoMix..InfoMixed+info)
             * [.flushInfo()](#module_@the-/server.mixins.infoMix..InfoMixed+flushInfo)
-    * [.ioMix(Class)](#module_@the-/server.mixins.ioMix) ⇒ <code>function</code>
-        * [~IOMixed](#module_@the-/server.mixins.ioMix..IOMixed)
     * [.keepMix(Class)](#module_@the-/server.mixins.keepMix) ⇒ <code>function</code>
     * [.metricsMix(Class)](#module_@the-/server.mixins.metricsMix) ⇒ <code>function</code>
         * [~MetricsMix](#module_@the-/server.mixins.metricsMix..MetricsMix)
@@ -428,22 +388,6 @@ Server info
 Flush info into file
 
 **Kind**: instance method of [<code>InfoMixed</code>](#module_@the-/server.mixins.infoMix..InfoMixed)  
-<a name="module_@the-/server.mixins.ioMix"></a>
-
-#### mixins.ioMix(Class) ⇒ <code>function</code>
-Mixins for IO
-
-**Kind**: static method of [<code>mixins</code>](#module_@the-/server.mixins)  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-<a name="module_@the-/server.mixins.ioMix..IOMixed"></a>
-
-##### ioMix~IOMixed
-**Kind**: inner class of [<code>ioMix</code>](#module_@the-/server.mixins.ioMix)  
 <a name="module_@the-/server.mixins.keepMix"></a>
 
 #### mixins.keepMix(Class) ⇒ <code>function</code>

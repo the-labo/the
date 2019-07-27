@@ -4,7 +4,7 @@
  * @license MIT
  * @module @the-/server
  * @typicalname server
- * @version 16.0.0
+ * @version 16.0.3
  */
 'use strict'
 
@@ -13,6 +13,7 @@ const adapters_ = require('./adapters')
 const asControllerModule_ = require('./asControllerModule')
 const assert_ = require('./assert')
 const buildInEndpoints_ = require('./buildInEndpoints')
+const connectors_ = require('./connectors')
 const constants_ = require('./constants')
 const create_ = require('./create')
 const helpers_ = require('./helpers')
@@ -26,6 +27,7 @@ exports.adapters = adapters_
 exports.asControllerModule = asControllerModule_
 exports.assert = assert_
 exports.buildInEndpoints = buildInEndpoints_
+exports.connectors = connectors_
 exports.constants = constants_
 exports.create = create_
 exports.helpers = helpers_

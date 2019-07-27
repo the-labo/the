@@ -20,11 +20,13 @@ function keepMix(Class) {
     }
 
     handleKeepTick(cid, iid, { controllerName, keepDuration } = {}) {
-      const { ioConnector } = this
+      const { ioConnector, metricsCounter } = this
       if (ioConnector) {
         void ioConnector.sendRPCKeep(cid, iid, keepDuration)
       }
-      this.addInvocationKeepCountMetrics(controllerName, 1)
+      if (metricsCounter) {
+        metricsCounter.addInvocationKeepCount(controllerName, 1)
+      }
     }
 
     setKeepDuration(keepDuration) {
@@ -32,7 +34,7 @@ function keepMix(Class) {
     }
 
     startKeepTimer(cid, iid, { controllerName } = {}) {
-      const { keepDuration } = this
+      const { keepDuration, metricsCounter } = this
       const keepTimer = setInterval(() => {
         this.handleKeepTick(cid, iid, { controllerName, keepDuration })
       }, keepDuration).unref()
@@ -40,7 +42,9 @@ function keepMix(Class) {
       this._keepings[cid] = this._keepings[cid] || {}
       this._keepings[cid][iid] = { controllerName, keepTimer }
 
-      this.addKeepStartCountMetrics(controllerName)
+      if (metricsCounter) {
+        metricsCounter.addKeepStartCount(controllerName)
+      }
     }
 
     stopAllKeepTimers() {
@@ -50,6 +54,7 @@ function keepMix(Class) {
     }
 
     stopKeepTimer(cid, iid) {
+      const { metricsCounter } = this
       const keeping = (this._keepings[cid] || {})[iid]
       if (!keeping) {
         console.warn('Keep timer not found for:', cid, iid)
@@ -58,7 +63,9 @@ function keepMix(Class) {
       const { controllerName, keepTimer } = keeping
       clearInterval(keepTimer)
       delete this._keepings[cid][iid]
-      this.addKeepStopCountMetrics(controllerName)
+      if (metricsCounter) {
+        metricsCounter.addKeepStopCount(controllerName)
+      }
     }
 
     stopKeepTimerIfNeeded(cid, iid) {

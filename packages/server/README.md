@@ -151,6 +151,7 @@ const { createElement: c } = React
   - [.asControllerModule()](./doc/api/api.md#module_@the-/server.asControllerModule)
   - [.assert](./doc/api/api.md#module_@the-/server.assert)
   - [.buildInEndpoints](./doc/api/api.md#module_@the-/server.buildInEndpoints)
+  - [.connectors](./doc/api/api.md#module_@the-/server.connectors)
   - [.constants](./doc/api/api.md#module_@the-/server.constants)
   - [.create(args)](./doc/api/api.md#module_@the-/server.create)
   - [.default()](./doc/api/api.md#module_@the-/server.default)
@@ -162,6 +163,8 @@ const { createElement: c } = React
   - [.redisAdapter()](./doc/api/api.md#module_@the-/server.adapters.redisAdapter)
 - module:@the-/server.assert
   - [.assertMethods(Class,reservedNames)](./doc/api/api.md#module_@the-/server.assert.assertMethods)
+- module:@the-/server.connectors
+  - [.IOConnector()](./doc/api/api.md#module_@the-/server.connectors.IOConnector)
 - module:@the-/server.constants
   - [.DefaultValues](./doc/api/api.md#module_@the-/server.constants.DefaultValues)
 - module:@the-/server.helpers
@@ -180,7 +183,6 @@ const { createElement: c } = React
 - module:@the-/server.mixins
   - [.clientMix(Class)](./doc/api/api.md#module_@the-/server.mixins.clientMix)
   - [.infoMix(Class)](./doc/api/api.md#module_@the-/server.mixins.infoMix)
-  - [.ioMix(Class)](./doc/api/api.md#module_@the-/server.mixins.ioMix)
   - [.keepMix(Class)](./doc/api/api.md#module_@the-/server.mixins.keepMix)
   - [.metricsMix(Class)](./doc/api/api.md#module_@the-/server.mixins.metricsMix)
 - module:@the-/server.mixins.clientMix
@@ -190,8 +192,6 @@ const { createElement: c } = React
 - module:@the-/server.mixins.infoMix~InfoMixed
   - [#flushInfo()](./doc/api/api.md#module_@the-/server.mixins.infoMix~InfoMixed#flushInfo)
   - [#info()](./doc/api/api.md#module_@the-/server.mixins.infoMix~InfoMixed#info)
-- module:@the-/server.mixins.ioMix
-  - [~IOMixed](./doc/api/api.md#module_@the-/server.mixins.ioMix~IOMixed)
 - module:@the-/server.mixins.metricsMix
   - [~MetricsMix](./doc/api/api.md#module_@the-/server.mixins.metricsMix~MetricsMix)
 - module:@the-/server.stores
@@ -217,14 +217,6 @@ const { createElement: c } = React
 - module:@the-/server.TheServer
   - [#close(args)](./doc/api/api.md#module_@the-/server.TheServer#close)
   - [#destroyAllSessions()](./doc/api/api.md#module_@the-/server.TheServer#destroyAllSessions)
-  - [#handleIOClientCame()](./doc/api/api.md#module_@the-/server.TheServer#handleIOClientCame)
-  - [#handleIOClientGone()](./doc/api/api.md#module_@the-/server.TheServer#handleIOClientGone)
-  - [#handleIORPCAbort()](./doc/api/api.md#module_@the-/server.TheServer#handleIORPCAbort)
-  - [#handleIORPCCall()](./doc/api/api.md#module_@the-/server.TheServer#handleIORPCCall)
-  - [#handleIOStreamChunk()](./doc/api/api.md#module_@the-/server.TheServer#handleIOStreamChunk)
-  - [#handleIOStreamClose()](./doc/api/api.md#module_@the-/server.TheServer#handleIOStreamClose)
-  - [#handleIOStreamFin()](./doc/api/api.md#module_@the-/server.TheServer#handleIOStreamFin)
-  - [#handleIOStreamOpen()](./doc/api/api.md#module_@the-/server.TheServer#handleIOStreamOpen)
   - [#listen(port)](./doc/api/api.md#module_@the-/server.TheServer#listen)
 
 See [API Guide](./doc/api/api.md) for more detail

@@ -13,7 +13,7 @@
     "name": "@the-/server",
     "order": 4,
     "typicalname": "server",
-    "version": "16.0.0"
+    "version": "16.0.3"
   },
   {
     "description": "HTTP server for the-framework",
@@ -68,7 +68,7 @@
     "longname": "module:@the-/server.stores.ConnectionStore",
     "memberof": "module:@the-/server.stores.ConnectionStore",
     "name": "ConnectionStore",
-    "order": 54
+    "order": 46
   },
   {
     "description": "Client session store for the-server",
@@ -77,7 +77,7 @@
     "longname": "module:@the-/server.stores.SessionStore",
     "memberof": "module:@the-/server.stores.SessionStore",
     "name": "SessionStore",
-    "order": 57
+    "order": 49
   },
   {
     "description": "Client data store for the-server",
@@ -86,7 +86,7 @@
     "longname": "module:@the-/server.stores.Store",
     "memberof": "module:@the-/server.stores.Store",
     "name": "Store",
-    "order": 59
+    "order": 51
   },
   {
     "description": "module:@the-/server.mixins.keepmix",
@@ -99,7 +99,7 @@
       "path": "lib/mixins"
     },
     "name": "KeepMixed",
-    "order": 50,
+    "order": 42,
     "scope": "global"
   },
   {
@@ -113,7 +113,7 @@
       "path": "lib/constants"
     },
     "name": "IOEvents",
-    "order": 24,
+    "order": 18,
     "scope": "global"
   },
   {
@@ -125,7 +125,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 205,
+      "lineno": 202,
       "path": "lib"
     },
     "name": "close",
@@ -162,7 +162,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 229,
+      "lineno": 226,
       "path": "lib"
     },
     "name": "destroyAllSessions",
@@ -182,142 +182,6 @@
   },
   {
     "async": true,
-    "id": "module:@the-/server.TheServer#handleIOClientCame",
-    "kind": "function",
-    "longname": "module:@the-/server.TheServer#handleIOClientCame",
-    "memberof": "module:@the-/server.TheServer",
-    "meta": {
-      "filename": "TheServer.js",
-      "lineno": 241,
-      "path": "lib"
-    },
-    "name": "handleIOClientCame",
-    "order": 9,
-    "override": true,
-    "params": [],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "id": "module:@the-/server.TheServer#handleIOClientGone",
-    "kind": "function",
-    "longname": "module:@the-/server.TheServer#handleIOClientGone",
-    "memberof": "module:@the-/server.TheServer",
-    "meta": {
-      "filename": "TheServer.js",
-      "lineno": 253,
-      "path": "lib"
-    },
-    "name": "handleIOClientGone",
-    "order": 10,
-    "override": true,
-    "params": [],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "id": "module:@the-/server.TheServer#handleIORPCAbort",
-    "kind": "function",
-    "longname": "module:@the-/server.TheServer#handleIORPCAbort",
-    "memberof": "module:@the-/server.TheServer",
-    "meta": {
-      "filename": "TheServer.js",
-      "lineno": 278,
-      "path": "lib"
-    },
-    "name": "handleIORPCAbort",
-    "order": 11,
-    "override": true,
-    "params": [],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "id": "module:@the-/server.TheServer#handleIORPCCall",
-    "kind": "function",
-    "longname": "module:@the-/server.TheServer#handleIORPCCall",
-    "memberof": "module:@the-/server.TheServer",
-    "meta": {
-      "filename": "TheServer.js",
-      "lineno": 283,
-      "path": "lib"
-    },
-    "name": "handleIORPCCall",
-    "order": 12,
-    "override": true,
-    "params": [],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "id": "module:@the-/server.TheServer#handleIOStreamChunk",
-    "kind": "function",
-    "longname": "module:@the-/server.TheServer#handleIOStreamChunk",
-    "memberof": "module:@the-/server.TheServer",
-    "meta": {
-      "filename": "TheServer.js",
-      "lineno": 318,
-      "path": "lib"
-    },
-    "name": "handleIOStreamChunk",
-    "order": 13,
-    "override": true,
-    "params": [],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "id": "module:@the-/server.TheServer#handleIOStreamClose",
-    "kind": "function",
-    "longname": "module:@the-/server.TheServer#handleIOStreamClose",
-    "memberof": "module:@the-/server.TheServer",
-    "meta": {
-      "filename": "TheServer.js",
-      "lineno": 325,
-      "path": "lib"
-    },
-    "name": "handleIOStreamClose",
-    "order": 14,
-    "override": true,
-    "params": [],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "id": "module:@the-/server.TheServer#handleIOStreamFin",
-    "kind": "function",
-    "longname": "module:@the-/server.TheServer#handleIOStreamFin",
-    "memberof": "module:@the-/server.TheServer",
-    "meta": {
-      "filename": "TheServer.js",
-      "lineno": 334,
-      "path": "lib"
-    },
-    "name": "handleIOStreamFin",
-    "order": 15,
-    "override": true,
-    "params": [],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "id": "module:@the-/server.TheServer#handleIOStreamOpen",
-    "kind": "function",
-    "longname": "module:@the-/server.TheServer#handleIOStreamOpen",
-    "memberof": "module:@the-/server.TheServer",
-    "meta": {
-      "filename": "TheServer.js",
-      "lineno": 346,
-      "path": "lib"
-    },
-    "name": "handleIOStreamOpen",
-    "order": 16,
-    "override": true,
-    "params": [],
-    "scope": "instance"
-  },
-  {
-    "async": true,
     "description": "Listen to port",
     "id": "module:@the-/server.TheServer#listen",
     "kind": "function",
@@ -325,11 +189,11 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 437,
+      "lineno": 278,
       "path": "lib"
     },
     "name": "listen",
-    "order": 17,
+    "order": 9,
     "params": [
       {
         "type": {
@@ -365,7 +229,7 @@
       "path": "lib/helpers"
     },
     "name": "reloadSession",
-    "order": 37,
+    "order": 31,
     "params": [
       {
         "type": {
@@ -403,7 +267,7 @@
       "path": "lib/helpers"
     },
     "name": "saveSession",
-    "order": 38,
+    "order": 32,
     "params": [
       {
         "type": {
@@ -440,7 +304,7 @@
       "path": "lib/mixins"
     },
     "name": "info",
-    "order": 45,
+    "order": 39,
     "params": [],
     "scope": "instance"
   },
@@ -457,7 +321,7 @@
       "path": "lib/mixins"
     },
     "name": "flushInfo",
-    "order": 46,
+    "order": 40,
     "params": [],
     "scope": "instance"
   },
@@ -474,7 +338,7 @@
       "path": "lib/stores"
     },
     "name": "cleanup",
-    "order": 60,
+    "order": 52,
     "params": [],
     "returns": [
       {
@@ -500,7 +364,7 @@
       "path": "lib/stores"
     },
     "name": "del",
-    "order": 61,
+    "order": 53,
     "params": [
       {
         "type": {
@@ -536,7 +400,7 @@
       "path": "lib/stores"
     },
     "name": "delAll",
-    "order": 62,
+    "order": 54,
     "params": [],
     "returns": [
       {
@@ -562,7 +426,7 @@
       "path": "lib/stores"
     },
     "name": "get",
-    "order": 63,
+    "order": 55,
     "params": [
       {
         "type": {
@@ -598,7 +462,7 @@
       "path": "lib/stores"
     },
     "name": "has",
-    "order": 64,
+    "order": 56,
     "params": [
       {
         "type": {
@@ -634,7 +498,7 @@
       "path": "lib/stores"
     },
     "name": "ids",
-    "order": 65,
+    "order": 57,
     "params": [],
     "returns": [
       {
@@ -660,7 +524,7 @@
       "path": "lib/stores"
     },
     "name": "set",
-    "order": 66,
+    "order": 58,
     "params": [
       {
         "type": {
@@ -707,7 +571,7 @@
       "path": "lib/stores"
     },
     "name": "cleanup",
-    "order": 67,
+    "order": 59,
     "returns": [
       {
         "type": {
@@ -734,7 +598,7 @@
       "path": "lib/stores"
     },
     "name": "del",
-    "order": 68,
+    "order": 60,
     "params": [
       {
         "type": {
@@ -772,7 +636,7 @@
       "path": "lib/stores"
     },
     "name": "delAll",
-    "order": 69,
+    "order": 61,
     "returns": [
       {
         "type": {
@@ -799,7 +663,7 @@
       "path": "lib/stores"
     },
     "name": "get",
-    "order": 70,
+    "order": 62,
     "params": [
       {
         "type": {
@@ -837,7 +701,7 @@
       "path": "lib/stores"
     },
     "name": "has",
-    "order": 71,
+    "order": 63,
     "params": [
       {
         "type": {
@@ -875,7 +739,7 @@
       "path": "lib/stores"
     },
     "name": "ids",
-    "order": 72,
+    "order": 64,
     "returns": [
       {
         "type": {
@@ -902,7 +766,7 @@
       "path": "lib/stores"
     },
     "name": "set",
-    "order": 73,
+    "order": 65,
     "overrides": "module:@the-/server.stores.Store#set",
     "params": [
       {
@@ -936,9 +800,6 @@
     "scope": "instance"
   },
   {
-    "augments": [
-      "IOMixed"
-    ],
     "id": "module:@the-/server.TheServer",
     "kind": "class",
     "longname": "module:@the-/server.TheServer",
@@ -966,7 +827,7 @@
       "path": "lib/stores"
     },
     "name": "ConnectionStore",
-    "order": 53,
+    "order": 45,
     "scope": "static"
   },
   {
@@ -983,7 +844,7 @@
       "path": "lib/stores"
     },
     "name": "SessionStore",
-    "order": 56,
+    "order": 48,
     "scope": "static"
   },
   {
@@ -997,7 +858,7 @@
       "path": "lib/stores"
     },
     "name": "Store",
-    "order": 58,
+    "order": 50,
     "scope": "static"
   },
   {
@@ -1027,7 +888,7 @@
       "path": "lib/adapters"
     },
     "name": "adapters",
-    "order": 18,
+    "order": 10,
     "scope": "static"
   },
   {
@@ -1042,7 +903,23 @@
       "path": "lib/assert"
     },
     "name": "assert",
-    "order": 21,
+    "order": 13,
+    "scope": "static"
+  },
+  {
+    "access": "protected",
+    "description": "connector functions",
+    "id": "module:@the-/server.connectors",
+    "kind": "namespace",
+    "longname": "module:@the-/server.connectors",
+    "memberof": "module:@the-/server",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 2,
+      "path": "lib/connectors"
+    },
+    "name": "connectors",
+    "order": 14,
     "scope": "static"
   },
   {
@@ -1056,7 +933,7 @@
       "path": "lib/constants"
     },
     "name": "DefaultValues",
-    "order": 22,
+    "order": 16,
     "scope": "static"
   },
   {
@@ -1071,7 +948,7 @@
       "path": "lib/constants"
     },
     "name": "constants",
-    "order": 23,
+    "order": 17,
     "scope": "static"
   },
   {
@@ -1087,7 +964,7 @@
       "path": "lib/helpers"
     },
     "name": "helpers",
-    "order": 29,
+    "order": 23,
     "scope": "static"
   },
   {
@@ -1102,7 +979,7 @@
       "path": "lib/mixins"
     },
     "name": "mixins",
-    "order": 42,
+    "order": 36,
     "scope": "static"
   },
   {
@@ -1117,7 +994,7 @@
       "path": "lib/stores"
     },
     "name": "stores",
-    "order": 55,
+    "order": 47,
     "scope": "static"
   },
   {
@@ -1197,7 +1074,7 @@
       "path": "lib/adapters"
     },
     "name": "redisAdapter",
-    "order": 19,
+    "order": 11,
     "scope": "static"
   },
   {
@@ -1221,7 +1098,7 @@
       "path": "lib/assert"
     },
     "name": "assertMethods",
-    "order": 20,
+    "order": 12,
     "params": [
       {
         "type": {
@@ -1243,6 +1120,20 @@
     "scope": "static"
   },
   {
+    "id": "module:@the-/server.connectors.IOConnector",
+    "kind": "function",
+    "longname": "module:@the-/server.connectors.IOConnector",
+    "memberof": "module:@the-/server.connectors",
+    "meta": {
+      "filename": "IOConnector.js",
+      "lineno": 1,
+      "path": "lib/connectors"
+    },
+    "name": "IOConnector",
+    "order": 15,
+    "scope": "static"
+  },
+  {
     "id": "module:@the-/server.helpers.asStrictSession",
     "kind": "function",
     "longname": "module:@the-/server.helpers.asStrictSession",
@@ -1253,7 +1144,7 @@
       "path": "lib/helpers"
     },
     "name": "asStrictSession",
-    "order": 25,
+    "order": 19,
     "params": [
       {
         "type": {
@@ -1278,7 +1169,7 @@
       "path": "lib/helpers"
     },
     "name": "callbacksProxy",
-    "order": 26,
+    "order": 20,
     "returns": [
       {
         "type": {
@@ -1302,7 +1193,7 @@
       "path": "lib/helpers"
     },
     "name": "controllerSpecsFor",
-    "order": 27,
+    "order": 21,
     "scope": "static"
   },
   {
@@ -1317,7 +1208,7 @@
       "path": "lib/helpers"
     },
     "name": "ctxInjector",
-    "order": 28,
+    "order": 22,
     "params": [
       {
         "type": {
@@ -1351,7 +1242,7 @@
       "path": "lib/helpers"
     },
     "name": "langDetector",
-    "order": 30,
+    "order": 24,
     "params": [
       {
         "type": {
@@ -1398,7 +1289,7 @@
       "path": "lib/helpers"
     },
     "name": "queryFromUrl",
-    "order": 31,
+    "order": 25,
     "scope": "static"
   },
   {
@@ -1413,7 +1304,7 @@
       "path": "lib/helpers"
     },
     "name": "serverRendering",
-    "order": 32,
+    "order": 26,
     "params": [
       {
         "type": {
@@ -1459,7 +1350,7 @@
       "path": "lib/helpers"
     },
     "name": "serverRendering",
-    "order": 33,
+    "order": 27,
     "scope": "static"
   },
   {
@@ -1474,7 +1365,7 @@
       "path": "lib/helpers"
     },
     "name": "streamPool",
-    "order": 34,
+    "order": 28,
     "scope": "static"
   },
   {
@@ -1488,7 +1379,7 @@
       "path": "lib/helpers"
     },
     "name": "toControllerModuleBind",
-    "order": 36,
+    "order": 30,
     "returns": [
       {
         "type": {
@@ -1511,7 +1402,7 @@
       "path": "lib/helpers"
     },
     "name": "toLowerKeys",
-    "order": 39,
+    "order": 33,
     "scope": "static"
   },
   {
@@ -1526,7 +1417,7 @@
       "path": "lib/mixins"
     },
     "name": "clientMix",
-    "order": 40,
+    "order": 34,
     "params": [
       {
         "type": {
@@ -1561,42 +1452,7 @@
       "path": "lib/mixins"
     },
     "name": "infoMix",
-    "order": 43,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Class"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Mixins for IO",
-    "id": "module:@the-/server.mixins.ioMix",
-    "kind": "function",
-    "longname": "module:@the-/server.mixins.ioMix",
-    "memberof": "module:@the-/server.mixins",
-    "meta": {
-      "filename": "ioMix.js",
-      "lineno": 2,
-      "path": "lib/mixins"
-    },
-    "name": "ioMix",
-    "order": 47,
+    "order": 37,
     "params": [
       {
         "type": {
@@ -1631,7 +1487,7 @@
       "path": "lib/mixins"
     },
     "name": "keepMix",
-    "order": 49,
+    "order": 41,
     "params": [
       {
         "type": {
@@ -1666,7 +1522,7 @@
       "path": "lib/mixins"
     },
     "name": "metricsMix",
-    "order": 51,
+    "order": 43,
     "params": [
       {
         "type": {
@@ -1700,7 +1556,7 @@
       "path": "lib/helpers"
     },
     "name": "StreamPool",
-    "order": 35,
+    "order": 29,
     "scope": "inner"
   },
   {
@@ -1714,7 +1570,7 @@
       "path": "lib/mixins"
     },
     "name": "ClientMixed",
-    "order": 41,
+    "order": 35,
     "scope": "inner"
   },
   {
@@ -1728,21 +1584,7 @@
       "path": "lib/mixins"
     },
     "name": "InfoMixed",
-    "order": 44,
-    "scope": "inner"
-  },
-  {
-    "id": "module:@the-/server.mixins.ioMix~IOMixed",
-    "kind": "class",
-    "longname": "module:@the-/server.mixins.ioMix~IOMixed",
-    "memberof": "module:@the-/server.mixins.ioMix",
-    "meta": {
-      "filename": "ioMix.js",
-      "lineno": 20,
-      "path": "lib/mixins"
-    },
-    "name": "IOMixed",
-    "order": 48,
+    "order": 38,
     "scope": "inner"
   },
   {
@@ -1756,7 +1598,7 @@
       "path": "lib/mixins"
     },
     "name": "MetricsMix",
-    "order": 52,
+    "order": 44,
     "scope": "inner"
   }
 ]

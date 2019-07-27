@@ -33,12 +33,13 @@ const {
   streamPool,
   toControllerModuleBind,
 } = require('./helpers')
-const { clientMix, infoMix, keepMix, metricsMix } = require('./mixins')
+const MetricsCounter = require('./helpers/MetricsCounter')
+const { clientMix, infoMix, keepMix } = require('./mixins')
 const { ConnectionStore, SessionStore } = require('./stores')
 
 const debug = require('debug')('the:server')
 
-const TheServerBase = [infoMix, metricsMix, keepMix, clientMix].reduce(
+const TheServerBase = [infoMix, keepMix, clientMix].reduce(
   (C, mix) => mix(C),
   RFunc,
 )
@@ -286,6 +287,8 @@ class TheServer extends TheServerBase {
     const io = socketIO(server)
     void this.startInfoFlush(this.infoFile)
     this.closeRedisAdapter = redisAdapter(io, this.redisConfig)
+    const metricsCounter = MetricsCounter()
+    this.metricsCounter = metricsCounter
     this.ioConnector = IOConnector(io, {
       connectionStore: this.connectionStore,
       onIOClientCame: async (cid, socketId, client) => {
@@ -294,7 +297,7 @@ class TheServer extends TheServerBase {
           const instance = await this.instantiateController(controllerName, cid)
           await instance.reloadSession()
           await instance.controllerDidAttach()
-          this.addControllerAttachCountMetrics(controllerName, 1)
+          metricsCounter.addControllerAttachCount(controllerName, 1)
           await instance.saveSession()
         }
       },
@@ -309,7 +312,7 @@ class TheServer extends TheServerBase {
         for (const { name: controllerName } of this.controllerSpecs) {
           try {
             await this.cleanupController(cid, controllerName)
-            this.addControllerDetachCountMetrics(controllerName, 1)
+            metricsCounter.addControllerDetachCount(controllerName, 1)
           } catch (e) {
             console.warn(
               `[TheServer] Failed to cleanup controller ${controllerName}`,
