@@ -7,6 +7,7 @@
  */
 'use strict'
 
+const ControllerPool_ = require('./ControllerPool')
 const InfoFlusher_ = require('./InfoFlusher')
 const MetricsCounter_ = require('./MetricsCounter')
 const RPCKeeper_ = require('./RPCKeeper')
@@ -22,6 +23,7 @@ const toControllerModuleBind_ = require('./toControllerModuleBind')
 const toLowerKeys_ = require('./toLowerKeys')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
+exports.ControllerPool = ControllerPool_
 exports.InfoFlusher = InfoFlusher_
 exports.MetricsCounter = MetricsCounter_
 exports.RPCKeeper = RPCKeeper_
@@ -37,6 +39,7 @@ exports.toControllerModuleBind = toControllerModuleBind_
 exports.toLowerKeys = toLowerKeys_
 
 module.exports = {
+  ControllerPool: ControllerPool_,
   InfoFlusher: InfoFlusher_,
   MetricsCounter: MetricsCounter_,
   RPCKeeper: RPCKeeper_,

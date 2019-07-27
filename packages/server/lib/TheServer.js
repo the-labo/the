@@ -1,4 +1,3 @@
-'use strict'
 /**
  * HTTP server for the-framework
  * @memberof module:@the-/server
@@ -8,6 +7,8 @@
  * @param {string} logFile - Log file
  * @param {function[]} middlewares - Koa middlewares
  */
+'use strict'
+
 const { ARedis } = require('aredis')
 const asleep = require('asleep')
 const http = require('http')
@@ -19,7 +20,6 @@ const { TheCtrl } = require('@the-/controller')
 const { TheStream } = require('@the-/stream')
 const theTmp = require('@the-/tmp')
 const { redisAdapter } = require('./adapters')
-const asControllerModule = require('./asControllerModule')
 const buildInEndpoints = require('./buildInEndpoints')
 const { IOConnector } = require('./connectors')
 const DefaultValues = require('./constants/DefaultValues')
@@ -33,6 +33,7 @@ const {
   streamPool,
   toControllerModuleBind,
 } = require('./helpers')
+const ControllerPool = require('./helpers/ControllerPool')
 const InfoFlusher = require('./helpers/InfoFlusher')
 const MetricsCounter = require('./helpers/MetricsCounter')
 const RPCKeeper = require('./helpers/RPCKeeper')
@@ -96,8 +97,6 @@ class TheServer extends TheServerBase {
       max: 10000,
       maxAge: 1000 * 30,
     })
-    const instantiateController = (controllerName, cid) =>
-      this.instantiateController(controllerName, cid)
     const ControllerModuleBinds = toControllerModuleBind.all({
       controllerClasses,
       sessionCache,
@@ -105,21 +104,19 @@ class TheServer extends TheServerBase {
     })
     const controllerModules = Object.assign(
       {},
-      ...Object.entries(controllerClasses).map(([name, Class]) => ({
-        [name]: asControllerModule(Class, {
-          controllerName: name,
-          instantiateController,
-          describeController(controllerName) {
-            const ControllerModuleBind = ControllerModuleBinds[controllerName]
-            if (!ControllerModuleBind) {
-              throw new Error(
-                `[TheServer] Unknown controller: ${controllerName}`,
-              )
-            }
-            return ControllerModuleBind.describe({ app: appScope })
-          },
-        }),
-      })),
+      ...Object.entries(ControllerModuleBinds).map(
+        ([controllerName, ControllerModuleBind]) => {
+          const { methods } = ControllerModuleBind.describe({ app: appScope })
+          return {
+            [controllerName]: Object.assign(
+              {},
+              ...methods.map((name) => ({
+                [name]: async function stub() {},
+              })),
+            ),
+          }
+        },
+      ),
     )
 
     super({
@@ -194,16 +191,6 @@ class TheServer extends TheServerBase {
       langs: this.langs,
       metrics: metricsCounter && metricsCounter.counts,
       uptime: new Date() - this.listenAt,
-    }
-  }
-
-  async cleanupController(cid, controllerName) {
-    const instance = await this.instantiateController(controllerName, cid)
-    await instance.reloadSession()
-    await instance.controllerWillDetach()
-    await instance.saveSession()
-    if (this.controllerInstances[controllerName]) {
-      delete this.controllerInstances[controllerName][cid]
     }
   }
 
@@ -303,6 +290,8 @@ class TheServer extends TheServerBase {
     this.infoFlusher = infoFlusher
     this.closeRedisAdapter = redisAdapter(io, this.redisConfig)
     const metricsCounter = MetricsCounter()
+    const controllerPool = ControllerPool()
+    this.controllerPool = controllerPool
     this.metricsCounter = metricsCounter
     const ioConnector = IOConnector(io, {
       connectionStore: this.connectionStore,
@@ -314,6 +303,7 @@ class TheServer extends TheServerBase {
           await instance.controllerDidAttach()
           metricsCounter.addControllerAttachCount(controllerName, 1)
           await instance.saveSession()
+          controllerPool.add(cid, socketId, controllerName, instance)
         }
       },
 
@@ -324,9 +314,12 @@ class TheServer extends TheServerBase {
           console.warn('[TheServer] Connection already gone for cid:', cid)
         }
         sessionCache.del(cid)
-        for (const { name: controllerName } of this.controllerSpecs) {
+        const instances = controllerPool.getAll(cid, socketId)
+        for (const [controllerName, instance] of Object.entries(instances)) {
           try {
-            await this.cleanupController(cid, controllerName)
+            await instance.reloadSession()
+            await instance.controllerWillDetach()
+            await instance.saveSession()
             metricsCounter.addControllerDetachCount(controllerName, 1)
           } catch (e) {
             console.warn(
@@ -348,9 +341,14 @@ class TheServer extends TheServerBase {
       onIORPCCall: async (cid, socketId, config) => {
         const { rpcKeeper } = this
         const { iid, methodName, moduleName, params } = config
-        const controller = this.controllerModules[moduleName]
+        const instance = controllerPool.get(cid, socketId, moduleName)
+        if (!instance) {
+          throw new Error(
+            `[@the-/server] Controller not found for name: ${moduleName}`,
+          )
+        }
         const controllerName =
-          controller.controllerName || controller.name || moduleName
+          instance.controllerName || instance.name || moduleName
 
         rpcKeeper.startKeepTimer(cid, iid, { controllerName })
         await asleep(10 * Math.random())
@@ -364,7 +362,24 @@ class TheServer extends TheServerBase {
           socketId,
         }
         try {
-          data = await controller[methodName](...params)
+          await instance.reloadSession()
+          if (instance.controllerMethodWillInvoke) {
+            await instance.controllerMethodWillInvoke({
+              name: methodName,
+              params,
+            })
+          }
+
+          data = await instance[methodName](...params.slice(1))
+          if (instance.controllerMethodDidInvoke) {
+            await instance.controllerMethodDidInvoke({
+              name: methodName,
+              params,
+              result: data,
+            })
+          }
+          await instance.saveSession()
+          console.log('data', data, params)
         } catch (e) {
           const error = { ...e }
           delete error.stack

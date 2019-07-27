@@ -4,13 +4,12 @@
  * @license MIT
  * @module @the-/server
  * @typicalname server
- * @version 16.0.4
+ * @version 16.0.6
  */
 'use strict'
 
 const TheServer_ = require('./TheServer')
 const adapters_ = require('./adapters')
-const asControllerModule_ = require('./asControllerModule')
 const assert_ = require('./assert')
 const buildInEndpoints_ = require('./buildInEndpoints')
 const connectors_ = require('./connectors')
@@ -24,7 +23,6 @@ const default__ = require('./default')
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
 exports.TheServer = TheServer_
 exports.adapters = adapters_
-exports.asControllerModule = asControllerModule_
 exports.assert = assert_
 exports.buildInEndpoints = buildInEndpoints_
 exports.connectors = connectors_

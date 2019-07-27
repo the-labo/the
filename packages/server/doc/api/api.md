@@ -8,20 +8,14 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#KeepMixed">KeepMixed</a></dt>
-<dd><p>module:@the-/server.mixins.keepmix</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
 <dt><a href="#IOEvents">IOEvents()</a></dt>
 <dd><p>Events for IO</p>
 </dd>
+<dt><a href="#ControllerPool">ControllerPool()</a></dt>
+<dd></dd>
 </dl>
 
 <a name="module_@the-/server"></a>
@@ -29,12 +23,13 @@
 ## @the-/server
 HTTP/RPC Server of the-framework
 
-**Version**: 16.0.3  
+**Version**: 16.0.6  
 **License**: MIT  
 
 * [@the-/server](#module_@the-/server)
     * [.TheServer](#module_@the-/server.TheServer)
         * [new TheServer(config, langs, logFile, middlewares)](#new_module_@the-/server.TheServer_new)
+        * [.info()](#module_@the-/server.TheServer+info)
         * [.close(...args)](#module_@the-/server.TheServer+close) ⇒ <code>Promise.&lt;\*&gt;</code>
         * [.destroyAllSessions()](#module_@the-/server.TheServer+destroyAllSessions) ⇒ <code>Promise.&lt;number&gt;</code>
         * [.listen(port)](#module_@the-/server.TheServer+listen) ⇒ <code>Promise.&lt;undefined&gt;</code>
@@ -53,8 +48,14 @@ HTTP/RPC Server of the-framework
             * [.callbacksProxy()](#module_@the-/server.helpers.callbacksProxy) ⇒ <code>Proxy</code>
             * [.controllerSpecsFor()](#module_@the-/server.helpers.controllerSpecsFor)
             * [.ctxInjector(creators)](#module_@the-/server.helpers.ctxInjector) ⇒ <code>function</code>
+            * [.InfoFlusher(filename, getter)](#module_@the-/server.helpers.InfoFlusher) ⇒ <code>Object</code>
+                * [~infoFlusher](#module_@the-/server.helpers.InfoFlusher..infoFlusher) : <code>object</code>
+                    * [.flushInfo()](#module_@the-/server.helpers.InfoFlusher..infoFlusher.flushInfo)
             * [.langDetector([locales], [options])](#module_@the-/server.helpers.langDetector) ⇒ <code>function</code>
+            * [.MetricsCounter()](#module_@the-/server.helpers.MetricsCounter)
             * [.queryFromUrl()](#module_@the-/server.helpers.queryFromUrl)
+            * [.RPCKeeper(Class)](#module_@the-/server.helpers.RPCKeeper) ⇒ <code>function</code>
+                * [~rpcKeeper](#module_@the-/server.helpers.RPCKeeper..rpcKeeper) : <code>object</code>
             * [.serverRendering(Component, [options])](#module_@the-/server.helpers.serverRendering) ⇒ <code>function</code>
             * [.serverRendering()](#module_@the-/server.helpers.serverRendering)
             * [.streamPool()](#module_@the-/server.helpers.streamPool)
@@ -65,13 +66,6 @@ HTTP/RPC Server of the-framework
     * [.mixins](#module_@the-/server.mixins) : <code>object</code>
         * [.clientMix(Class)](#module_@the-/server.mixins.clientMix) ⇒ <code>function</code>
             * [~ClientMixed](#module_@the-/server.mixins.clientMix..ClientMixed)
-        * [.infoMix(Class)](#module_@the-/server.mixins.infoMix) ⇒ <code>function</code>
-            * [~InfoMixed](#module_@the-/server.mixins.infoMix..InfoMixed)
-                * [.info()](#module_@the-/server.mixins.infoMix..InfoMixed+info)
-                * [.flushInfo()](#module_@the-/server.mixins.infoMix..InfoMixed+flushInfo)
-        * [.keepMix(Class)](#module_@the-/server.mixins.keepMix) ⇒ <code>function</code>
-        * [.metricsMix(Class)](#module_@the-/server.mixins.metricsMix) ⇒ <code>function</code>
-            * [~MetricsMix](#module_@the-/server.mixins.metricsMix..MetricsMix)
     * [.stores](#module_@the-/server.stores) : <code>object</code>
         * [.ConnectionStore](#module_@the-/server.stores.ConnectionStore) ⇐ [<code>Store</code>](#module_@the-/server.stores.Store)
             * [new ConnectionStore()](#new_module_@the-/server.stores.ConnectionStore_new)
@@ -93,7 +87,6 @@ HTTP/RPC Server of the-framework
             * [.has(id)](#module_@the-/server.stores.Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
             * [.ids()](#module_@the-/server.stores.Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
             * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * [.asControllerModule()](#module_@the-/server.asControllerModule)
     * [.create(...args)](#module_@the-/server.create) ⇒ <code>TheServer</code>
     * [.default()](#module_@the-/server.default)
 
@@ -104,6 +97,7 @@ HTTP/RPC Server of the-framework
 
 * [.TheServer](#module_@the-/server.TheServer)
     * [new TheServer(config, langs, logFile, middlewares)](#new_module_@the-/server.TheServer_new)
+    * [.info()](#module_@the-/server.TheServer+info)
     * [.close(...args)](#module_@the-/server.TheServer+close) ⇒ <code>Promise.&lt;\*&gt;</code>
     * [.destroyAllSessions()](#module_@the-/server.TheServer+destroyAllSessions) ⇒ <code>Promise.&lt;number&gt;</code>
     * [.listen(port)](#module_@the-/server.TheServer+listen) ⇒ <code>Promise.&lt;undefined&gt;</code>
@@ -121,6 +115,12 @@ HTTP server for the-framework
 | logFile | <code>string</code> | Log file |
 | middlewares | <code>Array.&lt;function()&gt;</code> | Koa middlewares |
 
+<a name="module_@the-/server.TheServer+info"></a>
+
+#### theServer.info()
+Server info
+
+**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
 <a name="module_@the-/server.TheServer+close"></a>
 
 #### theServer.close(...args) ⇒ <code>Promise.&lt;\*&gt;</code>
@@ -223,8 +223,14 @@ Helper functions
         * [.callbacksProxy()](#module_@the-/server.helpers.callbacksProxy) ⇒ <code>Proxy</code>
         * [.controllerSpecsFor()](#module_@the-/server.helpers.controllerSpecsFor)
         * [.ctxInjector(creators)](#module_@the-/server.helpers.ctxInjector) ⇒ <code>function</code>
+        * [.InfoFlusher(filename, getter)](#module_@the-/server.helpers.InfoFlusher) ⇒ <code>Object</code>
+            * [~infoFlusher](#module_@the-/server.helpers.InfoFlusher..infoFlusher) : <code>object</code>
+                * [.flushInfo()](#module_@the-/server.helpers.InfoFlusher..infoFlusher.flushInfo)
         * [.langDetector([locales], [options])](#module_@the-/server.helpers.langDetector) ⇒ <code>function</code>
+        * [.MetricsCounter()](#module_@the-/server.helpers.MetricsCounter)
         * [.queryFromUrl()](#module_@the-/server.helpers.queryFromUrl)
+        * [.RPCKeeper(Class)](#module_@the-/server.helpers.RPCKeeper) ⇒ <code>function</code>
+            * [~rpcKeeper](#module_@the-/server.helpers.RPCKeeper..rpcKeeper) : <code>object</code>
         * [.serverRendering(Component, [options])](#module_@the-/server.helpers.serverRendering) ⇒ <code>function</code>
         * [.serverRendering()](#module_@the-/server.helpers.serverRendering)
         * [.streamPool()](#module_@the-/server.helpers.streamPool)
@@ -264,6 +270,33 @@ Define koa middleware register ctx values
 | --- | --- |
 | creators | <code>function</code> | 
 
+<a name="module_@the-/server.helpers.InfoFlusher"></a>
+
+#### helpers.InfoFlusher(filename, getter) ⇒ <code>Object</code>
+Mixins for info
+
+**Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| filename | <code>string</code> |  |
+| getter | <code>function</code> | Info getter |
+
+
+* [.InfoFlusher(filename, getter)](#module_@the-/server.helpers.InfoFlusher) ⇒ <code>Object</code>
+    * [~infoFlusher](#module_@the-/server.helpers.InfoFlusher..infoFlusher) : <code>object</code>
+        * [.flushInfo()](#module_@the-/server.helpers.InfoFlusher..infoFlusher.flushInfo)
+
+<a name="module_@the-/server.helpers.InfoFlusher..infoFlusher"></a>
+
+##### InfoFlusher~infoFlusher : <code>object</code>
+**Kind**: inner namespace of [<code>InfoFlusher</code>](#module_@the-/server.helpers.InfoFlusher)  
+<a name="module_@the-/server.helpers.InfoFlusher..infoFlusher.flushInfo"></a>
+
+###### infoFlusher.flushInfo()
+Flush info into file
+
+**Kind**: static method of [<code>infoFlusher</code>](#module_@the-/server.helpers.InfoFlusher..infoFlusher)  
 <a name="module_@the-/server.helpers.langDetector"></a>
 
 #### helpers.langDetector([locales], [options]) ⇒ <code>function</code>
@@ -276,10 +309,32 @@ Define koa middleware function to detect locale
 | [locales] | <code>Array.&lt;string&gt;</code> | <code>&#x27;en&#x27;</code> | Supported locales |
 | [options] | <code>Object</code> | <code>{}</code> | Optional setting |
 
+<a name="module_@the-/server.helpers.MetricsCounter"></a>
+
+#### helpers.MetricsCounter()
+MetricsC Counter
+
+**Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
 <a name="module_@the-/server.helpers.queryFromUrl"></a>
 
 #### helpers.queryFromUrl()
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+<a name="module_@the-/server.helpers.RPCKeeper"></a>
+
+#### helpers.RPCKeeper(Class) ⇒ <code>function</code>
+Mixin to keep
+
+**Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+**Returns**: <code>function</code> - Class  
+
+| Param | Type |
+| --- | --- |
+| Class | <code>function</code> | 
+
+<a name="module_@the-/server.helpers.RPCKeeper..rpcKeeper"></a>
+
+##### RPCKeeper~rpcKeeper : <code>object</code>
+**Kind**: inner namespace of [<code>RPCKeeper</code>](#module_@the-/server.helpers.RPCKeeper)  
 <a name="module_@the-/server.helpers.serverRendering"></a>
 
 #### helpers.serverRendering(Component, [options]) ⇒ <code>function</code>
@@ -325,13 +380,6 @@ Mixin functions
 * [.mixins](#module_@the-/server.mixins) : <code>object</code>
     * [.clientMix(Class)](#module_@the-/server.mixins.clientMix) ⇒ <code>function</code>
         * [~ClientMixed](#module_@the-/server.mixins.clientMix..ClientMixed)
-    * [.infoMix(Class)](#module_@the-/server.mixins.infoMix) ⇒ <code>function</code>
-        * [~InfoMixed](#module_@the-/server.mixins.infoMix..InfoMixed)
-            * [.info()](#module_@the-/server.mixins.infoMix..InfoMixed+info)
-            * [.flushInfo()](#module_@the-/server.mixins.infoMix..InfoMixed+flushInfo)
-    * [.keepMix(Class)](#module_@the-/server.mixins.keepMix) ⇒ <code>function</code>
-    * [.metricsMix(Class)](#module_@the-/server.mixins.metricsMix) ⇒ <code>function</code>
-        * [~MetricsMix](#module_@the-/server.mixins.metricsMix..MetricsMix)
 
 <a name="module_@the-/server.mixins.clientMix"></a>
 
@@ -349,73 +397,6 @@ Mixin for client
 
 ##### clientMix~ClientMixed
 **Kind**: inner class of [<code>clientMix</code>](#module_@the-/server.mixins.clientMix)  
-<a name="module_@the-/server.mixins.infoMix"></a>
-
-#### mixins.infoMix(Class) ⇒ <code>function</code>
-Mixins for info
-
-**Kind**: static method of [<code>mixins</code>](#module_@the-/server.mixins)  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-
-* [.infoMix(Class)](#module_@the-/server.mixins.infoMix) ⇒ <code>function</code>
-    * [~InfoMixed](#module_@the-/server.mixins.infoMix..InfoMixed)
-        * [.info()](#module_@the-/server.mixins.infoMix..InfoMixed+info)
-        * [.flushInfo()](#module_@the-/server.mixins.infoMix..InfoMixed+flushInfo)
-
-<a name="module_@the-/server.mixins.infoMix..InfoMixed"></a>
-
-##### infoMix~InfoMixed
-**Kind**: inner class of [<code>infoMix</code>](#module_@the-/server.mixins.infoMix)  
-
-* [~InfoMixed](#module_@the-/server.mixins.infoMix..InfoMixed)
-    * [.info()](#module_@the-/server.mixins.infoMix..InfoMixed+info)
-    * [.flushInfo()](#module_@the-/server.mixins.infoMix..InfoMixed+flushInfo)
-
-<a name="module_@the-/server.mixins.infoMix..InfoMixed+info"></a>
-
-###### infoMixed.info()
-Server info
-
-**Kind**: instance method of [<code>InfoMixed</code>](#module_@the-/server.mixins.infoMix..InfoMixed)  
-<a name="module_@the-/server.mixins.infoMix..InfoMixed+flushInfo"></a>
-
-###### infoMixed.flushInfo()
-Flush info into file
-
-**Kind**: instance method of [<code>InfoMixed</code>](#module_@the-/server.mixins.infoMix..InfoMixed)  
-<a name="module_@the-/server.mixins.keepMix"></a>
-
-#### mixins.keepMix(Class) ⇒ <code>function</code>
-Mixin to keep
-
-**Kind**: static method of [<code>mixins</code>](#module_@the-/server.mixins)  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-<a name="module_@the-/server.mixins.metricsMix"></a>
-
-#### mixins.metricsMix(Class) ⇒ <code>function</code>
-Mixins for metrics
-
-**Kind**: static method of [<code>mixins</code>](#module_@the-/server.mixins)  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-<a name="module_@the-/server.mixins.metricsMix..MetricsMix"></a>
-
-##### metricsMix~MetricsMix
-**Kind**: inner class of [<code>metricsMix</code>](#module_@the-/server.mixins.metricsMix)  
 <a name="module_@the-/server.stores"></a>
 
 ### server.stores : <code>object</code>
@@ -623,12 +604,6 @@ Set data
 | id | <code>string</code> | Data id |
 | data | <code>Object</code> | Data to set |
 
-<a name="module_@the-/server.asControllerModule"></a>
-
-### server.asControllerModule()
-Mark as RPCController
-
-**Kind**: static method of [<code>@the-/server</code>](#module_@the-/server)  
 <a name="module_@the-/server.create"></a>
 
 ### server.create(...args) ⇒ <code>TheServer</code>
@@ -646,15 +621,13 @@ Create a TheServer instance
 Alias of [create](#module_@the-/server.create)
 
 **Kind**: static method of [<code>@the-/server</code>](#module_@the-/server)  
-<a name="KeepMixed"></a>
-
-## KeepMixed
-module:@the-/server.mixins.keepmix
-
-**Kind**: global class  
 <a name="IOEvents"></a>
 
 ## IOEvents()
 Events for IO
 
+**Kind**: global function  
+<a name="ControllerPool"></a>
+
+## ControllerPool()
 **Kind**: global function  

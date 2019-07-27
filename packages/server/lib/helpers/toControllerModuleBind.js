@@ -9,6 +9,9 @@ const {
   getAllPropertyDescriptors,
   instanceMethodNamesFor,
 } = require('@the-/mixin-controller/lib/helpers')
+const { assertMethods } = require('../assert')
+
+const innerMethodNames = ['reloadSession', 'saveSession', 'useController']
 
 /** @lends module:@the-/server.helpers.toControllerModuleBind */
 function toControllerModuleBind(Class, options = {}) {
@@ -18,6 +21,7 @@ function toControllerModuleBind(Class, options = {}) {
         `[TheServer] Controller "${options.controllerName}" is missing`,
       )
     }
+    assertMethods(Class, ['reloadSession', 'saveSession', 'useController'])
   })
   const { sessionCache, sessionStore } = options
 
@@ -25,7 +29,9 @@ function toControllerModuleBind(Class, options = {}) {
     static describe(config) {
       const prototype = new ControllerModuleBind(config)
       const descriptors = getAllPropertyDescriptors(prototype)
-      const methods = instanceMethodNamesFor(prototype, descriptors)
+      const methods = instanceMethodNamesFor(prototype, descriptors).filter(
+        (name) => !innerMethodNames.includes(name),
+      )
       return { methods }
     }
 

@@ -11,9 +11,9 @@
       "path": "lib"
     },
     "name": "@the-/server",
-    "order": 4,
+    "order": 3,
     "typicalname": "server",
-    "version": "16.0.3"
+    "version": "16.0.6"
   },
   {
     "description": "HTTP server for the-framework",
@@ -22,7 +22,7 @@
     "longname": "module:@the-/server.TheServer",
     "memberof": "module:@the-/server.TheServer",
     "name": "TheServer",
-    "order": 6,
+    "order": 5,
     "params": [
       {
         "type": {
@@ -89,20 +89,6 @@
     "order": 51
   },
   {
-    "description": "module:@the-/server.mixins.keepmix",
-    "id": "KeepMixed",
-    "kind": "class",
-    "longname": "KeepMixed",
-    "meta": {
-      "filename": "keepMix.js",
-      "lineno": 16,
-      "path": "lib/mixins"
-    },
-    "name": "KeepMixed",
-    "order": 42,
-    "scope": "global"
-  },
-  {
     "description": "Events for IO",
     "id": "IOEvents",
     "kind": "function",
@@ -115,6 +101,35 @@
     "name": "IOEvents",
     "order": 18,
     "scope": "global"
+  },
+  {
+    "id": "ControllerPool",
+    "kind": "function",
+    "longname": "ControllerPool",
+    "meta": {
+      "filename": "ControllerPool.js",
+      "lineno": 1,
+      "path": "lib/helpers"
+    },
+    "name": "ControllerPool",
+    "order": 21,
+    "scope": "global"
+  },
+  {
+    "description": "Server info",
+    "id": "module:@the-/server.TheServer#info",
+    "kind": "function",
+    "longname": "module:@the-/server.TheServer#info",
+    "memberof": "module:@the-/server.TheServer",
+    "meta": {
+      "filename": "TheServer.js",
+      "lineno": 185,
+      "path": "lib"
+    },
+    "name": "info",
+    "order": 6,
+    "params": [],
+    "scope": "instance"
   },
   {
     "async": true,
@@ -162,7 +177,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 226,
+      "lineno": 227,
       "path": "lib"
     },
     "name": "destroyAllSessions",
@@ -189,7 +204,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 278,
+      "lineno": 279,
       "path": "lib"
     },
     "name": "listen",
@@ -225,11 +240,11 @@
     "memberof": "ControllerModuleBind",
     "meta": {
       "filename": "toControllerModuleBind.js",
-      "lineno": 42,
+      "lineno": 48,
       "path": "lib/helpers"
     },
     "name": "reloadSession",
-    "order": 31,
+    "order": 39,
     "params": [
       {
         "type": {
@@ -263,11 +278,11 @@
     "memberof": "ControllerModuleBind",
     "meta": {
       "filename": "toControllerModuleBind.js",
-      "lineno": 73,
+      "lineno": 79,
       "path": "lib/helpers"
     },
     "name": "saveSession",
-    "order": 32,
+    "order": 40,
     "params": [
       {
         "type": {
@@ -290,39 +305,6 @@
         }
       }
     ],
-    "scope": "instance"
-  },
-  {
-    "description": "Server info",
-    "id": "module:@the-/server.mixins.infoMix~InfoMixed#info",
-    "kind": "function",
-    "longname": "module:@the-/server.mixins.infoMix~InfoMixed#info",
-    "memberof": "module:@the-/server.mixins.infoMix~InfoMixed",
-    "meta": {
-      "filename": "infoMix.js",
-      "lineno": 26,
-      "path": "lib/mixins"
-    },
-    "name": "info",
-    "order": 39,
-    "params": [],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Flush info into file",
-    "id": "module:@the-/server.mixins.infoMix~InfoMixed#flushInfo",
-    "kind": "function",
-    "longname": "module:@the-/server.mixins.infoMix~InfoMixed#flushInfo",
-    "memberof": "module:@the-/server.mixins.infoMix~InfoMixed",
-    "meta": {
-      "filename": "infoMix.js",
-      "lineno": 38,
-      "path": "lib/mixins"
-    },
-    "name": "flushInfo",
-    "order": 40,
-    "params": [],
     "scope": "instance"
   },
   {
@@ -806,11 +788,11 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 2,
+      "lineno": 1,
       "path": "lib"
     },
     "name": "TheServer",
-    "order": 5,
+    "order": 4,
     "scope": "static"
   },
   {
@@ -873,7 +855,7 @@
       "path": "lib"
     },
     "name": "buildInEndpoints",
-    "order": 1,
+    "order": 0,
     "scope": "static"
   },
   {
@@ -964,7 +946,7 @@
       "path": "lib/helpers"
     },
     "name": "helpers",
-    "order": 23,
+    "order": 24,
     "scope": "static"
   },
   {
@@ -979,7 +961,7 @@
       "path": "lib/mixins"
     },
     "name": "mixins",
-    "order": 36,
+    "order": 44,
     "scope": "static"
   },
   {
@@ -998,21 +980,6 @@
     "scope": "static"
   },
   {
-    "description": "Mark as RPCController",
-    "id": "module:@the-/server.asControllerModule",
-    "kind": "function",
-    "longname": "module:@the-/server.asControllerModule",
-    "memberof": "module:@the-/server",
-    "meta": {
-      "filename": "asControllerModule.js",
-      "lineno": 2,
-      "path": "lib"
-    },
-    "name": "asControllerModule",
-    "order": 0,
-    "scope": "static"
-  },
-  {
     "description": "Create a TheServer instance",
     "id": "module:@the-/server.create",
     "kind": "function",
@@ -1024,7 +991,7 @@
       "path": "lib"
     },
     "name": "create",
-    "order": 2,
+    "order": 1,
     "params": [
       {
         "type": {
@@ -1059,7 +1026,7 @@
       "path": "lib"
     },
     "name": "default",
-    "order": 3,
+    "order": 2,
     "scope": "static"
   },
   {
@@ -1193,7 +1160,7 @@
       "path": "lib/helpers"
     },
     "name": "controllerSpecsFor",
-    "order": 21,
+    "order": 22,
     "scope": "static"
   },
   {
@@ -1208,7 +1175,7 @@
       "path": "lib/helpers"
     },
     "name": "ctxInjector",
-    "order": 22,
+    "order": 23,
     "params": [
       {
         "type": {
@@ -1231,6 +1198,64 @@
     "scope": "static"
   },
   {
+    "description": "Mixins for info",
+    "id": "module:@the-/server.helpers.InfoFlusher",
+    "kind": "function",
+    "longname": "module:@the-/server.helpers.InfoFlusher",
+    "memberof": "module:@the-/server.helpers",
+    "meta": {
+      "filename": "InfoFlusher.js",
+      "lineno": 2,
+      "path": "lib/helpers"
+    },
+    "name": "InfoFlusher",
+    "order": 25,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "filename"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Info getter",
+        "name": "getter"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Flush info into file",
+    "id": "module:@the-/server.helpers.InfoFlusher~infoFlusher.flushInfo",
+    "kind": "function",
+    "longname": "module:@the-/server.helpers.InfoFlusher~infoFlusher.flushInfo",
+    "memberof": "module:@the-/server.helpers.InfoFlusher~infoFlusher",
+    "meta": {
+      "filename": "InfoFlusher.js",
+      "lineno": 27,
+      "path": "lib/helpers"
+    },
+    "name": "flushInfo",
+    "order": 27,
+    "scope": "static"
+  },
+  {
     "description": "Define koa middleware function to detect locale",
     "id": "module:@the-/server.helpers.langDetector",
     "kind": "function",
@@ -1242,7 +1267,7 @@
       "path": "lib/helpers"
     },
     "name": "langDetector",
-    "order": 24,
+    "order": 28,
     "params": [
       {
         "type": {
@@ -1279,6 +1304,21 @@
     "scope": "static"
   },
   {
+    "description": "MetricsC Counter",
+    "id": "module:@the-/server.helpers.MetricsCounter",
+    "kind": "function",
+    "longname": "module:@the-/server.helpers.MetricsCounter",
+    "memberof": "module:@the-/server.helpers",
+    "meta": {
+      "filename": "MetricsCounter.js",
+      "lineno": 1,
+      "path": "lib/helpers"
+    },
+    "name": "MetricsCounter",
+    "order": 29,
+    "scope": "static"
+  },
+  {
     "id": "module:@the-/server.helpers.queryFromUrl",
     "kind": "function",
     "longname": "module:@the-/server.helpers.queryFromUrl",
@@ -1289,7 +1329,42 @@
       "path": "lib/helpers"
     },
     "name": "queryFromUrl",
-    "order": 25,
+    "order": 31,
+    "scope": "static"
+  },
+  {
+    "description": "Mixin to keep",
+    "id": "module:@the-/server.helpers.RPCKeeper",
+    "kind": "function",
+    "longname": "module:@the-/server.helpers.RPCKeeper",
+    "memberof": "module:@the-/server.helpers",
+    "meta": {
+      "filename": "RPCKeeper.js",
+      "lineno": 1,
+      "path": "lib/helpers"
+    },
+    "name": "RPCKeeper",
+    "order": 32,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Class"
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1304,7 +1379,7 @@
       "path": "lib/helpers"
     },
     "name": "serverRendering",
-    "order": 26,
+    "order": 34,
     "params": [
       {
         "type": {
@@ -1350,7 +1425,7 @@
       "path": "lib/helpers"
     },
     "name": "serverRendering",
-    "order": 27,
+    "order": 35,
     "scope": "static"
   },
   {
@@ -1365,7 +1440,7 @@
       "path": "lib/helpers"
     },
     "name": "streamPool",
-    "order": 28,
+    "order": 36,
     "scope": "static"
   },
   {
@@ -1379,7 +1454,7 @@
       "path": "lib/helpers"
     },
     "name": "toControllerModuleBind",
-    "order": 30,
+    "order": 38,
     "returns": [
       {
         "type": {
@@ -1402,7 +1477,7 @@
       "path": "lib/helpers"
     },
     "name": "toLowerKeys",
-    "order": 33,
+    "order": 41,
     "scope": "static"
   },
   {
@@ -1417,112 +1492,7 @@
       "path": "lib/mixins"
     },
     "name": "clientMix",
-    "order": 34,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Class"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Mixins for info",
-    "id": "module:@the-/server.mixins.infoMix",
-    "kind": "function",
-    "longname": "module:@the-/server.mixins.infoMix",
-    "memberof": "module:@the-/server.mixins",
-    "meta": {
-      "filename": "infoMix.js",
-      "lineno": 2,
-      "path": "lib/mixins"
-    },
-    "name": "infoMix",
-    "order": 37,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Class"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Mixin to keep",
-    "id": "module:@the-/server.mixins.keepMix",
-    "kind": "function",
-    "longname": "module:@the-/server.mixins.keepMix",
-    "memberof": "module:@the-/server.mixins",
-    "meta": {
-      "filename": "keepMix.js",
-      "lineno": 2,
-      "path": "lib/mixins"
-    },
-    "name": "keepMix",
-    "order": 41,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Class"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Mixins for metrics",
-    "id": "module:@the-/server.mixins.metricsMix",
-    "kind": "function",
-    "longname": "module:@the-/server.mixins.metricsMix",
-    "memberof": "module:@the-/server.mixins",
-    "meta": {
-      "filename": "metricsMix.js",
-      "lineno": 2,
-      "path": "lib/mixins"
-    },
-    "name": "metricsMix",
-    "order": 43,
+    "order": 42,
     "params": [
       {
         "type": {
@@ -1556,7 +1526,7 @@
       "path": "lib/helpers"
     },
     "name": "StreamPool",
-    "order": 29,
+    "order": 37,
     "scope": "inner"
   },
   {
@@ -1570,35 +1540,49 @@
       "path": "lib/mixins"
     },
     "name": "ClientMixed",
-    "order": 35,
+    "order": 43,
     "scope": "inner"
   },
   {
-    "id": "module:@the-/server.mixins.infoMix~InfoMixed",
-    "kind": "class",
-    "longname": "module:@the-/server.mixins.infoMix~InfoMixed",
-    "memberof": "module:@the-/server.mixins.infoMix",
+    "id": "module:@the-/server.helpers.InfoFlusher~infoFlusher",
+    "kind": "namespace",
+    "longname": "module:@the-/server.helpers.InfoFlusher~infoFlusher",
+    "memberof": "module:@the-/server.helpers.InfoFlusher",
     "meta": {
-      "filename": "infoMix.js",
-      "lineno": 20,
-      "path": "lib/mixins"
+      "filename": "InfoFlusher.js",
+      "lineno": 19,
+      "path": "lib/helpers"
     },
-    "name": "InfoMixed",
-    "order": 38,
+    "name": "infoFlusher",
+    "order": 26,
     "scope": "inner"
   },
   {
-    "id": "module:@the-/server.mixins.metricsMix~MetricsMix",
-    "kind": "class",
-    "longname": "module:@the-/server.mixins.metricsMix~MetricsMix",
-    "memberof": "module:@the-/server.mixins.metricsMix",
+    "id": "module:@the-/server.helpers.metricsMix~metricsCounter",
+    "kind": "namespace",
+    "longname": "module:@the-/server.helpers.metricsMix~metricsCounter",
+    "memberof": "module:@the-/server.helpers.metricsMix",
     "meta": {
-      "filename": "metricsMix.js",
-      "lineno": 11,
-      "path": "lib/mixins"
+      "filename": "MetricsCounter.js",
+      "lineno": 18,
+      "path": "lib/helpers"
     },
-    "name": "MetricsMix",
-    "order": 44,
+    "name": "metricsCounter",
+    "order": 30,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/server.helpers.RPCKeeper~rpcKeeper",
+    "kind": "namespace",
+    "longname": "module:@the-/server.helpers.RPCKeeper~rpcKeeper",
+    "memberof": "module:@the-/server.helpers.RPCKeeper",
+    "meta": {
+      "filename": "RPCKeeper.js",
+      "lineno": 13,
+      "path": "lib/helpers"
+    },
+    "name": "rpcKeeper",
+    "order": 33,
     "scope": "inner"
   }
 ]
