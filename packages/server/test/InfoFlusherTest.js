@@ -1,10 +1,10 @@
 /**
- * Test for MetricsCounter.
+ * Test for InfoFlusher.
  * Runs with mocha.
  */
 'use strict'
 
-describe('metrics-counter', () => {
+describe('info-flusher', () => {
   before(() => {})
 
   after(() => {})

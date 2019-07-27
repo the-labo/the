@@ -33,16 +33,14 @@ const {
   streamPool,
   toControllerModuleBind,
 } = require('./helpers')
+const InfoFlusher = require('./helpers/InfoFlusher')
 const MetricsCounter = require('./helpers/MetricsCounter')
-const { clientMix, infoMix, keepMix } = require('./mixins')
+const { clientMix, keepMix } = require('./mixins')
 const { ConnectionStore, SessionStore } = require('./stores')
 
 const debug = require('debug')('the:server')
 
-const TheServerBase = [infoMix, keepMix, clientMix].reduce(
-  (C, mix) => mix(C),
-  RFunc,
-)
+const TheServerBase = [keepMix, clientMix].reduce((C, mix) => mix(C), RFunc)
 
 const asAppScope = (...values) => {
   const appScope = Object.assign({}, ...values, {})
@@ -185,6 +183,19 @@ class TheServer extends TheServerBase {
     void this.ioConnector.sendToIOClient(cid, event, values, { pack: true })
   }
 
+  /** Server info */
+  info() {
+    const { metricsCounter } = this
+    return {
+      ...(this.additionalInfo || {}),
+      alive: !this.closeAt,
+      controllers: this.controllerSpecs,
+      langs: this.langs,
+      metrics: metricsCounter && metricsCounter.counts,
+      uptime: new Date() - this.listenAt,
+    }
+  }
+
   async cleanupController(cid, controllerName) {
     const instance = await this.instantiateController(controllerName, cid)
     await instance.reloadSession()
@@ -204,9 +215,10 @@ class TheServer extends TheServerBase {
     if (this.closeAt) {
       throw new Error('[TheServer] Already closed')
     }
+    const { infoFlusher } = this
     this.closeAt = new Date()
     this.listenAt = null
-    void this.stopInfoFlush()
+    void infoFlusher.stopInfoFlush()
     void this.stopAllKeepTimers()
     const closed = await super.close(...args)
     this.connectionStore.closed = true
@@ -285,7 +297,8 @@ class TheServer extends TheServerBase {
     const server = http.createServer(this.app.callback())
     this.server = server
     const io = socketIO(server)
-    void this.startInfoFlush(this.infoFile)
+    const infoFlusher = InfoFlusher(this.infoFile, () => this.info())
+    void infoFlusher.startInfoFlush()
     this.closeRedisAdapter = redisAdapter(io, this.redisConfig)
     const metricsCounter = MetricsCounter()
     this.metricsCounter = metricsCounter

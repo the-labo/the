@@ -7,6 +7,7 @@
  */
 'use strict'
 
+const InfoFlusher_ = require('./InfoFlusher')
 const MetricsCounter_ = require('./MetricsCounter')
 const asStrictSession_ = require('./asStrictSession')
 const callbacksProxy_ = require('./callbacksProxy')
@@ -20,6 +21,7 @@ const toControllerModuleBind_ = require('./toControllerModuleBind')
 const toLowerKeys_ = require('./toLowerKeys')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
+exports.InfoFlusher = InfoFlusher_
 exports.MetricsCounter = MetricsCounter_
 exports.asStrictSession = asStrictSession_
 exports.callbacksProxy = callbacksProxy_
@@ -33,6 +35,7 @@ exports.toControllerModuleBind = toControllerModuleBind_
 exports.toLowerKeys = toLowerKeys_
 
 module.exports = {
+  InfoFlusher: InfoFlusher_,
   MetricsCounter: MetricsCounter_,
   asStrictSession: asStrictSession_,
   callbacksProxy: callbacksProxy_,
