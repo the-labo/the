@@ -35,12 +35,13 @@ const {
 } = require('./helpers')
 const InfoFlusher = require('./helpers/InfoFlusher')
 const MetricsCounter = require('./helpers/MetricsCounter')
-const { clientMix, keepMix } = require('./mixins')
+const RPCKeeper = require('./helpers/RPCKeeper')
+const { clientMix } = require('./mixins')
 const { ConnectionStore, SessionStore } = require('./stores')
 
 const debug = require('debug')('the:server')
 
-const TheServerBase = [keepMix, clientMix].reduce((C, mix) => mix(C), RFunc)
+const TheServerBase = [clientMix].reduce((C, mix) => mix(C), RFunc)
 
 const asAppScope = (...values) => {
   const appScope = Object.assign({}, ...values, {})
@@ -160,7 +161,7 @@ class TheServer extends TheServerBase {
     this.infoFile = infoFile
     this.streamPool = streamPool({})
     this.streamClasses = streamClasses
-    this.setKeepDuration(rpcKeepDuration)
+    this.rpcKeepDuration = rpcKeepDuration
     this.rpcInvocations = {}
   }
 
@@ -215,11 +216,11 @@ class TheServer extends TheServerBase {
     if (this.closeAt) {
       throw new Error('[TheServer] Already closed')
     }
-    const { infoFlusher } = this
+    const { infoFlusher, rpcKeeper } = this
     this.closeAt = new Date()
     this.listenAt = null
     void infoFlusher.stopInfoFlush()
-    void this.stopAllKeepTimers()
+    void rpcKeeper.stopAllKeepTimers()
     const closed = await super.close(...args)
     this.connectionStore.closed = true
     await asleep(100) // Wait to flush
@@ -299,10 +300,11 @@ class TheServer extends TheServerBase {
     const io = socketIO(server)
     const infoFlusher = InfoFlusher(this.infoFile, () => this.info())
     void infoFlusher.startInfoFlush()
+    this.infoFlusher = infoFlusher
     this.closeRedisAdapter = redisAdapter(io, this.redisConfig)
     const metricsCounter = MetricsCounter()
     this.metricsCounter = metricsCounter
-    this.ioConnector = IOConnector(io, {
+    const ioConnector = IOConnector(io, {
       connectionStore: this.connectionStore,
       onIOClientCame: async (cid, socketId, client) => {
         await this.saveClientSocket(cid, socketId, client)
@@ -316,7 +318,7 @@ class TheServer extends TheServerBase {
       },
 
       onIOClientGone: async (cid, socketId, reason) => {
-        const { sessionCache } = this
+        const { rpcKeeper, sessionCache } = this
         const hasConnection = await this.hasClientConnection(cid)
         if (!hasConnection) {
           console.warn('[TheServer] Connection already gone for cid:', cid)
@@ -334,7 +336,7 @@ class TheServer extends TheServerBase {
           }
         }
         this.streamPool.cleanup(cid)
-        this.stopKeepTimersFor(cid)
+        rpcKeeper.stopKeepTimersFor(cid)
 
         await this.removeClientSocket(cid, socketId, reason)
       },
@@ -344,11 +346,13 @@ class TheServer extends TheServerBase {
       },
 
       onIORPCCall: async (cid, socketId, config) => {
+        const { rpcKeeper } = this
         const { iid, methodName, moduleName, params } = config
         const controller = this.controllerModules[moduleName]
         const controllerName =
           controller.controllerName || controller.name || moduleName
-        this.startKeepTimer(cid, iid, { controllerName })
+
+        rpcKeeper.startKeepTimer(cid, iid, { controllerName })
         await asleep(10 * Math.random())
         let data
         let errors
@@ -369,7 +373,7 @@ class TheServer extends TheServerBase {
           })
           errors = [error]
         } finally {
-          this.stopKeepTimerIfNeeded(cid, iid)
+          rpcKeeper.stopKeepTimerIfNeeded(cid, iid)
           delete this.rpcInvocations[cid][iid]
         }
         if (this.closed) {
@@ -419,8 +423,6 @@ class TheServer extends TheServerBase {
           throw new Error(`[TheServer] Unknown stream: ${streamName}`)
         }
 
-        const { ioConnector } = this
-
         class Stream extends Class {
           async streamDidCatch(error) {
             const result = await super.streamDidCatch(error)
@@ -465,6 +467,13 @@ class TheServer extends TheServerBase {
         await stream.open()
       },
     })
+    const rpcKeeper = RPCKeeper({
+      ioConnector,
+      keepDuration: this.rpcKeepDuration,
+      metricsCounter,
+    })
+    this.rpcKeeper = rpcKeeper
+    this.ioConnector = ioConnector
     await new Promise((resolve) => server.listen(port, () => resolve())).then(
       () => this,
     )
