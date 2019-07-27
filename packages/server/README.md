@@ -144,11 +144,10 @@ const { createElement: c } = React
   - [#reloadSession(options)](./doc/api/api.md#ControllerModuleBind#reloadSession)
   - [#saveSession(options)](./doc/api/api.md#ControllerModuleBind#saveSession)
 - global
+  - [ControllerPool()](./doc/api/api.md#ControllerPool)
   - [IOEvents()](./doc/api/api.md#IOEvents)
-  - [KeepMixed](./doc/api/api.md#KeepMixed)
 - module:@the-/server
   - [.adapters](./doc/api/api.md#module_@the-/server.adapters)
-  - [.asControllerModule()](./doc/api/api.md#module_@the-/server.asControllerModule)
   - [.assert](./doc/api/api.md#module_@the-/server.assert)
   - [.buildInEndpoints](./doc/api/api.md#module_@the-/server.buildInEndpoints)
   - [.connectors](./doc/api/api.md#module_@the-/server.connectors)
@@ -172,28 +171,29 @@ const { createElement: c } = React
   - [.callbacksProxy()](./doc/api/api.md#module_@the-/server.helpers.callbacksProxy)
   - [.controllerSpecsFor()](./doc/api/api.md#module_@the-/server.helpers.controllerSpecsFor)
   - [.ctxInjector(creators)](./doc/api/api.md#module_@the-/server.helpers.ctxInjector)
+  - [.InfoFlusher(filename,getter)](./doc/api/api.md#module_@the-/server.helpers.InfoFlusher)
   - [.langDetector(locales,options)](./doc/api/api.md#module_@the-/server.helpers.langDetector)
+  - [.MetricsCounter()](./doc/api/api.md#module_@the-/server.helpers.MetricsCounter)
   - [.queryFromUrl()](./doc/api/api.md#module_@the-/server.helpers.queryFromUrl)
+  - [.RPCKeeper(Class)](./doc/api/api.md#module_@the-/server.helpers.RPCKeeper)
   - [.serverRendering(Component,options)](./doc/api/api.md#module_@the-/server.helpers.serverRendering)
   - [.serverRendering()](./doc/api/api.md#module_@the-/server.helpers.serverRendering)
   - [.streamPool()](./doc/api/api.md#module_@the-/server.helpers.streamPool)
   - [.toControllerModuleBind()](./doc/api/api.md#module_@the-/server.helpers.toControllerModuleBind)
   - [.toLowerKeys()](./doc/api/api.md#module_@the-/server.helpers.toLowerKeys)
   - [~StreamPool](./doc/api/api.md#module_@the-/server.helpers~StreamPool)
+- module:@the-/server.helpers.InfoFlusher
+  - [~infoFlusher](./doc/api/api.md#module_@the-/server.helpers.InfoFlusher~infoFlusher)
+- module:@the-/server.helpers.InfoFlusher~infoFlusher
+  - [.flushInfo()](./doc/api/api.md#module_@the-/server.helpers.InfoFlusher~infoFlusher.flushInfo)
+- module:@the-/server.helpers.metricsMix
+  - [~metricsCounter](./doc/api/api.md#module_@the-/server.helpers.metricsMix~metricsCounter)
+- module:@the-/server.helpers.RPCKeeper
+  - [~rpcKeeper](./doc/api/api.md#module_@the-/server.helpers.RPCKeeper~rpcKeeper)
 - module:@the-/server.mixins
   - [.clientMix(Class)](./doc/api/api.md#module_@the-/server.mixins.clientMix)
-  - [.infoMix(Class)](./doc/api/api.md#module_@the-/server.mixins.infoMix)
-  - [.keepMix(Class)](./doc/api/api.md#module_@the-/server.mixins.keepMix)
-  - [.metricsMix(Class)](./doc/api/api.md#module_@the-/server.mixins.metricsMix)
 - module:@the-/server.mixins.clientMix
   - [~ClientMixed](./doc/api/api.md#module_@the-/server.mixins.clientMix~ClientMixed)
-- module:@the-/server.mixins.infoMix
-  - [~InfoMixed](./doc/api/api.md#module_@the-/server.mixins.infoMix~InfoMixed)
-- module:@the-/server.mixins.infoMix~InfoMixed
-  - [#flushInfo()](./doc/api/api.md#module_@the-/server.mixins.infoMix~InfoMixed#flushInfo)
-  - [#info()](./doc/api/api.md#module_@the-/server.mixins.infoMix~InfoMixed#info)
-- module:@the-/server.mixins.metricsMix
-  - [~MetricsMix](./doc/api/api.md#module_@the-/server.mixins.metricsMix~MetricsMix)
 - module:@the-/server.stores
   - [.ConnectionStore](./doc/api/api.md#module_@the-/server.stores.ConnectionStore)
   - [.SessionStore](./doc/api/api.md#module_@the-/server.stores.SessionStore)
@@ -217,6 +217,7 @@ const { createElement: c } = React
 - module:@the-/server.TheServer
   - [#close(args)](./doc/api/api.md#module_@the-/server.TheServer#close)
   - [#destroyAllSessions()](./doc/api/api.md#module_@the-/server.TheServer#destroyAllSessions)
+  - [#info()](./doc/api/api.md#module_@the-/server.TheServer#info)
   - [#listen(port)](./doc/api/api.md#module_@the-/server.TheServer#listen)
 
 See [API Guide](./doc/api/api.md) for more detail

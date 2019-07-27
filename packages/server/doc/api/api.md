@@ -23,7 +23,7 @@
 ## @the-/server
 HTTP/RPC Server of the-framework
 
-**Version**: 16.0.6  
+**Version**: 16.0.10  
 **License**: MIT  
 
 * [@the-/server](#module_@the-/server)
@@ -46,7 +46,6 @@ HTTP/RPC Server of the-framework
         * _static_
             * [.asStrictSession(session)](#module_@the-/server.helpers.asStrictSession)
             * [.callbacksProxy()](#module_@the-/server.helpers.callbacksProxy) ⇒ <code>Proxy</code>
-            * [.controllerSpecsFor()](#module_@the-/server.helpers.controllerSpecsFor)
             * [.ctxInjector(creators)](#module_@the-/server.helpers.ctxInjector) ⇒ <code>function</code>
             * [.InfoFlusher(filename, getter)](#module_@the-/server.helpers.InfoFlusher) ⇒ <code>Object</code>
                 * [~infoFlusher](#module_@the-/server.helpers.InfoFlusher..infoFlusher) : <code>object</code>
@@ -59,7 +58,7 @@ HTTP/RPC Server of the-framework
             * [.serverRendering(Component, [options])](#module_@the-/server.helpers.serverRendering) ⇒ <code>function</code>
             * [.serverRendering()](#module_@the-/server.helpers.serverRendering)
             * [.streamPool()](#module_@the-/server.helpers.streamPool)
-            * [.toControllerModuleBind()](#module_@the-/server.helpers.toControllerModuleBind) ⇒ <code>function</code>
+            * [.toControllerFactory()](#module_@the-/server.helpers.toControllerFactory) ⇒ <code>function</code>
             * [.toLowerKeys()](#module_@the-/server.helpers.toLowerKeys)
         * _inner_
             * [~StreamPool](#module_@the-/server.helpers..StreamPool)
@@ -221,7 +220,6 @@ Helper functions
     * _static_
         * [.asStrictSession(session)](#module_@the-/server.helpers.asStrictSession)
         * [.callbacksProxy()](#module_@the-/server.helpers.callbacksProxy) ⇒ <code>Proxy</code>
-        * [.controllerSpecsFor()](#module_@the-/server.helpers.controllerSpecsFor)
         * [.ctxInjector(creators)](#module_@the-/server.helpers.ctxInjector) ⇒ <code>function</code>
         * [.InfoFlusher(filename, getter)](#module_@the-/server.helpers.InfoFlusher) ⇒ <code>Object</code>
             * [~infoFlusher](#module_@the-/server.helpers.InfoFlusher..infoFlusher) : <code>object</code>
@@ -234,7 +232,7 @@ Helper functions
         * [.serverRendering(Component, [options])](#module_@the-/server.helpers.serverRendering) ⇒ <code>function</code>
         * [.serverRendering()](#module_@the-/server.helpers.serverRendering)
         * [.streamPool()](#module_@the-/server.helpers.streamPool)
-        * [.toControllerModuleBind()](#module_@the-/server.helpers.toControllerModuleBind) ⇒ <code>function</code>
+        * [.toControllerFactory()](#module_@the-/server.helpers.toControllerFactory) ⇒ <code>function</code>
         * [.toLowerKeys()](#module_@the-/server.helpers.toLowerKeys)
     * _inner_
         * [~StreamPool](#module_@the-/server.helpers..StreamPool)
@@ -255,10 +253,6 @@ Callback proxy
 
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
 **Returns**: <code>Proxy</code> - Proxy instance  
-<a name="module_@the-/server.helpers.controllerSpecsFor"></a>
-
-#### helpers.controllerSpecsFor()
-**Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
 <a name="module_@the-/server.helpers.ctxInjector"></a>
 
 #### helpers.ctxInjector(creators) ⇒ <code>function</code>
@@ -358,9 +352,9 @@ Define koa middleware function to do serverside rendering
 Stream pool
 
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
-<a name="module_@the-/server.helpers.toControllerModuleBind"></a>
+<a name="module_@the-/server.helpers.toControllerFactory"></a>
 
-#### helpers.toControllerModuleBind() ⇒ <code>function</code>
+#### helpers.toControllerFactory() ⇒ <code>function</code>
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
 <a name="module_@the-/server.helpers.toLowerKeys"></a>
 

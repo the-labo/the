@@ -1,7 +1,7 @@
 'use strict'
 /**
  * @memberof module:@the-/server.helpers
- * @function toControllerModuleBind
+ * @function toControllerFactory
  * @returns {function()}
  */
 const { unlessProduction } = require('@the-/check')
@@ -13,8 +13,8 @@ const { assertMethods } = require('../assert')
 
 const innerMethodNames = ['reloadSession', 'saveSession', 'useController']
 
-/** @lends module:@the-/server.helpers.toControllerModuleBind */
-function toControllerModuleBind(Class, options = {}) {
+/** @lends module:@the-/server.helpers.toControllerFactory */
+function toControllerFactory(Class, options = {}) {
   unlessProduction(() => {
     if (!Class) {
       throw new Error(
@@ -25,16 +25,7 @@ function toControllerModuleBind(Class, options = {}) {
   })
   const { sessionCache, sessionStore } = options
 
-  class ControllerModuleBind extends Class {
-    static describe(config) {
-      const prototype = new ControllerModuleBind(config)
-      const descriptors = getAllPropertyDescriptors(prototype)
-      const methods = instanceMethodNamesFor(prototype, descriptors).filter(
-        (name) => !innerMethodNames.includes(name),
-      )
-      return { methods }
-    }
-
+  class ControllerFactoryClass extends Class {
     constructor(...args) {
       super(...args)
       this._needsToSaveSession = false
@@ -96,18 +87,52 @@ function toControllerModuleBind(Class, options = {}) {
     }
   }
 
-  return ControllerModuleBind
+  const ControllerFactory = (config) => new ControllerFactoryClass(config)
+
+  ControllerFactory.describe = (config) => {
+    const prototype = new ControllerFactoryClass(config)
+    const descriptors = getAllPropertyDescriptors(prototype)
+    const methods = instanceMethodNamesFor(prototype, descriptors).filter(
+      (name) => !innerMethodNames.includes(name),
+    )
+    return { methods }
+  }
+
+  ControllerFactory.toSpec = (controllerName, config) => {
+    const { methods } = ControllerFactory.describe(config)
+    return {
+      methods: Object.assign(
+        {},
+        ...methods.map((name) => ({
+          [name]: { desc: `${name}` },
+        })),
+      ),
+      name: controllerName,
+    }
+  }
+
+  ControllerFactory.toModule = (config) => {
+    const { methods } = ControllerFactory.describe(config)
+    return Object.assign(
+      {},
+      ...methods.map((name) => ({
+        [name]: async function stub() {},
+      })),
+    )
+  }
+
+  return ControllerFactory
 }
 
-toControllerModuleBind.all = ({ controllerClasses, ...options }) =>
+toControllerFactory.all = ({ controllerClasses, ...options }) =>
   Object.assign(
     {},
     ...Object.entries(controllerClasses).map(([name, Class]) => ({
-      [name]: toControllerModuleBind(Class, {
+      [name]: toControllerFactory(Class, {
         controllerName: name,
         ...options,
       }),
     })),
   )
 
-module.exports = toControllerModuleBind
+module.exports = toControllerFactory

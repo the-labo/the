@@ -20,13 +20,13 @@ function IOConnector(
     connectionStore,
     onIOClientCame,
     onIOClientGone,
-    onIORPCAbort,
-    onIORPCCall,
-    onIOStreamChunk,
-    onIOStreamClose,
-    onIOStreamError,
-    onIOStreamFin,
-    onIOStreamOpen,
+    onRPCAbort,
+    onRPCCall,
+    onStreamChunk,
+    onStreamClose,
+    onStreamError,
+    onStreamFin,
+    onStreamOpen,
   },
 ) {
   const isIOSocketExists = (socketId) => {
@@ -47,26 +47,26 @@ function IOConnector(
       void onIOClientCame(cid, socketId, client)
       socket.on(IOEvents.RPC_CALL, (config) => {
         config = decode(config)
-        void onIORPCCall(cid, socketId, config, { pack: true })
+        void onRPCCall(cid, socketId, config, { pack: true })
       })
       socket.on(IOEvents.RPC_ABORT, (config) => {
         config = decode(config)
-        void onIORPCAbort(cid, socketId, config)
+        void onRPCAbort(cid, socketId, config)
       })
       socket.on(IOEvents.DISCONNECT, (reason) => {
         void onIOClientGone(cid, socketId, reason)
       })
       socket.on(IOEvents.STREAM_FIN, (config = {}) => {
-        void onIOStreamFin(cid, socketId, config)
+        void onStreamFin(cid, socketId, config)
       })
       socket.on(IOEvents.STREAM_OPEN, (config = {}) => {
-        onIOStreamOpen(cid, socketId, config).catch(onIOStreamError)
+        onStreamOpen(cid, socketId, config).catch(onStreamError)
         const { sid } = config
         const onChunk = (chunk) => {
-          onIOStreamChunk(cid, socketId, {
+          onStreamChunk(cid, socketId, {
             chunk,
             sid,
-          }).catch(onIOStreamError)
+          }).catch(onStreamError)
         }
         socket.on(`${IOEvents.STREAM_CHUNK}/${sid}`, onChunk)
         const onClose = async (config = {}) => {
@@ -74,7 +74,7 @@ function IOConnector(
             return
           }
           await asleep(0) // Next tick
-          onIOStreamClose(cid, socketId, config).catch(onIOStreamError)
+          onStreamClose(cid, socketId, config).catch(onStreamError)
           socket.off(`${IOEvents.STREAM_CHUNK}/${sid}`, onChunk)
           socket.off(IOEvents.STREAM_CLOSE, onClose)
         }

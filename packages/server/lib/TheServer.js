@@ -26,12 +26,11 @@ const DefaultValues = require('./constants/DefaultValues')
 const IOEvents = require('./constants/IOEvents')
 const {
   callbacksProxy,
-  controllerSpecsFor,
   ctxInjector,
   langDetector,
   serversideRendering,
   streamPool,
-  toControllerModuleBind,
+  toControllerFactory,
 } = require('./helpers')
 const ControllerPool = require('./helpers/ControllerPool')
 const InfoFlusher = require('./helpers/InfoFlusher')
@@ -97,26 +96,25 @@ class TheServer extends TheServerBase {
       max: 10000,
       maxAge: 1000 * 30,
     })
-    const ControllerModuleBinds = toControllerModuleBind.all({
+    const ControllerFactories = toControllerFactory.all({
       controllerClasses,
       sessionCache,
       sessionStore,
     })
+    const controllerPrototypeConfig = { app: appScope }
     const controllerModules = Object.assign(
       {},
-      ...Object.entries(ControllerModuleBinds).map(
-        ([controllerName, ControllerModuleBind]) => {
-          const { methods } = ControllerModuleBind.describe({ app: appScope })
-          return {
-            [controllerName]: Object.assign(
-              {},
-              ...methods.map((name) => ({
-                [name]: async function stub() {},
-              })),
-            ),
-          }
-        },
+      ...Object.entries(ControllerFactories).map(
+        ([controllerName, ControllerFactory]) => ({
+          [controllerName]: ControllerFactory.toModule(
+            controllerPrototypeConfig,
+          ),
+        }),
       ),
+    )
+    const controllerSpecs = Object.entries(ControllerFactories).map(
+      ([controllerName, ControllerFactory]) =>
+        ControllerFactory.toSpec(controllerName, controllerPrototypeConfig),
     )
 
     super({
@@ -142,7 +140,7 @@ class TheServer extends TheServerBase {
       this.app.use(renderer)
     }
     this.additionalInfo = info
-    this.ControllerModuleBinds = ControllerModuleBinds
+    this.ControllerFactories = ControllerFactories
     this.storage = storage
     this.appScope = appScope
     this.redisConfig = redisConfig
@@ -150,8 +148,7 @@ class TheServer extends TheServerBase {
     this.sessionCache = sessionCache
     this.connectionStore = connectionStore
     this.controllerInstances = {}
-    this.controllerModules = controllerModules
-    this.controllerSpecs = controllerSpecsFor(controllerModules)
+    this.controllerSpecs = controllerSpecs
     this.langs = langs
     this.handleCallback = this.handleCallback.bind(this)
     this.io = null
@@ -236,8 +233,8 @@ class TheServer extends TheServerBase {
   }
 
   async instantiateController(controllerName, cid) {
-    const ControllerModuleBind = this.ControllerModuleBinds[controllerName]
-    if (!ControllerModuleBind) {
+    const ControllerFactory = this.ControllerFactories[controllerName]
+    if (!ControllerFactory) {
       throw new Error(`[TheServer] Unknown controller: ${controllerName}`)
     }
     if (!cid) {
@@ -256,7 +253,7 @@ class TheServer extends TheServerBase {
       throw new Error(`[TheServer] Connection not found for: ${cid}`)
     }
     const { client = { cid } } = connection
-    const instance = new ControllerModuleBind({
+    const instance = ControllerFactory({
       app: appScope,
       callbacks: callbacksProxy({
         client,
@@ -297,7 +294,8 @@ class TheServer extends TheServerBase {
       connectionStore: this.connectionStore,
       onIOClientCame: async (cid, socketId, client) => {
         await this.saveClientSocket(cid, socketId, client)
-        for (const { name: controllerName } of this.controllerSpecs) {
+        const controllerNames = Object.keys(this.ControllerFactories)
+        for (const controllerName of controllerNames) {
           const instance = await this.instantiateController(controllerName, cid)
           await instance.reloadSession()
           await instance.controllerDidAttach()
@@ -334,11 +332,11 @@ class TheServer extends TheServerBase {
         await this.removeClientSocket(cid, socketId, reason)
       },
 
-      onIORPCAbort: async () => {
+      onRPCAbort: async () => {
         // TODO Support aborting RPC Call
       },
 
-      onIORPCCall: async (cid, socketId, config) => {
+      onRPCCall: async (cid, socketId, config) => {
         const { rpcKeeper } = this
         const { iid, methodName, moduleName, params } = config
         const instance = controllerPool.get(cid, socketId, moduleName)
@@ -379,7 +377,6 @@ class TheServer extends TheServerBase {
             })
           }
           await instance.saveSession()
-          console.log('data', data, params)
         } catch (e) {
           const error = { ...e }
           delete error.stack
@@ -401,13 +398,13 @@ class TheServer extends TheServerBase {
         }
       },
 
-      onIOStreamChunk: async (cid, socketId, config) => {
+      onStreamChunk: async (cid, socketId, config) => {
         const { chunk, sid } = config
         const stream = this.streamPool.getInstance(cid, sid)
         await stream.push(chunk)
       },
 
-      onIOStreamClose: async (cid, socketId, config) => {
+      onStreamClose: async (cid, socketId, config) => {
         await asleep(10)
         const { sid } = config
         const stream = this.streamPool.getInstance(cid, sid)
@@ -415,12 +412,12 @@ class TheServer extends TheServerBase {
         await stream.close()
       },
 
-      onIOStreamError: async (e) => {
+      onStreamError: async (e) => {
         // TODO
         console.error('[TheServer] Stream error:', e)
       },
 
-      onIOStreamFin: async (cid, socketId, config) => {
+      onStreamFin: async (cid, socketId, config) => {
         const { sid } = config
         const exists = this.streamPool.hasInstance(cid, sid)
         if (!exists) {
@@ -431,7 +428,7 @@ class TheServer extends TheServerBase {
         await stream.pushEnd()
       },
 
-      onIOStreamOpen: async (cid, socketId, config) => {
+      onStreamOpen: async (cid, socketId, config) => {
         const { params, sid, streamName } = config
         const Class = this.streamClasses[streamName]
         if (!Class) {
