@@ -2,17 +2,24 @@
 /**
  * Entry component
  * @memberof module:@the-/context.helpers
- * @class ContextEntry
+ * @function contextEntryFor
  */
 const { shallowEqual } = require('asobj')
 const memoizeOne = require('memoize-one')
 const PropTypes = require('prop-types')
 const React = require('react')
 
-const ComponentWithRenderer = memoizeOne((renderer) => React.memo(renderer))
+const ComponentWithRenderer = (memoizeOne.default || memoizeOne)((renderer) =>
+  React.memo(renderer),
+)
 
 /** @lends module:@the-/context.helpers.contextEntryFor */
 function contextEntryFor(context, { store }) {
+  /**
+   * @memberof module:@the-/context.helpers.contextEntryFor
+   * @inner
+   * @class ContextEntry
+   */
   class ContextEntry extends React.Component {
     constructor(props) {
       super(props)

@@ -135,11 +135,7 @@ const { createElement: c } = React
 ## API Guide
 
 
-- ControllerFactoryClass
-  - [#reloadSession(options)](./doc/api/api.md#ControllerFactoryClass#reloadSession)
-  - [#saveSession(options)](./doc/api/api.md#ControllerFactoryClass#saveSession)
 - global
-  - [ControllerPool()](./doc/api/api.md#ControllerPool)
   - [IOEvents()](./doc/api/api.md#IOEvents)
 - module:@the-/server
   - [.adapters](./doc/api/api.md#module_@the-/server.adapters)
@@ -173,8 +169,9 @@ const { createElement: c } = React
   - [.serverRendering(Component,options)](./doc/api/api.md#module_@the-/server.helpers.serverRendering)
   - [.serverRendering()](./doc/api/api.md#module_@the-/server.helpers.serverRendering)
   - [.streamPool()](./doc/api/api.md#module_@the-/server.helpers.streamPool)
-  - [.toControllerFactory()](./doc/api/api.md#module_@the-/server.helpers.toControllerFactory)
+  - [.toControllerDriverFactory()](./doc/api/api.md#module_@the-/server.helpers.toControllerDriverFactory)
   - [.toLowerKeys()](./doc/api/api.md#module_@the-/server.helpers.toLowerKeys)
+  - [.toStreamFactory()](./doc/api/api.md#module_@the-/server.helpers.toStreamFactory)
   - [~StreamPool](./doc/api/api.md#module_@the-/server.helpers~StreamPool)
 - module:@the-/server.helpers.InfoFlusher
   - [~infoFlusher](./doc/api/api.md#module_@the-/server.helpers.InfoFlusher~infoFlusher)
@@ -184,6 +181,9 @@ const { createElement: c } = React
   - [~metricsCounter](./doc/api/api.md#module_@the-/server.helpers.metricsMix~metricsCounter)
 - module:@the-/server.helpers.RPCKeeper
   - [~rpcKeeper](./doc/api/api.md#module_@the-/server.helpers.RPCKeeper~rpcKeeper)
+- module:@the-/server.helpers.toControllerDriverFactory~ControllerDriverFactory
+  - [~reloadSession()](./doc/api/api.md#module_@the-/server.helpers.toControllerDriverFactory~ControllerDriverFactory~reloadSession)
+  - [~saveSession(options)](./doc/api/api.md#module_@the-/server.helpers.toControllerDriverFactory~ControllerDriverFactory~saveSession)
 - module:@the-/server.mixins
   - [.clientMix(Class)](./doc/api/api.md#module_@the-/server.mixins.clientMix)
 - module:@the-/server.mixins.clientMix

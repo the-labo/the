@@ -1,7 +1,7 @@
 {
   "name": "@the-/server",
   "description": "HTTP/RPC Server of the-framework",
-  "version": "16.0.18",
+  "version": "16.0.20",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -24,6 +24,7 @@
     "asfs": "^2.2.3",
     "asleep": "^1.0.3",
     "debug": "^4.1.1",
+    "is-class": "0.0.8",
     "locale": "^0.1.0",
     "qs": "^6.7.0",
     "rfunc": "^4.0.13",

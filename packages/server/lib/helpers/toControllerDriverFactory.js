@@ -4,30 +4,32 @@
  * @function toControllerDriverFactory
  * @returns {function()}
  */
+const isClass = require('is-class')
 const theAssert = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
 const assert = theAssert('@the-/server')
 
 /** @lends module:@the-/server.helpers.toControllerDriverFactory */
 function toControllerDriverFactory(ControllerFactory, options = {}) {
+  const { controllerName } = options
   unlessProduction(() => {
     assert(
       !!ControllerFactory,
-      `[TheServer] Controller "${options.controllerName}" is missing`,
+      `[TheServer] Controller "${controllerName}" is missing`,
     )
 
-    const isClass =
-      !!ControllerFactory.prototype ||
-      /^\s*class/.test(ControllerFactory.toString())
-    assert(!isClass, 'class base ctrl is no longer available')
+    assert(
+      !isClass(ControllerFactory),
+      `class base ctrl is no longer available: "${controllerName}"`,
+    )
   })
 
   const { sessionStore } = options
 
-  const ControllerDriverFactory = (
+  function ControllerDriverFactory(
     controllerName,
     { callbacks = {}, client = {} } = {},
-  ) => {
+  ) {
     const { cid } = client
     const state = {
       needsToSaveSession: false,
@@ -110,6 +112,7 @@ toControllerDriverFactory.all = (Controllers, options = {}) =>
     {},
     ...Object.entries(Controllers).map(([controllerName, Controller]) => ({
       [controllerName]: toControllerDriverFactory(Controller, {
+        controllerName,
         ...options,
       }),
     })),

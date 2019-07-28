@@ -10,8 +10,7 @@
  * @class StreamPool
  */
 class StreamPool {
-  constructor({ streamClasses }) {
-    this.streamClasses = streamClasses
+  constructor({}) {
     this.instances = {}
   }
 

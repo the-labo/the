@@ -1,7 +1,7 @@
 {
-  "name": "@the-/context",
-  "description": "React context for the-components",
-  "version": "16.0.5",
+  "name": "@the-/util-ctrl",
+  "description": "Utility for controllers",
+  "version": "15.4.8",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,31 +11,19 @@
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
-  "dependencies": {
-    "@the-/assert": "^15.4.1",
-    "@the-/state": "^15.4.2",
-    "memoize-one": "^5.0.5",
-    "prop-types": "^15.7.2"
-  },
-  "devDependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "engines": {
     "node": ">=10",
     "npm": ">=6"
   },
-  "homepage": "https://github.com/the-labo/the/tree/master/packages/context#readme",
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/util-ctrl#readme",
   "keywords": [
-    "lib",
-    "the"
+    "the",
+    "util"
   ],
   "license": "MIT",
   "main": "lib",
-  "peerDependencies": {
-    "react": ">=16",
-    "react-dom": ">=16"
-  },
   "publishConfig": {
     "access": "public"
   },
