@@ -11,6 +11,7 @@ const ControllerDriverPool_ = require('./ControllerDriverPool')
 const InfoFlusher_ = require('./InfoFlusher')
 const MetricsCounter_ = require('./MetricsCounter')
 const RPCKeeper_ = require('./RPCKeeper')
+const SessionAccess_ = require('./SessionAccess')
 const asStrictSession_ = require('./asStrictSession')
 const callbacksProxy_ = require('./callbacksProxy')
 const ctxInjector_ = require('./ctxInjector')
@@ -25,6 +26,7 @@ exports.ControllerDriverPool = ControllerDriverPool_
 exports.InfoFlusher = InfoFlusher_
 exports.MetricsCounter = MetricsCounter_
 exports.RPCKeeper = RPCKeeper_
+exports.SessionAccess = SessionAccess_
 exports.asStrictSession = asStrictSession_
 exports.callbacksProxy = callbacksProxy_
 exports.ctxInjector = ctxInjector_
@@ -39,6 +41,7 @@ module.exports = {
   InfoFlusher: InfoFlusher_,
   MetricsCounter: MetricsCounter_,
   RPCKeeper: RPCKeeper_,
+  SessionAccess: SessionAccess_,
   asStrictSession: asStrictSession_,
   callbacksProxy: callbacksProxy_,
   ctxInjector: ctxInjector_,

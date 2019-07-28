@@ -1,7 +1,7 @@
 {
   "name": "@the-/server",
   "description": "HTTP/RPC Server of the-framework",
-  "version": "16.0.23",
+  "version": "16.0.24",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,7 +14,6 @@
     "@the-/assert": "^15.4.1",
     "@the-/cache": "^15.5.1",
     "@the-/check": "^15.5.3",
-    "@the-/mixin-controller": "^15.4.1",
     "@the-/pack": "^15.4.11",
     "@the-/stream": "^15.4.1",
     "@the-/tmp": "^15.4.5",

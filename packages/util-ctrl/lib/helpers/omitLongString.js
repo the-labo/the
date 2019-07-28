@@ -1,8 +1,10 @@
-'use strict'
 /**
+ * @memberof module:@the-/util-ctrl
  * @function omitLongString
  */
-/** @lends omitLongString */
+'use strict'
+
+/** @lends module:@the-/util-ctrl.omitLongString */
 function omitLongString(value, options = {}) {
   const { __recursiveDeps = 0, maxLength = 100 } = options
   if (__recursiveDeps > 4) {

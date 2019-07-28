@@ -1,0 +1,82 @@
+[
+  {
+    "description": "Utility for controllers",
+    "id": "module:@the-/util-ctrl",
+    "kind": "module",
+    "license": "MIT",
+    "longname": "module:@the-/util-ctrl",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 2,
+      "path": "lib"
+    },
+    "name": "@the-/util-ctrl",
+    "order": 0,
+    "typicalname": "utilCtrl",
+    "version": "15.4.11"
+  },
+  {
+    "description": "helpers functions",
+    "id": "module:@the-/util-ctrl.helpers",
+    "kind": "namespace",
+    "longname": "module:@the-/util-ctrl.helpers",
+    "memberof": "module:@the-/util-ctrl",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 2,
+      "path": "lib/helpers"
+    },
+    "name": "helpers",
+    "order": 2,
+    "scope": "static"
+  },
+  {
+    "description": "Wrap controller with debug",
+    "id": "module:@the-/util-ctrl.withDebug",
+    "kind": "function",
+    "longname": "module:@the-/util-ctrl.withDebug",
+    "memberof": "module:@the-/util-ctrl",
+    "meta": {
+      "filename": "withDebug.js",
+      "lineno": 2,
+      "path": "lib"
+    },
+    "name": "withDebug",
+    "order": 1,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "ctrl"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Wrapped ctrl"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/util-ctrl.omitLongString",
+    "kind": "function",
+    "longname": "module:@the-/util-ctrl.omitLongString",
+    "memberof": "module:@the-/util-ctrl",
+    "meta": {
+      "filename": "omitLongString.js",
+      "lineno": 1,
+      "path": "lib/helpers"
+    },
+    "name": "omitLongString",
+    "order": 3,
+    "scope": "static"
+  }
+]

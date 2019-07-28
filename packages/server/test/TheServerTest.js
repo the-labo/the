@@ -347,20 +347,20 @@ describe('the-server', function() {
     const port = await aport()
     const server = new TheServer({
       streams: {
-        hogeStream: class extends TheServer.Stream {
+        hogeStream: ({ handle, params }) => ({
           async *provide() {
-            let count = Number(this.params.count)
+            let count = Number(params.count)
             while (count > 0) {
-              if (this.closed) {
+              if (handle.closed) {
                 return
               }
               yield { count }
               count--
               await asleep(1)
             }
-            void this.close()
-          }
-        },
+            void handle.close()
+          },
+        }),
       },
     })
     await server.listen(port)
@@ -444,17 +444,17 @@ describe('the-server', function() {
     const port = await aport()
     const server = new TheServer({
       streams: {
-        xStream: class extends TheServer.Stream {
+        xStream: ({ params }) => ({
           async *provide() {
-            const count = Number(this.params.count)
+            const count = Number(params.count)
             for (let i = 0; i < count; i++) {
               yield i
             }
-          }
-        },
-        yStream: class extends TheServer.Stream {
-          async consume(chunks) {}
-        },
+          },
+        }),
+        yStream: () => ({
+          async consume() {},
+        }),
       },
     })
     await server.listen(port)

@@ -4,12 +4,12 @@ const { dir } = require('@the-/templates')
 const pkg = require('../../package')
 
 module.exports = dir({
-  cjs: true,
   annotations: {
     description: 'helpers functions',
+    memberof: `module:${pkg.name}`,
     namespace: 'helpers',
-    memberof: `module:${pkg.name}`
   },
+  cjs: true,
   dirname: __dirname,
 })
 

@@ -1,7 +1,6 @@
 'use strict'
 const React = require('react')
 const theServer = require('@the-/server')
-const { Stream } = theServer
 const { createElement: c } = React
 
 ;(async () => {
@@ -23,15 +22,15 @@ const { createElement: c } = React
   }
 
   // Define real time event handling stream
-  class CountdownStream extends Stream {
+  const CountdownStream = ({ params }) => ({
     async *provide() {
-      this.count = this.params.count || 100
-      while (this.count > 0) {
-        yield { count: this.count }
-        this.count--
+      let count = params.count || 100
+      while (count > 0) {
+        yield { count }
+        count--
       }
-    }
-  }
+    },
+  })
 
   const server = theServer({
     // Register controller with name

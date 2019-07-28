@@ -1,7 +1,7 @@
 {
   "name": "@the-/util-ctrl",
   "description": "Utility for controllers",
-  "version": "15.4.8",
+  "version": "15.4.11",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,7 +11,11 @@
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@the-/check": "^15.5.3",
+    "asobj": "^3.0.1",
+    "debug": "^4.1.1"
+  },
   "devDependencies": {},
   "engines": {
     "node": ">=10",

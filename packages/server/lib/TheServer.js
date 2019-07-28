@@ -16,7 +16,6 @@ const { RFunc } = require('rfunc')
 const socketIO = require('socket.io')
 const theAssert = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
-const { TheStream } = require('@the-/stream')
 const theTmp = require('@the-/tmp')
 const { redisAdapter } = require('./adapters')
 const buildInEndpoints = require('./buildInEndpoints')
@@ -36,8 +35,8 @@ const MetricsCounter = require('./helpers/MetricsCounter')
 const RPCKeeper = require('./helpers/RPCKeeper')
 const { clientMix } = require('./mixins')
 const { ConnectionStore, SessionStore } = require('./stores')
-const toStreamDriverFactory = require('./streaming/toStreamDriverFactory')
 const streamDriverPool = require('./streaming/streamDriverPool')
+const toStreamDriverFactory = require('./streaming/toStreamDriverFactory')
 const debug = require('debug')('the:server')
 const assert = theAssert('@the-/server')
 
@@ -62,7 +61,7 @@ class TheServer extends TheServerBase {
       sessionCleanupInterval = DefaultValues.SESSION_CLEANUP_INTERVAL,
       sessionExpireDuration = DefaultValues.SESSION_EXPIRE_DURATION,
       static: staticDir,
-      streams: streamClasses = {},
+      streams: Streams = {},
       ...rest
     } = config
     debug('config', config)
@@ -103,10 +102,7 @@ class TheServer extends TheServerBase {
       {},
       ...Object.entries(ControllerDriverFactories).map(
         ([controllerName, ControllerDriverFactory]) => ({
-          [controllerName]: ControllerDriverFactory(
-            controllerName,
-            prototypeCtx,
-          ).controller,
+          [controllerName]: ControllerDriverFactory(prototypeCtx).controller,
         }),
       ),
     )
@@ -122,6 +118,10 @@ class TheServer extends TheServerBase {
       }),
     )
 
+    const StreamDriverFactories = toStreamDriverFactory.all(Streams, {
+      inject,
+      sessionStore,
+    })
     super({
       ...prototypeControllers,
       $endpoints: {
@@ -155,9 +155,8 @@ class TheServer extends TheServerBase {
     this.handleCallback = this.handleCallback.bind(this)
     this.infoFile = infoFile
     this.streamDriverPool = streamDriverPool({})
-    this.streamClasses = streamClasses
+    this.StreamDriverFactories = StreamDriverFactories
     this.rpcKeepDuration = rpcKeepDuration
-    this.inject = inject
   }
 
   get closed() {
@@ -232,7 +231,7 @@ class TheServer extends TheServerBase {
       throw new Error(`[TheServer] Connection not found for: ${cid}`)
     }
     const { client = { cid } } = connection
-    return ControllerDriverFactory(controllerName, {
+    return ControllerDriverFactory({
       callbacks: callbacksProxy({
         client,
         controllerName,
@@ -252,11 +251,6 @@ class TheServer extends TheServerBase {
       await driver.reloadSession()
     })
     return sessionStore.delAll()
-  }
-
-  async getSessionFor(cid) {
-    const { sessionStore } = this
-    return (await sessionStore.get(cid)) || {}
   }
 
   /**
@@ -408,32 +402,18 @@ class TheServer extends TheServerBase {
 
       onStreamOpen: async (cid, socketId, config) => {
         const { params, sid, streamName } = config
-        const Class = this.streamClasses[streamName]
-        if (!Class) {
+        const StreamDriverFactory = this.StreamDriverFactories[streamName]
+        if (!StreamDriverFactory) {
           throw new Error(`[TheServer] Unknown stream: ${streamName}`)
         }
-        const StreamDriverFactory = toStreamDriverFactory(Class, {
+        const streamDriver = StreamDriverFactory({
           cid,
           ioConnector,
+          params,
           sid,
         })
-        const { inject } = this
-        const streamDriver = StreamDriverFactory({
-          ...inject(),
-          client: { cid },
-          params,
-        })
-        const { stream } = streamDriver
-        stream.streamName = streamName
-        stream.sid = sid
-        const session = await this.getSessionFor(cid)
-        stream.session = new Proxy(session, {
-          get: (target, k) => target[k],
-          set: () => {
-            throw new Error('[TheServer] Cannot update session from stream')
-          },
-        })
         this.streamDriverPool.setInstance(cid, sid, streamDriver)
+        const { stream } = streamDriver
         await stream.open()
       },
     })
@@ -449,7 +429,5 @@ class TheServer extends TheServerBase {
     )
   }
 }
-
-TheServer.Stream = TheStream
 
 module.exports = TheServer

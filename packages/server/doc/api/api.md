@@ -14,6 +14,12 @@
 <dt><a href="#IOEvents">IOEvents()</a></dt>
 <dd><p>Events for IO</p>
 </dd>
+<dt><a href="#reload">reload()</a> ⇒ <code>Promise.&lt;boolean&gt;</code></dt>
+<dd><p>Reload session from store</p>
+</dd>
+<dt><a href="#save">save([options])</a> ⇒ <code>Promise.&lt;undefined&gt;</code></dt>
+<dd><p>Save session</p>
+</dd>
 </dl>
 
 <a name="module_@the-/server"></a>
@@ -21,7 +27,7 @@
 ## @the-/server
 HTTP/RPC Server of the-framework
 
-**Version**: 16.0.20  
+**Version**: 16.0.24  
 **License**: MIT  
 
 * [@the-/server](#module_@the-/server)
@@ -55,12 +61,11 @@ HTTP/RPC Server of the-framework
                 * [~rpcKeeper](#module_@the-/server.helpers.RPCKeeper..rpcKeeper) : <code>object</code>
             * [.serverRendering(Component, [options])](#module_@the-/server.helpers.serverRendering) ⇒ <code>function</code>
             * [.serverRendering()](#module_@the-/server.helpers.serverRendering)
-            * [.streamPool()](#module_@the-/server.helpers.streamPool)
             * [.toControllerDriverFactory()](#module_@the-/server.helpers.toControllerDriverFactory) ⇒ <code>function</code>
             * [.toLowerKeys()](#module_@the-/server.helpers.toLowerKeys)
-            * [.toStreamFactory()](#module_@the-/server.helpers.toStreamFactory)
+            * [.streamPool()](#module_@the-/server.helpers.streamPool)
         * _inner_
-            * [~StreamPool](#module_@the-/server.helpers..StreamPool)
+            * [~StreamDriverPool](#module_@the-/server.helpers..StreamDriverPool)
     * [.mixins](#module_@the-/server.mixins) : <code>object</code>
         * [.clientMix(Class)](#module_@the-/server.mixins.clientMix) ⇒ <code>function</code>
             * [~ClientMixed](#module_@the-/server.mixins.clientMix..ClientMixed)
@@ -230,12 +235,11 @@ Helper functions
             * [~rpcKeeper](#module_@the-/server.helpers.RPCKeeper..rpcKeeper) : <code>object</code>
         * [.serverRendering(Component, [options])](#module_@the-/server.helpers.serverRendering) ⇒ <code>function</code>
         * [.serverRendering()](#module_@the-/server.helpers.serverRendering)
-        * [.streamPool()](#module_@the-/server.helpers.streamPool)
         * [.toControllerDriverFactory()](#module_@the-/server.helpers.toControllerDriverFactory) ⇒ <code>function</code>
         * [.toLowerKeys()](#module_@the-/server.helpers.toLowerKeys)
-        * [.toStreamFactory()](#module_@the-/server.helpers.toStreamFactory)
+        * [.streamPool()](#module_@the-/server.helpers.streamPool)
     * _inner_
-        * [~StreamPool](#module_@the-/server.helpers..StreamPool)
+        * [~StreamDriverPool](#module_@the-/server.helpers..StreamDriverPool)
 
 <a name="module_@the-/server.helpers.asStrictSession"></a>
 
@@ -346,12 +350,6 @@ Define koa middleware function to do serverside rendering
 
 #### helpers.serverRendering()
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
-<a name="module_@the-/server.helpers.streamPool"></a>
-
-#### helpers.streamPool()
-Stream pool
-
-**Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
 <a name="module_@the-/server.helpers.toControllerDriverFactory"></a>
 
 #### helpers.toControllerDriverFactory() ⇒ <code>function</code>
@@ -360,14 +358,15 @@ Stream pool
 
 #### helpers.toLowerKeys()
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
-<a name="module_@the-/server.helpers.toStreamFactory"></a>
+<a name="module_@the-/server.helpers.streamPool"></a>
 
-#### helpers.toStreamFactory()
+#### helpers.streamPool()
+Stream pool
+
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
-**Access**: protected  
-<a name="module_@the-/server.helpers..StreamPool"></a>
+<a name="module_@the-/server.helpers..StreamDriverPool"></a>
 
-#### helpers~StreamPool
+#### helpers~StreamDriverPool
 **Kind**: inner class of [<code>helpers</code>](#module_@the-/server.helpers)  
 <a name="module_@the-/server.mixins"></a>
 
@@ -626,3 +625,20 @@ Alias of [create](#module_@the-/server.create)
 Events for IO
 
 **Kind**: global function  
+<a name="reload"></a>
+
+## reload() ⇒ <code>Promise.&lt;boolean&gt;</code>
+Reload session from store
+
+**Kind**: global function  
+<a name="save"></a>
+
+## save([options]) ⇒ <code>Promise.&lt;undefined&gt;</code>
+Save session
+
+**Kind**: global function  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
+
