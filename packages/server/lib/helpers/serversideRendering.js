@@ -13,17 +13,16 @@ const path = require('path')
 const { createElement: c } = require('react')
 const { renderToStaticMarkup } = require('react-dom/server')
 const rimraf = require('rimraf')
-const evalInjectors = require('./evalInjectors')
 const debug = require('debug')('the:server:server-rendering')
 
 const d = (module) => (module && module.default) || module
 
 /** @function module:@the-/server.helpers.serverRendering */
-function serverRendering (Html, options = {}) {
+function serverRendering(Html, options = {}) {
   const {
-    injectors,
     cacheDir,
     defaultStatus = 200,
+    inject,
     prefix = '<!DOCTYPE html>',
   } = options
 
@@ -54,7 +53,7 @@ function serverRendering (Html, options = {}) {
     return generated
   }
 
-  async function middleware (ctx, next) {
+  async function middleware(ctx, next) {
     const extname = path.extname(ctx.path)
     const mayHTML = !extname || ['.html', '.htm'].includes(extname)
     if (!mayHTML) {
@@ -62,34 +61,28 @@ function serverRendering (Html, options = {}) {
       return
     }
 
-    const renderingContext = Object.assign(
-      {
-        lang: ctx.lang,
-        path: ctx.path,
-        url: ctx.url,
-      },
-      ctx.injections,
-    )
-
+    const renderingContext = {
+      lang: ctx.lang,
+      path: ctx.path,
+      url: ctx.url,
+    }
     const match = { lang: ctx.lang, url: ctx.url }
     const at = new Date()
     debug('render start')
     const props = {
-      injections: evalInjectors(injectors),
+      ...inject(),
       renderingContext,
     }
 
     // Fallback
     /* TODO remove in next major version */
-    {
-      Object.defineProperty(props, 'appScope', {
-        get () {
-          throw new Error(
-            '[@the-/server] appScope is no longer available. use `injections.app` instead',
-          )
-        },
-      })
-    }
+    Object.defineProperty(props, 'appScope', {
+      get() {
+        throw new Error(
+          '[@the-/server] appScope is no longer available. use `injections.app` instead',
+        )
+      },
+    })
     ctx.body = await render(match, props)
     debug(`render end (${new Date() - at}ms)`)
     ctx.status = renderingContext.status || defaultStatus

@@ -4,20 +4,12 @@
  */
 'use strict'
 
-const toControllerFactory = require('../lib/helpers/toControllerFactory')
-
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('to-controller-factory', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-    
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

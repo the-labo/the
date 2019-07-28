@@ -7,13 +7,10 @@
  */
 'use strict'
 
-const evalInjectors = require('./evalInjectors')
-
 /** @lends module:@the-/server.helpers.ctxInjector */
-function ctxInjector(creators) {
+function ctxInjector(injector) {
   return async function middleware(ctx, next) {
-    const injections = evalInjectors(creators)
-    Object.assign(ctx, injections, { injections })
+    Object.assign(ctx, injector(ctx))
     await next()
   }
 }

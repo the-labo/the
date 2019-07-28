@@ -14,8 +14,6 @@
 <dt><a href="#IOEvents">IOEvents()</a></dt>
 <dd><p>Events for IO</p>
 </dd>
-<dt><a href="#ControllerPool">ControllerPool()</a></dt>
-<dd></dd>
 </dl>
 
 <a name="module_@the-/server"></a>
@@ -23,7 +21,7 @@
 ## @the-/server
 HTTP/RPC Server of the-framework
 
-**Version**: 16.0.10  
+**Version**: 16.0.18  
 **License**: MIT  
 
 * [@the-/server](#module_@the-/server)
@@ -58,8 +56,9 @@ HTTP/RPC Server of the-framework
             * [.serverRendering(Component, [options])](#module_@the-/server.helpers.serverRendering) ⇒ <code>function</code>
             * [.serverRendering()](#module_@the-/server.helpers.serverRendering)
             * [.streamPool()](#module_@the-/server.helpers.streamPool)
-            * [.toControllerFactory()](#module_@the-/server.helpers.toControllerFactory) ⇒ <code>function</code>
+            * [.toControllerDriverFactory()](#module_@the-/server.helpers.toControllerDriverFactory) ⇒ <code>function</code>
             * [.toLowerKeys()](#module_@the-/server.helpers.toLowerKeys)
+            * [.toStreamFactory()](#module_@the-/server.helpers.toStreamFactory)
         * _inner_
             * [~StreamPool](#module_@the-/server.helpers..StreamPool)
     * [.mixins](#module_@the-/server.mixins) : <code>object</code>
@@ -232,8 +231,9 @@ Helper functions
         * [.serverRendering(Component, [options])](#module_@the-/server.helpers.serverRendering) ⇒ <code>function</code>
         * [.serverRendering()](#module_@the-/server.helpers.serverRendering)
         * [.streamPool()](#module_@the-/server.helpers.streamPool)
-        * [.toControllerFactory()](#module_@the-/server.helpers.toControllerFactory) ⇒ <code>function</code>
+        * [.toControllerDriverFactory()](#module_@the-/server.helpers.toControllerDriverFactory) ⇒ <code>function</code>
         * [.toLowerKeys()](#module_@the-/server.helpers.toLowerKeys)
+        * [.toStreamFactory()](#module_@the-/server.helpers.toStreamFactory)
     * _inner_
         * [~StreamPool](#module_@the-/server.helpers..StreamPool)
 
@@ -352,14 +352,19 @@ Define koa middleware function to do serverside rendering
 Stream pool
 
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
-<a name="module_@the-/server.helpers.toControllerFactory"></a>
+<a name="module_@the-/server.helpers.toControllerDriverFactory"></a>
 
-#### helpers.toControllerFactory() ⇒ <code>function</code>
+#### helpers.toControllerDriverFactory() ⇒ <code>function</code>
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
 <a name="module_@the-/server.helpers.toLowerKeys"></a>
 
 #### helpers.toLowerKeys()
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+<a name="module_@the-/server.helpers.toStreamFactory"></a>
+
+#### helpers.toStreamFactory()
+**Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+**Access**: protected  
 <a name="module_@the-/server.helpers..StreamPool"></a>
 
 #### helpers~StreamPool
@@ -620,8 +625,4 @@ Alias of [create](#module_@the-/server.create)
 ## IOEvents()
 Events for IO
 
-**Kind**: global function  
-<a name="ControllerPool"></a>
-
-## ControllerPool()
 **Kind**: global function  

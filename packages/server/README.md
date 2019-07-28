@@ -62,29 +62,24 @@ Usage
 'use strict'
 const React = require('react')
 const theServer = require('@the-/server')
-const { Ctrl, Stream } = theServer
+const { Stream } = theServer
 const { createElement: c } = React
 
 ;(async () => {
   // Define RPC Controller Class
-  class FruitShopCtrl extends Ctrl {
-    async addToCart(name, amount = 1) {
-      const {
-        session,
-        session: { cart = {} },
-      } = this
+  const FruitShopCtrl = ({ session }) => {
+    return {
+      async addToCart(name, amount = 1) {
+        const { cart = {} } = session
+        cart[name] = (cart[name] || 0) + amount
+        session.cart = cart
+      },
 
-      cart[name] = (cart[name] || 0) + amount
-      session.cart = cart
-    }
-
-    async buy() {
-      const {
-        session: { cart = {} },
-      } = this
-
-      console.log(cart)
-      /* ... */
+      async buy() {
+        const { cart = {} } = session
+        console.log(cart)
+        /* ... */
+      },
     }
   }
 
@@ -140,9 +135,9 @@ const { createElement: c } = React
 ## API Guide
 
 
-- ControllerModuleBind
-  - [#reloadSession(options)](./doc/api/api.md#ControllerModuleBind#reloadSession)
-  - [#saveSession(options)](./doc/api/api.md#ControllerModuleBind#saveSession)
+- ControllerFactoryClass
+  - [#reloadSession(options)](./doc/api/api.md#ControllerFactoryClass#reloadSession)
+  - [#saveSession(options)](./doc/api/api.md#ControllerFactoryClass#saveSession)
 - global
   - [ControllerPool()](./doc/api/api.md#ControllerPool)
   - [IOEvents()](./doc/api/api.md#IOEvents)
@@ -169,7 +164,6 @@ const { createElement: c } = React
 - module:@the-/server.helpers
   - [.asStrictSession(session)](./doc/api/api.md#module_@the-/server.helpers.asStrictSession)
   - [.callbacksProxy()](./doc/api/api.md#module_@the-/server.helpers.callbacksProxy)
-  - [.controllerSpecsFor()](./doc/api/api.md#module_@the-/server.helpers.controllerSpecsFor)
   - [.ctxInjector(creators)](./doc/api/api.md#module_@the-/server.helpers.ctxInjector)
   - [.InfoFlusher(filename,getter)](./doc/api/api.md#module_@the-/server.helpers.InfoFlusher)
   - [.langDetector(locales,options)](./doc/api/api.md#module_@the-/server.helpers.langDetector)
@@ -179,7 +173,7 @@ const { createElement: c } = React
   - [.serverRendering(Component,options)](./doc/api/api.md#module_@the-/server.helpers.serverRendering)
   - [.serverRendering()](./doc/api/api.md#module_@the-/server.helpers.serverRendering)
   - [.streamPool()](./doc/api/api.md#module_@the-/server.helpers.streamPool)
-  - [.toControllerModuleBind()](./doc/api/api.md#module_@the-/server.helpers.toControllerModuleBind)
+  - [.toControllerFactory()](./doc/api/api.md#module_@the-/server.helpers.toControllerFactory)
   - [.toLowerKeys()](./doc/api/api.md#module_@the-/server.helpers.toLowerKeys)
   - [~StreamPool](./doc/api/api.md#module_@the-/server.helpers~StreamPool)
 - module:@the-/server.helpers.InfoFlusher

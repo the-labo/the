@@ -1,29 +1,24 @@
 'use strict'
 const React = require('react')
 const theServer = require('@the-/server')
-const { Ctrl, Stream } = theServer
+const { Stream } = theServer
 const { createElement: c } = React
 
 ;(async () => {
   // Define RPC Controller Class
-  class FruitShopCtrl extends Ctrl {
-    async addToCart(name, amount = 1) {
-      const {
-        session,
-        session: { cart = {} },
-      } = this
+  const FruitShopCtrl = ({ session }) => {
+    return {
+      async addToCart(name, amount = 1) {
+        const { cart = {} } = session
+        cart[name] = (cart[name] || 0) + amount
+        session.cart = cart
+      },
 
-      cart[name] = (cart[name] || 0) + amount
-      session.cart = cart
-    }
-
-    async buy() {
-      const {
-        session: { cart = {} },
-      } = this
-
-      console.log(cart)
-      /* ... */
+      async buy() {
+        const { cart = {} } = session
+        console.log(cart)
+        /* ... */
+      },
     }
   }
 

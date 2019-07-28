@@ -65,68 +65,65 @@ describe('the-server', function() {
   it('The server', async function() {
     const port = await aport()
 
-    class SayCtrl extends TheServer.Ctrl {
-      controllerDidAttach() {
-        console.log('Say did attach')
-      }
+    const SayCtrl = ({ intercept }) => {
+      intercept({
+        controllerDidAttach() {
+          console.log('Say did attach')
+        },
 
-      controllerMethodDidInvoke(method, params, result) {
-        // console('did invoke', method, result)
-      }
+        controllerMethodDidInvoke() {
+          // console('did invoke', method, result)
+        },
 
-      controllerMethodWillInvoke(method, params) {
-        this.foo = 'Foo'
-        // console.log('will invoke', method, params)
-      }
+        controllerMethodWillInvoke() {
+          this.foo = 'Foo'
+          // console.log('will invoke', method, params)
+        },
 
-      controllerWillDetach() {
-        // console.log('Say will detach')
-      }
-
-      sayHi() {
-        console.log('!foo', this.foo)
-        return 'hi'
+        controllerWillDetach() {
+          // console.log('Say will detach')
+        },
+      })
+      return {
+        sayHi() {
+          console.log('!foo', this.foo)
+          return 'hi'
+        },
       }
     }
 
-    class FruitShopCtrl extends TheServer.Ctrl {
+    const FruitShopCtrl = ({ session }) => ({
       clear() {
-        this.session.total = 0
-      }
+        session.total = 0
+      },
 
       getTotal() {
-        return this.session.total || 0
-      }
+        return session.total || 0
+      },
 
       hoge() {
         return 'hoge'
-      }
+      },
 
       somethingWrong() {
         const error = new Error('Something is wrong!')
         throw error
-      }
+      },
 
       async buy(name, amount) {
-        const {
-          session,
-          session: { total = 0 },
-        } = this
-
+        const { total = 0 } = session
         session.total = total + amount
         // console.log('this.hoge', this.hoge())
         return { amount, name, total: session.total }
-      }
-    }
+      },
+    })
 
     const server = new TheServer({
       controllers: {
         fruitShop: FruitShopCtrl,
         say: SayCtrl,
       },
-      injectors: {
-        store: () => ({ isStore: true }),
-      },
+      inject: () => ({}),
     })
 
     await server.listen(port)
@@ -137,7 +134,6 @@ describe('the-server', function() {
 
       const fruitShop01 = await client01.use('fruitShop')
       const fruitShop02 = await client02.use('fruitShop')
-
       await fruitShop01.clear()
       await fruitShop02.clear()
 
@@ -181,7 +177,6 @@ describe('the-server', function() {
       equal(await fruitShop02.getTotal(), 0)
       await client02.close()
     }
-
     {
       const { body, statusCode } = await arequest(
         `http://localhost:${port}/the/info`,
@@ -302,20 +297,23 @@ describe('the-server', function() {
   it('Controller lifecycle', async function() {
     const port = await aport()
 
-    let wasCalledControllerDidAttatch = false
+    let wasCalledControllerDidAttach = false
     let wasCalledControllerWillDetach = false
 
-    class LifecycleCtrl extends TheServer.Ctrl {
-      controllerDidAttach() {
-        wasCalledControllerDidAttatch = true
-      }
+    const LifecycleCtrl = ({ intercept }) => {
+      intercept({
+        controllerDidAttach() {
+          wasCalledControllerDidAttach = true
+        },
 
-      controllerWillDetach() {
-        wasCalledControllerWillDetach = true
-      }
-
-      async hi() {
-        return 'hi'
+        controllerWillDetach() {
+          wasCalledControllerWillDetach = true
+        },
+      })
+      return {
+        async hi() {
+          return 'hi'
+        },
       }
     }
 
@@ -323,9 +321,7 @@ describe('the-server', function() {
       controllers: {
         lifecycle: LifecycleCtrl,
       },
-      injectors: {
-        store: () => ({ isStore: true }),
-      },
+      inject: () => ({}),
     })
 
     await server.listen(port)
@@ -342,7 +338,7 @@ describe('the-server', function() {
 
     await asleep(2000)
     ok(wasCalledControllerWillDetach)
-    ok(wasCalledControllerDidAttatch)
+    ok(wasCalledControllerDidAttach)
 
     await server.close()
   })
@@ -396,12 +392,12 @@ describe('the-server', function() {
   it('Keep count', async () => {
     const port = await aport()
 
-    class XCtrl extends TheServer.Ctrl {
+    const XCtrl = () => ({
       async waitAndSay(keyword) {
         await asleep(1000)
         return keyword
-      }
-    }
+      },
+    })
 
     const server = new TheServer({
       controllers: { xCtrl: XCtrl },
@@ -421,12 +417,12 @@ describe('the-server', function() {
   it('A lot of Retrying', async () => {
     const port = await aport()
 
-    class XCtrl extends TheServer.Ctrl {
+    const XCtrl = () => ({
       async waitAndSay(keyword) {
         await asleep(300)
         return keyword
-      }
-    }
+      },
+    })
 
     const server = new TheServer({
       controllers: { xCtrl: XCtrl },
@@ -487,9 +483,9 @@ describe('the-server', function() {
         const port = await aport()
         const server = new TheServer({
           controllers: {
-            xCtrl: class XCtrl extends TheServer.Ctrl {
-              sayYo() {}
-            },
+            xCtrl: () => ({
+              sayYo() {},
+            }),
           },
         })
         servers.push(server)

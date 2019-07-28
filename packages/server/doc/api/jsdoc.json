@@ -13,7 +13,7 @@
     "name": "@the-/server",
     "order": 3,
     "typicalname": "server",
-    "version": "16.0.10"
+    "version": "16.0.18"
   },
   {
     "description": "HTTP server for the-framework",
@@ -68,7 +68,7 @@
     "longname": "module:@the-/server.stores.ConnectionStore",
     "memberof": "module:@the-/server.stores.ConnectionStore",
     "name": "ConnectionStore",
-    "order": 45
+    "order": 44
   },
   {
     "description": "Client session store for the-server",
@@ -77,7 +77,7 @@
     "longname": "module:@the-/server.stores.SessionStore",
     "memberof": "module:@the-/server.stores.SessionStore",
     "name": "SessionStore",
-    "order": 48
+    "order": 47
   },
   {
     "description": "Client data store for the-server",
@@ -86,7 +86,7 @@
     "longname": "module:@the-/server.stores.Store",
     "memberof": "module:@the-/server.stores.Store",
     "name": "Store",
-    "order": 50
+    "order": 49
   },
   {
     "description": "Events for IO",
@@ -103,19 +103,6 @@
     "scope": "global"
   },
   {
-    "id": "ControllerPool",
-    "kind": "function",
-    "longname": "ControllerPool",
-    "meta": {
-      "filename": "ControllerPool.js",
-      "lineno": 1,
-      "path": "lib/helpers"
-    },
-    "name": "ControllerPool",
-    "order": 21,
-    "scope": "global"
-  },
-  {
     "description": "Server info",
     "id": "module:@the-/server.TheServer#info",
     "kind": "function",
@@ -123,7 +110,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 182,
+      "lineno": 183,
       "path": "lib"
     },
     "name": "info",
@@ -140,7 +127,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 199,
+      "lineno": 200,
       "path": "lib"
     },
     "name": "close",
@@ -177,7 +164,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 224,
+      "lineno": 249,
       "path": "lib"
     },
     "name": "destroyAllSessions",
@@ -204,7 +191,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 276,
+      "lineno": 267,
       "path": "lib"
     },
     "name": "listen",
@@ -233,82 +220,6 @@
   },
   {
     "async": true,
-    "description": "Reload session from store",
-    "id": "ControllerFactoryClass#reloadSession",
-    "kind": "function",
-    "longname": "ControllerFactoryClass#reloadSession",
-    "memberof": "ControllerFactoryClass",
-    "meta": {
-      "filename": "toControllerFactory.js",
-      "lineno": 39,
-      "path": "lib/helpers"
-    },
-    "name": "reloadSession",
-    "order": 38,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "optional": true,
-        "defaultvalue": "{}",
-        "description": "Optional settings",
-        "name": "options"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<boolean>"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Save session",
-    "id": "ControllerFactoryClass#saveSession",
-    "kind": "function",
-    "longname": "ControllerFactoryClass#saveSession",
-    "memberof": "ControllerFactoryClass",
-    "meta": {
-      "filename": "toControllerFactory.js",
-      "lineno": 70,
-      "path": "lib/helpers"
-    },
-    "name": "saveSession",
-    "order": 39,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "optional": true,
-        "defaultvalue": "{}",
-        "description": "Optional settings",
-        "name": "options"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<undefined>"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
     "description": "Cleanup expired data",
     "id": "module:@the-/server.stores.Store#cleanup",
     "kind": "function",
@@ -320,7 +231,7 @@
       "path": "lib/stores"
     },
     "name": "cleanup",
-    "order": 51,
+    "order": 50,
     "params": [],
     "returns": [
       {
@@ -346,7 +257,7 @@
       "path": "lib/stores"
     },
     "name": "del",
-    "order": 52,
+    "order": 51,
     "params": [
       {
         "type": {
@@ -382,7 +293,7 @@
       "path": "lib/stores"
     },
     "name": "delAll",
-    "order": 53,
+    "order": 52,
     "params": [],
     "returns": [
       {
@@ -408,7 +319,7 @@
       "path": "lib/stores"
     },
     "name": "get",
-    "order": 54,
+    "order": 53,
     "params": [
       {
         "type": {
@@ -444,7 +355,7 @@
       "path": "lib/stores"
     },
     "name": "has",
-    "order": 55,
+    "order": 54,
     "params": [
       {
         "type": {
@@ -480,7 +391,7 @@
       "path": "lib/stores"
     },
     "name": "ids",
-    "order": 56,
+    "order": 55,
     "params": [],
     "returns": [
       {
@@ -506,7 +417,7 @@
       "path": "lib/stores"
     },
     "name": "set",
-    "order": 57,
+    "order": 56,
     "params": [
       {
         "type": {
@@ -809,7 +720,7 @@
       "path": "lib/stores"
     },
     "name": "ConnectionStore",
-    "order": 44,
+    "order": 43,
     "scope": "static"
   },
   {
@@ -826,7 +737,7 @@
       "path": "lib/stores"
     },
     "name": "SessionStore",
-    "order": 47,
+    "order": 46,
     "scope": "static"
   },
   {
@@ -840,7 +751,7 @@
       "path": "lib/stores"
     },
     "name": "Store",
-    "order": 49,
+    "order": 48,
     "scope": "static"
   },
   {
@@ -946,7 +857,7 @@
       "path": "lib/helpers"
     },
     "name": "helpers",
-    "order": 23,
+    "order": 22,
     "scope": "static"
   },
   {
@@ -961,7 +872,7 @@
       "path": "lib/mixins"
     },
     "name": "mixins",
-    "order": 43,
+    "order": 42,
     "scope": "static"
   },
   {
@@ -976,7 +887,7 @@
       "path": "lib/stores"
     },
     "name": "stores",
-    "order": 46,
+    "order": 45,
     "scope": "static"
   },
   {
@@ -1157,11 +1068,11 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "ctxInjector.js",
-      "lineno": 2,
+      "lineno": 1,
       "path": "lib/helpers"
     },
     "name": "ctxInjector",
-    "order": 22,
+    "order": 21,
     "params": [
       {
         "type": {
@@ -1195,7 +1106,7 @@
       "path": "lib/helpers"
     },
     "name": "InfoFlusher",
-    "order": 24,
+    "order": 23,
     "params": [
       {
         "type": {
@@ -1238,7 +1149,7 @@
       "path": "lib/helpers"
     },
     "name": "flushInfo",
-    "order": 26,
+    "order": 25,
     "scope": "static"
   },
   {
@@ -1253,7 +1164,7 @@
       "path": "lib/helpers"
     },
     "name": "langDetector",
-    "order": 27,
+    "order": 26,
     "params": [
       {
         "type": {
@@ -1301,7 +1212,7 @@
       "path": "lib/helpers"
     },
     "name": "MetricsCounter",
-    "order": 28,
+    "order": 27,
     "scope": "static"
   },
   {
@@ -1315,7 +1226,7 @@
       "path": "lib/helpers"
     },
     "name": "queryFromUrl",
-    "order": 30,
+    "order": 29,
     "scope": "static"
   },
   {
@@ -1330,7 +1241,7 @@
       "path": "lib/helpers"
     },
     "name": "RPCKeeper",
-    "order": 31,
+    "order": 30,
     "params": [
       {
         "type": {
@@ -1365,7 +1276,7 @@
       "path": "lib/helpers"
     },
     "name": "serverRendering",
-    "order": 33,
+    "order": 32,
     "params": [
       {
         "type": {
@@ -1411,7 +1322,7 @@
       "path": "lib/helpers"
     },
     "name": "serverRendering",
-    "order": 34,
+    "order": 33,
     "scope": "static"
   },
   {
@@ -1426,21 +1337,21 @@
       "path": "lib/helpers"
     },
     "name": "streamPool",
-    "order": 35,
+    "order": 34,
     "scope": "static"
   },
   {
-    "id": "module:@the-/server.helpers.toControllerFactory",
+    "id": "module:@the-/server.helpers.toControllerDriverFactory",
     "kind": "function",
-    "longname": "module:@the-/server.helpers.toControllerFactory",
+    "longname": "module:@the-/server.helpers.toControllerDriverFactory",
     "memberof": "module:@the-/server.helpers",
     "meta": {
-      "filename": "toControllerFactory.js",
+      "filename": "toControllerDriverFactory.js",
       "lineno": 2,
       "path": "lib/helpers"
     },
-    "name": "toControllerFactory",
-    "order": 37,
+    "name": "toControllerDriverFactory",
+    "order": 36,
     "returns": [
       {
         "type": {
@@ -1463,7 +1374,7 @@
       "path": "lib/helpers"
     },
     "name": "toLowerKeys",
-    "order": 40,
+    "order": 39,
     "scope": "static"
   },
   {
@@ -1478,7 +1389,7 @@
       "path": "lib/mixins"
     },
     "name": "clientMix",
-    "order": 41,
+    "order": 40,
     "params": [
       {
         "type": {
@@ -1502,6 +1413,21 @@
     "scope": "static"
   },
   {
+    "access": "protected",
+    "id": "module:@the-/server.helpers.toStreamFactory",
+    "kind": "function",
+    "longname": "module:@the-/server.helpers.toStreamFactory",
+    "memberof": "module:@the-/server.helpers",
+    "meta": {
+      "filename": "toStreamFactory.js",
+      "lineno": 1,
+      "path": "lib/streaming"
+    },
+    "name": "toStreamFactory",
+    "order": 57,
+    "scope": "static"
+  },
+  {
     "id": "module:@the-/server.helpers~StreamPool",
     "kind": "class",
     "longname": "module:@the-/server.helpers~StreamPool",
@@ -1512,7 +1438,7 @@
       "path": "lib/helpers"
     },
     "name": "StreamPool",
-    "order": 36,
+    "order": 35,
     "scope": "inner"
   },
   {
@@ -1526,7 +1452,7 @@
       "path": "lib/mixins"
     },
     "name": "ClientMixed",
-    "order": 42,
+    "order": 41,
     "scope": "inner"
   },
   {
@@ -1540,7 +1466,7 @@
       "path": "lib/helpers"
     },
     "name": "infoFlusher",
-    "order": 25,
+    "order": 24,
     "scope": "inner"
   },
   {
@@ -1554,7 +1480,7 @@
       "path": "lib/helpers"
     },
     "name": "metricsCounter",
-    "order": 29,
+    "order": 28,
     "scope": "inner"
   },
   {
@@ -1568,7 +1494,71 @@
       "path": "lib/helpers"
     },
     "name": "rpcKeeper",
-    "order": 32,
+    "order": 31,
+    "scope": "inner"
+  },
+  {
+    "async": true,
+    "description": "Reload session from store",
+    "id": "module:@the-/server.helpers.toControllerDriverFactory~ControllerDriverFactory~reloadSession",
+    "kind": "function",
+    "longname": "module:@the-/server.helpers.toControllerDriverFactory~ControllerDriverFactory~reloadSession",
+    "memberof": "module:@the-/server.helpers.toControllerDriverFactory~ControllerDriverFactory",
+    "meta": {
+      "filename": "toControllerDriverFactory.js",
+      "lineno": 41,
+      "path": "lib/helpers"
+    },
+    "name": "reloadSession",
+    "order": 37,
+    "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<boolean>"
+          ]
+        }
+      }
+    ],
+    "scope": "inner"
+  },
+  {
+    "async": true,
+    "description": "Save session",
+    "id": "module:@the-/server.helpers.toControllerDriverFactory~ControllerDriverFactory~saveSession",
+    "kind": "function",
+    "longname": "module:@the-/server.helpers.toControllerDriverFactory~ControllerDriverFactory~saveSession",
+    "memberof": "module:@the-/server.helpers.toControllerDriverFactory~ControllerDriverFactory",
+    "meta": {
+      "filename": "toControllerDriverFactory.js",
+      "lineno": 57,
+      "path": "lib/helpers"
+    },
+    "name": "saveSession",
+    "order": 38,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<undefined>"
+          ]
+        }
+      }
+    ],
     "scope": "inner"
   }
 ]

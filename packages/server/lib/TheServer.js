@@ -14,8 +14,8 @@ const asleep = require('asleep')
 const http = require('http')
 const { RFunc } = require('rfunc')
 const socketIO = require('socket.io')
+const theAssert = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
-const { TheCtrl } = require('@the-/controller')
 const { TheStream } = require('@the-/stream')
 const theTmp = require('@the-/tmp')
 const { redisAdapter } = require('./adapters')
@@ -23,49 +23,42 @@ const buildInEndpoints = require('./buildInEndpoints')
 const { IOConnector } = require('./connectors')
 const DefaultValues = require('./constants/DefaultValues')
 const IOEvents = require('./constants/IOEvents')
-const toStreamFactory = require('./streaming/toStreamFactory')
 const {
   callbacksProxy,
   ctxInjector,
   langDetector,
   serversideRendering,
   streamPool,
-  toControllerFactory,
+  toControllerDriverFactory,
 } = require('./helpers')
-const ControllerPool = require('./helpers/ControllerPool')
+const ControllerDriverPool = require('./helpers/ControllerDriverPool')
 const InfoFlusher = require('./helpers/InfoFlusher')
 const MetricsCounter = require('./helpers/MetricsCounter')
 const RPCKeeper = require('./helpers/RPCKeeper')
 const { clientMix } = require('./mixins')
-const deprecateWarning = require('./helpers/deprecateWarning')
 const { ConnectionStore, SessionStore } = require('./stores')
-
+const toStreamFactory = require('./streaming/toStreamFactory')
 const debug = require('debug')('the:server')
+const assert = theAssert('@the-/server')
 
 const TheServerBase = [clientMix].reduce((C, mix) => mix(C), RFunc)
-
-const asAppScope = (...values) => {
-  const appScope = Object.assign({}, ...values, {})
-  return Object.freeze(appScope)
-}
 
 /** @lends module:@the-/server.TheServer  */
 class TheServer extends TheServerBase {
   constructor(config = {}) {
     const {
       cacheDir = theTmp.generateDirSync({ prefix: 'the-server' }).path,
-      controllers: controllerClasses = {},
+      controllers: Controllers = {},
       endpoints = {},
       html = false,
       info = {},
       infoFile = 'public/the/info.json',
-      injectors = {},
+      inject = () => ({}),
       langs = ['en'],
       logFile = 'var/log/the-server.log',
       middlewares = [],
       redis: redisConfig = { db: 1, host: '127.0.0.1', port: '6379' },
       rpcKeepDuration = 1000,
-      scope = {},
       sessionCleanupInterval = DefaultValues.SESSION_CLEANUP_INTERVAL,
       sessionExpireDuration = DefaultValues.SESSION_EXPIRE_DURATION,
       static: staticDir,
@@ -73,57 +66,73 @@ class TheServer extends TheServerBase {
       ...rest
     } = config
     debug('config', config)
-
+    assert(
+      !('scope' in config),
+      "config.scope is no longer supported. Use 'config.inject()' instead",
+    )
+    assert(
+      !('injects' in config),
+      "config.injects is no longer supported. Use 'config.inject()' instead",
+    )
     unlessProduction(() => {
       const restKeys = Object.keys(rest)
       if (restKeys.length > 0) {
         console.warn(`[TheServer] Unknown config: ${JSON.stringify(restKeys)}`)
       }
-
       const invalidLang = langs.find((lang) => /^\$/.test(lang))
       if (invalidLang) {
         throw new Error(`[TheServer] Invalid lang: ${invalidLang}`)
       }
     })
 
-    const appScope = asAppScope({ config }, scope)
     const storage = new ARedis(redisConfig)
     const sessionStore = new SessionStore(storage, {
       cleanupInterval: sessionCleanupInterval,
       expireDuration: sessionExpireDuration,
     })
     const connectionStore = new ConnectionStore(storage)
-    const ControllerFactories = toControllerFactory.all({
-      controllerClasses,
-      sessionStore,
-    })
-    const controllerPrototypeConfig = { app: appScope }
-    const controllerModules = Object.assign(
+    const ControllerDriverFactories = toControllerDriverFactory.all(
+      Controllers,
+      {
+        inject,
+        sessionStore,
+      },
+    )
+    const prototypeCtx = {}
+    const prototypeControllers = Object.assign(
       {},
-      ...Object.entries(ControllerFactories).map(
-        ([controllerName, ControllerFactory]) => ({
-          [controllerName]: ControllerFactory.toModule(
-            controllerPrototypeConfig,
-          ),
+      ...Object.entries(ControllerDriverFactories).map(
+        ([controllerName, ControllerDriverFactory]) => ({
+          [controllerName]: ControllerDriverFactory(
+            controllerName,
+            prototypeCtx,
+          ).controller,
         }),
       ),
     )
-    const controllerSpecs = Object.entries(ControllerFactories).map(
-      ([controllerName, ControllerFactory]) =>
-        ControllerFactory.toSpec(controllerName, controllerPrototypeConfig),
+    const controllerSpecs = Object.entries(prototypeControllers).map(
+      ([controllerName, controller]) => ({
+        methods: Object.assign(
+          {},
+          ...Object.keys(controller).map((name) => ({
+            [name]: { desc: `${name}` },
+          })),
+        ),
+        name: controllerName,
+      }),
     )
 
     super({
-      ...controllerModules,
+      ...prototypeControllers,
       $endpoints: {
         ...buildInEndpoints,
         ...endpoints,
       },
       $serverMiddlewares: [
-        ctxInjector({
-          ...injectors,
-          server: () => this,
-        }),
+        ctxInjector((ctx) => ({
+          ...inject(ctx),
+          server: this,
+        })),
         langDetector(langs),
         ...middlewares,
       ],
@@ -131,18 +140,16 @@ class TheServer extends TheServerBase {
       logFile,
     })
     if (html) {
-      const renderer = serversideRendering(html, { injectors, cacheDir })
+      const renderer = serversideRendering(html, { cacheDir, inject })
       renderer.clearCacheSync()
       this.app.use(renderer)
     }
     this.additionalInfo = info
-    this.ControllerFactories = ControllerFactories
+    this.ControllerDriverFactories = ControllerDriverFactories
     this.storage = storage
-    this.appScope = appScope
     this.redisConfig = redisConfig
     this.sessionStore = sessionStore
     this.connectionStore = connectionStore
-    this.controllerInstances = {}
     this.controllerSpecs = controllerSpecs
     this.langs = langs
     this.handleCallback = this.handleCallback.bind(this)
@@ -150,6 +157,7 @@ class TheServer extends TheServerBase {
     this.streamPool = streamPool({})
     this.streamClasses = streamClasses
     this.rpcKeepDuration = rpcKeepDuration
+    this.inject = inject
   }
 
   get closed() {
@@ -209,54 +217,46 @@ class TheServer extends TheServerBase {
     return closed
   }
 
-  /**
-   * Destroy all sessions
-   * @returns {Promise<number>} Deleted count
-   */
-  async destroyAllSessions() {
-    const { sessionStore } = this
-    return sessionStore.delAll()
-  }
-
-  async getSessionFor(cid) {
-    const { sessionStore } = this
-    return (await sessionStore.get(cid)) || {}
-  }
-
-  async instantiateController(controllerName, cid) {
-    const ControllerFactory = this.ControllerFactories[controllerName]
-    if (!ControllerFactory) {
+  async createControllerDriver(controllerName, cid) {
+    const ControllerDriverFactory = this.ControllerDriverFactories[
+      controllerName
+    ]
+    if (!ControllerDriverFactory) {
       throw new Error(`[TheServer] Unknown controller: ${controllerName}`)
     }
     if (!cid) {
       throw new Error('[TheServer] cid is required')
     }
-    if (!this.controllerInstances[controllerName]) {
-      this.controllerInstances[controllerName] = {}
-    }
-    const known = this.controllerInstances[controllerName][cid]
-    if (known) {
-      return known
-    }
-    const { appScope } = this
     const connection = await this.getClientConnection(cid, { patiently: true })
     if (!connection) {
       throw new Error(`[TheServer] Connection not found for: ${cid}`)
     }
     const { client = { cid } } = connection
-    const instance = ControllerFactory({
-      app: appScope,
+    return ControllerDriverFactory(controllerName, {
       callbacks: callbacksProxy({
         client,
         controllerName,
         onCallback: this.handleCallback,
       }),
       client: { ...client, cid },
-      name: controllerName,
-      session: null,
     })
-    this.controllerInstances[controllerName][cid] = instance
-    return instance
+  }
+
+  /**
+   * Destroy all sessions
+   * @returns {Promise<number>} Deleted count
+   */
+  async destroyAllSessions() {
+    const { controllerDriverPool, sessionStore } = this
+    await controllerDriverPool.each(async (driver) => {
+      await driver.reloadSession()
+    })
+    return sessionStore.delAll()
+  }
+
+  async getSessionFor(cid) {
+    const { sessionStore } = this
+    return (await sessionStore.get(cid)) || {}
   }
 
   /**
@@ -278,26 +278,22 @@ class TheServer extends TheServerBase {
     this.infoFlusher = infoFlusher
     this.closeRedisAdapter = redisAdapter(io, this.redisConfig)
     const metricsCounter = MetricsCounter()
-    const controllerPool = ControllerPool()
+    const controllerDriverPool = ControllerDriverPool()
+    this.controllerDriverPool = controllerDriverPool
     this.metricsCounter = metricsCounter
     const ioConnector = IOConnector(io, {
       connectionStore: this.connectionStore,
       onIOClientCame: async (cid, socketId, client) => {
         await this.saveClientSocket(cid, socketId, client)
-        const controllerNames = Object.keys(this.ControllerFactories)
+        const controllerNames = Object.keys(this.ControllerDriverFactories)
         for (const controllerName of controllerNames) {
-          const instance = await this.instantiateController(controllerName, cid)
-          await instance.reloadSession()
-          if (instance.controllerDidAttach) {
-            deprecateWarning(
-              'controllerDidAttach',
-              `controllerDidAttach() is now deprecated`,
-            )
-            await instance.controllerDidAttach()
-          }
+          const driver = await this.createControllerDriver(controllerName, cid)
+          const { interceptors } = driver
+          await driver.reloadSession()
+          interceptors.controllerDidAttach()
           metricsCounter.addControllerAttachCount(controllerName, 1)
-          await instance.saveSession()
-          controllerPool.add(cid, socketId, controllerName, instance)
+          await driver.saveSession()
+          controllerDriverPool.add(cid, socketId, controllerName, driver)
         }
       },
 
@@ -307,18 +303,13 @@ class TheServer extends TheServerBase {
         if (!hasConnection) {
           console.warn('[TheServer] Connection already gone for cid:', cid)
         }
-        const instances = controllerPool.getAll(cid, socketId)
-        for (const [controllerName, instance] of Object.entries(instances)) {
+        const drivers = controllerDriverPool.getAll(cid, socketId)
+        for (const [controllerName, driver] of Object.entries(drivers)) {
+          const { interceptors } = driver
           try {
-            await instance.reloadSession()
-            if (instance.controllerWillDetach) {
-              deprecateWarning(
-                'controllerWillDetach',
-                `controllerWillDetach() is now deprecated`,
-              )
-              await instance.controllerWillDetach()
-            }
-            await instance.saveSession()
+            await driver.reloadSession()
+            await interceptors.controllerWillDetach()
+            await driver.saveSession()
             metricsCounter.addControllerDetachCount(controllerName, 1)
           } catch (e) {
             console.warn(
@@ -340,45 +331,31 @@ class TheServer extends TheServerBase {
       onRPCCall: async (cid, socketId, config) => {
         const { rpcKeeper } = this
         const { iid, methodName, moduleName, params } = config
-        const instance = controllerPool.get(cid, socketId, moduleName)
-        if (!instance) {
+        const driver = controllerDriverPool.get(cid, socketId, moduleName)
+        if (!driver) {
           throw new Error(
             `[@the-/server] Controller not found for name: ${moduleName}`,
           )
         }
-        const controllerName =
-          instance.controllerName || instance.name || moduleName
+        const { controllerName, interceptors } = driver
 
         rpcKeeper.startKeepTimer(cid, iid, { controllerName })
         await asleep(10 * Math.random())
         let data
         let errors
-        await instance.reloadSession()
+        await driver.reloadSession()
         try {
-          if (instance.controllerMethodWillInvoke) {
-            deprecateWarning(
-              'controllerMethodWillInvoke',
-              `controllerMethodWillInvoke() is now deprecated`,
-            )
-            await instance.controllerMethodWillInvoke({
-              name: methodName,
-              params,
-            })
-          }
-
-          data = await instance[methodName](...params.slice(1))
-          if (instance.controllerMethodDidInvoke) {
-            deprecateWarning(
-              'controllerMethodDidInvoke',
-              `controllerMethodDidInvoke() is now deprecated`,
-            )
-            await instance.controllerMethodDidInvoke({
-              name: methodName,
-              params,
-              result: data,
-            })
-          }
-          await instance.saveSession()
+          await interceptors.controllerMethodWillInvoke({
+            name: methodName,
+            params,
+          })
+          data = await driver.invoke(methodName, params.slice(1))
+          await interceptors.controllerMethodDidInvoke({
+            name: methodName,
+            params,
+            result: data,
+          })
+          await driver.saveSession()
         } catch (e) {
           const error = { ...e }
           delete error.stack
@@ -435,10 +412,10 @@ class TheServer extends TheServerBase {
         if (!Class) {
           throw new Error(`[TheServer] Unknown stream: ${streamName}`)
         }
-        const StreamFactory = toStreamFactory(Class, { cid, sid, ioConnector })
-        const { appScope } = this
+        const StreamFactory = toStreamFactory(Class, { cid, ioConnector, sid })
+        const { inject } = this
         const stream = StreamFactory({
-          app: appScope,
+          ...inject(),
           client: { cid },
           params,
         })
@@ -456,10 +433,10 @@ class TheServer extends TheServerBase {
       },
     })
     this.rpcKeeper = RPCKeeper({
-      sendRPCKeep: (...args) => ioConnector.sendRPCKeep(...args),
       ioConnector,
       keepDuration: this.rpcKeepDuration,
       metricsCounter,
+      sendRPCKeep: (...args) => ioConnector.sendRPCKeep(...args),
     })
     this.ioConnector = ioConnector
     await new Promise((resolve) => server.listen(port, () => resolve())).then(
@@ -468,7 +445,6 @@ class TheServer extends TheServerBase {
   }
 }
 
-TheServer.Ctrl = TheCtrl
 TheServer.Stream = TheStream
 
 module.exports = TheServer

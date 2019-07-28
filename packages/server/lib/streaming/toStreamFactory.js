@@ -8,7 +8,7 @@
 const asleep = require('asleep')
 
 /** @lends module:@the-/server.helpers.toStreamFactory */
-function toStreamFactory(Class, { cid, sid, ioConnector }) {
+function toStreamFactory(Class, { cid, ioConnector, sid }) {
   class Stream extends Class {
     async streamDidCatch(error) {
       const result = await super.streamDidCatch(error)

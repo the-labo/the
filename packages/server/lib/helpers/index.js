@@ -7,7 +7,7 @@
  */
 'use strict'
 
-const ControllerPool_ = require('./ControllerPool')
+const ControllerDriverPool_ = require('./ControllerDriverPool')
 const InfoFlusher_ = require('./InfoFlusher')
 const MetricsCounter_ = require('./MetricsCounter')
 const RPCKeeper_ = require('./RPCKeeper')
@@ -18,11 +18,11 @@ const langDetector_ = require('./langDetector')
 const queryFromUrl_ = require('./queryFromUrl')
 const serversideRendering_ = require('./serversideRendering')
 const streamPool_ = require('./streamPool')
-const toControllerFactory_ = require('./toControllerFactory')
+const toControllerDriverFactory_ = require('./toControllerDriverFactory')
 const toLowerKeys_ = require('./toLowerKeys')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
-exports.ControllerPool = ControllerPool_
+exports.ControllerDriverPool = ControllerDriverPool_
 exports.InfoFlusher = InfoFlusher_
 exports.MetricsCounter = MetricsCounter_
 exports.RPCKeeper = RPCKeeper_
@@ -33,11 +33,11 @@ exports.langDetector = langDetector_
 exports.queryFromUrl = queryFromUrl_
 exports.serversideRendering = serversideRendering_
 exports.streamPool = streamPool_
-exports.toControllerFactory = toControllerFactory_
+exports.toControllerDriverFactory = toControllerDriverFactory_
 exports.toLowerKeys = toLowerKeys_
 
 module.exports = {
-  ControllerPool: ControllerPool_,
+  ControllerDriverPool: ControllerDriverPool_,
   InfoFlusher: InfoFlusher_,
   MetricsCounter: MetricsCounter_,
   RPCKeeper: RPCKeeper_,
@@ -48,6 +48,6 @@ module.exports = {
   queryFromUrl: queryFromUrl_,
   serversideRendering: serversideRendering_,
   streamPool: streamPool_,
-  toControllerFactory: toControllerFactory_,
+  toControllerDriverFactory: toControllerDriverFactory_,
   toLowerKeys: toLowerKeys_,
 }
