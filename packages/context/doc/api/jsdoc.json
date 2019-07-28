@@ -13,7 +13,7 @@
     "name": "@the-/context",
     "order": 2,
     "typicalname": "context",
-    "version": "16.0.2"
+    "version": "16.0.5"
   },
   {
     "description": "Context",
@@ -44,15 +44,6 @@
         "name": "options"
       }
     ]
-  },
-  {
-    "description": "Entry component",
-    "id": "module:@the-/context.helpers.ContextEntry()",
-    "kind": "constructor",
-    "longname": "module:@the-/context.helpers.ContextEntry",
-    "memberof": "module:@the-/context.helpers.ContextEntry",
-    "name": "ContextEntry",
-    "order": 9
   },
   {
     "description": "Delete value from store",
@@ -165,20 +156,6 @@
     "scope": "static"
   },
   {
-    "id": "module:@the-/context.helpers.ContextEntry",
-    "kind": "class",
-    "longname": "module:@the-/context.helpers.ContextEntry",
-    "memberof": "module:@the-/context.helpers",
-    "meta": {
-      "filename": "contextEntryFor.js",
-      "lineno": 2,
-      "path": "lib/helpers"
-    },
-    "name": "ContextEntry",
-    "order": 8,
-    "scope": "static"
-  },
-  {
     "access": "protected",
     "description": "Client helper functions",
     "id": "module:@the-/context.helpers",
@@ -245,6 +222,21 @@
     "scope": "static"
   },
   {
+    "description": "Entry component",
+    "id": "module:@the-/context.helpers.contextEntryFor",
+    "kind": "function",
+    "longname": "module:@the-/context.helpers.contextEntryFor",
+    "memberof": "module:@the-/context.helpers",
+    "meta": {
+      "filename": "contextEntryFor.js",
+      "lineno": 2,
+      "path": "lib/helpers"
+    },
+    "name": "contextEntryFor",
+    "order": 8,
+    "scope": "static"
+  },
+  {
     "description": "ContextRoot component",
     "id": "module:@the-/context.helpers.ContextRootFor",
     "kind": "function",
@@ -258,5 +250,19 @@
     "name": "ContextRootFor",
     "order": 10,
     "scope": "static"
+  },
+  {
+    "id": "module:@the-/context.helpers.contextEntryFor~ContextEntry",
+    "kind": "class",
+    "longname": "module:@the-/context.helpers.contextEntryFor~ContextEntry",
+    "memberof": "module:@the-/context.helpers.contextEntryFor",
+    "meta": {
+      "filename": "contextEntryFor.js",
+      "lineno": 18,
+      "path": "lib/helpers"
+    },
+    "name": "ContextEntry",
+    "order": 9,
+    "scope": "inner"
   }
 ]

@@ -1,14 +1,14 @@
 /**
- * @memberof module:@the-/server.helpers
+ * @memberof module:@the-/server.streaming
  * @protected
- * @function toStreamFactory
+ * @function toStreamDriverFactory
  */
 'use strict'
 
 const asleep = require('asleep')
 
-/** @lends module:@the-/server.helpers.toStreamFactory */
-function toStreamFactory(Class, { cid, ioConnector, sid }) {
+/** @lends module:@the-/server.streaming.toStreamDriverFactory */
+function toStreamDriverFactory(Class, { cid, ioConnector, sid }) {
   class Stream extends Class {
     async streamDidCatch(error) {
       const result = await super.streamDidCatch(error)
@@ -33,12 +33,15 @@ function toStreamFactory(Class, { cid, ioConnector, sid }) {
       return result
     }
   }
-  function StreamFactory(config) {
+  function StreamDriverFactory(config) {
     const stream = new Stream(config)
 
-    return stream
+    const streamDriver = {
+      stream,
+    }
+    return streamDriver
   }
-  return StreamFactory
+  return StreamDriverFactory
 }
 
-module.exports = toStreamFactory
+module.exports = toStreamDriverFactory

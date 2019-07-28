@@ -7,9 +7,9 @@
 /**
  * @memberof module:@the-/server.helpers
  * @inner
- * @class StreamPool
+ * @class StreamDriverPool
  */
-class StreamPool {
+class StreamDriverPool {
   constructor({}) {
     this.instances = {}
   }
@@ -17,8 +17,9 @@ class StreamPool {
   cleanup(cid) {
     const instances = this.instances[cid] || {}
     for (const [, instance] of Object.entries(instances)) {
-      if (!instance.closed) {
-        instance.abort()
+      const { stream } = instance
+      if (!stream.closed) {
+        stream.abort()
       }
     }
     this.instances[cid] = null
@@ -50,8 +51,8 @@ class StreamPool {
 }
 
 /** @lends module:@the-/server.helpers.streamPool */
-function streamPool(...args) {
-  return new StreamPool(...args)
+function streamDriverPool(...args) {
+  return new StreamDriverPool(...args)
 }
 
-module.exports = streamPool
+module.exports = streamDriverPool

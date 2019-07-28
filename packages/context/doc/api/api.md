@@ -5,13 +5,13 @@
 ## @the-/context
 React context for the-components
 
-**Version**: 16.0.2  
+**Version**: 16.0.5  
 **License**: MIT  
 
 * [@the-/context](#module_@the-/context)
     * [.helpers](#module_@the-/context.helpers) : <code>object</code>
-        * [.ContextEntry](#module_@the-/context.helpers.ContextEntry)
-            * [new ContextEntry()](#new_module_@the-/context.helpers.ContextEntry_new)
+        * [.contextEntryFor()](#module_@the-/context.helpers.contextEntryFor)
+            * [~ContextEntry](#module_@the-/context.helpers.contextEntryFor..ContextEntry)
         * [.ContextRootFor()](#module_@the-/context.helpers.ContextRootFor)
     * [.create(...args)](#module_@the-/context.create) ⇒ <code>TheContext</code>
     * [.default()](#module_@the-/context.default)
@@ -25,19 +25,20 @@ Client helper functions
 **Access**: protected  
 
 * [.helpers](#module_@the-/context.helpers) : <code>object</code>
-    * [.ContextEntry](#module_@the-/context.helpers.ContextEntry)
-        * [new ContextEntry()](#new_module_@the-/context.helpers.ContextEntry_new)
+    * [.contextEntryFor()](#module_@the-/context.helpers.contextEntryFor)
+        * [~ContextEntry](#module_@the-/context.helpers.contextEntryFor..ContextEntry)
     * [.ContextRootFor()](#module_@the-/context.helpers.ContextRootFor)
 
-<a name="module_@the-/context.helpers.ContextEntry"></a>
+<a name="module_@the-/context.helpers.contextEntryFor"></a>
 
-#### helpers.ContextEntry
-**Kind**: static class of [<code>helpers</code>](#module_@the-/context.helpers)  
-<a name="new_module_@the-/context.helpers.ContextEntry_new"></a>
-
-##### new ContextEntry()
+#### helpers.contextEntryFor()
 Entry component
 
+**Kind**: static method of [<code>helpers</code>](#module_@the-/context.helpers)  
+<a name="module_@the-/context.helpers.contextEntryFor..ContextEntry"></a>
+
+##### contextEntryFor~ContextEntry
+**Kind**: inner class of [<code>contextEntryFor</code>](#module_@the-/context.helpers.contextEntryFor)  
 <a name="module_@the-/context.helpers.ContextRootFor"></a>
 
 #### helpers.ContextRootFor()

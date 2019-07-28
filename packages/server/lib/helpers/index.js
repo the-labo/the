@@ -17,7 +17,6 @@ const ctxInjector_ = require('./ctxInjector')
 const langDetector_ = require('./langDetector')
 const queryFromUrl_ = require('./queryFromUrl')
 const serversideRendering_ = require('./serversideRendering')
-const streamPool_ = require('./streamPool')
 const toControllerDriverFactory_ = require('./toControllerDriverFactory')
 const toLowerKeys_ = require('./toLowerKeys')
 
@@ -32,7 +31,6 @@ exports.ctxInjector = ctxInjector_
 exports.langDetector = langDetector_
 exports.queryFromUrl = queryFromUrl_
 exports.serversideRendering = serversideRendering_
-exports.streamPool = streamPool_
 exports.toControllerDriverFactory = toControllerDriverFactory_
 exports.toLowerKeys = toLowerKeys_
 
@@ -47,7 +45,6 @@ module.exports = {
   langDetector: langDetector_,
   queryFromUrl: queryFromUrl_,
   serversideRendering: serversideRendering_,
-  streamPool: streamPool_,
   toControllerDriverFactory: toControllerDriverFactory_,
   toLowerKeys: toLowerKeys_,
 }

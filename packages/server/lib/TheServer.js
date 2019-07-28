@@ -28,7 +28,6 @@ const {
   ctxInjector,
   langDetector,
   serversideRendering,
-  streamPool,
   toControllerDriverFactory,
 } = require('./helpers')
 const ControllerDriverPool = require('./helpers/ControllerDriverPool')
@@ -37,7 +36,8 @@ const MetricsCounter = require('./helpers/MetricsCounter')
 const RPCKeeper = require('./helpers/RPCKeeper')
 const { clientMix } = require('./mixins')
 const { ConnectionStore, SessionStore } = require('./stores')
-const toStreamFactory = require('./streaming/toStreamFactory')
+const toStreamDriverFactory = require('./streaming/toStreamDriverFactory')
+const streamDriverPool = require('./streaming/streamDriverPool')
 const debug = require('debug')('the:server')
 const assert = theAssert('@the-/server')
 
@@ -154,7 +154,7 @@ class TheServer extends TheServerBase {
     this.langs = langs
     this.handleCallback = this.handleCallback.bind(this)
     this.infoFile = infoFile
-    this.streamPool = streamPool({})
+    this.streamDriverPool = streamDriverPool({})
     this.streamClasses = streamClasses
     this.rpcKeepDuration = rpcKeepDuration
     this.inject = inject
@@ -318,7 +318,7 @@ class TheServer extends TheServerBase {
             )
           }
         }
-        this.streamPool.cleanup(cid)
+        this.streamDriverPool.cleanup(cid)
         rpcKeeper.stopKeepTimersFor(cid)
 
         await this.removeClientSocket(cid, socketId, reason)
@@ -378,15 +378,15 @@ class TheServer extends TheServerBase {
 
       onStreamChunk: async (cid, socketId, config) => {
         const { chunk, sid } = config
-        const stream = this.streamPool.getInstance(cid, sid)
+        const { stream } = this.streamDriverPool.getInstance(cid, sid)
         await stream.push(chunk)
       },
 
       onStreamClose: async (cid, socketId, config) => {
         await asleep(10)
         const { sid } = config
-        const stream = this.streamPool.getInstance(cid, sid)
-        this.streamPool.delInstance(cid, sid)
+        const { stream } = this.streamDriverPool.getInstance(cid, sid)
+        this.streamDriverPool.delInstance(cid, sid)
         await stream.close()
       },
 
@@ -397,12 +397,12 @@ class TheServer extends TheServerBase {
 
       onStreamFin: async (cid, socketId, config) => {
         const { sid } = config
-        const exists = this.streamPool.hasInstance(cid, sid)
+        const exists = this.streamDriverPool.hasInstance(cid, sid)
         if (!exists) {
           // DO nothing if already gone
           return
         }
-        const stream = this.streamPool.getInstance(cid, sid)
+        const { stream } = this.streamDriverPool.getInstance(cid, sid)
         await stream.pushEnd()
       },
 
@@ -412,13 +412,18 @@ class TheServer extends TheServerBase {
         if (!Class) {
           throw new Error(`[TheServer] Unknown stream: ${streamName}`)
         }
-        const StreamFactory = toStreamFactory(Class, { cid, ioConnector, sid })
+        const StreamDriverFactory = toStreamDriverFactory(Class, {
+          cid,
+          ioConnector,
+          sid,
+        })
         const { inject } = this
-        const stream = StreamFactory({
+        const streamDriver = StreamDriverFactory({
           ...inject(),
           client: { cid },
           params,
         })
+        const { stream } = streamDriver
         stream.streamName = streamName
         stream.sid = sid
         const session = await this.getSessionFor(cid)
@@ -428,7 +433,7 @@ class TheServer extends TheServerBase {
             throw new Error('[TheServer] Cannot update session from stream')
           },
         })
-        this.streamPool.setInstance(cid, sid, stream)
+        this.streamDriverPool.setInstance(cid, sid, streamDriver)
         await stream.open()
       },
     })
