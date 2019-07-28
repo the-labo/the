@@ -23,33 +23,30 @@ function toControllerFactory(Class, options = {}) {
     }
     assertMethods(Class, ['reloadSession', 'saveSession', 'useController'])
   })
-  const { sessionCache, sessionStore } = options
+  const { sessionStore } = options
 
   class ControllerFactoryClass extends Class {
-    constructor(...args) {
-      super(...args)
-      this._needsToSaveSession = false
+    async useController(name) {
+      throw new Error('[@the-/server] useController is no longer available')
     }
+  }
 
+  const ControllerFactory = (config) => {
+    const {
+      client: { cid },
+    } = config
+    const instance = new ControllerFactoryClass(config)
+    const state = {}
     /**
      * Reload session from store
-     * @param {Object} [options={}] - Optional settings
      * @returns {Promise<boolean>}
      */
-    async reloadSession(options = {}) {
-      const {
-        client: { cid },
-      } = this
-      const cached = sessionCache.get(cid)
-      const session = cached || (await sessionStore.get(cid)) || {}
-      if (!cached) {
-        sessionCache.set(cid, session)
-      }
+    const reloadSession = async () => {
+      const session = (await sessionStore.get(cid)) || {}
       const onSessionChange = () => {
-        sessionCache.del(cid)
-        this._needsToSaveSession = true
+        state.needsToSaveSession = true
       }
-      this.session = new Proxy(session, {
+      instance.session = new Proxy(session, {
         set(target, k, v) {
           target[k] = v
           onSessionChange()
@@ -67,27 +64,21 @@ function toControllerFactory(Class, options = {}) {
      * @param {Object} [options={}] - Optional settings
      * @returns {Promise<undefined>}
      */
-    async saveSession(options = {}) {
+    const saveSession = async (options = {}) => {
       const { force = false } = options
-      const skip = !force && !this._needsToSaveSession
+      const skip = !force && !state.needsToSaveSession
       if (skip) {
         return
       }
-      const {
-        client: { cid },
-        session,
-      } = this
-      await sessionStore.set(cid, Object.assign({}, session))
-      sessionCache.del(cid)
-      this._needsToSaveSession = false
+      await sessionStore.set(cid, Object.assign({}, instance.session))
+      state.needsToSaveSession = false
     }
 
-    async useController(name) {
-      throw new Error('[@the-/server] useController is no longer available')
-    }
+    instance.reloadSession = reloadSession
+    instance.saveSession = saveSession
+
+    return instance
   }
-
-  const ControllerFactory = (config) => new ControllerFactoryClass(config)
 
   ControllerFactory.describe = (config) => {
     const prototype = new ControllerFactoryClass(config)

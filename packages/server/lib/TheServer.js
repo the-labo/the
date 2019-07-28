@@ -14,7 +14,6 @@ const asleep = require('asleep')
 const http = require('http')
 const { RFunc } = require('rfunc')
 const socketIO = require('socket.io')
-const theCache = require('@the-/cache')
 const { unlessProduction } = require('@the-/check')
 const { TheCtrl } = require('@the-/controller')
 const { TheStream } = require('@the-/stream')
@@ -24,6 +23,7 @@ const buildInEndpoints = require('./buildInEndpoints')
 const { IOConnector } = require('./connectors')
 const DefaultValues = require('./constants/DefaultValues')
 const IOEvents = require('./constants/IOEvents')
+const toStreamFactory = require('./streaming/toStreamFactory')
 const {
   callbacksProxy,
   ctxInjector,
@@ -37,6 +37,7 @@ const InfoFlusher = require('./helpers/InfoFlusher')
 const MetricsCounter = require('./helpers/MetricsCounter')
 const RPCKeeper = require('./helpers/RPCKeeper')
 const { clientMix } = require('./mixins')
+const deprecateWarning = require('./helpers/deprecateWarning')
 const { ConnectionStore, SessionStore } = require('./stores')
 
 const debug = require('debug')('the:server')
@@ -92,13 +93,8 @@ class TheServer extends TheServerBase {
       expireDuration: sessionExpireDuration,
     })
     const connectionStore = new ConnectionStore(storage)
-    const sessionCache = theCache({
-      max: 10000,
-      maxAge: 1000 * 30,
-    })
     const ControllerFactories = toControllerFactory.all({
       controllerClasses,
-      sessionCache,
       sessionStore,
     })
     const controllerPrototypeConfig = { app: appScope }
@@ -145,7 +141,6 @@ class TheServer extends TheServerBase {
     this.appScope = appScope
     this.redisConfig = redisConfig
     this.sessionStore = sessionStore
-    this.sessionCache = sessionCache
     this.connectionStore = connectionStore
     this.controllerInstances = {}
     this.controllerSpecs = controllerSpecs
@@ -227,9 +222,8 @@ class TheServer extends TheServerBase {
   }
 
   async getSessionFor(cid) {
-    const { sessionCache, sessionStore } = this
-    const cached = await sessionCache.get(cid)
-    return cached || (await sessionStore.get(cid)) || {}
+    const { sessionStore } = this
+    return (await sessionStore.get(cid)) || {}
   }
 
   async instantiateController(controllerName, cid) {
@@ -298,7 +292,13 @@ class TheServer extends TheServerBase {
         for (const controllerName of controllerNames) {
           const instance = await this.instantiateController(controllerName, cid)
           await instance.reloadSession()
-          await instance.controllerDidAttach()
+          if (instance.controllerDidAttach) {
+            deprecateWarning(
+              'controllerDidAttach',
+              `controllerDidAttach() is now deprecated`,
+            )
+            await instance.controllerDidAttach()
+          }
           metricsCounter.addControllerAttachCount(controllerName, 1)
           await instance.saveSession()
           controllerPool.add(cid, socketId, controllerName, instance)
@@ -306,17 +306,22 @@ class TheServer extends TheServerBase {
       },
 
       onIOClientGone: async (cid, socketId, reason) => {
-        const { rpcKeeper, sessionCache } = this
+        const { rpcKeeper } = this
         const hasConnection = await this.hasClientConnection(cid)
         if (!hasConnection) {
           console.warn('[TheServer] Connection already gone for cid:', cid)
         }
-        sessionCache.del(cid)
         const instances = controllerPool.getAll(cid, socketId)
         for (const [controllerName, instance] of Object.entries(instances)) {
           try {
             await instance.reloadSession()
-            await instance.controllerWillDetach()
+            if (instance.controllerWillDetach) {
+              deprecateWarning(
+                'controllerWillDetach',
+                `controllerWillDetach() is now deprecated`,
+              )
+              await instance.controllerWillDetach()
+            }
             await instance.saveSession()
             metricsCounter.addControllerDetachCount(controllerName, 1)
           } catch (e) {
@@ -359,9 +364,13 @@ class TheServer extends TheServerBase {
           moduleName,
           socketId,
         }
+        await instance.reloadSession()
         try {
-          await instance.reloadSession()
           if (instance.controllerMethodWillInvoke) {
+            deprecateWarning(
+              'controllerMethodWillInvoke',
+              `controllerMethodWillInvoke() is now deprecated`,
+            )
             await instance.controllerMethodWillInvoke({
               name: methodName,
               params,
@@ -370,6 +379,10 @@ class TheServer extends TheServerBase {
 
           data = await instance[methodName](...params.slice(1))
           if (instance.controllerMethodDidInvoke) {
+            deprecateWarning(
+              'controllerMethodDidInvoke',
+              `controllerMethodDidInvoke() is now deprecated`,
+            )
             await instance.controllerMethodDidInvoke({
               name: methodName,
               params,
@@ -434,34 +447,9 @@ class TheServer extends TheServerBase {
         if (!Class) {
           throw new Error(`[TheServer] Unknown stream: ${streamName}`)
         }
-
-        class Stream extends Class {
-          async streamDidCatch(error) {
-            const result = await super.streamDidCatch(error)
-            void ioConnector.sendStreamError(cid, sid, error)
-            return result
-          }
-
-          async streamDidOpen() {
-            const result = await super.streamDidOpen()
-            await ioConnector.sendStreamDidOpen(cid, sid)
-            for await (const chunk of this.provider.toGenerator()) {
-              await ioConnector.sendStreamChunk(cid, sid, chunk)
-            }
-            await asleep(10)
-            await ioConnector.sendStreamFin(cid, sid)
-            return result
-          }
-
-          async streamWillClose() {
-            const result = await super.streamWillClose()
-            await ioConnector.sendStreamDidClose(cid, sid)
-            return result
-          }
-        }
-
+        const StreamFactory = toStreamFactory(Class, { cid, sid, ioConnector })
         const { appScope } = this
-        const stream = new Stream({
+        const stream = StreamFactory({
           app: appScope,
           client: { cid },
           params,
