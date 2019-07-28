@@ -146,12 +146,10 @@ class TheServer extends TheServerBase {
     this.controllerSpecs = controllerSpecs
     this.langs = langs
     this.handleCallback = this.handleCallback.bind(this)
-    this.io = null
     this.infoFile = infoFile
     this.streamPool = streamPool({})
     this.streamClasses = streamClasses
     this.rpcKeepDuration = rpcKeepDuration
-    this.rpcInvocations = {}
   }
 
   get closed() {
@@ -208,7 +206,6 @@ class TheServer extends TheServerBase {
       await this.closeRedisAdapter()
     }
     await this.storage.quit()
-    this.io = null
     return closed
   }
 
@@ -282,7 +279,6 @@ class TheServer extends TheServerBase {
     this.closeRedisAdapter = redisAdapter(io, this.redisConfig)
     const metricsCounter = MetricsCounter()
     const controllerPool = ControllerPool()
-    this.controllerPool = controllerPool
     this.metricsCounter = metricsCounter
     const ioConnector = IOConnector(io, {
       connectionStore: this.connectionStore,
@@ -357,13 +353,6 @@ class TheServer extends TheServerBase {
         await asleep(10 * Math.random())
         let data
         let errors
-        this.rpcInvocations[cid] = this.rpcInvocations[cid] || {}
-        this.rpcInvocations[cid][iid] = {
-          iid,
-          methodName,
-          moduleName,
-          socketId,
-        }
         await instance.reloadSession()
         try {
           if (instance.controllerMethodWillInvoke) {
@@ -399,7 +388,6 @@ class TheServer extends TheServerBase {
           errors = [error]
         } finally {
           rpcKeeper.stopKeepTimerIfNeeded(cid, iid)
-          delete this.rpcInvocations[cid][iid]
         }
         if (this.closed) {
           return
@@ -467,12 +455,12 @@ class TheServer extends TheServerBase {
         await stream.open()
       },
     })
-    const rpcKeeper = RPCKeeper({
+    this.rpcKeeper = RPCKeeper({
+      sendRPCKeep: (...args) => ioConnector.sendRPCKeep(...args),
       ioConnector,
       keepDuration: this.rpcKeepDuration,
       metricsCounter,
     })
-    this.rpcKeeper = rpcKeeper
     this.ioConnector = ioConnector
     await new Promise((resolve) => server.listen(port, () => resolve())).then(
       () => this,
