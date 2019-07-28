@@ -16,6 +16,7 @@ const { omitLongString } = require('./helpers')
 function withDebug(ctrl, options = {}) {
   const {
     contextFilter = ({ client }) => client,
+    controllerName = '',
     debugKey = 'app:ctrl',
   } = options
   const debug = Debug(debugKey)
@@ -27,9 +28,7 @@ function withDebug(ctrl, options = {}) {
     }
   }
   return Object.assign(
-    {
-      _debug: debug,
-    },
+    {},
     ...Object.entries(ctrl).map(([name, original]) => ({
       [name]: Object.assign(
         async function debugProxy(...args) {
@@ -53,7 +52,7 @@ function withDebug(ctrl, options = {}) {
               took,
             })
             debug(
-              `\`.${name}()\``,
+              `\`${controllerName}.${name}()\``,
               inspect(cleanup(info), {
                 breakLength: Infinity,
                 depth: 3,
@@ -77,6 +76,7 @@ withDebug.fromFactories = (ControllerMapping, options = {}) => {
       [controllerName]: function ControllerFactoryWrap(...args) {
         const ctrl = Factory(...args)
         return withDebug(ctrl, {
+          controllerName,
           debugKey: `${debugKeyPrefix}${controllerName}`,
         })
       },
