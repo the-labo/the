@@ -4,20 +4,12 @@
  */
 'use strict'
 
-const toStreamDriverFactory = require('../lib/streaming/toStreamDriverFactory')
-
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('to-stream-driver-factory', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-    
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

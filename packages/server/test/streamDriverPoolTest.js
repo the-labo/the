@@ -4,20 +4,12 @@
  */
 'use strict'
 
-const streamDriverPool = require('../lib/streaming/streamDriverPool')
-
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('stream-driver-pool', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
-  it('Do test', () => {
-    
-  })
+  it('Do test', () => {})
 })
 
 /* global describe, before, after, it */

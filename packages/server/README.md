@@ -136,6 +136,8 @@ const { createElement: c } = React
 
 - global
   - [IOEvents()](./doc/api/api.md#IOEvents)
+  - [reload()](./doc/api/api.md#reload)
+  - [save(options)](./doc/api/api.md#save)
 - module:@the-/server
   - [.adapters](./doc/api/api.md#module_@the-/server.adapters)
   - [.assert](./doc/api/api.md#module_@the-/server.assert)
@@ -170,8 +172,7 @@ const { createElement: c } = React
   - [.streamPool()](./doc/api/api.md#module_@the-/server.helpers.streamPool)
   - [.toControllerDriverFactory()](./doc/api/api.md#module_@the-/server.helpers.toControllerDriverFactory)
   - [.toLowerKeys()](./doc/api/api.md#module_@the-/server.helpers.toLowerKeys)
-  - [.toStreamFactory()](./doc/api/api.md#module_@the-/server.helpers.toStreamFactory)
-  - [~StreamPool](./doc/api/api.md#module_@the-/server.helpers~StreamPool)
+  - [~StreamDriverPool](./doc/api/api.md#module_@the-/server.helpers~StreamDriverPool)
 - module:@the-/server.helpers.InfoFlusher
   - [~infoFlusher](./doc/api/api.md#module_@the-/server.helpers.InfoFlusher~infoFlusher)
 - module:@the-/server.helpers.InfoFlusher~infoFlusher
@@ -180,9 +181,6 @@ const { createElement: c } = React
   - [~metricsCounter](./doc/api/api.md#module_@the-/server.helpers.metricsMix~metricsCounter)
 - module:@the-/server.helpers.RPCKeeper
   - [~rpcKeeper](./doc/api/api.md#module_@the-/server.helpers.RPCKeeper~rpcKeeper)
-- module:@the-/server.helpers.toControllerDriverFactory~ControllerDriverFactory
-  - [~reloadSession()](./doc/api/api.md#module_@the-/server.helpers.toControllerDriverFactory~ControllerDriverFactory~reloadSession)
-  - [~saveSession(options)](./doc/api/api.md#module_@the-/server.helpers.toControllerDriverFactory~ControllerDriverFactory~saveSession)
 - module:@the-/server.mixins
   - [.clientMix(Class)](./doc/api/api.md#module_@the-/server.mixins.clientMix)
 - module:@the-/server.mixins.clientMix
@@ -207,6 +205,8 @@ const { createElement: c } = React
   - [#has(id)](./doc/api/api.md#module_@the-/server.stores.Store#has)
   - [#ids()](./doc/api/api.md#module_@the-/server.stores.Store#ids)
   - [#set(id,data)](./doc/api/api.md#module_@the-/server.stores.Store#set)
+- module:@the-/server.streaming
+  - [.toStreamDriverFactory()](./doc/api/api.md#module_@the-/server.streaming.toStreamDriverFactory)
 - module:@the-/server.TheServer
   - [#close(args)](./doc/api/api.md#module_@the-/server.TheServer#close)
   - [#destroyAllSessions()](./doc/api/api.md#module_@the-/server.TheServer#destroyAllSessions)

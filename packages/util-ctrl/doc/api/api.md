@@ -5,7 +5,7 @@
 ## @the-/util-ctrl
 Utility for controllers
 
-**Version**: 15.4.11  
+**Version**: 15.4.12  
 **License**: MIT  
 
 * [@the-/util-ctrl](#module_@the-/util-ctrl)

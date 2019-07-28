@@ -46,9 +46,8 @@ Utility for controllers
 
 - module:@the-/util-ctrl
   - [.helpers](./doc/api/api.md#module_@the-/util-ctrl.helpers)
+  - [.omitLongString()](./doc/api/api.md#module_@the-/util-ctrl.omitLongString)
   - [.withDebug(ctrl)](./doc/api/api.md#module_@the-/util-ctrl.withDebug)
-- global
-  - [omitLongString()](./doc/api/api.md#omitLongString)
 
 See [API Guide](./doc/api/api.md) for more detail
 

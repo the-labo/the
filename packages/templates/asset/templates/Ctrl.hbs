@@ -1,19 +1,19 @@
 /**
  * {{name}}
  * @memberof {{memberof}}
- * @class {{name}}
+ * @function {{name}}
  */
 'use strict'
 
-import Ctrl from './Ctrl'
-import {compose, } from '@the-/mixin-controller'
-
-const {{name}}Base = compose(
-
-)(Ctrl)
-
 /** @lends {{memberof}}.{{name}} */
-class {{name}} extends {{name}}Base {
+const {{name}} = ({ }) => {
+  const {{camelcase name}} = {
+
+  }
+
+  Object.freeze({{camelcase name}})
+
+  return {{camelcase name}}
 }
 
 export default {{name}}

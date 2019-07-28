@@ -10,7 +10,7 @@
  * @class StreamDriverPool
  */
 class StreamDriverPool {
-  constructor({}) {
+  constructor() {
     this.instances = {}
   }
 

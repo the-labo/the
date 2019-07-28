@@ -4,19 +4,18 @@
  */
 'use strict'
 
+const {
+  strict: { ok },
+} = require('assert')
 const SessionAccess = require('../lib/helpers/SessionAccess')
 
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('session-access', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', () => {
-    
+    ok(SessionAccess)
   })
 })
 

@@ -217,9 +217,8 @@ class TheServer extends TheServerBase {
   }
 
   async createControllerDriver(controllerName, cid) {
-    const ControllerDriverFactory = this.ControllerDriverFactories[
-      controllerName
-    ]
+    const { ControllerDriverFactories } = this
+    const ControllerDriverFactory = ControllerDriverFactories[controllerName]
     if (!ControllerDriverFactory) {
       throw new Error(`[TheServer] Unknown controller: ${controllerName}`)
     }
