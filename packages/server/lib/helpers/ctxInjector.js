@@ -1,4 +1,3 @@
-'use strict'
 /**
  * Define koa middleware register ctx values
  * @memberof module:@the-/server.helpers
@@ -6,15 +5,14 @@
  * @param {function()} creators
  * @returns {function()}
  */
+'use strict'
+
+const evalInjectors = require('./evalInjectors')
+
 /** @lends module:@the-/server.helpers.ctxInjector */
 function ctxInjector(creators) {
   return async function middleware(ctx, next) {
-    const injections = Object.assign(
-      {},
-      ...Object.keys(creators).map((name) => ({
-        [name]: creators[name](ctx),
-      })),
-    )
+    const injections = evalInjectors(creators)
     Object.assign(ctx, injections, { injections })
     await next()
   }

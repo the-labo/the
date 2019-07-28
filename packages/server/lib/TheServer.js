@@ -131,7 +131,7 @@ class TheServer extends TheServerBase {
       logFile,
     })
     if (html) {
-      const renderer = serversideRendering(html, { appScope, cacheDir })
+      const renderer = serversideRendering(html, { injectors, cacheDir })
       renderer.clearCacheSync()
       this.app.use(renderer)
     }
