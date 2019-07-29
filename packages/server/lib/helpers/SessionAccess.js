@@ -5,7 +5,7 @@ function SessionAccess(sessionStore, cid) {
     needsToSaveSession: false,
     session: {},
   }
-  return {
+  const sessionAccess = {
     proxy: new Proxy(state.session, {
       set(target, k, v) {
         target[k] = v
@@ -15,11 +15,16 @@ function SessionAccess(sessionStore, cid) {
     }),
     state,
 
+    async clear() {
+      await sessionStore.set(cid, {})
+      await sessionAccess.reload()
+    },
     /**
      * Reload session from store
      * @returns {Promise<boolean>}
      */
     async reload() {
+      // TODO Do some cache
       const loaded = (await sessionStore.get(cid)) || {}
       for (const key of Object.keys(state.session)) {
         const deleted = !(key in loaded)
@@ -44,6 +49,10 @@ function SessionAccess(sessionStore, cid) {
       state.needsToSaveSession = false
     },
   }
+
+  Object.freeze(sessionAccess)
+
+  return sessionAccess
 }
 
 module.exports = SessionAccess

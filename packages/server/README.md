@@ -136,8 +136,6 @@ const { createElement: c } = React
 
 - global
   - [IOEvents()](./doc/api/api.md#IOEvents)
-  - [reload()](./doc/api/api.md#reload)
-  - [save(options)](./doc/api/api.md#save)
 - module:@the-/server
   - [.adapters](./doc/api/api.md#module_@the-/server.adapters)
   - [.assert](./doc/api/api.md#module_@the-/server.assert)
@@ -212,6 +210,9 @@ const { createElement: c } = React
   - [#destroyAllSessions()](./doc/api/api.md#module_@the-/server.TheServer#destroyAllSessions)
   - [#info()](./doc/api/api.md#module_@the-/server.TheServer#info)
   - [#listen(port)](./doc/api/api.md#module_@the-/server.TheServer#listen)
+- SessionAccess~sessionAccess
+  - [.reload()](./doc/api/api.md#SessionAccess~sessionAccess.reload)
+  - [.save(options)](./doc/api/api.md#SessionAccess~sessionAccess.save)
 
 See [API Guide](./doc/api/api.md) for more detail
 

@@ -13,7 +13,7 @@
     "name": "@the-/server",
     "order": 3,
     "typicalname": "server",
-    "version": "16.0.24"
+    "version": "16.0.30"
   },
   {
     "description": "HTTP server for the-framework",
@@ -103,65 +103,6 @@
     "scope": "global"
   },
   {
-    "description": "Reload session from store",
-    "id": "reload",
-    "kind": "function",
-    "longname": "reload",
-    "meta": {
-      "filename": "SessionAccess.js",
-      "lineno": 22,
-      "path": "lib/helpers"
-    },
-    "name": "reload",
-    "order": 34,
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<boolean>"
-          ]
-        }
-      }
-    ],
-    "scope": "global"
-  },
-  {
-    "description": "Save session",
-    "id": "save",
-    "kind": "function",
-    "longname": "save",
-    "meta": {
-      "filename": "SessionAccess.js",
-      "lineno": 37,
-      "path": "lib/helpers"
-    },
-    "name": "save",
-    "order": 35,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "optional": true,
-        "defaultvalue": "{}",
-        "description": "Optional settings",
-        "name": "options"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<undefined>"
-          ]
-        }
-      }
-    ],
-    "scope": "global"
-  },
-  {
     "description": "Server info",
     "id": "module:@the-/server.TheServer#info",
     "kind": "function",
@@ -169,7 +110,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 182,
+      "lineno": 202,
       "path": "lib"
     },
     "name": "info",
@@ -186,7 +127,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 199,
+      "lineno": 219,
       "path": "lib"
     },
     "name": "close",
@@ -223,7 +164,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 248,
+      "lineno": 243,
       "path": "lib"
     },
     "name": "destroyAllSessions",
@@ -250,7 +191,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 261,
+      "lineno": 256,
       "path": "lib"
     },
     "name": "listen",
@@ -1382,6 +1323,67 @@
     },
     "name": "serverRendering",
     "order": 33,
+    "scope": "static"
+  },
+  {
+    "description": "Reload session from store",
+    "id": "SessionAccess~sessionAccess.reload",
+    "kind": "function",
+    "longname": "SessionAccess~sessionAccess.reload",
+    "memberof": "SessionAccess~sessionAccess",
+    "meta": {
+      "filename": "SessionAccess.js",
+      "lineno": 26,
+      "path": "lib/helpers"
+    },
+    "name": "reload",
+    "order": 34,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<boolean>"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Save session",
+    "id": "SessionAccess~sessionAccess.save",
+    "kind": "function",
+    "longname": "SessionAccess~sessionAccess.save",
+    "memberof": "SessionAccess~sessionAccess",
+    "meta": {
+      "filename": "SessionAccess.js",
+      "lineno": 42,
+      "path": "lib/helpers"
+    },
+    "name": "save",
+    "order": 35,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<undefined>"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {

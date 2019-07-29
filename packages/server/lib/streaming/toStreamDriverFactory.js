@@ -64,6 +64,7 @@ function toStreamDriverFactory(StreamFactory, options = {}) {
       ...unknown
     } = StreamFactory({
       ...inject(),
+      client: { cid },
       handle: {
         get closed() {
           return stream.closed

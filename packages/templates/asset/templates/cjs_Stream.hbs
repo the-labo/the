@@ -1,19 +1,22 @@
 /**
  * {{name}}
  * @memberof {{memberof}}
- * @class {{name}}
+ * @function {{name}}
  */
 'use strict'
 
 const Stream = require('./Stream')
-const {compose, } = require('@the-/mixin-stream')
-
-const {{name}}Base = compose(
-
-)(Stream)
 
 /** @lends {{memberof}}.{{name}} */
-class {{name}} extends {{name}}Base {
+const {{name}} = ({ params }) => {
+  return {
+    async consume(received) {
+
+    },
+    async *provide() {
+
+    },
+  }
 }
 
 module.exports = {{name}}

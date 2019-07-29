@@ -37,6 +37,7 @@ function toControllerDriverFactory(ControllerFactory, options = {}) {
       controllerWillDetach: noop,
     }
     const {
+      clear: clearSession,
       proxy: session,
       reload: reloadSession,
       save: saveSession,
@@ -53,6 +54,7 @@ function toControllerDriverFactory(ControllerFactory, options = {}) {
       },
     })
     const driver = {
+      clearSession,
       controller,
       controllerName,
       interceptors,

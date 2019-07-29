@@ -163,6 +163,26 @@ class TheServer extends TheServerBase {
     return !!this.closeAt
   }
 
+  createControllerDriver(controllerName, client) {
+    const { ControllerDriverFactories } = this
+    const ControllerDriverFactory = ControllerDriverFactories[controllerName]
+    if (!ControllerDriverFactory) {
+      throw new Error(`[TheServer] Unknown controller: ${controllerName}`)
+    }
+    if (!client) {
+      throw new Error('[TheServer] client is required')
+    }
+
+    return ControllerDriverFactory({
+      callbacks: callbacksProxy({
+        client,
+        controllerName,
+        onCallback: this.handleCallback,
+      }),
+      client: { ...client },
+    })
+  }
+
   handleCallback({
     cid,
     controller: controllerName,
@@ -216,30 +236,6 @@ class TheServer extends TheServerBase {
     return closed
   }
 
-  async createControllerDriver(controllerName, cid) {
-    const { ControllerDriverFactories } = this
-    const ControllerDriverFactory = ControllerDriverFactories[controllerName]
-    if (!ControllerDriverFactory) {
-      throw new Error(`[TheServer] Unknown controller: ${controllerName}`)
-    }
-    if (!cid) {
-      throw new Error('[TheServer] cid is required')
-    }
-    const connection = await this.getClientConnection(cid, { patiently: true })
-    if (!connection) {
-      throw new Error(`[TheServer] Connection not found for: ${cid}`)
-    }
-    const { client = { cid } } = connection
-    return ControllerDriverFactory({
-      callbacks: callbacksProxy({
-        client,
-        controllerName,
-        onCallback: this.handleCallback,
-      }),
-      client: { ...client, cid },
-    })
-  }
-
   /**
    * Destroy all sessions
    * @returns {Promise<number>} Deleted count
@@ -247,7 +243,7 @@ class TheServer extends TheServerBase {
   async destroyAllSessions() {
     const { controllerDriverPool, sessionStore } = this
     await controllerDriverPool.each(async (driver) => {
-      await driver.reloadSession()
+      await driver.clearSession()
     })
     return sessionStore.delAll()
   }
@@ -280,7 +276,7 @@ class TheServer extends TheServerBase {
         await this.saveClientSocket(cid, socketId, client)
         const controllerNames = Object.keys(this.ControllerDriverFactories)
         for (const controllerName of controllerNames) {
-          const driver = await this.createControllerDriver(controllerName, cid)
+          const driver = this.createControllerDriver(controllerName, client)
           const { interceptors } = driver
           await driver.reloadSession()
           interceptors.controllerDidAttach()
@@ -291,6 +287,7 @@ class TheServer extends TheServerBase {
       },
 
       onIOClientGone: async (cid, socketId, reason) => {
+        // TODO Wait until onIOClientCame done
         const { rpcKeeper } = this
         const hasConnection = await this.hasClientConnection(cid)
         if (!hasConnection) {

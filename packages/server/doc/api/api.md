@@ -14,12 +14,6 @@
 <dt><a href="#IOEvents">IOEvents()</a></dt>
 <dd><p>Events for IO</p>
 </dd>
-<dt><a href="#reload">reload()</a> ⇒ <code>Promise.&lt;boolean&gt;</code></dt>
-<dd><p>Reload session from store</p>
-</dd>
-<dt><a href="#save">save([options])</a> ⇒ <code>Promise.&lt;undefined&gt;</code></dt>
-<dd><p>Save session</p>
-</dd>
 </dl>
 
 <a name="module_@the-/server"></a>
@@ -27,7 +21,7 @@
 ## @the-/server
 HTTP/RPC Server of the-framework
 
-**Version**: 16.0.24  
+**Version**: 16.0.30  
 **License**: MIT  
 
 * [@the-/server](#module_@the-/server)
@@ -625,20 +619,3 @@ Alias of [create](#module_@the-/server.create)
 Events for IO
 
 **Kind**: global function  
-<a name="reload"></a>
-
-## reload() ⇒ <code>Promise.&lt;boolean&gt;</code>
-Reload session from store
-
-**Kind**: global function  
-<a name="save"></a>
-
-## save([options]) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Save session
-
-**Kind**: global function  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
