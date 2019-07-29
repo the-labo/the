@@ -84,8 +84,10 @@ Usage
   - [.default()](./doc/api/api.md#module_@the-/context.default)
   - [.helpers](./doc/api/api.md#module_@the-/context.helpers)
 - module:@the-/context.helpers
-  - [.ContextEntry](./doc/api/api.md#module_@the-/context.helpers.ContextEntry)
+  - [.contextEntryFor()](./doc/api/api.md#module_@the-/context.helpers.contextEntryFor)
   - [.ContextRootFor()](./doc/api/api.md#module_@the-/context.helpers.ContextRootFor)
+- module:@the-/context.helpers.contextEntryFor
+  - [~ContextEntry](./doc/api/api.md#module_@the-/context.helpers.contextEntryFor~ContextEntry)
 
 See [API Guide](./doc/api/api.md) for more detail
 

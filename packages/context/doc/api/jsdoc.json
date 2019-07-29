@@ -13,14 +13,14 @@
     "name": "@the-/context",
     "order": 2,
     "typicalname": "context",
-    "version": "16.0.5"
+    "version": "16.0.6"
   },
   {
     "description": "Context",
-    "id": "@the-/context.TheContext()",
+    "id": "module:@the-/context.TheContext()",
     "kind": "constructor",
-    "longname": "@the-/context.TheContext",
-    "memberof": "@the-/context.TheContext",
+    "longname": "module:@the-/context.TheContext",
+    "memberof": "module:@the-/context.TheContext",
     "name": "TheContext",
     "order": 4,
     "params": [
@@ -47,10 +47,10 @@
   },
   {
     "description": "Delete value from store",
-    "id": "@the-/context.TheContext#del",
+    "id": "module:@the-/context.TheContext#del",
     "kind": "function",
-    "longname": "@the-/context.TheContext#del",
-    "memberof": "@the-/context.TheContext",
+    "longname": "module:@the-/context.TheContext#del",
+    "memberof": "module:@the-/context.TheContext",
     "meta": {
       "filename": "TheContext.js",
       "lineno": 31,
@@ -72,10 +72,10 @@
   },
   {
     "description": "Get value from store",
-    "id": "@the-/context.TheContext#get",
+    "id": "module:@the-/context.TheContext#get",
     "kind": "function",
-    "longname": "@the-/context.TheContext#get",
-    "memberof": "@the-/context.TheContext",
+    "longname": "module:@the-/context.TheContext#get",
+    "memberof": "module:@the-/context.TheContext",
     "meta": {
       "filename": "TheContext.js",
       "lineno": 41,
@@ -117,10 +117,10 @@
   },
   {
     "description": "Set values to store",
-    "id": "@the-/context.TheContext#set",
+    "id": "module:@the-/context.TheContext#set",
     "kind": "function",
-    "longname": "@the-/context.TheContext#set",
-    "memberof": "@the-/context.TheContext",
+    "longname": "module:@the-/context.TheContext#set",
+    "memberof": "module:@the-/context.TheContext",
     "meta": {
       "filename": "TheContext.js",
       "lineno": 49,
@@ -142,10 +142,10 @@
     "scope": "instance"
   },
   {
-    "id": "@the-/context.TheContext",
+    "id": "module:@the-/context.TheContext",
     "kind": "class",
-    "longname": "@the-/context.TheContext",
-    "memberof": "@the-/context",
+    "longname": "module:@the-/context.TheContext",
+    "memberof": "module:@the-/context",
     "meta": {
       "filename": "TheContext.js",
       "lineno": 2,
@@ -258,7 +258,7 @@
     "memberof": "module:@the-/context.helpers.contextEntryFor",
     "meta": {
       "filename": "contextEntryFor.js",
-      "lineno": 18,
+      "lineno": 15,
       "path": "lib/helpers"
     },
     "name": "ContextEntry",

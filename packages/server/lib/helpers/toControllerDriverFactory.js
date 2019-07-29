@@ -42,17 +42,31 @@ function toControllerDriverFactory(ControllerFactory, options = {}) {
       reload: reloadSession,
       save: saveSession,
     } = SessionAccess(sessionStore, cid)
-    const controller = ControllerFactory({
+    const ctrlContext = {
       callbacks,
+      client,
       session,
-      ...inject(),
       intercept: (funcs = {}) => {
         for (const [name, func] of Object.entries(funcs)) {
           assert(name in interceptors, `Unknown interceptor name: ${name}`)
           interceptors[name] = func
         }
       },
-    })
+    }
+    const injected = { ...inject() }
+    {
+      const injectConflicted = Object.keys(injected).filter(
+        (k) => k in ctrlContext,
+      )
+      assert(
+        injectConflicted.length === 0,
+        `You cannot use ${injectConflicted.join(
+          ',',
+        )} for injected key because it is reserved`,
+      )
+    }
+    Object.assign(ctrlContext, injected)
+    const controller = ControllerFactory(ctrlContext)
     const driver = {
       clearSession,
       controller,

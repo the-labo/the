@@ -5,16 +5,77 @@
 ## @the-/context
 React context for the-components
 
-**Version**: 16.0.5  
+**Version**: 16.0.6  
 **License**: MIT  
 
 * [@the-/context](#module_@the-/context)
+    * [.TheContext](#module_@the-/context.TheContext)
+        * [new TheContext(values, [options])](#new_module_@the-/context.TheContext_new)
+        * [.del(name)](#module_@the-/context.TheContext+del)
+        * [.get(name, [options])](#module_@the-/context.TheContext+get) ⇒ <code>\*</code>
+        * [.set(values)](#module_@the-/context.TheContext+set)
     * [.helpers](#module_@the-/context.helpers) : <code>object</code>
         * [.contextEntryFor()](#module_@the-/context.helpers.contextEntryFor)
             * [~ContextEntry](#module_@the-/context.helpers.contextEntryFor..ContextEntry)
         * [.ContextRootFor()](#module_@the-/context.helpers.ContextRootFor)
     * [.create(...args)](#module_@the-/context.create) ⇒ <code>TheContext</code>
     * [.default()](#module_@the-/context.default)
+
+<a name="module_@the-/context.TheContext"></a>
+
+### context.TheContext
+**Kind**: static class of [<code>@the-/context</code>](#module_@the-/context)  
+
+* [.TheContext](#module_@the-/context.TheContext)
+    * [new TheContext(values, [options])](#new_module_@the-/context.TheContext_new)
+    * [.del(name)](#module_@the-/context.TheContext+del)
+    * [.get(name, [options])](#module_@the-/context.TheContext+get) ⇒ <code>\*</code>
+    * [.set(values)](#module_@the-/context.TheContext+set)
+
+<a name="new_module_@the-/context.TheContext_new"></a>
+
+#### new TheContext(values, [options])
+Context
+
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| values | <code>Object</code> |  |  |
+| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
+
+<a name="module_@the-/context.TheContext+del"></a>
+
+#### theContext.del(name)
+Delete value from store
+
+**Kind**: instance method of [<code>TheContext</code>](#module_@the-/context.TheContext)  
+
+| Param | Type |
+| --- | --- |
+| name | <code>string</code> | 
+
+<a name="module_@the-/context.TheContext+get"></a>
+
+#### theContext.get(name, [options]) ⇒ <code>\*</code>
+Get value from store
+
+**Kind**: instance method of [<code>TheContext</code>](#module_@the-/context.TheContext)  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| name | <code>string</code> |  |  |
+| [options] | <code>Object</code> | <code>{}</code> | Optional setting |
+
+<a name="module_@the-/context.TheContext+set"></a>
+
+#### theContext.set(values)
+Set values to store
+
+**Kind**: instance method of [<code>TheContext</code>](#module_@the-/context.TheContext)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| values | <code>Object</code> | Values to set |
 
 <a name="module_@the-/context.helpers"></a>
 

@@ -5,13 +5,10 @@
  * @function contextEntryFor
  */
 const { shallowEqual } = require('asobj')
-const memoizeOne = require('memoize-one')
+const memoizeOneImported = require('memoize-one')
 const PropTypes = require('prop-types')
 const React = require('react')
-
-const ComponentWithRenderer = (memoizeOne.default || memoizeOne)((renderer) =>
-  React.memo(renderer),
-)
+const memoizeOne = memoizeOneImported.default || memoizeOneImported
 
 /** @lends module:@the-/context.helpers.contextEntryFor */
 function contextEntryFor(context, { store }) {
@@ -36,10 +33,7 @@ function contextEntryFor(context, { store }) {
       const {
         props: { children: renderer },
       } = this
-      const Component = ComponentWithRenderer(renderer)
-      return React.createElement(Component, {
-        ...renderable,
-      })
+      return renderer(renderable)
     }
 
     componentDidMount() {

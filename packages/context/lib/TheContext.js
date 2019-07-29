@@ -1,7 +1,7 @@
 'use strict'
 /**
  * Context
- * @memberof @the-/context
+ * @memberof module:@the-/context
  * @class TheContext
  * @param {Object} values
  * @param {Object} [options={}] - Optional settings
@@ -11,7 +11,7 @@ const { TheState } = require('@the-/state')
 const contextEntryFor = require('./helpers/contextEntryFor')
 const contextRootFor = require('./helpers/contextRootFor')
 
-/** @lends @the-/context.TheContext */
+/** @lends module:@the-/context.TheContext */
 class TheContext {
   constructor(values = {}, options = {}) {
     const { store = new TheState({ defaults: values }) } = options
