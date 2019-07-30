@@ -10,7 +10,6 @@ const {
 const { TheRefresher } = require('@the-/refresher')
 const {
   DataTypes: { ENTITY, STRING },
-  TheResource,
 } = require('@the-/resource')
 const TheDB = require('../lib/TheDB')
 
@@ -37,7 +36,7 @@ describe('the-db', function() {
         foo: () => () => 'foo',
       },
       resources: {
-        Hoge: TheResource,
+        Hoge: ({ define }) => define({}),
       },
     })
 
@@ -45,34 +44,33 @@ describe('the-db', function() {
       console.log('DB Closed')
     })
 
-    class UserResource extends TheResource {
-      static get policy() {
-        return {
-          passwordHash: { type: 'STRING' },
-          username: { type: 'STRING', unique: true },
-        }
-      }
+    const UserResource = ({ define }) =>
+      define({
+        passwordHash: { type: 'STRING' },
+        username: { type: 'STRING', unique: true },
+      }, {
+        interceptors: {
+          inbound(attributes) {
+            const digest = (password) => password.slice(0, 1)
+            attributes.passwordHash = digest(attributes.password)
+            delete attributes.password
+            return attributes
+          },
+        },
+        hooks: {
+          onCreate(created) {
+            console.log('created', created)
+          },
 
-      static inbound(attributes) {
-        const digest = (password) => password.slice(0, 1)
-        attributes.passwordHash = digest(attributes.password)
-        delete attributes.password
-        return attributes
-      }
+          onUpdate(updated) {
+            console.log('updated', updated)
+          },
 
-      static onCreate(created) {
-        console.log('created', created)
-      }
-
-      static onUpdate(updated) {
-        console.log('updated', updated)
-      }
-
-      static outbound(attributes) {
-        return attributes
-      }
-    }
-
+          outbound(attributes) {
+            return attributes
+          },
+        },
+      })
     db.load(UserResource, 'User')
 
     const {
@@ -129,10 +127,6 @@ describe('the-db', function() {
       await db.resource('Ball').create({ name: `ball-${i}` })
     }
 
-    const dataDir = `${__dirname}/../tmp/foo/exports`
-    await db.export(dataDir)
-    await db.import(dataDir)
-
     await asleep(300)
 
     equal(db.plugins.foo(), 'foo')
@@ -144,7 +138,7 @@ describe('the-db', function() {
   it('Use refresh loop', async () => {
     const db = new TheDB({})
 
-    class UserResource extends TheResource {}
+    const UserResource = ({ define }) => define({})
 
     db.load(UserResource, 'User')
 
@@ -184,13 +178,12 @@ describe('the-db', function() {
     }
     const db = new TheDB({ env })
 
-    class UserResource extends TheResource {
-      static get indices() {
-        return ['profile.name', 'profile.email']
-      }
-    }
+    const UserResource = ({ define }) =>
+      define({}, {
+        indices: ['profile.name', 'profile.email'],
+      })
 
-    class ProfileResource extends TheResource {}
+    const ProfileResource = ({ define }) => define({})
 
     const User = db.load(UserResource, 'User')
     const Profile = db.load(ProfileResource, 'Profile')
@@ -229,31 +222,30 @@ describe('the-db', function() {
     }
     const db = new TheDB({ env })
 
-    class ArticleResource extends TheResource {
-      static get policy() {
-        return {
-          starCount: { type: 'NUMBER', default: () => 0 },
-        }
-      }
-
-      async refresh(entity) {
-        const {
-          db: {
-            resources: { Star },
-          },
-        } = this
-        await entity.update({
-          starCount: await Star.count({ target: entity }),
-        })
-      }
+    const ArticleResource = ({ define }) => {
+      const Article = define({
+        starCount: { type: 'NUMBER', default: () => 0 },
+      })
+      Object.assign(Article, {
+        async refresh(entity) {
+          const {
+            db: {
+              resources: { Star },
+            },
+          } = this
+          await entity.update({
+            starCount: await Star.count({ target: entity }),
+          })
+        },
+      })
+      return Article
     }
 
-    class StarResource extends TheResource {
-      static get policy() {
-        return {
-          target: { type: 'ENTITY' },
-        }
-      }
+    const StarResource = ({ define }) => {
+      const Star = define({
+        target: { type: 'ENTITY' },
+      })
+      return Star
     }
 
     const Article = db.load(ArticleResource, 'Article')
@@ -276,15 +268,14 @@ describe('the-db', function() {
       refreshInterval: 10,
     }
 
-    class AResource extends TheResource {
-      static get cascaded() {
-        return {
+    const AResource = ({ define }) =>
+      define({}, {
+        cascaded: {
           B: (b) => ({ b }),
-        }
-      }
-    }
+        },
+      })
 
-    class BResource extends TheResource {}
+    const BResource = ({ define }) => define({})
 
     const db = new TheDB({
       env,
@@ -313,7 +304,7 @@ describe('the-db', function() {
     })
     const User = db.resource('User')
     const user01 = await User.create({ name: 'user01' })
-    console.log(user01)
+    ok(user01)
     await db.setup()
     await db.close()
   })
@@ -332,33 +323,25 @@ describe('the-db', function() {
     await db.setup()
     await db.exec('SHOW TABLES')
 
-    class UserResource extends TheResource {
-      static get schema() {
-        return {
-          name: { type: STRING },
-        }
-      }
+    const UserResource = ({ define }) =>
+      define({
+        name: { type: STRING },
+      }, {
+        async invalidated(user) {
+          return {
+            profile: await Profile.first({ user }),
+          }
+        },
+      })
 
-      async invalidated(user) {
-        return {
-          profile: await Profile.first({ user }),
-        }
-      }
-    }
-
-    class ProfileResource extends TheResource {
-      static get indices() {
-        return ['user.id']
-      }
-
-      static get schema() {
-        return {
-          'foo.bar': { type: STRING },
-          name: { type: STRING },
-          user: { type: ENTITY },
-        }
-      }
-    }
+    const ProfileResource = ({ define }) =>
+      define({
+        'foo.bar': { type: STRING },
+        name: { type: STRING },
+        user: { type: ENTITY },
+      }, {
+        indices: ['user.id'],
+      })
 
     const User = db.load(UserResource, 'User')
     const Profile = db.load(ProfileResource, 'Profile')

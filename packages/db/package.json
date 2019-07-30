@@ -1,7 +1,7 @@
 {
   "name": "@the-/db",
   "description": "DB for the-framework",
-  "version": "16.0.3",
+  "version": "17.0.0-beta",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -34,6 +34,7 @@
     "clay-serial": "^2.1.4",
     "debug": "^4.1.1",
     "execcli": "^5.0.6",
+    "is-class": "0.0.8",
     "mkdirp": "^0.5.1",
     "msgpack5": "^4.2.1",
     "mysql2": "^1.6.5",

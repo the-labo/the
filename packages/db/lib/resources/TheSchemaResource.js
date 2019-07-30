@@ -6,45 +6,42 @@
  */
 const {
   DataTypes: { DATE, STRING },
-  TheResource,
 } = require('@the-/resource')
 
 /** @lends module:@the-/db.TheSchemaResource */
-class TheSchemaResource extends TheResource {
-  static get policy() {
-    return {
-      createdAt: {
-        description: 'Date schema created at',
-        required: true,
-        type: DATE,
-        default: () => new Date(),
-      },
-      migratedAt: {
-        description: 'Date migrated',
-        type: DATE,
-      },
-      version: {
-        description: 'Schema version string',
-        required: true,
-        type: STRING,
-        unique: true,
-        default: () => 'none',
-      },
-    }
-  }
-
-  static get schema() {
-    return this.policy
-  }
-
-  async current() {
-    const Schema = this
-    const latest = await Schema.first({}, { sort: ['-createdAt', '-$$num'] })
-    if (latest) {
-      return latest
-    }
-    return Schema.create({})
-  }
+const TheSchemaResource = ({ define }) => {
+  const TheSchema = define({
+    createdAt: {
+      description: 'Date schema created at',
+      required: true,
+      type: DATE,
+      default: () => new Date(),
+    },
+    migratedAt: {
+      description: 'Date migrated',
+      type: DATE,
+    },
+    version: {
+      description: 'Schema version string',
+      required: true,
+      type: STRING,
+      unique: true,
+      default: () => 'none',
+    },
+  })
+  Object.assign(TheSchema, {
+    async current() {
+      const latest = await TheSchema.first(
+        {},
+        { sort: ['-createdAt', '-$$num'] },
+      )
+      if (latest) {
+        return latest
+      }
+      return TheSchema.create({})
+    },
+  })
+  return TheSchema
 }
 
 module.exports = TheSchemaResource

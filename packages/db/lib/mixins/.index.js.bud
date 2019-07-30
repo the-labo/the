@@ -5,7 +5,7 @@ const { dir } = require('@the-/templates')
 module.exports = dir({
   annotations: {
     description: 'Mixin functions',
-    memberOf: 'module:@the-/db',
+    memberof: 'module:@the-/db',
     namespace: 'mixins',
   },
   cjs: true,

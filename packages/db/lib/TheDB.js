@@ -4,7 +4,6 @@
  * @class TheDB
  * @augments module:@the-/db.cascadeMix~CascadeMixed
  * @augments module:@the-/db.cliMix~CliMixed
- * @augments module:@the-/db.exportImportMix~ExportImportMixed
  * @augments module:@the-/db.migrateMix~MigrateMixed
  * @augments module:@the-/db.refreshMix~RefreshMixed
  * @augments module:@the-/db.resourceMix~ResourceMixed
@@ -25,11 +24,12 @@ const { unlinkAsync } = require('asfs')
 const asleep = require('asleep')
 const { clone } = require('asobj')
 const { ClayLump } = require('clay-lump')
+const isClass = require('is-class')
 const uuid = require('uuid')
 const theAssert = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
 const theHash = require('@the-/hash')
-const { isResourceClass } = require('@the-/resource')
+const { TheResource } = require('@the-/resource')
 const { toLowerKeys } = require('@the-/util-db')
 const driverFromEnv = require('./driverFromEnv')
 const execForEnv = require('./execForEnv')
@@ -49,7 +49,6 @@ const assert = theAssert('the:db')
 const TheDBBase = [
   m.resourceMix,
   m.cliMix,
-  m.exportImportMix,
   m.migrateMix,
   m.refreshMix,
   m.cascadeMix,
@@ -143,128 +142,144 @@ class TheDB extends TheDBBase {
 
   /**
    * Register resource form Resource Class
-   * @param {Function} ResourceClass - Resource class to register
+   * @param {Function} ResourceFactory - Resource factory
    * @param {string} resourceName - Name of resource
    * @returns {Object} Loaded resource instance
    */
-  load(ResourceClass, resourceName) {
+  load(ResourceFactory, resourceName) {
     unlessProduction(() => {
-      assert(!!ResourceClass, 'ResourceClass is required')
+      assert(!!ResourceFactory, `[${resourceName}] ResourceClass is required`)
       assert(
-        isResourceClass(ResourceClass),
-        'ResourceClass should inherit TheResource',
+        !isClass(ResourceFactory),
+        `[${resourceName}] ResourceFactory should be function, not class`,
       )
     })
 
-    const {
-      driver,
-      env: { dialect },
-    } = this
-    const {
-      collectionClass,
-      entityClass,
-      inbound,
-      indices = [],
-      onCreate,
-      onDestroy,
-      onDrop,
-      onUpdate,
-      outbound,
-      policy,
-      schema,
-      skipResolvingRefFor,
-    } = ResourceClass
     const duplicate = this.hasResource(resourceName)
-
-    const wrapActionContext = (actionContext) =>
-      Object.assign(actionContext, {
-        skipResolvingRefFor: []
-          .concat(actionContext.skipResolvingRefFor, skipResolvingRefFor)
-          .filter(Boolean),
-      })
-
     if (duplicate) {
       throw new Error(
         `Resource with name "${resourceName}" is already registered!`,
       )
     }
-    const resource = ResourceClass.fromDriver(driver, resourceName, {
-      annotates: true,
-    })
-    if (policy || schema) {
-      resource.policy(parsePolicy(policy || schema))
-    }
-    if (schema) {
-      if (driver.define) {
-        driver.define(resourceName, parseSchema(schema, { indices }))
-      } else {
-        const schemaLess = ['memory'].includes(dialect)
-        const shouldWarn = !schemaLess && !/^The/.test(resourceName)
-        if (shouldWarn) {
-          console.warn(`[TheDB] Schema not defined: ${resourceName}`)
-        }
-      }
-    }
 
-    const { indexInbound, indexOutbound } = indexBounds(indices)
-    // Wrap inbound
-    {
-      const { applyInbound } = resource
-      const inboundHandler = asBound(inbound)
-      resource.applyInbound = async function applyInboundWrap(
-        attributesArray,
-        actionContext = {},
-      ) {
-        actionContext = wrapActionContext(actionContext)
-        attributesArray = await indexInbound(
-          resource,
-          attributesArray,
-          actionContext,
-        )
-        attributesArray = await inboundHandler(
-          resource,
-          attributesArray,
-          actionContext,
-        )
-        attributesArray = await applyInbound.call(
-          resource,
-          attributesArray,
-          actionContext,
-        )
-        return attributesArray
-      }
-    }
-    // Wrap outbound
-    {
-      const { applyOutbound } = resource
-      const outboundHandler = asBound(outbound)
-      resource.applyOutbound = async function applyOutboundWrap(
-        entities,
-        actionContext = {},
-      ) {
-        actionContext = wrapActionContext(actionContext)
-        entities = await applyOutbound.call(resource, entities, actionContext)
-        entities = await outboundHandler(resource, entities, actionContext)
-        entities = await indexOutbound(resource, entities, actionContext)
-        // TODO Remove
-        for (const entity of entities) {
-          entity.id = String(entity.id)
+    const {
+      driver,
+      env: { dialect },
+    } = this
+
+    const resource = ResourceFactory({
+      define: (schema = {}, options = {}) => {
+        const {
+          collectionClass,
+          entityClass,
+          hooks = {},
+          invalidated,
+          indices = [],
+          cascaded,
+          interceptors = {},
+          skipResolvingRefFor,
+        } = options
+        const { inbound, outbound } = interceptors
+        const { onCreate, onDestroy, onDrop, onUpdate } = hooks
+
+        class ResourceClass extends TheResource {
+          static get cascaded() {
+            return cascaded
+          }
+          async invalidated(...args) {
+            return invalidated(...args)
+          }
         }
-        return entities
-      }
-    }
-    if (entityClass) {
-      resource.enhanceResourceEntity(entityClass)
-    }
-    if (collectionClass) {
-      resource.enhanceResourceCollection(collectionClass)
-    }
-    resource.listenTo({ onCreate, onDestroy, onDrop, onUpdate })
+
+        const resource = ResourceClass.fromDriver(driver, resourceName, {
+          annotates: true,
+        })
+        resource.policy(parsePolicy(schema))
+        if (driver.define) {
+          driver.define(resourceName, parseSchema(schema, { indices }))
+        } else {
+          const schemaLess = ['memory'].includes(dialect)
+          const shouldWarn = !schemaLess && !/^The/.test(resourceName)
+          if (shouldWarn) {
+            console.warn(`[TheDB] Schema not defined: ${resourceName}`)
+          }
+        }
+
+        const wrapActionContext = (actionContext) =>
+          Object.assign(actionContext, {
+            skipResolvingRefFor: []
+              .concat(actionContext.skipResolvingRefFor, skipResolvingRefFor)
+              .filter(Boolean),
+          })
+        this.schemas[resourceName] = schema
+        this.indices[resourceName] = indices
+
+        const { indexInbound, indexOutbound } = indexBounds(indices)
+        // Wrap inbound
+        {
+          const { applyInbound } = resource
+          const inboundHandler = asBound(inbound)
+          resource.applyInbound = async function applyInboundWrap(
+            attributesArray,
+            actionContext = {},
+          ) {
+            actionContext = wrapActionContext(actionContext)
+            attributesArray = await indexInbound(
+              resource,
+              attributesArray,
+              actionContext,
+            )
+            attributesArray = await inboundHandler(
+              resource,
+              attributesArray,
+              actionContext,
+            )
+            attributesArray = await applyInbound.call(
+              resource,
+              attributesArray,
+              actionContext,
+            )
+            return attributesArray
+          }
+        }
+        // Wrap outbound
+        {
+          const { applyOutbound } = resource
+          const outboundHandler = asBound(outbound)
+          resource.applyOutbound = async function applyOutboundWrap(
+            entities,
+            actionContext = {},
+          ) {
+            actionContext = wrapActionContext(actionContext)
+            entities = await applyOutbound.call(
+              resource,
+              entities,
+              actionContext,
+            )
+            entities = await outboundHandler(resource, entities, actionContext)
+            entities = await indexOutbound(resource, entities, actionContext)
+            // TODO Remove
+            for (const entity of entities) {
+              entity.id = String(entity.id)
+            }
+            return entities
+          }
+        }
+        if (entityClass) {
+          resource.enhanceResourceEntity(entityClass)
+        }
+        if (collectionClass) {
+          resource.enhanceResourceCollection(collectionClass)
+        }
+        resource.listenTo({ onCreate, onDestroy, onDrop, onUpdate })
+        return resource
+      },
+    })
+
+    assert(!!resource, 'Resource factory should return a resource')
 
     this.setResource(resourceName, resource)
     this.theDBLogEnabled = true
-    this.schemas[resourceName] = schema
-    this.indices[resourceName] = indices
     resource.db = this
 
     return resource
@@ -272,11 +287,11 @@ class TheDB extends TheDBBase {
 
   /**
    * Load resources from mapping object
-   * @param {Object<string, Function>} ResourceMapping - Resource name and class
+   * @param {Object<string, Function>} ResourceMapping - Resource name and factory
    */
   loadFromMapping(ResourceMapping) {
-    for (const [as, Resource] of Object.entries(ResourceMapping)) {
-      this.load(Resource, as)
+    for (const [as, ResourceFactory] of Object.entries(ResourceMapping)) {
+      this.load(ResourceFactory, as)
     }
   }
 
@@ -419,7 +434,7 @@ class TheDB extends TheDBBase {
   /**
    * Update database migration version
    * @param {string} version - Version string
-   * @returns {Promise.boolean} Success or not
+   * @returns {Promise<boolean>} Success or not
    */
   async updateVersion(version) {
     return this.updateMigrationVersion(version)
