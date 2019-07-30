@@ -40,6 +40,64 @@ function normalizeFunctionReturnOnFunctionNode(
       needsWrap ? `(${valueString})` : valueString,
     )
   }
+
+  const shouldReturnVariableDirectory =
+    body.body.length === 2 &&
+    body.body[0].type === NodeTypes.VariableDeclaration &&
+    body.body[0].declarations.length === 1 &&
+    body.body[1].type === NodeTypes.ReturnStatement &&
+    body.body[1].argument.type === NodeTypes.Identifier &&
+    body.body[0].declarations[0].id.name === body.body[1].argument.name
+  if (shouldReturnVariableDirectory) {
+    const {
+      body: [
+        {
+          declarations: [declaration],
+          leadingComments,
+        },
+      ],
+    } = body
+    const content = get([declaration.init.start, declaration.init.end])
+    const commentContent = leadingComments
+      ? get([
+          leadingComments[0].start,
+          leadingComments[leadingComments.length - 1].end,
+        ])
+      : ''
+    return replace(
+      [body.start, body.end],
+      `{
+  ${commentContent} 
+  return ${content} 
+}`,
+    )
+  }
+
+  const shouldReturnClassDirectly =
+    body.body.length === 2 &&
+    body.body[0].type === NodeTypes.ClassDeclaration &&
+    body.body[1].type === NodeTypes.ReturnStatement &&
+    body.body[1].argument.type === NodeTypes.Identifier &&
+    body.body[0].id.name === body.body[1].argument.name
+  if (shouldReturnClassDirectly) {
+    const {
+      body: [{ end, leadingComments, start }],
+    } = body
+    const content = get([start, end])
+    const commentContent = leadingComments
+      ? get([
+          leadingComments[0].start,
+          leadingComments[leadingComments.length - 1].end,
+        ])
+      : ''
+    return replace(
+      [body.start, body.end],
+      `{
+  ${commentContent} 
+  return ${content} 
+}`,
+    )
+  }
 }
 
 module.exports = normalizeFunctionReturnOnFunctionNode

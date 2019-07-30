@@ -131,6 +131,42 @@ const systemSentenceManager = {
       '() => ({ a: 1 })',
     )
   })
+
+  it('Direct return variable', async () => {
+    equal(
+      await processJSFunction(`
+const a = () => {
+  // this is b
+  const b = 1
+  return b
+}
+      `),
+      `
+const a = () => {
+  // this is b 
+  return 1 
+}
+      `,
+    )
+  })
+
+  it('Direct return class', async () => {
+    equal(
+      await processJSFunction(`
+const b = () => {
+  // this is x
+  class X {}
+  return X
+}
+`),
+      `
+const b = () => {
+  // this is x 
+  return class X {} 
+}
+`,
+    )
+  })
 })
 
 /* global describe, before, after, it */
