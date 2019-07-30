@@ -149,24 +149,6 @@ const a = () => {
       `,
     )
   })
-
-  it('Direct return class', async () => {
-    equal(
-      await processJSFunction(`
-const b = () => {
-  // this is x
-  class X {}
-  return X
-}
-`),
-      `
-const b = () => {
-  // this is x 
-  return class X {} 
-}
-`,
-    )
-  })
 })
 
 /* global describe, before, after, it */
