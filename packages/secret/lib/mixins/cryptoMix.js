@@ -30,7 +30,7 @@ function cryptoMix(Class) {
           Object.assign(
             {},
             ...Object.entries(data).map(([key, value]) => ({
-              [key]: this.decryptData(value),
+              [key]: this.decryptData(value, options),
             })),
           ),
         )
@@ -58,7 +58,7 @@ function cryptoMix(Class) {
           ...Object.entries(flatten(data)).map(([key, value]) => ({
             [key]: SKIP_CRYPTO_PATTERN.test(key)
               ? value
-              : this.encryptData(value),
+              : this.encryptData(value, options),
           })),
         )
       }

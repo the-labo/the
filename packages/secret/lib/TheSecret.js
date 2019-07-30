@@ -53,8 +53,7 @@ class TheSecret extends TheSecretBase {
     if (!data) {
       return
     }
-    const meta = qs.parse(data[this.metaFieldKey] || '')
-    const iv = 'iv' in meta ? Buffer.from(meta.iv, 'hex') : null
+    const iv = this._getIv(data)
     const decrypted = this.decryptData(data, { iv })
     delete decrypted[this.metaFieldKey]
     this.save(decrypted)
@@ -69,9 +68,7 @@ class TheSecret extends TheSecretBase {
       return
     }
 
-    const meta = qs.parse(data[this.metaFieldKey] || '')
-    const iv =
-      'iv' in meta ? Buffer.from(meta.iv, 'hex') : crypto.randomBytes(IV_LENGTH)
+    const iv = this._getIv(data, { defaultIv: crypto.randomBytes(IV_LENGTH) })
     const needsEncrypt = Object.entries(data)
       .filter(([k]) => !/^_/.test(k))
       .some(([, v]) => !this.isEncrypted(v))
@@ -106,7 +103,9 @@ class TheSecret extends TheSecretBase {
     if (notChanged) {
       return this.cache
     }
-    const content = this.decryptData(readAsJsonSync(this.filename))
+    const data = readAsJsonSync(this.filename)
+    const iv = this._getIv(data)
+    const content = this.decryptData(data, { iv })
     this.cache = content
     this.cacheAt = mtimeMs
     return content
@@ -132,6 +131,13 @@ class TheSecret extends TheSecretBase {
   writeout(filename) {
     const data = this.get()
     writeAsJsonSync(filename, data)
+  }
+
+  _getIv(data, options = {}) {
+    const { defaultIv = null } = options
+    const meta = qs.parse(data[this.metaFieldKey] || '')
+    const iv = 'iv' in meta ? Buffer.from(meta.iv, 'hex') : defaultIv
+    return iv
   }
 }
 
