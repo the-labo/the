@@ -65,15 +65,22 @@ const {
   DataTypes: { STRING },
 } = require('@the-/resource')
 
+const db = new TheDB({
+  dialect: 'sqlite', // Uses "clay-driver-sqlite" package
+  storage: 'var/my-app.db', // File path to save
+})
+
 // Define factory method for resource
 // See https://github.com/realglobe-Inc/clay-resource for more detail
-const UserResource = ({ define }) => {
-  const User = define(// Resource policy
+const User = db.defineResource(
+  'User',
+  // Resource policy'
   // https://github.com/realglobe-Inc/clay-policy#usage
   {
     password: { type: STRING },
     username: { type: STRING },
-  }, {
+  },
+  {
     interceptors: {
       // Convert entity attributes on inbound
       inbound(attributes) {
@@ -105,27 +112,10 @@ const UserResource = ({ define }) => {
     schema() {
       return {}
     },
-  })
-
-  Object.freeze(User)
-
-  return User
-}
-
-const db = new TheDB({
-  dialect: 'sqlite', // Uses "clay-driver-sqlite" package
-  storage: 'var/my-app.db', // File path to save
-})
-
-db.load(UserResource, 'User')
-
-// Using defined database
+  },
+)
 
 async function tryExample() {
-  // Use the connected resource
-  const {
-    resources: { User },
-  } = db
   const user = await User.create({
     password: 'Super Cool',
     username: 'Black Fire',

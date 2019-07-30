@@ -4,7 +4,7 @@
  * @license MIT
  * @module @the-/db
  * @typicalname db
- * @version 17.0.0
+ * @version 17.0.0-beta.2
  */
 'use strict'
 

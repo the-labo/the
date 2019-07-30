@@ -125,6 +125,115 @@ class TheDB extends TheDBBase {
     return this._resources
   }
 
+  defineResource(resourceName, schema = {}, options = {}) {
+    const {
+      driver,
+      env: { dialect },
+    } = this
+
+    const {
+      cascaded,
+      collectionClass,
+      entityClass,
+      hooks = {},
+      indices = [],
+      interceptors = {},
+      invalidated,
+      skipResolvingRefFor,
+    } = options
+    const { inbound, outbound } = interceptors
+    const { onCreate, onDestroy, onDrop, onUpdate } = hooks
+
+    class ResourceClass extends TheResource {
+      static get cascaded() {
+        return cascaded
+      }
+
+      async invalidated(...args) {
+        return invalidated(...args)
+      }
+    }
+
+    const resource = ResourceClass.fromDriver(driver, resourceName, {
+      annotates: true,
+    })
+    resource.policy(parsePolicy(schema))
+    if (driver.define) {
+      driver.define(resourceName, parseSchema(schema, { indices }))
+    } else {
+      const schemaLess = ['memory'].includes(dialect)
+      const shouldWarn = !schemaLess && !/^The/.test(resourceName)
+      if (shouldWarn) {
+        console.warn(`[TheDB] Schema not defined: ${resourceName}`)
+      }
+    }
+
+    const wrapActionContext = (actionContext) =>
+      Object.assign(actionContext, {
+        skipResolvingRefFor: []
+          .concat(actionContext.skipResolvingRefFor, skipResolvingRefFor)
+          .filter(Boolean),
+      })
+    this.schemas[resourceName] = schema
+    this.indices[resourceName] = indices
+
+    const { indexInbound, indexOutbound } = indexBounds(indices)
+    // Wrap inbound
+    {
+      const { applyInbound } = resource
+      const inboundHandler = asBound(inbound)
+      resource.applyInbound = async function applyInboundWrap(
+        attributesArray,
+        actionContext = {},
+      ) {
+        actionContext = wrapActionContext(actionContext)
+        attributesArray = await indexInbound(
+          resource,
+          attributesArray,
+          actionContext,
+        )
+        attributesArray = await inboundHandler(
+          resource,
+          attributesArray,
+          actionContext,
+        )
+        attributesArray = await applyInbound.call(
+          resource,
+          attributesArray,
+          actionContext,
+        )
+        return attributesArray
+      }
+    }
+    // Wrap outbound
+    {
+      const { applyOutbound } = resource
+      const outboundHandler = asBound(outbound)
+      resource.applyOutbound = async function applyOutboundWrap(
+        entities,
+        actionContext = {},
+      ) {
+        actionContext = wrapActionContext(actionContext)
+        entities = await applyOutbound.call(resource, entities, actionContext)
+        entities = await outboundHandler(resource, entities, actionContext)
+        entities = await indexOutbound(resource, entities, actionContext)
+        // TODO Remove
+        for (const entity of entities) {
+          entity.id = String(entity.id)
+        }
+        return entities
+      }
+    }
+    if (entityClass) {
+      resource.enhanceResourceEntity(entityClass)
+    }
+    if (collectionClass) {
+      resource.enhanceResourceCollection(collectionClass)
+    }
+    resource.listenTo({ onCreate, onDestroy, onDrop, onUpdate })
+    return resource
+  }
+
   /**
    * Register hooks from mapping
    * @param {Object} HookMapping
@@ -162,118 +271,9 @@ class TheDB extends TheDBBase {
       )
     }
 
-    const {
-      driver,
-      env: { dialect },
-    } = this
-
     const resource = ResourceFactory({
-      define: (schema = {}, options = {}) => {
-        const {
-          collectionClass,
-          entityClass,
-          hooks = {},
-          invalidated,
-          indices = [],
-          cascaded,
-          interceptors = {},
-          skipResolvingRefFor,
-        } = options
-        const { inbound, outbound } = interceptors
-        const { onCreate, onDestroy, onDrop, onUpdate } = hooks
-
-        class ResourceClass extends TheResource {
-          static get cascaded() {
-            return cascaded
-          }
-          async invalidated(...args) {
-            return invalidated(...args)
-          }
-        }
-
-        const resource = ResourceClass.fromDriver(driver, resourceName, {
-          annotates: true,
-        })
-        resource.policy(parsePolicy(schema))
-        if (driver.define) {
-          driver.define(resourceName, parseSchema(schema, { indices }))
-        } else {
-          const schemaLess = ['memory'].includes(dialect)
-          const shouldWarn = !schemaLess && !/^The/.test(resourceName)
-          if (shouldWarn) {
-            console.warn(`[TheDB] Schema not defined: ${resourceName}`)
-          }
-        }
-
-        const wrapActionContext = (actionContext) =>
-          Object.assign(actionContext, {
-            skipResolvingRefFor: []
-              .concat(actionContext.skipResolvingRefFor, skipResolvingRefFor)
-              .filter(Boolean),
-          })
-        this.schemas[resourceName] = schema
-        this.indices[resourceName] = indices
-
-        const { indexInbound, indexOutbound } = indexBounds(indices)
-        // Wrap inbound
-        {
-          const { applyInbound } = resource
-          const inboundHandler = asBound(inbound)
-          resource.applyInbound = async function applyInboundWrap(
-            attributesArray,
-            actionContext = {},
-          ) {
-            actionContext = wrapActionContext(actionContext)
-            attributesArray = await indexInbound(
-              resource,
-              attributesArray,
-              actionContext,
-            )
-            attributesArray = await inboundHandler(
-              resource,
-              attributesArray,
-              actionContext,
-            )
-            attributesArray = await applyInbound.call(
-              resource,
-              attributesArray,
-              actionContext,
-            )
-            return attributesArray
-          }
-        }
-        // Wrap outbound
-        {
-          const { applyOutbound } = resource
-          const outboundHandler = asBound(outbound)
-          resource.applyOutbound = async function applyOutboundWrap(
-            entities,
-            actionContext = {},
-          ) {
-            actionContext = wrapActionContext(actionContext)
-            entities = await applyOutbound.call(
-              resource,
-              entities,
-              actionContext,
-            )
-            entities = await outboundHandler(resource, entities, actionContext)
-            entities = await indexOutbound(resource, entities, actionContext)
-            // TODO Remove
-            for (const entity of entities) {
-              entity.id = String(entity.id)
-            }
-            return entities
-          }
-        }
-        if (entityClass) {
-          resource.enhanceResourceEntity(entityClass)
-        }
-        if (collectionClass) {
-          resource.enhanceResourceCollection(collectionClass)
-        }
-        resource.listenTo({ onCreate, onDestroy, onDrop, onUpdate })
-        return resource
-      },
+      define: (schema, options = {}) =>
+        this.defineResource(resourceName, schema, options),
     })
 
     assert(!!resource, 'Resource factory should return a resource')

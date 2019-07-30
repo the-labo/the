@@ -49,14 +49,6 @@ describe('the-db', function() {
         passwordHash: { type: 'STRING' },
         username: { type: 'STRING', unique: true },
       }, {
-        interceptors: {
-          inbound(attributes) {
-            const digest = (password) => password.slice(0, 1)
-            attributes.passwordHash = digest(attributes.password)
-            delete attributes.password
-            return attributes
-          },
-        },
         hooks: {
           onCreate(created) {
             console.log('created', created)
@@ -67,6 +59,14 @@ describe('the-db', function() {
           },
 
           outbound(attributes) {
+            return attributes
+          },
+        },
+        interceptors: {
+          inbound(attributes) {
+            const digest = (password) => password.slice(0, 1)
+            attributes.passwordHash = digest(attributes.password)
+            delete attributes.password
             return attributes
           },
         },

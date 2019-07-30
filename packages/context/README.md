@@ -73,21 +73,20 @@ Usage
 ## API Guide
 
 
-- @the-/context
-  - [.TheContext](./doc/api/api.md#@the-/context.TheContext)
-- @the-/context.TheContext
-  - [#del(name)](./doc/api/api.md#@the-/context.TheContext#del)
-  - [#get(name,options)](./doc/api/api.md#@the-/context.TheContext#get)
-  - [#set(values)](./doc/api/api.md#@the-/context.TheContext#set)
 - module:@the-/context
   - [.create(args)](./doc/api/api.md#module_@the-/context.create)
   - [.default()](./doc/api/api.md#module_@the-/context.default)
   - [.helpers](./doc/api/api.md#module_@the-/context.helpers)
+  - [.TheContext](./doc/api/api.md#module_@the-/context.TheContext)
 - module:@the-/context.helpers
   - [.contextEntryFor()](./doc/api/api.md#module_@the-/context.helpers.contextEntryFor)
   - [.ContextRootFor()](./doc/api/api.md#module_@the-/context.helpers.ContextRootFor)
 - module:@the-/context.helpers.contextEntryFor
   - [~ContextEntry](./doc/api/api.md#module_@the-/context.helpers.contextEntryFor~ContextEntry)
+- module:@the-/context.TheContext
+  - [#del(name)](./doc/api/api.md#module_@the-/context.TheContext#del)
+  - [#get(name,options)](./doc/api/api.md#module_@the-/context.TheContext#get)
+  - [#set(values)](./doc/api/api.md#module_@the-/context.TheContext#set)
 
 See [API Guide](./doc/api/api.md) for more detail
 

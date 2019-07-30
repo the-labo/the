@@ -5,7 +5,7 @@
 ## @the-/db
 DB for the-framework
 
-**Version**: 16.0.3  
+**Version**: 17.0.0-beta.2  
 **License**: MIT  
 
 * [@the-/db](#module_@the-/db)
@@ -13,14 +13,14 @@ DB for the-framework
         * [.TheDB](#module_@the-/db.TheDB) ⇐ [<code>CascadeMixed</code>](#module_@the-/db.cascadeMix..CascadeMixed)
             * [new TheDB(config)](#new_module_@the-/db.TheDB_new)
             * [.hooksFromMapping(HookMapping)](#module_@the-/db.TheDB+hooksFromMapping)
-            * [.load(ResourceClass, resourceName)](#module_@the-/db.TheDB+load) ⇒ <code>Object</code>
+            * [.load(ResourceFactory, resourceName)](#module_@the-/db.TheDB+load) ⇒ <code>Object</code>
             * [.loadFromMapping(ResourceMapping)](#module_@the-/db.TheDB+loadFromMapping)
             * [.pluginFromMapping(PluginMapping)](#module_@the-/db.TheDB+pluginFromMapping)
             * [.unref()](#module_@the-/db.TheDB+unref) ⇒ <code>TheDB</code>
             * [.drop()](#module_@the-/db.TheDB+drop) ⇒ <code>Promise.&lt;undefined&gt;</code>
             * [.invalidate(entityRef)](#module_@the-/db.TheDB+invalidate) ⇒ <code>Promise.&lt;undefined&gt;</code>
             * [.transaction(callback)](#module_@the-/db.TheDB+transaction) ⇒ <code>Promise.&lt;\*&gt;</code>
-            * [.updateVersion(version)](#module_@the-/db.TheDB+updateVersion) ⇒ <code>Promise.boolean</code>
+            * [.updateVersion(version)](#module_@the-/db.TheDB+updateVersion) ⇒ <code>Promise.&lt;boolean&gt;</code>
             * [.requestToRefresh(entityRef)](#module_@the-/db.refreshMix..RefreshMixed+requestToRefresh)
             * [.startRefreshLoop(interval)](#module_@the-/db.refreshMix..RefreshMixed+startRefreshLoop)
             * [.stopRefreshLoop()](#module_@the-/db.refreshMix..RefreshMixed+stopRefreshLoop)
@@ -50,7 +50,6 @@ DB for the-framework
             * [~CascadeMixed](#module_@the-/db.cascadeMix..CascadeMixed)
         * [.cliMix()](#module_@the-/db.cliMix)
             * [~CliMixed](#module_@the-/db.cliMix..CliMixed)
-        * [.exportImportMix()](#module_@the-/db.exportImportMix) ⇒ <code>function</code>
         * [.migrateMix()](#module_@the-/db.migrateMix) ⇒ <code>function</code>
         * [.refreshMix(Class)](#module_@the-/db.refreshMix) ⇒ <code>function</code>
             * [~RefreshMixed](#module_@the-/db.refreshMix..RefreshMixed)
@@ -64,7 +63,6 @@ DB for the-framework
                 * [.getResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+getResource) ⇒ <code>Object</code>
                 * [.hasResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+hasResource) ⇒ <code>boolean</code>
     * _inner_
-        * [~ExportImportMixed](#module_@the-/db..ExportImportMixed)
         * [~MigrateMixed](#module_@the-/db..MigrateMixed)
             * [.migrate(handlers)](#module_@the-/db..MigrateMixed+migrate) ⇒ <code>Promise.&lt;?Object&gt;</code>
 
@@ -72,19 +70,19 @@ DB for the-framework
 
 ### db.TheDB ⇐ [<code>CascadeMixed</code>](#module_@the-/db.cascadeMix..CascadeMixed)
 **Kind**: static class of [<code>@the-/db</code>](#module_@the-/db)  
-**Extends**: [<code>CascadeMixed</code>](#module_@the-/db.cascadeMix..CascadeMixed), [<code>CliMixed</code>](#module_@the-/db.cliMix..CliMixed), <code>module:@the-/db.exportImportMix~ExportImportMixed</code>, <code>module:@the-/db.migrateMix~MigrateMixed</code>, [<code>RefreshMixed</code>](#module_@the-/db.refreshMix..RefreshMixed), [<code>ResourceMixed</code>](#module_@the-/db.resourceMix..ResourceMixed)  
+**Extends**: [<code>CascadeMixed</code>](#module_@the-/db.cascadeMix..CascadeMixed), [<code>CliMixed</code>](#module_@the-/db.cliMix..CliMixed), <code>module:@the-/db.migrateMix~MigrateMixed</code>, [<code>RefreshMixed</code>](#module_@the-/db.refreshMix..RefreshMixed), [<code>ResourceMixed</code>](#module_@the-/db.resourceMix..ResourceMixed)  
 
 * [.TheDB](#module_@the-/db.TheDB) ⇐ [<code>CascadeMixed</code>](#module_@the-/db.cascadeMix..CascadeMixed)
     * [new TheDB(config)](#new_module_@the-/db.TheDB_new)
     * [.hooksFromMapping(HookMapping)](#module_@the-/db.TheDB+hooksFromMapping)
-    * [.load(ResourceClass, resourceName)](#module_@the-/db.TheDB+load) ⇒ <code>Object</code>
+    * [.load(ResourceFactory, resourceName)](#module_@the-/db.TheDB+load) ⇒ <code>Object</code>
     * [.loadFromMapping(ResourceMapping)](#module_@the-/db.TheDB+loadFromMapping)
     * [.pluginFromMapping(PluginMapping)](#module_@the-/db.TheDB+pluginFromMapping)
     * [.unref()](#module_@the-/db.TheDB+unref) ⇒ <code>TheDB</code>
     * [.drop()](#module_@the-/db.TheDB+drop) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.invalidate(entityRef)](#module_@the-/db.TheDB+invalidate) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.transaction(callback)](#module_@the-/db.TheDB+transaction) ⇒ <code>Promise.&lt;\*&gt;</code>
-    * [.updateVersion(version)](#module_@the-/db.TheDB+updateVersion) ⇒ <code>Promise.boolean</code>
+    * [.updateVersion(version)](#module_@the-/db.TheDB+updateVersion) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.requestToRefresh(entityRef)](#module_@the-/db.refreshMix..RefreshMixed+requestToRefresh)
     * [.startRefreshLoop(interval)](#module_@the-/db.refreshMix..RefreshMixed+startRefreshLoop)
     * [.stopRefreshLoop()](#module_@the-/db.refreshMix..RefreshMixed+stopRefreshLoop)
@@ -125,7 +123,7 @@ Register hooks from mapping
 
 <a name="module_@the-/db.TheDB+load"></a>
 
-#### theDB.load(ResourceClass, resourceName) ⇒ <code>Object</code>
+#### theDB.load(ResourceFactory, resourceName) ⇒ <code>Object</code>
 Register resource form Resource Class
 
 **Kind**: instance method of [<code>TheDB</code>](#module_@the-/db.TheDB)  
@@ -133,7 +131,7 @@ Register resource form Resource Class
 
 | Param | Type | Description |
 | --- | --- | --- |
-| ResourceClass | <code>function</code> | Resource class to register |
+| ResourceFactory | <code>function</code> | Resource factory |
 | resourceName | <code>string</code> | Name of resource |
 
 <a name="module_@the-/db.TheDB+loadFromMapping"></a>
@@ -145,7 +143,7 @@ Load resources from mapping object
 
 | Param | Type | Description |
 | --- | --- | --- |
-| ResourceMapping | <code>Object.&lt;string, function()&gt;</code> | Resource name and class |
+| ResourceMapping | <code>Object.&lt;string, function()&gt;</code> | Resource name and factory |
 
 <a name="module_@the-/db.TheDB+pluginFromMapping"></a>
 
@@ -195,11 +193,11 @@ Create transaction
 
 <a name="module_@the-/db.TheDB+updateVersion"></a>
 
-#### theDB.updateVersion(version) ⇒ <code>Promise.boolean</code>
+#### theDB.updateVersion(version) ⇒ <code>Promise.&lt;boolean&gt;</code>
 Update database migration version
 
 **Kind**: instance method of [<code>TheDB</code>](#module_@the-/db.TheDB)  
-**Returns**: <code>Promise.boolean</code> - Success or not  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -420,17 +418,6 @@ Add cli methods
 
 #### cliMix~CliMixed
 **Kind**: inner class of [<code>cliMix</code>](#module_@the-/db.cliMix)  
-<a name="module_@the-/db.exportImportMix"></a>
-
-### db.exportImportMix() ⇒ <code>function</code>
-Add export/import methods
-
-**Kind**: static method of [<code>@the-/db</code>](#module_@the-/db)  
-
-| Type |
-| --- |
-| <code>function</code> | 
-
 <a name="module_@the-/db.migrateMix"></a>
 
 ### db.migrateMix() ⇒ <code>function</code>
@@ -571,10 +558,6 @@ Check if resource exists
 | --- | --- |
 | resourceName | <code>string</code> | 
 
-<a name="module_@the-/db..ExportImportMixed"></a>
-
-### @the-/db~ExportImportMixed
-**Kind**: inner class of [<code>@the-/db</code>](#module_@the-/db)  
 <a name="module_@the-/db..MigrateMixed"></a>
 
 ### @the-/db~MigrateMixed

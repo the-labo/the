@@ -13,7 +13,7 @@
     "name": "@the-/db",
     "order": 4,
     "typicalname": "db",
-    "version": "16.0.3"
+    "version": "17.0.0-beta.2"
   },
   {
     "id": "module:@the-/db.TheDB()",
@@ -152,7 +152,7 @@
     "longname": "module:@the-/db.TheLogResource",
     "memberof": "module:@the-/db.TheLogResource",
     "name": "TheLogResource",
-    "order": 48
+    "order": 46
   },
   {
     "description": "Resource to manage schema",
@@ -161,7 +161,7 @@
     "longname": "module:@the-/db.TheSchemaResource",
     "memberof": "module:@the-/db.TheSchemaResource",
     "name": "TheSchemaResource",
-    "order": 50
+    "order": 48
   },
   {
     "description": "Register hooks from mapping",
@@ -171,7 +171,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 133,
+      "lineno": 241,
       "path": "lib"
     },
     "name": "hooksFromMapping",
@@ -196,7 +196,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 150,
+      "lineno": 258,
       "path": "lib"
     },
     "name": "load",
@@ -208,8 +208,8 @@
             "function"
           ]
         },
-        "description": "Resource class to register",
-        "name": "ResourceClass"
+        "description": "Resource factory",
+        "name": "ResourceFactory"
       },
       {
         "type": {
@@ -241,7 +241,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 277,
+      "lineno": 292,
       "path": "lib"
     },
     "name": "loadFromMapping",
@@ -253,7 +253,7 @@
             "Object.<string, function()>"
           ]
         },
-        "description": "Resource name and class",
+        "description": "Resource name and factory",
         "name": "ResourceMapping"
       }
     ],
@@ -267,7 +267,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 287,
+      "lineno": 302,
       "path": "lib"
     },
     "name": "pluginFromMapping",
@@ -292,7 +292,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 300,
+      "lineno": 315,
       "path": "lib"
     },
     "name": "unref",
@@ -319,7 +319,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 343,
+      "lineno": 358,
       "path": "lib"
     },
     "name": "drop",
@@ -345,7 +345,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 377,
+      "lineno": 392,
       "path": "lib"
     },
     "name": "invalidate",
@@ -380,7 +380,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 407,
+      "lineno": 422,
       "path": "lib"
     },
     "name": "transaction",
@@ -416,7 +416,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 424,
+      "lineno": 439,
       "path": "lib"
     },
     "name": "updateVersion",
@@ -436,7 +436,7 @@
       {
         "type": {
           "names": [
-            "Promise.boolean"
+            "Promise.<boolean>"
           ]
         },
         "description": "Success or not"
@@ -457,7 +457,7 @@
       "path": "lib/mixins"
     },
     "name": "migrate",
-    "order": 34,
+    "order": 32,
     "params": [
       {
         "type": {
@@ -493,7 +493,7 @@
       "path": "lib/mixins"
     },
     "name": "requestToRefresh",
-    "order": 37,
+    "order": 35,
     "params": [
       {
         "type": {
@@ -518,7 +518,7 @@
       "path": "lib/mixins"
     },
     "name": "startRefreshLoop",
-    "order": 38,
+    "order": 36,
     "params": [
       {
         "type": {
@@ -543,7 +543,7 @@
       "path": "lib/mixins"
     },
     "name": "stopRefreshLoop",
-    "order": 39,
+    "order": 37,
     "params": [],
     "scope": "instance"
   },
@@ -560,7 +560,7 @@
       "path": "lib/mixins"
     },
     "name": "waitToRefresh",
-    "order": 40,
+    "order": 38,
     "params": [
       {
         "type": {
@@ -616,7 +616,7 @@
       "path": "lib/mixins"
     },
     "name": "assertResource",
-    "order": 43,
+    "order": 41,
     "params": [
       {
         "type": {
@@ -641,7 +641,7 @@
       "path": "lib/mixins"
     },
     "name": "getResource",
-    "order": 44,
+    "order": 42,
     "params": [
       {
         "type": {
@@ -677,7 +677,7 @@
       "path": "lib/mixins"
     },
     "name": "hasResource",
-    "order": 45,
+    "order": 43,
     "params": [
       {
         "type": {
@@ -713,7 +713,7 @@
       "path": "lib/mixins"
     },
     "name": "requestToRefresh",
-    "order": 55,
+    "order": 53,
     "params": [
       {
         "type": {
@@ -740,7 +740,7 @@
       "path": "lib/mixins"
     },
     "name": "startRefreshLoop",
-    "order": 56,
+    "order": 54,
     "params": [
       {
         "type": {
@@ -767,7 +767,7 @@
       "path": "lib/mixins"
     },
     "name": "stopRefreshLoop",
-    "order": 57,
+    "order": 55,
     "scope": "instance"
   },
   {
@@ -785,7 +785,7 @@
       "path": "lib/mixins"
     },
     "name": "waitToRefresh",
-    "order": 58,
+    "order": 56,
     "params": [
       {
         "type": {
@@ -843,7 +843,7 @@
       "path": "lib/mixins"
     },
     "name": "assertResource",
-    "order": 59,
+    "order": 57,
     "params": [
       {
         "type": {
@@ -870,7 +870,7 @@
       "path": "lib/mixins"
     },
     "name": "getResource",
-    "order": 60,
+    "order": 58,
     "params": [
       {
         "type": {
@@ -908,7 +908,7 @@
       "path": "lib/mixins"
     },
     "name": "hasResource",
-    "order": 61,
+    "order": 59,
     "params": [
       {
         "type": {
@@ -934,7 +934,6 @@
     "augments": [
       "module:@the-/db.cascadeMix~CascadeMixed",
       "module:@the-/db.cliMix~CliMixed",
-      "module:@the-/db.exportImportMix~ExportImportMixed",
       "module:@the-/db.migrateMix~MigrateMixed",
       "module:@the-/db.refreshMix~RefreshMixed",
       "module:@the-/db.resourceMix~ResourceMixed"
@@ -977,7 +976,7 @@
       "path": "lib/resources"
     },
     "name": "TheLogResource",
-    "order": 47,
+    "order": 45,
     "scope": "static"
   },
   {
@@ -991,7 +990,7 @@
       "path": "lib/resources"
     },
     "name": "TheSchemaResource",
-    "order": 49,
+    "order": 47,
     "scope": "static"
   },
   {
@@ -1036,7 +1035,7 @@
       "path": "lib/mixins"
     },
     "name": "mixins",
-    "order": 31,
+    "order": 29,
     "scope": "static"
   },
   {
@@ -1051,7 +1050,7 @@
       "path": "lib/resources"
     },
     "name": "resources",
-    "order": 46,
+    "order": 44,
     "scope": "static"
   },
   {
@@ -1291,39 +1290,6 @@
     "scope": "static"
   },
   {
-    "description": "Add export/import methods",
-    "id": "module:@the-/db.exportImportMix",
-    "kind": "function",
-    "longname": "module:@the-/db.exportImportMix",
-    "memberof": "module:@the-/db",
-    "meta": {
-      "filename": "exportImportMix.js",
-      "lineno": 2,
-      "path": "lib/mixins"
-    },
-    "name": "exportImportMix",
-    "order": 29,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        }
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        }
-      }
-    ],
-    "scope": "static"
-  },
-  {
     "description": "Add migrate methods",
     "id": "module:@the-/db.migrateMix",
     "kind": "function",
@@ -1335,7 +1301,7 @@
       "path": "lib/mixins"
     },
     "name": "migrateMix",
-    "order": 32,
+    "order": 30,
     "params": [
       {
         "type": {
@@ -1367,7 +1333,7 @@
       "path": "lib/mixins"
     },
     "name": "refreshMix",
-    "order": 35,
+    "order": 33,
     "params": [
       {
         "type": {
@@ -1401,7 +1367,7 @@
       "path": "lib/mixins"
     },
     "name": "resourceMix",
-    "order": 41,
+    "order": 39,
     "scope": "static"
   },
   {
@@ -1415,7 +1381,7 @@
       "path": "lib/setup"
     },
     "name": "setupMongo",
-    "order": 51,
+    "order": 49,
     "params": [
       {
         "type": {
@@ -1439,7 +1405,7 @@
       "path": "lib/setup"
     },
     "name": "setupMysql",
-    "order": 52,
+    "order": 50,
     "scope": "static"
   },
   {
@@ -1453,7 +1419,7 @@
       "path": "lib/setup"
     },
     "name": "setupPostgres",
-    "order": 53,
+    "order": 51,
     "scope": "static"
   },
   {
@@ -1467,7 +1433,7 @@
       "path": "lib/setup"
     },
     "name": "setupSqlite",
-    "order": 54,
+    "order": 52,
     "scope": "static"
   },
   {
@@ -1499,20 +1465,6 @@
     "scope": "inner"
   },
   {
-    "id": "module:@the-/db~ExportImportMixed",
-    "kind": "class",
-    "longname": "module:@the-/db~ExportImportMixed",
-    "memberof": "module:@the-/db",
-    "meta": {
-      "filename": "exportImportMix.js",
-      "lineno": 31,
-      "path": "lib/mixins"
-    },
-    "name": "ExportImportMixed",
-    "order": 30,
-    "scope": "inner"
-  },
-  {
     "id": "module:@the-/db~MigrateMixed",
     "kind": "class",
     "longname": "module:@the-/db~MigrateMixed",
@@ -1523,7 +1475,7 @@
       "path": "lib/mixins"
     },
     "name": "MigrateMixed",
-    "order": 33,
+    "order": 31,
     "scope": "inner"
   },
   {
@@ -1537,7 +1489,7 @@
       "path": "lib/mixins"
     },
     "name": "RefreshMixed",
-    "order": 36,
+    "order": 34,
     "scope": "inner"
   },
   {
@@ -1551,7 +1503,7 @@
       "path": "lib/mixins"
     },
     "name": "ResourceMixed",
-    "order": 42,
+    "order": 40,
     "scope": "inner"
   }
 ]
