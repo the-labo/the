@@ -4,7 +4,7 @@
  * @license MIT
  * @module @the-/secret
  * @typicalname secret
- * @version 15.4.8
+ * @version 16.0.0
  */
 'use strict'
 

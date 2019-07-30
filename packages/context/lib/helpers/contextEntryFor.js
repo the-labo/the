@@ -5,10 +5,8 @@
  * @function contextEntryFor
  */
 const { shallowEqual } = require('asobj')
-const memoizeOneImported = require('memoize-one')
 const PropTypes = require('prop-types')
 const React = require('react')
-const memoizeOne = memoizeOneImported.default || memoizeOneImported
 
 /** @lends module:@the-/context.helpers.contextEntryFor */
 function contextEntryFor(context, { store }) {
