@@ -76,10 +76,12 @@ const _weightMethod = (method) => {
     default:
       break
   }
+
   switch (method.value && method.value.type) {
     default:
       break
   }
+
   switch (method.type) {
     case 'ClassProperty':
     case 'ClassPrivateProperty':
@@ -88,6 +90,7 @@ const _weightMethod = (method) => {
     default:
       break
   }
+
   switch (method.key.type) {
     case 'PrivateName':
       weight -= 200
@@ -95,15 +98,19 @@ const _weightMethod = (method) => {
     default:
       break
   }
+
   if (method.static) {
     weight -= 100000
   }
+
   if (method.async) {
     weight += 3
   }
+
   if (method.generator) {
     weight += 2
   }
+
   if (method.computed) {
     weight -= 30
   }
@@ -112,12 +119,15 @@ const _weightMethod = (method) => {
   if (!name) {
     return weight
   }
+
   if (name[0].toUpperCase() === name[0]) {
     weight -= 20
   }
+
   if (/^_/.test(name[0])) {
     weight += 50
   }
+
   return weight
 }
 

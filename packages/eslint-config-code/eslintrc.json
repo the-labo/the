@@ -38,7 +38,9 @@
           "cjs-export",
           "export",
           "cjs-import",
-          "import"
+          "import",
+          "if",
+          "switch"
         ],
         "next": "*"
       },

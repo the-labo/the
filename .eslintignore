@@ -142,6 +142,7 @@ var/
 /packages/seed/lib/index.js
 /packages/server/lib/adapters/index.js
 /packages/server/lib/assert/index.js
+/packages/server/lib/connectors/index.js
 /packages/server/lib/constants/index.js
 /packages/server/lib/helpers/index.js
 /packages/server/lib/index.js
@@ -149,6 +150,8 @@ var/
 /packages/server/lib/stores/index.js
 /packages/setting/lib/index.js
 /packages/setting/lib/mixins/index.js
+/packages/spell/lib/helpers/index.js
+/packages/spell/lib/index.js
 /packages/state/lib/constants/index.js
 /packages/state/lib/helpers/index.js
 /packages/state/lib/index.js
@@ -272,6 +275,8 @@ var/
 /packages/util-array/lib/index.js
 /packages/util-client/lib/index.js
 /packages/util-color/lib/index.js
+/packages/util-ctrl/lib/helpers/index.js
+/packages/util-ctrl/lib/index.js
 /packages/util-db/lib/index.js
 /packages/util-dom/lib/index.js
 /packages/util-file/lib/index.js

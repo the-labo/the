@@ -44,6 +44,7 @@ function contentAccess(content) {
     rangeOf: (declaration) => {
       let { end } = declaration
       const { loc, start, trailingComments } = declaration
+
       const comments = (trailingComments || []).filter(
         (comment) => comment.loc.start.line === loc.end.line,
       )
@@ -76,6 +77,7 @@ function contentAccess(content) {
           )}`,
         )
       }
+
       return replaced
     },
     swap: (range1, range2) => {
