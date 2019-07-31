@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheS3.
  * Runs with mocha.

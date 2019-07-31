@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheDate instance
  * @memberof module:@the-/date

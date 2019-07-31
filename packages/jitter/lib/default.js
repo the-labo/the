@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Alias of {@link module:@the-/jitter.create}
  * @memberof module:@the-/jitter

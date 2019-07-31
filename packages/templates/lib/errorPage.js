@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Error page
  * @memberof module:@the-/templates

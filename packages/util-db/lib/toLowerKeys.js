@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Make object keys to lower
  * @memberof module:@the-/util-db

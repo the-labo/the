@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheCam.
  * Runs with mocha.

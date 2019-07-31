@@ -1,10 +1,12 @@
 'use strict'
+
 /**
  * @memberof module:@the-/polyfill
  * @class ThePolyfill
  */
 const abind = require('abind')
 const helpers = require('./helpers')
+
 const { withDocument, withWindow } = helpers
 
 /** @lends module:@the-/polyfill.ThePolyfill */
@@ -17,6 +19,7 @@ class ThePolyfill {
     withWindow((window) => {
       if (!window.fetch) {
         const crossFetch = require('cross-fetch')
+
         window.fetch = crossFetch
       }
       if (!window.ImageCapture) {
@@ -38,6 +41,7 @@ class ThePolyfill {
     }
     withDocument((document) => {
       const fastclick = require('fastclick')
+
       if (fastclick.attach) {
         fastclick.attach(document.body)
       } else {

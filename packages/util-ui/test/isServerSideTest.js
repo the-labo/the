@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for isServerSide.
  * Runs with mocha.

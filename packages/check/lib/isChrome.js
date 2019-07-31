@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Detect chrome or not
  * @memberof module:@the-/check

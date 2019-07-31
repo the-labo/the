@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Process JSX attributes
  * @memberof module:@the-/code.processors
@@ -46,6 +47,7 @@ function processJSXAttribute(content, options = {}) {
         knownNames.add(name)
       }
     }
+
     function removeSpreadAttributes(elm) {
       const attributes = elm.openingElement.attributes.filter(
         (a) => a.type === NodeTypes.JSXSpreadAttribute,

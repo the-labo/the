@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Vendor Colors
  * @memberof module:@the-/const-ui

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheAccordionSection.
  * Runs with mocha.

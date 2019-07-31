@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Check if is email
  * @memberof module:@the-/util-site

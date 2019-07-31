@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Types
  * @memberof module:@the-/code.constants

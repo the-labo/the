@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheDB instance
  * @memberof module:@the-/db

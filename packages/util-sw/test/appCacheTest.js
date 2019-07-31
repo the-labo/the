@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for appCache.
  * Runs with mocha.

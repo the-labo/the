@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheCaughtStyle.
  * Runs with mocha.

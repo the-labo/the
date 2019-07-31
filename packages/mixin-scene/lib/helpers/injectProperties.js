@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * @memberof module:@the-/mixin-scene.helpers
  * @function injectProperties

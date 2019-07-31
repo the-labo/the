@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for eventHandlersFor.
  * Runs with mocha.

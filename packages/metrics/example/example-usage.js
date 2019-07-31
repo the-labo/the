@@ -1,4 +1,5 @@
 'use strict'
+
 const { TheMetrics } = require('@the-/metrics')
 
 async function tryExample() {

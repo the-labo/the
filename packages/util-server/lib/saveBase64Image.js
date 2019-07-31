@@ -1,4 +1,5 @@
 'use strict'
+
 const saveBase64 = require('./saveBase64')
 
 /** @deprecated */

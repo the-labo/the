@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheFlickImage.
  * Runs with mocha.

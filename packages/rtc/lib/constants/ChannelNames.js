@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Name of channels
  * @memberof module:@the-/rtc.constants

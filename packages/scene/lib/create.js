@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheScene instance
  * @memberof module:@the-/scene

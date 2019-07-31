@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Convert into ref
  * @memberof module:@the-/util-site

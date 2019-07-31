@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mixin for lock
  * @memberof module:@the-/secret.mixins

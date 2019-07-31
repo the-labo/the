@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheVideoConverter instance
  * @memberof module:@the-/video-converter

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Variables for pcss
  * @memberof module:@the-/templates

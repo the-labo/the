@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Abstract state
  * @memberof module:@the-/state.state
@@ -6,6 +7,7 @@
  * @class State
  */
 const theAssert = require('@the-/assert')
+
 const assert = theAssert('TheState')
 
 /** @lends module:@the-/state.state.State */

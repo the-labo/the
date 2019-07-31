@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Read file as array buffer
  * @memberof module:@the-/util-client

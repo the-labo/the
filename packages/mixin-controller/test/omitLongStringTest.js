@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for omitLongString.
  * Runs with mocha.

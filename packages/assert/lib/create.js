@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheAssert instance
  * @memberof module:@the-/assert

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create generator from readable
  * @memberof module:@the-/stream.helpers

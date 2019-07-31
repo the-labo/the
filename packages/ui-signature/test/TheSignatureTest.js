@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheSignature.
  * Runs with mocha.

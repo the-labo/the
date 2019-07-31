@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Handle event rescue on document
  * @memberof module:@the-/window

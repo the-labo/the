@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for writeAsJsonSync.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Alias of {@link module:@the-/mail.create}
  * @memberof module:@the-/mail

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * @memberof @the-/driver-sequelize
  * @class TheDriverSequelize
@@ -16,6 +17,7 @@ const m = require('./mixins')
 const defineModel = require('./modeling/defineModel')
 const prepareModel = require('./modeling/prepareModel')
 const { parseFilter, parseSort } = require('./parsing')
+
 const TheDriverSequelizeBase = [m.sequelizeMix].reduce(
   (Driver, mix) => mix(Driver),
   Driver,

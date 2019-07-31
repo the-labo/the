@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Client connection store for the-server
  * @memberof module:@the-/server.stores
@@ -7,6 +8,7 @@
  */
 const asleep = require('asleep')
 const Store = require('./Store')
+
 const SESSION_STORE_KEY = 'the:server:connection'
 
 /** @lends module:@the-/server.stores.ConnectionStore */

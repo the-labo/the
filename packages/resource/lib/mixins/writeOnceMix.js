@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mixin for writeOnce
  * @memberof module:@the-/resource.mixins

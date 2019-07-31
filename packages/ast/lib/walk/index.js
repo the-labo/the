@@ -1,4 +1,5 @@
 'use strict'
+
 const t = require('@babel/types')
 const explode = require('./explode')
 

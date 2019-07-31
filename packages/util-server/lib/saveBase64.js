@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Save base64 string into file
  * @function saveBase64
@@ -12,6 +13,7 @@ const fs = require('fs')
 const path = require('path')
 const util = require('util')
 const isBase64 = require('./isBase64')
+
 const writeFileAsync = util.promisify(fs.writeFile)
 
 const TYPE_EXTRACT_PATTERN = /^data:.*\/([\w+]+);base64,([\s\S]+)/

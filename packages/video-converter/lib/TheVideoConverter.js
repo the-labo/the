@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Video converter
  * @memberof module:@the-/video-converter
@@ -75,9 +76,7 @@ class TheVideoConverter extends TheVideoConverterBase {
     assert(filename)
     return new Promise((resolve, reject) => {
       exec(
-        `${
-          ffprobe.path
-        } -show_streams -pretty -v ${logLevel} -print_format json "${filename}"`,
+        `${ffprobe.path} -show_streams -pretty -v ${logLevel} -print_format json "${filename}"`,
         (err, stdout, stderror) => {
           if (err) {
             console.error(stderror)

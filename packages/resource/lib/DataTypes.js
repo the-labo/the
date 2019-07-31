@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Data types
  * @memberof module:@the-/resource

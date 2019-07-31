@@ -1,5 +1,7 @@
 'use strict'
+
 const path = require('path')
+
 const isRelative = (filename) => /^\.\/|^\.\./.test(filename)
 
 /** @lends module:@the-/code.ast.nodes.normalizeSrcPathOnRequireArgumentNode */

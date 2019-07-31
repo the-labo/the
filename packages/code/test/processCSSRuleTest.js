@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for processCSSRule.
  * Runs with mocha.

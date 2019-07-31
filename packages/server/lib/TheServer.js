@@ -38,6 +38,7 @@ const { ConnectionStore, SessionStore } = require('./stores')
 const streamDriverPool = require('./streaming/streamDriverPool')
 const toStreamDriverFactory = require('./streaming/toStreamDriverFactory')
 const debug = require('debug')('the:server')
+
 const assert = theAssert('@the-/server')
 
 const TheServerBase = [clientMix].reduce((C, mix) => mix(C), RFunc)

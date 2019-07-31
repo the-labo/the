@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Detect if browser side
  * @memberof module:@the-/check

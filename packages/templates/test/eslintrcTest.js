@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test case for eslintrc.
  * Runs with mocha.

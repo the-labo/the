@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Get color with alpha
  * @memberof module:@the-/util-color

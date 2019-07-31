@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Read file  : data url
  * @memberof module:@the-/util-ui

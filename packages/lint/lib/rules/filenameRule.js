@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create "filenameRule" lint
  * @memberof module:@the-/lint.rules

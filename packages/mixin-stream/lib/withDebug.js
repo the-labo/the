@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * @function withDebug
  * @param {function()} Base class

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for copyAsJsonSync.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheAssets.
  * Runs with mocha.

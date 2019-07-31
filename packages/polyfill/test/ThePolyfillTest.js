@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for ThePolyfill.
  * Runs with mocha.
@@ -23,6 +24,7 @@ describe('the-polyfill', () => {
 
   it('Fake proxy', () => {
     const Proxy = require('proxy-polyfill/src/proxy')
+
     const p = new Proxy({ a: 1 })
     ok(p)
     p.x = 1

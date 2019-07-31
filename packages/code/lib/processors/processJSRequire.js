@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Process require statement
  * @memberof module:@the-/code.processors

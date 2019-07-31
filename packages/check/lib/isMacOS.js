@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Detect is mac OS
  * @memberof module:@the-/check

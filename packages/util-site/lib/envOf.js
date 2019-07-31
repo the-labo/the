@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Get env variables
  * @memberof module:@the-/util-site

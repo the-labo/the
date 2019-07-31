@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Key code detector
  * @memberof module:@the-/util-ui

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheInputRadio.
  * Runs with mocha.

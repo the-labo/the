@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheCode instance
  * @memberof module:@the-/code

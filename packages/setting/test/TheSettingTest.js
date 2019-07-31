@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheSetting.
  * Runs with mocha.

@@ -5,6 +5,7 @@
 'use strict'
 
 const NAMESPACE = '/rpc'
+
 const asleep = require('asleep')
 const { Converters: ThePackConverters, ThePack } = require('@the-/pack')
 const { IOEvents } = require('../constants')

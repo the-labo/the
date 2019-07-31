@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Stream pool
  * @memberof module:@the-/server.helpers

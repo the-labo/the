@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * State works as root
  * @memberof module:@the-/state.state

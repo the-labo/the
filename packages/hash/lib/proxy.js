@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create proxy for hash object
  * @memberof module:@the-/hash

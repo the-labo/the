@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheTable.
  * Runs with mocha.

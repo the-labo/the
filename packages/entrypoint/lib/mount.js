@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mount element on DOM
  * @memberof module:@the-/entrypoint

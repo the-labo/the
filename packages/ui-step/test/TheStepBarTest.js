@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheStepBar.
  * Runs with mocha.

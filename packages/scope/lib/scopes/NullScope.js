@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Scope to hold null
  * @memberof module:@the-/scope.scopes

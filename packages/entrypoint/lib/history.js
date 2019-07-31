@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Get history object
  * @memberof module:@the-/entrypoint

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Convert into store scope class
  * @memberof module:@the-/store

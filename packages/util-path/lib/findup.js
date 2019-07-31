@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Find up file
  * @memberof module:@the-/util-path

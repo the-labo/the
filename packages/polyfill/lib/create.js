@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a ThePolyfill instance
  * @memberof module:@the-/polyfill

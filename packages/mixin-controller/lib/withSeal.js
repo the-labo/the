@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Wrap controller with seal
  * @function withSeal

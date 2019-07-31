@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Scope to other scopes
  * @memberof module:@the-/scope.scopes

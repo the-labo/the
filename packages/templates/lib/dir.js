@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Define bud for dir
  * @memberof module:@the-/templates

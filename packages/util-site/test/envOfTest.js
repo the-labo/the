@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for envOf.
  * Runs with mocha.

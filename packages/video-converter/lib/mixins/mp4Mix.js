@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mixins for mp4
  * @memberof module:@the-/video-converter.mixins

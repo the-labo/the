@@ -1,9 +1,11 @@
 'use strict'
+
 /**
  * @memberof module:@the-/assets
  * @class TheAssets
  */
 const installFiles = require('./helpers/installFiles')
+
 const assetDir = `${__dirname}/../assets`
 
 /** @lends module:@the-/assets.TheAssets */

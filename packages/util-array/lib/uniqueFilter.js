@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * defineUniqueFilter
  * @memberof module:@the-/util-array

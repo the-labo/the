@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Acquire process
  * @memberof module:@the-/ps

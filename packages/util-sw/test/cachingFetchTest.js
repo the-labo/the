@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for cachingFetch.
  * Runs with mocha.
@@ -35,4 +36,4 @@ describe('caching-fetch', function() {
   })
 })
 
-/* global global, describe, before, after, it */
+/* global describe, before, after, it */

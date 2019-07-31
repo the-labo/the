@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheInputDate.
  * Runs with mocha.

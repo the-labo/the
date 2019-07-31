@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for processJSComment.
  * Runs with mocha.

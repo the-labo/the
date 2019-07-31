@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheInputCheckbox.
  * Runs with mocha.

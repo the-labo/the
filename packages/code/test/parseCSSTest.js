@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for parseCSS.
  * Runs with mocha.

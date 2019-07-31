@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mixin for moment
  * @memberof module:@the-/date.mixins

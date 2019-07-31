@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Seal handler
  * @memberof module:@the-/seal

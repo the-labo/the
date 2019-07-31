@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mark  : style data
  * @memberof module:@the-/util-ui

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for processJSUnused.
  * Runs with mocha.

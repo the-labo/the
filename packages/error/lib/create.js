@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheError instance
  * @memberof module:@the-/error

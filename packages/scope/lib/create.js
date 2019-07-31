@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheScope instance
  * @memberof module:@the-/scope

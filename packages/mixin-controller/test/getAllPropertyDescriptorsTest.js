@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for getAllPropertyDescriptors.
  * Runs with mocha.
@@ -19,11 +20,13 @@ describe('get-all-property-descriptors', () => {
         return 'a'
       }
     }
+
     class C2 extends C1 {
       b() {
         return 'b'
       }
     }
+
     const c2 = new C2()
     const desc = getAllPropertyDescriptors(c2)
     ok(desc.a)

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for BooleanScope.
  * Runs with mocha.

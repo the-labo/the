@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a MongoDriver instance
  * @memberof module:@the-/driver-mongo

@@ -20,7 +20,9 @@ async function tmplify() {
   for (const type of Object.keys(demos)) {
     const demoName = demos[type]
     const demoDir = path.dirname(require.resolve(`${demoName}/package.json`))
+
     const demoPkg = require(`${demoName}/package.json`)
+
     const tmplDir = `assets/tmpl/${type}`
     await tmplconv.tmplify(demoDir, tmplDir, {
       clean: true,

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Default exports
  * @memberof module:@the-/loc
@@ -11,6 +12,7 @@ const lib = create.bind(create)
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
 exports.TheLoc = TheLoc
+
 exports.create = create
 
 module.exports = Object.assign(lib, {

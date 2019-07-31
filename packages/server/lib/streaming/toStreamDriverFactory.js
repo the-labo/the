@@ -11,6 +11,7 @@ const theAssert = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
 const { TheStream } = require('@the-/stream')
 const SessionAccess = require('../helpers/SessionAccess')
+
 const assert = theAssert('@the-/server')
 
 /** @lends module:@the-/server.streaming.toStreamDriverFactory */

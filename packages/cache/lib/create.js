@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheCache instance
  * @memberof module:@the-/cache

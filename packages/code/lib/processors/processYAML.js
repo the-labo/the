@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * @memberof module:@the-/code.processors
  * @function processYAML
@@ -7,6 +8,7 @@
  */
 const YAML = require('yaml')
 const { strOptions } = require('yaml/types')
+
 strOptions.fold.lineWidth = 0
 
 const _processYAMLNode = (node) => {

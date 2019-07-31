@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Format urls
  * @memberof module:@the-/url
@@ -9,6 +10,7 @@
  */
 const { unlessProduction } = require('@the-/check')
 const { get } = require('@the-/window')
+
 const PARAM_PREFIX = /^:/
 
 /** @lends formatUrl */

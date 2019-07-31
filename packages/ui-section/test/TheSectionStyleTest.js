@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheSectionStyle.
  * Runs with mocha.

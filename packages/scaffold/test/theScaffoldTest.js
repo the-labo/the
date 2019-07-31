@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test case for theScaffold.
  * Runs with mocha.

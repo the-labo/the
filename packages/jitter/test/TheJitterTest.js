@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheJitter.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Constant variables
  * @namespace Constants

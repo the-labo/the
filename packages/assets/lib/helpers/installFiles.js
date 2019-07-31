@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Install files
  * @memberof module:@the-/assets.helpers

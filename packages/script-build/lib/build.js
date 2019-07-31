@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Build project
  * @memberof module:@the-/script-build

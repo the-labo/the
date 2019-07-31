@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a ThePS instance
  * @memberof module:@the-/ps

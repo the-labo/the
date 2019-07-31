@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheMenuStyle.
  * Runs with mocha.

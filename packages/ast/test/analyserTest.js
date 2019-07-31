@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for analyser.
  * Runs with mocha.

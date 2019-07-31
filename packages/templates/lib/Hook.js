@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Hook
  * @memberof module:@the-/templates

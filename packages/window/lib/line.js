@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Handle toggle online/offline
  * @memberof module:@the-/window

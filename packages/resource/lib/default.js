@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Alias of {@link module:@the-/resource.create}
  * @memberof module:@the-/resource

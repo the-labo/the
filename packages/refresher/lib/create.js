@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheRefresher instance
  * @memberof module:@the-/refresher

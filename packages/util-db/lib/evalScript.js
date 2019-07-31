@@ -1,4 +1,5 @@
 'use strict'
+
 /* eslint-disable no-new-func */
 /**
  * Eval script

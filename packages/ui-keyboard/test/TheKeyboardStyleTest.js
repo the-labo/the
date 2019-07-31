@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheKeyboardStyle.
  * Runs with mocha.

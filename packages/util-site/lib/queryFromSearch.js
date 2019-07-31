@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Get query from search
  * @memberof module:@the-/util-site

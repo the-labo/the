@@ -1,4 +1,5 @@
 'use strict'
+
 const { TheHash } = require('@the-/hash')
 
 async function tryExample() {

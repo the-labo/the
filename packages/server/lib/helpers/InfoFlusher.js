@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mixins for info
  * @memberof module:@the-/server.helpers
@@ -20,7 +21,7 @@ function InfoFlusher(filename, getter) {
    * @memberof module:@the-/server.helpers.InfoFlusher
    * @inner
    
-   * @namespace infoFlusher*/
+   * @namespace infoFlusher */
   const infoFlusher = {
     state,
     /** Flush info into file */

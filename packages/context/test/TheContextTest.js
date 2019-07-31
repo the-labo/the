@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheContext.
  * Runs with mocha.

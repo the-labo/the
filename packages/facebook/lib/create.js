@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheFacebook instance
  * @function create

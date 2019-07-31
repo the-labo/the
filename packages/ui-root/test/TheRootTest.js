@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheRoot.
  * Runs with mocha.

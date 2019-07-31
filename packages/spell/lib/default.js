@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Alias of {@link module:@the-/spell.create}
  * @memberof module:@the-/spell
@@ -12,7 +13,9 @@ const lib = create.bind(create)
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
 exports.TheSpell = TheSpell
+
 exports.Words = Words
+
 exports.create = create
 
 module.exports = Object.assign(lib, {

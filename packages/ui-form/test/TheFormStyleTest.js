@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheFormStyle.
  * Runs with mocha.

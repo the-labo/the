@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheComponentDemo.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Add cli methods
  * @memberof module:@the-/db

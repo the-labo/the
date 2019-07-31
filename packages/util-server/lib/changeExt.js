@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Change file extension
  * @param {string} filename - Filename to change

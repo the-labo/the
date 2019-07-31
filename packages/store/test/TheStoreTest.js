@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheStore.
  * Runs with mocha.
@@ -7,6 +8,7 @@ const {
   strict: { deepEqual, equal, ok },
 } = require('assert')
 const TheStore = require('../lib/TheStore')
+
 const { BooleanScope, NumberScope, ObjectScope, Scope } = TheStore
 
 describe('the-store', () => {

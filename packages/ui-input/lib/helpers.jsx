@@ -112,5 +112,3 @@ export default {
   renderErrorMessage,
   renderWarningMessage,
 }
-
-/* global URL */

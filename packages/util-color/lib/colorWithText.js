@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Get color with text
  * @memberof module:@the-/util-color

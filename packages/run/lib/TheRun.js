@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Script runner
  * @memberof module:@the-/run

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mixin for peer
  * @memberof module:@the-/rtc.constants.mixins
@@ -10,8 +11,8 @@ const wrtc = require('wrtc')
 const { get } = require('@the-/window')
 const ChannelNames = require('../constants/ChannelNames')
 const PeerEvents = require('../constants/PeerEvents')
-
 const debug = require('debug')('the:rtc:client')
+
 const RTCPeerConnection = get('RTCPeerConnection') || wrtc.RTCPeerConnection
 const RTCSessionDescription =
   get('RTCSessionDescription') || wrtc.RTCSessionDescription

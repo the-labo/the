@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheSecret instance
  * @memberof module:@the-/secret

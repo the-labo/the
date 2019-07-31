@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Alias of {@link module:@the-/resize.create}
  * @memberof module:@the-/resize

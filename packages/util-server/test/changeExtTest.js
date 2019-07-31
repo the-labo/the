@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for changeExt.
  * Runs with mocha.

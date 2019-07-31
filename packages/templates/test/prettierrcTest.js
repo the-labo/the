@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test case for prettierrc.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheFormBinder.
  * Runs with mocha.

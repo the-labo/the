@@ -1,4 +1,5 @@
 'use strict'
+
 const { TheRun } = require('@the-/run')
 
 async function tryExample() {

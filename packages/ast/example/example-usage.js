@@ -1,4 +1,5 @@
 'use strict'
+
 const { parse } = require('@the-/ast')
 
 async function tryExample() {

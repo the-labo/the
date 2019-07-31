@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Change color alpha
  * @memberof module:@the-/util-ui

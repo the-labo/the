@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheStream.
  * Runs with mocha.

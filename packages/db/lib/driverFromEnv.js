@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create driver from env
  * @memberof module:@the-/db

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheIconStyle.
  * Runs with mocha.

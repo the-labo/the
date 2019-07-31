@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheLink.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheScope.
  * Runs with mocha.

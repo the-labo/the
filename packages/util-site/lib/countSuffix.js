@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create count suffix strings
  * @memberof module:@the-/util-site

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mixin for assert
  * @memberof module:@the-/rtc.constants.mixins

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Make sure that entrypoint loaded only once
  * @memberof module:@the-/entrypoint

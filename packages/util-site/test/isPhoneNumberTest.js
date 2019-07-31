@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for isPhoneNumber.
  * Runs with mocha.

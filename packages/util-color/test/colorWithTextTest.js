@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for colorWithText.
  * Runs with mocha.

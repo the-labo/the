@@ -108,5 +108,3 @@ module.exports = [
     'worklet',
   ],
 ].sort()
-
-/* global global, process */

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheCondition.
  * Runs with mocha.

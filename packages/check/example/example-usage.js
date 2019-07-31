@@ -1,4 +1,5 @@
 'use strict'
+
 const {
   strict: { equal, ok },
 } = require('assert')

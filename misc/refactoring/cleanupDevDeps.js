@@ -9,12 +9,15 @@ const { writeAsJson } = require('@the-/util-file')
 ;(async () => {
   const baseDir = `${__dirname}/../..`
   const prepareSnippet = '../../misc/scripts/pkgSharedInstall.sh'
+
   const pkg = require('../../package')
+
   const subPkgFiles = await aglob(
     path.resolve(`${baseDir}/packages/*/package.json`),
   )
   for (const subPkgFile of subPkgFiles) {
     const subPkg = require(subPkgFile)
+
     const { scripts = {} } = subPkg
     const { prepare = '' } = scripts
     if (!prepare.includes(prepareSnippet)) {

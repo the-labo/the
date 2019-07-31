@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Detect iOS or not
  * @memberof module:@the-/check

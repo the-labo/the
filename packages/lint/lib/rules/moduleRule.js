@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create "moduleRule" lint
  * @memberof module:@the-/lint.rules

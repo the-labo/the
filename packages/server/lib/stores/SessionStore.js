@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Client session store for the-server
  * @memberof module:@the-/server.stores
@@ -7,6 +8,7 @@
  */
 const Store = require('./Store')
 const DefaultValues = require('../constants/DefaultValues')
+
 const SESSION_STORE_KEY = 'the:server:session'
 
 /** @lends module:@the-/server.stores.SessionStore */

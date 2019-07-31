@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Define method wrapper
  * @memberof module:@the-/mixin-scene.helpers

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Generate jsdoc
  * @memberof module:@the-/script-doc

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheStepStyle.
  * Runs with mocha.

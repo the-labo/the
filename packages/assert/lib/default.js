@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Alias of {@link module:@the-/assert.create}
  * @memberof module:@the-/assert

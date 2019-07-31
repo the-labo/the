@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheMapMarker.
  * Runs with mocha.

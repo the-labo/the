@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheActionBar.
  * Runs with mocha.

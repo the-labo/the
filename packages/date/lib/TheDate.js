@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Date manipulator
  * @memberof module:@the-/date

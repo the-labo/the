@@ -1,10 +1,12 @@
 'use strict'
+
 /**
  * @memberof module:@the-/secret.mixins
  * @function cryptoMix
  */
 const { expand, flatten } = require('objnest')
 const { cipherText, decipherText } = require('../helpers/cipher')
+
 const SKIP_CRYPTO_PATTERN = /^[_$]|^\/\//
 
 /** @lends module:@the-/secret.cryptoMix */

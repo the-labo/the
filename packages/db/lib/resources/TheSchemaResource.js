@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Resource to manage schema
  * @memberof module:@the-/db

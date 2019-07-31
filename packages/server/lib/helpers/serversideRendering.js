@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Define koa middleware function to do serverside rendering
  * @memberof module:@the-/server.helpers

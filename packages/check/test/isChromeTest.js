@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for isChrome.
  * Runs with mocha.

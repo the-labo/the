@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for decorateRule.
  * Runs with mocha.

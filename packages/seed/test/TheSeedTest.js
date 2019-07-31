@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheSeed.
  * Runs with mocha.

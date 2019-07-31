@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * @memberof module:@the-/client.mixins
  * @function infoMix
@@ -6,6 +7,7 @@
  * @returns {function()}
  */
 const { get } = require('bwindow')
+
 const INFO_KEY = 'the.info'
 
 /** @lends module:@the-/client.mixins.infoMix */

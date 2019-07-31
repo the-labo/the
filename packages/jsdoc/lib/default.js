@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Default exports
  * @memberof module:@the-/jsdoc

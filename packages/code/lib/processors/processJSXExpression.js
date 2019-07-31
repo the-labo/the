@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Process JSX attributes
  * @memberof module:@the-/code.processors

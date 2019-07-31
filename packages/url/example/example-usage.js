@@ -1,4 +1,5 @@
 'use strict'
+
 const { formatUrl } = require('@the-/url')
 
 async function tryExample() {

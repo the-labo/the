@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheError.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for sumReducer.
  * Runs with mocha.

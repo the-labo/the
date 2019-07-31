@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Define model column
  * @memberof module:@the-/driver-sequelize.modeling

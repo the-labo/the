@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Detect src url is video or not
  * @memberof module:@the-/util-ui

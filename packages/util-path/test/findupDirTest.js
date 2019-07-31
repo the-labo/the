@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for findupDir.
  * Runs with mocha.

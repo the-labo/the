@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheJitter instance
  * @memberof module:@the-/jitter

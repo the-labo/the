@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheStore instance
  * @memberof module:@the-/store

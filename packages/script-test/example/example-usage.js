@@ -1,4 +1,5 @@
 'use strict'
+
 const test = require('@the-/script-test')
 
 async function tryExample() {

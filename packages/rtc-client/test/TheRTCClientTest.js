@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheRTCClient.
  * Runs with mocha.

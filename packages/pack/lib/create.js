@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a ThePack instance
  * @memberof module:@the-/pack

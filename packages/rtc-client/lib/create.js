@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheRTCClient instance
  * @memberof module:@the-/rtc-client

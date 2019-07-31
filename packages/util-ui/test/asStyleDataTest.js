@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for asStyleData.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Define bud for prettierrc
  * @memberof module:@the-/templates

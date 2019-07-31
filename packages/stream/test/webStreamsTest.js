@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for webStreams.
  * Runs with mocha.

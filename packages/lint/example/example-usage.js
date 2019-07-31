@@ -1,4 +1,5 @@
 'use strict'
+
 const { TheLint, rules } = require('@the-/lint')
 
 async function tryExample() {
@@ -15,6 +16,7 @@ async function tryExample() {
   // Use Custom rules
   lint.add('src/controllers/*Ctrl.js', ({ content, report }) => {
     const { EOL } = require('os')
+
     if (!content.endsWith(EOL)) {
       report('Should have end with EOL', {
         actual: JSON.stringify(content[content.length - 1]),

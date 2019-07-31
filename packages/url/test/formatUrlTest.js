@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for formatUrl.
  * Runs with mocha.

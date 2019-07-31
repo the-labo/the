@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for depsRule.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheControllerBase instance
  * @memberof module:@the-/controller

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Define bud for server controller
  * @memberof module:@the-/templates

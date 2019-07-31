@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheSpinStyle.
  * Runs with mocha.

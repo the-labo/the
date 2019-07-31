@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Fetch with cache
  * @function cachedFetch

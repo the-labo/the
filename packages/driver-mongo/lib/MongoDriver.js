@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Driver for mongo db
  * @memberof module:@the-/driver-mongo

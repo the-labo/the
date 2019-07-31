@@ -1,4 +1,5 @@
 'use strict'
+
 const { compose, createStore } = require('redux')
 const { get } = require('@the-/window')
 

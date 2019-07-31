@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for saveBase64Test.
  * Runs with mocha.

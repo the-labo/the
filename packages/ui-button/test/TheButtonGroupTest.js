@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheButtonGroup.
  * Runs with mocha.

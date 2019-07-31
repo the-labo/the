@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Count react rendering counts
  * @memberof module:@the-/metrics.counters

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for processJSON.
  * Runs with mocha.

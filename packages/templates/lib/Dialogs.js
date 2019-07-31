@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Define bud for Dialog components
  * @memberof module:@the-/templates

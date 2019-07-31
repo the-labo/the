@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheIcon.
  * Runs with mocha.

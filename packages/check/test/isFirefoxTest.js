@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for isFirefox.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mixin for http
  * @function httpMix

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheMail.
  * Runs with mocha.

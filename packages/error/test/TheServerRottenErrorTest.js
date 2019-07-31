@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheServerRottenError.
  * Runs with mocha.

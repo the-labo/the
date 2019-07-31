@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Configuration for prettier
  * @memberof module:@the-/const-code

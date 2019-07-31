@@ -1,4 +1,5 @@
 'use strict'
+
 const {
   default: theStore,
   default: { BooleanScope, ObjectScope },

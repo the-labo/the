@@ -1,4 +1,5 @@
 'use strict'
+
 const pretty = require('pretty-exceptions/lib/index.js')
 
 const onCatch = (caught) => {

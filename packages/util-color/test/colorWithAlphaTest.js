@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for colorWithAlpha.
  * Runs with mocha.

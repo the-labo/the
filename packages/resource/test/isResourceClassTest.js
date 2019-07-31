@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for isResourceClass.
  * Runs with mocha.

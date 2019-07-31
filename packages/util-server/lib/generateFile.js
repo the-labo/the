@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Write from chunk generator function
  * @function generateFile

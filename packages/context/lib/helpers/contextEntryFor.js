@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Entry component
  * @memberof module:@the-/context.helpers

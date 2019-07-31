@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Pipe to file
  * @function pipeToFile

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mixin for queue
  * @memberof module:@the-/resource.mixins
@@ -53,6 +54,7 @@ function queueMix(Class) {
       return created
     }
   }
+
   return QueueMixed
 }
 

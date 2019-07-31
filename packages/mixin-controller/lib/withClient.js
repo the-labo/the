@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Wrap controller with client
  * @function withClient

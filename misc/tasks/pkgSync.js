@@ -1,4 +1,5 @@
 'use strict'
+
 const aglob = require('aglob')
 const path = require('path')
 const semver = require('semver')
@@ -8,6 +9,7 @@ const { writeAsJson } = require('@the-/util-file')
 function pkgSync(src, targets) {
   return async function task(ctx) {
     const { cwd, logger } = ctx
+
     const {
       author,
       bugs,
@@ -18,6 +20,7 @@ function pkgSync(src, targets) {
       repository,
       version,
     } = require(path.resolve(cwd, src))
+
     const subPkgPaths = (await aglob(targets, { cwd })).map((filename) =>
       path.resolve(cwd, filename),
     )
@@ -39,6 +42,7 @@ function pkgSync(src, targets) {
     )
     for (const subPkgPath of subPkgPaths) {
       const subPkg = require(subPkgPath)
+
       const subPkgDir = path.dirname(subPkgPath)
       const needsChangeVersion = semver.gt(version, subPkg.version)
       if (!needsChangeVersion) {

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for ThePS.
  * Runs with mocha.

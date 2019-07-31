@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Apply patch
  * @memberof module:@the-/entrypoint

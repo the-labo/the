@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Define redis adapter for sockets
  * @memberof module:@the-/server.adapters

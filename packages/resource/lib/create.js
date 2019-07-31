@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheResource instance
  * @memberof module:@the-/resource

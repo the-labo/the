@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Detect Firefox or not
  * @memberof module:@the-/check

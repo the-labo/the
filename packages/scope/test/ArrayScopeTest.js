@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for ArrayScope.
  * Runs with mocha.

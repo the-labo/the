@@ -1,4 +1,5 @@
 'use strict'
+
 const { keyPathMap, uniqueFilter } = require('@the-/util-array')
 
 async function tryExample() {

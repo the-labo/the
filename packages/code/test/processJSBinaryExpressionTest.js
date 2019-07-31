@@ -3,6 +3,7 @@
  * Runs with mocha.
  */
 'use strict'
+
 /* eslint-disable no-template-curly-in-string */
 const {
   strict: { equal },

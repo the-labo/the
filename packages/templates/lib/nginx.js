@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Define bud for nginx conf file
  * @memberof module:@the-/templates

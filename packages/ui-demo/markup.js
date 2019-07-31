@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create element and render to static markup
  * @function markup

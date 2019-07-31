@@ -1,4 +1,5 @@
 'use strict'
+
 const { TheNotFoundError } = require('@the-/error')
 
 async function tryExample() {

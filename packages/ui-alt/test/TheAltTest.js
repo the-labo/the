@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheAlt.
  * Runs with mocha.

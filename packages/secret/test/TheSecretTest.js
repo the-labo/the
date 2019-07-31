@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheSecret.
  * Runs with mocha.

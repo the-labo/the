@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for styleString.
  * Runs with mocha.

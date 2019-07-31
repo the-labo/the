@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheState instance
  * @memberof module:@the-/state

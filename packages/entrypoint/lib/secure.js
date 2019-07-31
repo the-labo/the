@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Make sure to be secure
  * @memberof module:@the-/entrypoint

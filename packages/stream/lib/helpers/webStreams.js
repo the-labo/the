@@ -1,4 +1,5 @@
 'use strict'
+
 const {
   ByteLengthQueuingStrategy,
   CountQueuingStrategy,
@@ -9,9 +10,13 @@ const {
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
 exports.ByteLengthQueuingStrategy = ByteLengthQueuingStrategy
+
 exports.CountQueuingStrategy = CountQueuingStrategy
+
 exports.ReadableStream = ReadableStream
+
 exports.TransformStream = TransformStream
+
 exports.WritableStream = WritableStream
 
 module.exports = {

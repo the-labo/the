@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Alias of {@link module:@the-/geo.create}
  * @memberof module:@the-/geo

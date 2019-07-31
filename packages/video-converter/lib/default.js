@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Alias of {@link module:@the-/video-converter.create}
  * @memberof module:@the-/video-converter

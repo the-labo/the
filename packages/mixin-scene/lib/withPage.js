@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * withPage mixin
  * @memberof module:@the-/mixin-scene

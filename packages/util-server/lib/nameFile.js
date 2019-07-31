@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Name a file
  * @function nameFile

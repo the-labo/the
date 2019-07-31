@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Basic error
  * @memberof module:@the-/error

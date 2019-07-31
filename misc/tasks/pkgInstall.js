@@ -1,4 +1,5 @@
 'use strict'
+
 const aglob = require('aglob')
 const installIfNeeded = require('npm-install-if-needed')
 const path = require('path')

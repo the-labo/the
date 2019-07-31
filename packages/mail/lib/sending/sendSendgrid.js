@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * @memberof module:@the-/mail.sending
  * @function sendSendgrid
@@ -11,7 +12,9 @@ async function sendSendgrid({ content, from, key, subject, to, ...rest }) {
   if (!key) {
     throw new Error('key is required for send grid')
   }
+
   const sendgrid = require('@sendgrid/mail')
+
   sendgrid.setApiKey(key)
   const config = {
     from,

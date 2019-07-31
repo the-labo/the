@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Process export statement
  * @memberof module:@the-/code.processors

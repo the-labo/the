@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * @class SFUProxyEdgeAnswerer
  * @augments SFUProxyEdge

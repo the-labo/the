@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheChartStyle.
  * Runs with mocha.

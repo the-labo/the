@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Resolve template file path.
  * @function _tmpl
@@ -7,6 +8,7 @@
  * @returns {string} - Resolved path.
  */
 const path = require('path')
+
 const TMPL_DIR = path.resolve(__dirname, '../asset/templates')
 
 /** @lends module:@the-/templates._tmpl */

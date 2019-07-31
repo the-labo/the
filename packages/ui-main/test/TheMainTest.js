@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheMain.
  * Runs with mocha.

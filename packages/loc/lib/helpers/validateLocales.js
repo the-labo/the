@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Check locales
  * @function checkLocales

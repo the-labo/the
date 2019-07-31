@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheHtmlStyle.
  * Runs with mocha.

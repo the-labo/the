@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Assert module
  * @memberof module:@the-/assert

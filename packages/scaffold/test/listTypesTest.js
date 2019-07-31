@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for listTypes.
  * Runs with mocha.

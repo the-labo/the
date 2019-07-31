@@ -1,4 +1,5 @@
 'use strict'
+
 const theSeed = require('@the-/seed')
 
 async function tryExample() {

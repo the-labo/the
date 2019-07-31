@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheRTC.
  * Runs with mocha.

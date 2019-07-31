@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for exists.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheResize instance
  * @memberof module:@the-/resize

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Find up directory contains path
  * @memberof module:@the-/util-path

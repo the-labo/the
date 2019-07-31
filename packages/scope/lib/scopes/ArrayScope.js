@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Scope to hold array
  * @memberof module:@the-/scope.scopes

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for JSDoc.
  * Runs with mocha.

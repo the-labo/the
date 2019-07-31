@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheInputSearch.
  * Runs with mocha.

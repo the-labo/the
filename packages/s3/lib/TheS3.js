@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * @memberof module:@the-/s3
  * @class TheS3
@@ -16,6 +17,7 @@ const path = require('path')
 const { promisify } = require('util')
 const theAssert = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
+
 const readFileAsync = promisify(fs.readFile)
 
 const assert = theAssert('TheS3')

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for textColorFor.
  * Runs with mocha.

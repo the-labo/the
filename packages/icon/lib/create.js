@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a Icon instance
  * @memberof module:@the-/icon

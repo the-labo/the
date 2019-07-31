@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheMapPositionInput.
  * Runs with mocha.

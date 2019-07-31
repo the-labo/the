@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create and run
  * @memberof module:@the-/run

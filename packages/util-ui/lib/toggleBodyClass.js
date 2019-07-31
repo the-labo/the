@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Toggle class on document body
  * @memberof module:@the-/util-ui

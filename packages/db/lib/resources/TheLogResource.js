@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Resource of data history
  * @memberof module:@the-/db

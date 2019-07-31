@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Add query to url string
  * @memberof module:@the-/url

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheHandle.
  * Runs with mocha.

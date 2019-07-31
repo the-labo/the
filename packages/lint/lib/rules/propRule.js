@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create "propRule" lint
  * @memberof module:@the-/lint.rules

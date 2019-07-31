@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheYesNoDialog.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheConfirmDialog.
  * Runs with mocha.

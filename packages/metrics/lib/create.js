@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheMetrics instance
  * @memberof module:@the-/metrics

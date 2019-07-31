@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Count metrics for component rendering
  * @memberof module:@the-/metrics-presets

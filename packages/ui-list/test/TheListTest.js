@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheList.
  * Runs with mocha.

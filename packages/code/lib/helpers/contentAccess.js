@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Define content access methods
  * @memberof module:@the-/code

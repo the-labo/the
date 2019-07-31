@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Build in endpoints
  * @memberof module:@the-/server

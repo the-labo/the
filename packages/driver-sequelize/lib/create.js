@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheDriverSequelize instance
  * @memberof @the-/driver-sequelize

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for asController.
  * Runs with mocha.

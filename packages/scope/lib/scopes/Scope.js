@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Abstract scope class
  * @memberof module:@the-/scope.scopes

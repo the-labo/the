@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test case for eslintignore.
  * Runs with mocha.

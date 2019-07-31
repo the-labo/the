@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheRoute.
  * Runs with mocha.

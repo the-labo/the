@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheHeaderStyle.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * @memberof module:@the-/client
  * @class TheClient
@@ -28,6 +29,7 @@ const {
 } = require('./helpers')
 const { infoMix, pingPongMix, streamMix } = require('./mixins')
 const debug = require('debug')('the:client')
+
 const NAMESPACE = '/rpc'
 
 /**

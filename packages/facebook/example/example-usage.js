@@ -1,4 +1,5 @@
 'use strict'
+
 const theFacebook = require('@the-/facebook')
 
 async function tryExample() {

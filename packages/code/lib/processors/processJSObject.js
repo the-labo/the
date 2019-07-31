@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Process object expressions
  * @memberof module:@the-/code.processors

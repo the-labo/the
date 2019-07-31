@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Scene
  * @memberof module:@the-/templates

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Get app cache from WorkerGlobalScope
  * @function appCache

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Check file exists
  * @memberof module:@the-/util-path.helpers

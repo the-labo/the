@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for helpers.
  * Runs with mocha.
@@ -19,11 +20,13 @@ describe('helpers', () => {
         return 'a'
       }
     }
+
     class C2 extends C1 {
       b() {
         return 'b'
       }
     }
+
     const c2 = new C2()
     const methodNames = helpers.allMethodNames(c2)
     deepEqual(methodNames, ['a', 'b'])

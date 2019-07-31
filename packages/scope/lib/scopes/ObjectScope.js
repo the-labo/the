@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Scope to hold object
  * @memberof module:@the-/scope.scopes

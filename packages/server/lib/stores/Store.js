@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Client data store for the-server
  * @memberof module:@the-/server.stores

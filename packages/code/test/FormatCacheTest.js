@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for FormatCache.
  * Runs with mocha.

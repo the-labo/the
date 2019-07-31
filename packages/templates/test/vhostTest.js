@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test case for vhost.
  * Runs with mocha.

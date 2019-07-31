@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Provide seat access functions
  * @function seatAccess

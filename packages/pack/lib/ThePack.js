@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Pack handler
  * @memberof module:@the-/pack

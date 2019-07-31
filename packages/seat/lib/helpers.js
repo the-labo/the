@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Helper utility
  * @memberof module:@the-/seat

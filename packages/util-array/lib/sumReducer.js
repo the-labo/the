@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * sumReducer
  * @memberof module:@the-/util-array

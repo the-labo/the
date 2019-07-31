@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheHandle instance
  * @memberof module:@the-/handle

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheAssets instance
  * @memberof module:@the-/assets

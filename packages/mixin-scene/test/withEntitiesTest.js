@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for withEntities.
  * Runs with mocha.

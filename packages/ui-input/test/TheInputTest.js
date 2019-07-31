@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheInput.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 const aglob = require('aglob')
 const path = require('path')
 const {
@@ -13,6 +14,7 @@ function pkgRun(targets, command) {
     )
     for (const subPkgPath of subPkgPaths) {
       const subPkg = require(subPkgPath)
+
       const subPkgDir = path.dirname(subPkgPath)
       const hasCommand = command in (subPkg.scripts || {})
       if (!hasCommand) {

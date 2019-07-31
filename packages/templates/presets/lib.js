@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Presets for `@the-/*` packages
  * @module @the-script/presets/lib
@@ -42,6 +43,7 @@ exports.Readme = (dirname, options = {}) => {
 
 exports.Index = (dirname) => {
   const pkg = require(path.resolve(dirname, '../package.json'))
+
   return dir({
     annotations: {
       description: pkg.description,

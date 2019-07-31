@@ -1,4 +1,5 @@
 'use strict'
+
 const { TheStream } = require('@the-/stream')
 
 async function tryExample() {

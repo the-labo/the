@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheSeat instance
  * @memberof module:@the-/seat

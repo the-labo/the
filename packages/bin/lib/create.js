@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheBin instance
  * @memberof module:@the-/bin

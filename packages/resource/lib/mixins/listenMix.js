@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mixins for listen
  * @memberof module:@the-/resource.mixins
@@ -172,6 +173,7 @@ function listenMix(Class) {
       })
     }
   }
+
   return ListenMixed
 }
 

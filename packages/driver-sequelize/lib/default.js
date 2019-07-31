@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Alias of {@link module:@the-/driver-sequelize}
  * @memberof module:@the-/driver-sequelize

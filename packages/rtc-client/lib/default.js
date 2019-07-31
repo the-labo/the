@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Alias of {@link module:@the-/rtc-client.create}
  * @memberof module:@the-/rtc-client

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheRouterStyle.
  * Runs with mocha.

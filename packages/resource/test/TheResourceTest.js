@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheResource.
  * Runs with mocha.

@@ -1,5 +1,7 @@
 'use strict'
+
 const theStore = require('@the-/store')
+
 const { Scope } = theStore
 
 // Scoped state class

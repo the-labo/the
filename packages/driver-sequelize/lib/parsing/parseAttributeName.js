@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * @memberof module:@the-/driver-sequelize.parsing
  * @function parseAttributeName

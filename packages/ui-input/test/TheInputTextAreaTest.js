@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheInputTextArea.
  * Runs with mocha.

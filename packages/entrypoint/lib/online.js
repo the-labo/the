@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Handle when online
  * @memberof module:@the-/entrypoint

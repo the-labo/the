@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Convert style into style string
  * @function styleString

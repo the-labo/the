@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mixin of mongodb
  * @memberof module:@the-/driver-mongo.mixins

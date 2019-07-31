@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for processCSSProp.
  * Runs with mocha.

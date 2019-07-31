@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test case for hook.
  * Runs with mocha.

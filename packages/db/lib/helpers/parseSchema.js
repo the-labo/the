@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Parse schema
  * @memberof module:@the-/db.helpers

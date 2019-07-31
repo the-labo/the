@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Alias of {@link module:@the-/metrics.create}
  * @memberof module:@the-/metrics

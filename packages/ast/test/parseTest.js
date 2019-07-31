@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for parse.
  * Runs with mocha.

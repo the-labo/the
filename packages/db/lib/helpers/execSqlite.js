@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * @memberof module:@the-/db.helpers
  * @function execSqlite

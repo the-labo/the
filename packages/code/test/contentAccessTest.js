@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for contentAccess.
  * Runs with mocha.

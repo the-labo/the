@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Alias of {@link module:@the-/setting.create}
  * @memberof module:@the-/setting
@@ -12,7 +13,9 @@ const lib = create.bind(create)
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
 exports.TheSetting = TheSetting
+
 exports.create = create
+
 exports.helpers = helpers
 
 module.exports = Object.assign(lib, {

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheHamburgerStyle.
  * Runs with mocha.

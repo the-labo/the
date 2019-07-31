@@ -8,6 +8,7 @@ describe('packages', function() {
     const pkgFiles = await aglob(PACKAGES_PATTERN)
     for (const pkgFile of pkgFiles) {
       const pkg = require(pkgFile)
+
       for (const [, version] of Object.entries(pkg.dependencies || {})) {
         ok(
           !/^file:/.test(version),

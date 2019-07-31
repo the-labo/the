@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Define bud for mapping
  * @memberof module:@the-/templates

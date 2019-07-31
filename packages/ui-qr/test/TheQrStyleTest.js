@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheQrStyle.
  * Runs with mocha.

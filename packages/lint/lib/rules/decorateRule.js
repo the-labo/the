@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create "decorateRule" lint
  * @memberof module:@the-/lint.rules

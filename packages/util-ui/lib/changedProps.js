@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Extract changed props
  * @memberof module:@the-/util-ui

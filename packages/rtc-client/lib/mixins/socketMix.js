@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mixin for socket
  * @memberof module:@the-/rtc.constants.mixins
@@ -10,6 +11,7 @@ const { cleanup } = require('asobj')
 const qs = require('qs')
 const io = require('socket.io-client')
 const debug = require('debug')('the:rtc:client')
+
 const NAMESPACE = '/rtc'
 
 /** @lends module:@the-/rtc.constants.mixins.socketMix */

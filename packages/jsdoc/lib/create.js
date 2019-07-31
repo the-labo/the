@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a JSDoc instance
  * @memberof module:@the-/jsdoc

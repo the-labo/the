@@ -1,4 +1,5 @@
 'use strict'
+
 const theSeal = require('@the-/seal')
 
 async function tryExample() {

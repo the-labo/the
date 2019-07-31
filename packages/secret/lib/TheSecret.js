@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * @memberof module:@the-/secret
  * @class TheSecret
@@ -13,6 +14,7 @@ const qs = require('qs')
 const { readAsJsonSync, statSync, writeAsJsonSync } = require('@the-/util-file')
 const m = require('./mixins')
 const pkg = require('../package')
+
 const TheSecretBase = [m.cryptoMix, m.lockMix].reduce(
   (Class, mix) => mix(Class),
   class Base {},

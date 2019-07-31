@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for processJSIf.
  * Runs with mocha.

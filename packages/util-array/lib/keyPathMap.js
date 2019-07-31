@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Map entries with key path
  * @memberof module:@the-/util-array

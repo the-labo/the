@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheRepeatable.
  * Runs with mocha.

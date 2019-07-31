@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Change file extension
  * @memberof module:@the-/video-converter

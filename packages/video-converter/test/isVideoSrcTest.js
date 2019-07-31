@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for isVideoSrc.
  * Runs with mocha.

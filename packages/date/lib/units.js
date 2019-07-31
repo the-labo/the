@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Date units
  * @memberof module:@the-/date

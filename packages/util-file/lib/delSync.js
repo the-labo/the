@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * @memberof module.module:@the-/util-file
  * @function delSync

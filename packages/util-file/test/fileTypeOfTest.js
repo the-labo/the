@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for fileTypeOf.
  * Runs with mocha.

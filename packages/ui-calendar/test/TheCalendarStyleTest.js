@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheCalendarStyle.
  * Runs with mocha.

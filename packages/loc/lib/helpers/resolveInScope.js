@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Resolve value in a scope
  * @function resolveInScope

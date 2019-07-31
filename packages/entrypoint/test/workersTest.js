@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for workers.
  * Runs with mocha.

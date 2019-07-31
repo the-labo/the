@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Removed unused vars
  * @memberof module:@the-/code.processors

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Register service workers
  * @memberof module:@the-/entrypoint

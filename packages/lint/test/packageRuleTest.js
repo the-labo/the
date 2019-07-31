@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for packageRule.
  * Runs with mocha.

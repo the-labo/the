@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create "usageRule" lint.
  * This rule makes sure target files is used in somewhere
@@ -81,6 +82,7 @@ function usageRule(config) {
     }
     if (keysUsedIn) {
       const required = require(path.resolve(filename))
+
       const keys = Object.keys(required)
       const unusedNames = await findUnusedName(keys, keysUsedIn)
       const ok = unusedNames.length === 0
@@ -95,6 +97,7 @@ function usageRule(config) {
     }
     if (flattenKeysUsedIn) {
       const required = require(path.resolve(filename))
+
       const flattenKeys = Object.keys(flatten(required))
       const unusedNames = await findUnusedName(flattenKeys, flattenKeysUsedIn)
       const ok = unusedNames.length === 0

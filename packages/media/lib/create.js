@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheMedia instance
  * @memberof module:@the-/media

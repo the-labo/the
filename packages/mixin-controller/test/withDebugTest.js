@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for withDebug.
  * Runs with mocha.

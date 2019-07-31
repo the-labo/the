@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mixin for promise
  * @memberof module:@the-/rtc.constants.mixins

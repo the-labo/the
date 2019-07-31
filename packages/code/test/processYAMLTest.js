@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for processYAML.
  * Runs with mocha.

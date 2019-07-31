@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheContainer.
  * Runs with mocha.

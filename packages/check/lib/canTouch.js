@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Check touch supported
  * @memberof module:@the-/check

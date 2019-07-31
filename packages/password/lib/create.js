@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a ThePassword instance
  * @memberof module:@the-/password

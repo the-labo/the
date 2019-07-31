@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Find randomly
  * @memberof module:@the-/util-array

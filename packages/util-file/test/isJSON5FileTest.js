@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for isJSON5File.
  * Runs with mocha.

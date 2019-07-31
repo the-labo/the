@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Stateful
  * @memberof module:@the-/templates

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * withSort mixin
  * @memberof module:@the-/mixin-scene

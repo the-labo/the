@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Extract html attributes for component props
  * @memberof module:@the-/util-ui

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheMedia.
  * Runs with mocha.

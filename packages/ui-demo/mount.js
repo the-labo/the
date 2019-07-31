@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mount into component demo
  * @function mount

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * @memberof module:@the-/secret.helpers
  * @namespace cipher

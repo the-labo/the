@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheSpell instance
  * @memberof module:@the-/spell

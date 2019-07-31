@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheChart.
  * Runs with mocha.

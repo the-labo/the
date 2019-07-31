@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for get.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test case for view.
  * Runs with mocha.

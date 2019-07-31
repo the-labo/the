@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create Style element
  * @memberof module:@the-/entrypoint.helpers

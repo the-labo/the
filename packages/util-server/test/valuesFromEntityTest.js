@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for valuesFromEntity.
  * Runs with mocha.

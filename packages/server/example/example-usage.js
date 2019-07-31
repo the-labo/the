@@ -1,25 +1,25 @@
 'use strict'
+
 const React = require('react')
 const theServer = require('@the-/server')
+
 const { createElement: c } = React
 
 ;(async () => {
   // Define RPC Controller Class
-  const FruitShopCtrl = ({ session }) => {
-    return {
-      async addToCart(name, amount = 1) {
-        const { cart = {} } = session
-        cart[name] = (cart[name] || 0) + amount
-        session.cart = cart
-      },
+  const FruitShopCtrl = ({ session }) => ({
+    async addToCart(name, amount = 1) {
+      const { cart = {} } = session
+      cart[name] = (cart[name] || 0) + amount
+      session.cart = cart
+    },
 
-      async buy() {
-        const { cart = {} } = session
-        console.log(cart)
-        /* ... */
-      },
-    }
-  }
+    async buy() {
+      const { cart = {} } = session
+      console.log(cart)
+      /* ... */
+    },
+  })
 
   // Define real time event handling stream
   const CountdownStream = ({ params }) => ({

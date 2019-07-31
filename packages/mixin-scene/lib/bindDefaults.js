@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * For bindDefaults
  * @memberof module:@the-/mixin-scene

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Generate new id
  * @memberof module:@the-/util-ui

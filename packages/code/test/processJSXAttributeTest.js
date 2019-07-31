@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for processJSXAttribute.
  * Runs with mocha.

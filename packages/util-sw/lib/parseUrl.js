@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Parse url
  * @function parseUrl

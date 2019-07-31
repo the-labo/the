@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mixin for sfu
  * @memberof module:@the-/rtc.mixins

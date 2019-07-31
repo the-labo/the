@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mixin of sequelize
  * @memberof module:@the-/driver-sequelize.mixins

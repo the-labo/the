@@ -1,4 +1,5 @@
 'use strict'
+
 const { TheRTCClient } = require('../lib')
 
 document.addEventListener('DOMContentLoaded', async () => {

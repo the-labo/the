@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Locale resolver
  * @memberof module:@the-/loc

@@ -1,4 +1,5 @@
 'use strict'
+
 const {
   DataTypes: { ENTITY, ID, OBJECT, REF, STRING },
 } = require('clay-constants')

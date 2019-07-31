@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheDemoLib instance
  * @memberof module:@the-/demo-lib

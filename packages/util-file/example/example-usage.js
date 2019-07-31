@@ -1,4 +1,5 @@
 'use strict'
+
 const { readAsJsonSync } = require('@the-/util-file')
 
 async function tryExample() {

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheFlickStyle.
  * Runs with mocha.

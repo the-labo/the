@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheRouteStack.
  * Runs with mocha.

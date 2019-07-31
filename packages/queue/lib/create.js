@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheQueue instance
  * @memberof module:@the-/queue

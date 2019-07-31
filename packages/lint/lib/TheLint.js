@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Lint runner
  * @memberof module:@the-/lint

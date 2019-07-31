@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheContext instance
  * @memberof module:@the-/context

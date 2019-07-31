@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for processJSStrict.
  * Runs with mocha.

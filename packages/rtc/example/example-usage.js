@@ -1,4 +1,5 @@
 'use strict'
+
 const { TheRTC } = require('@the-/rtc')
 
 async function tryExample() {

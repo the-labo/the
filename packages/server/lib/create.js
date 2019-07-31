@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheServer instance
  * @memberof module:@the-/server

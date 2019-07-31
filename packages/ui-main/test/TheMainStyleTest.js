@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheMainStyle.
  * Runs with mocha.

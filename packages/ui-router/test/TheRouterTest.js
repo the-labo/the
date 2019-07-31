@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheRouter.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheHash instance
  * @memberof module:@the-/hash

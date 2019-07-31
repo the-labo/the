@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Handy tools
  * @module @the-/secret/tools

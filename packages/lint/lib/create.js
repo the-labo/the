@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheLint instance
  * @memberof module:@the-/lint

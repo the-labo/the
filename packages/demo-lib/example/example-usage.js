@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * The is an example of TheDemoLib
  * @file example-usage.js

@@ -12,7 +12,9 @@ process.chdir(baseDir)
     path.resolve(baseDir, 'packages/*/package.json'),
   )) {
     const pkgDir = path.dirname(pkgPath)
+
     const pkg = require(pkgPath)
+
     for (const [name] of Object.entries(pkg.dependencies || {})) {
       if (name in transporting) {
         console.log(

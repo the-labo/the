@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Wait until file exists
  * @function waitForFile

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Timezone names
  * @memberof module:@the-/date

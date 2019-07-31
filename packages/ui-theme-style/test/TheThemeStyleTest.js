@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheThemeStyle.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Abstract state class
  * @memberof module:@the-/scope

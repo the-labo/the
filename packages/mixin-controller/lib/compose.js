@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Compose multiple mixins into one
  * @function compose

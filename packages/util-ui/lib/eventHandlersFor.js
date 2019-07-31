@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Extract event handlers for component props
  * @memberof module:@the-/util-ui

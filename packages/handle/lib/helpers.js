@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * @memberof module:@the-/handle
  * @namespace helpers

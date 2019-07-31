@@ -1,4 +1,5 @@
 'use strict'
+
 /** @deprecated */
 function asHOC(decorator) {
   return function classMixin(ClassDescriptor) {

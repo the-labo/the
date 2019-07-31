@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheInfo.
  * Runs with mocha.

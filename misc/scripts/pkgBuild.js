@@ -5,4 +5,5 @@
  * @file Build package
  */
 const build = require('@the-/script-build')
+
 build()

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mixin for serialize
  * @memberof module:@the-/rtc.constants.mixins

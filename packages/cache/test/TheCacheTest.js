@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheCache.
  * Runs with mocha.

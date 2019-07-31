@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheKeyboardButton.
  * Runs with mocha.

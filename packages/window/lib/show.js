@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Show page
  * @memberof module:@the-/window

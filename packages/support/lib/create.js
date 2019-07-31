@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheSupport instance
  * @memberof module:@the-/support

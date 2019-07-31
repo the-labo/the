@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheDate.
  * Runs with mocha.

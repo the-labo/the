@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Do exec for env
  * @memberof module:@the-/db

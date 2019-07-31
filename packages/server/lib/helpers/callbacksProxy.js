@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Callback proxy
  * @memberof module:@the-/server.helpers

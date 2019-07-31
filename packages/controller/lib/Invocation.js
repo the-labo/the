@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Controller action invocation
  * @memberof module:@the-/controller

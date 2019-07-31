@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheSeal.
  * Runs with mocha.

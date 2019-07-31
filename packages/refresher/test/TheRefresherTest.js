@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheRefresher.
  * Runs with mocha.

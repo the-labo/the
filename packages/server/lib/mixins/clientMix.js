@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Mixin for client
  * @memberof module:@the-/server.mixins

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for validateLocales.
  * Runs with mocha.

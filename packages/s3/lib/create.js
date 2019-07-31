@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheS3 instance
  * @memberof module:@the-/s3

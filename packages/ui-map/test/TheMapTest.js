@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheMap.
  * Runs with mocha.

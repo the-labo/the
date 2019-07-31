@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Define bud for bin scripts
  * @memberof module:@the-/templates

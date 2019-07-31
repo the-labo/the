@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for ThePaintStyle.
  * Runs with mocha.

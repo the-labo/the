@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Has more for counts
  * @memberof module:@the-/util-site

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheView.
  * Runs with mocha.

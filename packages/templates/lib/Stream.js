@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Stream
  * @memberof module:@the-/templates

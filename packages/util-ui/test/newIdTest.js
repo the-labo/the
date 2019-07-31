@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for newId.
  * Runs with mocha.

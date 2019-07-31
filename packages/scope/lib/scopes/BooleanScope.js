@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Scope to hold boolean
  * @memberof module:@the-/scope.scopes

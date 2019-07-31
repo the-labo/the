@@ -12,6 +12,7 @@ const path = require('path')
 const rimraf = require('rimraf')
 const { TheRefactor } = require('@the-/refactor')
 const transporting = require('./transporting')
+
 const baseDir = `${__dirname}/../..`
 
 process.chdir(baseDir)
@@ -160,6 +161,7 @@ const _removeDevDeps = async (baseDir, names) => {
     if (!/demo/.test(name)) {
       if (['ui'].includes(kind)) {
         const demoComponentDir = path.resolve(baseDir, 'packages', 'demo-ui')
+
         const demoComponentPkg = require(path.resolve(
           demoComponentDir,
           'package.json',

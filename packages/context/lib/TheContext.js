@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Context
  * @memberof module:@the-/context

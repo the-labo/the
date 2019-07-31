@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * @memberof module:@the-/video-converter
  * @function isVideoSrc

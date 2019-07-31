@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheRun instance
  * @memberof module:@the-/run

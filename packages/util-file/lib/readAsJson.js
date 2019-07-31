@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Read as json
  * @memberof module:@the-/util-file

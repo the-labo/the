@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for ThePassword.
  * Runs with mocha.

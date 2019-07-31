@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for usageRule.
  * Runs with mocha.

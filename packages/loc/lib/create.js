@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheLoc instance
  * @memberof module:@the-/loc

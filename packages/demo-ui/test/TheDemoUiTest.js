@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheDemoUi.
  * Runs with mocha.

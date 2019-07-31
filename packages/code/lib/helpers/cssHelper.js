@@ -1,4 +1,5 @@
 'use strict'
+
 module.exports = Object.freeze({
   bindCssRange({ indexOf }) {
     return function rangeFor(node) {

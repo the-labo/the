@@ -1,4 +1,5 @@
 'use strict'
+
 const { TheScope } = require('@the-/scope')
 const { TheStore } = require('@the-/store')
 

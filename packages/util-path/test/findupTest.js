@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for findup.
  * Runs with mocha.

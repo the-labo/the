@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Get rotated colors for color
  * @memberof module:@the-/util-color

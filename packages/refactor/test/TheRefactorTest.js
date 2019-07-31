@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheRefactor.
  * Runs with mocha.

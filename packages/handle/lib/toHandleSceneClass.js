@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Convert into handle scene class
  * @memberof module:@the-/handle

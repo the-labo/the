@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheGeo instance
  * @memberof module:@the-/geo

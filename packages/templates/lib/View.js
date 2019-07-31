@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * View
  * @memberof module:@the-/templates

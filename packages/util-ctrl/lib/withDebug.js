@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Wrap controller with debug
  * @memberof module:@the-/util-ctrl

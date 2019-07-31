@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Shared action handler
  * @memberof module:@the-/handle
@@ -10,6 +11,7 @@ const theAssert = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
 const helpers = require('./helpers')
 const toHandleSceneClass = require('./toHandleSceneClass')
+
 const NAMEPATH_SEPARATOR = '.'
 const assert = theAssert('the:handle')
 const shortNameOfScene = (n) => n && n.replace(/_scene$|Scene$/, '')

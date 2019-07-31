@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Define bud for README.md
  * @memberof module:@the-/templates

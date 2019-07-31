@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheGeo.
  * Runs with mocha.

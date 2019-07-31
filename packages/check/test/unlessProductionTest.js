@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for unlessProduction.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheChatForm.
  * Runs with mocha.

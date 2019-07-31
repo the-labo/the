@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * withResult mixin
  * @memberof module:@the-/mixin-scene

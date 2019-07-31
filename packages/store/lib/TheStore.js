@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Scoped redux store
  * @memberof module:@the-/store

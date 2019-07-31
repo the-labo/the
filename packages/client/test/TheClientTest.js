@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheClient.
  * Runs with mocha.

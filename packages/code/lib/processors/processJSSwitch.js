@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Process js switch statement
  * @memberof module:@the-/code.processors

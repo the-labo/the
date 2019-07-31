@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheCtrl.
  * Runs with mocha.

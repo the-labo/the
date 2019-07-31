@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheDropdownMenu.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheRefactor instance
  * @memberof module:@the-/refactor

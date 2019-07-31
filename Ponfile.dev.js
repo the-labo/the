@@ -16,8 +16,8 @@ const {
     spawn: { npx },
   },
 } = require('pon-task-basic')
-
 const { cwd, tasks } = require('./Ponfile')
+
 const eslint = (dirname, options = {}) => {
   const { fix = false } = options
   return npx(

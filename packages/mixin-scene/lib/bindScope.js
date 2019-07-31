@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * For bindScope
  * @memberof module:@the-/mixin-scene

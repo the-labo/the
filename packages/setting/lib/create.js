@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheSetting instance
  * @memberof module:@the-/setting

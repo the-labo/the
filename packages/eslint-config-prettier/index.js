@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * @module @the-/eslint-config-prettier
  */

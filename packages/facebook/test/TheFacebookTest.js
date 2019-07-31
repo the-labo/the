@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheFacebook.
  * Runs with mocha.

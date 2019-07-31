@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for processJSPrettier.
  * Runs with mocha.

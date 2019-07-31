@@ -6,6 +6,7 @@ const { spawnSync } = require('child_process')
 const path = require('path')
 const { TheRefactor } = require('@the-/refactor')
 const transporting = require('./transporting')
+
 const baseDir = `${__dirname}/../..`
 process.chdir(baseDir)
 
@@ -14,7 +15,9 @@ async function main() {
     const pkgDir = path.dirname(pkgPath)
     process.chdir(pkgDir)
     console.log(`=== ${path.relative(baseDir, pkgDir)} ===`)
+
     const pkg = require(pkgPath)
+
     for (const [oldName] of Object.entries(pkg.dependencies || {})) {
       if (oldName in transporting) {
         const newName = `@the-/${transporting[oldName].name}`

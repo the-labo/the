@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheSeed instance
  * @memberof module:@the-/seed

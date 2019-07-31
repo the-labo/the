@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for processJSExport.
  * Runs with mocha.

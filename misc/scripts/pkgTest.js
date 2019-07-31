@@ -5,4 +5,5 @@
  * @file Generate doc for package
  */
 const test = require('@the-/script-test')
+
 test()

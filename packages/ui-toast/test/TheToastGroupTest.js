@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheToastGroup.
  * Runs with mocha.

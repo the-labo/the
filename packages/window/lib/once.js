@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Handle event once on document
  * @memberof module:@the-/window

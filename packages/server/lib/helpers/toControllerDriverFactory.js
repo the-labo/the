@@ -9,6 +9,7 @@ const isClass = require('is-class')
 const theAssert = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
 const SessionAccess = require('./SessionAccess')
+
 const assert = theAssert('@the-/server')
 
 /** @lends module:@the-/server.helpers.toControllerDriverFactory */

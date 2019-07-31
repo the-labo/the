@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create "callRule" lint
  * @memberof module:@the-/lint.rules
@@ -28,6 +29,7 @@ function callRule(config) {
 
     for (const [name, target] of Object.entries(keypathArguments)) {
       const targetModule = require(path.resolve(target))
+
       const expressions = CallExpressions.filter(
         ({ callee }) => callee.name === name,
       )

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Define koa middleware function to detect locale
  * @memberof module:@the-/server.helpers

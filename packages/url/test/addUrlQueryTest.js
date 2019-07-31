@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for addUrlQuery.
  * Runs with mocha.

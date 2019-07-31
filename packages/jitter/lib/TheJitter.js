@@ -1,11 +1,14 @@
 'use strict'
+
 /**
  * @memberof module:@the-/jitter
  * @class TheJitter
  * @param {Object} [options={}] - Optional settings
  */
 const asleep = require('asleep')
+
 const COUNT = Symbol('count')
+
 const debug = require('debug')('the:jitter')
 
 /** @lends module:@the-/jitter.TheJitter */

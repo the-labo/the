@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create a TheMail instance
  * @memberof module:@the-/mail

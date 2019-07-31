@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for uniqueFilter.
  * Runs with mocha.

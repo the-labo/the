@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * withQuery mixin
  * @deprecated

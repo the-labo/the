@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Define bud for LICENSE
  * @memberof module:@the-/templates

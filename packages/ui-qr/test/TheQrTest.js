@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheQr.
  * Runs with mocha.

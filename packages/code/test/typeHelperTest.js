@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for typeHelper.
  * Runs with mocha.

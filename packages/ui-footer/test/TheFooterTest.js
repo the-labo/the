@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheFooter.
  * Runs with mocha.

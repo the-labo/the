@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Detect is serverside
  * @memberof module:@the-/util-ui

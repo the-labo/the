@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Do unless production env
  * @memberof module:@the-/check

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Set global values
  * @memberof module:@the-/window

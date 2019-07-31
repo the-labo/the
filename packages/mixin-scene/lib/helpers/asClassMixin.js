@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Define as class mixin
  * @memberof module:@the-/mixin-scene.helpers

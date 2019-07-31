@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for isProduction.
  * Runs with mocha.

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Events for peer
  * @memberof module:@the-/rtc.constants

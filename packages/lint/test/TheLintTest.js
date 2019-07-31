@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheLint.
  * Runs with mocha.

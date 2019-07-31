@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Alias of {@link module:@the-/seed.create}
  * @memberof module:@the-/seed

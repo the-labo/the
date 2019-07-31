@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Inject queries on location change
  * @memberof module:@the-/entrypoint

@@ -8,4 +8,5 @@ const applyToNodes = (nodes, convert) => {
   }
   return null
 }
+
 module.exports = applyToNodes

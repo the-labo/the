@@ -4,6 +4,7 @@
  */
 /* eslint-disable no-template-curly-in-string */
 'use strict'
+
 const {
   strict: { equal },
 } = require('assert')

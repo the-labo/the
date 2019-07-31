@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Detect unsupported
  * @memberof module:@the-/support.helpers

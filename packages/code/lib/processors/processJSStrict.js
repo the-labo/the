@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Process js "use strict" statement
  * @memberof module:@the-/code.processors

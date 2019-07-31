@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheDialog.
  * Runs with mocha.

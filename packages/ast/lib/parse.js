@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Parse source code
  * @memberof module:@the-/ast

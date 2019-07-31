@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Resource for the DB
  * @memberof module:@the-/resource

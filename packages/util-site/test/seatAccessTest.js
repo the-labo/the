@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for seatAccess.
  * Runs with mocha.

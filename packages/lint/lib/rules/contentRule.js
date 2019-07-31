@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Create "contentRule" lint
  * @memberof module:@the-/lint.rules

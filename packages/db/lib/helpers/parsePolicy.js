@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Parse db policy
  * @memberof execSqlite

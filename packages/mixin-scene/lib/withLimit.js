@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * withLimit mixin
  * @memberof module:@the-/mixin-scene

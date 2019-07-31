@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for TheDriverSequelize.
  * Runs with mocha.

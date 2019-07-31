@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for ValueScope.
  * Runs with mocha.

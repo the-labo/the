@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function commentModuleOnProgramNode
@@ -55,7 +56,9 @@ async function commentModuleOnProgramNode(
   if (!pkgDir) {
     return
   }
+
   const pkg = require(path.join(pkgDir, 'package.json'))
+
   const modulePath = path.join(
     ...[
       path.relative(pkgDir, dirname),

@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Presets for `@the-/*` packages
  * @module @the-script/presets/component

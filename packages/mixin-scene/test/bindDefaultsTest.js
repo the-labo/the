@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for bindDefaults.
  * Runs with mocha.

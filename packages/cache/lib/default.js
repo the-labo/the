@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Alias of {@link module:@the-/cache.default}
  * @memberof module:@the-/cache
@@ -11,6 +12,7 @@ const lib = create.bind(create)
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
 exports.TheCache = TheCache
+
 exports.create = create
 
 module.exports = Object.assign(lib, {

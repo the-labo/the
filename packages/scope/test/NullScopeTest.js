@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Test for NullScope.
  * Runs with mocha.

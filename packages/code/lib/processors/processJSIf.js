@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Process if statemens
  * @memberof module:@the-/code.processors

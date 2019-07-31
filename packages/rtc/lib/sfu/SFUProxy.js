@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * Webrtc proxy connections
  * @class SFUProxy
