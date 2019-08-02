@@ -7,13 +7,13 @@
     "longname": "module:@the-/assets",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/assets",
     "order": 2,
     "typicalname": "assets",
-    "version": "15.4.7"
+    "version": "15.4.11"
   },
   {
     "async": true,
@@ -24,7 +24,7 @@
     "memberof": "module:@the-/assets.TheAssets",
     "meta": {
       "filename": "TheAssets.js",
-      "lineno": 18,
+      "lineno": 20,
       "path": "lib"
     },
     "name": "installTo",
@@ -80,7 +80,7 @@
     "memberof": "module:@the-/assets",
     "meta": {
       "filename": "TheAssets.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "TheAssets",
@@ -96,7 +96,7 @@
     "memberof": "module:@the-/assets",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "helpers",
@@ -111,7 +111,7 @@
     "memberof": "module:@the-/assets",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "create",
@@ -146,7 +146,7 @@
     "memberof": "module:@the-/assets",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
@@ -182,7 +182,7 @@
     "memberof": "module:@the-/assets.helpers",
     "meta": {
       "filename": "installFiles.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "installFiles",

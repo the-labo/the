@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const theAssets = require('@the-/assets')
 
 async function tryExample() {

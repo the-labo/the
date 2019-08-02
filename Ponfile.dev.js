@@ -79,6 +79,7 @@ module.exports = pon({
           '**/tmp/**/*.*',
           '**/demo/bundle.js',
           '**/var/**/*.*',
+          '**/*.min.js',
         ],
       },
     ),

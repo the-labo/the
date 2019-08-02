@@ -1,0 +1,5 @@
+*.min.js
+packages/*/assets
+node_modules
+tmp
+var
