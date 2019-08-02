@@ -9,8 +9,9 @@ import { get } from '@the-/window'
 
 /** @lends TileLayer */
 class TileLayer extends L.TileLayer {
-  constructor() {
-    super(...arguments)
+  constructor(options = {}) {
+    const { url, ...otherOptions } = options
+    super(url, otherOptions)
     this.handlers = {}
   }
 

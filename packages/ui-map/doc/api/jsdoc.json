@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-map",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-map",
     "order": 0,
     "typicalname": "uiMap",
-    "version": "15.4.9"
+    "version": "15.4.11"
   },
   {
     "description": "Geo map for the-components",

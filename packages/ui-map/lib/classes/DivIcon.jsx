@@ -9,9 +9,7 @@ import L from '@okunishinishi/leaflet-shim'
 /** @lends DivIcon */
 class DivIcon extends L.DivIcon {
   createIcon(oldIcon) {
-    const div = super.createIcon(oldIcon)
-
-    return div
+    return super.createIcon(oldIcon)
   }
 }
 

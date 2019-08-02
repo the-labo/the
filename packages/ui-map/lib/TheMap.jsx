@@ -104,8 +104,8 @@ class TheMap extends React.Component {
     }
     {
       const layerValuesToAdd = layers.filter(({ key }) => !mapLayers[key])
-      for (const { key, url, ...options } of layerValuesToAdd) {
-        const layer = this.createLayer(url, options)
+      for (const { key, ...options } of layerValuesToAdd) {
+        const layer = this.createLayer(options)
         mapLayers[key] = layer
         map.addLayer(layer)
       }
@@ -276,11 +276,11 @@ class TheMap extends React.Component {
     this.mapLayers = {}
   }
 
-  createLayer(url, { title, ...options } = {}) {
+  createLayer({ title, ...options } = {}) {
     const {
       props: { TileLayerClass = TileLayer },
     } = this
-    const layer = new TileLayerClass(url, options)
+    const layer = new TileLayerClass(options)
     layer.title = title
     layer.bindHandlers()
     return layer
