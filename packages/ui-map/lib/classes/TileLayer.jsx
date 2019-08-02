@@ -12,13 +12,6 @@ class TileLayer extends L.TileLayer {
   constructor(options = {}) {
     const { url, ...otherOptions } = options
     super(url, otherOptions)
-    this.handlers = {}
-  }
-
-  bindHandlers() {
-    for (const [event, handler] of Object.entries(this.handlers)) {
-      this.on(event, handler)
-    }
   }
 
   createTile(coords) {
@@ -42,12 +35,6 @@ class TileLayer extends L.TileLayer {
       tile.appendChild(loadingMsg)
     }
     return tile
-  }
-
-  unbindHandlers() {
-    for (const [event, handler] of Object.entries(this.handlers)) {
-      this.off(event, handler)
-    }
   }
 }
 

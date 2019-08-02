@@ -18,7 +18,7 @@
     "npid": "^0.4.0",
     "ps-list": "^6.3.0",
     "terminate": "^2.1.2",
-    "yesno": "^0.2.0"
+    "yesno": "^0.2.1"
   },
   "devDependencies": {},
   "engines": {

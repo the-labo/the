@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const theClient = require('@the-/client')
 
 async function tryExample() {

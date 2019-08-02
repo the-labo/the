@@ -17,7 +17,7 @@
     "@the-/jsdoc": "^15.4.11",
     "@the-/util-array": "^15.4.3",
     "aglob": "^3.0.1",
-    "argx": "^4.0.2",
+    "argx": "^4.0.4",
     "commander": "^2.19.0",
     "filedel": "^4.1.1",
     "findout": "^3.0.2",

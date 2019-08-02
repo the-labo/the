@@ -7,13 +7,13 @@
     "longname": "module:@the-/server",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/server",
     "order": 3,
     "typicalname": "server",
-    "version": "16.0.32"
+    "version": "16.0.33"
   },
   {
     "description": "HTTP server for the-framework",
@@ -110,7 +110,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 202,
+      "lineno": 203,
       "path": "lib"
     },
     "name": "info",
@@ -127,7 +127,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 219,
+      "lineno": 220,
       "path": "lib"
     },
     "name": "close",
@@ -164,7 +164,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 243,
+      "lineno": 244,
       "path": "lib"
     },
     "name": "destroyAllSessions",
@@ -191,7 +191,7 @@
     "memberof": "module:@the-/server.TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 256,
+      "lineno": 257,
       "path": "lib"
     },
     "name": "listen",
@@ -227,7 +227,7 @@
     "memberof": "module:@the-/server.stores.Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 31,
+      "lineno": 32,
       "path": "lib/stores"
     },
     "name": "cleanup",
@@ -253,7 +253,7 @@
     "memberof": "module:@the-/server.stores.Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 53,
+      "lineno": 54,
       "path": "lib/stores"
     },
     "name": "del",
@@ -289,7 +289,7 @@
     "memberof": "module:@the-/server.stores.Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 62,
+      "lineno": 63,
       "path": "lib/stores"
     },
     "name": "delAll",
@@ -315,7 +315,7 @@
     "memberof": "module:@the-/server.stores.Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 76,
+      "lineno": 77,
       "path": "lib/stores"
     },
     "name": "get",
@@ -351,7 +351,7 @@
     "memberof": "module:@the-/server.stores.Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 92,
+      "lineno": 93,
       "path": "lib/stores"
     },
     "name": "has",
@@ -387,7 +387,7 @@
     "memberof": "module:@the-/server.stores.Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 100,
+      "lineno": 101,
       "path": "lib/stores"
     },
     "name": "ids",
@@ -413,7 +413,7 @@
     "memberof": "module:@the-/server.stores.Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 111,
+      "lineno": 112,
       "path": "lib/stores"
     },
     "name": "set",
@@ -460,7 +460,7 @@
     "memberof": "module:@the-/server.stores.ConnectionStore",
     "meta": {
       "filename": "Store.js",
-      "lineno": 31,
+      "lineno": 32,
       "path": "lib/stores"
     },
     "name": "cleanup",
@@ -487,7 +487,7 @@
     "memberof": "module:@the-/server.stores.ConnectionStore",
     "meta": {
       "filename": "Store.js",
-      "lineno": 53,
+      "lineno": 54,
       "path": "lib/stores"
     },
     "name": "del",
@@ -525,7 +525,7 @@
     "memberof": "module:@the-/server.stores.ConnectionStore",
     "meta": {
       "filename": "Store.js",
-      "lineno": 62,
+      "lineno": 63,
       "path": "lib/stores"
     },
     "name": "delAll",
@@ -552,7 +552,7 @@
     "memberof": "module:@the-/server.stores.ConnectionStore",
     "meta": {
       "filename": "Store.js",
-      "lineno": 76,
+      "lineno": 77,
       "path": "lib/stores"
     },
     "name": "get",
@@ -590,7 +590,7 @@
     "memberof": "module:@the-/server.stores.ConnectionStore",
     "meta": {
       "filename": "Store.js",
-      "lineno": 92,
+      "lineno": 93,
       "path": "lib/stores"
     },
     "name": "has",
@@ -628,7 +628,7 @@
     "memberof": "module:@the-/server.stores.ConnectionStore",
     "meta": {
       "filename": "Store.js",
-      "lineno": 100,
+      "lineno": 101,
       "path": "lib/stores"
     },
     "name": "ids",
@@ -655,7 +655,7 @@
     "memberof": "module:@the-/server.stores.ConnectionStore",
     "meta": {
       "filename": "Store.js",
-      "lineno": 111,
+      "lineno": 112,
       "path": "lib/stores"
     },
     "name": "set",
@@ -716,7 +716,7 @@
     "memberof": "module:@the-/server.stores",
     "meta": {
       "filename": "ConnectionStore.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/stores"
     },
     "name": "ConnectionStore",
@@ -733,7 +733,7 @@
     "memberof": "module:@the-/server.stores",
     "meta": {
       "filename": "SessionStore.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/stores"
     },
     "name": "SessionStore",
@@ -747,7 +747,7 @@
     "memberof": "module:@the-/server.stores",
     "meta": {
       "filename": "Store.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/stores"
     },
     "name": "Store",
@@ -762,7 +762,7 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "buildInEndpoints.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "buildInEndpoints",
@@ -777,7 +777,7 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/adapters"
     },
     "name": "adapters",
@@ -792,7 +792,7 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/assert"
     },
     "name": "assert",
@@ -808,7 +808,7 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/connectors"
     },
     "name": "connectors",
@@ -822,7 +822,7 @@
     "memberof": "module:@the-/server.constants",
     "meta": {
       "filename": "DefaultValues.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/constants"
     },
     "name": "DefaultValues",
@@ -837,7 +837,7 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/constants"
     },
     "name": "constants",
@@ -853,7 +853,7 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "helpers",
@@ -868,7 +868,7 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/mixins"
     },
     "name": "mixins",
@@ -883,7 +883,7 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/stores"
     },
     "name": "stores",
@@ -898,7 +898,7 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "create",
@@ -933,7 +933,7 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
@@ -948,7 +948,7 @@
     "memberof": "module:@the-/server.adapters",
     "meta": {
       "filename": "redisAdapter.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/adapters"
     },
     "name": "redisAdapter",
@@ -972,7 +972,7 @@
     "memberof": "module:@the-/server.assert",
     "meta": {
       "filename": "assertMethods.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/assert"
     },
     "name": "assertMethods",
@@ -1018,7 +1018,7 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "asStrictSession.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "asStrictSession",
@@ -1043,7 +1043,7 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "callbacksProxy.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "callbacksProxy",
@@ -1102,7 +1102,7 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "InfoFlusher.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "InfoFlusher",
@@ -1145,7 +1145,7 @@
     "memberof": "module:@the-/server.helpers.InfoFlusher~infoFlusher",
     "meta": {
       "filename": "InfoFlusher.js",
-      "lineno": 27,
+      "lineno": 28,
       "path": "lib/helpers"
     },
     "name": "flushInfo",
@@ -1160,7 +1160,7 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "langDetector.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "langDetector",
@@ -1222,7 +1222,7 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "queryFromUrl.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "queryFromUrl",
@@ -1272,7 +1272,7 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "serversideRendering.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "serverRendering",
@@ -1318,7 +1318,7 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "serversideRendering.js",
-      "lineno": 20,
+      "lineno": 21,
       "path": "lib/helpers"
     },
     "name": "serverRendering",
@@ -1416,7 +1416,7 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "toLowerKeys.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "toLowerKeys",
@@ -1431,7 +1431,7 @@
     "memberof": "module:@the-/server.mixins",
     "meta": {
       "filename": "clientMix.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/mixins"
     },
     "name": "clientMix",
@@ -1466,7 +1466,7 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "streamDriverPool.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/streaming"
     },
     "name": "streamPool",
@@ -1495,7 +1495,7 @@
     "memberof": "module:@the-/server.mixins.clientMix",
     "meta": {
       "filename": "clientMix.js",
-      "lineno": 15,
+      "lineno": 16,
       "path": "lib/mixins"
     },
     "name": "ClientMixed",
@@ -1509,7 +1509,7 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "streamDriverPool.js",
-      "lineno": 7,
+      "lineno": 8,
       "path": "lib/streaming"
     },
     "name": "StreamDriverPool",
@@ -1523,7 +1523,7 @@
     "memberof": "module:@the-/server.helpers.InfoFlusher",
     "meta": {
       "filename": "InfoFlusher.js",
-      "lineno": 19,
+      "lineno": 20,
       "path": "lib/helpers"
     },
     "name": "infoFlusher",

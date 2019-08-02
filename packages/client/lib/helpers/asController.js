@@ -19,8 +19,7 @@ function asController(instance, spec, context, options = {}) {
     },
     ...Object.keys(spec.methods).map((name) => ({
       [name]: async function methodProxy(...args) {
-        const result = await instance[name](context, ...args)
-        return result
+        return instance[name](context, ...args)
       },
     })),
     {

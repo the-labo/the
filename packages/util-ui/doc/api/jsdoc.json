@@ -7,28 +7,28 @@
     "longname": "module:@the-/util-ui",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/util-ui",
     "order": 6,
     "typicalname": "utilUi",
-    "version": "15.4.8"
+    "version": "15.4.11"
   },
   {
-    "description": "Define class mixin",
-    "id": "module:@the-/util-ui.asHOC",
+    "deprecated": true,
+    "id": "asHOC",
     "kind": "function",
-    "longname": "module:@the-/util-ui.asHOC",
-    "memberof": "module:@the-/util-ui",
+    "longname": "asHOC",
     "meta": {
       "filename": "asHOC.js",
-      "lineno": 2,
+      "lineno": 4,
       "path": "lib"
     },
     "name": "asHOC",
     "order": 0,
-    "scope": "static"
+    "params": [],
+    "scope": "global"
   },
   {
     "description": "Mark  : style data",
@@ -38,7 +38,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "asStyleData.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "asStyleData",
@@ -83,7 +83,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "changedProps.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "changedProps",
@@ -127,7 +127,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "colorAlpha.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "colorAlpha",
@@ -174,7 +174,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "eventHandlersFor.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "eventHandlersFor",
@@ -230,7 +230,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "htmlAttributesFor.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "htmlAttributesFor",
@@ -286,7 +286,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "isKeyCode.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "isKeyCode",
@@ -331,7 +331,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "isServerSide.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "isServerSide",
@@ -355,7 +355,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "isVideoSrc.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "isVideoSrc",
@@ -391,7 +391,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "newId.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "newId",
@@ -439,7 +439,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "readFileAsDataURL.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "readFileAsDataURL",
@@ -474,7 +474,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "toggleBodyClass.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "toggleBodyClass",

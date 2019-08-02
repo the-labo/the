@@ -8,7 +8,6 @@
  * @returns {boolean} Video or not
  */
 const { get } = require('bwindow')
-const path = require('path')
 const videoExtensions = require('video-extensions')
 
 const videoExtNames = [...videoExtensions]
@@ -19,7 +18,9 @@ function isVideoSrc(src) {
     src || '',
     get('location.origin') || 'http://localhost',
   )
-  return videoExtNames.includes(path.extname(pathname).replace(/^\./, ''))
+  const basename = pathname.split('/').pop()
+  const extname = /\./.test(basename) && basename.split(/\./).pop()
+  return videoExtNames.includes(extname)
 }
 
 module.exports = isVideoSrc

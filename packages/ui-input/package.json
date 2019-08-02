@@ -18,7 +18,7 @@
     "@the-/ui-spin": "^15.4.9",
     "@the-/ui-style": "^15.4.8",
     "@the-/util-array": "^15.4.3",
-    "@the-/util-ui": "^15.4.8",
+    "@the-/util-ui": "^15.4.10",
     "@the-/window": "^15.5.2",
     "asobj": "^3.0.1",
     "chopcal": "^3.0.3",

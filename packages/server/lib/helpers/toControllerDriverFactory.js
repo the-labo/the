@@ -46,13 +46,13 @@ function toControllerDriverFactory(ControllerFactory, options = {}) {
     const ctrlContext = {
       callbacks,
       client,
-      session,
       intercept: (funcs = {}) => {
         for (const [name, func] of Object.entries(funcs)) {
           assert(name in interceptors, `Unknown interceptor name: ${name}`)
           interceptors[name] = func
         }
       },
+      session,
     }
     const injected = { ...inject() }
     {

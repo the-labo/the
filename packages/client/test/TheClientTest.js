@@ -23,25 +23,21 @@ describe('the-client', () => {
 
     const port = await aport()
 
-    class FruitShopCtrl extends TheServer.Ctrl {
+    const FruitShopCtrl = ({ callbacks, session }) => ({
       buy(name, amount) {
-        const {
-          callbacks,
-          session,
-          session: { total = 0 },
-        } = this
+        const { total = 0 } = session
 
         session.total = total + amount
         const result = { amount, name, total: session.total }
         asleep(10)
         callbacks.onBuy(amount, session.total)
         return result
-      }
+      },
 
       doWrong() {
         throw new Error('Something is wrong')
-      }
-    }
+      },
+    })
 
     const server = new TheServer({
       controllers: {
@@ -136,19 +132,19 @@ describe('the-client', () => {
   it('Using stream api', async () => {
     const port = await aport()
 
-    class CountdownStream extends TheServer.Stream {
+    const CountdownStream = ({ params }) => ({
       async *provide() {
-        let count = Number(this.params.count)
+        let count = Number(params.count)
         while (count > 0) {
-          if (this.closed) {
+          if (server.closed) {
             return
           }
           yield { count }
           count--
           await asleep(1)
         }
-      }
-    }
+      },
+    })
 
     const server = new TheServer({
       streams: {
@@ -183,13 +179,13 @@ describe('the-client', () => {
     const port = await aport()
     const consumed = []
 
-    class CountupStream extends TheServer.Stream {
+    const CountupStream = () => ({
       async consume(provided) {
         for await (const chunk of provided) {
           consumed.push(chunk)
         }
-      }
-    }
+      },
+    })
 
     const server = new TheServer({
       streams: {

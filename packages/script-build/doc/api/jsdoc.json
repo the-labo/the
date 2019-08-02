@@ -11,7 +11,7 @@
     },
     "name": "@the-/script-build",
     "order": 1,
-    "version": "15.4.37"
+    "version": "15.4.39"
   },
   {
     "description": "Build project",
@@ -21,7 +21,7 @@
     "memberof": "module:@the-/script-build",
     "meta": {
       "filename": "build.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "build",

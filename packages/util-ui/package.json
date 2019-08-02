@@ -1,7 +1,7 @@
 {
   "name": "@the-/util-ui",
   "description": "Utility for the-components",
-  "version": "15.4.9",
+  "version": "15.4.11",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,7 +14,7 @@
   "dependencies": {
     "@the-/const-ui": "^15.4.5",
     "acolor": "^3.0.0",
-    "argx": "^4.0.2",
+    "argx": "^4.0.4",
     "bwindow": "^2.0.3",
     "keycode": "^2.2.0",
     "uuid": "^3.2.1",

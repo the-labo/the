@@ -33,7 +33,7 @@
     "aport": "^2.0.0",
     "asleep": "^1.0.3",
     "webpack-cli": "^3.3.6",
-    "webrtc-adapter": "^7.2.8"
+    "webrtc-adapter": "^7.2.9"
   },
   "engines": {
     "node": ">=10",

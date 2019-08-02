@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@the-/util-array": "^15.4.3",
-    "argx": "^4.0.2",
+    "argx": "^4.0.4",
     "evaljson": "^6.0.4",
     "objnest": "^5.0.6",
     "prop-types": "^15.7.2",

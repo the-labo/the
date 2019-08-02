@@ -72,11 +72,11 @@ function toStreamDriverFactory(StreamFactory, options = {}) {
         },
         close: () => stream.close(),
       },
-      params,
-      session,
       intercept: () => {
         // TODO
       },
+      params,
+      session,
     })
     const unknownKeys = Object.keys(unknown)
     assert(unknownKeys.length === 0, `unknown keys: ${unknown}`)

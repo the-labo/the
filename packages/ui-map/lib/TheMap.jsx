@@ -116,7 +116,6 @@ class TheMap extends React.Component {
         ([key]) => !keysToRemain.includes(key),
       )
       for (const [key, layer] of layerEntriesToRemove) {
-        layer.unbindHandlers()
         map.removeLayer(layer)
         delete mapLayers[key]
       }
@@ -282,7 +281,6 @@ class TheMap extends React.Component {
     } = this
     const layer = new TileLayerClass(options)
     layer.title = title
-    layer.bindHandlers()
     return layer
   }
 

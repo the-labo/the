@@ -73,8 +73,9 @@ Usage
 ## API Guide
 
 
+- global
+  - [asHOC()](./doc/api/api.md#asHOC)
 - module:@the-/util-ui
-  - [.asHOC()](./doc/api/api.md#module_@the-/util-ui.asHOC)
   - [.asStyleData(scopeSelector,data)](./doc/api/api.md#module_@the-/util-ui.asStyleData)
   - [.changedProps(prevProps,props)](./doc/api/api.md#module_@the-/util-ui.changedProps)
   - [.colorAlpha(color,alpha)](./doc/api/api.md#module_@the-/util-ui.colorAlpha)
