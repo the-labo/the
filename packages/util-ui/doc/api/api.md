@@ -20,7 +20,7 @@
 ## @the-/util-ui
 Utility for the-components
 
-**Version**: 15.4.11  
+**Version**: 15.4.12  
 **License**: MIT  
 
 * [@the-/util-ui](#module_@the-/util-ui)

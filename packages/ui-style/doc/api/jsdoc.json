@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-style",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-style",
     "order": 0,
     "typicalname": "uiStyle",
-    "version": "15.4.8"
+    "version": "15.4.10"
   },
   {
     "description": "Style of the-components",

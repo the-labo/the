@@ -1,11 +1,11 @@
 'use strict'
 
 import c from 'classnames'
-import { EOL } from 'os'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { styleString } from '@the-/util-style'
 
+const EOL = '\n'
 /**
  * Style of the-components
  */
