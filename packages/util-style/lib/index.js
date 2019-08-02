@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/util-style
  * @typicalname utilStyle
- * @version 15.4.9
+ * @version 15.4.10
  */
 'use strict'
 

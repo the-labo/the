@@ -21,7 +21,7 @@
 ## @the-/util-style
 Utility for style
 
-**Version**: 15.4.9  
+**Version**: 15.4.10  
 **License**: MIT  
 <a name="styleString"></a>
 
