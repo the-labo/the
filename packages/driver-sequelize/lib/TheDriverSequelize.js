@@ -10,7 +10,7 @@ const { Driver } = require('clay-driver-base')
 const { pageToOffsetLimit } = require('clay-list-pager')
 const clayResourceName = require('clay-resource-name')
 const path = require('path')
-const { isProduction } = require('@the-/check')
+const { isProduction, unlessProduction } = require('@the-/check')
 const convertInbound = require('./converters/convertInbound')
 const convertOutbound = require('./converters/convertOutbound')
 const m = require('./mixins')
@@ -23,7 +23,7 @@ const TheDriverSequelizeBase = [m.sequelizeMix].reduce(
   Driver,
 )
 
-/** @lends @the-/driver-sequelize.TheDriverSequelize */
+/** @lends module:@the-/driver-sequelize.TheDriverSequelize */
 class TheDriverSequelize extends TheDriverSequelizeBase {
   constructor(config = {}) {
     super()
@@ -194,6 +194,16 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     const { transaction } = options
     await this.untilReady()
     const Model = this.modelFor(resourceName)
+    unlessProduction(() => {
+      const invalidId = id && typeof id !== 'string'
+      if (invalidId) {
+        throw new Error(
+          `[TheDriverSequelize][${resourceName}] Invalid id passed for .one(): ${JSON.stringify(
+            id,
+          )}`,
+        )
+      }
+    })
     const model = await Model.findByPk(id, { transaction })
     if (!model) {
       return null
