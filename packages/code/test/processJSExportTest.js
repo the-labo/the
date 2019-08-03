@@ -48,6 +48,27 @@ export function b () {}
     `,
     )
   })
+
+  it('Split ExportDefaultDeclaration', async () => {
+    equal(
+      await processJSExport(
+        `
+/** this is hoge */
+export default function Hoge(){
+
+}
+`,
+      ),
+      `
+/** this is hoge */
+function Hoge(){
+
+}
+
+export default Hoge
+`,
+    )
+  })
 })
 
 /* global describe, before, after, it */
