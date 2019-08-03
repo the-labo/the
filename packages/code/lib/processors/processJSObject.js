@@ -15,6 +15,7 @@ const {
 const {
   cleanupRedundantAliasOnObjectPatternNode,
   cleanupRedundantQuoteOnObjectPatternNode,
+  cleanupRedundantObjectPatternOnObjectExpression,
   sortPropertiesOnObjectNode,
 } = require('../ast/nodes')
 const applyConverter = require('../helpers/applyConverter')
@@ -40,6 +41,10 @@ function processJSObject(content, options = {}) {
             replace,
           }) ||
           cleanupRedundantQuoteOnObjectPatternNode(ObjectNode, {
+            replace,
+          }) ||
+          cleanupRedundantObjectPatternOnObjectExpression(ObjectNode, {
+            get,
             replace,
           })
         if (converted) {

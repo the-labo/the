@@ -8,11 +8,14 @@
  */
 'use strict'
 
+const calcNumericOperationOnBinaryExpressionNode_ = require('./calcNumericOperationOnBinaryExpressionNode')
 const cleanupEmptyArrayPatternParamsOnFunctionNode_ = require('./cleanupEmptyArrayPatternParamsOnFunctionNode')
 const cleanupEmptyObjectPatternParamsOnFunctionNode_ = require('./cleanupEmptyObjectPatternParamsOnFunctionNode')
 const cleanupExtOnImportDeclarationNode_ = require('./cleanupExtOnImportDeclarationNode')
 const cleanupExtOnRequireDeclarationArgumentNode_ = require('./cleanupExtOnRequireDeclarationArgumentNode')
 const cleanupRedundantAliasOnObjectPatternNode_ = require('./cleanupRedundantAliasOnObjectPatternNode')
+const cleanupRedundantArrayPatternOnArrayExpression_ = require('./cleanupRedundantArrayPatternOnArrayExpression')
+const cleanupRedundantObjectPatternOnObjectExpression_ = require('./cleanupRedundantObjectPatternOnObjectExpression')
 const cleanupRedundantQuoteOnObjectPatternNode_ = require('./cleanupRedundantQuoteOnObjectPatternNode')
 const cleanupReturnAwaitOnFunctionNode_ = require('./cleanupReturnAwaitOnFunctionNode')
 const cleanupUnusedArgumentsOnFunctionNode_ = require('./cleanupUnusedArgumentsOnFunctionNode')
@@ -48,11 +51,14 @@ const sortSpecifiersOnImportDeclarationNode_ = require('./sortSpecifiersOnImport
 const spaceOnCommentNode_ = require('./spaceOnCommentNode')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
+exports.calcNumericOperationOnBinaryExpressionNode = calcNumericOperationOnBinaryExpressionNode_
 exports.cleanupEmptyArrayPatternParamsOnFunctionNode = cleanupEmptyArrayPatternParamsOnFunctionNode_
 exports.cleanupEmptyObjectPatternParamsOnFunctionNode = cleanupEmptyObjectPatternParamsOnFunctionNode_
 exports.cleanupExtOnImportDeclarationNode = cleanupExtOnImportDeclarationNode_
 exports.cleanupExtOnRequireDeclarationArgumentNode = cleanupExtOnRequireDeclarationArgumentNode_
 exports.cleanupRedundantAliasOnObjectPatternNode = cleanupRedundantAliasOnObjectPatternNode_
+exports.cleanupRedundantArrayPatternOnArrayExpression = cleanupRedundantArrayPatternOnArrayExpression_
+exports.cleanupRedundantObjectPatternOnObjectExpression = cleanupRedundantObjectPatternOnObjectExpression_
 exports.cleanupRedundantQuoteOnObjectPatternNode = cleanupRedundantQuoteOnObjectPatternNode_
 exports.cleanupReturnAwaitOnFunctionNode = cleanupReturnAwaitOnFunctionNode_
 exports.cleanupUnusedArgumentsOnFunctionNode = cleanupUnusedArgumentsOnFunctionNode_
@@ -88,11 +94,14 @@ exports.sortSpecifiersOnImportDeclarationNode = sortSpecifiersOnImportDeclaratio
 exports.spaceOnCommentNode = spaceOnCommentNode_
 
 module.exports = {
+  calcNumericOperationOnBinaryExpressionNode: calcNumericOperationOnBinaryExpressionNode_,
   cleanupEmptyArrayPatternParamsOnFunctionNode: cleanupEmptyArrayPatternParamsOnFunctionNode_,
   cleanupEmptyObjectPatternParamsOnFunctionNode: cleanupEmptyObjectPatternParamsOnFunctionNode_,
   cleanupExtOnImportDeclarationNode: cleanupExtOnImportDeclarationNode_,
   cleanupExtOnRequireDeclarationArgumentNode: cleanupExtOnRequireDeclarationArgumentNode_,
   cleanupRedundantAliasOnObjectPatternNode: cleanupRedundantAliasOnObjectPatternNode_,
+  cleanupRedundantArrayPatternOnArrayExpression: cleanupRedundantArrayPatternOnArrayExpression_,
+  cleanupRedundantObjectPatternOnObjectExpression: cleanupRedundantObjectPatternOnObjectExpression_,
   cleanupRedundantQuoteOnObjectPatternNode: cleanupRedundantQuoteOnObjectPatternNode_,
   cleanupReturnAwaitOnFunctionNode: cleanupReturnAwaitOnFunctionNode_,
   cleanupUnusedArgumentsOnFunctionNode: cleanupUnusedArgumentsOnFunctionNode_,

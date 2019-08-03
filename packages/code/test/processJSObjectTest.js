@@ -398,6 +398,27 @@ const x = {
 }`,
     )
   })
+
+  it('Remove redundant spread', async () => {
+    equal(
+      await processJSObject(`
+const x = {
+ a: 1,
+ ...{
+  c: 2,
+  d: 3,
+ },
+ b: 5,
+}`),
+      `
+const x = {
+ a: 1,
+ b: 5,
+  c: 2,
+ d: 3,
+}`,
+    )
+  })
 })
 
 /* global describe, before, after, it */
