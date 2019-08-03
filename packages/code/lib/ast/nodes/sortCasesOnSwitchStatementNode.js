@@ -18,6 +18,9 @@ function sortCasesOnSwitchStatementNode(SwitchStatement, { swap }) {
   const SubCasesHash = {}
   for (const Case of CasesWithoutBlock) {
     const ParentCase = CasesWithBlock.find((C) => Case.end < C.start)
+    if (!ParentCase) {
+      continue
+    }
     SubCasesHash[ParentCase.start] = [
       ...(SubCasesHash[ParentCase.start] || []),
       Case,

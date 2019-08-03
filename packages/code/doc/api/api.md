@@ -44,6 +44,7 @@ Code formatter of the-frameworks
         * [.processJSObject(content)](#module_@the-/code.processors.processJSObject) ⇒ <code>string</code>
         * [.processJSON()](#module_@the-/code.processors.processJSON)
         * [.processJSPrettier(content)](#module_@the-/code.processors.processJSPrettier) ⇒ <code>Promise.&lt;string&gt;</code>
+        * [.processJSRedundant(content)](#module_@the-/code.processors.processJSRedundant) ⇒ <code>string</code>
         * [.processJSRequire(content)](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
         * [.processJSRequire(content)](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
         * [.processJSString(content)](#module_@the-/code.processors.processJSString) ⇒ <code>string</code>
@@ -221,6 +222,7 @@ Processor functions
     * [.processJSObject(content)](#module_@the-/code.processors.processJSObject) ⇒ <code>string</code>
     * [.processJSON()](#module_@the-/code.processors.processJSON)
     * [.processJSPrettier(content)](#module_@the-/code.processors.processJSPrettier) ⇒ <code>Promise.&lt;string&gt;</code>
+    * [.processJSRedundant(content)](#module_@the-/code.processors.processJSRedundant) ⇒ <code>string</code>
     * [.processJSRequire(content)](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
     * [.processJSRequire(content)](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
     * [.processJSString(content)](#module_@the-/code.processors.processJSString) ⇒ <code>string</code>
@@ -387,6 +389,18 @@ Process object expressions
 #### processors.processJSPrettier(content) ⇒ <code>Promise.&lt;string&gt;</code>
 **Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
 **Returns**: <code>Promise.&lt;string&gt;</code> - processed  
+
+| Param | Type |
+| --- | --- |
+| content | <code>string</code> | 
+
+<a name="module_@the-/code.processors.processJSRedundant"></a>
+
+#### processors.processJSRedundant(content) ⇒ <code>string</code>
+Removed unused vars
+
+**Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
+**Returns**: <code>string</code> - processed  
 
 | Param | Type |
 | --- | --- |

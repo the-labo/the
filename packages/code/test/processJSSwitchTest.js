@@ -5,7 +5,7 @@
  * Runs with mocha.
  */
 const {
-  strict: { equal },
+  strict: { equal, ok },
 } = require('assert')
 const processJSSwitch = require('../lib/processors/processJSSwitch')
 
@@ -85,6 +85,23 @@ switch (z) {
     break
 }
       `,
+    )
+  })
+
+  it('Bug fix 2019/08/03', async () => {
+    ok(
+      await processJSSwitch(`
+const convertExpressionContainer = (Container) => {
+      const { expression, range } = Container
+      switch (expression && expression.type) {
+        case NodeTypes.JSXElement:
+          return replace(range, get(expression.range))
+        case NodeTypes.StringLiteral:
+          return replace(range, expression.value)
+        default:
+      }
+    }
+`),
     )
   })
 })
