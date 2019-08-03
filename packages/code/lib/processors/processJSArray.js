@@ -14,12 +14,10 @@ const {
 } = require('@the-/ast')
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
-const cleanupRedundantArrayPatternOnArrayExpression= require('../ast/nodes/cleanupRedundantArrayPatternOnArrayExpression')
+const cleanupRedundantArrayPatternOnArrayExpression = require('../ast/nodes/cleanupRedundantArrayPatternOnArrayExpression')
 
 /** @lends module:@the-/code.processors.processJSArray */
 function processJSArray(content, options = {}) {
-
-
   return applyConverter(
     content,
     (content) => {

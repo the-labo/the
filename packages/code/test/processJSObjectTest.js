@@ -419,6 +419,30 @@ const x = {
 }`,
     )
   })
+
+  it('Remove redundant spread with comments', async () => {
+    equal(
+      await processJSObject(`
+const x = {
+  // ---
+  // a
+  // ----
+  ...{
+    a: 1,
+  },
+  ...{
+    b: 2,
+  }
+}
+`),
+      `
+const x = {
+  a: 1,
+  b: 2
+}
+`,
+    )
+  })
 })
 
 /* global describe, before, after, it */

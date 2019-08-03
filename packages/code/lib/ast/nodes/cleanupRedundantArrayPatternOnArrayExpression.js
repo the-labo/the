@@ -14,30 +14,24 @@ function cleanupRedundantArrayPatternOnArrayExpression(
   ArrayExpression,
   { get, replace },
 ) {
-  const SpreadArrays = finder
+  const SpreadElement = finder
     .findByTypes(ArrayExpression, [NodeTypes.SpreadElement])
-    .filter((S) => S.argument.type === NodeTypes.ArrayExpression)
-  for (const SpreadElement of SpreadArrays) {
-    const {
-      argument: { elements },
-      leadingComments,
-    } = SpreadElement
-    if (elements.length === 0) {
-      return replace(
-        [
-          leadingComments ? leadingComments[0].start : SpreadElement.start,
-          SpreadElement.end,
-        ],
-        '',
-      )
-    }
-    if (!leadingComments) {
-      const content = get([
-        elements[0].start,
-        elements[elements.length - 1].end,
-      ])
-      return replace(SpreadElement.range, content)
-    }
+    .find((S) => S.argument.type === NodeTypes.ArrayExpression)
+  if (!SpreadElement) {
+    return
   }
+  const {
+    argument: { elements },
+    leadingComments,
+  } = SpreadElement
+  const range = [
+    leadingComments ? leadingComments[0].start : SpreadElement.start,
+    SpreadElement.end,
+  ]
+  if (elements.length === 0) {
+    return replace(range, '')
+  }
+  const content = get([elements[0].start, elements[elements.length - 1].end])
+  return replace(range, content)
 }
 module.exports = cleanupRedundantArrayPatternOnArrayExpression

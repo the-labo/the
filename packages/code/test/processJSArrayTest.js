@@ -29,7 +29,7 @@ describe('process-js-array', () => {
 
     equal(
       await processJSArray('const c = [1, /* 2 to 5 */...[2,3,4,5]]'),
-      'const c = [1, /* 2 to 5 */...[2,3,4,5]]',
+      'const c = [1, 2,3,4,5]',
     )
   })
 })
