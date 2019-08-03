@@ -44,6 +44,10 @@ Dom utility for the-framework
 ## API Guide
 
 
+- module:@the-/util-dom
+  - [.byId(id)](./doc/api/api.md#module_@the-/util-dom.byId)
+- module:@the-/util-dom.byId
+  - [.withRetry(id,options)](./doc/api/api.md#module_@the-/util-dom.byId.withRetry)
 
 See [API Guide](./doc/api/api.md) for more detail
 

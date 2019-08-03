@@ -13,6 +13,7 @@ const {
 } = require('@the-/ast')
 const mergeStringConcatenateOnBinaryExpressionNode = require('../ast/nodes/mergeStringConcatenateOnBinaryExpressionNode')
 const normalizeBinaryExpressionNode = require('../ast/nodes/normalizeBinaryExpressionNode')
+const calcNumericOperationOnBinaryExpressionNode = require('../ast/nodes/calcNumericOperationOnBinaryExpressionNode')
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 
@@ -53,6 +54,14 @@ function processJSBinaryExpression(content, options = {}) {
         })
         if (normalized) {
           return normalized
+        }
+
+        const calculated = calcNumericOperationOnBinaryExpressionNode(
+          BinaryExpression,
+          { get, replace },
+        )
+        if (calculated) {
+          return calculated
         }
       }
       return content

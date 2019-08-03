@@ -125,10 +125,6 @@ class TheRTCClient extends TheRTCClientBase {
     const { desc, from: remote, pid, purpose } = offer
     const peer = await this.createAnswerPeer({
       iceServers,
-      pid,
-      purpose,
-      remoteDescription: desc,
-      stream: localStream,
       onDataChannel: (channel) => {
         this.receiveDataChannel(channel, { from: remote })
       },
@@ -136,6 +132,10 @@ class TheRTCClient extends TheRTCClientBase {
         const client = this.getRoomClientFor(remote)
         this.onRemote && this.onRemote({ ...client, peer, stream })
       },
+      pid,
+      purpose,
+      remoteDescription: desc,
+      stream: localStream,
     })
     this.emitSocketEvent(IOEvents.PEER_ANSWER, {
       desc: peer.localDescription,
@@ -210,9 +210,6 @@ class TheRTCClient extends TheRTCClientBase {
     const pid = this.pidFor(local, remote, purpose)
     const peer = await this.createOfferPeer({
       iceServers,
-      pid,
-      purpose,
-      stream: this.media.stream,
       onDataChannel: (channel) => {
         this.receiveDataChannel(channel, { from: remote })
       },
@@ -232,6 +229,9 @@ class TheRTCClient extends TheRTCClientBase {
             stream,
           })
       },
+      pid,
+      purpose,
+      stream: this.media.stream,
     })
     const answer = await this.asPromise(
       (resolve) => {

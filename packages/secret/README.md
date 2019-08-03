@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const theSecret = require('@the-/secret')
 
 async function tryExample() {

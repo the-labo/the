@@ -49,7 +49,7 @@ export function b () {}
     )
   })
 
-  it('Split ExportDefaultDeclaration', async () => {
+  it('Split ExportDefaultDeclaration function', async () => {
     equal(
       await processJSExport(
         `
@@ -66,6 +66,23 @@ function Hoge(){
 }
 
 export default Hoge
+`,
+    )
+  })
+
+  it('Split ExportDefaultDeclaration const', async () => {
+    equal(
+      await processJSExport(
+        `
+// This is a
+export default class X {}
+`,
+      ),
+      `
+// This is a
+class X {}
+
+export default X
 `,
     )
   })

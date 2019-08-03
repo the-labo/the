@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const doc = require('@the-/script-doc')
 
 async function tryExample() {

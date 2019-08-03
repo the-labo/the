@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const { TheS3 } = require('@the-/s3')
 
 async function tryExample() {

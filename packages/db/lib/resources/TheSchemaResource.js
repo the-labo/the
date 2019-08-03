@@ -13,21 +13,21 @@ const {
 const TheSchemaResource = ({ define }) => {
   const TheSchema = define({
     createdAt: {
+      default: () => new Date(),
       description: 'Date schema created at',
       required: true,
       type: DATE,
-      default: () => new Date(),
     },
     migratedAt: {
       description: 'Date migrated',
       type: DATE,
     },
     version: {
+      default: () => 'none',
       description: 'Schema version string',
       required: true,
       type: STRING,
       unique: true,
-      default: () => 'none',
     },
   })
   Object.assign(TheSchema, {

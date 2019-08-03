@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const { TheRefactor } = require('@the-/refactor')
 
 async function tryExample() {

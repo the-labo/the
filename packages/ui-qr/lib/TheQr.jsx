@@ -123,10 +123,10 @@ TheQr.defaultProps = {
   alt: 'NO TEXT FOUND',
   asLink: false,
   displaySize: null,
-  size: 256,
-  text: '',
   onError: (err) => console.error(err),
   onGenerate: () => {},
+  size: 256,
+  text: '',
 }
 
 TheQr.displayName = 'TheQr'

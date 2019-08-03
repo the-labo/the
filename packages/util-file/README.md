@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const { readAsJsonSync } = require('@the-/util-file')
 
 async function tryExample() {
@@ -84,6 +85,7 @@ tryExample().catch((err) => console.error(err))
 
 - module:@the-/util-file
   - [.copyAsJsonSync(src,dest)](./doc/api/api.md#module_@the-/util-file.copyAsJsonSync)
+  - [.fileSizeOf()](./doc/api/api.md#module_@the-/util-file.fileSizeOf)
   - [.fileTypeOf(filename)](./doc/api/api.md#module_@the-/util-file.fileTypeOf)
   - [.isJSON5File(filename)](./doc/api/api.md#module_@the-/util-file.isJSON5File)
   - [.readAsJson(filename)](./doc/api/api.md#module_@the-/util-file.readAsJson)

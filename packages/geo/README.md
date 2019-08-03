@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const { TheGeo } = require('@the-/geo')
 
 async function tryExample() {

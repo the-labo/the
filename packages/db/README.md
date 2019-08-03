@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const { TheDB } = require('@the-/db')
 const {
   DataTypes: { STRING },

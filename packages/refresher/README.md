@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const { TheRefresher } = require('@the-/refresher')
 
 async function tryExample() {

@@ -7,13 +7,13 @@
     "longname": "module:@the-/code",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/code",
     "order": 1,
     "typicalname": "code",
-    "version": "15.5.84"
+    "version": "15.7.1"
   },
   {
     "id": "module:@the-/code.TheCode()",
@@ -45,7 +45,7 @@
     "memberof": "module:@the-/code.TheCode",
     "meta": {
       "filename": "TheCode.js",
-      "lineno": 120,
+      "lineno": 122,
       "path": "lib"
     },
     "name": "format",
@@ -92,7 +92,7 @@
     "memberof": "module:@the-/code.TheCode",
     "meta": {
       "filename": "TheCode.js",
-      "lineno": 135,
+      "lineno": 137,
       "path": "lib"
     },
     "name": "formatFile",
@@ -166,7 +166,7 @@
     "memberof": "module:@the-/code.ast",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/ast/nodes"
     },
     "name": "nodes",
@@ -182,7 +182,7 @@
     "memberof": "module:@the-/code",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/constants"
     },
     "name": "constants",
@@ -242,7 +242,7 @@
     "memberof": "module:@the-/code",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "helpers",
@@ -258,7 +258,7 @@
     "memberof": "module:@the-/code",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/parsers"
     },
     "name": "parsers",
@@ -274,7 +274,7 @@
     "memberof": "module:@the-/code",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/processors"
     },
     "name": "processors",
@@ -1043,6 +1043,41 @@
     "scope": "static"
   },
   {
+    "description": "Process array",
+    "id": "module:@the-/code.processors.processJSArray",
+    "kind": "function",
+    "longname": "module:@the-/code.processors.processJSArray",
+    "memberof": "module:@the-/code.processors",
+    "meta": {
+      "filename": "processJSArray.js",
+      "lineno": 3,
+      "path": "lib/processors"
+    },
+    "name": "processJSArray",
+    "order": 62,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "content"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "processed"
+      }
+    ],
+    "scope": "static"
+  },
+  {
     "id": "module:@the-/code.processors.processJSBinaryExpression",
     "kind": "function",
     "longname": "module:@the-/code.processors.processJSBinaryExpression",
@@ -1053,7 +1088,7 @@
       "path": "lib/processors"
     },
     "name": "processJSBinaryExpression",
-    "order": 62,
+    "order": 63,
     "params": [
       {
         "type": {
@@ -1087,7 +1122,7 @@
       "path": "lib/processors"
     },
     "name": "processJSBlock",
-    "order": 63,
+    "order": 64,
     "params": [
       {
         "type": {
@@ -1121,7 +1156,7 @@
       "path": "lib/processors"
     },
     "name": "processJSClass",
-    "order": 64,
+    "order": 65,
     "params": [
       {
         "type": {
@@ -1155,7 +1190,7 @@
       "path": "lib/processors"
     },
     "name": "processComment",
-    "order": 65,
+    "order": 66,
     "params": [
       {
         "type": {
@@ -1190,7 +1225,7 @@
       "path": "lib/processors"
     },
     "name": "processJSDeclaration",
-    "order": 66,
+    "order": 67,
     "scope": "static"
   },
   {
@@ -1204,7 +1239,7 @@
       "path": "lib/processors"
     },
     "name": "processJSDoc",
-    "order": 67,
+    "order": 68,
     "params": [
       {
         "type": {
@@ -1239,7 +1274,7 @@
       "path": "lib/processors"
     },
     "name": "processJSExport",
-    "order": 68,
+    "order": 69,
     "params": [
       {
         "type": {
@@ -1274,7 +1309,7 @@
       "path": "lib/processors"
     },
     "name": "processJSFunction",
-    "order": 69,
+    "order": 70,
     "params": [
       {
         "type": {
@@ -1309,7 +1344,7 @@
       "path": "lib/processors"
     },
     "name": "processJSIf",
-    "order": 70,
+    "order": 71,
     "params": [
       {
         "type": {
@@ -1344,7 +1379,7 @@
       "path": "lib/processors"
     },
     "name": "processJSImport",
-    "order": 71,
+    "order": 72,
     "params": [
       {
         "type": {
@@ -1368,7 +1403,7 @@
     "scope": "static"
   },
   {
-    "description": "Process object expressions",
+    "description": "Process objects",
     "id": "module:@the-/code.processors.processJSObject",
     "kind": "function",
     "longname": "module:@the-/code.processors.processJSObject",
@@ -1379,7 +1414,7 @@
       "path": "lib/processors"
     },
     "name": "processJSObject",
-    "order": 72,
+    "order": 73,
     "params": [
       {
         "type": {
@@ -1413,7 +1448,7 @@
       "path": "lib/processors"
     },
     "name": "processJSON",
-    "order": 73,
+    "order": 74,
     "scope": "static"
   },
   {
@@ -1427,7 +1462,7 @@
       "path": "lib/processors"
     },
     "name": "processJSPrettier",
-    "order": 74,
+    "order": 75,
     "params": [
       {
         "type": {
@@ -1462,7 +1497,7 @@
       "path": "lib/processors"
     },
     "name": "processJSRedundant",
-    "order": 75,
+    "order": 76,
     "params": [
       {
         "type": {
@@ -1497,7 +1532,7 @@
       "path": "lib/processors"
     },
     "name": "processJSRequire",
-    "order": 76,
+    "order": 77,
     "params": [
       {
         "type": {
@@ -1532,7 +1567,7 @@
       "path": "lib/processors"
     },
     "name": "processJSRequire",
-    "order": 77,
+    "order": 78,
     "params": [
       {
         "type": {
@@ -1566,7 +1601,7 @@
       "path": "lib/processors"
     },
     "name": "processJSString",
-    "order": 78,
+    "order": 79,
     "params": [
       {
         "type": {
@@ -1601,7 +1636,7 @@
       "path": "lib/processors"
     },
     "name": "processJSSwitch",
-    "order": 79,
+    "order": 80,
     "params": [
       {
         "type": {
@@ -1636,7 +1671,7 @@
       "path": "lib/processors"
     },
     "name": "processJSUnused",
-    "order": 80,
+    "order": 81,
     "params": [
       {
         "type": {
@@ -1671,7 +1706,7 @@
       "path": "lib/processors"
     },
     "name": "processJSXAttribute",
-    "order": 81,
+    "order": 82,
     "params": [
       {
         "type": {
@@ -1706,7 +1741,7 @@
       "path": "lib/processors"
     },
     "name": "processJSXExpression",
-    "order": 82,
+    "order": 83,
     "params": [
       {
         "type": {
@@ -1740,7 +1775,7 @@
       "path": "lib/processors"
     },
     "name": "processPackageJSON",
-    "order": 83,
+    "order": 84,
     "scope": "static"
   },
   {
@@ -1754,7 +1789,7 @@
       "path": "lib/processors"
     },
     "name": "processPackageLockJSON",
-    "order": 84,
+    "order": 85,
     "scope": "static"
   },
   {
@@ -1768,7 +1803,7 @@
       "path": "lib/processors"
     },
     "name": "processYAML",
-    "order": 85,
+    "order": 86,
     "params": [
       {
         "type": {

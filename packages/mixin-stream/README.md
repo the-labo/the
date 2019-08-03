@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const { withDebug } = require('@the-/mixin-stream')
 const { TheStream } = require('@the-/stream')
 
@@ -70,6 +71,7 @@ async function tryExample() {
       /* ... */
     }
   }
+
   const stream = new MyStream()
   await stream.doSomething()
 }

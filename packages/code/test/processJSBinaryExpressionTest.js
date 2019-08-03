@@ -113,6 +113,13 @@ describe('process-js-logical-expression', () => {
     equal(await processJSBinaryExpression('x = b() != a'), 'x = b() != a')
     equal(await processJSBinaryExpression('x = a != b()'), 'x = a != b()')
   })
+
+  it('Numeric', async () => {
+    equal(await processJSBinaryExpression(`const x = 1 + 2`), 'const x = 3')
+    equal(await processJSBinaryExpression(`const x = 1 * 2`), 'const x = 2')
+    equal(await processJSBinaryExpression(`const x = 1 / 2`), 'const x = 0.5')
+    equal(await processJSBinaryExpression(`const x = 1 - 2`), 'const x = -1')
+  })
 })
 
 /* global describe, before, after, it */

@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const { readFile } = require('@the-/util-client')
 
 async function tryExample() {

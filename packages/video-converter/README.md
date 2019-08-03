@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const { TheVideoConverter } = require('@the-/video-converter')
 
 async function tryExample() {

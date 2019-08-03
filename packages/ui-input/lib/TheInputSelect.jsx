@@ -413,9 +413,9 @@ TheInputSelect.defaultProps = {
   onEnter: null,
   options: {},
   parser: String,
+  sorter: (v1, v2) => String(v1).localeCompare(v2),
   spinning: false,
   value: '',
-  sorter: (v1, v2) => String(v1).localeCompare(v2),
 }
 
 TheInputSelect.displayName = 'TheInputSelect'

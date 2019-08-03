@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const coz = require('coz')
 const { Readme } = require('@the-/templates')
 

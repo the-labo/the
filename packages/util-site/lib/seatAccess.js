@@ -14,7 +14,7 @@ function seatAccess(seat) {
    * @inner
    * @name seatAccessBound
    */
-  const seatAccessBound = {
+  return {
     /**
      * Container name for
      * @param {string} name - Name of container
@@ -107,7 +107,6 @@ function seatAccess(seat) {
       ].join('-')
     },
   }
-  return seatAccessBound
 }
 
 module.exports = seatAccess

@@ -225,7 +225,7 @@ describe('the-db', function() {
 
     const ArticleResource = ({ define }) => {
       const Article = define({
-        starCount: { type: 'NUMBER', default: () => 0 },
+        starCount: { default: () => 0, type: 'NUMBER' },
       })
       Object.assign(Article, {
         async refresh(entity) {
@@ -242,12 +242,10 @@ describe('the-db', function() {
       return Article
     }
 
-    const StarResource = ({ define }) => {
-      const Star = define({
+    const StarResource = ({ define }) =>
+      define({
         target: { type: 'ENTITY' },
       })
-      return Star
-    }
 
     const Article = db.load(ArticleResource, 'Article')
     const Star = db.load(StarResource, 'Star')

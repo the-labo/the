@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const { default: thePS } = require('@the-/ps')
 
 async function tryExample() {

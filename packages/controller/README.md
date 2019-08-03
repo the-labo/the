@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const { TheCtrl } = require('@the-/controller')
 const theServer = require('@the-/server')
 

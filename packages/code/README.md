@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const { TheCode } = require('@the-/code')
 
 async function tryExample() {
@@ -148,6 +149,7 @@ tryExample().catch((err) => console.error(err))
   - [.processCSSProp(content)](./doc/api/api.md#module_@the-/code.processors.processCSSProp)
   - [.processCSSRule(content)](./doc/api/api.md#module_@the-/code.processors.processCSSRule)
   - [.processFileEnd(content)](./doc/api/api.md#module_@the-/code.processors.processFileEnd)
+  - [.processJSArray(content)](./doc/api/api.md#module_@the-/code.processors.processJSArray)
   - [.processJSBinaryExpression(content)](./doc/api/api.md#module_@the-/code.processors.processJSBinaryExpression)
   - [.processJSBlock(content)](./doc/api/api.md#module_@the-/code.processors.processJSBlock)
   - [.processJSClass(content)](./doc/api/api.md#module_@the-/code.processors.processJSClass)
@@ -160,6 +162,7 @@ tryExample().catch((err) => console.error(err))
   - [.processJSObject(content)](./doc/api/api.md#module_@the-/code.processors.processJSObject)
   - [.processJSON()](./doc/api/api.md#module_@the-/code.processors.processJSON)
   - [.processJSPrettier(content)](./doc/api/api.md#module_@the-/code.processors.processJSPrettier)
+  - [.processJSRedundant(content)](./doc/api/api.md#module_@the-/code.processors.processJSRedundant)
   - [.processJSRequire(content)](./doc/api/api.md#module_@the-/code.processors.processJSRequire)
   - [.processJSRequire(content)](./doc/api/api.md#module_@the-/code.processors.processJSRequire)
   - [.processJSString(content)](./doc/api/api.md#module_@the-/code.processors.processJSString)

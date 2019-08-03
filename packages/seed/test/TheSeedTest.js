@@ -25,9 +25,9 @@ describe('the-seed', () => {
 
     const users = seed.explode(
       {
+        hoge: ({ index }) => index,
         num: '#{index+1}',
         username: '#{name.firstName()}',
-        hoge: ({ index }) => index,
       },
       100,
     )

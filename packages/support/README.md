@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const { TheSupport } = require('@the-/support')
 
 async function tryExample() {

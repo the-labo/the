@@ -3,8 +3,11 @@
 # RC file for ESLint (See https://eslint.org/docs/user-guide/configuring )
 # `npm install -D @the-/eslint-config-standard @the-/eslint-config-standard-jsx @the-/eslint-config-prettier @the-/eslint-config-code`
 
+
 extends:
 - "@the-/eslint-config-standard"
 - "@the-/eslint-config-standard-jsx"
 - "@the-/eslint-config-prettier"
 - "@the-/eslint-config-code"
+
+

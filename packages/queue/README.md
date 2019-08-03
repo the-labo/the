@@ -60,7 +60,9 @@ Usage
 
 ```javascript
 'use strict'
+
 const { TheQueue } = require('@the-/queue')
+
 const asleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
 async function tryExample() {

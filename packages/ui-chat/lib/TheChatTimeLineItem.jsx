@@ -197,13 +197,13 @@ TheChatTimeLineItem.defaultProps = {
   align: 'left',
   at: null,
   image: null,
+  onWho: () => null,
   status: null,
   text: null,
   video: null,
   who: {},
   whoBaseColor: TheChatTimeLineItem.DEFAULT_WHO_BASE_COLOR,
   whoImageSize: TheChatTimeLineItem.DEFAULT_WHO_IMAGE_SIZE,
-  onWho: () => null,
 }
 
 TheChatTimeLineItem.displayName = 'TheChatTimeLineItem'

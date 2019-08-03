@@ -67,9 +67,9 @@ const Vars = Object.freeze(
 /** @lends Local */
 const Local = {
   __proto__: {
+    print: () => console.log(inspect(Local)),
     secret,
     setting,
-    print: () => console.log(inspect(Local)),
   },
   ...secret.get(),
   ...setting.get(),

@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const theSeat = require('@the-/seat')
 
 async function tryExample() {

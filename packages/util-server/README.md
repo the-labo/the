@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const fs = require('fs')
 const { pipeToFile } = require('@the-/util-server')
 

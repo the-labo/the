@@ -11,7 +11,7 @@ const Sequelize = require('sequelize')
 function sequelizeMix(Class) {
   class SequelizeMixed extends Class {
     createSequelize(database, username, password, options = {}) {
-      const db = new Sequelize(
+      return new Sequelize(
         database,
         username,
         password,
@@ -22,7 +22,6 @@ function sequelizeMix(Class) {
           options,
         ),
       )
-      return db
     }
   }
 

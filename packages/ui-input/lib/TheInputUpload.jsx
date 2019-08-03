@@ -260,13 +260,13 @@ TheInputUpload.propTypes = {
 
 TheInputUpload.defaultProps = {
   accept: null,
+  convertFile: (file) => readFileAsDataURL(file),
   error: null,
   height: 180,
   multiple: false,
   readOnly: false,
   text: 'Upload File',
   width: 180,
-  convertFile: (file) => readFileAsDataURL(file),
 }
 
 TheInputUpload.displayName = 'TheInputUpload'

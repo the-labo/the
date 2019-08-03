@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const theBin = require('@the-/bin')
 
 async function tryExample() {

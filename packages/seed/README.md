@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const theSeed = require('@the-/seed')
 
 async function tryExample() {

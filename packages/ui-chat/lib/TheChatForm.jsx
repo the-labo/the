@@ -124,11 +124,11 @@ TheChatForm.defaultProps = {
   maxRows: 5,
   minLength: 1,
   minRows: 2,
+  onSubmit: () => null,
+  onUpdate: () => null,
   spinning: false,
   submitText: 'Send',
   values: {},
-  onSubmit: () => null,
-  onUpdate: () => null,
 }
 
 TheChatForm.displayName = 'TheChatForm'

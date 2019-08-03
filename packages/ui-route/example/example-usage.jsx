@@ -57,7 +57,7 @@ class ExampleComponent extends React.Component {
                             >
                               <span> </span>
                               <TheLink to={'/s1/v2'}>
-                                Go to view 02 &gt;&gt;{' '}
+                                Go to view 02 &gt;&gt;
                               </TheLink>
                             </div>
                           </div>
@@ -95,7 +95,7 @@ class ExampleComponent extends React.Component {
                             >
                               <a onClick={pop}> &lt;&lt; Back to view 01</a>
                               <TheLink to={'/s1/v2/v3'}>
-                                Go to view 03 &gt;&gt;{' '}
+                                Go to view 03 &gt;&gt;
                               </TheLink>
                             </div>
                           </div>
@@ -129,7 +129,6 @@ class ExampleComponent extends React.Component {
                               }}
                             >
                               <a onClick={() => pop()}>
-                                {' '}
                                 &lt;&lt; Back to view 02
                               </a>
                               <span />

@@ -17,12 +17,12 @@ describe('app-cache', () => {
       delete(key) {
         delete data[key]
       },
-      async keys() {
-        return Object.keys(data)
-      },
       open(key) {
         data[key] = data[key] || {}
         return data[key]
+      },
+      async keys() {
+        return Object.keys(data)
       },
     })
   })

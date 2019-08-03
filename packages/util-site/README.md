@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const { resolveUrl } = require('@the-/util-site')
 
 async function tryExample() {

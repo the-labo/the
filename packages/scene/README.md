@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const { TheScene } = require('@the-/scene')
 
 async function tryExample() {

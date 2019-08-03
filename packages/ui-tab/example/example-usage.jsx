@@ -25,8 +25,7 @@ class ExampleComponent extends React.PureComponent {
           onChange={({ activeIndex }) => this.setState({ activeIndex })}
         >
           <TheTab.Content style={{ height: '100px' }}>
-            {' '}
-            This is Content 01{' '}
+            This is Content 01
           </TheTab.Content>
           <TheTab.Content style={{ height: '300px' }}>
             This is Content 02

@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * Process object expressions
+ * Process objects
  * @memberof module:@the-/code.processors
  * @function processJSObject
  * @param {string} content

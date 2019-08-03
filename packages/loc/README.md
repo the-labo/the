@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 // Require defined locales
 const loc = require('./loc/index')
 

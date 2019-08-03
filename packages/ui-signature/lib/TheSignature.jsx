@@ -161,10 +161,10 @@ TheSignature.propTypes = {
 TheSignature.defaultProps = {
   color: '#555',
   height: '150px',
-  width: '100%',
   onBegin: () => null,
   onEnd: () => null,
   onPad: () => null,
+  width: '100%',
 }
 
 TheSignature.displayName = 'TheSignature'

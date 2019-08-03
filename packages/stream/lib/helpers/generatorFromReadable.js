@@ -7,7 +7,7 @@
  */
 /** @lends module:@the-/stream.generatorFromReadable */
 function generatorFromReadable(readable) {
-  const generator = {
+  return {
     [Symbol.asyncIterator]: () => generator,
     next: async () => {
       if (readable.closed) {
@@ -17,7 +17,6 @@ function generatorFromReadable(readable) {
       return { done, value }
     },
   }
-  return generator
 }
 
 module.exports = generatorFromReadable

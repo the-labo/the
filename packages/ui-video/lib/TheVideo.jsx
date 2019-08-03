@@ -117,27 +117,25 @@ class TheVideo extends React.Component {
           {failed && (
             <span className='the-video-failed'>{notFoundMessage}</span>
           )}
-          {
-            <video
-              alt={alt}
-              autoPlay={autoPlay}
-              className={c('the-video-video', {
-                'the-video-video-failed': failed,
-              })}
-              controls={controls}
-              height={height}
-              loop={loop}
-              muted={muted}
-              onCanPlay={this.handleLoad}
-              onError={this.handleError}
-              playsInline={playsInline}
-              poster={poster}
-              preload={preload}
-              ref={this.videoRef}
-              src={src}
-              width={width}
-            />
-          }
+          <video
+            alt={alt}
+            autoPlay={autoPlay}
+            className={c('the-video-video', {
+              'the-video-video-failed': failed,
+            })}
+            controls={controls}
+            height={height}
+            loop={loop}
+            muted={muted}
+            onCanPlay={this.handleLoad}
+            onError={this.handleError}
+            playsInline={playsInline}
+            poster={poster}
+            preload={preload}
+            ref={this.videoRef}
+            src={src}
+            width={width}
+          />
 
           {children}
         </div>

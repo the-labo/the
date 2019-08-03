@@ -12,11 +12,10 @@ const http = require('http')
 function httpMix(Class) {
   class HttpMixed extends Class {
     createHTTPServer() {
-      const server = http.Server((req, res) => {
+      return http.Server((req, res) => {
         res.writeHead(404)
         res.end()
       })
-      return server
     }
   }
 

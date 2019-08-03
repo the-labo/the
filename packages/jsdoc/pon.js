@@ -29,8 +29,8 @@ function jsdoc(src, dest, options = {}) {
     const { logger } = ctx
     try {
       await theJSDoc({
-        prefix,
         logging: (...args) => ctx.logger.debug(...args),
+        prefix,
       }).generate(src, dest, { ignore, jsonFile, mdFile, patterns })
     } catch (e) {
       logger.error(e.message || e)

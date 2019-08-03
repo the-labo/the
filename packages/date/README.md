@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const theDate = require('@the-/date')
 
 async function tryExample() {

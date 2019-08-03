@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const thePolyfill = require('@the-/polyfill')
 
 async function tryExample() {

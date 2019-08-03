@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const theCache = require('@the-/cache')
 
 async function tryExample() {

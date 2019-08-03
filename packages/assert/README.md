@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const { TheAssert } = require('@the-/assert')
 
 async function tryExample() {

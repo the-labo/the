@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 'use strict'
+
 const React = require('react')
 const { mount, once } = require('@the-/window')
 
