@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheRoot">TheRoot</a></dt>
-<dd><p>Root element of the-components</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheRoot">TheRoot()</a></dt>
+<dd><p>Root element of the-components</p>
+</dd>
 <dt><a href="#TheRootStyle">TheRootStyle()</a></dt>
 <dd><p>Style for TheRoot</p>
 </dd>
@@ -29,13 +24,13 @@
 ## @the-/ui-root
 Root element of the-components
 
-**Version**: 15.4.8  
+**Version**: 15.4.10  
 <a name="TheRoot"></a>
 
-## TheRoot
+## TheRoot()
 Root element of the-components
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheRootStyle"></a>
 
 ## TheRootStyle()

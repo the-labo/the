@@ -6,18 +6,18 @@
     "longname": "module:@the-/ui-root",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-root",
     "order": 0,
     "typicalname": "uiRoot",
-    "version": "15.4.8"
+    "version": "15.4.10"
   },
   {
     "description": "Root element of the-components",
     "id": "TheRoot",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheRoot",
     "meta": {
       "filename": "TheRoot.jsx",
@@ -26,6 +26,7 @@
     },
     "name": "TheRoot",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
