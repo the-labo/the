@@ -14,12 +14,15 @@ function scrollToElement(element) {
   if (!document) {
     return
   }
+
   if (typeof element === 'string') {
     element = document.querySelector(element)
   }
+
   if (!element) {
     return
   }
+
   const scrollY = get('window.scrollY')
   const { top } = element.getBoundingClientRect()
   document.body.scrollTop = top + scrollY

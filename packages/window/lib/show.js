@@ -16,6 +16,7 @@ function show(url) {
     console.warn('Failed to show because there no location object')
     return
   }
+
   location.href = url
 }
 

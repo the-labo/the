@@ -34,10 +34,12 @@ function formatUrl(urlString, params = {}) {
         )
         return componnet
       }
+
       const value = encodeURIComponent(params[name])
       replaced[name] = value
       return [value, ...extensions].join('.')
     }
+
     return componnet
   }
   url.pathname = pathname

@@ -98,14 +98,17 @@ class TheFrame extends React.Component {
     if (!iframe) {
       return
     }
+
     const document = iframe.contentDocument || iframe.contentWindow.document
     if (!document) {
       return
     }
+
     const { body } = document
     if (!body) {
       return
     }
+
     iframe.style.height = `${body.scrollHeight}px`
   }
 
@@ -125,6 +128,7 @@ class TheFrame extends React.Component {
         `[TheFrame] Invalid src to embed: ${src} (Only relative path allowed for secure reason)`,
       )
     }
+
     const fetch = get('fetch')
     if (fetch) {
       const res = await fetch(src)

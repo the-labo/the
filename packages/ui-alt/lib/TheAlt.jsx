@@ -21,6 +21,7 @@ class TheAlt extends React.Component {
     if (!enabled) {
       return null
     }
+
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}

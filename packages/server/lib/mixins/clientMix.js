@@ -35,11 +35,13 @@ function clientMix(Class) {
         console.warn('[TheServer] Connection already gone', { cid })
         return
       }
+
       const socketIds = connection.socketIds || []
       if (!socketIds.includes(socketId)) {
         // Already gone
         return
       }
+
       connection.socketIds = socketIds.filter((f) => f !== socketId)
       await this.connectionStore.set(cid, connection)
     }

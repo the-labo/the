@@ -18,6 +18,7 @@ async function appCache(name, version = 'unknown', options = {}) {
   if (typeof caches === 'undefined') {
     return null
   }
+
   const cacheNamesToDelete = await appCache.ofAnotherVersions(name, version, {
     scope,
   })
@@ -52,10 +53,12 @@ appCache.ofAnotherVersions = async (
     if (n !== name) {
       continue
     }
+
     const otherScope = !!scope && scope !== sc
     if (otherScope) {
       continue
     }
+
     const anotherVersion = version !== v
     if (anotherVersion) {
       result.push(cacheName)

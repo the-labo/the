@@ -4,19 +4,13 @@ const p1 = 'P1'
 const d = {
   a: 1,
   b: 2,
-
   c: {
     ['p3']: `This is ${Object.keys({ f2: 2, f5: 5 }).join(',')}p3`,
     [p1]: 'This is p1',
+    a: 1,
+    b: 1,
+    c: 2,
     p2: 'This is p2',
-
-    z: {
-      aaa: 8777,
-      dd: 1,
-      jj: 234,
-    },
-    ...{ b: 1 },
-
     // HOGE HOGE
     x: {
       get ao() {},
@@ -26,12 +20,12 @@ const d = {
       hogehoge: 1234,
       oooo() {},
     },
-
-    notDoSomething() {},
-
-    ...{ a: 1 },
-    ...{ c: 2 },
-
+    z: {
+      aaa: 8777,
+      dd: 1,
+      jj: 234,
+    },
     doSomething() {},
+    notDoSomething() {},
   },
 }

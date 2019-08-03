@@ -21,6 +21,7 @@ function sortCasesOnSwitchStatementNode(SwitchStatement, { swap }) {
     if (!ParentCase) {
       continue
     }
+
     SubCasesHash[ParentCase.start] = [
       ...(SubCasesHash[ParentCase.start] || []),
       Case,
@@ -66,6 +67,7 @@ const _nameOfCase = ({ test }) => {
   if (!test) {
     return null
   }
+
   return String(
     test.name ||
       test.value ||
@@ -88,6 +90,7 @@ const _weightCase = (Case) => {
   } else {
     weight += 10000
   }
+
   return weight
 }
 

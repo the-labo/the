@@ -10,23 +10,29 @@ function cleanupRedundantAliasOnObjectPatternNode(ObjectPattern, { replace }) {
   if (!properties) {
     return null
   }
+
   for (let i = 0; i < properties.length; i++) {
     const property = properties[i]
     if (property.computed) {
       continue
     }
+
     if (!property.key) {
       continue
     }
+
     if (property.key.type !== 'Identifier') {
       continue
     }
+
     if (!property.value) {
       continue
     }
+
     if (property.key === property.value) {
       continue
     }
+
     const {
       key: { name: keyName },
     } = property
@@ -39,20 +45,25 @@ function cleanupRedundantAliasOnObjectPatternNode(ObjectPattern, { replace }) {
       if (keyName !== valueName) {
         continue
       }
+
       if (property.key.start === property.value.left.start) {
         continue
       }
+
       return replace([property.key.end, property.value.left.end])
     }
+
     const {
       value: { name: valueName },
     } = property
     if (keyName !== valueName) {
       continue
     }
+
     if (property.key.start === property.value.start) {
       continue
     }
+
     return replace([property.key.end, property.value.end])
   }
 }

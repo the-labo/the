@@ -32,6 +32,7 @@ class TheInputTextArea extends React.PureComponent {
     if (!textarea) {
       return
     }
+
     const lineHeight = textarea.offsetHeight / this.state.actualRows
     if (isNaN(lineHeight)) {
       return
@@ -48,16 +49,19 @@ class TheInputTextArea extends React.PureComponent {
       if (this.gone) {
         break
       }
+
       const smallEnough =
         textarea.offsetHeight < textarea.scrollHeight ||
         textarea.offsetHeight < lineHeight * minRows
       if (smallEnough) {
         break
       }
+
       height -= 3
       if (height < 0) {
         break
       }
+
       textarea.style.height = `${height}px`
     }
     const { scrollHeight: minScrollHeight } = textarea
@@ -67,6 +71,7 @@ class TheInputTextArea extends React.PureComponent {
     if (minRows) {
       rows = Math.max(minRows, rows)
     }
+
     if (maxRows) {
       rows = Math.min(maxRows, rows)
     }
@@ -126,11 +131,13 @@ class TheInputTextArea extends React.PureComponent {
         } else {
           onEnter && onEnter()
         }
+
         break
       }
       default:
         break
     }
+
     onKeyDown && onKeyDown(e)
   }
 

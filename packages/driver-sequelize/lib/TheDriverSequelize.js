@@ -57,6 +57,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     if (!this._sequelize) {
       this._sequelize = this.createSequelize(...this._sequelizeArgs)
     }
+
     return this._sequelize
   }
 
@@ -65,6 +66,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
       if (!isProduction()) {
         console.trace('[TheDriverSequelize] DB access after closed')
       }
+
       throw new Error('[TheDriverSequelize] DB Already closed')
     }
   }
@@ -95,6 +97,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
         `[TheDriverSequelize] Model not defined for ${resourceName}`,
       )
     }
+
     return Model
   }
 
@@ -117,6 +120,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
         `[TheDriverSequelize] Schema not defined for ${resourceName}`,
       )
     }
+
     return Schema
   }
 
@@ -146,6 +150,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     if (!model) {
       return 0
     }
+
     await model.destroy({ transaction })
     return 1
   }
@@ -208,6 +213,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     if (!model) {
       return null
     }
+
     return this.outbound(resourceName, model.dataValues)
   }
 
@@ -221,6 +227,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
       default:
         break
     }
+
     for (const [resourceName, Model] of Object.entries(this.models)) {
       await this.prepareLocks[resourceName]
       const promise = (async () => {
@@ -237,6 +244,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     if (this._prepared) {
       return
     }
+
     try {
       this._preparing = this.prepare()
       await this._preparing
@@ -277,6 +285,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     if (!model) {
       throw new Error(`[TheDriverSequelize] Data not found for id: ${id}`)
     }
+
     await model.update(this.inbound(resourceName, values), { transaction })
     return this.one(resourceName, id, { transaction })
   }

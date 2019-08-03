@@ -27,6 +27,7 @@ function defineModelColumn(propertyName, def = {}) {
       )}`,
     )
   }
+
   switch (type) {
     case BOOLEAN:
       return { ...base, type: Sequelize.BOOLEAN }

@@ -71,16 +71,13 @@ describe('the-server', function() {
         controllerDidAttach() {
           console.log('Say did attach')
         },
-
         controllerMethodDidInvoke() {
           // console('did invoke', method, result)
         },
-
         controllerMethodWillInvoke() {
           this.foo = 'Foo'
           // console.log('will invoke', method, params)
         },
-
         controllerWillDetach() {
           // console.log('Say will detach')
         },
@@ -97,20 +94,16 @@ describe('the-server', function() {
       clear() {
         session.total = 0
       },
-
       getTotal() {
         return session.total || 0
       },
-
       hoge() {
         return 'hoge'
       },
-
       somethingWrong() {
         const error = new Error('Something is wrong!')
         throw error
       },
-
       async buy(name, amount) {
         const { total = 0 } = session
         session.total = total + amount
@@ -306,7 +299,6 @@ describe('the-server', function() {
         controllerDidAttach() {
           wasCalledControllerDidAttach = true
         },
-
         controllerWillDetach() {
           wasCalledControllerWillDetach = true
         },
@@ -355,6 +347,7 @@ describe('the-server', function() {
               if (handle.closed) {
                 return
               }
+
               yield { count }
               count--
               await asleep(1)

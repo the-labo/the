@@ -78,6 +78,7 @@ class SFUProxyEdge {
         `[${this.constructor.name}] Channel already exists: ${channelName}`,
       )
     }
+
     this.channels[channelName] = channel
   }
 
@@ -126,8 +127,10 @@ class SFUProxyEdge {
           retryInterval,
         )
       }
+
       return
     }
+
     counterpartChannel.addEventListener('message', async (m) => {
       await waitChannelOpen(channel, { prefix: this.constructor.name })
       channel.send(m.data)
@@ -147,6 +150,7 @@ class SFUProxyEdge {
         `[${this.constructor.name}] Adding track after connection created`,
       )
     }
+
     connection.addTrack(track, ...streams)
   }
 
@@ -155,10 +159,12 @@ class SFUProxyEdge {
     if (!ice.ice) {
       return
     }
+
     if (!connection.remoteDescription) {
       this.receivedIces.push(ice)
       return
     }
+
     await this.addIceCandidate(ice.ice)
   }
 

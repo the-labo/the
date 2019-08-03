@@ -18,6 +18,7 @@ function propRule(config) {
   if (Object.keys(rest).length > 0) {
     console.warn('[propRule] Unknown options', Object.keys(rest))
   }
+
   return async function propRuleCheck({ content, filename, report }) {
     function reportKeypathExpression(expression, given) {
       const {
@@ -43,6 +44,7 @@ function propRule(config) {
         if (!objectName) {
           return []
         }
+
         objectNames.unshift(objectName)
         object = object.object
       }
@@ -71,6 +73,7 @@ function propRule(config) {
               const ok = has(targetModule, key)
               !ok && reportKeypathExpression(expression, names.join('.'))
             }
+
             break
           }
           case 'StringLiteral': {
@@ -82,6 +85,7 @@ function propRule(config) {
               const ok = has(targetModule, key) || value in targetModule
               !ok && reportKeypathExpression(expression, value)
             }
+
             break
           }
           default:

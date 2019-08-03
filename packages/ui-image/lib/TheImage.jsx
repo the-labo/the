@@ -139,6 +139,7 @@ class TheImage extends React.Component {
     if (!elm) {
       return
     }
+
     const elmRect = elm.getBoundingClientRect()
     const {
       state: { actualHeight, actualWidth, loading },
@@ -154,6 +155,7 @@ class TheImage extends React.Component {
     if (skip) {
       return
     }
+
     this.setState({
       actualHeight: newActualHeight,
       actualWidth: newActualWidth,

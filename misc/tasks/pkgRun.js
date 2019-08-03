@@ -20,6 +20,7 @@ function pkgRun(targets, command) {
       if (!hasCommand) {
         continue
       }
+
       logger.notice(
         `[${path.relative(process.cwd(), subPkgDir)}] Run ${command} script...`,
       )

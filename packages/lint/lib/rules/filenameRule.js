@@ -18,6 +18,7 @@ function filenameRule(config) {
   if (Object.keys(rest).length > 0) {
     console.warn('[filenameRule] Unknown options', Object.keys(rest))
   }
+
   return async function filenameRuleCheck({ filename, report }) {
     const basename = path.basename(filename)
     if (startsWith) {
@@ -29,6 +30,7 @@ function filenameRule(config) {
           where: path.resolve(filename),
         })
     }
+
     if (endsWith) {
       const ok = basename.endsWith(endsWith)
       !ok &&
@@ -38,6 +40,7 @@ function filenameRule(config) {
           where: path.resolve(filename),
         })
     }
+
     if (pattern) {
       const ok = !!basename.match(parsePattern(pattern))
       !ok &&

@@ -22,6 +22,7 @@ class TheSupport {
       if (!detected) {
         return
       }
+
       const { message, snippet } = detected
       const error = new Error(messageCreator(message))
       error.filename = relativeFilename
@@ -79,6 +80,7 @@ class TheSupport {
       console.warn('[TheSupport] Not file found with pattern', this.pattern)
       return results
     }
+
     for (const filename of filenames) {
       await TheSupport.checkECMASupport(filename, ecmaVersion)
       results[filename] = { ok: true }

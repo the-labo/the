@@ -18,6 +18,7 @@ async function workers(swUrls, options = {}) {
   if (!serviceWorker) {
     return
   }
+
   if (Array.isArray(swUrls)) {
     throw new Error('[TheEntrypoint] Passing array is no longer supported!')
   }
@@ -33,11 +34,13 @@ async function workers(swUrls, options = {}) {
       if (!scriptURL) {
         continue
       }
+
       const invalidScript = !supportedScripts.includes(scriptURL)
       if (invalidScript) {
         await registration.unregister()
         console.warn('[TheEntrypoint] Unregister worker with script', scriptURL)
       }
+
       const invalidScope = !supportedScopes.includes(registration.scope)
       if (invalidScope) {
         await registration.unregister()

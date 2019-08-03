@@ -80,6 +80,7 @@ class State {
     if (skip) {
       return
     }
+
     this.$$state = {
       ...current,
       ...values,

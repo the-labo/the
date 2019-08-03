@@ -25,9 +25,7 @@ function detailOperationFor(scope) {
    */
   const detailOperation = {
     busyAccess,
-
     entityAccess,
-
     idAccess,
     readyAccess,
     getEntity() {

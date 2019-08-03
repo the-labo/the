@@ -94,7 +94,6 @@ function CheckBoxStyleData({
       '.the-input-checkbox-label': {
         minHeight: tappableHeight,
         padding: '4px 16px',
-
         textAlign: 'center',
       },
     },

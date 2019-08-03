@@ -16,6 +16,7 @@ async function generateFile(filename, generator) {
   if (typeof generator === 'function') {
     generator = generator()
   }
+
   await amkdirp(path.dirname(filename))
   await new Promise(async (resolve, reject) => {
     const stream = fs.createWriteStream(filename)

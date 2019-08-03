@@ -11,6 +11,7 @@ const get = (obj, namepath) => {
   if (!obj) {
     return obj
   }
+
   const [name, ...remain] = namepath.split('.')
   const value = obj[name]
   if (remain.length > 0) {
@@ -47,6 +48,7 @@ const indexBounds = (indices = []) => ({
       if (!(name in entity)) {
         continue
       }
+
       const value = get(entity, name)
       const rotten = actionContext.action !== 'one' && entity[name] !== value
       if (rotten) {
@@ -60,6 +62,7 @@ const indexBounds = (indices = []) => ({
           )
         })
       }
+
       const needsDelete = /\./.test(name)
       if (needsDelete) {
         delete entity[name]

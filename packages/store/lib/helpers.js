@@ -20,20 +20,24 @@ module.exports = {
       if (Array.isArray(ref)) {
         return Object.assign({}, ...ref.map((ref) => resolveRef(ref)))
       }
+
       ref = ref.replace(/\./g, '/')
       if (!LOCAL_POINTER_PREFIX.test(ref)) {
         ref = `#/${ref}`
       }
+
       const pointer = ref.replace(LOCAL_POINTER_PREFIX, '')
       if (!has(obj, pointer)) {
         throw new Error(`Invalid ref: "${ref}"`)
       }
+
       const resolved = get(obj, pointer)
       const { $ref } = resolved
       if ($ref) {
         Object.assign(resolved, resolveRef($ref))
         delete resolved.$ref
       }
+
       return resolved
     }
 
@@ -47,8 +51,10 @@ module.exports = {
             if (LENGTH_SUFFIX.test(key)) {
               return {}
             }
+
             return flatten({ [key.replace(REF_SUFFIX, '')]: resolveRef(ref) })
           }
+
           return { [key]: flattened[key] }
         }),
     )

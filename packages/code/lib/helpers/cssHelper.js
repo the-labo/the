@@ -17,6 +17,7 @@ module.exports = Object.freeze({
             if (before.type !== 'comment') {
               break
             }
+
             range[0] = indexOf(before.source.start)
           }
         }

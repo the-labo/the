@@ -47,6 +47,7 @@ class TheQueue {
         `[TheQueue][${this.name}] Too many tasks (max: ${this.max}, pending: ${this.length})`,
       )
     }
+
     return new Promise((resolve, reject) => {
       const call = async () => {
         await Promise.resolve(task())
@@ -79,6 +80,7 @@ class TheQueue {
     if (!task) {
       return
     }
+
     this.consuming = task()
     await this.consuming
     this.consuming = null
@@ -90,9 +92,11 @@ class TheQueue {
     if (!this.running) {
       return
     }
+
     if (this.length === 0) {
       return
     }
+
     await this.consume()
   }
 
@@ -103,7 +107,7 @@ class TheQueue {
    * @returns {Promise<undefined>}
    */
   async wait(options = {}) {
-    const { interval = 100, timeout = 60 * 1000 } = options
+    const { interval = 100, timeout = 60000 } = options
     const startedAt = new Date()
     while (this.length > 0) {
       this.assertRunning()

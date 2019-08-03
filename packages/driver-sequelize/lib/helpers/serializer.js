@@ -16,6 +16,7 @@ exports.serialize = (value, options = {}) => {
   if (isMultiple) {
     return value.map((value) => exports.serialize(value, type))
   }
+
   switch (type) {
     case ENTITY: {
       return refTo(value.$$as, value.id)
@@ -30,11 +31,13 @@ exports.serialize = (value, options = {}) => {
       if (isEmpty(value)) {
         return null
       }
+
       const { maxLength } = schema
       if (maxLength) {
         // auto truncate long data
         value = String(value).slice(0, maxLength)
       }
+
       return utf8.encode(String(value))
     }
     default: {
@@ -48,6 +51,7 @@ exports.deserialize = (value, type) => {
   if (isMultiple) {
     return value.map((value) => exports.serialize(value, type))
   }
+
   switch (type) {
     case ENTITY:
     case REF: {

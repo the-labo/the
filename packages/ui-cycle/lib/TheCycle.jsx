@@ -49,6 +49,7 @@ class TheCycle extends React.Component {
     if (isEmptyObj(received)) {
       return
     }
+
     onReceive && onReceive(received, prevValues, values)
     debug('onReceive', received)
   }

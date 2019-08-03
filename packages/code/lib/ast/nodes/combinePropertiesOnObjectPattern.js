@@ -13,6 +13,7 @@ function combinePropertiesOnObjectPattern(objectPatternNode, { get, replace }) {
   if (objectPatternNode.type !== NodeTypes.ObjectPattern) {
     return
   }
+
   for (const property of objectPatternNode.properties) {
     const { value } = property
     const isNestedObjectPattern =
@@ -47,6 +48,7 @@ function combinePropertiesOnObjectPattern(objectPatternNode, { get, replace }) {
     if (combiningProperties.length < 2) {
       continue
     }
+
     const content = `${key}: { ${combiningProperties
       .map((property) =>
         (property.value.properties || [])

@@ -66,6 +66,7 @@ class TheHandle {
         `[TheHandle] Scene with name "${namepath}" is already loaded!`,
       )
     }
+
     const isReservedName = this[namepath]
     if (isReservedName) {
       throw new Error(
@@ -126,6 +127,7 @@ class TheHandle {
           `You can not set attribute with name: "${name}" because it already exists`,
         )
       }
+
       Object.defineProperty(this, name, {
         get() {
           return value

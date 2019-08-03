@@ -34,6 +34,7 @@ class Store {
     if (this.cleaning) {
       return deleted
     }
+
     this.cleaning = true
     for (const id of await this.ids()) {
       const has = await this.has(id)
@@ -80,6 +81,7 @@ class Store {
     if (!found) {
       return null
     }
+
     const { data, expiredAt } = JSON.parse(found)
     const expired = expiredAt && new Date(expiredAt) < new Date()
     return expired ? null : data
@@ -123,6 +125,7 @@ class Store {
     if (saving === current) {
       return
     }
+
     await storage.hset(this.storeKey, id, saving)
   }
 }

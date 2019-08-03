@@ -27,6 +27,7 @@ function cryptoMix(Class) {
       if (!data) {
         return data
       }
+
       if (typeof data === 'object') {
         return expand(
           Object.assign(
@@ -37,9 +38,11 @@ function cryptoMix(Class) {
           ),
         )
       }
+
       if (!this.isEncrypted(data)) {
         return data
       }
+
       const encrypted = data.substr(this.cryptPrefix.length)
       return decipherText(
         this.cryptoAlgorithm,
@@ -54,6 +57,7 @@ function cryptoMix(Class) {
       if (!data) {
         return data
       }
+
       if (typeof data === 'object') {
         return Object.assign(
           {},
@@ -64,6 +68,7 @@ function cryptoMix(Class) {
           })),
         )
       }
+
       if (this.isEncrypted(data)) {
         return data
       }
@@ -78,6 +83,7 @@ function cryptoMix(Class) {
       if (typeof data !== 'string') {
         return false
       }
+
       return data.indexOf(this.cryptPrefix) === 0
     }
 

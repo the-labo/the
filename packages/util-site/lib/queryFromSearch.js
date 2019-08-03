@@ -15,6 +15,7 @@ function queryFromSearch(search = get('location.search')) {
   if (!search) {
     return {}
   }
+
   return qs.parse(search, { ignoreQueryPrefix: true })
 }
 

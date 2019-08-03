@@ -42,6 +42,7 @@ function normalizeVariableDeclaratorOnStatementNode(
     if (declarations.length === 0) {
       continue
     }
+
     if (declarations.length > 1) {
       const {
         loc: {

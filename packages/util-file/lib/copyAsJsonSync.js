@@ -15,6 +15,7 @@ function copyAsJsonSync(src, dest) {
   if (data) {
     writeAsJsonSync(dest, data)
   }
+
   return false
 }
 

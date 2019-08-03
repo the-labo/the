@@ -17,7 +17,7 @@ const Words = require('./Words')
 const { Spellchecker } = require('spellchecker') || {}
 const debug = require('debug')('the:spell')
 
-const MB = 1000 * 1000
+const MB = 1000000
 const relativePath = (f) => path.relative(process.cwd(), f)
 
 /** @lends module:@the-/spell.TheSpell */
@@ -30,6 +30,7 @@ class TheSpell {
       if (reportedWords.has(word)) {
         continue
       }
+
       reportedWords.add(word)
       colorprint.errorDetail(INDENT, `${message} ( ${relativePath(filename)} )`)
       const tracing = Object.entries({
@@ -73,6 +74,7 @@ class TheSpell {
     if (this.knownWords.has(word)) {
       return
     }
+
     const variations = [word]
     for (const variation of variations) {
       this.spellChecker.add(variation)
@@ -116,12 +118,14 @@ class TheSpell {
       debug('Skip', filename)
       return []
     }
+
     const content = String(await readFileAsync(filename))
     const shouldSkipContent = this.shouldSkipContent(content)
     if (!force && shouldSkipContent) {
       debug('Skip', filename)
       return []
     }
+
     const reports = await this.checkString(content, { filename })
     const success = reports.length === 0
     if (success) {
@@ -129,6 +133,7 @@ class TheSpell {
     } else {
       await this.cache.del(cacheKey)
     }
+
     return reports
   }
 
@@ -198,6 +203,7 @@ class TheSpell {
     if (!isMisspelled) {
       return false
     }
+
     const [correction] = spellChecker.getCorrectionsForMisspelling(word) || []
     const shortWord =
       correction &&
@@ -205,6 +211,7 @@ class TheSpell {
     if (shortWord) {
       return false
     }
+
     return true
   }
 
@@ -213,6 +220,7 @@ class TheSpell {
     if (!stat) {
       return false
     }
+
     const tooLarge = stat.size > this.maxFileSize
     if (tooLarge) {
       const relativeName = path.relative(process.cwd(), filename)
@@ -223,14 +231,17 @@ class TheSpell {
       )
       return false
     }
+
     const canWrite = await canWriteAsync(filename)
     if (!canWrite) {
       return true
     }
+
     const cached = await this.cache.get(cacheKey)
     if (!cached) {
       return false
     }
+
     return new Date(cached.at) >= new Date(stat.mtime)
   }
 }

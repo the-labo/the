@@ -16,6 +16,7 @@ class TheCondition extends React.Component {
     if (!this.shouldRender()) {
       return null
     }
+
     return children
   }
 
@@ -29,23 +30,27 @@ class TheCondition extends React.Component {
         return false
       }
     }
+
     if (unless !== null) {
       if (unless) {
         return false
       }
     }
+
     if (someOf !== null) {
       const hasAny = someOf.some((bool) => bool)
       if (!hasAny) {
         return false
       }
     }
+
     if (allOf !== null) {
       const hasAll = !allOf.some((bool) => !bool)
       if (!hasAll) {
         return false
       }
     }
+
     return true
   }
 }

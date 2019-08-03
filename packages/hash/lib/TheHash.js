@@ -45,6 +45,7 @@ class TheHash extends Object {
       }
       return
     }
+
     this[key] = value
   }
 

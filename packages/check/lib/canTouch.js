@@ -11,13 +11,16 @@ function canTouch() {
   if (typeof document === 'undefined') {
     return false
   }
+
   if (typeof window === 'undefined') {
     return false
   }
+
   const documentElement = !!document && document.documentElement
   if (!documentElement) {
     return false
   }
+
   return (
     'ontouchstart' in documentElement ||
     'ontouchstart' in window ||

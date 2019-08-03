@@ -56,6 +56,7 @@ class ScopedState extends State {
     if (known) {
       return known
     }
+
     const scope = new ScopedState(name, { parent: this })
     this.scopes.set(name, scope)
     return scope

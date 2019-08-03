@@ -60,6 +60,7 @@ class TheStore {
       if (customReducer) {
         state = customReducer(state, action)
       }
+
       for (const name of Object.keys(this._loadedReducers)) {
         const reducer = this._loadedReducers[name]
         const reduced = reducer(state[name], action)
@@ -122,12 +123,14 @@ class TheStore {
         `[TheStore] Scope with name "${namepath}" is already loaded!`,
       )
     }
+
     const isReservedName = this[namepath] || [].includes(namepath)
     if (isReservedName) {
       throw new Error(
         `[TheStore] Failed to load state with name "${namepath}" because it is reserved`,
       )
     }
+
     let { initialState = null } = ScopeClass
     const { reducerFactories = {}, subScopeClasses = {} } = ScopeClass
 
@@ -175,6 +178,7 @@ class TheStore {
         if (!parent[name]) {
           parent.load(scopes.ScopeScope, name)
         }
+
         parent = parent[name]
       }
       const Scope = scopes.ValueScope.withDefault(val)
@@ -205,12 +209,14 @@ class TheStore {
       if (!Type) {
         throw new Error(`Unknown type: "${typeName}" for ${namepath}`)
       }
+
       const names = namepath.split(NAMEPATH_SEPARATOR)
       let parent = this
       for (const name of names.slice(0, names.length - 1)) {
         if (!parent[name]) {
           parent.load(scopes.ScopeScope, name)
         }
+
         parent = parent[name]
       }
       this.load(Type, namepath)

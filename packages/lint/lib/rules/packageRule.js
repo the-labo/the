@@ -29,6 +29,7 @@ function packageRule(config) {
   if (Object.keys(rest).length > 0) {
     console.warn('[packageRule] Unknown options', Object.keys(rest))
   }
+
   const _json = ({ content, filename }) => {
     try {
       return JSON.parse(content)
@@ -61,6 +62,7 @@ function packageRule(config) {
     if (!pkg) {
       return []
     }
+
     const { peerDependencies = {} } = pkg
     return Object.keys(peerDependencies)
   }
@@ -85,6 +87,7 @@ function packageRule(config) {
       if (!deps) {
         return
       }
+
       const depsNames = Object.keys(deps)
       const unusedNames = new Set(
         depsNames

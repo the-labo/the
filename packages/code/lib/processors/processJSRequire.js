@@ -63,6 +63,7 @@ function processJSRequire(content, options = {}) {
           if (match) {
             return [range[0], range[1] - match[0].length]
           }
+
           return range
         })
         return swap(...ranges)
@@ -92,6 +93,7 @@ function processJSRequire(content, options = {}) {
         if (aWeight !== bWeight) {
           return aWeight - bWeight
         }
+
         return aName.localeCompare(bName)
       })
       for (let i = 0; i < sortedByStart.length; i++) {
@@ -141,13 +143,16 @@ function processJSRequire(content, options = {}) {
           if (!ArgumentNode) {
             continue
           }
+
           if (ArgumentNode.type !== 'StringLiteral') {
             continue
           }
+
           const { value } = ArgumentNode
           if (!isRelative(value)) {
             continue
           }
+
           const extRemoved = cleanupExtOnRequireDeclarationArgumentNode(
             ArgumentNode,
             {
@@ -171,6 +176,7 @@ function processJSRequire(content, options = {}) {
           }
         }
       }
+
       return content
     },
     { name: 'processJSRequire' },

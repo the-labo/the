@@ -15,13 +15,16 @@ class ThePager extends React.PureComponent {
     if (!counts) {
       return null
     }
+
     const { number, total } = metaToPage(counts)
     if (typeof total === 'undefined') {
       return null
     }
+
     if (total === 0) {
       return null
     }
+
     return (
       <ThePager
         className={c('the-pager-with-counts', className)}
@@ -40,13 +43,16 @@ class ThePager extends React.PureComponent {
     if (!counts) {
       return null
     }
+
     const { limit, offset, total } = counts
     if (typeof total === 'undefined') {
       return null
     }
+
     if (total === 0) {
       return null
     }
+
     return (
       <div className='the-pager-counts'>
         <span className='the-pager-counts-from'>{offset + 1}</span>

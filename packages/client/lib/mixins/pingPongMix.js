@@ -34,6 +34,7 @@ function pingPongMix(Class) {
           close()
           throw new Error('Exceed retry max')
         }
+
         const ok = await this.ping({ pingUrl })
         if (ok) {
           close()

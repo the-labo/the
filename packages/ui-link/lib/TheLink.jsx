@@ -12,6 +12,7 @@ const isExternalLink = (url) => {
   if (!url) {
     return url
   }
+
   try {
     return !!new URL(url).protocol
   } catch (e) {
@@ -38,6 +39,7 @@ class TheLink extends React.Component {
         </a>
       )
     }
+
     return <NavLink {...props}>{children}</NavLink>
   }
 
@@ -62,6 +64,7 @@ class TheLink extends React.Component {
     if (color && style) {
       style.color = color
     }
+
     return (
       <TheLink.Link
         {...htmlAttributesFor(props, { except: ['className', 'style'] })}

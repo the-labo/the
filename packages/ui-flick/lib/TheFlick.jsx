@@ -66,6 +66,7 @@ class TheFlick extends React.Component {
     if (!body) {
       return
     }
+
     const amount = nextIndex - activeIndex
     this.moveTo(body.offsetWidth * amount * -1, () =>
       onChange({ activeIndex: nextIndex }),
@@ -104,10 +105,12 @@ class TheFlick extends React.Component {
       toggleDocumentScroll(this.props.present)
       this.resize()
     }
+
     const shouldResize = ['images', 'activeIndex'].some((k) => k in diff)
     if (shouldResize) {
       this.resize()
     }
+
     const { activeIndex: nextIndex } = props
     const updateNextIndex =
       nextIndex === null || prevProps.activeIndex !== nextIndex
@@ -131,9 +134,11 @@ class TheFlick extends React.Component {
     if (activeIndex === 0) {
       bounds.right = 20
     }
+
     if (activeIndex === images.length - 1) {
       bounds.left = -20
     }
+
     return bounds
   }
 
@@ -151,6 +156,7 @@ class TheFlick extends React.Component {
     if (!body) {
       return
     }
+
     const {
       props: { activeIndex },
     } = this
@@ -178,6 +184,7 @@ class TheFlick extends React.Component {
     if (!body) {
       return
     }
+
     const { x } = data
     const amount = this.moveAmountFor(x)
     const toLeft = amount < 0
@@ -185,11 +192,13 @@ class TheFlick extends React.Component {
       this.changeToPrev()
       return
     }
+
     const toRight = amount > 0
     if (toRight) {
       this.changeToNext()
       return
     }
+
     this.moveTo(0)
   }
 
@@ -207,10 +216,12 @@ class TheFlick extends React.Component {
     if (toLeft) {
       return -1
     }
+
     const toRight = x < threshold * -1 && activeIndex < count - 1
     if (toRight) {
       return 1
     }
+
     return 0
   }
 
@@ -346,10 +357,12 @@ class TheFlick extends React.Component {
     if (!body) {
       return
     }
+
     const { offsetWidth: bodyWidth } = body
     if (bodyWidth === 0) {
       return
     }
+
     if (this.state.bodyWidth !== bodyWidth) {
       this.setState({ bodyWidth })
     }

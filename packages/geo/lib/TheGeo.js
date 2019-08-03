@@ -12,11 +12,11 @@ const { get } = require('@the-/window')
 class TheGeo {
   constructor(options = {}) {
     const {
-      cacheDuration = 5 * 60 * 1000,
+      cacheDuration = 300000,
       cacheKey = 'the:geo:cache',
       enableHighAccuracy = false,
-      maximumAge = 3 * 1000,
-      timeout = 15 * 1000,
+      maximumAge = 3000,
+      timeout = 15000,
     } = options
     this.cacheKey = cacheKey
     this.cacheDuration = cacheDuration
@@ -89,10 +89,12 @@ class TheGeo {
     if (cached && !force) {
       return { ...cached }
     }
+
     const fromGeolocation = await this.detectFromGeolocation()
     if (!fromGeolocation) {
       return null
     }
+
     const { accuracy, latitude: lat, longitude: lng } = fromGeolocation
     const data = { accuracy, lat, lng }
     this.setCache(data)
@@ -105,6 +107,7 @@ class TheGeo {
     if (!geolocation) {
       return null
     }
+
     return new Promise((resolve, reject) => {
       geolocation.getCurrentPosition(resolve, reject, {
         enableHighAccuracy,

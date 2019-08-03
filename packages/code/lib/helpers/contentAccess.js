@@ -20,6 +20,7 @@ function contentAccess(content) {
         if (hit) {
           break
         }
+
         leftIndex--
       }
       let [, rightIndex] = range
@@ -28,6 +29,7 @@ function contentAccess(content) {
         if (hit) {
           break
         }
+
         rightIndex++
       }
       return [leftIndex, rightIndex + 1]
@@ -63,6 +65,10 @@ function contentAccess(content) {
       debug('removed', removed)
       return removed
     },
+    removeLine: (line) =>
+      [...contentLines.slice(0, line - 1), ...contentLines.slice(line)].join(
+        EOL,
+      ),
     replace: (range, replacing) => {
       const [start, end] = range
       const replaced = [

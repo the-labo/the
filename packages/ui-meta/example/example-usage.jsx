@@ -8,6 +8,7 @@ class ExampleComponent extends React.Component {
     if (!enabled) {
       return null
     }
+
     // Override html title on componentDidMount, restore on componentDidUnmount
     return (
       <div className={'article'}>

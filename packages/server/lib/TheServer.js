@@ -79,6 +79,7 @@ class TheServer extends TheServerBase {
       if (restKeys.length > 0) {
         console.warn(`[TheServer] Unknown config: ${JSON.stringify(restKeys)}`)
       }
+
       const invalidLang = langs.find((lang) => /^\$/.test(lang))
       if (invalidLang) {
         throw new Error(`[TheServer] Invalid lang: ${invalidLang}`)
@@ -145,6 +146,7 @@ class TheServer extends TheServerBase {
       renderer.clearCacheSync()
       this.app.use(renderer)
     }
+
     this.additionalInfo = info
     this.ControllerDriverFactories = ControllerDriverFactories
     this.storage = storage
@@ -170,6 +172,7 @@ class TheServer extends TheServerBase {
     if (!ControllerDriverFactory) {
       throw new Error(`[TheServer] Unknown controller: ${controllerName}`)
     }
+
     if (!client) {
       throw new Error('[TheServer] client is required')
     }
@@ -221,6 +224,7 @@ class TheServer extends TheServerBase {
     if (this.closeAt) {
       throw new Error('[TheServer] Already closed')
     }
+
     const { infoFlusher, rpcKeeper } = this
     this.closeAt = new Date()
     this.listenAt = null
@@ -233,6 +237,7 @@ class TheServer extends TheServerBase {
     if (this.closeRedisAdapter) {
       await this.closeRedisAdapter()
     }
+
     await this.storage.quit()
     return closed
   }
@@ -258,6 +263,7 @@ class TheServer extends TheServerBase {
     if (this.listenAt) {
       throw new Error('[TheServer] Already listening')
     }
+
     this.listenAt = new Date()
     this.closeAt = null
     const server = http.createServer(this.app.callback())
@@ -286,7 +292,6 @@ class TheServer extends TheServerBase {
           controllerDriverPool.add(cid, socketId, controllerName, driver)
         }
       },
-
       onIOClientGone: async (cid, socketId, reason) => {
         // TODO Wait until onIOClientCame done
         const { rpcKeeper } = this
@@ -294,6 +299,7 @@ class TheServer extends TheServerBase {
         if (!hasConnection) {
           console.warn('[TheServer] Connection already gone for cid:', cid)
         }
+
         const drivers = controllerDriverPool.getAll(cid, socketId)
         for (const [controllerName, driver] of Object.entries(drivers)) {
           const { interceptors } = driver
@@ -314,11 +320,9 @@ class TheServer extends TheServerBase {
 
         await this.removeClientSocket(cid, socketId, reason)
       },
-
       onRPCAbort: async () => {
         // TODO Support aborting RPC Call
       },
-
       onRPCCall: async (cid, socketId, config) => {
         const { rpcKeeper } = this
         const { iid, methodName, moduleName, params } = config
@@ -328,6 +332,7 @@ class TheServer extends TheServerBase {
             `[@the-/server] Controller not found for name: ${moduleName}`,
           )
         }
+
         const { controllerName, interceptors } = driver
 
         rpcKeeper.startKeepTimer(cid, iid, { controllerName })
@@ -360,19 +365,18 @@ class TheServer extends TheServerBase {
         if (this.closed) {
           return
         }
+
         if (errors) {
           await this.ioConnector.sendRPCError(cid, iid, errors)
         } else {
           await this.ioConnector.sendRPCSuccess(cid, iid, data)
         }
       },
-
       onStreamChunk: async (cid, socketId, config) => {
         const { chunk, sid } = config
         const { stream } = this.streamDriverPool.getInstance(cid, sid)
         await stream.push(chunk)
       },
-
       onStreamClose: async (cid, socketId, config) => {
         await asleep(10)
         const { sid } = config
@@ -380,12 +384,10 @@ class TheServer extends TheServerBase {
         this.streamDriverPool.delInstance(cid, sid)
         await stream.close()
       },
-
       onStreamError: async (e) => {
         // TODO
         console.error('[TheServer] Stream error:', e)
       },
-
       onStreamFin: async (cid, socketId, config) => {
         const { sid } = config
         const exists = this.streamDriverPool.hasInstance(cid, sid)
@@ -393,16 +395,17 @@ class TheServer extends TheServerBase {
           // DO nothing if already gone
           return
         }
+
         const { stream } = this.streamDriverPool.getInstance(cid, sid)
         await stream.pushEnd()
       },
-
       onStreamOpen: async (cid, socketId, config) => {
         const { params, sid, streamName } = config
         const StreamDriverFactory = this.StreamDriverFactories[streamName]
         if (!StreamDriverFactory) {
           throw new Error(`[TheServer] Unknown stream: ${streamName}`)
         }
+
         const streamDriver = StreamDriverFactory({
           cid,
           ioConnector,

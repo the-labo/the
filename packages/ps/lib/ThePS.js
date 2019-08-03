@@ -32,10 +32,12 @@ class ThePS {
     if (!pid) {
       return false
     }
+
     const isMe = String(pid) === String(process.pid)
     if (!isMe) {
       return false
     }
+
     this.del()
     return true
   }
@@ -45,6 +47,7 @@ class ThePS {
     if (!pid) {
       return
     }
+
     pid.remove()
     this.pid = null
   }
@@ -79,6 +82,7 @@ class ThePS {
       if (isMe) {
         return
       }
+
       await asleep(Math.random() * 100)
       const exists = (await psList(pid)).some(
         (ps) => String(ps.pid) === String(pid),
@@ -87,6 +91,7 @@ class ThePS {
       if (abort) {
         throw new Error('[the-ps] Failed to acquire')
       }
+
       try {
         const killed = await this.kill(pid)
         if (killed) {
@@ -96,6 +101,7 @@ class ThePS {
         // Do nothing
       }
     }
+
     const { filename } = this
     this.write()
     this.log(
@@ -111,6 +117,7 @@ class ThePS {
           path.relative(process.cwd(), filename),
         )
       }
+
       process.nextTick(() => {
         process.exit(0)
       })

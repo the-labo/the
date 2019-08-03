@@ -27,6 +27,7 @@ const { writeAsJson } = require('@the-/util-file')
       }
       await writeAsJson(subPkgFile, subPkg)
     }
+
     const devDependenciesToRemove = Object.keys(subPkg.devDependencies || {})
       .filter((name) => name in (pkg.devDependencies || {}))
       .filter((name) => !/eslint/.test(name))

@@ -50,6 +50,7 @@ class TheScene extends TheSceneMixed {
         throw new Error(`[${this.name}] ${namepath} is required`)
       }
     }
+
     return result
   }
 
@@ -64,6 +65,7 @@ class TheScene extends TheSceneMixed {
     if (!this.scope.has(namepath)) {
       return false
     }
+
     const value = this.scope.get(namepath)
     const empty = typeof value === 'undefined' || value === null
     return !empty
@@ -107,6 +109,7 @@ class TheScene extends TheSceneMixed {
       // For legacy scope signature
       return
     }
+
     if (!this.scope.has(namepath)) {
       throw new Error(
         `"${namepath}" is not found in the scope of ${this.sceneName}`,

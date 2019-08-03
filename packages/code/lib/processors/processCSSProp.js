@@ -34,6 +34,7 @@ async function processCSSProp(content) {
           if (compared === 0) {
             return a.value.localeCompare(b.value)
           }
+
           return compared
         })
         for (let i = 0; i < sortedByStart.length; i++) {
@@ -46,6 +47,7 @@ async function processCSSProp(content) {
             if (duplicate) {
               continue
             }
+
             return swap(byStartRange, byNameRange)
           }
         }

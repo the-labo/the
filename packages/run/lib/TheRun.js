@@ -24,6 +24,7 @@ class TheRun {
     if (inspectPort) {
       await fkill(`:${inspectPort}`).catch(() => null) // Do nothing
     }
+
     await new Promise((resolve, reject) => {
       const spawned = spawn(
         'node',

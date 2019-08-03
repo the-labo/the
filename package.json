@@ -7,29 +7,13 @@
     "email": "okunishinishi@gmail.com",
     "url": "http://okunishitaka.com"
   },
-  "scripts": {
-    "build": "pon build",
-    "publish": "pon publish",
-    "test": "pon test",
-    "prepare": "pon prepare"
-  },
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
-  "repository": "the-labo/the",
-  "homepage": "https://github.com/the-labo/the#readme",
-  "license": "MIT",
   "dependencies": {
     "asfs": "^2.2.3",
     "pon": "^5.2.15",
     "pon-task-basic": "^4.2.21"
-  },
-  "engines": {
-    "node": ">=10",
-    "npm": ">=6"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -42,15 +26,14 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "7.0.0",
     "@babel/runtime": "^7.5.5",
-    "@okunishinishi/fixpack": "^3.0.1",
-    "@the-/code": "^15.7.0",
+    "@the-/code": "^15.8.9",
     "@the-/eslint-config-code": "^15.4.17",
     "@the-/eslint-config-jsdoc": "^15.4.6",
     "@the-/eslint-config-prettier": "^15.4.5",
     "@the-/eslint-config-standard": "^15.4.7",
     "@the-/eslint-config-standard-jsx": "^15.4.2",
     "@the-/refactor": "^15.5.1",
-    "@the-/script-build": "^15.4.40",
+    "@the-/script-build": "^15.4.41",
     "@the-/script-doc": "^15.4.5",
     "@the-/script-test": "^15.4.0",
     "@the-/templates": "^16.0.11",
@@ -72,5 +55,21 @@
     "publish-if-needed": "^1.1.0",
     "rimraf": "^2.6.3",
     "semver": "^6.3.0"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the#readme",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
+  "scripts": {
+    "build": "pon build",
+    "prepare": "pon prepare",
+    "publish": "pon publish",
+    "test": "pon test"
   }
 }

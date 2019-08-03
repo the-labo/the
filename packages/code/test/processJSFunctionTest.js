@@ -150,6 +150,21 @@ const a = () => {
       `,
     )
   })
+
+  it('No direct return if identifier is referred', async () => {
+    equal(
+      await processJSFunction(`
+const a = () => {
+  const b = () => b
+  return b
+}`),
+      `
+const a = () => {
+  const b = () => b
+  return b
+}`,
+    )
+  })
 })
 
 /* global describe, before, after, it */

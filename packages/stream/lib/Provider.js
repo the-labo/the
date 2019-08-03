@@ -48,6 +48,7 @@ class Provider {
     if (this.done) {
       throw new Error('[TheStream][Provider] Already done!')
     }
+
     const { done, value } = await this.reader.read()
     this.done = done
     return { done, value }

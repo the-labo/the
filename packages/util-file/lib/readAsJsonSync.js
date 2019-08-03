@@ -17,6 +17,7 @@ function readAsJsonSync(filename) {
   if (!stat) {
     return null
   }
+
   const isJSON5 = isJSON5File(filename)
   const read = readFileSync(filename)
   try {

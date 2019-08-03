@@ -49,10 +49,12 @@ document.addEventListener('DOMContentLoaded', async () => {
       console.warn('No stream')
       return
     }
+
     const knownId = video.srcObject && video.srcObject.id
     if (knownId === stream.id) {
       return
     }
+
     video.srcObject = stream
   }
 

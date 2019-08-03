@@ -53,6 +53,7 @@ class TheButton extends React.Component {
         return
       }
     }
+
     onClick && onClick(e)
     onSubmit && onSubmit()
     this.lastClickedAt = new Date()
@@ -71,6 +72,7 @@ class TheButton extends React.Component {
       default:
         break
     }
+
     onKeyDown && onKeyDown(e)
   }
 
@@ -114,6 +116,7 @@ class TheButton extends React.Component {
         style.color = color
       }
     }
+
     return (
       <A
         {...htmlAttributesFor(props, {

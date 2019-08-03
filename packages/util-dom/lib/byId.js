@@ -16,6 +16,7 @@ function byId(id) {
   if (!document) {
     return null
   }
+
   return document.getElementById(id)
 }
 
@@ -32,6 +33,7 @@ byId.withRetry = async function byIdWithRetry(id, options = {}) {
   if (found) {
     return found
   }
+
   if (retry > 0) {
     await asleep(retryInterval)
     return byId(id, {

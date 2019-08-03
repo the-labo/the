@@ -42,6 +42,7 @@ class ThePack {
     if (buffer === null) {
       return buffer
     }
+
     const { converter } = this
     try {
       const decoding = converter(buffer)
@@ -52,6 +53,7 @@ class ThePack {
       if (!isBuffer) {
         return buffer
       }
+
       throw new Error(
         `[ThePack] Failed to decode buffer: ${buffer} (reason ${e.message})`,
       )
@@ -67,6 +69,7 @@ class ThePack {
     if (data === null) {
       return null
     }
+
     const { converter } = this
     try {
       const encoded = msgpack.encode(data)

@@ -33,6 +33,7 @@ function processJSSwitch(content, options = {}) {
       if (converted) {
         return converted
       }
+
       return content
     },
     { name: 'processJSSwitch' },

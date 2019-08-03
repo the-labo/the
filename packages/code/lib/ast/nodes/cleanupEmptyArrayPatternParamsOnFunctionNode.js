@@ -14,10 +14,12 @@ function cleanupEmptyArrayPatternParamsOnFunctionNode(
   if (!lastParam) {
     return
   }
+
   const isArrayPattern = lastParam.type === 'ArrayPattern'
   if (!isArrayPattern) {
     return
   }
+
   const isEmpty = lastParam.elements.length === 0
   if (isEmpty) {
     return replace([lastParam.start, lastParam.end], '')

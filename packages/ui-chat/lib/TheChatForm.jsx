@@ -38,6 +38,7 @@ class TheChatForm extends React.Component {
     if (!text) {
       return
     }
+
     onSubmit && onSubmit(values)
   }
 

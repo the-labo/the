@@ -26,6 +26,7 @@ function parseSort(sort, options) {
       if (!normalizeName) {
         return null
       }
+
       {
         const isKnown =
           normalizeName in ModelAttributes ||

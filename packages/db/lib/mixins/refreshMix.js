@@ -38,6 +38,7 @@ function refreshMix(Class) {
       if (!entityRef) {
         return
       }
+
       unlessProduction(() => assertIsRef(entityRef))
       this._refresher.request(entityRef)
     }
@@ -50,6 +51,7 @@ function refreshMix(Class) {
       if (this._refresher) {
         throw new Error('[TheDB]refreshLoop already started')
       }
+
       this._refresher = new TheRefresher(
         async (entityRef) => this.doRefresh(entityRef),
         {
@@ -66,6 +68,7 @@ function refreshMix(Class) {
       if (!this._refresher) {
         return
       }
+
       this._refresher.stop()
       this._refresher = null
     }
@@ -77,9 +80,11 @@ function refreshMix(Class) {
       if (!resource) {
         return
       }
+
       if (!resource.refresh) {
         return
       }
+
       try {
         const entity = await this.resolveEntityRef(entityRef)
         if (entity) {
@@ -106,8 +111,9 @@ function refreshMix(Class) {
       if (entityRef.$$entity) {
         entityRef = entityRef.toRef()
       }
+
       unlessProduction(() => assertIsRef(entityRef))
-      const { interval = 10, timeout = 60 * 1000 } = options
+      const { interval = 10, timeout = 60000 } = options
       const startedAt = new Date()
       while (this._refresher.has(entityRef)) {
         await asleep(interval)

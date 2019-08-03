@@ -20,6 +20,7 @@ exports.cipherText = function cipher(algorithm, password, text, options = {}) {
       cipher.final(CRYPTO_ENCODE)
     )
   }
+
   const key = password.padStart(KEY_LENGTH, 'x')
   const cipher = crypto.createCipheriv(algorithm, key, iv)
   return (
@@ -43,6 +44,7 @@ exports.decipherText = function decipher(
       decipher.final(TEXT_ENCODE)
     )
   }
+
   const key = password.padStart(KEY_LENGTH, 'x')
   const decipher = crypto.createDecipheriv(algorithm, key, iv)
   return (

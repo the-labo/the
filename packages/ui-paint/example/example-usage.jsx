@@ -41,6 +41,7 @@ class ExampleComponent extends React.Component {
         drawer.clear()
         continue
       }
+
       await drawer.fromSnapshot(snapshot)
     }
     this.setState({

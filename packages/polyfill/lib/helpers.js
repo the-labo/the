@@ -11,6 +11,7 @@ const withDocument = (callback) => {
   if (!document) {
     return
   }
+
   if (/comp|inter|loaded/.test(document.readyState)) {
     callback(document)
   } else {
@@ -27,6 +28,7 @@ const withWindow = (callback) => {
   if (!window) {
     return
   }
+
   callback(window)
 }
 

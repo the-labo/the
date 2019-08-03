@@ -39,6 +39,7 @@ const TheSchemaResource = ({ define }) => {
       if (latest) {
         return latest
       }
+
       return TheSchema.create({})
     },
   })

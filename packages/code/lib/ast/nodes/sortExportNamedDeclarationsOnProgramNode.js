@@ -38,6 +38,7 @@ function sortExportNamedDeclarationsOnProgramNode(ProgramNode, { swap }) {
       if (aWeight !== bWeight) {
         return aWeight - bWeight
       }
+
       return compareStrings(_nameOfCase(a), _nameOfCase(b))
     })
     for (let i = 0; i < sortedByStart.length; i++) {

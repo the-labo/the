@@ -88,6 +88,7 @@ class TheInputRange extends React.PureComponent {
     if (!fromHandleElm) {
       return 0
     }
+
     return fromHandleElm.offsetWidth / 2
   }
 
@@ -96,6 +97,7 @@ class TheInputRange extends React.PureComponent {
     if (!barElm) {
       return
     }
+
     const handleRadius = this.getHandleRadius()
     const { fromX, toX } = state
     const { left } = barElm.getBoundingClientRect()
@@ -134,6 +136,7 @@ class TheInputRange extends React.PureComponent {
     if (!barElm) {
       return
     }
+
     const { offsetWidth: w } = barElm
     const handleRadius = this.getHandleRadius()
     const minX = 0 - handleRadius
@@ -141,6 +144,7 @@ class TheInputRange extends React.PureComponent {
     if (minX === maxX) {
       return
     }
+
     const {
       value: [from, to],
     } = props
@@ -267,6 +271,7 @@ class TheInputRange extends React.PureComponent {
     if (minX === maxX) {
       return
     }
+
     const {
       name,
       step,
@@ -284,6 +289,7 @@ class TheInputRange extends React.PureComponent {
         from -= step
       }
     }
+
     const duplicate = currentFrom === from && currentTo === to
     if (duplicate) {
       return
@@ -329,6 +335,7 @@ class TheInputRange extends React.PureComponent {
     if (minX === maxX) {
       return 0
     }
+
     return rangecal.rate(minX, maxX, x + 2)
   }
 

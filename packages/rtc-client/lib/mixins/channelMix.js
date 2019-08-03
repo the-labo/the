@@ -23,6 +23,7 @@ function channelMix(Class) {
       if (isMeta) {
         return
       }
+
       switch (channelName) {
         case ChannelNames.DEFAULT_CHANNEL:
           break

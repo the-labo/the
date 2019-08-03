@@ -18,6 +18,7 @@ function cleanupUnusedOnObjectPatternNode(
   if (!properties) {
     return null
   }
+
   for (let i = 0; i < properties.length; i++) {
     const property = properties[i]
     if (!property.key) {

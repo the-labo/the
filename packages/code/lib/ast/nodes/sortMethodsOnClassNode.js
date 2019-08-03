@@ -25,6 +25,7 @@ function sortMethodsOnClassNode(ClassNode, { swap }) {
     if (aWeight !== bWeight) {
       return aWeight - bWeight
     }
+
     return compareStrings(_nameOfMethod(a), _nameOfMethod(b))
   })
   const rangeFor = (PropertyNode) => {
@@ -53,9 +54,11 @@ const _nameOfMethod = (method) => {
   if (name) {
     return name
   }
+
   if (id && id.name) {
     return id.name
   }
+
   const {
     key: { object, property },
   } = method

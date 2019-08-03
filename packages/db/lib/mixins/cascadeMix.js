@@ -35,6 +35,7 @@ function cascadeMix(Class) {
                 debug('Nothing to cascade', followeeName)
                 return
               }
+
               const entities = await follower.all(condition)
               const destroyingIds = entities
                 .map(({ id }) => id && String(id))

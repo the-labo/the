@@ -27,6 +27,7 @@ const _replace = (content, from, to, { filename, max } = {}) => {
     if (unchanged) {
       return content
     }
+
     content = replaced
   }
   throw new Error(
@@ -147,6 +148,7 @@ class TheRefactor {
     if (!srcExists) {
       return
     }
+
     const destExists = !!(await statAsync(dest).catch(() => null))
     if (destExists) {
       await this.rename(path.join(src, '**/*.*'), () => ({ dirname: dest }))
@@ -222,14 +224,17 @@ class TheRefactor {
       if (!stat) {
         continue
       }
+
       if (stat.isDirectory()) {
         continue
       }
+
       const content = await readFileAsync(filename).catch(() => null)
       if (content === null) {
         console.warn(`[TheRefactor] Failed to read: ${filename}`)
         continue
       }
+
       const before = { content: String(content), filename }
       const after = await task(before)
       for (const key of Object.keys(after)) {
@@ -263,6 +268,7 @@ class TheRefactor {
             }
           }
         }
+
         results[filename] = after
       }
     }

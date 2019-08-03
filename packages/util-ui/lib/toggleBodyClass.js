@@ -15,9 +15,11 @@ function toggleBodyClass(className, enabled) {
   if (!body) {
     return
   }
+
   if (typeof enabled === 'undefined') {
     enabled = !body.classList.contains(className)
   }
+
   if (enabled) {
     body.classList.add(className)
   } else {

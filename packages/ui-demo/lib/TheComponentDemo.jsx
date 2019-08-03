@@ -21,12 +21,15 @@ const githubRepoFor = (pkg) => {
   if (!repository) {
     return null
   }
+
   if (typeof repository === 'string') {
     if (/^\//.test(repository)) {
       return `https://github.com/${repository}`
     }
+
     return repository
   }
+
   return repository.git
 }
 

@@ -36,6 +36,7 @@ class TheJitter {
     if (count <= 0) {
       return 0
     }
+
     return Math.floor(Math.random() * count * this.maxInterval)
   }
 
@@ -52,6 +53,7 @@ class TheJitter {
       debug('Exceeded', { actual: this.count, max: this.maxCount })
       this.resetCount()
     }
+
     if (this.count < 0) {
       debug('Lower than zero')
       this.resetCount()
@@ -90,6 +92,7 @@ class TheJitter {
     if (!duration) {
       return
     }
+
     debug(`wait for ${duration}ms (${this.count} call exists)`)
     await asleep(duration)
   }

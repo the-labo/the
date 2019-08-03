@@ -11,7 +11,7 @@ const asleep = require('asleep')
 
 /** @lends waitFor */
 async function waitFor(condition, options = {}) {
-  const { interval = 100, timeout = 5 * 60 * 1000 } = options
+  const { interval = 100, timeout = 300000 } = options
   const startAt = new Date()
   let ready
   do {
@@ -20,6 +20,7 @@ async function waitFor(condition, options = {}) {
     if (took > timeout) {
       throw new Error(`[waitForFile] Time out to wait for file: ${condition}`)
     }
+
     await asleep(interval)
   } while (!ready)
 }

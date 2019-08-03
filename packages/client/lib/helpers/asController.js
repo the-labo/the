@@ -35,6 +35,7 @@ function asController(instance, spec, context, options = {}) {
         if (callbacks.length === 0) {
           onToggleHandler(handleName, true)
         }
+
         this.callbacks = { ...this.callbacks, [handleName]: added }
         return () => this.removeCallback(handleName, callbackFunc)
       },
@@ -53,7 +54,6 @@ function asController(instance, spec, context, options = {}) {
           }
         }
       },
-
       /** @deprecated */
       delCallback(...handleNames) {
         for (const handleName of handleNames) {
@@ -77,6 +77,7 @@ function asController(instance, spec, context, options = {}) {
         if (removed.length === 0) {
           onToggleHandler(handleName, false)
         }
+
         this.callbacks = {
           ...this.callbacks,
           [handleName]: removed,

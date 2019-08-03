@@ -86,9 +86,11 @@ class TheInputCheckbox extends React.PureComponent {
     if (has && !checked) {
       value = value.filter((value) => value !== changedValue)
     }
+
     if (!has && checked) {
       value.push(changedValue)
     }
+
     onChange && onChange(e)
     onUpdate &&
       onUpdate({

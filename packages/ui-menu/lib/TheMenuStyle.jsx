@@ -115,7 +115,6 @@ TheMenuStyle.data = (options) => {
       activeOpacity,
       animationDuration,
       contentWidth,
-
       hoverOpacity,
       overlayBackgroundColor,
       overlayBorderColor,

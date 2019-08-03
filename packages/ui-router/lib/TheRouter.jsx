@@ -57,6 +57,7 @@ class TheRouter extends React.Component {
       if (historyChanged) {
         throw new Error('[TheRouter] You cannot change <TheRouter history>')
       }
+
       this.unlisten = history.listen(() => {
         this.forceUpdate()
       })

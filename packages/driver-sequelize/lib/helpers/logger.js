@@ -15,6 +15,7 @@ module.exports = {
     if (shouldSkip('warn')) {
       return
     }
+
     console.warn(`[TheDriverSequelize] ${msg}`, ...values)
   },
 }

@@ -65,10 +65,12 @@ class TheResource extends TheResourceBase {
     if (!id) {
       throw new Error('[TheResource.refOf] id is required')
     }
+
     const [{ $ref }] = arguments
     if ($ref) {
       return $ref
     }
+
     return super.refOf(id)
   }
 
@@ -98,20 +100,24 @@ class TheResource extends TheResourceBase {
     if (!entity) {
       return null
     }
+
     const values = await this.invalidated({ ...entity })
     if (values === null) {
       return null
     }
+
     if (typeof values === 'undefined') {
       console.warn(
         `[TheResource][${this.resourceName}] You should return \`null\` or valid object from \`.invalidated(attributes)\``,
       )
       return null
     }
+
     const hasChange = Object.entries(values).some(([k, v]) => entity[k] !== v)
     if (!hasChange) {
       return null
     }
+
     return entity.update(values)
   }
 

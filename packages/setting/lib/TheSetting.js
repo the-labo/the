@@ -90,6 +90,7 @@ class TheSetting extends TheSettingBase {
     if (notChanged) {
       return this.cache
     }
+
     try {
       const content = readAsJsonSync(this.filename)
       this.cache = content
@@ -120,6 +121,7 @@ class TheSetting extends TheSettingBase {
       this.set({ [arguments[0]]: arguments[1] })
       return
     }
+
     const { logger } = this
     const current = this.get()
     this.saveValues(Object.assign({}, current, values))
@@ -144,6 +146,7 @@ class TheSetting extends TheSettingBase {
       if (from === to) {
         continue
       }
+
       logger.debug(`${key}: ${current[key]} => ${asked[key]}`)
       updating[key] = to
     }

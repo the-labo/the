@@ -32,6 +32,7 @@ function Dialogs(config) {
   if (components.length === 0) {
     console.warn(`[the-template] No dialogs found in ${dirname}`)
   }
+
   return {
     data: {
       components,

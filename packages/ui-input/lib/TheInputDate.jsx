@@ -153,15 +153,18 @@ class TheInputDate extends React.PureComponent {
     if (skip) {
       return
     }
+
     const { picker } = this
     if (!picker) {
       return
     }
+
     const { maxDate, minDate, value } = config
     picker.set(cleanup({ maxDate, minDate }))
     if (value) {
       picker.jumpToDate(value)
     }
+
     picker.redraw()
   }
 }

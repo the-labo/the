@@ -100,6 +100,7 @@ class TheRTCClient extends TheRTCClientBase {
     if (!clients) {
       return null
     }
+
     return clients.find((client) => client.rid === rid)
   }
 
@@ -188,7 +189,7 @@ class TheRTCClient extends TheRTCClientBase {
       },
       {
         label: 'WAIT_ICE_SERVER',
-        timeout: 10 * 1000,
+        timeout: 10000,
       },
     )
   }
@@ -201,6 +202,7 @@ class TheRTCClient extends TheRTCClientBase {
     if (this.room) {
       await this.leave()
     }
+
     this.destroySocket()
   }
 
@@ -239,6 +241,7 @@ class TheRTCClient extends TheRTCClientBase {
           if (answer.to !== this.rid) {
             return
           }
+
           socket.off(IOEvents.PEER_ANSWER, onAnswer)
           resolve(answer)
         }
@@ -278,6 +281,7 @@ class TheRTCClient extends TheRTCClientBase {
       if (client.rid === this.rid) {
         continue
       }
+
       await this.establishPeer(client, PeerPurposes.DEFAULT)
     }
   }
@@ -330,9 +334,11 @@ class TheRTCClient extends TheRTCClientBase {
       console.warn('[TheRTCClient] Invalid ice:', coming)
       return
     }
+
     if (!ice) {
       return
     }
+
     try {
       await this.setPeerICECandidate(pid, ice)
     } catch (e) {
@@ -345,6 +351,7 @@ class TheRTCClient extends TheRTCClientBase {
       console.warn('[TheRTCClient] Invalid offer:', offer)
       return
     }
+
     await this.answerToPeerOffer(offer)
   }
 

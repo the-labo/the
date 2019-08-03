@@ -15,6 +15,7 @@ function isiOS(options = {}) {
   if (!userAgent) {
     return false
   }
+
   const browser = Bowser.getParser(userAgent)
   return browser.isOS('iOS')
 }
@@ -25,6 +26,7 @@ isiOS.webview = (options = {}) => {
   if (!isiOS({ userAgent })) {
     return false
   }
+
   const isSafari = browser.isBrowser('Safari')
   const version = browser.getBrowserVersion()
   // ios webview detected as safari without version

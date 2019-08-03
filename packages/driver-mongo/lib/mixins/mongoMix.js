@@ -21,6 +21,7 @@ function mongoMix(Class) {
       if (!id) {
         return new ObjectID()
       }
+
       return new ObjectID(String(id))
     }
 

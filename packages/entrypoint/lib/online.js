@@ -17,6 +17,7 @@ function online() {
       const location = get('window.location')
       location.reload()
     }
+
     isOffline = !detected
   })
 }

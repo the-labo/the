@@ -10,6 +10,7 @@ const astHelper = Object.freeze(
       if (!node) {
         return false
       }
+
       return node.type === type
     },
     /** @deprecated */
@@ -19,6 +20,7 @@ const astHelper = Object.freeze(
       if (!node) {
         return false
       }
+
       return astHelper.isObjectPattern(node) && node.properties.length === 0
     },
     /** @deprecated */
@@ -33,6 +35,7 @@ const astHelper = Object.freeze(
       if (!node) {
         return false
       }
+
       return (
         node.type === 'CallExpression' &&
         (node.callee && node.callee.name === 'require')

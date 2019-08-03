@@ -32,6 +32,7 @@ export function normalizeArrayValue(values, splitter = ',') {
       if (typeof value === 'string') {
         return normzlied.concat(value.split(splitter))
       }
+
       return normzlied.concat(value)
     }, [])
 }
@@ -40,9 +41,11 @@ export function renderErrorMessage(error) {
   if (!error) {
     return <span className='the-input-message the-input-message-empty' />
   }
+
   if (typeof error === 'string') {
     error = { message: error }
   }
+
   return (
     <span className='the-input-message the-input-error-message'>
       {error.message}
@@ -54,9 +57,11 @@ export function renderWarningMessage(warning) {
   if (!warning) {
     return <span className='the-input-message the-input-message-empty' />
   }
+
   if (typeof warning === 'string') {
     warning = { message: warning }
   }
+
   return (
     <span className='the-input-message the-input-warn-message'>
       {warning.message}
@@ -68,11 +73,13 @@ export function isImageUrl(src) {
   if (/^data:image/.test(src)) {
     return true
   }
+
   const imageExtensions = ['.jpg', '.jpeg', '.svg', '.gif', '.png']
   const extname = path.extname(parseUrl(src).pathname)
   if (!extname) {
     return false
   }
+
   return imageExtensions.includes(extname)
 }
 
@@ -80,10 +87,12 @@ export function isVideoUrl(src) {
   if (/^data:video/.test(src)) {
     return true
   }
+
   const extname = path.extname(parseUrl(src).pathname)
   if (!extname) {
     return false
   }
+
   return videoExtensions.includes(extname.replace(/^\./, ''))
 }
 
@@ -91,6 +100,7 @@ export function isUnknownTypeUrl(src) {
   if (/^data:/.test(src)) {
     return false
   }
+
   const extname = path.extname(parseUrl(src).pathname)
   return !extname
 }
@@ -99,6 +109,7 @@ export function onOffBoolean(v) {
   if (typeof v === 'boolean') {
     return v ? 'on' : 'off'
   }
+
   return v
 }
 

@@ -62,176 +62,125 @@ const privateReposCredentials = {
 module.exports = pon(
   /** @module tasks */
   {
-    // -----------------------------------
-    // Meta info
-    // -----------------------------------
-    ...{
-      $cwd: __dirname,
-      $doc: Pondoc,
-    },
-
-    // -----------------------------------
-    // Sub Tasks for Assets
-    // -----------------------------------
-    ...{
-      'assets:compile': [
-        md('assets/markdowns', 'assets/html/partials', {
-          vars: require('./conf/locales'),
-        }),
-      ],
-      'assets:install': () => theAssets().installTo('assets', { copy: true }),
-    },
-
-    // -----------------------------------
-    // Sub Tasks for Check
-    // -----------------------------------
-    ...{
-      'check:bin': theBin.test(Bins),
-    },
-
-    // -----------------------------------
-    // Sub Tasks for Database
-    // -----------------------------------
-    ...{
-      /** Open database cli */
-      'db:cli': () => createDB().cli(),
-      /** Drop database */
-      'db:drop': ['unless:production', drop(createDB)],
-      /** Dump data */
-      'db:dump': dump(createDB, 'var/backup/dump', { gzip: true, max: 1 }),
-      /** Export database into file */
-      'db:exp': exp(createDB, 'var/exp'),
-      /** Import database from file */
-      'db:imp': imp(createDB, 'var/imp'),
-      /** Load data from dump */
-      'db:load': load.ask(createDB),
-      /** Migrate data */
-      'db:migrate': migrate(createDB, migration, {}),
-      /** Drop and setup database again */
-      'db:reset': ['unless:production', 'db:drop', 'db:setup', 'db:seed'],
-      /** Generate test data */
-      'db:seed': seed(createDB, 'server/db/seeds/:env/*.seed.js'),
-      /** Setup database */
-      'db:setup': [
-        setup(createSharedDB),
-        env.dynamic(({ isProduction }) =>
-          isProduction()
-            ? fork('./misc/tasks/setUpForProduction.js')
-            : setup(createDB),
-        ),
-      ],
-      /** Create user */
-      'db:user:create': fork('misc/scripts/createUser.js'),
-    },
-    deploy: deploy({
-      host: '13.73.30.218',
-      privateKey: '/tmp/deploy_rsa',
-      projectPath:
-        '/home/daisan/apps/dev.drone-scope.realglobe.work/drone-scope',
-      targetBranch: 'latest',
-      username: 'daisan',
+    $cwd: __dirname,
+    $doc: Pondoc,
+    'assets:compile': [
+      md('assets/markdowns', 'assets/html/partials', {
+        vars: require('./conf/locales'),
+      }),
+    ],
+    'assets:install': () => theAssets().installTo('assets', { copy: true }),
+    'check:bin': theBin.test(Bins),
+    'db:cli': () => createDB().cli(),
+    /** Drop database */
+    'db:drop': ['unless:production', drop(createDB)],
+    /** Dump data */
+    'db:dump': dump(createDB, 'var/backup/dump', { gzip: true, max: 1 }),
+    /** Export database into file */
+    'db:exp': exp(createDB, 'var/exp'),
+    /** Import database from file */
+    'db:imp': imp(createDB, 'var/imp'),
+    /** Load data from dump */
+    'db:load': load.ask(createDB),
+    /** Migrate data */
+    'db:migrate': migrate(createDB, migration, {}),
+    /** Drop and setup database again */
+    'db:reset': ['unless:production', 'db:drop', 'db:setup', 'db:seed'],
+    /** Generate test data */
+    'db:seed': seed(createDB, 'server/db/seeds/:env/*.seed.js'),
+    /** Setup database */
+    'db:setup': [
+      setup(createSharedDB),
+      env.dynamic(({ isProduction }) =>
+        isProduction()
+          ? fork('./misc/tasks/setUpForProduction.js')
+          : setup(createDB),
+      ),
+    ],
+    /** Create user */
+    'db:user:create': fork('misc/scripts/createUser.js'),
+    'env:debug': env(
+      'development',
+      Object.assign({ DEBUG: Logger.level(Logger.DEBUG) }),
+    ),
+    /** Set env variables for production */
+    'env:prod': env(
+      'production',
+      Object.assign({ DEBUG: Logger.level(Logger.INFO) }),
+    ),
+    /** Set env variables for test */
+    'env:test': env('test'),
+    'git:catchup': [git('reset', '--hard'), git('pull')],
+    /** Fetch tags from git */
+    'git:tags': git('fetch', '--tags'),
+    'image:build': dockerImage.build('../..', { confDir: 'misc/docker/app' }),
+    /** Prepare for building docker image */
+    'image:prepare': ['env:prod', 'prod:compile'],
+    /** Push docker image */
+    'image:push': dockerImage.push('misc/docker/app', {
+      privateReposCredentials,
     }),
-    ...{
-      /** Set env variables for debug */
-      'env:debug': env(
-        'development',
-        Object.assign({ DEBUG: Logger.level(Logger.DEBUG) }),
-      ),
-      /** Set env variables for production */
-      'env:prod': env(
-        'production',
-        Object.assign({ DEBUG: Logger.level(Logger.INFO) }),
-      ),
-      /** Set env variables for test */
-      'env:test': env('test'),
-    },
-
-    // -----------------------------------
-    // Sub Tasks for Git
-    // -----------------------------------
-    ...{
-      /** Catch up to latest git */
-      'git:catchup': [git('reset', '--hard'), git('pull')],
-      /** Fetch tags from git */
-      'git:tags': git('fetch', '--tags'),
-    },
-
-    // -----------------------------------
-    // Sub Tasks for maintenance
-    // -----------------------------------
-    ...{
-      /** STop maintenance mode */
-      'maintenance:off': del('var/app/maintenance'),
-      /** Start maintenance mode */
-      'maintenance:on': write('var/app/maintenance', ''),
-    },
-
-    // -----------------------------------
-    // Sub Tasks for Package
-    // -----------------------------------
-    ...{
-      /** Fix package.json */
-      'pkg:fix': npx('fixpack'),
-      /** Install packages */
-      'pkg:install': npm('install', '--ignore-scripts --no-save'),
-      /** Install packages forcefully */
-      'pkg:install:force': npm('install', '--ignore-scripts --no-save --force'),
-      /** Link self packages */
-      'pkg:link': symlink(
-        {
-          'assets/data': 'node_modules/@self/data',
-          'package.json': 'shim/package.json',
-          'shim/conf': 'node_modules/@self/conf',
-        },
-        { force: true },
-      ),
-      /** Upgrade packages package.json */
-      'pkg:upg': npm('upgrade', '--ignore-scripts'),
-    },
-
-    // -----------------------------------
-    // Sub Tasks for PM2
-    // -----------------------------------
-    ...{
-      /** Run app with pm2 */
-      'pm2:app': pm2('./bin/app.js', { name: WebApps.Mapper.PROCESS_NAME }),
-      /** Run beacon batch with pm2 */
-      'pm2:batch:beacon': pm2('./bin/beaconBatch.js', {
-        name: Batches.MapperBeacon.PROCESS_NAME,
-      }),
-      /** Run worker batch with pm2 */
-      'pm2:batch:worker': pm2('./bin/workerBatch.js', {
-        name: Batches.WorkerBeacon.PROCESS_NAME,
-      }),
-    },
-
-    // -----------------------------------
-    // Sub Tasks for Production
-    // -----------------------------------
-    ...{
-      /** Cleanup build files */
-      'prod:clean': del('public/build/**/*.*'),
-      /** Compile files for production */
-      'prod:compile': [
-        'env:prod',
-        'prod:clean',
-        'build',
-        'prod:map',
-        'prod:css',
-        'prod:js',
-      ],
-      /** Compile css files for production */
-      'prod:css': css.minify(
-        [`public${Urls.CSS_BUNDLE_URL}`],
-        `public${Urls.PROD_CSS_BUNDLE_URL}`,
-      ),
-      /** Prepare database for production */
-      'prod:db': ['env:prod', 'db'],
-      /** Compile js files for production */
-      'prod:js': ccjs.dir('public/build', `public${Urls.PROD_ASSET_URL}`, {}),
-      /** Delete source map files for production */
-      'prod:map': del('public/**/*.map'),
-    },
+    /** Push docker image on Travis */
+    'image:push:travis': dockerImage.push.onTravis('misc/docker/app', {
+      privateReposCredentials,
+      targetBranch: 'mapper',
+    }),
+    'maintenance:off': del('var/app/maintenance'),
+    /** Start maintenance mode */
+    'maintenance:on': write('var/app/maintenance', ''),
+    'pkg:fix': npx('fixpack'),
+    /** Install packages */
+    'pkg:install': npm('install', '--ignore-scripts --no-save'),
+    /** Install packages forcefully */
+    'pkg:install:force': npm('install', '--ignore-scripts --no-save --force'),
+    /** Link self packages */
+    'pkg:link': symlink(
+      {
+        'assets/data': 'node_modules/@self/data',
+        'package.json': 'shim/package.json',
+        'shim/conf': 'node_modules/@self/conf',
+      },
+      { force: true },
+    ),
+    /** Upgrade packages package.json */
+    'pkg:upg': npm('upgrade', '--ignore-scripts'),
+    'pm2:app': pm2('./bin/app.js', { name: WebApps.Mapper.PROCESS_NAME }),
+    /** Run beacon batch with pm2 */
+    'pm2:batch:beacon': pm2('./bin/beaconBatch.js', {
+      name: Batches.MapperBeacon.PROCESS_NAME,
+    }),
+    /** Run worker batch with pm2 */
+    'pm2:batch:worker': pm2('./bin/workerBatch.js', {
+      name: Batches.WorkerBeacon.PROCESS_NAME,
+    }),
+    'prod:clean': del('public/build/**/*.*'),
+    /** Compile files for production */
+    'prod:compile': [
+      'env:prod',
+      'prod:clean',
+      'build',
+      'prod:map',
+      'prod:css',
+      'prod:js',
+    ],
+    /** Compile css files for production */
+    'prod:css': css.minify(
+      [`public${Urls.CSS_BUNDLE_URL}`],
+      `public${Urls.PROD_CSS_BUNDLE_URL}`,
+    ),
+    /** Prepare database for production */
+    'prod:db': ['env:prod', 'db'],
+    /** Compile js files for production */
+    'prod:js': ccjs.dir('public/build', `public${Urls.PROD_ASSET_URL}`, {}),
+    /** Delete source map files for production */
+    'prod:map': del('public/**/*.map'),
+    'ps:debug:app': thePS('var/app/debug/app.pid'),
+    /** Process check for debug beacon batch */
+    'ps:debug:beacon': thePS('var/app/debug/beacon.pid'),
+    /** Process check for debug worker batch */
+    'ps:debug:worker': thePS('var/app/debug/worker.pid'),
+    /** Process check for e2e */
+    'ps:e2e': thePS('var/app/e2e.pid'),
     'struct:chmod': chmod({
       'bin/**/*.*': '755',
     }),
@@ -310,45 +259,12 @@ module.exports = pon(
       { sub: ['watch', 'analyze'] },
     ),
     'unless:production': env.notFor('production'),
-
-    // -----------------------------------
-    // Sub Tasks for Building docker image
-    // -----------------------------------
-    ...{
-      /** Build docker image */
-      'image:build': dockerImage.build('../..', { confDir: 'misc/docker/app' }),
-      /** Prepare for building docker image */
-      'image:prepare': ['env:prod', 'prod:compile'],
-      /** Push docker image */
-      'image:push': dockerImage.push('misc/docker/app', {
-        privateReposCredentials,
-      }),
-      /** Push docker image on Travis */
-      'image:push:travis': dockerImage.push.onTravis('misc/docker/app', {
-        privateReposCredentials,
-        targetBranch: 'mapper',
-      }),
-    },
-
-    // -----------------------------------
-    // Sub Tasks for Process
-    // -----------------------------------
-    ...{
-      /** Process check for debug app */
-      'ps:debug:app': thePS('var/app/debug/app.pid'),
-      /** Process check for debug beacon batch */
-      'ps:debug:beacon': thePS('var/app/debug/beacon.pid'),
-      /** Process check for debug worker batch */
-      'ps:debug:worker': thePS('var/app/debug/worker.pid'),
-      /** Process check for e2e */
-      'ps:e2e': thePS('var/app/e2e.pid'),
-    },
-
     // -----------------------------------
     // Main Tasks
     // -----------------------------------
     /** Run all assets tasks */
     assets: ['assets:*'],
+    b: 'build',
     /** Build the project */
     build: ['struct:compile', 'pkg:link', 'struct', 'ui'],
     /** Check bins */
@@ -357,8 +273,20 @@ module.exports = pon(
     db: ['db:setup', 'db:migrate', 'db:seed'],
     /** Restart app as daemon */
     default: ['build'],
+    deploy: deploy({
+      host: '13.73.30.218',
+      privateKey: '/tmp/deploy_rsa',
+      projectPath:
+        '/home/daisan/apps/dev.drone-scope.realglobe.work/drone-scope',
+      targetBranch: 'latest',
+      username: 'daisan',
+    }),
     /** Show app daemon logs */
     logs: ['pm2:*/logs'],
+    /** Shortcut for `prod` task */
+    p: 'prod',
+    /** Shortcut for 'prepare` task */
+    pre: 'prepare',
     /** Prepare project */
     prepare: [
       'check',
@@ -389,17 +317,5 @@ module.exports = pon(
     ],
     /** Run all ui tasks */
     ui: ['ui:css', 'ui:react', 'ui:browser', 'ui:workers'],
-
-    // -----------------------------------
-    // Aliases
-    // -----------------------------------
-    ...{
-      /** Shortcut for `build` task */
-      b: 'build',
-      /** Shortcut for `prod` task */
-      p: 'prod',
-      /** Shortcut for 'prepare` task */
-      pre: 'prepare',
-    },
   },
 )

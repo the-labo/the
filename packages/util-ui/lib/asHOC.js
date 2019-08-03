@@ -8,6 +8,7 @@ function asHOC(decorator) {
       const Class = ClassDescriptor
       return decorator(Class)
     }
+
     throw new Error('[asHOC] Not implemented yet')
   }
 }

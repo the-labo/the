@@ -13,6 +13,7 @@ function unlessProduction(handler) {
   if (isProduction()) {
     return true
   }
+
   handler()
 }
 

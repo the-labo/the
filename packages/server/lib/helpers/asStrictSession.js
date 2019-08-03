@@ -15,6 +15,7 @@ function asStrictSession(session) {
           if (v === null) {
             return v
           }
+
           return new Proxy(v, {
             set(target, innerKey) {
               throw new Error(

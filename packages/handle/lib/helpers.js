@@ -15,6 +15,7 @@ module.exports = {
       if (constructor === Object) {
         break
       }
+
       const found = Object.getOwnPropertyNames(__proto__)
         .filter((name) => !namesToIgnore.includes(name))
         .filter((name) => {
@@ -36,6 +37,7 @@ module.exports = {
       if (!(name in target)) {
         target[name] = {}
       }
+
       target = target[name]
     }
     target[names.shift()] = value

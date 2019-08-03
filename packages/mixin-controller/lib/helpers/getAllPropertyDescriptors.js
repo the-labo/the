@@ -13,6 +13,7 @@ function getAllPropertyDescriptors(instance) {
       if (constructor === Object) {
         break
       }
+
       const found = Object.getOwnPropertyDescriptors(__proto__)
       descriptors = Object.assign({}, found, descriptors)
       __proto__ = Object.getPrototypeOf(__proto__)

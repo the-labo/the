@@ -29,6 +29,7 @@ function debugStream(stream) {
           return result
         }
       }
+
       return value
     },
   })

@@ -18,15 +18,19 @@ async function processCSSRule(content) {
     if (/^&/.test(selector)) {
       weight -= 100
     }
+
     if (/^&:/.test(selector)) {
       weight -= 100
     }
+
     if (/^&:global/.test(selector)) {
       weight += 100
     }
+
     if (/^& /.test(selector)) {
       weight += 100
     }
+
     return weight
   }
 
@@ -53,6 +57,7 @@ async function processCSSRule(content) {
         if (aWeight !== bWeight) {
           return aWeight - bWeight
         }
+
         return a.selector.localeCompare(b.selector)
       })
       for (let i = 0; i < sortedByStart.length; i++) {

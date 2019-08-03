@@ -30,6 +30,7 @@ function mergeDuplicateImportOnProgramNode(programNode, { get, replace }) {
     if (declarations.length <= 1) {
       continue
     }
+
     const specifiers = declarations
       .reduce(
         (specifiers, declaration) => [...specifiers, ...declaration.specifiers],
@@ -39,6 +40,7 @@ function mergeDuplicateImportOnProgramNode(programNode, { get, replace }) {
     if (specifiers.length === 0) {
       continue
     }
+
     const [{ start }] = declarations
     const { end } = declarations[declarations.length - 1]
     const original = get([start, end])
@@ -70,6 +72,7 @@ function mergeDuplicateImportOnProgramNode(programNode, { get, replace }) {
             .filter(Boolean)
             .join(EOL)
         }
+
         return [before, '', after].join('')
       }, original)
     if (original !== merged) {

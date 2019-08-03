@@ -11,7 +11,7 @@
 function promiseMix(Class) {
   class PromiseMixed extends Class {
     async asPromise(invoke, options = {}) {
-      const { label = '', timeout = 30 * 1000 } = options
+      const { label = '', timeout = 30000 } = options
       return new Promise((resolve, reject) => {
         const timeoutTimer = setTimeout(
           () =>

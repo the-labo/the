@@ -36,6 +36,7 @@ const withResult = asClassMixin((Class) => {
           } else {
             this.set({ result })
           }
+
           return result
         } catch (e) {
           this.scope.result.del()

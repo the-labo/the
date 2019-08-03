@@ -45,10 +45,12 @@ class TheStepBar extends React.Component {
     if (!elm) {
       return
     }
+
     const child = (elm.childNodes || [])[step]
     if (!child) {
       return
     }
+
     const center = child.offsetLeft + child.offsetWidth / 2
     elm.scrollLeft = center - elm.offsetWidth / 2
   }

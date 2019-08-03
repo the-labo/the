@@ -26,9 +26,11 @@ class ClassMethodCallCounter extends Counter {
       )
       return
     }
+
     if (method.$$theMetricsInjected) {
       throw new Error('[TheMetrics] already injected')
     }
+
     const counter = this
 
     function methodCallCounterWrap() {

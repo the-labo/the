@@ -16,6 +16,7 @@ function decorateRule(config) {
   if (Object.keys(rest).length > 0) {
     console.warn('[decorateRule] Unknown options', Object.keys(rest))
   }
+
   return async function decorateRuleCheck({ content, filename, report }) {
     const parsed = parse(String(content), {
       sourceType: 'unambiguous',
@@ -39,6 +40,7 @@ function decorateRule(config) {
         if (!expression) {
           continue
         }
+
         const ok = PossibleIdentifiers.some((Identifiers) =>
           Identifiers.some(
             (Identifier) =>

@@ -50,6 +50,7 @@ function cleanupUnusedArgumentsOnFunctionNode(
   if (isValid) {
     return
   }
+
   const prevParam = FunctionNode.params[FunctionNode.params.length - 2]
   const paramsRange = enclosedRange([firstParam.start, lastParam.end], {
     left: '(',
@@ -58,6 +59,7 @@ function cleanupUnusedArgumentsOnFunctionNode(
   if (paramsRange[0] < FunctionNode.start) {
     return replace([firstParam.start, firstParam.end], '()')
   }
+
   const start = prevParam ? prevParam.end : lastParam.start
   const end = paramsRange[1] - 1
   return replace([start, end], '')

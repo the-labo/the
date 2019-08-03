@@ -32,6 +32,7 @@ function entryAccessFor(scope) {
       if (raw) {
         return entry
       }
+
       return expand(entry)
     },
     getEntryErrors() {
@@ -69,6 +70,7 @@ function entryAccessFor(scope) {
         if (entryErrors) {
           entryAccess.setEntryErrors(entryErrors)
         }
+
         throw e
       }
     },

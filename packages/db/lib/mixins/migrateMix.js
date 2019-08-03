@@ -37,6 +37,7 @@ function migrateMix(Class) {
       if (!handler) {
         return null
       }
+
       await handler(this, { schema })
 
       await asleep(10) // increment migratedAt
@@ -59,10 +60,12 @@ function migrateMix(Class) {
       if (await TheDBSchema.exists({ version })) {
         throw new Error(`Version ${version} already exists!`)
       }
+
       const schema = await TheDBSchema.current()
       if (schema.version === version) {
         return false
       }
+
       await TheDBSchema.create({ version })
       return true
     }

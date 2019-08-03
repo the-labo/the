@@ -39,6 +39,7 @@ function sfuMix(Class) {
         console.warn(`[TheRTC] proxy not found for pid: ${pid}`)
         return
       }
+
       return proxy.processICE(ice)
     }
 

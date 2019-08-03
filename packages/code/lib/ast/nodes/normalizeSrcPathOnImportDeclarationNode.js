@@ -16,6 +16,7 @@ function normalizeSrcPathOnImportDeclarationNode(
   if (!dirname) {
     return
   }
+
   const { source } = ImportDeclaration
   if (!isRelative(source.value)) {
     return

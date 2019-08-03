@@ -46,6 +46,7 @@ class JSDoc {
         if (data.meta && data.meta.path) {
           data.meta.path = path.join('.', path.relative(cwd, data.meta.path))
         }
+
         return data
       })
       await this.write(

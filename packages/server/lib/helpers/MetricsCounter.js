@@ -26,9 +26,9 @@ function MetricsCounter() {
       if (!counts[namespace]) {
         throw new Error(`[MetricsMix] Unknown namespace: ${namespace}`)
       }
+
       counts[namespace][key] = (counts[namespace][key] || 0) + amount
     },
-
     addControllerAttachCount(controllerName, amount = 1) {
       return metricsCounter.add(
         'controllerAttachCounts',
@@ -36,7 +36,6 @@ function MetricsCounter() {
         amount,
       )
     },
-
     addControllerDetachCount(controllerName, amount = 1) {
       return metricsCounter.add(
         'controllerDetachCounts',
@@ -44,11 +43,9 @@ function MetricsCounter() {
         amount,
       )
     },
-
     addInvocationKeepCount(controllerName, amount = 1) {
       return metricsCounter.add('invocationKeepCounts', controllerName, amount)
     },
-
     addKeepStartCount(controllerName, amount = 1) {
       return metricsCounter.add(
         'invocationKeepStartCounts',
@@ -56,7 +53,6 @@ function MetricsCounter() {
         amount,
       )
     },
-
     addKeepStopCount(controllerName, amount = 1) {
       return metricsCounter.add(
         'invocationKeepStopCounts',

@@ -24,6 +24,7 @@ function spaceOnCommentNode(CommentNode, options = {}) {
       if (converted) {
         return converted
       }
+
       break
     }
     case 'CommentLine': {
@@ -32,6 +33,7 @@ function spaceOnCommentNode(CommentNode, options = {}) {
         if (CommentNode.value !== SEPARATOR) {
           return replace([CommentNode.start + 2, CommentNode.end], SEPARATOR)
         }
+
         {
           const {
             loc: {
@@ -54,6 +56,7 @@ function spaceOnCommentNode(CommentNode, options = {}) {
           }
         }
       }
+
       break
     }
   }

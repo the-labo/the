@@ -25,6 +25,7 @@ function theSpellTask(patterns, opitons = {}) {
       if (!ok) {
         errorReports[pattern] = reports
       }
+
       const icon = ok ? chalk.green('✓') : chalk.red('⚠')
       subLogger.trace(`${icon} ${ok ? pattern : chalk.red(pattern)}`)
     }

@@ -44,23 +44,27 @@ describe('process-object-property', async () => {
   it('Keep spread params', async () => {
     equal(
       await processJSObject(`
+      const d = { d: 4, z: 5 }
+      const z = { n: 4, a: 5 }
       const a = {
         x: 1,
-        ...{ d: 4, z: 5 },
+        ...d,
         j: 2,
         b: 2,
-        ...{ n: 4, a: 5 },
+        ...z,
         z: 8,
         n: 0,
       
       }`),
       `
+      const d = { d: 4, z: 5 }
+      const z = { a: 5, n: 4 }
       const a = {
         x: 1,
-        ...{ d: 4, z: 5 },
+        ...d,
         b: 2,
         j: 2,
-        ...{ a: 5, n: 4 },
+        ...z,
         n: 0,
         z: 8,
       
@@ -441,6 +445,33 @@ const x = {
   b: 2
 }
 `,
+    )
+  })
+
+  it('Remove spaces between properties', async () => {
+    equal(
+      await processJSObject(`
+const x = {
+ a: 1,
+ b: 2,
+ 
+ c: 3,
+ 
+ /** Some comments */
+ d: 4,
+ /** Some comments2 */
+ e: 5,
+}`),
+      `
+const x = {
+ a: 1,
+ b: 2,
+ c: 3,
+ /** Some comments */
+ d: 4,
+ /** Some comments2 */
+ e: 5,
+}`,
     )
   })
 })

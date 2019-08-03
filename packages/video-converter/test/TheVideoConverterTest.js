@@ -11,7 +11,7 @@ const {
 const TheVideoConverter = require('../lib/TheVideoConverter')
 
 describe('the-video-converter', async function() {
-  this.timeout(120 * 1000)
+  this.timeout(120000)
   before(() => {})
 
   after(() => {})

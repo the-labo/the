@@ -9,7 +9,7 @@ async function tryExample() {
 
   // Start rendering count metrics
   const stop = RenderingCountMetrics(Components, {
-    interval: 30 * 1000,
+    interval: 30000,
   })
 
   /* ... */

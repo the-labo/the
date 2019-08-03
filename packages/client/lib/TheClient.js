@@ -61,6 +61,7 @@ class TheClient extends TheClientBase {
       save(key, cid)
       cookies.set(key, cid, {})
     }
+
     return client
   }
 
@@ -71,6 +72,7 @@ class TheClient extends TheClientBase {
     if (!url) {
       url = parseClientUrl(config)
     }
+
     const {
       cid = TheClient.newCID(),
       forceNewSocket = false,
@@ -85,6 +87,7 @@ class TheClient extends TheClientBase {
         )}`,
       )
     }
+
     super(url, restOptions)
     this.onGone(onGone)
     this._forceNewSocket = forceNewSocket
@@ -138,6 +141,7 @@ class TheClient extends TheClientBase {
       )
       return
     }
+
     const callbacks = []
       .concat(controller.callbacks[handleName])
       .filter(Boolean)
@@ -147,6 +151,7 @@ class TheClient extends TheClientBase {
       )
       return
     }
+
     for (const callback of callbacks) {
       unlessProduction(() => {
         console.groupCollapsed(
@@ -164,6 +169,7 @@ class TheClient extends TheClientBase {
     if (this._gone) {
       return
     }
+
     this._onGone && this._onGone(reason)
     this._gone = true
   }
@@ -197,10 +203,12 @@ class TheClient extends TheClientBase {
         if (!onReturn) {
           return null
         }
+
         returned = decode(returned)
         if (returned.iid !== iid) {
           return
         }
+
         socket.off(IOEvents.RPC_RETURN, onReturn)
         onReturn = null
         onKeep = null
@@ -218,10 +226,12 @@ class TheClient extends TheClientBase {
         if (!onKeep) {
           return
         }
+
         kept = decode(kept)
         if (kept.iid !== iid) {
           return
         }
+
         socket.off(IOEvents.RPC_KEEP, onKeep)
         onKeep = null
         debug('rpc keep', moduleName, methodName)
@@ -263,9 +273,10 @@ class TheClient extends TheClientBase {
       if (this.closed) {
         return
       }
+
       const goneTimer = setTimeout(
         () => this.markAsGone(reason),
-        2 * 1000 + 2 * 1000 * Math.random(),
+        2000 + 2000 * Math.random(),
       )
       const cancelGone = () => {
         debug('cancelGone')
@@ -304,6 +315,7 @@ class TheClient extends TheClientBase {
     if (!this._socket) {
       this._socket = await this.newSocket()
     }
+
     const stream = await this.openStream(name, params)
     return debug ? debugStream(stream) : stream
   }
@@ -322,6 +334,7 @@ class TheClient extends TheClientBase {
     if (!this._socket) {
       this._socket = await this.newSocket()
     }
+
     if (!controller) {
       const instance = await this.connect(controllerName)
       const spec = await this.describe(controllerName)
@@ -352,6 +365,7 @@ class TheClient extends TheClientBase {
       if (debug) {
         controller = debugController(controller)
       }
+
       this._controllers[controllerName] = controller
     }
 
@@ -375,12 +389,14 @@ class TheClient extends TheClientBase {
       if (typeof Proxy === 'undefined') {
         return controllers
       }
+
       return new Proxy(controllers, {
         get(target, key) {
           const has = key in target
           if (!has) {
             console.warn(`[TheClient] Unknown controller name: "${key}"`)
           }
+
           return target[key]
         },
       })

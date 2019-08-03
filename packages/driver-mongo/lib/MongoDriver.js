@@ -101,6 +101,7 @@ class MongoDriver extends MongoDriverBase {
     if (!found) {
       return 0
     }
+
     const { _id } = found
     const destroyed = await collection.deleteOne({
       _id,
@@ -147,6 +148,7 @@ class MongoDriver extends MongoDriverBase {
     if (!found) {
       return null
     }
+
     return asEntity(found)
   }
 
@@ -172,6 +174,7 @@ class MongoDriver extends MongoDriverBase {
     if (!one) {
       throw new Error(`[TheDriverMongo] Data not found for id: ${id}`)
     }
+
     const { _id } = one
     const $set = parseInboundAttributes(
       Object.assign(
@@ -198,6 +201,7 @@ class MongoDriver extends MongoDriverBase {
         },
       )
     }
+
     return this.one(resourceName, id)
   }
 
@@ -206,6 +210,7 @@ class MongoDriver extends MongoDriverBase {
     if (!this.db) {
       throw new Error('DB Already closed')
     }
+
     const collection = this.db.collection(resourceName)
     await collection.createIndex('id')
     return this.enhanceMongoCollection(collection)

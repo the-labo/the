@@ -97,6 +97,7 @@ class TheView extends React.Component {
     if (!valid) {
       return null
     }
+
     return (
       <TheButton
         className='the-view-header-button'

@@ -20,6 +20,7 @@ function cleanupRedundantArrayPatternOnArrayExpression(
   if (!SpreadElement) {
     return
   }
+
   const {
     argument: { elements },
     leadingComments,
@@ -31,7 +32,9 @@ function cleanupRedundantArrayPatternOnArrayExpression(
   if (elements.length === 0) {
     return replace(range, '')
   }
+
   const content = get([elements[0].start, elements[elements.length - 1].end])
   return replace(range, content)
 }
+
 module.exports = cleanupRedundantArrayPatternOnArrayExpression

@@ -42,6 +42,7 @@ function serverRendering(Html, options = {}) {
     if (cached) {
       return String(cached)
     }
+
     const element = c(d(Html), props)
     const generated = prefix + renderToStaticMarkup(element)
 

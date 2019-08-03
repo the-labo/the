@@ -15,6 +15,7 @@ class ThePassword {
         '[the-password] Passing algorithm on constructor is now deprecated',
       )
     }
+
     const { algorithm = 'sha1' } = options
     this.defaultAlgorithm = algorithm
     abind(this)
@@ -25,6 +26,7 @@ class ThePassword {
     if (stretching === 1) {
       console.warn('[the-password] Should set stretching option for safety')
     }
+
     let hashed = password
     let count = stretching > 0 ? stretching : 1
     while (count--) {

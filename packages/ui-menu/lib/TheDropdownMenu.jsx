@@ -145,10 +145,12 @@ class TheDropDownMenu extends React.Component {
     if (arguments.length === 0) {
       open = !this.state.open
     }
+
     const skip = this.state.open === open
     if (skip) {
       return
     }
+
     this.setState({ open })
   }
 }

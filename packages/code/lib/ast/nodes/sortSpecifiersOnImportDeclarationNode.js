@@ -14,6 +14,7 @@ function sortSpecifiersOnImportDeclarationNode(ImportDeclaration, { swap }) {
   if (specifiers.length === 0) {
     return
   }
+
   const importedSpecifiers = specifiers.filter(({ imported }) => !!imported)
   const sortedByStart = [...importedSpecifiers].sort(compareBy('start'))
   const sortedByName = [...importedSpecifiers].sort((a, b) =>

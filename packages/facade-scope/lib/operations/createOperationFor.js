@@ -38,7 +38,6 @@ function createOperationFor(scope) {
     init() {
       scope.init()
     },
-
     /**
      * Execute creating
      * @param {function(object): Promise} handler
@@ -53,7 +52,6 @@ function createOperationFor(scope) {
         busyAccess.while(async () => entryAccess.process(handler)),
       )
     },
-
     /**
      * Set entry
      * @param {Object} entry

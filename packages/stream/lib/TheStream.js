@@ -47,6 +47,7 @@ class TheStream {
     if (this.consumer) {
       await this.consumer.abort()
     }
+
     if (this.provider) {
       await this.provider.abort()
     }
@@ -56,16 +57,19 @@ class TheStream {
     if (this.closed) {
       return
     }
+
     this.assertNotClosed()
     this.streamWillClose()
     if (this.consumer) {
       await this.consumer.close()
       this.consumer = null
     }
+
     if (this.provider) {
       await this.provider.close()
       this.provider = null
     }
+
     this.opened = false
     this.closed = true
   }

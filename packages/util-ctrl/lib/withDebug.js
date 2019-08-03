@@ -28,6 +28,7 @@ function withDebug(ctrl, options = {}) {
       ...ctrl,
     }
   }
+
   return Object.assign(
     {},
     ...Object.entries(ctrl).map(([name, original]) => ({

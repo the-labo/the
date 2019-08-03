@@ -41,10 +41,12 @@ class Consumer {
     if (this.aborted) {
       return
     }
+
     if (this.reader) {
       await this.reader.cancel(reason)
       this.reader = null
     }
+
     if (this.writer) {
       await this.writer.abort(reason)
       this.writer = null
@@ -55,19 +57,23 @@ class Consumer {
     if (this.closed) {
       return
     }
+
     if (this.aborted) {
       return
     }
+
     this.closed = true
     if (this.writer) {
       await this.writer.ready
       await this.writer.close()
       this.writer = null
     }
+
     if (this.readableController) {
       await this.readableController.close()
       this.readableController = null
     }
+
     if (this.reader) {
       await this.reader.closed
       this.reader = null

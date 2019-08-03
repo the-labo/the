@@ -19,11 +19,13 @@ function convertInbound(values, options = {}) {
     if (propertyName in MetaColumnNames) {
       continue
     }
+
     const attributeName = parseAttributeName(propertyName)
     const isMeta = /^\$\$/.test(propertyName)
     if (isMeta) {
       continue
     }
+
     const isKnown = attributeName in ModelAttributes
     if (!isKnown) {
       logger.warn(
@@ -31,6 +33,7 @@ function convertInbound(values, options = {}) {
       )
       continue
     }
+
     converted[attributeName] = serializer.serialize(v, {
       schema: Schema[propertyName],
     })

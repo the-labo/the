@@ -52,6 +52,7 @@ function processJSFunction(content, options = {}) {
       if (converted) {
         return converted
       }
+
       return content
     },
     { name: 'processJSFunction' },

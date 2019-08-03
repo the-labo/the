@@ -45,6 +45,7 @@ class LintCache {
     if (!this.data) {
       this.data = await this._readFile()
     }
+
     return this.data[key]
   }
   async set(key, val) {

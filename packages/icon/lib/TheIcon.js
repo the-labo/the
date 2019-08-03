@@ -40,6 +40,7 @@ class TheIcon {
     if (!apply) {
       throw new Error(`[TheIcon] Unknown theme: ${theme}`)
     }
+
     apply(this, { color, font, text })
   }
 
@@ -47,6 +48,7 @@ class TheIcon {
     if (!filename) {
       return
     }
+
     const name = `font-${new Date().getTime()}`
     registerFont(filename, { family: name })
     return name

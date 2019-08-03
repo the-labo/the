@@ -43,6 +43,7 @@ function socketMix(Class) {
       if (!this.socket) {
         return
       }
+
       this.socket.close()
       this.socket = null
     }

@@ -23,6 +23,7 @@ function writeAsJsonSync(filename, data, options = {}) {
   if (sort) {
     data = sortProperties(data)
   }
+
   const isJSON5 = isJSON5File(filename)
   const content = isJSON5
     ? JSON5.stringify(data, null, 2) + EOL

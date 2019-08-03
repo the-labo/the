@@ -13,9 +13,10 @@ const {
   parse,
 } = require('@the-/ast')
 const {
+  cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode,
   cleanupRedundantAliasOnObjectPatternNode,
-  cleanupRedundantQuoteOnObjectPatternNode,
   cleanupRedundantObjectPatternOnObjectExpression,
+  cleanupRedundantQuoteOnObjectPatternNode,
   sortPropertiesOnObjectNode,
 } = require('../ast/nodes')
 const applyConverter = require('../helpers/applyConverter')
@@ -29,7 +30,7 @@ function processJSObject(content, options = {}) {
     content,
     (content) => {
       const parsed = parse(content, options)
-      const { get, replace, swap } = contentAccess(content)
+      const { get, removeLine, replace, swap } = contentAccess(content)
 
       function convertObjectNode(ObjectNode) {
         const converted =
@@ -46,6 +47,9 @@ function processJSObject(content, options = {}) {
           cleanupRedundantObjectPatternOnObjectExpression(ObjectNode, {
             get,
             replace,
+          }) ||
+          cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode(ObjectNode, {
+            removeLine,
           })
         if (converted) {
           return converted
@@ -76,6 +80,7 @@ function processJSObject(content, options = {}) {
       if (converted) {
         return converted
       }
+
       return content
     },
     { name: 'processJSObject' },

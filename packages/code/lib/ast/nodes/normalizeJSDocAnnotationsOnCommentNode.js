@@ -48,10 +48,12 @@ function normalizeJSDocAnnotationsOnCommentNode(CommentNode, { replace }) {
     if (synonym) {
       return replace([kind.start + 1, kind.end], synonym)
     }
+
     const lowerName = String(kind.name).toLocaleLowerCase()
     if (lowerName !== kind.name) {
       return replace([kind.start + 1, kind.end], lowerName)
     }
+
     if (type) {
       if (/\.</.test(type.value)) {
         return replace(
@@ -59,6 +61,7 @@ function normalizeJSDocAnnotationsOnCommentNode(CommentNode, { replace }) {
           type.value.replace('.<', '<'),
         )
       }
+
       const subTypeMatch = type.value && type.value.match(/(.*<)(.*)(>.*)/)
       if (subTypeMatch) {
         const [, before, subTypes, after] = subTypeMatch
@@ -74,6 +77,7 @@ function normalizeJSDocAnnotationsOnCommentNode(CommentNode, { replace }) {
           )
         }
       }
+
       const normalizedType =
         type.value &&
         type.value

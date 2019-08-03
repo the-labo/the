@@ -10,6 +10,7 @@ function hasMoreFor(counts) {
   if (!counts) {
     return false
   }
+
   const { length, offset, total } = counts
   return offset + length < total
 }

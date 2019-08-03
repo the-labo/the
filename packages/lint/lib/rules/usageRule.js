@@ -24,6 +24,7 @@ const transformFuncFor = (name) => {
   if (!stringcase[name]) {
     throw new Error(`[TheLint][usageRule] Unknown transform: ${name}`)
   }
+
   return stringcase[name]
 }
 
@@ -52,6 +53,7 @@ function usageRule(config) {
         if (skip) {
           continue
         }
+
         const content = String(await readFileAsync(using))
         for (const usedName of [...unusedNames]) {
           const hit = content.match(usedName)
@@ -80,6 +82,7 @@ function usageRule(config) {
           where: path.resolve(filename),
         })
     }
+
     if (keysUsedIn) {
       const required = require(path.resolve(filename))
 
@@ -95,6 +98,7 @@ function usageRule(config) {
           where: path.resolve(filename),
         })
     }
+
     if (flattenKeysUsedIn) {
       const required = require(path.resolve(filename))
 

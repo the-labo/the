@@ -34,6 +34,7 @@ class TheFacebook {
     if (statusCode !== 200) {
       throw new Error(`Facebook request failed: ${JSON.stringify(body)}`)
     }
+
     return body
   }
 

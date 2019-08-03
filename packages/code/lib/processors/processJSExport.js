@@ -24,6 +24,7 @@ function processJSExport(content, options = {}) {
     if (!declaration.id) {
       return
     }
+
     const canSplit =
       !!declaration.id.name &&
       [NodeTypes.FunctionDeclaration, NodeTypes.ClassDeclaration].includes(

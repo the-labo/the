@@ -27,6 +27,7 @@ colorWithText.of = function colorWithTextOf(base) {
     if (cached) {
       return cached
     }
+
     const generated = colorWithText(text, { base })
     cache[text] = generated
     return generated

@@ -125,6 +125,7 @@ async function build(dirname = process.cwd(), options = {}) {
           }
           await buildBud()
         }
+
         if (needsBuildJs) {
           needsBuildJs = false
           await buildFiles()

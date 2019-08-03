@@ -11,9 +11,9 @@ const {
   finder,
   parse,
 } = require('@the-/ast')
+const calcNumericOperationOnBinaryExpressionNode = require('../ast/nodes/calcNumericOperationOnBinaryExpressionNode')
 const mergeStringConcatenateOnBinaryExpressionNode = require('../ast/nodes/mergeStringConcatenateOnBinaryExpressionNode')
 const normalizeBinaryExpressionNode = require('../ast/nodes/normalizeBinaryExpressionNode')
-const calcNumericOperationOnBinaryExpressionNode = require('../ast/nodes/calcNumericOperationOnBinaryExpressionNode')
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 

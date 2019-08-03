@@ -13,7 +13,7 @@
     "name": "@the-/code",
     "order": 1,
     "typicalname": "code",
-    "version": "15.7.1"
+    "version": "15.8.9"
   },
   {
     "id": "module:@the-/code.TheCode()",
@@ -45,7 +45,7 @@
     "memberof": "module:@the-/code.TheCode",
     "meta": {
       "filename": "TheCode.js",
-      "lineno": 122,
+      "lineno": 124,
       "path": "lib"
     },
     "name": "format",
@@ -92,7 +92,7 @@
     "memberof": "module:@the-/code.TheCode",
     "meta": {
       "filename": "TheCode.js",
-      "lineno": 137,
+      "lineno": 139,
       "path": "lib"
     },
     "name": "formatFile",
@@ -154,7 +154,7 @@
       "path": "lib/helpers"
     },
     "name": "FormatCache",
-    "order": 54,
+    "order": 58,
     "scope": "static"
   },
   {
@@ -170,7 +170,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "nodes",
-    "order": 24,
+    "order": 28,
     "scope": "static"
   },
   {
@@ -186,7 +186,7 @@
       "path": "lib/constants"
     },
     "name": "constants",
-    "order": 42,
+    "order": 46,
     "scope": "static"
   },
   {
@@ -201,7 +201,7 @@
       "path": "lib/constants"
     },
     "name": "TypeNamings",
-    "order": 43,
+    "order": 47,
     "scope": "static"
   },
   {
@@ -216,7 +216,7 @@
       "path": "lib/constants"
     },
     "name": "Types",
-    "order": 44,
+    "order": 48,
     "scope": "static"
   },
   {
@@ -230,7 +230,7 @@
       "path": "lib/helpers"
     },
     "name": "astHelper",
-    "order": 46,
+    "order": 50,
     "scope": "static"
   },
   {
@@ -246,7 +246,7 @@
       "path": "lib/helpers"
     },
     "name": "helpers",
-    "order": 55,
+    "order": 59,
     "scope": "static"
   },
   {
@@ -262,7 +262,7 @@
       "path": "lib/parsers"
     },
     "name": "parsers",
-    "order": 56,
+    "order": 60,
     "scope": "static"
   },
   {
@@ -278,7 +278,7 @@
       "path": "lib/processors"
     },
     "name": "processors",
-    "order": 58,
+    "order": 62,
     "scope": "static"
   },
   {
@@ -331,6 +331,20 @@
     "scope": "static"
   },
   {
+    "id": "module:@the-/code.ast.nodes.calcNumericOperationOnBinaryExpressionNode",
+    "kind": "function",
+    "longname": "module:@the-/code.ast.nodes.calcNumericOperationOnBinaryExpressionNode",
+    "memberof": "module:@the-/code.ast.nodes",
+    "meta": {
+      "filename": "calcNumericOperationOnBinaryExpressionNode.js",
+      "lineno": 1,
+      "path": "lib/ast/nodes"
+    },
+    "name": "calcNumericOperationOnBinaryExpressionNode",
+    "order": 7,
+    "scope": "static"
+  },
+  {
     "id": "module:@the-/code.ast.nodes.cleanupEmptyArrayPatternParamsOnFunctionNode",
     "kind": "function",
     "longname": "module:@the-/code.ast.nodes.cleanupEmptyArrayPatternParamsOnFunctionNode",
@@ -341,7 +355,21 @@
       "path": "lib/ast/nodes"
     },
     "name": "cleanupEmptyArrayPatternParamsOnFunctionNode",
-    "order": 7,
+    "order": 8,
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/code.ast.nodes.cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode",
+    "kind": "function",
+    "longname": "module:@the-/code.ast.nodes.cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode",
+    "memberof": "module:@the-/code.ast.nodes",
+    "meta": {
+      "filename": "cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode.js",
+      "lineno": 1,
+      "path": "lib/ast/nodes"
+    },
+    "name": "cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode",
+    "order": 9,
     "scope": "static"
   },
   {
@@ -355,7 +383,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "cleanupEmptyObjectPatternParamsOnFunctionNode",
-    "order": 8,
+    "order": 10,
     "scope": "static"
   },
   {
@@ -369,7 +397,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "cleanupExtOnImportDeclarationNode",
-    "order": 9,
+    "order": 11,
     "scope": "static"
   },
   {
@@ -383,7 +411,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "cleanupExtOnRequireDeclarationArgumentNode",
-    "order": 10,
+    "order": 12,
     "scope": "static"
   },
   {
@@ -397,7 +425,35 @@
       "path": "lib/ast/nodes"
     },
     "name": "cleanupRedundantAliasOnObjectPatternNode",
-    "order": 11,
+    "order": 13,
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/code.ast.nodes.cleanupRedundantArrayPatternOnArrayExpression",
+    "kind": "function",
+    "longname": "module:@the-/code.ast.nodes.cleanupRedundantArrayPatternOnArrayExpression",
+    "memberof": "module:@the-/code.ast.nodes",
+    "meta": {
+      "filename": "cleanupRedundantArrayPatternOnArrayExpression.js",
+      "lineno": 1,
+      "path": "lib/ast/nodes"
+    },
+    "name": "cleanupRedundantArrayPatternOnArrayExpression",
+    "order": 14,
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/code.ast.nodes.cleanupRedundantObjectPatternOnObjectExpression",
+    "kind": "function",
+    "longname": "module:@the-/code.ast.nodes.cleanupRedundantObjectPatternOnObjectExpression",
+    "memberof": "module:@the-/code.ast.nodes",
+    "meta": {
+      "filename": "cleanupRedundantObjectPatternOnObjectExpression.js",
+      "lineno": 1,
+      "path": "lib/ast/nodes"
+    },
+    "name": "cleanupRedundantObjectPatternOnObjectExpression",
+    "order": 15,
     "scope": "static"
   },
   {
@@ -411,7 +467,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "cleanupRedundantAliasOnObjectPatternNode",
-    "order": 12,
+    "order": 16,
     "scope": "static"
   },
   {
@@ -425,7 +481,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "cleanupReturnAwaitOnFunctionNode",
-    "order": 13,
+    "order": 17,
     "scope": "static"
   },
   {
@@ -440,7 +496,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "cleanupUnusedOnFunctionArgumentNode",
-    "order": 14,
+    "order": 18,
     "scope": "static"
   },
   {
@@ -454,7 +510,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "cleanupUnusedOnArrayPatternNode",
-    "order": 15,
+    "order": 19,
     "scope": "static"
   },
   {
@@ -468,7 +524,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "cleanupUnusedOnImportNode",
-    "order": 16,
+    "order": 20,
     "scope": "static"
   },
   {
@@ -482,7 +538,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "cleanupUnusedOnObjectPatternNode",
-    "order": 17,
+    "order": 21,
     "scope": "static"
   },
   {
@@ -496,7 +552,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "cleanupUnusedOnVariableNode",
-    "order": 18,
+    "order": 22,
     "scope": "static"
   },
   {
@@ -510,7 +566,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "{combineObjectPatternOnStatementNode}",
-    "order": 19,
+    "order": 23,
     "scope": "static"
   },
   {
@@ -524,7 +580,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "combinePropertiesOnObjectPattern",
-    "order": 20,
+    "order": 24,
     "scope": "static"
   },
   {
@@ -538,7 +594,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "commentModuleOnProgramNode",
-    "order": 21,
+    "order": 25,
     "scope": "static"
   },
   {
@@ -552,7 +608,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "findJSDocAnnotationsInCommendNode",
-    "order": 22,
+    "order": 26,
     "scope": "static"
   },
   {
@@ -566,7 +622,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "findRequireDeclarationOnProgramNode",
-    "order": 23,
+    "order": 27,
     "scope": "static"
   },
   {
@@ -580,7 +636,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "mergeDuplicateImportOnProgramNode",
-    "order": 25,
+    "order": 29,
     "scope": "static"
   },
   {
@@ -594,7 +650,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "mergeStringConcatenateOnBinaryExpressionNode",
-    "order": 26,
+    "order": 30,
     "scope": "static"
   },
   {
@@ -608,7 +664,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "modifyNodeDeprecatedOnRequireDeclaration",
-    "order": 27,
+    "order": 31,
     "scope": "static"
   },
   {
@@ -622,7 +678,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "normalizeAssignmentOnVariableDeclarationNode",
-    "order": 28,
+    "order": 32,
     "scope": "static"
   },
   {
@@ -632,11 +688,11 @@
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
       "filename": "normalizeBinaryExpressionNode.js",
-      "lineno": 3,
+      "lineno": 1,
       "path": "lib/ast/nodes"
     },
     "name": "normalizeBinaryExpressionNode",
-    "order": 29,
+    "order": 33,
     "scope": "static"
   },
   {
@@ -650,7 +706,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "normalizeFunctionReturnOnFunctionNode",
-    "order": 30,
+    "order": 34,
     "scope": "static"
   },
   {
@@ -664,7 +720,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "normalizeJSDocAnnotationsOnCommentNode",
-    "order": 31,
+    "order": 35,
     "scope": "static"
   },
   {
@@ -678,7 +734,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "normalizeKindOnVariableDeclarationNode",
-    "order": 32,
+    "order": 36,
     "scope": "static"
   },
   {
@@ -692,7 +748,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "normalizeSrcPathOnImportDeclarationNode",
-    "order": 33,
+    "order": 37,
     "scope": "static"
   },
   {
@@ -706,7 +762,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "normalizeVariableDeclaratorOnStatementNode",
-    "order": 34,
+    "order": 38,
     "scope": "static"
   },
   {
@@ -720,7 +776,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "sortAnnotationsOnCommentNode",
-    "order": 35,
+    "order": 39,
     "scope": "static"
   },
   {
@@ -734,7 +790,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "sortCasesOnSwitchStatementNode",
-    "order": 36,
+    "order": 40,
     "scope": "static"
   },
   {
@@ -748,7 +804,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "sortExportNamedDeclarationsOnProgramNode",
-    "order": 37,
+    "order": 41,
     "scope": "static"
   },
   {
@@ -762,7 +818,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "sortMethodsOnClassNode",
-    "order": 38,
+    "order": 42,
     "scope": "static"
   },
   {
@@ -776,7 +832,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "sortPropertiesOnObjectNode",
-    "order": 39,
+    "order": 43,
     "scope": "static"
   },
   {
@@ -790,7 +846,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "sortSpecifiersOnImportDeclarationNode",
-    "order": 40,
+    "order": 44,
     "scope": "static"
   },
   {
@@ -804,7 +860,7 @@
       "path": "lib/ast/nodes"
     },
     "name": "spaceOnCommentNode",
-    "order": 41,
+    "order": 45,
     "scope": "static"
   },
   {
@@ -818,7 +874,7 @@
       "path": "lib/helpers"
     },
     "name": "applyConverter",
-    "order": 45,
+    "order": 49,
     "scope": "static"
   },
   {
@@ -829,11 +885,11 @@
     "memberof": "module:@the-/code.astHelper",
     "meta": {
       "filename": "astHelper.js",
-      "lineno": 16,
+      "lineno": 17,
       "path": "lib/helpers"
     },
     "name": "isAssignmentPattern",
-    "order": 47,
+    "order": 51,
     "scope": "static"
   },
   {
@@ -844,11 +900,11 @@
     "memberof": "module:@the-/code.astHelper",
     "meta": {
       "filename": "astHelper.js",
-      "lineno": 18,
+      "lineno": 19,
       "path": "lib/helpers"
     },
     "name": "isEmptyObjectPattern",
-    "order": 48,
+    "order": 52,
     "scope": "static"
   },
   {
@@ -859,11 +915,11 @@
     "memberof": "module:@the-/code.astHelper",
     "meta": {
       "filename": "astHelper.js",
-      "lineno": 25,
+      "lineno": 27,
       "path": "lib/helpers"
     },
     "name": "isImportDefaultSpecifier",
-    "order": 49,
+    "order": 53,
     "scope": "static"
   },
   {
@@ -874,11 +930,11 @@
     "memberof": "module:@the-/code.astHelper",
     "meta": {
       "filename": "astHelper.js",
-      "lineno": 28,
+      "lineno": 30,
       "path": "lib/helpers"
     },
     "name": "isImportSpecifier",
-    "order": 50,
+    "order": 54,
     "scope": "static"
   },
   {
@@ -889,11 +945,11 @@
     "memberof": "module:@the-/code.astHelper",
     "meta": {
       "filename": "astHelper.js",
-      "lineno": 30,
+      "lineno": 32,
       "path": "lib/helpers"
     },
     "name": "isObjectPattern",
-    "order": 51,
+    "order": 55,
     "scope": "static"
   },
   {
@@ -904,11 +960,11 @@
     "memberof": "module:@the-/code.astHelper",
     "meta": {
       "filename": "astHelper.js",
-      "lineno": 32,
+      "lineno": 34,
       "path": "lib/helpers"
     },
     "name": "isRequireExpression",
-    "order": 52,
+    "order": 56,
     "scope": "static"
   },
   {
@@ -923,7 +979,7 @@
       "path": "lib/helpers"
     },
     "name": "contentAccess",
-    "order": 53,
+    "order": 57,
     "scope": "static"
   },
   {
@@ -937,7 +993,7 @@
       "path": "lib/parsers"
     },
     "name": "parseCSS",
-    "order": 57,
+    "order": 61,
     "scope": "static"
   },
   {
@@ -951,7 +1007,7 @@
       "path": "lib/processors"
     },
     "name": "processCSSProp",
-    "order": 59,
+    "order": 63,
     "params": [
       {
         "type": {
@@ -985,7 +1041,7 @@
       "path": "lib/processors"
     },
     "name": "processCSSRule",
-    "order": 60,
+    "order": 64,
     "params": [
       {
         "type": {
@@ -1019,7 +1075,7 @@
       "path": "lib/processors"
     },
     "name": "processFileEnd",
-    "order": 61,
+    "order": 65,
     "params": [
       {
         "type": {
@@ -1050,11 +1106,11 @@
     "memberof": "module:@the-/code.processors",
     "meta": {
       "filename": "processJSArray.js",
-      "lineno": 3,
+      "lineno": 1,
       "path": "lib/processors"
     },
     "name": "processJSArray",
-    "order": 62,
+    "order": 66,
     "params": [
       {
         "type": {
@@ -1088,7 +1144,7 @@
       "path": "lib/processors"
     },
     "name": "processJSBinaryExpression",
-    "order": 63,
+    "order": 67,
     "params": [
       {
         "type": {
@@ -1122,7 +1178,7 @@
       "path": "lib/processors"
     },
     "name": "processJSBlock",
-    "order": 64,
+    "order": 68,
     "params": [
       {
         "type": {
@@ -1146,6 +1202,20 @@
     "scope": "static"
   },
   {
+    "id": "module:@the-/code.processors.processJSChaining",
+    "kind": "function",
+    "longname": "module:@the-/code.processors.processJSChaining",
+    "memberof": "module:@the-/code.processors",
+    "meta": {
+      "filename": "processJSChaining.js",
+      "lineno": 1,
+      "path": "lib/processors"
+    },
+    "name": "processJSChaining",
+    "order": 69,
+    "scope": "static"
+  },
+  {
     "id": "module:@the-/code.processors.processJSClass",
     "kind": "function",
     "longname": "module:@the-/code.processors.processJSClass",
@@ -1156,7 +1226,7 @@
       "path": "lib/processors"
     },
     "name": "processJSClass",
-    "order": 65,
+    "order": 70,
     "params": [
       {
         "type": {
@@ -1190,7 +1260,7 @@
       "path": "lib/processors"
     },
     "name": "processComment",
-    "order": 66,
+    "order": 71,
     "params": [
       {
         "type": {
@@ -1225,7 +1295,7 @@
       "path": "lib/processors"
     },
     "name": "processJSDeclaration",
-    "order": 67,
+    "order": 72,
     "scope": "static"
   },
   {
@@ -1239,7 +1309,7 @@
       "path": "lib/processors"
     },
     "name": "processJSDoc",
-    "order": 68,
+    "order": 73,
     "params": [
       {
         "type": {
@@ -1274,7 +1344,7 @@
       "path": "lib/processors"
     },
     "name": "processJSExport",
-    "order": 69,
+    "order": 74,
     "params": [
       {
         "type": {
@@ -1309,7 +1379,7 @@
       "path": "lib/processors"
     },
     "name": "processJSFunction",
-    "order": 70,
+    "order": 75,
     "params": [
       {
         "type": {
@@ -1344,7 +1414,7 @@
       "path": "lib/processors"
     },
     "name": "processJSIf",
-    "order": 71,
+    "order": 76,
     "params": [
       {
         "type": {
@@ -1379,7 +1449,7 @@
       "path": "lib/processors"
     },
     "name": "processJSImport",
-    "order": 72,
+    "order": 77,
     "params": [
       {
         "type": {
@@ -1414,7 +1484,7 @@
       "path": "lib/processors"
     },
     "name": "processJSObject",
-    "order": 73,
+    "order": 78,
     "params": [
       {
         "type": {
@@ -1448,7 +1518,7 @@
       "path": "lib/processors"
     },
     "name": "processJSON",
-    "order": 74,
+    "order": 79,
     "scope": "static"
   },
   {
@@ -1462,7 +1532,7 @@
       "path": "lib/processors"
     },
     "name": "processJSPrettier",
-    "order": 75,
+    "order": 80,
     "params": [
       {
         "type": {
@@ -1497,7 +1567,7 @@
       "path": "lib/processors"
     },
     "name": "processJSRedundant",
-    "order": 76,
+    "order": 81,
     "params": [
       {
         "type": {
@@ -1532,7 +1602,7 @@
       "path": "lib/processors"
     },
     "name": "processJSRequire",
-    "order": 77,
+    "order": 82,
     "params": [
       {
         "type": {
@@ -1567,7 +1637,7 @@
       "path": "lib/processors"
     },
     "name": "processJSRequire",
-    "order": 78,
+    "order": 83,
     "params": [
       {
         "type": {
@@ -1601,7 +1671,7 @@
       "path": "lib/processors"
     },
     "name": "processJSString",
-    "order": 79,
+    "order": 84,
     "params": [
       {
         "type": {
@@ -1636,7 +1706,7 @@
       "path": "lib/processors"
     },
     "name": "processJSSwitch",
-    "order": 80,
+    "order": 85,
     "params": [
       {
         "type": {
@@ -1671,7 +1741,7 @@
       "path": "lib/processors"
     },
     "name": "processJSUnused",
-    "order": 81,
+    "order": 86,
     "params": [
       {
         "type": {
@@ -1706,7 +1776,7 @@
       "path": "lib/processors"
     },
     "name": "processJSXAttribute",
-    "order": 82,
+    "order": 87,
     "params": [
       {
         "type": {
@@ -1741,7 +1811,7 @@
       "path": "lib/processors"
     },
     "name": "processJSXExpression",
-    "order": 83,
+    "order": 88,
     "params": [
       {
         "type": {
@@ -1775,7 +1845,7 @@
       "path": "lib/processors"
     },
     "name": "processPackageJSON",
-    "order": 84,
+    "order": 89,
     "scope": "static"
   },
   {
@@ -1789,7 +1859,7 @@
       "path": "lib/processors"
     },
     "name": "processPackageLockJSON",
-    "order": 85,
+    "order": 90,
     "scope": "static"
   },
   {
@@ -1803,7 +1873,7 @@
       "path": "lib/processors"
     },
     "name": "processYAML",
-    "order": 86,
+    "order": 91,
     "params": [
       {
         "type": {

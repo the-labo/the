@@ -29,11 +29,13 @@ async function saveBase64(dirname, basename, data) {
   if (!isBase64(data)) {
     throw new Error('[saveBase64] data must be base64')
   }
+
   await amkdirp(dirname)
   const matched = data.match(TYPE_EXTRACT_PATTERN)
   if (!matched) {
     return null
   }
+
   const [, type, payload] = matched
   const filename = path.join(
     dirname,

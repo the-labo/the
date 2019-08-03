@@ -18,6 +18,7 @@ function findEvalCode(src) {
       if (node.type === 'TemplateLiteral') {
         return node.expressions.length === 0
       }
+
       return node.type === 'StringLiteral'
     })
     .map((node) => {

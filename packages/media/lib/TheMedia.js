@@ -32,6 +32,7 @@ class TheMedia {
     if (!mediaDevices) {
       return null
     }
+
     return mediaDevices.getUserMedia(constrains)
   }
 
@@ -87,10 +88,12 @@ class TheMedia {
     if (!this.stream) {
       return []
     }
+
     const tracks = this.stream.getTracks()
     if (!kind) {
       return tracks
     }
+
     return tracks.filter((track) => track.kind === kind)
   }
 
@@ -124,6 +127,7 @@ class TheMedia {
     if (!video) {
       return null
     }
+
     const { stream } = this
     await new Promise((resolve, reject) => {
       video.srcObject = stream
@@ -140,10 +144,12 @@ class TheMedia {
     if (this.running) {
       throw new Error('[TheMedia] Already running')
     }
+
     const stream = await TheMedia.createMediaStream(this.constrains)
     if (!stream) {
       throw new Error('[TheMedia] Failed to get user media stream')
     }
+
     this.stream = stream
     this.running = true
   }
@@ -152,6 +158,7 @@ class TheMedia {
     if (this.running) {
       return
     }
+
     await this.start()
   }
 
@@ -163,6 +170,7 @@ class TheMedia {
     if (!this.running) {
       throw new Error('[TheMedia] Not running')
     }
+
     for (const track of this.stream.getTracks()) {
       await track.stop()
     }
@@ -173,6 +181,7 @@ class TheMedia {
     if (!this.running) {
       return
     }
+
     await this.stop()
   }
 
@@ -210,6 +219,7 @@ class TheMedia {
     if (!stream) {
       return
     }
+
     for (const track of stream.getVideoTracks()) {
       await TheMedia.applyTrackConstraints(track, video)
     }

@@ -44,6 +44,7 @@ class TheRouteStack extends React.Component {
       if (innerElm) {
         innerElm.scrollTop = 0
       }
+
       this.registerRoutes(stack)
       this.requestResize()
       onChange && onChange(stack)
@@ -111,6 +112,7 @@ class TheRouteStack extends React.Component {
     if (!innerElm) {
       return
     }
+
     const activeRoute = [...innerElm.querySelectorAll('.the-route-active')]
       .filter((node) => !node.classList.contains('the-route-gone'))
       .pop()

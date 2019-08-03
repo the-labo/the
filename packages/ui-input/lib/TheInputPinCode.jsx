@@ -83,6 +83,7 @@ class TheInputPinCode extends React.PureComponent {
       default:
         break
     }
+
     onKeyDown && onKeyDown(e)
   }
 
@@ -99,6 +100,7 @@ class TheInputPinCode extends React.PureComponent {
     if (value === newValue) {
       return
     }
+
     onUpdate &&
       onUpdate({
         [name]: newValue,

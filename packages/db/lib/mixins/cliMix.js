@@ -37,6 +37,7 @@ function cliMix(Class) {
           if (!line) {
             return
           }
+
           // TODO Support multi-line script
           try {
             return evalScript(line, {

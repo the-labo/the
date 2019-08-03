@@ -11,7 +11,7 @@ const {
 /** @lends module:@the-/code.ast.nodes.calcNumericOperationOnBinaryExpressionNode */
 function calcNumericOperationOnBinaryExpressionNode(
   BinaryExpression,
-  { get, replace },
+  { replace },
 ) {
   const { left, operator, right } = BinaryExpression
   const canCalc =
@@ -20,10 +20,8 @@ function calcNumericOperationOnBinaryExpressionNode(
   if (!canCalc) {
     return
   }
+
   switch (operator) {
-    case '+': {
-      return replace(BinaryExpression.range, left.value + right.value)
-    }
     case '-': {
       return replace(BinaryExpression.range, left.value - right.value)
     }
@@ -32,6 +30,21 @@ function calcNumericOperationOnBinaryExpressionNode(
     }
     case '/': {
       return replace(BinaryExpression.range, left.value / right.value)
+    }
+    case '+': {
+      return replace(BinaryExpression.range, left.value + right.value)
+    }
+    case '<': {
+      return replace(BinaryExpression.range, left.value < right.value)
+    }
+    case '<=': {
+      return replace(BinaryExpression.range, left.value <= right.value)
+    }
+    case '>': {
+      return replace(BinaryExpression.range, left.value > right.value)
+    }
+    case '>=': {
+      return replace(BinaryExpression.range, left.value >= right.value)
     }
     default:
       break

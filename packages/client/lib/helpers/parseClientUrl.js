@@ -21,8 +21,10 @@ function parseClientUrl(url) {
         `[TheClient] Passed URL "${url}" seems to be wrong. Did you mean "${suggestion}"`,
       )
     }
+
     return url
   }
+
   const protocol = url.protocol || get('location.protocol') || 'http:'
   const defaultPort = protocol === 'https:' ? 443 : 80
   const {

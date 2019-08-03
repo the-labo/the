@@ -17,6 +17,7 @@ function findCJSExportsAssignmentsExpressionOnProgramNode(ProgramNode) {
     if (!object || !property) {
       return false
     }
+
     return (
       property.name === 'exports' ||
       (object.name === 'module' && property.name === 'exports')

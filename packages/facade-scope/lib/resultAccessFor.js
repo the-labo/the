@@ -23,6 +23,7 @@ function resultAccessFor(scope) {
       if (typeof result === 'undefined') {
         throw new Error('[resultAccess] Handle must return result')
       }
+
       scope.set({ result })
       return result
     },

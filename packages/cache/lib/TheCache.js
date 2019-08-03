@@ -21,6 +21,7 @@ class TheCache extends LRUCache {
     if (cached) {
       return cached
     }
+
     const initialized = await initializer()
     this.set(key, initialized)
     return initialized

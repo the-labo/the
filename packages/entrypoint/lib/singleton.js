@@ -14,6 +14,7 @@ function singleton(options = {}) {
   if (get(key)) {
     throw new Error('[TheEntrypoint] App already loaded')
   }
+
   set(key, true)
 }
 

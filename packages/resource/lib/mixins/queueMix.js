@@ -22,7 +22,7 @@ function queueMix(Class) {
     }
 
     async createWithQueue(attr, options = {}) {
-      const { timeout = 1.5 * 1000, ...otherOptions } = options
+      const { timeout = 1500, ...otherOptions } = options
       return new Promise((resolve, reject) => {
         this.creatingQueue.push({ attr, reject, resolve })
         void this.flushCreatingQueue({ timeout, ...otherOptions })
@@ -35,6 +35,7 @@ function queueMix(Class) {
       if (queue.length === 0) {
         return []
       }
+
       this.creatingQueue = []
       const attributesArray = queue.map(({ attr }) => attr)
       const created = []

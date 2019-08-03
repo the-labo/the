@@ -14,6 +14,7 @@ function textColorFor(backgroundColor) {
   if (!backgroundColor) {
     return null
   }
+
   return isDark(backgroundColor) ? '#FFFFFF' : '#333333'
 }
 

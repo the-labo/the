@@ -14,6 +14,7 @@ function cleanupReturnAwaitOnFunctionNode(FunctionNode, { get, replace }) {
   if (!FunctionNode.async) {
     return
   }
+
   const TryNodes = finder.findByTypes(FunctionNode, [NodeTypes.TryStatement])
   const TryReturns = TryNodes.reduce(
     (reduced, TryNode) => [
@@ -29,14 +30,17 @@ function cleanupReturnAwaitOnFunctionNode(FunctionNode, { get, replace }) {
       get([AwaitNode.argument.start, AwaitNode.argument.end]),
     )
   }
+
   const Returns = finder.findByTypes(FunctionNode, [NodeTypes.ReturnStatement])
   for (const Return of Returns) {
     if (TryReturns.includes(Return)) {
       continue
     }
+
     if (!Return.argument) {
       continue
     }
+
     const isAwait = Return.argument.type === 'AwaitExpression'
     if (isAwait) {
       const { argument: AwaitNode } = Return

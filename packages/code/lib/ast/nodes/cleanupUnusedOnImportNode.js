@@ -18,6 +18,7 @@ function cleanupUnusedOnImportNode(
   if (!specifiers) {
     return null
   }
+
   const ImportSpecifiers = specifiers.filter(isImportSpecifier)
   for (let i = 0; i < specifiers.length; i++) {
     const specifier = specifiers[i]
@@ -25,6 +26,7 @@ function cleanupUnusedOnImportNode(
     if (shouldKeep) {
       continue
     }
+
     const nextSpecifier = specifiers[i + 1]
     const usages = [
       ...ConsumingIdentifiers.filter(
@@ -37,6 +39,7 @@ function cleanupUnusedOnImportNode(
     if (!unused) {
       continue
     }
+
     const removeDeclaration = specifiers.length === 1
     if (removeDeclaration) {
       const start =
@@ -55,6 +58,7 @@ function cleanupUnusedOnImportNode(
         const end = nextSpecifier ? commaAt + 1 : specifier.end
         return replace([start, end], '')
       }
+
       if (isImportSpecifier(specifier)) {
         const isTheLastImportSpecifier = ImportSpecifiers.length === 1
         if (isTheLastImportSpecifier) {
@@ -74,6 +78,7 @@ function cleanupUnusedOnImportNode(
             `import ${as} from ${from}`,
           )
         }
+
         const { start } = specifier
         const end = nextSpecifier ? nextSpecifier.start : specifier.end
         return replace([start, end], '')

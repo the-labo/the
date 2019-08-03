@@ -20,6 +20,7 @@ const _weightProperty = ({ async: async_, computed, key, kind, method }) => {
   if (computed) {
     weight -= 500
   }
+
   switch (key.type) {
     case 'StringLiteral':
       weight -= 100
@@ -28,6 +29,7 @@ const _weightProperty = ({ async: async_, computed, key, kind, method }) => {
       weight += 100
       break
   }
+
   switch (kind) {
     case 'get':
       weight = -10
@@ -38,25 +40,32 @@ const _weightProperty = ({ async: async_, computed, key, kind, method }) => {
     default:
       break
   }
+
   if (method) {
     weight += 100
   }
+
   if (async_) {
     weight += 3
   }
+
   const name = _nameOfPropKey(key)
   if (!name) {
     return weight
   }
+
   if (name[0] && name[0].toUpperCase() === name[0]) {
     weight -= 10
   }
+
   if (/^_/.test(name)) {
     weight += 10
   }
+
   if (/^\$/.test(name)) {
     weight -= 1000
   }
+
   return weight
 }
 
@@ -79,6 +88,7 @@ function sortPropertiesOnObjectNode(obj, { get, swap }) {
       } else {
         sliced.push({ properties: [] })
       }
+
       return sliced
     },
     [{ properties: [], wrapper: obj }],
@@ -87,16 +97,19 @@ function sortPropertiesOnObjectNode(obj, { get, swap }) {
     if (properties.length === 0) {
       continue
     }
+
     const sortedByStart = [...properties].sort(compareBy('start'))
     const sortedByName = [...properties].sort((a, b) => {
       if (!a.key || !b.key) {
         return -1
       }
+
       const aWeight = _weightProperty(a)
       const bWeight = _weightProperty(b)
       if (aWeight !== bWeight) {
         return aWeight - bWeight
       }
+
       const aName = _nameOfPropKey(a.key) || get([a.key.start, a.key.end])
       const bName = _nameOfPropKey(b.key) || get([b.key.start, b.key.end])
       return compareStrings(aName, bName)

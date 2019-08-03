@@ -5,7 +5,7 @@
 ## @the-/code
 Code formatter of the-frameworks
 
-**Version**: 15.7.1  
+**Version**: 15.8.9  
 **License**: MIT  
 
 * [@the-/code](#module_@the-/code)
@@ -34,6 +34,7 @@ Code formatter of the-frameworks
         * [.processJSArray(content)](#module_@the-/code.processors.processJSArray) ⇒ <code>string</code>
         * [.processJSBinaryExpression(content)](#module_@the-/code.processors.processJSBinaryExpression) ⇒ <code>string</code>
         * [.processJSBlock(content)](#module_@the-/code.processors.processJSBlock) ⇒ <code>string</code>
+        * [.processJSChaining()](#module_@the-/code.processors.processJSChaining)
         * [.processJSClass(content)](#module_@the-/code.processors.processJSClass) ⇒ <code>string</code>
         * [.processComment(content)](#module_@the-/code.processors.processComment) ⇒ <code>string</code>
         * [.processJSDeclaration()](#module_@the-/code.processors.processJSDeclaration)
@@ -213,6 +214,7 @@ Processor functions
     * [.processJSArray(content)](#module_@the-/code.processors.processJSArray) ⇒ <code>string</code>
     * [.processJSBinaryExpression(content)](#module_@the-/code.processors.processJSBinaryExpression) ⇒ <code>string</code>
     * [.processJSBlock(content)](#module_@the-/code.processors.processJSBlock) ⇒ <code>string</code>
+    * [.processJSChaining()](#module_@the-/code.processors.processJSChaining)
     * [.processJSClass(content)](#module_@the-/code.processors.processJSClass) ⇒ <code>string</code>
     * [.processComment(content)](#module_@the-/code.processors.processComment) ⇒ <code>string</code>
     * [.processJSDeclaration()](#module_@the-/code.processors.processJSDeclaration)
@@ -298,6 +300,10 @@ Process array
 | --- | --- |
 | content | <code>string</code> | 
 
+<a name="module_@the-/code.processors.processJSChaining"></a>
+
+#### processors.processJSChaining()
+**Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
 <a name="module_@the-/code.processors.processJSClass"></a>
 
 #### processors.processJSClass(content) ⇒ <code>string</code>

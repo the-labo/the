@@ -26,6 +26,7 @@ function moduleRule(config) {
   if (Object.keys(rest).length > 0) {
     console.warn('[moduleRule] Unknown options', Object.keys(rest))
   }
+
   return async function moduleRuleCheck({ filename, report }) {
     const basename = path.basename(filename, path.extname(filename))
     const module = _d(require(path.resolve(filename)))
@@ -52,6 +53,7 @@ function moduleRule(config) {
           })
       }
     }
+
     if (valuePattern) {
       for (const value of Object.values(module)) {
         const matcher = parsePattern(valuePattern)
@@ -64,6 +66,7 @@ function moduleRule(config) {
           })
       }
     }
+
     if (valueUnique) {
       const keys = Object.keys(module)
       const values = keys.map((key) => module[key])

@@ -35,6 +35,7 @@ function processJSXAttribute(content, options = {}) {
         if (skip) {
           continue
         }
+
         const {
           name: { name },
         } = attribute
@@ -44,6 +45,7 @@ function processJSXAttribute(content, options = {}) {
           const { end } = attribute
           return replace([start, end], '')
         }
+
         knownNames.add(name)
       }
     }
@@ -57,6 +59,7 @@ function processJSXAttribute(content, options = {}) {
         if (argument.type !== NodeTypes.ObjectExpression) {
           continue
         }
+
         const { properties } = argument
         const expandable = properties.some(
           (property) => !property.computed && !!property.value,
@@ -64,6 +67,7 @@ function processJSXAttribute(content, options = {}) {
         if (!expandable) {
           continue
         }
+
         return replace(
           [start, end],
           properties
@@ -75,13 +79,16 @@ function processJSXAttribute(content, options = {}) {
                   property.end,
                 ])}}`
               }
+
               if (property.type === NodeTypes.SpreadElement) {
                 return `{...${property.argument.name}}`
               }
+
               const valueContent = get([value.start, value.end])
               if (computed) {
                 return `{...{[${key.name}]:${valueContent}}}`
               }
+
               return `${key.name}={${valueContent}}`
             })
             .join(' '),
@@ -96,6 +103,7 @@ function processJSXAttribute(content, options = {}) {
       if (attributes.length === 0) {
         return
       }
+
       const sortableAttributes = attributes.reduce(
         (sliced, attribute) => {
           if (attribute.type === NodeTypes.JSXSpreadAttribute) {
@@ -103,6 +111,7 @@ function processJSXAttribute(content, options = {}) {
           } else {
             sliced[sliced.length - 1].push(attribute)
           }
+
           return sliced
         },
         [[]],

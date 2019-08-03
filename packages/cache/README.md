@@ -66,7 +66,7 @@ const theCache = require('@the-/cache')
 async function tryExample() {
   const cache = theCache({
     max: 10000,
-    maxAge: 1000 * 60 * 60,
+    maxAge: 3600000,
   })
 
   cache.set('foo', 'bar')

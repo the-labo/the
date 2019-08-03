@@ -3,7 +3,6 @@
 const aglob = require('aglob')
 const path = require('path')
 const semver = require('semver')
-const fixpack = require('@okunishinishi/fixpack')
 const { writeAsJson } = require('@the-/util-file')
 
 function pkgSync(src, targets) {
@@ -48,6 +47,7 @@ function pkgSync(src, targets) {
       if (!needsChangeVersion) {
         continue
       }
+
       logger.notice(
         `[${path.relative(process.cwd(), subPkgPath)}] Update version "${
           subPkg.version
@@ -71,7 +71,6 @@ function pkgSync(src, targets) {
         repository,
         version,
       })
-      fixpack(subPkgPath)
     }
   }
 }

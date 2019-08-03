@@ -29,6 +29,7 @@ class TheSignature extends React.Component {
     if (!pad) {
       return null
     }
+
     pad.fromDataURL(value)
   }
 
@@ -128,6 +129,7 @@ class TheSignature extends React.Component {
     if (skip) {
       return
     }
+
     const value = pad.toDataURL()
     const devicePixelRatio = get('window.devicePixelRatio') || 1
     const ratio = Math.max(devicePixelRatio, 1)
@@ -145,6 +147,7 @@ class TheSignature extends React.Component {
     if (!pad) {
       return
     }
+
     const {
       props: { color },
     } = this

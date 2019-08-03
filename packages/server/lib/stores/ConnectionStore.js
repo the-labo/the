@@ -26,10 +26,12 @@ class ConnectionStore extends Store {
       if (this.closed) {
         return null
       }
+
       const found = await this.get(cid)
       if (found) {
         return found
       }
+
       const waitDuration = interval * 2 ** (i + 1)
       await asleep(waitDuration)
     }

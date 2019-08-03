@@ -78,6 +78,7 @@ class TheInputTag extends React.PureComponent {
       default:
         break
     }
+
     onKeyDown && onKeyDown(e)
   }
 

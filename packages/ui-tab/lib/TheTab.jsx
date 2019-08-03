@@ -14,6 +14,7 @@ const pointFromTouchEvent = (e) => {
   if (!touch) {
     return null
   }
+
   const { clientX: x, clientY: y } = touch
   return { x, y }
 }
@@ -132,6 +133,7 @@ class TheTab extends React.Component {
       if (this.state.nextIndex !== nextIndex) {
         this.setState({ nextIndex })
       }
+
       this.resize(nextIndex)
     }
   }
@@ -156,9 +158,11 @@ class TheTab extends React.Component {
     if (activeIndex === 0) {
       bounds.right = 20
     }
+
     if (activeIndex === buttons.length - 1) {
       bounds.left = -20
     }
+
     return bounds
   }
 
@@ -169,6 +173,7 @@ class TheTab extends React.Component {
     if (!body) {
       return
     }
+
     const {
       props: { activeIndex, onChange },
       state: { translateX },
@@ -182,6 +187,7 @@ class TheTab extends React.Component {
       )
       return
     }
+
     const toRight = amount > 0
     if (toRight) {
       this.moveTo(body.offsetWidth * -1, () =>
@@ -189,6 +195,7 @@ class TheTab extends React.Component {
       )
       return
     }
+
     this.moveTo(0)
     this.touchPoint = null
     this.touchedScroll = null
@@ -198,11 +205,13 @@ class TheTab extends React.Component {
     if (!this.touchedScroll) {
       return
     }
+
     const touchedScroll = sourceElementScrollFor(e)
     const scrolled = this.touchedScroll.left !== touchedScroll.left
     if (scrolled) {
       return
     }
+
     this.touchedScroll = touchedScroll
     const isFirstMove = this.touchMoveCount === 0
     this.touchMoveCount++
@@ -215,6 +224,7 @@ class TheTab extends React.Component {
       this.touchPoint = point
       return
     }
+
     const vx = point.x - this.touchPoint.x
     const vy = point.y - this.touchPoint.y
     const avy = Math.abs(vy)
@@ -240,6 +250,7 @@ class TheTab extends React.Component {
         this.setState({ movingRate })
       }
     }
+
     this.touchPoint = point
   }
 
@@ -281,6 +292,7 @@ class TheTab extends React.Component {
     if (!body) {
       return
     }
+
     const threshold = Math.min(80, body.offsetWidth / 2)
     const {
       props: {
@@ -293,10 +305,12 @@ class TheTab extends React.Component {
     if (toLeft) {
       return -1
     }
+
     const toRight = x < threshold * -1 && activeIndex < count - 1
     if (toRight) {
       return 1
     }
+
     return 0
   }
 
@@ -307,6 +321,7 @@ class TheTab extends React.Component {
     if (!body) {
       return
     }
+
     return chopcal.floor(x / body.offsetWidth, 0.001)
   }
 
@@ -396,6 +411,7 @@ class TheTab extends React.Component {
     if (this.headerScrolling) {
       return
     }
+
     this.headerScrolling = true
     setTimeout(() => {
       this.header.scrollLeft += amount

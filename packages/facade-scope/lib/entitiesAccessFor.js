@@ -23,7 +23,6 @@ function entitiesAccessFor(scope) {
     get state() {
       return scope.get('entities') || []
     },
-
     /**
      * Add entities
      * @param {Array<module:@the-/facade-scope.entitiesAccessFor.Entity>} entities
@@ -38,7 +37,6 @@ function entitiesAccessFor(scope) {
       const sorted = sorter ? filtered.sort(sorter) : added
       entitiesAccess.set(sorted)
     },
-
     /**
      * Add an module:@the-/facade-scope.entitiesAccessFor.Entity
      * @param {Object} entity - Entity to add
@@ -47,7 +45,6 @@ function entitiesAccessFor(scope) {
     addOne(entity, options = {}) {
       entitiesAccess.add([entity], options)
     },
-
     isKnownOne(entity) {
       return entitiesAccess.state.some((e) => e.id === entity.id)
     },
@@ -76,7 +73,6 @@ function entitiesAccessFor(scope) {
       )
       entitiesAccess.set(removed)
     },
-
     /**
      * Set entities
      * @param {module:@the-/facade-scope.entitiesAccessFor.Entity[]} entities - Entities to set

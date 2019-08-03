@@ -50,6 +50,7 @@ async function commentModuleOnProgramNode(
   if (!dirname) {
     return
   }
+
   const pkgDir = await findupDir(dirname, {
     contains: ['package.json'],
   })
@@ -68,9 +69,11 @@ async function commentModuleOnProgramNode(
   if (!modulePath) {
     return
   }
+
   if (!pkg.name) {
     return
   }
+
   const moduleId = path.join(pkg.name, modulePath)
   debug('moduleId', moduleId)
   if (moduleAnnotationComment) {

@@ -16,26 +16,19 @@ module.exports = Object.freeze(
     HANDLE: 'app.handle',
     /** Key of app props */
     PROPS: 'app.props',
-
     /** Key of app stage */
     STAGE: 'app.stage',
     /** Key of app store */
     STORE: 'app.store',
-
     // hoger
     a: 1,
-
+    a: 1,
     // -----------------------------------
     // hoge
     // -----------------------------------
     j: () => ({ n: 1 }),
-
     n: 8,
-
     p: 12,
-
     z: 2,
-
-    ...{ a: 1 },
   },
 )

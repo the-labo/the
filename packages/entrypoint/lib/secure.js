@@ -25,11 +25,13 @@ function secure(options = {}) {
   if (shouldSkip) {
     return false
   }
+
   if (location.protocol === from) {
     console.log(`[the-entrypoint] redirect "${from}" -> "${to}"`)
     location.protocol = to
     return true
   }
+
   return false
 }
 

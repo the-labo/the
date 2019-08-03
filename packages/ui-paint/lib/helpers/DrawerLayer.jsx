@@ -22,6 +22,7 @@ class DrawerLayer {
     if (points.length === 0) {
       return
     }
+
     const { ctx } = canvasAccess
     switch (method || DrawingMethods.FREE) {
       case DrawingMethods.FREE:

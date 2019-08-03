@@ -16,6 +16,7 @@ async function pipeToFile(src, dest) {
   if (typeof src === 'string') {
     src = fs.createReadStream(src)
   }
+
   await amkdirp(path.dirname(dest))
   await new Promise((resolve, reject) => {
     const w = fs.createWriteStream(dest)

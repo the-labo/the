@@ -37,6 +37,7 @@ class StreamDriverPool {
     if (!instance) {
       throw new Error(`[TheServer] Stream not found for ${sid}`)
     }
+
     return instance
   }
 

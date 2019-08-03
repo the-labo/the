@@ -24,6 +24,7 @@ class TheCaught extends React.Component {
     if (!error) {
       return null
     }
+
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}

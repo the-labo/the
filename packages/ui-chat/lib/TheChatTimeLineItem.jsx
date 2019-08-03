@@ -55,6 +55,7 @@ class TheChatTimeLineItem extends React.Component {
     if (raw) {
       return <div className='the-chat-time-line-item-raw'>{node}</div>
     }
+
     return (
       <div
         {...htmlAttributesFor(props, { except: ['className'] })}

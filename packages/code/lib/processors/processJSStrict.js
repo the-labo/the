@@ -30,6 +30,7 @@ function processJSRequire(content, options = {}) {
       if (isStrict) {
         return content
       }
+
       const contentString = String(content)
       const hasHashBang = /^#!/.test(contentString)
       if (hasHashBang) {

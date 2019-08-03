@@ -39,10 +39,12 @@ const drawer = {
       ctx.fillStyle = fill
       ctx.fill()
     }
+
     if (stroke) {
       ctx.strokeStyle = stroke
       ctx.stroke()
     }
+
     ctx.restore()
   },
   drawText(
@@ -62,6 +64,7 @@ const drawer = {
       if (enough) {
         break
       }
+
       fontSize = parseInt(fontSize * shrinkRate)
     }
     ctx.fillStyle = color

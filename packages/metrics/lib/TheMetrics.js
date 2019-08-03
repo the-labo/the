@@ -13,7 +13,7 @@ const {
 /** @lends module:@the-/metrics.TheMetrics */
 class TheMetrics {
   constructor(options = {}) {
-    const { interval = 30 * 1000, name = 'TheMetrics' } = options
+    const { interval = 30000, name = 'TheMetrics' } = options
     this.name = name
     this.counters = {}
     this.at = new Date()
@@ -41,6 +41,7 @@ class TheMetrics {
       console.warn(`[TheMetrics][${name}] class is missing`)
       return
     }
+
     this.bindCounter(
       name,
       new ClassMethodCallCounter({
@@ -55,6 +56,7 @@ class TheMetrics {
     if (this.counters[name]) {
       throw new Error(`[TheMetrics] "${name}" is already bound`)
     }
+
     this.counters[name] = counter
   }
 
@@ -73,6 +75,7 @@ class TheMetrics {
       console.warn(`[TheMetrics][${name}] object is missing`)
       return
     }
+
     this.bindCounter(
       name,
       new ObjectMethodCallCounter({

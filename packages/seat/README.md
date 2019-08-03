@@ -91,6 +91,7 @@ async function tryExample() {
         if (has()) {
           return get()
         }
+
         let taking = portBase
         while (!canTake(taking)) {
           taking += 1

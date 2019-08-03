@@ -12,7 +12,7 @@ describe('build', function() {
   after(() => {})
 
   it('test', () => {
-    equal(1 + 2, 3)
+    equal(3, 3)
   })
 })
 

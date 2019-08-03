@@ -36,6 +36,7 @@ class TheSecret extends TheSecretBase {
     if (!password) {
       throw new Error('[TheSecret] Password is required')
     }
+
     this.filename = filename
     this.lockFilename = `${filename}.lock`
     this.metaFieldKey = metaFieldKey
@@ -55,6 +56,7 @@ class TheSecret extends TheSecretBase {
     if (!data) {
       return
     }
+
     const iv = this._getIv(data)
     const decrypted = this.decryptData(data, { iv })
     delete decrypted[this.metaFieldKey]
@@ -77,6 +79,7 @@ class TheSecret extends TheSecretBase {
     if (!needsEncrypt) {
       return
     }
+
     const encrypted = this.encryptData(data, { iv })
     this.save({
       ...encrypted,
@@ -105,6 +108,7 @@ class TheSecret extends TheSecretBase {
     if (notChanged) {
       return this.cache
     }
+
     const data = readAsJsonSync(this.filename)
     const iv = this._getIv(data)
     const content = this.decryptData(data, { iv })

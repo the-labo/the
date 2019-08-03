@@ -64,6 +64,7 @@ class TheAssert {
     if (this.skip) {
       return
     }
+
     invariant(condition, `[${this.prefix}]${message}`)
   }
 }

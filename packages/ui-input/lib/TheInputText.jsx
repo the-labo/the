@@ -21,6 +21,7 @@ class TheInputText extends React.PureComponent {
     if (candidates.length === 0) {
       return null
     }
+
     return (
       <ul className='the-input-text-options' role='listbox'>
         {candidates.map((candidate) => (
@@ -71,6 +72,7 @@ class TheInputText extends React.PureComponent {
     if (this.state.committedValue === committedValue) {
       return
     }
+
     this.setState({ committedValue })
   }
 
@@ -107,17 +109,21 @@ class TheInputText extends React.PureComponent {
     if (!committedValue) {
       return null
     }
+
     if (!pattern) {
       return null
     }
+
     const ok = pattern.test(String(committedValue))
     if (ok) {
       return null
     }
+
     const willBeOK = value && pattern.test(value)
     if (willBeOK) {
       return null
     }
+
     return patternWarning
   }
 
@@ -148,6 +154,7 @@ class TheInputText extends React.PureComponent {
     if (!elm) {
       return
     }
+
     const inside = elm.contains(e.target)
     if (!inside) {
       this.offSuggestion()
@@ -189,6 +196,7 @@ class TheInputText extends React.PureComponent {
         if (selectedCandidate) {
           this.enterCandidate(selectedCandidate)
         }
+
         onEnter && onEnter()
         break
       }
@@ -213,6 +221,7 @@ class TheInputText extends React.PureComponent {
         this.setState({ suggesting: true })
         break
     }
+
     onKeyDown && onKeyDown(e)
   }
 
@@ -238,11 +247,13 @@ class TheInputText extends React.PureComponent {
     if (!candidates) {
       return
     }
+
     const index = candidates.indexOf(selectedCandidate) + amount
     const over = index <= -1 || index >= candidates.length
     if (over) {
       return
     }
+
     this.updateCandidates(index)
   }
 
@@ -284,6 +295,7 @@ class TheInputText extends React.PureComponent {
     if (!autoComplete && candidates.length >= 0) {
       autoComplete = 'off'
     }
+
     autoComplete = onOffBoolean(autoComplete)
     autoCapitalize = onOffBoolean(autoCapitalize)
     autoCorrect = onOffBoolean(autoCorrect)
@@ -398,6 +410,7 @@ class TheInputText extends React.PureComponent {
     if (typeof index === 'undefined') {
       index = candidates.indexOf(selectedCandidate)
     }
+
     this.setState({
       candidates,
       selectedCandidate: candidates[index] || null,

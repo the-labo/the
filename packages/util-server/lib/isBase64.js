@@ -11,9 +11,11 @@ function isBase64(v) {
   if (!v) {
     return false
   }
+
   if (typeof v !== 'string') {
     return false
   }
+
   return PREFIX_PATTERN.test(v.slice(0, 100))
 }
 

@@ -15,8 +15,8 @@ describe('units', () => {
   after(() => {})
 
   it('Do test', () => {
-    equal(units.days(4), 4 * 24 * 60 * 60 * 1000)
-    equal(units.hours(4), 4 * 60 * 60 * 1000)
+    equal(units.days(4), 345600000)
+    equal(units.hours(4), 14400000)
   })
 })
 

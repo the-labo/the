@@ -33,6 +33,7 @@ function resourceMix(Class) {
       if (!has) {
         return null
       }
+
       return this.resources.get(resourceName)
     }
 

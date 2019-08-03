@@ -21,6 +21,7 @@ const normalizeSort = (key) => {
   if (!key) {
     return ''
   }
+
   return key.replace(/^-/, '') || ''
 }
 
@@ -38,6 +39,7 @@ const withSort = asClassMixin((Class) => {
         if (normalizeSort(current) === normalizeSort(name)) {
           name = /^-/.test(current) ? normalizeSort(current) : `-${current}`
         }
+
         this.set({ sort: name })
       },
     },

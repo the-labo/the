@@ -27,7 +27,6 @@ function sortAccessFor(scope) {
     get() {
       return sortAccess.state
     },
-
     /**
      * Set sort
      * @param {string} name
@@ -35,13 +34,13 @@ function sortAccessFor(scope) {
     set(name) {
       scope.set({ sort: name })
     },
-
     toggle(name) {
       const current = sortAccess.get()
       const isKnown = absName(current) === absName(name)
       if (isKnown) {
         name = /^-/.test(current) ? absName(current) : `-${current}`
       }
+
       sortAccess.set(name)
     },
   }

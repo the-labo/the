@@ -70,6 +70,7 @@ class TheInputUpload extends React.PureComponent {
     if (target.files.length === 0) {
       return
     }
+
     this.setState({ spinning: true })
     onChange && onChange(e)
     ;(async () => {
@@ -80,6 +81,7 @@ class TheInputUpload extends React.PureComponent {
         if (this.gone) {
           return
         }
+
         onLoad && onLoad({ target, urls })
         onUpdate && onUpdate({ [name]: multiple ? urls : urls[0] })
         this.setState({ urls })

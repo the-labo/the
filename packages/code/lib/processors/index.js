@@ -14,6 +14,7 @@ const processFileEnd_ = require('./processFileEnd')
 const processJSArray_ = require('./processJSArray')
 const processJSBinaryExpression_ = require('./processJSBinaryExpression')
 const processJSBlock_ = require('./processJSBlock')
+const processJSChaining_ = require('./processJSChaining')
 const processJSClass_ = require('./processJSClass')
 const processJSComment_ = require('./processJSComment')
 const processJSDeclaration_ = require('./processJSDeclaration')
@@ -44,6 +45,7 @@ exports.processFileEnd = processFileEnd_
 exports.processJSArray = processJSArray_
 exports.processJSBinaryExpression = processJSBinaryExpression_
 exports.processJSBlock = processJSBlock_
+exports.processJSChaining = processJSChaining_
 exports.processJSClass = processJSClass_
 exports.processJSComment = processJSComment_
 exports.processJSDeclaration = processJSDeclaration_
@@ -74,6 +76,7 @@ module.exports = {
   processJSArray: processJSArray_,
   processJSBinaryExpression: processJSBinaryExpression_,
   processJSBlock: processJSBlock_,
+  processJSChaining: processJSChaining_,
   processJSClass: processJSClass_,
   processJSComment: processJSComment_,
   processJSDeclaration: processJSDeclaration_,

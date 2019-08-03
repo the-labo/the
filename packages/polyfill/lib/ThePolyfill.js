@@ -22,12 +22,15 @@ class ThePolyfill {
 
         window.fetch = crossFetch
       }
+
       if (!window.ImageCapture) {
         require('image-capture/lib/imagecapture.js')
       }
+
       if (!window.global) {
         window.global = window
       }
+
       if (!window.process) {
         window.process = require('process/browser')
       }
@@ -39,6 +42,7 @@ class ThePolyfill {
       require('raf/polyfill')
       this.done = true
     }
+
     withDocument((document) => {
       const fastclick = require('fastclick')
 

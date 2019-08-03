@@ -19,6 +19,7 @@ const theBinPonTasks = {
         if (skip) {
           continue
         }
+
         const bin = theBin(cmd, { guide })
         const ok = await bin.verify({ version })
         const name = [bin.cmd, version]

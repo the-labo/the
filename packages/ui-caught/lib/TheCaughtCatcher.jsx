@@ -33,6 +33,7 @@ class TheCaughtCatcher extends React.Component {
     if (!caught) {
       return children
     }
+
     const { error, info } = caught
     return (
       <div className='the-catching-container'>

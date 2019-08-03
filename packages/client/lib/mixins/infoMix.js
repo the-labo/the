@@ -33,10 +33,12 @@ function infoMix(Class) {
       if (!force && loaded) {
         return loaded
       }
+
       const { _serverInfo: cached } = this
       if (!force && cached) {
         return cached
       }
+
       const response = await this.fetch(infoUrl)
       const info = response.json()
       this._serverInfo = info

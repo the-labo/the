@@ -10,6 +10,7 @@ function StraightDrawMethod(ctx, points) {
     ctx.closePath()
     return
   }
+
   ctx.beginPath()
   const [start] = points
   const last = points[points.length - 1]

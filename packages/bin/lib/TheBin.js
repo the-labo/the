@@ -27,6 +27,7 @@ class TheBin {
       if (!cmd) {
         throw new Error('cmd is required')
       }
+
       const unknownOptions = Object.keys(rest)
       if (unknownOptions.length > 0) {
         console.warn('[TheBin] Unknown options: ', unknownOptions)
@@ -80,6 +81,7 @@ class TheBin {
     if (asBin) {
       return true
     }
+
     const asFile = !!(await statAsync(path.resolve(cmd)).catch(() => null))
     return asFile
   }
@@ -120,6 +122,7 @@ class TheBin {
     if (!exists) {
       return false
     }
+
     const { version } = options
     if (version) {
       const satisfiesVersion = await this.satisfiesVersion(version)
@@ -127,6 +130,7 @@ class TheBin {
         return false
       }
     }
+
     return true
   }
 

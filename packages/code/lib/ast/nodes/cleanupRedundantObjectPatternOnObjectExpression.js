@@ -20,6 +20,7 @@ function cleanupRedundantObjectPatternOnObjectExpression(
   if (!SpreadElement) {
     return
   }
+
   const {
     argument: { properties },
     leadingComments,
@@ -31,10 +32,12 @@ function cleanupRedundantObjectPatternOnObjectExpression(
   if (properties.length === 0) {
     return replace(range, '')
   }
+
   const content = get([
     properties[0].start,
     properties[properties.length - 1].end,
   ])
   return replace(range, content)
 }
+
 module.exports = cleanupRedundantObjectPatternOnObjectExpression

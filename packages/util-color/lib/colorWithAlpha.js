@@ -15,6 +15,7 @@ function colorWithAlpha(color, alpha) {
   if (!color) {
     return null
   }
+
   return withAlpha(color, alpha)
 }
 

@@ -57,6 +57,7 @@ class TheRTC extends TheRTCBase {
     if (this.listenAt) {
       throw new Error('[TheRTC] Already listening')
     }
+
     this.listenAt = new Date()
     const server = this.createHTTPServer()
     this.server = server
@@ -75,6 +76,7 @@ class TheRTC extends TheRTCBase {
               console.warn('[TheRTC] "urls" is deprecated. Use "url" instead.')
               url = [].concat(url, urls).filter(Boolean)
             }
+
             const hasSecret = !!secret
             if (hasSecret) {
               // Dynamic credential

@@ -8,7 +8,7 @@
 'use strict'
 
 /** @lends module:@the-/server.helpers.RPCKeeper */
-function RPCKeeper({ ioConnector, keepDuration = 4 * 1000, metricsCounter }) {
+function RPCKeeper({ ioConnector, keepDuration = 4000, metricsCounter }) {
   const kept = {}
   /**
    * @memberof module:@the-/server.helpers.RPCKeeper
@@ -20,11 +20,11 @@ function RPCKeeper({ ioConnector, keepDuration = 4 * 1000, metricsCounter }) {
       if (ioConnector) {
         void ioConnector.sendRPCKeep(cid, iid, keepDuration)
       }
+
       if (metricsCounter) {
         metricsCounter.addInvocationKeepCount(controllerName, 1)
       }
     },
-
     startKeepTimer(cid, iid, { controllerName } = {}) {
       const keepTimer = setInterval(() => {
         rpcKeeper.handleKeepTick(cid, iid, { controllerName, keepDuration })
@@ -37,19 +37,18 @@ function RPCKeeper({ ioConnector, keepDuration = 4 * 1000, metricsCounter }) {
         metricsCounter.addKeepStartCount(controllerName)
       }
     },
-
     stopAllKeepTimers() {
       for (const cid of Object.keys(kept)) {
         rpcKeeper.stopKeepTimersFor(cid)
       }
     },
-
     stopKeepTimer(cid, iid) {
       const keeping = (kept[cid] || {})[iid]
       if (!keeping) {
         console.warn('Keep timer not found for:', cid, iid)
         return
       }
+
       const { controllerName, keepTimer } = keeping
       clearInterval(keepTimer)
       delete kept[cid][iid]
@@ -57,15 +56,14 @@ function RPCKeeper({ ioConnector, keepDuration = 4 * 1000, metricsCounter }) {
         metricsCounter.addKeepStopCount(controllerName)
       }
     },
-
     stopKeepTimerIfNeeded(cid, iid) {
       const has = (kept[cid] || {})[iid]
       if (!has) {
         return
       }
+
       rpcKeeper.stopKeepTimer(cid, iid)
     },
-
     stopKeepTimersFor(cid) {
       const values = kept[cid] || {}
       for (const iid of Object.keys(values)) {

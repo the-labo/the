@@ -33,6 +33,7 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
     if (!started && hitsEmpty) {
       continue
     }
+
     started = true
 
     const annotationStarted = hitsAtMark && /\*\s*$/.test(value.substring(0, i))
@@ -40,6 +41,7 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
       if (annotationStarted) {
         workingAnnotation = { start: offset + i }
       }
+
       continue
     }
 
@@ -68,6 +70,7 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
       workingAnnotation.body = bodyFor(workingAnnotation)
       continue
     }
+
     const typeEnd = workingAnnotation.type && hitsBracketEnd
     if (typeEnd) {
       workingAnnotation.type.end = offset + i + 1
@@ -76,6 +79,7 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
         workingAnnotation.type.end - offset - 1,
       )
     }
+
     const typeStart = !workingAnnotation.type && hitsBracketStart
     if (typeStart) {
       workingAnnotation.type = { start: offset + i }
@@ -87,8 +91,10 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
       workingAnnotation.end = offset + value.length
       workingAnnotation.body = bodyFor(workingAnnotation)
     }
+
     annotations.push(workingAnnotation)
   }
+
   return annotations.map((annotation) => ({ ...annotation }))
 }
 

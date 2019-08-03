@@ -15,6 +15,7 @@ function uniqueFilter(options = {}) {
   if (arguments.length > 1) {
     throw new Error('[uniqueFilter] Invalid args.')
   }
+
   const { by = (v) => v } = options
 
   const known = {}
@@ -24,10 +25,12 @@ function uniqueFilter(options = {}) {
         delete known[key]
       }
     }
+
     const key = by(v)
     if (known[key]) {
       return false
     }
+
     known[key] = v
     return true
   }

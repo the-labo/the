@@ -109,6 +109,7 @@ function peerMix(Class) {
           )
         }
       }
+
       return peer
     }
 
@@ -128,6 +129,7 @@ function peerMix(Class) {
       if (this.peers[pid]) {
         throw new Error(`[TheRTCClient] Peer already exists with id: ${pid}`)
       }
+
       this.peers[pid] = peer
     }
 
@@ -210,6 +212,7 @@ function peerMix(Class) {
       if (!channel) {
         throw new Error(`[TheRTCClient] Unknown channel: ${channelName}`)
       }
+
       if (channel.readyState !== 'open') {
         await new Promise((resolve, reject) => {
           const onOpen = () => {
@@ -225,10 +228,11 @@ function peerMix(Class) {
                   `[TheRTCClient] Failed to open channel: ${channelName}`,
                 ),
               ),
-            30 * 1000,
+            30000,
           )
         })
       }
+
       return channel
     }
 
@@ -237,6 +241,7 @@ function peerMix(Class) {
       if (!peer) {
         return
       }
+
       await peer.addIceCandidate(new RTCIceCandidate(ice))
     }
 
@@ -245,6 +250,7 @@ function peerMix(Class) {
       if (!peer) {
         return
       }
+
       await peer.setRemoteDescription(new RTCSessionDescription(desc))
     }
   }

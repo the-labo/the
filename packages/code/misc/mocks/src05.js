@@ -58,18 +58,15 @@ module.exports = pon(
   /** @module tasks */
   {
     $cwd: __dirname,
-
     // -----------------------------------
     // Meta info
     // -----------------------------------
     $doc: Pondoc,
-
     // -----------------------------------
     // Sub Tasks for Assert
     // -----------------------------------
     /** Make sure that not production */
     'assert:not-prod': env.notFor('production'),
-
     // -----------------------------------
     // Sub Tasks for Assets
     // -----------------------------------
@@ -81,10 +78,8 @@ module.exports = pon(
     }),
     /** Cleanup cache files */
     'clean:cache': del('tmp/cache/**/*.*'),
-
     /** Cleanup public files */
     'clean:public': del('public/build/*.*'),
-
     // -----------------------------------
     // Sub Tasks for Clean Up
     // -----------------------------------
@@ -104,19 +99,15 @@ module.exports = pon(
     'db:migrate': db.migrate(createDB, migration, {
       snapshot: 'var/migration/snapshots',
     }),
-
     /** Drop and setup database again */
     'db:reset': ['assert:not-prod', 'db:drop', 'db:setup', 'db:seed'],
-
     /** Generate test data */
     'db:seed': db.seed(createDB, 'server/db/seeds/:env/*.seed.js'),
-
     // -----------------------------------
     // Sub Tasks for Database
     // -----------------------------------
     /** Setup database */
     'db:setup': db.setup(createDB),
-
     // -----------------------------------
     // Sub Tasks for Debug
     // -----------------------------------
@@ -126,19 +117,15 @@ module.exports = pon(
       'env:debug',
       npx('nodemon', '--config', 'misc/dev/Nodemon.json', 'bin/app.js'),
     ],
-
     /** Watch files for debug */
     'debug:watch': ['env:debug', 'ui:*/watch'],
-
     // -----------------------------------
     // Sub Tasks for Document
     // -----------------------------------
     /** Generate changelog file */
     'doc:changelog': changelog(),
-
     /** Generate pondoc file */
     'doc:pondoc': pondoc(__filename, 'misc/project/Pondoc.json'),
-
     // -----------------------------------
     // Sub Tasks for Docker
     // -----------------------------------
@@ -146,12 +133,10 @@ module.exports = pon(
     'docker:mysql': mysql(Containers.mysql.name, Containers.mysql.options),
     /** Prepare nginx docker container */
     'docker:nginx': nginx(Containers.nginx.name, Containers.nginx.options),
-
     /** Prepare redis docker container */
     'docker:redis': redis(Containers.redis.name, Containers.redis.options),
     /** Set env variables for debug */
     'env:debug': env('development', { DEBUG: 'app:*', ...Local }),
-
     // -----------------------------------
     // Sub Tasks for Environment
     // -----------------------------------
@@ -159,7 +144,6 @@ module.exports = pon(
     'env:prod': env('production'),
     /** Set env variables for test */
     'env:test': env('test'),
-
     // -----------------------------------
     // Sub Tasks for Format
     // -----------------------------------
@@ -172,7 +156,6 @@ module.exports = pon(
     'format:conf': theCode(['Local.js', 'Ponfile.js', 'conf/*.js'], {
       ignore: 'conf/index.js',
     }),
-
     /** Format json files */
     'format:json': fmtjson(
       [
@@ -184,16 +167,13 @@ module.exports = pon(
       ],
       { sort: true },
     ),
-
     /** Format server files */
     'format:server': theCode('server/**/*.js', {}),
-
     // -----------------------------------
     // Sub Tasks for Git
     // -----------------------------------
     /** Catch up to latest git */
     'git:catchup': [git('stash'), git('pull')],
-
     // -----------------------------------
     // Sub Tasks for Icon
     // -----------------------------------
@@ -208,21 +188,17 @@ module.exports = pon(
           Drawings.officialAccountIcon,
         ),
     ].filter(Boolean),
-
     /** Validate locales */
     'lint:loc': () => locales.validate(),
-
     // -----------------------------------
     // Sub Tasks for Lint
     // -----------------------------------
     'lint:rules': theLint(Rules),
-
     // -----------------------------------
     // Sub Tasks for Locales
     // -----------------------------------
     /** Print locale settings */
     'loc:print': () => console.log(locales.toCompound()),
-
     // -----------------------------------
     // Sub Tasks for Local Config
     // -----------------------------------
@@ -230,19 +206,16 @@ module.exports = pon(
     'local:print': () => Local.print(),
     /** Disable maintenance mode */
     'maint:off': del('public/status/maintenance'),
-
     // -----------------------------------
     // Sub Tasks for Maintenance
     // -----------------------------------
     /** Enable maintenance mode */
     'maint:on': write('public/status/maintenance'),
-
     // -----------------------------------
     // Sub Tasks for Open
     // -----------------------------------
     /** Open app in browser */
     'open:app': open(`http://localhost:${Local.NGINX_CONTAINER_PORT}`),
-
     // -----------------------------------
     // Sub Tasks for Package
     // -----------------------------------
@@ -261,22 +234,18 @@ module.exports = pon(
       },
       { force: true },
     ),
-
     // -----------------------------------
     // Sub Tasks for PM2
     // -----------------------------------
     /** Run app with pm2 */
     'pm2:app': pm2('./bin/app.js', { name: Local.APP_PROCESS_NAME }),
-
     /** Run backup cron with pm2 */
     'pm2:backup:dump': pm2.pon('db:dump', {
       cron: Local.DUMP_SCHEDULE,
       name: `${Local.BACKUP_PROCESS_NAME}:dump`,
     }),
-
     /** Compile files for production */
     'prod:compile': ['env:prod', 'build', 'prod:map', 'prod:css', 'prod:js'],
-
     /** Compile css files for production */
     'prod:css': css.minify(
       [
@@ -294,28 +263,23 @@ module.exports = pon(
       [`public${Urls.JS_EXTERNAL_URL}`, `public${Urls.JS_BUNDLE_URL}`],
       `public${Urls.PRODUCTION_JS_URL}`,
     ),
-
     // -----------------------------------
     // Sub Tasks for Production
     // -----------------------------------
     /** Delete source map files for production */
     'prod:map': del('public/**/*.map'),
-
     // -----------------------------------
     // Sub Tasks for Process
     // -----------------------------------
     /** Check another process exists */
     'ps:debug': thePS('var/app/debug.pid'),
-
     // -----------------------------------
     // Sub Tasks for Secret
     // -----------------------------------
     /** Decrypt secret file */
     'secret:dec': () => secret.decrypt(),
-
     /** Encrypt secret file */
     'secret:enc': () => secret.encrypt(),
-
     // -----------------------------------
     // Sub Tasks for Structure
     // -----------------------------------
@@ -342,7 +306,6 @@ module.exports = pon(
       },
       { force: true },
     ),
-
     /** Generate project directories */
     'struct:mkdir': mkdir([...Object.keys(Directories)]),
     /** Prepare sub packages */
@@ -363,13 +326,11 @@ module.exports = pon(
         '.*.bud',
       ]),
     ],
-
     // -----------------------------------
     // Sub Tasks for Test
     // -----------------------------------
     /** Run client tests */
     'test:client': mocha('client/test/**/*.js', { timeout: 3000 }),
-
     /** Run server tests */
     'test:server': mocha('server/test/**/*.js', { timeout: 3000 }),
     /** Bundle browser script */
@@ -403,7 +364,6 @@ module.exports = pon(
         ),
       { sub: ['deps'] },
     ),
-
     // -----------------------------------
     // Sub Tasks for UI
     // -----------------------------------
@@ -428,10 +388,8 @@ module.exports = pon(
       ),
       css('public/build', 'public/build', { pattern: '*.pcss' }),
     ],
-
     /** Run css watch */
     'ui:css/watch': 'ui:css/*/watch',
-
     /** Extract map files */
     'ui:map': map('public', 'public', { pattern: '**/*.js', watchDelay: 400 }),
     /** Compile react components */
@@ -441,103 +399,89 @@ module.exports = pon(
       sourceRoot: '..',
       watchTargets: 'client/ui/**/*.pcss',
     }),
-
-    // -----------------------------------
-    // Main Tasks
-    // -----------------------------------
-    ...{
-      /** Run all assets tasks */
-      assets: ['assets:*'],
-      /** Build all */
-      build: ['pkg:link', 'struct', 'format', 'ui'],
-      /** Clean all */
-      clean: ['clean:shim', 'clean:public', 'clean:cache'],
-      /** Prepare DB */
-      db: ['db:setup', 'db:seed'],
-      /** Start debugging */
-      debug: ['ps:debug', 'env:debug', 'build', 'lint', 'debug:*'],
-      /** Default for `pon` command */
-      default: ['build'],
-      /** Deploy project on production */
-      deploy: ['maint:on', 'stop', 'git:catchup', 'prod', 'maint:off'],
-      /** Generate docs */
-      doc: 'doc:*',
-      /** Setup docker infra */
-      docker: ['docker:redis/run', 'docker:mysql/run', 'docker:nginx/run'],
-      /** Format source codes */
-      format: ['format:conf', 'format:json', 'format:client', 'format:server'],
-      /** Lint all */
-      lint: ['lint:loc', 'lint:rules'],
-      /** Show app daemon logs */
-      logs: ['pm2:app/logs'],
-      /** Open project */
-      open: 'open:*',
-      /** Prepare project */
-      prepare: [
-        'pkg:link',
-        'secret:enc',
-        'struct',
-        'assets',
-        'docker',
-        'db',
-        'build',
-        ...(isProduction() ? [] : ['pkg:fix', 'doc', 'lint']),
-      ],
-      /** Prepare and start on production */
-      prod: ['env:prod', 'prod:compile', 'prod:db', 'start'],
-      /** Restart app as daemon */
-      restart: ['pm2:app/restart', 'pm2:backup:*/restart'],
-      /** Update project settings with interactive shell */
-      setting: () => setting.ask(),
-      /** Show app daemon status */
-      show: ['pm2:app/show'],
-      /** Start app as daemon */
-      start: isProduction()
-        ? ['pm2:app/start', 'pm2:backup:*/start']
-        : 'debug:server',
-      /** Stop app as daemon */
-      stop: isProduction() ? ['pm2:app/stop', 'pm2:backup:*/stop'] : [],
-      /** Run all struct tasks */
-      struct: [
-        'struct:mkdir',
-        'struct:compile',
-        'struct:cp',
-        'struct:pkg',
-        'struct:render',
-        'struct:chmod',
-      ],
-      /** Run all tess */
-      test: ['env:test', 'test:client', 'test:server'],
-      /** Run all ui tasks */
-      ui: ['ui:css', 'ui:react', 'ui:browser', 'ui:browser-external', 'ui:map'],
-      /** Run watches */
-      watch: ['ui:*', 'ui:*/watch'],
-    },
-
-    // -----------------------------------
-    // Aliases
-    // -----------------------------------
-    ...{
-      /** Shortcut for `build` task */
-      b: 'build',
-      /** Shortcut for `clean` task */
-      c: 'clean',
-      /** Shortcut for `debug` task */
-      d: 'debug',
-      /** Shortcut for `debug:server` task */
-      ds: 'debug:server',
-      /** Shortcut for `format` task */
-      f: 'format',
-      /** Shortcut for `lint` task */
-      l: 'lint',
-      /** Shortcut for `open` task */
-      o: 'open',
-      /** Shortcut for `prod` task */
-      p: 'prod',
-      /** Shortcut for `test` task */
-      t: 'test',
-      /** Shortcut for `watch` task */
-      w: 'watch',
-    },
+    assets: ['assets:*'],
+    b: 'build',
+    /** Build all */
+    build: ['pkg:link', 'struct', 'format', 'ui'],
+    /** Shortcut for `clean` task */
+    c: 'clean',
+    /** Clean all */
+    clean: ['clean:shim', 'clean:public', 'clean:cache'],
+    /** Shortcut for `debug` task */
+    d: 'debug',
+    /** Prepare DB */
+    db: ['db:setup', 'db:seed'],
+    /** Start debugging */
+    debug: ['ps:debug', 'env:debug', 'build', 'lint', 'debug:*'],
+    /** Default for `pon` command */
+    default: ['build'],
+    /** Deploy project on production */
+    deploy: ['maint:on', 'stop', 'git:catchup', 'prod', 'maint:off'],
+    /** Generate docs */
+    doc: 'doc:*',
+    /** Setup docker infra */
+    docker: ['docker:redis/run', 'docker:mysql/run', 'docker:nginx/run'],
+    /** Shortcut for `debug:server` task */
+    ds: 'debug:server',
+    /** Shortcut for `format` task */
+    f: 'format',
+    /** Format source codes */
+    format: ['format:conf', 'format:json', 'format:client', 'format:server'],
+    /** Shortcut for `lint` task */
+    l: 'lint',
+    /** Lint all */
+    lint: ['lint:loc', 'lint:rules'],
+    /** Show app daemon logs */
+    logs: ['pm2:app/logs'],
+    /** Shortcut for `open` task */
+    o: 'open',
+    /** Open project */
+    open: 'open:*',
+    /** Shortcut for `prod` task */
+    p: 'prod',
+    /** Prepare project */
+    prepare: [
+      'pkg:link',
+      'secret:enc',
+      'struct',
+      'assets',
+      'docker',
+      'db',
+      'build',
+      ...(isProduction() ? [] : ['pkg:fix', 'doc', 'lint']),
+    ],
+    /** Prepare and start on production */
+    prod: ['env:prod', 'prod:compile', 'prod:db', 'start'],
+    /** Restart app as daemon */
+    restart: ['pm2:app/restart', 'pm2:backup:*/restart'],
+    /** Update project settings with interactive shell */
+    setting: () => setting.ask(),
+    /** Show app daemon status */
+    show: ['pm2:app/show'],
+    /** Start app as daemon */
+    start: isProduction()
+      ? ['pm2:app/start', 'pm2:backup:*/start']
+      : 'debug:server',
+    /** Stop app as daemon */
+    stop: isProduction() ? ['pm2:app/stop', 'pm2:backup:*/stop'] : [],
+    /** Run all struct tasks */
+    struct: [
+      'struct:mkdir',
+      'struct:compile',
+      'struct:cp',
+      'struct:pkg',
+      'struct:render',
+      'struct:chmod',
+    ],
+    /** Shortcut for `test` task */
+    t: 'test',
+    /** Run all tess */
+    test: ['env:test', 'test:client', 'test:server'],
+    /** Run all ui tasks */
+    ui: ['ui:css', 'ui:react', 'ui:browser', 'ui:browser-external', 'ui:map'],
+    /** Shortcut for `watch` task */
+    w: 'watch',
+    /** Run watches */
+    watch: ['ui:*', 'ui:*/watch'],
   },
 )

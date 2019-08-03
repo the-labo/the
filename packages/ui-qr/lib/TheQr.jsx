@@ -29,6 +29,7 @@ class TheQr extends React.PureComponent {
         </a>
       )
     }
+
     return 'div'
   }
 
@@ -49,6 +50,7 @@ class TheQr extends React.PureComponent {
     if (!text) {
       return
     }
+
     const { onError, onGenerate, size } = props
     this.setState({ spinning: true })
     qrcode.toDataURL(
@@ -62,6 +64,7 @@ class TheQr extends React.PureComponent {
         } else {
           onGenerate && onGenerate(url)
         }
+
         this.setState({
           spinning: false,
           url,

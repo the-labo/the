@@ -71,6 +71,7 @@ class ScopeScope extends Scope {
     if (!namepath) {
       throw new Error(`[${this.name}] namepath is required`)
     }
+
     const names = namepath.split('.')
     let scope = this
     const resolvedNames = []
@@ -101,6 +102,7 @@ class ScopeScope extends Scope {
       }
       return
     }
+
     unlessProduction(() => {
       if (typeof value === 'undefined') {
         console.warn(
@@ -113,6 +115,7 @@ class ScopeScope extends Scope {
     if (skip) {
       return
     }
+
     this.of(namepath).set(value)
   }
 }

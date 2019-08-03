@@ -15,10 +15,12 @@ const _processYAMLNode = (node) => {
   if (!node) {
     return node
   }
+
   const { items, type } = node
   if (!items) {
     return node
   }
+
   switch (type) {
     case 'MAP':
       node.items = items
@@ -49,6 +51,7 @@ async function processYAML(content) {
     )
     return content
   }
+
   doc.contents = _processYAMLNode(doc.contents)
   try {
     return String(doc)
@@ -59,6 +62,7 @@ async function processYAML(content) {
       )
       return content
     }
+
     throw e
   }
 }

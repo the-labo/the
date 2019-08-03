@@ -27,6 +27,7 @@ class ObjectScope extends Scope {
           if (!needsToDelete) {
             return state
           }
+
           return Object.keys(state)
             .filter((filtering) => !names.includes(filtering))
             .reduce(
@@ -61,6 +62,7 @@ class ObjectScope extends Scope {
           if (!needsSet) {
             return state
           }
+
           return { ...values }
         }
       },
@@ -85,6 +87,7 @@ class ObjectScope extends Scope {
           if (!needsSet) {
             return state
           }
+
           return Object.assign({}, state, values)
         }
       },

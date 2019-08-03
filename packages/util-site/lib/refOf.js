@@ -13,6 +13,7 @@ function refOf(entity) {
   if (!entity) {
     return null
   }
+
   unlessProduction(() => {
     if (!entity.$$as) {
       console.warn('Invalid entity:', entity)

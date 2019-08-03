@@ -27,6 +27,7 @@ function mount(element, containerId, options = {}) {
       `[the-entrypoint] Container not found with id: "${containerId}"`,
     )
   }
+
   if (router) {
     element = c(
       TheRouter,
@@ -37,9 +38,11 @@ function mount(element, containerId, options = {}) {
       element,
     )
   }
+
   if (strictMode) {
     element = c(StrictMode, {}, element)
   }
+
   return new Promise((resolve) => {
     render(element, container, (...args) => {
       resolve({})

@@ -20,6 +20,7 @@ class TheLoc {
     if ('buildin' in options) {
       throw new Error('[TheLoc] buildin is no longer supported')
     }
+
     for (const namespace of Object.keys(config || {})) {
       const values = mergedLocales(config[namespace])
       this.register(namespace, values, { ctx: config })
@@ -42,6 +43,7 @@ class TheLoc {
       )
       scope = this[defaultLang]
     }
+
     const bound = this.resolve.bind(this, lang)
     return Object.assign(bound, scope)
   }
@@ -81,6 +83,7 @@ class TheLoc {
     if (!this[lang]) {
       throw new Error(`Unknown lang:${lang}`)
     }
+
     const searchingLang = [
       lang,
       ...Object.keys(this).filter((key) => key !== lang),
@@ -90,6 +93,7 @@ class TheLoc {
       if (found === '') {
         return found
       }
+
       const ok =
         (found && typeof found === 'string') || typeof found === 'number'
       if (ok) {

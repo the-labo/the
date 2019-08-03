@@ -81,7 +81,6 @@ const TheLogResource = ({ define }) => {
         Log.startListeningFor(resourceName)
       }
     },
-
     pushLog(resourceName, entityId, attributes) {
       Log.data[resourceName] = Log.data[resourceName] || {}
       Log.data[resourceName][String(entityId)] = Object.assign(
@@ -99,12 +98,10 @@ const TheLogResource = ({ define }) => {
         }
       }
     },
-
     removeRef(resourceName) {
       removeRef.call(Log, resourceName)
       Log.stopListeningFor(resourceName)
     },
-
     startListeningFor(resourceName) {
       const resource = Log.getRef(resourceName)
 
@@ -138,7 +135,6 @@ const TheLogResource = ({ define }) => {
         resource.addListener(event, listener)
       }
     },
-
     stopListeningFor(resourceName) {
       const resource = Log.getRef(resourceName)
 
@@ -148,32 +144,34 @@ const TheLogResource = ({ define }) => {
       }
       delete Log.logListeners[resourceName]
     },
-
     async close() {
       Log.flushLoop = false
       clearTimeout(Log.flushTimer)
       if (cluster.isMaster) {
         await Log.flushData().catch(() => null)
       }
+
       for (const resourceName of Object.keys(Log.logListeners)) {
         Log.stopListeningFor(resourceName)
       }
 
       close.call(Log, ...arguments)
     },
-
     async flushData() {
       const { theDBLogEnabled } = Log.db || {}
       if (!theDBLogEnabled) {
         return
       }
+
       const { dialect } = (Log.db && Log.db.env) || {}
       if (String(dialect).trim() === 'memory') {
         return
       }
+
       if (Log._flushTask) {
         await Log._flushTask
       }
+
       Log._flushTask = (async () => {
         await amkdirp(path.dirname(Log.filename))
         for (const resourceName of Object.keys(Log.data)) {
@@ -182,6 +180,7 @@ const TheLogResource = ({ define }) => {
           if (entries.length === 0) {
             continue
           }
+
           const lines = entries
             .map(([entityId, attributes]) =>
               JSON.stringify([resourceName, entityId, attributes]),

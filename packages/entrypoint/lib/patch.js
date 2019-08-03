@@ -14,6 +14,7 @@ function patch() {
   if (isFirefox()) {
     patch.firefox()
   }
+
   if (isiOS()) {
     patch.ios()
   }

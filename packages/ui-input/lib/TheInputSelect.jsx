@@ -71,6 +71,7 @@ class TheInputSelect extends React.PureComponent {
     if (!state.suggesting) {
       return
     }
+
     this.setState({
       suggesting: false,
       suggestingIndex: this.getIndexForValue(value),
@@ -124,6 +125,7 @@ class TheInputSelect extends React.PureComponent {
     } else {
       inputElm && inputElm.blur()
     }
+
     this.setState({
       suggesting,
       suggestingIndex: this.getIndexForValue(this.props.value),
@@ -138,6 +140,7 @@ class TheInputSelect extends React.PureComponent {
     if (!elm) {
       return
     }
+
     const inside = elm.contains(e.target)
     if (!inside) {
       this.offSuggestion()
@@ -170,6 +173,7 @@ class TheInputSelect extends React.PureComponent {
         if (onEnter) {
           onEnter()
         }
+
         break
       }
       // UP
@@ -179,6 +183,7 @@ class TheInputSelect extends React.PureComponent {
           e.preventDefault()
           e.stopPropagation()
         }
+
         break
       }
       // DOWN
@@ -188,6 +193,7 @@ class TheInputSelect extends React.PureComponent {
           e.preventDefault()
           e.stopPropagation()
         }
+
         break
       }
       case 9: // Tab
@@ -197,6 +203,7 @@ class TheInputSelect extends React.PureComponent {
         this.setState({ suggesting: true })
         break
     }
+
     onKeyDown && onKeyDown(e)
   }
 
@@ -227,6 +234,7 @@ class TheInputSelect extends React.PureComponent {
     if (over) {
       return false
     }
+
     this.setState({
       suggestingIndex: index,
     })
@@ -473,6 +481,7 @@ class TheInputSelectOptionList extends React.PureComponent {
     if (optionValues.length === 0) {
       return null
     }
+
     return (
       <div
         className={c('the-input-select-options', {

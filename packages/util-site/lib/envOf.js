@@ -15,6 +15,7 @@ function envOf(name, options = {}) {
   if (strict && !has) {
     throw new Error(`${name} is not found`)
   }
+
   return env[name]
 }
 

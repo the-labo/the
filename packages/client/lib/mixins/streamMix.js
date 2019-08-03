@@ -19,7 +19,7 @@ class RemoteStream extends TheStream {
     this.streamName = streamName
     this.socket = socket
     this.sid = uuid.v4()
-    this.tmieout = 30 * 1000
+    this.tmieout = 30000
     this.closed = false
   }
 
@@ -57,6 +57,7 @@ class RemoteStream extends TheStream {
         // Do nothing
       }
     }
+
     if (!this.closed) {
       await this.abort()
     }

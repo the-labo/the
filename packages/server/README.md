@@ -74,7 +74,6 @@ const { createElement: c } = React
       cart[name] = (cart[name] || 0) + amount
       session.cart = cart
     },
-
     async buy() {
       const { cart = {} } = session
       console.log(cart)
@@ -112,7 +111,6 @@ const { createElement: c } = React
      * Directory path to serve static files
      */
     static: 'public',
-
     streams: {
       countdown: CountdownStream,
     },

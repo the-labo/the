@@ -40,6 +40,7 @@ const withEntry = asClassMixin((Class) => {
         if (raw) {
           return entry
         }
+
         return expand(entry)
       },
       /**
@@ -73,6 +74,7 @@ const withEntry = asClassMixin((Class) => {
           console.warn('[withEntry] formatEntry is now deprecated')
           values = this.formatEntry(values)
         }
+
         if (entry.reset) {
           entry.reset(values)
         } else {
@@ -80,6 +82,7 @@ const withEntry = asClassMixin((Class) => {
           entry.drop()
           entry.set(values)
         }
+
         {
           const names = Object.keys(newValues).filter(
             (name) => entryErrors.state[name],
@@ -117,6 +120,7 @@ const withEntry = asClassMixin((Class) => {
             entryErrors.set(this.catchEntryError(e))
             return
           }
+
           throw e
         }
       },

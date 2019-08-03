@@ -92,6 +92,7 @@ class ExampleComponent extends React.Component {
       if (window.DISABLE_THE_CHAT_PUSH) {
         return
       }
+
       this.setState({
         items: [
           ...items,

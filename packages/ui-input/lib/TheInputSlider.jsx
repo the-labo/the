@@ -81,6 +81,7 @@ class TheInputSlider extends React.PureComponent {
     if (!handleElm) {
       return 0
     }
+
     return handleElm.offsetWidth / 2
   }
 
@@ -89,6 +90,7 @@ class TheInputSlider extends React.PureComponent {
     if (!barElm) {
       return
     }
+
     const handleRadius = this.getHandleRadius()
     const { left } = barElm.getBoundingClientRect()
     const x = e.clientX - left - handleRadius
@@ -109,6 +111,7 @@ class TheInputSlider extends React.PureComponent {
     if (!barElm) {
       return
     }
+
     const { offsetWidth: w } = barElm
     const handleRadius = this.getHandleRadius()
     const minX = 0 - handleRadius
@@ -195,6 +198,7 @@ class TheInputSlider extends React.PureComponent {
     if (duplicate) {
       return
     }
+
     const { maxX, minX } = state
     const rate = this._rateWithValue(value)
     this.setState({
@@ -231,6 +235,7 @@ class TheInputSlider extends React.PureComponent {
     if (minX === maxX) {
       return 0
     }
+
     return rangecal.rate(minX, maxX, x + 2)
   }
 

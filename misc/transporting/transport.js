@@ -67,10 +67,12 @@ const _addDevDeps = async (baseDir, devDeps) => {
     if (pkg.name === name) {
       continue
     }
+
     const has = name in (pkg.devDependencies || {})
     if (has) {
       continue
     }
+
     if (/^file:/.test(version)) {
       spawnSync('npm', ['i', '-D', version], { cwd: baseDir, stdio: 'inherit' })
     } else {
@@ -118,6 +120,7 @@ const _removeDevDeps = async (baseDir, names) => {
       spawnSync('cp', ['-R', fromDir, toDir], { stdio: 'inherit' })
       await _deprecatePackage(fromDir, name)
     }
+
     const toPkgFile = path.resolve(toDir, 'package.json')
     const toPkg = JSON.parse(await readFile(toPkgFile))
     if (hasFrom) {
@@ -133,6 +136,7 @@ const _removeDevDeps = async (baseDir, names) => {
             String(example).replace(fromPkg.name, toPkg.name),
           )
         }
+
         const refactor = new TheRefactor()
         await refactor.rewrite('example/*.jsx', {
           [`from '${fromPkgName}'`]: [`from '@the-/${name}'`],
@@ -158,6 +162,7 @@ const _removeDevDeps = async (baseDir, names) => {
     if (/^component-demo/.test(name)) {
       continue
     }
+
     if (!/demo/.test(name)) {
       if (['ui'].includes(kind)) {
         const demoComponentDir = path.resolve(baseDir, 'packages', 'demo-ui')
@@ -204,6 +209,7 @@ const _removeDevDeps = async (baseDir, names) => {
               devDependencies['@the-/router'] =
                 demoComponentPkg.devDependencies['@the-/router']
             }
+
             peerDependencies.react = demoComponentPkg.peerDependencies.react
             peerDependencies['react-dom'] =
               demoComponentPkg.peerDependencies['react-dom']
@@ -243,6 +249,7 @@ const _removeDevDeps = async (baseDir, names) => {
           )
         }
       }
+
       if (['driver', 'lib', 'util', 'mixin', 'const'].includes(kind)) {
         const demoLibDir = path.resolve(baseDir, 'packages', 'demo-lib')
         rimraf.sync(path.resolve(toDir, 'doc/readme'))

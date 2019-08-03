@@ -63,9 +63,11 @@ class TheInputSearch extends React.PureComponent {
     if (typeof open === 'undefined') {
       open = !this.state.open
     }
+
     if (open === this.state.open) {
       return
     }
+
     this.setState({ open })
     clearTimeout(this._focusTimer)
     this._focusTimer = setTimeout(() => {

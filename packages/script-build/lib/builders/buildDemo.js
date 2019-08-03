@@ -43,6 +43,7 @@ module.exports = async function buildDemo(
         reject(err)
         return
       }
+
       const hasErrors = stats.hasErrors()
       if (hasErrors) {
         const { errors } = stats.toJson()
@@ -50,6 +51,7 @@ module.exports = async function buildDemo(
         reject(errors[0])
         return
       }
+
       resolve()
     })
   })

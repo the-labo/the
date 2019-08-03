@@ -194,6 +194,7 @@ function normalizeString(src) {
   if (!src) {
     return src
   }
+
   if (typeof src !== 'string') {
     return src
   }

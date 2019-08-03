@@ -14,7 +14,6 @@ function SessionAccess(sessionStore, cid) {
       },
     }),
     state,
-
     async clear() {
       await sessionStore.set(cid, {})
       await sessionAccess.reload()
@@ -45,6 +44,7 @@ function SessionAccess(sessionStore, cid) {
       if (skip) {
         return
       }
+
       await sessionStore.set(cid, Object.assign({}, state.session))
       state.needsToSaveSession = false
     },

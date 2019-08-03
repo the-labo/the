@@ -16,6 +16,7 @@ function proxy(src, options = {}) {
   if (typeof Proxy === 'undefined') {
     return Object.assign({}, src)
   }
+
   return new Proxy(src, {
     get(target, key) {
       const has = key in target
@@ -39,6 +40,7 @@ function proxy(src, options = {}) {
           console.warn(`[${name}] Unknown property "${String(key)}"`)
         }
       }
+
       return target[key]
     },
   })

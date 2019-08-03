@@ -9,12 +9,15 @@ function omitLongString(value, options = {}) {
   if (__recursiveDeps > 4) {
     return value
   }
+
   if (!value) {
     return value
   }
+
   if (typeof value === 'string') {
     return value.length > maxLength ? `${value.slice(0, maxLength)}...` : value
   }
+
   if (Array.isArray(value)) {
     const array = value.map((v) =>
       omitLongString(v, {
@@ -24,6 +27,7 @@ function omitLongString(value, options = {}) {
     )
     return array
   }
+
   if (typeof value === 'object') {
     const newObj = {}
     for (const [k, v] of Object.entries(value)) {
@@ -34,6 +38,7 @@ function omitLongString(value, options = {}) {
     }
     return newObj
   }
+
   return value
 }
 

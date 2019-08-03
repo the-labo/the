@@ -49,6 +49,7 @@ class TheRoute extends React.Component {
     if (disabled) {
       return null
     }
+
     const { history } = routeProps
     const active = !!matchPath(history.location.pathname, {
       exact,
@@ -86,21 +87,25 @@ class TheRoute extends React.Component {
     if (!popPath) {
       throw new Error('[TheRoute] popPath is required')
     }
+
     const { history } = this
     if (typeof popPath !== 'string') {
       throw new Error(`[TheRoute] Invalid pop path: ${popPath}`)
     }
+
     const {
       state: { gone, ready },
     } = this
     if (gone || !ready) {
       return
     }
+
     this.setState({ gone: true })
     if (!this.props.popPath) {
       console.warn('[TheRoute] No where to pop')
       return
     }
+
     clearTimeout(this.popTimer)
     this.popTimer = setTimeout(() => {
       history.push(popPath)
@@ -166,6 +171,7 @@ TheRoute.Status = ({ children, code }) => (
       if (staticContext) {
         staticContext.status = code
       }
+
       return (
         <div className='the-route-status' data-status-code={code}>
           {children}

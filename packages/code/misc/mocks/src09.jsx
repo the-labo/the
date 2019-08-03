@@ -37,7 +37,7 @@ const ConnectedApp = asBound(
   ({ accountScene, verifyNeedScene }) => ({
     onMount: async () => {
       await accountScene.doSync()
-      await verifyNeedScene.doSync({ delay: 3 * 1000 })
+      await verifyNeedScene.doSync({ delay: 3000 })
     },
   }),
 )

@@ -30,21 +30,21 @@ function InfoFlusher(filename, getter) {
       await mkdirpAsync(path.dirname(filename))
       await writeFileAsync(filename, JSON.stringify(info, null, 2))
     },
-
     async startInfoFlush() {
       if (!isMaster) {
         return
       }
+
       state.flushInfoTimer = setInterval(() => {
         void infoFlusher.flushInfo()
-      }, 1.1 * 1000).unref()
+      }, 1100).unref()
       await infoFlusher.flushInfo()
     },
-
     async stopInfoFlush() {
       if (!isMaster) {
         return
       }
+
       clearInterval(state.flushInfoTimer)
       await infoFlusher.flushInfo()
     },

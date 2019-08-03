@@ -9,6 +9,7 @@ module.exports = Object.freeze({
     if (regExpByString) {
       return new RegExp(pattern.replace(/^\/|\/$/g, ''))
     }
+
     return pattern
   },
 })

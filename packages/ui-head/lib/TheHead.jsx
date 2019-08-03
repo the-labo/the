@@ -17,6 +17,7 @@ const ogProperty = (key) => {
   if (/^og:/.test(key)) {
     return key
   }
+
   return ['og', key].join(':')
 }
 
@@ -28,6 +29,7 @@ class TheHead extends React.Component {
     if (!fallbackUnless) {
       return null
     }
+
     const vQuery = this.getVersionQuery()
     const {
       props: { css, js },
@@ -230,9 +232,11 @@ document.addEventListener('DOMContentLoaded', function(event) {
     if (vQuery) {
       url = addQuery(url, vQuery)
     }
+
     if (cdn && /^\//.test(url)) {
       url = new URL(url, cdn).href
     }
+
     return url
   }
 }

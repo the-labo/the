@@ -6,6 +6,7 @@ import React from 'react'
 import { styleString } from '@the-/util-style'
 
 const EOL = '\n'
+
 /**
  * Style of the-components
  */
@@ -21,6 +22,7 @@ class TheStyle extends React.PureComponent {
     if (!children) {
       return null
     }
+
     return []
       .concat(children)
       .map((child) => child)
@@ -40,6 +42,7 @@ class TheStyle extends React.PureComponent {
     if (!styles) {
       return null
     }
+
     return Object.keys(styles)
       .map((selector) =>
         styleString(

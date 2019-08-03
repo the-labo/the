@@ -27,6 +27,7 @@ function depsRule(config) {
   if (Object.keys(rest).length > 0) {
     console.warn('[depsRule] Unknown options', Object.keys(rest))
   }
+
   return async function depsRuleCheck({ content, filename, report }) {
     const parsed = parse(String(content), {
       sourceType: 'unambiguous',

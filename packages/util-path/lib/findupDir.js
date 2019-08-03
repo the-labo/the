@@ -20,9 +20,11 @@ async function findupDir(basedir, options = {}) {
     if (found.length > 0) {
       return dir
     }
+
     if (dir === parentDir) {
       return null
     }
+
     dir = parentDir
   }
   return null
@@ -38,9 +40,11 @@ findupDir.sync = (basedir, options = {}) => {
     if (found.length > 0) {
       return dir
     }
+
     if (dir === parentDir) {
       return null
     }
+
     dir = parentDir
   }
   return null

@@ -10,6 +10,7 @@ function FreeDrawMethod(ctx, points) {
     ctx.closePath()
     return
   }
+
   ctx.beginPath()
 
   // Begin point

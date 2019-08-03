@@ -74,6 +74,7 @@ var/
 /packages/error/lib/TheServerRottenError.js
 /packages/error/lib/TheUnauthorizedError.js
 /packages/error/lib/index.js
+/packages/facade-context/lib/index.js
 /packages/facade-scope/lib/index.js
 /packages/facade-scope/lib/operations/index.js
 /packages/facebook/lib/index.js

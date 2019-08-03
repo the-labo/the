@@ -41,6 +41,7 @@ async function theScaffold(type, dest, options = {}) {
   if (skip) {
     throw new Error(`${dest} is already exists. Use -f option to force.`)
   }
+
   let user = await gitconfig.get('user')
   user = user || { name: '__user_name__' }
   const defaults = Object.assign(
@@ -57,6 +58,7 @@ async function theScaffold(type, dest, options = {}) {
   } else {
     config = await askconfig(defaults)
   }
+
   const data = {
     author_email: user.email,
     author_name: user.name,
@@ -70,6 +72,7 @@ async function theScaffold(type, dest, options = {}) {
   if (!tmpls[type]) {
     throw new Error(`Unknown type: ${type}`)
   }
+
   const tmpl = path.resolve(__dirname, '..', tmpls[type])
   await render(tmpl, dest, data, {
     silent: options.silent,

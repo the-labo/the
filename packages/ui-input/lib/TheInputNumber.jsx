@@ -22,14 +22,17 @@ class TheInputNumber extends React.PureComponent {
     if (isNaN(value)) {
       return this.props.value
     }
+
     const min = Number(this.props.min)
     const max = Number(this.props.max)
     if (!isNaN(min)) {
       value = Math.max(min, value)
     }
+
     if (!isNaN(max)) {
       value = Math.min(max, value)
     }
+
     return zeroIfNaN(value)
   }
 

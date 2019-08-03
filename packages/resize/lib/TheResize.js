@@ -159,6 +159,7 @@ class TheResize {
     if (!isSupported) {
       return null
     }
+
     return this.overwrite(filename, options)
   }
 }

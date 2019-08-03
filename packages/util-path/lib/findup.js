@@ -19,10 +19,12 @@ async function findup(filename, options = {}) {
     if (await exists(resolved)) {
       return resolved
     }
+
     const parent = path.dirname(dirname)
     if (dirname === parent) {
       return null // Failed to findup
     }
+
     dirname = parent
   } while (dirname !== '/')
   return null
@@ -36,10 +38,12 @@ findup.sync = (filename, options = {}) => {
     if (exists.sync(resolved)) {
       return resolved
     }
+
     const parent = path.dirname(dirname)
     if (dirname === parent) {
       return null // Failed to findup
     }
+
     dirname = parent
   } while (dirname !== '/')
   return null

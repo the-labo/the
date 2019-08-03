@@ -61,6 +61,7 @@ function processJSImport(content, options = {}) {
       if (aWeight !== bWeight) {
         return aWeight - bWeight
       }
+
       return aName.localeCompare(bName)
     })
     for (let i = 0; i < sortedByStart.length; i++) {

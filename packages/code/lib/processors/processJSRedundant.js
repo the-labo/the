@@ -24,6 +24,7 @@ function processJSRedundant(content, options = {}) {
     if (!LogicalExpression) {
       return
     }
+
     const { left, right } = LogicalExpression
     const duplicate =
       left.type === NodeTypes.BinaryExpression &&

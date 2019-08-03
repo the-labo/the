@@ -36,6 +36,7 @@ class TheCode {
       jsObject = true,
       jsArray = true,
       json = true,
+      jsChaining = true,
       jsPrettier = true,
       jsRequire = true,
       jsStrict = true,
@@ -54,6 +55,7 @@ class TheCode {
         jsBlock && p.processJSBlock,
         jsComment && p.processJSComment,
         jsClass && p.processJSClass,
+        jsChaining && p.processJSChaining,
         jsDoc && p.processJSDoc,
         fileEnd && p.processFileEnd,
         jsFunction && p.processJSFunction,
@@ -141,6 +143,7 @@ class TheCode {
       debug('Skip', filename)
       return Promise.resolve({ filename, skipped: true })
     }
+
     const { cache } = this
     const input = String(await readFileAsync(filename))
     const shouldSkipContent = this.shouldSkipContent(input)
@@ -148,6 +151,7 @@ class TheCode {
       debug('Skip', filename)
       return Promise.resolve({ filename, skipped: true })
     }
+
     const type = typeHelper.typeOf(filename)
     const sourceType = typeHelper.sourceTypeOf(filename)
     const processers = this.processers[type]
@@ -174,6 +178,7 @@ class TheCode {
     if (result) {
       debug('File formatted', filename)
     }
+
     await cache.set(filename, { at: new Date().getTime() })
     return result
   }
@@ -183,6 +188,7 @@ class TheCode {
     if (!stat) {
       return false
     }
+
     const tooLarge = stat.size > this.maxFileSize
     if (tooLarge) {
       const relativeName = path.relative(process.cwd(), filename)
@@ -193,14 +199,17 @@ class TheCode {
       )
       return false
     }
+
     const canWrite = await canWriteAsync(filename)
     if (!canWrite) {
       return true
     }
+
     const cached = await this.cache.get(filename)
     if (!cached) {
       return false
     }
+
     return new Date(cached.at) >= new Date(stat.mtime)
   }
 }

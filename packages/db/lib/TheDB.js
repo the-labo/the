@@ -61,6 +61,7 @@ class TheDB extends TheDBBase {
     if (!new.target) {
       throw new Error('`TheDB()` must be called with `new`')
     }
+
     const {
       hooks = {},
       name = uuid.v4(),
@@ -228,9 +229,11 @@ class TheDB extends TheDBBase {
     if (entityClass) {
       resource.enhanceResourceEntity(entityClass)
     }
+
     if (collectionClass) {
       resource.enhanceResourceCollection(collectionClass)
     }
+
     resource.listenTo({ onCreate, onDestroy, onDrop, onUpdate })
     return resource
   }
@@ -305,6 +308,7 @@ class TheDB extends TheDBBase {
       if (pluginName in this._plugins) {
         throw new Error(`[TheDB] Plugin already exists: "${pluginName}"`)
       }
+
       this._plugins[pluginName] = creator(this, { pluginName })
     }
   }
@@ -317,6 +321,7 @@ class TheDB extends TheDBBase {
     if (this._unref) {
       throw new Error('Already unref')
     }
+
     process.setMaxListeners(process.getMaxListeners() + 1)
     process.on('beforeExit', () => {
       if (!this.closed) {
@@ -332,6 +337,7 @@ class TheDB extends TheDBBase {
     if (this.closed) {
       return
     }
+
     this.stopRefreshLoop()
     this.stopCascadeLink()
     this.emit('beforeClose')
@@ -376,9 +382,11 @@ class TheDB extends TheDBBase {
       default:
         break
     }
+
     if (!driver.drop) {
       throw new Error('[TheDB] drop() is not implemented!')
     }
+
     for (const resourceName of Object.keys(resources)) {
       await driver.drop(resourceName)
     }
@@ -394,9 +402,11 @@ class TheDB extends TheDBBase {
     if (Array.isArray(entityRef)) {
       return Promise.all(entityRef.map((r) => this.invalidate(r)))
     }
+
     if (entityRef.toRef) {
       entityRef = entityRef.toRef()
     }
+
     this.requestToRefresh(entityRef)
   }
 
@@ -407,6 +417,7 @@ class TheDB extends TheDBBase {
       if (!schema) {
         continue
       }
+
       if (driver.define) {
         await driver.define(resourceName, schema, {
           indices: indices[resourceName],
@@ -427,8 +438,10 @@ class TheDB extends TheDBBase {
       if (callback) {
         callback(null)
       }
+
       return null
     }
+
     return driver.transaction(callback)
   }
 

@@ -53,6 +53,7 @@ class TheSeat extends TheSeatBase {
     if (this.has(key)) {
       return this.get(key)
     }
+
     let taking = next()
     while (!this.canTake(key, taking)) {
       taking = next(taking)
@@ -129,6 +130,7 @@ class TheSeat extends TheSeatBase {
     if (!has(data, scopePath)) {
       return true
     }
+
     const taken = get(data, scopePath) || {}
     for (const takenKey of Object.keys(taken)) {
       const hit = taken[takenKey] === value
@@ -211,8 +213,10 @@ class TheSeat extends TheSeatBase {
       if (unchanged) {
         return
       }
+
       this.syncAt = mtimeMs
     }
+
     this.data = this.read() || {}
   }
 
@@ -228,6 +232,7 @@ class TheSeat extends TheSeatBase {
     if (!this.canTake(key, value)) {
       throw new Error(`${value} is already taken by ${key}`)
     }
+
     const having = this.has(key)
     if (having) {
       const gotten = this.get(key)
@@ -239,6 +244,7 @@ class TheSeat extends TheSeatBase {
         )
       }
     }
+
     set(data, this.scopePathFor(key), value)
     this.data = data
     this.flush()

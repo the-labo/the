@@ -74,6 +74,7 @@ function IOConnector(
           if (config.sid !== sid) {
             return
           }
+
           await asleep(0) // Next tick
           onStreamClose(cid, socketId, config).catch(onStreamError)
           socket.off(`${IOEvents.STREAM_CHUNK}/${sid}`, onChunk)
@@ -96,7 +97,6 @@ function IOConnector(
         { pack: true },
       )
     },
-
     async sendRPCKeep(cid, iid, duration) {
       await connector.sendToIOClient(
         cid,
@@ -105,7 +105,6 @@ function IOConnector(
         { pack: true },
       )
     },
-
     async sendRPCSuccess(cid, iid, data) {
       await connector.sendToIOClient(
         cid,
@@ -114,7 +113,6 @@ function IOConnector(
         { pack: true },
       )
     },
-
     async sendStreamChunk(cid, sid, chunk) {
       await connector.sendToIOClient(
         cid,
@@ -122,23 +120,18 @@ function IOConnector(
         chunk,
       )
     },
-
     async sendStreamDidClose(cid, sid) {
       await connector.sendToIOClient(cid, IOEvents.STREAM_DID_CLOSE, { sid })
     },
-
     async sendStreamDidOpen(cid, sid) {
       await connector.sendToIOClient(cid, IOEvents.STREAM_DID_OPEN, { sid })
     },
-
     async sendStreamError(cid, sid, error) {
       await connector.sendToIOClient(cid, IOEvents.STREAM_ERROR, { error, sid })
     },
-
     async sendStreamFin(cid, sid) {
       await connector.sendToIOClient(cid, IOEvents.STREAM_FIN, { sid })
     },
-
     async sendToIOClient(cid, event, data, options = {}) {
       if (connectionStore.closed) {
         console.warn(
@@ -146,6 +139,7 @@ function IOConnector(
         )
         return
       }
+
       const { pack = false, retry = 3 } = options
       const connection = await connectionStore.patientlyGet(cid, {
         interval: 150 + Math.random() * 100,
@@ -154,10 +148,12 @@ function IOConnector(
         console.warn(`[TheServer] Connection lost for cid: ${cid}`)
         return
       }
+
       const { socketIds = [] } = connection
       if (socketIds.length === 0) {
         return // Already gone
       }
+
       const namespace = io.of(NAMESPACE)
       const connectedSocketIds = socketIds
         .reverse()
@@ -169,6 +165,7 @@ function IOConnector(
         }
         return // Send done
       }
+
       const shouldRetry = retry > 0
       if (shouldRetry) {
         // Wait and retry

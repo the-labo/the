@@ -10,17 +10,21 @@ function cleanupRedundantAliasOnObjectPatternNode(ObjectPattern, { replace }) {
   if (!properties) {
     return null
   }
+
   for (let i = 0; i < properties.length; i++) {
     const property = properties[i]
     if (property.computed) {
       continue
     }
+
     if (!property.key) {
       continue
     }
+
     if (property.key.type !== 'StringLiteral') {
       continue
     }
+
     const {
       key: { value },
     } = property

@@ -74,13 +74,16 @@ class TheMap extends React.Component {
     if (!map) {
       return
     }
+
     if (!layerControlEnabled) {
       if (this.mapLayerControl) {
         this.mapLayerControl.remove()
         this.mapLayerControl = null
       }
+
       return
     }
+
     const {
       props: { layerControlPosition },
     } = this
@@ -102,6 +105,7 @@ class TheMap extends React.Component {
     if (!map) {
       return
     }
+
     {
       const layerValuesToAdd = layers.filter(({ key }) => !mapLayers[key])
       for (const { key, ...options } of layerValuesToAdd) {
@@ -123,6 +127,7 @@ class TheMap extends React.Component {
     if (this.mapLayerControl) {
       this.mapLayerControl.remove()
     }
+
     this.needsChange()
   }
 
@@ -131,6 +136,7 @@ class TheMap extends React.Component {
     if (!map) {
       return
     }
+
     {
       const mapMarkersNodes = { ...this.state.mapMarkersNodes }
       for (const { key, ...options } of markers) {
@@ -138,6 +144,7 @@ class TheMap extends React.Component {
           console.warn('[TheMap] key is missing for marker:', options)
           continue
         }
+
         {
           const { lat, lng } = options
           if ([lat, lng].some(nullOrUndefined)) {
@@ -194,13 +201,16 @@ class TheMap extends React.Component {
     if (!map) {
       return
     }
+
     if (!zoomControlEnabled) {
       if (this.mapZoomControl) {
         this.mapZoomControl.remove()
         this.mapZoomControl = null
       }
+
       return
     }
+
     const {
       props: { zoomControlPosition },
     } = this
@@ -272,6 +282,7 @@ class TheMap extends React.Component {
       map.remove()
       this.map = null
     }
+
     this.mapLayers = {}
   }
 
@@ -316,6 +327,7 @@ class TheMap extends React.Component {
     if (!map) {
       return null
     }
+
     const zoom = map.getZoom()
     const { lat, lng } = map.getCenter()
     const bounds = map.getBounds()
@@ -359,12 +371,14 @@ class TheMap extends React.Component {
     if (!mapData) {
       return
     }
+
     const skip =
       !force &&
       ['lat', 'lng', 'zoom'].every((k) => this.props[k] === mapData[k])
     if (skip) {
       return
     }
+
     onChange && onChange(mapData)
   }
 
@@ -408,24 +422,29 @@ class TheMap extends React.Component {
     if (!map) {
       return false
     }
+
     if (!this.mapReady) {
       map.setView([lat, lng], zoom)
       this.mapReady = true
       return true
     }
+
     const currentZoom = map.getZoom()
     if (!currentZoom) {
       return false
     }
+
     const center = map.getCenter()
     if (!center) {
       return false
     }
+
     const same =
       center.lat === lat && center.lng === lng && currentZoom === zoom
     if (same) {
       return false
     }
+
     map.setView([lat, lng], zoom)
     return true
   }

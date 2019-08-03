@@ -24,6 +24,7 @@ async function createTerminal(handler, options = {}) {
           if (!empty) {
             console.log(inspect(result))
           }
+
           next()
         })
         .catch((e) => {

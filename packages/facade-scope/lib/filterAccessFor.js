@@ -33,6 +33,7 @@ function filterAccessFor(scope) {
         scope.init('filter')
         return
       }
+
       scope.set({ filter })
     },
   }

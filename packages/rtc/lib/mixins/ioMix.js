@@ -103,6 +103,7 @@ function ioMix(Class) {
           sendOffer: this.sendIOPeerOffer.bind(this),
         })
       }
+
       const namespace = io.of(NAMESPACE)
       namespace.on(IOEvents.CONNECTION, (socket) => {
         const {
@@ -149,6 +150,7 @@ function ioMix(Class) {
             if (!socket) {
               return null
             }
+
             return { ...socket.theRTCState }
           })
           .filter(Boolean),
@@ -218,6 +220,7 @@ function ioMix(Class) {
           await this.handleIORoomLeave(socket, currentRoom)
         }
       }
+
       try {
         await new Promise((resolve) => socket.join(roomName, () => resolve()))
         socket.theRTCState.roomName = roomName
@@ -245,6 +248,7 @@ function ioMix(Class) {
         })
         return
       }
+
       try {
         await new Promise((resolve) => socket.leave(roomName, () => resolve()))
         socket.theRTCState.roomName = null
@@ -295,6 +299,7 @@ function ioMix(Class) {
       if (!roomName) {
         return
       }
+
       const roomState = await this.getIORoomState(roomName)
       await this.broadcastToIORoom(roomName, IOEvents.ROOM_STATE, roomState)
     }

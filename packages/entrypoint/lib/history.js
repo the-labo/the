@@ -14,6 +14,7 @@ function history() {
   if (history.singleton) {
     return history.singleton
   }
+
   const creator = get('window.document')
     ? createBrowserHistory
     : createMemoryHistory

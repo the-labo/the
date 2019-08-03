@@ -35,6 +35,7 @@ const withQuery = asClassMixin((Class) => {
         if (!search) {
           return {}
         }
+
         return qs.parse(search, { ignoreQueryPrefix: true })
       },
       /**

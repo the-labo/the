@@ -73,6 +73,7 @@ class ThePaint extends React.Component {
     if (!drawer.active) {
       return
     }
+
     const pos = this.positionForEvent(e)
     drawer.draw(pos)
     const {
@@ -86,6 +87,7 @@ class ThePaint extends React.Component {
     if (!drawer.active) {
       return
     }
+
     drawer.end()
     const snapshot = drawer.snapshot()
     const {
@@ -99,6 +101,7 @@ class ThePaint extends React.Component {
     if (drawer.active) {
       return
     }
+
     const snapshot = drawer.snapshot()
     const pos = this.positionForEvent(e)
     drawer.start(pos)
@@ -120,11 +123,13 @@ class ThePaint extends React.Component {
     if (!canvas) {
       return null
     }
+
     const { left, top } = canvas.getBoundingClientRect()
     const touch = e.touches ? e.touches[0] : e
     if (!touch) {
       return null
     }
+
     const { clientX, clientY } = touch
     return { x: clientX - left, y: clientY - top }
   }
@@ -183,6 +188,7 @@ class ThePaint extends React.Component {
     if (!drawer) {
       return
     }
+
     drawer.lineColor = lineColor
     drawer.lineWidth = lineWidth
     drawer.method = method

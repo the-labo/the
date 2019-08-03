@@ -13,7 +13,7 @@ const get = require('./get')
 /** @lends module:@the-/window.reload */
 async function reload(options = {}) {
   const location = get('location')
-  const { timeout = 30 * 1000 } = options
+  const { timeout = 30000 } = options
   location.reload()
   await asleep(timeout) // Wait for reload
   throw new Error('Failed to reload')

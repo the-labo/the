@@ -16,6 +16,7 @@ async function readFile(file) {
     console.warn('[the-client-util] FileReader is not supported')
     return null
   }
+
   return new Promise((resolve, reject) => {
     const reader = new FileReader()
     reader.onload = () => {
@@ -28,7 +29,7 @@ async function readFile(file) {
 
 Object.assign(readFile, {
   async *asChunkGenerator(file, options = {}) {
-    const { asBlob = false, chunkSize = 256 * 1024 } = options
+    const { asBlob = false, chunkSize = 262144 } = options
     for (let i = 0; i < file.size; i += chunkSize) {
       const sliced = file.slice(i, i + chunkSize)
       if (asBlob) {

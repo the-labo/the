@@ -30,6 +30,7 @@ function combineObjectPatternOnStatementNode(Statement, { get, replace }) {
             [key]: [...(byInitNameHash[key] || []), VariableDeclaration],
           }
         }
+
         return { ...byInitNameHash }
       },
       {},
@@ -71,6 +72,7 @@ function combineObjectPatternOnStatementNode(Statement, { get, replace }) {
       } else {
         groups.push([])
       }
+
       return groups
     },
     [[]],
@@ -82,11 +84,13 @@ function combineObjectPatternOnStatementNode(Statement, { get, replace }) {
       if (declarations.length !== 1) {
         continue
       }
+
       const [declaration] = declarations
       const { id, init } = declaration
       if (id.type !== NodeTypes.ObjectPattern) {
         continue
       }
+
       hash[kind] = hash[kind] || {}
       const key = `____${get(init.range)}`
       hash[kind][key] = hash[kind][key] || []

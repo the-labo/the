@@ -14,6 +14,7 @@ class TheMapMarker extends React.Component {
     if (!container) {
       return null
     }
+
     return ReactDOM.createPortal(
       <div
         {...htmlAttributesFor(props, {

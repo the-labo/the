@@ -17,13 +17,14 @@ const methodsToSkip = [
 
 /** @lends module:@the-/client.helpers.debugController */
 function debugController(controller) {
-  const TOO_LONG_THRESHOLD = 3 * 1000
+  const TOO_LONG_THRESHOLD = 3000
   return new Proxy(controller, {
     get(instance, name) {
       const value = instance[name]
       if (name === 'session') {
         console.warn('[TheClient] You cannot access session on client side')
       }
+
       const shouldWrap =
         typeof value === 'function' && !methodsToSkip.includes(value.name)
       if (shouldWrap) {
@@ -60,14 +61,17 @@ function debugController(controller) {
           } else {
             console.log('Result', result)
           }
+
           console.log('Took', `${took}ms`)
           console.groupEnd()
           if (caught) {
             throw caught
           }
+
           return result
         }
       }
+
       return value
     },
   })

@@ -21,6 +21,7 @@ module.exports = async function resetMysqlDatabase(
   if (rootPassword) {
     env.MYSQL_PWD = rootPassword
   }
+
   const { stderr, stdout } = await new Promise((resolve, reject) =>
     exec(command, { env }, (err, stdout, stderr) =>
       err ? reject(err) : resolve({ stderr, stdout }),
@@ -29,6 +30,7 @@ module.exports = async function resetMysqlDatabase(
   if (stdout) {
     console.log(stdout)
   }
+
   if (stderr) {
     console.error(stderr)
   }

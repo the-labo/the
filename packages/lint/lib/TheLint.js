@@ -59,6 +59,7 @@ class TheLint {
       }
       return
     }
+
     this.checkers[pattern] = this.checkers[pattern] || []
     this.checkers[pattern].push(checker)
   }
@@ -90,6 +91,7 @@ class TheLint {
     if (this.shouldSkipContent(content)) {
       return reports
     }
+
     for (const checker of checkers) {
       await checker({
         content,
@@ -111,6 +113,7 @@ class TheLint {
     } else {
       await this.cache.del(cacheKey)
     }
+
     return reports
   }
 
@@ -129,6 +132,7 @@ class TheLint {
       if (filenames.length === 0) {
         console.warn(`[TheLint] No file matched for pattern: "${pattern}"`)
       }
+
       const reported = await Promise.all(
         filenames.map(async (filename) => {
           const reports = await this.checkFile(filename, checkers, {
@@ -141,6 +145,7 @@ class TheLint {
         if (reports.length === 0) {
           continue
         }
+
         errorReports[filename] = reports
       }
     }
@@ -152,14 +157,17 @@ class TheLint {
     if (!stat) {
       return false
     }
+
     const canWrite = await canWriteAsync(filename)
     if (!canWrite) {
       return true
     }
+
     const cached = await this.cache.get(cacheKey)
     if (!cached) {
       return false
     }
+
     return new Date(cached.at) >= new Date(stat.mtime)
   }
 }

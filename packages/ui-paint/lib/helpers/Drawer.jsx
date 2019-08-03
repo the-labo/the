@@ -49,6 +49,7 @@ class Drawer {
     if (layer) {
       layer.canvasAccess.clear()
     }
+
     if (background) {
       this.drawBackground(background)
     }
@@ -81,6 +82,7 @@ class Drawer {
     if (!tmpLayer) {
       return
     }
+
     const layerHistory = tmpLayer.serialize()
     layerHistories.push(layerHistory)
     this.commitLayer.restore(layerHistory)
@@ -139,6 +141,7 @@ class Drawer {
       if (background) {
         await this.registerBackground(background)
       }
+
       for (const layersHistory of layerHistories) {
         this.commitLayer.restore(layersHistory)
       }
@@ -160,6 +163,7 @@ class Drawer {
         image.src = src
       })
     }
+
     this.background = background
     this.drawBackground(background, options)
   }

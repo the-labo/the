@@ -17,6 +17,7 @@ async function cachingFetch(cache, request) {
     })
     return cached
   }
+
   const fetched = await fetch(request)
   if (!fetched.ok) {
     try {
@@ -26,6 +27,7 @@ async function cachingFetch(cache, request) {
     }
     return fetched
   }
+
   try {
     await cache.put(request, fetched.clone())
   } catch (e) {

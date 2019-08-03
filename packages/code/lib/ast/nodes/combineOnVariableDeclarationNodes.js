@@ -25,6 +25,7 @@ function combineOnVariableDeclarationNodes(
   if (VariableDeclarations.length < 2) {
     return
   }
+
   const [first, ...restDeclarations] = VariableDeclarations
   const {
     declarations: [{ init }],

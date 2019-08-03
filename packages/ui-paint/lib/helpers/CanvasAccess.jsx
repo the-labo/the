@@ -26,6 +26,7 @@ class CanvasAccess {
     if (!ctx) {
       return
     }
+
     ctx.clearRect(0, 0, width, height)
   }
 

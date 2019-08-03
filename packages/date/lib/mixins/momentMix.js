@@ -38,6 +38,7 @@ function momentMix(Class) {
       if (!date) {
         return null
       }
+
       const { lang, timezone } = this
       moment.locale(lang)
       if (timezone) {

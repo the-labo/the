@@ -13,11 +13,13 @@ function cleanupUnusedOnArrayPatternNode(
   if (!elements) {
     return null
   }
+
   for (let i = 0; i < elements.length; i++) {
     const element = elements[i]
     if (!element) {
       continue
     }
+
     const prevElement = elements[i - 1]
     switch (element.type) {
       case 'Identifier': {
@@ -30,6 +32,7 @@ function cleanupUnusedOnArrayPatternNode(
           const { end } = element
           return replace([start, end], '')
         }
+
         break
       }
       case 'RestElement':
@@ -42,6 +45,7 @@ function cleanupUnusedOnArrayPatternNode(
           const { end } = element
           return replace([start, end], '')
         }
+
         break
       default:
         break

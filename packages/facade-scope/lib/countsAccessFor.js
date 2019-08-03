@@ -30,12 +30,12 @@ function countsAccessFor(scope) {
       if (!countsAccess.state) {
         return false
       }
+
       const {
         state: { length, offset, total },
       } = countsAccess
       return offset + length < total
     },
-
     /**
      * Set counts
      * @param {Object} counts

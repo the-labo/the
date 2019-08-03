@@ -1,5 +1,3 @@
-'use strict'
-
 /**
  * Process array
  * @memberof module:@the-/code.processors
@@ -7,14 +5,16 @@
  * @param {string} content
  * @returns {string} processed
  */
+'use strict'
+
 const {
   constants: { NodeTypes },
   finder,
   parse,
 } = require('@the-/ast')
+const cleanupRedundantArrayPatternOnArrayExpression = require('../ast/nodes/cleanupRedundantArrayPatternOnArrayExpression')
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
-const cleanupRedundantArrayPatternOnArrayExpression = require('../ast/nodes/cleanupRedundantArrayPatternOnArrayExpression')
 
 /** @lends module:@the-/code.processors.processJSArray */
 function processJSArray(content, options = {}) {

@@ -18,10 +18,12 @@ const combineSelectors = (...selectors) =>
       if (!combined) {
         return selector
       }
+
       const JOIN_PATTERN = /^&/
       if (JOIN_PATTERN.test(selector)) {
         return combined + selector.replace(JOIN_PATTERN, '')
       }
+
       return [combined, selector].join(' ')
     }, null)
     .trim()

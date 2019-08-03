@@ -10,6 +10,7 @@
 
 const calcNumericOperationOnBinaryExpressionNode_ = require('./calcNumericOperationOnBinaryExpressionNode')
 const cleanupEmptyArrayPatternParamsOnFunctionNode_ = require('./cleanupEmptyArrayPatternParamsOnFunctionNode')
+const cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode_ = require('./cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode')
 const cleanupEmptyObjectPatternParamsOnFunctionNode_ = require('./cleanupEmptyObjectPatternParamsOnFunctionNode')
 const cleanupExtOnImportDeclarationNode_ = require('./cleanupExtOnImportDeclarationNode')
 const cleanupExtOnRequireDeclarationArgumentNode_ = require('./cleanupExtOnRequireDeclarationArgumentNode')
@@ -53,6 +54,7 @@ const spaceOnCommentNode_ = require('./spaceOnCommentNode')
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
 exports.calcNumericOperationOnBinaryExpressionNode = calcNumericOperationOnBinaryExpressionNode_
 exports.cleanupEmptyArrayPatternParamsOnFunctionNode = cleanupEmptyArrayPatternParamsOnFunctionNode_
+exports.cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode = cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode_
 exports.cleanupEmptyObjectPatternParamsOnFunctionNode = cleanupEmptyObjectPatternParamsOnFunctionNode_
 exports.cleanupExtOnImportDeclarationNode = cleanupExtOnImportDeclarationNode_
 exports.cleanupExtOnRequireDeclarationArgumentNode = cleanupExtOnRequireDeclarationArgumentNode_
@@ -96,6 +98,7 @@ exports.spaceOnCommentNode = spaceOnCommentNode_
 module.exports = {
   calcNumericOperationOnBinaryExpressionNode: calcNumericOperationOnBinaryExpressionNode_,
   cleanupEmptyArrayPatternParamsOnFunctionNode: cleanupEmptyArrayPatternParamsOnFunctionNode_,
+  cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode: cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode_,
   cleanupEmptyObjectPatternParamsOnFunctionNode: cleanupEmptyObjectPatternParamsOnFunctionNode_,
   cleanupExtOnImportDeclarationNode: cleanupExtOnImportDeclarationNode_,
   cleanupExtOnRequireDeclarationArgumentNode: cleanupExtOnRequireDeclarationArgumentNode_,

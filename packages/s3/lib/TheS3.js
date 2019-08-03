@@ -68,6 +68,7 @@ class TheS3 {
       if (e.code === 'NotFound') {
         return false
       }
+
       throw e
     }
   }
@@ -101,6 +102,7 @@ class TheS3 {
             reject(err)
             return
           }
+
           const { Bucket: bucket, ETag: etag, Key: key, Location: url } = data
           resolve({ bucket, etag, key, url })
         },

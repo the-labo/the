@@ -20,6 +20,7 @@ parseUrl.forRegistration = (registration, options = {}) => {
   if (!url) {
     return null
   }
+
   return parseUrl(url, options)
 }
 

@@ -16,6 +16,7 @@ function rescue(handler) {
   if (!window) {
     return
   }
+
   window.addEventListener('unhandledrejection', handler)
 
   {
@@ -26,6 +27,7 @@ function rescue(handler) {
       if (e.resolved) {
         return
       }
+
       handler(e)
     }
   }

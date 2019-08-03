@@ -14,10 +14,12 @@ function cleanupEmptyObjectPatternParamsOnFunctionNode(
   if (!lastParam) {
     return
   }
+
   const isObjectPattern = lastParam.type === 'ObjectPattern'
   if (!isObjectPattern) {
     return
   }
+
   const isEmpty = lastParam.properties.length === 0
   if (isEmpty) {
     return replace([lastParam.start, lastParam.end], '')

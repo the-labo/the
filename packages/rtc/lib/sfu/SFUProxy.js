@@ -13,6 +13,7 @@ class SFUProxy {
     if (!iceServers) {
       console.warn('[SFUProxy] iceServers is empty')
     }
+
     const answererEdge = new SFUProxyEdgeAnswerer({
       iceServers,
     })
@@ -73,6 +74,7 @@ class SFUProxy {
     if (ice.from === this.offerer) {
       await offererEdge.receiveICE(ice)
     }
+
     if (ice.from === this.answerer) {
       await answererEdge.receiveICE(ice)
     }

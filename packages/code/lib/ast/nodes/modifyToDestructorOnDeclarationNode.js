@@ -17,6 +17,7 @@ function modifyToDestructorOnDeclarationNode(
   if (declarations.length !== 1) {
     return
   }
+
   const [declaration] = declarations
   const { id, init } = declaration
 
@@ -55,6 +56,7 @@ function modifyToDestructorOnDeclarationNode(
         break
     }
   }
+
   const shouldArrayDestructure =
     isMemberAssign &&
     init.computed &&

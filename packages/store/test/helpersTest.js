@@ -24,7 +24,6 @@ describe('helpers', () => {
           entry: 'OBJ',
         },
       },
-
       input01: { $ref: '#/_/input' },
       input02: { $ref: '_.input' },
       input03: { $ref: ['_.foo', '_.input'] },

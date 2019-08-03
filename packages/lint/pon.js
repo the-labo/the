@@ -19,6 +19,7 @@ function theLintTask(config) {
         if (!rule) {
           throw new Error(`Unknown rule: ${name}`)
         }
+
         lint.add(pattern, rule(value))
       }
       const found = await lint.run()
@@ -40,6 +41,7 @@ function theLintTask(config) {
       }
       process.exitCode = 1
     }
+
     return Object.keys(errorReports)
   }
 }

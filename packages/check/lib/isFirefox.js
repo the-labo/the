@@ -15,6 +15,7 @@ function isFirefox(options = {}) {
   if (!userAgent) {
     return false
   }
+
   const browser = Bowser.getParser(userAgent)
   return browser.isBrowser('Firefox')
 }

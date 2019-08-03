@@ -6,6 +6,7 @@
  */
 const {
   constants: { NodeTypes },
+  finder,
 } = require('@the-/ast')
 
 /** @lends module:@the-/code.ast.nodes.normalizeFunctionReturnOnFunctionNode */
@@ -17,15 +18,18 @@ function normalizeFunctionReturnOnFunctionNode(
   if (!body.body) {
     return
   }
+
   if (body.type !== NodeTypes.BlockStatement) {
     return
   }
+
   const Return = body.body.find(
     (Node) => Node.type === NodeTypes.ReturnStatement,
   )
   if (!Return) {
     return
   }
+
   const hasComment = comments.some(
     (comment) => body.start <= comment.start && comment.end <= body.end,
   )
@@ -56,22 +60,33 @@ function normalizeFunctionReturnOnFunctionNode(
           declarations: [declaration],
           leadingComments,
         },
+        Return,
       ],
     } = body
-    const content = get([declaration.init.start, declaration.init.end])
-    const commentContent = leadingComments
-      ? get([
-          leadingComments[0].start,
-          leadingComments[leadingComments.length - 1].end,
-        ])
-      : ''
-    return replace(
-      [body.start, body.end],
-      `{
+    const usage = finder
+      .findByTypes(body, [NodeTypes.Identifier])
+      .find(
+        (id) =>
+          id.start !== declaration.id.start &&
+          id.name === declaration.id.name &&
+          id.end < Return.start,
+      )
+    if (!usage) {
+      const content = get([declaration.init.start, declaration.init.end])
+      const commentContent = leadingComments
+        ? get([
+            leadingComments[0].start,
+            leadingComments[leadingComments.length - 1].end,
+          ])
+        : ''
+      return replace(
+        [body.start, body.end],
+        `{
   ${commentContent} 
   return ${content} 
 }`,
-    )
+      )
+    }
   }
 }
 

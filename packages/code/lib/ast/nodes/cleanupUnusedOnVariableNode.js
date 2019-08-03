@@ -18,6 +18,7 @@ function cleanupUnusedOnVariableNode(
   if (!declarations) {
     return
   }
+
   for (let i = 0; i < declarations.length; i++) {
     const prevDeclaration = declarations[i - 1]
     const declaration = declarations[i]
@@ -31,6 +32,7 @@ function cleanupUnusedOnVariableNode(
         const { end } = VariableDeclaration
         return replace([start, end], '')
       }
+
       const start = prevDeclaration
         ? prevDeclaration.end
         : declaration.start - 1
@@ -45,15 +47,18 @@ function cleanupUnusedOnVariableNode(
       if (shouldRemove) {
         return declarationRemove()
       }
+
       const isRequire = isRequireExpression(init)
       if (isRequire) {
         return declarationRemove()
       }
     }
+
     const skip = id.type !== 'Identifier'
     if (skip) {
       continue
     }
+
     const usages = ConsumingIdentifiers.filter(
       (Identifier) => Identifier !== id,
     )
@@ -63,10 +68,12 @@ function cleanupUnusedOnVariableNode(
     if (!unused) {
       continue
     }
+
     const shouldRemove = !init || /Literal$/.test(init.type)
     if (shouldRemove) {
       return declarationRemove()
     }
+
     const isRequire = isRequireExpression(init)
     if (isRequire) {
       return declarationRemove()

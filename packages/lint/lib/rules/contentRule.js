@@ -19,6 +19,7 @@ function contentRule(config) {
   if (Object.keys(rest).length > 0) {
     console.warn('[contentRule] Unknown options', Object.keys(rest))
   }
+
   return async function contentRuleCheck({ content, filename, report }) {
     if (endsWithNewLine) {
       const ok = /\r?\n$/.test(content)

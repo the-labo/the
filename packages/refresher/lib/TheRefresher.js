@@ -42,6 +42,7 @@ class TheRefresher extends EventEmitter {
     if (this._refreshTimer !== -1) {
       throw new Error('Refresh loop already started')
     }
+
     const { handler, interval } = this
     this._stopped = false
     debug('start', { interval })
@@ -51,6 +52,7 @@ class TheRefresher extends EventEmitter {
       if (this._stopped) {
         return
       }
+
       for (const target of this._targets.values()) {
         debug('target', target)
         await handler(target)

@@ -31,12 +31,15 @@ function processJSIf(content, options = {}) {
         if (expression) {
           return true
         }
+
         if (consequent) {
           return true
         }
+
         if (!body) {
           return false
         }
+
         return (
           body.length > 0 ||
           comments.some(

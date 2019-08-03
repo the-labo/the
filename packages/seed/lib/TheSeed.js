@@ -24,6 +24,7 @@ class TheSeed {
         ).join(',')})`,
       )
     }
+
     this.faker = new Faker({ locale: localeName, locales })
     this.vars = vars
 

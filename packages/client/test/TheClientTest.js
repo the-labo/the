@@ -18,7 +18,7 @@ describe('the-client', () => {
   after(() => {})
 
   it('Do test', async function() {
-    this.timeout(20 * 1000)
+    this.timeout(20000)
     ok(TheClient)
 
     const port = await aport()
@@ -33,7 +33,6 @@ describe('the-client', () => {
         callbacks.onBuy(amount, session.total)
         return result
       },
-
       doWrong() {
         throw new Error('Something is wrong')
       },
@@ -139,6 +138,7 @@ describe('the-client', () => {
           if (server.closed) {
             return
           }
+
           yield { count }
           count--
           await asleep(1)

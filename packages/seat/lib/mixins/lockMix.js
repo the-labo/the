@@ -17,6 +17,7 @@ function lockMix(Class) {
       if (!info) {
         return false
       }
+
       const { at } = info
       return new Date() - new Date(at) < LOCK_DURATION * 2
     }
@@ -36,6 +37,7 @@ function lockMix(Class) {
       if (!ok) {
         throw new Error('Failed to acquire lock')
       }
+
       return true
     }
 

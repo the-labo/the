@@ -67,6 +67,7 @@ function contextEntryFor(context, { store }) {
       if (skip) {
         return
       }
+
       this.setState({ piped })
     }
   }

@@ -9,6 +9,7 @@ function ControllerDriverPool() {
       if (!instanceHash[key]) {
         instanceHash[key] = {}
       }
+
       instanceHash[key][controllerName] = instance
     },
     get(cid, socketId, controllerName) {

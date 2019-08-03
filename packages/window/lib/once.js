@@ -16,6 +16,7 @@ function once(event, handler) {
   if (!document) {
     return
   }
+
   const handlerWrap = (...args) => {
     debug('handle', event, [...args])
     handler(...args)

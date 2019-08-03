@@ -18,6 +18,7 @@ function line(handler, options = {}) {
   if (!window) {
     return
   }
+
   const handlerWrap = (connected) => {
     debug('onLine', connected)
     clearTimeout(handlerWrap._handleCallTimer)

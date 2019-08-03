@@ -25,6 +25,7 @@ function findRequireDeclarationOnProgramNode(ProgramNode) {
     if (!init) {
       return false
     }
+
     switch (init.type) {
       case 'CallExpression':
         return isRequireCall(init)
@@ -33,6 +34,7 @@ function findRequireDeclarationOnProgramNode(ProgramNode) {
           const { object } = init
           return isRequireCall(object)
         }
+
         return false
       default:
         return false

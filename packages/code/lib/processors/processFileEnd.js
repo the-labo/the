@@ -15,6 +15,7 @@ function processFileEnd(content) {
   if (!endsWithEOL) {
     content += EOL
   }
+
   return content.replace(/\s*\s$/, EOL)
 }
 

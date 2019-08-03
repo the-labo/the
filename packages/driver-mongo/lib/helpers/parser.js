@@ -29,9 +29,11 @@ function parseFilter(filter) {
   if (!filter) {
     return filter
   }
+
   if (Array.isArray(filter)) {
     return { $or: filter.map((f) => parseFilter(f)) }
   }
+
   const parsed = {}
   for (const [k, v] of Object.entries(filter)) {
     parsed[k] = parseFilterValue(v)
@@ -43,6 +45,7 @@ function parseFilterValue(v) {
   if (Array.isArray(v)) {
     return { $in: v.map((v) => parseFilterValue(v)) }
   }
+
   switch (typeof v) {
     case 'object': {
       if (v && v.$ref) {

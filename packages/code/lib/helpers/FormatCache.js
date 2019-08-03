@@ -39,6 +39,7 @@ class FormatCache {
     if (!this.data) {
       this.data = await this._readFile()
     }
+
     return this.data[key]
   }
 
@@ -69,6 +70,7 @@ class FormatCache {
     if (data.$$version !== this.version) {
       return {}
     }
+
     delete data.$$version
     return data
   }

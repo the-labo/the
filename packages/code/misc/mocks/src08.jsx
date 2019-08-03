@@ -19,7 +19,7 @@ function AdminUserCreateDialogImpl({
     <TheCreateDialog
       a='This is A'
       active={active}
-      c={2 + 1}
+      c={3}
       done={done}
       doneTitle={l('titles.ADMIN_USER_CREATE_RESULT_TITLE')}
       id={'3'}

@@ -20,20 +20,24 @@ function parseFilter(filter, options = {}) {
   if (!filter) {
     return filter
   }
+
   const { ModelAttributes = {}, ModelName, Schema } = options
   if (Array.isArray(filter)) {
     return { [Op.or]: filter.map((filter) => parseFilter(filter, options)) }
   }
+
   if (filter.$or) {
     const { $or, ...rest } = filter
     const orArray = $or.map((or) => ({ ...rest, ...or }))
     return parseFilter(orArray, options)
   }
+
   if (filter.$and) {
     const { $and, ...rest } = filter
     const andArray = $and.map((and) => ({ ...and, ...rest }))
     return parseFilter(Object.assign({}, ...andArray), options)
   }
+
   const parsed = {}
   for (const propertyName of Object.keys(filter)) {
     const value = Array.isArray(filter[propertyName])
@@ -46,6 +50,7 @@ function parseFilter(filter, options = {}) {
       parsed.id = INVALID_FILTER_CONDITION_ID
       continue
     }
+
     switch (type) {
       case OBJECT: {
         const subNames = Object.keys(value)

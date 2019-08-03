@@ -6,7 +6,7 @@ import { TheCalendar, TheCalendarStyle } from '@the-/ui-calendar'
 
 const events = [
   {
-    end: new Date(new Date().getTime() + 60 * 60 * 1000),
+    end: new Date(new Date().getTime() + 3600000),
     id: 1,
     node: <span>This is event01</span>,
     onSelect: (event) => {
@@ -16,13 +16,13 @@ const events = [
   },
 
   {
-    end: new Date(new Date().getTime() + 25 * 60 * 60 * 1000),
+    end: new Date(new Date().getTime() + 90000000),
     id: 2,
     node: <span>This is event02</span>,
     onSelect: (event) => {
       console.log('event02 selected!', event)
     },
-    start: new Date(new Date().getTime() + 24 * 60 * 60 * 1000),
+    start: new Date(new Date().getTime() + 86400000),
   },
 ]
 

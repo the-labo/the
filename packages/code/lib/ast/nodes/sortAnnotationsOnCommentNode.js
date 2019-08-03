@@ -47,6 +47,7 @@ function sortAnnotationsOnCommentNode(CommentNode, { swap }) {
       default:
         break
     }
+
     return weight
   }
   const sortedAnnotations = [...annotations].sort((a, b) => {
@@ -55,9 +56,11 @@ function sortAnnotationsOnCommentNode(CommentNode, { swap }) {
     if (aWeight !== bWeight) {
       return aWeight - bWeight
     }
+
     if (a.kind.name !== b.kind.name) {
       return a.kind.name.localeCompare(b.kind.name)
     }
+
     return 0
   })
   const rangeFor = (annotation) => [annotation.start, annotation.end]

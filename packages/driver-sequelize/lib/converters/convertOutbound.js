@@ -23,10 +23,12 @@ function convertOutbound(values, options = {}) {
     if (/^__/.test(attributeName)) {
       continue
     }
+
     const name = parseAttributeName.restore(attributeName)
     if (name === 'id') {
       continue
     }
+
     const def = Schema[name]
     const isKnown = !!def
     if (!isKnown) {
@@ -35,6 +37,7 @@ function convertOutbound(values, options = {}) {
       )
       continue
     }
+
     converted[name] = serializer.deserialize(v, def.type)
   }
   return clayEntity(converted)

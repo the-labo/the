@@ -14,16 +14,20 @@ const propertyNamesFor = (objectPatternNode) => {
     if (property.type !== NodeTypes.ObjectProperty) {
       continue
     }
+
     if (property.computed) {
       continue
     }
+
     const { value } = property
     if (value.type === NodeTypes.Identifier) {
       propertyNames.push(value.name)
     }
+
     if (value.type === NodeTypes.ObjectPattern) {
       propertyNames.push(...propertyNamesFor(value))
     }
+
     if (value.type === NodeTypes.AssignmentPattern) {
       propertyNames.push(value.left.name)
     }
@@ -40,6 +44,7 @@ function normalizeKindOnVariableDeclarationNode(
   if (declarations.length !== 1) {
     return
   }
+
   const [declaration] = declarations
   const { id } = declaration
   const isLet = kind === 'let'
@@ -55,6 +60,7 @@ function normalizeKindOnVariableDeclarationNode(
             'const ',
           )
         }
+
         break
       }
       case NodeTypes.ObjectPattern: {
@@ -68,12 +74,14 @@ function normalizeKindOnVariableDeclarationNode(
             'const ',
           )
         }
+
         break
       }
       default:
         break
     }
   }
+
   if (isVar) {
     return replace([VariableDeclaration.start, declaration.id.start], 'let ')
   }

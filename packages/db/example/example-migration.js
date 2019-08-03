@@ -22,7 +22,6 @@ async function tryExample() {
       /* ... */
       await db.updateVersion('1.0.1')
     },
-
     // Called only if no migration has ever executed
     async none(db) {
       const {

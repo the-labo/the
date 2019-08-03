@@ -30,6 +30,7 @@ function normalizeAssignmentOnVariableDeclarationNode(
   if (declaration.id.type !== NodeTypes.ObjectPattern) {
     return
   }
+
   const scopes =
     declaration.init && declaration.init.type === NodeTypes.Identifier
       ? scopesFor(declaration.init.name, declaration.id)
@@ -43,6 +44,7 @@ function normalizeAssignmentOnVariableDeclarationNode(
     if (right.type !== NodeTypes.Identifier) {
       continue
     }
+
     if (right.name in scopes) {
       return replace(right.range, scopes[right.name])
     }

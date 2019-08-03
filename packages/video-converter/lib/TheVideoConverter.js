@@ -83,6 +83,7 @@ class TheVideoConverter extends TheVideoConverterBase {
             reject(err)
             return
           }
+
           resolve(JSON.parse(stdout))
         },
       )
@@ -102,12 +103,14 @@ class TheVideoConverter extends TheVideoConverterBase {
     if (!isVideoSrc(src)) {
       return src
     }
+
     if (onlyIfNeeded) {
       const needsToProcess = await this._needsToProcess(src)
       if (!needsToProcess) {
         return src
       }
     }
+
     const dest = filenameFor(src, {
       extname: '.mp4',
       suffix: '-processed',
@@ -116,6 +119,7 @@ class TheVideoConverter extends TheVideoConverterBase {
     if (cleanup) {
       await unlinkAsync(src)
     }
+
     return dest
   }
 
@@ -124,6 +128,7 @@ class TheVideoConverter extends TheVideoConverterBase {
     if (!isVideoSrc) {
       return filename
     }
+
     return this.process(filename, options)
   }
 

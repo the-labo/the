@@ -12,6 +12,7 @@ function valuesFromEntity(entity) {
   if (!entity) {
     return null
   }
+
   return Object.assign(
     {},
     ...Object.entries(entity)

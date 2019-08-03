@@ -74,6 +74,7 @@ class TheFormBinder extends React.Component {
       console.error(`[${this.name}] Required fields missing:`, missing)
       return
     }
+
     onSubmit && onSubmit(values)
   }
 
