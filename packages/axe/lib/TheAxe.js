@@ -57,7 +57,7 @@ class TheAxe {
   }
 
   async tick() {
-    const data = await this.inspect().catch(() => {
+    const data = await this.inspect().catch((e) => {
       console.warn('[TheAxe] Inspection failed:', e)
       return null
     })

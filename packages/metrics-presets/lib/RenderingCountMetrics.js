@@ -25,11 +25,17 @@ async function RenderingCountMetrics(Components, options = {}) {
 
     const isLazy = Component.$$typeof === REACT_LAZY_TYPE
     if (isLazy) {
-      const { _ctor } = Component
-      Component._ctor = async (...args) => {
-        const result = await _ctor(...args)
-        bindComponent(name, result.default || result)
-        return result
+      const { _ctor, _result } = Component
+      if (_result) {
+        bindComponent(name, _result)
+      } else {
+        Component._ctor = async (...args) => {
+          const result = await _ctor(...args)
+          if (result) {
+            bindComponent(name, result.default || result)
+          }
+          return result
+        }
       }
       return
     }
