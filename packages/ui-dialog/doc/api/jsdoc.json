@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-dialog",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-dialog",
     "order": 0,
     "typicalname": "uiDialog",
-    "version": "15.4.8"
+    "version": "15.4.9"
   },
   {
     "description": "Confirm Dialog",
@@ -35,7 +35,7 @@
     "longname": "TheDialog",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 58,
+      "lineno": 65,
       "path": "lib"
     },
     "name": "TheDialog",
@@ -198,7 +198,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 163,
+      "lineno": 171,
       "path": "lib"
     },
     "name": "hideCloseButton",
@@ -213,7 +213,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 165,
+      "lineno": 173,
       "path": "lib"
     },
     "name": "icon",
@@ -228,7 +228,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 167,
+      "lineno": 175,
       "path": "lib"
     },
     "name": "lead",
@@ -243,7 +243,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 169,
+      "lineno": 177,
       "path": "lib"
     },
     "name": "onClose",
@@ -258,7 +258,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 171,
+      "lineno": 179,
       "path": "lib"
     },
     "name": "present",
@@ -273,7 +273,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 173,
+      "lineno": 181,
       "path": "lib"
     },
     "name": "spinning",
@@ -288,7 +288,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 175,
+      "lineno": 183,
       "path": "lib"
     },
     "name": "title",
@@ -303,7 +303,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 177,
+      "lineno": 185,
       "path": "lib"
     },
     "name": "zIndex",

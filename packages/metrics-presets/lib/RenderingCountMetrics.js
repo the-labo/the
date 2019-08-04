@@ -18,15 +18,20 @@ async function RenderingCountMetrics(Components, options = {}) {
   const { interval = 30000, name = 'RenderingCountMetrics' } = options
   const metrics = new TheMetrics({ interval, name })
 
-  for (const [name, Component] of Object.entries(Components)) {
+  const bindComponent = (name, Component) => {
     if (!Component) {
-      continue
+      return
     }
 
     const isLazy = Component.$$typeof === REACT_LAZY_TYPE
     if (isLazy) {
-      // TODO support lazy
-      continue
+      const { _ctor } = Component
+      Component._ctor = async (...args) => {
+        const result = await _ctor(...args)
+        bindComponent(name, result.default || result)
+        return result
+      }
+      return
     }
 
     const isMemo = Component.$$typeof === REACT_MEMO_TYPE
@@ -35,13 +40,28 @@ async function RenderingCountMetrics(Components, options = {}) {
         methodName: 'type',
         object: Component,
       })
-      continue
+      return
     }
 
-    metrics.bindClassMethodCallCounter(`${name}#render()`, {
-      class: Component,
-      methodName: 'render',
-    })
+    const { prototype } = Component
+    const isClassBase =
+      !!prototype &&
+      (prototype.isReactComponent || prototype.isPureReactComponent)
+    if (isClassBase) {
+      metrics.bindClassMethodCallCounter(`${name}#render()`, {
+        class: Component,
+        methodName: 'render',
+      })
+      return
+    }
+    const isFunctionBase = typeof Component === 'function'
+    if (isFunctionBase) {
+      // TODO
+    }
+  }
+
+  for (const [name, Component] of Object.entries(Components)) {
+    bindComponent(name, Component)
   }
   return metrics.start()
 }

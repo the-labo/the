@@ -1,0 +1,121 @@
+[
+  {
+    "description": "Axe for the-framework",
+    "id": "module:@the-/axe",
+    "kind": "module",
+    "license": "MIT",
+    "longname": "module:@the-/axe",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 3,
+      "path": "lib"
+    },
+    "name": "@the-/axe",
+    "order": 2,
+    "typicalname": "axe",
+    "version": "15.5.6"
+  },
+  {
+    "description": "Create instance",
+    "id": "module:@the-/axe.TheAxe()",
+    "kind": "constructor",
+    "longname": "module:@the-/axe.TheAxe",
+    "memberof": "module:@the-/axe.TheAxe",
+    "name": "TheAxe",
+    "order": 5
+  },
+  {
+    "description": "Start interval",
+    "id": "module:@the-/axe.TheAce#start",
+    "kind": "function",
+    "longname": "module:@the-/axe.TheAce#start",
+    "memberof": "module:@the-/axe.TheAce",
+    "meta": {
+      "filename": "TheAxe.js",
+      "lineno": 41,
+      "path": "lib"
+    },
+    "name": "start",
+    "order": 6,
+    "params": [],
+    "scope": "instance"
+  },
+  {
+    "id": "module:@the-/axe.Logger",
+    "kind": "class",
+    "longname": "module:@the-/axe.Logger",
+    "memberof": "module:@the-/axe",
+    "meta": {
+      "filename": "Logger.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "Logger",
+    "order": 3,
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/axe.TheAxe",
+    "kind": "class",
+    "longname": "module:@the-/axe.TheAxe",
+    "memberof": "module:@the-/axe",
+    "meta": {
+      "filename": "TheAxe.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "TheAxe",
+    "order": 4,
+    "scope": "static"
+  },
+  {
+    "description": "Alias of {@link module:@the-/axe.create}",
+    "id": "module:@the-/axe.default",
+    "kind": "namespace",
+    "longname": "module:@the-/axe.default",
+    "memberof": "module:@the-/axe",
+    "meta": {
+      "filename": "default.js",
+      "lineno": 3,
+      "path": "lib"
+    },
+    "name": "default",
+    "order": 1,
+    "scope": "static"
+  },
+  {
+    "description": "Create a TheAxe instance",
+    "id": "module:@the-/axe.create",
+    "kind": "function",
+    "longname": "module:@the-/axe.create",
+    "memberof": "module:@the-/axe",
+    "meta": {
+      "filename": "create.js",
+      "lineno": 3,
+      "path": "lib"
+    },
+    "name": "create",
+    "order": 0,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "variable": true,
+        "name": "args"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "TheAxe"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  }
+]

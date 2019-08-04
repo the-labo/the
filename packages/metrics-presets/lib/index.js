@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/metrics-presets
  * @typicalname metricsPresets
- * @version 15.5.1
+ * @version 15.5.3
  */
 'use strict'
 

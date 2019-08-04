@@ -95,6 +95,9 @@ class TheMetrics {
     const entries = Object.entries(this.data)
       .filter(([, value]) => value !== 0)
       .sort((a, b) => b[1] - a[1])
+    if (entries.length === 0) {
+      return
+    }
     console.groupCollapsed(
       `[${this.name}] ${entries.length} metrics flushed for ${took}ms`,
     )

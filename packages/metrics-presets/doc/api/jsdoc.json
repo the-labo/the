@@ -7,13 +7,13 @@
     "longname": "module:@the-/metrics-presets",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/metrics-presets",
     "order": 0,
     "typicalname": "metricsPresets",
-    "version": "15.5.0"
+    "version": "15.5.3"
   },
   {
     "description": "Count metrics for component rendering",
@@ -23,7 +23,7 @@
     "memberof": "module:@the-/metrics-presets",
     "meta": {
       "filename": "RenderingCountMetrics.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "RenderingCountMetrics",

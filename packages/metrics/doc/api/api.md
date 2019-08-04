@@ -5,7 +5,7 @@
 ## @the-/metrics
 Performance measures for the-framework
 
-**Version**: 15.5.2  
+**Version**: 15.5.4  
 **License**: MIT  
 
 * [@the-/metrics](#module_@the-/metrics)

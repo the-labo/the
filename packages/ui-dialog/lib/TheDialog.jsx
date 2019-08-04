@@ -43,11 +43,18 @@ class TheDialog extends React.Component {
     )
   }
 
-  static Header({ children, className, style }) {
+  static Header({
+    ariaLevel = 2,
+    children,
+    className,
+    role = 'heading',
+    style,
+  }) {
     return (
       <div
+        aria-level={ariaLevel}
         className={c('the-dialog-header', className)}
-        role='heading'
+        role={role}
         style={Object.assign({}, style)}
       >
         {children}
@@ -128,6 +135,7 @@ class TheDialog extends React.Component {
               </h3>
               {!hideCloseButton && (
                 <a
+                  aria-label={'Close'}
                   className='the-dialog-close-button'
                   onClick={onClose}
                   role='button'

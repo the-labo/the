@@ -7,13 +7,13 @@
     "longname": "module:@the-/metrics",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/metrics",
     "order": 2,
     "typicalname": "metrics",
-    "version": "15.5.2"
+    "version": "15.5.4"
   },
   {
     "id": "module:@the-/metrics.TheMetrics()",
@@ -62,7 +62,7 @@
     "memberof": "module:@the-/metrics.TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 37,
+      "lineno": 38,
       "path": "lib"
     },
     "name": "bindClassMethodCallCounter",
@@ -96,7 +96,7 @@
     "memberof": "module:@the-/metrics.TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 61,
+      "lineno": 64,
       "path": "lib"
     },
     "name": "bindMethodCallCounter",
@@ -112,7 +112,7 @@
     "memberof": "module:@the-/metrics.TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 69,
+      "lineno": 72,
       "path": "lib"
     },
     "name": "bindObjectMethodCallCounter",
@@ -146,7 +146,7 @@
     "memberof": "module:@the-/metrics.TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 88,
+      "lineno": 92,
       "path": "lib"
     },
     "name": "flush",
@@ -162,7 +162,7 @@
     "memberof": "module:@the-/metrics.TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 107,
+      "lineno": 114,
       "path": "lib"
     },
     "name": "start",
@@ -177,7 +177,7 @@
     "memberof": "module:@the-/metrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "TheMetrics",
@@ -194,7 +194,7 @@
     "memberof": "module:@the-/metrics.counters",
     "meta": {
       "filename": "ClassMethodCallCounter.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/counters"
     },
     "name": "ClassMethodCallCounter",
@@ -208,7 +208,7 @@
     "memberof": "module:@the-/metrics.counters",
     "meta": {
       "filename": "Counter.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/counters"
     },
     "name": "Counter",
@@ -226,7 +226,7 @@
     "memberof": "module:@the-/metrics.counters",
     "meta": {
       "filename": "ObjectMethodCallCounter.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/counters"
     },
     "name": "ObjectMethodCallCounter",
@@ -241,7 +241,7 @@
     "memberof": "module:@the-/metrics.counters",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/counters"
     },
     "name": "counters",
@@ -256,7 +256,7 @@
     "memberof": "module:@the-/metrics",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "create",
@@ -291,7 +291,7 @@
     "memberof": "module:@the-/metrics",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
