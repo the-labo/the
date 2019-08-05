@@ -1,0 +1,51 @@
+[
+  {
+    "description": "Utility for bin",
+    "id": "module:@the-/util-bin",
+    "kind": "module",
+    "license": "MIT",
+    "longname": "module:@the-/util-bin",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 3,
+      "path": "lib"
+    },
+    "name": "@the-/util-bin",
+    "order": 1,
+    "typicalname": "utilBin",
+    "version": "15.4.11"
+  },
+  {
+    "id": "module:@the-/util-bin.hasBin",
+    "kind": "function",
+    "longname": "module:@the-/util-bin.hasBin",
+    "memberof": "module:@the-/util-bin",
+    "meta": {
+      "filename": "hasBin.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "hasBin",
+    "order": 0,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "binName"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<boolean>"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  }
+]
