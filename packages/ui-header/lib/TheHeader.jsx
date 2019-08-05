@@ -16,9 +16,18 @@ const NOTICE_HEIGHT = 36
  * Header of the-components
  */
 class TheHeader extends React.Component {
-  static Logo({ children, className, to = '/' }) {
+  static Logo({
+    ['aria-label']: aliaLabel = 'Top',
+    children,
+    className,
+    to = '/',
+  }) {
     return (
-      <TheLink className={c('the-header-logo', className)} to={to}>
+      <TheLink
+        aria-label={aliaLabel}
+        className={c('the-header-logo', className)}
+        to={to}
+      >
         {children}
       </TheLink>
     )

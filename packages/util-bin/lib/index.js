@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/util-bin
  * @typicalname utilBin
- * @version 15.4.9
+ * @version 15.4.11
  */
 'use strict'
 
