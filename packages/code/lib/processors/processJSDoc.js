@@ -9,6 +9,7 @@
 const { parse } = require('@the-/ast')
 const {
   commentModuleOnProgramNode,
+  formatJSDocCommentOnCommentNode,
   normalizeJSDocAnnotationsOnCommentNode,
   sortAnnotationsOnCommentNode,
 } = require('../ast/nodes')
@@ -45,7 +46,8 @@ async function processJSDoc(content, options = {}) {
             (await normalizeJSDocAnnotationsOnCommentNode(comment, {
               get,
               replace,
-            }))
+            })) ||
+            (await formatJSDocCommentOnCommentNode(comment, { get, replace }))
           if (converted) {
             return converted
           }

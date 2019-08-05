@@ -31,6 +31,7 @@ const commentModuleOnProgramNode_ = require('./commentModuleOnProgramNode')
 const findCJSExportsAssignmentsExpressionOnProgramNode_ = require('./findCJSExportsAssignmentsExpressionOnProgramNode')
 const findJSDocAnnotationsInCommendNode_ = require('./findJSDocAnnotationsInCommendNode')
 const findRequireDeclarationOnProgramNode_ = require('./findRequireDeclarationOnProgramNode')
+const formatJSDocCommentOnCommentNode_ = require('./formatJSDocCommentOnCommentNode')
 const mergeDuplicateImportOnProgramNode_ = require('./mergeDuplicateImportOnProgramNode')
 const mergeStringConcatenateOnBinaryExpressionNode_ = require('./mergeStringConcatenateOnBinaryExpressionNode')
 const modifyNodeDeprecatedOnRequireDeclaration_ = require('./modifyNodeDeprecatedOnRequireDeclaration')
@@ -75,6 +76,7 @@ exports.commentModuleOnProgramNode = commentModuleOnProgramNode_
 exports.findCJSExportsAssignmentsExpressionOnProgramNode = findCJSExportsAssignmentsExpressionOnProgramNode_
 exports.findJSDocAnnotationsInCommendNode = findJSDocAnnotationsInCommendNode_
 exports.findRequireDeclarationOnProgramNode = findRequireDeclarationOnProgramNode_
+exports.formatJSDocCommentOnCommentNode = formatJSDocCommentOnCommentNode_
 exports.mergeDuplicateImportOnProgramNode = mergeDuplicateImportOnProgramNode_
 exports.mergeStringConcatenateOnBinaryExpressionNode = mergeStringConcatenateOnBinaryExpressionNode_
 exports.modifyNodeDeprecatedOnRequireDeclaration = modifyNodeDeprecatedOnRequireDeclaration_
@@ -119,6 +121,7 @@ module.exports = {
   findCJSExportsAssignmentsExpressionOnProgramNode: findCJSExportsAssignmentsExpressionOnProgramNode_,
   findJSDocAnnotationsInCommendNode: findJSDocAnnotationsInCommendNode_,
   findRequireDeclarationOnProgramNode: findRequireDeclarationOnProgramNode_,
+  formatJSDocCommentOnCommentNode: formatJSDocCommentOnCommentNode_,
   mergeDuplicateImportOnProgramNode: mergeDuplicateImportOnProgramNode_,
   mergeStringConcatenateOnBinaryExpressionNode: mergeStringConcatenateOnBinaryExpressionNode_,
   modifyNodeDeprecatedOnRequireDeclaration: modifyNodeDeprecatedOnRequireDeclaration_,

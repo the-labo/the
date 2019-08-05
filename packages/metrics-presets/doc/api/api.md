@@ -5,7 +5,7 @@
 ## @the-/metrics-presets
 Preset of the-metrics
 
-**Version**: 15.5.3  
+**Version**: 15.5.6  
 **License**: MIT  
 <a name="module_@the-/metrics-presets.RenderingCountMetrics"></a>
 

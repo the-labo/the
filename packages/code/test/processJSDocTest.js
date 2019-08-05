@@ -167,6 +167,37 @@ describe('process-js-doc', () => {
 `,
     )
   })
+
+  it('Format js doc', async () => {
+    equal(
+      await processJSDoc(`
+/**
+ * @foo
+ 
+ */
+`),
+      `
+/**
+ * @foo
+ */
+`,
+    )
+    equal(
+      await processJSDoc(`
+/**
+ * @foo
+ *
+ *
+ *
+ */
+`),
+      `
+/**
+ * @foo
+ */
+`,
+    )
+  })
 })
 
 /* global describe, before, after, it */

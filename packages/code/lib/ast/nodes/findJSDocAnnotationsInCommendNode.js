@@ -6,6 +6,7 @@
  */
 const { EOL } = require('os')
 
+/** @lends module:@the-/code.ast.nodes.findJSDocAnnotationsInCommendNode */
 function findJSDocAnnotationsInCommendNode(CommentNode) {
   const annotations = []
   let started = false

@@ -13,7 +13,7 @@
     "name": "@the-/metrics-presets",
     "order": 0,
     "typicalname": "metricsPresets",
-    "version": "15.5.3"
+    "version": "15.5.6"
   },
   {
     "description": "Count metrics for component rendering",

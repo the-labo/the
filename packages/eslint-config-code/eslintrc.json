@@ -10,7 +10,9 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": [],
+  "plugins": [
+    "json-light"
+  ],
   "rules": {
     "arrow-body-style": "error",
     "dot-notation": "error",
