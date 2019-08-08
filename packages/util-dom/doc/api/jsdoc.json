@@ -13,7 +13,7 @@
     "name": "@the-/util-dom",
     "order": 2,
     "typicalname": "utilDom",
-    "version": "15.5.1"
+    "version": "15.5.2"
   },
   {
     "description": "Get element by id",

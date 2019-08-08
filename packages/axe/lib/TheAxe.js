@@ -69,6 +69,7 @@ class TheAxe {
     if (!data) {
       return
     }
+
     this.report(data)
   }
 }

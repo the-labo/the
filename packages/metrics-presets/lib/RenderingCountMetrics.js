@@ -34,9 +34,11 @@ async function RenderingCountMetrics(Components, options = {}) {
           if (result) {
             bindComponent(name, result.default || result)
           }
+
           return result
         }
       }
+
       return
     }
 
@@ -60,6 +62,7 @@ async function RenderingCountMetrics(Components, options = {}) {
       })
       return
     }
+
     const isFunctionBase = typeof Component === 'function'
     if (isFunctionBase) {
       // TODO

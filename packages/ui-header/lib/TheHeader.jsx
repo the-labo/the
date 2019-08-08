@@ -17,7 +17,7 @@ const NOTICE_HEIGHT = 36
  */
 class TheHeader extends React.Component {
   static Logo({
-    ['aria-label']: aliaLabel = 'Top',
+    'aria-label': aliaLabel = 'Top',
     children,
     className,
     to = '/',

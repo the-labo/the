@@ -5,7 +5,7 @@
 ## @the-/util-dom
 Dom utility for the-framework
 
-**Version**: 15.5.1  
+**Version**: 15.5.2  
 **License**: MIT  
 
 * [@the-/util-dom](#module_@the-/util-dom)

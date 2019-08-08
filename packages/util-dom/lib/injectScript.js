@@ -20,7 +20,7 @@ async function injectScript(src, options = {}) {
     script.setAttribute('data-by', '@the-/util-dom.injectScript')
     script.setAttribute('class', 'the-dynamic-script')
     script.onload = () => resolve()
-    script.onerror = () => reject()
+    script.onerror = (e) => reject(e)
     document[target].appendChild(script)
   })
 }

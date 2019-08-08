@@ -17,6 +17,7 @@ function formatJSDocCommentOnCommentNode(CommentNode, { get, replace }) {
     // TODO Handle example
     return
   }
+
   const range = [CommentNode.start, CommentNode.end]
   const src = get(range)
   const lines = src.split(EOL)

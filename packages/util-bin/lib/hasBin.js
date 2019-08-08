@@ -22,6 +22,7 @@ hasBin.orThrow = async function hasBinOrThrow(binName, options = {}) {
   if (has) {
     return
   }
+
   const message = [
     `[${prefix}] command not found: ${binName}`,
     guide ? `( ${guide} )` : null,

@@ -34,6 +34,7 @@ class Logger {
     if (!axe) {
       return
     }
+
     const message = axe._audit.data.failureSummaries[key].failureMessage(
       node[key].map((check) => check.message || ''),
     )
@@ -70,6 +71,7 @@ class Logger {
     if (!violation) {
       return
     }
+
     const format = Themes[violation.impact] || Themes.minor
     console.groupCollapsed(
       '%c%s: %c%s %c( %s ) %c%s',
@@ -93,6 +95,7 @@ class Logger {
     if (issues.length === 0) {
       return
     }
+
     console.group('%c[aXe] %d new issues found', Themes.serious, issues.length)
     for (const issue of issues) {
       this.logIssue(issue)

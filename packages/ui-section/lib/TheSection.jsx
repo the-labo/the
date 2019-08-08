@@ -26,7 +26,7 @@ class TheSection extends React.Component {
 
   static Header(props) {
     const {
-      ['aria-level']: ariaLevel = 2,
+      'aria-level': ariaLevel = 2,
       actionIcon,
       actionText,
       actionTo,

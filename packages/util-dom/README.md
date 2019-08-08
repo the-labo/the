@@ -46,6 +46,7 @@ Dom utility for the-framework
 
 - module:@the-/util-dom
   - [.byId(id)](./doc/api/api.md#module_@the-/util-dom.byId)
+  - [.injectScript(src,options)](./doc/api/api.md#module_@the-/util-dom.injectScript)
 - module:@the-/util-dom.byId
   - [.withRetry(id,options)](./doc/api/api.md#module_@the-/util-dom.byId.withRetry)
 

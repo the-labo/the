@@ -98,6 +98,7 @@ class TheMetrics {
     if (entries.length === 0) {
       return
     }
+
     console.groupCollapsed(
       `[${this.name}] ${entries.length} metrics flushed for ${took}ms`,
     )

@@ -15,6 +15,7 @@ function cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode(
     if (!nextProperty) {
       continue
     }
+
     const { loc } = property
     const nextLoc = nextProperty.leadingComments
       ? nextProperty.leadingComments[0].loc

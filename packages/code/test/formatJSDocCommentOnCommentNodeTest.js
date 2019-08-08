@@ -5,19 +5,15 @@
 'use strict'
 
 const formatJSDocCommentOnCommentNode = require('../lib/ast/nodes/formatJSDocCommentOnCommentNode')
-
-const { ok, equal, deepEqual } = require('assert').strict
+const { ok } = require('assert').strict
 
 describe('format-js-doc-comment-on-comment-node', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     ok(formatJSDocCommentOnCommentNode)
-    
   })
 })
 
