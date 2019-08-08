@@ -5,15 +5,18 @@
  * @license MIT
  * @module @the-/util-dom
  * @typicalname utilDom
- * @version 15.4.11
+ * @version 15.5.0
  */
 'use strict'
 
 const byId_ = require('./byId')
+const injectScript_ = require('./injectScript')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
 exports.byId = byId_
+exports.injectScript = injectScript_
 
 module.exports = {
   byId: byId_,
+  injectScript: injectScript_,
 }
