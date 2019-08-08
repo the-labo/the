@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-section",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-section",
     "order": 0,
     "typicalname": "uiSection",
-    "version": "15.4.8"
+    "version": "15.4.10"
   },
   {
     "description": "Accordion section",

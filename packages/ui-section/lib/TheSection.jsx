@@ -26,6 +26,7 @@ class TheSection extends React.Component {
 
   static Header(props) {
     const {
+      ['aria-level']: ariaLevel = 2,
       actionIcon,
       actionText,
       actionTo,
@@ -39,6 +40,7 @@ class TheSection extends React.Component {
       <h2
         {...htmlAttributesFor(props, { except: ['className'] })}
         {...eventHandlersFor(props, { except: [] })}
+        aria-level={ariaLevel}
         className={c('the-section-header', className, {
           'the-section-header-lined': lined,
         })}

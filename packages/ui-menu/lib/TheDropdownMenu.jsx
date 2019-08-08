@@ -45,7 +45,7 @@ class TheDropDownMenu extends React.Component {
       <TheMenuItem
         {...props}
         className={c('the-dropdown-menu-item', className)}
-        role='menuItem'
+        role='menuitem'
       />
     )
   }
