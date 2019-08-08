@@ -7,13 +7,13 @@
     "longname": "module:@the-/util-dom",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/util-dom",
     "order": 2,
     "typicalname": "utilDom",
-    "version": "15.4.11"
+    "version": "15.5.1"
   },
   {
     "description": "Get element by id",
@@ -60,7 +60,7 @@
     "memberof": "module:@the-/util-dom.byId",
     "meta": {
       "filename": "byId.js",
-      "lineno": 22,
+      "lineno": 23,
       "path": "lib"
     },
     "name": "withRetry",
@@ -95,6 +95,51 @@
           ]
         },
         "description": "- Found element"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Inject script dynamically",
+    "id": "module:@the-/util-dom.injectScript",
+    "kind": "function",
+    "longname": "module:@the-/util-dom.injectScript",
+    "memberof": "module:@the-/util-dom",
+    "meta": {
+      "filename": "injectScript.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "injectScript",
+    "order": 3,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "src"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise"
+          ]
+        }
       }
     ],
     "scope": "static"

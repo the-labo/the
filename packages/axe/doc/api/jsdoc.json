@@ -13,7 +13,7 @@
     "name": "@the-/axe",
     "order": 2,
     "typicalname": "axe",
-    "version": "15.5.6"
+    "version": "15.6.4"
   },
   {
     "description": "Create instance",
@@ -32,7 +32,7 @@
     "memberof": "module:@the-/axe.TheAce",
     "meta": {
       "filename": "TheAxe.js",
-      "lineno": 41,
+      "lineno": 45,
       "path": "lib"
     },
     "name": "start",

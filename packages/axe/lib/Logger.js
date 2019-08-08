@@ -4,7 +4,6 @@
  */
 'use strict'
 
-const axe = require('axe-core')
 const { get } = require('@the-/window')
 
 const Themes = {
@@ -31,6 +30,10 @@ class Logger {
   }
 
   logFailureMessage(node, key) {
+    const axe = get('axe')
+    if (!axe) {
+      return
+    }
     const message = axe._audit.data.failureSummaries[key].failureMessage(
       node[key].map((check) => check.message || ''),
     )

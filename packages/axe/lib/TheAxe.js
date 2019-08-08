@@ -5,16 +5,20 @@
  */
 'use strict'
 
-const axe = require('axe-core')
+const { injectScript } = require('@the-/util-dom')
 const { get } = require('@the-/window')
 const Logger = require('./Logger')
 
 /** @lends module:@the-/axe.TheAce */
 class TheAxe {
   constructor(options = {}) {
-    const { interval = 10000 } = options
+    const {
+      interval = 10000,
+      src = 'https://cdnjs.cloudflare.com/ajax/libs/axe-core/3.3.1/axe.js',
+    } = options
     this.interval = interval
     this.issueIds = new Set()
+    this.src = src
   }
 
   report(data) {
@@ -43,11 +47,12 @@ class TheAxe {
     const timer = setInterval(() => {
       void this.tick()
     }, this.interval)
-    this.tick()
+    void injectScript(this.src).then(() => this.tick())
     return () => clearInterval(timer)
   }
 
   async inspect() {
+    const axe = get('axe', { strict: true })
     const body = get('document.body')
     return new Promise((resolve, reject) => {
       axe.run(body, { reporter: 'v2' }, (err, results) =>

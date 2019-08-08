@@ -17,6 +17,8 @@ async function injectScript(src, options = {}) {
   return new Promise((resolve, reject) => {
     const script = document.createElement('script')
     script.setAttribute('src', src)
+    script.setAttribute('data-by', '@the-/util-dom.injectScript')
+    script.setAttribute('class', 'the-dynamic-script')
     script.onload = () => resolve()
     script.onerror = () => reject()
     document[target].appendChild(script)

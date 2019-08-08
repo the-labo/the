@@ -5,12 +5,13 @@
 ## @the-/util-dom
 Dom utility for the-framework
 
-**Version**: 15.4.11  
+**Version**: 15.5.1  
 **License**: MIT  
 
 * [@the-/util-dom](#module_@the-/util-dom)
     * [.byId(id)](#module_@the-/util-dom.byId) ⇒ <code>HTMLElement</code>
         * [.withRetry(id, [options])](#module_@the-/util-dom.byId.withRetry) ⇒ <code>Promise.&lt;?HTMLElement&gt;</code>
+    * [.injectScript(src, [options])](#module_@the-/util-dom.injectScript) ⇒ <code>Promise</code>
 
 <a name="module_@the-/util-dom.byId"></a>
 
@@ -35,5 +36,17 @@ Get element by id
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | id | <code>string</code> |  | Id of dom element |
+| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
+
+<a name="module_@the-/util-dom.injectScript"></a>
+
+### utilDom.injectScript(src, [options]) ⇒ <code>Promise</code>
+Inject script dynamically
+
+**Kind**: static method of [<code>@the-/util-dom</code>](#module_@the-/util-dom)  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| src | <code>string</code> |  |  |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 
