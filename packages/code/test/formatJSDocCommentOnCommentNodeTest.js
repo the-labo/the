@@ -4,8 +4,10 @@
  */
 'use strict'
 
+const {
+  strict: { ok },
+} = require('assert')
 const formatJSDocCommentOnCommentNode = require('../lib/ast/nodes/formatJSDocCommentOnCommentNode')
-const { ok } = require('assert').strict
 
 describe('format-js-doc-comment-on-comment-node', () => {
   before(() => {})

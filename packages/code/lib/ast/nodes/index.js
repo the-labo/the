@@ -28,6 +28,7 @@ const combineObjectPatternOnStatementNode_ = require('./combineObjectPatternOnSt
 const combineOnVariableDeclarationNodes_ = require('./combineOnVariableDeclarationNodes')
 const combinePropertiesOnObjectPattern_ = require('./combinePropertiesOnObjectPattern')
 const commentModuleOnProgramNode_ = require('./commentModuleOnProgramNode')
+const completeJSDocAnnotationsOnProgramNode_ = require('./completeJSDocAnnotationsOnProgramNode')
 const findCJSExportsAssignmentsExpressionOnProgramNode_ = require('./findCJSExportsAssignmentsExpressionOnProgramNode')
 const findJSDocAnnotationsInCommendNode_ = require('./findJSDocAnnotationsInCommendNode')
 const findRequireDeclarationOnProgramNode_ = require('./findRequireDeclarationOnProgramNode')
@@ -73,6 +74,7 @@ exports.combineObjectPatternOnStatementNode = combineObjectPatternOnStatementNod
 exports.combineOnVariableDeclarationNodes = combineOnVariableDeclarationNodes_
 exports.combinePropertiesOnObjectPattern = combinePropertiesOnObjectPattern_
 exports.commentModuleOnProgramNode = commentModuleOnProgramNode_
+exports.completeJSDocAnnotationsOnProgramNode = completeJSDocAnnotationsOnProgramNode_
 exports.findCJSExportsAssignmentsExpressionOnProgramNode = findCJSExportsAssignmentsExpressionOnProgramNode_
 exports.findJSDocAnnotationsInCommendNode = findJSDocAnnotationsInCommendNode_
 exports.findRequireDeclarationOnProgramNode = findRequireDeclarationOnProgramNode_
@@ -118,6 +120,7 @@ module.exports = {
   combineOnVariableDeclarationNodes: combineOnVariableDeclarationNodes_,
   combinePropertiesOnObjectPattern: combinePropertiesOnObjectPattern_,
   commentModuleOnProgramNode: commentModuleOnProgramNode_,
+  completeJSDocAnnotationsOnProgramNode: completeJSDocAnnotationsOnProgramNode_,
   findCJSExportsAssignmentsExpressionOnProgramNode: findCJSExportsAssignmentsExpressionOnProgramNode_,
   findJSDocAnnotationsInCommendNode: findJSDocAnnotationsInCommendNode_,
   findRequireDeclarationOnProgramNode: findRequireDeclarationOnProgramNode_,

@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/check
  * @typicalname check
- * @version 15.5.3
+ * @version 15.5.5
  */
 'use strict'
 

@@ -1,9 +1,9 @@
-'use strict'
-
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function normalizeJSDocAnnotationsOnCommentNode
  */
+'use strict'
+
 const findJSDocAnnotationsInCommendNode = require('./findJSDocAnnotationsInCommendNode')
 
 // see http://usejsdoc.org/

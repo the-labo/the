@@ -3,7 +3,6 @@
 /**
  * Scene
  * @memberof module:@the-/templates
- *
  * @function Scene
  * @param {Object} config
  * @returns {Object}

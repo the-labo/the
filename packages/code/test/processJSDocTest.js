@@ -198,6 +198,24 @@ describe('process-js-doc', () => {
 `,
     )
   })
+
+  it('Complete jsdoc', async () => {
+
+    console.log(
+      await processJSDoc(`
+      
+ // x
+/**
+ * @function Hoge
+ */
+function Hoge(name, value){
+}
+module.exports = function Hoge(){}
+      
+      `)
+    )
+
+  })
 })
 
 /* global describe, before, after, it */

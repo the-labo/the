@@ -7,13 +7,13 @@
     "longname": "module:@the-/check",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/check",
     "order": 1,
     "typicalname": "check",
-    "version": "15.5.3"
+    "version": "15.5.5"
   },
   {
     "description": "Check touch supported",
@@ -23,7 +23,7 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "canTouch.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "canTouch",
@@ -47,7 +47,7 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "isBrowser.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "isBrowser",
@@ -71,7 +71,7 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "isChrome.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "isChrome",
@@ -95,7 +95,7 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "isFirefox.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "isFirefox",
@@ -119,7 +119,7 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "isiOS.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "isiOS",
@@ -143,7 +143,7 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "isMacOS.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "isMacOS",
@@ -167,7 +167,7 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "isProduction.js",
-      "lineno": 2,
+      "lineno": 1,
       "path": "lib"
     },
     "name": "isProduction",
@@ -192,7 +192,7 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "unlessProduction.js",
-      "lineno": 2,
+      "lineno": 1,
       "path": "lib"
     },
     "name": "unlessProduction",

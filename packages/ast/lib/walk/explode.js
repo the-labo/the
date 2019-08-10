@@ -10,12 +10,10 @@ const t = require('@babel/types')
  * explode() will take a visitor object with all of the various shorthands
  * that we support, and validates & normalizes it into a common format, ready
  * to be used in traversal
- *
  * The various shorthands are:
  * * `Identifier() { ... }` -> `Identifier: { enter() { ... } }`
  * * `"Identifier|NumericLiteral": { ... }` -> `Identifier: { ... }, NumericLiteral: { ... }`
  * * Aliases in `babel-types`: e.g. `Property: { ... }` -> `ObjectProperty: { ... }, ClassProperty: { ... }`
- *
  * Other normalizations are:
  * * `enter` and `exit` functions are wrapped in arrays, to ease merging of visitors
  */

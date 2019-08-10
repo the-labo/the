@@ -11,6 +11,7 @@ const {
   commentModuleOnProgramNode,
   formatJSDocCommentOnCommentNode,
   normalizeJSDocAnnotationsOnCommentNode,
+  completeJSDocAnnotationsOnProgramNode,
   sortAnnotationsOnCommentNode,
 } = require('../ast/nodes')
 const applyConverter = require('../helpers/applyConverter')
@@ -30,12 +31,18 @@ async function processJSDoc(content, options = {}) {
       const { get, replace, swap } = contentAccess(content)
 
       {
-        const converted = await commentModuleOnProgramNode(parsed.program, {
-          JSDocComments,
-          filename,
-          get,
-          replace,
-        })
+        const converted =
+          (await commentModuleOnProgramNode(parsed.program, {
+            JSDocComments,
+            filename,
+            get,
+            replace,
+          })) ||
+          (await completeJSDocAnnotationsOnProgramNode(parsed.program, {
+            JSDocComments,
+            get,
+            replace,
+          }))
         if (converted) {
           return converted
         }

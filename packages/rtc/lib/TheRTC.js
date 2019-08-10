@@ -11,7 +11,6 @@
  * @param {string} [config.turn.secret] - TURN server secret
  * @param {string} [config.turn.expiry] - TURN server expiry
  * @param {string} [config.topology='mesh'] - 'mesh', 'sfu'
- *
  */
 const socketIO = require('socket.io')
 const { TopologyTypes } = require('./constants')

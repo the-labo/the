@@ -17,6 +17,7 @@ var/
 /packages/ast/lib/constants/NodeTypes.js
 /packages/ast/lib/constants/index.js
 /packages/ast/lib/index.js
+/packages/axe/lib/index.js
 /packages/bin/lib/index.js
 /packages/cache/lib/index.js
 /packages/check/lib/index.js
@@ -274,6 +275,7 @@ var/
 /packages/ui/lib/index.jsx
 /packages/url/lib/index.js
 /packages/util-array/lib/index.js
+/packages/util-bin/lib/index.js
 /packages/util-client/lib/index.js
 /packages/util-color/lib/index.js
 /packages/util-ctrl/lib/helpers/index.js

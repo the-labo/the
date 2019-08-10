@@ -20,7 +20,6 @@ function InfoFlusher(filename, getter) {
   /**
    * @memberof module:@the-/server.helpers.InfoFlusher
    * @inner
-   
    * @namespace infoFlusher */
   const infoFlusher = {
     state,
