@@ -7,13 +7,13 @@
     "longname": "module:@the-/url",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/url",
     "order": 2,
     "typicalname": "url",
-    "version": "15.4.7"
+    "version": "15.4.9"
   },
   {
     "description": "Add query to url string",
@@ -23,7 +23,7 @@
     "memberof": "module:@the-/url",
     "meta": {
       "filename": "addUrlQuery.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "addQuery",
@@ -68,7 +68,7 @@
     "memberof": "module:@the-/url",
     "meta": {
       "filename": "formatUrl.js",
-      "lineno": 2,
+      "lineno": 8,
       "path": "lib"
     },
     "name": "formatUrl",

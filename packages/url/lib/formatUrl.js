@@ -1,5 +1,10 @@
 'use strict'
 
+const { unlessProduction } = require('@the-/check')
+const { get } = require('@the-/window')
+
+const PARAM_PREFIX = /^:/
+
 /**
  * Format urls
  * @memberof module:@the-/url
@@ -8,12 +13,6 @@
  * @param {Object} [params={}] - Params to inject
  * @returns {string} Formatted string
  */
-const { unlessProduction } = require('@the-/check')
-const { get } = require('@the-/window')
-
-const PARAM_PREFIX = /^:/
-
-/** @lends formatUrl */
 function formatUrl(urlString, params = {}) {
   const isRelative = urlString.match(/^\//)
   const url = isRelative
@@ -22,17 +21,17 @@ function formatUrl(urlString, params = {}) {
   const { pathname, search } = url
   const paramsKeys = Object.keys(params)
   const replaced = {}
-  const injectParams = (componnet) => {
-    if (PARAM_PREFIX.test(componnet)) {
-      const componentKey = componnet.replace(PARAM_PREFIX, '').split('.')
+  const injectParams = (c) => {
+    if (PARAM_PREFIX.test(c)) {
+      const componentKey = c.replace(PARAM_PREFIX, '').split('.')
       const [name, ...extensions] = componentKey
       if (!paramsKeys.includes(name)) {
         unlessProduction(() =>
           console.warn(
-            `[the-url] Failed to resolve \`${componnet}\` ( in \`${urlString}\` )`,
+            `[the-url] Failed to resolve \`${c}\` ( in \`${urlString}\` )`,
           ),
         )
-        return componnet
+        return c
       }
 
       const value = encodeURIComponent(params[name])
@@ -40,7 +39,7 @@ function formatUrl(urlString, params = {}) {
       return [value, ...extensions].join('.')
     }
 
-    return componnet
+    return c
   }
   url.pathname = pathname
     .split(/\//g)
