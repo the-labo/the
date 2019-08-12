@@ -9,14 +9,17 @@ const path = require('path')
 /** @lends module:@the-/code.ast.nodes.cleanupExtOnRequireDeclarationArgumentNode */
 function cleanupExtOnRequireDeclarationArgumentNode(
   ArgumentNode,
-  { extToRemove, replace },
+  { extToRemove, get, replace },
 ) {
-  const shouldRemoveExt = extToRemove.test(path.extname(ArgumentNode.value))
+  const extname = path.extname(ArgumentNode.value)
+  const shouldRemoveExt = extToRemove.includes(extname)
   if (shouldRemoveExt) {
-    return replace(
-      [ArgumentNode.start + 1, ArgumentNode.end - 1],
-      ArgumentNode.value.replace(extToRemove, ''),
-    )
+    const range = [ArgumentNode.start, ArgumentNode.end]
+    const original = get(range)
+    const replacing = original.replace(extname, '')
+    if (replacing !== original) {
+      return replace(range, replacing)
+    }
   }
 }
 

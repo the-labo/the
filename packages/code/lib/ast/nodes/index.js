@@ -8,6 +8,7 @@
  */
 'use strict'
 
+const addExtOnRequireDeclarationArgumentNode_ = require('./addExtOnRequireDeclarationArgumentNode')
 const calcNumericOperationOnBinaryExpressionNode_ = require('./calcNumericOperationOnBinaryExpressionNode')
 const cleanupEmptyArrayPatternParamsOnFunctionNode_ = require('./cleanupEmptyArrayPatternParamsOnFunctionNode')
 const cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode_ = require('./cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode')
@@ -54,6 +55,7 @@ const sortSpecifiersOnImportDeclarationNode_ = require('./sortSpecifiersOnImport
 const spaceOnCommentNode_ = require('./spaceOnCommentNode')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
+exports.addExtOnRequireDeclarationArgumentNode = addExtOnRequireDeclarationArgumentNode_
 exports.calcNumericOperationOnBinaryExpressionNode = calcNumericOperationOnBinaryExpressionNode_
 exports.cleanupEmptyArrayPatternParamsOnFunctionNode = cleanupEmptyArrayPatternParamsOnFunctionNode_
 exports.cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode = cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode_
@@ -100,6 +102,7 @@ exports.sortSpecifiersOnImportDeclarationNode = sortSpecifiersOnImportDeclaratio
 exports.spaceOnCommentNode = spaceOnCommentNode_
 
 module.exports = {
+  addExtOnRequireDeclarationArgumentNode: addExtOnRequireDeclarationArgumentNode_,
   calcNumericOperationOnBinaryExpressionNode: calcNumericOperationOnBinaryExpressionNode_,
   cleanupEmptyArrayPatternParamsOnFunctionNode: cleanupEmptyArrayPatternParamsOnFunctionNode_,
   cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode: cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode_,

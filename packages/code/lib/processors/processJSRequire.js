@@ -14,6 +14,7 @@ const {
   parse,
 } = require('@the-/ast')
 const {
+  addExtOnRequireDeclarationArgumentNode,
   cleanupExtOnRequireDeclarationArgumentNode,
   modifyNodeDeprecatedOnRequireDeclaration,
   normalizeSrcPathOnRequireArgumentNode,
@@ -134,34 +135,36 @@ function processJSRequire(content, options = {}) {
           )
         }
       }
-
       if (filename) {
         const dirname = path.dirname(filename)
-        const extToRemove = /\.js$|\.json$/
         for (const RequireDeclaration of RequireDeclarations) {
           const ArgumentNode = requireArg(RequireDeclaration)
           if (!ArgumentNode) {
             continue
           }
-
-          if (ArgumentNode.type !== 'StringLiteral') {
+          const { type, value } = ArgumentNode
+          if (type !== NodeTypes.StringLiteral) {
             continue
           }
 
-          const { value } = ArgumentNode
           if (!isRelative(value)) {
             continue
           }
 
-          const extRemoved = cleanupExtOnRequireDeclarationArgumentNode(
-            ArgumentNode,
-            {
-              extToRemove,
+          const extChanged =
+            cleanupExtOnRequireDeclarationArgumentNode(ArgumentNode, {
+              extToRemove: ['.js', '.jsx'],
+              get,
               replace,
-            },
-          )
-          if (extRemoved) {
-            return extRemoved
+            }) ||
+            addExtOnRequireDeclarationArgumentNode(ArgumentNode, {
+              dirname,
+              extToAdd: ['.json'],
+              get,
+              replace,
+            })
+          if (extChanged) {
+            return extChanged
           }
 
           const normalized = normalizeSrcPathOnRequireArgumentNode(

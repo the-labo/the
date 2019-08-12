@@ -7,6 +7,7 @@
 const {
   strict: { equal },
 } = require('assert')
+const path = require('path')
 const processJSRequire = require('../lib/processors/processJSRequire')
 
 describe('process-require', async () => {
@@ -152,13 +153,17 @@ const PackageFiles = require('../packaging/PackageFiles')
     )
   })
 
-  it('Swap with semi', async () => {
-    console.log(
-      await processJSRequire(`
-const b = require('b')
-const a = require('a')
-;(() => {})()
-`),
+  it('Append json', async () => {
+    const pkgJsonPath = path.relative(
+      __dirname,
+      require.resolve('../package.json'),
+    )
+    equal(
+      await processJSRequire(
+        `const pkg = require('${pkgJsonPath.replace(/\.json$/, '')}')`,
+        { filename: __filename },
+      ),
+      "const pkg = require('../package.json')",
     )
   })
 })

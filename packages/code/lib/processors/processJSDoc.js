@@ -9,9 +9,9 @@
 const { parse } = require('@the-/ast')
 const {
   commentModuleOnProgramNode,
+  completeJSDocAnnotationsOnProgramNode,
   formatJSDocCommentOnCommentNode,
   normalizeJSDocAnnotationsOnCommentNode,
-  completeJSDocAnnotationsOnProgramNode,
   sortAnnotationsOnCommentNode,
 } = require('../ast/nodes')
 const applyConverter = require('../helpers/applyConverter')

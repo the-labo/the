@@ -99,7 +99,6 @@ function processJSImport(content, options = {}) {
       }
     }
 
-    const extToRemove = /\.js$|\.json$/
     const dirname = filename && path.dirname(filename)
     for (const ImportDeclaration of ImportDeclarations) {
       const converted =
@@ -109,7 +108,8 @@ function processJSImport(content, options = {}) {
           replace,
         }) ||
         cleanupExtOnImportDeclarationNode(ImportDeclaration, {
-          extToRemove,
+          extToRemove: ['.js', '.jsx'],
+          get,
           replace,
         })
       if (converted) {
