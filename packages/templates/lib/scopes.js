@@ -1,9 +1,9 @@
-'use strict'
-
 /**
  * @memberof module:@the-/templates
  * @function scopes
  */
+'use strict'
+
 const aglob = require('aglob')
 const path = require('path')
 const { camelcase } = require('stringcase')

@@ -100,13 +100,14 @@ coz.render(bud)
   - [.Readme(config)](./doc/api/api.md#module_@the-/templates.Readme)
   - [.Resources()](./doc/api/api.md#module_@the-/templates.Resources)
   - [.Scene(config)](./doc/api/api.md#module_@the-/templates.Scene)
-  - [.scopes()](./doc/api/api.md#module_@the-/templates.scopes)
   - [.Stateful(config)](./doc/api/api.md#module_@the-/templates.Stateful)
   - [.Stateless(config)](./doc/api/api.md#module_@the-/templates.Stateless)
   - [.Stream(config)](./doc/api/api.md#module_@the-/templates.Stream)
   - [.test()](./doc/api/api.md#module_@the-/templates.test)
   - [.vhost(config)](./doc/api/api.md#module_@the-/templates.vhost)
   - [.View(config)](./doc/api/api.md#module_@the-/templates.View)
+- module:scopes
+  - [~scopes()](./doc/api/api.md#module_scopes~scopes)
 
 See [API Guide](./doc/api/api.md) for more detail
 

@@ -7,11 +7,11 @@
 'use strict'
 
 {{#each modules}}{{#if namespace}}{{else}}
-import {{varName}} = from '{{path}}'{{/if}}{{/each}}
+import {{varName}} from '{{path}}'{{/if}}{{/each}}
 
 {{#each modules}}
 {{#if namespace}}
 
 // `./{{path}}` directory
-export {{name}} = {}{{else}}{{name}} = {{varName}}{{/if}}
+export const {{name}} = {}{{else}}export const {{name}} = {{varName}}{{/if}}
 {{/each}}
