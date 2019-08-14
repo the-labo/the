@@ -13,7 +13,7 @@
     "name": "@the-/templates",
     "order": 8,
     "typicalname": "templates",
-    "version": "16.0.11"
+    "version": "16.0.14"
   },
   {
     "description": "Define bud for bin scripts",
@@ -23,7 +23,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "bin.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "bin",
@@ -68,7 +68,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "Ctrl.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "Ctrl",
@@ -121,7 +121,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "Dialogs.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "Dialogs",
@@ -189,7 +189,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "errorPage.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "errorPage",
@@ -291,7 +291,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "Hook.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "Hook",
@@ -325,7 +325,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "License.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "License",
@@ -388,7 +388,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "mapping.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "mapping",
@@ -412,7 +412,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "nginx.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "nginx",
@@ -446,7 +446,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "pcssVars.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "pcssVars",
@@ -488,7 +488,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "prettierrc.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "prettierrc",
@@ -522,7 +522,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "Readme.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "Readme",
@@ -620,7 +620,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "Resources.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "Resources",
@@ -635,7 +635,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "Scene.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "Scene",
@@ -668,7 +668,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "scopes.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "scopes",
@@ -683,7 +683,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "Stateful.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "Stateful",
@@ -717,7 +717,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "Stateless.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "Stateless",
@@ -751,7 +751,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "Stream.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "Stream",
@@ -785,7 +785,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "test.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "test",
@@ -809,7 +809,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "vhost.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "vhost",
@@ -843,7 +843,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "View.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "View",

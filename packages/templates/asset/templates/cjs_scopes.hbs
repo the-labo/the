@@ -6,12 +6,14 @@
  */
 'use strict'
 
+const _d = (m) => (m && 'default' in m) ? m.default : m
+
 {{#each modules}}{{#if namespace}}{{else}}
-import {{varName}} = from '{{path}}'{{/if}}{{/each}}
+const {{varName}} = require('{{path}}'){{/if}}{{/each}}
 
 {{#each modules}}
 {{#if namespace}}
 
 // `./{{path}}` directory
-export {{name}} = {}{{else}}{{name}} = {{varName}}{{/if}}
+exports.{{name}} = {}{{else}}exports.{{name}} = _d({{varName}}){{/if}}
 {{/each}}

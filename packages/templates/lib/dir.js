@@ -1,5 +1,4 @@
 'use strict'
-
 /**
  * Define bud for dir
  * @memberof module:@the-/templates
@@ -13,6 +12,8 @@ const path = require('path')
 const reserved = require('reserved')
 const _tmpl = require('./_tmpl')
 const assert = require('@the-/assert')('[@the-/templates][dir]')
+
+const extToKeep = ['.json']
 
 const shouldRequire = (name) =>
   !/^[._]/.test(name) &&
@@ -46,12 +47,13 @@ function dir(config) {
     .map((name) => path.join(dirname, name))
     .filter((filename) => isModule(filename))
     .map((filename) => {
-      const pathName = path.basename(filename, path.extname(filename))
+      const extname = path.extname(filename)
+      const pathName = path.basename(filename, extname)
       const name = pathName.replace(/^\d+\./, '')
       const varNameChanged = reserved.includes(name)
       return {
         name,
-        path: pathName,
+        path: pathName + (extToKeep.includes(extname) ? extname : ''),
         varName: `${varNameChanged ? `${name}_` : name}_`,
         varNameChanged,
       }

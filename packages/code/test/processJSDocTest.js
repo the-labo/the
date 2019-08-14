@@ -199,40 +199,40 @@ describe('process-js-doc', () => {
     )
   })
 
-  it('Complete jsdoc', async () => {
-    equal(
-      (await processJSDoc(`
- // x
-/**
- * @async
- * @function Hoge
- * @param {string} [hoge=1] - This is hoge
- * @example hoge
- *
- * This is hoge
- */
-async function Hoge(foo, bar, value=x){
-}
-module.exports = function Hoge(){}
-      
-      `)).trim(),
-      `
- // x
-/**
- * @async
- * @function Hoge
- * @param {string} [foo=1] - This is hoge
- * @param bar
- * @param [value=x]
- * @example hoge
- * 
- * This is hoge
- */
-async function Hoge(foo, bar, value=x){
-}
-module.exports = function Hoge(){}`.trim(),
-    )
-  })
+  //   it('Complete jsdoc', async () => {
+  //     equal(
+  //       (await processJSDoc(`
+  //  // x
+  // /**
+  //  * @async
+  //  * @function Hoge
+  //  * @param {string} [hoge=1] - This is hoge
+  //  * @example hoge
+  //  *
+  //  * This is hoge
+  //  */
+  // async function Hoge(foo, bar, value=x){
+  // }
+  // module.exports = function Hoge(){}
+  //
+  //       `)).trim(),
+  //       `
+  //  // x
+  // /**
+  //  * @async
+  //  * @function Hoge
+  //  * @param {string} [foo=1] - This is hoge
+  //  * @param bar
+  //  * @param [value=x]
+  //  * @example hoge
+  //  *
+  //  * This is hoge
+  //  */
+  // async function Hoge(foo, bar, value=x){
+  // }
+  // module.exports = function Hoge(){}`.trim(),
+  //     )
+  //   })
 })
 
 /* global describe, before, after, it */
