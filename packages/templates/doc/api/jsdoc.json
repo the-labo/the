@@ -16,6 +16,18 @@
     "version": "16.0.14"
   },
   {
+    "id": "module:scopes",
+    "kind": "module",
+    "longname": "module:scopes",
+    "meta": {
+      "filename": "scopes.js",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "scopes",
+    "order": 17
+  },
+  {
     "description": "Define bud for bin scripts",
     "id": "module:@the-/templates.bin",
     "kind": "function",
@@ -662,20 +674,6 @@
     "scope": "static"
   },
   {
-    "id": "module:@the-/templates.scopes",
-    "kind": "function",
-    "longname": "module:@the-/templates.scopes",
-    "memberof": "module:@the-/templates",
-    "meta": {
-      "filename": "scopes.js",
-      "lineno": 3,
-      "path": "lib"
-    },
-    "name": "scopes",
-    "order": 17,
-    "scope": "static"
-  },
-  {
     "description": "Stateful",
     "id": "module:@the-/templates.Stateful",
     "kind": "function",
@@ -687,7 +685,7 @@
       "path": "lib"
     },
     "name": "Stateful",
-    "order": 18,
+    "order": 19,
     "params": [
       {
         "type": {
@@ -721,7 +719,7 @@
       "path": "lib"
     },
     "name": "Stateless",
-    "order": 19,
+    "order": 20,
     "params": [
       {
         "type": {
@@ -755,7 +753,7 @@
       "path": "lib"
     },
     "name": "Stream",
-    "order": 20,
+    "order": 21,
     "params": [
       {
         "type": {
@@ -789,7 +787,7 @@
       "path": "lib"
     },
     "name": "test",
-    "order": 21,
+    "order": 22,
     "returns": [
       {
         "type": {
@@ -813,7 +811,7 @@
       "path": "lib"
     },
     "name": "vhost",
-    "order": 22,
+    "order": 23,
     "params": [
       {
         "type": {
@@ -847,7 +845,7 @@
       "path": "lib"
     },
     "name": "View",
-    "order": 23,
+    "order": 24,
     "params": [
       {
         "type": {
@@ -868,5 +866,20 @@
       }
     ],
     "scope": "static"
+  },
+  {
+    "description": "Hogw",
+    "id": "module:scopes~scopes",
+    "kind": "function",
+    "longname": "module:scopes~scopes",
+    "memberof": "module:scopes",
+    "meta": {
+      "filename": "scopes.js",
+      "lineno": 4,
+      "path": "lib"
+    },
+    "name": "scopes",
+    "order": 18,
+    "scope": "inner"
   }
 ]

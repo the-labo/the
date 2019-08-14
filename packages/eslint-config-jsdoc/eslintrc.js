@@ -3,8 +3,8 @@
 const globals = require('globals')
 
 const definedTypes = [
-  ...Object.values(globals.builtin),
-  ...Object.values(globals.worker),
+  ...Object.keys(globals.builtin),
+  ...Object.keys(globals.serviceworker),
 ]
 
 module.exports = {

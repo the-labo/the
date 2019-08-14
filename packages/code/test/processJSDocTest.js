@@ -135,7 +135,7 @@ describe('process-js-doc', () => {
       await processJSDoc(`
 /**
  * @property {function()} cleanup
- * @property {Object} descriptor
+ * @property {object} descriptor
  * @property {string} path - Filename
  * @typedef {Object} GenerateResult
  */
