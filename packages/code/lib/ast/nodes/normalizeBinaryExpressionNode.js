@@ -1,7 +1,3 @@
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function normalizeBinaryExpressionNode
- */
 'use strict'
 
 const {
@@ -21,7 +17,10 @@ const LiteralTypes = new Set([
   NodeTypes.RegExpLiteral,
 ])
 
-/** @lends module:@the-/code.ast.nodes.normalizeBinaryExpressionNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function normalizeBinaryExpressionNode
+ */
 function normalizeBinaryExpressionNode(BinaryExpression, { get, replace }) {
   const { end, left, operator, right, start } = BinaryExpression
   if (operator in OperatorsToConvert) {

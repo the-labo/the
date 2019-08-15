@@ -1,9 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function sortPropertiesOnObjectNode
- */
 const { compareBy, compareStrings } = require('../../helpers/arrayHelper')
 
 const _nameOfPropKey = (key) =>
@@ -69,7 +65,10 @@ const _weightProperty = ({ async: async_, computed, key, kind, method }) => {
   return weight
 }
 
-/** @lends module:@the-/code.ast.nodes.sortPropertiesOnObjectNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function sortPropertiesOnObjectNode
+ */
 function sortPropertiesOnObjectNode(obj, { get, swap }) {
   const { properties } = obj
   if (!properties) {

@@ -1,9 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function mergeDuplicateImportOnProgramNode
- */
 const { EOL } = require('os')
 const {
   constants: { NodeTypes },
@@ -12,7 +8,10 @@ const {
 
 const compareStart = (a, b) => a.start - b.start
 
-/** @lends module:@the-/code.ast.nodes.mergeDuplicateImportOnProgramNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function mergeDuplicateImportOnProgramNode
+ */
 function mergeDuplicateImportOnProgramNode(programNode, { get, replace }) {
   const ImportDeclarations = finder.findByTypes(programNode, [
     NodeTypes.ImportDeclaration,

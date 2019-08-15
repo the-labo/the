@@ -1,15 +1,14 @@
 'use strict'
 
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function cleanupUnusedOnImportNode
- */
 const {
   isImportDefaultSpecifier,
   isImportSpecifier,
 } = require('../../helpers/astHelper')
 
-/** @lends module:@the-/code.ast.nodes.cleanupUnusedOnImportNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function cleanupUnusedOnImportNode
+ */
 function cleanupUnusedOnImportNode(
   ImportDeclaration,
   { ConsumingIdentifiers, get, keep = ['React'], replace, search },

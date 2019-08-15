@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Removed unused vars
- * @memberof module:@the-/code.processors
- * @function processJSUnused
- * @param {string} content
- * @returns {string} processed
- */
 const {
   constants: { NodeTypes },
   finder,
@@ -26,7 +19,13 @@ const applyToNodes = require('../helpers/applyToNodes')
 const { byType } = require('../helpers/arrayHelper')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends module:@the-/code.processors.processJSUnused */
+/**
+ * Removed unused vars
+ * @memberof module:@the-/code.processors
+ * @function processJSUnused
+ * @param {string} content
+ * @returns {string} processed
+ */
 function processJSUnused(content, options = {}) {
   const _consumingIdentifiersFor = (Context) => {
     const asMember = finder

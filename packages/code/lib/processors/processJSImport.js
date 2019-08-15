@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Process import statement
- * @memberof module:@the-/code.processors
- * @function processJSImport
- * @param {string} content
- * @returns {string} processed
- */
 const path = require('path')
 const { parse, walk } = require('@the-/ast')
 const {
@@ -19,7 +12,13 @@ const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 const { weightModuleName } = require('../helpers/weightHelper')
 
-/** @lends module:@the-/code.processors.processJSImport */
+/**
+ * Process import statement
+ * @memberof module:@the-/code.processors
+ * @function processJSImport
+ * @param {string} content
+ * @returns {string} processed
+ */
 function processJSImport(content, options = {}) {
   const { filename } = options
 

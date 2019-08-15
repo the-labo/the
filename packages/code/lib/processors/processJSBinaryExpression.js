@@ -1,11 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/code.processors
- * @function processJSBinaryExpression
- * @param {string} content
- * @returns {string} processed
- */
 const {
   constants: { NodeTypes },
   finder,
@@ -16,7 +10,12 @@ const normalizeBinaryExpressionNode = require('../ast/nodes/normalizeBinaryExpre
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends module:@the-/code.processors.processJSBinaryExpression */
+/**
+ * @memberof module:@the-/code.processors
+ * @function processJSBinaryExpression
+ * @param {string} content
+ * @returns {string} processed
+ */
 function processJSBinaryExpression(content, options = {}) {
   return applyConverter(
     content,

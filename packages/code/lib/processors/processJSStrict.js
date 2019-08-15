@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Process js "use strict" statement
- * @memberof module:@the-/code.processors
- * @function processJSRequire
- * @param {string} content
- * @returns {string} processed
- */
 const { EOL } = require('os')
 const {
   constants: { NodeTypes },
@@ -15,7 +8,13 @@ const {
 } = require('@the-/ast')
 const applyConverter = require('../helpers/applyConverter')
 
-/** @lends module:@the-/code.processors.processJSRequire */
+/**
+ * Process js "use strict" statement
+ * @memberof module:@the-/code.processors
+ * @function processJSRequire
+ * @param {string} content
+ * @returns {string} processed
+ */
 function processJSRequire(content, options = {}) {
   return applyConverter(
     content,

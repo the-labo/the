@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Process export statement
- * @memberof module:@the-/code.processors
- * @function processJSExport
- * @param {string} content
- * @returns {string} processed
- */
 const { EOL } = require('os')
 const {
   constants: { NodeTypes },
@@ -17,7 +10,13 @@ const sortExportNamedDeclarationsOnProgramNode = require('../ast/nodes/sortExpor
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends module:@the-/code.processors.processJSExport */
+/**
+ * Process export statement
+ * @memberof module:@the-/code.processors
+ * @function processJSExport
+ * @param {string} content
+ * @returns {string} processed
+ */
 function processJSExport(content, options = {}) {
   function splitExportAndDeclaration(DefaultExport, { get, replace }) {
     const { declaration } = DefaultExport

@@ -1,9 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function normalizeVariableDeclaratorOnStatementNode
- */
 const { EOL } = require('os')
 const {
   constants: { NodeTypes },
@@ -13,7 +9,10 @@ const modifyToDestructorOnDeclarationNode = require('./modifyToDestructorOnDecla
 const normalizeAssignmentOnVariableDeclarationNode = require('./normalizeAssignmentOnVariableDeclarationNode')
 const normalizeKindOnVariableDeclarationNode = require('./normalizeKindOnVariableDeclarationNode')
 
-/** @lends module:@the-/code.ast.nodes.normalizeVariableDeclaratorOnStatementNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function normalizeVariableDeclaratorOnStatementNode
+ */
 function normalizeVariableDeclaratorOnStatementNode(
   Statement,
   { get, replace },

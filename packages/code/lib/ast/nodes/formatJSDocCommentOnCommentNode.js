@@ -1,13 +1,12 @@
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function formatJSDocCommentOnCommentNode
- */
 'use strict'
 
 const { EOL } = require('os')
 const findJSDocAnnotationsInCommendNode = require('./findJSDocAnnotationsInCommendNode')
 
-/** @lends module:@the-/code.ast.nodes.formatJSDocCommentOnCommentNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function formatJSDocCommentOnCommentNode
+ */
 function formatJSDocCommentOnCommentNode(CommentNode, { get, replace }) {
   const annotations = findJSDocAnnotationsInCommendNode(CommentNode)
   const hasExample = annotations.some(

@@ -1,10 +1,9 @@
 'use strict'
-/**
- * @memberof module:@the-/code
- * @namespace astHelper
- */
-const astHelper = Object.freeze(
-  /** @lends module:@the-/code.astHelper */
+const astHelper =
+  /**
+   * @memberof module:@the-/code
+   * @namespace astHelper
+   */
   {
     is: (node, type) => {
       if (!node) {
@@ -41,7 +40,8 @@ const astHelper = Object.freeze(
         (node.callee && node.callee.name === 'require')
       )
     },
-  },
-)
+  }
+
+Object.freeze(astHelper)
 
 module.exports = astHelper

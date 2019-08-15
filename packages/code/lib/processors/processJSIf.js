@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Process if statemens
- * @memberof module:@the-/code.processors
- * @function processJSIf
- * @param {string} content
- * @returns {string} processed
- */
 const {
   constants: { NodeTypes },
   finder,
@@ -15,7 +8,13 @@ const {
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends module:@the-/code.processors.processJSIf */
+/**
+ * Process if statemens
+ * @memberof module:@the-/code.processors
+ * @function processJSIf
+ * @param {string} content
+ * @returns {string} processed
+ */
 function processJSIf(content, options = {}) {
   return applyConverter(
     content,

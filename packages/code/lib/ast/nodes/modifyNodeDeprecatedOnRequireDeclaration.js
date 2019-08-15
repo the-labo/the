@@ -4,7 +4,6 @@
  * @memberof module:@the-/code.ast.nodes
  * @function modifyNodeDeprecatedOnRequireDeclaration
  */
-/** @lends module:@the-/code.ast.nodes.modifyNodeDeprecatedOnRequireDeclaration */
 function modifyNodeDeprecatedOnRequireDeclaration(Declaration, options = {}) {
   const { get, replace } = options
 

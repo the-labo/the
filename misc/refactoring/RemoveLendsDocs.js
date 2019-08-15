@@ -9,7 +9,7 @@ const { TheRefactor } = require('@the-/refactor')
 
 async function main() {
   await new TheRefactor().convert(
-    'packages/templates/+(lib|misc)/**/+(*.js|*.jsx)',
+    'packages/code/+(lib|misc)/**/+(*.js|*.jsx)',
     (content) => {
       const parsed = parse(content)
       const comments = parsed.comments.filter((c) => c.loc.start.column === 0)
@@ -39,7 +39,7 @@ async function main() {
             c.tags.some((t) => t.tag === 'memberof' && t.name === nameSpace) &&
             c.tags.some(
               (t) =>
-                ['function', 'namespace'].includes(t.tag) &&
+                ['function', 'namespace', 'class'].includes(t.tag) &&
                 t.name === shortName,
             ),
         )

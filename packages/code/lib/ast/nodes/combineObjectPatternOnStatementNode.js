@@ -1,7 +1,3 @@
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function {combineObjectPatternOnStatementNode}
- */
 'use strict'
 
 const {
@@ -10,7 +6,10 @@ const {
 } = require('@the-/ast')
 const combineOnVariableDeclarationNodes = require('./combineOnVariableDeclarationNodes')
 
-/** @lends module:@the-/code.ast.nodes.combineObjectPatternOnStatementNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function combineObjectPatternOnStatementNode
+ */
 function combineObjectPatternOnStatementNode(Statement, { get, replace }) {
   if (!Statement) {
     return

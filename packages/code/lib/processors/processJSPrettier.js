@@ -1,16 +1,15 @@
 'use strict'
 
+const path = require('path')
+const prettier = require('prettier')
+const { PrettierConfig } = require('@the-/const-code')
+
 /**
  * @memberof module:@the-/code.processors
  * @function processJSPrettier
  * @param {string} content
  * @returns {Promise<string>} processed
  */
-const path = require('path')
-const prettier = require('prettier')
-const { PrettierConfig } = require('@the-/const-code')
-
-/** @lends module:@the-/code.processors.processJSPrettier */
 async function processJSPrettier(content, { filename } = {}) {
   const config = filename
     ? await prettier.resolveConfig(path.dirname(filename))

@@ -1,14 +1,13 @@
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function normalizeAssignmentOnVariableDeclarationNode
- */
 'use strict'
 
 const {
   constants: { NodeTypes },
 } = require('@the-/ast')
 
-/** @lends module:@the-/code.ast.nodes.normalizeAssignmentOnVariableDeclarationNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function normalizeAssignmentOnVariableDeclarationNode
+ */
 function normalizeAssignmentOnVariableDeclarationNode(
   VariableDeclaration,
   { replace },

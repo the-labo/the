@@ -1,14 +1,13 @@
-/**
- * @function modifyToDestructorOnDeclarationNode
- * @lends module:@the-/code.ast.nodes
- */
 'use strict'
 
 const {
   constants: { NodeTypes },
 } = require('@the-/ast')
 
-/** @lends module:@the-/code.ast.nodes.modifyToDestructorOnDeclarationNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function modifyToDestructorOnDeclarationNode
+ */
 function modifyToDestructorOnDeclarationNode(
   VariableDeclaration,
   { get, replace },

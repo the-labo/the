@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Process require statement
- * @memberof module:@the-/code.processors
- * @function processJSRequire
- * @param {string} content
- * @returns {string} processed
- */
 const path = require('path')
 const {
   constants: { NodeTypes },
@@ -26,7 +19,13 @@ const { weightModuleName } = require('../helpers/weightHelper')
 
 const isRelative = (filename) => /^\./.test(filename)
 
-/** @lends module:@the-/code.processors.processJSRequire */
+/**
+ * Process require statement
+ * @memberof module:@the-/code.processors
+ * @function processJSRequire
+ * @param {string} content
+ * @returns {string} processed
+ */
 function processJSRequire(content, options = {}) {
   const { filename, sourceType } = options
   if (sourceType === 'module') {

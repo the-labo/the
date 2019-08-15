@@ -1,11 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/code.processors
- * @function processYAML
- * @param {string} content
- * @returns {string}
- */
 const YAML = require('yaml')
 const { strOptions } = require('yaml/types')
 
@@ -41,7 +35,12 @@ const _processYAMLNode = (node) => {
   }
 }
 
-/** @lends module:@the-/code.processors.processYAML */
+/**
+ * @memberof module:@the-/code.processors
+ * @function processYAML
+ * @param {string} content
+ * @returns {string}
+ */
 async function processYAML(content) {
   const doc = YAML.parseDocument(content)
   const [error] = doc.errors || []

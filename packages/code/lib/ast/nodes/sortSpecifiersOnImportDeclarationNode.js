@@ -1,14 +1,13 @@
 'use strict'
 
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function sortSpecifiersOnImportDeclarationNode
- */
 const { compareBy } = require('../../helpers/arrayHelper')
 
 const specifierName = (specifier) => specifier.imported.name
 
-/** @lends module:@the-/code.ast.nodes.sortSpecifiersOnImportDeclarationNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function sortSpecifiersOnImportDeclarationNode
+ */
 function sortSpecifiersOnImportDeclarationNode(ImportDeclaration, { swap }) {
   const { specifiers } = ImportDeclaration
   if (specifiers.length === 0) {

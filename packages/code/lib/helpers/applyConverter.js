@@ -4,7 +4,6 @@
  * @memberof module:@the-/code
  * @function applyConverter
  */
-/** @lends module:@the-/code.applyConverter */
 async function applyConverter(content, convert, options = {}) {
   const { name = 'anonymous' } = options
   const max = 1000

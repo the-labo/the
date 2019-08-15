@@ -4,7 +4,6 @@
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupUnusedOnArrayPatternNode
  */
-/** @lends module:@the-/code.ast.nodes.cleanupUnusedOnArrayPatternNode */
 function cleanupUnusedOnArrayPatternNode(
   ArrayPattern,
   { ConsumingIdentifiers, replace },

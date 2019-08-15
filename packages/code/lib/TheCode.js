@@ -1,8 +1,4 @@
-/**
- * @memberof module:@the-/code
- * @class TheCode
- * @param {Object} [config={}] - Code config
- */
+
 
 const aglob = require('aglob')
 const { canWriteAsync, readFileAsync, statAsync } = require('asfs')
@@ -17,7 +13,11 @@ const debug = require('debug')('the:code')
 
 const MB = 1000 * 1000
 
-/** @lends module:@the-/code.TheCode */
+/**
+ * @memberof module:@the-/code
+ * @class TheCode
+ * @param {Object} [config={}] - Code config
+ */
 class TheCode {
   constructor(config = {}) {
     const {

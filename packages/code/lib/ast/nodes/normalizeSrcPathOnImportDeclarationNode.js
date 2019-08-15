@@ -1,14 +1,13 @@
 'use strict'
 
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function normalizeSrcPathOnImportDeclarationNode
- */
 const path = require('path')
 
 const isRelative = (filename) => /^\./.test(filename)
 
-/** @lends module:@the-/code.ast.nodes.normalizeSrcPathOnImportDeclarationNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function normalizeSrcPathOnImportDeclarationNode
+ */
 function normalizeSrcPathOnImportDeclarationNode(
   ImportDeclaration,
   { dirname, replace },

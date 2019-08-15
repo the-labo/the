@@ -4,7 +4,6 @@
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupRedundantAliasOnObjectPatternNode
  */
-/** @lends module:@the-/code.ast.nodes.cleanupRedundantAliasOnObjectPatternNode */
 function cleanupRedundantAliasOnObjectPatternNode(ObjectPattern, { replace }) {
   const { properties } = ObjectPattern
   if (!properties) {

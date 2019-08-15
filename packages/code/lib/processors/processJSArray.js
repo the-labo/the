@@ -1,10 +1,3 @@
-/**
- * Process array
- * @memberof module:@the-/code.processors
- * @function processJSArray
- * @param {string} content
- * @returns {string} processed
- */
 'use strict'
 
 const {
@@ -16,7 +9,13 @@ const cleanupRedundantArrayPatternOnArrayExpression = require('../ast/nodes/clea
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends module:@the-/code.processors.processJSArray */
+/**
+ * Process array
+ * @memberof module:@the-/code.processors
+ * @function processJSArray
+ * @param {string} content
+ * @returns {string} processed
+ */
 function processJSArray(content, options = {}) {
   return applyConverter(
     content,

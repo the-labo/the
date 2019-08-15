@@ -1,10 +1,5 @@
 'use strict'
 
-/**
- * Process declarations
- * @memberof module:@the-/code.processors
- * @function processJSDeclaration
- */
 const {
   constants: { NodeTypes },
   finder,
@@ -15,7 +10,11 @@ const normalizeVariableDeclaratorOnStatementNode = require('../ast/nodes/normali
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends module:@the-/code.processors.processJSDeclaration */
+/**
+ * Process declarations
+ * @memberof module:@the-/code.processors
+ * @function processJSDeclaration
+ */
 function processJSDeclaration(content, options = {}) {
   return applyConverter(
     content,

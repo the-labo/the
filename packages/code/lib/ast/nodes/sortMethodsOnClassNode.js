@@ -1,16 +1,15 @@
 'use strict'
 
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function sortMethodsOnClassNode
- */
 const {
   byType,
   compareBy,
   compareStrings,
 } = require('../../helpers/arrayHelper')
 
-/** @lends module:@the-/code.ast.nodes.sortMethodsOnClassNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function sortMethodsOnClassNode
+ */
 function sortMethodsOnClassNode(ClassNode, { swap }) {
   const ClassMethods = [
     ...ClassNode.body.filter(byType('ClassMethod')),

@@ -1,8 +1,5 @@
 'use strict'
-// /**
-//  * @memberof module:@the-/code.ast.nodes
-//  * @function completeJSDocAnnotationsOnCommentNode
-//  */
+
 // 'use strict'
 //
 // const commentParser = require('comment-parser')
@@ -12,7 +9,10 @@
 //   finder,
 // } = require('@the-/ast')
 //
-// /** @lends module:@the-/code.ast.nodes.completeJSDocAnnotationsOnCommentNode */
+// /**
+//  * @memberof module:@the-/code.ast.nodes
+//  * @function completeJSDocAnnotationsOnCommentNode
+//  */
 // function completeJSDocAnnotationsOnProgramNode(program, { get, replace }) {
 //   const FunctionDeclarations = finder.findByTypes(program, [
 //     NodeTypes.FunctionDeclaration,

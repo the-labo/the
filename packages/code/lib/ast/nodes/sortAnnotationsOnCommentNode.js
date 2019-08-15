@@ -1,12 +1,11 @@
 'use strict'
 
+const findJSDocAnnotationsInCommendNode = require('./findJSDocAnnotationsInCommendNode')
+
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function sortAnnotationsOnCommentNode
  */
-const findJSDocAnnotationsInCommendNode = require('./findJSDocAnnotationsInCommendNode')
-
-/** @lends module:@the-/code.ast.nodes.sortAnnotationsOnCommentNode */
 function sortAnnotationsOnCommentNode(CommentNode, { swap }) {
   const annotations = findJSDocAnnotationsInCommendNode(CommentNode)
   const _weightAnnotation = (annotation) => {

@@ -1,11 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/code.processors
- * @function processJSDoc
- * @param {string} content
- * @param {Object} [options={}]
- */
 const { parse } = require('@the-/ast')
 const {
   commentModuleOnProgramNode,
@@ -17,7 +11,12 @@ const {
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends module:@the-/code.processors.processJSDoc */
+/**
+ * @memberof module:@the-/code.processors
+ * @function processJSDoc
+ * @param {string} content
+ * @param {Object} [options={}]
+ */
 async function processJSDoc(content, options = {}) {
   const { filename } = options
   return applyConverter(

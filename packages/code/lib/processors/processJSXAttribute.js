@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Process JSX attributes
- * @memberof module:@the-/code.processors
- * @function processJSXAttribute
- * @param {string} content
- * @returns {string} processed
- */
 const {
   constants: { NodeTypes },
   finder,
@@ -16,7 +9,13 @@ const applyConverter = require('../helpers/applyConverter')
 const { compareBy, compareStrings } = require('../helpers/arrayHelper')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends module:@the-/code.processors.processJSXAttribute */
+/**
+ * Process JSX attributes
+ * @memberof module:@the-/code.processors
+ * @function processJSXAttribute
+ * @param {string} content
+ * @returns {string} processed
+ */
 function processJSXAttribute(content, options = {}) {
   const nameOfAttribute = (attribute) => attribute.name.name
   const rangeFor = (attribute) => [attribute.start, attribute.end]

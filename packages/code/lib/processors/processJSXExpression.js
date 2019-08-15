@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Process JSX attributes
- * @memberof module:@the-/code.processors
- * @function processJSXExpression
- * @param {string} content
- * @returns {string} processed
- */
 const {
   constants: { NodeTypes },
   finder,
@@ -15,7 +8,13 @@ const {
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends module:@the-/code.processors.processJSXExpression */
+/**
+ * Process JSX attributes
+ * @memberof module:@the-/code.processors
+ * @function processJSXExpression
+ * @param {string} content
+ * @returns {string} processed
+ */
 function processJSXExpression(content, options = {}) {
   return applyConverter(content, (content) => {
     const parsed = parse(content, options)

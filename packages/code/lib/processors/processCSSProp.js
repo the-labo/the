@@ -1,17 +1,16 @@
 'use strict'
 
+const applyConverter = require('../helpers/applyConverter')
+const contentAccess = require('../helpers/contentAccess')
+const { bindCssRange } = require('../helpers/cssHelper')
+const parseCSS = require('../parsers/parseCSS')
+
 /**
  * @memberof module:@the-/code.processors
  * @function processCSSProp
  * @param {string} content
  * @returns {Promise<string>} processed
  */
-const applyConverter = require('../helpers/applyConverter')
-const contentAccess = require('../helpers/contentAccess')
-const { bindCssRange } = require('../helpers/cssHelper')
-const parseCSS = require('../parsers/parseCSS')
-
-/** @lends module:@the-/code.processors.processCSSProp */
 async function processCSSProp(content) {
   return applyConverter(
     content,

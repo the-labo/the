@@ -1,7 +1,3 @@
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function cleanupRedundantArrayPatternOnArrayExpression
- */
 'use strict'
 
 const {
@@ -9,7 +5,10 @@ const {
   finder,
 } = require('@the-/ast')
 
-/** @lends module:@the-/code.ast.nodes.cleanupRedundantArrayPatternOnArrayExpression */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function cleanupRedundantArrayPatternOnArrayExpression
+ */
 function cleanupRedundantArrayPatternOnArrayExpression(
   ArrayExpression,
   { get, replace },

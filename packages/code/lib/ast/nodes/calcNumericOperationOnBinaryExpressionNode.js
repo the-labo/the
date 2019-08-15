@@ -1,14 +1,13 @@
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function calcNumericOperationOnBinaryExpressionNode
- */
 'use strict'
 
 const {
   constants: { NodeTypes },
 } = require('@the-/ast')
 
-/** @lends module:@the-/code.ast.nodes.calcNumericOperationOnBinaryExpressionNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function calcNumericOperationOnBinaryExpressionNode
+ */
 function calcNumericOperationOnBinaryExpressionNode(
   BinaryExpression,
   { replace },

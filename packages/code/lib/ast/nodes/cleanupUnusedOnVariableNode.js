@@ -1,15 +1,14 @@
 'use strict'
 
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function cleanupUnusedOnVariableNode
- */
 const {
   isEmptyObjectPattern,
   isRequireExpression,
 } = require('../../helpers/astHelper')
 
-/** @lends module:@the-/code.ast.nodes.cleanupUnusedOnVariableNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function cleanupUnusedOnVariableNode
+ */
 function cleanupUnusedOnVariableNode(
   VariableDeclaration,
   { ConsumingIdentifiers, replace },

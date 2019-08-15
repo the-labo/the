@@ -1,14 +1,13 @@
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function combinePropertiesOnObjectPattern
- */
 'use strict'
 
 const {
   constants: { NodeTypes },
 } = require('@the-/ast')
 
-/** @lends module:@the-/code.ast.nodes.combinePropertiesOnObjectPattern */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function combinePropertiesOnObjectPattern
+ */
 function combinePropertiesOnObjectPattern(objectPatternNode, { get, replace }) {
   if (objectPatternNode.type !== NodeTypes.ObjectPattern) {
     return

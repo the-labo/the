@@ -1,15 +1,14 @@
 'use strict'
 
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function cleanupReturnAwaitOnFunctionNode
- */
 const {
   constants: { NodeTypes },
   finder,
 } = require('@the-/ast')
 
-/** @lends module:@the-/code.ast.nodes.cleanupReturnAwaitOnFunctionNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function cleanupReturnAwaitOnFunctionNode
+ */
 function cleanupReturnAwaitOnFunctionNode(FunctionNode, { get, replace }) {
   if (!FunctionNode.async) {
     return

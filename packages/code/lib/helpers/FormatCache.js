@@ -1,12 +1,11 @@
 'use strict'
 
+const { readAsJson, unlinkAsync, writeAsJson } = require('@the-/util-file')
+
 /**
  * @memberof module:@the-/code
  * @class FormatCache
  */
-const { readAsJson, unlinkAsync, writeAsJson } = require('@the-/util-file')
-
-/** @lends module:@the-/code.FormatCache */
 class FormatCache {
   constructor(filename, options = {}) {
     const { version = 'unknown' } = options

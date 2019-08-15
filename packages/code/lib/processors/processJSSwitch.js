@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Process js switch statement
- * @memberof module:@the-/code.processors
- * @function processJSSwitch
- * @param {string} content
- * @returns {string} processed
- */
 const {
   constants: { NodeTypes },
   finder,
@@ -17,7 +10,13 @@ const applyConverter = require('../helpers/applyConverter')
 const applyToNodes = require('../helpers/applyToNodes')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends module:@the-/code.processors.processJSSwitch */
+/**
+ * Process js switch statement
+ * @memberof module:@the-/code.processors
+ * @function processJSSwitch
+ * @param {string} content
+ * @returns {string} processed
+ */
 function processJSSwitch(content, options = {}) {
   return applyConverter(
     content,

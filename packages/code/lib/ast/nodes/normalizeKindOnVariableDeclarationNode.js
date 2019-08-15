@@ -1,7 +1,3 @@
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function normalizeKindOnVariableDeclarationNode
- */
 'use strict'
 
 const {
@@ -35,7 +31,10 @@ const propertyNamesFor = (objectPatternNode) => {
   return propertyNames
 }
 
-/** @lends module:@the-/code.ast.nodes.normalizeKindOnVariableDeclarationNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function normalizeKindOnVariableDeclarationNode
+ */
 function normalizeKindOnVariableDeclarationNode(
   VariableDeclaration,
   { assignedNames, replace, updatedNames },

@@ -1,10 +1,9 @@
+'use strict'
+
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode
  */
-'use strict'
-
-/** @lends module:@the-/code.ast.nodes.cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode */
 function cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode(
   ObjectExpression,
   { removeLine },

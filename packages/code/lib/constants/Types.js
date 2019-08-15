@@ -1,12 +1,11 @@
 'use strict'
 
-/**
- * Types
- * @memberof module:@the-/code.constants
- * @namespace Types
- */
 module.exports =
-  /** @lends module:@the-/code.constants.Types */
+  /**
+   * Types
+   * @memberof module:@the-/code.constants
+   * @namespace Types
+   */
   {
     JAVA_SCRIPT: 'javascript',
     JSON: 'json',

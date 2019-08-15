@@ -1,14 +1,13 @@
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function cleanupExtOnImportDeclarationNode
- */
 'use strict'
 
 const path = require('path')
 
 const isRelative = (filename) => /^\./.test(filename)
 
-/** @lends module:@the-/code.ast.nodes.cleanupExtOnImportDeclarationNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function cleanupExtOnImportDeclarationNode
+ */
 function cleanupExtOnImportDeclarationNode(
   ImportDeclaration,
   { extToRemove, get, replace },

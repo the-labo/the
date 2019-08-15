@@ -1,15 +1,14 @@
 'use strict'
 
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function normalizeFunctionReturnOnFunctionNode
- */
 const {
   constants: { NodeTypes },
   finder,
 } = require('@the-/ast')
 
-/** @lends module:@the-/code.ast.nodes.normalizeFunctionReturnOnFunctionNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function normalizeFunctionReturnOnFunctionNode
+ */
 function normalizeFunctionReturnOnFunctionNode(
   FunctionNode,
   { comments, get, replace },

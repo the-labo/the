@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Process function expressions
- * @memberof module:@the-/code.processors
- * @function processJSFunction
- * @param {string} content
- * @returns {string} processed
- */
 const {
   constants: { NodeTypes },
   finder,
@@ -20,7 +13,13 @@ const applyConverter = require('../helpers/applyConverter')
 const applyToNodes = require('../helpers/applyToNodes')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends module:@the-/code.processors.processJSFunction */
+/**
+ * Process function expressions
+ * @memberof module:@the-/code.processors
+ * @function processJSFunction
+ * @param {string} content
+ * @returns {string} processed
+ */
 function processJSFunction(content, options = {}) {
   return applyConverter(
     content,

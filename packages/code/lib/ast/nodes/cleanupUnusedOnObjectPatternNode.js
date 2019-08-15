@@ -1,15 +1,14 @@
 'use strict'
 
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function cleanupUnusedOnObjectPatternNode
- */
 const {
   isAssignmentPattern,
   isObjectPattern,
 } = require('../../helpers/astHelper')
 
-/** @lends module:@the-/code.ast.nodes.cleanupUnusedOnObjectPatternNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function cleanupUnusedOnObjectPatternNode
+ */
 function cleanupUnusedOnObjectPatternNode(
   ObjectPattern,
   { ConsumingIdentifiers, replace },

@@ -1,14 +1,13 @@
 'use strict'
 
+const { EOL } = require('os')
+const debug = require('debug')('the:code:contentAccess')
+
 /**
  * Define content access methods
  * @memberof module:@the-/code
  * @function contentAccess
  */
-const { EOL } = require('os')
-const debug = require('debug')('the:code:contentAccess')
-
-/** @lends module:@the-/code.contentAccess */
 function contentAccess(content) {
   const contentLines = content.split(EOL)
   return {

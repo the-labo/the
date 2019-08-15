@@ -1,17 +1,16 @@
 'use strict'
 
+const { parse } = require('@the-/ast')
+const { spaceOnCommentNode } = require('../ast/nodes')
+const applyConverter = require('../helpers/applyConverter')
+const contentAccess = require('../helpers/contentAccess')
+
 /**
  * @memberof module:@the-/code.processors
  * @function processComment
  * @param {string} content
  * @returns {string} processed
  */
-const { parse } = require('@the-/ast')
-const { spaceOnCommentNode } = require('../ast/nodes')
-const applyConverter = require('../helpers/applyConverter')
-const contentAccess = require('../helpers/contentAccess')
-
-/** @lends module:@the-/code.processors.processComment */
 function processComment(content, options = {}) {
   const { SEPARATOR = ' '.padEnd(36, '-') } = options
   return applyConverter(

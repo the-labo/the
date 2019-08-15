@@ -4,7 +4,6 @@
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupEmptyArrayPatternParamsOnFunctionNode
  */
-/** @lends module:@the-/code.ast.nodes.cleanupEmptyArrayPatternParamsOnFunctionNode */
 function cleanupEmptyArrayPatternParamsOnFunctionNode(
   FunctionNode,
   { replace },

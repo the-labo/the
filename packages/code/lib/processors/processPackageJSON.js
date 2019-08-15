@@ -1,14 +1,13 @@
 'use strict'
 
-/**
- * @memberof module:@the-/code.processors
- * @function processPackageJSON
- */
 const { sortProperties } = require('fmtjson')
 const { EOL } = require('os')
 const applyConverter = require('../helpers/applyConverter')
 
-/** @lends module:@the-/code.processors.processPackageJSON */
+/**
+ * @memberof module:@the-/code.processors
+ * @function processPackageJSON
+ */
 function processPackageJSON(content, options = {}) {
   return applyConverter(
     content,

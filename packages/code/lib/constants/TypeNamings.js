@@ -1,14 +1,13 @@
 'use strict'
 
-/**
- * Naming for each types
- * @memberof module:@the-/code.constants
- * @namespace TypeNamings
- */
 const Types = require('./Types')
 
 module.exports =
-  /** @lends module:@the-/code.constants.TypeNamings */
+  /**
+   * Naming for each types
+   * @memberof module:@the-/code.constants
+   * @namespace TypeNamings
+   */
   {
     Basenames: {
       [Types.JSON_PACKAGE_JSON]: 'package.json',

@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Removed unused vars
- * @memberof module:@the-/code.processors
- * @function processJSRedundant
- * @param {string} content
- * @returns {string} processed
- */
 const {
   constants: { NodeTypes },
   finder,
@@ -15,7 +8,13 @@ const {
 const applyConverter = require('../helpers/applyConverter')
 const contentAccess = require('../helpers/contentAccess')
 
-/** @lends module:@the-/code.processors.processJSRedundant */
+/**
+ * Removed unused vars
+ * @memberof module:@the-/code.processors
+ * @function processJSRedundant
+ * @param {string} content
+ * @returns {string} processed
+ */
 function processJSRedundant(content, options = {}) {
   function cleanupDuplicateLogicalExpression(
     LogicalExpression,

@@ -1,16 +1,15 @@
 'use strict'
 
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function sortExportNamedDeclarationsOnProgramNode
- */
 const {
   constants: { NodeTypes },
   finder,
 } = require('@the-/ast')
 const { compareStrings } = require('../../helpers/arrayHelper')
 
-/** @lends module:@the-/code.ast.nodes.sortExportNamedDeclarationsOnProgramNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function sortExportNamedDeclarationsOnProgramNode
+ */
 function sortExportNamedDeclarationsOnProgramNode(ProgramNode, { swap }) {
   const ExportNamedDeclarations = finder.findByTypes(ProgramNode, [
     NodeTypes.ExportNamedDeclaration,

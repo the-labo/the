@@ -1,7 +1,3 @@
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function addExtOnRequireDeclarationArgumentNode
- */
 'use strict'
 
 const fs = require('fs')
@@ -26,7 +22,10 @@ const resolveRequirePath = (dirname, requirePath, extToAdd) => {
   return null
 }
 
-/** @lends module:@the-/code.ast.nodes.addExtOnRequireDeclarationArgumentNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function addExtOnRequireDeclarationArgumentNode
+ */
 function addExtOnRequireDeclarationArgumentNode(
   ArgumentNode,
   { dirname, extToAdd, replace },

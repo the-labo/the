@@ -1,15 +1,14 @@
-/**
- * Cleanup unused function node
- * @memberof module:@the-/code.ast.nodes
- * @function cleanupUnusedOnFunctionArgumentNode
- */
 'use strict'
 
 const {
   constants: { NodeTypes },
 } = require('@the-/ast')
 
-/** @lends module:@the-/code.ast.nodes.cleanupUnusedArgumentsOnFunctionNode */
+/**
+ * Cleanup unused function node
+ * @memberof module:@the-/code.ast.nodes
+ * @function cleanupUnusedOnFunctionArgumentNode
+ */
 function cleanupUnusedArgumentsOnFunctionNode(
   FunctionNode,
   { ConsumingIdentifiers, enclosedRange, replace },
