@@ -1,5 +1,9 @@
 'use strict'
 
+const assert = require('assert')
+const path = require('path')
+const _tmpl = require('./_tmpl')
+
 /**
  * Stateless
  * @memberof module:@the-/templates
@@ -7,11 +11,6 @@
  * @param {Object} config
  * @returns {Object}
  */
-const assert = require('assert')
-const path = require('path')
-const _tmpl = require('./_tmpl')
-
-/** @lends module:@the-/templates.Stateless */
 function Stateless(config) {
   const { memberOf = config.memberof || 'ui.stateless', name } = config
   assert(name, 'name is required')

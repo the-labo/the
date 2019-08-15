@@ -1,16 +1,13 @@
+'use strict'
+
+const debug = require('debug')('app:hook:{{camelcase name}}')
+
 /**
  * Define {{pascalcase name}} handlers
  * @memberof {{memberof}}
  * @function {{pascalcase name}}
  * @returns {Object} Defined handlers
  */
-'use strict'
-
-import Debug from 'debug'
-
-const debug = Debug('app:hook:{{camelcase name}}')
-
-/** @lends {{memberof}}.{{pascalcase name}}  */
 function {{pascalcase name}} (db) {
   return {
     async onCreate ({id, created}) {},

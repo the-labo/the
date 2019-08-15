@@ -1,19 +1,19 @@
+'use strict'
+
 /**
  * {{name}}
  * @memberof {{memberof}}
- * @class {{name}}
+ * @function {{name}}
+ * @returns {Object} Controller instance
  */
-'use strict'
+const {{name}} = ({ }) => {
+  const {{camelcase name}} = {
 
-const Ctrl = require('./Ctrl')
-const {compose, } = require('@the-/mixin-controller')
+  }
 
-const {{name}}Base = compose(
+  Object.freeze({{camelcase name}})
 
-)(Ctrl)
-
-/** @lends {{memberof}}.{{name}} */
-class {{name}} extends {{name}}Base {
+  return {{camelcase name}}
 }
 
 module.exports = {{name}}

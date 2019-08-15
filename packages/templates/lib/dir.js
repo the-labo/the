@@ -1,11 +1,5 @@
 'use strict'
-/**
- * Define bud for dir
- * @memberof module:@the-/templates
- * @function dir
- * @param {Object} config
- * @returns {Object}
- */
+
 const aglob = require('aglob')
 const fs = require('fs')
 const path = require('path')
@@ -35,7 +29,13 @@ const isModule = (filename) => {
   }
 }
 
-/** @lends module:@the-/templates.dir */
+/**
+ * Define bud for dir
+ * @memberof module:@the-/templates
+ * @function dir
+ * @param {Object} config
+ * @returns {Object}
+ */
 function dir(config) {
   const { annotations, cjs = config.node, dirname, ext, ...rest } = config
   assert(!!dirname, 'dirname is required')

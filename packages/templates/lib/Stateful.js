@@ -1,5 +1,9 @@
 'use strict'
 
+const assert = require('assert')
+const path = require('path')
+const _tmpl = require('./_tmpl')
+
 /**
  * Stateful
  * @memberof module:@the-/templates
@@ -7,11 +11,6 @@
  * @param {Object} config
  * @returns {Object}
  */
-const assert = require('assert')
-const path = require('path')
-const _tmpl = require('./_tmpl')
-
-/** @lends module:@the-/templates.Stateful */
 function Stateful(config) {
   const { memberOf = config.memberof || 'ui.stateful', name } = config
   assert(name, 'name is required')

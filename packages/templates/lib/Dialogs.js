@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Define bud for Dialog components
- * @memberof module:@the-/templates
- * @function Dialogs
- * @param {Object} config
- * @returns {Object}
- */
 const aglob = require('aglob')
 const {
   strict: { ok },
@@ -14,7 +7,13 @@ const {
 const path = require('path')
 const _tmpl = require('./_tmpl')
 
-/** @lends module:@the-/templates.Dialogs */
+/**
+ * Define bud for Dialog components
+ * @memberof module:@the-/templates
+ * @function Dialogs
+ * @param {Object} config
+ * @returns {Object}
+ */
 function Dialogs(config) {
   const {
     dirname,

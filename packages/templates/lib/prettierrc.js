@@ -1,5 +1,8 @@
 'use strict'
 
+const { PrettierConfig } = require('@the-/const-code')
+const _tmpl = require('./_tmpl')
+
 /**
  * Define bud for prettierrc
  * @memberof module:@the-/templates
@@ -7,10 +10,6 @@
  * @param {Object} config
  * @returns {Object}
  */
-const { PrettierConfig } = require('@the-/const-code')
-const _tmpl = require('./_tmpl')
-
-/** @lends module:@the-/templates.prettierrc */
 function prettierrc(config = {}) {
   return {
     data: {

@@ -1,5 +1,8 @@
 'use strict'
 
+const assert = require('assert')
+const _tmpl = require('./_tmpl')
+
 /**
  * Error page
  * @memberof module:@the-/templates
@@ -7,10 +10,6 @@
  * @param {Object} config
  * @returns {Object}
  */
-const assert = require('assert')
-const _tmpl = require('./_tmpl')
-
-/** @lends module:@the-/templates.vhost */
 function vhost(config) {
   const { certDir = '/etc/letsencrypt/live', domain, port } = config
   assert(domain, 'domain is required')

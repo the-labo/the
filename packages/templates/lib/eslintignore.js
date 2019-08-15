@@ -1,3 +1,8 @@
+'use strict'
+
+const { spawnSync } = require('child_process')
+const _tmpl = require('./_tmpl')
+
 /**
  * eslintignore
  * @memberof module:@the-/templates
@@ -5,12 +10,6 @@
  * @param {Object} config
  * @returns {Object}
  */
-'use strict'
-
-const { spawnSync } = require('child_process')
-const _tmpl = require('./_tmpl')
-
-/** @lends module:@the-/templates.eslintignore */
 function eslintignore(paths = []) {
   const { stdout } = spawnSync('git', [
     'grep',

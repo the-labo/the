@@ -1,5 +1,8 @@
 'use strict'
 
+const assert = require('assert')
+const _tmpl = require('./_tmpl')
+
 /**
  * Error page
  * @memberof module:@the-/templates
@@ -7,10 +10,6 @@
  * @param {Object} config
  * @returns {Object}
  */
-const assert = require('assert')
-const _tmpl = require('./_tmpl')
-
-/** @lends module:@the-/templates.errorPage */
 function errorPage(config) {
   const { color = '#38A', icon, pkg, style, texts, title } = config
   assert(pkg, 'pkg is required')

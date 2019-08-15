@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/templates
  * @typicalname templates
- * @version 16.0.14
+ * @version 16.1.1
  */
 'use strict'
 
@@ -15,7 +15,6 @@ const Hook_ = require('./Hook')
 const License_ = require('./License')
 const Readme_ = require('./Readme')
 const Resources_ = require('./Resources')
-const Scene_ = require('./Scene')
 const Stateful_ = require('./Stateful')
 const Stateless_ = require('./Stateless')
 const Stream_ = require('./Stream')
@@ -40,7 +39,6 @@ exports.Hook = Hook_
 exports.License = License_
 exports.Readme = Readme_
 exports.Resources = Resources_
-exports.Scene = Scene_
 exports.Stateful = Stateful_
 exports.Stateless = Stateless_
 exports.Stream = Stream_
@@ -65,7 +63,6 @@ module.exports = {
   License: License_,
   Readme: Readme_,
   Resources: Resources_,
-  Scene: Scene_,
   Stateful: Stateful_,
   Stateless: Stateless_,
   Stream: Stream_,

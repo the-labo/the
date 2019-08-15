@@ -1,5 +1,9 @@
 'use strict'
 
+const assert = require('assert')
+const path = require('path')
+const _tmpl = require('./_tmpl')
+
 /**
  * Define bud for server controller
  * @memberof module:@the-/templates
@@ -9,11 +13,6 @@
  * @param {string} [config.name]
  * @returns {Object}
  */
-const assert = require('assert')
-const path = require('path')
-const _tmpl = require('./_tmpl')
-
-/** @lends module:@the-/templates.Ctrl */
 function Ctrl(config) {
   const { cjs = false, memberof = 'controllers' } = config
   let { name } = config

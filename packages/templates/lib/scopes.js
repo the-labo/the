@@ -1,7 +1,3 @@
-/**
- * @memberof module:@the-/templates
- * @function scopes
- */
 'use strict'
 
 const aglob = require('aglob')
@@ -22,7 +18,10 @@ const withoutExt = (filename) =>
   )
 const compareByLength = (a, b) => a.length - b.length
 
-/** @lends module:@the-/templates.scopes */
+/**
+ * @memberof module:@the-/templates
+ * @function scopes
+ */
 function scopes(config) {
   const { dirname, memberof = 'store', pattern = '**/*.json', ...rest } = config
   handleRestConfig(rest)
@@ -31,6 +30,7 @@ function scopes(config) {
     {},
     ...filenames.map((filename) => ({
       [withoutExt(filename).replace(/\//g, '.')]: {
+        json: path.extname(filename) === '.json',
         namespace: false,
         path: `./${filename}`,
         varName: `${camelcase(withoutExt(filename).replace(/\//g, '_'))}_`,
@@ -57,6 +57,7 @@ function scopes(config) {
         .sort((a, b) => a.localeCompare(b))
         .map((k) => ({
           name: k,
+          sub: /\./.test(k),
           ...modules[k],
         })),
     },

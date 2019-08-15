@@ -1,17 +1,16 @@
 'use strict'
 
+const {
+  strict: { ok },
+} = require('assert')
+const _tmpl = require('./_tmpl')
+
 /**
  * Define bud for mapping
  * @memberof module:@the-/templates
  * @function mapping
  * @returns {Object}
  */
-const {
-  strict: { ok },
-} = require('assert')
-const _tmpl = require('./_tmpl')
-
-/** @lends module:@the-/templates.mapping */
 function mapping(config) {
   const {
     cjs = false,

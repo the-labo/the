@@ -1,3 +1,8 @@
+'use strict'
+
+const yaml = require('js-yaml')
+const _tmpl = require('./_tmpl')
+
 /**
  * Define bud for eslintrc
  * @memberof module:@the-/templates
@@ -5,12 +10,6 @@
  * @param {Object} config
  * @returns {Object}
  */
-'use strict'
-
-const yaml = require('js-yaml')
-const _tmpl = require('./_tmpl')
-
-/** @lends module:@the-/templates.eslintrc */
 function eslintrc(config = {}) {
   const {
     additional = {},

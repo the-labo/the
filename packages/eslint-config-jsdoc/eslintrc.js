@@ -4,6 +4,7 @@ const globals = require('globals')
 
 const definedTypes = [
   ...Object.keys(globals.builtin),
+  ...Object.keys(globals.browser),
   ...Object.keys(globals.serviceworker),
 ]
 

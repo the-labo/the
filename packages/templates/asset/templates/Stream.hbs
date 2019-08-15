@@ -1,19 +1,21 @@
+'use strict'
+
+const Stream = require('./Stream')
+
 /**
  * {{name}}
  * @memberof {{memberof}}
- * @class {{name}}
+ * @function {{name}}
  */
-'use strict'
+const {{name}} = ({ params }) => {
+  return {
+    async consume(received) {
 
-import Stream from './Stream'
-import {compose, } from '@the-/mixin-stream'
+    },
+    async *provide() {
 
-const {{name}}Base = compose(
-
-)(Stream)
-
-/** @lends {{memberof}}.{{name}} */
-class {{name}} extends {{name}}Base {
+    },
+  }
 }
 
-export default {{name}}
+module.exports = {{name}}

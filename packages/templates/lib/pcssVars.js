@@ -1,5 +1,10 @@
 'use strict'
 
+const { spinalcase } = require('stringcase')
+const _tmpl = require('./_tmpl')
+
+const defaultKeyParser = (name) => spinalcase(String(name).toLowerCase())
+
 /**
  * Variables for pcss
  * @memberof module:@the-/templates
@@ -8,12 +13,6 @@
  * @param {Object} config.values
  * @returns {Object}
  */
-const { spinalcase } = require('stringcase')
-const _tmpl = require('./_tmpl')
-
-const defaultKeyParser = (name) => spinalcase(String(name).toLowerCase())
-
-/** @lends module:@the-/templates.pcssVars */
 function pcssVars(config) {
   const { keyParser = defaultKeyParser, src, values } = config
   return {

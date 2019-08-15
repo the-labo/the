@@ -13,19 +13,7 @@
     "name": "@the-/templates",
     "order": 8,
     "typicalname": "templates",
-    "version": "16.0.14"
-  },
-  {
-    "id": "module:scopes",
-    "kind": "module",
-    "longname": "module:scopes",
-    "meta": {
-      "filename": "scopes.js",
-      "lineno": 1,
-      "path": "lib"
-    },
-    "name": "scopes",
-    "order": 17
+    "version": "16.1.1"
   },
   {
     "description": "Define bud for bin scripts",
@@ -80,7 +68,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "Ctrl.js",
-      "lineno": 3,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "Ctrl",
@@ -133,7 +121,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "Dialogs.js",
-      "lineno": 3,
+      "lineno": 10,
       "path": "lib"
     },
     "name": "Dialogs",
@@ -167,7 +155,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "dir.js",
-      "lineno": 2,
+      "lineno": 32,
       "path": "lib"
     },
     "name": "dir",
@@ -201,7 +189,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "errorPage.js",
-      "lineno": 3,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "errorPage",
@@ -235,7 +223,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "eslintignore.js",
-      "lineno": 1,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "eslintignore",
@@ -269,7 +257,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "eslintrc.js",
-      "lineno": 1,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "eslintrc",
@@ -303,7 +291,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "Hook.js",
-      "lineno": 3,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "Hook",
@@ -337,7 +325,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "License.js",
-      "lineno": 3,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "License",
@@ -400,7 +388,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "mapping.js",
-      "lineno": 3,
+      "lineno": 8,
       "path": "lib"
     },
     "name": "mapping",
@@ -424,7 +412,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "nginx.js",
-      "lineno": 3,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "nginx",
@@ -458,7 +446,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "pcssVars.js",
-      "lineno": 3,
+      "lineno": 8,
       "path": "lib"
     },
     "name": "pcssVars",
@@ -500,7 +488,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "prettierrc.js",
-      "lineno": 3,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "prettierrc",
@@ -534,7 +522,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "Readme.js",
-      "lineno": 3,
+      "lineno": 34,
       "path": "lib"
     },
     "name": "Readme",
@@ -632,7 +620,7 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "Resources.js",
-      "lineno": 3,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "Resources",
@@ -640,37 +628,17 @@
     "scope": "static"
   },
   {
-    "description": "Scene",
-    "id": "module:@the-/templates.Scene",
+    "id": "module:@the-/templates.scopes",
     "kind": "function",
-    "longname": "module:@the-/templates.Scene",
+    "longname": "module:@the-/templates.scopes",
     "memberof": "module:@the-/templates",
     "meta": {
-      "filename": "Scene.js",
-      "lineno": 3,
+      "filename": "scopes.js",
+      "lineno": 21,
       "path": "lib"
     },
-    "name": "Scene",
+    "name": "scopes",
     "order": 16,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "name": "config"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        }
-      }
-    ],
     "scope": "static"
   },
   {
@@ -681,11 +649,11 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "Stateful.js",
-      "lineno": 3,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "Stateful",
-    "order": 19,
+    "order": 17,
     "params": [
       {
         "type": {
@@ -715,11 +683,11 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "Stateless.js",
-      "lineno": 3,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "Stateless",
-    "order": 20,
+    "order": 18,
     "params": [
       {
         "type": {
@@ -749,11 +717,11 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "Stream.js",
-      "lineno": 3,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "Stream",
-    "order": 21,
+    "order": 19,
     "params": [
       {
         "type": {
@@ -783,11 +751,11 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "test.js",
-      "lineno": 3,
+      "lineno": 10,
       "path": "lib"
     },
     "name": "test",
-    "order": 22,
+    "order": 20,
     "returns": [
       {
         "type": {
@@ -807,11 +775,11 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "vhost.js",
-      "lineno": 3,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "vhost",
-    "order": 23,
+    "order": 21,
     "params": [
       {
         "type": {
@@ -841,11 +809,11 @@
     "memberof": "module:@the-/templates",
     "meta": {
       "filename": "View.js",
-      "lineno": 3,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "View",
-    "order": 24,
+    "order": 22,
     "params": [
       {
         "type": {
@@ -866,20 +834,5 @@
       }
     ],
     "scope": "static"
-  },
-  {
-    "description": "Hogw",
-    "id": "module:scopes~scopes",
-    "kind": "function",
-    "longname": "module:scopes~scopes",
-    "memberof": "module:scopes",
-    "meta": {
-      "filename": "scopes.js",
-      "lineno": 4,
-      "path": "lib"
-    },
-    "name": "scopes",
-    "order": 18,
-    "scope": "inner"
   }
 ]

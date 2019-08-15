@@ -1,19 +1,5 @@
 'use strict'
 
-/**
- * Define bud for README.md
- * @memberof module:@the-/templates
- * @function Readme
- * @param {object} config - Configuration.
- * @param {string} config.sections - Section file path.
- * @param {object} config.pkg - Package data.
- * @param {string} config.repo - GitHub Repository name. (eg. 'ape-repo/ap-tmpl')
- * @param {object} config.badges - Badge data.
- * @param {object} config.links - Link urls.
- * @param {string} config.overview - Overview file path.
- * @param {object} config.vars - Custom variables.
- * @returns {object} - Bud object.
- */
 const aglob = require('aglob')
 const assert = require('assert')
 const path = require('path')
@@ -45,7 +31,20 @@ const _apiLink = (item) => {
   }
 }
 
-/** @lends module:@the-/templates.readmeBud */
+/**
+ * Define bud for README.md
+ * @memberof module:@the-/templates
+ * @function Readme
+ * @param {object} config - Configuration.
+ * @param {string} config.sections - Section file path.
+ * @param {object} config.pkg - Package data.
+ * @param {string} config.repo - GitHub Repository name. (eg. 'ape-repo/ap-tmpl')
+ * @param {object} config.badges - Badge data.
+ * @param {object} config.links - Link urls.
+ * @param {string} config.overview - Overview file path.
+ * @param {object} config.vars - Custom variables.
+ * @returns {object} - Bud object.
+ */
 function readmeBud(config = {}) {
   const { api, path: path_ = 'README.md', pkg, repo, sections } = config
   assert.ok(pkg, 'config.pkg is required.')

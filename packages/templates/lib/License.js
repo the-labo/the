@@ -1,5 +1,8 @@
 'use strict'
 
+const assert = require('assert')
+const _tmpl = require('./_tmpl')
+
 /**
  * Define bud for LICENSE
  * @memberof module:@the-/templates
@@ -10,10 +13,6 @@
  * @param {string} config.holder - License holder name.
  * @returns {object} - Bud object.
  */
-const assert = require('assert')
-const _tmpl = require('./_tmpl')
-
-/** @lends module:@the-/templates.License */
 function License(config) {
   assert.ok(config.type, 'config.type is required.')
   assert.ok(config.holder, 'config.holder is required.')

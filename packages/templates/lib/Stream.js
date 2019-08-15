@@ -1,5 +1,9 @@
 'use strict'
 
+const assert = require('assert')
+const path = require('path')
+const _tmpl = require('./_tmpl')
+
 /**
  * Stream
  * @memberof module:@the-/templates
@@ -7,18 +11,13 @@
  * @param {Object} config
  * @returns {Object}
  */
-const assert = require('assert')
-const path = require('path')
-const _tmpl = require('./_tmpl')
-
-/** @lends module:@the-/templates.Stream */
 function Stream(config) {
-  const { cjs = false, memberof = 'streams' } = config
+  const { memberof = 'streams' } = config
   let { name } = config
   assert(name, 'name is required')
   name = name.replace(/Stream$/, '')
 
-  const tmpl = _tmpl(cjs ? 'cjs_Stream.hbs' : 'Stream.hbs')
+  const tmpl = _tmpl('Stream.hbs')
   return {
     data: {
       memberof,

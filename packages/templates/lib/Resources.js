@@ -1,12 +1,11 @@
 'use strict'
 
+const _tmpl = require('./_tmpl')
+
 /**
  * @memberof module:@the-/templates
  * @function Resources
  */
-const _tmpl = require('./_tmpl')
-
-/** @lends module:@the-/templates.Resources */
 function Resources(config) {
   const {
     ResourceMapping,

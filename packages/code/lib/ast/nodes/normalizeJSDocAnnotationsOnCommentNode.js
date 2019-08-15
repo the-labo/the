@@ -35,9 +35,9 @@ const typesMap = {
   String: 'string',
   Void: 'undefined',
   any: '*',
+  array: 'Array',
   function: 'function()',
   object: 'Object',
-  array: 'Array',
   void: 'undefined',
 }
 

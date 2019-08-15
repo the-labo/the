@@ -1,11 +1,5 @@
 'use strict'
 
-/**
- * Define bud for readme
- * @memberof module:@the-/templates
- * @function test
- * @returns {Object}
- */
 const aglob = require('aglob')
 const {
   strict: { ok },
@@ -13,7 +7,12 @@ const {
 const path = require('path')
 const _tmpl = require('./_tmpl')
 
-/** @lends module:@the-/templates.test */
+/**
+ * Define bud for readme
+ * @memberof module:@the-/templates
+ * @function test
+ * @returns {Object}
+ */
 function test(config) {
   const {
     cjs = config.node,

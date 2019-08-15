@@ -1,5 +1,9 @@
 'use strict'
 
+const assert = require('assert')
+const path = require('path')
+const _tmpl = require('./_tmpl')
+
 /**
  * Hook
  * @memberof module:@the-/templates
@@ -7,18 +11,12 @@
  * @param {Object} config
  * @returns {Object}
  */
-const assert = require('assert')
-const path = require('path')
-const _tmpl = require('./_tmpl')
-
-/** @lends module:@the-/templates.Hook */
 function Hook(config) {
-  const { cjs = false } = config
   let { name } = config
   assert(name, 'name is required')
   name = name.replace(/Hook$/, '')
 
-  const tmpl = _tmpl(cjs ? 'cjs_Hook.hbs' : 'Hook.hbs')
+  const tmpl = _tmpl('Hook.hbs')
   return {
     data: {
       name: `${path.basename(name)}Hook`,

@@ -1,5 +1,9 @@
 'use strict'
 
+const _tmpl = require('./_tmpl')
+
+const TMPL_PATH = _tmpl('nginx.hbs')
+
 /**
  * Define bud for nginx conf file
  * @memberof module:@the-/templates
@@ -7,11 +11,6 @@
  * @param {Object} config
  * @returns {Object}
  */
-const _tmpl = require('./_tmpl')
-
-const TMPL_PATH = _tmpl('nginx.hbs')
-
-/** @lends module:@the-/templates.nginx */
 function nginx(config) {
   const {
     cert = '/etc/nginx/certs/server.cert',
