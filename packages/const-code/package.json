@@ -1,7 +1,7 @@
 {
   "name": "@the-/const-code",
   "description": "Constants for the-components",
-  "version": "15.5.0",
+  "version": "15.5.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,9 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {},
-  "devDependencies": {
-    "injectmock": "^2.0.0"
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=10",
     "npm": ">=6"

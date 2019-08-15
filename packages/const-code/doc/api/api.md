@@ -5,7 +5,7 @@
 ## @the-/const-code
 Constants for the-components
 
-**Version**: 15.5.0  
+**Version**: 15.5.1  
 **License**: MIT  
 
 * [@the-/const-code](#module_@the-/const-code)

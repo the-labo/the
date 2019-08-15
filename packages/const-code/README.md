@@ -79,6 +79,7 @@ console.log(PrettierConfig)
 
 
 - module:@the-/const-code
+  - [.JSDocPreferredTypes](./doc/api/api.md#module_@the-/const-code.JSDocPreferredTypes)
   - [.PrettierConfig](./doc/api/api.md#module_@the-/const-code.PrettierConfig)
 
 See [API Guide](./doc/api/api.md) for more detail

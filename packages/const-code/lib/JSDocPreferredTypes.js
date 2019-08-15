@@ -18,4 +18,4 @@ const JSDocPreferredTypes =
 
 Object.freeze(JSDocPreferredTypes)
 
-moduole.exports = JSDocPreferredTypes
+module.exports = JSDocPreferredTypes
