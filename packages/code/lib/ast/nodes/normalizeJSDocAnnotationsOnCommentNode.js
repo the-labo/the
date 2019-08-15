@@ -1,9 +1,6 @@
-/**
- * @memberof module:@the-/code.ast.nodes
- * @function normalizeJSDocAnnotationsOnCommentNode
- */
 'use strict'
 
+const { JSDocPreferredTypes } = require('@the-/const-code')
 const findJSDocAnnotationsInCommendNode = require('./findJSDocAnnotationsInCommendNode')
 
 // see http://usejsdoc.org/
@@ -30,18 +27,14 @@ const kindsMap = {
 }
 
 const typesMap = {
-  Boolean: 'boolean',
-  Number: 'number',
-  String: 'string',
-  Void: 'undefined',
-  any: '*',
-  array: 'Array',
+  ...JSDocPreferredTypes,
   function: 'function()',
-  object: 'Object',
-  void: 'undefined',
 }
 
-/** @lends module:@the-/code.ast.nodes.normalizeJSDocAnnotationsOnCommentNode */
+/**
+ * @memberof module:@the-/code.ast.nodes
+ * @function normalizeJSDocAnnotationsOnCommentNode
+ */
 function normalizeJSDocAnnotationsOnCommentNode(CommentNode, { replace }) {
   const annotations = findJSDocAnnotationsInCommendNode(CommentNode)
   for (const annotation of annotations) {

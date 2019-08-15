@@ -1,12 +1,11 @@
 'use strict'
 
-/**
- * Configuration for prettier
- * @memberof module:@the-/const-code
- * @namespace PrettierConfig
- */
-module.exports = Object.freeze(
-  /** @lends module:@the-/const-code.PrettierConfig */
+const PrettierConfig =
+  /**
+   * Configuration for prettier
+   * @memberof module:@the-/const-code
+   * @namespace PrettierConfig
+   */
   {
     arrowParens: 'always',
     jsxBracketSameLine: false,
@@ -16,5 +15,8 @@ module.exports = Object.freeze(
     semi: false,
     singleQuote: true,
     trailingComma: 'all',
-  },
-)
+  }
+
+Object.freeze(PrettierConfig)
+
+module.exports = PrettierConfig

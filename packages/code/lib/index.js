@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/code
  * @typicalname code
- * @version 15.8.24
+ * @version 15.8.25
  */
 'use strict'
 

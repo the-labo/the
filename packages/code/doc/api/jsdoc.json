@@ -13,7 +13,7 @@
     "name": "@the-/code",
     "order": 1,
     "typicalname": "code",
-    "version": "15.8.24"
+    "version": "15.8.25"
   },
   {
     "id": "module:@the-/code.TheCode()",
@@ -744,7 +744,7 @@
     "memberof": "module:@the-/code.ast.nodes",
     "meta": {
       "filename": "normalizeJSDocAnnotationsOnCommentNode.js",
-      "lineno": 1,
+      "lineno": 34,
       "path": "lib/ast/nodes"
     },
     "name": "normalizeJSDocAnnotationsOnCommentNode",

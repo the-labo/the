@@ -5,8 +5,17 @@
 ## @the-/const-code
 Constants for the-components
 
-**Version**: 15.4.8  
+**Version**: 15.5.0  
 **License**: MIT  
+
+* [@the-/const-code](#module_@the-/const-code)
+    * [.JSDocPreferredTypes](#module_@the-/const-code.JSDocPreferredTypes) : <code>object</code>
+    * [.PrettierConfig](#module_@the-/const-code.PrettierConfig) : <code>object</code>
+
+<a name="module_@the-/const-code.JSDocPreferredTypes"></a>
+
+### constCode.JSDocPreferredTypes : <code>object</code>
+**Kind**: static namespace of [<code>@the-/const-code</code>](#module_@the-/const-code)  
 <a name="module_@the-/const-code.PrettierConfig"></a>
 
 ### constCode.PrettierConfig : <code>object</code>

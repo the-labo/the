@@ -1,6 +1,7 @@
 'use strict'
 
 const globals = require('globals')
+const { JSDocPreferredTypes } = require('@the-/const-code')
 
 const definedTypes = [
   ...Object.keys(globals.builtin),
@@ -9,6 +10,13 @@ const definedTypes = [
 ]
 
 module.exports = {
+  Settings: {
+    jsdoc: {
+      preferredTypes: {
+        ...JSDocPreferredTypes,
+      },
+    },
+  },
   env: {
     es6: true,
     node: true,

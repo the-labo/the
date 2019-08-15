@@ -7,13 +7,27 @@
     "longname": "module:@the-/const-code",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/const-code",
     "order": 0,
     "typicalname": "constCode",
-    "version": "15.4.8"
+    "version": "15.5.0"
+  },
+  {
+    "id": "module:@the-/const-code.JSDocPreferredTypes",
+    "kind": "namespace",
+    "longname": "module:@the-/const-code.JSDocPreferredTypes",
+    "memberof": "module:@the-/const-code",
+    "meta": {
+      "filename": "JSDocPreferredTypes.js",
+      "lineno": 4,
+      "path": "lib"
+    },
+    "name": "JSDocPreferredTypes",
+    "order": 1,
+    "scope": "static"
   },
   {
     "description": "Configuration for prettier",
@@ -23,11 +37,11 @@
     "memberof": "module:@the-/const-code",
     "meta": {
       "filename": "PrettierConfig.js",
-      "lineno": 2,
+      "lineno": 4,
       "path": "lib"
     },
     "name": "PrettierConfig",
-    "order": 1,
+    "order": 2,
     "scope": "static"
   }
 ]

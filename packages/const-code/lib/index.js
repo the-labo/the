@@ -5,15 +5,18 @@
  * @license MIT
  * @module @the-/const-code
  * @typicalname constCode
- * @version 15.4.8
+ * @version 15.5.0
  */
 'use strict'
 
+const JSDocPreferredTypes_ = require('./JSDocPreferredTypes')
 const PrettierConfig_ = require('./PrettierConfig')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
+exports.JSDocPreferredTypes = JSDocPreferredTypes_
 exports.PrettierConfig = PrettierConfig_
 
 module.exports = {
+  JSDocPreferredTypes: JSDocPreferredTypes_,
   PrettierConfig: PrettierConfig_,
 }
