@@ -1,18 +1,17 @@
 'use strict'
 
+const { EOL } = require('os')
+const babelParser = require('@babel/parser')
+
 /**
  * Parse source code
  * @memberof module:@the-/ast
  * @function parse
- * @param {string} src
+ * @param {string} content
  * @param {Object} [options={}]
  * @throws {Error} Parser file error
  * @returns {Object} parsed Object
  */
-const { EOL } = require('os')
-const babelParser = require('@babel/parser')
-
-/** @lends module:@the-/ast.parse */
 function parse(content, options = {}) {
   const { sourceType = 'unambiguous' } = options
   try {
@@ -28,9 +27,6 @@ function parse(content, options = {}) {
         'classProperties',
         'classPrivateProperties',
         'classPrivateMethods',
-        ['pipelineOperator', { proposal: 'minimal' }],
-        // TODO use 'decorators',
-        'decorators-legacy',
         'dynamicImport',
         'nullishCoalescingOperator',
         'doExpressions',

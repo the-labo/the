@@ -9,11 +9,10 @@ const { TheRefactor } = require('@the-/refactor')
 
 async function main() {
   await new TheRefactor().convert(
-    'packages/code/+(lib|misc)/**/+(*.js|*.jsx)',
+    'packages/+(ast|code)/+(lib|misc)/**/+(*.js|*.jsx)',
     (content) => {
       const parsed = parse(content)
-      const comments = parsed.comments.filter((c) => c.loc.start.column === 0)
-      const commentsData = comments
+      const commentsData = parsed.comments
         .map((c) => ({
           ...(commentParser(content.substring(c.start, c.end)) || [])[0],
           node: c,
@@ -33,16 +32,22 @@ async function main() {
         const nameValues = name.split('.')
         const shortName = nameValues.pop()
         const nameSpace = nameValues.join('.')
-        const pointedCommentData = commentsData.find(
-          (c) =>
-            c.tags &&
-            c.tags.some((t) => t.tag === 'memberof' && t.name === nameSpace) &&
-            c.tags.some(
-              (t) =>
-                ['function', 'namespace', 'class'].includes(t.tag) &&
-                t.name === shortName,
-            ),
-        )
+        const pointedCommentData = commentsData
+          .filter((c) => {
+            return c.node.loc.start.column === 0
+          })
+          .find(
+            (c) =>
+              c.tags &&
+              c.tags.some(
+                (t) => t.tag === 'memberof' && t.name === nameSpace,
+              ) &&
+              c.tags.some(
+                (t) =>
+                  ['function', 'namespace', 'class'].includes(t.tag) &&
+                  t.name === shortName,
+              ),
+          )
         if (pointedCommentData) {
           const { node: pointed } = pointedCommentData
           const { node: lends } = lendsCommentData

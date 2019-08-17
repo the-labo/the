@@ -62,14 +62,6 @@ const { jj } = require('a/jj')
     ok(parsed)
   })
 
-  it('Pipe line', async () => {
-    const parsed = parse(`
-    const twice = (v) => v ** 2
-    console.log(2 |> twice) 
-    `)
-    ok(parsed)
-  })
-
   it('Using flow', async () => {
     const parsed = parse(`
 // @flow

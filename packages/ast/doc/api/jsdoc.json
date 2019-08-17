@@ -7,80 +7,19 @@
     "longname": "module:@the-/ast",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ast",
     "order": 3,
     "typicalname": "ast",
-    "version": "15.4.7"
-  },
-  {
-    "description": "Analyze node",
-    "id": "module:@the-/ast.analyzer",
-    "kind": "namespace",
-    "longname": "module:@the-/ast.analyzer",
-    "memberof": "module:@the-/ast",
-    "meta": {
-      "filename": "analyser.js",
-      "lineno": 2,
-      "path": "lib"
-    },
-    "name": "analyzer",
-    "order": 0,
-    "scope": "static"
-  },
-  {
-    "description": "Find node from node",
-    "id": "module:@the-/ast.finder",
-    "kind": "namespace",
-    "longname": "module:@the-/ast.finder",
-    "memberof": "module:@the-/ast",
-    "meta": {
-      "filename": "finder.js",
-      "lineno": 2,
-      "path": "lib"
-    },
-    "name": "finder",
-    "order": 1,
-    "scope": "static"
-  },
-  {
-    "description": "Constant variables",
-    "id": "module:@the-/ast.constants",
-    "kind": "namespace",
-    "longname": "module:@the-/ast.constants",
-    "memberof": "module:@the-/ast",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 2,
-      "path": "lib/constants"
-    },
-    "name": "constants",
-    "order": 5,
-    "scope": "static"
-  },
-  {
-    "description": "Node types",
-    "id": "module:@the-/ast.NodeTypes",
-    "kind": "namespace",
-    "longname": "module:@the-/ast.NodeTypes",
-    "memberof": "module:@the-/ast",
-    "meta": {
-      "filename": "NodeTypes.js",
-      "lineno": 2,
-      "path": "lib/constants"
-    },
-    "name": "NodeTypes",
-    "order": 6,
-    "scope": "static"
+    "version": "16.0.2"
   },
   {
     "description": "Find nodes by types",
-    "id": "module:@the-/ast.finder.findByTypes",
+    "id": "findByTypes",
     "kind": "function",
-    "longname": "module:@the-/ast.finder.findByTypes",
-    "memberof": "module:@the-/ast.finder",
+    "longname": "findByTypes",
     "meta": {
       "filename": "finder.js",
       "lineno": 18,
@@ -116,6 +55,66 @@
         "description": "Found nodes"
       }
     ],
+    "scope": "global"
+  },
+  {
+    "description": "Analyze node",
+    "id": "module:@the-/ast.analyzer",
+    "kind": "namespace",
+    "longname": "module:@the-/ast.analyzer",
+    "memberof": "module:@the-/ast",
+    "meta": {
+      "filename": "analyser.js",
+      "lineno": 4,
+      "path": "lib"
+    },
+    "name": "analyzer",
+    "order": 0,
+    "scope": "static"
+  },
+  {
+    "description": "Find node from node",
+    "id": "module:@the-/ast.finder",
+    "kind": "namespace",
+    "longname": "module:@the-/ast.finder",
+    "memberof": "module:@the-/ast",
+    "meta": {
+      "filename": "finder.js",
+      "lineno": 6,
+      "path": "lib"
+    },
+    "name": "finder",
+    "order": 1,
+    "scope": "static"
+  },
+  {
+    "description": "Constant variables",
+    "id": "module:@the-/ast.constants",
+    "kind": "namespace",
+    "longname": "module:@the-/ast.constants",
+    "memberof": "module:@the-/ast",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 3,
+      "path": "lib/constants"
+    },
+    "name": "constants",
+    "order": 5,
+    "scope": "static"
+  },
+  {
+    "description": "Node types",
+    "id": "module:@the-/ast.NodeTypes",
+    "kind": "namespace",
+    "longname": "module:@the-/ast.NodeTypes",
+    "memberof": "module:@the-/ast",
+    "meta": {
+      "filename": "NodeTypes.js",
+      "lineno": 5,
+      "path": "lib/constants"
+    },
+    "name": "NodeTypes",
+    "order": 6,
     "scope": "static"
   },
   {
@@ -136,7 +135,7 @@
     "memberof": "module:@the-/ast",
     "meta": {
       "filename": "parse.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "parse",
@@ -148,7 +147,7 @@
             "string"
           ]
         },
-        "name": "src"
+        "name": "content"
       },
       {
         "type": {
@@ -174,14 +173,14 @@
     "scope": "static"
   },
   {
-    "description": "explode() will take a visitor object with all of the various shorthands\nthat we support, and validates & normalizes it into a common format, ready\nto be used in traversal\n\nThe various shorthands are:\n* `Identifier() { ... }` -> `Identifier: { enter() { ... } }`\n* `\"Identifier|NumericLiteral\": { ... }` -> `Identifier: { ... }, NumericLiteral: { ... }`\n* Aliases in `babel-types`: e.g. `Property: { ... }` -> `ObjectProperty: { ... }, ClassProperty: { ... }`\n\nOther normalizations are:\n* `enter` and `exit` functions are wrapped in arrays, to ease merging of visitors",
+    "description": "explode() will take a visitor object with all of the various shorthands\nthat we support, and validates & normalizes it into a common format, ready\nto be used in traversal\nThe various shorthands are:\n* `Identifier() { ... }` -> `Identifier: { enter() { ... } }`\n* `\"Identifier|NumericLiteral\": { ... }` -> `Identifier: { ... }, NumericLiteral: { ... }`\n* Aliases in `babel-types`: e.g. `Property: { ... }` -> `ObjectProperty: { ... }, ClassProperty: { ... }`\nOther normalizations are:\n* `enter` and `exit` functions are wrapped in arrays, to ease merging of visitors",
     "id": "module.exports",
     "kind": "function",
     "longname": "module.exports",
     "memberof": "module",
     "meta": {
       "filename": "explode.js",
-      "lineno": 22,
+      "lineno": 20,
       "path": "lib/walk"
     },
     "name": "exports",

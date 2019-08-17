@@ -1,7 +1,6 @@
 'use strict'
 
 const t = require('@babel/types')
-console.log(JSON.stringify(t.VISITOR_KEYS, null, 4))
 
 module.exports = {
   data: {

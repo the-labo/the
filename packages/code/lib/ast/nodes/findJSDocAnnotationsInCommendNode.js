@@ -23,6 +23,7 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
   }
 
   const offset = (CommentNode.start || 0) + 2
+  let line = 0
   for (let i = 0; i < value.length; i++) {
     const letter = value[i]
     const hitsEmpty = !letter.trim()
@@ -30,6 +31,20 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
     const hitsEOL = letter === EOL
     const hitsBracketStart = letter === '{'
     const hitsBracketEnd = letter === '}'
+
+    const newAnnotation = () => ({
+      start: offset + i,
+      loc: { start: { line } },
+    })
+    const nextAnnotation = () => {
+      workingAnnotation.body = bodyFor(workingAnnotation)
+      annotations.push(workingAnnotation)
+      return newAnnotation()
+    }
+
+    if (hitsEOL) {
+      line++
+    }
     if (!started && hitsEmpty) {
       continue
     }
@@ -37,19 +52,24 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
     started = true
 
     const annotationStarted = hitsAtMark && /\*\s*$/.test(value.substring(0, i))
-    if (!workingAnnotation) {
-      if (annotationStarted) {
-        workingAnnotation = { start: offset + i }
+    if (annotationStarted) {
+      if (workingAnnotation) {
+        const lineChanged = workingAnnotation.loc.start.line !== line
+        if (lineChanged) {
+          workingAnnotation = nextAnnotation()
+        }
+      } else {
+        workingAnnotation = newAnnotation()
       }
+    }
 
+    if (!workingAnnotation) {
       continue
     }
 
     const annotationEnded = annotationStarted && workingAnnotation.end
     if (annotationEnded) {
-      workingAnnotation.body = bodyFor(workingAnnotation)
-      annotations.push(workingAnnotation)
-      workingAnnotation = { start: offset + i }
+      workingAnnotation = nextAnnotation()
       continue
     }
 
@@ -91,10 +111,8 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
       workingAnnotation.end = offset + value.length
       workingAnnotation.body = bodyFor(workingAnnotation)
     }
-
     annotations.push(workingAnnotation)
   }
-
   return annotations.map((annotation) => ({ ...annotation }))
 }
 

@@ -1,14 +1,13 @@
 'use strict'
 
-/**
- * Find node from node
- * @memberof module:@the-/ast
- * @namespace finder
- */
 const walk = require('./walk')
 
 const finder = Object.freeze(
-  /** @lends module:@the-/ast.finder */
+  /**
+   * Find node from node
+   * @memberof module:@the-/ast
+   * @namespace finder
+   */
   {
     /**
      * Find nodes by types

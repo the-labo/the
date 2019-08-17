@@ -83,14 +83,14 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 
+- global
+  - [findByTypes(node,types)](./doc/api/api.md#findByTypes)
 - module:@the-/ast
   - [.analyzer](./doc/api/api.md#module_@the-/ast.analyzer)
   - [.constants](./doc/api/api.md#module_@the-/ast.constants)
   - [.finder](./doc/api/api.md#module_@the-/ast.finder)
   - [.NodeTypes](./doc/api/api.md#module_@the-/ast.NodeTypes)
-  - [.parse(src,options)](./doc/api/api.md#module_@the-/ast.parse)
-- module:@the-/ast.finder
-  - [.findByTypes(node,types)](./doc/api/api.md#module_@the-/ast.finder.findByTypes)
+  - [.parse(content,options)](./doc/api/api.md#module_@the-/ast.parse)
 - module
   - [.exports()](./doc/api/api.md#module.exports)
 

@@ -10,13 +10,6 @@ const definedTypes = [
 ]
 
 module.exports = {
-  Settings: {
-    jsdoc: {
-      preferredTypes: {
-        ...JSDocPreferredTypes,
-      },
-    },
-  },
   env: {
     es6: true,
     node: true,
@@ -55,5 +48,12 @@ module.exports = {
     'jsdoc/require-returns-description': 'off',
     'jsdoc/require-returns-type': 'error',
     'jsdoc/valid-types': 'error',
+  },
+  settings: {
+    jsdoc: {
+      preferredTypes: {
+        ...JSDocPreferredTypes,
+      },
+    },
   },
 }
