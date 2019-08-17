@@ -10,7 +10,7 @@ const {
 const path = require('path')
 const rimraf = require('rimraf')
 const transporting = require('./transporting')
-const pkg = require('../../package')
+const pkg = require('../../package.json')
 const baseDir = `${__dirname}/../..`
 
 process.chdir(baseDir)

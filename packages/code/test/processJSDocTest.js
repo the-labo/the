@@ -199,8 +199,20 @@ describe('process-js-doc', () => {
     )
   })
 
+  it('Sort 2', async () => {
+    await processJSDoc(`
+  // x
+  /**
+   * This is hoge
+   * @async
+   * @function Hoge
+   */
+   function x () {}
+`)
+  })
+
   it('Complete jsdoc params', async () => {
-    equal(
+    console.log(
       await processJSDoc(`
   // x
   /**
@@ -214,21 +226,21 @@ describe('process-js-doc', () => {
   }
   module.exports = function Hoge(){}
         `),
-      `
-  // x
-  /**
-   * This is hoge
-   * @async
-   * @function Hoge
-   * @param bar
-   * @param [value=x]
-   * @param foo
-   * @example hoge of hoge
-   */
-  async function Hoge(foo, bar, value=x){
-  }
-  module.exports = function Hoge(){}
-        `,
+      //     `
+      // // x
+      // /**
+      //  * This is hoge
+      //  * @async
+      //  * @function Hoge
+      //  * @param bar
+      //  * @param [value=x]
+      //  * @param foo
+      //  * @example hoge of hoge
+      //  */
+      // async function Hoge(foo, bar, value=x){
+      // }
+      // module.exports = function Hoge(){}
+      //       `,
     )
   })
 

@@ -5,25 +5,17 @@
 ## @the-/code
 Code formatter of the-frameworks
 
-**Version**: 15.8.25  
+**Version**: 15.9.0  
 **License**: MIT  
 
 * [@the-/code](#module_@the-/code)
     * [.TheCode](#module_@the-/code.TheCode)
         * [new TheCode([config])](#new_module_@the-/code.TheCode_new)
-        * [.format(pattern, [options])](#module_@the-/code.TheCode+format) ⇒ <code>Promise.&lt;Array&gt;</code>
-        * [.formatFile(filename, [options])](#module_@the-/code.TheCode+formatFile) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.FormatCache](#module_@the-/code.FormatCache)
     * [.constants](#module_@the-/code.constants) : <code>object</code>
         * [.TypeNamings](#module_@the-/code.constants.TypeNamings) : <code>object</code>
         * [.Types](#module_@the-/code.constants.Types) : <code>object</code>
     * [.astHelper](#module_@the-/code.astHelper) : <code>object</code>
-        * ~~[.isAssignmentPattern()](#module_@the-/code.astHelper.isAssignmentPattern)~~
-        * ~~[.isEmptyObjectPattern()](#module_@the-/code.astHelper.isEmptyObjectPattern)~~
-        * ~~[.isImportDefaultSpecifier()](#module_@the-/code.astHelper.isImportDefaultSpecifier)~~
-        * ~~[.isImportSpecifier()](#module_@the-/code.astHelper.isImportSpecifier)~~
-        * ~~[.isObjectPattern()](#module_@the-/code.astHelper.isObjectPattern)~~
-        * ~~[.isRequireExpression()](#module_@the-/code.astHelper.isRequireExpression)~~
     * [.helpers](#module_@the-/code.helpers) : <code>object</code>
     * [.parsers](#module_@the-/code.parsers) : <code>object</code>
         * [.parseCSS()](#module_@the-/code.parsers.parseCSS)
@@ -66,12 +58,6 @@ Code formatter of the-frameworks
 
 ### code.TheCode
 **Kind**: static class of [<code>@the-/code</code>](#module_@the-/code)  
-
-* [.TheCode](#module_@the-/code.TheCode)
-    * [new TheCode([config])](#new_module_@the-/code.TheCode_new)
-    * [.format(pattern, [options])](#module_@the-/code.TheCode+format) ⇒ <code>Promise.&lt;Array&gt;</code>
-    * [.formatFile(filename, [options])](#module_@the-/code.TheCode+formatFile) ⇒ <code>Promise.&lt;undefined&gt;</code>
-
 <a name="new_module_@the-/code.TheCode_new"></a>
 
 #### new TheCode([config])
@@ -79,30 +65,6 @@ Code formatter of the-frameworks
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [config] | <code>Object</code> | <code>{}</code> | Code config |
-
-<a name="module_@the-/code.TheCode+format"></a>
-
-#### theCode.format(pattern, [options]) ⇒ <code>Promise.&lt;Array&gt;</code>
-Format files
-
-**Kind**: instance method of [<code>TheCode</code>](#module_@the-/code.TheCode)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| pattern | <code>string</code> |  | file name |
-| [options] | <code>Object</code> | <code>{}</code> | Optional |
-
-<a name="module_@the-/code.TheCode+formatFile"></a>
-
-#### theCode.formatFile(filename, [options]) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Format a single file
-
-**Kind**: instance method of [<code>TheCode</code>](#module_@the-/code.TheCode)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| filename | <code>string</code> |  |  |
-| [options] | <code>Object</code> | <code>{}</code> | Optional setting |
 
 <a name="module_@the-/code.FormatCache"></a>
 
@@ -136,51 +98,6 @@ Types
 
 ### code.astHelper : <code>object</code>
 **Kind**: static namespace of [<code>@the-/code</code>](#module_@the-/code)  
-
-* [.astHelper](#module_@the-/code.astHelper) : <code>object</code>
-    * ~~[.isAssignmentPattern()](#module_@the-/code.astHelper.isAssignmentPattern)~~
-    * ~~[.isEmptyObjectPattern()](#module_@the-/code.astHelper.isEmptyObjectPattern)~~
-    * ~~[.isImportDefaultSpecifier()](#module_@the-/code.astHelper.isImportDefaultSpecifier)~~
-    * ~~[.isImportSpecifier()](#module_@the-/code.astHelper.isImportSpecifier)~~
-    * ~~[.isObjectPattern()](#module_@the-/code.astHelper.isObjectPattern)~~
-    * ~~[.isRequireExpression()](#module_@the-/code.astHelper.isRequireExpression)~~
-
-<a name="module_@the-/code.astHelper.isAssignmentPattern"></a>
-
-#### ~~astHelper.isAssignmentPattern()~~
-***Deprecated***
-
-**Kind**: static method of [<code>astHelper</code>](#module_@the-/code.astHelper)  
-<a name="module_@the-/code.astHelper.isEmptyObjectPattern"></a>
-
-#### ~~astHelper.isEmptyObjectPattern()~~
-***Deprecated***
-
-**Kind**: static method of [<code>astHelper</code>](#module_@the-/code.astHelper)  
-<a name="module_@the-/code.astHelper.isImportDefaultSpecifier"></a>
-
-#### ~~astHelper.isImportDefaultSpecifier()~~
-***Deprecated***
-
-**Kind**: static method of [<code>astHelper</code>](#module_@the-/code.astHelper)  
-<a name="module_@the-/code.astHelper.isImportSpecifier"></a>
-
-#### ~~astHelper.isImportSpecifier()~~
-***Deprecated***
-
-**Kind**: static method of [<code>astHelper</code>](#module_@the-/code.astHelper)  
-<a name="module_@the-/code.astHelper.isObjectPattern"></a>
-
-#### ~~astHelper.isObjectPattern()~~
-***Deprecated***
-
-**Kind**: static method of [<code>astHelper</code>](#module_@the-/code.astHelper)  
-<a name="module_@the-/code.astHelper.isRequireExpression"></a>
-
-#### ~~astHelper.isRequireExpression()~~
-***Deprecated***
-
-**Kind**: static method of [<code>astHelper</code>](#module_@the-/code.astHelper)  
 <a name="module_@the-/code.helpers"></a>
 
 ### code.helpers : <code>object</code>

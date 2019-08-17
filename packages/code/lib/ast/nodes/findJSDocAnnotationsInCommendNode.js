@@ -24,6 +24,7 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
 
   const offset = (CommentNode.start || 0) + 2
   let line = 0
+  let lineEndAt = -1
   for (let i = 0; i < value.length; i++) {
     const letter = value[i]
     const hitsEmpty = !letter.trim()
@@ -33,8 +34,8 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
     const hitsBracketEnd = letter === '}'
 
     const newAnnotation = () => ({
-      start: offset + i,
       loc: { start: { line } },
+      start: offset + i,
     })
     const nextAnnotation = () => {
       workingAnnotation.body = bodyFor(workingAnnotation)
@@ -44,6 +45,7 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
 
     if (hitsEOL) {
       line++
+      lineEndAt = i
     }
     if (!started && hitsEmpty) {
       continue
@@ -56,6 +58,7 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
       if (workingAnnotation) {
         const lineChanged = workingAnnotation.loc.start.line !== line
         if (lineChanged) {
+          workingAnnotation.end = lineEndAt + offset
           workingAnnotation = nextAnnotation()
         }
       } else {

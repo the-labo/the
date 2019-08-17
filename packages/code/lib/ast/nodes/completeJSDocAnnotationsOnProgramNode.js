@@ -67,15 +67,15 @@ function completeJSDocAnnotationsOnProgramNode(program, { get, replace }) {
         tags ? tags.map((tag) => indented(String(tag.source))) : []
       const { description: descriptionTags, ...otherTags } = tagsByTypes
       const newCommentCode = [
-        `/**`,
+        '/**',
         commentData.description
           ? `${indent} * ${commentData.description}`
           : null,
         ...tagsToStrings(descriptionTags),
         ...comments,
-        ...Object.entries(otherTags).map(([, tags]) => {
-          return tagsToStrings(tags).join(EOL)
-        }),
+        ...Object.entries(otherTags).map(([, tags]) =>
+          tagsToStrings(tags).join(EOL),
+        ),
         `${indent} */`,
       ]
         .filter(Boolean)
