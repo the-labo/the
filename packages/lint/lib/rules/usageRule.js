@@ -1,14 +1,5 @@
 'use strict'
 
-/**
- * Create "usageRule" lint.
- * This rule makes sure target files is used in somewhere
- * @memberof module:@the-/lint.rules
- * @function usageRule
- * @param {Object} config - Lint config
- * @param {string} config.usedIn - Files that may use the module
- * @returns {function()} Lint function
- */
 const aglob = require('aglob')
 const { readFileAsync } = require('asfs')
 const { flatten } = require('objnest')
@@ -28,7 +19,15 @@ const transformFuncFor = (name) => {
   return stringcase[name]
 }
 
-/** @lends module:@the-/lint.rules.usageRule */
+/**
+ * Create "usageRule" lint.
+ * This rule makes sure target files is used in somewhere
+ * @memberof module:@the-/lint.rules
+ * @function usageRule
+ * @param {Object} config - Lint config
+ * @param {string} config.usedIn - Files that may use the module
+ * @returns {function()} Lint function
+ */
 function usageRule(config) {
   const {
     flattenKeysUsedIn = null,

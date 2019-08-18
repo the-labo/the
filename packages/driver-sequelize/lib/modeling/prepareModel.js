@@ -1,14 +1,15 @@
 'use strict'
 
-/**
- * @memberof module:@the-/driver-sequelize.modeling
- * @function prepareModel
- * @returns {Promise}
- */
 const defineModelColumn = require('./defineModelColumn')
 const parseAttributeName = require('../parsing/parseAttributeName')
 
-/** @lends module:@the-/driver-sequelize.modeling.prepareModel */
+/**
+ * @memberof module:@the-/driver-sequelize.modeling
+ * @function prepareModel
+ * @param Model
+ * @param Schema
+ * @returns {Promise}
+ */
 async function prepareModel(Model, Schema) {
   const {
     sequelize: { queryInterface },

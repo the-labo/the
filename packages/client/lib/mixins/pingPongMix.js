@@ -10,8 +10,8 @@ const DEFAULT_PING_URL = '/the/ping'
  */
 function pingPongMix(Class) {
   /**
+   * @memberof module:@the-/client.mixins.pingPongMix
    * @inner
-   * @memberOf module:@the-/client.mixins.pingPongMix
    */
   class PingPongMixed extends Class {
     /**

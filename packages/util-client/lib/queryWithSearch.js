@@ -1,12 +1,13 @@
-/**
- * @memberof module:@the-/util-client
- * @function queryWithSearch
- */
 'use strict'
 
 const qs = require('qs')
 
-/** @lends module:@the-/util-client.queryWithSearch */
+/**
+ * @memberof module:@the-/util-client
+ * @function queryWithSearch
+ * @param search
+ * @returns {*}
+ */
 function queryWithSearch(search) {
   return qs.parse(search, { ignoreQueryPrefix: true })
 }

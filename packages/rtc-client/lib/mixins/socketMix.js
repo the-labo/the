@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Mixin for socket
- * @memberof module:@the-/rtc.constants.mixins
- * @function socketMix
- * @param {function()} Class
- * @returns {function()} Class
- */
 const { cleanup } = require('asobj')
 const qs = require('qs')
 const io = require('socket.io-client')
@@ -14,7 +7,13 @@ const debug = require('debug')('the:rtc:client')
 
 const NAMESPACE = '/rtc'
 
-/** @lends module:@the-/rtc.constants.mixins.socketMix */
+/**
+ * Mixin for socket
+ * @memberof module:@the-/rtc.constants.mixins
+ * @function socketMix
+ * @param {function()} Class
+ * @returns {function()} Class
+ */
 function socketMix(Class) {
   class SocketMixed extends Class {
     constructor() {

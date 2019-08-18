@@ -4,6 +4,7 @@
  * MetricsC Counter
  * @memberof module:@the-/server.helpers
  * @function MetricsCounter
+ * @returns {*}
  */
 function MetricsCounter() {
   const counts = {

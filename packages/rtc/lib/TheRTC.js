@@ -1,5 +1,15 @@
 'use strict'
 
+const socketIO = require('socket.io')
+const { TopologyTypes } = require('./constants')
+const { handleUnknownKeys, parseTurnSecret } = require('./helpers')
+const { httpMix, ioMix, sfuMix } = require('./mixins')
+
+const TheRTCBase = [httpMix, ioMix, sfuMix].reduce(
+  (C, mix) => mix(C),
+  class Base {},
+)
+
 /**
  * @memberof module:@the-/rtc
  * @class TheRTC
@@ -12,17 +22,6 @@
  * @param {string} [config.turn.expiry] - TURN server expiry
  * @param {string} [config.topology='mesh'] - 'mesh', 'sfu'
  */
-const socketIO = require('socket.io')
-const { TopologyTypes } = require('./constants')
-const { handleUnknownKeys, parseTurnSecret } = require('./helpers')
-const { httpMix, ioMix, sfuMix } = require('./mixins')
-
-const TheRTCBase = [httpMix, ioMix, sfuMix].reduce(
-  (C, mix) => mix(C),
-  class Base {},
-)
-
-/** @lends module:@the-/rtc.TheRTC */
 class TheRTC extends TheRTCBase {
   constructor(config = {}) {
     super()

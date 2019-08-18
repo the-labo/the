@@ -1,23 +1,22 @@
 'use strict'
 
 /**
- * withEntities mixin
- * @function withEntities
- * @deprecated
- * @memberof module:@the-/mixin-scene
- * @param {function()} Class - Class to mix
- * @returns {function()} Mixed class
- */
-/**
  * @memberof module:@the-/mixin-scene.withEntities
- * @inner
  * @class WithEntities
+ * @inner
  */
 const { uniqueFilter } = require('@the-/util-array')
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends module:@the-/mixin-scene.withEntities */
+/**
+ * withEntities mixin
+ * @memberof module:@the-/mixin-scene
+ * @function withEntities
+ * @deprecated
+ * @param {function()} Class - Class to mix
+ * @returns {function()} Mixed class
+ */
 const withEntities = asClassMixin((Class) => {
   injectProperties(
     Class,

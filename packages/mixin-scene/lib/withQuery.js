@@ -1,18 +1,9 @@
 'use strict'
 
 /**
- * withQuery mixin
- * @deprecated
- * @function withQuery
- * @deprecated
- * @memberof module:@the-/mixin-scene
- * @param {function()} Class - Class to mix
- * @returns {function()} Mixed class
- */
-/**
  * @memberof module:@the-/mixin-scene.withQuery
- * @inner
  * @class WithQueryMixed
+ * @inner
  */
 const { cleanup } = require('asobj')
 const { get } = require('bwindow')
@@ -20,7 +11,15 @@ const qs = require('qs')
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends module:@the-/mixin-scene.withQuery */
+/**
+ * withQuery mixin
+ * @memberof module:@the-/mixin-scene
+ * @function withQuery
+ * @deprecated
+ * @deprecated
+ * @param {function()} Class - Class to mix
+ * @returns {function()} Mixed class
+ */
 const withQuery = asClassMixin((Class) => {
   injectProperties(
     Class,

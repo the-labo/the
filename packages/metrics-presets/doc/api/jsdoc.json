@@ -23,7 +23,7 @@
     "memberof": "module:@the-/metrics-presets",
     "meta": {
       "filename": "RenderingCountMetrics.js",
-      "lineno": 3,
+      "lineno": 9,
       "path": "lib"
     },
     "name": "RenderingCountMetrics",
@@ -35,8 +35,10 @@
             "Object"
           ]
         },
-        "description": "Components to count",
-        "name": "Components"
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
       },
       {
         "type": {
@@ -44,10 +46,17 @@
             "Object"
           ]
         },
-        "optional": true,
-        "defaultvalue": "{}",
-        "description": "Optional settings",
-        "name": "options"
+        "description": "Components to count",
+        "name": "Components"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
       }
     ],
     "scope": "static"

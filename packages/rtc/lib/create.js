@@ -1,5 +1,7 @@
 'use strict'
 
+const TheRTC = require('./TheRTC')
+
 /**
  * Create a TheRTC instance
  * @memberof module:@the-/rtc
@@ -7,9 +9,6 @@
  * @param {...*} args
  * @returns {TheRTC}
  */
-const TheRTC = require('./TheRTC')
-
-/** @lends module:@the-/rtc.create */
 function create(...args) {
   return new TheRTC(...args)
 }

@@ -1,13 +1,15 @@
 'use strict'
 
+const { toLowerKeys } = require('@the-/util-db')
+
 /**
  * Do exec for env
  * @memberof module:@the-/db
  * @function execForEnv
+ * @param env
+ * @param sql
+ * @returns {Promise<*>}
  */
-const { toLowerKeys } = require('@the-/util-db')
-
-/** @lends module:@the-/db.execForEnv */
 async function execForEnv(env, sql) {
   const {
     database,

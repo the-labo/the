@@ -1,6 +1,9 @@
 'use strict'
 
-/** @deprecated */
+/**
+ * @deprecated
+ * @param decorator
+ * @returns {*} */
 function asHOC(decorator) {
   return function classMixin(ClassDescriptor) {
     const isLegacyDecorator = typeof ClassDescriptor === 'function'

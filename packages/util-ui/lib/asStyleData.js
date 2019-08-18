@@ -1,13 +1,5 @@
 'use strict'
 
-/**
- * Mark  : style data
- * @memberof module:@the-/util-ui
- * @function asStyleData
- * @param {string} scopeSelector - Selector which wraps data
- * @param {Object} data - Style data
- * @returns {Object} Style data
- */
 const argx = require('argx')
 
 const combineSelectors = (...selectors) =>
@@ -51,7 +43,14 @@ const selectorData = (selector, data) => {
   )
 }
 
-/** @lends module:@the-/util-ui.asStyleData */
+/**
+ * Mark  : style data
+ * @memberof module:@the-/util-ui
+ * @function asStyleData
+ * @param {string} scopeSelector - Selector which wraps data
+ * @param {Object} data - Style data
+ * @returns {Object} Style data
+ */
 function asStyleData(scopeSelector, data) {
   const args = argx(arguments)
   scopeSelector = args.shift('string')

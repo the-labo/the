@@ -3,6 +3,9 @@
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function modifyNodeDeprecatedOnRequireDeclaration
+ * @param Declaration
+ * @param [options={}]
+ * @returns {*}
  */
 function modifyNodeDeprecatedOnRequireDeclaration(Declaration, options = {}) {
   const { get, replace } = options

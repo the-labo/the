@@ -1,9 +1,5 @@
 'use strict'
-/**
- * Constant variables
- * @memberof module:@the-/date
- * @namespace Durations
- */
+
 const ONE_SECOND = 1000
 const ONE_MINUTE = 60 * ONE_SECOND
 const ONE_HOUR = 60 * ONE_MINUTE
@@ -11,7 +7,11 @@ const ONE_DAY = 24 * ONE_HOUR
 const ONE_WEEK = ONE_DAY * 7
 
 module.exports =
-  /** @lends module:@the-/date.Durations */
+  /**
+   * Constant variables
+   * @memberof module:@the-/date
+   * @namespace Durations
+   */
   {
     ONE_DAY,
     ONE_HOUR,

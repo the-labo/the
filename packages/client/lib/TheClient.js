@@ -17,8 +17,9 @@ const {
   debugStream,
   parseClientUrl,
 } = require('./helpers')
+const InfoAccess = require('./helpers/InfoAccess')
 const RemoteStream = require('./helpers/RemoteStream')
-const { infoMix, pingPongMix } = require('./mixins')
+const { pingPongMix } = require('./mixins')
 const debug = require('debug')('the:client')
 
 const NAMESPACE = '/rpc'
@@ -27,7 +28,7 @@ const NAMESPACE = '/rpc'
  * @class module:@the-/client.TheClientBase
  * @protected
  */
-const TheClientBase = [pingPongMix, infoMix].reduce(
+const TheClientBase = [pingPongMix].reduce(
   (Class, mix) => mix(Class),
   RFuncClient,
 )
@@ -37,8 +38,6 @@ const { decode, encode } = new ThePack({})
 /**
  * @memberof module:@the-/client
  * @class TheClient
- * @augments module:@the-/client.mixins.infoMix~InfoMixed
- * @augments module:@the-/client.mixins.streamMix~StreamMixed
  * @augments module:@the-/client.TheClientBase
  * @augments module:@the-/client.mixins.pingPongMix~PingPongMixed
  * @param {string} url
@@ -90,6 +89,7 @@ class TheClient extends TheClientBase {
 
     super(url, restOptions)
     this.onGone(onGone)
+    this.infoAccess = InfoAccess({ fetch: this.fetch.bind(this) })
     this._forceNewSocket = forceNewSocket
     this._gone = false
     this._controllers = {}
@@ -385,7 +385,7 @@ class TheClient extends TheClientBase {
    * @returns {Promise<Object>}
    */
   async useAll(options = {}) {
-    const serverInfo = await this.serverInfo()
+    const serverInfo = await this.infoAccess.serverInfo()
     const controllers = {}
     const { controllers: controllerSpecs } = serverInfo
     for (const { methods, name } of controllerSpecs) {

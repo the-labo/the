@@ -10,6 +10,8 @@ const assert = theAssert('@the-/server')
 /**
  * @memberof module:@the-/server.helpers
  * @function toControllerDriverFactory
+ * @param ControllerFactory
+ * @param [options={}]
  * @returns {function()}
  */
 function toControllerDriverFactory(ControllerFactory, options = {}) {

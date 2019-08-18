@@ -1,13 +1,15 @@
 'use strict'
 
-/**
- * @memberof module:@the-/db.helpers
- * @function createTerminal
- */
 const readline = require('readline')
 const { inspect } = require('util')
 
-/** @lends module:@the-/db.helpers.createTerminal */
+/**
+ * @memberof module:@the-/db.helpers
+ * @function createTerminal
+ * @param handler
+ * @param [options={}]
+ * @returns {Promise<*>}
+ */
 async function createTerminal(handler, options = {}) {
   const { prompt = '>' } = options
   return new Promise((resolve, reject) => {

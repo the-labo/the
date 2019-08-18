@@ -7,7 +7,7 @@
     "longname": "module:@the-/geo",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/geo",
@@ -38,10 +38,10 @@
   },
   {
     "description": "Watch position change",
-    "id": "module:@the-/geo.TheGeo#watch",
+    "id": "TheGeo#watch",
     "kind": "function",
-    "longname": "module:@the-/geo.TheGeo#watch",
-    "memberof": "module:@the-/geo.TheGeo",
+    "longname": "TheGeo#watch",
+    "memberof": "TheGeo",
     "meta": {
       "filename": "TheGeo.js",
       "lineno": 57,
@@ -74,10 +74,10 @@
   {
     "async": true,
     "description": "Detect current geo location",
-    "id": "module:@the-/geo.TheGeo#detect",
+    "id": "TheGeo#detect",
     "kind": "function",
-    "longname": "module:@the-/geo.TheGeo#detect",
-    "memberof": "module:@the-/geo.TheGeo",
+    "longname": "TheGeo#detect",
+    "memberof": "TheGeo",
     "meta": {
       "filename": "TheGeo.js",
       "lineno": 85,
@@ -116,7 +116,7 @@
     "memberof": "module:@the-/geo",
     "meta": {
       "filename": "TheGeo.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "TheGeo",
@@ -131,7 +131,7 @@
     "memberof": "module:@the-/geo",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -166,7 +166,7 @@
     "memberof": "module:@the-/geo",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",

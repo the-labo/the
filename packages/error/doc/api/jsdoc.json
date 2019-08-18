@@ -7,13 +7,13 @@
     "longname": "module:@the-/error",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/error",
     "order": 2,
     "typicalname": "error",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "description": "Error With status 409",
@@ -138,7 +138,7 @@
     "memberof": "module:@the-/error",
     "meta": {
       "filename": "TheError.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "TheError",
@@ -306,7 +306,7 @@
     "memberof": "module:@the-/error",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "create",
@@ -341,7 +341,7 @@
     "memberof": "module:@the-/error",
     "meta": {
       "filename": "define.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "define",

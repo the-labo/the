@@ -1,5 +1,8 @@
 'use strict'
 
+const { set: setOne } = require('bwindow')
+const debug = require('debug')('the:window:set')
+
 /**
  * Set global values
  * @memberof module:@the-/window
@@ -8,10 +11,6 @@
  * @param {*} value - Value to set
  * @returns {*}
  */
-const { set: setOne } = require('bwindow')
-const debug = require('debug')('the:window:set')
-
-/** @lends module:@the-/window.set */
 function set(name, value) {
   if (typeof arguments[0] === 'object') {
     for (const [n, v] of Object.entries(arguments[0])) {

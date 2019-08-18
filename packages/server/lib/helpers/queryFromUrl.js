@@ -6,6 +6,8 @@ const { get } = require('@the-/window')
 /**
  * @memberof module:@the-/server.helpers
  * @function queryFromUrl
+ * @param urlString
+ * @returns {*}
  */
 function queryFromUrl(urlString) {
   const { search } = new URL(

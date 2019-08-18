@@ -1,5 +1,20 @@
 'use strict'
 
+const { Collection } = require('clay-collection')
+const { ClayResource } = require('clay-resource')
+const { create: clayResourceName } = require('clay-resource-name')
+const { listenMix, queueMix, writeOnceMix } = require('./mixins')
+
+/**
+ * @memberof module:@the-/resource
+ * @class TheResourceBase
+ * @protected
+ */
+const TheResourceBase = [listenMix, queueMix].reduce(
+  (Class, mix) => mix(Class),
+  ClayResource,
+)
+
 /**
  * Resource for the DB
  * @memberof module:@the-/resource
@@ -10,22 +25,6 @@
  * @augments module:@the-/resource.mixins.queueMix~QueueMixed
  * @augments module:@the-/resource.mixins.writeOnceMix~WriteOnceMixed
  */
-const { Collection } = require('clay-collection')
-const { ClayResource } = require('clay-resource')
-const { create: clayResourceName } = require('clay-resource-name')
-const { listenMix, queueMix, writeOnceMix } = require('./mixins')
-
-/**
- * @memberof module:@the-/resource
- * @protected
- * @class TheResourceBase
- */
-const TheResourceBase = [listenMix, queueMix].reduce(
-  (Class, mix) => mix(Class),
-  ClayResource,
-)
-
-/** @lends module:@the-/resource.TheResource */
 class TheResource extends TheResourceBase {
   /**
    * Cascade destroy condition

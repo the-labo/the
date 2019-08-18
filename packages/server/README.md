@@ -132,6 +132,8 @@ const { createElement: c } = React
 ## API Guide
 
 
+- InfoFlusher~infoFlusher
+  - [.flushInfo()](./doc/api/api.md#InfoFlusher~infoFlusher.flushInfo)
 - global
   - [IOEvents()](./doc/api/api.md#IOEvents)
 - module:@the-/server
@@ -143,7 +145,6 @@ const { createElement: c } = React
   - [.create(args)](./doc/api/api.md#module_@the-/server.create)
   - [.default()](./doc/api/api.md#module_@the-/server.default)
   - [.helpers](./doc/api/api.md#module_@the-/server.helpers)
-  - [.mixins](./doc/api/api.md#module_@the-/server.mixins)
   - [.stores](./doc/api/api.md#module_@the-/server.stores)
   - [.TheServer](./doc/api/api.md#module_@the-/server.TheServer)
 - module:@the-/server.adapters
@@ -157,6 +158,7 @@ const { createElement: c } = React
 - module:@the-/server.helpers
   - [.asStrictSession(session)](./doc/api/api.md#module_@the-/server.helpers.asStrictSession)
   - [.callbacksProxy()](./doc/api/api.md#module_@the-/server.helpers.callbacksProxy)
+  - [.ClientAccess(config)](./doc/api/api.md#module_@the-/server.helpers.ClientAccess)
   - [.ctxInjector(creators)](./doc/api/api.md#module_@the-/server.helpers.ctxInjector)
   - [.InfoFlusher(filename,getter)](./doc/api/api.md#module_@the-/server.helpers.InfoFlusher)
   - [.langDetector(locales,options)](./doc/api/api.md#module_@the-/server.helpers.langDetector)
@@ -169,48 +171,36 @@ const { createElement: c } = React
   - [.toControllerDriverFactory()](./doc/api/api.md#module_@the-/server.helpers.toControllerDriverFactory)
   - [.toLowerKeys()](./doc/api/api.md#module_@the-/server.helpers.toLowerKeys)
   - [~StreamDriverPool](./doc/api/api.md#module_@the-/server.helpers~StreamDriverPool)
+- module:@the-/server.helpers.ClientAccess
+  - [~clientAccess](./doc/api/api.md#module_@the-/server.helpers.ClientAccess~clientAccess)
 - module:@the-/server.helpers.InfoFlusher
   - [~infoFlusher](./doc/api/api.md#module_@the-/server.helpers.InfoFlusher~infoFlusher)
-- module:@the-/server.helpers.InfoFlusher~infoFlusher
-  - [.flushInfo()](./doc/api/api.md#module_@the-/server.helpers.InfoFlusher~infoFlusher.flushInfo)
 - module:@the-/server.helpers.metricsMix
   - [~metricsCounter](./doc/api/api.md#module_@the-/server.helpers.metricsMix~metricsCounter)
 - module:@the-/server.helpers.RPCKeeper
   - [~rpcKeeper](./doc/api/api.md#module_@the-/server.helpers.RPCKeeper~rpcKeeper)
-- module:@the-/server.mixins
-  - [.clientMix(Class)](./doc/api/api.md#module_@the-/server.mixins.clientMix)
-- module:@the-/server.mixins.clientMix
-  - [~ClientMixed](./doc/api/api.md#module_@the-/server.mixins.clientMix~ClientMixed)
 - module:@the-/server.stores
   - [.ConnectionStore](./doc/api/api.md#module_@the-/server.stores.ConnectionStore)
   - [.SessionStore](./doc/api/api.md#module_@the-/server.stores.SessionStore)
   - [.Store](./doc/api/api.md#module_@the-/server.stores.Store)
-- module:@the-/server.stores.ConnectionStore
-  - [#cleanup()](./doc/api/api.md#module_@the-/server.stores.ConnectionStore#cleanup)
-  - [#del(id)](./doc/api/api.md#module_@the-/server.stores.ConnectionStore#del)
-  - [#delAll()](./doc/api/api.md#module_@the-/server.stores.ConnectionStore#delAll)
-  - [#get(id)](./doc/api/api.md#module_@the-/server.stores.ConnectionStore#get)
-  - [#has(id)](./doc/api/api.md#module_@the-/server.stores.ConnectionStore#has)
-  - [#ids()](./doc/api/api.md#module_@the-/server.stores.ConnectionStore#ids)
-  - [#set(id,data)](./doc/api/api.md#module_@the-/server.stores.ConnectionStore#set)
-- module:@the-/server.stores.Store
-  - [#cleanup()](./doc/api/api.md#module_@the-/server.stores.Store#cleanup)
-  - [#del(id)](./doc/api/api.md#module_@the-/server.stores.Store#del)
-  - [#delAll()](./doc/api/api.md#module_@the-/server.stores.Store#delAll)
-  - [#get(id)](./doc/api/api.md#module_@the-/server.stores.Store#get)
-  - [#has(id)](./doc/api/api.md#module_@the-/server.stores.Store#has)
-  - [#ids()](./doc/api/api.md#module_@the-/server.stores.Store#ids)
-  - [#set(id,data)](./doc/api/api.md#module_@the-/server.stores.Store#set)
 - module:@the-/server.streaming
   - [.toStreamDriverFactory()](./doc/api/api.md#module_@the-/server.streaming.toStreamDriverFactory)
-- module:@the-/server.TheServer
-  - [#close(args)](./doc/api/api.md#module_@the-/server.TheServer#close)
-  - [#destroyAllSessions()](./doc/api/api.md#module_@the-/server.TheServer#destroyAllSessions)
-  - [#info()](./doc/api/api.md#module_@the-/server.TheServer#info)
-  - [#listen(port)](./doc/api/api.md#module_@the-/server.TheServer#listen)
 - SessionAccess~sessionAccess
   - [.reload()](./doc/api/api.md#SessionAccess~sessionAccess.reload)
   - [.save(options)](./doc/api/api.md#SessionAccess~sessionAccess.save)
+- Store
+  - [#cleanup()](./doc/api/api.md#Store#cleanup)
+  - [#del(id)](./doc/api/api.md#Store#del)
+  - [#delAll()](./doc/api/api.md#Store#delAll)
+  - [#get(id)](./doc/api/api.md#Store#get)
+  - [#has(id)](./doc/api/api.md#Store#has)
+  - [#ids()](./doc/api/api.md#Store#ids)
+  - [#set(id,data)](./doc/api/api.md#Store#set)
+- TheServer
+  - [#close(args)](./doc/api/api.md#TheServer#close)
+  - [#destroyAllSessions()](./doc/api/api.md#TheServer#destroyAllSessions)
+  - [#info()](./doc/api/api.md#TheServer#info)
+  - [#listen(port)](./doc/api/api.md#TheServer#listen)
 
 See [API Guide](./doc/api/api.md) for more detail
 

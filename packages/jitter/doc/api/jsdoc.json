@@ -7,13 +7,13 @@
     "longname": "module:@the-/jitter",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/jitter",
     "order": 2,
     "typicalname": "jitter",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "id": "module:@the-/jitter.TheJitter()",
@@ -38,13 +38,13 @@
   },
   {
     "description": "Decrement count",
-    "id": "module:@the-/jitter.TheJitter#decrementCount",
+    "id": "TheJitter#decrementCount",
     "kind": "function",
-    "longname": "module:@the-/jitter.TheJitter#decrementCount",
-    "memberof": "module:@the-/jitter.TheJitter",
+    "longname": "TheJitter#decrementCount",
+    "memberof": "TheJitter",
     "meta": {
       "filename": "TheJitter.js",
-      "lineno": 27,
+      "lineno": 29,
       "path": "lib"
     },
     "name": "decrementCount",
@@ -54,13 +54,13 @@
   },
   {
     "description": "Increment count",
-    "id": "module:@the-/jitter.TheJitter#incrementCount",
+    "id": "TheJitter#incrementCount",
     "kind": "function",
-    "longname": "module:@the-/jitter.TheJitter#incrementCount",
-    "memberof": "module:@the-/jitter.TheJitter",
+    "longname": "TheJitter#incrementCount",
+    "memberof": "TheJitter",
     "meta": {
       "filename": "TheJitter.js",
-      "lineno": 42,
+      "lineno": 45,
       "path": "lib"
     },
     "name": "incrementCount",
@@ -70,13 +70,13 @@
   },
   {
     "description": "Reset count",
-    "id": "module:@the-/jitter.TheJitter#resetCount",
+    "id": "TheJitter#resetCount",
     "kind": "function",
-    "longname": "module:@the-/jitter.TheJitter#resetCount",
-    "memberof": "module:@the-/jitter.TheJitter",
+    "longname": "TheJitter#resetCount",
+    "memberof": "TheJitter",
     "meta": {
       "filename": "TheJitter.js",
-      "lineno": 61,
+      "lineno": 65,
       "path": "lib"
     },
     "name": "resetCount",
@@ -87,13 +87,13 @@
   {
     "async": true,
     "description": "Handle action",
-    "id": "module:@the-/jitter.TheJitter#handle",
+    "id": "TheJitter#handle",
     "kind": "function",
-    "longname": "module:@the-/jitter.TheJitter#handle",
-    "memberof": "module:@the-/jitter.TheJitter",
+    "longname": "TheJitter#handle",
+    "memberof": "TheJitter",
     "meta": {
       "filename": "TheJitter.js",
-      "lineno": 70,
+      "lineno": 74,
       "path": "lib"
     },
     "name": "handle",
@@ -122,13 +122,13 @@
   {
     "async": true,
     "description": "Wait for delay",
-    "id": "module:@the-/jitter.TheJitter#wait",
+    "id": "TheJitter#wait",
     "kind": "function",
-    "longname": "module:@the-/jitter.TheJitter#wait",
-    "memberof": "module:@the-/jitter.TheJitter",
+    "longname": "TheJitter#wait",
+    "memberof": "TheJitter",
     "meta": {
       "filename": "TheJitter.js",
-      "lineno": 85,
+      "lineno": 89,
       "path": "lib"
     },
     "name": "wait",
@@ -152,7 +152,7 @@
     "memberof": "module:@the-/jitter",
     "meta": {
       "filename": "TheJitter.js",
-      "lineno": 2,
+      "lineno": 9,
       "path": "lib"
     },
     "name": "TheJitter",
@@ -167,7 +167,7 @@
     "memberof": "module:@the-/jitter",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -202,7 +202,7 @@
     "memberof": "module:@the-/jitter",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",

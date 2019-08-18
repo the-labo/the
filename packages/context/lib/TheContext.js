@@ -1,5 +1,10 @@
 'use strict'
 
+const React = require('react')
+const { TheState } = require('@the-/state')
+const contextEntryFor = require('./helpers/contextEntryFor')
+const contextRootFor = require('./helpers/contextRootFor')
+
 /**
  * Context
  * @memberof module:@the-/context
@@ -7,12 +12,6 @@
  * @param {Object} values
  * @param {Object} [options={}] - Optional settings
  */
-const React = require('react')
-const { TheState } = require('@the-/state')
-const contextEntryFor = require('./helpers/contextEntryFor')
-const contextRootFor = require('./helpers/contextRootFor')
-
-/** @lends module:@the-/context.TheContext */
 class TheContext {
   constructor(values = {}, options = {}) {
     const { store = new TheState({ defaults: values }) } = options

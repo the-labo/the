@@ -1,19 +1,18 @@
 'use strict'
 
-/**
- * Abstract scope class
- * @memberof module:@the-/scope.scopes
- * @abstract
- * @class Scope
- * @param {string} name - Name of state
- * @param {Object} config - Scope config
- */
 const { create: theAssert } = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
 
 const assert = theAssert('the:scope')
 
-/** @lends module:@the-/scope.scopes.Scope */
+/**
+ * Abstract scope class
+ * @memberof module:@the-/scope.scopes
+ * @class Scope
+ * @abstract
+ * @param {string} name - Name of state
+ * @param {Object} config - Scope config
+ */
 class Scope {
   /** @deprecated */
   static withDefault(value) {

@@ -7,34 +7,19 @@
     "longname": "module:@the-/const-ui",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/const-ui",
     "order": 0,
     "typicalname": "constUi",
-    "version": "15.4.7"
-  },
-  {
-    "description": "Width of container",
-    "id": "containerWidth",
-    "kind": "member",
-    "longname": "containerWidth",
-    "meta": {
-      "filename": "ThemeValues.js",
-      "lineno": 46,
-      "path": "lib"
-    },
-    "name": "containerWidth",
-    "order": 11,
-    "scope": "global"
+    "version": "15.4.8"
   },
   {
     "description": "All Supported HTML Attributes",
-    "id": "module:@the-/const-ui.SupportedProps.htmlAttributes",
+    "id": "htmlAttributes",
     "kind": "member",
-    "longname": "module:@the-/const-ui.SupportedProps.htmlAttributes",
-    "memberof": "module:@the-/const-ui.SupportedProps",
+    "longname": "htmlAttributes",
     "meta": {
       "filename": "SupportedProps.js",
       "lineno": 15,
@@ -42,7 +27,7 @@
     },
     "name": "htmlAttributes",
     "order": 2,
-    "scope": "static",
+    "scope": "global",
     "see": [
       "https://facebook.github.io/react/docs/dom-elements.html#all-supported-html-attributes"
     ],
@@ -54,10 +39,9 @@
   },
   {
     "description": "Image Events",
-    "id": "module:@the-/const-ui.SupportedProps.imageEvents",
+    "id": "imageEvents",
     "kind": "member",
-    "longname": "module:@the-/const-ui.SupportedProps.imageEvents",
-    "memberof": "module:@the-/const-ui.SupportedProps",
+    "longname": "imageEvents",
     "meta": {
       "filename": "SupportedProps.js",
       "lineno": 21,
@@ -65,17 +49,16 @@
     },
     "name": "imageEvents",
     "order": 3,
-    "scope": "static",
+    "scope": "global",
     "see": [
       "https://facebook.github.io/react/docs/events.html#image-events"
     ]
   },
   {
     "description": "Media Events",
-    "id": "module:@the-/const-ui.SupportedProps.mediaEvents",
+    "id": "mediaEvents",
     "kind": "member",
-    "longname": "module:@the-/const-ui.SupportedProps.mediaEvents",
-    "memberof": "module:@the-/const-ui.SupportedProps",
+    "longname": "mediaEvents",
     "meta": {
       "filename": "SupportedProps.js",
       "lineno": 26,
@@ -83,17 +66,16 @@
     },
     "name": "mediaEvents",
     "order": 4,
-    "scope": "static",
+    "scope": "global",
     "see": [
       "https://facebook.github.io/react/docs/events.html#media-events"
     ]
   },
   {
     "description": "Mouse Events",
-    "id": "module:@the-/const-ui.SupportedProps.mouseEvents",
+    "id": "mouseEvents",
     "kind": "member",
-    "longname": "module:@the-/const-ui.SupportedProps.mouseEvents",
-    "memberof": "module:@the-/const-ui.SupportedProps",
+    "longname": "mouseEvents",
     "meta": {
       "filename": "SupportedProps.js",
       "lineno": 32,
@@ -101,17 +83,16 @@
     },
     "name": "mouseEvents",
     "order": 5,
-    "scope": "static",
+    "scope": "global",
     "see": [
       "https://facebook.github.io/react/docs/events.html#mouse-events"
     ]
   },
   {
     "description": "Selection Events",
-    "id": "module:@the-/const-ui.SupportedProps.selectionEvents",
+    "id": "selectionEvents",
     "kind": "member",
-    "longname": "module:@the-/const-ui.SupportedProps.selectionEvents",
-    "memberof": "module:@the-/const-ui.SupportedProps",
+    "longname": "selectionEvents",
     "meta": {
       "filename": "SupportedProps.js",
       "lineno": 38,
@@ -119,17 +100,16 @@
     },
     "name": "selectionEvents",
     "order": 6,
-    "scope": "static",
+    "scope": "global",
     "see": [
       "https://facebook.github.io/react/docs/events.html#selection-events"
     ]
   },
   {
     "description": "All Supported SVG Attributes",
-    "id": "module:@the-/const-ui.SupportedProps.svgAttributes",
+    "id": "svgAttributes",
     "kind": "member",
-    "longname": "module:@the-/const-ui.SupportedProps.svgAttributes",
-    "memberof": "module:@the-/const-ui.SupportedProps",
+    "longname": "svgAttributes",
     "meta": {
       "filename": "SupportedProps.js",
       "lineno": 43,
@@ -137,17 +117,16 @@
     },
     "name": "svgAttributes",
     "order": 7,
-    "scope": "static",
+    "scope": "global",
     "see": [
       "https://facebook.github.io/react/docs/dom-elements.html#all-supported-svg-attributes"
     ]
   },
   {
     "description": "Touch Events",
-    "id": "module:@the-/const-ui.SupportedProps.touchEvents",
+    "id": "touchEvents",
     "kind": "member",
-    "longname": "module:@the-/const-ui.SupportedProps.touchEvents",
-    "memberof": "module:@the-/const-ui.SupportedProps",
+    "longname": "touchEvents",
     "meta": {
       "filename": "SupportedProps.js",
       "lineno": 49,
@@ -155,17 +134,16 @@
     },
     "name": "touchEvents",
     "order": 8,
-    "scope": "static",
+    "scope": "global",
     "see": [
       "https://facebook.github.io/react/docs/events.html#touch-events"
     ]
   },
   {
     "description": "UI Events",
-    "id": "module:@the-/const-ui.SupportedProps.uiEvents",
+    "id": "uiEvents",
     "kind": "member",
-    "longname": "module:@the-/const-ui.SupportedProps.uiEvents",
-    "memberof": "module:@the-/const-ui.SupportedProps",
+    "longname": "uiEvents",
     "meta": {
       "filename": "SupportedProps.js",
       "lineno": 54,
@@ -173,7 +151,7 @@
     },
     "name": "uiEvents",
     "order": 9,
-    "scope": "static",
+    "scope": "global",
     "see": [
       "https://facebook.github.io/react/docs/events.html#ui-events"
     ]
@@ -186,7 +164,7 @@
     "memberof": "module:@the-/const-ui",
     "meta": {
       "filename": "SupportedProps.js",
-      "lineno": 2,
+      "lineno": 4,
       "path": "lib"
     },
     "name": "SupportedProps",
@@ -201,7 +179,7 @@
     "memberof": "module:@the-/const-ui",
     "meta": {
       "filename": "ThemeValues.js",
-      "lineno": 2,
+      "lineno": 4,
       "path": "lib"
     },
     "name": "ThemeValues",
@@ -221,11 +199,11 @@
     "memberof": "module:@the-/const-ui",
     "meta": {
       "filename": "VendorColors.js",
-      "lineno": 2,
+      "lineno": 4,
       "path": "lib"
     },
     "name": "VendorColors",
-    "order": 12,
+    "order": 11,
     "scope": "static"
   }
 ]

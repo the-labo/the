@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Create "packageRule" lint
- * @memberof module:@the-/lint.rules
- * @function packageRule
- * @param {Object} config - Lint config
- * @returns {function()} Lint function
- */
 const aglob = require('aglob')
 const { readFileAsync } = require('asfs')
 const path = require('path')
@@ -17,7 +10,13 @@ const {
 } = require('@the-/ast')
 const { parsePattern } = require('../helpers/parseHelper')
 
-/** @lends module:@the-/lint.rules.packageRule */
+/**
+ * Create "packageRule" lint
+ * @memberof module:@the-/lint.rules
+ * @function packageRule
+ * @param {Object} config - Lint config
+ * @returns {function()} Lint function
+ */
 function packageRule(config) {
   const {
     depsUsedIn = [],

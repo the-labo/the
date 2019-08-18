@@ -1,10 +1,3 @@
-/**
- * Scope access
- * @memberof module:@the-/facade-scope
- * @function detailOperationFor
- * @param {Object} scope
- * @returns {Object} - Face object for detailOperation access
- */
 'use strict'
 
 const busyAccessFor = require('../busyAccessFor')
@@ -12,7 +5,13 @@ const entityAccessFor = require('../entityAccessFor')
 const idAccessFor = require('../idAccessFor')
 const readyAccessFor = require('../readyAccessFor')
 
-/** @lends module:@the-/facade-scope.detailOperationFor */
+/**
+ * Scope access
+ * @memberof module:@the-/facade-scope
+ * @function detailOperationFor
+ * @param {Object} scope
+ * @returns {Object} - Face object for detailOperation access
+ */
 function detailOperationFor(scope) {
   const idAccess = idAccessFor(scope)
   const busyAccess = busyAccessFor(scope)

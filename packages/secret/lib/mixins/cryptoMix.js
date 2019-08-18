@@ -13,8 +13,8 @@ const SKIP_CRYPTO_PATTERN = /^[_$]|^\/\//
 function cryptoMix(Class) {
   /**
    * @memberof module:@the-/secret.mixins.cryptoMix
-   * @inner
    * @class CryptoMixed
+   * @inner
    */
   class CryptoMixed extends Class {
     constructor(...args) {

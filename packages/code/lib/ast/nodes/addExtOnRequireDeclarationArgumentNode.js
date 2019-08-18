@@ -25,6 +25,7 @@ const resolveRequirePath = (dirname, requirePath, extToAdd) => {
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function addExtOnRequireDeclarationArgumentNode
+ * @returns {*}
  */
 function addExtOnRequireDeclarationArgumentNode(
   ArgumentNode,

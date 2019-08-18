@@ -10,7 +10,6 @@ Icon generator
 
 * [@the-/icon](#module_@the-/icon)
     * [.TheIcon](#module_@the-/icon.TheIcon)
-        * [.saveAs(filename)](#module_@the-/icon.TheIcon+saveAs) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.Themes](#module_@the-/icon.Themes)
     * [.helpers](#module_@the-/icon.helpers) : <code>object</code>
         * [.applier](#module_@the-/icon.helpers.applier) : <code>object</code>
@@ -23,17 +22,6 @@ Icon generator
 
 ### icon.TheIcon
 **Kind**: static class of [<code>@the-/icon</code>](#module_@the-/icon)  
-<a name="module_@the-/icon.TheIcon+saveAs"></a>
-
-#### theIcon.saveAs(filename) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Save as file
-
-**Kind**: instance method of [<code>TheIcon</code>](#module_@the-/icon.TheIcon)  
-
-| Param | Type |
-| --- | --- |
-| filename | <code>string</code> | 
-
 <a name="module_@the-/icon.Themes"></a>
 
 ### icon.Themes

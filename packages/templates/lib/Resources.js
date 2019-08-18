@@ -5,6 +5,8 @@ const _tmpl = require('./_tmpl')
 /**
  * @memberof module:@the-/templates
  * @function Resources
+ * @param config
+ * @returns {*}
  */
 function Resources(config) {
   const {

@@ -1,14 +1,13 @@
 'use strict'
 
+const LRUCache = require('lru-cache')
+
 /**
  * @memberof module:@the-/cache
  * @class TheCache
  * @augments LRUCache
  * @see https://github.com/isaacs/node-lru-cache#readme
  */
-const LRUCache = require('lru-cache')
-
-/** @lends module:@the-/cache.TheCache */
 class TheCache extends LRUCache {
   /**
    * Get cache or initialize and set

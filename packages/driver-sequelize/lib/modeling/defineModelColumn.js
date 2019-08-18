@@ -1,18 +1,18 @@
 'use strict'
 
-/**
- * Define model column
- * @memberof module:@the-/driver-sequelize.modeling
- * @function defineModelColumn
- * @param {string} propertyName
- * @param {Object} def
- */
 const {
   DataTypes: { BOOLEAN, DATE, ENTITY, ID, NULL, NUMBER, OBJECT, REF, STRING },
 } = require('clay-constants')
 const Sequelize = require('sequelize')
 
-/** @lends module:@the-/driver-sequelize.modeling.defineModelColumn */
+/**
+ * Define model column
+ * @memberof module:@the-/driver-sequelize.modeling
+ * @function defineModelColumn
+ * @param {Object} def
+ * @param {string} propertyName
+ * @returns {*}
+ */
 function defineModelColumn(propertyName, def = {}) {
   const { default: defaultValue, description, required, type } = def
   const base = {

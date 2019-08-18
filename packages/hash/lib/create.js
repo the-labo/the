@@ -1,5 +1,7 @@
 'use strict'
 
+const TheHash = require('./TheHash')
+
 /**
  * Create a TheHash instance
  * @memberof module:@the-/hash
@@ -7,9 +9,6 @@
  * @param {...*} args
  * @returns {TheHash}
  */
-const TheHash = require('./TheHash')
-
-/** @lends module:@the-/hash.create */
 function create(...args) {
   return new TheHash(...args)
 }

@@ -1,3 +1,9 @@
+'use strict'
+
+const busyAccessFor = require('../busyAccessFor')
+const entityAccessFor = require('../entityAccessFor')
+const idAccessFor = require('../idAccessFor')
+
 /**
  * Scope access
  * @memberof module:@the-/facade-scope
@@ -5,13 +11,6 @@
  * @param {Object} scope
  * @returns {Object} - Face object for destroyOperationFor access
  */
-'use strict'
-
-const busyAccessFor = require('../busyAccessFor')
-const entityAccessFor = require('../entityAccessFor')
-const idAccessFor = require('../idAccessFor')
-
-/** @lends module:@the-/facade-scope.destroyOperationFor */
 function destroyOperationFor(scope) {
   const busyAccess = busyAccessFor(scope)
   const idAccess = idAccessFor(scope)

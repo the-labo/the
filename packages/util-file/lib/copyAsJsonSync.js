@@ -1,15 +1,15 @@
 'use strict'
 
-/**
- * @memberof module:@the-/util-file
- * @function copyAsJsonSync
- * @param {string} src
- * @param {string} dest
- */
 const readAsJsonSync = require('./readAsJsonSync')
 const writeAsJsonSync = require('./writeAsJsonSync')
 
-/** @lends module:@the-/util-file.copyAsJsonSync */
+/**
+ * @memberof module:@the-/util-file
+ * @function copyAsJsonSync
+ * @param {string} dest
+ * @param {string} src
+ * @returns {*}
+ */
 function copyAsJsonSync(src, dest) {
   const data = readAsJsonSync(src)
   if (data) {

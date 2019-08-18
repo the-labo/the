@@ -4,7 +4,6 @@
  * @memberof module:@the-/handle
  * @namespace helpers
  */
-/** @lends module:@the-/handle.helpers */
 module.exports = {
   allMethodNames(instance) {
     const names = []

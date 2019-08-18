@@ -34,6 +34,7 @@ const propertyNamesFor = (objectPatternNode) => {
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function normalizeKindOnVariableDeclarationNode
+ * @returns {*}
  */
 function normalizeKindOnVariableDeclarationNode(
   VariableDeclaration,

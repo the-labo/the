@@ -1,5 +1,7 @@
 'use strict'
 
+const TheSeed = require('./TheSeed')
+
 /**
  * Create a TheSeed instance
  * @memberof module:@the-/seed
@@ -7,9 +9,6 @@
  * @param {...*} args
  * @returns {TheSeed}
  */
-const TheSeed = require('./TheSeed')
-
-/** @lends module:@the-/seed.create */
 function create(...args) {
   return new TheSeed(...args)
 }

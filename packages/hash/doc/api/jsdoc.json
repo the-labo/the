@@ -7,13 +7,13 @@
     "longname": "module:@the-/hash",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/hash",
     "order": 2,
     "typicalname": "hash",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "id": "module:@the-/hash.TheHash()",
@@ -35,10 +35,10 @@
   },
   {
     "description": "Get value for key",
-    "id": "module:@the-/hash.TheHash#get",
+    "id": "TheHash#get",
     "kind": "function",
-    "longname": "module:@the-/hash.TheHash#get",
-    "memberof": "module:@the-/hash.TheHash",
+    "longname": "TheHash#get",
+    "memberof": "TheHash",
     "meta": {
       "filename": "TheHash.js",
       "lineno": 21,
@@ -69,10 +69,10 @@
   },
   {
     "description": "Has value for",
-    "id": "module:@the-/hash.TheHash#has",
+    "id": "TheHash#has",
     "kind": "function",
-    "longname": "module:@the-/hash.TheHash#has",
-    "memberof": "module:@the-/hash.TheHash",
+    "longname": "TheHash#has",
+    "memberof": "TheHash",
     "meta": {
       "filename": "TheHash.js",
       "lineno": 30,
@@ -103,10 +103,10 @@
   },
   {
     "description": "Set value for key",
-    "id": "module:@the-/hash.TheHash#set",
+    "id": "TheHash#set",
     "kind": "function",
-    "longname": "module:@the-/hash.TheHash#set",
-    "memberof": "module:@the-/hash.TheHash",
+    "longname": "TheHash#set",
+    "memberof": "TheHash",
     "meta": {
       "filename": "TheHash.js",
       "lineno": 39,
@@ -138,13 +138,13 @@
   },
   {
     "description": "Convert into proxy",
-    "id": "module:@the-/hash.TheHash#toProxy",
+    "id": "TheHash#toProxy",
     "kind": "function",
-    "longname": "module:@the-/hash.TheHash#toProxy",
-    "memberof": "module:@the-/hash.TheHash",
+    "longname": "TheHash#toProxy",
+    "memberof": "TheHash",
     "meta": {
       "filename": "TheHash.js",
-      "lineno": 55,
+      "lineno": 56,
       "path": "lib"
     },
     "name": "toProxy",
@@ -179,7 +179,7 @@
     "memberof": "module:@the-/hash",
     "meta": {
       "filename": "TheHash.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "TheHash",
@@ -194,7 +194,7 @@
     "memberof": "module:@the-/hash",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -229,7 +229,7 @@
     "memberof": "module:@the-/hash",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
@@ -253,7 +253,7 @@
     "memberof": "module:@the-/hash",
     "meta": {
       "filename": "proxy.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "proxy",

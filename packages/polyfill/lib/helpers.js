@@ -1,9 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/polyfill
- * @namespace helpers
- */
 const { get } = require('bwindow')
 
 const withDocument = (callback) => {
@@ -32,7 +28,10 @@ const withWindow = (callback) => {
   callback(window)
 }
 
-/** @lends module:@the-/polyfill.helpers */
+/**
+ * @memberof module:@the-/polyfill
+ * @namespace helpers
+ */
 module.exports = {
   withDocument,
   withWindow,

@@ -35,15 +35,15 @@ const _apiLink = (item) => {
  * Define bud for README.md
  * @memberof module:@the-/templates
  * @function Readme
- * @param {object} config - Configuration.
+ * @param {Object} config - Configuration.
  * @param {string} config.sections - Section file path.
- * @param {object} config.pkg - Package data.
+ * @param {Object} config.pkg - Package data.
  * @param {string} config.repo - GitHub Repository name. (eg. 'ape-repo/ap-tmpl')
- * @param {object} config.badges - Badge data.
- * @param {object} config.links - Link urls.
+ * @param {Object} config.badges - Badge data.
+ * @param {Object} config.links - Link urls.
  * @param {string} config.overview - Overview file path.
- * @param {object} config.vars - Custom variables.
- * @returns {object} - Bud object.
+ * @param {Object} config.vars - Custom variables.
+ * @returns {Object} - Bud object.
  */
 function readmeBud(config = {}) {
   const { api, path: path_ = 'README.md', pkg, repo, sections } = config

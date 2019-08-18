@@ -1,17 +1,18 @@
 'use strict'
 
-/**
- * Add cli methods
- * @memberof module:@the-/db
- * @function cliMix
- */
 const aslogger = require('aslogger')
 const { clone } = require('asobj')
 const { inspect } = require('util')
 const { evalScript } = require('@the-/util-db')
 const createTerminal = require('../helpers/createTerminal')
 
-/** @lends module:@the-/db.cliMix */
+/**
+ * Add cli methods
+ * @memberof module:@the-/db
+ * @function cliMix
+ * @param Class
+ * @returns {*}
+ */
 function cliMix(Class) {
   /**
    * @memberof module:@the-/db.cliMix

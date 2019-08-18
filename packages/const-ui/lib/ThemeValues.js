@@ -1,11 +1,11 @@
 'use strict'
-/**
- * Style theme values
- * @memberof module:@the-/const-ui
- * @namespace {string} ThemeValues
- */
+
 const ThemeValues = Object.freeze(
-  /** @lends module:@the-/const-ui.ThemeValues */
+  /**
+   * Style theme values
+   * @memberof module:@the-/const-ui
+   * @namespace {string} ThemeValues
+   */
   {
     activeOpacity: 0.8,
     altTextColor: '#AAA',

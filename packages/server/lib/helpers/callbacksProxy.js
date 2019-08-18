@@ -4,6 +4,7 @@
  * Callback proxy
  * @memberof module:@the-/server.helpers
  * @function callbacksProxy
+ * @param [options={}]
  * @returns {Proxy} Proxy instance
  */
 function callbacksProxy(options = {}) {

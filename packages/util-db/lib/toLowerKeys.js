@@ -1,5 +1,7 @@
 'use strict'
 
+const { snakecase } = require('stringcase')
+
 /**
  * Make object keys to lower
  * @memberof module:@the-/util-db
@@ -7,9 +9,6 @@
  * @param {Object} obj
  * @returns {Object}
  */
-const { snakecase } = require('stringcase')
-
-/** @lends module:@the-/util-db.toLowerKeys */
 function toLowerKeys(obj = {}) {
   return Object.keys(obj).reduce(
     (result, name) => ({

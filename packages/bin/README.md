@@ -89,12 +89,12 @@ tryExample().catch((err) => console.error(err))
 - module:@the-/bin
   - [.create(args)](./doc/api/api.md#module_@the-/bin.create)
   - [.TheBin](./doc/api/api.md#module_@the-/bin.TheBin)
-- module:@the-/bin.TheBin
-  - [#exec(args)](./doc/api/api.md#module_@the-/bin.TheBin#exec)
-  - [#exists()](./doc/api/api.md#module_@the-/bin.TheBin#exists)
-  - [#satisfiesVersion(versionString)](./doc/api/api.md#module_@the-/bin.TheBin#satisfiesVersion)
-  - [#verify(options)](./doc/api/api.md#module_@the-/bin.TheBin#verify)
-  - [#version()](./doc/api/api.md#module_@the-/bin.TheBin#version)
+- TheBin
+  - [#exec(args)](./doc/api/api.md#TheBin#exec)
+  - [#exists()](./doc/api/api.md#TheBin#exists)
+  - [#satisfiesVersion(versionString)](./doc/api/api.md#TheBin#satisfiesVersion)
+  - [#verify(options)](./doc/api/api.md#TheBin#verify)
+  - [#version()](./doc/api/api.md#TheBin#version)
 
 See [API Guide](./doc/api/api.md) for more detail
 

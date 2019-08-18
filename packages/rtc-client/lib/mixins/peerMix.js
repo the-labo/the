@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Mixin for peer
- * @memberof module:@the-/rtc.constants.mixins
- * @function peerMix
- * @param {function()} Class
- * @returns {function()} Class
- */
 const wrtc = require('wrtc')
 const { get } = require('@the-/window')
 const ChannelNames = require('../constants/ChannelNames')
@@ -18,7 +11,13 @@ const RTCSessionDescription =
   get('RTCSessionDescription') || wrtc.RTCSessionDescription
 const RTCIceCandidate = get('RTCIceCandidate') || wrtc.RTCIceCandidate
 
-/** @lends module:@the-/rtc.constants.mixins.peerMix */
+/**
+ * Mixin for peer
+ * @memberof module:@the-/rtc.constants.mixins
+ * @function peerMix
+ * @param {function()} Class
+ * @returns {function()} Class
+ */
 function peerMix(Class) {
   class PeerMixed extends Class {
     constructor() {

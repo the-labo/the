@@ -7,14 +7,11 @@
  */
 'use strict'
 
-const infoMix_ = require('./infoMix')
 const pingPongMix_ = require('./pingPongMix')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
-exports.infoMix = infoMix_
 exports.pingPongMix = pingPongMix_
 
 module.exports = {
-  infoMix: infoMix_,
   pingPongMix: pingPongMix_,
 }

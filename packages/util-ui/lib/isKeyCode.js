@@ -1,5 +1,7 @@
 'use strict'
 
+const keycode = require('keycode')
+
 /**
  * Key code detector
  * @memberof module:@the-/util-ui
@@ -8,9 +10,6 @@
  * @param {string|number} name - Name of key code to compare
  * @returns {boolean}
  */
-const keycode = require('keycode')
-
-/** @lends module:@the-/util-ui.isKeyCode */
 function isKeyCode(name, code) {
   return (
     code === name ||

@@ -4,7 +4,7 @@
 'use strict'
 
 const { Readme } = require('@the-/templates')
-const pkg = require('./package')
+const pkg = require('./package.json')
 
 module.exports = Readme({
   badges: { npm: true },

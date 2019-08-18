@@ -1,3 +1,8 @@
+'use strict'
+
+const asleep = require('asleep')
+const get = require('./get')
+
 /**
  * Reload location
  * @memberof module:@the-/window
@@ -5,12 +10,6 @@
  * @param {Object} [options={}] - Optional setting
  * @returns {Promise<undefined>}
  */
-'use strict'
-
-const asleep = require('asleep')
-const get = require('./get')
-
-/** @lends module:@the-/window.reload */
 async function reload(options = {}) {
   const location = get('location')
   const { timeout = 30000 } = options

@@ -1,23 +1,22 @@
 'use strict'
 
-/**
- * Mount element on DOM
- * @memberof module:@the-/entrypoint
- * @function mount
- * @param {*} element - React element
- * @param {string} containerId - Id of container dom
- * @param {object} [options] - Optional settings
- * @param {boolean} [options.strictMode] - Using strict mode
- * @param {boolean} [options.router] - Use router
- * @returns {Promise}
- */
 const { StrictMode, createElement: c } = require('react')
 const { render } = require('react-dom')
 const { TheRouter } = require('@the-/ui-router')
 const { get } = require('@the-/window')
 const history = require('./history')
 
-/** @lends module:@the-/entrypoint.mount */
+/**
+ * Mount element on DOM
+ * @memberof module:@the-/entrypoint
+ * @function mount
+ * @param {*} element - React element
+ * @param {string} containerId - Id of container dom
+ * @param {Object} [options] - Optional settings
+ * @param {boolean} [options.strictMode] - Using strict mode
+ * @param {boolean} [options.router] - Use router
+ * @returns {Promise}
+ */
 function mount(element, containerId, options = {}) {
   const { router = false, strictMode = false } = options
   const document = get('window.document')

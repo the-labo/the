@@ -3,8 +3,9 @@
 /**
  * @memberof module:@the-/db.setup
  * @function setupPostgres
+ * @param env
+ * @param [options={}]
  */
-/** @lends module:@the-/db.setup.setupPostgres */
 async function setupPostgres(env, options = {}) {
   throw new Error('Not implemented!')
 }

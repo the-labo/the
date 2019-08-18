@@ -1,14 +1,13 @@
 'use strict'
 
+const Counter = require('./Counter')
+
 /**
  * Count react rendering counts
  * @memberof module:@the-/metrics.counters
  * @class ClassMethodCallCounter
  * @augments Counter
  */
-const Counter = require('./Counter')
-
-/** @lends module:@the-/metrics.counters.ClassMethodCallCounter */
 class ClassMethodCallCounter extends Counter {
   constructor(context = {}) {
     super(context)

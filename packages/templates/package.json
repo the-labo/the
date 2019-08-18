@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@the-/assert": "^15.4.1",
-    "@the-/const-code": "^15.4.8",
+    "@the-/const-code": "^15.5.1",
     "@the-/util-path": "^15.4.4",
     "aglob": "^3.0.2",
     "evaljson": "^6.0.4",

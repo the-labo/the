@@ -1,16 +1,9 @@
 'use strict'
 
 /**
- * withSort mixin
- * @memberof module:@the-/mixin-scene
- * @function withSort
- * @param {function()} Class - Class to mix
- * @returns {function()} Mixed class
- */
-/**
  * @memberof module:@the-/mixin-scene.withSort
- * @inner
  * @class WithSortMixed
+ * @inner
  */
 const asClassMixin = require('./helpers/asClassMixin')
 const injectProperties = require('./helpers/injectProperties')
@@ -25,7 +18,13 @@ const normalizeSort = (key) => {
   return key.replace(/^-/, '') || ''
 }
 
-/** @lends module:@the-/mixin-scene.withSort */
+/**
+ * withSort mixin
+ * @memberof module:@the-/mixin-scene
+ * @function withSort
+ * @param {function()} Class - Class to mix
+ * @returns {function()} Mixed class
+ */
 const withSort = asClassMixin((Class) => {
   injectProperties(
     Class,

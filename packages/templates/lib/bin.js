@@ -4,9 +4,9 @@
  * Define bud for bin scripts
  * @memberof module:@the-/templates
  * @function bin
- * @param {object} config - Configuration
- * @param {object} config.signature - bin signature.
- * @returns {object} - Bud object.
+ * @param {Object} config - Configuration
+ * @param {Object} config.signature - bin signature.
+ * @returns {Object} - Bud object.
  */
 const assert = require('assert')
 const evaljson = require('evaljson')

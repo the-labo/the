@@ -1,10 +1,3 @@
-/**
- * Scope access
- * @memberof module:@the-/facade-scope
- * @function editOperationFor
- * @param {Object} scope
- * @returns {Object} - Face object for editOperationFor access
- */
 'use strict'
 
 const busyAccessFor = require('../busyAccessFor')
@@ -12,7 +5,13 @@ const entityAccessFor = require('../entityAccessFor')
 const entryAccessFor = require('../entryAccessFor')
 const idAccessFor = require('../idAccessFor')
 
-/** @lends module:@the-/facade-scope.editOperationFor */
+/**
+ * Scope access
+ * @memberof module:@the-/facade-scope
+ * @function editOperationFor
+ * @param {Object} scope
+ * @returns {Object} - Face object for editOperationFor access
+ */
 function editOperationFor(scope) {
   const idAccess = idAccessFor(scope)
   const entryAccess = entryAccessFor(scope)

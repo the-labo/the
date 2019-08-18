@@ -7,13 +7,13 @@
     "longname": "module:@the-/entrypoint",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/entrypoint",
     "order": 1,
     "typicalname": "entrypoint",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "access": "protected",
@@ -24,7 +24,7 @@
     "memberof": "module:@the-/entrypoint",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "helpers",
@@ -39,7 +39,7 @@
     "memberof": "module:@the-/entrypoint",
     "meta": {
       "filename": "history.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "history",
@@ -64,7 +64,7 @@
     "memberof": "module:@the-/entrypoint",
     "meta": {
       "filename": "mount.js",
-      "lineno": 2,
+      "lineno": 9,
       "path": "lib"
     },
     "name": "mount",
@@ -91,7 +91,7 @@
       {
         "type": {
           "names": [
-            "object"
+            "Object"
           ]
         },
         "optional": true,
@@ -138,7 +138,7 @@
     "memberof": "module:@the-/entrypoint",
     "meta": {
       "filename": "online.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "online",
@@ -166,7 +166,7 @@
     "memberof": "module:@the-/entrypoint",
     "meta": {
       "filename": "patch.js",
-      "lineno": 2,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "patch",
@@ -181,7 +181,7 @@
     "memberof": "module:@the-/entrypoint",
     "meta": {
       "filename": "quelize.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "quelize",
@@ -191,11 +191,20 @@
         "type": {
           "names": [
             "function",
-            "object"
+            "Object"
           ]
         },
         "description": "or its builder",
         "name": "values"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
       }
     ],
     "scope": "static"
@@ -208,7 +217,7 @@
     "memberof": "module:@the-/entrypoint",
     "meta": {
       "filename": "secure.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "secure",
@@ -246,7 +255,7 @@
     "memberof": "module:@the-/entrypoint",
     "meta": {
       "filename": "singleton.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "singleton",
@@ -274,7 +283,7 @@
     "memberof": "module:@the-/entrypoint",
     "meta": {
       "filename": "workers.js",
-      "lineno": 2,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "workers",
@@ -309,11 +318,20 @@
     "memberof": "module:@the-/entrypoint.helpers",
     "meta": {
       "filename": "createStyleElement.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/helpers"
     },
     "name": "createStyleElement",
     "order": 9,
+    "params": [
+      {
+        "name": "cssString"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
     "returns": [
       {
         "type": {

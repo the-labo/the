@@ -9,6 +9,7 @@ const _tmpl = require('./_tmpl')
  * Define bud for mapping
  * @memberof module:@the-/templates
  * @function mapping
+ * @param config
  * @returns {Object}
  */
 function mapping(config) {

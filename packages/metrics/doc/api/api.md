@@ -11,11 +11,6 @@ Performance measures for the-framework
 * [@the-/metrics](#module_@the-/metrics)
     * [.TheMetrics](#module_@the-/metrics.TheMetrics)
         * [new TheMetrics([options])](#new_module_@the-/metrics.TheMetrics_new)
-        * [.bindClassMethodCallCounter(name, config)](#module_@the-/metrics.TheMetrics+bindClassMethodCallCounter)
-        * ~~[.bindMethodCallCounter()](#module_@the-/metrics.TheMetrics+bindMethodCallCounter)~~
-        * [.bindObjectMethodCallCounter(name, config)](#module_@the-/metrics.TheMetrics+bindObjectMethodCallCounter)
-        * [.flush()](#module_@the-/metrics.TheMetrics+flush)
-        * [.start()](#module_@the-/metrics.TheMetrics+start)
     * [.create(...args)](#module_@the-/metrics.create) ⇒ <code>TheMetrics</code>
     * [.default()](#module_@the-/metrics.default)
 
@@ -23,15 +18,6 @@ Performance measures for the-framework
 
 ### metrics.TheMetrics
 **Kind**: static class of [<code>@the-/metrics</code>](#module_@the-/metrics)  
-
-* [.TheMetrics](#module_@the-/metrics.TheMetrics)
-    * [new TheMetrics([options])](#new_module_@the-/metrics.TheMetrics_new)
-    * [.bindClassMethodCallCounter(name, config)](#module_@the-/metrics.TheMetrics+bindClassMethodCallCounter)
-    * ~~[.bindMethodCallCounter()](#module_@the-/metrics.TheMetrics+bindMethodCallCounter)~~
-    * [.bindObjectMethodCallCounter(name, config)](#module_@the-/metrics.TheMetrics+bindObjectMethodCallCounter)
-    * [.flush()](#module_@the-/metrics.TheMetrics+flush)
-    * [.start()](#module_@the-/metrics.TheMetrics+start)
-
 <a name="new_module_@the-/metrics.TheMetrics_new"></a>
 
 #### new TheMetrics([options])
@@ -40,48 +26,6 @@ Performance measures for the-framework
 | --- | --- | --- | --- |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 
-<a name="module_@the-/metrics.TheMetrics+bindClassMethodCallCounter"></a>
-
-#### theMetrics.bindClassMethodCallCounter(name, config)
-Bind class method call counter
-
-**Kind**: instance method of [<code>TheMetrics</code>](#module_@the-/metrics.TheMetrics)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| name | <code>string</code> | Name of counter |
-| config | <code>Object</code> |  |
-
-<a name="module_@the-/metrics.TheMetrics+bindMethodCallCounter"></a>
-
-#### ~~theMetrics.bindMethodCallCounter()~~
-***Deprecated***
-
-**Kind**: instance method of [<code>TheMetrics</code>](#module_@the-/metrics.TheMetrics)  
-<a name="module_@the-/metrics.TheMetrics+bindObjectMethodCallCounter"></a>
-
-#### theMetrics.bindObjectMethodCallCounter(name, config)
-Bind object method call counter
-
-**Kind**: instance method of [<code>TheMetrics</code>](#module_@the-/metrics.TheMetrics)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| name | <code>string</code> | Name of counter |
-| config | <code>Object</code> |  |
-
-<a name="module_@the-/metrics.TheMetrics+flush"></a>
-
-#### theMetrics.flush()
-Flush metrics data
-
-**Kind**: instance method of [<code>TheMetrics</code>](#module_@the-/metrics.TheMetrics)  
-<a name="module_@the-/metrics.TheMetrics+start"></a>
-
-#### theMetrics.start()
-Start measuring
-
-**Kind**: instance method of [<code>TheMetrics</code>](#module_@the-/metrics.TheMetrics)  
 <a name="module_@the-/metrics.create"></a>
 
 ### metrics.create(...args) ⇒ <code>TheMetrics</code>

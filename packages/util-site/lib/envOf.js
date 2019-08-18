@@ -4,10 +4,10 @@
  * Get env variables
  * @memberof module:@the-/util-site
  * @function envOf
- * @param {string} - name - Name of env
  * @param {Object} [options.strict]
+ * @param {string} - name - Name of env
+ * @returns {*}
  */
-/** @lends module:@the-/util-site.envOf */
 function envOf(name, options = {}) {
   const { strict = false } = options
   const { env } = process

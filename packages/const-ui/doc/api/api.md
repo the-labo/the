@@ -11,8 +11,29 @@
 ## Members
 
 <dl>
-<dt><a href="#containerWidth">containerWidth</a></dt>
-<dd><p>Width of container</p>
+<dt><a href="#htmlAttributes">htmlAttributes</a> : <code>string</code></dt>
+<dd><p>All Supported HTML Attributes</p>
+</dd>
+<dt><a href="#imageEvents">imageEvents</a></dt>
+<dd><p>Image Events</p>
+</dd>
+<dt><a href="#mediaEvents">mediaEvents</a></dt>
+<dd><p>Media Events</p>
+</dd>
+<dt><a href="#mouseEvents">mouseEvents</a></dt>
+<dd><p>Mouse Events</p>
+</dd>
+<dt><a href="#selectionEvents">selectionEvents</a></dt>
+<dd><p>Selection Events</p>
+</dd>
+<dt><a href="#svgAttributes">svgAttributes</a></dt>
+<dd><p>All Supported SVG Attributes</p>
+</dd>
+<dt><a href="#touchEvents">touchEvents</a></dt>
+<dd><p>Touch Events</p>
+</dd>
+<dt><a href="#uiEvents">uiEvents</a></dt>
+<dd><p>UI Events</p>
 </dd>
 </dl>
 
@@ -21,19 +42,11 @@
 ## @the-/const-ui
 Constants for the-components
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/const-ui](#module_@the-/const-ui)
     * [.SupportedProps](#module_@the-/const-ui.SupportedProps) : <code>object</code>
-        * [.htmlAttributes](#module_@the-/const-ui.SupportedProps.htmlAttributes) : <code>string</code>
-        * [.imageEvents](#module_@the-/const-ui.SupportedProps.imageEvents)
-        * [.mediaEvents](#module_@the-/const-ui.SupportedProps.mediaEvents)
-        * [.mouseEvents](#module_@the-/const-ui.SupportedProps.mouseEvents)
-        * [.selectionEvents](#module_@the-/const-ui.SupportedProps.selectionEvents)
-        * [.svgAttributes](#module_@the-/const-ui.SupportedProps.svgAttributes)
-        * [.touchEvents](#module_@the-/const-ui.SupportedProps.touchEvents)
-        * [.uiEvents](#module_@the-/const-ui.SupportedProps.uiEvents)
     * [.ThemeValues](#module_@the-/const-ui.ThemeValues) : <code>object</code>
     * [.VendorColors](#module_@the-/const-ui.VendorColors) : <code>object</code>
 
@@ -43,73 +56,6 @@ Constants for the-components
 Supported props
 
 **Kind**: static namespace of [<code>@the-/const-ui</code>](#module_@the-/const-ui)  
-
-* [.SupportedProps](#module_@the-/const-ui.SupportedProps) : <code>object</code>
-    * [.htmlAttributes](#module_@the-/const-ui.SupportedProps.htmlAttributes) : <code>string</code>
-    * [.imageEvents](#module_@the-/const-ui.SupportedProps.imageEvents)
-    * [.mediaEvents](#module_@the-/const-ui.SupportedProps.mediaEvents)
-    * [.mouseEvents](#module_@the-/const-ui.SupportedProps.mouseEvents)
-    * [.selectionEvents](#module_@the-/const-ui.SupportedProps.selectionEvents)
-    * [.svgAttributes](#module_@the-/const-ui.SupportedProps.svgAttributes)
-    * [.touchEvents](#module_@the-/const-ui.SupportedProps.touchEvents)
-    * [.uiEvents](#module_@the-/const-ui.SupportedProps.uiEvents)
-
-<a name="module_@the-/const-ui.SupportedProps.htmlAttributes"></a>
-
-#### SupportedProps.htmlAttributes : <code>string</code>
-All Supported HTML Attributes
-
-**Kind**: static property of [<code>SupportedProps</code>](#module_@the-/const-ui.SupportedProps)  
-**See**: https://facebook.github.io/react/docs/dom-elements.html#all-supported-html-attributes  
-<a name="module_@the-/const-ui.SupportedProps.imageEvents"></a>
-
-#### SupportedProps.imageEvents
-Image Events
-
-**Kind**: static property of [<code>SupportedProps</code>](#module_@the-/const-ui.SupportedProps)  
-**See**: https://facebook.github.io/react/docs/events.html#image-events  
-<a name="module_@the-/const-ui.SupportedProps.mediaEvents"></a>
-
-#### SupportedProps.mediaEvents
-Media Events
-
-**Kind**: static property of [<code>SupportedProps</code>](#module_@the-/const-ui.SupportedProps)  
-**See**: https://facebook.github.io/react/docs/events.html#media-events  
-<a name="module_@the-/const-ui.SupportedProps.mouseEvents"></a>
-
-#### SupportedProps.mouseEvents
-Mouse Events
-
-**Kind**: static property of [<code>SupportedProps</code>](#module_@the-/const-ui.SupportedProps)  
-**See**: https://facebook.github.io/react/docs/events.html#mouse-events  
-<a name="module_@the-/const-ui.SupportedProps.selectionEvents"></a>
-
-#### SupportedProps.selectionEvents
-Selection Events
-
-**Kind**: static property of [<code>SupportedProps</code>](#module_@the-/const-ui.SupportedProps)  
-**See**: https://facebook.github.io/react/docs/events.html#selection-events  
-<a name="module_@the-/const-ui.SupportedProps.svgAttributes"></a>
-
-#### SupportedProps.svgAttributes
-All Supported SVG Attributes
-
-**Kind**: static property of [<code>SupportedProps</code>](#module_@the-/const-ui.SupportedProps)  
-**See**: https://facebook.github.io/react/docs/dom-elements.html#all-supported-svg-attributes  
-<a name="module_@the-/const-ui.SupportedProps.touchEvents"></a>
-
-#### SupportedProps.touchEvents
-Touch Events
-
-**Kind**: static property of [<code>SupportedProps</code>](#module_@the-/const-ui.SupportedProps)  
-**See**: https://facebook.github.io/react/docs/events.html#touch-events  
-<a name="module_@the-/const-ui.SupportedProps.uiEvents"></a>
-
-#### SupportedProps.uiEvents
-UI Events
-
-**Kind**: static property of [<code>SupportedProps</code>](#module_@the-/const-ui.SupportedProps)  
-**See**: https://facebook.github.io/react/docs/events.html#ui-events  
 <a name="module_@the-/const-ui.ThemeValues"></a>
 
 ### constUi.ThemeValues : <code>object</code>
@@ -122,9 +68,59 @@ Style theme values
 Vendor Colors
 
 **Kind**: static namespace of [<code>@the-/const-ui</code>](#module_@the-/const-ui)  
-<a name="containerWidth"></a>
+<a name="htmlAttributes"></a>
 
-## containerWidth
-Width of container
+## htmlAttributes : <code>string</code>
+All Supported HTML Attributes
 
 **Kind**: global variable  
+**See**: https://facebook.github.io/react/docs/dom-elements.html#all-supported-html-attributes  
+<a name="imageEvents"></a>
+
+## imageEvents
+Image Events
+
+**Kind**: global variable  
+**See**: https://facebook.github.io/react/docs/events.html#image-events  
+<a name="mediaEvents"></a>
+
+## mediaEvents
+Media Events
+
+**Kind**: global variable  
+**See**: https://facebook.github.io/react/docs/events.html#media-events  
+<a name="mouseEvents"></a>
+
+## mouseEvents
+Mouse Events
+
+**Kind**: global variable  
+**See**: https://facebook.github.io/react/docs/events.html#mouse-events  
+<a name="selectionEvents"></a>
+
+## selectionEvents
+Selection Events
+
+**Kind**: global variable  
+**See**: https://facebook.github.io/react/docs/events.html#selection-events  
+<a name="svgAttributes"></a>
+
+## svgAttributes
+All Supported SVG Attributes
+
+**Kind**: global variable  
+**See**: https://facebook.github.io/react/docs/dom-elements.html#all-supported-svg-attributes  
+<a name="touchEvents"></a>
+
+## touchEvents
+Touch Events
+
+**Kind**: global variable  
+**See**: https://facebook.github.io/react/docs/events.html#touch-events  
+<a name="uiEvents"></a>
+
+## uiEvents
+UI Events
+
+**Kind**: global variable  
+**See**: https://facebook.github.io/react/docs/events.html#ui-events  

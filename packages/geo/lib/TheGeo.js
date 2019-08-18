@@ -1,14 +1,13 @@
 'use strict'
 
+const { purge, restore, save } = require('bstorage')
+const { get } = require('@the-/window')
+
 /**
  * @memberof module:@the-/geo
  * @class TheGeo
  * @param {Object} [options={}] - Optional settings
  */
-const { purge, restore, save } = require('bstorage')
-const { get } = require('@the-/window')
-
-/** @lends module:@the-/geo.TheGeo */
 class TheGeo {
   constructor(options = {}) {
     const {

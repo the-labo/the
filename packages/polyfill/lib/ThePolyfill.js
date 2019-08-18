@@ -1,15 +1,14 @@
 'use strict'
 
-/**
- * @memberof module:@the-/polyfill
- * @class ThePolyfill
- */
 const abind = require('abind')
 const helpers = require('./helpers')
 
 const { withDocument, withWindow } = helpers
 
-/** @lends module:@the-/polyfill.ThePolyfill */
+/**
+ * @memberof module:@the-/polyfill
+ * @class ThePolyfill
+ */
 class ThePolyfill {
   constructor() {
     abind(this)

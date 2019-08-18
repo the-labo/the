@@ -7,6 +7,7 @@ const specifierName = (specifier) => specifier.imported.name
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function sortSpecifiersOnImportDeclarationNode
+ * @returns {*}
  */
 function sortSpecifiersOnImportDeclarationNode(ImportDeclaration, { swap }) {
   const { specifiers } = ImportDeclaration

@@ -7,13 +7,13 @@
     "longname": "module:@the-/password",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/password",
     "order": 2,
     "typicalname": "password",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "id": "module:@the-/password.ThePassword",
@@ -22,7 +22,7 @@
     "memberof": "module:@the-/password",
     "meta": {
       "filename": "ThePassword.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "ThePassword",
@@ -37,7 +37,7 @@
     "memberof": "module:@the-/password",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -72,7 +72,7 @@
     "memberof": "module:@the-/password",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",

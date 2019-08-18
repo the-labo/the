@@ -1,10 +1,5 @@
 'use strict'
 
-/**
- * Resource of data history
- * @memberof module:@the-/db
- * @class TheLogResource
- */
 const amkdirp = require('amkdirp')
 const {
   ResourceEvents: {
@@ -24,7 +19,11 @@ const {
   DataTypes: { DATE, STRING },
 } = require('@the-/resource')
 
-/** @lends module:@the-/db.TheLogResource */
+/**
+ * Resource of data history
+ * @memberof module:@the-/db
+ * @class TheLogResource
+ */
 const TheLogResource = ({ define }) => {
   const Log = define({
     entityCreatedAt: {

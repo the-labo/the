@@ -2,10 +2,9 @@
 
 /**
  * @memberof module:@the-/metrics.counters
- * @abstract
  * @class Counter
+ * @abstract
  */
-/** @lends module:@the-/metrics.counters.Counter */
 class Counter {
   constructor(context = {}) {
     this.context = context

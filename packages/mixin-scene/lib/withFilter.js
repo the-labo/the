@@ -1,22 +1,21 @@
 'use strict'
 
 /**
+ * @memberof module:@the-/mixin-scene.withFilter
+ * @class WithFilterMixed
+ * @inner
+ */
+const { cleanup } = require('asobj')
+const asClassMixin = require('./helpers/asClassMixin')
+const injectProperties = require('./helpers/injectProperties')
+
+/**
  * withFilter mixin
  * @memberof module:@the-/mixin-scene
  * @function withFilter
  * @param {function()} Class - Class to mix
  * @returns {function()} Mixed class
  */
-/**
- * @memberof module:@the-/mixin-scene.withFilter
- * @inner
- * @class WithFilterMixed
- */
-const { cleanup } = require('asobj')
-const asClassMixin = require('./helpers/asClassMixin')
-const injectProperties = require('./helpers/injectProperties')
-
-/** @lends module:@the-/mixin-scene.withFilter */
 const withFilter = asClassMixin((Class) => {
   injectProperties(
     Class,

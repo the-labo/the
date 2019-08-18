@@ -9,6 +9,7 @@ const combineOnVariableDeclarationNodes = require('./combineOnVariableDeclaratio
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function combineObjectPatternOnStatementNode
+ * @returns {*}
  */
 function combineObjectPatternOnStatementNode(Statement, { get, replace }) {
   if (!Statement) {

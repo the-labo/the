@@ -1,16 +1,16 @@
 'use strict'
 
+const get = require('./get')
+const debug = require('debug')('the:window:rescue')
+
 /**
  * Handle event rescue on document
  * @memberof module:@the-/window
  * @function rescue
- * @param {string} event - Name of event
  * @param {function()} handler - Event handler
+ * @param {string} event - Name of event
+ * @returns {*}
  */
-const get = require('./get')
-const debug = require('debug')('the:window:rescue')
-
-/** @lends module:@the-/window.rescue */
 function rescue(handler) {
   const window = get('window')
   if (!window) {

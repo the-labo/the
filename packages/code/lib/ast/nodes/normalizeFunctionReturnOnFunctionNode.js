@@ -8,6 +8,7 @@ const {
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function normalizeFunctionReturnOnFunctionNode
+ * @returns {*}
  */
 function normalizeFunctionReturnOnFunctionNode(
   FunctionNode,

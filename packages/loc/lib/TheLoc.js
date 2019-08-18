@@ -1,11 +1,5 @@
 'use strict'
 
-/**
- * Locale resolver
- * @memberof module:@the-/loc
- * @class TheLoc
- * @param {Object<string, Object>} config - Localed values
- */
 const argx = require('argx')
 const evaljson = require('evaljson')
 const { sprintf } = require('sprintf-js')
@@ -14,7 +8,12 @@ const resolveInScope = require('./helpers/resolveInScope')
 const toCompoundLocale = require('./helpers/toCompoundLocale')
 const validateLocales = require('./helpers/validateLocales')
 
-/** @lends module:@the-/loc.TheLoc */
+/**
+ * Locale resolver
+ * @memberof module:@the-/loc
+ * @class TheLoc
+ * @param {Object<string, Object>} config - Localed values
+ */
 class TheLoc {
   constructor(config, options = {}) {
     if ('buildin' in options) {

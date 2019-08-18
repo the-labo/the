@@ -1,5 +1,7 @@
 'use strict'
 
+const TheMetrics = require('./TheMetrics')
+
 /**
  * Create a TheMetrics instance
  * @memberof module:@the-/metrics
@@ -7,9 +9,6 @@
  * @param {...*} args
  * @returns {TheMetrics}
  */
-const TheMetrics = require('./TheMetrics')
-
-/** @lends module:@the-/metrics.create */
 function create(...args) {
   return new TheMetrics(...args)
 }

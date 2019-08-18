@@ -1,16 +1,17 @@
 'use strict'
 
-/**
- * @memberof module:@the-/db.setup
- * @function setupSqlite
- */
 const {
   strict: { ok },
 } = require('assert')
 const mkdirp = require('mkdirp')
 const path = require('path')
 
-/** @lends module:@the-/db.setup.setupSqlite */
+/**
+ * @memberof module:@the-/db.setup
+ * @function setupSqlite
+ * @param env
+ * @param [options={}]
+ */
 async function setupSqlite(env, options = {}) {
   const { storage } = env
   ok(storage, 'env.STORAGE is required for sqlite.')

@@ -2,8 +2,8 @@
 
 /**
  * @memberof module:@the-/server.helpers
- * @inner
  * @class StreamDriverPool
+ * @inner
  */
 class StreamDriverPool {
   constructor() {
@@ -51,6 +51,7 @@ class StreamDriverPool {
  * Stream pool
  * @memberof module:@the-/server.helpers
  * @function streamPool
+ * @returns {*}
  */
 function streamDriverPool(...args) {
   return new StreamDriverPool(...args)

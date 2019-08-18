@@ -11,7 +11,7 @@ const filemode = require('filemode')
 const fs = require('fs')
 const path = require('path')
 const tmplconv = require('tmplconv')
-const demos = require('../demos')
+const demos = require('../demos.json')
 
 const prefix = '~~~~'
 const suffix = '~~~~'

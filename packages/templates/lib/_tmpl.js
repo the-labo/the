@@ -3,8 +3,8 @@
 /**
  * Resolve template file path.
  * @function _tmpl
- * @private
  * @param {string} name - Template name.
+ * @private
  * @returns {string} - Resolved path.
  */
 const path = require('path')

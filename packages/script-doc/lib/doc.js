@@ -1,5 +1,9 @@
 'use strict'
 
+const argx = require('argx')
+const path = require('path')
+const jsdoc = require('@the-/jsdoc')
+
 /**
  * Generate jsdoc
  * @memberof module:@the-/script-doc
@@ -8,11 +12,6 @@
  * @param {Object} [options={}] - Optional settings
  * @returns {Promise}
  */
-const argx = require('argx')
-const path = require('path')
-const jsdoc = require('@the-/jsdoc')
-
-/** @lends module:@the-/script-doc.doc */
 async function doc(dirname = process.cwd(), options = {}) {
   const args = argx(arguments)
   options = args.pop('object') || {}

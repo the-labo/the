@@ -1,5 +1,10 @@
 'use strict'
 
+const { has } = require('json-pointer')
+const path = require('path')
+const interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault')
+const { parse, walk } = require('@the-/ast')
+
 /**
  * Create "propRule" lint
  * @memberof module:@the-/lint.rules
@@ -7,12 +12,6 @@
  * @param {Object} config - Lint config
  * @returns {function()} Lint function
  */
-const { has } = require('json-pointer')
-const path = require('path')
-const interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault')
-const { parse, walk } = require('@the-/ast')
-
-/** @lends module:@the-/lint.rules.propRule */
 function propRule(config) {
   const { keypathAccess = {}, ...rest } = config
   if (Object.keys(rest).length > 0) {

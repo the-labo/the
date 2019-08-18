@@ -7,7 +7,7 @@
     "longname": "module:@the-/media",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/media",
@@ -60,13 +60,13 @@
   },
   {
     "description": "Create audio media recorder with AudioContext",
-    "id": "module:@the-/media.TheMedia#createAudioRecorder",
+    "id": "TheMedia#createAudioRecorder",
     "kind": "function",
-    "longname": "module:@the-/media.TheMedia#createAudioRecorder",
-    "memberof": "module:@the-/media.TheMedia",
+    "longname": "TheMedia#createAudioRecorder",
+    "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 58,
+      "lineno": 59,
       "path": "lib"
     },
     "name": "createAudioRecorder",
@@ -104,13 +104,13 @@
   },
   {
     "description": "Get tracks",
-    "id": "module:@the-/media.TheMedia#getStreamTracks",
+    "id": "TheMedia#getStreamTracks",
     "kind": "function",
-    "longname": "module:@the-/media.TheMedia#getStreamTracks",
-    "memberof": "module:@the-/media.TheMedia",
+    "longname": "TheMedia#getStreamTracks",
+    "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 85,
+      "lineno": 86,
       "path": "lib"
     },
     "name": "getStreamTracks",
@@ -138,13 +138,13 @@
   },
   {
     "description": "Toggle track enabled",
-    "id": "module:@the-/media.TheMedia#toggleEnabled",
+    "id": "TheMedia#toggleEnabled",
     "kind": "function",
-    "longname": "module:@the-/media.TheMedia#toggleEnabled",
-    "memberof": "module:@the-/media.TheMedia",
+    "longname": "TheMedia#toggleEnabled",
+    "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 105,
+      "lineno": 108,
       "path": "lib"
     },
     "name": "toggleEnabled",
@@ -172,13 +172,13 @@
   {
     "async": true,
     "description": "Bind HTML video element",
-    "id": "module:@the-/media.TheMedia#bindVideo",
+    "id": "TheMedia#bindVideo",
     "kind": "function",
-    "longname": "module:@the-/media.TheMedia#bindVideo",
-    "memberof": "module:@the-/media.TheMedia",
+    "longname": "TheMedia#bindVideo",
+    "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 122,
+      "lineno": 125,
       "path": "lib"
     },
     "name": "bindVideo",
@@ -218,13 +218,13 @@
   {
     "async": true,
     "description": "Start user media",
-    "id": "module:@the-/media.TheMedia#start",
+    "id": "TheMedia#start",
     "kind": "function",
-    "longname": "module:@the-/media.TheMedia#start",
-    "memberof": "module:@the-/media.TheMedia",
+    "longname": "TheMedia#start",
+    "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 138,
+      "lineno": 142,
       "path": "lib"
     },
     "name": "start",
@@ -244,13 +244,13 @@
   {
     "async": true,
     "description": "Stop user media",
-    "id": "module:@the-/media.TheMedia#stop",
+    "id": "TheMedia#stop",
     "kind": "function",
-    "longname": "module:@the-/media.TheMedia#stop",
-    "memberof": "module:@the-/media.TheMedia",
+    "longname": "TheMedia#stop",
+    "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 161,
+      "lineno": 168,
       "path": "lib"
     },
     "name": "stop",
@@ -270,13 +270,13 @@
   {
     "async": true,
     "description": "Take photo image",
-    "id": "module:@the-/media.TheMedia#takePhoto",
+    "id": "TheMedia#takePhoto",
     "kind": "function",
-    "longname": "module:@the-/media.TheMedia#takePhoto",
-    "memberof": "module:@the-/media.TheMedia",
+    "longname": "TheMedia#takePhoto",
+    "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 183,
+      "lineno": 192,
       "path": "lib"
     },
     "name": "takePhoto",
@@ -309,13 +309,13 @@
   {
     "async": true,
     "description": "Update constrains on run time",
-    "id": "module:@the-/media.TheMedia#updateConstrains",
+    "id": "TheMedia#updateConstrains",
     "kind": "function",
-    "longname": "module:@the-/media.TheMedia#updateConstrains",
-    "memberof": "module:@the-/media.TheMedia",
+    "longname": "TheMedia#updateConstrains",
+    "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 205,
+      "lineno": 214,
       "path": "lib"
     },
     "name": "updateConstrains",
@@ -370,7 +370,7 @@
     "memberof": "module:@the-/media",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "TheMedia",
@@ -385,7 +385,7 @@
     "memberof": "module:@the-/media",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "create",
@@ -420,7 +420,7 @@
     "memberof": "module:@the-/media",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",

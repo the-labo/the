@@ -1,3 +1,7 @@
+'use strict'
+
+const absName = (name) => (name ? name.replace(/^-/, '') : null)
+
 /**
  * Scope access
  * @memberof module:@the-/facade-scope
@@ -5,11 +9,6 @@
  * @param {Object} scope
  * @returns {Object} - Face object for sort access
  */
-'use strict'
-
-const absName = (name) => (name ? name.replace(/^-/, '') : null)
-
-/** @lends module:@the-/facade-scope.sortAccessFor */
 function sortAccessFor(scope) {
   /**
    * @memberof module:@the-/facade-scope.sortAccessFor

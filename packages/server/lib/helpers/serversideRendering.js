@@ -18,7 +18,12 @@ const debug = require('debug')('the:server:server-rendering')
 
 const d = (module) => (module && module.default) || module
 
-/** @function module:@the-/server.helpers.serverRendering */
+/**
+ * @function module:@the-/server.helpers.serverRendering
+ * @param Html
+ * @param [options={}]
+ * @returns {*}
+ */
 function serverRendering(Html, options = {}) {
   const {
     cacheDir,

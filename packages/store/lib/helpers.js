@@ -1,13 +1,12 @@
 'use strict'
 
+const { get, has } = require('json-pointer')
+const { flatten } = require('objnest')
+
 /**
  * @memberof module:@the-/store
  * @namespace helpers
  */
-const { get, has } = require('json-pointer')
-const { flatten } = require('objnest')
-
-/** @lends module:@the-/store.helpers */
 module.exports = {
   parseDef(obj) {
     const flattened = flatten(obj)

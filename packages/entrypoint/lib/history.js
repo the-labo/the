@@ -1,15 +1,14 @@
 'use strict'
 
+const { createBrowserHistory, createMemoryHistory } = require('history')
+const { get } = require('@the-/window')
+
 /**
  * Get history object
  * @memberof module:@the-/entrypoint
  * @function history
  * @returns {Object} history
  */
-const { createBrowserHistory, createMemoryHistory } = require('history')
-const { get } = require('@the-/window')
-
-/** @lends module:@the-/entrypoint.history */
 function history() {
   if (history.singleton) {
     return history.singleton

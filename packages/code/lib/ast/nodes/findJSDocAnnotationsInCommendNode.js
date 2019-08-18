@@ -5,6 +5,8 @@ const { EOL } = require('os')
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function findJSDocAnnotationsInCommendNode
+ * @param CommentNode
+ * @returns {*}
  */
 function findJSDocAnnotationsInCommendNode(CommentNode) {
   const annotations = []

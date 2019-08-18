@@ -21,6 +21,8 @@ const compareByLength = (a, b) => a.length - b.length
 /**
  * @memberof module:@the-/templates
  * @function scopes
+ * @param config
+ * @returns {*}
  */
 function scopes(config) {
   const { dirname, memberof = 'store', pattern = '**/*.json', ...rest } = config

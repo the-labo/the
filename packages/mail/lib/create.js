@@ -1,5 +1,7 @@
 'use strict'
 
+const TheMail = require('./TheMail')
+
 /**
  * Create a TheMail instance
  * @memberof module:@the-/mail
@@ -7,9 +9,6 @@
  * @param {...*} args
  * @returns {TheMail}
  */
-const TheMail = require('./TheMail')
-
-/** @lends module:@the-/mail.create */
 function create(...args) {
   return new TheMail(...args)
 }

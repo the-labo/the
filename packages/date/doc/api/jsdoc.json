@@ -7,13 +7,13 @@
     "longname": "module:@the-/date",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/date",
     "order": 3,
     "typicalname": "date",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "description": "Date manipulator",
@@ -22,14 +22,14 @@
     "longname": "module:@the-/date.TheDate",
     "memberof": "module:@the-/date.TheDate",
     "name": "TheDate",
-    "order": 5
+    "order": 6
   },
   {
     "description": "Format into string",
-    "id": "module:@the-/date.TheDate#format",
+    "id": "TheDate#format",
     "kind": "function",
-    "longname": "module:@the-/date.TheDate#format",
-    "memberof": "module:@the-/date.TheDate",
+    "longname": "TheDate#format",
+    "memberof": "TheDate",
     "meta": {
       "filename": "TheDate.js",
       "lineno": 63,
@@ -62,10 +62,10 @@
   },
   {
     "description": "Date string from now",
-    "id": "module:@the-/date.TheDate#fromNow",
+    "id": "TheDate#fromNow",
     "kind": "function",
-    "longname": "module:@the-/date.TheDate#fromNow",
-    "memberof": "module:@the-/date.TheDate",
+    "longname": "TheDate#fromNow",
+    "memberof": "TheDate",
     "meta": {
       "filename": "TheDate.js",
       "lineno": 72,
@@ -88,10 +88,10 @@
   },
   {
     "description": "Covert into date",
-    "id": "module:@the-/date.TheDate#toDate",
+    "id": "TheDate#toDate",
     "kind": "function",
-    "longname": "module:@the-/date.TheDate#toDate",
-    "memberof": "module:@the-/date.TheDate",
+    "longname": "TheDate#toDate",
+    "memberof": "TheDate",
     "meta": {
       "filename": "TheDate.js",
       "lineno": 81,
@@ -113,10 +113,10 @@
   },
   {
     "description": "Convert into JSON String",
-    "id": "module:@the-/date.TheDate#toJSON",
+    "id": "TheDate#toJSON",
     "kind": "function",
-    "longname": "module:@the-/date.TheDate#toJSON",
-    "memberof": "module:@the-/date.TheDate",
+    "longname": "TheDate#toJSON",
+    "memberof": "TheDate",
     "meta": {
       "filename": "TheDate.js",
       "lineno": 89,
@@ -138,10 +138,10 @@
   },
   {
     "description": "Convert to number",
-    "id": "module:@the-/date.TheDate#toNumber",
+    "id": "TheDate#toNumber",
     "kind": "function",
-    "longname": "module:@the-/date.TheDate#toNumber",
-    "memberof": "module:@the-/date.TheDate",
+    "longname": "TheDate#toNumber",
+    "memberof": "TheDate",
     "meta": {
       "filename": "TheDate.js",
       "lineno": 97,
@@ -163,10 +163,10 @@
   },
   {
     "description": "Convert into string",
-    "id": "module:@the-/date.TheDate#toString",
+    "id": "TheDate#toString",
     "kind": "function",
-    "longname": "module:@the-/date.TheDate#toString",
-    "memberof": "module:@the-/date.TheDate",
+    "longname": "TheDate#toString",
+    "memberof": "TheDate",
     "meta": {
       "filename": "TheDate.js",
       "lineno": 105,
@@ -2646,6 +2646,21 @@
     "scope": "instance"
   },
   {
+    "access": "protected",
+    "id": "module:@the-/date.TheDateBase",
+    "kind": "class",
+    "longname": "module:@the-/date.TheDateBase",
+    "memberof": "module:@the-/date",
+    "meta": {
+      "filename": "TheDate.js",
+      "lineno": 16,
+      "path": "lib"
+    },
+    "name": "TheDateBase",
+    "order": 4,
+    "scope": "static"
+  },
+  {
     "augments": [
       "module:@the-/date.mixins.addMix~AddMixed",
       "module:@the-/date.mixins.endOfMix~EndOfMixed",
@@ -2662,26 +2677,11 @@
     "memberof": "module:@the-/date",
     "meta": {
       "filename": "TheDate.js",
-      "lineno": 2,
+      "lineno": 31,
       "path": "lib"
     },
     "name": "TheDate",
-    "order": 4,
-    "scope": "static"
-  },
-  {
-    "access": "protected",
-    "id": "module:@the-/date.TheDateBase",
-    "kind": "class",
-    "longname": "module:@the-/date.TheDateBase",
-    "memberof": "module:@the-/date",
-    "meta": {
-      "filename": "TheDate.js",
-      "lineno": 28,
-      "path": "lib"
-    },
-    "name": "TheDateBase",
-    "order": 6,
+    "order": 5,
     "scope": "static"
   },
   {
@@ -2692,7 +2692,7 @@
     "memberof": "module:@the-/date",
     "meta": {
       "filename": "Durations.js",
-      "lineno": 2,
+      "lineno": 10,
       "path": "lib"
     },
     "name": "Durations",
@@ -2707,7 +2707,7 @@
     "memberof": "module:@the-/date",
     "meta": {
       "filename": "units.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "units",
@@ -2722,7 +2722,7 @@
     "memberof": "module:@the-/date",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/mixins"
     },
     "name": "mixins",
@@ -2737,7 +2737,7 @@
     "memberof": "module:@the-/date",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -2772,7 +2772,7 @@
     "memberof": "module:@the-/date",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
@@ -2904,7 +2904,7 @@
     "memberof": "module:@the-/date.mixins",
     "meta": {
       "filename": "momentMix.js",
-      "lineno": 2,
+      "lineno": 13,
       "path": "lib/mixins"
     },
     "name": "momentMix",

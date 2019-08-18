@@ -1,13 +1,12 @@
 'use strict'
 
+const { EventEmitter } = require('events')
+const debug = require('debug')('the:refresher')
+
 /**
  * @memberof module:@the-/refresher
  * @class TheRefresher
  */
-const { EventEmitter } = require('events')
-const debug = require('debug')('the:refresher')
-
-/** @lends module:@the-/refresher.TheRefresher */
 class TheRefresher extends EventEmitter {
   constructor(handler, options = {}) {
     super()

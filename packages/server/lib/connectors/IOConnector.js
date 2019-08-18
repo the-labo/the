@@ -13,6 +13,7 @@ const { decode, encode } = new ThePack({
 /**
  * @memberof module:@the-/server.connectors
  * @function IOConnector
+ * @returns {*}
  */
 function IOConnector(
   io,

@@ -1,11 +1,11 @@
 'use strict'
-/**
- * Supported props
- * @memberof module:@the-/const-ui
- * @namespace SupportedProps
- */
+
 const SupportedProps = Object.freeze(
-  /** @lends module:@the-/const-ui.SupportedProps */
+  /**
+   * Supported props
+   * @memberof module:@the-/const-ui
+   * @namespace SupportedProps
+   */
   {
     /**
      * All Supported HTML Attributes

@@ -7,6 +7,8 @@ const create = require('./create')
 /**
  * @memberof module:@the-/code
  * @function run
+ * @param pattern
+ * @param [options={}]
  */
 async function run(pattern, options = {}) {
   const { ignore = ['**/*.min.*', '*/node_modules/*.*'], ...config } = options

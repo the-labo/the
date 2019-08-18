@@ -7,13 +7,13 @@
     "longname": "module:@the-/context",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/context",
     "order": 2,
     "typicalname": "context",
-    "version": "16.0.7"
+    "version": "16.0.8"
   },
   {
     "description": "Context",
@@ -47,10 +47,10 @@
   },
   {
     "description": "Delete value from store",
-    "id": "module:@the-/context.TheContext#del",
+    "id": "TheContext#del",
     "kind": "function",
-    "longname": "module:@the-/context.TheContext#del",
-    "memberof": "module:@the-/context.TheContext",
+    "longname": "TheContext#del",
+    "memberof": "TheContext",
     "meta": {
       "filename": "TheContext.js",
       "lineno": 31,
@@ -72,10 +72,10 @@
   },
   {
     "description": "Get value from store",
-    "id": "module:@the-/context.TheContext#get",
+    "id": "TheContext#get",
     "kind": "function",
-    "longname": "module:@the-/context.TheContext#get",
-    "memberof": "module:@the-/context.TheContext",
+    "longname": "TheContext#get",
+    "memberof": "TheContext",
     "meta": {
       "filename": "TheContext.js",
       "lineno": 41,
@@ -117,10 +117,10 @@
   },
   {
     "description": "Set values to store",
-    "id": "module:@the-/context.TheContext#set",
+    "id": "TheContext#set",
     "kind": "function",
-    "longname": "module:@the-/context.TheContext#set",
-    "memberof": "module:@the-/context.TheContext",
+    "longname": "TheContext#set",
+    "memberof": "TheContext",
     "meta": {
       "filename": "TheContext.js",
       "lineno": 49,
@@ -148,7 +148,7 @@
     "memberof": "module:@the-/context",
     "meta": {
       "filename": "TheContext.js",
-      "lineno": 2,
+      "lineno": 8,
       "path": "lib"
     },
     "name": "TheContext",
@@ -164,11 +164,11 @@
     "memberof": "module:@the-/context",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "helpers",
-    "order": 11,
+    "order": 12,
     "scope": "static"
   },
   {
@@ -179,7 +179,7 @@
     "memberof": "module:@the-/context",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -214,7 +214,7 @@
     "memberof": "module:@the-/context",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
@@ -229,11 +229,20 @@
     "memberof": "module:@the-/context.helpers",
     "meta": {
       "filename": "contextEntryFor.js",
-      "lineno": 2,
+      "lineno": 7,
       "path": "lib/helpers"
     },
     "name": "contextEntryFor",
     "order": 8,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -244,11 +253,20 @@
     "memberof": "module:@the-/context.helpers",
     "meta": {
       "filename": "contextRootFor.js",
-      "lineno": 2,
+      "lineno": 7,
       "path": "lib/helpers"
     },
     "name": "ContextRootFor",
     "order": 10,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -258,11 +276,39 @@
     "memberof": "module:@the-/context.helpers.contextEntryFor",
     "meta": {
       "filename": "contextEntryFor.js",
-      "lineno": 13,
+      "lineno": 14,
       "path": "lib/helpers"
     },
     "name": "ContextEntry",
     "order": 9,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/context.helpers.contextRootFor~ContextRoot",
+    "kind": "function",
+    "longname": "module:@the-/context.helpers.contextRootFor~ContextRoot",
+    "memberof": "module:@the-/context.helpers.contextRootFor",
+    "meta": {
+      "filename": "contextRootFor.js",
+      "lineno": 16,
+      "path": "lib/helpers"
+    },
+    "name": "ContextRoot",
+    "order": 11,
+    "params": [
+      {
+        "name": "props"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
     "scope": "inner"
   }
 ]

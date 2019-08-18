@@ -7,13 +7,13 @@
     "longname": "module:@the-/ps",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ps",
     "order": 3,
     "typicalname": "ps",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "id": "module:@the-/ps.ThePS()",
@@ -59,13 +59,13 @@
   {
     "async": true,
     "description": "Generate pid and remove on exit.",
-    "id": "module:@the-/ps.ThePS#acquire",
+    "id": "ThePS#acquire",
     "kind": "function",
-    "longname": "module:@the-/ps.ThePS#acquire",
-    "memberof": "module:@the-/ps.ThePS",
+    "longname": "ThePS#acquire",
+    "memberof": "ThePS",
     "meta": {
       "filename": "ThePS.js",
-      "lineno": 74,
+      "lineno": 77,
       "path": "lib"
     },
     "name": "acquire",
@@ -89,7 +89,7 @@
     "memberof": "module:@the-/ps",
     "meta": {
       "filename": "ThePS.js",
-      "lineno": 2,
+      "lineno": 13,
       "path": "lib"
     },
     "name": "ThePS",
@@ -104,11 +104,25 @@
     "memberof": "module:@the-/ps",
     "meta": {
       "filename": "acquire.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "acquire",
     "order": 0,
+    "params": [
+      {
+        "name": "filename"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -119,7 +133,7 @@
     "memberof": "module:@the-/ps",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -154,7 +168,7 @@
     "memberof": "module:@the-/ps",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",

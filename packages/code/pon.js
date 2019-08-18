@@ -15,7 +15,12 @@
 const path = require('path')
 const theCode = require('./lib/create')
 
-/** @lends module:@the-/code/pon.code */
+/**
+ * @lends module:@the-/code/pon.code
+ * @param pattern
+ * @param [options={}]
+ * @returns {*}
+ */
 function code(pattern, options = {}) {
   const { ignore = [], ...config } = options
   return async function task(ctx) {

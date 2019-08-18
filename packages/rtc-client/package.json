@@ -32,8 +32,8 @@
     "@the-/rtc": "^15.4.12",
     "aport": "^2.0.0",
     "asleep": "^1.0.3",
-    "webpack-cli": "^3.3.6",
-    "webrtc-adapter": "^7.2.9"
+    "webpack-cli": "^3.3.7",
+    "webrtc-adapter": "^7.3.0"
   },
   "engines": {
     "node": ">=10",

@@ -1,5 +1,8 @@
 'use strict'
 
+const amocha = require('amocha')
+const argx = require('argx')
+
 /**
  * Test project
  * @memberof module:@the-/script-test
@@ -8,10 +11,6 @@
  * @param {Object} [options={}] - Optional settings
  * @returns {Promise}
  */
-const amocha = require('amocha')
-const argx = require('argx')
-
-/** @lends module:@the-/script-test.test */
 async function test(dirname = process.cwd(), options = {}) {
   const args = argx(arguments)
   options = args.pop('object') || {}

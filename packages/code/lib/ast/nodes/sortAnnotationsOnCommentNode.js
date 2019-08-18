@@ -5,6 +5,7 @@ const findJSDocAnnotationsInCommendNode = require('./findJSDocAnnotationsInComme
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function sortAnnotationsOnCommentNode
+ * @returns {*}
  */
 function sortAnnotationsOnCommentNode(CommentNode, { swap }) {
   const annotations = findJSDocAnnotationsInCommendNode(CommentNode)

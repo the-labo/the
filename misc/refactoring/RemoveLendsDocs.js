@@ -9,7 +9,7 @@ const { TheRefactor } = require('@the-/refactor')
 
 async function main() {
   await new TheRefactor().convert(
-    'packages/+(ast|code|refactor|server|client)/+(lib|misc)/**/+(*.js|*.jsx)',
+    'packages/*/+(lib|misc)/**/+(*.js|*.jsx)',
     (content) => {
       const parsed = parse(content)
       const commentsData = parsed.comments

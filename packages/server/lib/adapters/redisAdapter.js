@@ -8,6 +8,9 @@ const socketIORedis = require('socket.io-redis')
  * Define redis adapter for sockets
  * @memberof module:@the-/server.adapters
  * @function redisAdapter
+ * @param io
+ * @param [options={}]
+ * @returns {*}
  */
 function redisAdapter(io, options = {}) {
   const key = 'the:server:socket.io'

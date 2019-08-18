@@ -1,16 +1,15 @@
 'use strict'
 
-/**
- * @memberof module:@the-/seed
- * @class TheSeed
- */
 const abind = require('abind')
 const argx = require('argx')
 const evaljson = require('evaljson')
 const Faker = require('faker/lib')
 const locales = require('faker/lib/locales')
 
-/** @lends module:@the-/seed.TheSeed */
+/**
+ * @memberof module:@the-/seed
+ * @class TheSeed
+ */
 class TheSeed {
   constructor(locale = 'en', options) {
     const args = argx(arguments)

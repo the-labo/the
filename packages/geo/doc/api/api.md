@@ -11,8 +11,6 @@ Geo location utility
 * [@the-/geo](#module_@the-/geo)
     * [.TheGeo](#module_@the-/geo.TheGeo)
         * [new TheGeo([options])](#new_module_@the-/geo.TheGeo_new)
-        * [.watch(callback, [options])](#module_@the-/geo.TheGeo+watch)
-        * [.detect([options])](#module_@the-/geo.TheGeo+detect) ⇒ <code>Promise.&lt;Object&gt;</code>
     * [.create(...args)](#module_@the-/geo.create) ⇒ <code>TheGeo</code>
     * [.default()](#module_@the-/geo.default)
 
@@ -20,38 +18,9 @@ Geo location utility
 
 ### geo.TheGeo
 **Kind**: static class of [<code>@the-/geo</code>](#module_@the-/geo)  
-
-* [.TheGeo](#module_@the-/geo.TheGeo)
-    * [new TheGeo([options])](#new_module_@the-/geo.TheGeo_new)
-    * [.watch(callback, [options])](#module_@the-/geo.TheGeo+watch)
-    * [.detect([options])](#module_@the-/geo.TheGeo+detect) ⇒ <code>Promise.&lt;Object&gt;</code>
-
 <a name="new_module_@the-/geo.TheGeo_new"></a>
 
 #### new TheGeo([options])
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
-<a name="module_@the-/geo.TheGeo+watch"></a>
-
-#### theGeo.watch(callback, [options])
-Watch position change
-
-**Kind**: instance method of [<code>TheGeo</code>](#module_@the-/geo.TheGeo)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| callback | <code>function</code> |  |
-| [options] | <code>Object</code> | Optional settings |
-
-<a name="module_@the-/geo.TheGeo+detect"></a>
-
-#### theGeo.detect([options]) ⇒ <code>Promise.&lt;Object&gt;</code>
-Detect current geo location
-
-**Kind**: instance method of [<code>TheGeo</code>](#module_@the-/geo.TheGeo)  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |

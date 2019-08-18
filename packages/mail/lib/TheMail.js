@@ -1,15 +1,14 @@
 'use strict'
 
-/**
- * @memberof module:@the-/mail
- * @class TheMail
- */
 const { clone } = require('asobj')
 const { unlessProduction } = require('@the-/check')
 const { toLowerKeys } = require('./helpers')
 const { sendMock, sendSendgrid, sendSMTP } = require('./sending')
 
-/** @lends module:@the-/mail.TheMail */
+/**
+ * @memberof module:@the-/mail
+ * @class TheMail
+ */
 class TheMail {
   constructor(config = {}) {
     const env = toLowerKeys(config.env || clone(config, { without: 'name' }))

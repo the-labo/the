@@ -1,9 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/seat
- * @class TheSeat
- */
 const abind = require('abind')
 const { get, has, remove, set } = require('json-pointer')
 const mkdirp = require('mkdirp')
@@ -22,7 +18,10 @@ const TheSeatBase = [m.lockMix, m.scopeMix].reduce(
   class Base {},
 )
 
-/** @lends module:@the-/seat.TheSeat */
+/**
+ * @memberof module:@the-/seat
+ * @class TheSeat
+ */
 class TheSeat extends TheSeatBase {
   static get DEFAULT_FILENAME() {
     const {

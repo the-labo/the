@@ -1,5 +1,7 @@
 'use strict'
 
+const TheScene = require('./TheScene')
+
 /**
  * Create a TheScene instance
  * @memberof module:@the-/scene
@@ -7,9 +9,6 @@
  * @param {...*} args
  * @returns {TheScene}
  */
-const TheScene = require('./TheScene')
-
-/** @lends module:@the-/scene.create */
 function create(...args) {
   return new TheScene(...args)
 }

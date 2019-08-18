@@ -1,3 +1,7 @@
+'use strict'
+
+const { uniqueFilter } = require('@the-/util-array')
+
 /**
  * Scope access
  * @memberof module:@the-/facade-scope
@@ -5,11 +9,6 @@
  * @param {Object} scope
  * @returns {module:@the-/facade-scope.entitiesAccessFor~entities} - Face object for entities access
  */
-'use strict'
-
-const { uniqueFilter } = require('@the-/util-array')
-
-/** @lends module:@the-/facade-scope.entitiesAccessFor */
 function entitiesAccessFor(scope) {
   /**
    * @memberof module:@the-/facade-scope.entitiesAccessFor

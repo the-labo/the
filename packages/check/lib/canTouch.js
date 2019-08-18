@@ -6,7 +6,6 @@
  * @function canTouch
  * @returns {boolean}
  */
-/** @lends module:@the-/check.canTouch */
 function canTouch() {
   if (typeof document === 'undefined') {
     return false

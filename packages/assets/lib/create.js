@@ -1,5 +1,7 @@
 'use strict'
 
+const TheAssets = require('./TheAssets')
+
 /**
  * Create a TheAssets instance
  * @memberof module:@the-/assets
@@ -7,9 +9,6 @@
  * @param {...*} args
  * @returns {module:@the-/assets.TheAssets}
  */
-const TheAssets = require('./TheAssets')
-
-/** @lends module:@the-/assets.create */
 function create(...args) {
   return new TheAssets(...args)
 }

@@ -8,7 +8,6 @@
  * @example
  *   [1,2,3].sort(shuffleSort())
  */
-/** @lends module:@the-/util-array.shuffleSort */
 function shuffleSort() {
   if (arguments.length > 2) {
     throw new Error('[shuffleSort] Invalid args.')

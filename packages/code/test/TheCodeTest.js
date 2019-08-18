@@ -100,14 +100,6 @@ describe('the-code', () => {
     await code.formatFile(target)
   })
 
-  it('Src10', async () => {
-    const target = `${__dirname}/../tmp/dest10.jsx`
-    await filecopy(`${__dirname}/../misc/mocks/src10.jsx`, target)
-    const code = new TheCode()
-
-    await code.formatFile(target)
-  })
-
   it('Src11', async () => {
     const target = `${__dirname}/../tmp/dest11.js`
     await filecopy(`${__dirname}/../misc/mocks/src11.js`, target)
@@ -126,13 +118,6 @@ describe('the-code', () => {
   it('Src13', async () => {
     const target = `${__dirname}/../tmp/dest13.jsx`
     await filecopy(`${__dirname}/../misc/mocks/src13.jsx`, target)
-    const code = new TheCode()
-    await code.formatFile(target)
-  })
-
-  it('Src14', async () => {
-    const target = `${__dirname}/../tmp/dest14.js`
-    await filecopy(`${__dirname}/../misc/mocks/src14.js`, target)
     const code = new TheCode()
     await code.formatFile(target)
   })

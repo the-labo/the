@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Mixin for moment
- * @memberof module:@the-/date.mixins
- * @function momentMix
- * @param {function()} Class
- * @returns {function()} Class
- */
 const moment = require('moment')
 const momentTz = require('moment-timezone')
 
@@ -17,12 +10,18 @@ require('moment/locale/en-gb')
 require('moment/locale/en-ie')
 require('moment/locale/en-nz')
 
-/** @lends module:@the-/date.mixins.momentMix */
+/**
+ * Mixin for moment
+ * @memberof module:@the-/date.mixins
+ * @function momentMix
+ * @param {function()} Class
+ * @returns {function()} Class
+ */
 function momentMix(Class) {
   /**
    * @memberof module:@the-/date.mixins.momentMix
-   * @inner
    * @class MomentMixed
+   * @inner
    */
   class MomentMixed extends Class {
     normalizeMomentUnits(unit) {

@@ -1,8 +1,3 @@
-/**
- * @memberof module:@the-/spell
- * @class TheSpell
- * @param {Object} [config={}] - Spelling config
- */
 'use strict'
 
 const aglob = require('aglob')
@@ -20,7 +15,11 @@ const debug = require('debug')('the:spell')
 const MB = 1000000
 const relativePath = (f) => path.relative(process.cwd(), f)
 
-/** @lends module:@the-/spell.TheSpell */
+/**
+ * @memberof module:@the-/spell
+ * @class TheSpell
+ * @param {Object} [config={}] - Spelling config
+ */
 class TheSpell {
   static logErrorReports(reports) {
     const INDENT = ' '

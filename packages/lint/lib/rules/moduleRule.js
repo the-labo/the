@@ -1,5 +1,10 @@
 'use strict'
 
+const path = require('path')
+const { parsePattern } = require('../helpers/parseHelper')
+
+const _d = (m) => m.default || m
+
 /**
  * Create "moduleRule" lint
  * @memberof module:@the-/lint.rules
@@ -7,12 +12,6 @@
  * @param {Object} config - Lint config
  * @returns {function()} Lint function
  */
-const path = require('path')
-const { parsePattern } = require('../helpers/parseHelper')
-
-const _d = (m) => m.default || m
-
-/** @lends module:@the-/lint.rules.moduleRule */
 function moduleRule(config) {
   const {
     keyPattern,

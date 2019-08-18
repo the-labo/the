@@ -2,10 +2,10 @@
 
 /**
  * Compound tow locales
+ * @memberof module:@the-/loc.helpers
  * @function toCompoundLocale
  * @param {Object}
  * @private
- * @memberOf module:@the-/loc.helpers
  * @returns {Object}
  */
 const { flatten } = require('objnest')

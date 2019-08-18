@@ -1,7 +1,3 @@
-/**
- * @memberof module:@the-/axe
- * @class Logger
- */
 'use strict'
 
 const { get } = require('@the-/window')
@@ -16,7 +12,10 @@ const Themes = {
   serious: 'color:red;font-weight:normal;',
 }
 
-/** @lends module:@the-/axe.Logger */
+/**
+ * @memberof module:@the-/axe
+ * @class Logger
+ */
 class Logger {
   logElement(node, logFn) {
     const document = get('document')

@@ -7,6 +7,7 @@ const {
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function modifyToDestructorOnDeclarationNode
+ * @returns {*}
  */
 function modifyToDestructorOnDeclarationNode(
   VariableDeclaration,

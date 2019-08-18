@@ -23,7 +23,7 @@
 ## @the-/mixin-stream
 Mixins for stream
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 <a name="compose"></a>
 

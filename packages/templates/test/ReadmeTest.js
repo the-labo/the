@@ -6,7 +6,7 @@
  */
 const coz = require('coz')
 const Readme = require('../lib/Readme')
-const jsdoc = require('../misc/mocks/mock-jsdoc')
+const jsdoc = require('../misc/mocks/mock-jsdoc.json')
 
 describe('readme', () => {
   before(() => {})

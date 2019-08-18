@@ -1,15 +1,15 @@
 'use strict'
 
+const { addUrlQuery } = require('@the-/url')
+const { get } = require('@the-/window')
+
 /**
  * Inject queries on location change
  * @memberof module:@the-/entrypoint
  * @function quelize
- * @param {function()|object} values or its builder
+ * @param {function()|Object} values or its builder
+ * @returns {*}
  */
-const { addUrlQuery } = require('@the-/url')
-const { get } = require('@the-/window')
-
-/** @lends module:@the-/entrypoint.quelize */
 function quelize(values, options = {}) {
   const { history = get('window.history') } = options
   if (history.$theQuelize) {

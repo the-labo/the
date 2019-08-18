@@ -1,15 +1,14 @@
 'use strict'
 
+const msgpack = require('msgpack-lite')
+const { isBrowser } = require('@the-/check')
+const Converters = require('./Converters')
+
 /**
  * Pack handler
  * @memberof module:@the-/pack
  * @class ThePack
  */
-const msgpack = require('msgpack-lite')
-const { isBrowser } = require('@the-/check')
-const Converters = require('./Converters')
-
-/** @lends module:@the-/pack.ThePack */
 class ThePack {
   constructor(options = {}) {
     this.decode = this.decode.bind(this)

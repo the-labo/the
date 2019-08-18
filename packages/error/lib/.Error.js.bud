@@ -3,7 +3,7 @@
  */
 'use strict'
 
-const errors = require('./.errors')
+const errors = require('./.errors.json')
 module.exports = errors.map(({ name, status }) => ({
   data: {
     errorName: name.replace(/^The/, ''),

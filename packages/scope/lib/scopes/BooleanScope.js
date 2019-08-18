@@ -1,14 +1,13 @@
 'use strict'
 
+const Scope = require('./Scope')
+
 /**
  * Scope to hold boolean
  * @memberof module:@the-/scope.scopes
  * @class BooleanScope
  * @augments module:@the-/scope.scopes.Scope
  */
-const Scope = require('./Scope')
-
-/** @lends module:@the-/scope.scopes.BooleanScope */
 class BooleanScope extends Scope {
   static get initialState() {
     return false

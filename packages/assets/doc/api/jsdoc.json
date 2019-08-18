@@ -18,13 +18,13 @@
   {
     "async": true,
     "description": "Install assets into directory",
-    "id": "module:@the-/assets.TheAssets#installTo",
+    "id": "TheAssets#installTo",
     "kind": "function",
-    "longname": "module:@the-/assets.TheAssets#installTo",
-    "memberof": "module:@the-/assets.TheAssets",
+    "longname": "TheAssets#installTo",
+    "memberof": "TheAssets",
     "meta": {
       "filename": "TheAssets.js",
-      "lineno": 20,
+      "lineno": 19,
       "path": "lib"
     },
     "name": "installTo",
@@ -80,7 +80,7 @@
     "memberof": "module:@the-/assets",
     "meta": {
       "filename": "TheAssets.js",
-      "lineno": 3,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "TheAssets",
@@ -111,7 +111,7 @@
     "memberof": "module:@the-/assets",
     "meta": {
       "filename": "create.js",
-      "lineno": 3,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",

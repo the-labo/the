@@ -1,20 +1,21 @@
 'use strict'
 
-/**
- * Mixin for lock
- * @memberof module:@the-/secret.mixins
- * @function lockMix
- */
 const { delSync, readAsJsonSync, writeAsJsonSync } = require('@the-/util-file')
 
 const LOCK_DURATION = 1500
 
-/** @lends module:@the-/secret.mixins.lockMix */
+/**
+ * Mixin for lock
+ * @memberof module:@the-/secret.mixins
+ * @function lockMix
+ * @param Class
+ * @returns {*}
+ */
 function lockMix(Class) {
   /**
    * @memberof module:@the-/secret.mixins.lockMix
-   * @inner
    * @class LockMixed
+   * @inner
    */
   class LockMixed extends Class {
     isLocked() {

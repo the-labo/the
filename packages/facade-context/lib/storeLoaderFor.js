@@ -1,3 +1,5 @@
+'use strict'
+
 /**
  * Context wrapper
  * @memberof module:@the-/facade-context
@@ -5,9 +7,6 @@
  * @param {Object} context
  * @returns {Object} - Face object for storeLoader access
  */
-'use strict'
-
-/** @lends module:@the-/facade-context.storeLoaderFor */
 function storeLoaderFor(context) {
   /**
    * @memberof module:@the-/facade-context.storeLoaderFor

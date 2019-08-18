@@ -1,14 +1,13 @@
-/**
- * @memberof module:@the-/icon.helpers
- * @namespace writer
- */
 'use strict'
 
 const amkdirp = require('amkdirp')
 const fs = require('fs')
 const path = require('path')
 
-/** @lends module:@the-/icon.helpers.writer */
+/**
+ * @memberof module:@the-/icon.helpers
+ * @namespace writer
+ */
 const writer = {
   async writerStream(filename, stream) {
     const dirname = path.dirname(filename)

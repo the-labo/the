@@ -1,15 +1,15 @@
 'use strict'
+
+const PATTERN = /[0-9-+]$/
+
 /**
  * Check if is phone number
  * @memberof module:@the-/util-site
- * @deprecated
  * @function isPhoneNumber
+ * @deprecated
  * @param {string} value - String value to check
  * @returns {boolean} Phone number or not
  */
-const PATTERN = /[0-9-+]$/
-
-/** @lends module:@the-/util-site.isPhoneNumber */
 function isPhoneNumber(value) {
   return Boolean(value && PATTERN.test(value))
 }

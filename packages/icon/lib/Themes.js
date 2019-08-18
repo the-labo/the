@@ -1,10 +1,9 @@
+'use strict'
+
 /**
  * @memberof module:@the-/icon
  * @class Themes
  */
-'use strict'
-
-/** @lends module:@the-/icon.Themes */
 const Themes = {
   CIRCLE: 'circle',
   CIRCLE_FILL: 'circle:fill',

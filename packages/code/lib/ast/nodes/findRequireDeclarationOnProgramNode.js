@@ -12,6 +12,8 @@ const isRequireCall = (call) => {
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function findRequireDeclarationOnProgramNode
+ * @param ProgramNode
+ * @returns {*}
  */
 function findRequireDeclarationOnProgramNode(ProgramNode) {
   const VariableDeclarations = []

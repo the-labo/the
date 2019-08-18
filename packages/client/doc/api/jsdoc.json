@@ -13,7 +13,7 @@
     "name": "@the-/client",
     "order": 2,
     "typicalname": "client",
-    "version": "15.6.0"
+    "version": "15.7.0"
   },
   {
     "id": "module:@the-/client.TheClient()",
@@ -48,7 +48,7 @@
     "longname": "addCallback",
     "meta": {
       "filename": "asController.js",
-      "lineno": 32,
+      "lineno": 31,
       "path": "lib/helpers"
     },
     "name": "addCallback",
@@ -90,7 +90,7 @@
     "longname": "addCallbacks",
     "meta": {
       "filename": "asController.js",
-      "lineno": 47,
+      "lineno": 46,
       "path": "lib/helpers"
     },
     "name": "addCallbacks",
@@ -124,7 +124,7 @@
     "longname": "delCallback",
     "meta": {
       "filename": "asController.js",
-      "lineno": 58,
+      "lineno": 57,
       "path": "lib/helpers"
     },
     "name": "delCallback",
@@ -138,7 +138,7 @@
     "longname": "removeCallback",
     "meta": {
       "filename": "asController.js",
-      "lineno": 74,
+      "lineno": 73,
       "path": "lib/helpers"
     },
     "name": "removeCallback",
@@ -170,7 +170,7 @@
     "longname": "setCallback",
     "meta": {
       "filename": "asController.js",
-      "lineno": 92,
+      "lineno": 91,
       "path": "lib/helpers"
     },
     "name": "setCallback",
@@ -420,43 +420,6 @@
     "scope": "instance"
   },
   {
-    "async": true,
-    "description": "Fetch server info",
-    "id": "module:@the-/client.mixins.infoMix~InfoMixed#serverInfo",
-    "kind": "function",
-    "longname": "module:@the-/client.mixins.infoMix~InfoMixed#serverInfo",
-    "memberof": "module:@the-/client.mixins.infoMix~InfoMixed",
-    "meta": {
-      "filename": "infoMix.js",
-      "lineno": 29,
-      "path": "lib/mixins"
-    },
-    "name": "serverInfo",
-    "order": 27,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "optional": true,
-        "defaultvalue": "{}",
-        "name": "options"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<Object>"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
     "description": "Send ping to the serve and callback when pong received",
     "id": "module:@the-/client.mixins.pingPongMix~PingPongMixed#pingPongAnd",
     "kind": "function",
@@ -503,45 +466,6 @@
     "scope": "instance"
   },
   {
-    "async": true,
-    "description": "Fetch server info",
-    "id": "module:@the-/client.TheClient#serverInfo",
-    "inherited": true,
-    "inherits": "module:@the-/client.mixins.infoMix~InfoMixed#serverInfo",
-    "kind": "function",
-    "longname": "module:@the-/client.TheClient#serverInfo",
-    "memberof": "module:@the-/client.TheClient",
-    "meta": {
-      "filename": "infoMix.js",
-      "lineno": 29,
-      "path": "lib/mixins"
-    },
-    "name": "serverInfo",
-    "order": 31,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "optional": true,
-        "defaultvalue": "{}",
-        "name": "options"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<Object>"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
     "description": "Send ping to the serve and callback when pong received",
     "id": "module:@the-/client.TheClient#pingPongAnd",
     "inherited": true,
@@ -555,7 +479,7 @@
       "path": "lib/mixins"
     },
     "name": "pingPongAnd",
-    "order": 32,
+    "order": 31,
     "params": [
       {
         "type": {
@@ -597,7 +521,7 @@
     "memberof": "module:@the-/client",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 26,
+      "lineno": 27,
       "path": "lib"
     },
     "name": "TheClientBase",
@@ -606,8 +530,6 @@
   },
   {
     "augments": [
-      "module:@the-/client.mixins.infoMix~InfoMixed",
-      "module:@the-/client.mixins.streamMix~StreamMixed",
       "module:@the-/client.TheClientBase",
       "module:@the-/client.mixins.pingPongMix~PingPongMixed"
     ],
@@ -617,7 +539,7 @@
     "memberof": "module:@the-/client",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 37,
+      "lineno": 38,
       "path": "lib"
     },
     "name": "TheClient",
@@ -682,7 +604,7 @@
       "path": "lib/mixins"
     },
     "name": "mixins",
-    "order": 24,
+    "order": 27,
     "scope": "static"
   },
   {
@@ -743,7 +665,7 @@
     "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 55,
+      "lineno": 54,
       "path": "lib"
     },
     "name": "for",
@@ -848,6 +770,20 @@
     },
     "name": "debugController",
     "order": 20,
+    "params": [
+      {
+        "name": "controller"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -863,6 +799,79 @@
     },
     "name": "debugStream",
     "order": 21,
+    "params": [
+      {
+        "name": "stream"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/client.helpers.InfoAccess",
+    "kind": "function",
+    "longname": "module:@the-/client.helpers.InfoAccess",
+    "memberof": "module:@the-/client.helpers",
+    "meta": {
+      "filename": "InfoAccess.js",
+      "lineno": 7,
+      "path": "lib/helpers"
+    },
+    "name": "InfoAccess",
+    "order": 23,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Fetch server info",
+    "id": "InfoAccess~infoAccess.serverInfo",
+    "kind": "function",
+    "longname": "InfoAccess~infoAccess.serverInfo",
+    "memberof": "InfoAccess~infoAccess",
+    "meta": {
+      "filename": "InfoAccess.js",
+      "lineno": 27,
+      "path": "lib/helpers"
+    },
+    "name": "serverInfo",
+    "order": 25,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Object>"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -877,7 +886,7 @@
       "path": "lib/helpers"
     },
     "name": "parseClientUrl",
-    "order": 23,
+    "order": 26,
     "params": [
       {
         "type": {
@@ -897,39 +906,6 @@
           ]
         },
         "description": "- Parsed url"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "id": "module:@the-/client.mixins.infoMix",
-    "kind": "function",
-    "longname": "module:@the-/client.mixins.infoMix",
-    "memberof": "module:@the-/client.mixins",
-    "meta": {
-      "filename": "infoMix.js",
-      "lineno": 7,
-      "path": "lib/mixins"
-    },
-    "name": "infoMix",
-    "order": 25,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        }
       }
     ],
     "scope": "static"
@@ -970,20 +946,6 @@
     "scope": "static"
   },
   {
-    "id": "module:@the-/client.mixins.infoMix~InfoMixed",
-    "kind": "class",
-    "longname": "module:@the-/client.mixins.infoMix~InfoMixed",
-    "memberof": "module:@the-/client.mixins.infoMix",
-    "meta": {
-      "filename": "infoMix.js",
-      "lineno": 19,
-      "path": "lib/mixins"
-    },
-    "name": "InfoMixed",
-    "order": 26,
-    "scope": "inner"
-  },
-  {
     "id": "module:@the-/client.mixins.pingPongMix~PingPongMixed",
     "kind": "class",
     "longname": "module:@the-/client.mixins.pingPongMix~PingPongMixed",
@@ -995,6 +957,20 @@
     },
     "name": "PingPongMixed",
     "order": 29,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/client.helpers.InfoAccess~infoAccess",
+    "kind": "namespace",
+    "longname": "module:@the-/client.helpers.InfoAccess~infoAccess",
+    "memberof": "module:@the-/client.helpers.InfoAccess",
+    "meta": {
+      "filename": "InfoAccess.js",
+      "lineno": 13,
+      "path": "lib/helpers"
+    },
+    "name": "infoAccess",
+    "order": 24,
     "scope": "inner"
   }
 ]

@@ -1,14 +1,5 @@
 'use strict'
 
-/**
- * Scoped redux store
- * @memberof module:@the-/store
- * @class TheStore
- * @param {Object} [options={}] - optional settings
- * @param {function()} [options.reducer] - Custom reducer function
- * @param {string[]} [options.persists={}] - Scope names to persistize in local storage
- * @param {function[]} [options.middlewares=[]] - Redux middleware functions
- */
 const {
   applyMiddleware,
   create: createStore,
@@ -29,7 +20,15 @@ const { parseDef, setByNamepath } = helpers
 
 const NAMEPATH_SEPARATOR = '.'
 
-/** @lends module:@the-/store.TheStore */
+/**
+ * Scoped redux store
+ * @memberof module:@the-/store
+ * @class TheStore
+ * @param {Object} [options={}] - optional settings
+ * @param {function()} [options.reducer] - Custom reducer function
+ * @param {string[]} [options.persists={}] - Scope names to persistize in local storage
+ * @param {function[]} [options.middlewares=[]] - Redux middleware functions
+ */
 class TheStore {
   constructor(options = {}) {
     const {

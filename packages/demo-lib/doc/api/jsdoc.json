@@ -7,13 +7,13 @@
     "longname": "module:@the-/demo-lib",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/demo-lib",
     "order": 2,
     "typicalname": "demoLib",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "id": "module:@the-/demo-lib.TheDemoLib",
@@ -22,7 +22,7 @@
     "memberof": "module:@the-/demo-lib",
     "meta": {
       "filename": "TheDemoLib.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "TheDemoLib",
@@ -37,7 +37,7 @@
     "memberof": "module:@the-/demo-lib",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -72,7 +72,7 @@
     "memberof": "module:@the-/demo-lib",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "theDemoLib",

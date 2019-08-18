@@ -9,6 +9,7 @@ const { compareStrings } = require('../../helpers/arrayHelper')
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function sortExportNamedDeclarationsOnProgramNode
+ * @returns {*}
  */
 function sortExportNamedDeclarationsOnProgramNode(ProgramNode, { swap }) {
   const ExportNamedDeclarations = finder.findByTypes(ProgramNode, [

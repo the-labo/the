@@ -1,9 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/rtc-client
- * @class TheRTCClient
- */
 const argx = require('argx')
 const uuid = require('uuid')
 const { get } = require('@the-/window')
@@ -28,7 +24,10 @@ const TheRTCClientBase = [
   peerMix,
 ].reduce((Class, mix) => mix(Class), class Base {})
 
-/** @lends module:@the-/rtc-client.TheRTCClient */
+/**
+ * @memberof module:@the-/rtc-client
+ * @class TheRTCClient
+ */
 class TheRTCClient extends TheRTCClientBase {
   constructor(options = {}) {
     super()

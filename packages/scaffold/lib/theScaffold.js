@@ -1,5 +1,16 @@
 'use strict'
 
+const argx = require('argx')
+const { statAsync } = require('asfs')
+const askconfig = require('askconfig')
+const filemode = require('filemode')
+const gitconfig = require('gitconfig')
+const path = require('path')
+const injection = require('./data.json')
+const listTypes = require('./listTypes')
+const render = require('./render')
+const tmpls = require('./tmpls.json')
+
 /**
  * @memberof module:@the-/scaffold
  * @function theScaffold
@@ -11,18 +22,6 @@
  * @param {boolean} [options.silent=false] - Disable logs.
  * @returns {Promise}
  */
-const argx = require('argx')
-const { statAsync } = require('asfs')
-const askconfig = require('askconfig')
-const filemode = require('filemode')
-const gitconfig = require('gitconfig')
-const path = require('path')
-const injection = require('./data')
-const listTypes = require('./listTypes')
-const render = require('./render')
-const tmpls = require('./tmpls')
-
-/** @lends module:@the-/scaffold.theScaffold */
 async function theScaffold(type, dest, options = {}) {
   const args = argx(arguments)
   type = args.shift('string')

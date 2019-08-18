@@ -1,14 +1,14 @@
+'use strict'
+
+const isProduction = require('./isProduction')
+
 /**
  * Do unless production env
  * @memberof module:@the-/check
  * @function unlessProduction
  * @param {function()} handler
+ * @returns {*}
  */
-'use strict'
-
-const isProduction = require('./isProduction')
-
-/** @lends module:@the-/check.unlessProduction */
 function unlessProduction(handler) {
   if (isProduction()) {
     return true

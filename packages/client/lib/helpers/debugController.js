@@ -15,6 +15,8 @@ const methodsToSkip = [
  * Wrap controller instance with debug utility
  * @memberof module:@the-/client.helpers
  * @function debugController
+ * @param controller
+ * @returns {*}
  */
 function debugController(controller) {
   const TOO_LONG_THRESHOLD = 3000

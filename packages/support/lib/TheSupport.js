@@ -1,17 +1,16 @@
 'use strict'
 
-/**
- * @memberof module:@the-/support
- * @class TheSupport
- * @param {string} pattern - Filename pattern
- */
 const aglob = require('aglob')
 const { readFileAsync } = require('asfs')
 const path = require('path')
 const detectUnsupportedCode = require('./helpers/detectUnsupportedCode')
 const findEvalCode = require('./helpers/findEvalCode')
 
-/** @lends module:@the-/support.TheSupport */
+/**
+ * @memberof module:@the-/support
+ * @class TheSupport
+ * @param {string} pattern - Filename pattern
+ */
 class TheSupport {
   static async checkECMASupport(filename, ecmaVersion) {
     const relativeFilename = path.relative(process.cwd(), filename)

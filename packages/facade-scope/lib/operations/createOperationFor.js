@@ -1,3 +1,9 @@
+'use strict'
+
+const busyAccessFor = require('../busyAccessFor')
+const entryAccessFor = require('../entryAccessFor')
+const resultAccessFor = require('../resultAccessFor')
+
 /**
  * Scope access
  * @memberof module:@the-/facade-scope
@@ -5,13 +11,6 @@
  * @param {Object} scope
  * @returns {Object} - Face object for createOperationFor access
  */
-'use strict'
-
-const busyAccessFor = require('../busyAccessFor')
-const entryAccessFor = require('../entryAccessFor')
-const resultAccessFor = require('../resultAccessFor')
-
-/** @lends module:@the-/facade-scope.createOperationFor */
 function createOperationFor(scope) {
   const entryAccess = entryAccessFor(scope)
   const resultAccess = resultAccessFor(scope)

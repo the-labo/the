@@ -7,13 +7,13 @@
     "longname": "module:@the-/resize",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/resize",
     "order": 2,
     "typicalname": "resize",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "id": "module:@the-/resize.TheResize()",
@@ -48,10 +48,10 @@
   {
     "async": true,
     "description": "Convert file(s)",
-    "id": "module:@the-/resize.TheResize#convert",
+    "id": "TheResize#convert",
     "kind": "function",
-    "longname": "module:@the-/resize.TheResize#convert",
-    "memberof": "module:@the-/resize.TheResize",
+    "longname": "TheResize#convert",
+    "memberof": "TheResize",
     "meta": {
       "filename": "TheResize.js",
       "lineno": 37,
@@ -104,10 +104,10 @@
   {
     "async": true,
     "description": "Convert files in a directory",
-    "id": "module:@the-/resize.TheResize#convertDir",
+    "id": "TheResize#convertDir",
     "kind": "function",
-    "longname": "module:@the-/resize.TheResize#convertDir",
-    "memberof": "module:@the-/resize.TheResize",
+    "longname": "TheResize#convertDir",
+    "memberof": "TheResize",
     "meta": {
       "filename": "TheResize.js",
       "lineno": 55,
@@ -160,10 +160,10 @@
   {
     "async": true,
     "description": "Convert a single file",
-    "id": "module:@the-/resize.TheResize#convertFile",
+    "id": "TheResize#convertFile",
     "kind": "function",
-    "longname": "module:@the-/resize.TheResize#convertFile",
-    "memberof": "module:@the-/resize.TheResize",
+    "longname": "TheResize#convertFile",
+    "memberof": "TheResize",
     "meta": {
       "filename": "TheResize.js",
       "lineno": 73,
@@ -214,10 +214,10 @@
   {
     "async": true,
     "description": "Overwrite a file",
-    "id": "module:@the-/resize.TheResize#overwrite",
+    "id": "TheResize#overwrite",
     "kind": "function",
-    "longname": "module:@the-/resize.TheResize#overwrite",
-    "memberof": "module:@the-/resize.TheResize",
+    "longname": "TheResize#overwrite",
+    "memberof": "TheResize",
     "meta": {
       "filename": "TheResize.js",
       "lineno": 109,
@@ -261,10 +261,10 @@
   {
     "async": true,
     "description": "Overwrite files in a dir",
-    "id": "module:@the-/resize.TheResize#overwriteDir",
+    "id": "TheResize#overwriteDir",
     "kind": "function",
-    "longname": "module:@the-/resize.TheResize#overwriteDir",
-    "memberof": "module:@the-/resize.TheResize",
+    "longname": "TheResize#overwriteDir",
+    "memberof": "TheResize",
     "meta": {
       "filename": "TheResize.js",
       "lineno": 126,
@@ -308,10 +308,10 @@
   {
     "async": true,
     "description": "Resized a single file",
-    "id": "module:@the-/resize.TheResize#overwriteFile",
+    "id": "TheResize#overwriteFile",
     "kind": "function",
-    "longname": "module:@the-/resize.TheResize#overwriteFile",
-    "memberof": "module:@the-/resize.TheResize",
+    "longname": "TheResize#overwriteFile",
+    "memberof": "TheResize",
     "meta": {
       "filename": "TheResize.js",
       "lineno": 142,
@@ -354,10 +354,10 @@
   {
     "async": true,
     "description": "Overwrite if possible",
-    "id": "module:@the-/resize.TheResize#overwriteIfPossible",
+    "id": "TheResize#overwriteIfPossible",
     "kind": "function",
-    "longname": "module:@the-/resize.TheResize#overwriteIfPossible",
-    "memberof": "module:@the-/resize.TheResize",
+    "longname": "TheResize#overwriteIfPossible",
+    "memberof": "TheResize",
     "meta": {
       "filename": "TheResize.js",
       "lineno": 156,
@@ -405,7 +405,7 @@
     "memberof": "module:@the-/resize",
     "meta": {
       "filename": "TheResize.js",
-      "lineno": 2,
+      "lineno": 14,
       "path": "lib"
     },
     "name": "TheResize",
@@ -423,7 +423,7 @@
     "memberof": "module:@the-/resize",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -458,7 +458,7 @@
     "memberof": "module:@the-/resize",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",

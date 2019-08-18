@@ -1,5 +1,7 @@
 'use strict'
 
+const ThePack = require('./ThePack')
+
 /**
  * Create a ThePack instance
  * @memberof module:@the-/pack
@@ -7,9 +9,6 @@
  * @param {...*} args
  * @returns {ThePack}
  */
-const ThePack = require('./ThePack')
-
-/** @lends module:@the-/pack.create */
 function create(...args) {
   return new ThePack(...args)
 }

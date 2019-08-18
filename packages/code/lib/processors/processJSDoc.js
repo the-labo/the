@@ -14,8 +14,9 @@ const contentAccess = require('../helpers/contentAccess')
 /**
  * @memberof module:@the-/code.processors
  * @function processJSDoc
- * @param {string} content
  * @param {Object} [options={}]
+ * @param {string} content
+ * @returns {Promise<*>}
  */
 async function processJSDoc(content, options = {}) {
   const { filename } = options

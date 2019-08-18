@@ -11,14 +11,6 @@ User media handler
 * [@the-/media](#module_@the-/media)
     * [.TheMedia](#module_@the-/media.TheMedia)
         * [new TheMedia([options])](#new_module_@the-/media.TheMedia_new)
-        * [.createAudioRecorder(audioContext, [options])](#module_@the-/media.TheMedia+createAudioRecorder) ⇒ <code>window.MediaRecorder</code>
-        * [.getStreamTracks(kind)](#module_@the-/media.TheMedia+getStreamTracks) ⇒ <code>Array.&lt;window.MediaStreamTrack&gt;</code>
-        * [.toggleEnabled(kind, enabled)](#module_@the-/media.TheMedia+toggleEnabled)
-        * [.bindVideo(video, [options])](#module_@the-/media.TheMedia+bindVideo) ⇒ <code>Promise.&lt;undefined&gt;</code>
-        * [.start()](#module_@the-/media.TheMedia+start) ⇒ <code>Promise.&lt;undefined&gt;</code>
-        * [.stop()](#module_@the-/media.TheMedia+stop) ⇒ <code>Promise.&lt;undefined&gt;</code>
-        * [.takePhoto([options])](#module_@the-/media.TheMedia+takePhoto) ⇒ <code>Promise.&lt;window.Blob&gt;</code>
-        * [.updateConstrains([constrains])](#module_@the-/media.TheMedia+updateConstrains) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.create(...args)](#module_@the-/media.create) ⇒ <code>TheMedia</code>
     * [.default()](#module_@the-/media.default)
 
@@ -26,18 +18,6 @@ User media handler
 
 ### media.TheMedia
 **Kind**: static class of [<code>@the-/media</code>](#module_@the-/media)  
-
-* [.TheMedia](#module_@the-/media.TheMedia)
-    * [new TheMedia([options])](#new_module_@the-/media.TheMedia_new)
-    * [.createAudioRecorder(audioContext, [options])](#module_@the-/media.TheMedia+createAudioRecorder) ⇒ <code>window.MediaRecorder</code>
-    * [.getStreamTracks(kind)](#module_@the-/media.TheMedia+getStreamTracks) ⇒ <code>Array.&lt;window.MediaStreamTrack&gt;</code>
-    * [.toggleEnabled(kind, enabled)](#module_@the-/media.TheMedia+toggleEnabled)
-    * [.bindVideo(video, [options])](#module_@the-/media.TheMedia+bindVideo) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * [.start()](#module_@the-/media.TheMedia+start) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * [.stop()](#module_@the-/media.TheMedia+stop) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * [.takePhoto([options])](#module_@the-/media.TheMedia+takePhoto) ⇒ <code>Promise.&lt;window.Blob&gt;</code>
-    * [.updateConstrains([constrains])](#module_@the-/media.TheMedia+updateConstrains) ⇒ <code>Promise.&lt;undefined&gt;</code>
-
 <a name="new_module_@the-/media.TheMedia_new"></a>
 
 #### new TheMedia([options])
@@ -47,90 +27,6 @@ User media handler
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 | [options.video] | <code>Object</code> \| <code>boolean</code> |  | Video constraint |
 | [options.audio] | <code>Object</code> \| <code>boolean</code> |  | Audio constraint |
-
-<a name="module_@the-/media.TheMedia+createAudioRecorder"></a>
-
-#### theMedia.createAudioRecorder(audioContext, [options]) ⇒ <code>window.MediaRecorder</code>
-Create audio media recorder with AudioContext
-
-**Kind**: instance method of [<code>TheMedia</code>](#module_@the-/media.TheMedia)  
-
-| Param | Type | Default |
-| --- | --- | --- |
-| audioContext | <code>window.AudioContext</code> |  | 
-| [options] | <code>Object</code> | <code>{}</code> | 
-
-<a name="module_@the-/media.TheMedia+getStreamTracks"></a>
-
-#### theMedia.getStreamTracks(kind) ⇒ <code>Array.&lt;window.MediaStreamTrack&gt;</code>
-Get tracks
-
-**Kind**: instance method of [<code>TheMedia</code>](#module_@the-/media.TheMedia)  
-
-| Param | Type |
-| --- | --- |
-| kind | <code>string</code> | 
-
-<a name="module_@the-/media.TheMedia+toggleEnabled"></a>
-
-#### theMedia.toggleEnabled(kind, enabled)
-Toggle track enabled
-
-**Kind**: instance method of [<code>TheMedia</code>](#module_@the-/media.TheMedia)  
-
-| Param | Type |
-| --- | --- |
-| kind | <code>string</code> | 
-| enabled | <code>boolean</code> | 
-
-<a name="module_@the-/media.TheMedia+bindVideo"></a>
-
-#### theMedia.bindVideo(video, [options]) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Bind HTML video element
-
-**Kind**: instance method of [<code>TheMedia</code>](#module_@the-/media.TheMedia)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| video | <code>window.HTMLVideoElement</code> |  |  |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
-<a name="module_@the-/media.TheMedia+start"></a>
-
-#### theMedia.start() ⇒ <code>Promise.&lt;undefined&gt;</code>
-Start user media
-
-**Kind**: instance method of [<code>TheMedia</code>](#module_@the-/media.TheMedia)  
-<a name="module_@the-/media.TheMedia+stop"></a>
-
-#### theMedia.stop() ⇒ <code>Promise.&lt;undefined&gt;</code>
-Stop user media
-
-**Kind**: instance method of [<code>TheMedia</code>](#module_@the-/media.TheMedia)  
-<a name="module_@the-/media.TheMedia+takePhoto"></a>
-
-#### theMedia.takePhoto([options]) ⇒ <code>Promise.&lt;window.Blob&gt;</code>
-Take photo image
-
-**Kind**: instance method of [<code>TheMedia</code>](#module_@the-/media.TheMedia)  
-**Returns**: <code>Promise.&lt;window.Blob&gt;</code> - Blob  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
-<a name="module_@the-/media.TheMedia+updateConstrains"></a>
-
-#### theMedia.updateConstrains([constrains]) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Update constrains on run time
-
-**Kind**: instance method of [<code>TheMedia</code>](#module_@the-/media.TheMedia)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [constrains] | <code>Object</code> | <code>{}</code> |  |
-| [constrains.video] | <code>Object</code> |  | Video constrains |
-| [constrains.audio] | <code>Object</code> |  | Audio constrains |
 
 <a name="module_@the-/media.create"></a>
 

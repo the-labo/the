@@ -1,3 +1,5 @@
+'use strict'
+
 /**
  * Scope access
  * @memberof module:@the-/facade-scope
@@ -5,9 +7,6 @@
  * @param {Object} scope
  * @returns {Object} - Face object for more access
  */
-'use strict'
-
-/** @lends module:@the-/facade-scope.moreAccessFor */
 function moreAccessFor(scope) {
   /**
    * @memberof module:@the-/facade-scope.moreAccessFor

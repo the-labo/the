@@ -1,12 +1,11 @@
 'use strict'
 
+const { readAsJson, unlinkAsync, writeAsJson } = require('@the-/util-file')
+
 /**
  * @memberof module:@the-/lint.helpers
  * @class SpellCache
  */
-const { readAsJson, unlinkAsync, writeAsJson } = require('@the-/util-file')
-
-/** @lends module:@the-/lint.helpers.SpellCache */
 class SpellCache {
   constructor(filename) {
     this.filename = filename

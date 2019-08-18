@@ -5,19 +5,13 @@
 ## @the-/date
 Date utility for the-framework
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/date](#module_@the-/date)
+    * [.TheDateBase](#module_@the-/date.TheDateBase)
     * [.TheDate](#module_@the-/date.TheDate) ⇐ [<code>AddMixed</code>](#module_@the-/date.mixins.addMix..AddMixed)
         * [new TheDate()](#new_module_@the-/date.TheDate_new)
-        * [.format(format)](#module_@the-/date.TheDate+format) ⇒ <code>string</code>
-        * [.fromNow()](#module_@the-/date.TheDate+fromNow) ⇒ <code>string</code>
-        * [.toDate()](#module_@the-/date.TheDate+toDate) ⇒ <code>Date</code>
-        * [.toJSON()](#module_@the-/date.TheDate+toJSON) ⇒ <code>string</code>
-        * [.toNumber()](#module_@the-/date.TheDate+toNumber) ⇒ <code>number</code>
-        * [.toString()](#module_@the-/date.TheDate+toString) ⇒ <code>string</code>
-    * [.TheDateBase](#module_@the-/date.TheDateBase)
     * [.Durations](#module_@the-/date.Durations) : <code>object</code>
     * [.units](#module_@the-/date.units) : <code>object</code>
     * [.mixins](#module_@the-/date.mixins) : <code>object</code>
@@ -37,73 +31,21 @@ Date utility for the-framework
     * [.create(...args)](#module_@the-/date.create) ⇒ <code>TheDate</code>
     * [.default()](#module_@the-/date.default) ⇒ <code>TheDate</code>
 
-<a name="module_@the-/date.TheDate"></a>
-
-### date.TheDate ⇐ [<code>AddMixed</code>](#module_@the-/date.mixins.addMix..AddMixed)
-**Kind**: static class of [<code>@the-/date</code>](#module_@the-/date)  
-**Extends**: [<code>AddMixed</code>](#module_@the-/date.mixins.addMix..AddMixed), <code>module:@the-/date.mixins.endOfMix~EndOfMixed</code>, [<code>GetMixed</code>](#module_@the-/date.mixins.getMix..GetMixed), [<code>MomentMixed</code>](#module_@the-/date.mixins.momentMix..MomentMixed), [<code>SetMixed</code>](#module_@the-/date.mixins.setMix..SetMixed), [<code>StartOfMixed</code>](#module_@the-/date.mixins.startOfMix..StartOfMixed), [<code>SubtractMixed</code>](#module_@the-/date.mixins.subtractMix..SubtractMixed), [<code>TheDateBase</code>](#module_@the-/date.TheDateBase)  
-
-* [.TheDate](#module_@the-/date.TheDate) ⇐ [<code>AddMixed</code>](#module_@the-/date.mixins.addMix..AddMixed)
-    * [new TheDate()](#new_module_@the-/date.TheDate_new)
-    * [.format(format)](#module_@the-/date.TheDate+format) ⇒ <code>string</code>
-    * [.fromNow()](#module_@the-/date.TheDate+fromNow) ⇒ <code>string</code>
-    * [.toDate()](#module_@the-/date.TheDate+toDate) ⇒ <code>Date</code>
-    * [.toJSON()](#module_@the-/date.TheDate+toJSON) ⇒ <code>string</code>
-    * [.toNumber()](#module_@the-/date.TheDate+toNumber) ⇒ <code>number</code>
-    * [.toString()](#module_@the-/date.TheDate+toString) ⇒ <code>string</code>
-
-<a name="new_module_@the-/date.TheDate_new"></a>
-
-#### new TheDate()
-Date manipulator
-
-<a name="module_@the-/date.TheDate+format"></a>
-
-#### theDate.format(format) ⇒ <code>string</code>
-Format into string
-
-**Kind**: instance method of [<code>TheDate</code>](#module_@the-/date.TheDate)  
-**Returns**: <code>string</code> - - Formatted string  
-
-| Param | Type |
-| --- | --- |
-| format | <code>string</code> | 
-
-<a name="module_@the-/date.TheDate+fromNow"></a>
-
-#### theDate.fromNow() ⇒ <code>string</code>
-Date string from now
-
-**Kind**: instance method of [<code>TheDate</code>](#module_@the-/date.TheDate)  
-<a name="module_@the-/date.TheDate+toDate"></a>
-
-#### theDate.toDate() ⇒ <code>Date</code>
-Covert into date
-
-**Kind**: instance method of [<code>TheDate</code>](#module_@the-/date.TheDate)  
-<a name="module_@the-/date.TheDate+toJSON"></a>
-
-#### theDate.toJSON() ⇒ <code>string</code>
-Convert into JSON String
-
-**Kind**: instance method of [<code>TheDate</code>](#module_@the-/date.TheDate)  
-<a name="module_@the-/date.TheDate+toNumber"></a>
-
-#### theDate.toNumber() ⇒ <code>number</code>
-Convert to number
-
-**Kind**: instance method of [<code>TheDate</code>](#module_@the-/date.TheDate)  
-<a name="module_@the-/date.TheDate+toString"></a>
-
-#### theDate.toString() ⇒ <code>string</code>
-Convert into string
-
-**Kind**: instance method of [<code>TheDate</code>](#module_@the-/date.TheDate)  
 <a name="module_@the-/date.TheDateBase"></a>
 
 ### date.TheDateBase
 **Kind**: static class of [<code>@the-/date</code>](#module_@the-/date)  
 **Access**: protected  
+<a name="module_@the-/date.TheDate"></a>
+
+### date.TheDate ⇐ [<code>AddMixed</code>](#module_@the-/date.mixins.addMix..AddMixed)
+**Kind**: static class of [<code>@the-/date</code>](#module_@the-/date)  
+**Extends**: [<code>AddMixed</code>](#module_@the-/date.mixins.addMix..AddMixed), <code>module:@the-/date.mixins.endOfMix~EndOfMixed</code>, [<code>GetMixed</code>](#module_@the-/date.mixins.getMix..GetMixed), [<code>MomentMixed</code>](#module_@the-/date.mixins.momentMix..MomentMixed), [<code>SetMixed</code>](#module_@the-/date.mixins.setMix..SetMixed), [<code>StartOfMixed</code>](#module_@the-/date.mixins.startOfMix..StartOfMixed), [<code>SubtractMixed</code>](#module_@the-/date.mixins.subtractMix..SubtractMixed), [<code>TheDateBase</code>](#module_@the-/date.TheDateBase)  
+<a name="new_module_@the-/date.TheDate_new"></a>
+
+#### new TheDate()
+Date manipulator
+
 <a name="module_@the-/date.Durations"></a>
 
 ### date.Durations : <code>object</code>

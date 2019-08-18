@@ -1,5 +1,7 @@
 'use strict'
 
+const { TheMedia } = require('@the-/media')
+
 /**
  * Mixin for media
  * @memberof module:@the-/rtc.constants.mixins
@@ -7,9 +9,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-const { TheMedia } = require('@the-/media')
-
-/** @lends module:@the-/rtc.constants.mixins.mediaMix */
 function mediaMix(Class) {
   class MediaMixed extends Class {
     createMedia(constrains = {}) {

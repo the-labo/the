@@ -1,14 +1,13 @@
 'use strict'
 
+const Scope = require('./Scope')
+
 /**
  * Scope to hold array
  * @memberof module:@the-/scope.scopes
  * @class ArrayScope
  * @augments module:@the-/scope.scopes.Scope
  */
-const Scope = require('./Scope')
-
-/** @lends module:@the-/scope.scopes.ArrayScope */
 class ArrayScope extends Scope {
   static get initialState() {
     return []

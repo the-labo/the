@@ -1,13 +1,14 @@
 'use strict'
 
+const ThePS = require('./ThePS')
+
 /**
  * Acquire process
  * @memberof module:@the-/ps
  * @function acquire
+ * @param filename
+ * @returns {Promise<*>}
  */
-const ThePS = require('./ThePS')
-
-/** @lends module:@the-/ps.acquire */
 async function acquire(filename) {
   const ps = new ThePS(filename, {
     killPolicy: 'ask',

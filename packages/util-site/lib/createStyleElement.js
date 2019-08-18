@@ -1,14 +1,14 @@
 'use strict'
 
+const { get } = require('bwindow')
+
 /**
  * @memberof module:@the-/util-site
  * @function createStyleElement
- * @param {string} css - CSS String
  * @param {object} [options={}] - Optional settings
+ * @param {string} css - CSS String
+ * @returns {*}
  */
-const { get } = require('bwindow')
-
-/** @lends module:@the-/util-site.createStyleElement */
 function createStyleElement(css, options = {}) {
   const {
     className = 'the-dynamic-style',

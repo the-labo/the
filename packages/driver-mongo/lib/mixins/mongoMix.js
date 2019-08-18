@@ -1,16 +1,17 @@
 'use strict'
 
-/**
- * Mixin of mongodb
- * @memberof module:@the-/driver-mongo.mixins
- * @function mongoMix
- */
 const { cleanup } = require('asobj')
 const uriBuilder = require('mongo-uri-builder')
 const { MongoClient, ObjectID } = require('mongodb')
 const debug = require('debug')('the:driver:mongo')
 
-/** @lends module:@the-/driver-mongo.mixins.mongoMix */
+/**
+ * Mixin of mongodb
+ * @memberof module:@the-/driver-mongo.mixins
+ * @function mongoMix
+ * @param Class
+ * @returns {*}
+ */
 function mongoMix(Class) {
   class MongoMixed extends Class {
     enhanceMongoCollection(c) {

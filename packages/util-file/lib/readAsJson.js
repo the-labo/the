@@ -1,5 +1,9 @@
 'use strict'
 
+const { readFileAsync, statAsync } = require('asfs')
+const JSON5 = require('json5')
+const isJSON5File = require('./isJSON5File')
+
 /**
  * Read as json
  * @memberof module:@the-/util-file
@@ -7,11 +11,6 @@
  * @param {string} filename
  * @returns {Promise<Object>}
  */
-const { readFileAsync, statAsync } = require('asfs')
-const JSON5 = require('json5')
-const isJSON5File = require('./isJSON5File')
-
-/** @lends module:@the-/util-file.readAsJson */
 async function readAsJson(filename) {
   const stat = await statAsync(filename).catch(() => null)
   if (!stat) {

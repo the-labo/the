@@ -7,7 +7,7 @@
     "longname": "module:@the-/cache",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/cache",
@@ -18,10 +18,10 @@
   {
     "async": true,
     "description": "Get cache or initialize and set",
-    "id": "module:@the-/cache.TheCache#for",
+    "id": "TheCache#for",
     "kind": "function",
-    "longname": "module:@the-/cache.TheCache#for",
-    "memberof": "module:@the-/cache.TheCache",
+    "longname": "TheCache#for",
+    "memberof": "TheCache",
     "meta": {
       "filename": "TheCache.js",
       "lineno": 18,
@@ -70,7 +70,7 @@
     "memberof": "module:@the-/cache",
     "meta": {
       "filename": "TheCache.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "TheCache",
@@ -88,7 +88,7 @@
     "memberof": "module:@the-/cache",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -123,7 +123,7 @@
     "memberof": "module:@the-/cache",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",

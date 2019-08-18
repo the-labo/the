@@ -1,5 +1,7 @@
 'use strict'
 
+const ThePolyfill = require('./ThePolyfill')
+
 /**
  * Create a ThePolyfill instance
  * @memberof module:@the-/polyfill
@@ -7,9 +9,6 @@
  * @param {...*} args
  * @returns {ThePolyfill}
  */
-const ThePolyfill = require('./ThePolyfill')
-
-/** @lends module:@the-/polyfill.create */
 function create(...args) {
   return new ThePolyfill(...args)
 }

@@ -1,3 +1,5 @@
+'use strict'
+
 /**
  * Scope access
  * @memberof module:@the-/facade-scope
@@ -5,9 +7,6 @@
  * @param {Object} scope
  * @returns {Object} - Face object for entityAccessFor access
  */
-'use strict'
-
-/** @lends module:@the-/facade-scope.entityAccessFor */
 function entityAccessFor(scope) {
   /**
    * @memberof module:@the-/facade-scope.entityAccessFor
@@ -16,14 +15,14 @@ function entityAccessFor(scope) {
    */
   const entityAccessFor = {
     /**
-     * @type {object}
+     * @type {Object}
      */
     get state() {
       return scope.get('entity')
     },
     /**
      * Set entity
-     * @param {object} entity
+     * @param {Object} entity
      */
     set(entity) {
       scope.set({ entity })

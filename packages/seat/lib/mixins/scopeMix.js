@@ -1,12 +1,13 @@
 'use strict'
 
+const { escape } = require('json-pointer')
+
 /**
  * @memberof module:@the-/seat
  * @function scopeMix
+ * @param Class
+ * @returns {*}
  */
-const { escape } = require('json-pointer')
-
-/** @lends module:@the-/seat.scopeMix */
 function scopeMix(Class) {
   return class ScopeMixed extends Class {
     scopePathFor(...names) {

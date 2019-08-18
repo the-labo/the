@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Create "depsRule" lint
- * @memberof module:@the-/lint.rules
- * @function depsRule
- * @param {Object} config - Lint config
- * @returns {function()} Lint function
- */
 const path = require('path')
 const {
   constants: { NodeTypes },
@@ -16,7 +9,13 @@ const {
 } = require('@the-/ast')
 const { parsePattern } = require('../helpers/parseHelper')
 
-/** @lends module:@the-/lint.rules.depsRule */
+/**
+ * Create "depsRule" lint
+ * @memberof module:@the-/lint.rules
+ * @function depsRule
+ * @param {Object} config - Lint config
+ * @returns {function()} Lint function
+ */
 function depsRule(config) {
   const {
     forbidImportFrom = null,

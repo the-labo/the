@@ -7,6 +7,8 @@ const debug = require('debug')('the:code:contentAccess')
  * Define content access methods
  * @memberof module:@the-/code
  * @function contentAccess
+ * @param content
+ * @returns {*}
  */
 function contentAccess(content) {
   const contentLines = content.split(EOL)

@@ -1,13 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/util-file
- * @function writeAsJsonSync
- * @param {string} filename
- * @param {Object} data
- * @param {Object} [options]
- * @param {boolean} [options.sort=true]
- */
 const { sortProperties } = require('fmtjson')
 const { writeFileSync } = require('fs')
 const JSON5 = require('json5')
@@ -16,7 +8,14 @@ const { EOL } = require('os')
 const path = require('path')
 const isJSON5File = require('./isJSON5File')
 
-/** @lends module:@the-/util-file.writeAsJsonSync */
+/**
+ * @memberof module:@the-/util-file
+ * @function writeAsJsonSync
+ * @param {string} filename
+ * @param {Object} data
+ * @param {Object} [options]
+ * @param {boolean} [options.sort=true]
+ */
 function writeAsJsonSync(filename, data, options = {}) {
   mkdirp.sync(path.dirname(filename))
   const { sort = true } = options

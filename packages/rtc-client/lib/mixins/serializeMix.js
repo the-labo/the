@@ -1,5 +1,11 @@
 'use strict'
 
+const { Converters, ThePack } = require('@the-/pack')
+
+const { decode, encode } = new ThePack({
+  convert: Converters.UInt8ArrayConverter,
+})
+
 /**
  * Mixin for serialize
  * @memberof module:@the-/rtc.constants.mixins
@@ -7,13 +13,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-const { Converters, ThePack } = require('@the-/pack')
-
-const { decode, encode } = new ThePack({
-  convert: Converters.UInt8ArrayConverter,
-})
-
-/** @lends module:@the-/rtc.constants.mixins.serializeMix */
 function serializeMix(Class) {
   class SerializeMixed extends Class {
     deserializeChannelData(data, options = {}) {

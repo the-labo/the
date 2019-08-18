@@ -5,17 +5,17 @@
 ## @the-/entrypoint
 Browser entrypoint for the-framework
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/entrypoint](#module_@the-/entrypoint)
     * [.helpers](#module_@the-/entrypoint.helpers) : <code>object</code>
-        * [.createStyleElement()](#module_@the-/entrypoint.helpers.createStyleElement) ⇒ <code>HTMLElement</code>
+        * [.createStyleElement(cssString, [options&#x3D;])](#module_@the-/entrypoint.helpers.createStyleElement) ⇒ <code>HTMLElement</code>
     * [.history()](#module_@the-/entrypoint.history) ⇒ <code>Object</code>
     * [.mount(element, containerId, [options])](#module_@the-/entrypoint.mount) ⇒ <code>Promise</code>
     * [.online([options])](#module_@the-/entrypoint.online)
     * [.patch()](#module_@the-/entrypoint.patch)
-    * [.quelize(values)](#module_@the-/entrypoint.quelize)
+    * [.quelize(values)](#module_@the-/entrypoint.quelize) ⇒ <code>\*</code>
     * [.secure([options])](#module_@the-/entrypoint.secure) ⇒ <code>boolean</code>
     * [.singleton([options])](#module_@the-/entrypoint.singleton)
     * [.workers(swUrls)](#module_@the-/entrypoint.workers) ⇒ <code>Promise.&lt;undefined&gt;</code>
@@ -29,10 +29,16 @@ Helper functions
 **Access**: protected  
 <a name="module_@the-/entrypoint.helpers.createStyleElement"></a>
 
-#### helpers.createStyleElement() ⇒ <code>HTMLElement</code>
+#### helpers.createStyleElement(cssString, [options&#x3D;]) ⇒ <code>HTMLElement</code>
 Create Style element
 
 **Kind**: static method of [<code>helpers</code>](#module_@the-/entrypoint.helpers)  
+
+| Param |
+| --- |
+| cssString | 
+| [options=] | 
+
 <a name="module_@the-/entrypoint.history"></a>
 
 ### entrypoint.history() ⇒ <code>Object</code>
@@ -51,7 +57,7 @@ Mount element on DOM
 | --- | --- | --- |
 | element | <code>\*</code> | React element |
 | containerId | <code>string</code> | Id of container dom |
-| [options] | <code>object</code> | Optional settings |
+| [options] | <code>Object</code> | Optional settings |
 | [options.strictMode] | <code>boolean</code> | Using strict mode |
 | [options.router] | <code>boolean</code> | Use router |
 
@@ -74,14 +80,14 @@ Apply patch
 **Kind**: static method of [<code>@the-/entrypoint</code>](#module_@the-/entrypoint)  
 <a name="module_@the-/entrypoint.quelize"></a>
 
-### entrypoint.quelize(values)
+### entrypoint.quelize(values) ⇒ <code>\*</code>
 Inject queries on location change
 
 **Kind**: static method of [<code>@the-/entrypoint</code>](#module_@the-/entrypoint)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| values | <code>function</code> \| <code>object</code> | or its builder |
+| values | <code>function</code> \| <code>Object</code> | or its builder |
 
 <a name="module_@the-/entrypoint.secure"></a>
 

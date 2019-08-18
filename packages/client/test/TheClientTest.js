@@ -104,7 +104,7 @@ describe('the-client', () => {
 
       await asleep(100)
 
-      const serverInfo = await client02.serverInfo()
+      const serverInfo = await client02.infoAccess.serverInfo()
       deepEqual(serverInfo.controllers, [
         {
           methods: {

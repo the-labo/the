@@ -7,13 +7,13 @@
     "longname": "module:@the-/queue",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/queue",
     "order": 2,
     "typicalname": "queue",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "id": "module:@the-/queue.TheQueue()",
@@ -66,10 +66,10 @@
   },
   {
     "description": "Push next task",
-    "id": "module:@the-/queue.TheQueue#push",
+    "id": "TheQueue#push",
     "kind": "function",
-    "longname": "module:@the-/queue.TheQueue#push",
-    "memberof": "module:@the-/queue.TheQueue",
+    "longname": "TheQueue#push",
+    "memberof": "TheQueue",
     "meta": {
       "filename": "TheQueue.js",
       "lineno": 42,
@@ -92,13 +92,13 @@
   },
   {
     "description": "Start queue",
-    "id": "module:@the-/queue.TheQueue#start",
+    "id": "TheQueue#start",
     "kind": "function",
-    "longname": "module:@the-/queue.TheQueue#start",
-    "memberof": "module:@the-/queue.TheQueue",
+    "longname": "TheQueue#start",
+    "memberof": "TheQueue",
     "meta": {
       "filename": "TheQueue.js",
-      "lineno": 65,
+      "lineno": 64,
       "path": "lib"
     },
     "name": "start",
@@ -108,13 +108,13 @@
   },
   {
     "description": "Stop queue",
-    "id": "module:@the-/queue.TheQueue#stop",
+    "id": "TheQueue#stop",
     "kind": "function",
-    "longname": "module:@the-/queue.TheQueue#stop",
-    "memberof": "module:@the-/queue.TheQueue",
+    "longname": "TheQueue#stop",
+    "memberof": "TheQueue",
     "meta": {
       "filename": "TheQueue.js",
-      "lineno": 73,
+      "lineno": 72,
       "path": "lib"
     },
     "name": "stop",
@@ -125,13 +125,13 @@
   {
     "async": true,
     "description": "Wait until queue got empty",
-    "id": "module:@the-/queue.TheQueue#wait",
+    "id": "TheQueue#wait",
     "kind": "function",
-    "longname": "module:@the-/queue.TheQueue#wait",
-    "memberof": "module:@the-/queue.TheQueue",
+    "longname": "TheQueue#wait",
+    "memberof": "TheQueue",
     "meta": {
       "filename": "TheQueue.js",
-      "lineno": 106,
+      "lineno": 108,
       "path": "lib"
     },
     "name": "wait",
@@ -178,7 +178,7 @@
     "memberof": "module:@the-/queue",
     "meta": {
       "filename": "TheQueue.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "TheQueue",
@@ -193,7 +193,7 @@
     "memberof": "module:@the-/queue",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -228,7 +228,7 @@
     "memberof": "module:@the-/queue",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",

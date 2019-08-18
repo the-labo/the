@@ -3,6 +3,10 @@
 /**
  * @memberof module:@the-/code
  * @function applyConverter
+ * @param content
+ * @param convert
+ * @param [options={}]
+ * @returns {Promise<*>}
  */
 async function applyConverter(content, convert, options = {}) {
   const { name = 'anonymous' } = options

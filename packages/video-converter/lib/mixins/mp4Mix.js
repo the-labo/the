@@ -13,9 +13,9 @@ function mp4Mix(Class) {
   const assert = theAssert('TheVideoConverter<MP4Mixed>')
 
   /**
+   * @memberof module:@the-/video-converter.mixins.mp4Mix
    * @class MP4Mixed
    * @inner
-   * @memberOf module:@the-/video-converter.mixins.mp4Mix
    */
   class MP4Mixed extends Class {
     /**

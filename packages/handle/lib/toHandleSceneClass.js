@@ -4,8 +4,10 @@
  * Convert into handle scene class
  * @memberof module:@the-/handle
  * @function toHandleSceneClass
+ * @param BaseClass
+ * @param [config={}]
+ * @returns {*}
  */
-/** @lends module:@the-/handle.toHandleSceneClass */
 function toHandleSceneClass(BaseClass, config = {}) {
   const { load } = config
 

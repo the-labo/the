@@ -1,5 +1,7 @@
 'use strict'
 
+const TheLoc = require('./TheLoc')
+
 /**
  * Create a TheLoc instance
  * @memberof module:@the-/loc
@@ -7,9 +9,6 @@
  * @param {...*} args
  * @returns {TheLoc}
  */
-const TheLoc = require('./TheLoc')
-
-/** @lends module:@the-/loc.create */
 function create(...args) {
   return new TheLoc(...args)
 }

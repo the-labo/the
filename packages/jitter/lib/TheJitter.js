@@ -1,17 +1,16 @@
 'use strict'
 
-/**
- * @memberof module:@the-/jitter
- * @class TheJitter
- * @param {Object} [options={}] - Optional settings
- */
 const asleep = require('asleep')
 
 const COUNT = Symbol('count')
 
 const debug = require('debug')('the:jitter')
 
-/** @lends module:@the-/jitter.TheJitter */
+/**
+ * @memberof module:@the-/jitter
+ * @class TheJitter
+ * @param {Object} [options={}] - Optional settings
+ */
 class TheJitter {
   constructor(options = {}) {
     const { max = 100, maxInterval = 1000 } = options

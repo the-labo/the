@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Shared action handler
- * @memberof module:@the-/handle
- * @class TheHandle
- * @param {Object} [options={}] - optional settings
- * @param {Object} attributes - Props value to share with scenes
- */
 const theAssert = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
 const helpers = require('./helpers')
@@ -18,7 +11,13 @@ const shortNameOfScene = (n) => n && n.replace(/_scene$|Scene$/, '')
 
 const { allMethodNames, setByNamepath } = helpers
 
-/** @lends module:@the-/handle.TheHandle */
+/**
+ * Shared action handler
+ * @memberof module:@the-/handle
+ * @class TheHandle
+ * @param {Object} [options={}] - optional settings
+ * @param {Object} attributes - Props value to share with scenes
+ */
 class TheHandle {
   constructor(config) {
     const { attributes = {}, scenes = {} } = config

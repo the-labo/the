@@ -7,7 +7,7 @@
     "longname": "module:@the-/jsdoc",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/jsdoc",
@@ -22,7 +22,7 @@
     "memberof": "module:@the-/jsdoc",
     "meta": {
       "filename": "JSDoc.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "JSDoc",
@@ -37,7 +37,7 @@
     "memberof": "module:@the-/jsdoc",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -72,7 +72,7 @@
     "memberof": "module:@the-/jsdoc",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "jsdoc",

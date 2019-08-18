@@ -1,5 +1,7 @@
 'use strict'
 
+const JSDoc = require('./JSDoc')
+
 /**
  * Create a JSDoc instance
  * @memberof module:@the-/jsdoc
@@ -7,9 +9,6 @@
  * @param {...*} args
  * @returns {JSDoc}
  */
-const JSDoc = require('./JSDoc')
-
-/** @lends module:@the-/jsdoc.create */
 function create(...args) {
   const jsdoc = new JSDoc(...args)
   return jsdoc.bind()

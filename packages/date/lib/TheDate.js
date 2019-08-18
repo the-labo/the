@@ -1,18 +1,5 @@
 'use strict'
 
-/**
- * Date manipulator
- * @memberof module:@the-/date
- * @class TheDate
- * @augments module:@the-/date.mixins.addMix~AddMixed
- * @augments module:@the-/date.mixins.endOfMix~EndOfMixed
- * @augments module:@the-/date.mixins.getMix~GetMixed
- * @augments module:@the-/date.mixins.momentMix~MomentMixed
- * @augments module:@the-/date.mixins.setMix~SetMixed
- * @augments module:@the-/date.mixins.startOfMix~StartOfMixed
- * @augments module:@the-/date.mixins.subtractMix~SubtractMixed
- * @augments module:@the-/date.TheDateBase
- */
 const abind = require('abind')
 const {
   addMix,
@@ -28,8 +15,8 @@ const now = () => new Date()
 
 /**
  * @memberof module:@the-/date
- * @protected
  * @class TheDateBase
+ * @protected
  */
 const TheDateBase = [
   addMix,
@@ -41,7 +28,19 @@ const TheDateBase = [
   subtractMix,
 ].reduce((Class, mix) => mix(Class), class Base {})
 
-/** @lends module:@the-/date.TheDate */
+/**
+ * Date manipulator
+ * @memberof module:@the-/date
+ * @class TheDate
+ * @augments module:@the-/date.mixins.addMix~AddMixed
+ * @augments module:@the-/date.mixins.endOfMix~EndOfMixed
+ * @augments module:@the-/date.mixins.getMix~GetMixed
+ * @augments module:@the-/date.mixins.momentMix~MomentMixed
+ * @augments module:@the-/date.mixins.setMix~SetMixed
+ * @augments module:@the-/date.mixins.startOfMix~StartOfMixed
+ * @augments module:@the-/date.mixins.subtractMix~SubtractMixed
+ * @augments module:@the-/date.TheDateBase
+ */
 class TheDate extends TheDateBase {
   static with(options) {
     return new this(new Date(), options)

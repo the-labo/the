@@ -8,7 +8,6 @@
  * @param {Object} [options={}] - Optional settings
  * @returns {string} - Suffix string
  */
-/** @lends module:@the-/util-site.countSuffix */
 function countSuffix(count, options = {}) {
   const isEmpty = typeof count === 'undefined' || count === null
   return isEmpty ? '' : `(${String(count)})`

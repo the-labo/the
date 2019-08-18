@@ -5,17 +5,12 @@
 ## @the-/jitter
 Random delay timer
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/jitter](#module_@the-/jitter)
     * [.TheJitter](#module_@the-/jitter.TheJitter)
         * [new TheJitter([options])](#new_module_@the-/jitter.TheJitter_new)
-        * [.decrementCount()](#module_@the-/jitter.TheJitter+decrementCount)
-        * [.incrementCount()](#module_@the-/jitter.TheJitter+incrementCount)
-        * [.resetCount()](#module_@the-/jitter.TheJitter+resetCount)
-        * [.handle(action)](#module_@the-/jitter.TheJitter+handle) ⇒ <code>Promise.&lt;undefined&gt;</code>
-        * [.wait()](#module_@the-/jitter.TheJitter+wait) ⇒ <code>Promise</code>
     * [.create(...args)](#module_@the-/jitter.create) ⇒ <code>TheJitter</code>
     * [.default()](#module_@the-/jitter.default)
 
@@ -23,15 +18,6 @@ Random delay timer
 
 ### jitter.TheJitter
 **Kind**: static class of [<code>@the-/jitter</code>](#module_@the-/jitter)  
-
-* [.TheJitter](#module_@the-/jitter.TheJitter)
-    * [new TheJitter([options])](#new_module_@the-/jitter.TheJitter_new)
-    * [.decrementCount()](#module_@the-/jitter.TheJitter+decrementCount)
-    * [.incrementCount()](#module_@the-/jitter.TheJitter+incrementCount)
-    * [.resetCount()](#module_@the-/jitter.TheJitter+resetCount)
-    * [.handle(action)](#module_@the-/jitter.TheJitter+handle) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * [.wait()](#module_@the-/jitter.TheJitter+wait) ⇒ <code>Promise</code>
-
 <a name="new_module_@the-/jitter.TheJitter_new"></a>
 
 #### new TheJitter([options])
@@ -40,41 +26,6 @@ Random delay timer
 | --- | --- | --- | --- |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 
-<a name="module_@the-/jitter.TheJitter+decrementCount"></a>
-
-#### theJitter.decrementCount()
-Decrement count
-
-**Kind**: instance method of [<code>TheJitter</code>](#module_@the-/jitter.TheJitter)  
-<a name="module_@the-/jitter.TheJitter+incrementCount"></a>
-
-#### theJitter.incrementCount()
-Increment count
-
-**Kind**: instance method of [<code>TheJitter</code>](#module_@the-/jitter.TheJitter)  
-<a name="module_@the-/jitter.TheJitter+resetCount"></a>
-
-#### theJitter.resetCount()
-Reset count
-
-**Kind**: instance method of [<code>TheJitter</code>](#module_@the-/jitter.TheJitter)  
-<a name="module_@the-/jitter.TheJitter+handle"></a>
-
-#### theJitter.handle(action) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Handle action
-
-**Kind**: instance method of [<code>TheJitter</code>](#module_@the-/jitter.TheJitter)  
-
-| Param | Type |
-| --- | --- |
-| action | <code>function</code> | 
-
-<a name="module_@the-/jitter.TheJitter+wait"></a>
-
-#### theJitter.wait() ⇒ <code>Promise</code>
-Wait for delay
-
-**Kind**: instance method of [<code>TheJitter</code>](#module_@the-/jitter.TheJitter)  
 <a name="module_@the-/jitter.create"></a>
 
 ### jitter.create(...args) ⇒ <code>TheJitter</code>

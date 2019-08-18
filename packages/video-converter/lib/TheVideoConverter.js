@@ -1,11 +1,5 @@
 'use strict'
 
-/**
- * Video converter
- * @memberof module:@the-/video-converter
- * @class TheVideoConverter
- * @augments module:@the-/video-converter.mixins.mp4Mix~MP4Mixed
- */
 const { mkdirpAsync, unlinkAsync } = require('asfs')
 const { exec, spawn } = require('child_process')
 const path = require('path')
@@ -20,7 +14,12 @@ const assert = theAssert('TheVideoConverter')
 
 const TheVideoConverterBase = [mp4Mix].reduce((C, mix) => mix(C), class Base {})
 
-/** @lends module:@the-/video-converter.TheVideoConverter */
+/**
+ * Video converter
+ * @memberof module:@the-/video-converter
+ * @class TheVideoConverter
+ * @augments module:@the-/video-converter.mixins.mp4Mix~MP4Mixed
+ */
 class TheVideoConverter extends TheVideoConverterBase {
   /**
    * Detect

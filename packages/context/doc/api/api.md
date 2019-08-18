@@ -5,19 +5,16 @@
 ## @the-/context
 React context for the-components
 
-**Version**: 16.0.7  
+**Version**: 16.0.8  
 **License**: MIT  
 
 * [@the-/context](#module_@the-/context)
     * [.TheContext](#module_@the-/context.TheContext)
         * [new TheContext(values, [options])](#new_module_@the-/context.TheContext_new)
-        * [.del(name)](#module_@the-/context.TheContext+del)
-        * [.get(name, [options])](#module_@the-/context.TheContext+get) ⇒ <code>\*</code>
-        * [.set(values)](#module_@the-/context.TheContext+set)
     * [.helpers](#module_@the-/context.helpers) : <code>object</code>
-        * [.contextEntryFor()](#module_@the-/context.helpers.contextEntryFor)
+        * [.contextEntryFor()](#module_@the-/context.helpers.contextEntryFor) ⇒ <code>\*</code>
             * [~ContextEntry](#module_@the-/context.helpers.contextEntryFor..ContextEntry)
-        * [.ContextRootFor()](#module_@the-/context.helpers.ContextRootFor)
+        * [.ContextRootFor()](#module_@the-/context.helpers.ContextRootFor) ⇒ <code>\*</code>
     * [.create(...args)](#module_@the-/context.create) ⇒ <code>TheContext</code>
     * [.default()](#module_@the-/context.default)
 
@@ -25,13 +22,6 @@ React context for the-components
 
 ### context.TheContext
 **Kind**: static class of [<code>@the-/context</code>](#module_@the-/context)  
-
-* [.TheContext](#module_@the-/context.TheContext)
-    * [new TheContext(values, [options])](#new_module_@the-/context.TheContext_new)
-    * [.del(name)](#module_@the-/context.TheContext+del)
-    * [.get(name, [options])](#module_@the-/context.TheContext+get) ⇒ <code>\*</code>
-    * [.set(values)](#module_@the-/context.TheContext+set)
-
 <a name="new_module_@the-/context.TheContext_new"></a>
 
 #### new TheContext(values, [options])
@@ -43,40 +33,6 @@ Context
 | values | <code>Object</code> |  |  |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 
-<a name="module_@the-/context.TheContext+del"></a>
-
-#### theContext.del(name)
-Delete value from store
-
-**Kind**: instance method of [<code>TheContext</code>](#module_@the-/context.TheContext)  
-
-| Param | Type |
-| --- | --- |
-| name | <code>string</code> | 
-
-<a name="module_@the-/context.TheContext+get"></a>
-
-#### theContext.get(name, [options]) ⇒ <code>\*</code>
-Get value from store
-
-**Kind**: instance method of [<code>TheContext</code>](#module_@the-/context.TheContext)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| name | <code>string</code> |  |  |
-| [options] | <code>Object</code> | <code>{}</code> | Optional setting |
-
-<a name="module_@the-/context.TheContext+set"></a>
-
-#### theContext.set(values)
-Set values to store
-
-**Kind**: instance method of [<code>TheContext</code>](#module_@the-/context.TheContext)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| values | <code>Object</code> | Values to set |
-
 <a name="module_@the-/context.helpers"></a>
 
 ### context.helpers : <code>object</code>
@@ -86,13 +42,13 @@ Client helper functions
 **Access**: protected  
 
 * [.helpers](#module_@the-/context.helpers) : <code>object</code>
-    * [.contextEntryFor()](#module_@the-/context.helpers.contextEntryFor)
+    * [.contextEntryFor()](#module_@the-/context.helpers.contextEntryFor) ⇒ <code>\*</code>
         * [~ContextEntry](#module_@the-/context.helpers.contextEntryFor..ContextEntry)
-    * [.ContextRootFor()](#module_@the-/context.helpers.ContextRootFor)
+    * [.ContextRootFor()](#module_@the-/context.helpers.ContextRootFor) ⇒ <code>\*</code>
 
 <a name="module_@the-/context.helpers.contextEntryFor"></a>
 
-#### helpers.contextEntryFor()
+#### helpers.contextEntryFor() ⇒ <code>\*</code>
 Entry component
 
 **Kind**: static method of [<code>helpers</code>](#module_@the-/context.helpers)  
@@ -102,7 +58,7 @@ Entry component
 **Kind**: inner class of [<code>contextEntryFor</code>](#module_@the-/context.helpers.contextEntryFor)  
 <a name="module_@the-/context.helpers.ContextRootFor"></a>
 
-#### helpers.ContextRootFor()
+#### helpers.ContextRootFor() ⇒ <code>\*</code>
 ContextRoot component
 
 **Kind**: static method of [<code>helpers</code>](#module_@the-/context.helpers)  

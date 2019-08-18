@@ -1,5 +1,9 @@
 'use strict'
 
+
+const debug = require('debug')
+const get = require('./get')
+
 /**
  * Handle toggle online/offline
  * @memberof module:@the-/window
@@ -8,10 +12,6 @@
  * @param {Object} [options={}] - Optional settings
  * @param {number} [options.delay=100] Delay for callback
  */
-const debug = require('debug')
-const get = require('./get')
-
-/** @lends module:@the-/window.line */
 function line(handler, options = {}) {
   const { delay = 100 } = options
   const window = get('window')

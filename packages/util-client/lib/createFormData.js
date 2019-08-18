@@ -1,3 +1,7 @@
+'use strict'
+
+const { get } = require('@the-/window')
+
 /**
  * Create from data from object
  * @memberof module:@the-/util-client
@@ -5,11 +9,6 @@
  * @param {Object} values - Form data object
  * @returns {FormData}
  */
-'use strict'
-
-const { get } = require('@the-/window')
-
-/** @lends module:@the-/util-client.createFormData */
 function createFormData(values) {
   const FormData = get('FormData')
   const form = new FormData()

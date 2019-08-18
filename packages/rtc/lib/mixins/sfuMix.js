@@ -1,5 +1,7 @@
 'use strict'
 
+const SFUProxyPool = require('../sfu/SFUProxyPool')
+
 /**
  * Mixin for sfu
  * @memberof module:@the-/rtc.mixins
@@ -7,9 +9,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-const SFUProxyPool = require('../sfu/SFUProxyPool')
-
-/** @lends module:@the-/rtc.mixins.sfuMix */
 function sfuMix(Class) {
   class SfuMixed extends Class {
     constructor() {

@@ -5,7 +5,7 @@
 ## @the-/axe
 Axe for the-framework
 
-**Version**: 15.6.4  
+**Version**: 15.6.5  
 **License**: MIT  
 
 * [@the-/axe](#module_@the-/axe)

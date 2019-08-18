@@ -1,3 +1,7 @@
+'use strict'
+
+const { get } = require('@the-/window')
+
 /**
  * Inject script dynamically
  * @memberof module:@the-/util-dom
@@ -6,11 +10,6 @@
  * @param {Object} [options={}] - Optional settings
  * @returns {Promise}
  */
-'use strict'
-
-const { get } = require('@the-/window')
-
-/** @lends module:@the-/util-dom.injectScript */
 async function injectScript(src, options = {}) {
   const { target = 'head' } = options
   const document = get('document', { strict: true })

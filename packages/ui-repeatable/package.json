@@ -14,8 +14,8 @@
     "@the-/const-ui": "^15.4.5",
     "@the-/ui-condition": "^15.4.9",
     "@the-/ui-spin": "^15.4.9",
-    "@the-/ui-style": "^15.4.8",
-    "@the-/util-ui": "^15.4.10",
+    "@the-/ui-style": "^15.4.10",
+    "@the-/util-ui": "^15.4.12",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },

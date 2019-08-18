@@ -1,5 +1,10 @@
 'use strict'
 
+const { IOEvents } = require('../constants')
+const { handleUnknownKeys } = require('../helpers')
+
+const NAMESPACE = '/rtc'
+
 /**
  * Mixin for io
  * @memberof module:@the-/rtc.mixins
@@ -7,12 +12,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-const { IOEvents } = require('../constants')
-const { handleUnknownKeys } = require('../helpers')
-
-const NAMESPACE = '/rtc'
-
-/** @lends module:@the-/rtc.mixins.ioMix */
 function ioMix(Class) {
   class IoMixed extends Class {
     ioEventHandlersForSocket(socket) {

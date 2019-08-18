@@ -1,5 +1,7 @@
 'use strict'
 
+const TheDriverSequelize = require('./TheDriverSequelize')
+
 /**
  * Create a TheDriverSequelize instance
  * @memberof @the-/driver-sequelize
@@ -7,9 +9,6 @@
  * @param {...*} args
  * @returns {TheDriverSequelize}
  */
-const TheDriverSequelize = require('./TheDriverSequelize')
-
-/** @lends @the-/driver-sequelize.create */
 function create(...args) {
   return new TheDriverSequelize(...args)
 }

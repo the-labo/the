@@ -7,13 +7,13 @@
     "longname": "module:@the-/bin",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/bin",
     "order": 1,
     "typicalname": "bin",
-    "version": "15.4.9"
+    "version": "15.4.11"
   },
   {
     "id": "module:@the-/bin.TheBin()",
@@ -69,13 +69,13 @@
   {
     "async": true,
     "description": "Execute bin file",
-    "id": "module:@the-/bin.TheBin#exec",
+    "id": "TheBin#exec",
     "kind": "function",
-    "longname": "module:@the-/bin.TheBin#exec",
-    "memberof": "module:@the-/bin.TheBin",
+    "longname": "TheBin#exec",
+    "memberof": "TheBin",
     "meta": {
       "filename": "TheBin.js",
-      "lineno": 59,
+      "lineno": 60,
       "path": "lib"
     },
     "name": "exec",
@@ -106,13 +106,13 @@
   {
     "async": true,
     "description": "Check if bin exists",
-    "id": "module:@the-/bin.TheBin#exists",
+    "id": "TheBin#exists",
     "kind": "function",
-    "longname": "module:@the-/bin.TheBin#exists",
-    "memberof": "module:@the-/bin.TheBin",
+    "longname": "TheBin#exists",
+    "memberof": "TheBin",
     "meta": {
       "filename": "TheBin.js",
-      "lineno": 74,
+      "lineno": 75,
       "path": "lib"
     },
     "name": "exists",
@@ -132,13 +132,13 @@
   {
     "async": true,
     "description": "Satisfies version or not",
-    "id": "module:@the-/bin.TheBin#satisfiesVersion",
+    "id": "TheBin#satisfiesVersion",
     "kind": "function",
-    "longname": "module:@the-/bin.TheBin#satisfiesVersion",
-    "memberof": "module:@the-/bin.TheBin",
+    "longname": "TheBin#satisfiesVersion",
+    "memberof": "TheBin",
     "meta": {
       "filename": "TheBin.js",
-      "lineno": 91,
+      "lineno": 93,
       "path": "lib"
     },
     "name": "satisfiesVersion",
@@ -168,13 +168,13 @@
   {
     "async": true,
     "description": "Verify the bin",
-    "id": "module:@the-/bin.TheBin#verify",
+    "id": "TheBin#verify",
     "kind": "function",
-    "longname": "module:@the-/bin.TheBin#verify",
-    "memberof": "module:@the-/bin.TheBin",
+    "longname": "TheBin#verify",
+    "memberof": "TheBin",
     "meta": {
       "filename": "TheBin.js",
-      "lineno": 117,
+      "lineno": 119,
       "path": "lib"
     },
     "name": "verify",
@@ -206,13 +206,13 @@
   {
     "async": true,
     "description": "Get command version",
-    "id": "module:@the-/bin.TheBin#version",
+    "id": "TheBin#version",
     "kind": "function",
-    "longname": "module:@the-/bin.TheBin#version",
-    "memberof": "module:@the-/bin.TheBin",
+    "longname": "TheBin#version",
+    "memberof": "TheBin",
     "meta": {
       "filename": "TheBin.js",
-      "lineno": 136,
+      "lineno": 140,
       "path": "lib"
     },
     "name": "version",
@@ -236,7 +236,7 @@
     "memberof": "module:@the-/bin",
     "meta": {
       "filename": "TheBin.js",
-      "lineno": 2,
+      "lineno": 14,
       "path": "lib"
     },
     "name": "TheBin",
@@ -251,7 +251,7 @@
     "memberof": "module:@the-/bin",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",

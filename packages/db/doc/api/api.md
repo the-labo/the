@@ -5,22 +5,14 @@
 ## @the-/db
 DB for the-framework
 
-**Version**: 17.0.1  
+**Version**: 17.0.2  
 **License**: MIT  
 
 * [@the-/db](#module_@the-/db)
     * _static_
+        * [.TheDBBase](#module_@the-/db.TheDBBase)
         * [.TheDB](#module_@the-/db.TheDB) ⇐ [<code>CascadeMixed</code>](#module_@the-/db.cascadeMix..CascadeMixed)
             * [new TheDB(config)](#new_module_@the-/db.TheDB_new)
-            * [.hooksFromMapping(HookMapping)](#module_@the-/db.TheDB+hooksFromMapping)
-            * [.load(ResourceFactory, resourceName)](#module_@the-/db.TheDB+load) ⇒ <code>Object</code>
-            * [.loadFromMapping(ResourceMapping)](#module_@the-/db.TheDB+loadFromMapping)
-            * [.pluginFromMapping(PluginMapping)](#module_@the-/db.TheDB+pluginFromMapping)
-            * [.unref()](#module_@the-/db.TheDB+unref) ⇒ <code>TheDB</code>
-            * [.drop()](#module_@the-/db.TheDB+drop) ⇒ <code>Promise.&lt;undefined&gt;</code>
-            * [.invalidate(entityRef)](#module_@the-/db.TheDB+invalidate) ⇒ <code>Promise.&lt;undefined&gt;</code>
-            * [.transaction(callback)](#module_@the-/db.TheDB+transaction) ⇒ <code>Promise.&lt;\*&gt;</code>
-            * [.updateVersion(version)](#module_@the-/db.TheDB+updateVersion) ⇒ <code>Promise.&lt;boolean&gt;</code>
             * [.requestToRefresh(entityRef)](#module_@the-/db.refreshMix..RefreshMixed+requestToRefresh)
             * [.startRefreshLoop(interval)](#module_@the-/db.refreshMix..RefreshMixed+startRefreshLoop)
             * [.stopRefreshLoop()](#module_@the-/db.refreshMix..RefreshMixed+stopRefreshLoop)
@@ -28,27 +20,26 @@ DB for the-framework
             * [.assertResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+assertResource)
             * [.getResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+getResource) ⇒ <code>Object</code>
             * [.hasResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+hasResource) ⇒ <code>boolean</code>
-        * [.TheDBBase](#module_@the-/db.TheDBBase)
         * [.TheLogResource](#module_@the-/db.TheLogResource)
             * [new TheLogResource()](#new_module_@the-/db.TheLogResource_new)
         * [.TheSchemaResource](#module_@the-/db.TheSchemaResource)
             * [new TheSchemaResource()](#new_module_@the-/db.TheSchemaResource_new)
         * [.helpers](#module_@the-/db.helpers) : <code>object</code>
             * [.binder](#module_@the-/db.helpers.binder) : <code>object</code>
-            * [.createTerminal()](#module_@the-/db.helpers.createTerminal)
-            * [.execMysql()](#module_@the-/db.helpers.execMysql)
-            * [.execSqlite()](#module_@the-/db.helpers.execSqlite)
-            * [.parseSchema(Schema, [options])](#module_@the-/db.helpers.parseSchema)
+            * [.createTerminal(handler, [options&#x3D;])](#module_@the-/db.helpers.createTerminal) ⇒ <code>Promise.&lt;\*&gt;</code>
+            * [.execMysql(env, sqls)](#module_@the-/db.helpers.execMysql)
+            * [.execSqlite(env, sql, [options&#x3D;])](#module_@the-/db.helpers.execSqlite) ⇒ <code>Promise.&lt;\*&gt;</code>
+            * [.parseSchema([options], Schema)](#module_@the-/db.helpers.parseSchema) ⇒ <code>\*</code>
         * [.mixins](#module_@the-/db.mixins) : <code>object</code>
         * [.resources](#module_@the-/db.resources) : <code>object</code>
         * [.create(...args)](#module_@the-/db.create) ⇒ [<code>TheDB</code>](#module_@the-/db.TheDB)
         * [.default()](#module_@the-/db.default)
-        * [.driverFromEnv()](#module_@the-/db.driverFromEnv)
-        * [.execForEnv()](#module_@the-/db.execForEnv)
-        * [.setupForEnv()](#module_@the-/db.setupForEnv)
+        * [.driverFromEnv(env)](#module_@the-/db.driverFromEnv) ⇒ <code>\*</code>
+        * [.execForEnv(env, sql)](#module_@the-/db.execForEnv) ⇒ <code>Promise.&lt;\*&gt;</code>
+        * [.setupForEnv(env)](#module_@the-/db.setupForEnv) ⇒ <code>Promise.&lt;\*&gt;</code>
         * [.cascadeMix(Class)](#module_@the-/db.cascadeMix) ⇒ <code>function</code>
             * [~CascadeMixed](#module_@the-/db.cascadeMix..CascadeMixed)
-        * [.cliMix()](#module_@the-/db.cliMix)
+        * [.cliMix(Class)](#module_@the-/db.cliMix) ⇒ <code>\*</code>
             * [~CliMixed](#module_@the-/db.cliMix..CliMixed)
         * [.migrateMix()](#module_@the-/db.migrateMix) ⇒ <code>function</code>
         * [.refreshMix(Class)](#module_@the-/db.refreshMix) ⇒ <code>function</code>
@@ -57,7 +48,7 @@ DB for the-framework
                 * [.startRefreshLoop(interval)](#module_@the-/db.refreshMix..RefreshMixed+startRefreshLoop)
                 * [.stopRefreshLoop()](#module_@the-/db.refreshMix..RefreshMixed+stopRefreshLoop)
                 * [.waitToRefresh(entityRef, [options])](#module_@the-/db.refreshMix..RefreshMixed+waitToRefresh) ⇒ <code>Promise.&lt;boolean&gt;</code>
-        * [.resourceMix()](#module_@the-/db.resourceMix)
+        * [.resourceMix(Class)](#module_@the-/db.resourceMix) ⇒ <code>\*</code>
             * [~ResourceMixed](#module_@the-/db.resourceMix..ResourceMixed)
                 * [.assertResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+assertResource)
                 * [.getResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+getResource) ⇒ <code>Object</code>
@@ -66,6 +57,10 @@ DB for the-framework
         * [~MigrateMixed](#module_@the-/db..MigrateMixed)
             * [.migrate(handlers)](#module_@the-/db..MigrateMixed+migrate) ⇒ <code>Promise.&lt;?Object&gt;</code>
 
+<a name="module_@the-/db.TheDBBase"></a>
+
+### db.TheDBBase
+**Kind**: static class of [<code>@the-/db</code>](#module_@the-/db)  
 <a name="module_@the-/db.TheDB"></a>
 
 ### db.TheDB ⇐ [<code>CascadeMixed</code>](#module_@the-/db.cascadeMix..CascadeMixed)
@@ -74,15 +69,6 @@ DB for the-framework
 
 * [.TheDB](#module_@the-/db.TheDB) ⇐ [<code>CascadeMixed</code>](#module_@the-/db.cascadeMix..CascadeMixed)
     * [new TheDB(config)](#new_module_@the-/db.TheDB_new)
-    * [.hooksFromMapping(HookMapping)](#module_@the-/db.TheDB+hooksFromMapping)
-    * [.load(ResourceFactory, resourceName)](#module_@the-/db.TheDB+load) ⇒ <code>Object</code>
-    * [.loadFromMapping(ResourceMapping)](#module_@the-/db.TheDB+loadFromMapping)
-    * [.pluginFromMapping(PluginMapping)](#module_@the-/db.TheDB+pluginFromMapping)
-    * [.unref()](#module_@the-/db.TheDB+unref) ⇒ <code>TheDB</code>
-    * [.drop()](#module_@the-/db.TheDB+drop) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * [.invalidate(entityRef)](#module_@the-/db.TheDB+invalidate) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * [.transaction(callback)](#module_@the-/db.TheDB+transaction) ⇒ <code>Promise.&lt;\*&gt;</code>
-    * [.updateVersion(version)](#module_@the-/db.TheDB+updateVersion) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.requestToRefresh(entityRef)](#module_@the-/db.refreshMix..RefreshMixed+requestToRefresh)
     * [.startRefreshLoop(interval)](#module_@the-/db.refreshMix..RefreshMixed+startRefreshLoop)
     * [.stopRefreshLoop()](#module_@the-/db.refreshMix..RefreshMixed+stopRefreshLoop)
@@ -106,102 +92,9 @@ DB for the-framework
 | [config.password] | <code>string</code> |  | Database password |
 | [config.host] | <code>string</code> |  | Database password |
 | [config.port] | <code>string</code> |  | Database password |
-| [config.plugins] | <code>object</code> |  | Database plugin creators |
-| [config.hooks] | <code>object</code> |  | Database hook creators |
-| [config.resources] | <code>object</code> |  | Database resource classes |
-
-<a name="module_@the-/db.TheDB+hooksFromMapping"></a>
-
-#### theDB.hooksFromMapping(HookMapping)
-Register hooks from mapping
-
-**Kind**: instance method of [<code>TheDB</code>](#module_@the-/db.TheDB)  
-
-| Param | Type |
-| --- | --- |
-| HookMapping | <code>Object</code> | 
-
-<a name="module_@the-/db.TheDB+load"></a>
-
-#### theDB.load(ResourceFactory, resourceName) ⇒ <code>Object</code>
-Register resource form Resource Class
-
-**Kind**: instance method of [<code>TheDB</code>](#module_@the-/db.TheDB)  
-**Returns**: <code>Object</code> - Loaded resource instance  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| ResourceFactory | <code>function</code> | Resource factory |
-| resourceName | <code>string</code> | Name of resource |
-
-<a name="module_@the-/db.TheDB+loadFromMapping"></a>
-
-#### theDB.loadFromMapping(ResourceMapping)
-Load resources from mapping object
-
-**Kind**: instance method of [<code>TheDB</code>](#module_@the-/db.TheDB)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| ResourceMapping | <code>Object.&lt;string, function()&gt;</code> | Resource name and factory |
-
-<a name="module_@the-/db.TheDB+pluginFromMapping"></a>
-
-#### theDB.pluginFromMapping(PluginMapping)
-Register plugins from mapping
-
-**Kind**: instance method of [<code>TheDB</code>](#module_@the-/db.TheDB)  
-
-| Param | Type |
-| --- | --- |
-| PluginMapping | <code>Object</code> | 
-
-<a name="module_@the-/db.TheDB+unref"></a>
-
-#### theDB.unref() ⇒ <code>TheDB</code>
-Aut close before exit
-
-**Kind**: instance method of [<code>TheDB</code>](#module_@the-/db.TheDB)  
-**Returns**: <code>TheDB</code> - this  
-<a name="module_@the-/db.TheDB+drop"></a>
-
-#### theDB.drop() ⇒ <code>Promise.&lt;undefined&gt;</code>
-Drop database
-
-**Kind**: instance method of [<code>TheDB</code>](#module_@the-/db.TheDB)  
-<a name="module_@the-/db.TheDB+invalidate"></a>
-
-#### theDB.invalidate(entityRef) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Invalidate entity
-
-**Kind**: instance method of [<code>TheDB</code>](#module_@the-/db.TheDB)  
-
-| Param | Type |
-| --- | --- |
-| entityRef | <code>string</code> | 
-
-<a name="module_@the-/db.TheDB+transaction"></a>
-
-#### theDB.transaction(callback) ⇒ <code>Promise.&lt;\*&gt;</code>
-Create transaction
-
-**Kind**: instance method of [<code>TheDB</code>](#module_@the-/db.TheDB)  
-
-| Param | Type |
-| --- | --- |
-| callback | <code>function</code> | 
-
-<a name="module_@the-/db.TheDB+updateVersion"></a>
-
-#### theDB.updateVersion(version) ⇒ <code>Promise.&lt;boolean&gt;</code>
-Update database migration version
-
-**Kind**: instance method of [<code>TheDB</code>](#module_@the-/db.TheDB)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| version | <code>string</code> | Version string |
+| [config.plugins] | <code>Object</code> |  | Database plugin creators |
+| [config.hooks] | <code>Object</code> |  | Database hook creators |
+| [config.resources] | <code>Object</code> |  | Database resource classes |
 
 <a name="module_@the-/db.refreshMix..RefreshMixed+requestToRefresh"></a>
 
@@ -282,10 +175,6 @@ Check if resource exists
 | --- | --- |
 | resourceName | <code>string</code> | 
 
-<a name="module_@the-/db.TheDBBase"></a>
-
-### db.TheDBBase
-**Kind**: static class of [<code>@the-/db</code>](#module_@the-/db)  
 <a name="module_@the-/db.TheLogResource"></a>
 
 ### db.TheLogResource
@@ -314,10 +203,10 @@ Helper functions
 
 * [.helpers](#module_@the-/db.helpers) : <code>object</code>
     * [.binder](#module_@the-/db.helpers.binder) : <code>object</code>
-    * [.createTerminal()](#module_@the-/db.helpers.createTerminal)
-    * [.execMysql()](#module_@the-/db.helpers.execMysql)
-    * [.execSqlite()](#module_@the-/db.helpers.execSqlite)
-    * [.parseSchema(Schema, [options])](#module_@the-/db.helpers.parseSchema)
+    * [.createTerminal(handler, [options&#x3D;])](#module_@the-/db.helpers.createTerminal) ⇒ <code>Promise.&lt;\*&gt;</code>
+    * [.execMysql(env, sqls)](#module_@the-/db.helpers.execMysql)
+    * [.execSqlite(env, sql, [options&#x3D;])](#module_@the-/db.helpers.execSqlite) ⇒ <code>Promise.&lt;\*&gt;</code>
+    * [.parseSchema([options], Schema)](#module_@the-/db.helpers.parseSchema) ⇒ <code>\*</code>
 
 <a name="module_@the-/db.helpers.binder"></a>
 
@@ -325,27 +214,46 @@ Helper functions
 **Kind**: static namespace of [<code>helpers</code>](#module_@the-/db.helpers)  
 <a name="module_@the-/db.helpers.createTerminal"></a>
 
-#### helpers.createTerminal()
+#### helpers.createTerminal(handler, [options&#x3D;]) ⇒ <code>Promise.&lt;\*&gt;</code>
 **Kind**: static method of [<code>helpers</code>](#module_@the-/db.helpers)  
+
+| Param |
+| --- |
+| handler | 
+| [options=] | 
+
 <a name="module_@the-/db.helpers.execMysql"></a>
 
-#### helpers.execMysql()
+#### helpers.execMysql(env, sqls)
 **Kind**: static method of [<code>helpers</code>](#module_@the-/db.helpers)  
+
+| Param |
+| --- |
+| env | 
+| sqls | 
+
 <a name="module_@the-/db.helpers.execSqlite"></a>
 
-#### helpers.execSqlite()
+#### helpers.execSqlite(env, sql, [options&#x3D;]) ⇒ <code>Promise.&lt;\*&gt;</code>
 **Kind**: static method of [<code>helpers</code>](#module_@the-/db.helpers)  
+
+| Param |
+| --- |
+| env | 
+| sql | 
+| [options=] | 
+
 <a name="module_@the-/db.helpers.parseSchema"></a>
 
-#### helpers.parseSchema(Schema, [options])
+#### helpers.parseSchema([options], Schema) ⇒ <code>\*</code>
 Parse schema
 
 **Kind**: static method of [<code>helpers</code>](#module_@the-/db.helpers)  
 
 | Param | Type | Default |
 | --- | --- | --- |
-| Schema | <code>Object</code> |  | 
 | [options] | <code>Object</code> | <code>{}</code> | 
+| Schema | <code>Object</code> |  | 
 
 <a name="module_@the-/db.mixins"></a>
 
@@ -378,22 +286,38 @@ Alias of [create](#module_@the-/db.create)
 **Kind**: static method of [<code>@the-/db</code>](#module_@the-/db)  
 <a name="module_@the-/db.driverFromEnv"></a>
 
-### db.driverFromEnv()
+### db.driverFromEnv(env) ⇒ <code>\*</code>
 Create driver from env
 
 **Kind**: static method of [<code>@the-/db</code>](#module_@the-/db)  
+
+| Param |
+| --- |
+| env | 
+
 <a name="module_@the-/db.execForEnv"></a>
 
-### db.execForEnv()
+### db.execForEnv(env, sql) ⇒ <code>Promise.&lt;\*&gt;</code>
 Do exec for env
 
 **Kind**: static method of [<code>@the-/db</code>](#module_@the-/db)  
+
+| Param |
+| --- |
+| env | 
+| sql | 
+
 <a name="module_@the-/db.setupForEnv"></a>
 
-### db.setupForEnv()
+### db.setupForEnv(env) ⇒ <code>Promise.&lt;\*&gt;</code>
 Do setup for env
 
 **Kind**: static method of [<code>@the-/db</code>](#module_@the-/db)  
+
+| Param |
+| --- |
+| env | 
+
 <a name="module_@the-/db.cascadeMix"></a>
 
 ### db.cascadeMix(Class) ⇒ <code>function</code>
@@ -410,10 +334,15 @@ Do setup for env
 **Kind**: inner class of [<code>cascadeMix</code>](#module_@the-/db.cascadeMix)  
 <a name="module_@the-/db.cliMix"></a>
 
-### db.cliMix()
+### db.cliMix(Class) ⇒ <code>\*</code>
 Add cli methods
 
 **Kind**: static method of [<code>@the-/db</code>](#module_@the-/db)  
+
+| Param |
+| --- |
+| Class | 
+
 <a name="module_@the-/db.cliMix..CliMixed"></a>
 
 #### cliMix~CliMixed
@@ -501,10 +430,15 @@ Wait until refresh
 
 <a name="module_@the-/db.resourceMix"></a>
 
-### db.resourceMix()
+### db.resourceMix(Class) ⇒ <code>\*</code>
 **Kind**: static method of [<code>@the-/db</code>](#module_@the-/db)  
 
-* [.resourceMix()](#module_@the-/db.resourceMix)
+| Param |
+| --- |
+| Class | 
+
+
+* [.resourceMix(Class)](#module_@the-/db.resourceMix) ⇒ <code>\*</code>
     * [~ResourceMixed](#module_@the-/db.resourceMix..ResourceMixed)
         * [.assertResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+assertResource)
         * [.getResource(resourceName)](#module_@the-/db.resourceMix..ResourceMixed+getResource) ⇒ <code>Object</code>

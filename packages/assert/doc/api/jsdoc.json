@@ -7,13 +7,13 @@
     "longname": "module:@the-/assert",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/assert",
     "order": 2,
     "typicalname": "assert",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "description": "Assert module",
@@ -64,7 +64,7 @@
     "memberof": "TheAssert",
     "meta": {
       "filename": "TheAssert.js",
-      "lineno": 27,
+      "lineno": 28,
       "path": "lib"
     },
     "name": "bind",
@@ -89,7 +89,7 @@
     "memberof": "TheAssert",
     "meta": {
       "filename": "TheAssert.js",
-      "lineno": 43,
+      "lineno": 44,
       "path": "lib"
     },
     "name": "notNullish",
@@ -123,7 +123,7 @@
     "memberof": "TheAssert",
     "meta": {
       "filename": "TheAssert.js",
-      "lineno": 52,
+      "lineno": 53,
       "path": "lib"
     },
     "name": "nullish",
@@ -162,7 +162,7 @@
     "memberof": "TheAssert",
     "meta": {
       "filename": "TheAssert.js",
-      "lineno": 62,
+      "lineno": 63,
       "path": "lib"
     },
     "name": "ok",
@@ -196,7 +196,7 @@
     "memberof": "module:@the-/assert",
     "meta": {
       "filename": "TheAssert.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "TheAssert",
@@ -211,7 +211,7 @@
     "memberof": "module:@the-/assert",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -246,7 +246,7 @@
     "memberof": "module:@the-/assert",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",

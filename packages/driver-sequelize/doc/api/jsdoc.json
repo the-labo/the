@@ -7,7 +7,7 @@
     "longname": "module:@the-/driver-sequelize",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/driver-sequelize",
@@ -17,13 +17,13 @@
   },
   {
     "description": "Define schema",
-    "id": "@the-/driver-sequelize.TheDriverSequelize#define",
+    "id": "module:@the-/driver-sequelize.TheDriverSequelize#define",
     "kind": "function",
-    "longname": "@the-/driver-sequelize.TheDriverSequelize#define",
-    "memberof": "@the-/driver-sequelize.TheDriverSequelize",
+    "longname": "module:@the-/driver-sequelize.TheDriverSequelize#define",
+    "memberof": "module:@the-/driver-sequelize.TheDriverSequelize",
     "meta": {
       "filename": "TheDriverSequelize.js",
-      "lineno": 75,
+      "lineno": 79,
       "path": "lib"
     },
     "name": "define",
@@ -51,13 +51,13 @@
   {
     "async": true,
     "description": "Wait until ready",
-    "id": "@the-/driver-sequelize.TheDriverSequelize#untilReady",
+    "id": "module:@the-/driver-sequelize.TheDriverSequelize#untilReady",
     "kind": "function",
-    "longname": "@the-/driver-sequelize.TheDriverSequelize#untilReady",
-    "memberof": "@the-/driver-sequelize.TheDriverSequelize",
+    "longname": "module:@the-/driver-sequelize.TheDriverSequelize#untilReady",
+    "memberof": "module:@the-/driver-sequelize.TheDriverSequelize",
     "meta": {
       "filename": "TheDriverSequelize.js",
-      "lineno": 255,
+      "lineno": 275,
       "path": "lib"
     },
     "name": "untilReady",
@@ -81,7 +81,7 @@
     "memberof": "@the-/driver-sequelize",
     "meta": {
       "filename": "TheDriverSequelize.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "TheDriverSequelize",
@@ -115,7 +115,7 @@
     "memberof": "module:@the-/driver-sequelize",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/constants"
     },
     "name": "constants",
@@ -131,7 +131,7 @@
     "memberof": "module:@the-/driver-sequelize",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/converters"
     },
     "name": "converters",
@@ -147,7 +147,7 @@
     "memberof": "module:@the-/driver-sequelize",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "helpers",
@@ -163,7 +163,7 @@
     "memberof": "module:@the-/driver-sequelize",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/mixins"
     },
     "name": "mixins",
@@ -179,7 +179,7 @@
     "memberof": "module:@the-/driver-sequelize",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/modeling"
     },
     "name": "modeling",
@@ -195,7 +195,7 @@
     "memberof": "module:@the-/driver-sequelize",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/parsing"
     },
     "name": "parsing",
@@ -209,7 +209,7 @@
     "memberof": "module:@the-/driver-sequelize.constants",
     "meta": {
       "filename": "MetaColumnNames.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/constants"
     },
     "name": "MetaColumnNames",
@@ -228,7 +228,7 @@
     "memberof": "module:@the-/driver-sequelize.constants",
     "meta": {
       "filename": "MetaColumnNamesReversed.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/constants"
     },
     "name": "MetaColumnNamesReversed",
@@ -248,7 +248,7 @@
     "memberof": "@the-/driver-sequelize",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -283,7 +283,7 @@
     "memberof": "module:@the-/driver-sequelize",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
@@ -297,11 +297,29 @@
     "memberof": "module:@the-/driver-sequelize.converters",
     "meta": {
       "filename": "convertInbound.js",
-      "lineno": 2,
+      "lineno": 8,
       "path": "lib/converters"
     },
     "name": "convertInbound",
     "order": 9,
+    "params": [
+      {
+        "name": "values"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -311,11 +329,29 @@
     "memberof": "module:@the-/driver-sequelize.converters",
     "meta": {
       "filename": "convertOutbound.js",
-      "lineno": 2,
+      "lineno": 9,
       "path": "lib/converters"
     },
     "name": "convertOutbound",
     "order": 10,
+    "params": [
+      {
+        "name": "values"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -326,11 +362,25 @@
     "memberof": "module:@the-/driver-sequelize.mixins",
     "meta": {
       "filename": "sequelizeMix.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/mixins"
     },
     "name": "sequelizeMix",
     "order": 15,
+    "params": [
+      {
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -341,7 +391,7 @@
     "memberof": "module:@the-/driver-sequelize.modeling",
     "meta": {
       "filename": "defineModel.js",
-      "lineno": 2,
+      "lineno": 9,
       "path": "lib/modeling"
     },
     "name": "defineModel",
@@ -374,7 +424,7 @@
     "memberof": "module:@the-/driver-sequelize.modeling",
     "meta": {
       "filename": "defineModelColumn.js",
-      "lineno": 2,
+      "lineno": 8,
       "path": "lib/modeling"
     },
     "name": "defineModelColumn",
@@ -383,18 +433,27 @@
       {
         "type": {
           "names": [
-            "string"
-          ]
-        },
-        "name": "propertyName"
-      },
-      {
-        "type": {
-          "names": [
             "Object"
           ]
         },
         "name": "def"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "propertyName"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
       }
     ],
     "scope": "static"
@@ -406,11 +465,19 @@
     "memberof": "module:@the-/driver-sequelize.modeling",
     "meta": {
       "filename": "prepareModel.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib/modeling"
     },
     "name": "prepareModel",
     "order": 19,
+    "params": [
+      {
+        "name": "Model"
+      },
+      {
+        "name": "Schema"
+      }
+    ],
     "returns": [
       {
         "type": {
@@ -429,7 +496,7 @@
     "memberof": "module:@the-/driver-sequelize.parsing",
     "meta": {
       "filename": "parseAttributeName.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/parsing"
     },
     "name": "parseAttributeName",
@@ -461,11 +528,29 @@
     "memberof": "module:@the-/driver-sequelize.parsing",
     "meta": {
       "filename": "parseFilter.js",
-      "lineno": 2,
+      "lineno": 14,
       "path": "lib/parsing"
     },
     "name": "parseFilter",
     "order": 22,
+    "params": [
+      {
+        "name": "filter"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -475,11 +560,28 @@
     "memberof": "module:@the-/driver-sequelize.parsing",
     "meta": {
       "filename": "parseSort.js",
-      "lineno": 2,
+      "lineno": 9,
       "path": "lib/parsing"
     },
     "name": "parseSort",
     "order": 23,
+    "params": [
+      {
+        "name": "sort"
+      },
+      {
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   }
 ]

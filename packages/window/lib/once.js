@@ -1,16 +1,16 @@
 'use strict'
 
+const get = require('./get')
+const debug = require('debug')('the:window:once')
+
 /**
  * Handle event once on document
  * @memberof module:@the-/window
  * @function once
- * @param {string} event - Name of event
  * @param {function()} handler - Event handler
+ * @param {string} event - Name of event
+ * @returns {*}
  */
-const get = require('./get')
-const debug = require('debug')('the:window:once')
-
-/** @lends module:@the-/window.once */
 function once(event, handler) {
   const document = get('window.document')
   if (!document) {

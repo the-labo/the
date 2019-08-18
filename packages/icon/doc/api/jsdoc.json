@@ -7,7 +7,7 @@
     "longname": "module:@the-/icon",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/icon",
@@ -18,13 +18,13 @@
   {
     "async": true,
     "description": "Save as file",
-    "id": "module:@the-/icon.TheIcon#saveAs",
+    "id": "TheIcon#saveAs",
     "kind": "function",
-    "longname": "module:@the-/icon.TheIcon#saveAs",
-    "memberof": "module:@the-/icon.TheIcon",
+    "longname": "TheIcon#saveAs",
+    "memberof": "TheIcon",
     "meta": {
       "filename": "TheIcon.js",
-      "lineno": 100,
+      "lineno": 101,
       "path": "lib"
     },
     "name": "saveAs",
@@ -57,7 +57,7 @@
     "memberof": "module:@the-/icon",
     "meta": {
       "filename": "TheIcon.js",
-      "lineno": 1,
+      "lineno": 8,
       "path": "lib"
     },
     "name": "TheIcon",
@@ -71,7 +71,7 @@
     "memberof": "module:@the-/icon",
     "meta": {
       "filename": "Themes.js",
-      "lineno": 1,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "Themes",
@@ -85,7 +85,7 @@
     "memberof": "module:@the-/icon.helpers",
     "meta": {
       "filename": "applier.js",
-      "lineno": 1,
+      "lineno": 6,
       "path": "lib/helpers"
     },
     "name": "applier",
@@ -99,7 +99,7 @@
     "memberof": "module:@the-/icon.helpers",
     "meta": {
       "filename": "drawer.js",
-      "lineno": 1,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "drawer",
@@ -115,7 +115,7 @@
     "memberof": "module:@the-/icon",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "helpers",
@@ -129,7 +129,7 @@
     "memberof": "module:@the-/icon.helpers",
     "meta": {
       "filename": "writer.js",
-      "lineno": 1,
+      "lineno": 7,
       "path": "lib/helpers"
     },
     "name": "writer",
@@ -144,7 +144,7 @@
     "memberof": "module:@the-/icon",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -179,7 +179,7 @@
     "memberof": "module:@the-/icon",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 11,
       "path": "lib"
     },
     "name": "icon",

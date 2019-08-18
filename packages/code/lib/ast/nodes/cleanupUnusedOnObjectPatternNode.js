@@ -8,6 +8,7 @@ const {
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupUnusedOnObjectPatternNode
+ * @returns {*}
  */
 function cleanupUnusedOnObjectPatternNode(
   ObjectPattern,

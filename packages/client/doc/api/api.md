@@ -38,26 +38,24 @@
 ## @the-/client
 Client for the-server
 
-**Version**: 15.6.0  
+**Version**: 15.7.0  
 **License**: MIT  
 
 * [@the-/client](#module_@the-/client)
     * [.TheClientBase](#module_@the-/client.TheClientBase)
-    * [.TheClient](#module_@the-/client.TheClient) ⇐ [<code>InfoMixed</code>](#module_@the-/client.mixins.infoMix..InfoMixed)
+    * [.TheClient](#module_@the-/client.TheClient) ⇐ [<code>TheClientBase</code>](#module_@the-/client.TheClientBase)
         * [new TheClient(url, config)](#new_module_@the-/client.TheClient_new)
-        * [.serverInfo([options])](#module_@the-/client.mixins.infoMix..InfoMixed+serverInfo) ⇒ <code>Promise.&lt;Object&gt;</code>
         * [.pingPongAnd(callback, [options])](#module_@the-/client.mixins.pingPongMix..PingPongMixed+pingPongAnd) ⇒ <code>function</code>
     * [.constants](#module_@the-/client.constants) : <code>object</code>
         * [.IOEvents](#module_@the-/client.constants.IOEvents) : <code>object</code>
     * [.helpers](#module_@the-/client.helpers) : <code>object</code>
         * [.asController(instance, spec, context, [options])](#module_@the-/client.helpers.asController) ⇒
-        * [.debugController()](#module_@the-/client.helpers.debugController)
-        * [.debugStream()](#module_@the-/client.helpers.debugStream)
+        * [.debugController(controller)](#module_@the-/client.helpers.debugController) ⇒ <code>\*</code>
+        * [.debugStream(stream)](#module_@the-/client.helpers.debugStream) ⇒ <code>\*</code>
+        * [.InfoAccess()](#module_@the-/client.helpers.InfoAccess) ⇒ <code>Object</code>
+            * [~infoAccess](#module_@the-/client.helpers.InfoAccess..infoAccess) : <code>object</code>
         * [.parseClientUrl()](#module_@the-/client.helpers.parseClientUrl) ⇒ <code>string</code>
     * [.mixins](#module_@the-/client.mixins) : <code>object</code>
-        * [.infoMix(Class)](#module_@the-/client.mixins.infoMix) ⇒ <code>function</code>
-            * [~InfoMixed](#module_@the-/client.mixins.infoMix..InfoMixed)
-                * [.serverInfo([options])](#module_@the-/client.mixins.infoMix..InfoMixed+serverInfo) ⇒ <code>Promise.&lt;Object&gt;</code>
         * [.pingPongMix(Class)](#module_@the-/client.mixins.pingPongMix) ⇒ <code>function</code>
             * [~PingPongMixed](#module_@the-/client.mixins.pingPongMix..PingPongMixed)
                 * [.pingPongAnd(callback, [options])](#module_@the-/client.mixins.pingPongMix..PingPongMixed+pingPongAnd) ⇒ <code>function</code>
@@ -71,13 +69,12 @@ Client for the-server
 **Access**: protected  
 <a name="module_@the-/client.TheClient"></a>
 
-### client.TheClient ⇐ [<code>InfoMixed</code>](#module_@the-/client.mixins.infoMix..InfoMixed)
+### client.TheClient ⇐ [<code>TheClientBase</code>](#module_@the-/client.TheClientBase)
 **Kind**: static class of [<code>@the-/client</code>](#module_@the-/client)  
-**Extends**: [<code>InfoMixed</code>](#module_@the-/client.mixins.infoMix..InfoMixed), <code>module:@the-/client.mixins.streamMix~StreamMixed</code>, [<code>TheClientBase</code>](#module_@the-/client.TheClientBase), [<code>PingPongMixed</code>](#module_@the-/client.mixins.pingPongMix..PingPongMixed)  
+**Extends**: [<code>TheClientBase</code>](#module_@the-/client.TheClientBase), [<code>PingPongMixed</code>](#module_@the-/client.mixins.pingPongMix..PingPongMixed)  
 
-* [.TheClient](#module_@the-/client.TheClient) ⇐ [<code>InfoMixed</code>](#module_@the-/client.mixins.infoMix..InfoMixed)
+* [.TheClient](#module_@the-/client.TheClient) ⇐ [<code>TheClientBase</code>](#module_@the-/client.TheClientBase)
     * [new TheClient(url, config)](#new_module_@the-/client.TheClient_new)
-    * [.serverInfo([options])](#module_@the-/client.mixins.infoMix..InfoMixed+serverInfo) ⇒ <code>Promise.&lt;Object&gt;</code>
     * [.pingPongAnd(callback, [options])](#module_@the-/client.mixins.pingPongMix..PingPongMixed+pingPongAnd) ⇒ <code>function</code>
 
 <a name="new_module_@the-/client.TheClient_new"></a>
@@ -88,17 +85,6 @@ Client for the-server
 | --- | --- |
 | url | <code>string</code> | 
 | config | <code>Object</code> | 
-
-<a name="module_@the-/client.mixins.infoMix..InfoMixed+serverInfo"></a>
-
-#### theClient.serverInfo([options]) ⇒ <code>Promise.&lt;Object&gt;</code>
-Fetch server info
-
-**Kind**: instance method of [<code>TheClient</code>](#module_@the-/client.TheClient)  
-
-| Param | Type | Default |
-| --- | --- | --- |
-| [options] | <code>Object</code> | <code>{}</code> | 
 
 <a name="module_@the-/client.mixins.pingPongMix..PingPongMixed+pingPongAnd"></a>
 
@@ -134,8 +120,10 @@ Helper functions
 
 * [.helpers](#module_@the-/client.helpers) : <code>object</code>
     * [.asController(instance, spec, context, [options])](#module_@the-/client.helpers.asController) ⇒
-    * [.debugController()](#module_@the-/client.helpers.debugController)
-    * [.debugStream()](#module_@the-/client.helpers.debugStream)
+    * [.debugController(controller)](#module_@the-/client.helpers.debugController) ⇒ <code>\*</code>
+    * [.debugStream(stream)](#module_@the-/client.helpers.debugStream) ⇒ <code>\*</code>
+    * [.InfoAccess()](#module_@the-/client.helpers.InfoAccess) ⇒ <code>Object</code>
+        * [~infoAccess](#module_@the-/client.helpers.InfoAccess..infoAccess) : <code>object</code>
     * [.parseClientUrl()](#module_@the-/client.helpers.parseClientUrl) ⇒ <code>string</code>
 
 <a name="module_@the-/client.helpers.asController"></a>
@@ -153,16 +141,34 @@ Helper functions
 
 <a name="module_@the-/client.helpers.debugController"></a>
 
-#### helpers.debugController()
+#### helpers.debugController(controller) ⇒ <code>\*</code>
 Wrap controller instance with debug utility
 
 **Kind**: static method of [<code>helpers</code>](#module_@the-/client.helpers)  
+
+| Param |
+| --- |
+| controller | 
+
 <a name="module_@the-/client.helpers.debugStream"></a>
 
-#### helpers.debugStream()
+#### helpers.debugStream(stream) ⇒ <code>\*</code>
 Wrap stream with debug utility
 
 **Kind**: static method of [<code>helpers</code>](#module_@the-/client.helpers)  
+
+| Param |
+| --- |
+| stream | 
+
+<a name="module_@the-/client.helpers.InfoAccess"></a>
+
+#### helpers.InfoAccess() ⇒ <code>Object</code>
+**Kind**: static method of [<code>helpers</code>](#module_@the-/client.helpers)  
+<a name="module_@the-/client.helpers.InfoAccess..infoAccess"></a>
+
+##### InfoAccess~infoAccess : <code>object</code>
+**Kind**: inner namespace of [<code>InfoAccess</code>](#module_@the-/client.helpers.InfoAccess)  
 <a name="module_@the-/client.helpers.parseClientUrl"></a>
 
 #### helpers.parseClientUrl() ⇒ <code>string</code>
@@ -183,41 +189,9 @@ Client mixin functions
 **Kind**: static namespace of [<code>@the-/client</code>](#module_@the-/client)  
 
 * [.mixins](#module_@the-/client.mixins) : <code>object</code>
-    * [.infoMix(Class)](#module_@the-/client.mixins.infoMix) ⇒ <code>function</code>
-        * [~InfoMixed](#module_@the-/client.mixins.infoMix..InfoMixed)
-            * [.serverInfo([options])](#module_@the-/client.mixins.infoMix..InfoMixed+serverInfo) ⇒ <code>Promise.&lt;Object&gt;</code>
     * [.pingPongMix(Class)](#module_@the-/client.mixins.pingPongMix) ⇒ <code>function</code>
         * [~PingPongMixed](#module_@the-/client.mixins.pingPongMix..PingPongMixed)
             * [.pingPongAnd(callback, [options])](#module_@the-/client.mixins.pingPongMix..PingPongMixed+pingPongAnd) ⇒ <code>function</code>
-
-<a name="module_@the-/client.mixins.infoMix"></a>
-
-#### mixins.infoMix(Class) ⇒ <code>function</code>
-**Kind**: static method of [<code>mixins</code>](#module_@the-/client.mixins)  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-
-* [.infoMix(Class)](#module_@the-/client.mixins.infoMix) ⇒ <code>function</code>
-    * [~InfoMixed](#module_@the-/client.mixins.infoMix..InfoMixed)
-        * [.serverInfo([options])](#module_@the-/client.mixins.infoMix..InfoMixed+serverInfo) ⇒ <code>Promise.&lt;Object&gt;</code>
-
-<a name="module_@the-/client.mixins.infoMix..InfoMixed"></a>
-
-##### infoMix~InfoMixed
-**Kind**: inner class of [<code>infoMix</code>](#module_@the-/client.mixins.infoMix)  
-<a name="module_@the-/client.mixins.infoMix..InfoMixed+serverInfo"></a>
-
-###### infoMixed.serverInfo([options]) ⇒ <code>Promise.&lt;Object&gt;</code>
-Fetch server info
-
-**Kind**: instance method of [<code>InfoMixed</code>](#module_@the-/client.mixins.infoMix..InfoMixed)  
-
-| Param | Type | Default |
-| --- | --- | --- |
-| [options] | <code>Object</code> | <code>{}</code> | 
 
 <a name="module_@the-/client.mixins.pingPongMix"></a>
 

@@ -9,13 +9,13 @@ Preset of the-metrics
 **License**: MIT  
 <a name="module_@the-/metrics-presets.RenderingCountMetrics"></a>
 
-### metricsPresets.RenderingCountMetrics(Components, [options])
+### metricsPresets.RenderingCountMetrics([options], Components) ⇒ <code>Promise.&lt;\*&gt;</code>
 Count metrics for component rendering
 
 **Kind**: static method of [<code>@the-/metrics-presets</code>](#module_@the-/metrics-presets)  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| Components | <code>Object</code> |  | Components to count |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
+| Components | <code>Object</code> |  | Components to count |
 

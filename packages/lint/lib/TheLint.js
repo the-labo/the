@@ -1,10 +1,5 @@
 'use strict'
 
-/**
- * Lint runner
- * @memberof module:@the-/lint
- * @class TheLint
- */
 const aglob = require('aglob')
 const { canWriteAsync, readFileAsync, statAsync } = require('asfs')
 const colorprint = require('colorprint')
@@ -15,7 +10,11 @@ const debug = require('debug')('the:lint')
 
 const relativePath = (f) => path.relative(process.cwd(), f)
 
-/** @lends module:@the-/lint.TheLint */
+/**
+ * Lint runner
+ * @memberof module:@the-/lint
+ * @class TheLint
+ */
 class TheLint {
   static logErrorReports(filename, reports) {
     const INDENT = ' '

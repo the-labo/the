@@ -7,7 +7,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-/** @lends module:@the-/rtc.constants.mixins.promiseMix */
 function promiseMix(Class) {
   class PromiseMixed extends Class {
     async asPromise(invoke, options = {}) {

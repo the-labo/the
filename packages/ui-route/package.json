@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "@the-/ui-spin": "^15.4.9",
-    "@the-/ui-style": "^15.4.8",
-    "@the-/util-ui": "^15.4.10",
+    "@the-/ui-style": "^15.4.10",
+    "@the-/util-ui": "^15.4.12",
     "asobj": "^3.0.1",
     "bwindow": "^2.0.3",
     "classnames": "^2.2.6",

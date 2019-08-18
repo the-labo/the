@@ -7,20 +7,20 @@
     "longname": "module:@the-/refresher",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/refresher",
     "order": 2,
     "typicalname": "refresher",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "description": "Check the refresh has the target",
-    "id": "module:@the-/refresher.TheRefresher#has",
+    "id": "TheRefresher#has",
     "kind": "function",
-    "longname": "module:@the-/refresher.TheRefresher#has",
-    "memberof": "module:@the-/refresher.TheRefresher",
+    "longname": "TheRefresher#has",
+    "memberof": "TheRefresher",
     "meta": {
       "filename": "TheRefresher.js",
       "lineno": 26,
@@ -51,10 +51,10 @@
   },
   {
     "description": "Add refresh target",
-    "id": "module:@the-/refresher.TheRefresher#request",
+    "id": "TheRefresher#request",
     "kind": "function",
-    "longname": "module:@the-/refresher.TheRefresher#request",
-    "memberof": "module:@the-/refresher.TheRefresher",
+    "longname": "TheRefresher#request",
+    "memberof": "TheRefresher",
     "meta": {
       "filename": "TheRefresher.js",
       "lineno": 31,
@@ -67,10 +67,10 @@
   },
   {
     "description": "Start ticking",
-    "id": "module:@the-/refresher.TheRefresher#start",
+    "id": "TheRefresher#start",
     "kind": "function",
-    "longname": "module:@the-/refresher.TheRefresher#start",
-    "memberof": "module:@the-/refresher.TheRefresher",
+    "longname": "TheRefresher#start",
+    "memberof": "TheRefresher",
     "meta": {
       "filename": "TheRefresher.js",
       "lineno": 40,
@@ -92,13 +92,13 @@
   },
   {
     "description": "Stop ticking",
-    "id": "module:@the-/refresher.TheRefresher#stop",
+    "id": "TheRefresher#stop",
     "kind": "function",
-    "longname": "module:@the-/refresher.TheRefresher#stop",
-    "memberof": "module:@the-/refresher.TheRefresher",
+    "longname": "TheRefresher#stop",
+    "memberof": "TheRefresher",
     "meta": {
       "filename": "TheRefresher.js",
-      "lineno": 67,
+      "lineno": 69,
       "path": "lib"
     },
     "name": "stop",
@@ -113,7 +113,7 @@
     "memberof": "module:@the-/refresher",
     "meta": {
       "filename": "TheRefresher.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "TheRefresher",
@@ -128,7 +128,7 @@
     "memberof": "module:@the-/refresher",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -163,7 +163,7 @@
     "memberof": "module:@the-/refresher",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",

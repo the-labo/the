@@ -1,13 +1,12 @@
-/**
- * @memberof module:@the-/icon.helpers
- * @namespace applier
- */
 'use strict'
 
 const { textColorFor } = require('@the-/util-color')
 const Themes = require('../Themes')
 
-/** @lends module:@the-/icon.helpers.applier */
+/**
+ * @memberof module:@the-/icon.helpers
+ * @namespace applier
+ */
 const applier = {
   [Themes.CIRCLE]: (
     icon,

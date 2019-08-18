@@ -11,9 +11,6 @@ Message pack wrapper for the-components
 * [@the-/pack](#module_@the-/pack)
     * [.ThePack](#module_@the-/pack.ThePack)
         * [new ThePack()](#new_module_@the-/pack.ThePack_new)
-        * [.bind()](#module_@the-/pack.ThePack+bind) ⇒ <code>Object</code>
-        * [.decode(buffer)](#module_@the-/pack.ThePack+decode) ⇒ <code>\*</code>
-        * [.encode(data)](#module_@the-/pack.ThePack+encode) ⇒ <code>Buffer</code> \| <code>ArrayBuffer</code>
     * [.Converters](#module_@the-/pack.Converters) : <code>object</code>
     * [.default](#module_@the-/pack.default) : <code>object</code>
     * [.create(...args)](#module_@the-/pack.create) ⇒ <code>ThePack</code>
@@ -22,47 +19,10 @@ Message pack wrapper for the-components
 
 ### pack.ThePack
 **Kind**: static class of [<code>@the-/pack</code>](#module_@the-/pack)  
-
-* [.ThePack](#module_@the-/pack.ThePack)
-    * [new ThePack()](#new_module_@the-/pack.ThePack_new)
-    * [.bind()](#module_@the-/pack.ThePack+bind) ⇒ <code>Object</code>
-    * [.decode(buffer)](#module_@the-/pack.ThePack+decode) ⇒ <code>\*</code>
-    * [.encode(data)](#module_@the-/pack.ThePack+encode) ⇒ <code>Buffer</code> \| <code>ArrayBuffer</code>
-
 <a name="new_module_@the-/pack.ThePack_new"></a>
 
 #### new ThePack()
 Pack handler
-
-<a name="module_@the-/pack.ThePack+bind"></a>
-
-#### thePack.bind() ⇒ <code>Object</code>
-Bind methods
-
-**Kind**: instance method of [<code>ThePack</code>](#module_@the-/pack.ThePack)  
-<a name="module_@the-/pack.ThePack+decode"></a>
-
-#### thePack.decode(buffer) ⇒ <code>\*</code>
-Decode buffer
-
-**Kind**: instance method of [<code>ThePack</code>](#module_@the-/pack.ThePack)  
-**Returns**: <code>\*</code> - Decoded data  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| buffer | <code>Buffer</code> \| <code>ArrayBuffer</code> | Buffer to decode |
-
-<a name="module_@the-/pack.ThePack+encode"></a>
-
-#### thePack.encode(data) ⇒ <code>Buffer</code> \| <code>ArrayBuffer</code>
-Encode data into buffer
-
-**Kind**: instance method of [<code>ThePack</code>](#module_@the-/pack.ThePack)  
-**Returns**: <code>Buffer</code> \| <code>ArrayBuffer</code> - Encoded buffer  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| data | <code>\*</code> | Encoded data |
 
 <a name="module_@the-/pack.Converters"></a>
 

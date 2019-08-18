@@ -11,6 +11,7 @@ const _tmpl = require('./_tmpl')
  * Define bud for readme
  * @memberof module:@the-/templates
  * @function test
+ * @param config
  * @returns {Object}
  */
 function test(config) {

@@ -7,7 +7,7 @@
     "longname": "module:@the-/pack",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/pack",
@@ -26,10 +26,10 @@
   },
   {
     "description": "Bind methods",
-    "id": "module:@the-/pack.ThePack#bind",
+    "id": "ThePack#bind",
     "kind": "function",
-    "longname": "module:@the-/pack.ThePack#bind",
-    "memberof": "module:@the-/pack.ThePack",
+    "longname": "ThePack#bind",
+    "memberof": "ThePack",
     "meta": {
       "filename": "ThePack.js",
       "lineno": 28,
@@ -51,10 +51,10 @@
   },
   {
     "description": "Decode buffer",
-    "id": "module:@the-/pack.ThePack#decode",
+    "id": "ThePack#decode",
     "kind": "function",
-    "longname": "module:@the-/pack.ThePack#decode",
-    "memberof": "module:@the-/pack.ThePack",
+    "longname": "ThePack#decode",
+    "memberof": "ThePack",
     "meta": {
       "filename": "ThePack.js",
       "lineno": 40,
@@ -88,13 +88,13 @@
   },
   {
     "description": "Encode data into buffer",
-    "id": "module:@the-/pack.ThePack#encode",
+    "id": "ThePack#encode",
     "kind": "function",
-    "longname": "module:@the-/pack.ThePack#encode",
-    "memberof": "module:@the-/pack.ThePack",
+    "longname": "ThePack#encode",
+    "memberof": "ThePack",
     "meta": {
       "filename": "ThePack.js",
-      "lineno": 65,
+      "lineno": 67,
       "path": "lib"
     },
     "name": "encode",
@@ -130,7 +130,7 @@
     "memberof": "module:@the-/pack",
     "meta": {
       "filename": "ThePack.js",
-      "lineno": 2,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "ThePack",
@@ -144,7 +144,7 @@
     "memberof": "module:@the-/pack",
     "meta": {
       "filename": "Converters.js",
-      "lineno": 2,
+      "lineno": 11,
       "path": "lib"
     },
     "name": "Converters",
@@ -159,7 +159,7 @@
     "memberof": "module:@the-/pack",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
@@ -174,7 +174,7 @@
     "memberof": "module:@the-/pack",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",

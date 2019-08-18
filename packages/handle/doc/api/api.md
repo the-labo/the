@@ -5,19 +5,16 @@
 ## @the-/handle
 Action handler for the-framework
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/handle](#module_@the-/handle)
     * [.TheHandle](#module_@the-/handle.TheHandle)
         * [new TheHandle([options], attributes)](#new_module_@the-/handle.TheHandle_new)
-        * [.load(SceneClass, ...names)](#module_@the-/handle.TheHandle+load) ⇒ <code>TheHandle.Scene</code>
-        * [.loadFromMapping(SceneMapping)](#module_@the-/handle.TheHandle+loadFromMapping)
-        * [.setAttributes(attributes)](#module_@the-/handle.TheHandle+setAttributes)
     * [.helpers](#module_@the-/handle.helpers) : <code>object</code>
     * [.create(...args)](#module_@the-/handle.create) ⇒ <code>TheHandle</code>
     * [.default()](#module_@the-/handle.default)
-    * [.toHandleSceneClass()](#module_@the-/handle.toHandleSceneClass)
+    * [.toHandleSceneClass(BaseClass, [config&#x3D;])](#module_@the-/handle.toHandleSceneClass) ⇒ <code>\*</code>
         * [~HandleSceneClass](#module_@the-/handle.toHandleSceneClass..HandleSceneClass)
             * [.load(SceneClass, ...names)](#module_@the-/handle.toHandleSceneClass..HandleSceneClass+load)
 
@@ -25,13 +22,6 @@ Action handler for the-framework
 
 ### handle.TheHandle
 **Kind**: static class of [<code>@the-/handle</code>](#module_@the-/handle)  
-
-* [.TheHandle](#module_@the-/handle.TheHandle)
-    * [new TheHandle([options], attributes)](#new_module_@the-/handle.TheHandle_new)
-    * [.load(SceneClass, ...names)](#module_@the-/handle.TheHandle+load) ⇒ <code>TheHandle.Scene</code>
-    * [.loadFromMapping(SceneMapping)](#module_@the-/handle.TheHandle+loadFromMapping)
-    * [.setAttributes(attributes)](#module_@the-/handle.TheHandle+setAttributes)
-
 <a name="new_module_@the-/handle.TheHandle_new"></a>
 
 #### new TheHandle([options], attributes)
@@ -42,41 +32,6 @@ Shared action handler
 | --- | --- | --- | --- |
 | [options] | <code>Object</code> | <code>{}</code> | optional settings |
 | attributes | <code>Object</code> |  | Props value to share with scenes |
-
-<a name="module_@the-/handle.TheHandle+load"></a>
-
-#### theHandle.load(SceneClass, ...names) ⇒ <code>TheHandle.Scene</code>
-Load a scene
-
-**Kind**: instance method of [<code>TheHandle</code>](#module_@the-/handle.TheHandle)  
-**Returns**: <code>TheHandle.Scene</code> - Loaded scope  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| SceneClass | <code>function</code> | Scope class to instantiate |
-| ...names | <code>string</code> | Name key path |
-
-<a name="module_@the-/handle.TheHandle+loadFromMapping"></a>
-
-#### theHandle.loadFromMapping(SceneMapping)
-Load scenes from mapping
-
-**Kind**: instance method of [<code>TheHandle</code>](#module_@the-/handle.TheHandle)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| SceneMapping | <code>Object.&lt;string, function()&gt;</code> | Scene name and constructors |
-
-<a name="module_@the-/handle.TheHandle+setAttributes"></a>
-
-#### theHandle.setAttributes(attributes)
-Set attributes value. All attributes will be shared in scenes
-
-**Kind**: instance method of [<code>TheHandle</code>](#module_@the-/handle.TheHandle)  
-
-| Param | Type |
-| --- | --- |
-| attributes | <code>Object</code> | 
 
 <a name="module_@the-/handle.helpers"></a>
 
@@ -101,12 +56,18 @@ Alias of [create](#module_@the-/handle.create)
 **Kind**: static method of [<code>@the-/handle</code>](#module_@the-/handle)  
 <a name="module_@the-/handle.toHandleSceneClass"></a>
 
-### handle.toHandleSceneClass()
+### handle.toHandleSceneClass(BaseClass, [config&#x3D;]) ⇒ <code>\*</code>
 Convert into handle scene class
 
 **Kind**: static method of [<code>@the-/handle</code>](#module_@the-/handle)  
 
-* [.toHandleSceneClass()](#module_@the-/handle.toHandleSceneClass)
+| Param |
+| --- |
+| BaseClass | 
+| [config=] | 
+
+
+* [.toHandleSceneClass(BaseClass, [config&#x3D;])](#module_@the-/handle.toHandleSceneClass) ⇒ <code>\*</code>
     * [~HandleSceneClass](#module_@the-/handle.toHandleSceneClass..HandleSceneClass)
         * [.load(SceneClass, ...names)](#module_@the-/handle.toHandleSceneClass..HandleSceneClass+load)
 

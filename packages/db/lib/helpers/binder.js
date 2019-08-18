@@ -1,9 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/db.helpers
- * @namespace binder
- */
 const { unlessProduction } = require('@the-/check')
 
 const noop = (v) => v
@@ -72,7 +68,10 @@ const indexBounds = (indices = []) => ({
   }),
 })
 
-/** @lends module:@the-/db.helpers.binder */
+/**
+ * @memberof module:@the-/db.helpers
+ * @namespace binder
+ */
 module.exports = {
   asBound,
   indexBounds,

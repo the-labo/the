@@ -1,16 +1,15 @@
 'use strict'
 
+const emailRegex = require('email-regex')
+
 /**
  * Check if is email
  * @memberof module:@the-/util-site
- * @deprecated
  * @function isEmail
+ * @deprecated
  * @param {string} email
  * @returns {boolean} Email or not
  */
-const emailRegex = require('email-regex')
-
-/** @lends module:@the-/util-site.isEmail */
 function isEmail(value) {
   return Boolean(value && emailRegex().test(value))
 }

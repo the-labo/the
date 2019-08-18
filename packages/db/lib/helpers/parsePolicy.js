@@ -1,10 +1,5 @@
 'use strict'
 
-/**
- * Parse db policy
- * @memberof execSqlite
- * @function parsePolicy
- */
 const {
   DataTypes: { ENTITY, REF },
 } = require('@the-/resource')
@@ -14,7 +9,11 @@ const TypeGroups = {
   [REF]: [ENTITY, REF],
 }
 
-/** @lends execSqlite.parsePolicy */
+/**
+ * Parse db policy
+ * @memberof execSqlite
+ * @function parsePolicy
+ */
 function parsePolicy(policy) {
   const parsed = {}
   for (const [name, values] of Object.entries(policy)) {

@@ -7,13 +7,13 @@
     "longname": "module:@the-/mail",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/mail",
     "order": 2,
     "typicalname": "mail",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "id": "toLowerKeys",
@@ -21,7 +21,7 @@
     "longname": "toLowerKeys",
     "meta": {
       "filename": "toLowerKeys.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "toLowerKeys",
@@ -31,10 +31,10 @@
   {
     "async": true,
     "description": "Send mail",
-    "id": "module:@the-/mail.TheMail#send",
+    "id": "TheMail#send",
     "kind": "function",
-    "longname": "module:@the-/mail.TheMail#send",
-    "memberof": "module:@the-/mail.TheMail",
+    "longname": "TheMail#send",
+    "memberof": "TheMail",
     "meta": {
       "filename": "TheMail.js",
       "lineno": 31,
@@ -106,7 +106,7 @@
     "memberof": "module:@the-/mail",
     "meta": {
       "filename": "TheMail.js",
-      "lineno": 2,
+      "lineno": 8,
       "path": "lib"
     },
     "name": "TheMail",
@@ -122,7 +122,7 @@
     "memberof": "module:@the-/mail",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "helpers",
@@ -138,7 +138,7 @@
     "memberof": "module:@the-/mail",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/sending"
     },
     "name": "sending",
@@ -153,7 +153,7 @@
     "memberof": "module:@the-/mail",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -188,7 +188,7 @@
     "memberof": "module:@the-/mail",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
@@ -202,7 +202,7 @@
     "memberof": "module:@the-/mail.sending",
     "meta": {
       "filename": "sendMock.js",
-      "lineno": 2,
+      "lineno": 7,
       "path": "lib/sending"
     },
     "name": "sendMock",
@@ -216,11 +216,20 @@
     "memberof": "module:@the-/mail.sending",
     "meta": {
       "filename": "sendSendgrid.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/sending"
     },
     "name": "sendSendgrid",
     "order": 9,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -230,11 +239,20 @@
     "memberof": "module:@the-/mail.sending",
     "meta": {
       "filename": "sendSMTP.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib/sending"
     },
     "name": "sendSMTP",
     "order": 10,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   }
 ]

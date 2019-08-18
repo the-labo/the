@@ -7,7 +7,7 @@
     "longname": "module:@the-/lint",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/lint",
@@ -26,10 +26,10 @@
   },
   {
     "description": "Add checker",
-    "id": "module:@the-/lint.TheLint#add",
+    "id": "TheLint#add",
     "kind": "function",
-    "longname": "module:@the-/lint.TheLint#add",
-    "memberof": "module:@the-/lint.TheLint",
+    "longname": "TheLint#add",
+    "memberof": "TheLint",
     "meta": {
       "filename": "TheLint.js",
       "lineno": 53,
@@ -62,13 +62,13 @@
   {
     "async": true,
     "description": "Run all checkers",
-    "id": "module:@the-/lint.TheLint#run",
+    "id": "TheLint#run",
     "kind": "function",
-    "longname": "module:@the-/lint.TheLint#run",
-    "memberof": "module:@the-/lint.TheLint",
+    "longname": "TheLint#run",
+    "memberof": "TheLint",
     "meta": {
       "filename": "TheLint.js",
-      "lineno": 124,
+      "lineno": 127,
       "path": "lib"
     },
     "name": "run",
@@ -92,7 +92,7 @@
     "memberof": "module:@the-/lint",
     "meta": {
       "filename": "TheLint.js",
-      "lineno": 2,
+      "lineno": 13,
       "path": "lib"
     },
     "name": "TheLint",
@@ -106,7 +106,7 @@
     "memberof": "module:@the-/lint.helpers",
     "meta": {
       "filename": "LintCache.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/helpers"
     },
     "name": "LintCache",
@@ -120,7 +120,7 @@
     "memberof": "module",
     "meta": {
       "filename": "parseHelper.js",
-      "lineno": 4,
+      "lineno": 5,
       "path": "lib/helpers"
     },
     "name": "exports",
@@ -136,7 +136,7 @@
     "memberof": "module:@the-/lint",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "helpers",
@@ -152,7 +152,7 @@
     "memberof": "module:@the-/lint",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/rules"
     },
     "name": "rules",
@@ -167,7 +167,7 @@
     "memberof": "module:@the-/lint",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -202,7 +202,7 @@
     "memberof": "module:@the-/lint",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
@@ -217,7 +217,7 @@
     "memberof": "module:@the-/lint.rules",
     "meta": {
       "filename": "callRule.js",
-      "lineno": 2,
+      "lineno": 7,
       "path": "lib/rules"
     },
     "name": "callRule",
@@ -261,7 +261,7 @@
     "memberof": "module:@the-/lint.rules",
     "meta": {
       "filename": "contentRule.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib/rules"
     },
     "name": "contentRule",
@@ -317,7 +317,7 @@
     "memberof": "module:@the-/lint.rules",
     "meta": {
       "filename": "decorateRule.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib/rules"
     },
     "name": "decorateRule",
@@ -353,7 +353,7 @@
     "memberof": "module:@the-/lint.rules",
     "meta": {
       "filename": "depsRule.js",
-      "lineno": 2,
+      "lineno": 12,
       "path": "lib/rules"
     },
     "name": "depsRule",
@@ -389,7 +389,7 @@
     "memberof": "module:@the-/lint.rules",
     "meta": {
       "filename": "filenameRule.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib/rules"
     },
     "name": "filenameRule",
@@ -445,7 +445,7 @@
     "memberof": "module:@the-/lint.rules",
     "meta": {
       "filename": "moduleRule.js",
-      "lineno": 2,
+      "lineno": 8,
       "path": "lib/rules"
     },
     "name": "moduleRule",
@@ -481,7 +481,7 @@
     "memberof": "module:@the-/lint.rules",
     "meta": {
       "filename": "packageRule.js",
-      "lineno": 2,
+      "lineno": 13,
       "path": "lib/rules"
     },
     "name": "packageRule",
@@ -517,7 +517,7 @@
     "memberof": "module:@the-/lint.rules",
     "meta": {
       "filename": "propRule.js",
-      "lineno": 2,
+      "lineno": 8,
       "path": "lib/rules"
     },
     "name": "propRule",
@@ -553,7 +553,7 @@
     "memberof": "module:@the-/lint.rules",
     "meta": {
       "filename": "usageRule.js",
-      "lineno": 2,
+      "lineno": 22,
       "path": "lib/rules"
     },
     "name": "usageRule",

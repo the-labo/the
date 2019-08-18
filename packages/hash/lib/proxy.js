@@ -10,7 +10,6 @@
  * @param {boolean} [options.unknownCheck] - Enable unknown checking
  * @returns {Proxy}
  */
-/** @lends module:@the-/hash.proxy */
 function proxy(src, options = {}) {
   const { name = 'proxy', unknownCheck = true } = options
   if (typeof Proxy === 'undefined') {

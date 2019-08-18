@@ -7,13 +7,13 @@
     "longname": "module:@the-/db",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/db",
     "order": 4,
     "typicalname": "db",
-    "version": "17.0.1"
+    "version": "17.0.2"
   },
   {
     "id": "module:@the-/db.TheDB()",
@@ -21,7 +21,7 @@
     "longname": "module:@the-/db.TheDB",
     "memberof": "module:@the-/db.TheDB",
     "name": "TheDB",
-    "order": 7,
+    "order": 8,
     "params": [
       {
         "type": {
@@ -116,7 +116,7 @@
       {
         "type": {
           "names": [
-            "object"
+            "Object"
           ]
         },
         "optional": true,
@@ -126,7 +126,7 @@
       {
         "type": {
           "names": [
-            "object"
+            "Object"
           ]
         },
         "optional": true,
@@ -136,7 +136,7 @@
       {
         "type": {
           "names": [
-            "object"
+            "Object"
           ]
         },
         "optional": true,
@@ -165,13 +165,13 @@
   },
   {
     "description": "Register hooks from mapping",
-    "id": "module:@the-/db.TheDB#hooksFromMapping",
+    "id": "TheDB#hooksFromMapping",
     "kind": "function",
-    "longname": "module:@the-/db.TheDB#hooksFromMapping",
-    "memberof": "module:@the-/db.TheDB",
+    "longname": "TheDB#hooksFromMapping",
+    "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 241,
+      "lineno": 244,
       "path": "lib"
     },
     "name": "hooksFromMapping",
@@ -190,13 +190,13 @@
   },
   {
     "description": "Register resource form Resource Class",
-    "id": "module:@the-/db.TheDB#load",
+    "id": "TheDB#load",
     "kind": "function",
-    "longname": "module:@the-/db.TheDB#load",
-    "memberof": "module:@the-/db.TheDB",
+    "longname": "TheDB#load",
+    "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 258,
+      "lineno": 261,
       "path": "lib"
     },
     "name": "load",
@@ -235,13 +235,13 @@
   },
   {
     "description": "Load resources from mapping object",
-    "id": "module:@the-/db.TheDB#loadFromMapping",
+    "id": "TheDB#loadFromMapping",
     "kind": "function",
-    "longname": "module:@the-/db.TheDB#loadFromMapping",
-    "memberof": "module:@the-/db.TheDB",
+    "longname": "TheDB#loadFromMapping",
+    "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 292,
+      "lineno": 295,
       "path": "lib"
     },
     "name": "loadFromMapping",
@@ -261,13 +261,13 @@
   },
   {
     "description": "Register plugins from mapping",
-    "id": "module:@the-/db.TheDB#pluginFromMapping",
+    "id": "TheDB#pluginFromMapping",
     "kind": "function",
-    "longname": "module:@the-/db.TheDB#pluginFromMapping",
-    "memberof": "module:@the-/db.TheDB",
+    "longname": "TheDB#pluginFromMapping",
+    "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 302,
+      "lineno": 305,
       "path": "lib"
     },
     "name": "pluginFromMapping",
@@ -286,13 +286,13 @@
   },
   {
     "description": "Aut close before exit",
-    "id": "module:@the-/db.TheDB#unref",
+    "id": "TheDB#unref",
     "kind": "function",
-    "longname": "module:@the-/db.TheDB#unref",
-    "memberof": "module:@the-/db.TheDB",
+    "longname": "TheDB#unref",
+    "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 315,
+      "lineno": 319,
       "path": "lib"
     },
     "name": "unref",
@@ -313,13 +313,13 @@
   {
     "async": true,
     "description": "Drop database",
-    "id": "module:@the-/db.TheDB#drop",
+    "id": "TheDB#drop",
     "kind": "function",
-    "longname": "module:@the-/db.TheDB#drop",
-    "memberof": "module:@the-/db.TheDB",
+    "longname": "TheDB#drop",
+    "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 358,
+      "lineno": 364,
       "path": "lib"
     },
     "name": "drop",
@@ -339,13 +339,13 @@
   {
     "async": true,
     "description": "Invalidate entity",
-    "id": "module:@the-/db.TheDB#invalidate",
+    "id": "TheDB#invalidate",
     "kind": "function",
-    "longname": "module:@the-/db.TheDB#invalidate",
-    "memberof": "module:@the-/db.TheDB",
+    "longname": "TheDB#invalidate",
+    "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 392,
+      "lineno": 400,
       "path": "lib"
     },
     "name": "invalidate",
@@ -374,13 +374,13 @@
   {
     "async": true,
     "description": "Create transaction",
-    "id": "module:@the-/db.TheDB#transaction",
+    "id": "TheDB#transaction",
     "kind": "function",
-    "longname": "module:@the-/db.TheDB#transaction",
-    "memberof": "module:@the-/db.TheDB",
+    "longname": "TheDB#transaction",
+    "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 422,
+      "lineno": 433,
       "path": "lib"
     },
     "name": "transaction",
@@ -410,13 +410,13 @@
   {
     "async": true,
     "description": "Update database migration version",
-    "id": "module:@the-/db.TheDB#updateVersion",
+    "id": "TheDB#updateVersion",
     "kind": "function",
-    "longname": "module:@the-/db.TheDB#updateVersion",
-    "memberof": "module:@the-/db.TheDB",
+    "longname": "TheDB#updateVersion",
+    "memberof": "TheDB",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 439,
+      "lineno": 452,
       "path": "lib"
     },
     "name": "updateVersion",
@@ -453,7 +453,7 @@
     "memberof": "module:@the-/db~MigrateMixed",
     "meta": {
       "filename": "migrateMix.js",
-      "lineno": 24,
+      "lineno": 23,
       "path": "lib/mixins"
     },
     "name": "migrate",
@@ -514,7 +514,7 @@
     "memberof": "module:@the-/db.refreshMix~RefreshMixed",
     "meta": {
       "filename": "refreshMix.js",
-      "lineno": 48,
+      "lineno": 49,
       "path": "lib/mixins"
     },
     "name": "startRefreshLoop",
@@ -539,7 +539,7 @@
     "memberof": "module:@the-/db.refreshMix~RefreshMixed",
     "meta": {
       "filename": "refreshMix.js",
-      "lineno": 64,
+      "lineno": 66,
       "path": "lib/mixins"
     },
     "name": "stopRefreshLoop",
@@ -556,7 +556,7 @@
     "memberof": "module:@the-/db.refreshMix~RefreshMixed",
     "meta": {
       "filename": "refreshMix.js",
-      "lineno": 104,
+      "lineno": 109,
       "path": "lib/mixins"
     },
     "name": "waitToRefresh",
@@ -612,7 +612,7 @@
     "memberof": "module:@the-/db.resourceMix~ResourceMixed",
     "meta": {
       "filename": "resourceMix.js",
-      "lineno": 18,
+      "lineno": 20,
       "path": "lib/mixins"
     },
     "name": "assertResource",
@@ -637,7 +637,7 @@
     "memberof": "module:@the-/db.resourceMix~ResourceMixed",
     "meta": {
       "filename": "resourceMix.js",
-      "lineno": 30,
+      "lineno": 32,
       "path": "lib/mixins"
     },
     "name": "getResource",
@@ -673,7 +673,7 @@
     "memberof": "module:@the-/db.resourceMix~ResourceMixed",
     "meta": {
       "filename": "resourceMix.js",
-      "lineno": 43,
+      "lineno": 46,
       "path": "lib/mixins"
     },
     "name": "hasResource",
@@ -736,7 +736,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "refreshMix.js",
-      "lineno": 48,
+      "lineno": 49,
       "path": "lib/mixins"
     },
     "name": "startRefreshLoop",
@@ -763,7 +763,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "refreshMix.js",
-      "lineno": 64,
+      "lineno": 66,
       "path": "lib/mixins"
     },
     "name": "stopRefreshLoop",
@@ -781,7 +781,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "refreshMix.js",
-      "lineno": 104,
+      "lineno": 109,
       "path": "lib/mixins"
     },
     "name": "waitToRefresh",
@@ -839,7 +839,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "resourceMix.js",
-      "lineno": 18,
+      "lineno": 20,
       "path": "lib/mixins"
     },
     "name": "assertResource",
@@ -866,7 +866,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "resourceMix.js",
-      "lineno": 30,
+      "lineno": 32,
       "path": "lib/mixins"
     },
     "name": "getResource",
@@ -904,7 +904,7 @@
     "memberof": "module:@the-/db.TheDB",
     "meta": {
       "filename": "resourceMix.js",
-      "lineno": 43,
+      "lineno": 46,
       "path": "lib/mixins"
     },
     "name": "hasResource",
@@ -931,6 +931,20 @@
     "scope": "instance"
   },
   {
+    "id": "module:@the-/db.TheDBBase",
+    "kind": "class",
+    "longname": "module:@the-/db.TheDBBase",
+    "memberof": "module:@the-/db",
+    "meta": {
+      "filename": "TheDB.js",
+      "lineno": 25,
+      "path": "lib"
+    },
+    "name": "TheDBBase",
+    "order": 6,
+    "scope": "static"
+  },
+  {
     "augments": [
       "module:@the-/db.cascadeMix~CascadeMixed",
       "module:@the-/db.cliMix~CliMixed",
@@ -944,25 +958,11 @@
     "memberof": "module:@the-/db",
     "meta": {
       "filename": "TheDB.js",
-      "lineno": 2,
+      "lineno": 37,
       "path": "lib"
     },
     "name": "TheDB",
-    "order": 6,
-    "scope": "static"
-  },
-  {
-    "id": "module:@the-/db.TheDBBase",
-    "kind": "class",
-    "longname": "module:@the-/db.TheDBBase",
-    "memberof": "module:@the-/db",
-    "meta": {
-      "filename": "TheDB.js",
-      "lineno": 45,
-      "path": "lib"
-    },
-    "name": "TheDBBase",
-    "order": 8,
+    "order": 7,
     "scope": "static"
   },
   {
@@ -972,7 +972,7 @@
     "memberof": "module:@the-/db",
     "meta": {
       "filename": "TheLogResource.js",
-      "lineno": 2,
+      "lineno": 22,
       "path": "lib/resources"
     },
     "name": "TheLogResource",
@@ -986,7 +986,7 @@
     "memberof": "module:@the-/db",
     "meta": {
       "filename": "TheSchemaResource.js",
-      "lineno": 2,
+      "lineno": 7,
       "path": "lib/resources"
     },
     "name": "TheSchemaResource",
@@ -1000,7 +1000,7 @@
     "memberof": "module:@the-/db.helpers",
     "meta": {
       "filename": "binder.js",
-      "lineno": 2,
+      "lineno": 71,
       "path": "lib/helpers"
     },
     "name": "binder",
@@ -1016,7 +1016,7 @@
     "memberof": "module:@the-/db",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "helpers",
@@ -1031,7 +1031,7 @@
     "memberof": "module:@the-/db",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/mixins"
     },
     "name": "mixins",
@@ -1046,7 +1046,7 @@
     "memberof": "module:@the-/db",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/resources"
     },
     "name": "resources",
@@ -1061,7 +1061,7 @@
     "memberof": "module:@the-/db",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -1096,7 +1096,7 @@
     "memberof": "module:@the-/db",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
@@ -1111,11 +1111,25 @@
     "memberof": "module:@the-/db",
     "meta": {
       "filename": "driverFromEnv.js",
-      "lineno": 2,
+      "lineno": 8,
       "path": "lib"
     },
     "name": "driverFromEnv",
     "order": 2,
+    "params": [
+      {
+        "name": "env"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1126,11 +1140,28 @@
     "memberof": "module:@the-/db",
     "meta": {
       "filename": "execForEnv.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "execForEnv",
     "order": 3,
+    "params": [
+      {
+        "name": "env"
+      },
+      {
+        "name": "sql"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1141,11 +1172,25 @@
     "memberof": "module:@the-/db",
     "meta": {
       "filename": "setupForEnv.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "setupForEnv",
     "order": 5,
+    "params": [
+      {
+        "name": "env"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1155,11 +1200,29 @@
     "memberof": "module:@the-/db.helpers",
     "meta": {
       "filename": "createTerminal.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib/helpers"
     },
     "name": "createTerminal",
     "order": 19,
+    "params": [
+      {
+        "name": "handler"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1169,11 +1232,19 @@
     "memberof": "module:@the-/db.helpers",
     "meta": {
       "filename": "execMysql.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib/helpers"
     },
     "name": "execMysql",
     "order": 20,
+    "params": [
+      {
+        "name": "env"
+      },
+      {
+        "name": "sqls"
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1183,11 +1254,32 @@
     "memberof": "module:@the-/db.helpers",
     "meta": {
       "filename": "execSqlite.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/helpers"
     },
     "name": "execSqlite",
     "order": 21,
+    "params": [
+      {
+        "name": "env"
+      },
+      {
+        "name": "sql"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1198,7 +1290,7 @@
     "memberof": "execSqlite",
     "meta": {
       "filename": "parsePolicy.js",
-      "lineno": 2,
+      "lineno": 12,
       "path": "lib/helpers"
     },
     "name": "parsePolicy",
@@ -1213,7 +1305,7 @@
     "memberof": "module:@the-/db.helpers",
     "meta": {
       "filename": "parseSchema.js",
-      "lineno": 2,
+      "lineno": 7,
       "path": "lib/helpers"
     },
     "name": "parseSchema",
@@ -1225,7 +1317,9 @@
             "Object"
           ]
         },
-        "name": "Schema"
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
       },
       {
         "type": {
@@ -1233,9 +1327,16 @@
             "Object"
           ]
         },
-        "optional": true,
-        "defaultvalue": "{}",
-        "name": "options"
+        "name": "Schema"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
       }
     ],
     "scope": "static"
@@ -1247,7 +1348,7 @@
     "memberof": "module:@the-/db",
     "meta": {
       "filename": "cascadeMix.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/mixins"
     },
     "name": "cascadeMix",
@@ -1282,11 +1383,25 @@
     "memberof": "module:@the-/db",
     "meta": {
       "filename": "cliMix.js",
-      "lineno": 2,
+      "lineno": 9,
       "path": "lib/mixins"
     },
     "name": "cliMix",
     "order": 27,
+    "params": [
+      {
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1329,7 +1444,7 @@
     "memberof": "module:@the-/db",
     "meta": {
       "filename": "refreshMix.js",
-      "lineno": 2,
+      "lineno": 15,
       "path": "lib/mixins"
     },
     "name": "refreshMix",
@@ -1363,11 +1478,25 @@
     "memberof": "module:@the-/db",
     "meta": {
       "filename": "resourceMix.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/mixins"
     },
     "name": "resourceMix",
     "order": 39,
+    "params": [
+      {
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1377,7 +1506,7 @@
     "memberof": "module:@the-/db.setup",
     "meta": {
       "filename": "setupMongo.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/setup"
     },
     "name": "setupMongo",
@@ -1401,11 +1530,20 @@
     "memberof": "module:@the-/db.setup",
     "meta": {
       "filename": "setupMysql.js",
-      "lineno": 2,
+      "lineno": 7,
       "path": "lib/setup"
     },
     "name": "setupMysql",
     "order": 50,
+    "params": [
+      {
+        "name": "env"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1415,11 +1553,20 @@
     "memberof": "module:@the-/db.setup",
     "meta": {
       "filename": "setupPostgres.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/setup"
     },
     "name": "setupPostgres",
     "order": 51,
+    "params": [
+      {
+        "name": "env"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1429,11 +1576,20 @@
     "memberof": "module:@the-/db.setup",
     "meta": {
       "filename": "setupSqlite.js",
-      "lineno": 2,
+      "lineno": 9,
       "path": "lib/setup"
     },
     "name": "setupSqlite",
     "order": 52,
+    "params": [
+      {
+        "name": "env"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1457,7 +1613,7 @@
     "memberof": "module:@the-/db.cliMix",
     "meta": {
       "filename": "cliMix.js",
-      "lineno": 19,
+      "lineno": 21,
       "path": "lib/mixins"
     },
     "name": "CliMixed",
@@ -1471,7 +1627,7 @@
     "memberof": "module:@the-/db",
     "meta": {
       "filename": "migrateMix.js",
-      "lineno": 18,
+      "lineno": 17,
       "path": "lib/mixins"
     },
     "name": "MigrateMixed",
@@ -1499,7 +1655,7 @@
     "memberof": "module:@the-/db.resourceMix",
     "meta": {
       "filename": "resourceMix.js",
-      "lineno": 12,
+      "lineno": 14,
       "path": "lib/mixins"
     },
     "name": "ResourceMixed",

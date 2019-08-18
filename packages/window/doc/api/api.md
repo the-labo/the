@@ -98,4 +98,3 @@ Show page
 | Param | Type | Description |
 | --- | --- | --- |
 | url | <code>string</code> | URL to show |
-

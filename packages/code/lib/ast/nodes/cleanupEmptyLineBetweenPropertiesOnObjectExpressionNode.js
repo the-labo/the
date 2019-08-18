@@ -3,6 +3,7 @@
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode
+ * @returns {*}
  */
 function cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode(
   ObjectExpression,

@@ -1,7 +1,3 @@
-/**
- * @memberof module:@the-/icon
- * @class TheIcon
- */
 'use strict'
 
 const { createCanvas, registerFont } = require('canvas')
@@ -9,7 +5,10 @@ const applier = require('./helpers/applier')
 const drawer = require('./helpers/drawer')
 const writer = require('./helpers/writer')
 
-/** @lends module:@the-/icon.TheIcon */
+/**
+ * @memberof module:@the-/icon
+ * @class TheIcon
+ */
 class TheIcon {
   constructor(config = {}) {
     const {

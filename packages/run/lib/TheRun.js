@@ -1,5 +1,8 @@
 'use strict'
 
+const { spawn } = require('child_process')
+const fkill = require('fkill')
+
 /**
  * Script runner
  * @memberof module:@the-/run
@@ -7,10 +10,6 @@
  * @param {Object} [options={}] - Optional settings
  * @param {number|boolean} [options.inspect] -  Inspect port
  */
-const { spawn } = require('child_process')
-const fkill = require('fkill')
-
-/** @lends module:@the-/run.TheRun */
 class TheRun {
   constructor(options = {}) {
     const { catcher = true, inspect = false } = options

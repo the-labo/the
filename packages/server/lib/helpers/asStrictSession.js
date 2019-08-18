@@ -4,6 +4,7 @@
  * @memberof module:@the-/server.helpers
  * @function asStrictSession
  * @param {Object} session
+ * @returns {*}
  */
 function asStrictSession(session) {
   return new Proxy(session, {

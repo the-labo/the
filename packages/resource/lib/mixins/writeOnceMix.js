@@ -7,7 +7,6 @@
  * @param {function()} Class
  * @returns {function()}
  */
-/** @lends module:@the-/resource.mixins.writeOnceMix */
 function writeOnceMix(Class) {
   /**
    * @memberof module:@the-/resource.mixins.writeOnceMix

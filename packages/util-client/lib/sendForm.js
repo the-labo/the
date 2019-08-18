@@ -1,3 +1,9 @@
+
+'use strict'
+
+const { get } = require('@the-/window')
+const createFormData = require('./createFormData')
+
 /**
  * Send form data
  * @memberof module:@the-/util-client
@@ -6,12 +12,6 @@
  * @param {Object} values
  * @param {Object} [options={}] - Optional settings
  */
-'use strict'
-
-const { get } = require('@the-/window')
-const createFormData = require('./createFormData')
-
-/** @lends module:@the-/util-client.sendForm */
 async function sendForm(url, values, options = {}) {
   const fetch = get('fetch')
   const { method = 'post' } = options

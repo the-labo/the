@@ -1,7 +1,7 @@
 {
   "name": "@the-/axe",
   "description": "Axe for the-framework",
-  "version": "15.6.4",
+  "version": "15.6.5",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,8 +12,8 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/util-dom": "^15.5.1",
-    "@the-/window": "^15.5.2",
+    "@the-/util-dom": "^15.5.2",
+    "@the-/window": "^15.5.5",
     "asleep": "^1.0.3"
   },
   "devDependencies": {},

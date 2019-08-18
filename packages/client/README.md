@@ -93,6 +93,8 @@ tryExample().catch((err) => console.error(err))
   - [removeCallback(handleName,callbackFunc)](./doc/api/api.md#removeCallback)
   - [setCallback()](./doc/api/api.md#setCallback)
   - [TheClientScope](./doc/api/api.md#TheClientScope)
+- InfoAccess~infoAccess
+  - [.serverInfo(options)](./doc/api/api.md#InfoAccess~infoAccess.serverInfo)
 - module:@the-/client
   - [.constants](./doc/api/api.md#module_@the-/client.constants)
   - [.create(args)](./doc/api/api.md#module_@the-/client.create)
@@ -105,31 +107,26 @@ tryExample().catch((err) => console.error(err))
   - [.IOEvents](./doc/api/api.md#module_@the-/client.constants.IOEvents)
 - module:@the-/client.helpers
   - [.asController(instance,spec,context,options)](./doc/api/api.md#module_@the-/client.helpers.asController)
-  - [.debugController()](./doc/api/api.md#module_@the-/client.helpers.debugController)
-  - [.debugStream()](./doc/api/api.md#module_@the-/client.helpers.debugStream)
+  - [.debugController(controller)](./doc/api/api.md#module_@the-/client.helpers.debugController)
+  - [.debugStream(stream)](./doc/api/api.md#module_@the-/client.helpers.debugStream)
+  - [.InfoAccess()](./doc/api/api.md#module_@the-/client.helpers.InfoAccess)
   - [.parseClientUrl()](./doc/api/api.md#module_@the-/client.helpers.parseClientUrl)
+- module:@the-/client.helpers.InfoAccess
+  - [~infoAccess](./doc/api/api.md#module_@the-/client.helpers.InfoAccess~infoAccess)
 - module:@the-/client.mixins
-  - [.infoMix(Class)](./doc/api/api.md#module_@the-/client.mixins.infoMix)
   - [.pingPongMix(Class)](./doc/api/api.md#module_@the-/client.mixins.pingPongMix)
-  - [.streamMix()](./doc/api/api.md#module_@the-/client.mixins.streamMix)
-- module:@the-/client.mixins.infoMix
-  - [~InfoMixed](./doc/api/api.md#module_@the-/client.mixins.infoMix~InfoMixed)
-- module:@the-/client.mixins.infoMix~InfoMixed
-  - [#serverInfo(options)](./doc/api/api.md#module_@the-/client.mixins.infoMix~InfoMixed#serverInfo)
 - module:@the-/client.mixins.pingPongMix
   - [~PingPongMixed](./doc/api/api.md#module_@the-/client.mixins.pingPongMix~PingPongMixed)
 - module:@the-/client.mixins.pingPongMix~PingPongMixed
   - [#pingPongAnd(callback,options)](./doc/api/api.md#module_@the-/client.mixins.pingPongMix~PingPongMixed#pingPongAnd)
-- module:@the-/client.mixins.streamMix
-  - [~StreamMixed](./doc/api/api.md#module_@the-/client.mixins.streamMix~StreamMixed)
 - module:@the-/client.TheClient
-  - [.for(namespace,config)](./doc/api/api.md#module_@the-/client.TheClient.for)
-  - [#invoke(moduleName,methodName,params)](./doc/api/api.md#module_@the-/client.TheClient#invoke)
   - [#pingPongAnd(callback,options)](./doc/api/api.md#module_@the-/client.TheClient#pingPongAnd)
-  - [#serverInfo(options)](./doc/api/api.md#module_@the-/client.TheClient#serverInfo)
-  - [#stream(name,params,options)](./doc/api/api.md#module_@the-/client.TheClient#stream)
-  - [#use(controllerName,options)](./doc/api/api.md#module_@the-/client.TheClient#use)
-  - [#useAll(options)](./doc/api/api.md#module_@the-/client.TheClient#useAll)
+- TheClient
+  - [.for(namespace,config)](./doc/api/api.md#TheClient.for)
+  - [#invoke(moduleName,methodName,params)](./doc/api/api.md#TheClient#invoke)
+  - [#stream(name,params,options)](./doc/api/api.md#TheClient#stream)
+  - [#use(controllerName,options)](./doc/api/api.md#TheClient#use)
+  - [#useAll(options)](./doc/api/api.md#TheClient#useAll)
 
 See [API Guide](./doc/api/api.md) for more detail
 

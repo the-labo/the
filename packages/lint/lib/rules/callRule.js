@@ -1,5 +1,9 @@
 'use strict'
 
+const { has } = require('json-pointer')
+const path = require('path')
+const { parse, walk } = require('@the-/ast')
+
 /**
  * Create "callRule" lint
  * @memberof module:@the-/lint.rules
@@ -8,11 +12,6 @@
  * @param {Object} keypathArguments
  * @returns {function()} Lint function
  */
-const { has } = require('json-pointer')
-const path = require('path')
-const { parse, walk } = require('@the-/ast')
-
-/** @lends module:@the-/lint.rules.callRule */
 function callRule(config) {
   const { keypathArguments = {}, ...rest } = config
   if (Object.keys(rest).length > 0) {

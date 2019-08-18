@@ -654,4 +654,4 @@ Create a TheScope instance
 ### scope.default()
 Alias of [create](#module_@the-/scope.create)
 
-**Kind**: static method of [<code>@the-/scope</code>](#module_@the-/scope)  
+**Kind**: static method of [<code>@the-/scope</code>](#module_@the-/scope)

@@ -13,7 +13,7 @@
     "name": "@the-/code",
     "order": 1,
     "typicalname": "code",
-    "version": "15.9.5"
+    "version": "15.11.1"
   },
   {
     "id": "module:@the-/code.TheCode()",
@@ -328,6 +328,15 @@
     },
     "name": "run",
     "order": 2,
+    "params": [
+      {
+        "name": "pattern"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
     "scope": "static"
   },
   {
@@ -342,6 +351,15 @@
     },
     "name": "addExtOnRequireDeclarationArgumentNode",
     "order": 7,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -356,6 +374,15 @@
     },
     "name": "calcNumericOperationOnBinaryExpressionNode",
     "order": 8,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -370,6 +397,15 @@
     },
     "name": "cleanupEmptyArrayPatternParamsOnFunctionNode",
     "order": 9,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -384,6 +420,15 @@
     },
     "name": "cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode",
     "order": 10,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -398,6 +443,15 @@
     },
     "name": "cleanupEmptyObjectPatternParamsOnFunctionNode",
     "order": 11,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -412,6 +466,15 @@
     },
     "name": "cleanupExtOnImportDeclarationNode",
     "order": 12,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -426,6 +489,15 @@
     },
     "name": "cleanupExtOnRequireDeclarationArgumentNode",
     "order": 13,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -440,6 +512,15 @@
     },
     "name": "cleanupRedundantAliasOnObjectPatternNode",
     "order": 14,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -454,6 +535,15 @@
     },
     "name": "cleanupRedundantArrayPatternOnArrayExpression",
     "order": 15,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -468,6 +558,15 @@
     },
     "name": "cleanupRedundantObjectPatternOnObjectExpression",
     "order": 16,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -482,6 +581,15 @@
     },
     "name": "cleanupRedundantAliasOnObjectPatternNode",
     "order": 17,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -496,6 +604,15 @@
     },
     "name": "cleanupReturnAwaitOnFunctionNode",
     "order": 18,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -511,6 +628,15 @@
     },
     "name": "cleanupUnusedOnFunctionArgumentNode",
     "order": 19,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -525,6 +651,15 @@
     },
     "name": "cleanupUnusedOnArrayPatternNode",
     "order": 20,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -539,6 +674,15 @@
     },
     "name": "cleanupUnusedOnImportNode",
     "order": 21,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -553,6 +697,15 @@
     },
     "name": "cleanupUnusedOnObjectPatternNode",
     "order": 22,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -567,6 +720,15 @@
     },
     "name": "cleanupUnusedOnVariableNode",
     "order": 23,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -581,6 +743,15 @@
     },
     "name": "combineObjectPatternOnStatementNode",
     "order": 24,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -595,6 +766,15 @@
     },
     "name": "combinePropertiesOnObjectPattern",
     "order": 25,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -623,6 +803,15 @@
     },
     "name": "completeJSDocAnnotationsOnCommentNode",
     "order": 27,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -637,6 +826,20 @@
     },
     "name": "findJSDocAnnotationsInCommendNode",
     "order": 28,
+    "params": [
+      {
+        "name": "CommentNode"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -651,6 +854,20 @@
     },
     "name": "findRequireDeclarationOnProgramNode",
     "order": 29,
+    "params": [
+      {
+        "name": "ProgramNode"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -665,6 +882,15 @@
     },
     "name": "formatJSDocCommentOnCommentNode",
     "order": 30,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -679,6 +905,15 @@
     },
     "name": "mergeDuplicateImportOnProgramNode",
     "order": 32,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -693,6 +928,15 @@
     },
     "name": "mergeStringConcatenateOnBinaryExpressionNode",
     "order": 33,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -707,6 +951,24 @@
     },
     "name": "modifyNodeDeprecatedOnRequireDeclaration",
     "order": 34,
+    "params": [
+      {
+        "name": "Declaration"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -721,6 +983,15 @@
     },
     "name": "modifyToDestructorOnDeclarationNode",
     "order": 35,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -735,6 +1006,15 @@
     },
     "name": "normalizeAssignmentOnVariableDeclarationNode",
     "order": 36,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -749,6 +1029,15 @@
     },
     "name": "normalizeBinaryExpressionNode",
     "order": 37,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -763,6 +1052,15 @@
     },
     "name": "normalizeFunctionReturnOnFunctionNode",
     "order": 38,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -791,6 +1089,15 @@
     },
     "name": "normalizeKindOnVariableDeclarationNode",
     "order": 40,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -805,6 +1112,15 @@
     },
     "name": "normalizeSrcPathOnImportDeclarationNode",
     "order": 41,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -819,6 +1135,15 @@
     },
     "name": "normalizeSrcPathOnRequireArgumentNode",
     "order": 42,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -833,6 +1158,15 @@
     },
     "name": "normalizeVariableDeclaratorOnStatementNode",
     "order": 43,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -847,6 +1181,15 @@
     },
     "name": "sortAnnotationsOnCommentNode",
     "order": 44,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -861,6 +1204,15 @@
     },
     "name": "sortCasesOnSwitchStatementNode",
     "order": 45,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -875,6 +1227,15 @@
     },
     "name": "sortExportNamedDeclarationsOnProgramNode",
     "order": 46,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -889,6 +1250,15 @@
     },
     "name": "sortMethodsOnClassNode",
     "order": 47,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -903,6 +1273,15 @@
     },
     "name": "sortPropertiesOnObjectNode",
     "order": 48,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -917,6 +1296,15 @@
     },
     "name": "sortSpecifiersOnImportDeclarationNode",
     "order": 49,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -931,6 +1319,24 @@
     },
     "name": "spaceOnCommentNode",
     "order": 50,
+    "params": [
+      {
+        "name": "CommentNode"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -945,6 +1351,27 @@
     },
     "name": "applyConverter",
     "order": 54,
+    "params": [
+      {
+        "name": "content"
+      },
+      {
+        "name": "convert"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1050,6 +1477,20 @@
     },
     "name": "contentAccess",
     "order": 62,
+    "params": [
+      {
+        "name": "content"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1064,6 +1505,24 @@
     },
     "name": "parseCSS",
     "order": 66,
+    "params": [
+      {
+        "name": "content"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1283,6 +1742,24 @@
     },
     "name": "processJSChaining",
     "order": 74,
+    "params": [
+      {
+        "name": "content"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1366,6 +1843,24 @@
     },
     "name": "processJSDeclaration",
     "order": 77,
+    "params": [
+      {
+        "name": "content"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1384,20 +1879,29 @@
       {
         "type": {
           "names": [
-            "string"
-          ]
-        },
-        "name": "content"
-      },
-      {
-        "type": {
-          "names": [
             "Object"
           ]
         },
         "optional": true,
         "defaultvalue": "{}",
         "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "content"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
       }
     ],
     "scope": "static"
@@ -1589,6 +2093,24 @@
     },
     "name": "processJSON",
     "order": 84,
+    "params": [
+      {
+        "name": "content"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1916,6 +2438,24 @@
     },
     "name": "processPackageJSON",
     "order": 94,
+    "params": [
+      {
+        "name": "content"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1930,6 +2470,24 @@
     },
     "name": "processPackageLockJSON",
     "order": 95,
+    "params": [
+      {
+        "name": "content"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {

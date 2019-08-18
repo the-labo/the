@@ -3,6 +3,7 @@
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupUnusedOnArrayPatternNode
+ * @returns {*}
  */
 function cleanupUnusedOnArrayPatternNode(
   ArrayPattern,

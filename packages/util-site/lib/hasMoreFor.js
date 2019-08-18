@@ -4,8 +4,9 @@
  * Has more for counts
  * @memberof module:@the-/util-site
  * @function hasMoreFor
+ * @param counts
+ * @returns {*}
  */
-/** @lends module:@the-/util-site.hasMoreFor */
 function hasMoreFor(counts) {
   if (!counts) {
     return false

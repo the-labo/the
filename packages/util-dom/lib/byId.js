@@ -1,3 +1,8 @@
+'use strict'
+
+const asleep = require('asleep')
+const { get } = require('@the-/window')
+
 /**
  * Get element by id
  * @memberof module:@the-/util-dom
@@ -5,12 +10,6 @@
  * @param {string} id - Id of dom element
  * @returns {?HTMLElement} - Found element
  */
-'use strict'
-
-const asleep = require('asleep')
-const { get } = require('@the-/window')
-
-/** @lends module:@the-/util-dom.byId */
 function byId(id) {
   const document = get('document')
   if (!document) {

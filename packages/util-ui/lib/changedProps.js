@@ -8,7 +8,6 @@
  * @param {Object} props
  * @returns {Object} - Changed prop values
  */
-/** @lends module:@the-/util-ui.changedProps */
 function changedProps(prevProps, props) {
   const changed = {}
   for (const [key, value] of Object.entries(props)) {

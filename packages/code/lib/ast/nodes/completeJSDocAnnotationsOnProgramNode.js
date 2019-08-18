@@ -10,6 +10,7 @@ const {
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function completeJSDocAnnotationsOnCommentNode
+ * @returns {*}
  */
 function completeJSDocAnnotationsOnProgramNode(program, { get, replace }) {
   const FunctionDeclarations = finder.findByTypes(program, [
@@ -38,10 +39,10 @@ function completeJSDocAnnotationsOnProgramNode(program, { get, replace }) {
       {},
     )
 
-    const isClass = ['class', 'constructor'].some((k) =>
-      tagsByTypes.hasOwnProperty(k),
+    const shouldSkip = ['class', 'constructor', 'file', 'module', 'lends'].some(
+      (k) => tagsByTypes.hasOwnProperty(k),
     )
-    if (isClass) {
+    if (shouldSkip) {
       return
     }
     const indent = new Array(comment.loc.start.column).fill(' ').join('')
@@ -51,13 +52,25 @@ function completeJSDocAnnotationsOnProgramNode(program, { get, replace }) {
         .map((line) => `${indent} * ${line}`)
         .join(EOL)
 
+    const paramDefaultCodeFor = (paramNode) => {
+      const { right } = paramNode
+      switch (right.type) {
+        case NodeTypes.ArrayExpression:
+          return '[]'
+        case NodeTypes.Identifier:
+          return right.name
+        case NodeTypes.ObjectExpression:
+          return '{}'
+        default:
+          return ''
+      }
+    }
+
     const paramCommentOf = (paramNode) => {
       const isOptional = paramNode.type === NodeTypes.AssignmentPattern
       if (isOptional) {
-        const {
-          right: { name: defaults },
-        } = paramNode
-        return `${indent} * @param [${paramNode.left.name}=${defaults}]`
+        const defaults = paramDefaultCodeFor(paramNode)
+        return `${indent} * @param [${paramNode.left.name}=${defaults || ''}]`
       }
       return `${indent} * @param ${paramNode.name}`
     }

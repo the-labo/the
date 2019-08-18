@@ -11,8 +11,11 @@ const assert = theAssert('@the-/server')
 
 /**
  * @memberof module:@the-/server.streaming
- * @protected
  * @function toStreamDriverFactory
+ * @param StreamFactory
+ * @param [options={}]
+ * @protected
+ * @returns {*}
  */
 function toStreamDriverFactory(StreamFactory, options = {}) {
   const { inject, sessionStore, streamName } = options

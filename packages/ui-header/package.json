@@ -12,13 +12,13 @@
   },
   "dependencies": {
     "@the-/const-ui": "^15.4.5",
-    "@the-/ui-button": "^15.4.8",
+    "@the-/ui-button": "^15.4.9",
     "@the-/ui-container": "^15.4.8",
     "@the-/ui-icon": "^15.4.9",
     "@the-/ui-link": "^15.4.9",
-    "@the-/ui-style": "^15.4.8",
-    "@the-/util-ui": "^15.4.10",
-    "@the-/window": "^15.5.2",
+    "@the-/ui-style": "^15.4.10",
+    "@the-/util-ui": "^15.4.12",
+    "@the-/window": "^15.5.5",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
@@ -27,8 +27,8 @@
     "@the-/ui-route": "^15.4.8",
     "@the-/ui-router": "^15.4.8",
     "coz": "^7.0.19",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1"
   },
   "engines": {

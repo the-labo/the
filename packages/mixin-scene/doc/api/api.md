@@ -11,10 +11,10 @@ Mixins for the-scene
 * [@the-/mixin-scene](#module_@the-/mixin-scene)
     * [.helpers](#module_@the-/mixin-scene.helpers) : <code>object</code>
         * [.asClassMixin()](#module_@the-/mixin-scene.helpers.asClassMixin)
-        * [.asMethodWrap()](#module_@the-/mixin-scene.helpers.asMethodWrap)
+        * [.asMethodWrap(wrapper)](#module_@the-/mixin-scene.helpers.asMethodWrap) ⇒ <code>\*</code>
         * [.injectProperties(Class)](#module_@the-/mixin-scene.helpers.injectProperties) ⇒ <code>function</code>
-    * [.bindDefaults()](#module_@the-/mixin-scene.bindDefaults) ⇒ <code>function</code>
-    * [.bindScope()](#module_@the-/mixin-scene.bindScope) ⇒ <code>function</code>
+    * [.bindDefaults(values)](#module_@the-/mixin-scene.bindDefaults) ⇒ <code>function</code>
+    * [.bindScope(name)](#module_@the-/mixin-scene.bindScope) ⇒ <code>function</code>
     * [.withBusy(Class)](#module_@the-/mixin-scene.withBusy) ⇒ <code>function</code>
         * [~WithBusyMixed](#module_@the-/mixin-scene.withBusy..WithBusyMixed)
     * ~~[.withEntities(Class)](#module_@the-/mixin-scene.withEntities) ⇒ <code>function</code>~~
@@ -29,10 +29,10 @@ Mixins for the-scene
         * [~WithEntryMixed](#module_@the-/mixin-scene.withEntry..WithEntryMixed)
             * [.getEntry([options])](#module_@the-/mixin-scene.withEntry..WithEntryMixed.getEntry) ⇒ <code>Object</code>
             * [.hasEntryErrorFor(name)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.hasEntryErrorFor) ⇒ <code>boolean</code>
-            * [.processEntry(handler)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.processEntry) ⇒ <code>Promise.&lt;undefined&gt;</code>
             * [.resetEntry()](#module_@the-/mixin-scene.withEntry..WithEntryMixed.resetEntry)
             * [.setEntry(newValues)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.setEntry)
             * [.setEntryErrors(errors)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.setEntryErrors)
+            * [.processEntry(handler)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.processEntry) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.withFilter(Class)](#module_@the-/mixin-scene.withFilter) ⇒ <code>function</code>
         * [~WithFilterMixed](#module_@the-/mixin-scene.withFilter..WithFilterMixed)
             * [.getFilter()](#module_@the-/mixin-scene.withFilter..WithFilterMixed.getFilter) ⇒ <code>Object</code>
@@ -73,7 +73,7 @@ Helper functions
 
 * [.helpers](#module_@the-/mixin-scene.helpers) : <code>object</code>
     * [.asClassMixin()](#module_@the-/mixin-scene.helpers.asClassMixin)
-    * [.asMethodWrap()](#module_@the-/mixin-scene.helpers.asMethodWrap)
+    * [.asMethodWrap(wrapper)](#module_@the-/mixin-scene.helpers.asMethodWrap) ⇒ <code>\*</code>
     * [.injectProperties(Class)](#module_@the-/mixin-scene.helpers.injectProperties) ⇒ <code>function</code>
 
 <a name="module_@the-/mixin-scene.helpers.asClassMixin"></a>
@@ -84,10 +84,15 @@ Define as class mixin
 **Kind**: static method of [<code>helpers</code>](#module_@the-/mixin-scene.helpers)  
 <a name="module_@the-/mixin-scene.helpers.asMethodWrap"></a>
 
-#### helpers.asMethodWrap()
+#### helpers.asMethodWrap(wrapper) ⇒ <code>\*</code>
 Define method wrapper
 
 **Kind**: static method of [<code>helpers</code>](#module_@the-/mixin-scene.helpers)  
+
+| Param |
+| --- |
+| wrapper | 
+
 <a name="module_@the-/mixin-scene.helpers.injectProperties"></a>
 
 #### helpers.injectProperties(Class) ⇒ <code>function</code>
@@ -100,18 +105,28 @@ Define method wrapper
 
 <a name="module_@the-/mixin-scene.bindDefaults"></a>
 
-### mixinScene.bindDefaults() ⇒ <code>function</code>
+### mixinScene.bindDefaults(values) ⇒ <code>function</code>
 For bindDefaults
 
 **Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
 **Returns**: <code>function</code> - method annotation function  
+
+| Param |
+| --- |
+| values | 
+
 <a name="module_@the-/mixin-scene.bindScope"></a>
 
-### mixinScene.bindScope() ⇒ <code>function</code>
+### mixinScene.bindScope(name) ⇒ <code>function</code>
 For bindScope
 
 **Kind**: static method of [<code>@the-/mixin-scene</code>](#module_@the-/mixin-scene)  
 **Returns**: <code>function</code> - Class annotation function  
+
+| Param |
+| --- |
+| name | 
+
 <a name="module_@the-/mixin-scene.withBusy"></a>
 
 ### mixinScene.withBusy(Class) ⇒ <code>function</code>
@@ -246,10 +261,10 @@ withEntry mixin
     * [~WithEntryMixed](#module_@the-/mixin-scene.withEntry..WithEntryMixed)
         * [.getEntry([options])](#module_@the-/mixin-scene.withEntry..WithEntryMixed.getEntry) ⇒ <code>Object</code>
         * [.hasEntryErrorFor(name)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.hasEntryErrorFor) ⇒ <code>boolean</code>
-        * [.processEntry(handler)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.processEntry) ⇒ <code>Promise.&lt;undefined&gt;</code>
         * [.resetEntry()](#module_@the-/mixin-scene.withEntry..WithEntryMixed.resetEntry)
         * [.setEntry(newValues)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.setEntry)
         * [.setEntryErrors(errors)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.setEntryErrors)
+        * [.processEntry(handler)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.processEntry) ⇒ <code>Promise.&lt;undefined&gt;</code>
 
 <a name="module_@the-/mixin-scene.withEntry..WithEntryMixed"></a>
 
@@ -259,10 +274,10 @@ withEntry mixin
 * [~WithEntryMixed](#module_@the-/mixin-scene.withEntry..WithEntryMixed)
     * [.getEntry([options])](#module_@the-/mixin-scene.withEntry..WithEntryMixed.getEntry) ⇒ <code>Object</code>
     * [.hasEntryErrorFor(name)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.hasEntryErrorFor) ⇒ <code>boolean</code>
-    * [.processEntry(handler)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.processEntry) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.resetEntry()](#module_@the-/mixin-scene.withEntry..WithEntryMixed.resetEntry)
     * [.setEntry(newValues)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.setEntry)
     * [.setEntryErrors(errors)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.setEntryErrors)
+    * [.processEntry(handler)](#module_@the-/mixin-scene.withEntry..WithEntryMixed.processEntry) ⇒ <code>Promise.&lt;undefined&gt;</code>
 
 <a name="module_@the-/mixin-scene.withEntry..WithEntryMixed.getEntry"></a>
 
@@ -283,17 +298,6 @@ Get entry values
 | Param | Type |
 | --- | --- |
 | name | <code>string</code> | 
-
-<a name="module_@the-/mixin-scene.withEntry..WithEntryMixed.processEntry"></a>
-
-##### WithEntryMixed.processEntry(handler) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Process an entry
-
-**Kind**: static method of [<code>WithEntryMixed</code>](#module_@the-/mixin-scene.withEntry..WithEntryMixed)  
-
-| Param | Type |
-| --- | --- |
-| handler | <code>function</code> | 
 
 <a name="module_@the-/mixin-scene.withEntry..WithEntryMixed.resetEntry"></a>
 
@@ -322,6 +326,17 @@ Set entry errors
 | Param | Type |
 | --- | --- |
 | errors | <code>Object</code> | 
+
+<a name="module_@the-/mixin-scene.withEntry..WithEntryMixed.processEntry"></a>
+
+##### WithEntryMixed.processEntry(handler) ⇒ <code>Promise.&lt;undefined&gt;</code>
+Process an entry
+
+**Kind**: static method of [<code>WithEntryMixed</code>](#module_@the-/mixin-scene.withEntry..WithEntryMixed)  
+
+| Param | Type |
+| --- | --- |
+| handler | <code>function</code> | 
 
 <a name="module_@the-/mixin-scene.withFilter"></a>
 

@@ -1,9 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/scene
- * @class TheScene
- */
 const asobj = require('asobj')
 const { errorMix, goMix } = require('./mixins')
 
@@ -14,7 +10,10 @@ const TheSceneMixed = [errorMix, goMix].reduce(
   class Root {},
 )
 
-/** @lends module:@the-/scene.TheScene */
+/**
+ * @memberof module:@the-/scene
+ * @class TheScene
+ */
 class TheScene extends TheSceneMixed {
   constructor(props = {}) {
     super()

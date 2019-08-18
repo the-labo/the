@@ -6,6 +6,8 @@ const methodsToWrap = ['open', 'close']
  * Wrap stream with debug utility
  * @memberof module:@the-/client.helpers
  * @function debugStream
+ * @param stream
+ * @returns {*}
  */
 function debugStream(stream) {
   return new Proxy(stream, {

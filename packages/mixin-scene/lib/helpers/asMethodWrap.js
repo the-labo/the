@@ -1,13 +1,14 @@
 'use strict'
 
+const invariant = require('invariant')
+
 /**
  * Define method wrapper
  * @memberof module:@the-/mixin-scene.helpers
  * @function asMethodWrap
+ * @param wrapper
+ * @returns {*}
  */
-const invariant = require('invariant')
-
-/** @lends module:@the-/mixin-scene.helpers.asMethodWrap */
 function asMethodWrap(wrapper) {
   return function methodWrap(elementDescriptor) {
     // TODO Remove some day

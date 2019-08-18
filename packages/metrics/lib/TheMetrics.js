@@ -1,16 +1,15 @@
 'use strict'
 
-/**
- * @memberof module:@the-/metrics
- * @class TheMetrics
- * @param {Object} [options={}] - Optional settings
- */
 const {
   ClassMethodCallCounter,
   ObjectMethodCallCounter,
 } = require('./counters')
 
-/** @lends module:@the-/metrics.TheMetrics */
+/**
+ * @memberof module:@the-/metrics
+ * @class TheMetrics
+ * @param {Object} [options={}] - Optional settings
+ */
 class TheMetrics {
   constructor(options = {}) {
     const { interval = 30000, name = 'TheMetrics' } = options

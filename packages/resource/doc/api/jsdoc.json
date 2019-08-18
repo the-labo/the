@@ -7,13 +7,13 @@
     "longname": "module:@the-/resource",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/resource",
     "order": 3,
     "typicalname": "resource",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "description": "Resource for the DB",
@@ -22,14 +22,14 @@
     "longname": "module:@the-/resource.TheResource",
     "memberof": "module:@the-/resource.TheResource",
     "name": "TheResource",
-    "order": 6
+    "order": 7
   },
   {
     "description": "Get ref of id",
-    "id": "module:@the-/resource.TheResource#refOf",
+    "id": "TheResource#refOf",
     "kind": "function",
-    "longname": "module:@the-/resource.TheResource#refOf",
-    "memberof": "module:@the-/resource.TheResource",
+    "longname": "TheResource#refOf",
+    "memberof": "TheResource",
     "meta": {
       "filename": "TheResource.js",
       "lineno": 63,
@@ -64,13 +64,13 @@
   {
     "async": true,
     "description": "Create empty list",
-    "id": "module:@the-/resource.TheResource#emptyList",
+    "id": "TheResource#emptyList",
     "kind": "function",
-    "longname": "module:@the-/resource.TheResource#emptyList",
-    "memberof": "module:@the-/resource.TheResource",
+    "longname": "TheResource#emptyList",
+    "memberof": "TheResource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 78,
+      "lineno": 80,
       "path": "lib"
     },
     "name": "emptyList",
@@ -90,13 +90,13 @@
   {
     "async": true,
     "description": "Get invalidated attributes",
-    "id": "module:@the-/resource.TheResource#invalidated",
+    "id": "TheResource#invalidated",
     "kind": "function",
-    "longname": "module:@the-/resource.TheResource#invalidated",
-    "memberof": "module:@the-/resource.TheResource",
+    "longname": "TheResource#invalidated",
+    "memberof": "TheResource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 87,
+      "lineno": 89,
       "path": "lib"
     },
     "name": "invalidated",
@@ -125,13 +125,13 @@
   {
     "async": true,
     "description": "Refresh clay entity",
-    "id": "module:@the-/resource.TheResource#refresh",
+    "id": "TheResource#refresh",
     "kind": "function",
-    "longname": "module:@the-/resource.TheResource#refresh",
-    "memberof": "module:@the-/resource.TheResource",
+    "longname": "TheResource#refresh",
+    "memberof": "TheResource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 96,
+      "lineno": 98,
       "path": "lib"
     },
     "name": "refresh",
@@ -160,13 +160,13 @@
   {
     "async": true,
     "description": "Refresh all",
-    "id": "module:@the-/resource.TheResource#refreshAll",
+    "id": "TheResource#refreshAll",
     "kind": "function",
-    "longname": "module:@the-/resource.TheResource#refreshAll",
-    "memberof": "module:@the-/resource.TheResource",
+    "longname": "TheResource#refreshAll",
+    "memberof": "TheResource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 123,
+      "lineno": 127,
       "path": "lib"
     },
     "name": "refreshAll",
@@ -186,13 +186,13 @@
   {
     "async": true,
     "description": "Resave all",
-    "id": "module:@the-/resource.TheResource#resaveAll",
+    "id": "TheResource#resaveAll",
     "kind": "function",
-    "longname": "module:@the-/resource.TheResource#resaveAll",
-    "memberof": "module:@the-/resource.TheResource",
+    "longname": "TheResource#resaveAll",
+    "memberof": "TheResource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 133,
+      "lineno": 137,
       "path": "lib"
     },
     "name": "resaveAll",
@@ -350,6 +350,21 @@
     "scope": "instance"
   },
   {
+    "access": "protected",
+    "id": "module:@the-/resource.TheResourceBase",
+    "kind": "class",
+    "longname": "module:@the-/resource.TheResourceBase",
+    "memberof": "module:@the-/resource",
+    "meta": {
+      "filename": "TheResource.js",
+      "lineno": 8,
+      "path": "lib"
+    },
+    "name": "TheResourceBase",
+    "order": 5,
+    "scope": "static"
+  },
+  {
     "augments": [
       "TheResourceBase",
       "ClayResource",
@@ -363,26 +378,11 @@
     "memberof": "module:@the-/resource",
     "meta": {
       "filename": "TheResource.js",
-      "lineno": 2,
+      "lineno": 18,
       "path": "lib"
     },
     "name": "TheResource",
-    "order": 5,
-    "scope": "static"
-  },
-  {
-    "access": "protected",
-    "id": "module:@the-/resource.TheResourceBase",
-    "kind": "class",
-    "longname": "module:@the-/resource.TheResourceBase",
-    "memberof": "module:@the-/resource",
-    "meta": {
-      "filename": "TheResource.js",
-      "lineno": 17,
-      "path": "lib"
-    },
-    "name": "TheResourceBase",
-    "order": 7,
+    "order": 6,
     "scope": "static"
   },
   {
@@ -390,10 +390,10 @@
     "examples": [
       "class MyResource extends TheResource {\n     get cascaded () {\n       return { User: (ref) => ({user: {$ref: ref}}) }\n     }\n   }"
     ],
-    "id": "module:@the-/resource.TheResource.cascaded",
+    "id": "TheResource.cascaded",
     "kind": "member",
-    "longname": "module:@the-/resource.TheResource.cascaded",
-    "memberof": "module:@the-/resource.TheResource",
+    "longname": "TheResource.cascaded",
+    "memberof": "TheResource",
     "meta": {
       "filename": "TheResource.js",
       "lineno": 38,
@@ -412,7 +412,7 @@
     "memberof": "module:@the-/resource",
     "meta": {
       "filename": "DataTypes.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "DataTypes",
@@ -427,7 +427,7 @@
     "memberof": "module:@the-/resource",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/mixins"
     },
     "name": "mixins",
@@ -442,7 +442,7 @@
     "memberof": "module:@the-/resource",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -477,7 +477,7 @@
     "memberof": "module:@the-/resource",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
@@ -491,11 +491,16 @@
     "memberof": "module:@the-/resource",
     "meta": {
       "filename": "isResourceClass.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "isResourceClass",
     "order": 4,
+    "params": [
+      {
+        "name": "Class"
+      }
+    ],
     "returns": [
       {
         "type": {
@@ -515,7 +520,7 @@
     "memberof": "module:@the-/resource.mixins",
     "meta": {
       "filename": "listenMix.js",
-      "lineno": 2,
+      "lineno": 16,
       "path": "lib/mixins"
     },
     "name": "listenMix",
@@ -550,7 +555,7 @@
     "memberof": "module:@the-/resource.mixins",
     "meta": {
       "filename": "queueMix.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/mixins"
     },
     "name": "queueMix",
@@ -585,7 +590,7 @@
     "memberof": "module:@the-/resource.mixins",
     "meta": {
       "filename": "writeOnceMix.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/mixins"
     },
     "name": "writeOnceMix",

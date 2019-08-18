@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/axe
  * @typicalname axe
- * @version 15.6.4
+ * @version 15.6.5
  */
 'use strict'
 

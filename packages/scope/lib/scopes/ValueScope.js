@@ -1,14 +1,13 @@
 'use strict'
 
+const Scope = require('./Scope')
+
 /**
  * Scope to hold value
  * @memberof module:@the-/scope.scopes
  * @class ValueScope
  * @augments module:@the-/scope.scopes.Scope
  */
-const Scope = require('./Scope')
-
-/** @lends module:@the-/scope.scopes.ValueScope */
 class ValueScope extends Scope {
   static get initialState() {
     return null

@@ -5,14 +5,14 @@
 ## @the-/driver-mongo
 Mongo driver for the-db
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/driver-mongo](#module_@the-/driver-mongo)
     * [.MongoDriver](#module_@the-/driver-mongo.MongoDriver) ⇐ <code>Driver</code>
         * [new MongoDriver()](#new_module_@the-/driver-mongo.MongoDriver_new)
     * [.mixins](#module_@the-/driver-mongo.mixins) : <code>object</code>
-        * [.mongoMix()](#module_@the-/driver-mongo.mixins.mongoMix)
+        * [.mongoMix(Class)](#module_@the-/driver-mongo.mixins.mongoMix) ⇒ <code>\*</code>
     * [.create(...args)](#module_@the-/driver-mongo.create) ⇒ <code>MongoDriver</code>
 
 <a name="module_@the-/driver-mongo.MongoDriver"></a>
@@ -33,10 +33,15 @@ Client mixin functions
 **Kind**: static namespace of [<code>@the-/driver-mongo</code>](#module_@the-/driver-mongo)  
 <a name="module_@the-/driver-mongo.mixins.mongoMix"></a>
 
-#### mixins.mongoMix()
+#### mixins.mongoMix(Class) ⇒ <code>\*</code>
 Mixin of mongodb
 
 **Kind**: static method of [<code>mixins</code>](#module_@the-/driver-mongo.mixins)  
+
+| Param |
+| --- |
+| Class | 
+
 <a name="module_@the-/driver-mongo.create"></a>
 
 ### driverMongo.create(...args) ⇒ <code>MongoDriver</code>

@@ -5,15 +5,11 @@
 ## @the-/refresher
 Refresher of the-db
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/refresher](#module_@the-/refresher)
     * [.TheRefresher](#module_@the-/refresher.TheRefresher)
-        * [.has(target)](#module_@the-/refresher.TheRefresher+has) ⇒ <code>boolean</code>
-        * [.request()](#module_@the-/refresher.TheRefresher+request)
-        * [.start()](#module_@the-/refresher.TheRefresher+start) ⇒ <code>\*</code>
-        * [.stop()](#module_@the-/refresher.TheRefresher+stop)
     * [.create(...args)](#module_@the-/refresher.create) ⇒ <code>TheRefresher</code>
     * [.default()](#module_@the-/refresher.default)
 
@@ -21,42 +17,6 @@ Refresher of the-db
 
 ### refresher.TheRefresher
 **Kind**: static class of [<code>@the-/refresher</code>](#module_@the-/refresher)  
-
-* [.TheRefresher](#module_@the-/refresher.TheRefresher)
-    * [.has(target)](#module_@the-/refresher.TheRefresher+has) ⇒ <code>boolean</code>
-    * [.request()](#module_@the-/refresher.TheRefresher+request)
-    * [.start()](#module_@the-/refresher.TheRefresher+start) ⇒ <code>\*</code>
-    * [.stop()](#module_@the-/refresher.TheRefresher+stop)
-
-<a name="module_@the-/refresher.TheRefresher+has"></a>
-
-#### theRefresher.has(target) ⇒ <code>boolean</code>
-Check the refresh has the target
-
-**Kind**: instance method of [<code>TheRefresher</code>](#module_@the-/refresher.TheRefresher)  
-
-| Param | Type |
-| --- | --- |
-| target | <code>string</code> | 
-
-<a name="module_@the-/refresher.TheRefresher+request"></a>
-
-#### theRefresher.request()
-Add refresh target
-
-**Kind**: instance method of [<code>TheRefresher</code>](#module_@the-/refresher.TheRefresher)  
-<a name="module_@the-/refresher.TheRefresher+start"></a>
-
-#### theRefresher.start() ⇒ <code>\*</code>
-Start ticking
-
-**Kind**: instance method of [<code>TheRefresher</code>](#module_@the-/refresher.TheRefresher)  
-<a name="module_@the-/refresher.TheRefresher+stop"></a>
-
-#### theRefresher.stop()
-Stop ticking
-
-**Kind**: instance method of [<code>TheRefresher</code>](#module_@the-/refresher.TheRefresher)  
 <a name="module_@the-/refresher.create"></a>
 
 ### refresher.create(...args) ⇒ <code>TheRefresher</code>

@@ -1,12 +1,12 @@
 'use strict'
 
+const { EOL } = require('os')
+
 /**
  * @memberof module:@the-/scaffold
  * @function listTypes
+ * @param tmpls
  */
-const { EOL } = require('os')
-
-/** @lends module:@the-/scaffold.listTypes */
 function listTypes(tmpls) {
   console.log(`${EOL}$ the-scaffold <type> <dest>${EOL}`)
   const types = Object.keys(tmpls)

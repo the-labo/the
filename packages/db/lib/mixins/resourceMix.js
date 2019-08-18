@@ -3,8 +3,9 @@
 /**
  * @memberof module:@the-/db
  * @function resourceMix
+ * @param Class
+ * @returns {*}
  */
-/** @lends module:@the-/db.resourceMix */
 function resourceMix(Class) {
   /**
    * @memberof module:@the-/db.resourceMix

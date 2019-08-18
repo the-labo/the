@@ -1,5 +1,7 @@
 'use strict'
 
+const get = require('./get')
+
 /**
  * Show page
  * @memberof module:@the-/window
@@ -7,9 +9,6 @@
  * @param {string} url - URL to show
  * @returns {*}
  */
-const get = require('./get')
-
-/** @lends module:@the-/window.show */
 function show(url) {
   const location = get('location')
   if (!location) {

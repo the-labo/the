@@ -93,13 +93,13 @@ tryExample().catch((err) => console.error(err))
   - [.create(args)](./doc/api/api.md#module_@the-/refactor.create)
   - [.default()](./doc/api/api.md#module_@the-/refactor.default)
   - [.TheRefactor](./doc/api/api.md#module_@the-/refactor.TheRefactor)
-- module:@the-/refactor.TheRefactor
-  - [#convert(pattern,converter,options)](./doc/api/api.md#module_@the-/refactor.TheRefactor#convert)
-  - [#process(pattern,from,to,options)](./doc/api/api.md#module_@the-/refactor.TheRefactor#process)
-  - [#rename(pattern,convert,options)](./doc/api/api.md#module_@the-/refactor.TheRefactor#rename)
-  - [#renameDir(src,dest)](./doc/api/api.md#module_@the-/refactor.TheRefactor#renameDir)
-  - [#rewrite(pattern,rules,options)](./doc/api/api.md#module_@the-/refactor.TheRefactor#rewrite)
-  - [#scatter(src,dirnames)](./doc/api/api.md#module_@the-/refactor.TheRefactor#scatter)
+- TheRefactor
+  - [#convert(pattern,converter,options)](./doc/api/api.md#TheRefactor#convert)
+  - [#process(pattern,from,to,options)](./doc/api/api.md#TheRefactor#process)
+  - [#rename(pattern,convert,options)](./doc/api/api.md#TheRefactor#rename)
+  - [#renameDir(src,dest)](./doc/api/api.md#TheRefactor#renameDir)
+  - [#rewrite(pattern,rules,options)](./doc/api/api.md#TheRefactor#rewrite)
+  - [#scatter(src,dirnames)](./doc/api/api.md#TheRefactor#scatter)
 
 See [API Guide](./doc/api/api.md) for more detail
 

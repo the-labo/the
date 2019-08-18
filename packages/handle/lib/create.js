@@ -1,5 +1,7 @@
 'use strict'
 
+const TheHandle = require('./TheHandle')
+
 /**
  * Create a TheHandle instance
  * @memberof module:@the-/handle
@@ -7,9 +9,6 @@
  * @param {...*} args
  * @returns {TheHandle}
  */
-const TheHandle = require('./TheHandle')
-
-/** @lends module:@the-/handle.create */
 function create(...args) {
   return new TheHandle(...args)
 }

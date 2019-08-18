@@ -1,14 +1,15 @@
 'use strict'
 
-/**
- * @memberof module:@the-/db.setup
- * @function setupMysql
- */
 const asleep = require('asleep')
 const colorprint = require('colorprint')
 const execMysql = require('../helpers/execMysql')
 
-/** @lends module:@the-/db.setup.setupMysql */
+/**
+ * @memberof module:@the-/db.setup
+ * @function setupMysql
+ * @param env
+ * @param [options={}]
+ */
 async function setupMysql(env, options = {}) {
   const { retryInterval = 3000, retryMax = 20 } = options
   const {

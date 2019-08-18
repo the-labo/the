@@ -11,12 +11,12 @@ Check utility for the-framework
 * [@the-/check](#module_@the-/check)
     * [.canTouch()](#module_@the-/check.canTouch) ⇒ <code>boolean</code>
     * [.isBrowser()](#module_@the-/check.isBrowser) ⇒ <code>boolean</code>
-    * [.isChrome()](#module_@the-/check.isChrome) ⇒ <code>boolean</code>
-    * [.isFirefox()](#module_@the-/check.isFirefox) ⇒ <code>boolean</code>
-    * [.isiOS()](#module_@the-/check.isiOS) ⇒ <code>boolean</code>
+    * [.isChrome([options&#x3D;])](#module_@the-/check.isChrome) ⇒ <code>boolean</code>
+    * [.isFirefox([options&#x3D;])](#module_@the-/check.isFirefox) ⇒ <code>boolean</code>
+    * [.isiOS([options&#x3D;])](#module_@the-/check.isiOS) ⇒ <code>boolean</code>
     * [.isMacOS()](#module_@the-/check.isMacOS) ⇒ <code>boolean</code>
     * [.isProduction()](#module_@the-/check.isProduction) ⇒ <code>boolean</code>
-    * [.unlessProduction(handler)](#module_@the-/check.unlessProduction)
+    * [.unlessProduction(handler)](#module_@the-/check.unlessProduction) ⇒ <code>\*</code>
 
 <a name="module_@the-/check.canTouch"></a>
 
@@ -32,22 +32,37 @@ Detect if browser side
 **Kind**: static method of [<code>@the-/check</code>](#module_@the-/check)  
 <a name="module_@the-/check.isChrome"></a>
 
-### check.isChrome() ⇒ <code>boolean</code>
+### check.isChrome([options&#x3D;]) ⇒ <code>boolean</code>
 Detect chrome or not
 
 **Kind**: static method of [<code>@the-/check</code>](#module_@the-/check)  
+
+| Param |
+| --- |
+| [options=] | 
+
 <a name="module_@the-/check.isFirefox"></a>
 
-### check.isFirefox() ⇒ <code>boolean</code>
+### check.isFirefox([options&#x3D;]) ⇒ <code>boolean</code>
 Detect Firefox or not
 
 **Kind**: static method of [<code>@the-/check</code>](#module_@the-/check)  
+
+| Param |
+| --- |
+| [options=] | 
+
 <a name="module_@the-/check.isiOS"></a>
 
-### check.isiOS() ⇒ <code>boolean</code>
+### check.isiOS([options&#x3D;]) ⇒ <code>boolean</code>
 Detect iOS or not
 
 **Kind**: static method of [<code>@the-/check</code>](#module_@the-/check)  
+
+| Param |
+| --- |
+| [options=] | 
+
 <a name="module_@the-/check.isMacOS"></a>
 
 ### check.isMacOS() ⇒ <code>boolean</code>
@@ -63,7 +78,7 @@ Do unless production env
 **Returns**: <code>boolean</code> - Is production or not  
 <a name="module_@the-/check.unlessProduction"></a>
 
-### check.unlessProduction(handler)
+### check.unlessProduction(handler) ⇒ <code>\*</code>
 Do unless production env
 
 **Kind**: static method of [<code>@the-/check</code>](#module_@the-/check)  

@@ -1,3 +1,5 @@
+'use strict'
+
 /**
  * Scope access
  * @memberof module:@the-/facade-scope
@@ -5,9 +7,6 @@
  * @param {Object} scope
  * @returns {module:@the-/facade-scope.busyAccessFor~busyAccess} - Face object for busy access
  */
-'use strict'
-
-/** @lends module:@the-/facade-scope.busyAccessFor */
 function busyAccessFor(scope) {
   /**
    * @memberof module:@the-/facade-scope.busyAccessFor

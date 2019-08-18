@@ -5,16 +5,12 @@
 ## @the-/hash
 Hash object to hold key-value pairs
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/hash](#module_@the-/hash)
     * [.TheHash](#module_@the-/hash.TheHash)
         * [new TheHash(props)](#new_module_@the-/hash.TheHash_new)
-        * [.get(key)](#module_@the-/hash.TheHash+get) ⇒ <code>\*</code>
-        * [.has(key)](#module_@the-/hash.TheHash+has) ⇒ <code>boolean</code>
-        * [.set(key, value)](#module_@the-/hash.TheHash+set)
-        * [.toProxy([options])](#module_@the-/hash.TheHash+toProxy) ⇒ <code>\*</code>
     * [.create(...args)](#module_@the-/hash.create) ⇒ <code>TheHash</code>
     * [.default()](#module_@the-/hash.default) ⇒ [<code>TheHash</code>](#module_@the-/hash.TheHash)
     * [.proxy(src, [options])](#module_@the-/hash.proxy) ⇒ <code>Proxy</code>
@@ -23,14 +19,6 @@ Hash object to hold key-value pairs
 
 ### hash.TheHash
 **Kind**: static class of [<code>@the-/hash</code>](#module_@the-/hash)  
-
-* [.TheHash](#module_@the-/hash.TheHash)
-    * [new TheHash(props)](#new_module_@the-/hash.TheHash_new)
-    * [.get(key)](#module_@the-/hash.TheHash+get) ⇒ <code>\*</code>
-    * [.has(key)](#module_@the-/hash.TheHash+has) ⇒ <code>boolean</code>
-    * [.set(key, value)](#module_@the-/hash.TheHash+set)
-    * [.toProxy([options])](#module_@the-/hash.TheHash+toProxy) ⇒ <code>\*</code>
-
 <a name="new_module_@the-/hash.TheHash_new"></a>
 
 #### new TheHash(props)
@@ -38,51 +26,6 @@ Hash object to hold key-value pairs
 | Param | Type |
 | --- | --- |
 | props | <code>Object</code> | 
-
-<a name="module_@the-/hash.TheHash+get"></a>
-
-#### theHash.get(key) ⇒ <code>\*</code>
-Get value for key
-
-**Kind**: instance method of [<code>TheHash</code>](#module_@the-/hash.TheHash)  
-
-| Param | Type |
-| --- | --- |
-| key | <code>string</code> | 
-
-<a name="module_@the-/hash.TheHash+has"></a>
-
-#### theHash.has(key) ⇒ <code>boolean</code>
-Has value for
-
-**Kind**: instance method of [<code>TheHash</code>](#module_@the-/hash.TheHash)  
-
-| Param | Type |
-| --- | --- |
-| key | <code>string</code> | 
-
-<a name="module_@the-/hash.TheHash+set"></a>
-
-#### theHash.set(key, value)
-Set value for key
-
-**Kind**: instance method of [<code>TheHash</code>](#module_@the-/hash.TheHash)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| key | <code>string</code> | Key to set |
-| value | <code>\*</code> | Value to set |
-
-<a name="module_@the-/hash.TheHash+toProxy"></a>
-
-#### theHash.toProxy([options]) ⇒ <code>\*</code>
-Convert into proxy
-
-**Kind**: instance method of [<code>TheHash</code>](#module_@the-/hash.TheHash)  
-
-| Param | Type | Default |
-| --- | --- | --- |
-| [options] | <code>Object</code> | <code>{}</code> | 
 
 <a name="module_@the-/hash.create"></a>
 

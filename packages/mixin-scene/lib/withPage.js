@@ -1,21 +1,20 @@
 'use strict'
 
 /**
+ * @memberof module:@the-/mixin-scene.withPage
+ * @class WithPageMixed
+ * @inner
+ */
+const asClassMixin = require('./helpers/asClassMixin')
+const injectProperties = require('./helpers/injectProperties')
+
+/**
  * withPage mixin
  * @memberof module:@the-/mixin-scene
  * @function withPage
  * @param {function()} Class - Class to mix
  * @returns {function()} Mixed class
  */
-/**
- * @memberof module:@the-/mixin-scene.withPage
- * @inner
- * @class WithPageMixed
- */
-const asClassMixin = require('./helpers/asClassMixin')
-const injectProperties = require('./helpers/injectProperties')
-
-/** @lends module:@the-/mixin-scene.withPage */
 const withPage = asClassMixin((Class) => {
   injectProperties(
     Class,

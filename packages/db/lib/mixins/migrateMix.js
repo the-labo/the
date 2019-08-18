@@ -9,7 +9,6 @@ const asleep = require('asleep')
  * @param {function()}
  * @returns {function()}
  */
-/** @lends module:@the-/db.migrateMix */
 function migrateMix(Class) {
   /**
    * @memberof module:@the-/db

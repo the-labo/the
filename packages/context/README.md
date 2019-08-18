@@ -83,10 +83,12 @@ Usage
   - [.ContextRootFor()](./doc/api/api.md#module_@the-/context.helpers.ContextRootFor)
 - module:@the-/context.helpers.contextEntryFor
   - [~ContextEntry](./doc/api/api.md#module_@the-/context.helpers.contextEntryFor~ContextEntry)
-- module:@the-/context.TheContext
-  - [#del(name)](./doc/api/api.md#module_@the-/context.TheContext#del)
-  - [#get(name,options)](./doc/api/api.md#module_@the-/context.TheContext#get)
-  - [#set(values)](./doc/api/api.md#module_@the-/context.TheContext#set)
+- module:@the-/context.helpers.contextRootFor
+  - [~ContextRoot(props)](./doc/api/api.md#module_@the-/context.helpers.contextRootFor~ContextRoot)
+- TheContext
+  - [#del(name)](./doc/api/api.md#TheContext#del)
+  - [#get(name,options)](./doc/api/api.md#TheContext#get)
+  - [#set(values)](./doc/api/api.md#TheContext#set)
 
 See [API Guide](./doc/api/api.md) for more detail
 

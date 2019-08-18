@@ -1,14 +1,5 @@
 'use strict'
 
-/**
- * Extract event handlers for component props
- * @memberof module:@the-/util-ui
- * @function eventHandlersFor
- * @param {Object} props - Component prop
- * @param {Object} [options={}]
- * @param {string[]} [options.except] - Exception names
- * @returns {Object} Props for html attributes
- */
 const { SupportedProps } = require('@the-/const-ui')
 
 const handlerNames = [
@@ -20,7 +11,15 @@ const handlerNames = [
   ...SupportedProps.imageEvents.split(','),
 ]
 
-/** @lends module:@the-/util-ui.eventHandlersFor */
+/**
+ * Extract event handlers for component props
+ * @memberof module:@the-/util-ui
+ * @function eventHandlersFor
+ * @param {Object} props - Component prop
+ * @param {Object} [options={}]
+ * @param {string[]} [options.except] - Exception names
+ * @returns {Object} Props for html attributes
+ */
 function eventHandlersFor(props, options = {}) {
   const { except = [] } = options
   return Object.keys(props)

@@ -1,5 +1,7 @@
 'use strict'
 
+const TheBin = require('./TheBin')
+
 /**
  * Create a TheBin instance
  * @memberof module:@the-/bin
@@ -7,9 +9,6 @@
  * @param {...*} args
  * @returns {module:@the-/bin.TheBin}
  */
-const TheBin = require('./TheBin')
-
-/** @lends module:@the-/bin.create */
 function create(...args) {
   const bin = new TheBin(...args)
   return bin.bind()

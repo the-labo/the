@@ -1,11 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/secret
- * @class TheSecret
- * @augments CryptoMixed
- * @augments LockMixed
- */
 const abind = require('abind')
 const aslogger = require('aslogger')
 const crypto = require('crypto')
@@ -13,7 +7,7 @@ const path = require('path')
 const qs = require('qs')
 const { readAsJsonSync, statSync, writeAsJsonSync } = require('@the-/util-file')
 const m = require('./mixins')
-const pkg = require('../package')
+const pkg = require('../package.json')
 
 const TheSecretBase = [m.cryptoMix, m.lockMix].reduce(
   (Class, mix) => mix(Class),
@@ -22,7 +16,12 @@ const TheSecretBase = [m.cryptoMix, m.lockMix].reduce(
 
 const IV_LENGTH = 16
 
-/** @lends module:@the-/secret.TheSecret */
+/**
+ * @memberof module:@the-/secret
+ * @class TheSecret
+ * @augments CryptoMixed
+ * @augments LockMixed
+ */
 class TheSecret extends TheSecretBase {
   constructor(filename, password, options = {}) {
     const {

@@ -1,21 +1,20 @@
 'use strict'
 
 /**
+ * @memberof module:@the-/mixin-scene.withLimit
+ * @class WithLimitMixed
+ * @inner
+ */
+const asClassMixin = require('./helpers/asClassMixin')
+const injectProperties = require('./helpers/injectProperties')
+
+/**
  * withLimit mixin
  * @memberof module:@the-/mixin-scene
  * @function withLimit
  * @param {function()} Class - Class to mix
  * @returns {function()} Mixed class
  */
-/**
- * @memberof module:@the-/mixin-scene.withLimit
- * @inner
- * @class WithLimitMixed
- */
-const asClassMixin = require('./helpers/asClassMixin')
-const injectProperties = require('./helpers/injectProperties')
-
-/** @lends module:@the-/mixin-scene.withLimit */
 const withLimit = asClassMixin((Class) => {
   injectProperties(
     Class,

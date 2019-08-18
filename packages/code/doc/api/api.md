@@ -5,7 +5,7 @@
 ## @the-/code
 Code formatter of the-frameworks
 
-**Version**: 15.9.5  
+**Version**: 15.11.1  
 **License**: MIT  
 
 * [@the-/code](#module_@the-/code)
@@ -18,7 +18,7 @@ Code formatter of the-frameworks
     * [.astHelper](#module_@the-/code.astHelper) : <code>object</code>
     * [.helpers](#module_@the-/code.helpers) : <code>object</code>
     * [.parsers](#module_@the-/code.parsers) : <code>object</code>
-        * [.parseCSS()](#module_@the-/code.parsers.parseCSS)
+        * [.parseCSS(content, [options&#x3D;])](#module_@the-/code.parsers.parseCSS) ⇒ <code>Promise.&lt;\*&gt;</code>
     * [.processors](#module_@the-/code.processors) : <code>object</code>
         * [.processCSSProp(content)](#module_@the-/code.processors.processCSSProp) ⇒ <code>Promise.&lt;string&gt;</code>
         * [.processCSSRule(content)](#module_@the-/code.processors.processCSSRule) ⇒ <code>Promise.&lt;string&gt;</code>
@@ -26,17 +26,17 @@ Code formatter of the-frameworks
         * [.processJSArray(content)](#module_@the-/code.processors.processJSArray) ⇒ <code>string</code>
         * [.processJSBinaryExpression(content)](#module_@the-/code.processors.processJSBinaryExpression) ⇒ <code>string</code>
         * [.processJSBlock(content)](#module_@the-/code.processors.processJSBlock) ⇒ <code>string</code>
-        * [.processJSChaining()](#module_@the-/code.processors.processJSChaining)
+        * [.processJSChaining(content, [options&#x3D;])](#module_@the-/code.processors.processJSChaining) ⇒ <code>\*</code>
         * [.processJSClass(content)](#module_@the-/code.processors.processJSClass) ⇒ <code>string</code>
         * [.processComment(content)](#module_@the-/code.processors.processComment) ⇒ <code>string</code>
-        * [.processJSDeclaration()](#module_@the-/code.processors.processJSDeclaration)
-        * [.processJSDoc(content, [options])](#module_@the-/code.processors.processJSDoc)
+        * [.processJSDeclaration(content, [options&#x3D;])](#module_@the-/code.processors.processJSDeclaration) ⇒ <code>\*</code>
+        * [.processJSDoc([options], content)](#module_@the-/code.processors.processJSDoc) ⇒ <code>Promise.&lt;\*&gt;</code>
         * [.processJSExport(content)](#module_@the-/code.processors.processJSExport) ⇒ <code>string</code>
         * [.processJSFunction(content)](#module_@the-/code.processors.processJSFunction) ⇒ <code>string</code>
         * [.processJSIf(content)](#module_@the-/code.processors.processJSIf) ⇒ <code>string</code>
         * [.processJSImport(content)](#module_@the-/code.processors.processJSImport) ⇒ <code>string</code>
         * [.processJSObject(content)](#module_@the-/code.processors.processJSObject) ⇒ <code>string</code>
-        * [.processJSON()](#module_@the-/code.processors.processJSON)
+        * [.processJSON(content, [options&#x3D;])](#module_@the-/code.processors.processJSON) ⇒ <code>\*</code>
         * [.processJSPrettier(content)](#module_@the-/code.processors.processJSPrettier) ⇒ <code>Promise.&lt;string&gt;</code>
         * [.processJSRedundant(content)](#module_@the-/code.processors.processJSRedundant) ⇒ <code>string</code>
         * [.processJSRequire(content)](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
@@ -46,13 +46,13 @@ Code formatter of the-frameworks
         * [.processJSUnused(content)](#module_@the-/code.processors.processJSUnused) ⇒ <code>string</code>
         * [.processJSXAttribute(content)](#module_@the-/code.processors.processJSXAttribute) ⇒ <code>string</code>
         * [.processJSXExpression(content)](#module_@the-/code.processors.processJSXExpression) ⇒ <code>string</code>
-        * [.processPackageJSON()](#module_@the-/code.processors.processPackageJSON)
-        * [.processPackageLockJSON()](#module_@the-/code.processors.processPackageLockJSON)
+        * [.processPackageJSON(content, [options&#x3D;])](#module_@the-/code.processors.processPackageJSON) ⇒ <code>\*</code>
+        * [.processPackageLockJSON(content, [options&#x3D;])](#module_@the-/code.processors.processPackageLockJSON) ⇒ <code>\*</code>
         * [.processYAML(content)](#module_@the-/code.processors.processYAML) ⇒ <code>string</code>
     * [.create(...args)](#module_@the-/code.create) ⇒ <code>TheCode</code>
-    * [.run()](#module_@the-/code.run)
-    * [.applyConverter()](#module_@the-/code.applyConverter)
-    * [.contentAccess()](#module_@the-/code.contentAccess)
+    * [.run(pattern, [options&#x3D;])](#module_@the-/code.run)
+    * [.applyConverter(content, convert, [options&#x3D;])](#module_@the-/code.applyConverter) ⇒ <code>Promise.&lt;\*&gt;</code>
+    * [.contentAccess(content)](#module_@the-/code.contentAccess) ⇒ <code>\*</code>
 
 <a name="module_@the-/code.TheCode"></a>
 
@@ -114,8 +114,14 @@ Parser functions
 **Access**: protected  
 <a name="module_@the-/code.parsers.parseCSS"></a>
 
-#### parsers.parseCSS()
+#### parsers.parseCSS(content, [options&#x3D;]) ⇒ <code>Promise.&lt;\*&gt;</code>
 **Kind**: static method of [<code>parsers</code>](#module_@the-/code.parsers)  
+
+| Param |
+| --- |
+| content | 
+| [options=] | 
+
 <a name="module_@the-/code.processors"></a>
 
 ### code.processors : <code>object</code>
@@ -131,17 +137,17 @@ Processor functions
     * [.processJSArray(content)](#module_@the-/code.processors.processJSArray) ⇒ <code>string</code>
     * [.processJSBinaryExpression(content)](#module_@the-/code.processors.processJSBinaryExpression) ⇒ <code>string</code>
     * [.processJSBlock(content)](#module_@the-/code.processors.processJSBlock) ⇒ <code>string</code>
-    * [.processJSChaining()](#module_@the-/code.processors.processJSChaining)
+    * [.processJSChaining(content, [options&#x3D;])](#module_@the-/code.processors.processJSChaining) ⇒ <code>\*</code>
     * [.processJSClass(content)](#module_@the-/code.processors.processJSClass) ⇒ <code>string</code>
     * [.processComment(content)](#module_@the-/code.processors.processComment) ⇒ <code>string</code>
-    * [.processJSDeclaration()](#module_@the-/code.processors.processJSDeclaration)
-    * [.processJSDoc(content, [options])](#module_@the-/code.processors.processJSDoc)
+    * [.processJSDeclaration(content, [options&#x3D;])](#module_@the-/code.processors.processJSDeclaration) ⇒ <code>\*</code>
+    * [.processJSDoc([options], content)](#module_@the-/code.processors.processJSDoc) ⇒ <code>Promise.&lt;\*&gt;</code>
     * [.processJSExport(content)](#module_@the-/code.processors.processJSExport) ⇒ <code>string</code>
     * [.processJSFunction(content)](#module_@the-/code.processors.processJSFunction) ⇒ <code>string</code>
     * [.processJSIf(content)](#module_@the-/code.processors.processJSIf) ⇒ <code>string</code>
     * [.processJSImport(content)](#module_@the-/code.processors.processJSImport) ⇒ <code>string</code>
     * [.processJSObject(content)](#module_@the-/code.processors.processJSObject) ⇒ <code>string</code>
-    * [.processJSON()](#module_@the-/code.processors.processJSON)
+    * [.processJSON(content, [options&#x3D;])](#module_@the-/code.processors.processJSON) ⇒ <code>\*</code>
     * [.processJSPrettier(content)](#module_@the-/code.processors.processJSPrettier) ⇒ <code>Promise.&lt;string&gt;</code>
     * [.processJSRedundant(content)](#module_@the-/code.processors.processJSRedundant) ⇒ <code>string</code>
     * [.processJSRequire(content)](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
@@ -151,8 +157,8 @@ Processor functions
     * [.processJSUnused(content)](#module_@the-/code.processors.processJSUnused) ⇒ <code>string</code>
     * [.processJSXAttribute(content)](#module_@the-/code.processors.processJSXAttribute) ⇒ <code>string</code>
     * [.processJSXExpression(content)](#module_@the-/code.processors.processJSXExpression) ⇒ <code>string</code>
-    * [.processPackageJSON()](#module_@the-/code.processors.processPackageJSON)
-    * [.processPackageLockJSON()](#module_@the-/code.processors.processPackageLockJSON)
+    * [.processPackageJSON(content, [options&#x3D;])](#module_@the-/code.processors.processPackageJSON) ⇒ <code>\*</code>
+    * [.processPackageLockJSON(content, [options&#x3D;])](#module_@the-/code.processors.processPackageLockJSON) ⇒ <code>\*</code>
     * [.processYAML(content)](#module_@the-/code.processors.processYAML) ⇒ <code>string</code>
 
 <a name="module_@the-/code.processors.processCSSProp"></a>
@@ -219,8 +225,14 @@ Process array
 
 <a name="module_@the-/code.processors.processJSChaining"></a>
 
-#### processors.processJSChaining()
+#### processors.processJSChaining(content, [options&#x3D;]) ⇒ <code>\*</code>
 **Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
+
+| Param |
+| --- |
+| content | 
+| [options=] | 
+
 <a name="module_@the-/code.processors.processJSClass"></a>
 
 #### processors.processJSClass(content) ⇒ <code>string</code>
@@ -243,19 +255,25 @@ Process array
 
 <a name="module_@the-/code.processors.processJSDeclaration"></a>
 
-#### processors.processJSDeclaration()
+#### processors.processJSDeclaration(content, [options&#x3D;]) ⇒ <code>\*</code>
 Process declarations
 
 **Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
+
+| Param |
+| --- |
+| content | 
+| [options=] | 
+
 <a name="module_@the-/code.processors.processJSDoc"></a>
 
-#### processors.processJSDoc(content, [options])
+#### processors.processJSDoc([options], content) ⇒ <code>Promise.&lt;\*&gt;</code>
 **Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
 
 | Param | Type | Default |
 | --- | --- | --- |
-| content | <code>string</code> |  | 
 | [options] | <code>Object</code> | <code>{}</code> | 
+| content | <code>string</code> |  | 
 
 <a name="module_@the-/code.processors.processJSExport"></a>
 
@@ -319,8 +337,14 @@ Process objects
 
 <a name="module_@the-/code.processors.processJSON"></a>
 
-#### processors.processJSON()
+#### processors.processJSON(content, [options&#x3D;]) ⇒ <code>\*</code>
 **Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
+
+| Param |
+| --- |
+| content | 
+| [options=] | 
+
 <a name="module_@the-/code.processors.processJSPrettier"></a>
 
 #### processors.processJSPrettier(content) ⇒ <code>Promise.&lt;string&gt;</code>
@@ -427,12 +451,24 @@ Process JSX attributes
 
 <a name="module_@the-/code.processors.processPackageJSON"></a>
 
-#### processors.processPackageJSON()
+#### processors.processPackageJSON(content, [options&#x3D;]) ⇒ <code>\*</code>
 **Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
+
+| Param |
+| --- |
+| content | 
+| [options=] | 
+
 <a name="module_@the-/code.processors.processPackageLockJSON"></a>
 
-#### processors.processPackageLockJSON()
+#### processors.processPackageLockJSON(content, [options&#x3D;]) ⇒ <code>\*</code>
 **Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
+
+| Param |
+| --- |
+| content | 
+| [options=] | 
+
 <a name="module_@the-/code.processors.processYAML"></a>
 
 #### processors.processYAML(content) ⇒ <code>string</code>
@@ -455,15 +491,33 @@ Create a TheCode instance
 
 <a name="module_@the-/code.run"></a>
 
-### code.run()
+### code.run(pattern, [options&#x3D;])
 **Kind**: static method of [<code>@the-/code</code>](#module_@the-/code)  
+
+| Param |
+| --- |
+| pattern | 
+| [options=] | 
+
 <a name="module_@the-/code.applyConverter"></a>
 
-### code.applyConverter()
+### code.applyConverter(content, convert, [options&#x3D;]) ⇒ <code>Promise.&lt;\*&gt;</code>
 **Kind**: static method of [<code>@the-/code</code>](#module_@the-/code)  
+
+| Param |
+| --- |
+| content | 
+| convert | 
+| [options=] | 
+
 <a name="module_@the-/code.contentAccess"></a>
 
-### code.contentAccess()
+### code.contentAccess(content) ⇒ <code>\*</code>
 Define content access methods
 
 **Kind**: static method of [<code>@the-/code</code>](#module_@the-/code)  
+
+| Param |
+| --- |
+| content | 
+

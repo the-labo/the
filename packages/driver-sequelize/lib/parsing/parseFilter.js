@@ -1,9 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/driver-sequelize.parsing
- * @function parseFilter
- */
 const {
   DataTypes: { OBJECT },
 } = require('clay-constants')
@@ -15,7 +11,13 @@ const serializer = require('../helpers/serializer')
 
 const INVALID_FILTER_CONDITION_ID = '____theInvalidFilterConditionID'
 
-/** @lends module:@the-/driver-sequelize.parsing.parseFilter */
+/**
+ * @memberof module:@the-/driver-sequelize.parsing
+ * @function parseFilter
+ * @param filter
+ * @param [options={}]
+ * @returns {*}
+ */
 function parseFilter(filter, options = {}) {
   if (!filter) {
     return filter

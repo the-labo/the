@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Mixins for listen
- * @memberof module:@the-/resource.mixins
- * @function listenMix
- * @param {function()} Class
- * @returns {function()} Mixed class
- */
 const {
   ResourceEvents: {
     ENTITY_CREATE,
@@ -20,12 +13,18 @@ const {
 } = require('clay-resource')
 const { unlessProduction } = require('@the-/check')
 
-/** @lends module:@the-/resource.mixins.listenMix */
+/**
+ * Mixins for listen
+ * @memberof module:@the-/resource.mixins
+ * @function listenMix
+ * @param {function()} Class
+ * @returns {function()} Mixed class
+ */
 function listenMix(Class) {
   /**
    * @memberof module:@the-/resource.mixins.listenMix
-   * @inner
    * @class ListenMixed
+   * @inner
    */
   class ListenMixed extends Class {
     increaseListenerMax(amount = 1) {

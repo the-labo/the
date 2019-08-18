@@ -1,20 +1,20 @@
 'use strict'
 
-/**
- * Entry component
- * @memberof module:@the-/context.helpers
- * @function contextEntryFor
- */
 const { shallowEqual } = require('asobj')
 const PropTypes = require('prop-types')
 const React = require('react')
 
-/** @lends module:@the-/context.helpers.contextEntryFor */
+/**
+ * Entry component
+ * @memberof module:@the-/context.helpers
+ * @function contextEntryFor
+ * @returns {*}
+ */
 function contextEntryFor(context, { store }) {
   /**
    * @memberof module:@the-/context.helpers.contextEntryFor
-   * @inner
    * @class ContextEntry
+   * @inner
    */
   class ContextEntry extends React.Component {
     constructor(props) {

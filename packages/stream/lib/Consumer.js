@@ -1,13 +1,12 @@
 'use strict'
 
+const generatorFromReadable = require('./helpers/generatorFromReadable')
+const { ReadableStream, WritableStream } = require('./helpers/webStreams')
+
 /**
  * @memberof module:@the-/stream
  * @class Consumer
  */
-const generatorFromReadable = require('./helpers/generatorFromReadable')
-const { ReadableStream, WritableStream } = require('./helpers/webStreams')
-
-/** @lends module:@the-/stream.Consumer */
 class Consumer {
   constructor() {
     const readable = new ReadableStream({

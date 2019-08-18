@@ -192,24 +192,6 @@ console.log(x2)
     )
   })
 
-  it('Used in decorator', async () => {
-    equal(
-      await processJSUnused(`
-const X = require('X')
-const Y = require('Y')
-
-@X
-class XX {}
-`),
-      `
-const X = require('X')
-
-@X
-class XX {}
-`,
-    )
-  })
-
   it('Import and export', async () => {
     equal(
       await processJSUnused(`

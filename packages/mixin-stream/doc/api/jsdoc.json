@@ -7,13 +7,13 @@
     "longname": "module:@the-/mixin-stream",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/mixin-stream",
     "order": 1,
     "typicalname": "mixinStream",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "description": "Compose multiple mixins into one",
@@ -22,7 +22,7 @@
     "longname": "compose",
     "meta": {
       "filename": "compose.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "compose",
@@ -56,7 +56,7 @@
     "longname": "withDebug",
     "meta": {
       "filename": "withDebug.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "withDebug",

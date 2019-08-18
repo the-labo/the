@@ -13,20 +13,20 @@ Sequelize driver for the-framework
         * [.MetaColumnNames](#module_@the-/driver-sequelize.constants.MetaColumnNames) : <code>enum</code>
         * [.MetaColumnNamesReversed](#module_@the-/driver-sequelize.constants.MetaColumnNamesReversed) : <code>enum</code>
     * [.converters](#module_@the-/driver-sequelize.converters) : <code>object</code>
-        * [.convertInbound()](#module_@the-/driver-sequelize.converters.convertInbound)
-        * [.convertOutbound()](#module_@the-/driver-sequelize.converters.convertOutbound)
+        * [.convertInbound(values, [options&#x3D;])](#module_@the-/driver-sequelize.converters.convertInbound) ⇒ <code>\*</code>
+        * [.convertOutbound(values, [options&#x3D;])](#module_@the-/driver-sequelize.converters.convertOutbound) ⇒ <code>\*</code>
     * [.helpers](#module_@the-/driver-sequelize.helpers) : <code>object</code>
         * [.Logger](#module_@the-/driver-sequelize.helpers.Logger)
     * [.mixins](#module_@the-/driver-sequelize.mixins) : <code>object</code>
-        * [.sequelizeMix()](#module_@the-/driver-sequelize.mixins.sequelizeMix)
+        * [.sequelizeMix(Class)](#module_@the-/driver-sequelize.mixins.sequelizeMix) ⇒ <code>\*</code>
     * [.modeling](#module_@the-/driver-sequelize.modeling) : <code>object</code>
         * [.defineModel()](#module_@the-/driver-sequelize.modeling.defineModel) ⇒ <code>Object</code>
-        * [.defineModelColumn(propertyName, def)](#module_@the-/driver-sequelize.modeling.defineModelColumn)
-        * [.prepareModel()](#module_@the-/driver-sequelize.modeling.prepareModel) ⇒ <code>Promise</code>
+        * [.defineModelColumn(def, propertyName)](#module_@the-/driver-sequelize.modeling.defineModelColumn) ⇒ <code>\*</code>
+        * [.prepareModel(Model, Schema)](#module_@the-/driver-sequelize.modeling.prepareModel) ⇒ <code>Promise</code>
     * [.parsing](#module_@the-/driver-sequelize.parsing) : <code>object</code>
         * [.parseAttributeName()](#module_@the-/driver-sequelize.parsing.parseAttributeName) ⇒ <code>string</code>
-        * [.parseFilter()](#module_@the-/driver-sequelize.parsing.parseFilter)
-        * [.parseSort()](#module_@the-/driver-sequelize.parsing.parseSort)
+        * [.parseFilter(filter, [options&#x3D;])](#module_@the-/driver-sequelize.parsing.parseFilter) ⇒ <code>\*</code>
+        * [.parseSort(sort, options)](#module_@the-/driver-sequelize.parsing.parseSort) ⇒ <code>\*</code>
     * [.default()](#module_@the-/driver-sequelize.default)
 
 <a name="module_@the-/driver-sequelize.constants"></a>
@@ -56,17 +56,29 @@ Converter functions
 **Access**: protected  
 
 * [.converters](#module_@the-/driver-sequelize.converters) : <code>object</code>
-    * [.convertInbound()](#module_@the-/driver-sequelize.converters.convertInbound)
-    * [.convertOutbound()](#module_@the-/driver-sequelize.converters.convertOutbound)
+    * [.convertInbound(values, [options&#x3D;])](#module_@the-/driver-sequelize.converters.convertInbound) ⇒ <code>\*</code>
+    * [.convertOutbound(values, [options&#x3D;])](#module_@the-/driver-sequelize.converters.convertOutbound) ⇒ <code>\*</code>
 
 <a name="module_@the-/driver-sequelize.converters.convertInbound"></a>
 
-#### converters.convertInbound()
+#### converters.convertInbound(values, [options&#x3D;]) ⇒ <code>\*</code>
 **Kind**: static method of [<code>converters</code>](#module_@the-/driver-sequelize.converters)  
+
+| Param |
+| --- |
+| values | 
+| [options=] | 
+
 <a name="module_@the-/driver-sequelize.converters.convertOutbound"></a>
 
-#### converters.convertOutbound()
+#### converters.convertOutbound(values, [options&#x3D;]) ⇒ <code>\*</code>
 **Kind**: static method of [<code>converters</code>](#module_@the-/driver-sequelize.converters)  
+
+| Param |
+| --- |
+| values | 
+| [options=] | 
+
 <a name="module_@the-/driver-sequelize.helpers"></a>
 
 ### driverSequelize.helpers : <code>object</code>
@@ -87,10 +99,15 @@ Mixin functions
 **Access**: protected  
 <a name="module_@the-/driver-sequelize.mixins.sequelizeMix"></a>
 
-#### mixins.sequelizeMix()
+#### mixins.sequelizeMix(Class) ⇒ <code>\*</code>
 Mixin of sequelize
 
 **Kind**: static method of [<code>mixins</code>](#module_@the-/driver-sequelize.mixins)  
+
+| Param |
+| --- |
+| Class | 
+
 <a name="module_@the-/driver-sequelize.modeling"></a>
 
 ### driverSequelize.modeling : <code>object</code>
@@ -101,8 +118,8 @@ Modeling functions
 
 * [.modeling](#module_@the-/driver-sequelize.modeling) : <code>object</code>
     * [.defineModel()](#module_@the-/driver-sequelize.modeling.defineModel) ⇒ <code>Object</code>
-    * [.defineModelColumn(propertyName, def)](#module_@the-/driver-sequelize.modeling.defineModelColumn)
-    * [.prepareModel()](#module_@the-/driver-sequelize.modeling.prepareModel) ⇒ <code>Promise</code>
+    * [.defineModelColumn(def, propertyName)](#module_@the-/driver-sequelize.modeling.defineModelColumn) ⇒ <code>\*</code>
+    * [.prepareModel(Model, Schema)](#module_@the-/driver-sequelize.modeling.prepareModel) ⇒ <code>Promise</code>
 
 <a name="module_@the-/driver-sequelize.modeling.defineModel"></a>
 
@@ -117,20 +134,26 @@ Parse schema
 
 <a name="module_@the-/driver-sequelize.modeling.defineModelColumn"></a>
 
-#### modeling.defineModelColumn(propertyName, def)
+#### modeling.defineModelColumn(def, propertyName) ⇒ <code>\*</code>
 Define model column
 
 **Kind**: static method of [<code>modeling</code>](#module_@the-/driver-sequelize.modeling)  
 
 | Param | Type |
 | --- | --- |
-| propertyName | <code>string</code> | 
 | def | <code>Object</code> | 
+| propertyName | <code>string</code> | 
 
 <a name="module_@the-/driver-sequelize.modeling.prepareModel"></a>
 
-#### modeling.prepareModel() ⇒ <code>Promise</code>
+#### modeling.prepareModel(Model, Schema) ⇒ <code>Promise</code>
 **Kind**: static method of [<code>modeling</code>](#module_@the-/driver-sequelize.modeling)  
+
+| Param |
+| --- |
+| Model | 
+| Schema | 
+
 <a name="module_@the-/driver-sequelize.parsing"></a>
 
 ### driverSequelize.parsing : <code>object</code>
@@ -141,8 +164,8 @@ Parsing functions
 
 * [.parsing](#module_@the-/driver-sequelize.parsing) : <code>object</code>
     * [.parseAttributeName()](#module_@the-/driver-sequelize.parsing.parseAttributeName) ⇒ <code>string</code>
-    * [.parseFilter()](#module_@the-/driver-sequelize.parsing.parseFilter)
-    * [.parseSort()](#module_@the-/driver-sequelize.parsing.parseSort)
+    * [.parseFilter(filter, [options&#x3D;])](#module_@the-/driver-sequelize.parsing.parseFilter) ⇒ <code>\*</code>
+    * [.parseSort(sort, options)](#module_@the-/driver-sequelize.parsing.parseSort) ⇒ <code>\*</code>
 
 <a name="module_@the-/driver-sequelize.parsing.parseAttributeName"></a>
 
@@ -155,12 +178,24 @@ Parsing functions
 
 <a name="module_@the-/driver-sequelize.parsing.parseFilter"></a>
 
-#### parsing.parseFilter()
+#### parsing.parseFilter(filter, [options&#x3D;]) ⇒ <code>\*</code>
 **Kind**: static method of [<code>parsing</code>](#module_@the-/driver-sequelize.parsing)  
+
+| Param |
+| --- |
+| filter | 
+| [options=] | 
+
 <a name="module_@the-/driver-sequelize.parsing.parseSort"></a>
 
-#### parsing.parseSort()
+#### parsing.parseSort(sort, options) ⇒ <code>\*</code>
 **Kind**: static method of [<code>parsing</code>](#module_@the-/driver-sequelize.parsing)  
+
+| Param |
+| --- |
+| sort | 
+| options | 
+
 <a name="module_@the-/driver-sequelize.default"></a>
 
 ### driverSequelize.default()

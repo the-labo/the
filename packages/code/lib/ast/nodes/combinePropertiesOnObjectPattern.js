@@ -7,6 +7,7 @@ const {
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function combinePropertiesOnObjectPattern
+ * @returns {*}
  */
 function combinePropertiesOnObjectPattern(objectPatternNode, { get, replace }) {
   if (objectPatternNode.type !== NodeTypes.ObjectPattern) {

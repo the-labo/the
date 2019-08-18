@@ -1,8 +1,3 @@
-/**
- * Alt text for the-components
- * @memberof module:@the-/ui-alt
- * @class TheAlt
- */
 'use strict'
 
 import c from 'classnames'
@@ -10,7 +5,11 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
-/** @lends module:@the-/ui-alt.TheAlt */
+/**
+ * Alt text for the-components
+ * @memberof module:@the-/ui-alt
+ * @class TheAlt
+ */
 class TheAlt extends React.Component {
   render() {
     const {

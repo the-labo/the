@@ -20,6 +20,7 @@ const LiteralTypes = new Set([
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function normalizeBinaryExpressionNode
+ * @returns {*}
  */
 function normalizeBinaryExpressionNode(BinaryExpression, { get, replace }) {
   const { end, left, operator, right, start } = BinaryExpression

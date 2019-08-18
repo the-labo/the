@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/ps
- * @class ThePS
- * @param {string} filename - PID filename
- * @param {Object} [options={}] - Optional settings
- * @param {boolean} [options.logging=false] - Enable logs
- */
 const asleep = require('asleep')
 const fs = require('fs')
 const mkdirp = require('mkdirp')
@@ -17,7 +10,13 @@ const terminate = require('terminate')
 const yesno = require('yesno')
 const { isProduction } = require('@the-/check')
 
-/** @lends module:@the-/ps.ThePS */
+/**
+ * @memberof module:@the-/ps
+ * @class ThePS
+ * @param {string} filename - PID filename
+ * @param {Object} [options={}] - Optional settings
+ * @param {boolean} [options.logging=false] - Enable logs
+ */
 class ThePS {
   constructor(filename = 'var/the.pid', options = {}) {
     const { killPolicy = 'ask', logging = !isProduction() } = options

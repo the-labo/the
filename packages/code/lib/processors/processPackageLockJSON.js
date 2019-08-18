@@ -5,6 +5,9 @@ const applyConverter = require('../helpers/applyConverter')
 /**
  * @memberof module:@the-/code.processors
  * @function processPackageLockJSON
+ * @param content
+ * @param [options={}]
+ * @returns {*}
  */
 function processPackageLockJSON(content, options = {}) {
   return applyConverter(

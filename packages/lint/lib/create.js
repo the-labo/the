@@ -1,5 +1,7 @@
 'use strict'
 
+const TheLint = require('./TheLint')
+
 /**
  * Create a TheLint instance
  * @memberof module:@the-/lint
@@ -7,9 +9,6 @@
  * @param {...*} args
  * @returns {TheLint}
  */
-const TheLint = require('./TheLint')
-
-/** @lends module:@the-/lint.create */
 function create(...args) {
   return new TheLint(...args)
 }

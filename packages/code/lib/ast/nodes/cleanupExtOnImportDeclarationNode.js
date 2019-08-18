@@ -7,6 +7,7 @@ const isRelative = (filename) => /^\./.test(filename)
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupExtOnImportDeclarationNode
+ * @returns {*}
  */
 function cleanupExtOnImportDeclarationNode(
   ImportDeclaration,

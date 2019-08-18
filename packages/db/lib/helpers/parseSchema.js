@@ -1,17 +1,17 @@
 'use strict'
 
-/**
- * Parse schema
- * @memberof module:@the-/db.helpers
- * @function parseSchema
- * @param {Object} Schema
- * @param {Object} [options={}]
- */
 const {
   DataTypes: { STRING },
 } = require('@the-/resource')
 
-/** @lends module:@the-/db.helpers.parseSchema */
+/**
+ * Parse schema
+ * @memberof module:@the-/db.helpers
+ * @function parseSchema
+ * @param {Object} [options={}]
+ * @param {Object} Schema
+ * @returns {*}
+ */
 function parseSchema(schema, options = {}) {
   const { indices = [] } = options
   return {

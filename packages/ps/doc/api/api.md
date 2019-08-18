@@ -5,14 +5,13 @@
 ## @the-/ps
 Process manager for the-framework
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/ps](#module_@the-/ps)
     * [.ThePS](#module_@the-/ps.ThePS)
         * [new ThePS(filename, [options])](#new_module_@the-/ps.ThePS_new)
-        * [.acquire()](#module_@the-/ps.ThePS+acquire) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * [.acquire()](#module_@the-/ps.acquire)
+    * [.acquire(filename)](#module_@the-/ps.acquire) ⇒ <code>Promise.&lt;\*&gt;</code>
     * [.create(...args)](#module_@the-/ps.create) ⇒ <code>ThePS</code>
     * [.default()](#module_@the-/ps.default)
 
@@ -20,11 +19,6 @@ Process manager for the-framework
 
 ### ps.ThePS
 **Kind**: static class of [<code>@the-/ps</code>](#module_@the-/ps)  
-
-* [.ThePS](#module_@the-/ps.ThePS)
-    * [new ThePS(filename, [options])](#new_module_@the-/ps.ThePS_new)
-    * [.acquire()](#module_@the-/ps.ThePS+acquire) ⇒ <code>Promise.&lt;undefined&gt;</code>
-
 <a name="new_module_@the-/ps.ThePS_new"></a>
 
 #### new ThePS(filename, [options])
@@ -35,18 +29,17 @@ Process manager for the-framework
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 | [options.logging] | <code>boolean</code> | <code>false</code> | Enable logs |
 
-<a name="module_@the-/ps.ThePS+acquire"></a>
-
-#### thePS.acquire() ⇒ <code>Promise.&lt;undefined&gt;</code>
-Generate pid and remove on exit.
-
-**Kind**: instance method of [<code>ThePS</code>](#module_@the-/ps.ThePS)  
 <a name="module_@the-/ps.acquire"></a>
 
-### ps.acquire()
+### ps.acquire(filename) ⇒ <code>Promise.&lt;\*&gt;</code>
 Acquire process
 
 **Kind**: static method of [<code>@the-/ps</code>](#module_@the-/ps)  
+
+| Param |
+| --- |
+| filename | 
+
 <a name="module_@the-/ps.create"></a>
 
 ### ps.create(...args) ⇒ <code>ThePS</code>

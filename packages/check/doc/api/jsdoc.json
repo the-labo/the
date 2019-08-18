@@ -71,11 +71,17 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "isChrome.js",
-      "lineno": 3,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "isChrome",
     "order": 3,
+    "params": [
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
     "returns": [
       {
         "type": {
@@ -95,11 +101,17 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "isFirefox.js",
-      "lineno": 3,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "isFirefox",
     "order": 4,
+    "params": [
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
     "returns": [
       {
         "type": {
@@ -119,11 +131,17 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "isiOS.js",
-      "lineno": 3,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "isiOS",
     "order": 5,
+    "params": [
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
     "returns": [
       {
         "type": {
@@ -143,7 +161,7 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "isMacOS.js",
-      "lineno": 3,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "isMacOS",
@@ -167,7 +185,7 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "isProduction.js",
-      "lineno": 1,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "isProduction",
@@ -192,7 +210,7 @@
     "memberof": "module:@the-/check",
     "meta": {
       "filename": "unlessProduction.js",
-      "lineno": 1,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "unlessProduction",
@@ -205,6 +223,15 @@
           ]
         },
         "name": "handler"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
       }
     ],
     "scope": "static"

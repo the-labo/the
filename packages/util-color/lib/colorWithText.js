@@ -1,5 +1,7 @@
 'use strict'
 
+const { rotate } = require('acolor')
+
 /**
  * Get color with text
  * @memberof module:@the-/util-color
@@ -8,9 +10,6 @@
  * @param {Object} [options={}] - Optional settings
  * @returns {string} Color
  */
-const { rotate } = require('acolor')
-
-/** @lends module:@the-/util-color.colorWithText */
 function colorWithText(text, options = {}) {
   const { base = '#38E' } = options
   const value = String(text)

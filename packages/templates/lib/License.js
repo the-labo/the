@@ -7,11 +7,11 @@ const _tmpl = require('./_tmpl')
  * Define bud for LICENSE
  * @memberof module:@the-/templates
  * @function License
- * @param {object} config - Configuration.
+ * @param {Object} config - Configuration.
  * @param {string} config.type - Type of license.
  * @param {number} config.year - Copy right year.
  * @param {string} config.holder - License holder name.
- * @returns {object} - Bud object.
+ * @returns {Object} - Bud object.
  */
 function License(config) {
   assert.ok(config.type, 'config.type is required.')

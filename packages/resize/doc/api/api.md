@@ -5,19 +5,12 @@
 ## @the-/resize
 Resize image files
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/resize](#module_@the-/resize)
     * [.TheResize](#module_@the-/resize.TheResize)
         * [new TheResize([config])](#new_module_@the-/resize.TheResize_new)
-        * [.convert(src, dest, [options])](#module_@the-/resize.TheResize+convert) ⇒ <code>Promise.&lt;\*&gt;</code>
-        * [.convertDir(src, dest, [options])](#module_@the-/resize.TheResize+convertDir) ⇒ <code>Promise.&lt;Array&gt;</code>
-        * [.convertFile(src, dest, [options])](#module_@the-/resize.TheResize+convertFile) ⇒ <code>Promise.&lt;Object&gt;</code>
-        * [.overwrite(filename, [options])](#module_@the-/resize.TheResize+overwrite) ⇒ <code>Promise.&lt;\*&gt;</code>
-        * [.overwriteDir(dirname, [options])](#module_@the-/resize.TheResize+overwriteDir) ⇒ <code>Promise.&lt;Array&gt;</code>
-        * [.overwriteFile(src, [options])](#module_@the-/resize.TheResize+overwriteFile) ⇒ <code>Promise.&lt;\*&gt;</code>
-        * [.overwriteIfPossible(filename, [options])](#module_@the-/resize.TheResize+overwriteIfPossible) ⇒ <code>Promise.&lt;\*&gt;</code>
     * [.create(...args)](#module_@the-/resize.create) ⇒ <code>TheResize</code>
     * [.default()](#module_@the-/resize.default)
 
@@ -26,17 +19,6 @@ Resize image files
 ### resize.TheResize
 **Kind**: static class of [<code>@the-/resize</code>](#module_@the-/resize)  
 **See**: http://sharp.pixelplumbing.com/en/stable/api-resize/#parameters  
-
-* [.TheResize](#module_@the-/resize.TheResize)
-    * [new TheResize([config])](#new_module_@the-/resize.TheResize_new)
-    * [.convert(src, dest, [options])](#module_@the-/resize.TheResize+convert) ⇒ <code>Promise.&lt;\*&gt;</code>
-    * [.convertDir(src, dest, [options])](#module_@the-/resize.TheResize+convertDir) ⇒ <code>Promise.&lt;Array&gt;</code>
-    * [.convertFile(src, dest, [options])](#module_@the-/resize.TheResize+convertFile) ⇒ <code>Promise.&lt;Object&gt;</code>
-    * [.overwrite(filename, [options])](#module_@the-/resize.TheResize+overwrite) ⇒ <code>Promise.&lt;\*&gt;</code>
-    * [.overwriteDir(dirname, [options])](#module_@the-/resize.TheResize+overwriteDir) ⇒ <code>Promise.&lt;Array&gt;</code>
-    * [.overwriteFile(src, [options])](#module_@the-/resize.TheResize+overwriteFile) ⇒ <code>Promise.&lt;\*&gt;</code>
-    * [.overwriteIfPossible(filename, [options])](#module_@the-/resize.TheResize+overwriteIfPossible) ⇒ <code>Promise.&lt;\*&gt;</code>
-
 <a name="new_module_@the-/resize.TheResize_new"></a>
 
 #### new TheResize([config])
@@ -45,93 +27,6 @@ Resize image files
 | --- | --- | --- |
 | [config] | <code>Object</code> | Configuration |
 | [config.fit] | <code>string</code> | Fit policy ('cover','contain','fill', 'inside' or 'outside') |
-
-<a name="module_@the-/resize.TheResize+convert"></a>
-
-#### theResize.convert(src, dest, [options]) ⇒ <code>Promise.&lt;\*&gt;</code>
-Convert file(s)
-
-**Kind**: instance method of [<code>TheResize</code>](#module_@the-/resize.TheResize)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| src | <code>string</code> |  | Source file name |
-| dest | <code>string</code> |  | Destination file name |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
-<a name="module_@the-/resize.TheResize+convertDir"></a>
-
-#### theResize.convertDir(src, dest, [options]) ⇒ <code>Promise.&lt;Array&gt;</code>
-Convert files in a directory
-
-**Kind**: instance method of [<code>TheResize</code>](#module_@the-/resize.TheResize)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| src | <code>string</code> |  | Source directory path |
-| dest | <code>string</code> |  | Destination directory path |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
-<a name="module_@the-/resize.TheResize+convertFile"></a>
-
-#### theResize.convertFile(src, dest, [options]) ⇒ <code>Promise.&lt;Object&gt;</code>
-Convert a single file
-
-**Kind**: instance method of [<code>TheResize</code>](#module_@the-/resize.TheResize)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| src | <code>string</code> |  |  |
-| dest | <code>string</code> |  |  |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
-<a name="module_@the-/resize.TheResize+overwrite"></a>
-
-#### theResize.overwrite(filename, [options]) ⇒ <code>Promise.&lt;\*&gt;</code>
-Overwrite a file
-
-**Kind**: instance method of [<code>TheResize</code>](#module_@the-/resize.TheResize)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| filename | <code>string</code> |  | Filename to overwrite |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
-<a name="module_@the-/resize.TheResize+overwriteDir"></a>
-
-#### theResize.overwriteDir(dirname, [options]) ⇒ <code>Promise.&lt;Array&gt;</code>
-Overwrite files in a dir
-
-**Kind**: instance method of [<code>TheResize</code>](#module_@the-/resize.TheResize)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| dirname | <code>string</code> |  | Directory name |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
-<a name="module_@the-/resize.TheResize+overwriteFile"></a>
-
-#### theResize.overwriteFile(src, [options]) ⇒ <code>Promise.&lt;\*&gt;</code>
-Resized a single file
-
-**Kind**: instance method of [<code>TheResize</code>](#module_@the-/resize.TheResize)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| src | <code>string</code> |  |  |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
-<a name="module_@the-/resize.TheResize+overwriteIfPossible"></a>
-
-#### theResize.overwriteIfPossible(filename, [options]) ⇒ <code>Promise.&lt;\*&gt;</code>
-Overwrite if possible
-
-**Kind**: instance method of [<code>TheResize</code>](#module_@the-/resize.TheResize)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| filename | <code>string</code> |  | Filename to overwrite |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 
 <a name="module_@the-/resize.create"></a>
 

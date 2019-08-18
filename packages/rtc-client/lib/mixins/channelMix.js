@@ -1,5 +1,7 @@
 'use strict'
 
+const { ChannelNames } = require('../constants')
+
 /**
  * Mixin for channel
  * @memberof module:@the-/rtc.constants.mixins
@@ -7,9 +9,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-const { ChannelNames } = require('../constants')
-
-/** @lends module:@the-/rtc.constants.mixins.channelMix */
 function channelMix(Class) {
   class ChannelMixed extends Class {
     constructor() {

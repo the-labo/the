@@ -20,8 +20,8 @@ const m = require('./mixins')
 
 /**
  * @memberof module:@the-/setting
- * @protected
  * @class TheSettingBase
+ * @protected
  */
 const TheSettingBase = [m.lockMix].reduce(
   (Class, mix) => mix(Class),

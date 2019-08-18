@@ -21,7 +21,7 @@ describe('the-bin', () => {
     ok(await ls.exists())
     await ls.exec('-l')
 
-    const invalid = new TheBin('__some_invalid_cmd_')
+    const invalid = new TheBin('__some_invalid_cmd__')
     ok(!(await invalid.exists()))
   })
 

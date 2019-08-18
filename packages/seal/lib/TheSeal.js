@@ -1,5 +1,9 @@
 'use strict'
 
+const abind = require('abind')
+const crypto = require('crypto')
+const { stringify } = require('qs')
+
 /**
  * Seal handler
  * @memberof module:@the-/seal
@@ -8,11 +12,6 @@
  * @param {Object} [options={}] - Optional settings
  * @param {string} [options.algorithm='sha512'] - Hash algorithm
  */
-const abind = require('abind')
-const crypto = require('crypto')
-const { stringify } = require('qs')
-
-/** @lends module:@the-/seal.TheSeal */
 class TheSeal {
   constructor(secret, options = {}) {
     const { algorithm = 'sha512' } = options

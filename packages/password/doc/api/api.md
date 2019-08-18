@@ -5,7 +5,7 @@
 ## @the-/password
 Password util for the-framework
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/password](#module_@the-/password)

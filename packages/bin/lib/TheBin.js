@@ -1,13 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/bin
- * @class TheBin
- * @param {string} cmd - Command
- * @param {Object} [options={}] - Optional settings
- * @param {string} [options.guide] - Guide string
- * @param {string} [options.versionOption=--version] - Option string for version
- */
 const { exec, spawn } = require('child_process')
 const fs = require('fs')
 const hasbin = require('hasbin')
@@ -19,7 +11,14 @@ const { unlessProduction } = require('@the-/check')
 const statAsync = promisify(fs.stat)
 const execAsync = promisify(exec)
 
-/** @lends module:@the-/bin.TheBin */
+/**
+ * @memberof module:@the-/bin
+ * @class TheBin
+ * @param {string} cmd - Command
+ * @param {Object} [options={}] - Optional settings
+ * @param {string} [options.guide] - Guide string
+ * @param {string} [options.versionOption=--version] - Option string for version
+ */
 class TheBin {
   constructor(cmd, options = {}) {
     const { guide = null, versionOption = '--version', ...rest } = options

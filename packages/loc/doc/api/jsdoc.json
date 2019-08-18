@@ -7,13 +7,13 @@
     "longname": "module:@the-/loc",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/loc",
     "order": 2,
     "typicalname": "loc",
-    "version": "15.4.9"
+    "version": "15.4.10"
   },
   {
     "description": "Locale resolver",
@@ -37,13 +37,13 @@
   },
   {
     "description": "Bind lang",
-    "id": "module:@the-/loc.TheLoc#bind",
+    "id": "TheLoc#bind",
     "kind": "function",
-    "longname": "module:@the-/loc.TheLoc#bind",
-    "memberof": "module:@the-/loc.TheLoc",
+    "longname": "TheLoc#bind",
+    "memberof": "TheLoc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 33,
+      "lineno": 34,
       "path": "lib"
     },
     "name": "bind",
@@ -72,13 +72,13 @@
   },
   {
     "description": "Register values for a namespace",
-    "id": "module:@the-/loc.TheLoc#register",
+    "id": "TheLoc#register",
     "kind": "function",
-    "longname": "module:@the-/loc.TheLoc#register",
-    "memberof": "module:@the-/loc.TheLoc",
+    "longname": "TheLoc#register",
+    "memberof": "TheLoc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 57,
+      "lineno": 59,
       "path": "lib"
     },
     "name": "register",
@@ -144,13 +144,13 @@
   },
   {
     "description": "Resolve message for key",
-    "id": "module:@the-/loc.TheLoc#resolve",
+    "id": "TheLoc#resolve",
     "kind": "function",
-    "longname": "module:@the-/loc.TheLoc#resolve",
-    "memberof": "module:@the-/loc.TheLoc",
+    "longname": "TheLoc#resolve",
+    "memberof": "TheLoc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 72,
+      "lineno": 74,
       "path": "lib"
     },
     "name": "resolve",
@@ -190,13 +190,13 @@
   },
   {
     "description": "Convert to compound format object",
-    "id": "module:@the-/loc.TheLoc#toCompound",
+    "id": "TheLoc#toCompound",
     "kind": "function",
-    "longname": "module:@the-/loc.TheLoc#toCompound",
-    "memberof": "module:@the-/loc.TheLoc",
+    "longname": "TheLoc#toCompound",
+    "memberof": "TheLoc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 114,
+      "lineno": 118,
       "path": "lib"
     },
     "name": "toCompound",
@@ -216,13 +216,13 @@
   },
   {
     "description": "Validate this locale",
-    "id": "module:@the-/loc.TheLoc#validate",
+    "id": "TheLoc#validate",
     "kind": "function",
-    "longname": "module:@the-/loc.TheLoc#validate",
-    "memberof": "module:@the-/loc.TheLoc",
+    "longname": "TheLoc#validate",
+    "memberof": "TheLoc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 126,
+      "lineno": 130,
       "path": "lib"
     },
     "name": "validate",
@@ -237,7 +237,7 @@
     "memberof": "module:@the-/loc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 2,
+      "lineno": 11,
       "path": "lib"
     },
     "name": "TheLoc",
@@ -253,7 +253,7 @@
     "memberof": "module:@the-/loc",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "helpers",
@@ -268,7 +268,7 @@
     "memberof": "module:@the-/loc",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -303,7 +303,7 @@
     "memberof": "module:@the-/loc",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
@@ -318,7 +318,7 @@
     "memberof": "module:@the-/loc.helpers",
     "meta": {
       "filename": "mergedLocales.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "mergedLocales",
@@ -352,7 +352,7 @@
     "memberof": "module:@the-/loc.helpers",
     "meta": {
       "filename": "resolveInScope.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "resolveInScope",
@@ -361,18 +361,27 @@
       {
         "type": {
           "names": [
-            "Object"
-          ]
-        },
-        "name": "data"
-      },
-      {
-        "type": {
-          "names": [
             "string"
           ]
         },
         "name": "keypath"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "data"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
       }
     ],
     "scope": "static"
@@ -386,7 +395,7 @@
     "memberof": "module:@the-/loc.helpers",
     "meta": {
       "filename": "toCompoundLocale.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "toCompoundLocale",
@@ -420,7 +429,7 @@
     "memberof": "module:@the-/loc.helpers",
     "meta": {
       "filename": "validateLocales.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "checkLocales",

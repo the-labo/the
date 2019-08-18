@@ -1,26 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/db
- * @class TheDB
- * @augments module:@the-/db.cascadeMix~CascadeMixed
- * @augments module:@the-/db.cliMix~CliMixed
- * @augments module:@the-/db.migrateMix~MigrateMixed
- * @augments module:@the-/db.refreshMix~RefreshMixed
- * @augments module:@the-/db.resourceMix~ResourceMixed
- * @param {Object} config
- * @param {string} [config.name=uuid.v4()] Name of clay-lump
- * @param {string} [config.dialect='memory'] - Database dialect. "mysql", "json", "memory", "localstorage", or "sqlite"
- * @param {string} [config.storage] - Storage file name for "sqlite" or "json" dialect
- * @param {string} [config.database] - Name of database schema
- * @param {string} [config.username] - Database username
- * @param {string} [config.password] - Database password
- * @param {string} [config.host] - Database password
- * @param {string} [config.port] - Database password
- * @param {object} [config.plugins] - Database plugin creators
- * @param {object} [config.hooks] - Database hook creators
- * @param {object} [config.resources] - Database resource classes
- */
 const { unlinkAsync } = require('asfs')
 const asleep = require('asleep')
 const { clone } = require('asobj')
@@ -55,7 +34,27 @@ const TheDBBase = [
   m.cascadeMix,
 ].reduce((Class, mix) => mix(Class), ClayLump)
 
-/** @lends module:@the-/db.TheDB */
+/**
+ * @memberof module:@the-/db
+ * @class TheDB
+ * @augments module:@the-/db.cascadeMix~CascadeMixed
+ * @augments module:@the-/db.cliMix~CliMixed
+ * @augments module:@the-/db.migrateMix~MigrateMixed
+ * @augments module:@the-/db.refreshMix~RefreshMixed
+ * @augments module:@the-/db.resourceMix~ResourceMixed
+ * @param {Object} config
+ * @param {string} [config.name=uuid.v4()] Name of clay-lump
+ * @param {string} [config.dialect='memory'] - Database dialect. "mysql", "json", "memory", "localstorage", or "sqlite"
+ * @param {string} [config.storage] - Storage file name for "sqlite" or "json" dialect
+ * @param {string} [config.database] - Name of database schema
+ * @param {string} [config.username] - Database username
+ * @param {string} [config.password] - Database password
+ * @param {string} [config.host] - Database password
+ * @param {string} [config.port] - Database password
+ * @param {Object} [config.plugins] - Database plugin creators
+ * @param {Object} [config.hooks] - Database hook creators
+ * @param {Object} [config.resources] - Database resource classes
+ */
 class TheDB extends TheDBBase {
   constructor(config = {}) {
     if (!new.target) {

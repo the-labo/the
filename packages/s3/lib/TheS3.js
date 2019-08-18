@@ -1,15 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/s3
- * @class TheS3
- * @param {Object} config
- * @param {string} [config.accessKeyId]
- * @param {string} [config.bucket]
- * @param {string} [config.region]
- * @param {string} [config.secretAccessKey]
- * @param {string} [config.signatureVersion]
- */
 const S3 = require('aws-sdk/clients/s3')
 const fs = require('fs')
 const mime = require('mime')
@@ -22,7 +12,16 @@ const readFileAsync = promisify(fs.readFile)
 
 const assert = theAssert('TheS3')
 
-/** @lends module:@the-/s3.TheS3 */
+/**
+ * @memberof module:@the-/s3
+ * @class TheS3
+ * @param {Object} config
+ * @param {string} [config.accessKeyId]
+ * @param {string} [config.bucket]
+ * @param {string} [config.region]
+ * @param {string} [config.secretAccessKey]
+ * @param {string} [config.signatureVersion]
+ */
 class TheS3 {
   constructor(config) {
     const {

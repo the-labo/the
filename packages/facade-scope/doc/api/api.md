@@ -27,73 +27,33 @@ Facade to wrap scopes
 * [@the-/facade-scope](#module_@the-/facade-scope)
     * [.busyAccessFor(scope)](#module_@the-/facade-scope.busyAccessFor) ⇒ [<code>busyAccess</code>](#module_@the-/facade-scope.busyAccessFor..busyAccess)
         * [~busyAccess](#module_@the-/facade-scope.busyAccessFor..busyAccess) : <code>object</code>
-            * [.state](#module_@the-/facade-scope.busyAccessFor..busyAccess.state) : <code>boolean</code>
-            * [.false()](#module_@the-/facade-scope.busyAccessFor..busyAccess.false)
-            * [.true()](#module_@the-/facade-scope.busyAccessFor..busyAccess.true)
-            * [.while(handler)](#module_@the-/facade-scope.busyAccessFor..busyAccess.while) ⇒ <code>Promise.&lt;\*&gt;</code>
     * [.countsAccessFor(scope)](#module_@the-/facade-scope.countsAccessFor) ⇒ <code>Object</code>
         * [~countsAccess](#module_@the-/facade-scope.countsAccessFor..countsAccess) : <code>object</code>
-            * [.state](#module_@the-/facade-scope.countsAccessFor..countsAccess.state) : <code>Object</code>
-            * [.hasMore()](#module_@the-/facade-scope.countsAccessFor..countsAccess.hasMore) ⇒ <code>boolean</code>
-            * [.set(counts)](#module_@the-/facade-scope.countsAccessFor..countsAccess.set)
     * [.entitiesAccessFor(scope)](#module_@the-/facade-scope.entitiesAccessFor) ⇒ <code>module:@the-/facade-scope.entitiesAccessFor~entities</code>
         * _static_
             * [.Entity](#module_@the-/facade-scope.entitiesAccessFor.Entity)
         * _inner_
             * [~entitiesAccess](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess) : <code>object</code>
-                * [.state](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.state) : [<code>Array.&lt;Entity&gt;</code>](#module_@the-/facade-scope.entitiesAccessFor.Entity)
-                * [.add(entities, options)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.add)
-                * [.addOne(entity, [options])](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.addOne)
-                * [.receiveOne(entity, options)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.receiveOne)
-                * [.removeOne(entity)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.removeOne)
-                * [.set(entities)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.set)
-                * [.updateOne(entity)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.updateOne)
     * [.entityAccessFor(scope)](#module_@the-/facade-scope.entityAccessFor) ⇒ <code>Object</code>
         * [~entityAccessFor](#module_@the-/facade-scope.entityAccessFor..entityAccessFor) : <code>object</code>
-            * [.state](#module_@the-/facade-scope.entityAccessFor..entityAccessFor.state) : <code>object</code>
-            * [.set(entity)](#module_@the-/facade-scope.entityAccessFor..entityAccessFor.set)
     * [.entryAccessFor(scope)](#module_@the-/facade-scope.entryAccessFor) ⇒ <code>Object</code>
         * [~entryAccess](#module_@the-/facade-scope.entryAccessFor..entryAccess) : <code>object</code>
     * [.filterAccessFor(scope)](#module_@the-/facade-scope.filterAccessFor) ⇒ <code>Object</code>
         * [~filterAccess](#module_@the-/facade-scope.filterAccessFor..filterAccess) : <code>object</code>
-            * [.state](#module_@the-/facade-scope.filterAccessFor..filterAccess.state) : <code>Object</code>
-            * [.set(filter)](#module_@the-/facade-scope.filterAccessFor..filterAccess.set)
     * [.idAccessFor(scope)](#module_@the-/facade-scope.idAccessFor) ⇒ <code>Object</code>
         * [~idAccess](#module_@the-/facade-scope.idAccessFor..idAccess) : <code>object</code>
-            * [.state](#module_@the-/facade-scope.idAccessFor..idAccess.state) : <code>string</code>
-            * [.isKnown(id)](#module_@the-/facade-scope.idAccessFor..idAccess.isKnown) ⇒ <code>boolean</code>
-            * [.set(id)](#module_@the-/facade-scope.idAccessFor..idAccess.set)
     * [.moreAccessFor(scope)](#module_@the-/facade-scope.moreAccessFor) ⇒ <code>Object</code>
         * [~moreAccess](#module_@the-/facade-scope.moreAccessFor..moreAccess) : <code>object</code>
-            * [.setBusy(moreBusy)](#module_@the-/facade-scope.moreAccessFor..moreAccess.setBusy)
-            * [.setHas(hasMore)](#module_@the-/facade-scope.moreAccessFor..moreAccess.setHas)
-            * [.busyWhile(handler)](#module_@the-/facade-scope.moreAccessFor..moreAccess.busyWhile) ⇒ <code>Promise.&lt;\*&gt;</code>
     * [.pageAccessFor(scope)](#module_@the-/facade-scope.pageAccessFor) ⇒ <code>Object</code>
         * [~pageAccess](#module_@the-/facade-scope.pageAccessFor..pageAccess) : <code>object</code>
-            * [.state](#module_@the-/facade-scope.pageAccessFor..pageAccess.state) : <code>Object</code>
-            * [.getNumber()](#module_@the-/facade-scope.pageAccessFor..pageAccess.getNumber) ⇒ <code>number</code>
-            * [.getSize()](#module_@the-/facade-scope.pageAccessFor..pageAccess.getSize) ⇒ <code>number</code>
-            * [.more([options])](#module_@the-/facade-scope.pageAccessFor..pageAccess.more)
-            * [.next()](#module_@the-/facade-scope.pageAccessFor..pageAccess.next)
-            * [.set(page)](#module_@the-/facade-scope.pageAccessFor..pageAccess.set)
-            * [.setNumber(pageNumber)](#module_@the-/facade-scope.pageAccessFor..pageAccess.setNumber)
-            * [.setSize(pageSize)](#module_@the-/facade-scope.pageAccessFor..pageAccess.setSize)
     * [.readyAccessFor(scope)](#module_@the-/facade-scope.readyAccessFor) ⇒ <code>Object</code>
         * [~readyAccess](#module_@the-/facade-scope.readyAccessFor..readyAccess) : <code>object</code>
-            * [.false()](#module_@the-/facade-scope.readyAccessFor..readyAccess.false)
-            * [.true()](#module_@the-/facade-scope.readyAccessFor..readyAccess.true)
-            * [.when(handler)](#module_@the-/facade-scope.readyAccessFor..readyAccess.when) ⇒ <code>Promise.&lt;\*&gt;</code>
     * [.resultAccessFor(scope)](#module_@the-/facade-scope.resultAccessFor) ⇒ <code>Object</code>
         * [~resultAccess](#module_@the-/facade-scope.resultAccessFor..resultAccess) : <code>object</code>
     * [.sortAccessFor(scope)](#module_@the-/facade-scope.sortAccessFor) ⇒ <code>Object</code>
         * [~sortAccess](#module_@the-/facade-scope.sortAccessFor..sortAccess) : <code>object</code>
-            * [.state](#module_@the-/facade-scope.sortAccessFor..sortAccess.state) : <code>string</code>
-            * [.set(name)](#module_@the-/facade-scope.sortAccessFor..sortAccess.set)
     * [.createOperationFor(scope)](#module_@the-/facade-scope.createOperationFor) ⇒ <code>Object</code>
         * [~createOperation](#module_@the-/facade-scope.createOperationFor..createOperation) : <code>object</code>
-            * [.init()](#module_@the-/facade-scope.createOperationFor..createOperation.init)
-            * [.exec(handler)](#module_@the-/facade-scope.createOperationFor..createOperation.exec) ⇒ <code>Promise.&lt;undefined&gt;</code>
-            * [.setEntry(entry)](#module_@the-/facade-scope.createOperationFor..createOperation.setEntry) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.destroyOperationFor(scope)](#module_@the-/facade-scope.destroyOperationFor) ⇒ <code>Object</code>
         * [~destroyOperation](#module_@the-/facade-scope.destroyOperationFor..destroyOperation) : <code>object</code>
     * [.detailOperationFor(scope)](#module_@the-/facade-scope.detailOperationFor) ⇒ <code>Object</code>
@@ -116,60 +76,10 @@ Scope access
 | --- | --- |
 | scope | <code>Object</code> | 
 
-
-* [.busyAccessFor(scope)](#module_@the-/facade-scope.busyAccessFor) ⇒ [<code>busyAccess</code>](#module_@the-/facade-scope.busyAccessFor..busyAccess)
-    * [~busyAccess](#module_@the-/facade-scope.busyAccessFor..busyAccess) : <code>object</code>
-        * [.state](#module_@the-/facade-scope.busyAccessFor..busyAccess.state) : <code>boolean</code>
-        * [.false()](#module_@the-/facade-scope.busyAccessFor..busyAccess.false)
-        * [.true()](#module_@the-/facade-scope.busyAccessFor..busyAccess.true)
-        * [.while(handler)](#module_@the-/facade-scope.busyAccessFor..busyAccess.while) ⇒ <code>Promise.&lt;\*&gt;</code>
-
 <a name="module_@the-/facade-scope.busyAccessFor..busyAccess"></a>
 
 #### busyAccessFor~busyAccess : <code>object</code>
 **Kind**: inner namespace of [<code>busyAccessFor</code>](#module_@the-/facade-scope.busyAccessFor)  
-
-* [~busyAccess](#module_@the-/facade-scope.busyAccessFor..busyAccess) : <code>object</code>
-    * [.state](#module_@the-/facade-scope.busyAccessFor..busyAccess.state) : <code>boolean</code>
-    * [.false()](#module_@the-/facade-scope.busyAccessFor..busyAccess.false)
-    * [.true()](#module_@the-/facade-scope.busyAccessFor..busyAccess.true)
-    * [.while(handler)](#module_@the-/facade-scope.busyAccessFor..busyAccess.while) ⇒ <code>Promise.&lt;\*&gt;</code>
-
-<a name="module_@the-/facade-scope.busyAccessFor..busyAccess.state"></a>
-
-##### busyAccess.state : <code>boolean</code>
-State of busyAccess
-
-**Kind**: static property of [<code>busyAccess</code>](#module_@the-/facade-scope.busyAccessFor..busyAccess)  
-<a name="module_@the-/facade-scope.busyAccessFor..busyAccess.false"></a>
-
-##### busyAccess.false()
-Set to false
-
-**Kind**: static method of [<code>busyAccess</code>](#module_@the-/facade-scope.busyAccessFor..busyAccess)  
-<a name="module_@the-/facade-scope.busyAccessFor..busyAccess.true"></a>
-
-##### busyAccess.true()
-Set to true
-
-**Kind**: static method of [<code>busyAccess</code>](#module_@the-/facade-scope.busyAccessFor..busyAccess)  
-<a name="module_@the-/facade-scope.busyAccessFor..busyAccess.while"></a>
-
-##### busyAccess.while(handler) ⇒ <code>Promise.&lt;\*&gt;</code>
-Set busyAccess while handle pending
-
-**Kind**: static method of [<code>busyAccess</code>](#module_@the-/facade-scope.busyAccessFor..busyAccess)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| handler | <code>function</code> | Async handler |
-
-**Example**  
-```js
-busyAccess.while(async () => {
-  await doSomethingAsync()
-})
-```
 <a name="module_@the-/facade-scope.countsAccessFor"></a>
 
 ### facadeScope.countsAccessFor(scope) ⇒ <code>Object</code>
@@ -182,46 +92,10 @@ Scope access
 | --- | --- |
 | scope | <code>Object</code> | 
 
-
-* [.countsAccessFor(scope)](#module_@the-/facade-scope.countsAccessFor) ⇒ <code>Object</code>
-    * [~countsAccess](#module_@the-/facade-scope.countsAccessFor..countsAccess) : <code>object</code>
-        * [.state](#module_@the-/facade-scope.countsAccessFor..countsAccess.state) : <code>Object</code>
-        * [.hasMore()](#module_@the-/facade-scope.countsAccessFor..countsAccess.hasMore) ⇒ <code>boolean</code>
-        * [.set(counts)](#module_@the-/facade-scope.countsAccessFor..countsAccess.set)
-
 <a name="module_@the-/facade-scope.countsAccessFor..countsAccess"></a>
 
 #### countsAccessFor~countsAccess : <code>object</code>
 **Kind**: inner namespace of [<code>countsAccessFor</code>](#module_@the-/facade-scope.countsAccessFor)  
-
-* [~countsAccess](#module_@the-/facade-scope.countsAccessFor..countsAccess) : <code>object</code>
-    * [.state](#module_@the-/facade-scope.countsAccessFor..countsAccess.state) : <code>Object</code>
-    * [.hasMore()](#module_@the-/facade-scope.countsAccessFor..countsAccess.hasMore) ⇒ <code>boolean</code>
-    * [.set(counts)](#module_@the-/facade-scope.countsAccessFor..countsAccess.set)
-
-<a name="module_@the-/facade-scope.countsAccessFor..countsAccess.state"></a>
-
-##### countsAccess.state : <code>Object</code>
-Counts
-
-**Kind**: static property of [<code>countsAccess</code>](#module_@the-/facade-scope.countsAccessFor..countsAccess)  
-<a name="module_@the-/facade-scope.countsAccessFor..countsAccess.hasMore"></a>
-
-##### countsAccess.hasMore() ⇒ <code>boolean</code>
-Has more or not
-
-**Kind**: static method of [<code>countsAccess</code>](#module_@the-/facade-scope.countsAccessFor..countsAccess)  
-<a name="module_@the-/facade-scope.countsAccessFor..countsAccess.set"></a>
-
-##### countsAccess.set(counts)
-Set counts
-
-**Kind**: static method of [<code>countsAccess</code>](#module_@the-/facade-scope.countsAccessFor..countsAccess)  
-
-| Param | Type |
-| --- | --- |
-| counts | <code>Object</code> | 
-
 <a name="module_@the-/facade-scope.entitiesAccessFor"></a>
 
 ### facadeScope.entitiesAccessFor(scope) ⇒ <code>module:@the-/facade-scope.entitiesAccessFor~entities</code>
@@ -240,13 +114,6 @@ Scope access
         * [.Entity](#module_@the-/facade-scope.entitiesAccessFor.Entity)
     * _inner_
         * [~entitiesAccess](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess) : <code>object</code>
-            * [.state](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.state) : [<code>Array.&lt;Entity&gt;</code>](#module_@the-/facade-scope.entitiesAccessFor.Entity)
-            * [.add(entities, options)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.add)
-            * [.addOne(entity, [options])](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.addOne)
-            * [.receiveOne(entity, options)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.receiveOne)
-            * [.removeOne(entity)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.removeOne)
-            * [.set(entities)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.set)
-            * [.updateOne(entity)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.updateOne)
 
 <a name="module_@the-/facade-scope.entitiesAccessFor.Entity"></a>
 
@@ -262,90 +129,6 @@ Scope access
 
 #### entitiesAccessFor~entitiesAccess : <code>object</code>
 **Kind**: inner namespace of [<code>entitiesAccessFor</code>](#module_@the-/facade-scope.entitiesAccessFor)  
-
-* [~entitiesAccess](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess) : <code>object</code>
-    * [.state](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.state) : [<code>Array.&lt;Entity&gt;</code>](#module_@the-/facade-scope.entitiesAccessFor.Entity)
-    * [.add(entities, options)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.add)
-    * [.addOne(entity, [options])](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.addOne)
-    * [.receiveOne(entity, options)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.receiveOne)
-    * [.removeOne(entity)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.removeOne)
-    * [.set(entities)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.set)
-    * [.updateOne(entity)](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.updateOne)
-
-<a name="module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.state"></a>
-
-##### entitiesAccess.state : [<code>Array.&lt;Entity&gt;</code>](#module_@the-/facade-scope.entitiesAccessFor.Entity)
-**Kind**: static property of [<code>entitiesAccess</code>](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess)  
-<a name="module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.add"></a>
-
-##### entitiesAccess.add(entities, options)
-Add entities
-
-**Kind**: static method of [<code>entitiesAccess</code>](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| entities | [<code>Array.&lt;Entity&gt;</code>](#module_@the-/facade-scope.entitiesAccessFor.Entity) |  |
-| options | <code>Object</code> | Optional settings |
-
-<a name="module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.addOne"></a>
-
-##### entitiesAccess.addOne(entity, [options])
-Add an module:@the-/facade-scope.entitiesAccessFor.Entity
-
-**Kind**: static method of [<code>entitiesAccess</code>](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| entity | <code>Object</code> |  | Entity to add |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
-<a name="module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.receiveOne"></a>
-
-##### entitiesAccess.receiveOne(entity, options)
-Receive one
-
-**Kind**: static method of [<code>entitiesAccess</code>](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| entity | [<code>Entity</code>](#module_@the-/facade-scope.entitiesAccessFor.Entity) |  |  |
-| options | <code>Object</code> |  | Optional settings |
-| [options.sorter] | <code>function</code> | <code></code> | Entity array sorter function |
-
-<a name="module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.removeOne"></a>
-
-##### entitiesAccess.removeOne(entity)
-Delete one
-
-**Kind**: static method of [<code>entitiesAccess</code>](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| entity | [<code>Entity</code>](#module_@the-/facade-scope.entitiesAccessFor.Entity) | Deleting id |
-
-<a name="module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.set"></a>
-
-##### entitiesAccess.set(entities)
-Set entities
-
-**Kind**: static method of [<code>entitiesAccess</code>](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| entities | [<code>Array.&lt;Entity&gt;</code>](#module_@the-/facade-scope.entitiesAccessFor.Entity) | Entities to set |
-
-<a name="module_@the-/facade-scope.entitiesAccessFor..entitiesAccess.updateOne"></a>
-
-##### entitiesAccess.updateOne(entity)
-Update one
-
-**Kind**: static method of [<code>entitiesAccess</code>](#module_@the-/facade-scope.entitiesAccessFor..entitiesAccess)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| entity | [<code>Entity</code>](#module_@the-/facade-scope.entitiesAccessFor.Entity) | Entity to update |
-
 <a name="module_@the-/facade-scope.entityAccessFor"></a>
 
 ### facadeScope.entityAccessFor(scope) ⇒ <code>Object</code>
@@ -358,36 +141,10 @@ Scope access
 | --- | --- |
 | scope | <code>Object</code> | 
 
-
-* [.entityAccessFor(scope)](#module_@the-/facade-scope.entityAccessFor) ⇒ <code>Object</code>
-    * [~entityAccessFor](#module_@the-/facade-scope.entityAccessFor..entityAccessFor) : <code>object</code>
-        * [.state](#module_@the-/facade-scope.entityAccessFor..entityAccessFor.state) : <code>object</code>
-        * [.set(entity)](#module_@the-/facade-scope.entityAccessFor..entityAccessFor.set)
-
 <a name="module_@the-/facade-scope.entityAccessFor..entityAccessFor"></a>
 
 #### entityAccessFor~entityAccessFor : <code>object</code>
 **Kind**: inner namespace of [<code>entityAccessFor</code>](#module_@the-/facade-scope.entityAccessFor)  
-
-* [~entityAccessFor](#module_@the-/facade-scope.entityAccessFor..entityAccessFor) : <code>object</code>
-    * [.state](#module_@the-/facade-scope.entityAccessFor..entityAccessFor.state) : <code>object</code>
-    * [.set(entity)](#module_@the-/facade-scope.entityAccessFor..entityAccessFor.set)
-
-<a name="module_@the-/facade-scope.entityAccessFor..entityAccessFor.state"></a>
-
-##### entityAccessFor.state : <code>object</code>
-**Kind**: static property of [<code>entityAccessFor</code>](#module_@the-/facade-scope.entityAccessFor..entityAccessFor)  
-<a name="module_@the-/facade-scope.entityAccessFor..entityAccessFor.set"></a>
-
-##### entityAccessFor.set(entity)
-Set entity
-
-**Kind**: static method of [<code>entityAccessFor</code>](#module_@the-/facade-scope.entityAccessFor..entityAccessFor)  
-
-| Param | Type |
-| --- | --- |
-| entity | <code>object</code> | 
-
 <a name="module_@the-/facade-scope.entryAccessFor"></a>
 
 ### facadeScope.entryAccessFor(scope) ⇒ <code>Object</code>
@@ -416,36 +173,10 @@ Scope access
 | --- | --- |
 | scope | <code>Object</code> | 
 
-
-* [.filterAccessFor(scope)](#module_@the-/facade-scope.filterAccessFor) ⇒ <code>Object</code>
-    * [~filterAccess](#module_@the-/facade-scope.filterAccessFor..filterAccess) : <code>object</code>
-        * [.state](#module_@the-/facade-scope.filterAccessFor..filterAccess.state) : <code>Object</code>
-        * [.set(filter)](#module_@the-/facade-scope.filterAccessFor..filterAccess.set)
-
 <a name="module_@the-/facade-scope.filterAccessFor..filterAccess"></a>
 
 #### filterAccessFor~filterAccess : <code>object</code>
 **Kind**: inner namespace of [<code>filterAccessFor</code>](#module_@the-/facade-scope.filterAccessFor)  
-
-* [~filterAccess](#module_@the-/facade-scope.filterAccessFor..filterAccess) : <code>object</code>
-    * [.state](#module_@the-/facade-scope.filterAccessFor..filterAccess.state) : <code>Object</code>
-    * [.set(filter)](#module_@the-/facade-scope.filterAccessFor..filterAccess.set)
-
-<a name="module_@the-/facade-scope.filterAccessFor..filterAccess.state"></a>
-
-##### filterAccess.state : <code>Object</code>
-**Kind**: static property of [<code>filterAccess</code>](#module_@the-/facade-scope.filterAccessFor..filterAccess)  
-<a name="module_@the-/facade-scope.filterAccessFor..filterAccess.set"></a>
-
-##### filterAccess.set(filter)
-Set filter
-
-**Kind**: static method of [<code>filterAccess</code>](#module_@the-/facade-scope.filterAccessFor..filterAccess)  
-
-| Param | Type |
-| --- | --- |
-| filter | <code>Object</code> | 
-
 <a name="module_@the-/facade-scope.idAccessFor"></a>
 
 ### facadeScope.idAccessFor(scope) ⇒ <code>Object</code>
@@ -458,49 +189,10 @@ Scope access
 | --- | --- |
 | scope | <code>Object</code> | 
 
-
-* [.idAccessFor(scope)](#module_@the-/facade-scope.idAccessFor) ⇒ <code>Object</code>
-    * [~idAccess](#module_@the-/facade-scope.idAccessFor..idAccess) : <code>object</code>
-        * [.state](#module_@the-/facade-scope.idAccessFor..idAccess.state) : <code>string</code>
-        * [.isKnown(id)](#module_@the-/facade-scope.idAccessFor..idAccess.isKnown) ⇒ <code>boolean</code>
-        * [.set(id)](#module_@the-/facade-scope.idAccessFor..idAccess.set)
-
 <a name="module_@the-/facade-scope.idAccessFor..idAccess"></a>
 
 #### idAccessFor~idAccess : <code>object</code>
 **Kind**: inner namespace of [<code>idAccessFor</code>](#module_@the-/facade-scope.idAccessFor)  
-
-* [~idAccess](#module_@the-/facade-scope.idAccessFor..idAccess) : <code>object</code>
-    * [.state](#module_@the-/facade-scope.idAccessFor..idAccess.state) : <code>string</code>
-    * [.isKnown(id)](#module_@the-/facade-scope.idAccessFor..idAccess.isKnown) ⇒ <code>boolean</code>
-    * [.set(id)](#module_@the-/facade-scope.idAccessFor..idAccess.set)
-
-<a name="module_@the-/facade-scope.idAccessFor..idAccess.state"></a>
-
-##### idAccess.state : <code>string</code>
-**Kind**: static property of [<code>idAccess</code>](#module_@the-/facade-scope.idAccessFor..idAccess)  
-<a name="module_@the-/facade-scope.idAccessFor..idAccess.isKnown"></a>
-
-##### idAccess.isKnown(id) ⇒ <code>boolean</code>
-Known or not
-
-**Kind**: static method of [<code>idAccess</code>](#module_@the-/facade-scope.idAccessFor..idAccess)  
-
-| Param | Type |
-| --- | --- |
-| id | <code>string</code> | 
-
-<a name="module_@the-/facade-scope.idAccessFor..idAccess.set"></a>
-
-##### idAccess.set(id)
-Set id
-
-**Kind**: static method of [<code>idAccess</code>](#module_@the-/facade-scope.idAccessFor..idAccess)  
-
-| Param | Type |
-| --- | --- |
-| id | <code>string</code> | 
-
 <a name="module_@the-/facade-scope.moreAccessFor"></a>
 
 ### facadeScope.moreAccessFor(scope) ⇒ <code>Object</code>
@@ -513,56 +205,10 @@ Scope access
 | --- | --- |
 | scope | <code>Object</code> | 
 
-
-* [.moreAccessFor(scope)](#module_@the-/facade-scope.moreAccessFor) ⇒ <code>Object</code>
-    * [~moreAccess](#module_@the-/facade-scope.moreAccessFor..moreAccess) : <code>object</code>
-        * [.setBusy(moreBusy)](#module_@the-/facade-scope.moreAccessFor..moreAccess.setBusy)
-        * [.setHas(hasMore)](#module_@the-/facade-scope.moreAccessFor..moreAccess.setHas)
-        * [.busyWhile(handler)](#module_@the-/facade-scope.moreAccessFor..moreAccess.busyWhile) ⇒ <code>Promise.&lt;\*&gt;</code>
-
 <a name="module_@the-/facade-scope.moreAccessFor..moreAccess"></a>
 
 #### moreAccessFor~moreAccess : <code>object</code>
 **Kind**: inner namespace of [<code>moreAccessFor</code>](#module_@the-/facade-scope.moreAccessFor)  
-
-* [~moreAccess](#module_@the-/facade-scope.moreAccessFor..moreAccess) : <code>object</code>
-    * [.setBusy(moreBusy)](#module_@the-/facade-scope.moreAccessFor..moreAccess.setBusy)
-    * [.setHas(hasMore)](#module_@the-/facade-scope.moreAccessFor..moreAccess.setHas)
-    * [.busyWhile(handler)](#module_@the-/facade-scope.moreAccessFor..moreAccess.busyWhile) ⇒ <code>Promise.&lt;\*&gt;</code>
-
-<a name="module_@the-/facade-scope.moreAccessFor..moreAccess.setBusy"></a>
-
-##### moreAccess.setBusy(moreBusy)
-Set moreBusy flag
-
-**Kind**: static method of [<code>moreAccess</code>](#module_@the-/facade-scope.moreAccessFor..moreAccess)  
-
-| Param | Type |
-| --- | --- |
-| moreBusy | <code>boolean</code> | 
-
-<a name="module_@the-/facade-scope.moreAccessFor..moreAccess.setHas"></a>
-
-##### moreAccess.setHas(hasMore)
-Set hasMore flag
-
-**Kind**: static method of [<code>moreAccess</code>](#module_@the-/facade-scope.moreAccessFor..moreAccess)  
-
-| Param | Type |
-| --- | --- |
-| hasMore | <code>boolean</code> | 
-
-<a name="module_@the-/facade-scope.moreAccessFor..moreAccess.busyWhile"></a>
-
-##### moreAccess.busyWhile(handler) ⇒ <code>Promise.&lt;\*&gt;</code>
-Busy true while handling
-
-**Kind**: static method of [<code>moreAccess</code>](#module_@the-/facade-scope.moreAccessFor..moreAccess)  
-
-| Param | Type |
-| --- | --- |
-| handler | <code>function</code> | 
-
 <a name="module_@the-/facade-scope.pageAccessFor"></a>
 
 ### facadeScope.pageAccessFor(scope) ⇒ <code>Object</code>
@@ -575,102 +221,10 @@ Scope access
 | --- | --- |
 | scope | <code>Object</code> | 
 
-
-* [.pageAccessFor(scope)](#module_@the-/facade-scope.pageAccessFor) ⇒ <code>Object</code>
-    * [~pageAccess](#module_@the-/facade-scope.pageAccessFor..pageAccess) : <code>object</code>
-        * [.state](#module_@the-/facade-scope.pageAccessFor..pageAccess.state) : <code>Object</code>
-        * [.getNumber()](#module_@the-/facade-scope.pageAccessFor..pageAccess.getNumber) ⇒ <code>number</code>
-        * [.getSize()](#module_@the-/facade-scope.pageAccessFor..pageAccess.getSize) ⇒ <code>number</code>
-        * [.more([options])](#module_@the-/facade-scope.pageAccessFor..pageAccess.more)
-        * [.next()](#module_@the-/facade-scope.pageAccessFor..pageAccess.next)
-        * [.set(page)](#module_@the-/facade-scope.pageAccessFor..pageAccess.set)
-        * [.setNumber(pageNumber)](#module_@the-/facade-scope.pageAccessFor..pageAccess.setNumber)
-        * [.setSize(pageSize)](#module_@the-/facade-scope.pageAccessFor..pageAccess.setSize)
-
 <a name="module_@the-/facade-scope.pageAccessFor..pageAccess"></a>
 
 #### pageAccessFor~pageAccess : <code>object</code>
 **Kind**: inner namespace of [<code>pageAccessFor</code>](#module_@the-/facade-scope.pageAccessFor)  
-
-* [~pageAccess](#module_@the-/facade-scope.pageAccessFor..pageAccess) : <code>object</code>
-    * [.state](#module_@the-/facade-scope.pageAccessFor..pageAccess.state) : <code>Object</code>
-    * [.getNumber()](#module_@the-/facade-scope.pageAccessFor..pageAccess.getNumber) ⇒ <code>number</code>
-    * [.getSize()](#module_@the-/facade-scope.pageAccessFor..pageAccess.getSize) ⇒ <code>number</code>
-    * [.more([options])](#module_@the-/facade-scope.pageAccessFor..pageAccess.more)
-    * [.next()](#module_@the-/facade-scope.pageAccessFor..pageAccess.next)
-    * [.set(page)](#module_@the-/facade-scope.pageAccessFor..pageAccess.set)
-    * [.setNumber(pageNumber)](#module_@the-/facade-scope.pageAccessFor..pageAccess.setNumber)
-    * [.setSize(pageSize)](#module_@the-/facade-scope.pageAccessFor..pageAccess.setSize)
-
-<a name="module_@the-/facade-scope.pageAccessFor..pageAccess.state"></a>
-
-##### pageAccess.state : <code>Object</code>
-Page object
-
-**Kind**: static property of [<code>pageAccess</code>](#module_@the-/facade-scope.pageAccessFor..pageAccess)  
-<a name="module_@the-/facade-scope.pageAccessFor..pageAccess.getNumber"></a>
-
-##### pageAccess.getNumber() ⇒ <code>number</code>
-Get page number
-
-**Kind**: static method of [<code>pageAccess</code>](#module_@the-/facade-scope.pageAccessFor..pageAccess)  
-**Returns**: <code>number</code> - - Number of page  
-<a name="module_@the-/facade-scope.pageAccessFor..pageAccess.getSize"></a>
-
-##### pageAccess.getSize() ⇒ <code>number</code>
-Get page size
-
-**Kind**: static method of [<code>pageAccess</code>](#module_@the-/facade-scope.pageAccessFor..pageAccess)  
-<a name="module_@the-/facade-scope.pageAccessFor..pageAccess.more"></a>
-
-##### pageAccess.more([options])
-Increment page size
-
-**Kind**: static method of [<code>pageAccess</code>](#module_@the-/facade-scope.pageAccessFor..pageAccess)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [options] | <code>Object</code> | <code>{}</code> | Optional setting |
-
-<a name="module_@the-/facade-scope.pageAccessFor..pageAccess.next"></a>
-
-##### pageAccess.next()
-Increment page number
-
-**Kind**: static method of [<code>pageAccess</code>](#module_@the-/facade-scope.pageAccessFor..pageAccess)  
-<a name="module_@the-/facade-scope.pageAccessFor..pageAccess.set"></a>
-
-##### pageAccess.set(page)
-Set
-
-**Kind**: static method of [<code>pageAccess</code>](#module_@the-/facade-scope.pageAccessFor..pageAccess)  
-
-| Param |
-| --- |
-| page | 
-
-<a name="module_@the-/facade-scope.pageAccessFor..pageAccess.setNumber"></a>
-
-##### pageAccess.setNumber(pageNumber)
-Set number
-
-**Kind**: static method of [<code>pageAccess</code>](#module_@the-/facade-scope.pageAccessFor..pageAccess)  
-
-| Param | Type |
-| --- | --- |
-| pageNumber | <code>number</code> | 
-
-<a name="module_@the-/facade-scope.pageAccessFor..pageAccess.setSize"></a>
-
-##### pageAccess.setSize(pageSize)
-Set size
-
-**Kind**: static method of [<code>pageAccess</code>](#module_@the-/facade-scope.pageAccessFor..pageAccess)  
-
-| Param | Type |
-| --- | --- |
-| pageSize | <code>number</code> | 
-
 <a name="module_@the-/facade-scope.readyAccessFor"></a>
 
 ### facadeScope.readyAccessFor(scope) ⇒ <code>Object</code>
@@ -683,46 +237,10 @@ Scope access
 | --- | --- |
 | scope | <code>Object</code> | 
 
-
-* [.readyAccessFor(scope)](#module_@the-/facade-scope.readyAccessFor) ⇒ <code>Object</code>
-    * [~readyAccess](#module_@the-/facade-scope.readyAccessFor..readyAccess) : <code>object</code>
-        * [.false()](#module_@the-/facade-scope.readyAccessFor..readyAccess.false)
-        * [.true()](#module_@the-/facade-scope.readyAccessFor..readyAccess.true)
-        * [.when(handler)](#module_@the-/facade-scope.readyAccessFor..readyAccess.when) ⇒ <code>Promise.&lt;\*&gt;</code>
-
 <a name="module_@the-/facade-scope.readyAccessFor..readyAccess"></a>
 
 #### readyAccessFor~readyAccess : <code>object</code>
 **Kind**: inner namespace of [<code>readyAccessFor</code>](#module_@the-/facade-scope.readyAccessFor)  
-
-* [~readyAccess](#module_@the-/facade-scope.readyAccessFor..readyAccess) : <code>object</code>
-    * [.false()](#module_@the-/facade-scope.readyAccessFor..readyAccess.false)
-    * [.true()](#module_@the-/facade-scope.readyAccessFor..readyAccess.true)
-    * [.when(handler)](#module_@the-/facade-scope.readyAccessFor..readyAccess.when) ⇒ <code>Promise.&lt;\*&gt;</code>
-
-<a name="module_@the-/facade-scope.readyAccessFor..readyAccess.false"></a>
-
-##### readyAccess.false()
-Set to false
-
-**Kind**: static method of [<code>readyAccess</code>](#module_@the-/facade-scope.readyAccessFor..readyAccess)  
-<a name="module_@the-/facade-scope.readyAccessFor..readyAccess.true"></a>
-
-##### readyAccess.true()
-Set to true
-
-**Kind**: static method of [<code>readyAccess</code>](#module_@the-/facade-scope.readyAccessFor..readyAccess)  
-<a name="module_@the-/facade-scope.readyAccessFor..readyAccess.when"></a>
-
-##### readyAccess.when(handler) ⇒ <code>Promise.&lt;\*&gt;</code>
-Set busy while handle pending
-
-**Kind**: static method of [<code>readyAccess</code>](#module_@the-/facade-scope.readyAccessFor..readyAccess)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| handler | <code>function</code> | Async handler |
-
 <a name="module_@the-/facade-scope.resultAccessFor"></a>
 
 ### facadeScope.resultAccessFor(scope) ⇒ <code>Object</code>
@@ -751,38 +269,10 @@ Scope access
 | --- | --- |
 | scope | <code>Object</code> | 
 
-
-* [.sortAccessFor(scope)](#module_@the-/facade-scope.sortAccessFor) ⇒ <code>Object</code>
-    * [~sortAccess](#module_@the-/facade-scope.sortAccessFor..sortAccess) : <code>object</code>
-        * [.state](#module_@the-/facade-scope.sortAccessFor..sortAccess.state) : <code>string</code>
-        * [.set(name)](#module_@the-/facade-scope.sortAccessFor..sortAccess.set)
-
 <a name="module_@the-/facade-scope.sortAccessFor..sortAccess"></a>
 
 #### sortAccessFor~sortAccess : <code>object</code>
 **Kind**: inner namespace of [<code>sortAccessFor</code>](#module_@the-/facade-scope.sortAccessFor)  
-
-* [~sortAccess](#module_@the-/facade-scope.sortAccessFor..sortAccess) : <code>object</code>
-    * [.state](#module_@the-/facade-scope.sortAccessFor..sortAccess.state) : <code>string</code>
-    * [.set(name)](#module_@the-/facade-scope.sortAccessFor..sortAccess.set)
-
-<a name="module_@the-/facade-scope.sortAccessFor..sortAccess.state"></a>
-
-##### sortAccess.state : <code>string</code>
-Sort value
-
-**Kind**: static property of [<code>sortAccess</code>](#module_@the-/facade-scope.sortAccessFor..sortAccess)  
-<a name="module_@the-/facade-scope.sortAccessFor..sortAccess.set"></a>
-
-##### sortAccess.set(name)
-Set sort
-
-**Kind**: static method of [<code>sortAccess</code>](#module_@the-/facade-scope.sortAccessFor..sortAccess)  
-
-| Param | Type |
-| --- | --- |
-| name | <code>string</code> | 
-
 <a name="module_@the-/facade-scope.createOperationFor"></a>
 
 ### facadeScope.createOperationFor(scope) ⇒ <code>Object</code>
@@ -795,57 +285,10 @@ Scope access
 | --- | --- |
 | scope | <code>Object</code> | 
 
-
-* [.createOperationFor(scope)](#module_@the-/facade-scope.createOperationFor) ⇒ <code>Object</code>
-    * [~createOperation](#module_@the-/facade-scope.createOperationFor..createOperation) : <code>object</code>
-        * [.init()](#module_@the-/facade-scope.createOperationFor..createOperation.init)
-        * [.exec(handler)](#module_@the-/facade-scope.createOperationFor..createOperation.exec) ⇒ <code>Promise.&lt;undefined&gt;</code>
-        * [.setEntry(entry)](#module_@the-/facade-scope.createOperationFor..createOperation.setEntry) ⇒ <code>Promise.&lt;undefined&gt;</code>
-
 <a name="module_@the-/facade-scope.createOperationFor..createOperation"></a>
 
 #### createOperationFor~createOperation : <code>object</code>
 **Kind**: inner namespace of [<code>createOperationFor</code>](#module_@the-/facade-scope.createOperationFor)  
-
-* [~createOperation](#module_@the-/facade-scope.createOperationFor..createOperation) : <code>object</code>
-    * [.init()](#module_@the-/facade-scope.createOperationFor..createOperation.init)
-    * [.exec(handler)](#module_@the-/facade-scope.createOperationFor..createOperation.exec) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * [.setEntry(entry)](#module_@the-/facade-scope.createOperationFor..createOperation.setEntry) ⇒ <code>Promise.&lt;undefined&gt;</code>
-
-<a name="module_@the-/facade-scope.createOperationFor..createOperation.init"></a>
-
-##### createOperation.init()
-Init scope
-
-**Kind**: static method of [<code>createOperation</code>](#module_@the-/facade-scope.createOperationFor..createOperation)  
-<a name="module_@the-/facade-scope.createOperationFor..createOperation.exec"></a>
-
-##### createOperation.exec(handler) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Execute creating
-
-**Kind**: static method of [<code>createOperation</code>](#module_@the-/facade-scope.createOperationFor..createOperation)  
-
-| Param | Type |
-| --- | --- |
-| handler | <code>function</code> | 
-
-**Example**  
-```js
-await createOperation.exec(async (values) => {
-  await someCtrl.create(values)
-})
-```
-<a name="module_@the-/facade-scope.createOperationFor..createOperation.setEntry"></a>
-
-##### createOperation.setEntry(entry) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Set entry
-
-**Kind**: static method of [<code>createOperation</code>](#module_@the-/facade-scope.createOperationFor..createOperation)  
-
-| Param | Type |
-| --- | --- |
-| entry | <code>Object</code> | 
-
 <a name="module_@the-/facade-scope.destroyOperationFor"></a>
 
 ### facadeScope.destroyOperationFor(scope) ⇒ <code>Object</code>

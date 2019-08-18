@@ -1,13 +1,13 @@
 'use strict'
 
+const fs = require('fs')
+
 /**
  * @memberof module:@the-/util-file
  * @function statSync
  * @param {string} filename
+ * @returns {*}
  */
-const fs = require('fs')
-
-/** @lends module:@the-/util-file.statSync */
 function statSync(filename) {
   try {
     return fs.statSync(filename)

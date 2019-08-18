@@ -1,3 +1,7 @@
+'use strict'
+
+const { expand, flatten } = require('objnest')
+
 /**
  * Scope access
  * @memberof module:@the-/facade-scope
@@ -5,11 +9,6 @@
  * @param {Object} scope
  * @returns {Object} - Face object for entryAccess access
  */
-'use strict'
-
-const { expand, flatten } = require('objnest')
-
-/** @lends module:@the-/facade-scope.entryAccessFor */
 function entryAccessFor(scope) {
   /**
    * @memberof module:@the-/facade-scope.entryAccessFor

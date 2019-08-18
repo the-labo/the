@@ -8,6 +8,7 @@ const {
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupRedundantArrayPatternOnArrayExpression
+ * @returns {*}
  */
 function cleanupRedundantArrayPatternOnArrayExpression(
   ArrayExpression,

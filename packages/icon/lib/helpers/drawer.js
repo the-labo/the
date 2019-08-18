@@ -1,10 +1,9 @@
+'use strict'
+
 /**
  * @memberof module:@the-/icon.helpers
  * @namespace drawer
  */
-'use strict'
-
-/** @lends module:@the-/icon.helpers.drawer */
 const drawer = {
   drawRect(
     canvas,

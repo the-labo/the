@@ -1,7 +1,7 @@
 {
   "name": "@the-/context",
   "description": "React context for the-components",
-  "version": "16.0.7",
+  "version": "16.0.8",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,8 +18,8 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "engines": {
     "node": ">=10",

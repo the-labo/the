@@ -8,6 +8,7 @@ const {
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupReturnAwaitOnFunctionNode
+ * @returns {*}
  */
 function cleanupReturnAwaitOnFunctionNode(FunctionNode, { get, replace }) {
   if (!FunctionNode.async) {

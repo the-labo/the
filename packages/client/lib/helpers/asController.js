@@ -9,7 +9,6 @@
  * @param {Object} [options={}]
  * @returns Object
  */
-/** @lends asController */
 function asController(instance, spec, context, options = {}) {
   const { onToggleHandler = () => null } = options
   return Object.assign(

@@ -1,16 +1,18 @@
 'use strict'
 
-/**
- * @memberof module:@the-/driver-sequelize.converters
- * @function convertOutbound
- */
 const clayEntity = require('clay-entity')
 const { MetaColumnNames } = require('../constants')
 const { logger } = require('../helpers')
 const serializer = require('../helpers/serializer')
 const parseAttributeName = require('../parsing/parseAttributeName')
 
-/** @lends module:@the-/driver-sequelize.converters.convertOutbound */
+/**
+ * @memberof module:@the-/driver-sequelize.converters
+ * @function convertOutbound
+ * @param values
+ * @param [options={}]
+ * @returns {*}
+ */
 function convertOutbound(values, options = {}) {
   const { ModelName, Schema, resourceName } = options
   const converted = {

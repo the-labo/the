@@ -10,7 +10,6 @@ Assets for the-framework
 
 * [@the-/assets](#module_@the-/assets)
     * [.TheAssets](#module_@the-/assets.TheAssets)
-        * [.installTo(dirname, [options])](#module_@the-/assets.TheAssets+installTo) ⇒ <code>Promise</code>
     * [.helpers](#module_@the-/assets.helpers) : <code>object</code>
         * [.installFiles(srcDir, destDir, [options])](#module_@the-/assets.helpers.installFiles) ⇒ <code>Promise</code>
     * [.create(...args)](#module_@the-/assets.create) ⇒ [<code>TheAssets</code>](#module_@the-/assets.TheAssets)
@@ -20,19 +19,6 @@ Assets for the-framework
 
 ### assets.TheAssets
 **Kind**: static class of [<code>@the-/assets</code>](#module_@the-/assets)  
-<a name="module_@the-/assets.TheAssets+installTo"></a>
-
-#### theAssets.installTo(dirname, [options]) ⇒ <code>Promise</code>
-Install assets into directory
-
-**Kind**: instance method of [<code>TheAssets</code>](#module_@the-/assets.TheAssets)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| dirname | <code>string</code> |  | Directory name install into |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-| [options.copy] | <code>boolean</code> | <code>false</code> | Copy files instead of symlinks |
-
 <a name="module_@the-/assets.helpers"></a>
 
 ### assets.helpers : <code>object</code>

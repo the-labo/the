@@ -10,7 +10,6 @@
  * @example
  *  ['a', 'b', 'a'].filter(uniqueFilter())
  */
-/** @lends module:@the-/util-array.uniqueFilter */
 function uniqueFilter(options = {}) {
   if (arguments.length > 1) {
     throw new Error('[uniqueFilter] Invalid args.')

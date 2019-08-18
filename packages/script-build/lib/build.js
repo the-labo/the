@@ -1,13 +1,5 @@
 'use strict'
 
-/**
- * Build project
- * @memberof module:@the-/script-build
- * @function build
- * @param {string} [dirname=process.cwd()] - Project directory name
- * @param {Object} [options={}] - Optional settings
- * @returns {Promise}
- */
 const argx = require('argx')
 const { existsAsync } = require('asfs')
 const asleep = require('asleep')
@@ -19,7 +11,14 @@ const buildDemo = require('./builders/buildDemo')
 const buildESM = require('./builders/buildESM')
 const buildShim = require('./builders/buildShim')
 
-/** @lends module:@the-/script-build.build */
+/**
+ * Build project
+ * @memberof module:@the-/script-build
+ * @function build
+ * @param {string} [dirname=process.cwd()] - Project directory name
+ * @param {Object} [options={}] - Optional settings
+ * @returns {Promise}
+ */
 async function build(dirname = process.cwd(), options = {}) {
   const args = argx(arguments)
   options = args.pop('object') || {}

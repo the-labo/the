@@ -7,6 +7,9 @@ const applyConverter = require('../helpers/applyConverter')
 /**
  * @memberof module:@the-/code.processors
  * @function processPackageJSON
+ * @param content
+ * @param [options={}]
+ * @returns {*}
  */
 function processPackageJSON(content, options = {}) {
   return applyConverter(

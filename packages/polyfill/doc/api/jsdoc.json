@@ -7,7 +7,7 @@
     "longname": "module:@the-/polyfill",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/polyfill",
@@ -22,7 +22,7 @@
     "memberof": "module:@the-/polyfill",
     "meta": {
       "filename": "ThePolyfill.js",
-      "lineno": 2,
+      "lineno": 8,
       "path": "lib"
     },
     "name": "ThePolyfill",
@@ -36,7 +36,7 @@
     "memberof": "module:@the-/polyfill",
     "meta": {
       "filename": "helpers.js",
-      "lineno": 2,
+      "lineno": 31,
       "path": "lib"
     },
     "name": "helpers",
@@ -51,7 +51,7 @@
     "memberof": "module:@the-/polyfill",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -86,7 +86,7 @@
     "memberof": "module:@the-/polyfill",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",

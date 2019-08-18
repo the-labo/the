@@ -1,16 +1,17 @@
 'use strict'
 
-/**
- * Create driver from env
- * @memberof module:@the-/db
- * @function driverFromEnv
- */
 const mkdirp = require('mkdirp')
 const path = require('path')
 const { isProduction } = require('@the-/check')
 const { toLowerKeys } = require('@the-/util-db')
 
-/** @lends module:@the-/db.driverFromEnv */
+/**
+ * Create driver from env
+ * @memberof module:@the-/db
+ * @function driverFromEnv
+ * @param env
+ * @returns {*}
+ */
 function driverFromEnv(env) {
   const {
     database,

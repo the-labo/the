@@ -8,6 +8,7 @@ const {
  * Cleanup unused function node
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupUnusedOnFunctionArgumentNode
+ * @returns {*}
  */
 function cleanupUnusedArgumentsOnFunctionNode(
   FunctionNode,

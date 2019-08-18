@@ -1,15 +1,19 @@
 'use strict'
 
-/**
- * @memberof module:@the-/scaffold
- * @function render
- */
 const tmplconv = require('tmplconv')
 
 const prefix = '~~~~'
 const suffix = '~~~~'
 
-/** @lends module:@the-/scaffold.render */
+/**
+ * @memberof module:@the-/scaffold
+ * @function render
+ * @param tmpl
+ * @param dest
+ * @param config
+ * @param [options={}]
+ * @returns {Promise<*>}
+ */
 async function render(tmpl, dest, config, options = {}) {
   return tmplconv.render(tmpl, dest, {
     clean: false,

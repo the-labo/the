@@ -5,6 +5,7 @@ const path = require('path')
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupExtOnRequireDeclarationArgumentNode
+ * @returns {*}
  */
 function cleanupExtOnRequireDeclarationArgumentNode(
   ArgumentNode,

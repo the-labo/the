@@ -5,16 +5,12 @@
 ## @the-/queue
 Queue for the-framework
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/queue](#module_@the-/queue)
     * [.TheQueue](#module_@the-/queue.TheQueue)
         * [new TheQueue([options])](#new_module_@the-/queue.TheQueue_new)
-        * [.push(task)](#module_@the-/queue.TheQueue+push)
-        * [.start()](#module_@the-/queue.TheQueue+start)
-        * [.stop()](#module_@the-/queue.TheQueue+stop)
-        * [.wait([options])](#module_@the-/queue.TheQueue+wait) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.create(...args)](#module_@the-/queue.create) ⇒ <code>TheQueue</code>
     * [.default()](#module_@the-/queue.default)
 
@@ -22,14 +18,6 @@ Queue for the-framework
 
 ### queue.TheQueue
 **Kind**: static class of [<code>@the-/queue</code>](#module_@the-/queue)  
-
-* [.TheQueue](#module_@the-/queue.TheQueue)
-    * [new TheQueue([options])](#new_module_@the-/queue.TheQueue_new)
-    * [.push(task)](#module_@the-/queue.TheQueue+push)
-    * [.start()](#module_@the-/queue.TheQueue+start)
-    * [.stop()](#module_@the-/queue.TheQueue+stop)
-    * [.wait([options])](#module_@the-/queue.TheQueue+wait) ⇒ <code>Promise.&lt;undefined&gt;</code>
-
 <a name="new_module_@the-/queue.TheQueue_new"></a>
 
 #### new TheQueue([options])
@@ -40,41 +28,6 @@ Queue for the-framework
 | [options.autoStart] | <code>boolean</code> |  | Auto start |
 | [options.max] | <code>number</code> | <code>1000</code> |  |
 | [options.name] | <code>string</code> |  |  |
-
-<a name="module_@the-/queue.TheQueue+push"></a>
-
-#### theQueue.push(task)
-Push next task
-
-**Kind**: instance method of [<code>TheQueue</code>](#module_@the-/queue.TheQueue)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| task | <code>function</code> | Task to execute |
-
-<a name="module_@the-/queue.TheQueue+start"></a>
-
-#### theQueue.start()
-Start queue
-
-**Kind**: instance method of [<code>TheQueue</code>](#module_@the-/queue.TheQueue)  
-<a name="module_@the-/queue.TheQueue+stop"></a>
-
-#### theQueue.stop()
-Stop queue
-
-**Kind**: instance method of [<code>TheQueue</code>](#module_@the-/queue.TheQueue)  
-<a name="module_@the-/queue.TheQueue+wait"></a>
-
-#### theQueue.wait([options]) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Wait until queue got empty
-
-**Kind**: instance method of [<code>TheQueue</code>](#module_@the-/queue.TheQueue)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-| [options.timeout] | <code>number</code> | <code>60*1000</code> | Timeout duration |
 
 <a name="module_@the-/queue.create"></a>
 

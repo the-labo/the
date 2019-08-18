@@ -44,7 +44,7 @@ Default exports
 ## @the-/facebook
 Facebook utility for the-framework
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 <a name="TheFacebook"></a>
 

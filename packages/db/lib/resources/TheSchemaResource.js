@@ -1,15 +1,14 @@
 'use strict'
 
+const {
+  DataTypes: { DATE, STRING },
+} = require('@the-/resource')
+
 /**
  * Resource to manage schema
  * @memberof module:@the-/db
  * @class TheSchemaResource
  */
-const {
-  DataTypes: { DATE, STRING },
-} = require('@the-/resource')
-
-/** @lends module:@the-/db.TheSchemaResource */
 const TheSchemaResource = ({ define }) => {
   const TheSchema = define({
     createdAt: {

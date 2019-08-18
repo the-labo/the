@@ -1,5 +1,10 @@
 'use strict'
 
+const { get } = require('@the-/window')
+const ScopedState = require('./ScopedState')
+const ActionTypes = require('../constants/ActionTypes')
+const { createReduxStore, getReduxDevtool } = require('../helpers/reduxHelper')
+
 /**
  * State works as root
  * @memberof module:@the-/state.state
@@ -8,12 +13,6 @@
  * @param {Object} [options={}] - Optional settings
  * @param {Object} [options.defaults={}] - Default values
  */
-const { get } = require('@the-/window')
-const ScopedState = require('./ScopedState')
-const ActionTypes = require('../constants/ActionTypes')
-const { createReduxStore, getReduxDevtool } = require('../helpers/reduxHelper')
-
-/** @lends module:@the-/state.state.RootState */
 class RootState extends ScopedState {
   static reduceStoreAction(state = {}, action) {
     switch (action.type) {

@@ -11,6 +11,7 @@ const compareStart = (a, b) => a.start - b.start
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function mergeDuplicateImportOnProgramNode
+ * @returns {*}
  */
 function mergeDuplicateImportOnProgramNode(programNode, { get, replace }) {
   const ImportDeclarations = finder.findByTypes(programNode, [

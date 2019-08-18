@@ -11,8 +11,6 @@ Lint of the-frameworks
 * [@the-/lint](#module_@the-/lint)
     * [.TheLint](#module_@the-/lint.TheLint)
         * [new TheLint()](#new_module_@the-/lint.TheLint_new)
-        * [.add(pattern, checker)](#module_@the-/lint.TheLint+add)
-        * [.run()](#module_@the-/lint.TheLint+run) ⇒ <code>Promise.&lt;Object.&lt;string, Array&gt;&gt;</code>
     * [.helpers](#module_@the-/lint.helpers) : <code>object</code>
         * [.LintCache](#module_@the-/lint.helpers.LintCache)
     * [.rules](#module_@the-/lint.rules) : <code>object</code>
@@ -32,35 +30,11 @@ Lint of the-frameworks
 
 ### lint.TheLint
 **Kind**: static class of [<code>@the-/lint</code>](#module_@the-/lint)  
-
-* [.TheLint](#module_@the-/lint.TheLint)
-    * [new TheLint()](#new_module_@the-/lint.TheLint_new)
-    * [.add(pattern, checker)](#module_@the-/lint.TheLint+add)
-    * [.run()](#module_@the-/lint.TheLint+run) ⇒ <code>Promise.&lt;Object.&lt;string, Array&gt;&gt;</code>
-
 <a name="new_module_@the-/lint.TheLint_new"></a>
 
 #### new TheLint()
 Lint runner
 
-<a name="module_@the-/lint.TheLint+add"></a>
-
-#### theLint.add(pattern, checker)
-Add checker
-
-**Kind**: instance method of [<code>TheLint</code>](#module_@the-/lint.TheLint)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| pattern | <code>string</code> | Target filename patter |
-| checker | <code>function</code> | Lint checker |
-
-<a name="module_@the-/lint.TheLint+run"></a>
-
-#### theLint.run() ⇒ <code>Promise.&lt;Object.&lt;string, Array&gt;&gt;</code>
-Run all checkers
-
-**Kind**: instance method of [<code>TheLint</code>](#module_@the-/lint.TheLint)  
 <a name="module_@the-/lint.helpers"></a>
 
 ### lint.helpers : <code>object</code>

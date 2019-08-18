@@ -1,5 +1,11 @@
 'use strict'
 
+const clayId = require('clay-id')
+const Sequelize = require('sequelize')
+const defineModelColumn = require('./defineModelColumn')
+const MetaColumnNames = require('../constants/MetaColumnNames')
+const parseAttributeName = require('../parsing/parseAttributeName')
+
 /**
  * Parse schema
  * @memberof module:@the-/driver-sequelize.modeling
@@ -7,13 +13,6 @@
  * @param {Object}
  * @returns {Object}
  */
-const clayId = require('clay-id')
-const Sequelize = require('sequelize')
-const defineModelColumn = require('./defineModelColumn')
-const MetaColumnNames = require('../constants/MetaColumnNames')
-const parseAttributeName = require('../parsing/parseAttributeName')
-
-/** @lends module:@the-/driver-sequelize.modeling.defineModel */
 function defineModel(sequelize, resourceName, schema) {
   const attributes = {
     [MetaColumnNames.$$at]: {

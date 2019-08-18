@@ -1,5 +1,7 @@
 'use strict'
 
+const { rotate } = require('acolor')
+
 /**
  * Get rotated colors for color
  * @memberof module:@the-/util-color
@@ -9,9 +11,6 @@
  * @param {number} [options.count=12] - Count of colors
  * @returns {string[]} Colors
  */
-const { rotate } = require('acolor')
-
-/** @lends module:@the-/util-color.rotatedColorsFor */
 function rotatedColorsFor(base = '#38E', options = {}) {
   const { count = 12 } = options
   return new Array(count)

@@ -3,6 +3,7 @@
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function cleanupRedundantAliasOnObjectPatternNode
+ * @returns {*}
  */
 function cleanupRedundantAliasOnObjectPatternNode(ObjectPattern, { replace }) {
   const { properties } = ObjectPattern

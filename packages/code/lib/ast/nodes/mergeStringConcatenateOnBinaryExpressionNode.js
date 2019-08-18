@@ -3,6 +3,7 @@
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function mergeStringConcatenateOnBinaryExpressionNode
+ * @returns {*}
  */
 function mergeStringConcatenateOnBinaryExpressionNode(
   BinaryExpression,

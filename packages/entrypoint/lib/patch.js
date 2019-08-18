@@ -1,15 +1,14 @@
 'use strict'
 
+const { isFirefox, isiOS, unlessProduction } = require('@the-/check')
+const { get } = require('@the-/window')
+const createStyleElement = require('./helpers/createStyleElement')
+
 /**
  * Apply patch
  * @memberof module:@the-/entrypoint
  * @function patch
  */
-const { isFirefox, isiOS, unlessProduction } = require('@the-/check')
-const { get } = require('@the-/window')
-const createStyleElement = require('./helpers/createStyleElement')
-
-/** @lends module:@the-/entrypoint.patch */
 function patch() {
   if (isFirefox()) {
     patch.firefox()

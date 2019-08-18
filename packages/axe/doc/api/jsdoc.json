@@ -13,7 +13,7 @@
     "name": "@the-/axe",
     "order": 2,
     "typicalname": "axe",
-    "version": "15.6.4"
+    "version": "15.6.5"
   },
   {
     "description": "Create instance",
@@ -47,7 +47,7 @@
     "memberof": "module:@the-/axe",
     "meta": {
       "filename": "Logger.js",
-      "lineno": 1,
+      "lineno": 15,
       "path": "lib"
     },
     "name": "Logger",
@@ -91,7 +91,7 @@
     "memberof": "module:@the-/axe",
     "meta": {
       "filename": "create.js",
-      "lineno": 3,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",

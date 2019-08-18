@@ -7,13 +7,13 @@
     "longname": "module:@the-/driver-mongo",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/driver-mongo",
     "order": 1,
     "typicalname": "driverMongo",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "description": "Driver for mongo db",
@@ -35,7 +35,7 @@
     "memberof": "module:@the-/driver-mongo",
     "meta": {
       "filename": "MongoDriver.js",
-      "lineno": 2,
+      "lineno": 29,
       "path": "lib"
     },
     "name": "MongoDriver",
@@ -50,7 +50,7 @@
     "memberof": "module:@the-/driver-mongo",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/mixins"
     },
     "name": "mixins",
@@ -65,7 +65,7 @@
     "memberof": "module:@the-/driver-mongo",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -100,11 +100,25 @@
     "memberof": "module:@the-/driver-mongo.mixins",
     "meta": {
       "filename": "mongoMix.js",
-      "lineno": 2,
+      "lineno": 8,
       "path": "lib/mixins"
     },
     "name": "mongoMix",
     "order": 5,
+    "params": [
+      {
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   }
 ]

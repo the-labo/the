@@ -14,6 +14,9 @@ const contentAccess = require('../helpers/contentAccess')
  * Process declarations
  * @memberof module:@the-/code.processors
  * @function processJSDeclaration
+ * @param content
+ * @param [options={}]
+ * @returns {*}
  */
 function processJSDeclaration(content, options = {}) {
   return applyConverter(

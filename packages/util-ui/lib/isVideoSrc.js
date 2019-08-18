@@ -1,5 +1,10 @@
 'use strict'
 
+const { get } = require('bwindow')
+const videoExtensions = require('video-extensions')
+
+const videoExtNames = [...videoExtensions]
+
 /**
  * Detect src url is video or not
  * @memberof module:@the-/util-ui
@@ -7,12 +12,6 @@
  * @param {string} src - Url to detect
  * @returns {boolean} Video or not
  */
-const { get } = require('bwindow')
-const videoExtensions = require('video-extensions')
-
-const videoExtNames = [...videoExtensions]
-
-/** @lends module:@the-/util-ui.isVideoSrc */
 function isVideoSrc(src) {
   const { pathname } = new URL(
     src || '',

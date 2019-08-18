@@ -9,6 +9,7 @@ const {
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function sortMethodsOnClassNode
+ * @returns {*}
  */
 function sortMethodsOnClassNode(ClassNode, { swap }) {
   const ClassMethods = [

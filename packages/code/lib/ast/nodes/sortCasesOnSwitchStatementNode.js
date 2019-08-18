@@ -5,6 +5,7 @@ const { compareStrings } = require('../../helpers/arrayHelper')
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function sortCasesOnSwitchStatementNode
+ * @returns {*}
  */
 function sortCasesOnSwitchStatementNode(SwitchStatement, { swap }) {
   const Cases = [...SwitchStatement.cases]

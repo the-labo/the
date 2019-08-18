@@ -1,13 +1,13 @@
 'use strict'
 
+const TheResource = require('./TheResource')
+
 /**
  * @memberof module:@the-/resource
  * @function isResourceClass
+ * @param Class
  * @returns {boolean}
  */
-const TheResource = require('./TheResource')
-
-/** @lends module:@the-/resource.isResourceClass */
 function isResourceClass(Class) {
   const hitByClass =
     Class.prototype instanceof TheResource || Class === TheResource

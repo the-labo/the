@@ -1,5 +1,9 @@
 'use strict'
 
+const State = require('./State')
+
+const NAME_SEPARATE_PATTERN = /\./
+
 /**
  * State works as scope
  * @memberof module:@the-/state.state
@@ -7,11 +11,6 @@
  * @augments module:@the-/state.state.State
  * @param {string} name - Name of scope
  */
-const State = require('./State')
-
-const NAME_SEPARATE_PATTERN = /\./
-
-/** @lends module:@the-/state.state.ScopedState */
 class ScopedState extends State {
   constructor(name, options = {}) {
     super()

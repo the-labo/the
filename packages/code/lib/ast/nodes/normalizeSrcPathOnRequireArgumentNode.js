@@ -7,6 +7,7 @@ const isRelative = (filename) => /^\.\/|^\.\./.test(filename)
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function normalizeSrcPathOnRequireArgumentNode
+ * @returns {*}
  */
 function normalizeSrcPathOnRequireArgumentNode(
   ArgumentNode,

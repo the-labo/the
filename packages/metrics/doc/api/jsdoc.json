@@ -56,13 +56,13 @@
   },
   {
     "description": "Bind class method call counter",
-    "id": "module:@the-/metrics.TheMetrics#bindClassMethodCallCounter",
+    "id": "TheMetrics#bindClassMethodCallCounter",
     "kind": "function",
-    "longname": "module:@the-/metrics.TheMetrics#bindClassMethodCallCounter",
-    "memberof": "module:@the-/metrics.TheMetrics",
+    "longname": "TheMetrics#bindClassMethodCallCounter",
+    "memberof": "TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 38,
+      "lineno": 37,
       "path": "lib"
     },
     "name": "bindClassMethodCallCounter",
@@ -90,13 +90,13 @@
   },
   {
     "deprecated": true,
-    "id": "module:@the-/metrics.TheMetrics#bindMethodCallCounter",
+    "id": "TheMetrics#bindMethodCallCounter",
     "kind": "function",
-    "longname": "module:@the-/metrics.TheMetrics#bindMethodCallCounter",
-    "memberof": "module:@the-/metrics.TheMetrics",
+    "longname": "TheMetrics#bindMethodCallCounter",
+    "memberof": "TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 64,
+      "lineno": 63,
       "path": "lib"
     },
     "name": "bindMethodCallCounter",
@@ -106,13 +106,13 @@
   },
   {
     "description": "Bind object method call counter",
-    "id": "module:@the-/metrics.TheMetrics#bindObjectMethodCallCounter",
+    "id": "TheMetrics#bindObjectMethodCallCounter",
     "kind": "function",
-    "longname": "module:@the-/metrics.TheMetrics#bindObjectMethodCallCounter",
-    "memberof": "module:@the-/metrics.TheMetrics",
+    "longname": "TheMetrics#bindObjectMethodCallCounter",
+    "memberof": "TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 72,
+      "lineno": 71,
       "path": "lib"
     },
     "name": "bindObjectMethodCallCounter",
@@ -140,13 +140,13 @@
   },
   {
     "description": "Flush metrics data",
-    "id": "module:@the-/metrics.TheMetrics#flush",
+    "id": "TheMetrics#flush",
     "kind": "function",
-    "longname": "module:@the-/metrics.TheMetrics#flush",
-    "memberof": "module:@the-/metrics.TheMetrics",
+    "longname": "TheMetrics#flush",
+    "memberof": "TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 92,
+      "lineno": 91,
       "path": "lib"
     },
     "name": "flush",
@@ -156,10 +156,10 @@
   },
   {
     "description": "Start measuring",
-    "id": "module:@the-/metrics.TheMetrics#start",
+    "id": "TheMetrics#start",
     "kind": "function",
-    "longname": "module:@the-/metrics.TheMetrics#start",
-    "memberof": "module:@the-/metrics.TheMetrics",
+    "longname": "TheMetrics#start",
+    "memberof": "TheMetrics",
     "meta": {
       "filename": "TheMetrics.js",
       "lineno": 114,
@@ -177,7 +177,7 @@
     "memberof": "module:@the-/metrics",
     "meta": {
       "filename": "TheMetrics.js",
-      "lineno": 3,
+      "lineno": 8,
       "path": "lib"
     },
     "name": "TheMetrics",
@@ -194,7 +194,7 @@
     "memberof": "module:@the-/metrics.counters",
     "meta": {
       "filename": "ClassMethodCallCounter.js",
-      "lineno": 3,
+      "lineno": 5,
       "path": "lib/counters"
     },
     "name": "ClassMethodCallCounter",
@@ -226,7 +226,7 @@
     "memberof": "module:@the-/metrics.counters",
     "meta": {
       "filename": "ObjectMethodCallCounter.js",
-      "lineno": 3,
+      "lineno": 5,
       "path": "lib/counters"
     },
     "name": "ObjectMethodCallCounter",
@@ -256,7 +256,7 @@
     "memberof": "module:@the-/metrics",
     "meta": {
       "filename": "create.js",
-      "lineno": 3,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",

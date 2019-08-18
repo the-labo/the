@@ -12,6 +12,7 @@ const normalizeKindOnVariableDeclarationNode = require('./normalizeKindOnVariabl
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function normalizeVariableDeclaratorOnStatementNode
+ * @returns {*}
  */
 function normalizeVariableDeclaratorOnStatementNode(
   Statement,

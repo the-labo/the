@@ -323,7 +323,7 @@ function hoge({ x }) { }
   })
 
   it('Bugfix', async () => {
-    console.log(
+    ok(
       await processJSDoc(`
 /**
  * @memberof module:pon-demo-site/server.db.resources.RoomResource
@@ -332,6 +332,28 @@ function hoge({ x }) { }
  */
 class TheRoomResourceEntity extends ResourceEntity {}
 `),
+    )
+  })
+
+  it('Complete jsdoc with object pattern param', async () => {
+    equal(
+      await processJSDoc(`
+/**
+ * @function x
+ *
+ */
+function x(a={}, b=[]){
+}
+    `),
+      `
+/**
+ * @function x
+ * @param [a={}]
+ * @param [b=[]]
+ */
+function x(a={}, b=[]){
+}
+    `,
     )
   })
 })

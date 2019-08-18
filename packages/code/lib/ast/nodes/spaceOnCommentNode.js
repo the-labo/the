@@ -5,6 +5,9 @@ const { EOL } = require('os')
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function spaceOnCommentNode
+ * @param CommentNode
+ * @param [options={}]
+ * @returns {*}
  */
 function spaceOnCommentNode(CommentNode, options = {}) {
   const { SEPARATOR, content, replace } = options

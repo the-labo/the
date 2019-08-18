@@ -3,8 +3,8 @@
 /**
  * Abstract state class
  * @memberof module:@the-/scope
- * @abstract
  * @class TheScope
+ * @abstract
  * @param {string} name - Name of state
  * @param {Object} config - TheScope config
  */

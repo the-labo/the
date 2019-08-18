@@ -1,5 +1,7 @@
 'use strict'
 
+const { get } = require('@the-/window')
+
 /**
  * @memberof module:@the-/media
  * @class TheMedia
@@ -7,9 +9,6 @@
  * @param {Object|boolean} [options.video] - Video constraint
  * @param {Object|boolean} [options.audio] - Audio constraint
  */
-const { get } = require('@the-/window')
-
-/** @lends module:@the-/media.TheMedia */
 class TheMedia {
   static async applyTrackConstraints(track, constraint) {
     switch (typeof constraint) {

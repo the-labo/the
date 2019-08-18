@@ -68,6 +68,7 @@ const _weightProperty = ({ async: async_, computed, key, kind, method }) => {
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function sortPropertiesOnObjectNode
+ * @returns {*}
  */
 function sortPropertiesOnObjectNode(obj, { get, swap }) {
   const { properties } = obj

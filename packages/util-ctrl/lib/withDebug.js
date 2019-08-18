@@ -1,5 +1,11 @@
 'use strict'
 
+const { cleanup } = require('asobj')
+const Debug = require('debug')
+const { inspect } = require('util')
+const { isProduction } = require('@the-/check')
+const { omitLongString } = require('./helpers')
+
 /**
  * Wrap controller with debug
  * @memberof module:@the-/util-ctrl
@@ -7,13 +13,6 @@
  * @param {Object} ctrl
  * @returns {Object} Wrapped ctrl
  */
-const { cleanup } = require('asobj')
-const Debug = require('debug')
-const { inspect } = require('util')
-const { isProduction } = require('@the-/check')
-const { omitLongString } = require('./helpers')
-
-/** @lends module:@the-/util-ctrl.withDebug */
 function withDebug(ctrl, options = {}) {
   const {
     contextFilter = ({ client }) => client,

@@ -1,8 +1,3 @@
-/**
- * Style for the-alt
- * @memberof module:@the-/ui-alt
- * @class TheAltStyle
- */
 'use strict'
 
 import c from 'classnames'
@@ -12,7 +7,11 @@ import { ThemeValues } from '@the-/const-ui'
 import { TheStyle } from '@the-/ui-style'
 import { asStyleData } from '@the-/util-ui'
 
-/** @lends module:@the-/ui-alt.TheAltStyle */
+/**
+ * Style for the-alt
+ * @memberof module:@the-/ui-alt
+ * @class TheAltStyle
+ */
 const TheAltStyle = ({ className, id, options }) => (
   <TheStyle
     className={c('the-alt-style', className)}

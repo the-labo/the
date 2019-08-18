@@ -1,11 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/db
- * @function refreshMix
- * @param {function()} Class
- * @returns {function()} Mixed Class
- */
 const asleep = require('asleep')
 const { parse: parseEntityRef } = require('clay-resource-ref')
 const { unlessProduction } = require('@the-/check')
@@ -18,7 +12,12 @@ const assertIsRef = (ref) => {
   }
 }
 
-/** @lends module:@the-/db.refreshMix */
+/**
+ * @memberof module:@the-/db
+ * @function refreshMix
+ * @param {function()} Class
+ * @returns {function()} Mixed Class
+ */
 function refreshMix(Class) {
   /**
    * @memberof module:@the-/db.refreshMix

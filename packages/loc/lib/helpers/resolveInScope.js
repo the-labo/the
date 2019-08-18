@@ -2,13 +2,12 @@
 
 /**
  * Resolve value in a scope
+ * @memberof module:@the-/loc.helpers
  * @function resolveInScope
- * @param {Object} data
  * @param {string} keypath
+ * @param {Object} data
  * @private
- * @memberOf module:@the-/loc.helpers
- */
-/** @lends resolveInScope */
+ * @returns {*} */
 function resolveInScope(scope, keypath) {
   let data = scope
   for (const key of keypath.split(/\./g)) {

@@ -1,13 +1,6 @@
 'use strict'
 
 /**
- * withBusy mixin
- * @memberof module:@the-/mixin-scene
- * @function withBusy
- * @param {function()} Class - Class to mix
- * @returns {function()} Mixed class
- */
-/**
  * @memberof module:@the-/mixin-scene.withBusy
  * @class WithBusyMixed
  * @inner
@@ -17,7 +10,13 @@ const asClassMixin = require('./helpers/asClassMixin')
 const asMethodWrap = require('./helpers/asMethodWrap')
 const injectProperties = require('./helpers/injectProperties')
 
-/** @lends module:@the-/mixin-scene.withBusy */
+/**
+ * withBusy mixin
+ * @memberof module:@the-/mixin-scene
+ * @function withBusy
+ * @param {function()} Class - Class to mix
+ * @returns {function()} Mixed class
+ */
 const withBusy = asClassMixin((Class) => {
   injectProperties(
     Class,

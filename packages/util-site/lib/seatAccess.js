@@ -5,9 +5,9 @@
  * @memberof module:@the-/util-site
  * @function seatAccess
  * @deprecated Use `the-seat/handy/seatAccess` instead
+ * @param seat
  * @returns {Object}
  */
-/** @lends module:@the-/util-site.seatAccess */
 function seatAccess(seat) {
   /**
    * @memberof module:@the-/util-site.seatAccess

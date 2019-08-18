@@ -1,5 +1,7 @@
 'use strict'
 
+const TheIcon = require('./TheIcon')
+
 /**
  * Create a Icon instance
  * @memberof module:@the-/icon
@@ -7,9 +9,6 @@
  * @param {...*} args
  * @returns {Icon}
  */
-const TheIcon = require('./TheIcon')
-
-/** @lends module:@the-/icon.create */
 function create(...args) {
   return new TheIcon(...args)
 }

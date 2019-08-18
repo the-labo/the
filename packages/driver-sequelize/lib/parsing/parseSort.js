@@ -1,16 +1,18 @@
 'use strict'
 
-/**
- * @memberof module:@the-/driver-sequelize.parsing
- * @function parseSort
- */
 const parseAttributeName = require('./parseAttributeName')
 const { MetaColumnNamesReversed } = require('../constants')
 const { logger } = require('../helpers')
 
 const SORT_DEST_PREFIX = /^-/
 
-/** @lends module:@the-/driver-sequelize.parsing.parseSort */
+/**
+ * @memberof module:@the-/driver-sequelize.parsing
+ * @function parseSort
+ * @param sort
+ * @param options
+ * @returns {*}
+ */
 function parseSort(sort, options) {
   const { ModelAttributes = {}, ModelName } = options
   return []

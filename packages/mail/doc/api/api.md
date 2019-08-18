@@ -20,17 +20,16 @@
 ## @the-/mail
 Mail client for the-framework
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/mail](#module_@the-/mail)
     * [.TheMail](#module_@the-/mail.TheMail)
-        * [.send(config)](#module_@the-/mail.TheMail+send) ⇒ <code>Promise</code>
     * [.helpers](#module_@the-/mail.helpers) : <code>object</code>
     * [.sending](#module_@the-/mail.sending) : <code>object</code>
         * [.sendMock()](#module_@the-/mail.sending.sendMock)
-        * [.sendSendgrid()](#module_@the-/mail.sending.sendSendgrid)
-        * [.sendSMTP()](#module_@the-/mail.sending.sendSMTP)
+        * [.sendSendgrid()](#module_@the-/mail.sending.sendSendgrid) ⇒ <code>Promise.&lt;\*&gt;</code>
+        * [.sendSMTP()](#module_@the-/mail.sending.sendSMTP) ⇒ <code>Promise.&lt;\*&gt;</code>
     * [.create(...args)](#module_@the-/mail.create) ⇒ <code>TheMail</code>
     * [.default()](#module_@the-/mail.default)
 
@@ -38,21 +37,6 @@ Mail client for the-framework
 
 ### mail.TheMail
 **Kind**: static class of [<code>@the-/mail</code>](#module_@the-/mail)  
-<a name="module_@the-/mail.TheMail+send"></a>
-
-#### theMail.send(config) ⇒ <code>Promise</code>
-Send mail
-
-**Kind**: instance method of [<code>TheMail</code>](#module_@the-/mail.TheMail)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| config | <code>Object</code> |  |
-| config.from | <code>string</code> | From address |
-| config.to | <code>string</code> | To address |
-| config.subject | <code>string</code> | Mail subject |
-| config.content | <code>string</code> | Mail content |
-
 <a name="module_@the-/mail.helpers"></a>
 
 ### mail.helpers : <code>object</code>
@@ -70,8 +54,8 @@ Sending functions
 
 * [.sending](#module_@the-/mail.sending) : <code>object</code>
     * [.sendMock()](#module_@the-/mail.sending.sendMock)
-    * [.sendSendgrid()](#module_@the-/mail.sending.sendSendgrid)
-    * [.sendSMTP()](#module_@the-/mail.sending.sendSMTP)
+    * [.sendSendgrid()](#module_@the-/mail.sending.sendSendgrid) ⇒ <code>Promise.&lt;\*&gt;</code>
+    * [.sendSMTP()](#module_@the-/mail.sending.sendSMTP) ⇒ <code>Promise.&lt;\*&gt;</code>
 
 <a name="module_@the-/mail.sending.sendMock"></a>
 
@@ -79,11 +63,11 @@ Sending functions
 **Kind**: static method of [<code>sending</code>](#module_@the-/mail.sending)  
 <a name="module_@the-/mail.sending.sendSendgrid"></a>
 
-#### sending.sendSendgrid()
+#### sending.sendSendgrid() ⇒ <code>Promise.&lt;\*&gt;</code>
 **Kind**: static method of [<code>sending</code>](#module_@the-/mail.sending)  
 <a name="module_@the-/mail.sending.sendSMTP"></a>
 
-#### sending.sendSMTP()
+#### sending.sendSMTP() ⇒ <code>Promise.&lt;\*&gt;</code>
 **Kind**: static method of [<code>sending</code>](#module_@the-/mail.sending)  
 <a name="module_@the-/mail.create"></a>
 

@@ -1,14 +1,13 @@
 'use strict'
 
+const debug = require('debug')('the:db:cascade')
+
 /**
  * @memberof module:@the-/db
  * @function cascadeMix
  * @param {function()} Class
  * @returns {function()} Mixed Class
  */
-const debug = require('debug')('the:db:cascade')
-
-/** @lends module:@the-/db.cascadeMix */
 function cascadeMix(Class) {
   /**
    * @memberof module:@the-/db.cascadeMix

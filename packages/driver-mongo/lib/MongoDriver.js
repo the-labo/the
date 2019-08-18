@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * Driver for mongo db
- * @memberof module:@the-/driver-mongo
- * @class MongoDriver
- * @augments Driver
- * @inheritdoc
- */
 const asleep = require('asleep')
 const clayCollection = require('clay-collection')
 const { Driver } = require('clay-driver-base')
@@ -33,7 +26,13 @@ const MongoDriverBase = [m.mongoMix].reduce(
   Driver,
 )
 
-/** @lends module:@the-/driver-mongo.MongoDriver */
+/**
+ * Driver for mongo db
+ * @memberof module:@the-/driver-mongo
+ * @class MongoDriver
+ * @augments Driver
+ * @inheritdoc
+ */
 class MongoDriver extends MongoDriverBase {
   constructor(config) {
     super()

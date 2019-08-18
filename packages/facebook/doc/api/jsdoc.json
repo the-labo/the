@@ -6,7 +6,7 @@
     "longname": "module:default",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
@@ -20,13 +20,13 @@
     "longname": "module:@the-/facebook",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/facebook",
     "order": 3,
     "typicalname": "facebook",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "id": "TheFacebook",
@@ -34,7 +34,7 @@
     "longname": "TheFacebook",
     "meta": {
       "filename": "TheFacebook.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "TheFacebook",
@@ -48,7 +48,7 @@
     "longname": "Constants",
     "meta": {
       "filename": "Constants.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "Constants",
@@ -62,7 +62,7 @@
     "longname": "create",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "create",

@@ -1,5 +1,7 @@
 'use strict'
 
+const asleep = require('asleep')
+
 /**
  * @memberof module:@the-/queue
  * @class TheQueue
@@ -8,9 +10,6 @@
  * @param {number} [options.max=1000]
  * @param {string} [options.name]
  */
-const asleep = require('asleep')
-
-/** @lends module:@the-/queue.TheQueue */
 class TheQueue {
   constructor(options = {}) {
     const { autoStart = false, max = 1000, name = '(anonymous)' } = options

@@ -7,7 +7,6 @@
  * @param {Function} BaseClass
  * @returns {Function}
  */
-/** @lends module:@the-/store.toStoreScopeClass */
 function toStoreScopeClass(BaseClass, config = {}) {
   const { dispatch, initialState, load, name, reducerFactories } = config
 

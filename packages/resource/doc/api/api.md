@@ -5,22 +5,13 @@
 ## @the-/resource
 Base of the-resource
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/resource](#module_@the-/resource)
+    * [.TheResourceBase](#module_@the-/resource.TheResourceBase)
     * [.TheResource](#module_@the-/resource.TheResource) ⇐ <code>TheResourceBase</code>
         * [new TheResource()](#new_module_@the-/resource.TheResource_new)
-        * _instance_
-            * [.refOf(id)](#module_@the-/resource.TheResource+refOf) ⇒ <code>string</code> \| <code>Object</code>
-            * [.emptyList()](#module_@the-/resource.TheResource+emptyList) ⇒ <code>Promise.&lt;Object&gt;</code>
-            * [.invalidated(attributes)](#module_@the-/resource.TheResource+invalidated) ⇒ <code>Promise.&lt;Object&gt;</code>
-            * [.refresh(entity)](#module_@the-/resource.TheResource+refresh) ⇒ <code>Promise.&lt;undefined&gt;</code>
-            * [.refreshAll()](#module_@the-/resource.TheResource+refreshAll) ⇒ <code>Promise.&lt;undefined&gt;</code>
-            * [.resaveAll()](#module_@the-/resource.TheResource+resaveAll) ⇒ <code>Promise.&lt;undefined&gt;</code>
-        * _static_
-            * [.cascaded](#module_@the-/resource.TheResource.cascaded)
-    * [.TheResourceBase](#module_@the-/resource.TheResourceBase)
     * [.DataTypes](#module_@the-/resource.DataTypes) : <code>object</code>
     * [.mixins](#module_@the-/resource.mixins) : <code>object</code>
         * [.listenMix(Class)](#module_@the-/resource.mixins.listenMix) ⇒ <code>function</code>
@@ -31,101 +22,23 @@ Base of the-resource
             * [~WriteOnce](#module_@the-/resource.mixins.writeOnceMix..WriteOnce)
     * [.create(...args)](#module_@the-/resource.create) ⇒ <code>TheResource</code>
     * [.default()](#module_@the-/resource.default)
-    * [.isResourceClass()](#module_@the-/resource.isResourceClass) ⇒ <code>boolean</code>
+    * [.isResourceClass(Class)](#module_@the-/resource.isResourceClass) ⇒ <code>boolean</code>
 
-<a name="module_@the-/resource.TheResource"></a>
-
-### resource.TheResource ⇐ <code>TheResourceBase</code>
-**Kind**: static class of [<code>@the-/resource</code>](#module_@the-/resource)  
-**Extends**: <code>TheResourceBase</code>, <code>ClayResource</code>, <code>module:@the-/resource.mixins.ListenMix~ListenMixed</code>, [<code>QueueMixed</code>](#module_@the-/resource.mixins.queueMix..QueueMixed), <code>module:@the-/resource.mixins.writeOnceMix~WriteOnceMixed</code>  
-
-* [.TheResource](#module_@the-/resource.TheResource) ⇐ <code>TheResourceBase</code>
-    * [new TheResource()](#new_module_@the-/resource.TheResource_new)
-    * _instance_
-        * [.refOf(id)](#module_@the-/resource.TheResource+refOf) ⇒ <code>string</code> \| <code>Object</code>
-        * [.emptyList()](#module_@the-/resource.TheResource+emptyList) ⇒ <code>Promise.&lt;Object&gt;</code>
-        * [.invalidated(attributes)](#module_@the-/resource.TheResource+invalidated) ⇒ <code>Promise.&lt;Object&gt;</code>
-        * [.refresh(entity)](#module_@the-/resource.TheResource+refresh) ⇒ <code>Promise.&lt;undefined&gt;</code>
-        * [.refreshAll()](#module_@the-/resource.TheResource+refreshAll) ⇒ <code>Promise.&lt;undefined&gt;</code>
-        * [.resaveAll()](#module_@the-/resource.TheResource+resaveAll) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * _static_
-        * [.cascaded](#module_@the-/resource.TheResource.cascaded)
-
-<a name="new_module_@the-/resource.TheResource_new"></a>
-
-#### new TheResource()
-Resource for the DB
-
-<a name="module_@the-/resource.TheResource+refOf"></a>
-
-#### theResource.refOf(id) ⇒ <code>string</code> \| <code>Object</code>
-Get ref of id
-
-**Kind**: instance method of [<code>TheResource</code>](#module_@the-/resource.TheResource)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| id | <code>string</code> \| <code>Object</code> | Id (or may be an entity) |
-
-<a name="module_@the-/resource.TheResource+emptyList"></a>
-
-#### theResource.emptyList() ⇒ <code>Promise.&lt;Object&gt;</code>
-Create empty list
-
-**Kind**: instance method of [<code>TheResource</code>](#module_@the-/resource.TheResource)  
-<a name="module_@the-/resource.TheResource+invalidated"></a>
-
-#### theResource.invalidated(attributes) ⇒ <code>Promise.&lt;Object&gt;</code>
-Get invalidated attributes
-
-**Kind**: instance method of [<code>TheResource</code>](#module_@the-/resource.TheResource)  
-
-| Param | Type |
-| --- | --- |
-| attributes | <code>Object</code> | 
-
-<a name="module_@the-/resource.TheResource+refresh"></a>
-
-#### theResource.refresh(entity) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Refresh clay entity
-
-**Kind**: instance method of [<code>TheResource</code>](#module_@the-/resource.TheResource)  
-
-| Param | Type |
-| --- | --- |
-| entity | <code>Object</code> | 
-
-<a name="module_@the-/resource.TheResource+refreshAll"></a>
-
-#### theResource.refreshAll() ⇒ <code>Promise.&lt;undefined&gt;</code>
-Refresh all
-
-**Kind**: instance method of [<code>TheResource</code>](#module_@the-/resource.TheResource)  
-<a name="module_@the-/resource.TheResource+resaveAll"></a>
-
-#### theResource.resaveAll() ⇒ <code>Promise.&lt;undefined&gt;</code>
-Resave all
-
-**Kind**: instance method of [<code>TheResource</code>](#module_@the-/resource.TheResource)  
-<a name="module_@the-/resource.TheResource.cascaded"></a>
-
-#### TheResource.cascaded
-Cascade destroy condition
-
-**Kind**: static property of [<code>TheResource</code>](#module_@the-/resource.TheResource)  
-**Example**  
-```js
-class MyResource extends TheResource {
-     get cascaded () {
-       return { User: (ref) => ({user: {$ref: ref}}) }
-     }
-   }
-```
 <a name="module_@the-/resource.TheResourceBase"></a>
 
 ### resource.TheResourceBase
 **Kind**: static class of [<code>@the-/resource</code>](#module_@the-/resource)  
 **Access**: protected  
+<a name="module_@the-/resource.TheResource"></a>
+
+### resource.TheResource ⇐ <code>TheResourceBase</code>
+**Kind**: static class of [<code>@the-/resource</code>](#module_@the-/resource)  
+**Extends**: <code>TheResourceBase</code>, <code>ClayResource</code>, <code>module:@the-/resource.mixins.ListenMix~ListenMixed</code>, [<code>QueueMixed</code>](#module_@the-/resource.mixins.queueMix..QueueMixed), <code>module:@the-/resource.mixins.writeOnceMix~WriteOnceMixed</code>  
+<a name="new_module_@the-/resource.TheResource_new"></a>
+
+#### new TheResource()
+Resource for the DB
+
 <a name="module_@the-/resource.DataTypes"></a>
 
 ### resource.DataTypes : <code>object</code>
@@ -213,5 +126,10 @@ Alias of [create](#module_@the-/resource.create)
 **Kind**: static method of [<code>@the-/resource</code>](#module_@the-/resource)  
 <a name="module_@the-/resource.isResourceClass"></a>
 
-### resource.isResourceClass() ⇒ <code>boolean</code>
+### resource.isResourceClass(Class) ⇒ <code>boolean</code>
 **Kind**: static method of [<code>@the-/resource</code>](#module_@the-/resource)  
+
+| Param |
+| --- |
+| Class | 
+

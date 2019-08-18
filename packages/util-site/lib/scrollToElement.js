@@ -1,14 +1,14 @@
 'use strict'
 
+const { get } = require('bwindow')
+
 /**
  * Scroll to DOM element
  * @memberof module:@the-/util-site
  * @function scrollToElement
  * @param {string|HTMLDOMElement} element - Element or it's selector
+ * @returns {*}
  */
-const { get } = require('bwindow')
-
-/** @lends module:@the-/util-site.scrollToElement */
 function scrollToElement(element) {
   const document = get('document')
   if (!document) {

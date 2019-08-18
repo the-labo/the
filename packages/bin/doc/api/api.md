@@ -5,32 +5,18 @@
 ## @the-/bin
 Bin manager for the-frameworks
 
-**Version**: 15.4.9  
+**Version**: 15.4.11  
 **License**: MIT  
 
 * [@the-/bin](#module_@the-/bin)
     * [.TheBin](#module_@the-/bin.TheBin)
         * [new TheBin(cmd, [options])](#new_module_@the-/bin.TheBin_new)
-        * [.exec(...args)](#module_@the-/bin.TheBin+exec) ⇒ <code>Promise.&lt;undefined&gt;</code>
-        * [.exists()](#module_@the-/bin.TheBin+exists) ⇒ <code>Promise.&lt;boolean&gt;</code>
-        * [.satisfiesVersion(versionString)](#module_@the-/bin.TheBin+satisfiesVersion) ⇒ <code>Promise.&lt;boolean&gt;</code>
-        * [.verify([options])](#module_@the-/bin.TheBin+verify) ⇒ <code>Promise.&lt;boolean&gt;</code>
-        * [.version()](#module_@the-/bin.TheBin+version) ⇒ <code>Promise.&lt;string&gt;</code>
     * [.create(...args)](#module_@the-/bin.create) ⇒ [<code>TheBin</code>](#module_@the-/bin.TheBin)
 
 <a name="module_@the-/bin.TheBin"></a>
 
 ### bin.TheBin
 **Kind**: static class of [<code>@the-/bin</code>](#module_@the-/bin)  
-
-* [.TheBin](#module_@the-/bin.TheBin)
-    * [new TheBin(cmd, [options])](#new_module_@the-/bin.TheBin_new)
-    * [.exec(...args)](#module_@the-/bin.TheBin+exec) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * [.exists()](#module_@the-/bin.TheBin+exists) ⇒ <code>Promise.&lt;boolean&gt;</code>
-    * [.satisfiesVersion(versionString)](#module_@the-/bin.TheBin+satisfiesVersion) ⇒ <code>Promise.&lt;boolean&gt;</code>
-    * [.verify([options])](#module_@the-/bin.TheBin+verify) ⇒ <code>Promise.&lt;boolean&gt;</code>
-    * [.version()](#module_@the-/bin.TheBin+version) ⇒ <code>Promise.&lt;string&gt;</code>
-
 <a name="new_module_@the-/bin.TheBin_new"></a>
 
 #### new TheBin(cmd, [options])
@@ -42,51 +28,6 @@ Bin manager for the-frameworks
 | [options.guide] | <code>string</code> |  | Guide string |
 | [options.versionOption] | <code>string</code> | <code>&quot;--version&quot;</code> | Option string for version |
 
-<a name="module_@the-/bin.TheBin+exec"></a>
-
-#### theBin.exec(...args) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Execute bin file
-
-**Kind**: instance method of [<code>TheBin</code>](#module_@the-/bin.TheBin)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| ...args | <code>\*</code> | Arguments to pass |
-
-<a name="module_@the-/bin.TheBin+exists"></a>
-
-#### theBin.exists() ⇒ <code>Promise.&lt;boolean&gt;</code>
-Check if bin exists
-
-**Kind**: instance method of [<code>TheBin</code>](#module_@the-/bin.TheBin)  
-<a name="module_@the-/bin.TheBin+satisfiesVersion"></a>
-
-#### theBin.satisfiesVersion(versionString) ⇒ <code>Promise.&lt;boolean&gt;</code>
-Satisfies version or not
-
-**Kind**: instance method of [<code>TheBin</code>](#module_@the-/bin.TheBin)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| versionString | <code>string</code> | Version string to check |
-
-<a name="module_@the-/bin.TheBin+verify"></a>
-
-#### theBin.verify([options]) ⇒ <code>Promise.&lt;boolean&gt;</code>
-Verify the bin
-
-**Kind**: instance method of [<code>TheBin</code>](#module_@the-/bin.TheBin)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
-<a name="module_@the-/bin.TheBin+version"></a>
-
-#### theBin.version() ⇒ <code>Promise.&lt;string&gt;</code>
-Get command version
-
-**Kind**: instance method of [<code>TheBin</code>](#module_@the-/bin.TheBin)  
 <a name="module_@the-/bin.create"></a>
 
 ### bin.create(...args) ⇒ [<code>TheBin</code>](#module_@the-/bin.TheBin)

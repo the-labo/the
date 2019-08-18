@@ -7,13 +7,13 @@
     "longname": "module:@the-/handle",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/handle",
     "order": 3,
     "typicalname": "handle",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "description": "Shared action handler",
@@ -48,13 +48,13 @@
   },
   {
     "description": "Load a scene",
-    "id": "module:@the-/handle.TheHandle#load",
+    "id": "TheHandle#load",
     "kind": "function",
-    "longname": "module:@the-/handle.TheHandle#load",
-    "memberof": "module:@the-/handle.TheHandle",
+    "longname": "TheHandle#load",
+    "memberof": "TheHandle",
     "meta": {
       "filename": "TheHandle.js",
-      "lineno": 47,
+      "lineno": 48,
       "path": "lib"
     },
     "name": "load",
@@ -94,13 +94,13 @@
   },
   {
     "description": "Load scenes from mapping",
-    "id": "module:@the-/handle.TheHandle#loadFromMapping",
+    "id": "TheHandle#loadFromMapping",
     "kind": "function",
-    "longname": "module:@the-/handle.TheHandle#loadFromMapping",
-    "memberof": "module:@the-/handle.TheHandle",
+    "longname": "TheHandle#loadFromMapping",
+    "memberof": "TheHandle",
     "meta": {
       "filename": "TheHandle.js",
-      "lineno": 96,
+      "lineno": 98,
       "path": "lib"
     },
     "name": "loadFromMapping",
@@ -120,13 +120,13 @@
   },
   {
     "description": "Set attributes value. All attributes will be shared in scenes",
-    "id": "module:@the-/handle.TheHandle#setAttributes",
+    "id": "TheHandle#setAttributes",
     "kind": "function",
-    "longname": "module:@the-/handle.TheHandle#setAttributes",
-    "memberof": "module:@the-/handle.TheHandle",
+    "longname": "TheHandle#setAttributes",
+    "memberof": "TheHandle",
     "meta": {
       "filename": "TheHandle.js",
-      "lineno": 116,
+      "lineno": 118,
       "path": "lib"
     },
     "name": "setAttributes",
@@ -151,7 +151,7 @@
     "memberof": "module:@the-/handle.toHandleSceneClass~HandleSceneClass",
     "meta": {
       "filename": "toHandleSceneClass.js",
-      "lineno": 21,
+      "lineno": 24,
       "path": "lib"
     },
     "name": "load",
@@ -186,7 +186,7 @@
     "memberof": "module:@the-/handle",
     "meta": {
       "filename": "TheHandle.js",
-      "lineno": 2,
+      "lineno": 14,
       "path": "lib"
     },
     "name": "TheHandle",
@@ -200,7 +200,7 @@
     "memberof": "module:@the-/handle",
     "meta": {
       "filename": "helpers.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "helpers",
@@ -215,7 +215,7 @@
     "memberof": "module:@the-/handle",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -250,7 +250,7 @@
     "memberof": "module:@the-/handle",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
@@ -265,11 +265,29 @@
     "memberof": "module:@the-/handle",
     "meta": {
       "filename": "toHandleSceneClass.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "toHandleSceneClass",
     "order": 9,
+    "params": [
+      {
+        "name": "BaseClass"
+      },
+      {
+        "optional": true,
+        "name": "config="
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -279,7 +297,7 @@
     "memberof": "module:@the-/handle.toHandleSceneClass",
     "meta": {
       "filename": "toHandleSceneClass.js",
-      "lineno": 15,
+      "lineno": 18,
       "path": "lib"
     },
     "name": "HandleSceneClass",

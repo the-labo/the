@@ -1,12 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/resize
- * @class TheResize
- * @param {Object} [config] - Configuration
- * @param {string} [config.fit] - Fit policy ('cover','contain','fill', 'inside' or 'outside')
- * @see http://sharp.pixelplumbing.com/en/stable/api-resize/#parameters
- */
 const aglob = require('aglob')
 const amkdirp = require('amkdirp')
 const { statAsync } = require('asfs')
@@ -18,7 +11,13 @@ const { fileTypeOf } = require('@the-/util-file')
 
 const imageFilePattern = '**/+(*.jpeg|*.jpg|*.png|*.svg|*.webp)'
 
-/** @lends module:@the-/resize.TheResize */
+/**
+ * @memberof module:@the-/resize
+ * @class TheResize
+ * @param {Object} [config] - Configuration
+ * @param {string} [config.fit] - Fit policy ('cover','contain','fill', 'inside' or 'outside')
+ * @see http://sharp.pixelplumbing.com/en/stable/api-resize/#parameters
+ */
 class TheResize {
   constructor(config = {}) {
     const { enlarge = false, fit = 'inside', height, width } = config

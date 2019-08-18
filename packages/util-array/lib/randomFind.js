@@ -8,7 +8,6 @@
  * @example
  *   [1,2,3].find(randomFind())
  */
-/** @lends module:@the-/util-array.randomFind */
 function randomFind() {
   if (arguments.length > 2) {
     throw new Error('[randomFind] Invalid args.')

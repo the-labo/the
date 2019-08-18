@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@the-/assert": "^15.2.0",
-    "@the-/window": "^15.5.2",
+    "@the-/window": "^15.5.5",
     "asobj": "^3.0.1",
     "invariant": "^2.2.4",
     "redux": "^4.0.4"

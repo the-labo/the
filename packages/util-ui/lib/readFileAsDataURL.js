@@ -1,16 +1,15 @@
 'use strict'
 
+const { get } = require('bwindow')
+
 /**
  * Read file  : data url
  * @memberof module:@the-/util-ui
- * @deprecated
  * @function readFileAsDataURL
+ * @deprecated
  * @param {File} - File to read
  * @returns {Promise<string>} Data url
  */
-const { get } = require('bwindow')
-
-/** @lends module:@the-/util-ui.readFileAsDataURL */
 async function readFileAsDataURL(file) {
   const FileReader = get('FileReader')
   return new Promise((resolve, reject) => {
