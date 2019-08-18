@@ -14,8 +14,8 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
 
   const bodyFor = (annotation) => {
     const {
-      kind: { end: kindEnd },
       end: valueEnd,
+      kind: { end: kindEnd },
     } = annotation
 
     if (kindEnd === valueEnd) {
@@ -26,6 +26,14 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
       end: valueEnd,
       start: valueStart,
       value: String(value).substring(valueStart - offset, valueEnd - offset),
+    }
+  }
+
+  const kindFor = (start, end) => {
+    return {
+      end,
+      name: String(value).substring(start + 1 - offset, end - offset),
+      start,
     }
   }
 
@@ -85,13 +93,10 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
 
     const kindEnded = hitsEmpty && !workingAnnotation.kind
     if (kindEnded) {
-      const { start: kindStart } = workingAnnotation
-      const kindEnd = Number(i) + offset
-      workingAnnotation.kind = {
-        end: kindEnd,
-        name: String(value).substring(kindStart + 1 - offset, kindEnd - offset),
-        start: kindStart,
-      }
+      workingAnnotation.kind = kindFor(
+        workingAnnotation.start,
+        Number(i) + offset,
+      )
       continue
     }
 
@@ -119,6 +124,12 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
   if (workingAnnotation) {
     if (!workingAnnotation.end) {
       workingAnnotation.end = offset + value.length
+      if (!workingAnnotation.kind) {
+        workingAnnotation.kind = kindFor(
+          workingAnnotation.start,
+          workingAnnotation.end,
+        )
+      }
       workingAnnotation.body = bodyFor(workingAnnotation)
     }
     annotations.push(workingAnnotation)

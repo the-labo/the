@@ -294,6 +294,21 @@ function hoge({ x }) { }
       `),
     )
   })
+
+  it('Bugfix', async () => {
+    console.log(
+      await processJSDoc(`
+/**
+ * @memberof module:pon-demo-site/server.db.resources.RoomResource
+ * @inner
+ * @class
+ */
+class TheRoomResourceEntity extends ResourceEntity {}
+`)
+    )
+
+
+  })
 })
 
 /* global describe, before, after, it */

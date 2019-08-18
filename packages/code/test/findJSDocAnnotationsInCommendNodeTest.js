@@ -70,6 +70,23 @@ console.log(shirt)`,
     })
     equal(annotations[0].body, null)
   })
+
+  it('Multiple body less annotations', () => {
+    const annotations = findJSDocAnnotationsInCommendNode({
+      loc: {
+        start: { line: 0 },
+      },
+      start: 0,
+      value: `*
+ * @inner
+ * @class`,
+    })
+    equal(annotations.length, 2)
+    equal(annotations[0].body, null)
+    equal(annotations[0].kind.name, 'inner')
+    equal(annotations[1].body, null)
+    equal(annotations[1].kind.name, 'class')
+  })
 })
 
 /* global describe, before, after, it */
