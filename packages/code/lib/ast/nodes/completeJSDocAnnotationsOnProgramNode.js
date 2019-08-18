@@ -85,7 +85,14 @@ function completeJSDocAnnotationsOnProgramNode(program, { get, replace }) {
       }
     }
 
-    const needsParams = params.length > 0 && !tagsByTypes.param
+    const needsParams =
+      params.length > 0 &&
+      !tagsByTypes.param &&
+      params.every((param) => {
+        return [NodeTypes.AssignmentPattern, NodeTypes.Identifier].includes(
+          param.type,
+        )
+      })
     if (needsParams) {
       return addComments(params.map((paramNode) => paramCommentOf(paramNode)))
     }

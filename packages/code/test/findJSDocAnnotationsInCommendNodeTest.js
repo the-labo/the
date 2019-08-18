@@ -56,6 +56,20 @@ console.log(shirt)`,
       equal(typeof annotation.end, 'number')
     }
   })
+
+  it('Without body', () => {
+    const annotations = findJSDocAnnotationsInCommendNode({
+      loc: {
+        start: { line: 0 },
+      },
+      start: 0,
+      value: `*
+ * @function
+ * @param {number} x
+ *`,
+    })
+    equal(annotations[0].body, null)
+  })
 })
 
 /* global describe, before, after, it */

@@ -83,6 +83,13 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 
+- astHelper
+  - [.isAssignmentPattern()](./doc/api/api.md#astHelper.isAssignmentPattern)
+  - [.isEmptyObjectPattern()](./doc/api/api.md#astHelper.isEmptyObjectPattern)
+  - [.isImportDefaultSpecifier()](./doc/api/api.md#astHelper.isImportDefaultSpecifier)
+  - [.isImportSpecifier()](./doc/api/api.md#astHelper.isImportSpecifier)
+  - [.isObjectPattern()](./doc/api/api.md#astHelper.isObjectPattern)
+  - [.isRequireExpression()](./doc/api/api.md#astHelper.isRequireExpression)
 - module:@the-/code
   - [.applyConverter()](./doc/api/api.md#module_@the-/code.applyConverter)
   - [.astHelper](./doc/api/api.md#module_@the-/code.astHelper)
@@ -98,7 +105,6 @@ tryExample().catch((err) => console.error(err))
 - module:@the-/code.ast
   - [.nodes](./doc/api/api.md#module_@the-/code.ast.nodes)
 - module:@the-/code.ast.nodes
-  - [.{combineObjectPatternOnStatementNode}()](./doc/api/api.md#module_@the-/code.ast.nodes.{combineObjectPatternOnStatementNode})
   - [.addExtOnRequireDeclarationArgumentNode()](./doc/api/api.md#module_@the-/code.ast.nodes.addExtOnRequireDeclarationArgumentNode)
   - [.calcNumericOperationOnBinaryExpressionNode()](./doc/api/api.md#module_@the-/code.ast.nodes.calcNumericOperationOnBinaryExpressionNode)
   - [.cleanupEmptyArrayPatternParamsOnFunctionNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupEmptyArrayPatternParamsOnFunctionNode)
@@ -116,20 +122,24 @@ tryExample().catch((err) => console.error(err))
   - [.cleanupUnusedOnImportNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupUnusedOnImportNode)
   - [.cleanupUnusedOnObjectPatternNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupUnusedOnObjectPatternNode)
   - [.cleanupUnusedOnVariableNode()](./doc/api/api.md#module_@the-/code.ast.nodes.cleanupUnusedOnVariableNode)
+  - [.combineObjectPatternOnStatementNode()](./doc/api/api.md#module_@the-/code.ast.nodes.combineObjectPatternOnStatementNode)
   - [.combinePropertiesOnObjectPattern()](./doc/api/api.md#module_@the-/code.ast.nodes.combinePropertiesOnObjectPattern)
   - [.commentModuleOnProgramNode()](./doc/api/api.md#module_@the-/code.ast.nodes.commentModuleOnProgramNode)
+  - [.completeJSDocAnnotationsOnCommentNode()](./doc/api/api.md#module_@the-/code.ast.nodes.completeJSDocAnnotationsOnCommentNode)
   - [.findJSDocAnnotationsInCommendNode()](./doc/api/api.md#module_@the-/code.ast.nodes.findJSDocAnnotationsInCommendNode)
   - [.findRequireDeclarationOnProgramNode()](./doc/api/api.md#module_@the-/code.ast.nodes.findRequireDeclarationOnProgramNode)
   - [.formatJSDocCommentOnCommentNode()](./doc/api/api.md#module_@the-/code.ast.nodes.formatJSDocCommentOnCommentNode)
   - [.mergeDuplicateImportOnProgramNode()](./doc/api/api.md#module_@the-/code.ast.nodes.mergeDuplicateImportOnProgramNode)
   - [.mergeStringConcatenateOnBinaryExpressionNode()](./doc/api/api.md#module_@the-/code.ast.nodes.mergeStringConcatenateOnBinaryExpressionNode)
   - [.modifyNodeDeprecatedOnRequireDeclaration()](./doc/api/api.md#module_@the-/code.ast.nodes.modifyNodeDeprecatedOnRequireDeclaration)
+  - [.modifyToDestructorOnDeclarationNode()](./doc/api/api.md#module_@the-/code.ast.nodes.modifyToDestructorOnDeclarationNode)
   - [.normalizeAssignmentOnVariableDeclarationNode()](./doc/api/api.md#module_@the-/code.ast.nodes.normalizeAssignmentOnVariableDeclarationNode)
   - [.normalizeBinaryExpressionNode()](./doc/api/api.md#module_@the-/code.ast.nodes.normalizeBinaryExpressionNode)
   - [.normalizeFunctionReturnOnFunctionNode()](./doc/api/api.md#module_@the-/code.ast.nodes.normalizeFunctionReturnOnFunctionNode)
   - [.normalizeJSDocAnnotationsOnCommentNode()](./doc/api/api.md#module_@the-/code.ast.nodes.normalizeJSDocAnnotationsOnCommentNode)
   - [.normalizeKindOnVariableDeclarationNode()](./doc/api/api.md#module_@the-/code.ast.nodes.normalizeKindOnVariableDeclarationNode)
   - [.normalizeSrcPathOnImportDeclarationNode()](./doc/api/api.md#module_@the-/code.ast.nodes.normalizeSrcPathOnImportDeclarationNode)
+  - [.normalizeSrcPathOnRequireArgumentNode()](./doc/api/api.md#module_@the-/code.ast.nodes.normalizeSrcPathOnRequireArgumentNode)
   - [.normalizeVariableDeclaratorOnStatementNode()](./doc/api/api.md#module_@the-/code.ast.nodes.normalizeVariableDeclaratorOnStatementNode)
   - [.sortAnnotationsOnCommentNode()](./doc/api/api.md#module_@the-/code.ast.nodes.sortAnnotationsOnCommentNode)
   - [.sortCasesOnSwitchStatementNode()](./doc/api/api.md#module_@the-/code.ast.nodes.sortCasesOnSwitchStatementNode)
@@ -138,13 +148,6 @@ tryExample().catch((err) => console.error(err))
   - [.sortPropertiesOnObjectNode()](./doc/api/api.md#module_@the-/code.ast.nodes.sortPropertiesOnObjectNode)
   - [.sortSpecifiersOnImportDeclarationNode()](./doc/api/api.md#module_@the-/code.ast.nodes.sortSpecifiersOnImportDeclarationNode)
   - [.spaceOnCommentNode()](./doc/api/api.md#module_@the-/code.ast.nodes.spaceOnCommentNode)
-- module:@the-/code.astHelper
-  - [.isAssignmentPattern()](./doc/api/api.md#module_@the-/code.astHelper.isAssignmentPattern)
-  - [.isEmptyObjectPattern()](./doc/api/api.md#module_@the-/code.astHelper.isEmptyObjectPattern)
-  - [.isImportDefaultSpecifier()](./doc/api/api.md#module_@the-/code.astHelper.isImportDefaultSpecifier)
-  - [.isImportSpecifier()](./doc/api/api.md#module_@the-/code.astHelper.isImportSpecifier)
-  - [.isObjectPattern()](./doc/api/api.md#module_@the-/code.astHelper.isObjectPattern)
-  - [.isRequireExpression()](./doc/api/api.md#module_@the-/code.astHelper.isRequireExpression)
 - module:@the-/code.constants
   - [.TypeNamings](./doc/api/api.md#module_@the-/code.constants.TypeNamings)
   - [.Types](./doc/api/api.md#module_@the-/code.constants.Types)
@@ -180,9 +183,9 @@ tryExample().catch((err) => console.error(err))
   - [.processPackageJSON()](./doc/api/api.md#module_@the-/code.processors.processPackageJSON)
   - [.processPackageLockJSON()](./doc/api/api.md#module_@the-/code.processors.processPackageLockJSON)
   - [.processYAML(content)](./doc/api/api.md#module_@the-/code.processors.processYAML)
-- module:@the-/code.TheCode
-  - [#format(pattern,options)](./doc/api/api.md#module_@the-/code.TheCode#format)
-  - [#formatFile(filename,options)](./doc/api/api.md#module_@the-/code.TheCode#formatFile)
+- TheCode
+  - [#format(pattern,options)](./doc/api/api.md#TheCode#format)
+  - [#formatFile(filename,options)](./doc/api/api.md#TheCode#formatFile)
 
 See [API Guide](./doc/api/api.md) for more detail
 

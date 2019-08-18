@@ -13,8 +13,15 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
   const { value } = CommentNode
 
   const bodyFor = (annotation) => {
-    const valueStart = annotation.kind.end + 1
-    const { end: valueEnd } = annotation
+    const {
+      kind: { end: kindEnd },
+      end: valueEnd,
+    } = annotation
+
+    if (kindEnd === valueEnd) {
+      return null
+    }
+    const valueStart = kindEnd + 1
     return {
       end: valueEnd,
       start: valueStart,

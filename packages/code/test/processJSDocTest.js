@@ -5,7 +5,7 @@
  * Runs with mocha.
  */
 const {
-  strict: { equal },
+  strict: { equal, ok },
 } = require('assert')
 const processJSDoc = require('../lib/processors/processJSDoc')
 
@@ -219,13 +219,14 @@ describe('process-js-doc', () => {
    * @param bar
    * @function hoge
    */
-`),`
+`),
+      `
   /**
    * @function hoge
    * @param foo
    * @param bar
    */
-`
+`,
     )
   })
 
@@ -280,6 +281,17 @@ async function xx(x){
 async function xx(x){
 }
       `,
+    )
+  })
+
+  it('Complete jsdoc with destruct', async () => {
+    ok(
+      await processJSDoc(`
+/**
+ * @function
+ */
+function hoge({ x }) { }
+      `),
     )
   })
 })
