@@ -1,8 +1,3 @@
-/**
- * @memberof module:@the-/server.streaming
- * @protected
- * @function toStreamDriverFactory
- */
 'use strict'
 
 const asleep = require('asleep')
@@ -14,7 +9,11 @@ const SessionAccess = require('../helpers/SessionAccess')
 
 const assert = theAssert('@the-/server')
 
-/** @lends module:@the-/server.streaming.toStreamDriverFactory */
+/**
+ * @memberof module:@the-/server.streaming
+ * @protected
+ * @function toStreamDriverFactory
+ */
 function toStreamDriverFactory(StreamFactory, options = {}) {
   const { inject, sessionStore, streamName } = options
   unlessProduction(() => {

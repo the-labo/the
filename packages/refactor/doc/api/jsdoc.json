@@ -7,24 +7,24 @@
     "longname": "module:@the-/refactor",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/refactor",
     "order": 2,
     "typicalname": "refactor",
-    "version": "15.5.1"
+    "version": "15.6.0"
   },
   {
     "async": true,
     "description": "Process with convert function",
-    "id": "module:@the-/refactor.TheRefactor#convert",
+    "id": "TheRefactor#convert",
     "kind": "function",
-    "longname": "module:@the-/refactor.TheRefactor#convert",
-    "memberof": "module:@the-/refactor.TheRefactor",
+    "longname": "TheRefactor#convert",
+    "memberof": "TheRefactor",
     "meta": {
       "filename": "TheRefactor.js",
-      "lineno": 53,
+      "lineno": 54,
       "path": "lib"
     },
     "name": "convert",
@@ -72,13 +72,13 @@
   {
     "async": true,
     "description": "Process files to rename",
-    "id": "module:@the-/refactor.TheRefactor#process",
+    "id": "TheRefactor#process",
     "kind": "function",
-    "longname": "module:@the-/refactor.TheRefactor#process",
-    "memberof": "module:@the-/refactor.TheRefactor",
+    "longname": "TheRefactor#process",
+    "memberof": "TheRefactor",
     "meta": {
       "filename": "TheRefactor.js",
-      "lineno": 72,
+      "lineno": 73,
       "path": "lib"
     },
     "name": "process",
@@ -138,13 +138,13 @@
   {
     "async": true,
     "description": "Rename files",
-    "id": "module:@the-/refactor.TheRefactor#rename",
+    "id": "TheRefactor#rename",
     "kind": "function",
-    "longname": "module:@the-/refactor.TheRefactor#rename",
-    "memberof": "module:@the-/refactor.TheRefactor",
+    "longname": "TheRefactor#rename",
+    "memberof": "TheRefactor",
     "meta": {
       "filename": "TheRefactor.js",
-      "lineno": 113,
+      "lineno": 114,
       "path": "lib"
     },
     "name": "rename",
@@ -194,13 +194,13 @@
   {
     "async": true,
     "description": "Rename directory",
-    "id": "module:@the-/refactor.TheRefactor#renameDir",
+    "id": "TheRefactor#renameDir",
     "kind": "function",
-    "longname": "module:@the-/refactor.TheRefactor#renameDir",
-    "memberof": "module:@the-/refactor.TheRefactor",
+    "longname": "TheRefactor#renameDir",
+    "memberof": "TheRefactor",
     "meta": {
       "filename": "TheRefactor.js",
-      "lineno": 144,
+      "lineno": 145,
       "path": "lib"
     },
     "name": "renameDir",
@@ -239,13 +239,13 @@
   {
     "async": true,
     "description": "Rewrite file content",
-    "id": "module:@the-/refactor.TheRefactor#rewrite",
+    "id": "TheRefactor#rewrite",
     "kind": "function",
-    "longname": "module:@the-/refactor.TheRefactor#rewrite",
-    "memberof": "module:@the-/refactor.TheRefactor",
+    "longname": "TheRefactor#rewrite",
+    "memberof": "TheRefactor",
     "meta": {
       "filename": "TheRefactor.js",
-      "lineno": 172,
+      "lineno": 174,
       "path": "lib"
     },
     "name": "rewrite",
@@ -297,13 +297,13 @@
     "async": true,
     "deprecated": true,
     "description": "Scatter a file to directories",
-    "id": "module:@the-/refactor.TheRefactor#scatter",
+    "id": "TheRefactor#scatter",
     "kind": "function",
-    "longname": "module:@the-/refactor.TheRefactor#scatter",
-    "memberof": "module:@the-/refactor.TheRefactor",
+    "longname": "TheRefactor#scatter",
+    "memberof": "TheRefactor",
     "meta": {
       "filename": "TheRefactor.js",
-      "lineno": 197,
+      "lineno": 199,
       "path": "lib"
     },
     "name": "scatter",
@@ -344,7 +344,7 @@
     "memberof": "module:@the-/refactor",
     "meta": {
       "filename": "TheRefactor.js",
-      "lineno": 2,
+      "lineno": 38,
       "path": "lib"
     },
     "name": "TheRefactor",
@@ -359,7 +359,7 @@
     "memberof": "module:@the-/refactor",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -394,7 +394,7 @@
     "memberof": "module:@the-/refactor",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",

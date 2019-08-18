@@ -5,7 +5,6 @@
  * @function asStrictSession
  * @param {Object} session
  */
-/** @lends module:@the-/server.helpers.asStrictSession */
 function asStrictSession(session) {
   return new Proxy(session, {
     get(target, k) {

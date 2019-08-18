@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/refactor
  * @typicalname refactor
- * @version 15.5.1
+ * @version 15.6.0
  */
 'use strict'
 

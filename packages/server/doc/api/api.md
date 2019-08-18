@@ -21,16 +21,12 @@
 ## @the-/server
 HTTP/RPC Server of the-framework
 
-**Version**: 16.0.33  
+**Version**: 16.1.0  
 **License**: MIT  
 
 * [@the-/server](#module_@the-/server)
     * [.TheServer](#module_@the-/server.TheServer)
         * [new TheServer(config, langs, logFile, middlewares)](#new_module_@the-/server.TheServer_new)
-        * [.info()](#module_@the-/server.TheServer+info)
-        * [.close(...args)](#module_@the-/server.TheServer+close) ⇒ <code>Promise.&lt;\*&gt;</code>
-        * [.destroyAllSessions()](#module_@the-/server.TheServer+destroyAllSessions) ⇒ <code>Promise.&lt;number&gt;</code>
-        * [.listen(port)](#module_@the-/server.TheServer+listen) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.buildInEndpoints](#module_@the-/server.buildInEndpoints) : <code>object</code>
     * [.adapters](#module_@the-/server.adapters) : <code>object</code>
         * [.redisAdapter()](#module_@the-/server.adapters.redisAdapter)
@@ -44,10 +40,11 @@ HTTP/RPC Server of the-framework
         * _static_
             * [.asStrictSession(session)](#module_@the-/server.helpers.asStrictSession)
             * [.callbacksProxy()](#module_@the-/server.helpers.callbacksProxy) ⇒ <code>Proxy</code>
+            * [.ClientAccess(config)](#module_@the-/server.helpers.ClientAccess) ⇒ <code>Object</code>
+                * [~clientAccess](#module_@the-/server.helpers.ClientAccess..clientAccess) : <code>object</code>
             * [.ctxInjector(creators)](#module_@the-/server.helpers.ctxInjector) ⇒ <code>function</code>
             * [.InfoFlusher(filename, getter)](#module_@the-/server.helpers.InfoFlusher) ⇒ <code>Object</code>
                 * [~infoFlusher](#module_@the-/server.helpers.InfoFlusher..infoFlusher) : <code>object</code>
-                    * [.flushInfo()](#module_@the-/server.helpers.InfoFlusher..infoFlusher.flushInfo)
             * [.langDetector([locales], [options])](#module_@the-/server.helpers.langDetector) ⇒ <code>function</code>
             * [.MetricsCounter()](#module_@the-/server.helpers.MetricsCounter)
             * [.queryFromUrl()](#module_@the-/server.helpers.queryFromUrl)
@@ -60,30 +57,13 @@ HTTP/RPC Server of the-framework
             * [.streamPool()](#module_@the-/server.helpers.streamPool)
         * _inner_
             * [~StreamDriverPool](#module_@the-/server.helpers..StreamDriverPool)
-    * [.mixins](#module_@the-/server.mixins) : <code>object</code>
-        * [.clientMix(Class)](#module_@the-/server.mixins.clientMix) ⇒ <code>function</code>
-            * [~ClientMixed](#module_@the-/server.mixins.clientMix..ClientMixed)
     * [.stores](#module_@the-/server.stores) : <code>object</code>
         * [.ConnectionStore](#module_@the-/server.stores.ConnectionStore) ⇐ [<code>Store</code>](#module_@the-/server.stores.Store)
             * [new ConnectionStore()](#new_module_@the-/server.stores.ConnectionStore_new)
-            * [.cleanup()](#module_@the-/server.stores.Store+cleanup) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-            * [.del(id)](#module_@the-/server.stores.Store+del) ⇒ <code>Promise.&lt;\*&gt;</code>
-            * [.delAll()](#module_@the-/server.stores.Store+delAll) ⇒ <code>Promise.&lt;number&gt;</code>
-            * [.get(id)](#module_@the-/server.stores.Store+get) ⇒ <code>Promise.&lt;Object&gt;</code>
-            * [.has(id)](#module_@the-/server.stores.Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
-            * [.ids()](#module_@the-/server.stores.Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-            * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;undefined&gt;</code>
         * [.SessionStore](#module_@the-/server.stores.SessionStore) ⇐ <code>module:@the-/server.stores.Session</code>
             * [new SessionStore()](#new_module_@the-/server.stores.SessionStore_new)
         * [.Store](#module_@the-/server.stores.Store)
             * [new Store()](#new_module_@the-/server.stores.Store_new)
-            * [.cleanup()](#module_@the-/server.stores.Store+cleanup) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-            * [.del(id)](#module_@the-/server.stores.Store+del) ⇒ <code>Promise.&lt;\*&gt;</code>
-            * [.delAll()](#module_@the-/server.stores.Store+delAll) ⇒ <code>Promise.&lt;number&gt;</code>
-            * [.get(id)](#module_@the-/server.stores.Store+get) ⇒ <code>Promise.&lt;Object&gt;</code>
-            * [.has(id)](#module_@the-/server.stores.Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
-            * [.ids()](#module_@the-/server.stores.Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-            * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.create(...args)](#module_@the-/server.create) ⇒ <code>TheServer</code>
     * [.default()](#module_@the-/server.default)
 
@@ -91,14 +71,6 @@ HTTP/RPC Server of the-framework
 
 ### server.TheServer
 **Kind**: static class of [<code>@the-/server</code>](#module_@the-/server)  
-
-* [.TheServer](#module_@the-/server.TheServer)
-    * [new TheServer(config, langs, logFile, middlewares)](#new_module_@the-/server.TheServer_new)
-    * [.info()](#module_@the-/server.TheServer+info)
-    * [.close(...args)](#module_@the-/server.TheServer+close) ⇒ <code>Promise.&lt;\*&gt;</code>
-    * [.destroyAllSessions()](#module_@the-/server.TheServer+destroyAllSessions) ⇒ <code>Promise.&lt;number&gt;</code>
-    * [.listen(port)](#module_@the-/server.TheServer+listen) ⇒ <code>Promise.&lt;undefined&gt;</code>
-
 <a name="new_module_@the-/server.TheServer_new"></a>
 
 #### new TheServer(config, langs, logFile, middlewares)
@@ -111,41 +83,6 @@ HTTP server for the-framework
 | langs | <code>Array.&lt;string&gt;</code> | Supported langs |
 | logFile | <code>string</code> | Log file |
 | middlewares | <code>Array.&lt;function()&gt;</code> | Koa middlewares |
-
-<a name="module_@the-/server.TheServer+info"></a>
-
-#### theServer.info()
-Server info
-
-**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
-<a name="module_@the-/server.TheServer+close"></a>
-
-#### theServer.close(...args) ⇒ <code>Promise.&lt;\*&gt;</code>
-Close server
-
-**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| ...args | <code>\*</code> | Close arguments |
-
-<a name="module_@the-/server.TheServer+destroyAllSessions"></a>
-
-#### theServer.destroyAllSessions() ⇒ <code>Promise.&lt;number&gt;</code>
-Destroy all sessions
-
-**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
-**Returns**: <code>Promise.&lt;number&gt;</code> - Deleted count  
-<a name="module_@the-/server.TheServer+listen"></a>
-
-#### theServer.listen(port) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Listen to port
-
-**Kind**: instance method of [<code>TheServer</code>](#module_@the-/server.TheServer)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| port | <code>number</code> | Port to listen |
 
 <a name="module_@the-/server.buildInEndpoints"></a>
 
@@ -218,10 +155,11 @@ Helper functions
     * _static_
         * [.asStrictSession(session)](#module_@the-/server.helpers.asStrictSession)
         * [.callbacksProxy()](#module_@the-/server.helpers.callbacksProxy) ⇒ <code>Proxy</code>
+        * [.ClientAccess(config)](#module_@the-/server.helpers.ClientAccess) ⇒ <code>Object</code>
+            * [~clientAccess](#module_@the-/server.helpers.ClientAccess..clientAccess) : <code>object</code>
         * [.ctxInjector(creators)](#module_@the-/server.helpers.ctxInjector) ⇒ <code>function</code>
         * [.InfoFlusher(filename, getter)](#module_@the-/server.helpers.InfoFlusher) ⇒ <code>Object</code>
             * [~infoFlusher](#module_@the-/server.helpers.InfoFlusher..infoFlusher) : <code>object</code>
-                * [.flushInfo()](#module_@the-/server.helpers.InfoFlusher..infoFlusher.flushInfo)
         * [.langDetector([locales], [options])](#module_@the-/server.helpers.langDetector) ⇒ <code>function</code>
         * [.MetricsCounter()](#module_@the-/server.helpers.MetricsCounter)
         * [.queryFromUrl()](#module_@the-/server.helpers.queryFromUrl)
@@ -251,6 +189,22 @@ Callback proxy
 
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
 **Returns**: <code>Proxy</code> - Proxy instance  
+<a name="module_@the-/server.helpers.ClientAccess"></a>
+
+#### helpers.ClientAccess(config) ⇒ <code>Object</code>
+Mixin for client
+
+**Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+**Returns**: <code>Object</code> - Instance  
+
+| Param | Type |
+| --- | --- |
+| config | <code>Object</code> | 
+
+<a name="module_@the-/server.helpers.ClientAccess..clientAccess"></a>
+
+##### ClientAccess~clientAccess : <code>object</code>
+**Kind**: inner namespace of [<code>ClientAccess</code>](#module_@the-/server.helpers.ClientAccess)  
 <a name="module_@the-/server.helpers.ctxInjector"></a>
 
 #### helpers.ctxInjector(creators) ⇒ <code>function</code>
@@ -274,21 +228,10 @@ Mixins for info
 | filename | <code>string</code> |  |
 | getter | <code>function</code> | Info getter |
 
-
-* [.InfoFlusher(filename, getter)](#module_@the-/server.helpers.InfoFlusher) ⇒ <code>Object</code>
-    * [~infoFlusher](#module_@the-/server.helpers.InfoFlusher..infoFlusher) : <code>object</code>
-        * [.flushInfo()](#module_@the-/server.helpers.InfoFlusher..infoFlusher.flushInfo)
-
 <a name="module_@the-/server.helpers.InfoFlusher..infoFlusher"></a>
 
 ##### InfoFlusher~infoFlusher : <code>object</code>
 **Kind**: inner namespace of [<code>InfoFlusher</code>](#module_@the-/server.helpers.InfoFlusher)  
-<a name="module_@the-/server.helpers.InfoFlusher..infoFlusher.flushInfo"></a>
-
-###### infoFlusher.flushInfo()
-Flush info into file
-
-**Kind**: static method of [<code>infoFlusher</code>](#module_@the-/server.helpers.InfoFlusher..infoFlusher)  
 <a name="module_@the-/server.helpers.langDetector"></a>
 
 #### helpers.langDetector([locales], [options]) ⇒ <code>function</code>
@@ -362,33 +305,6 @@ Stream pool
 
 #### helpers~StreamDriverPool
 **Kind**: inner class of [<code>helpers</code>](#module_@the-/server.helpers)  
-<a name="module_@the-/server.mixins"></a>
-
-### server.mixins : <code>object</code>
-Mixin functions
-
-**Kind**: static namespace of [<code>@the-/server</code>](#module_@the-/server)  
-
-* [.mixins](#module_@the-/server.mixins) : <code>object</code>
-    * [.clientMix(Class)](#module_@the-/server.mixins.clientMix) ⇒ <code>function</code>
-        * [~ClientMixed](#module_@the-/server.mixins.clientMix..ClientMixed)
-
-<a name="module_@the-/server.mixins.clientMix"></a>
-
-#### mixins.clientMix(Class) ⇒ <code>function</code>
-Mixin for client
-
-**Kind**: static method of [<code>mixins</code>](#module_@the-/server.mixins)  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
-<a name="module_@the-/server.mixins.clientMix..ClientMixed"></a>
-
-##### clientMix~ClientMixed
-**Kind**: inner class of [<code>clientMix</code>](#module_@the-/server.mixins.clientMix)  
 <a name="module_@the-/server.stores"></a>
 
 ### server.stores : <code>object</code>
@@ -399,109 +315,20 @@ Buildin stores
 * [.stores](#module_@the-/server.stores) : <code>object</code>
     * [.ConnectionStore](#module_@the-/server.stores.ConnectionStore) ⇐ [<code>Store</code>](#module_@the-/server.stores.Store)
         * [new ConnectionStore()](#new_module_@the-/server.stores.ConnectionStore_new)
-        * [.cleanup()](#module_@the-/server.stores.Store+cleanup) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-        * [.del(id)](#module_@the-/server.stores.Store+del) ⇒ <code>Promise.&lt;\*&gt;</code>
-        * [.delAll()](#module_@the-/server.stores.Store+delAll) ⇒ <code>Promise.&lt;number&gt;</code>
-        * [.get(id)](#module_@the-/server.stores.Store+get) ⇒ <code>Promise.&lt;Object&gt;</code>
-        * [.has(id)](#module_@the-/server.stores.Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
-        * [.ids()](#module_@the-/server.stores.Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-        * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.SessionStore](#module_@the-/server.stores.SessionStore) ⇐ <code>module:@the-/server.stores.Session</code>
         * [new SessionStore()](#new_module_@the-/server.stores.SessionStore_new)
     * [.Store](#module_@the-/server.stores.Store)
         * [new Store()](#new_module_@the-/server.stores.Store_new)
-        * [.cleanup()](#module_@the-/server.stores.Store+cleanup) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-        * [.del(id)](#module_@the-/server.stores.Store+del) ⇒ <code>Promise.&lt;\*&gt;</code>
-        * [.delAll()](#module_@the-/server.stores.Store+delAll) ⇒ <code>Promise.&lt;number&gt;</code>
-        * [.get(id)](#module_@the-/server.stores.Store+get) ⇒ <code>Promise.&lt;Object&gt;</code>
-        * [.has(id)](#module_@the-/server.stores.Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
-        * [.ids()](#module_@the-/server.stores.Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-        * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;undefined&gt;</code>
 
 <a name="module_@the-/server.stores.ConnectionStore"></a>
 
 #### stores.ConnectionStore ⇐ [<code>Store</code>](#module_@the-/server.stores.Store)
 **Kind**: static class of [<code>stores</code>](#module_@the-/server.stores)  
 **Extends**: [<code>Store</code>](#module_@the-/server.stores.Store)  
-
-* [.ConnectionStore](#module_@the-/server.stores.ConnectionStore) ⇐ [<code>Store</code>](#module_@the-/server.stores.Store)
-    * [new ConnectionStore()](#new_module_@the-/server.stores.ConnectionStore_new)
-    * [.cleanup()](#module_@the-/server.stores.Store+cleanup) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-    * [.del(id)](#module_@the-/server.stores.Store+del) ⇒ <code>Promise.&lt;\*&gt;</code>
-    * [.delAll()](#module_@the-/server.stores.Store+delAll) ⇒ <code>Promise.&lt;number&gt;</code>
-    * [.get(id)](#module_@the-/server.stores.Store+get) ⇒ <code>Promise.&lt;Object&gt;</code>
-    * [.has(id)](#module_@the-/server.stores.Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
-    * [.ids()](#module_@the-/server.stores.Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-    * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;undefined&gt;</code>
-
 <a name="new_module_@the-/server.stores.ConnectionStore_new"></a>
 
 ##### new ConnectionStore()
 Client connection store for the-server
-
-<a name="module_@the-/server.stores.Store+cleanup"></a>
-
-##### connectionStore.cleanup() ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-Cleanup expired data
-
-**Kind**: instance method of [<code>ConnectionStore</code>](#module_@the-/server.stores.ConnectionStore)  
-<a name="module_@the-/server.stores.Store+del"></a>
-
-##### connectionStore.del(id) ⇒ <code>Promise.&lt;\*&gt;</code>
-Delete data
-
-**Kind**: instance method of [<code>ConnectionStore</code>](#module_@the-/server.stores.ConnectionStore)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| id | <code>string</code> | Id to del |
-
-<a name="module_@the-/server.stores.Store+delAll"></a>
-
-##### connectionStore.delAll() ⇒ <code>Promise.&lt;number&gt;</code>
-Delete all data
-
-**Kind**: instance method of [<code>ConnectionStore</code>](#module_@the-/server.stores.ConnectionStore)  
-<a name="module_@the-/server.stores.Store+get"></a>
-
-##### connectionStore.get(id) ⇒ <code>Promise.&lt;Object&gt;</code>
-Get data
-
-**Kind**: instance method of [<code>ConnectionStore</code>](#module_@the-/server.stores.ConnectionStore)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| id | <code>string</code> | Data id |
-
-<a name="module_@the-/server.stores.Store+has"></a>
-
-##### connectionStore.has(id) ⇒ <code>Promise.&lt;boolean&gt;</code>
-Check if has data
-
-**Kind**: instance method of [<code>ConnectionStore</code>](#module_@the-/server.stores.ConnectionStore)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| id | <code>string</code> | Data id |
-
-<a name="module_@the-/server.stores.Store+ids"></a>
-
-##### connectionStore.ids() ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-Get all ids
-
-**Kind**: instance method of [<code>ConnectionStore</code>](#module_@the-/server.stores.ConnectionStore)  
-<a name="module_@the-/server.stores.Store+set"></a>
-
-##### connectionStore.set(id, data) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Set data
-
-**Kind**: instance method of [<code>ConnectionStore</code>](#module_@the-/server.stores.ConnectionStore)  
-**Overrides**: [<code>set</code>](#module_@the-/server.stores.Store+set)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| id | <code>string</code> | Data id |
-| data | <code>Object</code> | Data to set |
 
 <a name="module_@the-/server.stores.SessionStore"></a>
 
@@ -517,84 +344,10 @@ Client session store for the-server
 
 #### stores.Store
 **Kind**: static class of [<code>stores</code>](#module_@the-/server.stores)  
-
-* [.Store](#module_@the-/server.stores.Store)
-    * [new Store()](#new_module_@the-/server.stores.Store_new)
-    * [.cleanup()](#module_@the-/server.stores.Store+cleanup) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-    * [.del(id)](#module_@the-/server.stores.Store+del) ⇒ <code>Promise.&lt;\*&gt;</code>
-    * [.delAll()](#module_@the-/server.stores.Store+delAll) ⇒ <code>Promise.&lt;number&gt;</code>
-    * [.get(id)](#module_@the-/server.stores.Store+get) ⇒ <code>Promise.&lt;Object&gt;</code>
-    * [.has(id)](#module_@the-/server.stores.Store+has) ⇒ <code>Promise.&lt;boolean&gt;</code>
-    * [.ids()](#module_@the-/server.stores.Store+ids) ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-    * [.set(id, data)](#module_@the-/server.stores.Store+set) ⇒ <code>Promise.&lt;undefined&gt;</code>
-
 <a name="new_module_@the-/server.stores.Store_new"></a>
 
 ##### new Store()
 Client data store for the-server
-
-<a name="module_@the-/server.stores.Store+cleanup"></a>
-
-##### store.cleanup() ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-Cleanup expired data
-
-**Kind**: instance method of [<code>Store</code>](#module_@the-/server.stores.Store)  
-<a name="module_@the-/server.stores.Store+del"></a>
-
-##### store.del(id) ⇒ <code>Promise.&lt;\*&gt;</code>
-Delete data
-
-**Kind**: instance method of [<code>Store</code>](#module_@the-/server.stores.Store)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| id | <code>string</code> | Id to del |
-
-<a name="module_@the-/server.stores.Store+delAll"></a>
-
-##### store.delAll() ⇒ <code>Promise.&lt;number&gt;</code>
-Delete all data
-
-**Kind**: instance method of [<code>Store</code>](#module_@the-/server.stores.Store)  
-<a name="module_@the-/server.stores.Store+get"></a>
-
-##### store.get(id) ⇒ <code>Promise.&lt;Object&gt;</code>
-Get data
-
-**Kind**: instance method of [<code>Store</code>](#module_@the-/server.stores.Store)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| id | <code>string</code> | Data id |
-
-<a name="module_@the-/server.stores.Store+has"></a>
-
-##### store.has(id) ⇒ <code>Promise.&lt;boolean&gt;</code>
-Check if has data
-
-**Kind**: instance method of [<code>Store</code>](#module_@the-/server.stores.Store)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| id | <code>string</code> | Data id |
-
-<a name="module_@the-/server.stores.Store+ids"></a>
-
-##### store.ids() ⇒ <code>Promise.&lt;Array.&lt;string&gt;&gt;</code>
-Get all ids
-
-**Kind**: instance method of [<code>Store</code>](#module_@the-/server.stores.Store)  
-<a name="module_@the-/server.stores.Store+set"></a>
-
-##### store.set(id, data) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Set data
-
-**Kind**: instance method of [<code>Store</code>](#module_@the-/server.stores.Store)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| id | <code>string</code> | Data id |
-| data | <code>Object</code> | Data to set |
 
 <a name="module_@the-/server.create"></a>
 

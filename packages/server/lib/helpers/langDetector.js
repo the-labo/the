@@ -1,5 +1,7 @@
 'use strict'
 
+const { Locales } = require('locale')
+
 /**
  * Define koa middleware function to detect locale
  * @memberof module:@the-/server.helpers
@@ -8,9 +10,6 @@
  * @param {Object} [options={}] - Optional setting
  * @returns {function()}
  */
-const { Locales } = require('locale')
-
-/** @lends module:@the-/server.helpers.langDetector */
 function langDetector(locales, options = {}) {
   const { queryKey = 'locale' } = options
 

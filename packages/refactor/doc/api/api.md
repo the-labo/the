@@ -5,17 +5,11 @@
 ## @the-/refactor
 Refactoring tool for the-components
 
-**Version**: 15.5.1  
+**Version**: 15.6.0  
 **License**: MIT  
 
 * [@the-/refactor](#module_@the-/refactor)
     * [.TheRefactor](#module_@the-/refactor.TheRefactor)
-        * [.convert(pattern, converter, [options])](#module_@the-/refactor.TheRefactor+convert) ⇒ <code>Promise.&lt;undefined&gt;</code>
-        * [.process(pattern, from, to, [options])](#module_@the-/refactor.TheRefactor+process) ⇒ <code>Promise.&lt;undefined&gt;</code>
-        * [.rename(pattern, convert, [options])](#module_@the-/refactor.TheRefactor+rename) ⇒ <code>Promise.&lt;undefined&gt;</code>
-        * [.renameDir(src, dest)](#module_@the-/refactor.TheRefactor+renameDir) ⇒ <code>Promise.&lt;undefined&gt;</code>
-        * [.rewrite(pattern, rules, [options])](#module_@the-/refactor.TheRefactor+rewrite) ⇒ <code>Promise.&lt;undefined&gt;</code>
-        * ~~[.scatter(src, dirnames)](#module_@the-/refactor.TheRefactor+scatter) ⇒ <code>Promise.&lt;undefined&gt;</code>~~
     * [.create(...args)](#module_@the-/refactor.create) ⇒ <code>TheRefactor</code>
     * [.default()](#module_@the-/refactor.default)
 
@@ -23,94 +17,6 @@ Refactoring tool for the-components
 
 ### refactor.TheRefactor
 **Kind**: static class of [<code>@the-/refactor</code>](#module_@the-/refactor)  
-
-* [.TheRefactor](#module_@the-/refactor.TheRefactor)
-    * [.convert(pattern, converter, [options])](#module_@the-/refactor.TheRefactor+convert) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * [.process(pattern, from, to, [options])](#module_@the-/refactor.TheRefactor+process) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * [.rename(pattern, convert, [options])](#module_@the-/refactor.TheRefactor+rename) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * [.renameDir(src, dest)](#module_@the-/refactor.TheRefactor+renameDir) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * [.rewrite(pattern, rules, [options])](#module_@the-/refactor.TheRefactor+rewrite) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * ~~[.scatter(src, dirnames)](#module_@the-/refactor.TheRefactor+scatter) ⇒ <code>Promise.&lt;undefined&gt;</code>~~
-
-<a name="module_@the-/refactor.TheRefactor+convert"></a>
-
-#### theRefactor.convert(pattern, converter, [options]) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Process with convert function
-
-**Kind**: instance method of [<code>TheRefactor</code>](#module_@the-/refactor.TheRefactor)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| pattern | <code>string</code> |  | Filename pattern |
-| converter | <code>function</code> |  |  |
-| [options] | <code>Object</code> | <code>{}</code> |  |
-
-<a name="module_@the-/refactor.TheRefactor+process"></a>
-
-#### theRefactor.process(pattern, from, to, [options]) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Process files to rename
-
-**Kind**: instance method of [<code>TheRefactor</code>](#module_@the-/refactor.TheRefactor)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| pattern | <code>string</code> \| <code>Array.&lt;string&gt;</code> |  | Patterns to process |
-| from | <code>string</code> |  | From text |
-| to | <code>string</code> |  | TO text |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
-<a name="module_@the-/refactor.TheRefactor+rename"></a>
-
-#### theRefactor.rename(pattern, convert, [options]) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Rename files
-
-**Kind**: instance method of [<code>TheRefactor</code>](#module_@the-/refactor.TheRefactor)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| pattern | <code>string</code> |  | Source file name patterns |
-| convert | <code>function</code> |  | Converter |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
-<a name="module_@the-/refactor.TheRefactor+renameDir"></a>
-
-#### theRefactor.renameDir(src, dest) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Rename directory
-
-**Kind**: instance method of [<code>TheRefactor</code>](#module_@the-/refactor.TheRefactor)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>string</code> | Directory rename from |
-| dest | <code>string</code> | Directory rename to |
-
-<a name="module_@the-/refactor.TheRefactor+rewrite"></a>
-
-#### theRefactor.rewrite(pattern, rules, [options]) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Rewrite file content
-
-**Kind**: instance method of [<code>TheRefactor</code>](#module_@the-/refactor.TheRefactor)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| pattern | <code>string</code> \| <code>Array.&lt;string&gt;</code> |  | Filename pattern |
-| rules | <code>Object</code> |  | Replace rules |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
-<a name="module_@the-/refactor.TheRefactor+scatter"></a>
-
-#### ~~theRefactor.scatter(src, dirnames) ⇒ <code>Promise.&lt;undefined&gt;</code>~~
-***Deprecated***
-
-Scatter a file to directories
-
-**Kind**: instance method of [<code>TheRefactor</code>](#module_@the-/refactor.TheRefactor)  
-
-| Param | Type |
-| --- | --- |
-| src | <code>string</code> | 
-| dirnames | <code>Array.&lt;string&gt;</code> | 
-
 <a name="module_@the-/refactor.create"></a>
 
 ### refactor.create(...args) ⇒ <code>TheRefactor</code>

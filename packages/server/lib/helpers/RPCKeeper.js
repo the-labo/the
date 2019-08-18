@@ -1,3 +1,5 @@
+'use strict'
+
 /**
  * Mixin to keep
  * @memberof module:@the-/server.helpers
@@ -5,9 +7,6 @@
  * @param {function()} Class
  * @returns {function()} Class
  */
-'use strict'
-
-/** @lends module:@the-/server.helpers.RPCKeeper */
 function RPCKeeper({ ioConnector, keepDuration = 4000, metricsCounter }) {
   const kept = {}
   /**

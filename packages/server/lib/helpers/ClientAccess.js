@@ -2,35 +2,32 @@
 
 /**
  * Mixin for client
- * @memberof module:@the-/server.mixins
- * @function clientMix
- * @param {function()} Class
- * @returns {function()} Class
+ * @memberof module:@the-/server.helpers
+ * @function ClientAccess
+ * @param {Object} config
+ * @returns {Object} Instance
  */
-/** @lends module:@the-/server.mixins.clientMix */
-function clientMix(Class) {
+function ClientAccess({ connectionStore }) {
   /**
-   * @memberof module:@the-/server.mixins.clientMix
+   * @memberof module:@the-/server.helpers.ClientAccess
    * @inner
+   * @namespace clientAccess
    */
-  class ClientMixed extends Class {
+  const clientAccess = {
     async getClientConnection(cid, options = {}) {
       const { patiently = false } = options
-      const { connectionStore } = this
       if (patiently) {
         return connectionStore.patientlyGet(cid)
       } else {
         return connectionStore.get(cid)
       }
-    }
-
+    },
     async hasClientConnection(cid) {
-      const connection = await this.getClientConnection(cid)
+      const connection = await clientAccess.getClientConnection(cid)
       return !!connection
-    }
-
+    },
     async removeClientSocket(cid, socketId) {
-      const connection = await this.connectionStore.get(cid)
+      const connection = await connectionStore.get(cid)
       if (!connection) {
         console.warn('[TheServer] Connection already gone', { cid })
         return
@@ -43,24 +40,25 @@ function clientMix(Class) {
       }
 
       connection.socketIds = socketIds.filter((f) => f !== socketId)
-      await this.connectionStore.set(cid, connection)
-    }
-
+      await connectionStore.set(cid, connection)
+    },
     async saveClientSocket(cid, socketId, client) {
-      const connection = await this.connectionStore.get(cid)
+      const connection = await connectionStore.get(cid)
       const socketIds = (connection && connection.socketIds) || []
       while (socketIds.length > 10) {
         socketIds.shift() // Remove staled socket
       }
-      await this.connectionStore.set(cid, {
+      await connectionStore.set(cid, {
         cid,
         client,
         socketIds: socketIds.concat(socketId),
       })
-    }
+    },
   }
 
-  return ClientMixed
+  Object.freeze(clientAccess)
+
+  return clientAccess
 }
 
-module.exports = clientMix
+module.exports = ClientAccess

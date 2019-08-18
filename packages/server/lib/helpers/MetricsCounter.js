@@ -1,11 +1,10 @@
+'use strict'
+
 /**
  * MetricsC Counter
  * @memberof module:@the-/server.helpers
  * @function MetricsCounter
  */
-'use strict'
-
-/** @lends module:@the-/server.helpers.MetricsCounter */
 function MetricsCounter() {
   const counts = {
     controllerAttachCounts: {},

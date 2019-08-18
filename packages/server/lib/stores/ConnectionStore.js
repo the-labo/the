@@ -1,17 +1,16 @@
 'use strict'
 
+const asleep = require('asleep')
+const Store = require('./Store')
+
+const SESSION_STORE_KEY = 'the:server:connection'
+
 /**
  * Client connection store for the-server
  * @memberof module:@the-/server.stores
  * @class ConnectionStore
  * @augments module:@the-/server.stores.Store
  */
-const asleep = require('asleep')
-const Store = require('./Store')
-
-const SESSION_STORE_KEY = 'the:server:connection'
-
-/** @lends module:@the-/server.stores.ConnectionStore */
 class ConnectionStore extends Store {
   constructor(storage) {
     super(storage, {

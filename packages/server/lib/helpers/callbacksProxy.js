@@ -6,7 +6,6 @@
  * @function callbacksProxy
  * @returns {Proxy} Proxy instance
  */
-/** @lends module:@the-/server.helpers.callbacksProxy */
 function callbacksProxy(options = {}) {
   const { client, controllerName, onCallback } = options
   return new Proxy(

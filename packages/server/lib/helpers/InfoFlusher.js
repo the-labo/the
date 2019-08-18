@@ -1,5 +1,9 @@
 'use strict'
 
+const { mkdirpAsync, writeFileAsync } = require('asfs')
+const { isMaster } = require('cluster')
+const path = require('path')
+
 /**
  * Mixins for info
  * @memberof module:@the-/server.helpers
@@ -8,11 +12,6 @@
  * @param {function()} getter - Info getter
  * @returns {Object}
  */
-const { mkdirpAsync, writeFileAsync } = require('asfs')
-const { isMaster } = require('cluster')
-const path = require('path')
-
-/** @lends module:@the-/server.helpers.InfoFlusher */
 function InfoFlusher(filename, getter) {
   const state = {
     flushInfoTimer: -1,

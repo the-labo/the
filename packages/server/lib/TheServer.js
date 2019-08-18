@@ -1,12 +1,3 @@
-/**
- * HTTP server for the-framework
- * @memberof module:@the-/server
- * @class TheServer
- * @param {Object} config
- * @param {string[]} langs - Supported langs
- * @param {string} logFile - Log file
- * @param {function[]} middlewares - Koa middlewares
- */
 'use strict'
 
 const { ARedis } = require('aredis')
@@ -29,22 +20,28 @@ const {
   serversideRendering,
   toControllerDriverFactory,
 } = require('./helpers')
+const ClientAccess = require('./helpers/ClientAccess')
 const ControllerDriverPool = require('./helpers/ControllerDriverPool')
 const InfoFlusher = require('./helpers/InfoFlusher')
 const MetricsCounter = require('./helpers/MetricsCounter')
 const RPCKeeper = require('./helpers/RPCKeeper')
-const { clientMix } = require('./mixins')
 const { ConnectionStore, SessionStore } = require('./stores')
-const streamDriverPool = require('./streaming/streamDriverPool')
 const toStreamDriverFactory = require('./streaming/toStreamDriverFactory')
+const streamDriverPool = require('./streaming/streamDriverPool')
 const debug = require('debug')('the:server')
 
 const assert = theAssert('@the-/server')
 
-const TheServerBase = [clientMix].reduce((C, mix) => mix(C), RFunc)
-
-/** @lends module:@the-/server.TheServer  */
-class TheServer extends TheServerBase {
+/**
+ * HTTP server for the-framework
+ * @memberof module:@the-/server
+ * @class TheServer
+ * @param {Object} config
+ * @param {string[]} langs - Supported langs
+ * @param {string} logFile - Log file
+ * @param {function[]} middlewares - Koa middlewares
+ */
+class TheServer extends RFunc {
   constructor(config = {}) {
     const {
       cacheDir = theTmp.generateDirSync({ prefix: 'the-server' }).path,
@@ -277,10 +274,12 @@ class TheServer extends TheServerBase {
     const controllerDriverPool = ControllerDriverPool()
     this.controllerDriverPool = controllerDriverPool
     this.metricsCounter = metricsCounter
+    const { connectionStore } = this
+    const clientAccess = ClientAccess({ connectionStore })
     const ioConnector = IOConnector(io, {
-      connectionStore: this.connectionStore,
+      connectionStore,
       onIOClientCame: async (cid, socketId, client) => {
-        await this.saveClientSocket(cid, socketId, client)
+        await clientAccess.saveClientSocket(cid, socketId, client)
         const controllerNames = Object.keys(this.ControllerDriverFactories)
         for (const controllerName of controllerNames) {
           const driver = this.createControllerDriver(controllerName, client)
@@ -295,7 +294,7 @@ class TheServer extends TheServerBase {
       onIOClientGone: async (cid, socketId, reason) => {
         // TODO Wait until onIOClientCame done
         const { rpcKeeper } = this
-        const hasConnection = await this.hasClientConnection(cid)
+        const hasConnection = await clientAccess.hasClientConnection(cid)
         if (!hasConnection) {
           console.warn('[TheServer] Connection already gone for cid:', cid)
         }
@@ -318,7 +317,7 @@ class TheServer extends TheServerBase {
         this.streamDriverPool.cleanup(cid)
         rpcKeeper.stopKeepTimersFor(cid)
 
-        await this.removeClientSocket(cid, socketId, reason)
+        await clientAccess.removeClientSocket(cid, socketId, reason)
       },
       onRPCAbort: async () => {
         // TODO Support aborting RPC Call

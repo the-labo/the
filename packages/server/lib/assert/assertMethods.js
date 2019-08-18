@@ -7,7 +7,6 @@
  * @param {string[]} reservedNames
  * @throws {Error} The server error
  */
-/** @lends module:@the-/server.assert.assertMethods */
 function assertMethods(Class, reservedNames) {
   for (const name of reservedNames) {
     const hit = Class.prototype[name]

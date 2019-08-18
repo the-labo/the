@@ -1,7 +1,3 @@
-/**
- * @memberof module:@the-/server.connectors
- * @function IOConnector
- */
 'use strict'
 
 const NAMESPACE = '/rpc'
@@ -14,7 +10,10 @@ const { decode, encode } = new ThePack({
   converter: ThePackConverters.NoopConverter,
 })
 
-/** @lends module:@the-/server.connectors.IOConnector */
+/**
+ * @memberof module:@the-/server.connectors
+ * @function IOConnector
+ */
 function IOConnector(
   io,
   {

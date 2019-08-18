@@ -1,11 +1,6 @@
 'use strict'
 
 /**
- * Stream pool
- * @memberof module:@the-/server.helpers
- * @function streamPool
- */
-/**
  * @memberof module:@the-/server.helpers
  * @inner
  * @class StreamDriverPool
@@ -52,7 +47,11 @@ class StreamDriverPool {
   }
 }
 
-/** @lends module:@the-/server.helpers.streamPool */
+/**
+ * Stream pool
+ * @memberof module:@the-/server.helpers
+ * @function streamPool
+ */
 function streamDriverPool(...args) {
   return new StreamDriverPool(...args)
 }

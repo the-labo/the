@@ -5,7 +5,6 @@
  * @memberof module:@the-/server.stores
  * @class Store
  */
-/** @lends module:@the-/server.stores.Store */
 class Store {
   constructor(storage, options = {}) {
     const {

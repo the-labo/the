@@ -5,7 +5,6 @@
  * @memberof module:@the-/server
  * @namespace buildInEndpoints
  */
-/** @lends module:@the-/server.buildInEndpoints */
 module.exports = {
   '/the/info': async (ctx) => {
     const { server } = ctx

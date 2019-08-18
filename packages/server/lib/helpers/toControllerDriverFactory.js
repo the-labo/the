@@ -1,8 +1,3 @@
-/**
- * @memberof module:@the-/server.helpers
- * @function toControllerDriverFactory
- * @returns {function()}
- */
 'use strict'
 
 const isClass = require('is-class')
@@ -12,7 +7,11 @@ const SessionAccess = require('./SessionAccess')
 
 const assert = theAssert('@the-/server')
 
-/** @lends module:@the-/server.helpers.toControllerDriverFactory */
+/**
+ * @memberof module:@the-/server.helpers
+ * @function toControllerDriverFactory
+ * @returns {function()}
+ */
 function toControllerDriverFactory(ControllerFactory, options = {}) {
   const { controllerName, inject, sessionStore } = options
   unlessProduction(() => {
