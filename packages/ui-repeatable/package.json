@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-repeatable",
   "description": "Repeatable of the-component",
-  "version": "15.4.9",
+  "version": "15.4.10",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,16 +12,19 @@
   },
   "dependencies": {
     "@the-/const-ui": "^15.4.5",
-    "@the-/ui-condition": "^15.4.9",
-    "@the-/ui-spin": "^15.4.9",
-    "@the-/ui-style": "^15.4.10",
+    "@the-/ui-condition": "^15.4.10",
+    "@the-/ui-spin": "^15.4.10",
+    "@the-/ui-style": "^15.4.11",
     "@the-/util-ui": "^15.4.12",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
-    "coz": "^7.0.19"
+    "coz": "^7.0.19",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1"
   },
   "engines": {
     "node": ">=10",

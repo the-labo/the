@@ -4,7 +4,7 @@
  * @description Component to show caught errors
  * @module @the-/ui-caught
  * @typicalname uiCaught
- * @version 15.4.8
+ * @version 15.4.10
  */
 'use strict'
 

@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-head",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-head",
     "order": 0,
     "typicalname": "uiHead",
-    "version": "15.4.5"
+    "version": "15.4.10"
   },
   {
     "description": "Head of the-components",
