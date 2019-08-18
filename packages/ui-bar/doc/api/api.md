@@ -32,7 +32,7 @@
 ## @the-/ui-bar
 Bar of the-components
 
-**Version**: 15.4.8  
+**Version**: 15.4.10  
 <a name="TheActionBar"></a>
 
 ## TheActionBar

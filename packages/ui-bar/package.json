@@ -1,4 +1,7 @@
 {
+  "name": "@the-/ui-bar",
+  "description": "Bar of the-components",
+  "version": "15.4.10",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -9,18 +12,20 @@
   },
   "dependencies": {
     "@the-/const-ui": "^15.4.5",
-    "@the-/ui-button": "^15.4.9",
-    "@the-/ui-container": "^15.4.8",
+    "@the-/ui-button": "^15.4.10",
+    "@the-/ui-container": "^15.4.10",
     "@the-/ui-style": "^15.4.10",
     "@the-/util-ui": "^15.4.12",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
-  "description": "Bar of the-components",
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
     "coz": "^7.0.19",
-    "objnest": "^5.0.6"
+    "objnest": "^5.0.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1"
   },
   "engines": {
     "node": ">=10",
@@ -33,7 +38,6 @@
   ],
   "license": "MIT",
   "main": "shim",
-  "name": "@the-/ui-bar",
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
@@ -47,6 +51,5 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.9"
+  }
 }

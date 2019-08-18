@@ -4,7 +4,7 @@
  * @description Html of the-components
  * @module @the-/ui-html
  * @typicalname uiHtml
- * @version 15.4.9
+ * @version 15.4.10
  */
 'use strict'
 
