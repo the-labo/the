@@ -41,3 +41,5 @@ doc
 example
 misc/mocks
 test
+
+*.html

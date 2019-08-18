@@ -10,7 +10,7 @@ async function main() {
   await new TheRefactor().convert('packages/*/.npmignore', (content) => {
     const lines = content.split(EOL)
 
-    const adding = ['doc', 'example']
+    const adding = ['doc', 'example', 'test', '*.html']
     for (const k of adding) {
       const found = lines.some((line) => line.trim() === k.trim())
       if (!found) {
