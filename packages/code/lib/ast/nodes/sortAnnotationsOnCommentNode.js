@@ -63,12 +63,22 @@ function sortAnnotationsOnCommentNode(CommentNode, { swap }) {
     return 0
   })
   const rangeFor = (annotation) => [annotation.start, annotation.end]
-  for (let i = 0; i < annotations.length; i++) {
+  for (let i = annotations.length - 1; 0 <= i; i--) {
     const annotation = annotations[i]
     const sorted = sortedAnnotations[i]
-    if (annotation.start !== sorted.start) {
-      return swap(rangeFor(sorted), rangeFor(annotation))
+    if (annotation.start === sorted.start) {
+      continue
     }
+    const sortedIndex = annotations.findIndex((a) => sorted.start === a.start)
+    if (sortedIndex < i) {
+      const hasFormer = annotations
+        .slice(sortedIndex, i - 1)
+        .some((a) => a.kind.name === annotation.kind.name)
+      if (hasFormer) {
+        continue
+      }
+    }
+    return swap(rangeFor(sorted), rangeFor(annotation))
   }
 }
 

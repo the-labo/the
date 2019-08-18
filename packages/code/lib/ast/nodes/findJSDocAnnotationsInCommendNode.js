@@ -116,7 +116,9 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
     }
     annotations.push(workingAnnotation)
   }
-  return annotations.map((annotation) => ({ ...annotation }))
+  return annotations
+    .map((annotation) => ({ ...annotation }))
+    .sort((a, b) => a.start - b.start)
 }
 
 module.exports = findJSDocAnnotationsInCommendNode

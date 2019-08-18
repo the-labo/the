@@ -13,7 +13,7 @@
     "name": "@the-/client",
     "order": 2,
     "typicalname": "client",
-    "version": "15.5.5"
+    "version": "15.6.0"
   },
   {
     "id": "module:@the-/client.TheClient()",
@@ -21,7 +21,7 @@
     "longname": "module:@the-/client.TheClient",
     "memberof": "module:@the-/client.TheClient",
     "name": "TheClient",
-    "order": 5,
+    "order": 6,
     "params": [
       {
         "type": {
@@ -90,7 +90,7 @@
     "longname": "addCallbacks",
     "meta": {
       "filename": "asController.js",
-      "lineno": 46,
+      "lineno": 47,
       "path": "lib/helpers"
     },
     "name": "addCallbacks",
@@ -170,7 +170,7 @@
     "longname": "setCallback",
     "meta": {
       "filename": "asController.js",
-      "lineno": 91,
+      "lineno": 92,
       "path": "lib/helpers"
     },
     "name": "setCallback",
@@ -183,7 +183,7 @@
     "longname": "TheClientScope",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 399,
+      "lineno": 422,
       "path": "lib"
     },
     "name": "TheClientScope",
@@ -217,13 +217,13 @@
   {
     "async": true,
     "description": "Invoke a method",
-    "id": "module:@the-/client.TheClient#invoke",
+    "id": "TheClient#invoke",
     "kind": "function",
-    "longname": "module:@the-/client.TheClient#invoke",
-    "memberof": "module:@the-/client.TheClient",
+    "longname": "TheClient#invoke",
+    "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 189,
+      "lineno": 195,
       "path": "lib"
     },
     "name": "invoke",
@@ -262,13 +262,13 @@
   {
     "async": true,
     "description": "Create an stream to server",
-    "id": "module:@the-/client.TheClient#stream",
+    "id": "TheClient#stream",
     "kind": "function",
-    "longname": "module:@the-/client.TheClient#stream",
-    "memberof": "module:@the-/client.TheClient",
+    "longname": "TheClient#stream",
+    "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 301,
+      "lineno": 319,
       "path": "lib"
     },
     "name": "stream",
@@ -327,13 +327,13 @@
   {
     "async": true,
     "description": "Use a controller module",
-    "id": "module:@the-/client.TheClient#use",
+    "id": "TheClient#use",
     "kind": "function",
-    "longname": "module:@the-/client.TheClient#use",
-    "memberof": "module:@the-/client.TheClient",
+    "longname": "TheClient#use",
+    "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 318,
+      "lineno": 337,
       "path": "lib"
     },
     "name": "use",
@@ -384,13 +384,13 @@
   {
     "async": true,
     "description": "Use all controller modules",
-    "id": "module:@the-/client.TheClient#useAll",
+    "id": "TheClient#useAll",
     "kind": "function",
-    "longname": "module:@the-/client.TheClient#useAll",
-    "memberof": "module:@the-/client.TheClient",
+    "longname": "TheClient#useAll",
+    "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 366,
+      "lineno": 387,
       "path": "lib"
     },
     "name": "useAll",
@@ -428,7 +428,7 @@
     "memberof": "module:@the-/client.mixins.infoMix~InfoMixed",
     "meta": {
       "filename": "infoMix.js",
-      "lineno": 30,
+      "lineno": 29,
       "path": "lib/mixins"
     },
     "name": "serverInfo",
@@ -513,11 +513,11 @@
     "memberof": "module:@the-/client.TheClient",
     "meta": {
       "filename": "infoMix.js",
-      "lineno": 30,
+      "lineno": 29,
       "path": "lib/mixins"
     },
     "name": "serverInfo",
-    "order": 33,
+    "order": 31,
     "params": [
       {
         "type": {
@@ -555,7 +555,7 @@
       "path": "lib/mixins"
     },
     "name": "pingPongAnd",
-    "order": 34,
+    "order": 32,
     "params": [
       {
         "type": {
@@ -590,6 +590,21 @@
     "scope": "instance"
   },
   {
+    "access": "protected",
+    "id": "module:@the-/client.TheClientBase",
+    "kind": "class",
+    "longname": "module:@the-/client.TheClientBase",
+    "memberof": "module:@the-/client",
+    "meta": {
+      "filename": "TheClient.js",
+      "lineno": 26,
+      "path": "lib"
+    },
+    "name": "TheClientBase",
+    "order": 4,
+    "scope": "static"
+  },
+  {
     "augments": [
       "module:@the-/client.mixins.infoMix~InfoMixed",
       "module:@the-/client.mixins.streamMix~StreamMixed",
@@ -602,26 +617,11 @@
     "memberof": "module:@the-/client",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 3,
+      "lineno": 37,
       "path": "lib"
     },
     "name": "TheClient",
-    "order": 4,
-    "scope": "static"
-  },
-  {
-    "access": "protected",
-    "id": "module:@the-/client.TheClientBase",
-    "kind": "class",
-    "longname": "module:@the-/client.TheClientBase",
-    "memberof": "module:@the-/client",
-    "meta": {
-      "filename": "TheClient.js",
-      "lineno": 35,
-      "path": "lib"
-    },
-    "name": "TheClientBase",
-    "order": 6,
+    "order": 5,
     "scope": "static"
   },
   {
@@ -693,7 +693,7 @@
     "memberof": "module:@the-/client",
     "meta": {
       "filename": "create.js",
-      "lineno": 3,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -737,10 +737,10 @@
   },
   {
     "description": "Create the client instance",
-    "id": "module:@the-/client.TheClient.for",
+    "id": "TheClient.for",
     "kind": "function",
-    "longname": "module:@the-/client.TheClient.for",
-    "memberof": "module:@the-/client.TheClient",
+    "longname": "TheClient.for",
+    "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
       "lineno": 55,
@@ -843,7 +843,7 @@
     "memberof": "module:@the-/client.helpers",
     "meta": {
       "filename": "debugController.js",
-      "lineno": 2,
+      "lineno": 14,
       "path": "lib/helpers"
     },
     "name": "debugController",
@@ -858,7 +858,7 @@
     "memberof": "module:@the-/client.helpers",
     "meta": {
       "filename": "debugStream.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/helpers"
     },
     "name": "debugStream",
@@ -873,7 +873,7 @@
     "memberof": "module:@the-/client.helpers",
     "meta": {
       "filename": "parseClientUrl.js",
-      "lineno": 3,
+      "lineno": 7,
       "path": "lib/helpers"
     },
     "name": "parseClientUrl",
@@ -908,7 +908,7 @@
     "memberof": "module:@the-/client.mixins",
     "meta": {
       "filename": "infoMix.js",
-      "lineno": 3,
+      "lineno": 7,
       "path": "lib/mixins"
     },
     "name": "infoMix",
@@ -941,7 +941,7 @@
     "memberof": "module:@the-/client.mixins",
     "meta": {
       "filename": "pingPongMix.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/mixins"
     },
     "name": "pingPongMix",
@@ -970,45 +970,13 @@
     "scope": "static"
   },
   {
-    "id": "module:@the-/client.mixins.streamMix",
-    "kind": "function",
-    "longname": "module:@the-/client.mixins.streamMix",
-    "memberof": "module:@the-/client.mixins",
-    "meta": {
-      "filename": "streamMix.js",
-      "lineno": 3,
-      "path": "lib/mixins"
-    },
-    "name": "streamMix",
-    "order": 31,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        }
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        }
-      }
-    ],
-    "scope": "static"
-  },
-  {
     "id": "module:@the-/client.mixins.infoMix~InfoMixed",
     "kind": "class",
     "longname": "module:@the-/client.mixins.infoMix~InfoMixed",
     "memberof": "module:@the-/client.mixins.infoMix",
     "meta": {
       "filename": "infoMix.js",
-      "lineno": 20,
+      "lineno": 19,
       "path": "lib/mixins"
     },
     "name": "InfoMixed",
@@ -1027,20 +995,6 @@
     },
     "name": "PingPongMixed",
     "order": 29,
-    "scope": "inner"
-  },
-  {
-    "id": "module:@the-/client.mixins.streamMix~StreamMixed",
-    "kind": "class",
-    "longname": "module:@the-/client.mixins.streamMix~StreamMixed",
-    "memberof": "module:@the-/client.mixins.streamMix",
-    "meta": {
-      "filename": "streamMix.js",
-      "lineno": 149,
-      "path": "lib/mixins"
-    },
-    "name": "StreamMixed",
-    "order": 32,
     "scope": "inner"
   }
 ]

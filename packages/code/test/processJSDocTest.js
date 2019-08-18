@@ -72,8 +72,8 @@ describe('process-js-doc', () => {
       `
 /**
  * @function hoge
- * @param d
  * @param c
+ * @param d
  * @param a
  * @example a
  * s
@@ -143,9 +143,9 @@ describe('process-js-doc', () => {
       `
 /**
  * @typedef {Object} GenerateResult
+ * @property {function()} cleanup
  * @property {Object} descriptor
  * @property {string} path - Filename
- * @property {function()} cleanup
  */
 `,
     )
@@ -211,8 +211,26 @@ describe('process-js-doc', () => {
 `)
   })
 
+  it('Sort 3', async () => {
+    equal(
+      await processJSDoc(`
+  /**
+   * @param foo
+   * @param bar
+   * @function hoge
+   */
+`),`
+  /**
+   * @function hoge
+   * @param foo
+   * @param bar
+   */
+`
+    )
+  })
+
   it('Complete jsdoc params', async () => {
-    console.log(
+    equal(
       await processJSDoc(`
   // x
   /**
@@ -226,21 +244,21 @@ describe('process-js-doc', () => {
   }
   module.exports = function Hoge(){}
         `),
-      //     `
-      // // x
-      // /**
-      //  * This is hoge
-      //  * @async
-      //  * @function Hoge
-      //  * @param bar
-      //  * @param [value=x]
-      //  * @param foo
-      //  * @example hoge of hoge
-      //  */
-      // async function Hoge(foo, bar, value=x){
-      // }
-      // module.exports = function Hoge(){}
-      //       `,
+      `
+  // x
+  /**
+   * This is hoge
+   * @function Hoge
+   * @async
+   * @param foo
+   * @param bar
+   * @param [value=x]
+   * @example hoge of hoge
+   */
+  async function Hoge(foo, bar, value=x){
+  }
+  module.exports = function Hoge(){}
+        `,
     )
   })
 

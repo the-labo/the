@@ -38,22 +38,15 @@
 ## @the-/client
 Client for the-server
 
-**Version**: 15.5.5  
+**Version**: 15.6.0  
 **License**: MIT  
 
 * [@the-/client](#module_@the-/client)
+    * [.TheClientBase](#module_@the-/client.TheClientBase)
     * [.TheClient](#module_@the-/client.TheClient) ⇐ [<code>InfoMixed</code>](#module_@the-/client.mixins.infoMix..InfoMixed)
         * [new TheClient(url, config)](#new_module_@the-/client.TheClient_new)
-        * _instance_
-            * [.invoke(moduleName, methodName, ...params)](#module_@the-/client.TheClient+invoke)
-            * [.stream(name, params, [options])](#module_@the-/client.TheClient+stream) ⇒ <code>\*</code>
-            * [.use(controllerName, [options])](#module_@the-/client.TheClient+use) ⇒ <code>\*</code>
-            * [.useAll([options])](#module_@the-/client.TheClient+useAll) ⇒ <code>Promise.&lt;Object&gt;</code>
-            * [.serverInfo([options])](#module_@the-/client.mixins.infoMix..InfoMixed+serverInfo) ⇒ <code>Promise.&lt;Object&gt;</code>
-            * [.pingPongAnd(callback, [options])](#module_@the-/client.mixins.pingPongMix..PingPongMixed+pingPongAnd) ⇒ <code>function</code>
-        * _static_
-            * [.for(namespace, [config])](#module_@the-/client.TheClient.for) ⇒ <code>TheClient</code>
-    * [.TheClientBase](#module_@the-/client.TheClientBase)
+        * [.serverInfo([options])](#module_@the-/client.mixins.infoMix..InfoMixed+serverInfo) ⇒ <code>Promise.&lt;Object&gt;</code>
+        * [.pingPongAnd(callback, [options])](#module_@the-/client.mixins.pingPongMix..PingPongMixed+pingPongAnd) ⇒ <code>function</code>
     * [.constants](#module_@the-/client.constants) : <code>object</code>
         * [.IOEvents](#module_@the-/client.constants.IOEvents) : <code>object</code>
     * [.helpers](#module_@the-/client.helpers) : <code>object</code>
@@ -68,28 +61,24 @@ Client for the-server
         * [.pingPongMix(Class)](#module_@the-/client.mixins.pingPongMix) ⇒ <code>function</code>
             * [~PingPongMixed](#module_@the-/client.mixins.pingPongMix..PingPongMixed)
                 * [.pingPongAnd(callback, [options])](#module_@the-/client.mixins.pingPongMix..PingPongMixed+pingPongAnd) ⇒ <code>function</code>
-        * [.streamMix()](#module_@the-/client.mixins.streamMix) ⇒ <code>function</code>
-            * [~StreamMixed](#module_@the-/client.mixins.streamMix..StreamMixed)
     * [.create(...args)](#module_@the-/client.create) ⇒ <code>TheClient</code>
     * [.default()](#module_@the-/client.default)
 
+<a name="module_@the-/client.TheClientBase"></a>
+
+### client.TheClientBase
+**Kind**: static class of [<code>@the-/client</code>](#module_@the-/client)  
+**Access**: protected  
 <a name="module_@the-/client.TheClient"></a>
 
 ### client.TheClient ⇐ [<code>InfoMixed</code>](#module_@the-/client.mixins.infoMix..InfoMixed)
 **Kind**: static class of [<code>@the-/client</code>](#module_@the-/client)  
-**Extends**: [<code>InfoMixed</code>](#module_@the-/client.mixins.infoMix..InfoMixed), [<code>StreamMixed</code>](#module_@the-/client.mixins.streamMix..StreamMixed), [<code>TheClientBase</code>](#module_@the-/client.TheClientBase), [<code>PingPongMixed</code>](#module_@the-/client.mixins.pingPongMix..PingPongMixed)  
+**Extends**: [<code>InfoMixed</code>](#module_@the-/client.mixins.infoMix..InfoMixed), <code>module:@the-/client.mixins.streamMix~StreamMixed</code>, [<code>TheClientBase</code>](#module_@the-/client.TheClientBase), [<code>PingPongMixed</code>](#module_@the-/client.mixins.pingPongMix..PingPongMixed)  
 
 * [.TheClient](#module_@the-/client.TheClient) ⇐ [<code>InfoMixed</code>](#module_@the-/client.mixins.infoMix..InfoMixed)
     * [new TheClient(url, config)](#new_module_@the-/client.TheClient_new)
-    * _instance_
-        * [.invoke(moduleName, methodName, ...params)](#module_@the-/client.TheClient+invoke)
-        * [.stream(name, params, [options])](#module_@the-/client.TheClient+stream) ⇒ <code>\*</code>
-        * [.use(controllerName, [options])](#module_@the-/client.TheClient+use) ⇒ <code>\*</code>
-        * [.useAll([options])](#module_@the-/client.TheClient+useAll) ⇒ <code>Promise.&lt;Object&gt;</code>
-        * [.serverInfo([options])](#module_@the-/client.mixins.infoMix..InfoMixed+serverInfo) ⇒ <code>Promise.&lt;Object&gt;</code>
-        * [.pingPongAnd(callback, [options])](#module_@the-/client.mixins.pingPongMix..PingPongMixed+pingPongAnd) ⇒ <code>function</code>
-    * _static_
-        * [.for(namespace, [config])](#module_@the-/client.TheClient.for) ⇒ <code>TheClient</code>
+    * [.serverInfo([options])](#module_@the-/client.mixins.infoMix..InfoMixed+serverInfo) ⇒ <code>Promise.&lt;Object&gt;</code>
+    * [.pingPongAnd(callback, [options])](#module_@the-/client.mixins.pingPongMix..PingPongMixed+pingPongAnd) ⇒ <code>function</code>
 
 <a name="new_module_@the-/client.TheClient_new"></a>
 
@@ -99,57 +88,6 @@ Client for the-server
 | --- | --- |
 | url | <code>string</code> | 
 | config | <code>Object</code> | 
-
-<a name="module_@the-/client.TheClient+invoke"></a>
-
-#### theClient.invoke(moduleName, methodName, ...params)
-Invoke a method
-
-**Kind**: instance method of [<code>TheClient</code>](#module_@the-/client.TheClient)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| moduleName | <code>string</code> |  |
-| methodName | <code>string</code> | Name of method to invoke |
-| ...params | <code>\*</code> | Parameters |
-
-<a name="module_@the-/client.TheClient+stream"></a>
-
-#### theClient.stream(name, params, [options]) ⇒ <code>\*</code>
-Create an stream to server
-
-**Kind**: instance method of [<code>TheClient</code>](#module_@the-/client.TheClient)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| name | <code>string</code> |  |  |
-| params | <code>Object</code> |  | Stream params |
-| [options] | <code>Object</code> | <code>{}</code> | Optional setting |
-| [options.debug] | <code>boolean</code> |  | With debug mode |
-
-<a name="module_@the-/client.TheClient+use"></a>
-
-#### theClient.use(controllerName, [options]) ⇒ <code>\*</code>
-Use a controller module
-
-**Kind**: instance method of [<code>TheClient</code>](#module_@the-/client.TheClient)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| controllerName | <code>string</code> |  | Module name |
-| [options] | <code>Object</code> | <code>{}</code> | Optional setting |
-| [options.debug] | <code>boolean</code> |  | With debug mode |
-
-<a name="module_@the-/client.TheClient+useAll"></a>
-
-#### theClient.useAll([options]) ⇒ <code>Promise.&lt;Object&gt;</code>
-Use all controller modules
-
-**Kind**: instance method of [<code>TheClient</code>](#module_@the-/client.TheClient)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [options] | <code>Object</code> | <code>{}</code> | Optional setting |
 
 <a name="module_@the-/client.mixins.infoMix..InfoMixed+serverInfo"></a>
 
@@ -174,23 +112,6 @@ Send ping to the serve and callback when pong received
 | callback | <code>function</code> |  | Callback func |
 | [options] | <code>Object</code> | <code>{}</code> | Optional setting |
 
-<a name="module_@the-/client.TheClient.for"></a>
-
-#### TheClient.for(namespace, [config]) ⇒ <code>TheClient</code>
-Create the client instance
-
-**Kind**: static method of [<code>TheClient</code>](#module_@the-/client.TheClient)  
-
-| Param | Type | Default |
-| --- | --- | --- |
-| namespace | <code>string</code> | <code>&quot;default&quot;</code> | 
-| [config] | <code>Object</code> | <code>{}</code> | 
-
-<a name="module_@the-/client.TheClientBase"></a>
-
-### client.TheClientBase
-**Kind**: static class of [<code>@the-/client</code>](#module_@the-/client)  
-**Access**: protected  
 <a name="module_@the-/client.constants"></a>
 
 ### client.constants : <code>object</code>
@@ -268,8 +189,6 @@ Client mixin functions
     * [.pingPongMix(Class)](#module_@the-/client.mixins.pingPongMix) ⇒ <code>function</code>
         * [~PingPongMixed](#module_@the-/client.mixins.pingPongMix..PingPongMixed)
             * [.pingPongAnd(callback, [options])](#module_@the-/client.mixins.pingPongMix..PingPongMixed+pingPongAnd) ⇒ <code>function</code>
-    * [.streamMix()](#module_@the-/client.mixins.streamMix) ⇒ <code>function</code>
-        * [~StreamMixed](#module_@the-/client.mixins.streamMix..StreamMixed)
 
 <a name="module_@the-/client.mixins.infoMix"></a>
 
@@ -331,19 +250,6 @@ Send ping to the serve and callback when pong received
 | callback | <code>function</code> |  | Callback func |
 | [options] | <code>Object</code> | <code>{}</code> | Optional setting |
 
-<a name="module_@the-/client.mixins.streamMix"></a>
-
-#### mixins.streamMix() ⇒ <code>function</code>
-**Kind**: static method of [<code>mixins</code>](#module_@the-/client.mixins)  
-
-| Type |
-| --- |
-| <code>function</code> | 
-
-<a name="module_@the-/client.mixins.streamMix..StreamMixed"></a>
-
-##### streamMix~StreamMixed
-**Kind**: inner class of [<code>streamMix</code>](#module_@the-/client.mixins.streamMix)  
 <a name="module_@the-/client.create"></a>
 
 ### client.create(...args) ⇒ <code>TheClient</code>
@@ -420,3 +326,4 @@ Remove callbacks
 | --- | --- | --- |
 | cid | <code>string</code> | Client id |
 | callerKey | <code>string</code> |  |
+
