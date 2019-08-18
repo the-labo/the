@@ -32,7 +32,7 @@
 ## @the-/ui-button
 Button of the-components
 
-**Version**: 15.4.8  
+**Version**: 15.4.10  
 <a name="TheButton"></a>
 
 ## TheButton

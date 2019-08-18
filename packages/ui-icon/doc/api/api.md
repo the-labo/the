@@ -29,7 +29,7 @@
 ## @the-/ui-icon
 Icon of the-components
 
-**Version**: 15.4.4  
+**Version**: 15.4.10  
 <a name="TheIcon"></a>
 
 ## TheIcon

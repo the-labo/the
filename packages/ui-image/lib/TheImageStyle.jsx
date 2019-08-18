@@ -82,6 +82,7 @@ TheImageStyle.data = (options) => {
       '.the-image-img': {
         boxSizing: 'border-box',
         objectFit: 'cover',
+        width: '100%',
       },
     },
     '.the-image.the-image-fit': {

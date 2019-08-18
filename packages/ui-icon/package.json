@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-icon",
   "description": "Icon of the-components",
-  "version": "15.4.9",
+  "version": "15.4.10",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -19,8 +19,11 @@
   },
   "devDependencies": {
     "@the-/ui-demo": "^15.4.8",
-    "@the-/ui-router": "^15.4.8",
-    "coz": "^7.0.19"
+    "@the-/ui-router": "^15.4.9",
+    "coz": "^7.0.19",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1"
   },
   "engines": {
     "node": ">=10",

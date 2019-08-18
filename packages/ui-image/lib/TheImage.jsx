@@ -14,8 +14,8 @@ class TheImage extends React.Component {
     super(props)
     this.elmRef = React.createRef()
     this.state = {
+      busy: true,
       failed: false,
-      loading: true,
     }
     this.resize = this.resize.bind(this)
     this.handleError = this.handleError.bind(this)
@@ -40,8 +40,8 @@ class TheImage extends React.Component {
     const isNewSrc = src && src !== prevSrc
     if (isNewSrc) {
       this.setState({
+        busy: true,
         failed: false,
-        loading: true,
       })
     }
   }
@@ -55,7 +55,7 @@ class TheImage extends React.Component {
       props: { onError },
     } = this
     onError && onError(e)
-    this.setState({ failed: true, loading: false })
+    this.setState({ busy: false, failed: true })
   }
 
   handleLoad(e) {
@@ -63,7 +63,7 @@ class TheImage extends React.Component {
       props: { onLoad },
     } = this
     onLoad && onLoad(e)
-    this.setState({ loading: false })
+    this.setState({ busy: false })
     this.resize()
   }
 
@@ -78,19 +78,20 @@ class TheImage extends React.Component {
         className,
         draggable,
         height,
+        loading,
         notFoundMessage,
         scale,
         src,
         style,
         width,
       },
-      state: { actualHeight, actualWidth, failed, loading },
+      state: { actualHeight, actualWidth, busy, failed },
     } = this
 
     const Wrap = asLink ? 'a' : 'div'
     const asLinkProps = asLink ? { href: src, target: '_blank' } : {}
-    const spinning = !!src && loading && !failed
-    const notFound = !loading && (failed || !src)
+    const spinning = !!src && busy && !failed
+    const notFound = !busy && (failed || !src)
     return (
       <Wrap
         {...htmlAttributesFor(props, {
@@ -120,6 +121,7 @@ class TheImage extends React.Component {
               })}
               draggable={draggable}
               height={actualHeight || height}
+              loading='lazy'
               onError={this.handleError}
               onLoad={this.handleLoad}
               src={src}
@@ -142,9 +144,9 @@ class TheImage extends React.Component {
 
     const elmRect = elm.getBoundingClientRect()
     const {
-      state: { actualHeight, actualWidth, loading },
+      state: { actualHeight, actualWidth, busy },
     } = this
-    if (loading) {
+    if (busy) {
       return
     }
 
@@ -189,6 +191,7 @@ TheImage.defaultProps = {
   background: 'transparent',
   draggable: false,
   height: 'auto',
+  loading: 'lazy',
   notFoundMessage: 'Not Found',
   onError: null,
   onLoad: null,

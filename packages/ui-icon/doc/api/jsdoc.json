@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-icon",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-icon",
     "order": 0,
     "typicalname": "uiIcon",
-    "version": "15.4.4"
+    "version": "15.4.10"
   },
   {
     "description": "Icon of the-components",
