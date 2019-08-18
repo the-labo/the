@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/server
  * @typicalname server
- * @version 16.0.33
+ * @version 16.1.0
  */
 'use strict'
 
@@ -17,7 +17,6 @@ const connectors_ = require('./connectors')
 const constants_ = require('./constants')
 const create_ = require('./create')
 const helpers_ = require('./helpers')
-const mixins_ = require('./mixins')
 const stores_ = require('./stores')
 const default__ = require('./default')
 
@@ -30,7 +29,6 @@ exports.connectors = connectors_
 exports.constants = constants_
 exports.create = create_
 exports.helpers = helpers_
-exports.mixins = mixins_
 exports.stores = stores_
 
 module.exports = default__

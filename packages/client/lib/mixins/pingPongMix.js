@@ -1,13 +1,13 @@
 'use strict'
+
+const DEFAULT_PING_URL = '/the/ping'
+
 /**
  * @memberof module:@the-/client.mixins
  * @function pingPongMix
  * @param {function()} Class - Class to mix
  * @returns {function()} Mixed class
  */
-const DEFAULT_PING_URL = '/the/ping'
-
-/** @lends module:@the-/client.mixins.pingPongMix */
 function pingPongMix(Class) {
   /**
    * @inner

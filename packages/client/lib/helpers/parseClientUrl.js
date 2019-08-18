@@ -1,5 +1,9 @@
 'use strict'
 
+const { get } = require('bwindow')
+const { DEFAULT_URL } = require('rfunc-constants')
+const { format: formatUrl } = require('url')
+
 /**
  * Parse caller URL
  * @memberof module:@the-/client.helpers
@@ -7,11 +11,6 @@
  * @param {Object|string} - URL string or config
  * @returns {string} - Parsed url
  */
-const { get } = require('bwindow')
-const { DEFAULT_URL } = require('rfunc-constants')
-const { format: formatUrl } = require('url')
-
-/** @lends module:@the-/client.helpers.parseClientUrl */
 function parseClientUrl(url) {
   if (typeof url === 'string') {
     const { pathname } = new URL(url)

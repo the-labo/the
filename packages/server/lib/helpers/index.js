@@ -8,6 +8,7 @@
  */
 'use strict'
 
+const ClientAccess_ = require('./ClientAccess')
 const ControllerDriverPool_ = require('./ControllerDriverPool')
 const InfoFlusher_ = require('./InfoFlusher')
 const MetricsCounter_ = require('./MetricsCounter')
@@ -23,6 +24,7 @@ const toControllerDriverFactory_ = require('./toControllerDriverFactory')
 const toLowerKeys_ = require('./toLowerKeys')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
+exports.ClientAccess = ClientAccess_
 exports.ControllerDriverPool = ControllerDriverPool_
 exports.InfoFlusher = InfoFlusher_
 exports.MetricsCounter = MetricsCounter_
@@ -38,6 +40,7 @@ exports.toControllerDriverFactory = toControllerDriverFactory_
 exports.toLowerKeys = toLowerKeys_
 
 module.exports = {
+  ClientAccess: ClientAccess_,
   ControllerDriverPool: ControllerDriverPool_,
   InfoFlusher: InfoFlusher_,
   MetricsCounter: MetricsCounter_,

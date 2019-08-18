@@ -1,15 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/client
- * @class TheClient
- * @augments module:@the-/client.mixins.infoMix~InfoMixed
- * @augments module:@the-/client.mixins.streamMix~StreamMixed
- * @augments module:@the-/client.TheClientBase
- * @augments module:@the-/client.mixins.pingPongMix~PingPongMixed
- * @param {string} url
- * @param {Object} config
- */
 const argx = require('argx')
 const cookies = require('browser-cookies')
 const { restore, save } = require('bstorage')
@@ -27,7 +17,8 @@ const {
   debugStream,
   parseClientUrl,
 } = require('./helpers')
-const { infoMix, pingPongMix, streamMix } = require('./mixins')
+const RemoteStream = require('./helpers/RemoteStream')
+const { infoMix, pingPongMix } = require('./mixins')
 const debug = require('debug')('the:client')
 
 const NAMESPACE = '/rpc'
@@ -36,14 +27,23 @@ const NAMESPACE = '/rpc'
  * @class module:@the-/client.TheClientBase
  * @protected
  */
-const TheClientBase = [pingPongMix, infoMix, streamMix].reduce(
+const TheClientBase = [pingPongMix, infoMix].reduce(
   (Class, mix) => mix(Class),
   RFuncClient,
 )
 
 const { decode, encode } = new ThePack({})
 
-/** @lends module:@the-/client.TheClient */
+/**
+ * @memberof module:@the-/client
+ * @class TheClient
+ * @augments module:@the-/client.mixins.infoMix~InfoMixed
+ * @augments module:@the-/client.mixins.streamMix~StreamMixed
+ * @augments module:@the-/client.TheClientBase
+ * @augments module:@the-/client.mixins.pingPongMix~PingPongMixed
+ * @param {string} url
+ * @param {Object} config
+ */
 class TheClient extends TheClientBase {
   // noinspection ReservedWordAsName
   /**
@@ -299,6 +299,13 @@ class TheClient extends TheClientBase {
       })
     })
     return socket
+  }
+
+  async openStream(name, params) {
+    const { socket } = this
+    const stream = new RemoteStream(name, socket)
+    await stream.open(params)
+    return stream
   }
 
   /**

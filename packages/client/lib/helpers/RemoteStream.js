@@ -1,11 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/client.mixins
- * @function streamMix
- * @param {function()}
- * @returns {function()}
- */
 const asleep = require('asleep')
 const uuid = require('uuid')
 const { unlessProduction } = require('@the-/check')
@@ -141,22 +135,4 @@ class RemoteStream extends TheStream {
   }
 }
 
-/** @lends module:@the-/client.mixins.streamMix */
-function streamMix(Class) {
-  /**
-   * @inner
-   * @memberOf module:@the-/client.mixins.streamMix
-   */
-  class StreamMixed extends Class {
-    async openStream(name, params) {
-      const { socket } = this
-      const stream = new RemoteStream(name, socket)
-      await stream.open(params)
-      return stream
-    }
-  }
-
-  return StreamMixed
-}
-
-module.exports = streamMix
+module.exports = RemoteStream

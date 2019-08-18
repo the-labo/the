@@ -13,7 +13,7 @@
     "name": "@the-/server",
     "order": 3,
     "typicalname": "server",
-    "version": "16.0.33"
+    "version": "16.1.0"
   },
   {
     "description": "HTTP server for the-framework",
@@ -68,7 +68,7 @@
     "longname": "module:@the-/server.stores.ConnectionStore",
     "memberof": "module:@the-/server.stores.ConnectionStore",
     "name": "ConnectionStore",
-    "order": 42
+    "order": 41
   },
   {
     "description": "Client session store for the-server",
@@ -77,7 +77,7 @@
     "longname": "module:@the-/server.stores.SessionStore",
     "memberof": "module:@the-/server.stores.SessionStore",
     "name": "SessionStore",
-    "order": 45
+    "order": 44
   },
   {
     "description": "Client data store for the-server",
@@ -86,7 +86,7 @@
     "longname": "module:@the-/server.stores.Store",
     "memberof": "module:@the-/server.stores.Store",
     "name": "Store",
-    "order": 47
+    "order": 46
   },
   {
     "description": "Events for IO",
@@ -104,10 +104,10 @@
   },
   {
     "description": "Server info",
-    "id": "module:@the-/server.TheServer#info",
+    "id": "TheServer#info",
     "kind": "function",
-    "longname": "module:@the-/server.TheServer#info",
-    "memberof": "module:@the-/server.TheServer",
+    "longname": "TheServer#info",
+    "memberof": "TheServer",
     "meta": {
       "filename": "TheServer.js",
       "lineno": 203,
@@ -121,10 +121,10 @@
   {
     "async": true,
     "description": "Close server",
-    "id": "module:@the-/server.TheServer#close",
+    "id": "TheServer#close",
     "kind": "function",
-    "longname": "module:@the-/server.TheServer#close",
-    "memberof": "module:@the-/server.TheServer",
+    "longname": "TheServer#close",
+    "memberof": "TheServer",
     "meta": {
       "filename": "TheServer.js",
       "lineno": 220,
@@ -158,13 +158,13 @@
   {
     "async": true,
     "description": "Destroy all sessions",
-    "id": "module:@the-/server.TheServer#destroyAllSessions",
+    "id": "TheServer#destroyAllSessions",
     "kind": "function",
-    "longname": "module:@the-/server.TheServer#destroyAllSessions",
-    "memberof": "module:@the-/server.TheServer",
+    "longname": "TheServer#destroyAllSessions",
+    "memberof": "TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 244,
+      "lineno": 246,
       "path": "lib"
     },
     "name": "destroyAllSessions",
@@ -185,13 +185,13 @@
   {
     "async": true,
     "description": "Listen to port",
-    "id": "module:@the-/server.TheServer#listen",
+    "id": "TheServer#listen",
     "kind": "function",
-    "longname": "module:@the-/server.TheServer#listen",
-    "memberof": "module:@the-/server.TheServer",
+    "longname": "TheServer#listen",
+    "memberof": "TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 257,
+      "lineno": 259,
       "path": "lib"
     },
     "name": "listen",
@@ -221,17 +221,17 @@
   {
     "async": true,
     "description": "Cleanup expired data",
-    "id": "module:@the-/server.stores.Store#cleanup",
+    "id": "Store#cleanup",
     "kind": "function",
-    "longname": "module:@the-/server.stores.Store#cleanup",
-    "memberof": "module:@the-/server.stores.Store",
+    "longname": "Store#cleanup",
+    "memberof": "Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 32,
+      "lineno": 31,
       "path": "lib/stores"
     },
     "name": "cleanup",
-    "order": 48,
+    "order": 47,
     "params": [],
     "returns": [
       {
@@ -247,17 +247,17 @@
   {
     "async": true,
     "description": "Delete data",
-    "id": "module:@the-/server.stores.Store#del",
+    "id": "Store#del",
     "kind": "function",
-    "longname": "module:@the-/server.stores.Store#del",
-    "memberof": "module:@the-/server.stores.Store",
+    "longname": "Store#del",
+    "memberof": "Store",
     "meta": {
       "filename": "Store.js",
       "lineno": 54,
       "path": "lib/stores"
     },
     "name": "del",
-    "order": 49,
+    "order": 48,
     "params": [
       {
         "type": {
@@ -283,17 +283,17 @@
   {
     "async": true,
     "description": "Delete all data",
-    "id": "module:@the-/server.stores.Store#delAll",
+    "id": "Store#delAll",
     "kind": "function",
-    "longname": "module:@the-/server.stores.Store#delAll",
-    "memberof": "module:@the-/server.stores.Store",
+    "longname": "Store#delAll",
+    "memberof": "Store",
     "meta": {
       "filename": "Store.js",
       "lineno": 63,
       "path": "lib/stores"
     },
     "name": "delAll",
-    "order": 50,
+    "order": 49,
     "params": [],
     "returns": [
       {
@@ -309,16 +309,52 @@
   {
     "async": true,
     "description": "Get data",
-    "id": "module:@the-/server.stores.Store#get",
+    "id": "Store#get",
     "kind": "function",
-    "longname": "module:@the-/server.stores.Store#get",
-    "memberof": "module:@the-/server.stores.Store",
+    "longname": "Store#get",
+    "memberof": "Store",
     "meta": {
       "filename": "Store.js",
       "lineno": 77,
       "path": "lib/stores"
     },
     "name": "get",
+    "order": 50,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Data id",
+        "name": "id"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Object>"
+          ]
+        }
+      }
+    ],
+    "scope": "instance"
+  },
+  {
+    "async": true,
+    "description": "Check if has data",
+    "id": "Store#has",
+    "kind": "function",
+    "longname": "Store#has",
+    "memberof": "Store",
+    "meta": {
+      "filename": "Store.js",
+      "lineno": 94,
+      "path": "lib/stores"
+    },
+    "name": "has",
     "order": 51,
     "params": [
       {
@@ -335,42 +371,6 @@
       {
         "type": {
           "names": [
-            "Promise.<Object>"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Check if has data",
-    "id": "module:@the-/server.stores.Store#has",
-    "kind": "function",
-    "longname": "module:@the-/server.stores.Store#has",
-    "memberof": "module:@the-/server.stores.Store",
-    "meta": {
-      "filename": "Store.js",
-      "lineno": 93,
-      "path": "lib/stores"
-    },
-    "name": "has",
-    "order": 52,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Data id",
-        "name": "id"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
             "Promise.<boolean>"
           ]
         }
@@ -381,17 +381,17 @@
   {
     "async": true,
     "description": "Get all ids",
-    "id": "module:@the-/server.stores.Store#ids",
+    "id": "Store#ids",
     "kind": "function",
-    "longname": "module:@the-/server.stores.Store#ids",
-    "memberof": "module:@the-/server.stores.Store",
+    "longname": "Store#ids",
+    "memberof": "Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 101,
+      "lineno": 102,
       "path": "lib/stores"
     },
     "name": "ids",
-    "order": 53,
+    "order": 52,
     "params": [],
     "returns": [
       {
@@ -407,260 +407,17 @@
   {
     "async": true,
     "description": "Set data",
-    "id": "module:@the-/server.stores.Store#set",
+    "id": "Store#set",
     "kind": "function",
-    "longname": "module:@the-/server.stores.Store#set",
-    "memberof": "module:@the-/server.stores.Store",
+    "longname": "Store#set",
+    "memberof": "Store",
     "meta": {
       "filename": "Store.js",
-      "lineno": 112,
+      "lineno": 113,
       "path": "lib/stores"
     },
     "name": "set",
-    "order": 54,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Data id",
-        "name": "id"
-      },
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "description": "Data to set",
-        "name": "data"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<undefined>"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Cleanup expired data",
-    "id": "module:@the-/server.stores.ConnectionStore#cleanup",
-    "inherited": true,
-    "inherits": "module:@the-/server.stores.Store#cleanup",
-    "kind": "function",
-    "longname": "module:@the-/server.stores.ConnectionStore#cleanup",
-    "memberof": "module:@the-/server.stores.ConnectionStore",
-    "meta": {
-      "filename": "Store.js",
-      "lineno": 32,
-      "path": "lib/stores"
-    },
-    "name": "cleanup",
-    "order": 58,
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<Array.<string>>"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Delete data",
-    "id": "module:@the-/server.stores.ConnectionStore#del",
-    "inherited": true,
-    "inherits": "module:@the-/server.stores.Store#del",
-    "kind": "function",
-    "longname": "module:@the-/server.stores.ConnectionStore#del",
-    "memberof": "module:@the-/server.stores.ConnectionStore",
-    "meta": {
-      "filename": "Store.js",
-      "lineno": 54,
-      "path": "lib/stores"
-    },
-    "name": "del",
-    "order": 59,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Id to del",
-        "name": "id"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<*>"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Delete all data",
-    "id": "module:@the-/server.stores.ConnectionStore#delAll",
-    "inherited": true,
-    "inherits": "module:@the-/server.stores.Store#delAll",
-    "kind": "function",
-    "longname": "module:@the-/server.stores.ConnectionStore#delAll",
-    "memberof": "module:@the-/server.stores.ConnectionStore",
-    "meta": {
-      "filename": "Store.js",
-      "lineno": 63,
-      "path": "lib/stores"
-    },
-    "name": "delAll",
-    "order": 60,
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<number>"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Get data",
-    "id": "module:@the-/server.stores.ConnectionStore#get",
-    "inherited": true,
-    "inherits": "module:@the-/server.stores.Store#get",
-    "kind": "function",
-    "longname": "module:@the-/server.stores.ConnectionStore#get",
-    "memberof": "module:@the-/server.stores.ConnectionStore",
-    "meta": {
-      "filename": "Store.js",
-      "lineno": 77,
-      "path": "lib/stores"
-    },
-    "name": "get",
-    "order": 61,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Data id",
-        "name": "id"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<Object>"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Check if has data",
-    "id": "module:@the-/server.stores.ConnectionStore#has",
-    "inherited": true,
-    "inherits": "module:@the-/server.stores.Store#has",
-    "kind": "function",
-    "longname": "module:@the-/server.stores.ConnectionStore#has",
-    "memberof": "module:@the-/server.stores.ConnectionStore",
-    "meta": {
-      "filename": "Store.js",
-      "lineno": 93,
-      "path": "lib/stores"
-    },
-    "name": "has",
-    "order": 62,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Data id",
-        "name": "id"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<boolean>"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Get all ids",
-    "id": "module:@the-/server.stores.ConnectionStore#ids",
-    "inherited": true,
-    "inherits": "module:@the-/server.stores.Store#ids",
-    "kind": "function",
-    "longname": "module:@the-/server.stores.ConnectionStore#ids",
-    "memberof": "module:@the-/server.stores.ConnectionStore",
-    "meta": {
-      "filename": "Store.js",
-      "lineno": 101,
-      "path": "lib/stores"
-    },
-    "name": "ids",
-    "order": 63,
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Promise.<Array.<string>>"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "async": true,
-    "description": "Set data",
-    "id": "module:@the-/server.stores.ConnectionStore#set",
-    "inherited": true,
-    "inherits": "module:@the-/server.stores.Store#set",
-    "kind": "function",
-    "longname": "module:@the-/server.stores.ConnectionStore#set",
-    "memberof": "module:@the-/server.stores.ConnectionStore",
-    "meta": {
-      "filename": "Store.js",
-      "lineno": 112,
-      "path": "lib/stores"
-    },
-    "name": "set",
-    "order": 64,
-    "overrides": "module:@the-/server.stores.Store#set",
+    "order": 53,
     "params": [
       {
         "type": {
@@ -699,7 +456,7 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 1,
+      "lineno": 35,
       "path": "lib"
     },
     "name": "TheServer",
@@ -716,11 +473,11 @@
     "memberof": "module:@the-/server.stores",
     "meta": {
       "filename": "ConnectionStore.js",
-      "lineno": 3,
+      "lineno": 8,
       "path": "lib/stores"
     },
     "name": "ConnectionStore",
-    "order": 41,
+    "order": 40,
     "scope": "static"
   },
   {
@@ -733,11 +490,11 @@
     "memberof": "module:@the-/server.stores",
     "meta": {
       "filename": "SessionStore.js",
-      "lineno": 3,
+      "lineno": 8,
       "path": "lib/stores"
     },
     "name": "SessionStore",
-    "order": 44,
+    "order": 43,
     "scope": "static"
   },
   {
@@ -751,7 +508,7 @@
       "path": "lib/stores"
     },
     "name": "Store",
-    "order": 46,
+    "order": 45,
     "scope": "static"
   },
   {
@@ -857,22 +614,7 @@
       "path": "lib/helpers"
     },
     "name": "helpers",
-    "order": 22,
-    "scope": "static"
-  },
-  {
-    "description": "Mixin functions",
-    "id": "module:@the-/server.mixins",
-    "kind": "namespace",
-    "longname": "module:@the-/server.mixins",
-    "memberof": "module:@the-/server",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 3,
-      "path": "lib/mixins"
-    },
-    "name": "mixins",
-    "order": 40,
+    "order": 24,
     "scope": "static"
   },
   {
@@ -887,7 +629,7 @@
       "path": "lib/stores"
     },
     "name": "stores",
-    "order": 43,
+    "order": 42,
     "scope": "static"
   },
   {
@@ -898,7 +640,7 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "create.js",
-      "lineno": 3,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -948,7 +690,7 @@
     "memberof": "module:@the-/server.adapters",
     "meta": {
       "filename": "redisAdapter.js",
-      "lineno": 3,
+      "lineno": 7,
       "path": "lib/adapters"
     },
     "name": "redisAdapter",
@@ -1004,7 +746,7 @@
     "memberof": "module:@the-/server.connectors",
     "meta": {
       "filename": "IOConnector.js",
-      "lineno": 1,
+      "lineno": 13,
       "path": "lib/connectors"
     },
     "name": "IOConnector",
@@ -1061,6 +803,41 @@
     "scope": "static"
   },
   {
+    "description": "Mixin for client",
+    "id": "module:@the-/server.helpers.ClientAccess",
+    "kind": "function",
+    "longname": "module:@the-/server.helpers.ClientAccess",
+    "memberof": "module:@the-/server.helpers",
+    "meta": {
+      "filename": "ClientAccess.js",
+      "lineno": 3,
+      "path": "lib/helpers"
+    },
+    "name": "ClientAccess",
+    "order": 21,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "config"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Instance"
+      }
+    ],
+    "scope": "static"
+  },
+  {
     "description": "Define koa middleware register ctx values",
     "id": "module:@the-/server.helpers.ctxInjector",
     "kind": "function",
@@ -1068,11 +845,11 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "ctxInjector.js",
-      "lineno": 1,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "ctxInjector",
-    "order": 21,
+    "order": 23,
     "params": [
       {
         "type": {
@@ -1102,11 +879,11 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "InfoFlusher.js",
-      "lineno": 3,
+      "lineno": 7,
       "path": "lib/helpers"
     },
     "name": "InfoFlusher",
-    "order": 23,
+    "order": 25,
     "params": [
       {
         "type": {
@@ -1139,17 +916,17 @@
   },
   {
     "description": "Flush info into file",
-    "id": "module:@the-/server.helpers.InfoFlusher~infoFlusher.flushInfo",
+    "id": "InfoFlusher~infoFlusher.flushInfo",
     "kind": "function",
-    "longname": "module:@the-/server.helpers.InfoFlusher~infoFlusher.flushInfo",
-    "memberof": "module:@the-/server.helpers.InfoFlusher~infoFlusher",
+    "longname": "InfoFlusher~infoFlusher.flushInfo",
+    "memberof": "InfoFlusher~infoFlusher",
     "meta": {
       "filename": "InfoFlusher.js",
-      "lineno": 28,
+      "lineno": 26,
       "path": "lib/helpers"
     },
     "name": "flushInfo",
-    "order": 25,
+    "order": 27,
     "scope": "static"
   },
   {
@@ -1160,11 +937,11 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "langDetector.js",
-      "lineno": 3,
+      "lineno": 5,
       "path": "lib/helpers"
     },
     "name": "langDetector",
-    "order": 26,
+    "order": 28,
     "params": [
       {
         "type": {
@@ -1208,11 +985,11 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "MetricsCounter.js",
-      "lineno": 1,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "MetricsCounter",
-    "order": 27,
+    "order": 29,
     "scope": "static"
   },
   {
@@ -1222,11 +999,11 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "queryFromUrl.js",
-      "lineno": 3,
+      "lineno": 6,
       "path": "lib/helpers"
     },
     "name": "queryFromUrl",
-    "order": 29,
+    "order": 31,
     "scope": "static"
   },
   {
@@ -1237,11 +1014,11 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "RPCKeeper.js",
-      "lineno": 1,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "RPCKeeper",
-    "order": 30,
+    "order": 32,
     "params": [
       {
         "type": {
@@ -1276,7 +1053,7 @@
       "path": "lib/helpers"
     },
     "name": "serverRendering",
-    "order": 32,
+    "order": 34,
     "params": [
       {
         "type": {
@@ -1322,7 +1099,7 @@
       "path": "lib/helpers"
     },
     "name": "serverRendering",
-    "order": 33,
+    "order": 35,
     "scope": "static"
   },
   {
@@ -1333,11 +1110,11 @@
     "memberof": "SessionAccess~sessionAccess",
     "meta": {
       "filename": "SessionAccess.js",
-      "lineno": 26,
+      "lineno": 25,
       "path": "lib/helpers"
     },
     "name": "reload",
-    "order": 34,
+    "order": 36,
     "returns": [
       {
         "type": {
@@ -1357,11 +1134,11 @@
     "memberof": "SessionAccess~sessionAccess",
     "meta": {
       "filename": "SessionAccess.js",
-      "lineno": 42,
+      "lineno": 41,
       "path": "lib/helpers"
     },
     "name": "save",
-    "order": 35,
+    "order": 37,
     "params": [
       {
         "type": {
@@ -1393,11 +1170,11 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "toControllerDriverFactory.js",
-      "lineno": 1,
+      "lineno": 10,
       "path": "lib/helpers"
     },
     "name": "toControllerDriverFactory",
-    "order": 36,
+    "order": 38,
     "returns": [
       {
         "type": {
@@ -1420,42 +1197,7 @@
       "path": "lib/helpers"
     },
     "name": "toLowerKeys",
-    "order": 37,
-    "scope": "static"
-  },
-  {
-    "description": "Mixin for client",
-    "id": "module:@the-/server.mixins.clientMix",
-    "kind": "function",
-    "longname": "module:@the-/server.mixins.clientMix",
-    "memberof": "module:@the-/server.mixins",
-    "meta": {
-      "filename": "clientMix.js",
-      "lineno": 3,
-      "path": "lib/mixins"
-    },
-    "name": "clientMix",
-    "order": 38,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Class"
-      }
-    ],
+    "order": 39,
     "scope": "static"
   },
   {
@@ -1466,7 +1208,7 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "streamDriverPool.js",
-      "lineno": 3,
+      "lineno": 50,
       "path": "lib/streaming"
     },
     "name": "streamPool",
@@ -1481,26 +1223,12 @@
     "memberof": "module:@the-/server.streaming",
     "meta": {
       "filename": "toStreamDriverFactory.js",
-      "lineno": 1,
+      "lineno": 12,
       "path": "lib/streaming"
     },
     "name": "toStreamDriverFactory",
-    "order": 57,
+    "order": 56,
     "scope": "static"
-  },
-  {
-    "id": "module:@the-/server.mixins.clientMix~ClientMixed",
-    "kind": "class",
-    "longname": "module:@the-/server.mixins.clientMix~ClientMixed",
-    "memberof": "module:@the-/server.mixins.clientMix",
-    "meta": {
-      "filename": "clientMix.js",
-      "lineno": 16,
-      "path": "lib/mixins"
-    },
-    "name": "ClientMixed",
-    "order": 39,
-    "scope": "inner"
   },
   {
     "id": "module:@the-/server.helpers~StreamDriverPool",
@@ -1509,11 +1237,25 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "streamDriverPool.js",
-      "lineno": 8,
+      "lineno": 3,
       "path": "lib/streaming"
     },
     "name": "StreamDriverPool",
-    "order": 56,
+    "order": 54,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/server.helpers.ClientAccess~clientAccess",
+    "kind": "namespace",
+    "longname": "module:@the-/server.helpers.ClientAccess~clientAccess",
+    "memberof": "module:@the-/server.helpers.ClientAccess",
+    "meta": {
+      "filename": "ClientAccess.js",
+      "lineno": 11,
+      "path": "lib/helpers"
+    },
+    "name": "clientAccess",
+    "order": 22,
     "scope": "inner"
   },
   {
@@ -1523,11 +1265,11 @@
     "memberof": "module:@the-/server.helpers.InfoFlusher",
     "meta": {
       "filename": "InfoFlusher.js",
-      "lineno": 20,
+      "lineno": 19,
       "path": "lib/helpers"
     },
     "name": "infoFlusher",
-    "order": 24,
+    "order": 26,
     "scope": "inner"
   },
   {
@@ -1537,11 +1279,11 @@
     "memberof": "module:@the-/server.helpers.metricsMix",
     "meta": {
       "filename": "MetricsCounter.js",
-      "lineno": 18,
+      "lineno": 17,
       "path": "lib/helpers"
     },
     "name": "metricsCounter",
-    "order": 28,
+    "order": 30,
     "scope": "inner"
   },
   {
@@ -1551,11 +1293,11 @@
     "memberof": "module:@the-/server.helpers.RPCKeeper",
     "meta": {
       "filename": "RPCKeeper.js",
-      "lineno": 13,
+      "lineno": 12,
       "path": "lib/helpers"
     },
     "name": "rpcKeeper",
-    "order": 31,
+    "order": 33,
     "scope": "inner"
   }
 ]

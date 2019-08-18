@@ -1,12 +1,12 @@
 'use strict'
+
+const methodsToWrap = ['open', 'close']
+
 /**
  * Wrap stream with debug utility
  * @memberof module:@the-/client.helpers
  * @function debugStream
  */
-const methodsToWrap = ['open', 'close']
-
-/** @lends module:@the-/client.helpers.debugStream */
 function debugStream(stream) {
   return new Proxy(stream, {
     get(instance, name) {

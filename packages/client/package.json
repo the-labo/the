@@ -1,7 +1,7 @@
 {
   "name": "@the-/client",
   "description": "Client for the-server",
-  "version": "15.5.5",
+  "version": "15.6.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.3",
+    "@the-/check": "^15.5.6",
     "@the-/pack": "^15.4.11",
     "@the-/queue": "^15.4.1",
     "@the-/stream": "^15.4.1",
@@ -23,7 +23,7 @@
     "bwindow": "^2.0.3",
     "debug": "^4.1.1",
     "prop-types": "^15.7.2",
-    "qs": "^6.7.0",
+    "qs": "^6.8.0",
     "rfunc-client": "^5.0.6",
     "rfunc-constants": "^1.0.5",
     "socket.io-client": "^2.2.0",
@@ -31,7 +31,7 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "@the-/server": "^16.0.33",
+    "@the-/server": "^16.1.0",
     "aport": "^2.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"

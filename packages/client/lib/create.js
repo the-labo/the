@@ -1,5 +1,7 @@
 'use strict'
 
+const TheClient = require('./TheClient')
+
 /**
  * Create a TheClient instance
  * @memberof module:@the-/client
@@ -7,9 +9,6 @@
  * @param {...*} args
  * @returns {TheClient}
  */
-const TheClient = require('./TheClient')
-
-/** @lends module:@the-/client.create */
 function create(...args) {
   return new TheClient(...args)
 }

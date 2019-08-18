@@ -1,9 +1,5 @@
 'use strict'
-/**
- * Wrap controller instance with debug utility
- * @memberof module:@the-/client.helpers
- * @function debugController
- */
+
 const methodsToSkip = [
   'debugWrap',
   'toString',
@@ -15,7 +11,11 @@ const methodsToSkip = [
   'default',
 ]
 
-/** @lends module:@the-/client.helpers.debugController */
+/**
+ * Wrap controller instance with debug utility
+ * @memberof module:@the-/client.helpers
+ * @function debugController
+ */
 function debugController(controller) {
   const TOO_LONG_THRESHOLD = 3000
   return new Proxy(controller, {

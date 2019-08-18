@@ -420,4 +420,3 @@ Remove callbacks
 | --- | --- | --- |
 | cid | <code>string</code> | Client id |
 | callerKey | <code>string</code> |  |
-
