@@ -11,7 +11,6 @@ Spell checker
 * [@the-/spell](#module_@the-/spell)
     * [.TheSpell](#module_@the-/spell.TheSpell)
         * [new TheSpell([config])](#new_module_@the-/spell.TheSpell_new)
-        * [.check(pattern, [options])](#module_@the-/spell.TheSpell+check) ⇒ <code>Promise.&lt;Array&gt;</code>
     * [.Array](#module_@the-/spell.Array) : <code>Array.&lt;string&gt;</code>
     * [.helpers](#module_@the-/spell.helpers) : <code>object</code>
     * [.create(...args)](#module_@the-/spell.create) ⇒ <code>TheSpell</code>
@@ -21,11 +20,6 @@ Spell checker
 
 ### spell.TheSpell
 **Kind**: static class of [<code>@the-/spell</code>](#module_@the-/spell)  
-
-* [.TheSpell](#module_@the-/spell.TheSpell)
-    * [new TheSpell([config])](#new_module_@the-/spell.TheSpell_new)
-    * [.check(pattern, [options])](#module_@the-/spell.TheSpell+check) ⇒ <code>Promise.&lt;Array&gt;</code>
-
 <a name="new_module_@the-/spell.TheSpell_new"></a>
 
 #### new TheSpell([config])
@@ -33,18 +27,6 @@ Spell checker
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [config] | <code>Object</code> | <code>{}</code> | Spelling config |
-
-<a name="module_@the-/spell.TheSpell+check"></a>
-
-#### theSpell.check(pattern, [options]) ⇒ <code>Promise.&lt;Array&gt;</code>
-Check files
-
-**Kind**: instance method of [<code>TheSpell</code>](#module_@the-/spell.TheSpell)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| pattern | <code>string</code> |  | File name patterns |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 
 <a name="module_@the-/spell.Array"></a>
 

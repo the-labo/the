@@ -5,14 +5,14 @@
 ## @the-/support
 JS support version checker
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/support](#module_@the-/support)
     * [.TheSupport](#module_@the-/support.TheSupport)
         * [new TheSupport(pattern)](#new_module_@the-/support.TheSupport_new)
     * [.helpers](#module_@the-/support.helpers) : <code>object</code>
-        * [.detectUnsupportedCode()](#module_@the-/support.helpers.detectUnsupportedCode)
+        * [.detectUnsupportedCode(code, ecmaVersion)](#module_@the-/support.helpers.detectUnsupportedCode) ⇒ <code>\*</code>
         * [.findEvalCode()](#module_@the-/support.helpers.findEvalCode)
     * [.create(...args)](#module_@the-/support.create) ⇒ <code>TheSupport</code>
 
@@ -37,15 +37,21 @@ Helper functions
 **Access**: protected  
 
 * [.helpers](#module_@the-/support.helpers) : <code>object</code>
-    * [.detectUnsupportedCode()](#module_@the-/support.helpers.detectUnsupportedCode)
+    * [.detectUnsupportedCode(code, ecmaVersion)](#module_@the-/support.helpers.detectUnsupportedCode) ⇒ <code>\*</code>
     * [.findEvalCode()](#module_@the-/support.helpers.findEvalCode)
 
 <a name="module_@the-/support.helpers.detectUnsupportedCode"></a>
 
-#### helpers.detectUnsupportedCode()
+#### helpers.detectUnsupportedCode(code, ecmaVersion) ⇒ <code>\*</code>
 Detect unsupported
 
 **Kind**: static method of [<code>helpers</code>](#module_@the-/support.helpers)  
+
+| Param |
+| --- |
+| code | 
+| ecmaVersion | 
+
 <a name="module_@the-/support.helpers.findEvalCode"></a>
 
 #### helpers.findEvalCode()

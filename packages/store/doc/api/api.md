@@ -5,17 +5,12 @@
 ## @the-/store
 Redux wrapper for the-framework
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/store](#module_@the-/store)
     * [.TheStore](#module_@the-/store.TheStore)
         * [new TheStore([options])](#new_module_@the-/store.TheStore_new)
-        * [.load(ScopeClass, ...names)](#module_@the-/store.TheStore+load) ⇒ <code>TheStore.Scope</code>
-        * ~~[.loadFromDefaults()](#module_@the-/store.TheStore+loadFromDefaults)~~
-        * ~~[.loadFromDefs()](#module_@the-/store.TheStore+loadFromDefs)~~
-        * [.loadScopesFromDefs(defs, [options])](#module_@the-/store.TheStore+loadScopesFromDefs)
-        * [.subscribe(listener)](#module_@the-/store.TheStore+subscribe) ⇒ <code>function</code>
     * [.helpers](#module_@the-/store.helpers) : <code>object</code>
     * [.create(...args)](#module_@the-/store.create) ⇒ <code>TheStore</code>
     * [.create()](#module_@the-/store.create)
@@ -25,15 +20,6 @@ Redux wrapper for the-framework
 
 ### store.TheStore
 **Kind**: static class of [<code>@the-/store</code>](#module_@the-/store)  
-
-* [.TheStore](#module_@the-/store.TheStore)
-    * [new TheStore([options])](#new_module_@the-/store.TheStore_new)
-    * [.load(ScopeClass, ...names)](#module_@the-/store.TheStore+load) ⇒ <code>TheStore.Scope</code>
-    * ~~[.loadFromDefaults()](#module_@the-/store.TheStore+loadFromDefaults)~~
-    * ~~[.loadFromDefs()](#module_@the-/store.TheStore+loadFromDefs)~~
-    * [.loadScopesFromDefs(defs, [options])](#module_@the-/store.TheStore+loadScopesFromDefs)
-    * [.subscribe(listener)](#module_@the-/store.TheStore+subscribe) ⇒ <code>function</code>
-
 <a name="new_module_@the-/store.TheStore_new"></a>
 
 #### new TheStore([options])
@@ -46,55 +32,6 @@ Scoped redux store
 | [options.reducer] | <code>function</code> |  | Custom reducer function |
 | [options.persists] | <code>Array.&lt;string&gt;</code> | <code>{}</code> | Scope names to persistize in local storage |
 | [options.middlewares] | <code>Array.&lt;function()&gt;</code> | <code>[]</code> | Redux middleware functions |
-
-<a name="module_@the-/store.TheStore+load"></a>
-
-#### theStore.load(ScopeClass, ...names) ⇒ <code>TheStore.Scope</code>
-Load a scope
-
-**Kind**: instance method of [<code>TheStore</code>](#module_@the-/store.TheStore)  
-**Returns**: <code>TheStore.Scope</code> - Loaded scope  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| ScopeClass | <code>function</code> | Scope class to instantiate |
-| ...names | <code>string</code> | Name key path |
-
-<a name="module_@the-/store.TheStore+loadFromDefaults"></a>
-
-#### ~~theStore.loadFromDefaults()~~
-***Deprecated***
-
-**Kind**: instance method of [<code>TheStore</code>](#module_@the-/store.TheStore)  
-<a name="module_@the-/store.TheStore+loadFromDefs"></a>
-
-#### ~~theStore.loadFromDefs()~~
-***Deprecated***
-
-**Kind**: instance method of [<code>TheStore</code>](#module_@the-/store.TheStore)  
-<a name="module_@the-/store.TheStore+loadScopesFromDefs"></a>
-
-#### theStore.loadScopesFromDefs(defs, [options])
-Load scopes
-
-**Kind**: instance method of [<code>TheStore</code>](#module_@the-/store.TheStore)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| defs | <code>Object</code> |  | Defs |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-
-<a name="module_@the-/store.TheStore+subscribe"></a>
-
-#### theStore.subscribe(listener) ⇒ <code>function</code>
-Sub scribe store change
-
-**Kind**: instance method of [<code>TheStore</code>](#module_@the-/store.TheStore)  
-**Returns**: <code>function</code> - - Unsubscribe function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| listener | <code>function</code> | Listener function |
 
 <a name="module_@the-/store.helpers"></a>
 

@@ -18,7 +18,9 @@ class HomeScene extends HomeSceneBase {
   // Just an example
   @withBusy.while
   async countUp() {
-    const { appCtrl } = this.controllers
+    const {
+      controllers: { appCtrl },
+    } = this
     const count = await appCtrl.countUp()
     this.set({ count })
   }

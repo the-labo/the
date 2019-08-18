@@ -5,13 +5,11 @@
 ## @the-/seed
 Data generator for the-db
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/seed](#module_@the-/seed)
     * [.TheSeed](#module_@the-/seed.TheSeed)
-        * [.apply(seed)](#module_@the-/seed.TheSeed+apply) ⇒ <code>Array.&lt;Object&gt;</code>
-        * [.explode(seed, [counts])](#module_@the-/seed.TheSeed+explode) ⇒ <code>Array.&lt;Object&gt;</code>
     * [.create(...args)](#module_@the-/seed.create) ⇒ <code>TheSeed</code>
     * [.default()](#module_@the-/seed.default)
 
@@ -19,34 +17,6 @@ Data generator for the-db
 
 ### seed.TheSeed
 **Kind**: static class of [<code>@the-/seed</code>](#module_@the-/seed)  
-
-* [.TheSeed](#module_@the-/seed.TheSeed)
-    * [.apply(seed)](#module_@the-/seed.TheSeed+apply) ⇒ <code>Array.&lt;Object&gt;</code>
-    * [.explode(seed, [counts])](#module_@the-/seed.TheSeed+explode) ⇒ <code>Array.&lt;Object&gt;</code>
-
-<a name="module_@the-/seed.TheSeed+apply"></a>
-
-#### theSeed.apply(seed) ⇒ <code>Array.&lt;Object&gt;</code>
-Generate data with seed
-
-**Kind**: instance method of [<code>TheSeed</code>](#module_@the-/seed.TheSeed)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| seed | <code>Object</code> | Seed data |
-
-<a name="module_@the-/seed.TheSeed+explode"></a>
-
-#### theSeed.explode(seed, [counts]) ⇒ <code>Array.&lt;Object&gt;</code>
-Generate data with seed
-
-**Kind**: instance method of [<code>TheSeed</code>](#module_@the-/seed.TheSeed)  
-
-| Param | Type | Default |
-| --- | --- | --- |
-| seed | <code>Object</code> |  | 
-| [counts] | <code>number</code> | <code>10</code> | 
-
 <a name="module_@the-/seed.create"></a>
 
 ### seed.create(...args) ⇒ <code>TheSeed</code>

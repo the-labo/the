@@ -20,12 +20,12 @@ module.exports =
         ? {
             DATABASE: `${snakecase(Project.SHORT_NAME)}`,
             DIALECT: 'sequelize/mysql',
-            HOST: SecretValues['DB_HOST'],
-            PASSWORD: SecretValues['DB_PASSWORD'],
-            PORT: SecretValues['DB_PORT'],
-            ROOT_PASSWORD: SecretValues['DB_ROOT_PASSWORD'],
-            ROOT_USERNAME: SecretValues['DB_ROOT_USERNAME'],
-            USERNAME: SecretValues['DB_USERNAME'],
+            HOST: SecretValues.DB_HOST,
+            PASSWORD: SecretValues.DB_PASSWORD,
+            PORT: SecretValues.DB_PORT,
+            ROOT_PASSWORD: SecretValues.DB_ROOT_PASSWORD,
+            ROOT_USERNAME: SecretValues.DB_ROOT_USERNAME,
+            USERNAME: SecretValues.DB_USERNAME,
           }
         : {
             DATABASE: `${snakecase(Project.SHORT_NAME)}_dev`,

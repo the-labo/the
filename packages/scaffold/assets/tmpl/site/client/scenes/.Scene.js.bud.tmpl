@@ -3,7 +3,7 @@ require = require('esm')(module)
 
 const { pascalcase } = require('stringcase')
 const { Scene } = require('@the-/templates')
-const scopes = require('../store/scopes').default
+const { default: scopes } = require('../store/scopes')
 
 const names = Object.keys(scopes)
   .filter((name) => !/^_/.test(name))

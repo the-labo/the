@@ -7,20 +7,20 @@
     "longname": "module:@the-/seat",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/seat",
     "order": 3,
     "typicalname": "seat",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "description": "Acquire value with",
-    "id": "module:@the-/seat.TheSeat#acquire",
+    "id": "TheSeat#acquire",
     "kind": "function",
-    "longname": "module:@the-/seat.TheSeat#acquire",
-    "memberof": "module:@the-/seat.TheSeat",
+    "longname": "TheSeat#acquire",
+    "memberof": "TheSeat",
     "meta": {
       "filename": "TheSeat.js",
       "lineno": 51,
@@ -52,13 +52,13 @@
   },
   {
     "description": "Acquire number value for key",
-    "id": "module:@the-/seat.TheSeat#acquireNumber",
+    "id": "TheSeat#acquireNumber",
     "kind": "function",
-    "longname": "module:@the-/seat.TheSeat#acquireNumber",
-    "memberof": "module:@the-/seat.TheSeat",
+    "longname": "TheSeat#acquireNumber",
+    "memberof": "TheSeat",
     "meta": {
       "filename": "TheSeat.js",
-      "lineno": 71,
+      "lineno": 72,
       "path": "lib"
     },
     "name": "acquireNumber",
@@ -120,13 +120,13 @@
   },
   {
     "description": "Acquire string value for key",
-    "id": "module:@the-/seat.TheSeat#acquireString",
+    "id": "TheSeat#acquireString",
     "kind": "function",
-    "longname": "module:@the-/seat.TheSeat#acquireString",
-    "memberof": "module:@the-/seat.TheSeat",
+    "longname": "TheSeat#acquireString",
+    "memberof": "TheSeat",
     "meta": {
       "filename": "TheSeat.js",
-      "lineno": 86,
+      "lineno": 87,
       "path": "lib"
     },
     "name": "acquireString",
@@ -197,13 +197,13 @@
   },
   {
     "description": "Bind accessors to key",
-    "id": "module:@the-/seat.TheSeat#bind",
+    "id": "TheSeat#bind",
     "kind": "function",
-    "longname": "module:@the-/seat.TheSeat#bind",
-    "memberof": "module:@the-/seat.TheSeat",
+    "longname": "TheSeat#bind",
+    "memberof": "TheSeat",
     "meta": {
       "filename": "TheSeat.js",
-      "lineno": 99,
+      "lineno": 100,
       "path": "lib"
     },
     "name": "bind",
@@ -233,13 +233,13 @@
   },
   {
     "description": "Check if it can taken by key",
-    "id": "module:@the-/seat.TheSeat#canTake",
+    "id": "TheSeat#canTake",
     "kind": "function",
-    "longname": "module:@the-/seat.TheSeat#canTake",
-    "memberof": "module:@the-/seat.TheSeat",
+    "longname": "TheSeat#canTake",
+    "memberof": "TheSeat",
     "meta": {
       "filename": "TheSeat.js",
-      "lineno": 124,
+      "lineno": 125,
       "path": "lib"
     },
     "name": "canTake",
@@ -276,13 +276,13 @@
   },
   {
     "description": "Get value for key",
-    "id": "module:@the-/seat.TheSeat#get",
+    "id": "TheSeat#get",
     "kind": "function",
-    "longname": "module:@the-/seat.TheSeat#get",
-    "memberof": "module:@the-/seat.TheSeat",
+    "longname": "TheSeat#get",
+    "memberof": "TheSeat",
     "meta": {
       "filename": "TheSeat.js",
-      "lineno": 160,
+      "lineno": 162,
       "path": "lib"
     },
     "name": "get",
@@ -311,13 +311,13 @@
   },
   {
     "description": "Release value for key",
-    "id": "module:@the-/seat.TheSeat#release",
+    "id": "TheSeat#release",
     "kind": "function",
-    "longname": "module:@the-/seat.TheSeat#release",
-    "memberof": "module:@the-/seat.TheSeat",
+    "longname": "TheSeat#release",
+    "memberof": "TheSeat",
     "meta": {
       "filename": "TheSeat.js",
-      "lineno": 185,
+      "lineno": 187,
       "path": "lib"
     },
     "name": "release",
@@ -337,13 +337,13 @@
   },
   {
     "description": "Get scoped seat",
-    "id": "module:@the-/seat.TheSeat#scope",
+    "id": "TheSeat#scope",
     "kind": "function",
-    "longname": "module:@the-/seat.TheSeat#scope",
-    "memberof": "module:@the-/seat.TheSeat",
+    "longname": "TheSeat#scope",
+    "memberof": "TheSeat",
     "meta": {
       "filename": "TheSeat.js",
-      "lineno": 197,
+      "lineno": 199,
       "path": "lib"
     },
     "name": "scope",
@@ -372,13 +372,13 @@
   },
   {
     "description": "Take value",
-    "id": "module:@the-/seat.TheSeat#take",
+    "id": "TheSeat#take",
     "kind": "function",
-    "longname": "module:@the-/seat.TheSeat#take",
-    "memberof": "module:@the-/seat.TheSeat",
+    "longname": "TheSeat#take",
+    "memberof": "TheSeat",
     "meta": {
       "filename": "TheSeat.js",
-      "lineno": 224,
+      "lineno": 228,
       "path": "lib"
     },
     "name": "take",
@@ -420,7 +420,7 @@
     "memberof": "module:@the-/seat",
     "meta": {
       "filename": "TheSeat.js",
-      "lineno": 2,
+      "lineno": 21,
       "path": "lib"
     },
     "name": "TheSeat",
@@ -435,7 +435,7 @@
     "memberof": "module:@the-/seat",
     "meta": {
       "filename": "helpers.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "helpers",
@@ -450,7 +450,7 @@
     "memberof": "module:@the-/seat",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/mixins"
     },
     "name": "mixins",
@@ -465,7 +465,7 @@
     "memberof": "module:@the-/seat",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -500,7 +500,7 @@
     "memberof": "module:@the-/seat",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
@@ -514,7 +514,7 @@
     "memberof": "module:@the-/seat.mixins",
     "meta": {
       "filename": "lockMix.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/mixins"
     },
     "name": "lockMix",
@@ -528,11 +528,25 @@
     "memberof": "module:@the-/seat",
     "meta": {
       "filename": "scopeMix.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/mixins"
     },
     "name": "scopeMix",
     "order": 16,
+    "params": [
+      {
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   }
 ]

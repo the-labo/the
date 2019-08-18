@@ -4,7 +4,9 @@
  */
 'use strict'
 
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const create = require('../shim/client/create')
 
 describe('client', () => {

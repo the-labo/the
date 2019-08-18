@@ -5,7 +5,7 @@
 ## @the-/setting
 Setting manager for the-framework
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/setting](#module_@the-/setting)
@@ -13,7 +13,7 @@ Setting manager for the-framework
     * [.TheSettingBase](#module_@the-/setting.TheSettingBase)
     * [.helpers](#module_@the-/setting.helpers) : <code>object</code>
     * [.mixins](#module_@the-/setting.mixins) : <code>object</code>
-        * [.lockMix()](#module_@the-/setting.mixins.lockMix)
+        * [.lockMix(Class)](#module_@the-/setting.mixins.lockMix) ⇒ <code>\*</code>
             * [~LockMixed](#module_@the-/setting.mixins.lockMix..LockMixed)
     * [.create(...args)](#module_@the-/setting.create) ⇒ <code>TheSetting</code>
     * [.default()](#module_@the-/setting.default)
@@ -42,13 +42,18 @@ Mix functions
 **Kind**: static namespace of [<code>@the-/setting</code>](#module_@the-/setting)  
 
 * [.mixins](#module_@the-/setting.mixins) : <code>object</code>
-    * [.lockMix()](#module_@the-/setting.mixins.lockMix)
+    * [.lockMix(Class)](#module_@the-/setting.mixins.lockMix) ⇒ <code>\*</code>
         * [~LockMixed](#module_@the-/setting.mixins.lockMix..LockMixed)
 
 <a name="module_@the-/setting.mixins.lockMix"></a>
 
-#### mixins.lockMix()
+#### mixins.lockMix(Class) ⇒ <code>\*</code>
 **Kind**: static method of [<code>mixins</code>](#module_@the-/setting.mixins)  
+
+| Param |
+| --- |
+| Class | 
+
 <a name="module_@the-/setting.mixins.lockMix..LockMixed"></a>
 
 ##### lockMix~LockMixed

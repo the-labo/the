@@ -5,7 +5,7 @@
 ## @the-/scope
 State scope for the-store
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/scope](#module_@the-/scope)
@@ -14,7 +14,6 @@ State scope for the-store
     * [.scopes](#module_@the-/scope.scopes) : <code>object</code>
         * [.ArrayScope](#module_@the-/scope.scopes.ArrayScope) ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
             * [new ArrayScope()](#new_module_@the-/scope.scopes.ArrayScope_new)
-            * [.length](#module_@the-/scope.scopes.ArrayScope+length)
             * [.concat(values)](#module_@the-/scope.scopes.ArrayScope+concat)
             * [.pop()](#module_@the-/scope.scopes.ArrayScope+pop)
             * [.push(entry)](#module_@the-/scope.scopes.ArrayScope+push)
@@ -25,9 +24,6 @@ State scope for the-store
         * [.BooleanScope](#module_@the-/scope.scopes.BooleanScope) ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
             * [new BooleanScope()](#new_module_@the-/scope.scopes.BooleanScope_new)
             * [.toggle([value])](#module_@the-/scope.scopes.BooleanScope+toggle)
-            * [.false()](#module_@the-/scope.scopes.BooleanScope+false)
-            * [.set()](#module_@the-/scope.scopes.BooleanScope+set)
-            * [.true()](#module_@the-/scope.scopes.BooleanScope+true)
         * [.NullScope](#module_@the-/scope.scopes.NullScope) ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
             * [new NullScope()](#new_module_@the-/scope.scopes.NullScope_new)
             * [.init()](#module_@the-/scope.scopes.NullScope+init)
@@ -36,27 +32,16 @@ State scope for the-store
             * [.decrement([amount])](#module_@the-/scope.scopes.NumberScope+decrement)
             * [.increment([amount])](#module_@the-/scope.scopes.NumberScope+increment)
             * [.set(n)](#module_@the-/scope.scopes.NumberScope+set)
-            * [.isNegative()](#module_@the-/scope.scopes.NumberScope+isNegative) ⇒ <code>boolean</code>
-            * [.isPositive()](#module_@the-/scope.scopes.NumberScope+isPositive) ⇒ <code>boolean</code>
-            * [.isZero()](#module_@the-/scope.scopes.NumberScope+isZero) ⇒ <code>boolean</code>
         * [.ObjectScope](#module_@the-/scope.scopes.ObjectScope) ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
             * [new ObjectScope()](#new_module_@the-/scope.scopes.ObjectScope_new)
             * [.del(...names)](#module_@the-/scope.scopes.ObjectScope+del)
             * [.drop()](#module_@the-/scope.scopes.ObjectScope+drop)
             * [.reset(values)](#module_@the-/scope.scopes.ObjectScope+reset)
             * [.set(name, value)](#module_@the-/scope.scopes.ObjectScope+set)
-            * [.get()](#module_@the-/scope.scopes.ObjectScope+get)
-            * [.has()](#module_@the-/scope.scopes.ObjectScope+has)
         * *[.Scope](#module_@the-/scope.scopes.Scope)*
             * *[new Scope(name, config)](#new_module_@the-/scope.scopes.Scope_new)*
-            * *~~[.withDefault()](#module_@the-/scope.scopes.Scope.withDefault)~~*
         * [.ScopeScope](#module_@the-/scope.scopes.ScopeScope) ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
             * [new ScopeScope()](#new_module_@the-/scope.scopes.ScopeScope_new)
-            * [.get(namepath)](#module_@the-/scope.scopes.ScopeScope+get) ⇒ <code>\*</code>
-            * [.has(namepath)](#module_@the-/scope.scopes.ScopeScope+has) ⇒ <code>boolean</code>
-            * [.init(...names)](#module_@the-/scope.scopes.ScopeScope+init)
-            * [.of(namepath)](#module_@the-/scope.scopes.ScopeScope+of) ⇒ <code>ScopeScope</code>
-            * [.set(namepath, value)](#module_@the-/scope.scopes.ScopeScope+set)
         * [.StringScope](#module_@the-/scope.scopes.StringScope) ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
             * [new StringScope()](#new_module_@the-/scope.scopes.StringScope_new)
             * [.del()](#module_@the-/scope.scopes.StringScope+del)
@@ -95,7 +80,6 @@ Scope classes
 * [.scopes](#module_@the-/scope.scopes) : <code>object</code>
     * [.ArrayScope](#module_@the-/scope.scopes.ArrayScope) ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
         * [new ArrayScope()](#new_module_@the-/scope.scopes.ArrayScope_new)
-        * [.length](#module_@the-/scope.scopes.ArrayScope+length)
         * [.concat(values)](#module_@the-/scope.scopes.ArrayScope+concat)
         * [.pop()](#module_@the-/scope.scopes.ArrayScope+pop)
         * [.push(entry)](#module_@the-/scope.scopes.ArrayScope+push)
@@ -106,9 +90,6 @@ Scope classes
     * [.BooleanScope](#module_@the-/scope.scopes.BooleanScope) ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
         * [new BooleanScope()](#new_module_@the-/scope.scopes.BooleanScope_new)
         * [.toggle([value])](#module_@the-/scope.scopes.BooleanScope+toggle)
-        * [.false()](#module_@the-/scope.scopes.BooleanScope+false)
-        * [.set()](#module_@the-/scope.scopes.BooleanScope+set)
-        * [.true()](#module_@the-/scope.scopes.BooleanScope+true)
     * [.NullScope](#module_@the-/scope.scopes.NullScope) ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
         * [new NullScope()](#new_module_@the-/scope.scopes.NullScope_new)
         * [.init()](#module_@the-/scope.scopes.NullScope+init)
@@ -117,27 +98,16 @@ Scope classes
         * [.decrement([amount])](#module_@the-/scope.scopes.NumberScope+decrement)
         * [.increment([amount])](#module_@the-/scope.scopes.NumberScope+increment)
         * [.set(n)](#module_@the-/scope.scopes.NumberScope+set)
-        * [.isNegative()](#module_@the-/scope.scopes.NumberScope+isNegative) ⇒ <code>boolean</code>
-        * [.isPositive()](#module_@the-/scope.scopes.NumberScope+isPositive) ⇒ <code>boolean</code>
-        * [.isZero()](#module_@the-/scope.scopes.NumberScope+isZero) ⇒ <code>boolean</code>
     * [.ObjectScope](#module_@the-/scope.scopes.ObjectScope) ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
         * [new ObjectScope()](#new_module_@the-/scope.scopes.ObjectScope_new)
         * [.del(...names)](#module_@the-/scope.scopes.ObjectScope+del)
         * [.drop()](#module_@the-/scope.scopes.ObjectScope+drop)
         * [.reset(values)](#module_@the-/scope.scopes.ObjectScope+reset)
         * [.set(name, value)](#module_@the-/scope.scopes.ObjectScope+set)
-        * [.get()](#module_@the-/scope.scopes.ObjectScope+get)
-        * [.has()](#module_@the-/scope.scopes.ObjectScope+has)
     * *[.Scope](#module_@the-/scope.scopes.Scope)*
         * *[new Scope(name, config)](#new_module_@the-/scope.scopes.Scope_new)*
-        * *~~[.withDefault()](#module_@the-/scope.scopes.Scope.withDefault)~~*
     * [.ScopeScope](#module_@the-/scope.scopes.ScopeScope) ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
         * [new ScopeScope()](#new_module_@the-/scope.scopes.ScopeScope_new)
-        * [.get(namepath)](#module_@the-/scope.scopes.ScopeScope+get) ⇒ <code>\*</code>
-        * [.has(namepath)](#module_@the-/scope.scopes.ScopeScope+has) ⇒ <code>boolean</code>
-        * [.init(...names)](#module_@the-/scope.scopes.ScopeScope+init)
-        * [.of(namepath)](#module_@the-/scope.scopes.ScopeScope+of) ⇒ <code>ScopeScope</code>
-        * [.set(namepath, value)](#module_@the-/scope.scopes.ScopeScope+set)
     * [.StringScope](#module_@the-/scope.scopes.StringScope) ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
         * [new StringScope()](#new_module_@the-/scope.scopes.StringScope_new)
         * [.del()](#module_@the-/scope.scopes.StringScope+del)
@@ -156,7 +126,6 @@ Scope classes
 
 * [.ArrayScope](#module_@the-/scope.scopes.ArrayScope) ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
     * [new ArrayScope()](#new_module_@the-/scope.scopes.ArrayScope_new)
-    * [.length](#module_@the-/scope.scopes.ArrayScope+length)
     * [.concat(values)](#module_@the-/scope.scopes.ArrayScope+concat)
     * [.pop()](#module_@the-/scope.scopes.ArrayScope+pop)
     * [.push(entry)](#module_@the-/scope.scopes.ArrayScope+push)
@@ -169,16 +138,6 @@ Scope classes
 
 ##### new ArrayScope()
 Scope to hold array
-
-<a name="module_@the-/scope.scopes.ArrayScope+length"></a>
-
-##### arrayScope.length
-**Kind**: instance property of [<code>ArrayScope</code>](#module_@the-/scope.scopes.ArrayScope)  
-**Properties**
-
-| Type |
-| --- |
-| <code>number</code> | 
 
 <a name="module_@the-/scope.scopes.ArrayScope+concat"></a>
 
@@ -257,9 +216,6 @@ Unshift entry
 * [.BooleanScope](#module_@the-/scope.scopes.BooleanScope) ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
     * [new BooleanScope()](#new_module_@the-/scope.scopes.BooleanScope_new)
     * [.toggle([value])](#module_@the-/scope.scopes.BooleanScope+toggle)
-    * [.false()](#module_@the-/scope.scopes.BooleanScope+false)
-    * [.set()](#module_@the-/scope.scopes.BooleanScope+set)
-    * [.true()](#module_@the-/scope.scopes.BooleanScope+true)
 
 <a name="new_module_@the-/scope.scopes.BooleanScope_new"></a>
 
@@ -277,24 +233,6 @@ Toggle value
 | --- | --- |
 | [value] | <code>boolean</code> | 
 
-<a name="module_@the-/scope.scopes.BooleanScope+false"></a>
-
-##### booleanScope.false()
-Toggle to false
-
-**Kind**: instance method of [<code>BooleanScope</code>](#module_@the-/scope.scopes.BooleanScope)  
-<a name="module_@the-/scope.scopes.BooleanScope+set"></a>
-
-##### booleanScope.set()
-Alias of toggle
-
-**Kind**: instance method of [<code>BooleanScope</code>](#module_@the-/scope.scopes.BooleanScope)  
-<a name="module_@the-/scope.scopes.BooleanScope+true"></a>
-
-##### booleanScope.true()
-Toggle to true
-
-**Kind**: instance method of [<code>BooleanScope</code>](#module_@the-/scope.scopes.BooleanScope)  
 <a name="module_@the-/scope.scopes.NullScope"></a>
 
 #### scopes.NullScope ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
@@ -325,9 +263,6 @@ Scope to hold null
     * [.decrement([amount])](#module_@the-/scope.scopes.NumberScope+decrement)
     * [.increment([amount])](#module_@the-/scope.scopes.NumberScope+increment)
     * [.set(n)](#module_@the-/scope.scopes.NumberScope+set)
-    * [.isNegative()](#module_@the-/scope.scopes.NumberScope+isNegative) ⇒ <code>boolean</code>
-    * [.isPositive()](#module_@the-/scope.scopes.NumberScope+isPositive) ⇒ <code>boolean</code>
-    * [.isZero()](#module_@the-/scope.scopes.NumberScope+isZero) ⇒ <code>boolean</code>
 
 <a name="new_module_@the-/scope.scopes.NumberScope_new"></a>
 
@@ -367,24 +302,6 @@ Set number
 | --- | --- |
 | n | <code>number</code> | 
 
-<a name="module_@the-/scope.scopes.NumberScope+isNegative"></a>
-
-##### numberScope.isNegative() ⇒ <code>boolean</code>
-Check the value is negative
-
-**Kind**: instance method of [<code>NumberScope</code>](#module_@the-/scope.scopes.NumberScope)  
-<a name="module_@the-/scope.scopes.NumberScope+isPositive"></a>
-
-##### numberScope.isPositive() ⇒ <code>boolean</code>
-Check the value is positive
-
-**Kind**: instance method of [<code>NumberScope</code>](#module_@the-/scope.scopes.NumberScope)  
-<a name="module_@the-/scope.scopes.NumberScope+isZero"></a>
-
-##### numberScope.isZero() ⇒ <code>boolean</code>
-Check the value is zero
-
-**Kind**: instance method of [<code>NumberScope</code>](#module_@the-/scope.scopes.NumberScope)  
 <a name="module_@the-/scope.scopes.ObjectScope"></a>
 
 #### scopes.ObjectScope ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
@@ -397,8 +314,6 @@ Check the value is zero
     * [.drop()](#module_@the-/scope.scopes.ObjectScope+drop)
     * [.reset(values)](#module_@the-/scope.scopes.ObjectScope+reset)
     * [.set(name, value)](#module_@the-/scope.scopes.ObjectScope+set)
-    * [.get()](#module_@the-/scope.scopes.ObjectScope+get)
-    * [.has()](#module_@the-/scope.scopes.ObjectScope+has)
 
 <a name="new_module_@the-/scope.scopes.ObjectScope_new"></a>
 
@@ -445,27 +360,10 @@ Set property
 | name | <code>string</code> | name to set |
 | value | <code>\*</code> | Value to set |
 
-<a name="module_@the-/scope.scopes.ObjectScope+get"></a>
-
-##### objectScope.get()
-Get a value for name
-
-**Kind**: instance method of [<code>ObjectScope</code>](#module_@the-/scope.scopes.ObjectScope)  
-<a name="module_@the-/scope.scopes.ObjectScope+has"></a>
-
-##### objectScope.has()
-Check value exists for name
-
-**Kind**: instance method of [<code>ObjectScope</code>](#module_@the-/scope.scopes.ObjectScope)  
 <a name="module_@the-/scope.scopes.Scope"></a>
 
 #### *scopes.Scope*
 **Kind**: static abstract class of [<code>scopes</code>](#module_@the-/scope.scopes)  
-
-* *[.Scope](#module_@the-/scope.scopes.Scope)*
-    * *[new Scope(name, config)](#new_module_@the-/scope.scopes.Scope_new)*
-    * *~~[.withDefault()](#module_@the-/scope.scopes.Scope.withDefault)~~*
-
 <a name="new_module_@the-/scope.scopes.Scope_new"></a>
 
 ##### *new Scope(name, config)*
@@ -477,87 +375,15 @@ Abstract scope class
 | name | <code>string</code> | Name of state |
 | config | <code>Object</code> | Scope config |
 
-<a name="module_@the-/scope.scopes.Scope.withDefault"></a>
-
-##### *~~Scope.withDefault()~~*
-***Deprecated***
-
-**Kind**: static method of [<code>Scope</code>](#module_@the-/scope.scopes.Scope)  
 <a name="module_@the-/scope.scopes.ScopeScope"></a>
 
 #### scopes.ScopeScope ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
 **Kind**: static class of [<code>scopes</code>](#module_@the-/scope.scopes)  
 **Extends**: [<code>Scope</code>](#module_@the-/scope.scopes.Scope)  
-
-* [.ScopeScope](#module_@the-/scope.scopes.ScopeScope) ⇐ [<code>Scope</code>](#module_@the-/scope.scopes.Scope)
-    * [new ScopeScope()](#new_module_@the-/scope.scopes.ScopeScope_new)
-    * [.get(namepath)](#module_@the-/scope.scopes.ScopeScope+get) ⇒ <code>\*</code>
-    * [.has(namepath)](#module_@the-/scope.scopes.ScopeScope+has) ⇒ <code>boolean</code>
-    * [.init(...names)](#module_@the-/scope.scopes.ScopeScope+init)
-    * [.of(namepath)](#module_@the-/scope.scopes.ScopeScope+of) ⇒ <code>ScopeScope</code>
-    * [.set(namepath, value)](#module_@the-/scope.scopes.ScopeScope+set)
-
 <a name="new_module_@the-/scope.scopes.ScopeScope_new"></a>
 
 ##### new ScopeScope()
 Scope to other scopes
-
-<a name="module_@the-/scope.scopes.ScopeScope+get"></a>
-
-##### scopeScope.get(namepath) ⇒ <code>\*</code>
-Get state value from name path string
-
-**Kind**: instance method of [<code>ScopeScope</code>](#module_@the-/scope.scopes.ScopeScope)  
-**Returns**: <code>\*</code> - Stored state  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| namepath | <code>string</code> | Name path of state |
-
-<a name="module_@the-/scope.scopes.ScopeScope+has"></a>
-
-##### scopeScope.has(namepath) ⇒ <code>boolean</code>
-Check if scope exists
-
-**Kind**: instance method of [<code>ScopeScope</code>](#module_@the-/scope.scopes.ScopeScope)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| namepath | <code>string</code> | Name path of state |
-
-<a name="module_@the-/scope.scopes.ScopeScope+init"></a>
-
-##### scopeScope.init(...names)
-Init scope values
-
-**Kind**: instance method of [<code>ScopeScope</code>](#module_@the-/scope.scopes.ScopeScope)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| ...names | <code>string</code> | Names to init |
-
-<a name="module_@the-/scope.scopes.ScopeScope+of"></a>
-
-##### scopeScope.of(namepath) ⇒ <code>ScopeScope</code>
-Sub scope of namepath
-
-**Kind**: instance method of [<code>ScopeScope</code>](#module_@the-/scope.scopes.ScopeScope)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| namepath | <code>string</code> | Name path of state |
-
-<a name="module_@the-/scope.scopes.ScopeScope+set"></a>
-
-##### scopeScope.set(namepath, value)
-Set state with name path
-
-**Kind**: instance method of [<code>ScopeScope</code>](#module_@the-/scope.scopes.ScopeScope)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| namepath | <code>string</code> | Name path of state |
-| value | <code>\*</code> | Value to set |
 
 <a name="module_@the-/scope.scopes.StringScope"></a>
 
@@ -654,4 +480,4 @@ Create a TheScope instance
 ### scope.default()
 Alias of [create](#module_@the-/scope.create)
 
-**Kind**: static method of [<code>@the-/scope</code>](#module_@the-/scope)
+**Kind**: static method of [<code>@the-/scope</code>](#module_@the-/scope)  

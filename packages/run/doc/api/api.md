@@ -5,7 +5,7 @@
 ## @the-/run
 Script runner for the-framework
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/run](#module_@the-/run)
@@ -13,7 +13,7 @@ Script runner for the-framework
         * [new TheRun([options])](#new_module_@the-/run.TheRun_new)
     * [.create(...args)](#module_@the-/run.create) ⇒ [<code>TheRun</code>](#module_@the-/run.TheRun)
     * [.default()](#module_@the-/run.default)
-    * [.run(filename, [options])](#module_@the-/run.run)
+    * [.run([options], filename)](#module_@the-/run.run) ⇒ <code>\*</code>
 
 <a name="module_@the-/run.TheRun"></a>
 
@@ -49,13 +49,13 @@ Alias of [create](#module_@the-/run.create)
 **Kind**: static method of [<code>@the-/run</code>](#module_@the-/run)  
 <a name="module_@the-/run.run"></a>
 
-### run.run(filename, [options])
+### run.run([options], filename) ⇒ <code>\*</code>
 Create and run
 
 **Kind**: static method of [<code>@the-/run</code>](#module_@the-/run)  
 
 | Param | Type | Default |
 | --- | --- | --- |
-| filename | <code>string</code> |  | 
 | [options] | <code>Object</code> | <code>{}</code> | 
+| filename | <code>string</code> |  | 
 

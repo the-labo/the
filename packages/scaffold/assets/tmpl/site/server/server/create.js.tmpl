@@ -14,10 +14,12 @@ const {
 } = require('@self/client/shim')
 const { isProduction } = require('@the-/check')
 const theServer = require('@the-/server')
+const theTmp = require('@the-/tmp')
 const { RedisConnections, WebApps } = require('../constants')
 const mappings = require('../mappings')
 const conf = require('../../conf')
 const pkg = require('../../package')
+const debug = require('debug')('app:server')
 
 const { ControllerMapping } = mappings
 const defaultRedisConfig = {
@@ -42,8 +44,11 @@ function create(config) {
     locales,
     version: pkg.version,
   }
+  const { path: CACHE_DIR } = theTmp.generateDirSync({ prefix: 'server' })
+  debug('CACHE_DIR', CACHE_DIR)
 
   return theServer({
+    cacheDir: CACHE_DIR,
     controllers: ControllerMapping,
     html: Html,
     info: { buildNumber },

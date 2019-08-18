@@ -9,7 +9,7 @@ Templates for the-projects
 **License**: MIT  
 
 * [@the-/templates](#module_@the-/templates)
-    * [.bin(config)](#module_@the-/templates.bin) ⇒ <code>object</code>
+    * [.bin(config)](#module_@the-/templates.bin) ⇒ <code>Object</code>
     * [.Ctrl(config)](#module_@the-/templates.Ctrl) ⇒ <code>Object</code>
     * [.Dialogs(config)](#module_@the-/templates.Dialogs) ⇒ <code>Object</code>
     * [.dir(config)](#module_@the-/templates.dir) ⇒ <code>Object</code>
@@ -17,33 +17,33 @@ Templates for the-projects
     * [.eslintignore(config)](#module_@the-/templates.eslintignore) ⇒ <code>Object</code>
     * [.eslintrc(config)](#module_@the-/templates.eslintrc) ⇒ <code>Object</code>
     * [.Hook(config)](#module_@the-/templates.Hook) ⇒ <code>Object</code>
-    * [.License(config)](#module_@the-/templates.License) ⇒ <code>object</code>
-    * [.mapping()](#module_@the-/templates.mapping) ⇒ <code>Object</code>
+    * [.License(config)](#module_@the-/templates.License) ⇒ <code>Object</code>
+    * [.mapping(config)](#module_@the-/templates.mapping) ⇒ <code>Object</code>
     * [.nginx(config)](#module_@the-/templates.nginx) ⇒ <code>Object</code>
     * [.pcssVars(config)](#module_@the-/templates.pcssVars) ⇒ <code>Object</code>
     * [.prettierrc(config)](#module_@the-/templates.prettierrc) ⇒ <code>Object</code>
-    * [.Readme(config)](#module_@the-/templates.Readme) ⇒ <code>object</code>
-    * [.Resources()](#module_@the-/templates.Resources)
-    * [.scopes()](#module_@the-/templates.scopes)
+    * [.Readme(config)](#module_@the-/templates.Readme) ⇒ <code>Object</code>
+    * [.Resources(config)](#module_@the-/templates.Resources) ⇒ <code>\*</code>
+    * [.scopes(config)](#module_@the-/templates.scopes) ⇒ <code>\*</code>
     * [.Stateful(config)](#module_@the-/templates.Stateful) ⇒ <code>Object</code>
     * [.Stateless(config)](#module_@the-/templates.Stateless) ⇒ <code>Object</code>
     * [.Stream(config)](#module_@the-/templates.Stream) ⇒ <code>Object</code>
-    * [.test()](#module_@the-/templates.test) ⇒ <code>Object</code>
+    * [.test(config)](#module_@the-/templates.test) ⇒ <code>Object</code>
     * [.vhost(config)](#module_@the-/templates.vhost) ⇒ <code>Object</code>
     * [.View(config)](#module_@the-/templates.View) ⇒ <code>Object</code>
 
 <a name="module_@the-/templates.bin"></a>
 
-### templates.bin(config) ⇒ <code>object</code>
+### templates.bin(config) ⇒ <code>Object</code>
 Define bud for bin scripts
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
-**Returns**: <code>object</code> - - Bud object.  
+**Returns**: <code>Object</code> - - Bud object.  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| config | <code>object</code> | Configuration |
-| config.signature | <code>object</code> | bin signature. |
+| config | <code>Object</code> | Configuration |
+| config.signature | <code>Object</code> | bin signature. |
 
 <a name="module_@the-/templates.Ctrl"></a>
 
@@ -126,25 +126,30 @@ Hook
 
 <a name="module_@the-/templates.License"></a>
 
-### templates.License(config) ⇒ <code>object</code>
+### templates.License(config) ⇒ <code>Object</code>
 Define bud for LICENSE
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
-**Returns**: <code>object</code> - - Bud object.  
+**Returns**: <code>Object</code> - - Bud object.  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| config | <code>object</code> | Configuration. |
+| config | <code>Object</code> | Configuration. |
 | config.type | <code>string</code> | Type of license. |
 | config.year | <code>number</code> | Copy right year. |
 | config.holder | <code>string</code> | License holder name. |
 
 <a name="module_@the-/templates.mapping"></a>
 
-### templates.mapping() ⇒ <code>Object</code>
+### templates.mapping(config) ⇒ <code>Object</code>
 Define bud for mapping
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
+
+| Param |
+| --- |
+| config | 
+
 <a name="module_@the-/templates.nginx"></a>
 
 ### templates.nginx(config) ⇒ <code>Object</code>
@@ -181,31 +186,41 @@ Define bud for prettierrc
 
 <a name="module_@the-/templates.Readme"></a>
 
-### templates.Readme(config) ⇒ <code>object</code>
+### templates.Readme(config) ⇒ <code>Object</code>
 Define bud for README.md
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
-**Returns**: <code>object</code> - - Bud object.  
+**Returns**: <code>Object</code> - - Bud object.  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| config | <code>object</code> | Configuration. |
+| config | <code>Object</code> | Configuration. |
 | config.sections | <code>string</code> | Section file path. |
-| config.pkg | <code>object</code> | Package data. |
+| config.pkg | <code>Object</code> | Package data. |
 | config.repo | <code>string</code> | GitHub Repository name. (eg. 'ape-repo/ap-tmpl') |
-| config.badges | <code>object</code> | Badge data. |
-| config.links | <code>object</code> | Link urls. |
+| config.badges | <code>Object</code> | Badge data. |
+| config.links | <code>Object</code> | Link urls. |
 | config.overview | <code>string</code> | Overview file path. |
-| config.vars | <code>object</code> | Custom variables. |
+| config.vars | <code>Object</code> | Custom variables. |
 
 <a name="module_@the-/templates.Resources"></a>
 
-### templates.Resources()
+### templates.Resources(config) ⇒ <code>\*</code>
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
+
+| Param |
+| --- |
+| config | 
+
 <a name="module_@the-/templates.scopes"></a>
 
-### templates.scopes()
+### templates.scopes(config) ⇒ <code>\*</code>
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
+
+| Param |
+| --- |
+| config | 
+
 <a name="module_@the-/templates.Stateful"></a>
 
 ### templates.Stateful(config) ⇒ <code>Object</code>
@@ -241,10 +256,15 @@ Stream
 
 <a name="module_@the-/templates.test"></a>
 
-### templates.test() ⇒ <code>Object</code>
+### templates.test(config) ⇒ <code>Object</code>
 Define bud for readme
 
 **Kind**: static method of [<code>@the-/templates</code>](#module_@the-/templates)  
+
+| Param |
+| --- |
+| config | 
+
 <a name="module_@the-/templates.vhost"></a>
 
 ### templates.vhost(config) ⇒ <code>Object</code>

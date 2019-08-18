@@ -6,7 +6,7 @@
     "longname": "module:@the-/ui-alt",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-alt",
@@ -39,7 +39,7 @@
     "memberof": "module:@the-/ui-alt",
     "meta": {
       "filename": "TheAlt.jsx",
-      "lineno": 1,
+      "lineno": 8,
       "path": "lib"
     },
     "name": "TheAlt",
@@ -53,7 +53,7 @@
     "memberof": "module:@the-/ui-alt",
     "meta": {
       "filename": "TheAltStyle.jsx",
-      "lineno": 1,
+      "lineno": 10,
       "path": "lib"
     },
     "name": "TheAltStyle",
@@ -62,13 +62,13 @@
   },
   {
     "description": "Style options",
-    "id": "module:@the-/ui-alt.TheAltStyle.propTypes.options",
+    "id": "TheAltStyle.propTypes.options",
     "kind": "member",
-    "longname": "module:@the-/ui-alt.TheAltStyle.propTypes.options",
-    "memberof": "module:@the-/ui-alt.TheAltStyle.propTypes",
+    "longname": "TheAltStyle.propTypes.options",
+    "memberof": "TheAltStyle.propTypes",
     "meta": {
       "filename": "TheAltStyle.jsx",
-      "lineno": 27,
+      "lineno": 26,
       "path": "lib"
     },
     "name": "options",

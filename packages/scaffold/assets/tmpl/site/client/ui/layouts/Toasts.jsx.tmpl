@@ -21,21 +21,20 @@ class Toasts extends React.Component {
   )
 
   render() {
-    const duration = UI.TOAST_DURATION
     return this.#stateful(({ error, info, onReset, warn }) => (
       <TheToastGroup>
         <TheToast.Info
-          clearAfter={duration}
+          clearAfter={UI.TOAST_DURATION}
           messages={info}
           onUpdate={onReset}
         />
         <TheToast.Warn
-          clearAfter={duration}
+          clearAfter={UI.TOAST_DURATION}
           messages={warn}
           onUpdate={onReset}
         />
         <TheToast.Error
-          clearAfter={duration}
+          clearAfter={UI.TOAST_DURATION}
           messages={error}
           onUpdate={onReset}
         />

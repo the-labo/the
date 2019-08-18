@@ -7,13 +7,13 @@
     "longname": "module:@the-/setting",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/setting",
     "order": 3,
     "typicalname": "setting",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "description": "Delete value for name",
@@ -23,7 +23,7 @@
     "memberof": "TheSetting",
     "meta": {
       "filename": "TheSetting.js",
-      "lineno": 57,
+      "lineno": 58,
       "path": "lib"
     },
     "name": "del",
@@ -49,7 +49,7 @@
     "memberof": "TheSetting",
     "meta": {
       "filename": "TheSetting.js",
-      "lineno": 79,
+      "lineno": 80,
       "path": "lib"
     },
     "name": "get",
@@ -85,7 +85,7 @@
     "memberof": "TheSetting",
     "meta": {
       "filename": "TheSetting.js",
-      "lineno": 117,
+      "lineno": 119,
       "path": "lib"
     },
     "name": "set",
@@ -114,7 +114,7 @@
     "memberof": "module:@the-/setting",
     "meta": {
       "filename": "TheSetting.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "TheSetting",
@@ -129,7 +129,7 @@
     "memberof": "module:@the-/setting",
     "meta": {
       "filename": "TheSetting.js",
-      "lineno": 20,
+      "lineno": 21,
       "path": "lib"
     },
     "name": "TheSettingBase",
@@ -144,7 +144,7 @@
     "memberof": "module:@the-/setting",
     "meta": {
       "filename": "helpers.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "helpers",
@@ -159,7 +159,7 @@
     "memberof": "module:@the-/setting",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/mixins"
     },
     "name": "mixins",
@@ -174,7 +174,7 @@
     "memberof": "module:@the-/setting",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "create",
@@ -209,7 +209,7 @@
     "memberof": "module:@the-/setting",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
@@ -223,11 +223,25 @@
     "memberof": "module:@the-/setting.mixins",
     "meta": {
       "filename": "lockMix.js",
-      "lineno": 2,
+      "lineno": 7,
       "path": "lib/mixins"
     },
     "name": "lockMix",
     "order": 10,
+    "params": [
+      {
+        "name": "Class"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -237,7 +251,7 @@
     "memberof": "module:@the-/setting.mixins.lockMix",
     "meta": {
       "filename": "lockMix.js",
-      "lineno": 16,
+      "lineno": 18,
       "path": "lib/mixins"
     },
     "name": "LockMixed",

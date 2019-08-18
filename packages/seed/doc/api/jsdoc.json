@@ -7,23 +7,23 @@
     "longname": "module:@the-/seed",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/seed",
     "order": 2,
     "typicalname": "seed",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "description": "Generate data with seed",
-    "id": "module:@the-/seed.TheSeed#apply",
+    "id": "TheSeed#apply",
     "kind": "function",
-    "longname": "module:@the-/seed.TheSeed#apply",
-    "memberof": "module:@the-/seed.TheSeed",
+    "longname": "TheSeed#apply",
+    "memberof": "TheSeed",
     "meta": {
       "filename": "TheSeed.js",
-      "lineno": 37,
+      "lineno": 38,
       "path": "lib"
     },
     "name": "apply",
@@ -52,13 +52,13 @@
   },
   {
     "description": "Generate data with seed",
-    "id": "module:@the-/seed.TheSeed#explode",
+    "id": "TheSeed#explode",
     "kind": "function",
-    "longname": "module:@the-/seed.TheSeed#explode",
-    "memberof": "module:@the-/seed.TheSeed",
+    "longname": "TheSeed#explode",
+    "memberof": "TheSeed",
     "meta": {
       "filename": "TheSeed.js",
-      "lineno": 47,
+      "lineno": 48,
       "path": "lib"
     },
     "name": "explode",
@@ -101,7 +101,7 @@
     "memberof": "module:@the-/seed",
     "meta": {
       "filename": "TheSeed.js",
-      "lineno": 2,
+      "lineno": 9,
       "path": "lib"
     },
     "name": "TheSeed",
@@ -116,7 +116,7 @@
     "memberof": "module:@the-/seed",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -151,7 +151,7 @@
     "memberof": "module:@the-/seed",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",

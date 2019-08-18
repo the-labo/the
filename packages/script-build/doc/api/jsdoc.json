@@ -21,7 +21,7 @@
     "memberof": "module:@the-/script-build",
     "meta": {
       "filename": "build.js",
-      "lineno": 3,
+      "lineno": 14,
       "path": "lib"
     },
     "name": "build",

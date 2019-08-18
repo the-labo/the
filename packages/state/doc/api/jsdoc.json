@@ -7,13 +7,13 @@
     "longname": "module:@the-/state",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/state",
     "order": 2,
     "typicalname": "state",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "id": "module:@the-/state.TheState()",
@@ -111,13 +111,13 @@
   },
   {
     "description": "Scope with name",
-    "id": "module:@the-/state.state.ScopedState#scope",
+    "id": "ScopedState#scope",
     "kind": "function",
-    "longname": "module:@the-/state.state.ScopedState#scope",
-    "memberof": "module:@the-/state.state.ScopedState",
+    "longname": "ScopedState#scope",
+    "memberof": "ScopedState",
     "meta": {
       "filename": "ScopedState.js",
-      "lineno": 42,
+      "lineno": 43,
       "path": "lib/state"
     },
     "name": "scope",
@@ -138,13 +138,13 @@
   },
   {
     "description": "Delete value for name",
-    "id": "module:@the-/state.state.State#del",
+    "id": "State#del",
     "kind": "function",
-    "longname": "module:@the-/state.state.State#del",
-    "memberof": "module:@the-/state.state.State",
+    "longname": "State#del",
+    "memberof": "State",
     "meta": {
       "filename": "State.js",
-      "lineno": 25,
+      "lineno": 26,
       "path": "lib/state"
     },
     "name": "del",
@@ -163,13 +163,13 @@
   },
   {
     "description": "Drop all values",
-    "id": "module:@the-/state.state.State#drop",
+    "id": "State#drop",
     "kind": "function",
-    "longname": "module:@the-/state.state.State#drop",
-    "memberof": "module:@the-/state.state.State",
+    "longname": "State#drop",
+    "memberof": "State",
     "meta": {
       "filename": "State.js",
-      "lineno": 38,
+      "lineno": 39,
       "path": "lib/state"
     },
     "name": "drop",
@@ -179,13 +179,13 @@
   },
   {
     "description": "Get value for name",
-    "id": "module:@the-/state.state.State#get",
+    "id": "State#get",
     "kind": "function",
-    "longname": "module:@the-/state.state.State#get",
-    "memberof": "module:@the-/state.state.State",
+    "longname": "State#get",
+    "memberof": "State",
     "meta": {
       "filename": "State.js",
-      "lineno": 47,
+      "lineno": 48,
       "path": "lib/state"
     },
     "name": "get",
@@ -213,13 +213,13 @@
   },
   {
     "description": "Get keys",
-    "id": "module:@the-/state.state.State#keys",
+    "id": "State#keys",
     "kind": "function",
-    "longname": "module:@the-/state.state.State#keys",
-    "memberof": "module:@the-/state.state.State",
+    "longname": "State#keys",
+    "memberof": "State",
     "meta": {
       "filename": "State.js",
-      "lineno": 56,
+      "lineno": 57,
       "path": "lib/state"
     },
     "name": "keys",
@@ -238,13 +238,13 @@
   },
   {
     "description": "Publish to subscriptions",
-    "id": "module:@the-/state.state.State#publish",
+    "id": "State#publish",
     "kind": "function",
-    "longname": "module:@the-/state.state.State#publish",
-    "memberof": "module:@the-/state.state.State",
+    "longname": "State#publish",
+    "memberof": "State",
     "meta": {
       "filename": "State.js",
-      "lineno": 63,
+      "lineno": 64,
       "path": "lib/state"
     },
     "name": "publish",
@@ -254,13 +254,13 @@
   },
   {
     "description": "Set values",
-    "id": "module:@the-/state.state.State#set",
+    "id": "State#set",
     "kind": "function",
-    "longname": "module:@the-/state.state.State#set",
-    "memberof": "module:@the-/state.state.State",
+    "longname": "State#set",
+    "memberof": "State",
     "meta": {
       "filename": "State.js",
-      "lineno": 74,
+      "lineno": 75,
       "path": "lib/state"
     },
     "name": "set",
@@ -288,13 +288,13 @@
   },
   {
     "description": "Subscribe changes",
-    "id": "module:@the-/state.state.State#subscribe",
+    "id": "State#subscribe",
     "kind": "function",
-    "longname": "module:@the-/state.state.State#subscribe",
-    "memberof": "module:@the-/state.state.State",
+    "longname": "State#subscribe",
+    "memberof": "State",
     "meta": {
       "filename": "State.js",
-      "lineno": 92,
+      "lineno": 94,
       "path": "lib/state"
     },
     "name": "subscribe",
@@ -323,465 +323,17 @@
   },
   {
     "description": "Unsubscribe",
-    "id": "module:@the-/state.state.State#unsubscribe",
+    "id": "State#unsubscribe",
     "kind": "function",
-    "longname": "module:@the-/state.state.State#unsubscribe",
-    "memberof": "module:@the-/state.state.State",
+    "longname": "State#unsubscribe",
+    "memberof": "State",
     "meta": {
       "filename": "State.js",
-      "lineno": 102,
+      "lineno": 104,
       "path": "lib/state"
     },
     "name": "unsubscribe",
     "order": 23,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "callback"
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Delete value for name",
-    "id": "module:@the-/state.state.RootState#del",
-    "inherited": true,
-    "inherits": "module:@the-/state.state.State#del",
-    "kind": "function",
-    "longname": "module:@the-/state.state.RootState#del",
-    "memberof": "module:@the-/state.state.RootState",
-    "meta": {
-      "filename": "State.js",
-      "lineno": 25,
-      "path": "lib/state"
-    },
-    "name": "del",
-    "order": 24,
-    "overrides": "module:@the-/state.state.State#del",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "name": "name"
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Drop all values",
-    "id": "module:@the-/state.state.RootState#drop",
-    "inherited": true,
-    "inherits": "module:@the-/state.state.State#drop",
-    "kind": "function",
-    "longname": "module:@the-/state.state.RootState#drop",
-    "memberof": "module:@the-/state.state.RootState",
-    "meta": {
-      "filename": "State.js",
-      "lineno": 38,
-      "path": "lib/state"
-    },
-    "name": "drop",
-    "order": 25,
-    "overrides": "module:@the-/state.state.State#drop",
-    "scope": "instance"
-  },
-  {
-    "description": "Get value for name",
-    "id": "module:@the-/state.state.RootState#get",
-    "inherited": true,
-    "inherits": "module:@the-/state.state.State#get",
-    "kind": "function",
-    "longname": "module:@the-/state.state.RootState#get",
-    "memberof": "module:@the-/state.state.RootState",
-    "meta": {
-      "filename": "State.js",
-      "lineno": 47,
-      "path": "lib/state"
-    },
-    "name": "get",
-    "order": 26,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "name": "name"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Get keys",
-    "id": "module:@the-/state.state.RootState#keys",
-    "inherited": true,
-    "inherits": "module:@the-/state.state.State#keys",
-    "kind": "function",
-    "longname": "module:@the-/state.state.RootState#keys",
-    "memberof": "module:@the-/state.state.RootState",
-    "meta": {
-      "filename": "State.js",
-      "lineno": 56,
-      "path": "lib/state"
-    },
-    "name": "keys",
-    "order": 27,
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Array.<string>"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Publish to subscriptions",
-    "id": "module:@the-/state.state.RootState#publish",
-    "inherited": true,
-    "inherits": "module:@the-/state.state.State#publish",
-    "kind": "function",
-    "longname": "module:@the-/state.state.RootState#publish",
-    "memberof": "module:@the-/state.state.RootState",
-    "meta": {
-      "filename": "State.js",
-      "lineno": 63,
-      "path": "lib/state"
-    },
-    "name": "publish",
-    "order": 28,
-    "scope": "instance"
-  },
-  {
-    "description": "Set values",
-    "id": "module:@the-/state.state.RootState#set",
-    "inherited": true,
-    "inherits": "module:@the-/state.state.State#set",
-    "kind": "function",
-    "longname": "module:@the-/state.state.RootState#set",
-    "memberof": "module:@the-/state.state.RootState",
-    "meta": {
-      "filename": "State.js",
-      "lineno": 74,
-      "path": "lib/state"
-    },
-    "name": "set",
-    "order": 29,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "name": "values"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Subscribe changes",
-    "id": "module:@the-/state.state.RootState#subscribe",
-    "inherited": true,
-    "inherits": "module:@the-/state.state.State#subscribe",
-    "kind": "function",
-    "longname": "module:@the-/state.state.RootState#subscribe",
-    "memberof": "module:@the-/state.state.RootState",
-    "meta": {
-      "filename": "State.js",
-      "lineno": 92,
-      "path": "lib/state"
-    },
-    "name": "subscribe",
-    "order": 30,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "callback"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "- unsubscribe function"
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Unsubscribe",
-    "id": "module:@the-/state.state.RootState#unsubscribe",
-    "inherited": true,
-    "inherits": "module:@the-/state.state.State#unsubscribe",
-    "kind": "function",
-    "longname": "module:@the-/state.state.RootState#unsubscribe",
-    "memberof": "module:@the-/state.state.RootState",
-    "meta": {
-      "filename": "State.js",
-      "lineno": 102,
-      "path": "lib/state"
-    },
-    "name": "unsubscribe",
-    "order": 31,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "callback"
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Delete value for name",
-    "id": "module:@the-/state.state.ScopedState#del",
-    "inherited": true,
-    "inherits": "module:@the-/state.state.State#del",
-    "kind": "function",
-    "longname": "module:@the-/state.state.ScopedState#del",
-    "memberof": "module:@the-/state.state.ScopedState",
-    "meta": {
-      "filename": "State.js",
-      "lineno": 25,
-      "path": "lib/state"
-    },
-    "name": "del",
-    "order": 32,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "name": "name"
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Drop all values",
-    "id": "module:@the-/state.state.ScopedState#drop",
-    "inherited": true,
-    "inherits": "module:@the-/state.state.State#drop",
-    "kind": "function",
-    "longname": "module:@the-/state.state.ScopedState#drop",
-    "memberof": "module:@the-/state.state.ScopedState",
-    "meta": {
-      "filename": "State.js",
-      "lineno": 38,
-      "path": "lib/state"
-    },
-    "name": "drop",
-    "order": 33,
-    "scope": "instance"
-  },
-  {
-    "description": "Get value for name",
-    "id": "module:@the-/state.state.ScopedState#get",
-    "inherited": true,
-    "inherits": "module:@the-/state.state.State#get",
-    "kind": "function",
-    "longname": "module:@the-/state.state.ScopedState#get",
-    "memberof": "module:@the-/state.state.ScopedState",
-    "meta": {
-      "filename": "State.js",
-      "lineno": 47,
-      "path": "lib/state"
-    },
-    "name": "get",
-    "order": 34,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "name": "name"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Get keys",
-    "id": "module:@the-/state.state.ScopedState#keys",
-    "inherited": true,
-    "inherits": "module:@the-/state.state.State#keys",
-    "kind": "function",
-    "longname": "module:@the-/state.state.ScopedState#keys",
-    "memberof": "module:@the-/state.state.ScopedState",
-    "meta": {
-      "filename": "State.js",
-      "lineno": 56,
-      "path": "lib/state"
-    },
-    "name": "keys",
-    "order": 35,
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Array.<string>"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Publish to subscriptions",
-    "id": "module:@the-/state.state.ScopedState#publish",
-    "inherited": true,
-    "inherits": "module:@the-/state.state.State#publish",
-    "kind": "function",
-    "longname": "module:@the-/state.state.ScopedState#publish",
-    "memberof": "module:@the-/state.state.ScopedState",
-    "meta": {
-      "filename": "State.js",
-      "lineno": 63,
-      "path": "lib/state"
-    },
-    "name": "publish",
-    "order": 36,
-    "scope": "instance"
-  },
-  {
-    "description": "Set values",
-    "id": "module:@the-/state.state.ScopedState#set",
-    "inherited": true,
-    "inherits": "module:@the-/state.state.State#set",
-    "kind": "function",
-    "longname": "module:@the-/state.state.ScopedState#set",
-    "memberof": "module:@the-/state.state.ScopedState",
-    "meta": {
-      "filename": "State.js",
-      "lineno": 74,
-      "path": "lib/state"
-    },
-    "name": "set",
-    "order": 37,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "name": "values"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Subscribe changes",
-    "id": "module:@the-/state.state.ScopedState#subscribe",
-    "inherited": true,
-    "inherits": "module:@the-/state.state.State#subscribe",
-    "kind": "function",
-    "longname": "module:@the-/state.state.ScopedState#subscribe",
-    "memberof": "module:@the-/state.state.ScopedState",
-    "meta": {
-      "filename": "State.js",
-      "lineno": 92,
-      "path": "lib/state"
-    },
-    "name": "subscribe",
-    "order": 38,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "callback"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "- unsubscribe function"
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Unsubscribe",
-    "id": "module:@the-/state.state.ScopedState#unsubscribe",
-    "inherited": true,
-    "inherits": "module:@the-/state.state.State#unsubscribe",
-    "kind": "function",
-    "longname": "module:@the-/state.state.ScopedState#unsubscribe",
-    "memberof": "module:@the-/state.state.ScopedState",
-    "meta": {
-      "filename": "State.js",
-      "lineno": 102,
-      "path": "lib/state"
-    },
-    "name": "unsubscribe",
-    "order": 39,
     "params": [
       {
         "type": {
@@ -804,7 +356,7 @@
     "memberof": "module:@the-/state",
     "meta": {
       "filename": "TheState.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "TheState",
@@ -821,7 +373,7 @@
     "memberof": "module:@the-/state.state",
     "meta": {
       "filename": "RootState.js",
-      "lineno": 2,
+      "lineno": 8,
       "path": "lib/state"
     },
     "name": "RootState",
@@ -838,7 +390,7 @@
     "memberof": "module:@the-/state.state",
     "meta": {
       "filename": "ScopedState.js",
-      "lineno": 2,
+      "lineno": 7,
       "path": "lib/state"
     },
     "name": "ScopedState",
@@ -852,7 +404,7 @@
     "memberof": "module:@the-/state.state",
     "meta": {
       "filename": "State.js",
-      "lineno": 2,
+      "lineno": 7,
       "path": "lib/state"
     },
     "name": "State",
@@ -884,7 +436,7 @@
     "memberof": "module:@the-/state",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/constants"
     },
     "name": "constants",
@@ -900,7 +452,7 @@
     "memberof": "module:@the-/state",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "helpers",
@@ -916,7 +468,7 @@
     "memberof": "module:@the-/state",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/state"
     },
     "name": "state",
@@ -931,7 +483,7 @@
     "memberof": "module:@the-/state",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "create",
@@ -966,7 +518,7 @@
     "memberof": "module:@the-/state",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",

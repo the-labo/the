@@ -17,13 +17,11 @@ class Route extends React.Component {
       // TODO remove ( ReactDOMServer does not yet support Suspense. )
       return <Fallback />
     }
-    return this.#stateful(() => {
-      return (
-        <Suspense fallback={<Fallback />}>
-          <TheRoute {...this.props} />
-        </Suspense>
-      )
-    })
+    return this.#stateful(() => (
+      <Suspense fallback={<Fallback />}>
+        <TheRoute {...this.props} />
+      </Suspense>
+    ))
   }
 }
 

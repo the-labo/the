@@ -11,7 +11,7 @@
     },
     "name": "@the-/script-doc",
     "order": 1,
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "description": "Generate jsdoc",
@@ -21,7 +21,7 @@
     "memberof": "module:@the-/script-doc",
     "meta": {
       "filename": "doc.js",
-      "lineno": 2,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "doc",

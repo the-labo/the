@@ -7,13 +7,13 @@
     "longname": "module:@the-/scope",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/scope",
     "order": 2,
     "typicalname": "scope",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "description": "Abstract state class",
@@ -146,10 +146,10 @@
     "order": 57
   },
   {
-    "id": "module:@the-/scope.scopes.ArrayScope#length",
+    "id": "ArrayScope#length",
     "kind": "member",
-    "longname": "module:@the-/scope.scopes.ArrayScope#length",
-    "memberof": "module:@the-/scope.scopes.ArrayScope",
+    "longname": "ArrayScope#length",
+    "memberof": "ArrayScope",
     "meta": {
       "filename": "ArrayScope.js",
       "lineno": 85,
@@ -366,10 +366,10 @@
   },
   {
     "description": "Toggle to false",
-    "id": "module:@the-/scope.scopes.BooleanScope#false",
+    "id": "BooleanScope#false",
     "kind": "function",
-    "longname": "module:@the-/scope.scopes.BooleanScope#false",
-    "memberof": "module:@the-/scope.scopes.BooleanScope",
+    "longname": "BooleanScope#false",
+    "memberof": "BooleanScope",
     "meta": {
       "filename": "BooleanScope.js",
       "lineno": 36,
@@ -382,10 +382,10 @@
   },
   {
     "description": "Alias of toggle",
-    "id": "module:@the-/scope.scopes.BooleanScope#set",
+    "id": "BooleanScope#set",
     "kind": "function",
-    "longname": "module:@the-/scope.scopes.BooleanScope#set",
-    "memberof": "module:@the-/scope.scopes.BooleanScope",
+    "longname": "BooleanScope#set",
+    "memberof": "BooleanScope",
     "meta": {
       "filename": "BooleanScope.js",
       "lineno": 43,
@@ -398,10 +398,10 @@
   },
   {
     "description": "Toggle to true",
-    "id": "module:@the-/scope.scopes.BooleanScope#true",
+    "id": "BooleanScope#true",
     "kind": "function",
-    "longname": "module:@the-/scope.scopes.BooleanScope#true",
-    "memberof": "module:@the-/scope.scopes.BooleanScope",
+    "longname": "BooleanScope#true",
+    "memberof": "BooleanScope",
     "meta": {
       "filename": "BooleanScope.js",
       "lineno": 51,
@@ -509,10 +509,10 @@
   },
   {
     "description": "Check the value is negative",
-    "id": "module:@the-/scope.scopes.NumberScope#isNegative",
+    "id": "NumberScope#isNegative",
     "kind": "function",
-    "longname": "module:@the-/scope.scopes.NumberScope#isNegative",
-    "memberof": "module:@the-/scope.scopes.NumberScope",
+    "longname": "NumberScope#isNegative",
+    "memberof": "NumberScope",
     "meta": {
       "filename": "NumberScope.js",
       "lineno": 52,
@@ -534,10 +534,10 @@
   },
   {
     "description": "Check the value is positive",
-    "id": "module:@the-/scope.scopes.NumberScope#isPositive",
+    "id": "NumberScope#isPositive",
     "kind": "function",
-    "longname": "module:@the-/scope.scopes.NumberScope#isPositive",
-    "memberof": "module:@the-/scope.scopes.NumberScope",
+    "longname": "NumberScope#isPositive",
+    "memberof": "NumberScope",
     "meta": {
       "filename": "NumberScope.js",
       "lineno": 60,
@@ -559,10 +559,10 @@
   },
   {
     "description": "Check the value is zero",
-    "id": "module:@the-/scope.scopes.NumberScope#isZero",
+    "id": "NumberScope#isZero",
     "kind": "function",
-    "longname": "module:@the-/scope.scopes.NumberScope#isZero",
-    "memberof": "module:@the-/scope.scopes.NumberScope",
+    "longname": "NumberScope#isZero",
+    "memberof": "NumberScope",
     "meta": {
       "filename": "NumberScope.js",
       "lineno": 68,
@@ -617,7 +617,7 @@
     "memberof": "module:@the-/scope.scopes.ObjectScope",
     "meta": {
       "filename": "ObjectScope.js",
-      "lineno": 40,
+      "lineno": 41,
       "path": "lib/scopes"
     },
     "name": "drop",
@@ -632,7 +632,7 @@
     "memberof": "module:@the-/scope.scopes.ObjectScope",
     "meta": {
       "filename": "ObjectScope.js",
-      "lineno": 50,
+      "lineno": 51,
       "path": "lib/scopes"
     },
     "name": "reset",
@@ -657,7 +657,7 @@
     "memberof": "module:@the-/scope.scopes.ObjectScope",
     "meta": {
       "filename": "ObjectScope.js",
-      "lineno": 66,
+      "lineno": 68,
       "path": "lib/scopes"
     },
     "name": "set",
@@ -686,13 +686,13 @@
   },
   {
     "description": "Get a value for name",
-    "id": "module:@the-/scope.scopes.ObjectScope#get",
+    "id": "ObjectScope#get",
     "kind": "function",
-    "longname": "module:@the-/scope.scopes.ObjectScope#get",
-    "memberof": "module:@the-/scope.scopes.ObjectScope",
+    "longname": "ObjectScope#get",
+    "memberof": "ObjectScope",
     "meta": {
       "filename": "ObjectScope.js",
-      "lineno": 94,
+      "lineno": 97,
       "path": "lib/scopes"
     },
     "name": "get",
@@ -702,13 +702,13 @@
   },
   {
     "description": "Check value exists for name",
-    "id": "module:@the-/scope.scopes.ObjectScope#has",
+    "id": "ObjectScope#has",
     "kind": "function",
-    "longname": "module:@the-/scope.scopes.ObjectScope#has",
-    "memberof": "module:@the-/scope.scopes.ObjectScope",
+    "longname": "ObjectScope#has",
+    "memberof": "ObjectScope",
     "meta": {
       "filename": "ObjectScope.js",
-      "lineno": 99,
+      "lineno": 102,
       "path": "lib/scopes"
     },
     "name": "has",
@@ -718,10 +718,10 @@
   },
   {
     "description": "Get state value from name path string",
-    "id": "module:@the-/scope.scopes.ScopeScope#get",
+    "id": "ScopeScope#get",
     "kind": "function",
-    "longname": "module:@the-/scope.scopes.ScopeScope#get",
-    "memberof": "module:@the-/scope.scopes.ScopeScope",
+    "longname": "ScopeScope#get",
+    "memberof": "ScopeScope",
     "meta": {
       "filename": "ScopeScope.js",
       "lineno": 26,
@@ -754,10 +754,10 @@
   },
   {
     "description": "Check if scope exists",
-    "id": "module:@the-/scope.scopes.ScopeScope#has",
+    "id": "ScopeScope#has",
     "kind": "function",
-    "longname": "module:@the-/scope.scopes.ScopeScope#has",
-    "memberof": "module:@the-/scope.scopes.ScopeScope",
+    "longname": "ScopeScope#has",
+    "memberof": "ScopeScope",
     "meta": {
       "filename": "ScopeScope.js",
       "lineno": 35,
@@ -789,10 +789,10 @@
   },
   {
     "description": "Init scope values",
-    "id": "module:@the-/scope.scopes.ScopeScope#init",
+    "id": "ScopeScope#init",
     "kind": "function",
-    "longname": "module:@the-/scope.scopes.ScopeScope#init",
-    "memberof": "module:@the-/scope.scopes.ScopeScope",
+    "longname": "ScopeScope#init",
+    "memberof": "ScopeScope",
     "meta": {
       "filename": "ScopeScope.js",
       "lineno": 47,
@@ -816,10 +816,10 @@
   },
   {
     "description": "Sub scope of namepath",
-    "id": "module:@the-/scope.scopes.ScopeScope#of",
+    "id": "ScopeScope#of",
     "kind": "function",
-    "longname": "module:@the-/scope.scopes.ScopeScope#of",
-    "memberof": "module:@the-/scope.scopes.ScopeScope",
+    "longname": "ScopeScope#of",
+    "memberof": "ScopeScope",
     "meta": {
       "filename": "ScopeScope.js",
       "lineno": 69,
@@ -851,13 +851,13 @@
   },
   {
     "description": "Set state with name path",
-    "id": "module:@the-/scope.scopes.ScopeScope#set",
+    "id": "ScopeScope#set",
     "kind": "function",
-    "longname": "module:@the-/scope.scopes.ScopeScope#set",
-    "memberof": "module:@the-/scope.scopes.ScopeScope",
+    "longname": "ScopeScope#set",
+    "memberof": "ScopeScope",
     "meta": {
       "filename": "ScopeScope.js",
-      "lineno": 95,
+      "lineno": 96,
       "path": "lib/scopes"
     },
     "name": "set",
@@ -1009,7 +1009,7 @@
     "memberof": "module:@the-/scope",
     "meta": {
       "filename": "TheScope.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "TheScope",
@@ -1027,7 +1027,7 @@
     "memberof": "module:@the-/scope.scopes",
     "meta": {
       "filename": "ArrayScope.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/scopes"
     },
     "name": "ArrayScope",
@@ -1044,7 +1044,7 @@
     "memberof": "module:@the-/scope.scopes",
     "meta": {
       "filename": "BooleanScope.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/scopes"
     },
     "name": "BooleanScope",
@@ -1061,7 +1061,7 @@
     "memberof": "module:@the-/scope.scopes",
     "meta": {
       "filename": "NullScope.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/scopes"
     },
     "name": "NullScope",
@@ -1078,7 +1078,7 @@
     "memberof": "module:@the-/scope.scopes",
     "meta": {
       "filename": "NumberScope.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/scopes"
     },
     "name": "NumberScope",
@@ -1095,7 +1095,7 @@
     "memberof": "module:@the-/scope.scopes",
     "meta": {
       "filename": "ObjectScope.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/scopes"
     },
     "name": "ObjectScope",
@@ -1109,7 +1109,7 @@
     "memberof": "module:@the-/scope.scopes",
     "meta": {
       "filename": "Scope.js",
-      "lineno": 2,
+      "lineno": 8,
       "path": "lib/scopes"
     },
     "name": "Scope",
@@ -1127,7 +1127,7 @@
     "memberof": "module:@the-/scope.scopes",
     "meta": {
       "filename": "ScopeScope.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib/scopes"
     },
     "name": "ScopeScope",
@@ -1144,7 +1144,7 @@
     "memberof": "module:@the-/scope.scopes",
     "meta": {
       "filename": "StringScope.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/scopes"
     },
     "name": "StringScope",
@@ -1161,7 +1161,7 @@
     "memberof": "module:@the-/scope.scopes",
     "meta": {
       "filename": "ValueScope.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/scopes"
     },
     "name": "ValueScope",
@@ -1177,7 +1177,7 @@
     "memberof": "module:@the-/scope",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/scopes"
     },
     "name": "scopes",
@@ -1192,7 +1192,7 @@
     "memberof": "module:@the-/scope",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "create",
@@ -1227,7 +1227,7 @@
     "memberof": "module:@the-/scope",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
@@ -1236,10 +1236,10 @@
   },
   {
     "deprecated": true,
-    "id": "module:@the-/scope.scopes.Scope.withDefault",
+    "id": "Scope.withDefault",
     "kind": "function",
-    "longname": "module:@the-/scope.scopes.Scope.withDefault",
-    "memberof": "module:@the-/scope.scopes.Scope",
+    "longname": "Scope.withDefault",
+    "memberof": "Scope",
     "meta": {
       "filename": "Scope.js",
       "lineno": 18,

@@ -36,7 +36,7 @@
 ## @the-/rtc
 RTC server for the-frameworks
 
-**Version**: 15.4.12  
+**Version**: 15.4.13  
 **License**: MIT  
 
 * [@the-/rtc](#module_@the-/rtc)
@@ -48,8 +48,8 @@ RTC server for the-frameworks
         * [.PeerEvents](#module_@the-/rtc.constants.PeerEvents) : <code>enum</code>
         * [.TopologyTypes](#module_@the-/rtc.constants.TopologyTypes) : <code>enum</code>
     * [.helpers](#module_@the-/rtc.helpers) : <code>object</code>
-        * [.handleUnknownKeys()](#module_@the-/rtc.helpers.handleUnknownKeys)
-        * [.parseTurn secret(secret)](#module_@the-/rtc.helpers.parseTurn secret) ⇒ <code>Object</code>
+        * [.handleUnknownKeys(unknowns, [undefined&#x3D;])](#module_@the-/rtc.helpers.handleUnknownKeys)
+        * [.parseTurnSecret(secret, expiry)](#module_@the-/rtc.helpers.parseTurnSecret) ⇒ <code>Object</code>
     * [.mixins](#module_@the-/rtc.mixins) : <code>object</code>
         * [.ioMix(Class)](#module_@the-/rtc.mixins.ioMix) ⇒ <code>function</code>
         * [.sfuMix(Class)](#module_@the-/rtc.mixins.sfuMix) ⇒ <code>function</code>
@@ -126,22 +126,29 @@ Helpers
 **Kind**: static namespace of [<code>@the-/rtc</code>](#module_@the-/rtc)  
 
 * [.helpers](#module_@the-/rtc.helpers) : <code>object</code>
-    * [.handleUnknownKeys()](#module_@the-/rtc.helpers.handleUnknownKeys)
-    * [.parseTurn secret(secret)](#module_@the-/rtc.helpers.parseTurn secret) ⇒ <code>Object</code>
+    * [.handleUnknownKeys(unknowns, [undefined&#x3D;])](#module_@the-/rtc.helpers.handleUnknownKeys)
+    * [.parseTurnSecret(secret, expiry)](#module_@the-/rtc.helpers.parseTurnSecret) ⇒ <code>Object</code>
 
 <a name="module_@the-/rtc.helpers.handleUnknownKeys"></a>
 
-#### helpers.handleUnknownKeys()
+#### helpers.handleUnknownKeys(unknowns, [undefined&#x3D;])
 **Kind**: static method of [<code>helpers</code>](#module_@the-/rtc.helpers)  
-<a name="module_@the-/rtc.helpers.parseTurn secret"></a>
 
-#### helpers.parseTurn secret(secret) ⇒ <code>Object</code>
+| Param |
+| --- |
+| unknowns | 
+| [undefined=] | 
+
+<a name="module_@the-/rtc.helpers.parseTurnSecret"></a>
+
+#### helpers.parseTurnSecret(secret, expiry) ⇒ <code>Object</code>
 **Kind**: static method of [<code>helpers</code>](#module_@the-/rtc.helpers)  
 **Returns**: <code>Object</code> - Parsed values  
 
 | Param | Type |
 | --- | --- |
 | secret | <code>string</code> | 
+| expiry | <code>number</code> | 
 
 <a name="module_@the-/rtc.mixins"></a>
 

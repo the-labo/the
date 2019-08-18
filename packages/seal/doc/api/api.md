@@ -5,14 +5,12 @@
 ## @the-/seal
 Encrypt json object with master password
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/seal](#module_@the-/seal)
     * [.TheSeal](#module_@the-/seal.TheSeal)
         * [new TheSeal(secret, [options])](#new_module_@the-/seal.TheSeal_new)
-        * [.seal(values)](#module_@the-/seal.TheSeal+seal) ⇒ <code>string</code>
-        * [.verify(sealString, values)](#module_@the-/seal.TheSeal+verify) ⇒ <code>boolean</code>
     * [.create(...args)](#module_@the-/seal.create) ⇒ <code>TheSeal</code>
     * [.default()](#module_@the-/seal.default)
 
@@ -20,12 +18,6 @@ Encrypt json object with master password
 
 ### seal.TheSeal
 **Kind**: static class of [<code>@the-/seal</code>](#module_@the-/seal)  
-
-* [.TheSeal](#module_@the-/seal.TheSeal)
-    * [new TheSeal(secret, [options])](#new_module_@the-/seal.TheSeal_new)
-    * [.seal(values)](#module_@the-/seal.TheSeal+seal) ⇒ <code>string</code>
-    * [.verify(sealString, values)](#module_@the-/seal.TheSeal+verify) ⇒ <code>boolean</code>
-
 <a name="new_module_@the-/seal.TheSeal_new"></a>
 
 #### new TheSeal(secret, [options])
@@ -37,31 +29,6 @@ Seal handler
 | secret | <code>string</code> |  | Secret password |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 | [options.algorithm] | <code>string</code> | <code>&quot;&#x27;sha512&#x27;&quot;</code> | Hash algorithm |
-
-<a name="module_@the-/seal.TheSeal+seal"></a>
-
-#### theSeal.seal(values) ⇒ <code>string</code>
-Seal values
-
-**Kind**: instance method of [<code>TheSeal</code>](#module_@the-/seal.TheSeal)  
-**Returns**: <code>string</code> - seal string  
-
-| Param | Type |
-| --- | --- |
-| values | <code>Object</code> | 
-
-<a name="module_@the-/seal.TheSeal+verify"></a>
-
-#### theSeal.verify(sealString, values) ⇒ <code>boolean</code>
-Verify sealed
-
-**Kind**: instance method of [<code>TheSeal</code>](#module_@the-/seal.TheSeal)  
-**Returns**: <code>boolean</code> - Valid or not  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| sealString | <code>string</code> | Seal string |
-| values | <code>Object</code> | Values to verify |
 
 <a name="module_@the-/seal.create"></a>
 

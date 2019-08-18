@@ -7,20 +7,20 @@
     "longname": "module:@the-/scene",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/scene",
     "order": 2,
     "typicalname": "scene",
-    "version": "15.4.7"
+    "version": "16.0.2"
   },
   {
     "description": "Scene scope",
-    "id": "module:@the-/scene.TheScene#scope",
+    "id": "TheScene#scope",
     "kind": "member",
-    "longname": "module:@the-/scene.TheScene#scope",
-    "memberof": "module:@the-/scene.TheScene",
+    "longname": "TheScene#scope",
+    "memberof": "TheScene",
     "meta": {
       "filename": "TheScene.js",
       "lineno": 36,
@@ -41,50 +41,34 @@
     "scope": "instance"
   },
   {
-    "description": "Alias for `this.subFor`",
-    "id": "module:@the-/scene.TheScene#for",
+    "description": "Alias for `this.scope.get`",
+    "id": "TheScene#get",
     "kind": "function",
-    "longname": "module:@the-/scene.TheScene#for",
-    "memberof": "module:@the-/scene.TheScene",
+    "longname": "TheScene#get",
+    "memberof": "TheScene",
     "meta": {
       "filename": "TheScene.js",
       "lineno": 41,
       "path": "lib"
     },
-    "name": "for",
+    "name": "get",
     "order": 5,
     "params": [],
     "scope": "instance"
   },
   {
-    "description": "Alias for `this.scope.get`",
-    "id": "module:@the-/scene.TheScene#get",
-    "kind": "function",
-    "longname": "module:@the-/scene.TheScene#get",
-    "memberof": "module:@the-/scene.TheScene",
-    "meta": {
-      "filename": "TheScene.js",
-      "lineno": 46,
-      "path": "lib"
-    },
-    "name": "get",
-    "order": 6,
-    "params": [],
-    "scope": "instance"
-  },
-  {
     "description": "Check if value exists",
-    "id": "module:@the-/scene.TheScene#has",
+    "id": "TheScene#has",
     "kind": "function",
-    "longname": "module:@the-/scene.TheScene#has",
-    "memberof": "module:@the-/scene.TheScene",
+    "longname": "TheScene#has",
+    "memberof": "TheScene",
     "meta": {
       "filename": "TheScene.js",
-      "lineno": 65,
+      "lineno": 61,
       "path": "lib"
     },
     "name": "has",
-    "order": 7,
+    "order": 6,
     "params": [
       {
         "type": {
@@ -108,69 +92,34 @@
   },
   {
     "description": "Alias for `this.scope.init`",
-    "id": "module:@the-/scene.TheScene#init",
+    "id": "TheScene#init",
     "kind": "function",
-    "longname": "module:@the-/scene.TheScene#init",
-    "memberof": "module:@the-/scene.TheScene",
+    "longname": "TheScene#init",
+    "memberof": "TheScene",
     "meta": {
       "filename": "TheScene.js",
-      "lineno": 77,
+      "lineno": 74,
       "path": "lib"
     },
     "name": "init",
-    "order": 8,
+    "order": 7,
     "params": [],
     "scope": "instance"
   },
   {
     "description": "Alias for `this.scope.set`",
-    "id": "module:@the-/scene.TheScene#set",
+    "id": "TheScene#set",
     "kind": "function",
-    "longname": "module:@the-/scene.TheScene#set",
-    "memberof": "module:@the-/scene.TheScene",
+    "longname": "TheScene#set",
+    "memberof": "TheScene",
     "meta": {
       "filename": "TheScene.js",
-      "lineno": 98,
+      "lineno": 95,
       "path": "lib"
     },
     "name": "set",
-    "order": 9,
+    "order": 8,
     "params": [],
-    "scope": "instance"
-  },
-  {
-    "description": "Get sub scene with scope for namepath",
-    "id": "module:@the-/scene.mixins.subMix~SubMixed#subFor",
-    "kind": "function",
-    "longname": "module:@the-/scene.mixins.subMix~SubMixed#subFor",
-    "memberof": "module:@the-/scene.mixins.subMix~SubMixed",
-    "meta": {
-      "filename": "subMix.js",
-      "lineno": 25,
-      "path": "lib/mixins"
-    },
-    "name": "subFor",
-    "order": 17,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Namepath",
-        "name": "namepath"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        }
-      }
-    ],
     "scope": "instance"
   },
   {
@@ -180,26 +129,11 @@
     "memberof": "module:@the-/scene",
     "meta": {
       "filename": "TheScene.js",
-      "lineno": 2,
+      "lineno": 13,
       "path": "lib"
     },
     "name": "TheScene",
     "order": 3,
-    "scope": "static"
-  },
-  {
-    "description": "Mixin functions",
-    "id": "module:@the-/scene.mixins",
-    "kind": "namespace",
-    "longname": "module:@the-/scene.mixins",
-    "memberof": "module:@the-/scene",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 2,
-      "path": "lib/mixins"
-    },
-    "name": "mixins",
-    "order": 14,
     "scope": "static"
   },
   {
@@ -210,7 +144,7 @@
     "memberof": "module:@the-/scene",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -245,155 +179,11 @@
     "memberof": "module:@the-/scene",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
     "order": 1,
     "scope": "static"
-  },
-  {
-    "id": "module:@the-/scene.mixins.errorMix",
-    "kind": "function",
-    "longname": "module:@the-/scene.mixins.errorMix",
-    "memberof": "module:@the-/scene.mixins",
-    "meta": {
-      "filename": "errorMix.js",
-      "lineno": 2,
-      "path": "lib/mixins"
-    },
-    "name": "errorMix",
-    "order": 10,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "BaseClass"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "MixedClass"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "id": "module:@the-/scene.mixins.goMix",
-    "kind": "function",
-    "longname": "module:@the-/scene.mixins.goMix",
-    "memberof": "module:@the-/scene.mixins",
-    "meta": {
-      "filename": "goMix.js",
-      "lineno": 2,
-      "path": "lib/mixins"
-    },
-    "name": "goMix",
-    "order": 12,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "BaseClass"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "MixedClass"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "id": "module:@the-/scene.mixins.subMix",
-    "kind": "function",
-    "longname": "module:@the-/scene.mixins.subMix",
-    "memberof": "module:@the-/scene.mixins",
-    "meta": {
-      "filename": "subMix.js",
-      "lineno": 2,
-      "path": "lib/mixins"
-    },
-    "name": "subMix",
-    "order": 15,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "BaseClass"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "MixedClass"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "id": "module:@the-/scene.mixins.goMix~ErrorMixed",
-    "kind": "class",
-    "longname": "module:@the-/scene.mixins.goMix~ErrorMixed",
-    "memberof": "module:@the-/scene.mixins.goMix",
-    "meta": {
-      "filename": "errorMix.js",
-      "lineno": 14,
-      "path": "lib/mixins"
-    },
-    "name": "ErrorMixed",
-    "order": 11,
-    "scope": "inner"
-  },
-  {
-    "id": "module:@the-/scene.mixins.goMix~GoMixed",
-    "kind": "class",
-    "longname": "module:@the-/scene.mixins.goMix~GoMixed",
-    "memberof": "module:@the-/scene.mixins.goMix",
-    "meta": {
-      "filename": "goMix.js",
-      "lineno": 17,
-      "path": "lib/mixins"
-    },
-    "name": "GoMixed",
-    "order": 13,
-    "scope": "inner"
-  },
-  {
-    "id": "module:@the-/scene.mixins.subMix~SubMixed",
-    "kind": "class",
-    "longname": "module:@the-/scene.mixins.subMix~SubMixed",
-    "memberof": "module:@the-/scene.mixins.subMix",
-    "meta": {
-      "filename": "subMix.js",
-      "lineno": 15,
-      "path": "lib/mixins"
-    },
-    "name": "SubMixed",
-    "order": 16,
-    "scope": "inner"
   }
 ]

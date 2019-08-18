@@ -61,7 +61,13 @@ once('DOMContentLoaded', async () => {
 
   const app = (
     <Suspense fallback={<Fallback />}>
-      <App {...props} {...{ client, handle, history, store }} />
+      <App
+        {...props}
+        client={client}
+        handle={handle}
+        history={history}
+        store={store}
+      />
     </Suspense>
   )
   await mount(app, UI.APP_CONTAINER_ID, {

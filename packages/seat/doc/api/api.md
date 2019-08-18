@@ -5,153 +5,22 @@
 ## @the-/seat
 Shared value manager
 
-**Version**: 15.4.7  
+**Version**: 15.4.8  
 **License**: MIT  
 
 * [@the-/seat](#module_@the-/seat)
     * [.TheSeat](#module_@the-/seat.TheSeat)
-        * [.acquire(key, next)](#module_@the-/seat.TheSeat+acquire)
-        * [.acquireNumber(key, [options])](#module_@the-/seat.TheSeat+acquireNumber) ⇒ <code>number</code>
-        * [.acquireString(key, [options])](#module_@the-/seat.TheSeat+acquireString) ⇒ <code>string</code>
-        * [.bind(key)](#module_@the-/seat.TheSeat+bind) ⇒ <code>Object</code>
-        * [.canTake(key, value)](#module_@the-/seat.TheSeat+canTake) ⇒ <code>boolean</code>
-        * [.get(key)](#module_@the-/seat.TheSeat+get) ⇒ <code>\*</code>
-        * [.release(key)](#module_@the-/seat.TheSeat+release)
-        * [.scope(scopeName)](#module_@the-/seat.TheSeat+scope) ⇒ <code>TheSeat.constructor</code>
-        * [.take(key, value)](#module_@the-/seat.TheSeat+take) ⇒ <code>undefined</code>
     * [.helpers](#module_@the-/seat.helpers) : <code>object</code>
     * [.mixins](#module_@the-/seat.mixins) : <code>object</code>
         * [.lockMix()](#module_@the-/seat.mixins.lockMix)
     * [.create(...args)](#module_@the-/seat.create) ⇒ <code>TheSeat</code>
     * [.default()](#module_@the-/seat.default)
-    * [.scopeMix()](#module_@the-/seat.scopeMix)
+    * [.scopeMix(Class)](#module_@the-/seat.scopeMix) ⇒ <code>\*</code>
 
 <a name="module_@the-/seat.TheSeat"></a>
 
 ### seat.TheSeat
 **Kind**: static class of [<code>@the-/seat</code>](#module_@the-/seat)  
-
-* [.TheSeat](#module_@the-/seat.TheSeat)
-    * [.acquire(key, next)](#module_@the-/seat.TheSeat+acquire)
-    * [.acquireNumber(key, [options])](#module_@the-/seat.TheSeat+acquireNumber) ⇒ <code>number</code>
-    * [.acquireString(key, [options])](#module_@the-/seat.TheSeat+acquireString) ⇒ <code>string</code>
-    * [.bind(key)](#module_@the-/seat.TheSeat+bind) ⇒ <code>Object</code>
-    * [.canTake(key, value)](#module_@the-/seat.TheSeat+canTake) ⇒ <code>boolean</code>
-    * [.get(key)](#module_@the-/seat.TheSeat+get) ⇒ <code>\*</code>
-    * [.release(key)](#module_@the-/seat.TheSeat+release)
-    * [.scope(scopeName)](#module_@the-/seat.TheSeat+scope) ⇒ <code>TheSeat.constructor</code>
-    * [.take(key, value)](#module_@the-/seat.TheSeat+take) ⇒ <code>undefined</code>
-
-<a name="module_@the-/seat.TheSeat+acquire"></a>
-
-#### theSeat.acquire(key, next)
-Acquire value with
-
-**Kind**: instance method of [<code>TheSeat</code>](#module_@the-/seat.TheSeat)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| key | <code>string</code> | Key for value |
-| next | <code>function</code> | Next value generator |
-
-<a name="module_@the-/seat.TheSeat+acquireNumber"></a>
-
-#### theSeat.acquireNumber(key, [options]) ⇒ <code>number</code>
-Acquire number value for key
-
-**Kind**: instance method of [<code>TheSeat</code>](#module_@the-/seat.TheSeat)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| key | <code>string</code> |  | Key for value |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-| [options.base] | <code>number</code> | <code>1</code> | Base number |
-| [options.increment] | <code>number</code> | <code>1</code> | Increment amount when retry |
-
-<a name="module_@the-/seat.TheSeat+acquireString"></a>
-
-#### theSeat.acquireString(key, [options]) ⇒ <code>string</code>
-Acquire string value for key
-
-**Kind**: instance method of [<code>TheSeat</code>](#module_@the-/seat.TheSeat)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| key | <code>string</code> |  | Key for value |
-| [options] | <code>Object</code> | <code>{}</code> | Optional settings |
-| [options.bytes] | <code>number</code> | <code>4</code> | Byte length |
-| [options.prefix] | <code>string</code> |  | Prefix |
-| [options.suffix] | <code>string</code> |  | Suffix |
-
-<a name="module_@the-/seat.TheSeat+bind"></a>
-
-#### theSeat.bind(key) ⇒ <code>Object</code>
-Bind accessors to key
-
-**Kind**: instance method of [<code>TheSeat</code>](#module_@the-/seat.TheSeat)  
-**Returns**: <code>Object</code> - - Bound object  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| key | <code>string</code> | Key for value |
-
-<a name="module_@the-/seat.TheSeat+canTake"></a>
-
-#### theSeat.canTake(key, value) ⇒ <code>boolean</code>
-Check if it can taken by key
-
-**Kind**: instance method of [<code>TheSeat</code>](#module_@the-/seat.TheSeat)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| key | <code>string</code> | Key for value |
-| value | <code>\*</code> |  |
-
-<a name="module_@the-/seat.TheSeat+get"></a>
-
-#### theSeat.get(key) ⇒ <code>\*</code>
-Get value for key
-
-**Kind**: instance method of [<code>TheSeat</code>](#module_@the-/seat.TheSeat)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| key | <code>string</code> | Key for value |
-
-<a name="module_@the-/seat.TheSeat+release"></a>
-
-#### theSeat.release(key)
-Release value for key
-
-**Kind**: instance method of [<code>TheSeat</code>](#module_@the-/seat.TheSeat)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| key | <code>string</code> | Key for value |
-
-<a name="module_@the-/seat.TheSeat+scope"></a>
-
-#### theSeat.scope(scopeName) ⇒ <code>TheSeat.constructor</code>
-Get scoped seat
-
-**Kind**: instance method of [<code>TheSeat</code>](#module_@the-/seat.TheSeat)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| scopeName | <code>string</code> | Name of sub scope |
-
-<a name="module_@the-/seat.TheSeat+take"></a>
-
-#### theSeat.take(key, value) ⇒ <code>undefined</code>
-Take value
-
-**Kind**: instance method of [<code>TheSeat</code>](#module_@the-/seat.TheSeat)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| key | <code>string</code> | Key for value |
-| value | <code>\*</code> |  |
-
 <a name="module_@the-/seat.helpers"></a>
 
 ### seat.helpers : <code>object</code>
@@ -187,5 +56,10 @@ Alias of [create](#module_@the-/seat.create)
 **Kind**: static method of [<code>@the-/seat</code>](#module_@the-/seat)  
 <a name="module_@the-/seat.scopeMix"></a>
 
-### seat.scopeMix()
+### seat.scopeMix(Class) ⇒ <code>\*</code>
 **Kind**: static method of [<code>@the-/seat</code>](#module_@the-/seat)  
+
+| Param |
+| --- |
+| Class | 
+

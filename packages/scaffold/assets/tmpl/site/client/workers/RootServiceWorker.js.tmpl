@@ -30,7 +30,9 @@ self.addEventListener('fetch', (event) => {
 
   event.respondWith(
     (async function() {
-      const { v } = scriptURL.query
+      const {
+        query: { v },
+      } = scriptURL
       const cache = await appCache(scriptURL.host, v, {
         scope: 'static-files',
       })

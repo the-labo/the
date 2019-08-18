@@ -6,7 +6,7 @@
     "longname": "module:@the-/ui-button",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-button",
@@ -65,7 +65,7 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 174,
+      "lineno": 177,
       "path": "lib"
     },
     "name": "color",
@@ -80,7 +80,7 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 176,
+      "lineno": 179,
       "path": "lib"
     },
     "name": "danger",
@@ -95,7 +95,7 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 178,
+      "lineno": 181,
       "path": "lib"
     },
     "name": "disabled",
@@ -110,7 +110,7 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 180,
+      "lineno": 183,
       "path": "lib"
     },
     "name": "floated",
@@ -125,7 +125,7 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 182,
+      "lineno": 185,
       "path": "lib"
     },
     "name": "icon",
@@ -140,7 +140,7 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 184,
+      "lineno": 187,
       "path": "lib"
     },
     "name": "large",
@@ -155,7 +155,7 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 186,
+      "lineno": 189,
       "path": "lib"
     },
     "name": "largeIcon",
@@ -170,7 +170,7 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 188,
+      "lineno": 191,
       "path": "lib"
     },
     "name": "light",
@@ -185,7 +185,7 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 190,
+      "lineno": 193,
       "path": "lib"
     },
     "name": "minInterval",
@@ -200,7 +200,7 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 192,
+      "lineno": 195,
       "path": "lib"
     },
     "name": "onSubmit",
@@ -215,7 +215,7 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 194,
+      "lineno": 197,
       "path": "lib"
     },
     "name": "primary",
@@ -230,7 +230,7 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 196,
+      "lineno": 199,
       "path": "lib"
     },
     "name": "rounded",
@@ -245,7 +245,7 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 198,
+      "lineno": 201,
       "path": "lib"
     },
     "name": "simple",
@@ -260,7 +260,7 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 200,
+      "lineno": 203,
       "path": "lib"
     },
     "name": "small",
@@ -275,7 +275,7 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 202,
+      "lineno": 205,
       "path": "lib"
     },
     "name": "spinning",
@@ -290,7 +290,7 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 204,
+      "lineno": 207,
       "path": "lib"
     },
     "name": "text",
@@ -305,7 +305,7 @@
     "memberof": "TheButton.propTypes",
     "meta": {
       "filename": "TheButton.jsx",
-      "lineno": 206,
+      "lineno": 209,
       "path": "lib"
     },
     "name": "wide",

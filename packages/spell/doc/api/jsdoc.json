@@ -7,7 +7,7 @@
     "longname": "module:@the-/spell",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/spell",
@@ -39,13 +39,13 @@
   {
     "async": true,
     "description": "Check files",
-    "id": "module:@the-/spell.TheSpell#check",
+    "id": "TheSpell#check",
     "kind": "function",
-    "longname": "module:@the-/spell.TheSpell#check",
-    "memberof": "module:@the-/spell.TheSpell",
+    "longname": "TheSpell#check",
+    "memberof": "TheSpell",
     "meta": {
       "filename": "TheSpell.js",
-      "lineno": 102,
+      "lineno": 103,
       "path": "lib"
     },
     "name": "check",
@@ -90,7 +90,7 @@
     "memberof": "module:@the-/spell",
     "meta": {
       "filename": "TheSpell.js",
-      "lineno": 1,
+      "lineno": 18,
       "path": "lib"
     },
     "name": "TheSpell",
@@ -104,7 +104,7 @@
     "memberof": "module:@the-/lint.helpers",
     "meta": {
       "filename": "SpellCache.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/helpers"
     },
     "name": "SpellCache",
@@ -140,7 +140,7 @@
     "memberof": "module:@the-/spell",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "helpers",
@@ -155,7 +155,7 @@
     "memberof": "module:@the-/spell",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -190,7 +190,7 @@
     "memberof": "module:@the-/spell",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",

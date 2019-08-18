@@ -10,14 +10,10 @@ Secret store for the-frameworks
 
 * [@the-/secret](#module_@the-/secret)
     * [.TheSecret](#module_@the-/secret.TheSecret) ⇐ <code>CryptoMixed</code>
-        * [.decrypt()](#module_@the-/secret.TheSecret+decrypt)
-        * [.encrypt()](#module_@the-/secret.TheSecret+encrypt)
-        * [.get([name])](#module_@the-/secret.TheSecret+get) ⇒ <code>\*</code>
-        * [.writeout(filename)](#module_@the-/secret.TheSecret+writeout)
     * [.mixins](#module_@the-/secret.mixins) : <code>object</code>
         * [.cryptoMix()](#module_@the-/secret.mixins.cryptoMix)
             * [~CryptoMixed](#module_@the-/secret.mixins.cryptoMix..CryptoMixed)
-        * [.lockMix()](#module_@the-/secret.mixins.lockMix)
+        * [.lockMix(Class)](#module_@the-/secret.mixins.lockMix) ⇒ <code>\*</code>
             * [~LockMixed](#module_@the-/secret.mixins.lockMix..LockMixed)
     * [.create(...args)](#module_@the-/secret.create) ⇒ [<code>TheSecret</code>](#module_@the-/secret.TheSecret)
     * [.theSecret()](#module_@the-/secret.theSecret) ⇒ <code>TheSecret</code>
@@ -27,47 +23,6 @@ Secret store for the-frameworks
 ### secret.TheSecret ⇐ <code>CryptoMixed</code>
 **Kind**: static class of [<code>@the-/secret</code>](#module_@the-/secret)  
 **Extends**: <code>CryptoMixed</code>, <code>LockMixed</code>  
-
-* [.TheSecret](#module_@the-/secret.TheSecret) ⇐ <code>CryptoMixed</code>
-    * [.decrypt()](#module_@the-/secret.TheSecret+decrypt)
-    * [.encrypt()](#module_@the-/secret.TheSecret+encrypt)
-    * [.get([name])](#module_@the-/secret.TheSecret+get) ⇒ <code>\*</code>
-    * [.writeout(filename)](#module_@the-/secret.TheSecret+writeout)
-
-<a name="module_@the-/secret.TheSecret+decrypt"></a>
-
-#### theSecret.decrypt()
-Descript data in file
-
-**Kind**: instance method of [<code>TheSecret</code>](#module_@the-/secret.TheSecret)  
-<a name="module_@the-/secret.TheSecret+encrypt"></a>
-
-#### theSecret.encrypt()
-Encrypt data in file
-
-**Kind**: instance method of [<code>TheSecret</code>](#module_@the-/secret.TheSecret)  
-<a name="module_@the-/secret.TheSecret+get"></a>
-
-#### theSecret.get([name]) ⇒ <code>\*</code>
-Get value for name
-
-**Kind**: instance method of [<code>TheSecret</code>](#module_@the-/secret.TheSecret)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| [name] | <code>string</code> | Name to get |
-
-<a name="module_@the-/secret.TheSecret+writeout"></a>
-
-#### theSecret.writeout(filename)
-Write out into external file
-
-**Kind**: instance method of [<code>TheSecret</code>](#module_@the-/secret.TheSecret)  
-
-| Param | Type |
-| --- | --- |
-| filename | <code>string</code> | 
-
 <a name="module_@the-/secret.mixins"></a>
 
 ### secret.mixins : <code>object</code>
@@ -79,7 +34,7 @@ Mixin functions
 * [.mixins](#module_@the-/secret.mixins) : <code>object</code>
     * [.cryptoMix()](#module_@the-/secret.mixins.cryptoMix)
         * [~CryptoMixed](#module_@the-/secret.mixins.cryptoMix..CryptoMixed)
-    * [.lockMix()](#module_@the-/secret.mixins.lockMix)
+    * [.lockMix(Class)](#module_@the-/secret.mixins.lockMix) ⇒ <code>\*</code>
         * [~LockMixed](#module_@the-/secret.mixins.lockMix..LockMixed)
 
 <a name="module_@the-/secret.mixins.cryptoMix"></a>
@@ -92,10 +47,15 @@ Mixin functions
 **Kind**: inner class of [<code>cryptoMix</code>](#module_@the-/secret.mixins.cryptoMix)  
 <a name="module_@the-/secret.mixins.lockMix"></a>
 
-#### mixins.lockMix()
+#### mixins.lockMix(Class) ⇒ <code>\*</code>
 Mixin for lock
 
 **Kind**: static method of [<code>mixins</code>](#module_@the-/secret.mixins)  
+
+| Param |
+| --- |
+| Class | 
+
 <a name="module_@the-/secret.mixins.lockMix..LockMixed"></a>
 
 ##### lockMix~LockMixed

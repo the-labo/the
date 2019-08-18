@@ -7,13 +7,13 @@
     "longname": "module:@the-/support",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/support",
     "order": 1,
     "typicalname": "support",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "id": "module:@the-/support.TheSupport()",
@@ -41,7 +41,7 @@
     "memberof": "module:@the-/support",
     "meta": {
       "filename": "TheSupport.js",
-      "lineno": 2,
+      "lineno": 9,
       "path": "lib"
     },
     "name": "TheSupport",
@@ -57,7 +57,7 @@
     "memberof": "module:@the-/support",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "helpers",
@@ -72,7 +72,7 @@
     "memberof": "module:@the-/support",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -107,11 +107,28 @@
     "memberof": "module:@the-/support.helpers",
     "meta": {
       "filename": "detectUnsupportedCode.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib/helpers"
     },
     "name": "detectUnsupportedCode",
     "order": 4,
+    "params": [
+      {
+        "name": "code"
+      },
+      {
+        "name": "ecmaVersion"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -121,7 +138,7 @@
     "memberof": "module:@the-/support.helpers",
     "meta": {
       "filename": "findEvalCode.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "findEvalCode",

@@ -29,32 +29,32 @@ HTTP/RPC Server of the-framework
         * [new TheServer(config, langs, logFile, middlewares)](#new_module_@the-/server.TheServer_new)
     * [.buildInEndpoints](#module_@the-/server.buildInEndpoints) : <code>object</code>
     * [.adapters](#module_@the-/server.adapters) : <code>object</code>
-        * [.redisAdapter()](#module_@the-/server.adapters.redisAdapter)
+        * [.redisAdapter(io, [options&#x3D;])](#module_@the-/server.adapters.redisAdapter) ⇒ <code>\*</code>
     * [.assert](#module_@the-/server.assert) : <code>object</code>
         * [.assertMethods(Class, reservedNames)](#module_@the-/server.assert.assertMethods)
     * [.connectors](#module_@the-/server.connectors) : <code>object</code>
-        * [.IOConnector()](#module_@the-/server.connectors.IOConnector)
+        * [.IOConnector()](#module_@the-/server.connectors.IOConnector) ⇒ <code>\*</code>
     * [.constants](#module_@the-/server.constants) : <code>object</code>
         * [.DefaultValues](#module_@the-/server.constants.DefaultValues) : <code>object</code>
     * [.helpers](#module_@the-/server.helpers) : <code>object</code>
         * _static_
-            * [.asStrictSession(session)](#module_@the-/server.helpers.asStrictSession)
-            * [.callbacksProxy()](#module_@the-/server.helpers.callbacksProxy) ⇒ <code>Proxy</code>
+            * [.asStrictSession(session)](#module_@the-/server.helpers.asStrictSession) ⇒ <code>\*</code>
+            * [.callbacksProxy([options&#x3D;])](#module_@the-/server.helpers.callbacksProxy) ⇒ <code>Proxy</code>
             * [.ClientAccess(config)](#module_@the-/server.helpers.ClientAccess) ⇒ <code>Object</code>
                 * [~clientAccess](#module_@the-/server.helpers.ClientAccess..clientAccess) : <code>object</code>
             * [.ctxInjector(creators)](#module_@the-/server.helpers.ctxInjector) ⇒ <code>function</code>
             * [.InfoFlusher(filename, getter)](#module_@the-/server.helpers.InfoFlusher) ⇒ <code>Object</code>
                 * [~infoFlusher](#module_@the-/server.helpers.InfoFlusher..infoFlusher) : <code>object</code>
             * [.langDetector([locales], [options])](#module_@the-/server.helpers.langDetector) ⇒ <code>function</code>
-            * [.MetricsCounter()](#module_@the-/server.helpers.MetricsCounter)
-            * [.queryFromUrl()](#module_@the-/server.helpers.queryFromUrl)
+            * [.MetricsCounter()](#module_@the-/server.helpers.MetricsCounter) ⇒ <code>\*</code>
+            * [.queryFromUrl(urlString)](#module_@the-/server.helpers.queryFromUrl) ⇒ <code>\*</code>
             * [.RPCKeeper(Class)](#module_@the-/server.helpers.RPCKeeper) ⇒ <code>function</code>
                 * [~rpcKeeper](#module_@the-/server.helpers.RPCKeeper..rpcKeeper) : <code>object</code>
             * [.serverRendering(Component, [options])](#module_@the-/server.helpers.serverRendering) ⇒ <code>function</code>
-            * [.serverRendering()](#module_@the-/server.helpers.serverRendering)
-            * [.toControllerDriverFactory()](#module_@the-/server.helpers.toControllerDriverFactory) ⇒ <code>function</code>
-            * [.toLowerKeys()](#module_@the-/server.helpers.toLowerKeys)
-            * [.streamPool()](#module_@the-/server.helpers.streamPool)
+            * [.serverRendering(Html, [options&#x3D;])](#module_@the-/server.helpers.serverRendering) ⇒ <code>\*</code>
+            * [.toControllerDriverFactory(ControllerFactory, [options&#x3D;])](#module_@the-/server.helpers.toControllerDriverFactory) ⇒ <code>function</code>
+            * [.toLowerKeys([values&#x3D;])](#module_@the-/server.helpers.toLowerKeys) ⇒ <code>\*</code>
+            * [.streamPool()](#module_@the-/server.helpers.streamPool) ⇒ <code>\*</code>
         * _inner_
             * [~StreamDriverPool](#module_@the-/server.helpers..StreamDriverPool)
     * [.stores](#module_@the-/server.stores) : <code>object</code>
@@ -98,10 +98,16 @@ Adapter functions
 **Kind**: static namespace of [<code>@the-/server</code>](#module_@the-/server)  
 <a name="module_@the-/server.adapters.redisAdapter"></a>
 
-#### adapters.redisAdapter()
+#### adapters.redisAdapter(io, [options&#x3D;]) ⇒ <code>\*</code>
 Define redis adapter for sockets
 
 **Kind**: static method of [<code>adapters</code>](#module_@the-/server.adapters)  
+
+| Param |
+| --- |
+| io | 
+| [options=] | 
+
 <a name="module_@the-/server.assert"></a>
 
 ### server.assert : <code>object</code>
@@ -131,7 +137,7 @@ connector functions
 **Access**: protected  
 <a name="module_@the-/server.connectors.IOConnector"></a>
 
-#### connectors.IOConnector()
+#### connectors.IOConnector() ⇒ <code>\*</code>
 **Kind**: static method of [<code>connectors</code>](#module_@the-/server.connectors)  
 <a name="module_@the-/server.constants"></a>
 
@@ -153,29 +159,29 @@ Helper functions
 
 * [.helpers](#module_@the-/server.helpers) : <code>object</code>
     * _static_
-        * [.asStrictSession(session)](#module_@the-/server.helpers.asStrictSession)
-        * [.callbacksProxy()](#module_@the-/server.helpers.callbacksProxy) ⇒ <code>Proxy</code>
+        * [.asStrictSession(session)](#module_@the-/server.helpers.asStrictSession) ⇒ <code>\*</code>
+        * [.callbacksProxy([options&#x3D;])](#module_@the-/server.helpers.callbacksProxy) ⇒ <code>Proxy</code>
         * [.ClientAccess(config)](#module_@the-/server.helpers.ClientAccess) ⇒ <code>Object</code>
             * [~clientAccess](#module_@the-/server.helpers.ClientAccess..clientAccess) : <code>object</code>
         * [.ctxInjector(creators)](#module_@the-/server.helpers.ctxInjector) ⇒ <code>function</code>
         * [.InfoFlusher(filename, getter)](#module_@the-/server.helpers.InfoFlusher) ⇒ <code>Object</code>
             * [~infoFlusher](#module_@the-/server.helpers.InfoFlusher..infoFlusher) : <code>object</code>
         * [.langDetector([locales], [options])](#module_@the-/server.helpers.langDetector) ⇒ <code>function</code>
-        * [.MetricsCounter()](#module_@the-/server.helpers.MetricsCounter)
-        * [.queryFromUrl()](#module_@the-/server.helpers.queryFromUrl)
+        * [.MetricsCounter()](#module_@the-/server.helpers.MetricsCounter) ⇒ <code>\*</code>
+        * [.queryFromUrl(urlString)](#module_@the-/server.helpers.queryFromUrl) ⇒ <code>\*</code>
         * [.RPCKeeper(Class)](#module_@the-/server.helpers.RPCKeeper) ⇒ <code>function</code>
             * [~rpcKeeper](#module_@the-/server.helpers.RPCKeeper..rpcKeeper) : <code>object</code>
         * [.serverRendering(Component, [options])](#module_@the-/server.helpers.serverRendering) ⇒ <code>function</code>
-        * [.serverRendering()](#module_@the-/server.helpers.serverRendering)
-        * [.toControllerDriverFactory()](#module_@the-/server.helpers.toControllerDriverFactory) ⇒ <code>function</code>
-        * [.toLowerKeys()](#module_@the-/server.helpers.toLowerKeys)
-        * [.streamPool()](#module_@the-/server.helpers.streamPool)
+        * [.serverRendering(Html, [options&#x3D;])](#module_@the-/server.helpers.serverRendering) ⇒ <code>\*</code>
+        * [.toControllerDriverFactory(ControllerFactory, [options&#x3D;])](#module_@the-/server.helpers.toControllerDriverFactory) ⇒ <code>function</code>
+        * [.toLowerKeys([values&#x3D;])](#module_@the-/server.helpers.toLowerKeys) ⇒ <code>\*</code>
+        * [.streamPool()](#module_@the-/server.helpers.streamPool) ⇒ <code>\*</code>
     * _inner_
         * [~StreamDriverPool](#module_@the-/server.helpers..StreamDriverPool)
 
 <a name="module_@the-/server.helpers.asStrictSession"></a>
 
-#### helpers.asStrictSession(session)
+#### helpers.asStrictSession(session) ⇒ <code>\*</code>
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
 
 | Param | Type |
@@ -184,11 +190,16 @@ Helper functions
 
 <a name="module_@the-/server.helpers.callbacksProxy"></a>
 
-#### helpers.callbacksProxy() ⇒ <code>Proxy</code>
+#### helpers.callbacksProxy([options&#x3D;]) ⇒ <code>Proxy</code>
 Callback proxy
 
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
 **Returns**: <code>Proxy</code> - Proxy instance  
+
+| Param |
+| --- |
+| [options=] | 
+
 <a name="module_@the-/server.helpers.ClientAccess"></a>
 
 #### helpers.ClientAccess(config) ⇒ <code>Object</code>
@@ -246,14 +257,19 @@ Define koa middleware function to detect locale
 
 <a name="module_@the-/server.helpers.MetricsCounter"></a>
 
-#### helpers.MetricsCounter()
+#### helpers.MetricsCounter() ⇒ <code>\*</code>
 MetricsC Counter
 
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
 <a name="module_@the-/server.helpers.queryFromUrl"></a>
 
-#### helpers.queryFromUrl()
+#### helpers.queryFromUrl(urlString) ⇒ <code>\*</code>
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+
+| Param |
+| --- |
+| urlString | 
+
 <a name="module_@the-/server.helpers.RPCKeeper"></a>
 
 #### helpers.RPCKeeper(Class) ⇒ <code>function</code>
@@ -285,19 +301,36 @@ Define koa middleware function to do serverside rendering
 
 <a name="module_@the-/server.helpers.serverRendering"></a>
 
-#### helpers.serverRendering()
+#### helpers.serverRendering(Html, [options&#x3D;]) ⇒ <code>\*</code>
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+
+| Param |
+| --- |
+| Html | 
+| [options=] | 
+
 <a name="module_@the-/server.helpers.toControllerDriverFactory"></a>
 
-#### helpers.toControllerDriverFactory() ⇒ <code>function</code>
+#### helpers.toControllerDriverFactory(ControllerFactory, [options&#x3D;]) ⇒ <code>function</code>
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+
+| Param |
+| --- |
+| ControllerFactory | 
+| [options=] | 
+
 <a name="module_@the-/server.helpers.toLowerKeys"></a>
 
-#### helpers.toLowerKeys()
+#### helpers.toLowerKeys([values&#x3D;]) ⇒ <code>\*</code>
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
+
+| Param |
+| --- |
+| [values=] | 
+
 <a name="module_@the-/server.helpers.streamPool"></a>
 
-#### helpers.streamPool()
+#### helpers.streamPool() ⇒ <code>\*</code>
 Stream pool
 
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  

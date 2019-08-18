@@ -7,13 +7,13 @@
     "longname": "module:@the-/seal",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/seal",
     "order": 2,
     "typicalname": "seal",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "description": "Seal handler",
@@ -59,10 +59,10 @@
   },
   {
     "description": "Seal values",
-    "id": "module:@the-/seal.TheSeal#seal",
+    "id": "TheSeal#seal",
     "kind": "function",
-    "longname": "module:@the-/seal.TheSeal#seal",
-    "memberof": "module:@the-/seal.TheSeal",
+    "longname": "TheSeal#seal",
+    "memberof": "TheSeal",
     "meta": {
       "filename": "TheSeal.js",
       "lineno": 28,
@@ -94,10 +94,10 @@
   },
   {
     "description": "Verify sealed",
-    "id": "module:@the-/seal.TheSeal#verify",
+    "id": "TheSeal#verify",
     "kind": "function",
-    "longname": "module:@the-/seal.TheSeal#verify",
-    "memberof": "module:@the-/seal.TheSeal",
+    "longname": "TheSeal#verify",
+    "memberof": "TheSeal",
     "meta": {
       "filename": "TheSeal.js",
       "lineno": 42,
@@ -144,7 +144,7 @@
     "memberof": "module:@the-/seal",
     "meta": {
       "filename": "TheSeal.js",
-      "lineno": 2,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "TheSeal",
@@ -159,7 +159,7 @@
     "memberof": "module:@the-/seal",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -194,7 +194,7 @@
     "memberof": "module:@the-/seal",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",

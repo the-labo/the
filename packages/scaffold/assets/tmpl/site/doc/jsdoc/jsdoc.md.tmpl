@@ -3,29 +3,353 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_client">client</a></dt>
+<dt><a href="#module_~~~~package_name~~~~/client">~~~~package_name~~~~/client</a></dt>
 <dd><p>Client module</p>
 </dd>
-<dt><a href="#module_conf">conf</a></dt>
+<dt><a href="#module_~~~~package_name~~~~/conf">~~~~package_name~~~~/conf</a></dt>
 <dd><p>Project configurations</p>
 </dd>
-<dt><a href="#module_server">server</a></dt>
+<dt><a href="#module_~~~~package_name~~~~/server">~~~~package_name~~~~/server</a></dt>
 <dd><p>Application server</p>
 </dd>
 </dl>
 
-<a name="module_client"></a>
+<a name="module_~~~~package_name~~~~/client"></a>
 
-## client
+## ~~~~package_name~~~~/client
 Client module
 
-<a name="module_conf"></a>
 
-## conf
+* [~~~~package_name~~~~/client](#module_~~~~package_name~~~~/client)
+    * [.client](#module_~~~~package_name~~~~/client.client) : <code>object</code>
+        * [.create([config])](#module_~~~~package_name~~~~/client.client.create) ⇒ <code>TheClient</code>
+    * [.mappings](#module_~~~~package_name~~~~/client.mappings) : <code>object</code>
+    * [.scenes](#module_~~~~package_name~~~~/client.scenes) : <code>object</code>
+        * [.AppScene](#module_~~~~package_name~~~~/client.scenes.AppScene)
+            * [new AppScene()](#new_module_~~~~package_name~~~~/client.scenes.AppScene_new)
+        * [.ConnectionRetryScene](#module_~~~~package_name~~~~/client.scenes.ConnectionRetryScene)
+            * [new ConnectionRetryScene()](#new_module_~~~~package_name~~~~/client.scenes.ConnectionRetryScene_new)
+        * [.HomeScene](#module_~~~~package_name~~~~/client.scenes.HomeScene)
+            * [new HomeScene()](#new_module_~~~~package_name~~~~/client.scenes.HomeScene_new)
+        * [.ToastScene](#module_~~~~package_name~~~~/client.scenes.ToastScene)
+            * [new ToastScene()](#new_module_~~~~package_name~~~~/client.scenes.ToastScene_new)
+    * [.scopes](#module_~~~~package_name~~~~/client.scopes) : <code>object</code>
+    * [.store](#module_~~~~package_name~~~~/client.store) : <code>object</code>
+        * [.create()](#module_~~~~package_name~~~~/client.store.create) ⇒ <code>TheStore</code>
+
+<a name="module_~~~~package_name~~~~/client.client"></a>
+
+### ~~~~package_name~~~~/client.client : <code>object</code>
+Client index
+
+**Kind**: static namespace of [<code>~~~~package_name~~~~/client</code>](#module_~~~~package_name~~~~/client)  
+<a name="module_~~~~package_name~~~~/client.client.create"></a>
+
+#### client.create([config]) ⇒ <code>TheClient</code>
+Client a site client
+
+**Kind**: static method of [<code>client</code>](#module_~~~~package_name~~~~/client.client)  
+**Returns**: <code>TheClient</code> - A client instance  
+
+| Param | Type | Default |
+| --- | --- | --- |
+| [config] | <code>Object</code> | <code>{}</code> | 
+
+<a name="module_~~~~package_name~~~~/client.mappings"></a>
+
+### ~~~~package_name~~~~/client.mappings : <code>object</code>
+Module mappings
+
+**Kind**: static namespace of [<code>~~~~package_name~~~~/client</code>](#module_~~~~package_name~~~~/client)  
+<a name="module_~~~~package_name~~~~/client.scenes"></a>
+
+### ~~~~package_name~~~~/client.scenes : <code>object</code>
+Scene classes
+
+**Kind**: static namespace of [<code>~~~~package_name~~~~/client</code>](#module_~~~~package_name~~~~/client)  
+
+* [.scenes](#module_~~~~package_name~~~~/client.scenes) : <code>object</code>
+    * [.AppScene](#module_~~~~package_name~~~~/client.scenes.AppScene)
+        * [new AppScene()](#new_module_~~~~package_name~~~~/client.scenes.AppScene_new)
+    * [.ConnectionRetryScene](#module_~~~~package_name~~~~/client.scenes.ConnectionRetryScene)
+        * [new ConnectionRetryScene()](#new_module_~~~~package_name~~~~/client.scenes.ConnectionRetryScene_new)
+    * [.HomeScene](#module_~~~~package_name~~~~/client.scenes.HomeScene)
+        * [new HomeScene()](#new_module_~~~~package_name~~~~/client.scenes.HomeScene_new)
+    * [.ToastScene](#module_~~~~package_name~~~~/client.scenes.ToastScene)
+        * [new ToastScene()](#new_module_~~~~package_name~~~~/client.scenes.ToastScene_new)
+
+<a name="module_~~~~package_name~~~~/client.scenes.AppScene"></a>
+
+#### scenes.AppScene
+**Kind**: static class of [<code>scenes</code>](#module_~~~~package_name~~~~/client.scenes)  
+<a name="new_module_~~~~package_name~~~~/client.scenes.AppScene_new"></a>
+
+##### new AppScene()
+AppScene
+
+<a name="module_~~~~package_name~~~~/client.scenes.ConnectionRetryScene"></a>
+
+#### scenes.ConnectionRetryScene
+**Kind**: static class of [<code>scenes</code>](#module_~~~~package_name~~~~/client.scenes)  
+<a name="new_module_~~~~package_name~~~~/client.scenes.ConnectionRetryScene_new"></a>
+
+##### new ConnectionRetryScene()
+ConnectionRetryScene
+
+<a name="module_~~~~package_name~~~~/client.scenes.HomeScene"></a>
+
+#### scenes.HomeScene
+**Kind**: static class of [<code>scenes</code>](#module_~~~~package_name~~~~/client.scenes)  
+<a name="new_module_~~~~package_name~~~~/client.scenes.HomeScene_new"></a>
+
+##### new HomeScene()
+Scene for home
+
+<a name="module_~~~~package_name~~~~/client.scenes.ToastScene"></a>
+
+#### scenes.ToastScene
+**Kind**: static class of [<code>scenes</code>](#module_~~~~package_name~~~~/client.scenes)  
+<a name="new_module_~~~~package_name~~~~/client.scenes.ToastScene_new"></a>
+
+##### new ToastScene()
+ToastScene
+
+<a name="module_~~~~package_name~~~~/client.scopes"></a>
+
+### ~~~~package_name~~~~/client.scopes : <code>object</code>
+Scopes
+
+**Kind**: static namespace of [<code>~~~~package_name~~~~/client</code>](#module_~~~~package_name~~~~/client)  
+<a name="module_~~~~package_name~~~~/client.store"></a>
+
+### ~~~~package_name~~~~/client.store : <code>object</code>
+Client state store
+
+**Kind**: static namespace of [<code>~~~~package_name~~~~/client</code>](#module_~~~~package_name~~~~/client)  
+<a name="module_~~~~package_name~~~~/client.store.create"></a>
+
+#### store.create() ⇒ <code>TheStore</code>
+Create an new store
+
+**Kind**: static method of [<code>store</code>](#module_~~~~package_name~~~~/client.store)  
+<a name="module_~~~~package_name~~~~/conf"></a>
+
+## ~~~~package_name~~~~/conf
 Project configurations
 
-<a name="module_server"></a>
 
-## server
+* [~~~~package_name~~~~/conf](#module_~~~~package_name~~~~/conf)
+    * [.locales](#module_~~~~package_name~~~~/conf.locales) : <code>object</code>
+        * [.en](#module_~~~~package_name~~~~/conf.locales.en) : <code>object</code>
+    * [.SrcSets](#module_~~~~package_name~~~~/conf.SrcSets) : <code>object</code>
+
+<a name="module_~~~~package_name~~~~/conf.locales"></a>
+
+### ~~~~package_name~~~~/conf.locales : <code>object</code>
+Message resources
+
+**Kind**: static namespace of [<code>~~~~package_name~~~~/conf</code>](#module_~~~~package_name~~~~/conf)  
+<a name="module_~~~~package_name~~~~/conf.locales.en"></a>
+
+#### locales.en : <code>object</code>
+en locales
+
+**Kind**: static namespace of [<code>locales</code>](#module_~~~~package_name~~~~/conf.locales)  
+<a name="module_~~~~package_name~~~~/conf.SrcSets"></a>
+
+### ~~~~package_name~~~~/conf.SrcSets : <code>object</code>
+Source url set
+
+**Kind**: static namespace of [<code>~~~~package_name~~~~/conf</code>](#module_~~~~package_name~~~~/conf)  
+<a name="module_~~~~package_name~~~~/server"></a>
+
+## ~~~~package_name~~~~/server
 Application server
 
+
+* [~~~~package_name~~~~/server](#module_~~~~package_name~~~~/server)
+    * [.constants](#module_~~~~package_name~~~~/server.constants) : <code>object</code>
+        * [.DockerContainers](#module_~~~~package_name~~~~/server.constants.DockerContainers) : <code>object</code>
+        * [.DockerPorts](#module_~~~~package_name~~~~/server.constants.DockerPorts) : <code>object</code>
+        * [.MysqlConnections](#module_~~~~package_name~~~~/server.constants.MysqlConnections) : <code>object</code>
+        * [.Project](#module_~~~~package_name~~~~/server.constants.Project) : <code>object</code>
+        * [.RedisConnections](#module_~~~~package_name~~~~/server.constants.RedisConnections) : <code>object</code>
+        * [.SettingValues](#module_~~~~package_name~~~~/server.constants.SettingValues) : <code>object</code>
+        * [.WebApps](#module_~~~~package_name~~~~/server.constants.WebApps) : <code>object</code>
+            * [~seated](#module_~~~~package_name~~~~/server.constants.WebApps..seated) : <code>object</code>
+    * [.controllers](#module_~~~~package_name~~~~/server.controllers) : <code>object</code>
+        * [.AppCtrl](#module_~~~~package_name~~~~/server.controllers.AppCtrl)
+            * [new AppCtrl()](#new_module_~~~~package_name~~~~/server.controllers.AppCtrl_new)
+        * *[.Ctrl](#module_~~~~package_name~~~~/server.controllers.Ctrl)*
+    * [.db](#module_~~~~package_name~~~~/server.db) : <code>object</code>
+        * [.resources](#module_~~~~package_name~~~~/server.db.resources) : <code>object</code>
+            * [.RoomResource](#module_~~~~package_name~~~~/server.db.resources.RoomResource) ⇐ <code>TheResource</code>
+                * [new RoomResource()](#new_module_~~~~package_name~~~~/server.db.resources.RoomResource_new)
+                * [~TheRoomResourceEntity](#module_~~~~package_name~~~~/server.db.resources.RoomResource..TheRoomResourceEntity)
+        * [.create([config])](#module_~~~~package_name~~~~/server.db.create) ⇒ <code>TheDB</code>
+        * [.migration()](#module_~~~~package_name~~~~/server.db.migration)
+    * [.mappings](#module_~~~~package_name~~~~/server.mappings) : <code>object</code>
+    * [.create()](#module_~~~~package_name~~~~/server.create) ⇒ <code>TheServer</code>
+
+<a name="module_~~~~package_name~~~~/server.constants"></a>
+
+### ~~~~package_name~~~~/server.constants : <code>object</code>
+Server constant variables
+
+**Kind**: static namespace of [<code>~~~~package_name~~~~/server</code>](#module_~~~~package_name~~~~/server)  
+
+* [.constants](#module_~~~~package_name~~~~/server.constants) : <code>object</code>
+    * [.DockerContainers](#module_~~~~package_name~~~~/server.constants.DockerContainers) : <code>object</code>
+    * [.DockerPorts](#module_~~~~package_name~~~~/server.constants.DockerPorts) : <code>object</code>
+    * [.MysqlConnections](#module_~~~~package_name~~~~/server.constants.MysqlConnections) : <code>object</code>
+    * [.Project](#module_~~~~package_name~~~~/server.constants.Project) : <code>object</code>
+    * [.RedisConnections](#module_~~~~package_name~~~~/server.constants.RedisConnections) : <code>object</code>
+    * [.SettingValues](#module_~~~~package_name~~~~/server.constants.SettingValues) : <code>object</code>
+    * [.WebApps](#module_~~~~package_name~~~~/server.constants.WebApps) : <code>object</code>
+        * [~seated](#module_~~~~package_name~~~~/server.constants.WebApps..seated) : <code>object</code>
+
+<a name="module_~~~~package_name~~~~/server.constants.DockerContainers"></a>
+
+#### constants.DockerContainers : <code>object</code>
+DockerContainers
+
+**Kind**: static namespace of [<code>constants</code>](#module_~~~~package_name~~~~/server.constants)  
+<a name="module_~~~~package_name~~~~/server.constants.DockerPorts"></a>
+
+#### constants.DockerPorts : <code>object</code>
+DockerPorts
+
+**Kind**: static namespace of [<code>constants</code>](#module_~~~~package_name~~~~/server.constants)  
+<a name="module_~~~~package_name~~~~/server.constants.MysqlConnections"></a>
+
+#### constants.MysqlConnections : <code>object</code>
+MysqlConnections
+
+**Kind**: static namespace of [<code>constants</code>](#module_~~~~package_name~~~~/server.constants)  
+<a name="module_~~~~package_name~~~~/server.constants.Project"></a>
+
+#### constants.Project : <code>object</code>
+Project
+
+**Kind**: static namespace of [<code>constants</code>](#module_~~~~package_name~~~~/server.constants)  
+<a name="module_~~~~package_name~~~~/server.constants.RedisConnections"></a>
+
+#### constants.RedisConnections : <code>object</code>
+RedisConnections
+
+**Kind**: static namespace of [<code>constants</code>](#module_~~~~package_name~~~~/server.constants)  
+<a name="module_~~~~package_name~~~~/server.constants.SettingValues"></a>
+
+#### constants.SettingValues : <code>object</code>
+setting/SettingValues
+
+**Kind**: static namespace of [<code>constants</code>](#module_~~~~package_name~~~~/server.constants)  
+**Access**: protected  
+<a name="module_~~~~package_name~~~~/server.constants.WebApps"></a>
+
+#### constants.WebApps : <code>object</code>
+WebApps
+
+**Kind**: static namespace of [<code>constants</code>](#module_~~~~package_name~~~~/server.constants)  
+<a name="module_~~~~package_name~~~~/server.constants.WebApps..seated"></a>
+
+##### WebApps~seated : <code>object</code>
+**Kind**: inner namespace of [<code>WebApps</code>](#module_~~~~package_name~~~~/server.constants.WebApps)  
+<a name="module_~~~~package_name~~~~/server.controllers"></a>
+
+### ~~~~package_name~~~~/server.controllers : <code>object</code>
+Server controllers
+
+**Kind**: static namespace of [<code>~~~~package_name~~~~/server</code>](#module_~~~~package_name~~~~/server)  
+
+* [.controllers](#module_~~~~package_name~~~~/server.controllers) : <code>object</code>
+    * [.AppCtrl](#module_~~~~package_name~~~~/server.controllers.AppCtrl)
+        * [new AppCtrl()](#new_module_~~~~package_name~~~~/server.controllers.AppCtrl_new)
+    * *[.Ctrl](#module_~~~~package_name~~~~/server.controllers.Ctrl)*
+
+<a name="module_~~~~package_name~~~~/server.controllers.AppCtrl"></a>
+
+#### controllers.AppCtrl
+**Kind**: static class of [<code>controllers</code>](#module_~~~~package_name~~~~/server.controllers)  
+<a name="new_module_~~~~package_name~~~~/server.controllers.AppCtrl_new"></a>
+
+##### new AppCtrl()
+Application controller
+
+<a name="module_~~~~package_name~~~~/server.controllers.Ctrl"></a>
+
+#### *controllers.Ctrl*
+**Kind**: static abstract class of [<code>controllers</code>](#module_~~~~package_name~~~~/server.controllers)  
+<a name="module_~~~~package_name~~~~/server.db"></a>
+
+### ~~~~package_name~~~~/server.db : <code>object</code>
+Database module
+
+**Kind**: static namespace of [<code>~~~~package_name~~~~/server</code>](#module_~~~~package_name~~~~/server)  
+
+* [.db](#module_~~~~package_name~~~~/server.db) : <code>object</code>
+    * [.resources](#module_~~~~package_name~~~~/server.db.resources) : <code>object</code>
+        * [.RoomResource](#module_~~~~package_name~~~~/server.db.resources.RoomResource) ⇐ <code>TheResource</code>
+            * [new RoomResource()](#new_module_~~~~package_name~~~~/server.db.resources.RoomResource_new)
+            * [~TheRoomResourceEntity](#module_~~~~package_name~~~~/server.db.resources.RoomResource..TheRoomResourceEntity)
+    * [.create([config])](#module_~~~~package_name~~~~/server.db.create) ⇒ <code>TheDB</code>
+    * [.migration()](#module_~~~~package_name~~~~/server.db.migration)
+
+<a name="module_~~~~package_name~~~~/server.db.resources"></a>
+
+#### db.resources : <code>object</code>
+Db resource classes
+
+**Kind**: static namespace of [<code>db</code>](#module_~~~~package_name~~~~/server.db)  
+
+* [.resources](#module_~~~~package_name~~~~/server.db.resources) : <code>object</code>
+    * [.RoomResource](#module_~~~~package_name~~~~/server.db.resources.RoomResource) ⇐ <code>TheResource</code>
+        * [new RoomResource()](#new_module_~~~~package_name~~~~/server.db.resources.RoomResource_new)
+        * [~TheRoomResourceEntity](#module_~~~~package_name~~~~/server.db.resources.RoomResource..TheRoomResourceEntity)
+
+<a name="module_~~~~package_name~~~~/server.db.resources.RoomResource"></a>
+
+##### resources.RoomResource ⇐ <code>TheResource</code>
+**Kind**: static class of [<code>resources</code>](#module_~~~~package_name~~~~/server.db.resources)  
+**Extends**: <code>TheResource</code>  
+
+* [.RoomResource](#module_~~~~package_name~~~~/server.db.resources.RoomResource) ⇐ <code>TheResource</code>
+    * [new RoomResource()](#new_module_~~~~package_name~~~~/server.db.resources.RoomResource_new)
+    * [~TheRoomResourceEntity](#module_~~~~package_name~~~~/server.db.resources.RoomResource..TheRoomResourceEntity)
+
+<a name="new_module_~~~~package_name~~~~/server.db.resources.RoomResource_new"></a>
+
+###### new RoomResource()
+Resource for room
+
+<a name="module_~~~~package_name~~~~/server.db.resources.RoomResource..TheRoomResourceEntity"></a>
+
+###### RoomResource~TheRoomResourceEntity
+**Kind**: inner class of [<code>RoomResource</code>](#module_~~~~package_name~~~~/server.db.resources.RoomResource)  
+<a name="module_~~~~package_name~~~~/server.db.create"></a>
+
+#### db.create([config]) ⇒ <code>TheDB</code>
+Create an db instance
+
+**Kind**: static method of [<code>db</code>](#module_~~~~package_name~~~~/server.db)  
+
+| Param | Type |
+| --- | --- |
+| [config] | <code>Object</code> | 
+
+<a name="module_~~~~package_name~~~~/server.db.migration"></a>
+
+#### db.migration()
+**Kind**: static method of [<code>db</code>](#module_~~~~package_name~~~~/server.db)  
+<a name="module_~~~~package_name~~~~/server.mappings"></a>
+
+### ~~~~package_name~~~~/server.mappings : <code>object</code>
+Module mappings
+
+**Kind**: static namespace of [<code>~~~~package_name~~~~/server</code>](#module_~~~~package_name~~~~/server)  
+<a name="module_~~~~package_name~~~~/server.create"></a>
+
+### ~~~~package_name~~~~/server.create() ⇒ <code>TheServer</code>
+Create an server instance
+
+**Kind**: static method of [<code>~~~~package_name~~~~/server</code>](#module_~~~~package_name~~~~/server)  

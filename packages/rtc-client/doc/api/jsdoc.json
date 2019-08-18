@@ -7,7 +7,7 @@
     "longname": "module:@the-/rtc-client",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/rtc-client",
@@ -60,7 +60,7 @@
     "longname": "module:PeerPurposes",
     "meta": {
       "filename": "PeerPurposes.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/constants"
     },
     "name": "PeerPurposes",
@@ -68,10 +68,10 @@
   },
   {
     "description": "Audio enabled or not",
-    "id": "module:@the-/rtc-client.TheRTCClient#audioEnabled",
+    "id": "TheRTCClient#audioEnabled",
     "kind": "member",
-    "longname": "module:@the-/rtc-client.TheRTCClient#audioEnabled",
-    "memberof": "module:@the-/rtc-client.TheRTCClient",
+    "longname": "TheRTCClient#audioEnabled",
+    "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
       "lineno": 54,
@@ -93,10 +93,10 @@
   },
   {
     "description": "Additional info",
-    "id": "module:@the-/rtc-client.TheRTCClient#info",
+    "id": "TheRTCClient#info",
     "kind": "member",
-    "longname": "module:@the-/rtc-client.TheRTCClient#info",
-    "memberof": "module:@the-/rtc-client.TheRTCClient",
+    "longname": "TheRTCClient#info",
+    "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
       "lineno": 62,
@@ -118,10 +118,10 @@
   },
   {
     "description": "RTC client id",
-    "id": "module:@the-/rtc-client.TheRTCClient#rid",
+    "id": "TheRTCClient#rid",
     "kind": "member",
-    "longname": "module:@the-/rtc-client.TheRTCClient#rid",
-    "memberof": "module:@the-/rtc-client.TheRTCClient",
+    "longname": "TheRTCClient#rid",
+    "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
       "lineno": 70,
@@ -143,10 +143,10 @@
   },
   {
     "description": "Status",
-    "id": "module:@the-/rtc-client.TheRTCClient#state",
+    "id": "TheRTCClient#state",
     "kind": "member",
-    "longname": "module:@the-/rtc-client.TheRTCClient#state",
-    "memberof": "module:@the-/rtc-client.TheRTCClient",
+    "longname": "TheRTCClient#state",
+    "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
       "lineno": 78,
@@ -168,10 +168,10 @@
   },
   {
     "description": "Video enabled",
-    "id": "module:@the-/rtc-client.TheRTCClient#videoEnabled",
+    "id": "TheRTCClient#videoEnabled",
     "kind": "member",
-    "longname": "module:@the-/rtc-client.TheRTCClient#videoEnabled",
-    "memberof": "module:@the-/rtc-client.TheRTCClient",
+    "longname": "TheRTCClient#videoEnabled",
+    "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
       "lineno": 93,
@@ -194,13 +194,13 @@
   {
     "async": true,
     "description": "Connect to server",
-    "id": "module:@the-/rtc-client.TheRTCClient#connect",
+    "id": "TheRTCClient#connect",
     "kind": "function",
-    "longname": "module:@the-/rtc-client.TheRTCClient#connect",
-    "memberof": "module:@the-/rtc-client.TheRTCClient",
+    "longname": "TheRTCClient#connect",
+    "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 154,
+      "lineno": 155,
       "path": "lib"
     },
     "name": "connect",
@@ -240,13 +240,13 @@
   {
     "async": true,
     "description": "Disconnect from signaling server",
-    "id": "module:@the-/rtc-client.TheRTCClient#disconnect",
+    "id": "TheRTCClient#disconnect",
     "kind": "function",
-    "longname": "module:@the-/rtc-client.TheRTCClient#disconnect",
-    "memberof": "module:@the-/rtc-client.TheRTCClient",
+    "longname": "TheRTCClient#disconnect",
+    "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 199,
+      "lineno": 200,
       "path": "lib"
     },
     "name": "disconnect",
@@ -266,13 +266,13 @@
   {
     "async": true,
     "description": "Publish topic via pub-sub channel",
-    "id": "module:@the-/rtc-client.TheRTCClient#publish",
+    "id": "TheRTCClient#publish",
     "kind": "function",
-    "longname": "module:@the-/rtc-client.TheRTCClient#publish",
-    "memberof": "module:@the-/rtc-client.TheRTCClient",
+    "longname": "TheRTCClient#publish",
+    "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 310,
+      "lineno": 314,
       "path": "lib"
     },
     "name": "publish",
@@ -324,7 +324,7 @@
     "memberof": "ChannelMixed",
     "meta": {
       "filename": "channelMix.js",
-      "lineno": 56,
+      "lineno": 57,
       "path": "lib/mixins"
     },
     "name": "subscribePubSubChannel",
@@ -366,7 +366,7 @@
     "memberof": "ChannelMixed",
     "meta": {
       "filename": "channelMix.js",
-      "lineno": 74,
+      "lineno": 75,
       "path": "lib/mixins"
     },
     "name": "unsubscribePubSubChannel",
@@ -400,7 +400,7 @@
     "memberof": "module:@the-/rtc-client",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 2,
+      "lineno": 27,
       "path": "lib"
     },
     "name": "TheRTCClient",
@@ -415,7 +415,7 @@
     "memberof": "module:@the-/rtc",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/constants"
     },
     "name": "constants",
@@ -430,7 +430,7 @@
     "memberof": "module:@the-/rtc",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/mixins"
     },
     "name": "mixins",
@@ -445,7 +445,7 @@
     "memberof": "module:@the-/rtc-client",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -480,7 +480,7 @@
     "memberof": "module:@the-/rtc-client",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
@@ -495,7 +495,7 @@
     "memberof": "module:@the-/rtc.constants.mixins",
     "meta": {
       "filename": "assertMix.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/mixins"
     },
     "name": "assertMix",
@@ -530,7 +530,7 @@
     "memberof": "module:@the-/rtc.constants.mixins",
     "meta": {
       "filename": "channelMix.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/mixins"
     },
     "name": "channelMix",
@@ -565,7 +565,7 @@
     "memberof": "module:@the-/rtc.constants.mixins",
     "meta": {
       "filename": "mediaMix.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/mixins"
     },
     "name": "mediaMix",
@@ -600,7 +600,7 @@
     "memberof": "module:@the-/rtc.constants.mixins",
     "meta": {
       "filename": "peerMix.js",
-      "lineno": 2,
+      "lineno": 14,
       "path": "lib/mixins"
     },
     "name": "peerMix",
@@ -635,7 +635,7 @@
     "memberof": "module:@the-/rtc.constants.mixins",
     "meta": {
       "filename": "promiseMix.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/mixins"
     },
     "name": "promiseMix",
@@ -670,7 +670,7 @@
     "memberof": "module:@the-/rtc.constants.mixins",
     "meta": {
       "filename": "serializeMix.js",
-      "lineno": 2,
+      "lineno": 9,
       "path": "lib/mixins"
     },
     "name": "serializeMix",
@@ -705,7 +705,7 @@
     "memberof": "module:@the-/rtc.constants.mixins",
     "meta": {
       "filename": "socketMix.js",
-      "lineno": 2,
+      "lineno": 10,
       "path": "lib/mixins"
     },
     "name": "socketMix",

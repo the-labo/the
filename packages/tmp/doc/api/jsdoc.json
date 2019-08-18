@@ -7,13 +7,13 @@
     "longname": "module:@the-/tmp",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/tmp",
     "order": 3,
     "typicalname": "tmp",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "id": "GenerateResult",
@@ -21,7 +21,7 @@
     "longname": "GenerateResult",
     "meta": {
       "filename": "TheTmp.js",
-      "lineno": 118,
+      "lineno": 117,
       "path": "lib"
     },
     "name": "GenerateResult",
@@ -66,7 +66,7 @@
     "longname": "GenerateDirResult",
     "meta": {
       "filename": "TheTmp.js",
-      "lineno": 124,
+      "lineno": 123,
       "path": "lib"
     },
     "name": "GenerateDirResult",
@@ -99,13 +99,13 @@
   },
   {
     "description": "Generate tmp directory",
-    "id": "module:@the-/tmp.TheTmp#generateDirSync",
+    "id": "TheTmp#generateDirSync",
     "kind": "function",
-    "longname": "module:@the-/tmp.TheTmp#generateDirSync",
-    "memberof": "module:@the-/tmp.TheTmp",
+    "longname": "TheTmp#generateDirSync",
+    "memberof": "TheTmp",
     "meta": {
       "filename": "TheTmp.js",
-      "lineno": 17,
+      "lineno": 16,
       "path": "lib"
     },
     "name": "generateDirSync",
@@ -147,13 +147,13 @@
   },
   {
     "description": "Generate tmp file sync",
-    "id": "module:@the-/tmp.TheTmp#generateSync",
+    "id": "TheTmp#generateSync",
     "kind": "function",
-    "longname": "module:@the-/tmp.TheTmp#generateSync",
-    "memberof": "module:@the-/tmp.TheTmp",
+    "longname": "TheTmp#generateSync",
+    "memberof": "TheTmp",
     "meta": {
       "filename": "TheTmp.js",
-      "lineno": 31,
+      "lineno": 30,
       "path": "lib"
     },
     "name": "generateSync",
@@ -185,13 +185,13 @@
   {
     "async": true,
     "description": "Generate tmp file",
-    "id": "module:@the-/tmp.TheTmp#generate",
+    "id": "TheTmp#generate",
     "kind": "function",
-    "longname": "module:@the-/tmp.TheTmp#generate",
-    "memberof": "module:@the-/tmp.TheTmp",
+    "longname": "TheTmp#generate",
+    "memberof": "TheTmp",
     "meta": {
       "filename": "TheTmp.js",
-      "lineno": 47,
+      "lineno": 46,
       "path": "lib"
     },
     "name": "generate",
@@ -234,13 +234,13 @@
   {
     "async": true,
     "description": "Generate tmp directory",
-    "id": "module:@the-/tmp.TheTmp#generateDir",
+    "id": "TheTmp#generateDir",
     "kind": "function",
-    "longname": "module:@the-/tmp.TheTmp#generateDir",
-    "memberof": "module:@the-/tmp.TheTmp",
+    "longname": "TheTmp#generateDir",
+    "memberof": "TheTmp",
     "meta": {
       "filename": "TheTmp.js",
-      "lineno": 66,
+      "lineno": 65,
       "path": "lib"
     },
     "name": "generateDir",
@@ -283,13 +283,13 @@
   {
     "async": true,
     "description": "Create and use tmp file until handler resolved (or rejected)",
-    "id": "module:@the-/tmp.TheTmp#while",
+    "id": "TheTmp#while",
     "kind": "function",
-    "longname": "module:@the-/tmp.TheTmp#while",
-    "memberof": "module:@the-/tmp.TheTmp",
+    "longname": "TheTmp#while",
+    "memberof": "TheTmp",
     "meta": {
       "filename": "TheTmp.js",
-      "lineno": 91,
+      "lineno": 90,
       "path": "lib"
     },
     "name": "while",
@@ -328,13 +328,13 @@
   {
     "async": true,
     "description": "Create an use tmp directory until handler resolved (or rejected)",
-    "id": "module:@the-/tmp.TheTmp#whileDir",
+    "id": "TheTmp#whileDir",
     "kind": "function",
-    "longname": "module:@the-/tmp.TheTmp#whileDir",
-    "memberof": "module:@the-/tmp.TheTmp",
+    "longname": "TheTmp#whileDir",
+    "memberof": "TheTmp",
     "meta": {
       "filename": "TheTmp.js",
-      "lineno": 106,
+      "lineno": 105,
       "path": "lib"
     },
     "name": "whileDir",
@@ -377,7 +377,7 @@
     "memberof": "module:@the-/tmp",
     "meta": {
       "filename": "TheTmp.js",
-      "lineno": 1,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "TheTmp",

@@ -7,7 +7,7 @@
     "longname": "module:@the-/s3",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/s3",
@@ -81,13 +81,13 @@
   {
     "async": true,
     "description": "Check an object exists or not",
-    "id": "module:@the-/s3.TheS3#exists",
+    "id": "TheS3#exists",
     "kind": "function",
-    "longname": "module:@the-/s3.TheS3#exists",
-    "memberof": "module:@the-/s3.TheS3",
+    "longname": "TheS3#exists",
+    "memberof": "TheS3",
     "meta": {
       "filename": "TheS3.js",
-      "lineno": 58,
+      "lineno": 59,
       "path": "lib"
     },
     "name": "exists",
@@ -117,13 +117,13 @@
   {
     "async": true,
     "description": "Upload file into s3",
-    "id": "module:@the-/s3.TheS3#upload",
+    "id": "TheS3#upload",
     "kind": "function",
-    "longname": "module:@the-/s3.TheS3#upload",
-    "memberof": "module:@the-/s3.TheS3",
+    "longname": "TheS3#upload",
+    "memberof": "TheS3",
     "meta": {
       "filename": "TheS3.js",
-      "lineno": 79,
+      "lineno": 81,
       "path": "lib"
     },
     "name": "upload",
@@ -168,7 +168,7 @@
     "memberof": "module:@the-/s3",
     "meta": {
       "filename": "TheS3.js",
-      "lineno": 2,
+      "lineno": 15,
       "path": "lib"
     },
     "name": "TheS3",
@@ -183,7 +183,7 @@
     "memberof": "module:@the-/s3",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "create",
@@ -218,7 +218,7 @@
     "memberof": "module:@the-/s3",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",

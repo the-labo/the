@@ -695,6 +695,24 @@
     },
     "name": "redisAdapter",
     "order": 11,
+    "params": [
+      {
+        "name": "io"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -751,6 +769,15 @@
     },
     "name": "IOConnector",
     "order": 15,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -775,6 +802,15 @@
         "name": "session"
       }
     ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -790,6 +826,12 @@
     },
     "name": "callbacksProxy",
     "order": 20,
+    "params": [
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
     "returns": [
       {
         "type": {
@@ -990,6 +1032,15 @@
     },
     "name": "MetricsCounter",
     "order": 29,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1004,6 +1055,20 @@
     },
     "name": "queryFromUrl",
     "order": 31,
+    "params": [
+      {
+        "name": "urlString"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1100,6 +1165,24 @@
     },
     "name": "serverRendering",
     "order": 35,
+    "params": [
+      {
+        "name": "Html"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1175,6 +1258,15 @@
     },
     "name": "toControllerDriverFactory",
     "order": 38,
+    "params": [
+      {
+        "name": "ControllerFactory"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
     "returns": [
       {
         "type": {
@@ -1198,6 +1290,21 @@
     },
     "name": "toLowerKeys",
     "order": 39,
+    "params": [
+      {
+        "optional": true,
+        "name": "values="
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1213,6 +1320,15 @@
     },
     "name": "streamPool",
     "order": 55,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1228,6 +1344,24 @@
     },
     "name": "toStreamDriverFactory",
     "order": 56,
+    "params": [
+      {
+        "name": "StreamFactory"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -1279,7 +1413,7 @@
     "memberof": "module:@the-/server.helpers.metricsMix",
     "meta": {
       "filename": "MetricsCounter.js",
-      "lineno": 17,
+      "lineno": 18,
       "path": "lib/helpers"
     },
     "name": "metricsCounter",

@@ -2,8 +2,8 @@
 
 const { View } = require('@the-/templates')
 
-module.exports = [].reduce((buds, name) => {
-  return [
+module.exports = [].reduce(
+  (buds, name) => [
     ...buds,
     View({ name }),
     {
@@ -17,8 +17,9 @@ module.exports = [].reduce((buds, name) => {
 
 }`,
     },
-  ]
-}, [])
+  ],
+  [],
+)
 
 if (!module.parent) {
   require('coz').render(__filename)

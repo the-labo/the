@@ -7,13 +7,13 @@
     "longname": "module:@the-/store",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/store",
     "order": 3,
     "typicalname": "store",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "description": "Scoped redux store",
@@ -71,13 +71,13 @@
   },
   {
     "description": "Load a scope",
-    "id": "module:@the-/store.TheStore#load",
+    "id": "TheStore#load",
     "kind": "function",
-    "longname": "module:@the-/store.TheStore#load",
-    "memberof": "module:@the-/store.TheStore",
+    "longname": "TheStore#load",
+    "memberof": "TheStore",
     "meta": {
       "filename": "TheStore.js",
-      "lineno": 106,
+      "lineno": 107,
       "path": "lib"
     },
     "name": "load",
@@ -117,13 +117,13 @@
   },
   {
     "deprecated": true,
-    "id": "module:@the-/store.TheStore#loadFromDefaults",
+    "id": "TheStore#loadFromDefaults",
     "kind": "function",
-    "longname": "module:@the-/store.TheStore#loadFromDefaults",
-    "memberof": "module:@the-/store.TheStore",
+    "longname": "TheStore#loadFromDefaults",
+    "memberof": "TheStore",
     "meta": {
       "filename": "TheStore.js",
-      "lineno": 166,
+      "lineno": 169,
       "path": "lib"
     },
     "name": "loadFromDefaults",
@@ -133,13 +133,13 @@
   },
   {
     "deprecated": true,
-    "id": "module:@the-/store.TheStore#loadFromDefs",
+    "id": "TheStore#loadFromDefs",
     "kind": "function",
-    "longname": "module:@the-/store.TheStore#loadFromDefs",
-    "memberof": "module:@the-/store.TheStore",
+    "longname": "TheStore#loadFromDefs",
+    "memberof": "TheStore",
     "meta": {
       "filename": "TheStore.js",
-      "lineno": 185,
+      "lineno": 189,
       "path": "lib"
     },
     "name": "loadFromDefs",
@@ -149,13 +149,13 @@
   },
   {
     "description": "Load scopes",
-    "id": "module:@the-/store.TheStore#loadScopesFromDefs",
+    "id": "TheStore#loadScopesFromDefs",
     "kind": "function",
-    "longname": "module:@the-/store.TheStore#loadScopesFromDefs",
-    "memberof": "module:@the-/store.TheStore",
+    "longname": "TheStore#loadScopesFromDefs",
+    "memberof": "TheStore",
     "meta": {
       "filename": "TheStore.js",
-      "lineno": 197,
+      "lineno": 201,
       "path": "lib"
     },
     "name": "loadScopesFromDefs",
@@ -186,13 +186,13 @@
   },
   {
     "description": "Sub scribe store change",
-    "id": "module:@the-/store.TheStore#subscribe",
+    "id": "TheStore#subscribe",
     "kind": "function",
-    "longname": "module:@the-/store.TheStore#subscribe",
-    "memberof": "module:@the-/store.TheStore",
+    "longname": "TheStore#subscribe",
+    "memberof": "TheStore",
     "meta": {
       "filename": "TheStore.js",
-      "lineno": 224,
+      "lineno": 230,
       "path": "lib"
     },
     "name": "subscribe",
@@ -299,7 +299,7 @@
     "memberof": "module:@the-/store",
     "meta": {
       "filename": "TheStore.js",
-      "lineno": 2,
+      "lineno": 23,
       "path": "lib"
     },
     "name": "TheStore",
@@ -313,7 +313,7 @@
     "memberof": "module:@the-/store",
     "meta": {
       "filename": "helpers.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "helpers",
@@ -328,7 +328,7 @@
     "memberof": "module:@the-/store",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -363,7 +363,7 @@
     "memberof": "module:@the-/store",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "create",
@@ -378,7 +378,7 @@
     "memberof": "module:@the-/store",
     "meta": {
       "filename": "toStoreScopeClass.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "toStoreScopeClass",

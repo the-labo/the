@@ -32,7 +32,7 @@
       {
         "type": {
           "names": [
-            "object"
+            "Object"
           ]
         },
         "description": "Configuration",
@@ -41,7 +41,7 @@
       {
         "type": {
           "names": [
-            "object"
+            "Object"
           ]
         },
         "description": "bin signature.",
@@ -52,7 +52,7 @@
       {
         "type": {
           "names": [
-            "object"
+            "Object"
           ]
         },
         "description": "- Bud object."
@@ -334,7 +334,7 @@
       {
         "type": {
           "names": [
-            "object"
+            "Object"
           ]
         },
         "description": "Configuration.",
@@ -372,7 +372,7 @@
       {
         "type": {
           "names": [
-            "object"
+            "Object"
           ]
         },
         "description": "- Bud object."
@@ -393,6 +393,11 @@
     },
     "name": "mapping",
     "order": 10,
+    "params": [
+      {
+        "name": "config"
+      }
+    ],
     "returns": [
       {
         "type": {
@@ -531,7 +536,7 @@
       {
         "type": {
           "names": [
-            "object"
+            "Object"
           ]
         },
         "description": "Configuration.",
@@ -549,7 +554,7 @@
       {
         "type": {
           "names": [
-            "object"
+            "Object"
           ]
         },
         "description": "Package data.",
@@ -567,7 +572,7 @@
       {
         "type": {
           "names": [
-            "object"
+            "Object"
           ]
         },
         "description": "Badge data.",
@@ -576,7 +581,7 @@
       {
         "type": {
           "names": [
-            "object"
+            "Object"
           ]
         },
         "description": "Link urls.",
@@ -594,7 +599,7 @@
       {
         "type": {
           "names": [
-            "object"
+            "Object"
           ]
         },
         "description": "Custom variables.",
@@ -605,7 +610,7 @@
       {
         "type": {
           "names": [
-            "object"
+            "Object"
           ]
         },
         "description": "- Bud object."
@@ -625,6 +630,20 @@
     },
     "name": "Resources",
     "order": 15,
+    "params": [
+      {
+        "name": "config"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -639,6 +658,20 @@
     },
     "name": "scopes",
     "order": 16,
+    "params": [
+      {
+        "name": "config"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -756,6 +789,11 @@
     },
     "name": "test",
     "order": 20,
+    "params": [
+      {
+        "name": "config"
+      }
+    ],
     "returns": [
       {
         "type": {

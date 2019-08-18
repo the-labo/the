@@ -7,13 +7,13 @@
     "longname": "module:@the-/stream",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/stream",
     "order": 1,
     "typicalname": "stream",
-    "version": "15.4.7"
+    "version": "15.4.8"
   },
   {
     "id": "module:@the-/stream.TheStream()",
@@ -44,7 +44,7 @@
     "memberof": "module:@the-/stream",
     "meta": {
       "filename": "TheStream.js",
-      "lineno": 91,
+      "lineno": 96,
       "path": "lib"
     },
     "name": "pull",
@@ -70,7 +70,7 @@
     "memberof": "module:@the-/stream",
     "meta": {
       "filename": "TheStream.js",
-      "lineno": 103,
+      "lineno": 108,
       "path": "lib"
     },
     "name": "push",
@@ -107,7 +107,7 @@
     "memberof": "module:@the-/stream",
     "meta": {
       "filename": "TheStream.js",
-      "lineno": 122,
+      "lineno": 127,
       "path": "lib"
     },
     "name": "pushEnd",
@@ -131,7 +131,7 @@
     "memberof": "module:@the-/stream",
     "meta": {
       "filename": "Consumer.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "Consumer",
@@ -145,7 +145,7 @@
     "memberof": "module:@the-/stream",
     "meta": {
       "filename": "Provider.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "Provider",
@@ -159,7 +159,7 @@
     "memberof": "module:@the-/stream",
     "meta": {
       "filename": "TheStream.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "TheStream",
@@ -175,7 +175,7 @@
     "memberof": "module:@the-/stream",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "helpers",
@@ -190,7 +190,7 @@
     "memberof": "module:@the-/stream.helpers",
     "meta": {
       "filename": "generatorFromReadable.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "generatorFromReadable",

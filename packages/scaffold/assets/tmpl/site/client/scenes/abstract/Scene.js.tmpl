@@ -47,7 +47,9 @@ class Scene extends SceneBase {
   async goTo(url, params = {}, options = {}) {
     const { query = {}, reload = false } = options
     const href = addUrlQuery(formatUrl(url, params), query)
-    const { app } = this.store
+    const {
+      store: { app },
+    } = this
     app.busy.true()
     try {
       await super.goTo(href)

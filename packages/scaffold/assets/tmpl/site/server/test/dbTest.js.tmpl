@@ -4,7 +4,9 @@
  */
 'use strict'
 
-const { ok } = require('assert').strict
+const {
+  strict: { ok },
+} = require('assert')
 const createDB = require('../db/create')
 
 describe('db', () => {
@@ -16,7 +18,9 @@ describe('db', () => {
     const db = createDB.forTest()
     ok(db)
 
-    const { Room } = db.resources
+    const {
+      resources: { Room },
+    } = db
     const room = await Room.create({ name: 'room-01' })
     await room.destroy()
 

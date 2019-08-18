@@ -4,7 +4,9 @@
  */
 'use strict'
 
-const { equal } = require('assert').strict
+const {
+  strict: { equal },
+} = require('assert')
 const controllers = require('../controllers')
 const createDB = require('../db/create')
 
