@@ -7,13 +7,13 @@
     "longname": "module:@the-/util-path",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/util-path",
     "order": 2,
     "typicalname": "utilPath",
-    "version": "15.4.7"
+    "version": "15.4.9"
   },
   {
     "access": "protected",
@@ -24,7 +24,7 @@
     "memberof": "module:@the-/util-path",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "helpers",
@@ -39,7 +39,7 @@
     "memberof": "module:@the-/util-path",
     "meta": {
       "filename": "findup.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "findupSync",
@@ -86,7 +86,7 @@
     "memberof": "module:@the-/util-path",
     "meta": {
       "filename": "findupDir.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "findupDir",
@@ -112,7 +112,7 @@
     "memberof": "module:@the-/util-path.helpers",
     "meta": {
       "filename": "exists.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/helpers"
     },
     "name": "exists",

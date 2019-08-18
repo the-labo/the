@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-step",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-step",
     "order": 0,
     "typicalname": "uiStep",
-    "version": "15.4.8"
+    "version": "15.4.9"
   },
   {
     "description": "Steps for the-component",

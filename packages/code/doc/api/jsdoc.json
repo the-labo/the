@@ -13,7 +13,7 @@
     "name": "@the-/code",
     "order": 1,
     "typicalname": "code",
-    "version": "15.11.1"
+    "version": "15.11.4"
   },
   {
     "id": "module:@the-/code.TheCode()",
@@ -45,7 +45,7 @@
     "memberof": "TheCode",
     "meta": {
       "filename": "TheCode.js",
-      "lineno": 124,
+      "lineno": 122,
       "path": "lib"
     },
     "name": "format",
@@ -92,7 +92,7 @@
     "memberof": "TheCode",
     "meta": {
       "filename": "TheCode.js",
-      "lineno": 139,
+      "lineno": 137,
       "path": "lib"
     },
     "name": "formatFile",
@@ -136,7 +136,7 @@
     "memberof": "module:@the-/code",
     "meta": {
       "filename": "TheCode.js",
-      "lineno": 16,
+      "lineno": 14,
       "path": "lib"
     },
     "name": "TheCode",

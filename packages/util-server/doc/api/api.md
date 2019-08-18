@@ -33,7 +33,7 @@
 <dt><a href="#saveBase64">saveBase64(dirname, basename, data)</a> ⇒ <code>Promise</code></dt>
 <dd><p>Save base64 string into file</p>
 </dd>
-<dt><del><a href="#saveBase64Image">saveBase64Image()</a></del></dt>
+<dt><del><a href="#saveBase64Image">saveBase64Image()</a> ⇒ <code>*</code></del></dt>
 <dd></dd>
 <dt><a href="#valuesFromEntity">valuesFromEntity()</a> ⇒ <code>Object</code></dt>
 <dd><p>Get values from entity</p>
@@ -48,7 +48,7 @@
 ## @the-/util-server
 Utility for server
 
-**Version**: 15.4.7  
+**Version**: 15.4.9  
 **License**: MIT  
 <a name="path"></a>
 
@@ -124,7 +124,7 @@ Save base64 string into file
 
 <a name="saveBase64Image"></a>
 
-## ~~saveBase64Image()~~
+## ~~saveBase64Image() ⇒ <code>\*</code>~~
 ***Deprecated***
 
 **Kind**: global function  

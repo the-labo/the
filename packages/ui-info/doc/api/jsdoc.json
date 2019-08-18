@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-info",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-info",
     "order": 0,
     "typicalname": "uiInfo",
-    "version": "15.4.8"
+    "version": "15.4.9"
   },
   {
     "description": "Info of the-component",

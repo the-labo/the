@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-table",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-table",
     "order": 0,
     "typicalname": "uiTable",
-    "version": "15.4.8"
+    "version": "15.4.10"
   },
   {
     "description": "Table for the-components",

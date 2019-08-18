@@ -17,6 +17,7 @@ function cleanupExtOnImportDeclarationNode(
   if (!isRelative(source.value)) {
     return
   }
+
   const extname = path.extname(source.value)
   const shouldRemoveExt = extToRemove.includes(extname)
   if (shouldRemoveExt) {

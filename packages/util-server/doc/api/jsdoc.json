@@ -7,13 +7,13 @@
     "longname": "module:@the-/util-server",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/util-server",
     "order": 2,
     "typicalname": "utilServer",
-    "version": "15.4.7"
+    "version": "15.4.9"
   },
   {
     "description": "Change file extension",
@@ -22,7 +22,7 @@
     "longname": "path",
     "meta": {
       "filename": "changeExt.js",
-      "lineno": 7,
+      "lineno": 8,
       "path": "lib"
     },
     "name": "path",
@@ -56,7 +56,7 @@
     "longname": "generateFile",
     "meta": {
       "filename": "generateFile.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "generateFile",
@@ -131,7 +131,7 @@
     "longname": "nameFile",
     "meta": {
       "filename": "nameFile.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "nameFile",
@@ -199,7 +199,7 @@
     "longname": "pipeToFile",
     "meta": {
       "filename": "pipeToFile.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "pipeToFile",
@@ -242,7 +242,7 @@
     "longname": "saveBase64",
     "meta": {
       "filename": "saveBase64.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "saveBase64",
@@ -293,12 +293,21 @@
     "longname": "saveBase64Image",
     "meta": {
       "filename": "saveBase64Image.js",
-      "lineno": 5,
+      "lineno": 8,
       "path": "lib"
     },
     "name": "saveBase64Image",
     "order": 7,
     "params": [],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "global"
   },
   {
@@ -340,7 +349,7 @@
     "longname": "waitForFile",
     "meta": {
       "filename": "waitFor.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "waitForFile",

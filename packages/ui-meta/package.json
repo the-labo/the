@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-meta",
   "description": "Dynamic meta attribute injector for the-components",
-  "version": "15.4.8",
+  "version": "15.4.9",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",

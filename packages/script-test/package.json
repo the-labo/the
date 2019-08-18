@@ -1,7 +1,4 @@
 {
-  "name": "@the-/script-test",
-  "description": "Test script for the-project",
-  "version": "15.4.8",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,6 +15,7 @@
     "argx": "^4.0.4",
     "commander": "^2.19.0"
   },
+  "description": "Test script for the-project",
   "devDependencies": {
     "injectmock": "^2.0.0"
   },
@@ -32,6 +30,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/script-test",
   "publishConfig": {
     "access": "public"
   },
@@ -41,5 +40,6 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.9"
 }

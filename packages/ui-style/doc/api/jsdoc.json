@@ -21,7 +21,7 @@
     "longname": "TheStyle",
     "meta": {
       "filename": "TheStyle.jsx",
-      "lineno": 12,
+      "lineno": 13,
       "path": "lib"
     },
     "name": "TheStyle",
@@ -36,7 +36,7 @@
     "memberof": "TheStyle.propTypes",
     "meta": {
       "filename": "TheStyle.jsx",
-      "lineno": 72,
+      "lineno": 75,
       "path": "lib"
     },
     "name": "className",
@@ -51,7 +51,7 @@
     "memberof": "TheStyle.propTypes",
     "meta": {
       "filename": "TheStyle.jsx",
-      "lineno": 74,
+      "lineno": 77,
       "path": "lib"
     },
     "name": "id",
@@ -66,7 +66,7 @@
     "memberof": "TheStyle.propTypes",
     "meta": {
       "filename": "TheStyle.jsx",
-      "lineno": 76,
+      "lineno": 79,
       "path": "lib"
     },
     "name": "prefix",
@@ -81,7 +81,7 @@
     "memberof": "TheStyle.propTypes",
     "meta": {
       "filename": "TheStyle.jsx",
-      "lineno": 78,
+      "lineno": 81,
       "path": "lib"
     },
     "name": "type",

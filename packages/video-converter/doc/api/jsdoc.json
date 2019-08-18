@@ -7,7 +7,7 @@
     "longname": "module:@the-/video-converter",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/video-converter",
@@ -26,10 +26,10 @@
   },
   {
     "description": "Detect",
-    "id": "module:@the-/video-converter.TheVideoConverter#isVideoSrc",
+    "id": "TheVideoConverter#isVideoSrc",
     "kind": "function",
-    "longname": "module:@the-/video-converter.TheVideoConverter#isVideoSrc",
-    "memberof": "module:@the-/video-converter.TheVideoConverter",
+    "longname": "TheVideoConverter#isVideoSrc",
+    "memberof": "TheVideoConverter",
     "meta": {
       "filename": "TheVideoConverter.js",
       "lineno": 29,
@@ -61,10 +61,10 @@
   {
     "async": true,
     "description": "Convert video files",
-    "id": "module:@the-/video-converter.TheVideoConverter#convert",
+    "id": "TheVideoConverter#convert",
     "kind": "function",
-    "longname": "module:@the-/video-converter.TheVideoConverter#convert",
-    "memberof": "module:@the-/video-converter.TheVideoConverter",
+    "longname": "TheVideoConverter#convert",
+    "memberof": "TheVideoConverter",
     "meta": {
       "filename": "TheVideoConverter.js",
       "lineno": 40,
@@ -117,10 +117,10 @@
   {
     "async": true,
     "description": "Inspect file",
-    "id": "module:@the-/video-converter.TheVideoConverter#inspect",
+    "id": "TheVideoConverter#inspect",
     "kind": "function",
-    "longname": "module:@the-/video-converter.TheVideoConverter#inspect",
-    "memberof": "module:@the-/video-converter.TheVideoConverter",
+    "longname": "TheVideoConverter#inspect",
+    "memberof": "TheVideoConverter",
     "meta": {
       "filename": "TheVideoConverter.js",
       "lineno": 73,
@@ -163,13 +163,13 @@
   {
     "async": true,
     "description": "Convert video file if needed",
-    "id": "module:@the-/video-converter.TheVideoConverter#process",
+    "id": "TheVideoConverter#process",
     "kind": "function",
-    "longname": "module:@the-/video-converter.TheVideoConverter#process",
-    "memberof": "module:@the-/video-converter.TheVideoConverter",
+    "longname": "TheVideoConverter#process",
+    "memberof": "TheVideoConverter",
     "meta": {
       "filename": "TheVideoConverter.js",
-      "lineno": 101,
+      "lineno": 100,
       "path": "lib"
     },
     "name": "process",
@@ -236,7 +236,7 @@
     "memberof": "MP4Mixed",
     "meta": {
       "filename": "mp4Mix.js",
-      "lineno": 27,
+      "lineno": 28,
       "path": "lib/mixins"
     },
     "name": "convertIntoMP4",
@@ -290,7 +290,7 @@
     "memberof": "module:@the-/video-converter",
     "meta": {
       "filename": "TheVideoConverter.js",
-      "lineno": 2,
+      "lineno": 17,
       "path": "lib"
     },
     "name": "TheVideoConverter",
@@ -306,7 +306,7 @@
     "memberof": "module:@the-/video-converter",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/helpers"
     },
     "name": "helpers",
@@ -322,7 +322,7 @@
     "memberof": "module:@the-/video-converter",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/mixins"
     },
     "name": "mixins",
@@ -337,7 +337,7 @@
     "memberof": "module:@the-/video-converter",
     "meta": {
       "filename": "create.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "create",
@@ -372,7 +372,7 @@
     "memberof": "module:@the-/video-converter",
     "meta": {
       "filename": "default.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "default",
@@ -387,7 +387,7 @@
     "memberof": "module:@the-/video-converter",
     "meta": {
       "filename": "filenameFor.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/helpers"
     },
     "name": "filenameFor",
@@ -402,6 +402,15 @@
         "name": "config"
       }
     ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -411,11 +420,25 @@
     "memberof": "module:@the-/video-converter",
     "meta": {
       "filename": "isVideoSrc.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib/helpers"
     },
     "name": "isVideoSrc",
     "order": 11,
+    "params": [
+      {
+        "name": "src"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -426,7 +449,7 @@
     "memberof": "module:@the-/video-converter.mixins",
     "meta": {
       "filename": "mp4Mix.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib/mixins"
     },
     "name": "mp4Mix",
@@ -440,7 +463,7 @@
     "memberof": "module:@the-/video-converter.mixins.mp4Mix",
     "meta": {
       "filename": "mp4Mix.js",
-      "lineno": 14,
+      "lineno": 15,
       "path": "lib/mixins"
     },
     "name": "MP4Mixed",

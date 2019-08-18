@@ -9,34 +9,39 @@ File utility for the-framework
 **License**: MIT  
 
 * [@the-/util-file](#module_@the-/util-file)
-    * [.copyAsJsonSync(src, dest)](#module_@the-/util-file.copyAsJsonSync)
-    * [.fileSizeOf()](#module_@the-/util-file.fileSizeOf) ⇒ <code>Promise.&lt;number&gt;</code>
+    * [.copyAsJsonSync(dest, src)](#module_@the-/util-file.copyAsJsonSync) ⇒ <code>\*</code>
+    * [.fileSizeOf(filename)](#module_@the-/util-file.fileSizeOf) ⇒ <code>Promise.&lt;number&gt;</code>
     * [.fileTypeOf(filename)](#module_@the-/util-file.fileTypeOf) ⇒ <code>Object</code>
     * [.isJSON5File(filename)](#module_@the-/util-file.isJSON5File) ⇒ <code>boolean</code>
     * [.readAsJson(filename)](#module_@the-/util-file.readAsJson) ⇒ <code>Promise.&lt;Object&gt;</code>
     * [.readAsJsonSync(filename)](#module_@the-/util-file.readAsJsonSync) ⇒ <code>Object</code>
-    * [.readAsYaml()](#module_@the-/util-file.readAsYaml) ⇒ <code>Promise.&lt;Object&gt;</code>
-    * [.statSync(filename)](#module_@the-/util-file.statSync)
+    * [.readAsYaml(filename, [options&#x3D;])](#module_@the-/util-file.readAsYaml) ⇒ <code>Promise.&lt;Object&gt;</code>
+    * [.statSync(filename)](#module_@the-/util-file.statSync) ⇒ <code>\*</code>
     * [.writeAsJson(filename, data, [options])](#module_@the-/util-file.writeAsJson) ⇒ <code>Promise</code>
     * [.writeAsJsonSync(filename, data, [options])](#module_@the-/util-file.writeAsJsonSync)
     * [.writeAsYaml(filename, data)](#module_@the-/util-file.writeAsYaml) ⇒ <code>Promise.&lt;Object&gt;</code>
 
 <a name="module_@the-/util-file.copyAsJsonSync"></a>
 
-### utilFile.copyAsJsonSync(src, dest)
+### utilFile.copyAsJsonSync(dest, src) ⇒ <code>\*</code>
 **Kind**: static method of [<code>@the-/util-file</code>](#module_@the-/util-file)  
 
 | Param | Type |
 | --- | --- |
-| src | <code>string</code> | 
 | dest | <code>string</code> | 
+| src | <code>string</code> | 
 
 <a name="module_@the-/util-file.fileSizeOf"></a>
 
-### utilFile.fileSizeOf() ⇒ <code>Promise.&lt;number&gt;</code>
+### utilFile.fileSizeOf(filename) ⇒ <code>Promise.&lt;number&gt;</code>
 Get size of file
 
 **Kind**: static method of [<code>@the-/util-file</code>](#module_@the-/util-file)  
+
+| Param |
+| --- |
+| filename | 
+
 <a name="module_@the-/util-file.fileTypeOf"></a>
 
 ### utilFile.fileTypeOf(filename) ⇒ <code>Object</code>
@@ -79,14 +84,20 @@ Read as json
 
 <a name="module_@the-/util-file.readAsYaml"></a>
 
-### utilFile.readAsYaml() ⇒ <code>Promise.&lt;Object&gt;</code>
+### utilFile.readAsYaml(filename, [options&#x3D;]) ⇒ <code>Promise.&lt;Object&gt;</code>
 Read file as YAML
 
 **Kind**: static method of [<code>@the-/util-file</code>](#module_@the-/util-file)  
 **Returns**: <code>Promise.&lt;Object&gt;</code> - yaml data  
+
+| Param |
+| --- |
+| filename | 
+| [options=] | 
+
 <a name="module_@the-/util-file.statSync"></a>
 
-### utilFile.statSync(filename)
+### utilFile.statSync(filename) ⇒ <code>\*</code>
 **Kind**: static method of [<code>@the-/util-file</code>](#module_@the-/util-file)  
 
 | Param | Type |

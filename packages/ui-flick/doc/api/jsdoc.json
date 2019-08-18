@@ -6,7 +6,7 @@
     "longname": "module:@the-/ui-flick",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-flick",
@@ -51,7 +51,7 @@
     "memberof": "TheFlick.propTypes",
     "meta": {
       "filename": "TheFlick.jsx",
-      "lineno": 367,
+      "lineno": 380,
       "path": "lib"
     },
     "name": "activeIndex",
@@ -66,7 +66,7 @@
     "memberof": "TheFlick.propTypes",
     "meta": {
       "filename": "TheFlick.jsx",
-      "lineno": 369,
+      "lineno": 382,
       "path": "lib"
     },
     "name": "images",
@@ -81,7 +81,7 @@
     "memberof": "TheFlick.propTypes",
     "meta": {
       "filename": "TheFlick.jsx",
-      "lineno": 373,
+      "lineno": 386,
       "path": "lib"
     },
     "name": "onChange",
@@ -96,7 +96,7 @@
     "memberof": "TheFlick.propTypes",
     "meta": {
       "filename": "TheFlick.jsx",
-      "lineno": 375,
+      "lineno": 388,
       "path": "lib"
     },
     "name": "onClose",
@@ -111,7 +111,7 @@
     "memberof": "TheFlick.propTypes",
     "meta": {
       "filename": "TheFlick.jsx",
-      "lineno": 377,
+      "lineno": 390,
       "path": "lib"
     },
     "name": "present",
@@ -126,7 +126,7 @@
     "memberof": "TheFlick.propTypes",
     "meta": {
       "filename": "TheFlick.jsx",
-      "lineno": 379,
+      "lineno": 392,
       "path": "lib"
     },
     "name": "spinning",

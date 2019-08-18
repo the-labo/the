@@ -141,6 +141,7 @@ function processJSRequire(content, options = {}) {
           if (!ArgumentNode) {
             continue
           }
+
           const { type, value } = ArgumentNode
           if (type !== NodeTypes.StringLiteral) {
             continue

@@ -35,7 +35,7 @@
 ## @the-/ui-list
 List of the-components
 
-**Version**: 15.4.8  
+**Version**: 15.4.9  
 <a name="TheList"></a>
 
 ## TheList

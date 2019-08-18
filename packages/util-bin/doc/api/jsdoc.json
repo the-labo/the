@@ -22,7 +22,7 @@
     "memberof": "module:@the-/util-bin",
     "meta": {
       "filename": "hasBin.js",
-      "lineno": 1,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "hasBin",

@@ -4,7 +4,7 @@
  * @memberof module:@the-/rtc.helpers
  * @function handleUnknownKeys
  * @param unknowns
- * @param [undefined={}]
+ * @param [options={}]
  */
 function handleUnknownKeys(unknowns, { label = '' } = {}) {
   const unknownKeys = Object.keys(unknowns)

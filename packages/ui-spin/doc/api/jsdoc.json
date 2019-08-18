@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-spin",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-spin",
     "order": 0,
     "typicalname": "uiSpin",
-    "version": "15.4.4"
+    "version": "15.4.10"
   },
   {
     "description": "Spin of the-components",

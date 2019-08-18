@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-meta",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-meta",
     "order": 0,
     "typicalname": "uiMeta",
-    "version": "15.4.8"
+    "version": "15.4.9"
   },
   {
     "description": "Dynamic meta attribute injector for the-components",

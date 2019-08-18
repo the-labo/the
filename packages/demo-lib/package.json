@@ -1,7 +1,4 @@
 {
-  "name": "@the-/demo-lib",
-  "description": "Demo of the-lib packages",
-  "version": "15.4.8",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,6 +9,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {},
+  "description": "Demo of the-lib packages",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -24,6 +22,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/demo-lib",
   "publishConfig": {
     "access": "public"
   },
@@ -33,5 +32,6 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.9"
 }

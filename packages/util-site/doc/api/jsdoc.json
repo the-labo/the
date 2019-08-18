@@ -7,7 +7,7 @@
     "longname": "module:@the-/util-site",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/util-site",
@@ -16,13 +16,349 @@
     "version": "15.4.9"
   },
   {
+    "description": "Container name for",
+    "id": "containerNameFor",
+    "kind": "function",
+    "longname": "containerNameFor",
+    "meta": {
+      "filename": "seatAccess.js",
+      "lineno": 24,
+      "path": "lib"
+    },
+    "name": "containerNameFor",
+    "order": 14,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Name of container",
+        "name": "name"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 4,
+        "description": "Hom many bytes",
+        "name": "bytes"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        }
+      }
+    ],
+    "scope": "global"
+  },
+  {
+    "description": "Network name for",
+    "id": "networkNameFor",
+    "kind": "function",
+    "longname": "networkNameFor",
+    "meta": {
+      "filename": "seatAccess.js",
+      "lineno": 36,
+      "path": "lib"
+    },
+    "name": "networkNameFor",
+    "order": 15,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Name of network",
+        "name": "name"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 4,
+        "description": "How many bytes for hash",
+        "name": "bytes"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        }
+      }
+    ],
+    "scope": "global"
+  },
+  {
+    "description": "Port number for",
+    "id": "portNumberFor",
+    "kind": "function",
+    "longname": "portNumberFor",
+    "meta": {
+      "filename": "seatAccess.js",
+      "lineno": 49,
+      "path": "lib"
+    },
+    "name": "portNumberFor",
+    "order": 16,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Name for seat",
+        "name": "name"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 6000,
+        "description": "Base port number",
+        "name": "base"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 1,
+        "description": "Increment amount",
+        "name": "increment"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "scope": "global"
+  },
+  {
+    "description": "Port numbers with range",
+    "id": "portNumberRangeFor",
+    "kind": "function",
+    "longname": "portNumberRangeFor",
+    "meta": {
+      "filename": "seatAccess.js",
+      "lineno": 59,
+      "path": "lib"
+    },
+    "name": "portNumberRangeFor",
+    "order": 17,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Name for seat",
+        "name": "name"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 22000,
+        "description": "Base port number",
+        "name": "base"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "description": "Range length",
+        "name": "length"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Array.<number>"
+          ]
+        },
+        "description": "Min and max number"
+      }
+    ],
+    "scope": "global"
+  },
+  {
+    "description": "Process name for",
+    "id": "processNameFor",
+    "kind": "function",
+    "longname": "processNameFor",
+    "meta": {
+      "filename": "seatAccess.js",
+      "lineno": 79,
+      "path": "lib"
+    },
+    "name": "processNameFor",
+    "order": 18,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Name for seat",
+        "name": "name"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 4,
+        "description": "Length of byte for hash",
+        "name": "bytes"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        }
+      }
+    ],
+    "scope": "global"
+  },
+  {
+    "description": "Secret value for",
+    "id": "secretFor",
+    "kind": "function",
+    "longname": "secretFor",
+    "meta": {
+      "filename": "seatAccess.js",
+      "lineno": 91,
+      "path": "lib"
+    },
+    "name": "secretFor",
+    "order": 19,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Name for seat",
+        "name": "name"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 12,
+        "description": "Length of byte for hash",
+        "name": "bytes"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        }
+      }
+    ],
+    "scope": "global"
+  },
+  {
+    "description": "User name for",
+    "id": "userNameFor",
+    "kind": "function",
+    "longname": "userNameFor",
+    "meta": {
+      "filename": "seatAccess.js",
+      "lineno": 103,
+      "path": "lib"
+    },
+    "name": "userNameFor",
+    "order": 20,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Name for seat",
+        "name": "name"
+      },
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 4,
+        "description": "Length of byte for hash",
+        "name": "bytes"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        }
+      }
+    ],
+    "scope": "global"
+  },
+  {
     "id": "module:@the-/util-site.appendQueryToSearch",
     "kind": "function",
     "longname": "module:@the-/util-site.appendQueryToSearch",
     "memberof": "module:@the-/util-site",
     "meta": {
       "filename": "appendQueryToSearch.js",
-      "lineno": 2,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "appendQueryToSearch",
@@ -47,7 +383,7 @@
     "memberof": "module:@the-/util-site",
     "meta": {
       "filename": "countSuffix.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "countSuffix",
@@ -93,21 +429,12 @@
     "memberof": "module:@the-/util-site",
     "meta": {
       "filename": "createStyleElement.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "createStyleElement",
     "order": 2,
     "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "CSS String",
-        "name": "css"
-      },
       {
         "type": {
           "names": [
@@ -118,6 +445,24 @@
         "defaultvalue": "{}",
         "description": "Optional settings",
         "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "CSS String",
+        "name": "css"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
       }
     ],
     "scope": "static"
@@ -130,7 +475,7 @@
     "memberof": "module:@the-/util-site",
     "meta": {
       "filename": "envOf.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "envOf",
@@ -139,19 +484,28 @@
       {
         "type": {
           "names": [
-            "string"
-          ]
-        },
-        "description": "name - Name of env"
-      },
-      {
-        "type": {
-          "names": [
             "Object"
           ]
         },
         "optional": true,
         "name": "options.strict"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "name - Name of env"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
       }
     ],
     "scope": "static"
@@ -164,11 +518,25 @@
     "memberof": "module:@the-/util-site",
     "meta": {
       "filename": "hasMoreFor.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "hasMoreFor",
     "order": 4,
+    "params": [
+      {
+        "name": "counts"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -180,7 +548,7 @@
     "memberof": "module:@the-/util-site",
     "meta": {
       "filename": "isEmail.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "isEmail",
@@ -216,7 +584,7 @@
     "memberof": "module:@the-/util-site",
     "meta": {
       "filename": "isPhoneNumber.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "isPhoneNumber",
@@ -287,7 +655,7 @@
     "memberof": "module:@the-/util-site",
     "meta": {
       "filename": "queryFromSearch.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "queryFromSearch",
@@ -321,11 +689,25 @@
     "memberof": "module:@the-/util-site",
     "meta": {
       "filename": "refOf.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "refOf",
     "order": 10,
+    "params": [
+      {
+        "name": "entity"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -336,7 +718,7 @@
     "memberof": "module:@the-/util-site",
     "meta": {
       "filename": "scrollToElement.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "scrollToElement",
@@ -353,171 +735,6 @@
         "name": "element"
       }
     ],
-    "scope": "static"
-  },
-  {
-    "deprecated": "Use `the-seat/handy/seatAccess` instead",
-    "description": "Provide seat access functions",
-    "id": "module:@the-/util-site.seatAccess",
-    "kind": "function",
-    "longname": "module:@the-/util-site.seatAccess",
-    "memberof": "module:@the-/util-site",
-    "meta": {
-      "filename": "seatAccess.js",
-      "lineno": 2,
-      "path": "lib"
-    },
-    "name": "seatAccess",
-    "order": 12,
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        }
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Container name for",
-    "id": "module:@the-/util-site.seatAccess~seatAccessBound.containerNameFor",
-    "kind": "function",
-    "longname": "module:@the-/util-site.seatAccess~seatAccessBound.containerNameFor",
-    "memberof": "module:@the-/util-site.seatAccess~seatAccessBound",
-    "meta": {
-      "filename": "seatAccess.js",
-      "lineno": 23,
-      "path": "lib"
-    },
-    "name": "containerNameFor",
-    "order": 14,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Name of container",
-        "name": "name"
-      },
-      {
-        "type": {
-          "names": [
-            "number"
-          ]
-        },
-        "optional": true,
-        "defaultvalue": 4,
-        "description": "Hom many bytes",
-        "name": "bytes"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        }
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Network name for",
-    "id": "module:@the-/util-site.seatAccess~seatAccessBound.networkNameFor",
-    "kind": "function",
-    "longname": "module:@the-/util-site.seatAccess~seatAccessBound.networkNameFor",
-    "memberof": "module:@the-/util-site.seatAccess~seatAccessBound",
-    "meta": {
-      "filename": "seatAccess.js",
-      "lineno": 35,
-      "path": "lib"
-    },
-    "name": "networkNameFor",
-    "order": 15,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Name of network",
-        "name": "name"
-      },
-      {
-        "type": {
-          "names": [
-            "number"
-          ]
-        },
-        "optional": true,
-        "defaultvalue": 4,
-        "description": "How many bytes for hash",
-        "name": "bytes"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        }
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Port number for",
-    "id": "module:@the-/util-site.seatAccess~seatAccessBound.portNumberFor",
-    "kind": "function",
-    "longname": "module:@the-/util-site.seatAccess~seatAccessBound.portNumberFor",
-    "memberof": "module:@the-/util-site.seatAccess~seatAccessBound",
-    "meta": {
-      "filename": "seatAccess.js",
-      "lineno": 48,
-      "path": "lib"
-    },
-    "name": "portNumberFor",
-    "order": 16,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Name for seat",
-        "name": "name"
-      },
-      {
-        "type": {
-          "names": [
-            "number"
-          ]
-        },
-        "optional": true,
-        "defaultvalue": 6000,
-        "description": "Base port number",
-        "name": "base"
-      },
-      {
-        "type": {
-          "names": [
-            "number"
-          ]
-        },
-        "optional": true,
-        "defaultvalue": 1,
-        "description": "Increment amount",
-        "name": "increment"
-      }
-    ],
     "returns": [
       {
         "type": {
@@ -530,193 +747,29 @@
     "scope": "static"
   },
   {
-    "description": "Port numbers with range",
-    "id": "module:@the-/util-site.seatAccess~seatAccessBound.portNumberRangeFor",
+    "deprecated": "Use `the-seat/handy/seatAccess` instead",
+    "description": "Provide seat access functions",
+    "id": "module:@the-/util-site.seatAccess",
     "kind": "function",
-    "longname": "module:@the-/util-site.seatAccess~seatAccessBound.portNumberRangeFor",
-    "memberof": "module:@the-/util-site.seatAccess~seatAccessBound",
+    "longname": "module:@the-/util-site.seatAccess",
+    "memberof": "module:@the-/util-site",
     "meta": {
       "filename": "seatAccess.js",
-      "lineno": 58,
+      "lineno": 3,
       "path": "lib"
     },
-    "name": "portNumberRangeFor",
-    "order": 17,
+    "name": "seatAccess",
+    "order": 12,
     "params": [
       {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Name for seat",
-        "name": "name"
-      },
-      {
-        "type": {
-          "names": [
-            "number"
-          ]
-        },
-        "optional": true,
-        "defaultvalue": 22000,
-        "description": "Base port number",
-        "name": "base"
-      },
-      {
-        "type": {
-          "names": [
-            "number"
-          ]
-        },
-        "description": "Range length",
-        "name": "length"
+        "name": "seat"
       }
     ],
     "returns": [
       {
         "type": {
           "names": [
-            "Array.<number>"
-          ]
-        },
-        "description": "Min and max number"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Process name for",
-    "id": "module:@the-/util-site.seatAccess~seatAccessBound.processNameFor",
-    "kind": "function",
-    "longname": "module:@the-/util-site.seatAccess~seatAccessBound.processNameFor",
-    "memberof": "module:@the-/util-site.seatAccess~seatAccessBound",
-    "meta": {
-      "filename": "seatAccess.js",
-      "lineno": 78,
-      "path": "lib"
-    },
-    "name": "processNameFor",
-    "order": 18,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Name for seat",
-        "name": "name"
-      },
-      {
-        "type": {
-          "names": [
-            "number"
-          ]
-        },
-        "optional": true,
-        "defaultvalue": 4,
-        "description": "Length of byte for hash",
-        "name": "bytes"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        }
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Secret value for",
-    "id": "module:@the-/util-site.seatAccess~seatAccessBound.secretFor",
-    "kind": "function",
-    "longname": "module:@the-/util-site.seatAccess~seatAccessBound.secretFor",
-    "memberof": "module:@the-/util-site.seatAccess~seatAccessBound",
-    "meta": {
-      "filename": "seatAccess.js",
-      "lineno": 90,
-      "path": "lib"
-    },
-    "name": "secretFor",
-    "order": 19,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Name for seat",
-        "name": "name"
-      },
-      {
-        "type": {
-          "names": [
-            "number"
-          ]
-        },
-        "optional": true,
-        "defaultvalue": 12,
-        "description": "Length of byte for hash",
-        "name": "bytes"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        }
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "User name for",
-    "id": "module:@the-/util-site.seatAccess~seatAccessBound.userNameFor",
-    "kind": "function",
-    "longname": "module:@the-/util-site.seatAccess~seatAccessBound.userNameFor",
-    "memberof": "module:@the-/util-site.seatAccess~seatAccessBound",
-    "meta": {
-      "filename": "seatAccess.js",
-      "lineno": 102,
-      "path": "lib"
-    },
-    "name": "userNameFor",
-    "order": 20,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Name for seat",
-        "name": "name"
-      },
-      {
-        "type": {
-          "names": [
-            "number"
-          ]
-        },
-        "optional": true,
-        "defaultvalue": 4,
-        "description": "Length of byte for hash",
-        "name": "bytes"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "string"
+            "Object"
           ]
         }
       }
@@ -730,7 +783,7 @@
     "memberof": "module:@the-/util-site.seatAccess",
     "meta": {
       "filename": "seatAccess.js",
-      "lineno": 11,
+      "lineno": 12,
       "path": "lib"
     },
     "name": "seatAccessBound",

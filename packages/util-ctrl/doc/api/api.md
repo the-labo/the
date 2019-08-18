@@ -11,7 +11,7 @@ Utility for controllers
 * [@the-/util-ctrl](#module_@the-/util-ctrl)
     * [.helpers](#module_@the-/util-ctrl.helpers) : <code>object</code>
     * [.withDebug(ctrl)](#module_@the-/util-ctrl.withDebug) ⇒ <code>Object</code>
-    * [.omitLongString()](#module_@the-/util-ctrl.omitLongString)
+    * [.omitLongString(value, [options&#x3D;])](#module_@the-/util-ctrl.omitLongString) ⇒ <code>\*</code>
 
 <a name="module_@the-/util-ctrl.helpers"></a>
 
@@ -33,5 +33,11 @@ Wrap controller with debug
 
 <a name="module_@the-/util-ctrl.omitLongString"></a>
 
-### utilCtrl.omitLongString()
+### utilCtrl.omitLongString(value, [options&#x3D;]) ⇒ <code>\*</code>
 **Kind**: static method of [<code>@the-/util-ctrl</code>](#module_@the-/util-ctrl)  
+
+| Param |
+| --- |
+| value | 
+| [options=] | 
+

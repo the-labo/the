@@ -4,7 +4,7 @@
  * @description Theme style for the-components
  * @module @the-/ui-theme-style
  * @typicalname uiThemeStyle
- * @version 15.4.8
+ * @version 15.4.10
  */
 'use strict'
 

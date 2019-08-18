@@ -36,3 +36,13 @@ tmp
 
 
 .*.bud
+
+
+example
+misc/mocks
+test
+
+var
+public
+
+doc

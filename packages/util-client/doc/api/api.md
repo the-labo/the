@@ -10,7 +10,7 @@ Utility for client side
 
 * [@the-/util-client](#module_@the-/util-client)
     * [.createFormData(values)](#module_@the-/util-client.createFormData) ⇒ <code>FormData</code>
-    * [.queryWithSearch()](#module_@the-/util-client.queryWithSearch)
+    * [.queryWithSearch(search)](#module_@the-/util-client.queryWithSearch) ⇒ <code>\*</code>
     * [.readFile(file)](#module_@the-/util-client.readFile) ⇒ <code>Promise.&lt;ArrayBuffer&gt;</code>
     * [.sendForm(url, values, [options])](#module_@the-/util-client.sendForm)
 
@@ -27,8 +27,13 @@ Create from data from object
 
 <a name="module_@the-/util-client.queryWithSearch"></a>
 
-### utilClient.queryWithSearch()
+### utilClient.queryWithSearch(search) ⇒ <code>\*</code>
 **Kind**: static method of [<code>@the-/util-client</code>](#module_@the-/util-client)  
+
+| Param |
+| --- |
+| search | 
+
 <a name="module_@the-/util-client.readFile"></a>
 
 ### utilClient.readFile(file) ⇒ <code>Promise.&lt;ArrayBuffer&gt;</code>

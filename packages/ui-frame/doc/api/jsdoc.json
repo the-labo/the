@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-frame",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-frame",
     "order": 0,
     "typicalname": "uiFrame",
-    "version": "15.4.8"
+    "version": "15.4.9"
   },
   {
     "description": "iFrame of the-components",
@@ -51,7 +51,7 @@
     "memberof": "TheFrame.propTypes",
     "meta": {
       "filename": "TheFrame.jsx",
-      "lineno": 143,
+      "lineno": 147,
       "path": "lib"
     },
     "name": "alt",
@@ -66,7 +66,7 @@
     "memberof": "TheFrame.propTypes",
     "meta": {
       "filename": "TheFrame.jsx",
-      "lineno": 145,
+      "lineno": 149,
       "path": "lib"
     },
     "name": "embed",
@@ -81,7 +81,7 @@
     "memberof": "TheFrame.propTypes",
     "meta": {
       "filename": "TheFrame.jsx",
-      "lineno": 147,
+      "lineno": 151,
       "path": "lib"
     },
     "name": "onLoad",
@@ -96,7 +96,7 @@
     "memberof": "TheFrame.propTypes",
     "meta": {
       "filename": "TheFrame.jsx",
-      "lineno": 149,
+      "lineno": 153,
       "path": "lib"
     },
     "name": "spinning",
@@ -111,7 +111,7 @@
     "memberof": "TheFrame.propTypes",
     "meta": {
       "filename": "TheFrame.jsx",
-      "lineno": 151,
+      "lineno": 155,
       "path": "lib"
     },
     "name": "src",

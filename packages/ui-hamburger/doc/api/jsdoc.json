@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-hamburger",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-hamburger",
     "order": 0,
     "typicalname": "uiHamburger",
-    "version": "15.4.8"
+    "version": "15.4.9"
   },
   {
     "description": "Hamburger menu for the-components",

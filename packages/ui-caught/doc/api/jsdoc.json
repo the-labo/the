@@ -6,7 +6,7 @@
     "longname": "module:@the-/ui-caught",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-caught",
@@ -45,7 +45,7 @@
     "memberof": "module:@the-/ui-caught",
     "meta": {
       "filename": "TheCaught.jsx",
-      "lineno": 1,
+      "lineno": 10,
       "path": "lib"
     },
     "name": "TheCaught",
@@ -54,10 +54,10 @@
   },
   {
     "description": "Caught error",
-    "id": "module:@the-/ui-caught.TheCaught.propTypes.error",
+    "id": "TheCaught.propTypes.error",
     "kind": "member",
-    "longname": "module:@the-/ui-caught.TheCaught.propTypes.error",
-    "memberof": "module:@the-/ui-caught.TheCaught.propTypes",
+    "longname": "TheCaught.propTypes.error",
+    "memberof": "TheCaught.propTypes",
     "meta": {
       "filename": "TheCaught.jsx",
       "lineno": 53,
@@ -69,10 +69,10 @@
   },
   {
     "description": "Error Info",
-    "id": "module:@the-/ui-caught.TheCaught.propTypes.info",
+    "id": "TheCaught.propTypes.info",
     "kind": "member",
-    "longname": "module:@the-/ui-caught.TheCaught.propTypes.info",
-    "memberof": "module:@the-/ui-caught.TheCaught.propTypes",
+    "longname": "TheCaught.propTypes.info",
+    "memberof": "TheCaught.propTypes",
     "meta": {
       "filename": "TheCaught.jsx",
       "lineno": 55,

@@ -11,7 +11,7 @@
 ## Functions
 
 <dl>
-<dt><del><a href="#asHOC">asHOC()</a></del></dt>
+<dt><del><a href="#asHOC">asHOC(decorator)</a> ⇒ <code>*</code></del></dt>
 <dd></dd>
 </dl>
 
@@ -34,7 +34,7 @@ Utility for the-components
     * [.isVideoSrc(src)](#module_@the-/util-ui.isVideoSrc) ⇒ <code>boolean</code>
     * [.newId([options])](#module_@the-/util-ui.newId) ⇒ <code>string</code>
     * ~~[.readFileAsDataURL()](#module_@the-/util-ui.readFileAsDataURL) ⇒ <code>Promise.&lt;string&gt;</code>~~
-    * [.toggleBodyClass(className, [state&#x3D;])](#module_@the-/util-ui.toggleBodyClass)
+    * [.toggleBodyClass([state&#x3D;], className)](#module_@the-/util-ui.toggleBodyClass) ⇒ <code>\*</code>
 
 <a name="module_@the-/util-ui.asStyleData"></a>
 
@@ -163,19 +163,24 @@ Read file  : data url
 
 <a name="module_@the-/util-ui.toggleBodyClass"></a>
 
-### utilUi.toggleBodyClass(className, [state&#x3D;])
+### utilUi.toggleBodyClass([state&#x3D;], className) ⇒ <code>\*</code>
 Toggle class on document body
 
 **Kind**: static method of [<code>@the-/util-ui</code>](#module_@the-/util-ui)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| className | <code>string</code> | Class name to toggle |
 | [state=] | <code>boolean</code> | Enabled or not |
+| className | <code>string</code> | Class name to toggle |
 
 <a name="asHOC"></a>
 
-## ~~asHOC()~~
+## ~~asHOC(decorator) ⇒ <code>\*</code>~~
 ***Deprecated***
 
 **Kind**: global function  
+
+| Param |
+| --- |
+| decorator | 
+

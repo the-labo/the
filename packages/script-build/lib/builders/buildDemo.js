@@ -35,6 +35,7 @@ module.exports = async function buildDemo(
     },
     resolve: {
       alias,
+      extensions: ['.js', '.jsx', '.json'],
     },
   })
   await new Promise((resolve, reject) => {

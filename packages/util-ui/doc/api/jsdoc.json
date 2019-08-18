@@ -22,12 +22,25 @@
     "longname": "asHOC",
     "meta": {
       "filename": "asHOC.js",
-      "lineno": 4,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "asHOC",
     "order": 0,
-    "params": [],
+    "params": [
+      {
+        "name": "decorator"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "global"
   },
   {
@@ -38,7 +51,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "asStyleData.js",
-      "lineno": 3,
+      "lineno": 46,
       "path": "lib"
     },
     "name": "asStyleData",
@@ -127,7 +140,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "colorAlpha.js",
-      "lineno": 3,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "colorAlpha",
@@ -174,7 +187,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "eventHandlersFor.js",
-      "lineno": 3,
+      "lineno": 14,
       "path": "lib"
     },
     "name": "eventHandlersFor",
@@ -230,7 +243,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "htmlAttributesFor.js",
-      "lineno": 3,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "htmlAttributesFor",
@@ -286,7 +299,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "isKeyCode.js",
-      "lineno": 3,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "isKeyCode",
@@ -331,7 +344,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "isServerSide.js",
-      "lineno": 3,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "isServerSide",
@@ -355,7 +368,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "isVideoSrc.js",
-      "lineno": 3,
+      "lineno": 8,
       "path": "lib"
     },
     "name": "isVideoSrc",
@@ -391,7 +404,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "newId.js",
-      "lineno": 3,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "newId",
@@ -439,7 +452,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "readFileAsDataURL.js",
-      "lineno": 3,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "readFileAsDataURL",
@@ -474,21 +487,12 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "toggleBodyClass.js",
-      "lineno": 3,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "toggleBodyClass",
     "order": 12,
     "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Class name to toggle",
-        "name": "className"
-      },
       {
         "type": {
           "names": [
@@ -498,6 +502,24 @@
         "optional": true,
         "description": "Enabled or not",
         "name": "state="
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Class name to toggle",
+        "name": "className"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
       }
     ],
     "scope": "static"

@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-image",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-image",
     "order": 0,
     "typicalname": "uiImage",
-    "version": "15.4.8"
+    "version": "15.4.9"
   },
   {
     "description": "Image of the-components",
@@ -51,7 +51,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 167,
+      "lineno": 169,
       "path": "lib"
     },
     "name": "asLink",
@@ -66,7 +66,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 169,
+      "lineno": 171,
       "path": "lib"
     },
     "name": "draggable",
@@ -81,7 +81,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 171,
+      "lineno": 173,
       "path": "lib"
     },
     "name": "height",
@@ -96,7 +96,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 173,
+      "lineno": 175,
       "path": "lib"
     },
     "name": "notFoundMessage",
@@ -111,7 +111,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 175,
+      "lineno": 177,
       "path": "lib"
     },
     "name": "onError",
@@ -126,7 +126,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 177,
+      "lineno": 179,
       "path": "lib"
     },
     "name": "onLoad",
@@ -141,7 +141,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 179,
+      "lineno": 181,
       "path": "lib"
     },
     "name": "resizeInterval",
@@ -156,7 +156,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 181,
+      "lineno": 183,
       "path": "lib"
     },
     "name": "scale",

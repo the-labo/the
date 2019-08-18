@@ -1,7 +1,4 @@
 {
-  "name": "@the-/seal",
-  "description": "Encrypt json object with master password",
-  "version": "15.4.8",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -15,6 +12,7 @@
     "abind": "^1.0.5",
     "qs": "^6.8.0"
   },
+  "description": "Encrypt json object with master password",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -27,6 +25,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/seal",
   "publishConfig": {
     "access": "public"
   },
@@ -37,5 +36,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.9"
 }

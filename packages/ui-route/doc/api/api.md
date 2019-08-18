@@ -40,7 +40,7 @@ Route of the-components
 ## @the-/ui-route
 Route of the-components
 
-**Version**: 15.4.8  
+**Version**: 15.4.9  
 <a name="TheRoute"></a>
 
 ## TheRoute

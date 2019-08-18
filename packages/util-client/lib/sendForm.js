@@ -1,4 +1,3 @@
-
 'use strict'
 
 const { get } = require('@the-/window')

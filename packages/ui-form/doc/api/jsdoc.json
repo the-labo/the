@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-form",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-form",
     "order": 0,
     "typicalname": "uiForm",
-    "version": "15.4.8"
+    "version": "15.4.10"
   },
   {
     "description": "Form of the-components",
@@ -51,7 +51,7 @@
     "memberof": "TheFormBinder",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 101,
+      "lineno": 102,
       "path": "lib"
     },
     "name": "inputPropsOf",
@@ -87,7 +87,7 @@
     "memberof": "TheFormBinder",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 125,
+      "lineno": 126,
       "path": "lib"
     },
     "name": "labelPropsOf",
@@ -168,7 +168,7 @@
     "memberof": "TheFormBinder.propTypes",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 169,
+      "lineno": 170,
       "path": "lib"
     },
     "name": "errors",
@@ -183,7 +183,7 @@
     "memberof": "TheFormBinder.propTypes",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 171,
+      "lineno": 172,
       "path": "lib"
     },
     "name": "id",
@@ -198,7 +198,7 @@
     "memberof": "TheFormBinder.propTypes",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 173,
+      "lineno": 174,
       "path": "lib"
     },
     "name": "onError",
@@ -213,7 +213,7 @@
     "memberof": "TheFormBinder.propTypes",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 175,
+      "lineno": 176,
       "path": "lib"
     },
     "name": "onSubmit",
@@ -228,7 +228,7 @@
     "memberof": "TheFormBinder.propTypes",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 177,
+      "lineno": 178,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -243,7 +243,7 @@
     "memberof": "TheFormBinder.propTypes",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 179,
+      "lineno": 180,
       "path": "lib"
     },
     "name": "readOnly",
@@ -258,7 +258,7 @@
     "memberof": "TheFormBinder.propTypes",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 181,
+      "lineno": 182,
       "path": "lib"
     },
     "name": "required",
@@ -273,7 +273,7 @@
     "memberof": "TheFormBinder.propTypes",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 183,
+      "lineno": 184,
       "path": "lib"
     },
     "name": "tabIndex",
@@ -288,7 +288,7 @@
     "memberof": "TheFormBinder.propTypes",
     "meta": {
       "filename": "TheFormBinder.jsx",
-      "lineno": 185,
+      "lineno": 186,
       "path": "lib"
     },
     "name": "values",

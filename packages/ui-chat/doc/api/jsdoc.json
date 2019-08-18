@@ -6,7 +6,7 @@
     "longname": "module:@the-/ui-chat",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-chat",
@@ -93,7 +93,7 @@
     "memberof": "TheChatForm.propTypes",
     "meta": {
       "filename": "TheChatForm.jsx",
-      "lineno": 103,
+      "lineno": 104,
       "path": "lib"
     },
     "name": "disabled",
@@ -108,7 +108,7 @@
     "memberof": "TheChatForm.propTypes",
     "meta": {
       "filename": "TheChatForm.jsx",
-      "lineno": 105,
+      "lineno": 106,
       "path": "lib"
     },
     "name": "maxRows",
@@ -123,7 +123,7 @@
     "memberof": "TheChatForm.propTypes",
     "meta": {
       "filename": "TheChatForm.jsx",
-      "lineno": 107,
+      "lineno": 108,
       "path": "lib"
     },
     "name": "minLength",
@@ -138,7 +138,7 @@
     "memberof": "TheChatForm.propTypes",
     "meta": {
       "filename": "TheChatForm.jsx",
-      "lineno": 109,
+      "lineno": 110,
       "path": "lib"
     },
     "name": "minRows",
@@ -153,7 +153,7 @@
     "memberof": "TheChatForm.propTypes",
     "meta": {
       "filename": "TheChatForm.jsx",
-      "lineno": 111,
+      "lineno": 112,
       "path": "lib"
     },
     "name": "onSubmit",
@@ -168,7 +168,7 @@
     "memberof": "TheChatForm.propTypes",
     "meta": {
       "filename": "TheChatForm.jsx",
-      "lineno": 113,
+      "lineno": 114,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -183,7 +183,7 @@
     "memberof": "TheChatForm.propTypes",
     "meta": {
       "filename": "TheChatForm.jsx",
-      "lineno": 116,
+      "lineno": 117,
       "path": "lib"
     },
     "name": "submitText",
@@ -198,7 +198,7 @@
     "memberof": "TheChatForm.propTypes",
     "meta": {
       "filename": "TheChatForm.jsx",
-      "lineno": 118,
+      "lineno": 119,
       "path": "lib"
     },
     "name": "values",
@@ -363,7 +363,7 @@
     "memberof": "TheChatTimeLineItem.propTypes",
     "meta": {
       "filename": "TheChatTimeLineItem.jsx",
-      "lineno": 176,
+      "lineno": 177,
       "path": "lib"
     },
     "name": "align",
@@ -378,7 +378,7 @@
     "memberof": "TheChatTimeLineItem.propTypes",
     "meta": {
       "filename": "TheChatTimeLineItem.jsx",
-      "lineno": 179,
+      "lineno": 180,
       "path": "lib"
     },
     "name": "image",
@@ -393,7 +393,7 @@
     "memberof": "TheChatTimeLineItem.propTypes",
     "meta": {
       "filename": "TheChatTimeLineItem.jsx",
-      "lineno": 181,
+      "lineno": 182,
       "path": "lib"
     },
     "name": "onWho",
@@ -408,7 +408,7 @@
     "memberof": "TheChatTimeLineItem.propTypes",
     "meta": {
       "filename": "TheChatTimeLineItem.jsx",
-      "lineno": 183,
+      "lineno": 184,
       "path": "lib"
     },
     "name": "status",
@@ -423,7 +423,7 @@
     "memberof": "TheChatTimeLineItem.propTypes",
     "meta": {
       "filename": "TheChatTimeLineItem.jsx",
-      "lineno": 185,
+      "lineno": 186,
       "path": "lib"
     },
     "name": "text",
@@ -438,7 +438,7 @@
     "memberof": "TheChatTimeLineItem.propTypes",
     "meta": {
       "filename": "TheChatTimeLineItem.jsx",
-      "lineno": 187,
+      "lineno": 188,
       "path": "lib"
     },
     "name": "video",
@@ -453,7 +453,7 @@
     "memberof": "TheChatTimeLineItem.propTypes",
     "meta": {
       "filename": "TheChatTimeLineItem.jsx",
-      "lineno": 189,
+      "lineno": 190,
       "path": "lib"
     },
     "name": "who",
@@ -468,7 +468,7 @@
     "memberof": "TheChatTimeLineItem.propTypes",
     "meta": {
       "filename": "TheChatTimeLineItem.jsx",
-      "lineno": 191,
+      "lineno": 192,
       "path": "lib"
     },
     "name": "whoBaseColor",
@@ -483,7 +483,7 @@
     "memberof": "TheChatTimeLineItem.propTypes",
     "meta": {
       "filename": "TheChatTimeLineItem.jsx",
-      "lineno": 193,
+      "lineno": 194,
       "path": "lib"
     },
     "name": "whoImageSize",

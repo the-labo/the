@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-cycle",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-cycle",
     "order": 0,
     "typicalname": "uiCycle",
-    "version": "15.4.8"
+    "version": "15.4.9"
   },
   {
     "description": "Component with life cycle",
@@ -36,7 +36,7 @@
     "memberof": "TheCycle.propTypes",
     "meta": {
       "filename": "TheCycle.jsx",
-      "lineno": 67,
+      "lineno": 68,
       "path": "lib"
     },
     "name": "onMount",
@@ -51,7 +51,7 @@
     "memberof": "TheCycle.propTypes",
     "meta": {
       "filename": "TheCycle.jsx",
-      "lineno": 69,
+      "lineno": 70,
       "path": "lib"
     },
     "name": "onReceive",
@@ -66,7 +66,7 @@
     "memberof": "TheCycle.propTypes",
     "meta": {
       "filename": "TheCycle.jsx",
-      "lineno": 71,
+      "lineno": 72,
       "path": "lib"
     },
     "name": "onUnmount",
@@ -81,7 +81,7 @@
     "memberof": "TheCycle.propTypes",
     "meta": {
       "filename": "TheCycle.jsx",
-      "lineno": 73,
+      "lineno": 74,
       "path": "lib"
     },
     "name": "values",

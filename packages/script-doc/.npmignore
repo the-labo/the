@@ -34,3 +34,6 @@ node_modules
 .idea
 tmp
 
+
+doc
+example

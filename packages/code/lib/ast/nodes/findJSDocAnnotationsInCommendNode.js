@@ -23,6 +23,7 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
     if (kindEnd === valueEnd) {
       return null
     }
+
     const valueStart = kindEnd + 1
     return {
       end: valueEnd,
@@ -62,6 +63,7 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
       line++
       lineEndAt = i
     }
+
     if (!started && hitsEmpty) {
       continue
     }
@@ -130,10 +132,13 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
           workingAnnotation.end,
         )
       }
+
       workingAnnotation.body = bodyFor(workingAnnotation)
     }
+
     annotations.push(workingAnnotation)
   }
+
   return annotations
     .map((annotation) => ({ ...annotation }))
     .sort((a, b) => a.start - b.start)

@@ -35,6 +35,7 @@ function addExtOnRequireDeclarationArgumentNode(
   if (!resolved) {
     return
   }
+
   const extname = path.extname(resolved)
   const shouldExt = extToAdd.includes(extname)
   if (shouldExt) {

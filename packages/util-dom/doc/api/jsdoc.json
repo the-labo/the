@@ -23,7 +23,7 @@
     "memberof": "module:@the-/util-dom",
     "meta": {
       "filename": "byId.js",
-      "lineno": 1,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "byId",
@@ -60,7 +60,7 @@
     "memberof": "module:@the-/util-dom.byId",
     "meta": {
       "filename": "byId.js",
-      "lineno": 23,
+      "lineno": 22,
       "path": "lib"
     },
     "name": "withRetry",
@@ -107,7 +107,7 @@
     "memberof": "module:@the-/util-dom",
     "meta": {
       "filename": "injectScript.js",
-      "lineno": 1,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "injectScript",

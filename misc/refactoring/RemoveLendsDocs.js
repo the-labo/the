@@ -33,9 +33,7 @@ async function main() {
         const shortName = nameValues.pop()
         const nameSpace = nameValues.join('.')
         const pointedCommentData = commentsData
-          .filter((c) => {
-            return c.node.loc.start.column === 0
-          })
+          .filter((c) => c.node.loc.start.column === 0)
           .find(
             (c) =>
               c.tags &&

@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-container",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-container",
     "order": 0,
     "typicalname": "uiContainer",
-    "version": "15.4.4"
+    "version": "15.4.10"
   },
   {
     "description": "Container of the-components",

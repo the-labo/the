@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-theme-style",
   "description": "Theme style for the-components",
-  "version": "15.4.8",
+  "version": "15.4.10",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -20,7 +20,10 @@
     "@the-/ui": "^15.4.20",
     "@the-/ui-demo": "file:../ui-demo",
     "coz": "^7.0.19",
-    "objnest": "^5.0.6"
+    "objnest": "^5.0.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1"
   },
   "engines": {
     "node": ">=10",

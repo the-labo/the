@@ -23,14 +23,17 @@ function completeJSDocAnnotationsOnProgramNode(program, { get, replace }) {
     if (!comment) {
       continue
     }
+
     if (!/^\*/.test(comment.value)) {
       continue
     }
+
     const range = [comment.start, comment.end]
     const [commentData] = commentParser(get(range))
     if (!commentData) {
       continue
     }
+
     const tagsByTypes = commentData.tags.reduce(
       (r, tag) => ({
         ...r,
@@ -45,6 +48,7 @@ function completeJSDocAnnotationsOnProgramNode(program, { get, replace }) {
     if (shouldSkip) {
       return
     }
+
     const indent = new Array(comment.loc.start.column).fill(' ').join('')
     const indented = (source) =>
       String(source)
@@ -66,13 +70,36 @@ function completeJSDocAnnotationsOnProgramNode(program, { get, replace }) {
       }
     }
 
+    const paramNameFor = (paramNode) => {
+      switch (paramNode.type) {
+        case NodeTypes.AssignmentPattern: {
+          const { left } = paramNode
+          switch (left.type) {
+            case NodeTypes.ArrayPattern:
+              return '[]'
+            case NodeTypes.Identifier:
+              return left.name
+            case NodeTypes.ObjectPattern:
+              return '{}'
+            default:
+              return ''
+          }
+        }
+        case NodeTypes.Identifier:
+        default:
+          return paramNode.name
+      }
+    }
+
     const paramCommentOf = (paramNode) => {
+      const name = paramNameFor(paramNode)
       const isOptional = paramNode.type === NodeTypes.AssignmentPattern
       if (isOptional) {
         const defaults = paramDefaultCodeFor(paramNode)
-        return `${indent} * @param [${paramNode.left.name}=${defaults || ''}]`
+        return `${indent} * @param [${name}=${defaults || ''}]`
       }
-      return `${indent} * @param ${paramNode.name}`
+
+      return `${indent} * @param ${name}`
     }
 
     const addComments = (comments) => {
@@ -108,7 +135,9 @@ function completeJSDocAnnotationsOnProgramNode(program, { get, replace }) {
         ),
       )
     if (needsParams) {
-      return addComments(params.map((paramNode) => paramCommentOf(paramNode)))
+      return addComments(
+        params.map((paramNode, i) => paramCommentOf(paramNode, i)),
+      )
     }
 
     const Returns = finder.findByTypes(FunctionDeclaration, [

@@ -18,13 +18,13 @@
     "longname": "module:@the-/ui-input",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-input",
     "order": 1,
     "typicalname": "uiInput",
-    "version": "15.4.14"
+    "version": "15.4.15"
   },
   {
     "description": "Input of the-components",
@@ -117,7 +117,7 @@
     "longname": "TheInputText",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 44,
+      "lineno": 45,
       "path": "lib"
     },
     "name": "TheInputText",
@@ -261,7 +261,7 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 181,
+      "lineno": 183,
       "path": "lib"
     },
     "name": "disabledValues",
@@ -276,7 +276,7 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 185,
+      "lineno": 187,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -291,7 +291,7 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 187,
+      "lineno": 189,
       "path": "lib"
     },
     "name": "options",
@@ -306,7 +306,7 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 193,
+      "lineno": 195,
       "path": "lib"
     },
     "name": "parser",
@@ -321,7 +321,7 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 195,
+      "lineno": 197,
       "path": "lib"
     },
     "name": "splitter",
@@ -336,7 +336,7 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 197,
+      "lineno": 199,
       "path": "lib"
     },
     "name": "value",
@@ -501,7 +501,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 348,
+      "lineno": 355,
       "path": "lib"
     },
     "name": "barOnly",
@@ -516,7 +516,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 350,
+      "lineno": 357,
       "path": "lib"
     },
     "name": "error",
@@ -531,7 +531,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 352,
+      "lineno": 359,
       "path": "lib"
     },
     "name": "max",
@@ -546,7 +546,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 354,
+      "lineno": 361,
       "path": "lib"
     },
     "name": "min",
@@ -561,7 +561,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 357,
+      "lineno": 364,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -576,7 +576,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 359,
+      "lineno": 366,
       "path": "lib"
     },
     "name": "step",
@@ -591,7 +591,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 361,
+      "lineno": 368,
       "path": "lib"
     },
     "name": "value",
@@ -606,7 +606,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 381,
+      "lineno": 389,
       "path": "lib"
     },
     "name": "disabledValues",
@@ -621,7 +621,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 383,
+      "lineno": 391,
       "path": "lib"
     },
     "name": "error",
@@ -636,7 +636,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 385,
+      "lineno": 393,
       "path": "lib"
     },
     "name": "name",
@@ -651,7 +651,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 387,
+      "lineno": 395,
       "path": "lib"
     },
     "name": "nullable",
@@ -666,7 +666,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 389,
+      "lineno": 397,
       "path": "lib"
     },
     "name": "nullText",
@@ -681,7 +681,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 391,
+      "lineno": 399,
       "path": "lib"
     },
     "name": "onEnter",
@@ -696,7 +696,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 393,
+      "lineno": 401,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -711,7 +711,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 395,
+      "lineno": 403,
       "path": "lib"
     },
     "name": "options",
@@ -726,7 +726,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 400,
+      "lineno": 408,
       "path": "lib"
     },
     "name": "parser",
@@ -741,7 +741,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 402,
+      "lineno": 410,
       "path": "lib"
     },
     "name": "sorter",
@@ -756,7 +756,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 405,
+      "lineno": 413,
       "path": "lib"
     },
     "name": "value",
@@ -771,7 +771,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 250,
+      "lineno": 255,
       "path": "lib"
     },
     "name": "barOnly",
@@ -786,7 +786,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 252,
+      "lineno": 257,
       "path": "lib"
     },
     "name": "error",
@@ -801,7 +801,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 254,
+      "lineno": 259,
       "path": "lib"
     },
     "name": "max",
@@ -816,7 +816,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 256,
+      "lineno": 261,
       "path": "lib"
     },
     "name": "min",
@@ -831,7 +831,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 259,
+      "lineno": 264,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -846,7 +846,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 261,
+      "lineno": 266,
       "path": "lib"
     },
     "name": "step",
@@ -861,7 +861,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 263,
+      "lineno": 268,
       "path": "lib"
     },
     "name": "value",
@@ -891,7 +891,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 410,
+      "lineno": 423,
       "path": "lib"
     },
     "name": "error",
@@ -906,7 +906,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 412,
+      "lineno": 425,
       "path": "lib"
     },
     "name": "matcher",
@@ -921,7 +921,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 414,
+      "lineno": 427,
       "path": "lib"
     },
     "name": "name",
@@ -936,7 +936,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 416,
+      "lineno": 429,
       "path": "lib"
     },
     "name": "onDown",
@@ -951,7 +951,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 418,
+      "lineno": 431,
       "path": "lib"
     },
     "name": "onEnter",
@@ -966,7 +966,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 420,
+      "lineno": 433,
       "path": "lib"
     },
     "name": "onLeft",
@@ -981,7 +981,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 422,
+      "lineno": 435,
       "path": "lib"
     },
     "name": "onRight",
@@ -996,7 +996,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 424,
+      "lineno": 437,
       "path": "lib"
     },
     "name": "onUp",
@@ -1011,7 +1011,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 426,
+      "lineno": 439,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -1026,7 +1026,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 428,
+      "lineno": 441,
       "path": "lib"
     },
     "name": "options",
@@ -1041,7 +1041,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 433,
+      "lineno": 446,
       "path": "lib"
     },
     "name": "parser",
@@ -1056,7 +1056,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 435,
+      "lineno": 448,
       "path": "lib"
     },
     "name": "pattern",
@@ -1071,7 +1071,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 437,
+      "lineno": 450,
       "path": "lib"
     },
     "name": "patternWarning",
@@ -1086,7 +1086,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 439,
+      "lineno": 452,
       "path": "lib"
     },
     "name": "prefix",
@@ -1101,7 +1101,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 441,
+      "lineno": 454,
       "path": "lib"
     },
     "name": "suffix",
@@ -1116,7 +1116,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 443,
+      "lineno": 456,
       "path": "lib"
     },
     "name": "tabIndex",
@@ -1131,7 +1131,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 445,
+      "lineno": 458,
       "path": "lib"
     },
     "name": "type",
@@ -1146,7 +1146,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 447,
+      "lineno": 460,
       "path": "lib"
     },
     "name": "value",
@@ -1161,7 +1161,7 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 230,
+      "lineno": 237,
       "path": "lib"
     },
     "name": "autoExpand",
@@ -1176,7 +1176,7 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 232,
+      "lineno": 239,
       "path": "lib"
     },
     "name": "maxRows",
@@ -1191,7 +1191,7 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 234,
+      "lineno": 241,
       "path": "lib"
     },
     "name": "minRows",
@@ -1206,7 +1206,7 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 236,
+      "lineno": 243,
       "path": "lib"
     },
     "name": "name",
@@ -1221,7 +1221,7 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 238,
+      "lineno": 245,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -1236,7 +1236,7 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 240,
+      "lineno": 247,
       "path": "lib"
     },
     "name": "parser",
@@ -1251,7 +1251,7 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 242,
+      "lineno": 249,
       "path": "lib"
     },
     "name": "rows",
@@ -1266,7 +1266,7 @@
     "memberof": "TheInputTextArea.propTypes",
     "meta": {
       "filename": "TheInputTextArea.jsx",
-      "lineno": 244,
+      "lineno": 251,
       "path": "lib"
     },
     "name": "value",
@@ -1341,7 +1341,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 235,
+      "lineno": 237,
       "path": "lib"
     },
     "name": "accept",
@@ -1356,7 +1356,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 237,
+      "lineno": 239,
       "path": "lib"
     },
     "name": "convertFile",
@@ -1371,7 +1371,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 239,
+      "lineno": 241,
       "path": "lib"
     },
     "name": "error",
@@ -1386,7 +1386,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 241,
+      "lineno": 243,
       "path": "lib"
     },
     "name": "height",
@@ -1401,7 +1401,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 243,
+      "lineno": 245,
       "path": "lib"
     },
     "name": "multiple",
@@ -1416,7 +1416,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 246,
+      "lineno": 248,
       "path": "lib"
     },
     "name": "onError",
@@ -1431,7 +1431,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 248,
+      "lineno": 250,
       "path": "lib"
     },
     "name": "onLoad",
@@ -1446,7 +1446,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 250,
+      "lineno": 252,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -1461,7 +1461,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 252,
+      "lineno": 254,
       "path": "lib"
     },
     "name": "spinner",
@@ -1476,7 +1476,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 254,
+      "lineno": 256,
       "path": "lib"
     },
     "name": "text",
@@ -1491,7 +1491,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 256,
+      "lineno": 258,
       "path": "lib"
     },
     "name": "value",
@@ -1506,7 +1506,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 258,
+      "lineno": 260,
       "path": "lib"
     },
     "name": "width",

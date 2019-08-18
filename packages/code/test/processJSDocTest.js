@@ -356,6 +356,24 @@ function x(a={}, b=[]){
     `,
     )
   })
+  it('Complete jsdoc with object destruction', async () => {
+    equal(
+      await processJSDoc(`
+/**
+ * @function x
+ *
+ */
+function x({a=1} = {}){}
+`),
+      `
+/**
+ * @function x
+ * @param [{}={}]
+ */
+function x({a=1} = {}){}
+`,
+    )
+  })
 })
 
 /* global describe, before, after, it */

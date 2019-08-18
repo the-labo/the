@@ -5,7 +5,7 @@
 ## @the-/util-array
 Array utility of the-framework
 
-**Version**: 15.4.7  
+**Version**: 15.4.9  
 **License**: MIT  
 
 * [@the-/util-array](#module_@the-/util-array)

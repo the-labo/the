@@ -4,7 +4,7 @@
  * @description iFrame of the-components
  * @module @the-/ui-frame
  * @typicalname uiFrame
- * @version 15.4.8
+ * @version 15.4.9
  */
 'use strict'
 

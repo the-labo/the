@@ -1,0 +1,103 @@
+[
+  {
+    "description": "Facade to wrap contexts",
+    "id": "module:@the-/facade-context",
+    "kind": "module",
+    "license": "MIT",
+    "longname": "module:@the-/facade-context",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 3,
+      "path": "lib"
+    },
+    "name": "@the-/facade-context",
+    "order": 0,
+    "typicalname": "facadeContext",
+    "version": "16.0.8"
+  },
+  {
+    "description": "Context wrapper",
+    "id": "module:@the-/facade-context.storeLoaderFor",
+    "kind": "function",
+    "longname": "module:@the-/facade-context.storeLoaderFor",
+    "memberof": "module:@the-/facade-context",
+    "meta": {
+      "filename": "storeLoaderFor.js",
+      "lineno": 3,
+      "path": "lib"
+    },
+    "name": "storeLoaderFor",
+    "order": 1,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "context"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "- Face object for storeLoader access"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Load store",
+    "id": "storeLoaderFor~storeLoader.load",
+    "kind": "function",
+    "longname": "storeLoaderFor~storeLoader.load",
+    "memberof": "storeLoaderFor~storeLoader",
+    "meta": {
+      "filename": "storeLoaderFor.js",
+      "lineno": 22,
+      "path": "lib"
+    },
+    "name": "load",
+    "order": 3,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Store object",
+        "name": "store"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "Loaded store"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/facade-context.storeLoaderFor~storeLoader",
+    "kind": "namespace",
+    "longname": "module:@the-/facade-context.storeLoaderFor~storeLoader",
+    "memberof": "module:@the-/facade-context.storeLoaderFor",
+    "meta": {
+      "filename": "storeLoaderFor.js",
+      "lineno": 11,
+      "path": "lib"
+    },
+    "name": "storeLoader",
+    "order": 2,
+    "scope": "inner"
+  }
+]

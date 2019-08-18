@@ -7,7 +7,7 @@
     "longname": "module:@the-/util-sw",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/util-sw",
@@ -22,7 +22,7 @@
     "longname": "appCache",
     "meta": {
       "filename": "appCache.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "appCache",
@@ -68,7 +68,7 @@
     "longname": "cachedFetch",
     "meta": {
       "filename": "cachingFetch.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "cachedFetch",
@@ -100,7 +100,7 @@
     "longname": "parseUrl",
     "meta": {
       "filename": "parseUrl.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "parseUrl",

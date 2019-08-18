@@ -5,19 +5,25 @@
 ## @the-/util-db
 Utility for the-db
 
-**Version**: 15.4.7  
+**Version**: 15.4.9  
 **License**: MIT  
 
 * [@the-/util-db](#module_@the-/util-db)
-    * [.evalScript()](#module_@the-/util-db.evalScript) ⇒ <code>\*</code>
+    * [.evalScript(script, [options&#x3D;])](#module_@the-/util-db.evalScript) ⇒ <code>\*</code>
     * [.toLowerKeys(obj)](#module_@the-/util-db.toLowerKeys) ⇒ <code>Object</code>
 
 <a name="module_@the-/util-db.evalScript"></a>
 
-### utilDb.evalScript() ⇒ <code>\*</code>
+### utilDb.evalScript(script, [options&#x3D;]) ⇒ <code>\*</code>
 Eval script
 
 **Kind**: static method of [<code>@the-/util-db</code>](#module_@the-/util-db)  
+
+| Param |
+| --- |
+| script | 
+| [options=] | 
+
 <a name="module_@the-/util-db.toLowerKeys"></a>
 
 ### utilDb.toLowerKeys(obj) ⇒ <code>Object</code>

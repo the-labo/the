@@ -11,9 +11,9 @@ Browser utility for the-framework
 * [@the-/window](#module_@the-/window)
     * [.get(name)](#module_@the-/window.get) ⇒ <code>\*</code>
     * [.line(handler, [options])](#module_@the-/window.line)
-    * [.once(event, handler)](#module_@the-/window.once)
+    * [.once(handler, event)](#module_@the-/window.once) ⇒ <code>\*</code>
     * [.reload([options])](#module_@the-/window.reload) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * [.rescue(event, handler)](#module_@the-/window.rescue)
+    * [.rescue(handler, event)](#module_@the-/window.rescue) ⇒ <code>\*</code>
     * [.set(name, value)](#module_@the-/window.set) ⇒ <code>\*</code>
     * [.show(url)](#module_@the-/window.show) ⇒ <code>\*</code>
 
@@ -43,15 +43,15 @@ Handle toggle online/offline
 
 <a name="module_@the-/window.once"></a>
 
-### window.once(event, handler)
+### window.once(handler, event) ⇒ <code>\*</code>
 Handle event once on document
 
 **Kind**: static method of [<code>@the-/window</code>](#module_@the-/window)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| event | <code>string</code> | Name of event |
 | handler | <code>function</code> | Event handler |
+| event | <code>string</code> | Name of event |
 
 <a name="module_@the-/window.reload"></a>
 
@@ -66,15 +66,15 @@ Reload location
 
 <a name="module_@the-/window.rescue"></a>
 
-### window.rescue(event, handler)
+### window.rescue(handler, event) ⇒ <code>\*</code>
 Handle event rescue on document
 
 **Kind**: static method of [<code>@the-/window</code>](#module_@the-/window)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| event | <code>string</code> | Name of event |
 | handler | <code>function</code> | Event handler |
+| event | <code>string</code> | Name of event |
 
 <a name="module_@the-/window.set"></a>
 
@@ -98,3 +98,4 @@ Show page
 | Param | Type | Description |
 | --- | --- | --- |
 | url | <code>string</code> | URL to show |
+

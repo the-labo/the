@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-view",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-view",
     "order": 0,
     "typicalname": "uiView",
-    "version": "15.4.8"
+    "version": "15.4.9"
   },
   {
     "description": "View of the-components",
@@ -51,7 +51,7 @@
     "memberof": "TheView.propTypes",
     "meta": {
       "filename": "TheView.jsx",
-      "lineno": 160,
+      "lineno": 161,
       "path": "lib"
     },
     "name": "fixed",

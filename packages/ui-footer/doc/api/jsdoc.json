@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-footer",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-footer",
     "order": 0,
     "typicalname": "uiFooter",
-    "version": "15.4.8"
+    "version": "15.4.9"
   },
   {
     "description": "Footer of the-components",

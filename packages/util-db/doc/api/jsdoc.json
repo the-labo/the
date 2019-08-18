@@ -7,13 +7,13 @@
     "longname": "module:@the-/util-db",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/util-db",
     "order": 1,
     "typicalname": "utilDb",
-    "version": "15.4.7"
+    "version": "15.4.9"
   },
   {
     "description": "Eval script",
@@ -23,11 +23,20 @@
     "memberof": "module:@the-/util-db",
     "meta": {
       "filename": "evalScript.js",
-      "lineno": 3,
+      "lineno": 4,
       "path": "lib"
     },
     "name": "evalScript",
     "order": 0,
+    "params": [
+      {
+        "name": "script"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
     "returns": [
       {
         "type": {
@@ -47,7 +56,7 @@
     "memberof": "module:@the-/util-db",
     "meta": {
       "filename": "toLowerKeys.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "toLowerKeys",

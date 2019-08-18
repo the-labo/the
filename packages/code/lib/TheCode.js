@@ -1,5 +1,3 @@
-
-
 const aglob = require('aglob')
 const { canWriteAsync, readFileAsync, statAsync } = require('asfs')
 const path = require('path')

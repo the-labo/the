@@ -1,6 +1,5 @@
 'use strict'
 
-
 const debug = require('debug')
 const get = require('./get')
 

@@ -7,13 +7,13 @@
     "longname": "module:@the-/util-color",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/util-color",
     "order": 2,
     "typicalname": "utilColor",
-    "version": "15.4.7"
+    "version": "15.4.9"
   },
   {
     "description": "Get color with alpha",
@@ -23,7 +23,7 @@
     "memberof": "module:@the-/util-color",
     "meta": {
       "filename": "colorWithAlpha.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "colorWithAlpha",
@@ -66,7 +66,7 @@
     "memberof": "module:@the-/util-color",
     "meta": {
       "filename": "colorWithText.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "colorWithText",
@@ -113,7 +113,7 @@
     "memberof": "module:@the-/util-color",
     "meta": {
       "filename": "rotatedColorsFor.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "rotatedColorsFor",
@@ -173,7 +173,7 @@
     "memberof": "module:@the-/util-color",
     "meta": {
       "filename": "textColorFor.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "textColorFor",

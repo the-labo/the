@@ -4,7 +4,7 @@
  * @description Live demo of the-components
  * @module @the-/ui-demo
  * @typicalname uiDemo
- * @version 15.4.8
+ * @version 15.4.9
  */
 'use strict'
 

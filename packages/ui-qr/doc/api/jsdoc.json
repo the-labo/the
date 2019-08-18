@@ -6,7 +6,7 @@
     "longname": "module:@the-/ui-qr",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-qr",
@@ -51,7 +51,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 109,
+      "lineno": 112,
       "path": "lib"
     },
     "name": "alt",
@@ -66,7 +66,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 111,
+      "lineno": 114,
       "path": "lib"
     },
     "name": "asLink",
@@ -81,7 +81,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 113,
+      "lineno": 116,
       "path": "lib"
     },
     "name": "onError",
@@ -96,7 +96,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 115,
+      "lineno": 118,
       "path": "lib"
     },
     "name": "onGenerate",
@@ -111,7 +111,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 117,
+      "lineno": 120,
       "path": "lib"
     },
     "name": "size",
@@ -126,7 +126,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 119,
+      "lineno": 122,
       "path": "lib"
     },
     "name": "text",

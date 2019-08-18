@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-html",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-html",
     "order": 0,
     "typicalname": "uiHtml",
-    "version": "15.4.8"
+    "version": "15.4.9"
   },
   {
     "description": "Html of the-components",

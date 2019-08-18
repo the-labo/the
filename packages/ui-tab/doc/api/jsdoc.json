@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-tab",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-tab",
     "order": 0,
     "typicalname": "uiTab",
-    "version": "15.4.8"
+    "version": "15.4.10"
   },
   {
     "description": "Tab for the-components",
@@ -21,7 +21,7 @@
     "longname": "TheTab",
     "meta": {
       "filename": "TheTab.jsx",
-      "lineno": 83,
+      "lineno": 84,
       "path": "lib"
     },
     "name": "TheTab",
@@ -51,7 +51,7 @@
     "memberof": "TheTab.propTypes",
     "meta": {
       "filename": "TheTab.jsx",
-      "lineno": 413,
+      "lineno": 429,
       "path": "lib"
     },
     "name": "activeIndex",
@@ -66,7 +66,7 @@
     "memberof": "TheTab.propTypes",
     "meta": {
       "filename": "TheTab.jsx",
-      "lineno": 415,
+      "lineno": 431,
       "path": "lib"
     },
     "name": "buttons",
@@ -81,7 +81,7 @@
     "memberof": "TheTab.propTypes",
     "meta": {
       "filename": "TheTab.jsx",
-      "lineno": 417,
+      "lineno": 433,
       "path": "lib"
     },
     "name": "disableTouchAction",
@@ -96,7 +96,7 @@
     "memberof": "TheTab.propTypes",
     "meta": {
       "filename": "TheTab.jsx",
-      "lineno": 419,
+      "lineno": 435,
       "path": "lib"
     },
     "name": "onChange",

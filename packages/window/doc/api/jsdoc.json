@@ -7,7 +7,7 @@
     "longname": "module:@the-/window",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/window",
@@ -23,7 +23,7 @@
     "memberof": "module:@the-/window",
     "meta": {
       "filename": "get.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "get",
@@ -58,7 +58,7 @@
     "memberof": "module:@the-/window",
     "meta": {
       "filename": "line.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "line",
@@ -106,7 +106,7 @@
     "memberof": "module:@the-/window",
     "meta": {
       "filename": "once.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "once",
@@ -115,20 +115,29 @@
       {
         "type": {
           "names": [
-            "string"
-          ]
-        },
-        "description": "Name of event",
-        "name": "event"
-      },
-      {
-        "type": {
-          "names": [
             "function"
           ]
         },
         "description": "Event handler",
         "name": "handler"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Name of event",
+        "name": "event"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
       }
     ],
     "scope": "static"
@@ -141,7 +150,7 @@
     "memberof": "module:@the-/window",
     "meta": {
       "filename": "reload.js",
-      "lineno": 1,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "reload",
@@ -178,7 +187,7 @@
     "memberof": "module:@the-/window",
     "meta": {
       "filename": "rescue.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "rescue",
@@ -187,20 +196,29 @@
       {
         "type": {
           "names": [
-            "string"
-          ]
-        },
-        "description": "Name of event",
-        "name": "event"
-      },
-      {
-        "type": {
-          "names": [
             "function"
           ]
         },
         "description": "Event handler",
         "name": "handler"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "Name of event",
+        "name": "event"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
       }
     ],
     "scope": "static"
@@ -213,7 +231,7 @@
     "memberof": "module:@the-/window",
     "meta": {
       "filename": "set.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "set",
@@ -257,7 +275,7 @@
     "memberof": "module:@the-/window",
     "meta": {
       "filename": "show.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "show",

@@ -6,13 +6,13 @@
     "longname": "module:@the-/ui-pager",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/ui-pager",
     "order": 0,
     "typicalname": "uiPager",
-    "version": "15.4.8"
+    "version": "15.4.9"
   },
   {
     "description": "Pager of the-components",
@@ -51,7 +51,7 @@
     "memberof": "ThePager.propTypes",
     "meta": {
       "filename": "ThePager.jsx",
-      "lineno": 153,
+      "lineno": 159,
       "path": "lib"
     },
     "name": "hrefPattern",
@@ -66,7 +66,7 @@
     "memberof": "ThePager.propTypes",
     "meta": {
       "filename": "ThePager.jsx",
-      "lineno": 155,
+      "lineno": 161,
       "path": "lib"
     },
     "name": "onChange",
@@ -81,7 +81,7 @@
     "memberof": "ThePager.propTypes",
     "meta": {
       "filename": "ThePager.jsx",
-      "lineno": 157,
+      "lineno": 163,
       "path": "lib"
     },
     "name": "page",
@@ -96,7 +96,7 @@
     "memberof": "ThePager.propTypes",
     "meta": {
       "filename": "ThePager.jsx",
-      "lineno": 159,
+      "lineno": 165,
       "path": "lib"
     },
     "name": "size",
@@ -111,7 +111,7 @@
     "memberof": "ThePager.propTypes",
     "meta": {
       "filename": "ThePager.jsx",
-      "lineno": 161,
+      "lineno": 167,
       "path": "lib"
     },
     "name": "total",

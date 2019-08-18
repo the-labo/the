@@ -7,7 +7,7 @@
     "longname": "module:@the-/util-file",
     "meta": {
       "filename": "index.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/util-file",
@@ -22,7 +22,7 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "copyAsJsonSync.js",
-      "lineno": 2,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "copyAsJsonSync",
@@ -34,7 +34,7 @@
             "string"
           ]
         },
-        "name": "src"
+        "name": "dest"
       },
       {
         "type": {
@@ -42,7 +42,16 @@
             "string"
           ]
         },
-        "name": "dest"
+        "name": "src"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
       }
     ],
     "scope": "static"
@@ -54,7 +63,7 @@
     "memberof": "module.module:@the-/util-file",
     "meta": {
       "filename": "delSync.js",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "delSync",
@@ -79,11 +88,16 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "fileSizeOf.js",
-      "lineno": 1,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "fileSizeOf",
     "order": 2,
+    "params": [
+      {
+        "name": "filename"
+      }
+    ],
     "returns": [
       {
         "type": {
@@ -103,7 +117,7 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "fileTypeOf.js",
-      "lineno": 1,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "fileTypeOf",
@@ -136,7 +150,7 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "isJSON5File.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "isJSON5File",
@@ -170,7 +184,7 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "readAsJson.js",
-      "lineno": 2,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "readAsJson",
@@ -203,7 +217,7 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "readAsJsonSync.js",
-      "lineno": 2,
+      "lineno": 8,
       "path": "lib"
     },
     "name": "readAsJsonSync",
@@ -237,11 +251,20 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "readAsYaml.js",
-      "lineno": 1,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "readAsYaml",
     "order": 8,
+    "params": [
+      {
+        "name": "filename"
+      },
+      {
+        "optional": true,
+        "name": "options="
+      }
+    ],
     "returns": [
       {
         "type": {
@@ -261,7 +284,7 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "statSync.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "statSync",
@@ -276,6 +299,15 @@
         "name": "filename"
       }
     ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -285,7 +317,7 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "writeAsJson.js",
-      "lineno": 2,
+      "lineno": 10,
       "path": "lib"
     },
     "name": "writeAsJson",
@@ -345,7 +377,7 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "writeAsJsonSync.js",
-      "lineno": 2,
+      "lineno": 11,
       "path": "lib"
     },
     "name": "writeAsJsonSync",
@@ -397,7 +429,7 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "writeAsYaml.js",
-      "lineno": 1,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "writeAsYaml",
