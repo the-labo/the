@@ -270,15 +270,42 @@ describe('process-js-doc', () => {
  * @function
  * @param {number} x
  */
-async function xx(x){
+function xx(x){
+  return X
 }
       `),
       `
 /**
  * @function
  * @param {number} x
+ * @returns {*} 
+ */
+function xx(x){
+  return X
+}
+      `,
+    )
+  })
+
+  it('Complete jsdoc returns async', async () => {
+    equal(
+      await processJSDoc(`
+/**
+ * @function
+ * @param {number} x
  */
 async function xx(x){
+  return X
+}
+      `),
+      `
+/**
+ * @function
+ * @param {number} x
+ * @returns {Promise<*>} 
+ */
+async function xx(x){
+  return X
 }
       `,
     )
@@ -304,10 +331,8 @@ function hoge({ x }) { }
  * @class
  */
 class TheRoomResourceEntity extends ResourceEntity {}
-`)
+`),
     )
-
-
   })
 })
 

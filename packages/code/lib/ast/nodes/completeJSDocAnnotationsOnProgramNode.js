@@ -66,6 +66,7 @@ function completeJSDocAnnotationsOnProgramNode(program, { get, replace }) {
       const tagsToStrings = (tags) =>
         tags ? tags.map((tag) => indented(String(tag.source))) : []
       const { description: descriptionTags, ...otherTags } = tagsByTypes
+
       const newCommentCode = [
         '/**',
         commentData.description
@@ -103,7 +104,8 @@ function completeJSDocAnnotationsOnProgramNode(program, { get, replace }) {
     const needsReturn =
       Returns.length > 0 && !(tagsByTypes.return || tagsByTypes.returns)
     if (needsReturn) {
-      return addComments([`* ${indent} @returns {*} `])
+      const type = FunctionDeclaration.async ? 'Promise<*>' : '*'
+      return addComments([`${indent} * @returns {${type}} `])
     }
   }
 }

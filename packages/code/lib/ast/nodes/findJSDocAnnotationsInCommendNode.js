@@ -29,13 +29,11 @@ function findJSDocAnnotationsInCommendNode(CommentNode) {
     }
   }
 
-  const kindFor = (start, end) => {
-    return {
-      end,
-      name: String(value).substring(start + 1 - offset, end - offset),
-      start,
-    }
-  }
+  const kindFor = (start, end) => ({
+    end,
+    name: String(value).substring(start + 1 - offset, end - offset),
+    start,
+  })
 
   const offset = (CommentNode.start || 0) + 2
   let line = 0
