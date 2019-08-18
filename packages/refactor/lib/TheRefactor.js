@@ -1,9 +1,5 @@
 'use strict'
 
-/**
- * @memberof module:@the-/refactor
- * @class TheRefactor
- */
 const abind = require('abind')
 const aglob = require('aglob')
 const {
@@ -39,7 +35,10 @@ const _replace = (content, from, to, { filename, max } = {}) => {
   )
 }
 
-/** @lends module:@the-/refactor.TheRefactor */
+/**
+ * @memberof module:@the-/refactor
+ * @class TheRefactor
+ */
 class TheRefactor {
   constructor() {
     abind(this)
