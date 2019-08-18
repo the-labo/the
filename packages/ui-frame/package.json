@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-frame",
   "description": "iFrame of the-components",
-  "version": "15.4.9",
+  "version": "15.4.10",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@the-/ui-condition": "^15.4.9",
-    "@the-/ui-spin": "^15.4.9",
+    "@the-/ui-spin": "^15.4.10",
     "@the-/window": "^15.5.5",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
@@ -21,7 +21,10 @@
     "@the-/ui-demo": "file:../ui-demo",
     "@the-/ui-router": "^15.4.8",
     "coz": "^7.0.19",
-    "objnest": "^5.0.6"
+    "objnest": "^5.0.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1"
   },
   "engines": {
     "node": ">=10",
