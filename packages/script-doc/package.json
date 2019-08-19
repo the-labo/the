@@ -1,4 +1,7 @@
 {
+  "name": "@the-/script-doc",
+  "description": "Doc script for the-projects",
+  "version": "15.4.10",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -21,7 +24,6 @@
     "stringcase": "^4.3.1",
     "writeout": "^2.2.4"
   },
-  "description": "Doc script for the-projects",
   "devDependencies": {
     "injectmock": "^2.0.0"
   },
@@ -36,7 +38,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/script-doc",
   "publishConfig": {
     "access": "public"
   },
@@ -46,6 +47,5 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.9"
+  }
 }

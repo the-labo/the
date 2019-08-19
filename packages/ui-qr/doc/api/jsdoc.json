@@ -12,7 +12,7 @@
     "name": "@the-/ui-qr",
     "order": 0,
     "typicalname": "uiQr",
-    "version": "15.4.10"
+    "version": "15.4.11"
   },
   {
     "description": "QRCode the-component",

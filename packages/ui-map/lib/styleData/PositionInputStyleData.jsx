@@ -9,13 +9,13 @@ function PositionInputStyleData({
 }) {
   const displayZIndex = 999
   const barWidth = 2
-  const targetBoxShadow = ({ opacity = 0.9 }) =>
-    `0 0 0 9999px rgba(255,255,255,${opacity}), 0 0 4px rgba(0,0,0,0.33) inset`
+  const targetBoxShadow = ({ opacity = 0.3 }) =>
+    `0 0 0 9999px rgba(0,0,0,${opacity}), 0 0 4px rgba(0,0,0,0.33) inset`
   return asStyleData({
     '.the-map-position-input': {
       '&:hover': {
         '.the-map-position-input-target': {
-          boxShadow: targetBoxShadow({ opacity: 0.98 }),
+          boxShadow: targetBoxShadow({ opacity: 0.5 }),
         },
       },
       border: `1px solid ${inputBorderColor}`,
@@ -43,7 +43,7 @@ function PositionInputStyleData({
       background: 'transparent',
       border: `4px solid ${dominantColor}`,
       borderRadius: '50%',
-      boxShadow: targetBoxShadow({ opacity: 0.9 }),
+      boxShadow: targetBoxShadow({ opacity: 0.3 }),
       display: 'flex',
       height: targetSize,
       justifyContent: 'center',
