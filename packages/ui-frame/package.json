@@ -11,7 +11,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/ui-condition": "^15.4.9",
+    "@the-/ui-condition": "^15.4.10",
     "@the-/ui-spin": "^15.4.10",
     "@the-/window": "^15.5.5",
     "classnames": "^2.2.6",
@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
-    "@the-/ui-router": "^15.4.8",
+    "@the-/ui-router": "^15.4.9",
     "coz": "^7.0.19",
     "objnest": "^5.0.6",
     "react": "^16.9.0",

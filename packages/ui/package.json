@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui",
   "description": "React components of THE framework",
-  "version": "15.4.25",
+  "version": "15.4.28",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,7 +18,7 @@
     "@the-/ui-caught": "^15.4.10",
     "@the-/ui-condition": "^15.4.10",
     "@the-/ui-container": "^15.4.10",
-    "@the-/ui-cycle": "^15.4.8",
+    "@the-/ui-cycle": "^15.4.10",
     "@the-/ui-dialog": "^15.4.10",
     "@the-/ui-flick": "^15.4.12",
     "@the-/ui-footer": "^15.4.10",
@@ -40,7 +40,7 @@
     "@the-/ui-pager": "^15.4.10",
     "@the-/ui-repeatable": "^15.4.10",
     "@the-/ui-root": "^15.4.11",
-    "@the-/ui-route": "^15.4.8",
+    "@the-/ui-route": "^15.4.10",
     "@the-/ui-router": "^15.4.9",
     "@the-/ui-section": "^15.4.12",
     "@the-/ui-spin": "^15.4.10",

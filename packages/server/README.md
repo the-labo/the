@@ -148,7 +148,7 @@ const { createElement: c } = React
   - [.stores](./doc/api/api.md#module_@the-/server.stores)
   - [.TheServer](./doc/api/api.md#module_@the-/server.TheServer)
 - module:@the-/server.adapters
-  - [.redisAdapter()](./doc/api/api.md#module_@the-/server.adapters.redisAdapter)
+  - [.redisAdapter(io,options&#x3D;)](./doc/api/api.md#module_@the-/server.adapters.redisAdapter)
 - module:@the-/server.assert
   - [.assertMethods(Class,reservedNames)](./doc/api/api.md#module_@the-/server.assert.assertMethods)
 - module:@the-/server.connectors
@@ -157,19 +157,19 @@ const { createElement: c } = React
   - [.DefaultValues](./doc/api/api.md#module_@the-/server.constants.DefaultValues)
 - module:@the-/server.helpers
   - [.asStrictSession(session)](./doc/api/api.md#module_@the-/server.helpers.asStrictSession)
-  - [.callbacksProxy()](./doc/api/api.md#module_@the-/server.helpers.callbacksProxy)
+  - [.callbacksProxy(options&#x3D;)](./doc/api/api.md#module_@the-/server.helpers.callbacksProxy)
   - [.ClientAccess(config)](./doc/api/api.md#module_@the-/server.helpers.ClientAccess)
   - [.ctxInjector(creators)](./doc/api/api.md#module_@the-/server.helpers.ctxInjector)
   - [.InfoFlusher(filename,getter)](./doc/api/api.md#module_@the-/server.helpers.InfoFlusher)
   - [.langDetector(locales,options)](./doc/api/api.md#module_@the-/server.helpers.langDetector)
   - [.MetricsCounter()](./doc/api/api.md#module_@the-/server.helpers.MetricsCounter)
-  - [.queryFromUrl()](./doc/api/api.md#module_@the-/server.helpers.queryFromUrl)
+  - [.queryFromUrl(urlString)](./doc/api/api.md#module_@the-/server.helpers.queryFromUrl)
   - [.RPCKeeper(Class)](./doc/api/api.md#module_@the-/server.helpers.RPCKeeper)
   - [.serverRendering(Component,options)](./doc/api/api.md#module_@the-/server.helpers.serverRendering)
-  - [.serverRendering()](./doc/api/api.md#module_@the-/server.helpers.serverRendering)
+  - [.serverRendering(Html,options&#x3D;)](./doc/api/api.md#module_@the-/server.helpers.serverRendering)
   - [.streamPool()](./doc/api/api.md#module_@the-/server.helpers.streamPool)
-  - [.toControllerDriverFactory()](./doc/api/api.md#module_@the-/server.helpers.toControllerDriverFactory)
-  - [.toLowerKeys()](./doc/api/api.md#module_@the-/server.helpers.toLowerKeys)
+  - [.toControllerDriverFactory(ControllerFactory,options&#x3D;)](./doc/api/api.md#module_@the-/server.helpers.toControllerDriverFactory)
+  - [.toLowerKeys(values&#x3D;)](./doc/api/api.md#module_@the-/server.helpers.toLowerKeys)
   - [~StreamDriverPool](./doc/api/api.md#module_@the-/server.helpers~StreamDriverPool)
 - module:@the-/server.helpers.ClientAccess
   - [~clientAccess](./doc/api/api.md#module_@the-/server.helpers.ClientAccess~clientAccess)
@@ -184,7 +184,7 @@ const { createElement: c } = React
   - [.SessionStore](./doc/api/api.md#module_@the-/server.stores.SessionStore)
   - [.Store](./doc/api/api.md#module_@the-/server.stores.Store)
 - module:@the-/server.streaming
-  - [.toStreamDriverFactory()](./doc/api/api.md#module_@the-/server.streaming.toStreamDriverFactory)
+  - [.toStreamDriverFactory(StreamFactory,options&#x3D;)](./doc/api/api.md#module_@the-/server.streaming.toStreamDriverFactory)
 - SessionAccess~sessionAccess
   - [.reload()](./doc/api/api.md#SessionAccess~sessionAccess.reload)
   - [.save(options)](./doc/api/api.md#SessionAccess~sessionAccess.save)

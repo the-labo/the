@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@the-/check": "^15.5.6",
-    "@the-/ui-router": "^15.4.8",
+    "@the-/ui-router": "^15.4.9",
     "@the-/url": "^15.4.9",
     "@the-/window": "^15.5.5",
     "history": "^4.9.0"

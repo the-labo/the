@@ -10,9 +10,9 @@
   "dependencies": {
     "@the-/const-ui": "^15.4.5",
     "@the-/date": "^15.4.2",
-    "@the-/ui-button": "^15.4.9",
-    "@the-/ui-condition": "^15.4.9",
-    "@the-/ui-style": "^15.4.10",
+    "@the-/ui-button": "^15.4.10",
+    "@the-/ui-condition": "^15.4.10",
+    "@the-/ui-style": "^15.4.11",
     "@the-/util-color": "^15.4.0",
     "@the-/util-ui": "^15.4.12",
     "bui": "^0.1.16",

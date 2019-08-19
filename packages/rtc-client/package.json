@@ -16,14 +16,14 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.3",
+    "@the-/check": "^15.5.6",
     "@the-/media": "^15.5.1",
-    "@the-/pack": "^15.4.9",
-    "@the-/window": "^15.5.2",
-    "argx": "^4.0.2",
+    "@the-/pack": "^15.4.12",
+    "@the-/window": "^15.5.5",
+    "argx": "^4.0.4",
     "asobj": "^3.0.1",
     "debug": "^4.1.1",
-    "qs": "^6.7.0",
+    "qs": "^6.8.0",
     "socket.io-client": "^2.2.0",
     "uuid": "^3.3.2",
     "wrtc": "^0.4.1"

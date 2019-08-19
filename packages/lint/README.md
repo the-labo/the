@@ -122,9 +122,9 @@ tryExample().catch((err) => console.error(err))
   - [.packageRule(config)](./doc/api/api.md#module_@the-/lint.rules.packageRule)
   - [.propRule(config)](./doc/api/api.md#module_@the-/lint.rules.propRule)
   - [.usageRule(config)](./doc/api/api.md#module_@the-/lint.rules.usageRule)
-- module:@the-/lint.TheLint
-  - [#add(pattern,checker)](./doc/api/api.md#module_@the-/lint.TheLint#add)
-  - [#run()](./doc/api/api.md#module_@the-/lint.TheLint#run)
+- TheLint
+  - [#add(pattern,checker)](./doc/api/api.md#TheLint#add)
+  - [#run()](./doc/api/api.md#TheLint#run)
 
 See [API Guide](./doc/api/api.md) for more detail
 

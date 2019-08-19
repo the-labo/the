@@ -1,7 +1,7 @@
 {
   "name": "@the-/server",
   "description": "HTTP/RPC Server of the-framework",
-  "version": "16.1.0",
+  "version": "16.1.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -34,7 +34,7 @@
     "stringcase": "^4.3.1"
   },
   "devDependencies": {
-    "@the-/client": "^15.7.0",
+    "@the-/client": "^15.7.1",
     "arequest": "^3.0.2",
     "msgpack-lite": "^0.1.26",
     "react": "^16.9.0",

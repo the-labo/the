@@ -13,12 +13,12 @@
   },
   "dependencies": {
     "@the-/error": "^15.4.0",
-    "@the-/url": "^15.4.4",
-    "@the-/window": "^15.5.0",
+    "@the-/url": "^15.4.9",
+    "@the-/window": "^15.5.5",
     "asleep": "^1.0.3",
     "asobj": "^3.0.1",
     "objnest": "^5.0.6",
-    "qs": "^6.7.0"
+    "qs": "^6.8.0"
   },
   "devDependencies": {
     "@the-/scope": "file:../scope",

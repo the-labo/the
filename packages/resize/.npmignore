@@ -42,4 +42,5 @@ example
 misc/mocks
 test
 
-*.html
+var
+/*.html

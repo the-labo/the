@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-cycle",
   "description": "Component with life cycle",
-  "version": "15.4.9",
+  "version": "15.4.10",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,7 +11,8 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/ui-style": "^15.4.10",
+    "@the-/ui-style": "^15.4.11",
+    "@the-/util-ui": "^15.4.12",
     "asobj": "^3.0.1",
     "debug": "^4.1.1",
     "prop-types": "^15.7.2"
@@ -19,7 +20,10 @@
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
     "coz": "^7.0.19",
-    "objnest": "^5.0.6"
+    "objnest": "^5.0.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1"
   },
   "engines": {
     "node": ">=10",

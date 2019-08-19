@@ -1,7 +1,7 @@
 {
   "name": "@the-/client",
   "description": "Client for the-server",
-  "version": "15.7.1",
+  "version": "15.7.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -31,7 +31,7 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "@the-/server": "^16.1.0",
+    "@the-/server": "^16.1.1",
     "aport": "^2.0.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"

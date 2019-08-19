@@ -13,7 +13,7 @@
     "name": "@the-/server",
     "order": 3,
     "typicalname": "server",
-    "version": "16.1.0"
+    "version": "16.1.1"
   },
   {
     "description": "HTTP server for the-framework",

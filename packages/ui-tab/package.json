@@ -12,9 +12,9 @@
   },
   "dependencies": {
     "@the-/const-ui": "^15.4.5",
-    "@the-/ui-button": "^15.4.9",
-    "@the-/ui-spin": "^15.4.9",
-    "@the-/ui-style": "^15.4.10",
+    "@the-/ui-button": "^15.4.10",
+    "@the-/ui-spin": "^15.4.10",
+    "@the-/ui-style": "^15.4.11",
     "@the-/util-ui": "^15.4.12",
     "asobj": "^3.0.1",
     "chopcal": "^3.0.3",

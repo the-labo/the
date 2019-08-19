@@ -4,7 +4,7 @@
  * @description Component with life cycle
  * @module @the-/ui-cycle
  * @typicalname uiCycle
- * @version 15.4.9
+ * @version 15.4.10
  */
 'use strict'
 

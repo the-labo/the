@@ -18,8 +18,8 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/window": "^15.5.2",
-    "bowser": "^2.5.2",
+    "@the-/window": "^15.5.5",
+    "bowser": "^2.5.3",
     "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.0"
   },

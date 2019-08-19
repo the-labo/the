@@ -41,3 +41,5 @@ misc/mocks
 .*.bud
 
 test
+var
+/*.html
