@@ -1,7 +1,7 @@
 {
   "name": "@the-/code",
   "description": "Code formatter of the-frameworks",
-  "version": "15.11.4",
+  "version": "15.11.5",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -15,7 +15,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/ast": "^16.0.2",
+    "@the-/ast": "^15.4.7",
     "@the-/const-code": "^15.5.1",
     "@the-/util-file": "^15.5.2",
     "@the-/util-path": "^15.4.4",
