@@ -3,8 +3,7 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-// See https://github.com/szimek/signature_pad/issues/405#issuecomment-448974643
-import * as SignaturePad from 'signature_pad/dist/signature_pad'
+import SignaturePad from 'signature_pad/dist/signature_pad'
 import {
   changedProps,
   eventHandlersFor,
