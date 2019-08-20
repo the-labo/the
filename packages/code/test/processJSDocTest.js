@@ -374,6 +374,29 @@ function x({a=1} = {}){}
 `,
     )
   })
+
+  it('Some bug', async () => {
+    equal(
+      await processJSDoc(`
+/**
+ * 順番になっている数値を生成する
+ * @returns {*} 
+ * @param {number} base - 基準
+ * @param {number} count - いくつか
+ * @param {Object} [options={}]
+ */
+`),
+      `
+/**
+ * 順番になっている数値を生成する
+ * @param {number} base - 基準
+ * @param {Object} [options={}]
+ * @param {number} count - いくつか
+ * @returns {*} 
+ */
+`,
+    )
+  })
 })
 
 /* global describe, before, after, it */
