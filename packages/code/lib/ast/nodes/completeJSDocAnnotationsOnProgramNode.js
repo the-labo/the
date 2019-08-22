@@ -96,7 +96,8 @@ function completeJSDocAnnotationsOnProgramNode(program, { get, replace }) {
       const isOptional = paramNode.type === NodeTypes.AssignmentPattern
       if (isOptional) {
         const defaults = paramDefaultCodeFor(paramNode)
-        return `${indent} * @param [${name}=${defaults || ''}]`
+        const expression = defaults ? [name, defaults].join('=') : name
+        return `${indent} * @param [${expression || ''}]`
       }
 
       return `${indent} * @param ${name}`

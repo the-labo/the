@@ -375,6 +375,25 @@ function x({a=1} = {}){}
     )
   })
 
+  it('Complete 2', async () => {
+    equal(
+      await processJSDoc(`
+/**
+ * @function x
+ *
+ */
+function x(a=b.c.d){}
+      `),
+      `
+/**
+ * @function x
+ * @param [a]
+ */
+function x(a=b.c.d){}
+      `,
+    )
+  })
+
   it('Some bug', async () => {
     equal(
       await processJSDoc(`
