@@ -254,7 +254,7 @@ class TheDB extends TheDBBase {
 
   /**
    * Register resource form Resource Class
-   * @param {Function} ResourceFactory - Resource factory
+   * @param {function(Object): Object} ResourceFactory - Resource factory
    * @param {string} resourceName - Name of resource
    * @returns {Object} Loaded resource instance
    */
@@ -275,6 +275,7 @@ class TheDB extends TheDBBase {
     }
 
     const resource = ResourceFactory({
+      db: this,
       define: (schema, options = {}) =>
         this.defineResource(resourceName, schema, options),
     })
