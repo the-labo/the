@@ -13,7 +13,7 @@ class TheCache extends LRUCache {
    * Get cache or initialize and set
    * @param {string} key - Cache key
    * @param {function(Promise)} initializer - Initializer async function
-   * @returns {Promise<undefined>}
+   * @returns {Promise<*>}
    */
   async for(key, initializer) {
     const cached = this.get(key)
@@ -22,7 +22,9 @@ class TheCache extends LRUCache {
     }
 
     const initialized = await initializer()
-    this.set(key, initialized)
+    if (typeof initialized !== 'undefined') {
+      this.set(key, initialized)
+    }
     return initialized
   }
 }

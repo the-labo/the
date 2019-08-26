@@ -13,7 +13,7 @@
     "name": "@the-/axe",
     "order": 2,
     "typicalname": "axe",
-    "version": "15.6.5"
+    "version": "15.6.9"
   },
   {
     "description": "Create instance",
@@ -26,13 +26,13 @@
   },
   {
     "description": "Start interval",
-    "id": "module:@the-/axe.TheAce#start",
+    "id": "TheAxe#start",
     "kind": "function",
-    "longname": "module:@the-/axe.TheAce#start",
-    "memberof": "module:@the-/axe.TheAce",
+    "longname": "TheAxe#start",
+    "memberof": "TheAxe",
     "meta": {
       "filename": "TheAxe.js",
-      "lineno": 45,
+      "lineno": 44,
       "path": "lib"
     },
     "name": "start",
@@ -61,7 +61,7 @@
     "memberof": "module:@the-/axe",
     "meta": {
       "filename": "TheAxe.js",
-      "lineno": 1,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "TheAxe",

@@ -23,9 +23,20 @@ describe('the-cache', () => {
     equal(cache.get('foo'), 'bar')
     cache.reset()
     ok(!cache.get('foo'))
-
-    equal(await cache.for('x', () => 'This is x'), 'This is x')
+    let accessCount = 0
+    equal(
+      await cache.for('x', () => {
+        accessCount++
+        return 'This is x'
+      }),
+      'This is x',
+    )
     equal(cache.get('x'), 'This is x')
+    cache.get('x')
+    cache.get('x')
+    cache.get('x')
+    cache.get('x')
+    equal(accessCount, 1)
   })
 })
 

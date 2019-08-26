@@ -13,7 +13,7 @@
     "name": "@the-/cache",
     "order": 2,
     "typicalname": "cache",
-    "version": "15.5.1"
+    "version": "15.5.3"
   },
   {
     "async": true,
@@ -53,7 +53,7 @@
       {
         "type": {
           "names": [
-            "Promise.<undefined>"
+            "Promise.<*>"
           ]
         }
       }

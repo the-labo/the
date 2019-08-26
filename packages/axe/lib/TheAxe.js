@@ -1,19 +1,18 @@
-/**
- * Create instance
- * @memberof module:@the-/axe
- * @class TheAxe
- */
 'use strict'
 
 const { injectScript } = require('@the-/util-dom')
 const { get } = require('@the-/window')
 const Logger = require('./Logger')
 
-/** @lends module:@the-/axe.TheAce */
+/**
+ * Create instance
+ * @memberof module:@the-/axe
+ * @class TheAxe
+ */
 class TheAxe {
   constructor(options = {}) {
     const {
-      interval = 10000,
+      interval = 10 * 1000,
       src = 'https://cdnjs.cloudflare.com/ajax/libs/axe-core/3.3.1/axe.js',
     } = options
     this.interval = interval
@@ -55,8 +54,13 @@ class TheAxe {
     const axe = get('axe', { strict: true })
     const body = get('document.body')
     return new Promise((resolve, reject) => {
-      axe.run(body, { reporter: 'v2' }, (err, results) =>
-        err ? reject(err) : resolve(results),
+      axe.run(
+        body,
+        {
+          reporter: 'v2',
+          restoreScroll: true,
+        },
+        (err, results) => (err ? reject(err) : resolve(results)),
       )
     })
   }
