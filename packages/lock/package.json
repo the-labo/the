@@ -1,0 +1,42 @@
+{
+  "name": "@the-/lock",
+  "description": "Async lock",
+  "version": "15.4.9",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "browser": "shim",
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "async-lock": "^1.2.2"
+  },
+  "devDependencies": {
+    "asleep": "^1.0.3"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/lock#readme",
+  "keywords": [
+    "lib",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
+  "scripts": {
+    "build": "../../misc/scripts/pkgBuild.js",
+    "doc": "../../misc/scripts/pkgDoc.js",
+    "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
+    "prepublishOnly": "npm run test",
+    "test": "../../misc/scripts/pkgTest.js"
+  }
+}
