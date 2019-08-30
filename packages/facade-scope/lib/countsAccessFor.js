@@ -19,7 +19,14 @@ function countsAccessFor(scope) {
      * @type {Object}
      */
     get state() {
-      return scope.get('counts')
+      return scope.get('counts') || {}
+    },
+    /**
+     * Decrease count
+     * @param {number} amount = 1
+     */
+    decrease(amount = 1) {
+      countsAccess.increase(amount * -1)
     },
     /**
      * Has more or not
@@ -34,6 +41,20 @@ function countsAccessFor(scope) {
         state: { length, offset, total },
       } = countsAccess
       return offset + length < total
+    },
+    /**
+     * Increase count
+     * @param {number} amount = 1
+     */
+    increase(amount = 1) {
+      const {
+        state: { length = 0, offset = 0, total = 0 },
+      } = countsAccess
+      countsAccess.set({
+        length: length + amount,
+        offset,
+        total: total + amount,
+      })
     },
     /**
      * Set counts

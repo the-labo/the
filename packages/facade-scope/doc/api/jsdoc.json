@@ -11,9 +11,9 @@
       "path": "lib"
     },
     "name": "@the-/facade-scope",
-    "order": 36,
+    "order": 38,
     "typicalname": "facadeScope",
-    "version": "16.1.19"
+    "version": "16.1.21"
   },
   {
     "description": "Operation handlers",
@@ -26,7 +26,7 @@
       "path": "lib/operations"
     },
     "name": "operation",
-    "order": 74,
+    "order": 76,
     "scope": "global"
   },
   {
@@ -80,7 +80,7 @@
       "path": "lib"
     },
     "name": "state",
-    "order": 14,
+    "order": 16,
     "scope": "static",
     "type": {
       "names": [
@@ -99,7 +99,7 @@
       "path": "lib"
     },
     "name": "state",
-    "order": 23,
+    "order": 25,
     "scope": "static",
     "type": {
       "names": [
@@ -118,7 +118,7 @@
       "path": "lib"
     },
     "name": "state",
-    "order": 29,
+    "order": 31,
     "scope": "static",
     "type": {
       "names": [
@@ -137,7 +137,7 @@
       "path": "lib"
     },
     "name": "state",
-    "order": 33,
+    "order": 35,
     "scope": "static",
     "type": {
       "names": [
@@ -157,7 +157,7 @@
       "path": "lib"
     },
     "name": "state",
-    "order": 44,
+    "order": 46,
     "scope": "static",
     "type": {
       "names": [
@@ -177,7 +177,7 @@
       "path": "lib"
     },
     "name": "state",
-    "order": 61,
+    "order": 63,
     "scope": "static",
     "type": {
       "names": [
@@ -324,6 +324,32 @@
     "scope": "static"
   },
   {
+    "description": "Decrease count",
+    "id": "countsAccessFor~countsAccess.decrease",
+    "kind": "function",
+    "longname": "countsAccessFor~countsAccess.decrease",
+    "memberof": "countsAccessFor~countsAccess",
+    "meta": {
+      "filename": "countsAccessFor.js",
+      "lineno": 28,
+      "path": "lib"
+    },
+    "name": "decrease",
+    "order": 9,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "description": "= 1",
+        "name": "amount"
+      }
+    ],
+    "scope": "static"
+  },
+  {
     "description": "Has more or not",
     "id": "countsAccessFor~countsAccess.hasMore",
     "kind": "function",
@@ -331,11 +357,11 @@
     "memberof": "countsAccessFor~countsAccess",
     "meta": {
       "filename": "countsAccessFor.js",
-      "lineno": 28,
+      "lineno": 35,
       "path": "lib"
     },
     "name": "hasMore",
-    "order": 9,
+    "order": 10,
     "returns": [
       {
         "type": {
@@ -348,6 +374,32 @@
     "scope": "static"
   },
   {
+    "description": "Increase count",
+    "id": "countsAccessFor~countsAccess.increase",
+    "kind": "function",
+    "longname": "countsAccessFor~countsAccess.increase",
+    "memberof": "countsAccessFor~countsAccess",
+    "meta": {
+      "filename": "countsAccessFor.js",
+      "lineno": 49,
+      "path": "lib"
+    },
+    "name": "increase",
+    "order": 11,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "description": "= 1",
+        "name": "amount"
+      }
+    ],
+    "scope": "static"
+  },
+  {
     "description": "Set counts",
     "id": "countsAccessFor~countsAccess.set",
     "kind": "function",
@@ -355,11 +407,11 @@
     "memberof": "countsAccessFor~countsAccess",
     "meta": {
       "filename": "countsAccessFor.js",
-      "lineno": 42,
+      "lineno": 63,
       "path": "lib"
     },
     "name": "set",
-    "order": 10,
+    "order": 12,
     "params": [
       {
         "type": {
@@ -384,7 +436,7 @@
       "path": "lib"
     },
     "name": "entitiesAccessFor",
-    "order": 12,
+    "order": 14,
     "params": [
       {
         "type": {
@@ -419,7 +471,7 @@
       "path": "lib"
     },
     "name": "add",
-    "order": 15,
+    "order": 17,
     "params": [
       {
         "type": {
@@ -453,7 +505,7 @@
       "path": "lib"
     },
     "name": "addOne",
-    "order": 16,
+    "order": 18,
     "params": [
       {
         "type": {
@@ -490,7 +542,7 @@
       "path": "lib"
     },
     "name": "receiveOne",
-    "order": 17,
+    "order": 19,
     "params": [
       {
         "type": {
@@ -535,7 +587,7 @@
       "path": "lib"
     },
     "name": "removeOne",
-    "order": 18,
+    "order": 20,
     "params": [
       {
         "type": {
@@ -561,7 +613,7 @@
       "path": "lib"
     },
     "name": "set",
-    "order": 19,
+    "order": 21,
     "params": [
       {
         "type": {
@@ -587,7 +639,7 @@
       "path": "lib"
     },
     "name": "updateOne",
-    "order": 20,
+    "order": 22,
     "params": [
       {
         "type": {
@@ -613,7 +665,7 @@
       "path": "lib"
     },
     "name": "entityAccessFor",
-    "order": 21,
+    "order": 23,
     "params": [
       {
         "type": {
@@ -648,7 +700,7 @@
       "path": "lib"
     },
     "name": "set",
-    "order": 24,
+    "order": 26,
     "params": [
       {
         "type": {
@@ -673,7 +725,7 @@
       "path": "lib"
     },
     "name": "entryAccessFor",
-    "order": 25,
+    "order": 27,
     "params": [
       {
         "type": {
@@ -708,7 +760,7 @@
       "path": "lib"
     },
     "name": "filterAccessFor",
-    "order": 27,
+    "order": 29,
     "params": [
       {
         "type": {
@@ -743,7 +795,7 @@
       "path": "lib"
     },
     "name": "set",
-    "order": 30,
+    "order": 32,
     "params": [
       {
         "type": {
@@ -768,7 +820,7 @@
       "path": "lib"
     },
     "name": "idAccessFor",
-    "order": 31,
+    "order": 33,
     "params": [
       {
         "type": {
@@ -803,7 +855,7 @@
       "path": "lib"
     },
     "name": "isKnown",
-    "order": 34,
+    "order": 36,
     "params": [
       {
         "type": {
@@ -837,7 +889,7 @@
       "path": "lib"
     },
     "name": "set",
-    "order": 35,
+    "order": 37,
     "params": [
       {
         "type": {
@@ -862,7 +914,7 @@
       "path": "lib"
     },
     "name": "moreAccessFor",
-    "order": 37,
+    "order": 39,
     "params": [
       {
         "type": {
@@ -897,7 +949,7 @@
       "path": "lib"
     },
     "name": "setBusy",
-    "order": 39,
+    "order": 41,
     "params": [
       {
         "type": {
@@ -922,7 +974,7 @@
       "path": "lib"
     },
     "name": "setHas",
-    "order": 40,
+    "order": 42,
     "params": [
       {
         "type": {
@@ -947,7 +999,7 @@
       "path": "lib"
     },
     "name": "busyWhile",
-    "order": 41,
+    "order": 43,
     "params": [
       {
         "type": {
@@ -981,7 +1033,7 @@
       "path": "lib"
     },
     "name": "pageAccessFor",
-    "order": 42,
+    "order": 44,
     "params": [
       {
         "type": {
@@ -1016,7 +1068,7 @@
       "path": "lib"
     },
     "name": "getNumber",
-    "order": 45,
+    "order": 47,
     "returns": [
       {
         "type": {
@@ -1041,7 +1093,7 @@
       "path": "lib"
     },
     "name": "getSize",
-    "order": 46,
+    "order": 48,
     "returns": [
       {
         "type": {
@@ -1065,7 +1117,7 @@
       "path": "lib"
     },
     "name": "more",
-    "order": 47,
+    "order": 49,
     "params": [
       {
         "type": {
@@ -1093,7 +1145,7 @@
       "path": "lib"
     },
     "name": "next",
-    "order": 48,
+    "order": 50,
     "scope": "static"
   },
   {
@@ -1108,7 +1160,7 @@
       "path": "lib"
     },
     "name": "set",
-    "order": 49,
+    "order": 51,
     "params": [
       {
         "name": "page"
@@ -1128,7 +1180,7 @@
       "path": "lib"
     },
     "name": "setNumber",
-    "order": 50,
+    "order": 52,
     "params": [
       {
         "type": {
@@ -1153,7 +1205,7 @@
       "path": "lib"
     },
     "name": "setSize",
-    "order": 51,
+    "order": 53,
     "params": [
       {
         "type": {
@@ -1178,7 +1230,7 @@
       "path": "lib"
     },
     "name": "readyAccessFor",
-    "order": 52,
+    "order": 54,
     "params": [
       {
         "type": {
@@ -1213,7 +1265,7 @@
       "path": "lib"
     },
     "name": "false",
-    "order": 54,
+    "order": 56,
     "scope": "static"
   },
   {
@@ -1228,7 +1280,7 @@
       "path": "lib"
     },
     "name": "true",
-    "order": 55,
+    "order": 57,
     "scope": "static"
   },
   {
@@ -1243,7 +1295,7 @@
       "path": "lib"
     },
     "name": "when",
-    "order": 56,
+    "order": 58,
     "params": [
       {
         "type": {
@@ -1278,7 +1330,7 @@
       "path": "lib"
     },
     "name": "resultAccessFor",
-    "order": 57,
+    "order": 59,
     "params": [
       {
         "type": {
@@ -1313,7 +1365,7 @@
       "path": "lib"
     },
     "name": "sortAccessFor",
-    "order": 59,
+    "order": 61,
     "params": [
       {
         "type": {
@@ -1348,7 +1400,7 @@
       "path": "lib"
     },
     "name": "set",
-    "order": 62,
+    "order": 64,
     "params": [
       {
         "type": {
@@ -1373,7 +1425,7 @@
       "path": "lib/operations"
     },
     "name": "createOperationFor",
-    "order": 63,
+    "order": 65,
     "params": [
       {
         "type": {
@@ -1408,7 +1460,7 @@
       "path": "lib/operations"
     },
     "name": "init",
-    "order": 65,
+    "order": 67,
     "scope": "static"
   },
   {
@@ -1426,7 +1478,7 @@
       "path": "lib/operations"
     },
     "name": "exec",
-    "order": 66,
+    "order": 68,
     "params": [
       {
         "type": {
@@ -1460,7 +1512,7 @@
       "path": "lib/operations"
     },
     "name": "setEntry",
-    "order": 67,
+    "order": 69,
     "params": [
       {
         "type": {
@@ -1494,7 +1546,7 @@
       "path": "lib/operations"
     },
     "name": "destroyOperationFor",
-    "order": 68,
+    "order": 70,
     "params": [
       {
         "type": {
@@ -1529,7 +1581,7 @@
       "path": "lib/operations"
     },
     "name": "detailOperationFor",
-    "order": 70,
+    "order": 72,
     "params": [
       {
         "type": {
@@ -1564,7 +1616,7 @@
       "path": "lib/operations"
     },
     "name": "editOperationFor",
-    "order": 72,
+    "order": 74,
     "params": [
       {
         "type": {
@@ -1599,7 +1651,7 @@
       "path": "lib/operations"
     },
     "name": "listOperationFor",
-    "order": 75,
+    "order": 77,
     "returns": [
       {
         "type": {
@@ -1622,7 +1674,7 @@
       "path": "lib/operations"
     },
     "name": "sync",
-    "order": 77,
+    "order": 79,
     "params": [
       {
         "type": {
@@ -1657,7 +1709,7 @@
       "path": "lib/operations"
     },
     "name": "operationFor",
-    "order": 78,
+    "order": 80,
     "params": [
       {
         "type": {
@@ -1691,7 +1743,7 @@
       "path": "lib"
     },
     "name": "Entity",
-    "order": 11,
+    "order": 13,
     "properties": [
       {
         "type": {
@@ -1743,7 +1795,7 @@
       "path": "lib"
     },
     "name": "entitiesAccess",
-    "order": 13,
+    "order": 15,
     "scope": "inner"
   },
   {
@@ -1757,7 +1809,7 @@
       "path": "lib"
     },
     "name": "entityAccessFor",
-    "order": 22,
+    "order": 24,
     "scope": "inner"
   },
   {
@@ -1771,7 +1823,7 @@
       "path": "lib"
     },
     "name": "entryAccess",
-    "order": 26,
+    "order": 28,
     "scope": "inner"
   },
   {
@@ -1785,7 +1837,7 @@
       "path": "lib"
     },
     "name": "filterAccess",
-    "order": 28,
+    "order": 30,
     "scope": "inner"
   },
   {
@@ -1799,7 +1851,7 @@
       "path": "lib"
     },
     "name": "idAccess",
-    "order": 32,
+    "order": 34,
     "scope": "inner"
   },
   {
@@ -1813,7 +1865,7 @@
       "path": "lib"
     },
     "name": "moreAccess",
-    "order": 38,
+    "order": 40,
     "scope": "inner"
   },
   {
@@ -1827,7 +1879,7 @@
       "path": "lib"
     },
     "name": "pageAccess",
-    "order": 43,
+    "order": 45,
     "scope": "inner"
   },
   {
@@ -1841,7 +1893,7 @@
       "path": "lib"
     },
     "name": "readyAccess",
-    "order": 53,
+    "order": 55,
     "scope": "inner"
   },
   {
@@ -1855,7 +1907,7 @@
       "path": "lib"
     },
     "name": "resultAccess",
-    "order": 58,
+    "order": 60,
     "scope": "inner"
   },
   {
@@ -1869,7 +1921,7 @@
       "path": "lib"
     },
     "name": "sortAccess",
-    "order": 60,
+    "order": 62,
     "scope": "inner"
   },
   {
@@ -1883,7 +1935,7 @@
       "path": "lib/operations"
     },
     "name": "createOperation",
-    "order": 64,
+    "order": 66,
     "scope": "inner"
   },
   {
@@ -1897,7 +1949,7 @@
       "path": "lib/operations"
     },
     "name": "destroyOperation",
-    "order": 69,
+    "order": 71,
     "scope": "inner"
   },
   {
@@ -1911,7 +1963,7 @@
       "path": "lib/operations"
     },
     "name": "detailOperation",
-    "order": 71,
+    "order": 73,
     "scope": "inner"
   },
   {
@@ -1925,7 +1977,7 @@
       "path": "lib/operations"
     },
     "name": "editOperation",
-    "order": 73,
+    "order": 75,
     "scope": "inner"
   },
   {
@@ -1939,7 +1991,7 @@
       "path": "lib/operations"
     },
     "name": "listOperation",
-    "order": 76,
+    "order": 78,
     "scope": "inner"
   },
   {
@@ -1953,7 +2005,7 @@
       "path": "lib/operations"
     },
     "name": "operationFor",
-    "order": 79,
+    "order": 81,
     "scope": "inner"
   }
 ]

@@ -21,7 +21,7 @@
 ## @the-/facade-scope
 Facade to wrap scopes
 
-**Version**: 16.1.19  
+**Version**: 16.1.21  
 **License**: MIT  
 
 * [@the-/facade-scope](#module_@the-/facade-scope)
