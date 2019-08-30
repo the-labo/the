@@ -1,7 +1,7 @@
 {
   "name": "@the-/db",
   "description": "DB for the-framework",
-  "version": "17.0.6",
+  "version": "17.0.7",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,7 +14,7 @@
     "@the-/assert": "^15.4.1",
     "@the-/check": "^15.5.6",
     "@the-/driver-mongo": "^15.4.4",
-    "@the-/driver-sequelize": "^15.4.13",
+    "@the-/driver-sequelize": "^15.4.14",
     "@the-/hash": "^15.4.3",
     "@the-/refresher": "^15.4.0",
     "@the-/resource": "^15.4.10",
@@ -37,8 +37,8 @@
     "is-class": "0.0.8",
     "mkdirp": "^0.5.1",
     "msgpack5": "^4.2.1",
-    "mysql2": "^1.6.5",
-    "uuid": "^3.3.2"
+    "mysql2": "^1.7.0",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
     "colorprint": "^6.0.4",
