@@ -47,7 +47,7 @@ function entryAccessFor(scope) {
     setEntry(entry) {
       const current = entryAccess.getEntry()
       scope.set({
-        entry: flatten({ ...current, ...entry }),
+        entry: flatten({ ...current, ...expand(entry) }),
       })
       // Create errors
       {

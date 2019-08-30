@@ -5,7 +5,7 @@
 'use strict'
 
 const {
-  strict: { ok },
+  strict: { deepEqual, ok },
 } = require('assert')
 const {
   scopes: { ObjectScope, ScopeScope },
@@ -40,6 +40,23 @@ describe('entry-access-for', () => {
       .catch((e) => e)
     ok(!!caught)
     ok(entryAccess.getEntryErrors())
+  })
+
+  it('Handle nested', () => {
+    const store = theStore()
+    ok(store)
+    const x = store.load(ScopeScope, 'x')
+    x.load(ObjectScope, 'entry')
+    x.load(ObjectScope, 'entryErrors')
+    const entryAccess = entryAccessFor(x)
+
+    entryAccess.set({
+      'a[0]': 1,
+    })
+    entryAccess.set({
+      'a[1]': 2,
+    })
+    deepEqual(store.x.entry.state, { 'a[0]': 1, 'a[1]': 2, 'a[length]': 2 })
   })
 })
 

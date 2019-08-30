@@ -10,7 +10,9 @@ const parseAttributeName = require('../parsing/parseAttributeName')
  * Parse schema
  * @memberof module:@the-/driver-sequelize.modeling
  * @function defineModel
- * @param {Object}
+ * @param {Object} sequelize
+ * @param {string} resourceName
+ * @param {Object} schema
  * @returns {Object}
  */
 function defineModel(sequelize, resourceName, schema) {
