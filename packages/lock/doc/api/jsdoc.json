@@ -1,0 +1,81 @@
+[
+  {
+    "description": "Async lock",
+    "id": "module:@the-/lock",
+    "kind": "module",
+    "license": "MIT",
+    "longname": "module:@the-/lock",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 3,
+      "path": "lib"
+    },
+    "name": "@the-/lock",
+    "order": 0,
+    "typicalname": "lock",
+    "version": "15.4.9"
+  },
+  {
+    "description": "Lock",
+    "id": "TheLock",
+    "kind": "function",
+    "longname": "TheLock",
+    "meta": {
+      "filename": "TheLock.js",
+      "lineno": 3,
+      "path": "lib"
+    },
+    "name": "TheLock",
+    "order": 1,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
+    "scope": "global"
+  },
+  {
+    "id": "acquire",
+    "kind": "function",
+    "longname": "acquire",
+    "meta": {
+      "filename": "TheLock.js",
+      "lineno": 16,
+      "path": "lib"
+    },
+    "name": "acquire",
+    "order": 2,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "task"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise"
+          ]
+        }
+      }
+    ],
+    "scope": "global"
+  }
+]

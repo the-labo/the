@@ -81,9 +81,6 @@ tryExample().catch((err) => console.error(err))
 - @the-/driver-sequelize
   - [.create(args)](./doc/api/api.md#@the-/driver-sequelize.create)
   - [.TheDriverSequelize](./doc/api/api.md#@the-/driver-sequelize.TheDriverSequelize)
-- @the-/driver-sequelize.TheDriverSequelize
-  - [#define(resourceName,schema)](./doc/api/api.md#@the-/driver-sequelize.TheDriverSequelize#define)
-  - [#untilReady()](./doc/api/api.md#@the-/driver-sequelize.TheDriverSequelize#untilReady)
 - module:@the-/driver-sequelize
   - [.constants](./doc/api/api.md#module_@the-/driver-sequelize.constants)
   - [.converters](./doc/api/api.md#module_@the-/driver-sequelize.converters)
@@ -96,18 +93,21 @@ tryExample().catch((err) => console.error(err))
   - [.MetaColumnNames](./doc/api/api.md#module_@the-/driver-sequelize.constants.MetaColumnNames)
   - [.MetaColumnNamesReversed](./doc/api/api.md#module_@the-/driver-sequelize.constants.MetaColumnNamesReversed)
 - module:@the-/driver-sequelize.converters
-  - [.convertInbound()](./doc/api/api.md#module_@the-/driver-sequelize.converters.convertInbound)
-  - [.convertOutbound()](./doc/api/api.md#module_@the-/driver-sequelize.converters.convertOutbound)
+  - [.convertInbound(values,options&#x3D;)](./doc/api/api.md#module_@the-/driver-sequelize.converters.convertInbound)
+  - [.convertOutbound(values,options&#x3D;)](./doc/api/api.md#module_@the-/driver-sequelize.converters.convertOutbound)
 - module:@the-/driver-sequelize.mixins
-  - [.sequelizeMix()](./doc/api/api.md#module_@the-/driver-sequelize.mixins.sequelizeMix)
+  - [.sequelizeMix(Class)](./doc/api/api.md#module_@the-/driver-sequelize.mixins.sequelizeMix)
 - module:@the-/driver-sequelize.modeling
   - [.defineModel()](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModel)
-  - [.defineModelColumn(propertyName,def)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModelColumn)
-  - [.prepareModel()](./doc/api/api.md#module_@the-/driver-sequelize.modeling.prepareModel)
+  - [.defineModelColumn(def,propertyName)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModelColumn)
+  - [.prepareModel(Model,Schema)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.prepareModel)
 - module:@the-/driver-sequelize.parsing
   - [.parseAttributeName()](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseAttributeName)
-  - [.parseFilter()](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseFilter)
-  - [.parseSort()](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseSort)
+  - [.parseFilter(filter,options&#x3D;)](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseFilter)
+  - [.parseSort(sort,options)](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseSort)
+- module:@the-/driver-sequelize.TheDriverSequelize
+  - [#define(resourceName,schema)](./doc/api/api.md#module_@the-/driver-sequelize.TheDriverSequelize#define)
+  - [#untilReady()](./doc/api/api.md#module_@the-/driver-sequelize.TheDriverSequelize#untilReady)
 
 See [API Guide](./doc/api/api.md) for more detail
 

@@ -14,7 +14,7 @@ const Sequelize = require('sequelize')
  * @returns {*}
  */
 function defineModelColumn(propertyName, def = {}) {
-  const { default: defaultValue, description, required, type } = def
+  const { default: defaultValue, description, precise, required, type } = def
   const base = {
     allowNull: !required,
     comment: description,
@@ -46,7 +46,7 @@ function defineModelColumn(propertyName, def = {}) {
         type: Sequelize.BOOLEAN,
       }
     case NUMBER:
-      return { ...base, type: Sequelize.FLOAT }
+      return { ...base, type: precise ? Sequelize.DOUBLE : Sequelize.FLOAT }
     case OBJECT:
       return { ...base, type: Sequelize.JSON }
     case STRING: {
