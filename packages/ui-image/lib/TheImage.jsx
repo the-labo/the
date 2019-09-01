@@ -121,7 +121,7 @@ class TheImage extends React.Component {
               })}
               draggable={draggable}
               height={actualHeight || height}
-              loading='lazy'
+              loading={loading}
               onError={this.handleError}
               onLoad={this.handleLoad}
               src={src}

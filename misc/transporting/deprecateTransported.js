@@ -2,7 +2,7 @@
 'use strict'
 
 const { spawnSync } = require('child_process')
-const transporting = require('./transporting')
+const transporting = require('./transporting.json')
 
 const baseDir = `${__dirname}/../..`
 process.chdir(baseDir)

@@ -3,7 +3,7 @@
 
 const aglob = require('aglob')
 const path = require('path')
-const transporting = require('./transporting')
+const transporting = require('./transporting.json')
 
 const baseDir = `${__dirname}/../..`
 process.chdir(baseDir)

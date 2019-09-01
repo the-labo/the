@@ -51,10 +51,10 @@ const a = require('a')
 
 const a = require('a')
 const x = require('x')
-
 function hoge(){
 
 }
+
 const x0 = x[0]
 `,
     )
@@ -164,6 +164,23 @@ const PackageFiles = require('../packaging/PackageFiles')
         { filename: __filename },
       ),
       "const pkg = require('../package.json')",
+    )
+  })
+
+  it('sort and keep order', async () => {
+    equal(
+      await processJSRequire(`
+const a = require('a')
+const c = new C()
+update({ c })
+const d = require('d')
+`),
+      `
+const a = require('a')
+const d = require('d')
+const c = new C()
+update({ c })
+`,
     )
   })
 })

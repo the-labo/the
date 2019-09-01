@@ -25,6 +25,7 @@ class TheCache extends LRUCache {
     if (typeof initialized !== 'undefined') {
       this.set(key, initialized)
     }
+
     return initialized
   }
 }

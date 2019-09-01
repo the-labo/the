@@ -11,7 +11,7 @@ const { EOL } = require('os')
 const path = require('path')
 const rimraf = require('rimraf')
 const { TheRefactor } = require('@the-/refactor')
-const transporting = require('./transporting')
+const transporting = require('./transporting.json')
 
 const baseDir = `${__dirname}/../..`
 

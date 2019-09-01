@@ -3,8 +3,8 @@
 
 process.chdir(`${__dirname}/../..`)
 
-const { TheRefactor } = require('@the-/refactor')
 const { EOL } = require('os')
+const { TheRefactor } = require('@the-/refactor')
 
 async function main() {
   await new TheRefactor().convert('packages/*/.npmignore', (content) => {

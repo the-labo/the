@@ -129,7 +129,7 @@ function processJSRequire(content, options = {}) {
         const Require = sortedByStart[sortedByStart.length - 1]
         if (Require && Declaration.start < Require.start) {
           return swapDeclarations(
-            [Declaration.start, Declaration.end],
+            [Declaration.start, Require.start - 1],
             [Require.start, Require.end],
           )
         }
