@@ -120,7 +120,7 @@ class TheStep extends React.Component {
                   this.contentWraps[i] = contentWrap
                 }}
                 role='tabpanel'
-                style={{ width: `${Math.ceil(100 / stepCount)}%` }}
+                style={{ width: `${(100 / stepCount).toFixed(4)}%` }}
               >
                 {child}
               </div>
