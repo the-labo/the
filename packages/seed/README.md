@@ -98,9 +98,9 @@ tryExample().catch((err) => console.error(err))
   - [.create(args)](./doc/api/api.md#module_@the-/seed.create)
   - [.default()](./doc/api/api.md#module_@the-/seed.default)
   - [.TheSeed](./doc/api/api.md#module_@the-/seed.TheSeed)
-- module:@the-/seed.TheSeed
-  - [#apply(seed)](./doc/api/api.md#module_@the-/seed.TheSeed#apply)
-  - [#explode(seed,counts)](./doc/api/api.md#module_@the-/seed.TheSeed#explode)
+- TheSeed
+  - [#apply(seed)](./doc/api/api.md#TheSeed#apply)
+  - [#explode(seed,counts)](./doc/api/api.md#TheSeed#explode)
 
 See [API Guide](./doc/api/api.md) for more detail
 

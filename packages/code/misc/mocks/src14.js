@@ -1,7 +1,7 @@
 /**
  * ListScene
- * @abstract
  * @class ListScene
+ * @abstract
  */
 'use strict'
 

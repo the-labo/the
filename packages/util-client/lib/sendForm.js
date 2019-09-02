@@ -10,6 +10,7 @@ const createFormData = require('./createFormData')
  * @param {string} url - Form url
  * @param {Object} values
  * @param {Object} [options={}] - Optional settings
+ * @returns {Promise<*>}
  */
 async function sendForm(url, values, options = {}) {
   const fetch = get('fetch')

@@ -1,6 +1,7 @@
 'use strict'
 
 const { get } = require('@the-/window')
+const { canZoomTrack } = require('./helpers')
 
 /**
  * @memberof module:@the-/media
@@ -48,6 +49,12 @@ class TheMedia {
 
   get videoEnabled() {
     return this.getStreamTracks('video').some((track) => track.enabled)
+  }
+
+  canZoom() {
+    const { stream } = this
+    const tracks = stream.getVideoTracks()
+    return [...tracks].any((track) => canZoomTrack(track))
   }
 
   /**
@@ -133,6 +140,26 @@ class TheMedia {
       video.onplay = () => resolve()
       video.onerror = (err) => reject(err)
     })
+  }
+
+  /**
+   * Set zoom level
+   * @param {number} zoom - Zoom level to set
+   * @returns {Promise<undefined>}
+   */
+  async setZoom(zoom) {
+    const { stream } = this
+    const tracks = stream.getVideoTracks()
+    for (const track of tracks) {
+      const canZoom = canZoomTrack(track)
+      if (!canZoom) {
+        continue
+      }
+      await track.applyConstraints({
+        // just chrome?
+        advanced: [{ zoom }],
+      })
+    }
   }
 
   /**

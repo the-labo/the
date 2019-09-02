@@ -51,8 +51,8 @@ Spell checker
   - [.default()](./doc/api/api.md#module_@the-/spell.default)
   - [.helpers](./doc/api/api.md#module_@the-/spell.helpers)
   - [.TheSpell](./doc/api/api.md#module_@the-/spell.TheSpell)
-- module:@the-/spell.TheSpell
-  - [#check(pattern,options)](./doc/api/api.md#module_@the-/spell.TheSpell#check)
+- TheSpell
+  - [#check(pattern,options)](./doc/api/api.md#TheSpell#check)
 
 See [API Guide](./doc/api/api.md) for more detail
 

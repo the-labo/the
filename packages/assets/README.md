@@ -90,8 +90,8 @@ tryExample().catch((err) => console.error(err))
   - [.TheAssets](./doc/api/api.md#module_@the-/assets.TheAssets)
 - module:@the-/assets.helpers
   - [.installFiles(srcDir,destDir,options)](./doc/api/api.md#module_@the-/assets.helpers.installFiles)
-- module:@the-/assets.TheAssets
-  - [#installTo(dirname,options)](./doc/api/api.md#module_@the-/assets.TheAssets#installTo)
+- TheAssets
+  - [#installTo(dirname,options)](./doc/api/api.md#TheAssets#installTo)
 
 See [API Guide](./doc/api/api.md) for more detail
 

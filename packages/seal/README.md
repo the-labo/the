@@ -95,9 +95,9 @@ tryExample().catch((err) => console.error(err))
   - [.create(args)](./doc/api/api.md#module_@the-/seal.create)
   - [.default()](./doc/api/api.md#module_@the-/seal.default)
   - [.TheSeal](./doc/api/api.md#module_@the-/seal.TheSeal)
-- module:@the-/seal.TheSeal
-  - [#seal(values)](./doc/api/api.md#module_@the-/seal.TheSeal#seal)
-  - [#verify(sealString,values)](./doc/api/api.md#module_@the-/seal.TheSeal#verify)
+- TheSeal
+  - [#seal(values)](./doc/api/api.md#TheSeal#seal)
+  - [#verify(sealString,values)](./doc/api/api.md#TheSeal#verify)
 
 See [API Guide](./doc/api/api.md) for more detail
 

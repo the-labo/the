@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/entrypoint
  * @typicalname entrypoint
- * @version 15.4.8
+ * @version 15.4.9
  */
 'use strict'
 

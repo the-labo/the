@@ -74,7 +74,7 @@ Usage
 
 
 - global
-  - [asHOC()](./doc/api/api.md#asHOC)
+  - [asHOC(decorator)](./doc/api/api.md#asHOC)
 - module:@the-/util-ui
   - [.asStyleData(scopeSelector,data)](./doc/api/api.md#module_@the-/util-ui.asStyleData)
   - [.changedProps(prevProps,props)](./doc/api/api.md#module_@the-/util-ui.changedProps)
@@ -86,7 +86,7 @@ Usage
   - [.isVideoSrc(src)](./doc/api/api.md#module_@the-/util-ui.isVideoSrc)
   - [.newId(options)](./doc/api/api.md#module_@the-/util-ui.newId)
   - [.readFileAsDataURL()](./doc/api/api.md#module_@the-/util-ui.readFileAsDataURL)
-  - [.toggleBodyClass(className,state&#x3D;)](./doc/api/api.md#module_@the-/util-ui.toggleBodyClass)
+  - [.toggleBodyClass(state&#x3D;,className)](./doc/api/api.md#module_@the-/util-ui.toggleBodyClass)
 
 See [API Guide](./doc/api/api.md) for more detail
 

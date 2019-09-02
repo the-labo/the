@@ -39,6 +39,17 @@ Async lock
 
 <!-- Sections Start -->
 
+<a name="api"></a>
+
+## API Guide
+
+
+- global
+  - [acquire(key,task)](./doc/api/api.md#acquire)
+  - [TheLock()](./doc/api/api.md#TheLock)
+
+See [API Guide](./doc/api/api.md) for more detail
+
 
 <!-- LICENSE Start -->
 <a name="license"></a>

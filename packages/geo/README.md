@@ -89,9 +89,9 @@ tryExample().catch((err) => console.error(err))
   - [.create(args)](./doc/api/api.md#module_@the-/geo.create)
   - [.default()](./doc/api/api.md#module_@the-/geo.default)
   - [.TheGeo](./doc/api/api.md#module_@the-/geo.TheGeo)
-- module:@the-/geo.TheGeo
-  - [#detect(options)](./doc/api/api.md#module_@the-/geo.TheGeo#detect)
-  - [#watch(callback,options)](./doc/api/api.md#module_@the-/geo.TheGeo#watch)
+- TheGeo
+  - [#detect(options)](./doc/api/api.md#TheGeo#detect)
+  - [#watch(callback,options)](./doc/api/api.md#TheGeo#watch)
 
 See [API Guide](./doc/api/api.md) for more detail
 

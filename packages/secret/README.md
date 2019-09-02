@@ -94,16 +94,16 @@ tryExample().catch((err) => console.error(err))
   - [.cipher](./doc/api/api.md#module_@the-/secret.helpers.cipher)
 - module:@the-/secret.mixins
   - [.cryptoMix()](./doc/api/api.md#module_@the-/secret.mixins.cryptoMix)
-  - [.lockMix()](./doc/api/api.md#module_@the-/secret.mixins.lockMix)
+  - [.lockMix(Class)](./doc/api/api.md#module_@the-/secret.mixins.lockMix)
 - module:@the-/secret.mixins.cryptoMix
   - [~CryptoMixed](./doc/api/api.md#module_@the-/secret.mixins.cryptoMix~CryptoMixed)
 - module:@the-/secret.mixins.lockMix
   - [~LockMixed](./doc/api/api.md#module_@the-/secret.mixins.lockMix~LockMixed)
-- module:@the-/secret.TheSecret
-  - [#decrypt()](./doc/api/api.md#module_@the-/secret.TheSecret#decrypt)
-  - [#encrypt()](./doc/api/api.md#module_@the-/secret.TheSecret#encrypt)
-  - [#get(name)](./doc/api/api.md#module_@the-/secret.TheSecret#get)
-  - [#writeout(filename)](./doc/api/api.md#module_@the-/secret.TheSecret#writeout)
+- TheSecret
+  - [#decrypt()](./doc/api/api.md#TheSecret#decrypt)
+  - [#encrypt()](./doc/api/api.md#TheSecret#encrypt)
+  - [#get(name)](./doc/api/api.md#TheSecret#get)
+  - [#writeout(filename)](./doc/api/api.md#TheSecret#writeout)
 
 See [API Guide](./doc/api/api.md) for more detail
 

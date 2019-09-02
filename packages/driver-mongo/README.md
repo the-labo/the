@@ -83,7 +83,7 @@ tryExample().catch((err) => console.error(err))
   - [.mixins](./doc/api/api.md#module_@the-/driver-mongo.mixins)
   - [.MongoDriver](./doc/api/api.md#module_@the-/driver-mongo.MongoDriver)
 - module:@the-/driver-mongo.mixins
-  - [.mongoMix()](./doc/api/api.md#module_@the-/driver-mongo.mixins.mongoMix)
+  - [.mongoMix(Class)](./doc/api/api.md#module_@the-/driver-mongo.mixins.mongoMix)
 
 See [API Guide](./doc/api/api.md) for more detail
 

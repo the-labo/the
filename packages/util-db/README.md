@@ -79,7 +79,7 @@ tryExample().catch((err) => console.error(err))
 
 
 - module:@the-/util-db
-  - [.evalScript()](./doc/api/api.md#module_@the-/util-db.evalScript)
+  - [.evalScript(script,options&#x3D;)](./doc/api/api.md#module_@the-/util-db.evalScript)
   - [.toLowerKeys(obj)](./doc/api/api.md#module_@the-/util-db.toLowerKeys)
 
 See [API Guide](./doc/api/api.md) for more detail

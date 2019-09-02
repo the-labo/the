@@ -49,8 +49,8 @@ Axe for the-framework
   - [.default](./doc/api/api.md#module_@the-/axe.default)
   - [.Logger](./doc/api/api.md#module_@the-/axe.Logger)
   - [.TheAxe](./doc/api/api.md#module_@the-/axe.TheAxe)
-- module:@the-/axe.TheAce
-  - [#start()](./doc/api/api.md#module_@the-/axe.TheAce#start)
+- TheAxe
+  - [#start()](./doc/api/api.md#TheAxe#start)
 
 See [API Guide](./doc/api/api.md) for more detail
 

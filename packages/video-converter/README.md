@@ -88,20 +88,20 @@ tryExample().catch((err) => console.error(err))
   - [.default()](./doc/api/api.md#module_@the-/video-converter.default)
   - [.filenameFor(config)](./doc/api/api.md#module_@the-/video-converter.filenameFor)
   - [.helpers](./doc/api/api.md#module_@the-/video-converter.helpers)
-  - [.isVideoSrc()](./doc/api/api.md#module_@the-/video-converter.isVideoSrc)
+  - [.isVideoSrc(src)](./doc/api/api.md#module_@the-/video-converter.isVideoSrc)
   - [.mixins](./doc/api/api.md#module_@the-/video-converter.mixins)
   - [.TheVideoConverter](./doc/api/api.md#module_@the-/video-converter.TheVideoConverter)
 - module:@the-/video-converter.mixins
   - [.mp4Mix()](./doc/api/api.md#module_@the-/video-converter.mixins.mp4Mix)
 - module:@the-/video-converter.mixins.mp4Mix
   - [~MP4Mixed](./doc/api/api.md#module_@the-/video-converter.mixins.mp4Mix~MP4Mixed)
-- module:@the-/video-converter.TheVideoConverter
-  - [#convert(src,dest,options)](./doc/api/api.md#module_@the-/video-converter.TheVideoConverter#convert)
-  - [#inspect(filename,options)](./doc/api/api.md#module_@the-/video-converter.TheVideoConverter#inspect)
-  - [#isVideoSrc(src)](./doc/api/api.md#module_@the-/video-converter.TheVideoConverter#isVideoSrc)
-  - [#process(src,options)](./doc/api/api.md#module_@the-/video-converter.TheVideoConverter#process)
 - MP4Mixed
   - [#convertIntoMP4(src,dest,options)](./doc/api/api.md#MP4Mixed#convertIntoMP4)
+- TheVideoConverter
+  - [#convert(src,dest,options)](./doc/api/api.md#TheVideoConverter#convert)
+  - [#inspect(filename,options)](./doc/api/api.md#TheVideoConverter#inspect)
+  - [#isVideoSrc(src)](./doc/api/api.md#TheVideoConverter#isVideoSrc)
+  - [#process(src,options)](./doc/api/api.md#TheVideoConverter#process)
 
 See [API Guide](./doc/api/api.md) for more detail
 

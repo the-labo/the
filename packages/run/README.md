@@ -86,7 +86,7 @@ tryExample().catch((err) => console.error(err))
 - module:@the-/run
   - [.create(args)](./doc/api/api.md#module_@the-/run.create)
   - [.default()](./doc/api/api.md#module_@the-/run.default)
-  - [.run(filename,options)](./doc/api/api.md#module_@the-/run.run)
+  - [.run(options,filename)](./doc/api/api.md#module_@the-/run.run)
   - [.TheRun](./doc/api/api.md#module_@the-/run.TheRun)
 
 See [API Guide](./doc/api/api.md) for more detail

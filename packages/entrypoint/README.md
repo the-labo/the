@@ -89,7 +89,7 @@ tryExample().catch((err) => console.error(err))
   - [.singleton(options)](./doc/api/api.md#module_@the-/entrypoint.singleton)
   - [.workers(swUrls)](./doc/api/api.md#module_@the-/entrypoint.workers)
 - module:@the-/entrypoint.helpers
-  - [.createStyleElement()](./doc/api/api.md#module_@the-/entrypoint.helpers.createStyleElement)
+  - [.createStyleElement(cssString,options&#x3D;)](./doc/api/api.md#module_@the-/entrypoint.helpers.createStyleElement)
 
 See [API Guide](./doc/api/api.md) for more detail
 

@@ -160,13 +160,6 @@ tryExample().catch((err) => console.error(err))
   - [~StartOfMixed](./doc/api/api.md#module_@the-/date.mixins.startOfMix~StartOfMixed)
 - module:@the-/date.mixins.subtractMix
   - [~SubtractMixed](./doc/api/api.md#module_@the-/date.mixins.subtractMix~SubtractMixed)
-- module:@the-/date.TheDate
-  - [#format(format)](./doc/api/api.md#module_@the-/date.TheDate#format)
-  - [#fromNow()](./doc/api/api.md#module_@the-/date.TheDate#fromNow)
-  - [#toDate()](./doc/api/api.md#module_@the-/date.TheDate#toDate)
-  - [#toJSON()](./doc/api/api.md#module_@the-/date.TheDate#toJSON)
-  - [#toNumber()](./doc/api/api.md#module_@the-/date.TheDate#toNumber)
-  - [#toString()](./doc/api/api.md#module_@the-/date.TheDate#toString)
 - MomentMixed
   - [#toMoment()](./doc/api/api.md#MomentMixed#toMoment)
 - SetMixed
@@ -210,6 +203,13 @@ tryExample().catch((err) => console.error(err))
   - [#subtractWeeks(weeks)](./doc/api/api.md#SubtractMixed#subtractWeeks)
   - [#subtractYear(year)](./doc/api/api.md#SubtractMixed#subtractYear)
   - [#subtractYears(years)](./doc/api/api.md#SubtractMixed#subtractYears)
+- TheDate
+  - [#format(format)](./doc/api/api.md#TheDate#format)
+  - [#fromNow()](./doc/api/api.md#TheDate#fromNow)
+  - [#toDate()](./doc/api/api.md#TheDate#toDate)
+  - [#toJSON()](./doc/api/api.md#TheDate#toJSON)
+  - [#toNumber()](./doc/api/api.md#TheDate#toNumber)
+  - [#toString()](./doc/api/api.md#TheDate#toString)
 
 See [API Guide](./doc/api/api.md) for more detail
 

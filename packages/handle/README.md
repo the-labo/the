@@ -94,15 +94,15 @@ tryExample().catch((err) => console.error(err))
   - [.default()](./doc/api/api.md#module_@the-/handle.default)
   - [.helpers](./doc/api/api.md#module_@the-/handle.helpers)
   - [.TheHandle](./doc/api/api.md#module_@the-/handle.TheHandle)
-  - [.toHandleSceneClass()](./doc/api/api.md#module_@the-/handle.toHandleSceneClass)
-- module:@the-/handle.TheHandle
-  - [#load(SceneClass,names)](./doc/api/api.md#module_@the-/handle.TheHandle#load)
-  - [#loadFromMapping(SceneMapping)](./doc/api/api.md#module_@the-/handle.TheHandle#loadFromMapping)
-  - [#setAttributes(attributes)](./doc/api/api.md#module_@the-/handle.TheHandle#setAttributes)
+  - [.toHandleSceneClass(BaseClass,config&#x3D;)](./doc/api/api.md#module_@the-/handle.toHandleSceneClass)
 - module:@the-/handle.toHandleSceneClass
   - [~HandleSceneClass](./doc/api/api.md#module_@the-/handle.toHandleSceneClass~HandleSceneClass)
 - module:@the-/handle.toHandleSceneClass~HandleSceneClass
   - [#load(SceneClass,names)](./doc/api/api.md#module_@the-/handle.toHandleSceneClass~HandleSceneClass#load)
+- TheHandle
+  - [#load(SceneClass,names)](./doc/api/api.md#TheHandle#load)
+  - [#loadFromMapping(SceneMapping)](./doc/api/api.md#TheHandle#loadFromMapping)
+  - [#setAttributes(attributes)](./doc/api/api.md#TheHandle#setAttributes)
 
 See [API Guide](./doc/api/api.md) for more detail
 

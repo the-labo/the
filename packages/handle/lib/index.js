@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/handle
  * @typicalname handle
- * @version 15.4.8
+ * @version 15.4.9
  */
 'use strict'
 

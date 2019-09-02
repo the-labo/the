@@ -91,15 +91,15 @@ tryExample().catch((err) => console.error(err))
   - [.create(args)](./doc/api/api.md#module_@the-/media.create)
   - [.default()](./doc/api/api.md#module_@the-/media.default)
   - [.TheMedia](./doc/api/api.md#module_@the-/media.TheMedia)
-- module:@the-/media.TheMedia
-  - [#bindVideo(video,options)](./doc/api/api.md#module_@the-/media.TheMedia#bindVideo)
-  - [#createAudioRecorder(audioContext,options)](./doc/api/api.md#module_@the-/media.TheMedia#createAudioRecorder)
-  - [#getStreamTracks(kind)](./doc/api/api.md#module_@the-/media.TheMedia#getStreamTracks)
-  - [#start()](./doc/api/api.md#module_@the-/media.TheMedia#start)
-  - [#stop()](./doc/api/api.md#module_@the-/media.TheMedia#stop)
-  - [#takePhoto(options)](./doc/api/api.md#module_@the-/media.TheMedia#takePhoto)
-  - [#toggleEnabled(kind,enabled)](./doc/api/api.md#module_@the-/media.TheMedia#toggleEnabled)
-  - [#updateConstrains(constrains)](./doc/api/api.md#module_@the-/media.TheMedia#updateConstrains)
+- TheMedia
+  - [#bindVideo(video,options)](./doc/api/api.md#TheMedia#bindVideo)
+  - [#createAudioRecorder(audioContext,options)](./doc/api/api.md#TheMedia#createAudioRecorder)
+  - [#getStreamTracks(kind)](./doc/api/api.md#TheMedia#getStreamTracks)
+  - [#start()](./doc/api/api.md#TheMedia#start)
+  - [#stop()](./doc/api/api.md#TheMedia#stop)
+  - [#takePhoto(options)](./doc/api/api.md#TheMedia#takePhoto)
+  - [#toggleEnabled(kind,enabled)](./doc/api/api.md#TheMedia#toggleEnabled)
+  - [#updateConstrains(constrains)](./doc/api/api.md#TheMedia#updateConstrains)
 
 See [API Guide](./doc/api/api.md) for more detail
 

@@ -10,6 +10,7 @@ const get = require('./get')
  * @param {function()} handler - Event handler
  * @param {Object} [options={}] - Optional settings
  * @param {number} [options.delay=100] Delay for callback
+ * @returns {*}
  */
 function line(handler, options = {}) {
   const { delay = 100 } = options

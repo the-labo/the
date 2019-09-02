@@ -91,10 +91,10 @@ tryExample().catch((err) => console.error(err))
   - [.create(args)](./doc/api/api.md#module_@the-/pack.create)
   - [.default](./doc/api/api.md#module_@the-/pack.default)
   - [.ThePack](./doc/api/api.md#module_@the-/pack.ThePack)
-- module:@the-/pack.ThePack
-  - [#bind()](./doc/api/api.md#module_@the-/pack.ThePack#bind)
-  - [#decode(buffer)](./doc/api/api.md#module_@the-/pack.ThePack#decode)
-  - [#encode(data)](./doc/api/api.md#module_@the-/pack.ThePack#encode)
+- ThePack
+  - [#bind()](./doc/api/api.md#ThePack#bind)
+  - [#decode(buffer)](./doc/api/api.md#ThePack#decode)
+  - [#encode(data)](./doc/api/api.md#ThePack#encode)
 
 See [API Guide](./doc/api/api.md) for more detail
 

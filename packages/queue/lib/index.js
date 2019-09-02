@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/queue
  * @typicalname queue
- * @version 15.4.8
+ * @version 15.4.9
  */
 'use strict'
 

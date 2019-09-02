@@ -1,4 +1,7 @@
 {
+  "name": "@the-/date",
+  "description": "Date utility for the-framework",
+  "version": "15.4.9",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -16,7 +19,6 @@
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.26"
   },
-  "description": "Date utility for the-framework",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -29,7 +31,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/date",
   "publishConfig": {
     "access": "public"
   },
@@ -40,6 +41,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.9"
+  }
 }

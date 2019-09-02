@@ -89,9 +89,9 @@ tryExample().catch((err) => console.error(err))
 - module:@the-/window
   - [.get(name)](./doc/api/api.md#module_@the-/window.get)
   - [.line(handler,options)](./doc/api/api.md#module_@the-/window.line)
-  - [.once(event,handler)](./doc/api/api.md#module_@the-/window.once)
+  - [.once(handler,event)](./doc/api/api.md#module_@the-/window.once)
   - [.reload(options)](./doc/api/api.md#module_@the-/window.reload)
-  - [.rescue(event,handler)](./doc/api/api.md#module_@the-/window.rescue)
+  - [.rescue(handler,event)](./doc/api/api.md#module_@the-/window.rescue)
   - [.set(name,value)](./doc/api/api.md#module_@the-/window.set)
   - [.show(url)](./doc/api/api.md#module_@the-/window.show)
 

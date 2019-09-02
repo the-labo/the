@@ -89,7 +89,7 @@ tryExample().catch((err) => console.error(err))
   - [.helpers](./doc/api/api.md#module_@the-/support.helpers)
   - [.TheSupport](./doc/api/api.md#module_@the-/support.TheSupport)
 - module:@the-/support.helpers
-  - [.detectUnsupportedCode()](./doc/api/api.md#module_@the-/support.helpers.detectUnsupportedCode)
+  - [.detectUnsupportedCode(code,ecmaVersion)](./doc/api/api.md#module_@the-/support.helpers.detectUnsupportedCode)
   - [.findEvalCode()](./doc/api/api.md#module_@the-/support.helpers.findEvalCode)
 
 See [API Guide](./doc/api/api.md) for more detail

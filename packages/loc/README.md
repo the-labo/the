@@ -88,14 +88,14 @@ console.log(en('titles.WELCOME_TITLE')) // -> "Welcome to hello-world!"
 - module:@the-/loc.helpers
   - [.checkLocales()](./doc/api/api.md#module_@the-/loc.helpers.checkLocales)
   - [.mergedLocales(l1,l2)](./doc/api/api.md#module_@the-/loc.helpers.mergedLocales)
-  - [.resolveInScope(data,keypath)](./doc/api/api.md#module_@the-/loc.helpers.resolveInScope)
+  - [.resolveInScope(keypath,data)](./doc/api/api.md#module_@the-/loc.helpers.resolveInScope)
   - [.toCompoundLocale()](./doc/api/api.md#module_@the-/loc.helpers.toCompoundLocale)
-- module:@the-/loc.TheLoc
-  - [#bind(lang)](./doc/api/api.md#module_@the-/loc.TheLoc#bind)
-  - [#register(namespace,values,options)](./doc/api/api.md#module_@the-/loc.TheLoc#register)
-  - [#resolve(lang,keypaths)](./doc/api/api.md#module_@the-/loc.TheLoc#resolve)
-  - [#toCompound()](./doc/api/api.md#module_@the-/loc.TheLoc#toCompound)
-  - [#validate()](./doc/api/api.md#module_@the-/loc.TheLoc#validate)
+- TheLoc
+  - [#bind(lang)](./doc/api/api.md#TheLoc#bind)
+  - [#register(namespace,values,options)](./doc/api/api.md#TheLoc#register)
+  - [#resolve(lang,keypaths)](./doc/api/api.md#TheLoc#resolve)
+  - [#toCompound()](./doc/api/api.md#TheLoc#toCompound)
+  - [#validate()](./doc/api/api.md#TheLoc#validate)
 
 See [API Guide](./doc/api/api.md) for more detail
 

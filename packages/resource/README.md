@@ -87,7 +87,7 @@ tryExample().catch((err) => console.error(err))
   - [.create(args)](./doc/api/api.md#module_@the-/resource.create)
   - [.DataTypes](./doc/api/api.md#module_@the-/resource.DataTypes)
   - [.default()](./doc/api/api.md#module_@the-/resource.default)
-  - [.isResourceClass()](./doc/api/api.md#module_@the-/resource.isResourceClass)
+  - [.isResourceClass(Class)](./doc/api/api.md#module_@the-/resource.isResourceClass)
   - [.mixins](./doc/api/api.md#module_@the-/resource.mixins)
   - [.TheResource](./doc/api/api.md#module_@the-/resource.TheResource)
   - [.TheResourceBase](./doc/api/api.md#module_@the-/resource.TheResourceBase)
@@ -101,13 +101,13 @@ tryExample().catch((err) => console.error(err))
   - [~QueueMixed](./doc/api/api.md#module_@the-/resource.mixins.queueMix~QueueMixed)
 - module:@the-/resource.mixins.writeOnceMix
   - [~WriteOnce](./doc/api/api.md#module_@the-/resource.mixins.writeOnceMix~WriteOnce)
-- module:@the-/resource.TheResource
-  - [#emptyList()](./doc/api/api.md#module_@the-/resource.TheResource#emptyList)
-  - [#invalidated(attributes)](./doc/api/api.md#module_@the-/resource.TheResource#invalidated)
-  - [#refOf(id)](./doc/api/api.md#module_@the-/resource.TheResource#refOf)
-  - [#refresh(entity)](./doc/api/api.md#module_@the-/resource.TheResource#refresh)
-  - [#refreshAll()](./doc/api/api.md#module_@the-/resource.TheResource#refreshAll)
-  - [#resaveAll()](./doc/api/api.md#module_@the-/resource.TheResource#resaveAll)
+- TheResource
+  - [#emptyList()](./doc/api/api.md#TheResource#emptyList)
+  - [#invalidated(attributes)](./doc/api/api.md#TheResource#invalidated)
+  - [#refOf(id)](./doc/api/api.md#TheResource#refOf)
+  - [#refresh(entity)](./doc/api/api.md#TheResource#refresh)
+  - [#refreshAll()](./doc/api/api.md#TheResource#refreshAll)
+  - [#resaveAll()](./doc/api/api.md#TheResource#resaveAll)
 
 See [API Guide](./doc/api/api.md) for more detail
 

@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/password
  * @typicalname password
- * @version 15.4.8
+ * @version 15.4.9
  */
 'use strict'
 

@@ -37,7 +37,6 @@ var/
 /packages/const-ui/lib/index.js
 /packages/context/lib/helpers/index.js
 /packages/context/lib/index.js
-/packages/controller/lib/index.js
 /packages/date/lib/index.js
 /packages/date/lib/mixins/addMix.js
 /packages/date/lib/mixins/endOfMix.js
@@ -91,6 +90,7 @@ var/
 /packages/lint/lib/rules/index.js
 /packages/loc/lib/helpers/index.js
 /packages/loc/lib/index.js
+/packages/lock/lib/index.js
 /packages/mail/lib/helpers/index.js
 /packages/mail/lib/index.js
 /packages/mail/lib/sending/index.js
@@ -98,8 +98,6 @@ var/
 /packages/metrics-presets/lib/index.js
 /packages/metrics/lib/counters/index.js
 /packages/metrics/lib/index.js
-/packages/mixin-controller/lib/helpers/index.js
-/packages/mixin-controller/lib/index.js
 /packages/mixin-scene/lib/helpers/index.js
 /packages/mixin-scene/lib/index.js
 /packages/mixin-stream/lib/index.js
@@ -148,7 +146,6 @@ var/
 /packages/server/lib/constants/index.js
 /packages/server/lib/helpers/index.js
 /packages/server/lib/index.js
-/packages/server/lib/mixins/index.js
 /packages/server/lib/stores/index.js
 /packages/setting/lib/index.js
 /packages/setting/lib/mixins/index.js
@@ -174,15 +171,12 @@ var/
 /packages/ui-body/lib/index.jsx
 /packages/ui-button/doc/demo/bundle.js
 /packages/ui-button/lib/index.jsx
-/packages/ui-calendar/doc/demo/bundle.js
 /packages/ui-calendar/lib/index.jsx
 /packages/ui-cam/doc/demo/bundle.js
 /packages/ui-cam/lib/index.jsx
 /packages/ui-caught/doc/demo/bundle.js
 /packages/ui-caught/lib/index.jsx
-/packages/ui-chart/doc/demo/bundle.js
 /packages/ui-chart/lib/index.jsx
-/packages/ui-chat/doc/demo/bundle.js
 /packages/ui-chat/lib/index.jsx
 /packages/ui-condition/doc/demo/bundle.js
 /packages/ui-condition/lib/index.jsx
@@ -193,7 +187,6 @@ var/
 /packages/ui-cycle/doc/demo/bundle.js
 /packages/ui-cycle/lib/index.jsx
 /packages/ui-demo/lib/index.jsx
-/packages/ui-dialog/doc/demo/bundle.js
 /packages/ui-dialog/lib/index.jsx
 /packages/ui-flick/doc/demo/bundle.js
 /packages/ui-flick/lib/index.jsx
@@ -219,7 +212,6 @@ var/
 /packages/ui-info/lib/index.jsx
 /packages/ui-input/doc/demo/bundle.js
 /packages/ui-input/lib/index.jsx
-/packages/ui-keyboard/doc/demo/bundle.js
 /packages/ui-keyboard/lib/index.jsx
 /packages/ui-link/doc/demo/bundle.js
 /packages/ui-link/lib/index.jsx

@@ -103,11 +103,11 @@ tryExample().catch((err) => console.error(err))
   - [.create(args)](./doc/api/api.md#module_@the-/queue.create)
   - [.default()](./doc/api/api.md#module_@the-/queue.default)
   - [.TheQueue](./doc/api/api.md#module_@the-/queue.TheQueue)
-- module:@the-/queue.TheQueue
-  - [#push(task)](./doc/api/api.md#module_@the-/queue.TheQueue#push)
-  - [#start()](./doc/api/api.md#module_@the-/queue.TheQueue#start)
-  - [#stop()](./doc/api/api.md#module_@the-/queue.TheQueue#stop)
-  - [#wait(options)](./doc/api/api.md#module_@the-/queue.TheQueue#wait)
+- TheQueue
+  - [#push(task)](./doc/api/api.md#TheQueue#push)
+  - [#start()](./doc/api/api.md#TheQueue#start)
+  - [#stop()](./doc/api/api.md#TheQueue#stop)
+  - [#wait(options)](./doc/api/api.md#TheQueue#wait)
 
 See [API Guide](./doc/api/api.md) for more detail
 

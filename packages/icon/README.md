@@ -126,8 +126,8 @@ Themes
   - [.applier](./doc/api/api.md#module_@the-/icon.helpers.applier)
   - [.drawer](./doc/api/api.md#module_@the-/icon.helpers.drawer)
   - [.writer](./doc/api/api.md#module_@the-/icon.helpers.writer)
-- module:@the-/icon.TheIcon
-  - [#saveAs(filename)](./doc/api/api.md#module_@the-/icon.TheIcon#saveAs)
+- TheIcon
+  - [#saveAs(filename)](./doc/api/api.md#TheIcon#saveAs)
 
 See [API Guide](./doc/api/api.md) for more detail
 

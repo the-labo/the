@@ -89,7 +89,7 @@ tryExample().catch((err) => console.error(err))
 
 - module:@the-/util-client
   - [.createFormData(values)](./doc/api/api.md#module_@the-/util-client.createFormData)
-  - [.queryWithSearch()](./doc/api/api.md#module_@the-/util-client.queryWithSearch)
+  - [.queryWithSearch(search)](./doc/api/api.md#module_@the-/util-client.queryWithSearch)
   - [.readFile(file)](./doc/api/api.md#module_@the-/util-client.readFile)
   - [.sendForm(url,values,options)](./doc/api/api.md#module_@the-/util-client.sendForm)
 

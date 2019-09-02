@@ -108,12 +108,12 @@ tryExample().catch((err) => console.error(err))
   - [.create(args)](./doc/api/api.md#module_@the-/metrics.create)
   - [.default()](./doc/api/api.md#module_@the-/metrics.default)
   - [.TheMetrics](./doc/api/api.md#module_@the-/metrics.TheMetrics)
-- module:@the-/metrics.TheMetrics
-  - [#bindClassMethodCallCounter(name,config)](./doc/api/api.md#module_@the-/metrics.TheMetrics#bindClassMethodCallCounter)
-  - [#bindMethodCallCounter()](./doc/api/api.md#module_@the-/metrics.TheMetrics#bindMethodCallCounter)
-  - [#bindObjectMethodCallCounter(name,config)](./doc/api/api.md#module_@the-/metrics.TheMetrics#bindObjectMethodCallCounter)
-  - [#flush()](./doc/api/api.md#module_@the-/metrics.TheMetrics#flush)
-  - [#start()](./doc/api/api.md#module_@the-/metrics.TheMetrics#start)
+- TheMetrics
+  - [#bindClassMethodCallCounter(name,config)](./doc/api/api.md#TheMetrics#bindClassMethodCallCounter)
+  - [#bindMethodCallCounter()](./doc/api/api.md#TheMetrics#bindMethodCallCounter)
+  - [#bindObjectMethodCallCounter(name,config)](./doc/api/api.md#TheMetrics#bindObjectMethodCallCounter)
+  - [#flush()](./doc/api/api.md#TheMetrics#flush)
+  - [#start()](./doc/api/api.md#TheMetrics#start)
 
 See [API Guide](./doc/api/api.md) for more detail
 

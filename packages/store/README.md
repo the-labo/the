@@ -127,15 +127,15 @@ tryExample().catch((err) => console.error(err))
   - [.helpers](./doc/api/api.md#module_@the-/store.helpers)
   - [.TheStore](./doc/api/api.md#module_@the-/store.TheStore)
   - [.toStoreScopeClass(BaseClass)](./doc/api/api.md#module_@the-/store.toStoreScopeClass)
-- module:@the-/store.TheStore
-  - [#load(ScopeClass,names)](./doc/api/api.md#module_@the-/store.TheStore#load)
-  - [#loadFromDefaults()](./doc/api/api.md#module_@the-/store.TheStore#loadFromDefaults)
-  - [#loadFromDefs()](./doc/api/api.md#module_@the-/store.TheStore#loadFromDefs)
-  - [#loadScopesFromDefs(defs,options)](./doc/api/api.md#module_@the-/store.TheStore#loadScopesFromDefs)
-  - [#subscribe(listener)](./doc/api/api.md#module_@the-/store.TheStore#subscribe)
 - StoreScopeClass
   - [#load(ScopeClass,names)](./doc/api/api.md#StoreScopeClass#load)
   - [#loadFromMapping(mapping)](./doc/api/api.md#StoreScopeClass#loadFromMapping)
+- TheStore
+  - [#load(ScopeClass,names)](./doc/api/api.md#TheStore#load)
+  - [#loadFromDefaults()](./doc/api/api.md#TheStore#loadFromDefaults)
+  - [#loadFromDefs()](./doc/api/api.md#TheStore#loadFromDefs)
+  - [#loadScopesFromDefs(defs,options)](./doc/api/api.md#TheStore#loadScopesFromDefs)
+  - [#subscribe(listener)](./doc/api/api.md#TheStore#subscribe)
 
 See [API Guide](./doc/api/api.md) for more detail
 

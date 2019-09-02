@@ -84,13 +84,13 @@ tryExample().catch((err) => console.error(err))
 
 
 - module:@the-/util-file
-  - [.copyAsJsonSync(src,dest)](./doc/api/api.md#module_@the-/util-file.copyAsJsonSync)
-  - [.fileSizeOf()](./doc/api/api.md#module_@the-/util-file.fileSizeOf)
+  - [.copyAsJsonSync(dest,src)](./doc/api/api.md#module_@the-/util-file.copyAsJsonSync)
+  - [.fileSizeOf(filename)](./doc/api/api.md#module_@the-/util-file.fileSizeOf)
   - [.fileTypeOf(filename)](./doc/api/api.md#module_@the-/util-file.fileTypeOf)
   - [.isJSON5File(filename)](./doc/api/api.md#module_@the-/util-file.isJSON5File)
   - [.readAsJson(filename)](./doc/api/api.md#module_@the-/util-file.readAsJson)
   - [.readAsJsonSync(filename)](./doc/api/api.md#module_@the-/util-file.readAsJsonSync)
-  - [.readAsYaml()](./doc/api/api.md#module_@the-/util-file.readAsYaml)
+  - [.readAsYaml(filename,options&#x3D;)](./doc/api/api.md#module_@the-/util-file.readAsYaml)
   - [.statSync(filename)](./doc/api/api.md#module_@the-/util-file.statSync)
   - [.writeAsJson(filename,data,options)](./doc/api/api.md#module_@the-/util-file.writeAsJson)
   - [.writeAsJsonSync(filename,data,options)](./doc/api/api.md#module_@the-/util-file.writeAsJsonSync)

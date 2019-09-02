@@ -1,4 +1,6 @@
 {
+  "name": "@the-/eslint-config-standard-jsx",
+  "version": "15.4.9",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -22,7 +24,6 @@
   "keywords": [],
   "license": "MIT",
   "main": "index.js",
-  "name": "@the-/eslint-config-standard-jsx",
   "peerDependencies": {
     "babel-eslint": ">=10",
     "eslint-plugin-react": ">=7"
@@ -36,6 +37,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.9"
+  }
 }

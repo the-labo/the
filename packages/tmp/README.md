@@ -99,13 +99,13 @@ tryExample().catch((err) => console.error(err))
   - [.create(args)](./doc/api/api.md#module_@the-/tmp.create)
   - [.default()](./doc/api/api.md#module_@the-/tmp.default)
   - [.TheTmp](./doc/api/api.md#module_@the-/tmp.TheTmp)
-- module:@the-/tmp.TheTmp
-  - [#generate(options)](./doc/api/api.md#module_@the-/tmp.TheTmp#generate)
-  - [#generateDir(options)](./doc/api/api.md#module_@the-/tmp.TheTmp#generateDir)
-  - [#generateDirSync(options)](./doc/api/api.md#module_@the-/tmp.TheTmp#generateDirSync)
-  - [#generateSync(options)](./doc/api/api.md#module_@the-/tmp.TheTmp#generateSync)
-  - [#while(handler,options)](./doc/api/api.md#module_@the-/tmp.TheTmp#while)
-  - [#whileDir(handler,options)](./doc/api/api.md#module_@the-/tmp.TheTmp#whileDir)
+- TheTmp
+  - [#generate(options)](./doc/api/api.md#TheTmp#generate)
+  - [#generateDir(options)](./doc/api/api.md#TheTmp#generateDir)
+  - [#generateDirSync(options)](./doc/api/api.md#TheTmp#generateDirSync)
+  - [#generateSync(options)](./doc/api/api.md#TheTmp#generateSync)
+  - [#while(handler,options)](./doc/api/api.md#TheTmp#while)
+  - [#whileDir(handler,options)](./doc/api/api.md#TheTmp#whileDir)
 
 See [API Guide](./doc/api/api.md) for more detail
 

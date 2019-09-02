@@ -80,10 +80,6 @@ Usage
   - [.create(args)](./doc/api/api.md#module_@the-/rtc-client.create)
   - [.default()](./doc/api/api.md#module_@the-/rtc-client.default)
   - [.TheRTCClient](./doc/api/api.md#module_@the-/rtc-client.TheRTCClient)
-- module:@the-/rtc-client.TheRTCClient
-  - [#connect(url,options)](./doc/api/api.md#module_@the-/rtc-client.TheRTCClient#connect)
-  - [#disconnect()](./doc/api/api.md#module_@the-/rtc-client.TheRTCClient#disconnect)
-  - [#publish(topic,payload,options)](./doc/api/api.md#module_@the-/rtc-client.TheRTCClient#publish)
 - module:@the-/rtc
   - [.constants](./doc/api/api.md#module_@the-/rtc.constants)
   - [.mixins](./doc/api/api.md#module_@the-/rtc.mixins)
@@ -95,6 +91,10 @@ Usage
   - [.promiseMix(Class)](./doc/api/api.md#module_@the-/rtc.constants.mixins.promiseMix)
   - [.serializeMix(Class)](./doc/api/api.md#module_@the-/rtc.constants.mixins.serializeMix)
   - [.socketMix(Class)](./doc/api/api.md#module_@the-/rtc.constants.mixins.socketMix)
+- TheRTCClient
+  - [#connect(url,options)](./doc/api/api.md#TheRTCClient#connect)
+  - [#disconnect()](./doc/api/api.md#TheRTCClient#disconnect)
+  - [#publish(topic,payload,options)](./doc/api/api.md#TheRTCClient#publish)
 
 See [API Guide](./doc/api/api.md) for more detail
 

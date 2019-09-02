@@ -94,8 +94,8 @@ tryExample().catch((err) => console.error(err))
 
 
 - module:@the-/mixin-scene
-  - [.bindDefaults()](./doc/api/api.md#module_@the-/mixin-scene.bindDefaults)
-  - [.bindScope()](./doc/api/api.md#module_@the-/mixin-scene.bindScope)
+  - [.bindDefaults(values)](./doc/api/api.md#module_@the-/mixin-scene.bindDefaults)
+  - [.bindScope(name)](./doc/api/api.md#module_@the-/mixin-scene.bindScope)
   - [.helpers](./doc/api/api.md#module_@the-/mixin-scene.helpers)
   - [.withBusy(Class)](./doc/api/api.md#module_@the-/mixin-scene.withBusy)
   - [.withEntities(Class)](./doc/api/api.md#module_@the-/mixin-scene.withEntities)
@@ -109,7 +109,7 @@ tryExample().catch((err) => console.error(err))
   - [.withSort(Class)](./doc/api/api.md#module_@the-/mixin-scene.withSort)
 - module:@the-/mixin-scene.helpers
   - [.asClassMixin()](./doc/api/api.md#module_@the-/mixin-scene.helpers.asClassMixin)
-  - [.asMethodWrap()](./doc/api/api.md#module_@the-/mixin-scene.helpers.asMethodWrap)
+  - [.asMethodWrap(wrapper)](./doc/api/api.md#module_@the-/mixin-scene.helpers.asMethodWrap)
   - [.injectProperties(Class)](./doc/api/api.md#module_@the-/mixin-scene.helpers.injectProperties)
 - module:@the-/mixin-scene.withBusy.WithBusyMixed
   - [.busyFor(duration)](./doc/api/api.md#module_@the-/mixin-scene.withBusy.WithBusyMixed.busyFor)

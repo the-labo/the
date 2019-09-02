@@ -96,7 +96,7 @@ tryExample().catch((err) => console.error(err))
   - [.TheSetting](./doc/api/api.md#module_@the-/setting.TheSetting)
   - [.TheSettingBase](./doc/api/api.md#module_@the-/setting.TheSettingBase)
 - module:@the-/setting.mixins
-  - [.lockMix()](./doc/api/api.md#module_@the-/setting.mixins.lockMix)
+  - [.lockMix(Class)](./doc/api/api.md#module_@the-/setting.mixins.lockMix)
 - module:@the-/setting.mixins.lockMix
   - [~LockMixed](./doc/api/api.md#module_@the-/setting.mixins.lockMix~LockMixed)
 - TheSetting

@@ -13,7 +13,7 @@
     "name": "@the-/media",
     "order": 2,
     "typicalname": "media",
-    "version": "15.5.1"
+    "version": "15.5.2"
   },
   {
     "id": "module:@the-/media.TheMedia()",
@@ -66,7 +66,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 59,
+      "lineno": 66,
       "path": "lib"
     },
     "name": "createAudioRecorder",
@@ -110,7 +110,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 86,
+      "lineno": 93,
       "path": "lib"
     },
     "name": "getStreamTracks",
@@ -144,7 +144,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 108,
+      "lineno": 115,
       "path": "lib"
     },
     "name": "toggleEnabled",
@@ -178,7 +178,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 125,
+      "lineno": 132,
       "path": "lib"
     },
     "name": "bindVideo",
@@ -217,6 +217,42 @@
   },
   {
     "async": true,
+    "description": "Set zoom level",
+    "id": "TheMedia#setZoom",
+    "kind": "function",
+    "longname": "TheMedia#setZoom",
+    "memberof": "TheMedia",
+    "meta": {
+      "filename": "TheMedia.js",
+      "lineno": 150,
+      "path": "lib"
+    },
+    "name": "setZoom",
+    "order": 9,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "number"
+          ]
+        },
+        "description": "Zoom level to set",
+        "name": "zoom"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<undefined>"
+          ]
+        }
+      }
+    ],
+    "scope": "instance"
+  },
+  {
+    "async": true,
     "description": "Start user media",
     "id": "TheMedia#start",
     "kind": "function",
@@ -224,11 +260,11 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 142,
+      "lineno": 169,
       "path": "lib"
     },
     "name": "start",
-    "order": 9,
+    "order": 10,
     "params": [],
     "returns": [
       {
@@ -250,11 +286,11 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 168,
+      "lineno": 195,
       "path": "lib"
     },
     "name": "stop",
-    "order": 10,
+    "order": 11,
     "params": [],
     "returns": [
       {
@@ -276,11 +312,11 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 192,
+      "lineno": 219,
       "path": "lib"
     },
     "name": "takePhoto",
-    "order": 11,
+    "order": 12,
     "params": [
       {
         "type": {
@@ -315,11 +351,11 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 214,
+      "lineno": 241,
       "path": "lib"
     },
     "name": "updateConstrains",
-    "order": 12,
+    "order": 13,
     "params": [
       {
         "type": {
@@ -370,7 +406,7 @@
     "memberof": "module:@the-/media",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 5,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "TheMedia",

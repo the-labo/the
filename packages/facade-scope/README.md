@@ -49,7 +49,9 @@ Facade to wrap scopes
   - [.true()](./doc/api/api.md#busyAccessFor~busyAccess.true)
   - [.while(handler)](./doc/api/api.md#busyAccessFor~busyAccess.while)
 - countsAccessFor~countsAccess
+  - [.decrease(amount)](./doc/api/api.md#countsAccessFor~countsAccess.decrease)
   - [.hasMore()](./doc/api/api.md#countsAccessFor~countsAccess.hasMore)
+  - [.increase(amount)](./doc/api/api.md#countsAccessFor~countsAccess.increase)
   - [.set(counts)](./doc/api/api.md#countsAccessFor~countsAccess.set)
 - createOperationFor~createOperation
   - [.exec(handler)](./doc/api/api.md#createOperationFor~createOperation.exec)

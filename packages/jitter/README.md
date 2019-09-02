@@ -105,12 +105,12 @@ tryExample().catch((err) => console.error(err))
   - [.create(args)](./doc/api/api.md#module_@the-/jitter.create)
   - [.default()](./doc/api/api.md#module_@the-/jitter.default)
   - [.TheJitter](./doc/api/api.md#module_@the-/jitter.TheJitter)
-- module:@the-/jitter.TheJitter
-  - [#decrementCount()](./doc/api/api.md#module_@the-/jitter.TheJitter#decrementCount)
-  - [#handle(action)](./doc/api/api.md#module_@the-/jitter.TheJitter#handle)
-  - [#incrementCount()](./doc/api/api.md#module_@the-/jitter.TheJitter#incrementCount)
-  - [#resetCount()](./doc/api/api.md#module_@the-/jitter.TheJitter#resetCount)
-  - [#wait()](./doc/api/api.md#module_@the-/jitter.TheJitter#wait)
+- TheJitter
+  - [#decrementCount()](./doc/api/api.md#TheJitter#decrementCount)
+  - [#handle(action)](./doc/api/api.md#TheJitter#handle)
+  - [#incrementCount()](./doc/api/api.md#TheJitter#incrementCount)
+  - [#resetCount()](./doc/api/api.md#TheJitter#resetCount)
+  - [#wait()](./doc/api/api.md#TheJitter#wait)
 
 See [API Guide](./doc/api/api.md) for more detail
 

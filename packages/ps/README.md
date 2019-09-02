@@ -86,12 +86,12 @@ tryExample().catch((err) => console.error(err))
 
 
 - module:@the-/ps
-  - [.acquire()](./doc/api/api.md#module_@the-/ps.acquire)
+  - [.acquire(filename)](./doc/api/api.md#module_@the-/ps.acquire)
   - [.create(args)](./doc/api/api.md#module_@the-/ps.create)
   - [.default()](./doc/api/api.md#module_@the-/ps.default)
   - [.ThePS](./doc/api/api.md#module_@the-/ps.ThePS)
-- module:@the-/ps.ThePS
-  - [#acquire()](./doc/api/api.md#module_@the-/ps.ThePS#acquire)
+- ThePS
+  - [#acquire()](./doc/api/api.md#ThePS#acquire)
 
 See [API Guide](./doc/api/api.md) for more detail
 

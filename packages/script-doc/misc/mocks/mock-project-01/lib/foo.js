@@ -1,5 +1,4 @@
 /** @module mock-project-01 */
-
 'use strict'
 
 /**

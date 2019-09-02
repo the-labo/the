@@ -100,6 +100,10 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 
+- BooleanScope
+  - [#false()](./doc/api/api.md#BooleanScope#false)
+  - [#set()](./doc/api/api.md#BooleanScope#set)
+  - [#true()](./doc/api/api.md#BooleanScope#true)
 - module:@the-/scope
   - [.create(args)](./doc/api/api.md#module_@the-/scope.create)
   - [.default()](./doc/api/api.md#module_@the-/scope.default)
@@ -124,34 +128,18 @@ tryExample().catch((err) => console.error(err))
   - [#shift()](./doc/api/api.md#module_@the-/scope.scopes.ArrayScope#shift)
   - [#unshift(entry)](./doc/api/api.md#module_@the-/scope.scopes.ArrayScope#unshift)
 - module:@the-/scope.scopes.BooleanScope
-  - [#false()](./doc/api/api.md#module_@the-/scope.scopes.BooleanScope#false)
-  - [#set()](./doc/api/api.md#module_@the-/scope.scopes.BooleanScope#set)
   - [#toggle(value)](./doc/api/api.md#module_@the-/scope.scopes.BooleanScope#toggle)
-  - [#true()](./doc/api/api.md#module_@the-/scope.scopes.BooleanScope#true)
 - module:@the-/scope.scopes.NullScope
   - [#init()](./doc/api/api.md#module_@the-/scope.scopes.NullScope#init)
 - module:@the-/scope.scopes.NumberScope
   - [#decrement(amount)](./doc/api/api.md#module_@the-/scope.scopes.NumberScope#decrement)
   - [#increment(amount)](./doc/api/api.md#module_@the-/scope.scopes.NumberScope#increment)
-  - [#isNegative()](./doc/api/api.md#module_@the-/scope.scopes.NumberScope#isNegative)
-  - [#isPositive()](./doc/api/api.md#module_@the-/scope.scopes.NumberScope#isPositive)
-  - [#isZero()](./doc/api/api.md#module_@the-/scope.scopes.NumberScope#isZero)
   - [#set(n)](./doc/api/api.md#module_@the-/scope.scopes.NumberScope#set)
 - module:@the-/scope.scopes.ObjectScope
   - [#del(names)](./doc/api/api.md#module_@the-/scope.scopes.ObjectScope#del)
   - [#drop()](./doc/api/api.md#module_@the-/scope.scopes.ObjectScope#drop)
-  - [#get()](./doc/api/api.md#module_@the-/scope.scopes.ObjectScope#get)
-  - [#has()](./doc/api/api.md#module_@the-/scope.scopes.ObjectScope#has)
   - [#reset(values)](./doc/api/api.md#module_@the-/scope.scopes.ObjectScope#reset)
   - [#set(name,value)](./doc/api/api.md#module_@the-/scope.scopes.ObjectScope#set)
-- module:@the-/scope.scopes.Scope
-  - [.withDefault()](./doc/api/api.md#module_@the-/scope.scopes.Scope.withDefault)
-- module:@the-/scope.scopes.ScopeScope
-  - [#get(namepath)](./doc/api/api.md#module_@the-/scope.scopes.ScopeScope#get)
-  - [#has(namepath)](./doc/api/api.md#module_@the-/scope.scopes.ScopeScope#has)
-  - [#init(names)](./doc/api/api.md#module_@the-/scope.scopes.ScopeScope#init)
-  - [#of(namepath)](./doc/api/api.md#module_@the-/scope.scopes.ScopeScope#of)
-  - [#set(namepath,value)](./doc/api/api.md#module_@the-/scope.scopes.ScopeScope#set)
 - module:@the-/scope.scopes.StringScope
   - [#del()](./doc/api/api.md#module_@the-/scope.scopes.StringScope#del)
   - [#replace(from,to)](./doc/api/api.md#module_@the-/scope.scopes.StringScope#replace)
@@ -159,6 +147,21 @@ tryExample().catch((err) => console.error(err))
 - module:@the-/scope.scopes.ValueScope
   - [#del()](./doc/api/api.md#module_@the-/scope.scopes.ValueScope#del)
   - [#set(value)](./doc/api/api.md#module_@the-/scope.scopes.ValueScope#set)
+- NumberScope
+  - [#isNegative()](./doc/api/api.md#NumberScope#isNegative)
+  - [#isPositive()](./doc/api/api.md#NumberScope#isPositive)
+  - [#isZero()](./doc/api/api.md#NumberScope#isZero)
+- ObjectScope
+  - [#get()](./doc/api/api.md#ObjectScope#get)
+  - [#has()](./doc/api/api.md#ObjectScope#has)
+- Scope
+  - [.withDefault()](./doc/api/api.md#Scope.withDefault)
+- ScopeScope
+  - [#get(namepath)](./doc/api/api.md#ScopeScope#get)
+  - [#has(namepath)](./doc/api/api.md#ScopeScope#has)
+  - [#init(names)](./doc/api/api.md#ScopeScope#init)
+  - [#of(namepath)](./doc/api/api.md#ScopeScope#of)
+  - [#set(namepath,value)](./doc/api/api.md#ScopeScope#set)
 
 See [API Guide](./doc/api/api.md) for more detail
 

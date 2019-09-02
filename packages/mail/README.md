@@ -102,8 +102,8 @@ tryExample().catch((err) => console.error(err))
   - [.sendMock()](./doc/api/api.md#module_@the-/mail.sending.sendMock)
   - [.sendSendgrid()](./doc/api/api.md#module_@the-/mail.sending.sendSendgrid)
   - [.sendSMTP()](./doc/api/api.md#module_@the-/mail.sending.sendSMTP)
-- module:@the-/mail.TheMail
-  - [#send(config)](./doc/api/api.md#module_@the-/mail.TheMail#send)
+- TheMail
+  - [#send(config)](./doc/api/api.md#TheMail#send)
 - global
   - [toLowerKeys()](./doc/api/api.md#toLowerKeys)
 
