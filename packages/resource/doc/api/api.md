@@ -5,7 +5,7 @@
 ## @the-/resource
 Base of the-resource
 
-**Version**: 15.4.8  
+**Version**: 15.4.10  
 **License**: MIT  
 
 * [@the-/resource](#module_@the-/resource)
