@@ -1,7 +1,7 @@
 {
   "name": "@the-/ps",
   "description": "Process manager for the-framework",
-  "version": "15.4.9",
+  "version": "15.4.11",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.6",
+    "@the-/check": "^15.5.7",
     "asleep": "^1.0.3",
     "mkdirp": "^0.5.1",
     "npid": "^0.4.0",

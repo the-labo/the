@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/pack
  * @typicalname pack
- * @version 15.4.11
+ * @version 15.4.13
  */
 'use strict'
 
