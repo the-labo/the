@@ -6,7 +6,7 @@ const { Driver } = require('clay-driver-base')
 const clayEntity = require('clay-entity')
 const { pageToOffsetLimit } = require('clay-list-pager')
 const clayResourceName = require('clay-resource-name')
-const { unlessProduction } = require('@the-/check')
+const { unlessProduction } = require('@the-/check-env')
 const {
   parseFilter,
   parseInboundAttributes,

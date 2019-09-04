@@ -5,7 +5,7 @@
 ## @the-/driver-sequelize
 Sequelize driver for the-framework
 
-**Version**: 15.4.14  
+**Version**: 15.4.15  
 **License**: MIT  
 
 * [@the-/driver-sequelize](#module_@the-/driver-sequelize)
@@ -20,7 +20,7 @@ Sequelize driver for the-framework
     * [.mixins](#module_@the-/driver-sequelize.mixins) : <code>object</code>
         * [.sequelizeMix(Class)](#module_@the-/driver-sequelize.mixins.sequelizeMix) ⇒ <code>\*</code>
     * [.modeling](#module_@the-/driver-sequelize.modeling) : <code>object</code>
-        * [.defineModel()](#module_@the-/driver-sequelize.modeling.defineModel) ⇒ <code>Object</code>
+        * [.defineModel(sequelize, resourceName, schema)](#module_@the-/driver-sequelize.modeling.defineModel) ⇒ <code>Object</code>
         * [.defineModelColumn(def, propertyName)](#module_@the-/driver-sequelize.modeling.defineModelColumn) ⇒ <code>\*</code>
         * [.prepareModel(Model, Schema)](#module_@the-/driver-sequelize.modeling.prepareModel) ⇒ <code>Promise</code>
     * [.parsing](#module_@the-/driver-sequelize.parsing) : <code>object</code>
@@ -117,20 +117,22 @@ Modeling functions
 **Access**: protected  
 
 * [.modeling](#module_@the-/driver-sequelize.modeling) : <code>object</code>
-    * [.defineModel()](#module_@the-/driver-sequelize.modeling.defineModel) ⇒ <code>Object</code>
+    * [.defineModel(sequelize, resourceName, schema)](#module_@the-/driver-sequelize.modeling.defineModel) ⇒ <code>Object</code>
     * [.defineModelColumn(def, propertyName)](#module_@the-/driver-sequelize.modeling.defineModelColumn) ⇒ <code>\*</code>
     * [.prepareModel(Model, Schema)](#module_@the-/driver-sequelize.modeling.prepareModel) ⇒ <code>Promise</code>
 
 <a name="module_@the-/driver-sequelize.modeling.defineModel"></a>
 
-#### modeling.defineModel() ⇒ <code>Object</code>
+#### modeling.defineModel(sequelize, resourceName, schema) ⇒ <code>Object</code>
 Parse schema
 
 **Kind**: static method of [<code>modeling</code>](#module_@the-/driver-sequelize.modeling)  
 
-| Type |
-| --- |
-| <code>Object</code> | 
+| Param | Type |
+| --- | --- |
+| sequelize | <code>Object</code> | 
+| resourceName | <code>string</code> | 
+| schema | <code>Object</code> | 
 
 <a name="module_@the-/driver-sequelize.modeling.defineModelColumn"></a>
 

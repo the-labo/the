@@ -2,7 +2,7 @@
 
 const asleep = require('asleep')
 const { parse: parseEntityRef } = require('clay-resource-ref')
-const { unlessProduction } = require('@the-/check')
+const { unlessProduction } = require('@the-/check-env')
 const { TheRefresher } = require('@the-/refresher')
 
 const assertIsRef = (ref) => {

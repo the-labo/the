@@ -2,7 +2,7 @@
 
 const mkdirp = require('mkdirp')
 const path = require('path')
-const { isProduction } = require('@the-/check')
+const { isProduction } = require('@the-/check-env')
 const { toLowerKeys } = require('@the-/util-db')
 
 /**

@@ -13,7 +13,7 @@
     "name": "@the-/driver-sequelize",
     "order": 2,
     "typicalname": "driverSequelize",
-    "version": "15.4.14"
+    "version": "15.4.15"
   },
   {
     "description": "Define schema",
@@ -402,7 +402,24 @@
           "names": [
             "Object"
           ]
-        }
+        },
+        "name": "sequelize"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "resourceName"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "schema"
       }
     ],
     "returns": [

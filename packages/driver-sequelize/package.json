@@ -1,7 +1,7 @@
 {
   "name": "@the-/driver-sequelize",
   "description": "Sequelize driver for the-framework",
-  "version": "15.4.14",
+  "version": "15.4.15",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.6",
+    "@the-/check-env": "^15.5.8",
     "@the-/resource": "^15.4.10",
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.3",

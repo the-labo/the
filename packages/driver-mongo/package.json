@@ -1,7 +1,7 @@
 {
   "name": "@the-/driver-mongo",
   "description": "Mongo driver for the-db",
-  "version": "15.4.10",
+  "version": "15.4.11",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.7",
+    "@the-/check-env": "^15.5.8",
     "asleep": "^1.0.3",
     "asobj": "^3.0.1",
     "clay-collection": "^3.1.5",
