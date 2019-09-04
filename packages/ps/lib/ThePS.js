@@ -8,7 +8,7 @@ const path = require('path')
 const psList = require('ps-list')
 const terminate = require('terminate')
 const yesno = require('yesno')
-const { isProduction } = require('@the-/check')
+const { isProduction } = require('@the-/check-env')
 
 /**
  * @memberof module:@the-/ps

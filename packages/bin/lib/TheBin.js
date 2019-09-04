@@ -6,7 +6,7 @@ const hasbin = require('hasbin')
 const path = require('path')
 const semver = require('semver')
 const { promisify } = require('util')
-const { unlessProduction } = require('@the-/check')
+const { unlessProduction } = require('@the-/check-env')
 
 const statAsync = promisify(fs.stat)
 const execAsync = promisify(exec)

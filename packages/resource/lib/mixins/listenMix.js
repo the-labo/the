@@ -11,7 +11,7 @@ const {
     ENTITY_UPDATE_BULK,
   },
 } = require('clay-resource')
-const { unlessProduction } = require('@the-/check')
+const { unlessProduction } = require('@the-/check-env')
 
 /**
  * Mixins for listen

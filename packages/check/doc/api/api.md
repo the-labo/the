@@ -15,8 +15,6 @@ Check utility for the-framework
     * [.isFirefox([options&#x3D;])](#module_@the-/check.isFirefox) ⇒ <code>boolean</code>
     * [.isiOS([options&#x3D;])](#module_@the-/check.isiOS) ⇒ <code>boolean</code>
     * [.isMacOS()](#module_@the-/check.isMacOS) ⇒ <code>boolean</code>
-    * [.isProduction()](#module_@the-/check.isProduction) ⇒ <code>boolean</code>
-    * [.unlessProduction(handler)](#module_@the-/check.unlessProduction) ⇒ <code>\*</code>
 
 <a name="module_@the-/check.canTouch"></a>
 
@@ -69,21 +67,3 @@ Detect iOS or not
 Detect is mac OS
 
 **Kind**: static method of [<code>@the-/check</code>](#module_@the-/check)  
-<a name="module_@the-/check.isProduction"></a>
-
-### check.isProduction() ⇒ <code>boolean</code>
-Do unless production env
-
-**Kind**: static method of [<code>@the-/check</code>](#module_@the-/check)  
-**Returns**: <code>boolean</code> - Is production or not  
-<a name="module_@the-/check.unlessProduction"></a>
-
-### check.unlessProduction(handler) ⇒ <code>\*</code>
-Do unless production env
-
-**Kind**: static method of [<code>@the-/check</code>](#module_@the-/check)  
-
-| Param | Type |
-| --- | --- |
-| handler | <code>function</code> | 
-

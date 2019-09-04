@@ -6,7 +6,7 @@ const mime = require('mime')
 const path = require('path')
 const { promisify } = require('util')
 const theAssert = require('@the-/assert')
-const { unlessProduction } = require('@the-/check')
+const { unlessProduction } = require('@the-/check-env')
 
 const readFileAsync = promisify(fs.readFile)
 

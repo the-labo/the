@@ -25,8 +25,9 @@ describe('the-resource', () => {
 
     let v = 0
 
-    const User = db.load(TheResource, 'User')
-    const History = db.load(TheResource.WriteOnce, 'History')
+    const User = db.load(({define}) => define({
+
+    }), 'User')
     User.invalidated = async () => ({
       vv: v,
     })
@@ -46,11 +47,6 @@ describe('the-resource', () => {
     ok(listenCreated)
     equal(listenCreated.name, 'foo')
 
-    const history = await History.create({})
-    const { error } = await history
-      .update({ foo: 'bar' })
-      .catch((error) => ({ error }))
-    ok(error)
 
     v = 2
     ok(await User.refresh(user))
@@ -71,7 +67,7 @@ describe('the-resource', () => {
       dialect: 'memory',
     })
 
-    const Box = db.load(TheResource, 'Box')
+    const Box = db.load(({define}) => define({}), 'Box')
     void Box.createWithQueue({ name: 'b01' }, { timeout: 500 })
     equal(Box.creatingQueue.length, 1)
     const created = await Box.createWithQueue({ name: 'b01' })

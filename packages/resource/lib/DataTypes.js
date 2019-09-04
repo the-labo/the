@@ -6,7 +6,7 @@
  * @namespace DataTypes
  */
 const { DataTypes } = require('clay-constants')
-const { isProduction } = require('@the-/check')
+const { isProduction } = require('@the-/check-env')
 const { TheHash } = require('@the-/hash')
 
 module.exports = DataTypes
