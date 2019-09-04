@@ -5,7 +5,7 @@
 ## @the-/bin
 Bin manager for the-frameworks
 
-**Version**: 15.4.11  
+**Version**: 15.4.12  
 **License**: MIT  
 
 * [@the-/bin](#module_@the-/bin)
