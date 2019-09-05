@@ -24,7 +24,7 @@
     "name": "@the-/ui-input",
     "order": 1,
     "typicalname": "uiInput",
-    "version": "15.4.15"
+    "version": "15.4.16"
   },
   {
     "description": "Input of the-components",
@@ -1281,7 +1281,7 @@
     "memberof": "TheInputToggle.propTypes",
     "meta": {
       "filename": "TheInputToggle.jsx",
-      "lineno": 128,
+      "lineno": 130,
       "path": "lib"
     },
     "name": "offTitle",
@@ -1296,7 +1296,7 @@
     "memberof": "TheInputToggle.propTypes",
     "meta": {
       "filename": "TheInputToggle.jsx",
-      "lineno": 130,
+      "lineno": 132,
       "path": "lib"
     },
     "name": "on",
@@ -1311,7 +1311,7 @@
     "memberof": "TheInputToggle.propTypes",
     "meta": {
       "filename": "TheInputToggle.jsx",
-      "lineno": 132,
+      "lineno": 134,
       "path": "lib"
     },
     "name": "onTitle",
@@ -1326,7 +1326,7 @@
     "memberof": "TheInputToggle.propTypes",
     "meta": {
       "filename": "TheInputToggle.jsx",
-      "lineno": 134,
+      "lineno": 136,
       "path": "lib"
     },
     "name": "width",

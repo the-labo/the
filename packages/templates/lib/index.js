@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/templates
  * @typicalname templates
- * @version 16.1.1
+ * @version 16.1.2
  */
 'use strict'
 

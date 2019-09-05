@@ -65,6 +65,7 @@ class TheInputToggle extends React.PureComponent {
         offTitle,
         on,
         onTitle,
+        simple = false,
         style,
         width,
       },
@@ -80,6 +81,7 @@ class TheInputToggle extends React.PureComponent {
           'the-input-error': !!error,
           'the-input-toggle-off': !on,
           'the-input-toggle-on': on,
+          'the-input-toggle-simple': simple,
         })}
         id={id}
         role='switch'

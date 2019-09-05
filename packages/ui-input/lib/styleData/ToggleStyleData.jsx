@@ -53,7 +53,7 @@ function ToggleStyleData({
       padding: 0,
       textAlign: 'center',
       textOverflow: 'ellipsis',
-      transition: `width ${animationDuration}ms`,
+      transition: `width ${animationDuration}ms, background ${animationDuration}ms`,
       whiteSpace: 'nowrap',
       width: '100%',
     },
@@ -82,6 +82,40 @@ function ToggleStyleData({
     },
     '.the-input-toggle-radio': {
       display: 'none',
+    },
+    '.the-input-toggle-simple': {
+      '.the-input-toggle-handle': {
+        backgroundColor: '#DDD',
+        border: 'none',
+        boxShadow: '1px 1px 2px rgba(0,0,0,0.33)',
+        transition: 'background-color 400ms',
+      },
+      '.the-input-toggle-inner': {
+        backgroundColor: 'transparent',
+        borderColor: 'transparent',
+        margin: '0 16px',
+        overflow: 'visible',
+      },
+      '.the-input-toggle-label': {
+        background: '#999',
+        boxShadow: 'none',
+        height: '9px',
+        opacity: 0.66,
+        position: 'relative',
+      },
+      '.the-input-toggle-label-text': {
+        display: 'none',
+      },
+      '.the-input-toggle-off-label': { right: '2px' },
+      '.the-input-toggle-on-label': { left: '2px' },
+      '&.the-input-toggle-on': {
+        '.the-input-toggle-handle': {
+          backgroundColor: dominantColor,
+        },
+        '.the-input-toggle-on-label': {
+          backgroundColor: dominantColor,
+        },
+      },
     },
     '.the-input-toggle.the-input-toggle-off .the-input-toggle-on-label': {
       width: '0 !important',
