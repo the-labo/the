@@ -5,7 +5,7 @@
 ## @the-/pack
 Message pack wrapper for the-components
 
-**Version**: 15.4.13  
+**Version**: 15.5.1  
 **License**: MIT  
 
 * [@the-/pack](#module_@the-/pack)

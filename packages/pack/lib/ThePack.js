@@ -1,8 +1,10 @@
 'use strict'
 
 const msgpack = require('msgpack-lite')
-const { isBrowser } = require('@the-/check')
 const Converters = require('./Converters')
+
+const isBrowser = () =>
+  typeof window !== 'undefined' && typeof document !== 'undefined'
 
 /**
  * Pack handler

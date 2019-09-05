@@ -21,7 +21,7 @@
 ## @the-/server
 HTTP/RPC Server of the-framework
 
-**Version**: 16.1.1  
+**Version**: 16.1.2  
 **License**: MIT  
 
 * [@the-/server](#module_@the-/server)

@@ -13,7 +13,7 @@
     "name": "@the-/pack",
     "order": 3,
     "typicalname": "pack",
-    "version": "15.4.13"
+    "version": "15.5.1"
   },
   {
     "description": "Pack handler",
@@ -32,7 +32,7 @@
     "memberof": "ThePack",
     "meta": {
       "filename": "ThePack.js",
-      "lineno": 28,
+      "lineno": 30,
       "path": "lib"
     },
     "name": "bind",
@@ -57,7 +57,7 @@
     "memberof": "ThePack",
     "meta": {
       "filename": "ThePack.js",
-      "lineno": 40,
+      "lineno": 42,
       "path": "lib"
     },
     "name": "decode",
@@ -94,7 +94,7 @@
     "memberof": "ThePack",
     "meta": {
       "filename": "ThePack.js",
-      "lineno": 67,
+      "lineno": 69,
       "path": "lib"
     },
     "name": "encode",
@@ -130,7 +130,7 @@
     "memberof": "module:@the-/pack",
     "meta": {
       "filename": "ThePack.js",
-      "lineno": 7,
+      "lineno": 9,
       "path": "lib"
     },
     "name": "ThePack",
