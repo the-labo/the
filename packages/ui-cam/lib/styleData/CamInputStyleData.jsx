@@ -16,7 +16,7 @@ function CamInputStyleData({ dominantColor, tappableHeight }) {
       display: 'flex',
       justifyContent: 'center',
       left: 0,
-      padding: '4px',
+      padding: '8px',
       position: 'absolute',
       right: 0,
       width: '100%',
@@ -54,9 +54,13 @@ function CamInputStyleData({ dominantColor, tappableHeight }) {
       width: '100%',
     },
     '.the-cam-input-shutter': {
+      '&:active': {
+        boxShadow: 'none',
+      },
       background: '#FFF',
-      border: '2px solid #F0F0F0',
+      border: '4px solid #CCC',
       borderRadius: '50%',
+      boxShadow: '1px 1px 2px rgba(0,0,0,0.33)',
       boxSizing: 'border-box',
       cursor: 'pointer',
       height: tappableSize,
