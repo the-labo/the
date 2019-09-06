@@ -99,8 +99,8 @@ function ToggleStyleData({
       '.the-input-toggle-label': {
         background: '#999',
         boxShadow: 'none',
-        height: '9px',
-        opacity: 0.66,
+        height: '11px',
+        opacity: 0.5,
         position: 'relative',
       },
       '.the-input-toggle-label-text': {
