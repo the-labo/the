@@ -409,13 +409,13 @@
 }
 
 .leaflet-control-layers-toggle {
-  background-image: url(/images/leaflet/layers.png);
+  background-image: url(../images/leaflet/layers.png);
   width: 36px;
   height: 36px;
 }
 
 .leaflet-retina .leaflet-control-layers-toggle {
-  background-image: url(/images/leaflet/layers-2x.png);
+  background-image: url(../images/leaflet/layers-2x.png);
   background-size: 26px 26px;
 }
 
@@ -464,7 +464,7 @@
 
 /* Default icon URLs */
 .leaflet-default-icon-path {
-  background-image: url(/images/leaflet/marker-icon.png);
+  background-image: url(../images/leaflet/marker-icon.png);
 }
 
 /* attribution and scale controls */
