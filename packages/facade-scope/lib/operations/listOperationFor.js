@@ -1,9 +1,3 @@
-/**
- * List for entity
- * @memberof module:@the-/facade-scope
- * @function listOperationFor
- * @returns {module:@the-/facade-scope.listOperationFor~listOperation}
- */
 'use strict'
 
 const theAssert = require('@the-/assert')
@@ -16,7 +10,13 @@ const pageAccessFor = require('../pageAccessFor')
 const readyAccessFor = require('../readyAccessFor')
 const sortAccessFor = require('../sortAccessFor')
 
-/** @lends module:@the-/facade-scope.listOperationAccessFor */
+/**
+ * List for entity
+ * @memberof module:@the-/facade-scope
+ * @function listOperationFor
+ * @param scope
+ * @returns {Object}
+ */
 function listOperationFor(scope) {
   const busyAccess = busyAccessFor(scope)
   const readyAccess = readyAccessFor(scope)
@@ -42,8 +42,24 @@ function listOperationFor(scope) {
     pageAccess,
     readyAccess,
     sortAccess,
+    addOne(entity) {
+      const isKnown = entitiesAccess.isKnownOne(entity)
+      if (isKnown) {
+        return
+      }
+      entitiesAccess.addOne(entity)
+      countsAccess.increase()
+    },
     init() {
       scope.init()
+    },
+    removeOne(entity) {
+      const isKnown = entitiesAccess.isKnownOne(entity)
+      if (!isKnown) {
+        return
+      }
+      entitiesAccess.removeOne(entity)
+      countsAccess.decrease()
     },
     setCondition(condition) {
       const {

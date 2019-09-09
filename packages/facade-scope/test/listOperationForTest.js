@@ -58,6 +58,11 @@ describe('list-operation-for', () => {
 
     await listOperation.syncMore(_sync)
     ok(x.get('pageSize') > 20)
+
+    listOperation.addOne({ id: 2 })
+    listOperation.addOne({ id: 2 })
+    listOperation.removeOne({ id: 2 })
+    listOperation.removeOne({ id: 2 })
   })
 })
 

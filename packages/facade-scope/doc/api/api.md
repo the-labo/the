@@ -21,7 +21,7 @@
 ## @the-/facade-scope
 Facade to wrap scopes
 
-**Version**: 16.1.21  
+**Version**: 16.1.22  
 **License**: MIT  
 
 * [@the-/facade-scope](#module_@the-/facade-scope)
@@ -59,7 +59,7 @@ Facade to wrap scopes
     * [.detailOperationFor(scope)](#module_@the-/facade-scope.detailOperationFor) ⇒ <code>Object</code>
         * [~detailOperation](#module_@the-/facade-scope.detailOperationFor..detailOperation) : <code>object</code>
     * [.editOperationFor(scope)](#module_@the-/facade-scope.editOperationFor) ⇒ <code>Object</code>
-    * [.listOperationFor()](#module_@the-/facade-scope.listOperationFor) ⇒ [<code>listOperation</code>](#module_@the-/facade-scope.listOperationFor..listOperation)
+    * [.listOperationFor(scope)](#module_@the-/facade-scope.listOperationFor) ⇒ <code>Object</code>
         * [~listOperation](#module_@the-/facade-scope.listOperationFor..listOperation) : <code>object</code>
     * [.operationFor(scope)](#module_@the-/facade-scope.operationFor) ⇒ <code>Object</code>
         * [~operationFor](#module_@the-/facade-scope.operationFor..operationFor) : <code>object</code>
@@ -335,10 +335,15 @@ Scope access
 
 <a name="module_@the-/facade-scope.listOperationFor"></a>
 
-### facadeScope.listOperationFor() ⇒ [<code>listOperation</code>](#module_@the-/facade-scope.listOperationFor..listOperation)
+### facadeScope.listOperationFor(scope) ⇒ <code>Object</code>
 List for entity
 
 **Kind**: static method of [<code>@the-/facade-scope</code>](#module_@the-/facade-scope)  
+
+| Param |
+| --- |
+| scope | 
+
 <a name="module_@the-/facade-scope.listOperationFor..listOperation"></a>
 
 #### listOperationFor~listOperation : <code>object</code>

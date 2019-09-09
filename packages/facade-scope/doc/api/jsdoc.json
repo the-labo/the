@@ -13,7 +13,7 @@
     "name": "@the-/facade-scope",
     "order": 38,
     "typicalname": "facadeScope",
-    "version": "16.1.21"
+    "version": "16.1.22"
   },
   {
     "description": "Operation handlers",
@@ -1647,16 +1647,21 @@
     "memberof": "module:@the-/facade-scope",
     "meta": {
       "filename": "listOperationFor.js",
-      "lineno": 1,
+      "lineno": 13,
       "path": "lib/operations"
     },
     "name": "listOperationFor",
     "order": 77,
+    "params": [
+      {
+        "name": "scope"
+      }
+    ],
     "returns": [
       {
         "type": {
           "names": [
-            "module:@the-/facade-scope.listOperationFor~listOperation"
+            "Object"
           ]
         }
       }
@@ -1664,13 +1669,13 @@
     "scope": "static"
   },
   {
-    "id": "module:@the-/facade-scope.listOperationAccessFor~listOperation.sync",
+    "id": "listOperationFor~listOperation.sync",
     "kind": "function",
-    "longname": "module:@the-/facade-scope.listOperationAccessFor~listOperation.sync",
-    "memberof": "module:@the-/facade-scope.listOperationAccessFor~listOperation",
+    "longname": "listOperationFor~listOperation.sync",
+    "memberof": "listOperationFor~listOperation",
     "meta": {
       "filename": "listOperationFor.js",
-      "lineno": 74,
+      "lineno": 90,
       "path": "lib/operations"
     },
     "name": "sync",
