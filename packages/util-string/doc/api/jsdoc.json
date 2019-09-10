@@ -1,0 +1,161 @@
+[
+  {
+    "description": "Utility for string",
+    "id": "module:@the-/util-string",
+    "kind": "module",
+    "license": "MIT",
+    "longname": "module:@the-/util-string",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 3,
+      "path": "lib"
+    },
+    "name": "@the-/util-string",
+    "order": 0,
+    "typicalname": "utilString",
+    "version": "15.4.10"
+  },
+  {
+    "description": "Check if is email",
+    "id": "module:@the-/util-string.isEmail",
+    "kind": "function",
+    "longname": "module:@the-/util-string.isEmail",
+    "memberof": "module:@the-/util-string",
+    "meta": {
+      "filename": "isEmail.js",
+      "lineno": 5,
+      "path": "lib"
+    },
+    "name": "isEmail",
+    "order": 1,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "value"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "description": "Email or not"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Image url or not",
+    "id": "module:@the-/util-string.isImageURL",
+    "kind": "function",
+    "longname": "module:@the-/util-string.isImageURL",
+    "memberof": "module:@the-/util-string",
+    "meta": {
+      "filename": "isImageUrl.js",
+      "lineno": 8,
+      "path": "lib"
+    },
+    "name": "isImageURL",
+    "order": 2,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "String value to check",
+        "name": "value"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "description": "URL or not"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Check if is phone number",
+    "id": "module:@the-/util-string.isPhoneNumber",
+    "kind": "function",
+    "longname": "module:@the-/util-string.isPhoneNumber",
+    "memberof": "module:@the-/util-string",
+    "meta": {
+      "filename": "isPhoneNumber.js",
+      "lineno": 5,
+      "path": "lib"
+    },
+    "name": "isPhoneNumber",
+    "order": 3,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "String value to check",
+        "name": "value"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "description": "Phone number or not"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Check if is url",
+    "id": "module:@the-/util-string.isURL",
+    "kind": "function",
+    "longname": "module:@the-/util-string.isURL",
+    "memberof": "module:@the-/util-string",
+    "meta": {
+      "filename": "isUrl.js",
+      "lineno": 5,
+      "path": "lib"
+    },
+    "name": "isURL",
+    "order": 4,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "String value to check",
+        "name": "value"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "description": "URL or not"
+      }
+    ],
+    "scope": "static"
+  }
+]

@@ -6,8 +6,7 @@ const emailRegex = require('email-regex')
  * Check if is email
  * @memberof module:@the-/util-string
  * @function isEmail
- * @deprecated
- * @param {string} email
+ * @param {string} value
  * @returns {boolean} Email or not
  */
 function isEmail(value) {
