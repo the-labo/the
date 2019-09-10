@@ -13,7 +13,7 @@
     "name": "@the-/util-site",
     "order": 5,
     "typicalname": "utilSite",
-    "version": "15.4.9"
+    "version": "16.0.2"
   },
   {
     "description": "Container name for",
@@ -26,7 +26,7 @@
       "path": "lib"
     },
     "name": "containerNameFor",
-    "order": 14,
+    "order": 12,
     "params": [
       {
         "type": {
@@ -71,7 +71,7 @@
       "path": "lib"
     },
     "name": "networkNameFor",
-    "order": 15,
+    "order": 13,
     "params": [
       {
         "type": {
@@ -116,7 +116,7 @@
       "path": "lib"
     },
     "name": "portNumberFor",
-    "order": 16,
+    "order": 14,
     "params": [
       {
         "type": {
@@ -172,7 +172,7 @@
       "path": "lib"
     },
     "name": "portNumberRangeFor",
-    "order": 17,
+    "order": 15,
     "params": [
       {
         "type": {
@@ -227,7 +227,7 @@
       "path": "lib"
     },
     "name": "processNameFor",
-    "order": 18,
+    "order": 16,
     "params": [
       {
         "type": {
@@ -272,7 +272,7 @@
       "path": "lib"
     },
     "name": "secretFor",
-    "order": 19,
+    "order": 17,
     "params": [
       {
         "type": {
@@ -317,7 +317,7 @@
       "path": "lib"
     },
     "name": "userNameFor",
-    "order": 20,
+    "order": 18,
     "params": [
       {
         "type": {
@@ -540,79 +540,6 @@
     "scope": "static"
   },
   {
-    "deprecated": true,
-    "description": "Check if is email",
-    "id": "module:@the-/util-site.isEmail",
-    "kind": "function",
-    "longname": "module:@the-/util-site.isEmail",
-    "memberof": "module:@the-/util-site",
-    "meta": {
-      "filename": "isEmail.js",
-      "lineno": 5,
-      "path": "lib"
-    },
-    "name": "isEmail",
-    "order": 6,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "name": "email"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "boolean"
-          ]
-        },
-        "description": "Email or not"
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "deprecated": true,
-    "description": "Check if is phone number",
-    "id": "module:@the-/util-site.isPhoneNumber",
-    "kind": "function",
-    "longname": "module:@the-/util-site.isPhoneNumber",
-    "memberof": "module:@the-/util-site",
-    "meta": {
-      "filename": "isPhoneNumber.js",
-      "lineno": 5,
-      "path": "lib"
-    },
-    "name": "isPhoneNumber",
-    "order": 7,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "String value to check",
-        "name": "value"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "boolean"
-          ]
-        },
-        "description": "Phone number or not"
-      }
-    ],
-    "scope": "static"
-  },
-  {
     "id": "module:@the-/util-site\nConvert into japanese strings.\n英数字記号は半角、カナは全角へ.formatString",
     "kind": "function",
     "longname": "module:@the-/util-site\nConvert into japanese strings.\n英数字記号は半角、カナは全角へ.formatString",
@@ -623,7 +550,7 @@
       "path": "lib"
     },
     "name": "formatString",
-    "order": 8,
+    "order": 6,
     "params": [
       {
         "type": {
@@ -659,7 +586,7 @@
       "path": "lib"
     },
     "name": "queryFromSearch",
-    "order": 9,
+    "order": 7,
     "params": [
       {
         "type": {
@@ -693,7 +620,7 @@
       "path": "lib"
     },
     "name": "refOf",
-    "order": 10,
+    "order": 8,
     "params": [
       {
         "name": "entity"
@@ -722,7 +649,7 @@
       "path": "lib"
     },
     "name": "scrollToElement",
-    "order": 11,
+    "order": 9,
     "params": [
       {
         "type": {
@@ -759,7 +686,7 @@
       "path": "lib"
     },
     "name": "seatAccess",
-    "order": 12,
+    "order": 10,
     "params": [
       {
         "name": "seat"
@@ -787,7 +714,7 @@
       "path": "lib"
     },
     "name": "seatAccessBound",
-    "order": 13,
+    "order": 11,
     "scope": "inner"
   }
 ]

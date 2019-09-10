@@ -4,7 +4,7 @@ const emailRegex = require('email-regex')
 
 /**
  * Check if is email
- * @memberof module:@the-/util-site
+ * @memberof module:@the-/util-string
  * @function isEmail
  * @deprecated
  * @param {string} email

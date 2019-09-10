@@ -4,9 +4,8 @@ const PATTERN = /[0-9-+]$/
 
 /**
  * Check if is phone number
- * @memberof module:@the-/util-site
+ * @memberof module:@the-/util-string
  * @function isPhoneNumber
- * @deprecated
  * @param {string} value - String value to check
  * @returns {boolean} Phone number or not
  */

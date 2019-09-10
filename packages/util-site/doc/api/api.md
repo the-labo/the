@@ -39,7 +39,7 @@
 ## @the-/util-site
 Utility for site
 
-**Version**: 15.4.9  
+**Version**: 16.0.2  
 **License**: MIT  
 
 * [@the-/util-site](#module_@the-/util-site)
@@ -48,8 +48,6 @@ Utility for site
     * [.createStyleElement([options], css)](#module_@the-/util-site.createStyleElement) ⇒ <code>\*</code>
     * [.envOf()](#module_@the-/util-site.envOf) ⇒ <code>\*</code>
     * [.hasMoreFor(counts)](#module_@the-/util-site.hasMoreFor) ⇒ <code>\*</code>
-    * ~~[.isEmail(email)](#module_@the-/util-site.isEmail) ⇒ <code>boolean</code>~~
-    * ~~[.isPhoneNumber(value)](#module_@the-/util-site.isPhoneNumber) ⇒ <code>boolean</code>~~
     * [.queryFromSearch(search)](#module_@the-/util-site.queryFromSearch) ⇒ <code>Object</code>
     * [.refOf(entity)](#module_@the-/util-site.refOf) ⇒ <code>\*</code>
     * [.scrollToElement(element)](#module_@the-/util-site.scrollToElement) ⇒ <code>\*</code>
@@ -110,34 +108,6 @@ Has more for counts
 | Param |
 | --- |
 | counts | 
-
-<a name="module_@the-/util-site.isEmail"></a>
-
-### ~~utilSite.isEmail(email) ⇒ <code>boolean</code>~~
-***Deprecated***
-
-Check if is email
-
-**Kind**: static method of [<code>@the-/util-site</code>](#module_@the-/util-site)  
-**Returns**: <code>boolean</code> - Email or not  
-
-| Param | Type |
-| --- | --- |
-| email | <code>string</code> | 
-
-<a name="module_@the-/util-site.isPhoneNumber"></a>
-
-### ~~utilSite.isPhoneNumber(value) ⇒ <code>boolean</code>~~
-***Deprecated***
-
-Check if is phone number
-
-**Kind**: static method of [<code>@the-/util-site</code>](#module_@the-/util-site)  
-**Returns**: <code>boolean</code> - Phone number or not  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| value | <code>string</code> | String value to check |
 
 <a name="module_@the-/util-site.queryFromSearch"></a>
 

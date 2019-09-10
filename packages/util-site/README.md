@@ -103,8 +103,6 @@ Convert into japanese strings.
   - [.createStyleElement(options,css)](./doc/api/api.md#module_@the-/util-site.createStyleElement)
   - [.envOf()](./doc/api/api.md#module_@the-/util-site.envOf)
   - [.hasMoreFor(counts)](./doc/api/api.md#module_@the-/util-site.hasMoreFor)
-  - [.isEmail(email)](./doc/api/api.md#module_@the-/util-site.isEmail)
-  - [.isPhoneNumber(value)](./doc/api/api.md#module_@the-/util-site.isPhoneNumber)
   - [.queryFromSearch(search)](./doc/api/api.md#module_@the-/util-site.queryFromSearch)
   - [.refOf(entity)](./doc/api/api.md#module_@the-/util-site.refOf)
   - [.scrollToElement(element)](./doc/api/api.md#module_@the-/util-site.scrollToElement)

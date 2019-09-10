@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/util-site
  * @typicalname utilSite
- * @version 15.4.9
+ * @version 16.0.2
  */
 'use strict'
 
@@ -14,8 +14,6 @@ const countSuffix_ = require('./countSuffix')
 const createStyleElement_ = require('./createStyleElement')
 const envOf_ = require('./envOf')
 const hasMoreFor_ = require('./hasMoreFor')
-const isEmail_ = require('./isEmail')
-const isPhoneNumber_ = require('./isPhoneNumber')
 const normalizeString_ = require('./normalizeString')
 const queryFromSearch_ = require('./queryFromSearch')
 const refOf_ = require('./refOf')
@@ -28,8 +26,6 @@ exports.countSuffix = countSuffix_
 exports.createStyleElement = createStyleElement_
 exports.envOf = envOf_
 exports.hasMoreFor = hasMoreFor_
-exports.isEmail = isEmail_
-exports.isPhoneNumber = isPhoneNumber_
 exports.normalizeString = normalizeString_
 exports.queryFromSearch = queryFromSearch_
 exports.refOf = refOf_
@@ -42,8 +38,6 @@ module.exports = {
   createStyleElement: createStyleElement_,
   envOf: envOf_,
   hasMoreFor: hasMoreFor_,
-  isEmail: isEmail_,
-  isPhoneNumber: isPhoneNumber_,
   normalizeString: normalizeString_,
   queryFromSearch: queryFromSearch_,
   refOf: refOf_,
