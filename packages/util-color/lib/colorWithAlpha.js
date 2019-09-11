@@ -8,7 +8,7 @@ const { alpha: withAlpha } = require('acolor')
  * @function colorWithAlpha
  * @param {string} color
  * @param {number} alpha
- * @returns {string} color
+ * @returns {?string} color
  */
 function colorWithAlpha(color, alpha) {
   if (!color) {

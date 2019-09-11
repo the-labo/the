@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/util-string
  * @typicalname utilString
- * @version 15.4.10
+ * @version 15.4.11
  */
 'use strict'
 
@@ -13,16 +13,19 @@ const isEmail_ = require('./isEmail')
 const isImageUrl_ = require('./isImageUrl')
 const isPhoneNumber_ = require('./isPhoneNumber')
 const isUrl_ = require('./isUrl')
+const isVideoUrl_ = require('./isVideoUrl')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
 exports.isEmail = isEmail_
 exports.isImageUrl = isImageUrl_
 exports.isPhoneNumber = isPhoneNumber_
 exports.isUrl = isUrl_
+exports.isVideoUrl = isVideoUrl_
 
 module.exports = {
   isEmail: isEmail_,
   isImageUrl: isImageUrl_,
   isPhoneNumber: isPhoneNumber_,
   isUrl: isUrl_,
+  isVideoUrl: isVideoUrl_,
 }

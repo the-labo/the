@@ -13,7 +13,7 @@
     "name": "@the-/util-string",
     "order": 0,
     "typicalname": "utilString",
-    "version": "15.4.10"
+    "version": "15.4.11"
   },
   {
     "description": "Check if is email",
@@ -135,6 +135,42 @@
     },
     "name": "isURL",
     "order": 4,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "String value to check",
+        "name": "value"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "description": "URL or not"
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Video url or not",
+    "id": "module:@the-/util-string.isVideoURL",
+    "kind": "function",
+    "longname": "module:@the-/util-string.isVideoURL",
+    "memberof": "module:@the-/util-string",
+    "meta": {
+      "filename": "isVideoUrl.js",
+      "lineno": 8,
+      "path": "lib"
+    },
+    "name": "isVideoURL",
+    "order": 5,
     "params": [
       {
         "type": {

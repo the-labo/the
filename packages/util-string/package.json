@@ -1,7 +1,7 @@
 {
   "name": "@the-/util-string",
   "description": "Utility for string",
-  "version": "15.4.10",
+  "version": "15.4.11",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "email-regex": "^4.0.0",
-    "image-extensions": "^1.1.0"
+    "image-extensions": "^1.1.0",
+    "video-extensions": "^1.1.0"
   },
   "devDependencies": {},
   "engines": {

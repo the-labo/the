@@ -79,8 +79,10 @@ tryExample().catch((err) => console.error(err))
 
 
 - module:@the-/util-string
-  - [.isEmail(email)](./doc/api/api.md#module_@the-/util-string.isEmail)
+  - [.isEmail(value)](./doc/api/api.md#module_@the-/util-string.isEmail)
+  - [.isImageURL(value)](./doc/api/api.md#module_@the-/util-string.isImageURL)
   - [.isPhoneNumber(value)](./doc/api/api.md#module_@the-/util-string.isPhoneNumber)
+  - [.isURL(value)](./doc/api/api.md#module_@the-/util-string.isURL)
 
 See [API Guide](./doc/api/api.md) for more detail
 

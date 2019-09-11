@@ -5,7 +5,7 @@
 ## @the-/util-string
 Utility for string
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 **License**: MIT  
 
 * [@the-/util-string](#module_@the-/util-string)
@@ -13,6 +13,7 @@ Utility for string
     * [.isImageURL(value)](#module_@the-/util-string.isImageURL) ⇒ <code>boolean</code>
     * [.isPhoneNumber(value)](#module_@the-/util-string.isPhoneNumber) ⇒ <code>boolean</code>
     * [.isURL(value)](#module_@the-/util-string.isURL) ⇒ <code>boolean</code>
+    * [.isVideoURL(value)](#module_@the-/util-string.isVideoURL) ⇒ <code>boolean</code>
 
 <a name="module_@the-/util-string.isEmail"></a>
 
@@ -54,6 +55,18 @@ Check if is phone number
 
 ### utilString.isURL(value) ⇒ <code>boolean</code>
 Check if is url
+
+**Kind**: static method of [<code>@the-/util-string</code>](#module_@the-/util-string)  
+**Returns**: <code>boolean</code> - URL or not  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| value | <code>string</code> | String value to check |
+
+<a name="module_@the-/util-string.isVideoURL"></a>
+
+### utilString.isVideoURL(value) ⇒ <code>boolean</code>
+Video url or not
 
 **Kind**: static method of [<code>@the-/util-string</code>](#module_@the-/util-string)  
 **Returns**: <code>boolean</code> - URL or not  
