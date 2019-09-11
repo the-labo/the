@@ -13,7 +13,7 @@
     "name": "@the-/util-color",
     "order": 2,
     "typicalname": "utilColor",
-    "version": "15.4.9"
+    "version": "15.4.10"
   },
   {
     "description": "Get color with alpha",
@@ -53,6 +53,7 @@
             "string"
           ]
         },
+        "nullable": true,
         "description": "color"
       }
     ],
