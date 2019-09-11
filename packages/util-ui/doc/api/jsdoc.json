@@ -11,37 +11,9 @@
       "path": "lib"
     },
     "name": "@the-/util-ui",
-    "order": 6,
+    "order": 4,
     "typicalname": "utilUi",
-    "version": "15.4.12"
-  },
-  {
-    "deprecated": true,
-    "id": "asHOC",
-    "kind": "function",
-    "longname": "asHOC",
-    "meta": {
-      "filename": "asHOC.js",
-      "lineno": 7,
-      "path": "lib"
-    },
-    "name": "asHOC",
-    "order": 0,
-    "params": [
-      {
-        "name": "decorator"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        }
-      }
-    ],
-    "scope": "global"
+    "version": "16.0.2"
   },
   {
     "description": "Mark  : style data",
@@ -55,7 +27,7 @@
       "path": "lib"
     },
     "name": "asStyleData",
-    "order": 1,
+    "order": 0,
     "params": [
       {
         "type": {
@@ -100,7 +72,7 @@
       "path": "lib"
     },
     "name": "changedProps",
-    "order": 2,
+    "order": 1,
     "params": [
       {
         "type": {
@@ -132,54 +104,6 @@
     "scope": "static"
   },
   {
-    "deprecated": "Ues util-color instead",
-    "description": "Change color alpha",
-    "id": "module:@the-/util-ui.colorAlpha",
-    "kind": "function",
-    "longname": "module:@the-/util-ui.colorAlpha",
-    "memberof": "module:@the-/util-ui",
-    "meta": {
-      "filename": "colorAlpha.js",
-      "lineno": 5,
-      "path": "lib"
-    },
-    "name": "colorAlpha",
-    "order": 3,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Color to change",
-        "name": "color"
-      },
-      {
-        "type": {
-          "names": [
-            "number"
-          ]
-        },
-        "optional": true,
-        "defaultvalue": 1,
-        "description": "Alpha value to set",
-        "name": "alpha"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Color string"
-      }
-    ],
-    "scope": "static"
-  },
-  {
     "description": "Extract event handlers for component props",
     "id": "module:@the-/util-ui.eventHandlersFor",
     "kind": "function",
@@ -191,7 +115,7 @@
       "path": "lib"
     },
     "name": "eventHandlersFor",
-    "order": 4,
+    "order": 2,
     "params": [
       {
         "type": {
@@ -247,7 +171,7 @@
       "path": "lib"
     },
     "name": "htmlAttributesFor",
-    "order": 5,
+    "order": 3,
     "params": [
       {
         "type": {
@@ -303,7 +227,7 @@
       "path": "lib"
     },
     "name": "isKeyCode",
-    "order": 7,
+    "order": 5,
     "params": [
       {
         "type": {
@@ -348,7 +272,7 @@
       "path": "lib"
     },
     "name": "isServerSide",
-    "order": 8,
+    "order": 6,
     "returns": [
       {
         "type": {
@@ -361,6 +285,7 @@
     "scope": "static"
   },
   {
+    "deprecated": true,
     "description": "Detect src url is video or not",
     "id": "module:@the-/util-ui.isVideoSrc",
     "kind": "function",
@@ -372,7 +297,7 @@
       "path": "lib"
     },
     "name": "isVideoSrc",
-    "order": 9,
+    "order": 7,
     "params": [
       {
         "type": {
@@ -408,7 +333,7 @@
       "path": "lib"
     },
     "name": "newId",
-    "order": 10,
+    "order": 8,
     "params": [
       {
         "type": {
@@ -456,7 +381,7 @@
       "path": "lib"
     },
     "name": "readFileAsDataURL",
-    "order": 11,
+    "order": 9,
     "params": [
       {
         "type": {
@@ -480,6 +405,42 @@
     "scope": "static"
   },
   {
+    "description": "Scroll to DOM element",
+    "id": "module:@the-/util-site.scrollToElement",
+    "kind": "function",
+    "longname": "module:@the-/util-site.scrollToElement",
+    "memberof": "module:@the-/util-site",
+    "meta": {
+      "filename": "scrollToElement.js",
+      "lineno": 5,
+      "path": "lib"
+    },
+    "name": "scrollToElement",
+    "order": 10,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string",
+            "HTMLDOMElement"
+          ]
+        },
+        "description": "Element or it's selector",
+        "name": "element"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
     "description": "Toggle class on document body",
     "id": "module:@the-/util-ui.toggleBodyClass",
     "kind": "function",
@@ -491,7 +452,7 @@
       "path": "lib"
     },
     "name": "toggleBodyClass",
-    "order": 12,
+    "order": 11,
     "params": [
       {
         "type": {

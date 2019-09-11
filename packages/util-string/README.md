@@ -83,6 +83,7 @@ tryExample().catch((err) => console.error(err))
   - [.isImageURL(value)](./doc/api/api.md#module_@the-/util-string.isImageURL)
   - [.isPhoneNumber(value)](./doc/api/api.md#module_@the-/util-string.isPhoneNumber)
   - [.isURL(value)](./doc/api/api.md#module_@the-/util-string.isURL)
+  - [.isVideoURL(value)](./doc/api/api.md#module_@the-/util-string.isVideoURL)
 
 See [API Guide](./doc/api/api.md) for more detail
 

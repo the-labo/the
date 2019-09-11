@@ -13,7 +13,7 @@
     "name": "@the-/util-string",
     "order": 0,
     "typicalname": "utilString",
-    "version": "15.4.11"
+    "version": "15.4.12"
   },
   {
     "description": "Check if is email",
@@ -193,5 +193,40 @@
       }
     ],
     "scope": "static"
+  },
+  {
+    "id": "module:@the-/util-site\nConvert into japanese strings.\n英数字記号は半角、カナは全角へ.formatString",
+    "kind": "function",
+    "longname": "module:@the-/util-site\nConvert into japanese strings.\n英数字記号は半角、カナは全角へ.formatString",
+    "memberof": "module:@the-/util-site\nConvert into japanese strings.\n英数字記号は半角、カナは全角へ",
+    "meta": {
+      "filename": "normalizeString.js",
+      "lineno": 2,
+      "path": "lib"
+    },
+    "name": "formatString",
+    "order": 6,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        }
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        }
+      }
+    ],
+    "scope": "static",
+    "see": [
+      "https://gist.github.com/think49/964592/96c2d034ee07d6c2044e501d4e06b73a6a9e1c72"
+    ]
   }
 ]

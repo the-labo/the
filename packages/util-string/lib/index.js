@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/util-string
  * @typicalname utilString
- * @version 15.4.11
+ * @version 15.4.12
  */
 'use strict'
 
@@ -14,6 +14,7 @@ const isImageUrl_ = require('./isImageUrl')
 const isPhoneNumber_ = require('./isPhoneNumber')
 const isUrl_ = require('./isUrl')
 const isVideoUrl_ = require('./isVideoUrl')
+const normalizeString_ = require('./normalizeString')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
 exports.isEmail = isEmail_
@@ -21,6 +22,7 @@ exports.isImageUrl = isImageUrl_
 exports.isPhoneNumber = isPhoneNumber_
 exports.isUrl = isUrl_
 exports.isVideoUrl = isVideoUrl_
+exports.normalizeString = normalizeString_
 
 module.exports = {
   isEmail: isEmail_,
@@ -28,4 +30,5 @@ module.exports = {
   isPhoneNumber: isPhoneNumber_,
   isUrl: isUrl_,
   isVideoUrl: isVideoUrl_,
+  normalizeString: normalizeString_,
 }

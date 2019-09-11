@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/util-ui
  * @typicalname utilUi
- * @version 16.0.1
+ * @version 16.0.2
  */
 'use strict'
 
@@ -18,6 +18,7 @@ const isServerSide_ = require('./isServerSide')
 const isVideoSrc_ = require('./isVideoSrc')
 const newId_ = require('./newId')
 const readFileAsDataURL_ = require('./readFileAsDataURL')
+const scrollToElement_ = require('./scrollToElement')
 const toggleBodyClass_ = require('./toggleBodyClass')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
@@ -30,6 +31,7 @@ exports.isServerSide = isServerSide_
 exports.isVideoSrc = isVideoSrc_
 exports.newId = newId_
 exports.readFileAsDataURL = readFileAsDataURL_
+exports.scrollToElement = scrollToElement_
 exports.toggleBodyClass = toggleBodyClass_
 
 module.exports = {
@@ -42,5 +44,6 @@ module.exports = {
   isVideoSrc: isVideoSrc_,
   newId: newId_,
   readFileAsDataURL: readFileAsDataURL_,
+  scrollToElement: scrollToElement_,
   toggleBodyClass: toggleBodyClass_,
 }

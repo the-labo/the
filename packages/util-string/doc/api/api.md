@@ -5,7 +5,7 @@
 ## @the-/util-string
 Utility for string
 
-**Version**: 15.4.11  
+**Version**: 15.4.12  
 **License**: MIT  
 
 * [@the-/util-string](#module_@the-/util-string)
