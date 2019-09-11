@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/geo
  * @typicalname geo
- * @version 15.4.10
+ * @version 15.4.13
  */
 'use strict'
 

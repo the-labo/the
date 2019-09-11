@@ -5,7 +5,7 @@
 ## @the-/geo
 Geo location utility
 
-**Version**: 15.4.10  
+**Version**: 15.4.13  
 **License**: MIT  
 
 * [@the-/geo](#module_@the-/geo)

@@ -11,7 +11,7 @@ const { get } = require('@the-/window')
 class TheGeo {
   constructor(options = {}) {
     const {
-      cacheDuration = 300000,
+      cacheDuration = 3 * 1000,
       cacheKey = 'the:geo:cache',
       enableHighAccuracy = false,
       maximumAge = 3000,

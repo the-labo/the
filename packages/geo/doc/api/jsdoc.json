@@ -13,7 +13,7 @@
     "name": "@the-/geo",
     "order": 2,
     "typicalname": "geo",
-    "version": "15.4.10"
+    "version": "15.4.13"
   },
   {
     "id": "module:@the-/geo.TheGeo()",
