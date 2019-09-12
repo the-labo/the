@@ -274,7 +274,9 @@ class TheInputText extends React.PureComponent {
         error,
         id,
         inputRef,
+        max,
         maxLength,
+        min,
         name,
         parser,
         placeholder,
@@ -320,6 +322,8 @@ class TheInputText extends React.PureComponent {
             'autoCapitalize',
             'autoCorrect',
             'spellCheck',
+            'min',
+            'max',
           ],
         })}
         {...eventHandlersFor(props, {
@@ -354,7 +358,9 @@ class TheInputText extends React.PureComponent {
               autoFocus={autoFocus}
               className='the-input-text-input'
               id={id}
+              max={max}
               maxLength={maxLength}
+              min={min}
               name={name}
               onBlur={this.handleBlur}
               onChange={this.handleChange}
