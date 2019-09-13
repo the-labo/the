@@ -30,6 +30,7 @@ TheCopyboardStyle.data = (options) => {
   return asStyleData({
     '.the-copyboard': {
       display: 'inline-block',
+      maxWidth: '100%',
       position: 'relative',
     },
     '.the-copyboard-anchor': {
@@ -38,6 +39,7 @@ TheCopyboardStyle.data = (options) => {
       color: '#555',
       display: 'block',
       fontSize: 'smaller',
+      maxWidth: '100%',
       overflowX: 'auto',
       padding: '16px',
       textDecoration: 'none',

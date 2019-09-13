@@ -12,6 +12,13 @@ class ExampleComponent extends React.PureComponent {
           text='http://example.com/foo/bar?t=1234qwerasdfzxcv'
           tipText='Copied to your clip board'
         />
+        <hr />
+        <div style={{ width: 240 }}>
+          <TheCopyboard
+            text='http://example.com/long/long/long/long/long/long/long/long/long/long/long/long/long/long/long/bar?t=1234qwerasdfzxcv'
+            tipText='Copied to your clip board'
+          />
+        </div>
       </div>
     )
   }
