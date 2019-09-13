@@ -53,6 +53,14 @@ function listOperationFor(scope) {
     init() {
       scope.init()
     },
+    receiveOne(entity) {
+      const isKnown = entitiesAccess.isKnownOne(entity)
+      if (isKnown) {
+        listOperation.updateOne(entity)
+      } else {
+        listOperation.addOne(entity)
+      }
+    },
     removeOne(entity) {
       const isKnown = entitiesAccess.isKnownOne(entity)
       if (!isKnown) {

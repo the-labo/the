@@ -71,6 +71,8 @@ Facade to wrap scopes
 - idAccessFor~idAccess
   - [.isKnown(id)](./doc/api/api.md#idAccessFor~idAccess.isKnown)
   - [.set(id)](./doc/api/api.md#idAccessFor~idAccess.set)
+- listOperationFor~listOperation
+  - [.sync(handler)](./doc/api/api.md#listOperationFor~listOperation.sync)
 - module:@the-/facade-scope
   - [.busyAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.busyAccessFor)
   - [.countsAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.countsAccessFor)
@@ -83,7 +85,7 @@ Facade to wrap scopes
   - [.entryAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.entryAccessFor)
   - [.filterAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.filterAccessFor)
   - [.idAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.idAccessFor)
-  - [.listOperationFor()](./doc/api/api.md#module_@the-/facade-scope.listOperationFor)
+  - [.listOperationFor(scope)](./doc/api/api.md#module_@the-/facade-scope.listOperationFor)
   - [.moreAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.moreAccessFor)
   - [.operationFor(scope)](./doc/api/api.md#module_@the-/facade-scope.operationFor)
   - [.pageAccessFor(scope)](./doc/api/api.md#module_@the-/facade-scope.pageAccessFor)
@@ -113,8 +115,6 @@ Facade to wrap scopes
   - [~filterAccess](./doc/api/api.md#module_@the-/facade-scope.filterAccessFor~filterAccess)
 - module:@the-/facade-scope.idAccessFor
   - [~idAccess](./doc/api/api.md#module_@the-/facade-scope.idAccessFor~idAccess)
-- module:@the-/facade-scope.listOperationAccessFor~listOperation
-  - [.sync(handler)](./doc/api/api.md#module_@the-/facade-scope.listOperationAccessFor~listOperation.sync)
 - module:@the-/facade-scope.listOperationFor
   - [~listOperation](./doc/api/api.md#module_@the-/facade-scope.listOperationFor~listOperation)
 - module:@the-/facade-scope.moreAccessFor
