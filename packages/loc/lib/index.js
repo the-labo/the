@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/loc
  * @typicalname loc
- * @version 15.4.10
+ * @version 15.4.11
  */
 'use strict'
 

@@ -5,7 +5,7 @@
 ## @the-/loc
 Locale resolver for the-framework
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 **License**: MIT  
 
 * [@the-/loc](#module_@the-/loc)

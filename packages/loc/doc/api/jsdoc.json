@@ -13,7 +13,7 @@
     "name": "@the-/loc",
     "order": 2,
     "typicalname": "loc",
-    "version": "15.4.10"
+    "version": "15.4.11"
   },
   {
     "description": "Locale resolver",
@@ -43,7 +43,7 @@
     "memberof": "TheLoc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 34,
+      "lineno": 35,
       "path": "lib"
     },
     "name": "bind",
@@ -78,7 +78,7 @@
     "memberof": "TheLoc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 59,
+      "lineno": 60,
       "path": "lib"
     },
     "name": "register",
@@ -150,7 +150,7 @@
     "memberof": "TheLoc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 74,
+      "lineno": 75,
       "path": "lib"
     },
     "name": "resolve",
@@ -196,7 +196,7 @@
     "memberof": "TheLoc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 118,
+      "lineno": 123,
       "path": "lib"
     },
     "name": "toCompound",
@@ -222,7 +222,7 @@
     "memberof": "TheLoc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 130,
+      "lineno": 135,
       "path": "lib"
     },
     "name": "validate",
@@ -237,7 +237,7 @@
     "memberof": "module:@the-/loc",
     "meta": {
       "filename": "TheLoc.js",
-      "lineno": 11,
+      "lineno": 12,
       "path": "lib"
     },
     "name": "TheLoc",

@@ -1,7 +1,7 @@
 {
   "name": "@the-/loc",
   "description": "Locale resolver for the-framework",
-  "version": "15.4.10",
+  "version": "15.4.11",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,10 +11,11 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
+    "@the-/check-env": "^15.5.8",
     "@the-/util-array": "^15.4.3",
     "argx": "^4.0.4",
     "evaljson": "^6.0.4",
-    "objnest": "^5.0.6",
+    "objnest": "^5.0.10",
     "prop-types": "^15.7.2",
     "sprintf-js": "^1.1.2"
   },

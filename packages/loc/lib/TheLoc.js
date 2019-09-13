@@ -3,6 +3,7 @@
 const argx = require('argx')
 const evaljson = require('evaljson')
 const { sprintf } = require('sprintf-js')
+const { unlessProduction } = require('@the-/check-env')
 const mergedLocales = require('./helpers/mergedLocales')
 const resolveInScope = require('./helpers/resolveInScope')
 const toCompoundLocale = require('./helpers/toCompoundLocale')
@@ -99,15 +100,19 @@ class TheLoc {
         try {
           return sprintf(found, vars)
         } catch (e) {
-          console.warn(
-            `[TheLoc] Failed to parse "${found}" with error:`,
-            e.message,
-          )
+          unlessProduction(() => {
+            console.warn(
+              `[TheLoc] Failed to parse "${found}" with error:`,
+              e.message,
+            )
+          })
           return found
         }
       }
     }
-    console.warn(`[TheLoc] Failed to resolve keypath: "${keypath}"`)
+    unlessProduction(() => {
+      console.warn(`[TheLoc] Failed to resolve keypath: "${keypath}"`)
+    })
     return null
   }
 
