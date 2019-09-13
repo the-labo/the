@@ -79,6 +79,13 @@ function listOperationFor(scope) {
       sortAccess.set(sort)
       pageAccess.set(page)
     },
+    updateOne(entity) {
+      const isKnown = entitiesAccess.isKnownOne(entity)
+      if (!isKnown) {
+        return
+      }
+      entitiesAccess.updateOne(entity)
+    },
     async _fetch(handler) {
       const { state: filter } = filterAccess
       const { state: page } = pageAccess

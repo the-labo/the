@@ -65,6 +65,7 @@ describe('list-operation-for', () => {
     listOperation.removeOne({ id: 2 })
 
     listOperation.receiveOne({ id: 4 })
+    listOperation.receiveOne({ id: 4 })
   })
 })
 

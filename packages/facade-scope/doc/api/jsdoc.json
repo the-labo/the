@@ -13,7 +13,7 @@
     "name": "@the-/facade-scope",
     "order": 38,
     "typicalname": "facadeScope",
-    "version": "16.1.23"
+    "version": "16.1.24"
   },
   {
     "description": "Operation handlers",
@@ -1675,7 +1675,7 @@
     "memberof": "listOperationFor~listOperation",
     "meta": {
       "filename": "listOperationFor.js",
-      "lineno": 98,
+      "lineno": 105,
       "path": "lib/operations"
     },
     "name": "sync",
