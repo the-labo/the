@@ -1,5 +1,13 @@
 {
-  "args": {},
+  "args": [],
   "main": true,
-  "name": "the-code"
+  "name": "the-code",
+  "options": [
+    {
+      "short": "i",
+      "name": "ignore",
+      "type": "string",
+      "description": "patterns to ignore"
+    }
+  ]
 }

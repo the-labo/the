@@ -16,11 +16,12 @@ program
   .version(pkg['version'])
   .usage('[options] ')
   .description(pkg[ 'description' ])
+  .option('-i, --ignore <ignore>', '')
 program.parse(process.argv)
 
 // Run main command
 theCode.apply(theCode, program.args.concat({
-})
+  ignore: program['ignore']})
 ).catch(handleError)
 
 // Handlers
