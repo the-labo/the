@@ -1,0 +1,26 @@
+/**
+ * Bud file for lint
+ */
+'use strict'
+
+const { eslintignore, eslintrc } = require('@the-/templates')
+
+module.exports = [
+  eslintrc({
+    additional: {},
+    // TODO JSDocもlintしたい
+    jsdoc: false,
+    react: true,
+  }),
+  eslintignore([
+    '/node_modules',
+    '/packages/ios-pilot',
+    '/packages/react-janus-client/demo/js/*.js',
+    '/packages/*/assets/',
+    '/packages/*/public/',
+  ]),
+]
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

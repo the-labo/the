@@ -1,0 +1,73 @@
+/**
+ * Bud file for README.md
+ */
+'use strict'
+
+const aglob = require('aglob')
+const { sortProperties } = require('fmtjson')
+const fs = require('fs')
+const path = require('path')
+const { Readme } = require('@the-/templates')
+const pkg = require('./package.json')
+
+const requireIfPossible = (moduleId, { warn = false } = {}) => {
+  try {
+    return require(moduleId)
+  } catch (e) {
+    warn && console.warn(`Failed to require: ${moduleId}`)
+  }
+}
+
+const AccountEnv = requireIfPossible(
+  './packages/constants/lib/env/AccountEnv',
+  {
+    warn: true,
+  },
+)
+
+// 依存関係のinstall順でとれないことがある
+const isValid = !!AccountEnv
+
+if (isValid) {
+  module.exports = Readme({
+    badges: {
+      travisCom: true,
+      travisComToken: 'aeFzCpBZebyaRijpCFmm',
+    },
+    links: require('./doc/links'),
+    overview: 'doc/overview.md',
+    pkg,
+    repo: pkg.repository,
+    sections: 'doc/readme/*.md.hbs',
+    vars: {
+      AccountEnv: sortProperties({ ...AccountEnv }),
+      jsdocs: aglob
+        .sync('packages/*/doc/jsdoc/jsdoc.md', { cwd: __dirname })
+        .map((filename) => ({
+          link: path.join('.', filename),
+          name: path.dirname(path.dirname(filename)),
+        })),
+      packages: fs
+        .readdirSync(`${__dirname}/packages`)
+        .filter((dirname) => !/^\./.test(dirname))
+        .filter(
+          // ルートにファイルが無いのはゴミに違いないと決めつける
+          (dirname) =>
+            aglob.sync('*.*', { cwd: `packages/${dirname}` }).length > 0,
+        )
+        .map((name) => {
+          const pkg = requireIfPossible(
+            `${__dirname}/packages/${name}/package.json`,
+          )
+          return {
+            desc: pkg && pkg.description,
+            name,
+          }
+        }),
+    },
+  })
+
+  if (!module.parent) {
+    require('coz').render(__filename)
+  }
+}
