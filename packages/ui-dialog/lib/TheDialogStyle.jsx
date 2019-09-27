@@ -115,6 +115,8 @@ TheDialogStyle.data = (options) => {
         borderRadius: '8px',
         boxShadow: '2px 2px 2px rgba(0,0,0,0.3)',
         boxSizing: 'border-box',
+        display: 'flex',
+        flexDirection: 'column',
         height: 'auto',
         margin: '0 auto',
         maxHeight: 'calc(100vh - 72px)',
