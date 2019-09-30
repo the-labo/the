@@ -26,6 +26,18 @@ exports.Readme = (dirname, options = {}) => {
   const pkg = requireIfPossible(path.resolve(dirname, 'package.json'))
   const links = requireIfPossible(path.resolve(dirname, linksPath))
   const jsdoc = requireIfPossible(path.resolve(dirname, jsdocPath))
+  let findRepo = () => {
+    const { repository } = pkg
+    if (typeof repository === 'string') {
+      return repository
+    }
+    try {
+      const url = new URL(repository.url)
+      return url.pathname.replace(/\.git$/, '')
+    } catch (e) {
+      return null
+    }
+  }
   return Readme({
     api: jsdoc && {
       jsdoc,
@@ -35,7 +47,7 @@ exports.Readme = (dirname, options = {}) => {
     links,
     overview: 'doc/overview.md',
     pkg,
-    repo: pkg.repository,
+    repo: findRepo,
     sections: 'doc/readme/*.md.hbs',
     vars,
   })
