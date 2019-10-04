@@ -98,7 +98,7 @@ tryExample().catch((err) => console.error(err))
 - module:@the-/driver-sequelize.mixins
   - [.sequelizeMix(Class)](./doc/api/api.md#module_@the-/driver-sequelize.mixins.sequelizeMix)
 - module:@the-/driver-sequelize.modeling
-  - [.defineModel()](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModel)
+  - [.defineModel(sequelize,resourceName,schema)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModel)
   - [.defineModelColumn(def,propertyName)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModelColumn)
   - [.prepareModel(Model,Schema)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.prepareModel)
 - module:@the-/driver-sequelize.parsing
