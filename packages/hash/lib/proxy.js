@@ -15,7 +15,7 @@ function proxy(src, options = {}) {
   if (typeof Proxy === 'undefined') {
     return Object.assign({}, src)
   }
-
+  const warnings = new Set()
   return new Proxy(src, {
     get(target, key) {
       const has = key in target
@@ -36,7 +36,11 @@ function proxy(src, options = {}) {
             'toJSON',
           ].includes(String(key))
         if (isUnknown) {
-          console.warn(`[${name}] Unknown property "${String(key)}"`)
+          const msg = `[${name}] Unknown property "${String(key)}"`
+          if (!warnings.has(msg)) {
+            console.warn(msg)
+            warnings.add(msg)
+          }
         }
       }
 

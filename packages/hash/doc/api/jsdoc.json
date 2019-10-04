@@ -13,7 +13,7 @@
     "name": "@the-/hash",
     "order": 2,
     "typicalname": "hash",
-    "version": "15.4.8"
+    "version": "15.4.10"
   },
   {
     "id": "module:@the-/hash.TheHash()",

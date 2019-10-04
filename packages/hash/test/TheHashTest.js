@@ -43,6 +43,7 @@ describe('the-hash', () => {
     p[sy1] = 'This is sy1'
     equal(p[sy1], 'This is sy1')
     ok(!p[sy2])
+    ok(!p[sy2])
     ok(!p[Symbol.toStringTag])
   })
 
@@ -57,8 +58,12 @@ describe('the-hash', () => {
     equal(x.b, 2)
     ok('b' in x)
 
-    const xProxy = new TheHash(x).toProxy()
+    const xProxy = new TheHash(x).toProxy({
+      unknownCheck: true,
+    })
     equal(xProxy.a, 1)
+    equal(xProxy.e, void 0)
+    equal(xProxy.e, void 0)
   })
 })
 
