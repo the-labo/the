@@ -1,0 +1,28 @@
+/**
+ * Bud file for Node.js version
+ */
+'use strict'
+
+const pkg = require('./package.json')
+const nodeVersion = pkg.engines.node.replace(/\D/g, '')
+
+module.exports = [
+  {
+    data: { nodeVersion },
+    force: true,
+    mode: '444',
+    path: '.nvmrc',
+    tmpl: 'v{{ nodeVersion }}\n',
+  },
+  {
+    data: { nodeVersion },
+    force: true,
+    mode: '444',
+    path: '.node_version',
+    tmpl: '{{ nodeVersion }}\n',
+  },
+]
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

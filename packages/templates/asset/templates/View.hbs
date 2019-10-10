@@ -1,7 +1,7 @@
 'use strict'
 
-import React from 'react'
-import { TheMeta, TheView, TheCycle } from '@the-/ui'
+import React, { useEffect } from 'react'
+import { TheMeta, TheView } from '@the-/ui'
 import styles from './{{pascalcase name}}.pcss'
 import { Stateful } from '../../context'
 
@@ -20,6 +20,10 @@ const stateful = Stateful(
  * @function {{pascalcase name}}
  */
 const {{pascalcase name}} = React.memo(() => {
+  useEffect(() => {
+    handle.onMount()
+    return () => handle.onUnmount()
+  }, [])
   return stateful(
     ({
       l,
@@ -28,21 +32,19 @@ const {{pascalcase name}} = React.memo(() => {
     }) => {
       const title = null
       return (
-        <TheCycle {...{ onMount, onUnmount, }}>
-          <TheMeta title={title}>
-            <TheView className={styles.self}>
-              <TheView.Header icon={null}
-                              text={title}
+        <TheMeta title={title}>
+          <TheView className={styles.self}>
+            <TheView.Header icon={null}
+                            text={title}
               />
-              <TheView.Body>
-                This is {{pascalcase name}}!
-              </TheView.Body>
-            </TheView>
-          </TheMeta>
-        </TheCycle>
+            <TheView.Body>
+              This is {{pascalcase name}}!
+            </TheView.Body>
+          </TheView>
+        </TheMeta>
       )
     }
   )
-}
+})
 
 export default {{pascalcase name}}
