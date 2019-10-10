@@ -3,11 +3,14 @@
 import React, { useEffect } from 'react'
 import { TheMeta, TheView } from '@the-/ui'
 import styles from './{{pascalcase name}}.pcss'
-import { Stateful } from '../../context'
+import { Stateful, Handle } from '../../context'
 
 const stateful = Stateful(
   (state) => ({
-  }),
+  })
+)
+
+const handle = Handle(
   ({}) => ({
     onMount: () => {},
     onUnmount: () => {},
@@ -16,7 +19,7 @@ const stateful = Stateful(
 
 /**
  * {{pascalcase name}} component
- * @memberof {{memberOf}}
+ * @memberof {{memberof}}
  * @function {{pascalcase name}}
  */
 const {{pascalcase name}} = React.memo(() => {
@@ -27,8 +30,6 @@ const {{pascalcase name}} = React.memo(() => {
   return stateful(
     ({
       l,
-      onMount,
-      onUnmount,
     }) => {
       const title = null
       return (

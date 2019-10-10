@@ -12,12 +12,13 @@ const _tmpl = require('./_tmpl')
  * @returns {Object}
  */
 function View(config) {
-  const { name } = config
+  const { memberof, name } = config
   assert(name, 'name is required')
 
   const tmpl = _tmpl('View.hbs')
   return {
     data: {
+      memberof,
       name: path.basename(name),
     },
     force: false,
