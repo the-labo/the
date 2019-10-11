@@ -1,6 +1,7 @@
 'use strict'
 
-import { asStyleData, colorAlpha } from '@the-/util-ui'
+import { colorWithAlpha } from '@the-/util-color'
+import { asStyleData } from '@the-/util-ui'
 
 function SelectStyleData({
   backgroundColor,
@@ -49,7 +50,7 @@ function SelectStyleData({
     '.the-input-select-display-value': {},
     '.the-input-select-option': {
       '&:hover': {
-        backgroundColor: colorAlpha(dominantColor, 0.1),
+        backgroundColor: colorWithAlpha(dominantColor, 0.1),
       },
       '&:last-child': {
         borderBottom: 'none',
@@ -59,7 +60,7 @@ function SelectStyleData({
         pointerEvents: 'none',
       },
       '&.the-input-select-option-selected': {
-        backgroundColor: colorAlpha(dominantColor, 0.2),
+        backgroundColor: colorWithAlpha(dominantColor, 0.2),
       },
       alignItems: 'center',
       backgroundColor,

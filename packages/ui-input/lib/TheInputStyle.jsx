@@ -5,7 +5,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { ThemeValues } from '@the-/const-ui'
 import { TheStyle } from '@the-/ui-style'
-import { asStyleData, colorAlpha } from '@the-/util-ui'
+import { colorWithAlpha } from '@the-/util-color'
+import { asStyleData } from '@the-/util-ui'
 import CheckBoxStyleData from './styleData/CheckBoxStyleData'
 import DateStyleData from './styleData/DateStyleData'
 import NumberStyleData from './styleData/NumberStyleData'
@@ -89,7 +90,7 @@ TheInputStyle.data = (options) => {
         height: '30px',
         justifyContent: 'center',
         minWidth: '1em',
-        outlineColor: colorAlpha(dominantColor, 0.2),
+        outlineColor: colorWithAlpha(dominantColor, 0.2),
         padding: '0 4px',
         position: 'absolute',
         right: 0,

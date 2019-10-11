@@ -24,7 +24,7 @@
     "name": "@the-/ui-input",
     "order": 1,
     "typicalname": "uiInput",
-    "version": "15.4.19"
+    "version": "15.5.1"
   },
   {
     "description": "Input of the-components",
@@ -159,7 +159,7 @@
     "longname": "TheInputStyle",
     "meta": {
       "filename": "TheInputStyle.jsx",
-      "lineno": 26,
+      "lineno": 27,
       "path": "lib"
     },
     "name": "TheInputStyle",
@@ -876,7 +876,7 @@
     "memberof": "TheInputStyle.propTypes",
     "meta": {
       "filename": "TheInputStyle.jsx",
-      "lineno": 46,
+      "lineno": 47,
       "path": "lib"
     },
     "name": "options",

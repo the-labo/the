@@ -1,6 +1,7 @@
 'use strict'
 
-import { asStyleData, colorAlpha } from '@the-/util-ui'
+import { colorWithAlpha } from '@the-/util-color'
+import { asStyleData } from '@the-/util-ui'
 
 function TagStyleData({
   backgroundColor,
@@ -44,7 +45,7 @@ function TagStyleData({
     },
     '.the-input-tag-tag': {
       alignItems: 'center',
-      backgroundColor: colorAlpha(dominantColor, 0.2),
+      backgroundColor: colorWithAlpha(dominantColor, 0.2),
       borderRadius: '2px',
       color: dominantColor,
       display: 'inline-flex',

@@ -49,7 +49,7 @@ class TheInputText extends React.PureComponent {
       candidates: [],
       committedValue: null,
       selectedCandidate: null,
-      suggesting: false,
+      suggesting: !!props.autoFocus,
     }
     this.handleDocumentClick = this.handleDocumentClick.bind(this)
     this.handleChange = this.handleChange.bind(this)
