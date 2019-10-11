@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-flick",
   "description": "Flickable viewer of the-components",
-  "version": "15.4.12",
+  "version": "15.5.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -17,20 +17,20 @@
     "@the-/ui-icon": "^15.4.10",
     "@the-/ui-image": "^15.4.11",
     "@the-/ui-spin": "^15.4.10",
-    "@the-/ui-style": "^15.4.11",
+    "@the-/ui-style": "^15.4.12",
     "@the-/ui-video": "^15.4.10",
-    "@the-/util-ui": "^15.4.12",
+    "@the-/util-ui": "^16.0.2",
     "@the-/window": "^15.5.5",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
-    "react-draggable": "^3.3.2"
+    "react-draggable": "^4.0.3"
   },
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
     "coz": "^7.0.19",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-router-dom": "^5.0.1"
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-router-dom": "^5.1.2"
   },
   "engines": {
     "node": ">=10",
