@@ -13,6 +13,8 @@ const TypeGroups = {
  * Parse db policy
  * @memberof execSqlite
  * @function parsePolicy
+ * @param policy
+ * @returns {*}
  */
 function parsePolicy(policy) {
   const parsed = {}

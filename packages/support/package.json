@@ -1,4 +1,7 @@
 {
+  "name": "@the-/support",
+  "description": "JS support version checker",
+  "version": "15.4.10",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -16,7 +19,6 @@
     "chalk": "^2.4.2",
     "log-syntax-error": "^0.1.1"
   },
-  "description": "JS support version checker",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -29,7 +31,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/support",
   "publishConfig": {
     "access": "public"
   },
@@ -40,6 +41,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.10"
+  }
 }

@@ -1,4 +1,7 @@
 {
+  "name": "@the-/scaffold",
+  "description": "Scaffold for the-projects",
+  "version": "15.4.10",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -19,7 +22,6 @@
     "gitconfig": "^2.0.8",
     "tmplconv": "^5.0.1"
   },
-  "description": "Scaffold for the-projects",
   "devDependencies": {
     "@the-/demo-lib": "file:../demo-lib",
     "@the-/demo-ui": "file:../demo-ui",
@@ -37,7 +39,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/scaffold",
   "publishConfig": {
     "access": "public"
   },
@@ -47,6 +48,5 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && ./misc/tmplify.js",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.10"
+  }
 }

@@ -18,20 +18,6 @@ const {
 const { hasMoreFor } = require('@the-/util-site')
 const Scene = require('./Scene')
 
-@withBusy
-@withSort
-@withEntities
-@withPage
-@withReady
-@withFilter
-@withHistory
-@bindDefaults({
-  counts: {},
-  entities: [],
-  filter: {},
-  pageNumber: 1,
-  pageSize: 25,
-})
 class ListSceneBase extends Scene {}
 
 /** @lends ListScene */

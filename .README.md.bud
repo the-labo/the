@@ -9,7 +9,8 @@ const pkg = require('./package.json')
 
 module.exports = Readme({
   badges: {
-    travis: true,  },
+    travis: true,
+  },
   links: require('./doc/links'),
   overview: 'doc/overview.md',
   pkg,

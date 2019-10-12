@@ -73,12 +73,11 @@ Usage
 ## API Guide
 
 
-- global
-  - [asHOC(decorator)](./doc/api/api.md#asHOC)
+- module:@the-/util-site
+  - [.scrollToElement(element)](./doc/api/api.md#module_@the-/util-site.scrollToElement)
 - module:@the-/util-ui
   - [.asStyleData(scopeSelector,data)](./doc/api/api.md#module_@the-/util-ui.asStyleData)
   - [.changedProps(prevProps,props)](./doc/api/api.md#module_@the-/util-ui.changedProps)
-  - [.colorAlpha(color,alpha)](./doc/api/api.md#module_@the-/util-ui.colorAlpha)
   - [.eventHandlersFor(props,options)](./doc/api/api.md#module_@the-/util-ui.eventHandlersFor)
   - [.htmlAttributesFor(props,options)](./doc/api/api.md#module_@the-/util-ui.htmlAttributesFor)
   - [.isKeyCode(code,name)](./doc/api/api.md#module_@the-/util-ui.isKeyCode)

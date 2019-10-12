@@ -115,7 +115,6 @@ tryExample().catch((err) => console.error(err))
 - module:@the-/lint.rules
   - [.callRule(config,keypathArguments)](./doc/api/api.md#module_@the-/lint.rules.callRule)
   - [.contentRule(config)](./doc/api/api.md#module_@the-/lint.rules.contentRule)
-  - [.decorateRule(config)](./doc/api/api.md#module_@the-/lint.rules.decorateRule)
   - [.depsRule(config)](./doc/api/api.md#module_@the-/lint.rules.depsRule)
   - [.filenameRule(config)](./doc/api/api.md#module_@the-/lint.rules.filenameRule)
   - [.moduleRule(config)](./doc/api/api.md#module_@the-/lint.rules.moduleRule)

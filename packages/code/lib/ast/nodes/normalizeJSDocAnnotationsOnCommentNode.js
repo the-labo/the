@@ -34,6 +34,7 @@ const typesMap = {
 /**
  * @memberof module:@the-/code.ast.nodes
  * @function normalizeJSDocAnnotationsOnCommentNode
+ * @returns {*}
  */
 function normalizeJSDocAnnotationsOnCommentNode(CommentNode, { replace }) {
   const annotations = findJSDocAnnotationsInCommendNode(CommentNode)

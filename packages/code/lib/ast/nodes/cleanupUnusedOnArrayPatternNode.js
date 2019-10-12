@@ -35,7 +35,7 @@ function cleanupUnusedOnArrayPatternNode(
 
         break
       }
-      case 'RestElement':
+      case 'RestElement': {
         const usages = ConsumingIdentifiers.filter(
           (Identifier) => Identifier !== element.argument,
         ).filter((Identifier) => Identifier.name === element.argument.name)
@@ -47,6 +47,7 @@ function cleanupUnusedOnArrayPatternNode(
         }
 
         break
+      }
       default:
         break
     }

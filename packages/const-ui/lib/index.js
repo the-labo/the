@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/const-ui
  * @typicalname constUi
- * @version 15.4.9
+ * @version 15.4.10
  */
 'use strict'
 

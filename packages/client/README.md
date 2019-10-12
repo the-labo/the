@@ -101,7 +101,6 @@ tryExample().catch((err) => console.error(err))
   - [.default()](./doc/api/api.md#module_@the-/client.default)
   - [.helpers](./doc/api/api.md#module_@the-/client.helpers)
   - [.TheClient](./doc/api/api.md#module_@the-/client.TheClient)
-  - [.TheClientBase](./doc/api/api.md#module_@the-/client.TheClientBase)
 - module:@the-/client.constants
   - [.IOEvents](./doc/api/api.md#module_@the-/client.constants.IOEvents)
 - module:@the-/client.helpers

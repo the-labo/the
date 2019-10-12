@@ -4,16 +4,14 @@
 'use strict'
 
 import React from 'react'
-import { localized, stateful } from 'the-component-mixins'
+import { stateful } from 'the-component-mixins'
 import { UserTypes } from '@self/conf'
-import { TheForm, TheInput, withForm } from '@the-/components'
+import { TheForm, TheInput } from '@the-/components'
 import FBImportButton, { FBImportButtonContainer } from '../fb/FBImportButton'
 
 const { Radio, Text } = TheInput
 const { Field, Label, Value } = TheForm
 
-@withForm
-@localized
 class AccountProfileForm extends React.Component {
   render() {
     const {

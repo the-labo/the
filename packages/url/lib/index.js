@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/url
  * @typicalname url
- * @version 15.4.9
+ * @version 15.4.10
  */
 'use strict'
 
