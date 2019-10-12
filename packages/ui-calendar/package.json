@@ -1,7 +1,4 @@
 {
-  "name": "@the-/ui-calendar",
-  "description": "Calendar of the-components",
-  "version": "15.4.9",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -29,6 +26,7 @@
     "react-dom": "^16.10.2",
     "run": "^1.4.0"
   },
+  "description": "Calendar of the-components",
   "devDependencies": {
     "@the-/ui-demo": "^15.4.8",
     "coz": "^7.0.19",
@@ -45,6 +43,7 @@
   ],
   "license": "MIT",
   "main": "shim",
+  "name": "@the-/ui-calendar",
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
@@ -58,5 +57,6 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.10"
 }
