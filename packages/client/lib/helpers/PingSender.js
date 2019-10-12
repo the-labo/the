@@ -4,16 +4,14 @@ const DEFAULT_PING_URL = '/the/ping'
 
 /**
  * @memberof module:@the-/client.mixins
- * @function pingPongMix
- * @param {function()} Class - Class to mix
- * @returns {function()} Mixed class
+ * @function PingSender
+ * @param config
+ * @returns {*}
  */
-function pingPongMix(Class) {
-  /**
-   * @memberof module:@the-/client.mixins.pingPongMix
-   * @inner
-   */
-  class PingPongMixed extends Class {
+function PingSender(config) {
+  const { fetch } = config
+
+  const pingSender = {
     /**
      * Send ping to the serve and callback when pong received
      * @param {Function} callback - Callback func
@@ -47,16 +45,15 @@ function pingPongMix(Class) {
       const close = () => clearTimeout(timer)
       setTimeout(tick, interval)
       return close
-    }
-
+    },
     async ping(otpions = {}) {
       const { pingUrl = DEFAULT_PING_URL } = otpions
-      const response = await this.fetch(pingUrl)
+      const response = await fetch(pingUrl)
       return response.ok
-    }
+    },
   }
 
-  return PingPongMixed
+  return pingSender
 }
 
-module.exports = pingPongMix
+module.exports = PingSender
