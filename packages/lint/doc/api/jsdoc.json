@@ -13,7 +13,7 @@
     "name": "@the-/lint",
     "order": 2,
     "typicalname": "lint",
-    "version": "15.4.26"
+    "version": "15.5.0"
   },
   {
     "description": "Lint runner",
@@ -156,7 +156,7 @@
       "path": "lib/rules"
     },
     "name": "rules",
-    "order": 15,
+    "order": 14,
     "scope": "static"
   },
   {
@@ -310,42 +310,6 @@
     "scope": "static"
   },
   {
-    "description": "Create \"decorateRule\" lint",
-    "id": "module:@the-/lint.rules.decorateRule",
-    "kind": "function",
-    "longname": "module:@the-/lint.rules.decorateRule",
-    "memberof": "module:@the-/lint.rules",
-    "meta": {
-      "filename": "decorateRule.js",
-      "lineno": 6,
-      "path": "lib/rules"
-    },
-    "name": "decorateRule",
-    "order": 12,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "description": "Lint config",
-        "name": "config"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Lint function"
-      }
-    ],
-    "scope": "static"
-  },
-  {
     "description": "Create \"depsRule\" lint",
     "id": "module:@the-/lint.rules.depsRule",
     "kind": "function",
@@ -357,7 +321,7 @@
       "path": "lib/rules"
     },
     "name": "depsRule",
-    "order": 13,
+    "order": 12,
     "params": [
       {
         "type": {
@@ -393,7 +357,7 @@
       "path": "lib/rules"
     },
     "name": "filenameRule",
-    "order": 14,
+    "order": 13,
     "params": [
       {
         "type": {
@@ -449,7 +413,7 @@
       "path": "lib/rules"
     },
     "name": "moduleRule",
-    "order": 16,
+    "order": 15,
     "params": [
       {
         "type": {
@@ -485,7 +449,7 @@
       "path": "lib/rules"
     },
     "name": "packageRule",
-    "order": 17,
+    "order": 16,
     "params": [
       {
         "type": {
@@ -521,7 +485,7 @@
       "path": "lib/rules"
     },
     "name": "propRule",
-    "order": 18,
+    "order": 17,
     "params": [
       {
         "type": {
@@ -557,7 +521,7 @@
       "path": "lib/rules"
     },
     "name": "usageRule",
-    "order": 19,
+    "order": 18,
     "params": [
       {
         "type": {

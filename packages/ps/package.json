@@ -1,7 +1,7 @@
 {
   "name": "@the-/ps",
   "description": "Process manager for the-framework",
-  "version": "15.4.12",
+  "version": "15.5.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,7 +18,7 @@
     "npid": "^0.4.0",
     "ps-list": "^6.3.0",
     "terminate": "^2.1.2",
-    "yesno": "^0.2.1"
+    "yesno": "^0.3.1"
   },
   "devDependencies": {},
   "engines": {

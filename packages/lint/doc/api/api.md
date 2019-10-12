@@ -5,7 +5,7 @@
 ## @the-/lint
 Lint of the-frameworks
 
-**Version**: 15.4.26  
+**Version**: 15.5.0  
 **License**: MIT  
 
 * [@the-/lint](#module_@the-/lint)
@@ -16,7 +16,6 @@ Lint of the-frameworks
     * [.rules](#module_@the-/lint.rules) : <code>object</code>
         * [.callRule(config, keypathArguments)](#module_@the-/lint.rules.callRule) ⇒ <code>function</code>
         * [.contentRule(config)](#module_@the-/lint.rules.contentRule) ⇒ <code>function</code>
-        * [.decorateRule(config)](#module_@the-/lint.rules.decorateRule) ⇒ <code>function</code>
         * [.depsRule(config)](#module_@the-/lint.rules.depsRule) ⇒ <code>function</code>
         * [.filenameRule(config)](#module_@the-/lint.rules.filenameRule) ⇒ <code>function</code>
         * [.moduleRule(config)](#module_@the-/lint.rules.moduleRule) ⇒ <code>function</code>
@@ -57,7 +56,6 @@ Rule functions
 * [.rules](#module_@the-/lint.rules) : <code>object</code>
     * [.callRule(config, keypathArguments)](#module_@the-/lint.rules.callRule) ⇒ <code>function</code>
     * [.contentRule(config)](#module_@the-/lint.rules.contentRule) ⇒ <code>function</code>
-    * [.decorateRule(config)](#module_@the-/lint.rules.decorateRule) ⇒ <code>function</code>
     * [.depsRule(config)](#module_@the-/lint.rules.depsRule) ⇒ <code>function</code>
     * [.filenameRule(config)](#module_@the-/lint.rules.filenameRule) ⇒ <code>function</code>
     * [.moduleRule(config)](#module_@the-/lint.rules.moduleRule) ⇒ <code>function</code>
@@ -91,18 +89,6 @@ Create "contentRule" lint
 | config | <code>Object</code> | Lint config |
 | config.startsWith | <code>string</code> \| <code>RegExp</code> | Ends with |
 | config.endsWith | <code>string</code> \| <code>RegExp</code> | Ends with |
-
-<a name="module_@the-/lint.rules.decorateRule"></a>
-
-#### rules.decorateRule(config) ⇒ <code>function</code>
-Create "decorateRule" lint
-
-**Kind**: static method of [<code>rules</code>](#module_@the-/lint.rules)  
-**Returns**: <code>function</code> - Lint function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| config | <code>Object</code> | Lint config |
 
 <a name="module_@the-/lint.rules.depsRule"></a>
 
