@@ -18,7 +18,7 @@
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.3",
     "filecopy": "^4.0.2",
-    "sharp": "^0.22.1"
+    "sharp": "^0.23.1"
   },
   "devDependencies": {},
   "engines": {
