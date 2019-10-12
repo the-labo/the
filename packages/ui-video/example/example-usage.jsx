@@ -38,7 +38,7 @@ class ExampleComponent extends React.PureComponent {
         <TheVideo
           controls
           height={height}
-          src={'__invalid_url__'}
+          src='__invalid_url__'
           width={width}
         />
         <TheVideo

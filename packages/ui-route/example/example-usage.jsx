@@ -24,10 +24,10 @@ class ExampleComponent extends React.Component {
 
         <br />
         <TheRouter.Hash>
-          <TheLink exact to={'/s1'}>
+          <TheLink exact to='/s1'>
             Show Stack
           </TheLink>
-          <TheLink exact to={'/'}>
+          <TheLink exact to='/'>
             Hide Stack
           </TheLink>
           <a onClick={this.toggleVertical}>Change direction</a>
@@ -56,7 +56,7 @@ class ExampleComponent extends React.Component {
                               }}
                             >
                               <span> </span>
-                              <TheLink to={'/s1/v2'}>
+                              <TheLink to='/s1/v2'>
                                 Go to view 02 &gt;&gt;
                               </TheLink>
                             </div>
@@ -94,7 +94,7 @@ class ExampleComponent extends React.Component {
                               }}
                             >
                               <a onClick={pop}> &lt;&lt; Back to view 01</a>
-                              <TheLink to={'/s1/v2/v3'}>
+                              <TheLink to='/s1/v2/v3'>
                                 Go to view 03 &gt;&gt;
                               </TheLink>
                             </div>

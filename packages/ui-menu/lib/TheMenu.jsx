@@ -26,7 +26,7 @@ class TheMenu extends React.Component {
         })}
       >
         {children}
-        <li className='the-menu-end' role={'menuitem'} />
+        <li className='the-menu-end' role='menuitem' />
       </ul>
     )
   }

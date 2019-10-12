@@ -135,7 +135,7 @@ class TheDialog extends React.Component {
               </h3>
               {!hideCloseButton && (
                 <a
-                  aria-label={'Close'}
+                  aria-label='Close'
                   className='the-dialog-close-button'
                   onClick={onClose}
                   role='button'

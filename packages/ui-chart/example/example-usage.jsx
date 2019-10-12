@@ -46,7 +46,7 @@ class ExampleComponent extends React.PureComponent {
               ],
             },
           }}
-          type={'bar'}
+          type='bar'
         />
       </div>
     )

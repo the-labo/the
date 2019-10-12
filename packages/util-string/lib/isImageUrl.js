@@ -16,11 +16,13 @@ function isImageUrl(value) {
   if (!isUrl(value)) {
     return false
   }
+
   const { pathname } = new URL(value)
   const extname = pathname.split('.').pop()
   if (!extname) {
     return false
   }
+
   return (
     imageExtensionsSet.has(extname) ||
     imageExtensionsSet.has(extname.toLowerCase())

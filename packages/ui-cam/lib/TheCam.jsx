@@ -87,7 +87,7 @@ class TheCam extends React.Component {
           {rejected ? (
             <div className='the-cam-rejected'>{rejectedMessage}</div>
           ) : (
-            <React.Fragment>
+            <>
               <video
                 autoPlay
                 className='the-cam-video'
@@ -96,7 +96,7 @@ class TheCam extends React.Component {
                 ref={this.videoRef}
               />
               {children}
-            </React.Fragment>
+            </>
           )}
         </div>
       </div>

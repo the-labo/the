@@ -59,7 +59,7 @@ class TheCycle extends React.Component {
       props: { children },
     } = this
 
-    return <React.Fragment>{children}</React.Fragment>
+    return <>{children}</>
   }
 }
 

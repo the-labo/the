@@ -16,7 +16,7 @@ class ExampleComponent extends React.Component {
       <div>
         <TheSignatureStyle />
         <TheSignatureInput
-          name={'s1'}
+          name='s1'
           onUpdate={(v) => this.setState(v)}
           value={this.state.s1}
         />

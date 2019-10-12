@@ -15,6 +15,7 @@ function proxy(src, options = {}) {
   if (typeof Proxy === 'undefined') {
     return Object.assign({}, src)
   }
+
   const warnings = new Set()
   return new Proxy(src, {
     get(target, key) {

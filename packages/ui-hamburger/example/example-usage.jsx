@@ -23,9 +23,9 @@ class ExampleComponent extends React.Component {
           <TheHamburgerStyle />
           <TheHamburger.Toggle onClick={onToggle} />
           <TheHamburger hidden={hidden} onToggle={onToggle}>
-            <TheHamburger.Item to={'#menu01'}>Menu 01</TheHamburger.Item>
-            <TheHamburger.Item to={'#menu02'}>Menu 02</TheHamburger.Item>
-            <TheHamburger.Item to={'#menu03'}>Menu 03</TheHamburger.Item>
+            <TheHamburger.Item to='#menu01'>Menu 01</TheHamburger.Item>
+            <TheHamburger.Item to='#menu02'>Menu 02</TheHamburger.Item>
+            <TheHamburger.Item to='#menu03'>Menu 03</TheHamburger.Item>
           </TheHamburger>
         </div>
       </TheRouter.Hash>

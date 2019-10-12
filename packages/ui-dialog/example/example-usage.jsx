@@ -74,7 +74,7 @@ class ExampleComponent extends React.PureComponent {
           zIndex={124}
         />
         <TheYesNoDialog
-          icon={'fas fa-car'}
+          icon='fas fa-car'
           onClose={() => this.toggleYesNoDialog(false)}
           onNo={() => this.toggleYesNoDialog(false)}
           onYes={() => this.toggleYesNoDialog(false)}

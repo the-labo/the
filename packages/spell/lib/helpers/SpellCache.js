@@ -47,6 +47,7 @@ class SpellCache {
 
     return this.data[key]
   }
+
   async set(key, val) {
     await this.syncIfNeeded()
     this.data = {

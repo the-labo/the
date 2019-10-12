@@ -76,7 +76,7 @@ class ExampleComponent extends React.PureComponent {
             <TheHeader
               asOverlay
               reversed
-              ribbon={'This is a ribbon'}
+              ribbon='This is a ribbon'
               style={{ top: 400 }}
             >
               <Logo>Some app with overlay header</Logo>

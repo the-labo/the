@@ -98,7 +98,7 @@ class ExampleComponent extends React.PureComponent {
 
           <hr />
           <TheForm
-            errorLead={'You have an input error'}
+            errorLead='You have an input error'
             errors={{ value01: 'no,no,no' }}
           >
             <Field>

@@ -10,6 +10,7 @@ class ExampleComponent extends React.Component {
   start = () => {
     this.setState({ disabled: false })
   }
+
   state = {
     disabled: false,
     photo01: null,
@@ -44,7 +45,7 @@ class ExampleComponent extends React.Component {
         <section>
           <h1>As Input</h1>
           <TheCamInput
-            name={'photo01'}
+            name='photo01'
             onUpdate={this.handleUpdate}
             value={this.state.photo01}
           />

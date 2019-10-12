@@ -29,6 +29,7 @@ class ExampleComponent extends React.Component {
     this.setState({ lat, lng, zoom })
     console.log('bounds changed', { east, north, south, west })
   }
+
   handleClick = ({ lat, lng }) => {
     const {
       state: { markers },
@@ -69,6 +70,7 @@ class ExampleComponent extends React.Component {
       console.log('Marker moved', name, { lat, lng })
     }, 1000)
   }
+
   handleLeafletMap = (map) => {
     this.map = map
   }
@@ -139,7 +141,7 @@ class ExampleComponent extends React.Component {
         <TheSpinStyle />
         <TheMapStyle />
         <TheMap
-          height={'50vh'}
+          height='50vh'
           lat={lat}
           layers={MapLayers}
           lng={lng}
@@ -147,7 +149,7 @@ class ExampleComponent extends React.Component {
           onChange={this.handleChange}
           onClick={this.handleClick}
           onLeafletMap={this.handleLeafletMap}
-          width={'480px'}
+          width='480px'
           zoom={zoom}
         />
 
@@ -166,7 +168,7 @@ class ExampleComponent extends React.Component {
         <section>
           <h1>As Input</h1>
           <TheMapPositionInput
-            name={'pos01'}
+            name='pos01'
             onUpdate={this.handleUpdate}
             value={post01}
           />

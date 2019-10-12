@@ -58,10 +58,10 @@ class TheMeta extends React.Component {
       props: { children, render },
     } = this
     return (
-      <React.Fragment>
+      <>
         {render({ title: this.getTitle() })}
         {children}
-      </React.Fragment>
+      </>
     )
   }
 

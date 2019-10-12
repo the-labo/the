@@ -11,6 +11,7 @@ class TheStepBar extends React.Component {
     super(props)
     this.elmRef = React.createRef()
   }
+
   componentDidUpdate(prevProps) {
     const diff = changedProps(prevProps, this.props)
     if ('step' in diff) {

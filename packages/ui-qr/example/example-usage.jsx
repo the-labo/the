@@ -15,7 +15,7 @@ class ExampleComponent extends React.PureComponent {
         <TheQr
           onError={(err) => console.error('Failed with error:', err)}
           onGenerate={(url) => console.log('Image generated:', url)}
-          text={'Some URL'}
+          text='Some URL'
         />
 
         <br />
@@ -24,7 +24,7 @@ class ExampleComponent extends React.PureComponent {
           asLink
           onError={(err) => console.error('Failed with error:', err)}
           onGenerate={(url) => console.log('Image generated:', url)}
-          text={'Some URL as Link'}
+          text='Some URL as Link'
         />
 
         <TheQr
@@ -32,7 +32,7 @@ class ExampleComponent extends React.PureComponent {
           displaySize={24}
           onError={(err) => console.error('Failed with error:', err)}
           onGenerate={(url) => console.log('Image generated:', url)}
-          text={'With display size'}
+          text='With display size'
         />
       </div>
     )

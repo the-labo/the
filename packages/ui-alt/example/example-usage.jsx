@@ -8,8 +8,8 @@ class ExampleComponent extends React.Component {
     return (
       <div>
         <TheAltStyle />
-        <TheAlt enabled text={'This is visible'} />
-        <TheAlt text={'This is not visible'} />
+        <TheAlt enabled text='This is visible' />
+        <TheAlt text='This is not visible' />
       </div>
     )
   }

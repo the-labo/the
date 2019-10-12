@@ -16,7 +16,7 @@ class ExampleComponent extends React.PureComponent {
         <TheImage height={height} scale='none' src={IMAGE_URL} width={width} />
         <TheImage height={height} scale='fill' src={IMAGE_URL} width={width} />
         <TheImage height={height} scale='fit' src={IMAGE_URL} width={width} />
-        <TheImage height={height} src={'__invalid_url__'} width={width} />
+        <TheImage height={height} src='__invalid_url__' width={width} />
         <TheImage
           asLink
           height={height}

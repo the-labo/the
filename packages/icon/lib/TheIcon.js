@@ -93,6 +93,7 @@ class TheIcon {
     const { canvas } = this
     return canvas.createPNGStream()
   }
+
   /**
    * Save as file
    * @param {string} filename

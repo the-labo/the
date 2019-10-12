@@ -26,6 +26,7 @@ class JSDoc {
       generate,
     })
   }
+
   async generate(src = process.cwd(), dest = 'doc/api', options = {}) {
     const {
       cwd = process.cwd(),

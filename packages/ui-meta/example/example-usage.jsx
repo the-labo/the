@@ -11,7 +11,7 @@ class ExampleComponent extends React.Component {
 
     // Override html title on componentDidMount, restore on componentDidUnmount
     return (
-      <div className={'article'}>
+      <div className='article'>
         <TheMeta title={article.title} />
         <h3>{article.title}</h3>
         <p>{article.content}</p>
@@ -27,8 +27,8 @@ class ExampleComponent extends React.Component {
   render() {
     const numbers = [0, 1, 2]
     return (
-      <TheMeta.Root title={'TheMeta Example'}>
-        <div className={'app'}>
+      <TheMeta.Root title='TheMeta Example'>
+        <div className='app'>
           {numbers.map((number) => (
             <ExampleComponent.ArticlePage
               article={{
@@ -51,7 +51,9 @@ class ExampleComponent extends React.Component {
                   margin: '8px',
                   padding: '4px',
                 }}
-              >{`Show article-${number}`}</a>
+              >
+                {`Show article-${number}`}
+              </a>
             ))}
           </div>
         </div>

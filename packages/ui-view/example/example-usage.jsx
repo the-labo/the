@@ -20,7 +20,7 @@ class ExampleComponent extends React.PureComponent {
           <TheViewStyle />
           <TheView>
             <Header
-              icon={'fa fa-car'}
+              icon='fa fa-car'
               leftIcon={TheView.BACK_ICON}
               leftTo='/'
               onRightClick={() => console.log('Right clicked!')}
@@ -49,7 +49,7 @@ class ExampleComponent extends React.PureComponent {
               onRightClick={() => console.log('Right clicked!')}
               rightNode={
                 <TheDropdownMenu
-                  icon={''}
+                  icon=''
                   label={<TheIcon className={TheView.DROPDOWN_ICON} />}
                   righted
                 >

@@ -37,7 +37,7 @@ class TheCaught extends React.Component {
         <TheCondition if={!isProduction()}>
           <pre className='the-caught-stack'>
             <div>{error.stack}</div>
-            <hr className={'the-caught-line'} />
+            <hr className='the-caught-line' />
             <TheCondition if={!!componentStack}>
               <div>{componentStack}</div>
             </TheCondition>

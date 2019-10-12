@@ -47,6 +47,7 @@ function listOperationFor(scope) {
       if (isKnown) {
         return
       }
+
       entitiesAccess.addOne(entity)
       countsAccess.increase()
     },
@@ -66,6 +67,7 @@ function listOperationFor(scope) {
       if (!isKnown) {
         return
       }
+
       entitiesAccess.removeOne(entity)
       countsAccess.decrease()
     },
@@ -84,6 +86,7 @@ function listOperationFor(scope) {
       if (!isKnown) {
         return
       }
+
       entitiesAccess.updateOne(entity)
     },
     async _fetch(handler) {

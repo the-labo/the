@@ -8,10 +8,12 @@ class ExampleComponent extends React.PureComponent {
     componentDidMount() {
       throw new Error('Something is wrong!')
     }
+
     render() {
       return <div>This is content</div>
     }
   }
+
   render() {
     return (
       <div>

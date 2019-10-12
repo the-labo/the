@@ -77,8 +77,8 @@ class ExampleComponent extends React.PureComponent {
           onUpdate={onUpdate}
           options={['Banana', 'Orange', 'Apple']}
           placeholder='value01'
-          prefix={'Oh!'}
-          suffix={', Yes it is!'}
+          prefix='Oh!'
+          suffix=', Yes it is!'
           value={values.value01}
         />
 
@@ -345,29 +345,29 @@ class ExampleComponent extends React.PureComponent {
 
         <h3>Date</h3>
         <Date
-          minDate={'2018-03-09'}
+          minDate='2018-03-09'
           name='value-date-01'
           onUpdate={onUpdate}
-          placeholder={'date only'}
+          placeholder='date only'
           value={values['value-date-01']}
         />
 
         <Date
-          minDate={'2018-03-09'}
+          minDate='2018-03-09'
           name='value-date-01'
           onUpdate={onUpdate}
-          placeholder={'date and time'}
+          placeholder='date and time'
           timeEnabled
           value={values['value-date-01']}
         />
 
         <Date
-          dateFormat={'H:i'}
-          minDate={'2018-03-09'}
+          dateFormat='H:i'
+          minDate='2018-03-09'
           name='value-date-01-time'
           noCalendar
           onUpdate={onUpdate}
-          placeholder={'time only'}
+          placeholder='time only'
           timeEnabled
           value={values['value-date-01-time']}
         />
@@ -395,7 +395,7 @@ class ExampleComponent extends React.PureComponent {
         <Number
           name='value-number-01'
           onUpdate={onUpdate}
-          placeholder={'number without min/max'}
+          placeholder='number without min/max'
           value={values['value-number-01']}
         />
 

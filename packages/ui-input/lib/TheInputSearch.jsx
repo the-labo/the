@@ -18,9 +18,11 @@ class TheInputSearch extends React.PureComponent {
     this.handleFocus = this.handleFocus.bind(this)
     this.toggleOpen = this.toggleOpen.bind(this)
   }
+
   componentWillUnmount() {
     clearTimeout(this._focusTimer)
   }
+
   handleFocus(e) {
     const {
       props: { onFocus },

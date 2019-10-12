@@ -140,7 +140,7 @@ class TheFormBinder extends React.Component {
   }
 
   render() {
-    return <React.Fragment>{this.applyRenderer()}</React.Fragment>
+    return <>{this.applyRenderer()}</>
   }
 
   requiredOf(name) {

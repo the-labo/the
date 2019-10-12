@@ -26,11 +26,12 @@ exports.Readme = (dirname, options = {}) => {
   const pkg = requireIfPossible(path.resolve(dirname, 'package.json'))
   const links = requireIfPossible(path.resolve(dirname, linksPath))
   const jsdoc = requireIfPossible(path.resolve(dirname, jsdocPath))
-  let findRepo = () => {
+  const findRepo = () => {
     const { repository } = pkg
     if (typeof repository === 'string') {
       return repository
     }
+
     try {
       const url = new URL(repository.url)
       return url.pathname.replace(/\.git$/, '')

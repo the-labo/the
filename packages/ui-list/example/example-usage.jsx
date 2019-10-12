@@ -52,7 +52,7 @@ class ExampleComponent extends React.PureComponent {
                   With sub content
                 </Item>
               </TheList>
-              <TheList alt={'This is empty list'} />
+              <TheList alt='This is empty list' />
             </TheListGroup.Body>
 
             <TheListGroup.Header>Horizontal List</TheListGroup.Header>
@@ -79,7 +79,7 @@ class ExampleComponent extends React.PureComponent {
                 </Item>
 
                 <Item
-                  appendix={'This is appendix'}
+                  appendix='This is appendix'
                   subTitle='This is Sub title'
                   title='This is Title'
                 >

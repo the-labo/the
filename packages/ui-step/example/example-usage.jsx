@@ -36,7 +36,7 @@ class ExampleComponent extends React.Component {
           onStep={(step) => this.setState({ step })}
           onSubmit={() => alert('yo')}
           step={this.state.step}
-          submitText={'Say Yo'}
+          submitText='Say Yo'
         >
           <TheStep.Content>
             <h1>This is content01</h1>

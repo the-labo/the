@@ -155,6 +155,7 @@ class TheMedia {
       if (!canZoom) {
         continue
       }
+
       await track.applyConstraints({
         // just chrome?
         advanced: [{ zoom }],

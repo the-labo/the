@@ -433,6 +433,7 @@ TheInputSelect.WithOptionsArray = class WithOptionsArray extends React.Component
     super(props)
     this.compareOptions = this.compareOptions.bind(this)
   }
+
   compareOptions(a, b) {
     const {
       props: { optionsArray },
@@ -440,6 +441,7 @@ TheInputSelect.WithOptionsArray = class WithOptionsArray extends React.Component
     const valueArray = optionsArray.map(([v]) => v)
     return valueArray.indexOf(a) - valueArray.indexOf(b)
   }
+
   render() {
     const {
       props: { optionsArray, ...props },
