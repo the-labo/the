@@ -18,7 +18,7 @@
     "@the-/util-array": "^15.4.3",
     "aglob": "^3.0.1",
     "argx": "^4.0.4",
-    "commander": "^2.19.0",
+    "commander": "^2.20.3",
     "filedel": "^4.1.1",
     "findout": "^3.0.2",
     "stringcase": "^4.3.1",

@@ -1,16 +1,15 @@
-/**
- * Demo of the-components
- * @memberof module:@the-/demo-ui
- * @class TheDemoUi
- * @augments React.Component
- */
 'use strict'
 
 import c from 'classnames'
 import React from 'react'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
-/** @lends TheDemoUi */
+/**
+ * Demo of the-components
+ * @memberof module:@the-/demo-ui
+ * @class TheDemoUi
+ * @augments React.Component
+ */
 class TheDemoUi extends React.Component {
   render() {
     const {

@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "abind": "^1.0.5",
-    "qs": "^6.8.0"
+    "qs": "^6.9.0"
   },
   "devDependencies": {},
   "engines": {

@@ -15,7 +15,7 @@
     "@the-/util-array": "^15.4.3",
     "aglob": "^3.0.2",
     "fmtjson": "^4.0.6",
-    "jsdoc-to-markdown": "^5.0.0",
+    "jsdoc-to-markdown": "^5.0.2",
     "writeout": "^2.2.4"
   },
   "devDependencies": {},

@@ -33,7 +33,7 @@
     "memberof": "module:@the-/demo-ui",
     "meta": {
       "filename": "TheDemoUi.jsx",
-      "lineno": 1,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "TheDemoUi",

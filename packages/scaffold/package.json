@@ -17,7 +17,7 @@
     "asfs": "^2.2.3",
     "askconfig": "^4.0.4",
     "asobj": "^3.0.1",
-    "commander": "^2.20.0",
+    "commander": "^2.20.3",
     "filemode": "^3.0.0",
     "gitconfig": "^2.0.8",
     "tmplconv": "^5.0.1"

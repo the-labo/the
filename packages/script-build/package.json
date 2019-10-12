@@ -14,17 +14,17 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@babel/core": "^7.5.5",
+    "@babel/core": "^7.6.4",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/plugin-proposal-do-expressions": "^7.5.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
-    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
-    "@babel/plugin-transform-runtime": "^7.5.5",
-    "@babel/polyfill": "^7.4.4",
-    "@babel/preset-env": "^7.5.5",
+    "@babel/plugin-proposal-do-expressions": "^7.6.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "7.0.0",
-    "@babel/runtime": "^7.5.5",
-    "@the-/code": "^15.11.5",
+    "@babel/runtime": "^7.6.3",
+    "@the-/code": "^15.11.9",
     "@the-/tmp": "^15.4.5",
     "ababel": "^6.0.3",
     "aglob": "^3.0.2",
@@ -34,17 +34,17 @@
     "asleep": "^1.0.3",
     "awatch": "^2.0.1",
     "babel-loader": "^8.0.6",
-    "commander": "^2.20.0",
+    "commander": "^2.20.3",
     "coz": "^7.0.19",
     "filecopy": "^4.0.2",
     "lebab": "^3.1.0",
-    "webpack": "^4.39.2"
+    "webpack": "^4.41.1"
   },
   "devDependencies": {
     "@the-/ast": "^15.4.7",
     "injectmock": "^2.0.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
   },
   "engines": {
     "node": ">=10",

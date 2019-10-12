@@ -56,7 +56,7 @@ describe('the-client', () => {
 
       const { fruitShop: fruitShop02 } = await client02.useAll()
       const fruitShop01 = await client01.use('fruitShop', {
-        debug: true,
+        debug: false,
       })
       ok(!fruitShop01.session)
 

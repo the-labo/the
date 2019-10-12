@@ -9,6 +9,7 @@
 'use strict'
 
 const InfoAccess_ = require('./InfoAccess')
+const PingSender_ = require('./PingSender')
 const RemoteStream_ = require('./RemoteStream')
 const asController_ = require('./asController')
 const debugController_ = require('./debugController')
@@ -17,6 +18,7 @@ const parseClientUrl_ = require('./parseClientUrl')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
 exports.InfoAccess = InfoAccess_
+exports.PingSender = PingSender_
 exports.RemoteStream = RemoteStream_
 exports.asController = asController_
 exports.debugController = debugController_
@@ -25,6 +27,7 @@ exports.parseClientUrl = parseClientUrl_
 
 module.exports = {
   InfoAccess: InfoAccess_,
+  PingSender: PingSender_,
   RemoteStream: RemoteStream_,
   asController: asController_,
   debugController: debugController_,

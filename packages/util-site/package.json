@@ -16,7 +16,7 @@
     "@the-/seat": "^15.4.6",
     "bwindow": "^2.0.3",
     "clay-resource-ref": "^2.0.9",
-    "qs": "^6.8.0"
+    "qs": "^6.9.0"
   },
   "devDependencies": {},
   "engines": {

@@ -13,7 +13,7 @@
     "name": "@the-/client",
     "order": 2,
     "typicalname": "client",
-    "version": "15.7.3"
+    "version": "15.8.0"
   },
   {
     "id": "module:@the-/client.TheClient()",
@@ -21,7 +21,7 @@
     "longname": "module:@the-/client.TheClient",
     "memberof": "module:@the-/client.TheClient",
     "name": "TheClient",
-    "order": 6,
+    "order": 5,
     "params": [
       {
         "type": {
@@ -52,7 +52,7 @@
       "path": "lib/helpers"
     },
     "name": "addCallback",
-    "order": 15,
+    "order": 14,
     "params": [
       {
         "type": {
@@ -94,7 +94,7 @@
       "path": "lib/helpers"
     },
     "name": "addCallbacks",
-    "order": 16,
+    "order": 15,
     "params": [
       {
         "type": {
@@ -128,7 +128,7 @@
       "path": "lib/helpers"
     },
     "name": "delCallback",
-    "order": 17,
+    "order": 16,
     "scope": "global"
   },
   {
@@ -142,7 +142,7 @@
       "path": "lib/helpers"
     },
     "name": "removeCallback",
-    "order": 18,
+    "order": 17,
     "params": [
       {
         "type": {
@@ -174,7 +174,7 @@
       "path": "lib/helpers"
     },
     "name": "setCallback",
-    "order": 19,
+    "order": 18,
     "scope": "global"
   },
   {
@@ -183,7 +183,7 @@
     "longname": "TheClientScope",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 422,
+      "lineno": 424,
       "path": "lib"
     },
     "name": "TheClientScope",
@@ -223,11 +223,11 @@
     "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 195,
+      "lineno": 197,
       "path": "lib"
     },
     "name": "invoke",
-    "order": 8,
+    "order": 7,
     "params": [
       {
         "type": {
@@ -268,11 +268,11 @@
     "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 319,
+      "lineno": 321,
       "path": "lib"
     },
     "name": "stream",
-    "order": 9,
+    "order": 8,
     "params": [
       {
         "type": {
@@ -333,11 +333,11 @@
     "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 337,
+      "lineno": 339,
       "path": "lib"
     },
     "name": "use",
-    "order": 10,
+    "order": 9,
     "params": [
       {
         "type": {
@@ -390,11 +390,11 @@
     "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 387,
+      "lineno": 389,
       "path": "lib"
     },
     "name": "useAll",
-    "order": 11,
+    "order": 10,
     "params": [
       {
         "type": {
@@ -420,118 +420,8 @@
     "scope": "instance"
   },
   {
-    "description": "Send ping to the serve and callback when pong received",
-    "id": "module:@the-/client.mixins.pingPongMix~PingPongMixed#pingPongAnd",
-    "kind": "function",
-    "longname": "module:@the-/client.mixins.pingPongMix~PingPongMixed#pingPongAnd",
-    "memberof": "module:@the-/client.mixins.pingPongMix~PingPongMixed",
-    "meta": {
-      "filename": "pingPongMix.js",
-      "lineno": 23,
-      "path": "lib/mixins"
-    },
-    "name": "pingPongAnd",
-    "order": 30,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Callback func",
-        "name": "callback"
-      },
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "optional": true,
-        "defaultvalue": "{}",
-        "description": "Optional setting",
-        "name": "options"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "description": "Send ping to the serve and callback when pong received",
-    "id": "module:@the-/client.TheClient#pingPongAnd",
-    "inherited": true,
-    "inherits": "module:@the-/client.mixins.pingPongMix~PingPongMixed#pingPongAnd",
-    "kind": "function",
-    "longname": "module:@the-/client.TheClient#pingPongAnd",
-    "memberof": "module:@the-/client.TheClient",
-    "meta": {
-      "filename": "pingPongMix.js",
-      "lineno": 23,
-      "path": "lib/mixins"
-    },
-    "name": "pingPongAnd",
-    "order": 31,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Callback func",
-        "name": "callback"
-      },
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "optional": true,
-        "defaultvalue": "{}",
-        "description": "Optional setting",
-        "name": "options"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        }
-      }
-    ],
-    "scope": "instance"
-  },
-  {
-    "access": "protected",
-    "id": "module:@the-/client.TheClientBase",
-    "kind": "class",
-    "longname": "module:@the-/client.TheClientBase",
-    "memberof": "module:@the-/client",
-    "meta": {
-      "filename": "TheClient.js",
-      "lineno": 27,
-      "path": "lib"
-    },
-    "name": "TheClientBase",
-    "order": 4,
-    "scope": "static"
-  },
-  {
     "augments": [
-      "module:@the-/client.TheClientBase",
-      "module:@the-/client.mixins.pingPongMix~PingPongMixed"
+      "module:@the-/client.TheClientBase"
     ],
     "id": "module:@the-/client.TheClient",
     "kind": "class",
@@ -539,11 +429,11 @@
     "memberof": "module:@the-/client",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 38,
+      "lineno": 29,
       "path": "lib"
     },
     "name": "TheClient",
-    "order": 5,
+    "order": 4,
     "scope": "static"
   },
   {
@@ -558,7 +448,7 @@
       "path": "lib/constants"
     },
     "name": "constants",
-    "order": 12,
+    "order": 11,
     "scope": "static"
   },
   {
@@ -573,7 +463,7 @@
       "path": "lib/constants"
     },
     "name": "IOEvents",
-    "order": 13,
+    "order": 12,
     "scope": "static"
   },
   {
@@ -589,22 +479,7 @@
       "path": "lib/helpers"
     },
     "name": "helpers",
-    "order": 22,
-    "scope": "static"
-  },
-  {
-    "description": "Client mixin functions",
-    "id": "module:@the-/client.mixins",
-    "kind": "namespace",
-    "longname": "module:@the-/client.mixins",
-    "memberof": "module:@the-/client",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 3,
-      "path": "lib/mixins"
-    },
-    "name": "mixins",
-    "order": 27,
+    "order": 21,
     "scope": "static"
   },
   {
@@ -665,11 +540,11 @@
     "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 54,
+      "lineno": 44,
       "path": "lib"
     },
     "name": "for",
-    "order": 7,
+    "order": 6,
     "params": [
       {
         "type": {
@@ -713,7 +588,7 @@
       "path": "lib/helpers"
     },
     "name": "asController",
-    "order": 14,
+    "order": 13,
     "params": [
       {
         "type": {
@@ -769,7 +644,7 @@
       "path": "lib/helpers"
     },
     "name": "debugController",
-    "order": 20,
+    "order": 19,
     "params": [
       {
         "name": "controller"
@@ -798,7 +673,7 @@
       "path": "lib/helpers"
     },
     "name": "debugStream",
-    "order": 21,
+    "order": 20,
     "params": [
       {
         "name": "stream"
@@ -826,7 +701,7 @@
       "path": "lib/helpers"
     },
     "name": "InfoAccess",
-    "order": 23,
+    "order": 22,
     "returns": [
       {
         "type": {
@@ -850,7 +725,7 @@
       "path": "lib/helpers"
     },
     "name": "serverInfo",
-    "order": 25,
+    "order": 24,
     "params": [
       {
         "type": {
@@ -886,7 +761,7 @@
       "path": "lib/helpers"
     },
     "name": "parseClientUrl",
-    "order": 26,
+    "order": 25,
     "params": [
       {
         "type": {
@@ -911,17 +786,46 @@
     "scope": "static"
   },
   {
-    "id": "module:@the-/client.mixins.pingPongMix",
+    "id": "module:@the-/client.mixins.PingSender",
     "kind": "function",
-    "longname": "module:@the-/client.mixins.pingPongMix",
+    "longname": "module:@the-/client.mixins.PingSender",
     "memberof": "module:@the-/client.mixins",
     "meta": {
-      "filename": "pingPongMix.js",
+      "filename": "PingSender.js",
       "lineno": 5,
-      "path": "lib/mixins"
+      "path": "lib/helpers"
     },
-    "name": "pingPongMix",
-    "order": 28,
+    "name": "PingSender",
+    "order": 26,
+    "params": [
+      {
+        "name": "config"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "description": "Send ping to the serve and callback when pong received",
+    "id": "PingSender~pingSender.pingPongAnd",
+    "kind": "function",
+    "longname": "PingSender~pingSender.pingPongAnd",
+    "memberof": "PingSender~pingSender",
+    "meta": {
+      "filename": "PingSender.js",
+      "lineno": 21,
+      "path": "lib/helpers"
+    },
+    "name": "pingPongAnd",
+    "order": 27,
     "params": [
       {
         "type": {
@@ -929,8 +833,19 @@
             "function"
           ]
         },
-        "description": "Class to mix",
-        "name": "Class"
+        "description": "Callback func",
+        "name": "callback"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional setting",
+        "name": "options"
       }
     ],
     "returns": [
@@ -939,25 +854,10 @@
           "names": [
             "function"
           ]
-        },
-        "description": "Mixed class"
+        }
       }
     ],
     "scope": "static"
-  },
-  {
-    "id": "module:@the-/client.mixins.pingPongMix~PingPongMixed",
-    "kind": "class",
-    "longname": "module:@the-/client.mixins.pingPongMix~PingPongMixed",
-    "memberof": "module:@the-/client.mixins.pingPongMix",
-    "meta": {
-      "filename": "pingPongMix.js",
-      "lineno": 16,
-      "path": "lib/mixins"
-    },
-    "name": "PingPongMixed",
-    "order": 29,
-    "scope": "inner"
   },
   {
     "id": "module:@the-/client.helpers.InfoAccess~infoAccess",
@@ -970,7 +870,7 @@
       "path": "lib/helpers"
     },
     "name": "infoAccess",
-    "order": 24,
+    "order": 23,
     "scope": "inner"
   }
 ]

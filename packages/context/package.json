@@ -14,12 +14,12 @@
   "dependencies": {
     "@the-/assert": "^15.4.1",
     "@the-/state": "^15.4.2",
-    "memoize-one": "^5.0.5",
+    "memoize-one": "^5.1.1",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
   },
   "engines": {
     "node": ">=10",

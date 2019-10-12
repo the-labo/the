@@ -100,7 +100,6 @@ tryExample().catch((err) => console.error(err))
   - [.create(args)](./doc/api/api.md#module_@the-/client.create)
   - [.default()](./doc/api/api.md#module_@the-/client.default)
   - [.helpers](./doc/api/api.md#module_@the-/client.helpers)
-  - [.mixins](./doc/api/api.md#module_@the-/client.mixins)
   - [.TheClient](./doc/api/api.md#module_@the-/client.TheClient)
   - [.TheClientBase](./doc/api/api.md#module_@the-/client.TheClientBase)
 - module:@the-/client.constants
@@ -114,13 +113,9 @@ tryExample().catch((err) => console.error(err))
 - module:@the-/client.helpers.InfoAccess
   - [~infoAccess](./doc/api/api.md#module_@the-/client.helpers.InfoAccess~infoAccess)
 - module:@the-/client.mixins
-  - [.pingPongMix(Class)](./doc/api/api.md#module_@the-/client.mixins.pingPongMix)
-- module:@the-/client.mixins.pingPongMix
-  - [~PingPongMixed](./doc/api/api.md#module_@the-/client.mixins.pingPongMix~PingPongMixed)
-- module:@the-/client.mixins.pingPongMix~PingPongMixed
-  - [#pingPongAnd(callback,options)](./doc/api/api.md#module_@the-/client.mixins.pingPongMix~PingPongMixed#pingPongAnd)
-- module:@the-/client.TheClient
-  - [#pingPongAnd(callback,options)](./doc/api/api.md#module_@the-/client.TheClient#pingPongAnd)
+  - [.PingSender(config)](./doc/api/api.md#module_@the-/client.mixins.PingSender)
+- PingSender~pingSender
+  - [.pingPongAnd(callback,options)](./doc/api/api.md#PingSender~pingSender.pingPongAnd)
 - TheClient
   - [.for(namespace,config)](./doc/api/api.md#TheClient.for)
   - [#invoke(moduleName,methodName,params)](./doc/api/api.md#TheClient#invoke)

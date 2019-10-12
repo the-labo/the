@@ -12,6 +12,7 @@ const { isBrowser, isProduction, unlessProduction } = require('@the-/check')
 const { ThePack } = require('@the-/pack')
 const IOEvents = require('./constants/IOEvents')
 const {
+  PingSender,
   asController,
   debugController,
   debugStream,
@@ -19,19 +20,9 @@ const {
 } = require('./helpers')
 const InfoAccess = require('./helpers/InfoAccess')
 const RemoteStream = require('./helpers/RemoteStream')
-const { pingPongMix } = require('./mixins')
 const debug = require('debug')('the:client')
 
 const NAMESPACE = '/rpc'
-
-/**
- * @class module:@the-/client.TheClientBase
- * @protected
- */
-const TheClientBase = [pingPongMix].reduce(
-  (Class, mix) => mix(Class),
-  RFuncClient,
-)
 
 const { decode, encode } = new ThePack({})
 
@@ -39,11 +30,10 @@ const { decode, encode } = new ThePack({})
  * @memberof module:@the-/client
  * @class TheClient
  * @augments module:@the-/client.TheClientBase
- * @augments module:@the-/client.mixins.pingPongMix~PingPongMixed
  * @param {string} url
  * @param {Object} config
  */
-class TheClient extends TheClientBase {
+class TheClient extends RFuncClient {
   // noinspection ReservedWordAsName
   /**
    * Create the client instance
@@ -89,7 +79,9 @@ class TheClient extends TheClientBase {
 
     super(url, restOptions)
     this.onGone(onGone)
-    this.infoAccess = InfoAccess({ fetch: this.fetch.bind(this) })
+    const fetch = this.fetch.bind(this)
+    this.infoAccess = InfoAccess({ fetch })
+    this.pingSender = PingSender({ fetch })
     this._forceNewSocket = forceNewSocket
     this._gone = false
     this._controllers = {}
@@ -176,6 +168,16 @@ class TheClient extends TheClientBase {
 
   onGone(onGone) {
     this._onGone = onGone
+  }
+
+  ping(options = {}) {
+    const { pingSender } = this
+    return pingSender.ping(options)
+  }
+
+  pingPongAnd(callback, options = {}) {
+    const { pingSender } = this
+    return pingSender.pingPongAnd(callback, options)
   }
 
   async close() {

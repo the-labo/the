@@ -1,6 +1,6 @@
 {
   "name": "@the-/eslint-config-standard",
-  "version": "15.4.9",
+  "version": "15.5.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -10,7 +10,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "eslint-config-standard": "^12.0.0"
+    "eslint-config-standard": "^14.1.0"
   },
   "engines": {
     "node": ">=10",

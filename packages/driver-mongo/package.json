@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "clay-driver-tests": "^3.0.1",
-    "clay-resource": "^5.6.3"
+    "clay-resource": "^5.6.4"
   },
   "engines": {
     "node": ">=10",

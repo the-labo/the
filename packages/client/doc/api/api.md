@@ -38,14 +38,12 @@
 ## @the-/client
 Client for the-server
 
-**Version**: 15.7.3  
+**Version**: 15.8.0  
 **License**: MIT  
 
 * [@the-/client](#module_@the-/client)
-    * [.TheClientBase](#module_@the-/client.TheClientBase)
-    * [.TheClient](#module_@the-/client.TheClient) ⇐ [<code>TheClientBase</code>](#module_@the-/client.TheClientBase)
+    * [.TheClient](#module_@the-/client.TheClient) ⇐ <code>module:@the-/client.TheClientBase</code>
         * [new TheClient(url, config)](#new_module_@the-/client.TheClient_new)
-        * [.pingPongAnd(callback, [options])](#module_@the-/client.mixins.pingPongMix..PingPongMixed+pingPongAnd) ⇒ <code>function</code>
     * [.constants](#module_@the-/client.constants) : <code>object</code>
         * [.IOEvents](#module_@the-/client.constants.IOEvents) : <code>object</code>
     * [.helpers](#module_@the-/client.helpers) : <code>object</code>
@@ -55,28 +53,14 @@ Client for the-server
         * [.InfoAccess()](#module_@the-/client.helpers.InfoAccess) ⇒ <code>Object</code>
             * [~infoAccess](#module_@the-/client.helpers.InfoAccess..infoAccess) : <code>object</code>
         * [.parseClientUrl()](#module_@the-/client.helpers.parseClientUrl) ⇒ <code>string</code>
-    * [.mixins](#module_@the-/client.mixins) : <code>object</code>
-        * [.pingPongMix(Class)](#module_@the-/client.mixins.pingPongMix) ⇒ <code>function</code>
-            * [~PingPongMixed](#module_@the-/client.mixins.pingPongMix..PingPongMixed)
-                * [.pingPongAnd(callback, [options])](#module_@the-/client.mixins.pingPongMix..PingPongMixed+pingPongAnd) ⇒ <code>function</code>
     * [.create(...args)](#module_@the-/client.create) ⇒ <code>TheClient</code>
     * [.default()](#module_@the-/client.default)
 
-<a name="module_@the-/client.TheClientBase"></a>
-
-### client.TheClientBase
-**Kind**: static class of [<code>@the-/client</code>](#module_@the-/client)  
-**Access**: protected  
 <a name="module_@the-/client.TheClient"></a>
 
-### client.TheClient ⇐ [<code>TheClientBase</code>](#module_@the-/client.TheClientBase)
+### client.TheClient ⇐ <code>module:@the-/client.TheClientBase</code>
 **Kind**: static class of [<code>@the-/client</code>](#module_@the-/client)  
-**Extends**: [<code>TheClientBase</code>](#module_@the-/client.TheClientBase), [<code>PingPongMixed</code>](#module_@the-/client.mixins.pingPongMix..PingPongMixed)  
-
-* [.TheClient](#module_@the-/client.TheClient) ⇐ [<code>TheClientBase</code>](#module_@the-/client.TheClientBase)
-    * [new TheClient(url, config)](#new_module_@the-/client.TheClient_new)
-    * [.pingPongAnd(callback, [options])](#module_@the-/client.mixins.pingPongMix..PingPongMixed+pingPongAnd) ⇒ <code>function</code>
-
+**Extends**: <code>module:@the-/client.TheClientBase</code>  
 <a name="new_module_@the-/client.TheClient_new"></a>
 
 #### new TheClient(url, config)
@@ -85,18 +69,6 @@ Client for the-server
 | --- | --- |
 | url | <code>string</code> | 
 | config | <code>Object</code> | 
-
-<a name="module_@the-/client.mixins.pingPongMix..PingPongMixed+pingPongAnd"></a>
-
-#### theClient.pingPongAnd(callback, [options]) ⇒ <code>function</code>
-Send ping to the serve and callback when pong received
-
-**Kind**: instance method of [<code>TheClient</code>](#module_@the-/client.TheClient)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| callback | <code>function</code> |  | Callback func |
-| [options] | <code>Object</code> | <code>{}</code> | Optional setting |
 
 <a name="module_@the-/client.constants"></a>
 
@@ -180,49 +152,6 @@ Parse caller URL
 | Type | Description |
 | --- | --- |
 | <code>Object</code> \| <code>string</code> | URL string or config |
-
-<a name="module_@the-/client.mixins"></a>
-
-### client.mixins : <code>object</code>
-Client mixin functions
-
-**Kind**: static namespace of [<code>@the-/client</code>](#module_@the-/client)  
-
-* [.mixins](#module_@the-/client.mixins) : <code>object</code>
-    * [.pingPongMix(Class)](#module_@the-/client.mixins.pingPongMix) ⇒ <code>function</code>
-        * [~PingPongMixed](#module_@the-/client.mixins.pingPongMix..PingPongMixed)
-            * [.pingPongAnd(callback, [options])](#module_@the-/client.mixins.pingPongMix..PingPongMixed+pingPongAnd) ⇒ <code>function</code>
-
-<a name="module_@the-/client.mixins.pingPongMix"></a>
-
-#### mixins.pingPongMix(Class) ⇒ <code>function</code>
-**Kind**: static method of [<code>mixins</code>](#module_@the-/client.mixins)  
-**Returns**: <code>function</code> - Mixed class  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Class | <code>function</code> | Class to mix |
-
-
-* [.pingPongMix(Class)](#module_@the-/client.mixins.pingPongMix) ⇒ <code>function</code>
-    * [~PingPongMixed](#module_@the-/client.mixins.pingPongMix..PingPongMixed)
-        * [.pingPongAnd(callback, [options])](#module_@the-/client.mixins.pingPongMix..PingPongMixed+pingPongAnd) ⇒ <code>function</code>
-
-<a name="module_@the-/client.mixins.pingPongMix..PingPongMixed"></a>
-
-##### pingPongMix~PingPongMixed
-**Kind**: inner class of [<code>pingPongMix</code>](#module_@the-/client.mixins.pingPongMix)  
-<a name="module_@the-/client.mixins.pingPongMix..PingPongMixed+pingPongAnd"></a>
-
-###### pingPongMixed.pingPongAnd(callback, [options]) ⇒ <code>function</code>
-Send ping to the serve and callback when pong received
-
-**Kind**: instance method of [<code>PingPongMixed</code>](#module_@the-/client.mixins.pingPongMix..PingPongMixed)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| callback | <code>function</code> |  | Callback func |
-| [options] | <code>Object</code> | <code>{}</code> | Optional setting |
 
 <a name="module_@the-/client.create"></a>
 

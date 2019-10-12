@@ -14,7 +14,7 @@
   "dependencies": {
     "@the-/assert": "^15.4.1",
     "@the-/util-array": "^15.4.3",
-    "objnest": "^5.0.6"
+    "objnest": "^5.0.10"
   },
   "devDependencies": {
     "@the-/scope": "^15.4.9",

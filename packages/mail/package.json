@@ -13,11 +13,11 @@
   },
   "dependencies": {
     "@sendgrid/mail": "^6.4.0",
-    "@the-/check": "^15.5.6",
+    "@the-/check": "^15.5.8",
     "asobj": "^3.0.1",
-    "handlebars": "^4.1.2",
-    "nodemailer": "^6.3.0",
-    "uuid": "^3.3.2"
+    "handlebars": "^4.4.3",
+    "nodemailer": "^6.3.1",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
     "@the-/secret": "file:../secret"

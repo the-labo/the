@@ -81,15 +81,6 @@ function serverRendering(Html, options = {}) {
       renderingContext,
     }
 
-    // Fallback
-    /* TODO remove in next major version */
-    Object.defineProperty(props, 'appScope', {
-      get() {
-        throw new Error(
-          '[@the-/server] appScope is no longer available. use `injections.app` instead',
-        )
-      },
-    })
     ctx.body = await render(match, props)
     debug(`render end (${new Date() - at}ms)`)
     ctx.status = renderingContext.status || defaultStatus

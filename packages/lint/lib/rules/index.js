@@ -10,7 +10,6 @@
 
 const callRule_ = require('./callRule')
 const contentRule_ = require('./contentRule')
-const decorateRule_ = require('./decorateRule')
 const depsRule_ = require('./depsRule')
 const filenameRule_ = require('./filenameRule')
 const moduleRule_ = require('./moduleRule')
@@ -21,7 +20,6 @@ const usageRule_ = require('./usageRule')
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
 exports.callRule = callRule_
 exports.contentRule = contentRule_
-exports.decorateRule = decorateRule_
 exports.depsRule = depsRule_
 exports.filenameRule = filenameRule_
 exports.moduleRule = moduleRule_
@@ -32,7 +30,6 @@ exports.usageRule = usageRule_
 module.exports = {
   callRule: callRule_,
   contentRule: contentRule_,
-  decorateRule: decorateRule_,
   depsRule: depsRule_,
   filenameRule: filenameRule_,
   moduleRule: moduleRule_,
