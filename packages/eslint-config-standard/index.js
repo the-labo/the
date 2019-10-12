@@ -19,5 +19,6 @@ module.exports = {
   rules: {
     ...standard.rules,
     'no-irregular-whitespace': 'warn',
+    'no-void': 'off',
   },
 }

@@ -10,5 +10,6 @@ module.exports = {
   plugins: [...standardJSX.plugins],
   rules: {
     ...standardJSX.rules,
+    'react/jsx-handler-names': 'off',
   },
 }

@@ -14,7 +14,7 @@
     "asfs": "^2.2.3",
     "askconfig": "^4.0.4",
     "asobj": "^3.0.1",
-    "commander": "^2.20.3",
+    "commander": "^3.0.2",
     "filemode": "^3.0.0",
     "gitconfig": "^2.0.8",
     "tmplconv": "^5.0.1"
@@ -24,7 +24,7 @@
     "@the-/demo-lib": "file:../demo-lib",
     "@the-/demo-ui": "file:../demo-ui",
     "injectmock": "^2.0.0",
-    "pon-demo-site": "^8.0.12"
+    "pon-demo-site": "^10.0.4"
   },
   "engines": {
     "node": ">=10",
