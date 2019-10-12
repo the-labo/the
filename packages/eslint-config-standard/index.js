@@ -19,6 +19,7 @@ module.exports = {
   rules: {
     ...standard.rules,
     'no-irregular-whitespace': 'warn',
+    'no-prototype-builtins': 'off',
     'no-void': 'off',
   },
 }
