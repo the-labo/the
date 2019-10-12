@@ -9,7 +9,7 @@ const videoExtNames = [...videoExtensions]
  * Detect src url is video or not
  * @memberof module:@the-/util-ui
  * @function isVideoSrc
- * @deprecated
+ * @deprecated use `@the-/util.isVideoUrl()` instead
  * @param {string} src - Url to detect
  * @returns {boolean} Video or not
  */

@@ -3,109 +3,94 @@
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import qrcode from 'qrcode'
-import React from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import { TheSpin } from '@the-/ui-spin'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
+import {
+  base64ToBlob,
+  eventHandlersFor,
+  htmlAttributesFor,
+} from '@the-/util-ui'
 
 /**
  * QRCode the-component
  */
-class TheQr extends React.PureComponent {
-  static AWrap(props) {}
-
-  constructor(props) {
-    super(props)
-    this.state = {
-      spinning: false,
+const TheQr = React.memo((props) => {
+  const {
+    alt,
+    asLink,
+    children,
+    className,
+    displaySize,
+    onError,
+    onGenerate,
+    size,
+    text,
+  } = props
+  const [spinning, setSpinning] = useState(false)
+  const [image, setImage] = useState(null)
+  const Wrapper = useMemo(() => {
+    if (asLink) {
+      return (props) => {
+        const handleClick = () => {
+          const blob = base64ToBlob(image)
+          const blobUrl = URL.createObjectURL(blob)
+          window.open(blobUrl, '_blank')
+          URL.revokeObjectURL(blobUrl)
+        }
+        return (
+          <a {...props} onClick={handleClick}>
+            {props.children}
+          </a>
+        )
+      }
     }
-  }
-
-  WrapperFor() {
-    const { props, state } = this
-    if (props.asLink) {
-      return (props) => (
-        <a {...props} href={state.url} target='_blank'>
-          {props.children}
-        </a>
-      )
-    }
-
     return 'div'
-  }
-
-  componentDidMount() {
-    const { props } = this
-    this.drawAsQR(props.text)
-  }
-
-  componentDidUpdate(prevProps, prevState, snapshot) {
-    const { props } = this
-    if (props.text !== prevProps.text) {
-      this.drawAsQR(props.text)
-    }
-  }
-
-  drawAsQR(text) {
-    const { props } = this
+  }, [asLink, image])
+  useEffect(() => {
     if (!text) {
+      setImage(null)
       return
     }
-
-    const { onError, onGenerate, size } = props
-    this.setState({ spinning: true })
+    setSpinning(true)
     qrcode.toDataURL(
       text,
       {
         scale: size / 16,
       },
-      (err, url) => {
+      (err, image) => {
         if (err) {
           onError && onError(err)
         } else {
-          onGenerate && onGenerate(url)
+          onGenerate && onGenerate(image)
         }
-
-        this.setState({
-          spinning: false,
-          url,
-        })
+        setSpinning(false)
+        setImage(image)
       },
     )
-  }
+  }, [text, onError, onGenerate])
 
-  render() {
-    const {
-      props,
-      props: { alt, children, className, displaySize, size, text },
-      state,
-    } = this
+  const style = { height: displaySize || size, width: displaySize || size }
 
-    const style = { height: displaySize || size, width: displaySize || size }
-    const Wrapper = this.WrapperFor()
-
-    return (
-      <Wrapper
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={classnames('the-qr', className)}
+  return (
+    <Wrapper
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={classnames('the-qr', className)}
+      style={style}
+    >
+      {spinning && <TheSpin className='the-qr-spin' cover enabled={spinning} />}
+      <img
+        className='the-qr-img'
+        height={size}
+        src={image}
         style={style}
-      >
-        {state.spinning && (
-          <TheSpin className='the-qr-spin' cover enabled={state.spinning} />
-        )}
-        <img
-          className='the-qr-img'
-          height={size}
-          src={state.url}
-          style={style}
-          width={size}
-        />
-        {!text && <div className='the-qr-alt'>{alt}</div>}
-        {children}
-      </Wrapper>
-    )
-  }
-}
+        width={size}
+      />
+      {!text && <div className='the-qr-alt'>{alt}</div>}
+      {children}
+    </Wrapper>
+  )
+})
 
 TheQr.propTypes = {
   /** Alt text */

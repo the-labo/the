@@ -57,6 +57,7 @@ function formatUrl(urlString, params = {}) {
 
   unlessProduction(() => {
     for (const name of paramsKeys) {
+      // eslint-disable-next-line no-prototype-builtins
       if (!replaced.hasOwnProperty(name)) {
         console.warn(
           `[the-url] Parameter \`${name}\` is never used ( for \`${urlString}\` )`,

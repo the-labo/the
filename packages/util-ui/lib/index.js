@@ -5,11 +5,12 @@
  * @license MIT
  * @module @the-/util-ui
  * @typicalname utilUi
- * @version 16.0.2
+ * @version 16.0.4
  */
 'use strict'
 
 const asStyleData_ = require('./asStyleData')
+const base64ToBlob_ = require('./base64ToBlob')
 const changedProps_ = require('./changedProps')
 const eventHandlersFor_ = require('./eventHandlersFor')
 const htmlAttributesFor_ = require('./htmlAttributesFor')
@@ -23,6 +24,7 @@ const toggleBodyClass_ = require('./toggleBodyClass')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
 exports.asStyleData = asStyleData_
+exports.base64ToBlob = base64ToBlob_
 exports.changedProps = changedProps_
 exports.eventHandlersFor = eventHandlersFor_
 exports.htmlAttributesFor = htmlAttributesFor_
@@ -36,6 +38,7 @@ exports.toggleBodyClass = toggleBodyClass_
 
 module.exports = {
   asStyleData: asStyleData_,
+  base64ToBlob: base64ToBlob_,
   changedProps: changedProps_,
   eventHandlersFor: eventHandlersFor_,
   htmlAttributesFor: htmlAttributesFor_,

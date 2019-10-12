@@ -11,9 +11,44 @@
       "path": "lib"
     },
     "name": "@the-/util-ui",
-    "order": 4,
+    "order": 5,
     "typicalname": "utilUi",
-    "version": "16.0.2"
+    "version": "16.0.4"
+  },
+  {
+    "description": "Convert base64 data into blob\nmodule:@the-/util-ui",
+    "id": "base64ToBlob",
+    "kind": "function",
+    "longname": "base64ToBlob",
+    "meta": {
+      "filename": "base64ToBlob.js",
+      "lineno": 9,
+      "path": "lib"
+    },
+    "name": "base64ToBlob",
+    "order": 1,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "base64 encoded string",
+        "name": "base64String"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Blob"
+          ]
+        },
+        "nullable": true
+      }
+    ],
+    "scope": "global"
   },
   {
     "description": "Mark  : style data",
@@ -72,7 +107,7 @@
       "path": "lib"
     },
     "name": "changedProps",
-    "order": 1,
+    "order": 2,
     "params": [
       {
         "type": {
@@ -115,7 +150,7 @@
       "path": "lib"
     },
     "name": "eventHandlersFor",
-    "order": 2,
+    "order": 3,
     "params": [
       {
         "type": {
@@ -171,7 +206,7 @@
       "path": "lib"
     },
     "name": "htmlAttributesFor",
-    "order": 3,
+    "order": 4,
     "params": [
       {
         "type": {
@@ -227,7 +262,7 @@
       "path": "lib"
     },
     "name": "isKeyCode",
-    "order": 5,
+    "order": 6,
     "params": [
       {
         "type": {
@@ -272,7 +307,7 @@
       "path": "lib"
     },
     "name": "isServerSide",
-    "order": 6,
+    "order": 7,
     "returns": [
       {
         "type": {
@@ -285,7 +320,7 @@
     "scope": "static"
   },
   {
-    "deprecated": true,
+    "deprecated": "use `@the-/util.isVideoUrl()` instead",
     "description": "Detect src url is video or not",
     "id": "module:@the-/util-ui.isVideoSrc",
     "kind": "function",
@@ -297,7 +332,7 @@
       "path": "lib"
     },
     "name": "isVideoSrc",
-    "order": 7,
+    "order": 8,
     "params": [
       {
         "type": {
@@ -333,7 +368,7 @@
       "path": "lib"
     },
     "name": "newId",
-    "order": 8,
+    "order": 9,
     "params": [
       {
         "type": {
@@ -381,7 +416,7 @@
       "path": "lib"
     },
     "name": "readFileAsDataURL",
-    "order": 9,
+    "order": 10,
     "params": [
       {
         "type": {
@@ -416,7 +451,7 @@
       "path": "lib"
     },
     "name": "scrollToElement",
-    "order": 10,
+    "order": 11,
     "params": [
       {
         "type": {
@@ -452,7 +487,7 @@
       "path": "lib"
     },
     "name": "toggleBodyClass",
-    "order": 11,
+    "order": 12,
     "params": [
       {
         "type": {
