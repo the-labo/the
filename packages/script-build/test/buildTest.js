@@ -7,7 +7,7 @@
 const build = require('../lib/build')
 
 describe('build', function() {
-  this.timeout(3000)
+  this.timeout(7000)
 
   before(async () => {})
 
