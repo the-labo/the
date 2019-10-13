@@ -119,6 +119,22 @@ class ExampleComponent extends React.Component {
     const {
       state: { items },
     } = this
+    const handleSubmit = () =>
+      this.setState({
+        form: {},
+        items: [
+          ...this.state.items,
+          {
+            align: 'right',
+            at: new Date(),
+            text: this.state.form.text,
+            who: {
+              color: '#33A',
+              name: 'Me',
+            },
+          },
+        ],
+      })
     return (
       <div>
         <TheVideoStyle />
@@ -140,23 +156,7 @@ class ExampleComponent extends React.Component {
             }}
           />
           <TheChat.Form
-            onSubmit={() =>
-              this.setState({
-                form: {},
-                items: [
-                  ...this.state.items,
-                  {
-                    align: 'right',
-                    at: new Date(),
-                    text: this.state.form.text,
-                    who: {
-                      color: '#33A',
-                      name: 'Me',
-                    },
-                  },
-                ],
-              })
-            }
+            onSubmit={handleSubmit}
             onUpdate={(form) => this.setState({ form })}
             values={this.state.form}
           />

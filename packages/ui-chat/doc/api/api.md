@@ -11,9 +11,6 @@
 ## Classes
 
 <dl>
-<dt><a href="#TheChat">TheChat</a></dt>
-<dd><p>Chat UI of the-components</p>
-</dd>
 <dt><a href="#TheChatForm">TheChatForm</a></dt>
 <dd><p>Chat UI of the-components</p>
 </dd>
@@ -28,6 +25,9 @@
 ## Functions
 
 <dl>
+<dt><a href="#TheChat">TheChat()</a></dt>
+<dd><p>Chat UI of the-components</p>
+</dd>
 <dt><a href="#TheChatStyle">TheChatStyle()</a></dt>
 <dd><p>Style for TheChat</p>
 </dd>
@@ -38,13 +38,7 @@
 ## @the-/ui-chat
 Chat UI of the-components
 
-**Version**: 15.4.8  
-<a name="TheChat"></a>
-
-## TheChat
-Chat UI of the-components
-
-**Kind**: global class  
+**Version**: 15.4.12  
 <a name="TheChatForm"></a>
 
 ## TheChatForm
@@ -63,6 +57,12 @@ Chat Time line
 Chat Time line item
 
 **Kind**: global class  
+<a name="TheChat"></a>
+
+## TheChat()
+Chat UI of the-components
+
+**Kind**: global function  
 <a name="TheChatStyle"></a>
 
 ## TheChatStyle()

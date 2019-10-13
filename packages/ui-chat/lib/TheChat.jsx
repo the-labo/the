@@ -10,23 +10,17 @@ import TheChatTimeLineItem from './TheChatTimeLineItem'
 /**
  * Chat UI of the-components
  */
-class TheChat extends React.Component {
-  render() {
-    const {
-      props,
-      props: { children, className },
-    } = this
-
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-chat', className)}
-      >
-        {children}
-      </div>
-    )
-  }
+const TheChat = (props) => {
+  const { children, className } = props
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-chat', className)}
+    >
+      {children}
+    </div>
+  )
 }
 
 TheChat.Form = TheChatForm

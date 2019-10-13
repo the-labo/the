@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/util-ui
  * @typicalname utilUi
- * @version 16.0.5
+ * @version 16.0.6
  */
 'use strict'
 

@@ -7,4 +7,4 @@ async function tryExample() {
   await pipeToFile(fs.createReadStream('src.txt'), 'dest.txt')
 }
 
-tryExample().catch((err) => console.error(err))
+void tryExample().catch((err) => console.error(err))

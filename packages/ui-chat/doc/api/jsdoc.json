@@ -12,21 +12,7 @@
     "name": "@the-/ui-chat",
     "order": 0,
     "typicalname": "uiChat",
-    "version": "15.4.8"
-  },
-  {
-    "description": "Chat UI of the-components",
-    "id": "TheChat",
-    "kind": "class",
-    "longname": "TheChat",
-    "meta": {
-      "filename": "TheChat.jsx",
-      "lineno": 13,
-      "path": "lib"
-    },
-    "name": "TheChat",
-    "order": 1,
-    "scope": "global"
+    "version": "15.4.12"
   },
   {
     "description": "Chat UI of the-components",
@@ -68,6 +54,21 @@
     },
     "name": "TheChatTimeLineItem",
     "order": 23,
+    "scope": "global"
+  },
+  {
+    "description": "Chat UI of the-components",
+    "id": "TheChat",
+    "kind": "function",
+    "longname": "TheChat",
+    "meta": {
+      "filename": "TheChat.jsx",
+      "lineno": 13,
+      "path": "lib"
+    },
+    "name": "TheChat",
+    "order": 1,
+    "params": [],
     "scope": "global"
   },
   {

@@ -13,7 +13,7 @@
     "name": "@the-/util-server",
     "order": 2,
     "typicalname": "utilServer",
-    "version": "15.4.9"
+    "version": "15.4.11"
   },
   {
     "description": "Change file extension",
@@ -56,7 +56,7 @@
     "longname": "generateFile",
     "meta": {
       "filename": "generateFile.js",
-      "lineno": 3,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "generateFile",

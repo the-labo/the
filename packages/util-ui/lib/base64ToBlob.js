@@ -1,5 +1,7 @@
 'use strict'
 
+const { get } = require('bwindow')
+
 /**
  * Convert base64 data into blob
  * module:@the-/util-ui
@@ -7,6 +9,8 @@
  * @returns {?Blob}
  */
 function base64ToBlob(base64String) {
+  const Blob = get('Blob')
+  const atob = get('atob')
   if (!base64String) {
     return null
   }

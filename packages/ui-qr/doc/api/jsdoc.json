@@ -12,7 +12,7 @@
     "name": "@the-/ui-qr",
     "order": 0,
     "typicalname": "uiQr",
-    "version": "15.4.11"
+    "version": "15.5.0"
   },
   {
     "description": "QRCode the-component",
@@ -21,7 +21,7 @@
     "longname": "TheQr",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 12,
+      "lineno": 17,
       "path": "lib"
     },
     "name": "TheQr",
@@ -52,7 +52,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 93,
+      "lineno": 97,
       "path": "lib"
     },
     "name": "alt",
@@ -67,7 +67,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 95,
+      "lineno": 99,
       "path": "lib"
     },
     "name": "asLink",
@@ -82,7 +82,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 97,
+      "lineno": 101,
       "path": "lib"
     },
     "name": "onError",
@@ -97,7 +97,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 99,
+      "lineno": 103,
       "path": "lib"
     },
     "name": "onGenerate",
@@ -112,7 +112,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 101,
+      "lineno": 105,
       "path": "lib"
     },
     "name": "size",
@@ -127,7 +127,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 103,
+      "lineno": 107,
       "path": "lib"
     },
     "name": "text",

@@ -44,6 +44,7 @@ const TheQr = React.memo((props) => {
         )
       }
     }
+
     return 'div'
   }, [asLink, image])
   useEffect(() => {
@@ -51,6 +52,7 @@ const TheQr = React.memo((props) => {
       setImage(null)
       return
     }
+
     setSpinning(true)
     qrcode.toDataURL(
       text,
@@ -63,6 +65,7 @@ const TheQr = React.memo((props) => {
         } else {
           onGenerate && onGenerate(image)
         }
+
         setSpinning(false)
         setImage(image)
       },
