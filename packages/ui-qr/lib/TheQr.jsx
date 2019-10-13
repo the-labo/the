@@ -67,7 +67,7 @@ const TheQr = React.memo((props) => {
         setImage(image)
       },
     )
-  }, [text, onError, onGenerate])
+  }, [text, onError, onGenerate, setSpinning, setImage])
 
   const style = { height: displaySize || size, width: displaySize || size }
 

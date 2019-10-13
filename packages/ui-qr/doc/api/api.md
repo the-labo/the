@@ -8,7 +8,7 @@
 </dd>
 </dl>
 
-## Classes
+## Constants
 
 <dl>
 <dt><a href="#TheQr">TheQr</a></dt>
@@ -35,7 +35,7 @@ QRCode the-component
 ## TheQr
 QRCode the-component
 
-**Kind**: global class  
+**Kind**: global constant  
 <a name="TheQrStyle"></a>
 
 ## TheQrStyle()

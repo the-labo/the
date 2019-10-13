@@ -73,6 +73,8 @@ Usage
 ## API Guide
 
 
+- global
+  - [base64ToBlob(base64String)](./doc/api/api.md#base64ToBlob)
 - module:@the-/util-site
   - [.scrollToElement(element)](./doc/api/api.md#module_@the-/util-site.scrollToElement)
 - module:@the-/util-ui

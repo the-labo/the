@@ -13,7 +13,7 @@
     "name": "@the-/util-ui",
     "order": 5,
     "typicalname": "utilUi",
-    "version": "16.0.4"
+    "version": "16.0.5"
   },
   {
     "description": "Convert base64 data into blob\nmodule:@the-/util-ui",

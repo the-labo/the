@@ -17,15 +17,16 @@
   {
     "description": "QRCode the-component",
     "id": "TheQr",
-    "kind": "class",
+    "kind": "constant",
     "longname": "TheQr",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 18,
+      "lineno": 12,
       "path": "lib"
     },
     "name": "TheQr",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
@@ -51,7 +52,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 121,
+      "lineno": 93,
       "path": "lib"
     },
     "name": "alt",
@@ -66,7 +67,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 123,
+      "lineno": 95,
       "path": "lib"
     },
     "name": "asLink",
@@ -81,7 +82,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 125,
+      "lineno": 97,
       "path": "lib"
     },
     "name": "onError",
@@ -96,7 +97,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 127,
+      "lineno": 99,
       "path": "lib"
     },
     "name": "onGenerate",
@@ -111,7 +112,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 129,
+      "lineno": 101,
       "path": "lib"
     },
     "name": "size",
@@ -126,7 +127,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 131,
+      "lineno": 103,
       "path": "lib"
     },
     "name": "text",
