@@ -1,5 +1,17 @@
 [
   {
+    "id": "module:hoge2",
+    "kind": "module",
+    "longname": "module:hoge2",
+    "meta": {
+      "filename": "foo.js",
+      "lineno": 22,
+      "path": "misc/mocks/mock-project-01/lib"
+    },
+    "name": "hoge2",
+    "order": 0
+  },
+  {
     "id": "module:mock-project-01",
     "kind": "module",
     "longname": "module:mock-project-01",
@@ -9,18 +21,6 @@
       "path": "misc/mocks/mock-project-01/lib"
     },
     "name": "mock-project-01",
-    "order": 0
-  },
-  {
-    "id": "module:hoge2",
-    "kind": "module",
-    "longname": "module:hoge2",
-    "meta": {
-      "filename": "foo.js",
-      "lineno": 23,
-      "path": "misc/mocks/mock-project-01/lib"
-    },
-    "name": "hoge2",
     "order": 1
   },
   {
@@ -30,7 +30,7 @@
     "memberof": "module:mock-project-01.Hoge",
     "meta": {
       "filename": "foo.js",
-      "lineno": 18,
+      "lineno": 17,
       "path": "misc/mocks/mock-project-01/lib"
     },
     "name": "say",
@@ -55,7 +55,7 @@
     "memberof": "module:mock-project-01",
     "meta": {
       "filename": "foo.js",
-      "lineno": 16,
+      "lineno": 15,
       "path": "misc/mocks/mock-project-01/lib"
     },
     "name": "Hoge",
@@ -69,7 +69,7 @@
     "memberof": "module:mock-project-01",
     "meta": {
       "filename": "foo.js",
-      "lineno": 2,
+      "lineno": 4,
       "path": "misc/mocks/mock-project-01/lib"
     },
     "name": "foo",

@@ -5,7 +5,7 @@
 ## @the-/script-doc
 Doc script for the-projects
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 <a name="module_@the-/script-doc.doc"></a>
 
 ### @the-/script-doc.doc([dirname], [options]) ⇒ <code>Promise</code>

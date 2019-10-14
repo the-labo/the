@@ -10,28 +10,22 @@ import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
  * @memberof module:@the-/ui-alt
  * @class TheAlt
  */
-class TheAlt extends React.Component {
-  render() {
-    const {
-      props,
-      props: { children, className, enabled, text },
-    } = this
-
-    if (!enabled) {
-      return null
-    }
-
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-alt', className)}
-      >
-        <span className='the-alt-text'>{text}</span>
-        {children}
-      </div>
-    )
+const TheAlt = (props) => {
+  const { children, className, enabled, text } = props
+  if (!enabled) {
+    return null
   }
+
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-alt', className)}
+    >
+      <span className='the-alt-text'>{text}</span>
+      {children}
+    </div>
+  )
 }
 
 TheAlt.propTypes = {

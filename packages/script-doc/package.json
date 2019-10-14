@@ -1,7 +1,7 @@
 {
   "name": "@the-/script-doc",
   "description": "Doc script for the-projects",
-  "version": "15.4.10",
+  "version": "15.4.11",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,7 +18,7 @@
     "@the-/util-array": "^15.4.3",
     "aglob": "^3.0.1",
     "argx": "^4.0.4",
-    "commander": "^2.20.3",
+    "commander": "^3.0.2",
     "filedel": "^4.1.1",
     "findout": "^3.0.2",
     "stringcase": "^4.3.1",

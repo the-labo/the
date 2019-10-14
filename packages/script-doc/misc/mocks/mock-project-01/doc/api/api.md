@@ -3,12 +3,15 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_mock-project-01">mock-project-01</a></dt>
-<dd></dd>
 <dt><a href="#module_hoge2">hoge2</a></dt>
+<dd></dd>
+<dt><a href="#module_mock-project-01">mock-project-01</a></dt>
 <dd></dd>
 </dl>
 
+<a name="module_hoge2"></a>
+
+## hoge2
 <a name="module_mock-project-01"></a>
 
 ## mock-project-01
@@ -42,6 +45,3 @@ This is hoge
 | --- | --- | --- |
 | a1 | <code>string</code> | Argument 01 |
 
-<a name="module_hoge2"></a>
-
-## hoge2

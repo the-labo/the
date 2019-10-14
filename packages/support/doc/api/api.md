@@ -5,7 +5,7 @@
 ## @the-/support
 JS support version checker
 
-**Version**: 15.4.8  
+**Version**: 15.4.13  
 **License**: MIT  
 
 * [@the-/support](#module_@the-/support)
