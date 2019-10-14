@@ -11,51 +11,46 @@ import TheBarStyle from './TheBarStyle'
 /**
  * Bar of the-component
  */
-class TheActionBar extends React.Component {
-  render() {
-    const {
-      props,
-      props: {
-        buttons,
-        children,
-        className,
-        danger,
-        handlers,
-        hidden,
-        icons,
-        lead,
-      },
-    } = this
+const TheActionBar = (props) => {
+  const {
+    buttons,
+    children,
+    className,
+    danger,
+    handlers,
+    hidden,
+    icons,
+    lead,
+  } = props
 
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className', 'hidden'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={classnames('the-action-bar', className, {
-          'the-action-bar-hidden': hidden,
-        })}
-      >
-        <TheContainer className='the-action-bar-inner'>
-          {lead && <p className='the-action-bar-lead'>{lead}</p>}
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['className', 'hidden'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={classnames('the-action-bar', className, {
+        'the-action-bar-hidden': hidden,
+      })}
+    >
+      <TheContainer className='the-action-bar-inner'>
+        {lead && <p className='the-action-bar-lead'>{lead}</p>}
 
-          <div className='the-action-bar-buttons'>
-            {Object.keys(buttons).map((name) => (
-              <TheButton
-                className='the-action-bar-button'
-                danger={danger[name]}
-                icon={icons[name]}
-                key={name}
-                onClick={handlers[name]}
-              >
-                {buttons[name]}
-              </TheButton>
-            ))}
-          </div>
-          {children}
-        </TheContainer>
-      </div>
-    )
-  }
+        <div className='the-action-bar-buttons'>
+          {Object.keys(buttons).map((name) => (
+            <TheButton
+              className='the-action-bar-button'
+              danger={danger[name]}
+              icon={icons[name]}
+              key={name}
+              onClick={handlers[name]}
+            >
+              {buttons[name]}
+            </TheButton>
+          ))}
+        </div>
+        {children}
+      </TheContainer>
+    </div>
+  )
 }
 
 TheActionBar.Style = TheBarStyle

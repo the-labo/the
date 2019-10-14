@@ -8,23 +8,18 @@ import TheBarStyle from './TheBarStyle'
 /**
  * Bar of the-component
  */
-class TheBar extends React.PureComponent {
-  render() {
-    const {
-      props,
-      props: { children, className },
-    } = this
+const TheBar = (props) => {
+  const { children, className } = props
 
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={classnames('the-bar', className)}
-      >
-        {children}
-      </div>
-    )
-  }
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={classnames('the-bar', className)}
+    >
+      {children}
+    </div>
+  )
 }
 
 TheBar.Style = TheBarStyle

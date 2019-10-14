@@ -12,12 +12,12 @@
     "name": "@the-/ui-bar",
     "order": 0,
     "typicalname": "uiBar",
-    "version": "15.4.10"
+    "version": "15.4.11"
   },
   {
     "description": "Bar of the-component",
     "id": "TheActionBar",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheActionBar",
     "meta": {
       "filename": "TheActionBar.jsx",
@@ -26,12 +26,13 @@
     },
     "name": "TheActionBar",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
     "description": "Bar of the-component",
     "id": "TheBar",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheBar",
     "meta": {
       "filename": "TheBar.jsx",
@@ -40,6 +41,7 @@
     },
     "name": "TheBar",
     "order": 8,
+    "params": [],
     "scope": "global"
   },
   {
@@ -65,7 +67,7 @@
     "memberof": "TheActionBar.propTypes",
     "meta": {
       "filename": "TheActionBar.jsx",
-      "lineno": 65,
+      "lineno": 60,
       "path": "lib"
     },
     "name": "buttons",
@@ -80,7 +82,7 @@
     "memberof": "TheActionBar.propTypes",
     "meta": {
       "filename": "TheActionBar.jsx",
-      "lineno": 67,
+      "lineno": 62,
       "path": "lib"
     },
     "name": "danger",
@@ -95,7 +97,7 @@
     "memberof": "TheActionBar.propTypes",
     "meta": {
       "filename": "TheActionBar.jsx",
-      "lineno": 69,
+      "lineno": 64,
       "path": "lib"
     },
     "name": "handlers",
@@ -110,7 +112,7 @@
     "memberof": "TheActionBar.propTypes",
     "meta": {
       "filename": "TheActionBar.jsx",
-      "lineno": 71,
+      "lineno": 66,
       "path": "lib"
     },
     "name": "hidden",
@@ -125,7 +127,7 @@
     "memberof": "TheActionBar.propTypes",
     "meta": {
       "filename": "TheActionBar.jsx",
-      "lineno": 73,
+      "lineno": 68,
       "path": "lib"
     },
     "name": "icons",
@@ -140,7 +142,7 @@
     "memberof": "TheActionBar.propTypes",
     "meta": {
       "filename": "TheActionBar.jsx",
-      "lineno": 75,
+      "lineno": 70,
       "path": "lib"
     },
     "name": "lead",

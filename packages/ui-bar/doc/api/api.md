@@ -8,20 +8,15 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheActionBar">TheActionBar</a></dt>
-<dd><p>Bar of the-component</p>
-</dd>
-<dt><a href="#TheBar">TheBar</a></dt>
-<dd><p>Bar of the-component</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheActionBar">TheActionBar()</a></dt>
+<dd><p>Bar of the-component</p>
+</dd>
+<dt><a href="#TheBar">TheBar()</a></dt>
+<dd><p>Bar of the-component</p>
+</dd>
 <dt><a href="#TheBarStyle">TheBarStyle()</a></dt>
 <dd><p>Style for TheBar</p>
 </dd>
@@ -32,19 +27,19 @@
 ## @the-/ui-bar
 Bar of the-components
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 <a name="TheActionBar"></a>
 
-## TheActionBar
+## TheActionBar()
 Bar of the-component
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheBar"></a>
 
-## TheBar
+## TheBar()
 Bar of the-component
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheBarStyle"></a>
 
 ## TheBarStyle()
