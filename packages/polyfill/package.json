@@ -1,7 +1,7 @@
 {
   "name": "@the-/polyfill",
   "description": "Polyfill of the-frameworks",
-  "version": "16.0.1",
+  "version": "16.0.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,7 +14,7 @@
   "dependencies": {
     "abind": "^1.0.5",
     "bwindow": "^2.0.3",
-    "core-js": "^3.2.1",
+    "core-js": "^3.3.1",
     "cross-fetch": "^3.0.4",
     "fastclick": "^1.0.6",
     "image-capture": "^0.4.0",

@@ -13,7 +13,7 @@
     "name": "@the-/spell",
     "order": 2,
     "typicalname": "spell",
-    "version": "15.6.18"
+    "version": "15.6.19"
   },
   {
     "id": "module:@the-/spell.TheSpell()",

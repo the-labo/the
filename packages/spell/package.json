@@ -1,7 +1,7 @@
 {
   "name": "@the-/spell",
   "description": "Spell checker",
-  "version": "15.6.18",
+  "version": "15.6.19",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,7 +18,7 @@
     "asobj": "^3.0.1",
     "binary-extensions": "^2.0.0",
     "builtin-modules": "^3.1.0",
-    "colorprint": "^5.0.3",
+    "colorprint": "^6.0.4",
     "compressed-extensions": "^2.1.0",
     "css-color-keywords": "^1.0.0",
     "debug": "^4.1.1",
