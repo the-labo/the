@@ -14,14 +14,14 @@
 <dt><a href="#TheButton">TheButton</a></dt>
 <dd><p>Button of the-components</p>
 </dd>
-<dt><a href="#TheButtonGroup">TheButtonGroup</a></dt>
-<dd><p>Group of buttons</p>
-</dd>
 </dl>
 
 ## Functions
 
 <dl>
+<dt><a href="#TheButtonGroup">TheButtonGroup()</a></dt>
+<dd><p>Group of buttons</p>
+</dd>
 <dt><a href="#TheButtonStyle">TheButtonStyle()</a></dt>
 <dd><p>Style for TheButton</p>
 </dd>
@@ -32,7 +32,7 @@
 ## @the-/ui-button
 Button of the-components
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 <a name="TheButton"></a>
 
 ## TheButton
@@ -41,10 +41,10 @@ Button of the-components
 **Kind**: global class  
 <a name="TheButtonGroup"></a>
 
-## TheButtonGroup
+## TheButtonGroup()
 Group of buttons
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheButtonStyle"></a>
 
 ## TheButtonStyle()

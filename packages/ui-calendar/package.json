@@ -13,11 +13,11 @@
   "dependencies": {
     "@the-/const-ui": "^15.4.5",
     "@the-/date": "^15.4.2",
-    "@the-/ui-button": "^15.4.10",
+    "@the-/ui-button": "^15.4.11",
     "@the-/ui-condition": "^15.4.10",
     "@the-/ui-style": "^15.4.12",
     "@the-/util-color": "^15.4.10",
-    "@the-/util-ui": "^15.4.12",
+    "@the-/util-ui": "^16.0.5",
     "bui": "^0.1.16",
     "classnames": "^2.2.6",
     "moment": "^2.24.0",
@@ -25,7 +25,7 @@
     "objnest": "^5.0.10",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
-    "react-big-calendar": "^0.21.0",
+    "react-big-calendar": "^0.22.1",
     "react-dom": "^16.10.2",
     "run": "^1.4.0"
   },

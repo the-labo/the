@@ -3,7 +3,7 @@
 import c from 'classnames'
 import moment from 'moment'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, {useCallback, useMemo} from 'react'
 import BigCalendar from 'react-big-calendar'
 import theDate from '@the-/date'
 import { TheButton } from '@the-/ui-button'
@@ -25,42 +25,25 @@ const switcherClass = ({ selected }) =>
 const changerClass = () => c('the-calendar-changer', {})
 
 const components = {
-  event: class TheCalendarEvent extends React.Component {
-    render() {
-      const {
-        props: {
-          event: { id, node = null },
-          title,
-        },
-      } = this
-      return (
-        <div className='the-calendar-event' data-calendar-event-id={id}>
-          {title}
-          {node}
-        </div>
-      )
-    }
-  },
+  event: function TheCalendarEvent ({
+                                      event: { id, node = null },
+                                      title,
+                                    }) {
+    return (
+      <div className='the-calendar-event' data-calendar-event-id={id}>
+        {title}
+        {node}
+      </div>
+    )
+  }
 }
 
 /**
  * Calendar of the-components
  */
-class TheCalendar extends React.Component {
-  constructor(props) {
-    super(props)
-    this.handleMonthView = this.handleMonthView.bind(this)
-    this.handleWeekView = this.handleWeekView.bind(this)
-    this.handleDayView = this.handleDayView.bind(this)
-    this.handlePrev = this.handlePrev.bind(this)
-    this.handleNext = this.handleNext.bind(this)
-    this.handleEventSelect = this.handleEventSelect.bind(this)
-  }
-
-  get title() {
-    const {
-      props: { date, lang, view },
-    } = this
+const TheCalendar = (props) => {
+  const { date, lang, view, onNavigate } = props
+  const title = useMemo(() => {
     switch (view) {
       case 'day':
         return theDate(date, { lang }).format('LL')
@@ -71,47 +54,47 @@ class TheCalendar extends React.Component {
       default:
         return null
     }
-  }
+  }, [date, lang, view])
 
-  changeDate(amount) {
-    this.changeToDate(this.dateForAmount(amount))
-  }
 
-  changeToDate(date) {
-    this.props.onNavigate(date)
-  }
+  const dateForAmount = useCallback((amount)=> {
+      switch (view) {
+        case 'day':
+          return theDate(date)
+            .addDays(amount)
+            .toDate()
+        case 'month':
+          return theDate(date)
+            .addMonths(amount)
+            .toDate()
+        case 'week':
+          return theDate(date)
+            .addWeeks(amount)
+            .toDate()
+        default:
+          throw new Error(`Unknown view: ${view}`)
+      }
+  }, [date, view])
 
-  changeToView(view) {
+  const changeToDate= useCallback((date) =>{
+    onNavigate(date)
+  }, [onNavigate])
+
+  const changeDate=  useCallback((amount) =>{
+    changeToDate(dateForAmount(amount))
+  }, [changeToDate, dateForAmount])
+
+  const changeToView (view) {
     this.props.onView(view)
   }
 
-  dateForAmount(amount) {
-    const {
-      props: { date, view },
-    } = this
-    switch (view) {
-      case 'day':
-        return theDate(date)
-          .addDays(amount)
-          .toDate()
-      case 'month':
-        return theDate(date)
-          .addMonths(amount)
-          .toDate()
-      case 'week':
-        return theDate(date)
-          .addWeeks(amount)
-          .toDate()
-      default:
-        throw new Error(`Unknown view: ${view}`)
-    }
-  }
 
-  handleDayView() {
+
+  handleDayView () {
     this.changeToView('day')
   }
 
-  handleEventSelect(selected) {
+  handleEventSelect (selected) {
     const {
       props: { events },
     } = this
@@ -124,23 +107,23 @@ class TheCalendar extends React.Component {
     }
   }
 
-  handleMonthView() {
+  handleMonthView () {
     this.changeToView('month')
   }
 
-  handleNext() {
+  handleNext () {
     this.changeDate(+1)
   }
 
-  handlePrev() {
+  handlePrev () {
     this.changeDate(-1)
   }
 
-  handleWeekView() {
+  handleWeekView () {
     this.changeToView('week')
   }
 
-  render() {
+  render () {
     const {
       props,
       props: { className, date, events, lang, onNavigate, onView, view, views },

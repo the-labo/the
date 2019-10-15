@@ -34,7 +34,9 @@ exports.Readme = (dirname, options = {}) => {
 
     try {
       const url = new URL(repository.url)
-      return url.pathname.replace(/\.git$/, '')
+      return url.pathname
+        .replace(/^\//,'')
+        .replace(/\.git$/, '')
     } catch (e) {
       return null
     }

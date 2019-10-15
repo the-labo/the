@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheBody">TheBody</a></dt>
-<dd><p>Body of the-components</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheBody">TheBody()</a></dt>
+<dd><p>Body of the-components</p>
+</dd>
 <dt><a href="#TheBodyStyle">TheBodyStyle()</a></dt>
 <dd><p>Style for TheBody</p>
 </dd>
@@ -29,13 +24,13 @@
 ## @the-/ui-body
 Body of the-components
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 <a name="TheBody"></a>
 
-## TheBody
+## TheBody()
 Body of the-components
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheBodyStyle"></a>
 
 ## TheBodyStyle()

@@ -12,12 +12,12 @@
     "name": "@the-/ui-body",
     "order": 0,
     "typicalname": "uiBody",
-    "version": "15.4.10"
+    "version": "15.4.11"
   },
   {
     "description": "Body of the-components",
     "id": "TheBody",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheBody",
     "meta": {
       "filename": "TheBody.jsx",
@@ -26,6 +26,7 @@
     },
     "name": "TheBody",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {

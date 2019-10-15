@@ -14,22 +14,6 @@ import TheButtonGroup from './TheButtonGroup'
  * Button of the-components
  */
 class TheButton extends React.Component {
-  static Next(props) {
-    return <TheButton iconRight={TheButton.NEXT_ICON} {...props} />
-  }
-
-  static Prev(props) {
-    return <TheButton icon={TheButton.PREV_ICON} {...props} />
-  }
-
-  static Spinner() {
-    return (
-      <span className='the-button-spinner'>
-        <TheIcon.Spin className='the-button-spinner-icon' />
-      </span>
-    )
-  }
-
   constructor(props) {
     super(props)
     this.handleKeyDown = this.handleKeyDown.bind(this)
@@ -138,7 +122,7 @@ class TheButton extends React.Component {
           'the-button-vertical': !!largeIcon,
           'the-button-wide': wide,
         })}
-        href={(!to && props.href) || 'javascript:void(0)'}
+        href={(!to && props.href) || null}
         onClick={this.handleClick}
         onKeyDown={this.handleKeyDown}
         style={style}
@@ -231,5 +215,17 @@ TheButton.defaultProps = {
 }
 
 TheButton.displayName = 'TheButton'
+
+TheButton.Next = (props) => (
+  <TheButton iconRight={TheButton.NEXT_ICON} {...props} />
+)
+
+TheButton.Prev = (props) => <TheButton icon={TheButton.PREV_ICON} {...props} />
+
+TheButton.Spinner = () => (
+  <span className='the-button-spinner'>
+    <TheIcon.Spin className='the-button-spinner-icon' />
+  </span>
+)
 
 export default TheButton
