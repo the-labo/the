@@ -65,7 +65,7 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 177,
+      "lineno": 178,
       "path": "lib"
     },
     "name": "audio",
@@ -80,7 +80,7 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 179,
+      "lineno": 180,
       "path": "lib"
     },
     "name": "disabled",
@@ -95,7 +95,7 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 182,
+      "lineno": 183,
       "path": "lib"
     },
     "name": "onStream",
@@ -110,7 +110,7 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 184,
+      "lineno": 185,
       "path": "lib"
     },
     "name": "rejectedMessage",
@@ -125,7 +125,7 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 186,
+      "lineno": 187,
       "path": "lib"
     },
     "name": "video",

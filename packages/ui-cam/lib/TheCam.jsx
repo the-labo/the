@@ -123,7 +123,8 @@ class TheCam extends React.Component {
         props: { onReject },
       } = this
       onReject && onReject(e)
-      throw e
+      console.error('TheCam', e)
+      return
     }
     const {
       videoRef: { current: video },

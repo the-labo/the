@@ -61,6 +61,7 @@ class TheCamInput extends React.Component {
         name,
         readOnly,
         style = {},
+        uploadText = 'Upload',
         value,
         video,
         width,
@@ -75,7 +76,9 @@ class TheCamInput extends React.Component {
           except: ['className', 'width', 'height', 'readOnly', 'value'],
         })}
         {...eventHandlersFor(props, { except: [] })}
-        className={c('the-cam-input', className)}
+        className={c('the-cam-input', className, {
+          'the-cam-input-rejected': rejected,
+        })}
         data-name={name}
         id={id}
         style={{ ...style, height, width }}
@@ -126,6 +129,7 @@ class TheCamInput extends React.Component {
                   TheCamInput.UPLOAD_ICON,
                 )}
               />
+              <span className={'the-camp-input-upload-text'}>{uploadText}</span>
             </label>
           </div>
         )}

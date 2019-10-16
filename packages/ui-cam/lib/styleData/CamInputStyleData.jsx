@@ -2,10 +2,29 @@
 
 import { asStyleData } from '@the-/util-ui'
 
-function CamInputStyleData({ dominantColor, tappableHeight }) {
+function CamInputStyleData({ tappableHeight }) {
   const tappableSize = tappableHeight
   return asStyleData({
     '.the-cam-input': {
+      '.the-camp-input-upload-text': {
+        color: '#CCC',
+        textAlign: 'center',
+      },
+      '&.the-cam-input-rejected': {
+        '.the-cam-input-upload-label': {
+          '&:hover': {
+            opacity: 0.9,
+          },
+          alignItems: 'center',
+          background: '#F8F8F8',
+          border: '1px solid #F0F0F0',
+          boxShadow: '2px 2px 4px rgba(0,0,0,0.3) inset',
+          cursor: 'pointer',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+        },
+      },
       position: 'relative',
     },
     '.the-cam-input-action': {
@@ -76,23 +95,20 @@ function CamInputStyleData({ dominantColor, tappableHeight }) {
       width: '64px',
     },
     '.the-cam-input-upload-icon': {
-      '&:active': {
-        boxShadow: '1px 1px 2px rgba(0,0,0,0.33) inset',
-      },
-      '&:hover': {
-        background: '#F8F8F8',
-      },
       alignItems: 'center',
-      background: 'white',
-      border: '1px solid',
+      background: 'none',
+      border: 'none',
       borderRadius: '50%',
-      color: dominantColor,
+      boxShadow: 'none',
+      color: '#DDD',
       cursor: 'pointer',
       display: 'inline-flex',
       fontSize: '44px',
       height: '64px',
       justifyContent: 'center',
-      padding: '16px',
+      padding: 0,
+      pointerEvents: 'none',
+      position: 'relative',
       width: '64px',
     },
     '.the-cam-input-upload-input': {
