@@ -11,5 +11,6 @@ module.exports = {
   rules: {
     ...standardJSX.rules,
     'react/jsx-handler-names': 'off',
+    'react/jsx-key': 'off',
   },
 }

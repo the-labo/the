@@ -138,9 +138,11 @@ TheViewStyle.data = (options) => {
       textAlign: 'center',
     },
     '.the-view.the-view-fixed': {
+      '-webkit-overflow-scrolling': 'touch',
       bottom: 0,
       left: 0,
       overflow: 'auto',
+      overflowScrolling: 'touch',
       position: 'fixed',
       right: 0,
       top: 0,

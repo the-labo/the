@@ -29,7 +29,7 @@
     "postcss": "^7.0.18",
     "prettier": "^1.18.2",
     "writeout": "^2.2.4",
-    "yaml": "^1.7.1"
+    "yaml": "^1.7.2"
   },
   "devDependencies": {
     "filecopy": "^4.0.2"

@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheView">TheView</a></dt>
-<dd><p>View of the-components</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheView">TheView()</a></dt>
+<dd><p>View of the-components</p>
+</dd>
 <dt><a href="#TheViewStyle">TheViewStyle()</a></dt>
 <dd><p>Style for TheView</p>
 </dd>
@@ -29,13 +24,13 @@
 ## @the-/ui-view
 View of the-components
 
-**Version**: 15.4.10  
+**Version**: 15.4.12  
 <a name="TheView"></a>
 
-## TheView
+## TheView()
 View of the-components
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheViewStyle"></a>
 
 ## TheViewStyle()

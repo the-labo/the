@@ -4,7 +4,7 @@
  * @description View of the-components
  * @module @the-/ui-view
  * @typicalname uiView
- * @version 15.4.10
+ * @version 15.4.12
  */
 'use strict'
 

@@ -12,20 +12,21 @@
     "name": "@the-/ui-view",
     "order": 0,
     "typicalname": "uiView",
-    "version": "15.4.10"
+    "version": "15.4.12"
   },
   {
     "description": "View of the-components",
     "id": "TheView",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheView",
     "meta": {
       "filename": "TheView.jsx",
-      "lineno": 16,
+      "lineno": 21,
       "path": "lib"
     },
     "name": "TheView",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
@@ -51,7 +52,7 @@
     "memberof": "TheView.propTypes",
     "meta": {
       "filename": "TheView.jsx",
-      "lineno": 161,
+      "lineno": 173,
       "path": "lib"
     },
     "name": "fixed",
