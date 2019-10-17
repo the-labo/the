@@ -24,7 +24,7 @@
     "name": "@the-/ui-input",
     "order": 1,
     "typicalname": "uiInput",
-    "version": "15.5.2"
+    "version": "15.5.3"
   },
   {
     "description": "Input of the-components",
@@ -47,7 +47,7 @@
     "longname": "TheInputCheckbox",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 62,
+      "lineno": 18,
       "path": "lib"
     },
     "name": "TheInputCheckbox",
@@ -261,7 +261,7 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 183,
+      "lineno": 186,
       "path": "lib"
     },
     "name": "disabledValues",
@@ -276,7 +276,7 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 187,
+      "lineno": 190,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -291,7 +291,7 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 189,
+      "lineno": 192,
       "path": "lib"
     },
     "name": "options",
@@ -306,7 +306,7 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 195,
+      "lineno": 198,
       "path": "lib"
     },
     "name": "parser",
@@ -321,7 +321,7 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 197,
+      "lineno": 200,
       "path": "lib"
     },
     "name": "splitter",
@@ -336,7 +336,7 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 199,
+      "lineno": 202,
       "path": "lib"
     },
     "name": "value",

@@ -16,115 +16,6 @@ const NOTICE_HEIGHT = 36
  * Header of the-components
  */
 class TheHeader extends React.Component {
-  static Logo({
-    'aria-label': aliaLabel = 'Top',
-    children,
-    className,
-    to = '/',
-  }) {
-    return (
-      <TheLink
-        aria-label={aliaLabel}
-        className={c('the-header-logo', className)}
-        to={to}
-      >
-        {children}
-      </TheLink>
-    )
-  }
-
-  static Notice(props) {
-    const { actions, children, className, message } = props
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className', 'actions'] })}
-        className={c('the-header-notice', className)}
-        role='alert'
-        style={{ height: NOTICE_HEIGHT }}
-      >
-        <TheContainer className='the-header-notice-inner'>
-          <div className='the-header-notice-message'>{message}</div>
-          {children}
-          <div className='the-header-notice-actions'>
-            {Object.keys(actions).map((title) => (
-              <TheButton
-                className='the-header-notice-button'
-                key={title}
-                onClick={actions[title]}
-              >
-                {title}
-              </TheButton>
-            ))}
-          </div>
-        </TheContainer>
-      </div>
-    )
-  }
-
-  static Ribbon({ children, className }) {
-    return <div className={c('the-header-ribbon', className)}>{children}</div>
-  }
-
-  static RightArea(props) {
-    const { children, className } = props
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        className={c('the-header-right-area', className)}
-      >
-        {children}
-      </div>
-    )
-  }
-
-  static Tab({ children, className }) {
-    return (
-      <ul className={c('the-header-tab', className)} role='tablist'>
-        {children}
-      </ul>
-    )
-  }
-
-  static TabItem({
-    activeClassName,
-    activeStyle,
-    children,
-    className,
-    exact,
-    icon,
-    onClick,
-    text,
-    to,
-  }) {
-    if (to) {
-      return (
-        <li className={c('the-header-tab-item', className)} role='tab'>
-          <TheLink
-            activeClassName={activeClassName}
-            activeStyle={activeStyle}
-            exact={exact}
-            onClick={onClick}
-            to={to}
-          >
-            {icon && <TheIcon className={icon} />}
-            {text && <span className='the-header-tab-item-text'>{text}</span>}
-            <span className='the-header-tab-item-children'>{children}</span>
-          </TheLink>
-        </li>
-      )
-    } else {
-      return (
-        <li className={c('the-header-tab-item', className)} role='tab'>
-          <a onClick={onClick}>
-            {icon && <TheIcon className={icon} />}
-            {text && <span className='the-header-tab-item-text'>{text}</span>}
-            <span className='the-header-tab-item-children'>{children}</span>
-          </a>
-        </li>
-      )
-    }
-  }
-
   constructor(props) {
     super(props)
     this.inner = null
@@ -231,6 +122,115 @@ class TheHeader extends React.Component {
           {ribbon && <TheHeader.Ribbon>{ribbon}</TheHeader.Ribbon>}
         </div>
       </header>
+    )
+  }
+}
+
+TheHeader.Logo = function Logo({
+  'aria-label': aliaLabel = 'Top',
+  children,
+  className,
+  to = '/',
+}) {
+  return (
+    <TheLink
+      aria-label={aliaLabel}
+      className={c('the-header-logo', className)}
+      to={to}
+    >
+      {children}
+    </TheLink>
+  )
+}
+
+TheHeader.Notice = function Notice(props) {
+  const { actions, children, className, message } = props
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['className', 'actions'] })}
+      className={c('the-header-notice', className)}
+      role='alert'
+      style={{ height: NOTICE_HEIGHT }}
+    >
+      <TheContainer className='the-header-notice-inner'>
+        <div className='the-header-notice-message'>{message}</div>
+        {children}
+        <div className='the-header-notice-actions'>
+          {Object.keys(actions).map((title) => (
+            <TheButton
+              className='the-header-notice-button'
+              key={title}
+              onClick={actions[title]}
+            >
+              {title}
+            </TheButton>
+          ))}
+        </div>
+      </TheContainer>
+    </div>
+  )
+}
+
+TheHeader.Ribbon = function Ribbon({ children, className }) {
+  return <div className={c('the-header-ribbon', className)}>{children}</div>
+}
+
+TheHeader.RightArea = function RightArea(props) {
+  const { children, className } = props
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      className={c('the-header-right-area', className)}
+    >
+      {children}
+    </div>
+  )
+}
+
+TheHeader.Tab = function Tab({ children, className }) {
+  return (
+    <ul className={c('the-header-tab', className)} role='tablist'>
+      {children}
+    </ul>
+  )
+}
+
+TheHeader.TabItem = function TabItem({
+  activeClassName,
+  activeStyle,
+  children,
+  className,
+  exact,
+  icon,
+  onClick,
+  text,
+  to,
+}) {
+  if (to) {
+    return (
+      <li className={c('the-header-tab-item', className)} role='tab'>
+        <TheLink
+          activeClassName={activeClassName}
+          activeStyle={activeStyle}
+          exact={exact}
+          onClick={onClick}
+          to={to}
+        >
+          {icon && <TheIcon className={icon} />}
+          {text && <span className='the-header-tab-item-text'>{text}</span>}
+          <span className='the-header-tab-item-children'>{children}</span>
+        </TheLink>
+      </li>
+    )
+  } else {
+    return (
+      <li className={c('the-header-tab-item', className)} role='tab'>
+        <a onClick={onClick}>
+          {icon && <TheIcon className={icon} />}
+          {text && <span className='the-header-tab-item-text'>{text}</span>}
+          <span className='the-header-tab-item-children'>{children}</span>
+        </a>
+      </li>
     )
   }
 }
