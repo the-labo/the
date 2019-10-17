@@ -12,20 +12,34 @@
     "name": "@the-/ui-container",
     "order": 0,
     "typicalname": "uiContainer",
-    "version": "15.4.10"
+    "version": "15.4.11"
   },
   {
     "description": "Container of the-components",
     "id": "TheContainer",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheContainer",
     "meta": {
       "filename": "TheContainer.jsx",
-      "lineno": 11,
+      "lineno": 13,
       "path": "lib"
     },
     "name": "TheContainer",
     "order": 1,
+    "params": [
+      {
+        "name": "props"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "global"
   },
   {

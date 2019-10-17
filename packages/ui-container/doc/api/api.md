@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheContainer">TheContainer</a></dt>
-<dd><p>Container of the-components</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheContainer">TheContainer(props)</a> ⇒ <code>*</code></dt>
+<dd><p>Container of the-components</p>
+</dd>
 <dt><a href="#TheContainerStyle">TheContainerStyle()</a></dt>
 <dd><p>Style for TheContainer</p>
 </dd>
@@ -29,13 +24,18 @@
 ## @the-/ui-container
 Container of the-components
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 <a name="TheContainer"></a>
 
-## TheContainer
+## TheContainer(props) ⇒ <code>\*</code>
 Container of the-components
 
-**Kind**: global class  
+**Kind**: global function  
+
+| Param |
+| --- |
+| props | 
+
 <a name="TheContainerStyle"></a>
 
 ## TheContainerStyle()

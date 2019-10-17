@@ -7,23 +7,20 @@ import TheContainerStyle from './TheContainerStyle'
 
 /**
  * Container of the-components
+ * @param props
+ * @returns {*}
  */
-class TheContainer extends React.Component {
-  render() {
-    const {
-      props,
-      props: { children, className },
-    } = this
+function TheContainer(props) {
+  const { children, className } = props
 
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        className={c('the-container', className)}
-      >
-        {children}
-      </div>
-    )
-  }
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      className={c('the-container', className)}
+    >
+      {children}
+    </div>
+  )
 }
 
 TheContainer.Style = TheContainerStyle

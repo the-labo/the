@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-container",
   "description": "Container of the-components",
-  "version": "15.4.10",
+  "version": "15.4.11",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,7 +13,7 @@
   "dependencies": {
     "@the-/const-ui": "^15.4.5",
     "@the-/ui-style": "^15.4.12",
-    "@the-/util-ui": "^15.4.12",
+    "@the-/util-ui": "^16.0.5",
     "classnames": "^2.2.6",
     "prop-types": "^15.6.2"
   },

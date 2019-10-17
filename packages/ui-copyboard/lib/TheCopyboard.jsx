@@ -16,7 +16,7 @@ class TheCopyboard extends React.Component {
     this.state = {
       tipShown: false,
     }
-    this.anchor = null
+    this.anchorRef = React.createRef()
     this.hideTip = this.hideTip.bind(this)
     this.handleClick = this.handleClick.bind(this)
     this.tipOffTimer = null
@@ -28,12 +28,12 @@ class TheCopyboard extends React.Component {
 
   doCopy() {
     const {
-      anchor,
+      anchorRef,
       props: { text },
     } = this
 
     copy(text)
-    select(anchor)
+    select(anchorRef.current)
     this.showTip()
   }
 
@@ -76,9 +76,7 @@ class TheCopyboard extends React.Component {
           className='the-copyboard-anchor'
           href={href}
           onClick={this.handleClick}
-          ref={(anchor) => {
-            this.anchor = anchor
-          }}
+          ref={this.anchorRef}
         >
           {text}
           {children}
