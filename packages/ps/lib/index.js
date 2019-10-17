@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/ps
  * @typicalname ps
- * @version 15.5.0
+ * @version 15.5.1
  */
 'use strict'
 

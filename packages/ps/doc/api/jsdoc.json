@@ -13,7 +13,7 @@
     "name": "@the-/ps",
     "order": 3,
     "typicalname": "ps",
-    "version": "15.5.0"
+    "version": "15.5.1"
   },
   {
     "id": "module:@the-/ps.ThePS()",
@@ -65,7 +65,7 @@
     "memberof": "ThePS",
     "meta": {
       "filename": "ThePS.js",
-      "lineno": 77,
+      "lineno": 79,
       "path": "lib"
     },
     "name": "acquire",
@@ -89,7 +89,7 @@
     "memberof": "module:@the-/ps",
     "meta": {
       "filename": "ThePS.js",
-      "lineno": 13,
+      "lineno": 15,
       "path": "lib"
     },
     "name": "ThePS",

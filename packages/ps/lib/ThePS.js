@@ -10,6 +10,8 @@ const terminate = require('terminate')
 const yesno = require('yesno')
 const { isProduction } = require('@the-/check-env')
 
+console.log(yesno)
+
 /**
  * @memberof module:@the-/ps
  * @class ThePS
@@ -131,7 +133,7 @@ class ThePS {
     switch (this.killPolicy) {
       case 'ask': {
         return new Promise((resolve) =>
-          yesno.ask(
+          yesno(
             `[the-ps] There is another process (pid: ${pid}) exists. Do you want to kill it? [y/N]`,
             false,
             (res) => resolve(res),
