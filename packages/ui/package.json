@@ -13,7 +13,7 @@
   "dependencies": {
     "@the-/ui-alt": "^15.4.12",
     "@the-/ui-bar": "^15.4.11",
-    "@the-/ui-body": "^15.4.10",
+    "@the-/ui-body": "^15.4.11",
     "@the-/ui-button": "^15.4.11",
     "@the-/ui-caught": "^15.4.10",
     "@the-/ui-condition": "^15.4.10",
