@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@the-/const-ui": "^15.4.5",
-    "@the-/ui-container": "^15.4.10",
+    "@the-/ui-container": "^15.4.11",
     "@the-/ui-link": "^15.4.10",
     "@the-/ui-style": "^15.4.12",
     "@the-/util-ui": "^15.4.12",

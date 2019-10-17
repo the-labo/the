@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@the-/ui-body": "^15.4.11",
-    "@the-/ui-container": "^15.4.10",
+    "@the-/ui-container": "^15.4.11",
     "@the-/ui-head": "^15.4.10",
     "@the-/ui-header": "^15.4.11",
     "@the-/ui-html": "^15.4.10",
