@@ -12,20 +12,21 @@
     "name": "@the-/ui-calendar",
     "order": 0,
     "typicalname": "uiCalendar",
-    "version": "15.4.8"
+    "version": "15.4.11"
   },
   {
     "description": "Calendar of the-components",
     "id": "TheCalendar",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheCalendar",
     "meta": {
       "filename": "TheCalendar.jsx",
-      "lineno": 50,
+      "lineno": 41,
       "path": "lib"
     },
     "name": "TheCalendar",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
@@ -51,7 +52,7 @@
     "memberof": "TheCalendar.propTypes",
     "meta": {
       "filename": "TheCalendar.jsx",
-      "lineno": 229,
+      "lineno": 220,
       "path": "lib"
     },
     "name": "date",
@@ -66,7 +67,7 @@
     "memberof": "TheCalendar.propTypes",
     "meta": {
       "filename": "TheCalendar.jsx",
-      "lineno": 231,
+      "lineno": 222,
       "path": "lib"
     },
     "name": "events",
@@ -81,7 +82,7 @@
     "memberof": "TheCalendar.propTypes",
     "meta": {
       "filename": "TheCalendar.jsx",
-      "lineno": 233,
+      "lineno": 224,
       "path": "lib"
     },
     "name": "lang",
@@ -96,7 +97,7 @@
     "memberof": "TheCalendar.propTypes",
     "meta": {
       "filename": "TheCalendar.jsx",
-      "lineno": 235,
+      "lineno": 226,
       "path": "lib"
     },
     "name": "onNavigate",
@@ -111,7 +112,7 @@
     "memberof": "TheCalendar.propTypes",
     "meta": {
       "filename": "TheCalendar.jsx",
-      "lineno": 237,
+      "lineno": 228,
       "path": "lib"
     },
     "name": "onView",
@@ -126,7 +127,7 @@
     "memberof": "TheCalendar.propTypes",
     "meta": {
       "filename": "TheCalendar.jsx",
-      "lineno": 239,
+      "lineno": 230,
       "path": "lib"
     },
     "name": "view",

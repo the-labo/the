@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheCalendar">TheCalendar</a></dt>
-<dd><p>Calendar of the-components</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheCalendar">TheCalendar()</a></dt>
+<dd><p>Calendar of the-components</p>
+</dd>
 <dt><a href="#TheCalendarStyle">TheCalendarStyle()</a></dt>
 <dd><p>Style for TheCalendar</p>
 </dd>
@@ -29,13 +24,13 @@
 ## @the-/ui-calendar
 Calendar of the-components
 
-**Version**: 15.4.8  
+**Version**: 15.4.11  
 <a name="TheCalendar"></a>
 
-## TheCalendar
+## TheCalendar()
 Calendar of the-components
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheCalendarStyle"></a>
 
 ## TheCalendarStyle()

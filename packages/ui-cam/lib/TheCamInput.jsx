@@ -129,7 +129,7 @@ class TheCamInput extends React.Component {
                   TheCamInput.UPLOAD_ICON,
                 )}
               />
-              <span className={'the-camp-input-upload-text'}>{uploadText}</span>
+              <span className='the-camp-input-upload-text'>{uploadText}</span>
             </label>
           </div>
         )}

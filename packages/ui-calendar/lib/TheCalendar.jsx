@@ -3,14 +3,14 @@
 import c from 'classnames'
 import moment from 'moment'
 import PropTypes from 'prop-types'
-import React, {useCallback, useMemo} from 'react'
-import BigCalendar from 'react-big-calendar'
+import React, { useCallback, useMemo } from 'react'
+import { Calendar as BigCalendar, momentLocalizer } from 'react-big-calendar'
 import theDate from '@the-/date'
 import { TheButton } from '@the-/ui-button'
 import { TheCondition } from '@the-/ui-condition'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
-const localizer = BigCalendar.momentLocalizer(moment)
+const localizer = momentLocalizer(moment)
 
 const SwitcherLabels = {
   en: ['Month', 'Week', 'Day'],
@@ -25,24 +25,30 @@ const switcherClass = ({ selected }) =>
 const changerClass = () => c('the-calendar-changer', {})
 
 const components = {
-  event: function TheCalendarEvent ({
-                                      event: { id, node = null },
-                                      title,
-                                    }) {
+  event: function TheCalendarEvent({ event: { id, node = null }, title }) {
     return (
       <div className='the-calendar-event' data-calendar-event-id={id}>
         {title}
         {node}
       </div>
     )
-  }
+  },
 }
 
 /**
  * Calendar of the-components
  */
 const TheCalendar = (props) => {
-  const { date, lang, view, onNavigate } = props
+  const {
+    className,
+    date,
+    events,
+    lang,
+    onNavigate,
+    onView,
+    view,
+    views,
+  } = props
   const title = useMemo(() => {
     switch (view) {
       case 'day':
@@ -56,8 +62,8 @@ const TheCalendar = (props) => {
     }
   }, [date, lang, view])
 
-
-  const dateForAmount = useCallback((amount)=> {
+  const dateForAmount = useCallback(
+    (amount) => {
       switch (view) {
         case 'day':
           return theDate(date)
@@ -74,134 +80,136 @@ const TheCalendar = (props) => {
         default:
           throw new Error(`Unknown view: ${view}`)
       }
-  }, [date, view])
+    },
+    [date, view],
+  )
 
-  const changeToDate= useCallback((date) =>{
-    onNavigate(date)
-  }, [onNavigate])
+  const changeToDate = useCallback(
+    (date) => {
+      onNavigate(date)
+    },
+    [onNavigate],
+  )
 
-  const changeDate=  useCallback((amount) =>{
-    changeToDate(dateForAmount(amount))
-  }, [changeToDate, dateForAmount])
+  const changeDate = useCallback(
+    (amount) => {
+      changeToDate(dateForAmount(amount))
+    },
+    [changeToDate, dateForAmount],
+  )
 
-  const changeToView (view) {
-    this.props.onView(view)
-  }
+  const changeToView = useCallback(
+    (view) => {
+      onView(view)
+    },
+    [onView],
+  )
 
+  const handleDayView = useCallback(() => {
+    changeToView('day')
+  }, [])
 
-
-  handleDayView () {
-    this.changeToView('day')
-  }
-
-  handleEventSelect (selected) {
-    const {
-      props: { events },
-    } = this
-    for (const event of events) {
-      const { id, onSelect } = event
-      const hit = id === selected.id || event === selected
-      if (hit) {
-        onSelect && onSelect(event)
+  const handleEventSelect = useCallback(
+    (selected) => {
+      for (const event of events) {
+        const { id, onSelect } = event
+        const hit = id === selected.id || event === selected
+        if (hit) {
+          onSelect && onSelect(event)
+        }
       }
-    }
-  }
+    },
+    [events],
+  )
 
-  handleMonthView () {
-    this.changeToView('month')
-  }
+  const handleMonthView = useCallback(() => {
+    changeToView('month')
+  }, [changeToView])
 
-  handleNext () {
-    this.changeDate(+1)
-  }
+  const handleNext = useCallback(() => {
+    changeDate(+1)
+  }, [changeDate])
 
-  handlePrev () {
-    this.changeDate(-1)
-  }
+  const handlePrev = useCallback(() => {
+    changeDate(-1)
+  }, [changeDate])
 
-  handleWeekView () {
-    this.changeToView('week')
-  }
+  const handleWeekView = useCallback(() => {
+    changeToView('week')
+  }, [changeToView])
 
-  render () {
-    const {
-      props,
-      props: { className, date, events, lang, onNavigate, onView, view, views },
-    } = this
-
-    const switcherLabels = SwitcherLabels[lang] || SwitcherLabels.en
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-calendar', className)}
-      >
-        <div className='the-calendar-toolbar'>
-          <div className='the-calendar-toolbar-col'>
-            <div className='the-calendar-changer-container'>
-              <TheButton
-                className={changerClass()}
-                icon={TheCalendar.PREV_ICON}
-                onClick={this.handlePrev}
-              />
-              <TheButton
-                className={changerClass()}
-                icon={TheCalendar.NEXT_ICON}
-                onClick={this.handleNext}
-              />
-            </div>
-          </div>
-          <div className='the-calendar-toolbar-col the-calendar-toolbar-col-wide'>
-            <div className='the-calendar-title-container'>
-              <h3 className='the-calendar-title'>{this.title}</h3>
-            </div>
-          </div>
-          <div className='the-calendar-toolbar-col'>
-            <div className='the-calendar-switcher-container'>
-              <TheCondition if={views.includes('month')}>
-                <a
-                  className={switcherClass({ selected: view === 'month' })}
-                  onClick={this.handleMonthView}
-                >
-                  {switcherLabels[0]}
-                </a>
-              </TheCondition>
-              <TheCondition if={views.includes('week')}>
-                <a
-                  className={switcherClass({ selected: view === 'week' })}
-                  onClick={this.handleWeekView}
-                >
-                  {switcherLabels[1]}
-                </a>
-              </TheCondition>
-              <TheCondition if={views.includes('day')}>
-                <a
-                  className={switcherClass({ selected: view === 'day' })}
-                  onClick={this.handleDayView}
-                >
-                  {switcherLabels[2]}
-                </a>
-              </TheCondition>
-            </div>
+  const switcherLabels = SwitcherLabels[lang] || SwitcherLabels.en
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-calendar', className)}
+    >
+      <div className='the-calendar-toolbar'>
+        <div className='the-calendar-toolbar-col'>
+          <div className='the-calendar-changer-container'>
+            <TheButton
+              className={changerClass()}
+              icon={TheCalendar.PREV_ICON}
+              onClick={handlePrev}
+            />
+            <TheButton
+              className={changerClass()}
+              icon={TheCalendar.NEXT_ICON}
+              onClick={handleNext}
+            />
           </div>
         </div>
-        <BigCalendar
-          components={components}
-          culture={lang}
-          date={date}
-          events={events}
-          localizer={localizer}
-          onEvrn
-          onNavigate={onNavigate}
-          onSelectEvent={this.handleEventSelect}
-          onView={onView}
-          toolbar={false}
-          view={view}
-          views={views}
-        />
+        <div className='the-calendar-toolbar-col the-calendar-toolbar-col-wide'>
+          <div className='the-calendar-title-container'>
+            <h3 className='the-calendar-title'>{title}</h3>
+          </div>
+        </div>
+        <div className='the-calendar-toolbar-col'>
+          <div className='the-calendar-switcher-container'>
+            <TheCondition if={views.includes('month')}>
+              <a
+                className={switcherClass({ selected: view === 'month' })}
+                onClick={handleMonthView}
+              >
+                {switcherLabels[0]}
+              </a>
+            </TheCondition>
+            <TheCondition if={views.includes('week')}>
+              <a
+                className={switcherClass({ selected: view === 'week' })}
+                onClick={handleWeekView}
+              >
+                {switcherLabels[1]}
+              </a>
+            </TheCondition>
+            <TheCondition if={views.includes('day')}>
+              <a
+                className={switcherClass({ selected: view === 'day' })}
+                onClick={handleDayView}
+              >
+                {switcherLabels[2]}
+              </a>
+            </TheCondition>
+          </div>
+        </div>
       </div>
-    )
-  }
+      <BigCalendar
+        components={components}
+        culture={lang}
+        date={date}
+        events={events}
+        localizer={localizer}
+        onEvrn
+        onNavigate={onNavigate}
+        onSelectEvent={handleEventSelect}
+        onView={onView}
+        toolbar={false}
+        view={view}
+        views={views}
+      />
+    </div>
+  )
 }
 
 TheCalendar.NEXT_ICON = 'fas fa-caret-right'
