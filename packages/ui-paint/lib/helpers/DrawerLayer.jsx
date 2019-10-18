@@ -4,6 +4,7 @@
 'use strict'
 
 import CanvasAccess from './CanvasAccess'
+import CircleDrawMethod from './methods/CircleDrawMethod'
 import FreeDrawMethod from './methods/FreeDrawMethod'
 import RectDrawMethod from './methods/RectDrawMethod'
 import StraightDrawMethod from './methods/StraightDrawMethod'
@@ -26,6 +27,9 @@ class DrawerLayer {
 
     const { ctx } = canvasAccess
     switch (method || DrawingMethods.FREE) {
+      case DrawingMethods.CIRCLE:
+        CircleDrawMethod(ctx, points)
+        break
       case DrawingMethods.FREE:
         FreeDrawMethod(ctx, points)
         break

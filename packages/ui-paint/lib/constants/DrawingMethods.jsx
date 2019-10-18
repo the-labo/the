@@ -6,6 +6,7 @@ const DrawingMethods = Object.freeze(
    * @enum {string} DrawMethods
    */
   {
+    CIRCLE: 'circle',
     FREE: 'free',
     RECT: 'rect',
     STRAIGHT: 'straight',

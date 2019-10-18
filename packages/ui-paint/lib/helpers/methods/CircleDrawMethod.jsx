@@ -1,6 +1,6 @@
 'use strict'
 
-function RectDrawMethod(ctx, points) {
+function CircleDrawMethod(ctx, points) {
   const enough = points.length >= 2
   if (!enough) {
     const [{ x, y }] = points
@@ -14,11 +14,14 @@ function RectDrawMethod(ctx, points) {
   ctx.beginPath()
   const [start] = points
   const last = points[points.length - 1]
-  const [x1, x2] = [start.x, last.x].sort((a, b) => a - b)
-  const [y1, y2] = [start.y, last.y].sort((a, b) => a - b)
-  ctx.rect(x1, y1, x2 - x1, y2 - y1)
+
+  const cx = (start.x + last.x) / 2
+  const cy = (start.y + last.y) / 2
+  const radius =
+    Math.sqrt((start.x - last.x) ** 2 + (start.y - last.y) ** 2) / 2
+  ctx.arc(cx, cy, radius, 0, 2 * Math.PI)
   ctx.stroke()
   ctx.closePath()
 }
 
-export default RectDrawMethod
+export default CircleDrawMethod
