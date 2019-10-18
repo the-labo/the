@@ -8,34 +8,29 @@ import TheDialog from './TheDialog'
 /**
  * Yes No Dialog
  */
-class TheYesNoDialog extends React.Component {
-  static Button({ onClick, text }) {
-    return (
-      <a className='the-yes-no-dialog-button' onClick={onClick} role='button'>
-        <span className='the-yes-no-dialog-button-text'>{text}</span>
-      </a>
-    )
-  }
+const TheYesNoDialog = (props) => {
+  const { noText, onNo, onYes, yesText } = props
 
-  render() {
-    const {
-      props,
-      props: { noText, onNo, onYes, yesText },
-    } = this
+  const dialogProps = clone(props, {
+    except: ['onYes', 'onNo', 'yesText', 'noText'],
+  })
 
-    const dialogProps = clone(props, {
-      except: ['onYes', 'onNo', 'yesText', 'noText'],
-    })
+  const footer = (
+    <div className='the-yes-no-dialog-control'>
+      <TheYesNoDialog.Button onClick={onNo} text={noText} />
+      <TheYesNoDialog.Button onClick={onYes} text={yesText} />
+    </div>
+  )
 
-    const footer = (
-      <div className='the-yes-no-dialog-control'>
-        <TheYesNoDialog.Button onClick={onNo} text={noText} />
-        <TheYesNoDialog.Button onClick={onYes} text={yesText} />
-      </div>
-    )
+  return <TheDialog {...dialogProps} footer={footer} />
+}
 
-    return <TheDialog {...dialogProps} footer={footer} />
-  }
+TheYesNoDialog.Button = function Button({ onClick, text }) {
+  return (
+    <a className='the-yes-no-dialog-button' onClick={onClick} role='button'>
+      <span className='the-yes-no-dialog-button-text'>{text}</span>
+    </a>
+  )
 }
 
 TheYesNoDialog.propTypes = {

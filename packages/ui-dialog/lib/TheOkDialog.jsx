@@ -9,14 +9,6 @@ import TheDialog from './TheDialog'
  * Ok Dialog
  */
 class TheOkDialog extends React.Component {
-  static Button({ onClick, text }) {
-    return (
-      <a className='the-ok-dialog-button' onClick={onClick} role='button'>
-        <span className='the-ok-dialog-button-text'>{text}</span>
-      </a>
-    )
-  }
-
   render() {
     const {
       props,
@@ -33,6 +25,13 @@ class TheOkDialog extends React.Component {
 
     return <TheDialog {...dialogProps} footer={footer} />
   }
+}
+TheOkDialog.Button = function Button({ onClick, text }) {
+  return (
+    <a className='the-ok-dialog-button' onClick={onClick} role='button'>
+      <span className='the-ok-dialog-button-text'>{text}</span>
+    </a>
+  )
 }
 
 TheOkDialog.propTypes = {

@@ -16,52 +16,6 @@ import {
  * Dialog for the-components
  */
 class TheDialog extends React.Component {
-  static Background({ onClose }) {
-    return (
-      <div className='the-dialog-back' onClick={() => onClose()}>
-        <div className='the-dialog-back-inner' />
-      </div>
-    )
-  }
-
-  static Body({ children, className, style }) {
-    return (
-      <div
-        className={c('the-dialog-body', className)}
-        style={Object.assign({}, style)}
-      >
-        {children}
-      </div>
-    )
-  }
-
-  static Footer({ children, className }) {
-    return (
-      <div className={c('the-dialog-footer', className)}>
-        <div className='the-dialog-footer-inner'>{children}</div>
-      </div>
-    )
-  }
-
-  static Header({
-    ariaLevel = 2,
-    children,
-    className,
-    role = 'heading',
-    style,
-  }) {
-    return (
-      <div
-        aria-level={ariaLevel}
-        className={c('the-dialog-header', className)}
-        role={role}
-        style={Object.assign({}, style)}
-      >
-        {children}
-      </div>
-    )
-  }
-
   constructor() {
     super(...arguments)
     this._id = newId({ prefix: 'the-dialog-' })
@@ -162,6 +116,52 @@ class TheDialog extends React.Component {
   toggleDocumentScroll(enabled) {
     toggleBodyClass(`the-dialog-fix-for-${this.id}`, enabled)
   }
+}
+
+TheDialog.Background = function Background({ onClose }) {
+  return (
+    <div className='the-dialog-back' onClick={() => onClose()}>
+      <div className='the-dialog-back-inner' />
+    </div>
+  )
+}
+
+TheDialog.Body = function Body({ children, className, style }) {
+  return (
+    <div
+      className={c('the-dialog-body', className)}
+      style={Object.assign({}, style)}
+    >
+      {children}
+    </div>
+  )
+}
+
+TheDialog.Footer = function Footer({ children, className }) {
+  return (
+    <div className={c('the-dialog-footer', className)}>
+      <div className='the-dialog-footer-inner'>{children}</div>
+    </div>
+  )
+}
+
+TheDialog.Header = function Header({
+  ariaLevel = 2,
+  children,
+  className,
+  role = 'heading',
+  style,
+}) {
+  return (
+    <div
+      aria-level={ariaLevel}
+      className={c('the-dialog-header', className)}
+      role={role}
+      style={Object.assign({}, style)}
+    >
+      {children}
+    </div>
+  )
 }
 
 TheDialog.CLOSE_ICON = 'fas fa-times'
