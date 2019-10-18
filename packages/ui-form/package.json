@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-form",
   "description": "Form of the-components",
-  "version": "15.4.10",
+  "version": "15.4.11",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -16,7 +16,7 @@
     "@the-/ui-condition": "^15.4.11",
     "@the-/ui-icon": "^15.4.10",
     "@the-/ui-style": "^15.4.12",
-    "@the-/util-ui": "^15.4.12",
+    "@the-/util-ui": "^16.0.5",
     "asobj": "^3.0.1",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"

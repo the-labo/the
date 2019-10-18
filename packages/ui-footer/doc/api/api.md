@@ -8,7 +8,7 @@
 </dd>
 </dl>
 
-## Classes
+## Constants
 
 <dl>
 <dt><a href="#TheFooter">TheFooter</a></dt>
@@ -29,13 +29,13 @@
 ## @the-/ui-footer
 Footer of the-components
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 <a name="TheFooter"></a>
 
 ## TheFooter
 Footer of the-components
 
-**Kind**: global class  
+**Kind**: global constant  
 <a name="TheFooterStyle"></a>
 
 ## TheFooterStyle()

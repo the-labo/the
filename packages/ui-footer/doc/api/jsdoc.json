@@ -12,12 +12,12 @@
     "name": "@the-/ui-footer",
     "order": 0,
     "typicalname": "uiFooter",
-    "version": "15.4.10"
+    "version": "15.4.11"
   },
   {
     "description": "Footer of the-components",
     "id": "TheFooter",
-    "kind": "class",
+    "kind": "constant",
     "longname": "TheFooter",
     "meta": {
       "filename": "TheFooter.jsx",
@@ -26,6 +26,7 @@
     },
     "name": "TheFooter",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
