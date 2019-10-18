@@ -10,53 +10,50 @@ import TheFooterStyle from './TheFooterStyle'
 /**
  * Footer of the-components
  */
-class TheFooter extends React.PureComponent {
-  static CopyRight({ children, className, holder, year }) {
-    return (
-      <div className={classnames('the-footer-copyright', className)}>
-        {holder && `© ${year || ''} ${holder}`}
-        {children}
-      </div>
-    )
-  }
+const TheFooter = React.memo((props) => {
+  const { children, className } = props
+  return (
+    <footer
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      className={classnames('the-footer', className)}
+    >
+      <TheContainer className='the-footer-inner'>{children}</TheContainer>
+    </footer>
+  )
+})
 
-  static Link({ children, className, to }) {
-    return (
-      <TheLink className={classnames('the-footer-link', className)} to={to}>
-        {children}
-      </TheLink>
-    )
-  }
+TheFooter.CopyRight = function CopyRight({
+  children,
+  className,
+  holder,
+  year = new Date().getFullYear(),
+}) {
+  return (
+    <div className={classnames('the-footer-copyright', className)}>
+      {holder && `© ${year || ''} ${holder}`}
+      {children}
+    </div>
+  )
+}
 
-  static Links({ children, className }) {
-    return (
-      <div className={classnames('the-footer-links', className)}>
-        {children}
-      </div>
-    )
-  }
+TheFooter.Link = function Link({ children, className, to }) {
+  return (
+    <TheLink className={classnames('the-footer-link', className)} to={to}>
+      {children}
+    </TheLink>
+  )
+}
 
-  static Row({ children, className }) {
-    return (
-      <div className={classnames('the-footer-row', className)}>{children}</div>
-    )
-  }
+TheFooter.Links = function Links({ children, className }) {
+  return (
+    <div className={classnames('the-footer-links', className)}>{children}</div>
+  )
+}
 
-  render() {
-    const {
-      props,
-      props: { children, className },
-    } = this
-
-    return (
-      <footer
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        className={classnames('the-footer', className)}
-      >
-        <TheContainer className='the-footer-inner'>{children}</TheContainer>
-      </footer>
-    )
-  }
+TheFooter.Row = function Row({ children, className }) {
+  return (
+    <div className={classnames('the-footer-row', className)}>{children}</div>
+  )
 }
 
 TheFooter.Style = TheFooterStyle

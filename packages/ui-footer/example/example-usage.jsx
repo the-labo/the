@@ -8,7 +8,9 @@ class ExampleComponent extends React.PureComponent {
     return (
       <div>
         <TheFooterStyle />
-        <TheFooter />
+        <TheFooter>
+          <TheFooter.CopyRight holder={'the-labo'} />
+        </TheFooter>
       </div>
     )
   }

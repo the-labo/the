@@ -12,21 +12,7 @@
     "name": "@the-/ui-dialog",
     "order": 0,
     "typicalname": "uiDialog",
-    "version": "15.4.11"
-  },
-  {
-    "description": "Confirm Dialog",
-    "id": "TheConfirmDialog",
-    "kind": "class",
-    "longname": "TheConfirmDialog",
-    "meta": {
-      "filename": "TheConfirmDialog.jsx",
-      "lineno": 14,
-      "path": "lib"
-    },
-    "name": "TheConfirmDialog",
-    "order": 1,
-    "scope": "global"
+    "version": "15.4.12"
   },
   {
     "description": "Dialog for the-components",
@@ -35,7 +21,7 @@
     "longname": "TheDialog",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 65,
+      "lineno": 19,
       "path": "lib"
     },
     "name": "TheDialog",
@@ -57,17 +43,18 @@
     "scope": "global"
   },
   {
-    "description": "Yes No Dialog",
-    "id": "TheYesNoDialog",
-    "kind": "class",
-    "longname": "TheYesNoDialog",
+    "description": "Confirm Dialog",
+    "id": "TheConfirmDialog",
+    "kind": "function",
+    "longname": "TheConfirmDialog",
     "meta": {
-      "filename": "TheYesNoDialog.jsx",
-      "lineno": 11,
+      "filename": "TheConfirmDialog.jsx",
+      "lineno": 13,
       "path": "lib"
     },
-    "name": "TheYesNoDialog",
-    "order": 25,
+    "name": "TheConfirmDialog",
+    "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
@@ -86,6 +73,21 @@
     "scope": "global"
   },
   {
+    "description": "Yes No Dialog",
+    "id": "TheYesNoDialog",
+    "kind": "function",
+    "longname": "TheYesNoDialog",
+    "meta": {
+      "filename": "TheYesNoDialog.jsx",
+      "lineno": 11,
+      "path": "lib"
+    },
+    "name": "TheYesNoDialog",
+    "order": 25,
+    "params": [],
+    "scope": "global"
+  },
+  {
     "description": "Text of NO button",
     "id": "TheConfirmDialog.propTypes.checkText",
     "kind": "member",
@@ -93,7 +95,7 @@
     "memberof": "TheConfirmDialog.propTypes",
     "meta": {
       "filename": "TheConfirmDialog.jsx",
-      "lineno": 60,
+      "lineno": 53,
       "path": "lib"
     },
     "name": "checkText",
@@ -108,7 +110,7 @@
     "memberof": "TheConfirmDialog.propTypes",
     "meta": {
       "filename": "TheConfirmDialog.jsx",
-      "lineno": 62,
+      "lineno": 55,
       "path": "lib"
     },
     "name": "onClose",
@@ -123,7 +125,7 @@
     "memberof": "TheConfirmDialog.propTypes",
     "meta": {
       "filename": "TheConfirmDialog.jsx",
-      "lineno": 64,
+      "lineno": 57,
       "path": "lib"
     },
     "name": "onSubmit",
@@ -138,7 +140,7 @@
     "memberof": "TheConfirmDialog.propTypes",
     "meta": {
       "filename": "TheConfirmDialog.jsx",
-      "lineno": 66,
+      "lineno": 59,
       "path": "lib"
     },
     "name": "present",
@@ -153,7 +155,7 @@
     "memberof": "TheConfirmDialog.propTypes",
     "meta": {
       "filename": "TheConfirmDialog.jsx",
-      "lineno": 68,
+      "lineno": 61,
       "path": "lib"
     },
     "name": "spinning",
@@ -168,7 +170,7 @@
     "memberof": "TheConfirmDialog.propTypes",
     "meta": {
       "filename": "TheConfirmDialog.jsx",
-      "lineno": 70,
+      "lineno": 63,
       "path": "lib"
     },
     "name": "submitText",
@@ -183,7 +185,7 @@
     "memberof": "TheConfirmDialog.propTypes",
     "meta": {
       "filename": "TheConfirmDialog.jsx",
-      "lineno": 72,
+      "lineno": 65,
       "path": "lib"
     },
     "name": "title",
@@ -333,7 +335,7 @@
     "memberof": "TheOkDialog.propTypes",
     "meta": {
       "filename": "TheOkDialog.jsx",
-      "lineno": 41,
+      "lineno": 40,
       "path": "lib"
     },
     "name": "okText",
@@ -348,7 +350,7 @@
     "memberof": "TheOkDialog.propTypes",
     "meta": {
       "filename": "TheOkDialog.jsx",
-      "lineno": 43,
+      "lineno": 42,
       "path": "lib"
     },
     "name": "onClose",
@@ -363,7 +365,7 @@
     "memberof": "TheOkDialog.propTypes",
     "meta": {
       "filename": "TheOkDialog.jsx",
-      "lineno": 46,
+      "lineno": 45,
       "path": "lib"
     },
     "name": "spinning",
@@ -378,7 +380,7 @@
     "memberof": "TheOkDialog.propTypes",
     "meta": {
       "filename": "TheOkDialog.jsx",
-      "lineno": 48,
+      "lineno": 47,
       "path": "lib"
     },
     "name": "title",
@@ -393,7 +395,7 @@
     "memberof": "TheYesNoDialog.propTypes",
     "meta": {
       "filename": "TheYesNoDialog.jsx",
-      "lineno": 44,
+      "lineno": 39,
       "path": "lib"
     },
     "name": "noText",
@@ -408,7 +410,7 @@
     "memberof": "TheYesNoDialog.propTypes",
     "meta": {
       "filename": "TheYesNoDialog.jsx",
-      "lineno": 46,
+      "lineno": 41,
       "path": "lib"
     },
     "name": "onClose",
@@ -423,7 +425,7 @@
     "memberof": "TheYesNoDialog.propTypes",
     "meta": {
       "filename": "TheYesNoDialog.jsx",
-      "lineno": 48,
+      "lineno": 43,
       "path": "lib"
     },
     "name": "onNo",
@@ -438,7 +440,7 @@
     "memberof": "TheYesNoDialog.propTypes",
     "meta": {
       "filename": "TheYesNoDialog.jsx",
-      "lineno": 50,
+      "lineno": 45,
       "path": "lib"
     },
     "name": "onYes",
@@ -453,7 +455,7 @@
     "memberof": "TheYesNoDialog.propTypes",
     "meta": {
       "filename": "TheYesNoDialog.jsx",
-      "lineno": 53,
+      "lineno": 48,
       "path": "lib"
     },
     "name": "spinning",
@@ -468,7 +470,7 @@
     "memberof": "TheYesNoDialog.propTypes",
     "meta": {
       "filename": "TheYesNoDialog.jsx",
-      "lineno": 55,
+      "lineno": 50,
       "path": "lib"
     },
     "name": "title",
@@ -483,7 +485,7 @@
     "memberof": "TheYesNoDialog.propTypes",
     "meta": {
       "filename": "TheYesNoDialog.jsx",
-      "lineno": 57,
+      "lineno": 52,
       "path": "lib"
     },
     "name": "yesText",
