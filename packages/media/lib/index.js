@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/media
  * @typicalname media
- * @version 15.5.3
+ * @version 15.5.6
  */
 'use strict'
 

@@ -52,7 +52,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 97,
+      "lineno": 100,
       "path": "lib"
     },
     "name": "alt",
@@ -67,7 +67,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 99,
+      "lineno": 102,
       "path": "lib"
     },
     "name": "asLink",
@@ -82,7 +82,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 101,
+      "lineno": 104,
       "path": "lib"
     },
     "name": "onError",
@@ -97,7 +97,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 103,
+      "lineno": 106,
       "path": "lib"
     },
     "name": "onGenerate",
@@ -112,7 +112,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 105,
+      "lineno": 108,
       "path": "lib"
     },
     "name": "size",
@@ -127,7 +127,7 @@
     "memberof": "TheQr.propTypes",
     "meta": {
       "filename": "TheQr.jsx",
-      "lineno": 107,
+      "lineno": 110,
       "path": "lib"
     },
     "name": "text",

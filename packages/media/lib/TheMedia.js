@@ -1,7 +1,10 @@
 'use strict'
 
+const { TheLock } = require('@the-/lock')
 const { get } = require('@the-/window')
 const { canZoomTrack } = require('./helpers')
+
+const mediaLock = new TheLock()
 
 /**
  * @memberof module:@the-/media
@@ -32,8 +35,9 @@ class TheMedia {
     if (!mediaDevices) {
       return null
     }
-
-    return mediaDevices.getUserMedia(constrains)
+    return mediaLock.acquire('mediaDevices', async () =>
+      mediaDevices.getUserMedia(constrains),
+    )
   }
 
   constructor(options = {}) {
