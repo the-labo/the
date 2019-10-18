@@ -1,13 +1,13 @@
-/**
- * Method of drawing
- * @enum {string} DrawMethods
- */
 'use strict'
 
 const DrawingMethods = Object.freeze(
-  /** @lends DrawingMethods */
+  /**
+   * Method of drawing
+   * @enum {string} DrawMethods
+   */
   {
     FREE: 'free',
+    RECT: 'rect',
     STRAIGHT: 'straight',
   },
 )

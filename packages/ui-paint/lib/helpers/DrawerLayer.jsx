@@ -5,6 +5,7 @@
 
 import CanvasAccess from './CanvasAccess'
 import FreeDrawMethod from './methods/FreeDrawMethod'
+import RectDrawMethod from './methods/RectDrawMethod'
 import StraightDrawMethod from './methods/StraightDrawMethod'
 import DrawingMethods from '../constants/DrawingMethods'
 
@@ -27,6 +28,9 @@ class DrawerLayer {
     switch (method || DrawingMethods.FREE) {
       case DrawingMethods.FREE:
         FreeDrawMethod(ctx, points)
+        break
+      case DrawingMethods.RECT:
+        RectDrawMethod(ctx, points)
         break
       case DrawingMethods.STRAIGHT:
         StraightDrawMethod(ctx, points)

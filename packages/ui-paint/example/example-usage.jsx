@@ -78,6 +78,17 @@ class ExampleComponent extends React.Component {
           />
         </section>
 
+        <section>
+          <h3>Rect write</h3>
+          <ThePaint
+            method='rect'
+            onDrawer={this.onDrawer}
+            onDrawStart={this.onDrawStart}
+            style={{ background: 'white' }}
+            width='100%'
+          />
+        </section>
+
         <br />
 
         <hr />

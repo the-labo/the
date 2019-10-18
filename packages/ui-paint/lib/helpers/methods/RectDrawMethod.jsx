@@ -1,6 +1,6 @@
 'use strict'
 
-function StraightDrawMethod(ctx, points) {
+function RectDrawMethod(ctx, points) {
   const enough = points.length >= 2
   if (!enough) {
     const [{ x, y }] = points
@@ -14,10 +14,11 @@ function StraightDrawMethod(ctx, points) {
   ctx.beginPath()
   const [start] = points
   const last = points[points.length - 1]
-  ctx.moveTo(start.x, start.y)
-  ctx.lineTo(last.x, last.y)
+  const [x1, x2] = [start.x, last.x].sort()
+  const [y1, y2] = [start.y, last.y].sort()
+  ctx.rect(x1, y1, x2 - x1, y2 - y1)
   ctx.stroke()
   ctx.closePath()
 }
 
-export default StraightDrawMethod
+export default RectDrawMethod
