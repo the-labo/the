@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-menu",
   "description": "Menu of the-components",
-  "version": "15.4.15",
+  "version": "15.4.16",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -15,7 +15,7 @@
     "@the-/ui-icon": "^15.4.11",
     "@the-/ui-link": "^15.4.11",
     "@the-/ui-style": "^15.4.12",
-    "@the-/util-ui": "^15.4.12",
+    "@the-/util-ui": "^16.0.5",
     "@the-/window": "^15.5.5",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",

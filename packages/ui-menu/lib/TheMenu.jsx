@@ -10,26 +10,21 @@ import TheMenuStyle from './TheMenuStyle'
 /**
  * Menu of the-components
  */
-class TheMenu extends React.Component {
-  render() {
-    const {
-      props,
-      props: { children, className, grid },
-    } = this
+const TheMenu = (props) => {
+  const { children, className, grid } = props
 
-    return (
-      <ul
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-menu', className, {
-          'the-menu-grid': grid,
-        })}
-      >
-        {children}
-        <li className='the-menu-end' role='menuitem' />
-      </ul>
-    )
-  }
+  return (
+    <ul
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-menu', className, {
+        'the-menu-grid': grid,
+      })}
+    >
+      {children}
+      <li className='the-menu-end' role='menuitem' />
+    </ul>
+  )
 }
 
 TheMenu.Style = TheMenuStyle

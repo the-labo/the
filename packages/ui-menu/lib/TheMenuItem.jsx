@@ -10,30 +10,25 @@ import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 /**
  * Menu of the-components
  */
-class TheMenuItem extends React.Component {
-  render() {
-    const {
-      props,
-      props: { active, children, className, icon, text, to },
-    } = this
+const TheMenuItem = (props) => {
+  const { active, children, className, icon, text, to } = props
 
-    const Inner = to ? TheLink : 'span'
-    return (
-      <li
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-menu-item', className, {
-          'the-menu-item-active': active,
-        })}
-      >
-        <Inner className='the-menu-item-inner' to={to}>
-          <TheIcon className={c('the-menu-item-icon', icon)} />
-          <span className='the-menu-item-text'>{text}</span>
-          <span className='the-menu-item-children'>{children}</span>
-        </Inner>
-      </li>
-    )
-  }
+  const Inner = to ? TheLink : 'span'
+  return (
+    <li
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-menu-item', className, {
+        'the-menu-item-active': active,
+      })}
+    >
+      <Inner className='the-menu-item-inner' to={to}>
+        <TheIcon className={c('the-menu-item-icon', icon)} />
+        <span className='the-menu-item-text'>{text}</span>
+        <span className='the-menu-item-children'>{children}</span>
+      </Inner>
+    </li>
+  )
 }
 
 TheMenuItem.propTypes = {

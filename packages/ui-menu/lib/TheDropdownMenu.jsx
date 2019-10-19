@@ -18,38 +18,6 @@ import TheMenuItem from './TheMenuItem'
  * Drop down menu
  */
 class TheDropDownMenu extends React.Component {
-  static Button(props) {
-    const {
-      children,
-      className,
-      icon = TheDropDownMenu.UP_ICON,
-      onClick,
-    } = props
-    return (
-      <a
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-dropdown-menu-button', className)}
-        onClick={onClick}
-        role='menubar'
-      >
-        <span className='the-dropdown-menu-button-text'>{children}</span>
-        <TheIcon className={c('the-dropdown-menu-button-icon', icon)} />
-      </a>
-    )
-  }
-
-  static Item(props) {
-    const { className } = props
-    return (
-      <TheMenuItem
-        {...props}
-        className={c('the-dropdown-menu-item', className)}
-        role='menuitem'
-      />
-    )
-  }
-
   constructor(props) {
     super(props)
     this.state = { open: props.open }
@@ -153,6 +121,33 @@ class TheDropDownMenu extends React.Component {
 
     this.setState({ open })
   }
+}
+
+TheDropDownMenu.Button = function Button(props) {
+  const { children, className, icon = TheDropDownMenu.UP_ICON, onClick } = props
+  return (
+    <a
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-dropdown-menu-button', className)}
+      onClick={onClick}
+      role='menubar'
+    >
+      <span className='the-dropdown-menu-button-text'>{children}</span>
+      <TheIcon className={c('the-dropdown-menu-button-icon', icon)} />
+    </a>
+  )
+}
+
+TheDropDownMenu.Item = function Item(props) {
+  const { className } = props
+  return (
+    <TheMenuItem
+      {...props}
+      className={c('the-dropdown-menu-item', className)}
+      role='menuitem'
+    />
+  )
 }
 
 TheDropDownMenu.UP_ICON = 'fa fa-caret-up'
