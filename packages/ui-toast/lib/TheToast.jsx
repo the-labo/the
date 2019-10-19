@@ -22,35 +22,6 @@ const ChildContainer = (props) => {
  * Toast of the-components
  */
 class TheToast extends React.PureComponent {
-  static Error(props) {
-    return <TheToast {...props} level='error' />
-  }
-
-  static Info(props) {
-    return <TheToast {...props} level='info' />
-  }
-
-  static Normal(props) {
-    return <TheToast {...props} level='normal' />
-  }
-
-  static Warn(props) {
-    return <TheToast {...props} level='warn' />
-  }
-
-  static iconForLevel(level) {
-    switch (level) {
-      case 'error':
-        return TheToast.ERROR_ICON
-      case 'info':
-        return TheToast.INFO_ICON
-      case 'warn':
-        return TheToast.WARN_ICON
-      default:
-        return null
-    }
-  }
-
   constructor(props) {
     super(props)
     this._clearTimers = {}
@@ -133,6 +104,35 @@ class TheToast extends React.PureComponent {
         }, clearAfter)
       }
     }
+  }
+}
+
+TheToast.Error = function Error(props) {
+  return <TheToast {...props} level='error' />
+}
+
+TheToast.Info = function Info(props) {
+  return <TheToast {...props} level='info' />
+}
+
+TheToast.Normal = function Normal(props) {
+  return <TheToast {...props} level='normal' />
+}
+
+TheToast.Warn = function Warn(props) {
+  return <TheToast {...props} level='warn' />
+}
+
+TheToast.iconForLevel = (level) => {
+  switch (level) {
+    case 'error':
+      return TheToast.ERROR_ICON
+    case 'info':
+      return TheToast.INFO_ICON
+    case 'warn':
+      return TheToast.WARN_ICON
+    default:
+      return null
   }
 }
 

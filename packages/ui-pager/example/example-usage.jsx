@@ -6,19 +6,17 @@ import { ThePager, ThePagerStyle } from '@the-/ui-pager'
 class ExampleComponent extends React.PureComponent {
   constructor(props) {
     super(props)
-    const s = this
-    s.state = { page: 2 }
+    this.state = { page: 2 }
   }
 
   render() {
-    const s = this
-    const { state } = s
+    const { state } = this
     return (
       <div>
         <ThePagerStyle />
         <ThePager.Row>
           <ThePager
-            onChange={(e) => s.setState({ page: e.page })}
+            onChange={(e) => this.setState({ page: e.page })}
             page={state.page}
             size={3}
             total={8}

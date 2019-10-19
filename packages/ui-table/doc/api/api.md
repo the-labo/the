@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheTable">TheTable</a></dt>
-<dd><p>Table for the-components</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheTable">TheTable()</a></dt>
+<dd><p>Table for the-components</p>
+</dd>
 <dt><a href="#TheTableStyle">TheTableStyle()</a></dt>
 <dd><p>Style for TheTable</p>
 </dd>
@@ -29,13 +24,13 @@
 ## @the-/ui-table
 Table for the-components
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 <a name="TheTable"></a>
 
-## TheTable
+## TheTable()
 Table for the-components
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheTableStyle"></a>
 
 ## TheTableStyle()

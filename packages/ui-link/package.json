@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-link",
   "description": "Link of the-components",
-  "version": "15.4.10",
+  "version": "15.4.11",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,16 +12,16 @@
   },
   "dependencies": {
     "@the-/const-ui": "^15.4.5",
-    "@the-/ui-icon": "^15.4.10",
+    "@the-/ui-icon": "^15.4.11",
     "@the-/ui-style": "^15.4.12",
-    "@the-/util-ui": "^15.4.12",
+    "@the-/util-ui": "^16.0.5",
     "@the-/window": "^15.5.5",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@the-/component-demo": "^15.1.3",
-    "@the-/ui-demo": "file:../ui-demo",
+    "@the-/ui-demo": "^15.4.11",
     "@the-/ui-router": "^15.4.10",
     "coz": "^7.0.19",
     "react": "^16.10.2",

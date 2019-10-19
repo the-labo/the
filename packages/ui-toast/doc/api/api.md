@@ -14,14 +14,14 @@
 <dt><a href="#TheToast">TheToast</a></dt>
 <dd><p>Toast of the-components</p>
 </dd>
-<dt><a href="#TheToastGroup">TheToastGroup</a></dt>
-<dd><p>ToastGroup</p>
-</dd>
 </dl>
 
 ## Functions
 
 <dl>
+<dt><a href="#TheToastGroup">TheToastGroup()</a></dt>
+<dd><p>ToastGroup</p>
+</dd>
 <dt><a href="#TheToastStyle">TheToastStyle()</a></dt>
 <dd><p>Style for TheToast</p>
 </dd>
@@ -32,7 +32,7 @@
 ## @the-/ui-toast
 Toast of the-components
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 <a name="TheToast"></a>
 
 ## TheToast
@@ -41,10 +41,10 @@ Toast of the-components
 **Kind**: global class  
 <a name="TheToastGroup"></a>
 
-## TheToastGroup
+## TheToastGroup()
 ToastGroup
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheToastStyle"></a>
 
 ## TheToastStyle()

@@ -12,12 +12,12 @@
     "name": "@the-/ui-info",
     "order": 0,
     "typicalname": "uiInfo",
-    "version": "15.4.10"
+    "version": "15.4.11"
   },
   {
     "description": "Info of the-component",
     "id": "TheInfo",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheInfo",
     "meta": {
       "filename": "TheInfo.jsx",
@@ -26,6 +26,7 @@
     },
     "name": "TheInfo",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
@@ -51,7 +52,7 @@
     "memberof": "TheInfo.propTypes",
     "meta": {
       "filename": "TheInfo.jsx",
-      "lineno": 67,
+      "lineno": 61,
       "path": "lib"
     },
     "name": "data",
@@ -66,7 +67,7 @@
     "memberof": "TheInfo.propTypes",
     "meta": {
       "filename": "TheInfo.jsx",
-      "lineno": 69,
+      "lineno": 63,
       "path": "lib"
     },
     "name": "keys",
@@ -81,7 +82,7 @@
     "memberof": "TheInfo.propTypes",
     "meta": {
       "filename": "TheInfo.jsx",
-      "lineno": 71,
+      "lineno": 65,
       "path": "lib"
     },
     "name": "title",

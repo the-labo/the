@@ -4,7 +4,7 @@
  * @description Info of the-component
  * @module @the-/ui-info
  * @typicalname uiInfo
- * @version 15.4.10
+ * @version 15.4.11
  */
 'use strict'
 

@@ -29,7 +29,7 @@
 ## @the-/ui-tab
 Tab for the-components
 
-**Version**: 15.4.10  
+**Version**: 15.4.12  
 <a name="TheTab"></a>
 
 ## TheTab

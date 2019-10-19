@@ -8,79 +8,13 @@ import React from 'react'
 import { TheButton } from '@the-/ui-button'
 import { TheSpin } from '@the-/ui-spin'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
-
-const pointFromTouchEvent = (e) => {
-  const [touch] = e.changedTouches || []
-  if (!touch) {
-    return null
-  }
-
-  const { clientX: x, clientY: y } = touch
-  return { x, y }
-}
-
-const sourceElementScrollFor = (e) => {
-  let target = e.target || e.srcElement
-  let left = 0
-  let top = 0
-  while (target) {
-    left += target.scrollLeft
-    top += target.scrollTop
-    target = target.parentElement
-  }
-  return { left, top }
-}
+import pointFromTouchEvent from './helpers/pointFromTouchEvent'
+import sourceElementScrollFor from './helpers/sourceElementScrollFor'
 
 /**
  * Tab for the-components
  */
 class TheTab extends React.Component {
-  static Button(props) {
-    const {
-      active,
-      children,
-      className,
-      disableTouchAction,
-      movingRate,
-    } = props
-    const buttonProps = clone(props, { without: ['className', 'active'] })
-    return (
-      <TheButton
-        {...buttonProps}
-        className={c('the-tab-button', className, {
-          'the-tab-button-active': active,
-        })}
-      >
-        {active && (
-          <span
-            className='the-tab-button-active-bar'
-            style={{
-              transform: !disableTouchAction
-                ? `translateX(${movingRate * -100}%)`
-                : 'none',
-            }}
-          />
-        )}
-        {children}
-      </TheButton>
-    )
-  }
-
-  static Content(props) {
-    const { children, className, spinning } = props
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className', 'spinning'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-tab-content', className)}
-      >
-        {spinning && <TheSpin className='the-tab-content-spin' cover enabled />}
-
-        {children}
-      </div>
-    )
-  }
-
   constructor(props) {
     super(props)
     this.state = {
@@ -422,6 +356,46 @@ class TheTab extends React.Component {
   shouldRenderChildForIndex(index) {
     return this.state.nextIndex === index || this.props.activeIndex === index
   }
+}
+
+TheTab.Button = function Button(props) {
+  const { active, children, className, disableTouchAction, movingRate } = props
+  const buttonProps = clone(props, { without: ['className', 'active'] })
+  return (
+    <TheButton
+      {...buttonProps}
+      className={c('the-tab-button', className, {
+        'the-tab-button-active': active,
+      })}
+    >
+      {active && (
+        <span
+          className='the-tab-button-active-bar'
+          style={{
+            transform: !disableTouchAction
+              ? `translateX(${movingRate * -100}%)`
+              : 'none',
+          }}
+        />
+      )}
+      {children}
+    </TheButton>
+  )
+}
+
+TheTab.Content = function Content(props) {
+  const { children, className, spinning } = props
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['className', 'spinning'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-tab-content', className)}
+    >
+      {spinning && <TheSpin className='the-tab-content-spin' cover enabled />}
+
+      {children}
+    </div>
+  )
 }
 
 TheTab.propTypes = {

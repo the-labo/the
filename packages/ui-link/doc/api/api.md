@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheLink">TheLink</a></dt>
-<dd><p>Link of the-components</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheLink">TheLink()</a></dt>
+<dd><p>Link of the-components</p>
+</dd>
 <dt><a href="#TheLinkStyle">TheLinkStyle()</a></dt>
 <dd><p>Style for TheLink</p>
 </dd>
@@ -29,13 +24,13 @@
 ## @the-/ui-link
 Link of the-components
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 <a name="TheLink"></a>
 
-## TheLink
+## TheLink()
 Link of the-components
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheLinkStyle"></a>
 
 ## TheLinkStyle()

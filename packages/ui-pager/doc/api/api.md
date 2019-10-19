@@ -8,7 +8,7 @@
 </dd>
 </dl>
 
-## Classes
+## Constants
 
 <dl>
 <dt><a href="#ThePager">ThePager</a></dt>
@@ -29,13 +29,13 @@
 ## @the-/ui-pager
 Pager of the-components
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 <a name="ThePager"></a>
 
 ## ThePager
 Pager of the-components
 
-**Kind**: global class  
+**Kind**: global constant  
 <a name="ThePagerStyle"></a>
 
 ## ThePagerStyle()

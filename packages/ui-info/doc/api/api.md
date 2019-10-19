@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheInfo">TheInfo</a></dt>
-<dd><p>Info of the-component</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheInfo">TheInfo()</a></dt>
+<dd><p>Info of the-component</p>
+</dd>
 <dt><a href="#TheInfoStyle">TheInfoStyle()</a></dt>
 <dd><p>Style for TheInfo</p>
 </dd>
@@ -29,13 +24,13 @@
 ## @the-/ui-info
 Info of the-component
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 <a name="TheInfo"></a>
 
-## TheInfo
+## TheInfo()
 Info of the-component
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheInfoStyle"></a>
 
 ## TheInfoStyle()

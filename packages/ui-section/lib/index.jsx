@@ -4,7 +4,7 @@
  * @description Section of the-components
  * @module @the-/ui-section
  * @typicalname uiSection
- * @version 15.4.12
+ * @version 15.4.13
  */
 'use strict'
 

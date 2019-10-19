@@ -11,41 +11,9 @@ import TheSection from './TheSection'
  * Accordion section
  */
 class TheAccordionSection extends React.Component {
-  static Body(props) {
-    const { children, className } = props
-    return (
-      <TheSection.Body
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={classnames('the-accordion-section-body', className)}
-      >
-        {children}
-      </TheSection.Body>
-    )
-  }
-
-  static Header(props) {
-    const { children, className } = props
-    return (
-      <TheSection.Header
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={classnames('the-accordion-section-header', className)}
-      >
-        <TheIcon
-          className={classnames(
-            'the-accordion-header-icon',
-            TheAccordionSection.UP_ICON,
-          )}
-        />
-        <span className='the-accordion-header-children'>{children}</span>
-      </TheSection.Header>
-    )
-  }
-
   constructor(props) {
     super(props)
-    this.inner = null
+    this.innerRef = React.createRef()
     this.resizeTimer = null
     this.handleToggle = this.handleToggle.bind(this)
     this.state = {
@@ -64,7 +32,9 @@ class TheAccordionSection extends React.Component {
   }
 
   getInnerHeight() {
-    const { inner } = this
+    const {
+      innerRef: { current: inner },
+    } = this
     return inner && inner.offsetHeight
   }
 
@@ -91,12 +61,7 @@ class TheAccordionSection extends React.Component {
         })}
         style={{ maxHeight }}
       >
-        <div
-          className='the-accordion-section-inner'
-          ref={(inner) => {
-            this.inner = inner
-          }}
-        >
+        <div className='the-accordion-section-inner' ref={this.innerRef}>
           <Header onClick={this.handleToggle} open={open}>
             {heading}
           </Header>
@@ -121,6 +86,38 @@ class TheAccordionSection extends React.Component {
     } = this
     onToggle && onToggle(open)
   }
+}
+
+TheAccordionSection.Body = function Body(props) {
+  const { children, className } = props
+  return (
+    <TheSection.Body
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={classnames('the-accordion-section-body', className)}
+    >
+      {children}
+    </TheSection.Body>
+  )
+}
+
+TheAccordionSection.Header = function Header(props) {
+  const { children, className } = props
+  return (
+    <TheSection.Header
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={classnames('the-accordion-section-header', className)}
+    >
+      <TheIcon
+        className={classnames(
+          'the-accordion-header-icon',
+          TheAccordionSection.UP_ICON,
+        )}
+      />
+      <span className='the-accordion-header-children'>{children}</span>
+    </TheSection.Header>
+  )
 }
 
 TheAccordionSection.UP_ICON = 'fas fa-angle-up'

@@ -6,83 +6,67 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { TheIcon } from '@the-/ui-icon'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
+import isExternalLink from './helpers/isExternalLink'
 import TheLinkStyle from './TheLinkStyle'
-
-const isExternalLink = (url) => {
-  if (!url) {
-    return url
-  }
-
-  try {
-    return !!new URL(url).protocol
-  } catch (e) {
-    return false
-  }
-}
 
 /**
  * Link of the-components
  */
-class TheLink extends React.Component {
-  static Link(props) {
-    const { children, className, to } = props
-    if (isExternalLink(to)) {
-      // External link
-      return (
-        <a
-          {...htmlAttributesFor(props, { except: ['className', 'href'] })}
-          {...eventHandlersFor(props, { except: [] })}
-          className={c('the-link-external', className)}
-          href={to}
-        >
-          {children}
-        </a>
-      )
-    }
+const TheLink = (props) => {
+  const {
+    activeClassName,
+    activeStyle,
+    children,
+    className,
+    color,
+    exact,
+    icon,
+    replace,
+    strict,
+    style = {},
+    to,
+  } = props
 
-    return <NavLink {...props}>{children}</NavLink>
+  if (color && style) {
+    style.color = color
   }
 
-  render() {
-    const {
-      props,
-      props: {
-        activeClassName,
-        activeStyle,
-        children,
-        className,
-        color,
-        exact,
-        icon,
-        replace,
-        strict,
-        style = {},
-        to,
-      },
-    } = this
+  return (
+    <TheLink.Link
+      {...htmlAttributesFor(props, { except: ['className', 'style'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      activeClassName={c('the-link-active', activeClassName)}
+      activeStyle={activeStyle}
+      className={c('the-link', className)}
+      exact={exact}
+      replace={replace}
+      strict={strict}
+      style={style}
+      to={to}
+    >
+      {icon && <TheIcon className={c('the-link-icon', icon)} />}
+      {children}
+    </TheLink.Link>
+  )
+}
 
-    if (color && style) {
-      style.color = color
-    }
-
+TheLink.Link = function Link(props) {
+  const { children, className, to } = props
+  if (isExternalLink(to)) {
+    // External link
     return (
-      <TheLink.Link
-        {...htmlAttributesFor(props, { except: ['className', 'style'] })}
+      <a
+        {...htmlAttributesFor(props, { except: ['className', 'href'] })}
         {...eventHandlersFor(props, { except: [] })}
-        activeClassName={c('the-link-active', activeClassName)}
-        activeStyle={activeStyle}
-        className={c('the-link', className)}
-        exact={exact}
-        replace={replace}
-        strict={strict}
-        style={style}
-        to={to}
+        className={c('the-link-external', className)}
+        href={to}
       >
-        {icon && <TheIcon className={c('the-link-icon', icon)} />}
         {children}
-      </TheLink.Link>
+      </a>
     )
   }
+
+  return <NavLink {...props}>{children}</NavLink>
 }
 
 TheLink.Style = TheLinkStyle

@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-toast",
   "description": "Toast of the-components",
-  "version": "15.4.10",
+  "version": "15.4.11",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,12 +13,12 @@
   "dependencies": {
     "@the-/const-ui": "^15.4.5",
     "@the-/ui-style": "^15.4.12",
-    "@the-/util-ui": "^15.4.12",
+    "@the-/util-ui": "^16.0.5",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui-demo": "file:../ui-demo",
+    "@the-/ui-demo": "^15.4.11",
     "coz": "^7.0.19",
     "objnest": "^5.0.10",
     "react": "^16.10.2",

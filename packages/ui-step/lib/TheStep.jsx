@@ -13,15 +13,6 @@ import TheStepStyle from './TheStepStyle'
  * Steps for the-component
  */
 class TheStep extends React.Component {
-  static Content({ children, className, spinning = false }) {
-    return (
-      <div className={c('the-step-content', className)}>
-        <TheSpin className='the-step-spin' cover enabled={spinning} />
-        {children}
-      </div>
-    )
-  }
-
   constructor(props) {
     super(props)
     this.onBack = () => this.moveStep(-1)
@@ -166,6 +157,15 @@ class TheStep extends React.Component {
       this.setState({ contentHeight })
     }
   }
+}
+
+TheStep.Content = function Content({ children, className, spinning = false }) {
+  return (
+    <div className={c('the-step-content', className)}>
+      <TheSpin className='the-step-spin' cover enabled={spinning} />
+      {children}
+    </div>
+  )
 }
 
 TheStep.Style = TheStepStyle

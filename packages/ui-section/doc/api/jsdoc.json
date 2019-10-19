@@ -12,7 +12,7 @@
     "name": "@the-/ui-section",
     "order": 0,
     "typicalname": "uiSection",
-    "version": "15.4.12"
+    "version": "15.4.13"
   },
   {
     "description": "Accordion section",
@@ -21,7 +21,7 @@
     "longname": "TheAccordionSection",
     "meta": {
       "filename": "TheAccordionSection.jsx",
-      "lineno": 46,
+      "lineno": 14,
       "path": "lib"
     },
     "name": "TheAccordionSection",
@@ -31,7 +31,7 @@
   {
     "description": "Section of the-components",
     "id": "TheSection",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheSection",
     "meta": {
       "filename": "TheSection.jsx",
@@ -40,6 +40,7 @@
     },
     "name": "TheSection",
     "order": 5,
+    "params": [],
     "scope": "global"
   },
   {
@@ -65,7 +66,7 @@
     "memberof": "TheAccordionSection.propTypes",
     "meta": {
       "filename": "TheAccordionSection.jsx",
-      "lineno": 130,
+      "lineno": 127,
       "path": "lib"
     },
     "name": "heading",
@@ -80,7 +81,7 @@
     "memberof": "TheAccordionSection.propTypes",
     "meta": {
       "filename": "TheAccordionSection.jsx",
-      "lineno": 132,
+      "lineno": 129,
       "path": "lib"
     },
     "name": "onToggle",
@@ -95,7 +96,7 @@
     "memberof": "TheAccordionSection.propTypes",
     "meta": {
       "filename": "TheAccordionSection.jsx",
-      "lineno": 134,
+      "lineno": 131,
       "path": "lib"
     },
     "name": "open",

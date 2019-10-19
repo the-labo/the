@@ -8,58 +8,52 @@ import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 /**
  * Info of the-component
  */
-class TheInfo extends React.Component {
-  static Body({ children, className }) {
-    return (
-      <div className={classnames('the-info-body', className)} role='rowGroup'>
+const TheInfo = (props) => {
+  const { children, className, data, keys, title } = props
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['className', 'data'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={classnames('the-info', className)}
+    >
+      {title && <TheInfo.Header>{title}</TheInfo.Header>}
+      <TheInfo.Body>
+        {(keys || Object.keys(data || {})).map((label) => (
+          <TheInfo.Row key={label} label={label} value={data[label]} />
+        ))}
         {children}
+      </TheInfo.Body>
+    </div>
+  )
+}
+
+TheInfo.Body = function Body({ children, className }) {
+  return (
+    <div className={classnames('the-info-body', className)} role='rowGroup'>
+      {children}
+    </div>
+  )
+}
+
+TheInfo.Header = function Header({ children, className }) {
+  return (
+    <h5 className={classnames('the-info-header', className)} role='heading'>
+      {children}
+    </h5>
+  )
+}
+
+TheInfo.Row = function Row({ className, label, value }) {
+  return (
+    <div className={classnames('the-info-row', className)} role='row'>
+      <label className='the-info-row-label' role='rowheader'>
+        {label}
+      </label>
+      <div aria-label={label} className='the-info-row-value' role='gridcell'>
+        {value}
       </div>
-    )
-  }
-
-  static Header({ children, className }) {
-    return (
-      <h5 className={classnames('the-info-header', className)} role='heading'>
-        {children}
-      </h5>
-    )
-  }
-
-  static Row({ className, label, value }) {
-    return (
-      <div className={classnames('the-info-row', className)} role='row'>
-        <label className='the-info-row-label' role='rowheader'>
-          {label}
-        </label>
-        <div aria-label={label} className='the-info-row-value' role='gridcell'>
-          {value}
-        </div>
-      </div>
-    )
-  }
-
-  render() {
-    const {
-      props,
-      props: { children, className, data, keys, title },
-    } = this
-
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className', 'data'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={classnames('the-info', className)}
-      >
-        {title && <TheInfo.Header>{title}</TheInfo.Header>}
-        <TheInfo.Body>
-          {(keys || Object.keys(data || {})).map((label) => (
-            <TheInfo.Row key={label} label={label} value={data[label]} />
-          ))}
-          {children}
-        </TheInfo.Body>
-      </div>
-    )
-  }
+    </div>
+  )
 }
 
 TheInfo.propTypes = {

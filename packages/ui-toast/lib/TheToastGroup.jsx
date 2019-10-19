@@ -7,23 +7,18 @@ import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 /**
  * ToastGroup
  */
-class TheToastGroup extends React.Component {
-  render() {
-    const {
-      props,
-      props: { children, className },
-    } = this
+const TheToastGroup = (props) => {
+  const { children, className } = props
 
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-toast-group', className)}
-      >
-        {children}
-      </div>
-    )
-  }
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-toast-group', className)}
+    >
+      {children}
+    </div>
+  )
 }
 
 TheToastGroup.propTypes = {}
