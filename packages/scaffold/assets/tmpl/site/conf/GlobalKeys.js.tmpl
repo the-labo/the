@@ -1,27 +1,28 @@
 /**
  * Global keys
- * @enum {string} GlobalKeys
+ * @memberof module:~~~~package_name~~~~/conf
+ * @namespace GlobalKeys
  */
 'use strict'
 
 const { isProduction } = require('@the-/check')
 const theHash = require('@the-/hash')
 
-module.exports = Object.freeze(
-  /** @lends GlobalKeys */
+const GlobalKeys =
+  /** @lends module:~~~~package_name~~~~/conf.GlobalKeys */
   {
     /** Key of app */
     APP: 'app',
     /** Key of app context */
     CONTEXT: 'app.context',
-    /** Key of app handle */
-    HANDLE: 'app.handle',
     /** Key of app props */
     PROPS: 'app.props',
     /** Key of app store */
     STORE: 'app.store',
-  },
-)
+  }
+Object.freeze(GlobalKeys)
+
+module.exports = GlobalKeys
 
 if (!isProduction()) {
   module.exports = theHash.proxy(module.exports, {

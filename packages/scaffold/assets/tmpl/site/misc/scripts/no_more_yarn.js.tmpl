@@ -5,6 +5,7 @@
 'use strict'
 
 const path = require('path')
+
 const red = (msg) => `\x1b[41m${msg}\x1b[0m`
 
 const projectDir = path.resolve(__dirname, '../../')

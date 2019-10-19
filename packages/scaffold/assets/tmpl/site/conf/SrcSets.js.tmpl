@@ -7,24 +7,31 @@
 
 const { isProduction } = require('@the-/check')
 const theHash = require('@the-/hash')
-const Urls = require('./Urls')
+const Paths = require('./Paths')
 
-module.exports = Object.freeze(
-  /** @lends SrcSets */
+const SrcSets =
+  /** @lends module:~~~~package_name~~~~/conf.SrcSets */
   {
     cssSet: [
-      Urls.CSS_THEME_URL,
-      Urls.CSS_NORMALIZE_URL,
-      Urls.CSS_FONT_URL,
-      Urls.CSS_FLATPICKR_URL,
-      ...(isProduction() ? [Urls.PROD_CSS_BUNDLE_URL] : [Urls.CSS_BUNDLE_URL]),
+      Paths.CSS_THEME_PATH,
+      Paths.CSS_NORMALIZE_PATH,
+      Paths.CSS_FONT_PATH,
+      Paths.CSS_FLATPICKR_PATH,
+      ...(isProduction()
+        ? [Paths.PROD_CSS_BUNDLE_PATH]
+        : [Paths.CSS_BUNDLE_PATH]),
     ],
     jsSet: [
-      Urls.JS_SHIM_URL,
-      ...(isProduction() ? [Urls.PROD_JS_BUNDLE_URL] : [Urls.JS_BUNDLE_URL]),
+      Paths.JS_SHIM_PATH,
+      ...(isProduction()
+        ? [Paths.PROD_JS_BUNDLE_PATH]
+        : [Paths.JS_BUNDLE_PATH]),
     ],
-  },
-)
+  }
+
+Object.freeze(SrcSets)
+
+module.exports = SrcSets
 
 if (!isProduction()) {
   module.exports = theHash.proxy(module.exports, {

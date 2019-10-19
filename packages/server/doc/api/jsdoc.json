@@ -13,7 +13,7 @@
     "name": "@the-/server",
     "order": 3,
     "typicalname": "server",
-    "version": "16.2.1"
+    "version": "16.3.1"
   },
   {
     "description": "HTTP server for the-framework",
@@ -579,7 +579,7 @@
     "memberof": "module:@the-/server.constants",
     "meta": {
       "filename": "DefaultValues.js",
-      "lineno": 3,
+      "lineno": 7,
       "path": "lib/constants"
     },
     "name": "DefaultValues",

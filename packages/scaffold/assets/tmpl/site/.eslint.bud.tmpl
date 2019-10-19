@@ -5,7 +5,16 @@
 
 const { eslintignore, eslintrc } = require('@the-/templates')
 
-module.exports = [eslintrc(), eslintignore()]
+module.exports = [
+  eslintrc({
+    additional: {
+      plugins: ['json-light'],
+    },
+    jsdoc: true,
+    react: true,
+  }),
+  eslintignore(),
+]
 
 if (!module.parent) {
   require('coz').render(__filename)

@@ -2,7 +2,7 @@
  * Create an db instance
  * @memberof module:~~~~package_name~~~~/server.db
  * @function create
- * @param {Object} [config]
+ * @param {object} [config]
  * @returns {TheDB}
  */
 'use strict'
@@ -24,6 +24,16 @@ const defaultConfig = {
 
 /** @lends module:~~~~package_name~~~~/server.db.create */
 function create(config = defaultConfig, options = {}) {
+  if (process.env.CI) {
+    console.warn(`
+==============================
+
+[db] Using mock DB for CI ENV 
+
+==============================`)
+    config = { dialect: 'memory' }
+  }
+
   return theDB({
     resources: ResourceMapping,
     ...config,
@@ -34,3 +44,8 @@ create.forTask = () => create(defaultConfig, { enableHooks: false })
 create.forTest = () => create({ dialect: 'memory' }, { enableHooks: false })
 
 module.exports = create
+
+/**
+ * @external TheDB
+ * @see https://github.com/the-labo/the/tree/master/packages/db#readme
+ */

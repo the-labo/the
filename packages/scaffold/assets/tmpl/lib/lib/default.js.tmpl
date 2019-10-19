@@ -1,11 +1,5 @@
 'use strict'
 
-/**
- * Default exports
- * @memberof module:~~~~package_name~~~~
- * @function ~~~~package_unscoped_name@camelcase~~~~
- * @returns {~~~~package_unscoped_name@pascalcase~~~~}
- */
 const create = require('./create')
 const ~~~~package_unscoped_name@pascalcase~~~~ = require('./~~~~package_unscoped_name@pascalcase~~~~')
 
@@ -13,7 +7,12 @@ const lib = create.bind(create)
 
 module.exports = Object.assign(
   lib,
-  /** @lends ~~~~package_unscoped_name@camelcase~~~~ */
+  /**
+   * Default exports
+   * @memberof module:~~~~package_name~~~~
+   * @function ~~~~package_unscoped_name@camelcase~~~~
+   * @returns {~~~~package_unscoped_name@pascalcase~~~~}
+   */
   {
     ~~~~package_unscoped_name@pascalcase~~~~,
     create,

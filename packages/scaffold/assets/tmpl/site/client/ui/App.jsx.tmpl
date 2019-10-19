@@ -1,44 +1,46 @@
 /**
  * App component
+ * @memberof module:~~~~package_name~~~~/client.ui
+ * @function App
  */
 'use strict'
 
 import React from 'react'
-import { TheCaughtCatcher, TheMain, TheMeta, TheRoot } from '@the-/ui'
-import context from './context'
+import { TheCaughtCatcher, TheCycle, TheMain, TheMeta, TheRoot } from '@the-/ui'
+import { context, Handle, Stateful } from './context'
 import { Dialogs, Footer, Header, Toasts } from './layouts'
 import Routes from './Routes'
 
-class App extends React.Component {
-  #stateful = context.stateful(
-    (state) => ({
-      busy: state['app.busy'],
-      pathname: state['app.pathname'],
-    }),
-    () => ({}),
-  )
+const stateful = Stateful((state) => ({
+  busy: state['app.busy'],
+  ready: state['app.ready'],
+}))
 
-  render() {
-    return (
-      <context.Root>
-        {this.#stateful(({ busy, l }) => (
-          <TheCaughtCatcher>
-            <TheMeta.Root title={l('app.APP_NAME')}>
-              <TheRoot>
-                <Header />
-                <Toasts />
-                <TheMain spinning={busy}>
-                  <Routes />
-                </TheMain>
-                <Footer />
-                <Dialogs />
-              </TheRoot>
-            </TheMeta.Root>
-          </TheCaughtCatcher>
-        ))}
-      </context.Root>
-    )
-  }
-}
+const handle = Handle(({ actions: { appAct } }) => ({
+  onMount: () => appAct.prepare(),
+}))
+
+/** @lends module:~~~~package_name~~~~/client.ui.App */
+const App = React.memo(() => (
+  <context.Root>
+    <TheCaughtCatcher>
+      {stateful(({ busy, l, ready }) => (
+        <TheMeta.Root title={l('app.APP_NAME')}>
+          <TheCycle onMount={handle.onMount}>
+            <TheRoot>
+              <Header />
+              <Toasts />
+              <TheMain spinning={!ready || busy}>
+                <Routes />
+              </TheMain>
+              <Footer />
+              <Dialogs />
+            </TheRoot>
+          </TheCycle>
+        </TheMeta.Root>
+      ))}
+    </TheCaughtCatcher>
+  </context.Root>
+))
 
 export default App

@@ -9,6 +9,7 @@ const path = require('path')
 const { isProduction } = require('@the-/check')
 const theHash = require('@the-/hash')
 const pkg = require('../../package')
+
 const pkgShortName = pkg.name.split('/').pop()
 const BASE_DIR = path.dirname(require.resolve('../../package'))
 

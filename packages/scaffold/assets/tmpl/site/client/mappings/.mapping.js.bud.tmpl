@@ -9,17 +9,17 @@ const { camelcase } = require('stringcase')
 const { mapping } = require('@the-/templates')
 
 module.exports = Object.entries({
-  SceneMapping: {
+  ActMapping: {
     cjs: true,
     mapping: aglob
-      .sync(`${__dirname}/../scenes/*Scene.js`)
+      .sync(`${__dirname}/../actions/*Act.js`)
       .map((filename) => path.basename(filename, '.js'))
       .map((name) => ({
         className: name,
         instanceName: camelcase(name),
       })),
-    requireAs: 'sc',
-    requirePath: '../scenes',
+    requireAs: 'ac',
+    requirePath: '../actions',
   },
 }).map(([name, values]) => mapping({ name, ...values }))
 

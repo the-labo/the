@@ -1,5 +1,7 @@
 /**
  * Fallback component
+ * @memberof module:~~~~package_name~~~~/client.ui
+ * @function Fallback
  */
 'use strict'
 
@@ -7,21 +9,17 @@ import c from 'classnames'
 import React from 'react'
 import { TheSpin } from '@the-/ui-spin'
 import styles from './Fallback.pcss'
-import context from '../../context'
+import { Stateful } from '../../context'
 
-class Fallback extends React.Component {
-  #stateful = context.stateful(() => ({}), () => ({}))
+const stateful = Stateful(() => ({}))
 
-  render() {
-    const {
-      props: { className },
-    } = this
-    return this.#stateful(() => (
-      <div className={c(styles.self, className)}>
-        <TheSpin className={styles.spin} enabled />
-      </div>
-    ))
-  }
-}
+/** @lends module:~~~~package_name~~~~/client.ui.Fallback */
+const Fallback = React.memo(({ className }) =>
+  stateful(() => (
+    <div className={c(styles.self, className)}>
+      <TheSpin className={styles.spin} enabled />
+    </div>
+  )),
+)
 
 export default Fallback

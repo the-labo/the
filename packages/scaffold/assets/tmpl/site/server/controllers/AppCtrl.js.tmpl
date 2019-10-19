@@ -1,26 +1,24 @@
 /**
  * Application controller
  * @memberof module:~~~~package_name~~~~/server.controllers
- * @class AppCtrl
+ * @function AppCtrl
  */
 'use strict'
 
-const Ctrl = require('./Ctrl')
-
 /** @lends module:~~~~package_name~~~~/server.controllers.AppCtrl */
-class AppCtrl extends Ctrl {
-  // TODO Remove this
-  // Just an example
-  async countUp() {
-    const {
-      session,
-      session: { count = 0 },
-    } = this // Controller instance is created per session
-
-    session.count = count + 1
-    await new Promise((resolve) => setTimeout(() => resolve(), 1000))
-    return session.count
+function AppCtrl({ session }) {
+  const appCtrl = {
+    async countUp() {
+      const { count = 0 } = session
+      session.count = count + 1
+      await new Promise((resolve) => setTimeout(() => resolve(), 1000))
+      return session.count
+    },
   }
+
+  Object.freeze(appCtrl)
+
+  return appCtrl
 }
 
 module.exports = AppCtrl

@@ -1,5 +1,6 @@
 /**
  * Start metrics
+ * @memberof module:~~~~package_name~~~~/client
  * @function metrics
  */
 'use strict'
@@ -8,13 +9,13 @@ import { RenderingCountMetrics } from '@the-/metrics-presets'
 import * as stateful from './stateful'
 import * as v from './views'
 
-/** @lends metrics */
+/** @lends module:~~~~package_name~~~~/client.metrics */
 function metrics() {
   // Count renders of react
   {
     const Components = { ...v, ...stateful }
-    RenderingCountMetrics(Components, {
-      interval: 30 * 1000,
+    void RenderingCountMetrics(Components, {
+      interval: 30000,
     })
   }
 }

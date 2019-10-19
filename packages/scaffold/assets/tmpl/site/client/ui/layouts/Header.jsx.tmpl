@@ -1,22 +1,22 @@
 /**
  * Header component
+ * @memberof module:~~~~package_name~~~~/client
+ * @function Header
  */
 'use strict'
 
 import React from 'react'
 import { TheHeader } from '@the-/ui'
-import context from '../context'
+import { Stateful } from '../context'
+const stateful = Stateful(() => ({}))
 
-class Header extends React.Component {
-  #stateful = context.stateful(() => ({}), () => ({}))
-
-  render() {
-    return this.#stateful(({ l }) => (
-      <TheHeader className='header'>
-        <TheHeader.Logo>{l('app.APP_NAME')}</TheHeader.Logo>
-      </TheHeader>
-    ))
-  }
-}
+/** @lends module:~~~~package_name~~~~/client.Header */
+const Header = React.memo(() =>
+  stateful(({ l }) => (
+    <TheHeader className='header'>
+      <TheHeader.Logo>{l('app.APP_NAME')}</TheHeader.Logo>
+    </TheHeader>
+  )),
+)
 
 export default Header

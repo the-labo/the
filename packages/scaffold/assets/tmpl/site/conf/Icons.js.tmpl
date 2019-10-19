@@ -1,14 +1,15 @@
 /**
  * Site icons
- * @enum {string} Icons
+ * @memberof module:~~~~package_name~~~~/conf
+ * @namespace Icons
  */
 'use strict'
 
 const { isProduction } = require('@the-/check')
 const theHash = require('@the-/hash')
 
-module.exports = Object.freeze(
-  /** @lends Icons */
+const Icons =
+  /** @lends module:~~~~package_name~~~~/conf.Icons */
   {
     ACCOUNT_ICON: 'fas fa-user',
     ADD_ICON: 'fas fa-plus',
@@ -27,8 +28,11 @@ module.exports = Object.freeze(
     TAB_ADMIN_ICON: 'fas fa-cogs',
     USERS_ICON: 'fas fa-users',
     WARNING_ICON: 'fas fa-exclamation-triangle',
-  },
-)
+  }
+
+Object.freeze(Icons)
+
+module.exports = Icons
 
 if (!isProduction()) {
   module.exports = theHash.proxy(module.exports, {

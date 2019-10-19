@@ -19,9 +19,9 @@ describe('db', () => {
     ok(db)
 
     const {
-      resources: { Room },
+      resources: { User },
     } = db
-    const room = await Room.create({ name: 'room-01' })
+    const room = await User.create({ name: 'room-01' })
     await room.destroy()
 
     await db.close()

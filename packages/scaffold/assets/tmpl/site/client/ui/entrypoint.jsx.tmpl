@@ -13,10 +13,9 @@ import {
   workers,
 } from '@the-/entrypoint'
 import { get, once, rescue, set } from '@the-/window'
-import context from './context'
+import context, { loader } from './context'
 import Fallback from './stateful/fallback/Fallback'
-
-const App = lazy(() => import('./App'))
+import { ActMapping } from '../mappings'
 
 singleton()
 patch()
@@ -29,47 +28,40 @@ once('DOMContentLoaded', async () => {
   await workers(workerScopes)
 
   const { default: client } = await import('../client')
-  const { default: handle } = await import('../handle')
   const { default: store } = await import('../store')
 
   const history = historyFor()
 
-  const l = locales.bind(lang)
-  context.set({ handle, history, l, lang, state: store.state })
-  store.subscribe(() => context.set({ state: store.state }))
-
+  loader.loadStore(store)
+  const l = loader.loadLocale(locales, lang)
   const controllers = await client.useAll({ debug: !isProduction() })
+  const actions = loader.loadActions(ActMapping, {
+    controllers,
+    history,
+  })
 
-  handle.setAttributes({ client, controllers, history, l, lang, store })
-  handle.initAll()
-
-  const { appScene, toastScene } = handle
-  history.listen((location) => appScene.handleLocationChange(location))
-  appScene.setLocation(history.location)
-  appScene.set({ host: get('location.host'), locale: lang })
-
+  const { appAct, connectionRetryAct, locationAct, toastAct } = actions
+  locationAct.bindHistory(history)
+  connectionRetryAct.bindClient(client)
   rescue((e) => {
-    const handled = appScene.handleRejectionReason(e.reason)
+    const handled = appAct.handleRejectionReason(e.reason)
     if (!handled) {
-      toastScene.showError(l('errors.UNEXPECTED_ERROR'))
+      toastAct.showError(l('errors.UNEXPECTED_ERROR'))
     }
   })
 
   quelize(() => ({
     locale: store.state['app.locale'],
   }))
+  appAct.setLocale(lang)
 
+  const App = lazy(() => import('./App'))
   const app = (
     <Suspense fallback={<Fallback />}>
-      <App
-        {...props}
-        client={client}
-        handle={handle}
-        history={history}
-        store={store}
-      />
+      <App {...props} client={client} history={history} store={store} />
     </Suspense>
   )
+
   await mount(app, UI.APP_CONTAINER_ID, {
     history,
     router: true,
@@ -81,12 +73,14 @@ once('DOMContentLoaded', async () => {
     props,
   )
 
-  set(GlobalKeys.HANDLE, handle)
   set(GlobalKeys.STORE, store)
   set(GlobalKeys.CONTEXT, context)
 
   if (debugMode) {
     const { default: metrics } = await import('./metrics')
     metrics()
+
+    const { default: axe } = await import('@the-/axe')
+    axe.start()
   }
 })

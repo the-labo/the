@@ -19,6 +19,7 @@ const abstractProcess_ = require('./abstract/process.json')
 const app_ = require('./app.json')
 const connectionRetry_ = require('./connection/retry.json')
 const home_ = require('./home.json')
+const location_ = require('./location.json')
 const toast_ = require('./toast.json')
 
 
@@ -37,4 +38,5 @@ exports.app = _d(app_)
 exports.connection = {}
 exports.connection.retry = _d(connectionRetry_)
 exports.home = _d(home_)
+exports.location = _d(location_)
 exports.toast = _d(toast_)

@@ -1,5 +1,5 @@
 /**
- * @enum {Object} atPolicy
+ * @enum {object} atPolicy
  */
 'use strict'
 

@@ -3,13 +3,13 @@
  */
 'use strict'
 
-import { SrcSets, Urls } from '@self/conf'
+import { Paths, SrcSets } from '@self/conf'
 import { appCache, cachingFetch, parseUrl } from '@the-/util-sw'
 
 const pathnamesToCache = [
   ...SrcSets.jsSet,
   ...SrcSets.cssSet,
-  Urls.ICON_URL,
+  Paths.ICON_PATH,
   /^\/webfonts\//,
   /^\/images\//,
   /\.chunk\.js/,

@@ -1,7 +1,7 @@
 'use strict'
 
 const pkg = require('../../../package')
-const {Styles, Urls} = require('../../../conf')
+const {Styles, Paths} = require('../../../conf')
 const {errorPage} = require('@the-/templates')
 
 module.exports = [
@@ -27,7 +27,7 @@ module.exports = [
     texts,
     pkg,
     color: Styles.DOMINANT_COLOR,
-    icon: Urls.ICON_URL,
+    icon: Paths.ICON_PATH,
     style: ``
   }),
   path: `${name}.html`

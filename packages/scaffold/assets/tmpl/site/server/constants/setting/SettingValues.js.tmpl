@@ -10,6 +10,7 @@ const { isProduction } = require('@the-/check')
 const theHash = require('@the-/hash')
 const theSetting = require('@the-/setting')
 const Project = require('../Project')
+
 const setting = theSetting(Project.SETTING_FILE)
 
 module.exports =

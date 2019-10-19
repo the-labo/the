@@ -39,6 +39,7 @@ module.exports =
           }),
     },
   }
+
 Object.freeze(module.exports)
 
 if (!isProduction()) {

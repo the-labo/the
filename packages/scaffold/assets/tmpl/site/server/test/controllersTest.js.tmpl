@@ -11,7 +11,7 @@ const controllers = require('../controllers')
 const createDB = require('../db/create')
 
 describe('controllers', function() {
-  this.timeout(5 * 1000)
+  this.timeout(5000)
   before(() => {})
 
   after(() => {})
@@ -22,9 +22,8 @@ describe('controllers', function() {
     const { AppCtrl } = controllers
     const session = {}
     const db = createDB.forTest()
-    const appCtrl = new AppCtrl({
+    const appCtrl = AppCtrl({
       app: { db },
-      client: {},
       session,
     })
 

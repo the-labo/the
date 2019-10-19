@@ -11,21 +11,18 @@ const {
 } = require('the-resource-base')
 
 /** @lends {{memberof}}.{{name}} */
-class {{name}} extends TheResource {
-  static get schema () {
-    return {
-      name: {
-        description: 'Name of resource',
-        type: STRING,
-        unique: true,
-        required: true,
-        trim: true,
-        minLength: 2
-      }
+function {{name}} ({ define }) {
+  const {{shortName}} = define({
+    name: {
+      description: 'Name of resource',
+      type: STRING,
+      unique: true,
+      required: true,
+      trim: true,
+      minLength: 2
     }
-  }
-
-  static entityClass (ResourceEntity) {
+  }, {
+    entityClass: (ResourceEntity)  =>
     /*
      * @memberof {{memberof}}.{{name}}
      * @inner
@@ -33,8 +30,11 @@ class {{name}} extends TheResource {
      */
     class {{name}}Entity extends ResourceEntity {
     }
-    return {{name}}Entity
-  }
+  })
+
+  Object.seal({{shortName}})
+
+  return {{shortName}}
 }
 
 module.exports = {{name}}

@@ -1,13 +1,12 @@
 /**
  * Client index
- * @memberOf module:~~~~package_name~~~~/client
+ * @memberof module:~~~~package_name~~~~/client
  * @namespace client
  */
 'use strict'
 
 import create from './create'
-import handle from '../handle'
 
-const singleton = create.for('singleton', { handle })
+const singleton = create()
 
 export default singleton
