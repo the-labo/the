@@ -18,7 +18,7 @@
   "dependencies": {
     "@okunishinishi/leaflet-shim": "^1.0.2",
     "@the-/const-ui": "^15.4.5",
-    "@the-/ui-spin": "^15.4.10",
+    "@the-/ui-spin": "^15.4.11",
     "@the-/ui-style": "^15.4.12",
     "@the-/util-ui": "^15.4.12",
     "@the-/window": "^15.5.5",

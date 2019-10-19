@@ -2,7 +2,7 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useMemo } from 'react'
 import { TheIcon } from '@the-/ui-icon'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 import TheSpinStyle from './TheSpinStyle'
@@ -25,31 +25,22 @@ const DEFAULT_SIZE = 'large'
 /**
  * Spin of the-components
  */
-class TheSpin extends React.PureComponent {
-  render() {
-    const {
-      props,
-      props: { children, className, cover, enabled, size, theme },
-    } = this
-
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-spin', className, {
-          'the-spinner-cover': !!cover,
-          'the-spinner-enabled': !!enabled,
-        })}
-      >
-        <TheIcon.Spin
-          className='the-spin-icon'
-          style={{ fontSize: size }}
-          theme={theme}
-        />
-        {children}
-      </div>
-    )
-  }
+const TheSpin = (props) => {
+  const { children, className, cover, enabled, size, theme } = props
+  const iconStyle = useMemo(() => ({ fontSize: size }), [size])
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-spin', className, {
+        'the-spinner-cover': !!cover,
+        'the-spinner-enabled': !!enabled,
+      })}
+    >
+      <TheIcon.Spin className='the-spin-icon' style={iconStyle} theme={theme} />
+      {children}
+    </div>
+  )
 }
 
 TheSpin.Style = TheSpinStyle

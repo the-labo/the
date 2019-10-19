@@ -12,12 +12,12 @@
     "name": "@the-/ui-icon",
     "order": 0,
     "typicalname": "uiIcon",
-    "version": "15.4.10"
+    "version": "15.4.11"
   },
   {
     "description": "Icon of the-components",
     "id": "TheIcon",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheIcon",
     "meta": {
       "filename": "TheIcon.jsx",
@@ -26,6 +26,7 @@
     },
     "name": "TheIcon",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {

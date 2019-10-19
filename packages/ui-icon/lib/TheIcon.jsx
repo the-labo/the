@@ -8,31 +8,24 @@ import TheIconStyle from './TheIconStyle'
 /**
  * Icon of the-components
  */
-class TheIcon extends React.Component {
-  static Spin(props) {
-    const { className, theme } = props
-    const icon = TheIcon.SpinIconThemes[theme] || TheIcon.SPIN_ICON
-    return (
-      <TheIcon {...props} className={c('the-icon-spin', className, icon)} />
-    )
-  }
+const TheIcon = (props) => {
+  const { children, className } = props
 
-  render() {
-    const {
-      props,
-      props: { children, className },
-    } = this
+  return (
+    <i
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      aria-hidden
+      className={c('the-icon', className)}
+    >
+      {children}
+    </i>
+  )
+}
 
-    return (
-      <i
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        aria-hidden
-        className={c('the-icon', className)}
-      >
-        {children}
-      </i>
-    )
-  }
+TheIcon.Spin = function Spin(props) {
+  const { className, theme } = props
+  const icon = TheIcon.SpinIconThemes[theme] || TheIcon.SPIN_ICON
+  return <TheIcon {...props} className={c('the-icon-spin', className, icon)} />
 }
 
 TheIcon.CDN_URL = 'https://use.fontawesome.com/releases/v5.0.3/css/all.css'

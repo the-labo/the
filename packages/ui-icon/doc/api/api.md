@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheIcon">TheIcon</a></dt>
-<dd><p>Icon of the-components</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheIcon">TheIcon()</a></dt>
+<dd><p>Icon of the-components</p>
+</dd>
 <dt><a href="#TheIconStyle">TheIconStyle()</a></dt>
 <dd><p>Style for TheIcon</p>
 </dd>
@@ -29,13 +24,13 @@
 ## @the-/ui-icon
 Icon of the-components
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 <a name="TheIcon"></a>
 
-## TheIcon
+## TheIcon()
 Icon of the-components
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheIconStyle"></a>
 
 ## TheIconStyle()

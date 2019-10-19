@@ -12,20 +12,21 @@
     "name": "@the-/ui-image",
     "order": 0,
     "typicalname": "uiImage",
-    "version": "15.4.11"
+    "version": "15.4.12"
   },
   {
     "description": "Image of the-components",
     "id": "TheImage",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheImage",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 13,
+      "lineno": 12,
       "path": "lib"
     },
     "name": "TheImage",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
@@ -51,7 +52,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 171,
+      "lineno": 142,
       "path": "lib"
     },
     "name": "asLink",
@@ -66,7 +67,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 173,
+      "lineno": 144,
       "path": "lib"
     },
     "name": "draggable",
@@ -81,7 +82,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 175,
+      "lineno": 146,
       "path": "lib"
     },
     "name": "height",
@@ -96,7 +97,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 177,
+      "lineno": 148,
       "path": "lib"
     },
     "name": "notFoundMessage",
@@ -111,7 +112,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 179,
+      "lineno": 150,
       "path": "lib"
     },
     "name": "onError",
@@ -126,7 +127,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 181,
+      "lineno": 152,
       "path": "lib"
     },
     "name": "onLoad",
@@ -141,7 +142,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 183,
+      "lineno": 154,
       "path": "lib"
     },
     "name": "resizeInterval",
@@ -156,7 +157,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 185,
+      "lineno": 156,
       "path": "lib"
     },
     "name": "scale",

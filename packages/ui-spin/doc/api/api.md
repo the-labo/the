@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheSpin">TheSpin</a></dt>
-<dd><p>Spin of the-components</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheSpin">TheSpin()</a></dt>
+<dd><p>Spin of the-components</p>
+</dd>
 <dt><a href="#TheSpinStyle">TheSpinStyle()</a></dt>
 <dd><p>Style for TheSpin</p>
 </dd>
@@ -29,13 +24,13 @@
 ## @the-/ui-spin
 Spin of the-components
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 <a name="TheSpin"></a>
 
-## TheSpin
+## TheSpin()
 Spin of the-components
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheSpinStyle"></a>
 
 ## TheSpinStyle()

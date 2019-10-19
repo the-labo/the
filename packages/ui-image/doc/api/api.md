@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheImage">TheImage</a></dt>
-<dd><p>Image of the-components</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheImage">TheImage()</a></dt>
+<dd><p>Image of the-components</p>
+</dd>
 <dt><a href="#TheImageStyle">TheImageStyle()</a></dt>
 <dd><p>Style for TheImage</p>
 </dd>
@@ -29,13 +24,13 @@
 ## @the-/ui-image
 Image of the-components
 
-**Version**: 15.4.11  
+**Version**: 15.4.12  
 <a name="TheImage"></a>
 
-## TheImage
+## TheImage()
 Image of the-components
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheImageStyle"></a>
 
 ## TheImageStyle()
