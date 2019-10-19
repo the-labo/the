@@ -225,8 +225,8 @@ class TheServer extends RFunc {
     const { infoFlusher, rpcKeeper } = this
     this.closeAt = new Date()
     this.listenAt = null
-    void infoFlusher.stopInfoFlush()
-    void rpcKeeper.stopAllKeepTimers()
+    void infoFlusher.stopInfoFlush().catch(() => null)
+    rpcKeeper.stopAllKeepTimers()
     const closed = await super.close(...args)
     this.connectionStore.closed = true
     await asleep(100) // Wait to flush

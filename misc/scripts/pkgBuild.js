@@ -1,9 +1,14 @@
 #!/usr/bin/env node
-'use strict'
-
 /**
  * @file Build package
  */
+
+'use strict'
+
 const build = require('@the-/script-build')
 
-build()
+const [, , ...args] = process.argv
+
+build({
+  noshim: args.includes('--noshim'),
+})

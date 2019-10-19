@@ -24,9 +24,13 @@ function InfoFlusher(filename, getter) {
     state,
     /** Flush info into file */
     async flushInfo() {
-      const info = getter()
-      await mkdirpAsync(path.dirname(filename))
-      await writeFileAsync(filename, JSON.stringify(info, null, 2))
+      try {
+        const info = getter()
+        await mkdirpAsync(path.dirname(filename))
+        await writeFileAsync(filename, JSON.stringify(info, null, 2))
+      } catch (e) {
+        console.error(`[TheServer] Failed to flush info: ${filename}`)
+      }
     },
     async startInfoFlush() {
       if (!isMaster) {
