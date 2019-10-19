@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheKeyboard">TheKeyboard</a></dt>
-<dd><p>Keyboard component</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheKeyboard">TheKeyboard()</a></dt>
+<dd><p>Keyboard component</p>
+</dd>
 <dt><a href="#TheKeyboardStyle">TheKeyboardStyle()</a></dt>
 <dd><p>Style for TheKeyboard</p>
 </dd>
@@ -29,13 +24,13 @@
 ## @the-/ui-keyboard
 Keyboard component
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 <a name="TheKeyboard"></a>
 
-## TheKeyboard
+## TheKeyboard()
 Keyboard component
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheKeyboardStyle"></a>
 
 ## TheKeyboardStyle()

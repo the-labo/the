@@ -12,7 +12,7 @@
     "name": "@the-/ui-chat",
     "order": 0,
     "typicalname": "uiChat",
-    "version": "15.4.12"
+    "version": "15.4.13"
   },
   {
     "description": "Chat UI of the-components",
@@ -43,20 +43,6 @@
     "scope": "global"
   },
   {
-    "description": "Chat Time line item",
-    "id": "TheChatTimeLineItem",
-    "kind": "class",
-    "longname": "TheChatTimeLineItem",
-    "meta": {
-      "filename": "TheChatTimeLineItem.jsx",
-      "lineno": 17,
-      "path": "lib"
-    },
-    "name": "TheChatTimeLineItem",
-    "order": 23,
-    "scope": "global"
-  },
-  {
     "description": "Chat UI of the-components",
     "id": "TheChat",
     "kind": "function",
@@ -83,6 +69,21 @@
     },
     "name": "TheChatStyle",
     "order": 11,
+    "params": [],
+    "scope": "global"
+  },
+  {
+    "description": "Chat Time line item",
+    "id": "TheChatTimeLineItem",
+    "kind": "function",
+    "longname": "TheChatTimeLineItem",
+    "meta": {
+      "filename": "TheChatTimeLineItem.jsx",
+      "lineno": 16,
+      "path": "lib"
+    },
+    "name": "TheChatTimeLineItem",
+    "order": 23,
     "params": [],
     "scope": "global"
   },
@@ -364,7 +365,7 @@
     "memberof": "TheChatTimeLineItem.propTypes",
     "meta": {
       "filename": "TheChatTimeLineItem.jsx",
-      "lineno": 177,
+      "lineno": 161,
       "path": "lib"
     },
     "name": "align",
@@ -379,7 +380,7 @@
     "memberof": "TheChatTimeLineItem.propTypes",
     "meta": {
       "filename": "TheChatTimeLineItem.jsx",
-      "lineno": 180,
+      "lineno": 164,
       "path": "lib"
     },
     "name": "image",
@@ -394,7 +395,7 @@
     "memberof": "TheChatTimeLineItem.propTypes",
     "meta": {
       "filename": "TheChatTimeLineItem.jsx",
-      "lineno": 182,
+      "lineno": 166,
       "path": "lib"
     },
     "name": "onWho",
@@ -409,7 +410,7 @@
     "memberof": "TheChatTimeLineItem.propTypes",
     "meta": {
       "filename": "TheChatTimeLineItem.jsx",
-      "lineno": 184,
+      "lineno": 168,
       "path": "lib"
     },
     "name": "status",
@@ -424,7 +425,7 @@
     "memberof": "TheChatTimeLineItem.propTypes",
     "meta": {
       "filename": "TheChatTimeLineItem.jsx",
-      "lineno": 186,
+      "lineno": 170,
       "path": "lib"
     },
     "name": "text",
@@ -439,7 +440,7 @@
     "memberof": "TheChatTimeLineItem.propTypes",
     "meta": {
       "filename": "TheChatTimeLineItem.jsx",
-      "lineno": 188,
+      "lineno": 172,
       "path": "lib"
     },
     "name": "video",
@@ -454,7 +455,7 @@
     "memberof": "TheChatTimeLineItem.propTypes",
     "meta": {
       "filename": "TheChatTimeLineItem.jsx",
-      "lineno": 190,
+      "lineno": 174,
       "path": "lib"
     },
     "name": "who",
@@ -469,7 +470,7 @@
     "memberof": "TheChatTimeLineItem.propTypes",
     "meta": {
       "filename": "TheChatTimeLineItem.jsx",
-      "lineno": 192,
+      "lineno": 176,
       "path": "lib"
     },
     "name": "whoBaseColor",
@@ -484,7 +485,7 @@
     "memberof": "TheChatTimeLineItem.propTypes",
     "meta": {
       "filename": "TheChatTimeLineItem.jsx",
-      "lineno": 194,
+      "lineno": 178,
       "path": "lib"
     },
     "name": "whoImageSize",

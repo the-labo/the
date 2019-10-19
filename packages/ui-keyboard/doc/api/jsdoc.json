@@ -12,12 +12,12 @@
     "name": "@the-/ui-keyboard",
     "order": 0,
     "typicalname": "uiKeyboard",
-    "version": "15.4.10"
+    "version": "15.4.11"
   },
   {
     "description": "Keyboard component",
     "id": "TheKeyboard",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheKeyboard",
     "meta": {
       "filename": "TheKeyboard.jsx",
@@ -26,6 +26,7 @@
     },
     "name": "TheKeyboard",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
@@ -51,7 +52,7 @@
     "memberof": "TheKeyboard.propTypes",
     "meta": {
       "filename": "TheKeyboard.jsx",
-      "lineno": 46,
+      "lineno": 41,
       "path": "lib"
     },
     "name": "keys",
@@ -66,7 +67,7 @@
     "memberof": "TheKeyboard.propTypes",
     "meta": {
       "filename": "TheKeyboard.jsx",
-      "lineno": 48,
+      "lineno": 43,
       "path": "lib"
     },
     "name": "onKeyPress",

@@ -2,7 +2,7 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useCallback } from 'react'
 import theDate from '@the-/date'
 import { TheCondition } from '@the-/ui-condition'
 import { TheImage } from '@the-/ui-image'
@@ -13,162 +13,146 @@ import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 /**
  * Chat Time line item
  */
-class TheChatTimeLineItem extends React.Component {
-  constructor() {
-    super(...arguments)
-    this.handleWho = this.handleWho.bind(this)
-  }
+const TheChatTimeLineItem = (props) => {
+  const {
+    align,
+    at,
+    atText,
+    children,
+    className,
+    image,
+    node,
+    onWho,
+    raw,
+    status,
+    text,
+    video,
+    who,
+    who: {
+      color: whoColor = colorWithText(who.name, {
+        base: props.whoBaseColor,
+      }),
+    },
+    whoImageSize,
+  } = props
 
-  handleWho() {
-    const {
-      props: { onWho, who },
-    } = this
+  const handleWho = useCallback(() => {
     onWho && onWho(who)
+  }, [onWho, who])
+
+  if (raw) {
+    return <div className='the-chat-time-line-item-raw'>{node}</div>
   }
 
-  render() {
-    const {
-      props,
-      props: {
-        align,
-        at,
-        atText,
-        children,
-        className,
-        image,
-        node,
-        onWho,
-        raw,
-        status,
-        text,
-        video,
-        who,
-        who: {
-          color: whoColor = colorWithText(who.name, {
-            base: this.props.whoBaseColor,
-          }),
-        },
-        whoImageSize,
-      },
-    } = this
-
-    if (raw) {
-      return <div className='the-chat-time-line-item-raw'>{node}</div>
-    }
-
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-chat-time-line-item', className, {
-          'the-chat-time-line-item-left': align === 'left',
-          'the-chat-time-line-item-right': align === 'right',
-        })}
-      >
-        <div className='the-chat-time-line-item-col the-chat-time-line-item-col-who'>
-          <TheCondition if={!!who.image}>
-            <TheImage
-              className={c('the-chat-time-line-item-who-image', {
-                'the-chat-time-line-item-clickable': !!onWho,
-              })}
-              height={whoImageSize}
-              onClick={this.handleWho}
-              scale='fill'
-              src={who.image}
-              style={{
-                backgroundColor: whoColor,
-                borderColor: whoColor,
-                color: textColorFor(whoColor),
-              }}
-              width={whoImageSize}
-            />
-          </TheCondition>
-          <TheCondition unless={!!who.image}>
-            <div
-              className={c('the-chat-time-line-item-who-image', {
-                'the-chat-time-line-item-clickable': !!onWho,
-              })}
-              onClick={this.handleWho}
-              style={{
-                backgroundColor: whoColor,
-                borderColor: whoColor,
-                color: textColorFor(whoColor),
-                height: `${whoImageSize}px`,
-                width: `${whoImageSize}px`,
-              }}
-            >
-              {who.initial || who.name}
-            </div>
-          </TheCondition>
-        </div>
-        <div className='the-chat-time-line-item-col'>
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-chat-time-line-item', className, {
+        'the-chat-time-line-item-left': align === 'left',
+        'the-chat-time-line-item-right': align === 'right',
+      })}
+    >
+      <div className='the-chat-time-line-item-col the-chat-time-line-item-col-who'>
+        <TheCondition if={!!who.image}>
+          <TheImage
+            className={c('the-chat-time-line-item-who-image', {
+              'the-chat-time-line-item-clickable': !!onWho,
+            })}
+            height={whoImageSize}
+            onClick={handleWho}
+            scale='fill'
+            src={who.image}
+            style={{
+              backgroundColor: whoColor,
+              borderColor: whoColor,
+              color: textColorFor(whoColor),
+            }}
+            width={whoImageSize}
+          />
+        </TheCondition>
+        <TheCondition unless={!!who.image}>
           <div
-            className='the-chat-time-line-item-who-name'
-            onClick={this.handleWho}
+            className={c('the-chat-time-line-item-who-image', {
+              'the-chat-time-line-item-clickable': !!onWho,
+            })}
+            onClick={handleWho}
+            style={{
+              backgroundColor: whoColor,
+              borderColor: whoColor,
+              color: textColorFor(whoColor),
+              height: `${whoImageSize}px`,
+              width: `${whoImageSize}px`,
+            }}
           >
-            {who.name}
+            {who.initial || who.name}
           </div>
-          <TheCondition if={!!text}>
-            <div className='the-chat-time-line-item-content'>
-              <div className='the-chat-time-line-item-text'>
-                <div className='the-chat-time-line-item-text-tail' />
-                <div>
-                  {(text || '')
-                    .split('\n')
-                    .reduce(
-                      (lines, line, i) =>
-                        [
-                          ...lines,
-                          lines.length > 0 ? <br key={i} /> : null,
-                          line,
-                        ].filter(Boolean),
-                      [],
-                    )}
-                </div>
+        </TheCondition>
+      </div>
+      <div className='the-chat-time-line-item-col'>
+        <div className='the-chat-time-line-item-who-name' onClick={handleWho}>
+          {who.name}
+        </div>
+        <TheCondition if={!!text}>
+          <div className='the-chat-time-line-item-content'>
+            <div className='the-chat-time-line-item-text'>
+              <div className='the-chat-time-line-item-text-tail' />
+              <div>
+                {(text || '')
+                  .split('\n')
+                  .reduce(
+                    (lines, line, i) =>
+                      [
+                        ...lines,
+                        lines.length > 0 ? <br key={i} /> : null,
+                        line,
+                      ].filter(Boolean),
+                    [],
+                  )}
               </div>
             </div>
-          </TheCondition>
-          <TheCondition if={!!node}>
-            <div className='the-chat-time-line-item-content'>
-              <div className='the-chat-time-line-item-node'>{node}</div>
-            </div>
-          </TheCondition>
-          <TheCondition if={!!image}>
-            <div className='the-chat-time-line-item-content'>
-              <TheImage
-                className='the-chat-time-line-item-image'
-                scale='fit'
-                width='100%'
-                {...(typeof image === 'string' ? { src: image } : image)}
-              />
-            </div>
-          </TheCondition>
-          <TheCondition if={!!video}>
-            <div className='the-chat-time-line-item-content'>
-              <TheVideo
-                className='video'
-                controls
-                scale='fit'
-                width='100%'
-                {...(typeof video === 'string' ? { src: video } : video)}
-              />
-            </div>
-          </TheCondition>
-          {children}
-        </div>
-        <div className='the-chat-time-line-item-col the-chat-time-line-item-col-state'>
-          <div />
-          <div>
-            <div className='the-chat-time-line-item-state'>{status}</div>
-            <div className='the-chat-time-line-item-date'>
-              {atText || theDate(at).format(TheChatTimeLineItem.TIME_FORMAT)}
-            </div>
+          </div>
+        </TheCondition>
+        <TheCondition if={!!node}>
+          <div className='the-chat-time-line-item-content'>
+            <div className='the-chat-time-line-item-node'>{node}</div>
+          </div>
+        </TheCondition>
+        <TheCondition if={!!image}>
+          <div className='the-chat-time-line-item-content'>
+            <TheImage
+              className='the-chat-time-line-item-image'
+              scale='fit'
+              width='100%'
+              {...(typeof image === 'string' ? { src: image } : image)}
+            />
+          </div>
+        </TheCondition>
+        <TheCondition if={!!video}>
+          <div className='the-chat-time-line-item-content'>
+            <TheVideo
+              className='video'
+              controls
+              scale='fit'
+              width='100%'
+              {...(typeof video === 'string' ? { src: video } : video)}
+            />
+          </div>
+        </TheCondition>
+        {children}
+      </div>
+      <div className='the-chat-time-line-item-col the-chat-time-line-item-col-state'>
+        <div />
+        <div>
+          <div className='the-chat-time-line-item-state'>{status}</div>
+          <div className='the-chat-time-line-item-date'>
+            {atText || theDate(at).format(TheChatTimeLineItem.TIME_FORMAT)}
           </div>
         </div>
-        <div className='the-chat-time-line-item-col the-chat-time-line-item-col-spacer' />
       </div>
-    )
-  }
+      <div className='the-chat-time-line-item-col the-chat-time-line-item-col-spacer' />
+    </div>
+  )
 }
 
 TheChatTimeLineItem.propTypes = {

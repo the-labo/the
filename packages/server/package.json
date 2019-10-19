@@ -1,7 +1,7 @@
 {
   "name": "@the-/server",
   "description": "HTTP/RPC Server of the-framework",
-  "version": "16.2.0",
+  "version": "16.2.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",

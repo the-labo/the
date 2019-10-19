@@ -9,36 +9,31 @@ import TheKeyboardButton from './TheKeyboardButton'
 /**
  * Keyboard component
  */
-class TheKeyboard extends React.Component {
-  render() {
-    const {
-      props,
-      props: { children, className, keys, onKeyPress },
-    } = this
+const TheKeyboard = (props) => {
+  const { children, className, keys, onKeyPress } = props
 
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-keyboard', className)}
-      >
-        <div className='the-keyboard-grid'>
-          {keys.map((row, i) => (
-            <div className='the-keyboard-row' key={i}>
-              {row.map((value, j) => (
-                <TheKeyboard.Button
-                  key={`${i}-${j}`}
-                  onClick={onKeyPress}
-                  value={value}
-                />
-              ))}
-            </div>
-          ))}
-        </div>
-        {children}
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-keyboard', className)}
+    >
+      <div className='the-keyboard-grid'>
+        {keys.map((row, i) => (
+          <div className='the-keyboard-row' key={i}>
+            {row.map((value, j) => (
+              <TheKeyboard.Button
+                key={`${i}-${j}`}
+                onClick={onKeyPress}
+                value={value}
+              />
+            ))}
+          </div>
+        ))}
       </div>
-    )
-  }
+      {children}
+    </div>
+  )
 }
 
 TheKeyboard.propTypes = {

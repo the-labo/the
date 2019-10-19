@@ -30,7 +30,7 @@
     "run": "^1.4.0"
   },
   "devDependencies": {
-    "@the-/ui-demo": "^15.4.8",
+    "@the-/ui-demo": "^15.4.11",
     "coz": "^7.0.19",
     "react-router-dom": "^5.1.2"
   },

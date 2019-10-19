@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-chat",
   "description": "Chat UI of the-components",
-  "version": "15.4.12",
+  "version": "15.4.13",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -15,7 +15,7 @@
     "@the-/date": "^15.4.2",
     "@the-/ui-button": "^15.4.11",
     "@the-/ui-condition": "^15.4.11",
-    "@the-/ui-form": "^15.4.10",
+    "@the-/ui-form": "^15.4.11",
     "@the-/ui-icon": "^15.4.10",
     "@the-/ui-image": "^15.4.11",
     "@the-/ui-input": "^15.5.4",

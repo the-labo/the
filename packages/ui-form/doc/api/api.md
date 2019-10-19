@@ -8,7 +8,7 @@
 </dd>
 </dl>
 
-## Classes
+## Constants
 
 <dl>
 <dt><a href="#TheForm">TheForm</a></dt>
@@ -29,13 +29,13 @@
 ## @the-/ui-form
 Form of the-components
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 <a name="TheForm"></a>
 
 ## TheForm
 Form of the-components
 
-**Kind**: global class  
+**Kind**: global constant  
 <a name="TheFormStyle"></a>
 
 ## TheFormStyle()

@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@the-/check": "^15.5.8",
-    "@the-/media": "^15.5.3",
+    "@the-/media": "^15.5.6",
     "@the-/pack": "^15.5.1",
     "@the-/window": "^15.5.5",
     "argx": "^4.0.4",

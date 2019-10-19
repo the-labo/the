@@ -12,12 +12,12 @@
     "name": "@the-/ui-form",
     "order": 0,
     "typicalname": "uiForm",
-    "version": "15.4.10"
+    "version": "15.4.11"
   },
   {
     "description": "Form of the-components",
     "id": "TheForm",
-    "kind": "class",
+    "kind": "constant",
     "longname": "TheForm",
     "meta": {
       "filename": "TheForm.jsx",
@@ -26,6 +26,7 @@
     },
     "name": "TheForm",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
@@ -123,7 +124,7 @@
     "memberof": "TheForm.propTypes",
     "meta": {
       "filename": "TheForm.jsx",
-      "lineno": 120,
+      "lineno": 115,
       "path": "lib"
     },
     "name": "errorLead",
@@ -138,7 +139,7 @@
     "memberof": "TheForm.propTypes",
     "meta": {
       "filename": "TheForm.jsx",
-      "lineno": 122,
+      "lineno": 117,
       "path": "lib"
     },
     "name": "inline",
@@ -153,7 +154,7 @@
     "memberof": "TheForm.propTypes",
     "meta": {
       "filename": "TheForm.jsx",
-      "lineno": 124,
+      "lineno": 119,
       "path": "lib"
     },
     "name": "spinning",

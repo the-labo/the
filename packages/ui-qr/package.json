@@ -20,7 +20,7 @@
     "qrcode": "^1.4.2"
   },
   "devDependencies": {
-    "@the-/ui-demo": "^15.4.8",
+    "@the-/ui-demo": "^15.4.11",
     "coz": "^7.0.19",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",

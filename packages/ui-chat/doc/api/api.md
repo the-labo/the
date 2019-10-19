@@ -17,9 +17,6 @@
 <dt><a href="#TheChatTimeLine">TheChatTimeLine</a></dt>
 <dd><p>Chat Time line</p>
 </dd>
-<dt><a href="#TheChatTimeLineItem">TheChatTimeLineItem</a></dt>
-<dd><p>Chat Time line item</p>
-</dd>
 </dl>
 
 ## Functions
@@ -31,6 +28,9 @@
 <dt><a href="#TheChatStyle">TheChatStyle()</a></dt>
 <dd><p>Style for TheChat</p>
 </dd>
+<dt><a href="#TheChatTimeLineItem">TheChatTimeLineItem()</a></dt>
+<dd><p>Chat Time line item</p>
+</dd>
 </dl>
 
 <a name="module_@the-/ui-chat"></a>
@@ -38,7 +38,7 @@
 ## @the-/ui-chat
 Chat UI of the-components
 
-**Version**: 15.4.12  
+**Version**: 15.4.13  
 <a name="TheChatForm"></a>
 
 ## TheChatForm
@@ -51,12 +51,6 @@ Chat UI of the-components
 Chat Time line
 
 **Kind**: global class  
-<a name="TheChatTimeLineItem"></a>
-
-## TheChatTimeLineItem
-Chat Time line item
-
-**Kind**: global class  
 <a name="TheChat"></a>
 
 ## TheChat()
@@ -67,5 +61,11 @@ Chat UI of the-components
 
 ## TheChatStyle()
 Style for TheChat
+
+**Kind**: global function  
+<a name="TheChatTimeLineItem"></a>
+
+## TheChatTimeLineItem()
+Chat Time line item
 
 **Kind**: global function  
