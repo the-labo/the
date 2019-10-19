@@ -14,26 +14,6 @@ import { htmlAttributesFor } from '@the-/util-ui'
  * Router of the-components
  */
 class TheRouter extends React.Component {
-  static Hash({ basename, children, getUserConfirmation, hashType }) {
-    return (
-      <HashRouter
-        basename={basename}
-        getUserConfirmation={getUserConfirmation}
-        hashType={hashType}
-      >
-        <div className='the-router-hash'>{children}</div>
-      </HashRouter>
-    )
-  }
-
-  static Static({ basename, children, context, location }) {
-    return (
-      <StaticRouter basename={basename} context={context} location={location}>
-        <div className='the-router-static'>{children}</div>
-      </StaticRouter>
-    )
-  }
-
   componentDidMount() {
     const {
       props: { forceRefresh, history },
@@ -98,6 +78,31 @@ class TheRouter extends React.Component {
       </Router>
     )
   }
+}
+
+TheRouter.Hash = function Hash({
+  basename,
+  children,
+  getUserConfirmation,
+  hashType,
+}) {
+  return (
+    <HashRouter
+      basename={basename}
+      getUserConfirmation={getUserConfirmation}
+      hashType={hashType}
+    >
+      <div className='the-router-hash'>{children}</div>
+    </HashRouter>
+  )
+}
+
+TheRouter.Static = function Static({ basename, children, context, location }) {
+  return (
+    <StaticRouter basename={basename} context={context} location={location}>
+      <div className='the-router-static'>{children}</div>
+    </StaticRouter>
+  )
 }
 
 TheRouter.propTypes = {}

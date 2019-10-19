@@ -17,11 +17,13 @@ program
   .usage('[options] <dirname> ')
   .description(pkg[ 'description' ])
   .option('-w, --watch', 'Run file watch')
+  .option('-n, --noshim', 'Skip shim')
 program.parse(process.argv)
 
 // Run main command
 theScriptBuild.apply(theScriptBuild, program.args.concat({
-  watch: program['watch']})
+  watch: program['watch'],
+  noshim: program['noshim']})
 ).catch(handleError)
 
 // Handlers

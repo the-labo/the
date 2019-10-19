@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-meta",
   "description": "Dynamic meta attribute injector for the-components",
-  "version": "15.4.10",
+  "version": "15.4.12",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,13 +12,13 @@
   },
   "dependencies": {
     "@the-/ui-style": "^15.4.12",
-    "@the-/util-ui": "^15.4.12",
+    "@the-/util-ui": "^16.0.5",
     "@the-/window": "^15.5.5",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui-demo": "file:../ui-demo",
+    "@the-/ui-demo": "^15.4.11",
     "@the-/ui-router": "^15.4.10",
     "coz": "^7.0.19",
     "objnest": "^5.0.10",

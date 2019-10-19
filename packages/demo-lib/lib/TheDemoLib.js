@@ -2,8 +2,11 @@
 
 /**
  * @memberof module:@the-/demo-lib
- * @class TheDemoLib
+ * @function TheDemoLib
+ * @returns {*}
  */
-class TheDemoLib {}
+function TheDemoLib() {
+  return {}
+}
 
 module.exports = TheDemoLib

@@ -5,18 +5,14 @@
 ## @the-/demo-lib
 Demo of the-lib packages
 
-**Version**: 15.4.8  
+**Version**: 15.4.11  
 **License**: MIT  
 
 * [@the-/demo-lib](#module_@the-/demo-lib)
-    * [.TheDemoLib](#module_@the-/demo-lib.TheDemoLib)
     * [.create(...args)](#module_@the-/demo-lib.create) ⇒ <code>TheDemoLib</code>
     * [.theDemoLib()](#module_@the-/demo-lib.theDemoLib) ⇒ <code>TheDemoLib</code>
+    * [.TheDemoLib()](#module_@the-/demo-lib.TheDemoLib) ⇒ <code>\*</code>
 
-<a name="module_@the-/demo-lib.TheDemoLib"></a>
-
-### demoLib.TheDemoLib
-**Kind**: static class of [<code>@the-/demo-lib</code>](#module_@the-/demo-lib)  
 <a name="module_@the-/demo-lib.create"></a>
 
 ### demoLib.create(...args) ⇒ <code>TheDemoLib</code>
@@ -33,4 +29,8 @@ Create a TheDemoLib instance
 ### demoLib.theDemoLib() ⇒ <code>TheDemoLib</code>
 Default exports
 
+**Kind**: static method of [<code>@the-/demo-lib</code>](#module_@the-/demo-lib)  
+<a name="module_@the-/demo-lib.TheDemoLib"></a>
+
+### demoLib.TheDemoLib() ⇒ <code>\*</code>
 **Kind**: static method of [<code>@the-/demo-lib</code>](#module_@the-/demo-lib)  

@@ -12,12 +12,12 @@
     "name": "@the-/ui-main",
     "order": 0,
     "typicalname": "uiMain",
-    "version": "15.4.10"
+    "version": "15.4.12"
   },
   {
     "description": "Main for the-components",
     "id": "TheMain",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheMain",
     "meta": {
       "filename": "TheMain.jsx",
@@ -26,6 +26,7 @@
     },
     "name": "TheMain",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
@@ -51,7 +52,7 @@
     "memberof": "TheMain.propTypes",
     "meta": {
       "filename": "TheMain.jsx",
-      "lineno": 39,
+      "lineno": 33,
       "path": "lib"
     },
     "name": "spinning",

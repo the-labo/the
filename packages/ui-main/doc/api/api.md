@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheMain">TheMain</a></dt>
-<dd><p>Main for the-components</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheMain">TheMain()</a></dt>
+<dd><p>Main for the-components</p>
+</dd>
 <dt><a href="#TheMainStyle">TheMainStyle()</a></dt>
 <dd><p>Style for TheMain</p>
 </dd>
@@ -29,13 +24,13 @@
 ## @the-/ui-main
 Main for the-components
 
-**Version**: 15.4.10  
+**Version**: 15.4.12  
 <a name="TheMain"></a>
 
-## TheMain
+## TheMain()
 Main for the-components
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheMainStyle"></a>
 
 ## TheMainStyle()

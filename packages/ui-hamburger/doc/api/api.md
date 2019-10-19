@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheHamburger">TheHamburger</a></dt>
-<dd><p>Hamburger menu for the-components</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheHamburger">TheHamburger()</a></dt>
+<dd><p>Hamburger menu for the-components</p>
+</dd>
 <dt><a href="#TheHamburgerStyle">TheHamburgerStyle()</a></dt>
 <dd><p>Style for TheHamburger</p>
 </dd>
@@ -29,13 +24,13 @@
 ## @the-/ui-hamburger
 Hamburger menu for the-components
 
-**Version**: 15.4.10  
+**Version**: 15.4.12  
 <a name="TheHamburger"></a>
 
-## TheHamburger
+## TheHamburger()
 Hamburger menu for the-components
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheHamburgerStyle"></a>
 
 ## TheHamburgerStyle()

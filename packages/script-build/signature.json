@@ -13,6 +13,11 @@
       "name": "watch",
       "desc": "Run file watch",
       "short": "w"
+    },
+    {
+      "name": "noshim",
+      "desc": "Skip shim",
+      "short": "n"
     }
   ]
 }

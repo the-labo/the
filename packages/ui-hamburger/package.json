@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-hamburger",
   "description": "Hamburger menu for the-components",
-  "version": "15.4.11",
+  "version": "15.4.12",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -20,7 +20,7 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui-demo": "file:../ui-demo",
+    "@the-/ui-demo": "^15.4.11",
     "@the-/ui-router": "^15.4.10",
     "coz": "^7.0.19",
     "objnest": "^5.0.10",

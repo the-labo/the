@@ -12,7 +12,7 @@
     "name": "@the-/ui-menu",
     "order": 0,
     "typicalname": "uiMenu",
-    "version": "15.4.15"
+    "version": "15.4.16"
   },
   {
     "description": "Drop down menu",
@@ -21,7 +21,7 @@
     "longname": "TheDropDownMenu",
     "meta": {
       "filename": "TheDropdownMenu.jsx",
-      "lineno": 53,
+      "lineno": 21,
       "path": "lib"
     },
     "name": "TheDropDownMenu",
@@ -31,7 +31,7 @@
   {
     "description": "Menu of the-components",
     "id": "TheMenu",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheMenu",
     "meta": {
       "filename": "TheMenu.jsx",
@@ -40,12 +40,13 @@
     },
     "name": "TheMenu",
     "order": 6,
+    "params": [],
     "scope": "global"
   },
   {
     "description": "Menu of the-components",
     "id": "TheMenuItem",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheMenuItem",
     "meta": {
       "filename": "TheMenuItem.jsx",
@@ -54,6 +55,7 @@
     },
     "name": "TheMenuItem",
     "order": 8,
+    "params": [],
     "scope": "global"
   },
   {
@@ -79,7 +81,7 @@
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
       "filename": "TheDropdownMenu.jsx",
-      "lineno": 162,
+      "lineno": 157,
       "path": "lib"
     },
     "name": "eventsToClose",
@@ -94,7 +96,7 @@
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
       "filename": "TheDropdownMenu.jsx",
-      "lineno": 164,
+      "lineno": 159,
       "path": "lib"
     },
     "name": "label",
@@ -109,7 +111,7 @@
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
       "filename": "TheDropdownMenu.jsx",
-      "lineno": 166,
+      "lineno": 161,
       "path": "lib"
     },
     "name": "open",
@@ -124,7 +126,7 @@
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
       "filename": "TheDropdownMenu.jsx",
-      "lineno": 168,
+      "lineno": 163,
       "path": "lib"
     },
     "name": "righted",
@@ -139,7 +141,7 @@
     "memberof": "TheMenu.propTypes",
     "meta": {
       "filename": "TheMenu.jsx",
-      "lineno": 40,
+      "lineno": 35,
       "path": "lib"
     },
     "name": "grid",
@@ -154,7 +156,7 @@
     "memberof": "TheMenuItem.propTypes",
     "meta": {
       "filename": "TheMenuItem.jsx",
-      "lineno": 41,
+      "lineno": 36,
       "path": "lib"
     },
     "name": "active",
@@ -169,7 +171,7 @@
     "memberof": "TheMenuItem.propTypes",
     "meta": {
       "filename": "TheMenuItem.jsx",
-      "lineno": 43,
+      "lineno": 38,
       "path": "lib"
     },
     "name": "icon",
@@ -184,7 +186,7 @@
     "memberof": "TheMenuItem.propTypes",
     "meta": {
       "filename": "TheMenuItem.jsx",
-      "lineno": 45,
+      "lineno": 40,
       "path": "lib"
     },
     "name": "to",

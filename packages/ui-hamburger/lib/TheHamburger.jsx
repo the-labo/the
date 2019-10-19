@@ -9,11 +9,14 @@ import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 /**
  * Hamburger menu for the-components
  */
-const TheHamburger = props => {
-  const { onToggle, hidden, children, className, footer, header, } = props
-  const toggle = useCallback((hidden) => {
-    onToggle && onToggle(hidden)
-  }, [onToggle])
+const TheHamburger = (props) => {
+  const { children, className, footer, header, hidden, onToggle } = props
+  const toggle = useCallback(
+    (hidden) => {
+      onToggle && onToggle(hidden)
+    },
+    [onToggle],
+  )
 
   const handleClose = useCallback(() => {
     toggle(true)
@@ -32,7 +35,7 @@ const TheHamburger = props => {
         'the-hamburger-hidden': hidden,
       })}
     >
-      <div className='the-hamburger-cover' onClick={handleToggle}/>
+      <div className='the-hamburger-cover' onClick={handleToggle} />
       <div className='the-hamburger-inner'>
         <TheButton
           className='the-hamburger-close'
@@ -48,19 +51,19 @@ const TheHamburger = props => {
   )
 }
 
-TheHamburger.Body = function TheHamburger ({ children }) {
+TheHamburger.Body = function TheHamburger({ children }) {
   return <div className='the-hamburger-body'>{children}</div>
 }
 
-TheHamburger.Footer = function TheHamburger ({ children }) {
+TheHamburger.Footer = function TheHamburger({ children }) {
   return <div className='the-hamburger-footer'>{children}</div>
 }
 
-TheHamburger.Header = function TheHamburger ({ children }) {
+TheHamburger.Header = function TheHamburger({ children }) {
   return <div className='the-hamburger-header'>{children}</div>
 }
 
-TheHamburger.Item = function TheHamburger ({ children, icon, onClick, to }) {
+TheHamburger.Item = function TheHamburger({ children, icon, onClick, to }) {
   return (
     <div className='the-hamburger-item'>
       <TheButton
@@ -75,7 +78,7 @@ TheHamburger.Item = function TheHamburger ({ children, icon, onClick, to }) {
   )
 }
 
-TheHamburger.Toggle = function TheHamburger (props) {
+TheHamburger.Toggle = function TheHamburger(props) {
   return <TheButton icon={TheHamburger.TOGGLE_ICON} simple {...props} />
 }
 

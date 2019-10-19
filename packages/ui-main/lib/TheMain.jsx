@@ -10,26 +10,20 @@ import TheMainStyle from './TheMainStyle'
 /**
  * Main for the-components
  */
-class TheMain extends React.Component {
-  render() {
-    const {
-      props,
-      props: { children, className, spinning },
-    } = this
-
-    return (
-      <main
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        aria-busy={spinning}
-        className={c('the-main', className)}
-      >
-        {spinning && (
-          <TheSpin className='the-main-spin' cover enabled size='xx-large' />
-        )}
-        {children}
-      </main>
-    )
-  }
+const TheMain = (props) => {
+  const { children, className, spinning } = props
+  return (
+    <main
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      aria-busy={spinning}
+      className={c('the-main', className)}
+    >
+      {spinning && (
+        <TheSpin className='the-main-spin' cover enabled size='xx-large' />
+      )}
+      {children}
+    </main>
+  )
 }
 
 TheMain.Style = TheMainStyle

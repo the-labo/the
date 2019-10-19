@@ -4,7 +4,7 @@
  * @description Root element of the-components
  * @module @the-/ui-root
  * @typicalname uiRoot
- * @version 15.4.11
+ * @version 15.4.12
  */
 'use strict'
 

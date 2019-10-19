@@ -1,9 +1,7 @@
 'use strict'
 
 import React from 'react'
-import TheMain from '@the-/ui-main'
-
-const TheMainStyles = TheMain.styles({})
+import { TheMain, TheMainStyles } from '@the-/ui-main'
 
 class ExampleComponent extends React.PureComponent {
   render() {

@@ -14,17 +14,17 @@
 <dt><a href="#TheDropDownMenu">TheDropDownMenu</a></dt>
 <dd><p>Drop down menu</p>
 </dd>
-<dt><a href="#TheMenu">TheMenu</a></dt>
-<dd><p>Menu of the-components</p>
-</dd>
-<dt><a href="#TheMenuItem">TheMenuItem</a></dt>
-<dd><p>Menu of the-components</p>
-</dd>
 </dl>
 
 ## Functions
 
 <dl>
+<dt><a href="#TheMenu">TheMenu()</a></dt>
+<dd><p>Menu of the-components</p>
+</dd>
+<dt><a href="#TheMenuItem">TheMenuItem()</a></dt>
+<dd><p>Menu of the-components</p>
+</dd>
 <dt><a href="#TheMenuStyle">TheMenuStyle()</a></dt>
 <dd><p>Style for TheMenu</p>
 </dd>
@@ -35,7 +35,7 @@
 ## @the-/ui-menu
 Menu of the-components
 
-**Version**: 15.4.15  
+**Version**: 15.4.16  
 <a name="TheDropDownMenu"></a>
 
 ## TheDropDownMenu
@@ -44,16 +44,16 @@ Drop down menu
 **Kind**: global class  
 <a name="TheMenu"></a>
 
-## TheMenu
+## TheMenu()
 Menu of the-components
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheMenuItem"></a>
 
-## TheMenuItem
+## TheMenuItem()
 Menu of the-components
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheMenuStyle"></a>
 
 ## TheMenuStyle()

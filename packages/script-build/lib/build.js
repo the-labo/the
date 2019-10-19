@@ -29,6 +29,7 @@ async function build(dirname = process.cwd(), options = {}) {
     demoSrc = 'doc/demo/entrypoint.jsx',
     jsPattern = '**/+(*.jsx|*.js)',
     libDir = 'lib',
+    noshim = false,
     shimDir = 'shim',
     watch = false,
     watchTriggerInterval = 100,
@@ -65,7 +66,7 @@ async function build(dirname = process.cwd(), options = {}) {
       },
     )
     const libExists = await existsAsync(libDir)
-    if (libExists) {
+    if (libExists && !noshim) {
       await buildShim(libDir, shimDir, {
         jsPattern,
         plugins,

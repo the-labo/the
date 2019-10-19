@@ -13,21 +13,7 @@
     "name": "@the-/demo-lib",
     "order": 2,
     "typicalname": "demoLib",
-    "version": "15.4.8"
-  },
-  {
-    "id": "module:@the-/demo-lib.TheDemoLib",
-    "kind": "class",
-    "longname": "module:@the-/demo-lib.TheDemoLib",
-    "memberof": "module:@the-/demo-lib",
-    "meta": {
-      "filename": "TheDemoLib.js",
-      "lineno": 3,
-      "path": "lib"
-    },
-    "name": "TheDemoLib",
-    "order": 3,
-    "scope": "static"
+    "version": "15.4.11"
   },
   {
     "description": "Create a TheDemoLib instance",
@@ -72,7 +58,7 @@
     "memberof": "module:@the-/demo-lib",
     "meta": {
       "filename": "default.js",
-      "lineno": 3,
+      "lineno": 10,
       "path": "lib"
     },
     "name": "theDemoLib",
@@ -82,6 +68,29 @@
         "type": {
           "names": [
             "TheDemoLib"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/demo-lib.TheDemoLib",
+    "kind": "function",
+    "longname": "module:@the-/demo-lib.TheDemoLib",
+    "memberof": "module:@the-/demo-lib",
+    "meta": {
+      "filename": "TheDemoLib.js",
+      "lineno": 3,
+      "path": "lib"
+    },
+    "name": "TheDemoLib",
+    "order": 3,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
           ]
         }
       }
