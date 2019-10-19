@@ -1,0 +1,28 @@
+/**
+ * Act for "{{{scopePath}}}"
+ * @memberof {{memberof}}
+ * @function {{name}}
+ * @returns {Object} Act instance
+ */
+'use strict'
+
+/** @lends {{memberof}}.{{name}} */
+function {{name}} (scope) {
+
+  /**
+   * @memberof {{memberof}}.{{name}}
+   * @inner
+   * @namespace {{camelcase name}}
+   */
+  const act = {
+
+  }
+
+  Object.freeze(act)
+
+  return act
+}
+
+AppAct.fromStore = (store, ctx) => AppAct(store.{{{scopePath}}}, ctx)
+
+export default {{name}}

@@ -1,0 +1,18 @@
+'use strict'
+
+const { dir } = require('@the-/templates')
+
+module.exports = dir.recursive({
+  annotations: {
+    description: 'Action modules',
+    memberof: 'module:~~~~package_name~~~~/client',
+    namespace: 'actions',
+  },
+  dirname: __dirname,
+  ext: '.js',
+  ignore: ['concerns/**/*.*'],
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

@@ -1,0 +1,54 @@
+/**
+ * Act for "connection.retry"
+ * @memberof module:~~~~package_name~~~~/client.actions
+ * @function ConnectionRetryAct
+ * @returns {object} Act instance
+ */
+'use strict'
+
+import { unlessProduction } from '@the-/check'
+import { busyAccessFor } from '@the-/facade-scope'
+import { reload } from '@the-/window'
+
+/** @lends module:~~~~package_name~~~~/client.actions.ConnectionRetryAct */
+function ConnectionRetryAct(scope) {
+  const busyAccess = busyAccessFor(scope)
+
+  /**
+   * @memberof module:~~~~package_name~~~~/client.actions.ConnectionRetryAct
+   * @inner
+   * @namespace connectionRetryAct
+   */
+  const act = {
+    bindClient(client) {
+      client.onGone(() => {
+        setTimeout(() => {
+          act.start()
+          unlessProduction(() => {
+            client.pingPongAnd(() => act.reload())
+          })
+        }, 1000)
+      })
+    },
+    close() {
+      scope.init()
+    },
+    async reload() {
+      return busyAccess.while(async () => {
+        reload()
+      })
+    },
+    async start() {
+      scope.set({ active: true, busy: false })
+    },
+  }
+
+  Object.freeze(act)
+
+  return act
+}
+
+ConnectionRetryAct.fromStore = (store, ctx) =>
+  ConnectionRetryAct(store.connection.retry, ctx)
+
+export default ConnectionRetryAct

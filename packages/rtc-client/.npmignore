@@ -37,9 +37,13 @@ tmp
 
 .*.bud
 
-doc
+
 example
-test
-var
-/*.html
 misc/mocks
+test
+
+var
+public
+
+doc
+/*.html

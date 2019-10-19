@@ -1,0 +1,31 @@
+'use strict'
+
+require = require('esm')(module)
+
+const { pascalcase, snakecase } = require('stringcase')
+const { default: scopes } = require('../store/scopes')
+
+const names = Object.keys(scopes)
+  .filter((name) => !/^_/.test(name))
+  .filter((name) => !/^abstract/.test(name))
+  .map((name) => {
+    const components = name.split('.')
+    return pascalcase(components.slice(0, components.length - 1).join('_'))
+  })
+  .filter((v, i, arr) => arr.indexOf(v) === i)
+  .filter(Boolean)
+
+module.exports = [...names].map((name) => ({
+  data: {
+    memberof: 'module:~~~~package_name~~~~/client.actions',
+    name: `${name}Act`,
+    scopePath: snakecase(name).replace(/_/g, '.'),
+  },
+  force: false,
+  mode: '644',
+  path: `${name}Act.js`,
+}))
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

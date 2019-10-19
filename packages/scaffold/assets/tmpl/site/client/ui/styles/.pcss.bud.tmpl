@@ -1,0 +1,18 @@
+/**
+ * Render variables pcss
+ */
+'use strict'
+
+const { pcssVars } = require('@the-/templates')
+const { Styles } = require('../../../conf')
+
+module.exports = [
+  { name: 'Styles', src: 'conf/Styles.js', values: Styles },
+].map(({ name, src, values }) => ({
+  path: `${name}.pcss`,
+  ...pcssVars({ keyParser: null, src, values }),
+}))
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}
