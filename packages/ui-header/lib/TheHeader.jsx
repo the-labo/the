@@ -18,9 +18,8 @@ const NOTICE_HEIGHT = 36
 class TheHeader extends React.Component {
   constructor(props) {
     super(props)
-    this.inner = null
     this.handleResize = this.handleResize.bind(this)
-    this.handleInnerRef = this.handleInnerRef.bind(this)
+    this.innerRef = React.createRef()
     this.state = {
       innerHeight: null,
     }
@@ -48,15 +47,13 @@ class TheHeader extends React.Component {
   }
 
   doLayout() {
-    const { inner } = this
+    const {
+      innerRef: { current: inner },
+    } = this
     const innerHeight = inner && inner.offsetHeight
     if (this.state.innerHeight !== innerHeight) {
       this.setState({ innerHeight })
     }
-  }
-
-  handleInnerRef(inner) {
-    this.inner = inner
   }
 
   handleResize(e) {
@@ -64,7 +61,9 @@ class TheHeader extends React.Component {
   }
 
   layoutIfNeeded() {
-    const { inner } = this
+    const {
+      innerRef: { current: inner },
+    } = this
     const innerHeight = inner && inner.offsetHeight
     const needsLayout = innerHeight && this.state.innerHeight !== innerHeight
     if (needsLayout) {
@@ -99,11 +98,7 @@ class TheHeader extends React.Component {
         })}
         style={{ minHeight: innerHeight }}
       >
-        <div
-          className='the-header-inner'
-          ref={this.handleInnerRef}
-          style={style}
-        >
+        <div className='the-header-inner' ref={this.innerRef} style={style}>
           <TheContainer>{children}</TheContainer>
           <div
             className={c('the-header-notices-wrap', {
