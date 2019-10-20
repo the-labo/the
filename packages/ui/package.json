@@ -55,7 +55,7 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui-demo": "^15.4.11",
+    "@the-/ui-demo": "^15.4.12",
     "fmtjson": "^4.0.6",
     "injectmock": "^2.0.0",
     "react": "^16.10.2",

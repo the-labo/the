@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@the-/component-demo": "^15.1.3",
-    "@the-/ui-demo": "^15.4.11",
+    "@the-/ui-demo": "^15.4.12",
     "@the-/ui-router": "^15.4.11",
     "coz": "^7.0.19",
     "react": "^16.10.2",

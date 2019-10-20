@@ -1,12 +1,13 @@
 {
   "name": "@the-/db",
   "description": "DB for the-framework",
-  "version": "17.0.17",
+  "version": "17.0.18",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
     "url": "http://okunishitaka.com"
   },
+  "browser": "browser",
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
@@ -60,7 +61,7 @@
   },
   "repository": "the-labo/the",
   "scripts": {
-    "build": "../../misc/scripts/pkgBuild.js",
+    "build": "../../misc/scripts/pkgBuild.js --noshim",
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",

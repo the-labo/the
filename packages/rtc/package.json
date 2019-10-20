@@ -1,13 +1,13 @@
 {
   "name": "@the-/rtc",
   "description": "RTC server for the-frameworks",
-  "version": "15.4.13",
+  "version": "15.4.15",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
     "url": "http://okunishitaka.com"
   },
-  "browser": "shim",
+  "browser": "browser",
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
@@ -38,7 +38,7 @@
   },
   "repository": "the-labo/the",
   "scripts": {
-    "build": "../../misc/scripts/pkgBuild.js",
+    "build": "../../misc/scripts/pkgBuild.js --noshim",
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",

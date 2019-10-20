@@ -116,7 +116,7 @@ tryExample().catch((err) => console.error(err))
   - [.PeerEvents](./doc/api/api.md#module_@the-/rtc.constants.PeerEvents)
   - [.TopologyTypes](./doc/api/api.md#module_@the-/rtc.constants.TopologyTypes)
 - module:@the-/rtc.helpers
-  - [.handleUnknownKeys(unknowns,undefined&#x3D;)](./doc/api/api.md#module_@the-/rtc.helpers.handleUnknownKeys)
+  - [.handleUnknownKeys(unknowns,options&#x3D;)](./doc/api/api.md#module_@the-/rtc.helpers.handleUnknownKeys)
   - [.parseTurnSecret(secret,expiry)](./doc/api/api.md#module_@the-/rtc.helpers.parseTurnSecret)
 - module:@the-/rtc.mixins
   - [.ioMix(Class)](./doc/api/api.md#module_@the-/rtc.mixins.ioMix)

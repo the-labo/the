@@ -13,7 +13,7 @@
     "name": "@the-/rtc",
     "order": 2,
     "typicalname": "rtc",
-    "version": "15.4.13"
+    "version": "15.4.14"
   },
   {
     "id": "module:@the-/rtc.TheRTC()",
@@ -435,7 +435,7 @@
       },
       {
         "optional": true,
-        "name": "undefined="
+        "name": "options="
       }
     ],
     "scope": "static"

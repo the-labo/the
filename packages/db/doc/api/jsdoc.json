@@ -13,7 +13,7 @@
     "name": "@the-/db",
     "order": 4,
     "typicalname": "db",
-    "version": "17.0.17"
+    "version": "17.0.18"
   },
   {
     "id": "module:@the-/db.TheDB()",
@@ -1295,6 +1295,20 @@
     },
     "name": "parsePolicy",
     "order": 23,
+    "params": [
+      {
+        "name": "policy"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
