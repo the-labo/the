@@ -12,6 +12,7 @@ const debug = Debug('the:cycle')
 
 /**
  * Component with life cycle
+ * @deprecated use react hook instead
  */
 class TheCycle extends React.Component {
   componentDidMount() {

@@ -3,7 +3,7 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import ClickOutside from 'react-click-outside'
+import ClickOutside from '@okunishinishi/react-click-outside'
 import { TheIcon } from '@the-/ui-icon'
 import {
   changedProps,

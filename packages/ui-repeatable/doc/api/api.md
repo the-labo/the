@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheRepeatable">TheRepeatable</a></dt>
-<dd><p>Repeatable of the-component</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheRepeatable">TheRepeatable()</a></dt>
+<dd><p>Repeatable of the-component</p>
+</dd>
 <dt><a href="#TheRepeatableStyle">TheRepeatableStyle()</a></dt>
 <dd><p>Style for TheRepeatable</p>
 </dd>
@@ -29,13 +24,13 @@
 ## @the-/ui-repeatable
 Repeatable of the-component
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 <a name="TheRepeatable"></a>
 
-## TheRepeatable
+## TheRepeatable()
 Repeatable of the-component
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheRepeatableStyle"></a>
 
 ## TheRepeatableStyle()

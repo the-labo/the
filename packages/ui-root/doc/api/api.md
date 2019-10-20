@@ -24,7 +24,7 @@
 ## @the-/ui-root
 Root element of the-components
 
-**Version**: 15.4.12  
+**Version**: 15.4.13  
 <a name="TheRoot"></a>
 
 ## TheRoot()

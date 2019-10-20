@@ -11,7 +11,7 @@
 ## Classes
 
 <dl>
-<dt><a href="#TheCycle">TheCycle</a></dt>
+<dt><del><a href="#TheCycle">TheCycle</a></del></dt>
 <dd><p>Component with life cycle</p>
 </dd>
 </dl>
@@ -21,10 +21,12 @@
 ## @the-/ui-cycle
 Component with life cycle
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 <a name="TheCycle"></a>
 
-## TheCycle
+## ~~TheCycle~~
+***Deprecated***
+
 Component with life cycle
 
 **Kind**: global class  

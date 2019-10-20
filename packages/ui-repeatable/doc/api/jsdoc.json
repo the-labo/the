@@ -12,12 +12,12 @@
     "name": "@the-/ui-repeatable",
     "order": 0,
     "typicalname": "uiRepeatable",
-    "version": "15.4.10"
+    "version": "15.4.11"
   },
   {
     "description": "Repeatable of the-component",
     "id": "TheRepeatable",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheRepeatable",
     "meta": {
       "filename": "TheRepeatable.jsx",
@@ -26,6 +26,7 @@
     },
     "name": "TheRepeatable",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
@@ -51,7 +52,7 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 73,
+      "lineno": 68,
       "path": "lib"
     },
     "name": "ItemComponent",
@@ -66,7 +67,7 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 75,
+      "lineno": 70,
       "path": "lib"
     },
     "name": "ListComponent",
@@ -81,7 +82,7 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 77,
+      "lineno": 72,
       "path": "lib"
     },
     "name": "alt",
@@ -96,7 +97,7 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 79,
+      "lineno": 74,
       "path": "lib"
     },
     "name": "data",
@@ -111,7 +112,7 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 81,
+      "lineno": 76,
       "path": "lib"
     },
     "name": "horizontal",
@@ -126,7 +127,7 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 83,
+      "lineno": 78,
       "path": "lib"
     },
     "name": "introItem",
@@ -141,7 +142,7 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 85,
+      "lineno": 80,
       "path": "lib"
     },
     "name": "keyFor",
@@ -156,7 +157,7 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 87,
+      "lineno": 82,
       "path": "lib"
     },
     "name": "outroItem",
@@ -171,7 +172,7 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 89,
+      "lineno": 84,
       "path": "lib"
     },
     "name": "render",
@@ -186,7 +187,7 @@
     "memberof": "TheRepeatable.propTypes",
     "meta": {
       "filename": "TheRepeatable.jsx",
-      "lineno": 91,
+      "lineno": 86,
       "path": "lib"
     },
     "name": "spinning",

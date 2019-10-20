@@ -11,59 +11,54 @@ import TheRepeatableStyle from './TheRepeatableStyle'
 /**
  * Repeatable of the-component
  */
-class TheRepeatable extends React.Component {
-  render() {
-    const {
-      props,
-      props: {
-        ItemComponent,
-        ListComponent,
-        alt,
-        children,
-        className,
-        data = [],
-        horizontal,
-        introItem,
-        keyFor,
-        outroItem,
-        render,
-        spinning,
-      },
-    } = this
+const TheRepeatable = (props) => {
+  const {
+    ItemComponent,
+    ListComponent,
+    alt,
+    children,
+    className,
+    data = [],
+    horizontal,
+    introItem,
+    keyFor,
+    outroItem,
+    render,
+    spinning,
+  } = props
 
-    const empty = !spinning && data.length === 0
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className', 'data', 'alt'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        aria-busy={spinning}
-        className={c('the-repeatable', className, {
-          'the-repeatable-horizontal': horizontal,
-        })}
-      >
-        <TheSpin className='the-repeatable-spin' cover enabled={spinning} />
-        <TheCondition if={empty}>
-          <div className='the-repeatable-alt'>{alt}</div>
-        </TheCondition>
-        <TheCondition unless={empty}>
-          <ListComponent className='the-repeatable-list' role='list'>
-            {introItem}
-            {data.map((data, i) => (
-              <ItemComponent
-                className='the-repeatable-item'
-                key={keyFor(data, i)}
-                role='listitem'
-              >
-                {render(data, i)}
-              </ItemComponent>
-            ))}
-            {outroItem}
-          </ListComponent>
-        </TheCondition>
-        {children}
-      </div>
-    )
-  }
+  const empty = !spinning && data.length === 0
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['className', 'data', 'alt'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      aria-busy={spinning}
+      className={c('the-repeatable', className, {
+        'the-repeatable-horizontal': horizontal,
+      })}
+    >
+      <TheSpin className='the-repeatable-spin' cover enabled={spinning} />
+      <TheCondition if={empty}>
+        <div className='the-repeatable-alt'>{alt}</div>
+      </TheCondition>
+      <TheCondition unless={empty}>
+        <ListComponent className='the-repeatable-list' role='list'>
+          {introItem}
+          {data.map((data, i) => (
+            <ItemComponent
+              className='the-repeatable-item'
+              key={keyFor(data, i)}
+              role='listitem'
+            >
+              {render(data, i)}
+            </ItemComponent>
+          ))}
+          {outroItem}
+        </ListComponent>
+      </TheCondition>
+      {children}
+    </div>
+  )
 }
 
 TheRepeatable.Style = TheRepeatableStyle
