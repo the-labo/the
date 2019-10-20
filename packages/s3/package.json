@@ -1,13 +1,13 @@
 {
   "name": "@the-/s3",
   "description": "S3 upload helper",
-  "version": "15.5.4",
+  "version": "15.5.6",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
     "url": "http://okunishitaka.com"
   },
-  "browser": "shim",
+  "browser": "browser",
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
@@ -35,7 +35,7 @@
   },
   "repository": "the-labo/the",
   "scripts": {
-    "build": "../../misc/scripts/pkgBuild.js",
+    "build": "../../misc/scripts/pkgBuild.js --noshim",
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
