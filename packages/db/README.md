@@ -141,7 +141,7 @@ tryExample().catch((err) => console.error(err))
 
 
 - execSqlite
-  - [.parsePolicy()](./doc/api/api.md#execSqlite.parsePolicy)
+  - [.parsePolicy(policy)](./doc/api/api.md#execSqlite.parsePolicy)
 - module:@the-/db
   - [.cascadeMix(Class)](./doc/api/api.md#module_@the-/db.cascadeMix)
   - [.cliMix(Class)](./doc/api/api.md#module_@the-/db.cliMix)

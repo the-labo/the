@@ -5,7 +5,7 @@
 ## @the-/driver-sequelize
 Sequelize driver for the-framework
 
-**Version**: 15.4.16  
+**Version**: 15.4.17  
 **License**: MIT  
 
 * [@the-/driver-sequelize](#module_@the-/driver-sequelize)

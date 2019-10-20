@@ -1,13 +1,13 @@
 {
   "name": "@the-/driver-sequelize",
   "description": "Sequelize driver for the-framework",
-  "version": "15.4.16",
+  "version": "15.4.17",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
     "url": "http://okunishitaka.com"
   },
-  "browser": "shim",
+  "browser": "browser",
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
