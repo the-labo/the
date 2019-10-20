@@ -182,7 +182,7 @@ class ThePaint extends React.Component {
   updateDrawer() {
     const {
       drawer,
-      props: { lineColor, lineWidth, method },
+      props: { erasing, lineColor, lineWidth, method },
     } = this
 
     if (!drawer) {
@@ -192,6 +192,9 @@ class ThePaint extends React.Component {
     drawer.lineColor = lineColor
     drawer.lineWidth = lineWidth
     drawer.method = method
+    drawer.globalCompositeOperation = erasing
+      ? 'destination-out'
+      : 'source-over'
   }
 }
 

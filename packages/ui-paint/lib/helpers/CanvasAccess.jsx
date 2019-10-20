@@ -31,12 +31,19 @@ class CanvasAccess {
   }
 
   configure(config) {
-    const { lineCap, lineColor, lineJoin, lineWidth } = config
+    const {
+      globalCompositeOperation,
+      lineCap,
+      lineColor,
+      lineJoin,
+      lineWidth,
+    } = config
     const { ctx } = this
     ctx.lineCap = lineCap
     ctx.lineJoin = lineJoin
     ctx.lineWidth = lineWidth
     ctx.strokeStyle = lineColor
+    ctx.globalCompositeOperation = globalCompositeOperation
   }
 
   copyFrom(canvasAccess) {

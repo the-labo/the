@@ -1,6 +1,3 @@
-/**
- * @class DrawerLayer
- */
 'use strict'
 
 import CanvasAccess from './CanvasAccess'
@@ -10,7 +7,9 @@ import RectDrawMethod from './methods/RectDrawMethod'
 import StraightDrawMethod from './methods/StraightDrawMethod'
 import DrawingMethods from '../constants/DrawingMethods'
 
-/** @lends DrawerLayer */
+/**
+ * @class DrawerLayer
+ */
 class DrawerLayer {
   constructor(canvas, options = {}) {
     const { method } = options

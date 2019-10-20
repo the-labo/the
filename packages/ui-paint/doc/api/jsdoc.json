@@ -12,7 +12,7 @@
     "name": "@the-/ui-paint",
     "order": 0,
     "typicalname": "uiPaint",
-    "version": "15.5.1"
+    "version": "15.5.2"
   },
   {
     "description": "Hand write painting",
@@ -34,7 +34,7 @@
     "longname": "DrawerLayer",
     "meta": {
       "filename": "DrawerLayer.jsx",
-      "lineno": 1,
+      "lineno": 10,
       "path": "lib/helpers"
     },
     "name": "DrawerLayer",

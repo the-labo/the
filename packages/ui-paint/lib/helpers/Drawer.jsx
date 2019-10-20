@@ -8,6 +8,7 @@ import DrawingMethods from '../constants/DrawingMethods'
 class Drawer {
   constructor(canvas, tmpCanvas, options = {}) {
     const {
+      globalCompositeOperation = 'source-over',
       id = uuid.v4(),
       lineCap = 'round',
       lineColor = '#888',
@@ -26,6 +27,7 @@ class Drawer {
     this.commitLayer = new DrawerLayer(canvas)
     this.active = false
     this.method = DrawingMethods.FREE
+    this.globalCompositeOperation = globalCompositeOperation
     this.resize()
   }
 
@@ -34,8 +36,15 @@ class Drawer {
   }
 
   get drawConfig() {
-    const { lineCap, lineColor, lineJoin, lineWidth } = this
+    const {
+      globalCompositeOperation,
+      lineCap,
+      lineColor,
+      lineJoin,
+      lineWidth,
+    } = this
     return {
+      globalCompositeOperation,
       lineCap,
       lineColor,
       lineJoin,
