@@ -4,20 +4,18 @@
  */
 'use strict'
 
+const {
+  strict: { ok },
+} = require('assert')
 const detain = require('../lib/detain')
 
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('detain', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     ok(detain)
-    
   })
 })
 

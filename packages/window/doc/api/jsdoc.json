@@ -11,9 +11,47 @@
       "path": "lib"
     },
     "name": "@the-/window",
-    "order": 1,
+    "order": 2,
     "typicalname": "window",
-    "version": "15.5.2"
+    "version": "15.6.1"
+  },
+  {
+    "description": "Ask before leave",
+    "id": "module:@the-/window.detail",
+    "kind": "function",
+    "longname": "module:@the-/window.detail",
+    "memberof": "module:@the-/window",
+    "meta": {
+      "filename": "detain.js",
+      "lineno": 7,
+      "path": "lib"
+    },
+    "name": "detail",
+    "order": 0,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "() => true",
+        "description": "Should detain",
+        "name": "shouldPrevent"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "cancel"
+      }
+    ],
+    "scope": "static"
   },
   {
     "description": "Get global values",
@@ -27,7 +65,7 @@
       "path": "lib"
     },
     "name": "get",
-    "order": 0,
+    "order": 1,
     "params": [
       {
         "type": {
@@ -62,7 +100,7 @@
       "path": "lib"
     },
     "name": "line",
-    "order": 2,
+    "order": 3,
     "params": [
       {
         "type": {
@@ -96,6 +134,15 @@
         "name": "options.delay"
       }
     ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {
@@ -110,7 +157,7 @@
       "path": "lib"
     },
     "name": "once",
-    "order": 3,
+    "order": 4,
     "params": [
       {
         "type": {
@@ -135,9 +182,10 @@
       {
         "type": {
           "names": [
-            "*"
+            "function"
           ]
-        }
+        },
+        "description": "cancel func"
       }
     ],
     "scope": "static"
@@ -154,7 +202,7 @@
       "path": "lib"
     },
     "name": "reload",
-    "order": 4,
+    "order": 5,
     "params": [
       {
         "type": {
@@ -191,7 +239,7 @@
       "path": "lib"
     },
     "name": "rescue",
-    "order": 5,
+    "order": 6,
     "params": [
       {
         "type": {
@@ -235,7 +283,7 @@
       "path": "lib"
     },
     "name": "set",
-    "order": 6,
+    "order": 7,
     "params": [
       {
         "type": {
@@ -279,7 +327,7 @@
       "path": "lib"
     },
     "name": "show",
-    "order": 7,
+    "order": 8,
     "params": [
       {
         "type": {

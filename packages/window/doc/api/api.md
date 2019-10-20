@@ -5,17 +5,30 @@
 ## @the-/window
 Browser utility for the-framework
 
-**Version**: 15.5.2  
+**Version**: 15.6.1  
 **License**: MIT  
 
 * [@the-/window](#module_@the-/window)
+    * [.detail([shouldPrevent])](#module_@the-/window.detail) ⇒ <code>function</code>
     * [.get(name)](#module_@the-/window.get) ⇒ <code>\*</code>
-    * [.line(handler, [options])](#module_@the-/window.line)
-    * [.once(handler, event)](#module_@the-/window.once) ⇒ <code>\*</code>
+    * [.line(handler, [options])](#module_@the-/window.line) ⇒ <code>\*</code>
+    * [.once(handler, event)](#module_@the-/window.once) ⇒ <code>function</code>
     * [.reload([options])](#module_@the-/window.reload) ⇒ <code>Promise.&lt;undefined&gt;</code>
     * [.rescue(handler, event)](#module_@the-/window.rescue) ⇒ <code>\*</code>
     * [.set(name, value)](#module_@the-/window.set) ⇒ <code>\*</code>
     * [.show(url)](#module_@the-/window.show) ⇒ <code>\*</code>
+
+<a name="module_@the-/window.detail"></a>
+
+### window.detail([shouldPrevent]) ⇒ <code>function</code>
+Ask before leave
+
+**Kind**: static method of [<code>@the-/window</code>](#module_@the-/window)  
+**Returns**: <code>function</code> - cancel  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [shouldPrevent] | <code>function</code> | <code>() &#x3D;&gt; true</code> | Should detain |
 
 <a name="module_@the-/window.get"></a>
 
@@ -30,7 +43,7 @@ Get global values
 
 <a name="module_@the-/window.line"></a>
 
-### window.line(handler, [options])
+### window.line(handler, [options]) ⇒ <code>\*</code>
 Handle toggle online/offline
 
 **Kind**: static method of [<code>@the-/window</code>](#module_@the-/window)  
@@ -43,10 +56,11 @@ Handle toggle online/offline
 
 <a name="module_@the-/window.once"></a>
 
-### window.once(handler, event) ⇒ <code>\*</code>
+### window.once(handler, event) ⇒ <code>function</code>
 Handle event once on document
 
 **Kind**: static method of [<code>@the-/window</code>](#module_@the-/window)  
+**Returns**: <code>function</code> - cancel func  
 
 | Param | Type | Description |
 | --- | --- | --- |
