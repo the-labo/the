@@ -8,23 +8,18 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheList">TheList</a></dt>
-<dd><p>List components</p>
-</dd>
-<dt><a href="#TheListGroup">TheListGroup</a></dt>
-<dd><p>Group of list</p>
-</dd>
-<dt><a href="#TheListItem">TheListItem</a></dt>
-<dd><p>Item of list</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheList">TheList()</a></dt>
+<dd><p>List components</p>
+</dd>
+<dt><a href="#TheListGroup">TheListGroup()</a></dt>
+<dd><p>Group of list</p>
+</dd>
+<dt><a href="#TheListItem">TheListItem()</a></dt>
+<dd><p>Item of list</p>
+</dd>
 <dt><a href="#TheListStyle">TheListStyle()</a></dt>
 <dd><p>Style for TheList</p>
 </dd>
@@ -35,25 +30,25 @@
 ## @the-/ui-list
 List of the-components
 
-**Version**: 15.4.10  
+**Version**: 15.4.11  
 <a name="TheList"></a>
 
-## TheList
+## TheList()
 List components
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheListGroup"></a>
 
-## TheListGroup
+## TheListGroup()
 Group of list
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheListItem"></a>
 
-## TheListItem
+## TheListItem()
 Item of list
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheListStyle"></a>
 
 ## TheListStyle()

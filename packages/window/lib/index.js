@@ -5,10 +5,11 @@
  * @license MIT
  * @module @the-/window
  * @typicalname window
- * @version 15.5.2
+ * @version 15.6.0
  */
 'use strict'
 
+const detain_ = require('./detain')
 const get_ = require('./get')
 const line_ = require('./line')
 const once_ = require('./once')
@@ -18,6 +19,7 @@ const set_ = require('./set')
 const show_ = require('./show')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
+exports.detain = detain_
 exports.get = get_
 exports.line = line_
 exports.once = once_
@@ -27,6 +29,7 @@ exports.set = set_
 exports.show = show_
 
 module.exports = {
+  detain: detain_,
   get: get_,
   line: line_,
   once: once_,

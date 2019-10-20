@@ -4,7 +4,7 @@
  * @description List of the-components
  * @module @the-/ui-list
  * @typicalname uiList
- * @version 15.4.10
+ * @version 15.4.11
  */
 'use strict'
 

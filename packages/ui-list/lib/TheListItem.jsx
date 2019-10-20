@@ -2,7 +2,7 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useCallback } from 'react'
 import { TheIcon } from '@the-/ui-icon'
 import { TheImage } from '@the-/ui-image'
 import { TheLink } from '@the-/ui-link'
@@ -11,122 +11,113 @@ import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 /**
  * Item of list
  */
-class TheListItem extends React.Component {
-  static Col(props) {
-    const { children, className, wide = false } = props
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        className={c('the-list-item-col', className, {
-          'the-list-item-col-wide': wide,
-        })}
-      >
-        {children}
-      </div>
-    )
-  }
+const TheListItem = (props) => {
+  const {
+    appendix,
+    borderless,
+    children,
+    className,
+    disclosure,
+    icon,
+    onThumbnail,
+    subTitle,
+    thumbnail,
+    thumbnailHeight,
+    thumbnailWidth,
+    title,
+    to,
+  } = props
+  const handleThumbnail = useCallback(
+    (e) => {
+      e.stopPropagation()
+      e.preventDefault()
+      onThumbnail && onThumbnail(thumbnail)
+    },
+    [onThumbnail, thumbnail],
+  )
 
-  static SubTitle(props) {
-    const { className } = props
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        className={c('the-list-item-sub-title', className, {})}
-      >
-        {props.subTitle}
-      </div>
-    )
-  }
+  const { Col, SubTitle, Title } = TheListItem
 
-  static Title(props) {
-    const { className } = props
-    return (
-      <h3
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        className={c('the-list-item-title', className, {})}
-      >
-        {props.title}
-      </h3>
-    )
-  }
-
-  constructor() {
-    super(...arguments)
-    this.handleThumbnail = this.handleThumbnail.bind(this)
-  }
-
-  handleThumbnail(e) {
-    e.stopPropagation()
-    e.preventDefault()
-    const {
-      props: { onThumbnail, thumbnail },
-    } = this
-    onThumbnail && onThumbnail(thumbnail)
-  }
-
-  render() {
-    const {
-      props,
-      props: {
-        appendix,
-        borderless,
-        children,
-        className,
-        disclosure,
-        icon,
-        subTitle,
-        thumbnail,
-        thumbnailHeight,
-        thumbnailWidth,
-        title,
-        to,
-      },
-    } = this
-    const { Col, SubTitle, Title } = TheListItem
-
-    const Inner = to ? TheLink : 'span'
-    return (
-      <li
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-list-item', className, {
-          'the-list-item-borderless': borderless,
-        })}
-      >
-        <Inner className='the-list-item-inner' to={to}>
-          {icon && (
-            <Col>
-              <TheIcon className={c('the-list-item-icon', icon)} />
-            </Col>
-          )}
-          {thumbnail && (
-            <Col>
-              <TheImage
-                className='the-list-item-image'
-                height={thumbnailHeight}
-                onClick={this.handleThumbnail}
-                src={thumbnail}
-                width={thumbnailWidth}
-              />
-            </Col>
-          )}
-          <Col wide>
-            {title && <Title title={title} />}
-            {subTitle && <SubTitle subTitle={subTitle} />}
-            {children}
+  const Inner = to ? TheLink : 'span'
+  return (
+    <li
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-list-item', className, {
+        'the-list-item-borderless': borderless,
+      })}
+    >
+      <Inner className='the-list-item-inner' to={to}>
+        {icon && (
+          <Col>
+            <TheIcon className={c('the-list-item-icon', icon)} />
           </Col>
-          {appendix && <Col>{appendix}</Col>}
-          {disclosure && (
-            <Col>
-              <TheIcon
-                className={c('the-list-item-icon', TheListItem.DISCLOSURE_ICON)}
-              />
-            </Col>
-          )}
-        </Inner>
-      </li>
-    )
-  }
+        )}
+        {thumbnail && (
+          <Col>
+            <TheImage
+              className='the-list-item-image'
+              height={thumbnailHeight}
+              onClick={handleThumbnail}
+              src={thumbnail}
+              width={thumbnailWidth}
+            />
+          </Col>
+        )}
+        <Col wide>
+          {title && <Title title={title} />}
+          {subTitle && <SubTitle subTitle={subTitle} />}
+          {children}
+        </Col>
+        {appendix && <Col>{appendix}</Col>}
+        {disclosure && (
+          <Col>
+            <TheIcon
+              className={c('the-list-item-icon', TheListItem.DISCLOSURE_ICON)}
+            />
+          </Col>
+        )}
+      </Inner>
+    </li>
+  )
+}
+
+TheListItem.Col = function Col(props) {
+  const { children, className, wide = false } = props
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      className={c('the-list-item-col', className, {
+        'the-list-item-col-wide': wide,
+      })}
+    >
+      {children}
+    </div>
+  )
+}
+
+TheListItem.SubTitle = function SubTitle(props) {
+  const { className } = props
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      className={c('the-list-item-sub-title', className, {})}
+    >
+      {props.subTitle}
+    </div>
+  )
+}
+
+TheListItem.Title = function Title(props) {
+  const { className } = props
+  return (
+    <h3
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      className={c('the-list-item-title', className, {})}
+    >
+      {props.title}
+    </h3>
+  )
 }
 
 TheListItem.DISCLOSURE_ICON = 'fa fa-angle-right'

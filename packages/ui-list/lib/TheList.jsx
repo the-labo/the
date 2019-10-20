@@ -11,32 +11,27 @@ import TheListItem from './TheListItem'
 /**
  * List components
  */
-class TheList extends React.Component {
-  render() {
-    const {
-      props,
-      props: { alt, children, className, horizontal, spinning },
-    } = this
+const TheList = (props) => {
+  const { alt, children, className, horizontal, spinning } = props
 
-    const empty = props.empty || React.Children.count(children) === 0
-    return (
-      <ul
-        {...htmlAttributesFor(props, { except: ['className', 'alt'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={classnames('the-list', className, {
-          'the-list-horizontal': horizontal,
-        })}
-      >
-        <TheCondition if={!!spinning}>
-          <TheSpin cover enabled size='x-large' />
-        </TheCondition>
-        <TheCondition if={empty}>
-          <li className='the-list-alt'>{alt}</li>
-        </TheCondition>
-        {children}
-      </ul>
-    )
-  }
+  const empty = props.empty || React.Children.count(children) === 0
+  return (
+    <ul
+      {...htmlAttributesFor(props, { except: ['className', 'alt'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={classnames('the-list', className, {
+        'the-list-horizontal': horizontal,
+      })}
+    >
+      <TheCondition if={!!spinning}>
+        <TheSpin cover enabled size='x-large' />
+      </TheCondition>
+      <TheCondition if={empty}>
+        <li className='the-list-alt'>{alt}</li>
+      </TheCondition>
+      {children}
+    </ul>
+  )
 }
 
 TheList.Item = TheListItem

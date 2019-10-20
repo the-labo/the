@@ -9,7 +9,7 @@ const debug = require('debug')('the:window:once')
  * @function once
  * @param {function()} handler - Event handler
  * @param {string} event - Name of event
- * @returns {*}
+ * @returns {function()} cancel func
  */
 function once(event, handler) {
   const document = get('window.document')
@@ -25,6 +25,8 @@ function once(event, handler) {
   }
   debug('add', event)
   document.addEventListener(event, handlerWrap)
+
+  return () => document.removeEventListener(event, handlerWrap)
 }
 
 module.exports = once

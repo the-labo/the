@@ -12,12 +12,12 @@
     "name": "@the-/ui-list",
     "order": 0,
     "typicalname": "uiList",
-    "version": "15.4.10"
+    "version": "15.4.11"
   },
   {
     "description": "List components",
     "id": "TheList",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheList",
     "meta": {
       "filename": "TheList.jsx",
@@ -26,12 +26,13 @@
     },
     "name": "TheList",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
     "description": "Group of list",
     "id": "TheListGroup",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheListGroup",
     "meta": {
       "filename": "TheListGroup.jsx",
@@ -40,20 +41,22 @@
     },
     "name": "TheListGroup",
     "order": 2,
+    "params": [],
     "scope": "global"
   },
   {
     "description": "Item of list",
     "id": "TheListItem",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheListItem",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 53,
+      "lineno": 14,
       "path": "lib"
     },
     "name": "TheListItem",
     "order": 3,
+    "params": [],
     "scope": "global"
   },
   {
@@ -79,7 +82,7 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 136,
+      "lineno": 127,
       "path": "lib"
     },
     "name": "appendix",
@@ -94,7 +97,7 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 138,
+      "lineno": 129,
       "path": "lib"
     },
     "name": "borderless",
@@ -109,7 +112,7 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 140,
+      "lineno": 131,
       "path": "lib"
     },
     "name": "disclosure",
@@ -124,7 +127,7 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 142,
+      "lineno": 133,
       "path": "lib"
     },
     "name": "icon",
@@ -139,7 +142,7 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 144,
+      "lineno": 135,
       "path": "lib"
     },
     "name": "subTitle",
@@ -154,7 +157,7 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 146,
+      "lineno": 137,
       "path": "lib"
     },
     "name": "thumbnail",
@@ -169,7 +172,7 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 148,
+      "lineno": 139,
       "path": "lib"
     },
     "name": "thumbnailHeight",
@@ -184,7 +187,7 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 150,
+      "lineno": 141,
       "path": "lib"
     },
     "name": "thumbnailWidth",
@@ -199,7 +202,7 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 152,
+      "lineno": 143,
       "path": "lib"
     },
     "name": "title",
@@ -214,7 +217,7 @@
     "memberof": "TheListItem.propTypes",
     "meta": {
       "filename": "TheListItem.jsx",
-      "lineno": 154,
+      "lineno": 145,
       "path": "lib"
     },
     "name": "to",
