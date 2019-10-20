@@ -21,7 +21,7 @@
     "@the-/ui-spin": "^15.4.11",
     "@the-/ui-style": "^15.4.12",
     "@the-/util-ui": "^15.4.12",
-    "@the-/window": "^15.5.5",
+    "@the-/window": "^15.6.1",
     "classnames": "^2.2.6",
     "formatcoords": "^1.1.3",
     "prop-types": "^15.7.2"

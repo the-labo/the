@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@the-/lock": "^15.4.9",
-    "@the-/window": "^15.5.5"
+    "@the-/window": "^15.6.1"
   },
   "devDependencies": {},
   "engines": {

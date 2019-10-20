@@ -51,19 +51,19 @@ const TheHamburger = (props) => {
   )
 }
 
-TheHamburger.Body = function TheHamburger({ children }) {
+TheHamburger.Body = function Body({ children }) {
   return <div className='the-hamburger-body'>{children}</div>
 }
 
-TheHamburger.Footer = function TheHamburger({ children }) {
+TheHamburger.Footer = function Footer({ children }) {
   return <div className='the-hamburger-footer'>{children}</div>
 }
 
-TheHamburger.Header = function TheHamburger({ children }) {
+TheHamburger.Header = function Header({ children }) {
   return <div className='the-hamburger-header'>{children}</div>
 }
 
-TheHamburger.Item = function TheHamburger({ children, icon, onClick, to }) {
+TheHamburger.Item = function Item({ children, icon, onClick, to }) {
   return (
     <div className='the-hamburger-item'>
       <TheButton
@@ -78,7 +78,7 @@ TheHamburger.Item = function TheHamburger({ children, icon, onClick, to }) {
   )
 }
 
-TheHamburger.Toggle = function TheHamburger(props) {
+TheHamburger.Toggle = function Toggle(props) {
   return <TheButton icon={TheHamburger.TOGGLE_ICON} simple {...props} />
 }
 

@@ -20,7 +20,7 @@
     "@the-/ui-style": "^15.4.12",
     "@the-/ui-video": "^15.4.11",
     "@the-/util-ui": "^16.0.5",
-    "@the-/window": "^15.5.5",
+    "@the-/window": "^15.6.1",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
     "react-draggable": "^4.0.3"

@@ -17,13 +17,13 @@
     "@the-/ui-link": "^15.4.11",
     "@the-/ui-style": "^15.4.12",
     "@the-/util-ui": "^16.0.5",
-    "@the-/window": "^15.5.5",
+    "@the-/window": "^15.6.1",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
-    "@the-/ui-router": "^15.4.10",
+    "@the-/ui-router": "^15.4.11",
     "coz": "^7.0.19",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",

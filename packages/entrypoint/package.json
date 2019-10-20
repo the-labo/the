@@ -13,9 +13,9 @@
   },
   "dependencies": {
     "@the-/check": "^15.5.8",
-    "@the-/ui-router": "^15.4.10",
+    "@the-/ui-router": "^15.4.11",
     "@the-/url": "^15.4.9",
-    "@the-/window": "^15.5.5",
+    "@the-/window": "^15.6.1",
     "history": "^4.10.1"
   },
   "devDependencies": {

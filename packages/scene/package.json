@@ -14,7 +14,7 @@
   "dependencies": {
     "@the-/error": "^15.4.0",
     "@the-/url": "^15.4.9",
-    "@the-/window": "^15.5.5",
+    "@the-/window": "^15.6.1",
     "asleep": "^1.0.3",
     "asobj": "^3.0.1",
     "objnest": "^5.0.10",

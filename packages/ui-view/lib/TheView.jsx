@@ -53,7 +53,7 @@ const TheView = (props) => {
   )
 }
 
-TheView.Body = (props) => {
+TheView.Body = function Body(props) {
   const { children, className, narrow } = props
   return (
     <div
@@ -68,7 +68,7 @@ TheView.Body = (props) => {
   )
 }
 
-TheView.Header = (props) => {
+TheView.Header = function Header(props) {
   const {
     children,
     className,
@@ -131,7 +131,7 @@ TheView.Header = (props) => {
   )
 }
 
-TheView.HeaderButton = ({ icon, onClick, text, to }) => {
+TheView.HeaderButton = function HeaderButton({ icon, onClick, text, to }) {
   const valid = icon || text || onClick || to
   if (!valid) {
     return null
@@ -149,7 +149,7 @@ TheView.HeaderButton = ({ icon, onClick, text, to }) => {
   )
 }
 
-TheView.Message = (props) => {
+TheView.Message = function Message(props) {
   const { children, className } = props
   return (
     <div
