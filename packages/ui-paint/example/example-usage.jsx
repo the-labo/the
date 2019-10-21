@@ -141,7 +141,9 @@ class ExampleComponent extends React.Component {
         </div>
         <button onClick={this.clear}>Clear</button>
         <button onClick={this.undo}>Undo</button>
-        <button onClick={this.toggleErase}>Erase Mode</button>
+        <button onClick={this.toggleErase}>
+          {this.state.erasing ? 'Write Mode' : 'Erase Mode'}
+        </button>
       </div>
     )
   }

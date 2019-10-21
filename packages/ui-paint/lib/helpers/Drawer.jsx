@@ -64,8 +64,17 @@ class Drawer {
     }
   }
 
-  draw({ x, y }) {
-    this.tmpLayer.draw({ x, y })
+  draw({ erasing, x, y }) {
+    if (erasing) {
+      this.commitLayer.draw(
+        { erasing, x, y },
+        {
+          clear: false,
+        },
+      )
+    } else {
+      this.tmpLayer.draw({ x, y })
+    }
   }
 
   drawBackground(background, options = {}) {
@@ -87,14 +96,17 @@ class Drawer {
   }
 
   flush() {
-    const { layerHistories, tmpLayer } = this
+    const { commitLayer, layerHistories, tmpLayer } = this
     if (!tmpLayer) {
+      return
+    }
+    if (tmpLayer.empty) {
       return
     }
 
     const layerHistory = tmpLayer.serialize()
     layerHistories.push(layerHistory)
-    this.commitLayer.restore(layerHistory)
+    commitLayer.restore(layerHistory)
   }
 
   resize() {

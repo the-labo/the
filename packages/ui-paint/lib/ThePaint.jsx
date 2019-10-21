@@ -31,11 +31,14 @@ class ThePaint extends React.Component {
   componentDidMount() {
     const {
       canvasRef: { current: canvas },
-      props: { background, onDrawer },
+      props: { background, lineColor, lineWidth, onDrawer },
       tmpCanvasRef: { current: tmpCanvas },
     } = this
 
-    const drawer = new Drawer(canvas, tmpCanvas, {})
+    const drawer = new Drawer(canvas, tmpCanvas, {
+      lineColor,
+      lineWidth,
+    })
 
     if (background) {
       void drawer.registerBackground(background)
@@ -69,16 +72,17 @@ class ThePaint extends React.Component {
   }
 
   handleDraw(e) {
-    const { drawer } = this
+    const {
+      drawer,
+      props: { erasing, onDraw },
+    } = this
     if (!drawer.active) {
       return
     }
 
     const pos = this.positionForEvent(e)
-    drawer.draw(pos)
-    const {
-      props: { onDraw },
-    } = this
+    drawer.draw({ ...pos, ...(erasing ? { erasing: true } : {}) })
+
     onDraw && onDraw({ drawer, pos })
   }
 
@@ -182,7 +186,7 @@ class ThePaint extends React.Component {
   updateDrawer() {
     const {
       drawer,
-      props: { erasing, lineColor, lineWidth, method },
+      props: { lineColor, lineWidth, method },
     } = this
 
     if (!drawer) {
@@ -192,9 +196,6 @@ class ThePaint extends React.Component {
     drawer.lineColor = lineColor
     drawer.lineWidth = lineWidth
     drawer.method = method
-    drawer.globalCompositeOperation = erasing
-      ? 'destination-out'
-      : 'source-over'
   }
 }
 

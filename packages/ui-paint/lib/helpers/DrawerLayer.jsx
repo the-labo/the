@@ -18,35 +18,58 @@ class DrawerLayer {
     this.points = []
   }
 
+  get empty() {
+    const { points } = this
+    return points.length === 0
+  }
+
   applyPoints(points) {
     const { canvasAccess, method } = this
     if (points.length === 0) {
       return
     }
-
+    const pointGroups = points.reduce((reduced, point) => {
+      const [last] = reduced
+      const { erasing = false } = point
+      const changed = !last || last.erasing !== erasing
+      if (changed) {
+        reduced.push({ erasing, points: [point] })
+      } else {
+        last.points.push(point)
+      }
+      return reduced
+    }, [])
     const { ctx } = canvasAccess
-    switch (method || DrawingMethods.FREE) {
-      case DrawingMethods.CIRCLE:
-        CircleDrawMethod(ctx, points)
-        break
-      case DrawingMethods.FREE:
-        FreeDrawMethod(ctx, points)
-        break
-      case DrawingMethods.RECT:
-        RectDrawMethod(ctx, points)
-        break
-      case DrawingMethods.STRAIGHT:
-        StraightDrawMethod(ctx, points)
-        break
-      default:
-        throw new Error(`[Drawer] Unknown method: ${method}`)
+    for (const { erasing, points } of pointGroups) {
+      ctx.save()
+      ctx.globalCompositeOperation = erasing ? 'destination-out' : 'source-over'
+      switch (method || DrawingMethods.FREE) {
+        case DrawingMethods.CIRCLE:
+          CircleDrawMethod(ctx, points)
+          break
+        case DrawingMethods.FREE:
+          FreeDrawMethod(ctx, points)
+          break
+        case DrawingMethods.RECT:
+          RectDrawMethod(ctx, points)
+          break
+        case DrawingMethods.STRAIGHT:
+          StraightDrawMethod(ctx, points)
+          break
+        default:
+          throw new Error(`[Drawer] Unknown method: ${method}`)
+      }
+      ctx.restore()
     }
   }
 
-  draw({ x, y }) {
+  draw(point, options = {}) {
+    const { clear = true } = options
     const { canvasAccess, points } = this
-    points.push({ x, y })
-    canvasAccess.clear()
+    points.push(point)
+    if (clear) {
+      canvasAccess.clear()
+    }
     this.applyPoints(this.points)
   }
 
@@ -117,6 +140,7 @@ class DrawerLayer {
     const {
       canvasAccess: { ctx },
     } = this
+    ctx.closePath()
     ctx.restore()
     this.canvasAccess.clear()
   }
