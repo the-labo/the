@@ -42,6 +42,21 @@ describe('the-lock', () => {
     ])
     equal(pool.value, 4)
   })
+
+  it('A lot of promises', async () => {
+    ok(TheLock)
+    const lock = TheLock()
+    await lock.acquire('k1', () => {})
+    const promises = []
+    for (let i = 0; i < 100; i++) {
+      promises.push(
+        lock.acquire('k1', async () => {
+          await asleep(2)
+        }),
+      )
+    }
+    await Promise.all(promises)
+  })
 })
 
 /* global describe, before, after, it */
