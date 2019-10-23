@@ -57,6 +57,12 @@ function CheckBoxStyleData({
     },
     '.the-input-checkbox-label': {
       '&:active': { opacity: activeOpacity },
+      '&:focus': {
+        outlineColor: 'rgb(238, 142, 10)',
+        outlineOffset: '-2px',
+        outlineStyle: 'auto',
+        outlineWidth: '5px',
+      },
       '&:hover': { opacity: hoverOpacity },
       '> *': {
         // https://github.com/ftlabs/fastclick/issues/60

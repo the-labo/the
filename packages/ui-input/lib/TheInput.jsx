@@ -2,7 +2,7 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useCallback } from 'react'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 import { renderErrorMessage } from './helpers'
 import TheInputCheckbox from './TheInputCheckbox'
@@ -24,75 +24,72 @@ import TheInputUpload from './TheInputUpload'
 /**
  * Input of the-components
  */
-class TheInput extends React.PureComponent {
-  handleChange(e) {
-    const {
-      props: { onChange, onUpdate, parser },
-    } = this
-    const {
-      target: { name, value },
-    } = e
-    onChange && onChange(e)
-    onUpdate && onUpdate({ [name]: parser(value) })
-  }
+const TheInput = React.memo((props) => {
+  const {
+    autoComplete,
+    autoFocus,
+    children,
+    className,
+    error,
+    id,
+    inputRef,
+    name,
+    onChange,
+    onUpdate,
+    parser,
+    placeholder,
+    required,
+    type,
+    value,
+  } = props
+  const handleChange = useCallback(
+    (e) => {
+      const {
+        target: { name, value },
+      } = e
+      onChange && onChange(e)
+      onUpdate && onUpdate({ [name]: parser(value) })
+    },
+    [name, value, onChange, onUpdate, parser],
+  )
 
-  render() {
-    const {
-      props,
-      props: {
-        autoComplete,
-        autoFocus,
-        children,
-        className,
-        error,
-        id,
-        inputRef,
-        name,
-        placeholder,
-        required,
-        type,
-        value,
-      },
-    } = this
-
-    return (
-      <div
-        {...htmlAttributesFor(props, {
-          except: [
-            'id',
-            'className',
-            'type',
-            'value',
-            'required',
-            'name',
-            'placeholder',
-            'autoFocus',
-            'autoComplete',
-          ],
-        })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-input', className, {
-          'the-input-error': !!error,
-        })}
-      >
-        {renderErrorMessage(error)}
-        {children}
-        <input
-          autoComplete={autoComplete}
-          autoFocus={autoFocus}
-          id={id}
-          name={name}
-          onChange={(e) => this.handleChange(e)}
-          placeholder={placeholder}
-          ref={inputRef}
-          required={required}
-          type={type}
-          value={value || ''}
-        />
-      </div>
-    )
-  }
-}
+  return (
+    <div
+      {...htmlAttributesFor(props, {
+        except: [
+          'id',
+          'className',
+          'type',
+          'value',
+          'required',
+          'name',
+          'placeholder',
+          'autoFocus',
+          'autoComplete',
+        ],
+      })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-input', className, {
+        'the-input-error': !!error,
+      })}
+    >
+      {renderErrorMessage(error)}
+      {children}
+      <input
+        autoComplete={autoComplete}
+        autoFocus={autoFocus}
+        id={id}
+        name={name}
+        onChange={handleChange}
+        placeholder={placeholder}
+        ref={inputRef}
+        required={required}
+        type={type}
+        value={value || ''}
+      />
+    </div>
+  )
+})
 
 TheInput.Text = TheInputText
 TheInput.Search = TheInputSearch

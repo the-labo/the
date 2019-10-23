@@ -2,7 +2,7 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useCallback, useMemo } from 'react'
 import { TheIcon } from '@the-/ui-icon'
 import { eventHandlersFor, htmlAttributesFor, newId } from '@the-/util-ui'
 import {
@@ -14,137 +14,138 @@ import {
 /**
  * Checkbox input of the-components
  */
-class TheInputCheckbox extends React.PureComponent {
-  constructor(props) {
-    super(props)
-    this.id = newId()
-  }
+const TheInputCheckbox = React.memo((props) => {
+  const {
+    asButton,
+    className,
+    disabledValues,
+    error,
+    name,
+    onChange,
+    onUpdate,
+    parser,
+    readOnly,
+    splitter,
+    tabIndex,
+  } = props
+  const id = useMemo(() => props.id || newId(), [props.id])
 
-  handleChange(e) {
-    const {
-      props: { onChange, onUpdate, parser, splitter },
-    } = this
-    let {
-      props: { value },
-    } = this
+  const handleToggle = useCallback(
+    (changedValue, checked) => {
+      let valueArray = normalizeArrayValue(props.value, splitter).map((value) =>
+        String(value).trim(),
+      )
+      const has = valueArray.includes(changedValue)
+      if (has && !checked) {
+        valueArray = valueArray.filter((value) => value !== changedValue)
+      }
 
-    let {
-      target: { value: changedValue },
-    } = e
-    const {
-      target: { checked, name },
-    } = e
-    changedValue = String(changedValue).trim()
-    value = normalizeArrayValue(value, splitter).map((value) =>
-      String(value).trim(),
-    )
-    const has = value.includes(changedValue)
-    if (has && !checked) {
-      value = value.filter((value) => value !== changedValue)
-    }
+      if (!has && checked) {
+        valueArray.push(changedValue)
+      }
 
-    if (!has && checked) {
-      value.push(changedValue)
-    }
+      onChange && onChange(e)
+      onUpdate &&
+        onUpdate({
+          [name]: parser(valueArray),
+        })
+    },
+    [name, props.value, splitter, onUpdate, onChange, parser],
+  )
 
-    onChange && onChange(e)
-    onUpdate &&
-      onUpdate({
-        [name]: parser(value),
-      })
-  }
+  const idFor = useCallback(
+    (optionValue) => [id, ...[].concat(optionValue)].join('-'),
+    [id],
+  )
 
-  idFor(optionValue) {
-    const {
-      props: { id = this.id },
-    } = this
-    return [id, ...[].concat(optionValue)].join('-')
-  }
+  const options = useMemo(() => normalizeOptions(props.options), [
+    props.options,
+  ])
+  const value = useMemo(
+    () =>
+      normalizeArrayValue(props.value, splitter).map((value) =>
+        String(value).trim(),
+      ),
+    [props.value],
+  )
 
-  render() {
-    const {
-      props: {
-        asButton,
-        className,
-        disabledValues,
-        error,
-        id = this.id,
-        name,
-        readOnly,
-        splitter,
-        tabIndex,
-      },
-      props,
-    } = this
-    let {
-      props: { options, value },
-    } = this
-
-    options = normalizeOptions(options)
-    value = normalizeArrayValue(value, splitter).map((value) =>
-      String(value).trim(),
-    )
-
-    return (
-      <div
-        {...htmlAttributesFor(props, {
-          except: ['id', 'className', 'tabIndex', 'value'],
-        })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-input-checkbox', className, {
-          'the-input-checkbox-as-button': asButton,
-          'the-input-error': !!error,
-        })}
-        data-value={value}
-        id={id}
-      >
-        {renderErrorMessage(error)}
-        <div className={c('the-input-checkbox-inner')}>
-          {readOnly ? (
-            <span className='the-input-checkbox-readonly'>
-              {options[value]}
-            </span>
-          ) : (
-            Object.keys(options).map((optionValue) => {
-              const checked = optionValue
-                .split(splitter)
-                .some((optionValue) =>
-                  value.includes(String(optionValue).trim()),
-                )
-              return (
-                <TheInputCheckbox.Option
-                  checked={checked}
-                  disabled={disabledValues.includes(optionValue)}
-                  id={this.idFor(optionValue)}
-                  key={optionValue}
-                  label={options[optionValue]}
-                  name={name}
-                  onChange={(e) => this.handleChange(e)}
-                  tabIndex={tabIndex}
-                  value={optionValue}
-                />
-              )
-            })
-          )}
-        </div>
+  return (
+    <div
+      {...htmlAttributesFor(props, {
+        except: ['id', 'className', 'tabIndex', 'value'],
+      })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-input-checkbox', className, {
+        'the-input-checkbox-as-button': asButton,
+        'the-input-error': !!error,
+      })}
+      data-value={value}
+      id={id}
+    >
+      {renderErrorMessage(error)}
+      <div className={c('the-input-checkbox-inner')}>
+        {readOnly ? (
+          <span className='the-input-checkbox-readonly'>{options[value]}</span>
+        ) : (
+          Object.keys(options).map((optionValue) => {
+            const checked = optionValue
+              .split(splitter)
+              .some((optionValue) => value.includes(String(optionValue).trim()))
+            return (
+              <TheInputCheckbox.Option
+                checked={checked}
+                disabled={disabledValues.includes(optionValue)}
+                id={idFor(optionValue)}
+                key={optionValue}
+                label={options[optionValue]}
+                name={name}
+                onToggle={handleToggle}
+                tabIndex={tabIndex}
+                value={optionValue}
+              />
+            )
+          })
+        )}
       </div>
-    )
-  }
-}
+    </div>
+  )
+})
 
-TheInputCheckbox.Option = ({
+TheInputCheckbox.Option = function TheInputCheckboxOption({
   checked,
   disabled,
   id,
   label,
   name,
-  onChange,
-  tabIndex,
+  onToggle,
+  tabIndex = 0,
   value,
-}) => {
+}) {
   const icon = checked
     ? TheInputCheckbox.CHECKED_ICON
     : TheInputCheckbox.NORMAL_ICON
+  const handleChange = useCallback(
+    (e) => {
+      const {
+        target: { checked },
+      } = e
+      const changedValue = String(e.target.value).trim()
+      onToggle(changedValue, checked)
+    },
+    [onToggle],
+  )
+  const handleKeyDown = useCallback(
+    (e) => {
+      const isSpace = e.keyCode === 32
+      if (isSpace) {
+        const changedValue = String(value).trim()
+        onToggle(changedValue, !checked)
+        e.stopPropagation()
+        e.preventDefault()
+      }
+    },
+    [onToggle, checked],
+  )
   return (
     <div
       aria-checked={checked}
@@ -163,12 +164,17 @@ TheInputCheckbox.Option = ({
         disabled={disabled}
         id={id}
         name={name}
-        onChange={onChange}
-        tabIndex={tabIndex}
+        onChange={handleChange}
+        tabIndex={-1}
         type='checkbox'
         value={value}
       />
-      <label className='the-input-checkbox-label' htmlFor={id}>
+      <label
+        className='the-input-checkbox-label'
+        htmlFor={id}
+        onKeyDown={handleKeyDown}
+        tabIndex={tabIndex}
+      >
         <TheIcon className={c('the-input-checkbox-icon', icon)} />
         {label}
       </label>
