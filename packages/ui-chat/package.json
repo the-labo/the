@@ -13,7 +13,7 @@
   "dependencies": {
     "@the-/const-ui": "^15.4.5",
     "@the-/date": "^15.4.11",
-    "@the-/ui-button": "^15.4.11",
+    "@the-/ui-button": "^15.5.1",
     "@the-/ui-condition": "^15.4.11",
     "@the-/ui-form": "^15.4.11",
     "@the-/ui-icon": "^15.4.11",
@@ -31,8 +31,8 @@
     "@the-/ui-demo": "file:../ui-demo",
     "babel-runtime": "^6.26.0",
     "coz": "^7.0.19",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2"
   },
   "engines": {

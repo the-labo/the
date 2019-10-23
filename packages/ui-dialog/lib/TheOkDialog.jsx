@@ -8,25 +8,21 @@ import TheDialog from './TheDialog'
 /**
  * Ok Dialog
  */
-class TheOkDialog extends React.Component {
-  render() {
-    const {
-      props,
-      props: { okText, onClose },
-    } = this
+const TheOkDialog = (props) => {
+  const { okText, onClose } = props
 
-    const dialogProps = clone(props, { except: ['okText'] })
+  const dialogProps = clone(props, { except: ['okText'] })
 
-    const footer = (
-      <div className='the-ok-dialog-control'>
-        <TheOkDialog.Button onClick={onClose} text={okText} />
-      </div>
-    )
+  const footer = (
+    <div className='the-ok-dialog-control'>
+      <TheOkDialog.Button onClick={onClose} text={okText} />
+    </div>
+  )
 
-    return <TheDialog {...dialogProps} footer={footer} />
-  }
+  return <TheDialog {...dialogProps} footer={footer} />
 }
-TheOkDialog.Button = function Button({ onClick, text }) {
+
+TheOkDialog.Button = function TheOkDialogButton({ onClick, text }) {
   return (
     <a className='the-ok-dialog-button' onClick={onClick} role='button'>
       <span className='the-ok-dialog-button-text'>{text}</span>

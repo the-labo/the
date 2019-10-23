@@ -159,7 +159,11 @@ class TheStep extends React.Component {
   }
 }
 
-TheStep.Content = function Content({ children, className, spinning = false }) {
+TheStep.Content = function TheStepContent({
+  children,
+  className,
+  spinning = false,
+}) {
   return (
     <div className={c('the-step-content', className)}>
       <TheSpin className='the-step-spin' cover enabled={spinning} />

@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheAccordionSection">TheAccordionSection</a></dt>
-<dd><p>Accordion section</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheAccordionSection">TheAccordionSection()</a></dt>
+<dd><p>Accordion section</p>
+</dd>
 <dt><a href="#TheSection">TheSection()</a></dt>
 <dd><p>Section of the-components</p>
 </dd>
@@ -32,13 +27,13 @@
 ## @the-/ui-section
 Section of the-components
 
-**Version**: 15.4.13  
+**Version**: 15.4.15  
 <a name="TheAccordionSection"></a>
 
-## TheAccordionSection
+## TheAccordionSection()
 Accordion section
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheSection"></a>
 
 ## TheSection()

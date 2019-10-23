@@ -1,7 +1,4 @@
 {
-  "name": "@the-/demo-monorepo",
-  "description": "Demo of mono repo with the",
-  "version": "15.4.10",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,6 +11,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {},
+  "description": "Demo of mono repo with the",
   "devDependencies": {
     "@the-/eslint-config-react": "^15.5.0"
   },
@@ -28,6 +26,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/demo-monorepo",
   "publishConfig": {
     "access": "public"
   },
@@ -37,5 +36,6 @@
     "doc": "../../misc/scripts/pkgDoc.js",
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.11"
 }

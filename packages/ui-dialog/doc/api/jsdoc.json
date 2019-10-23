@@ -12,35 +12,7 @@
     "name": "@the-/ui-dialog",
     "order": 0,
     "typicalname": "uiDialog",
-    "version": "15.4.12"
-  },
-  {
-    "description": "Dialog for the-components",
-    "id": "TheDialog",
-    "kind": "class",
-    "longname": "TheDialog",
-    "meta": {
-      "filename": "TheDialog.jsx",
-      "lineno": 19,
-      "path": "lib"
-    },
-    "name": "TheDialog",
-    "order": 9,
-    "scope": "global"
-  },
-  {
-    "description": "Ok Dialog",
-    "id": "TheOkDialog",
-    "kind": "class",
-    "longname": "TheOkDialog",
-    "meta": {
-      "filename": "TheOkDialog.jsx",
-      "lineno": 11,
-      "path": "lib"
-    },
-    "name": "TheOkDialog",
-    "order": 20,
-    "scope": "global"
+    "version": "15.4.13"
   },
   {
     "description": "Confirm Dialog",
@@ -58,6 +30,21 @@
     "scope": "global"
   },
   {
+    "description": "Dialog for the-components",
+    "id": "TheDialog",
+    "kind": "function",
+    "longname": "TheDialog",
+    "meta": {
+      "filename": "TheDialog.jsx",
+      "lineno": 18,
+      "path": "lib"
+    },
+    "name": "TheDialog",
+    "order": 9,
+    "params": [],
+    "scope": "global"
+  },
+  {
     "description": "Style for TheDialog",
     "id": "TheDialogStyle",
     "kind": "function",
@@ -69,6 +56,21 @@
     },
     "name": "TheDialogStyle",
     "order": 18,
+    "params": [],
+    "scope": "global"
+  },
+  {
+    "description": "Ok Dialog",
+    "id": "TheOkDialog",
+    "kind": "function",
+    "longname": "TheOkDialog",
+    "meta": {
+      "filename": "TheOkDialog.jsx",
+      "lineno": 11,
+      "path": "lib"
+    },
+    "name": "TheOkDialog",
+    "order": 20,
     "params": [],
     "scope": "global"
   },
@@ -200,7 +202,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 171,
+      "lineno": 150,
       "path": "lib"
     },
     "name": "hideCloseButton",
@@ -215,7 +217,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 173,
+      "lineno": 152,
       "path": "lib"
     },
     "name": "icon",
@@ -230,7 +232,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 175,
+      "lineno": 154,
       "path": "lib"
     },
     "name": "lead",
@@ -245,7 +247,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 177,
+      "lineno": 156,
       "path": "lib"
     },
     "name": "onClose",
@@ -260,7 +262,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 179,
+      "lineno": 158,
       "path": "lib"
     },
     "name": "present",
@@ -275,7 +277,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 181,
+      "lineno": 160,
       "path": "lib"
     },
     "name": "spinning",
@@ -290,7 +292,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 183,
+      "lineno": 162,
       "path": "lib"
     },
     "name": "title",
@@ -305,7 +307,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 185,
+      "lineno": 164,
       "path": "lib"
     },
     "name": "zIndex",
@@ -335,7 +337,7 @@
     "memberof": "TheOkDialog.propTypes",
     "meta": {
       "filename": "TheOkDialog.jsx",
-      "lineno": 40,
+      "lineno": 36,
       "path": "lib"
     },
     "name": "okText",
@@ -350,7 +352,7 @@
     "memberof": "TheOkDialog.propTypes",
     "meta": {
       "filename": "TheOkDialog.jsx",
-      "lineno": 42,
+      "lineno": 38,
       "path": "lib"
     },
     "name": "onClose",
@@ -365,7 +367,7 @@
     "memberof": "TheOkDialog.propTypes",
     "meta": {
       "filename": "TheOkDialog.jsx",
-      "lineno": 45,
+      "lineno": 41,
       "path": "lib"
     },
     "name": "spinning",
@@ -380,7 +382,7 @@
     "memberof": "TheOkDialog.propTypes",
     "meta": {
       "filename": "TheOkDialog.jsx",
-      "lineno": 47,
+      "lineno": 43,
       "path": "lib"
     },
     "name": "title",

@@ -2,7 +2,7 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { TheButton } from '@the-/ui-button'
 import { TheContainer } from '@the-/ui-container'
 import { TheIcon } from '@the-/ui-icon'
@@ -15,110 +15,80 @@ const NOTICE_HEIGHT = 36
 /**
  * Header of the-components
  */
-class TheHeader extends React.Component {
-  constructor(props) {
-    super(props)
-    this.handleResize = this.handleResize.bind(this)
-    this.innerRef = React.createRef()
-    this.state = {
-      innerHeight: null,
-    }
-    this.layoutTimer = -1
-  }
+const TheHeader = (props) => {
+  const {
+    asOverlay,
+    asStatic,
+    children,
+    className,
+    notices,
+    reversed,
+    ribbon,
+    style,
+  } = props
+  const innerRef = useRef(null)
+  const [innerHeight, setInnerHeight] = useState(null)
 
-  componentDidMount() {
-    const { window } = get('window')
-    window.addEventListener('resize', this.handleResize)
-    this.doLayout()
-
-    this.layoutTimer = setInterval(() => {
-      this.layoutIfNeeded()
-    }, 500)
-  }
-
-  componentDidUpdate() {
-    this.layoutIfNeeded()
-  }
-
-  componentWillUnmount() {
-    const { window } = get('window')
-    window.removeEventListener('resize', this.handleResize)
-    clearInterval(this.layoutTimer)
-  }
-
-  doLayout() {
-    const {
-      innerRef: { current: inner },
-    } = this
-    const innerHeight = inner && inner.offsetHeight
-    if (this.state.innerHeight !== innerHeight) {
-      this.setState({ innerHeight })
-    }
-  }
-
-  handleResize(e) {
-    this.doLayout()
-  }
-
-  layoutIfNeeded() {
-    const {
-      innerRef: { current: inner },
-    } = this
-    const innerHeight = inner && inner.offsetHeight
-    const needsLayout = innerHeight && this.state.innerHeight !== innerHeight
+  const layoutIfNeeded = useCallback(() => {
+    const { current: inner } = innerRef
+    const newInnerHeight = inner && inner.offsetHeight
+    const needsLayout = newInnerHeight && innerHeight !== newInnerHeight
     if (needsLayout) {
-      this.doLayout()
+      setInnerHeight(newInnerHeight)
     }
-  }
+  }, [innerRef, innerHeight])
 
-  render() {
-    const {
-      props,
-      props: {
-        asOverlay,
-        asStatic,
-        children,
-        className,
-        notices,
-        reversed,
-        ribbon,
-        style,
-      },
-      state: { innerHeight },
-    } = this
+  const handleResize = useCallback(() => {
+    layoutIfNeeded()
+  }, [layoutIfNeeded])
 
-    const { length: noticeCount } = Object.keys(notices || {})
-    return (
-      <header
-        {...htmlAttributesFor(props, { except: ['className', 'style'] })}
-        className={c('the-header', className, {
-          'the-header-as-overlay': asOverlay,
-          'the-header-as-static': asStatic,
-          'the-header-reversed': reversed,
-        })}
-        style={{ minHeight: innerHeight }}
-      >
-        <div className='the-header-inner' ref={this.innerRef} style={style}>
-          <TheContainer>{children}</TheContainer>
-          <div
-            className={c('the-header-notices-wrap', {
-              'the-header-notices-wrap-empty': noticeCount === 0,
-            })}
-            style={{ height: NOTICE_HEIGHT * noticeCount }}
-          >
-            {Object.keys(notices || {}).map((message) => (
-              <TheHeader.Notice
-                actions={notices[message]}
-                key={message}
-                message={message}
-              />
-            ))}
-          </div>
-          {ribbon && <TheHeader.Ribbon>{ribbon}</TheHeader.Ribbon>}
+  useEffect(() => {
+    const { window } = get('window')
+    window.addEventListener('resize', handleResize)
+    layoutIfNeeded()
+    const layoutTimer = setInterval(() => {
+      layoutIfNeeded()
+    }, 500)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+      clearInterval(layoutTimer)
+    }
+  }, [layoutIfNeeded, handleResize])
+  useEffect(() => {
+    layoutIfNeeded()
+  }, [props])
+
+  const { length: noticeCount } = Object.keys(notices || {})
+  return (
+    <header
+      {...htmlAttributesFor(props, { except: ['className', 'style'] })}
+      className={c('the-header', className, {
+        'the-header-as-overlay': asOverlay,
+        'the-header-as-static': asStatic,
+        'the-header-reversed': reversed,
+      })}
+      style={{ minHeight: innerHeight }}
+    >
+      <div className='the-header-inner' ref={innerRef} style={style}>
+        <TheContainer>{children}</TheContainer>
+        <div
+          className={c('the-header-notices-wrap', {
+            'the-header-notices-wrap-empty': noticeCount === 0,
+          })}
+          style={{ height: NOTICE_HEIGHT * noticeCount }}
+        >
+          {Object.keys(notices || {}).map((message) => (
+            <TheHeader.Notice
+              actions={notices[message]}
+              key={message}
+              message={message}
+            />
+          ))}
         </div>
-      </header>
-    )
-  }
+        {ribbon && <TheHeader.Ribbon>{ribbon}</TheHeader.Ribbon>}
+      </div>
+    </header>
+  )
 }
 
 TheHeader.Logo = function Logo({

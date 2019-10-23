@@ -1,7 +1,4 @@
 {
-  "name": "@the-/entrypoint",
-  "description": "Browser entrypoint for the-framework",
-  "version": "15.4.10",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,6 +15,7 @@
     "@the-/window": "^15.6.1",
     "history": "^4.10.1"
   },
+  "description": "Browser entrypoint for the-framework",
   "devDependencies": {
     "injectmock": "^2.0.0"
   },
@@ -32,6 +30,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/entrypoint",
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
@@ -46,5 +45,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.11"
 }

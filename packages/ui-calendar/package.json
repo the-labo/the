@@ -13,7 +13,7 @@
   "dependencies": {
     "@the-/const-ui": "^15.4.5",
     "@the-/date": "^15.4.11",
-    "@the-/ui-button": "^15.4.11",
+    "@the-/ui-button": "^15.5.1",
     "@the-/ui-condition": "^15.4.11",
     "@the-/ui-style": "^15.4.12",
     "@the-/util-color": "^15.4.10",
@@ -24,9 +24,9 @@
     "npm": "^6.12.0",
     "objnest": "^5.0.10",
     "prop-types": "^15.7.2",
-    "react": "^16.10.2",
+    "react": "^16.11.0",
     "react-big-calendar": "^0.22.1",
-    "react-dom": "^16.10.2",
+    "react-dom": "^16.11.0",
     "run": "^1.4.0"
   },
   "devDependencies": {

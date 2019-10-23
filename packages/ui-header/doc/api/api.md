@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheHeader">TheHeader</a></dt>
-<dd><p>Header of the-components</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheHeader">TheHeader()</a></dt>
+<dd><p>Header of the-components</p>
+</dd>
 <dt><a href="#TheHeaderStyle">TheHeaderStyle()</a></dt>
 <dd><p>Style for TheHeader</p>
 </dd>
@@ -29,13 +24,13 @@
 ## @the-/ui-header
 Header of the-components
 
-**Version**: 15.4.14  
+**Version**: 15.4.15  
 <a name="TheHeader"></a>
 
-## TheHeader
+## TheHeader()
 Header of the-components
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheHeaderStyle"></a>
 
 ## TheHeaderStyle()

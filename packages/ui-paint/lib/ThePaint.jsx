@@ -63,6 +63,7 @@ class ThePaint extends React.Component {
         } = this
         void drawer.registerBackground(background)
       }
+
       const shouldResize = 'width' in diff || 'height' in diff
       if (shouldResize) {
         drawer && drawer.resize()

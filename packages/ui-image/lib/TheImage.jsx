@@ -39,10 +39,12 @@ const TheImage = (props) => {
     if (busy) {
       return
     }
+
     const { current: elm } = elmRef
     if (!elm) {
       return
     }
+
     const elmRect = elm.getBoundingClientRect()
     if (!elmRect) {
       return
@@ -55,6 +57,7 @@ const TheImage = (props) => {
     if (skip) {
       return
     }
+
     setActualHeight(newActualHeight)
     setActualWidth(newActualWidth)
   }, [elmRef, busy, actualWidth, actualHeight])

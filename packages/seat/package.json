@@ -1,7 +1,4 @@
 {
-  "name": "@the-/seat",
-  "description": "Shared value manager",
-  "version": "15.4.10",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,6 +15,7 @@
     "json-pointer": "^0.6.0",
     "mkdirp": "^0.5.1"
   },
+  "description": "Shared value manager",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -30,6 +28,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/seat",
   "publishConfig": {
     "access": "public"
   },
@@ -40,5 +39,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.11"
 }

@@ -46,7 +46,18 @@ class ExampleComponent extends React.PureComponent {
 
         <br />
 
-        <TheAccordionSection heading='Try me!'>
+        <TheAccordionSection
+          heading='Try me!'
+          onToggle={() => console.log('accordion toggle')}
+        >
+          <p>This is the accordion body</p>
+        </TheAccordionSection>
+
+        <TheAccordionSection
+          heading='Try me2!'
+          onToggle={() => console.log('accordion toggle')}
+          open
+        >
           <p>This is the accordion body</p>
         </TheAccordionSection>
         <br />

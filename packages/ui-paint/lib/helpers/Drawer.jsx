@@ -100,6 +100,7 @@ class Drawer {
     if (!tmpLayer) {
       return
     }
+
     if (tmpLayer.empty) {
       return
     }

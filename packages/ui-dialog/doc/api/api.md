@@ -8,25 +8,20 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheDialog">TheDialog</a></dt>
-<dd><p>Dialog for the-components</p>
-</dd>
-<dt><a href="#TheOkDialog">TheOkDialog</a></dt>
-<dd><p>Ok Dialog</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
 <dt><a href="#TheConfirmDialog">TheConfirmDialog()</a></dt>
 <dd><p>Confirm Dialog</p>
 </dd>
+<dt><a href="#TheDialog">TheDialog()</a></dt>
+<dd><p>Dialog for the-components</p>
+</dd>
 <dt><a href="#TheDialogStyle">TheDialogStyle()</a></dt>
 <dd><p>Style for TheDialog</p>
+</dd>
+<dt><a href="#TheOkDialog">TheOkDialog()</a></dt>
+<dd><p>Ok Dialog</p>
 </dd>
 <dt><a href="#TheYesNoDialog">TheYesNoDialog()</a></dt>
 <dd><p>Yes No Dialog</p>
@@ -38,29 +33,29 @@
 ## @the-/ui-dialog
 Dialog for the-components
 
-**Version**: 15.4.12  
-<a name="TheDialog"></a>
-
-## TheDialog
-Dialog for the-components
-
-**Kind**: global class  
-<a name="TheOkDialog"></a>
-
-## TheOkDialog
-Ok Dialog
-
-**Kind**: global class  
+**Version**: 15.4.13  
 <a name="TheConfirmDialog"></a>
 
 ## TheConfirmDialog()
 Confirm Dialog
 
 **Kind**: global function  
+<a name="TheDialog"></a>
+
+## TheDialog()
+Dialog for the-components
+
+**Kind**: global function  
 <a name="TheDialogStyle"></a>
 
 ## TheDialogStyle()
 Style for TheDialog
+
+**Kind**: global function  
+<a name="TheOkDialog"></a>
+
+## TheOkDialog()
+Ok Dialog
 
 **Kind**: global function  
 <a name="TheYesNoDialog"></a>

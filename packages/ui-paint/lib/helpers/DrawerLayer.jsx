@@ -28,6 +28,7 @@ class DrawerLayer {
     if (points.length === 0) {
       return
     }
+
     const pointGroups = points.reduce((reduced, point) => {
       const [last] = reduced
       const { erasing = false } = point
@@ -37,6 +38,7 @@ class DrawerLayer {
       } else {
         last.points.push(point)
       }
+
       return reduced
     }, [])
     const { ctx } = canvasAccess
@@ -59,6 +61,7 @@ class DrawerLayer {
         default:
           throw new Error(`[Drawer] Unknown method: ${method}`)
       }
+
       ctx.restore()
     }
   }
@@ -70,6 +73,7 @@ class DrawerLayer {
     if (clear) {
       canvasAccess.clear()
     }
+
     this.applyPoints(this.points)
   }
 

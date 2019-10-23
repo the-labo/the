@@ -24,8 +24,8 @@
     "@the-/ui-demo": "^15.4.12",
     "@the-/ui-router": "^15.4.11",
     "coz": "^7.0.19",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2"
   },
   "engines": {

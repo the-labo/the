@@ -12,20 +12,21 @@
     "name": "@the-/ui-header",
     "order": 0,
     "typicalname": "uiHeader",
-    "version": "15.4.14"
+    "version": "15.4.15"
   },
   {
     "description": "Header of the-components",
     "id": "TheHeader",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheHeader",
     "meta": {
       "filename": "TheHeader.jsx",
-      "lineno": 19,
+      "lineno": 18,
       "path": "lib"
     },
     "name": "TheHeader",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
@@ -51,7 +52,7 @@
     "memberof": "TheHeader.propTypes",
     "meta": {
       "filename": "TheHeader.jsx",
-      "lineno": 235,
+      "lineno": 205,
       "path": "lib"
     },
     "name": "asOverlay",
@@ -66,7 +67,7 @@
     "memberof": "TheHeader.propTypes",
     "meta": {
       "filename": "TheHeader.jsx",
-      "lineno": 237,
+      "lineno": 207,
       "path": "lib"
     },
     "name": "asStatic",
@@ -81,7 +82,7 @@
     "memberof": "TheHeader.propTypes",
     "meta": {
       "filename": "TheHeader.jsx",
-      "lineno": 239,
+      "lineno": 209,
       "path": "lib"
     },
     "name": "notices",
@@ -96,7 +97,7 @@
     "memberof": "TheHeader.propTypes",
     "meta": {
       "filename": "TheHeader.jsx",
-      "lineno": 241,
+      "lineno": 211,
       "path": "lib"
     },
     "name": "reversed",
@@ -111,7 +112,7 @@
     "memberof": "TheHeader.propTypes",
     "meta": {
       "filename": "TheHeader.jsx",
-      "lineno": 243,
+      "lineno": 213,
       "path": "lib"
     },
     "name": "ribbon",

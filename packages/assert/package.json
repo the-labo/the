@@ -1,7 +1,4 @@
 {
-  "name": "@the-/assert",
-  "description": "Assert for the-framework",
-  "version": "15.4.10",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,6 +11,7 @@
   "dependencies": {
     "invariant": "^2.2.4"
   },
+  "description": "Assert for the-framework",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -26,6 +24,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/assert",
   "publishConfig": {
     "access": "public"
   },
@@ -36,5 +35,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.11"
 }

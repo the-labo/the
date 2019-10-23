@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheButton">TheButton</a></dt>
-<dd><p>Button of the-components</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheButton">TheButton()</a></dt>
+<dd><p>Button of the-components</p>
+</dd>
 <dt><a href="#TheButtonGroup">TheButtonGroup()</a></dt>
 <dd><p>Group of buttons</p>
 </dd>
@@ -32,13 +27,13 @@
 ## @the-/ui-button
 Button of the-components
 
-**Version**: 15.4.11  
+**Version**: 15.5.1  
 <a name="TheButton"></a>
 
-## TheButton
+## TheButton()
 Button of the-components
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheButtonGroup"></a>
 
 ## TheButtonGroup()

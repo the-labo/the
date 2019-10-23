@@ -2,7 +2,7 @@
 
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { TheIcon } from '@the-/ui-icon'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 import TheSection from './TheSection'
@@ -10,85 +10,58 @@ import TheSection from './TheSection'
 /**
  * Accordion section
  */
-class TheAccordionSection extends React.Component {
-  constructor(props) {
-    super(props)
-    this.innerRef = React.createRef()
-    this.resizeTimer = null
-    this.handleToggle = this.handleToggle.bind(this)
-    this.state = {
-      maxHeight: '100%',
-      open: props.open,
-    }
-  }
+const TheAccordionSection = (props) => {
+  const { children, className, heading, onToggle } = props
+  const [maxHeight, setMaxHeight] = useState('100%')
+  const [open, setOpen] = useState(props.open)
+  const innerRef = useRef(null)
 
-  componentDidMount() {
-    this.resize()
-    this.resizeTimer = setInterval(() => this.resize(), 500)
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.resizeTimer)
-  }
-
-  getInnerHeight() {
-    const {
-      innerRef: { current: inner },
-    } = this
+  const getInnerHeight = useCallback(() => {
+    const { current: inner } = innerRef
     return inner && inner.offsetHeight
-  }
+  }, [innerRef])
 
-  handleToggle() {
-    this.toggleOpen()
-  }
+  const resize = useCallback(() => {
+    setMaxHeight(getInnerHeight())
+  }, [maxHeight, getInnerHeight])
 
-  render() {
-    const {
-      props,
-      props: { children, className, heading },
-      state: { maxHeight, open },
-    } = this
+  useEffect(() => {
+    const timer = setInterval(() => resize(), 500)
+    resize()
+    return () => clearInterval(timer)
+  }, [])
 
-    const { Body, Header } = TheAccordionSection
-    return (
-      <TheSection
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        aria-expanded={open}
-        className={classnames('the-accordion-section', className, {
-          'the-accordion-section-closed': !open,
-          'the-accordion-section-open': open,
-        })}
-        style={{ maxHeight }}
-      >
-        <div className='the-accordion-section-inner' ref={this.innerRef}>
-          <Header onClick={this.handleToggle} open={open}>
-            {heading}
-          </Header>
-          <Body>{children}</Body>
-        </div>
-      </TheSection>
-    )
-  }
+  const toggleOpen = useCallback(() => {
+    const newOpen = !open
+    setOpen(newOpen)
+    onToggle && onToggle(newOpen)
+  }, [open, onToggle])
 
-  resize() {
-    const maxHeight = this.getInnerHeight()
-    if (this.state.maxHeight !== maxHeight) {
-      this.setState({ maxHeight })
-    }
-  }
+  const handleToggle = useCallback(() => toggleOpen())
 
-  toggleOpen() {
-    const open = !this.state.open
-    this.setState({ open })
-    const {
-      props: { onToggle },
-    } = this
-    onToggle && onToggle(open)
-  }
+  const { Body, Header } = TheAccordionSection
+  return (
+    <TheSection
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      aria-expanded={open}
+      className={classnames('the-accordion-section', className, {
+        'the-accordion-section-closed': !open,
+        'the-accordion-section-open': open,
+      })}
+      style={{ maxHeight }}
+    >
+      <div className='the-accordion-section-inner' ref={innerRef}>
+        <Header onClick={handleToggle} open={open}>
+          {heading}
+        </Header>
+        <Body>{children}</Body>
+      </div>
+    </TheSection>
+  )
 }
 
-TheAccordionSection.Body = function Body(props) {
+TheAccordionSection.Body = function TheAccordionSectionBody(props) {
   const { children, className } = props
   return (
     <TheSection.Body
@@ -101,7 +74,7 @@ TheAccordionSection.Body = function Body(props) {
   )
 }
 
-TheAccordionSection.Header = function Header(props) {
+TheAccordionSection.Header = function TheAccordionSectionHeader(props) {
   const { children, className } = props
   return (
     <TheSection.Header

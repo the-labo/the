@@ -35,6 +35,7 @@ class TheMedia {
     if (!mediaDevices) {
       return null
     }
+
     return mediaLock.acquire('mediaDevices', async () =>
       mediaDevices.getUserMedia(constrains),
     )
