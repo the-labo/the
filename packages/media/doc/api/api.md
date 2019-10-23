@@ -5,7 +5,7 @@
 ## @the-/media
 User media handler
 
-**Version**: 15.5.6  
+**Version**: 15.5.7  
 **License**: MIT  
 
 * [@the-/media](#module_@the-/media)

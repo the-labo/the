@@ -29,7 +29,7 @@
     "wrtc": "^0.4.2"
   },
   "devDependencies": {
-    "@the-/rtc": "^15.4.12",
+    "@the-/rtc": "^15.4.15",
     "aport": "^2.0.0",
     "asleep": "^1.0.3",
     "webpack-cli": "^3.3.9",

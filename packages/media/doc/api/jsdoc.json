@@ -13,7 +13,7 @@
     "name": "@the-/media",
     "order": 2,
     "typicalname": "media",
-    "version": "15.5.6"
+    "version": "15.5.7"
   },
   {
     "id": "module:@the-/media.TheMedia()",
@@ -286,7 +286,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 200,
+      "lineno": 207,
       "path": "lib"
     },
     "name": "stop",
@@ -312,7 +312,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 224,
+      "lineno": 231,
       "path": "lib"
     },
     "name": "takePhoto",
@@ -351,7 +351,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 246,
+      "lineno": 253,
       "path": "lib"
     },
     "name": "updateConstrains",

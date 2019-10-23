@@ -176,7 +176,14 @@ class TheMedia {
       throw new Error('[TheMedia] Already running')
     }
 
-    const stream = await TheMedia.createMediaStream(this.constrains)
+    const stream = await TheMedia.createMediaStream(this.constrains).catch(
+      (e) => {
+        console.error('[TheMedia] Media stream error: ', e, {
+          constrains: this.constrains,
+        })
+        return null
+      },
+    )
     if (!stream) {
       throw new Error('[TheMedia] Failed to get user media stream')
     }
