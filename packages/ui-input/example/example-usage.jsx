@@ -349,7 +349,7 @@ class ExampleComponent extends React.PureComponent {
           name='value-date-01'
           onUpdate={onUpdate}
           placeholder='date only'
-          value={values['value-date-01']}
+          value={values['value-date-01'] || ''}
         />
 
         <Date

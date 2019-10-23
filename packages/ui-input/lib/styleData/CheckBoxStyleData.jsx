@@ -58,7 +58,7 @@ function CheckBoxStyleData({
     '.the-input-checkbox-label': {
       '&:active': { opacity: activeOpacity },
       '&:focus': {
-        outlineColor: 'rgb(238, 142, 10)',
+        outlineColor: dominantColor,
         outlineOffset: '-2px',
         outlineStyle: 'auto',
         outlineWidth: '5px',

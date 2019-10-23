@@ -43,6 +43,12 @@ function RadioStyleData({
     },
     '.the-input-radio-label': {
       '&:active': { opacity: activeOpacity },
+      '&:focus': {
+        outlineColor: dominantColor,
+        outlineOffset: '-2px',
+        outlineStyle: 'auto',
+        outlineWidth: '5px',
+      },
       '&:hover': { opacity: hoverOpacity },
       '> *': {
         // https://github.com/ftlabs/fastclick/issues/60

@@ -184,6 +184,7 @@ TheInputDate.defaultProps = {
   minDate: null,
   noCalendar: false,
   timeEnabled: false,
+  value: '',
 }
 TheInputDate.displayName = 'TheInputDate'
 
