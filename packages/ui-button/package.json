@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-button",
   "description": "Button of the-components",
-  "version": "15.4.11",
+  "version": "15.5.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -22,11 +22,11 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui-demo": "file:../ui-demo",
+    "@the-/ui-demo": "^15.4.12",
     "@the-/ui-router": "^15.4.11",
     "coz": "^7.0.19",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2"
   },
   "engines": {

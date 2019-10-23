@@ -2,7 +2,7 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useCallback, useState } from 'react'
 import { unlessProduction } from '@the-/check'
 import { TheIcon } from '@the-/ui-icon'
 import { TheLink } from '@the-/ui-link'
@@ -13,143 +13,132 @@ import TheButtonGroup from './TheButtonGroup'
 /**
  * Button of the-components
  */
-class TheButton extends React.Component {
-  constructor(props) {
-    super(props)
-    this.handleKeyDown = this.handleKeyDown.bind(this)
-    this.handleClick = this.handleClick.bind(this)
-    this.lastClickedAt = null
-  }
-
-  handleClick(e) {
-    const {
-      props: { minInterval, onClick, onSubmit },
-    } = this
-    if (this.lastClickedAt) {
-      const sinceLast = new Date() - this.lastClickedAt
-      const tooSoon = sinceLast < minInterval
-      if (tooSoon) {
-        unlessProduction(() => {
-          console.warn(
-            `[TheButton] Prevent double click ( minInterval: ${minInterval}ms, actual: ${sinceLast}ms )`,
-          )
-        })
-        return
+const TheButton = (props) => {
+  const {
+    children,
+    className,
+    color,
+    danger,
+    disabled,
+    floated,
+    icon,
+    iconRight,
+    large,
+    largeIcon,
+    light,
+    minInterval,
+    onClick,
+    onKeyDown,
+    onSubmit,
+    primary,
+    rounded,
+    simple,
+    small,
+    spinning,
+    style = {},
+    target,
+    text,
+    to,
+    wide,
+  } = props
+  const [lastClickedAt, setLastClickedAt] = useState(null)
+  const handleClick = useCallback(
+    (e) => {
+      if (lastClickedAt) {
+        const sinceLast = new Date() - lastClickedAt
+        const tooSoon = sinceLast < minInterval
+        if (tooSoon) {
+          unlessProduction(() => {
+            console.warn(
+              `[TheButton] Prevent double click ( minInterval: ${minInterval}ms, actual: ${sinceLast}ms )`,
+            )
+          })
+          return
+        }
       }
-    }
 
-    onClick && onClick(e)
-    onSubmit && onSubmit()
-    this.lastClickedAt = new Date()
-  }
+      onClick && onClick(e)
+      onSubmit && onSubmit()
+      setLastClickedAt(new Date())
+    },
+    [lastClickedAt, setLastClickedAt, onSubmit, onClick],
+  )
 
-  handleKeyDown(e) {
-    const {
-      props: { onClick, onKeyDown, onSubmit },
-    } = this
-    switch (e.keyCode) {
-      case 32: // Space key
-        e.preventDefault()
-        onSubmit && onSubmit()
-        onClick && onClick()
-        break
-      default:
-        break
-    }
-
-    onKeyDown && onKeyDown(e)
-  }
-
-  render() {
-    const {
-      props,
-      props: {
-        children,
-        className,
-        color,
-        danger,
-        disabled,
-        floated,
-        icon,
-        iconRight,
-        large,
-        largeIcon,
-        light,
-        primary,
-        rounded,
-        simple,
-        small,
-        spinning,
-        style = {},
-        target,
-        text,
-        to,
-        wide,
-      },
-    } = this
-
-    const A = to ? TheLink : 'a'
-
-    const applyColor = color && !danger && !disabled
-    if (applyColor && style) {
-      style.borderColor = color
-      if (primary) {
-        style.backgroundColor = color
-        style.color = textColorFor(color)
-      } else {
-        style.color = color
+  const handleKeyDown = useCallback(
+    (e) => {
+      switch (e.keyCode) {
+        case 32: // Space key
+          e.preventDefault()
+          onSubmit && onSubmit()
+          onClick && onClick()
+          break
+        default:
+          break
       }
-    }
 
-    return (
-      <A
-        {...htmlAttributesFor(props, {
-          except: ['className', 'style', 'icon', 'to', 'color', 'iconRight'],
-        })}
-        {...eventHandlersFor(props, { except: ['onClick'] })}
-        aria-busy={spinning}
-        className={c('the-button', className, {
-          'the-button-danger': danger,
-          'the-button-disabled': disabled,
-          'the-button-floated': floated,
-          'the-button-large': large,
-          'the-button-light': light,
-          'the-button-primary': primary,
-          'the-button-rounded': rounded,
-          'the-button-simple': simple,
-          'the-button-small': small,
-          'the-button-spinning': spinning,
-          'the-button-vertical': !!largeIcon,
-          'the-button-wide': wide,
-        })}
-        href={(!to && props.href) || null}
-        onClick={this.handleClick}
-        onKeyDown={this.handleKeyDown}
-        style={style}
-        target={target}
-        to={to}
-      >
-        <span className='the-button-inner'>
-          {spinning && <TheButton.Spinner />}
-          {largeIcon && (
-            <TheIcon className={c('the-button-large-icon', largeIcon)} />
-          )}
-          {icon && <TheIcon className={c('the-button-icon', icon)} />}
-          {text && <span className={c('the-button-text')}>{text}</span>}
-          {children}
-          {iconRight && (
-            <TheIcon
-              className={c(
-                'the-button-icon',
-                'the-button-icon-right',
-                iconRight,
-              )}
-            />
-          )}
-        </span>
-      </A>
-    )
+      onKeyDown && onKeyDown(e)
+    },
+    [onSubmit, onClick, onKeyDown],
+  )
+
+  const A = to ? TheLink : 'a'
+
+  const applyColor = color && !danger && !disabled
+  if (applyColor && style) {
+    style.borderColor = color
+    if (primary) {
+      style.backgroundColor = color
+      style.color = textColorFor(color)
+    } else {
+      style.color = color
+    }
   }
+
+  return (
+    <A
+      {...htmlAttributesFor(props, {
+        except: ['className', 'style', 'icon', 'to', 'color', 'iconRight'],
+      })}
+      {...eventHandlersFor(props, { except: ['onClick'] })}
+      aria-busy={spinning}
+      className={c('the-button', className, {
+        'the-button-danger': danger,
+        'the-button-disabled': disabled,
+        'the-button-floated': floated,
+        'the-button-large': large,
+        'the-button-light': light,
+        'the-button-primary': primary,
+        'the-button-rounded': rounded,
+        'the-button-simple': simple,
+        'the-button-small': small,
+        'the-button-spinning': spinning,
+        'the-button-vertical': !!largeIcon,
+        'the-button-wide': wide,
+      })}
+      href={(!to && props.href) || null}
+      onClick={handleClick}
+      onKeyDown={handleKeyDown}
+      style={style}
+      tabIndex={disabled ? '-1' : '0'}
+      target={target}
+      to={to}
+    >
+      <span className='the-button-inner'>
+        {spinning && <TheButton.Spinner />}
+        {largeIcon && (
+          <TheIcon className={c('the-button-large-icon', largeIcon)} />
+        )}
+        {icon && <TheIcon className={c('the-button-icon', icon)} />}
+        {text && <span className={c('the-button-text')}>{text}</span>}
+        {children}
+        {iconRight && (
+          <TheIcon
+            className={c('the-button-icon', 'the-button-icon-right', iconRight)}
+          />
+        )}
+      </span>
+    </A>
+  )
 }
 
 TheButton.Group = TheButtonGroup
@@ -216,16 +205,20 @@ TheButton.defaultProps = {
 
 TheButton.displayName = 'TheButton'
 
-TheButton.Next = (props) => (
-  <TheButton iconRight={TheButton.NEXT_ICON} {...props} />
-)
+TheButton.Next = function TheButtonNext(props) {
+  return <TheButton iconRight={TheButton.NEXT_ICON} {...props} />
+}
 
-TheButton.Prev = (props) => <TheButton icon={TheButton.PREV_ICON} {...props} />
+TheButton.Prev = function TheButtonPrev(props) {
+  return <TheButton icon={TheButton.PREV_ICON} {...props} />
+}
 
-TheButton.Spinner = () => (
-  <span className='the-button-spinner'>
-    <TheIcon.Spin className='the-button-spinner-icon' />
-  </span>
-)
+TheButton.Spinner = function TheButtonSpinner() {
+  return (
+    <span className='the-button-spinner'>
+      <TheIcon.Spin className='the-button-spinner-icon' />
+    </span>
+  )
+}
 
 export default TheButton
