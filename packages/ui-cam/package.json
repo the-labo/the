@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-cam",
   "description": "Embed camera component",
-  "version": "15.5.1",
+  "version": "15.5.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,7 +13,7 @@
   "dependencies": {
     "@the-/check": "^15.5.8",
     "@the-/const-ui": "^15.4.5",
-    "@the-/media": "^15.5.6",
+    "@the-/media": "^15.5.7",
     "@the-/ui-icon": "^15.4.11",
     "@the-/ui-spin": "^15.4.11",
     "@the-/ui-style": "^15.4.12",
@@ -28,8 +28,8 @@
     "@the-/ui-demo": "file:../ui-demo",
     "coz": "^7.0.19",
     "objnest": "^5.0.10",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2"
   },
   "engines": {
