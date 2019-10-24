@@ -5,11 +5,12 @@
 ## @the-/window
 Browser utility for the-framework
 
-**Version**: 15.6.1  
+**Version**: 15.8.0  
 **License**: MIT  
 
 * [@the-/window](#module_@the-/window)
     * [.detail([shouldPrevent])](#module_@the-/window.detail) ⇒ <code>function</code>
+    * [.full([options])](#module_@the-/window.full) ⇒ <code>function</code>
     * [.get(name)](#module_@the-/window.get) ⇒ <code>\*</code>
     * [.line(handler, [options])](#module_@the-/window.line) ⇒ <code>\*</code>
     * [.once(handler, event)](#module_@the-/window.once) ⇒ <code>function</code>
@@ -29,6 +30,18 @@ Ask before leave
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [shouldPrevent] | <code>function</code> | <code>() &#x3D;&gt; true</code> | Should detain |
+
+<a name="module_@the-/window.full"></a>
+
+### window.full([options]) ⇒ <code>function</code>
+Shows in full screen
+
+**Kind**: static method of [<code>@the-/window</code>](#module_@the-/window)  
+**Returns**: <code>function</code> - Close function  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [options] | <code>Object</code> | <code>{}</code> | Optional setting |
 
 <a name="module_@the-/window.get"></a>
 

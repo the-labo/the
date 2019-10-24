@@ -87,6 +87,8 @@ tryExample().catch((err) => console.error(err))
 
 
 - module:@the-/window
+  - [.detail(shouldPrevent)](./doc/api/api.md#module_@the-/window.detail)
+  - [.full(options)](./doc/api/api.md#module_@the-/window.full)
   - [.get(name)](./doc/api/api.md#module_@the-/window.get)
   - [.line(handler,options)](./doc/api/api.md#module_@the-/window.line)
   - [.once(handler,event)](./doc/api/api.md#module_@the-/window.once)

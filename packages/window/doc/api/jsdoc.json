@@ -11,9 +11,9 @@
       "path": "lib"
     },
     "name": "@the-/window",
-    "order": 2,
+    "order": 3,
     "typicalname": "window",
-    "version": "15.6.1"
+    "version": "15.8.0"
   },
   {
     "description": "Ask before leave",
@@ -54,6 +54,44 @@
     "scope": "static"
   },
   {
+    "description": "Shows in full screen",
+    "id": "module:@the-/window.full",
+    "kind": "function",
+    "longname": "module:@the-/window.full",
+    "memberof": "module:@the-/window",
+    "meta": {
+      "filename": "full.js",
+      "lineno": 5,
+      "path": "lib"
+    },
+    "name": "full",
+    "order": 1,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional setting",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Close function"
+      }
+    ],
+    "scope": "static"
+  },
+  {
     "description": "Get global values",
     "id": "module:@the-/window.get",
     "kind": "function",
@@ -65,7 +103,7 @@
       "path": "lib"
     },
     "name": "get",
-    "order": 1,
+    "order": 2,
     "params": [
       {
         "type": {
@@ -100,7 +138,7 @@
       "path": "lib"
     },
     "name": "line",
-    "order": 3,
+    "order": 4,
     "params": [
       {
         "type": {
@@ -157,7 +195,7 @@
       "path": "lib"
     },
     "name": "once",
-    "order": 4,
+    "order": 5,
     "params": [
       {
         "type": {
@@ -202,7 +240,7 @@
       "path": "lib"
     },
     "name": "reload",
-    "order": 5,
+    "order": 6,
     "params": [
       {
         "type": {
@@ -239,7 +277,7 @@
       "path": "lib"
     },
     "name": "rescue",
-    "order": 6,
+    "order": 7,
     "params": [
       {
         "type": {
@@ -283,7 +321,7 @@
       "path": "lib"
     },
     "name": "set",
-    "order": 7,
+    "order": 8,
     "params": [
       {
         "type": {
@@ -327,7 +365,7 @@
       "path": "lib"
     },
     "name": "show",
-    "order": 8,
+    "order": 9,
     "params": [
       {
         "type": {
