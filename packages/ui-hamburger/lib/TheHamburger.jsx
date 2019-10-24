@@ -2,15 +2,47 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React, { useCallback } from 'react'
+import React, { useCallback, useEffect, useMemo } from 'react'
+import { StylePresets } from '@the-/const-ui'
 import { TheButton } from '@the-/ui-button'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
+import {
+  eventHandlersFor,
+  htmlAttributesFor,
+  newId,
+  toggleBodyClass,
+} from '@the-/util-ui'
+
+const BODY_FIX_STYLE = Object.entries(StylePresets.FixedBody)
+  .map(([k, v]) => `${k}: ${v} !important`)
+  .join(';')
 
 /**
  * Hamburger menu for the-components
  */
 const TheHamburger = (props) => {
-  const { children, className, footer, header, hidden, onToggle } = props
+  const {
+    children,
+    className,
+    footer,
+    header,
+    hidden,
+    onToggle,
+    zIndex,
+  } = props
+
+  const id = useMemo(() => props.id || newId({ prefix: 'the-hamburger-' }), [
+    props.id,
+  ])
+
+  const toggleDocumentScroll = useCallback(
+    (fixed) => toggleBodyClass(`the-hamburger-fix-for-${id}`, fixed),
+    [id],
+  )
+  useEffect(() => {
+    toggleDocumentScroll(!hidden)
+    return () => toggleDocumentScroll(false)
+  }, [hidden, id])
+
   const toggle = useCallback(
     (hidden) => {
       onToggle && onToggle(hidden)
@@ -34,9 +66,14 @@ const TheHamburger = (props) => {
       className={c('the-hamburger', className, {
         'the-hamburger-hidden': hidden,
       })}
+      id={id}
     >
       <div className='the-hamburger-cover' onClick={handleToggle} />
       <div className='the-hamburger-inner'>
+        <style className='the-hamburger-fix-style'>
+          {`.the-hamburger-fix-for-${id} { ${BODY_FIX_STYLE} }`}
+          {zIndex ? `#${id} {z-index: ${zIndex};}` : null}
+        </style>
         <TheButton
           className='the-hamburger-close'
           icon={TheHamburger.CLOSE_ICON}

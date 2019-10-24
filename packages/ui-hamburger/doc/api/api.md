@@ -24,7 +24,7 @@
 ## @the-/ui-hamburger
 Hamburger menu for the-components
 
-**Version**: 15.4.13  
+**Version**: 15.4.14  
 <a name="TheHamburger"></a>
 
 ## TheHamburger()

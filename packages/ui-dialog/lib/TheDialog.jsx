@@ -3,6 +3,7 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useMemo } from 'react'
+import { StylePresets } from '@the-/const-ui'
 import { TheIcon } from '@the-/ui-icon'
 import { TheSpin } from '@the-/ui-spin'
 import {
@@ -11,6 +12,10 @@ import {
   newId,
   toggleBodyClass,
 } from '@the-/util-ui'
+
+const BODY_FIX_STYLE = Object.entries(StylePresets.FixedBody)
+  .map(([k, v]) => `${k}: ${v} !important`)
+  .join(';')
 
 /**
  * Dialog for the-components
@@ -40,10 +45,8 @@ const TheDialog = (props) => {
 
   useEffect(() => {
     toggleDocumentScroll(present)
+    return () => toggleDocumentScroll(false)
   }, [present, id])
-  useEffect(() => {
-    toggleDocumentScroll(false)
-  }, [])
 
   return (
     <div
@@ -60,7 +63,7 @@ const TheDialog = (props) => {
     >
       <div className='the-dialog-inner'>
         <style className='the-dialog-fix-style'>
-          {`.the-dialog-fix-for-${id} {overflow: hidden !important;}`}
+          {`.the-dialog-fix-for-${id} { ${BODY_FIX_STYLE} }`}
           {zIndex ? `#${id} {z-index: ${zIndex};}` : null}
         </style>
         <TheDialog.Background onClose={onClose} />

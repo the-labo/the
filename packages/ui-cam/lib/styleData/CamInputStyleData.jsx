@@ -83,7 +83,7 @@ function CamInputStyleData({ tappableHeight }) {
       boxSizing: 'border-box',
       cursor: 'pointer',
       height: tappableSize,
-      margin: '2px auto',
+      margin: '2px',
       width: tappableSize,
     },
     '.the-cam-input-upload': {

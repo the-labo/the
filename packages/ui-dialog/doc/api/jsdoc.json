@@ -12,7 +12,7 @@
     "name": "@the-/ui-dialog",
     "order": 0,
     "typicalname": "uiDialog",
-    "version": "15.4.13"
+    "version": "15.4.15"
   },
   {
     "description": "Confirm Dialog",
@@ -36,7 +36,7 @@
     "longname": "TheDialog",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 18,
+      "lineno": 23,
       "path": "lib"
     },
     "name": "TheDialog",
@@ -202,7 +202,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 150,
+      "lineno": 153,
       "path": "lib"
     },
     "name": "hideCloseButton",
@@ -217,7 +217,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 152,
+      "lineno": 155,
       "path": "lib"
     },
     "name": "icon",
@@ -232,7 +232,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 154,
+      "lineno": 157,
       "path": "lib"
     },
     "name": "lead",
@@ -247,7 +247,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 156,
+      "lineno": 159,
       "path": "lib"
     },
     "name": "onClose",
@@ -262,7 +262,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 158,
+      "lineno": 161,
       "path": "lib"
     },
     "name": "present",
@@ -277,7 +277,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 160,
+      "lineno": 163,
       "path": "lib"
     },
     "name": "spinning",
@@ -292,7 +292,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 162,
+      "lineno": 165,
       "path": "lib"
     },
     "name": "title",
@@ -307,7 +307,7 @@
     "memberof": "TheDialog.propTypes",
     "meta": {
       "filename": "TheDialog.jsx",
-      "lineno": 164,
+      "lineno": 167,
       "path": "lib"
     },
     "name": "zIndex",

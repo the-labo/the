@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-cam",
   "description": "Embed camera component",
-  "version": "15.5.3",
+  "version": "15.5.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -21,7 +21,8 @@
     "@the-/window": "^15.6.1",
     "asleep": "^1.0.3",
     "classnames": "^2.2.6",
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "react-draggable": "^4.0.3"
   },
   "devDependencies": {
     "@the-/polyfill": "^16.0.2",

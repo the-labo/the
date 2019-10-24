@@ -5,20 +5,23 @@
  * @license MIT
  * @module @the-/const-ui
  * @typicalname constUi
- * @version 15.4.10
+ * @version 15.5.0
  */
 'use strict'
 
+const StylePresets_ = require('./StylePresets')
 const SupportedProps_ = require('./SupportedProps')
 const ThemeValues_ = require('./ThemeValues')
 const VendorColors_ = require('./VendorColors')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
+exports.StylePresets = StylePresets_
 exports.SupportedProps = SupportedProps_
 exports.ThemeValues = ThemeValues_
 exports.VendorColors = VendorColors_
 
 module.exports = {
+  StylePresets: StylePresets_,
   SupportedProps: SupportedProps_,
   ThemeValues: ThemeValues_,
   VendorColors: VendorColors_,

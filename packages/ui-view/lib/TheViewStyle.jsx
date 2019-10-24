@@ -33,10 +33,9 @@ TheViewStyle.data = (options) => {
     lightTextColor = ThemeValues.lightTextColor,
     overlayBackgroundColor = ThemeValues.overlayBackgroundColor,
     overlayBorderColor = ThemeValues.overlayBorderColor,
-    tappableHeight = ThemeValues.tappableHeight,
   } = options
 
-  const headerHeight = tappableHeight
+  const headerHeight = 48
 
   return asStyleData({
     '.the-view': {
@@ -60,15 +59,18 @@ TheViewStyle.data = (options) => {
     },
     '.the-view-header': {
       '.the-button': {
+        '.the-button-icon': {
+          margin: 0,
+        },
         alignItems: 'center',
         cursor: 'pointer',
         display: 'inline-flex',
         height: `${headerHeight}px`,
         justifyContent: 'center',
         lineHeight: `${headerHeight}px`,
-        margin: '0 4px',
+        margin: '0',
         minWidth: '2em',
-        padding: '0 8px',
+        padding: '0 16px',
         whiteSpace: 'nowrap',
       },
       '.the-button-text': {

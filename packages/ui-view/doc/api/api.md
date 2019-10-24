@@ -24,7 +24,7 @@
 ## @the-/ui-view
 View of the-components
 
-**Version**: 15.4.16  
+**Version**: 15.4.19  
 <a name="TheView"></a>
 
 ## TheView()

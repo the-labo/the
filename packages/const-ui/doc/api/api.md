@@ -42,14 +42,21 @@
 ## @the-/const-ui
 Constants for the-components
 
-**Version**: 15.4.8  
+**Version**: 15.5.0  
 **License**: MIT  
 
 * [@the-/const-ui](#module_@the-/const-ui)
+    * [.StylePresets](#module_@the-/const-ui.StylePresets) : <code>object</code>
     * [.SupportedProps](#module_@the-/const-ui.SupportedProps) : <code>object</code>
     * [.ThemeValues](#module_@the-/const-ui.ThemeValues) : <code>object</code>
     * [.VendorColors](#module_@the-/const-ui.VendorColors) : <code>object</code>
 
+<a name="module_@the-/const-ui.StylePresets"></a>
+
+### constUi.StylePresets : <code>object</code>
+Style presets
+
+**Kind**: static namespace of [<code>@the-/const-ui</code>](#module_@the-/const-ui)  
 <a name="module_@the-/const-ui.SupportedProps"></a>
 
 ### constUi.SupportedProps : <code>object</code>

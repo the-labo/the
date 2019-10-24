@@ -12,7 +12,7 @@
     "name": "@the-/ui-hamburger",
     "order": 0,
     "typicalname": "uiHamburger",
-    "version": "15.4.13"
+    "version": "15.4.14"
   },
   {
     "description": "Hamburger menu for the-components",
@@ -21,7 +21,7 @@
     "longname": "TheHamburger",
     "meta": {
       "filename": "TheHamburger.jsx",
-      "lineno": 12,
+      "lineno": 22,
       "path": "lib"
     },
     "name": "TheHamburger",
@@ -52,7 +52,7 @@
     "memberof": "TheHamburger.propTypes",
     "meta": {
       "filename": "TheHamburger.jsx",
-      "lineno": 90,
+      "lineno": 127,
       "path": "lib"
     },
     "name": "hidden",
@@ -67,7 +67,7 @@
     "memberof": "TheHamburger.propTypes",
     "meta": {
       "filename": "TheHamburger.jsx",
-      "lineno": 92,
+      "lineno": 129,
       "path": "lib"
     },
     "name": "onToggle",
@@ -82,7 +82,7 @@
     "memberof": "TheHamburger.propTypes",
     "meta": {
       "filename": "TheHamburger.jsx",
-      "lineno": 94,
+      "lineno": 131,
       "path": "lib"
     },
     "name": "spinning",

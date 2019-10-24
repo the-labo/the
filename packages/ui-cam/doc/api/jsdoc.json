@@ -12,7 +12,7 @@
     "name": "@the-/ui-cam",
     "order": 0,
     "typicalname": "uiCam",
-    "version": "15.5.3"
+    "version": "15.5.4"
   },
   {
     "description": "Embed camera component",
@@ -36,7 +36,7 @@
     "longname": "TheCamInput",
     "meta": {
       "filename": "TheCamInput.jsx",
-      "lineno": 21,
+      "lineno": 22,
       "path": "lib"
     },
     "name": "TheCamInput",

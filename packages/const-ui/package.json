@@ -1,4 +1,7 @@
 {
+  "name": "@the-/const-ui",
+  "description": "Constants for the-components",
+  "version": "15.5.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -9,7 +12,6 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {},
-  "description": "Constants for the-components",
   "devDependencies": {
     "injectmock": "^2.0.0"
   },
@@ -24,7 +26,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/const-ui",
   "publishConfig": {
     "access": "public"
   },
@@ -35,6 +36,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.11"
+  }
 }
