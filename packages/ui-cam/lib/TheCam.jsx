@@ -22,6 +22,7 @@ const TheCam = (props) => {
     height,
     onMedia,
     onReady,
+    onReject,
     onStart,
     onStop,
     onStream,
@@ -42,7 +43,11 @@ const TheCam = (props) => {
       setBusy(false)
       setRejected(true)
       setRunning(false)
-      console.error('[TheCam] Failed to start media', e)
+      if (onReject) {
+        onReject(e)
+      } else {
+        console.error('[TheCam] Failed to start media', e)
+      }
       return
     }
     const { current: video } = videoRef
