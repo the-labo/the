@@ -8,20 +8,15 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheCam">TheCam</a></dt>
-<dd><p>Embed camera component</p>
-</dd>
-<dt><a href="#TheCamInput">TheCamInput</a></dt>
-<dd><p>Embed camera component</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheCam">TheCam()</a></dt>
+<dd><p>Embed camera component</p>
+</dd>
+<dt><a href="#TheCamInput">TheCamInput()</a></dt>
+<dd><p>Embed camera component</p>
+</dd>
 <dt><a href="#TheCamStyle">TheCamStyle()</a></dt>
 <dd><p>Style for TheCam</p>
 </dd>
@@ -32,19 +27,19 @@
 ## @the-/ui-cam
 Embed camera component
 
-**Version**: 15.5.2  
+**Version**: 15.5.3  
 <a name="TheCam"></a>
 
-## TheCam
+## TheCam()
 Embed camera component
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheCamInput"></a>
 
-## TheCamInput
+## TheCamInput()
 Embed camera component
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheCamStyle"></a>
 
 ## TheCamStyle()

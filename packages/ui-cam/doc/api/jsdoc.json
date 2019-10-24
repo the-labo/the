@@ -12,34 +12,36 @@
     "name": "@the-/ui-cam",
     "order": 0,
     "typicalname": "uiCam",
-    "version": "15.5.2"
+    "version": "15.5.3"
   },
   {
     "description": "Embed camera component",
     "id": "TheCam",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheCam",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 20,
+      "lineno": 14,
       "path": "lib"
     },
     "name": "TheCam",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
     "description": "Embed camera component",
     "id": "TheCamInput",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheCamInput",
     "meta": {
       "filename": "TheCamInput.jsx",
-      "lineno": 22,
+      "lineno": 21,
       "path": "lib"
     },
     "name": "TheCamInput",
     "order": 7,
+    "params": [],
     "scope": "global"
   },
   {
@@ -65,7 +67,7 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 178,
+      "lineno": 142,
       "path": "lib"
     },
     "name": "audio",
@@ -80,7 +82,7 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 180,
+      "lineno": 144,
       "path": "lib"
     },
     "name": "disabled",
@@ -95,7 +97,7 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 183,
+      "lineno": 147,
       "path": "lib"
     },
     "name": "onStream",
@@ -110,7 +112,7 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 185,
+      "lineno": 149,
       "path": "lib"
     },
     "name": "rejectedMessage",
@@ -125,7 +127,7 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 187,
+      "lineno": 151,
       "path": "lib"
     },
     "name": "video",

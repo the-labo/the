@@ -39,8 +39,8 @@
     "@the-/client": "^15.8.1",
     "arequest": "^3.0.2",
     "msgpack-lite": "^0.1.26",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
   },
   "engines": {
     "node": ">=10",

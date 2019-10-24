@@ -13,15 +13,6 @@
 ## Classes
 
 <dl>
-<dt><a href="#TheInput">TheInput</a></dt>
-<dd><p>Input of the-components</p>
-</dd>
-<dt><a href="#TheInputCheckbox">TheInputCheckbox</a></dt>
-<dd><p>Checkbox input of the-components</p>
-</dd>
-<dt><a href="#TheInputRadio">TheInputRadio</a></dt>
-<dd><p>Radio input of the-components</p>
-</dd>
 <dt><a href="#TheInputRange">TheInputRange</a></dt>
 <dd><p>Range Input</p>
 </dd>
@@ -39,6 +30,20 @@
 </dd>
 <dt><a href="#TheInputToggle">TheInputToggle</a></dt>
 <dd><p>Toggle input of the-components</p>
+</dd>
+</dl>
+
+## Constants
+
+<dl>
+<dt><a href="#TheInput">TheInput</a></dt>
+<dd><p>Input of the-components</p>
+</dd>
+<dt><a href="#TheInputCheckbox">TheInputCheckbox</a></dt>
+<dd><p>Checkbox input of the-components</p>
+</dd>
+<dt><a href="#TheInputRadio">TheInputRadio</a></dt>
+<dd><p>Radio input of the-components</p>
 </dd>
 </dl>
 
@@ -62,25 +67,7 @@
 ## @the-/ui-input
 Input of the-components
 
-**Version**: 15.5.5  
-<a name="TheInput"></a>
-
-## TheInput
-Input of the-components
-
-**Kind**: global class  
-<a name="TheInputCheckbox"></a>
-
-## TheInputCheckbox
-Checkbox input of the-components
-
-**Kind**: global class  
-<a name="TheInputRadio"></a>
-
-## TheInputRadio
-Radio input of the-components
-
-**Kind**: global class  
+**Version**: 15.5.6  
 <a name="TheInputRange"></a>
 
 ## TheInputRange
@@ -117,6 +104,24 @@ TextArea Input
 Toggle input of the-components
 
 **Kind**: global class  
+<a name="TheInput"></a>
+
+## TheInput
+Input of the-components
+
+**Kind**: global constant  
+<a name="TheInputCheckbox"></a>
+
+## TheInputCheckbox
+Checkbox input of the-components
+
+**Kind**: global constant  
+<a name="TheInputRadio"></a>
+
+## TheInputRadio
+Radio input of the-components
+
+**Kind**: global constant  
 <a name="TheInputStyle"></a>
 
 ## TheInputStyle()

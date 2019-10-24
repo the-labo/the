@@ -3,157 +3,71 @@
 import asleep from 'asleep'
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
-import { unlessProduction } from '@the-/check'
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { TheMedia } from '@the-/media'
 import { TheSpin } from '@the-/ui-spin'
-import {
-  changedProps,
-  eventHandlersFor,
-  htmlAttributesFor,
-} from '@the-/util-ui'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
 /**
  * Embed camera component
  */
-class TheCam extends React.Component {
-  constructor(props) {
-    super(props)
-    this.videoRef = props.videoRef || React.createRef()
+const TheCam = (props) => {
+  const videoRef = useRef(props.videoRef)
 
-    const { audio, video } = props
-    this.media = new TheMedia({ audio, video })
-    this.handleVideoLoad = this.handleVideoLoad.bind(this)
-    this.state = {
-      busy: false,
-      rejected: false,
-      running: true,
-    }
-  }
+  const {
+    audio,
+    children,
+    className,
+    disabled,
+    height,
+    onMedia,
+    onReady,
+    onStart,
+    onStop,
+    onStream,
+    onVideo,
+    rejectedMessage,
+    spinning,
+    video,
+    width,
+  } = props
+  const media = useMemo(() => new TheMedia({ audio, video }), [])
 
-  componentDidMount() {
-    void this.applyEnabled(!this.props.disabled)
-
-    const {
-      props: { onMedia, onVideo },
-    } = this
-    onVideo && onVideo(this.videoRef.current)
-    onMedia && onMedia(this.media)
-  }
-
-  componentDidUpdate(prevPros) {
-    const diff = changedProps(prevPros, this.props)
-    if ('disabled' in diff) {
-      void this.applyEnabled(!diff.disabled)
-    }
-
-    unlessProduction(() => {
-      if ('videoRef' in diff) {
-        throw new Error('[TheCam] Video ref can not be changed')
-      }
-    })
-  }
-
-  componentWillUnmount() {
-    if (this.state.running) {
-      void this.stop()
-    }
-  }
-
-  handleVideoLoad() {
-    const {
-      props: { onReady },
-    } = this
-    onReady && onReady()
-  }
-
-  render() {
-    const {
-      props,
-      props: { children, className, height, rejectedMessage, spinning, width },
-      state: { busy, rejected },
-    } = this
-
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-cam', className)}
-      >
-        <div className='the-cam-inner' style={{ height, width }}>
-          {(busy || spinning) && (
-            <TheSpin className='the-cam-spin' cover enabled size='x-large' />
-          )}
-          {rejected ? (
-            <div className='the-cam-rejected'>{rejectedMessage}</div>
-          ) : (
-            <>
-              <video
-                autoPlay
-                className='the-cam-video'
-                onLoadedData={this.handleVideoLoad}
-                playsInline
-                ref={this.videoRef}
-              />
-              {children}
-            </>
-          )}
-        </div>
-      </div>
-    )
-  }
-
-  async applyEnabled(enabled) {
-    if (enabled) {
-      await this.start()
-    } else {
-      await this.stop()
-    }
-  }
-
-  async start() {
-    const { media } = this
-    this.setState({ busy: true })
+  const start = useCallback(async () => {
+    setBusy(true)
     await asleep(0)
     try {
       await media.start()
     } catch (e) {
-      this.setState({ busy: false, rejected: true, running: false })
-      const {
-        props: { onReject },
-      } = this
-      onReject && onReject(e)
-      console.error('TheCam', e)
+      setBusy(false)
+      setRejected(true)
+      setRunning(false)
+      console.error('[TheCam] Failed to start media', e)
       return
     }
-    const {
-      videoRef: { current: video },
-    } = this
+    const { current: video } = videoRef
     if (video) {
       await media.bindVideo(video, {})
-      this.setState({ busy: false, rejected: false, running: true })
+      setBusy(false)
+      setRejected(false)
+      setRunning(true)
     }
 
     // Call backs
     {
       const { stream } = media
-      const {
-        props: { onStart, onStream },
-      } = this
       onStream && onStream(stream)
-      onStart && onStart({ cam: this, stream, video })
+      onStart && onStart({ media, stream, video })
     }
-  }
+  }, [media, onStart, onStream])
 
-  async stop() {
-    const {
-      media,
-      videoRef: { current: video },
-    } = this
-
+  const stop = useCallback(async () => {
+    const { current: video } = videoRef
     if (video) {
       video.srcObject = null
-      this.setState({ busy: false, rejected: false, running: false })
+      setBusy(false)
+      setRejected(false)
+      setRunning(false)
     }
 
     try {
@@ -161,16 +75,66 @@ class TheCam extends React.Component {
     } catch (e) {
       // Do nothing
     }
-
     // Callbacks
-    {
-      const { stream } = media
-      const {
-        props: { onStop },
-      } = this
-      onStop && onStop({ cam: this, stream, video })
+    onStop && onStop({ media, stream: media.stream, video })
+  }, [onStop, media.stream, videoRef.current])
+
+  useEffect(() => {
+    media.updateConstrains({ audio, video })
+  }, [audio, video])
+
+  const [busy, setBusy] = useState(false)
+  const [rejected, setRejected] = useState(false)
+  const [running, setRunning] = useState(true)
+
+  useEffect(() => {
+    if (disabled) {
+      void stop()
+    } else {
+      void start()
     }
-  }
+  }, [disabled])
+  useEffect(() => {
+    onVideo && onVideo(videoRef.current)
+  }, [videoRef.current])
+  useEffect(() => {
+    media && onMedia && onMedia(media)
+  }, [media])
+  useEffect(() => {
+    if (running) {
+      void stop()
+    }
+  }, [])
+  const handleVideoLoad = useCallback(() => {
+    onReady && onReady()
+  }, [onReady])
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-cam', className)}
+    >
+      <div className='the-cam-inner' style={{ height, width }}>
+        {(busy || spinning) && (
+          <TheSpin className='the-cam-spin' cover enabled size='x-large' />
+        )}
+        {rejected ? (
+          <div className='the-cam-rejected'>{rejectedMessage}</div>
+        ) : (
+          <>
+            <video
+              autoPlay
+              className='the-cam-video'
+              onLoadedData={handleVideoLoad}
+              playsInline
+              ref={videoRef}
+            />
+            {children}
+          </>
+        )}
+      </div>
+    </div>
+  )
 }
 
 TheCam.propTypes = {

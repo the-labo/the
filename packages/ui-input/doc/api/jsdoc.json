@@ -24,49 +24,7 @@
     "name": "@the-/ui-input",
     "order": 1,
     "typicalname": "uiInput",
-    "version": "15.5.5"
-  },
-  {
-    "description": "Input of the-components",
-    "id": "TheInput",
-    "kind": "class",
-    "longname": "TheInput",
-    "meta": {
-      "filename": "TheInput.jsx",
-      "lineno": 27,
-      "path": "lib"
-    },
-    "name": "TheInput",
-    "order": 2,
-    "scope": "global"
-  },
-  {
-    "description": "Checkbox input of the-components",
-    "id": "TheInputCheckbox",
-    "kind": "class",
-    "longname": "TheInputCheckbox",
-    "meta": {
-      "filename": "TheInputCheckbox.jsx",
-      "lineno": 18,
-      "path": "lib"
-    },
-    "name": "TheInputCheckbox",
-    "order": 7,
-    "scope": "global"
-  },
-  {
-    "description": "Radio input of the-components",
-    "id": "TheInputRadio",
-    "kind": "class",
-    "longname": "TheInputRadio",
-    "meta": {
-      "filename": "TheInputRadio.jsx",
-      "lineno": 59,
-      "path": "lib"
-    },
-    "name": "TheInputRadio",
-    "order": 14,
-    "scope": "global"
+    "version": "15.5.6"
   },
   {
     "description": "Range Input",
@@ -153,6 +111,51 @@
     "scope": "global"
   },
   {
+    "description": "Input of the-components",
+    "id": "TheInput",
+    "kind": "constant",
+    "longname": "TheInput",
+    "meta": {
+      "filename": "TheInput.jsx",
+      "lineno": 27,
+      "path": "lib"
+    },
+    "name": "TheInput",
+    "order": 2,
+    "params": [],
+    "scope": "global"
+  },
+  {
+    "description": "Checkbox input of the-components",
+    "id": "TheInputCheckbox",
+    "kind": "constant",
+    "longname": "TheInputCheckbox",
+    "meta": {
+      "filename": "TheInputCheckbox.jsx",
+      "lineno": 17,
+      "path": "lib"
+    },
+    "name": "TheInputCheckbox",
+    "order": 7,
+    "params": [],
+    "scope": "global"
+  },
+  {
+    "description": "Radio input of the-components",
+    "id": "TheInputRadio",
+    "kind": "constant",
+    "longname": "TheInputRadio",
+    "meta": {
+      "filename": "TheInputRadio.jsx",
+      "lineno": 14,
+      "path": "lib"
+    },
+    "name": "TheInputRadio",
+    "order": 14,
+    "params": [],
+    "scope": "global"
+  },
+  {
     "description": "Style for TheInput",
     "id": "TheInputStyle",
     "kind": "function",
@@ -201,7 +204,7 @@
     "memberof": "TheInput.propTypes",
     "meta": {
       "filename": "TheInput.jsx",
-      "lineno": 115,
+      "lineno": 112,
       "path": "lib"
     },
     "name": "error",
@@ -216,7 +219,7 @@
     "memberof": "TheInput.propTypes",
     "meta": {
       "filename": "TheInput.jsx",
-      "lineno": 117,
+      "lineno": 114,
       "path": "lib"
     },
     "name": "name",
@@ -231,7 +234,7 @@
     "memberof": "TheInput.propTypes",
     "meta": {
       "filename": "TheInput.jsx",
-      "lineno": 119,
+      "lineno": 116,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -246,7 +249,7 @@
     "memberof": "TheInput.propTypes",
     "meta": {
       "filename": "TheInput.jsx",
-      "lineno": 122,
+      "lineno": 119,
       "path": "lib"
     },
     "name": "value",
@@ -261,7 +264,7 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 186,
+      "lineno": 192,
       "path": "lib"
     },
     "name": "disabledValues",
@@ -276,7 +279,7 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 190,
+      "lineno": 196,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -291,7 +294,7 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 192,
+      "lineno": 198,
       "path": "lib"
     },
     "name": "options",
@@ -306,7 +309,7 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 198,
+      "lineno": 204,
       "path": "lib"
     },
     "name": "parser",
@@ -321,7 +324,7 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 200,
+      "lineno": 206,
       "path": "lib"
     },
     "name": "splitter",
@@ -336,7 +339,7 @@
     "memberof": "TheInputCheckbox.propTypes",
     "meta": {
       "filename": "TheInputCheckbox.jsx",
-      "lineno": 202,
+      "lineno": 208,
       "path": "lib"
     },
     "name": "value",
@@ -351,7 +354,7 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 159,
+      "lineno": 161,
       "path": "lib"
     },
     "name": "asButton",
@@ -366,7 +369,7 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 161,
+      "lineno": 163,
       "path": "lib"
     },
     "name": "asToggle",
@@ -381,7 +384,7 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 163,
+      "lineno": 165,
       "path": "lib"
     },
     "name": "disabledValues",
@@ -396,7 +399,7 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 165,
+      "lineno": 167,
       "path": "lib"
     },
     "name": "error",
@@ -411,7 +414,7 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 167,
+      "lineno": 169,
       "path": "lib"
     },
     "name": "name",
@@ -426,7 +429,7 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 169,
+      "lineno": 171,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -441,7 +444,7 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 171,
+      "lineno": 173,
       "path": "lib"
     },
     "name": "options",
@@ -456,7 +459,7 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 176,
+      "lineno": 178,
       "path": "lib"
     },
     "name": "parser",
@@ -471,7 +474,7 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 178,
+      "lineno": 180,
       "path": "lib"
     },
     "name": "sorter",
@@ -486,7 +489,7 @@
     "memberof": "TheInputRadio.propTypes",
     "meta": {
       "filename": "TheInputRadio.jsx",
-      "lineno": 180,
+      "lineno": 182,
       "path": "lib"
     },
     "name": "value",

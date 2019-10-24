@@ -2,7 +2,7 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useCallback, useMemo, useState } from 'react'
 import { TheIcon } from '@the-/ui-icon'
 import {
   eventHandlersFor,
@@ -18,163 +18,48 @@ const noop = () => null
 /**
  * Embed camera component
  */
-class TheCamInput extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      busy: false,
-      rejected: false,
-    }
-    this.id = newId()
-    this.handleShutter = this.handleShutter.bind(this)
-    this.handleMedia = this.handleMedia.bind(this)
-    this.handleReject = this.handleReject.bind(this)
-    this.handleClear = this.handleClear.bind(this)
-    this.handleUploadChange = this.handleUploadChange.bind(this)
-  }
+const TheCamInput = (props) => {
+  const [busy, setBusy] = useState(false)
+  const [media, setMedia] = useState(null)
+  const [rejected, setRejected] = useState(false)
+  const {
+    audio,
+    children,
+    className,
+    convertFile,
+    height,
+    name,
+    onUpdate,
+    readOnly,
+    style = {},
+    uploadText = 'Upload',
+    value,
+    video,
+    width,
+    onReject,
+  } = props
 
-  componentDidMount() {}
+  const id = useMemo(() => newId() || props.id, [props.id])
 
-  componentDidUpdate(prevPros) {}
-
-  componentWillUnmount() {}
-
-  handleReject(e) {
-    const {
-      props: { onReject },
-    } = this
-    this.setState({
-      rejected: true,
-    })
+  const handleReject = useCallback((e) => {
+    setRejected(true)
     onReject && onReject(e)
-  }
+  }, [])
 
-  render() {
-    const {
-      props,
-      props: {
-        audio,
-        children,
-        className,
-        height,
-        id = this.id,
-        name,
-        readOnly,
-        style = {},
-        uploadText = 'Upload',
-        value,
-        video,
-        width,
-      },
-      state: { busy, rejected },
-    } = this
-
-    const hasValue = !!value
-    return (
-      <div
-        {...htmlAttributesFor(props, {
-          except: ['className', 'width', 'height', 'readOnly', 'value'],
-        })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-cam-input', className, {
-          'the-cam-input-rejected': rejected,
-        })}
-        data-name={name}
-        id={id}
-        style={{ ...style, height, width }}
-      >
-        {!rejected && (
-          <TheCam
-            audio={audio}
-            disabled={hasValue}
-            height={height}
-            onMedia={this.handleMedia}
-            onReject={this.handleReject}
-            spinning={busy}
-            video={video}
-            width={width}
-          >
-            <input
-              name={name}
-              onChange={noop}
-              type='hidden'
-              value={value || ''}
-            />
-          </TheCam>
-        )}
-        {rejected && !hasValue && (
-          <div
-            className='the-cam-input-upload'
-            style={readOnly ? {} : { height, width }}
-          >
-            <input
-              accept='image/*'
-              capture
-              className='the-cam-input-upload-input'
-              id={`${id}-file`}
-              name={name}
-              onChange={this.handleUploadChange}
-              readOnly={readOnly}
-              tabIndex={-1}
-              type='file'
-              value={value || ''}
-            />
-            <label
-              className='the-cam-input-upload-label'
-              htmlFor={`${id}-file`}
-            >
-              <i
-                className={c(
-                  'the-cam-input-upload-icon',
-                  TheCamInput.UPLOAD_ICON,
-                )}
-              />
-              <span className='the-camp-input-upload-text'>{uploadText}</span>
-            </label>
-          </div>
-        )}
-        {hasValue && (
-          <div className='the-cam-input-preview'>
-            <img
-              alt='captured image'
-              className='the-cam-input-preview-img'
-              src={value}
-              style={{ height, width }}
-            />
-            <a className='the-cam-input-clear' onClick={this.handleClear}>
-              <TheIcon className={TheCamInput.CLEAR_ICON} />
-            </a>
-          </div>
-        )}
-        {!rejected && !hasValue && !busy && (
-          <div className='the-cam-input-action'>
-            <a className='the-cam-input-shutter' onClick={this.handleShutter} />
-          </div>
-        )}
-        {children}
-      </div>
-    )
-  }
-
-  async handleClear() {
-    const {
-      props: { name, onUpdate },
-    } = this
+  const handleClear = useCallback(async () => {
     onUpdate({ [name]: null })
-  }
+  }, [name, onUpdate])
 
-  async handleMedia(media) {
-    this.media = media
-  }
+  const handleMedia = useCallback(
+    async (media) => {
+      setMedia(media)
+    },
+    [setMedia],
+  )
 
-  async handleShutter() {
-    this.setState({ busy: true })
+  const handleShutter = useCallback(async () => {
+    setBusy(true)
     try {
-      const {
-        media,
-        props: { convertFile, name, onUpdate },
-      } = this
-
       const File = get('File', { strict: true })
       const blob = await media.takePhoto({})
       const filename = newId({ prefix: 'the-cam-input-value' })
@@ -185,27 +70,110 @@ class TheCamInput extends React.Component {
       )
       onUpdate({ [name]: file })
     } finally {
-      this.setState({ busy: false })
+      setBusy(false)
     }
-  }
+  }, [setBusy, onUpdate, media, convertFile, name])
 
-  async handleUploadChange(e) {
-    const {
-      props: { convertFile, name, onUpdate },
-    } = this
-    this.setState({ busy: true })
-    try {
-      const {
-        target: {
-          files: [file],
-        },
-      } = e
-      const converted = file ? await convertFile(file) : null
-      onUpdate({ [name]: converted })
-    } finally {
-      this.setState({ busy: false })
-    }
-  }
+  const handleUploadChange = useCallback(
+    async (e) => {
+      setBusy(true)
+      try {
+        const {
+          target: {
+            files: [file],
+          },
+        } = e
+        const converted = file ? await convertFile(file) : null
+        onUpdate({ [name]: converted })
+      } finally {
+        setBusy(false)
+      }
+    },
+    [onUpdate, setBusy, convertFile],
+  )
+
+  const hasValue = !!value
+  return (
+    <div
+      {...htmlAttributesFor(props, {
+        except: ['className', 'width', 'height', 'readOnly', 'value'],
+      })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-cam-input', className, {
+        'the-cam-input-rejected': rejected,
+      })}
+      data-name={name}
+      id={id}
+      style={{ ...style, height, width }}
+    >
+      {!rejected && (
+        <TheCam
+          audio={audio}
+          disabled={hasValue}
+          height={height}
+          onMedia={handleMedia}
+          onReject={handleReject}
+          spinning={busy}
+          video={video}
+          width={width}
+        >
+          <input
+            name={name}
+            onChange={noop}
+            type='hidden'
+            value={value || ''}
+          />
+        </TheCam>
+      )}
+      {rejected && !hasValue && (
+        <div
+          className='the-cam-input-upload'
+          style={readOnly ? {} : { height, width }}
+        >
+          <input
+            accept='image/*'
+            capture
+            className='the-cam-input-upload-input'
+            id={`${id}-file`}
+            name={name}
+            onChange={handleUploadChange}
+            readOnly={readOnly}
+            tabIndex={-1}
+            type='file'
+            value={value || ''}
+          />
+          <label className='the-cam-input-upload-label' htmlFor={`${id}-file`}>
+            <i
+              className={c(
+                'the-cam-input-upload-icon',
+                TheCamInput.UPLOAD_ICON,
+              )}
+            />
+            <span className='the-camp-input-upload-text'>{uploadText}</span>
+          </label>
+        </div>
+      )}
+      {hasValue && (
+        <div className='the-cam-input-preview'>
+          <img
+            alt='captured image'
+            className='the-cam-input-preview-img'
+            src={value}
+            style={{ height, width }}
+          />
+          <a className='the-cam-input-clear' onClick={handleClear}>
+            <TheIcon className={TheCamInput.CLEAR_ICON} />
+          </a>
+        </div>
+      )}
+      {!rejected && !hasValue && !busy && (
+        <div className='the-cam-input-action'>
+          <a className='the-cam-input-shutter' onClick={handleShutter} />
+        </div>
+      )}
+      {children}
+    </div>
+  )
 }
 
 TheCamInput.propTypes = {
