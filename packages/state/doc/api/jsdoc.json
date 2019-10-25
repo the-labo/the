@@ -13,7 +13,7 @@
     "name": "@the-/state",
     "order": 2,
     "typicalname": "state",
-    "version": "15.4.8"
+    "version": "15.4.13"
   },
   {
     "id": "module:@the-/state.TheState()",

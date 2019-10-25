@@ -1,4 +1,7 @@
 {
+  "name": "@the-/state",
+  "description": "State holder for the-components",
+  "version": "15.4.13",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -10,12 +13,11 @@
   },
   "dependencies": {
     "@the-/assert": "^15.2.0",
-    "@the-/window": "^15.6.1",
+    "@the-/window": "^15.8.2",
     "asobj": "^3.0.1",
     "invariant": "^2.2.4",
     "redux": "^4.0.4"
   },
-  "description": "State holder for the-components",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -28,7 +30,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/state",
   "publishConfig": {
     "access": "public"
   },
@@ -39,6 +40,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.11"
+  }
 }
