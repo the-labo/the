@@ -13,7 +13,7 @@ import DrawingMethods from '../constants/DrawingMethods'
 class DrawerLayer {
   constructor(canvas, options = {}) {
     const { method } = options
-    this.canvasAccess = new CanvasAccess(canvas)
+    this.canvasAccess = CanvasAccess(canvas)
     this.method = method
     this.points = []
   }

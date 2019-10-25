@@ -2,83 +2,74 @@
 
 import { get } from '@the-/window'
 
-class CanvasAccess {
-  constructor(canvas) {
-    this.canvas = canvas
-    this.scaleFactor = get('window.devicePixelRatio') || 2
-  }
+const CanvasAccess = (canvas) => {
+  const scaleFactor = get('window.devicePixelRatio') || 2
+  const ctx = canvas.getContext('2d')
+  const canvasAccess = {
+    get height() {
+      return canvas.height / scaleFactor
+    },
+    get width() {
+      return canvas.width / scaleFactor
+    },
+    ctx,
+    clear() {
+      const { height, width } = canvasAccess
+      if (!ctx) {
+        return
+      }
 
-  get ctx() {
-    const { canvas } = this
-    return canvas.getContext('2d')
-  }
+      ctx.clearRect(0, 0, width, height)
+    },
+    configure(config) {
+      const {
+        globalCompositeOperation,
+        lineCap,
+        lineColor,
+        lineJoin,
+        lineWidth,
+      } = config
 
-  get height() {
-    return this.canvas.height / this.scaleFactor
+      ctx.lineCap = lineCap
+      ctx.lineJoin = lineJoin
+      ctx.lineWidth = lineWidth
+      ctx.strokeStyle = lineColor
+      ctx.globalCompositeOperation = globalCompositeOperation
+    },
+    copyFrom(canvasAccess) {
+      const { height, width } = canvasAccess
+      const image = new Image()
+      image.src = canvasAccess.toSVG()
+      image.onload = () => {
+        ctx.drawImage(image, 0, 0, width, height)
+      }
+    },
+    drawImage(image, options = {}) {
+      const {
+        height = image.height || canvasAccess.height,
+        width = image.width || canvasAccess.width,
+      } = options
+      ctx.drawImage(
+        image,
+        (canvasAccess.width - width) / 2,
+        (canvasAccess.height - height) / 2,
+        width,
+        height,
+      )
+    },
+    getBoundingClientRect() {
+      return canvas.getBoundingClientRect()
+    },
+    setSize({ height, width }) {
+      canvas.width = width * scaleFactor
+      canvas.height = height * scaleFactor
+      ctx.scale(scaleFactor, scaleFactor)
+    },
+    toSVG() {
+      return canvas.toDataURL('image/svg+xml')
+    },
   }
-
-  get width() {
-    return this.canvas.width / this.scaleFactor
-  }
-
-  clear() {
-    const { ctx, height, width } = this
-    if (!ctx) {
-      return
-    }
-
-    ctx.clearRect(0, 0, width, height)
-  }
-
-  configure(config) {
-    const {
-      globalCompositeOperation,
-      lineCap,
-      lineColor,
-      lineJoin,
-      lineWidth,
-    } = config
-    const { ctx } = this
-    ctx.lineCap = lineCap
-    ctx.lineJoin = lineJoin
-    ctx.lineWidth = lineWidth
-    ctx.strokeStyle = lineColor
-    ctx.globalCompositeOperation = globalCompositeOperation
-  }
-
-  copyFrom(canvasAccess) {
-    const { height, width } = canvasAccess
-    const image = new Image()
-    image.src = canvasAccess.toSVG()
-    image.onload = () => {
-      this.ctx.drawImage(image, 0, 0, width, height)
-    }
-  }
-
-  drawImage(image, options = {}) {
-    const {
-      height = image.height || this.height,
-      width = image.width || this.width,
-    } = options
-    this.ctx.drawImage(
-      image,
-      (this.width - width) / 2,
-      (this.height - height) / 2,
-      width,
-      height,
-    )
-  }
-
-  setSize({ height, width }) {
-    const { canvas, ctx, scaleFactor } = this
-    canvas.width = width * scaleFactor
-    canvas.height = height * scaleFactor
-    ctx.scale(scaleFactor, scaleFactor)
-  }
-
-  toSVG() {
-    return this.canvas.toDataURL('image/svg+xml')
-  }
+  return canvasAccess
 }
 
 export default CanvasAccess

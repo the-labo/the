@@ -17,7 +17,7 @@ class Drawer {
       method = DrawingMethods.FREE,
     } = options
     this.id = id
-    this.canvasAccess = new CanvasAccess(canvas)
+    this.canvasAccess = CanvasAccess(canvas)
     this.tmpCanvas = tmpCanvas
     this.lineWidth = lineWidth
     this.lineCap = lineCap
@@ -190,7 +190,7 @@ class Drawer {
     this.resizing = true
 
     const { canvasAccess } = this
-    const { height, width } = canvasAccess.canvas.getBoundingClientRect()
+    const { height, width } = canvasAccess.getBoundingClientRect()
     const snapshot = this.snapshot()
     const changed =
       canvasAccess.width !== width || canvasAccess.height !== height
