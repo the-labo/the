@@ -14,6 +14,7 @@ class Drawer {
       lineColor = '#888',
       lineJoin = 'round',
       lineWidth = 4,
+      method = DrawingMethods.FREE,
     } = options
     this.id = id
     this.canvasAccess = new CanvasAccess(canvas)
@@ -26,7 +27,7 @@ class Drawer {
     this.tmpLayer = null
     this.commitLayer = new DrawerLayer(canvas)
     this.active = false
-    this.method = DrawingMethods.FREE
+    this.method = method
     this.globalCompositeOperation = globalCompositeOperation
     this.resize()
   }
@@ -110,16 +111,11 @@ class Drawer {
     commitLayer.restore(layerHistory)
   }
 
-  resize() {
-    const { canvasAccess } = this
-    const { height, width } = canvasAccess.canvas.getBoundingClientRect()
-    const snapshot = this.snapshot()
-    const changed =
-      canvasAccess.width !== width || canvasAccess.height !== height
-    if (changed) {
-      canvasAccess.setSize({ height, width })
-      void this.fromSnapshot(snapshot)
+  resizeRequest() {
+    if (this.resizing) {
+      return
     }
+    void this.resize()
   }
 
   snapshot() {
@@ -188,6 +184,21 @@ class Drawer {
 
     this.background = background
     this.drawBackground(background, options)
+  }
+
+  async resize() {
+    this.resizing = true
+
+    const { canvasAccess } = this
+    const { height, width } = canvasAccess.canvas.getBoundingClientRect()
+    const snapshot = this.snapshot()
+    const changed =
+      canvasAccess.width !== width || canvasAccess.height !== height
+    if (changed) {
+      canvasAccess.setSize({ height, width })
+      await this.fromSnapshot(snapshot)
+    }
+    this.resizing = false
   }
 }
 

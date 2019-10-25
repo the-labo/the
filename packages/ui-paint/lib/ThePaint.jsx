@@ -2,12 +2,8 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
-import {
-  changedProps,
-  eventHandlersFor,
-  htmlAttributesFor,
-} from '@the-/util-ui'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 import { get } from '@the-/window'
 import DrawingMethods from './constants/DrawingMethods'
 import Drawer from './helpers/Drawer'
@@ -16,184 +12,90 @@ import ThePaintStyle from './ThePaintStyle'
 /**
  * Hand write painting
  */
-class ThePaint extends React.Component {
-  constructor(props) {
-    super(props)
-    this.canvasRef = React.createRef()
-    this.tmpCanvasRef = React.createRef()
-    this.handleDrawStart = this.handleDrawStart.bind(this)
-    this.handleDraw = this.handleDraw.bind(this)
-    this.handleDrawEnd = this.handleDrawEnd.bind(this)
-    this.drawer = null
-    this.handleResize = this.handleResize.bind(this)
-  }
+const ThePaint = (props) => {
+  const canvasRef = useRef(null)
+  const tmpCanvasRef = useRef(null)
 
-  componentDidMount() {
-    const {
-      canvasRef: { current: canvas },
-      props: { background, lineColor, lineWidth, onDrawer },
-      tmpCanvasRef: { current: tmpCanvas },
-    } = this
+  const {
+    background,
+    children,
+    className,
+    erasing,
+    height,
+    lineColor,
+    lineWidth,
+    method,
+    onDraw,
+    onDrawEnd,
+    onDrawer,
+    onDrawStart,
+    style,
+    width,
+  } = props
 
-    const drawer = new Drawer(canvas, tmpCanvas, {
+  const [drawer, setDrawer] = useState(null)
+
+  useEffect(() => {
+    const newDrawer = new Drawer(canvasRef.current, tmpCanvasRef.current, {
       lineColor,
       lineWidth,
+      method,
     })
+    newDrawer.resize().then(() => {
+      onDrawer && onDrawer(newDrawer)
+      setDrawer(newDrawer)
+    })
+  }, [])
 
+  useEffect(() => {
     if (background) {
-      void drawer.registerBackground(background)
+      drawer && void drawer.registerBackground(background)
     }
+  }, [drawer, background])
 
-    this.drawer = drawer
-    onDrawer && onDrawer(drawer)
-    this.updateDrawer()
-
+  const handleResize = useCallback(() => {
+    drawer && drawer.resizeRequest()
+  }, [])
+  useEffect(() => {
     const window = get('window')
-    window.addEventListener('resize', this.handleResize)
-  }
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+  useEffect(() => handleResize(), [width, height])
 
-  componentDidUpdate(prevProps) {
-    this.updateDrawer()
-    const { drawer } = this
-    {
-      const diff = changedProps(prevProps, this.props)
-      if ('background' in diff) {
-        const {
-          props: { background },
-        } = this
-        void drawer.registerBackground(background)
+  const positionForEvent = useCallback(
+    (e) => {
+      const { current: canvas } = canvasRef
+      if (!canvas) {
+        return null
+      }
+      const { left, top } = canvas.getBoundingClientRect()
+      const touch = e.touches ? e.touches[0] : e
+      if (!touch) {
+        return null
       }
 
-      const shouldResize = 'width' in diff || 'height' in diff
-      if (shouldResize) {
-        drawer && drawer.resize()
+      const { clientX, clientY } = touch
+      return { x: clientX - left, y: clientY - top }
+    },
+    [canvasRef.current],
+  )
+
+  const handleDraw = useCallback(
+    (e) => {
+      const active = drawer && drawer.active
+      if (!active) {
+        return
       }
-    }
-  }
+      const pos = positionForEvent(e)
+      drawer.draw({ ...pos, ...(erasing ? { erasing: true } : {}) })
 
-  componentWillUnmount() {
-    const window = get('window')
-    window.removeEventListener('resize', this.handleResize)
-  }
+      onDraw && onDraw({ drawer, pos })
+    },
+    [drawer, onDraw, erasing],
+  )
 
-  handleDraw(e) {
-    const {
-      drawer,
-      props: { erasing, onDraw },
-    } = this
-    if (!drawer.active) {
-      return
-    }
-
-    const pos = this.positionForEvent(e)
-    drawer.draw({ ...pos, ...(erasing ? { erasing: true } : {}) })
-
-    onDraw && onDraw({ drawer, pos })
-  }
-
-  handleDrawEnd() {
-    const { drawer } = this
-    if (!drawer.active) {
-      return
-    }
-
-    drawer.end()
-    const snapshot = drawer.snapshot()
-    const {
-      props: { onDrawEnd },
-    } = this
-    onDrawEnd && onDrawEnd({ drawer, snapshot })
-  }
-
-  handleDrawStart(e) {
-    const { drawer } = this
-    if (drawer.active) {
-      return
-    }
-
-    const snapshot = drawer.snapshot()
-    const pos = this.positionForEvent(e)
-    drawer.start(pos)
-    const {
-      props: { onDrawStart },
-    } = this
-    onDrawStart && onDrawStart({ drawer, pos, snapshot })
-  }
-
-  handleResize() {
-    const { drawer } = this
-    drawer && drawer.resize()
-  }
-
-  positionForEvent(e) {
-    const {
-      canvasRef: { current: canvas },
-    } = this
-    if (!canvas) {
-      return null
-    }
-
-    const { left, top } = canvas.getBoundingClientRect()
-    const touch = e.touches ? e.touches[0] : e
-    if (!touch) {
-      return null
-    }
-
-    const { clientX, clientY } = touch
-    return { x: clientX - left, y: clientY - top }
-  }
-
-  render() {
-    const {
-      handleDraw,
-      handleDrawEnd,
-      handleDrawStart,
-      props,
-      props: { children, className, height, style, width },
-    } = this
-
-    return (
-      <div
-        {...htmlAttributesFor(props, {
-          except: ['className', 'width', 'height', 'style'],
-        })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-paint', className)}
-        style={{ ...(style || {}), height, width }}
-      >
-        {children}
-        <div
-          className='the-paint-canvas-container'
-          onMouseDown={handleDrawStart}
-          onMouseLeave={handleDrawEnd}
-          onMouseMove={handleDraw}
-          onMouseUp={handleDrawEnd}
-          onTouchCancel={handleDrawEnd}
-          onTouchEnd={handleDrawEnd}
-          onTouchMove={handleDraw}
-          onTouchStart={handleDrawStart}
-        >
-          <canvas
-            className='the-paint-canvas'
-            ref={this.canvasRef}
-            style={{ height, width }}
-          />
-          <canvas
-            className='the-paint-tmp-canvas'
-            ref={this.tmpCanvasRef}
-            style={{ height, width }}
-          />
-        </div>
-      </div>
-    )
-  }
-
-  updateDrawer() {
-    const {
-      drawer,
-      props: { lineColor, lineWidth, method },
-    } = this
-
+  useEffect(() => {
     if (!drawer) {
       return
     }
@@ -201,7 +103,68 @@ class ThePaint extends React.Component {
     drawer.lineColor = lineColor
     drawer.lineWidth = lineWidth
     drawer.method = method
-  }
+  }, [lineColor, lineWidth, method])
+
+  const handleDrawStart = useCallback(
+    (e) => {
+      const active = drawer && drawer.active
+      if (active) {
+        return
+      }
+      const snapshot = drawer.snapshot()
+      const pos = positionForEvent(e)
+      drawer.start(pos)
+      onDrawStart && onDrawStart({ drawer, pos, snapshot })
+    },
+    [drawer, onDrawStart],
+  )
+
+  const handleDrawEnd = useCallback(() => {
+    const active = drawer && drawer.active
+    if (!active) {
+      return
+    }
+
+    drawer.end()
+    const snapshot = drawer.snapshot()
+    onDrawEnd && onDrawEnd({ drawer, snapshot })
+  }, [drawer, onDrawEnd])
+
+  const canvasStyle = { height, width }
+  return (
+    <div
+      {...htmlAttributesFor(props, {
+        except: ['className', 'width', 'height', 'style'],
+      })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-paint', className)}
+      style={{ ...(style || {}), height, width }}
+    >
+      {children}
+      <div
+        className='the-paint-canvas-container'
+        onMouseDown={handleDrawStart}
+        onMouseLeave={handleDrawEnd}
+        onMouseMove={handleDraw}
+        onMouseUp={handleDrawEnd}
+        onTouchCancel={handleDrawEnd}
+        onTouchEnd={handleDrawEnd}
+        onTouchMove={handleDraw}
+        onTouchStart={handleDrawStart}
+      >
+        <canvas
+          className='the-paint-canvas'
+          ref={canvasRef}
+          style={canvasStyle}
+        />
+        <canvas
+          className='the-paint-tmp-canvas'
+          ref={tmpCanvasRef}
+          style={canvasStyle}
+        />
+      </div>
+    </div>
+  )
 }
 
 ThePaint.Style = ThePaintStyle
