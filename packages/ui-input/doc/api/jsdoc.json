@@ -24,7 +24,7 @@
     "name": "@the-/ui-input",
     "order": 1,
     "typicalname": "uiInput",
-    "version": "15.5.11"
+    "version": "15.5.12"
   },
   {
     "description": "Range Input",
@@ -38,20 +38,6 @@
     },
     "name": "TheInputRange",
     "order": 25,
-    "scope": "global"
-  },
-  {
-    "description": "Select Input",
-    "id": "TheInputSelect",
-    "kind": "class",
-    "longname": "TheInputSelect",
-    "meta": {
-      "filename": "TheInputSelect.jsx",
-      "lineno": 19,
-      "path": "lib"
-    },
-    "name": "TheInputSelect",
-    "order": 33,
     "scope": "global"
   },
   {
@@ -138,6 +124,21 @@
     },
     "name": "TheInputRadio",
     "order": 14,
+    "params": [],
+    "scope": "global"
+  },
+  {
+    "description": "Select Input",
+    "id": "TheInputSelect",
+    "kind": "constant",
+    "longname": "TheInputSelect",
+    "meta": {
+      "filename": "TheInputSelect.jsx",
+      "lineno": 18,
+      "path": "lib"
+    },
+    "name": "TheInputSelect",
+    "order": 33,
     "params": [],
     "scope": "global"
   },
@@ -610,7 +611,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 389,
+      "lineno": 390,
       "path": "lib"
     },
     "name": "disabledValues",
@@ -625,7 +626,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 391,
+      "lineno": 392,
       "path": "lib"
     },
     "name": "error",
@@ -640,7 +641,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 393,
+      "lineno": 394,
       "path": "lib"
     },
     "name": "name",
@@ -655,7 +656,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 395,
+      "lineno": 396,
       "path": "lib"
     },
     "name": "nullable",
@@ -670,7 +671,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 397,
+      "lineno": 398,
       "path": "lib"
     },
     "name": "nullText",
@@ -685,7 +686,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 399,
+      "lineno": 400,
       "path": "lib"
     },
     "name": "onEnter",
@@ -700,7 +701,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 401,
+      "lineno": 402,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -715,7 +716,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 403,
+      "lineno": 404,
       "path": "lib"
     },
     "name": "options",
@@ -730,7 +731,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 408,
+      "lineno": 409,
       "path": "lib"
     },
     "name": "parser",
@@ -745,7 +746,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 410,
+      "lineno": 411,
       "path": "lib"
     },
     "name": "sorter",
@@ -760,7 +761,7 @@
     "memberof": "TheInputSelect.propTypes",
     "meta": {
       "filename": "TheInputSelect.jsx",
-      "lineno": 413,
+      "lineno": 414,
       "path": "lib"
     },
     "name": "value",

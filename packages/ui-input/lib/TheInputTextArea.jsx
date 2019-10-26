@@ -2,235 +2,165 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 import { renderErrorMessage } from './helpers'
 
 /**
  * TextArea Input
  */
-class TheInputTextArea extends React.PureComponent {
-  constructor(props) {
-    super(props)
-    this.state = {}
-    this.handleKeyDown = this.handleKeyDown.bind(this)
-    this.handleChange = this.handleChange.bind(this)
-    this.textareaRef = React.createRef()
-    this.adjustRowTimer = -1
-    this.gone = false
-    this.state = {
-      actualRows: props.minRows,
-    }
-  }
+const TheInputTextArea = React.memo((props) => {
+  const {
+    autoExpand,
+    autoFocus,
+    children,
+    className,
+    error,
+    id,
+    maxRows,
+    minRows,
+    name,
+    onBlur,
+    onChange,
+    onCombineEnter,
+    onEnter,
+    onFocus,
+    onKeyDown,
+    onKeyPress,
+    onKeyUp,
+    onUpdate,
+    parser,
+    placeholder,
+    readOnly,
+    required,
+    role,
+    spellCheck,
+    tabIndex,
+    value,
+  } = props
+  const textareaRef = useRef(null)
+  const [actualRows, setActualRows] = useState(props.minRows)
 
-  adjustRows() {
-    const {
-      props: { maxRows, minRows },
-      textareaRef: { current: textarea },
-    } = this
-
+  const adjustRows = useCallback(() => {
+    const { current: textarea } = textareaRef
     if (!textarea) {
       return
     }
+    const newActualRows = applyRows(textarea, actualRows, { maxRows, minRows })
+    if (newActualRows !== actualRows) {
+      setActualRows(newActualRows)
+    }
+  }, [autoExpand, actualRows, setActualRows, minRows, maxRows])
 
-    const lineHeight = textarea.offsetHeight / this.state.actualRows
-    if (isNaN(lineHeight)) {
+  useEffect(() => {
+    if (!autoExpand) {
       return
     }
+    const timer = setTimeout(() => adjustRows(), 300)
+    adjustRows()
+    return () => clearTimeout(timer)
+  }, [autoExpand, value])
 
-    // 入力行数が少なくなったらそれに合わせてテキストエリアの行数も減らす
-    // テキストエリアが offsetHeight < scrollHeight になるまで高さを小さくして、scrollHeight の最小値を求める
-    const {
-      style: { height: originalHeight },
-    } = textarea
-    let { offsetHeight: height } = textarea
-    let retry = 100
-    while (retry-- > 0) {
-      if (this.gone) {
-        break
+  const handleChange = useCallback(
+    (e) => {
+      const {
+        target: { name, value },
+      } = e
+      onChange && onChange(e)
+      onUpdate && onUpdate({ [name]: parser(value) })
+      if (autoExpand) {
+        adjustRows()
       }
+    },
+    [autoExpand, adjustRows, onChange, onUpdate],
+  )
 
-      const smallEnough =
-        textarea.offsetHeight < textarea.scrollHeight ||
-        textarea.offsetHeight < lineHeight * minRows
-      if (smallEnough) {
-        break
-      }
+  const handleKeyDown = useCallback(
+    (e) => {
+      switch (e.keyCode) {
+        case 13: {
+          // Enter
+          const isCombine = e.metaKey || e.shiftKey || e.altKey || e.ctrlKey
+          if (isCombine) {
+            onCombineEnter && onCombineEnter()
+          } else {
+            onEnter && onEnter()
+          }
 
-      height -= 3
-      if (height < 0) {
-        break
-      }
-
-      textarea.style.height = `${height}px`
-    }
-    const { scrollHeight: minScrollHeight } = textarea
-    textarea.style.height = originalHeight
-
-    let rows = Math.round(minScrollHeight / lineHeight)
-    if (minRows) {
-      rows = Math.max(minRows, rows)
-    }
-
-    if (maxRows) {
-      rows = Math.min(maxRows, rows)
-    }
-
-    if (rows !== this.state.actualRows) {
-      this.setState({ actualRows: rows })
-    }
-  }
-
-  componentDidMount() {
-    this.adjustRows()
-  }
-
-  componentDidUpdate() {
-    const {
-      props: { autoExpand },
-    } = this
-    if (autoExpand) {
-      clearInterval(this.adjustRowTimer)
-      this.adjustRowTimer = setTimeout(() => this.adjustRows(), 300)
-    }
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.adjustRowTimer)
-    this.gone = true
-  }
-
-  handleChange(e) {
-    const {
-      props: { onChange, onUpdate, parser },
-    } = this
-    const {
-      target: { name, value },
-    } = e
-    onChange && onChange(e)
-    onUpdate && onUpdate({ [name]: parser(value) })
-
-    const {
-      props: { autoExpand },
-    } = this
-    if (autoExpand) {
-      this.adjustRows()
-    }
-  }
-
-  handleKeyDown(e) {
-    const {
-      props: { onCombineEnter, onEnter, onKeyDown },
-    } = this
-    switch (e.keyCode) {
-      case 13: {
-        // Enter
-        const isCombine = e.metaKey || e.shiftKey || e.altKey || e.ctrlKey
-        if (isCombine) {
-          onCombineEnter && onCombineEnter()
-        } else {
-          onEnter && onEnter()
+          break
         }
-
-        break
+        default:
+          break
       }
-      default:
-        break
-    }
+      onKeyDown && onKeyDown(e)
+    },
+    [onKeyDown, onCombineEnter, onEnter],
+  )
 
-    onKeyDown && onKeyDown(e)
-  }
+  const rows = autoExpand ? actualRows : props.rows
+  return (
+    <div
+      {...htmlAttributesFor(props, {
+        except: [
+          'id',
+          'className',
+          'readOnly',
+          'rows',
+          'value',
+          'name',
+          'required',
+          'placeholder',
+          'role',
+          'tabIndex',
+        ],
+      })}
+      {...eventHandlersFor(props, {
+        except: [
+          'onChange',
+          'onFocus',
+          'onBlur',
+          'onKeyUp',
+          'onKeyDown',
+          'onKeyPress',
+        ],
+      })}
+      className={c('the-input-textarea', className, {
+        'the-input-error': !!error,
+      })}
+      data-value={value}
+    >
+      {renderErrorMessage(error)}
 
-  render() {
-    const {
-      props,
-      props: {
-        autoExpand,
-        autoFocus,
-        children,
-        className,
-        error,
-        id,
-        name,
-        onBlur,
-        onFocus,
-        onKeyPress,
-        onKeyUp,
-        placeholder,
-        readOnly,
-        required,
-        role,
-        spellCheck,
-        tabIndex,
-        value,
-      },
-    } = this
-
-    const rows = autoExpand ? this.state.actualRows : this.props.rows
-    return (
-      <div
-        {...htmlAttributesFor(props, {
-          except: [
-            'id',
-            'className',
-            'readOnly',
-            'rows',
-            'value',
-            'name',
-            'required',
-            'placeholder',
-            'role',
-            'tabIndex',
-          ],
-        })}
-        {...eventHandlersFor(props, {
-          except: [
-            'onChange',
-            'onFocus',
-            'onBlur',
-            'onKeyUp',
-            'onKeyDown',
-            'onKeyPress',
-          ],
-        })}
-        className={c('the-input-textarea', className, {
-          'the-input-error': !!error,
-        })}
-        data-value={value}
-      >
-        {renderErrorMessage(error)}
-
-        {readOnly ? (
-          <pre className='the-input-textarea-readonly'>{value || ''}</pre>
-        ) : (
-          <textarea
-            aria-multiline='true'
-            autoFocus={autoFocus}
-            className='the-input-textarea-input'
-            id={id}
-            name={name}
-            onBlur={onBlur}
-            onChange={this.handleChange}
-            onFocus={onFocus}
-            onKeyDown={this.handleKeyDown}
-            onKeyPress={onKeyPress}
-            onKeyUp={onKeyUp}
-            placeholder={placeholder}
-            readOnly={readOnly}
-            ref={this.textareaRef}
-            required={required}
-            role={role}
-            rows={rows}
-            spellCheck={spellCheck}
-            tabIndex={tabIndex}
-            value={value || ''}
-          />
-        )}
-        {children}
-      </div>
-    )
-  }
-}
+      {readOnly ? (
+        <pre className='the-input-textarea-readonly'>{value || ''}</pre>
+      ) : (
+        <textarea
+          aria-multiline='true'
+          autoFocus={autoFocus}
+          className='the-input-textarea-input'
+          id={id}
+          name={name}
+          onBlur={onBlur}
+          onChange={handleChange}
+          onFocus={onFocus}
+          onKeyDown={handleKeyDown}
+          onKeyPress={onKeyPress}
+          onKeyUp={onKeyUp}
+          placeholder={placeholder}
+          readOnly={readOnly}
+          ref={textareaRef}
+          required={required}
+          role={role}
+          rows={rows}
+          spellCheck={spellCheck}
+          tabIndex={tabIndex}
+          value={value || ''}
+        />
+      )}
+      {children}
+    </div>
+  )
+})
 
 TheInputTextArea.propTypes = {
   /** Auto expanding text area height */
@@ -265,5 +195,46 @@ TheInputTextArea.defaultProps = {
 }
 
 TheInputTextArea.displayName = 'TheInputTextArea'
+
+const applyRows = (textarea, currentRows, { maxRows, minRows }) => {
+  const lineHeight = textarea.offsetHeight / currentRows
+  if (isNaN(lineHeight)) {
+    return
+  }
+  // 入力行数が少なくなったらそれに合わせてテキストエリアの行数も減らす
+  // テキストエリアが offsetHeight < scrollHeight になるまで高さを小さくして、scrollHeight の最小値を求める
+  const {
+    style: { height: originalHeight },
+  } = textarea
+  let { offsetHeight: height } = textarea
+  let retry = 100
+  while (retry-- > 0) {
+    const smallEnough =
+      textarea.offsetHeight < textarea.scrollHeight ||
+      textarea.offsetHeight < lineHeight * minRows
+    if (smallEnough) {
+      break
+    }
+
+    height -= 3
+    if (height < 0) {
+      break
+    }
+
+    textarea.style.height = `${height}px`
+  }
+  const { scrollHeight: minScrollHeight } = textarea
+  textarea.style.height = originalHeight
+
+  let newRows = Math.round(minScrollHeight / lineHeight)
+  if (minRows) {
+    newRows = Math.max(minRows, newRows)
+  }
+
+  if (maxRows) {
+    newRows = Math.min(maxRows, newRows)
+  }
+  return newRows
+}
 
 export default TheInputTextArea

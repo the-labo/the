@@ -16,9 +16,6 @@
 <dt><a href="#TheInputRange">TheInputRange</a></dt>
 <dd><p>Range Input</p>
 </dd>
-<dt><a href="#TheInputSelect">TheInputSelect</a></dt>
-<dd><p>Select Input</p>
-</dd>
 <dt><a href="#TheInputSlider">TheInputSlider</a></dt>
 <dd><p>Slider Input</p>
 </dd>
@@ -41,6 +38,9 @@
 </dd>
 <dt><a href="#TheInputRadio">TheInputRadio</a></dt>
 <dd><p>Radio input of the-components</p>
+</dd>
+<dt><a href="#TheInputSelect">TheInputSelect</a></dt>
+<dd><p>Select Input</p>
 </dd>
 <dt><a href="#TheInputToggle">TheInputToggle</a></dt>
 <dd><p>Toggle input of the-components</p>
@@ -67,17 +67,11 @@
 ## @the-/ui-input
 Input of the-components
 
-**Version**: 15.5.11  
+**Version**: 15.5.12  
 <a name="TheInputRange"></a>
 
 ## TheInputRange
 Range Input
-
-**Kind**: global class  
-<a name="TheInputSelect"></a>
-
-## TheInputSelect
-Select Input
 
 **Kind**: global class  
 <a name="TheInputSlider"></a>
@@ -114,6 +108,12 @@ Checkbox input of the-components
 
 ## TheInputRadio
 Radio input of the-components
+
+**Kind**: global constant  
+<a name="TheInputSelect"></a>
+
+## TheInputSelect
+Select Input
 
 **Kind**: global constant  
 <a name="TheInputToggle"></a>
