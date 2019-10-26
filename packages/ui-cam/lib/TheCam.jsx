@@ -48,6 +48,7 @@ const TheCam = (props) => {
       } else {
         console.error('[TheCam] Failed to start media', e)
       }
+
       return
     }
     const { current: video } = videoRef

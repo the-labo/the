@@ -115,6 +115,7 @@ class Drawer {
     if (this.resizing) {
       return
     }
+
     void this.resize()
   }
 
@@ -198,6 +199,7 @@ class Drawer {
       canvasAccess.setSize({ height, width })
       await this.fromSnapshot(snapshot)
     }
+
     this.resizing = false
   }
 }

@@ -31,7 +31,7 @@ const TheInputCheckbox = React.memo((props) => {
   const id = useMemo(() => props.id || newId(), [props.id])
 
   const handleToggle = useCallback(
-    (changedValue, checked) => {
+    (changedValue, checked, e) => {
       let valueArray = normalizeArrayValue(props.value, splitter).map((value) =>
         String(value).trim(),
       )
@@ -130,7 +130,7 @@ TheInputCheckbox.Option = function TheInputCheckboxOption({
         target: { checked },
       } = e
       const changedValue = String(e.target.value).trim()
-      onToggle(changedValue, checked)
+      onToggle(changedValue, checked,e)
     },
     [onToggle],
   )
@@ -139,7 +139,7 @@ TheInputCheckbox.Option = function TheInputCheckboxOption({
       const isSpace = e.keyCode === 32
       if (isSpace) {
         const changedValue = String(value).trim()
-        onToggle(changedValue, !checked)
+        onToggle(changedValue, !checked,e)
         e.stopPropagation()
         e.preventDefault()
       }

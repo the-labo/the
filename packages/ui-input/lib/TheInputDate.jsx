@@ -66,6 +66,7 @@ const TheInputDate = React.memo((props) => {
     if (!picker) {
       return
     }
+
     picker.set(cleanup({ maxDate, minDate }))
     picker.redraw()
   }, [picker, maxDate, minDate])
@@ -73,6 +74,7 @@ const TheInputDate = React.memo((props) => {
     if (!picker) {
       return
     }
+
     picker.jumpToDate(value)
     picker.redraw()
   }, [value])

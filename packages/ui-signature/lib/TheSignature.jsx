@@ -44,6 +44,7 @@ const TheSignature = (props) => {
       if (!pad) {
         return null
       }
+
       pad.fromDataURL(value)
     },
     [pad],
@@ -55,6 +56,7 @@ const TheSignature = (props) => {
     if (skip) {
       return
     }
+
     const newValue = pad.toDataURL()
     const devicePixelRatio = get('window.devicePixelRatio') || 1
     const ratio = Math.max(devicePixelRatio, 1)
@@ -71,6 +73,7 @@ const TheSignature = (props) => {
     if (!pad) {
       return
     }
+
     pad.penColor = color
   }, [pad, color])
 

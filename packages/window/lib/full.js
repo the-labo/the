@@ -15,6 +15,7 @@ function full(options = {}) {
   if (!elm.requestFullscreen) {
     return
   }
+
   elm.requestFullscreen()
   return () => {
     const active = get('document.fullscreenElement') === elm
@@ -29,6 +30,7 @@ full.exit = function exitFull() {
   if (!exitFullscreen) {
     return
   }
+
   exitFullscreen()
 }
 

@@ -5,19 +5,15 @@
 'use strict'
 
 const StylePresets = require('../lib/StylePresets')
-
-const { ok, equal, deepEqual } = require('assert').strict
+const { ok } = require('assert').strict
 
 describe('style-presets', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     ok(StylePresets)
-    
   })
 })
 

@@ -63,6 +63,7 @@ const TheCamInput = (props) => {
     if (dragging) {
       return
     }
+
     setBusy(true)
     try {
       const File = get('File', { strict: true })

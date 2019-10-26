@@ -69,6 +69,7 @@ const ThePaint = (props) => {
       if (!canvas) {
         return null
       }
+
       const { left, top } = canvas.getBoundingClientRect()
       const touch = e.touches ? e.touches[0] : e
       if (!touch) {
@@ -87,6 +88,7 @@ const ThePaint = (props) => {
       if (!active) {
         return
       }
+
       const pos = positionForEvent(e)
       drawer.draw({ ...pos, ...(erasing ? { erasing: true } : {}) })
 
@@ -111,6 +113,7 @@ const ThePaint = (props) => {
       if (active) {
         return
       }
+
       const snapshot = drawer.snapshot()
       const pos = positionForEvent(e)
       drawer.start(pos)
