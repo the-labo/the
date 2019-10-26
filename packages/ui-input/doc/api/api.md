@@ -67,7 +67,7 @@
 ## @the-/ui-input
 Input of the-components
 
-**Version**: 15.5.6  
+**Version**: 15.5.7  
 <a name="TheInputRange"></a>
 
 ## TheInputRange

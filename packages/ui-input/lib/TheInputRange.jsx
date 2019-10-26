@@ -4,7 +4,7 @@ import chopcal from 'chopcal'
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import rangecal from 'rangecal'
-import React from 'react'
+import React, { useCallback } from 'react'
 import Draggable from 'react-draggable'
 import { TheCondition } from '@the-/ui-condition'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
@@ -15,39 +15,6 @@ import { renderErrorMessage } from './helpers'
  * Range Input
  */
 class TheInputRange extends React.PureComponent {
-  static Handle(props) {
-    const { elmRef, maxX, minX, onMove, shouldMove = true, step, x } = props
-    return (
-      <Draggable
-        axis='x'
-        bounds={{ left: minX, right: maxX }}
-        grid={step && [step, step]}
-        onDrag={(e, { x, y }) => shouldMove && onMove({ x, y })}
-        onStart={(e, { x, y }) => shouldMove && onMove({ x, y })}
-        onStop={(e, { x, y }) => shouldMove && onMove({ x, y })}
-        position={{ x, y: 0 }}
-      >
-        <div
-          className='the-input-range-handle'
-          data-max-x={maxX}
-          data-min-x={minX}
-          ref={elmRef}
-        >
-          <div className='the-input-range-handle-area' />
-          <div className='the-input-range-handle-icon' />
-        </div>
-      </Draggable>
-    )
-  }
-
-  static Label({ children, className, ref }) {
-    return (
-      <label className={c('the-input-range-label', className)} ref={ref}>
-        <span>{children}</span>
-      </label>
-    )
-  }
-
   constructor(props) {
     super(props)
     this.state = {
@@ -347,6 +314,55 @@ class TheInputRange extends React.PureComponent {
     const value = chopcal.round(rangecal.value(min, max, rate), 0.01)
     return rangecal.round(min, max, value)
   }
+}
+
+TheInputRange.Handle = function TheInputRangeHandle(props) {
+  const { elmRef, maxX, minX, onMove, shouldMove = true, step, x } = props
+  const handleDrag = useCallback(
+    (e, { x, y }) => shouldMove && onMove({ x, y }),
+    [shouldMove, onMove],
+  )
+  const handleStart = useCallback(
+    (e, { x, y }) => shouldMove && onMove({ x, y }),
+    [shouldMove, onMove],
+  )
+  const handleStop = useCallback(
+    (e, { x, y }) => shouldMove && onMove({ x, y }),
+    [shouldMove, onMove],
+  )
+  return (
+    <Draggable
+      axis='x'
+      bounds={{ left: minX, right: maxX }}
+      grid={step && [step, step]}
+      onDrag={handleDrag}
+      onStart={handleStart}
+      onStop={handleStop}
+      position={{ x, y: 0 }}
+    >
+      <div
+        className='the-input-range-handle'
+        data-max-x={maxX}
+        data-min-x={minX}
+        ref={elmRef}
+      >
+        <div className='the-input-range-handle-area' />
+        <div className='the-input-range-handle-icon' />
+      </div>
+    </Draggable>
+  )
+}
+
+TheInputRange.Label = function TheInputRangeLabel({
+  children,
+  className,
+  ref,
+}) {
+  return (
+    <label className={c('the-input-range-label', className)} ref={ref}>
+      <span>{children}</span>
+    </label>
+  )
 }
 
 TheInputRange.propTypes = {

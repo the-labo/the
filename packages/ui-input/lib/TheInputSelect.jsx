@@ -2,7 +2,7 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useCallback, useMemo } from 'react'
 import { TheCondition } from '@the-/ui-condition'
 import { TheIcon } from '@the-/ui-icon'
 import { TheSpin } from '@the-/ui-spin'
@@ -428,128 +428,104 @@ TheInputSelect.defaultProps = {
 
 TheInputSelect.displayName = 'TheInputSelect'
 
-TheInputSelect.WithOptionsArray = class WithOptionsArray extends React.Component {
-  constructor(props) {
-    super(props)
-    this.compareOptions = this.compareOptions.bind(this)
+TheInputSelect.WithOptionsArray = function WithOptionsArray(props) {
+  const { optionsArray, ...otherProps } = props
+  const compareOptions = useCallback(
+    (a, b) => {
+      const valueArray = optionsArray.map(([v]) => v)
+      return valueArray.indexOf(a) - valueArray.indexOf(b)
+    },
+    [optionsArray],
+  )
+
+  const options = useMemo(
+    () =>
+      Object.assign(
+        {},
+        ...optionsArray.map(([v, node]) => ({
+          [v]: node,
+        })),
+      ),
+    [optionsArray],
+  )
+  return (
+    <TheInputSelect {...otherProps} options={options} sorter={compareOptions} />
+  )
+}
+
+const TheInputSelectOptionList = React.memo((props) => {
+  const {
+    disabledValues,
+    full = false,
+    nullable = false,
+    nullText,
+    onClose,
+    onNull,
+    onSelect,
+    options,
+    optionsRef,
+    parser,
+    sorter,
+    suggestingIndex,
+  } = props
+  const optionValues = Object.keys(options)
+  if (optionValues.length === 0) {
+    return null
   }
 
-  compareOptions(a, b) {
-    const {
-      props: { optionsArray },
-    } = this
-    const valueArray = optionsArray.map(([v]) => v)
-    return valueArray.indexOf(a) - valueArray.indexOf(b)
-  }
-
-  render() {
-    const {
-      props: { optionsArray, ...props },
-    } = this
-    return (
-      <TheInputSelect
-        {...props}
-        options={Object.assign(
-          {},
-          ...optionsArray.map(([v, node]) => ({
-            [v]: node,
-          })),
+  return (
+    <div
+      className={c('the-input-select-options', {
+        'the-input-select-options-full': full,
+      })}
+    >
+      <div className='the-input-select-options-back' onClick={onClose} />
+      <ul
+        className='the-input-select-options-list'
+        ref={optionsRef}
+        role='listbox'
+      >
+        {nullable && (
+          <li className={c('the-input-select-option')} onClick={onNull}>
+            {nullText || ''}
+          </li>
         )}
-        sorter={this.compareOptions}
-      />
-    )
-  }
-}
+        {optionValues.sort(sorter).map((optionValue, i) => (
+          <TheInputSelectOptionListItem
+            disabled={disabledValues.includes(optionValue)}
+            key={optionValue}
+            onSelect={onSelect}
+            role='option'
+            selected={i === suggestingIndex}
+            value={parser(optionValue)}
+          >
+            {options[optionValue]}
+          </TheInputSelectOptionListItem>
+        ))}
+      </ul>
+    </div>
+  )
+})
 
-class TheInputSelectOptionList extends React.PureComponent {
-  render() {
-    const {
-      props: {
-        disabledValues,
-        full = false,
-        nullable = false,
-        nullText,
-        onClose,
-        onNull,
-        onSelect,
-        options,
-        optionsRef,
-        parser,
-        sorter,
-        suggestingIndex,
-      },
-    } = this
-    const optionValues = Object.keys(options)
-    if (optionValues.length === 0) {
-      return null
-    }
-
-    return (
-      <div
-        className={c('the-input-select-options', {
-          'the-input-select-options-full': full,
-        })}
-      >
-        <div className='the-input-select-options-back' onClick={onClose} />
-        <ul
-          className='the-input-select-options-list'
-          ref={optionsRef}
-          role='listbox'
-        >
-          {nullable && (
-            <li className={c('the-input-select-option')} onClick={onNull}>
-              {nullText || ''}
-            </li>
-          )}
-          {optionValues.sort(sorter).map((optionValue, i) => (
-            <TheInputSelectOptionListItem
-              disabled={disabledValues.includes(optionValue)}
-              key={optionValue}
-              onSelect={onSelect}
-              role='option'
-              selected={i === suggestingIndex}
-              value={parser(optionValue)}
-            >
-              {options[optionValue]}
-            </TheInputSelectOptionListItem>
-          ))}
-        </ul>
-      </div>
-    )
-  }
-}
-
-class TheInputSelectOptionListItem extends React.PureComponent {
-  constructor(props) {
-    super(props)
-    this.handleClick = this.handleClick.bind(this)
-  }
-
-  handleClick() {
-    const {
-      props: { onSelect, value },
-    } = this
+const TheInputSelectOptionListItem = React.memo((props) => {
+  const { children, disabled, onSelect, selected, value } = props
+  const handleClick = useCallback(() => {
     onSelect && onSelect({ value })
-  }
+  }, [onSelect, value])
 
-  render() {
-    const {
-      props: { children, disabled, selected, value },
-    } = this
-    return (
-      <li
-        className={c('the-input-select-option', {
-          'the-input-select-option-disabled': disabled,
-          'the-input-select-option-selected': selected,
-        })}
-        data-value={value}
-        onClick={this.handleClick}
-        role='option'
-      >
-        {children}
-      </li>
-    )
-  }
-}
+  return (
+    <li
+      className={c('the-input-select-option', {
+        'the-input-select-option-disabled': disabled,
+        'the-input-select-option-selected': selected,
+      })}
+      data-value={value}
+      onClick={handleClick}
+      role='option'
+    >
+      {children}
+    </li>
+  )
+})
 
 export default TheInputSelect

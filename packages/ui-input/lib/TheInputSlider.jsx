@@ -4,7 +4,7 @@ import chopcal from 'chopcal'
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import rangecal from 'rangecal'
-import React from 'react'
+import React, { useCallback } from 'react'
 import Draggable from 'react-draggable'
 import { TheCondition } from '@the-/ui-condition'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
@@ -15,39 +15,6 @@ import { renderErrorMessage } from './helpers'
  * Slider Input
  */
 class TheInputSlider extends React.PureComponent {
-  static Handle(props) {
-    const { elmRef, maxX, minX, onMove, shouldMove = true, step, x } = props
-    return (
-      <Draggable
-        axis='x'
-        bounds={{ left: minX, right: maxX }}
-        grid={step && [step, step]}
-        onDrag={(e, { x, y }) => shouldMove && onMove({ x, y })}
-        onStart={(e, { x, y }) => shouldMove && onMove({ x, y })}
-        onStop={(e, { x, y }) => shouldMove && onMove({ x, y })}
-        position={{ x, y: 0 }}
-      >
-        <div
-          className='the-input-slider-handle'
-          data-max-x={maxX}
-          data-min-x={minX}
-          ref={elmRef}
-        >
-          <div className='the-input-slider-handle-area' />
-          <div className='the-input-slider-handle-icon' />
-        </div>
-      </Draggable>
-    )
-  }
-
-  static Label({ children, className, ref }) {
-    return (
-      <label className={c('the-input-slider-label', className)} ref={ref}>
-        <span>{children}</span>
-      </label>
-    )
-  }
-
   constructor(props) {
     super(props)
     this.state = {
@@ -247,6 +214,55 @@ class TheInputSlider extends React.PureComponent {
     const value = chopcal.round(rangecal.value(min, max, rate), 0.01)
     return rangecal.round(min, max, value)
   }
+}
+
+TheInputSlider.Handle = function TheInputSliderHandle(props) {
+  const { elmRef, maxX, minX, onMove, shouldMove = true, step, x } = props
+  const handleDrag = useCallback(
+    (e, { x, y }) => shouldMove && onMove({ x, y }),
+    [shouldMove, onMove],
+  )
+  const handleStart = useCallback(
+    (e, { x, y }) => shouldMove && onMove({ x, y }),
+    [shouldMove, onMove],
+  )
+  const handleStop = useCallback(
+    (e, { x, y }) => shouldMove && onMove({ x, y }),
+    [shouldMove, onMove],
+  )
+  return (
+    <Draggable
+      axis='x'
+      bounds={{ left: minX, right: maxX }}
+      grid={step && [step, step]}
+      onDrag={handleDrag}
+      onStart={handleStart}
+      onStop={handleStop}
+      position={{ x, y: 0 }}
+    >
+      <div
+        className='the-input-slider-handle'
+        data-max-x={maxX}
+        data-min-x={minX}
+        ref={elmRef}
+      >
+        <div className='the-input-slider-handle-area' />
+        <div className='the-input-slider-handle-icon' />
+      </div>
+    </Draggable>
+  )
+}
+
+TheInputSlider.Label = function TheInputSliderLabel({
+  children,
+  className,
+  ref,
+}) {
+  return (
+    <label className={c('the-input-slider-label', className)} ref={ref}>
+      <span>{children}</span>
+    </label>
+  )
 }
 
 TheInputSlider.propTypes = {

@@ -4,19 +4,25 @@
  * @description Tab for the-components
  * @module @the-/ui-tab
  * @typicalname uiTab
- * @version 15.4.12
+ * @version 15.4.13
  */
 'use strict'
 
 import TheTab from './TheTab'
+import TheTabButton from './TheTabButton'
+import TheTabContent from './TheTabContent'
 import TheTabStyle from './TheTabStyle'
 
 export {
   TheTab,
+  TheTabButton,
+  TheTabContent,
   TheTabStyle,
 }
 
 export default {
   TheTab,
+  TheTabButton,
+  TheTabContent,
   TheTabStyle,
 }

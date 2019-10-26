@@ -1,15 +1,14 @@
 'use strict'
 
-import { clone } from 'asobj'
 import chopcal from 'chopcal'
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheButton } from '@the-/ui-button'
-import { TheSpin } from '@the-/ui-spin'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 import pointFromTouchEvent from './helpers/pointFromTouchEvent'
 import sourceElementScrollFor from './helpers/sourceElementScrollFor'
+import TheTabButton from './TheTabButton'
+import TheTabContent from './TheTabContent'
 
 /**
  * Tab for the-components
@@ -358,45 +357,8 @@ class TheTab extends React.Component {
   }
 }
 
-TheTab.Button = function Button(props) {
-  const { active, children, className, disableTouchAction, movingRate } = props
-  const buttonProps = clone(props, { without: ['className', 'active'] })
-  return (
-    <TheButton
-      {...buttonProps}
-      className={c('the-tab-button', className, {
-        'the-tab-button-active': active,
-      })}
-    >
-      {active && (
-        <span
-          className='the-tab-button-active-bar'
-          style={{
-            transform: !disableTouchAction
-              ? `translateX(${movingRate * -100}%)`
-              : 'none',
-          }}
-        />
-      )}
-      {children}
-    </TheButton>
-  )
-}
-
-TheTab.Content = function Content(props) {
-  const { children, className, spinning } = props
-  return (
-    <div
-      {...htmlAttributesFor(props, { except: ['className', 'spinning'] })}
-      {...eventHandlersFor(props, { except: [] })}
-      className={c('the-tab-content', className)}
-    >
-      {spinning && <TheSpin className='the-tab-content-spin' cover enabled />}
-
-      {children}
-    </div>
-  )
-}
+TheTab.Button = TheTabButton
+TheTab.Content = TheTabContent
 
 TheTab.propTypes = {
   /** Active tab index */
