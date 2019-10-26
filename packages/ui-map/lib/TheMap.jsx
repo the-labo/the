@@ -4,7 +4,6 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 import L from '@okunishinishi/leaflet-shim'
-import { ThemeValues } from '@the-/const-ui'
 import { TheSpin } from '@the-/ui-spin'
 import {
   changedProps,
@@ -12,11 +11,10 @@ import {
   htmlAttributesFor,
   newId,
 } from '@the-/util-ui'
-import DivIcon from './classes/DivIcon'
 import TileLayer from './classes/TileLayer'
-import TheMapMarker from './TheMapMarker'
+import createMarker from './helpers/createMarker'
+import markerNodeFor from './helpers/markerNodeFor'
 
-const { tappableHeight: tappableSize } = ThemeValues
 const nullOrUndefined = (v) => v === null || typeof v === 'undefined'
 
 /**
@@ -156,7 +154,7 @@ class TheMap extends React.Component {
         if (marker) {
           const { height, lat, lng, node, onClick, width } = options
           marker.setLatLng({ lat, lng })
-          marker.node = this.markerNode({
+          marker.node = markerNodeFor({
             height,
             marker,
             node,
@@ -165,7 +163,10 @@ class TheMap extends React.Component {
           })
           mapMarkersNodes[key] = marker.node
         } else {
-          const marker = this.createMarker(map, options)
+          const marker = createMarker(map, {
+            interactive: !this.props.freezed,
+            ...options,
+          })
           mapMarkers[key] = marker
           mapMarkersNodes[key] = marker.node
         }
@@ -295,33 +296,6 @@ class TheMap extends React.Component {
     return layer
   }
 
-  createMarker(map, options = {}) {
-    const {
-      className,
-      draggable = false,
-      height = tappableSize,
-      interactive = !this.props.freezed,
-      lat,
-      lng,
-      node,
-      onClick,
-      riseOnHover = true,
-      width = tappableSize,
-    } = options
-    const marker = L.marker([lat, lng], {
-      draggable,
-      icon: new DivIcon({
-        className: c('the-map-marker-div-icon', className),
-        iconSize: L.point(width, height),
-      }),
-      interactive,
-      riseOnHover,
-    })
-    marker.addTo(map)
-    marker.node = this.markerNode({ height, marker, node, onClick, width })
-    return marker
-  }
-
   getMapData() {
     const { map } = this
     if (!map) {
@@ -342,24 +316,6 @@ class TheMap extends React.Component {
       lng,
       zoom,
     }
-  }
-
-  markerNode({
-    height = tappableSize,
-    marker,
-    node,
-    onClick,
-    width = tappableSize,
-  }) {
-    return (
-      <TheMapMarker
-        container={marker.getElement()}
-        onClick={onClick}
-        style={{ height, width }}
-      >
-        {node || null}
-      </TheMapMarker>
-    )
   }
 
   needsChange(options = {}) {

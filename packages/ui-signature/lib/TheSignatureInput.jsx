@@ -1,39 +1,29 @@
 'use strict'
 
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useCallback } from 'react'
 import TheSignature from './TheSignature'
 
 const noop = () => null
 
-class TheSignatureInput extends React.Component {
-  constructor(props) {
-    super(props)
-    this.handleEnd = this.handleEnd.bind(this)
-  }
+const TheSignatureInput = (props) => {
+  const { name, onEnd, onUpdate, value } = props
 
-  handleEnd({ pad }) {
-    const {
-      props: { name, onEnd, onUpdate },
-    } = this
-
-    onEnd && onEnd({ pad })
-    onUpdate &&
-      onUpdate({
-        [name]: pad.toDataURL(),
-      })
-  }
-
-  render() {
-    const {
-      props: { name, value },
-    } = this
-    return (
-      <TheSignature {...this.props} onEnd={this.handleEnd}>
-        <input name={name} onChange={noop} type='hidden' value={value || ''} />
-      </TheSignature>
-    )
-  }
+  const handleEnd = useCallback(
+    ({ pad }) => {
+      onEnd && onEnd({ pad })
+      onUpdate &&
+        onUpdate({
+          [name]: pad.toDataURL(),
+        })
+    },
+    [name, onEnd, onUpdate],
+  )
+  return (
+    <TheSignature {...props} onEnd={handleEnd}>
+      <input name={name} onChange={noop} type='hidden' value={value || ''} />
+    </TheSignature>
+  )
 }
 
 TheSignatureInput.propTypes = {

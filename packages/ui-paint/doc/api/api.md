@@ -11,9 +11,6 @@
 ## Classes
 
 <dl>
-<dt><a href="#ThePaint">ThePaint</a></dt>
-<dd><p>Hand write painting</p>
-</dd>
 <dt><a href="#DrawerLayer">DrawerLayer</a></dt>
 <dd></dd>
 </dl>
@@ -21,6 +18,9 @@
 ## Functions
 
 <dl>
+<dt><a href="#ThePaint">ThePaint()</a></dt>
+<dd><p>Hand write painting</p>
+</dd>
 <dt><a href="#ThePaintStyle">ThePaintStyle()</a></dt>
 <dd><p>Style for ThePaint</p>
 </dd>
@@ -31,17 +31,17 @@
 ## @the-/ui-paint
 Hand write painting
 
-**Version**: 15.5.6  
-<a name="ThePaint"></a>
-
-## ThePaint
-Hand write painting
-
-**Kind**: global class  
+**Version**: 15.5.8  
 <a name="DrawerLayer"></a>
 
 ## DrawerLayer
 **Kind**: global class  
+<a name="ThePaint"></a>
+
+## ThePaint()
+Hand write painting
+
+**Kind**: global function  
 <a name="ThePaintStyle"></a>
 
 ## ThePaintStyle()

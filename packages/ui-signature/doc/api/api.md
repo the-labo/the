@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheSignature">TheSignature</a></dt>
-<dd><p>Signature pad of the-components</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheSignature">TheSignature()</a></dt>
+<dd><p>Signature pad of the-components</p>
+</dd>
 <dt><a href="#TheSignatureStyle">TheSignatureStyle()</a></dt>
 <dd><p>Style for TheSignature</p>
 </dd>
@@ -29,13 +24,13 @@
 ## @the-/ui-signature
 Signature pad of the-components
 
-**Version**: 15.5.0  
+**Version**: 15.5.1  
 <a name="TheSignature"></a>
 
-## TheSignature
+## TheSignature()
 Signature pad of the-components
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheSignatureStyle"></a>
 
 ## TheSignatureStyle()

@@ -2,75 +2,66 @@
 
 import formatcoords from 'formatcoords'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useCallback } from 'react'
 import TheMap from './TheMap'
 
 const hasVal = (v) => !!v || v === 0
 
-class TheMapPositionInput extends React.Component {
-  constructor(props) {
-    super(props)
-    this.handleChange = this.handleChange.bind(this)
+const parseValue = (value) => {
+  if (typeof value === 'string') {
+    const [lat, lng, zoom] = value.split(',')
+    return parseValue({ lat, lng, zoom })
   }
 
-  handleChange({ lat, lng, zoom }) {
-    const {
-      props: { name, onUpdate, value },
-    } = this
-    const isStringBase = typeof value === 'string'
-    onUpdate({
-      [name]: isStringBase ? [lat, lng, zoom].join(',') : { lat, lng, zoom },
-    })
+  const { lat, lng, zoom = 13 } = value
+  return { lat: Number(lat), lng: Number(lng), zoom: Number(zoom) }
+}
+
+const TheMapPositionInput = (props) => {
+  const { height, id, layers, name, onUpdate, value, width } = props
+  const handleChange = useCallback(
+    ({ lat, lng, zoom }) => {
+      const isStringBase = typeof value === 'string'
+      onUpdate({
+        [name]: isStringBase ? [lat, lng, zoom].join(',') : { lat, lng, zoom },
+      })
+    },
+    [name, onUpdate, value],
+  )
+
+  if (!value) {
+    return null
   }
 
-  parseValue(value) {
-    if (typeof value === 'string') {
-      const [lat, lng, zoom] = value.split(',')
-      return this.parseValue({ lat, lng, zoom })
-    }
-
-    const { lat, lng, zoom = 13 } = value
-    return { lat: Number(lat), lng: Number(lng), zoom: Number(zoom) }
-  }
-
-  render() {
-    const {
-      props: { height, id, layers, value, width },
-    } = this
-    if (!value) {
-      return null
-    }
-
-    const { lat, lng, zoom } = this.parseValue(value)
-    const hasLatLng = hasVal(lat) && hasVal(lng)
-    return (
-      <div className='the-map-position-input' id={id} style={{ height, width }}>
-        <TheMap
-          height={height}
-          lat={Number(lat)}
-          layerControlEnabled={false}
-          layers={layers}
-          lng={Number(lng)}
-          onChange={this.handleChange}
-          width={width}
-          zoom={zoom}
-        />
-        <input
-          className='the-map-position-input-input'
-          type='hidden'
-          value={`${lat},${lng}`}
-        />
-        <div className='the-map-position-input-display'>
-          {hasLatLng && formatcoords(lat, lng).format('f')}
-        </div>
-        <div className='the-map-position-input-target'>
-          <div className='the-map-position-input-target-dot' />
-          <div className='the-map-position-input-target-bar1' />
-          <div className='the-map-position-input-target-bar2' />
-        </div>
+  const { lat, lng, zoom } = parseValue(value)
+  const hasLatLng = hasVal(lat) && hasVal(lng)
+  return (
+    <div className='the-map-position-input' id={id} style={{ height, width }}>
+      <TheMap
+        height={height}
+        lat={Number(lat)}
+        layerControlEnabled={false}
+        layers={layers}
+        lng={Number(lng)}
+        onChange={handleChange}
+        width={width}
+        zoom={zoom}
+      />
+      <input
+        className='the-map-position-input-input'
+        type='hidden'
+        value={`${lat},${lng}`}
+      />
+      <div className='the-map-position-input-display'>
+        {hasLatLng && formatcoords(lat, lng).format('f')}
       </div>
-    )
-  }
+      <div className='the-map-position-input-target'>
+        <div className='the-map-position-input-target-dot' />
+        <div className='the-map-position-input-target-bar1' />
+        <div className='the-map-position-input-target-bar2' />
+      </div>
+    </div>
+  )
 }
 
 TheMapPositionInput.propTypes = {

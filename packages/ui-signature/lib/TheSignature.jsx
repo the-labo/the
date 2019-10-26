@@ -2,134 +2,60 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import SignaturePad from 'signature_pad/dist/signature_pad'
-import {
-  changedProps,
-  eventHandlersFor,
-  htmlAttributesFor,
-} from '@the-/util-ui'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 import { get } from '@the-/window'
 
 /**
  * Signature pad of the-components
  */
-class TheSignature extends React.Component {
-  constructor(props) {
-    super(props)
-    this.canvasRef = React.createRef()
-    this.pad = null
-    this.handleBegin = this.handleBegin.bind(this)
-    this.handleEnd = this.handleEnd.bind(this)
-  }
+const TheSignature = (props) => {
+  const {
+    children,
+    className,
+    color,
+    height,
+    onBegin,
+    onEnd,
+    onPad,
+    value,
+    width,
+  } = props
+  const canvasRef = useRef(null)
+  const [pad, setPad] = useState(null)
 
-  applyValue(value) {
-    const { pad } = this
-    if (!pad) {
-      return null
-    }
+  const handlePadBegin = useCallback(
+    (pad) => {
+      onBegin && onBegin({ pad })
+    },
+    [onBegin],
+  )
 
-    pad.fromDataURL(value)
-  }
+  const handleEnd = useCallback(
+    (pad) => {
+      onEnd && onEnd({ pad })
+    },
+    [onEnd],
+  )
 
-  componentDidMount() {
-    const {
-      canvasRef: { current: canvas },
-    } = this
-    this.pad = new SignaturePad(canvas, {
-      onBegin: this.handleBegin,
-      onEnd: this.handleEnd,
-    })
-    this.resize = this.resize.bind(this)
-    this.syncPad()
-    this.pad.on()
+  const applyValue = useCallback(
+    (value) => {
+      if (!pad) {
+        return null
+      }
+      pad.fromDataURL(value)
+    },
+    [pad],
+  )
 
-    const window = get('window')
-    window.addEventListener('resize', this.resize)
-
-    this.resize()
-
-    const {
-      props: { onPad },
-    } = this
-    onPad && onPad(this.pad)
-  }
-
-  componentDidUpdate(prevProps) {
-    const diff = changedProps(prevProps, this.props)
-
-    const needsSyncPad = ['color'].some((k) => k in diff)
-    if (needsSyncPad) {
-      this.syncPad()
-    }
-
-    if ('value' in diff) {
-      this.applyValue(diff.value)
-    }
-  }
-
-  componentWillUnmount() {
-    this.pad.off()
-    this.pad = null
-
-    const window = get('window')
-    window.removeEventListener('resize', this.resize)
-  }
-
-  handleBegin() {
-    const {
-      pad,
-      props: { onBegin },
-    } = this
-
-    onBegin && onBegin({ pad })
-  }
-
-  handleEnd() {
-    const {
-      pad,
-      props: { onEnd },
-    } = this
-
-    onEnd && onEnd({ pad })
-  }
-
-  render() {
-    const {
-      props,
-      props: { children, className, height, width },
-    } = this
-
-    return (
-      <div
-        {...htmlAttributesFor(props, {
-          except: ['className', 'width', 'height'],
-        })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-signature', className)}
-      >
-        <canvas
-          className='the-signature-canvas'
-          ref={this.canvasRef}
-          style={{ height, width }}
-        />
-        {children}
-      </div>
-    )
-  }
-
-  resize() {
-    const {
-      canvasRef: { current: canvas },
-      pad,
-    } = this
-
+  const resize = useCallback(() => {
+    const { current: canvas } = canvasRef
     const skip = !canvas || !pad
     if (skip) {
       return
     }
-
-    const value = pad.toDataURL()
+    const newValue = pad.toDataURL()
     const devicePixelRatio = get('window.devicePixelRatio') || 1
     const ratio = Math.max(devicePixelRatio, 1)
     canvas.width = canvas.offsetWidth * ratio
@@ -138,20 +64,65 @@ class TheSignature extends React.Component {
     canvas.dataset.scaleRatio = ratio
     ctx.scale(ratio, ratio)
 
-    this.applyValue(value)
-  }
+    applyValue(newValue)
+  }, [pad])
 
-  syncPad() {
-    const { pad } = this
+  const syncPad = useCallback(() => {
     if (!pad) {
       return
     }
-
-    const {
-      props: { color },
-    } = this
     pad.penColor = color
-  }
+  }, [pad, color])
+
+  useEffect(() => {
+    const { current: canvas } = canvasRef
+    const newPad = new SignaturePad(canvas, {
+      onBegin: () => handlePadBegin(newPad),
+      onEnd: () => handleEnd(newPad),
+    })
+    setPad(newPad)
+
+    onPad && onPad(newPad)
+    newPad.on()
+
+    const window = get('window')
+    window.addEventListener('resize', resize)
+    return () => {
+      newPad.off()
+      window.removeEventListener('resize', resize)
+      setPad(null)
+    }
+  }, [])
+
+  useEffect(() => {
+    syncPad()
+  }, [color])
+  useEffect(() => {
+    applyValue(value)
+  }, [value])
+  useEffect(() => {
+    resize()
+  }, [width, height])
+  useEffect(() => {
+    resize()
+  }, [pad])
+
+  return (
+    <div
+      {...htmlAttributesFor(props, {
+        except: ['className', 'width', 'height'],
+      })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-signature', className)}
+    >
+      <canvas
+        className='the-signature-canvas'
+        ref={canvasRef}
+        style={{ height, width }}
+      />
+      {children}
+    </div>
+  )
 }
 
 TheSignature.propTypes = {
