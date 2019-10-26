@@ -28,9 +28,6 @@
 <dt><a href="#TheInputTextArea">TheInputTextArea</a></dt>
 <dd><p>TextArea Input</p>
 </dd>
-<dt><a href="#TheInputToggle">TheInputToggle</a></dt>
-<dd><p>Toggle input of the-components</p>
-</dd>
 </dl>
 
 ## Constants
@@ -44,6 +41,9 @@
 </dd>
 <dt><a href="#TheInputRadio">TheInputRadio</a></dt>
 <dd><p>Radio input of the-components</p>
+</dd>
+<dt><a href="#TheInputToggle">TheInputToggle</a></dt>
+<dd><p>Toggle input of the-components</p>
 </dd>
 </dl>
 
@@ -67,7 +67,7 @@
 ## @the-/ui-input
 Input of the-components
 
-**Version**: 15.5.7  
+**Version**: 15.5.9  
 <a name="TheInputRange"></a>
 
 ## TheInputRange
@@ -98,12 +98,6 @@ Text Input
 TextArea Input
 
 **Kind**: global class  
-<a name="TheInputToggle"></a>
-
-## TheInputToggle
-Toggle input of the-components
-
-**Kind**: global class  
 <a name="TheInput"></a>
 
 ## TheInput
@@ -120,6 +114,12 @@ Checkbox input of the-components
 
 ## TheInputRadio
 Radio input of the-components
+
+**Kind**: global constant  
+<a name="TheInputToggle"></a>
+
+## TheInputToggle
+Toggle input of the-components
 
 **Kind**: global constant  
 <a name="TheInputStyle"></a>

@@ -24,7 +24,7 @@
     "name": "@the-/ui-input",
     "order": 1,
     "typicalname": "uiInput",
-    "version": "15.5.7"
+    "version": "15.5.9"
   },
   {
     "description": "Range Input",
@@ -33,7 +33,7 @@
     "longname": "TheInputRange",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 51,
+      "lineno": 18,
       "path": "lib"
     },
     "name": "TheInputRange",
@@ -61,7 +61,7 @@
     "longname": "TheInputSlider",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 51,
+      "lineno": 18,
       "path": "lib"
     },
     "name": "TheInputSlider",
@@ -75,7 +75,7 @@
     "longname": "TheInputText",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 45,
+      "lineno": 20,
       "path": "lib"
     },
     "name": "TheInputText",
@@ -94,20 +94,6 @@
     },
     "name": "TheInputTextArea",
     "order": 74,
-    "scope": "global"
-  },
-  {
-    "description": "Toggle input of the-components",
-    "id": "TheInputToggle",
-    "kind": "class",
-    "longname": "TheInputToggle",
-    "meta": {
-      "filename": "TheInputToggle.jsx",
-      "lineno": 38,
-      "path": "lib"
-    },
-    "name": "TheInputToggle",
-    "order": 83,
     "scope": "global"
   },
   {
@@ -152,6 +138,21 @@
     },
     "name": "TheInputRadio",
     "order": 14,
+    "params": [],
+    "scope": "global"
+  },
+  {
+    "description": "Toggle input of the-components",
+    "id": "TheInputToggle",
+    "kind": "constant",
+    "longname": "TheInputToggle",
+    "meta": {
+      "filename": "TheInputToggle.jsx",
+      "lineno": 11,
+      "path": "lib"
+    },
+    "name": "TheInputToggle",
+    "order": 83,
     "params": [],
     "scope": "global"
   },
@@ -504,7 +505,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 355,
+      "lineno": 371,
       "path": "lib"
     },
     "name": "barOnly",
@@ -519,7 +520,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 357,
+      "lineno": 373,
       "path": "lib"
     },
     "name": "error",
@@ -534,7 +535,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 359,
+      "lineno": 375,
       "path": "lib"
     },
     "name": "max",
@@ -549,7 +550,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 361,
+      "lineno": 377,
       "path": "lib"
     },
     "name": "min",
@@ -564,7 +565,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 364,
+      "lineno": 380,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -579,7 +580,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 366,
+      "lineno": 382,
       "path": "lib"
     },
     "name": "step",
@@ -594,7 +595,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 368,
+      "lineno": 384,
       "path": "lib"
     },
     "name": "value",
@@ -774,7 +775,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 255,
+      "lineno": 271,
       "path": "lib"
     },
     "name": "barOnly",
@@ -789,7 +790,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 257,
+      "lineno": 273,
       "path": "lib"
     },
     "name": "error",
@@ -804,7 +805,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 259,
+      "lineno": 275,
       "path": "lib"
     },
     "name": "max",
@@ -819,7 +820,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 261,
+      "lineno": 277,
       "path": "lib"
     },
     "name": "min",
@@ -834,7 +835,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 264,
+      "lineno": 280,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -849,7 +850,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 266,
+      "lineno": 282,
       "path": "lib"
     },
     "name": "step",
@@ -864,7 +865,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 268,
+      "lineno": 284,
       "path": "lib"
     },
     "name": "value",
@@ -894,7 +895,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 429,
+      "lineno": 434,
       "path": "lib"
     },
     "name": "error",
@@ -909,7 +910,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 431,
+      "lineno": 436,
       "path": "lib"
     },
     "name": "matcher",
@@ -924,7 +925,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 433,
+      "lineno": 438,
       "path": "lib"
     },
     "name": "name",
@@ -939,7 +940,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 435,
+      "lineno": 440,
       "path": "lib"
     },
     "name": "onDown",
@@ -954,7 +955,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 437,
+      "lineno": 442,
       "path": "lib"
     },
     "name": "onEnter",
@@ -969,7 +970,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 439,
+      "lineno": 444,
       "path": "lib"
     },
     "name": "onLeft",
@@ -984,7 +985,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 441,
+      "lineno": 446,
       "path": "lib"
     },
     "name": "onRight",
@@ -999,7 +1000,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 443,
+      "lineno": 448,
       "path": "lib"
     },
     "name": "onUp",
@@ -1014,7 +1015,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 445,
+      "lineno": 450,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -1029,7 +1030,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 447,
+      "lineno": 452,
       "path": "lib"
     },
     "name": "options",
@@ -1044,7 +1045,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 452,
+      "lineno": 457,
       "path": "lib"
     },
     "name": "parser",
@@ -1059,7 +1060,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 454,
+      "lineno": 459,
       "path": "lib"
     },
     "name": "pattern",
@@ -1074,7 +1075,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 456,
+      "lineno": 461,
       "path": "lib"
     },
     "name": "patternWarning",
@@ -1089,7 +1090,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 458,
+      "lineno": 463,
       "path": "lib"
     },
     "name": "prefix",
@@ -1104,7 +1105,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 460,
+      "lineno": 465,
       "path": "lib"
     },
     "name": "suffix",
@@ -1119,7 +1120,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 462,
+      "lineno": 467,
       "path": "lib"
     },
     "name": "tabIndex",
@@ -1134,7 +1135,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 464,
+      "lineno": 469,
       "path": "lib"
     },
     "name": "type",
@@ -1149,7 +1150,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 466,
+      "lineno": 471,
       "path": "lib"
     },
     "name": "value",
@@ -1284,7 +1285,7 @@
     "memberof": "TheInputToggle.propTypes",
     "meta": {
       "filename": "TheInputToggle.jsx",
-      "lineno": 130,
+      "lineno": 123,
       "path": "lib"
     },
     "name": "offTitle",
@@ -1299,7 +1300,7 @@
     "memberof": "TheInputToggle.propTypes",
     "meta": {
       "filename": "TheInputToggle.jsx",
-      "lineno": 132,
+      "lineno": 125,
       "path": "lib"
     },
     "name": "on",
@@ -1314,7 +1315,7 @@
     "memberof": "TheInputToggle.propTypes",
     "meta": {
       "filename": "TheInputToggle.jsx",
-      "lineno": 134,
+      "lineno": 127,
       "path": "lib"
     },
     "name": "onTitle",
@@ -1329,7 +1330,7 @@
     "memberof": "TheInputToggle.propTypes",
     "meta": {
       "filename": "TheInputToggle.jsx",
-      "lineno": 136,
+      "lineno": 129,
       "path": "lib"
     },
     "name": "width",

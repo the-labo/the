@@ -4,37 +4,49 @@ import { cleanup } from 'asobj'
 import c from 'classnames'
 import flatpickr from 'flatpickr'
 import PropTypes from 'prop-types'
-import React from 'react'
-import {
-  changedProps,
-  eventHandlersFor,
-  htmlAttributesFor,
-} from '@the-/util-ui'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
+import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 import { onOffBoolean, renderErrorMessage } from './helpers'
 
-class TheInputDate extends React.PureComponent {
-  constructor(props) {
-    super(props)
-    this.elmRef = React.createRef()
-    this.handleBlur = this.handleBlur.bind(this)
-    this.picker = null
-  }
+const TheInputDate = React.memo((props) => {
+  const elmRef = useRef(null)
+  const [picker, setPicker] = useState(null)
+  const {
+    autoComplete,
+    autoFocus,
+    children,
+    className,
+    dateFormat,
+    error,
+    id,
+    maxDate,
+    minDate,
+    name,
+    noCalendar,
+    onBlur,
+    onUpdate,
+    placeholder,
+    readOnly,
+    required,
+    spellCheck,
+    tabIndex,
+    timeEnabled,
+    type,
+    value,
+  } = props
 
-  componentDidMount() {
-    this.picker = flatpickr(
-      this.elmRef.current,
+  useEffect(() => {
+    const newPicker = flatpickr(
+      elmRef.current,
       cleanup(
         {
-          dateFormat: this.props.dateFormat,
-          defaultDate: this.props.value,
-          enableTime: this.props.timeEnabled,
-          maxDate: this.props.maxDate,
-          minDate: this.props.minDate,
-          noCalendar: this.props.noCalendar,
+          dateFormat,
+          defaultDate: value,
+          enableTime: timeEnabled,
+          maxDate,
+          minDate,
+          noCalendar,
           onChange: (selectedDates, dateStr) => {
-            const {
-              props: { name, onUpdate, value },
-            } = this
             if (value !== dateStr) {
               onUpdate && onUpdate({ [name]: dateStr })
             }
@@ -43,131 +55,98 @@ class TheInputDate extends React.PureComponent {
         { delNull: true },
       ),
     )
-    // this.updatePicker(this.props)
-  }
-
-  componentDidUpdate(prevProps) {
-    const changed = changedProps(prevProps, this.props)
-    this.updatePicker(changed)
-  }
-
-  componentWillUnmount() {
-    this.picker.destroy()
-    this.picker = null
-  }
-
-  handleBlur(e) {
-    const {
-      props: { name, onBlur, onUpdate, value },
-    } = this
-    onBlur && onBlur(e)
-    if (value !== e.target.value) {
-      onUpdate && onUpdate({ [name]: e.target.value })
+    setPicker(newPicker)
+    return () => {
+      newPicker.destroy()
+      setPicker(null)
     }
-  }
+  }, [])
 
-  render() {
-    const {
-      props,
-      props: {
-        autoComplete,
-        autoFocus,
-        children,
-        className,
-        error,
-        id,
-        name,
-        placeholder,
-        readOnly,
-        required,
-        spellCheck,
-        tabIndex,
-        type,
-        value,
-      },
-    } = this
-
-    const autoCapitalize = onOffBoolean(props.autoCapitalize)
-    const autoCorrect = onOffBoolean(props.autoCorrect)
-    return (
-      <div
-        {...htmlAttributesFor(props, {
-          except: [
-            'id',
-            'className',
-            'type',
-            'value',
-            'tabIndex',
-            'name',
-            'required',
-            'placeholder',
-            'autoFocus',
-            'autoComplete',
-            'autoCapitalize',
-            'autoCorrect',
-            'spellCheck',
-            'name',
-          ],
-        })}
-        {...eventHandlersFor(props, {
-          except: [
-            'onChange',
-            'onFocus',
-            'onBlur',
-            'onKeyUp',
-            'onKeyDown',
-            'onKeyPress',
-          ],
-        })}
-        className={c('the-input-date', className, {
-          'the-input-error': !!error,
-        })}
-        data-value={value}
-      >
-        {renderErrorMessage(error)}
-        <input
-          autoCapitalize={autoCapitalize}
-          autoComplete={autoComplete}
-          autoCorrect={autoCorrect}
-          autoFocus={autoFocus}
-          className='the-input-date-input'
-          id={id}
-          name={name}
-          onBlur={this.handleBlur}
-          placeholder={placeholder}
-          readOnly={readOnly}
-          ref={this.elmRef}
-          required={required}
-          spellCheck={spellCheck}
-          tabIndex={tabIndex}
-          type={type}
-          value={value}
-        />
-        {children}
-      </div>
-    )
-  }
-
-  updatePicker(config) {
-    const skip = Object.keys(config).length === 0
-    if (skip) {
-      return
-    }
-
-    const { picker } = this
+  useEffect(() => {
     if (!picker) {
       return
     }
-
-    const { maxDate, minDate, value } = config
     picker.set(cleanup({ maxDate, minDate }))
-    if (value) {
-      picker.jumpToDate(value)
-    }
-
     picker.redraw()
-  }
-}
+  }, [picker, maxDate, minDate])
+  useEffect(() => {
+    if (!picker) {
+      return
+    }
+    picker.jumpToDate(value)
+    picker.redraw()
+  }, [value])
+
+  const handleBlur = useCallback(
+    (e) => {
+      onBlur && onBlur(e)
+      if (value !== e.target.value) {
+        onUpdate && onUpdate({ [name]: e.target.value })
+      }
+    },
+    [name, onBlur, onUpdate, value],
+  )
+
+  const autoCapitalize = onOffBoolean(props.autoCapitalize)
+  const autoCorrect = onOffBoolean(props.autoCorrect)
+  return (
+    <div
+      {...htmlAttributesFor(props, {
+        except: [
+          'id',
+          'className',
+          'type',
+          'value',
+          'tabIndex',
+          'name',
+          'required',
+          'placeholder',
+          'autoFocus',
+          'autoComplete',
+          'autoCapitalize',
+          'autoCorrect',
+          'spellCheck',
+          'name',
+        ],
+      })}
+      {...eventHandlersFor(props, {
+        except: [
+          'onChange',
+          'onFocus',
+          'onBlur',
+          'onKeyUp',
+          'onKeyDown',
+          'onKeyPress',
+        ],
+      })}
+      className={c('the-input-date', className, {
+        'the-input-error': !!error,
+      })}
+      data-value={value}
+    >
+      {renderErrorMessage(error)}
+      <input
+        autoCapitalize={autoCapitalize}
+        autoComplete={autoComplete}
+        autoCorrect={autoCorrect}
+        autoFocus={autoFocus}
+        className='the-input-date-input'
+        id={id}
+        name={name}
+        onBlur={handleBlur}
+        placeholder={placeholder}
+        readOnly={readOnly}
+        ref={elmRef}
+        required={required}
+        spellCheck={spellCheck}
+        tabIndex={tabIndex}
+        type={type}
+        value={value}
+      />
+      {children}
+    </div>
+  )
+})
 
 TheInputDate.propTypes = {
   dateFormat: PropTypes.string,
