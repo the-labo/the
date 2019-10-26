@@ -24,7 +24,7 @@
     "name": "@the-/ui-input",
     "order": 1,
     "typicalname": "uiInput",
-    "version": "15.5.9"
+    "version": "15.5.11"
   },
   {
     "description": "Range Input",
