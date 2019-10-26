@@ -3,174 +3,149 @@
 import { clone } from 'asobj'
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
-import { TheIcon } from '@the-/ui-icon'
+import React, { useCallback, useRef, useState } from 'react'
 import { uniqueFilter } from '@the-/util-array'
+import TheInputTagItem from './partials/TheInputTagItem'
 import TheInputText from './TheInputText'
 
-class TheInputTag extends React.PureComponent {
-  constructor(props) {
-    super(props)
-    this.state = {
-      focused: false,
-    }
-    this.handleKeyDown = this.handleKeyDown.bind(this)
-    this.handleUpdate = this.handleUpdate.bind(this)
-    this.handleInputRef = this.handleInputRef.bind(this)
-    this.handleFocus = this.handleFocus.bind(this)
-    this.handleBlur = this.handleBlur.bind(this)
-  }
-
-  componentDidMount() {}
-
-  componentWillUnmount() {}
-
-  handleBack() {
-    const [edittingValue, ...tagValues] = this.splitValue()
-    if (edittingValue.length === 0) {
-      this.updateBySplitValues(['', ...tagValues.slice(1)])
-    }
-  }
-
-  handleBlur(e) {
-    const {
-      props: { onBlur },
-    } = this
-    const [edittingValue, ...tagValues] = this.splitValue()
-    if (edittingValue.length > 0) {
-      this.updateBySplitValues(['', edittingValue, ...tagValues])
-    }
-
-    onBlur && onBlur(e)
-    this.setState({ focused: false })
-  }
-
-  handleEnter() {
-    const [edittingValue, ...tagValues] = this.splitValue()
-    if (edittingValue.length > 0) {
-      this.updateBySplitValues(['', edittingValue, ...tagValues.slice()])
-    }
-  }
-
-  handleFocus(e) {
-    const {
-      props: { onFocus },
-    } = this
-    onFocus && onFocus(e)
-    this.setState({ focused: true })
-  }
-
-  handleInputRef(input) {
-    this.input = input
-  }
-
-  handleKeyDown(e) {
-    const {
-      props: { onKeyDown },
-    } = this
-    switch (e.keyCode) {
-      case 13:
-        this.handleEnter()
-        break
-      case 8:
-        this.handleBack()
-        break
-      default:
-        break
-    }
-
-    onKeyDown && onKeyDown(e)
-  }
-
-  handleUpdate(values) {
-    const {
-      props: { name },
-    } = this
-    const edittingValue = values[name]
-    const [, ...tagValues] = this.splitValue()
-    this.updateBySplitValues([edittingValue, ...tagValues])
-  }
-
-  optionsFor(tagValues) {
-    const {
-      props: { options },
-    } = this
-    return []
-      .concat(options || [])
-      .filter((option) => !tagValues.includes(option))
-  }
-
-  removeTag(text) {
-    const tagValues = this.splitValue()
-    this.updateBySplitValues(tagValues.filter((tagValue) => tagValue !== text))
-  }
-
-  render() {
-    const {
-      props,
-      state: { focused },
-    } = this
-    const [edittingValue, ...tagValues] = this.splitValue()
-    const inputProps = clone(props, {
-      without: ['value', 'splitter', 'options'],
-    })
-
-    return (
-      <TheInputText
-        {...inputProps}
-        className={c('the-input-tag', {
-          'the-input-tag-focused': focused,
-        })}
-        inputRef={this.handleInputRef}
-        onBlur={this.handleBlur}
-        onFocus={this.handleFocus}
-        onKeyDown={this.handleKeyDown}
-        onUpdate={this.handleUpdate}
-        options={this.optionsFor(tagValues)}
-        value={String(edittingValue).trim()}
-      >
-        {tagValues
-          .filter(Boolean)
-          .filter(uniqueFilter())
-          .reverse()
-          .map((text) => (
-            <span className='the-input-tag-tag' key={text}>
-              <span className='the-input-tag-text'>{text}</span>
-              <span
-                className={c('the-input-tag-remover')}
-                onClick={() => this.removeTag(text)}
-              >
-                <TheIcon className={TheInputTag.CLOSE_ICON} />
-              </span>
-            </span>
-          ))}
-      </TheInputText>
-    )
-  }
-
-  splitValue() {
-    const {
-      props: { splitter, value },
-      state: { focused },
-    } = this
-
+const TheInputTag = React.memo((props) => {
+  const {
+    name,
+    onBlur,
+    onFocus,
+    onKeyDown,
+    onUpdate,
+    options,
+    splitter,
+    value,
+  } = props
+  const [focused, setFocused] = useState(false)
+  const inputRef = useRef(null)
+  const splitValue = useCallback(() => {
     const split = String(value || '')
       .split(splitter)
       .reverse()
     return focused ? split : ['', ...split]
-  }
+  }, [splitter, value, focus()])
 
-  updateBySplitValues(splitValues) {
-    const {
-      props: { name, onUpdate },
-    } = this
-    const [edittingValue, ...tagValues] = splitValues
-    const value = [edittingValue, ...tagValues.filter(uniqueFilter())]
-      .reverse()
-      .join(' ')
-    onUpdate && onUpdate({ [name]: value })
-  }
-}
+  const updateBySplitValues = useCallback(
+    (splitValues) => {
+      const [edittingValue, ...tagValues] = splitValues
+      const newValue = [edittingValue, ...tagValues.filter(uniqueFilter())]
+        .reverse()
+        .join(' ')
+      onUpdate && onUpdate({ [name]: newValue })
+    },
+    [name, onUpdate],
+  )
+
+  const handleBack = useCallback(() => {
+    const [edittingValue, ...tagValues] = splitValue()
+    if (edittingValue.length === 0) {
+      updateBySplitValues(['', ...tagValues.slice(1)])
+    }
+  }, [splitValue, updateBySplitValues])
+
+  const handleBlur = useCallback(
+    (e) => {
+      const [edittingValue, ...tagValues] = splitValue()
+      if (edittingValue.length > 0) {
+        updateBySplitValues(['', edittingValue, ...tagValues])
+      }
+
+      onBlur && onBlur(e)
+      setFocused(false)
+    },
+    [updateBySplitValues, onBlur],
+  )
+
+  const handleEnter = useCallback(() => {
+    const [edittingValue, ...tagValues] = splitValue()
+    if (edittingValue.length > 0) {
+      updateBySplitValues(['', edittingValue, ...tagValues.slice()])
+    }
+  }, [splitValue, updateBySplitValues])
+
+  const handleFocus = useCallback((e) => {
+    onFocus && onFocus(e)
+    setFocused(true)
+  }, [])
+
+  const handleKeyDown = useCallback(
+    (e) => {
+      switch (e.keyCode) {
+        case 13:
+          handleEnter()
+          break
+        case 8:
+          handleBack()
+          break
+        default:
+          break
+      }
+
+      onKeyDown && onKeyDown(e)
+    },
+    [onKeyDown, handleEnter, handleBack],
+  )
+
+  const handleUpdate = useCallback(
+    (values) => {
+      const edittingValue = values[name]
+      const [, ...tagValues] = splitValue()
+      updateBySplitValues([edittingValue, ...tagValues])
+    },
+    [name, splitValue, updateBySplitValues],
+  )
+
+  const optionsFor = useCallback(
+    (tagValues) =>
+      [].concat(options || []).filter((option) => !tagValues.includes(option)),
+    [options],
+  )
+
+  const handleRemove = useCallback(
+    (text) => {
+      const tagValues = splitValue()
+      updateBySplitValues(tagValues.filter((tagValue) => tagValue !== text))
+    },
+    [splitValue, updateBySplitValues],
+  )
+
+  const [edittingValue, ...tagValues] = splitValue()
+  const inputProps = clone(props, {
+    without: ['value', 'splitter', 'options'],
+  })
+
+  return (
+    <TheInputText
+      {...inputProps}
+      className={c('the-input-tag', {
+        'the-input-tag-focused': focused,
+      })}
+      inputRef={inputRef}
+      onBlur={handleBlur}
+      onFocus={handleFocus}
+      onKeyDown={handleKeyDown}
+      onUpdate={handleUpdate}
+      options={optionsFor(tagValues)}
+      value={String(edittingValue).trim()}
+    >
+      {tagValues
+        .filter(Boolean)
+        .filter(uniqueFilter())
+        .reverse()
+        .map((text) => (
+          <TheInputTagItem
+            icon={TheInputTag.CLOSE_ICON}
+            key={text}
+            onRemove={handleRemove}
+            text={text}
+          />
+        ))}
+    </TheInputText>
+  )
+})
 
 TheInputTag.CLOSE_ICON = 'fas fa-times'
 TheInputTag.propTypes = Object.assign(
