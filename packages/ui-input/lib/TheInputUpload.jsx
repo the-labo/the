@@ -18,6 +18,8 @@ import {
   isVideoUrl,
   renderErrorMessage,
 } from './helpers'
+import TheInputUploadLabel from './partials/TheInputUploadLabel'
+import TheInputUploadPreview from './partials/TheInputUploadPreview'
 
 const previewUrlFilter = (url) =>
   isImageUrl(url) || isVideoUrl(url) || isUnknownTypeUrl(url)
@@ -160,19 +162,13 @@ class TheInputUpload extends React.PureComponent {
           type='file'
         />
         <TheCondition unless={readOnly}>
-          <label className='the-input-upload-label' htmlFor={`${id}-file`}>
-            <span className='the-input-upload-aligner' />
-            <span className='the-input-upload-label-inner'>
-              <i
-                className={c(
-                  'the-input-upload-icon',
-                  guideIcon || TheInputUpload.GUIDE_ICON,
-                )}
-              />
-              <span className='the-input-upload-text'>{text}</span>
-              {children}
-            </span>
-          </label>
+          <TheInputUploadLabel
+            htmlFor={`${id}-file`}
+            icon={guideIcon || TheInputUpload.GUIDE_ICON}
+            text={text}
+          >
+            {children}
+          </TheInputUploadLabel>
         </TheCondition>
         <TheCondition if={spinning}>
           <TheSpin className='the-input-upload-spin' cover enabled />
@@ -193,33 +189,13 @@ class TheInputUpload extends React.PureComponent {
               .filter(Boolean)
               .filter(previewUrlFilter)
               .map((url, i) => (
-                <div
-                  className={c('the-input-upload-preview')}
+                <TheInputUploadPreview
+                  height={height}
+                  i={i}
                   key={url}
-                  style={{
-                    height,
-                    left: `${i * 10}%`,
-                    top: `${i * 10}%`,
-                    width,
-                  }}
-                >
-                  {isVideoUrl(url) ? (
-                    <video
-                      className={c('the-input-upload-preview-video')}
-                      height={height}
-                      preload='metadata'
-                      src={url}
-                      width={width}
-                    />
-                  ) : (
-                    <img
-                      className={c('the-input-upload-preview-img')}
-                      height={height}
-                      src={url}
-                      width={width}
-                    />
-                  )}
-                </div>
+                  url={url}
+                  width={width}
+                />
               ))}
           </div>
         </TheCondition>
