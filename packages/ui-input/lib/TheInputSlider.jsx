@@ -95,7 +95,7 @@ const TheInputSlider = React.memo((props) => {
         onUpdate({ [name]: newValue })
       }
     },
-    [step, name, onUpdate, props.value],
+    [step, name, onUpdate, props.value, minX, maxX, _rateWithValue],
   )
 
   const handleBarClick = useCallback(
@@ -154,7 +154,7 @@ const TheInputSlider = React.memo((props) => {
       ref={elmRef}
     >
       {renderErrorMessage(error)}
-      <input name={name} onChange={() => {}} type='hidden' value={value}/>
+      <input name={name} onChange={() => {}} type='hidden' value={value} />
       <div className='the-input-slider-inner'>
         <TheCondition unless={barOnly}>
           <TheInputSlider.Label>{min}</TheInputSlider.Label>
@@ -165,8 +165,8 @@ const TheInputSlider = React.memo((props) => {
             onClick={handleBarClick}
             ref={barElmRef}
           >
-            <div className='the-input-slider-bar-tap'/>
-            <div className='the-input-slider-bar-bg'/>
+            <div className='the-input-slider-bar-tap' />
+            <div className='the-input-slider-bar-bg' />
             <div
               className='the-input-slider-bar-highlight'
               style={{ left: 0, width: x }}
