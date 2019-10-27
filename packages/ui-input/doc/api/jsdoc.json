@@ -24,35 +24,7 @@
     "name": "@the-/ui-input",
     "order": 1,
     "typicalname": "uiInput",
-    "version": "15.5.14"
-  },
-  {
-    "description": "Range Input",
-    "id": "TheInputRange",
-    "kind": "class",
-    "longname": "TheInputRange",
-    "meta": {
-      "filename": "TheInputRange.jsx",
-      "lineno": 18,
-      "path": "lib"
-    },
-    "name": "TheInputRange",
-    "order": 25,
-    "scope": "global"
-  },
-  {
-    "description": "Slider Input",
-    "id": "TheInputSlider",
-    "kind": "class",
-    "longname": "TheInputSlider",
-    "meta": {
-      "filename": "TheInputSlider.jsx",
-      "lineno": 18,
-      "path": "lib"
-    },
-    "name": "TheInputSlider",
-    "order": 45,
-    "scope": "global"
+    "version": "15.5.16"
   },
   {
     "description": "Text Input",
@@ -114,6 +86,21 @@
     "scope": "global"
   },
   {
+    "description": "Range Input",
+    "id": "TheInputRange",
+    "kind": "constant",
+    "longname": "TheInputRange",
+    "meta": {
+      "filename": "TheInputRange.jsx",
+      "lineno": 19,
+      "path": "lib"
+    },
+    "name": "TheInputRange",
+    "order": 25,
+    "params": [],
+    "scope": "global"
+  },
+  {
     "description": "Select Input",
     "id": "TheInputSelect",
     "kind": "constant",
@@ -125,6 +112,21 @@
     },
     "name": "TheInputSelect",
     "order": 33,
+    "params": [],
+    "scope": "global"
+  },
+  {
+    "description": "Slider Input",
+    "id": "TheInputSlider",
+    "kind": "constant",
+    "longname": "TheInputSlider",
+    "meta": {
+      "filename": "TheInputSlider.jsx",
+      "lineno": 18,
+      "path": "lib"
+    },
+    "name": "TheInputSlider",
+    "order": 45,
     "params": [],
     "scope": "global"
   },
@@ -507,7 +509,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 336,
+      "lineno": 276,
       "path": "lib"
     },
     "name": "barOnly",
@@ -522,7 +524,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 338,
+      "lineno": 278,
       "path": "lib"
     },
     "name": "error",
@@ -537,7 +539,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 340,
+      "lineno": 280,
       "path": "lib"
     },
     "name": "max",
@@ -552,7 +554,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 342,
+      "lineno": 282,
       "path": "lib"
     },
     "name": "min",
@@ -567,7 +569,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 345,
+      "lineno": 285,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -582,7 +584,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 347,
+      "lineno": 287,
       "path": "lib"
     },
     "name": "step",
@@ -597,7 +599,7 @@
     "memberof": "TheInputRange.propTypes",
     "meta": {
       "filename": "TheInputRange.jsx",
-      "lineno": 349,
+      "lineno": 289,
       "path": "lib"
     },
     "name": "value",
@@ -777,7 +779,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 235,
+      "lineno": 197,
       "path": "lib"
     },
     "name": "barOnly",
@@ -792,7 +794,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 237,
+      "lineno": 199,
       "path": "lib"
     },
     "name": "error",
@@ -807,7 +809,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 239,
+      "lineno": 201,
       "path": "lib"
     },
     "name": "max",
@@ -822,7 +824,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 241,
+      "lineno": 203,
       "path": "lib"
     },
     "name": "min",
@@ -837,7 +839,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 244,
+      "lineno": 206,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -852,7 +854,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 246,
+      "lineno": 208,
       "path": "lib"
     },
     "name": "step",
@@ -867,7 +869,7 @@
     "memberof": "TheInputSlider.propTypes",
     "meta": {
       "filename": "TheInputSlider.jsx",
-      "lineno": 248,
+      "lineno": 210,
       "path": "lib"
     },
     "name": "value",
@@ -1347,7 +1349,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 213,
+      "lineno": 197,
       "path": "lib"
     },
     "name": "accept",
@@ -1362,7 +1364,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 215,
+      "lineno": 199,
       "path": "lib"
     },
     "name": "convertFile",
@@ -1377,7 +1379,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 217,
+      "lineno": 201,
       "path": "lib"
     },
     "name": "error",
@@ -1392,7 +1394,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 219,
+      "lineno": 203,
       "path": "lib"
     },
     "name": "height",
@@ -1407,7 +1409,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 221,
+      "lineno": 205,
       "path": "lib"
     },
     "name": "multiple",
@@ -1422,7 +1424,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 224,
+      "lineno": 208,
       "path": "lib"
     },
     "name": "onError",
@@ -1437,7 +1439,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 226,
+      "lineno": 210,
       "path": "lib"
     },
     "name": "onLoad",
@@ -1452,7 +1454,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 228,
+      "lineno": 212,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -1467,7 +1469,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 230,
+      "lineno": 214,
       "path": "lib"
     },
     "name": "spinner",
@@ -1482,7 +1484,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 232,
+      "lineno": 216,
       "path": "lib"
     },
     "name": "text",
@@ -1497,7 +1499,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 234,
+      "lineno": 218,
       "path": "lib"
     },
     "name": "value",
@@ -1512,7 +1514,7 @@
     "memberof": "TheInputUpload.propTypes",
     "meta": {
       "filename": "TheInputUpload.jsx",
-      "lineno": 236,
+      "lineno": 220,
       "path": "lib"
     },
     "name": "width",

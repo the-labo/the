@@ -13,12 +13,6 @@
 ## Classes
 
 <dl>
-<dt><a href="#TheInputRange">TheInputRange</a></dt>
-<dd><p>Range Input</p>
-</dd>
-<dt><a href="#TheInputSlider">TheInputSlider</a></dt>
-<dd><p>Slider Input</p>
-</dd>
 <dt><a href="#TheInputText">TheInputText</a></dt>
 <dd><p>Text Input</p>
 </dd>
@@ -36,8 +30,14 @@
 <dt><a href="#TheInputRadio">TheInputRadio</a></dt>
 <dd><p>Radio input of the-components</p>
 </dd>
+<dt><a href="#TheInputRange">TheInputRange</a></dt>
+<dd><p>Range Input</p>
+</dd>
 <dt><a href="#TheInputSelect">TheInputSelect</a></dt>
 <dd><p>Select Input</p>
+</dd>
+<dt><a href="#TheInputSlider">TheInputSlider</a></dt>
+<dd><p>Slider Input</p>
 </dd>
 <dt><a href="#TheInputTextArea">TheInputTextArea</a></dt>
 <dd><p>TextArea Input</p>
@@ -67,19 +67,7 @@
 ## @the-/ui-input
 Input of the-components
 
-**Version**: 15.5.14  
-<a name="TheInputRange"></a>
-
-## TheInputRange
-Range Input
-
-**Kind**: global class  
-<a name="TheInputSlider"></a>
-
-## TheInputSlider
-Slider Input
-
-**Kind**: global class  
+**Version**: 15.5.16  
 <a name="TheInputText"></a>
 
 ## TheInputText
@@ -104,10 +92,22 @@ Checkbox input of the-components
 Radio input of the-components
 
 **Kind**: global constant  
+<a name="TheInputRange"></a>
+
+## TheInputRange
+Range Input
+
+**Kind**: global constant  
 <a name="TheInputSelect"></a>
 
 ## TheInputSelect
 Select Input
+
+**Kind**: global constant  
+<a name="TheInputSlider"></a>
+
+## TheInputSlider
+Slider Input
 
 **Kind**: global constant  
 <a name="TheInputTextArea"></a>

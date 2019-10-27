@@ -2,9 +2,8 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { TheCondition } from '@the-/ui-condition'
-import { TheIcon } from '@the-/ui-icon'
 import { TheSpin } from '@the-/ui-spin'
 import {
   eventHandlersFor,
@@ -18,191 +17,176 @@ import {
   isVideoUrl,
   renderErrorMessage,
 } from './helpers'
+import TheInputUploadCloseButton from './partials/TheInputUploadCloseButton'
 import TheInputUploadLabel from './partials/TheInputUploadLabel'
 import TheInputUploadPreview from './partials/TheInputUploadPreview'
 
 const previewUrlFilter = (url) =>
   isImageUrl(url) || isVideoUrl(url) || isUnknownTypeUrl(url)
 
-class TheInputUpload extends React.PureComponent {
-  constructor(props) {
-    super(props)
-    this.id = newId()
-    this.handleChange = this.handleChange.bind(this)
-    this.handleRemove = this.handleRemove.bind(this)
-    this.state = {
-      error: null,
-      spinning: false,
-      urls: [].concat(props.value).filter(Boolean),
-    }
-  }
+const TheInputUpload = React.memo((props) => {
+  const {
+    accept,
+    children,
+    className,
+    closeIcon,
+    convertFile,
+    guideIcon,
+    height,
+    multiple,
+    name,
+    onChange,
+    onError,
+    onLoad,
+    onUpdate,
+    readOnly,
+    text,
+    value,
+    width,
+  } = props
+  const id = useMemo(() => props.id || newId(), [props.id])
+  const [error, setError] = useState(null)
+  const [spinning, setSpinning] = useState(false)
+  const [urls, setUrls] = useState([].concat(props.value).filter(Boolean))
+  const [gone, setGone] = useState(null)
+  useEffect(
+    () => () => {
+      setGone(true)
+    },
+    [],
+  )
 
-  componentDidMount() {}
-
-  componentDidUpdate(prevProps) {
-    const {
-      props: { value },
-    } = this
-
+  useEffect(() => {
     const hasValue = value && value.length > 0
-    if (hasValue && prevProps.value !== value) {
-      this.setState({ urls: [].concat(value) })
+    if (hasValue) {
+      setUrls([].concat(value))
     }
-  }
+  }, [value])
 
-  componentWillUnmount() {
-    this.gone = true
-  }
+  const handleChange = useCallback(
+    (e) => {
+      const { target } = e
 
-  handleChange(e) {
-    const {
-      props,
-      props: {
-        convertFile,
-        multiple,
-        name,
-        onChange,
-        onError,
-        onLoad,
-        onUpdate,
-      },
-    } = this
-    const { target } = e
-
-    if (target.files.length === 0) {
-      return
-    }
-
-    this.setState({ spinning: true })
-    onChange && onChange(e)
-    ;(async () => {
-      try {
-        const urls = await Promise.all(
-          [...target.files].map(async (file) => convertFile(file, props)),
-        )
-        if (this.gone) {
-          return
-        }
-
-        onLoad && onLoad({ target, urls })
-        onUpdate && onUpdate({ [name]: multiple ? urls : urls[0] })
-        this.setState({ urls })
-      } catch (error) {
-        this.setState({ error, spinning: false, urls: [] })
-        if (onError) {
-          onError(error)
-        } else {
-          console.error('[TheInputUpload] File change failed', error)
-        }
-      } finally {
-        this.setState({ spinning: false })
+      if (target.files.length === 0) {
+        return
       }
-    })()
-  }
+      setSpinning(true)
+      onChange && onChange(e)
+      ;(async () => {
+        try {
+          const urls = await Promise.all(
+            [...target.files].map(async (file) =>
+              convertFile(file, {
+                multiple,
+                name,
+                value,
+              }),
+            ),
+          )
+          if (gone) {
+            return
+          }
 
-  handleRemove() {
-    const {
-      props: { name, onLoad, onUpdate },
-    } = this
+          onLoad && onLoad({ target, urls })
+          onUpdate && onUpdate({ [name]: multiple ? urls : urls[0] })
+          setUrls(urls)
+        } catch (error) {
+          setSpinning(false)
+          setUrls([])
+          setError(error)
+          if (onError) {
+            onError(error)
+          } else {
+            console.error('[TheInputUpload] File change failed', error)
+          }
+        } finally {
+          setSpinning(false)
+        }
+      })()
+    },
+    [
+      convertFile,
+      multiple,
+      name,
+      onChange,
+      onError,
+      onLoad,
+      onUpdate,
+      setSpinning,
+      gone,
+    ],
+  )
 
+  const handleRemove = useCallback(() => {
     const urls = []
-    this.setState({
-      error: null,
-      urls,
-    })
+    setError(null)
+    setUrls(urls)
     onLoad && onLoad(urls)
     onUpdate && onUpdate({ [name]: null })
-  }
+  }, [name, onLoad, onUpdate])
 
-  render() {
-    const {
-      props,
-      props: {
-        accept,
-        children,
-        className,
-        closeIcon,
-        error,
-        guideIcon,
-        height,
-        id = this.id,
-        multiple,
-        name,
-        readOnly,
-        text,
-        value,
-        width,
-      },
-      state: { spinning, urls },
-    } = this
-
-    const hasImage = !!urls && urls.length > 0
-    return (
-      <div
-        {...htmlAttributesFor(props, { except: ['id', 'className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={c('the-input-upload', className, {
-          'the-input-error': !!error,
-          'the-input-upload-read-only': !!readOnly,
-        })}
-        data-value={value}
-        id={id}
-      >
-        {renderErrorMessage(error)}
-        <input
-          accept={accept}
-          className={c('the-input-upload-input')}
-          id={`${id}-file`}
-          multiple={multiple}
-          name={name}
-          onChange={this.handleChange}
-          readOnly={readOnly}
-          style={readOnly && !hasImage ? {} : { height, width }}
-          tabIndex={-1}
-          type='file'
-        />
-        <TheCondition unless={readOnly}>
-          <TheInputUploadLabel
-            htmlFor={`${id}-file`}
-            icon={guideIcon || TheInputUpload.GUIDE_ICON}
-            text={text}
-          >
-            {children}
-          </TheInputUploadLabel>
-        </TheCondition>
-        <TheCondition if={spinning}>
-          <TheSpin className='the-input-upload-spin' cover enabled />
-        </TheCondition>
-        <TheCondition if={hasImage}>
-          <div>
-            <TheCondition unless={readOnly}>
-              <a className='the-input-upload-close' onClick={this.handleRemove}>
-                <TheIcon
-                  className={c(
-                    'the-input-upload-close-icon',
-                    closeIcon || TheInputUpload.CLOSE_ICON,
-                  )}
-                />
-              </a>
-            </TheCondition>
-            {(urls || [])
-              .filter(Boolean)
-              .filter(previewUrlFilter)
-              .map((url, i) => (
-                <TheInputUploadPreview
-                  height={height}
-                  i={i}
-                  key={url}
-                  url={url}
-                  width={width}
-                />
-              ))}
-          </div>
-        </TheCondition>
-      </div>
-    )
-  }
-}
+  const hasImage = !!urls && urls.length > 0
+  return (
+    <div
+      {...htmlAttributesFor(props, { except: ['id', 'className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={c('the-input-upload', className, {
+        'the-input-error': !!error,
+        'the-input-upload-read-only': !!readOnly,
+      })}
+      data-value={value}
+      id={id}
+    >
+      {renderErrorMessage(error)}
+      <input
+        accept={accept}
+        className={c('the-input-upload-input')}
+        id={`${id}-file`}
+        multiple={multiple}
+        name={name}
+        onChange={handleChange}
+        readOnly={readOnly}
+        style={readOnly && !hasImage ? {} : { height, width }}
+        tabIndex={-1}
+        type='file'
+      />
+      <TheCondition unless={readOnly}>
+        <TheInputUploadLabel
+          htmlFor={`${id}-file`}
+          icon={guideIcon || TheInputUpload.GUIDE_ICON}
+          text={text}
+        >
+          {children}
+        </TheInputUploadLabel>
+      </TheCondition>
+      <TheCondition if={spinning}>
+        <TheSpin className='the-input-upload-spin' cover enabled />
+      </TheCondition>
+      <TheCondition if={hasImage}>
+        <div>
+          <TheCondition unless={readOnly}>
+            <TheInputUploadCloseButton
+              icon={closeIcon || TheInputUpload.CLOSE_ICON}
+              onClick={handleRemove}
+            />
+          </TheCondition>
+          {(urls || [])
+            .filter(Boolean)
+            .filter(previewUrlFilter)
+            .map((url, i) => (
+              <TheInputUploadPreview
+                height={height}
+                i={i}
+                key={url}
+                url={url}
+                width={width}
+              />
+            ))}
+        </div>
+      </TheCondition>
+    </div>
+  )
+})
 
 TheInputUpload.GUIDE_ICON = 'fas fa-cloud-upload-alt'
 TheInputUpload.CLOSE_ICON = 'fas fa-times'
