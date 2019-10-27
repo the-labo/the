@@ -22,9 +22,6 @@
 <dt><a href="#TheInputText">TheInputText</a></dt>
 <dd><p>Text Input</p>
 </dd>
-<dt><a href="#TheInputTextArea">TheInputTextArea</a></dt>
-<dd><p>TextArea Input</p>
-</dd>
 </dl>
 
 ## Constants
@@ -41,6 +38,9 @@
 </dd>
 <dt><a href="#TheInputSelect">TheInputSelect</a></dt>
 <dd><p>Select Input</p>
+</dd>
+<dt><a href="#TheInputTextArea">TheInputTextArea</a></dt>
+<dd><p>TextArea Input</p>
 </dd>
 <dt><a href="#TheInputToggle">TheInputToggle</a></dt>
 <dd><p>Toggle input of the-components</p>
@@ -67,7 +67,7 @@
 ## @the-/ui-input
 Input of the-components
 
-**Version**: 15.5.12  
+**Version**: 15.5.14  
 <a name="TheInputRange"></a>
 
 ## TheInputRange
@@ -84,12 +84,6 @@ Slider Input
 
 ## TheInputText
 Text Input
-
-**Kind**: global class  
-<a name="TheInputTextArea"></a>
-
-## TheInputTextArea
-TextArea Input
 
 **Kind**: global class  
 <a name="TheInput"></a>
@@ -116,6 +110,12 @@ Radio input of the-components
 Select Input
 
 **Kind**: global constant  
+<a name="TheInputTextArea"></a>
+
+## TheInputTextArea
+TextArea Input
+
+**Kind**: global constant  
 <a name="TheInputToggle"></a>
 
 ## TheInputToggle
@@ -135,4 +135,4 @@ Style for TheInput
 <a name="TheInputUploadStyleData"></a>
 
 ## TheInputUploadStyleData()
-**Kind**: global function
+**Kind**: global function  
