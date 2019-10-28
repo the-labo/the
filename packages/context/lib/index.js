@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/context
  * @typicalname context
- * @version 16.0.9
+ * @version 16.0.10
  */
 'use strict'
 
