@@ -327,9 +327,12 @@ class TheServer extends RFunc {
         const { iid, methodName, moduleName, params } = config
         const driver = controllerDriverPool.get(cid, socketId, moduleName)
         if (!driver) {
-          throw new Error(
-            `[@the-/server] Controller not found for name: ${moduleName}`,
+          const error = new Error(
+            `[@the-/server] Controller not found: ${moduleName}`,
           )
+          console.error(error)
+          await this.ioConnector.sendRPCError(cid, iid, [error])
+          return
         }
 
         const { controllerName, interceptors } = driver
