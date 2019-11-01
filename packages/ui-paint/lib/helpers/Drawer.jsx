@@ -55,11 +55,9 @@ class Drawer {
 
   clear() {
     this.canvasAccess.clear()
-    const { background, layer } = this
-    if (layer) {
-      layer.canvasAccess.clear()
-    }
-
+    this.tmpLayer && this.tmpLayer.clear()
+    this.layerHistories = []
+    const { background } = this
     if (background) {
       this.drawBackground(background)
     }
