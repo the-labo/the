@@ -5,7 +5,7 @@
 ## @the-/util-color
 Color utility for the-framework
 
-**Version**: 15.4.10  
+**Version**: 15.4.12  
 **License**: MIT  
 
 * [@the-/util-color](#module_@the-/util-color)

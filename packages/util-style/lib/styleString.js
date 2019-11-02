@@ -1,5 +1,12 @@
 'use strict'
 
+const nanoCSS = require('nano-css')
+const { addon: keyframes } = require('nano-css/addon/keyframes')
+const { addon: prefixer } = require('nano-css/addon/prefixer')
+const { addon: unitless } = require('nano-css/addon/unitless')
+
+const EOL = '\n'
+
 /**
  * Convert style into style string
  * @function styleString
@@ -8,14 +15,6 @@
  * @param {string} [atRule=null]
  * @returns {Object} Style object
  */
-const nanoCSS = require('nano-css')
-const { addon: keyframes } = require('nano-css/addon/keyframes')
-const { addon: prefixer } = require('nano-css/addon/prefixer')
-const { addon: unitless } = require('nano-css/addon/unitless')
-
-const EOL = '\n'
-
-/** @lends styleString */
 function styleString(selector, style, atRule = null) {
   if (/^@/.test(selector)) {
     const converted = Object.entries(style)
@@ -24,7 +23,16 @@ function styleString(selector, style, atRule = null) {
     return `${selector} { ${converted}}`
   }
 
-  const nano = nanoCSS.create({ client: false })
+  const nano = nanoCSS.create({
+    client: false,
+    decl(key, value) {
+      key = nano.kebab(key)
+      return []
+        .concat(value)
+        .map((value) => `${key}:${value};`)
+        .join(`${EOL}    `)
+    },
+  })
   unitless(nano)
   prefixer(nano)
   keyframes(nano)

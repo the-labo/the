@@ -13,7 +13,7 @@
     "name": "@the-/util-color",
     "order": 2,
     "typicalname": "utilColor",
-    "version": "15.4.10"
+    "version": "15.4.12"
   },
   {
     "description": "Get color with alpha",

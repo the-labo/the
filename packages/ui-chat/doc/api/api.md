@@ -38,7 +38,7 @@
 ## @the-/ui-chat
 Chat UI of the-components
 
-**Version**: 15.4.13  
+**Version**: 15.4.14  
 <a name="TheChatForm"></a>
 
 ## TheChatForm

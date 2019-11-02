@@ -2,7 +2,7 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useCallback } from 'react'
 import { styleString } from '@the-/util-style'
 
 const EOL = '\n'
@@ -10,15 +10,9 @@ const EOL = '\n'
 /**
  * Style of the-components
  */
-class TheStyle extends React.PureComponent {
-  static styles(values) {
-    return Object(values)
-  }
-
-  getChildrenAsString() {
-    const {
-      props: { children },
-    } = this
+const TheStyle = React.memo((props) => {
+  const { children, className, id, prefix, styles, type } = props
+  const getChildrenAsString = useCallback(() => {
     if (!children) {
       return null
     }
@@ -27,18 +21,9 @@ class TheStyle extends React.PureComponent {
       .concat(children)
       .map((child) => child)
       .join(EOL)
-  }
+  }, [children])
 
-  getInnerHTML() {
-    return [this.getStylesAsString(), this.getChildrenAsString()]
-      .filter(Boolean)
-      .join(EOL)
-  }
-
-  getStylesAsString() {
-    const {
-      props: { prefix, styles },
-    } = this
+  const getStylesAsString = useCallback(() => {
     if (!styles) {
       return null
     }
@@ -52,23 +37,23 @@ class TheStyle extends React.PureComponent {
       )
       .filter(Boolean)
       .join(EOL)
-  }
+  }, [prefix, styles])
 
-  render() {
-    const {
-      props: { className, id, type },
-    } = this
+  const getInnerHTML = useCallback(
+    () =>
+      [getStylesAsString(), getChildrenAsString()].filter(Boolean).join(EOL),
+    [getStylesAsString, getChildrenAsString],
+  )
 
-    return (
-      <style
-        className={c('the-style', className)}
-        dangerouslySetInnerHTML={{ __html: this.getInnerHTML() }}
-        id={id}
-        type={type}
-      />
-    )
-  }
-}
+  return (
+    <style
+      className={c('the-style', className)}
+      dangerouslySetInnerHTML={{ __html: getInnerHTML() }}
+      id={id}
+      type={type}
+    />
+  )
+})
 
 TheStyle.propTypes = {
   /** CSS class name */

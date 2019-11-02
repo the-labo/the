@@ -10,6 +10,7 @@ export default React.memo(function TheInputTagItem({ icon, onRemove, text }) {
   }, [text])
   return (
     <span className='the-input-tag-tag'>
+      <span className='the-input-tag-back'></span>
       <span className='the-input-tag-text'>{text}</span>
       <span className={c('the-input-tag-remover')} onClick={handleRemoveClick}>
         <TheIcon className={icon} />

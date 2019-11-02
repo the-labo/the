@@ -32,6 +32,15 @@ describe('style-string', () => {
     })
     equal(result, '\n.foo {\n    color:white;\n}\n')
   })
+
+  it('Multiple values', () => {
+    const result = styleString.fromStyles({
+      '.foo': {
+        color: ['var(--DOMINANT_COLOR)', 'white'],
+      },
+    })
+    console.log(result)
+  })
 })
 
 /* global describe, before, after, it */

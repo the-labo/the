@@ -1,6 +1,5 @@
 'use strict'
 
-import { colorWithAlpha } from '@the-/util-color'
 import { asStyleData } from '@the-/util-ui'
 
 function TextStyleData({
@@ -46,7 +45,7 @@ function TextStyleData({
         borderBottom: 'none',
       },
       '&.the-input-text-option-selected': {
-        backgroundColor: colorWithAlpha(dominantColor, 0.2),
+        backgroundColor: dominantColor,
       },
       alignItems: 'center',
       backgroundColor,

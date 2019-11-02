@@ -2,7 +2,7 @@
 /**
  * React components of THE framework
  * @module @the-/ui
- * @version 15.7.1
+ * @version 15.7.3
  */
 
 'use strict'

@@ -1,6 +1,5 @@
 'use strict'
 
-import { colorWithAlpha } from '@the-/util-color'
 import { asStyleData } from '@the-/util-ui'
 
 function TagStyleData({
@@ -32,6 +31,17 @@ function TagStyleData({
       outline: 'none',
       width: 'auto',
     },
+    '.the-input-tag-back': {
+      backgroundColor: dominantColor,
+      bottom: 0,
+      display: 'block',
+      left: 0,
+      opacity: 0.2,
+      pointerEvents: 'none',
+      position: 'absolute',
+      right: 0,
+      top: 0,
+    },
     '.the-input-tag-remover': {
       '.the-icon': {
         padding: '0',
@@ -45,7 +55,6 @@ function TagStyleData({
     },
     '.the-input-tag-tag': {
       alignItems: 'center',
-      backgroundColor: colorWithAlpha(dominantColor, 0.2),
       borderRadius: '2px',
       color: dominantColor,
       display: 'inline-flex',

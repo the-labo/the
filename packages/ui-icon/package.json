@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-icon",
   "description": "Icon of the-components",
-  "version": "15.4.11",
+  "version": "15.4.12",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,8 +11,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/const-ui": "^15.4.5",
-    "@the-/ui-style": "^15.4.12",
+    "@the-/ui-style": "^16.0.0",
     "@the-/util-ui": "^16.0.5",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"

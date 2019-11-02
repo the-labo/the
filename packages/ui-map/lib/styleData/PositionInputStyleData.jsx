@@ -1,6 +1,6 @@
 'use strict'
 
-import { asStyleData, colorAlpha } from '@the-/util-ui'
+import { asStyleData } from '@the-/util-ui'
 
 function PositionInputStyleData({
   dominantColor,
@@ -55,32 +55,35 @@ function PositionInputStyleData({
       zIndex: displayZIndex,
     },
     '.the-map-position-input-target-bar1': {
-      background: colorAlpha(dominantColor, 0.66),
+      background: dominantColor,
       bottom: 0,
       display: 'block',
       height: '100%',
       left: `calc(50% - ${barWidth / 2}px)`,
+      opacity: 0.66,
       position: 'absolute',
       top: 0,
       width: `${barWidth}px`,
     },
     '.the-map-position-input-target-bar2': {
-      background: colorAlpha(dominantColor, 0.66),
+      background: dominantColor,
       display: 'block',
       height: `${barWidth}px`,
       left: 0,
+      opacity: 0.66,
       position: 'absolute',
       right: 0,
       top: `calc(50% - ${barWidth / 2}px)`,
       width: '100%',
     },
     '.the-map-position-input-target-dot': {
-      background: colorAlpha(dominantColor, 1),
+      background: dominantColor,
       border: `1px solid ${dominantColor}`,
       borderRadius: '50%',
       boxSizing: 'border-box',
       display: 'block',
       height: '4px',
+      opacity: 0.66,
       width: '4px',
     },
     '.the-map-position-input-values': {

@@ -14,8 +14,12 @@ function colorWithAlpha(color, alpha) {
   if (!color) {
     return null
   }
-
-  return withAlpha(color, alpha)
+  try {
+    return withAlpha(color, alpha)
+  } catch (e) {
+    console.warn(`[@the-/uti-color] Failed to add alpha to color: ${color}`)
+    return color
+  }
 }
 
 module.exports = colorWithAlpha

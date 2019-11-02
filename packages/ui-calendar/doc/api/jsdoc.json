@@ -12,7 +12,7 @@
     "name": "@the-/ui-calendar",
     "order": 0,
     "typicalname": "uiCalendar",
-    "version": "15.4.11"
+    "version": "15.4.14"
   },
   {
     "description": "Calendar of the-components",
@@ -36,7 +36,7 @@
     "longname": "TheCalendarStyle",
     "meta": {
       "filename": "TheCalendarStyle.jsx",
-      "lineno": 12,
+      "lineno": 11,
       "path": "lib"
     },
     "name": "TheCalendarStyle",
@@ -142,7 +142,7 @@
     "memberof": "TheCalendarStyle.propTypes",
     "meta": {
       "filename": "TheCalendarStyle.jsx",
-      "lineno": 23,
+      "lineno": 22,
       "path": "lib"
     },
     "name": "options",

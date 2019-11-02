@@ -12,12 +12,12 @@
     "name": "@the-/ui-style",
     "order": 0,
     "typicalname": "uiStyle",
-    "version": "15.4.12"
+    "version": "16.0.0"
   },
   {
     "description": "Style of the-components",
     "id": "TheStyle",
-    "kind": "class",
+    "kind": "constant",
     "longname": "TheStyle",
     "meta": {
       "filename": "TheStyle.jsx",
@@ -26,6 +26,7 @@
     },
     "name": "TheStyle",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
@@ -36,7 +37,7 @@
     "memberof": "TheStyle.propTypes",
     "meta": {
       "filename": "TheStyle.jsx",
-      "lineno": 75,
+      "lineno": 60,
       "path": "lib"
     },
     "name": "className",
@@ -51,7 +52,7 @@
     "memberof": "TheStyle.propTypes",
     "meta": {
       "filename": "TheStyle.jsx",
-      "lineno": 77,
+      "lineno": 62,
       "path": "lib"
     },
     "name": "id",
@@ -66,7 +67,7 @@
     "memberof": "TheStyle.propTypes",
     "meta": {
       "filename": "TheStyle.jsx",
-      "lineno": 79,
+      "lineno": 64,
       "path": "lib"
     },
     "name": "prefix",
@@ -81,7 +82,7 @@
     "memberof": "TheStyle.propTypes",
     "meta": {
       "filename": "TheStyle.jsx",
-      "lineno": 81,
+      "lineno": 66,
       "path": "lib"
     },
     "name": "type",

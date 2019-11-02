@@ -4,7 +4,7 @@
  * @description Style of the-components
  * @module @the-/ui-style
  * @typicalname uiStyle
- * @version 15.4.12
+ * @version 16.0.0
  */
 'use strict'
 

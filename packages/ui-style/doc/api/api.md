@@ -8,7 +8,7 @@
 </dd>
 </dl>
 
-## Classes
+## Constants
 
 <dl>
 <dt><a href="#TheStyle">TheStyle</a></dt>
@@ -21,10 +21,10 @@
 ## @the-/ui-style
 Style of the-components
 
-**Version**: 15.4.12  
+**Version**: 16.0.0  
 <a name="TheStyle"></a>
 
 ## TheStyle
 Style of the-components
 
-**Kind**: global class  
+**Kind**: global constant  
