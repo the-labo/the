@@ -11,18 +11,10 @@ import {
   newId,
   readFileAsDataURL,
 } from '@the-/util-ui'
-import {
-  isImageUrl,
-  isUnknownTypeUrl,
-  isVideoUrl,
-  renderErrorMessage,
-} from './helpers'
+import { renderErrorMessage } from './helpers'
 import TheInputUploadCloseButton from './partials/TheInputUploadCloseButton'
 import TheInputUploadLabel from './partials/TheInputUploadLabel'
 import TheInputUploadPreview from './partials/TheInputUploadPreview'
-
-const previewUrlFilter = (url) =>
-  isImageUrl(url) || isVideoUrl(url) || isUnknownTypeUrl(url)
 
 const TheInputUpload = React.memo((props) => {
   const {
@@ -63,58 +55,64 @@ const TheInputUpload = React.memo((props) => {
     }
   }, [value])
 
+  const filesToUrls = useCallback(
+    async (files) =>
+      Promise.all(
+        [...files].map(async (file) =>
+          convertFile(file, {
+            multiple,
+            name,
+            value,
+          }),
+        ),
+      ),
+    [convertFile, multiple, name, value],
+  )
+
+  const handleError = useCallback(() => {
+    setError(error)
+    if (onError) {
+      onError(error)
+    } else {
+      console.error('[TheInputUpload] File change failed', error)
+    }
+  }, [setError])
+
+  const spinWhile = useCallback(
+    async (action) => {
+      setSpinning(true)
+      try {
+        return await action()
+      } finally {
+        setSpinning(false)
+      }
+    },
+    [setSpinning],
+  )
+
   const handleChange = useCallback(
     (e) => {
       const { target } = e
-
       if (target.files.length === 0) {
         return
       }
-      setSpinning(true)
       onChange && onChange(e)
-      ;(async () => {
+      void spinWhile(async () => {
         try {
-          const urls = await Promise.all(
-            [...target.files].map(async (file) =>
-              convertFile(file, {
-                multiple,
-                name,
-                value,
-              }),
-            ),
-          )
+          const urls = await filesToUrls(target.files)
           if (gone) {
             return
           }
-
           onLoad && onLoad({ target, urls })
           onUpdate && onUpdate({ [name]: multiple ? urls : urls[0] })
           setUrls(urls)
         } catch (error) {
-          setSpinning(false)
           setUrls([])
-          setError(error)
-          if (onError) {
-            onError(error)
-          } else {
-            console.error('[TheInputUpload] File change failed', error)
-          }
-        } finally {
-          setSpinning(false)
+          handleError(error)
         }
-      })()
+      })
     },
-    [
-      convertFile,
-      multiple,
-      name,
-      onChange,
-      onError,
-      onLoad,
-      onUpdate,
-      setSpinning,
-      gone,
-    ],
+    [multiple, name, onChange, onError, onLoad, onUpdate, gone],
   )
 
   const handleRemove = useCallback(() => {
@@ -170,18 +168,15 @@ const TheInputUpload = React.memo((props) => {
               onClick={handleRemove}
             />
           </TheCondition>
-          {(urls || [])
-            .filter(Boolean)
-            .filter(previewUrlFilter)
-            .map((url, i) => (
-              <TheInputUploadPreview
-                height={height}
-                i={i}
-                key={url}
-                url={url}
-                width={width}
-              />
-            ))}
+          {(urls || []).filter(Boolean).map((url, i) => (
+            <TheInputUploadPreview
+              height={height}
+              i={i}
+              key={url}
+              url={url}
+              width={width}
+            />
+          ))}
         </div>
       </TheCondition>
     </div>

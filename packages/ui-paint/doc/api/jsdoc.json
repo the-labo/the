@@ -12,7 +12,7 @@
     "name": "@the-/ui-paint",
     "order": 0,
     "typicalname": "uiPaint",
-    "version": "15.5.8"
+    "version": "15.5.10"
   },
   {
     "id": "DrawerLayer",
@@ -65,7 +65,7 @@
     "memberof": "ThePaint.propTypes",
     "meta": {
       "filename": "ThePaint.jsx",
-      "lineno": 175,
+      "lineno": 178,
       "path": "lib"
     },
     "name": "method",
@@ -80,7 +80,7 @@
     "memberof": "ThePaint.propTypes",
     "meta": {
       "filename": "ThePaint.jsx",
-      "lineno": 179,
+      "lineno": 182,
       "path": "lib"
     },
     "name": "onDrawer",

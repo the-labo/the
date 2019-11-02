@@ -3,7 +3,7 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_helpers">helpers</a></dt>
+<dt><a href="#@the-/ui.input.module_helpers">helpers</a></dt>
 <dd></dd>
 <dt><a href="#module_@the-/ui-input">@the-/ui-input</a></dt>
 <dd><p>Input of the-components</p>
@@ -59,7 +59,7 @@
 <dd></dd>
 </dl>
 
-<a name="module_helpers"></a>
+<a name="@the-/ui.input.module_helpers"></a>
 
 ## helpers
 <a name="module_@the-/ui-input"></a>
@@ -67,7 +67,7 @@
 ## @the-/ui-input
 Input of the-components
 
-**Version**: 15.5.16  
+**Version**: 15.5.18  
 <a name="TheInputText"></a>
 
 ## TheInputText

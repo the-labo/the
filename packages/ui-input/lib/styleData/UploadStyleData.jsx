@@ -102,15 +102,27 @@ function UploadStyleData({ backgroundColor, errorColor }) {
       zIndex: 4,
     },
     '.the-input-upload-preview-img': {
+      backgroundColor: 'rgba(255,255,255,0.9)',
       objectFit: 'contain',
     },
     '.the-input-upload-preview-video': {
+      backgroundColor: 'rgba(255,255,255,0.9)',
       objectFit: 'contain',
     },
     '.the-input-upload-spin.the-spin.the-spinner-cover': {
       zIndex: 8,
     },
     '.the-input-upload-text': {},
+    '.the-input-upload-unknown': {
+      alignItems: 'center',
+      background: 'rgba(255,255,255,0.9)',
+      display: 'flex',
+      fontSize: '4em',
+      height: '100%',
+      justifyContent: 'center',
+      textAlign: 'center',
+      width: '100%',
+    },
     '.the-input-upload.the-input-error': {
       '.the-input-upload-label': {
         borderColor: errorColor,

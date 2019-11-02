@@ -1,8 +1,9 @@
 /**
- * @module helpers
+ * @module @the-/ui.input.helpers
  */
 'use strict'
 
+import imageExtensions from 'image-extensions'
 import path from 'path'
 import React from 'react'
 import videoExtensions from 'video-extensions'
@@ -74,13 +75,12 @@ export function isImageUrl(src) {
     return true
   }
 
-  const imageExtensions = ['.jpg', '.jpeg', '.svg', '.gif', '.png']
   const extname = path.extname(parseUrl(src).pathname)
   if (!extname) {
     return false
   }
 
-  return imageExtensions.includes(extname)
+  return imageExtensions.includes(extname.replace(/^\./, ''))
 }
 
 export function isVideoUrl(src) {
