@@ -4,8 +4,9 @@
  * Create generator from readable
  * @memberof module:@the-/stream.helpers
  * @function generatorFromReadable
+ * @param readable
+ * @returns {*}
  */
-/** @lends module:@the-/stream.generatorFromReadable */
 function generatorFromReadable(readable) {
   const generator = {
     [Symbol.asyncIterator]: () => generator,

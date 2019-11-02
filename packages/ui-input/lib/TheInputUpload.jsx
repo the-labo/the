@@ -96,6 +96,7 @@ const TheInputUpload = React.memo((props) => {
       if (target.files.length === 0) {
         return
       }
+
       onChange && onChange(e)
       void spinWhile(async () => {
         try {
@@ -103,6 +104,7 @@ const TheInputUpload = React.memo((props) => {
           if (gone) {
             return
           }
+
           onLoad && onLoad({ target, urls })
           onUpdate && onUpdate({ [name]: multiple ? urls : urls[0] })
           setUrls(urls)

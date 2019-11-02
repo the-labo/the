@@ -23,6 +23,7 @@ export default React.memo(function TheInputUploadPreview({
         />
       )
     }
+
     if (isImageUrl(url)) {
       return (
         <img
@@ -33,9 +34,10 @@ export default React.memo(function TheInputUploadPreview({
         />
       )
     }
+
     return (
       <span className={c('the-input-upload-unknown')}>
-        <TheIcon className={'fas fa-file'} />
+        <TheIcon className='fas fa-file' />
       </span>
     )
   }, [])

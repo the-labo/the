@@ -17,6 +17,7 @@ const getReduxDevtool = (options) => {
 }
 
 exports.createReduxStore = createReduxStore
+
 exports.getReduxDevtool = getReduxDevtool
 
 module.exports = {

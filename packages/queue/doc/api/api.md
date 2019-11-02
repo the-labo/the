@@ -5,7 +5,7 @@
 ## @the-/queue
 Queue for the-framework
 
-**Version**: 15.4.8  
+**Version**: 15.4.12  
 **License**: MIT  
 
 * [@the-/queue](#module_@the-/queue)

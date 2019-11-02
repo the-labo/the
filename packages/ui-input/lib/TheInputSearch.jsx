@@ -20,6 +20,7 @@ const TheInputSearch = React.memo((props) => {
       if (newOpen === open) {
         return
       }
+
       setOpen(newOpen)
       const { current: input } = inputRef
       const focusTimer = setTimeout(() => {

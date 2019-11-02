@@ -103,10 +103,12 @@ const TheInputSelect = React.memo((props) => {
     if (!optionsElm) {
       return
     }
+
     if (!suggesting) {
       optionsElm.style.top = 0
       return
     }
+
     const minY = get('document.body.clientTop')
     const maxY = get('document.body.clientHeight')
     const rect = optionsElm.getBoundingClientRect()
@@ -134,6 +136,7 @@ const TheInputSelect = React.memo((props) => {
       if (!suggesting) {
         return
       }
+
       setSuggesting(false)
       setSuggestingIndex(getIndexForValue(value))
       handleChange({
@@ -177,6 +180,7 @@ const TheInputSelect = React.memo((props) => {
       if (over) {
         return false
       }
+
       setSuggestingIndex(newSuggestingIndex)
       return true
     },

@@ -87,6 +87,7 @@ const TheInputRange = React.memo((props) => {
       if (minX === maxX) {
         return
       }
+
       const {
         value: [currentFrom, currentTo],
       } = props

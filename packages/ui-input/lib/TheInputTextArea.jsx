@@ -46,6 +46,7 @@ const TheInputTextArea = React.memo((props) => {
     if (!textarea) {
       return
     }
+
     const newActualRows = applyRows(textarea, actualRows, { maxRows, minRows })
     if (newActualRows !== actualRows) {
       setActualRows(newActualRows)
@@ -56,6 +57,7 @@ const TheInputTextArea = React.memo((props) => {
     if (!autoExpand) {
       return
     }
+
     const timer = setTimeout(() => adjustRows(), 300)
     adjustRows()
     return () => clearTimeout(timer)
@@ -92,6 +94,7 @@ const TheInputTextArea = React.memo((props) => {
         default:
           break
       }
+
       onKeyDown && onKeyDown(e)
     },
     [onKeyDown, onCombineEnter, onEnter],
@@ -201,6 +204,7 @@ const applyRows = (textarea, currentRows, { maxRows, minRows }) => {
   if (isNaN(lineHeight)) {
     return
   }
+
   // 入力行数が少なくなったらそれに合わせてテキストエリアの行数も減らす
   // テキストエリアが offsetHeight < scrollHeight になるまで高さを小さくして、scrollHeight の最小値を求める
   const {
@@ -234,6 +238,7 @@ const applyRows = (textarea, currentRows, { maxRows, minRows }) => {
   if (maxRows) {
     newRows = Math.min(maxRows, newRows)
   }
+
   return newRows
 }
 

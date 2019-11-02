@@ -87,7 +87,7 @@ class RemoteStream extends TheStream {
 
     const chunkQueue = new TheQueue({ autoStart: true, name: 'chunk-queue' })
     const onChunk = async (chunk) => {
-      chunkQueue.push(async () => {
+      await chunkQueue.push(async () => {
         await this.remoteConsumer.waitToWrite()
         await this.remoteConsumer.write(chunk)
       })

@@ -5,45 +5,17 @@
 ## @the-/stream
 Base of the streams
 
-**Version**: 15.4.8  
+**Version**: 15.4.12  
 **License**: MIT  
 
 * [@the-/stream](#module_@the-/stream)
-    * _instance_
-        * [.pull()](#module_@the-/stream+pull) ⇒ <code>Promise.&lt;undefined&gt;</code>
-        * [.push(...chunks)](#module_@the-/stream+push) ⇒ <code>Promise.&lt;undefined&gt;</code>
-        * [.pushEnd()](#module_@the-/stream+pushEnd) ⇒ <code>Promise.&lt;undefined&gt;</code>
-    * _static_
-        * [.Consumer](#module_@the-/stream.Consumer)
-        * [.Provider](#module_@the-/stream.Provider)
-        * [.TheStream](#module_@the-/stream.TheStream)
-            * [new TheStream([options])](#new_module_@the-/stream.TheStream_new)
-        * [.helpers](#module_@the-/stream.helpers) : <code>object</code>
-            * [.generatorFromReadable()](#module_@the-/stream.helpers.generatorFromReadable)
+    * [.Consumer](#module_@the-/stream.Consumer)
+    * [.Provider](#module_@the-/stream.Provider)
+    * [.TheStream](#module_@the-/stream.TheStream)
+        * [new TheStream([options])](#new_module_@the-/stream.TheStream_new)
+    * [.helpers](#module_@the-/stream.helpers) : <code>object</code>
+        * [.generatorFromReadable(readable)](#module_@the-/stream.helpers.generatorFromReadable) ⇒ <code>\*</code>
 
-<a name="module_@the-/stream+pull"></a>
-
-### stream.pull() ⇒ <code>Promise.&lt;undefined&gt;</code>
-Pull next chunk
-
-**Kind**: instance method of [<code>@the-/stream</code>](#module_@the-/stream)  
-<a name="module_@the-/stream+push"></a>
-
-### stream.push(...chunks) ⇒ <code>Promise.&lt;undefined&gt;</code>
-Push chunk
-
-**Kind**: instance method of [<code>@the-/stream</code>](#module_@the-/stream)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| ...chunks | <code>\*</code> | Chunk data to push |
-
-<a name="module_@the-/stream+pushEnd"></a>
-
-### stream.pushEnd() ⇒ <code>Promise.&lt;undefined&gt;</code>
-Finish pushing
-
-**Kind**: instance method of [<code>@the-/stream</code>](#module_@the-/stream)  
 <a name="module_@the-/stream.Consumer"></a>
 
 ### stream.Consumer
@@ -73,7 +45,12 @@ Helper functions
 **Access**: protected  
 <a name="module_@the-/stream.helpers.generatorFromReadable"></a>
 
-#### helpers.generatorFromReadable()
+#### helpers.generatorFromReadable(readable) ⇒ <code>\*</code>
 Create generator from readable
 
 **Kind**: static method of [<code>helpers</code>](#module_@the-/stream.helpers)  
+
+| Param |
+| --- |
+| readable | 
+

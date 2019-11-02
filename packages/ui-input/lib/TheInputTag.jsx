@@ -26,7 +26,7 @@ const TheInputTag = React.memo((props) => {
       .split(splitter)
       .reverse()
     return focused ? split : ['', ...split]
-  }, [splitter, value, focus()])
+  }, [splitter, value, focused])
 
   const updateBySplitValues = useCallback(
     (splitValues) => {

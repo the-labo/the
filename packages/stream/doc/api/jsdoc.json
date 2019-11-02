@@ -13,7 +13,7 @@
     "name": "@the-/stream",
     "order": 1,
     "typicalname": "stream",
-    "version": "15.4.8"
+    "version": "15.4.12"
   },
   {
     "id": "module:@the-/stream.TheStream()",
@@ -38,13 +38,13 @@
   {
     "async": true,
     "description": "Pull next chunk",
-    "id": "module:@the-/stream#pull",
+    "id": "TheStream#pull",
     "kind": "function",
-    "longname": "module:@the-/stream#pull",
-    "memberof": "module:@the-/stream",
+    "longname": "TheStream#pull",
+    "memberof": "TheStream",
     "meta": {
       "filename": "TheStream.js",
-      "lineno": 96,
+      "lineno": 95,
       "path": "lib"
     },
     "name": "pull",
@@ -64,13 +64,13 @@
   {
     "async": true,
     "description": "Push chunk",
-    "id": "module:@the-/stream#push",
+    "id": "TheStream#push",
     "kind": "function",
-    "longname": "module:@the-/stream#push",
-    "memberof": "module:@the-/stream",
+    "longname": "TheStream#push",
+    "memberof": "TheStream",
     "meta": {
       "filename": "TheStream.js",
-      "lineno": 108,
+      "lineno": 107,
       "path": "lib"
     },
     "name": "push",
@@ -101,13 +101,13 @@
   {
     "async": true,
     "description": "Finish pushing",
-    "id": "module:@the-/stream#pushEnd",
+    "id": "TheStream#pushEnd",
     "kind": "function",
-    "longname": "module:@the-/stream#pushEnd",
-    "memberof": "module:@the-/stream",
+    "longname": "TheStream#pushEnd",
+    "memberof": "TheStream",
     "meta": {
       "filename": "TheStream.js",
-      "lineno": 127,
+      "lineno": 126,
       "path": "lib"
     },
     "name": "pushEnd",
@@ -159,7 +159,7 @@
     "memberof": "module:@the-/stream",
     "meta": {
       "filename": "TheStream.js",
-      "lineno": 3,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "TheStream",
@@ -195,6 +195,20 @@
     },
     "name": "generatorFromReadable",
     "order": 8,
+    "params": [
+      {
+        "name": "readable"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   }
 ]
