@@ -110,6 +110,12 @@ class DrawerLayer {
     }
   }
 
+  restoreAll(serializedArray) {
+    for (const serialized of serializedArray) {
+      this.restore(serialized)
+    }
+  }
+
   serialize() {
     const {
       canvasAccess,
@@ -129,24 +135,17 @@ class DrawerLayer {
   }
 
   setUp({ config, height, width, x, y }) {
-    this.canvasAccess.setSize({ height, width })
-    const {
-      canvasAccess: { ctx },
-    } = this
-    ctx.save()
-    ctx.moveTo(x, y)
-    ctx.beginPath()
+    const { canvasAccess } = this
+    canvasAccess.setSize({ height, width })
+    canvasAccess.pathStart(x, y)
     this.config = { ...config }
-    this.canvasAccess.configure(config)
+    canvasAccess.configure(config)
   }
 
   tearDown() {
-    const {
-      canvasAccess: { ctx },
-    } = this
-    ctx.closePath()
-    ctx.restore()
-    this.canvasAccess.clear()
+    const { canvasAccess } = this
+    canvasAccess.pathClose()
+    canvasAccess.clear()
   }
 }
 

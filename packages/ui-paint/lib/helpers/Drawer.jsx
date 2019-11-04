@@ -3,6 +3,7 @@
 import uuid from 'uuid'
 import CanvasAccess from './CanvasAccess'
 import DrawerLayer from './DrawerLayer'
+import loadImage from './loadImage'
 import DrawingMethods from '../constants/DrawingMethods'
 
 class Drawer {
@@ -159,9 +160,7 @@ class Drawer {
         await this.registerBackground(background)
       }
 
-      for (const layersHistory of layerHistories) {
-        this.commitLayer.restore(layersHistory)
-      }
+      this.commitLayer.restoreAll(layerHistories)
 
       this.drawConfig = config
       this.layerHistories = layerHistories
@@ -170,17 +169,7 @@ class Drawer {
   }
 
   async registerBackground(background, options = {}) {
-    if (typeof background === 'string') {
-      const src = String(background)
-      background = await new Promise((resolve, reject) => {
-        const image = new Image()
-        image.crossorigin = true
-        image.onload = () => resolve(image)
-        image.onerror = (e) => reject(e)
-        image.src = src
-      })
-    }
-
+    background = await loadImage(background)
     this.background = background
     this.drawBackground(background, options)
   }

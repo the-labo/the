@@ -60,6 +60,15 @@ const CanvasAccess = (canvas) => {
     getBoundingClientRect() {
       return canvas.getBoundingClientRect()
     },
+    pathClose() {
+      ctx.closePath()
+      ctx.restore()
+    },
+    pathStart(x, y) {
+      ctx.save()
+      ctx.moveTo(x, y)
+      ctx.beginPath()
+    },
     setSize({ height, width }) {
       canvas.width = width * scaleFactor
       canvas.height = height * scaleFactor
