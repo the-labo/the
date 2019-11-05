@@ -26,7 +26,7 @@ class Drawer {
     this.lineColor = lineColor
     this.layerHistories = []
     this.tmpLayer = null
-    this.commitLayer = new DrawerLayer(canvas)
+    this.commitLayer = DrawerLayer(canvas)
     this.active = false
     this.method = method
     this.globalCompositeOperation = globalCompositeOperation
@@ -135,7 +135,7 @@ class Drawer {
       canvasAccess: { height, width },
       tmpCanvas,
     } = this
-    this.tmpLayer = new DrawerLayer(tmpCanvas, {
+    this.tmpLayer = DrawerLayer(tmpCanvas, {
       method: this.method,
     })
     this.tmpLayer.setUp({

@@ -8,145 +8,131 @@ import StraightDrawMethod from './methods/StraightDrawMethod'
 import DrawingMethods from '../constants/DrawingMethods'
 
 /**
- * @class DrawerLayer
+ * @function DrawerLayer
+ * @returns {Object}
  */
-class DrawerLayer {
-  constructor(canvas, options = {}) {
-    const { method } = options
-    this.canvasAccess = CanvasAccess(canvas)
-    this.method = method
-    this.points = []
+function DrawerLayer(canvas, options = {}) {
+  const canvasAccess = CanvasAccess(canvas)
+  const { ctx } = canvasAccess
+  const state = {
+    method: options.method || DrawingMethods.FREE,
+    points: [],
   }
 
-  get empty() {
-    const { points } = this
-    return points.length === 0
-  }
+  const layer = {
+    get empty() {
+      return state.points.length === 0
+    },
+    applyPoints(points) {
+      if (points.length === 0) {
+        return
+      }
 
-  applyPoints(points) {
-    const { canvasAccess, method } = this
-    if (points.length === 0) {
-      return
-    }
+      const pointGroups = points.reduce((reduced, point) => {
+        const [last] = reduced
+        const { erasing = false } = point
+        const changed = !last || last.erasing !== erasing
+        if (changed) {
+          reduced.push({ erasing, points: [point] })
+        } else {
+          last.points.push(point)
+        }
 
-    const pointGroups = points.reduce((reduced, point) => {
-      const [last] = reduced
-      const { erasing = false } = point
-      const changed = !last || last.erasing !== erasing
-      if (changed) {
-        reduced.push({ erasing, points: [point] })
+        return reduced
+      }, [])
+      for (const { erasing, points } of pointGroups) {
+        ctx.save()
+        ctx.globalCompositeOperation = erasing
+          ? 'destination-out'
+          : 'source-over'
+        switch (state.method || DrawingMethods.FREE) {
+          case DrawingMethods.CIRCLE:
+            CircleDrawMethod(ctx, points)
+            break
+          case DrawingMethods.FREE:
+            FreeDrawMethod(ctx, points)
+            break
+          case DrawingMethods.RECT:
+            RectDrawMethod(ctx, points)
+            break
+          case DrawingMethods.STRAIGHT:
+            StraightDrawMethod(ctx, points)
+            break
+          default:
+            throw new Error(`[Drawer] Unknown method: ${method}`)
+        }
+
+        ctx.restore()
+      }
+    },
+    draw(point, options = {}) {
+      const { clear = true } = options
+      state.points.push(point)
+      if (clear) {
+        canvasAccess.clear()
+      }
+
+      layer.applyPoints(state.points)
+    },
+    normalizePoints(points, options = {}) {
+      const { size } = options
+      const { height = canvasAccess.height, width = canvasAccess.width } =
+        size || {}
+      const xOffset = (canvasAccess.width - width) / 2
+      const yOffset = (canvasAccess.height - height) / 2
+      return points.map((point) => {
+        const { x, y, ...rest } = point
+        return {
+          x: x + xOffset,
+          y: y + yOffset,
+          ...rest,
+        }
+      })
+    },
+    restore(serialized) {
+      const { config, image, method, points, size } = serialized
+      state.method = method
+      state.config = config
+      canvasAccess.configure(config)
+      state.points = points
+      if (points) {
+        const normalizedPoints = layer.normalizePoints(points, { size })
+        layer.applyPoints(normalizedPoints)
+      } else if (image) {
+        // TODO
       } else {
-        last.points.push(point)
+        console.warn('[DrawerLayer] Failed to restore', serialized)
       }
-
-      return reduced
-    }, [])
-    const { ctx } = canvasAccess
-    for (const { erasing, points } of pointGroups) {
-      ctx.save()
-      ctx.globalCompositeOperation = erasing ? 'destination-out' : 'source-over'
-      switch (method || DrawingMethods.FREE) {
-        case DrawingMethods.CIRCLE:
-          CircleDrawMethod(ctx, points)
-          break
-        case DrawingMethods.FREE:
-          FreeDrawMethod(ctx, points)
-          break
-        case DrawingMethods.RECT:
-          RectDrawMethod(ctx, points)
-          break
-        case DrawingMethods.STRAIGHT:
-          StraightDrawMethod(ctx, points)
-          break
-        default:
-          throw new Error(`[Drawer] Unknown method: ${method}`)
+    },
+    restoreAll(serializedArray) {
+      for (const serialized of serializedArray) {
+        layer.restore(serialized)
       }
+    },
+    serialize() {
+      const { config, method, points } = state
 
-      ctx.restore()
-    }
-  }
-
-  draw(point, options = {}) {
-    const { clear = true } = options
-    const { canvasAccess, points } = this
-    points.push(point)
-    if (clear) {
-      canvasAccess.clear()
-    }
-
-    this.applyPoints(this.points)
-  }
-
-  normalizePoints(points, options = {}) {
-    const { canvasAccess } = this
-    const { size } = options
-    const { height = canvasAccess.height, width = canvasAccess.width } =
-      size || {}
-    const xOffset = (canvasAccess.width - width) / 2
-    const yOffset = (canvasAccess.height - height) / 2
-    return points.map((point) => {
-      const { x, y, ...rest } = point
+      const { height, width } = canvasAccess
       return {
-        x: x + xOffset,
-        y: y + yOffset,
-        ...rest,
+        config: { ...config },
+        image: canvasAccess.toSVG(),
+        method,
+        points: [...points],
+        size: { height, width },
       }
-    })
+    },
+    setUp({ config, height, width, x, y }) {
+      canvasAccess.setSize({ height, width })
+      canvasAccess.pathStart(x, y)
+      state.config = { ...config }
+      canvasAccess.configure(config)
+    },
+    tearDown() {
+      canvasAccess.pathClose()
+      canvasAccess.clear()
+    },
   }
-
-  restore(serialized) {
-    const { config, image, method, points, size } = serialized
-    this.method = method
-    this.config = config
-    this.canvasAccess.configure(config)
-    this.points = points
-    if (points) {
-      const normalizedPoints = this.normalizePoints(points, { size })
-      this.applyPoints(normalizedPoints)
-    } else if (image) {
-      // TODO
-    } else {
-      console.warn('[DrawerLayer] Failed to restore', serialized)
-    }
-  }
-
-  restoreAll(serializedArray) {
-    for (const serialized of serializedArray) {
-      this.restore(serialized)
-    }
-  }
-
-  serialize() {
-    const {
-      canvasAccess,
-      canvasAccess: { height, width },
-      config,
-      method,
-      points,
-    } = this
-
-    return {
-      config: { ...config },
-      image: canvasAccess.toSVG(),
-      method,
-      points: [...points],
-      size: { height, width },
-    }
-  }
-
-  setUp({ config, height, width, x, y }) {
-    const { canvasAccess } = this
-    canvasAccess.setSize({ height, width })
-    canvasAccess.pathStart(x, y)
-    this.config = { ...config }
-    canvasAccess.configure(config)
-  }
-
-  tearDown() {
-    const { canvasAccess } = this
-    canvasAccess.pathClose()
-    canvasAccess.clear()
-  }
+  return layer
 }
 
 export default DrawerLayer
