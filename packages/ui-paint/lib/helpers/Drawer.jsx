@@ -192,5 +192,3 @@ class Drawer {
 }
 
 export default Drawer
-
-/* global Image */

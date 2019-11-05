@@ -93,6 +93,8 @@ const ThePaint = (props) => {
       drawer.draw({ ...pos, ...(erasing ? { erasing: true } : {}) })
 
       onDraw && onDraw({ drawer, pos })
+      e.stopPropagation()
+      e.preventDefault()
     },
     [drawer, onDraw, erasing],
   )
@@ -118,6 +120,8 @@ const ThePaint = (props) => {
       const pos = positionForEvent(e)
       drawer.start(pos)
       onDrawStart && onDrawStart({ drawer, pos, snapshot })
+      e.stopPropagation()
+      e.preventDefault()
     },
     [drawer, onDrawStart],
   )
@@ -131,6 +135,8 @@ const ThePaint = (props) => {
     drawer.end()
     const snapshot = drawer.snapshot()
     onDrawEnd && onDrawEnd({ drawer, snapshot })
+    e.stopPropagation()
+    e.preventDefault()
   }, [drawer, onDrawEnd])
 
   const canvasStyle = { height, width }

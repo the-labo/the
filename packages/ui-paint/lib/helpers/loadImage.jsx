@@ -14,3 +14,5 @@ async function loadImage(src) {
 }
 
 export default loadImage
+
+/* global Image */
