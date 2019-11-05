@@ -55,13 +55,13 @@ const ThePaint = (props) => {
 
   const handleResize = useCallback(() => {
     drawer && drawer.resizeRequest()
-  }, [])
+  }, [drawer])
   useEffect(() => {
     const window = get('window')
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
-  }, [])
-  useEffect(() => handleResize(), [width, height])
+  }, [handleResize])
+  useEffect(() => handleResize(), [handleResize, width, height])
 
   const positionForEvent = useCallback(
     (e) => {

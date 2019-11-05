@@ -12,3 +12,5 @@ async function loadImage(src) {
   }
   return src
 }
+
+export default loadImage

@@ -31,7 +31,7 @@
 ## @the-/ui-paint
 Hand write painting
 
-**Version**: 15.5.10  
+**Version**: 15.5.12  
 <a name="DrawerLayer"></a>
 
 ## DrawerLayer
