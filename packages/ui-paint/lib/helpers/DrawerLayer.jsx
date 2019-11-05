@@ -43,28 +43,25 @@ function DrawerLayer(canvas, options = {}) {
         return reduced
       }, [])
       for (const { erasing, points } of pointGroups) {
-        ctx.save()
-        ctx.globalCompositeOperation = erasing
-          ? 'destination-out'
-          : 'source-over'
-        switch (state.method || DrawingMethods.FREE) {
-          case DrawingMethods.CIRCLE:
-            CircleDrawMethod(ctx, points)
-            break
-          case DrawingMethods.FREE:
-            FreeDrawMethod(ctx, points)
-            break
-          case DrawingMethods.RECT:
-            RectDrawMethod(ctx, points)
-            break
-          case DrawingMethods.STRAIGHT:
-            StraightDrawMethod(ctx, points)
-            break
-          default:
-            throw new Error(`[Drawer] Unknown method: ${method}`)
-        }
-
-        ctx.restore()
+        canvasAccess.apply(() => {
+          canvasAccess.setErasing(erasing)
+          switch (state.method || DrawingMethods.FREE) {
+            case DrawingMethods.CIRCLE:
+              CircleDrawMethod(ctx, points)
+              break
+            case DrawingMethods.FREE:
+              FreeDrawMethod(ctx, points)
+              break
+            case DrawingMethods.RECT:
+              RectDrawMethod(ctx, points)
+              break
+            case DrawingMethods.STRAIGHT:
+              StraightDrawMethod(ctx, points)
+              break
+            default:
+              throw new Error(`[Drawer] Unknown method: ${state.method}`)
+          }
+        })
       }
     },
     clear() {

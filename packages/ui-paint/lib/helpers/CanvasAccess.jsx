@@ -13,6 +13,11 @@ const CanvasAccess = (canvas) => {
       return canvas.width / scaleFactor
     },
     ctx,
+    apply(action) {
+      ctx.save()
+      action()
+      ctx.restore()
+    },
     clear() {
       const { height, width } = canvasAccess
       if (!ctx) {
@@ -57,9 +62,6 @@ const CanvasAccess = (canvas) => {
         height,
       )
     },
-    getBoundingClientRect() {
-      return canvas.getBoundingClientRect()
-    },
     pathClose() {
       ctx.closePath()
       ctx.restore()
@@ -68,6 +70,18 @@ const CanvasAccess = (canvas) => {
       ctx.save()
       ctx.moveTo(x, y)
       ctx.beginPath()
+    },
+    resizeAnd(onResize) {
+      const { height, width } = canvas.getBoundingClientRect()
+      const changed =
+        canvasAccess.width !== width || canvasAccess.height !== height
+      if (changed) {
+        canvasAccess.setSize({ height, width })
+        onResize && onResize()
+      }
+    },
+    setErasing(erasing) {
+      ctx.globalCompositeOperation = erasing ? 'destination-out' : 'source-over'
     },
     setSize({ height, width }) {
       canvas.width = width * scaleFactor

@@ -18,6 +18,7 @@ function Drawer(canvas, tmpCanvas, options = {}) {
     method: DrawingMethods.FREE,
     ...options,
   }
+
   const commitLayer = DrawerLayer(canvas)
   const state = {
     active: false,
@@ -143,16 +144,10 @@ function Drawer(canvas, tmpCanvas, options = {}) {
     },
     async resize() {
       state.resizing = true
-
-      const { height, width } = canvasAccess.getBoundingClientRect()
-      const snapshot = drawer.snapshot()
-      const changed =
-        canvasAccess.width !== width || canvasAccess.height !== height
-      if (changed) {
-        canvasAccess.setSize({ height, width })
+      canvasAccess.resizeAnd(async () => {
+        const snapshot = drawer.snapshot()
         await drawer.fromSnapshot(snapshot)
-      }
-
+      })
       state.resizing = false
     },
   }
