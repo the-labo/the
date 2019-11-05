@@ -52,6 +52,25 @@ class TheS3 {
   }
 
   /**
+   * Download file from s3
+   * @param {Object} params - S3 object params
+   * @returns {Promise<Object>}
+   */
+  async download(params) {
+    const { s3 } = this
+    return new Promise((resolve, reject) => {
+      s3.getObject(params, (err, data) => {
+        if (err) {
+          reject(err)
+          return
+        }
+
+        resolve(data)
+      })
+    })
+  }
+
+  /**
    * Check an object exists or not
    * @param {Object} params - S3 object params
    * @returns {Promise<boolean>}

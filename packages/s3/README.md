@@ -95,6 +95,7 @@ tryExample().catch((err) => console.error(err))
   - [.default()](./doc/api/api.md#module_@the-/s3.default)
   - [.TheS3](./doc/api/api.md#module_@the-/s3.TheS3)
 - TheS3
+  - [#download(params)](./doc/api/api.md#TheS3#download)
   - [#exists(params)](./doc/api/api.md#TheS3#exists)
   - [#upload(src,options)](./doc/api/api.md#TheS3#upload)
 
