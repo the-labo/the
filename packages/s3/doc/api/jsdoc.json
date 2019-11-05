@@ -80,6 +80,42 @@
   },
   {
     "async": true,
+    "description": "Download file from s3",
+    "id": "TheS3#download",
+    "kind": "function",
+    "longname": "TheS3#download",
+    "memberof": "TheS3",
+    "meta": {
+      "filename": "TheS3.js",
+      "lineno": 59,
+      "path": "lib"
+    },
+    "name": "download",
+    "order": 5,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "description": "S3 object params",
+        "name": "params"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<Object>"
+          ]
+        }
+      }
+    ],
+    "scope": "instance"
+  },
+  {
+    "async": true,
     "description": "Check an object exists or not",
     "id": "TheS3#exists",
     "kind": "function",
@@ -87,11 +123,11 @@
     "memberof": "TheS3",
     "meta": {
       "filename": "TheS3.js",
-      "lineno": 59,
+      "lineno": 78,
       "path": "lib"
     },
     "name": "exists",
-    "order": 5,
+    "order": 6,
     "params": [
       {
         "type": {
@@ -123,11 +159,11 @@
     "memberof": "TheS3",
     "meta": {
       "filename": "TheS3.js",
-      "lineno": 81,
+      "lineno": 100,
       "path": "lib"
     },
     "name": "upload",
-    "order": 6,
+    "order": 7,
     "params": [
       {
         "type": {
