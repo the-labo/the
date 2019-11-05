@@ -46,17 +46,21 @@ function Drawer(canvas, tmpCanvas, options = {}) {
     },
     draw({ x, y }) {
       if (config.erasing) {
-        commitLayer.draw(
-          { erasing: true, x, y },
+        commitLayer.addPoint(
+          { x, y },
           {
             clear: false,
           },
         )
+        drawer.repaint()
       } else {
-        state.tmpLayer.draw({ x, y })
+        state.tmpLayer.addPoint({ x, y })
       }
     },
     drawBackground(background, options = {}) {
+      if (!background) {
+        return
+      }
       const {
         height = background.height || canvasAccess.height,
         width = background.width || canvasAccess.width,
@@ -83,7 +87,16 @@ function Drawer(canvas, tmpCanvas, options = {}) {
 
       const layerHistory = tmpLayer.serialize()
       layerHistories.push(layerHistory)
-      commitLayer.restore(layerHistory)
+      commitLayer.restoreAll(layerHistories)
+    },
+    repaint() {
+      commitLayer.clear()
+      const { background } = state
+      if (background) {
+        drawer.drawBackground(background)
+      }
+      state.layerHistories.push(commitLayer.serialize())
+      commitLayer.restoreAll(state.layerHistories)
     },
     resizeRequest() {
       if (state.resizing) {
@@ -107,6 +120,9 @@ function Drawer(canvas, tmpCanvas, options = {}) {
     },
     start({ x, y }) {
       state.active = true
+      if (config.erasing) {
+        commitLayer.addObject({ erasing: true })
+      }
       const { height, width } = canvasAccess
       state.tmpLayer = DrawerLayer(tmpCanvas, {
         method: config.method,
@@ -118,6 +134,7 @@ function Drawer(canvas, tmpCanvas, options = {}) {
         x,
         y,
       })
+      state.tmpLayer.addObject({})
     },
     toSVG() {
       return canvasAccess.toSVG()

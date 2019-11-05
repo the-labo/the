@@ -18,88 +18,101 @@ function DrawerLayer(canvas, options = {}) {
   const { ctx } = canvasAccess
   const state = {
     method: options.method || DrawingMethods.FREE,
-    points: [],
+    objects: [],
   }
 
   const layer = {
     get empty() {
-      return state.points.length === 0
+      return state.objects.length === 0
     },
-    applyPoints(points) {
+    addObject(options = {}) {
+      const { erasing = false, points = [] } = options
+      state.objects.push({ erasing, points })
+    },
+    addPoint(point, options = {}) {
+      const { clear = true } = options
+      const object = state.objects[state.objects.length - 1]
+      object.points.push(point)
+      if (clear) {
+        canvasAccess.clear()
+      }
+      layer.applyObjects(state.objects)
+    },
+    applyObject(object) {
+      const { erasing, points } = object
       if (points.length === 0) {
         return
       }
-
-      const pointGroups = points.reduce((reduced, point) => {
-        const [last] = reduced
-        const { erasing = false } = point
-        const changed = !last || last.erasing !== erasing
-        if (changed) {
-          reduced.push({ erasing, points: [point] })
-        } else {
-          last.points.push(point)
+      canvasAccess.apply(() => {
+        canvasAccess.setErasing(erasing)
+        switch (state.method || DrawingMethods.FREE) {
+          case DrawingMethods.CIRCLE:
+            CircleDrawMethod(ctx, points)
+            break
+          case DrawingMethods.FREE:
+            FreeDrawMethod(ctx, points)
+            break
+          case DrawingMethods.RECT:
+            RectDrawMethod(ctx, points)
+            break
+          case DrawingMethods.STRAIGHT:
+            StraightDrawMethod(ctx, points)
+            break
+          default:
+            throw new Error(`[Drawer] Unknown method: ${state.method}`)
         }
+      })
+    },
+    applyObjects(objects) {
+      if (objects.length === 0) {
+        return
+      }
 
-        return reduced
-      }, [])
-      for (const { erasing, points } of pointGroups) {
-        canvasAccess.apply(() => {
-          canvasAccess.setErasing(erasing)
-          switch (state.method || DrawingMethods.FREE) {
-            case DrawingMethods.CIRCLE:
-              CircleDrawMethod(ctx, points)
-              break
-            case DrawingMethods.FREE:
-              FreeDrawMethod(ctx, points)
-              break
-            case DrawingMethods.RECT:
-              RectDrawMethod(ctx, points)
-              break
-            case DrawingMethods.STRAIGHT:
-              StraightDrawMethod(ctx, points)
-              break
-            default:
-              throw new Error(`[Drawer] Unknown method: ${state.method}`)
-          }
-        })
+      for (const object of objects) {
+        layer.applyObject(object)
       }
     },
     clear() {
       canvasAccess.clear()
     },
-    draw(point, options = {}) {
-      const { clear = true } = options
-      state.points.push(point)
-      if (clear) {
-        canvasAccess.clear()
-      }
-
-      layer.applyPoints(state.points)
-    },
-    normalizePoints(points, options = {}) {
+    normalizeObjects(objects, options = {}) {
       const { size } = options
       const { height = canvasAccess.height, width = canvasAccess.width } =
         size || {}
       const xOffset = (canvasAccess.width - width) / 2
       const yOffset = (canvasAccess.height - height) / 2
-      return points.map((point) => {
-        const { x, y, ...rest } = point
-        return {
-          x: x + xOffset,
-          y: y + yOffset,
-          ...rest,
-        }
-      })
+      return objects.map((object) => ({
+        ...object,
+        points: object.points.map((point) => {
+          const { x, y, ...rest } = point
+          return {
+            x: x + xOffset,
+            y: y + yOffset,
+            ...rest,
+          }
+        }),
+      }))
     },
     restore(serialized) {
-      const { config, image, method, points, size } = serialized
+      const {
+        config,
+        image,
+        method,
+        objects = [
+          {
+            erasing: false,
+            points: serialized.points,
+          },
+        ],
+        size,
+      } = serialized
       state.method = method
       state.config = config
       canvasAccess.configure(config)
-      state.points = points
-      if (points) {
-        const normalizedPoints = layer.normalizePoints(points, { size })
-        layer.applyPoints(normalizedPoints)
+      state.objects = objects
+      if (objects) {
+        const normalizedObjects = layer.normalizeObjects(objects, { size })
+        layer.applyObjects(normalizedObjects)
       } else if (image) {
         // TODO
       } else {
@@ -112,14 +125,14 @@ function DrawerLayer(canvas, options = {}) {
       }
     },
     serialize() {
-      const { config, method, points } = state
+      const { config, method, objects } = state
 
       const { height, width } = canvasAccess
       return {
         config: { ...config },
         image: canvasAccess.toSVG(),
         method,
-        points: [...points],
+        objects: [...objects],
         size: { height, width },
       }
     },
