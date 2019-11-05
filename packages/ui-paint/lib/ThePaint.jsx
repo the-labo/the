@@ -90,11 +90,11 @@ const ThePaint = (props) => {
       }
 
       const pos = positionForEvent(e)
-      drawer.draw({ ...pos, ...(erasing ? { erasing: true } : {}) })
+      drawer.draw(pos)
 
       onDraw && onDraw({ drawer, pos })
     },
-    [drawer, onDraw, erasing],
+    [drawer, onDraw],
   )
 
   useEffect(() => {
@@ -102,11 +102,12 @@ const ThePaint = (props) => {
       return
     }
     drawer.setConfig({
+      erasing,
       lineColor,
       lineWidth,
       method,
     })
-  }, [lineColor, lineWidth, method])
+  }, [lineColor, lineWidth, method, erasing])
 
   const handleDrawStart = useCallback(
     (e) => {

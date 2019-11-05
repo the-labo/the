@@ -10,6 +10,7 @@ function Drawer(canvas, tmpCanvas, options = {}) {
   const canvasAccess = CanvasAccess(canvas)
 
   const config = {
+    erasing: false,
     globalCompositeOperation: 'source-over',
     lineCap: 'round',
     lineColor: '#888',
@@ -43,10 +44,10 @@ function Drawer(canvas, tmpCanvas, options = {}) {
         drawer.drawBackground(background)
       }
     },
-    draw({ erasing, x, y }) {
-      if (erasing) {
+    draw({ x, y }) {
+      if (config.erasing) {
         commitLayer.draw(
-          { erasing, x, y },
+          { erasing: true, x, y },
           {
             clear: false,
           },
