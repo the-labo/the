@@ -52,7 +52,6 @@ function Drawer(canvas, tmpCanvas, options = {}) {
             clear: false,
           },
         )
-        drawer.repaint()
       } else {
         state.tmpLayer.addPoint({ x, y })
       }
@@ -88,15 +87,6 @@ function Drawer(canvas, tmpCanvas, options = {}) {
       const layerHistory = tmpLayer.serialize()
       layerHistories.push(layerHistory)
       commitLayer.restoreAll(layerHistories)
-    },
-    repaint() {
-      commitLayer.clear()
-      const { background } = state
-      if (background) {
-        drawer.drawBackground(background)
-      }
-      state.layerHistories.push(commitLayer.serialize())
-      commitLayer.restoreAll(state.layerHistories)
     },
     resizeRequest() {
       if (state.resizing) {

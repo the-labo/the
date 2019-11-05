@@ -45,7 +45,8 @@ function DrawerLayer(canvas, options = {}) {
       }
       canvasAccess.apply(() => {
         canvasAccess.setErasing(erasing)
-        switch (state.method || DrawingMethods.FREE) {
+        const method = erasing ? DrawingMethods.FREE : state.method
+        switch (method) {
           case DrawingMethods.CIRCLE:
             CircleDrawMethod(ctx, points)
             break
@@ -81,17 +82,19 @@ function DrawerLayer(canvas, options = {}) {
         size || {}
       const xOffset = (canvasAccess.width - width) / 2
       const yOffset = (canvasAccess.height - height) / 2
-      return objects.map((object) => ({
-        ...object,
-        points: object.points.map((point) => {
-          const { x, y, ...rest } = point
-          return {
-            x: x + xOffset,
-            y: y + yOffset,
-            ...rest,
-          }
-        }),
-      }))
+      return objects
+        .filter((object) => object.points.length > 0)
+        .map((object) => ({
+          ...object,
+          points: object.points.map((point) => {
+            const { x, y, ...rest } = point
+            return {
+              x: x + xOffset,
+              y: y + yOffset,
+              ...rest,
+            }
+          }),
+        }))
     },
     restore(serialized) {
       const {
