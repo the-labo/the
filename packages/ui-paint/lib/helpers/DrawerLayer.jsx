@@ -9,6 +9,8 @@ import DrawingMethods from '../constants/DrawingMethods'
 
 /**
  * @function DrawerLayer
+ * @param canvas
+ * @param [options={}]
  * @returns {Object}
  */
 function DrawerLayer(canvas, options = {}) {
@@ -64,6 +66,9 @@ function DrawerLayer(canvas, options = {}) {
 
         ctx.restore()
       }
+    },
+    clear() {
+      canvasAccess.clear()
     },
     draw(point, options = {}) {
       const { clear = true } = options

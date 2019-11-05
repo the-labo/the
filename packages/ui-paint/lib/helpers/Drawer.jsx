@@ -6,189 +6,160 @@ import DrawerLayer from './DrawerLayer'
 import loadImage from './loadImage'
 import DrawingMethods from '../constants/DrawingMethods'
 
-class Drawer {
-  constructor(canvas, tmpCanvas, options = {}) {
-    const {
-      globalCompositeOperation = 'source-over',
-      id = uuid.v4(),
-      lineCap = 'round',
-      lineColor = '#888',
-      lineJoin = 'round',
-      lineWidth = 4,
-      method = DrawingMethods.FREE,
-    } = options
-    this.id = id
-    this.canvasAccess = CanvasAccess(canvas)
-    this.tmpCanvas = tmpCanvas
-    this.lineWidth = lineWidth
-    this.lineCap = lineCap
-    this.lineJoin = lineJoin
-    this.lineColor = lineColor
-    this.layerHistories = []
-    this.tmpLayer = null
-    this.commitLayer = DrawerLayer(canvas)
-    this.active = false
-    this.method = method
-    this.globalCompositeOperation = globalCompositeOperation
-    this.resize()
+function Drawer(canvas, tmpCanvas, options = {}) {
+  const canvasAccess = CanvasAccess(canvas)
+
+  const config = {
+    globalCompositeOperation: 'source-over',
+    lineCap: 'round',
+    lineColor: '#888',
+    lineJoin: 'round',
+    lineWidth: 4,
+    method: DrawingMethods.FREE,
+    ...options,
+  }
+  const commitLayer = DrawerLayer(canvas)
+  const state = {
+    active: false,
+    background: null,
+    fromSnapshotReady: null,
+    id: uuid.v4(),
+    layerHistories: [],
+    resizing: false,
+    tmpLayer: null,
   }
 
-  set drawConfig(config) {
-    Object.assign(this, { ...config })
-  }
-
-  get drawConfig() {
-    const {
-      globalCompositeOperation,
-      lineCap,
-      lineColor,
-      lineJoin,
-      lineWidth,
-    } = this
-    return {
-      globalCompositeOperation,
-      lineCap,
-      lineColor,
-      lineJoin,
-      lineWidth,
-    }
-  }
-
-  clear() {
-    this.canvasAccess.clear()
-    this.tmpLayer && this.tmpLayer.clear()
-    this.layerHistories = []
-    const { background } = this
-    if (background) {
-      this.drawBackground(background)
-    }
-  }
-
-  draw({ erasing, x, y }) {
-    if (erasing) {
-      this.commitLayer.draw(
-        { erasing, x, y },
-        {
-          clear: false,
-        },
-      )
-    } else {
-      this.tmpLayer.draw({ x, y })
-    }
-  }
-
-  drawBackground(background, options = {}) {
-    const { canvasAccess } = this
-    const {
-      height = background.height || canvasAccess.height,
-      width = background.width || canvasAccess.width,
-    } = options
-    canvasAccess.drawImage(background, { height, width })
-  }
-
-  end() {
-    this.active = false
-    this.flush()
-    if (this.tmpLayer) {
-      this.tmpLayer.tearDown()
-      this.tmpLayer = null
-    }
-  }
-
-  flush() {
-    const { commitLayer, layerHistories, tmpLayer } = this
-    if (!tmpLayer) {
-      return
-    }
-
-    if (tmpLayer.empty) {
-      return
-    }
-
-    const layerHistory = tmpLayer.serialize()
-    layerHistories.push(layerHistory)
-    commitLayer.restore(layerHistory)
-  }
-
-  resizeRequest() {
-    if (this.resizing) {
-      return
-    }
-
-    void this.resize()
-  }
-
-  snapshot() {
-    const { background, drawConfig, layerHistories } = this
-    const snapshotId = uuid.v4()
-    return {
-      background: background ? background.src : null,
-      config: drawConfig,
-      id: snapshotId,
-      layers: [...layerHistories],
-    }
-  }
-
-  start({ x, y }) {
-    this.active = true
-    const {
-      canvasAccess: { height, width },
-      tmpCanvas,
-    } = this
-    this.tmpLayer = DrawerLayer(tmpCanvas, {
-      method: this.method,
-    })
-    this.tmpLayer.setUp({
-      config: this.drawConfig,
-      height,
-      width,
-      x,
-      y,
-    })
-  }
-
-  toSVG() {
-    return this.canvasAccess.toSVG()
-  }
-
-  async fromSnapshot(snapshot) {
-    await this.fromSnapshotReady
-    this.fromSnapshotReady = (async () => {
-      this.clear()
-      const { background, config, layers: layerHistories } = snapshot
+  const drawer = {
+    get active() {
+      return state.active
+    },
+    clear() {
+      canvasAccess.clear()
+      state.tmpLayer && state.tmpLayer.tearDown()
+      state.layerHistories = []
+      const { background } = state
       if (background) {
-        await this.registerBackground(background)
+        drawer.drawBackground(background)
+      }
+    },
+    draw({ erasing, x, y }) {
+      if (erasing) {
+        commitLayer.draw(
+          { erasing, x, y },
+          {
+            clear: false,
+          },
+        )
+      } else {
+        state.tmpLayer.draw({ x, y })
+      }
+    },
+    drawBackground(background, options = {}) {
+      const {
+        height = background.height || canvasAccess.height,
+        width = background.width || canvasAccess.width,
+      } = options
+      canvasAccess.drawImage(background, { height, width })
+    },
+    end() {
+      state.active = false
+      drawer.flush()
+      if (state.tmpLayer) {
+        state.tmpLayer.tearDown()
+        state.tmpLayer = null
+      }
+    },
+    flush() {
+      const { layerHistories, tmpLayer } = state
+      if (!tmpLayer) {
+        return
       }
 
-      this.commitLayer.restoreAll(layerHistories)
+      if (tmpLayer.empty) {
+        return
+      }
 
-      this.drawConfig = config
-      this.layerHistories = layerHistories
-    })()
-    await this.fromSnapshotReady
+      const layerHistory = tmpLayer.serialize()
+      layerHistories.push(layerHistory)
+      commitLayer.restore(layerHistory)
+    },
+    resizeRequest() {
+      if (state.resizing) {
+        return
+      }
+
+      void drawer.resize()
+    },
+    setConfig(adding) {
+      Object.assign(config, { ...adding })
+    },
+    snapshot() {
+      const { background, layerHistories } = state
+      const snapshotId = uuid.v4()
+      return {
+        background: background ? background.src : null,
+        config,
+        id: snapshotId,
+        layers: [...layerHistories],
+      }
+    },
+    start({ x, y }) {
+      state.active = true
+      const { height, width } = canvasAccess
+      state.tmpLayer = DrawerLayer(tmpCanvas, {
+        method: config.method,
+      })
+      state.tmpLayer.setUp({
+        config,
+        height,
+        width,
+        x,
+        y,
+      })
+    },
+    toSVG() {
+      return canvasAccess.toSVG()
+    },
+    async fromSnapshot(snapshot) {
+      await state.fromSnapshotReady
+      state.fromSnapshotReady = (async () => {
+        drawer.clear()
+        const { background, config, layers: layerHistories } = snapshot
+        if (background) {
+          await drawer.registerBackground(background)
+        }
+
+        commitLayer.restoreAll(layerHistories)
+
+        drawer.setConfig(config)
+        state.layerHistories = layerHistories
+      })()
+      await state.fromSnapshotReady
+    },
+    async registerBackground(background, options = {}) {
+      background = await loadImage(background)
+      state.background = background
+      drawer.drawBackground(background, options)
+    },
+    async resize() {
+      state.resizing = true
+
+      const { height, width } = canvasAccess.getBoundingClientRect()
+      const snapshot = drawer.snapshot()
+      const changed =
+        canvasAccess.width !== width || canvasAccess.height !== height
+      if (changed) {
+        canvasAccess.setSize({ height, width })
+        await drawer.fromSnapshot(snapshot)
+      }
+
+      state.resizing = false
+    },
   }
 
-  async registerBackground(background, options = {}) {
-    background = await loadImage(background)
-    this.background = background
-    this.drawBackground(background, options)
-  }
+  drawer.resize()
 
-  async resize() {
-    this.resizing = true
-
-    const { canvasAccess } = this
-    const { height, width } = canvasAccess.getBoundingClientRect()
-    const snapshot = this.snapshot()
-    const changed =
-      canvasAccess.width !== width || canvasAccess.height !== height
-    if (changed) {
-      canvasAccess.setSize({ height, width })
-      await this.fromSnapshot(snapshot)
-    }
-
-    this.resizing = false
-  }
+  return drawer
 }
 
 export default Drawer

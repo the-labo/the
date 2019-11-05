@@ -12,20 +12,7 @@
     "name": "@the-/ui-paint",
     "order": 0,
     "typicalname": "uiPaint",
-    "version": "15.5.12"
-  },
-  {
-    "id": "DrawerLayer",
-    "kind": "class",
-    "longname": "DrawerLayer",
-    "meta": {
-      "filename": "DrawerLayer.jsx",
-      "lineno": 10,
-      "path": "lib/helpers"
-    },
-    "name": "DrawerLayer",
-    "order": 6,
-    "scope": "global"
+    "version": "15.5.13"
   },
   {
     "description": "Hand write painting",
@@ -55,6 +42,28 @@
     "name": "ThePaintStyle",
     "order": 4,
     "params": [],
+    "scope": "global"
+  },
+  {
+    "id": "DrawerLayer",
+    "kind": "function",
+    "longname": "DrawerLayer",
+    "meta": {
+      "filename": "DrawerLayer.jsx",
+      "lineno": 10,
+      "path": "lib/helpers"
+    },
+    "name": "DrawerLayer",
+    "order": 6,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        }
+      }
+    ],
     "scope": "global"
   },
   {

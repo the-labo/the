@@ -101,10 +101,11 @@ const ThePaint = (props) => {
     if (!drawer) {
       return
     }
-
-    drawer.lineColor = lineColor
-    drawer.lineWidth = lineWidth
-    drawer.method = method
+    drawer.setConfig({
+      lineColor,
+      lineWidth,
+      method,
+    })
   }, [lineColor, lineWidth, method])
 
   const handleDrawStart = useCallback(
