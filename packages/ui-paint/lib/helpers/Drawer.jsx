@@ -4,6 +4,7 @@ import uuid from 'uuid'
 import CanvasAccess from './CanvasAccess'
 import DrawerLayer from './DrawerLayer'
 import loadImage from './loadImage'
+import DrawConfigs from '../constants/DrawConfigs'
 import DrawingMethods from '../constants/DrawingMethods'
 
 function Drawer(canvas, tmpCanvas, options = {}) {
@@ -13,9 +14,9 @@ function Drawer(canvas, tmpCanvas, options = {}) {
     erasing: false,
     globalCompositeOperation: 'source-over',
     lineCap: 'round',
-    lineColor: '#888',
+    lineColor: DrawConfigs.DEFAULT_LINE_COLOR,
     lineJoin: 'round',
-    lineWidth: 4,
+    lineWidth: DrawConfigs.DEFAULT_LINE_WIDTH,
     method: DrawingMethods.FREE,
     ...options,
   }
