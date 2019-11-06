@@ -53,17 +53,16 @@ function DrawerLayer(canvas, options = {}) {
           case DrawingMethods.CIRCLE:
             CircleDrawMethod(ctx, points)
             break
-          case DrawingMethods.FREE:
-            FreeDrawMethod(ctx, points)
-            break
           case DrawingMethods.RECT:
             RectDrawMethod(ctx, points)
             break
           case DrawingMethods.STRAIGHT:
             StraightDrawMethod(ctx, points)
             break
+          case DrawingMethods.FREE:
           default:
-            throw new Error(`[Drawer] Unknown method: ${method}`)
+            FreeDrawMethod(ctx, points)
+            break
         }
       })
     },
