@@ -17,7 +17,6 @@ function DrawerLayer(canvas, options = {}) {
   const canvasAccess = CanvasAccess(canvas)
   const { ctx } = canvasAccess
   const state = {
-    method: options.method || DrawingMethods.FREE,
     objects: [],
   }
 
@@ -38,6 +37,10 @@ function DrawerLayer(canvas, options = {}) {
       }
       layer.applyObjects(state.objects)
     },
+    applyConfig(config) {
+      state.config = { ...config }
+      canvasAccess.configure(config)
+    },
     applyObject(object) {
       const { erasing, points } = object
       if (points.length === 0) {
@@ -45,7 +48,7 @@ function DrawerLayer(canvas, options = {}) {
       }
       canvasAccess.apply(() => {
         canvasAccess.setErasing(erasing)
-        const method = erasing ? DrawingMethods.FREE : state.method
+        const method = erasing ? DrawingMethods.FREE : state.config.method
         switch (method) {
           case DrawingMethods.CIRCLE:
             CircleDrawMethod(ctx, points)
@@ -60,7 +63,7 @@ function DrawerLayer(canvas, options = {}) {
             StraightDrawMethod(ctx, points)
             break
           default:
-            throw new Error(`[Drawer] Unknown method: ${state.method}`)
+            throw new Error(`[Drawer] Unknown method: ${method}`)
         }
       })
     },
@@ -100,7 +103,6 @@ function DrawerLayer(canvas, options = {}) {
       const {
         config,
         image,
-        method,
         objects = [
           {
             erasing: false,
@@ -109,9 +111,7 @@ function DrawerLayer(canvas, options = {}) {
         ],
         size,
       } = serialized
-      state.method = method
-      state.config = config
-      canvasAccess.configure(config)
+      layer.applyConfig(config)
       state.objects = objects
       if (objects) {
         const normalizedObjects = layer.normalizeObjects(objects, { size })
@@ -128,13 +128,12 @@ function DrawerLayer(canvas, options = {}) {
       }
     },
     serialize() {
-      const { config, method, objects } = state
+      const { config, objects } = state
 
       const { height, width } = canvasAccess
       return {
         config: { ...config },
         image: canvasAccess.toSVG(),
-        method,
         objects: [...objects],
         size: { height, width },
       }
@@ -142,8 +141,7 @@ function DrawerLayer(canvas, options = {}) {
     setUp({ config, height, width, x, y }) {
       canvasAccess.setSize({ height, width })
       canvasAccess.pathStart(x, y)
-      state.config = { ...config }
-      canvasAccess.configure(config)
+      layer.applyConfig(config)
     },
     tearDown() {
       canvasAccess.pathClose()

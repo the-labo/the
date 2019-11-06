@@ -21,6 +21,7 @@ function Drawer(canvas, tmpCanvas, options = {}) {
   }
 
   const commitLayer = DrawerLayer(canvas)
+  commitLayer.applyConfig(config)
   const state = {
     active: false,
     background: null,
@@ -110,13 +111,12 @@ function Drawer(canvas, tmpCanvas, options = {}) {
     },
     start({ x, y }) {
       state.active = true
+      const { height, width } = canvasAccess
       if (config.erasing) {
         commitLayer.addObject({ erasing: true })
+        commitLayer.applyConfig(config)
       }
-      const { height, width } = canvasAccess
-      state.tmpLayer = DrawerLayer(tmpCanvas, {
-        method: config.method,
-      })
+      state.tmpLayer = DrawerLayer(tmpCanvas, {})
       state.tmpLayer.setUp({
         config,
         height,

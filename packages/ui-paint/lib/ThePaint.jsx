@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 import { get } from '@the-/window'
+import DrawConfigs from './constants/DrawConfigs'
 import DrawingMethods from './constants/DrawingMethods'
 import Drawer from './helpers/Drawer'
 import ThePaintStyle from './ThePaintStyle'
@@ -107,7 +108,7 @@ const ThePaint = (props) => {
       lineWidth,
       method,
     })
-  }, [lineColor, lineWidth, method, erasing])
+  }, [drawer, lineColor, lineWidth, method, erasing])
 
   const handleDrawStart = useCallback(
     (e) => {
@@ -189,8 +190,8 @@ ThePaint.propTypes = {
 ThePaint.defaultProps = {
   flushed: null,
   height: 150,
-  lineColor: '#555',
-  lineWidth: 4,
+  lineColor: DrawConfigs.DEFAULT_LINE_COLOR,
+  lineWidth: DrawConfigs.DEFAULT_LINE_WIDTH,
   method: DrawingMethods.FREE,
   onDrawer: null,
   width: 150,
