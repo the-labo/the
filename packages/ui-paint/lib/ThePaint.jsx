@@ -51,12 +51,35 @@ const ThePaint = (props) => {
 
   useEffect(() => {
     const { current: container } = containerRef
-    const preventDefault = (e) => {
-      e.preventDefault()
+    const document = get('document')
+
+    const preventEvent = (e) => e.preventDefault()
+    const listeners = {
+      touchcancel: () => {
+        document.removeEventListener('touchmove', preventEvent, {
+          passive: false,
+        })
+      },
+      touchend: () => {
+        document.removeEventListener('touchmove', preventEvent, {
+          passive: false,
+        })
+      },
+      touchmove: (e) => e.preventDefault(),
+      touchstart: () => {
+        document.addEventListener('touchmove', preventEvent, { passive: false })
+      },
     }
-    container.addEventListener('touchstart', preventDefault)
+    for (const [event, listener] of Object.entries(listeners)) {
+      container.addEventListener(event, listener)
+    }
     return () => {
-      container.removeEventListener('touchstart', preventDefault)
+      for (const [event, listener] of Object.entries(listeners)) {
+        container.removeEventListener(event, listener)
+      }
+      document.removeEventListener('touchmove', preventEvent, {
+        passive: false,
+      })
     }
   }, [])
 
