@@ -14,6 +14,7 @@ import ThePaintStyle from './ThePaintStyle'
  * Hand write painting
  */
 const ThePaint = (props) => {
+  const containerRef = useRef(null)
   const canvasRef = useRef(null)
   const tmpCanvasRef = useRef(null)
 
@@ -46,6 +47,17 @@ const ThePaint = (props) => {
       onDrawer && onDrawer(newDrawer)
       setDrawer(newDrawer)
     })
+  }, [])
+
+  useEffect(() => {
+    const { current: container } = containerRef
+    const preventDefault = (e) => {
+      e.preventDefault()
+    }
+    container.addEventListener('touchstart', preventDefault)
+    return () => {
+      container.removeEventListener('touchstart', preventDefault)
+    }
   }, [])
 
   useEffect(() => {
@@ -157,6 +169,7 @@ const ThePaint = (props) => {
         onTouchEnd={handleDrawEnd}
         onTouchMove={handleDraw}
         onTouchStart={handleDrawStart}
+        ref={containerRef}
       >
         <canvas
           className='the-paint-canvas'
