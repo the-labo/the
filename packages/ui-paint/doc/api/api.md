@@ -26,7 +26,7 @@
 ## @the-/ui-paint
 Hand write painting
 
-**Version**: 15.5.20  
+**Version**: 15.5.21  
 <a name="ThePaint"></a>
 
 ## ThePaint()

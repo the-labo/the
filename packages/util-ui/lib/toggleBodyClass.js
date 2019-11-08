@@ -6,7 +6,7 @@ const { get } = require('bwindow')
  * Toggle class on document body
  * @memberof module:@the-/util-ui
  * @function toggleBodyClass
- * @param {boolean} [state=] - Enabled or not
+ * @param {boolean} [enabled=] - Enabled or not
  * @param {string} className - Class name to toggle
  * @returns {*}
  */

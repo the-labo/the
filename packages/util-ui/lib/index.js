@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/util-ui
  * @typicalname utilUi
- * @version 16.0.6
+ * @version 16.1.0
  */
 'use strict'
 
@@ -20,6 +20,7 @@ const isVideoSrc_ = require('./isVideoSrc')
 const newId_ = require('./newId')
 const readFileAsDataURL_ = require('./readFileAsDataURL')
 const scrollToElement_ = require('./scrollToElement')
+const stopTouchScrolling_ = require('./stopTouchScrolling')
 const toggleBodyClass_ = require('./toggleBodyClass')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
@@ -34,6 +35,7 @@ exports.isVideoSrc = isVideoSrc_
 exports.newId = newId_
 exports.readFileAsDataURL = readFileAsDataURL_
 exports.scrollToElement = scrollToElement_
+exports.stopTouchScrolling = stopTouchScrolling_
 exports.toggleBodyClass = toggleBodyClass_
 
 module.exports = {
@@ -48,5 +50,6 @@ module.exports = {
   newId: newId_,
   readFileAsDataURL: readFileAsDataURL_,
   scrollToElement: scrollToElement_,
+  stopTouchScrolling: stopTouchScrolling_,
   toggleBodyClass: toggleBodyClass_,
 }
