@@ -3,6 +3,7 @@
 import Hammer from 'hammerjs'
 import PropTypes from 'prop-types'
 import React, { useEffect, useMemo, useRef, useState } from 'react'
+import { unlessProduction } from '@the-/check-env'
 
 const parsePanEvent = (e) => {
   const { center, deltaX, deltaY, srcEvent } = e
@@ -31,6 +32,17 @@ const TheTouchable = (props) => {
     pan: panEnabled,
     pinch: pinchEnabled,
   } = props
+  unlessProduction(() => {
+    useEffect(() => {
+      if (!pinchEnabled) {
+        const pinchHandlers = [onPinch, onPinchStart, onPinchEnd].filter(
+          Boolean,
+        )
+        pinchHandlers.length > 0 &&
+          console.warn('[@the-/touchable] You might forgotten to enable pinch')
+      }
+    }, [pinchEnabled, onPinch, onPinchStart, onPinchEnd])
+  })
   const ref = useRef(null)
   const [hammer, setHammer] = useState(null)
 

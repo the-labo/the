@@ -4,43 +4,50 @@ import React, { useMemo, useState } from 'react'
 import { TheTouchable } from '@the-/ui-touchable'
 
 export default function ExampleComponent() {
-  const [panStyle, setPanStyle] = useState({
-    left: 0,
-    top: 0,
+  const [panData, setPanData] = useState({
+    vx: 0,
+    vy: 0,
+    x: 0,
+    y: 0,
   })
-  const [pinchStyle, setPinchStyle] = useState({
-    'data-zoom': 1,
+  const [pinchData, setPinchData] = useState({
+    scale: 1,
+    vscale: 1,
   })
 
   const handlers = useMemo(
     () => ({
       onPan: ({ vx, vy }) => {
-        setPanStyle({ ...panStyle, transform: `translate(${vx}px, ${vy}px)` })
+        setPanData({
+          ...panData,
+          vx,
+          vy,
+        })
       },
       onPanEnd: ({ vx, vy }) => {
-        setPanStyle({
-          ...panStyle,
-          left: panStyle.left + vx,
-          top: panStyle.top + vy,
-          transform: 'none',
+        setPanData({
+          ...panData,
+          vx: 0,
+          vy: 0,
+          x: panData.x + vx,
+          y: panData.y + vy,
         })
       },
       onPanStart: () => {},
       onPinch: ({ scale }) => {
-        setPinchStyle({
-          ...pinchStyle,
-          transform: `scale(${scale * pinchStyle['data-zoom']})`,
+        setPinchData({
+          ...pinchData,
+          vscale: scale,
         })
       },
       onPinchEnd: ({ scale }) => {
-        setPinchStyle({
-          ...pinchStyle,
-          'data-zoom': pinchStyle['data-zoom'] * scale,
-          transform: `scale(${scale})`,
+        setPinchData({
+          ...pinchData,
+          scale: pinchData.scale * scale,
         })
       },
     }),
-    [panStyle, setPanStyle, pinchStyle, setPinchStyle],
+    [panData, setPanData, pinchData, setPinchData],
   )
   return (
     <div>
@@ -55,11 +62,13 @@ export default function ExampleComponent() {
             background: '#38E',
             color: 'white',
             height: 100,
+            left: panData.x,
             lienHeight: '100px',
             position: 'relative',
             textAlign: 'center',
+            top: panData.y,
+            transform: `translate(${panData.vx}px, ${panData.vy}px)`,
             width: 100,
-            ...panStyle,
           }}
         >
           Pan Me!
@@ -70,7 +79,7 @@ export default function ExampleComponent() {
       <br />
       <br />
 
-      <TheTouchable>
+      <TheTouchable pan={false} pinch>
         <div
           style={{
             background: '#E83',
@@ -79,8 +88,8 @@ export default function ExampleComponent() {
             lienHeight: '100px',
             position: 'relative',
             textAlign: 'center',
+            transform: `scale(${pinchData.scale * pinchData.vscale})`,
             width: 100,
-            ...pinchStyle,
           }}
         >
           Pinch Me!
