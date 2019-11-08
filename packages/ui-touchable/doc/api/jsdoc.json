@@ -1,0 +1,40 @@
+[
+  {
+    "description": "Touch event handler",
+    "id": "module:@the-/ui-touchable",
+    "kind": "module",
+    "longname": "module:@the-/ui-touchable",
+    "meta": {
+      "filename": "index.jsx",
+      "lineno": 3,
+      "path": "lib"
+    },
+    "name": "@the-/ui-touchable",
+    "order": 0,
+    "typicalname": "uiTouchable",
+    "version": "15.4.13"
+  },
+  {
+    "description": "Touchable component",
+    "id": "module:@the-/ui-touchable.TheTouchable()",
+    "kind": "constructor",
+    "longname": "module:@the-/ui-touchable.TheTouchable",
+    "memberof": "module:@the-/ui-touchable.TheTouchable",
+    "name": "TheTouchable",
+    "order": 2
+  },
+  {
+    "id": "module:@the-/ui-touchable.TheTouchable",
+    "kind": "class",
+    "longname": "module:@the-/ui-touchable.TheTouchable",
+    "memberof": "module:@the-/ui-touchable",
+    "meta": {
+      "filename": "TheTouchable.jsx",
+      "lineno": 16,
+      "path": "lib"
+    },
+    "name": "TheTouchable",
+    "order": 1,
+    "scope": "static"
+  }
+]
