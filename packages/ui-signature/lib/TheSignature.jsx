@@ -84,9 +84,17 @@ const TheSignature = (props) => {
 
   useEffect(() => {
     const { current: canvas } = canvasRef
+    let resumeTouchScrolling = null
     const newPad = new SignaturePad(canvas, {
-      onBegin: () => handlePadBegin(newPad),
-      onEnd: () => handleEnd(newPad),
+      onBegin: () => {
+        handlePadBegin(newPad)
+        resumeTouchScrolling && resumeTouchScrolling()
+        resumeTouchScrolling = stopTouchScrolling()
+      },
+      onEnd: () => {
+        handleEnd(newPad)
+        resumeTouchScrolling && resumeTouchScrolling()
+      },
     })
     setPad(newPad)
 
@@ -99,6 +107,7 @@ const TheSignature = (props) => {
       newPad.off()
       window.removeEventListener('resize', resize)
       setPad(null)
+      resumeTouchScrolling && resumeTouchScrolling()
     }
   }, [])
 
@@ -114,32 +123,6 @@ const TheSignature = (props) => {
   useEffect(() => {
     resize()
   }, [pad])
-
-  useEffect(() => {
-    const { current: container } = containerRef
-    let resumeTouchScrolling = null
-    const listeners = {
-      touchcancel: () => {
-        resumeTouchScrolling && resumeTouchScrolling()
-      },
-      touchend: () => {
-        resumeTouchScrolling && resumeTouchScrolling()
-      },
-      touchmove: (e) => e.preventDefault(),
-      touchstart: () => {
-        resumeTouchScrolling = stopTouchScrolling()
-      },
-    }
-    for (const [event, listener] of Object.entries(listeners)) {
-      container.addEventListener(event, listener)
-    }
-    return () => {
-      for (const [event, listener] of Object.entries(listeners)) {
-        container.removeEventListener(event, listener)
-      }
-      resumeTouchScrolling && resumeTouchScrolling()
-    }
-  }, [])
 
   return (
     <div
