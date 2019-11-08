@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-paint",
   "description": "Hand write painting",
-  "version": "15.5.21",
+  "version": "15.5.22",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,10 +11,10 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/const-ui": "^15.4.5",
-    "@the-/ui-style": "^15.4.12",
-    "@the-/util-ui": "^16.0.5",
-    "@the-/window": "^15.6.1",
+    "@the-/const-ui": "^15.5.0",
+    "@the-/ui-style": "^16.0.0",
+    "@the-/util-ui": "^16.1.0",
+    "@the-/window": "^15.8.2",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
     "uuid": "^3.3.3"

@@ -4,13 +4,18 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import SignaturePad from 'signature_pad/dist/signature_pad'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
+import {
+  eventHandlersFor,
+  htmlAttributesFor,
+  stopTouchScrolling,
+} from '@the-/util-ui'
 import { get } from '@the-/window'
 
 /**
  * Signature pad of the-components
  */
 const TheSignature = (props) => {
+  const containerRef = useRef(null)
   const {
     children,
     className,
@@ -110,6 +115,32 @@ const TheSignature = (props) => {
     resize()
   }, [pad])
 
+  useEffect(() => {
+    const { current: container } = containerRef
+    let resumeTouchScrolling = null
+    const listeners = {
+      touchcancel: () => {
+        resumeTouchScrolling && resumeTouchScrolling()
+      },
+      touchend: () => {
+        resumeTouchScrolling && resumeTouchScrolling()
+      },
+      touchmove: (e) => e.preventDefault(),
+      touchstart: () => {
+        resumeTouchScrolling = stopTouchScrolling()
+      },
+    }
+    for (const [event, listener] of Object.entries(listeners)) {
+      container.addEventListener(event, listener)
+    }
+    return () => {
+      for (const [event, listener] of Object.entries(listeners)) {
+        container.removeEventListener(event, listener)
+      }
+      resumeTouchScrolling && resumeTouchScrolling()
+    }
+  }, [])
+
   return (
     <div
       {...htmlAttributesFor(props, {
@@ -117,6 +148,7 @@ const TheSignature = (props) => {
       })}
       {...eventHandlersFor(props, { except: [] })}
       className={c('the-signature', className)}
+      ref={containerRef}
     >
       <canvas
         className='the-signature-canvas'

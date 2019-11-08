@@ -13,7 +13,7 @@
     "name": "@the-/util-ui",
     "order": 5,
     "typicalname": "utilUi",
-    "version": "16.0.6"
+    "version": "16.1.0"
   },
   {
     "description": "Convert base64 data into blob\nmodule:@the-/util-ui",
@@ -476,6 +476,31 @@
     "scope": "static"
   },
   {
+    "description": "Stop touch scrolling",
+    "id": "module:@the-/util-ui.stopTouchScrolling",
+    "kind": "function",
+    "longname": "module:@the-/util-ui.stopTouchScrolling",
+    "memberof": "module:@the-/util-ui",
+    "meta": {
+      "filename": "stopTouchScrolling.js",
+      "lineno": 5,
+      "path": "lib"
+    },
+    "name": "stopTouchScrolling",
+    "order": 12,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "Resume function"
+      }
+    ],
+    "scope": "static"
+  },
+  {
     "description": "Toggle class on document body",
     "id": "module:@the-/util-ui.toggleBodyClass",
     "kind": "function",
@@ -487,7 +512,7 @@
       "path": "lib"
     },
     "name": "toggleBodyClass",
-    "order": 12,
+    "order": 13,
     "params": [
       {
         "type": {
@@ -497,7 +522,7 @@
         },
         "optional": true,
         "description": "Enabled or not",
-        "name": "state="
+        "name": "enabled="
       },
       {
         "type": {

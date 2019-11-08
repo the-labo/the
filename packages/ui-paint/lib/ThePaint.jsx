@@ -3,7 +3,11 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
+import {
+  eventHandlersFor,
+  htmlAttributesFor,
+  stopTouchScrolling,
+} from '@the-/util-ui'
 import { get } from '@the-/window'
 import DrawConfigs from './constants/DrawConfigs'
 import DrawingMethods from './constants/DrawingMethods'
@@ -51,23 +55,17 @@ const ThePaint = (props) => {
 
   useEffect(() => {
     const { current: container } = containerRef
-    const document = get('document')
-
-    const preventEvent = (e) => e.preventDefault()
+    let resumeTouchScrolling = null
     const listeners = {
       touchcancel: () => {
-        document.removeEventListener('touchmove', preventEvent, {
-          passive: false,
-        })
+        resumeTouchScrolling && resumeTouchScrolling()
       },
       touchend: () => {
-        document.removeEventListener('touchmove', preventEvent, {
-          passive: false,
-        })
+        resumeTouchScrolling && resumeTouchScrolling()
       },
       touchmove: (e) => e.preventDefault(),
       touchstart: () => {
-        document.addEventListener('touchmove', preventEvent, { passive: false })
+        resumeTouchScrolling = stopTouchScrolling()
       },
     }
     for (const [event, listener] of Object.entries(listeners)) {
@@ -77,9 +75,7 @@ const ThePaint = (props) => {
       for (const [event, listener] of Object.entries(listeners)) {
         container.removeEventListener(event, listener)
       }
-      document.removeEventListener('touchmove', preventEvent, {
-        passive: false,
-      })
+      resumeTouchScrolling && resumeTouchScrolling()
     }
   }, [])
 

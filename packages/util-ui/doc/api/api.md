@@ -22,7 +22,7 @@ module:@the-/util-ui</p>
 ## @the-/util-ui
 Utility for the-components
 
-**Version**: 16.0.6  
+**Version**: 16.1.0  
 **License**: MIT  
 
 * [@the-/util-ui](#module_@the-/util-ui)
@@ -35,7 +35,8 @@ Utility for the-components
     * ~~[.isVideoSrc(src)](#module_@the-/util-ui.isVideoSrc) ⇒ <code>boolean</code>~~
     * [.newId([options])](#module_@the-/util-ui.newId) ⇒ <code>string</code>
     * ~~[.readFileAsDataURL()](#module_@the-/util-ui.readFileAsDataURL) ⇒ <code>Promise.&lt;string&gt;</code>~~
-    * [.toggleBodyClass([state&#x3D;], className)](#module_@the-/util-ui.toggleBodyClass) ⇒ <code>\*</code>
+    * [.stopTouchScrolling()](#module_@the-/util-ui.stopTouchScrolling) ⇒ <code>function</code>
+    * [.toggleBodyClass([enabled&#x3D;], className)](#module_@the-/util-ui.toggleBodyClass) ⇒ <code>\*</code>
 
 <a name="module_@the-/util-ui.asStyleData"></a>
 
@@ -149,16 +150,23 @@ Read file  : data url
 | --- | --- |
 | <code>File</code> | File to read |
 
+<a name="module_@the-/util-ui.stopTouchScrolling"></a>
+
+### utilUi.stopTouchScrolling() ⇒ <code>function</code>
+Stop touch scrolling
+
+**Kind**: static method of [<code>@the-/util-ui</code>](#module_@the-/util-ui)  
+**Returns**: <code>function</code> - Resume function  
 <a name="module_@the-/util-ui.toggleBodyClass"></a>
 
-### utilUi.toggleBodyClass([state&#x3D;], className) ⇒ <code>\*</code>
+### utilUi.toggleBodyClass([enabled&#x3D;], className) ⇒ <code>\*</code>
 Toggle class on document body
 
 **Kind**: static method of [<code>@the-/util-ui</code>](#module_@the-/util-ui)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| [state=] | <code>boolean</code> | Enabled or not |
+| [enabled=] | <code>boolean</code> | Enabled or not |
 | className | <code>string</code> | Class name to toggle |
 
 <a name="base64ToBlob"></a>
