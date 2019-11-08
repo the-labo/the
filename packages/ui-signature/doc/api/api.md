@@ -24,7 +24,7 @@
 ## @the-/ui-signature
 Signature pad of the-components
 
-**Version**: 15.5.3  
+**Version**: 15.5.4  
 <a name="TheSignature"></a>
 
 ## TheSignature()

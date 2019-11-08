@@ -109,7 +109,7 @@ const TheSignature = (props) => {
       setPad(null)
       resumeTouchScrolling && resumeTouchScrolling()
     }
-  }, [])
+  }, [resize, pad])
 
   useEffect(() => {
     syncPad()
