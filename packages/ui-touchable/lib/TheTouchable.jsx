@@ -2,7 +2,7 @@
 
 import Hammer from 'hammerjs'
 import PropTypes from 'prop-types'
-import React, { useEffect, useMemo, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { unlessProduction } from '@the-/check-env'
 
 /**
@@ -39,89 +39,21 @@ const TheTouchable = (props) => {
   const ref = useRef(null)
   const [hammer, setHammer] = useState(null)
 
-  const recognizers = useMemo(() => {
-    const singleTap = onTap && new Hammer.Tap({ event: 'singletap' })
-    const doubleTap =
-      onDoubleTap && new Hammer.Tap({ event: 'doubletap', taps: 2 })
-
-    if (singleTap && doubleTap) {
-      singleTap.requireFailure(doubleTap)
-    }
-    return [singleTap, doubleTap].filter(Boolean)
-  }, [tapEnabled, ...tapCallbacks])
-
-  const listeners = useMemo(
-    () => ({
-      ...(panEnabled
-        ? Object.fromEntries(
-            [
-              ['pancancel', onPanCancel],
-              ['panend', onPanEnd],
-              ['panmove', onPan],
-              ['panstart', onPanStart],
-            ].map(([event, cb]) => [
-              event,
-              (e) => {
-                const { center, deltaX, deltaY, srcEvent } = e
-                cb &&
-                  cb({
-                    center,
-                    srcEvent,
-                    vx: deltaX,
-                    vy: deltaY,
-                  })
-              },
-            ]),
-          )
-        : {}),
-      ...(pinchEnabled
-        ? Object.fromEntries(
-            [
-              ['pinchin', onPinch],
-              ['pinchout', onPinch],
-              ['pinchend', onPinchEnd],
-              ['pinchstart', onPinchStart],
-            ].map(([event, cb]) => [
-              event,
-              (e) => {
-                const { center, scale, srcEvent } = e
-                cb &&
-                  cb({
-                    center,
-                    scale,
-                    srcEvent,
-                  })
-              },
-            ]),
-          )
-        : {}),
-      ...(tapEnabled
-        ? Object.fromEntries(
-            [['singletap', onTap], ['doubletap', onDoubleTap]].map(
-              ([event, cb]) => [
-                event,
-                (e) => {
-                  const { center, srcEvent, tapCount } = e
-                  cb &&
-                    cb({
-                      center,
-                      srcEvent,
-                      tapCount,
-                    })
-                },
-              ],
-            ),
-          )
-        : {}),
-    }),
-    [
-      pinchEnabled,
-      panEnabled,
-      tapEnabled,
-      ...pinchCallbacks,
-      ...panCallbacks,
-      ...tapCallbacks,
-    ],
+  const bindListeners = useCallback(
+    (listeners) => {
+      if (!hammer) {
+        return
+      }
+      for (const [event, listener] of Object.entries(listeners)) {
+        hammer.on(event, listener)
+      }
+      return () => {
+        for (const [event, listener] of Object.entries(listeners)) {
+          hammer.off(event, listener)
+        }
+      }
+    },
+    [hammer],
   )
 
   useEffect(() => {
@@ -135,27 +67,101 @@ const TheTouchable = (props) => {
       return
     }
     const pan = hammer.get('pan')
-    pan.set({
-      direction: panEnabled ? Hammer.DIRECTION_ALL : Hammer.DIRECTION_NONE,
-    })
+    pan.set({ enable: panEnabled })
+    if (!panEnabled) {
+      return
+    }
+    pan.set({ direction: Hammer.DIRECTION_ALL })
+    const listeners = Object.fromEntries(
+      [
+        ['pancancel', onPanCancel],
+        ['panend', onPanEnd],
+        ['panmove', onPan],
+        ['panstart', onPanStart],
+      ]
+        .filter(([, cb]) => !!cb)
+        .map(([event, cb]) => [
+          event,
+          (e) => {
+            const { center, deltaX, deltaY, srcEvent } = e
+            cb({
+              center,
+              srcEvent,
+              vx: deltaX,
+              vy: deltaY,
+            })
+          },
+        ]),
+    )
+    const unbindListeners = bindListeners(listeners)
+    return () => {
+      unbindListeners()
+    }
+  }, [hammer, panEnabled, bindListeners, ...panCallbacks])
+
+  useEffect(() => {
+    if (!hammer) {
+      return
+    }
     const pinch = hammer.get('pinch')
     pinch.set({ enable: pinchEnabled })
-
-    for (const [event, listener] of Object.entries(listeners)) {
-      hammer.on(event, listener)
+    if (!pinchEnabled) {
+      return
     }
-    for (const recognizer of recognizers) {
-      hammer.add(recognizer)
-    }
+    const listeners = Object.fromEntries(
+      [
+        ['pinchin', onPinch],
+        ['pinchout', onPinch],
+        ['pinchend', onPinchEnd],
+        ['pinchstart', onPinchStart],
+      ]
+        .filter(([, cb]) => !!cb)
+        .map(([event, cb]) => [
+          event,
+          (e) => {
+            const { center, scale, srcEvent } = e
+            cb({
+              center,
+              scale,
+              srcEvent,
+            })
+          },
+        ]),
+    )
+    const unbindListeners = bindListeners(listeners)
     return () => {
-      for (const [event, listener] of Object.entries(listeners)) {
-        hammer.off(event, listener)
-      }
-      for (const recognizer of recognizers) {
-        hammer.remove(recognizer)
-      }
+      unbindListeners()
     }
-  }, [hammer, panEnabled, pinchEnabled, listeners, recognizers])
+  }, [hammer, pinchEnabled, bindListeners, ...pinchCallbacks])
+
+  useEffect(() => {
+    if (!hammer) {
+      return
+    }
+    if (!tapEnabled) {
+      return
+    }
+    const listeners = Object.fromEntries(
+      [['tap', onTap], ['doubletap', onDoubleTap]]
+        .filter(([, cb]) => !!cb)
+        .map(([event, cb]) => [
+          event,
+          (e) => {
+            const { center, srcEvent, tapCount } = e
+            cb({
+              center,
+              srcEvent,
+              tapCount,
+            })
+          },
+        ]),
+    )
+    const unbindListeners = bindListeners(listeners)
+
+    return () => {
+      unbindListeners()
+    }
+  }, [hammer, tapEnabled, bindListeners, ...tapCallbacks])
 
   const child = React.Children.only(children)
   return (

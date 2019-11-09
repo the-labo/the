@@ -19,11 +19,17 @@ export default function ExampleComponent() {
     count: 1,
   })
 
+  const [doubleTapData, setDoubleTapData] = useState({
+    count: 1,
+  })
+
   const boxStyle = (color) => ({
     background: color,
+    boxSizing: 'border-box',
     color: 'white',
     height: 200,
     lienHeight: '200px',
+    padding: '20px',
     position: 'relative',
     textAlign: 'center',
     width: 200,
@@ -79,6 +85,18 @@ export default function ExampleComponent() {
     }),
     [tapData, setTapData],
   )
+
+  const doubleTapHandlers = useMemo(
+    () => ({
+      onDoubleTap: () => {
+        setDoubleTapData({
+          ...doubleTapData,
+          count: doubleTapData.count + 1,
+        })
+      },
+    }),
+    [doubleTapData, setDoubleTapData],
+  )
   return (
     <div>
       <TheTouchable {...panHandlers}>
@@ -90,7 +108,8 @@ export default function ExampleComponent() {
             transform: `translate(${panData.vx}px, ${panData.vy}px)`,
           }}
         >
-          Pan Me!
+          <h3>Pan Me!</h3>
+          <p>{JSON.stringify(panData, null, 2)}</p>
         </div>
       </TheTouchable>
       <br />
@@ -103,8 +122,8 @@ export default function ExampleComponent() {
             transform: `scale(${pinchData.scale * pinchData.vscale})`,
           }}
         >
-          <div>Pinch Me!</div>
-          <div>{`vscale:${pinchData.vscale}`}</div>
+          <h3>Pinch Me!</h3>
+          <p>{JSON.stringify(pinchData, null, 2)}</p>
         </div>
       </TheTouchable>
 
@@ -117,8 +136,19 @@ export default function ExampleComponent() {
             ...boxStyle('#3E8'),
           }}
         >
-          <div>Pinch Me!</div>
-          <div>{`count:${tapData.count}`}</div>
+          <h3>Tap Me!</h3>
+          <p>{JSON.stringify(tapData, null, 2)}</p>
+        </div>
+      </TheTouchable>
+      <br />
+      <TheTouchable {...doubleTapHandlers}>
+        <div
+          style={{
+            ...boxStyle('#E33'),
+          }}
+        >
+          <h3>Double Tap Me!</h3>
+          <p>{JSON.stringify(doubleTapData, null, 2)}</p>
         </div>
       </TheTouchable>
     </div>
