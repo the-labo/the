@@ -6,6 +6,7 @@ import React, { useCallback, useEffect, useRef, useState } from 'react'
 import {
   eventHandlersFor,
   htmlAttributesFor,
+  isMultiTouchEvent,
   stopTouchScrolling,
 } from '@the-/util-ui'
 import { get } from '@the-/window'
@@ -13,8 +14,6 @@ import DrawConfigs from './constants/DrawConfigs'
 import DrawingMethods from './constants/DrawingMethods'
 import Drawer from './helpers/Drawer'
 import ThePaintStyle from './ThePaintStyle'
-
-const isMultiTouch = (e) => e.touches && e.touches.length > 1
 
 /**
  * Hand write painting
@@ -67,7 +66,9 @@ const ThePaint = (props) => {
       },
       touchmove: (e) => e.preventDefault(),
       touchstart: () => {
-        resumeTouchScrolling = stopTouchScrolling()
+        resumeTouchScrolling = stopTouchScrolling({
+          skipMultipleTouch: true,
+        })
       },
     }
     for (const [event, listener] of Object.entries(listeners)) {
@@ -125,7 +126,7 @@ const ThePaint = (props) => {
         return
       }
 
-      if (isMultiTouch(e)) {
+      if (isMultiTouchEvent(e)) {
         return
       }
 

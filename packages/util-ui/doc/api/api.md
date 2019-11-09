@@ -22,7 +22,7 @@ module:@the-/util-ui</p>
 ## @the-/util-ui
 Utility for the-components
 
-**Version**: 16.1.0  
+**Version**: 16.2.2  
 **License**: MIT  
 
 * [@the-/util-ui](#module_@the-/util-ui)
@@ -31,11 +31,12 @@ Utility for the-components
     * [.eventHandlersFor(props, [options])](#module_@the-/util-ui.eventHandlersFor) ⇒ <code>Object</code>
     * [.htmlAttributesFor(props, [options])](#module_@the-/util-ui.htmlAttributesFor) ⇒ <code>Object</code>
     * [.isKeyCode(code, name)](#module_@the-/util-ui.isKeyCode) ⇒ <code>boolean</code>
+    * [.isMultiTouchEvent(e)](#module_@the-/util-ui.isMultiTouchEvent) ⇒ <code>boolean</code>
     * [.isServerSide()](#module_@the-/util-ui.isServerSide) ⇒ <code>boolean</code>
     * ~~[.isVideoSrc(src)](#module_@the-/util-ui.isVideoSrc) ⇒ <code>boolean</code>~~
     * [.newId([options])](#module_@the-/util-ui.newId) ⇒ <code>string</code>
-    * ~~[.readFileAsDataURL()](#module_@the-/util-ui.readFileAsDataURL) ⇒ <code>Promise.&lt;string&gt;</code>~~
-    * [.stopTouchScrolling()](#module_@the-/util-ui.stopTouchScrolling) ⇒ <code>function</code>
+    * ~~[.readFileAsDataURL(file)](#module_@the-/util-ui.readFileAsDataURL) ⇒ <code>Promise.&lt;string&gt;</code>~~
+    * [.stopTouchScrolling([options])](#module_@the-/util-ui.stopTouchScrolling) ⇒ <code>function</code>
     * [.toggleBodyClass([enabled&#x3D;], className)](#module_@the-/util-ui.toggleBodyClass) ⇒ <code>\*</code>
 
 <a name="module_@the-/util-ui.asStyleData"></a>
@@ -104,6 +105,17 @@ Key code detector
 | code | <code>number</code> | Key code to check |
 | name | <code>string</code> \| <code>number</code> | Name of key code to compare |
 
+<a name="module_@the-/util-ui.isMultiTouchEvent"></a>
+
+### utilUi.isMultiTouchEvent(e) ⇒ <code>boolean</code>
+Is multi touch event
+
+**Kind**: static method of [<code>@the-/util-ui</code>](#module_@the-/util-ui)  
+
+| Param | Type |
+| --- | --- |
+| e | <code>Event</code> | 
+
 <a name="module_@the-/util-ui.isServerSide"></a>
 
 ### utilUi.isServerSide() ⇒ <code>boolean</code>
@@ -138,7 +150,7 @@ Generate new id
 
 <a name="module_@the-/util-ui.readFileAsDataURL"></a>
 
-### ~~utilUi.readFileAsDataURL() ⇒ <code>Promise.&lt;string&gt;</code>~~
+### ~~utilUi.readFileAsDataURL(file) ⇒ <code>Promise.&lt;string&gt;</code>~~
 ***Deprecated***
 
 Read file  : data url
@@ -146,17 +158,22 @@ Read file  : data url
 **Kind**: static method of [<code>@the-/util-ui</code>](#module_@the-/util-ui)  
 **Returns**: <code>Promise.&lt;string&gt;</code> - Data url  
 
-| Type | Description |
-| --- | --- |
-| <code>File</code> | File to read |
+| Param | Type | Description |
+| --- | --- | --- |
+| file | <code>File</code> | File to read |
 
 <a name="module_@the-/util-ui.stopTouchScrolling"></a>
 
-### utilUi.stopTouchScrolling() ⇒ <code>function</code>
+### utilUi.stopTouchScrolling([options]) ⇒ <code>function</code>
 Stop touch scrolling
 
 **Kind**: static method of [<code>@the-/util-ui</code>](#module_@the-/util-ui)  
 **Returns**: <code>function</code> - Resume function  
+
+| Param | Type | Default |
+| --- | --- | --- |
+| [options] | <code>Object</code> | <code>{}</code> | 
+
 <a name="module_@the-/util-ui.toggleBodyClass"></a>
 
 ### utilUi.toggleBodyClass([enabled&#x3D;], className) ⇒ <code>\*</code>

@@ -13,7 +13,7 @@
     "name": "@the-/util-ui",
     "order": 5,
     "typicalname": "utilUi",
-    "version": "16.1.0"
+    "version": "16.2.2"
   },
   {
     "description": "Convert base64 data into blob\nmodule:@the-/util-ui",
@@ -296,6 +296,40 @@
     "scope": "static"
   },
   {
+    "description": "Is multi touch event",
+    "id": "module:@the-/util-ui.isMultiTouchEvent",
+    "kind": "function",
+    "longname": "module:@the-/util-ui.isMultiTouchEvent",
+    "memberof": "module:@the-/util-ui",
+    "meta": {
+      "filename": "isMultiTouchEvent.js",
+      "lineno": 3,
+      "path": "lib"
+    },
+    "name": "isMultiTouchEvent",
+    "order": 7,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Event"
+          ]
+        },
+        "name": "e"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
     "description": "Detect is serverside",
     "id": "module:@the-/util-ui.isServerSide",
     "kind": "function",
@@ -307,7 +341,7 @@
       "path": "lib"
     },
     "name": "isServerSide",
-    "order": 7,
+    "order": 8,
     "returns": [
       {
         "type": {
@@ -332,7 +366,7 @@
       "path": "lib"
     },
     "name": "isVideoSrc",
-    "order": 8,
+    "order": 9,
     "params": [
       {
         "type": {
@@ -368,7 +402,7 @@
       "path": "lib"
     },
     "name": "newId",
-    "order": 9,
+    "order": 10,
     "params": [
       {
         "type": {
@@ -416,7 +450,7 @@
       "path": "lib"
     },
     "name": "readFileAsDataURL",
-    "order": 10,
+    "order": 11,
     "params": [
       {
         "type": {
@@ -424,7 +458,8 @@
             "File"
           ]
         },
-        "description": "File to read"
+        "description": "File to read",
+        "name": "file"
       }
     ],
     "returns": [
@@ -451,7 +486,7 @@
       "path": "lib"
     },
     "name": "scrollToElement",
-    "order": 11,
+    "order": 12,
     "params": [
       {
         "type": {
@@ -483,11 +518,23 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "stopTouchScrolling.js",
-      "lineno": 5,
+      "lineno": 6,
       "path": "lib"
     },
     "name": "stopTouchScrolling",
-    "order": 12,
+    "order": 13,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
+      }
+    ],
     "returns": [
       {
         "type": {
@@ -512,7 +559,7 @@
       "path": "lib"
     },
     "name": "toggleBodyClass",
-    "order": 13,
+    "order": 14,
     "params": [
       {
         "type": {

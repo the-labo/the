@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/util-ui
  * @typicalname utilUi
- * @version 16.1.0
+ * @version 16.2.2
  */
 'use strict'
 
@@ -15,6 +15,7 @@ const changedProps_ = require('./changedProps')
 const eventHandlersFor_ = require('./eventHandlersFor')
 const htmlAttributesFor_ = require('./htmlAttributesFor')
 const isKeyCode_ = require('./isKeyCode')
+const isMultiTouchEvent_ = require('./isMultiTouchEvent')
 const isServerSide_ = require('./isServerSide')
 const isVideoSrc_ = require('./isVideoSrc')
 const newId_ = require('./newId')
@@ -30,6 +31,7 @@ exports.changedProps = changedProps_
 exports.eventHandlersFor = eventHandlersFor_
 exports.htmlAttributesFor = htmlAttributesFor_
 exports.isKeyCode = isKeyCode_
+exports.isMultiTouchEvent = isMultiTouchEvent_
 exports.isServerSide = isServerSide_
 exports.isVideoSrc = isVideoSrc_
 exports.newId = newId_
@@ -45,6 +47,7 @@ module.exports = {
   eventHandlersFor: eventHandlersFor_,
   htmlAttributesFor: htmlAttributesFor_,
   isKeyCode: isKeyCode_,
+  isMultiTouchEvent: isMultiTouchEvent_,
   isServerSide: isServerSide_,
   isVideoSrc: isVideoSrc_,
   newId: newId_,

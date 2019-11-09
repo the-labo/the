@@ -83,11 +83,13 @@ Usage
   - [.eventHandlersFor(props,options)](./doc/api/api.md#module_@the-/util-ui.eventHandlersFor)
   - [.htmlAttributesFor(props,options)](./doc/api/api.md#module_@the-/util-ui.htmlAttributesFor)
   - [.isKeyCode(code,name)](./doc/api/api.md#module_@the-/util-ui.isKeyCode)
+  - [.isMultiTouchEvent(e)](./doc/api/api.md#module_@the-/util-ui.isMultiTouchEvent)
   - [.isServerSide()](./doc/api/api.md#module_@the-/util-ui.isServerSide)
   - [.isVideoSrc(src)](./doc/api/api.md#module_@the-/util-ui.isVideoSrc)
   - [.newId(options)](./doc/api/api.md#module_@the-/util-ui.newId)
-  - [.readFileAsDataURL()](./doc/api/api.md#module_@the-/util-ui.readFileAsDataURL)
-  - [.toggleBodyClass(state&#x3D;,className)](./doc/api/api.md#module_@the-/util-ui.toggleBodyClass)
+  - [.readFileAsDataURL(file)](./doc/api/api.md#module_@the-/util-ui.readFileAsDataURL)
+  - [.stopTouchScrolling(options)](./doc/api/api.md#module_@the-/util-ui.stopTouchScrolling)
+  - [.toggleBodyClass(enabled&#x3D;,className)](./doc/api/api.md#module_@the-/util-ui.toggleBodyClass)
 
 See [API Guide](./doc/api/api.md) for more detail
 

@@ -7,7 +7,7 @@ const { get } = require('bwindow')
  * @memberof module:@the-/util-ui
  * @function readFileAsDataURL
  * @deprecated
- * @param {File} - File to read
+ * @param {File} file - File to read
  * @returns {Promise<string>} Data url
  */
 async function readFileAsDataURL(file) {

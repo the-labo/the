@@ -1,20 +1,31 @@
 'use strict'
 
 const { get } = require('bwindow')
+const isMultiTouchEvent = require('./isMultiTouchEvent')
 
 /**
  * Stop touch scrolling
  * @memberof module:@the-/util-ui
  * @function stopTouchScrolling
+ * @param {Object} [options={}]
  * @returns {function()} Resume function
  */
-function stopTouchScrolling() {
+function stopTouchScrolling(options = {}) {
+  const { skipMultipleTouch = false } = options
   const document = get('document')
-  const preventEvent = (e) => e.preventDefault()
+  const handleEvent = (e) => {
+    const skip = skipMultipleTouch && isMultiTouchEvent(e)
+    if (skip) {
+      return
+    }
+
+    e.preventDefault()
+  }
   const eventOptions = { passive: false }
-  document.addEventListener('touchmove', preventEvent, eventOptions)
+  const event = 'touchmove'
+  document.addEventListener(event, handleEvent, eventOptions)
   return () => {
-    document.removeEventListener('touchmove', preventEvent, eventOptions)
+    document.removeEventListener(event, handleEvent, eventOptions)
   }
 }
 
