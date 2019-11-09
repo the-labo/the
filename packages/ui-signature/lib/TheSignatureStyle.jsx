@@ -30,7 +30,6 @@ TheSignatureStyle.data = () =>
     '.the-signature': {
       display: 'block',
       position: 'relative',
-      touchAction: 'none',
     },
     '.the-signature-canvas': {
       background: 'white',
