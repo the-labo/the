@@ -101,15 +101,21 @@ const TheSignature = (props) => {
     onPad && onPad(newPad)
     newPad.on()
 
-    const window = get('window')
-    window.addEventListener('resize', resize)
     return () => {
       newPad.off()
-      window.removeEventListener('resize', resize)
       setPad(null)
       resumeTouchScrolling && resumeTouchScrolling()
     }
-  }, [resize, pad])
+  }, [])
+
+  useEffect(() => {
+    const window = get('window')
+    window.addEventListener('resize', resize)
+    return () => {
+      window.removeEventListener('resize', resize)
+      setPad(null)
+    }
+  }, [resize])
 
   useEffect(() => {
     syncPad()

@@ -29,52 +29,43 @@ const TheTouchable = (props) => {
     onPinch,
     onPinchEnd,
     onPinchStart,
-    pan: panEnabled,
-    pinch: pinchEnabled,
   } = props
+  const pinchCallbacks = [onPinch, onPinchStart, onPinchEnd]
+  const panCallbacks = [onPan, onPanCancel, onPanEnd, onPanStart,]
+
+  const pinchEnabled = pinchCallbacks.some(handler => !!handler)
+  const panEnabled = panCallbacks.some(handler => !!handler)
   unlessProduction(() => {
-    useEffect(() => {
-      if (!pinchEnabled) {
-        const pinchHandlers = [onPinch, onPinchStart, onPinchEnd].filter(
-          Boolean,
-        )
-        pinchHandlers.length > 0 &&
-          console.warn('[@the-/touchable] You might forgotten to enable pinch')
-      }
-    }, [pinchEnabled, onPinch, onPinchStart, onPinchEnd])
   })
   const ref = useRef(null)
   const [hammer, setHammer] = useState(null)
 
   const listeners = useMemo(
     () => ({
-      pancancel: (e) => {
-        onPanCancel && onPanCancel(parsePanEvent(e))
-      },
-      panend: (e) => {
-        onPanEnd && onPanEnd(parsePanEvent(e))
-      },
-      panmove: (e) => {
-        onPan && onPan(parsePanEvent(e))
-      },
-      panstart: (e) => {
-        onPanStart && onPanStart(parsePanEvent(e))
-      },
-      pinchend: (e) => {
-        onPinchEnd && onPinchEnd(parsePinchEvent(e))
-      },
-      pinchin: (e) => {
-        onPinch && onPinch(parsePinchEvent(e))
-      },
-      pinchout: (e) => {
-        onPinch && onPinch(parsePinchEvent(e))
-      },
-      pinchstart: (e) => {
-        onPinchStart && onPinchStart(parsePinchEvent(e))
-      },
+      ...(panEnabled ?
+        Object.fromEntries([
+          ['pancancel', onPanCancel],
+          ['panend', onPanEnd],
+          ['panmove', onPan],
+          ['panstart', onPanStart],
+        ].map(([event, cb]) => [event, (e) => {
+          cb && cb(parsePanEvent(e))
+        }]))
+        : {}),
+      ...(pinchEnabled ?
+        Object.fromEntries([
+          ['pinchin', onPinch],
+          ['pinchout', onPinch],
+          ['pinchend', onPinchEnd],
+          ['pinchstart', onPinchStart],
+        ].map(([event, cb]) => [event, (e) => {
+          cb && cb(parsePinchEvent(e))
+        }]))
+        : {}),
     }),
-    [onPan, onPinch],
+    [pinchEnabled, panEnabled, ...pinchCallbacks, ...panCallbacks],
   )
+
   useEffect(() => {
     const { current: elm } = ref
     const newHammer = Hammer(elm, {})
@@ -120,7 +111,6 @@ TheTouchable.propTypes = {
   onPinch: PropTypes.func,
   onPinchEnd: PropTypes.func,
   onPinchStart: PropTypes.func,
-  pan: PropTypes.bool,
 }
 
 TheTouchable.defaultProps = {
@@ -131,8 +121,6 @@ TheTouchable.defaultProps = {
   onPinch: null,
   onPinchEnd: null,
   onPinchStart: null,
-  pan: true,
-  pinch: false,
 }
 
 TheTouchable.displayName = 'TheTouchable'

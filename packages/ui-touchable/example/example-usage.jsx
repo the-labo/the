@@ -79,7 +79,7 @@ export default function ExampleComponent() {
       <br />
       <br />
 
-      <TheTouchable pan={false} pinch>
+      <TheTouchable>
         <div
           style={{
             background: '#E83',
