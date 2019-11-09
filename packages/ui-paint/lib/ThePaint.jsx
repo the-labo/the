@@ -64,7 +64,6 @@ const ThePaint = (props) => {
       touchend: () => {
         resumeTouchScrolling && resumeTouchScrolling()
       },
-      touchmove: (e) => e.preventDefault(),
       touchstart: () => {
         resumeTouchScrolling = stopTouchScrolling({
           skipMultipleTouch: true,
