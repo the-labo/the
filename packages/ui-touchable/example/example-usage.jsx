@@ -15,7 +15,21 @@ export default function ExampleComponent() {
     vscale: 1,
   })
 
-  const handlers = useMemo(
+  const [tapData, setTapData] = useState({
+    count: 1,
+  })
+
+  const boxStyle = (color) => ({
+    background: color,
+    color: 'white',
+    height: 200,
+    lienHeight: '200px',
+    position: 'relative',
+    textAlign: 'center',
+    width: 200,
+  })
+
+  const panHandlers = useMemo(
     () => ({
       onPan: ({ vx, vy }) => {
         setPanData({
@@ -34,6 +48,11 @@ export default function ExampleComponent() {
         })
       },
       onPanStart: () => {},
+    }),
+    [panData, setPanData],
+  )
+  const pinchHandlers = useMemo(
+    () => ({
       onPinch: ({ scale }) => {
         setPinchData({
           ...pinchData,
@@ -47,28 +66,28 @@ export default function ExampleComponent() {
         })
       },
     }),
-    [panData, setPanData, pinchData, setPinchData],
+    [pinchData, setPinchData],
+  )
+  const tapHandlers = useMemo(
+    () => ({
+      onTap: () => {
+        setTapData({
+          ...tapData,
+          count: tapData.count + 1,
+        })
+      },
+    }),
+    [tapData, setTapData],
   )
   return (
     <div>
-      <TheTouchable
-        onPan={handlers.onPan}
-        onPanEnd={handlers.onPanEnd}
-        onPanStart={handlers.onPanStart}
-        pan
-      >
+      <TheTouchable {...panHandlers}>
         <div
           style={{
-            background: '#38E',
-            color: 'white',
-            height: 100,
+            ...boxStyle('#38E'),
             left: panData.x,
-            lienHeight: '100px',
-            position: 'relative',
-            textAlign: 'center',
             top: panData.y,
             transform: `translate(${panData.vx}px, ${panData.vy}px)`,
-            width: 100,
           }}
         >
           Pan Me!
@@ -76,23 +95,30 @@ export default function ExampleComponent() {
       </TheTouchable>
       <br />
       <br />
+
+      <TheTouchable {...pinchHandlers}>
+        <div
+          style={{
+            ...boxStyle('#E83'),
+            transform: `scale(${pinchData.scale * pinchData.vscale})`,
+          }}
+        >
+          <div>Pinch Me!</div>
+          <div>{`vscale:${pinchData.vscale}`}</div>
+        </div>
+      </TheTouchable>
+
       <br />
       <br />
 
-      <TheTouchable>
+      <TheTouchable {...tapHandlers}>
         <div
           style={{
-            background: '#E83',
-            color: 'white',
-            height: 100,
-            lienHeight: '100px',
-            position: 'relative',
-            textAlign: 'center',
-            transform: `scale(${pinchData.scale * pinchData.vscale})`,
-            width: 100,
+            ...boxStyle('#3E8'),
           }}
         >
-          Pinch Me!
+          <div>Pinch Me!</div>
+          <div>{`count:${tapData.count}`}</div>
         </div>
       </TheTouchable>
     </div>
