@@ -30,6 +30,7 @@ ThePaintStyle.data = () =>
     '.the-paint': {},
     '.the-paint-canvas': {
       background: 'transparent',
+      touchAction: 'pinch',
     },
     '.the-paint-canvas-container': {
       height: '100%',
@@ -41,6 +42,7 @@ ThePaintStyle.data = () =>
       pointerEvents: 'none',
       position: 'absolute',
       top: 0,
+      touchAction: 'pinch',
     },
   })
 

@@ -14,6 +14,8 @@ import DrawingMethods from './constants/DrawingMethods'
 import Drawer from './helpers/Drawer'
 import ThePaintStyle from './ThePaintStyle'
 
+const isMultiTouch = (e) => e.touches && e.touches.length > 1
+
 /**
  * Hand write painting
  */
@@ -123,8 +125,7 @@ const ThePaint = (props) => {
         return
       }
 
-      const multiTouch = e.touches && e.touches.length > 0
-      if (multiTouch) {
+      if (isMultiTouch(e)) {
         return
       }
 
