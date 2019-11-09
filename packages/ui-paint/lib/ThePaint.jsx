@@ -88,11 +88,13 @@ const ThePaint = (props) => {
   const handleResize = useCallback(() => {
     drawer && drawer.resizeRequest()
   }, [drawer])
+
   useEffect(() => {
     const window = get('window')
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
   }, [handleResize])
+
   useEffect(() => handleResize(), [handleResize, width, height])
 
   const positionForEvent = useCallback(
@@ -118,6 +120,11 @@ const ThePaint = (props) => {
     (e) => {
       const active = drawer && drawer.active
       if (!active) {
+        return
+      }
+
+      const multiTouch = e.touches && e.touches.length > 0
+      if (multiTouch) {
         return
       }
 
