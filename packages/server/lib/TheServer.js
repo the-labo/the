@@ -42,7 +42,7 @@ const assert = theAssert('@the-/server')
  * @param {function[]} middlewares - Koa middlewares
  */
 class TheServer extends RFunc {
-  constructor (config = {}) {
+  constructor(config = {}) {
     const {
       cacheDir = theTmp.generateDirSync({ prefix: 'the-server' }).path,
       controllers: Controllers = {},
@@ -65,11 +65,11 @@ class TheServer extends RFunc {
     debug('config', config)
     assert(
       !('scope' in config),
-      'config.scope is no longer supported. Use \'config.inject()\' instead',
+      "config.scope is no longer supported. Use 'config.inject()' instead",
     )
     assert(
       !('injects' in config),
-      'config.injects is no longer supported. Use \'config.inject()\' instead',
+      "config.injects is no longer supported. Use 'config.inject()' instead",
     )
     unlessProduction(() => {
       const restKeys = Object.keys(rest)
@@ -159,11 +159,11 @@ class TheServer extends RFunc {
     this.rpcKeepDuration = rpcKeepDuration
   }
 
-  get closed () {
+  get closed() {
     return !!this.closeAt
   }
 
-  createControllerDriver (controllerName, client) {
+  createControllerDriver(controllerName, client) {
     const { ControllerDriverFactories } = this
     const ControllerDriverFactory = ControllerDriverFactories[controllerName]
     if (!ControllerDriverFactory) {
@@ -184,12 +184,12 @@ class TheServer extends RFunc {
     })
   }
 
-  handleCallback ({
-                    cid,
-                    controller: controllerName,
-                    name: handlerName,
-                    values,
-                  }) {
+  handleCallback({
+    cid,
+    controller: controllerName,
+    name: handlerName,
+    values,
+  }) {
     const event = [
       IOEvents.CLIENT_CALLBACK,
       cid,
@@ -200,7 +200,7 @@ class TheServer extends RFunc {
   }
 
   /** Server info */
-  info () {
+  info() {
     const { metricsCounter } = this
     return {
       ...(this.additionalInfo || {}),
@@ -217,7 +217,7 @@ class TheServer extends RFunc {
    * @param {...*} args - Close arguments
    * @returns {Promise<*>}
    */
-  async close (...args) {
+  async close(...args) {
     if (this.closeAt) {
       throw new Error('[TheServer] Already closed')
     }
@@ -243,7 +243,7 @@ class TheServer extends RFunc {
    * Destroy all sessions
    * @returns {Promise<number>} Deleted count
    */
-  async destroyAllSessions () {
+  async destroyAllSessions() {
     const { controllerDriverPool, sessionStore } = this
     await controllerDriverPool.each(async (driver) => {
       await driver.clearSession()
@@ -256,7 +256,7 @@ class TheServer extends RFunc {
    * @param {number} port - Port to listen
    * @returns {Promise<undefined>}
    */
-  async listen (port) {
+  async listen(port) {
     if (this.listenAt) {
       throw new Error('[TheServer] Already listening')
     }
@@ -307,6 +307,7 @@ class TheServer extends RFunc {
             await interceptors.controllerWillDetach()
             await driver.saveSession()
             metricsCounter.addControllerDetachCount(controllerName, 1)
+            controllerDriverPool.del(cid, socketId, controllerName)
           } catch (e) {
             console.warn(
               `[TheServer] Failed to cleanup controller ${controllerName}`,

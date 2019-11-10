@@ -470,7 +470,7 @@ describe('the-server', function () {
   })
 
   it('Compare memory usage servers', async () => {
-    for (const count of [1, 2, 4, 8,]) {
+    for (const count of [1, 2, 4, 8]) {
       const servers = []
       const clients = []
       for (let i = 0; i < count; i++) {
@@ -507,7 +507,7 @@ describe('the-server', function () {
   })
 
   it('Memory usage for many clients', async () => {
-    for (const count of [1, 4, 8, 16, 32]) {
+    for (const count of [1, 2, 4, 8]) {
       const port = await aport()
       const server = new TheServer({
         controllers: {
@@ -518,12 +518,12 @@ describe('the-server', function () {
       })
       await server.listen(port)
       for (let i = 0; i < count; i++) {
-        const client = theClient({ cid: 'client01', port })
+        const client = theClient({ cid: `c-${i}`, port })
         const xCtrl = await client.use('xCtrl')
         await xCtrl.sayYo()
         await client.close()
       }
-      await asleep(10)
+      await asleep(100)
       equal(server.controllerDriverPool.length, 0)
       {
         console.log(`=== Memory usage of ${count} clients === `)
