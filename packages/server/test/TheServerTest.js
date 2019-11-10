@@ -470,7 +470,7 @@ describe('the-server', function() {
   })
 
   it('Compare memory usage servers', async () => {
-    for (const count of [1, 2, 4, 8]) {
+    for (const count of [1, 2, 4]) {
       const servers = []
       const clients = []
       for (let i = 0; i < count; i++) {
@@ -507,7 +507,7 @@ describe('the-server', function() {
   })
 
   it('Memory usage for many clients', async () => {
-    for (const count of [1, 2, 4, 8]) {
+    for (const count of [1, 2, 4]) {
       const port = await aport()
       const server = new TheServer({
         controllers: {

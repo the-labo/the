@@ -21,7 +21,7 @@
 ## @the-/server
 HTTP/RPC Server of the-framework
 
-**Version**: 16.3.5  
+**Version**: 16.3.6  
 **License**: MIT  
 
 * [@the-/server](#module_@the-/server)
@@ -56,7 +56,7 @@ HTTP/RPC Server of the-framework
             * [.toLowerKeys([values&#x3D;])](#module_@the-/server.helpers.toLowerKeys) ⇒ <code>\*</code>
             * [.streamPool()](#module_@the-/server.helpers.streamPool) ⇒ <code>\*</code>
         * _inner_
-            * [~StreamDriverPool](#module_@the-/server.helpers..StreamDriverPool)
+            * [~StreamDriverPool()](#module_@the-/server.helpers..StreamDriverPool) ⇒ <code>\*</code>
     * [.stores](#module_@the-/server.stores) : <code>object</code>
         * [.ConnectionStore](#module_@the-/server.stores.ConnectionStore) ⇐ [<code>Store</code>](#module_@the-/server.stores.Store)
             * [new ConnectionStore()](#new_module_@the-/server.stores.ConnectionStore_new)
@@ -177,7 +177,7 @@ Helper functions
         * [.toLowerKeys([values&#x3D;])](#module_@the-/server.helpers.toLowerKeys) ⇒ <code>\*</code>
         * [.streamPool()](#module_@the-/server.helpers.streamPool) ⇒ <code>\*</code>
     * _inner_
-        * [~StreamDriverPool](#module_@the-/server.helpers..StreamDriverPool)
+        * [~StreamDriverPool()](#module_@the-/server.helpers..StreamDriverPool) ⇒ <code>\*</code>
 
 <a name="module_@the-/server.helpers.asStrictSession"></a>
 
@@ -336,8 +336,8 @@ Stream pool
 **Kind**: static method of [<code>helpers</code>](#module_@the-/server.helpers)  
 <a name="module_@the-/server.helpers..StreamDriverPool"></a>
 
-#### helpers~StreamDriverPool
-**Kind**: inner class of [<code>helpers</code>](#module_@the-/server.helpers)  
+#### helpers~StreamDriverPool() ⇒ <code>\*</code>
+**Kind**: inner method of [<code>helpers</code>](#module_@the-/server.helpers)  
 <a name="module_@the-/server.stores"></a>
 
 ### server.stores : <code>object</code>

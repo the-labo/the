@@ -2,48 +2,43 @@
 
 /**
  * @memberof module:@the-/server.helpers
- * @class StreamDriverPool
+ * @function StreamDriverPool
  * @inner
- */
-class StreamDriverPool {
-  constructor() {
-    this.instances = {}
-  }
-
-  cleanup(cid) {
-    const instances = this.instances[cid] || {}
-    for (const [, instance] of Object.entries(instances)) {
-      const { stream } = instance
-      if (!stream.closed) {
-        stream.abort()
+ * @returns {*} */
+function StreamDriverPool() {
+  const instancesHash = {}
+  return {
+    cleanup(cid) {
+      const instances = instancesHash[cid] || {}
+      for (const [, instance] of Object.entries(instances)) {
+        const { stream } = instance
+        if (!stream.closed) {
+          stream.abort()
+        }
       }
-    }
-    this.instances[cid] = null
-  }
+      instancesHash[cid] = null
+    },
+    delInstance(cid, sid) {
+      instancesHash[cid] = instancesHash[cid] || {}
+      delete instancesHash[cid][sid]
+    },
+    getInstance(cid, sid) {
+      instancesHash[cid] = instancesHash[cid] || {}
+      const instance = instancesHash[cid][sid]
+      if (!instance) {
+        throw new Error(`[TheServer] Stream not found for ${sid}`)
+      }
 
-  delInstance(cid, sid) {
-    this.instances[cid] = this.instances[cid] || {}
-    delete this.instances[cid][sid]
-  }
-
-  getInstance(cid, sid) {
-    this.instances[cid] = this.instances[cid] || {}
-    const instance = this.instances[cid][sid]
-    if (!instance) {
-      throw new Error(`[TheServer] Stream not found for ${sid}`)
-    }
-
-    return instance
-  }
-
-  hasInstance(cid, sid) {
-    const instances = this.instances[cid] || {}
-    return !!instances[sid]
-  }
-
-  setInstance(cid, sid, instance) {
-    this.instances[cid] = this.instances[cid] || {}
-    this.instances[cid][sid] = instance
+      return instance
+    },
+    hasInstance(cid, sid) {
+      const instances = instancesHash[cid] || {}
+      return !!instances[sid]
+    },
+    setInstance(cid, sid, instance) {
+      instancesHash[cid] = instancesHash[cid] || {}
+      instancesHash[cid][sid] = instance
+    },
   }
 }
 
@@ -54,7 +49,7 @@ class StreamDriverPool {
  * @returns {*}
  */
 function streamDriverPool(...args) {
-  return new StreamDriverPool(...args)
+  return StreamDriverPool(...args)
 }
 
 module.exports = streamDriverPool

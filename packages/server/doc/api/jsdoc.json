@@ -13,7 +13,7 @@
     "name": "@the-/server",
     "order": 3,
     "typicalname": "server",
-    "version": "16.3.5"
+    "version": "16.3.6"
   },
   {
     "description": "HTTP server for the-framework",
@@ -1315,7 +1315,7 @@
     "memberof": "module:@the-/server.helpers",
     "meta": {
       "filename": "streamDriverPool.js",
-      "lineno": 50,
+      "lineno": 45,
       "path": "lib/streaming"
     },
     "name": "streamPool",
@@ -1363,20 +1363,6 @@
       }
     ],
     "scope": "static"
-  },
-  {
-    "id": "module:@the-/server.helpers~StreamDriverPool",
-    "kind": "class",
-    "longname": "module:@the-/server.helpers~StreamDriverPool",
-    "memberof": "module:@the-/server.helpers",
-    "meta": {
-      "filename": "streamDriverPool.js",
-      "lineno": 3,
-      "path": "lib/streaming"
-    },
-    "name": "StreamDriverPool",
-    "order": 54,
-    "scope": "inner"
   },
   {
     "id": "module:@the-/server.helpers.ClientAccess~clientAccess",
@@ -1432,6 +1418,29 @@
     },
     "name": "rpcKeeper",
     "order": 33,
+    "scope": "inner"
+  },
+  {
+    "id": "module:@the-/server.helpers~StreamDriverPool",
+    "kind": "function",
+    "longname": "module:@the-/server.helpers~StreamDriverPool",
+    "memberof": "module:@the-/server.helpers",
+    "meta": {
+      "filename": "streamDriverPool.js",
+      "lineno": 3,
+      "path": "lib/streaming"
+    },
+    "name": "StreamDriverPool",
+    "order": 54,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "inner"
   }
 ]
