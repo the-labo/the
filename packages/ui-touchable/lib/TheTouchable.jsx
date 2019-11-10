@@ -44,7 +44,7 @@ const TheTouchable = (props) => {
     const nothingEnabled =
       !pinchEnabled && !panEnabled && !tapEnabled && !rotateEnabled
     nothingEnabled &&
-      console.warn('[TheTouchable] Nothing to do. May be you forgot pass props')
+    console.warn('[TheTouchable] Nothing to do. May be you forgot pass props')
   })
   const ref = useRef(null)
   const [hammer, setHammer] = useState(null)
@@ -126,12 +126,12 @@ const TheTouchable = (props) => {
         ['pinchstart', onPinchStart],
         ['pinchcancel', onPinchCancel],
       ]
-        .filter(([, cb]) => !!cb)
-        .map(([event, cb]) => [
+        .filter(([, handle]) => !!handle)
+        .map(([event, handle]) => [
           event,
           (e) => {
             const { center, scale, srcEvent } = e
-            cb({
+            handle({
               center,
               scale,
               srcEvent,
@@ -154,12 +154,12 @@ const TheTouchable = (props) => {
     }
     const listeners = Object.fromEntries(
       [['tap', onTap], ['doubletap', onDoubleTap]]
-        .filter(([, cb]) => !!cb)
-        .map(([event, cb]) => [
+        .filter(([, handle]) => !!handle)
+        .map(([event, handle]) => [
           event,
           (e) => {
             const { center, srcEvent, tapCount } = e
-            cb({
+            handle({
               center,
               srcEvent,
               tapCount,
@@ -190,12 +190,12 @@ const TheTouchable = (props) => {
         ['rotateend', onRotateEnd],
         ['rotatecancel', onRotateCancel],
       ]
-        .filter(([, cb]) => !!cb)
-        .map(([event, cb]) => [
+        .filter(([, handle]) => !!handle)
+        .map(([event, handle]) => [
           event,
           (e) => {
             const { angle, center, srcEvent } = e
-            cb({
+            handle({
               angle,
               center,
               srcEvent,
