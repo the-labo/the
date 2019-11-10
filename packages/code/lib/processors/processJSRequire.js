@@ -24,6 +24,7 @@ const isRelative = (filename) => /^\./.test(filename)
  * @memberof module:@the-/code.processors
  * @function processJSRequire
  * @param {string} content
+ * @param {Object} [options={}]
  * @returns {string} processed
  */
 function processJSRequire(content, options = {}) {

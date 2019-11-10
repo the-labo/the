@@ -5,6 +5,8 @@ import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { unlessProduction } from '@the-/check-env'
 
+const exists = (v) => !!v
+
 /**
  * Touchable component
  * @memberof module:@the-/ui-touchable
@@ -19,20 +21,28 @@ const TheTouchable = (props) => {
     onPanEnd,
     onPanStart,
     onPinch,
+    onPinchCancel,
     onPinchEnd,
     onPinchStart,
+    onRotate,
+    onRotateCancel,
+    onRotateEnd,
+    onRotateStart,
     onTap,
   } = props
-  const pinchCallbacks = [onPinch, onPinchStart, onPinchEnd]
+  const pinchCallbacks = [onPinch, onPinchStart, onPinchEnd, onPinchCancel]
   const panCallbacks = [onPan, onPanCancel, onPanEnd, onPanStart]
   const tapCallbacks = [onTap, onDoubleTap]
+  const rotateCallbacks = [onRotate, onRotateStart, onRotateEnd, onRotateCancel]
 
-  const pinchEnabled = pinchCallbacks.some((handler) => !!handler)
-  const panEnabled = panCallbacks.some((handler) => !!handler)
-  const tapEnabled = tapCallbacks.some((handler) => !!handler)
+  const pinchEnabled = pinchCallbacks.some(exists)
+  const panEnabled = panCallbacks.some(exists)
+  const tapEnabled = tapCallbacks.some(exists)
+  const rotateEnabled = rotateCallbacks.some(exists)
 
   unlessProduction(() => {
-    const nothingEnabled = !pinchEnabled && !panEnabled && !tapEnabled
+    const nothingEnabled =
+      !pinchEnabled && !panEnabled && !tapEnabled && !rotateEnabled
     nothingEnabled &&
       console.warn('[TheTouchable] Nothing to do. May be you forgot pass props')
   })
@@ -114,6 +124,7 @@ const TheTouchable = (props) => {
         ['pinchout', onPinch],
         ['pinchend', onPinchEnd],
         ['pinchstart', onPinchStart],
+        ['pinchcancel', onPinchCancel],
       ]
         .filter(([, cb]) => !!cb)
         .map(([event, cb]) => [
@@ -163,6 +174,42 @@ const TheTouchable = (props) => {
     }
   }, [hammer, tapEnabled, bindListeners, ...tapCallbacks])
 
+  useEffect(() => {
+    if (!hammer) {
+      return
+    }
+    const rotate = hammer.get('rotate')
+    rotate.set({ enable: rotateEnabled })
+    if (!rotateEnabled) {
+      return
+    }
+    const listeners = Object.fromEntries(
+      [
+        ['rotatestart', onRotateStart],
+        ['rotatemove', onRotate],
+        ['rotateend', onRotateEnd],
+        ['rotatecancel', onRotateCancel],
+      ]
+        .filter(([, cb]) => !!cb)
+        .map(([event, cb]) => [
+          event,
+          (e) => {
+            const { angle, center, srcEvent } = e
+            cb({
+              angle,
+              center,
+              srcEvent,
+            })
+          },
+        ]),
+    )
+    const unbindListeners = bindListeners(listeners)
+
+    return () => {
+      unbindListeners()
+    }
+  }, [hammer, rotateEnabled, bindListeners, ...rotateCallbacks])
+
   const child = React.Children.only(children)
   return (
     <React.Fragment>
@@ -180,8 +227,13 @@ TheTouchable.propTypes = {
   onPanEnd: PropTypes.func,
   onPanStart: PropTypes.func,
   onPinch: PropTypes.func,
+  onPinchCancel: PropTypes.func,
   onPinchEnd: PropTypes.func,
   onPinchStart: PropTypes.func,
+  onRotate: PropTypes.func,
+  onRotateCancel: PropTypes.func,
+  onRotateEnd: PropTypes.func,
+  onRotateStart: PropTypes.func,
   onTap: PropTypes.func,
 }
 
@@ -192,8 +244,13 @@ TheTouchable.defaultProps = {
   onPanEnd: null,
   onPanStart: null,
   onPinch: null,
+  onPinchCancel: null,
   onPinchEnd: null,
   onPinchStart: null,
+  onRotate: null,
+  onRotateCancel: null,
+  onRotateEnd: null,
+  onRotateStart: null,
   onTap: null,
 }
 

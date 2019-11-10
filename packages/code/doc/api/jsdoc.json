@@ -13,7 +13,7 @@
     "name": "@the-/code",
     "order": 1,
     "typicalname": "code",
-    "version": "15.12.0"
+    "version": "15.12.1"
   },
   {
     "id": "module:@the-/code.TheCode()",
@@ -1075,6 +1075,15 @@
     },
     "name": "normalizeJSDocAnnotationsOnCommentNode",
     "order": 39,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   },
   {

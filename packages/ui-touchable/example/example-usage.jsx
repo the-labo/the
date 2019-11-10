@@ -23,6 +23,11 @@ export default function ExampleComponent() {
     count: 1,
   })
 
+  const [rotateData, setRotateData] = useState({
+    angle: 0,
+    vangle: 0,
+  })
+
   const boxStyle = (color) => ({
     background: color,
     boxSizing: 'border-box',
@@ -97,6 +102,23 @@ export default function ExampleComponent() {
     }),
     [doubleTapData, setDoubleTapData],
   )
+
+  const rotateHandlers = useMemo(
+    () => ({
+      onRotate: ({ angle }) =>
+        setRotateData({
+          ...rotateData,
+          vangle: angle,
+        }),
+      onRotateEnd: () =>
+        setRotateData({
+          ...rotateData,
+          angle: rotateData.angle + rotateData.vangle,
+          vangle: 0,
+        }),
+    }),
+    [rotateData, setRotateData],
+  )
   return (
     <div>
       <TheTouchable {...panHandlers}>
@@ -149,6 +171,18 @@ export default function ExampleComponent() {
         >
           <h3>Double Tap Me!</h3>
           <p>{JSON.stringify(doubleTapData, null, 2)}</p>
+        </div>
+      </TheTouchable>
+
+      <br />
+      <TheTouchable {...rotateHandlers}>
+        <div
+          style={{
+            ...boxStyle('#AA3'),
+          }}
+        >
+          <h3>Rotate Me!</h3>
+          <p>{JSON.stringify(rotateData, null, 2)}</p>
         </div>
       </TheTouchable>
     </div>
