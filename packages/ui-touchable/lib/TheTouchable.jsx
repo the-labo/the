@@ -44,7 +44,7 @@ const TheTouchable = (props) => {
     const nothingEnabled =
       !pinchEnabled && !panEnabled && !tapEnabled && !rotateEnabled
     nothingEnabled &&
-    console.warn('[TheTouchable] Nothing to do. May be you forgot pass props')
+      console.warn('[TheTouchable] Nothing to do. May be you forgot pass props')
   })
   const ref = useRef(null)
   const [hammer, setHammer] = useState(null)
