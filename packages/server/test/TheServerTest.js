@@ -16,13 +16,13 @@ const socketIOClient = require('socket.io-client')
 const theClient = require('@the-/client')
 const TheServer = require('../lib/TheServer')
 
-describe('the-server', function() {
+describe('the-server', function () {
   this.timeout(32000)
   before(() => {})
 
   after(async () => {})
 
-  it('Listen and Close', async function() {
+  it('Listen and Close', async function () {
     const port = await aport()
     const server = new TheServer({})
 
@@ -30,7 +30,7 @@ describe('the-server', function() {
     await server.close()
   })
 
-  it('Do Callback', async function() {
+  it('Do Callback', async function () {
     const port = await aport()
     const server = new TheServer({})
 
@@ -63,27 +63,27 @@ describe('the-server', function() {
     deepEqual(received[0], { a: 1, b: true, c: 'J' })
   })
 
-  it('The server', async function() {
+  it('The server', async function () {
     const port = await aport()
 
     const SayCtrl = ({ intercept }) => {
       intercept({
-        controllerDidAttach() {
+        controllerDidAttach () {
           console.log('Say did attach')
         },
-        controllerMethodDidInvoke() {
+        controllerMethodDidInvoke () {
           // console('did invoke', method, result)
         },
-        controllerMethodWillInvoke() {
+        controllerMethodWillInvoke () {
           this.foo = 'Foo'
           // console.log('will invoke', method, params)
         },
-        controllerWillDetach() {
+        controllerWillDetach () {
           // console.log('Say will detach')
         },
       })
       return {
-        sayHi() {
+        sayHi () {
           console.log('!foo', this.foo)
           return 'hi'
         },
@@ -91,20 +91,20 @@ describe('the-server', function() {
     }
 
     const FruitShopCtrl = ({ session }) => ({
-      clear() {
+      clear () {
         session.total = 0
       },
-      getTotal() {
+      getTotal () {
         return session.total || 0
       },
-      hoge() {
+      hoge () {
         return 'hoge'
       },
-      somethingWrong() {
+      somethingWrong () {
         const error = new Error('Something is wrong!')
         throw error
       },
-      async buy(name, amount) {
+      async buy (name, amount) {
         const { total = 0 } = session
         session.total = total + amount
         // console.log('this.hoge', this.hoge())
@@ -288,7 +288,7 @@ describe('the-server', function() {
     await server.close()
   })
 
-  it('Controller lifecycle', async function() {
+  it('Controller lifecycle', async function () {
     const port = await aport()
 
     let wasCalledControllerDidAttach = false
@@ -296,15 +296,15 @@ describe('the-server', function() {
 
     const LifecycleCtrl = ({ intercept }) => {
       intercept({
-        controllerDidAttach() {
+        controllerDidAttach () {
           wasCalledControllerDidAttach = true
         },
-        controllerWillDetach() {
+        controllerWillDetach () {
           wasCalledControllerWillDetach = true
         },
       })
       return {
-        async hi() {
+        async hi () {
           return 'hi'
         },
       }
@@ -341,7 +341,7 @@ describe('the-server', function() {
     const server = new TheServer({
       streams: {
         hogeStream: ({ handle, params }) => ({
-          async *provide() {
+          async * provide () {
             let count = Number(params.count)
             while (count > 0) {
               if (handle.closed) {
@@ -387,7 +387,7 @@ describe('the-server', function() {
     const port = await aport()
 
     const XCtrl = () => ({
-      async waitAndSay(keyword) {
+      async waitAndSay (keyword) {
         await asleep(1000)
         return keyword
       },
@@ -412,7 +412,7 @@ describe('the-server', function() {
     const port = await aport()
 
     const XCtrl = () => ({
-      async waitAndSay(keyword) {
+      async waitAndSay (keyword) {
         await asleep(300)
         return keyword
       },
@@ -439,7 +439,7 @@ describe('the-server', function() {
     const server = new TheServer({
       streams: {
         xStream: ({ params }) => ({
-          async *provide() {
+          async * provide () {
             const count = Number(params.count)
             for (let i = 0; i < count; i++) {
               yield i
@@ -447,7 +447,7 @@ describe('the-server', function() {
           },
         }),
         yStream: () => ({
-          async consume() {},
+          async consume () {},
         }),
       },
     })
@@ -470,7 +470,7 @@ describe('the-server', function() {
   })
 
   it('Compare memory usage servers', async () => {
-    for (const count of [1, 2, 4, 8]) {
+    for (const count of [1, 2, 4, 8,]) {
       const servers = []
       const clients = []
       for (let i = 0; i < count; i++) {
@@ -478,7 +478,7 @@ describe('the-server', function() {
         const server = new TheServer({
           controllers: {
             xCtrl: () => ({
-              sayYo() {},
+              sayYo () {},
             }),
           },
         })
@@ -502,6 +502,39 @@ describe('the-server', function() {
       }
       await Promise.all(clients.map((client) => client.close()))
       await Promise.all(servers.map((server) => server.close()))
+      await asleep(25)
+    }
+  })
+
+  it('Memory usage for many clients', async () => {
+    for (const count of [1, 4, 8, 16, 32]) {
+      const port = await aport()
+      const server = new TheServer({
+        controllers: {
+          xCtrl: () => ({
+            sayYo () {},
+          }),
+        },
+      })
+      await server.listen(port)
+      for (let i = 0; i < count; i++) {
+        const client = theClient({ cid: 'client01', port })
+        const xCtrl = await client.use('xCtrl')
+        await xCtrl.sayYo()
+        await client.close()
+      }
+      await asleep(10)
+      equal(server.controllerDriverPool.length, 0)
+      {
+        console.log(`=== Memory usage of ${count} clients === `)
+        const used = process.memoryUsage()
+        for (const [key, value] of Object.entries(used)) {
+          console.log(
+            `${key}: ${Math.round((value / 1024 / 1024) * 100) / 100} MB`,
+          )
+        }
+      }
+      await server.close()
       await asleep(25)
     }
   })

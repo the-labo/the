@@ -3,7 +3,11 @@
 function ControllerDriverPool() {
   const instanceHash = {}
   const keyFor = (cid, socketId) => [cid, socketId].join('@')
+  const fromKey = (key) => key.split('@')
   const controllerDriverPool = {
+    get length(){
+      return Object.keys(instanceHash).length
+    },
     add(cid, socketId, controllerName, instance) {
       const key = keyFor(cid, socketId)
       if (!instanceHash[key]) {
@@ -20,10 +24,15 @@ function ControllerDriverPool() {
       const key = keyFor(cid, socketId)
       return instanceHash[key] || {}
     },
+    delAll(cid, socketId){
+      const key = keyFor(cid, socketId)
+      delete instanceHash[key]
+    },
     async each(handler) {
-      for (const hash of Object.values(instanceHash)) {
+      for (const [key, hash] of Object.entries(instanceHash)) {
+        const [cid, socketId] = fromKey(key)
         for (const instance of Object.values(hash)) {
-          await handler(instance)
+          await handler(instance, {cid, socketId})
         }
       }
     },
