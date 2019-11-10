@@ -16,7 +16,7 @@ function ControllerDriverPool() {
 
       instanceHash[key][controllerName] = instance
     },
-    del(cid, socketId, controllerName){
+    del(cid, socketId, controllerName) {
       const key = keyFor(cid, socketId)
       if (!instanceHash[key]) {
         return
