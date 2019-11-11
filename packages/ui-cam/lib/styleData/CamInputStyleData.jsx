@@ -58,6 +58,7 @@ function CamInputStyleData({ tappableHeight }) {
     '.the-cam-input-preview': {
       alignItems: 'center',
       background: '#F0F0F0',
+      bottom: 0,
       display: 'flex',
       justifyContent: 'center',
       left: 0,

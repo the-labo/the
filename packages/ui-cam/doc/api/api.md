@@ -45,4 +45,4 @@ Embed camera component
 ## TheCamStyle()
 Style for TheCam
 
-**Kind**: global function  
+**Kind**: global function
