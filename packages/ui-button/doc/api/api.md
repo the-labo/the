@@ -11,7 +11,7 @@
 ## Functions
 
 <dl>
-<dt><a href="#TheButton">TheButton()</a></dt>
+<dt><a href="#TheButton">TheButton(props)</a> ⇒ <code>*</code></dt>
 <dd><p>Button of the-components</p>
 </dd>
 <dt><a href="#TheButtonGroup">TheButtonGroup()</a></dt>
@@ -27,13 +27,18 @@
 ## @the-/ui-button
 Button of the-components
 
-**Version**: 15.5.1  
+**Version**: 15.5.3  
 <a name="TheButton"></a>
 
-## TheButton()
+## TheButton(props) ⇒ <code>\*</code>
 Button of the-components
 
 **Kind**: global function  
+
+| Param |
+| --- |
+| props | 
+
 <a name="TheButtonGroup"></a>
 
 ## TheButtonGroup()

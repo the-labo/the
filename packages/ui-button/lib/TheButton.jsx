@@ -12,6 +12,8 @@ import TheButtonGroup from './TheButtonGroup'
 
 /**
  * Button of the-components
+ * @param props
+ * @returns {*}
  */
 const TheButton = (props) => {
   const {
