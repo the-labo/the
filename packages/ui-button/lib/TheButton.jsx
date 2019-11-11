@@ -7,7 +7,7 @@ import { unlessProduction } from '@the-/check'
 import { TheIcon } from '@the-/ui-icon'
 import { TheLink } from '@the-/ui-link'
 import { textColorFor } from '@the-/util-color'
-import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
+import { eventHandlersFor, htmlAttributesFor, isKeyCode } from '@the-/util-ui'
 import TheButtonGroup from './TheButtonGroup'
 
 /**
@@ -68,14 +68,12 @@ const TheButton = (props) => {
 
   const handleKeyDown = useCallback(
     (e) => {
-      switch (e.keyCode) {
-        case 32: // Space key
-          e.preventDefault()
-          onSubmit && onSubmit()
-          onClick && onClick()
-          break
-        default:
-          break
+      const shouldSubmit =
+        isKeyCode.enter(e.keyCode) || isKeyCode.space(e.keyCode)
+      if (shouldSubmit) {
+        e.preventDefault()
+        onSubmit && onSubmit()
+        onClick && onClick()
       }
 
       onKeyDown && onKeyDown(e)
