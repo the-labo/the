@@ -18,6 +18,8 @@ describe('is-video-url', () => {
     ok(isVideoUrl)
     ok(isVideoUrl('http:/example.com/foo/bar.mp4'))
     ok(!isVideoUrl('http:/example.com/foo/bar.png'))
+    ok(!isVideoUrl('data:image/png;base64,iVBORw0KG'))
+    ok(isVideoUrl('data:video/png;base64,iVBORw0KG'))
   })
 })
 

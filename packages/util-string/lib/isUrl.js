@@ -1,6 +1,6 @@
 'use strict'
 
-const PATTERN = /^https?:/
+const PATTERNS = [/^https?:/, /^data?:/]
 
 /**
  * Check if is url
@@ -10,7 +10,7 @@ const PATTERN = /^https?:/
  * @returns {boolean} URL or not
  */
 function isUrl(value) {
-  return Boolean(value && PATTERN.test(value))
+  return Boolean(value && PATTERNS.some((p) => p.test(value)))
 }
 
 module.exports = isUrl

@@ -19,6 +19,8 @@ describe('is-image-url', () => {
     ok(!isImageUrl('http://example.com/foo/bar.txt'))
     ok(isImageUrl('http://example.com/foo/bar.jpeg'))
     ok(isImageUrl('http://example.com/foo/bar.JPEG'))
+    ok(isImageUrl('data:image/png;base64,iVBORw0KG'))
+    ok(!isImageUrl('data:video/png;base64,iVBORw0KG'))
   })
 })
 

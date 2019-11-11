@@ -27,7 +27,7 @@
 ## @the-/ui-cam
 Embed camera component
 
-**Version**: 15.5.5  
+**Version**: 15.5.7  
 <a name="TheCam"></a>
 
 ## TheCam()
@@ -45,4 +45,4 @@ Embed camera component
 ## TheCamStyle()
 Style for TheCam
 
-**Kind**: global function
+**Kind**: global function  

@@ -17,6 +17,10 @@ function isImageUrl(value) {
     return false
   }
 
+  if (/^data:image/.test(value)) {
+    return true
+  }
+
   const { pathname } = new URL(value)
   const extname = pathname.split('.').pop()
   if (!extname) {
