@@ -1,9 +1,6 @@
 'use strict'
 
-/**
- * @memberof @the-/driver-sequelize
- * @class TheDriverSequelize
- */
+
 const amkdirp = require('amkdirp')
 const clayCollection = require('clay-collection')
 const { Driver } = require('clay-driver-base')
@@ -11,6 +8,7 @@ const { pageToOffsetLimit } = require('clay-list-pager')
 const clayResourceName = require('clay-resource-name')
 const path = require('path')
 const { isProduction, unlessProduction } = require('@the-/check-env')
+const MetaColumnNames = require('./constants/MetaColumnNames')
 const convertInbound = require('./converters/convertInbound')
 const convertOutbound = require('./converters/convertOutbound')
 const m = require('./mixins')
@@ -23,9 +21,12 @@ const TheDriverSequelizeBase = [m.sequelizeMix].reduce(
   Driver,
 )
 
-/** @lends module:@the-/driver-sequelize.TheDriverSequelize */
+/**
+ * @memberof @the-/driver-sequelize
+ * @class TheDriverSequelize
+ */
 class TheDriverSequelize extends TheDriverSequelizeBase {
-  constructor(config = {}) {
+  constructor (config = {}) {
     super()
     const {
       database,
@@ -53,7 +54,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     ]
   }
 
-  get sequelize() {
+  get sequelize () {
     if (!this._sequelize) {
       this._sequelize = this.createSequelize(...this._sequelizeArgs)
     }
@@ -61,7 +62,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     return this._sequelize
   }
 
-  assertOpen() {
+  assertOpen () {
     if (this.closed) {
       if (!isProduction()) {
         console.trace('[TheDriverSequelize] DB access after closed')
@@ -76,21 +77,21 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
    * @param {string} resourceName
    * @param {Object} schema
    */
-  define(resourceName, schema) {
+  define (resourceName, schema) {
     const Model = defineModel(this.sequelize, resourceName, schema)
     this.schemas[resourceName] = schema
     this.models[resourceName] = Model
     this._prepared = false
   }
 
-  inbound(resourceName, values) {
+  inbound (resourceName, values) {
     const Model = this.modelFor(resourceName)
     const Schema = this.schemaFor(resourceName)
     const { name: ModelName, rawAttributes: ModelAttributes } = Model
     return convertInbound(values, { ModelAttributes, ModelName, Schema })
   }
 
-  modelFor(resourceName) {
+  modelFor (resourceName) {
     const Model = this.models[resourceName]
     if (!Model) {
       throw new Error(
@@ -101,7 +102,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     return Model
   }
 
-  outbound(resourceName, values) {
+  outbound (resourceName, values) {
     const Model = this.modelFor(resourceName)
     const Schema = this.schemaFor(resourceName)
     const { name: ModelName, rawAttributes: ModelAttributes } = Model
@@ -113,7 +114,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     })
   }
 
-  schemaFor(resourceName) {
+  schemaFor (resourceName) {
     const Schema = this.schemas[resourceName]
     if (!Schema) {
       throw new Error(
@@ -124,7 +125,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     return Schema
   }
 
-  async close() {
+  async close () {
     await this.prepareIfNeeded()
 
     const { sequelize } = this
@@ -132,7 +133,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     await sequelize.close()
   }
 
-  async create(resourceName, values = {}, options = {}) {
+  async create (resourceName, values = {}, options = {}) {
     const { transaction } = options
     await this.untilReady()
     const Model = this.modelFor(resourceName)
@@ -142,7 +143,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     return this.one(resourceName, model.id, { transaction })
   }
 
-  async destroy(resourceName, id, options = {}) {
+  async destroy (resourceName, id, options = {}) {
     const { transaction } = options
     await this.untilReady()
     const Model = this.modelFor(resourceName)
@@ -155,14 +156,14 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     return 1
   }
 
-  async drop(resourceName) {
+  async drop (resourceName) {
     await this.untilReady()
     const Model = this.modelFor(resourceName)
     await Model.drop()
     await Model.sync()
   }
 
-  async list(resourceName, condition = {}, options = {}) {
+  async list (resourceName, condition = {}, options = {}) {
     const { transaction } = options
     await this.untilReady()
     const Model = this.modelFor(resourceName)
@@ -195,7 +196,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     })
   }
 
-  async one(resourceName, id, options = {}) {
+  async one (resourceName, id, options = {}) {
     const { transaction } = options
     await this.untilReady()
     const Model = this.modelFor(resourceName)
@@ -217,7 +218,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     return this.outbound(resourceName, model.dataValues)
   }
 
-  async prepare() {
+  async prepare () {
     const { sequelize } = this
     const { dialect, storage } = sequelize.options || {}
     switch (dialect) {
@@ -239,7 +240,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     }
   }
 
-  async prepareIfNeeded() {
+  async prepareIfNeeded () {
     await this._preparing
     if (this._prepared) {
       return
@@ -256,7 +257,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     }
   }
 
-  async resources() {
+  async resources () {
     const { models } = this
     return Object.entries(models).map(([resourceName]) => {
       const { domain, name } = clayResourceName(resourceName)
@@ -264,7 +265,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     })
   }
 
-  async transaction() {
+  async transaction () {
     return this.sequelize.transaction(...arguments)
   }
 
@@ -272,12 +273,12 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
    * Wait until ready
    * @returns {Promise<undefined>}
    */
-  async untilReady() {
+  async untilReady () {
     this.assertOpen()
     await this.prepareIfNeeded()
   }
 
-  async update(resourceName, id, values, options = {}) {
+  async update (resourceName, id, values, options = {}) {
     const { transaction } = options
     await this.untilReady()
     const Model = this.modelFor(resourceName)
@@ -285,8 +286,11 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     if (!model) {
       throw new Error(`[TheDriverSequelize] Data not found for id: ${id}`)
     }
-
-    await model.update(this.inbound(resourceName, values), { transaction })
+    const version = model.getDataValue(MetaColumnNames.$$num)
+    await model.update(this.inbound(resourceName, {
+      ...values,
+      [MetaColumnNames.$$num]: version + 1
+    }), { transaction })
     return this.one(resourceName, id, { transaction })
   }
 }

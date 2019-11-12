@@ -12,7 +12,7 @@ const {
 const TheDriverSequelize = require('../lib/TheDriverSequelize')
 const resetMysqlDatabase = require('../misc/mysql/resetMysqlDatabase')
 
-describe('the-driver-sequelize', function() {
+describe('the-driver-sequelize', function () {
   this.timeout(8000)
   before(() => {})
 
@@ -404,7 +404,11 @@ describe('the-driver-sequelize', function() {
     await driver.update('Box', box02.id, { v: 2 })
 
     await driver.update('Box', box01.id, { group: null })
-    equal((await driver.one('Box', box01.id)).group, null)
+    await driver.update('Box', box01.id, { group: null })
+    await driver.update('Box', box01.id, { group: null })
+    const one2 = await driver.one('Box', box01.id)
+    equal(one2.group, null)
+    equal(one2.$$num, 3)
   })
 
   it('Name with dot', async () => {
@@ -592,7 +596,7 @@ describe('the-driver-sequelize', function() {
     const a2 = await driver.create('A', { date: new Date('2019/04/05') })
     const b = await driver.create('B', { a: [a1, a2] })
     ok(b)
-    console.log(b.a[0])
+    ok(b.a[0])
     await driver.close()
   })
 })

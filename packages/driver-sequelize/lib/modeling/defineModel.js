@@ -3,6 +3,7 @@
 const clayId = require('clay-id')
 const Sequelize = require('sequelize')
 const defineModelColumn = require('./defineModelColumn')
+const defineModelIndexes = require('./defineModelIndexes')
 const MetaColumnNames = require('../constants/MetaColumnNames')
 const parseAttributeName = require('../parsing/parseAttributeName')
 
@@ -15,7 +16,7 @@ const parseAttributeName = require('../parsing/parseAttributeName')
  * @param {Object} schema
  * @returns {Object}
  */
-function defineModel(sequelize, resourceName, schema) {
+function defineModel (sequelize, resourceName, schema) {
   const attributes = {
     [MetaColumnNames.$$at]: {
       comment: 'Updated date',
@@ -24,12 +25,11 @@ function defineModel(sequelize, resourceName, schema) {
       type: Sequelize.DATE,
     },
     [MetaColumnNames.$$num]: {
-      autoIncrement: true,
       comment: 'Version number',
       defaultValue: () => 0,
       required: true,
       type: Sequelize.INTEGER,
-      unique: true,
+      unique: false,
     },
     id: {
       allowNull: false,
@@ -51,11 +51,12 @@ function defineModel(sequelize, resourceName, schema) {
       {},
     ),
   }
+
   return sequelize.define(resourceName, attributes, {
     createdAt: false,
     freezeTableName: true,
     indexes: [
-      // TODO Needs index?
+      ...defineModelIndexes(schema),
     ],
     timestamps: false,
     updatedAt: false,

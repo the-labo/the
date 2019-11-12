@@ -38,11 +38,11 @@
     "is-class": "0.0.9",
     "mkdirp": "^0.5.1",
     "msgpack5": "^4.2.1",
-    "mysql2": "^1.7.0",
+    "mysql2": "^2.0.0",
     "uuid": "^3.3.3"
   },
   "devDependencies": {
-    "colorprint": "^6.0.4",
+    "colorprint": "^6.1.1",
     "sqlite3": "^4.1.0"
   },
   "engines": {

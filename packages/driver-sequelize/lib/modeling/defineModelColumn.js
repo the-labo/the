@@ -13,7 +13,7 @@ const Sequelize = require('sequelize')
  * @param {string} propertyName
  * @returns {*}
  */
-function defineModelColumn(propertyName, def = {}) {
+function defineModelColumn (propertyName, def = {}) {
   const { default: defaultValue, description, precise, required, type } = def
   const base = {
     allowNull: !required,
@@ -35,7 +35,7 @@ function defineModelColumn(propertyName, def = {}) {
       return { ...base, type: Sequelize.DATE }
     case ENTITY:
     case REF:
-      return { ...base, type: Sequelize.STRING }
+      return { ...base, type: Sequelize.STRING(128) }
     case ID:
       return { ...base, type: Sequelize.STRING }
     case NULL:
