@@ -37,7 +37,7 @@ function defineModel(sequelize, resourceName, schema) {
       defaultValue: () => String(clayId()),
       primaryKey: true,
       required: true,
-      type: Sequelize.STRING,
+      type: Sequelize.STRING(64),
       unique: true,
     },
     ...Object.entries(schema).reduce(

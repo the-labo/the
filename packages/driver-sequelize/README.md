@@ -100,14 +100,15 @@ tryExample().catch((err) => console.error(err))
 - module:@the-/driver-sequelize.modeling
   - [.defineModel(sequelize,resourceName,schema)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModel)
   - [.defineModelColumn(def,propertyName)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModelColumn)
+  - [.defineModelIndexes(schema)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModelIndexes)
   - [.prepareModel(Model,Schema)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.prepareModel)
 - module:@the-/driver-sequelize.parsing
   - [.parseAttributeName()](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseAttributeName)
   - [.parseFilter(filter,options&#x3D;)](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseFilter)
   - [.parseSort(sort,options)](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseSort)
-- module:@the-/driver-sequelize.TheDriverSequelize
-  - [#define(resourceName,schema)](./doc/api/api.md#module_@the-/driver-sequelize.TheDriverSequelize#define)
-  - [#untilReady()](./doc/api/api.md#module_@the-/driver-sequelize.TheDriverSequelize#untilReady)
+- TheDriverSequelize
+  - [#define(resourceName,schema)](./doc/api/api.md#TheDriverSequelize#define)
+  - [#untilReady()](./doc/api/api.md#TheDriverSequelize#untilReady)
 
 See [API Guide](./doc/api/api.md) for more detail
 

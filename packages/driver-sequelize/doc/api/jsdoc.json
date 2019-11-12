@@ -13,7 +13,7 @@
     "name": "@the-/driver-sequelize",
     "order": 2,
     "typicalname": "driverSequelize",
-    "version": "16.0.1"
+    "version": "16.0.5"
   },
   {
     "description": "Define schema",

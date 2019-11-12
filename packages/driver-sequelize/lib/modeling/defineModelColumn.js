@@ -37,7 +37,7 @@ function defineModelColumn(propertyName, def = {}) {
     case REF:
       return { ...base, type: Sequelize.STRING(128) }
     case ID:
-      return { ...base, type: Sequelize.STRING }
+      return { ...base, type: Sequelize.STRING(64) }
     case NULL:
       return {
         ...base,
