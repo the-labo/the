@@ -88,12 +88,12 @@ const TheTouchable = (props) => {
         ['panmove', onPan],
         ['panstart', onPanStart],
       ]
-        .filter(([, cb]) => !!cb)
-        .map(([event, cb]) => [
+        .filter(([, handle]) => !!handle)
+        .map(([event, handle]) => [
           event,
           (e) => {
             const { center, deltaX, deltaY, srcEvent } = e
-            cb({
+            handle({
               center,
               srcEvent,
               vx: deltaX,
