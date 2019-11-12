@@ -44,7 +44,7 @@ const TheTouchable = (props) => {
     const nothingEnabled =
       !pinchEnabled && !panEnabled && !tapEnabled && !rotateEnabled
     nothingEnabled &&
-      console.warn('[TheTouchable] Nothing to do. May be you forgot pass props')
+    console.warn('[TheTouchable] Nothing to do. May be you forgot pass props')
   })
   const ref = useRef(null)
   const [hammer, setHammer] = useState(null)
@@ -165,17 +165,24 @@ const TheTouchable = (props) => {
       srcEvent.preventDefault()
 
       clearTimeout(wheelScaleState.doneTimer)
-      const ev = { scale: wheelScaleState.scale, srcEvent }
+      const event = {
+        center: {
+          x: srcEvent.clientY,
+          y: srcEvent.clientY,
+        },
+        scale: wheelScaleState.scale,
+        srcEvent,
+      }
       if (!wheelScaleState.active) {
         wheelScaleState.active = true
-        onPinchStart && onPinchStart(ev)
+        onPinchStart && onPinchStart(event)
         return
       }
       wheelScaleState.scale -= srcEvent.deltaY * 0.01
-      onPinch && onPinch(ev)
+      onPinch && onPinch(event)
       wheelScaleState.doneTimer = setTimeout(() => {
         wheelScaleState.scale = 1
-        onPinchEnd && onPinchEnd(ev)
+        onPinchEnd && onPinchEnd(event)
       }, 300)
     }
     elm.addEventListener('wheel', wheel, { passive: false })
