@@ -13,7 +13,7 @@ const Sequelize = require('sequelize')
  * @param {string} propertyName
  * @returns {*}
  */
-function defineModelColumn (propertyName, def = {}) {
+function defineModelColumn(propertyName, def = {}) {
   const { default: defaultValue, description, precise, required, type } = def
   const base = {
     allowNull: !required,

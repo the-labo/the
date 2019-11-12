@@ -1,14 +1,10 @@
 'use strict'
 
 const {
-  DataTypes: { BOOLEAN, DATE, ENTITY, ID, NULL, NUMBER, OBJECT, REF, STRING },
+  DataTypes: { ENTITY, ID, REF },
 } = require('clay-constants')
 
-const TypesToIndex = [
-  ENTITY,
-  ID,
-  REF,
-]
+const TypesToIndex = [ENTITY, ID, REF]
 
 /**
  * Define model indexes
@@ -17,9 +13,10 @@ const TypesToIndex = [
  * @param schema
  * @returns {string[]}
  */
-function defineModelIndexes (schema) {
-  const refColumnNames = Object.keys(schema)
-    .filter((key) => TypesToIndex.includes(schema[key].type))
+function defineModelIndexes(schema) {
+  const refColumnNames = Object.keys(schema).filter((key) =>
+    TypesToIndex.includes(schema[key].type),
+  )
   return [
     ...refColumnNames.map((name) => ({
       fields: [name],

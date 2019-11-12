@@ -16,7 +16,7 @@ const parseAttributeName = require('../parsing/parseAttributeName')
  * @param {Object} schema
  * @returns {Object}
  */
-function defineModel (sequelize, resourceName, schema) {
+function defineModel(sequelize, resourceName, schema) {
   const attributes = {
     [MetaColumnNames.$$at]: {
       comment: 'Updated date',
@@ -55,9 +55,7 @@ function defineModel (sequelize, resourceName, schema) {
   return sequelize.define(resourceName, attributes, {
     createdAt: false,
     freezeTableName: true,
-    indexes: [
-      ...defineModelIndexes(schema),
-    ],
+    indexes: [...defineModelIndexes(schema)],
     timestamps: false,
     updatedAt: false,
   })

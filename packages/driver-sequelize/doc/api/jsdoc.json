@@ -13,14 +13,14 @@
     "name": "@the-/driver-sequelize",
     "order": 2,
     "typicalname": "driverSequelize",
-    "version": "15.4.17"
+    "version": "16.0.1"
   },
   {
     "description": "Define schema",
-    "id": "module:@the-/driver-sequelize.TheDriverSequelize#define",
+    "id": "TheDriverSequelize#define",
     "kind": "function",
-    "longname": "module:@the-/driver-sequelize.TheDriverSequelize#define",
-    "memberof": "module:@the-/driver-sequelize.TheDriverSequelize",
+    "longname": "TheDriverSequelize#define",
+    "memberof": "TheDriverSequelize",
     "meta": {
       "filename": "TheDriverSequelize.js",
       "lineno": 79,
@@ -51,10 +51,10 @@
   {
     "async": true,
     "description": "Wait until ready",
-    "id": "module:@the-/driver-sequelize.TheDriverSequelize#untilReady",
+    "id": "TheDriverSequelize#untilReady",
     "kind": "function",
-    "longname": "module:@the-/driver-sequelize.TheDriverSequelize#untilReady",
-    "memberof": "module:@the-/driver-sequelize.TheDriverSequelize",
+    "longname": "TheDriverSequelize#untilReady",
+    "memberof": "TheDriverSequelize",
     "meta": {
       "filename": "TheDriverSequelize.js",
       "lineno": 275,
@@ -81,7 +81,7 @@
     "memberof": "@the-/driver-sequelize",
     "meta": {
       "filename": "TheDriverSequelize.js",
-      "lineno": 3,
+      "lineno": 23,
       "path": "lib"
     },
     "name": "TheDriverSequelize",
@@ -183,7 +183,7 @@
       "path": "lib/modeling"
     },
     "name": "modeling",
-    "order": 18,
+    "order": 19,
     "scope": "static"
   },
   {
@@ -199,7 +199,7 @@
       "path": "lib/parsing"
     },
     "name": "parsing",
-    "order": 20,
+    "order": 21,
     "scope": "static"
   },
   {
@@ -391,7 +391,7 @@
     "memberof": "module:@the-/driver-sequelize.modeling",
     "meta": {
       "filename": "defineModel.js",
-      "lineno": 9,
+      "lineno": 10,
       "path": "lib/modeling"
     },
     "name": "defineModel",
@@ -476,6 +476,35 @@
     "scope": "static"
   },
   {
+    "description": "Define model indexes",
+    "id": "module:@the-/driver-sequelize.modeling.defineModelIndexes",
+    "kind": "function",
+    "longname": "module:@the-/driver-sequelize.modeling.defineModelIndexes",
+    "memberof": "module:@the-/driver-sequelize.modeling",
+    "meta": {
+      "filename": "defineModelIndexes.js",
+      "lineno": 9,
+      "path": "lib/modeling"
+    },
+    "name": "defineModelIndexes",
+    "order": 18,
+    "params": [
+      {
+        "name": "schema"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Array.<string>"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
     "id": "module:@the-/driver-sequelize.modeling.prepareModel",
     "kind": "function",
     "longname": "module:@the-/driver-sequelize.modeling.prepareModel",
@@ -486,7 +515,7 @@
       "path": "lib/modeling"
     },
     "name": "prepareModel",
-    "order": 19,
+    "order": 20,
     "params": [
       {
         "name": "Model"
@@ -517,7 +546,7 @@
       "path": "lib/parsing"
     },
     "name": "parseAttributeName",
-    "order": 21,
+    "order": 22,
     "params": [
       {
         "type": {
@@ -549,7 +578,7 @@
       "path": "lib/parsing"
     },
     "name": "parseFilter",
-    "order": 22,
+    "order": 23,
     "params": [
       {
         "name": "filter"
@@ -581,7 +610,7 @@
       "path": "lib/parsing"
     },
     "name": "parseSort",
-    "order": 23,
+    "order": 24,
     "params": [
       {
         "name": "sort"

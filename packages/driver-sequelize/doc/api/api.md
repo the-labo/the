@@ -5,7 +5,7 @@
 ## @the-/driver-sequelize
 Sequelize driver for the-framework
 
-**Version**: 15.4.17  
+**Version**: 16.0.1  
 **License**: MIT  
 
 * [@the-/driver-sequelize](#module_@the-/driver-sequelize)
@@ -22,6 +22,7 @@ Sequelize driver for the-framework
     * [.modeling](#module_@the-/driver-sequelize.modeling) : <code>object</code>
         * [.defineModel(sequelize, resourceName, schema)](#module_@the-/driver-sequelize.modeling.defineModel) ⇒ <code>Object</code>
         * [.defineModelColumn(def, propertyName)](#module_@the-/driver-sequelize.modeling.defineModelColumn) ⇒ <code>\*</code>
+        * [.defineModelIndexes(schema)](#module_@the-/driver-sequelize.modeling.defineModelIndexes) ⇒ <code>Array.&lt;string&gt;</code>
         * [.prepareModel(Model, Schema)](#module_@the-/driver-sequelize.modeling.prepareModel) ⇒ <code>Promise</code>
     * [.parsing](#module_@the-/driver-sequelize.parsing) : <code>object</code>
         * [.parseAttributeName()](#module_@the-/driver-sequelize.parsing.parseAttributeName) ⇒ <code>string</code>
@@ -119,6 +120,7 @@ Modeling functions
 * [.modeling](#module_@the-/driver-sequelize.modeling) : <code>object</code>
     * [.defineModel(sequelize, resourceName, schema)](#module_@the-/driver-sequelize.modeling.defineModel) ⇒ <code>Object</code>
     * [.defineModelColumn(def, propertyName)](#module_@the-/driver-sequelize.modeling.defineModelColumn) ⇒ <code>\*</code>
+    * [.defineModelIndexes(schema)](#module_@the-/driver-sequelize.modeling.defineModelIndexes) ⇒ <code>Array.&lt;string&gt;</code>
     * [.prepareModel(Model, Schema)](#module_@the-/driver-sequelize.modeling.prepareModel) ⇒ <code>Promise</code>
 
 <a name="module_@the-/driver-sequelize.modeling.defineModel"></a>
@@ -145,6 +147,17 @@ Define model column
 | --- | --- |
 | def | <code>Object</code> | 
 | propertyName | <code>string</code> | 
+
+<a name="module_@the-/driver-sequelize.modeling.defineModelIndexes"></a>
+
+#### modeling.defineModelIndexes(schema) ⇒ <code>Array.&lt;string&gt;</code>
+Define model indexes
+
+**Kind**: static method of [<code>modeling</code>](#module_@the-/driver-sequelize.modeling)  
+
+| Param |
+| --- |
+| schema | 
 
 <a name="module_@the-/driver-sequelize.modeling.prepareModel"></a>
 
