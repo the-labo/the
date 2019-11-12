@@ -24,7 +24,7 @@ export default function ExampleComponent() {
   })
 
   const [rotateData, setRotateData] = useState({
-    angle: 0,
+    angle: 90,
     vangle: 0,
   })
 

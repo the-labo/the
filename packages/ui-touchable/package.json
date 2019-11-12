@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-touchable",
   "description": "Touch event handler",
-  "version": "15.4.16",
+  "version": "15.4.17",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@the-/check-env": "^15.5.8",
+    "@the-/window": "^15.8.2",
     "hammerjs": "^2.0.8",
     "prop-types": "^15.7.2"
   },

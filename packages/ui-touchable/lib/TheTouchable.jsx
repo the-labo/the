@@ -2,7 +2,7 @@
 
 import Hammer from 'hammerjs'
 import PropTypes from 'prop-types'
-import React, { useCallback, useEffect, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { unlessProduction } from '@the-/check-env'
 
 const exists = (v) => !!v
@@ -48,7 +48,6 @@ const TheTouchable = (props) => {
   })
   const ref = useRef(null)
   const [hammer, setHammer] = useState(null)
-
   const bindListeners = useCallback(
     (listeners) => {
       if (!hammer) {
@@ -140,10 +139,51 @@ const TheTouchable = (props) => {
         ]),
     )
     const unbindListeners = bindListeners(listeners)
+
     return () => {
       unbindListeners()
     }
   }, [hammer, pinchEnabled, bindListeners, ...pinchCallbacks])
+
+  const wheelScaleState = useMemo(
+    () => ({
+      active: false,
+      doneTimer: -1,
+      scale: 1,
+    }),
+    [],
+  )
+  useEffect(() => {
+    if (!pinchEnabled) {
+      return
+    }
+    const { current: elm } = ref
+    const wheel = (srcEvent) => {
+      if (!srcEvent.ctrlKey) {
+        return
+      }
+      srcEvent.preventDefault()
+
+      clearTimeout(wheelScaleState.doneTimer)
+      const ev = { scale: wheelScaleState.scale, srcEvent }
+      if (!wheelScaleState.active) {
+        wheelScaleState.active = true
+        onPinchStart && onPinchStart(ev)
+        return
+      }
+      wheelScaleState.scale -= srcEvent.deltaY * 0.01
+      onPinch && onPinch(ev)
+      wheelScaleState.doneTimer = setTimeout(() => {
+        wheelScaleState.scale = 1
+        onPinchEnd && onPinchEnd(ev)
+      }, 300)
+    }
+    elm.addEventListener('wheel', wheel, { passive: false })
+    return () => {
+      clearTimeout(wheelScaleState.doneTimer)
+      elm.removeEventListener('wheel', wheel, { passive: false })
+    }
+  }, [pinchEnabled, wheelScaleState, ...pinchCallbacks])
 
   useEffect(() => {
     if (!hammer) {
