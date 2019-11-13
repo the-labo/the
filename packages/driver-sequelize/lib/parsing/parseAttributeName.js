@@ -5,7 +5,8 @@ const { MetaColumnNames, MetaColumnNamesReversed } = require('../constants')
 /**
  * @memberof module:@the-/driver-sequelize.parsing
  * @function parseAttributeName
- * @param {string}
+ * @param {string} name
+ * @param {Object} [options={}]
  * @returns {string}
  */
 function parseAttributeName(name, options = {}) {

@@ -15,7 +15,7 @@
     "@the-/assert": "^15.4.1",
     "@the-/check-env": "^15.5.8",
     "@the-/driver-mongo": "^15.4.11",
-    "@the-/driver-sequelize": "^16.0.5",
+    "@the-/driver-sequelize": "^16.0.6",
     "@the-/hash": "^15.4.10",
     "@the-/refresher": "^15.4.0",
     "@the-/resource": "^15.4.12",
