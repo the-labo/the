@@ -1,8 +1,8 @@
 'use strict'
 
 const defineModelColumn = require('./defineModelColumn')
-const parseAttributeName = require('../parsing/parseAttributeName')
 const MetaColumnNames = require('../constants/MetaColumnNames')
+const parseAttributeName = require('../parsing/parseAttributeName')
 
 /**
  * @memberof module:@the-/driver-sequelize.modeling
@@ -19,17 +19,15 @@ async function prepareModel(Model, Schema) {
   await Model.sync()
   const descriptions = await queryInterface.describeTable(tableName)
   const specs = [
-    ...Object.values(MetaColumnNames).map(attributeName => {
-      return [
-        attributeName,
-        Model.rawAttributes[attributeName],
-      ]
-    }),
+    ...Object.values(MetaColumnNames).map((attributeName) => [
+      attributeName,
+      Model.rawAttributes[attributeName],
+    ]),
     ...Object.entries(Schema).map(([propertyName, def]) => {
       const attributeName = parseAttributeName(propertyName)
       const spec = defineModelColumn(propertyName, def)
       return [attributeName, spec]
-    })
+    }),
   ]
   for (const [attributeName, spec] of specs) {
     const described = descriptions[attributeName]

@@ -13,7 +13,7 @@
     "name": "@the-/driver-sequelize",
     "order": 2,
     "typicalname": "driverSequelize",
-    "version": "16.0.7"
+    "version": "16.0.8"
   },
   {
     "description": "Define schema",
@@ -511,7 +511,7 @@
     "memberof": "module:@the-/driver-sequelize.modeling",
     "meta": {
       "filename": "prepareModel.js",
-      "lineno": 6,
+      "lineno": 7,
       "path": "lib/modeling"
     },
     "name": "prepareModel",

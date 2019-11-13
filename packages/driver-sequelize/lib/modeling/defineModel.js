@@ -19,15 +19,15 @@ const parseAttributeName = require('../parsing/parseAttributeName')
 function defineModel(sequelize, resourceName, schema) {
   const attributes = {
     [MetaColumnNames.$$at]: {
+      allowNull: false,
       comment: 'Updated date',
       defaultValue: () => new Date(),
-      allowNull: false,
       type: Sequelize.DATE,
     },
     [MetaColumnNames.$$num]: {
+      allowNull: false,
       comment: 'Version number',
       defaultValue: () => 0,
-      allowNull: false,
       type: Sequelize.INTEGER,
       unique: false,
     },
