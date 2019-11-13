@@ -5,7 +5,7 @@
 ## @the-/driver-sequelize
 Sequelize driver for the-framework
 
-**Version**: 16.0.6  
+**Version**: 16.0.7  
 **License**: MIT  
 
 * [@the-/driver-sequelize](#module_@the-/driver-sequelize)
@@ -25,7 +25,7 @@ Sequelize driver for the-framework
         * [.defineModelIndexes(schema)](#module_@the-/driver-sequelize.modeling.defineModelIndexes) ⇒ <code>Array.&lt;string&gt;</code>
         * [.prepareModel(Model, Schema)](#module_@the-/driver-sequelize.modeling.prepareModel) ⇒ <code>Promise</code>
     * [.parsing](#module_@the-/driver-sequelize.parsing) : <code>object</code>
-        * [.parseAttributeName()](#module_@the-/driver-sequelize.parsing.parseAttributeName) ⇒ <code>string</code>
+        * [.parseAttributeName(name, [options])](#module_@the-/driver-sequelize.parsing.parseAttributeName) ⇒ <code>string</code>
         * [.parseFilter(filter, [options&#x3D;])](#module_@the-/driver-sequelize.parsing.parseFilter) ⇒ <code>\*</code>
         * [.parseSort(sort, options)](#module_@the-/driver-sequelize.parsing.parseSort) ⇒ <code>\*</code>
     * [.default()](#module_@the-/driver-sequelize.default)
@@ -178,18 +178,19 @@ Parsing functions
 **Access**: protected  
 
 * [.parsing](#module_@the-/driver-sequelize.parsing) : <code>object</code>
-    * [.parseAttributeName()](#module_@the-/driver-sequelize.parsing.parseAttributeName) ⇒ <code>string</code>
+    * [.parseAttributeName(name, [options])](#module_@the-/driver-sequelize.parsing.parseAttributeName) ⇒ <code>string</code>
     * [.parseFilter(filter, [options&#x3D;])](#module_@the-/driver-sequelize.parsing.parseFilter) ⇒ <code>\*</code>
     * [.parseSort(sort, options)](#module_@the-/driver-sequelize.parsing.parseSort) ⇒ <code>\*</code>
 
 <a name="module_@the-/driver-sequelize.parsing.parseAttributeName"></a>
 
-#### parsing.parseAttributeName() ⇒ <code>string</code>
+#### parsing.parseAttributeName(name, [options]) ⇒ <code>string</code>
 **Kind**: static method of [<code>parsing</code>](#module_@the-/driver-sequelize.parsing)  
 
-| Type |
-| --- |
-| <code>string</code> | 
+| Param | Type | Default |
+| --- | --- | --- |
+| name | <code>string</code> |  | 
+| [options] | <code>Object</code> | <code>{}</code> | 
 
 <a name="module_@the-/driver-sequelize.parsing.parseFilter"></a>
 

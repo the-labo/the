@@ -320,6 +320,7 @@ describe('the-db', function() {
     await db.setup()
     await db.exec('SHOW TABLES')
 
+
     const UserResource = ({ define }) =>
       define({
         name: { type: STRING },

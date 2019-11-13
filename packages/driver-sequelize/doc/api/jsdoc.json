@@ -13,7 +13,7 @@
     "name": "@the-/driver-sequelize",
     "order": 2,
     "typicalname": "driverSequelize",
-    "version": "16.0.6"
+    "version": "16.0.7"
   },
   {
     "description": "Define schema",
@@ -209,7 +209,7 @@
     "memberof": "module:@the-/driver-sequelize.constants",
     "meta": {
       "filename": "MetaColumnNames.js",
-      "lineno": 3,
+      "lineno": 4,
       "path": "lib/constants"
     },
     "name": "MetaColumnNames",
@@ -553,7 +553,18 @@
           "names": [
             "string"
           ]
-        }
+        },
+        "name": "name"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
       }
     ],
     "returns": [

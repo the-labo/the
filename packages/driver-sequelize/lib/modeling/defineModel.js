@@ -21,13 +21,13 @@ function defineModel(sequelize, resourceName, schema) {
     [MetaColumnNames.$$at]: {
       comment: 'Updated date',
       defaultValue: () => new Date(),
-      required: true,
+      allowNull: false,
       type: Sequelize.DATE,
     },
     [MetaColumnNames.$$num]: {
       comment: 'Version number',
       defaultValue: () => 0,
-      required: true,
+      allowNull: false,
       type: Sequelize.INTEGER,
       unique: false,
     },
@@ -36,7 +36,6 @@ function defineModel(sequelize, resourceName, schema) {
       comment: 'Clay ID',
       defaultValue: () => String(clayId()),
       primaryKey: true,
-      required: true,
       type: Sequelize.STRING(64),
       unique: true,
     },

@@ -103,7 +103,7 @@ tryExample().catch((err) => console.error(err))
   - [.defineModelIndexes(schema)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.defineModelIndexes)
   - [.prepareModel(Model,Schema)](./doc/api/api.md#module_@the-/driver-sequelize.modeling.prepareModel)
 - module:@the-/driver-sequelize.parsing
-  - [.parseAttributeName()](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseAttributeName)
+  - [.parseAttributeName(name,options)](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseAttributeName)
   - [.parseFilter(filter,options&#x3D;)](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseFilter)
   - [.parseSort(sort,options)](./doc/api/api.md#module_@the-/driver-sequelize.parsing.parseSort)
 - TheDriverSequelize

@@ -2,6 +2,7 @@
 
 const defineModelColumn = require('./defineModelColumn')
 const parseAttributeName = require('../parsing/parseAttributeName')
+const MetaColumnNames = require('../constants/MetaColumnNames')
 
 /**
  * @memberof module:@the-/driver-sequelize.modeling
@@ -17,22 +18,33 @@ async function prepareModel(Model, Schema) {
   } = Model
   await Model.sync()
   const descriptions = await queryInterface.describeTable(tableName)
-  for (const [propertyName, def] of Object.entries(Schema)) {
-    const attributeName = parseAttributeName(propertyName)
-    const defined = defineModelColumn(propertyName, def)
+  const specs = [
+    ...Object.values(MetaColumnNames).map(attributeName => {
+      return [
+        attributeName,
+        Model.rawAttributes[attributeName],
+      ]
+    }),
+    ...Object.entries(Schema).map(([propertyName, def]) => {
+      const attributeName = parseAttributeName(propertyName)
+      const spec = defineModelColumn(propertyName, def)
+      return [attributeName, spec]
+    })
+  ]
+  for (const [attributeName, spec] of specs) {
     const described = descriptions[attributeName]
     if (described) {
-      const type = defined.type.toSql ? defined.type.toSql() : defined.type.key
+      const type = spec.type.toSql ? spec.type.toSql() : spec.type.key
       const changed =
         ['allowNull', 'primaryKey', 'unique'].some(
-          (k) => described[k] !== defined[k],
+          (k) => described[k] !== spec[k],
         ) || type !== described.type
       if (changed) {
-        await queryInterface.changeColumn(tableName, attributeName, defined)
+        await queryInterface.changeColumn(tableName, attributeName, spec)
       }
     } else {
       // New column
-      await queryInterface.addColumn(tableName, attributeName, defined)
+      await queryInterface.addColumn(tableName, attributeName, spec)
     }
   }
   await Model.sync()
