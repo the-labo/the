@@ -17,7 +17,7 @@ async function prepareModel(Model, Schema) {
     tableName,
   } = Model
   await Model.sync()
-  const descriptions = await queryInterface.describeTable(tableName)
+  let descriptions = await queryInterface.describeTable(tableName)
   const specs = [
     ...Object.values(MetaColumnNames).map((attributeName) => [
       attributeName,
@@ -39,10 +39,12 @@ async function prepareModel(Model, Schema) {
         ) || type !== described.type
       if (changed) {
         await queryInterface.changeColumn(tableName, attributeName, spec)
+        descriptions = await queryInterface.describeTable(tableName)
       }
     } else {
       // New column
       await queryInterface.addColumn(tableName, attributeName, spec)
+      descriptions = await queryInterface.describeTable(tableName)
     }
   }
   await Model.sync()
