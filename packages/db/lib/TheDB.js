@@ -424,6 +424,10 @@ class TheDB extends TheDBBase {
         })
       }
     }
+
+    if (driver.prepareIfNeeded) {
+      await driver.prepareIfNeeded()
+    }
   }
 
   /**
