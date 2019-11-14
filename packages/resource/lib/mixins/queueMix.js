@@ -20,6 +20,7 @@ function queueMix(Class) {
       this.creatingQueue = []
     }
 
+    /** @deprecated いけてない */
     async createWithQueue(attr, options = {}) {
       const { timeout = 1500, ...otherOptions } = options
       return new Promise((resolve, reject) => {
