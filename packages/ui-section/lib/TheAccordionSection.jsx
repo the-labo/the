@@ -37,7 +37,7 @@ const TheAccordionSection = (props) => {
     onToggle && onToggle(newOpen)
   }, [open, onToggle])
 
-  const handleToggle = useCallback(() => toggleOpen())
+  const handleToggle = useCallback(() => toggleOpen(), [])
 
   const { Body, Header } = TheAccordionSection
   return (
