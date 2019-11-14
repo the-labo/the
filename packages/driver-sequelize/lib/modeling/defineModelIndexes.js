@@ -17,8 +17,12 @@ function defineModelIndexes(schema) {
   const refColumnNames = Object.keys(schema).filter((key) =>
     TypesToIndex.includes(schema[key].type),
   )
+  const indexColumnNames = Object.keys(schema).filter(
+    (name) => schema[name].indexed,
+  )
+  const columnNames = [...indexColumnNames, ...refColumnNames]
   return [
-    ...refColumnNames.map((name) => ({
+    ...columnNames.map((name) => ({
       fields: [name],
     })),
   ]

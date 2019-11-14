@@ -1,7 +1,7 @@
 {
   "name": "@the-/driver-sequelize",
   "description": "Sequelize driver for the-framework",
-  "version": "16.0.11",
+  "version": "16.0.13",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -17,6 +17,7 @@
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.3",
     "clay-collection": "^3.1.5",
+    "clay-constants": "^3.5.1",
     "clay-driver-base": "^4.1.7",
     "clay-list-pager": "^3.0.1",
     "clay-resource-name": "^4.0.5",
