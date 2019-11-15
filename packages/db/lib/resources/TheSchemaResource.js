@@ -31,10 +31,7 @@ const TheSchemaResource = ({ define }) => {
   })
   Object.assign(TheSchema, {
     async current() {
-      const latest = await TheSchema.first(
-        {},
-        { sort: ['-createdAt', '-$$num'] },
-      )
+      const latest = await TheSchema.first({}, { sort: ['-createdAt'] })
       if (latest) {
         return latest
       }
