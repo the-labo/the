@@ -17,7 +17,7 @@ const sortAccessFor = require('../sortAccessFor')
  * @param scope
  * @returns {Object}
  */
-function listOperationFor(scope) {
+function listOperationFor (scope) {
   const busyAccess = busyAccessFor(scope)
   const readyAccess = readyAccessFor(scope)
   const pageAccess = pageAccessFor(scope)
@@ -42,27 +42,28 @@ function listOperationFor(scope) {
     pageAccess,
     readyAccess,
     sortAccess,
-    addOne(entity) {
+    addOne (entity, options) {
       const isKnown = entitiesAccess.isKnownOne(entity)
       if (isKnown) {
         return
       }
 
-      entitiesAccess.addOne(entity)
+      entitiesAccess.addOne(entity, options)
       countsAccess.increase()
     },
-    init() {
+    init () {
       scope.init()
     },
-    receiveOne(entity) {
+    receiveOne (entity, options = {}) {
+      const { sorter = null } = options
       const isKnown = entitiesAccess.isKnownOne(entity)
       if (isKnown) {
-        listOperation.updateOne(entity)
+        listOperation.updateOne(entity,)
       } else {
-        listOperation.addOne(entity)
+        listOperation.addOne(entity, { sorter })
       }
     },
-    removeOne(entity) {
+    removeOne (entity) {
       const isKnown = entitiesAccess.isKnownOne(entity)
       if (!isKnown) {
         return
@@ -71,7 +72,7 @@ function listOperationFor(scope) {
       entitiesAccess.removeOne(entity)
       countsAccess.decrease()
     },
-    setCondition(condition) {
+    setCondition (condition) {
       const {
         filter = filterAccess.state,
         page = pageAccess.state,
@@ -81,7 +82,7 @@ function listOperationFor(scope) {
       sortAccess.set(sort)
       pageAccess.set(page)
     },
-    updateOne(entity) {
+    updateOne (entity) {
       const isKnown = entitiesAccess.isKnownOne(entity)
       if (!isKnown) {
         return
@@ -89,13 +90,13 @@ function listOperationFor(scope) {
 
       entitiesAccess.updateOne(entity)
     },
-    async _fetch(handler) {
+    async _fetch (handler) {
       const { state: filter } = filterAccess
       const { state: page } = pageAccess
       const { state: sort } = sortAccess
       return handler({ filter, page, sort })
     },
-    async _save(result) {
+    async _save (result) {
       entitiesAccess.set(result.entities)
       countsAccess.set(result.meta)
       const hasMore = countsAccess.hasMore()
@@ -105,7 +106,7 @@ function listOperationFor(scope) {
      * @param {function(Object)} handler - Async handler
      * @returns {Promise<*|Promise<*>>}
      */
-    async sync(handler) {
+    async sync (handler) {
       return busyAccess.while(async () =>
         readyAccess.when(async () => {
           const result = await listOperation._fetch(handler)
@@ -114,7 +115,7 @@ function listOperationFor(scope) {
         }),
       )
     },
-    async syncMore(handler) {
+    async syncMore (handler) {
       pageAccess.more({})
       return moreAccess.busyWhile(async () => {
         const result = await listOperation._fetch(handler)
