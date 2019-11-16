@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/facade-scope
  * @typicalname facadeScope
- * @version 16.1.24
+ * @version 16.1.25
  */
 'use strict'
 

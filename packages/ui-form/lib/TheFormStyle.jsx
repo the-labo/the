@@ -114,13 +114,18 @@ TheFormStyle.data = (options) => {
         bottom: '100%',
         position: 'absolute',
       },
+      '> :first-child input': {
+        borderRadius: '4px 0 0 4px ',
+      },
+      '> :last-child input': {
+        borderRadius: '0 4px 4px 0',
+      },
       '> *': {
         margin: '0',
       },
       alignItems: 'stretch',
       display: 'inline-flex',
       input: {
-        borderRadius: '4px 0 0 4px ',
         height: inlineHeight,
       },
       margin: '0',
