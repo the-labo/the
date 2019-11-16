@@ -74,8 +74,11 @@ const TheInputDate = React.memo((props) => {
     if (!picker) {
       return
     }
-
-    picker.jumpToDate(value)
+    if (value) {
+      picker.jumpToDate(value)
+    } else {
+      picker.clear()
+    }
     picker.redraw()
   }, [value])
 
