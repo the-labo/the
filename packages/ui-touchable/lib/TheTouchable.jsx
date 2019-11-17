@@ -16,6 +16,7 @@ import {
   setHammerPinchEnabled,
   setHammerRotateEnabled,
 } from './helpers/hammerHelper'
+import ListenerPipe from './helpers/ListenerPipe'
 
 const exists = (v) => !!v
 
@@ -79,16 +80,12 @@ const TheTouchable = (props) => {
     if (!panEnabled) {
       return
     }
-    const listeners = Object.fromEntries(
-      [
-        ['pancancel', onPanCancel],
-        ['panend', onPanEnd],
-        ['panmove', onPan],
-        ['panstart', onPanStart],
-      ]
-        .filter(([, handle]) => !!handle)
-        .map(([event, handle]) => [event, (e) => handle(parsePanEvent(e))]),
-    )
+    const listeners = ListenerPipe(parsePanEvent).pipeAll({
+      pancancel: onPanCancel,
+      panend: onPanEnd,
+      panmove: onPan,
+      panstart: onPanStart,
+    })
     const unbindListeners = bindListeners(listeners)
     return () => {
       unbindListeners()
@@ -103,17 +100,13 @@ const TheTouchable = (props) => {
     if (!pinchEnabled) {
       return
     }
-    const listeners = Object.fromEntries(
-      [
-        ['pinchin', onPinch],
-        ['pinchout', onPinch],
-        ['pinchend', onPinchEnd],
-        ['pinchstart', onPinchStart],
-        ['pinchcancel', onPinchCancel],
-      ]
-        .filter(([, handle]) => !!handle)
-        .map(([event, handle]) => [event, (e) => handle(parsePinchEvent(e))]),
-    )
+    const listeners = ListenerPipe(parsePinchEvent).pipeAll({
+      pinchcancel: onPinchCancel,
+      pinchend: onPinchEnd,
+      pinchin: onPinch,
+      pinchout: onPinch,
+      pinchstart: onPinchStart,
+    })
     const unbindListeners = bindListeners(listeners)
 
     return () => {
@@ -175,11 +168,10 @@ const TheTouchable = (props) => {
     if (!tapEnabled) {
       return
     }
-    const listeners = Object.fromEntries(
-      [['tap', onTap], ['doubletap', onDoubleTap]]
-        .filter(([, handle]) => !!handle)
-        .map(([event, handle]) => [event, (e) => handle(parseTapEvent(e))]),
-    )
+    const listeners = ListenerPipe(parseTapEvent).pipeAll({
+      doubletap: onDoubleTap,
+      tap: onTap,
+    })
     const unbindListeners = bindListeners(listeners)
 
     return () => {
@@ -195,16 +187,13 @@ const TheTouchable = (props) => {
     if (!rotateEnabled) {
       return
     }
-    const listeners = Object.fromEntries(
-      [
-        ['rotatestart', onRotateStart],
-        ['rotatemove', onRotate],
-        ['rotateend', onRotateEnd],
-        ['rotatecancel', onRotateCancel],
-      ]
-        .filter(([, handle]) => !!handle)
-        .map(([event, handle]) => [event, (e) => handle(parseRotateEvent(e))]),
-    )
+    const listeners = ListenerPipe(parseRotateEvent).pipeAll({
+      rotatecancel: onRotateCancel,
+      rotateend: onRotateEnd,
+      rotatemove: onRotate,
+      rotatestart: onRotateStart,
+    })
+
     const unbindListeners = bindListeners(listeners)
 
     return () => {
