@@ -30,7 +30,7 @@
     "memberof": "module:@the-/ui-touchable",
     "meta": {
       "filename": "TheTouchable.jsx",
-      "lineno": 10,
+      "lineno": 16,
       "path": "lib"
     },
     "name": "TheTouchable",

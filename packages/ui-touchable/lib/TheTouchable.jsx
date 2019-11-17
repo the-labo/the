@@ -4,6 +4,12 @@ import Hammer from 'hammerjs'
 import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { unlessProduction } from '@the-/check-env'
+import {
+  bindHammerListeners,
+  setHammerPanEnabled,
+  setHammerPinchEnabled,
+  setHammerRotateEnabled,
+} from './helpers/hammerHelper'
 
 const exists = (v) => !!v
 
@@ -49,19 +55,7 @@ const TheTouchable = (props) => {
   const ref = useRef(null)
   const [hammer, setHammer] = useState(null)
   const bindListeners = useCallback(
-    (listeners) => {
-      if (!hammer) {
-        return
-      }
-      for (const [event, listener] of Object.entries(listeners)) {
-        hammer.on(event, listener)
-      }
-      return () => {
-        for (const [event, listener] of Object.entries(listeners)) {
-          hammer.off(event, listener)
-        }
-      }
-    },
+    (listeners) => bindHammerListeners(hammer, listeners),
     [hammer],
   )
 
@@ -75,12 +69,10 @@ const TheTouchable = (props) => {
     if (!hammer) {
       return
     }
-    const pan = hammer.get('pan')
-    pan.set({ enable: panEnabled })
+    setHammerPanEnabled(hammer, panEnabled)
     if (!panEnabled) {
       return
     }
-    pan.set({ direction: Hammer.DIRECTION_ALL })
     const listeners = Object.fromEntries(
       [
         ['pancancel', onPanCancel],
@@ -112,8 +104,7 @@ const TheTouchable = (props) => {
     if (!hammer) {
       return
     }
-    const pinch = hammer.get('pinch')
-    pinch.set({ enable: pinchEnabled })
+    setHammerPinchEnabled(hammer, pinchEnabled)
     if (!pinchEnabled) {
       return
     }
@@ -225,8 +216,7 @@ const TheTouchable = (props) => {
     if (!hammer) {
       return
     }
-    const rotate = hammer.get('rotate')
-    rotate.set({ enable: rotateEnabled })
+    setHammerRotateEnabled(hammer, rotateEnabled)
     if (!rotateEnabled) {
       return
     }
