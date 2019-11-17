@@ -74,6 +74,7 @@ export default function ExampleComponent() {
         setPinchData({
           ...pinchData,
           scale: pinchData.scale * scale,
+          vscale: 1,
         })
       },
     }),

@@ -9,6 +9,7 @@ import {
   parsePinchEvent,
   parseRotateEvent,
   parseTapEvent,
+  parseWheelEvent,
 } from './helpers/eventParser'
 import {
   bindHammerListeners,
@@ -122,44 +123,47 @@ const TheTouchable = (props) => {
     }),
     [],
   )
-  useEffect(() => {
-    if (!pinchEnabled) {
-      return
-    }
-    const { current: elm } = ref
-    const wheel = (srcEvent) => {
-      if (!srcEvent.ctrlKey) {
+  const handleWheel = useCallback(
+    (e) => {
+      if (!e.ctrlKey) {
         return
       }
-      srcEvent.preventDefault()
+      e.preventDefault()
 
       clearTimeout(wheelScaleState.doneTimer)
-      const event = {
-        center: {
-          x: srcEvent.clientX,
-          y: srcEvent.clientY,
-        },
+      const event = parseWheelEvent(e, {
         scale: wheelScaleState.scale,
-        srcEvent,
-      }
+      })
+
       if (!wheelScaleState.active) {
         wheelScaleState.active = true
         onPinchStart && onPinchStart(event)
         return
       }
-      wheelScaleState.scale -= srcEvent.deltaY * 0.01
+      wheelScaleState.scale -= e.deltaY * 0.01
       onPinch && onPinch(event)
-      wheelScaleState.doneTimer = setTimeout(() => {
+      const done = () => {
         wheelScaleState.scale = 1
         onPinchEnd && onPinchEnd(event)
-      }, 300)
+      }
+      wheelScaleState.doneTimer = setTimeout(done, 300)
+      return () => {
+        clearTimeout(wheelScaleState.doneTimer)
+      }
+    },
+    [wheelScaleState, ...pinchCallbacks],
+  )
+
+  useEffect(() => {
+    if (!pinchEnabled) {
+      return
     }
-    elm.addEventListener('wheel', wheel, { passive: false })
+    const { current: elm } = ref
+    elm.addEventListener('wheel', handleWheel, { passive: false })
     return () => {
-      clearTimeout(wheelScaleState.doneTimer)
-      elm.removeEventListener('wheel', wheel, { passive: false })
+      elm.removeEventListener('wheel', handleWheel, { passive: false })
     }
-  }, [pinchEnabled, wheelScaleState, ...pinchCallbacks])
+  }, [pinchEnabled, wheelScaleState, handleWheel])
 
   useEffect(() => {
     if (!hammer) {

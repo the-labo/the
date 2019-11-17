@@ -36,3 +36,14 @@ export function parseRotateEvent(e) {
     srcEvent,
   }
 }
+
+export function parseWheelEvent(e, { scale }) {
+  return {
+    center: {
+      x: e.clientX,
+      y: e.clientY,
+    },
+    scale,
+    srcEvent: e,
+  }
+}
