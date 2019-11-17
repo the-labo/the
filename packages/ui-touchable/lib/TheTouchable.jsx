@@ -44,7 +44,7 @@ const TheTouchable = (props) => {
     const nothingEnabled =
       !pinchEnabled && !panEnabled && !tapEnabled && !rotateEnabled
     nothingEnabled &&
-    console.warn('[TheTouchable] Nothing to do. May be you forgot pass props')
+      console.warn('[TheTouchable] Nothing to do. May be you forgot pass props')
   })
   const ref = useRef(null)
   const [hammer, setHammer] = useState(null)
@@ -167,7 +167,7 @@ const TheTouchable = (props) => {
       clearTimeout(wheelScaleState.doneTimer)
       const event = {
         center: {
-          x: srcEvent.clientY,
+          x: srcEvent.clientX,
           y: srcEvent.clientY,
         },
         scale: wheelScaleState.scale,
