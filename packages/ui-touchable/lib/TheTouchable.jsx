@@ -5,6 +5,12 @@ import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { unlessProduction } from '@the-/check-env'
 import {
+  parsePanEvent,
+  parsePinchEvent,
+  parseRotateEvent,
+  parseTapEvent,
+} from './helpers/eventParser'
+import {
   bindHammerListeners,
   setHammerPanEnabled,
   setHammerPinchEnabled,
@@ -81,18 +87,7 @@ const TheTouchable = (props) => {
         ['panstart', onPanStart],
       ]
         .filter(([, handle]) => !!handle)
-        .map(([event, handle]) => [
-          event,
-          (e) => {
-            const { center, deltaX, deltaY, srcEvent } = e
-            handle({
-              center,
-              srcEvent,
-              vx: deltaX,
-              vy: deltaY,
-            })
-          },
-        ]),
+        .map(([event, handle]) => [event, (e) => handle(parsePanEvent(e))]),
     )
     const unbindListeners = bindListeners(listeners)
     return () => {
@@ -117,17 +112,7 @@ const TheTouchable = (props) => {
         ['pinchcancel', onPinchCancel],
       ]
         .filter(([, handle]) => !!handle)
-        .map(([event, handle]) => [
-          event,
-          (e) => {
-            const { center, scale, srcEvent } = e
-            handle({
-              center,
-              scale,
-              srcEvent,
-            })
-          },
-        ]),
+        .map(([event, handle]) => [event, (e) => handle(parsePinchEvent(e))]),
     )
     const unbindListeners = bindListeners(listeners)
 
@@ -193,17 +178,7 @@ const TheTouchable = (props) => {
     const listeners = Object.fromEntries(
       [['tap', onTap], ['doubletap', onDoubleTap]]
         .filter(([, handle]) => !!handle)
-        .map(([event, handle]) => [
-          event,
-          (e) => {
-            const { center, srcEvent, tapCount } = e
-            handle({
-              center,
-              srcEvent,
-              tapCount,
-            })
-          },
-        ]),
+        .map(([event, handle]) => [event, (e) => handle(parseTapEvent(e))]),
     )
     const unbindListeners = bindListeners(listeners)
 
@@ -228,17 +203,7 @@ const TheTouchable = (props) => {
         ['rotatecancel', onRotateCancel],
       ]
         .filter(([, handle]) => !!handle)
-        .map(([event, handle]) => [
-          event,
-          (e) => {
-            const { angle, center, srcEvent } = e
-            handle({
-              angle,
-              center,
-              srcEvent,
-            })
-          },
-        ]),
+        .map(([event, handle]) => [event, (e) => handle(parseRotateEvent(e))]),
     )
     const unbindListeners = bindListeners(listeners)
 
