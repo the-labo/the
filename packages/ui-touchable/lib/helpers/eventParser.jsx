@@ -44,6 +44,10 @@ export function parseWheelEvent(e, { scale }) {
       y: e.clientY,
     },
     scale,
+    scaleOrigin: {
+      x: e.offsetX,
+      y: e.offsetY,
+    },
     srcEvent: e,
   }
 }

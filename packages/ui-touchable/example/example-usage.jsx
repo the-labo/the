@@ -12,6 +12,7 @@ export default function ExampleComponent() {
   })
   const [pinchData, setPinchData] = useState({
     scale: 1,
+    scaleOrigin: { x: 0, y: 0 },
     vscale: 1,
   })
 
@@ -75,6 +76,13 @@ export default function ExampleComponent() {
           ...pinchData,
           scale: pinchData.scale * scale,
           vscale: 1,
+        })
+      },
+      onPinchStart: ({ scaleOrigin }) => {
+        console.log('scaleOrigin', scaleOrigin)
+        setPinchData({
+          ...pinchData,
+          scaleOrigin,
         })
       },
     }),
@@ -143,6 +151,7 @@ export default function ExampleComponent() {
           style={{
             ...boxStyle('#E83'),
             transform: `scale(${pinchData.scale * pinchData.vscale})`,
+            transformOrigin: `${pinchData.scaleOrigin.x}px ${pinchData.scaleOrigin.y}px`,
           }}
         >
           <h3>Pinch Me!</h3>

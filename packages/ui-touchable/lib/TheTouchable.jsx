@@ -143,8 +143,9 @@ const TheTouchable = (props) => {
       wheelScaleState.scale -= e.deltaY * 0.01
       onPinch && onPinch(event)
       const done = () => {
-        wheelScaleState.scale = 1
         onPinchEnd && onPinchEnd(event)
+        wheelScaleState.scale = 1
+        wheelScaleState.active = false
       }
       wheelScaleState.doneTimer = setTimeout(done, 300)
       return () => {
