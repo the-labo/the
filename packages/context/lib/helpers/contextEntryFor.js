@@ -4,6 +4,8 @@ const { shallowEqual } = require('asobj')
 const PropTypes = require('prop-types')
 const React = require('react')
 
+const { useCallback, useEffect, useMemo, useState } = React
+
 /**
  * Entry component
  * @memberof module:@the-/context.helpers
@@ -13,63 +15,40 @@ const React = require('react')
 function contextEntryFor(context, { store }) {
   /**
    * @memberof module:@the-/context.helpers.contextEntryFor
-   * @class ContextEntry
+   * @function ContextEntry
    * @inner
-   */
-  class ContextEntry extends React.Component {
-    constructor(props) {
-      super(props)
-      this.unsubscribeStore = null
-      const { init } = props
-      {
-        const initialized = init(store.state)
-        const piped = this.getPiped()
-        this.state = { initialized, piped }
-      }
-    }
+   * @param props
+   * @returns {*} */
+  function ContextEntry(props) {
+    const { init, pipe } = props
+    const renderer = useMemo(() => props.children, [])
 
-    applyRenderer(renderable) {
-      const {
-        props: { children: renderer },
-      } = this
-      return renderer(renderable)
-    }
+    const getPiped = useCallback(() => pipe(store.state), [pipe])
 
-    componentDidMount() {
-      this.updatePipe()
-      this.unsubscribeStore = store.subscribe(() => this.updatePipe())
-    }
+    const initialized = useMemo(() => init(store.state), [])
+    const [piped, setPiped] = useState(getPiped())
 
-    componentWillUnmount() {
-      this.unsubscribeStore()
-    }
-
-    getPiped() {
-      const {
-        props: { pipe },
-      } = this
-      return pipe(store.state)
-    }
-
-    render() {
-      const {
-        state: { initialized, piped },
-      } = this
-      return this.applyRenderer({
-        ...initialized,
-        ...piped,
-      })
-    }
-
-    updatePipe() {
-      const piped = this.getPiped()
-      const skip = shallowEqual(this.state.piped, piped)
+    const updatePiped = useCallback(() => {
+      const newPiped = getPiped()
+      const skip = shallowEqual(piped, newPiped)
       if (skip) {
         return
       }
+      setPiped(newPiped)
+    }, [piped, setPiped, getPiped])
 
-      this.setState({ piped })
-    }
+    useEffect(() => {
+      updatePiped()
+      const unsubscribeStore = store.subscribe(() => updatePiped())
+      return () => {
+        unsubscribeStore()
+      }
+    }, [])
+
+    return React.createElement(renderer, {
+      ...initialized,
+      ...piped,
+    })
   }
 
   ContextEntry.contextType = context

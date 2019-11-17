@@ -5,7 +5,7 @@
 ## @the-/context
 React context for the-components
 
-**Version**: 16.0.10  
+**Version**: 17.0.0  
 **License**: MIT  
 
 * [@the-/context](#module_@the-/context)
@@ -13,7 +13,7 @@ React context for the-components
         * [new TheContext(values, [options])](#new_module_@the-/context.TheContext_new)
     * [.helpers](#module_@the-/context.helpers) : <code>object</code>
         * [.contextEntryFor()](#module_@the-/context.helpers.contextEntryFor) ⇒ <code>\*</code>
-            * [~ContextEntry](#module_@the-/context.helpers.contextEntryFor..ContextEntry)
+            * [~ContextEntry(props)](#module_@the-/context.helpers.contextEntryFor..ContextEntry) ⇒ <code>\*</code>
         * [.ContextRootFor()](#module_@the-/context.helpers.ContextRootFor) ⇒ <code>\*</code>
     * [.create(...args)](#module_@the-/context.create) ⇒ <code>TheContext</code>
     * [.default()](#module_@the-/context.default)
@@ -43,7 +43,7 @@ Client helper functions
 
 * [.helpers](#module_@the-/context.helpers) : <code>object</code>
     * [.contextEntryFor()](#module_@the-/context.helpers.contextEntryFor) ⇒ <code>\*</code>
-        * [~ContextEntry](#module_@the-/context.helpers.contextEntryFor..ContextEntry)
+        * [~ContextEntry(props)](#module_@the-/context.helpers.contextEntryFor..ContextEntry) ⇒ <code>\*</code>
     * [.ContextRootFor()](#module_@the-/context.helpers.ContextRootFor) ⇒ <code>\*</code>
 
 <a name="module_@the-/context.helpers.contextEntryFor"></a>
@@ -54,8 +54,13 @@ Entry component
 **Kind**: static method of [<code>helpers</code>](#module_@the-/context.helpers)  
 <a name="module_@the-/context.helpers.contextEntryFor..ContextEntry"></a>
 
-##### contextEntryFor~ContextEntry
-**Kind**: inner class of [<code>contextEntryFor</code>](#module_@the-/context.helpers.contextEntryFor)  
+##### contextEntryFor~ContextEntry(props) ⇒ <code>\*</code>
+**Kind**: inner method of [<code>contextEntryFor</code>](#module_@the-/context.helpers.contextEntryFor)  
+
+| Param |
+| --- |
+| props | 
+
 <a name="module_@the-/context.helpers.ContextRootFor"></a>
 
 #### helpers.ContextRootFor() ⇒ <code>\*</code>

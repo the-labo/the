@@ -82,7 +82,7 @@ Usage
   - [.contextEntryFor()](./doc/api/api.md#module_@the-/context.helpers.contextEntryFor)
   - [.ContextRootFor()](./doc/api/api.md#module_@the-/context.helpers.ContextRootFor)
 - module:@the-/context.helpers.contextEntryFor
-  - [~ContextEntry](./doc/api/api.md#module_@the-/context.helpers.contextEntryFor~ContextEntry)
+  - [~ContextEntry(props)](./doc/api/api.md#module_@the-/context.helpers.contextEntryFor~ContextEntry)
 - module:@the-/context.helpers.contextRootFor
   - [~ContextRoot(props)](./doc/api/api.md#module_@the-/context.helpers.contextRootFor~ContextRoot)
 - TheContext
