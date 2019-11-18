@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui",
   "description": "React components of THE framework",
-  "version": "15.7.4",
+  "version": "15.7.6",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -22,7 +22,7 @@
     "@the-/ui-dialog": "^15.4.15",
     "@the-/ui-flick": "^15.5.0",
     "@the-/ui-footer": "^15.4.11",
-    "@the-/ui-form": "^15.4.11",
+    "@the-/ui-form": "^15.4.12",
     "@the-/ui-frame": "^15.4.10",
     "@the-/ui-hamburger": "^15.4.14",
     "@the-/ui-head": "^15.4.10",
@@ -31,7 +31,7 @@
     "@the-/ui-icon": "^15.4.12",
     "@the-/ui-image": "^15.4.12",
     "@the-/ui-info": "^15.4.11",
-    "@the-/ui-input": "^15.5.21",
+    "@the-/ui-input": "^15.6.0",
     "@the-/ui-link": "^15.4.11",
     "@the-/ui-list": "^15.4.11",
     "@the-/ui-main": "^15.4.12",
@@ -42,7 +42,7 @@
     "@the-/ui-root": "^15.4.13",
     "@the-/ui-route": "^15.4.11",
     "@the-/ui-router": "^15.4.11",
-    "@the-/ui-section": "^15.4.16",
+    "@the-/ui-section": "^15.4.18",
     "@the-/ui-spin": "^15.4.11",
     "@the-/ui-step": "^15.4.13",
     "@the-/ui-style": "^16.0.0",
@@ -58,8 +58,8 @@
     "@the-/ui-demo": "^15.4.12",
     "fmtjson": "^4.0.6",
     "injectmock": "^2.0.0",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2"
   },
   "engines": {

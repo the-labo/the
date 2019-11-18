@@ -4,7 +4,7 @@
  * @description Input of the-components
  * @module @the-/ui-input
  * @typicalname uiInput
- * @version 15.5.22
+ * @version 15.6.0
  */
 'use strict'
 
