@@ -57,7 +57,7 @@ function migrateMix(Class) {
         resources: { TheDBSchema },
       } = this
       if (await TheDBSchema.exists({ version })) {
-        throw new Error(`Version ${version} already exists!`)
+        throw new Error(`[TheDB] Version ${version} already exists!`)
       }
 
       const schema = await TheDBSchema.current()
@@ -65,7 +65,8 @@ function migrateMix(Class) {
         return false
       }
 
-      await TheDBSchema.create({ version })
+      await asleep(10) // increment createdAt
+      await TheDBSchema.create({ createdAt: new Date(), version })
       return true
     }
   }
