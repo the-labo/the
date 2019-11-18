@@ -182,6 +182,28 @@ TheInputCheckbox.Option = function TheInputCheckboxOption({
   )
 }
 
+TheInputCheckbox.Boolean = React.memo(function TheInputCheckboxBoolean(props) {
+  const { label, name, value, ...otherProps } = props
+  const handleUpdate = useCallback(
+    (updated) => {
+      props.onUpdate &&
+        props.onUpdate({
+          [name]: updated[name] === label,
+        })
+    },
+    [name, props.onUpdate],
+  )
+  return (
+    <TheInputCheckbox
+      {...otherProps}
+      name={name}
+      onUpdate={handleUpdate}
+      options={[label]}
+      value={value ? label : ''}
+    />
+  )
+})
+
 TheInputCheckbox.NORMAL_ICON = 'far fa-square'
 TheInputCheckbox.CHECKED_ICON = 'fas fa-check-square'
 

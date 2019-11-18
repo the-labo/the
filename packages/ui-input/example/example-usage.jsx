@@ -211,6 +211,15 @@ class ExampleComponent extends React.PureComponent {
           />
         </div>
 
+        <div>
+          <Checkbox.Boolean
+            label='Checkbox with boolean'
+            name='value03AsBool'
+            onUpdate={onUpdate}
+            value={!!values.value03AsBool}
+          />
+        </div>
+
         <hr />
         <h3>Select</h3>
 
