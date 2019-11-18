@@ -24,6 +24,24 @@ class TheContext {
     this.value = value
   }
 
+  defineEntry(displayName = 'ContextEntry') {
+    const { context, store } = this
+    const Entry = contextEntryFor(context, { store })
+    Entry.displayName = displayName
+    return Entry
+  }
+
+  defineEntryRenderer({ displayName, init, pipe }) {
+    const Entry = this.defineEntry(displayName)
+    const renderer = (content) =>
+      React.createElement(Entry, { init, pipe }, content)
+    renderer.Entry = Entry
+    renderer.setDisplayName = (displayName) => {
+      Entry.displayName = displayName
+    }
+    return renderer
+  }
+
   /**
    * Delete value from store
    * @param {string} name
