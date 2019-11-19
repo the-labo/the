@@ -21,11 +21,11 @@ function contextEntryFor(context, { store }) {
    * @returns {*} */
   function ContextEntry(props) {
     const { init, pipe } = props
-    const renderer = useMemo(() => props.children, [])
+    const renderer = useMemo(() => props.children, [props.children])
 
-    const getPiped = useCallback(() => pipe(store.state), [pipe])
+    const getPiped = useCallback(() => pipe(store.state), [pipe, store])
 
-    const initialized = useMemo(() => init(store.state), [])
+    const initialized = useMemo(() => init(store.state), [store])
     const [piped, setPiped] = useState(getPiped())
 
     const updatePiped = useCallback(() => {
@@ -43,7 +43,7 @@ function contextEntryFor(context, { store }) {
       return () => {
         unsubscribeStore()
       }
-    }, [])
+    }, [updatePiped, store])
 
     return renderer({
       ...initialized,
