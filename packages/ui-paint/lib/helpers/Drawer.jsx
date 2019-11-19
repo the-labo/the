@@ -37,6 +37,9 @@ function Drawer(canvas, tmpCanvas, options = {}) {
     get active() {
       return state.active
     },
+    get config() {
+      return config
+    },
     clear() {
       canvasAccess.clear()
       state.tmpLayer && state.tmpLayer.tearDown()
@@ -132,6 +135,7 @@ function Drawer(canvas, tmpCanvas, options = {}) {
     },
     async fromSnapshot(snapshot) {
       await state.fromSnapshotReady
+      const { config: originalConfig } = drawer
       state.fromSnapshotReady = (async () => {
         drawer.clear()
         const { background, config, layers: layerHistories } = snapshot
@@ -144,6 +148,8 @@ function Drawer(canvas, tmpCanvas, options = {}) {
         drawer.setConfig(config)
         state.layerHistories = layerHistories
       })()
+
+      drawer.setConfig(originalConfig)
       await state.fromSnapshotReady
     },
     async registerBackground(background, options = {}) {

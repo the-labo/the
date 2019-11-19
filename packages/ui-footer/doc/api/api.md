@@ -29,7 +29,7 @@
 ## @the-/ui-footer
 Footer of the-components
 
-**Version**: 15.4.11  
+**Version**: 15.4.14  
 <a name="TheFooter"></a>
 
 ## TheFooter

@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-paint",
   "description": "Hand write painting",
-  "version": "15.5.23",
+  "version": "15.5.25",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -23,8 +23,8 @@
     "@the-/ui-demo": "^15.4.12",
     "coz": "^7.0.19",
     "objnest": "^5.0.10",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2"
   },
   "engines": {
