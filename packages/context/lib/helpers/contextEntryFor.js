@@ -45,13 +45,12 @@ function contextEntryFor(context, { store }) {
       }
     }, [])
 
-    return React.createElement(renderer, {
+    return renderer({
       ...initialized,
       ...piped,
     })
   }
 
-  ContextEntry.contextType = context
   ContextEntry.propTypes = {
     children: PropTypes.func,
     init: PropTypes.func,
