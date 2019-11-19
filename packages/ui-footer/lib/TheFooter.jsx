@@ -22,7 +22,7 @@ const TheFooter = React.memo((props) => {
   )
 })
 
-TheFooter.CopyRight = function CopyRight({
+TheFooter.CopyRight = function TheFooterCopyRight({
   children,
   className,
   holder,
@@ -36,7 +36,7 @@ TheFooter.CopyRight = function CopyRight({
   )
 }
 
-TheFooter.Link = function Link({ children, className, to }) {
+TheFooter.Link = function TheFooterLink({ children, className, to }) {
   return (
     <TheLink className={classnames('the-footer-link', className)} to={to}>
       {children}
@@ -44,13 +44,13 @@ TheFooter.Link = function Link({ children, className, to }) {
   )
 }
 
-TheFooter.Links = function Links({ children, className }) {
+TheFooter.Links = function TheFooterLinks({ children, className }) {
   return (
     <div className={classnames('the-footer-links', className)}>{children}</div>
   )
 }
 
-TheFooter.Row = function Row({ children, className }) {
+TheFooter.Row = function TheFooterRow({ children, className }) {
   return (
     <div className={classnames('the-footer-row', className)}>{children}</div>
   )
