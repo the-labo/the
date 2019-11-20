@@ -13,24 +13,28 @@ const TypesToIndex = [ENTITY, ID, REF]
  * @param schema
  * @returns {string[]}
  */
-function defineModelIndexes (schema) {
+function defineModelIndexes(schema) {
   const refColumnNames = Object.keys(schema).filter((key) =>
     TypesToIndex.includes(schema[key].type),
   )
-  const indexColumnNames = Object.keys(schema).filter(
-    (name) => schema[name].indexed,
-  ).sort((a, b) => {
-    const pa = schema[a].indexPriority || 0
-    const pb = schema[b].indexPriority || 0
-    return pb - pa
-  })
+  const indexColumnNames = Object.keys(schema)
+    .filter((name) => schema[name].indexed)
+    .sort((a, b) => {
+      const pa = schema[a].indexPriority || 0
+      const pb = schema[b].indexPriority || 0
+      return pb - pa
+    })
   return [
     ...refColumnNames.map((name) => ({
       fields: [name],
     })),
-    ...(indexColumnNames.length > 0 ? [{
-      fields: indexColumnNames,
-    }] : [])
+    ...(indexColumnNames.length > 0
+      ? [
+          {
+            fields: indexColumnNames,
+          },
+        ]
+      : []),
   ]
 }
 
