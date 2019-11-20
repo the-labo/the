@@ -12,7 +12,7 @@ const {
 const TheDriverSequelize = require('../lib/TheDriverSequelize')
 const resetMysqlDatabase = require('../misc/mysql/resetMysqlDatabase')
 
-describe('the-driver-sequelize', function() {
+describe('the-driver-sequelize', function () {
   this.timeout(8000)
   before(() => {})
 
@@ -563,6 +563,8 @@ describe('the-driver-sequelize', function() {
     driver.define('A', {
       x: { type: NUMBER },
       z: { maxLength: 32, type: STRING },
+      b: { type: NUMBER, indexed: true, indexPriority: 3 },
+      c: { type: NUMBER, indexed: true, indexPriority: 5 },
     })
     const a1 = await driver.create('A', { x: 1 })
     equal(a1.x, 1)
