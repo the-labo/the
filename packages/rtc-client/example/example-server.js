@@ -8,7 +8,7 @@ async function tryExample() {
     stun: {
       url: 'stun:stun.l.google.com:19302',
     },
-    topology: 'sfu',
+    topology: 'mesh',
     turn: {
       expiry: 86400,
       secret: 'xxxxxxxxxxxxxxxx',

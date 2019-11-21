@@ -1,6 +1,7 @@
 'use strict'
 
 const wrtc = require('wrtc')
+const { TheLock } = require('@the-/lock')
 const { get } = require('@the-/window')
 const ChannelNames = require('../constants/ChannelNames')
 const PeerEvents = require('../constants/PeerEvents')
@@ -23,6 +24,7 @@ function peerMix(Class) {
     constructor() {
       super(...arguments)
       this.peers = {}
+      this.peerLock = new TheLock()
     }
 
     createPeer({
@@ -150,11 +152,13 @@ function peerMix(Class) {
         stream,
       })
       this.setPeer(pid, peer)
-      await peer.setRemoteDescription(
-        new RTCSessionDescription(remoteDescription),
-      )
-      const localDesc = await peer.createAnswer()
-      await peer.setLocalDescription(localDesc)
+      await this.peerLock.acquire(pid, async () => {
+        await peer.setRemoteDescription(
+          new RTCSessionDescription(remoteDescription),
+        )
+        const localDesc = await peer.createAnswer()
+        await peer.setLocalDescription(localDesc)
+      })
 
       return peer
     }
@@ -236,12 +240,14 @@ function peerMix(Class) {
     }
 
     async setPeerICECandidate(pid, ice) {
-      const peer = this.getPeer(pid, { warnWhenNotFound: true })
-      if (!peer) {
-        return
-      }
+      await this.peerLock.acquire(pid, async () => {
+        const peer = this.getPeer(pid, { warnWhenNotFound: true })
+        if (!peer) {
+          return
+        }
 
-      await peer.addIceCandidate(new RTCIceCandidate(ice))
+        await peer.addIceCandidate(new RTCIceCandidate(ice))
+      })
     }
 
     async setPeerRemoteDesc(pid, desc) {

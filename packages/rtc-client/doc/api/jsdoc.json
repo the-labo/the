@@ -600,7 +600,7 @@
     "memberof": "module:@the-/rtc.constants.mixins",
     "meta": {
       "filename": "peerMix.js",
-      "lineno": 14,
+      "lineno": 15,
       "path": "lib/mixins"
     },
     "name": "peerMix",
