@@ -131,8 +131,7 @@ class TheRTCClient extends TheRTCClientBase {
         this.receiveDataChannel(channel, { from: remote })
       },
       onDisconnect: ({ peer }) => {
-        const client = this.getRoomClientFor(remote)
-        this.onRemoteGone && this.onRemoteGone({ ...client, peer })
+        this.onRemoteGone && this.onRemoteGone({ peer, rid: remote })
       },
       onStream: (stream, { peer }) => {
         const client = this.getRoomClientFor(remote)
