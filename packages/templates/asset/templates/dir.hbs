@@ -10,11 +10,5 @@
 'use strict'
 
 {{#each modules}}
-import {{#if varNameChanged}}{{varName}}{{else}}{{name}}{{/if}} from './{{path}}'
+export {{#if varNameChanged}}{{varName}}{{else}}{{name}}{{/if}} from './{{path}}'
 {{/each}}
-
-export {
-{{#each modules}}
-{{#if varNameChanged}}  {{varName}} as{{/if}}  {{name}},
-{{/each}}
-}
