@@ -36,12 +36,14 @@ class TheRTCClient extends TheRTCClientBase {
       mediaConstrains = { audio: true, video: true },
       onLocal,
       onRemote,
+      onRemoteGone,
       rid = uuid.v4(),
     } = options
     this.room = null
     this.media = this.createMedia(mediaConstrains)
     this.iceServers = null
     this.onRemote = onRemote
+    this.onRemoteGone = onRemoteGone
     this.onLocal = onLocal
     this._rid = rid
     this._info = info
@@ -128,6 +130,10 @@ class TheRTCClient extends TheRTCClientBase {
       onDataChannel: (channel) => {
         this.receiveDataChannel(channel, { from: remote })
       },
+      onDisconnect: ({ peer }) => {
+        const client = this.getRoomClientFor(remote)
+        this.onRemoteGone && this.onRemoteGone({ ...client, peer })
+      },
       onStream: (stream, { peer }) => {
         const client = this.getRoomClientFor(remote)
         this.onRemote && this.onRemote({ ...client, peer, stream })
@@ -213,6 +219,10 @@ class TheRTCClient extends TheRTCClientBase {
       iceServers,
       onDataChannel: (channel) => {
         this.receiveDataChannel(channel, { from: remote })
+      },
+      onDisconnect: ({ peer }) => {
+        const client = this.getRoomClientFor(remote)
+        this.onRemoteGone && this.onRemoteGone({ ...client, peer })
       },
       onIceCandidate: (ice) => {
         this.emitSocketEvent(IOEvents.PEER_ICE, {

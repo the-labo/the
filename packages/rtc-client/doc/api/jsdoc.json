@@ -13,7 +13,7 @@
     "name": "@the-/rtc-client",
     "order": 2,
     "typicalname": "rtcClient",
-    "version": "15.5.8"
+    "version": "15.5.11"
   },
   {
     "description": "ChannelNames",
@@ -22,7 +22,7 @@
     "longname": "module:@the-/rtc.constants.module:ChannelNames",
     "meta": {
       "filename": "ChannelNames.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/constants"
     },
     "name": "ChannelNames",
@@ -35,7 +35,7 @@
     "longname": "module:@the-/rtc.constants.module:IOEvents",
     "meta": {
       "filename": "IOEvents.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/constants"
     },
     "name": "IOEvents",
@@ -48,23 +48,11 @@
     "longname": "module:@the-/rtc.constants.module:PeerEvents",
     "meta": {
       "filename": "PeerEvents.js",
-      "lineno": 2,
+      "lineno": 5,
       "path": "lib/constants"
     },
     "name": "PeerEvents",
     "order": 15
-  },
-  {
-    "id": "module:PeerPurposes",
-    "kind": "module",
-    "longname": "module:PeerPurposes",
-    "meta": {
-      "filename": "PeerPurposes.js",
-      "lineno": 3,
-      "path": "lib/constants"
-    },
-    "name": "PeerPurposes",
-    "order": 16
   },
   {
     "description": "Audio enabled or not",
@@ -74,7 +62,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 54,
+      "lineno": 56,
       "path": "lib"
     },
     "name": "audioEnabled",
@@ -99,7 +87,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 62,
+      "lineno": 64,
       "path": "lib"
     },
     "name": "info",
@@ -124,7 +112,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 70,
+      "lineno": 72,
       "path": "lib"
     },
     "name": "rid",
@@ -149,7 +137,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 78,
+      "lineno": 80,
       "path": "lib"
     },
     "name": "state",
@@ -174,7 +162,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 93,
+      "lineno": 95,
       "path": "lib"
     },
     "name": "videoEnabled",
@@ -200,7 +188,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 155,
+      "lineno": 161,
       "path": "lib"
     },
     "name": "connect",
@@ -246,7 +234,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 200,
+      "lineno": 206,
       "path": "lib"
     },
     "name": "disconnect",
@@ -272,7 +260,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 314,
+      "lineno": 324,
       "path": "lib"
     },
     "name": "publish",
@@ -420,6 +408,20 @@
     },
     "name": "constants",
     "order": 13,
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/rtc.constants.PeerPurposes",
+    "kind": "namespace",
+    "longname": "module:@the-/rtc.constants.PeerPurposes",
+    "memberof": "module:@the-/rtc.constants",
+    "meta": {
+      "filename": "PeerPurposes.js",
+      "lineno": 4,
+      "path": "lib/constants"
+    },
+    "name": "PeerPurposes",
+    "order": 16,
     "scope": "static"
   },
   {
@@ -600,7 +602,7 @@
     "memberof": "module:@the-/rtc.constants.mixins",
     "meta": {
       "filename": "peerMix.js",
-      "lineno": 15,
+      "lineno": 16,
       "path": "lib/mixins"
     },
     "name": "peerMix",

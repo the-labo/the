@@ -15,8 +15,6 @@
 <dt><a href="#module_@the-/rtc.constants.module_PeerEvents">PeerEvents</a></dt>
 <dd><p>PeerEvents</p>
 </dd>
-<dt><a href="#module_PeerPurposes">PeerPurposes</a></dt>
-<dd></dd>
 </dl>
 
 <a name="module_@the-/rtc-client"></a>
@@ -24,7 +22,7 @@
 ## @the-/rtc-client
 Client for the-rtc
 
-**Version**: 15.5.8  
+**Version**: 15.5.11  
 **License**: MIT  
 
 * [@the-/rtc-client](#module_@the-/rtc-client)
@@ -68,6 +66,3 @@ IOEvents
 ## PeerEvents
 PeerEvents
 
-<a name="module_PeerPurposes"></a>
-
-## PeerPurposes

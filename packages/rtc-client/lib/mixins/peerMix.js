@@ -1,5 +1,6 @@
 'use strict'
 
+const asleep = require('asleep')
 const wrtc = require('wrtc')
 const { TheLock } = require('@the-/lock')
 const { get } = require('@the-/window')
@@ -30,6 +31,7 @@ function peerMix(Class) {
     createPeer({
       iceServers = [],
       onDataChannel,
+      onDisconnect,
       onIceCandidate,
       onStream,
       pid,
@@ -41,6 +43,14 @@ function peerMix(Class) {
       const handlers = {
         [PeerEvents.CONNECTION_STATE_CHANGE]: () => {
           debug('connectionState', peer.connectionState, this.rid)
+          switch (peer.connectionState) {
+            case 'disconnected': {
+              onDisconnect && onDisconnect({ peer })
+              break
+            }
+            default:
+              break
+          }
         },
         [PeerEvents.DATA_CHANNEL]: (e) => {
           const {
@@ -153,9 +163,7 @@ function peerMix(Class) {
       })
       this.setPeer(pid, peer)
       await this.peerLock.acquire(pid, async () => {
-        await peer.setRemoteDescription(
-          new RTCSessionDescription(remoteDescription),
-        )
+        this.setPeerRemoteDesc(pid, remoteDescription)
         const localDesc = await peer.createAnswer()
         await peer.setLocalDescription(localDesc)
       })
@@ -245,7 +253,11 @@ function peerMix(Class) {
         if (!peer) {
           return
         }
-
+        debug('setPeerICECandidate', pid, ice, {
+          signalingState: peer.signalingState,
+        })
+        // TODO ちょっと待たないとうまくつながらない。(原因はまだ分かっていない)
+        await asleep(300)
         await peer.addIceCandidate(new RTCIceCandidate(ice))
       })
     }

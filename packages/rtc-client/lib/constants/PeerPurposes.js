@@ -1,10 +1,10 @@
 'use strict'
 
-/**
- * @module PeerPurposes
- */
 module.exports = Object.freeze(
-  /** @lends PeerPurposes */
+  /**
+   * @memberof module:@the-/rtc.constants
+   * @namespace PeerPurposes
+   */
   {
     DEFAULT: 'purpose:default',
     SCREEN_SHARE: 'purpose:screen-share',

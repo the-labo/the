@@ -1,7 +1,7 @@
 {
   "name": "@the-/rtc-client",
   "description": "Client for the-rtc",
-  "version": "15.5.9",
+  "version": "15.5.11",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -55,7 +55,7 @@
   },
   "repository": "the-labo/the",
   "scripts": {
-    "build": "../../misc/scripts/pkgBuild.js",
+    "build": "../../misc/scripts/pkgBuild.js && npm run build:example",
     "build:example": "npx webpack-cli example/example-entrypoint.js -o example/example-bundle.js --mode=development --devtool=eval",
     "build:example:watch": "npx webpack example/example-entrypoint.js -o example/example-bundle.js --mode=development -w",
     "doc": "../../misc/scripts/pkgDoc.js",
