@@ -13,7 +13,7 @@
     "name": "@the-/templates",
     "order": 8,
     "typicalname": "templates",
-    "version": "16.1.9"
+    "version": "16.1.10"
   },
   {
     "description": "Define bud for bin scripts",

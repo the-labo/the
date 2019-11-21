@@ -13,7 +13,7 @@
     "name": "@the-/polyfill",
     "order": 3,
     "typicalname": "polyfill",
-    "version": "16.0.2"
+    "version": "16.0.4"
   },
   {
     "id": "module:@the-/polyfill.ThePolyfill",
