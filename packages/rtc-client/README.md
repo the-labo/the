@@ -91,6 +91,8 @@ Usage
   - [.promiseMix(Class)](./doc/api/api.md#module_@the-/rtc.constants.mixins.promiseMix)
   - [.serializeMix(Class)](./doc/api/api.md#module_@the-/rtc.constants.mixins.serializeMix)
   - [.socketMix(Class)](./doc/api/api.md#module_@the-/rtc.constants.mixins.socketMix)
+- module:@the-/rtc.constants
+  - [.PeerPurposes](./doc/api/api.md#module_@the-/rtc.constants.PeerPurposes)
 - TheRTCClient
   - [#connect(url,options)](./doc/api/api.md#TheRTCClient#connect)
   - [#disconnect()](./doc/api/api.md#TheRTCClient#disconnect)

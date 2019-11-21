@@ -147,6 +147,7 @@ function peerMix(Class) {
     async createAnswerPeer({
       iceServers,
       onDataChannel,
+      onDisconnect,
       onStream,
       pid,
       purpose,
@@ -156,6 +157,7 @@ function peerMix(Class) {
       const peer = this.createPeer({
         iceServers,
         onDataChannel,
+        onDisconnect,
         onStream,
         pid,
         purpose,
@@ -174,6 +176,7 @@ function peerMix(Class) {
     async createOfferPeer({
       iceServers,
       onDataChannel,
+      onDisconnect,
       onIceCandidate,
       onStream,
       pid,
@@ -182,6 +185,7 @@ function peerMix(Class) {
     } = {}) {
       const peer = this.createPeer({
         iceServers,
+        onDisconnect,
         onIceCandidate,
         onStream,
         pid,
