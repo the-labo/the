@@ -15,8 +15,3 @@ export {
   TheChart,
   TheChartStyle,
 }
-
-export default {
-  TheChart,
-  TheChartStyle,
-}

@@ -15,8 +15,3 @@ export {
   TheMain,
   TheMainStyle,
 }
-
-export default {
-  TheMain,
-  TheMainStyle,
-}

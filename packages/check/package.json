@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@the-/check-env": "^15.5.8",
-    "@the-/window": "^15.6.1",
+    "@the-/window": "^15.8.2",
     "bowser": "^2.7.0",
     "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.0"

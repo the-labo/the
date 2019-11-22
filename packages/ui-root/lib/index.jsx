@@ -15,8 +15,3 @@ export {
   TheRoot,
   TheRootStyle,
 }
-
-export default {
-  TheRoot,
-  TheRootStyle,
-}

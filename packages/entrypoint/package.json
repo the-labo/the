@@ -12,7 +12,7 @@
     "@the-/check": "^15.5.8",
     "@the-/ui-router": "^15.4.11",
     "@the-/url": "^15.4.9",
-    "@the-/window": "^15.6.1",
+    "@the-/window": "^15.8.2",
     "history": "^4.10.1"
   },
   "description": "Browser entrypoint for the-framework",

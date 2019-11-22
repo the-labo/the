@@ -15,8 +15,3 @@ export {
   TheQr,
   TheQrStyle,
 }
-
-export default {
-  TheQr,
-  TheQrStyle,
-}

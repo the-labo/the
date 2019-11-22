@@ -17,9 +17,3 @@ export {
   TheKeyboardButton,
   TheKeyboardStyle,
 }
-
-export default {
-  TheKeyboard,
-  TheKeyboardButton,
-  TheKeyboardStyle,
-}

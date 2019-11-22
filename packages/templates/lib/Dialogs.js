@@ -22,10 +22,15 @@ function Dialogs(config) {
     pattern = ['**/*Dialog.jsx'],
   } = config
 
-  const components = aglob
-    .sync(pattern, { cwd: dirname })
-    .map((filename) => path.basename(filename, '.jsx'))
-    .sort()
+  const componentFiles = aglob.sync(pattern, { cwd: dirname }).sort()
+
+  const components = componentFiles.map((filename) => {
+    const name = path.basename(filename, '.jsx')
+    return {
+      name,
+      requirePath: `./${path.join(from, filename)}`,
+    }
+  })
 
   ok(!!dirname, 'config.dirname is required')
   if (components.length === 0) {

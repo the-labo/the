@@ -3,10 +3,8 @@
 'use strict'
 
 import React from 'react'
-import {
-{{#each components}}  {{this}},
+{{#each components}}import {{name}} from '{{{requirePath}}}'
 {{/each}}
-} from '{{{from}}}'
 
 /**
  * Dialogs Component
@@ -16,7 +14,7 @@ import {
 const Dialogs = React.memo(() =>
   (
     <React.Fragment>
-{{#each components}}      <{{this}} />
+{{#each components}}      <{{name}} />
 {{/each}}
     </React.Fragment>
   )

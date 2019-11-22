@@ -17,9 +17,3 @@ export {
   TheToastGroup,
   TheToastStyle,
 }
-
-export default {
-  TheToast,
-  TheToastGroup,
-  TheToastStyle,
-}

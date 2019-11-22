@@ -15,8 +15,3 @@ export {
   TheImage,
   TheImageStyle,
 }
-
-export default {
-  TheImage,
-  TheImageStyle,
-}

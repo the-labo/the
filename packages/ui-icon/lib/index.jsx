@@ -15,8 +15,3 @@ export {
   TheIcon,
   TheIconStyle,
 }
-
-export default {
-  TheIcon,
-  TheIconStyle,
-}

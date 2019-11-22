@@ -4,16 +4,12 @@
  * @description Head of the-components
  * @module @the-/ui-head
  * @typicalname uiHead
- * @version 15.4.10
+ * @version 15.4.11
  */
 'use strict'
 
 import TheHead from './TheHead'
 
 export {
-  TheHead,
-}
-
-export default {
   TheHead,
 }

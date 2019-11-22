@@ -17,9 +17,3 @@ export {
   TheFormBinder,
   TheFormStyle,
 }
-
-export default {
-  TheForm,
-  TheFormBinder,
-  TheFormStyle,
-}

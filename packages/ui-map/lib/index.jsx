@@ -19,10 +19,3 @@ export {
   TheMapPositionInput,
   TheMapStyle,
 }
-
-export default {
-  TheMap,
-  TheMapMarker,
-  TheMapPositionInput,
-  TheMapStyle,
-}

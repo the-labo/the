@@ -23,7 +23,12 @@ class ExampleComponent extends React.Component {
         <TheKeyboardStyle />
         <div>{this.state.pressed.join('')}</div>
         <TheKeyboard
-          keys={[[1, 2, 3], [4, 5, 6], [7, 8, 9], [null, 0, null]]}
+          keys={[
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9],
+            [null, 0, null],
+          ]}
           onKeyPress={this.handleKeyPress}
         />
       </div>

@@ -15,8 +15,3 @@ export {
   TheCalendar,
   TheCalendarStyle,
 }
-
-export default {
-  TheCalendar,
-  TheCalendarStyle,
-}

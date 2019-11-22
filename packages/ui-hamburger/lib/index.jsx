@@ -15,8 +15,3 @@ export {
   TheHamburger,
   TheHamburgerStyle,
 }
-
-export default {
-  TheHamburger,
-  TheHamburgerStyle,
-}

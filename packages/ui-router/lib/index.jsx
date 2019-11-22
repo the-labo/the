@@ -15,8 +15,3 @@ export {
   TheRouter,
   TheRouterStyle,
 }
-
-export default {
-  TheRouter,
-  TheRouterStyle,
-}

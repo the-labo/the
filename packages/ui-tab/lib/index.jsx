@@ -19,10 +19,3 @@ export {
   TheTabContent,
   TheTabStyle,
 }
-
-export default {
-  TheTab,
-  TheTabButton,
-  TheTabContent,
-  TheTabStyle,
-}

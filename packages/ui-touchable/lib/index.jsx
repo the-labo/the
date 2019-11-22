@@ -13,7 +13,3 @@ import TheTouchable from './TheTouchable'
 export {
   TheTouchable,
 }
-
-export default {
-  TheTouchable,
-}

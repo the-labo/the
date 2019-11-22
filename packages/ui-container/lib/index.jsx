@@ -15,8 +15,3 @@ export {
   TheContainer,
   TheContainerStyle,
 }
-
-export default {
-  TheContainer,
-  TheContainerStyle,
-}

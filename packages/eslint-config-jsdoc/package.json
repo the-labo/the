@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@the-/const-code": "^15.5.1",
-    "globals": "^12.1.1"
+    "globals": "^12.3.0"
   },
   "engines": {
     "node": ">=10",

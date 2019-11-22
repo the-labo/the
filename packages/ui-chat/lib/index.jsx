@@ -21,11 +21,3 @@ export {
   TheChatTimeLine,
   TheChatTimeLineItem,
 }
-
-export default {
-  TheChat,
-  TheChatForm,
-  TheChatStyle,
-  TheChatTimeLine,
-  TheChatTimeLineItem,
-}

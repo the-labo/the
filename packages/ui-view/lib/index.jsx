@@ -15,8 +15,3 @@ export {
   TheView,
   TheViewStyle,
 }
-
-export default {
-  TheView,
-  TheViewStyle,
-}

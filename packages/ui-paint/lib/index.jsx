@@ -15,8 +15,3 @@ export {
   ThePaint,
   ThePaintStyle,
 }
-
-export default {
-  ThePaint,
-  ThePaintStyle,
-}

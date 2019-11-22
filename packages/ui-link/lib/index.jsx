@@ -15,8 +15,3 @@ export {
   TheLink,
   TheLinkStyle,
 }
-
-export default {
-  TheLink,
-  TheLinkStyle,
-}

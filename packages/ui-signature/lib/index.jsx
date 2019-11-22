@@ -17,9 +17,3 @@ export {
   TheSignatureInput,
   TheSignatureStyle,
 }
-
-export default {
-  TheSignature,
-  TheSignatureInput,
-  TheSignatureStyle,
-}

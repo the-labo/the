@@ -17,9 +17,3 @@ export {
   TheStepBar,
   TheStepStyle,
 }
-
-export default {
-  TheStep,
-  TheStepBar,
-  TheStepStyle,
-}

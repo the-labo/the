@@ -12,13 +12,13 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@babel/runtime": "^7.6.3",
+    "@babel/runtime": "^7.7.2",
     "@the-/ast": "^16.0.2",
     "@the-/util-file": "^15.5.2",
     "aglob": "^3.0.2",
     "asfs": "^2.2.3",
     "chalk": "^2.4.2",
-    "colorprint": "^6.0.4",
+    "colorprint": "^6.1.1",
     "debug": "^4.1.1",
     "json-pointer": "^0.6.0",
     "objnest": "^5.0.10",

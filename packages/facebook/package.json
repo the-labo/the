@@ -11,7 +11,7 @@
   "dependencies": {
     "abind": "^1.0.5",
     "arequest": "^3.0.2",
-    "qs": "^6.9.0"
+    "qs": "^6.9.1"
   },
   "description": "Facebook utility for the-framework",
   "devDependencies": {},

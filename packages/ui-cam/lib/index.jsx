@@ -17,9 +17,3 @@ export {
   TheCamInput,
   TheCamStyle,
 }
-
-export default {
-  TheCam,
-  TheCamInput,
-  TheCamStyle,
-}

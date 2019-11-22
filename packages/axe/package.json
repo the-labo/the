@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@the-/util-dom": "^15.5.2",
-    "@the-/window": "^15.6.1",
+    "@the-/window": "^15.8.2",
     "asleep": "^1.0.3"
   },
   "devDependencies": {},

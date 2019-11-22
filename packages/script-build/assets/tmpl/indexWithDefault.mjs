@@ -1,5 +1,5 @@
 /**
- * Index for ESModules
+ * @file Index for ESModules
  */
 'use strict'
 

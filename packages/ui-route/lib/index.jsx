@@ -17,9 +17,3 @@ export {
   TheRouteStack,
   TheRouteStyle,
 }
-
-export default {
-  TheRoute,
-  TheRouteStack,
-  TheRouteStyle,
-}

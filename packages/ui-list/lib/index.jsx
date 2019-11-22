@@ -19,10 +19,3 @@ export {
   TheListItem,
   TheListStyle,
 }
-
-export default {
-  TheList,
-  TheListGroup,
-  TheListItem,
-  TheListStyle,
-}

@@ -49,25 +49,3 @@ export {
   helpers,
   patterns,
 }
-
-export default {
-  TheInput,
-  TheInputCheckbox,
-  TheInputDate,
-  TheInputNumber,
-  TheInputPassword,
-  TheInputPinCode,
-  TheInputRadio,
-  TheInputRange,
-  TheInputSearch,
-  TheInputSelect,
-  TheInputSlider,
-  TheInputStyle,
-  TheInputTag,
-  TheInputText,
-  TheInputTextArea,
-  TheInputToggle,
-  TheInputUpload,
-  helpers,
-  patterns,
-}
