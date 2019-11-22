@@ -25,10 +25,11 @@ function Dialogs(config) {
   const componentFiles = aglob.sync(pattern, { cwd: dirname }).sort()
 
   const components = componentFiles.map((filename) => {
-    const name = path.basename(filename, '.jsx')
+    const basename = path.basename(filename, '.jsx')
+    const dirname = path.dirname(filename)
     return {
-      name,
-      requirePath: `./${path.join(from, filename)}`,
+      name: basename,
+      requirePath: path.join(from, dirname, basename),
     }
   })
 
