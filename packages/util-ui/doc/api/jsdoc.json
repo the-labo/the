@@ -11,9 +11,9 @@
       "path": "lib"
     },
     "name": "@the-/util-ui",
-    "order": 5,
+    "order": 6,
     "typicalname": "utilUi",
-    "version": "16.3.0"
+    "version": "16.3.1"
   },
   {
     "description": "Convert base64 data into blob\nmodule:@the-/util-ui",
@@ -96,6 +96,53 @@
     "scope": "static"
   },
   {
+    "id": "module:@the-/util-ui.bindEventListeners",
+    "kind": "function",
+    "longname": "module:@the-/util-ui.bindEventListeners",
+    "memberof": "module:@the-/util-ui",
+    "meta": {
+      "filename": "bindEventListeners.js",
+      "lineno": 3,
+      "path": "lib"
+    },
+    "name": "bindEventListeners",
+    "order": 2,
+    "params": [
+      {
+        "name": "elm"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "name": "handlers"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "description": "Options settings",
+        "name": "opt"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "- Unbind function"
+      }
+    ],
+    "scope": "static"
+  },
+  {
     "description": "Extract changed props",
     "id": "module:@the-/util-ui.changedProps",
     "kind": "function",
@@ -107,7 +154,7 @@
       "path": "lib"
     },
     "name": "changedProps",
-    "order": 2,
+    "order": 3,
     "params": [
       {
         "type": {
@@ -150,7 +197,7 @@
       "path": "lib"
     },
     "name": "eventHandlersFor",
-    "order": 3,
+    "order": 4,
     "params": [
       {
         "type": {
@@ -206,7 +253,7 @@
       "path": "lib"
     },
     "name": "htmlAttributesFor",
-    "order": 4,
+    "order": 5,
     "params": [
       {
         "type": {
@@ -262,7 +309,7 @@
       "path": "lib"
     },
     "name": "isKeyCode",
-    "order": 6,
+    "order": 7,
     "params": [
       {
         "type": {
@@ -307,7 +354,7 @@
       "path": "lib"
     },
     "name": "isMultiTouchEvent",
-    "order": 7,
+    "order": 8,
     "params": [
       {
         "type": {
@@ -341,7 +388,7 @@
       "path": "lib"
     },
     "name": "isServerSide",
-    "order": 8,
+    "order": 9,
     "returns": [
       {
         "type": {
@@ -366,7 +413,7 @@
       "path": "lib"
     },
     "name": "isVideoSrc",
-    "order": 9,
+    "order": 10,
     "params": [
       {
         "type": {
@@ -402,7 +449,7 @@
       "path": "lib"
     },
     "name": "newId",
-    "order": 10,
+    "order": 11,
     "params": [
       {
         "type": {
@@ -450,7 +497,7 @@
       "path": "lib"
     },
     "name": "readFileAsDataURL",
-    "order": 11,
+    "order": 12,
     "params": [
       {
         "type": {
@@ -486,7 +533,7 @@
       "path": "lib"
     },
     "name": "scrollToElement",
-    "order": 12,
+    "order": 13,
     "params": [
       {
         "type": {
@@ -522,7 +569,7 @@
       "path": "lib"
     },
     "name": "stopTouchScrolling",
-    "order": 13,
+    "order": 14,
     "params": [
       {
         "type": {
@@ -559,7 +606,7 @@
       "path": "lib"
     },
     "name": "toggleBodyClass",
-    "order": 14,
+    "order": 15,
     "params": [
       {
         "type": {

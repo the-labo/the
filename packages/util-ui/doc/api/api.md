@@ -22,11 +22,12 @@ module:@the-/util-ui</p>
 ## @the-/util-ui
 Utility for the-components
 
-**Version**: 16.3.0  
+**Version**: 16.3.1  
 **License**: MIT  
 
 * [@the-/util-ui](#module_@the-/util-ui)
     * [.asStyleData(scopeSelector, data)](#module_@the-/util-ui.asStyleData) ⇒ <code>Object</code>
+    * [.bindEventListeners(elm, handlers, [opt])](#module_@the-/util-ui.bindEventListeners) ⇒ <code>function</code>
     * [.changedProps(prevProps, props)](#module_@the-/util-ui.changedProps) ⇒ <code>Object</code>
     * [.eventHandlersFor(props, [options])](#module_@the-/util-ui.eventHandlersFor) ⇒ <code>Object</code>
     * [.htmlAttributesFor(props, [options])](#module_@the-/util-ui.htmlAttributesFor) ⇒ <code>Object</code>
@@ -51,6 +52,18 @@ Mark  : style data
 | --- | --- | --- |
 | scopeSelector | <code>string</code> | Selector which wraps data |
 | data | <code>Object</code> | Style data |
+
+<a name="module_@the-/util-ui.bindEventListeners"></a>
+
+### utilUi.bindEventListeners(elm, handlers, [opt]) ⇒ <code>function</code>
+**Kind**: static method of [<code>@the-/util-ui</code>](#module_@the-/util-ui)  
+**Returns**: <code>function</code> - - Unbind function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| elm |  |  |
+| handlers | <code>Object</code> |  |
+| [opt] | <code>Object</code> | Options settings |
 
 <a name="module_@the-/util-ui.changedProps"></a>
 

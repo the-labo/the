@@ -1,5 +1,13 @@
 'use strict'
 
+/**
+ * @memberof module:@the-/util-ui
+ * @function bindEventListeners
+ * @param elm
+ * @param {Object} handlers
+ * @param {Object} [opt] - Options settings
+ * @returns {function()} - Unbind function
+ */
 function bindEventListeners(elm, handlers, opt) {
   for (const [name, handler] of Object.entries(handlers)) {
     elm.addEventListener(name, handler, opt)
