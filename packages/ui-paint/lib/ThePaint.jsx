@@ -13,7 +13,6 @@ import { get } from '@the-/window'
 import DrawConfigs from './constants/DrawConfigs'
 import DrawingMethods from './constants/DrawingMethods'
 import Drawer from './helpers/Drawer'
-import ThePaintStyle from './ThePaintStyle'
 
 /**
  * Hand write painting
@@ -212,8 +211,6 @@ const ThePaint = (props) => {
     </div>
   )
 }
-
-ThePaint.Style = ThePaintStyle
 
 ThePaint.propTypes = {
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),

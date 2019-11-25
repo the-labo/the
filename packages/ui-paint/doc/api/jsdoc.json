@@ -12,7 +12,7 @@
     "name": "@the-/ui-paint",
     "order": 0,
     "typicalname": "uiPaint",
-    "version": "15.5.25"
+    "version": "15.6.0"
   },
   {
     "description": "Hand write painting",
@@ -21,7 +21,7 @@
     "longname": "ThePaint",
     "meta": {
       "filename": "ThePaint.jsx",
-      "lineno": 21,
+      "lineno": 20,
       "path": "lib"
     },
     "name": "ThePaint",
@@ -83,7 +83,7 @@
     "memberof": "ThePaint.propTypes",
     "meta": {
       "filename": "ThePaint.jsx",
-      "lineno": 221,
+      "lineno": 218,
       "path": "lib"
     },
     "name": "method",
@@ -98,7 +98,7 @@
     "memberof": "ThePaint.propTypes",
     "meta": {
       "filename": "ThePaint.jsx",
-      "lineno": 225,
+      "lineno": 222,
       "path": "lib"
     },
     "name": "onDrawer",

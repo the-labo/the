@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 import TheMenuItem from './TheMenuItem'
-import TheMenuStyle from './TheMenuStyle'
 
 /**
  * Menu of the-components
@@ -27,7 +26,6 @@ const TheMenu = (props) => {
   )
 }
 
-TheMenu.Style = TheMenuStyle
 TheMenu.Item = TheMenuItem
 
 TheMenu.propTypes = {

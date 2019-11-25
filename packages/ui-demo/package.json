@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-demo",
   "description": "Live demo of the-components",
-  "version": "15.4.12",
+  "version": "15.5.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -16,13 +16,13 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/ui-body": "^15.4.11",
+    "@the-/ui-body": "^15.5.0",
     "@the-/ui-container": "^15.4.11",
     "@the-/ui-head": "^15.4.10",
     "@the-/ui-header": "^15.4.14",
     "@the-/ui-html": "^15.4.10",
-    "@the-/ui-icon": "^15.4.11",
-    "@the-/ui-link": "^15.4.11",
+    "@the-/ui-icon": "^15.4.13",
+    "@the-/ui-link": "^15.5.0",
     "@the-/ui-main": "^15.4.12",
     "@the-/ui-root": "^15.4.13",
     "@the-/ui-router": "^15.4.11",
@@ -33,8 +33,8 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2"
   },
   "engines": {

@@ -123,7 +123,7 @@ class TheDropDownMenu extends React.Component {
   }
 }
 
-TheDropDownMenu.Button = function Button(props) {
+TheDropDownMenu.Button = function TheDropDownMenuButton(props) {
   const { children, className, icon = TheDropDownMenu.UP_ICON, onClick } = props
   return (
     <a
