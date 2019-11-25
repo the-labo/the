@@ -12,7 +12,7 @@
     "name": "@the-/ui-theme-style",
     "order": 0,
     "typicalname": "uiThemeStyle",
-    "version": "15.4.10"
+    "version": "16.0.0"
   },
   {
     "description": "Theme Style of the-components",
@@ -21,7 +21,7 @@
     "longname": "TheThemeStyle",
     "meta": {
       "filename": "TheThemeStyle.jsx",
-      "lineno": 48,
+      "lineno": 46,
       "path": "lib"
     },
     "name": "TheThemeStyle",
@@ -37,7 +37,7 @@
     "memberof": "TheThemeStyle.propTypes",
     "meta": {
       "filename": "TheThemeStyle.jsx",
-      "lineno": 58,
+      "lineno": 56,
       "path": "lib"
     },
     "name": "options",
@@ -52,7 +52,7 @@
     "memberof": "TheThemeStyle.propTypes",
     "meta": {
       "filename": "TheThemeStyle.jsx",
-      "lineno": 61,
+      "lineno": 59,
       "path": "lib"
     },
     "name": "prefix",

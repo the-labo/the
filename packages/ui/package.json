@@ -23,7 +23,7 @@
     "@the-/ui-footer": "^15.4.14",
     "@the-/ui-form": "^15.4.13",
     "@the-/ui-frame": "^15.4.10",
-    "@the-/ui-hamburger": "^15.4.14",
+    "@the-/ui-hamburger": "^15.4.15",
     "@the-/ui-head": "^15.4.10",
     "@the-/ui-header": "^15.4.16",
     "@the-/ui-html": "^15.5.1",
@@ -52,7 +52,7 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui-demo": "^15.5.1",
+    "@the-/ui-demo": "^15.5.3",
     "fmtjson": "^4.0.6",
     "injectmock": "^2.0.0",
     "react": "^16.12.0",

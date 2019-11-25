@@ -5,4 +5,4 @@
 ## @the-/ui
 React components of THE framework
 
-**Version**: 16.0.0-beta.2  
+**Version**: 16.0.1  

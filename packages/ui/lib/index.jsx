@@ -2,7 +2,7 @@
 /**
  * React components of THE framework
  * @module @the-/ui
- * @version 16.0.0-beta.2
+ * @version 16.0.1
  */
 
 'use strict'
@@ -17,7 +17,6 @@ export { default as TheCaught } from '@the-/ui-caught/shim/esm/TheCaught'
 export { default as TheCaughtCatcher } from '@the-/ui-caught/shim/esm/TheCaughtCatcher'
 export { default as TheCondition } from '@the-/ui-condition/shim/esm/TheCondition'
 export { default as TheContainer } from '@the-/ui-container/shim/esm/TheContainer'
-export { default as TheCycle } from '@the-/ui-cycle/shim/esm/TheCycle'
 export { default as TheDialog } from '@the-/ui-dialog/shim/esm/TheDialog'
 export { default as TheOkDialog } from '@the-/ui-dialog/shim/esm/TheOkDialog'
 export { default as TheYesNoDialog } from '@the-/ui-dialog/shim/esm/TheYesNoDialog'
@@ -44,8 +43,6 @@ export { default as TheInputSelect } from '@the-/ui-input/shim/esm/TheInputSelec
 export { default as TheInputPassword } from '@the-/ui-input/shim/esm/TheInputPassword'
 export { default as TheInputToggle } from '@the-/ui-input/shim/esm/TheInputToggle'
 export { default as TheLink } from '@the-/ui-link/shim/esm/TheLink'
-export { default as TheList } from '@the-/ui-list/shim/esm/TheList'
-export { default as TheListGroup } from '@the-/ui-list/shim/esm/TheListGroup'
 export { default as TheMain } from '@the-/ui-main/shim/esm/TheMain'
 export { default as TheMenu } from '@the-/ui-menu/shim/esm/TheMenu'
 export { default as TheMenuItem } from '@the-/ui-menu/shim/esm/TheMenuItem'

@@ -26,11 +26,9 @@ import TheImageStyle from '@the-/ui-image/shim/TheImageStyle'
 import TheInfoStyle from '@the-/ui-info/shim/TheInfoStyle'
 import TheInputStyle from '@the-/ui-input/shim/TheInputStyle'
 import TheLinkStyle from '@the-/ui-link/shim/TheLinkStyle'
-import TheListStyle from '@the-/ui-list/shim/TheListStyle'
 import TheMainStyle from '@the-/ui-main/shim/TheMainStyle'
 import TheMenuStyle from '@the-/ui-menu/shim/TheMenuStyle'
 import ThePagerStyle from '@the-/ui-pager/shim/ThePagerStyle'
-import TheRepeatableStyle from '@the-/ui-repeatable/shim/TheRepeatableStyle'
 import TheRootStyle from '@the-/ui-root/shim/TheRootStyle'
 import TheRouteStyle from '@the-/ui-route/shim/TheRouteStyle'
 import TheRouterStyle from '@the-/ui-router/shim/TheRouterStyle'
@@ -89,11 +87,9 @@ TheThemeStyle.data = (options) => {
       TheInfoStyle,
       TheInputStyle,
       TheLinkStyle,
-      TheListStyle,
       TheMainStyle,
       TheMenuStyle,
       ThePagerStyle,
-      TheRepeatableStyle,
       TheRootStyle,
       TheRouteStyle,
       TheRouterStyle,
@@ -136,11 +132,9 @@ TheThemeStyle.componentPaths = [
   '@the-/ui-info/shim/TheInfoStyle',
   '@the-/ui-input/shim/TheInputStyle',
   '@the-/ui-link/shim/TheLinkStyle',
-  '@the-/ui-list/shim/TheListStyle',
   '@the-/ui-main/shim/TheMainStyle',
   '@the-/ui-menu/shim/TheMenuStyle',
   '@the-/ui-pager/shim/ThePagerStyle',
-  '@the-/ui-repeatable/shim/TheRepeatableStyle',
   '@the-/ui-root/shim/TheRootStyle',
   '@the-/ui-route/shim/TheRouteStyle',
   '@the-/ui-router/shim/TheRouterStyle',
