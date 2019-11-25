@@ -132,13 +132,10 @@ class ThePS {
   async canKill(pid) {
     switch (this.killPolicy) {
       case 'ask': {
-        return new Promise((resolve) =>
-          yesno(
-            `[the-ps] There is another process (pid: ${pid}) exists. Do you want to kill it? [y/N]`,
-            false,
-            (res) => resolve(res),
-          ),
-        )
+        return yesno({
+          defaultValue: false,
+          question: `[the-ps] There is another process (pid: ${pid}) exists. Do you want to kill it? [y/N]`,
+        })
       }
       case 'force':
         return true
