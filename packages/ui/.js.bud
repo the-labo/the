@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+
+/**
+ * Bud file for index.jsx
+ */
+'use strict'
+
+const data = {
+  components: Object.entries(require('./components.json'))
+    .map(([pkgName, componentNames]) => ({
+      componentNames: componentNames.filter((n) => !n.endsWith('Style')),
+      pkgName,
+    }))
+    .filter(({ componentNames }) => componentNames.length > 0),
+  pkg: require('./package.json'),
+}
+module.exports = [
+  {
+    data: { ...data, cjs: true },
+    force: true,
+    mode: '444',
+    path: 'cjs.js',
+  },
+  {
+    data,
+    force: true,
+    mode: '444',
+    path: 'browser.js',
+  },
+]
+if (!module.parent) {
+  require('coz').render(__filename)
+}

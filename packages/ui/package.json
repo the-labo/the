@@ -1,12 +1,13 @@
 {
   "name": "@the-/ui",
   "description": "React components of THE framework",
-  "version": "16.0.3",
+  "version": "16.0.5",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
     "url": "http://okunishitaka.com"
   },
+  "browser": "./browser.js",
   "bugs": {
     "url": "https://github.com/the-labo/the#issues"
   },
@@ -69,7 +70,7 @@
     "the"
   ],
   "license": "MIT",
-  "main": "shim",
+  "main": "./cjs.js",
   "peerDependencies": {
     "react": ">=15",
     "react-dom": ">=15",
