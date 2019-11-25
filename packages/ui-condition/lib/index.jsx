@@ -4,7 +4,7 @@
  * @description Conditional renderer for the-components
  * @module @the-/ui-condition
  * @typicalname uiCondition
- * @version 15.4.11
+ * @version 15.5.0
  */
 'use strict'
 

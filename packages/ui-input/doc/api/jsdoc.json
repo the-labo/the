@@ -24,7 +24,7 @@
     "name": "@the-/ui-input",
     "order": 1,
     "typicalname": "uiInput",
-    "version": "15.6.0"
+    "version": "15.7.0"
   },
   {
     "description": "Text Input",
@@ -33,7 +33,7 @@
     "longname": "TheInputText",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 21,
+      "lineno": 20,
       "path": "lib"
     },
     "name": "TheInputText",
@@ -899,7 +899,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 406,
+      "lineno": 405,
       "path": "lib"
     },
     "name": "error",
@@ -914,7 +914,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 408,
+      "lineno": 407,
       "path": "lib"
     },
     "name": "matcher",
@@ -929,7 +929,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 410,
+      "lineno": 409,
       "path": "lib"
     },
     "name": "name",
@@ -944,7 +944,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 412,
+      "lineno": 411,
       "path": "lib"
     },
     "name": "onDown",
@@ -959,7 +959,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 414,
+      "lineno": 413,
       "path": "lib"
     },
     "name": "onEnter",
@@ -974,7 +974,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 416,
+      "lineno": 415,
       "path": "lib"
     },
     "name": "onLeft",
@@ -989,7 +989,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 418,
+      "lineno": 417,
       "path": "lib"
     },
     "name": "onRight",
@@ -1004,7 +1004,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 420,
+      "lineno": 419,
       "path": "lib"
     },
     "name": "onUp",
@@ -1019,7 +1019,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 422,
+      "lineno": 421,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -1034,7 +1034,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 424,
+      "lineno": 423,
       "path": "lib"
     },
     "name": "options",
@@ -1049,7 +1049,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 429,
+      "lineno": 428,
       "path": "lib"
     },
     "name": "parser",
@@ -1064,7 +1064,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 431,
+      "lineno": 430,
       "path": "lib"
     },
     "name": "pattern",
@@ -1079,7 +1079,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 433,
+      "lineno": 432,
       "path": "lib"
     },
     "name": "patternWarning",
@@ -1094,7 +1094,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 435,
+      "lineno": 434,
       "path": "lib"
     },
     "name": "prefix",
@@ -1109,7 +1109,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 437,
+      "lineno": 436,
       "path": "lib"
     },
     "name": "suffix",
@@ -1124,7 +1124,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 439,
+      "lineno": 438,
       "path": "lib"
     },
     "name": "tabIndex",
@@ -1139,7 +1139,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 441,
+      "lineno": 440,
       "path": "lib"
     },
     "name": "type",
@@ -1154,7 +1154,7 @@
     "memberof": "TheInputText.propTypes",
     "meta": {
       "filename": "TheInputText.jsx",
-      "lineno": 443,
+      "lineno": 442,
       "path": "lib"
     },
     "name": "value",

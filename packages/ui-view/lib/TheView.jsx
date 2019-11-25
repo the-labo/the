@@ -13,7 +13,6 @@ import {
   newId,
   toggleBodyClass,
 } from '@the-/util-ui'
-import TheViewStyle from './TheViewStyle'
 
 /**
  * View of the-components
@@ -164,8 +163,6 @@ TheView.Message = function Message(props) {
 
 TheView.BACK_ICON = 'fa fa-angle-left'
 TheView.DROPDOWN_ICON = 'fa fa-ellipsis-v'
-
-TheView.Style = TheViewStyle
 
 TheView.propTypes = {
   /** Show spinner */

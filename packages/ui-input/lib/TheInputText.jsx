@@ -12,7 +12,6 @@ import {
   renderWarningMessage,
 } from './helpers'
 import TheInputTextOptions from './partials/TheInputTextOptions'
-import * as patterns from './patterns'
 
 /**
  * Text Input
@@ -463,7 +462,5 @@ TheInputText.defaultProps = {
 }
 
 TheInputText.displayName = 'TheInputText'
-
-Object.assign(TheInputText, patterns)
 
 export default TheInputText

@@ -3,7 +3,6 @@
 import c from 'classnames'
 import React from 'react'
 import { htmlAttributesFor } from '@the-/util-ui'
-import TheIconStyle from './TheIconStyle'
 
 /**
  * Icon of the-components
@@ -44,8 +43,6 @@ TheIcon.SPIN_ICON = TheIcon.SpinIconThemes.A
 TheIcon.CdnLink = ({ url = TheIcon.CDN_URL }) => (
   <link href={url} rel='stylesheet' />
 )
-
-TheIcon.Style = TheIconStyle
 
 TheIcon.propTypes = {}
 

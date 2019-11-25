@@ -6,7 +6,6 @@ import React from 'react'
 import { TheButton } from '@the-/ui-button'
 import { TheContainer } from '@the-/ui-container'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
-import TheBarStyle from './TheBarStyle'
 
 /**
  * Bar of the-component
@@ -52,8 +51,6 @@ const TheActionBar = (props) => {
     </div>
   )
 }
-
-TheActionBar.Style = TheBarStyle
 
 TheActionBar.propTypes = {
   /** Button texts  */

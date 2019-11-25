@@ -2,7 +2,6 @@
 
 import PropTypes from 'prop-types'
 import React from 'react'
-import TheConditionStyle from './TheConditionStyle'
 
 /**
  * Conditional renderer for the-components
@@ -54,8 +53,6 @@ class TheCondition extends React.Component {
     return true
   }
 }
-
-TheCondition.Style = TheConditionStyle
 
 TheCondition.propTypes = {
   allOf: PropTypes.arrayOf(PropTypes.bool),

@@ -7,7 +7,6 @@ import { NavLink } from 'react-router-dom'
 import { TheIcon } from '@the-/ui-icon'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 import isExternalLink from './helpers/isExternalLink'
-import TheLinkStyle from './TheLinkStyle'
 
 /**
  * Link of the-components
@@ -68,8 +67,6 @@ TheLink.Link = function Link(props) {
 
   return <NavLink {...props}>{children}</NavLink>
 }
-
-TheLink.Style = TheLinkStyle
 
 TheLink.propTypes = {
   /** Class name for active state */

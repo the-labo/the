@@ -12,7 +12,7 @@
     "name": "@the-/ui-link",
     "order": 0,
     "typicalname": "uiLink",
-    "version": "15.4.11"
+    "version": "15.5.0"
   },
   {
     "description": "Link of the-components",
@@ -21,7 +21,7 @@
     "longname": "TheLink",
     "meta": {
       "filename": "TheLink.jsx",
-      "lineno": 15,
+      "lineno": 14,
       "path": "lib"
     },
     "name": "TheLink",
@@ -52,7 +52,7 @@
     "memberof": "TheLink.propTypes",
     "meta": {
       "filename": "TheLink.jsx",
-      "lineno": 76,
+      "lineno": 73,
       "path": "lib"
     },
     "name": "activeClassName",
@@ -67,7 +67,7 @@
     "memberof": "TheLink.propTypes",
     "meta": {
       "filename": "TheLink.jsx",
-      "lineno": 78,
+      "lineno": 75,
       "path": "lib"
     },
     "name": "activeStyle",
@@ -82,7 +82,7 @@
     "memberof": "TheLink.propTypes",
     "meta": {
       "filename": "TheLink.jsx",
-      "lineno": 80,
+      "lineno": 77,
       "path": "lib"
     },
     "name": "color",
@@ -97,7 +97,7 @@
     "memberof": "TheLink.propTypes",
     "meta": {
       "filename": "TheLink.jsx",
-      "lineno": 82,
+      "lineno": 79,
       "path": "lib"
     },
     "name": "exact",
@@ -112,7 +112,7 @@
     "memberof": "TheLink.propTypes",
     "meta": {
       "filename": "TheLink.jsx",
-      "lineno": 84,
+      "lineno": 81,
       "path": "lib"
     },
     "name": "icon",
@@ -127,7 +127,7 @@
     "memberof": "TheLink.propTypes",
     "meta": {
       "filename": "TheLink.jsx",
-      "lineno": 86,
+      "lineno": 83,
       "path": "lib"
     },
     "name": "strict",
@@ -142,7 +142,7 @@
     "memberof": "TheLink.propTypes",
     "meta": {
       "filename": "TheLink.jsx",
-      "lineno": 88,
+      "lineno": 85,
       "path": "lib"
     },
     "name": "to",

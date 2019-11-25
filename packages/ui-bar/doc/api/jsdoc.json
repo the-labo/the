@@ -12,7 +12,7 @@
     "name": "@the-/ui-bar",
     "order": 0,
     "typicalname": "uiBar",
-    "version": "15.4.11"
+    "version": "15.5.0"
   },
   {
     "description": "Bar of the-component",
@@ -21,7 +21,7 @@
     "longname": "TheActionBar",
     "meta": {
       "filename": "TheActionBar.jsx",
-      "lineno": 14,
+      "lineno": 13,
       "path": "lib"
     },
     "name": "TheActionBar",
@@ -67,7 +67,7 @@
     "memberof": "TheActionBar.propTypes",
     "meta": {
       "filename": "TheActionBar.jsx",
-      "lineno": 60,
+      "lineno": 57,
       "path": "lib"
     },
     "name": "buttons",
@@ -82,7 +82,7 @@
     "memberof": "TheActionBar.propTypes",
     "meta": {
       "filename": "TheActionBar.jsx",
-      "lineno": 62,
+      "lineno": 59,
       "path": "lib"
     },
     "name": "danger",
@@ -97,7 +97,7 @@
     "memberof": "TheActionBar.propTypes",
     "meta": {
       "filename": "TheActionBar.jsx",
-      "lineno": 64,
+      "lineno": 61,
       "path": "lib"
     },
     "name": "handlers",
@@ -112,7 +112,7 @@
     "memberof": "TheActionBar.propTypes",
     "meta": {
       "filename": "TheActionBar.jsx",
-      "lineno": 66,
+      "lineno": 63,
       "path": "lib"
     },
     "name": "hidden",
@@ -127,7 +127,7 @@
     "memberof": "TheActionBar.propTypes",
     "meta": {
       "filename": "TheActionBar.jsx",
-      "lineno": 68,
+      "lineno": 65,
       "path": "lib"
     },
     "name": "icons",
@@ -142,7 +142,7 @@
     "memberof": "TheActionBar.propTypes",
     "meta": {
       "filename": "TheActionBar.jsx",
-      "lineno": 70,
+      "lineno": 67,
       "path": "lib"
     },
     "name": "lead",

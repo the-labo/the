@@ -4,7 +4,7 @@
  * @description Input of the-components
  * @module @the-/ui-input
  * @typicalname uiInput
- * @version 15.6.0
+ * @version 15.7.0
  */
 'use strict'
 
@@ -26,7 +26,6 @@ import TheInputTextArea from './TheInputTextArea'
 import TheInputToggle from './TheInputToggle'
 import TheInputUpload from './TheInputUpload'
 import helpers from './helpers'
-import patterns from './patterns'
 
 export {
   TheInput,
@@ -47,5 +46,4 @@ export {
   TheInputToggle,
   TheInputUpload,
   helpers,
-  patterns,
 }

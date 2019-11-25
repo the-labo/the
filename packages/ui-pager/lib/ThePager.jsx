@@ -63,7 +63,7 @@ const ThePager = React.memo((props) => {
   )
 })
 
-ThePager.ByCounts = function ByCounts({
+ThePager.ByCounts = function ThePagerByCounts({
   className,
   counts,
   onChange,
@@ -97,7 +97,7 @@ ThePager.ByCounts = function ByCounts({
   )
 }
 
-ThePager.Counts = function Counts({ counts }) {
+ThePager.Counts = function ThePagerCounts({ counts }) {
   if (!counts) {
     return null
   }
@@ -124,7 +124,7 @@ ThePager.Counts = function Counts({ counts }) {
   )
 }
 
-ThePager.Item = function Item({
+ThePager.Item = function ThePagerItem({
   children,
   className,
   disabled,
@@ -156,7 +156,7 @@ ThePager.Item = function Item({
   )
 }
 
-ThePager.Row = function Row({ children, className }) {
+ThePager.Row = function ThePagerRow({ children, className }) {
   return <div className={c('the-pager-row', className)}>{children}</div>
 }
 

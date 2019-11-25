@@ -3,7 +3,6 @@
 import classnames from 'classnames'
 import React from 'react'
 import { htmlAttributesFor } from '@the-/util-ui'
-import TheBodyStyle from './TheBodyStyle'
 
 /**
  * Body of the-components
@@ -20,8 +19,6 @@ const TheBody = (props) => {
     </body>
   )
 }
-
-TheBody.Style = TheBodyStyle
 
 TheBody.propTypes = {}
 

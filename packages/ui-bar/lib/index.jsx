@@ -4,7 +4,7 @@
  * @description Bar of the-components
  * @module @the-/ui-bar
  * @typicalname uiBar
- * @version 15.4.11
+ * @version 15.5.0
  */
 'use strict'
 
@@ -13,12 +13,6 @@ import TheBar from './TheBar'
 import TheBarStyle from './TheBarStyle'
 
 export {
-  TheActionBar,
-  TheBar,
-  TheBarStyle,
-}
-
-export default {
   TheActionBar,
   TheBar,
   TheBarStyle,
