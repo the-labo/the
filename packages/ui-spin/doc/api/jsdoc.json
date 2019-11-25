@@ -12,7 +12,7 @@
     "name": "@the-/ui-spin",
     "order": 0,
     "typicalname": "uiSpin",
-    "version": "15.4.11"
+    "version": "15.5.0"
   },
   {
     "description": "Spin of the-components",
@@ -21,7 +21,7 @@
     "longname": "TheSpin",
     "meta": {
       "filename": "TheSpin.jsx",
-      "lineno": 28,
+      "lineno": 27,
       "path": "lib"
     },
     "name": "TheSpin",
@@ -52,7 +52,7 @@
     "memberof": "TheSpin.propTypes",
     "meta": {
       "filename": "TheSpin.jsx",
-      "lineno": 52,
+      "lineno": 50,
       "path": "lib"
     },
     "name": "cover",
@@ -67,7 +67,7 @@
     "memberof": "TheSpin.propTypes",
     "meta": {
       "filename": "TheSpin.jsx",
-      "lineno": 55,
+      "lineno": 53,
       "path": "lib"
     },
     "name": "size",
@@ -82,7 +82,7 @@
     "memberof": "TheSpin.propTypes",
     "meta": {
       "filename": "TheSpin.jsx",
-      "lineno": 57,
+      "lineno": 55,
       "path": "lib"
     },
     "name": "theme",

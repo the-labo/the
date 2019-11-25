@@ -3,7 +3,6 @@
 import c from 'classnames'
 import React from 'react'
 import { htmlAttributesFor } from '@the-/util-ui'
-import TheContainerStyle from './TheContainerStyle'
 
 /**
  * Container of the-components
@@ -22,8 +21,6 @@ function TheContainer(props) {
     </div>
   )
 }
-
-TheContainer.Style = TheContainerStyle
 
 TheContainer.propTypes = {}
 

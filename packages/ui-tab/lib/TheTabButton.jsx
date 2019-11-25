@@ -1,13 +1,18 @@
 'use strict'
 
-import { clone } from 'asobj'
 import c from 'classnames'
 import React from 'react'
 import { TheButton } from '@the-/ui-button'
 
 export default function TheTabButton(props) {
-  const { active, children, className, disableTouchAction, movingRate } = props
-  const buttonProps = clone(props, { without: ['className', 'active'] })
+  const {
+    active,
+    children,
+    className,
+    disableTouchAction,
+    movingRate,
+    ...buttonProps
+  } = props
   return (
     <TheButton
       {...buttonProps}

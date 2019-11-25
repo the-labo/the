@@ -4,7 +4,7 @@
  * @description Spin of the-components
  * @module @the-/ui-spin
  * @typicalname uiSpin
- * @version 15.4.11
+ * @version 15.5.0
  */
 'use strict'
 

@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-demo",
   "description": "Live demo of the-components",
-  "version": "15.5.0",
+  "version": "15.5.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -17,14 +17,14 @@
   },
   "dependencies": {
     "@the-/ui-body": "^15.5.0",
-    "@the-/ui-container": "^15.4.11",
+    "@the-/ui-container": "^15.4.12",
     "@the-/ui-head": "^15.4.10",
-    "@the-/ui-header": "^15.4.14",
-    "@the-/ui-html": "^15.4.10",
+    "@the-/ui-header": "^15.4.15",
+    "@the-/ui-html": "^15.5.0",
     "@the-/ui-icon": "^15.4.13",
     "@the-/ui-link": "^15.5.0",
-    "@the-/ui-main": "^15.4.12",
-    "@the-/ui-root": "^15.4.13",
+    "@the-/ui-main": "^15.4.14",
+    "@the-/ui-root": "^15.4.15",
     "@the-/ui-router": "^15.4.11",
     "@the-/ui-style": "^15.4.12",
     "ape-highlighting": "^3.1.0",

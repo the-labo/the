@@ -8,7 +8,7 @@
 </dd>
 </dl>
 
-## Classes
+## Constants
 
 <dl>
 <dt><a href="#TheHtml">TheHtml</a></dt>
@@ -29,25 +29,13 @@
 ## @the-/ui-html
 Html of the-components
 
-**Version**: 15.4.10  
+**Version**: 15.5.1  
 <a name="TheHtml"></a>
 
 ## TheHtml
 Html of the-components
 
-**Kind**: global class  
-<a name="TheHtml.styles"></a>
-
-### TheHtml.styles([options&#x3D;]) ⇒ <code>Object</code>
-Define style
-
-**Kind**: static method of [<code>TheHtml</code>](#TheHtml)  
-**Returns**: <code>Object</code> - Style object  
-
-| Param | Description |
-| --- | --- |
-| [options=] | options - Optional settings |
-
+**Kind**: global constant  
 <a name="TheHtmlStyle"></a>
 
 ## TheHtmlStyle()

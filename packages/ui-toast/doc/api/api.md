@@ -32,7 +32,7 @@
 ## @the-/ui-toast
 Toast of the-components
 
-**Version**: 15.4.11  
+**Version**: 15.4.13  
 <a name="TheToast"></a>
 
 ## TheToast

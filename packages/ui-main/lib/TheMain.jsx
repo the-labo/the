@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { TheSpin } from '@the-/ui-spin'
 import { htmlAttributesFor } from '@the-/util-ui'
-import TheMainStyle from './TheMainStyle'
 
 /**
  * Main for the-components
@@ -25,8 +24,6 @@ const TheMain = (props) => {
     </main>
   )
 }
-
-TheMain.Style = TheMainStyle
 
 TheMain.propTypes = {
   /** Show spinner */

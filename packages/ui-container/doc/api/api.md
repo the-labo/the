@@ -24,7 +24,7 @@
 ## @the-/ui-container
 Container of the-components
 
-**Version**: 15.4.11  
+**Version**: 15.4.12  
 <a name="TheContainer"></a>
 
 ## TheContainer(props) ⇒ <code>\*</code>

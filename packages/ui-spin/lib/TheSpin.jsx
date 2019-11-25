@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 import React, { useMemo } from 'react'
 import { TheIcon } from '@the-/ui-icon'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
-import TheSpinStyle from './TheSpinStyle'
 
 const SpinnerSizes = [
   'medium',
@@ -43,7 +42,6 @@ const TheSpin = (props) => {
   )
 }
 
-TheSpin.Style = TheSpinStyle
 TheSpin.Sizes = SpinnerSizes
 
 TheSpin.propTypes = {

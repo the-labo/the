@@ -7,7 +7,6 @@ import { TheButton, TheButtonGroup } from '@the-/ui-button'
 import { TheCondition } from '@the-/ui-condition'
 import { TheSpin } from '@the-/ui-spin'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
-import TheStepStyle from './TheStepStyle'
 
 /**
  * Steps for the-component
@@ -171,8 +170,6 @@ TheStep.Content = function TheStepContent({
     </div>
   )
 }
-
-TheStep.Style = TheStepStyle
 
 TheStep.BACK_ICON = 'fas fa-caret-left'
 TheStep.NEXT_ICON = 'fas fa-caret-right'

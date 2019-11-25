@@ -7,35 +7,11 @@ import React from 'react'
 /**
  * Html of the-components
  */
-class TheHtml extends React.PureComponent {
-  /**
-   * Define style
-   * @param [options={}] options - Optional settings
-   * @returns {Object} Style object
-   */
-  static styles(options = {}) {
-    return {
-      root: {},
-    }
-  }
-
-  render() {
-    const {
-      props: { children, className, id, lang, styles },
-    } = this
-
-    return (
-      <html
-        className={classnames('the-html', className)}
-        id={id}
-        lang={lang}
-        style={styles.root}
-      >
-        {children}
-      </html>
-    )
-  }
-}
+const TheHtml = React.memo(({ children, className, id, lang }) => (
+  <html className={classnames('the-html', className)} id={id} lang={lang}>
+    {children}
+  </html>
+))
 
 TheHtml.propTypes = {
   /** CSS class name */
@@ -52,7 +28,6 @@ TheHtml.defaultProps = {
   className: null,
   id: 'the-html',
   lang: null,
-  styles: TheHtml.styles({}),
 }
 
 TheHtml.displayName = 'TheHtml'

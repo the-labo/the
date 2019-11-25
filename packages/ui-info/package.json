@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-info",
   "description": "Info of the-component",
-  "version": "15.4.11",
+  "version": "15.4.12",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,17 +11,17 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/const-ui": "^15.4.5",
-    "@the-/ui-style": "^15.4.12",
-    "@the-/util-ui": "^16.0.5",
+    "@the-/const-ui": "^15.5.0",
+    "@the-/ui-style": "^16.0.0",
+    "@the-/util-ui": "^16.3.1",
     "classnames": "^2.2.6",
     "prop-types": "^15.6.2"
   },
   "devDependencies": {
     "@the-/ui-demo": "file:../ui-demo",
     "coz": "^7.0.19",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2"
   },
   "engines": {

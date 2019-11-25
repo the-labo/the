@@ -12,7 +12,7 @@
     "name": "@the-/ui-menu",
     "order": 0,
     "typicalname": "uiMenu",
-    "version": "15.4.17"
+    "version": "15.4.18"
   },
   {
     "description": "Drop down menu",
@@ -35,7 +35,7 @@
     "longname": "TheMenu",
     "meta": {
       "filename": "TheMenu.jsx",
-      "lineno": 13,
+      "lineno": 12,
       "path": "lib"
     },
     "name": "TheMenu",
@@ -141,7 +141,7 @@
     "memberof": "TheMenu.propTypes",
     "meta": {
       "filename": "TheMenu.jsx",
-      "lineno": 35,
+      "lineno": 33,
       "path": "lib"
     },
     "name": "grid",

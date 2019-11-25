@@ -3,7 +3,6 @@
 import c from 'classnames'
 import React from 'react'
 import { htmlAttributesFor } from '@the-/util-ui'
-import TheRootStyle from './TheRootStyle'
 
 /**
  * Root element of the-components
@@ -16,8 +15,6 @@ const TheRoot = ({ children, className, ...otherProps }) => (
     {children}
   </div>
 )
-
-TheRoot.Style = TheRootStyle
 
 TheRoot.propTypes = {}
 

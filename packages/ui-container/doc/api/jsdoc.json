@@ -12,7 +12,7 @@
     "name": "@the-/ui-container",
     "order": 0,
     "typicalname": "uiContainer",
-    "version": "15.4.11"
+    "version": "15.4.12"
   },
   {
     "description": "Container of the-components",
@@ -21,7 +21,7 @@
     "longname": "TheContainer",
     "meta": {
       "filename": "TheContainer.jsx",
-      "lineno": 13,
+      "lineno": 12,
       "path": "lib"
     },
     "name": "TheContainer",

@@ -21,7 +21,7 @@
 ## @the-/ui-demo
 Live demo of the-components
 
-**Version**: 15.5.0  
+**Version**: 15.5.1  
 <a name="TheComponentDemo"></a>
 
 ## TheComponentDemo

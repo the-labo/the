@@ -12,12 +12,12 @@
     "name": "@the-/ui-html",
     "order": 0,
     "typicalname": "uiHtml",
-    "version": "15.4.10"
+    "version": "15.5.1"
   },
   {
     "description": "Html of the-components",
     "id": "TheHtml",
-    "kind": "class",
+    "kind": "constant",
     "longname": "TheHtml",
     "meta": {
       "filename": "TheHtml.jsx",
@@ -26,6 +26,7 @@
     },
     "name": "TheHtml",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
@@ -39,7 +40,7 @@
       "path": "lib"
     },
     "name": "TheHtmlStyle",
-    "order": 7,
+    "order": 6,
     "params": [],
     "scope": "global"
   },
@@ -51,11 +52,11 @@
     "memberof": "TheHtml.propTypes",
     "meta": {
       "filename": "TheHtml.jsx",
-      "lineno": 42,
+      "lineno": 18,
       "path": "lib"
     },
     "name": "className",
-    "order": 3,
+    "order": 2,
     "scope": "static"
   },
   {
@@ -66,11 +67,11 @@
     "memberof": "TheHtml.propTypes",
     "meta": {
       "filename": "TheHtml.jsx",
-      "lineno": 44,
+      "lineno": 20,
       "path": "lib"
     },
     "name": "id",
-    "order": 4,
+    "order": 3,
     "scope": "static"
   },
   {
@@ -81,11 +82,11 @@
     "memberof": "TheHtml.propTypes",
     "meta": {
       "filename": "TheHtml.jsx",
-      "lineno": 46,
+      "lineno": 22,
       "path": "lib"
     },
     "name": "lang",
-    "order": 5,
+    "order": 4,
     "scope": "static"
   },
   {
@@ -96,11 +97,11 @@
     "memberof": "TheHtml.propTypes",
     "meta": {
       "filename": "TheHtml.jsx",
-      "lineno": 48,
+      "lineno": 24,
       "path": "lib"
     },
     "name": "styles",
-    "order": 6,
+    "order": 5,
     "scope": "static"
   },
   {
@@ -115,39 +116,7 @@
       "path": "lib"
     },
     "name": "options",
-    "order": 8,
-    "scope": "static"
-  },
-  {
-    "description": "Define style",
-    "id": "TheHtml.styles",
-    "kind": "function",
-    "longname": "TheHtml.styles",
-    "memberof": "TheHtml",
-    "meta": {
-      "filename": "TheHtml.jsx",
-      "lineno": 16,
-      "path": "lib"
-    },
-    "name": "styles",
-    "order": 2,
-    "params": [
-      {
-        "optional": true,
-        "description": "options - Optional settings",
-        "name": "options="
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "description": "Style object"
-      }
-    ],
+    "order": 7,
     "scope": "static"
   }
 ]
