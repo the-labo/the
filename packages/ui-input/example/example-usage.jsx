@@ -30,15 +30,12 @@ class ExampleComponent extends React.PureComponent {
 
     const {
       Checkbox,
-      Date,
       Number,
       Password,
       PinCode,
       Radio,
-      Range,
       Search,
       Select,
-      Slider,
       Tag,
       Text,
       TextArea,
@@ -300,32 +297,6 @@ class ExampleComponent extends React.PureComponent {
         </div>
 
         <hr />
-        <h3>Slider</h3>
-
-        <div>
-          <Slider
-            max={100}
-            min={0}
-            name='value06'
-            onUpdate={onUpdate}
-            step={1}
-            value={values.value06 || 10}
-          />
-        </div>
-
-        <hr />
-        <h3>Range</h3>
-
-        <div>
-          <Range
-            max={100}
-            min={0}
-            name='value07'
-            onUpdate={onUpdate}
-            step={1}
-            value={values.value07 || [10, 80]}
-          />
-        </div>
 
         <hr />
         <h3>Upload</h3>
@@ -351,35 +322,6 @@ class ExampleComponent extends React.PureComponent {
         />
 
         <hr />
-
-        <h3>Date</h3>
-        <Date
-          minDate='2018-03-09'
-          name='value-date-01'
-          onUpdate={onUpdate}
-          placeholder='date only'
-          value={values['value-date-01'] || ''}
-        />
-
-        <Date
-          minDate='2018-03-09'
-          name='value-date-01'
-          onUpdate={onUpdate}
-          placeholder='date and time'
-          timeEnabled
-          value={values['value-date-01']}
-        />
-
-        <Date
-          dateFormat='H:i'
-          minDate='2018-03-09'
-          name='value-date-01-time'
-          noCalendar
-          onUpdate={onUpdate}
-          placeholder='time only'
-          timeEnabled
-          value={values['value-date-01-time']}
-        />
 
         <br />
 

@@ -5,5 +5,5 @@
 ## @the-/check-env
 Check utility for the-framework
 
-**Version**: 15.5.8  
+**Version**: 15.6.0  
 **License**: MIT  

@@ -2,7 +2,7 @@
 /**
  * React components of THE framework
  * @module @the-/ui
- * @version 16.0.5
+ * @version 16.1.0
  */
 
 'use strict'
@@ -35,6 +35,8 @@ export { default as TheInfo } from '@the-/ui-info/shim/esm/TheInfo'
 export { default as TheInput } from '@the-/ui-input/shim/esm/TheInput'
 export { default as TheInputText } from '@the-/ui-input/shim/esm/TheInputText'
 export { default as TheInputTextArea } from '@the-/ui-input/shim/esm/TheInputTextArea'
+export { default as TheInputTag } from '@the-/ui-input/shim/esm/TheInputTag'
+export { default as TheInputUpload } from '@the-/ui-input/shim/esm/TheInputUpload'
 export { default as TheInputSearch } from '@the-/ui-input/shim/esm/TheInputSearch'
 export { default as TheInputRadio } from '@the-/ui-input/shim/esm/TheInputRadio'
 export { default as TheInputCheckbox } from '@the-/ui-input/shim/esm/TheInputCheckbox'

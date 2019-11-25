@@ -6,15 +6,12 @@ import React, { useCallback } from 'react'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 import { renderErrorMessage } from './helpers'
 import TheInputCheckbox from './TheInputCheckbox'
-import TheInputDate from './TheInputDate'
 import TheInputNumber from './TheInputNumber'
 import TheInputPassword from './TheInputPassword'
 import TheInputPinCode from './TheInputPinCode'
 import TheInputRadio from './TheInputRadio'
-import TheInputRange from './TheInputRange'
 import TheInputSearch from './TheInputSearch'
 import TheInputSelect from './TheInputSelect'
-import TheInputSlider from './TheInputSlider'
 import TheInputTag from './TheInputTag'
 import TheInputText from './TheInputText'
 import TheInputTextArea from './TheInputTextArea'
@@ -100,11 +97,8 @@ TheInput.Radio = TheInputRadio
 TheInput.Checkbox = TheInputCheckbox
 TheInput.Select = TheInputSelect
 TheInput.Toggle = TheInputToggle
-TheInput.Slider = TheInputSlider
-TheInput.Range = TheInputRange
 TheInput.Upload = TheInputUpload
 TheInput.Tag = TheInputTag
-TheInput.Date = TheInputDate
 TheInput.Number = TheInputNumber
 
 TheInput.propTypes = {

@@ -3,7 +3,7 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React, { useCallback, useMemo } from 'react'
-import { unlessProduction } from '@the-/check'
+import { unlessProduction } from '@the-/check-env'
 import { TheIcon } from '@the-/ui-icon'
 import { eventHandlersFor, htmlAttributesFor, newId } from '@the-/util-ui'
 import { normalizeOptions, renderErrorMessage } from './helpers'

@@ -1,0 +1,57 @@
+{
+  "name": "@the-/ui-date",
+  "description": "Date ui",
+  "version": "16.1.1",
+  "author": {
+    "email": "okunishinishi@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "bugs": {
+    "url": "https://github.com/the-labo/the#issues"
+  },
+  "dependencies": {
+    "@the-/const-ui": "^15.5.0",
+    "@the-/ui-condition": "^15.5.0",
+    "@the-/ui-style": "^16.0.0",
+    "@the-/util-ui": "^16.3.1",
+    "@the-/window": "^15.8.2",
+    "asobj": "^3.0.1",
+    "classnames": "^2.2.6",
+    "flatpickr": "^4.6.3",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@the-/ui-demo": "^15.5.3",
+    "@the-/ui-router": "^15.4.11",
+    "coz": "^7.0.19",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "homepage": "https://github.com/the-labo/the/tree/master/packages/ui-input#readme",
+  "keywords": [
+    "the",
+    "ui"
+  ],
+  "license": "MIT",
+  "main": "shim",
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "the-labo/the",
+  "scripts": {
+    "build": "../../misc/scripts/pkgBuild.js",
+    "doc": "../../misc/scripts/pkgDoc.js",
+    "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
+    "test": "../../misc/scripts/pkgTest.js"
+  }
+}

@@ -4,21 +4,18 @@
  * @description Input of the-components
  * @module @the-/ui-input
  * @typicalname uiInput
- * @version 15.7.0
+ * @version 16.0.1
  */
 'use strict'
 
 import TheInput from './TheInput'
 import TheInputCheckbox from './TheInputCheckbox'
-import TheInputDate from './TheInputDate'
 import TheInputNumber from './TheInputNumber'
 import TheInputPassword from './TheInputPassword'
 import TheInputPinCode from './TheInputPinCode'
 import TheInputRadio from './TheInputRadio'
-import TheInputRange from './TheInputRange'
 import TheInputSearch from './TheInputSearch'
 import TheInputSelect from './TheInputSelect'
-import TheInputSlider from './TheInputSlider'
 import TheInputStyle from './TheInputStyle'
 import TheInputTag from './TheInputTag'
 import TheInputText from './TheInputText'
@@ -30,15 +27,12 @@ import helpers from './helpers'
 export {
   TheInput,
   TheInputCheckbox,
-  TheInputDate,
   TheInputNumber,
   TheInputPassword,
   TheInputPinCode,
   TheInputRadio,
-  TheInputRange,
   TheInputSearch,
   TheInputSelect,
-  TheInputSlider,
   TheInputStyle,
   TheInputTag,
   TheInputText,

@@ -7,15 +7,12 @@ import { ThemeValues } from '@the-/const-ui'
 import { TheStyle } from '@the-/ui-style'
 import { asStyleData } from '@the-/util-ui'
 import CheckBoxStyleData from './styleData/CheckBoxStyleData'
-import DateStyleData from './styleData/DateStyleData'
 import NumberStyleData from './styleData/NumberStyleData'
 import PasswordStyleData from './styleData/PasswordStyleData'
 import PinCodeStyleData from './styleData/PinCodeStyleData'
 import RadioStyleData from './styleData/RadioStyleData'
-import RangeStyleData from './styleData/RangeStyleData'
 import SearchStyleData from './styleData/SearchStyleData'
 import SelectStyleData from './styleData/SelectStyleData'
-import SliderStyleData from './styleData/SliderStyleData'
 import TagStyleData from './styleData/TagStyleData'
 import TextareaStyleData from './styleData/TextareaStyleData'
 import TextStyleData from './styleData/TextStyleData'
@@ -50,9 +47,7 @@ TheInputStyle.defaultProps = {
   options: {},
 }
 
-TheInputStyle.externals = [
-  'https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css',
-]
+TheInputStyle.externals = []
 TheInputStyle.data = (options) => {
   const {
     activeOpacity = ThemeValues.activeOpacity,
@@ -62,16 +57,12 @@ TheInputStyle.data = (options) => {
     contentWidth = ThemeValues.contentWidth,
     dominantColor = ThemeValues.dominantColor,
     errorColor = ThemeValues.errorColor,
-    handlePaddingRate = -20,
     hoverOpacity = ThemeValues.hoverOpacity,
     inputBorderColor = ThemeValues.inputBorderColor,
     inputShadowColor = ThemeValues.inputShadowColor,
     lightBorderColor = ThemeValues.lightBorderColor,
     lightTextColor = ThemeValues.lightTextColor,
     offLabelBackgroundColor = '#FAFAFA',
-    sliderBarHeight = 4,
-    sliderHandleSize = 24,
-    sliderPadding = 6,
     tappableHeight = ThemeValues.tappableHeight,
     toggleHandleSize = 24,
     warnColor = ThemeValues.warnColor,
@@ -208,20 +199,6 @@ TheInputStyle.data = (options) => {
         border: `1px solid ${errorColor}`,
       },
     }),
-    SliderStyleData({
-      dominantColor,
-      handlePaddingRate,
-      sliderBarHeight,
-      sliderHandleSize,
-      sliderPadding,
-    }),
-    RangeStyleData({
-      dominantColor,
-      handlePaddingRate,
-      sliderBarHeight,
-      sliderHandleSize,
-      sliderPadding,
-    }),
     NumberStyleData({
       dominantColor,
     }),
@@ -231,12 +208,6 @@ TheInputStyle.data = (options) => {
     }),
     TagStyleData({
       backgroundColor,
-      dominantColor,
-      inputBorderColor,
-      inputShadowColor,
-    }),
-    DateStyleData({
-      contentWidth,
       dominantColor,
       inputBorderColor,
       inputShadowColor,

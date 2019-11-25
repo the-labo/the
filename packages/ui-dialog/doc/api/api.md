@@ -33,7 +33,7 @@
 ## @the-/ui-dialog
 Dialog for the-components
 
-**Version**: 15.4.17  
+**Version**: 16.0.1  
 <a name="TheConfirmDialog"></a>
 
 ## TheConfirmDialog()

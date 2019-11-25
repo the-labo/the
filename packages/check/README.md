@@ -100,8 +100,6 @@ tryExample().catch((err) => console.error(err))
   - [.isFirefox(options&#x3D;)](./doc/api/api.md#module_@the-/check.isFirefox)
   - [.isiOS(options&#x3D;)](./doc/api/api.md#module_@the-/check.isiOS)
   - [.isMacOS()](./doc/api/api.md#module_@the-/check.isMacOS)
-  - [.isProduction()](./doc/api/api.md#module_@the-/check.isProduction)
-  - [.unlessProduction(handler)](./doc/api/api.md#module_@the-/check.unlessProduction)
 
 See [API Guide](./doc/api/api.md) for more detail
 

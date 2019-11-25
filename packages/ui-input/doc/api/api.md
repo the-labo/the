@@ -30,14 +30,8 @@
 <dt><a href="#TheInputRadio">TheInputRadio</a></dt>
 <dd><p>Radio input of the-components</p>
 </dd>
-<dt><a href="#TheInputRange">TheInputRange</a></dt>
-<dd><p>Range Input</p>
-</dd>
 <dt><a href="#TheInputSelect">TheInputSelect</a></dt>
 <dd><p>Select Input</p>
-</dd>
-<dt><a href="#TheInputSlider">TheInputSlider</a></dt>
-<dd><p>Slider Input</p>
 </dd>
 <dt><a href="#TheInputTextArea">TheInputTextArea</a></dt>
 <dd><p>TextArea Input</p>
@@ -53,8 +47,6 @@
 <dt><a href="#TheInputStyle">TheInputStyle()</a></dt>
 <dd><p>Style for TheInput</p>
 </dd>
-<dt><a href="#TheInputDateStyleData">TheInputDateStyleData()</a></dt>
-<dd></dd>
 <dt><a href="#TheInputUploadStyleData">TheInputUploadStyleData()</a></dt>
 <dd></dd>
 </dl>
@@ -67,7 +59,7 @@
 ## @the-/ui-input
 Input of the-components
 
-**Version**: 15.7.0  
+**Version**: 16.0.1  
 <a name="TheInputText"></a>
 
 ## TheInputText
@@ -92,22 +84,10 @@ Checkbox input of the-components
 Radio input of the-components
 
 **Kind**: global constant  
-<a name="TheInputRange"></a>
-
-## TheInputRange
-Range Input
-
-**Kind**: global constant  
 <a name="TheInputSelect"></a>
 
 ## TheInputSelect
 Select Input
-
-**Kind**: global constant  
-<a name="TheInputSlider"></a>
-
-## TheInputSlider
-Slider Input
 
 **Kind**: global constant  
 <a name="TheInputTextArea"></a>
@@ -127,10 +107,6 @@ Toggle input of the-components
 ## TheInputStyle()
 Style for TheInput
 
-**Kind**: global function  
-<a name="TheInputDateStyleData"></a>
-
-## TheInputDateStyleData()
 **Kind**: global function  
 <a name="TheInputUploadStyleData"></a>
 

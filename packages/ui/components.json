@@ -81,6 +81,8 @@
     "TheInput",
     "TheInputText",
     "TheInputTextArea",
+    "TheInputTag",
+    "TheInputUpload",
     "TheInputSearch",
     "TheInputRadio",
     "TheInputCheckbox",

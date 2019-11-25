@@ -24,7 +24,7 @@
     "name": "@the-/ui-input",
     "order": 1,
     "typicalname": "uiInput",
-    "version": "15.7.0"
+    "version": "16.0.1"
   },
   {
     "description": "Text Input",
@@ -37,7 +37,7 @@
       "path": "lib"
     },
     "name": "TheInputText",
-    "order": 55,
+    "order": 39,
     "scope": "global"
   },
   {
@@ -47,7 +47,7 @@
     "longname": "TheInput",
     "meta": {
       "filename": "TheInput.jsx",
-      "lineno": 27,
+      "lineno": 24,
       "path": "lib"
     },
     "name": "TheInput",
@@ -86,21 +86,6 @@
     "scope": "global"
   },
   {
-    "description": "Range Input",
-    "id": "TheInputRange",
-    "kind": "constant",
-    "longname": "TheInputRange",
-    "meta": {
-      "filename": "TheInputRange.jsx",
-      "lineno": 19,
-      "path": "lib"
-    },
-    "name": "TheInputRange",
-    "order": 25,
-    "params": [],
-    "scope": "global"
-  },
-  {
     "description": "Select Input",
     "id": "TheInputSelect",
     "kind": "constant",
@@ -111,22 +96,7 @@
       "path": "lib"
     },
     "name": "TheInputSelect",
-    "order": 33,
-    "params": [],
-    "scope": "global"
-  },
-  {
-    "description": "Slider Input",
-    "id": "TheInputSlider",
-    "kind": "constant",
-    "longname": "TheInputSlider",
-    "meta": {
-      "filename": "TheInputSlider.jsx",
-      "lineno": 18,
-      "path": "lib"
-    },
-    "name": "TheInputSlider",
-    "order": 45,
+    "order": 25,
     "params": [],
     "scope": "global"
   },
@@ -141,7 +111,7 @@
       "path": "lib"
     },
     "name": "TheInputTextArea",
-    "order": 74,
+    "order": 58,
     "params": [],
     "scope": "global"
   },
@@ -156,7 +126,7 @@
       "path": "lib"
     },
     "name": "TheInputToggle",
-    "order": 83,
+    "order": 67,
     "params": [],
     "scope": "global"
   },
@@ -167,25 +137,12 @@
     "longname": "TheInputStyle",
     "meta": {
       "filename": "TheInputStyle.jsx",
-      "lineno": 26,
+      "lineno": 23,
       "path": "lib"
     },
     "name": "TheInputStyle",
-    "order": 53,
+    "order": 37,
     "params": [],
-    "scope": "global"
-  },
-  {
-    "id": "TheInputDateStyleData",
-    "kind": "function",
-    "longname": "TheInputDateStyleData",
-    "meta": {
-      "filename": "DateStyleData.jsx",
-      "lineno": 1,
-      "path": "lib/styleData"
-    },
-    "name": "TheInputDateStyleData",
-    "order": 100,
     "scope": "global"
   },
   {
@@ -198,7 +155,7 @@
       "path": "lib/styleData"
     },
     "name": "TheInputUploadStyleData",
-    "order": 101,
+    "order": 84,
     "scope": "global"
   },
   {
@@ -209,7 +166,7 @@
     "memberof": "TheInput.propTypes",
     "meta": {
       "filename": "TheInput.jsx",
-      "lineno": 112,
+      "lineno": 106,
       "path": "lib"
     },
     "name": "error",
@@ -224,7 +181,7 @@
     "memberof": "TheInput.propTypes",
     "meta": {
       "filename": "TheInput.jsx",
-      "lineno": 114,
+      "lineno": 108,
       "path": "lib"
     },
     "name": "name",
@@ -239,7 +196,7 @@
     "memberof": "TheInput.propTypes",
     "meta": {
       "filename": "TheInput.jsx",
-      "lineno": 116,
+      "lineno": 110,
       "path": "lib"
     },
     "name": "onUpdate",
@@ -254,7 +211,7 @@
     "memberof": "TheInput.propTypes",
     "meta": {
       "filename": "TheInput.jsx",
-      "lineno": 119,
+      "lineno": 113,
       "path": "lib"
     },
     "name": "value",
@@ -502,111 +459,6 @@
     "scope": "static"
   },
   {
-    "description": "Hides min/max value text",
-    "id": "TheInputRange.propTypes.barOnly",
-    "kind": "member",
-    "longname": "TheInputRange.propTypes.barOnly",
-    "memberof": "TheInputRange.propTypes",
-    "meta": {
-      "filename": "TheInputRange.jsx",
-      "lineno": 277,
-      "path": "lib"
-    },
-    "name": "barOnly",
-    "order": 26,
-    "scope": "static"
-  },
-  {
-    "description": "Input error",
-    "id": "TheInputRange.propTypes.error",
-    "kind": "member",
-    "longname": "TheInputRange.propTypes.error",
-    "memberof": "TheInputRange.propTypes",
-    "meta": {
-      "filename": "TheInputRange.jsx",
-      "lineno": 279,
-      "path": "lib"
-    },
-    "name": "error",
-    "order": 27,
-    "scope": "static"
-  },
-  {
-    "description": "Max value",
-    "id": "TheInputRange.propTypes.max",
-    "kind": "member",
-    "longname": "TheInputRange.propTypes.max",
-    "memberof": "TheInputRange.propTypes",
-    "meta": {
-      "filename": "TheInputRange.jsx",
-      "lineno": 281,
-      "path": "lib"
-    },
-    "name": "max",
-    "order": 28,
-    "scope": "static"
-  },
-  {
-    "description": "Min value",
-    "id": "TheInputRange.propTypes.min",
-    "kind": "member",
-    "longname": "TheInputRange.propTypes.min",
-    "memberof": "TheInputRange.propTypes",
-    "meta": {
-      "filename": "TheInputRange.jsx",
-      "lineno": 283,
-      "path": "lib"
-    },
-    "name": "min",
-    "order": 29,
-    "scope": "static"
-  },
-  {
-    "description": "Handle for update",
-    "id": "TheInputRange.propTypes.onUpdate",
-    "kind": "member",
-    "longname": "TheInputRange.propTypes.onUpdate",
-    "memberof": "TheInputRange.propTypes",
-    "meta": {
-      "filename": "TheInputRange.jsx",
-      "lineno": 286,
-      "path": "lib"
-    },
-    "name": "onUpdate",
-    "order": 30,
-    "scope": "static"
-  },
-  {
-    "description": "Value step",
-    "id": "TheInputRange.propTypes.step",
-    "kind": "member",
-    "longname": "TheInputRange.propTypes.step",
-    "memberof": "TheInputRange.propTypes",
-    "meta": {
-      "filename": "TheInputRange.jsx",
-      "lineno": 288,
-      "path": "lib"
-    },
-    "name": "step",
-    "order": 31,
-    "scope": "static"
-  },
-  {
-    "description": "Value of input",
-    "id": "TheInputRange.propTypes.value",
-    "kind": "member",
-    "longname": "TheInputRange.propTypes.value",
-    "memberof": "TheInputRange.propTypes",
-    "meta": {
-      "filename": "TheInputRange.jsx",
-      "lineno": 290,
-      "path": "lib"
-    },
-    "name": "value",
-    "order": 32,
-    "scope": "static"
-  },
-  {
     "description": "Unselecatable values",
     "id": "TheInputSelect.propTypes.disabledValues",
     "kind": "member",
@@ -618,7 +470,7 @@
       "path": "lib"
     },
     "name": "disabledValues",
-    "order": 34,
+    "order": 26,
     "scope": "static"
   },
   {
@@ -633,7 +485,7 @@
       "path": "lib"
     },
     "name": "error",
-    "order": 35,
+    "order": 27,
     "scope": "static"
   },
   {
@@ -648,7 +500,7 @@
       "path": "lib"
     },
     "name": "name",
-    "order": 36,
+    "order": 28,
     "scope": "static"
   },
   {
@@ -663,7 +515,7 @@
       "path": "lib"
     },
     "name": "nullable",
-    "order": 37,
+    "order": 29,
     "scope": "static"
   },
   {
@@ -678,7 +530,7 @@
       "path": "lib"
     },
     "name": "nullText",
-    "order": 38,
+    "order": 30,
     "scope": "static"
   },
   {
@@ -693,7 +545,7 @@
       "path": "lib"
     },
     "name": "onEnter",
-    "order": 39,
+    "order": 31,
     "scope": "static"
   },
   {
@@ -708,7 +560,7 @@
       "path": "lib"
     },
     "name": "onUpdate",
-    "order": 40,
+    "order": 32,
     "scope": "static"
   },
   {
@@ -723,7 +575,7 @@
       "path": "lib"
     },
     "name": "options",
-    "order": 41,
+    "order": 33,
     "scope": "static"
   },
   {
@@ -738,7 +590,7 @@
       "path": "lib"
     },
     "name": "parser",
-    "order": 42,
+    "order": 34,
     "scope": "static"
   },
   {
@@ -753,7 +605,7 @@
       "path": "lib"
     },
     "name": "sorter",
-    "order": 43,
+    "order": 35,
     "scope": "static"
   },
   {
@@ -768,112 +620,7 @@
       "path": "lib"
     },
     "name": "value",
-    "order": 44,
-    "scope": "static"
-  },
-  {
-    "description": "Hides min/max value text",
-    "id": "TheInputSlider.propTypes.barOnly",
-    "kind": "member",
-    "longname": "TheInputSlider.propTypes.barOnly",
-    "memberof": "TheInputSlider.propTypes",
-    "meta": {
-      "filename": "TheInputSlider.jsx",
-      "lineno": 197,
-      "path": "lib"
-    },
-    "name": "barOnly",
-    "order": 46,
-    "scope": "static"
-  },
-  {
-    "description": "Input error",
-    "id": "TheInputSlider.propTypes.error",
-    "kind": "member",
-    "longname": "TheInputSlider.propTypes.error",
-    "memberof": "TheInputSlider.propTypes",
-    "meta": {
-      "filename": "TheInputSlider.jsx",
-      "lineno": 199,
-      "path": "lib"
-    },
-    "name": "error",
-    "order": 47,
-    "scope": "static"
-  },
-  {
-    "description": "Max value",
-    "id": "TheInputSlider.propTypes.max",
-    "kind": "member",
-    "longname": "TheInputSlider.propTypes.max",
-    "memberof": "TheInputSlider.propTypes",
-    "meta": {
-      "filename": "TheInputSlider.jsx",
-      "lineno": 201,
-      "path": "lib"
-    },
-    "name": "max",
-    "order": 48,
-    "scope": "static"
-  },
-  {
-    "description": "Min value",
-    "id": "TheInputSlider.propTypes.min",
-    "kind": "member",
-    "longname": "TheInputSlider.propTypes.min",
-    "memberof": "TheInputSlider.propTypes",
-    "meta": {
-      "filename": "TheInputSlider.jsx",
-      "lineno": 203,
-      "path": "lib"
-    },
-    "name": "min",
-    "order": 49,
-    "scope": "static"
-  },
-  {
-    "description": "Handle for update",
-    "id": "TheInputSlider.propTypes.onUpdate",
-    "kind": "member",
-    "longname": "TheInputSlider.propTypes.onUpdate",
-    "memberof": "TheInputSlider.propTypes",
-    "meta": {
-      "filename": "TheInputSlider.jsx",
-      "lineno": 206,
-      "path": "lib"
-    },
-    "name": "onUpdate",
-    "order": 50,
-    "scope": "static"
-  },
-  {
-    "description": "Value step",
-    "id": "TheInputSlider.propTypes.step",
-    "kind": "member",
-    "longname": "TheInputSlider.propTypes.step",
-    "memberof": "TheInputSlider.propTypes",
-    "meta": {
-      "filename": "TheInputSlider.jsx",
-      "lineno": 208,
-      "path": "lib"
-    },
-    "name": "step",
-    "order": 51,
-    "scope": "static"
-  },
-  {
-    "description": "Value of input",
-    "id": "TheInputSlider.propTypes.value",
-    "kind": "member",
-    "longname": "TheInputSlider.propTypes.value",
-    "memberof": "TheInputSlider.propTypes",
-    "meta": {
-      "filename": "TheInputSlider.jsx",
-      "lineno": 210,
-      "path": "lib"
-    },
-    "name": "value",
-    "order": 52,
+    "order": 36,
     "scope": "static"
   },
   {
@@ -884,11 +631,11 @@
     "memberof": "TheInputStyle.propTypes",
     "meta": {
       "filename": "TheInputStyle.jsx",
-      "lineno": 46,
+      "lineno": 43,
       "path": "lib"
     },
     "name": "options",
-    "order": 54,
+    "order": 38,
     "scope": "static"
   },
   {
@@ -903,7 +650,7 @@
       "path": "lib"
     },
     "name": "error",
-    "order": 56,
+    "order": 40,
     "scope": "static"
   },
   {
@@ -918,7 +665,7 @@
       "path": "lib"
     },
     "name": "matcher",
-    "order": 57,
+    "order": 41,
     "scope": "static"
   },
   {
@@ -933,7 +680,7 @@
       "path": "lib"
     },
     "name": "name",
-    "order": 58,
+    "order": 42,
     "scope": "static"
   },
   {
@@ -948,7 +695,7 @@
       "path": "lib"
     },
     "name": "onDown",
-    "order": 59,
+    "order": 43,
     "scope": "static"
   },
   {
@@ -963,7 +710,7 @@
       "path": "lib"
     },
     "name": "onEnter",
-    "order": 60,
+    "order": 44,
     "scope": "static"
   },
   {
@@ -978,7 +725,7 @@
       "path": "lib"
     },
     "name": "onLeft",
-    "order": 61,
+    "order": 45,
     "scope": "static"
   },
   {
@@ -993,7 +740,7 @@
       "path": "lib"
     },
     "name": "onRight",
-    "order": 62,
+    "order": 46,
     "scope": "static"
   },
   {
@@ -1008,7 +755,7 @@
       "path": "lib"
     },
     "name": "onUp",
-    "order": 63,
+    "order": 47,
     "scope": "static"
   },
   {
@@ -1023,7 +770,7 @@
       "path": "lib"
     },
     "name": "onUpdate",
-    "order": 64,
+    "order": 48,
     "scope": "static"
   },
   {
@@ -1038,7 +785,7 @@
       "path": "lib"
     },
     "name": "options",
-    "order": 65,
+    "order": 49,
     "scope": "static"
   },
   {
@@ -1053,7 +800,7 @@
       "path": "lib"
     },
     "name": "parser",
-    "order": 66,
+    "order": 50,
     "scope": "static"
   },
   {
@@ -1068,7 +815,7 @@
       "path": "lib"
     },
     "name": "pattern",
-    "order": 67,
+    "order": 51,
     "scope": "static"
   },
   {
@@ -1083,7 +830,7 @@
       "path": "lib"
     },
     "name": "patternWarning",
-    "order": 68,
+    "order": 52,
     "scope": "static"
   },
   {
@@ -1098,7 +845,7 @@
       "path": "lib"
     },
     "name": "prefix",
-    "order": 69,
+    "order": 53,
     "scope": "static"
   },
   {
@@ -1113,7 +860,7 @@
       "path": "lib"
     },
     "name": "suffix",
-    "order": 70,
+    "order": 54,
     "scope": "static"
   },
   {
@@ -1128,7 +875,7 @@
       "path": "lib"
     },
     "name": "tabIndex",
-    "order": 71,
+    "order": 55,
     "scope": "static"
   },
   {
@@ -1143,7 +890,7 @@
       "path": "lib"
     },
     "name": "type",
-    "order": 72,
+    "order": 56,
     "scope": "static"
   },
   {
@@ -1158,7 +905,7 @@
       "path": "lib"
     },
     "name": "value",
-    "order": 73,
+    "order": 57,
     "scope": "static"
   },
   {
@@ -1173,7 +920,7 @@
       "path": "lib"
     },
     "name": "autoExpand",
-    "order": 75,
+    "order": 59,
     "scope": "static"
   },
   {
@@ -1188,7 +935,7 @@
       "path": "lib"
     },
     "name": "maxRows",
-    "order": 76,
+    "order": 60,
     "scope": "static"
   },
   {
@@ -1203,7 +950,7 @@
       "path": "lib"
     },
     "name": "minRows",
-    "order": 77,
+    "order": 61,
     "scope": "static"
   },
   {
@@ -1218,7 +965,7 @@
       "path": "lib"
     },
     "name": "name",
-    "order": 78,
+    "order": 62,
     "scope": "static"
   },
   {
@@ -1233,7 +980,7 @@
       "path": "lib"
     },
     "name": "onUpdate",
-    "order": 79,
+    "order": 63,
     "scope": "static"
   },
   {
@@ -1248,7 +995,7 @@
       "path": "lib"
     },
     "name": "parser",
-    "order": 80,
+    "order": 64,
     "scope": "static"
   },
   {
@@ -1263,7 +1010,7 @@
       "path": "lib"
     },
     "name": "rows",
-    "order": 81,
+    "order": 65,
     "scope": "static"
   },
   {
@@ -1278,7 +1025,7 @@
       "path": "lib"
     },
     "name": "value",
-    "order": 82,
+    "order": 66,
     "scope": "static"
   },
   {
@@ -1293,7 +1040,7 @@
       "path": "lib"
     },
     "name": "offTitle",
-    "order": 84,
+    "order": 68,
     "scope": "static"
   },
   {
@@ -1308,7 +1055,7 @@
       "path": "lib"
     },
     "name": "on",
-    "order": 85,
+    "order": 69,
     "scope": "static"
   },
   {
@@ -1323,7 +1070,7 @@
       "path": "lib"
     },
     "name": "onTitle",
-    "order": 86,
+    "order": 70,
     "scope": "static"
   },
   {
@@ -1338,7 +1085,7 @@
       "path": "lib"
     },
     "name": "width",
-    "order": 87,
+    "order": 71,
     "scope": "static"
   },
   {
@@ -1353,7 +1100,7 @@
       "path": "lib"
     },
     "name": "accept",
-    "order": 88,
+    "order": 72,
     "scope": "static"
   },
   {
@@ -1368,7 +1115,7 @@
       "path": "lib"
     },
     "name": "convertFile",
-    "order": 89,
+    "order": 73,
     "scope": "static"
   },
   {
@@ -1383,7 +1130,7 @@
       "path": "lib"
     },
     "name": "error",
-    "order": 90,
+    "order": 74,
     "scope": "static"
   },
   {
@@ -1398,7 +1145,7 @@
       "path": "lib"
     },
     "name": "height",
-    "order": 91,
+    "order": 75,
     "scope": "static"
   },
   {
@@ -1413,7 +1160,7 @@
       "path": "lib"
     },
     "name": "multiple",
-    "order": 92,
+    "order": 76,
     "scope": "static"
   },
   {
@@ -1428,7 +1175,7 @@
       "path": "lib"
     },
     "name": "onError",
-    "order": 93,
+    "order": 77,
     "scope": "static"
   },
   {
@@ -1443,7 +1190,7 @@
       "path": "lib"
     },
     "name": "onLoad",
-    "order": 94,
+    "order": 78,
     "scope": "static"
   },
   {
@@ -1458,7 +1205,7 @@
       "path": "lib"
     },
     "name": "onUpdate",
-    "order": 95,
+    "order": 79,
     "scope": "static"
   },
   {
@@ -1473,7 +1220,7 @@
       "path": "lib"
     },
     "name": "spinner",
-    "order": 96,
+    "order": 80,
     "scope": "static"
   },
   {
@@ -1488,7 +1235,7 @@
       "path": "lib"
     },
     "name": "text",
-    "order": 97,
+    "order": 81,
     "scope": "static"
   },
   {
@@ -1503,7 +1250,7 @@
       "path": "lib"
     },
     "name": "value",
-    "order": 98,
+    "order": 82,
     "scope": "static"
   },
   {
@@ -1518,7 +1265,7 @@
       "path": "lib"
     },
     "name": "width",
-    "order": 99,
+    "order": 83,
     "scope": "static"
   }
 ]

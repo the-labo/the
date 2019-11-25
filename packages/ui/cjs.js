@@ -2,7 +2,7 @@
 /**
  * React components of THE framework
  * @module @the-/ui
- * @version 16.0.5
+ * @version 16.1.0
  */
 
 'use strict'
@@ -35,6 +35,8 @@ exports.TheInfo = require('@the-/ui-info/shim/TheInfo').default
 exports.TheInput = require('@the-/ui-input/shim/TheInput').default
 exports.TheInputText = require('@the-/ui-input/shim/TheInputText').default
 exports.TheInputTextArea = require('@the-/ui-input/shim/TheInputTextArea').default
+exports.TheInputTag = require('@the-/ui-input/shim/TheInputTag').default
+exports.TheInputUpload = require('@the-/ui-input/shim/TheInputUpload').default
 exports.TheInputSearch = require('@the-/ui-input/shim/TheInputSearch').default
 exports.TheInputRadio = require('@the-/ui-input/shim/TheInputRadio').default
 exports.TheInputCheckbox = require('@the-/ui-input/shim/TheInputCheckbox').default

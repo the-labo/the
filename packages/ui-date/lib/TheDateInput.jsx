@@ -6,13 +6,12 @@ import flatpickr from 'flatpickr'
 import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
-import { onOffBoolean, renderErrorMessage } from './helpers'
+import { renderErrorMessage } from './helpers'
 
-const TheInputDate = React.memo((props) => {
+const TheDateInput = React.memo((props) => {
   const elmRef = useRef(null)
   const [picker, setPicker] = useState(null)
   const {
-    autoComplete,
     autoFocus,
     children,
     className,
@@ -92,8 +91,6 @@ const TheInputDate = React.memo((props) => {
     [name, onBlur, onUpdate, value],
   )
 
-  const autoCapitalize = onOffBoolean(props.autoCapitalize)
-  const autoCorrect = onOffBoolean(props.autoCorrect)
   return (
     <div
       {...htmlAttributesFor(props, {
@@ -124,18 +121,18 @@ const TheInputDate = React.memo((props) => {
           'onKeyPress',
         ],
       })}
-      className={c('the-input-date', className, {
-        'the-input-error': !!error,
+      className={c('the-date-date', className, {
+        'the-date-error': !!error,
       })}
       data-value={value}
     >
       {renderErrorMessage(error)}
       <input
-        autoCapitalize={autoCapitalize}
-        autoComplete={autoComplete}
-        autoCorrect={autoCorrect}
+        autoCapitalize={'off'}
+        autoComplete={'off'}
+        autoCorrect={'off'}
         autoFocus={autoFocus}
-        className='the-input-date-input'
+        className='the-date-date-input'
         id={id}
         name={name}
         onBlur={handleBlur}
@@ -153,7 +150,7 @@ const TheInputDate = React.memo((props) => {
   )
 })
 
-TheInputDate.propTypes = {
+TheDateInput.propTypes = {
   dateFormat: PropTypes.string,
   maxDate: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   minDate: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
@@ -162,7 +159,7 @@ TheInputDate.propTypes = {
   onUpdate: PropTypes.func.isRequired,
   timeEnabled: PropTypes.bool,
 }
-TheInputDate.defaultProps = {
+TheDateInput.defaultProps = {
   dateFormat: null,
   maxDate: null,
   minDate: null,
@@ -170,6 +167,6 @@ TheInputDate.defaultProps = {
   timeEnabled: false,
   value: '',
 }
-TheInputDate.displayName = 'TheInputDate'
+TheDateInput.displayName = 'TheDateInput'
 
-export default TheInputDate
+export default TheDateInput

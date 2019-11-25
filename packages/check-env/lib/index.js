@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/check-env
  * @typicalname checkEnv
- * @version 15.5.8
+ * @version 15.6.0
  */
 'use strict'
 

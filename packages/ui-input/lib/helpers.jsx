@@ -3,8 +3,8 @@
  */
 'use strict'
 
+import getExt from 'get-ext'
 import imageExtensions from 'image-extensions'
-import path from 'path'
 import React from 'react'
 import videoExtensions from 'video-extensions'
 import { get } from '@the-/window'
@@ -75,7 +75,7 @@ export function isImageUrl(src) {
     return true
   }
 
-  const extname = path.extname(parseUrl(src).pathname)
+  const extname = getExt(parseUrl(src).pathname)
   if (!extname) {
     return false
   }
@@ -88,7 +88,7 @@ export function isVideoUrl(src) {
     return true
   }
 
-  const extname = path.extname(parseUrl(src).pathname)
+  const extname = getExt(parseUrl(src).pathname)
   if (!extname) {
     return false
   }
@@ -101,7 +101,7 @@ export function isUnknownTypeUrl(src) {
     return false
   }
 
-  const extname = path.extname(parseUrl(src).pathname)
+  const extname = getExt(parseUrl(src).pathname)
   return !extname
 }
 

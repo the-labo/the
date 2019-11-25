@@ -13,7 +13,7 @@
     "name": "@the-/check-env",
     "order": 0,
     "typicalname": "checkEnv",
-    "version": "15.5.8"
+    "version": "15.6.0"
   },
   {
     "description": "Do unless production env",

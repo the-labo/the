@@ -1,0 +1,59 @@
+[
+  {
+    "id": "@the-/ui.input.module:helpers",
+    "kind": "module",
+    "longname": "@the-/ui.input.module:helpers",
+    "meta": {
+      "filename": "helpers.jsx",
+      "lineno": 1,
+      "path": "lib"
+    },
+    "name": "helpers",
+    "order": 0
+  },
+  {
+    "description": "Date ui",
+    "id": "module:@the-/ui-date",
+    "kind": "module",
+    "longname": "module:@the-/ui-date",
+    "meta": {
+      "filename": "index.jsx",
+      "lineno": 3,
+      "path": "lib"
+    },
+    "name": "@the-/ui-date",
+    "order": 1,
+    "typicalname": "uiDate",
+    "version": "16.1.1"
+  },
+  {
+    "description": "Style for TheInput",
+    "id": "TheDateStyle",
+    "kind": "function",
+    "longname": "TheDateStyle",
+    "meta": {
+      "filename": "TheDateStyle.jsx",
+      "lineno": 11,
+      "path": "lib"
+    },
+    "name": "TheDateStyle",
+    "order": 2,
+    "params": [],
+    "scope": "global"
+  },
+  {
+    "description": "Style options",
+    "id": "TheDateStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheDateStyle.propTypes.options",
+    "memberof": "TheDateStyle.propTypes",
+    "meta": {
+      "filename": "TheDateStyle.jsx",
+      "lineno": 31,
+      "path": "lib"
+    },
+    "name": "options",
+    "order": 3,
+    "scope": "static"
+  }
+]
