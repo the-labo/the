@@ -6,7 +6,6 @@ import React from 'react'
 import { TheIcon } from '@the-/ui-icon'
 import { TheInput } from '@the-/ui-input'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
-import TheTableStyle from './TheTableStyle'
 
 /**
  * Table for the-components
@@ -163,8 +162,6 @@ TheTable.SortableHeaderCell = function SortableHeaderCell(props) {
 TheTable.SORT_ICON = 'fas fa-sort'
 TheTable.SORT_DESC_ICON = 'fas fa-sort-down'
 TheTable.SORT_ASC_ICON = 'fas fa-sort-up'
-
-TheTable.Style = TheTableStyle
 
 TheTable.propTypes = {
   /** Alt for empty */

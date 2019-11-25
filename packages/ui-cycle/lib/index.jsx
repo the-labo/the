@@ -4,16 +4,12 @@
  * @description Component with life cycle
  * @module @the-/ui-cycle
  * @typicalname uiCycle
- * @version 15.4.11
+ * @version 15.4.12
  */
 'use strict'
 
 import TheCycle from './TheCycle'
 
 export {
-  TheCycle,
-}
-
-export default {
   TheCycle,
 }

@@ -12,7 +12,7 @@
     "name": "@the-/ui-step",
     "order": 0,
     "typicalname": "uiStep",
-    "version": "15.4.13"
+    "version": "15.4.14"
   },
   {
     "description": "Steps for the-component",
@@ -21,7 +21,7 @@
     "longname": "TheStep",
     "meta": {
       "filename": "TheStep.jsx",
-      "lineno": 16,
+      "lineno": 15,
       "path": "lib"
     },
     "name": "TheStep",

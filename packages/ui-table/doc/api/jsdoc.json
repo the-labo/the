@@ -12,7 +12,7 @@
     "name": "@the-/ui-table",
     "order": 0,
     "typicalname": "uiTable",
-    "version": "15.4.11"
+    "version": "15.4.13"
   },
   {
     "description": "Table for the-components",
@@ -21,7 +21,7 @@
     "longname": "TheTable",
     "meta": {
       "filename": "TheTable.jsx",
-      "lineno": 14,
+      "lineno": 13,
       "path": "lib"
     },
     "name": "TheTable",
@@ -52,7 +52,7 @@
     "memberof": "TheTable.propTypes",
     "meta": {
       "filename": "TheTable.jsx",
-      "lineno": 171,
+      "lineno": 168,
       "path": "lib"
     },
     "name": "alt",
@@ -67,7 +67,7 @@
     "memberof": "TheTable.propTypes",
     "meta": {
       "filename": "TheTable.jsx",
-      "lineno": 173,
+      "lineno": 170,
       "path": "lib"
     },
     "name": "empty",
@@ -82,7 +82,7 @@
     "memberof": "TheTable.propTypes",
     "meta": {
       "filename": "TheTable.jsx",
-      "lineno": 175,
+      "lineno": 172,
       "path": "lib"
     },
     "name": "width",

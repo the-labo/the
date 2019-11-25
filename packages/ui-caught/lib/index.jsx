@@ -4,7 +4,7 @@
  * @description Component to show caught errors
  * @module @the-/ui-caught
  * @typicalname uiCaught
- * @version 15.4.12
+ * @version 15.4.13
  */
 'use strict'
 
@@ -13,12 +13,6 @@ import TheCaughtCatcher from './TheCaughtCatcher'
 import TheCaughtStyle from './TheCaughtStyle'
 
 export {
-  TheCaught,
-  TheCaughtCatcher,
-  TheCaughtStyle,
-}
-
-export default {
   TheCaught,
   TheCaughtCatcher,
   TheCaughtStyle,
