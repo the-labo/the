@@ -37,10 +37,6 @@
     "TheConfirmDialog",
     "TheDialogStyle"
   ],
-  "@the-/ui-flick": [
-    "TheFlick",
-    "TheFlickStyle"
-  ],
   "@the-/ui-footer": [
     "TheFooter",
     "TheFooterStyle"

@@ -21,7 +21,6 @@ exports.TheDialog = require('@the-/ui-dialog/shim/TheDialog').default
 exports.TheOkDialog = require('@the-/ui-dialog/shim/TheOkDialog').default
 exports.TheYesNoDialog = require('@the-/ui-dialog/shim/TheYesNoDialog').default
 exports.TheConfirmDialog = require('@the-/ui-dialog/shim/TheConfirmDialog').default
-exports.TheFlick = require('@the-/ui-flick/shim/TheFlick').default
 exports.TheFooter = require('@the-/ui-footer/shim/TheFooter').default
 exports.TheForm = require('@the-/ui-form/shim/TheForm').default
 exports.TheFormBinder = require('@the-/ui-form/shim/TheFormBinder').default

@@ -3,7 +3,7 @@
  */
 'use strict'
 
-const components = require('@the-/ui/lib/components.json')
+const components = require('@the-/ui/components.json')
 
 module.exports = {
   data: {
