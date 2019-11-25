@@ -4,7 +4,7 @@
  * @description Hamburger menu for the-components
  * @module @the-/ui-hamburger
  * @typicalname uiHamburger
- * @version 15.4.14
+ * @version 15.4.15
  */
 'use strict'
 

@@ -30,9 +30,6 @@
     "TheContainer",
     "TheContainerStyle"
   ],
-  "@the-/ui-cycle": [
-    "TheCycle"
-  ],
   "@the-/ui-dialog": [
     "TheDialog",
     "TheOkDialog",
@@ -100,11 +97,6 @@
     "TheLink",
     "TheLinkStyle"
   ],
-  "@the-/ui-list": [
-    "TheList",
-    "TheListGroup",
-    "TheListStyle"
-  ],
   "@the-/ui-main": [
     "TheMain",
     "TheMainStyle"
@@ -121,10 +113,6 @@
   "@the-/ui-pager": [
     "ThePager",
     "ThePagerStyle"
-  ],
-  "@the-/ui-repeatable": [
-    "TheRepeatable",
-    "TheRepeatableStyle"
   ],
   "@the-/ui-root": [
     "TheRoot",

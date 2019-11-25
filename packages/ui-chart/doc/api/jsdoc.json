@@ -12,7 +12,7 @@
     "name": "@the-/ui-chart",
     "order": 0,
     "typicalname": "uiChart",
-    "version": "15.4.11"
+    "version": "15.4.13"
   },
   {
     "description": "Chart for the-components",
@@ -21,7 +21,7 @@
     "longname": "TheChart",
     "meta": {
       "filename": "TheChart.jsx",
-      "lineno": 14,
+      "lineno": 13,
       "path": "lib"
     },
     "name": "TheChart",
@@ -51,7 +51,7 @@
     "memberof": "TheChart.propTypes",
     "meta": {
       "filename": "TheChart.jsx",
-      "lineno": 72,
+      "lineno": 69,
       "path": "lib"
     },
     "name": "data",
@@ -66,7 +66,7 @@
     "memberof": "TheChart.propTypes",
     "meta": {
       "filename": "TheChart.jsx",
-      "lineno": 74,
+      "lineno": 71,
       "path": "lib"
     },
     "name": "onChart",
@@ -81,7 +81,7 @@
     "memberof": "TheChart.propTypes",
     "meta": {
       "filename": "TheChart.jsx",
-      "lineno": 76,
+      "lineno": 73,
       "path": "lib"
     },
     "name": "options",

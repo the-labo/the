@@ -8,7 +8,6 @@
 'use strict'
 
 {{#each components}}
-export { {{#each this}}{{this}}, {{/each}} } from '{{@key}}'
+{{#each componentNames}}export { default as {{this}} } from '{{../pkgName}}/shim/esm/{{this}}'
 {{/each}}
-
-export default {}
+{{/each}}

@@ -5,7 +5,12 @@
 
 module.exports = {
   data: {
-    components: require('./components.json'),
+    components: Object.entries(require('./components.json'))
+      .map(([pkgName, componentNames]) => ({
+        componentNames: componentNames.filter((n) => !n.endsWith('Style')),
+        pkgName,
+      }))
+      .filter(({ componentNames }) => componentNames.length > 0),
     pkg: require('../package.json'),
   },
   force: true,

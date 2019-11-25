@@ -5,7 +5,6 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
-import TheChartStyle from './TheChartStyle'
 
 /**
  * Chart for the-components
@@ -63,8 +62,6 @@ class TheChart extends React.Component {
     )
   }
 }
-
-TheChart.Style = TheChartStyle
 
 TheChart.propTypes = {
   /** Chart type */
