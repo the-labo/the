@@ -2,7 +2,7 @@
 /**
  * React components of THE framework
  * @module @the-/ui
- * @version 16.1.0
+ * @version 16.2.1
  */
 
 'use strict'
@@ -24,7 +24,6 @@ export { default as TheConfirmDialog } from '@the-/ui-dialog/shim/esm/TheConfirm
 export { default as TheFooter } from '@the-/ui-footer/shim/esm/TheFooter'
 export { default as TheForm } from '@the-/ui-form/shim/esm/TheForm'
 export { default as TheFormBinder } from '@the-/ui-form/shim/esm/TheFormBinder'
-export { default as TheFrame } from '@the-/ui-frame/shim/esm/TheFrame'
 export { default as TheHamburger } from '@the-/ui-hamburger/shim/esm/TheHamburger'
 export { default as TheHead } from '@the-/ui-head/shim/esm/TheHead'
 export { default as TheHeader } from '@the-/ui-header/shim/esm/TheHeader'

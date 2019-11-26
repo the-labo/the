@@ -2,7 +2,7 @@
 /**
  * React components of THE framework
  * @module @the-/ui
- * @version 16.1.0
+ * @version 16.2.1
  */
 
 'use strict'
@@ -24,7 +24,6 @@ exports.TheConfirmDialog = require('@the-/ui-dialog/shim/TheConfirmDialog').defa
 exports.TheFooter = require('@the-/ui-footer/shim/TheFooter').default
 exports.TheForm = require('@the-/ui-form/shim/TheForm').default
 exports.TheFormBinder = require('@the-/ui-form/shim/TheFormBinder').default
-exports.TheFrame = require('@the-/ui-frame/shim/TheFrame').default
 exports.TheHamburger = require('@the-/ui-hamburger/shim/TheHamburger').default
 exports.TheHead = require('@the-/ui-head/shim/TheHead').default
 exports.TheHeader = require('@the-/ui-header/shim/TheHeader').default

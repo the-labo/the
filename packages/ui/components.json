@@ -46,10 +46,6 @@
     "TheFormBinder",
     "TheFormStyle"
   ],
-  "@the-/ui-frame": [
-    "TheFrame",
-    "TheFrameStyle"
-  ],
   "@the-/ui-hamburger": [
     "TheHamburger",
     "TheHamburgerStyle"

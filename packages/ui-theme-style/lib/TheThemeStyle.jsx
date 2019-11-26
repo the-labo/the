@@ -16,7 +16,6 @@ import TheContainerStyle from '@the-/ui-container/shim/TheContainerStyle'
 import TheDialogStyle from '@the-/ui-dialog/shim/TheDialogStyle'
 import TheFooterStyle from '@the-/ui-footer/shim/TheFooterStyle'
 import TheFormStyle from '@the-/ui-form/shim/TheFormStyle'
-import TheFrameStyle from '@the-/ui-frame/shim/TheFrameStyle'
 import TheHamburgerStyle from '@the-/ui-hamburger/shim/TheHamburgerStyle'
 import TheHeaderStyle from '@the-/ui-header/shim/TheHeaderStyle'
 import TheHtmlStyle from '@the-/ui-html/shim/TheHtmlStyle'
@@ -76,7 +75,6 @@ TheThemeStyle.data = (options) => {
       TheDialogStyle,
       TheFooterStyle,
       TheFormStyle,
-      TheFrameStyle,
       TheHamburgerStyle,
       TheHeaderStyle,
       TheHtmlStyle,
@@ -120,7 +118,6 @@ TheThemeStyle.componentPaths = [
   '@the-/ui-dialog/shim/TheDialogStyle',
   '@the-/ui-footer/shim/TheFooterStyle',
   '@the-/ui-form/shim/TheFormStyle',
-  '@the-/ui-frame/shim/TheFrameStyle',
   '@the-/ui-hamburger/shim/TheHamburgerStyle',
   '@the-/ui-header/shim/TheHeaderStyle',
   '@the-/ui-html/shim/TheHtmlStyle',
