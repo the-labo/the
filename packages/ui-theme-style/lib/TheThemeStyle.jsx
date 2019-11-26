@@ -14,7 +14,6 @@ import TheCaughtStyle from '@the-/ui-caught/shim/TheCaughtStyle'
 import TheConditionStyle from '@the-/ui-condition/shim/TheConditionStyle'
 import TheContainerStyle from '@the-/ui-container/shim/TheContainerStyle'
 import TheDialogStyle from '@the-/ui-dialog/shim/TheDialogStyle'
-import TheFlickStyle from '@the-/ui-flick/shim/TheFlickStyle'
 import TheFooterStyle from '@the-/ui-footer/shim/TheFooterStyle'
 import TheFormStyle from '@the-/ui-form/shim/TheFormStyle'
 import TheFrameStyle from '@the-/ui-frame/shim/TheFrameStyle'
@@ -75,7 +74,6 @@ TheThemeStyle.data = (options) => {
       TheConditionStyle,
       TheContainerStyle,
       TheDialogStyle,
-      TheFlickStyle,
       TheFooterStyle,
       TheFormStyle,
       TheFrameStyle,
@@ -120,7 +118,6 @@ TheThemeStyle.componentPaths = [
   '@the-/ui-condition/shim/TheConditionStyle',
   '@the-/ui-container/shim/TheContainerStyle',
   '@the-/ui-dialog/shim/TheDialogStyle',
-  '@the-/ui-flick/shim/TheFlickStyle',
   '@the-/ui-footer/shim/TheFooterStyle',
   '@the-/ui-form/shim/TheFormStyle',
   '@the-/ui-frame/shim/TheFrameStyle',
