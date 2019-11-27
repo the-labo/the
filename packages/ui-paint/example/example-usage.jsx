@@ -83,6 +83,16 @@ class ExampleComponent extends React.Component {
             style={{ background: 'white' }}
             width='100%'
           />
+          <h3>Straight write with fit resize</h3>
+          <ThePaint
+            erasing={this.state.erasing}
+            method='straight'
+            onDrawer={this.onDrawer}
+            onDrawStart={this.onDrawStart}
+            resizePolicy={'fit'}
+            style={{ background: 'white' }}
+            width='100%'
+          />
         </section>
 
         <hr />

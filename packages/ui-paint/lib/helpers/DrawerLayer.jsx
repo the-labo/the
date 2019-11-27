@@ -6,6 +6,7 @@ import FreeDrawMethod from './methods/FreeDrawMethod'
 import RectDrawMethod from './methods/RectDrawMethod'
 import StraightDrawMethod from './methods/StraightDrawMethod'
 import DrawingMethods from '../constants/DrawingMethods'
+import ResizePolicies from '../constants/ResizePolicies'
 
 /**
  * @function DrawerLayer
@@ -79,24 +80,46 @@ function DrawerLayer(canvas, options = {}) {
       canvasAccess.clear()
     },
     normalizeObjects(objects, options = {}) {
-      const { size } = options
-      const { height = canvasAccess.height, width = canvasAccess.width } =
-        size || {}
-      const xOffset = (canvasAccess.width - width) / 2
-      const yOffset = (canvasAccess.height - height) / 2
       return objects
         .filter((object) => object.points.length > 0)
         .map((object) => ({
           ...object,
           points: object.points.map((point) => {
             const { x, y, ...rest } = point
-            return {
-              x: x + xOffset,
-              y: y + yOffset,
-              ...rest,
-            }
+            const normalizedPoint = layer.normalizePoint(
+              { x: point.x, y: point.y },
+              options,
+            )
+            return { ...rest, x: normalizedPoint.x, y: normalizedPoint.y }
           }),
         }))
+    },
+    normalizePoint(point, options = {}) {
+      const { size } = options
+      const {
+        config: { resizePolicy },
+      } = state
+      const { height = canvasAccess.height, width = canvasAccess.width } =
+        size || {}
+      switch (resizePolicy) {
+        case ResizePolicies.FIT: {
+          const xRate = canvasAccess.width / width
+          const yRate = canvasAccess.height / height
+          return {
+            x: point.x * xRate,
+            y: point.y * yRate,
+          }
+        }
+        case ResizePolicies.KEEP:
+        default: {
+          const xOffset = (canvasAccess.width - width) / 2
+          const yOffset = (canvasAccess.height - height) / 2
+          return {
+            x: point.x + xOffset,
+            y: point.y + yOffset,
+          }
+        }
+      }
     },
     restore(serialized) {
       const {

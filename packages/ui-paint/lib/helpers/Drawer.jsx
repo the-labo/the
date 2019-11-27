@@ -6,6 +6,7 @@ import DrawerLayer from './DrawerLayer'
 import loadImage from './loadImage'
 import DrawConfigs from '../constants/DrawConfigs'
 import DrawingMethods from '../constants/DrawingMethods'
+import ResizePolicies from '../constants/ResizePolicies'
 
 function Drawer(canvas, tmpCanvas, options = {}) {
   const canvasAccess = CanvasAccess(canvas)
@@ -18,6 +19,7 @@ function Drawer(canvas, tmpCanvas, options = {}) {
     lineJoin: 'round',
     lineWidth: DrawConfigs.DEFAULT_LINE_WIDTH,
     method: DrawingMethods.FREE,
+    resizePolicy: ResizePolicies.KEEP,
     ...options,
   }
 
@@ -159,7 +161,7 @@ function Drawer(canvas, tmpCanvas, options = {}) {
     },
     async resize() {
       state.resizing = true
-      canvasAccess.resizeAnd(async () => {
+      await canvasAccess.resizeAnd(async () => {
         const snapshot = drawer.snapshot()
         await drawer.fromSnapshot(snapshot)
       })

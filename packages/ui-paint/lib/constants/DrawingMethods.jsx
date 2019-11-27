@@ -3,7 +3,8 @@
 const DrawingMethods = Object.freeze(
   /**
    * Method of drawing
-   * @enum {string} DrawMethods
+   * @memberof module:@the-/ui-paint
+   * @namespace DrawMethods
    */
   {
     CIRCLE: 'circle',

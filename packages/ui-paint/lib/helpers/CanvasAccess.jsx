@@ -71,15 +71,6 @@ const CanvasAccess = (canvas) => {
       ctx.moveTo(x, y)
       ctx.beginPath()
     },
-    resizeAnd(onResize) {
-      const { height, width } = canvas.getBoundingClientRect()
-      const changed =
-        canvasAccess.width !== width || canvasAccess.height !== height
-      if (changed) {
-        canvasAccess.setSize({ height, width })
-        onResize && onResize()
-      }
-    },
     setErasing(erasing) {
       ctx.globalCompositeOperation = erasing ? 'destination-out' : 'source-over'
     },
@@ -90,6 +81,17 @@ const CanvasAccess = (canvas) => {
     },
     toSVG() {
       return canvas.toDataURL('image/svg+xml')
+    },
+    async resizeAnd(onResize) {
+      const { height, width } = canvas.getBoundingClientRect()
+      const changed =
+        canvasAccess.width !== width || canvasAccess.height !== height
+      if (changed) {
+        canvasAccess.setSize({ height, width })
+        if (onResize) {
+          await onResize()
+        }
+      }
     },
   }
   return canvasAccess

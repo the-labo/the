@@ -12,6 +12,7 @@ import {
 import { get } from '@the-/window'
 import DrawConfigs from './constants/DrawConfigs'
 import DrawingMethods from './constants/DrawingMethods'
+import ResizePolicies from './constants/ResizePolicies'
 import Drawer from './helpers/Drawer'
 
 /**
@@ -35,6 +36,7 @@ const ThePaint = (props) => {
     onDrawEnd,
     onDrawer,
     onDrawStart,
+    resizePolicy,
     style,
     width,
   } = props
@@ -145,8 +147,9 @@ const ThePaint = (props) => {
       lineColor,
       lineWidth,
       method,
+      resizePolicy,
     })
-  }, [drawer, lineColor, lineWidth, method, erasing])
+  }, [drawer, lineColor, lineWidth, method, erasing, resizePolicy])
 
   const handleDrawStart = useCallback(
     (e) => {
@@ -221,6 +224,7 @@ ThePaint.propTypes = {
   /** Get drawer ref */
   onDrawer: PropTypes.func,
   onDrawStart: PropTypes.func,
+  resizePolicy: PropTypes.oneOf(Object.values(ResizePolicies)),
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
@@ -231,6 +235,7 @@ ThePaint.defaultProps = {
   lineWidth: DrawConfigs.DEFAULT_LINE_WIDTH,
   method: DrawingMethods.FREE,
   onDrawer: null,
+  resizePolicy: ResizePolicies.KEEP,
   width: 150,
 }
 
