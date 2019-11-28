@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-dialog",
   "description": "Dialog for the-components",
-  "version": "16.0.1",
+  "version": "16.0.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,9 +13,9 @@
   "dependencies": {
     "@the-/const-ui": "^15.5.0",
     "@the-/ui-button": "^15.5.4",
-    "@the-/ui-icon": "^15.4.13",
+    "@the-/ui-icon": "^15.4.14",
     "@the-/ui-input": "^16.0.1",
-    "@the-/ui-spin": "^15.4.11",
+    "@the-/ui-spin": "^15.5.0",
     "@the-/ui-style": "^16.0.0",
     "@the-/util-ui": "^16.3.1",
     "@the-/window": "^15.8.2",
@@ -25,7 +25,7 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui-demo": "^15.5.0",
+    "@the-/ui-demo": "^15.5.4",
     "coz": "^7.0.19",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",

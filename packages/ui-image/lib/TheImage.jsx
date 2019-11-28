@@ -140,7 +140,6 @@ const TheImage = (props) => {
 }
 
 TheImage.propTypes = {
-  /** Image width */
   /** Render as link */
   asLink: PropTypes.bool,
   /** Image draggable */
@@ -157,6 +156,7 @@ TheImage.propTypes = {
   resizeInterval: PropTypes.number,
   /** How to scale image */
   scale: PropTypes.oneOf(['none', 'fit', 'fill']),
+  /** Image width */
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 

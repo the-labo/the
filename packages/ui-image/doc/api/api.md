@@ -24,7 +24,7 @@
 ## @the-/ui-image
 Image of the-components
 
-**Version**: 15.5.0  
+**Version**: 15.5.1  
 <a name="TheImage"></a>
 
 ## TheImage()

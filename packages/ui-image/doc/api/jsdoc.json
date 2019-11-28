@@ -12,7 +12,7 @@
     "name": "@the-/ui-image",
     "order": 0,
     "typicalname": "uiImage",
-    "version": "15.5.0"
+    "version": "15.5.1"
   },
   {
     "description": "Image of the-components",
@@ -40,7 +40,7 @@
       "path": "lib"
     },
     "name": "TheImageStyle",
-    "order": 10,
+    "order": 11,
     "params": [],
     "scope": "global"
   },
@@ -52,7 +52,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 145,
+      "lineno": 144,
       "path": "lib"
     },
     "name": "asLink",
@@ -67,7 +67,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 147,
+      "lineno": 146,
       "path": "lib"
     },
     "name": "draggable",
@@ -82,7 +82,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 149,
+      "lineno": 148,
       "path": "lib"
     },
     "name": "height",
@@ -97,7 +97,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 151,
+      "lineno": 150,
       "path": "lib"
     },
     "name": "notFoundMessage",
@@ -112,7 +112,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 153,
+      "lineno": 152,
       "path": "lib"
     },
     "name": "onError",
@@ -127,7 +127,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 155,
+      "lineno": 154,
       "path": "lib"
     },
     "name": "onLoad",
@@ -142,7 +142,7 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 157,
+      "lineno": 156,
       "path": "lib"
     },
     "name": "resizeInterval",
@@ -157,11 +157,26 @@
     "memberof": "TheImage.propTypes",
     "meta": {
       "filename": "TheImage.jsx",
-      "lineno": 159,
+      "lineno": 158,
       "path": "lib"
     },
     "name": "scale",
     "order": 9,
+    "scope": "static"
+  },
+  {
+    "description": "Image width",
+    "id": "TheImage.propTypes.width",
+    "kind": "member",
+    "longname": "TheImage.propTypes.width",
+    "memberof": "TheImage.propTypes",
+    "meta": {
+      "filename": "TheImage.jsx",
+      "lineno": 160,
+      "path": "lib"
+    },
+    "name": "width",
+    "order": 10,
     "scope": "static"
   },
   {
@@ -176,7 +191,7 @@
       "path": "lib"
     },
     "name": "options",
-    "order": 11,
+    "order": 12,
     "scope": "static"
   }
 ]

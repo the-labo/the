@@ -24,7 +24,7 @@
 ## @the-/ui-icon
 Icon of the-components
 
-**Version**: 15.4.13  
+**Version**: 15.4.14  
 <a name="TheIcon"></a>
 
 ## TheIcon()
