@@ -26,7 +26,7 @@
 ## @the-/ui-paint
 Hand write painting
 
-**Version**: 15.7.0  
+**Version**: 15.8.0  
 
 * [@the-/ui-paint](#module_@the-/ui-paint)
     * [.DrawMethods](#module_@the-/ui-paint.DrawMethods) : <code>object</code>

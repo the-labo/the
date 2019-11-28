@@ -79,6 +79,28 @@ function DrawerLayer(canvas, options = {}) {
     clear() {
       canvasAccess.clear()
     },
+    normalizeConfig(config, options = {}) {
+      const { size } = options
+      const {
+        config: { resizePolicy },
+      } = state
+      const { height = canvasAccess.height, width = canvasAccess.width } =
+        size || {}
+      switch (resizePolicy) {
+        case ResizePolicies.FIT: {
+          const xRate = canvasAccess.width / width
+          const yRate = canvasAccess.height / height
+          return {
+            ...config,
+            lineWidth: config.lineWidth * Math.min(xRate, yRate),
+          }
+        }
+        case ResizePolicies.KEEP:
+        default: {
+          return config
+        }
+      }
+    },
     normalizeObjects(objects, options = {}) {
       return objects
         .filter((object) => object.points.length > 0)
@@ -133,7 +155,7 @@ function DrawerLayer(canvas, options = {}) {
         ],
         size,
       } = serialized
-      layer.applyConfig(config)
+      layer.applyConfig(layer.normalizeConfig(config, { size }))
       state.objects = objects
       if (objects) {
         const normalizedObjects = layer.normalizeObjects(objects, { size })
