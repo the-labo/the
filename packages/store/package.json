@@ -1,7 +1,7 @@
 {
   "name": "@the-/store",
   "description": "Redux wrapper for the-framework",
-  "version": "15.4.12",
+  "version": "15.5.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -21,9 +21,7 @@
     "bwindow": "^2.0.3",
     "json-pointer": "^0.6.0",
     "objnest": "^5.0.10",
-    "redux": "^4.0.4",
-    "redux-actions": "^2.6.5",
-    "redux-promise": "^0.6.0"
+    "redux": "^4.0.4"
   },
   "devDependencies": {},
   "engines": {
