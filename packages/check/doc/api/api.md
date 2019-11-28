@@ -5,7 +5,7 @@
 ## @the-/check
 Check utility for the-framework
 
-**Version**: 15.6.1  
+**Version**: 15.6.2  
 **License**: MIT  
 
 * [@the-/check](#module_@the-/check)

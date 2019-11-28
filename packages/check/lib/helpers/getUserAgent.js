@@ -1,6 +1,6 @@
 'use strict'
 
-const { get } = require('@the-/window')
+const { get } = require('bwindow')
 
 function getUserAgent() {
   return get('window.navigator.userAgent') || ''
