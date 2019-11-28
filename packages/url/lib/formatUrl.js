@@ -1,7 +1,7 @@
 'use strict'
 
-const { unlessProduction } = require('@the-/check')
-const { get } = require('@the-/window')
+const { get } = require('bwindow')
+const { unlessProduction } = require('@the-/check-env')
 
 const PARAM_PREFIX = /^:/
 

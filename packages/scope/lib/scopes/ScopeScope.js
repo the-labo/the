@@ -1,6 +1,6 @@
 'use strict'
 
-const { unlessProduction } = require('@the-/check')
+const { unlessProduction } = require('@the-/check-env')
 const Scope = require('./Scope')
 
 /**

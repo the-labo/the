@@ -8,7 +8,7 @@ const qs = require('qs')
 const { RFuncClient } = require('rfunc-client/shim/browser')
 const io = require('socket.io-client')
 const uuid = require('uuid')
-const { isBrowser, isProduction, unlessProduction } = require('@the-/check')
+const { isProduction, unlessProduction } = require('@the-/check-env')
 const { ThePack } = require('@the-/pack')
 const IOEvents = require('./constants/IOEvents')
 const {
@@ -320,7 +320,8 @@ class TheClient extends RFuncClient {
    */
   async stream(name, params = {}, options = {}) {
     this.assertNotClosed()
-    const { debug = !isProduction() && isBrowser() } = options
+    const isBrowser = !!get('document')
+    const { debug = !isProduction() && isBrowser } = options
     if (!this._socket) {
       this._socket = await this.newSocket()
     }
@@ -338,7 +339,8 @@ class TheClient extends RFuncClient {
    */
   async use(controllerName, options = {}) {
     this.assertNotClosed()
-    const { debug = !isProduction() && isBrowser() } = options
+    const isBrowser = !!get('document')
+    const { debug = !isProduction() && isBrowser } = options
     let controller = this._controllers[controllerName]
     if (!this._socket) {
       this._socket = await this.newSocket()

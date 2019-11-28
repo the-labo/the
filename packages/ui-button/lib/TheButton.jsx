@@ -3,7 +3,7 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React, { useCallback, useState } from 'react'
-import { unlessProduction } from '@the-/check'
+import { unlessProduction } from '@the-/check-env'
 import { TheIcon } from '@the-/ui-icon'
 import { TheLink } from '@the-/ui-link'
 import { textColorFor } from '@the-/util-color'

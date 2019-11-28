@@ -8,8 +8,8 @@
  * @param {Object} query - Query to add
  * @returns {string} Added url string
  */
+const { get } = require('bwindow')
 const qs = require('qs')
-const { get } = require('@the-/window')
 
 /** @lends addUrlQuery */
 function addUrlQuery(urlString, query = {}) {

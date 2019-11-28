@@ -39,18 +39,17 @@
 ## @the-/util-site
 Utility for site
 
-**Version**: 16.0.2  
+**Version**: 16.0.3  
 **License**: MIT  
 
 * [@the-/util-site](#module_@the-/util-site)
     * [.appendQueryToSearch(query)](#module_@the-/util-site.appendQueryToSearch)
     * [.countSuffix(count, [options])](#module_@the-/util-site.countSuffix) ⇒ <code>string</code>
     * [.createStyleElement([options], css)](#module_@the-/util-site.createStyleElement) ⇒ <code>\*</code>
-    * [.envOf()](#module_@the-/util-site.envOf) ⇒ <code>\*</code>
+    * [.envOf(name, [options])](#module_@the-/util-site.envOf) ⇒ <code>\*</code>
     * [.hasMoreFor(counts)](#module_@the-/util-site.hasMoreFor) ⇒ <code>\*</code>
     * [.queryFromSearch(search)](#module_@the-/util-site.queryFromSearch) ⇒ <code>Object</code>
     * [.refOf(entity)](#module_@the-/util-site.refOf) ⇒ <code>\*</code>
-    * [.scrollToElement(element)](#module_@the-/util-site.scrollToElement) ⇒ <code>\*</code>
     * ~~[.seatAccess(seat)](#module_@the-/util-site.seatAccess) ⇒ <code>Object</code>~~
         * [~seatAccessBound](#module_@the-/util-site.seatAccess..seatAccessBound)
 
@@ -88,15 +87,16 @@ Create count suffix strings
 
 <a name="module_@the-/util-site.envOf"></a>
 
-### utilSite.envOf() ⇒ <code>\*</code>
+### utilSite.envOf(name, [options]) ⇒ <code>\*</code>
 Get env variables
 
 **Kind**: static method of [<code>@the-/util-site</code>](#module_@the-/util-site)  
 
-| Param | Type | Description |
-| --- | --- | --- |
-| [options.strict] | <code>Object</code> |  |
-|  | <code>string</code> | name - Name of env |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| name | <code>string</code> |  | Name of env |
+| [options] | <code>Object</code> | <code>{}</code> |  |
+| [options.strict] | <code>Object</code> |  |  |
 
 <a name="module_@the-/util-site.hasMoreFor"></a>
 
@@ -130,17 +130,6 @@ Convert into ref
 | Param |
 | --- |
 | entity | 
-
-<a name="module_@the-/util-site.scrollToElement"></a>
-
-### utilSite.scrollToElement(element) ⇒ <code>\*</code>
-Scroll to DOM element
-
-**Kind**: static method of [<code>@the-/util-site</code>](#module_@the-/util-site)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| element | <code>string</code> \| <code>HTMLDOMElement</code> | Element or it's selector |
 
 <a name="module_@the-/util-site.seatAccess"></a>
 

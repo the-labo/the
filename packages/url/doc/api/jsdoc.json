@@ -13,7 +13,7 @@
     "name": "@the-/url",
     "order": 2,
     "typicalname": "url",
-    "version": "15.4.9"
+    "version": "15.4.12"
   },
   {
     "description": "Add query to url string",

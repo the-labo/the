@@ -1,7 +1,7 @@
 'use strict'
 
 const { refTo } = require('clay-resource-ref')
-const { unlessProduction } = require('@the-/check')
+const { unlessProduction } = require('@the-/check-env')
 
 /**
  * Convert into ref

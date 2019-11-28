@@ -1,7 +1,7 @@
 'use strict'
 
 const { create: theAssert } = require('@the-/assert')
-const { unlessProduction } = require('@the-/check')
+const { unlessProduction } = require('@the-/check-env')
 
 const assert = theAssert('the:scope')
 

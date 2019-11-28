@@ -24,7 +24,7 @@
     "name": "@the-/ui-date",
     "order": 1,
     "typicalname": "uiDate",
-    "version": "16.1.1"
+    "version": "16.1.2"
   },
   {
     "description": "Style for TheInput",

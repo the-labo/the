@@ -40,35 +40,12 @@ TheDateStyle.externals = [
 ]
 TheDateStyle.data = (options) => {
   const {
-    activeOpacity = ThemeValues.activeOpacity,
     contentWidth = ThemeValues.contentWidth,
     dominantColor = ThemeValues.dominantColor,
     errorColor = ThemeValues.errorColor,
-    hoverOpacity = ThemeValues.hoverOpacity,
     inputBorderColor = ThemeValues.inputBorderColor,
     inputShadowColor = ThemeValues.inputShadowColor,
   } = options
-
-  const ToggleIconStyle = (values) =>
-    Object.assign(
-      {
-        '&:active': { opacity: activeOpacity },
-        '&:hover': { opacity: hoverOpacity },
-        alignItems: 'center',
-        bottom: 0,
-        cursor: 'pointer',
-        display: 'inline-flex',
-        height: '30px',
-        justifyContent: 'center',
-        minWidth: '1em',
-        outlineColor: dominantColor,
-        padding: '0 4px',
-        position: 'absolute',
-        right: 0,
-        zIndex: 4,
-      },
-      values,
-    )
 
   return Object.assign(
     {},

@@ -1,4 +1,7 @@
 {
+  "name": "@the-/scope",
+  "description": "State scope for the-store",
+  "version": "15.4.13",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -10,10 +13,9 @@
   },
   "dependencies": {
     "@the-/assert": "^15.4.1",
-    "@the-/check": "^15.5.8",
+    "@the-/check-env": "^15.6.0",
     "asobj": "^3.0.1"
   },
-  "description": "State scope for the-store",
   "devDependencies": {
     "@the-/store": "file:../store"
   },
@@ -28,7 +30,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/scope",
   "publishConfig": {
     "access": "public"
   },
@@ -39,6 +40,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.11"
+  }
 }

@@ -4,7 +4,7 @@
  * @description Date ui
  * @module @the-/ui-date
  * @typicalname uiDate
- * @version 16.1.1
+ * @version 16.1.2
  */
 'use strict'
 

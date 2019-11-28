@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui",
   "description": "React components of THE framework",
-  "version": "16.2.5",
+  "version": "16.2.7",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -15,7 +15,7 @@
     "@the-/ui-alt": "^15.5.0",
     "@the-/ui-bar": "^15.5.1",
     "@the-/ui-body": "^15.5.0",
-    "@the-/ui-button": "^15.5.4",
+    "@the-/ui-button": "^15.5.5",
     "@the-/ui-caught": "^15.4.13",
     "@the-/ui-condition": "^15.5.0",
     "@the-/ui-container": "^15.4.12",

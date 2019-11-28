@@ -10,7 +10,7 @@ const {
 const { get } = require('bwindow')
 const { flatten } = require('objnest')
 const { create: theAssert } = require('@the-/assert')
-const { unlessProduction } = require('@the-/check')
+const { unlessProduction } = require('@the-/check-env')
 const { scopes } = require('@the-/scope')
 const helpers = require('./helpers')
 const toStoreScopeClass = require('./toStoreScopeClass')

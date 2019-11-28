@@ -13,7 +13,7 @@
     "name": "@the-/util-sw",
     "order": 2,
     "typicalname": "utilSw",
-    "version": "15.5.1"
+    "version": "15.5.2"
   },
   {
     "description": "Get app cache from WorkerGlobalScope",
@@ -22,7 +22,7 @@
     "longname": "appCache",
     "meta": {
       "filename": "appCache.js",
-      "lineno": 3,
+      "lineno": 8,
       "path": "lib"
     },
     "name": "appCache",
@@ -59,6 +59,15 @@
         "name": "options"
       }
     ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
     "scope": "global"
   },
   {
@@ -68,7 +77,7 @@
     "longname": "cachedFetch",
     "meta": {
       "filename": "cachingFetch.js",
-      "lineno": 3,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "cachedFetch",
@@ -77,18 +86,27 @@
       {
         "type": {
           "names": [
-            "Cache"
-          ]
-        },
-        "name": "cache"
-      },
-      {
-        "type": {
-          "names": [
             "Request"
           ]
         },
         "name": "request"
+      },
+      {
+        "type": {
+          "names": [
+            "Cache"
+          ]
+        },
+        "name": "cache"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
       }
     ],
     "scope": "global"

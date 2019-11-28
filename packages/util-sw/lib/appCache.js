@@ -1,18 +1,18 @@
 'use strict'
 
+const { unlessProduction } = require('@the-/check-env')
+
+const SCOPE_SEPARATOR = '/'
+const VERSION_SEPARATOR = '@'
+
 /**
  * Get app cache from WorkerGlobalScope
  * @function appCache
  * @param {string} name - Name of app
  * @param {string} [version='unknown'] - Version of app
  * @param {Object} [options={}]
+ * @returns {Promise<*>}
  */
-const { unlessProduction } = require('@the-/check')
-
-const SCOPE_SEPARATOR = '/'
-const VERSION_SEPARATOR = '@'
-
-/** @lends appCache */
 async function appCache(name, version = 'unknown', options = {}) {
   const { scope = null } = options
   if (typeof caches === 'undefined') {

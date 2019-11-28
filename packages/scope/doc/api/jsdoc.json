@@ -13,7 +13,7 @@
     "name": "@the-/scope",
     "order": 2,
     "typicalname": "scope",
-    "version": "15.4.8"
+    "version": "15.4.13"
   },
   {
     "description": "Abstract state class",

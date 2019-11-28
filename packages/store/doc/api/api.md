@@ -5,7 +5,7 @@
 ## @the-/store
 Redux wrapper for the-framework
 
-**Version**: 15.4.8  
+**Version**: 15.4.12  
 **License**: MIT  
 
 * [@the-/store](#module_@the-/store)

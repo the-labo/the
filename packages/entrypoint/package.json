@@ -1,4 +1,7 @@
 {
+  "name": "@the-/entrypoint",
+  "description": "Browser entrypoint for the-framework",
+  "version": "15.4.12",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -9,13 +12,12 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.8",
+    "@the-/check": "^15.6.2",
     "@the-/ui-router": "^15.4.11",
-    "@the-/url": "^15.4.9",
+    "@the-/url": "^15.4.12",
     "@the-/window": "^15.8.2",
     "history": "^4.10.1"
   },
-  "description": "Browser entrypoint for the-framework",
   "devDependencies": {
     "injectmock": "^2.0.0"
   },
@@ -30,7 +32,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/entrypoint",
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
@@ -45,6 +46,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.11"
+  }
 }

@@ -4,7 +4,7 @@
  * @description Button of the-components
  * @module @the-/ui-button
  * @typicalname uiButton
- * @version 15.5.4
+ * @version 15.5.5
  */
 'use strict'
 
@@ -13,12 +13,6 @@ import TheButtonGroup from './TheButtonGroup'
 import TheButtonStyle from './TheButtonStyle'
 
 export {
-  TheButton,
-  TheButtonGroup,
-  TheButtonStyle,
-}
-
-export default {
   TheButton,
   TheButtonGroup,
   TheButtonStyle,

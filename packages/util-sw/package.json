@@ -1,7 +1,7 @@
 {
   "name": "@the-/util-sw",
   "description": "Utility for service workers",
-  "version": "15.5.1",
+  "version": "15.5.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.8",
+    "@the-/check-env": "^15.6.0",
     "url-parse": "^1.4.6"
   },
   "devDependencies": {

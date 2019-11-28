@@ -44,8 +44,10 @@ function asController(instance, spec, context, options = {}) {
        * @returns {function()} cleanup function
        */
       addCallbacks(callbackFuncs) {
-        const closeFuncs = Object.entries(callbackFuncs).map(
-          ([handleName, callback]) => this.addCallback(handleName, callback),
+        const closeFuncs = Object.entries(
+          callbackFuncs,
+        ).map(([handleName, callback]) =>
+          this.addCallback(handleName, callback),
         )
         return () => {
           for (const closeFunc of closeFuncs) {

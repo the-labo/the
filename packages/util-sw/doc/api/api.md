@@ -11,10 +11,10 @@
 ## Functions
 
 <dl>
-<dt><a href="#appCache">appCache(name, [version], [options])</a></dt>
+<dt><a href="#appCache">appCache(name, [version], [options])</a> ⇒ <code>Promise.&lt;*&gt;</code></dt>
 <dd><p>Get app cache from WorkerGlobalScope</p>
 </dd>
-<dt><a href="#cachedFetch">cachedFetch(cache, request)</a></dt>
+<dt><a href="#cachedFetch">cachedFetch(request, cache)</a> ⇒ <code>Promise.&lt;*&gt;</code></dt>
 <dd><p>Fetch with cache</p>
 </dd>
 <dt><a href="#parseUrl">parseUrl(urlString)</a> ⇒ <code>URL</code></dt>
@@ -27,11 +27,11 @@
 ## @the-/util-sw
 Utility for service workers
 
-**Version**: 15.5.1  
+**Version**: 15.5.2  
 **License**: MIT  
 <a name="appCache"></a>
 
-## appCache(name, [version], [options])
+## appCache(name, [version], [options]) ⇒ <code>Promise.&lt;\*&gt;</code>
 Get app cache from WorkerGlobalScope
 
 **Kind**: global function  
@@ -44,15 +44,15 @@ Get app cache from WorkerGlobalScope
 
 <a name="cachedFetch"></a>
 
-## cachedFetch(cache, request)
+## cachedFetch(request, cache) ⇒ <code>Promise.&lt;\*&gt;</code>
 Fetch with cache
 
 **Kind**: global function  
 
 | Param | Type |
 | --- | --- |
-| cache | <code>Cache</code> | 
 | request | <code>Request</code> | 
+| cache | <code>Cache</code> | 
 
 <a name="parseUrl"></a>
 

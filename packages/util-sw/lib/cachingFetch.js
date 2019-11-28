@@ -1,14 +1,14 @@
 'use strict'
 
+const { unlessProduction } = require('@the-/check-env')
+
 /**
  * Fetch with cache
  * @function cachedFetch
- * @param {Cache} cache
  * @param {Request} request
+ * @param {Cache} cache
+ * @returns {Promise<*>}
  */
-const { unlessProduction } = require('@the-/check')
-
-/** @lends cachingFetch */
 async function cachingFetch(cache, request) {
   const cached = cache && (await cache.match(request))
   if (cached && cached.ok) {

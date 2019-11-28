@@ -2,7 +2,7 @@
 
 const asleep = require('asleep')
 const uuid = require('uuid')
-const { unlessProduction } = require('@the-/check')
+const { unlessProduction } = require('@the-/check-env')
 const { TheQueue } = require('@the-/queue')
 const { Consumer, TheStream } = require('@the-/stream')
 const IOEvents = require('../constants/IOEvents')

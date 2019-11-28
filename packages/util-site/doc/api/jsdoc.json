@@ -13,7 +13,7 @@
     "name": "@the-/util-site",
     "order": 5,
     "typicalname": "utilSite",
-    "version": "16.0.2"
+    "version": "16.0.3"
   },
   {
     "description": "Container name for",
@@ -26,7 +26,7 @@
       "path": "lib"
     },
     "name": "containerNameFor",
-    "order": 12,
+    "order": 10,
     "params": [
       {
         "type": {
@@ -71,7 +71,7 @@
       "path": "lib"
     },
     "name": "networkNameFor",
-    "order": 13,
+    "order": 11,
     "params": [
       {
         "type": {
@@ -116,7 +116,7 @@
       "path": "lib"
     },
     "name": "portNumberFor",
-    "order": 14,
+    "order": 12,
     "params": [
       {
         "type": {
@@ -172,7 +172,7 @@
       "path": "lib"
     },
     "name": "portNumberRangeFor",
-    "order": 15,
+    "order": 13,
     "params": [
       {
         "type": {
@@ -227,7 +227,7 @@
       "path": "lib"
     },
     "name": "processNameFor",
-    "order": 16,
+    "order": 14,
     "params": [
       {
         "type": {
@@ -272,7 +272,7 @@
       "path": "lib"
     },
     "name": "secretFor",
-    "order": 17,
+    "order": 15,
     "params": [
       {
         "type": {
@@ -317,7 +317,7 @@
       "path": "lib"
     },
     "name": "userNameFor",
-    "order": 18,
+    "order": 16,
     "params": [
       {
         "type": {
@@ -484,19 +484,30 @@
       {
         "type": {
           "names": [
+            "string"
+          ]
+        },
+        "description": "Name of env",
+        "name": "name"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
             "Object"
           ]
         },
         "optional": true,
         "name": "options.strict"
-      },
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "name - Name of env"
       }
     ],
     "returns": [
@@ -540,41 +551,6 @@
     "scope": "static"
   },
   {
-    "id": "module:@the-/util-site\nConvert into japanese strings.\n英数字記号は半角、カナは全角へ.formatString",
-    "kind": "function",
-    "longname": "module:@the-/util-site\nConvert into japanese strings.\n英数字記号は半角、カナは全角へ.formatString",
-    "memberof": "module:@the-/util-site\nConvert into japanese strings.\n英数字記号は半角、カナは全角へ",
-    "meta": {
-      "filename": "normalizeString.js",
-      "lineno": 2,
-      "path": "lib"
-    },
-    "name": "formatString",
-    "order": 6,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        }
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        }
-      }
-    ],
-    "scope": "static",
-    "see": [
-      "https://gist.github.com/think49/964592/96c2d034ee07d6c2044e501d4e06b73a6a9e1c72"
-    ]
-  },
-  {
     "description": "Get query from search",
     "id": "module:@the-/util-site.queryFromSearch",
     "kind": "function",
@@ -586,7 +562,7 @@
       "path": "lib"
     },
     "name": "queryFromSearch",
-    "order": 7,
+    "order": 6,
     "params": [
       {
         "type": {
@@ -620,46 +596,10 @@
       "path": "lib"
     },
     "name": "refOf",
-    "order": 8,
+    "order": 7,
     "params": [
       {
         "name": "entity"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        }
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Scroll to DOM element",
-    "id": "module:@the-/util-site.scrollToElement",
-    "kind": "function",
-    "longname": "module:@the-/util-site.scrollToElement",
-    "memberof": "module:@the-/util-site",
-    "meta": {
-      "filename": "scrollToElement.js",
-      "lineno": 5,
-      "path": "lib"
-    },
-    "name": "scrollToElement",
-    "order": 9,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string",
-            "HTMLDOMElement"
-          ]
-        },
-        "description": "Element or it's selector",
-        "name": "element"
       }
     ],
     "returns": [
@@ -686,7 +626,7 @@
       "path": "lib"
     },
     "name": "seatAccess",
-    "order": 10,
+    "order": 8,
     "params": [
       {
         "name": "seat"
@@ -714,7 +654,7 @@
       "path": "lib"
     },
     "name": "seatAccessBound",
-    "order": 11,
+    "order": 9,
     "scope": "inner"
   }
 ]

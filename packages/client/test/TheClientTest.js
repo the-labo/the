@@ -125,7 +125,10 @@ describe('the-client', () => {
 
     await asleep(200)
 
-    deepEqual(onBuyData, [[100, 100], [400, 500]])
+    deepEqual(onBuyData, [
+      [100, 100],
+      [400, 500],
+    ])
   })
 
   it('Using stream api', async () => {
