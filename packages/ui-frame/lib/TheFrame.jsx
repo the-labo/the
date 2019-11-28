@@ -7,7 +7,6 @@ import { TheCondition } from '@the-/ui-condition'
 import { TheSpin } from '@the-/ui-spin'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 import { get } from '@the-/window'
-import TheFrameStyle from './TheFrameStyle'
 
 /**
  * iFrame of the-components
@@ -140,12 +139,10 @@ class TheFrame extends React.Component {
   }
 }
 
-TheFrame.Style = TheFrameStyle
-
 TheFrame.propTypes = {
   /** Alt text */
   alt: PropTypes.string,
-  /** Enbed source content as dynamic html */
+  /** Embed source content as dynamic html */
   embed: PropTypes.bool,
   /** Handler for Load */
   onLoad: PropTypes.func,

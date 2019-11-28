@@ -12,7 +12,7 @@
     "name": "@the-/ui-frame",
     "order": 0,
     "typicalname": "uiFrame",
-    "version": "15.4.10"
+    "version": "15.4.12"
   },
   {
     "description": "iFrame of the-components",
@@ -21,7 +21,7 @@
     "longname": "TheFrame",
     "meta": {
       "filename": "TheFrame.jsx",
-      "lineno": 16,
+      "lineno": 15,
       "path": "lib"
     },
     "name": "TheFrame",
@@ -51,7 +51,7 @@
     "memberof": "TheFrame.propTypes",
     "meta": {
       "filename": "TheFrame.jsx",
-      "lineno": 147,
+      "lineno": 144,
       "path": "lib"
     },
     "name": "alt",
@@ -59,14 +59,14 @@
     "scope": "static"
   },
   {
-    "description": "Enbed source content as dynamic html",
+    "description": "Embed source content as dynamic html",
     "id": "TheFrame.propTypes.embed",
     "kind": "member",
     "longname": "TheFrame.propTypes.embed",
     "memberof": "TheFrame.propTypes",
     "meta": {
       "filename": "TheFrame.jsx",
-      "lineno": 149,
+      "lineno": 146,
       "path": "lib"
     },
     "name": "embed",
@@ -81,7 +81,7 @@
     "memberof": "TheFrame.propTypes",
     "meta": {
       "filename": "TheFrame.jsx",
-      "lineno": 151,
+      "lineno": 148,
       "path": "lib"
     },
     "name": "onLoad",
@@ -96,7 +96,7 @@
     "memberof": "TheFrame.propTypes",
     "meta": {
       "filename": "TheFrame.jsx",
-      "lineno": 153,
+      "lineno": 150,
       "path": "lib"
     },
     "name": "spinning",
@@ -111,7 +111,7 @@
     "memberof": "TheFrame.propTypes",
     "meta": {
       "filename": "TheFrame.jsx",
-      "lineno": 155,
+      "lineno": 152,
       "path": "lib"
     },
     "name": "src",

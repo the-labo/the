@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-chat",
   "description": "Chat UI of the-components",
-  "version": "15.4.14",
+  "version": "15.4.15",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,26 +13,26 @@
   "dependencies": {
     "@the-/const-ui": "^15.5.0",
     "@the-/date": "^15.4.11",
-    "@the-/ui-button": "^15.5.1",
-    "@the-/ui-condition": "^15.4.11",
-    "@the-/ui-form": "^15.4.11",
-    "@the-/ui-icon": "^15.4.12",
-    "@the-/ui-image": "^15.4.12",
-    "@the-/ui-input": "^15.5.21",
-    "@the-/ui-spin": "^15.4.11",
+    "@the-/ui-button": "^15.5.4",
+    "@the-/ui-condition": "^15.5.0",
+    "@the-/ui-form": "^15.4.13",
+    "@the-/ui-icon": "^15.4.13",
+    "@the-/ui-image": "^15.5.0",
+    "@the-/ui-input": "^16.0.1",
+    "@the-/ui-spin": "^15.5.0",
     "@the-/ui-style": "^16.0.0",
-    "@the-/ui-video": "^15.4.13",
+    "@the-/ui-video": "^15.4.16",
     "@the-/util-color": "^15.4.12",
-    "@the-/util-ui": "^16.0.6",
+    "@the-/util-ui": "^16.3.1",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui-demo": "^15.4.12",
+    "@the-/ui-demo": "^15.5.3",
     "babel-runtime": "^6.26.0",
     "coz": "^7.0.19",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2"
   },
   "engines": {

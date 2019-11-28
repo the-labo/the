@@ -12,7 +12,7 @@
     "name": "@the-/ui-paint",
     "order": 0,
     "typicalname": "uiPaint",
-    "version": "15.6.0"
+    "version": "15.7.0"
   },
   {
     "description": "Hand write painting",
@@ -21,7 +21,7 @@
     "longname": "ThePaint",
     "meta": {
       "filename": "ThePaint.jsx",
-      "lineno": 20,
+      "lineno": 21,
       "path": "lib"
     },
     "name": "ThePaint",
@@ -50,11 +50,11 @@
     "longname": "DrawerLayer",
     "meta": {
       "filename": "DrawerLayer.jsx",
-      "lineno": 10,
+      "lineno": 11,
       "path": "lib/helpers"
     },
     "name": "DrawerLayer",
-    "order": 6,
+    "order": 10,
     "params": [
       {
         "name": "canvas"
@@ -83,7 +83,7 @@
     "memberof": "ThePaint.propTypes",
     "meta": {
       "filename": "ThePaint.jsx",
-      "lineno": 218,
+      "lineno": 221,
       "path": "lib"
     },
     "name": "method",
@@ -98,7 +98,7 @@
     "memberof": "ThePaint.propTypes",
     "meta": {
       "filename": "ThePaint.jsx",
-      "lineno": 222,
+      "lineno": 225,
       "path": "lib"
     },
     "name": "onDrawer",
@@ -118,6 +118,65 @@
     },
     "name": "options",
     "order": 5,
+    "scope": "static"
+  },
+  {
+    "description": "Fit to size",
+    "id": "ResizePolicies.FIT",
+    "kind": "member",
+    "longname": "ResizePolicies.FIT",
+    "memberof": "ResizePolicies",
+    "meta": {
+      "filename": "ResizePolicies.jsx",
+      "lineno": 9,
+      "path": "lib/constants"
+    },
+    "name": "FIT",
+    "order": 8,
+    "scope": "static"
+  },
+  {
+    "description": "Keep size",
+    "id": "ResizePolicies.KEEP",
+    "kind": "member",
+    "longname": "ResizePolicies.KEEP",
+    "memberof": "ResizePolicies",
+    "meta": {
+      "filename": "ResizePolicies.jsx",
+      "lineno": 11,
+      "path": "lib/constants"
+    },
+    "name": "KEEP",
+    "order": 9,
+    "scope": "static"
+  },
+  {
+    "description": "Method of drawing",
+    "id": "module:@the-/ui-paint.DrawMethods",
+    "kind": "namespace",
+    "longname": "module:@the-/ui-paint.DrawMethods",
+    "memberof": "module:@the-/ui-paint",
+    "meta": {
+      "filename": "DrawingMethods.jsx",
+      "lineno": 4,
+      "path": "lib/constants"
+    },
+    "name": "DrawMethods",
+    "order": 6,
+    "scope": "static"
+  },
+  {
+    "id": "module:@the-/ui-paint.ResizePolicies",
+    "kind": "namespace",
+    "longname": "module:@the-/ui-paint.ResizePolicies",
+    "memberof": "module:@the-/ui-paint",
+    "meta": {
+      "filename": "ResizePolicies.jsx",
+      "lineno": 3,
+      "path": "lib/constants"
+    },
+    "name": "ResizePolicies",
+    "order": 7,
     "scope": "static"
   }
 ]
