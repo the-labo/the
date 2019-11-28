@@ -5,7 +5,6 @@ import React from 'react'
 import { TheContainer } from '@the-/ui-container'
 import { TheLink } from '@the-/ui-link'
 import { htmlAttributesFor } from '@the-/util-ui'
-import TheFooterStyle from './TheFooterStyle'
 
 /**
  * Footer of the-components
@@ -55,8 +54,6 @@ TheFooter.Row = function TheFooterRow({ children, className }) {
     <div className={classnames('the-footer-row', className)}>{children}</div>
   )
 }
-
-TheFooter.Style = TheFooterStyle
 
 TheFooter.propTypes = {}
 

@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui",
   "description": "React components of THE framework",
-  "version": "16.2.1",
+  "version": "16.2.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,14 +13,14 @@
   },
   "dependencies": {
     "@the-/ui-alt": "^15.5.0",
-    "@the-/ui-bar": "^15.5.0",
+    "@the-/ui-bar": "^15.5.1",
     "@the-/ui-body": "^15.5.0",
     "@the-/ui-button": "^15.5.4",
     "@the-/ui-caught": "^15.4.13",
     "@the-/ui-condition": "^15.5.0",
     "@the-/ui-container": "^15.4.12",
     "@the-/ui-dialog": "^16.0.1",
-    "@the-/ui-footer": "^15.4.14",
+    "@the-/ui-footer": "^15.4.15",
     "@the-/ui-form": "^15.4.13",
     "@the-/ui-hamburger": "^15.4.15",
     "@the-/ui-head": "^15.4.10",
@@ -30,7 +30,7 @@
     "@the-/ui-image": "^15.5.0",
     "@the-/ui-info": "^15.4.12",
     "@the-/ui-input": "^16.0.1",
-    "@the-/ui-link": "^15.5.0",
+    "@the-/ui-link": "^15.5.1",
     "@the-/ui-main": "^15.4.14",
     "@the-/ui-menu": "^15.4.18",
     "@the-/ui-meta": "^15.4.12",
@@ -51,7 +51,7 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui-demo": "^15.5.3",
+    "@the-/ui-demo": "^15.5.4",
     "fmtjson": "^4.0.6",
     "injectmock": "^2.0.0",
     "react": "^16.12.0",

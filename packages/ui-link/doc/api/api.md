@@ -24,7 +24,7 @@
 ## @the-/ui-link
 Link of the-components
 
-**Version**: 15.5.0  
+**Version**: 15.5.1  
 <a name="TheLink"></a>
 
 ## TheLink()

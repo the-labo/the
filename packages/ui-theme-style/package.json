@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-theme-style",
   "description": "Theme style for the-components",
-  "version": "16.1.0",
+  "version": "16.1.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -17,8 +17,8 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui": "^16.2.1",
-    "@the-/ui-demo": "^15.5.3",
+    "@the-/ui": "^16.2.3",
+    "@the-/ui-demo": "^15.5.4",
     "coz": "^7.0.19",
     "objnest": "^5.0.10",
     "react": "^16.12.0",

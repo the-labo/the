@@ -3,7 +3,6 @@
 import classnames from 'classnames'
 import React from 'react'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
-import TheBarStyle from './TheBarStyle'
 
 /**
  * Bar of the-component
@@ -21,8 +20,6 @@ const TheBar = (props) => {
     </div>
   )
 }
-
-TheBar.Style = TheBarStyle
 
 TheBar.propTypes = {}
 
