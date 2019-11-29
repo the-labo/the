@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/store
  * @typicalname store
- * @version 15.4.12
+ * @version 15.5.0
  */
 'use strict'
 
