@@ -87,6 +87,27 @@ describe('as-style-data', () => {
       },
     })
   })
+
+  it('Keyframes', () => {
+    deepEqual(
+      asStyleData({
+        '@keyframes slidein': {
+          from: {
+            transform: 'translateX(0%)',
+          },
+          to: {
+            transform: 'translateX(100%)',
+          },
+        },
+      }),
+      {
+        '@keyframes slidein': {
+          from: { transform: 'translateX(0%)' },
+          to: { transform: 'translateX(100%)' },
+        },
+      },
+    )
+  })
 })
 
 /* global describe, before, after, it */

@@ -60,15 +60,18 @@ function asStyleData(scopeSelector, data) {
       Object.assign(
         scoped,
         ...selector.split(',').map((aSelector) => {
+          if (aSelector.startsWith('@')) {
+            return { [selector]: data[selector] }
+          }
           const created = selectorData(
             combineSelectors(scopeSelector, aSelector),
             data[selector],
           )
           return Object.keys(created).reduce(
-            (result, key) =>
-              Object.assign(result, {
-                [key]: Object.assign({}, scoped[key] || {}, created[key]),
-              }),
+            (result, key) => ({
+              ...result,
+              [key]: Object.assign({}, scoped[key] || {}, created[key]),
+            }),
             {},
           )
         }),

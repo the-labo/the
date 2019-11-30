@@ -37,6 +37,9 @@ TheSpinStyle.data = (options) => {
       textAlign: 'center',
     },
     '.the-spin.the-spinner-cover': {
+      '&.the-spinner-enabled': {
+        animation: '10s the-spin-cover-fade infinite linear',
+      },
       alignItems: 'center',
       background: overlayBackgroundColor,
       bottom: 0,
@@ -60,6 +63,11 @@ TheSpinStyle.data = (options) => {
       margin: '0 4px',
       opacity: 1,
       transition: 'opacity 100ms',
+    },
+    '@keyframes the-spin-cover-fade': {
+      '0%': { opacity: 1 },
+      '100%': { opacity: 1 },
+      '50%': { opacity: 0.3 },
     },
   })
 }

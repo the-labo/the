@@ -79,6 +79,7 @@ Usage
   - [.scrollToElement(element)](./doc/api/api.md#module_@the-/util-site.scrollToElement)
 - module:@the-/util-ui
   - [.asStyleData(scopeSelector,data)](./doc/api/api.md#module_@the-/util-ui.asStyleData)
+  - [.bindEventListeners(elm,handlers,opt)](./doc/api/api.md#module_@the-/util-ui.bindEventListeners)
   - [.changedProps(prevProps,props)](./doc/api/api.md#module_@the-/util-ui.changedProps)
   - [.eventHandlersFor(props,options)](./doc/api/api.md#module_@the-/util-ui.eventHandlersFor)
   - [.htmlAttributesFor(props,options)](./doc/api/api.md#module_@the-/util-ui.htmlAttributesFor)
