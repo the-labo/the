@@ -3,13 +3,6 @@
 const moment = require('moment')
 const momentTz = require('moment-timezone')
 
-require('moment/locale/ja')
-require('moment/locale/en-au')
-require('moment/locale/en-ca')
-require('moment/locale/en-gb')
-require('moment/locale/en-ie')
-require('moment/locale/en-nz')
-
 /**
  * Mixin for moment
  * @memberof module:@the-/date.mixins

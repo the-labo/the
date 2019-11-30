@@ -13,7 +13,7 @@
     "name": "@the-/date",
     "order": 3,
     "typicalname": "date",
-    "version": "15.4.11"
+    "version": "15.5.0"
   },
   {
     "description": "Date manipulator",
@@ -1375,7 +1375,7 @@
     "memberof": "MomentMixed",
     "meta": {
       "filename": "momentMix.js",
-      "lineno": 35,
+      "lineno": 28,
       "path": "lib/mixins"
     },
     "name": "toMoment",
@@ -2904,7 +2904,7 @@
     "memberof": "module:@the-/date.mixins",
     "meta": {
       "filename": "momentMix.js",
-      "lineno": 13,
+      "lineno": 6,
       "path": "lib/mixins"
     },
     "name": "momentMix",
@@ -3088,7 +3088,7 @@
     "memberof": "module:@the-/date.mixins.momentMix",
     "meta": {
       "filename": "momentMix.js",
-      "lineno": 21,
+      "lineno": 14,
       "path": "lib/mixins"
     },
     "name": "MomentMixed",
