@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-form",
   "description": "Form of the-components",
-  "version": "15.4.13",
+  "version": "15.4.14",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,16 +14,16 @@
     "@the-/assert": "^15.2.0",
     "@the-/const-ui": "^15.5.0",
     "@the-/ui-condition": "^15.5.0",
-    "@the-/ui-icon": "^15.4.13",
+    "@the-/ui-icon": "^15.4.14",
     "@the-/ui-style": "^16.0.0",
-    "@the-/util-ui": "^16.3.1",
+    "@the-/util-ui": "^16.3.2",
     "asobj": "^3.0.1",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui-button": "^15.5.4",
-    "@the-/ui-demo": "^15.5.1",
+    "@the-/ui-button": "^15.5.7",
+    "@the-/ui-demo": "^15.5.4",
     "@the-/ui-input": "^15.6.0",
     "@the-/ui-router": "^15.4.11",
     "coz": "^7.0.19",

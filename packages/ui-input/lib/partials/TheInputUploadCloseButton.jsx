@@ -2,7 +2,7 @@
 
 import c from 'classnames'
 import React from 'react'
-import { TheIcon } from '@the-/ui-icon'
+import TheIcon from '@the-/ui-icon/shim/TheIcon'
 
 export default function TheInputUploadCloseButton({ icon, onClick }) {
   return (

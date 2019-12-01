@@ -3,7 +3,7 @@
 import { clone } from 'asobj'
 import c from 'classnames'
 import React, { useCallback, useRef, useState } from 'react'
-import { TheIcon } from '@the-/ui-icon'
+import TheIcon from '@the-/ui-icon/shim/TheIcon'
 import TheInputText from './TheInputText'
 
 const TheInputSearch = React.memo((props) => {

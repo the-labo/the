@@ -4,7 +4,7 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { isProduction } from '@the-/check'
-import { TheCondition } from '@the-/ui-condition'
+import TheCondition from '@the-/ui-condition/shim/TheCondition'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
 /**

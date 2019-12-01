@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-image",
   "description": "Image of the-components",
-  "version": "15.5.1",
+  "version": "15.5.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,7 +14,7 @@
     "@the-/const-ui": "^15.5.0",
     "@the-/ui-icon": "^15.4.14",
     "@the-/ui-style": "^16.0.0",
-    "@the-/util-ui": "^16.3.1",
+    "@the-/util-ui": "^16.3.2",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },

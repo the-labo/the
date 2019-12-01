@@ -2,7 +2,7 @@
 
 import c from 'classnames'
 import React from 'react'
-import { TheButton } from '@the-/ui-button'
+import TheButton from '@the-/ui-button/shim/TheButton'
 
 export default function TheTabButton(props) {
   const {

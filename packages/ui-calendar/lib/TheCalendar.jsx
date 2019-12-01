@@ -6,8 +6,8 @@ import PropTypes from 'prop-types'
 import React, { useCallback, useMemo } from 'react'
 import { Calendar as BigCalendar, momentLocalizer } from 'react-big-calendar'
 import theDate from '@the-/date'
-import { TheButton } from '@the-/ui-button'
-import { TheCondition } from '@the-/ui-condition'
+import TheButton from '@the-/ui-button/shim/TheButton'
+import TheCondition from '@the-/ui-condition/shim/TheCondition'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
 const localizer = momentLocalizer(moment)

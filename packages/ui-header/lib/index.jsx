@@ -4,7 +4,7 @@
  * @description Header of the-components
  * @module @the-/ui-header
  * @typicalname uiHeader
- * @version 15.4.16
+ * @version 15.4.17
  */
 'use strict'
 

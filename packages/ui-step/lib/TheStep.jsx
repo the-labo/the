@@ -3,9 +3,10 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheButton, TheButtonGroup } from '@the-/ui-button'
-import { TheCondition } from '@the-/ui-condition'
-import { TheSpin } from '@the-/ui-spin'
+import TheButton from '@the-/ui-button/shim/TheButton'
+import TheButtonGroup from '@the-/ui-button/shim/TheButtonGroup'
+import TheCondition from '@the-/ui-condition/shim/TheCondition'
+import TheSpin from '@the-/ui-spin/shim/TheSpin'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
 /**

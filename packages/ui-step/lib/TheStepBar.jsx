@@ -3,7 +3,7 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useRef } from 'react'
-import { TheIcon } from '@the-/ui-icon'
+import TheIcon from '@the-/ui-icon/shim/TheIcon'
 
 const TheStepBar = (props) => {
   const { nodes, onStep, step } = props

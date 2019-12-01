@@ -3,8 +3,8 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheIcon } from '@the-/ui-icon'
-import { TheInput } from '@the-/ui-input'
+import TheIcon from '@the-/ui-icon/shim/TheIcon'
+import TheInput from '@the-/ui-input/shim/TheInput'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
 /**

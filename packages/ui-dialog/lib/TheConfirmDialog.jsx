@@ -3,8 +3,8 @@
 import { clone } from 'asobj'
 import PropTypes from 'prop-types'
 import React, { useCallback, useMemo, useState } from 'react'
-import { TheButton } from '@the-/ui-button'
-import { TheInput } from '@the-/ui-input'
+import TheButton from '@the-/ui-button/shim/TheButton'
+import TheInput from '@the-/ui-input/shim/TheInput'
 import TheDialog from './TheDialog'
 
 /**

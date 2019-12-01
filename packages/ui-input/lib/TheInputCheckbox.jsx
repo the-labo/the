@@ -3,7 +3,7 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React, { useCallback, useMemo } from 'react'
-import { TheIcon } from '@the-/ui-icon'
+import TheIcon from '@the-/ui-icon/shim/TheIcon'
 import { eventHandlersFor, htmlAttributesFor, newId } from '@the-/util-ui'
 import {
   normalizeArrayValue,

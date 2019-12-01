@@ -4,7 +4,7 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 import L from '@okunishinishi/leaflet-shim'
-import { TheSpin } from '@the-/ui-spin'
+import TheSpin from '@the-/ui-spin/shim/TheSpin'
 import {
   changedProps,
   eventHandlersFor,

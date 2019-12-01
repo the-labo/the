@@ -24,7 +24,7 @@
     "name": "@the-/ui-input",
     "order": 1,
     "typicalname": "uiInput",
-    "version": "16.0.1"
+    "version": "16.0.3"
   },
   {
     "description": "Text Input",

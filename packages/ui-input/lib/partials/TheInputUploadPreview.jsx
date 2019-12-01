@@ -2,7 +2,7 @@
 
 import c from 'classnames'
 import React, { useCallback } from 'react'
-import { TheIcon } from '@the-/ui-icon'
+import TheIcon from '@the-/ui-icon/shim/TheIcon'
 import { isImageUrl, isVideoUrl } from '../helpers'
 
 export default React.memo(function TheInputUploadPreview({

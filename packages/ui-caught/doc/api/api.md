@@ -21,7 +21,7 @@
 ## @the-/ui-caught
 Component to show caught errors
 
-**Version**: 15.4.13  
+**Version**: 15.4.14  
 
 * [@the-/ui-caught](#module_@the-/ui-caught)
     * [.TheCaught](#module_@the-/ui-caught.TheCaught)

@@ -3,7 +3,7 @@
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheIcon } from '@the-/ui-icon'
+import TheIcon from '@the-/ui-icon/shim/TheIcon'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 import TheFormBinder from './TheFormBinder'
 

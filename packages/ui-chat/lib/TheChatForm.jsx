@@ -3,9 +3,9 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheButton } from '@the-/ui-button'
-import { TheForm } from '@the-/ui-form'
-import { TheInput } from '@the-/ui-input'
+import TheButton from '@the-/ui-button/shim/TheButton'
+import TheForm from '@the-/ui-form/shim/TheForm'
+import TheInput from '@the-/ui-input/shim/TheInput'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
 /**

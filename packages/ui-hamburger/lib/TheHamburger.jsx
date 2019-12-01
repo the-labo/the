@@ -4,7 +4,7 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useMemo } from 'react'
 import { StylePresets } from '@the-/const-ui'
-import { TheButton } from '@the-/ui-button'
+import TheButton from '@the-/ui-button/shim/TheButton'
 import {
   eventHandlersFor,
   htmlAttributesFor,

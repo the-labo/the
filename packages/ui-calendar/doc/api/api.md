@@ -24,7 +24,7 @@
 ## @the-/ui-calendar
 Calendar of the-components
 
-**Version**: 15.4.15  
+**Version**: 15.4.17  
 <a name="TheCalendar"></a>
 
 ## TheCalendar()

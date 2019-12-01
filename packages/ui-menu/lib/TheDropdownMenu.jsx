@@ -4,7 +4,7 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 import ClickOutside from '@okunishinishi/react-click-outside'
-import { TheIcon } from '@the-/ui-icon'
+import TheIcon from '@the-/ui-icon/shim/TheIcon'
 import {
   changedProps,
   eventHandlersFor,

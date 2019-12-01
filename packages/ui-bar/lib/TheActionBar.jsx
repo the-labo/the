@@ -3,8 +3,8 @@
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { TheButton } from '@the-/ui-button'
-import { TheContainer } from '@the-/ui-container'
+import TheButton from '@the-/ui-button/shim/TheButton'
+import TheContainer from '@the-/ui-container/shim/TheContainer'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
 /**

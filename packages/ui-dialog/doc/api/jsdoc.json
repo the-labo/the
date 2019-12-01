@@ -12,7 +12,7 @@
     "name": "@the-/ui-dialog",
     "order": 0,
     "typicalname": "uiDialog",
-    "version": "16.0.3"
+    "version": "16.0.4"
   },
   {
     "description": "Confirm Dialog",

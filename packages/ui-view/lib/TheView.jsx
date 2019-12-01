@@ -3,10 +3,10 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React, { useEffect, useMemo } from 'react'
-import { TheButton } from '@the-/ui-button'
-import { TheContainer } from '@the-/ui-container'
-import { TheIcon } from '@the-/ui-icon'
-import { TheSpin } from '@the-/ui-spin'
+import TheButton from '@the-/ui-button/shim/TheButton'
+import TheContainer from '@the-/ui-container/shim/TheContainer'
+import TheIcon from '@the-/ui-icon/shim/TheIcon'
+import TheSpin from '@the-/ui-spin/shim/TheSpin'
 import {
   eventHandlersFor,
   htmlAttributesFor,
