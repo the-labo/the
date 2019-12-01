@@ -16,7 +16,9 @@
     "filecopy": "^4.0.2",
     "filelink": "^4.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "uglifycss": "0.0.29"
+  },
   "engines": {
     "node": ">=10",
     "npm": ">=6"
