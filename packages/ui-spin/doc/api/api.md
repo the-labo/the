@@ -24,7 +24,7 @@
 ## @the-/ui-spin
 Spin of the-components
 
-**Version**: 15.5.2  
+**Version**: 16.0.0  
 <a name="TheSpin"></a>
 
 ## TheSpin()

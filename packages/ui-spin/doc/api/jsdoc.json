@@ -12,7 +12,7 @@
     "name": "@the-/ui-spin",
     "order": 0,
     "typicalname": "uiSpin",
-    "version": "15.5.2"
+    "version": "16.0.0"
   },
   {
     "description": "Spin of the-components",
@@ -37,7 +37,7 @@
     "meta": {
       "filename": "TheSpinStyle.jsx",
       "lineno": 11,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheSpinStyle",
     "order": 5,
@@ -98,7 +98,7 @@
     "meta": {
       "filename": "TheSpinStyle.jsx",
       "lineno": 22,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 6,

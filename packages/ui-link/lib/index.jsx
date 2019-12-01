@@ -4,14 +4,12 @@
  * @description Link of the-components
  * @module @the-/ui-link
  * @typicalname uiLink
- * @version 15.5.2
+ * @version 16.0.2
  */
 'use strict'
 
 import TheLink from './TheLink'
-import TheLinkStyle from './TheLinkStyle'
 
 export {
   TheLink,
-  TheLinkStyle,
 }
