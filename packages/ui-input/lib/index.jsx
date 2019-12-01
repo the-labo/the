@@ -4,7 +4,7 @@
  * @description Input of the-components
  * @module @the-/ui-input
  * @typicalname uiInput
- * @version 16.0.3
+ * @version 17.0.0
  */
 'use strict'
 
@@ -16,7 +16,6 @@ import TheInputPinCode from './TheInputPinCode'
 import TheInputRadio from './TheInputRadio'
 import TheInputSearch from './TheInputSearch'
 import TheInputSelect from './TheInputSelect'
-import TheInputStyle from './TheInputStyle'
 import TheInputTag from './TheInputTag'
 import TheInputText from './TheInputText'
 import TheInputTextArea from './TheInputTextArea'
@@ -33,7 +32,6 @@ export {
   TheInputRadio,
   TheInputSearch,
   TheInputSelect,
-  TheInputStyle,
   TheInputTag,
   TheInputText,
   TheInputTextArea,

@@ -3,8 +3,8 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
-import TheCondition from '@the-/ui-condition/shim/TheCondition'
-import TheSpin from '@the-/ui-spin/shim/TheSpin'
+import { TheCondition } from '@the-/ui-condition'
+import { TheSpin } from '@the-/ui-spin'
 import {
   eventHandlersFor,
   htmlAttributesFor,

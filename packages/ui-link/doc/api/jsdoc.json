@@ -12,7 +12,7 @@
     "name": "@the-/ui-link",
     "order": 0,
     "typicalname": "uiLink",
-    "version": "15.5.2"
+    "version": "16.0.3"
   },
   {
     "description": "Link of the-components",
@@ -37,7 +37,7 @@
     "meta": {
       "filename": "TheLinkStyle.jsx",
       "lineno": 10,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheLinkStyle",
     "order": 9,
@@ -158,7 +158,7 @@
     "meta": {
       "filename": "TheLinkStyle.jsx",
       "lineno": 21,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 10,

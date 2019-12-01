@@ -44,11 +44,11 @@
 ## Functions
 
 <dl>
+<dt><a href="#TheInputUploadStyleData">TheInputUploadStyleData()</a></dt>
+<dd></dd>
 <dt><a href="#TheInputStyle">TheInputStyle()</a></dt>
 <dd><p>Style for TheInput</p>
 </dd>
-<dt><a href="#TheInputUploadStyleData">TheInputUploadStyleData()</a></dt>
-<dd></dd>
 </dl>
 
 <a name="@the-/ui.input.module_helpers"></a>
@@ -102,13 +102,13 @@ TextArea Input
 Toggle input of the-components
 
 **Kind**: global constant  
+<a name="TheInputUploadStyleData"></a>
+
+## TheInputUploadStyleData()
+**Kind**: global function  
 <a name="TheInputStyle"></a>
 
 ## TheInputStyle()
 Style for TheInput
 
-**Kind**: global function  
-<a name="TheInputUploadStyleData"></a>
-
-## TheInputUploadStyleData()
 **Kind**: global function  

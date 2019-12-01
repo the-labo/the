@@ -37,7 +37,7 @@
       "path": "lib"
     },
     "name": "TheInputText",
-    "order": 39,
+    "order": 37,
     "scope": "global"
   },
   {
@@ -111,7 +111,7 @@
       "path": "lib"
     },
     "name": "TheInputTextArea",
-    "order": 58,
+    "order": 56,
     "params": [],
     "scope": "global"
   },
@@ -126,22 +126,7 @@
       "path": "lib"
     },
     "name": "TheInputToggle",
-    "order": 67,
-    "params": [],
-    "scope": "global"
-  },
-  {
-    "description": "Style for TheInput",
-    "id": "TheInputStyle",
-    "kind": "function",
-    "longname": "TheInputStyle",
-    "meta": {
-      "filename": "TheInputStyle.jsx",
-      "lineno": 23,
-      "path": "lib"
-    },
-    "name": "TheInputStyle",
-    "order": 37,
+    "order": 65,
     "params": [],
     "scope": "global"
   },
@@ -152,10 +137,25 @@
     "meta": {
       "filename": "UploadStyleData.jsx",
       "lineno": 1,
-      "path": "lib/styleData"
+      "path": "lib/styles/data"
     },
     "name": "TheInputUploadStyleData",
-    "order": 84,
+    "order": 82,
+    "scope": "global"
+  },
+  {
+    "description": "Style for TheInput",
+    "id": "TheInputStyle",
+    "kind": "function",
+    "longname": "TheInputStyle",
+    "meta": {
+      "filename": "TheInputStyle.jsx",
+      "lineno": 23,
+      "path": "lib/styles"
+    },
+    "name": "TheInputStyle",
+    "order": 83,
+    "params": [],
     "scope": "global"
   },
   {
@@ -624,21 +624,6 @@
     "scope": "static"
   },
   {
-    "description": "Style options",
-    "id": "TheInputStyle.propTypes.options",
-    "kind": "member",
-    "longname": "TheInputStyle.propTypes.options",
-    "memberof": "TheInputStyle.propTypes",
-    "meta": {
-      "filename": "TheInputStyle.jsx",
-      "lineno": 43,
-      "path": "lib"
-    },
-    "name": "options",
-    "order": 38,
-    "scope": "static"
-  },
-  {
     "description": "Input error",
     "id": "TheInputText.propTypes.error",
     "kind": "member",
@@ -650,7 +635,7 @@
       "path": "lib"
     },
     "name": "error",
-    "order": 40,
+    "order": 38,
     "scope": "static"
   },
   {
@@ -665,7 +650,7 @@
       "path": "lib"
     },
     "name": "matcher",
-    "order": 41,
+    "order": 39,
     "scope": "static"
   },
   {
@@ -680,7 +665,7 @@
       "path": "lib"
     },
     "name": "name",
-    "order": 42,
+    "order": 40,
     "scope": "static"
   },
   {
@@ -695,7 +680,7 @@
       "path": "lib"
     },
     "name": "onDown",
-    "order": 43,
+    "order": 41,
     "scope": "static"
   },
   {
@@ -710,7 +695,7 @@
       "path": "lib"
     },
     "name": "onEnter",
-    "order": 44,
+    "order": 42,
     "scope": "static"
   },
   {
@@ -725,7 +710,7 @@
       "path": "lib"
     },
     "name": "onLeft",
-    "order": 45,
+    "order": 43,
     "scope": "static"
   },
   {
@@ -740,7 +725,7 @@
       "path": "lib"
     },
     "name": "onRight",
-    "order": 46,
+    "order": 44,
     "scope": "static"
   },
   {
@@ -755,7 +740,7 @@
       "path": "lib"
     },
     "name": "onUp",
-    "order": 47,
+    "order": 45,
     "scope": "static"
   },
   {
@@ -770,7 +755,7 @@
       "path": "lib"
     },
     "name": "onUpdate",
-    "order": 48,
+    "order": 46,
     "scope": "static"
   },
   {
@@ -785,7 +770,7 @@
       "path": "lib"
     },
     "name": "options",
-    "order": 49,
+    "order": 47,
     "scope": "static"
   },
   {
@@ -800,7 +785,7 @@
       "path": "lib"
     },
     "name": "parser",
-    "order": 50,
+    "order": 48,
     "scope": "static"
   },
   {
@@ -815,7 +800,7 @@
       "path": "lib"
     },
     "name": "pattern",
-    "order": 51,
+    "order": 49,
     "scope": "static"
   },
   {
@@ -830,7 +815,7 @@
       "path": "lib"
     },
     "name": "patternWarning",
-    "order": 52,
+    "order": 50,
     "scope": "static"
   },
   {
@@ -845,7 +830,7 @@
       "path": "lib"
     },
     "name": "prefix",
-    "order": 53,
+    "order": 51,
     "scope": "static"
   },
   {
@@ -860,7 +845,7 @@
       "path": "lib"
     },
     "name": "suffix",
-    "order": 54,
+    "order": 52,
     "scope": "static"
   },
   {
@@ -875,7 +860,7 @@
       "path": "lib"
     },
     "name": "tabIndex",
-    "order": 55,
+    "order": 53,
     "scope": "static"
   },
   {
@@ -890,7 +875,7 @@
       "path": "lib"
     },
     "name": "type",
-    "order": 56,
+    "order": 54,
     "scope": "static"
   },
   {
@@ -905,7 +890,7 @@
       "path": "lib"
     },
     "name": "value",
-    "order": 57,
+    "order": 55,
     "scope": "static"
   },
   {
@@ -920,7 +905,7 @@
       "path": "lib"
     },
     "name": "autoExpand",
-    "order": 59,
+    "order": 57,
     "scope": "static"
   },
   {
@@ -935,7 +920,7 @@
       "path": "lib"
     },
     "name": "maxRows",
-    "order": 60,
+    "order": 58,
     "scope": "static"
   },
   {
@@ -950,7 +935,7 @@
       "path": "lib"
     },
     "name": "minRows",
-    "order": 61,
+    "order": 59,
     "scope": "static"
   },
   {
@@ -965,7 +950,7 @@
       "path": "lib"
     },
     "name": "name",
-    "order": 62,
+    "order": 60,
     "scope": "static"
   },
   {
@@ -980,7 +965,7 @@
       "path": "lib"
     },
     "name": "onUpdate",
-    "order": 63,
+    "order": 61,
     "scope": "static"
   },
   {
@@ -995,7 +980,7 @@
       "path": "lib"
     },
     "name": "parser",
-    "order": 64,
+    "order": 62,
     "scope": "static"
   },
   {
@@ -1010,7 +995,7 @@
       "path": "lib"
     },
     "name": "rows",
-    "order": 65,
+    "order": 63,
     "scope": "static"
   },
   {
@@ -1025,7 +1010,7 @@
       "path": "lib"
     },
     "name": "value",
-    "order": 66,
+    "order": 64,
     "scope": "static"
   },
   {
@@ -1040,7 +1025,7 @@
       "path": "lib"
     },
     "name": "offTitle",
-    "order": 68,
+    "order": 66,
     "scope": "static"
   },
   {
@@ -1055,7 +1040,7 @@
       "path": "lib"
     },
     "name": "on",
-    "order": 69,
+    "order": 67,
     "scope": "static"
   },
   {
@@ -1070,7 +1055,7 @@
       "path": "lib"
     },
     "name": "onTitle",
-    "order": 70,
+    "order": 68,
     "scope": "static"
   },
   {
@@ -1085,7 +1070,7 @@
       "path": "lib"
     },
     "name": "width",
-    "order": 71,
+    "order": 69,
     "scope": "static"
   },
   {
@@ -1100,7 +1085,7 @@
       "path": "lib"
     },
     "name": "accept",
-    "order": 72,
+    "order": 70,
     "scope": "static"
   },
   {
@@ -1115,7 +1100,7 @@
       "path": "lib"
     },
     "name": "convertFile",
-    "order": 73,
+    "order": 71,
     "scope": "static"
   },
   {
@@ -1130,7 +1115,7 @@
       "path": "lib"
     },
     "name": "error",
-    "order": 74,
+    "order": 72,
     "scope": "static"
   },
   {
@@ -1145,7 +1130,7 @@
       "path": "lib"
     },
     "name": "height",
-    "order": 75,
+    "order": 73,
     "scope": "static"
   },
   {
@@ -1160,7 +1145,7 @@
       "path": "lib"
     },
     "name": "multiple",
-    "order": 76,
+    "order": 74,
     "scope": "static"
   },
   {
@@ -1175,7 +1160,7 @@
       "path": "lib"
     },
     "name": "onError",
-    "order": 77,
+    "order": 75,
     "scope": "static"
   },
   {
@@ -1190,7 +1175,7 @@
       "path": "lib"
     },
     "name": "onLoad",
-    "order": 78,
+    "order": 76,
     "scope": "static"
   },
   {
@@ -1205,7 +1190,7 @@
       "path": "lib"
     },
     "name": "onUpdate",
-    "order": 79,
+    "order": 77,
     "scope": "static"
   },
   {
@@ -1220,7 +1205,7 @@
       "path": "lib"
     },
     "name": "spinner",
-    "order": 80,
+    "order": 78,
     "scope": "static"
   },
   {
@@ -1235,7 +1220,7 @@
       "path": "lib"
     },
     "name": "text",
-    "order": 81,
+    "order": 79,
     "scope": "static"
   },
   {
@@ -1250,7 +1235,7 @@
       "path": "lib"
     },
     "name": "value",
-    "order": 82,
+    "order": 80,
     "scope": "static"
   },
   {
@@ -1265,7 +1250,22 @@
       "path": "lib"
     },
     "name": "width",
-    "order": 83,
+    "order": 81,
+    "scope": "static"
+  },
+  {
+    "description": "Style options",
+    "id": "TheInputStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheInputStyle.propTypes.options",
+    "memberof": "TheInputStyle.propTypes",
+    "meta": {
+      "filename": "TheInputStyle.jsx",
+      "lineno": 43,
+      "path": "lib/styles"
+    },
+    "name": "options",
+    "order": 84,
     "scope": "static"
   }
 ]

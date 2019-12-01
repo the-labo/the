@@ -2,7 +2,7 @@
 
 import c from 'classnames'
 import React, { useCallback } from 'react'
-import TheIcon from '@the-/ui-icon/shim/TheIcon'
+import { TheIcon } from '@the-/ui-icon'
 
 export default React.memo(function TheInputTagItem({ icon, onRemove, text }) {
   const handleRemoveClick = useCallback(() => {
