@@ -35,7 +35,7 @@ class ThePolyfill {
       }
     })
     if (!this.done) {
-      require('core-js/stable')
+      require('./core-js/core-js')
       require('regenerator-runtime/runtime')
       require('proxy-polyfill/proxy.min.js')
       require('raf/polyfill')
