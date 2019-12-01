@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eu
+set -u
 
 PROJECT_DIR=$(cd "$(dirname "$0")/../.." && pwd)
 cd ${PROJECT_DIR}

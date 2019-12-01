@@ -10,14 +10,12 @@
 
 import TheChat from './TheChat'
 import TheChatForm from './TheChatForm'
-import TheChatStyle from './TheChatStyle'
 import TheChatTimeLine from './TheChatTimeLine'
 import TheChatTimeLineItem from './TheChatTimeLineItem'
 
 export {
   TheChat,
   TheChatForm,
-  TheChatStyle,
   TheChatTimeLine,
   TheChatTimeLineItem,
 }

@@ -9,9 +9,7 @@
 'use strict'
 
 import TheChart from './TheChart'
-import TheChartStyle from './TheChartStyle'
 
 export {
   TheChart,
-  TheChartStyle,
 }

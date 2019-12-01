@@ -24,7 +24,10 @@ async function build(dirname = process.cwd(), options = {}) {
   options = args.pop('object') || {}
   dirname = args.shift('string') || process.cwd()
   const {
-    budPattern = ['.*.bud', '+(bin|ci|doc|example|lib|misc|test)/**/.*.bud'],
+    budPattern = [
+      '.*.bud',
+      '+(bin|ci|doc|example|lib|misc|test|styles)/**/.*.bud',
+    ],
     demoDest = 'doc/demo/bundle.js',
     demoSrc = 'doc/demo/entrypoint.jsx',
     jsPattern = '**/+(*.jsx|*.js)',
@@ -91,7 +94,10 @@ async function build(dirname = process.cwd(), options = {}) {
 
   const demo = async () =>
     buildDemo(demoSrc, demoDest, {
-      alias: { [pkg.name]: path.resolve(dirname, shimDir) },
+      alias: {
+        [`${pkg.name}/styles`]: path.resolve(dirname, 'styles'),
+        [pkg.name]: path.resolve(dirname, shimDir),
+      },
       plugins,
       presets: presetsFor(),
     })

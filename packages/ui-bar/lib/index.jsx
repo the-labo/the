@@ -10,10 +10,8 @@
 
 import TheActionBar from './TheActionBar'
 import TheBar from './TheBar'
-import TheBarStyle from './TheBarStyle'
 
 export {
   TheActionBar,
   TheBar,
-  TheBarStyle,
 }

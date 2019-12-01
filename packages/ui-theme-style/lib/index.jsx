@@ -8,8 +8,6 @@
  */
 'use strict'
 
-import TheThemeStyle from './TheThemeStyle'
 
 export {
-  TheThemeStyle,
 }

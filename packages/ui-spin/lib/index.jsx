@@ -4,14 +4,12 @@
  * @description Spin of the-components
  * @module @the-/ui-spin
  * @typicalname uiSpin
- * @version 15.5.2
+ * @version 16.0.0
  */
 'use strict'
 
 import TheSpin from './TheSpin'
-import TheSpinStyle from './TheSpinStyle'
 
 export {
   TheSpin,
-  TheSpinStyle,
 }

@@ -9,9 +9,7 @@
 'use strict'
 
 import TheCalendar from './TheCalendar'
-import TheCalendarStyle from './TheCalendarStyle'
 
 export {
   TheCalendar,
-  TheCalendarStyle,
 }

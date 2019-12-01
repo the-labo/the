@@ -4,16 +4,14 @@
  * @description Button of the-components
  * @module @the-/ui-button
  * @typicalname uiButton
- * @version 15.5.9
+ * @version 16.0.0
  */
 'use strict'
 
 import TheButton from './TheButton'
 import TheButtonGroup from './TheButtonGroup'
-import TheButtonStyle from './TheButtonStyle'
 
 export {
   TheButton,
   TheButtonGroup,
-  TheButtonStyle,
 }

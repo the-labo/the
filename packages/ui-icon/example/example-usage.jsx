@@ -1,22 +1,19 @@
 'use strict'
 
 import React from 'react'
-import { TheIcon, TheIconStyle } from '@the-/ui-icon'
+import { TheIcon } from '@the-/ui-icon'
+import { TheIconStyle } from '@the-/ui-icon/styles'
 
-class ExampleComponent extends React.Component {
-  render() {
-    return (
-      <div>
-        <TheIconStyle />
-        <TheIcon.CdnLink />
-        <hr />
+const ExampleComponent = () => (
+  <div>
+    <TheIconStyle />
+    <TheIcon.CdnLink />
+    <hr />
 
-        {'ABCDEF'.split('').map((theme) => (
-          <TheIcon.Spin key={theme} theme={theme} />
-        ))}
-      </div>
-    )
-  }
-}
+    {'ABCDEF'.split('').map((theme) => (
+      <TheIcon.Spin key={theme} theme={theme} />
+    ))}
+  </div>
+)
 
 export default ExampleComponent

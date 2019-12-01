@@ -4,14 +4,12 @@
  * @description Icon of the-components
  * @module @the-/ui-icon
  * @typicalname uiIcon
- * @version 15.4.14
+ * @version 16.0.2
  */
 'use strict'
 
 import TheIcon from './TheIcon'
-import TheIconStyle from './TheIconStyle'
 
 export {
   TheIcon,
-  TheIconStyle,
 }
