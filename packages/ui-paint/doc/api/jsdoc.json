@@ -12,7 +12,7 @@
     "name": "@the-/ui-paint",
     "order": 0,
     "typicalname": "uiPaint",
-    "version": "15.8.0"
+    "version": "16.0.1"
   },
   {
     "description": "Hand write painting",
@@ -30,21 +30,6 @@
     "scope": "global"
   },
   {
-    "description": "Style for ThePaint",
-    "id": "ThePaintStyle",
-    "kind": "function",
-    "longname": "ThePaintStyle",
-    "meta": {
-      "filename": "ThePaintStyle.jsx",
-      "lineno": 10,
-      "path": "lib"
-    },
-    "name": "ThePaintStyle",
-    "order": 4,
-    "params": [],
-    "scope": "global"
-  },
-  {
     "id": "DrawerLayer",
     "kind": "function",
     "longname": "DrawerLayer",
@@ -54,7 +39,7 @@
       "path": "lib/helpers"
     },
     "name": "DrawerLayer",
-    "order": 10,
+    "order": 8,
     "params": [
       {
         "name": "canvas"
@@ -73,6 +58,21 @@
         }
       }
     ],
+    "scope": "global"
+  },
+  {
+    "description": "Style for ThePaint",
+    "id": "ThePaintStyle",
+    "kind": "function",
+    "longname": "ThePaintStyle",
+    "meta": {
+      "filename": "ThePaintStyle.jsx",
+      "lineno": 10,
+      "path": "lib/styles"
+    },
+    "name": "ThePaintStyle",
+    "order": 9,
+    "params": [],
     "scope": "global"
   },
   {
@@ -106,21 +106,6 @@
     "scope": "static"
   },
   {
-    "description": "Style options",
-    "id": "ThePaintStyle.propTypes.options",
-    "kind": "member",
-    "longname": "ThePaintStyle.propTypes.options",
-    "memberof": "ThePaintStyle.propTypes",
-    "meta": {
-      "filename": "ThePaintStyle.jsx",
-      "lineno": 21,
-      "path": "lib"
-    },
-    "name": "options",
-    "order": 5,
-    "scope": "static"
-  },
-  {
     "description": "Fit to size",
     "id": "ResizePolicies.FIT",
     "kind": "member",
@@ -132,7 +117,7 @@
       "path": "lib/constants"
     },
     "name": "FIT",
-    "order": 8,
+    "order": 6,
     "scope": "static"
   },
   {
@@ -147,7 +132,22 @@
       "path": "lib/constants"
     },
     "name": "KEEP",
-    "order": 9,
+    "order": 7,
+    "scope": "static"
+  },
+  {
+    "description": "Style options",
+    "id": "ThePaintStyle.propTypes.options",
+    "kind": "member",
+    "longname": "ThePaintStyle.propTypes.options",
+    "memberof": "ThePaintStyle.propTypes",
+    "meta": {
+      "filename": "ThePaintStyle.jsx",
+      "lineno": 21,
+      "path": "lib/styles"
+    },
+    "name": "options",
+    "order": 10,
     "scope": "static"
   },
   {
@@ -162,7 +162,7 @@
       "path": "lib/constants"
     },
     "name": "DrawMethods",
-    "order": 6,
+    "order": 4,
     "scope": "static"
   },
   {
@@ -176,7 +176,7 @@
       "path": "lib/constants"
     },
     "name": "ResizePolicies",
-    "order": 7,
+    "order": 5,
     "scope": "static"
   }
 ]

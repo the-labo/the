@@ -13,7 +13,7 @@
     "name": "@the-/entrypoint",
     "order": 1,
     "typicalname": "entrypoint",
-    "version": "15.4.12"
+    "version": "15.5.0"
   },
   {
     "access": "protected",

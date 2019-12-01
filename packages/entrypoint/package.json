@@ -1,7 +1,7 @@
 {
   "name": "@the-/entrypoint",
   "description": "Browser entrypoint for the-framework",
-  "version": "15.4.12",
+  "version": "15.5.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@the-/check": "^15.6.2",
-    "@the-/ui-router": "^15.4.11",
+    "@the-/ui-router": "^16.0.1",
     "@the-/url": "^15.4.12",
     "@the-/window": "^15.8.2",
     "history": "^4.10.1"

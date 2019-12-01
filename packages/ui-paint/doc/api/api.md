@@ -14,11 +14,11 @@
 <dt><a href="#ThePaint">ThePaint()</a></dt>
 <dd><p>Hand write painting</p>
 </dd>
+<dt><a href="#DrawerLayer">DrawerLayer(canvas, [options&#x3D;])</a> ⇒ <code>Object</code></dt>
+<dd></dd>
 <dt><a href="#ThePaintStyle">ThePaintStyle()</a></dt>
 <dd><p>Style for ThePaint</p>
 </dd>
-<dt><a href="#DrawerLayer">DrawerLayer(canvas, [options&#x3D;])</a> ⇒ <code>Object</code></dt>
-<dd></dd>
 </dl>
 
 <a name="module_@the-/ui-paint"></a>
@@ -26,7 +26,7 @@
 ## @the-/ui-paint
 Hand write painting
 
-**Version**: 15.8.0  
+**Version**: 16.0.1  
 
 * [@the-/ui-paint](#module_@the-/ui-paint)
     * [.DrawMethods](#module_@the-/ui-paint.DrawMethods) : <code>object</code>
@@ -48,12 +48,6 @@ Method of drawing
 Hand write painting
 
 **Kind**: global function  
-<a name="ThePaintStyle"></a>
-
-## ThePaintStyle()
-Style for ThePaint
-
-**Kind**: global function  
 <a name="DrawerLayer"></a>
 
 ## DrawerLayer(canvas, [options&#x3D;]) ⇒ <code>Object</code>
@@ -64,3 +58,9 @@ Style for ThePaint
 | canvas | 
 | [options=] | 
 
+<a name="ThePaintStyle"></a>
+
+## ThePaintStyle()
+Style for ThePaint
+
+**Kind**: global function  
