@@ -3,100 +3,92 @@
 import classnames from 'classnames'
 import copy from 'copy-to-clipboard'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import select from 'select'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
 /**
  * Component for clip-to-copy
  */
-class TheCopyboard extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      tipShown: false,
+const TheCopyboard = (props) => {
+  const {
+    children,
+    className,
+    href,
+    onClick,
+    text,
+    tipDuration,
+    tipText,
+  } = props
+  const [tipShown, setTipShown] = useState(false)
+  const [tipOffTimer, setTipOffTimer] = useState(-1)
+  const anchorRef = useRef(null)
+
+  useEffect(
+    () => () => {
+      clearTimeout(tipOffTimer)
+    },
+    [tipOffTimer],
+  )
+
+  const showTip = useCallback(() => {
+    clearTimeout(tipOffTimer)
+    setTipShown(true)
+    const newTipOffTimer = setTimeout(() => {
+      setTipShown(false)
+    }, tipDuration)
+    setTipOffTimer(newTipOffTimer)
+    return () => {
+      clearTimeout(newTipOffTimer)
     }
-    this.anchorRef = React.createRef()
-    this.hideTip = this.hideTip.bind(this)
-    this.handleClick = this.handleClick.bind(this)
-    this.tipOffTimer = null
-  }
+  }, [tipDuration, tipOffTimer])
 
-  componentWillUnmount() {
-    clearTimeout(this.tipOffTimer)
-  }
-
-  doCopy() {
-    const {
-      anchorRef,
-      props: { text },
-    } = this
-
+  const doCopy = useCallback(() => {
     copy(text)
     select(anchorRef.current)
-    this.showTip()
-  }
+    showTip()
+  }, [text])
 
-  handleClick(e) {
-    const { props } = this
-    this.doCopy()
-    const { onClick } = props
-    onClick && onClick(e)
-    e.stopPropagation()
-  }
+  const handleClick = useCallback(
+    (e) => {
+      doCopy()
+      onClick && onClick(e)
+      e.stopPropagation()
+    },
+    [onClick, doCopy],
+  )
 
-  hideTip() {
-    clearTimeout(this.tipOffTimer)
-    if (this.state.tipShown) {
-      this.setState({ tipShown: false })
+  const hideTip = useCallback(() => {
+    clearTimeout(tipOffTimer)
+    if (tipShown) {
+      setTipShown(false)
     }
-  }
+  }, [tipOffTimer, tipShown])
 
-  render() {
-    const {
-      props,
-      props: { children, className, href, text, tipText },
-      state: { tipShown },
-    } = this
-
-    const Anchor = href ? 'a' : 'span'
-    return (
-      <span
-        {...htmlAttributesFor(props, { except: ['className'] })}
-        {...eventHandlersFor(props, { except: [] })}
-        className={classnames('the-copyboard', className)}
+  const Anchor = href ? 'a' : 'span'
+  return (
+    <span
+      {...htmlAttributesFor(props, { except: ['className'] })}
+      {...eventHandlersFor(props, { except: [] })}
+      className={classnames('the-copyboard', className)}
+    >
+      {tipShown && (
+        <span className='the-copyboard-tip' onClick={hideTip}>
+          <span className='the-copyboard-tip-square' />
+          {tipText}
+        </span>
+      )}
+      <Anchor
+        className='the-copyboard-anchor'
+        href={href}
+        onClick={handleClick}
+        ref={anchorRef}
       >
-        {tipShown && (
-          <span className='the-copyboard-tip' onClick={this.hideTip}>
-            <span className='the-copyboard-tip-square' />
-            {tipText}
-          </span>
-        )}
-        <Anchor
-          className='the-copyboard-anchor'
-          href={href}
-          onClick={this.handleClick}
-          ref={this.anchorRef}
-        >
-          {text}
-          {children}
-        </Anchor>
-      </span>
-    )
-  }
-
-  showTip() {
-    const {
-      props: { tipDuration },
-    } = this
-    clearTimeout(this.tipOffTimer)
-    this.setState({ tipShown: true })
-    this.tipOffTimer = setTimeout(() => {
-      if (this.state.tipShown) {
-        this.setState({ tipShown: false })
-      }
-    }, tipDuration)
-  }
+        {text}
+        {children}
+      </Anchor>
+    </span>
+  )
 }
 
 TheCopyboard.propTypes = {

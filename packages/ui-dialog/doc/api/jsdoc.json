@@ -12,7 +12,7 @@
     "name": "@the-/ui-dialog",
     "order": 0,
     "typicalname": "uiDialog",
-    "version": "16.0.4"
+    "version": "17.0.0"
   },
   {
     "description": "Confirm Dialog",
@@ -45,21 +45,6 @@
     "scope": "global"
   },
   {
-    "description": "Style for TheDialog",
-    "id": "TheDialogStyle",
-    "kind": "function",
-    "longname": "TheDialogStyle",
-    "meta": {
-      "filename": "TheDialogStyle.jsx",
-      "lineno": 11,
-      "path": "lib"
-    },
-    "name": "TheDialogStyle",
-    "order": 18,
-    "params": [],
-    "scope": "global"
-  },
-  {
     "description": "Ok Dialog",
     "id": "TheOkDialog",
     "kind": "function",
@@ -70,7 +55,7 @@
       "path": "lib"
     },
     "name": "TheOkDialog",
-    "order": 20,
+    "order": 18,
     "params": [],
     "scope": "global"
   },
@@ -85,7 +70,22 @@
       "path": "lib"
     },
     "name": "TheYesNoDialog",
-    "order": 25,
+    "order": 23,
+    "params": [],
+    "scope": "global"
+  },
+  {
+    "description": "Style for TheDialog",
+    "id": "TheDialogStyle",
+    "kind": "function",
+    "longname": "TheDialogStyle",
+    "meta": {
+      "filename": "TheDialogStyle.jsx",
+      "lineno": 11,
+      "path": "lib/styles"
+    },
+    "name": "TheDialogStyle",
+    "order": 31,
     "params": [],
     "scope": "global"
   },
@@ -315,21 +315,6 @@
     "scope": "static"
   },
   {
-    "description": "Style options",
-    "id": "TheDialogStyle.propTypes.options",
-    "kind": "member",
-    "longname": "TheDialogStyle.propTypes.options",
-    "memberof": "TheDialogStyle.propTypes",
-    "meta": {
-      "filename": "TheDialogStyle.jsx",
-      "lineno": 22,
-      "path": "lib"
-    },
-    "name": "options",
-    "order": 19,
-    "scope": "static"
-  },
-  {
     "description": "Text for OK button",
     "id": "TheOkDialog.propTypes.okText",
     "kind": "member",
@@ -341,7 +326,7 @@
       "path": "lib"
     },
     "name": "okText",
-    "order": 21,
+    "order": 19,
     "scope": "static"
   },
   {
@@ -356,7 +341,7 @@
       "path": "lib"
     },
     "name": "onClose",
-    "order": 22,
+    "order": 20,
     "scope": "static"
   },
   {
@@ -371,7 +356,7 @@
       "path": "lib"
     },
     "name": "spinning",
-    "order": 23,
+    "order": 21,
     "scope": "static"
   },
   {
@@ -386,7 +371,7 @@
       "path": "lib"
     },
     "name": "title",
-    "order": 24,
+    "order": 22,
     "scope": "static"
   },
   {
@@ -401,7 +386,7 @@
       "path": "lib"
     },
     "name": "noText",
-    "order": 26,
+    "order": 24,
     "scope": "static"
   },
   {
@@ -416,7 +401,7 @@
       "path": "lib"
     },
     "name": "onClose",
-    "order": 27,
+    "order": 25,
     "scope": "static"
   },
   {
@@ -431,7 +416,7 @@
       "path": "lib"
     },
     "name": "onNo",
-    "order": 28,
+    "order": 26,
     "scope": "static"
   },
   {
@@ -446,7 +431,7 @@
       "path": "lib"
     },
     "name": "onYes",
-    "order": 29,
+    "order": 27,
     "scope": "static"
   },
   {
@@ -461,7 +446,7 @@
       "path": "lib"
     },
     "name": "spinning",
-    "order": 30,
+    "order": 28,
     "scope": "static"
   },
   {
@@ -476,7 +461,7 @@
       "path": "lib"
     },
     "name": "title",
-    "order": 31,
+    "order": 29,
     "scope": "static"
   },
   {
@@ -491,6 +476,21 @@
       "path": "lib"
     },
     "name": "yesText",
+    "order": 30,
+    "scope": "static"
+  },
+  {
+    "description": "Style options",
+    "id": "TheDialogStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheDialogStyle.propTypes.options",
+    "memberof": "TheDialogStyle.propTypes",
+    "meta": {
+      "filename": "TheDialogStyle.jsx",
+      "lineno": 22,
+      "path": "lib/styles"
+    },
+    "name": "options",
     "order": 32,
     "scope": "static"
   }

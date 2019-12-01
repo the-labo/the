@@ -12,7 +12,7 @@
     "name": "@the-/ui-keyboard",
     "order": 0,
     "typicalname": "uiKeyboard",
-    "version": "15.4.11"
+    "version": "16.0.0"
   },
   {
     "description": "Keyboard component",
@@ -37,7 +37,7 @@
     "meta": {
       "filename": "TheKeyboardStyle.jsx",
       "lineno": 10,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheKeyboardStyle",
     "order": 4,
@@ -83,7 +83,7 @@
     "meta": {
       "filename": "TheKeyboardStyle.jsx",
       "lineno": 21,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 5,

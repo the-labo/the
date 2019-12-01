@@ -12,7 +12,7 @@
     "name": "@the-/ui-caught",
     "order": 0,
     "typicalname": "uiCaught",
-    "version": "15.4.14"
+    "version": "16.0.1"
   },
   {
     "description": "Component to show caught errors",
@@ -31,7 +31,7 @@
     "meta": {
       "filename": "TheCaughtStyle.jsx",
       "lineno": 10,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheCaughtStyle",
     "order": 5,
@@ -91,7 +91,7 @@
     "meta": {
       "filename": "TheCaughtStyle.jsx",
       "lineno": 21,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 6,

@@ -1,8 +1,9 @@
 'use strict'
 
 import React from 'react'
-import { TheActionBar, TheBar, TheBarStyle } from '@the-/ui-bar'
-import { TheButtonStyle } from '@the-/ui-button'
+import { TheActionBar, TheBar } from '@the-/ui-bar'
+import { TheBarStyle } from '@the-/ui-bar/styles'
+import { TheButtonStyle } from '@the-/ui-button/styles'
 
 class ExampleComponent extends React.Component {
   constructor(props) {

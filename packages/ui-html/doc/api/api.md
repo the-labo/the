@@ -29,7 +29,7 @@
 ## @the-/ui-html
 Html of the-components
 
-**Version**: 15.5.1  
+**Version**: 16.0.0  
 <a name="TheHtml"></a>
 
 ## TheHtml

@@ -4,14 +4,12 @@
  * @description QRCode the-component
  * @module @the-/ui-qr
  * @typicalname uiQr
- * @version 15.5.1
+ * @version 16.0.0
  */
 'use strict'
 
 import TheQr from './TheQr'
-import TheQrStyle from './TheQrStyle'
 
 export {
   TheQr,
-  TheQrStyle,
 }

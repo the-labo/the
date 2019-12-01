@@ -1,17 +1,14 @@
 'use strict'
 
 import React from 'react'
-import { TheContainer, TheContainerStyle } from '@the-/ui-container'
+import { TheContainer } from '@the-/ui-container'
+import { TheContainerStyle } from '@the-/ui-container/styles'
 
-class ExampleComponent extends React.PureComponent {
-  render() {
-    return (
-      <div>
-        <TheContainerStyle />
-        <TheContainer id='my-component' />
-      </div>
-    )
-  }
-}
+const ExampleComponent = () => (
+  <div>
+    <TheContainerStyle />
+    <TheContainer>Some contents here</TheContainer>
+  </div>
+)
 
 export default ExampleComponent

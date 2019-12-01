@@ -12,7 +12,7 @@
     "name": "@the-/ui-qr",
     "order": 0,
     "typicalname": "uiQr",
-    "version": "15.5.1"
+    "version": "16.0.0"
   },
   {
     "description": "QRCode the-component",
@@ -37,7 +37,7 @@
     "meta": {
       "filename": "TheQrStyle.jsx",
       "lineno": 11,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheQrStyle",
     "order": 8,
@@ -143,7 +143,7 @@
     "meta": {
       "filename": "TheQrStyle.jsx",
       "lineno": 22,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 9,

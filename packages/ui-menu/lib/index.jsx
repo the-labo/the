@@ -4,18 +4,16 @@
  * @description Menu of the-components
  * @module @the-/ui-menu
  * @typicalname uiMenu
- * @version 15.4.19
+ * @version 16.0.0
  */
 'use strict'
 
 import TheDropdownMenu from './TheDropdownMenu'
 import TheMenu from './TheMenu'
 import TheMenuItem from './TheMenuItem'
-import TheMenuStyle from './TheMenuStyle'
 
 export {
   TheDropdownMenu,
   TheMenu,
   TheMenuItem,
-  TheMenuStyle,
 }

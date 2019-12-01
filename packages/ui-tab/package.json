@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-tab",
   "description": "Tab for the-components",
-  "version": "15.4.17",
+  "version": "16.0.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "@the-/const-ui": "^15.5.0",
-    "@the-/ui-button": "^15.5.4",
-    "@the-/ui-spin": "^15.5.0",
+    "@the-/ui-button": "^16.0.0",
+    "@the-/ui-spin": "^16.0.0",
     "@the-/ui-style": "^16.0.0",
     "@the-/util-ui": "^16.3.1",
     "chopcal": "^3.0.3",

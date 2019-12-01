@@ -1,40 +1,29 @@
 'use strict'
 
-import React from 'react'
-import { ThePager, ThePagerStyle } from '@the-/ui-pager'
+import React, { useState } from 'react'
+import { ThePager } from '@the-/ui-pager'
+import { ThePagerStyle } from '@the-/ui-pager/styles'
 
-class ExampleComponent extends React.PureComponent {
-  constructor(props) {
-    super(props)
-    this.state = { page: 2 }
-  }
-
-  render() {
-    const { state } = this
-    return (
-      <div>
-        <ThePagerStyle />
-        <ThePager.Row>
-          <ThePager
-            onChange={(e) => this.setState({ page: e.page })}
-            page={state.page}
-            size={3}
-            total={8}
-          />
-          <ThePager.Counts counts={{ limit: 25, offset: 25, total: 52 }} />
-        </ThePager.Row>
-
-        <hr />
-
+const ExampleComponent = () => {
+  const [page, setPage] = useState(2)
+  return (
+    <div>
+      <ThePagerStyle />
+      <ThePager.Row>
         <ThePager
-          hrefPattern='?page=:page'
-          page={state.page}
-          size={5}
-          total={15}
+          onChange={(e) => setPage(e.page)}
+          page={page}
+          size={3}
+          total={8}
         />
-      </div>
-    )
-  }
+        <ThePager.Counts counts={{ limit: 25, offset: 25, total: 52 }} />
+      </ThePager.Row>
+
+      <hr />
+
+      <ThePager hrefPattern='?page=:page' page={page} size={5} total={15} />
+    </div>
+  )
 }
 
 export default ExampleComponent

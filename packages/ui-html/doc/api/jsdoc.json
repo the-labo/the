@@ -12,7 +12,7 @@
     "name": "@the-/ui-html",
     "order": 0,
     "typicalname": "uiHtml",
-    "version": "15.5.1"
+    "version": "16.0.0"
   },
   {
     "description": "Html of the-components",
@@ -37,7 +37,7 @@
     "meta": {
       "filename": "TheHtmlStyle.jsx",
       "lineno": 9,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheHtmlStyle",
     "order": 6,
@@ -113,7 +113,7 @@
     "meta": {
       "filename": "TheHtmlStyle.jsx",
       "lineno": 20,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 7,

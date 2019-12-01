@@ -29,7 +29,7 @@
 ## @the-/ui-step
 Steps for the-components
 
-**Version**: 15.4.16  
+**Version**: 16.0.1  
 <a name="TheStep"></a>
 
 ## TheStep

@@ -1,67 +1,55 @@
 'use strict'
 
-import React from 'react'
-import { TheDateInput, TheDateStyle } from '@the-/ui-date'
+import React, { useCallback, useState } from 'react'
+import { TheDateInput } from '@the-/ui-date'
+import { TheDateStyle } from '@the-/ui-date/styles'
 
-class ExampleComponent extends React.PureComponent {
-  constructor(props) {
-    super(props)
-    this.state = {
-      values: {
-        'value-date-01': '2018-08-01',
-      },
-    }
-    this.onUpdate = this.onUpdate.bind(this)
-  }
+const ExampleComponent = () => {
+  const [values, setValues] = useState({
+    'value-date-01': '2018-08-01',
+  })
+  const onUpdate = useCallback(
+    (newValues) => {
+      console.log('values', newValues)
+      setValues(Object.assign({}, values, newValues))
+    },
+    [values],
+  )
 
-  onUpdate(values) {
-    console.log('values', values)
-    this.setState({
-      values: Object.assign({}, this.state.values, values),
-    })
-  }
+  return (
+    <div>
+      <TheDateStyle />
 
-  render() {
-    const {
-      onUpdate,
-      state: { values },
-    } = this
+      <h3>Date</h3>
+      <TheDateInput
+        minDate='2018-03-09'
+        name='value-date-01'
+        onUpdate={onUpdate}
+        placeholder='date only'
+        value={values['value-date-01'] || ''}
+      />
 
-    return (
-      <div>
-        <TheDateStyle />
+      <TheDateInput
+        minDate='2018-03-09'
+        name='value-date-01'
+        onUpdate={onUpdate}
+        placeholder='date and time'
+        timeEnabled
+        value={values['value-date-01']}
+      />
 
-        <h3>Date</h3>
-        <TheDateInput
-          minDate='2018-03-09'
-          name='value-date-01'
-          onUpdate={onUpdate}
-          placeholder='date only'
-          value={values['value-date-01'] || ''}
-        />
-
-        <TheDateInput
-          minDate='2018-03-09'
-          name='value-date-01'
-          onUpdate={onUpdate}
-          placeholder='date and time'
-          timeEnabled
-          value={values['value-date-01']}
-        />
-
-        <TheDateInput
-          dateFormat='H:i'
-          minDate='2018-03-09'
-          name='value-date-01-time'
-          noCalendar
-          onUpdate={onUpdate}
-          placeholder='time only'
-          timeEnabled
-          value={values['value-date-01-time']}
-        />
-      </div>
-    )
-  }
+      <TheDateInput
+        dateFormat='H:i'
+        minDate='2018-03-09'
+        name='value-date-01-time'
+        noCalendar
+        onUpdate={onUpdate}
+        placeholder='time only'
+        timeEnabled
+        value={values['value-date-01-time']}
+      />
+    </div>
+  )
 }
 
 export default ExampleComponent

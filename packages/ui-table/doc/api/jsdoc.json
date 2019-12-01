@@ -12,7 +12,7 @@
     "name": "@the-/ui-table",
     "order": 0,
     "typicalname": "uiTable",
-    "version": "16.0.2"
+    "version": "17.0.0"
   },
   {
     "description": "Table for the-components",
@@ -37,7 +37,7 @@
     "meta": {
       "filename": "TheTableStyle.jsx",
       "lineno": 11,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheTableStyle",
     "order": 5,
@@ -98,7 +98,7 @@
     "meta": {
       "filename": "TheTableStyle.jsx",
       "lineno": 22,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 6,

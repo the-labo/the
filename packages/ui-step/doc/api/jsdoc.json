@@ -12,7 +12,7 @@
     "name": "@the-/ui-step",
     "order": 0,
     "typicalname": "uiStep",
-    "version": "15.4.16"
+    "version": "16.0.1"
   },
   {
     "description": "Steps for the-component",
@@ -21,7 +21,7 @@
     "longname": "TheStep",
     "meta": {
       "filename": "TheStep.jsx",
-      "lineno": 16,
+      "lineno": 15,
       "path": "lib"
     },
     "name": "TheStep",
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheStepStyle.jsx",
       "lineno": 11,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheStepStyle",
     "order": 2,
@@ -52,7 +52,7 @@
     "meta": {
       "filename": "TheStepStyle.jsx",
       "lineno": 22,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 3,

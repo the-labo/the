@@ -25,7 +25,7 @@
     "name": "@the-/ui-route",
     "order": 1,
     "typicalname": "uiRoute",
-    "version": "15.4.12"
+    "version": "16.0.1"
   },
   {
     "description": "Route of the-components",
@@ -63,7 +63,7 @@
     "meta": {
       "filename": "TheRouteStyle.jsx",
       "lineno": 10,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheRouteStyle",
     "order": 13,
@@ -214,7 +214,7 @@
     "meta": {
       "filename": "TheRouteStyle.jsx",
       "lineno": 21,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 14,

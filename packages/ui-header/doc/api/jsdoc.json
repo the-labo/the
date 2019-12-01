@@ -12,7 +12,7 @@
     "name": "@the-/ui-header",
     "order": 0,
     "typicalname": "uiHeader",
-    "version": "15.4.17"
+    "version": "16.0.0"
   },
   {
     "description": "Header of the-components",
@@ -37,7 +37,7 @@
     "meta": {
       "filename": "TheHeaderStyle.jsx",
       "lineno": 11,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheHeaderStyle",
     "order": 7,
@@ -128,7 +128,7 @@
     "meta": {
       "filename": "TheHeaderStyle.jsx",
       "lineno": 22,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 8,

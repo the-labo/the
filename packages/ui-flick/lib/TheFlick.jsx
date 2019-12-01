@@ -4,10 +4,10 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 import Draggable from 'react-draggable'
-import TheButton from '@the-/ui-button/shim/TheButton'
-import TheCondition from '@the-/ui-condition/shim/TheCondition'
-import TheIcon from '@the-/ui-icon/shim/TheIcon'
-import TheSpin from '@the-/ui-spin/shim/TheSpin'
+import { TheButton } from '@the-/ui-button'
+import { TheCondition } from '@the-/ui-condition'
+import { TheIcon } from '@the-/ui-icon'
+import { TheSpin } from '@the-/ui-spin'
 import {
   changedProps,
   eventHandlersFor,

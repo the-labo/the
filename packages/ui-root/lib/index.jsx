@@ -4,14 +4,12 @@
  * @description Root element of the-components
  * @module @the-/ui-root
  * @typicalname uiRoot
- * @version 15.4.15
+ * @version 16.0.0
  */
 'use strict'
 
 import TheRoot from './TheRoot'
-import TheRootStyle from './TheRootStyle'
 
 export {
   TheRoot,
-  TheRootStyle,
 }

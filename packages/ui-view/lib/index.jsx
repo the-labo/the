@@ -4,14 +4,12 @@
  * @description View of the-components
  * @module @the-/ui-view
  * @typicalname uiView
- * @version 15.5.4
+ * @version 16.0.0
  */
 'use strict'
 
 import TheView from './TheView'
-import TheViewStyle from './TheViewStyle'
 
 export {
   TheView,
-  TheViewStyle,
 }

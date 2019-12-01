@@ -12,7 +12,7 @@
     "name": "@the-/ui-view",
     "order": 0,
     "typicalname": "uiView",
-    "version": "15.5.4"
+    "version": "16.0.0"
   },
   {
     "description": "View of the-components",
@@ -37,7 +37,7 @@
     "meta": {
       "filename": "TheViewStyle.jsx",
       "lineno": 11,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheViewStyle",
     "order": 3,
@@ -68,7 +68,7 @@
     "meta": {
       "filename": "TheViewStyle.jsx",
       "lineno": 22,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 4,

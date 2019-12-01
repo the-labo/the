@@ -27,7 +27,7 @@
 ## @the-/ui-button
 Button of the-components
 
-**Version**: 15.5.9  
+**Version**: 16.0.0  
 <a name="TheButton"></a>
 
 ## TheButton(props) ⇒ <code>\*</code>
@@ -50,4 +50,4 @@ Group of buttons
 ## TheButtonStyle()
 Style for TheButton
 
-**Kind**: global function
+**Kind**: global function  

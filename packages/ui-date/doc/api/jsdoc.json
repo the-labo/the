@@ -24,7 +24,7 @@
     "name": "@the-/ui-date",
     "order": 1,
     "typicalname": "uiDate",
-    "version": "16.1.2"
+    "version": "17.0.0"
   },
   {
     "description": "Style for TheInput",
@@ -34,7 +34,7 @@
     "meta": {
       "filename": "TheDateStyle.jsx",
       "lineno": 11,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheDateStyle",
     "order": 2,
@@ -50,7 +50,7 @@
     "meta": {
       "filename": "TheDateStyle.jsx",
       "lineno": 31,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 3,

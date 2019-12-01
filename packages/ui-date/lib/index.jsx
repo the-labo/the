@@ -4,16 +4,14 @@
  * @description Date ui
  * @module @the-/ui-date
  * @typicalname uiDate
- * @version 16.1.2
+ * @version 17.0.0
  */
 'use strict'
 
 import TheDateInput from './TheDateInput'
-import TheDateStyle from './TheDateStyle'
 import helpers from './helpers'
 
 export {
   TheDateInput,
-  TheDateStyle,
   helpers,
 }

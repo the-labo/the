@@ -1,8 +1,9 @@
 'use strict'
 
 import React from 'react'
-import { TheQr, TheQrStyle } from '@the-/ui-qr'
-import { TheSpinStyle } from '@the-/ui-spin'
+import { TheQr } from '@the-/ui-qr'
+import { TheQrStyle } from '@the-/ui-qr/styles'
+import { TheSpinStyle } from '@the-/ui-spin/styles'
 
 class ExampleComponent extends React.PureComponent {
   render() {

@@ -4,7 +4,7 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React, { useCallback, useMemo, useState } from 'react'
 import Draggable from 'react-draggable'
-import TheIcon from '@the-/ui-icon/shim/TheIcon'
+import { TheIcon } from '@the-/ui-icon'
 import {
   eventHandlersFor,
   htmlAttributesFor,

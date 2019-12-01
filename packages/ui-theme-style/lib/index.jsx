@@ -4,10 +4,12 @@
  * @description Theme style for the-components
  * @module @the-/ui-theme-style
  * @typicalname uiThemeStyle
- * @version 16.1.3
+ * @version 17.0.2
  */
 'use strict'
 
+import TheThemeStyle from './TheThemeStyle'
 
 export {
+  TheThemeStyle,
 }

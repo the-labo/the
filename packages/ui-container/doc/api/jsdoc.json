@@ -12,7 +12,7 @@
     "name": "@the-/ui-container",
     "order": 0,
     "typicalname": "uiContainer",
-    "version": "15.4.12"
+    "version": "16.0.0"
   },
   {
     "description": "Container of the-components",
@@ -50,7 +50,7 @@
     "meta": {
       "filename": "TheContainerStyle.jsx",
       "lineno": 10,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheContainerStyle",
     "order": 2,
@@ -66,7 +66,7 @@
     "meta": {
       "filename": "TheContainerStyle.jsx",
       "lineno": 21,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 3,

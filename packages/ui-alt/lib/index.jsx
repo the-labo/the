@@ -4,14 +4,12 @@
  * @description Alt text for the-components
  * @module @the-/ui-alt
  * @typicalname uiAlt
- * @version 15.5.0
+ * @version 16.0.0
  */
 'use strict'
 
 import TheAlt from './TheAlt'
-import TheAltStyle from './TheAltStyle'
 
 export {
   TheAlt,
-  TheAltStyle,
 }

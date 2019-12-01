@@ -1,8 +1,9 @@
 'use strict'
 
-import React from 'react'
-import { TheButtonStyle } from '@the-/ui-button'
-import { TheCalendar, TheCalendarStyle } from '@the-/ui-calendar'
+import React, { useState } from 'react'
+import { TheButtonStyle } from '@the-/ui-button/styles'
+import { TheCalendar } from '@the-/ui-calendar'
+import { TheCalendarStyle } from '@the-/ui-calendar/styles'
 
 const events = [
   {
@@ -26,30 +27,22 @@ const events = [
   },
 ]
 
-class ExampleComponent extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      date: new Date(),
-      view: 'month',
-    }
-  }
-
-  render() {
-    return (
-      <div>
-        <TheButtonStyle />
-        <TheCalendarStyle />
-        <TheCalendar
-          date={this.state.date}
-          events={events}
-          onNavigate={(date) => this.setState({ date })}
-          onView={(view) => this.setState({ view })}
-          view={this.state.view}
-        />
-      </div>
-    )
-  }
+const ExampleComponent = () => {
+  const [date, setDate] = useState(new Date())
+  const [view, setView] = useState('month')
+  return (
+    <div>
+      <TheButtonStyle />
+      <TheCalendarStyle />
+      <TheCalendar
+        date={date}
+        events={events}
+        onNavigate={(date) => setDate(date)}
+        onView={(view) => setView(view)}
+        view={view}
+      />
+    </div>
+  )
 }
 
 export default ExampleComponent

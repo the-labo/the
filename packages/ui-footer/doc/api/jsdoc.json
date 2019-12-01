@@ -12,7 +12,7 @@
     "name": "@the-/ui-footer",
     "order": 0,
     "typicalname": "uiFooter",
-    "version": "15.4.16"
+    "version": "16.0.0"
   },
   {
     "description": "Footer of the-components",
@@ -37,7 +37,7 @@
     "meta": {
       "filename": "TheFooterStyle.jsx",
       "lineno": 11,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheFooterStyle",
     "order": 2,
@@ -53,7 +53,7 @@
     "meta": {
       "filename": "TheFooterStyle.jsx",
       "lineno": 22,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 3,

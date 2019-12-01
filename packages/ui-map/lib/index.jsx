@@ -4,18 +4,16 @@
  * @description Geo map for the-components
  * @module @the-/ui-map
  * @typicalname uiMap
- * @version 15.5.2
+ * @version 16.0.0
  */
 'use strict'
 
 import TheMap from './TheMap'
 import TheMapMarker from './TheMapMarker'
 import TheMapPositionInput from './TheMapPositionInput'
-import TheMapStyle from './TheMapStyle'
 
 export {
   TheMap,
   TheMapMarker,
   TheMapPositionInput,
-  TheMapStyle,
 }

@@ -1,8 +1,10 @@
 'use strict'
 
 import React from 'react'
-import { TheButton, TheButtonStyle } from '@the-/ui-button'
-import { TheHeader, TheHeaderStyle } from '@the-/ui-header'
+import { TheButton } from '@the-/ui-button'
+import { TheButtonStyle } from '@the-/ui-button/styles'
+import { TheHeader } from '@the-/ui-header'
+import { TheHeaderStyle } from '@the-/ui-header/styles'
 import { TheRoute } from '@the-/ui-route'
 import { TheRouter } from '@the-/ui-router'
 

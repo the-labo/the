@@ -4,19 +4,12 @@
  * @description Video for the-components
  * @module @the-/ui-video
  * @typicalname uiVideo
- * @version 15.4.10
+ * @version 16.0.0
  */
 'use strict'
 
 import TheVideo from './TheVideo'
-import TheVideoStyle from './TheVideoStyle'
 
 export {
   TheVideo,
-  TheVideoStyle,
-}
-
-export default {
-  TheVideo,
-  TheVideoStyle,
 }

@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-theme-style",
   "description": "Theme style for the-components",
-  "version": "16.1.3",
+  "version": "17.0.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,14 +11,14 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/ui-style": "^16.0.0",
+    "@the-/ui-style": "^16.0.2",
     "@the-/util-style": "^15.4.14",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui": "^16.2.3",
-    "@the-/ui-demo": "^15.5.4",
+    "@the-/ui": "^17.0.2",
+    "@the-/ui-demo": "^16.0.0",
     "coz": "^7.0.19",
     "objnest": "^5.0.10",
     "react": "^16.12.0",

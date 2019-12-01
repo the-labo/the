@@ -4,8 +4,8 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useMemo } from 'react'
 import { StylePresets } from '@the-/const-ui'
-import TheIcon from '@the-/ui-icon/shim/TheIcon'
-import TheSpin from '@the-/ui-spin/shim/TheSpin'
+import { TheIcon } from '@the-/ui-icon'
+import { TheSpin } from '@the-/ui-spin'
 import {
   eventHandlersFor,
   htmlAttributesFor,

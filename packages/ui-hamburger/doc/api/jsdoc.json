@@ -12,7 +12,7 @@
     "name": "@the-/ui-hamburger",
     "order": 0,
     "typicalname": "uiHamburger",
-    "version": "15.4.18"
+    "version": "16.0.0"
   },
   {
     "description": "Hamburger menu for the-components",
@@ -37,7 +37,7 @@
     "meta": {
       "filename": "TheHamburgerStyle.jsx",
       "lineno": 11,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheHamburgerStyle",
     "order": 5,
@@ -98,7 +98,7 @@
     "meta": {
       "filename": "TheHamburgerStyle.jsx",
       "lineno": 22,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 6,

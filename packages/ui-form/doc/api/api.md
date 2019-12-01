@@ -29,7 +29,7 @@
 ## @the-/ui-form
 Form of the-components
 
-**Version**: 15.4.14  
+**Version**: 16.0.0  
 <a name="TheForm"></a>
 
 ## TheForm

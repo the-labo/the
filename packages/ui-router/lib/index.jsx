@@ -4,14 +4,12 @@
  * @description Router of the-components
  * @module @the-/ui-router
  * @typicalname uiRouter
- * @version 15.4.11
+ * @version 16.0.0
  */
 'use strict'
 
 import TheRouter from './TheRouter'
-import TheRouterStyle from './TheRouterStyle'
 
 export {
   TheRouter,
-  TheRouterStyle,
 }

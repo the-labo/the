@@ -12,7 +12,7 @@
     "name": "@the-/ui-video",
     "order": 0,
     "typicalname": "uiVideo",
-    "version": "15.4.10"
+    "version": "16.0.0"
   },
   {
     "description": "Video for the-components",
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheVideoStyle.jsx",
       "lineno": 11,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheVideoStyle",
     "order": 10,
@@ -172,7 +172,7 @@
     "meta": {
       "filename": "TheVideoStyle.jsx",
       "lineno": 22,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 11,

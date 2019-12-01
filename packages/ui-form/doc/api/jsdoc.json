@@ -12,7 +12,7 @@
     "name": "@the-/ui-form",
     "order": 0,
     "typicalname": "uiForm",
-    "version": "15.4.14"
+    "version": "16.0.0"
   },
   {
     "description": "Form of the-components",
@@ -37,7 +37,7 @@
     "meta": {
       "filename": "TheFormStyle.jsx",
       "lineno": 11,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheFormStyle",
     "order": 16,
@@ -305,7 +305,7 @@
     "meta": {
       "filename": "TheFormStyle.jsx",
       "lineno": 22,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 17,

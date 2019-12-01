@@ -12,7 +12,7 @@
     "name": "@the-/ui-button",
     "order": 0,
     "typicalname": "uiButton",
-    "version": "15.5.9"
+    "version": "16.0.0"
   },
   {
     "description": "Button of the-components",
@@ -65,7 +65,7 @@
     "meta": {
       "filename": "TheButtonStyle.jsx",
       "lineno": 11,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheButtonStyle",
     "order": 21,
@@ -351,7 +351,7 @@
     "meta": {
       "filename": "TheButtonStyle.jsx",
       "lineno": 22,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 22,

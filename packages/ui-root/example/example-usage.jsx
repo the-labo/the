@@ -1,7 +1,8 @@
 'use strict'
 
 import React from 'react'
-import { TheRoot, TheRootStyle } from '@the-/ui-root'
+import { TheRoot } from '@the-/ui-root'
+import { TheRootStyle } from '@the-/ui-root/styles'
 
 class ExampleComponent extends React.PureComponent {
   render() {

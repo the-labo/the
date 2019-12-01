@@ -4,14 +4,12 @@
  * @description Image of the-components
  * @module @the-/ui-image
  * @typicalname uiImage
- * @version 15.5.2
+ * @version 16.0.0
  */
 'use strict'
 
 import TheImage from './TheImage'
-import TheImageStyle from './TheImageStyle'
 
 export {
   TheImage,
-  TheImageStyle,
 }

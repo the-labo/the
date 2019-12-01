@@ -2,8 +2,8 @@
 
 import classnames from 'classnames'
 import React from 'react'
-import TheContainer from '@the-/ui-container/shim/TheContainer'
-import TheLink from '@the-/ui-link/shim/TheLink'
+import { TheContainer } from '@the-/ui-container'
+import { TheLink } from '@the-/ui-link'
 import { htmlAttributesFor } from '@the-/util-ui'
 
 /**

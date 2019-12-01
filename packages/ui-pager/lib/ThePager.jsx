@@ -2,7 +2,6 @@
 
 import c from 'classnames'
 import { metaToPage } from 'clay-list-pager'
-import numcal from 'numcal'
 import PropTypes from 'prop-types'
 import React, { useMemo } from 'react'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
@@ -27,8 +26,8 @@ const ThePager = React.memo((props) => {
     const max = total - 1
     const sizeHalf = parseInt(size / 2)
 
-    const from = numcal.max(min, numcal.min(page - sizeHalf, max - size + 1))
-    const to = numcal.min(numcal.max(min + size - 1, page + sizeHalf), max)
+    const from = Math.max(min, Math.min(page - sizeHalf, max - size + 1))
+    const to = Math.min(Math.max(min + size - 1, page + sizeHalf), max)
 
     const newItem = (index, title, enabled = true) => (
       <ThePager.Item

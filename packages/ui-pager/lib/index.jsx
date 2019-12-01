@@ -4,14 +4,12 @@
  * @description Pager of the-components
  * @module @the-/ui-pager
  * @typicalname uiPager
- * @version 15.4.12
+ * @version 16.0.0
  */
 'use strict'
 
 import ThePager from './ThePager'
-import ThePagerStyle from './ThePagerStyle'
 
 export {
   ThePager,
-  ThePagerStyle,
 }

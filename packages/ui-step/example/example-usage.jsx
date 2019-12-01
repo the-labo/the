@@ -1,9 +1,10 @@
 'use strict'
 
 import React from 'react'
-import { TheButtonStyle } from '@the-/ui-button'
-import { TheSpinStyle } from '@the-/ui-spin'
-import { TheStep, TheStepBar, TheStepStyle } from '@the-/ui-step'
+import { TheButtonStyle } from '@the-/ui-button/styles'
+import { TheSpinStyle } from '@the-/ui-spin/styles'
+import { TheStep, TheStepBar } from '@the-/ui-step'
+import { TheStepStyle } from '@the-/ui-step/styles'
 
 class ExampleComponent extends React.Component {
   constructor(props) {

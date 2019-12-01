@@ -29,7 +29,7 @@
 ## @the-/ui-router
 Router of the-components
 
-**Version**: 15.4.11  
+**Version**: 16.0.0  
 <a name="TheRouter"></a>
 
 ## TheRouter

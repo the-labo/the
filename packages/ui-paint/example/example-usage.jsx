@@ -1,7 +1,8 @@
 'use strict'
 
 import React from 'react'
-import { ThePaint, ThePaintStyle } from '@the-/ui-paint'
+import { ThePaint } from '@the-/ui-paint'
+import { ThePaintStyle } from '@the-/ui-paint/styles'
 
 class ExampleComponent extends React.Component {
   clear = () => {

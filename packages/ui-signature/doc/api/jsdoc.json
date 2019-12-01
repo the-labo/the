@@ -12,7 +12,7 @@
     "name": "@the-/ui-signature",
     "order": 0,
     "typicalname": "uiSignature",
-    "version": "15.5.6"
+    "version": "16.0.0"
   },
   {
     "description": "Signature pad of the-components",
@@ -37,7 +37,7 @@
     "meta": {
       "filename": "TheSignatureStyle.jsx",
       "lineno": 10,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheSignatureStyle",
     "order": 2,
@@ -53,7 +53,7 @@
     "meta": {
       "filename": "TheSignatureStyle.jsx",
       "lineno": 21,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 3,

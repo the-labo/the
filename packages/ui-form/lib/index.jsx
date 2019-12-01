@@ -4,16 +4,14 @@
  * @description Form of the-components
  * @module @the-/ui-form
  * @typicalname uiForm
- * @version 15.4.14
+ * @version 16.0.0
  */
 'use strict'
 
 import TheForm from './TheForm'
 import TheFormBinder from './TheFormBinder'
-import TheFormStyle from './TheFormStyle'
 
 export {
   TheForm,
   TheFormBinder,
-  TheFormStyle,
 }

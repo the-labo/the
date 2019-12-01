@@ -12,7 +12,7 @@
     "name": "@the-/ui-map",
     "order": 0,
     "typicalname": "uiMap",
-    "version": "15.5.2"
+    "version": "16.0.0"
   },
   {
     "description": "Geo map for the-components",
@@ -41,7 +41,7 @@
       "path": "lib/classes"
     },
     "name": "DivIcon",
-    "order": 12,
+    "order": 10,
     "scope": "global"
   },
   {
@@ -57,7 +57,7 @@
       "path": "lib/classes"
     },
     "name": "TileLayer",
-    "order": 13,
+    "order": 11,
     "scope": "global"
   },
   {
@@ -68,10 +68,10 @@
     "meta": {
       "filename": "TheMapStyle.jsx",
       "lineno": 12,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheMapStyle",
-    "order": 10,
+    "order": 12,
     "params": [],
     "scope": "global"
   },
@@ -204,10 +204,10 @@
     "meta": {
       "filename": "TheMapStyle.jsx",
       "lineno": 32,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
-    "order": 11,
+    "order": 13,
     "scope": "static"
   }
 ]

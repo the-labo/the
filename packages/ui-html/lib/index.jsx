@@ -4,14 +4,12 @@
  * @description Html of the-components
  * @module @the-/ui-html
  * @typicalname uiHtml
- * @version 15.5.1
+ * @version 16.0.0
  */
 'use strict'
 
 import TheHtml from './TheHtml'
-import TheHtmlStyle from './TheHtmlStyle'
 
 export {
   TheHtml,
-  TheHtmlStyle,
 }

@@ -4,20 +4,18 @@
  * @description Dialog for the-components
  * @module @the-/ui-dialog
  * @typicalname uiDialog
- * @version 16.0.4
+ * @version 17.0.0
  */
 'use strict'
 
 import TheConfirmDialog from './TheConfirmDialog'
 import TheDialog from './TheDialog'
-import TheDialogStyle from './TheDialogStyle'
 import TheOkDialog from './TheOkDialog'
 import TheYesNoDialog from './TheYesNoDialog'
 
 export {
   TheConfirmDialog,
   TheDialog,
-  TheDialogStyle,
   TheOkDialog,
   TheYesNoDialog,
 }

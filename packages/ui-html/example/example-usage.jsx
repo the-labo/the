@@ -1,13 +1,8 @@
 'use strict'
 
 import React from 'react'
-import TheHtml from '@the-/ui-html'
+import { TheHtml } from '@the-/ui-html'
 
-class ExampleHtml extends React.PureComponent {
-  render() {
-    const styles = TheHtml.styles({})
-    return <TheHtml styles={styles} />
-  }
-}
+const ExampleHtml = () => <TheHtml />
 
 export default ExampleHtml

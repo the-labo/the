@@ -5,9 +5,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import c from 'classnames'
 import { styleString } from '@the-/util-style'
+import { TheStyle } from '@the-/ui-style'
 
 {{#each styleComponents}}
-import {{{componentName}}} from '{{pkgName}}/shim/{{{componentName}}}'
+import { {{{componentName}}} } from '{{pkgName}}/styles'
 {{/each}}
 
 /** Theme Style of the-components */

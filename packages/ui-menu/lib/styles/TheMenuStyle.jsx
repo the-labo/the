@@ -6,7 +6,7 @@ import React from 'react'
 import { ThemeValues } from '@the-/const-ui'
 import { TheStyle } from '@the-/ui-style'
 import { asStyleData } from '@the-/util-ui'
-import DropdownStyleData from './styleData/DropdownStyleData'
+import DropdownStyleData from './data/DropdownStyleData'
 
 /** Style for TheMenu */
 const TheMenuStyle = ({ className, id, options }) => (

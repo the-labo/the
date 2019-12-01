@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheCopyboard">TheCopyboard</a></dt>
-<dd><p>Component for clip-to-copy</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheCopyboard">TheCopyboard()</a></dt>
+<dd><p>Component for clip-to-copy</p>
+</dd>
 <dt><a href="#TheCopyboardStyle">TheCopyboardStyle()</a></dt>
 <dd><p>Style for TheCopyboard</p>
 </dd>
@@ -29,13 +24,13 @@
 ## @the-/ui-copyboard
 Component for clip-to-copy
 
-**Version**: 15.4.14  
+**Version**: 16.0.0  
 <a name="TheCopyboard"></a>
 
-## TheCopyboard
+## TheCopyboard()
 Component for clip-to-copy
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheCopyboardStyle"></a>
 
 ## TheCopyboardStyle()

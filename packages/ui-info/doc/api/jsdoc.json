@@ -12,7 +12,7 @@
     "name": "@the-/ui-info",
     "order": 0,
     "typicalname": "uiInfo",
-    "version": "15.4.12"
+    "version": "16.0.1"
   },
   {
     "description": "Info of the-component",
@@ -37,7 +37,7 @@
     "meta": {
       "filename": "TheInfoStyle.jsx",
       "lineno": 11,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheInfoStyle",
     "order": 5,
@@ -98,7 +98,7 @@
     "meta": {
       "filename": "TheInfoStyle.jsx",
       "lineno": 22,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 6,

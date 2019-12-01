@@ -1,13 +1,10 @@
 'use strict'
 
 import React from 'react'
-import { TheButtonStyle } from '@the-/ui-button'
-import {
-  TheAccordionSection,
-  TheSection,
-  TheSectionStyle,
-} from '@the-/ui-section'
-import { TheSpinStyle } from '@the-/ui-spin'
+import { TheButtonStyle } from '@the-/ui-button/styles'
+import { TheAccordionSection, TheSection } from '@the-/ui-section'
+import { TheSectionStyle } from '@the-/ui-section/styles'
+import { TheSpinStyle } from '@the-/ui-spin/styles'
 
 class ExampleComponent extends React.PureComponent {
   render() {

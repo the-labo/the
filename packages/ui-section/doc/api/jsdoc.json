@@ -12,7 +12,7 @@
     "name": "@the-/ui-section",
     "order": 0,
     "typicalname": "uiSection",
-    "version": "15.4.21"
+    "version": "16.0.1"
   },
   {
     "description": "Accordion section",
@@ -52,7 +52,7 @@
     "meta": {
       "filename": "TheSectionStyle.jsx",
       "lineno": 11,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheSectionStyle",
     "order": 6,
@@ -113,7 +113,7 @@
     "meta": {
       "filename": "TheSectionStyle.jsx",
       "lineno": 22,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 7,

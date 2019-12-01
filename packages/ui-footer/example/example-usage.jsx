@@ -1,19 +1,16 @@
 'use strict'
 
 import React from 'react'
-import { TheFooter, TheFooterStyle } from '@the-/ui-footer'
+import { TheFooter } from '@the-/ui-footer'
+import { TheFooterStyle } from '@the-/ui-footer/styles'
 
-class ExampleComponent extends React.PureComponent {
-  render() {
-    return (
-      <div>
-        <TheFooterStyle />
-        <TheFooter>
-          <TheFooter.CopyRight holder='the-labo' />
-        </TheFooter>
-      </div>
-    )
-  }
-}
+const ExampleComponent = () => (
+  <div>
+    <TheFooterStyle />
+    <TheFooter>
+      <TheFooter.CopyRight holder='the-labo' />
+    </TheFooter>
+  </div>
+)
 
 export default ExampleComponent

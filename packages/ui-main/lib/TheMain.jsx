@@ -3,7 +3,7 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
-import TheSpin from '@the-/ui-spin/shim/TheSpin'
+import { TheSpin } from '@the-/ui-spin'
 import { htmlAttributesFor } from '@the-/util-ui'
 
 /**

@@ -1,11 +1,13 @@
 'use strict'
 
-import React from 'react'
-import { TheButton, TheButtonStyle } from '@the-/ui-button'
-import { TheFlick, TheFlickStyle } from '@the-/ui-flick'
-import { TheImageStyle } from '@the-/ui-image'
-import { TheSpinStyle } from '@the-/ui-spin'
-import { TheVideoStyle } from '@the-/ui-video'
+import React, { useState } from 'react'
+import { TheButton } from '@the-/ui-button'
+import { TheButtonStyle } from '@the-/ui-button/styles'
+import { TheFlick } from '@the-/ui-flick'
+import { TheFlickStyle } from '@the-/ui-flick/styles'
+import { TheImageStyle } from '@the-/ui-image/styles'
+import { TheSpinStyle } from '@the-/ui-spin/styles'
+import { TheVideoStyle } from '@the-/ui-video/styles'
 
 const imageUrls = [
   'https://raw.githubusercontent.com/apeman-asset-labo/apeman-asset-images/master/dist/dummy/01.jpg',
@@ -16,47 +18,37 @@ const imageUrls = [
 
 const videoUrls = ['./mov_bbb.mp4']
 
-class ExampleComponent extends React.PureComponent {
-  constructor(props) {
-    super(props)
-    this.state = {
-      activeIndex: 1,
-      present: true,
-    }
-  }
+const ExampleComponent = () => {
+  const [activeIndex, setActiveIndex] = useState(1)
+  const [present, setPresent] = useState(true)
+  return (
+    <div>
+      <TheButtonStyle />
+      <TheSpinStyle />
+      <TheImageStyle />
+      <TheVideoStyle />
+      <TheFlickStyle />
 
-  render() {
-    return (
-      <div>
-        <TheButtonStyle />
-        <TheSpinStyle />
-        <TheImageStyle />
-        <TheVideoStyle />
-        <TheFlickStyle />
-
-        <TheButton onClick={() => this.setState({ present: true })}>
-          Show Flick Images
-        </TheButton>
-        <TheFlick
-          activeIndex={this.state.activeIndex}
-          images={[
-            imageUrls[0],
-            { spinning: true, src: imageUrls[1] },
-            { src: imageUrls[2], title: 'Some title' },
-            {
-              description: 'This is image description',
-              src: imageUrls[3],
-              title: 'Some title',
-            },
-            { src: videoUrls[0], title: 'Some video' },
-          ]}
-          onChange={({ activeIndex }) => this.setState({ activeIndex })}
-          onClose={() => this.setState({ present: false })}
-          present={this.state.present}
-        />
-      </div>
-    )
-  }
+      <TheButton onClick={() => setPresent(true)}>Show Flick Images</TheButton>
+      <TheFlick
+        activeIndex={activeIndex}
+        images={[
+          imageUrls[0],
+          { spinning: true, src: imageUrls[1] },
+          { src: imageUrls[2], title: 'Some title' },
+          {
+            description: 'This is image description',
+            src: imageUrls[3],
+            title: 'Some title',
+          },
+          { src: videoUrls[0], title: 'Some video' },
+        ]}
+        onChange={({ activeIndex }) => setActiveIndex(activeIndex)}
+        onClose={() => setPresent(false)}
+        present={present}
+      />
+    </div>
+  )
 }
 
 export default ExampleComponent

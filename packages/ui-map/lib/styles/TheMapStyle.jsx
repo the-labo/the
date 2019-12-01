@@ -6,7 +6,7 @@ import React from 'react'
 import { ThemeValues } from '@the-/const-ui'
 import { TheStyle } from '@the-/ui-style'
 import { asStyleData } from '@the-/util-ui'
-import PositionInputStyleData from './styleData/PositionInputStyleData'
+import PositionInputStyleData from './data/PositionInputStyleData'
 
 /** Style for TheMap */
 const TheMapStyle = ({ className, id, options }) => [

@@ -12,7 +12,7 @@
     "name": "@the-/ui-demo",
     "order": 0,
     "typicalname": "uiDemo",
-    "version": "15.5.4"
+    "version": "16.0.0"
   },
   {
     "description": "Live demo of the-components",
@@ -21,7 +21,7 @@
     "longname": "TheComponentDemo",
     "meta": {
       "filename": "TheComponentDemo.jsx",
-      "lineno": 39,
+      "lineno": 45,
       "path": "lib"
     },
     "name": "TheComponentDemo",
@@ -36,7 +36,7 @@
     "memberof": "TheComponentDemo.propTypes",
     "meta": {
       "filename": "TheComponentDemo.jsx",
-      "lineno": 115,
+      "lineno": 121,
       "path": "lib"
     },
     "name": "className",
@@ -51,7 +51,7 @@
     "memberof": "TheComponentDemo.propTypes",
     "meta": {
       "filename": "TheComponentDemo.jsx",
-      "lineno": 117,
+      "lineno": 123,
       "path": "lib"
     },
     "name": "pkg",
@@ -66,7 +66,7 @@
     "memberof": "TheComponentDemo.propTypes",
     "meta": {
       "filename": "TheComponentDemo.jsx",
-      "lineno": 119,
+      "lineno": 125,
       "path": "lib"
     },
     "name": "snippet",

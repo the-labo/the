@@ -12,7 +12,7 @@
     "name": "@the-/ui-body",
     "order": 0,
     "typicalname": "uiBody",
-    "version": "15.5.0"
+    "version": "16.0.0"
   },
   {
     "description": "Body of the-components",
@@ -37,7 +37,7 @@
     "meta": {
       "filename": "TheBodyStyle.jsx",
       "lineno": 10,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheBodyStyle",
     "order": 2,
@@ -53,7 +53,7 @@
     "meta": {
       "filename": "TheBodyStyle.jsx",
       "lineno": 21,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 3,

@@ -4,7 +4,7 @@ import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import qrcode from 'qrcode'
 import React, { useEffect, useMemo, useState } from 'react'
-import TheSpin from '@the-/ui-spin/shim/TheSpin'
+import { TheSpin } from '@the-/ui-spin'
 import {
   base64ToBlob,
   eventHandlersFor,

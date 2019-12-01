@@ -12,7 +12,7 @@
     "name": "@the-/ui-bar",
     "order": 0,
     "typicalname": "uiBar",
-    "version": "15.5.4"
+    "version": "16.0.1"
   },
   {
     "description": "Bar of the-component",
@@ -52,7 +52,7 @@
     "meta": {
       "filename": "TheBarStyle.jsx",
       "lineno": 10,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheBarStyle",
     "order": 9,
@@ -158,7 +158,7 @@
     "meta": {
       "filename": "TheBarStyle.jsx",
       "lineno": 21,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 10,

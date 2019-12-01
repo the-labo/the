@@ -12,7 +12,7 @@
     "name": "@the-/ui-main",
     "order": 0,
     "typicalname": "uiMain",
-    "version": "15.4.15"
+    "version": "16.0.0"
   },
   {
     "description": "Main for the-components",
@@ -37,7 +37,7 @@
     "meta": {
       "filename": "TheMainStyle.jsx",
       "lineno": 10,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheMainStyle",
     "order": 3,
@@ -68,7 +68,7 @@
     "meta": {
       "filename": "TheMainStyle.jsx",
       "lineno": 21,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 4,

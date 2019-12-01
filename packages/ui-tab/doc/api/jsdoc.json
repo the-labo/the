@@ -12,7 +12,7 @@
     "name": "@the-/ui-tab",
     "order": 0,
     "typicalname": "uiTab",
-    "version": "15.4.17"
+    "version": "16.0.0"
   },
   {
     "description": "Tab for the-components",
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheTabStyle.jsx",
       "lineno": 11,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheTabStyle",
     "order": 6,
@@ -112,7 +112,7 @@
     "meta": {
       "filename": "TheTabStyle.jsx",
       "lineno": 22,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 7,

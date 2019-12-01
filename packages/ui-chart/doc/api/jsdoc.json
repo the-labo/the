@@ -12,7 +12,7 @@
     "name": "@the-/ui-chart",
     "order": 0,
     "typicalname": "uiChart",
-    "version": "15.4.13"
+    "version": "15.4.14"
   },
   {
     "description": "Chart for the-components",
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheChartStyle.jsx",
       "lineno": 10,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheChartStyle",
     "order": 5,
@@ -97,7 +97,7 @@
     "meta": {
       "filename": "TheChartStyle.jsx",
       "lineno": 21,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 6,

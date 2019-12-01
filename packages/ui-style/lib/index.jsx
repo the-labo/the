@@ -4,16 +4,12 @@
  * @description Style of the-components
  * @module @the-/ui-style
  * @typicalname uiStyle
- * @version 16.0.0
+ * @version 16.0.1
  */
 'use strict'
 
 import TheStyle from './TheStyle'
 
 export {
-  TheStyle,
-}
-
-export default {
   TheStyle,
 }

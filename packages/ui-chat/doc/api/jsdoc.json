@@ -12,7 +12,7 @@
     "name": "@the-/ui-chat",
     "order": 0,
     "typicalname": "uiChat",
-    "version": "15.4.16"
+    "version": "15.4.17"
   },
   {
     "description": "Chat UI of the-components",
@@ -39,7 +39,7 @@
       "path": "lib"
     },
     "name": "TheChatTimeLine",
-    "order": 13,
+    "order": 11,
     "scope": "global"
   },
   {
@@ -58,21 +58,6 @@
     "scope": "global"
   },
   {
-    "description": "Style for TheChat",
-    "id": "TheChatStyle",
-    "kind": "function",
-    "longname": "TheChatStyle",
-    "meta": {
-      "filename": "TheChatStyle.jsx",
-      "lineno": 11,
-      "path": "lib"
-    },
-    "name": "TheChatStyle",
-    "order": 11,
-    "params": [],
-    "scope": "global"
-  },
-  {
     "description": "Chat Time line item",
     "id": "TheChatTimeLineItem",
     "kind": "function",
@@ -83,7 +68,22 @@
       "path": "lib"
     },
     "name": "TheChatTimeLineItem",
-    "order": 23,
+    "order": 21,
+    "params": [],
+    "scope": "global"
+  },
+  {
+    "description": "Style for TheChat",
+    "id": "TheChatStyle",
+    "kind": "function",
+    "longname": "TheChatStyle",
+    "meta": {
+      "filename": "TheChatStyle.jsx",
+      "lineno": 11,
+      "path": "lib/styles"
+    },
+    "name": "TheChatStyle",
+    "order": 31,
     "params": [],
     "scope": "global"
   },
@@ -208,21 +208,6 @@
     "scope": "static"
   },
   {
-    "description": "Style options",
-    "id": "TheChatStyle.propTypes.options",
-    "kind": "member",
-    "longname": "TheChatStyle.propTypes.options",
-    "memberof": "TheChatStyle.propTypes",
-    "meta": {
-      "filename": "TheChatStyle.jsx",
-      "lineno": 22,
-      "path": "lib"
-    },
-    "name": "options",
-    "order": 12,
-    "scope": "static"
-  },
-  {
     "description": "Alt text",
     "id": "TheChatTimeLine.propTypes.alt",
     "kind": "member",
@@ -234,7 +219,7 @@
       "path": "lib"
     },
     "name": "alt",
-    "order": 14,
+    "order": 12,
     "scope": "static"
   },
   {
@@ -249,7 +234,7 @@
       "path": "lib"
     },
     "name": "items",
-    "order": 15,
+    "order": 13,
     "scope": "static"
   },
   {
@@ -264,7 +249,7 @@
       "path": "lib"
     },
     "name": "lang",
-    "order": 16,
+    "order": 14,
     "scope": "static"
   },
   {
@@ -279,7 +264,7 @@
       "path": "lib"
     },
     "name": "onScrollReachBottom",
-    "order": 17,
+    "order": 15,
     "scope": "static"
   },
   {
@@ -294,7 +279,7 @@
       "path": "lib"
     },
     "name": "onScrollReachTop",
-    "order": 18,
+    "order": 16,
     "scope": "static"
   },
   {
@@ -309,7 +294,7 @@
       "path": "lib"
     },
     "name": "onWho",
-    "order": 19,
+    "order": 17,
     "scope": "static"
   },
   {
@@ -324,7 +309,7 @@
       "path": "lib"
     },
     "name": "spinning",
-    "order": 20,
+    "order": 18,
     "scope": "static"
   },
   {
@@ -339,7 +324,7 @@
       "path": "lib"
     },
     "name": "whoBaseColor",
-    "order": 21,
+    "order": 19,
     "scope": "static"
   },
   {
@@ -354,7 +339,7 @@
       "path": "lib"
     },
     "name": "whoImageSize",
-    "order": 22,
+    "order": 20,
     "scope": "static"
   },
   {
@@ -369,7 +354,7 @@
       "path": "lib"
     },
     "name": "align",
-    "order": 24,
+    "order": 22,
     "scope": "static"
   },
   {
@@ -384,7 +369,7 @@
       "path": "lib"
     },
     "name": "image",
-    "order": 25,
+    "order": 23,
     "scope": "static"
   },
   {
@@ -399,7 +384,7 @@
       "path": "lib"
     },
     "name": "onWho",
-    "order": 26,
+    "order": 24,
     "scope": "static"
   },
   {
@@ -414,7 +399,7 @@
       "path": "lib"
     },
     "name": "status",
-    "order": 27,
+    "order": 25,
     "scope": "static"
   },
   {
@@ -429,7 +414,7 @@
       "path": "lib"
     },
     "name": "text",
-    "order": 28,
+    "order": 26,
     "scope": "static"
   },
   {
@@ -444,7 +429,7 @@
       "path": "lib"
     },
     "name": "video",
-    "order": 29,
+    "order": 27,
     "scope": "static"
   },
   {
@@ -459,7 +444,7 @@
       "path": "lib"
     },
     "name": "who",
-    "order": 30,
+    "order": 28,
     "scope": "static"
   },
   {
@@ -474,7 +459,7 @@
       "path": "lib"
     },
     "name": "whoBaseColor",
-    "order": 31,
+    "order": 29,
     "scope": "static"
   },
   {
@@ -489,6 +474,21 @@
       "path": "lib"
     },
     "name": "whoImageSize",
+    "order": 30,
+    "scope": "static"
+  },
+  {
+    "description": "Style options",
+    "id": "TheChatStyle.propTypes.options",
+    "kind": "member",
+    "longname": "TheChatStyle.propTypes.options",
+    "memberof": "TheChatStyle.propTypes",
+    "meta": {
+      "filename": "TheChatStyle.jsx",
+      "lineno": 22,
+      "path": "lib/styles"
+    },
+    "name": "options",
     "order": 32,
     "scope": "static"
   }

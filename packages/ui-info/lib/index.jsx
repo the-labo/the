@@ -4,14 +4,12 @@
  * @description Info of the-component
  * @module @the-/ui-info
  * @typicalname uiInfo
- * @version 15.4.12
+ * @version 16.0.1
  */
 'use strict'
 
 import TheInfo from './TheInfo'
-import TheInfoStyle from './TheInfoStyle'
 
 export {
   TheInfo,
-  TheInfoStyle,
 }

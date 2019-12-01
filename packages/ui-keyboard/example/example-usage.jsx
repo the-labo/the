@@ -1,7 +1,8 @@
 'use strict'
 
 import React from 'react'
-import { TheKeyboard, TheKeyboardStyle } from '@the-/ui-keyboard'
+import { TheKeyboard } from '@the-/ui-keyboard'
+import { TheKeyboardStyle } from '@the-/ui-keyboard/styles'
 
 class ExampleComponent extends React.Component {
   constructor(props) {

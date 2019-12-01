@@ -5,7 +5,7 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { TheMedia } from '@the-/media'
-import TheSpin from '@the-/ui-spin/shim/TheSpin'
+import { TheSpin } from '@the-/ui-spin'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
 /**

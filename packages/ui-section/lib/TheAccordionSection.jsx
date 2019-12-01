@@ -3,7 +3,7 @@
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
-import TheIcon from '@the-/ui-icon/shim/TheIcon'
+import { TheIcon } from '@the-/ui-icon'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 import TheSection from './TheSection'
 

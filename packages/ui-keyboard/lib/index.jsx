@@ -4,16 +4,14 @@
  * @description Keyboard component
  * @module @the-/ui-keyboard
  * @typicalname uiKeyboard
- * @version 15.4.11
+ * @version 16.0.0
  */
 'use strict'
 
 import TheKeyboard from './TheKeyboard'
 import TheKeyboardButton from './TheKeyboardButton'
-import TheKeyboardStyle from './TheKeyboardStyle'
 
 export {
   TheKeyboard,
   TheKeyboardButton,
-  TheKeyboardStyle,
 }

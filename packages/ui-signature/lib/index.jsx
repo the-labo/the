@@ -4,16 +4,14 @@
  * @description Signature pad of the-components
  * @module @the-/ui-signature
  * @typicalname uiSignature
- * @version 15.5.6
+ * @version 16.0.0
  */
 'use strict'
 
 import TheSignature from './TheSignature'
 import TheSignatureInput from './TheSignatureInput'
-import TheSignatureStyle from './TheSignatureStyle'
 
 export {
   TheSignature,
   TheSignatureInput,
-  TheSignatureStyle,
 }

@@ -12,7 +12,7 @@
     "name": "@the-/ui-router",
     "order": 0,
     "typicalname": "uiRouter",
-    "version": "15.4.11"
+    "version": "16.0.0"
   },
   {
     "description": "Router of the-components",
@@ -36,7 +36,7 @@
     "meta": {
       "filename": "TheRouterStyle.jsx",
       "lineno": 9,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheRouterStyle",
     "order": 2,
@@ -52,7 +52,7 @@
     "meta": {
       "filename": "TheRouterStyle.jsx",
       "lineno": 20,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 3,

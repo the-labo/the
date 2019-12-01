@@ -4,14 +4,12 @@
  * @description Main for the-components
  * @module @the-/ui-main
  * @typicalname uiMain
- * @version 15.4.15
+ * @version 16.0.0
  */
 'use strict'
 
 import TheMain from './TheMain'
-import TheMainStyle from './TheMainStyle'
 
 export {
   TheMain,
-  TheMainStyle,
 }

@@ -24,7 +24,7 @@
 ## @the-/ui-body
 Body of the-components
 
-**Version**: 15.5.0  
+**Version**: 16.0.0  
 <a name="TheBody"></a>
 
 ## TheBody()

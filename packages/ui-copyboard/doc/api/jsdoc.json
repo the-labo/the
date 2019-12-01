@@ -12,20 +12,21 @@
     "name": "@the-/ui-copyboard",
     "order": 0,
     "typicalname": "uiCopyboard",
-    "version": "15.4.14"
+    "version": "16.0.0"
   },
   {
     "description": "Component for clip-to-copy",
     "id": "TheCopyboard",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheCopyboard",
     "meta": {
       "filename": "TheCopyboard.jsx",
-      "lineno": 14,
+      "lineno": 13,
       "path": "lib"
     },
     "name": "TheCopyboard",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
@@ -36,7 +37,7 @@
     "meta": {
       "filename": "TheCopyboardStyle.jsx",
       "lineno": 10,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "TheCopyboardStyle",
     "order": 5,
@@ -51,7 +52,7 @@
     "memberof": "TheCopyboard.propTypes",
     "meta": {
       "filename": "TheCopyboard.jsx",
-      "lineno": 104,
+      "lineno": 96,
       "path": "lib"
     },
     "name": "text",
@@ -66,7 +67,7 @@
     "memberof": "TheCopyboard.propTypes",
     "meta": {
       "filename": "TheCopyboard.jsx",
-      "lineno": 106,
+      "lineno": 98,
       "path": "lib"
     },
     "name": "tipDuration",
@@ -81,7 +82,7 @@
     "memberof": "TheCopyboard.propTypes",
     "meta": {
       "filename": "TheCopyboard.jsx",
-      "lineno": 108,
+      "lineno": 100,
       "path": "lib"
     },
     "name": "tipText",
@@ -97,7 +98,7 @@
     "meta": {
       "filename": "TheCopyboardStyle.jsx",
       "lineno": 21,
-      "path": "lib"
+      "path": "lib/styles"
     },
     "name": "options",
     "order": 6,

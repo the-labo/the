@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-calendar",
   "description": "Calendar of the-components",
-  "version": "15.4.17",
+  "version": "16.0.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,8 +13,8 @@
   "dependencies": {
     "@the-/const-ui": "^15.5.0",
     "@the-/date": "^15.5.0",
-    "@the-/ui-button": "^15.5.7",
-    "@the-/ui-condition": "^15.5.0",
+    "@the-/ui-button": "^16.0.0",
+    "@the-/ui-condition": "^16.0.0",
     "@the-/ui-style": "^16.0.0",
     "@the-/util-ui": "^16.3.2",
     "classnames": "^2.2.6",

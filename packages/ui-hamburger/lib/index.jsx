@@ -4,14 +4,12 @@
  * @description Hamburger menu for the-components
  * @module @the-/ui-hamburger
  * @typicalname uiHamburger
- * @version 15.4.18
+ * @version 16.0.0
  */
 'use strict'
 
 import TheHamburger from './TheHamburger'
-import TheHamburgerStyle from './TheHamburgerStyle'
 
 export {
   TheHamburger,
-  TheHamburgerStyle,
 }

@@ -4,14 +4,12 @@
  * @description Hand write painting
  * @module @the-/ui-paint
  * @typicalname uiPaint
- * @version 15.8.0
+ * @version 16.0.0
  */
 'use strict'
 
 import ThePaint from './ThePaint'
-import ThePaintStyle from './ThePaintStyle'
 
 export {
   ThePaint,
-  ThePaintStyle,
 }

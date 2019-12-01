@@ -12,7 +12,10 @@ module.exports = {
       (styleComponents, pkgName) => [
         ...styleComponents,
         ...components[pkgName]
-          .filter((componentName) => /Style$/.test(componentName))
+          .filter(
+            (componentName) =>
+              /Style$/.test(componentName) && componentName !== 'TheStyle',
+          )
           .map((componentName) => ({
             componentName,
             pkgName,

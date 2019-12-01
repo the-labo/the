@@ -4,16 +4,14 @@
  * @description Route of the-components
  * @module @the-/ui-route
  * @typicalname uiRoute
- * @version 15.4.12
+ * @version 16.0.1
  */
 'use strict'
 
 import TheRoute from './TheRoute'
 import TheRouteStack from './TheRouteStack'
-import TheRouteStyle from './TheRouteStyle'
 
 export {
   TheRoute,
   TheRouteStack,
-  TheRouteStyle,
 }

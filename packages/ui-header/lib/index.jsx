@@ -4,14 +4,12 @@
  * @description Header of the-components
  * @module @the-/ui-header
  * @typicalname uiHeader
- * @version 15.4.17
+ * @version 16.0.0
  */
 'use strict'
 
 import TheHeader from './TheHeader'
-import TheHeaderStyle from './TheHeaderStyle'
 
 export {
   TheHeader,
-  TheHeaderStyle,
 }

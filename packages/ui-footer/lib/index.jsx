@@ -4,14 +4,12 @@
  * @description Footer of the-components
  * @module @the-/ui-footer
  * @typicalname uiFooter
- * @version 15.4.16
+ * @version 16.0.0
  */
 'use strict'
 
 import TheFooter from './TheFooter'
-import TheFooterStyle from './TheFooterStyle'
 
 export {
   TheFooter,
-  TheFooterStyle,
 }

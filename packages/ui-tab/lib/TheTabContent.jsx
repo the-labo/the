@@ -2,7 +2,7 @@
 
 import c from 'classnames'
 import React from 'react'
-import TheSpin from '@the-/ui-spin/shim/TheSpin'
+import { TheSpin } from '@the-/ui-spin'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 
 export default function TheTabContent(props) {

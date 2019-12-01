@@ -6,7 +6,7 @@ import React from 'react'
 import { ThemeValues } from '@the-/const-ui'
 import { TheStyle } from '@the-/ui-style'
 import { asStyleData } from '@the-/util-ui'
-import CamInputStyleData from './styleData/CamInputStyleData'
+import CamInputStyleData from './data/CamInputStyleData'
 
 /** Style for TheCam */
 const TheCamStyle = ({ className, id, options }) => (

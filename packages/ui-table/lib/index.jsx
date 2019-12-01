@@ -4,14 +4,12 @@
  * @description Table for the-components
  * @module @the-/ui-table
  * @typicalname uiTable
- * @version 16.0.2
+ * @version 17.0.0
  */
 'use strict'
 
 import TheTable from './TheTable'
-import TheTableStyle from './TheTableStyle'
 
 export {
   TheTable,
-  TheTableStyle,
 }

@@ -1,9 +1,0 @@
-'use strict'
-
-const { Index: IndexJsx } = require('@the-/templates/presets/component')
-
-module.exports = IndexJsx(__dirname)
-
-if (!module.parent) {
-  require('coz').render(__filename)
-}

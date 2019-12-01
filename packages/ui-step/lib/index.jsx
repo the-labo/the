@@ -4,16 +4,14 @@
  * @description Steps for the-components
  * @module @the-/ui-step
  * @typicalname uiStep
- * @version 15.4.16
+ * @version 16.0.1
  */
 'use strict'
 
 import TheStep from './TheStep'
 import TheStepBar from './TheStepBar'
-import TheStepStyle from './TheStepStyle'
 
 export {
   TheStep,
   TheStepBar,
-  TheStepStyle,
 }

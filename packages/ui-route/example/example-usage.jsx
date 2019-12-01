@@ -2,9 +2,10 @@
 
 import React from 'react'
 import { TheLink } from '@the-/ui-link'
-import { TheRoute, TheRouteStack, TheRouteStyle } from '@the-/ui-route'
+import { TheRoute, TheRouteStack } from '@the-/ui-route'
+import { TheRouteStyle } from '@the-/ui-route/styles'
 import { TheRouter } from '@the-/ui-router'
-import { TheSpinStyle } from '@the-/ui-spin'
+import { TheSpinStyle } from '@the-/ui-spin/styles'
 
 class ExampleComponent extends React.Component {
   constructor(props) {

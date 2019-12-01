@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-qr",
   "description": "QRCode the-component",
-  "version": "15.5.1",
+  "version": "16.0.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@the-/const-ui": "^15.5.0",
-    "@the-/ui-spin": "^15.5.1",
+    "@the-/ui-spin": "^16.0.0",
     "@the-/ui-style": "^16.0.0",
     "@the-/util-ui": "^16.3.2",
     "classnames": "^2.2.6",

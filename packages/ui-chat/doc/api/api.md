@@ -25,11 +25,11 @@
 <dt><a href="#TheChat">TheChat()</a></dt>
 <dd><p>Chat UI of the-components</p>
 </dd>
-<dt><a href="#TheChatStyle">TheChatStyle()</a></dt>
-<dd><p>Style for TheChat</p>
-</dd>
 <dt><a href="#TheChatTimeLineItem">TheChatTimeLineItem()</a></dt>
 <dd><p>Chat Time line item</p>
+</dd>
+<dt><a href="#TheChatStyle">TheChatStyle()</a></dt>
+<dd><p>Style for TheChat</p>
 </dd>
 </dl>
 
@@ -38,7 +38,7 @@
 ## @the-/ui-chat
 Chat UI of the-components
 
-**Version**: 15.4.16  
+**Version**: 15.4.17  
 <a name="TheChatForm"></a>
 
 ## TheChatForm
@@ -57,15 +57,15 @@ Chat Time line
 Chat UI of the-components
 
 **Kind**: global function  
-<a name="TheChatStyle"></a>
-
-## TheChatStyle()
-Style for TheChat
-
-**Kind**: global function  
 <a name="TheChatTimeLineItem"></a>
 
 ## TheChatTimeLineItem()
 Chat Time line item
+
+**Kind**: global function  
+<a name="TheChatStyle"></a>
+
+## TheChatStyle()
+Style for TheChat
 
 **Kind**: global function  

@@ -1,18 +1,14 @@
 'use strict'
 
 import React from 'react'
-import { TheBody, TheBodyStyle } from '@the-/ui-body'
-import { TheHtml } from '@the-/ui-html'
+import { TheBody } from '@the-/ui-body'
+import { TheBodyStyle } from '@the-/ui-body/styles'
 
-class ExampleComponent extends React.PureComponent {
-  render() {
-    return (
-      <TheHtml>
-        <TheBodyStyle />
-        <TheBody />
-      </TheHtml>
-    )
-  }
-}
+const ExampleComponent = () => (
+  <html>
+    <TheBodyStyle />
+    <TheBody />
+  </html>
+)
 
 export default ExampleComponent
