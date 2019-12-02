@@ -5,7 +5,7 @@
 ## @the-/assets
 Assets for the-framework
 
-**Version**: 15.4.14  
+**Version**: 16.0.0  
 **License**: MIT  
 
 * [@the-/assets](#module_@the-/assets)

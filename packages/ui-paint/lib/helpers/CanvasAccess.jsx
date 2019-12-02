@@ -1,5 +1,6 @@
 'use strict'
 
+import C2S from 'canvas2svg'
 import { get } from '@the-/window'
 
 const CanvasAccess = (canvas) => {
@@ -80,7 +81,13 @@ const CanvasAccess = (canvas) => {
       ctx.scale(scaleFactor, scaleFactor)
     },
     toSVG() {
-      return canvas.toDataURL('image/svg+xml')
+      const btoa = get('btoa')
+      const { height, width } = canvas
+      const converter = new C2S(width, height)
+      converter.drawImage(canvas, 0, 0, width, height)
+      const svgString = converter.getSerializedSvg()
+      const base64 = btoa(svgString)
+      return `data:image/svg+xml;base64,${base64}`
     },
     async resizeAnd(onResize) {
       const { height, width } = canvas.getBoundingClientRect()

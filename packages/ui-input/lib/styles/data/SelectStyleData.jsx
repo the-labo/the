@@ -150,11 +150,12 @@ function SelectStyleData({
     },
     '.the-input-select-select,.the-input-select-input': {
       display: 'block',
-      height: '1px',
+      height: '1px !important',
       opacity: '0',
       overflow: 'hidden',
+      pointerEvents: 'none',
       position: 'absolute',
-      width: '1px',
+      width: '1px !important',
       zIndex: '-99',
     },
   })
