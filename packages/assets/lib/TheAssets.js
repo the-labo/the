@@ -28,7 +28,6 @@ class TheAssets {
       `${dirname}/webfonts`,
       { copy },
     )
-    await installFiles(`${assetDir}/shims`, `${dirname}/js`, { copy })
   }
 }
 
