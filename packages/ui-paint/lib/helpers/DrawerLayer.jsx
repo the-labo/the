@@ -173,7 +173,7 @@ function DrawerLayer(canvas, options = {}) {
     },
     serialize() {
       const { config, objects } = state
-
+      layer.applyConfig(config)
       const { height, width } = canvasAccess
       return {
         config: { ...config },

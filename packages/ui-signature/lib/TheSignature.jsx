@@ -139,12 +139,12 @@ const TheSignature = (props) => {
       className={c('the-signature', className)}
       ref={containerRef}
     >
+      {children}
       <canvas
         className='the-signature-canvas'
         ref={canvasRef}
         style={{ height, width }}
       />
-      {children}
     </div>
   )
 }

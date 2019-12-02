@@ -3,6 +3,7 @@
 import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { ThemeValues } from '@the-/const-ui'
 import { TheStyle } from '@the-/ui-style'
 import { asStyleData } from '@the-/util-ui'
 
@@ -25,9 +26,15 @@ TheSignatureStyle.defaultProps = {
   options: {},
 }
 
-TheSignatureStyle.data = () =>
-  asStyleData({
+TheSignatureStyle.data = () => {
+  const { errorColor } = ThemeValues
+  return asStyleData({
     '.the-signature': {
+      '&.the-signature-error': {
+        '.the-signature-canvas': {
+          borderColor: errorColor,
+        },
+      },
       display: 'block',
       position: 'relative',
     },
@@ -37,6 +44,11 @@ TheSignatureStyle.data = () =>
       cursor: 'pointer',
       display: 'block',
     },
+    '.the-signature-error-message': {
+      color: errorColor,
+      fontSize: 'small',
+    },
   })
+}
 
 export default TheSignatureStyle
