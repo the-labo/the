@@ -5,6 +5,11 @@ import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { unlessProduction } from '@the-/check-env'
 import {
+  addEventListenersToElm,
+  removeEventListenersFromElm,
+} from './helpers/domHelper'
+import {
+  parseGestureEvent,
   parsePanEvent,
   parsePinchEvent,
   parseRotateEvent,
@@ -18,6 +23,7 @@ import {
   setHammerRotateEnabled,
 } from './helpers/hammerHelper'
 import ListenerPipe from './helpers/ListenerPipe'
+import { isGestureSupported, isTouchSupported } from './helpers/supportHelper'
 
 const exists = (v) => !!v
 
@@ -48,11 +54,13 @@ const TheTouchable = (props) => {
   const panCallbacks = [onPan, onPanCancel, onPanEnd, onPanStart]
   const tapCallbacks = [onTap, onDoubleTap]
   const rotateCallbacks = [onRotate, onRotateStart, onRotateEnd, onRotateCancel]
-
   const pinchEnabled = pinchCallbacks.some(exists)
   const panEnabled = panCallbacks.some(exists)
   const tapEnabled = tapCallbacks.some(exists)
   const rotateEnabled = rotateCallbacks.some(exists)
+
+  const supportGesture = useMemo(() => isGestureSupported(), [])
+  const supportTouch = useMemo(() => isTouchSupported(), [])
 
   unlessProduction(() => {
     const nothingEnabled =
@@ -123,6 +131,12 @@ const TheTouchable = (props) => {
     }),
     [],
   )
+  const gestureScaleState = useMemo(
+    () => ({
+      scale: 1,
+    }),
+    [],
+  )
   const handleWheel = useCallback(
     (e) => {
       if (!e.ctrlKey) {
@@ -165,6 +179,33 @@ const TheTouchable = (props) => {
       elm.removeEventListener('wheel', handleWheel, { passive: false })
     }
   }, [pinchEnabled, wheelScaleState, handleWheel])
+
+  useEffect(() => {
+    const useGesture = pinchEnabled && supportGesture && !supportTouch
+    if (!useGesture) {
+      return
+    }
+    const { current: elm } = ref
+    const listeners = {
+      gesturechange: (e) => {
+        onPinch && onPinch(parseGestureEvent(e, { scale: e.scale }))
+        e.preventDefault()
+      },
+      gestureend: (e) => {
+        onPinchEnd && onPinchEnd(parseGestureEvent(e, { scale: e.scale }))
+        e.preventDefault()
+      },
+      gesturestart: (e) => {
+        onPinchStart && onPinchStart(parseGestureEvent(e, { scale: e.scale }))
+        e.preventDefault()
+      },
+    }
+    const opt = { passive: false }
+    addEventListenersToElm(elm, listeners, opt)
+    return () => {
+      removeEventListenersFromElm(elm, listeners, opt)
+    }
+  }, [supportGesture, pinchEnabled, ...pinchCallbacks])
 
   useEffect(() => {
     if (!hammer) {

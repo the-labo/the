@@ -1,5 +1,7 @@
 'use strict'
 
+import { get } from '@the-/window'
+
 export function parsePanEvent(e) {
   const { center, deltaX, deltaY, srcEvent } = e
   return {
@@ -47,6 +49,23 @@ export function parseWheelEvent(e, { scale }) {
     scaleOrigin: {
       x: e.offsetX,
       y: e.offsetY,
+    },
+    srcEvent: e,
+  }
+}
+
+export function parseGestureEvent(e, { scale }) {
+  const rect = e.target.getBoundingClientRect()
+  const bodyRect = get('document').body.getBoundingClientRect()
+  return {
+    center: {
+      x: e.clientX,
+      y: e.clientY,
+    },
+    scale,
+    scaleOrigin: {
+      x: e.pageX - (rect.left - bodyRect.left),
+      y: e.pageY - (rect.top - bodyRect.top),
     },
     srcEvent: e,
   }
