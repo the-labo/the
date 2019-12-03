@@ -3,12 +3,10 @@
 const socketIO = require('socket.io')
 const { TopologyTypes } = require('./constants')
 const { handleUnknownKeys, parseTurnSecret } = require('./helpers')
-const { httpMix, ioMix, sfuMix } = require('./mixins')
+const createHTTPServer = require('./helpers/createHTTPServer')
+const { ioMix, sfuMix } = require('./mixins')
 
-const TheRTCBase = [httpMix, ioMix, sfuMix].reduce(
-  (C, mix) => mix(C),
-  class Base {},
-)
+const TheRTCBase = [ioMix, sfuMix].reduce((C, mix) => mix(C), class Base {})
 
 /**
  * @memberof module:@the-/rtc
@@ -57,7 +55,7 @@ class TheRTC extends TheRTCBase {
     }
 
     this.listenAt = new Date()
-    const server = this.createHTTPServer()
+    const server = createHTTPServer()
     this.server = server
     const io = socketIO(server)
     const iceServers = [
