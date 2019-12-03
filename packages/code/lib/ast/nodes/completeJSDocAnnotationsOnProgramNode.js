@@ -42,9 +42,13 @@ function completeJSDocAnnotationsOnProgramNode(program, { get, replace }) {
       {},
     )
 
-    const shouldSkip = ['class', 'constructor', 'file', 'module', 'lends'].some(
-      (k) => tagsByTypes.hasOwnProperty(k),
-    )
+    const shouldSkip = [
+      'class',
+      'constructor',
+      'file',
+      'module',
+      'lends',
+    ].some((k) => tagsByTypes.hasOwnProperty(k))
     if (shouldSkip) {
       return
     }

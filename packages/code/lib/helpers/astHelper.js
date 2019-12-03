@@ -37,7 +37,8 @@ const astHelper =
 
       return (
         node.type === 'CallExpression' &&
-        (node.callee && node.callee.name === 'require')
+        node.callee &&
+        node.callee.name === 'require'
       )
     },
   }

@@ -5,7 +5,7 @@
 ## @the-/code
 Code formatter of the-frameworks
 
-**Version**: 15.12.1  
+**Version**: 15.13.2  
 **License**: MIT  
 
 * [@the-/code](#module_@the-/code)
@@ -39,7 +39,7 @@ Code formatter of the-frameworks
         * [.processJSON(content, [options&#x3D;])](#module_@the-/code.processors.processJSON) ⇒ <code>\*</code>
         * [.processJSPrettier(content)](#module_@the-/code.processors.processJSPrettier) ⇒ <code>Promise.&lt;string&gt;</code>
         * [.processJSRedundant(content)](#module_@the-/code.processors.processJSRedundant) ⇒ <code>string</code>
-        * [.processJSRequire(content)](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
+        * [.processJSRequire(content, [options])](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
         * [.processJSRequire(content)](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
         * [.processJSString(content)](#module_@the-/code.processors.processJSString) ⇒ <code>string</code>
         * [.processJSSwitch(content)](#module_@the-/code.processors.processJSSwitch) ⇒ <code>string</code>
@@ -150,7 +150,7 @@ Processor functions
     * [.processJSON(content, [options&#x3D;])](#module_@the-/code.processors.processJSON) ⇒ <code>\*</code>
     * [.processJSPrettier(content)](#module_@the-/code.processors.processJSPrettier) ⇒ <code>Promise.&lt;string&gt;</code>
     * [.processJSRedundant(content)](#module_@the-/code.processors.processJSRedundant) ⇒ <code>string</code>
-    * [.processJSRequire(content)](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
+    * [.processJSRequire(content, [options])](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
     * [.processJSRequire(content)](#module_@the-/code.processors.processJSRequire) ⇒ <code>string</code>
     * [.processJSString(content)](#module_@the-/code.processors.processJSString) ⇒ <code>string</code>
     * [.processJSSwitch(content)](#module_@the-/code.processors.processJSSwitch) ⇒ <code>string</code>
@@ -369,15 +369,16 @@ Removed unused vars
 
 <a name="module_@the-/code.processors.processJSRequire"></a>
 
-#### processors.processJSRequire(content) ⇒ <code>string</code>
+#### processors.processJSRequire(content, [options]) ⇒ <code>string</code>
 Process require statement
 
 **Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
 **Returns**: <code>string</code> - processed  
 
-| Param | Type |
-| --- | --- |
-| content | <code>string</code> | 
+| Param | Type | Default |
+| --- | --- | --- |
+| content | <code>string</code> |  | 
+| [options] | <code>Object</code> | <code>{}</code> | 
 
 <a name="module_@the-/code.processors.processJSRequire"></a>
 
