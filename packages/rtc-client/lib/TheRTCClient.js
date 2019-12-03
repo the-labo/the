@@ -37,6 +37,7 @@ class TheRTCClient extends TheRTCClientBase {
       onLocal,
       onRemote,
       onRemoteGone,
+      onRoom,
       rid = uuid.v4(),
     } = options
     this.room = null
@@ -45,6 +46,7 @@ class TheRTCClient extends TheRTCClientBase {
     this.onRemote = onRemote
     this.onRemoteGone = onRemoteGone
     this.onLocal = onLocal
+    this.onRoom = onRoom
     this._rid = rid
     this._info = info
   }
@@ -182,6 +184,7 @@ class TheRTCClient extends TheRTCClientBase {
       },
       [IOEvents.ROOM_STATE]: (roomState) => {
         this.room = roomState
+        this.onRoom && this.onRoom(this.room)
       },
     })
     await this.asPromise(

@@ -13,9 +13,11 @@ function parseTurnSecret(secret, expiry) {
   const hmac = crypto.createHmac('sha1', secret)
   const when = Math.floor(new Date().getTime() / 1000)
   const duration = parseInt(expiry, 10)
-  const username = `${when}${duration}`
-  hmac.update(username)
-  const credential = hmac.digest('base64')
+  const username = `${when}:${duration}`
+  hmac.setEncoding('base64')
+  hmac.write(username)
+  hmac.end()
+  const credential = hmac.read()
   return { credential, username }
 }
 

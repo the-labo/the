@@ -1,7 +1,7 @@
 {
   "name": "@the-/rtc-client",
   "description": "Client for the-rtc",
-  "version": "15.5.15",
+  "version": "15.6.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -16,7 +16,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.5.8",
+    "@the-/check": "^15.6.2",
     "@the-/lock": "^15.4.11",
     "@the-/media": "^15.5.7",
     "@the-/pack": "^15.5.1",
