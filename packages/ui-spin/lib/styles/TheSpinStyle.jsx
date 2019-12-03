@@ -38,7 +38,10 @@ TheSpinStyle.data = (options) => {
     },
     '.the-spin.the-spinner-cover': {
       '&.the-spinner-enabled': {
-        animation: '10s the-spin-cover-fade infinite linear',
+        animationDuration: '10s',
+        animationIterationCount: 'infinite',
+        animationName: 'the-spin-cover-fade',
+        animationTimingFunction: 'linear',
       },
       alignItems: 'center',
       background: overlayBackgroundColor,

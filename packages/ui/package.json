@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui",
   "description": "React components of THE framework",
-  "version": "17.0.6",
+  "version": "17.0.7",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -39,7 +39,7 @@
     "@the-/ui-route": "^16.0.1",
     "@the-/ui-router": "^16.0.1",
     "@the-/ui-section": "^16.0.1",
-    "@the-/ui-spin": "^16.0.0",
+    "@the-/ui-spin": "^16.0.1",
     "@the-/ui-step": "^16.0.3",
     "@the-/ui-style": "^16.0.2",
     "@the-/ui-tab": "^16.0.0",

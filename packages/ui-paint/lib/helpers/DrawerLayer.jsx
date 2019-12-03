@@ -1,5 +1,6 @@
 'use strict'
 
+import Debug from 'debug'
 import CanvasAccess from './CanvasAccess'
 import CircleDrawMethod from './methods/CircleDrawMethod'
 import FreeDrawMethod from './methods/FreeDrawMethod'
@@ -7,6 +8,8 @@ import RectDrawMethod from './methods/RectDrawMethod'
 import StraightDrawMethod from './methods/StraightDrawMethod'
 import DrawingMethods from '../constants/DrawingMethods'
 import ResizePolicies from '../constants/ResizePolicies'
+
+const debug = Debug('the:paint:DrawerLayer')
 
 /**
  * @function DrawerLayer
@@ -183,11 +186,13 @@ function DrawerLayer(canvas, options = {}) {
       }
     },
     setUp({ config, height, width, x, y }) {
+      debug('setup', config, height, width)
       canvasAccess.setSize({ height, width })
       canvasAccess.pathStart(x, y)
       layer.applyConfig(config)
     },
     tearDown() {
+      debug('teardown')
       canvasAccess.pathClose()
       canvasAccess.clear()
     },

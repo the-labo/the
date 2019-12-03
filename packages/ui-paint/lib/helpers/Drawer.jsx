@@ -44,7 +44,7 @@ function Drawer(canvas, tmpCanvas, options = {}) {
     },
     clear() {
       canvasAccess.clear()
-      state.tmpLayer && state.tmpLayer.tearDown()
+      state.tmpLayer && state.tmpLayer.clear()
       state.layerHistories = []
       const { background } = state
       if (background) {

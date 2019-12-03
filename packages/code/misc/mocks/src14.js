@@ -5,16 +5,6 @@
  */
 'use strict'
 
-const {
-  bindDefaults,
-  withBusy,
-  withEntities,
-  withFilter,
-  withHistory,
-  withPage,
-  withReady,
-  withSort,
-} = require('@the-/mixin-scene/shim')
 const { hasMoreFor } = require('@the-/util-site')
 const Scene = require('./Scene')
 
@@ -55,8 +45,6 @@ class ListScene extends ListSceneBase {
     throw new Error('Not implemented')
   }
 
-  @withBusy.while
-  @withReady.when
   async doSync() {
     const { entities, meta: counts } = await this.dealWith(this.getCondition())
     this.set({ counts, entities, hasMore: hasMoreFor(counts) })
