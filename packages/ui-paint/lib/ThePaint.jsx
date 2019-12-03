@@ -2,7 +2,7 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React, { useCallback, useEffect, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
   eventHandlersFor,
   htmlAttributesFor,
@@ -138,18 +138,24 @@ const ThePaint = (props) => {
     [drawer, onDraw],
   )
 
-  useEffect(() => {
-    if (!drawer) {
-      return
-    }
-    drawer.setConfig({
+  const drawConfig = useMemo(
+    () => ({
       erasing,
       lineColor,
       lineWidth,
       method,
       resizePolicy,
-    })
-  }, [drawer, lineColor, lineWidth, method, erasing, resizePolicy])
+    }),
+    [erasing, lineColor, lineWidth, method, resizePolicy],
+  )
+
+  useEffect(() => {
+    if (!drawer) {
+      return
+    }
+
+    drawer.setConfig(drawConfig)
+  }, [drawer, drawConfig])
 
   const handleDrawStart = useCallback(
     (e) => {
@@ -157,13 +163,13 @@ const ThePaint = (props) => {
       if (active) {
         return
       }
-
+      drawer.setConfig(drawConfig)
       const snapshot = drawer.snapshot()
       const pos = positionForEvent(e)
       drawer.start(pos)
       onDrawStart && onDrawStart({ drawer, pos, snapshot })
     },
-    [drawer, onDrawStart],
+    [drawer, onDrawStart, drawConfig],
   )
 
   const handleDrawEnd = useCallback(() => {
@@ -175,7 +181,8 @@ const ThePaint = (props) => {
     drawer.end()
     const snapshot = drawer.snapshot()
     onDrawEnd && onDrawEnd({ drawer, snapshot })
-  }, [drawer, onDrawEnd])
+    drawer.setConfig(drawConfig)
+  }, [drawer, onDrawEnd, drawConfig])
 
   const canvasStyle = { height, width }
   return (
