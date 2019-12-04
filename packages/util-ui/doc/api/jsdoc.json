@@ -58,7 +58,7 @@
     "memberof": "module:@the-/util-ui",
     "meta": {
       "filename": "asStyleData.js",
-      "lineno": 46,
+      "lineno": 44,
       "path": "lib"
     },
     "name": "asStyleData",
@@ -70,6 +70,7 @@
             "string"
           ]
         },
+        "nullable": true,
         "description": "Selector which wraps data",
         "name": "scopeSelector"
       },

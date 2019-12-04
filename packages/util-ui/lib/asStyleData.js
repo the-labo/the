@@ -1,7 +1,5 @@
 'use strict'
 
-const argx = require('argx')
-
 const combineSelectors = (...selectors) =>
   selectors
     .filter(Boolean)
@@ -47,14 +45,15 @@ const selectorData = (selector, data) => {
  * Mark  : style data
  * @memberof module:@the-/util-ui
  * @function asStyleData
- * @param {string} scopeSelector - Selector which wraps data
+ * @param {?string} scopeSelector - Selector which wraps data
  * @param {Object} data - Style data
  * @returns {Object} Style data
  */
 function asStyleData(scopeSelector, data) {
-  const args = argx(arguments)
-  scopeSelector = args.shift('string')
-  data = args.pop('object')
+  if (arguments.length === 1) {
+    data = arguments[0]
+    scopeSelector = null
+  }
   return Object.keys(data).reduce(
     (scoped, selector) =>
       Object.assign(
