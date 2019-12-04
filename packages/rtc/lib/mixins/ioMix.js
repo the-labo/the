@@ -222,13 +222,13 @@ function ioMix(Class) {
 
       try {
         await new Promise((resolve) => socket.leave(roomName, () => resolve()))
-        socket.theRTCState.roomName = null
         await this.syncIORoomState(roomName)
         socket.emit(IOEvents.ROOM_LEAVE_SUCCESS, {
           roomName,
           socketId: socket.id,
         })
         listeners.onRoomLeave && listeners.onRoomLeave(socket.theRTCState)
+        socket.theRTCState.roomName = null
       } catch (e) {
         socket.emit(IOEvents.ROOM_LEAVE_FAIL, {
           error: e.message,
