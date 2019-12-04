@@ -429,7 +429,7 @@
     "memberof": "module:@the-/client",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 29,
+      "lineno": 28,
       "path": "lib"
     },
     "name": "TheClient",
@@ -540,7 +540,7 @@
     "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 44,
+      "lineno": 43,
       "path": "lib"
     },
     "name": "for",

@@ -4,15 +4,20 @@ const aglob = require('aglob')
 const path = require('path')
 const pkg = require('../package.json')
 
-module.exports = {
-  force: true,
-  mode: '444',
-  data:{
-    pkg,
-    names: aglob.sync(`${__dirname}/../shim/styles/*.js`)
-      .map(f => path.basename(f, path.extname(f))),
-  },
-  tmpl:`/** @module ${pkg.name}/styles */
+const names = aglob.sync(`${__dirname}/../shim/styles/*.js`)
+  .map(f => path.basename(f, path.extname(f)))
+
+if (names.length === 0) {
+  module.exports = []
+} else {
+  module.exports = {
+    force: true,
+    mode: '444',
+    data: {
+      pkg,
+      names,
+    },
+    tmpl: `/** @module ${pkg.name}/styles */
   
 'use strict'
 const _d = o => o.__esModule ? o.default : o
@@ -20,8 +25,8 @@ const _d = o => o.__esModule ? o.default : o
 exports.{{this}} = _d(require('../shim/styles/{{this}}'))
 {{/each}}
   `
+  }
 }
-
 
 if (!module.parent) {
   require('coz').render(__filename)

@@ -92,20 +92,13 @@ tryExample().catch((err) => console.error(err))
   - [secretFor(name,bytes)](./doc/api/api.md#secretFor)
   - [userNameFor(name,bytes)](./doc/api/api.md#userNameFor)
 - module:@the-/util-site
-Convert into japanese strings.
-英数字記号は半角、カナは全角へ
-  - [.formatString()](./doc/api/api.md#module_@the-/util-site
-Convert into japanese strings.
-英数字記号は半角、カナは全角へ.formatString)
-- module:@the-/util-site
   - [.appendQueryToSearch(query)](./doc/api/api.md#module_@the-/util-site.appendQueryToSearch)
   - [.countSuffix(count,options)](./doc/api/api.md#module_@the-/util-site.countSuffix)
   - [.createStyleElement(options,css)](./doc/api/api.md#module_@the-/util-site.createStyleElement)
-  - [.envOf()](./doc/api/api.md#module_@the-/util-site.envOf)
+  - [.envOf(name,options)](./doc/api/api.md#module_@the-/util-site.envOf)
   - [.hasMoreFor(counts)](./doc/api/api.md#module_@the-/util-site.hasMoreFor)
   - [.queryFromSearch(search)](./doc/api/api.md#module_@the-/util-site.queryFromSearch)
   - [.refOf(entity)](./doc/api/api.md#module_@the-/util-site.refOf)
-  - [.scrollToElement(element)](./doc/api/api.md#module_@the-/util-site.scrollToElement)
   - [.seatAccess(seat)](./doc/api/api.md#module_@the-/util-site.seatAccess)
 
 See [API Guide](./doc/api/api.md) for more detail

@@ -16,7 +16,6 @@
     "@the-/pack": "^15.5.1",
     "@the-/queue": "^15.4.12",
     "@the-/stream": "^15.4.12",
-    "argx": "^4.0.4",
     "asleep": "^1.0.3",
     "browser-cookies": "^1.2.0",
     "bstorage": "^2.0.4",

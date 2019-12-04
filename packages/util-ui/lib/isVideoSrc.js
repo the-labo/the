@@ -5,9 +5,14 @@ const videoExtensions = require('video-extensions')
 
 const videoExtNames = [...videoExtensions]
 
-/** @deprecated */
+/**
+ * @deprecated
+ * @param src
+ * @returns {*} */
 function isVideoSrc(src) {
-  console.warn(`[@the-/util-ui] isVideoSrc is now deprecated. Use @the-/util-string instead.`)
+  console.warn(
+    '[@the-/util-ui] isVideoSrc is now deprecated. Use @the-/util-string instead.',
+  )
   const { pathname } = new URL(
     src || '',
     get('location.origin') || 'http://localhost',

@@ -15,6 +15,8 @@
 <dd><p>Convert base64 data into blob
 module:@the-/util-ui</p>
 </dd>
+<dt><del><a href="#isVideoSrc">isVideoSrc(src)</a> ⇒ <code>*</code></del></dt>
+<dd></dd>
 </dl>
 
 <a name="module_@the-/util-ui"></a>
@@ -22,7 +24,7 @@ module:@the-/util-ui</p>
 ## @the-/util-ui
 Utility for the-components
 
-**Version**: 16.3.2  
+**Version**: 16.3.3  
 **License**: MIT  
 
 * [@the-/util-ui](#module_@the-/util-ui)
@@ -34,7 +36,6 @@ Utility for the-components
     * [.isKeyCode(code, name)](#module_@the-/util-ui.isKeyCode) ⇒ <code>boolean</code>
     * [.isMultiTouchEvent(e)](#module_@the-/util-ui.isMultiTouchEvent) ⇒ <code>boolean</code>
     * [.isServerSide()](#module_@the-/util-ui.isServerSide) ⇒ <code>boolean</code>
-    * ~~[.isVideoSrc(src)](#module_@the-/util-ui.isVideoSrc) ⇒ <code>boolean</code>~~
     * [.newId([options])](#module_@the-/util-ui.newId) ⇒ <code>string</code>
     * ~~[.readFileAsDataURL(file)](#module_@the-/util-ui.readFileAsDataURL) ⇒ <code>Promise.&lt;string&gt;</code>~~
     * [.stopTouchScrolling([options])](#module_@the-/util-ui.stopTouchScrolling) ⇒ <code>function</code>
@@ -135,20 +136,6 @@ Is multi touch event
 Detect is serverside
 
 **Kind**: static method of [<code>@the-/util-ui</code>](#module_@the-/util-ui)  
-<a name="module_@the-/util-ui.isVideoSrc"></a>
-
-### ~~utilUi.isVideoSrc(src) ⇒ <code>boolean</code>~~
-***Deprecated***
-
-Detect src url is video or not
-
-**Kind**: static method of [<code>@the-/util-ui</code>](#module_@the-/util-ui)  
-**Returns**: <code>boolean</code> - Video or not  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>string</code> | Url to detect |
-
 <a name="module_@the-/util-ui.newId"></a>
 
 ### utilUi.newId([options]) ⇒ <code>string</code>
@@ -210,4 +197,15 @@ module:@the-/util-ui
 | Param | Type | Description |
 | --- | --- | --- |
 | base64String | <code>string</code> | base64 encoded string |
+
+<a name="isVideoSrc"></a>
+
+## ~~isVideoSrc(src) ⇒ <code>\*</code>~~
+***Deprecated***
+
+**Kind**: global function  
+
+| Param |
+| --- |
+| src | 
 

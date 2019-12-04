@@ -13,7 +13,7 @@
     "name": "@the-/util-ui",
     "order": 6,
     "typicalname": "utilUi",
-    "version": "16.3.2"
+    "version": "16.3.3"
   },
   {
     "description": "Convert base64 data into blob\nmodule:@the-/util-ui",
@@ -46,6 +46,34 @@
           ]
         },
         "nullable": true
+      }
+    ],
+    "scope": "global"
+  },
+  {
+    "deprecated": true,
+    "id": "isVideoSrc",
+    "kind": "function",
+    "longname": "isVideoSrc",
+    "meta": {
+      "filename": "isVideoSrc.js",
+      "lineno": 12,
+      "path": "lib"
+    },
+    "name": "isVideoSrc",
+    "order": 10,
+    "params": [
+      {
+        "name": "src"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
       }
     ],
     "scope": "global"
@@ -397,43 +425,6 @@
             "boolean"
           ]
         }
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "deprecated": "use `@the-/util.isVideoUrl()` instead",
-    "description": "Detect src url is video or not",
-    "id": "module:@the-/util-ui.isVideoSrc",
-    "kind": "function",
-    "longname": "module:@the-/util-ui.isVideoSrc",
-    "memberof": "module:@the-/util-ui",
-    "meta": {
-      "filename": "isVideoSrc.js",
-      "lineno": 8,
-      "path": "lib"
-    },
-    "name": "isVideoSrc",
-    "order": 10,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "Url to detect",
-        "name": "src"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "boolean"
-          ]
-        },
-        "description": "Video or not"
       }
     ],
     "scope": "static"

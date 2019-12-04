@@ -12,7 +12,7 @@
     "name": "@the-/ui-touchable",
     "order": 0,
     "typicalname": "uiTouchable",
-    "version": "15.4.20"
+    "version": "15.5.1"
   },
   {
     "description": "Touchable component",
@@ -30,7 +30,7 @@
     "memberof": "module:@the-/ui-touchable",
     "meta": {
       "filename": "TheTouchable.jsx",
-      "lineno": 24,
+      "lineno": 30,
       "path": "lib"
     },
     "name": "TheTouchable",

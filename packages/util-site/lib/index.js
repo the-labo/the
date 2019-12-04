@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/util-site
  * @typicalname utilSite
- * @version 16.0.3
+ * @version 16.0.4
  */
 'use strict'
 

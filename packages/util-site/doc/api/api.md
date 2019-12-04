@@ -39,7 +39,7 @@
 ## @the-/util-site
 Utility for site
 
-**Version**: 16.0.3  
+**Version**: 16.0.4  
 **License**: MIT  
 
 * [@the-/util-site](#module_@the-/util-site)

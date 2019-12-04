@@ -1,6 +1,5 @@
 'use strict'
 
-const argx = require('argx')
 const cookies = require('browser-cookies')
 const { restore, save } = require('bstorage')
 const { get } = require('bwindow')
@@ -55,9 +54,10 @@ class TheClient extends RFuncClient {
   }
 
   constructor(url, config) {
-    const args = argx(arguments)
-    url = args.shift('string')
-    config = args.pop('object') || {}
+    if (arguments.length === 1) {
+      config = arguments[0]
+      url = null
+    }
     if (!url) {
       url = parseClientUrl(config)
     }

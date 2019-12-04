@@ -131,12 +131,6 @@ const TheTouchable = (props) => {
     }),
     [],
   )
-  const gestureScaleState = useMemo(
-    () => ({
-      scale: 1,
-    }),
-    [],
-  )
   const handleWheel = useCallback(
     (e) => {
       if (!e.ctrlKey) {

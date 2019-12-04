@@ -13,7 +13,7 @@ const ExampleComponent = () => {
     setDisabled(false)
   }
 
-  stop = () => {
+  const stop = () => {
     setDisabled(true)
   }
 
