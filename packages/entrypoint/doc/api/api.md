@@ -5,7 +5,7 @@
 ## @the-/entrypoint
 Browser entrypoint for the-framework
 
-**Version**: 15.5.0  
+**Version**: 15.5.2  
 **License**: MIT  
 
 * [@the-/entrypoint](#module_@the-/entrypoint)
@@ -13,7 +13,7 @@ Browser entrypoint for the-framework
         * [.createStyleElement(cssString, [options&#x3D;])](#module_@the-/entrypoint.helpers.createStyleElement) ⇒ <code>HTMLElement</code>
     * [.history()](#module_@the-/entrypoint.history) ⇒ <code>Object</code>
     * [.mount(element, containerId, [options])](#module_@the-/entrypoint.mount) ⇒ <code>Promise</code>
-    * [.online([options])](#module_@the-/entrypoint.online)
+    * [.online()](#module_@the-/entrypoint.online)
     * [.patch()](#module_@the-/entrypoint.patch)
     * [.quelize(values)](#module_@the-/entrypoint.quelize) ⇒ <code>\*</code>
     * [.secure([options])](#module_@the-/entrypoint.secure) ⇒ <code>boolean</code>
@@ -63,15 +63,10 @@ Mount element on DOM
 
 <a name="module_@the-/entrypoint.online"></a>
 
-### entrypoint.online([options])
+### entrypoint.online()
 Handle when online
 
 **Kind**: static method of [<code>@the-/entrypoint</code>](#module_@the-/entrypoint)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [options] | <code>Object</code> | <code>[]</code> | Optional settings |
-
 <a name="module_@the-/entrypoint.patch"></a>
 
 ### entrypoint.patch()
