@@ -93,11 +93,10 @@ function ioMix(Class) {
       }
     }
 
-    registerIO(io, { iceServers } = {}) {
+    registerIO(io, { defineICEServers } = {}) {
       this.ioConnector = IOConnector(io)
       if (this.sfuEnabled) {
         this.setupSFU({
-          iceServers,
           sendAnswer: this.sendIOPeerAnswer.bind(this),
           sendIce: this.sendIOPeerICE.bind(this),
           sendOffer: this.sendIOPeerOffer.bind(this),
@@ -127,7 +126,9 @@ function ioMix(Class) {
           }
           socket.on(event, handleWrap)
         }
-        socket.emit(IOEvents.CONFIG_ICE_SERVERS, { iceServers })
+        socket.emit(IOEvents.CONFIG_ICE_SERVERS, {
+          iceServers: defineICEServers(`socket-${socket.id}`),
+        })
       })
     }
 

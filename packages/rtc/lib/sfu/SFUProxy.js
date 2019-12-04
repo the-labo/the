@@ -9,17 +9,10 @@ const SFUProxyEdgeOfferer = require('./SFUProxyEdgeOfferer')
 
 class SFUProxy {
   constructor(config = {}) {
-    const { answerer, iceServers, offerer, pid, purpose, signaling } = config
-    if (!iceServers) {
-      console.warn('[SFUProxy] iceServers is empty')
-    }
+    const { answerer, offerer, pid, purpose, signaling } = config
 
-    const answererEdge = new SFUProxyEdgeAnswerer({
-      iceServers,
-    })
-    const offererEdge = new SFUProxyEdgeOfferer({
-      iceServers,
-    })
+    const answererEdge = new SFUProxyEdgeAnswerer({})
+    const offererEdge = new SFUProxyEdgeOfferer({})
     this.signaling = signaling
     this.purpose = purpose
     this.pid = pid

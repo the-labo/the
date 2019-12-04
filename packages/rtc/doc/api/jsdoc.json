@@ -13,7 +13,7 @@
     "name": "@the-/rtc",
     "order": 2,
     "typicalname": "rtc",
-    "version": "15.5.3"
+    "version": "15.6.0"
   },
   {
     "id": "module:@the-/rtc.TheRTC()",
@@ -153,7 +153,7 @@
     "longname": "SFUProxyEdgeAnswerer",
     "meta": {
       "filename": "SFUProxyEdgeAnswerer.js",
-      "lineno": 3,
+      "lineno": 6,
       "path": "lib/sfu"
     },
     "name": "SFUProxyEdgeAnswerer",
@@ -169,7 +169,7 @@
     "longname": "SFUProxyEdgeOfferer",
     "meta": {
       "filename": "SFUProxyEdgeOfferer.js",
-      "lineno": 3,
+      "lineno": 5,
       "path": "lib/sfu"
     },
     "name": "SFUProxyEdgeOfferer",
@@ -413,12 +413,20 @@
     "memberof": "module:@the-/rtc.helpers",
     "meta": {
       "filename": "parseTurnSecret.js",
-      "lineno": 5,
+      "lineno": 7,
       "path": "lib/helpers"
     },
     "name": "parseTurnSecret",
     "order": 12,
     "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "name"
+      },
       {
         "type": {
           "names": [

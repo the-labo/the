@@ -23,7 +23,13 @@ describe('the-rtc', () => {
     ok(TheRTC)
 
     const port = await aport()
-    const rtc = new TheRTC()
+    const rtc = new TheRTC({
+      turn: {
+        expiry: 86400,
+        secret: 'xxxxxxxxxxxxxxxx',
+        url: 'turn:example.com',
+      },
+    })
 
     await rtc.listen(port)
 
@@ -41,6 +47,7 @@ describe('the-rtc', () => {
       await asleep(200)
       client.close()
       ok(received.iceServers)
+      console.log(received.iceServers.iceServers)
       ok(received.roomState)
       ok(received.roomState.clients)
     }

@@ -13,8 +13,8 @@ const waitChannelOpen = require('../helpers/waitChannelOpen')
 
 /** @lends SFUProxyEdge */
 class SFUProxyEdge {
-  constructor({ iceServers }) {
-    this.connection = new RTCPeerConnection({ iceServers }, {})
+  constructor() {
+    this.connection = new RTCPeerConnection({}, {})
     this.receivedIces = []
     this.sendingIceCandidates = []
     this.channels = {}

@@ -44,6 +44,44 @@ class TheRTC extends TheRTCBase {
     })
   }
 
+  defineICEServers(name) {
+    return [
+      ...[]
+        .concat(this.stunConfig)
+        .filter(Boolean)
+        .map(({ url = [], urls = [] }) => ({ urls: [].concat(url, urls) })),
+      ...[]
+        .concat(this.turnConfig)
+        .filter(Boolean)
+        .map(
+          ({ expiry = 86400, password, secret, url = [], urls, username }) => {
+            if (urls) {
+              console.warn('[TheRTC] "urls" is deprecated. Use "url" instead.')
+              url = [].concat(url, urls).filter(Boolean)
+            }
+
+            const hasSecret = !!secret
+            if (hasSecret) {
+              // Dynamic credential
+              const { credential, username } = parseTurnSecret(
+                name,
+                secret,
+                expiry,
+              )
+              return {
+                credential,
+                expiry,
+                urls: [].concat(url),
+                username,
+              }
+            } else {
+              return { credential: password, urls: [].concat(url), username }
+            }
+          },
+        ),
+    ]
+  }
+
   async close() {
     this.closedAt = new Date()
     if (this.ioConnector) {
@@ -64,38 +102,9 @@ class TheRTC extends TheRTCBase {
     const server = createHTTPServer()
     this.server = server
     const io = socketIO(server)
-    const iceServers = [
-      ...[]
-        .concat(this.stunConfig)
-        .filter(Boolean)
-        .map(({ url = [], urls = [] }) => ({ urls: [].concat(url, urls) })),
-      ...[]
-        .concat(this.turnConfig)
-        .filter(Boolean)
-        .map(
-          ({ expiry = 86400, password, secret, url = [], urls, username }) => {
-            if (urls) {
-              console.warn('[TheRTC] "urls" is deprecated. Use "url" instead.')
-              url = [].concat(url, urls).filter(Boolean)
-            }
-
-            const hasSecret = !!secret
-            if (hasSecret) {
-              // Dynamic credential
-              const { credential, username } = parseTurnSecret(secret, expiry)
-              return {
-                credential,
-                expiry,
-                urls: [].concat(url),
-                username,
-              }
-            } else {
-              return { credential: password, urls: [].concat(url), username }
-            }
-          },
-        ),
-    ]
-    this.registerIO(io, { iceServers })
+    this.registerIO(io, {
+      defineICEServers: (name) => this.defineICEServers(name),
+    })
     await new Promise((resolve, reject) =>
       server.listen(port, (err) => (err ? reject(err) : resolve())),
     )

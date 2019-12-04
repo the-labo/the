@@ -1,13 +1,12 @@
 'use strict'
 
+const SFUProxyEdge = require('./SFUProxyEdge')
+const { ChannelNames } = require('../constants')
+
 /**
  * @class SFUProxyEdgeAnswerer
  * @augments SFUProxyEdge
  */
-const SFUProxyEdge = require('./SFUProxyEdge')
-const { ChannelNames } = require('../constants')
-
-/** @lends SFUProxyEdgeAnswerer */
 class SFUProxyEdgeAnswerer extends SFUProxyEdge {
   constructor() {
     super(...arguments)

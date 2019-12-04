@@ -22,8 +22,8 @@ function sfuMix(Class) {
       }
     }
 
-    setupSFU({ iceServers, sendAnswer, sendIce, sendOffer }) {
-      this.sfuProxyPool = new SFUProxyPool({ iceServers })
+    setupSFU({ sendAnswer, sendIce, sendOffer }) {
+      this.sfuProxyPool = new SFUProxyPool()
       this.sfuSignaling = { sendAnswer, sendIce, sendOffer }
     }
 

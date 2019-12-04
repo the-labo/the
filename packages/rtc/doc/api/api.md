@@ -28,7 +28,7 @@
 ## @the-/rtc
 RTC server for the-frameworks
 
-**Version**: 15.5.3  
+**Version**: 15.6.0  
 **License**: MIT  
 
 * [@the-/rtc](#module_@the-/rtc)
@@ -41,7 +41,7 @@ RTC server for the-frameworks
         * [.TopologyTypes](#module_@the-/rtc.constants.TopologyTypes) : <code>enum</code>
     * [.helpers](#module_@the-/rtc.helpers) : <code>object</code>
         * [.handleUnknownKeys(unknowns, [options&#x3D;])](#module_@the-/rtc.helpers.handleUnknownKeys)
-        * [.parseTurnSecret(secret, expiry)](#module_@the-/rtc.helpers.parseTurnSecret) ⇒ <code>Object</code>
+        * [.parseTurnSecret(name, secret, expiry)](#module_@the-/rtc.helpers.parseTurnSecret) ⇒ <code>Object</code>
     * [.mixins](#module_@the-/rtc.mixins) : <code>object</code>
         * [.ioMix(Class)](#module_@the-/rtc.mixins.ioMix) ⇒ <code>function</code>
         * [.sfuMix(Class)](#module_@the-/rtc.mixins.sfuMix) ⇒ <code>function</code>
@@ -119,7 +119,7 @@ Helpers
 
 * [.helpers](#module_@the-/rtc.helpers) : <code>object</code>
     * [.handleUnknownKeys(unknowns, [options&#x3D;])](#module_@the-/rtc.helpers.handleUnknownKeys)
-    * [.parseTurnSecret(secret, expiry)](#module_@the-/rtc.helpers.parseTurnSecret) ⇒ <code>Object</code>
+    * [.parseTurnSecret(name, secret, expiry)](#module_@the-/rtc.helpers.parseTurnSecret) ⇒ <code>Object</code>
 
 <a name="module_@the-/rtc.helpers.handleUnknownKeys"></a>
 
@@ -133,12 +133,13 @@ Helpers
 
 <a name="module_@the-/rtc.helpers.parseTurnSecret"></a>
 
-#### helpers.parseTurnSecret(secret, expiry) ⇒ <code>Object</code>
+#### helpers.parseTurnSecret(name, secret, expiry) ⇒ <code>Object</code>
 **Kind**: static method of [<code>helpers</code>](#module_@the-/rtc.helpers)  
 **Returns**: <code>Object</code> - Parsed values  
 
 | Param | Type |
 | --- | --- |
+| name | <code>string</code> | 
 | secret | <code>string</code> | 
 | expiry | <code>number</code> | 
 

@@ -1,12 +1,11 @@
 'use strict'
 
+const SFUProxyEdge = require('./SFUProxyEdge')
+
 /**
  * @class SFUProxyEdgeOfferer
  * @augments SFUProxyEdge
  */
-const SFUProxyEdge = require('./SFUProxyEdge')
-
-/** @lends SFUProxyEdgeOfferer */
 class SFUProxyEdgeOfferer extends SFUProxyEdge {
   async proxyAnswer(answer) {
     const { from, pid, purpose, to } = answer
