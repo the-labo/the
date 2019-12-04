@@ -5,7 +5,7 @@
 ## @the-/state
 State holder for the-components
 
-**Version**: 15.4.14  
+**Version**: 16.0.0  
 **License**: MIT  
 
 * [@the-/state](#module_@the-/state)

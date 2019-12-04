@@ -5,7 +5,7 @@
 ## @the-/context
 React context for the-components
 
-**Version**: 17.0.6  
+**Version**: 18.0.0  
 **License**: MIT  
 
 * [@the-/context](#module_@the-/context)

@@ -13,7 +13,7 @@
     "name": "@the-/entrypoint",
     "order": 1,
     "typicalname": "entrypoint",
-    "version": "15.5.0"
+    "version": "15.5.2"
   },
   {
     "access": "protected",
@@ -143,19 +143,6 @@
     },
     "name": "online",
     "order": 3,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "Object"
-          ]
-        },
-        "optional": true,
-        "defaultvalue": "[]",
-        "description": "Optional settings",
-        "name": "options"
-      }
-    ],
     "scope": "static"
   },
   {

@@ -1,7 +1,7 @@
 {
   "name": "@the-/context",
   "description": "React context for the-components",
-  "version": "17.0.6",
+  "version": "18.0.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,12 +13,13 @@
   },
   "dependencies": {
     "@the-/assert": "^15.4.1",
-    "@the-/state": "^15.4.14",
+    "@the-/state": "^16.0.0",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "redux": "^4.0.4"
   },
   "engines": {
     "node": ">=10",
@@ -33,7 +34,8 @@
   "main": "lib",
   "peerDependencies": {
     "react": ">=16",
-    "react-dom": ">=16"
+    "react-dom": ">=16",
+    "redux": ">=4"
   },
   "publishConfig": {
     "access": "public"

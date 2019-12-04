@@ -1,7 +1,7 @@
 {
   "name": "@the-/state",
   "description": "State holder for the-components",
-  "version": "15.4.14",
+  "version": "16.0.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,12 +13,11 @@
   },
   "dependencies": {
     "@the-/assert": "^15.2.0",
-    "@the-/window": "^15.8.2",
-    "asobj": "^3.0.1",
-    "invariant": "^2.2.4",
+    "@the-/window": "^15.8.2"
+  },
+  "devDependencies": {
     "redux": "^4.0.4"
   },
-  "devDependencies": {},
   "engines": {
     "node": ">=10",
     "npm": ">=6"
@@ -30,6 +29,9 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "peerDependencies": {
+    "redux": ">=4"
+  },
   "publishConfig": {
     "access": "public"
   },
