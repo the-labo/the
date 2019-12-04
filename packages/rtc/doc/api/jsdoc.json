@@ -13,7 +13,7 @@
     "name": "@the-/rtc",
     "order": 2,
     "typicalname": "rtc",
-    "version": "15.4.16"
+    "version": "15.5.2"
   },
   {
     "id": "module:@the-/rtc.TheRTC()",
@@ -116,7 +116,7 @@
     "longname": "SFUProxy",
     "memberof": "SFUProxy",
     "name": "SFUProxy",
-    "order": 18
+    "order": 17
   },
   {
     "id": "SFUProxy",
@@ -128,7 +128,7 @@
       "path": "lib/sfu"
     },
     "name": "SFUProxy",
-    "order": 17,
+    "order": 16,
     "scope": "global"
   },
   {
@@ -141,7 +141,7 @@
       "path": "lib/sfu"
     },
     "name": "SFUProxyEdge",
-    "order": 19,
+    "order": 18,
     "scope": "global"
   },
   {
@@ -157,7 +157,7 @@
       "path": "lib/sfu"
     },
     "name": "SFUProxyEdgeAnswerer",
-    "order": 20,
+    "order": 19,
     "scope": "global"
   },
   {
@@ -173,7 +173,7 @@
       "path": "lib/sfu"
     },
     "name": "SFUProxyEdgeOfferer",
-    "order": 21,
+    "order": 20,
     "scope": "global"
   },
   {
@@ -186,41 +186,7 @@
       "path": "lib/sfu"
     },
     "name": "SFUProxyPool",
-    "order": 22,
-    "scope": "global"
-  },
-  {
-    "description": "Mixin for http",
-    "id": "httpMix",
-    "kind": "function",
-    "longname": "httpMix",
-    "meta": {
-      "filename": "httpMix.js",
-      "lineno": 3,
-      "path": "lib/mixins"
-    },
-    "name": "httpMix",
-    "order": 13,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Class"
-      }
-    ],
+    "order": 21,
     "scope": "global"
   },
   {
@@ -230,7 +196,7 @@
     "memberof": "module:@the-/rtc",
     "meta": {
       "filename": "TheRTC.js",
-      "lineno": 13,
+      "lineno": 11,
       "path": "lib"
     },
     "name": "TheRTC",
@@ -279,7 +245,7 @@
       "path": "lib/mixins"
     },
     "name": "mixins",
-    "order": 14,
+    "order": 13,
     "scope": "static"
   },
   {
@@ -490,11 +456,11 @@
     "memberof": "module:@the-/rtc.mixins",
     "meta": {
       "filename": "ioMix.js",
-      "lineno": 8,
+      "lineno": 7,
       "path": "lib/mixins"
     },
     "name": "ioMix",
-    "order": 15,
+    "order": 14,
     "params": [
       {
         "type": {
@@ -529,7 +495,7 @@
       "path": "lib/mixins"
     },
     "name": "sfuMix",
-    "order": 16,
+    "order": 15,
     "params": [
       {
         "type": {

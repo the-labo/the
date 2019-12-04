@@ -96,13 +96,6 @@ tryExample().catch((err) => console.error(err))
 ## API Guide
 
 
-- global
-  - [httpMix(Class)](./doc/api/api.md#httpMix)
-  - [SFUProxy](./doc/api/api.md#SFUProxy)
-  - [SFUProxyEdge](./doc/api/api.md#SFUProxyEdge)
-  - [SFUProxyEdgeAnswerer](./doc/api/api.md#SFUProxyEdgeAnswerer)
-  - [SFUProxyEdgeOfferer](./doc/api/api.md#SFUProxyEdgeOfferer)
-  - [SFUProxyPool](./doc/api/api.md#SFUProxyPool)
 - module:@the-/rtc
   - [.constants](./doc/api/api.md#module_@the-/rtc.constants)
   - [.create(args)](./doc/api/api.md#module_@the-/rtc.create)
@@ -121,6 +114,12 @@ tryExample().catch((err) => console.error(err))
 - module:@the-/rtc.mixins
   - [.ioMix(Class)](./doc/api/api.md#module_@the-/rtc.mixins.ioMix)
   - [.sfuMix(Class)](./doc/api/api.md#module_@the-/rtc.mixins.sfuMix)
+- global
+  - [SFUProxy](./doc/api/api.md#SFUProxy)
+  - [SFUProxyEdge](./doc/api/api.md#SFUProxyEdge)
+  - [SFUProxyEdgeAnswerer](./doc/api/api.md#SFUProxyEdgeAnswerer)
+  - [SFUProxyEdgeOfferer](./doc/api/api.md#SFUProxyEdgeOfferer)
+  - [SFUProxyPool](./doc/api/api.md#SFUProxyPool)
 
 See [API Guide](./doc/api/api.md) for more detail
 

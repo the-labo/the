@@ -7,18 +7,21 @@
  */
 'use strict'
 
+const IOConnector_ = require('./IOConnector')
 const createHTTPServer_ = require('./createHTTPServer')
 const handleUnknownKeys_ = require('./handleUnknownKeys')
 const parseTurnSecret_ = require('./parseTurnSecret')
 const waitChannelOpen_ = require('./waitChannelOpen')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
+exports.IOConnector = IOConnector_
 exports.createHTTPServer = createHTTPServer_
 exports.handleUnknownKeys = handleUnknownKeys_
 exports.parseTurnSecret = parseTurnSecret_
 exports.waitChannelOpen = waitChannelOpen_
 
 module.exports = {
+  IOConnector: IOConnector_,
   createHTTPServer: createHTTPServer_,
   handleUnknownKeys: handleUnknownKeys_,
   parseTurnSecret: parseTurnSecret_,

@@ -26,8 +26,10 @@ class TheRTC extends TheRTCBase {
     this.closedAt = null
     this.listenAt = null
     this.server = null
-    this.io = null
+    this.ioConnector = null
+
     const {
+      listeners = {},
       stun: stunConfig = { url: 'stun:stun.l.google.com:19302' },
       topology = TopologyTypes.MESH,
       turn: turnConfig = null,
@@ -36,6 +38,7 @@ class TheRTC extends TheRTCBase {
     this.sfuEnabled = String(topology) === TopologyTypes.SFU
     this.stunConfig = stunConfig
     this.turnConfig = turnConfig
+    this.listeners = listeners
     handleUnknownKeys(rest, {
       label: 'constructor',
     })
@@ -43,7 +46,10 @@ class TheRTC extends TheRTCBase {
 
   async close() {
     this.closedAt = new Date()
-    this.io = null
+    if (this.ioConnector) {
+      this.ioConnector.close()
+      this.ioConnector = null
+    }
     await new Promise((resolve, reject) =>
       this.server.close((err) => (err ? reject(err) : resolve())),
     )

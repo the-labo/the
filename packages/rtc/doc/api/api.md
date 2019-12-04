@@ -23,20 +23,12 @@
 <dd></dd>
 </dl>
 
-## Functions
-
-<dl>
-<dt><a href="#httpMix">httpMix(Class)</a> ⇒ <code>function</code></dt>
-<dd><p>Mixin for http</p>
-</dd>
-</dl>
-
 <a name="module_@the-/rtc"></a>
 
 ## @the-/rtc
 RTC server for the-frameworks
 
-**Version**: 15.4.16  
+**Version**: 15.5.2  
 **License**: MIT  
 
 * [@the-/rtc](#module_@the-/rtc)
@@ -229,15 +221,3 @@ Webrtc proxy connections
 
 ## SFUProxyPool
 **Kind**: global class  
-<a name="httpMix"></a>
-
-## httpMix(Class) ⇒ <code>function</code>
-Mixin for http
-
-**Kind**: global function  
-**Returns**: <code>function</code> - Class  
-
-| Param | Type |
-| --- | --- |
-| Class | <code>function</code> | 
-
