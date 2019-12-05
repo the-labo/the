@@ -9,7 +9,7 @@ async function tryExample() {
     },
     topology: 'mesh',
     turn: {
-      expiry: 86400,
+      expiry: 86400 * 1000,
       secret: 'xxxxxxxxxxxxxxxx',
       url: 'turn:your.turn.servers.here',
     },

@@ -54,7 +54,14 @@ class TheRTC extends TheRTCBase {
         .concat(this.turnConfig)
         .filter(Boolean)
         .map(
-          ({ expiry = 86400, password, secret, url = [], urls, username }) => {
+          ({
+            expiry = 86400 * 1000,
+            password,
+            secret,
+            url = [],
+            urls,
+            username,
+          }) => {
             if (urls) {
               console.warn('[TheRTC] "urls" is deprecated. Use "url" instead.')
               url = [].concat(url, urls).filter(Boolean)
@@ -70,7 +77,6 @@ class TheRTC extends TheRTCBase {
               )
               return {
                 credential,
-                expiry,
                 urls: [].concat(url),
                 username,
               }
