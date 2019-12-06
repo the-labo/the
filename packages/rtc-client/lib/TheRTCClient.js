@@ -37,6 +37,7 @@ class TheRTCClient extends TheRTCClientBase {
       onLocal,
       onRemote,
       onRemoteGone,
+      onRemoteFail,
       onRoom,
       rid = uuid.v4(),
     } = options
@@ -45,6 +46,7 @@ class TheRTCClient extends TheRTCClientBase {
     this.iceServers = null
     this.onRemote = onRemote
     this.onRemoteGone = onRemoteGone
+    this.onRemoteFail = onRemoteFail
     this.onLocal = onLocal
     this.onRoom = onRoom
     this._rid = rid
@@ -225,6 +227,10 @@ class TheRTCClient extends TheRTCClientBase {
       onDisconnect: ({ peer }) => {
         const client = this.getRoomClientFor(remote)
         this.onRemoteGone && this.onRemoteGone({ ...client, peer })
+      },
+      onFail:({peer}) => {
+        const client = this.getRoomClientFor(remote)
+        this.onRemoteFail && this.onRemoteFail({ ...client, peer })
       },
       onIceCandidate: (ice) => {
         this.emitSocketEvent(IOEvents.PEER_ICE, {

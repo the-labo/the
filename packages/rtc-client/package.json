@@ -1,7 +1,7 @@
 {
   "name": "@the-/rtc-client",
   "description": "Client for the-rtc",
-  "version": "15.6.0",
+  "version": "15.7.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -30,7 +30,7 @@
     "wrtc": "^0.4.2"
   },
   "devDependencies": {
-    "@the-/rtc": "^15.4.15",
+    "@the-/rtc": "^15.6.2",
     "aport": "^2.0.0",
     "asleep": "^1.0.3",
     "webpack-cli": "^3.3.10",
