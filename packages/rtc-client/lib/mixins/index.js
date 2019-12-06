@@ -9,7 +9,6 @@
 
 const assertMix_ = require('./assertMix')
 const channelMix_ = require('./channelMix')
-const mediaMix_ = require('./mediaMix')
 const peerMix_ = require('./peerMix')
 const promiseMix_ = require('./promiseMix')
 const serializeMix_ = require('./serializeMix')
@@ -18,7 +17,6 @@ const socketMix_ = require('./socketMix')
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
 exports.assertMix = assertMix_
 exports.channelMix = channelMix_
-exports.mediaMix = mediaMix_
 exports.peerMix = peerMix_
 exports.promiseMix = promiseMix_
 exports.serializeMix = serializeMix_
@@ -27,7 +25,6 @@ exports.socketMix = socketMix_
 module.exports = {
   assertMix: assertMix_,
   channelMix: channelMix_,
-  mediaMix: mediaMix_,
   peerMix: peerMix_,
   promiseMix: promiseMix_,
   serializeMix: serializeMix_,

@@ -180,6 +180,8 @@ function peerMix(Class) {
     }
 
     async setPeerICECandidate(pid, ice) {
+      // TODO ちょっと待たないとうまくつながらない。(原因はまだ分かっていない)
+      await asleep(500)
       await this.peerLock.acquire(pid, async () => {
         const peer = this.getPeer(pid, { warnWhenNotFound: true })
         if (!peer) {
@@ -188,8 +190,6 @@ function peerMix(Class) {
         debug('setPeerICECandidate', pid, ice, {
           signalingState: peer.signalingState,
         })
-        // TODO ちょっと待たないとうまくつながらない。(原因はまだ分かっていない)
-        await asleep(500)
         await peer.addIceCandidate(new RTCIceCandidate(ice))
       })
     }

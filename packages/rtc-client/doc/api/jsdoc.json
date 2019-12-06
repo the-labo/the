@@ -13,7 +13,7 @@
     "name": "@the-/rtc-client",
     "order": 2,
     "typicalname": "rtcClient",
-    "version": "15.8.0"
+    "version": "15.8.3"
   },
   {
     "description": "ChannelNames",
@@ -62,7 +62,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 60,
+      "lineno": 59,
       "path": "lib"
     },
     "name": "audioEnabled",
@@ -87,7 +87,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 68,
+      "lineno": 67,
       "path": "lib"
     },
     "name": "info",
@@ -112,7 +112,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 76,
+      "lineno": 75,
       "path": "lib"
     },
     "name": "rid",
@@ -137,7 +137,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 84,
+      "lineno": 83,
       "path": "lib"
     },
     "name": "state",
@@ -162,7 +162,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 99,
+      "lineno": 98,
       "path": "lib"
     },
     "name": "videoEnabled",
@@ -188,7 +188,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 164,
+      "lineno": 163,
       "path": "lib"
     },
     "name": "connect",
@@ -234,7 +234,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 209,
+      "lineno": 208,
       "path": "lib"
     },
     "name": "disconnect",
@@ -260,7 +260,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 331,
+      "lineno": 330,
       "path": "lib"
     },
     "name": "publish",
@@ -388,7 +388,7 @@
     "memberof": "module:@the-/rtc-client",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 27,
+      "lineno": 26,
       "path": "lib"
     },
     "name": "TheRTCClient",
@@ -560,41 +560,6 @@
     "scope": "static"
   },
   {
-    "description": "Mixin for media",
-    "id": "module:@the-/rtc.constants.mixins.mediaMix",
-    "kind": "function",
-    "longname": "module:@the-/rtc.constants.mixins.mediaMix",
-    "memberof": "module:@the-/rtc.constants.mixins",
-    "meta": {
-      "filename": "mediaMix.js",
-      "lineno": 5,
-      "path": "lib/mixins"
-    },
-    "name": "mediaMix",
-    "order": 22,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "description": "Class"
-      }
-    ],
-    "scope": "static"
-  },
-  {
     "description": "Mixin for peer",
     "id": "module:@the-/rtc.constants.mixins.peerMix",
     "kind": "function",
@@ -606,7 +571,7 @@
       "path": "lib/mixins"
     },
     "name": "peerMix",
-    "order": 23,
+    "order": 22,
     "params": [
       {
         "type": {
@@ -641,7 +606,7 @@
       "path": "lib/mixins"
     },
     "name": "promiseMix",
-    "order": 24,
+    "order": 23,
     "params": [
       {
         "type": {
@@ -676,7 +641,7 @@
       "path": "lib/mixins"
     },
     "name": "serializeMix",
-    "order": 25,
+    "order": 24,
     "params": [
       {
         "type": {
@@ -711,7 +676,7 @@
       "path": "lib/mixins"
     },
     "name": "socketMix",
-    "order": 26,
+    "order": 25,
     "params": [
       {
         "type": {

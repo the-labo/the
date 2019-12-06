@@ -2,12 +2,12 @@
 
 const argx = require('argx')
 const uuid = require('uuid')
+const { TheMedia } = require('@the-/media')
 const { get } = require('@the-/window')
 const { ChannelNames, IOEvents, PeerPurposes } = require('./constants')
 const {
   assertMix,
   channelMix,
-  mediaMix,
   peerMix,
   promiseMix,
   serializeMix,
@@ -17,7 +17,6 @@ const {
 const TheRTCClientBase = [
   channelMix,
   assertMix,
-  mediaMix,
   promiseMix,
   socketMix,
   serializeMix,
@@ -42,7 +41,7 @@ class TheRTCClient extends TheRTCClientBase {
       rid = uuid.v4(),
     } = options
     this.room = null
-    this.media = this.createMedia(mediaConstrains)
+    this.media = new TheMedia(mediaConstrains)
     this.iceServers = null
     this.onRemote = onRemote
     this.onRemoteGone = onRemoteGone
@@ -405,7 +404,7 @@ class TheRTCClient extends TheRTCClientBase {
   async updateMediaConstrains(mediaConstrains) {
     const { media, peers } = this
     await media.stopIfNeeded()
-    const newMedia = this.createMedia(mediaConstrains)
+    const newMedia = new TheMedia(mediaConstrains)
     this.media = newMedia
     await newMedia.startIfNeeded()
     const newTracksHash = newMedia.stream.getTracks().reduce(
