@@ -91,18 +91,6 @@ TheFlickStyle.data = (options) => {
       '.the-flick-fix': {
         overflow: 'hidden !important',
       },
-      '.the-flick-flip-button': {
-        '&:active': {
-          color: '#888',
-        },
-        backgroundColor: 'transparent',
-        borderColor: '#AAA',
-        borderRadius: '4px',
-        color: '#AAA',
-        height: '128px',
-        minWidth: '21px',
-        padding: 0,
-      },
       '.the-flick-flip-button-wrap': {
         alignItems: 'center',
         bottom: 0,
@@ -113,6 +101,18 @@ TheFlickStyle.data = (options) => {
         top: 0,
         width: '1px',
         zIndex: 5,
+      },
+      '.the-flick-flip-button.the-button': {
+        '&:active': {
+          color: '#888',
+        },
+        backgroundColor: 'transparent',
+        borderColor: '#AAA',
+        borderRadius: '4px',
+        color: '#AAA',
+        height: '128px',
+        minWidth: '24px',
+        padding: 0,
       },
       '.the-flick-footer': {
         height: '44px',

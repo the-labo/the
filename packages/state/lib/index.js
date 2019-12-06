@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/state
  * @typicalname state
- * @version 16.0.0
+ * @version 16.0.1
  */
 'use strict'
 

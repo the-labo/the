@@ -1,7 +1,7 @@
 'use strict'
 
+const { get } = require('bwindow')
 const { compose, createStore } = require('redux')
-const { get } = require('@the-/window')
 
 const createReduxStore = (reducer, preloadedState, enhancers) =>
   createStore(

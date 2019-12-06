@@ -1,7 +1,7 @@
 {
   "name": "@the-/state",
   "description": "State holder for the-components",
-  "version": "16.0.0",
+  "version": "16.0.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@the-/assert": "^15.2.0",
-    "@the-/window": "^15.8.2"
+    "bwindow": "^2.0.3"
   },
   "devDependencies": {
     "redux": "^4.0.4"

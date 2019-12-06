@@ -1,6 +1,6 @@
 'use strict'
 
-const { get } = require('@the-/window')
+const { get } = require('bwindow')
 const ScopedState = require('./ScopedState')
 const ActionTypes = require('../constants/ActionTypes')
 const { createReduxStore, getReduxDevtool } = require('../helpers/reduxHelper')
