@@ -36,8 +36,8 @@ class TheRTCClient extends TheRTCClientBase {
       mediaConstrains = { audio: true, video: true },
       onLocal,
       onRemote,
-      onRemoteGone,
       onRemoteFail,
+      onRemoteGone,
       onRoom,
       rid = uuid.v4(),
     } = options
@@ -176,7 +176,6 @@ class TheRTCClient extends TheRTCClientBase {
       query: { rid },
     })
     this.registerSocket(socket)
-
     this.listenToSocketEvents({
       [IOEvents.PEER_ICE]: (coming) => {
         void this.receivePeerIce(coming)
@@ -228,7 +227,7 @@ class TheRTCClient extends TheRTCClientBase {
         const client = this.getRoomClientFor(remote)
         this.onRemoteGone && this.onRemoteGone({ ...client, peer })
       },
-      onFail:({peer}) => {
+      onFail: ({ peer }) => {
         const client = this.getRoomClientFor(remote)
         this.onRemoteFail && this.onRemoteFail({ ...client, peer })
       },

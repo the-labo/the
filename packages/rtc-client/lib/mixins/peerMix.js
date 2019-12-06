@@ -5,10 +5,9 @@ const wrtc = require('wrtc')
 const { TheLock } = require('@the-/lock')
 const { get } = require('@the-/window')
 const ChannelNames = require('../constants/ChannelNames')
-const PeerEvents = require('../constants/PeerEvents')
+const { createPeer } = require('../helpers/peerHelper')
 const debug = require('debug')('the:rtc:client')
 
-const RTCPeerConnection = get('RTCPeerConnection') || wrtc.RTCPeerConnection
 const RTCSessionDescription =
   get('RTCSessionDescription') || wrtc.RTCSessionDescription
 const RTCIceCandidate = get('RTCIceCandidate') || wrtc.RTCIceCandidate
@@ -20,99 +19,19 @@ const RTCIceCandidate = get('RTCIceCandidate') || wrtc.RTCIceCandidate
  * @param {function()} Class
  * @returns {function()} Class
  */
-function peerMix (Class) {
+function peerMix(Class) {
   class PeerMixed extends Class {
-    constructor () {
+    constructor() {
       super(...arguments)
       this.peers = {}
       this.peerLock = new TheLock()
     }
 
-    createPeer ({
-                  iceServers = [],
-                  onDataChannel,
-                  onDisconnect,
-                  onIceCandidate,
-                  onStream,
-                  onFail,
-                  pid,
-                  purpose,
-                  stream,
-                } = {}) {
-      const peer = new RTCPeerConnection({ iceServers }, {})
-      // const debug = (...a) => console.log(`[${this.rid}]`, ...a)
-      const handlers = {
-        [PeerEvents.CONNECTION_STATE_CHANGE]: () => {
-          debug('connectionState', peer.connectionState, this.rid)
-          switch (peer.connectionState) {
-            case 'disconnected': {
-              onDisconnect && onDisconnect({ peer })
-              break
-            }
-            case 'failed': {
-              onFail && onFail({ peer })
-              break
-            }
-            default:
-              break
-          }
-        },
-        [PeerEvents.DATA_CHANNEL]: (e) => {
-          const {
-            channel,
-            channel: { label: channelName },
-          } = e
-
-          peer.extra.channels[channelName] = channel
-          onDataChannel && onDataChannel(channel)
-        },
-        [PeerEvents.ERROR]: (e) => {
-          // TODO Handle error
-          console.error('[TheRTCClient] Peer error', e)
-        },
-        [PeerEvents.ICE_CANDIDATE]: (e) => {
-          debug('iceCandidate', e.candidate && e.candidate.sdpMid, this.rid)
-          onIceCandidate && onIceCandidate(e.candidate)
-        },
-        [PeerEvents.ICE_CONNECTION_STATE_CHANGE]: (e) => {
-          debug('iceconnectionState', peer.iceConnectionState)
-        },
-        [PeerEvents.NEGOTIATION_NEEDED]: () => {
-          debug('negotiation needed', this.rid)
-        },
-        [PeerEvents.SIGNALING_STATE_CHANGE]: () => {
-          debug('signalingState', peer.signalingState, this.rid)
-        },
-        [PeerEvents.TRACK]: (e) => {
-          const [stream] = e.streams || []
-          debug('stream', stream && stream.id)
-          if (stream) {
-            onStream && onStream(stream, { peer })
-          }
-        },
-      }
-      for (const [event, handler] of Object.entries(handlers)) {
-        peer.addEventListener(event, (...args) => {
-          handler(...args)
-        })
-      }
-      if (stream) {
-        for (const track of stream.getTracks()) {
-          console.log('adding track', this.rid, track.kind, stream.id)
-          peer.addTrack(track, stream)
-        }
-      }
-
-      peer.extra = { channels: {}, pid, purpose }
-
-      return peer
-    }
-
-    delPeer (pid) {
+    delPeer(pid) {
       delete this.peers[pid]
     }
 
-    getPeer (pid, options = {}) {
+    getPeer(pid, options = {}) {
       const peer = this.peers[pid]
       if (!peer) {
         const { warnWhenNotFound } = options
@@ -129,19 +48,19 @@ function peerMix (Class) {
       return peer
     }
 
-    getPeerDataChannel (pid, channelName) {
+    getPeerDataChannel(pid, channelName) {
       const peer = this.getPeer(pid)
       const { channels } = (peer && peer.extra) || {}
       return channels && channels[channelName]
     }
 
-    getPeersByPurpose (purpose) {
+    getPeersByPurpose(purpose) {
       return Object.values(this.peers).filter(
         (peer) => peer.extra.purpose === purpose,
       )
     }
 
-    setPeer (pid, peer) {
+    setPeer(pid, peer) {
       if (this.peers[pid]) {
         throw new Error(`[TheRTCClient] Peer already exists with id: ${pid}`)
       }
@@ -149,30 +68,30 @@ function peerMix (Class) {
       this.peers[pid] = peer
     }
 
-    async createAnswerPeer ({
-                              iceServers,
-                              onDataChannel,
-                              onDisconnect,
-                              onFail,
-                              onStream,
-                              pid,
-                              purpose,
-                              remoteDescription,
-                              stream,
-                            } = {}) {
-      const peer = this.createPeer({
+    async createAnswerPeer({
+      iceServers,
+      onDataChannel,
+      onDisconnect,
+      onFail,
+      onStream,
+      pid,
+      purpose,
+      remoteDescription,
+      stream,
+    } = {}) {
+      const peer = createPeer(this.rid, {
         iceServers,
         onDataChannel,
         onDisconnect,
-        onStream,
         onFail,
+        onStream,
         pid,
         purpose,
         stream,
       })
       this.setPeer(pid, peer)
       await this.peerLock.acquire(pid, async () => {
-        this.setPeerRemoteDesc(pid, remoteDescription)
+        await this.setPeerRemoteDesc(pid, remoteDescription)
         const localDesc = await peer.createAnswer()
         await peer.setLocalDescription(localDesc)
       })
@@ -180,23 +99,23 @@ function peerMix (Class) {
       return peer
     }
 
-    async createOfferPeer ({
-                             iceServers,
-                             onDataChannel,
-                             onDisconnect,
-                             onIceCandidate,
-                             onStream,
-                             onFail,
-                             pid,
-                             purpose,
-                             stream,
-                           } = {}) {
-      const peer = this.createPeer({
+    async createOfferPeer({
+      iceServers,
+      onDataChannel,
+      onDisconnect,
+      onFail,
+      onIceCandidate,
+      onStream,
+      pid,
+      purpose,
+      stream,
+    } = {}) {
+      const peer = createPeer(this.rid, {
         iceServers,
         onDisconnect,
+        onFail,
         onIceCandidate,
         onStream,
-        onFail,
         pid,
         purpose,
         stream,
@@ -213,13 +132,13 @@ function peerMix (Class) {
       return peer
     }
 
-    async destroyAllPeers () {
+    async destroyAllPeers() {
       for (const pid of Object.keys(this.peers)) {
         await this.destroyPeer(pid)
       }
     }
 
-    async destroyPeer (pid) {
+    async destroyPeer(pid) {
       const peer = this.getPeer(pid)
       const {
         extra: { channels },
@@ -231,7 +150,7 @@ function peerMix (Class) {
       this.delPeer(pid)
     }
 
-    async peerDataChannel (pid, channelName) {
+    async peerDataChannel(pid, channelName) {
       const channel = this.getPeerDataChannel(pid, channelName)
       if (!channel) {
         throw new Error(`[TheRTCClient] Unknown channel: ${channelName}`)
@@ -260,7 +179,7 @@ function peerMix (Class) {
       return channel
     }
 
-    async setPeerICECandidate (pid, ice) {
+    async setPeerICECandidate(pid, ice) {
       await this.peerLock.acquire(pid, async () => {
         const peer = this.getPeer(pid, { warnWhenNotFound: true })
         if (!peer) {
@@ -270,12 +189,12 @@ function peerMix (Class) {
           signalingState: peer.signalingState,
         })
         // TODO ちょっと待たないとうまくつながらない。(原因はまだ分かっていない)
-        await asleep(300)
+        await asleep(500)
         await peer.addIceCandidate(new RTCIceCandidate(ice))
       })
     }
 
-    async setPeerRemoteDesc (pid, desc) {
+    async setPeerRemoteDesc(pid, desc) {
       const peer = this.getPeer(pid, { warnWhenNotFound: true })
       if (!peer) {
         return
