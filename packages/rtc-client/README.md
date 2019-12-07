@@ -86,7 +86,6 @@ Usage
 - module:@the-/rtc.constants.mixins
   - [.assertMix(Class)](./doc/api/api.md#module_@the-/rtc.constants.mixins.assertMix)
   - [.channelMix(Class)](./doc/api/api.md#module_@the-/rtc.constants.mixins.channelMix)
-  - [.mediaMix(Class)](./doc/api/api.md#module_@the-/rtc.constants.mixins.mediaMix)
   - [.peerMix(Class)](./doc/api/api.md#module_@the-/rtc.constants.mixins.peerMix)
   - [.promiseMix(Class)](./doc/api/api.md#module_@the-/rtc.constants.mixins.promiseMix)
   - [.serializeMix(Class)](./doc/api/api.md#module_@the-/rtc.constants.mixins.serializeMix)

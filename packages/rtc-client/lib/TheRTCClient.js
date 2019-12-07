@@ -31,6 +31,7 @@ class TheRTCClient extends TheRTCClientBase {
   constructor(options = {}) {
     super()
     const {
+      iceTransportPolicy = 'all',
       info = {},
       mediaConstrains = { audio: true, video: true },
       onLocal,
@@ -48,6 +49,7 @@ class TheRTCClient extends TheRTCClientBase {
     this.onRemoteFail = onRemoteFail
     this.onLocal = onLocal
     this.onRoom = onRoom
+    this.iceTransportPolicy = iceTransportPolicy
     this._rid = rid
     this._info = info
   }
@@ -124,12 +126,14 @@ class TheRTCClient extends TheRTCClientBase {
   async answerToPeerOffer(offer) {
     const {
       iceServers,
+      iceTransportPolicy,
       media: { stream: localStream },
       rid: local,
     } = this
     const { desc, from: remote, pid, purpose } = offer
     const peer = await this.createAnswerPeer({
       iceServers,
+      iceTransportPolicy,
       onDataChannel: (channel) => {
         this.receiveDataChannel(channel, { from: remote })
       },
@@ -215,10 +219,11 @@ class TheRTCClient extends TheRTCClientBase {
 
   async establishPeer(client, purpose) {
     const { rid: remote } = client
-    const { iceServers, rid: local, socket } = this
+    const { iceServers, iceTransportPolicy, rid: local, socket } = this
     const pid = this.pidFor(local, remote, purpose)
     const peer = await this.createOfferPeer({
       iceServers,
+      iceTransportPolicy,
       onDataChannel: (channel) => {
         this.receiveDataChannel(channel, { from: remote })
       },

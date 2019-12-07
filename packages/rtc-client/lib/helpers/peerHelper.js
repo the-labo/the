@@ -10,6 +10,7 @@ exports.createPeer = function createPeer(
   rid,
   {
     iceServers = [],
+    iceTransportPolicy,
     onDataChannel,
     onDisconnect,
     onFail,
@@ -20,10 +21,10 @@ exports.createPeer = function createPeer(
     stream,
   } = {},
 ) {
-  const peer = new RTCPeerConnection({ iceServers }, {})
+  const peer = new RTCPeerConnection({ iceServers, iceTransportPolicy })
   const handlers = {
     [PeerEvents.CONNECTION_STATE_CHANGE]: () => {
-      debug('connectionState', peer.connectionState, rid)
+      debug('connectionState', peer.connectionState, { rid })
       switch (peer.connectionState) {
         case 'disconnected': {
           onDisconnect && onDisconnect({ peer })
@@ -48,26 +49,27 @@ exports.createPeer = function createPeer(
     },
     [PeerEvents.ERROR]: (e) => {
       // TODO Handle error
-      console.error('[TheRTCClient] Peer error', e)
+      console.error('[TheRTCClient] Peer error', e, { rid })
     },
     [PeerEvents.ICE_CANDIDATE]: (e) => {
       debug('iceCandidate', e.candidate && e.candidate.sdpMid, rid)
-      onIceCandidate && onIceCandidate(e.candidate)
+      onIceCandidate && onIceCandidate(e.candidate, { rid })
     },
     [PeerEvents.ICE_CONNECTION_STATE_CHANGE]: () => {
       debug('iceconnectionState', peer.iceConnectionState)
     },
     [PeerEvents.NEGOTIATION_NEEDED]: () => {
-      debug('negotiation needed', rid)
+      debug('negotiation needed', { rid })
     },
     [PeerEvents.SIGNALING_STATE_CHANGE]: () => {
-      debug('signalingState', peer.signalingState, rid)
+      debug('signalingState', peer.signalingState, { rid })
     },
     [PeerEvents.TRACK]: (e) => {
+      const { track } = e
       const [stream] = e.streams || []
-      debug('stream', stream && stream.id)
+      debug('track', track.kind, track.id, { rid, stream: stream && stream.id })
       if (stream) {
-        onStream && onStream(stream, { peer })
+        onStream && onStream(stream, { peer, track })
       }
     },
   }
@@ -78,7 +80,7 @@ exports.createPeer = function createPeer(
   }
   if (stream) {
     for (const track of stream.getTracks()) {
-      console.log('adding track', rid, track.kind, stream.id)
+      debug('addTrack', rid, track.kind, stream.id)
       peer.addTrack(track, stream)
     }
   }
