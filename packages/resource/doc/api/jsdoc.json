@@ -13,7 +13,7 @@
     "name": "@the-/resource",
     "order": 3,
     "typicalname": "resource",
-    "version": "15.4.12"
+    "version": "15.4.13"
   },
   {
     "description": "Resource for the DB",
@@ -350,6 +350,41 @@
     "scope": "instance"
   },
   {
+    "async": true,
+    "deprecated": "いけてない",
+    "id": "module:@the-/resource.mixins.queueMix~QueueMixed#createWithQueue",
+    "kind": "function",
+    "longname": "module:@the-/resource.mixins.queueMix~QueueMixed#createWithQueue",
+    "memberof": "module:@the-/resource.mixins.queueMix~QueueMixed",
+    "meta": {
+      "filename": "queueMix.js",
+      "lineno": 24,
+      "path": "lib/mixins"
+    },
+    "name": "createWithQueue",
+    "order": 24,
+    "params": [],
+    "scope": "instance"
+  },
+  {
+    "async": true,
+    "deprecated": "いけてない",
+    "id": "module:@the-/resource.TheResource#createWithQueue",
+    "inherited": true,
+    "inherits": "module:@the-/resource.mixins.queueMix~QueueMixed#createWithQueue",
+    "kind": "function",
+    "longname": "module:@the-/resource.TheResource#createWithQueue",
+    "memberof": "module:@the-/resource.TheResource",
+    "meta": {
+      "filename": "queueMix.js",
+      "lineno": 24,
+      "path": "lib/mixins"
+    },
+    "name": "createWithQueue",
+    "order": 27,
+    "scope": "instance"
+  },
+  {
     "access": "protected",
     "id": "module:@the-/resource.TheResourceBase",
     "kind": "class",
@@ -594,7 +629,7 @@
       "path": "lib/mixins"
     },
     "name": "writeOnceMix",
-    "order": 24,
+    "order": 25,
     "params": [
       {
         "type": {
@@ -655,7 +690,7 @@
       "path": "lib/mixins"
     },
     "name": "WriteOnce",
-    "order": 25,
+    "order": 26,
     "scope": "inner"
   }
 ]

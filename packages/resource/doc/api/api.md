@@ -5,19 +5,21 @@
 ## @the-/resource
 Base of the-resource
 
-**Version**: 15.4.12  
+**Version**: 15.4.13  
 **License**: MIT  
 
 * [@the-/resource](#module_@the-/resource)
     * [.TheResourceBase](#module_@the-/resource.TheResourceBase)
     * [.TheResource](#module_@the-/resource.TheResource) ⇐ <code>TheResourceBase</code>
         * [new TheResource()](#new_module_@the-/resource.TheResource_new)
+        * ~~[.createWithQueue()](#module_@the-/resource.mixins.queueMix..QueueMixed+createWithQueue)~~
     * [.DataTypes](#module_@the-/resource.DataTypes) : <code>object</code>
     * [.mixins](#module_@the-/resource.mixins) : <code>object</code>
         * [.listenMix(Class)](#module_@the-/resource.mixins.listenMix) ⇒ <code>function</code>
             * [~ListenMixed](#module_@the-/resource.mixins.listenMix..ListenMixed)
         * [.queueMix(Class)](#module_@the-/resource.mixins.queueMix) ⇒ <code>function</code>
             * [~QueueMixed](#module_@the-/resource.mixins.queueMix..QueueMixed)
+                * ~~[.createWithQueue()](#module_@the-/resource.mixins.queueMix..QueueMixed+createWithQueue)~~
         * [.writeOnceMix(Class)](#module_@the-/resource.mixins.writeOnceMix) ⇒ <code>function</code>
             * [~WriteOnce](#module_@the-/resource.mixins.writeOnceMix..WriteOnce)
     * [.create(...args)](#module_@the-/resource.create) ⇒ <code>TheResource</code>
@@ -34,11 +36,22 @@ Base of the-resource
 ### resource.TheResource ⇐ <code>TheResourceBase</code>
 **Kind**: static class of [<code>@the-/resource</code>](#module_@the-/resource)  
 **Extends**: <code>TheResourceBase</code>, <code>ClayResource</code>, <code>module:@the-/resource.mixins.ListenMix~ListenMixed</code>, [<code>QueueMixed</code>](#module_@the-/resource.mixins.queueMix..QueueMixed), <code>module:@the-/resource.mixins.writeOnceMix~WriteOnceMixed</code>  
+
+* [.TheResource](#module_@the-/resource.TheResource) ⇐ <code>TheResourceBase</code>
+    * [new TheResource()](#new_module_@the-/resource.TheResource_new)
+    * ~~[.createWithQueue()](#module_@the-/resource.mixins.queueMix..QueueMixed+createWithQueue)~~
+
 <a name="new_module_@the-/resource.TheResource_new"></a>
 
 #### new TheResource()
 Resource for the DB
 
+<a name="module_@the-/resource.mixins.queueMix..QueueMixed+createWithQueue"></a>
+
+#### ~~theResource.createWithQueue()~~
+***Deprecated***
+
+**Kind**: instance method of [<code>TheResource</code>](#module_@the-/resource.TheResource)  
 <a name="module_@the-/resource.DataTypes"></a>
 
 ### resource.DataTypes : <code>object</code>
@@ -57,6 +70,7 @@ Mixin functions
         * [~ListenMixed](#module_@the-/resource.mixins.listenMix..ListenMixed)
     * [.queueMix(Class)](#module_@the-/resource.mixins.queueMix) ⇒ <code>function</code>
         * [~QueueMixed](#module_@the-/resource.mixins.queueMix..QueueMixed)
+            * ~~[.createWithQueue()](#module_@the-/resource.mixins.queueMix..QueueMixed+createWithQueue)~~
     * [.writeOnceMix(Class)](#module_@the-/resource.mixins.writeOnceMix) ⇒ <code>function</code>
         * [~WriteOnce](#module_@the-/resource.mixins.writeOnceMix..WriteOnce)
 
@@ -88,10 +102,21 @@ Mixin for queue
 | --- | --- |
 | Class | <code>function</code> | 
 
+
+* [.queueMix(Class)](#module_@the-/resource.mixins.queueMix) ⇒ <code>function</code>
+    * [~QueueMixed](#module_@the-/resource.mixins.queueMix..QueueMixed)
+        * ~~[.createWithQueue()](#module_@the-/resource.mixins.queueMix..QueueMixed+createWithQueue)~~
+
 <a name="module_@the-/resource.mixins.queueMix..QueueMixed"></a>
 
 ##### queueMix~QueueMixed
 **Kind**: inner class of [<code>queueMix</code>](#module_@the-/resource.mixins.queueMix)  
+<a name="module_@the-/resource.mixins.queueMix..QueueMixed+createWithQueue"></a>
+
+###### ~~queueMixed.createWithQueue()~~
+***Deprecated***
+
+**Kind**: instance method of [<code>QueueMixed</code>](#module_@the-/resource.mixins.queueMix..QueueMixed)  
 <a name="module_@the-/resource.mixins.writeOnceMix"></a>
 
 #### mixins.writeOnceMix(Class) ⇒ <code>function</code>
