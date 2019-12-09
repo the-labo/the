@@ -60,6 +60,10 @@ function peerMix(Class) {
       )
     }
 
+    getPeersByRid(rid) {
+      return Object.values(this.peers).filter((peer) => peer.extra.rid === rid)
+    }
+
     setPeer(pid, peer) {
       if (this.peers[pid]) {
         throw new Error(`[TheRTCClient] Peer already exists with id: ${pid}`)
