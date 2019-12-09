@@ -78,6 +78,7 @@ function peerMix(Class) {
       pid,
       purpose,
       remoteDescription,
+      rid,
       stream,
     } = {}) {
       const peer = createPeer(this.rid, {
@@ -89,6 +90,7 @@ function peerMix(Class) {
         onStream,
         pid,
         purpose,
+        rid,
         stream,
       })
       this.setPeer(pid, peer)
@@ -111,6 +113,7 @@ function peerMix(Class) {
       onStream,
       pid,
       purpose,
+      rid,
       stream,
     } = {}) {
       const peer = createPeer(this.rid, {
@@ -122,6 +125,7 @@ function peerMix(Class) {
         onStream,
         pid,
         purpose,
+        rid,
         stream,
       })
       this.setPeer(pid, peer)

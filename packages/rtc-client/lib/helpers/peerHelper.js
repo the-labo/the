@@ -18,6 +18,7 @@ exports.createPeer = function createPeer(
     onStream,
     pid,
     purpose,
+    remoteRid,
     stream,
   } = {},
 ) {
@@ -85,7 +86,7 @@ exports.createPeer = function createPeer(
     }
   }
 
-  peer.extra = { channels: {}, pid, purpose }
+  peer.extra = { channels: {}, pid, purpose, rid: remoteRid }
 
   return peer
 }

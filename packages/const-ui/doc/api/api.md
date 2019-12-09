@@ -42,7 +42,7 @@
 ## @the-/const-ui
 Constants for the-components
 
-**Version**: 15.5.0  
+**Version**: 15.5.2  
 **License**: MIT  
 
 * [@the-/const-ui](#module_@the-/const-ui)

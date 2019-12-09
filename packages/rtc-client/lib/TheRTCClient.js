@@ -44,10 +44,12 @@ class TheRTCClient extends TheRTCClientBase {
     this.room = null
     this.media = new TheMedia(mediaConstrains)
     this.iceServers = null
-    this.onRemote = onRemote
-    this.onRemoteGone = onRemoteGone
-    this.onRemoteFail = onRemoteFail
     this.onLocal = onLocal
+    this.callbacks = {
+      onRemote,
+      onRemoteFail,
+      onRemoteGone,
+    }
     this.onRoom = onRoom
     this.iceTransportPolicy = iceTransportPolicy
     this._rid = rid
@@ -110,6 +112,19 @@ class TheRTCClient extends TheRTCClientBase {
     return clients.find((client) => client.rid === rid)
   }
 
+  handleRemoteStream(peer, stream) {
+    const client = this.getRoomClientFor(peer.extra.rid)
+    const {
+      callbacks: { onRemote },
+    } = this
+    onRemote &&
+      onRemote({
+        ...client,
+        peer,
+        stream,
+      })
+  }
+
   hasPeers() {
     const peers = Object.entries(this.peers)
     return peers.length > 0
@@ -138,15 +153,16 @@ class TheRTCClient extends TheRTCClientBase {
         this.receiveDataChannel(channel, { from: remote })
       },
       onDisconnect: ({ peer }) => {
-        this.onRemoteGone && this.onRemoteGone({ peer, rid: remote })
+        this.callbacks.onRemoteGone &&
+          this.callbacks.onRemoteGone({ peer, rid: remote })
       },
       onStream: (stream, { peer }) => {
-        const client = this.getRoomClientFor(remote)
-        this.onRemote && this.onRemote({ ...client, peer, stream })
+        this.handleRemoteStream(peer, stream)
       },
       pid,
       purpose,
       remoteDescription: desc,
+      rid: remote,
       stream: localStream,
     })
     this.emitSocketEvent(IOEvents.PEER_ANSWER, {
@@ -229,11 +245,13 @@ class TheRTCClient extends TheRTCClientBase {
       },
       onDisconnect: ({ peer }) => {
         const client = this.getRoomClientFor(remote)
-        this.onRemoteGone && this.onRemoteGone({ ...client, peer })
+        this.callbacks.onRemoteGone &&
+          this.callbacks.onRemoteGone({ ...client, peer })
       },
       onFail: ({ peer }) => {
         const client = this.getRoomClientFor(remote)
-        this.onRemoteFail && this.onRemoteFail({ ...client, peer })
+        this.callbacks.onRemoteFail &&
+          this.callbacks.onRemoteFail({ ...client, peer })
       },
       onIceCandidate: (ice) => {
         this.emitSocketEvent(IOEvents.PEER_ICE, {
@@ -244,15 +262,11 @@ class TheRTCClient extends TheRTCClientBase {
         })
       },
       onStream: (stream, { peer }) => {
-        this.onRemote &&
-          this.onRemote({
-            ...client,
-            peer,
-            stream,
-          })
+        this.handleRemoteStream(peer, stream)
       },
       pid,
       purpose,
+      rid: remote,
       stream: this.media.stream,
     })
     const answer = await this.asPromise(
@@ -371,7 +385,6 @@ class TheRTCClient extends TheRTCClientBase {
       console.warn('[TheRTCClient] Invalid offer:', offer)
       return
     }
-
     await this.answerToPeerOffer(offer)
   }
 
@@ -431,6 +444,7 @@ class TheRTCClient extends TheRTCClientBase {
           console.warn('[TheRTCClient] Track lost', track.kind)
         }
       }
+      this.handleRemoteStream(peer, newMedia.stream)
     }
   }
 }
