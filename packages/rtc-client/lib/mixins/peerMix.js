@@ -60,10 +60,6 @@ function peerMix(Class) {
       )
     }
 
-    getPeersByRid(rid) {
-      return Object.values(this.peers).filter((peer) => peer.extra.rid === rid)
-    }
-
     setPeer(pid, peer) {
       if (this.peers[pid]) {
         throw new Error(`[TheRTCClient] Peer already exists with id: ${pid}`)
@@ -75,6 +71,7 @@ function peerMix(Class) {
     async createAnswerPeer({
       iceServers,
       iceTransportPolicy,
+      localStream,
       onDataChannel,
       onDisconnect,
       onFail,
@@ -83,19 +80,19 @@ function peerMix(Class) {
       purpose,
       remoteDescription,
       rid,
-      stream,
     } = {}) {
-      const peer = createPeer(this.rid, {
+      const peer = createPeer({
         iceServers,
         iceTransportPolicy,
+        localRid: this.rid,
+        localStream,
         onDataChannel,
         onDisconnect,
         onFail,
         onStream,
         pid,
         purpose,
-        rid,
-        stream,
+        remoteRid: rid,
       })
       this.setPeer(pid, peer)
       await this.peerLock.acquire(pid, async () => {
@@ -110,6 +107,7 @@ function peerMix(Class) {
     async createOfferPeer({
       iceServers,
       iceTransportPolicy,
+      localStream,
       onDataChannel,
       onDisconnect,
       onFail,
@@ -118,19 +116,19 @@ function peerMix(Class) {
       pid,
       purpose,
       rid,
-      stream,
     } = {}) {
-      const peer = createPeer(this.rid, {
+      const peer = createPeer({
         iceServers,
         iceTransportPolicy,
+        localRid: this.rid,
+        localStream,
         onDisconnect,
         onFail,
         onIceCandidate,
         onStream,
         pid,
         purpose,
-        rid,
-        stream,
+        remoteRid: rid,
       })
       this.setPeer(pid, peer)
       for (const channelName of Object.values(ChannelNames)) {

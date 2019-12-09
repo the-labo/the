@@ -52,7 +52,6 @@ class TheRTCClient extends TheRTCClientBase {
       onRoom,
     }
     this.iceTransportPolicy = iceTransportPolicy
-    this.streams = {}
     this._rid = rid
     this._info = info
   }
@@ -142,12 +141,11 @@ class TheRTCClient extends TheRTCClientBase {
     onRoom && onRoom(roomState)
     const remoteClients = roomState.clients.filter((c) => c.rid !== this.rid)
     for (const client of remoteClients) {
-      const peers = this.getPeersByRid(client.rid)
-      for (const peer of peers) {
+      for (const peer of Object.values(this.peers)) {
         const {
-          extra: { stream },
+          extra: { remoteStream },
         } = peer
-        this.handleRemote(client.rid, peer, stream)
+        this.handleRemote(client.rid, peer, remoteStream)
       }
     }
   }
@@ -170,34 +168,34 @@ class TheRTCClient extends TheRTCClientBase {
       iceServers,
       iceTransportPolicy,
       media: { stream: localStream },
-      rid: local,
+      rid: localRid,
     } = this
-    const { desc, from: remote, pid, purpose } = offer
+    const { desc, from: remoteRid, pid, purpose } = offer
     const peer = await this.createAnswerPeer({
       iceServers,
       iceTransportPolicy,
+      localStream,
       onDataChannel: (channel) => {
-        this.receiveDataChannel(channel, { from: remote })
+        this.receiveDataChannel(channel, { from: remoteRid })
       },
       onDisconnect: ({ peer }) => {
         this.callbacks.onRemoteGone &&
-          this.callbacks.onRemoteGone({ peer, rid: remote })
+          this.callbacks.onRemoteGone({ peer, rid: remoteRid })
       },
       onStream: (stream, { peer }) => {
-        this.handleRemote(remote, peer, stream)
+        this.handleRemote(remoteRid, peer, stream)
       },
       pid,
       purpose,
       remoteDescription: desc,
-      rid: remote,
-      stream: localStream,
+      rid: remoteRid,
     })
     this.emitSocketEvent(IOEvents.PEER_ANSWER, {
       desc: peer.localDescription,
-      from: local,
+      from: localRid,
       pid,
       purpose,
-      to: remote,
+      to: remoteRid,
     })
   }
 
@@ -260,40 +258,40 @@ class TheRTCClient extends TheRTCClientBase {
   }
 
   async establishPeer(client, purpose) {
-    const { rid: remote } = client
-    const { iceServers, iceTransportPolicy, rid: local, socket } = this
-    const pid = this.pidFor(local, remote, purpose)
+    const { rid: remoteRid } = client
+    const { iceServers, iceTransportPolicy, rid: localRid, socket } = this
+    const pid = this.pidFor(localRid, remoteRid, purpose)
     const peer = await this.createOfferPeer({
       iceServers,
       iceTransportPolicy,
+      localStream: this.media.stream,
       onDataChannel: (channel) => {
-        this.receiveDataChannel(channel, { from: remote })
+        this.receiveDataChannel(channel, { from: remoteRid })
       },
       onDisconnect: ({ peer }) => {
-        const client = this.getRoomClientFor(remote)
+        const client = this.getRoomClientFor(remoteRid)
         this.callbacks.onRemoteGone &&
           this.callbacks.onRemoteGone({ ...client, peer })
       },
       onFail: ({ peer }) => {
-        const client = this.getRoomClientFor(remote)
+        const client = this.getRoomClientFor(remoteRid)
         this.callbacks.onRemoteFail &&
           this.callbacks.onRemoteFail({ ...client, peer })
       },
       onIceCandidate: (ice) => {
         this.emitSocketEvent(IOEvents.PEER_ICE, {
-          from: local,
+          from: localRid,
           ice,
           pid,
-          to: remote,
+          to: remoteRid,
         })
       },
       onStream: (stream, { peer }) => {
-        this.handleRemote(remote, peer, stream)
+        this.handleRemote(remoteRid, peer, stream)
       },
       pid,
       purpose,
-      rid: remote,
-      stream: this.media.stream,
+      rid: remoteRid,
     })
     const answer = await this.asPromise(
       (resolve) => {
@@ -308,10 +306,10 @@ class TheRTCClient extends TheRTCClientBase {
         socket.on(IOEvents.PEER_ANSWER, onAnswer)
         this.emitSocketEvent(IOEvents.PEER_OFFER, {
           desc: peer.localDescription,
-          from: local,
+          from: localRid,
           pid,
           purpose,
-          to: remote,
+          to: remoteRid,
         })
       },
       {

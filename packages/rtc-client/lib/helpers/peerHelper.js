@@ -6,26 +6,24 @@ const PeerEvents = require('../constants/PeerEvents')
 const debug = require('debug')('the:rtc:client')
 const RTCPeerConnection = get('RTCPeerConnection') || wrtc.RTCPeerConnection
 
-exports.createPeer = function createPeer(
-  rid,
-  {
-    iceServers = [],
-    iceTransportPolicy,
-    onDataChannel,
-    onDisconnect,
-    onFail,
-    onIceCandidate,
-    onStream,
-    pid,
-    purpose,
-    rid: remoteRid,
-    stream,
-  } = {},
-) {
+exports.createPeer = function createPeer({
+  iceServers = [],
+  iceTransportPolicy,
+  localRid,
+  localStream,
+  onDataChannel,
+  onDisconnect,
+  onFail,
+  onIceCandidate,
+  onStream,
+  pid,
+  purpose,
+  remoteRid,
+} = {}) {
   const peer = new RTCPeerConnection({ iceServers, iceTransportPolicy })
   const handlers = {
     [PeerEvents.CONNECTION_STATE_CHANGE]: () => {
-      debug('connectionState', peer.connectionState, { rid })
+      debug('connectionState', peer.connectionState, { rid: localRid })
       switch (peer.connectionState) {
         case 'disconnected': {
           onDisconnect && onDisconnect({ peer })
@@ -50,27 +48,31 @@ exports.createPeer = function createPeer(
     },
     [PeerEvents.ERROR]: (e) => {
       // TODO Handle error
-      console.error('[TheRTCClient] Peer error', e, { rid })
+      console.error('[TheRTCClient] Peer error', e, { rid: remoteRid })
     },
     [PeerEvents.ICE_CANDIDATE]: (e) => {
-      debug('iceCandidate', e.candidate && e.candidate.sdpMid, rid)
-      onIceCandidate && onIceCandidate(e.candidate, { rid })
+      debug('iceCandidate', e.candidate && e.candidate.sdpMid, localRid)
+      onIceCandidate && onIceCandidate(e.candidate, { rid: remoteRid })
     },
     [PeerEvents.ICE_CONNECTION_STATE_CHANGE]: () => {
       debug('iceconnectionState', peer.iceConnectionState)
     },
     [PeerEvents.NEGOTIATION_NEEDED]: () => {
-      debug('negotiation needed', { rid })
+      debug('negotiation needed', { rid: remoteRid })
     },
     [PeerEvents.SIGNALING_STATE_CHANGE]: () => {
-      debug('signalingState', peer.signalingState, { rid })
+      debug('signalingState', peer.signalingState, { rid: remoteRid })
     },
     [PeerEvents.TRACK]: (e) => {
       const { track } = e
-      const [stream] = e.streams || []
-      debug('track', track.kind, track.id, { rid, stream: stream && stream.id })
-      if (stream) {
-        onStream && onStream(stream, { peer, track })
+      const [remoteStream] = e.streams || []
+      debug('track', track.kind, track.id, {
+        rid: remoteRid,
+        stream: remoteStream && remoteStream.id,
+      })
+      if (remoteStream) {
+        onStream && onStream(remoteStream, { peer, track })
+        peer.extra.remoteStream = remoteStream
       }
     },
   }
@@ -79,14 +81,22 @@ exports.createPeer = function createPeer(
       handler(...args)
     })
   }
-  if (stream) {
-    for (const track of stream.getTracks()) {
-      debug('addTrack', rid, track.kind, stream.id)
-      peer.addTrack(track, stream)
+  if (localStream) {
+    for (const track of localStream.getTracks()) {
+      debug('addTrack', localRid, track.kind, localStream.id)
+      peer.addTrack(track, localStream)
     }
   }
 
-  peer.extra = { channels: {}, pid, purpose, rid: remoteRid, stream }
+  peer.extra = {
+    channels: {},
+    localRid,
+    localStream,
+    pid,
+    purpose,
+    remoteRid,
+    remoteStream: null,
+  }
 
   return peer
 }
