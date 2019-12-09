@@ -79,6 +79,7 @@ console.log(SupportedProps.mouseEvents.split(','))
 
 
 - module:@the-/const-ui
+  - [.StylePresets](./doc/api/api.md#module_@the-/const-ui.StylePresets)
   - [.SupportedProps](./doc/api/api.md#module_@the-/const-ui.SupportedProps)
   - [.ThemeValues](./doc/api/api.md#module_@the-/const-ui.ThemeValues)
   - [.VendorColors](./doc/api/api.md#module_@the-/const-ui.VendorColors)

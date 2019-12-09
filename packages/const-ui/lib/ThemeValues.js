@@ -33,7 +33,7 @@ const ThemeValues = Object.freeze(
     lightBackgroundColor: '#F8F8F8',
     lightBorderColor: '#EEE',
     lightLinkColor: '#999',
-    lightTextColor: '#BBB',
+    lightTextColor: '#AAA',
     mediumMediaBreakpoint: 992,
     overlayBackgroundColor: 'rgba(255,255,255,0.8)',
     overlayBorderColor: '#CCC',

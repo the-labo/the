@@ -4,8 +4,10 @@
  */
 'use strict'
 
+const {
+  strict: { ok },
+} = require('assert')
 const StylePresets = require('../lib/StylePresets')
-const { ok } = require('assert').strict
 
 describe('style-presets', () => {
   before(() => {})
