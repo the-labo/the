@@ -112,8 +112,8 @@ class TheRTCClient extends TheRTCClientBase {
     return clients.find((client) => client.rid === rid)
   }
 
-  handleRemoteStream(peer, stream) {
-    const client = this.getRoomClientFor(peer.extra.rid)
+  handleRemoteStream(rid, peer, stream) {
+    const client = this.getRoomClientFor(rid)
     const {
       callbacks: { onRemote },
     } = this
@@ -157,7 +157,7 @@ class TheRTCClient extends TheRTCClientBase {
           this.callbacks.onRemoteGone({ peer, rid: remote })
       },
       onStream: (stream, { peer }) => {
-        this.handleRemoteStream(peer, stream)
+        this.handleRemoteStream(remote, peer, stream)
       },
       pid,
       purpose,
@@ -262,7 +262,7 @@ class TheRTCClient extends TheRTCClientBase {
         })
       },
       onStream: (stream, { peer }) => {
-        this.handleRemoteStream(peer, stream)
+        this.handleRemoteStream(remote, peer, stream)
       },
       pid,
       purpose,
@@ -444,7 +444,7 @@ class TheRTCClient extends TheRTCClientBase {
           console.warn('[TheRTCClient] Track lost', track.kind)
         }
       }
-      this.handleRemoteStream(peer, newMedia.stream)
+      this.handleRemoteStream(peer.extra.rid, peer, newMedia.stream)
     }
   }
 }
