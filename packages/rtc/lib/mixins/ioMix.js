@@ -139,7 +139,7 @@ function ioMix(Class) {
       socket.theRTCState = {
         ...socket.theRTCState,
         ...state,
-        roomName,
+        roomName: roomName || state.roomName,
       }
       await this.syncIORoomState(roomName)
     }

@@ -22,7 +22,7 @@
 ## @the-/rtc-client
 Client for the-rtc
 
-**Version**: 15.8.12  
+**Version**: 15.8.13  
 **License**: MIT  
 
 * [@the-/rtc-client](#module_@the-/rtc-client)

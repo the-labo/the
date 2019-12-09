@@ -468,7 +468,7 @@ class TheRTCClient extends TheRTCClientBase {
         }
       }
     }
-    this.handleLocal(newMedia.stream)
+    await this.syncState()
   }
 }
 

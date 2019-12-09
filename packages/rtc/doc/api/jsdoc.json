@@ -13,7 +13,7 @@
     "name": "@the-/rtc",
     "order": 2,
     "typicalname": "rtc",
-    "version": "15.6.2"
+    "version": "15.6.4"
   },
   {
     "id": "module:@the-/rtc.TheRTC()",
