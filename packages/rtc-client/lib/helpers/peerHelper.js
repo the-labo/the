@@ -18,7 +18,7 @@ exports.createPeer = function createPeer(
     onStream,
     pid,
     purpose,
-    remoteRid,
+    rid: remoteRid,
     stream,
   } = {},
 ) {
