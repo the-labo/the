@@ -166,6 +166,9 @@ class TheRTCClient extends TheRTCClientBase {
       )
       for (const peer of peers) {
         this.handleRemoteGone(goneClient.rid, peer)
+        try {
+          peer.close()
+        } catch (e) {}
       }
     }
   }
