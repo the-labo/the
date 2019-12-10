@@ -4,16 +4,15 @@
  */
 'use strict'
 
+const {
+  strict: { ok },
+} = require('assert')
 const coreJs = require('../lib/core-js/core-js')
 
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('core-js', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     ok(coreJs)
