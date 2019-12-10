@@ -133,7 +133,19 @@ class TheRTCClient extends TheRTCClientBase {
       })
   }
 
+  handleRemoteGone(rid, peer) {
+    const {
+      callbacks: { onRemoteGone },
+    } = this
+    onRemoteGone && onRemoteGone({ peer, rid })
+  }
+
   handleRoom(roomState) {
+    const rids = new Set(roomState.clients.map((c) => c.rid))
+    const goneClients = ((this.room && this.room.clients) || []).filter(
+      (client) => !rids.has(client.rid),
+    )
+
     this.room = roomState
     const {
       callbacks: { onRoom },
@@ -146,6 +158,14 @@ class TheRTCClient extends TheRTCClientBase {
           extra: { remoteStream },
         } = peer
         this.handleRemote(client.rid, peer, remoteStream)
+      }
+    }
+    for (const goneClient of goneClients) {
+      const peers = Object.values(this.peers).filter(
+        (peer) => peer.extra.remoteRid === goneClient.rid,
+      )
+      for (const peer of peers) {
+        this.handleRemoteGone(goneClient.rid, peer)
       }
     }
   }
@@ -179,8 +199,7 @@ class TheRTCClient extends TheRTCClientBase {
         this.receiveDataChannel(channel, { from: remoteRid })
       },
       onDisconnect: ({ peer }) => {
-        this.callbacks.onRemoteGone &&
-          this.callbacks.onRemoteGone({ peer, rid: remoteRid })
+        this.handleRemoteGone(remoteRid, peer)
       },
       onStream: (stream, { peer }) => {
         this.handleRemote(remoteRid, peer, stream)
