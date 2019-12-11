@@ -1,5 +1,7 @@
 'use strict'
 
+const { get } = require('bwindow')
+
 const Permissions = {
   DENIED: 'denied',
   GRANTED: 'granted',
