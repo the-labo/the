@@ -2,7 +2,7 @@
 
 const { askNotification, showNotification } = require('@the-/notify')
 
-async function tryExample () {
+async function tryExample() {
   // ask to notify if needed
   await askNotification()
   // show notification

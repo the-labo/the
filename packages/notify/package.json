@@ -1,7 +1,7 @@
 {
   "name": "@the-/notify",
-  "description": "Browser utility for the-framework",
-  "version": "15.8.1",
+  "description": "Notification api wrapper",
+  "version": "15.8.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",

@@ -1,0 +1,37 @@
+[
+  {
+    "description": "Show page",
+    "id": "module:@the-/window.show",
+    "kind": "function",
+    "longname": "module:@the-/window.show",
+    "memberof": "module:@the-/window",
+    "meta": {
+      "filename": "show.js",
+      "lineno": 5,
+      "path": "lib"
+    },
+    "name": "show",
+    "order": 0,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "URL to show",
+        "name": "url"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  }
+]
