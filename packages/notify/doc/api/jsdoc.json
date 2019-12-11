@@ -1,17 +1,58 @@
 [
   {
-    "description": "Show page",
-    "id": "module:@the-/window.show",
-    "kind": "function",
-    "longname": "module:@the-/window.show",
-    "memberof": "module:@the-/window",
+    "description": "Notification api wrapper",
+    "id": "module:@the-/notify",
+    "kind": "module",
+    "license": "MIT",
+    "longname": "module:@the-/notify",
     "meta": {
-      "filename": "show.js",
-      "lineno": 5,
+      "filename": "index.js",
+      "lineno": 3,
       "path": "lib"
     },
-    "name": "show",
+    "name": "@the-/notify",
+    "order": 1,
+    "typicalname": "notify",
+    "version": "15.8.2"
+  },
+  {
+    "description": "Ask to notification",
+    "id": "module:@the-/notify.askNotification",
+    "kind": "function",
+    "longname": "module:@the-/notify.askNotification",
+    "memberof": "module:@the-/notify",
+    "meta": {
+      "filename": "askNotification.js",
+      "lineno": 8,
+      "path": "lib"
+    },
+    "name": "askNotification",
     "order": 0,
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<boolean>"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
+    "async": true,
+    "description": "Show notification",
+    "id": "module:@the-/notify.showNotification",
+    "kind": "function",
+    "longname": "module:@the-/notify.showNotification",
+    "memberof": "module:@the-/notify",
+    "meta": {
+      "filename": "showNotification.js",
+      "lineno": 12,
+      "path": "lib"
+    },
+    "name": "showNotification",
+    "order": 2,
     "params": [
       {
         "type": {
@@ -19,15 +60,24 @@
             "string"
           ]
         },
-        "description": "URL to show",
-        "name": "url"
+        "name": "message"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
       }
     ],
     "returns": [
       {
         "type": {
           "names": [
-            "*"
+            "Promise.<(null|undefined|{onclick: *, close}|*)>"
           ]
         }
       }
