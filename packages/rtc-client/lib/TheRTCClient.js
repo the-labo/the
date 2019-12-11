@@ -153,7 +153,8 @@ class TheRTCClient extends TheRTCClientBase {
     onRoom && onRoom(roomState)
     const remoteClients = roomState.clients.filter((c) => c.rid !== this.rid)
     for (const client of remoteClients) {
-      for (const peer of Object.values(this.peers)) {
+      const peers = this.getPeersForRid(client.rid)
+      for (const peer of peers) {
         const {
           extra: { remoteStream },
         } = peer
@@ -161,9 +162,7 @@ class TheRTCClient extends TheRTCClientBase {
       }
     }
     for (const goneClient of goneClients) {
-      const peers = Object.values(this.peers).filter(
-        (peer) => peer.extra.remoteRid === goneClient.rid,
-      )
+      const peers = this.getPeersForRid(goneClient.rid)
       for (const peer of peers) {
         this.handleRemoteGone(goneClient.rid, peer)
         try {
