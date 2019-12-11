@@ -1,22 +1,13 @@
 'use strict'
 
-const get = require('./get')
+const open = require('./open')
 
 /**
- * Show page
- * @memberof module:@the-/window
- * @function show
- * @param {string} url - URL to show
- * @returns {*}
- */
+ * @deprecated
+ * @param url*/
 function show(url) {
-  const location = get('location')
-  if (!location) {
-    console.warn('Failed to show because there no location object')
-    return
-  }
-
-  location.href = url
+  console.warn('[@the-/window] show() is now deprecated. Use open() instead')
+  open(url)
 }
 
 module.exports = show

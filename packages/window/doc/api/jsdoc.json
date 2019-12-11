@@ -13,7 +13,26 @@
     "name": "@the-/window",
     "order": 3,
     "typicalname": "window",
-    "version": "15.8.1"
+    "version": "15.8.3"
+  },
+  {
+    "deprecated": true,
+    "id": "show",
+    "kind": "function",
+    "longname": "show",
+    "meta": {
+      "filename": "show.js",
+      "lineno": 8,
+      "path": "lib"
+    },
+    "name": "show",
+    "order": 10,
+    "params": [
+      {
+        "name": "url"
+      }
+    ],
+    "scope": "global"
   },
   {
     "description": "Ask before leave",
@@ -229,6 +248,41 @@
     "scope": "static"
   },
   {
+    "description": "Open page",
+    "id": "module:@the-/window.open",
+    "kind": "function",
+    "longname": "module:@the-/window.open",
+    "memberof": "module:@the-/window",
+    "meta": {
+      "filename": "open.js",
+      "lineno": 5,
+      "path": "lib"
+    },
+    "name": "open",
+    "order": 6,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "URL to open",
+        "name": "url"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "scope": "static"
+  },
+  {
     "description": "Reload location",
     "id": "module:@the-/window.reload",
     "kind": "function",
@@ -240,7 +294,7 @@
       "path": "lib"
     },
     "name": "reload",
-    "order": 6,
+    "order": 7,
     "params": [
       {
         "type": {
@@ -277,7 +331,7 @@
       "path": "lib"
     },
     "name": "rescue",
-    "order": 7,
+    "order": 8,
     "params": [
       {
         "type": {
@@ -321,7 +375,7 @@
       "path": "lib"
     },
     "name": "set",
-    "order": 8,
+    "order": 9,
     "params": [
       {
         "type": {
@@ -340,41 +394,6 @@
         },
         "description": "Value to set",
         "name": "value"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        }
-      }
-    ],
-    "scope": "static"
-  },
-  {
-    "description": "Show page",
-    "id": "module:@the-/window.show",
-    "kind": "function",
-    "longname": "module:@the-/window.show",
-    "memberof": "module:@the-/window",
-    "meta": {
-      "filename": "show.js",
-      "lineno": 5,
-      "path": "lib"
-    },
-    "name": "show",
-    "order": 9,
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "description": "URL to show",
-        "name": "url"
       }
     ],
     "returns": [

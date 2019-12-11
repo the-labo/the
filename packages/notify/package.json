@@ -1,7 +1,7 @@
 {
-  "name": "@the-/window",
+  "name": "@the-/notify",
   "description": "Browser utility for the-framework",
-  "version": "15.8.3",
+  "version": "15.8.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,7 +12,6 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "asleep": "^1.0.3",
     "bwindow": "^2.0.3",
     "debug": "^4.1.1"
   },
