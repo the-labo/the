@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/notify
  * @typicalname notify
- * @version 15.8.2
+ * @version 15.8.3
  */
 'use strict'
 

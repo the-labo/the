@@ -13,7 +13,7 @@
     "name": "@the-/notify",
     "order": 1,
     "typicalname": "notify",
-    "version": "15.8.2"
+    "version": "15.8.3"
   },
   {
     "description": "Ask to notification",
@@ -23,7 +23,7 @@
     "memberof": "module:@the-/notify",
     "meta": {
       "filename": "askNotification.js",
-      "lineno": 8,
+      "lineno": 10,
       "path": "lib"
     },
     "name": "askNotification",

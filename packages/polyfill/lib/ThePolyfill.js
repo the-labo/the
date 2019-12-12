@@ -33,6 +33,9 @@ class ThePolyfill {
       if (!window.process) {
         window.process = require('process/browser')
       }
+      if (!this.done) {
+        require('dom4/build/dom4')
+      }
     })
     if (!this.done) {
       require('./core-js/core-js')
