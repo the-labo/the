@@ -75,13 +75,21 @@ function Drawer(canvas, tmpCanvas, options = {}) {
     },
     end() {
       state.active = false
-      drawer.flush()
-      if (state.tmpLayer) {
+      if (config.erasing) {
+        drawer.flushCommitLayer()
+      } else {
+        drawer.flushTmpLayer()
         state.tmpLayer.tearDown()
         state.tmpLayer = null
       }
     },
-    flush() {
+    flushCommitLayer() {
+      const { layerHistories } = state
+      const layerHistory = commitLayer.serialize()
+      layerHistories.push(layerHistory)
+      commitLayer.restoreAll(layerHistories)
+    },
+    flushTmpLayer() {
       const { layerHistories, tmpLayer } = state
       if (!tmpLayer) {
         return
@@ -121,16 +129,17 @@ function Drawer(canvas, tmpCanvas, options = {}) {
       if (config.erasing) {
         commitLayer.addObject({ erasing: true })
         commitLayer.applyConfig(config)
+      } else {
+        state.tmpLayer = DrawerLayer(tmpCanvas, {})
+        state.tmpLayer.setUp({
+          config,
+          height,
+          width,
+          x,
+          y,
+        })
+        state.tmpLayer.addObject({})
       }
-      state.tmpLayer = DrawerLayer(tmpCanvas, {})
-      state.tmpLayer.setUp({
-        config,
-        height,
-        width,
-        x,
-        y,
-      })
-      state.tmpLayer.addObject({})
     },
     toSVG() {
       return canvasAccess.toSVG()
