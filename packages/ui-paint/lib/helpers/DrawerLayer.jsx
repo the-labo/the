@@ -180,7 +180,6 @@ function DrawerLayer(canvas, options = {}) {
       const { height, width } = canvasAccess
       return {
         config: { ...config },
-        image: canvasAccess.toSVG(),
         objects: [...objects],
         size: { height, width },
       }
@@ -195,6 +194,9 @@ function DrawerLayer(canvas, options = {}) {
       debug('teardown')
       canvasAccess.pathClose()
       canvasAccess.clear()
+    },
+    toSVG() {
+      return canvasAccess.toSVG()
     },
   }
   return layer

@@ -16,7 +16,9 @@ const CanvasAccess = (canvas) => {
     ctx,
     apply(action) {
       ctx.save()
+      ctx.beginPath()
       action()
+      ctx.closePath()
       ctx.restore()
     },
     clear() {
