@@ -288,9 +288,7 @@ class TheMap extends React.Component {
   }
 
   createLayer({ title, ...options } = {}) {
-    const {
-      props: { TileLayerClass = TileLayer },
-    } = this
+    const TileLayerClass = this.props.TileLayerClass || TileLayer
     const layer = new TileLayerClass(options)
     layer.title = title
     return layer
