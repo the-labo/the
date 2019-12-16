@@ -4,7 +4,7 @@
  * @description Dialog for the-components
  * @module @the-/ui-dialog
  * @typicalname uiDialog
- * @version 17.0.0
+ * @version 17.0.1
  */
 'use strict'
 

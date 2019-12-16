@@ -31,7 +31,7 @@ TheDialogStyle.data = (options) => {
     buttonHeight = 40,
     contentWidth = ThemeValues.contentWidth,
     dominantColor = ThemeValues.dominantColor,
-    footerHeight = 44,
+    footerHeight = 50,
     headerHeight = ThemeValues.headerHeight,
     lightBorderColor = ThemeValues.lightBorderColor,
     overlayBackgroundColor = ThemeValues.overlayBackgroundColor,

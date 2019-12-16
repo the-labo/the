@@ -12,7 +12,7 @@
     "name": "@the-/ui-map",
     "order": 0,
     "typicalname": "uiMap",
-    "version": "16.0.0"
+    "version": "16.0.2"
   },
   {
     "description": "Geo map for the-components",
@@ -83,7 +83,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 411,
+      "lineno": 409,
       "path": "lib"
     },
     "name": "TileLayerClass",
@@ -98,7 +98,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 413,
+      "lineno": 411,
       "path": "lib"
     },
     "name": "freezed",
@@ -113,7 +113,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 415,
+      "lineno": 413,
       "path": "lib"
     },
     "name": "height",
@@ -128,7 +128,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 417,
+      "lineno": 415,
       "path": "lib"
     },
     "name": "lat",
@@ -143,7 +143,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 419,
+      "lineno": 417,
       "path": "lib"
     },
     "name": "lng",
@@ -158,7 +158,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 421,
+      "lineno": 419,
       "path": "lib"
     },
     "name": "onLeafletMap",
@@ -173,7 +173,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 423,
+      "lineno": 421,
       "path": "lib"
     },
     "name": "spinning",
@@ -188,7 +188,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 425,
+      "lineno": 423,
       "path": "lib"
     },
     "name": "width",
