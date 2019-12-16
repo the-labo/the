@@ -85,12 +85,10 @@ function Drawer(canvas, tmpCanvas, options = {}) {
     },
     flushCommitLayer() {
       const { layerHistories } = state
-      const layerHistory = {
-        ...commitLayer.serialize(),
-        image: commitLayer.toSVG(),
-      }
+      const layerHistory = { ...commitLayer.serialize() }
+      commitLayer.restoreAll([...layerHistories, layerHistory])
+      layerHistory.image = commitLayer.toSVG()
       layerHistories.push(layerHistory)
-      commitLayer.restoreAll(layerHistories)
     },
     flushTmpLayer() {
       const { layerHistories, tmpLayer } = state
@@ -102,12 +100,10 @@ function Drawer(canvas, tmpCanvas, options = {}) {
         return
       }
 
-      const layerHistory = {
-        ...tmpLayer.serialize(),
-        image: commitLayer.toSVG(),
-      }
+      const layerHistory = { ...tmpLayer.serialize() }
+      commitLayer.restoreAll([...layerHistories, layerHistory])
+      layerHistory.image = commitLayer.toSVG()
       layerHistories.push(layerHistory)
-      commitLayer.restoreAll(layerHistories)
     },
     resizeRequest() {
       if (state.resizing) {
