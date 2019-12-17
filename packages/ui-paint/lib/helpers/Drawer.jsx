@@ -60,7 +60,7 @@ function Drawer(canvas, tmpCanvas, options = {}) {
           },
         )
       } else {
-        state.tmpLayer.addPoint({ x, y })
+        state.tmpLayer && state.tmpLayer.addPoint({ x, y })
       }
     },
     drawBackground(background, options = {}) {
