@@ -46,13 +46,18 @@ showNotification.byServiceWorker = async function showNotificationByServiceWorke
     tag,
     ...restOptions,
   })
+  const callbacks = { onclick }
   return {
     set onclick(onclick) {
+      callbacks.onclick = onclick
       registration.getNotifications({ tag }).then((notifications) => {
         for (const notification of notifications) {
           notification.onclick = onclick
         }
       })
+    },
+    get onclick() {
+      return callbacks.onclick
     },
     close: async () => {
       const notifications = await registration.getNotifications({ tag })

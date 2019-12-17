@@ -13,7 +13,7 @@
     "name": "@the-/notify",
     "order": 1,
     "typicalname": "notify",
-    "version": "15.8.3"
+    "version": "15.8.4"
   },
   {
     "description": "Ask to notification",

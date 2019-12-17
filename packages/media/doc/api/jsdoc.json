@@ -13,7 +13,7 @@
     "name": "@the-/media",
     "order": 2,
     "typicalname": "media",
-    "version": "15.5.7"
+    "version": "15.5.10"
   },
   {
     "id": "module:@the-/media.TheMedia()",
@@ -66,7 +66,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 70,
+      "lineno": 43,
       "path": "lib"
     },
     "name": "createAudioRecorder",
@@ -110,7 +110,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 97,
+      "lineno": 70,
       "path": "lib"
     },
     "name": "getStreamTracks",
@@ -144,7 +144,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 119,
+      "lineno": 92,
       "path": "lib"
     },
     "name": "toggleEnabled",
@@ -178,7 +178,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 136,
+      "lineno": 109,
       "path": "lib"
     },
     "name": "bindVideo",
@@ -224,7 +224,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 154,
+      "lineno": 127,
       "path": "lib"
     },
     "name": "setZoom",
@@ -260,7 +260,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 174,
+      "lineno": 147,
       "path": "lib"
     },
     "name": "start",
@@ -286,7 +286,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 207,
+      "lineno": 178,
       "path": "lib"
     },
     "name": "stop",
@@ -312,7 +312,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 231,
+      "lineno": 202,
       "path": "lib"
     },
     "name": "takePhoto",
@@ -351,7 +351,7 @@
     "memberof": "TheMedia",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 253,
+      "lineno": 224,
       "path": "lib"
     },
     "name": "updateConstrains",
@@ -406,7 +406,7 @@
     "memberof": "module:@the-/media",
     "meta": {
       "filename": "TheMedia.js",
-      "lineno": 9,
+      "lineno": 8,
       "path": "lib"
     },
     "name": "TheMedia",

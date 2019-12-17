@@ -5,7 +5,7 @@
 ## @the-/notify
 Notification api wrapper
 
-**Version**: 15.8.3  
+**Version**: 15.8.4  
 **License**: MIT  
 
 * [@the-/notify](#module_@the-/notify)

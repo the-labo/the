@@ -24,12 +24,13 @@ async function askNotification() {
       return false
     case Permissions.GRANTED:
       return true
-    default:
+    default: {
       const permission = await Notification.requestPermission()
       if (!Notification.permission) {
         Notification.permission = permission
       }
       return permission === Permissions.GRANTED
+    }
   }
 }
 
