@@ -79,8 +79,10 @@ function Drawer(canvas, tmpCanvas, options = {}) {
         drawer.flushCommitLayer()
       } else {
         drawer.flushTmpLayer()
-        state.tmpLayer.tearDown()
-        state.tmpLayer = null
+        if (state.tmpLayer) {
+          state.tmpLayer.tearDown()
+          state.tmpLayer = null
+        }
       }
     },
     flushCommitLayer() {
