@@ -1,10 +1,9 @@
 'use strict'
 
-const { TheLock } = require('@the-/lock')
 const { get } = require('@the-/window')
-const { canZoomTrack } = require('./helpers')
-
-const mediaLock = new TheLock()
+const applyTrackConstraints = require('./helpers/applyTrackConstraints')
+const canZoomTrack = require('./helpers/canZoomTrack')
+const createMediaStream = require('./helpers/createMediaStream')
 
 /**
  * @memberof module:@the-/media
@@ -14,33 +13,6 @@ const mediaLock = new TheLock()
  * @param {Object|boolean} [options.audio] - Audio constraint
  */
 class TheMedia {
-  static async applyTrackConstraints(track, constraint) {
-    switch (typeof constraint) {
-      case 'boolean': {
-        track.enabled = Boolean(constraint)
-        break
-      }
-      case 'object': {
-        await track.applyConstraints(constraint)
-        break
-      }
-      default: {
-        break
-      }
-    }
-  }
-
-  static async createMediaStream(constrains = {}) {
-    const mediaDevices = get('navigator.mediaDevices')
-    if (!mediaDevices) {
-      return null
-    }
-
-    return mediaLock.acquire('mediaDevices', async () =>
-      mediaDevices.getUserMedia(constrains),
-    )
-  }
-
   constructor(options = {}) {
     const { audio = true, video = true } = options
     this.stream = null
@@ -177,14 +149,12 @@ class TheMedia {
       throw new Error('[TheMedia] Already running')
     }
 
-    const stream = await TheMedia.createMediaStream(this.constrains).catch(
-      (e) => {
-        console.error('[TheMedia] Media stream error: ', e, {
-          constrains: this.constrains,
-        })
-        return null
-      },
-    )
+    const stream = await createMediaStream(this.constrains).catch((e) => {
+      console.error('[TheMedia] Media stream error: ', e, {
+        constrains: this.constrains,
+      })
+      return null
+    })
     if (!stream) {
       throw new Error('[TheMedia] Failed to get user media stream')
     }
@@ -260,10 +230,10 @@ class TheMedia {
     }
 
     for (const track of stream.getVideoTracks()) {
-      await TheMedia.applyTrackConstraints(track, video)
+      await applyTrackConstraints(track, video)
     }
     for (const track of stream.getAudioTracks()) {
-      await TheMedia.applyTrackConstraints(track, audio)
+      await applyTrackConstraints(track, audio)
     }
   }
 }

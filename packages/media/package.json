@@ -1,7 +1,7 @@
 {
   "name": "@the-/media",
   "description": "User media handler",
-  "version": "15.5.7",
+  "version": "15.5.9",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@the-/lock": "^15.4.11",
-    "@the-/window": "^15.8.2"
+    "@the-/window": "^15.8.3"
   },
   "devDependencies": {},
   "engines": {

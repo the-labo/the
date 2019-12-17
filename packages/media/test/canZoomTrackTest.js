@@ -1,5 +1,5 @@
 /**
- * Test for helpers.
+ * Test for canZoomTrack.
  * Runs with mocha.
  */
 'use strict'
@@ -7,15 +7,15 @@
 const {
   strict: { ok },
 } = require('assert')
-const helpers = require('../lib/helpers')
+const canZoomTrack = require('../lib/helpers/canZoomTrack')
 
-describe('helpers', () => {
+describe('can-zoom-track', () => {
   before(() => {})
 
   after(() => {})
 
   it('Do test', async () => {
-    ok(helpers)
+    ok(canZoomTrack)
   })
 })
 

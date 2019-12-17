@@ -1,12 +1,6 @@
 'use strict'
 
-const canZoomTrack = (track) => {
+module.exports = function canZoomTrack(track) {
   const capabilities = track && track.getCapabilities()
   return !!capabilities && 'zoom' in capabilities
-}
-
-exports.canZoomTrack = canZoomTrack
-
-module.exports = {
-  canZoomTrack,
 }

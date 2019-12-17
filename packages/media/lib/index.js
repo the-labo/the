@@ -5,18 +5,16 @@
  * @license MIT
  * @module @the-/media
  * @typicalname media
- * @version 15.5.7
+ * @version 15.5.9
  */
 'use strict'
 
 const TheMedia_ = require('./TheMedia')
 const create_ = require('./create')
-const helpers_ = require('./helpers')
 const default__ = require('./default')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
 exports.TheMedia = TheMedia_
 exports.create = create_
-exports.helpers = helpers_
 
 module.exports = default__
