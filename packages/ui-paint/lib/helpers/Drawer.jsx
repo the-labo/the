@@ -139,6 +139,7 @@ function Drawer(canvas, tmpCanvas, options = {}) {
       state.active = true
       const { height, width } = canvasAccess
       if (config.erasing) {
+        drawer.flushCommitLayer()
         commitLayer.addObject({ erasing: true })
         commitLayer.applyConfig(config)
       } else {
