@@ -86,6 +86,10 @@ function Drawer(canvas, tmpCanvas, options = {}) {
     flushCommitLayer() {
       const { layerHistories } = state
       const layerHistory = { ...commitLayer.serialize() }
+      const isEmpty = layerHistory.objects.length === 0
+      if (isEmpty) {
+        return
+      }
       commitLayer.restoreAll([...layerHistories, layerHistory])
       layerHistory.image = commitLayer.toSVG()
       layerHistories.push(layerHistory)
@@ -113,6 +117,12 @@ function Drawer(canvas, tmpCanvas, options = {}) {
       void drawer.resize()
     },
     setConfig(adding) {
+      const needsFlush = ['erasing'].some(
+        (k) => k in adding && adding[k] !== config[k],
+      )
+      if (needsFlush) {
+        drawer.flushCommitLayer()
+      }
       Object.assign(config, { ...adding })
     },
     snapshot() {
