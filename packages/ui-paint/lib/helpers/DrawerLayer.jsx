@@ -2,10 +2,10 @@
 
 import Debug from 'debug'
 import CanvasAccess from './CanvasAccess'
+import ConfigNormalizer from './ConfigNormalizer'
 import applyDrawMethodToCtx from './drawing/applyDrawMethodToCtx'
 import PointNormalizer from './PointNormalizer'
 import DrawingMethods from '../constants/DrawingMethods'
-import ResizePolicies from '../constants/ResizePolicies'
 
 const debug = Debug('the:paint:DrawerLayer')
 
@@ -67,26 +67,15 @@ function DrawerLayer(canvas, options = {}) {
       canvasAccess.clear()
     },
     normalizeConfig(config, options = {}) {
-      const { size } = options
       const {
         config: { resizePolicy },
       } = state
-      const { height = canvasAccess.height, width = canvasAccess.width } =
-        size || {}
-      switch (resizePolicy) {
-        case ResizePolicies.FIT: {
-          const xRate = canvasAccess.width / width
-          const yRate = canvasAccess.height / height
-          return {
-            ...config,
-            lineWidth: config.lineWidth * Math.min(xRate, yRate),
-          }
-        }
-        case ResizePolicies.KEEP:
-        default: {
-          return config
-        }
-      }
+      const configNormalizer = ConfigNormalizer({
+        height: canvasAccess.height,
+        resizePolicy,
+        width: canvasAccess.width,
+      })
+      return configNormalizer.normalize(config, options)
     },
     normalizeObjects(objects, options = {}) {
       const {
