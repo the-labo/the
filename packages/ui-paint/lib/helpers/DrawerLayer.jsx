@@ -27,8 +27,8 @@ function DrawerLayer(canvas, options = {}) {
       return state.objects.length === 0
     },
     addObject(options = {}) {
-      const { erasing = false, points = [] } = options
-      state.objects.push({ erasing, points })
+      const { config = {}, erasing = false, points = [] } = options
+      state.objects.push({ config, erasing, points })
     },
     addPoint(point, options = {}) {
       const { clear = true } = options
@@ -44,21 +44,18 @@ function DrawerLayer(canvas, options = {}) {
       canvasAccess.configure(config)
     },
     applyObject(object) {
-      const { erasing, points } = object
+      const { config, erasing, points } = object
       if (points.length === 0) {
         return
       }
       canvasAccess.apply(() => {
+        layer.applyConfig({ ...state.config, ...config })
         canvasAccess.setErasing(erasing)
         const method = erasing ? DrawingMethods.FREE : state.config.method
         applyDrawMethodToCtx(ctx, method, points)
       })
     },
     applyObjects(objects) {
-      if (objects.length === 0) {
-        return
-      }
-
       for (const object of objects) {
         layer.applyObject(object)
       }
@@ -92,6 +89,9 @@ function DrawerLayer(canvas, options = {}) {
           ...object,
           points: pointNormalizer.normalizeAll(object.points, options),
         }))
+    },
+    popObject() {
+      return state.objects.pop()
     },
     restore(serialized) {
       const {

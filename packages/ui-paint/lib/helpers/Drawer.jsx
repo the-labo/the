@@ -86,11 +86,13 @@ function Drawer(canvas, tmpCanvas, options = {}) {
     flushCommitLayer() {
       const { layerHistories } = state
       const layerHistory = { ...commitLayer.serialize() }
-      const isEmpty = layerHistory.objects.length === 0
-      if (isEmpty) {
+      const object = commitLayer.popObject()
+      if (!object) {
         return
       }
+      layerHistory.objects = [object]
       commitLayer.restoreAll([...layerHistories, layerHistory])
+      commitLayer.applyConfig(config)
       layerHistory.image = commitLayer.toSVG()
       layerHistories.push(layerHistory)
     },
@@ -117,13 +119,8 @@ function Drawer(canvas, tmpCanvas, options = {}) {
       void drawer.resize()
     },
     setConfig(adding) {
-      const needsFlush = ['erasing'].some(
-        (k) => k in adding && adding[k] !== config[k],
-      )
-      if (needsFlush) {
-        drawer.flushCommitLayer()
-      }
       Object.assign(config, { ...adding })
+      commitLayer.applyConfig(config)
     },
     snapshot() {
       const { background, layerHistories } = state
@@ -139,8 +136,7 @@ function Drawer(canvas, tmpCanvas, options = {}) {
       state.active = true
       const { height, width } = canvasAccess
       if (config.erasing) {
-        drawer.flushCommitLayer()
-        commitLayer.addObject({ erasing: true })
+        commitLayer.addObject({ config: { ...config }, erasing: true })
         commitLayer.applyConfig(config)
       } else {
         state.tmpLayer = DrawerLayer(tmpCanvas, {})
