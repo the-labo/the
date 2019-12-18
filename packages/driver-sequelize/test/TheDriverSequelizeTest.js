@@ -13,7 +13,7 @@ const TheDriverSequelize = require('../lib/TheDriverSequelize')
 const resetMysqlDatabase = require('../misc/mysql/resetMysqlDatabase')
 
 describe('the-driver-sequelize', function() {
-  this.timeout(8000)
+  this.timeout(18000)
   before(() => {})
 
   after(() => {})
@@ -137,9 +137,11 @@ describe('the-driver-sequelize', function() {
     await driver.list('Box', { filter: { name: { $like: '02' } } })
 
     equal(
-      (await driver.list('Box', {
-        filter: { $or: [{ name: { $like: '%02%' } }] },
-      })).meta.total,
+      (
+        await driver.list('Box', {
+          filter: { $or: [{ name: { $like: '%02%' } }] },
+        })
+      ).meta.total,
       1,
     )
 
@@ -177,19 +179,23 @@ describe('the-driver-sequelize', function() {
     )
 
     equal(
-      (await driver.list('Box', {
-        filter: {
-          $$at: { $gt: new Date() },
-        },
-      })).entities.length,
+      (
+        await driver.list('Box', {
+          filter: {
+            $$at: { $gt: new Date() },
+          },
+        })
+      ).entities.length,
       0,
     )
     equal(
-      (await driver.list('Box', {
-        filter: {
-          $$at: { $lte: new Date() },
-        },
-      })).entities.length,
+      (
+        await driver.list('Box', {
+          filter: {
+            $$at: { $lte: new Date() },
+          },
+        })
+      ).entities.length,
       2,
     )
   })
@@ -211,36 +217,42 @@ describe('the-driver-sequelize', function() {
       lng: 139.68669891357425,
     })
     equal(
-      (await driver.list('X', {
-        filter: {
-          lat: {
-            $gte: 31.952162238024975,
-            $lte: 37.95286091815649,
+      (
+        await driver.list('X', {
+          filter: {
+            lat: {
+              $gte: 31.952162238024975,
+              $lte: 37.95286091815649,
+            },
           },
-        },
-      })).entities.length,
+        })
+      ).entities.length,
       1,
     )
     equal(
-      (await driver.list('X', {
-        filter: {
-          lat: {
-            $gte: 31.952162238024975,
-            $lte: 34.95286091815649,
+      (
+        await driver.list('X', {
+          filter: {
+            lat: {
+              $gte: 31.952162238024975,
+              $lte: 34.95286091815649,
+            },
           },
-        },
-      })).entities.length,
+        })
+      ).entities.length,
       0,
     )
     equal(
-      (await driver.list('X', {
-        filter: {
-          lat: {
-            $gte: -31.952162238024975,
-            $lte: 40.95286091815649,
+      (
+        await driver.list('X', {
+          filter: {
+            lat: {
+              $gte: -31.952162238024975,
+              $lte: 40.95286091815649,
+            },
           },
-        },
-      })).entities.length,
+        })
+      ).entities.length,
       1,
     )
   })
@@ -335,18 +347,22 @@ describe('the-driver-sequelize', function() {
       to: new Date('2018/12/29'),
     })
     equal(
-      (await driver.list('Pin', {
-        filter: { from: { $gt: new Date('2018/12/12') } },
-      })).entities.length,
+      (
+        await driver.list('Pin', {
+          filter: { from: { $gt: new Date('2018/12/12') } },
+        })
+      ).entities.length,
       2,
     )
     equal(
-      (await driver.list('Pin', {
-        filter: {
-          from: { $gt: new Date('2018/12/12') },
-          to: { $lte: new Date('2018/12/20') },
-        },
-      })).entities.length,
+      (
+        await driver.list('Pin', {
+          filter: {
+            from: { $gt: new Date('2018/12/12') },
+            to: { $lte: new Date('2018/12/20') },
+          },
+        })
+      ).entities.length,
       1,
     )
   })
@@ -381,23 +397,29 @@ describe('the-driver-sequelize', function() {
     equal(box01.group.$ref, `BoxGroup#${group01.id}`)
 
     equal(
-      (await driver.list('Box', {
-        filter: { group: { $ref: `BoxGroup#${group01.id}` } },
-      })).entities[0].id,
+      (
+        await driver.list('Box', {
+          filter: { group: { $ref: `BoxGroup#${group01.id}` } },
+        })
+      ).entities[0].id,
       box01.id,
     )
 
     equal(
-      (await driver.list('Box', {
-        filter: { group: group01 },
-      })).entities[0].id,
+      (
+        await driver.list('Box', {
+          filter: { group: group01 },
+        })
+      ).entities[0].id,
       box01.id,
     )
 
     equal(
-      (await driver.list('Box', {
-        filter: { group: { $ref: `BoxGroup#${group02.id}` } },
-      })).entities[0].id,
+      (
+        await driver.list('Box', {
+          filter: { group: { $ref: `BoxGroup#${group02.id}` } },
+        })
+      ).entities[0].id,
       box02.id,
     )
 
@@ -486,15 +508,17 @@ describe('the-driver-sequelize', function() {
     })
     equal(created03.name, 'b03')
     equal(
-      (await driver.list('Box', {
-        filter: {
-          date: {
-            $gte: new Date('2018/11/08'),
-            $lte: new Date('2018/11/11'),
-            $ne: null,
+      (
+        await driver.list('Box', {
+          filter: {
+            date: {
+              $gte: new Date('2018/11/08'),
+              $lte: new Date('2018/11/11'),
+              $ne: null,
+            },
           },
-        },
-      })).entities.length,
+        })
+      ).entities.length,
       1,
     )
 
@@ -586,7 +610,7 @@ describe('the-driver-sequelize', function() {
     const DB_ROOT_PASSWORD = 'root'
     const DB_USER = 'hoge'
     const DB_PASSWORD = 'fuge'
-    const DATABASE = 'the_driver_sequelize_test'
+    const DATABASE = 'the_driver_sequelize_testx'
 
     await resetMysqlDatabase(DB_ROOT_USER, DB_ROOT_PASSWORD, {
       database: DATABASE,
@@ -600,10 +624,10 @@ describe('the-driver-sequelize', function() {
       username: DB_USER,
     })
     driver.define('Date', {
+      date: { type: DATE },
       x: { type: NUMBER },
       y: { type: NUMBER },
       z: { maxLength: 1024, type: STRING },
-      date: { type: DATE },
     })
 
     const { date: dateA } = await driver.create('Date', {
