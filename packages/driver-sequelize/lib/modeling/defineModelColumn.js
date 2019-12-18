@@ -32,7 +32,7 @@ function defineModelColumn(propertyName, def = {}) {
     case BOOLEAN:
       return { ...base, type: Sequelize.BOOLEAN }
     case DATE:
-      return { ...base, type: Sequelize.DATE }
+      return { ...base, type: Sequelize.DATE(3) }
     case ENTITY:
     case REF:
       return { ...base, type: Sequelize.STRING(128) }

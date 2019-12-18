@@ -581,6 +581,42 @@ describe('the-driver-sequelize', function() {
     await driver.drop('A')
     await driver.close()
   })
+  it('mysql DATE type should support fractional seconds', async () => {
+    const DB_ROOT_USER = 'root'
+    const DB_ROOT_PASSWORD = 'root'
+    const DB_USER = 'hoge'
+    const DB_PASSWORD = 'fuge'
+    const DATABASE = 'the_driver_sequelize_test'
+
+    await resetMysqlDatabase(DB_ROOT_USER, DB_ROOT_PASSWORD, {
+      database: DATABASE,
+      password: DB_PASSWORD,
+      username: DB_USER,
+    })
+    const driver = new TheDriverSequelize({
+      database: DATABASE,
+      dialect: 'mysql',
+      password: DB_PASSWORD,
+      username: DB_USER,
+    })
+    driver.define('Date', {
+      x: { type: NUMBER },
+      y: { type: NUMBER },
+      z: { maxLength: 1024, type: STRING },
+      date: { type: DATE },
+    })
+
+    const { date: dateA } = await driver.create('Date', {
+      date: new Date('2019-01-01T00:00:00.000Z'),
+    })
+    const { date: dateB } = await driver.create('Date', {
+      date: new Date('2019-01-01T00:00:00.100Z'),
+    })
+    ok(dateA.getTime() < dateB.getTime())
+
+    await driver.drop('Date')
+    await driver.close()
+  })
   it('Multiple entity', async () => {
     const storage = `${__dirname}/../tmp/multiple-entity.db`
     await unlinkAsync(storage).catch(() => null)
