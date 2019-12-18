@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/rtc-client
  * @typicalname rtcClient
- * @version 15.9.3
+ * @version 15.9.4
  */
 'use strict'
 

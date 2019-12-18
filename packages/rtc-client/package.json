@@ -1,7 +1,7 @@
 {
   "name": "@the-/rtc-client",
   "description": "Client for the-rtc",
-  "version": "15.9.3",
+  "version": "15.9.4",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,9 +18,9 @@
   "dependencies": {
     "@the-/check": "^15.6.2",
     "@the-/lock": "^15.4.11",
-    "@the-/media": "^15.5.7",
+    "@the-/media": "^15.5.10",
     "@the-/pack": "^15.5.1",
-    "@the-/window": "^15.8.2",
+    "@the-/window": "^15.8.3",
     "argx": "^4.0.4",
     "asobj": "^3.0.1",
     "debug": "^4.1.1",
@@ -30,7 +30,7 @@
     "wrtc": "^0.4.2"
   },
   "devDependencies": {
-    "@the-/rtc": "^15.6.2",
+    "@the-/rtc": "^15.6.4",
     "aport": "^2.0.0",
     "asleep": "^1.0.3",
     "webpack-cli": "^3.3.10",

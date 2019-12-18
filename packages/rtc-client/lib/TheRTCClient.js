@@ -469,13 +469,15 @@ class TheRTCClient extends TheRTCClientBase {
     const newMedia = new TheMedia(mediaConstrains)
     this.media = newMedia
     await newMedia.startIfNeeded()
-    const newTracksHash = newMedia.stream.getTracks().reduce(
-      (hash, track) => ({
+    const newTracksHash = newMedia.stream.getTracks().reduce((hash, track) => {
+      if (!track) {
+        return hash
+      }
+      return {
         ...hash,
         [track.kind]: [...(hash[track.kind] || []), track],
-      }),
-      {},
-    )
+      }
+    }, {})
     for (const [, peer] of Object.entries(peers)) {
       for (const sender of peer.getSenders()) {
         const { track } = sender
