@@ -16,7 +16,7 @@ const TheDB = require('../lib/TheDB')
 
 describe('the-db', function() {
   process.env.ROOT_PASSWORD = process.env.CI ? '' : 'root'
-  this.timeout(20000)
+  this.timeout(40000)
   before(() => {})
 
   after(() => {})
@@ -290,6 +290,7 @@ describe('the-db', function() {
     await b01.destroy()
     await asleep(100)
     equal(await A.count(), 1)
+    await db.close()
   })
 
   it('Try mongo', async () => {
