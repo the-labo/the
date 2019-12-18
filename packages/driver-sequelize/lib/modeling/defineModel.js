@@ -22,7 +22,7 @@ function defineModel(sequelize, resourceName, schema) {
       allowNull: false,
       comment: 'Updated date',
       defaultValue: () => new Date(),
-      type: Sequelize.DATE,
+      type: Sequelize.DATE(3),
     },
     [MetaColumnNames.$$num]: {
       allowNull: false,
