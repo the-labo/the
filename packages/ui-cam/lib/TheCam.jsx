@@ -80,7 +80,7 @@ const TheCam = (props) => {
     try {
       await media.stop()
     } catch (e) {
-      // Do nothing
+      console.error('[TheCam] Failed to stop media', e)
     }
     // Callbacks
     onStop && onStop({ media, stream: media.stream, video })
@@ -92,7 +92,7 @@ const TheCam = (props) => {
 
   const [busy, setBusy] = useState(false)
   const [rejected, setRejected] = useState(false)
-  const [running, setRunning] = useState(true)
+  const [, setRunning] = useState(true)
 
   useEffect(() => {
     if (disabled) {
@@ -106,12 +106,10 @@ const TheCam = (props) => {
   }, [videoRef.current])
   useEffect(() => {
     media && onMedia && onMedia(media)
-  }, [media])
-  useEffect(() => {
-    if (running) {
-      void stop()
+    return () => {
+      void media.stopIfNeeded()
     }
-  }, [])
+  }, [media])
   const handleVideoLoad = useCallback(() => {
     onReady && onReady()
   }, [onReady])
