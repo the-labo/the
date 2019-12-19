@@ -130,6 +130,7 @@ const TheCam = (props) => {
             <video
               autoPlay
               className='the-cam-video'
+              muted
               onLoadedData={handleVideoLoad}
               playsInline
               ref={videoRef}
