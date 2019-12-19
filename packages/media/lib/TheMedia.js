@@ -14,8 +14,9 @@ const createMediaStream = require('./helpers/createMediaStream')
  */
 class TheMedia {
   constructor(options = {}) {
-    const { audio = true, video = true } = options
+    const { audio = true, stream = null, video = true } = options
     this.stream = null
+    this.originalStream = stream
     this.constrains = { audio, video }
     this.running = false
   }
@@ -148,13 +149,15 @@ class TheMedia {
     if (this.running) {
       throw new Error('[TheMedia] Already running')
     }
-
-    const stream = await createMediaStream(this.constrains).catch((e) => {
-      console.error('[TheMedia] Media stream error: ', e, {
-        constrains: this.constrains,
-      })
-      return null
-    })
+    const { originalStream } = this
+    const stream = originalStream
+      ? originalStream.clone()
+      : await createMediaStream(this.constrains).catch((e) => {
+          console.error('[TheMedia] Media stream error: ', e, {
+            constrains: this.constrains,
+          })
+          return null
+        })
     if (!stream) {
       throw new Error('[TheMedia] Failed to get user media stream')
     }
@@ -184,6 +187,7 @@ class TheMedia {
       await track.stop()
     }
     this.running = false
+    this.stream = null
   }
 
   async stopIfNeeded() {
