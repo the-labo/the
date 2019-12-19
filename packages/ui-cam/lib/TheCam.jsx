@@ -29,11 +29,11 @@ const TheCam = (props) => {
     onVideo,
     rejectedMessage,
     spinning,
+    stream,
     video,
     width,
-    stream,
   } = props
-  const media = useMemo(() => new TheMedia({ stream, audio, video }), [])
+  const media = useMemo(() => new TheMedia({ audio, stream, video }), [])
 
   const start = useCallback(async () => {
     setBusy(true)
@@ -86,8 +86,8 @@ const TheCam = (props) => {
     onStop && onStop({ media, stream: media.stream, video })
   }, [onStop, media.stream, videoRef.current])
 
-  useEffect(async () => {
-    await media.updateConstrains({ audio, video })
+  useEffect(() => {
+    void media.updateConstrains({ audio, video })
   }, [audio, video])
 
   const [busy, setBusy] = useState(false)

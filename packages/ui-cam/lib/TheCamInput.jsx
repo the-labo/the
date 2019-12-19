@@ -34,6 +34,7 @@ const TheCamInput = (props) => {
     onReject,
     onUpdate,
     readOnly,
+    stream,
     style = {},
     uploadText = 'Upload',
     value,
@@ -130,6 +131,7 @@ const TheCamInput = (props) => {
           onMedia={handleMedia}
           onReject={handleReject}
           spinning={busy}
+          stream={stream}
           video={video}
           width={width}
         >

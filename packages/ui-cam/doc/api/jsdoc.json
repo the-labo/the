@@ -12,7 +12,7 @@
     "name": "@the-/ui-cam",
     "order": 0,
     "typicalname": "uiCam",
-    "version": "16.0.3"
+    "version": "16.0.4"
   },
   {
     "description": "Embed camera component",
@@ -67,7 +67,7 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 148,
+      "lineno": 149,
       "path": "lib"
     },
     "name": "audio",
@@ -82,7 +82,7 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 150,
+      "lineno": 151,
       "path": "lib"
     },
     "name": "disabled",
@@ -97,7 +97,7 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 153,
+      "lineno": 154,
       "path": "lib"
     },
     "name": "onStream",
@@ -112,7 +112,7 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 155,
+      "lineno": 156,
       "path": "lib"
     },
     "name": "rejectedMessage",
@@ -127,7 +127,7 @@
     "memberof": "TheCam.propTypes",
     "meta": {
       "filename": "TheCam.jsx",
-      "lineno": 157,
+      "lineno": 158,
       "path": "lib"
     },
     "name": "video",

@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-cam",
   "description": "Embed camera component",
-  "version": "16.0.3",
+  "version": "16.0.5",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,7 +13,7 @@
   "dependencies": {
     "@the-/check": "^15.6.2",
     "@the-/const-ui": "^15.5.2",
-    "@the-/media": "^15.5.10",
+    "@the-/media": "^15.5.11",
     "@the-/ui-icon": "^16.0.2",
     "@the-/ui-spin": "^16.0.1",
     "@the-/ui-style": "^16.0.2",
