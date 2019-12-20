@@ -26,8 +26,6 @@ class TheMap extends React.Component {
     super(props)
     this.map = null
     this.mapElmRef = React.createRef()
-    this.mapLayerControl = null
-    this.mapZoomControl = null
     this.mapElmId = newId({ prefix: 'the-map' })
     this.state = {
       mapMarkersNodes: {},
@@ -199,21 +197,14 @@ class TheMap extends React.Component {
     }
 
     if (!zoomControlEnabled) {
-      if (this.mapZoomControl) {
-        this.mapZoomControl.remove()
-        this.mapZoomControl = null
-      }
-
+      this.mapAccess.removeZoomControl()
       return
     }
 
     const {
       props: { zoomControlPosition },
     } = this
-    const mapZoomControl = (this.mapZoomControl = L.control.zoom({
-      position: zoomControlPosition,
-    }))
-    mapZoomControl.addTo(map)
+    this.mapAccess.addZoomControl(zoomControlPosition)
   }
 
   componentDidMount() {

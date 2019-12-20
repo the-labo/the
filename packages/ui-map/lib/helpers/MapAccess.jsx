@@ -8,6 +8,7 @@ function MapAccess(map) {
     layers: {},
     markers: {},
     ready: false,
+    zoomControl: null,
   }
   return {
     get state() {
@@ -32,6 +33,13 @@ function MapAccess(map) {
       layerControl.addTo(map)
       state.layerControl = layerControl
     },
+    addZoomControl(position) {
+      const zoomControl = L.control.zoom({
+        position,
+      })
+      zoomControl.addTo(map)
+      state.zoomControl = zoomControl
+    },
     cleanup() {
       state.layers = {}
       state.markers = {}
@@ -49,6 +57,14 @@ function MapAccess(map) {
       }
       layerControl.remove()
       state.layerControl = null
+    },
+    removeZoomControl() {
+      const { zoomControl } = state
+      if (!zoomControl) {
+        return
+      }
+      zoomControl.remove()
+      state.zoomControl = null
     },
     toData() {
       const zoom = map.getZoom()
