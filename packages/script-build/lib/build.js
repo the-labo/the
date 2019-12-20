@@ -92,8 +92,11 @@ async function build(dirname = process.cwd(), options = {}) {
   await buildFiles()
   await buildBud()
 
-  const demo = async () =>
-    buildDemo(demoSrc, demoDest, {
+  const demo = async () => {
+    if (process.env.NODE_ENV === 'production') {
+      return
+    }
+    await buildDemo(demoSrc, demoDest, {
       alias: {
         [`${pkg.name}/styles`]: path.resolve(dirname, 'styles'),
         [pkg.name]: path.resolve(dirname, shimDir),
@@ -101,6 +104,7 @@ async function build(dirname = process.cwd(), options = {}) {
       plugins,
       presets: presetsFor(),
     })
+  }
   if (demoExists) {
     await demo()
   }
