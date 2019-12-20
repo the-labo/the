@@ -25,8 +25,6 @@ class TheMap extends React.Component {
   constructor(props) {
     super(props)
     this.map = null
-    this.mapLayers = {}
-    this.mapMarkers = {}
     this.mapElmRef = React.createRef()
     this.mapLayerControl = null
     this.mapZoomControl = null
@@ -69,38 +67,31 @@ class TheMap extends React.Component {
   }
 
   applyLayerControl(layerControlEnabled) {
-    const { map, mapLayers } = this
+    const { map } = this
+
     if (!map) {
       return
     }
 
     if (!layerControlEnabled) {
-      if (this.mapLayerControl) {
-        this.mapLayerControl.remove()
-        this.mapLayerControl = null
-      }
-
+      this.mapAccess.removeLayerControl()
       return
     }
 
     const {
       props: { layerControlPosition },
     } = this
-    const mapLayerControl = (this.mapLayerControl = L.control.layers(
-      Object.assign(
-        {},
-        ...Object.values(mapLayers).map((layer) => ({
-          [layer.title]: layer,
-        })),
-      ),
-      {},
-      { position: layerControlPosition },
-    ))
-    mapLayerControl.addTo(map)
+    this.mapAccess.addLayerControl(layerControlPosition)
   }
 
   applyLayers(layers) {
-    const { map, mapLayers } = this
+    const {
+      map,
+      mapAccess: {
+        state: { layers: mapLayers },
+      },
+    } = this
+
     if (!map) {
       return
     }
@@ -123,15 +114,19 @@ class TheMap extends React.Component {
         delete mapLayers[key]
       }
     }
-    if (this.mapLayerControl) {
-      this.mapLayerControl.remove()
-    }
+    this.mapAccess.removeLayerControl()
 
     this.needsChange()
   }
 
   applyMarkers(markers) {
-    const { map, mapMarkers } = this
+    const {
+      map,
+      mapAccess: {
+        state: { markers: mapMarkers },
+      },
+    } = this
+
     if (!map) {
       return
     }
@@ -187,7 +182,6 @@ class TheMap extends React.Component {
         this.setState({ mapMarkersNodes })
       }
     }
-    this.mapMarkers = mapMarkers
     this.needsChange()
   }
 
@@ -275,14 +269,11 @@ class TheMap extends React.Component {
   }
 
   componentWillUnmount() {
-    const { map } = this
-    if (map) {
-      MapAccess(map).removeHandlers(this.mapEventHandlers)
-      map.remove()
-      this.map = null
-    }
-
-    this.mapLayers = {}
+    const { mapAccess } = this
+    mapAccess.removeHandlers(this.mapEventHandlers)
+    mapAccess.cleanup()
+    this.mapAccess = null
+    this.map = null
   }
 
   createLayer({ title, ...options } = {}) {
@@ -292,16 +283,12 @@ class TheMap extends React.Component {
     return layer
   }
 
-  getMapData() {
-    return this.mapAccess.toData()
-  }
-
   needsChange(options = {}) {
     const { force = false } = options
     const {
       props: { onChange },
     } = this
-    const mapData = this.getMapData()
+    const mapData = this.mapAccess.toData()
     if (!mapData) {
       return
     }
