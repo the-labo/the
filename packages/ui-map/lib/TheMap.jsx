@@ -13,6 +13,7 @@ import {
 } from '@the-/util-ui'
 import TileLayer from './classes/TileLayer'
 import createMarker from './helpers/createMarker'
+import MapAccess from './helpers/MapAccess'
 import markerNodeFor from './helpers/markerNodeFor'
 
 const nullOrUndefined = (v) => v === null || typeof v === 'undefined'
@@ -230,6 +231,7 @@ class TheMap extends React.Component {
       zoomControl: false,
     })
     this.map = map
+    this.mapAccess = MapAccess(map)
     const {
       props: {
         lat,
@@ -243,9 +245,7 @@ class TheMap extends React.Component {
       },
     } = this
     onLeafletMap && onLeafletMap(map)
-    for (const [event, handler] of Object.entries(this.mapEventHandlers)) {
-      map.on(event, handler)
-    }
+    this.mapAccess.addHandlers(this.mapEventHandlers)
     this.applySight({ lat, lng, zoom })
     this.applyLayers(layers)
     this.applyLayerControl(layerControlEnabled)
@@ -277,9 +277,7 @@ class TheMap extends React.Component {
   componentWillUnmount() {
     const { map } = this
     if (map) {
-      for (const [event, handler] of Object.entries(this.mapEventHandlers)) {
-        map.off(event, handler)
-      }
+      MapAccess(map).removeHandlers(this.mapEventHandlers)
       map.remove()
       this.map = null
     }
@@ -295,25 +293,7 @@ class TheMap extends React.Component {
   }
 
   getMapData() {
-    const { map } = this
-    if (!map) {
-      return null
-    }
-
-    const zoom = map.getZoom()
-    const { lat, lng } = map.getCenter()
-    const bounds = map.getBounds()
-    return {
-      bounds: {
-        east: bounds.getEast(),
-        north: bounds.getNorth(),
-        south: bounds.getSouth(),
-        west: bounds.getWest(),
-      },
-      lat,
-      lng,
-      zoom,
-    }
+    return this.mapAccess.toData()
   }
 
   needsChange(options = {}) {
@@ -372,35 +352,7 @@ class TheMap extends React.Component {
   }
 
   updateMapView({ lat, lng, zoom }) {
-    const { map } = this
-    if (!map) {
-      return false
-    }
-
-    if (!this.mapReady) {
-      map.setView([lat, lng], zoom)
-      this.mapReady = true
-      return true
-    }
-
-    const currentZoom = map.getZoom()
-    if (!currentZoom) {
-      return false
-    }
-
-    const center = map.getCenter()
-    if (!center) {
-      return false
-    }
-
-    const same =
-      center.lat === lat && center.lng === lng && currentZoom === zoom
-    if (same) {
-      return false
-    }
-
-    map.setView([lat, lng], zoom)
-    return true
+    return this.mapAccess.update({ lat, lng, zoom })
   }
 }
 
