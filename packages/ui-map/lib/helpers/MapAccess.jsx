@@ -2,6 +2,9 @@
 
 import L from '@okunishinishi/leaflet-shim'
 import createMarker from './createMarker'
+import markerNodeFor from './markerNodeFor'
+
+const nullOrUndefined = (v) => v === null || typeof v === 'undefined'
 
 function MapAccess(map, { TileLayerClass }) {
   const state = {
@@ -52,6 +55,61 @@ function MapAccess(map, { TileLayerClass }) {
       })
       zoomControl.addTo(map)
       state.zoomControl = zoomControl
+    },
+    applyLayers(layers) {
+      const layerValuesToAdd = layers.filter(
+        ({ key }) => !mapAccess.hasLayer(key),
+      )
+      mapAccess.addLayers(layerValuesToAdd)
+      const keysToRemain = layers.map(({ key }) => key)
+      const layerKeysToRemove = mapAccess
+        .getLayerKeys()
+        .filter((key) => !keysToRemain.includes(key))
+      mapAccess.removeLayers(layerKeysToRemove)
+      mapAccess.removeLayerControl()
+    },
+    applyMarkers(markers, mapMarkersNodes, { freezed }) {
+      for (const { key, ...options } of markers) {
+        if (!key) {
+          console.warn('[TheMap] key is missing for marker:', options)
+          continue
+        }
+
+        {
+          const { lat, lng } = options
+          if ([lat, lng].some(nullOrUndefined)) {
+            console.warn('[TheMap] lat lng is missing for marker:', options)
+            continue
+          }
+        }
+        const marker = mapAccess.getMarker(key)
+        if (marker) {
+          const { height, lat, lng, node, onClick, width } = options
+          marker.setLatLng({ lat, lng })
+          marker.node = markerNodeFor({
+            height,
+            marker,
+            node,
+            onClick,
+            width,
+          })
+          mapMarkersNodes[key] = marker.node
+        } else {
+          const marker = mapAccess.addMarker(key, {
+            interactive: !freezed,
+            ...options,
+          })
+          mapMarkersNodes[key] = marker.node
+        }
+      }
+      const keysToRemain = markers.map(({ key }) => key)
+      const markerKeysToRemove = mapAccess
+        .getMarkerKeys()
+        .filter((key) => !keysToRemain.includes(key))
+      for (const [key] of markerKeysToRemove) {
+        mapAccess.removeMarker(key)
+        delete mapMarkersNodes[key]
+      }
     },
     cleanup() {
       state.layers = {}

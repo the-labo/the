@@ -13,9 +13,6 @@ import {
 } from '@the-/util-ui'
 import TileLayer from './classes/TileLayer'
 import MapAccess from './helpers/MapAccess'
-import markerNodeFor from './helpers/markerNodeFor'
-
-const nullOrUndefined = (v) => v === null || typeof v === 'undefined'
 
 /**
  * @file Geo map for the-components
@@ -23,7 +20,6 @@ const nullOrUndefined = (v) => v === null || typeof v === 'undefined'
 class TheMap extends React.Component {
   constructor(props) {
     super(props)
-    this.map = null
     this.mapElmRef = React.createRef()
     this.mapElmId = newId({ prefix: 'the-map' })
     this.state = {
@@ -76,69 +72,16 @@ class TheMap extends React.Component {
   }
 
   applyLayers(layers) {
-    const layerValuesToAdd = layers.filter(
-      ({ key }) => !this.mapAccess.hasLayer(key),
-    )
-    this.mapAccess.addLayers(layerValuesToAdd)
-    const keysToRemain = layers.map(({ key }) => key)
-    const layerKeysToRemove = this.mapAccess
-      .getLayerKeys()
-      .filter((key) => !keysToRemain.includes(key))
-    this.mapAccess.removeLayers(layerKeysToRemove)
-    this.mapAccess.removeLayerControl()
+    this.mapAccess.applyLayers(layers)
     this.needsChange()
   }
 
   applyMarkers(markers) {
-    {
-      const mapMarkersNodes = { ...this.state.mapMarkersNodes }
-      for (const { key, ...options } of markers) {
-        if (!key) {
-          console.warn('[TheMap] key is missing for marker:', options)
-          continue
-        }
-
-        {
-          const { lat, lng } = options
-          if ([lat, lng].some(nullOrUndefined)) {
-            console.warn('[TheMap] lat lng is missing for marker:', options)
-            continue
-          }
-        }
-        const marker = this.mapAccess.getMarker(key)
-        if (marker) {
-          const { height, lat, lng, node, onClick, width } = options
-          marker.setLatLng({ lat, lng })
-          marker.node = markerNodeFor({
-            height,
-            marker,
-            node,
-            onClick,
-            width,
-          })
-          mapMarkersNodes[key] = marker.node
-        } else {
-          const marker = this.mapAccess.addMarker(key, {
-            interactive: !this.props.freezed,
-            ...options,
-          })
-          mapMarkersNodes[key] = marker.node
-        }
-      }
-      this.setState({ mapMarkersNodes })
-    }
-    {
-      const keysToRemain = markers.map(({ key }) => key)
-      const markerKeysToRemove = this.mapAccess
-        .getMarkerKeys()
-        .filter((key) => !keysToRemain.includes(key))
-      for (const [key] of markerKeysToRemove) {
-        this.mapAccess.removeMarker(key)
-        const mapMarkersNodes = { ...this.state.mapMarkersNodes }
-        delete mapMarkersNodes[key]
-        this.setState({ mapMarkersNodes })
-      }
-    }
+    const mapMarkersNodes = { ...this.state.mapMarkersNodes }
+    this.mapAccess.applyMarkers(markers, mapMarkersNodes, {
+      freezed: this.props.freezed,
+    })
+    this.setState({ mapMarkersNodes })
     this.needsChange()
   }
 
@@ -197,21 +140,15 @@ class TheMap extends React.Component {
   componentDidUpdate(prevProps) {
     const diff = changedProps(prevProps, this.props)
     this.applyCall(prevProps, {
-      'map,lat,lng,zoom': ({ lat, lng, zoom }) =>
+      'lat,lng,zoom': ({ lat, lng, zoom }) =>
         this.applySight({ lat, lng, zoom }),
-      'map,layerControlEnabled': ({ layerControlEnabled }) =>
+      layerControlEnabled: ({ layerControlEnabled }) =>
         this.applyLayerControl(layerControlEnabled),
-      'map,layers': ({ layers }) => this.applyLayers(layers),
-      'map,markers': ({ markers }) => this.applyMarkers(markers),
-      'map,zoomControlEnabled': ({ zoomControlEnabled }) =>
+      layers: ({ layers }) => this.applyLayers(layers),
+      markers: ({ markers }) => this.applyMarkers(markers),
+      zoomControlEnabled: ({ zoomControlEnabled }) =>
         this.applyZoomControl(zoomControlEnabled),
     })
-    const needsUpdateLayerControl = ['map', 'layerControlEnabled'].some(
-      (k) => k in diff,
-    )
-    if (needsUpdateLayerControl) {
-      // TODO
-    }
   }
 
   componentWillUnmount() {
