@@ -19,7 +19,7 @@ import markerNodeFor from './helpers/markerNodeFor'
 const nullOrUndefined = (v) => v === null || typeof v === 'undefined'
 
 /**
- * Geo map for the-components
+ * @file Geo map for the-components
  */
 class TheMap extends React.Component {
   constructor(props) {
@@ -65,12 +65,6 @@ class TheMap extends React.Component {
   }
 
   applyLayerControl(layerControlEnabled) {
-    const { map } = this
-
-    if (!map) {
-      return
-    }
-
     if (!layerControlEnabled) {
       this.mapAccess.removeLayerControl()
       return
@@ -84,50 +78,27 @@ class TheMap extends React.Component {
 
   applyLayers(layers) {
     const {
-      map,
       mapAccess: {
         state: { layers: mapLayers },
       },
     } = this
-
-    if (!map) {
-      return
-    }
-
-    {
-      const layerValuesToAdd = layers.filter(({ key }) => !mapLayers[key])
-      for (const { key, ...options } of layerValuesToAdd) {
-        const layer = this.createLayer(options)
-        mapLayers[key] = layer
-        map.addLayer(layer)
-      }
-    }
-    {
-      const keysToRemain = layers.map(({ key }) => key)
-      const layerEntriesToRemove = Object.entries(mapLayers).filter(
-        ([key]) => !keysToRemain.includes(key),
-      )
-      for (const [key, layer] of layerEntriesToRemove) {
-        map.removeLayer(layer)
-        delete mapLayers[key]
-      }
-    }
+    const layerValuesToAdd = layers.filter(({ key }) => !mapLayers[key])
+    this.mapAccess.addLayers(layerValuesToAdd)
+    const keysToRemain = layers.map(({ key }) => key)
+    const layerKeysToRemove = Object.keys(mapLayers).filter(
+      (key) => !keysToRemain.includes(key),
+    )
+    this.mapAccess.removeLayers(layerKeysToRemove)
     this.mapAccess.removeLayerControl()
-
     this.needsChange()
   }
 
   applyMarkers(markers) {
     const {
-      map,
       mapAccess: {
         state: { markers: mapMarkers },
       },
     } = this
-
-    if (!map) {
-      return
-    }
 
     {
       const mapMarkersNodes = { ...this.state.mapMarkersNodes }
@@ -157,7 +128,7 @@ class TheMap extends React.Component {
           })
           mapMarkersNodes[key] = marker.node
         } else {
-          const marker = createMarker(map, {
+          const marker = createMarker(this.map, {
             interactive: !this.props.freezed,
             ...options,
           })
@@ -184,18 +155,13 @@ class TheMap extends React.Component {
   }
 
   applySight({ lat, lng, zoom } = {}) {
-    const updated = this.updateMapView({ lat, lng, zoom })
+    const updated = this.mapAccess.update({ lat, lng, zoom })
     if (updated) {
       this.needsChange({ force: true })
     }
   }
 
   applyZoomControl(zoomControlEnabled) {
-    const { map } = this
-    if (!map) {
-      return
-    }
-
     if (!zoomControlEnabled) {
       this.mapAccess.removeZoomControl()
       return
@@ -216,7 +182,9 @@ class TheMap extends React.Component {
       zoomControl: false,
     })
     this.map = map
-    this.mapAccess = MapAccess(map)
+    this.mapAccess = MapAccess(map, {
+      TileLayerClass: this.props.TileLayerClass || TileLayer,
+    })
     const {
       props: {
         lat,
@@ -267,13 +235,6 @@ class TheMap extends React.Component {
     this.map = null
   }
 
-  createLayer({ title, ...options } = {}) {
-    const TileLayerClass = this.props.TileLayerClass || TileLayer
-    const layer = new TileLayerClass(options)
-    layer.title = title
-    return layer
-  }
-
   needsChange(options = {}) {
     const { force = false } = options
     const {
@@ -283,7 +244,6 @@ class TheMap extends React.Component {
     if (!mapData) {
       return
     }
-
     const skip =
       !force &&
       ['lat', 'lng', 'zoom'].every((k) => this.props[k] === mapData[k])
@@ -327,10 +287,6 @@ class TheMap extends React.Component {
         ))}
       </div>
     )
-  }
-
-  updateMapView({ lat, lng, zoom }) {
-    return this.mapAccess.update({ lat, lng, zoom })
   }
 }
 

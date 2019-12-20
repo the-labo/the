@@ -2,7 +2,7 @@
 
 import L from '@okunishinishi/leaflet-shim'
 
-function MapAccess(map) {
+function MapAccess(map, { TileLayerClass }) {
   const state = {
     layerControl: null,
     layers: {},
@@ -10,7 +10,7 @@ function MapAccess(map) {
     ready: false,
     zoomControl: null,
   }
-  return {
+  const mapAccess = {
     get state() {
       return state
     },
@@ -33,6 +33,13 @@ function MapAccess(map) {
       layerControl.addTo(map)
       state.layerControl = layerControl
     },
+    addLayers(layerValues) {
+      for (const { key, ...options } of layerValues) {
+        const layer = mapAccess.createLayer(options)
+        state.layers[key] = layer
+        map.addLayer(layer)
+      }
+    },
     addZoomControl(position) {
       const zoomControl = L.control.zoom({
         position,
@@ -44,6 +51,11 @@ function MapAccess(map) {
       state.layers = {}
       state.markers = {}
       map.remove()
+    },
+    createLayer({ title, ...options } = {}) {
+      const layer = new TileLayerClass(options)
+      layer.title = title
+      return layer
     },
     removeHandlers(handlers) {
       for (const [event, handler] of Object.entries(handlers)) {
@@ -57,6 +69,15 @@ function MapAccess(map) {
       }
       layerControl.remove()
       state.layerControl = null
+    },
+    removeLayers(layerKeys) {
+      for (const key of layerKeys) {
+        const layer = state.layers[key]
+        if (layer) {
+          map.removeLayer(layer)
+          delete state.layers[key]
+        }
+      }
     },
     removeZoomControl() {
       const { zoomControl } = state
@@ -109,6 +130,7 @@ function MapAccess(map) {
       return true
     },
   }
+  return mapAccess
 }
 
 export default MapAccess
