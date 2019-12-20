@@ -12,7 +12,6 @@ import {
   newId,
 } from '@the-/util-ui'
 import TileLayer from './classes/TileLayer'
-import createMarker from './helpers/createMarker'
 import MapAccess from './helpers/MapAccess'
 import markerNodeFor from './helpers/markerNodeFor'
 
@@ -77,29 +76,20 @@ class TheMap extends React.Component {
   }
 
   applyLayers(layers) {
-    const {
-      mapAccess: {
-        state: { layers: mapLayers },
-      },
-    } = this
-    const layerValuesToAdd = layers.filter(({ key }) => !mapLayers[key])
+    const layerValuesToAdd = layers.filter(
+      ({ key }) => !this.mapAccess.hasLayer(key),
+    )
     this.mapAccess.addLayers(layerValuesToAdd)
     const keysToRemain = layers.map(({ key }) => key)
-    const layerKeysToRemove = Object.keys(mapLayers).filter(
-      (key) => !keysToRemain.includes(key),
-    )
+    const layerKeysToRemove = this.mapAccess
+      .getLayerKeys()
+      .filter((key) => !keysToRemain.includes(key))
     this.mapAccess.removeLayers(layerKeysToRemove)
     this.mapAccess.removeLayerControl()
     this.needsChange()
   }
 
   applyMarkers(markers) {
-    const {
-      mapAccess: {
-        state: { markers: mapMarkers },
-      },
-    } = this
-
     {
       const mapMarkersNodes = { ...this.state.mapMarkersNodes }
       for (const { key, ...options } of markers) {
@@ -115,7 +105,7 @@ class TheMap extends React.Component {
             continue
           }
         }
-        const marker = mapMarkers[key]
+        const marker = this.mapAccess.getMarker(key)
         if (marker) {
           const { height, lat, lng, node, onClick, width } = options
           marker.setLatLng({ lat, lng })
@@ -128,11 +118,10 @@ class TheMap extends React.Component {
           })
           mapMarkersNodes[key] = marker.node
         } else {
-          const marker = createMarker(this.map, {
+          const marker = this.mapAccess.addMarker(key, {
             interactive: !this.props.freezed,
             ...options,
           })
-          mapMarkers[key] = marker
           mapMarkersNodes[key] = marker.node
         }
       }
@@ -140,12 +129,11 @@ class TheMap extends React.Component {
     }
     {
       const keysToRemain = markers.map(({ key }) => key)
-      const markerEntriesToRemove = Object.entries(mapMarkers).filter(
-        ([key]) => !keysToRemain.includes(key),
-      )
-      for (const [key, marker] of markerEntriesToRemove) {
-        marker.remove()
-        delete mapMarkers[key]
+      const markerKeysToRemove = this.mapAccess
+        .getMarkerKeys()
+        .filter((key) => !keysToRemain.includes(key))
+      for (const [key] of markerKeysToRemove) {
+        this.mapAccess.removeMarker(key)
         const mapMarkersNodes = { ...this.state.mapMarkersNodes }
         delete mapMarkersNodes[key]
         this.setState({ mapMarkersNodes })

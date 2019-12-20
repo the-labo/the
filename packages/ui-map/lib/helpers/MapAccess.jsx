@@ -1,6 +1,7 @@
 'use strict'
 
 import L from '@okunishinishi/leaflet-shim'
+import createMarker from './createMarker'
 
 function MapAccess(map, { TileLayerClass }) {
   const state = {
@@ -40,6 +41,11 @@ function MapAccess(map, { TileLayerClass }) {
         map.addLayer(layer)
       }
     },
+    addMarker(key, options) {
+      const marker = createMarker(map, options)
+      state.markers[key] = marker
+      return marker
+    },
     addZoomControl(position) {
       const zoomControl = L.control.zoom({
         position,
@@ -56,6 +62,18 @@ function MapAccess(map, { TileLayerClass }) {
       const layer = new TileLayerClass(options)
       layer.title = title
       return layer
+    },
+    getLayerKeys() {
+      return Object.keys(state.layers)
+    },
+    getMarker(key) {
+      return state.markers[key]
+    },
+    getMarkerKeys() {
+      return Object.keys(state.markers)
+    },
+    hasLayer(key) {
+      return !!state.layers[key]
     },
     removeHandlers(handlers) {
       for (const [event, handler] of Object.entries(handlers)) {
@@ -78,6 +96,14 @@ function MapAccess(map, { TileLayerClass }) {
           delete state.layers[key]
         }
       }
+    },
+    removeMarker(key) {
+      const marker = state.markers[key]
+      if (!marker) {
+        return
+      }
+      marker.remove()
+      delete state.markers[key]
     },
     removeZoomControl() {
       const { zoomControl } = state
