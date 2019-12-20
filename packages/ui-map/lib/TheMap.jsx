@@ -169,7 +169,6 @@ class TheMap extends React.Component {
       fadeAnimation: false,
       zoomControl: false,
     })
-    this.map = map
     this.mapAccess = MapAccess(map, {
       TileLayerClass: this.props.TileLayerClass || TileLayer,
     })
@@ -220,7 +219,6 @@ class TheMap extends React.Component {
     mapAccess.removeHandlers(this.mapEventHandlers)
     mapAccess.cleanup()
     this.mapAccess = null
-    this.map = null
   }
 
   needsChange(options = {}) {

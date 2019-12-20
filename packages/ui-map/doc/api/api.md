@@ -11,9 +11,6 @@
 ## Classes
 
 <dl>
-<dt><a href="#TheMap">TheMap</a></dt>
-<dd><p>Geo map for the-components</p>
-</dd>
 <dt><a href="#DivIcon">DivIcon</a> ⇐ <code>L.DivIcon</code></dt>
 <dd></dd>
 <dt><a href="#TileLayer">TileLayer</a> ⇐ <code>L.TileLayer</code></dt>
@@ -33,13 +30,7 @@
 ## @the-/ui-map
 Geo map for the-components
 
-**Version**: 16.0.3  
-<a name="TheMap"></a>
-
-## TheMap
-Geo map for the-components
-
-**Kind**: global class  
+**Version**: 16.0.4  
 <a name="DivIcon"></a>
 
 ## DivIcon ⇐ <code>L.DivIcon</code>
