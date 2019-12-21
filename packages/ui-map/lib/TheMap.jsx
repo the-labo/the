@@ -2,34 +2,80 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import L from '@okunishinishi/leaflet-shim'
 import { TheSpin } from '@the-/ui-spin'
-import {
-  changedProps,
-  eventHandlersFor,
-  htmlAttributesFor,
-  newId,
-} from '@the-/util-ui'
+import { eventHandlersFor, htmlAttributesFor, newId } from '@the-/util-ui'
 import TileLayer from './classes/TileLayer'
 import MapAccess from './helpers/MapAccess'
 
 /**
  * @file Geo map for the-components
  */
-class TheMap extends React.Component {
-  constructor(props) {
-    super(props)
-    this.mapElmRef = React.createRef()
-    this.mapElmId = newId({ prefix: 'the-map' })
-    this.state = {
-      mapMarkersNodes: {},
-    }
-    this.mapEventHandlers = {
+const TheMap = React.memo((props) => {
+  const {
+    TileLayerClass,
+    children,
+    className,
+    freezed,
+    height,
+    lat,
+    layerControlEnabled,
+    layerControlPosition,
+    layers,
+    lng,
+    markers,
+    onChange,
+    onClick,
+    onLeafletMap,
+    spinning,
+    width,
+    zoom,
+    zoomControlEnabled,
+    zoomControlPosition,
+  } = props
+  const mapElmRef = useRef(null)
+  const mapElmId = useMemo(() => newId({ prefix: 'the-map' }), [])
+  const [mapMarkersNodes, setMapMarkersNodes] = useState({})
+  const [mapAccess, setMapAccess] = useState(null)
+
+  const tmp = useMemo(
+    () => ({
+      mapAccess: null,
+      pos: { lat, lng, zoom },
+    }),
+    [],
+  )
+  tmp.pos.lat = lat
+  tmp.pos.lng = lng
+  tmp.pos.zoom = zoom
+  tmp.mapAccess = mapAccess
+  tmp.mapMarkersNodes = mapMarkersNodes
+
+  const needsChange = useCallback(
+    (options = {}) => {
+      if (!mapAccess) {
+        return
+      }
+      const { force = false } = options
+      const mapData = mapAccess.toData()
+      if (!mapData) {
+        return
+      }
+      const skip =
+        !force && Object.entries(tmp.pos).every(([k, v]) => v === mapData[k])
+      if (skip) {
+        return
+      }
+
+      onChange && onChange(mapData)
+    },
+    [mapAccess],
+  )
+
+  const mapEventHandlers = useMemo(
+    () => ({
       click: (e) => {
-        const {
-          props: { onClick },
-        } = this
         const {
           latlng: { lat, lng },
         } = e
@@ -37,181 +83,122 @@ class TheMap extends React.Component {
       },
       load: () => {},
       moveend: () => {
-        this.needsChange()
+        needsChange()
       },
       resize: () => {
-        this.needsChange()
+        needsChange()
       },
       unload: () => {},
       zoomend: () => {
-        this.needsChange()
+        needsChange()
       },
-    }
-  }
+    }),
+    [onClick, needsChange],
+  )
 
-  applyCall(prevProps, actions) {
-    const diff = changedProps(prevProps, this.props)
-    for (const [target, action] of Object.entries(actions)) {
-      const needsUpdate = target.split(',').some((k) => k in diff)
-      if (needsUpdate) {
-        action(this.props)
-      }
+  useEffect(() => {
+    if (!mapAccess) {
+      return
     }
-  }
-
-  applyLayerControl(layerControlEnabled) {
     if (!layerControlEnabled) {
-      this.mapAccess.removeLayerControl()
+      mapAccess.removeLayerControl()
       return
     }
+    mapAccess.addLayerControl(layerControlPosition)
+  }, [layerControlEnabled, mapAccess, layerControlPosition])
 
-    const {
-      props: { layerControlPosition },
-    } = this
-    this.mapAccess.addLayerControl(layerControlPosition)
-  }
+  useEffect(() => {
+    if (!mapAccess) {
+      return
+    }
+    mapAccess.applyLayers(layers)
+    needsChange()
+  }, [layers, mapAccess])
 
-  applyLayers(layers) {
-    this.mapAccess.applyLayers(layers)
-    this.needsChange()
-  }
+  useEffect(() => {
+    if (!mapAccess) {
+      return
+    }
+    const newMapMarkersNodes = { ...tmp.mapMarkersNodes }
+    mapAccess.applyMarkers(markers, newMapMarkersNodes, { freezed })
+    setMapMarkersNodes(newMapMarkersNodes)
+    needsChange()
+  }, [markers, mapAccess, freezed])
 
-  applyMarkers(markers) {
-    const mapMarkersNodes = { ...this.state.mapMarkersNodes }
-    this.mapAccess.applyMarkers(markers, mapMarkersNodes, {
-      freezed: this.props.freezed,
-    })
-    this.setState({ mapMarkersNodes })
-    this.needsChange()
-  }
-
-  applySight({ lat, lng, zoom } = {}) {
-    const updated = this.mapAccess.update({ lat, lng, zoom })
+  useEffect(() => {
+    if (!mapAccess) {
+      return
+    }
+    const updated = mapAccess.update({ lat, lng, zoom })
     if (updated) {
-      this.needsChange({ force: true })
+      needsChange({ force: true })
     }
-  }
+  }, [lat, lng, zoom, mapAccess])
 
-  applyZoomControl(zoomControlEnabled) {
-    if (!zoomControlEnabled) {
-      this.mapAccess.removeZoomControl()
+  useEffect(() => {
+    if (!mapAccess) {
       return
     }
+    if (!zoomControlEnabled) {
+      mapAccess.removeZoomControl()
+      return
+    }
+    mapAccess.addZoomControl(zoomControlPosition)
+  }, [zoomControlEnabled, zoomControlPosition, mapAccess])
 
-    const {
-      props: { zoomControlPosition },
-    } = this
-    this.mapAccess.addZoomControl(zoomControlPosition)
-  }
-
-  componentDidMount() {
-    const {
-      mapElmRef: { current: mapElm },
-    } = this
-    const map = L.map(mapElm.id, {
+  useEffect(() => {
+    const map = L.map(mapElmId, {
       fadeAnimation: false,
       zoomControl: false,
     })
-    this.mapAccess = MapAccess(map, {
-      TileLayerClass: this.props.TileLayerClass || TileLayer,
+    const newMapAccess = MapAccess(map, {
+      TileLayerClass: TileLayerClass || TileLayer,
     })
-    const {
-      props: {
-        lat,
-        layerControlEnabled,
-        layers,
-        lng,
-        markers,
-        onLeafletMap,
-        zoom,
-        zoomControlEnabled,
-      },
-    } = this
+    newMapAccess.update({ lat, lng, zoom })
+    setMapAccess(newMapAccess)
     onLeafletMap && onLeafletMap(map)
-    this.mapAccess.addHandlers(this.mapEventHandlers)
-    this.applySight({ lat, lng, zoom })
-    this.applyLayers(layers)
-    this.applyLayerControl(layerControlEnabled)
-    this.applyZoomControl(zoomControlEnabled)
-    this.applyMarkers(markers)
-    this.needsChange()
-  }
+    return () => {
+      newMapAccess.cleanup()
+    }
+  }, [TileLayerClass, mapElmId])
 
-  componentDidUpdate(prevProps) {
-    const diff = changedProps(prevProps, this.props)
-    this.applyCall(prevProps, {
-      'lat,lng,zoom': ({ lat, lng, zoom }) =>
-        this.applySight({ lat, lng, zoom }),
-      layerControlEnabled: ({ layerControlEnabled }) =>
-        this.applyLayerControl(layerControlEnabled),
-      layers: ({ layers }) => this.applyLayers(layers),
-      markers: ({ markers }) => this.applyMarkers(markers),
-      zoomControlEnabled: ({ zoomControlEnabled }) =>
-        this.applyZoomControl(zoomControlEnabled),
-    })
-  }
-
-  componentWillUnmount() {
-    const { mapAccess } = this
-    mapAccess.removeHandlers(this.mapEventHandlers)
-    mapAccess.cleanup()
-    this.mapAccess = null
-  }
-
-  needsChange(options = {}) {
-    const { force = false } = options
-    const {
-      props: { onChange },
-    } = this
-    const mapData = this.mapAccess.toData()
-    if (!mapData) {
+  useEffect(() => {
+    if (!mapAccess) {
       return
     }
-    const skip =
-      !force &&
-      ['lat', 'lng', 'zoom'].every((k) => this.props[k] === mapData[k])
-    if (skip) {
-      return
+    mapAccess.addHandlers(mapEventHandlers)
+    return () => {
+      mapAccess.removeHandlers(mapEventHandlers)
     }
+  }, [mapAccess, mapEventHandlers])
 
-    onChange && onChange(mapData)
-  }
-
-  render() {
-    const {
-      props,
-      props: { children, className, freezed, height, spinning, width },
-      state: { mapMarkersNodes },
-    } = this
-
-    const style = { ...props.style, height, width }
-    return (
+  const style = { ...props.style, height, width }
+  return (
+    <div
+      {...htmlAttributesFor(props, {
+        except: ['className', 'width', 'height'],
+      })}
+      {...eventHandlersFor(props, { except: ['onClick'] })}
+      className={c('the-map', className)}
+      style={style}
+    >
+      <TheSpin className='the-map-spin' cover enabled={spinning} />
       <div
-        {...htmlAttributesFor(props, {
-          except: ['className', 'width', 'height'],
+        className={c('the-map-map', {
+          'the-map-map-freezed': freezed,
         })}
-        {...eventHandlersFor(props, { except: ['onClick'] })}
-        className={c('the-map', className)}
+        id={mapElmId}
+        ref={mapElmRef}
         style={style}
       >
-        <TheSpin className='the-map-spin' cover enabled={spinning} />
-        <div
-          className={c('the-map-map', {
-            'the-map-map-freezed': freezed,
-          })}
-          id={this.mapElmId}
-          ref={this.mapElmRef}
-          style={style}
-        >
-          {children}
-        </div>
-        {Object.entries(mapMarkersNodes).map(([k, node]) => (
-          <React.Fragment key={k}>{node || null}</React.Fragment>
-        ))}
+        {children}
       </div>
-    )
-  }
-}
+      {Object.entries(mapMarkersNodes).map(([k, node]) => (
+        <React.Fragment key={k}>{node || null}</React.Fragment>
+      ))}
+    </div>
+  )
+})
 
 TheMap.propTypes = {
   /** Class for tile layer */
