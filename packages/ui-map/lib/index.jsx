@@ -4,7 +4,7 @@
  * @description Geo map for the-components
  * @module @the-/ui-map
  * @typicalname uiMap
- * @version 16.0.4
+ * @version 16.2.0
  */
 'use strict'
 

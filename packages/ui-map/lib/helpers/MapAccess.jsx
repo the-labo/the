@@ -133,6 +133,9 @@ function MapAccess(map, { TileLayerClass }) {
     hasLayer(key) {
       return !!state.layers[key]
     },
+    invalidate() {
+      map.invalidateSize()
+    },
     removeHandlers(handlers) {
       for (const [event, handler] of Object.entries(handlers)) {
         map.off(event, handler)
@@ -185,6 +188,16 @@ function MapAccess(map, { TileLayerClass }) {
         lat,
         lng,
         zoom,
+      }
+    },
+    toggleDragging(enabled) {
+      if (enabled === map.dragging.enabled()) {
+        return
+      }
+      if (enabled) {
+        map.dragging.enabled()
+      } else {
+        map.dragging.disable()
       }
     },
     update({ lat, lng, zoom }) {

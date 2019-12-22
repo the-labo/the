@@ -6,6 +6,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import L from '@okunishinishi/leaflet-shim'
 import { TheSpin } from '@the-/ui-spin'
 import { eventHandlersFor, htmlAttributesFor, newId } from '@the-/util-ui'
+import { get } from '@the-/window'
 import TileLayer from './classes/TileLayer'
 import MapAccess from './helpers/MapAccess'
 
@@ -17,6 +18,7 @@ const TheMap = React.memo((props) => {
     TileLayerClass,
     children,
     className,
+    draggingEnabled,
     freezed,
     height,
     lat,
@@ -129,6 +131,13 @@ const TheMap = React.memo((props) => {
     if (!mapAccess) {
       return
     }
+    mapAccess.toggleDragging(draggingEnabled)
+  }, [mapAccess, draggingEnabled])
+
+  useEffect(() => {
+    if (!mapAccess) {
+      return
+    }
     const updated = mapAccess.update({ lat, lng, zoom })
     if (updated) {
       needsChange({ force: true })
@@ -172,6 +181,25 @@ const TheMap = React.memo((props) => {
     }
   }, [mapAccess, mapEventHandlers])
 
+  useEffect(() => {
+    if (!mapAccess) {
+      return
+    }
+    const ResizeObserver = get('ResizeObserver')
+    if (!ResizeObserver) {
+      return
+    }
+    const { current: mapElm } = mapElmRef
+    const resizeObserver = new ResizeObserver(() => {
+      mapAccess.invalidate()
+    })
+    resizeObserver.observe(mapElm)
+    return () => {
+      resizeObserver.unobserve(mapElm)
+      resizeObserver.disconnect()
+    }
+  }, [mapAccess])
+
   const style = { ...props.style, height, width }
   return (
     <div
@@ -203,6 +231,8 @@ const TheMap = React.memo((props) => {
 TheMap.propTypes = {
   /** Class for tile layer */
   TileLayerClass: PropTypes.func,
+  /** Enable dragging */
+  draggingEnabled: PropTypes.bool,
   /** Disable all interactions */
   freezed: PropTypes.bool,
   /** Height of map */
@@ -221,6 +251,7 @@ TheMap.propTypes = {
 
 TheMap.defaultProps = {
   TileLayerClass: TileLayer,
+  draggingEnabled: true,
   freezed: false,
   height: null,
   layerControlEnabled: true,
