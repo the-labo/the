@@ -77,7 +77,7 @@ function MapAccess(map, { TileLayerClass }) {
       mapAccess.removeLayerControl()
     },
     applyMarkers(markers, mapMarkersNodes, { freezed }) {
-      for (const { key, ...options } of markers) {
+      for (const { key, ...options } of (markers || [])) {
         if (!key) {
           console.warn('[TheMap] key is missing for marker:', options)
           continue
@@ -120,14 +120,14 @@ function MapAccess(map, { TileLayerClass }) {
       }
     },
     applyPolylines(polylines) {
-      for (const { key, positions, ...options } of polylines) {
+      for (const { key, positions, ...options } of (polylines || [])) {
         if (!key) {
           console.warn('[TheMap] key is missing for polyline:', options)
           continue
         }
         const polyline = mapAccess.getPolyline(key)
         if (polyline) {
-          polylines.setLatLngs(positions)
+          polyline.setLatLngs(positions)
         } else {
           mapAccess.addPolyline(key, positions, options)
         }

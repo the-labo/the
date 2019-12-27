@@ -12,7 +12,7 @@
     "name": "@the-/ui-map",
     "order": 0,
     "typicalname": "uiMap",
-    "version": "16.2.0"
+    "version": "16.4.0"
   },
   {
     "augments": [
@@ -27,7 +27,7 @@
       "path": "lib/classes"
     },
     "name": "DivIcon",
-    "order": 10,
+    "order": 11,
     "scope": "global"
   },
   {
@@ -43,7 +43,7 @@
       "path": "lib/classes"
     },
     "name": "TileLayer",
-    "order": 11,
+    "order": 12,
     "scope": "global"
   },
   {
@@ -57,7 +57,7 @@
       "path": "lib/styles"
     },
     "name": "TheMapStyle",
-    "order": 12,
+    "order": 13,
     "params": [],
     "scope": "global"
   },
@@ -69,7 +69,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 233,
+      "lineno": 242,
       "path": "lib"
     },
     "name": "TileLayerClass",
@@ -84,7 +84,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 235,
+      "lineno": 244,
       "path": "lib"
     },
     "name": "draggingEnabled",
@@ -99,7 +99,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 237,
+      "lineno": 246,
       "path": "lib"
     },
     "name": "freezed",
@@ -114,7 +114,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 239,
+      "lineno": 248,
       "path": "lib"
     },
     "name": "height",
@@ -129,7 +129,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 241,
+      "lineno": 250,
       "path": "lib"
     },
     "name": "lat",
@@ -144,7 +144,7 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 243,
+      "lineno": 252,
       "path": "lib"
     },
     "name": "lng",
@@ -159,11 +159,26 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 245,
+      "lineno": 254,
       "path": "lib"
     },
     "name": "onLeafletMap",
     "order": 7,
+    "scope": "static"
+  },
+  {
+    "description": "Polylines",
+    "id": "TheMap.propTypes.polylines",
+    "kind": "member",
+    "longname": "TheMap.propTypes.polylines",
+    "memberof": "TheMap.propTypes",
+    "meta": {
+      "filename": "TheMap.jsx",
+      "lineno": 256,
+      "path": "lib"
+    },
+    "name": "polylines",
+    "order": 8,
     "scope": "static"
   },
   {
@@ -174,11 +189,11 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 247,
+      "lineno": 258,
       "path": "lib"
     },
     "name": "spinning",
-    "order": 8,
+    "order": 9,
     "scope": "static"
   },
   {
@@ -189,11 +204,11 @@
     "memberof": "TheMap.propTypes",
     "meta": {
       "filename": "TheMap.jsx",
-      "lineno": 249,
+      "lineno": 260,
       "path": "lib"
     },
     "name": "width",
-    "order": 9,
+    "order": 10,
     "scope": "static"
   },
   {
@@ -208,7 +223,7 @@
       "path": "lib/styles"
     },
     "name": "options",
-    "order": 13,
+    "order": 14,
     "scope": "static"
   }
 ]
