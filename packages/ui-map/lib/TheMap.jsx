@@ -30,6 +30,7 @@ const TheMap = React.memo((props) => {
     onChange,
     onClick,
     onLeafletMap,
+    polylines,
     spinning,
     width,
     zoom,
@@ -116,6 +117,14 @@ const TheMap = React.memo((props) => {
     mapAccess.applyLayers(layers)
     needsChange()
   }, [layers, mapAccess])
+
+  useEffect(() => {
+    if (!mapAccess) {
+      return
+    }
+    mapAccess.applyPolylines(polylines)
+    needsChange()
+  }, [polylines, mapAccess])
 
   useEffect(() => {
     if (!mapAccess) {
@@ -243,6 +252,8 @@ TheMap.propTypes = {
   lng: PropTypes.number.isRequired,
   /** Callback when map map created */
   onLeafletMap: PropTypes.func,
+  /** Polylines */
+  polylines: PropTypes.array,
   /** Shows spinner */
   spinning: PropTypes.bool,
   /** Width of map */
@@ -267,6 +278,7 @@ TheMap.defaultProps = {
   ],
   markers: [],
   onLeafletMap: null,
+  polylines: [],
   spinning: false,
   width: null,
   zoomControlEnabled: true,

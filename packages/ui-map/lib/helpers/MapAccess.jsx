@@ -2,6 +2,7 @@
 
 import L from '@okunishinishi/leaflet-shim'
 import createMarker from './createMarker'
+import createPolyline from './createPolyline'
 import markerNodeFor from './markerNodeFor'
 
 const nullOrUndefined = (v) => v === null || typeof v === 'undefined'
@@ -11,6 +12,7 @@ function MapAccess(map, { TileLayerClass }) {
     layerControl: null,
     layers: {},
     markers: {},
+    polylines: {},
     ready: false,
     zoomControl: null,
   }
@@ -45,9 +47,15 @@ function MapAccess(map, { TileLayerClass }) {
       }
     },
     addMarker(key, options) {
-      const marker = createMarker(map, options)
+      const marker = createMarker(options)
+      marker.addTo(map)
       state.markers[key] = marker
       return marker
+    },
+    addPolyline(key, positions, options) {
+      const polyline = createPolyline(positions, options)
+      polyline.addTo(map)
+      state.polylines[key] = polyline
     },
     addZoomControl(position) {
       const zoomControl = L.control.zoom({
@@ -111,6 +119,27 @@ function MapAccess(map, { TileLayerClass }) {
         delete mapMarkersNodes[key]
       }
     },
+    applyPolylines(polylines) {
+      for (const { key, positions, ...options } of polylines) {
+        if (!key) {
+          console.warn('[TheMap] key is missing for polyline:', options)
+          continue
+        }
+        const polyline = mapAccess.getPolyline(key)
+        if (polyline) {
+          polylines.setLatLngs(positions)
+        } else {
+          mapAccess.addPolyline(key, positions, options)
+        }
+      }
+      const keysToRemain = polylines.map(({ key }) => key)
+      const keysToRemove = mapAccess
+        .getPolylineKeys()
+        .filter((key) => !keysToRemain.includes(key))
+      for (const [key] of keysToRemove) {
+        mapAccess.removePolyline(key)
+      }
+    },
     cleanup() {
       state.layers = {}
       state.markers = {}
@@ -129,6 +158,12 @@ function MapAccess(map, { TileLayerClass }) {
     },
     getMarkerKeys() {
       return Object.keys(state.markers)
+    },
+    getPolyline(key) {
+      return state.polylines[key]
+    },
+    getPolylineKeys() {
+      return Object.keys(state.polylines)
     },
     hasLayer(key) {
       return !!state.layers[key]
@@ -165,6 +200,14 @@ function MapAccess(map, { TileLayerClass }) {
       }
       marker.remove()
       delete state.markers[key]
+    },
+    removePolyline(key) {
+      const polyline = state.polylines[key]
+      if (!polyline) {
+        return
+      }
+      polyline.remove()
+      delete state.polylines[key]
     },
     removeZoomControl() {
       const { zoomControl } = state

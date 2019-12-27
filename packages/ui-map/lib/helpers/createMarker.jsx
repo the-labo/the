@@ -8,7 +8,7 @@ import DivIcon from '../classes/DivIcon'
 
 const { tappableHeight: tappableSize } = ThemeValues
 
-export default function createMarker(map, options = {}) {
+export default function createMarker(options = {}) {
   const {
     className,
     draggable = false,
@@ -30,7 +30,6 @@ export default function createMarker(map, options = {}) {
     interactive,
     riseOnHover,
   })
-  marker.addTo(map)
   marker.node = markerNodeFor({ height, marker, node, onClick, width })
   return marker
 }

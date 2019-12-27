@@ -119,6 +119,21 @@ class ExampleComponent extends React.Component {
         onClick: () => console.log('marker01 clicked'),
       },
     ],
+    polylines: [
+      {
+        color: 'red',
+        key: 'polyline-01',
+        positions: new Array(100)
+          .fill({
+            lat: 35.6895,
+            lng: 139.6917,
+          })
+          .map(({ lat, lng }, i) => [
+            lat + i * Math.random(),
+            lng + i * Math.random(),
+          ]),
+      },
+    ],
     popups: [
       {
         for: 'marker-01',
@@ -135,7 +150,7 @@ class ExampleComponent extends React.Component {
 
   render() {
     const {
-      state: { lat, lng, markers, post01, zoom },
+      state: { lat, lng, markers, polylines, post01, zoom },
     } = this
     return (
       <div>
@@ -150,6 +165,7 @@ class ExampleComponent extends React.Component {
           onChange={this.handleChange}
           onClick={this.handleClick}
           onLeafletMap={this.handleLeafletMap}
+          polylines={polylines}
           width='480px'
           zoom={zoom}
         />
