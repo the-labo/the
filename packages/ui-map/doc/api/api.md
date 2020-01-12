@@ -30,7 +30,7 @@
 ## @the-/ui-map
 Geo map for the-components
 
-**Version**: 16.4.1  
+**Version**: 16.4.2  
 <a name="DivIcon"></a>
 
 ## DivIcon ⇐ <code>L.DivIcon</code>

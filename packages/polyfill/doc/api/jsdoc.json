@@ -13,7 +13,7 @@
     "name": "@the-/polyfill",
     "order": 3,
     "typicalname": "polyfill",
-    "version": "17.0.2"
+    "version": "17.1.1"
   },
   {
     "id": "module:@the-/polyfill.ThePolyfill",
@@ -22,7 +22,7 @@
     "memberof": "module:@the-/polyfill",
     "meta": {
       "filename": "ThePolyfill.js",
-      "lineno": 8,
+      "lineno": 7,
       "path": "lib"
     },
     "name": "ThePolyfill",

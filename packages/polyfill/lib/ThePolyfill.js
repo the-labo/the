@@ -1,6 +1,5 @@
 'use strict'
 
-const abind = require('abind')
 const helpers = require('./helpers')
 
 const { withDocument, withWindow } = helpers
@@ -11,7 +10,8 @@ const { withDocument, withWindow } = helpers
  */
 class ThePolyfill {
   constructor() {
-    abind(this)
+    this.apply = this.apply.bind(this)
+    this.bind = this.bind.bind(this)
   }
 
   apply() {
@@ -33,10 +33,16 @@ class ThePolyfill {
       if (!window.process) {
         window.process = require('process/browser')
       }
+
+      if (!window.ResizeObserver) {
+        window.ResizeObserver = require('resize-observer-polyfill')
+      }
+
       if (!this.done) {
         require('dom4/build/dom4')
       }
     })
+
     if (!this.done) {
       require('./core-js/core-js')
       require('regenerator-runtime/runtime')

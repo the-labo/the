@@ -1,7 +1,7 @@
 {
   "name": "@the-/polyfill",
   "description": "Polyfill of the-frameworks",
-  "version": "17.0.2",
+  "version": "17.1.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,9 +12,8 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "abind": "^1.0.5",
     "bwindow": "^2.0.3",
-    "core-js": "^3.4.5",
+    "core-js": "^3.6.3",
     "cross-fetch": "^3.0.4",
     "dom4": "^2.1.5",
     "fastclick": "^1.0.6",
@@ -22,10 +21,11 @@
     "process": "^0.11.10",
     "proxy-polyfill": "^0.3.0",
     "raf": "^3.4.1",
-    "regenerator-runtime": "^0.13.3"
+    "regenerator-runtime": "^0.13.3",
+    "resize-observer-polyfill": "^1.5.1"
   },
   "devDependencies": {
-    "core-js-compat": "^3.4.5"
+    "core-js-compat": "^3.6.3"
   },
   "engines": {
     "node": ">=10",
