@@ -277,3 +277,4 @@ var/
 /packages/*/misc/mocks
 /packages/*/assets
 /packages/ui-theme-style/lib/TheThemeStyle.jsx
+/packages/ui-*/styles/index.*
