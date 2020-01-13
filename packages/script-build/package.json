@@ -1,7 +1,7 @@
 {
   "name": "@the-/script-build",
   "description": "Build script for the-projects",
-  "version": "15.4.53",
+  "version": "15.4.54",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -23,7 +23,7 @@
     "@babel/preset-env": "^7.8.2",
     "@babel/preset-react": "^7.8.0",
     "@babel/runtime": "^7.8.0",
-    "@the-/code": "^15.15.2",
+    "@the-/code": "^15.15.6",
     "@the-/tmp": "^15.4.5",
     "ababel": "^6.1.2",
     "aglob": "^3.0.2",

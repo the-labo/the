@@ -6,13 +6,13 @@
     "longname": "module:@the-/demo-ui",
     "meta": {
       "filename": "index.jsx",
-      "lineno": 2,
+      "lineno": 3,
       "path": "lib"
     },
     "name": "@the-/demo-ui",
     "order": 0,
     "typicalname": "demoUi",
-    "version": "15.4.3"
+    "version": "15.4.13"
   },
   {
     "description": "Demo of the-components",
