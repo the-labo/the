@@ -11,10 +11,10 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/const-ui": "^15.5.0",
-    "@the-/ui-style": "^16.0.0",
-    "@the-/util-ui": "^16.3.2",
-    "@the-/window": "^15.8.2",
+    "@the-/const-ui": "^15.5.2",
+    "@the-/ui-style": "^16.0.2",
+    "@the-/util-ui": "^16.3.3",
+    "@the-/window": "^15.8.3",
     "asobj": "^3.0.1",
     "classnames": "^2.2.6",
     "flatpickr": "^4.6.3",
