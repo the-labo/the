@@ -125,6 +125,7 @@ function MapAccess(map, { TileLayerClass }) {
           console.warn('[TheMap] key is missing for polyline:', options)
           continue
         }
+
         const polyline = mapAccess.getPolyline(key)
         if (polyline) {
           polyline.setLatLngs(positions)
@@ -181,6 +182,7 @@ function MapAccess(map, { TileLayerClass }) {
       if (!layerControl) {
         return
       }
+
       layerControl.remove()
       state.layerControl = null
     },
@@ -198,6 +200,7 @@ function MapAccess(map, { TileLayerClass }) {
       if (!marker) {
         return
       }
+
       marker.remove()
       delete state.markers[key]
     },
@@ -206,6 +209,7 @@ function MapAccess(map, { TileLayerClass }) {
       if (!polyline) {
         return
       }
+
       polyline.remove()
       delete state.polylines[key]
     },
@@ -214,6 +218,7 @@ function MapAccess(map, { TileLayerClass }) {
       if (!zoomControl) {
         return
       }
+
       zoomControl.remove()
       state.zoomControl = null
     },
@@ -237,6 +242,7 @@ function MapAccess(map, { TileLayerClass }) {
       if (enabled === map.dragging.enabled()) {
         return
       }
+
       if (enabled) {
         map.dragging.enabled()
       } else {

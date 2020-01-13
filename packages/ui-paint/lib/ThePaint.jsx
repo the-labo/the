@@ -163,6 +163,7 @@ const ThePaint = (props) => {
       if (active) {
         return
       }
+
       drawer.setConfig(drawConfig)
       const snapshot = drawer.snapshot()
       const pos = positionForEvent(e)

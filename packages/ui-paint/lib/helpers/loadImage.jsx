@@ -10,6 +10,7 @@ async function loadImage(src) {
       image.src = src
     })
   }
+
   return src
 }
 

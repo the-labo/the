@@ -6,6 +6,7 @@ export function bindHammerListeners(hammer, listeners) {
   if (!hammer) {
     return
   }
+
   for (const [event, listener] of Object.entries(listeners)) {
     hammer.on(event, listener)
   }

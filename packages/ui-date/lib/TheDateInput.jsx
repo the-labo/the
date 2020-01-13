@@ -73,11 +73,13 @@ const TheDateInput = React.memo((props) => {
     if (!picker) {
       return
     }
+
     if (value) {
       picker.jumpToDate(value)
     } else {
       picker.clear()
     }
+
     picker.redraw()
   }, [value])
 
@@ -128,9 +130,9 @@ const TheDateInput = React.memo((props) => {
     >
       {renderErrorMessage(error)}
       <input
-        autoCapitalize={'off'}
-        autoComplete={'off'}
-        autoCorrect={'off'}
+        autoCapitalize='off'
+        autoComplete='off'
+        autoCorrect='off'
         autoFocus={autoFocus}
         className='the-date-date-input'
         id={id}

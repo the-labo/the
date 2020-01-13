@@ -60,11 +60,13 @@ const TheMap = React.memo((props) => {
       if (!mapAccess) {
         return
       }
+
       const { force = false } = options
       const mapData = mapAccess.toData()
       if (!mapData) {
         return
       }
+
       const skip =
         !force && Object.entries(tmp.pos).every(([k, v]) => v === mapData[k])
       if (skip) {
@@ -103,10 +105,12 @@ const TheMap = React.memo((props) => {
     if (!mapAccess) {
       return
     }
+
     if (!layerControlEnabled) {
       mapAccess.removeLayerControl()
       return
     }
+
     mapAccess.addLayerControl(layerControlPosition)
   }, [layerControlEnabled, mapAccess, layerControlPosition])
 
@@ -114,6 +118,7 @@ const TheMap = React.memo((props) => {
     if (!mapAccess) {
       return
     }
+
     mapAccess.applyLayers(layers)
     needsChange()
   }, [layers, mapAccess])
@@ -122,6 +127,7 @@ const TheMap = React.memo((props) => {
     if (!mapAccess) {
       return
     }
+
     mapAccess.applyPolylines(polylines)
     needsChange()
   }, [polylines, mapAccess])
@@ -130,6 +136,7 @@ const TheMap = React.memo((props) => {
     if (!mapAccess) {
       return
     }
+
     const newMapMarkersNodes = { ...tmp.mapMarkersNodes }
     mapAccess.applyMarkers(markers, newMapMarkersNodes, { freezed })
     setMapMarkersNodes(newMapMarkersNodes)
@@ -140,6 +147,7 @@ const TheMap = React.memo((props) => {
     if (!mapAccess) {
       return
     }
+
     mapAccess.toggleDragging(draggingEnabled)
   }, [mapAccess, draggingEnabled])
 
@@ -147,6 +155,7 @@ const TheMap = React.memo((props) => {
     if (!mapAccess) {
       return
     }
+
     const updated = mapAccess.update({ lat, lng, zoom })
     if (updated) {
       needsChange({ force: true })
@@ -157,10 +166,12 @@ const TheMap = React.memo((props) => {
     if (!mapAccess) {
       return
     }
+
     if (!zoomControlEnabled) {
       mapAccess.removeZoomControl()
       return
     }
+
     mapAccess.addZoomControl(zoomControlPosition)
   }, [zoomControlEnabled, zoomControlPosition, mapAccess])
 
@@ -184,6 +195,7 @@ const TheMap = React.memo((props) => {
     if (!mapAccess) {
       return
     }
+
     mapAccess.addHandlers(mapEventHandlers)
     return () => {
       mapAccess.removeHandlers(mapEventHandlers)
@@ -194,10 +206,12 @@ const TheMap = React.memo((props) => {
     if (!mapAccess) {
       return
     }
+
     const ResizeObserver = get('ResizeObserver')
     if (!ResizeObserver) {
       return
     }
+
     const { current: mapElm } = mapElmRef
     const resizeObserver = new ResizeObserver(() => {
       mapAccess.invalidate()

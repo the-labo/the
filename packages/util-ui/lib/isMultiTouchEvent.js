@@ -11,10 +11,12 @@ function isMultiTouchEvent(e) {
   if (!e) {
     return false
   }
+
   const { touches } = e
   if (!touches) {
     return false
   }
+
   return touches.length > 1
 }
 

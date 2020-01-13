@@ -54,6 +54,7 @@ function asStyleData(scopeSelector, data) {
     data = arguments[0]
     scopeSelector = null
   }
+
   return Object.keys(data).reduce(
     (scoped, selector) =>
       Object.assign(
@@ -62,6 +63,7 @@ function asStyleData(scopeSelector, data) {
           if (aSelector.startsWith('@')) {
             return { [selector]: data[selector] }
           }
+
           const created = selectorData(
             combineSelectors(scopeSelector, aSelector),
             data[selector],

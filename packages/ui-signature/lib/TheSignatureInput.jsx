@@ -26,7 +26,7 @@ const TheSignatureInput = (props) => {
       className={c(className, { 'the-signature-error': !!error })}
       onEnd={handleEnd}
     >
-      {error && <span className={'the-signature-error-message'}>{error}</span>}
+      {error && <span className='the-signature-error-message'>{error}</span>}
       <input name={name} onChange={noop} type='hidden' value={value || ''} />
     </TheSignature>
   )

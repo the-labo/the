@@ -85,10 +85,12 @@ const TheTouchable = (props) => {
     if (!hammer) {
       return
     }
+
     setHammerPanEnabled(hammer, panEnabled)
     if (!panEnabled) {
       return
     }
+
     const listeners = ListenerPipe(parsePanEvent).pipeAll({
       pancancel: onPanCancel,
       panend: onPanEnd,
@@ -105,10 +107,12 @@ const TheTouchable = (props) => {
     if (!hammer) {
       return
     }
+
     setHammerPinchEnabled(hammer, pinchEnabled)
     if (!pinchEnabled) {
       return
     }
+
     const listeners = ListenerPipe(parsePinchEvent).pipeAll({
       pinchcancel: onPinchCancel,
       pinchend: onPinchEnd,
@@ -136,6 +140,7 @@ const TheTouchable = (props) => {
       if (!e.ctrlKey) {
         return
       }
+
       e.preventDefault()
 
       clearTimeout(wheelScaleState.doneTimer)
@@ -148,6 +153,7 @@ const TheTouchable = (props) => {
         onPinchStart && onPinchStart(event)
         return
       }
+
       wheelScaleState.scale -= e.deltaY * 0.01
       onPinch && onPinch(event)
       const done = () => {
@@ -167,6 +173,7 @@ const TheTouchable = (props) => {
     if (!pinchEnabled) {
       return
     }
+
     const { current: elm } = ref
     elm.addEventListener('wheel', handleWheel, { passive: false })
     return () => {
@@ -179,6 +186,7 @@ const TheTouchable = (props) => {
     if (!useGesture) {
       return
     }
+
     const { current: elm } = ref
     const listeners = {
       gesturechange: (e) => {
@@ -205,9 +213,11 @@ const TheTouchable = (props) => {
     if (!hammer) {
       return
     }
+
     if (!tapEnabled) {
       return
     }
+
     const listeners = ListenerPipe(parseTapEvent).pipeAll({
       doubletap: onDoubleTap,
       tap: onTap,
@@ -223,10 +233,12 @@ const TheTouchable = (props) => {
     if (!hammer) {
       return
     }
+
     setHammerRotateEnabled(hammer, rotateEnabled)
     if (!rotateEnabled) {
       return
     }
+
     const listeners = ListenerPipe(parseRotateEvent).pipeAll({
       rotatecancel: onRotateCancel,
       rotateend: onRotateEnd,
@@ -243,11 +255,11 @@ const TheTouchable = (props) => {
 
   const child = React.Children.only(children)
   return (
-    <React.Fragment>
+    <>
       {React.cloneElement(child, {
         ref,
       })}
-    </React.Fragment>
+    </>
   )
 }
 

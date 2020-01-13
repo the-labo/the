@@ -95,7 +95,7 @@ const ExampleComponent = () => {
           onDrawEnd={onDrawEnd}
           onDrawer={onDrawer}
           onDrawStart={onDrawStart}
-          resizePolicy={'fit'}
+          resizePolicy='fit'
           style={{ background: 'white' }}
           width='100%'
         />
@@ -123,7 +123,7 @@ const ExampleComponent = () => {
         <h3>Circle write</h3>
         <ThePaint
           erasing={erasing}
-          lineColor={'#38E'}
+          lineColor='#38E'
           lineWidth={bold ? 12 : 4}
           method='circle'
           onDrawEnd={onDrawEnd}

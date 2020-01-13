@@ -26,7 +26,7 @@ class ExampleComponent extends React.Component {
         <br />
         <br />
         <TheSignatureInput
-          error={'Something is wrong'}
+          error='Something is wrong'
           name='s1'
           onUpdate={(v) => this.setState(v)}
           value={this.state.s1}

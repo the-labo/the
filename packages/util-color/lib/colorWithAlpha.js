@@ -14,6 +14,7 @@ function colorWithAlpha(color, alpha) {
   if (!color) {
     return null
   }
+
   try {
     return withAlpha(color, alpha)
   } catch (e) {

@@ -37,6 +37,7 @@ function DrawerLayer(canvas, options = {}) {
       if (clear) {
         canvasAccess.clear()
       }
+
       layer.applyObjects(state.objects)
     },
     applyConfig(config) {
@@ -48,6 +49,7 @@ function DrawerLayer(canvas, options = {}) {
       if (points.length === 0) {
         return
       }
+
       canvasAccess.apply(() => {
         layer.applyConfig({ ...state.config, ...config })
         canvasAccess.setErasing(erasing)

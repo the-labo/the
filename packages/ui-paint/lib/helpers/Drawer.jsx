@@ -67,6 +67,7 @@ function Drawer(canvas, tmpCanvas, options = {}) {
       if (!background) {
         return
       }
+
       const {
         height = background.height || canvasAccess.height,
         width = background.width || canvasAccess.width,
@@ -92,6 +93,7 @@ function Drawer(canvas, tmpCanvas, options = {}) {
       if (!object) {
         return
       }
+
       layerHistory.objects = [object]
       commitLayer.restoreAll([...layerHistories, layerHistory])
       commitLayer.applyConfig(config)
