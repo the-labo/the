@@ -1,13 +1,14 @@
 'use strict'
 
 import React from 'react'
-import { TheButtonStyle } from '@the-/ui-button'
-import { TheChat, TheChatStyle } from '@the-/ui-chat'
-import { TheFormStyle } from '@the-/ui-form'
-import { TheImageStyle } from '@the-/ui-image'
-import { TheInputStyle } from '@the-/ui-input'
-import { TheSpinStyle } from '@the-/ui-spin'
-import { TheVideoStyle } from '@the-/ui-video'
+import { TheButtonStyle } from '@the-/ui-button/styles'
+import { TheChat } from '@the-/ui-chat'
+import { TheChatStyle } from '@the-/ui-chat/styles'
+import { TheFormStyle } from '@the-/ui-form/styles'
+import { TheImageStyle } from '@the-/ui-image/styles'
+import { TheInputStyle } from '@the-/ui-input/styles'
+import { TheSpinStyle } from '@the-/ui-spin/styles'
+import { TheVideoStyle } from '@the-/ui-video/styles'
 
 const images = [
   'https://raw.githubusercontent.com/apeman-asset-labo/apeman-asset-images/master/dist/dummy/01.jpg',
