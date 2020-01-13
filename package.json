@@ -24,7 +24,7 @@
     "@babel/preset-env": "^7.8.2",
     "@babel/preset-react": "^7.8.0",
     "@babel/runtime": "^7.8.0",
-    "@the-/code": "^15.15.2",
+    "@the-/code": "^15.15.6",
     "@the-/eslint-config-code": "^15.5.0",
     "@the-/eslint-config-jsdoc": "^15.4.15",
     "@the-/eslint-config-prettier": "^15.5.2",

@@ -11,8 +11,8 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/ui-style": "^16.0.0",
-    "@the-/util-ui": "^16.3.2",
+    "@the-/ui-style": "^16.0.2",
+    "@the-/util-ui": "^16.3.3",
     "asobj": "^3.0.1",
     "bwindow": "^2.0.3",
     "classnames": "^2.2.6",
@@ -23,7 +23,7 @@
     "@the-/ui-demo": "^15.5.4",
     "@the-/ui-link": "^16.0.3",
     "@the-/ui-router": "^15.4.11",
-    "@the-/ui-spin": "^16.0.0",
+    "@the-/ui-spin": "^16.0.1",
     "coz": "^7.0.19",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",

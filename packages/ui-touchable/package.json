@@ -11,13 +11,13 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check-env": "^15.5.8",
-    "@the-/window": "^15.8.2",
+    "@the-/check-env": "^15.6.0",
+    "@the-/window": "^15.8.3",
     "hammerjs": "^2.0.8",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui-demo": "^15.4.12",
+    "@the-/ui-demo": "^15.5.4",
     "coz": "^7.0.19",
     "objnest": "^5.0.10",
     "react": "^16.12.0",

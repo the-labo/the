@@ -516,6 +516,7 @@ console.log(a, b, x, y)
     equal(
       await processJSUnused(`
 class X {
+  #stateful = context.stateful()
   render () {
     return this.#stateful(({a, b}) => {
       return (
@@ -529,6 +530,7 @@ class X {
 `),
       `
 class X {
+  #stateful = context.stateful()
   render () {
     return this.#stateful(({a,}) => {
       return (

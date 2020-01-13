@@ -12,8 +12,8 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/window": "^15.6.1",
-    "qs": "^6.9.0"
+    "@the-/window": "^15.8.3",
+    "qs": "^6.9.1"
   },
   "devDependencies": {},
   "engines": {

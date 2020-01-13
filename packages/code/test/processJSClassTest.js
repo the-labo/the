@@ -220,14 +220,14 @@ class X {
   static k = () => null
   static n () {}
   static #a () {}
-  static #b = () => null
+  static #bb = () => null
   c = () => null
   #b = () => null
 }
 `),
       `
 class X {
-  static #b = () => null
+  static #bb = () => null
   static #a () {}
   static k = () => null
   static n () {}
