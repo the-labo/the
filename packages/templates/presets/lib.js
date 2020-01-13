@@ -74,5 +74,5 @@ exports.Test = (dirname) =>
   test({
     cjs: true,
     dest: dirname,
-    src: [`${dirname}/../lib/**/*.js`],
+    src: [`${dirname}/../lib/*.js`],
   })

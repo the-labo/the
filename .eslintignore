@@ -17,7 +17,6 @@ var/
 /packages/ast/lib/constants/NodeTypes.js
 /packages/ast/lib/constants/index.js
 /packages/ast/lib/index.js
-/packages/axe/lib/index.js
 /packages/bin/lib/index.js
 /packages/cache/lib/index.js
 /packages/check-env/lib/index.js
@@ -83,11 +82,10 @@ var/
 /packages/mail/lib/index.js
 /packages/mail/lib/sending/index.js
 /packages/media/lib/index.js
-/packages/metrics-presets/lib/index.js
-/packages/metrics/lib/counters/index.js
-/packages/metrics/lib/index.js
+/packages/notify/lib/index.js
 /packages/pack/lib/index.js
 /packages/password/lib/index.js
+/packages/polyfill/lib/core-js/core-js.js
 /packages/polyfill/lib/index.js
 /packages/ps/lib/index.js
 /packages/queue/lib/index.js
@@ -172,8 +170,8 @@ var/
 /packages/ui-container/lib/index.jsx
 /packages/ui-copyboard/doc/demo/bundle.js
 /packages/ui-copyboard/lib/index.jsx
-/packages/ui-cycle/doc/demo/bundle.js
-/packages/ui-cycle/lib/index.jsx
+/packages/ui-date/doc/demo/bundle.js
+/packages/ui-date/lib/index.jsx
 /packages/ui-demo/lib/index.jsx
 /packages/ui-dialog/doc/demo/bundle.js
 /packages/ui-dialog/lib/index.jsx
@@ -183,8 +181,6 @@ var/
 /packages/ui-footer/lib/index.jsx
 /packages/ui-form/doc/demo/bundle.js
 /packages/ui-form/lib/index.jsx
-/packages/ui-frame/doc/demo/bundle.js
-/packages/ui-frame/lib/index.jsx
 /packages/ui-hamburger/doc/demo/bundle.js
 /packages/ui-hamburger/lib/index.jsx
 /packages/ui-head/doc/demo/bundle.js
@@ -205,8 +201,6 @@ var/
 /packages/ui-keyboard/lib/index.jsx
 /packages/ui-link/doc/demo/bundle.js
 /packages/ui-link/lib/index.jsx
-/packages/ui-list/doc/demo/bundle.js
-/packages/ui-list/lib/index.jsx
 /packages/ui-main/doc/demo/bundle.js
 /packages/ui-main/lib/index.jsx
 /packages/ui-map/doc/demo/bundle.js
@@ -221,8 +215,6 @@ var/
 /packages/ui-paint/lib/index.jsx
 /packages/ui-qr/doc/demo/bundle.js
 /packages/ui-qr/lib/index.jsx
-/packages/ui-repeatable/doc/demo/bundle.js
-/packages/ui-repeatable/lib/index.jsx
 /packages/ui-root/doc/demo/bundle.js
 /packages/ui-root/lib/index.jsx
 /packages/ui-route/doc/demo/bundle.js
@@ -249,12 +241,14 @@ var/
 /packages/ui-theme-style/lib/index.jsx
 /packages/ui-toast/doc/demo/bundle.js
 /packages/ui-toast/lib/index.jsx
+/packages/ui-touchable/doc/demo/bundle.js
+/packages/ui-touchable/lib/index.jsx
 /packages/ui-video/doc/demo/bundle.js
 /packages/ui-video/lib/index.jsx
 /packages/ui-view/doc/demo/bundle.js
 /packages/ui-view/lib/index.jsx
-/packages/ui/doc/demo/bundle.js
-/packages/ui/lib/index.jsx
+/packages/ui/browser.js
+/packages/ui/cjs.js
 /packages/url/lib/index.js
 /packages/util-array/lib/index.js
 /packages/util-bin/lib/index.js

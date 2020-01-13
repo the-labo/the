@@ -57,7 +57,7 @@ function test(config) {
         force: false,
         mkdirp: true,
         mode: '644',
-        path: path.resolve(dest,  basename + suffix + extname),
+        path: path.resolve(dest, basename + suffix + extname),
         tmpl: TMPL_PATH,
       }
     })

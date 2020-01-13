@@ -13,7 +13,7 @@ module.exports = {
       .map(f => path.basename(f, path.extname(f))),
   },
   tmpl:`/** @module ${pkg.name}/styles */
-  
+/* eslint-disable */
 'use strict'
 const _d = o => o.__esModule ? o.default : o
 {{#each names}}
