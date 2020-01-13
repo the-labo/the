@@ -12,10 +12,10 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check": "^15.6.2",
+    "@the-/check": "^15.6.3",
     "@the-/ui-router": "^16.0.1",
     "@the-/url": "^15.4.12",
-    "@the-/window": "^15.8.2"
+    "@the-/window": "^15.8.3"
   },
   "devDependencies": {
     "history": "^4.10.1",

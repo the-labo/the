@@ -11,16 +11,16 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/const-ui": "^15.5.0",
+    "@the-/const-ui": "^15.5.2",
     "@the-/ui-button": "^16.0.0",
     "@the-/ui-container": "^16.0.0",
     "@the-/ui-style": "^16.0.2",
-    "@the-/util-ui": "^16.3.2",
+    "@the-/util-ui": "^16.3.3",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui-demo": "^16.0.2",
+    "@the-/ui-demo": "^16.0.3",
     "coz": "^7.0.19",
     "objnest": "^5.0.10",
     "react": "^16.12.0",

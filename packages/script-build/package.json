@@ -23,7 +23,7 @@
     "@babel/preset-env": "^7.8.2",
     "@babel/preset-react": "^7.8.0",
     "@babel/runtime": "^7.8.0",
-    "@the-/code": "^15.15.0",
+    "@the-/code": "^15.15.2",
     "@the-/tmp": "^15.4.5",
     "ababel": "^6.1.2",
     "aglob": "^3.0.2",
@@ -40,7 +40,7 @@
     "webpack": "^4.41.5"
   },
   "devDependencies": {
-    "@the-/ast": "^16.0.2",
+    "@the-/ast": "^16.0.3",
     "injectmock": "^2.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"

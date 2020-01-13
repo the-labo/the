@@ -21,7 +21,7 @@
     "bwindow": "^2.0.3",
     "json-pointer": "^0.6.0",
     "objnest": "^5.0.10",
-    "redux": "^4.0.4"
+    "redux": "^4.0.5"
   },
   "devDependencies": {},
   "engines": {

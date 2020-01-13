@@ -12,8 +12,8 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check-env": "^15.5.8",
-    "@the-/resource": "^15.4.12",
+    "@the-/check-env": "^15.6.0",
+    "@the-/resource": "^15.4.13",
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.3",
     "clay-collection": "^3.1.5",
@@ -21,13 +21,13 @@
     "clay-driver-base": "^4.1.7",
     "clay-list-pager": "^3.0.1",
     "clay-resource-name": "^4.0.5",
-    "sequelize": "^5.21.2",
+    "sequelize": "^5.21.3",
     "utf8": "^3.0.0"
   },
   "devDependencies": {
-    "clay-lump": "^4.4.25",
-    "mysql2": "^2.0.1",
-    "sqlite3": "^4.1.0"
+    "clay-lump": "^4.4.28",
+    "mysql2": "^2.1.0",
+    "sqlite3": "^4.1.1"
   },
   "engines": {
     "node": ">=10",

@@ -9,7 +9,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/util-path": "^1.0.2"
+    "stringcase": "^4.3.1"
   },
   "description": "Utility for the-db",
   "devDependencies": {},
@@ -36,5 +36,5 @@
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
   },
-  "version": "15.4.12"
+  "version": "15.4.13"
 }

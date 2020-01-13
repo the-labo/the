@@ -14,7 +14,7 @@
   "dependencies": {
     "@the-/assert": "^15.4.1",
     "@the-/cache": "^15.5.3",
-    "@the-/check": "^15.5.8",
+    "@the-/check": "^15.6.3",
     "@the-/pack": "^15.5.1",
     "@the-/stream": "^15.4.12",
     "@the-/tmp": "^15.4.5",
@@ -26,7 +26,7 @@
     "debug": "^4.1.1",
     "is-class": "0.0.9",
     "locale": "^0.1.0",
-    "qs": "^6.9.0",
+    "qs": "^6.9.1",
     "redis": "^2.8.0",
     "rfunc": "^4.1.1",
     "rimraf": "^3.0.0",
@@ -36,11 +36,11 @@
     "stringcase": "^4.3.1"
   },
   "devDependencies": {
-    "@the-/client": "^15.8.1",
+    "@the-/client": "^15.8.4",
     "arequest": "^3.0.2",
     "msgpack-lite": "^0.1.26",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "engines": {
     "node": ">=10",

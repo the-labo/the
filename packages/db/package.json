@@ -19,7 +19,7 @@
     "@the-/hash": "^15.4.10",
     "@the-/refresher": "^15.4.0",
     "@the-/resource": "^15.4.13",
-    "@the-/util-db": "^15.4.0",
+    "@the-/util-db": "^15.4.13",
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.3",
     "asleep": "^1.0.3",
@@ -38,7 +38,7 @@
     "is-class": "0.0.9",
     "mkdirp": "^0.5.1",
     "msgpack5": "^4.2.1",
-    "mysql2": "^2.0.2",
+    "mysql2": "^2.1.0",
     "uuid": "^3.3.3"
   },
   "devDependencies": {

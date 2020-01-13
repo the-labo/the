@@ -16,7 +16,7 @@
     "bwindow": "^2.0.3"
   },
   "devDependencies": {
-    "redux": "^4.0.4"
+    "redux": "^4.0.5"
   },
   "engines": {
     "node": ">=10",

@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "abind": "^1.0.5",
-    "qs": "^6.9.0"
+    "qs": "^6.9.1"
   },
   "description": "Encrypt json object with master password",
   "devDependencies": {},

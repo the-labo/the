@@ -33,13 +33,13 @@ node_modules
 
 .idea
 tmp
+doc
+example
+misc/mocks
 
 
 .*.bud
 
-doc
-example
 test
 var
 /*.html
-misc/mocks

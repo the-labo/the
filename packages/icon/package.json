@@ -14,7 +14,7 @@
   "dependencies": {
     "@the-/util-color": "^15.4.12",
     "amkdirp": "^2.0.0",
-    "canvas": "^2.6.0"
+    "canvas": "^2.6.1"
   },
   "devDependencies": {
     "stringcase": "^4.3.1"

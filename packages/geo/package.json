@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/window": "^15.8.2",
+    "@the-/window": "^15.8.3",
     "bstorage": "^2.0.4"
   },
   "devDependencies": {},

@@ -1,7 +1,7 @@
 {
   "name": "@the-/bin",
   "description": "Bin manager for the-frameworks",
-  "version": "15.4.13",
+  "version": "15.4.14",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,10 +12,10 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/check-env": "^15.5.8",
-    "chalk": "^2.4.2",
+    "@the-/check-env": "^15.6.0",
+    "chalk": "^3.0.0",
     "hasbin": "^1.2.3",
-    "semver": "^6.3.0"
+    "semver": "^7.1.1"
   },
   "devDependencies": {},
   "engines": {

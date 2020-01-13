@@ -15,7 +15,7 @@
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.3",
     "filecopy": "^4.0.2",
-    "sharp": "^0.23.3"
+    "sharp": "^0.23.4"
   },
   "description": "Resize image files",
   "devDependencies": {},
