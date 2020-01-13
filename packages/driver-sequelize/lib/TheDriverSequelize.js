@@ -285,6 +285,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     if (!model) {
       throw new Error(`[TheDriverSequelize] Data not found for id: ${id}`)
     }
+
     const version = model.getDataValue(MetaColumnNames.$$num)
     await model.update(
       this.inbound(resourceName, {

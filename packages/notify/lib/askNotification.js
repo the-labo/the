@@ -19,6 +19,7 @@ async function askNotification() {
     console.warn('[@the-/notify] Notification not supported')
     return false
   }
+
   switch (Notification.permission) {
     case Permissions.DENIED:
       return false
@@ -29,6 +30,7 @@ async function askNotification() {
       if (!Notification.permission) {
         Notification.permission = permission
       }
+
       return permission === Permissions.GRANTED
     }
   }

@@ -4,6 +4,7 @@ const wrtc = require('wrtc')
 const { get } = require('@the-/window')
 const PeerEvents = require('../constants/PeerEvents')
 const debug = require('debug')('the:rtc:client')
+
 const RTCPeerConnection = get('RTCPeerConnection') || wrtc.RTCPeerConnection
 
 exports.createPeer = function createPeer({

@@ -94,6 +94,7 @@ class TheRTC extends TheRTCBase {
       this.ioConnector.close()
       this.ioConnector = null
     }
+
     await new Promise((resolve, reject) =>
       this.server.close((err) => (err ? reject(err) : resolve())),
     )

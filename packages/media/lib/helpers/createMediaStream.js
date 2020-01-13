@@ -2,6 +2,7 @@
 
 const { TheLock } = require('@the-/lock')
 const { get } = require('@the-/window')
+
 const mediaLock = new TheLock()
 
 module.exports = async function createMediaStream(constrains = {}) {

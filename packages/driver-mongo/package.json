@@ -1,7 +1,4 @@
 {
-  "name": "@the-/driver-mongo",
-  "description": "Mongo driver for the-db",
-  "version": "15.4.11",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -28,6 +25,7 @@
     "mongo-uri-builder": "^2.0.0",
     "mongodb": "^3.3.4"
   },
+  "description": "Mongo driver for the-db",
   "devDependencies": {
     "clay-driver-tests": "^3.0.1",
     "clay-resource": "^5.6.4"
@@ -43,6 +41,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "name": "@the-/driver-mongo",
   "publishConfig": {
     "access": "public"
   },
@@ -53,5 +52,6 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  }
+  },
+  "version": "15.4.12"
 }

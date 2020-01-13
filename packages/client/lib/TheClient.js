@@ -58,6 +58,7 @@ class TheClient extends RFuncClient {
       config = arguments[0]
       url = null
     }
+
     if (!url) {
       url = parseClientUrl(config)
     }

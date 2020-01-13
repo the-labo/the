@@ -108,9 +108,9 @@ const _removeDevDeps = async (baseDir, names) => {
 }
 
 ;(async () => {
-  for (const [fromPkgName, { kind, name }] of Object.entries(transporting).sort(
-    (a, b) => a[1].name.localeCompare(b[1].name),
-  )) {
+  for (const [fromPkgName, { kind, name }] of Object.entries(
+    transporting,
+  ).sort((a, b) => a[1].name.localeCompare(b[1].name))) {
     console.log(`== ${fromPkgName} => ${name} ===`)
     const fromDir = path.resolve(baseDir, '..', fromPkgName)
     const toDir = path.resolve(baseDir, 'packages', name)

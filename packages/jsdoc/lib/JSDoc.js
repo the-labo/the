@@ -41,9 +41,11 @@ class JSDoc {
 
     // Render json file
     if (jsonFile) {
-      const data = (await jsdocToMarkdown.getTemplateData({
-        files: filenames,
-      })).map((data) => {
+      const data = (
+        await jsdocToMarkdown.getTemplateData({
+          files: filenames,
+        })
+      ).map((data) => {
         if (data.meta && data.meta.path) {
           data.meta.path = path.join('.', path.relative(cwd, data.meta.path))
         }

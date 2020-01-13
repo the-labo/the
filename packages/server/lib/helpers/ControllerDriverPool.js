@@ -21,6 +21,7 @@ function ControllerDriverPool() {
       if (!instanceHash[key]) {
         return
       }
+
       delete instanceHash[key][controllerName]
     },
     delAll(cid, socketId) {

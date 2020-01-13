@@ -34,6 +34,7 @@ function contextEntryFor(context, { store }) {
       if (skip) {
         return
       }
+
       setPiped(newPiped)
     }, [piped, setPiped, getPiped])
 

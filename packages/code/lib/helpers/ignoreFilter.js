@@ -8,6 +8,7 @@ function ignoreFilter(filename) {
   if (!filename) {
     return null
   }
+
   const patterns = String(fs.readFileSync(filename)).split(EOL)
   return ignore()
     .add(patterns)

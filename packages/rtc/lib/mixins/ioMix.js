@@ -273,6 +273,7 @@ function ioMix(Class) {
       if (!roomName) {
         return
       }
+
       const { ioConnector } = this
       const roomState = await ioConnector.getIORoomState(roomName)
       await ioConnector.broadcastToIORoom(

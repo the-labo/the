@@ -203,6 +203,7 @@ function peerMix(Class) {
         if (!peer) {
           return
         }
+
         debug('setPeerICECandidate', pid, ice, {
           signalingState: peer.signalingState,
         })

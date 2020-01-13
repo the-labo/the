@@ -95,30 +95,34 @@ describe('mongo-driver', () => {
           name: 'entry21',
         })
         equal(
-          (await driver.list('Entry', {
-            filter: [
-              {
-                group: {
-                  $ref: `Group#${group01}`,
+          (
+            await driver.list('Entry', {
+              filter: [
+                {
+                  group: {
+                    $ref: `Group#${group01}`,
+                  },
                 },
-              },
-            ],
-          })).entities.length,
+              ],
+            })
+          ).entities.length,
           2,
         )
 
         equal(
-          (await driver.list('Entry', {
-            filter: [
-              {
-                group: [
-                  {
-                    $ref: `Group#${group01}`,
-                  },
-                ],
-              },
-            ],
-          })).entities.length,
+          (
+            await driver.list('Entry', {
+              filter: [
+                {
+                  group: [
+                    {
+                      $ref: `Group#${group01}`,
+                    },
+                  ],
+                },
+              ],
+            })
+          ).entities.length,
           2,
         )
       }

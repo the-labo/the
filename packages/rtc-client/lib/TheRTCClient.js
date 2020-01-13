@@ -430,6 +430,7 @@ class TheRTCClient extends TheRTCClientBase {
       console.warn('[TheRTCClient] Invalid offer:', offer)
       return
     }
+
     await this.answerToPeerOffer(offer)
   }
 
@@ -473,6 +474,7 @@ class TheRTCClient extends TheRTCClientBase {
       if (!track) {
         return hash
       }
+
       return {
         ...hash,
         [track.kind]: [...(hash[track.kind] || []), track],

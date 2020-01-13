@@ -149,6 +149,7 @@ class TheMedia {
     if (this.running) {
       throw new Error('[TheMedia] Already running')
     }
+
     const { originalStream } = this
     const stream = originalStream
       ? originalStream.clone()

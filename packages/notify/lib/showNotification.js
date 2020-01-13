@@ -16,6 +16,7 @@ async function showNotification(message, options = {}) {
     console.warn('Notification not supported')
     return null
   }
+
   try {
     const notification = new Notification(message, restOptions)
     notification.onclick = onclick
@@ -29,6 +30,7 @@ async function showNotification(message, options = {}) {
     await Notification.requestPermission()
     return showNotification.byServiceWorker(message, options)
   }
+
   return null
 }
 
@@ -42,6 +44,7 @@ showNotification.byServiceWorker = async function showNotificationByServiceWorke
   if (!registration) {
     return
   }
+
   await registration.showNotification(message, {
     tag,
     ...restOptions,

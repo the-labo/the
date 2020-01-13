@@ -50,8 +50,6 @@ async function build(dirname = process.cwd(), options = {}) {
   const plugins = [
     ['@babel/plugin-proposal-class-properties'],
     ['@babel/plugin-proposal-do-expressions'],
-    ['@babel/plugin-proposal-object-rest-spread'],
-    ['@babel/plugin-proposal-optional-chaining'],
     ['@babel/plugin-transform-runtime', {}, 'the-script-build-runtime'],
   ]
   const buildBud = async () => coz.render(budPattern)
@@ -96,6 +94,7 @@ async function build(dirname = process.cwd(), options = {}) {
     if (process.env.NODE_ENV === 'production') {
       return
     }
+
     await buildDemo(demoSrc, demoDest, {
       alias: {
         [`${pkg.name}/styles`]: path.resolve(dirname, 'styles'),

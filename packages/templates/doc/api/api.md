@@ -5,7 +5,7 @@
 ## @the-/templates
 Templates for the-projects
 
-**Version**: 16.2.9  
+**Version**: 16.2.11  
 **License**: MIT  
 
 * [@the-/templates](#module_@the-/templates)
