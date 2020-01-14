@@ -5,28 +5,41 @@ const { strOptions } = require('yaml/types')
 
 strOptions.fold.lineWidth = 0
 
-const _processYAMLNode = (node) => {
+const _processYAMLNode = (node, opt = {}) => {
   if (!node) {
     return node
   }
+  const { depth = 0, rule = {} } = opt
 
   const { items, type } = node
   if (!items) {
     return node
   }
 
+  const childOpt = { depth: depth + 1, rule }
   switch (type) {
     case 'MAP':
       node.items = items
-        .sort((a, b) => a.key.value.localeCompare(b.key.value))
+        .sort((a, b) => {
+          const shouldSortByRule = depth === 0 && !!rule.sortKeys
+          if (shouldSortByRule) {
+            const sortKeys = rule.sortKeys.reverse()
+            const aWeight = sortKeys.indexOf(a.key.value)
+            const bWeight = sortKeys.indexOf(b.key.value)
+            if (aWeight !== bWeight) {
+              return bWeight - aWeight
+            }
+          }
+          return a.key.value.localeCompare(b.key.value)
+        })
         .map((item) => {
-          item.value = _processYAMLNode(item.value)
+          item.value = _processYAMLNode(item.value, childOpt)
           return item
         })
       return node
     case 'SEQ':
       node.items = items.map((item) => {
-        item = _processYAMLNode(item)
+        item = _processYAMLNode(item, childOpt)
         return item
       })
       return node
@@ -39,9 +52,11 @@ const _processYAMLNode = (node) => {
  * @memberof module:@the-/code.processors
  * @function processYAML
  * @param {string} content
+ * @param {Object} [options={}]
  * @returns {string}
  */
-async function processYAML(content) {
+async function processYAML(content, options = {}) {
+  const { rule = {} } = options
   const doc = YAML.parseDocument(content)
   const [error] = doc.errors || []
   if (error) {
@@ -51,7 +66,7 @@ async function processYAML(content) {
     return content
   }
 
-  doc.contents = _processYAMLNode(doc.contents)
+  doc.contents = _processYAMLNode(doc.contents, { rule })
   try {
     return String(doc)
   } catch (e) {

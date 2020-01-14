@@ -89,6 +89,37 @@ x: ${longWord}
     )
   })
 
+  it('sort with order', async () => {
+    equal(
+      await processYAML(
+        `
+c: 1
+a: 1
+d: 1
+b: 
+  d: 1
+  c: 1
+  b: 1
+  a: 1
+      `,
+        {
+          rule: {
+            sortKeys: ['c', 'b'],
+          },
+        },
+      ),
+      `c: 1
+b:
+  a: 1
+  b: 1
+  c: 1
+  d: 1
+a: 1
+d: 1
+`,
+    )
+  })
+
   it('Sort sets', async () => {
     equal(
       await processYAML(`

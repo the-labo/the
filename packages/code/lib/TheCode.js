@@ -1,9 +1,10 @@
 const aglob = require('aglob')
 const { canWriteAsync, readFileAsync, statAsync } = require('asfs')
 const path = require('path')
+const minimatch = require('minimatch')
 const writeout = require('writeout')
 const Types = require('./constants/Types')
-const { typeHelper, ignoreFilter } = require('./helpers')
+const { typeHelper, ignoreFilter, readRCFile } = require('./helpers')
 const FormatCache = require('./helpers/FormatCache')
 const p = require('./processors')
 const pkg = require('../package')
@@ -18,9 +19,10 @@ const MB = 1000 * 1000
  * @param {Object} [config={}] - Code config
  */
 class TheCode {
-  constructor(config = {}) {
+  constructor (config = {}) {
     const {
       ignoreFile = findup.sync('.thecodeignore'),
+      rcFile = findup.sync('.thecoderc'),
       cacheFile = `node_modules/.cache/the-code/cache.json`,
       cssProp = true,
       cssRule = true,
@@ -98,9 +100,10 @@ class TheCode {
     })
     this.maxFileSize = maxFileSize
     this.ignoreFile = ignoreFile
+    this.rcFile = rcFile
   }
 
-  shouldSkipContent(content) {
+  shouldSkipContent (content) {
     return [
       // Using golang format
       // https://github.com/golang/go/issues/13560
@@ -112,7 +115,7 @@ class TheCode {
     ].some((pattern) => pattern.test(content))
   }
 
-  async clearCache() {
+  async clearCache () {
     await this.cache.clear()
   }
 
@@ -122,17 +125,18 @@ class TheCode {
    * @param {Object} [options={}] - Optional
    * @returns {Promise<Array>}
    */
-  async format(pattern, options = {}) {
+  async format (pattern, options = {}) {
     const { ignore, force, concurrency = 25 } = options
     const filenames = (await aglob(pattern, { ignore })).filter(
       ignoreFilter(this.ignoreFile),
     )
+    const rc = await readRCFile(this.rcFile)
     const allResults = []
     for (let i = 0; i < filenames.length; i += concurrency) {
       const filenamesToFormat = filenames.slice(i, i + concurrency)
       const results = await Promise.all(
         filenamesToFormat.map((filename) =>
-          this.formatFile(filename, { force }),
+          this.formatFile(filename, { rc, force }),
         ),
       )
       allResults.push(...results.filter(Boolean))
@@ -146,8 +150,8 @@ class TheCode {
    * @param {Object} [options={}] - Optional setting
    * @returns {Promise<undefined>}
    */
-  async formatFile(filename, options = {}) {
-    const { force } = options
+  async formatFile (filename, options = {}) {
+    const { force, rc = {} } = options
     const shouldSkipFile = await this.shouldSkipFile(filename)
     if (!force && shouldSkipFile) {
       debug('Skip', filename)
@@ -165,6 +169,8 @@ class TheCode {
     const type = typeHelper.typeOf(filename)
     const sourceType = typeHelper.sourceTypeOf(filename)
     const processers = this.processers[type]
+    const ruleEntry = Object.entries(rc.rules || {})
+      .find(([k]) => minimatch(filename, k))
     const formatted = await processers.reduce(
       (input, process) =>
         Promise.resolve(input)
@@ -172,6 +178,7 @@ class TheCode {
             process(String(input), {
               filename: path.resolve(filename),
               sourceType,
+              rule: ruleEntry ? ruleEntry[1] : {},
             }),
           )
           .catch((err) => {
@@ -193,7 +200,7 @@ class TheCode {
     return result
   }
 
-  async shouldSkipFile(filename) {
+  async shouldSkipFile (filename) {
     const stat = await statAsync(filename).catch(() => null)
     if (!stat) {
       return false

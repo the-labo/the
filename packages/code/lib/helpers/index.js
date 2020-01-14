@@ -16,6 +16,7 @@ const astHelper_ = require('./astHelper')
 const contentAccess_ = require('./contentAccess')
 const cssHelper_ = require('./cssHelper')
 const ignoreFilter_ = require('./ignoreFilter')
+const readRCFile_ = require('./readRCFile')
 const typeHelper_ = require('./typeHelper')
 const weightHelper_ = require('./weightHelper')
 
@@ -28,6 +29,7 @@ exports.astHelper = astHelper_
 exports.contentAccess = contentAccess_
 exports.cssHelper = cssHelper_
 exports.ignoreFilter = ignoreFilter_
+exports.readRCFile = readRCFile_
 exports.typeHelper = typeHelper_
 exports.weightHelper = weightHelper_
 
@@ -40,6 +42,7 @@ module.exports = {
   contentAccess: contentAccess_,
   cssHelper: cssHelper_,
   ignoreFilter: ignoreFilter_,
+  readRCFile: readRCFile_,
   typeHelper: typeHelper_,
   weightHelper: weightHelper_,
 }
