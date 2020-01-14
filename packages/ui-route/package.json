@@ -20,7 +20,7 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui-demo": "^15.5.4",
+    "@the-/ui-demo": "^16.0.3",
     "@the-/ui-link": "^16.0.3",
     "@the-/ui-router": "^15.4.11",
     "@the-/ui-spin": "^16.0.1",
