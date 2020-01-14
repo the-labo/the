@@ -22,7 +22,7 @@ class TheCode {
   constructor (config = {}) {
     const {
       ignoreFile = findup.sync('.thecodeignore'),
-      rcFile = findup.sync('.thecoderc'),
+      rcFile = findup.sync('.thecoderc.yml'),
       cacheFile = `node_modules/.cache/the-code/cache.json`,
       cssProp = true,
       cssRule = true,

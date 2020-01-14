@@ -5,7 +5,7 @@
 ## @the-/code
 Code formatter of the-frameworks
 
-**Version**: 15.15.7  
+**Version**: 15.15.8  
 **License**: MIT  
 
 * [@the-/code](#module_@the-/code)
@@ -48,7 +48,7 @@ Code formatter of the-frameworks
         * [.processJSXExpression(content)](#module_@the-/code.processors.processJSXExpression) ⇒ <code>string</code>
         * [.processPackageJSON(content, [options&#x3D;])](#module_@the-/code.processors.processPackageJSON) ⇒ <code>\*</code>
         * [.processPackageLockJSON(content, [options&#x3D;])](#module_@the-/code.processors.processPackageLockJSON) ⇒ <code>\*</code>
-        * [.processYAML(content)](#module_@the-/code.processors.processYAML) ⇒ <code>string</code>
+        * [.processYAML(content, [options])](#module_@the-/code.processors.processYAML) ⇒ <code>string</code>
     * [.create(...args)](#module_@the-/code.create) ⇒ <code>TheCode</code>
     * [.run(pattern, [options&#x3D;])](#module_@the-/code.run)
     * [.applyConverter(content, convert, [options&#x3D;])](#module_@the-/code.applyConverter) ⇒ <code>Promise.&lt;\*&gt;</code>
@@ -159,7 +159,7 @@ Processor functions
     * [.processJSXExpression(content)](#module_@the-/code.processors.processJSXExpression) ⇒ <code>string</code>
     * [.processPackageJSON(content, [options&#x3D;])](#module_@the-/code.processors.processPackageJSON) ⇒ <code>\*</code>
     * [.processPackageLockJSON(content, [options&#x3D;])](#module_@the-/code.processors.processPackageLockJSON) ⇒ <code>\*</code>
-    * [.processYAML(content)](#module_@the-/code.processors.processYAML) ⇒ <code>string</code>
+    * [.processYAML(content, [options])](#module_@the-/code.processors.processYAML) ⇒ <code>string</code>
 
 <a name="module_@the-/code.processors.processCSSProp"></a>
 
@@ -472,12 +472,13 @@ Process JSX attributes
 
 <a name="module_@the-/code.processors.processYAML"></a>
 
-#### processors.processYAML(content) ⇒ <code>string</code>
+#### processors.processYAML(content, [options]) ⇒ <code>string</code>
 **Kind**: static method of [<code>processors</code>](#module_@the-/code.processors)  
 
-| Param | Type |
-| --- | --- |
-| content | <code>string</code> | 
+| Param | Type | Default |
+| --- | --- | --- |
+| content | <code>string</code> |  | 
+| [options] | <code>Object</code> | <code>{}</code> | 
 
 <a name="module_@the-/code.create"></a>
 

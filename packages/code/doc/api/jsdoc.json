@@ -13,7 +13,7 @@
     "name": "@the-/code",
     "order": 1,
     "typicalname": "code",
-    "version": "15.15.7"
+    "version": "15.15.8"
   },
   {
     "id": "module:@the-/code.TheCode()",
@@ -45,7 +45,7 @@
     "memberof": "TheCode",
     "meta": {
       "filename": "TheCode.js",
-      "lineno": 125,
+      "lineno": 128,
       "path": "lib"
     },
     "name": "format",
@@ -92,7 +92,7 @@
     "memberof": "TheCode",
     "meta": {
       "filename": "TheCode.js",
-      "lineno": 149,
+      "lineno": 153,
       "path": "lib"
     },
     "name": "formatFile",
@@ -136,7 +136,7 @@
     "memberof": "module:@the-/code",
     "meta": {
       "filename": "TheCode.js",
-      "lineno": 15,
+      "lineno": 16,
       "path": "lib"
     },
     "name": "TheCode",
@@ -2516,7 +2516,7 @@
     "memberof": "module:@the-/code.processors",
     "meta": {
       "filename": "processYAML.js",
-      "lineno": 38,
+      "lineno": 51,
       "path": "lib/processors"
     },
     "name": "processYAML",
@@ -2529,6 +2529,16 @@
           ]
         },
         "name": "content"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
       }
     ],
     "returns": [

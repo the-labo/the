@@ -23,7 +23,7 @@ const _processYAMLNode = (node, opt = {}) => {
         .sort((a, b) => {
           const shouldSortByRule = depth === 0 && !!rule.sortKeys
           if (shouldSortByRule) {
-            const sortKeys = rule.sortKeys.reverse()
+            const sortKeys = [...rule.sortKeys].reverse()
             const aWeight = sortKeys.indexOf(a.key.value)
             const bWeight = sortKeys.indexOf(b.key.value)
             if (aWeight !== bWeight) {
