@@ -35,6 +35,7 @@ const TheInputTextArea = React.memo((props) => {
     required,
     role,
     spellCheck,
+    style,
     tabIndex,
     value,
   } = props
@@ -115,6 +116,7 @@ const TheInputTextArea = React.memo((props) => {
           'placeholder',
           'role',
           'tabIndex',
+          'style',
         ],
       })}
       {...eventHandlersFor(props, {
@@ -156,6 +158,7 @@ const TheInputTextArea = React.memo((props) => {
           role={role}
           rows={rows}
           spellCheck={spellCheck}
+          style={style}
           tabIndex={tabIndex}
           value={value || ''}
         />
