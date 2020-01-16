@@ -105,6 +105,7 @@ b:
         {
           rule: {
             sortKeys: ['c', 'b'],
+            sortKeysDepth: 1,
           },
         },
       ),

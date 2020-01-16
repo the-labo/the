@@ -21,7 +21,7 @@ const _processYAMLNode = (node, opt = {}) => {
     case 'MAP':
       node.items = items
         .sort((a, b) => {
-          const shouldSortByRule = depth === 0 && !!rule.sortKeys
+          const shouldSortByRule = depth < (rule.sortKeysDepth || 1) && !!rule.sortKeys
           if (shouldSortByRule) {
             const sortKeys = [...rule.sortKeys].reverse()
             const aWeight = sortKeys.indexOf(a.key.value)
