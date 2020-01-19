@@ -5,7 +5,7 @@
 ## @the-/polyfill
 Polyfill of the-frameworks
 
-**Version**: 17.1.1  
+**Version**: 17.1.4  
 **License**: MIT  
 
 * [@the-/polyfill](#module_@the-/polyfill)

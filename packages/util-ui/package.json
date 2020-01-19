@@ -15,7 +15,7 @@
     "@the-/const-ui": "^15.5.2",
     "bwindow": "^2.0.3",
     "keycode": "^2.2.0",
-    "uuid": "^3.3.3",
+    "uuid": "^3.4.0",
     "video-extensions": "^1.1.0"
   },
   "devDependencies": {},

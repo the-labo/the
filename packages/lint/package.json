@@ -12,8 +12,8 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@babel/runtime": "^7.8.0",
-    "@the-/ast": "^16.0.3",
+    "@babel/runtime": "^7.8.3",
+    "@the-/ast": "^16.1.0",
     "@the-/util-file": "^15.5.2",
     "aglob": "^3.0.2",
     "asfs": "^2.2.3",

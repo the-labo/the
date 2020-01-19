@@ -24,7 +24,7 @@
 ## @the-/ui-keyboard
 Keyboard component
 
-**Version**: 16.0.0  
+**Version**: 16.0.1  
 <a name="TheKeyboard"></a>
 
 ## TheKeyboard()

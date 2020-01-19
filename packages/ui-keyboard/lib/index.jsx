@@ -4,7 +4,7 @@
  * @description Keyboard component
  * @module @the-/ui-keyboard
  * @typicalname uiKeyboard
- * @version 16.0.0
+ * @version 16.0.1
  */
 'use strict'
 

@@ -21,7 +21,7 @@
 ## @the-/ui-head
 Head of the-components
 
-**Version**: 15.4.12  
+**Version**: 15.4.13  
 <a name="TheHead"></a>
 
 ## TheHead

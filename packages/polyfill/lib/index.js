@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/polyfill
  * @typicalname polyfill
- * @version 17.1.1
+ * @version 17.1.4
  */
 'use strict'
 

@@ -1,4 +1,7 @@
 {
+  "name": "@the-/resize",
+  "description": "Resize image files",
+  "version": "15.4.14",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -15,9 +18,8 @@
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.3",
     "filecopy": "^4.0.2",
-    "sharp": "^0.23.4"
+    "sharp": "^0.24.0"
   },
-  "description": "Resize image files",
   "devDependencies": {},
   "engines": {
     "node": ">=10",
@@ -30,7 +32,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/resize",
   "publishConfig": {
     "access": "public"
   },
@@ -41,6 +42,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.12"
+  }
 }

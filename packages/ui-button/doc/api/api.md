@@ -27,7 +27,7 @@
 ## @the-/ui-button
 Button of the-components
 
-**Version**: 16.0.0  
+**Version**: 16.0.1  
 <a name="TheButton"></a>
 
 ## TheButton(props) ⇒ <code>\*</code>

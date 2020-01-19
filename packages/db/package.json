@@ -39,7 +39,7 @@
     "mkdirp": "^0.5.1",
     "msgpack5": "^4.2.1",
     "mysql2": "^2.1.0",
-    "uuid": "^3.3.3"
+    "uuid": "^3.4.0"
   },
   "devDependencies": {
     "colorprint": "^6.1.1",
