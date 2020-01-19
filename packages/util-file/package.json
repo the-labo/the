@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "asfs": "^2.2.3",
-    "file-type": "^13.0.3",
+    "file-type": "^13.1.0",
     "fmtjson": "^4.0.6",
     "js-yaml": "^3.13.1",
     "json5": "^2.1.1",

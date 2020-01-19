@@ -12,7 +12,7 @@
     "amkdirp": "^2.0.0",
     "asleep": "^1.0.3",
     "mime": "^2.4.4",
-    "uuid": "^3.3.3"
+    "uuid": "^3.4.0"
   },
   "description": "Utility for server",
   "devDependencies": {},

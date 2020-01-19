@@ -12,7 +12,7 @@
     "name": "@the-/ui-copyboard",
     "order": 0,
     "typicalname": "uiCopyboard",
-    "version": "16.0.0"
+    "version": "16.1.1"
   },
   {
     "description": "Component for clip-to-copy",
