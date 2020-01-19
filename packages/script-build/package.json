@@ -14,16 +14,16 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@babel/core": "^7.8.0",
-    "@babel/plugin-proposal-class-properties": "^7.8.0",
-    "@babel/plugin-proposal-do-expressions": "^7.8.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.8.0",
-    "@babel/plugin-transform-runtime": "^7.8.0",
-    "@babel/polyfill": "^7.8.0",
-    "@babel/preset-env": "^7.8.2",
-    "@babel/preset-react": "^7.8.0",
-    "@babel/runtime": "^7.8.0",
-    "@the-/code": "^15.15.6",
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-do-expressions": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/polyfill": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/runtime": "^7.8.3",
+    "@the-/code": "^15.15.14",
     "@the-/tmp": "^15.4.5",
     "ababel": "^6.1.2",
     "aglob": "^3.0.2",
@@ -40,7 +40,7 @@
     "webpack": "^4.41.5"
   },
   "devDependencies": {
-    "@the-/ast": "^16.0.3",
+    "@the-/ast": "^16.1.0",
     "injectmock": "^2.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
