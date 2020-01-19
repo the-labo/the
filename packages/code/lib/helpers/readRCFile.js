@@ -17,7 +17,7 @@ async function readRCFile (filename) {
       // do nothing
     }
   }
-  return null
+  return {}
 }
 
 module.exports = readRCFile

@@ -169,7 +169,7 @@ class TheCode {
     const type = typeHelper.typeOf(filename)
     const sourceType = typeHelper.sourceTypeOf(filename)
     const processers = this.processers[type]
-    const ruleEntry = Object.entries(rc.rules || {})
+    const ruleEntry = Object.entries(rc && rc.rules || {})
       .find(([k]) => minimatch(filename, k))
     const formatted = await processers.reduce(
       (input, process) =>
