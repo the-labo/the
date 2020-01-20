@@ -12,12 +12,12 @@
     "name": "@the-/ui-meta",
     "order": 0,
     "typicalname": "uiMeta",
-    "version": "15.4.14"
+    "version": "15.4.15"
   },
   {
     "description": "Dynamic meta attribute injector for the-components",
     "id": "TheMeta",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheMeta",
     "meta": {
       "filename": "TheMeta.jsx",
@@ -26,6 +26,7 @@
     },
     "name": "TheMeta",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
@@ -36,7 +37,7 @@
     "memberof": "TheMeta.propTypes",
     "meta": {
       "filename": "TheMeta.jsx",
-      "lineno": 95,
+      "lineno": 86,
       "path": "lib"
     },
     "name": "render",
@@ -51,7 +52,7 @@
     "memberof": "TheMeta.propTypes",
     "meta": {
       "filename": "TheMeta.jsx",
-      "lineno": 97,
+      "lineno": 88,
       "path": "lib"
     },
     "name": "title",

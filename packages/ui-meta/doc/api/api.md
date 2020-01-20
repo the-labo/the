@@ -8,10 +8,10 @@
 </dd>
 </dl>
 
-## Classes
+## Functions
 
 <dl>
-<dt><a href="#TheMeta">TheMeta</a></dt>
+<dt><a href="#TheMeta">TheMeta()</a></dt>
 <dd><p>Dynamic meta attribute injector for the-components</p>
 </dd>
 </dl>
@@ -21,10 +21,10 @@
 ## @the-/ui-meta
 Dynamic meta attribute injector for the-components
 
-**Version**: 15.4.14  
+**Version**: 15.4.15  
 <a name="TheMeta"></a>
 
-## TheMeta
+## TheMeta()
 Dynamic meta attribute injector for the-components
 
-**Kind**: global class  
+**Kind**: global function  

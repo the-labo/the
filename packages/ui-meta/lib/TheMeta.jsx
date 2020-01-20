@@ -1,85 +1,76 @@
 'use strict'
 
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useContext, useEffect, useMemo } from 'react'
 import { newId } from '@the-/util-ui'
 import { get } from '@the-/window'
 
 const MetaContext = React.createContext(null)
 
+const callIfFunc = (t) => (typeof t === 'function' ? t() : t)
 /**
  * Dynamic meta attribute injector for the-components
  */
-class TheMeta extends React.Component {
-  constructor(props) {
-    super(props)
-    this._id = newId({ prefix: 'the-meta' })
-    this._titleQueue = []
-  }
+const TheMeta = ({ children, color, render, title: shortTitle }) => {
+  const tmp = useMemo(
+    () => ({
+      originalTitle: null,
+    }),
+    [],
+  )
 
-  get id() {
-    const {
-      props: { id = this._id },
-    } = this
-    return id
-  }
+  const context = useContext(MetaContext)
 
-  componentDidCatch(e) {
-    this.restoreTitle()
-    throw e
-  }
+  const baseTitle = useMemo(() => callIfFunc(context.title), [context])
 
-  componentDidMount() {
-    this.updateTitle()
-  }
+  const title = useMemo(() => callIfFunc(shortTitle), [shortTitle])
 
-  componentDidUpdate() {
-    this.updateTitle()
-  }
+  const DomIds = useMemo(
+    () => ({
+      COLOR_META_ID: newId({ prefix: 'color' }),
+    }),
+    [],
+  )
 
-  componentWillUnmount() {
-    this.restoreTitle()
-  }
-
-  getTitle(options = {}) {
-    const { full } = options
-    const {
-      props: { title },
-    } = this
-    const { title: baseTitle } = this.context || {}
-    return [title, full ? baseTitle : null]
-      .filter(Boolean)
-      .map((t) => (typeof t === 'function' ? t() : t))
-      .join(' | ')
-  }
-
-  render() {
-    const {
-      props: { children, render },
-    } = this
-    return (
-      <>
-        {render({ title: this.getTitle() })}
-        {children}
-      </>
-    )
-  }
-
-  restoreTitle() {
-    const document = get('window.document')
-    while (this._titleQueue.length) {
-      document.title = this._titleQueue.pop()
+  useEffect(() => {
+    if (!color) {
+      return
     }
-  }
-
-  updateTitle() {
     const document = get('window.document')
-    const title = this.getTitle({ full: true })
-    if (document.title !== title) {
-      this._titleQueue.push(document.title)
-      document.title = title
+    let metaElm = document.getElementById(DomIds.COLOR_META_ID)
+    const { head: container } = document
+    if (!metaElm) {
+      metaElm = document.createElement('meta')
+      metaElm.id = DomIds.COLOR_META_ID
+      metaElm.classList.add('the-meta-color')
+      metaElm.setAttribute('name', 'theme-color')
+      container.appendChild(metaElm)
     }
-  }
+    metaElm.setAttribute('content', color)
+    return () => {
+      container.removeChild(metaElm)
+    }
+  }, [color])
+
+  useEffect(() => {
+    const document = get('window.document')
+    const newTitle = [title, baseTitle].join(' | ')
+    if (document.title !== newTitle) {
+      tmp.originalTitle = document.title
+      document.title = newTitle
+    }
+    return () => {
+      document.title = tmp.originalTitle
+      tmp.originalTitle = null
+    }
+  }, [baseTitle, title])
+
+  return (
+    <>
+      {render({ title })}
+      {children}
+    </>
+  )
 }
 
 TheMeta.Root = React.memo(function TheMetaRoot({ children, title }) {
