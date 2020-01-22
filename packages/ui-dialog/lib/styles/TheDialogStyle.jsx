@@ -119,7 +119,7 @@ TheDialogStyle.data = (options) => {
         flexDirection: 'column',
         height: 'auto',
         margin: '0 auto',
-        maxHeight: 'calc(100vh - 72px)',
+        maxHeight: '100%',
         maxWidth: contentWidth,
         minHeight: '124px',
         overflow: 'auto',
