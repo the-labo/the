@@ -156,7 +156,7 @@ TheDialogStyle.data = (options) => {
         right: 0,
         textAlign: 'center',
         top: 0,
-        zIndex: 2,
+        zIndex: 9,
       },
       '.the-dialog-inner': {
         boxSizing: 'border-box',
