@@ -86,6 +86,7 @@ const TheButton = (props) => {
   const applyColor = color && !danger && !disabled
   if (applyColor && style) {
     style.borderColor = color
+    style.outlineColor = color
     if (primary) {
       style.backgroundColor = color
       style.color = textColorFor(color)
