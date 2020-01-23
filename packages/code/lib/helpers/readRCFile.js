@@ -1,6 +1,6 @@
 'use strict'
 
-const { readAsYaml, readAsJson } = require('@the-/util-file')
+const { readAsJson, readAsYaml } = require('@the-/util-file')
 
 async function readRCFile(filename) {
   if (!filename) {

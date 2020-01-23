@@ -1,4 +1,7 @@
 {
+  "name": "@the-/lock",
+  "description": "Async lock",
+  "version": "15.4.12",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -11,7 +14,6 @@
   "dependencies": {
     "async-lock": "^1.2.2"
   },
-  "description": "Async lock",
   "devDependencies": {
     "asleep": "^1.0.3"
   },
@@ -26,7 +28,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "name": "@the-/lock",
   "publishConfig": {
     "access": "public"
   },
@@ -37,6 +38,5 @@
     "prepare": "../../misc/scripts/pkgSharedInstall.sh;npm run build && npm run doc",
     "prepublishOnly": "npm run test",
     "test": "../../misc/scripts/pkgTest.js"
-  },
-  "version": "15.4.12"
+  }
 }

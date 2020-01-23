@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/demo-lib
  * @typicalname demoLib
- * @version 15.4.11
+ * @version 15.4.12
  */
 'use strict'
 

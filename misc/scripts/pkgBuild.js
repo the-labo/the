@@ -2,12 +2,13 @@
 /**
  * @file Build package
  */
-
 'use strict'
 
 const build = require('@the-/script-build')
 
-const [, , ...args] = process.argv
+const {
+  argv: [, , ...args],
+} = process
 
 build({
   noshim: args.includes('--noshim'),

@@ -36,6 +36,7 @@ const TheMeta = ({ children, color, render, title: shortTitle }) => {
     if (!color) {
       return
     }
+
     const document = get('window.document')
     let metaElm = document.getElementById(DomIds.COLOR_META_ID)
     const { head: container } = document
@@ -46,6 +47,7 @@ const TheMeta = ({ children, color, render, title: shortTitle }) => {
       metaElm.setAttribute('name', 'theme-color')
       container.appendChild(metaElm)
     }
+
     metaElm.setAttribute('content', color)
     return () => {
       container.removeChild(metaElm)
@@ -59,6 +61,7 @@ const TheMeta = ({ children, color, render, title: shortTitle }) => {
       tmp.originalTitle = document.title
       document.title = newTitle
     }
+
     return () => {
       document.title = tmp.originalTitle
       tmp.originalTitle = null

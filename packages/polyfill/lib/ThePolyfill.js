@@ -36,6 +36,7 @@ class ThePolyfill {
 
       if (!window.ResizeObserver) {
         const ResizeObserverPolyfill = require('resize-observer-polyfill')
+
         window.ResizeObserver = ResizeObserverPolyfill.__esModule
           ? ResizeObserverPolyfill.default
           : ResizeObserverPolyfill

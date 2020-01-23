@@ -62,10 +62,8 @@ var/
 /packages/driver-sequelize/lib/parsing/index.js
 /packages/entrypoint/lib/helpers/index.js
 /packages/entrypoint/lib/index.js
-/packages/facade-context/lib/index.js
 /packages/facade-scope/lib/index.js
 /packages/facade-scope/lib/operations/index.js
-/packages/facebook/lib/index.js
 /packages/geo/lib/index.js
 /packages/hash/lib/index.js
 /packages/icon/lib/helpers/index.js
@@ -78,9 +76,6 @@ var/
 /packages/loc/lib/helpers/index.js
 /packages/loc/lib/index.js
 /packages/lock/lib/index.js
-/packages/mail/lib/helpers/index.js
-/packages/mail/lib/index.js
-/packages/mail/lib/sending/index.js
 /packages/media/lib/index.js
 /packages/notify/lib/index.js
 /packages/pack/lib/index.js

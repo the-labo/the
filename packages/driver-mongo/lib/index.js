@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/driver-mongo
  * @typicalname driverMongo
- * @version 15.4.11
+ * @version 15.4.12
  */
 'use strict'
 

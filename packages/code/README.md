@@ -182,7 +182,7 @@ tryExample().catch((err) => console.error(err))
   - [.processJSXExpression(content)](./doc/api/api.md#module_@the-/code.processors.processJSXExpression)
   - [.processPackageJSON(content,options&#x3D;)](./doc/api/api.md#module_@the-/code.processors.processPackageJSON)
   - [.processPackageLockJSON(content,options&#x3D;)](./doc/api/api.md#module_@the-/code.processors.processPackageLockJSON)
-  - [.processYAML(content)](./doc/api/api.md#module_@the-/code.processors.processYAML)
+  - [.processYAML(content,options)](./doc/api/api.md#module_@the-/code.processors.processYAML)
 - TheCode
   - [#format(pattern,options)](./doc/api/api.md#TheCode#format)
   - [#formatFile(filename,options)](./doc/api/api.md#TheCode#formatFile)
