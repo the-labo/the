@@ -6,9 +6,10 @@ async function readRCFile(filename) {
   if (!filename) {
     return null
   }
+
   for (const reader of [readAsYaml, readAsJson]) {
     try {
-      const content = await readAsYaml(filename)
+      const content = await reader(filename)
       return {
         rules: {},
         ...content,

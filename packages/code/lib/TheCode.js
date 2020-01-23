@@ -19,7 +19,7 @@ const MB = 1000 * 1000
  * @param {Object} [config={}] - Code config
  */
 class TheCode {
-  constructor (config = {}) {
+  constructor(config = {}) {
     const {
       ignoreFile = findup.sync('.thecodeignore'),
       rcFile = findup.sync('.thecoderc.yml'),
@@ -103,7 +103,7 @@ class TheCode {
     this.rcFile = rcFile
   }
 
-  shouldSkipContent (content) {
+  shouldSkipContent(content) {
     return [
       // Using golang format
       // https://github.com/golang/go/issues/13560
@@ -115,7 +115,7 @@ class TheCode {
     ].some((pattern) => pattern.test(content))
   }
 
-  async clearCache () {
+  async clearCache() {
     await this.cache.clear()
   }
 
@@ -125,7 +125,7 @@ class TheCode {
    * @param {Object} [options={}] - Optional
    * @returns {Promise<Array>}
    */
-  async format (pattern, options = {}) {
+  async format(pattern, options = {}) {
     const { ignore, force, concurrency = 25 } = options
     const filenames = (await aglob(pattern, { ignore })).filter(
       ignoreFilter(this.ignoreFile),
@@ -150,7 +150,7 @@ class TheCode {
    * @param {Object} [options={}] - Optional setting
    * @returns {Promise<undefined>}
    */
-  async formatFile (filename, options = {}) {
+  async formatFile(filename, options = {}) {
     const { force, rc = {} } = options
     const shouldSkipFile = await this.shouldSkipFile(filename)
     if (!force && shouldSkipFile) {
@@ -169,8 +169,9 @@ class TheCode {
     const type = typeHelper.typeOf(filename)
     const sourceType = typeHelper.sourceTypeOf(filename)
     const processers = this.processers[type]
-    const ruleEntry = Object.entries(rc && rc.rules || {})
-      .find(([k]) => minimatch(filename, k))
+    const ruleEntry = Object.entries((rc && rc.rules) || {}).find(([k]) =>
+      minimatch(filename, k),
+    )
     const formatted = await processers.reduce(
       (input, process) =>
         Promise.resolve(input)
@@ -200,7 +201,7 @@ class TheCode {
     return result
   }
 
-  async shouldSkipFile (filename) {
+  async shouldSkipFile(filename) {
     const stat = await statAsync(filename).catch(() => null)
     if (!stat) {
       return false

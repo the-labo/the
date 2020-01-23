@@ -9,6 +9,7 @@ const _processYAMLNode = (node, opt = {}) => {
   if (!node) {
     return node
   }
+
   const { depth = 0, rule = {} } = opt
 
   const { items, type } = node
@@ -21,7 +22,8 @@ const _processYAMLNode = (node, opt = {}) => {
     case 'MAP':
       node.items = items
         .sort((a, b) => {
-          const shouldSortByRule = depth < (rule.sortKeysDepth || 1) && !!rule.sortKeys
+          const shouldSortByRule =
+            depth < (rule.sortKeysDepth || 1) && !!rule.sortKeys
           if (shouldSortByRule) {
             const sortKeys = [...rule.sortKeys].reverse()
             const aWeight = sortKeys.indexOf(a.key.value)
@@ -30,6 +32,7 @@ const _processYAMLNode = (node, opt = {}) => {
               return bWeight - aWeight
             }
           }
+
           return a.key.value.localeCompare(b.key.value)
         })
         .map((item) => {
@@ -48,11 +51,11 @@ const _processYAMLNode = (node, opt = {}) => {
   }
 }
 
-const mapping = {
-  '*': '____the_code_escaped_*____'
-}
-const escape = (v) => Object.entries(mapping).reduce((v, [from, to]) => v.replace(from, to), v)
-const unescape = (v) => Object.entries(mapping).reduce((v, [from, to]) => v.replace(to, from), v)
+const mapping = [['*', '____the_code_escaped_*____']]
+const escape = (v) =>
+  mapping.reduce((v, [from, to]) => v.split(from).join(to), v)
+const unescape = (v) =>
+  mapping.reduce((v, [from, to]) => v.split(to).join(from), v)
 
 /**
  * @memberof module:@the-/code.processors
@@ -61,7 +64,7 @@ const unescape = (v) => Object.entries(mapping).reduce((v, [from, to]) => v.repl
  * @param {Object} [options={}]
  * @returns {string}
  */
-async function processYAML (content, options = {}) {
+async function processYAML(content, options = {}) {
   const { rule = {} } = options
   const doc = YAML.parseDocument(escape(content))
   const [error] = doc.errors || []

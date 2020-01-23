@@ -141,17 +141,17 @@ x:
 
   it('with anchor', async () => {
     equal(
-    await processYAML(`
+      await processYAML(`
 x:
   c: 1
   a: *nnn
-  b: 2
+  b: *z
 `),
       `x:
   a: *nnn
-  b: 2
+  b: *z
   c: 1
-`
+`,
     )
   })
 })
