@@ -48,6 +48,12 @@ const _processYAMLNode = (node, opt = {}) => {
   }
 }
 
+const mapping = {
+  '*': '____the_code_escaped_*____'
+}
+const escape = (v) => Object.entries(mapping).reduce((v, [from, to]) => v.replace(from, to), v)
+const unescape = (v) => Object.entries(mapping).reduce((v, [from, to]) => v.replace(to, from), v)
+
 /**
  * @memberof module:@the-/code.processors
  * @function processYAML
@@ -55,9 +61,9 @@ const _processYAMLNode = (node, opt = {}) => {
  * @param {Object} [options={}]
  * @returns {string}
  */
-async function processYAML(content, options = {}) {
+async function processYAML (content, options = {}) {
   const { rule = {} } = options
-  const doc = YAML.parseDocument(content)
+  const doc = YAML.parseDocument(escape(content))
   const [error] = doc.errors || []
   if (error) {
     console.log(
@@ -68,7 +74,7 @@ async function processYAML(content, options = {}) {
 
   doc.contents = _processYAMLNode(doc.contents, { rule })
   try {
-    return String(doc)
+    return unescape(String(doc))
   } catch (e) {
     if (/Alias node must be after source node/.test(e.message)) {
       console.warn(

@@ -138,6 +138,22 @@ x:
 `,
     )
   })
+
+  it('with anchor', async () => {
+    equal(
+    await processYAML(`
+x:
+  c: 1
+  a: *nnn
+  b: 2
+`),
+      `x:
+  a: *nnn
+  b: 2
+  c: 1
+`
+    )
+  })
 })
 
 /* global describe, before, after, it */

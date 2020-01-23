@@ -2,7 +2,7 @@
 
 const { readAsYaml, readAsJson } = require('@the-/util-file')
 
-async function readRCFile (filename) {
+async function readRCFile(filename) {
   if (!filename) {
     return null
   }
@@ -13,7 +13,7 @@ async function readRCFile (filename) {
         rules: {},
         ...content,
       }
-    } catch(e){
+    } catch (e) {
       // do nothing
     }
   }
