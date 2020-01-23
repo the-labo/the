@@ -35,7 +35,10 @@ class ThePolyfill {
       }
 
       if (!window.ResizeObserver) {
-        window.ResizeObserver = require('resize-observer-polyfill')
+        const ResizeObserverPolyfill = require('resize-observer-polyfill')
+        window.ResizeObserver = ResizeObserverPolyfill.__esModule
+          ? ResizeObserverPolyfill.default
+          : ResizeObserverPolyfill
       }
 
       if (!this.done) {

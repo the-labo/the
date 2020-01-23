@@ -54,7 +54,7 @@ const TheMeta = ({ children, color, render, title: shortTitle }) => {
 
   useEffect(() => {
     const document = get('window.document')
-    const newTitle = [title, baseTitle].join(' | ')
+    const newTitle = [title, baseTitle].filter(Boolean).join(' | ')
     if (document.title !== newTitle) {
       tmp.originalTitle = document.title
       document.title = newTitle
