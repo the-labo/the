@@ -11,8 +11,9 @@ import {
   htmlAttributesFor,
 } from '@the-/util-ui'
 import { get } from '@the-/window'
+import TheDropDownMenuButton from './partials/TheDropDownMenuButton'
+import TheDropDownMenuItem from './partials/TheDropDownMenuItem'
 import TheMenu from './TheMenu'
-import TheMenuItem from './TheMenuItem'
 
 /**
  * Drop down menu
@@ -93,13 +94,13 @@ class TheDropDownMenu extends React.Component {
           })}
         >
           <div className='the-dropdown-menu-content'>
-            <TheDropDownMenu.Button
+            <TheDropDownMenuButton
               aria-expanded={open}
               icon={label ? icon : null}
               onClick={open ? this.close : this.open}
             >
               {label || <TheIcon className={icon} />}
-            </TheDropDownMenu.Button>
+            </TheDropDownMenuButton>
             <div className='the-dropdown-menu-inner'>
               <TheMenu role='none'>{children}</TheMenu>
             </div>
@@ -123,32 +124,7 @@ class TheDropDownMenu extends React.Component {
   }
 }
 
-TheDropDownMenu.Button = function TheDropDownMenuButton(props) {
-  const { children, className, icon = TheDropDownMenu.UP_ICON, onClick } = props
-  return (
-    <a
-      {...htmlAttributesFor(props, { except: ['className'] })}
-      {...eventHandlersFor(props, { except: [] })}
-      className={c('the-dropdown-menu-button', className)}
-      onClick={onClick}
-      role='menubar'
-    >
-      <span className='the-dropdown-menu-button-text'>{children}</span>
-      <TheIcon className={c('the-dropdown-menu-button-icon', icon)} />
-    </a>
-  )
-}
-
-TheDropDownMenu.Item = function Item(props) {
-  const { className } = props
-  return (
-    <TheMenuItem
-      {...props}
-      className={c('the-dropdown-menu-item', className)}
-      role='menuitem'
-    />
-  )
-}
+TheDropDownMenu.Item = TheDropDownMenuItem
 
 TheDropDownMenu.UP_ICON = 'fa fa-caret-up'
 
