@@ -7,6 +7,14 @@ const path = require('path')
 
 const toTrue = () => true
 
+const toRelativePath = (pathname) => {
+  if (/^\/./.test(pathname)) {
+    return path.relative(process.cwd(), pathname)
+  }
+
+  return pathname
+}
+
 function ignoreFilter(filename) {
   if (!filename) {
     return toTrue
@@ -15,16 +23,14 @@ function ignoreFilter(filename) {
   const patterns = String(fs.readFileSync(filename))
     .split(EOL)
     .filter(Boolean)
-    .map((pathname) => {
-      if (/^\/./.test(path)) {
-        return path.relative(process.cwd(), pathname)
-      }
-
-      return pathname
-    })
-  return ignore()
+    .map((filename) => toRelativePath(filename))
+  const ignoreFilter = ignore()
     .add(patterns)
     .createFilter()
+  return function filter(filename) {
+    filename = toRelativePath(filename)
+    return ignoreFilter(filename)
+  }
 }
 
 module.exports = ignoreFilter

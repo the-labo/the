@@ -19,6 +19,8 @@ describe('ignore-filter', () => {
     const filter = ignoreFilter(`${__dirname}/../misc/mocks/mock-ignore`)
     ok(filter)
     deepEqual(['hoge', 'x'].filter(filter), ['x'])
+
+    ok([__filename].filter(filter))
   })
 })
 
