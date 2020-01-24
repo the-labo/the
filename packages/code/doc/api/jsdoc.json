@@ -13,7 +13,7 @@
     "name": "@the-/code",
     "order": 1,
     "typicalname": "code",
-    "version": "15.15.8"
+    "version": "15.15.17"
   },
   {
     "id": "module:@the-/code.TheCode()",
@@ -2516,7 +2516,7 @@
     "memberof": "module:@the-/code.processors",
     "meta": {
       "filename": "processYAML.js",
-      "lineno": 58,
+      "lineno": 60,
       "path": "lib/processors"
     },
     "name": "processYAML",
