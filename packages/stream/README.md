@@ -123,11 +123,12 @@ tryExample().catch((err) => console.error(err))
   - [.helpers](./doc/api/api.md#module_@the-/stream.helpers)
   - [.Provider](./doc/api/api.md#module_@the-/stream.Provider)
   - [.TheStream](./doc/api/api.md#module_@the-/stream.TheStream)
-  - [#pull()](./doc/api/api.md#module_@the-/stream#pull)
-  - [#push(chunks)](./doc/api/api.md#module_@the-/stream#push)
-  - [#pushEnd()](./doc/api/api.md#module_@the-/stream#pushEnd)
 - module:@the-/stream.helpers
-  - [.generatorFromReadable()](./doc/api/api.md#module_@the-/stream.helpers.generatorFromReadable)
+  - [.generatorFromReadable(readable)](./doc/api/api.md#module_@the-/stream.helpers.generatorFromReadable)
+- TheStream
+  - [#pull()](./doc/api/api.md#TheStream#pull)
+  - [#push(chunks)](./doc/api/api.md#TheStream#push)
+  - [#pushEnd()](./doc/api/api.md#TheStream#pushEnd)
 
 See [API Guide](./doc/api/api.md) for more detail
 

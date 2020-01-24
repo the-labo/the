@@ -170,7 +170,7 @@ const { createElement: c } = React
   - [.streamPool()](./doc/api/api.md#module_@the-/server.helpers.streamPool)
   - [.toControllerDriverFactory(ControllerFactory,options&#x3D;)](./doc/api/api.md#module_@the-/server.helpers.toControllerDriverFactory)
   - [.toLowerKeys(values&#x3D;)](./doc/api/api.md#module_@the-/server.helpers.toLowerKeys)
-  - [~StreamDriverPool](./doc/api/api.md#module_@the-/server.helpers~StreamDriverPool)
+  - [~StreamDriverPool()](./doc/api/api.md#module_@the-/server.helpers~StreamDriverPool)
 - module:@the-/server.helpers.ClientAccess
   - [~clientAccess](./doc/api/api.md#module_@the-/server.helpers.ClientAccess~clientAccess)
 - module:@the-/server.helpers.InfoFlusher

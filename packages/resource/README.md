@@ -99,8 +99,12 @@ tryExample().catch((err) => console.error(err))
   - [~ListenMixed](./doc/api/api.md#module_@the-/resource.mixins.listenMix~ListenMixed)
 - module:@the-/resource.mixins.queueMix
   - [~QueueMixed](./doc/api/api.md#module_@the-/resource.mixins.queueMix~QueueMixed)
+- module:@the-/resource.mixins.queueMix~QueueMixed
+  - [#createWithQueue()](./doc/api/api.md#module_@the-/resource.mixins.queueMix~QueueMixed#createWithQueue)
 - module:@the-/resource.mixins.writeOnceMix
   - [~WriteOnce](./doc/api/api.md#module_@the-/resource.mixins.writeOnceMix~WriteOnce)
+- module:@the-/resource.TheResource
+  - [#createWithQueue()](./doc/api/api.md#module_@the-/resource.TheResource#createWithQueue)
 - TheResource
   - [#emptyList()](./doc/api/api.md#TheResource#emptyList)
   - [#invalidated(attributes)](./doc/api/api.md#TheResource#invalidated)

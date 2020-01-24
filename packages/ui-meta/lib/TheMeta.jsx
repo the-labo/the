@@ -82,8 +82,6 @@ TheMeta.Root = React.memo(function TheMetaRoot({ children, title }) {
   )
 })
 
-TheMeta.contextType = MetaContext
-
 TheMeta.propTypes = {
   /** Render children */
   render: PropTypes.func,

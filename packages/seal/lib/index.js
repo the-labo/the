@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/seal
  * @typicalname seal
- * @version 15.4.10
+ * @version 15.4.12
  */
 'use strict'
 
