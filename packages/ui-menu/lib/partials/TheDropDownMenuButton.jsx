@@ -1,6 +1,7 @@
 'use strict'
 
 import c from 'classnames'
+import React from 'react'
 import { TheIcon } from '@the-/ui-icon'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
 

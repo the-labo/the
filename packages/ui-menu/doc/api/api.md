@@ -8,17 +8,12 @@
 </dd>
 </dl>
 
-## Classes
-
-<dl>
-<dt><a href="#TheDropDownMenu">TheDropDownMenu</a></dt>
-<dd><p>Drop down menu</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#TheDropDownMenu">TheDropDownMenu()</a></dt>
+<dd><p>Drop down menu</p>
+</dd>
 <dt><a href="#TheMenu">TheMenu()</a></dt>
 <dd><p>Menu of the-components</p>
 </dd>
@@ -35,13 +30,13 @@
 ## @the-/ui-menu
 Menu of the-components
 
-**Version**: 16.0.0  
+**Version**: 16.0.2  
 <a name="TheDropDownMenu"></a>
 
-## TheDropDownMenu
+## TheDropDownMenu()
 Drop down menu
 
-**Kind**: global class  
+**Kind**: global function  
 <a name="TheMenu"></a>
 
 ## TheMenu()
