@@ -5,7 +5,7 @@
 ## @the-/setting
 Setting manager for the-framework
 
-**Version**: 15.4.8  
+**Version**: 15.4.13  
 **License**: MIT  
 
 * [@the-/setting](#module_@the-/setting)

@@ -1,6 +1,5 @@
 'use strict'
 
-const amkdirp = require('amkdirp')
 const {
   ResourceEvents: {
     ENTITY_CREATE,
@@ -13,6 +12,7 @@ const {
 } = require('clay-constants')
 const cluster = require('cluster')
 const fs = require('fs')
+const mkdirp = require('mkdirp')
 const { EOL } = require('os')
 const path = require('path')
 const {
@@ -172,7 +172,7 @@ const TheLogResource = ({ define }) => {
       }
 
       Log._flushTask = (async () => {
-        await amkdirp(path.dirname(Log.filename))
+        await mkdirp(path.dirname(Log.filename))
         for (const resourceName of Object.keys(Log.data)) {
           const entries = Object.entries(Log.data[resourceName])
           Log.data[resourceName] = {}

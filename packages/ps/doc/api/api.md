@@ -5,7 +5,7 @@
 ## @the-/ps
 Process manager for the-framework
 
-**Version**: 15.5.3  
+**Version**: 15.5.5  
 **License**: MIT  
 
 * [@the-/ps](#module_@the-/ps)

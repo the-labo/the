@@ -10,8 +10,6 @@ const terminate = require('terminate')
 const yesno = require('yesno')
 const { isProduction } = require('@the-/check-env')
 
-console.log(yesno)
-
 /**
  * @memberof module:@the-/ps
  * @class ThePS

@@ -1,7 +1,7 @@
 {
   "name": "@the-/db",
   "description": "DB for the-framework",
-  "version": "17.1.14",
+  "version": "17.2.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -20,7 +20,6 @@
     "@the-/refresher": "^15.4.0",
     "@the-/resource": "^15.4.13",
     "@the-/util-db": "^15.4.13",
-    "amkdirp": "^2.0.0",
     "asfs": "^2.2.3",
     "asleep": "^1.0.3",
     "aslogger": "^2.0.1",
@@ -36,7 +35,7 @@
     "debug": "^4.1.1",
     "execcli": "^5.0.6",
     "is-class": "0.0.9",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^1.0.3",
     "msgpack5": "^4.2.1",
     "mysql2": "^2.1.0",
     "uuid": "^3.4.0"

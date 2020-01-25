@@ -5,7 +5,7 @@
 ## @the-/seat
 Shared value manager
 
-**Version**: 15.4.8  
+**Version**: 15.4.13  
 **License**: MIT  
 
 * [@the-/seat](#module_@the-/seat)

@@ -1,7 +1,7 @@
 {
   "name": "@the-/ps",
   "description": "Process manager for the-framework",
-  "version": "15.5.3",
+  "version": "15.5.5",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,7 +14,7 @@
   "dependencies": {
     "@the-/check-env": "^15.6.0",
     "asleep": "^1.0.3",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^1.0.3",
     "npid": "^0.4.0",
     "ps-list": "^6.3.0",
     "terminate": "^2.1.2",

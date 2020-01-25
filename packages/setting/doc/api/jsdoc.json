@@ -13,7 +13,7 @@
     "name": "@the-/setting",
     "order": 3,
     "typicalname": "setting",
-    "version": "15.4.8"
+    "version": "15.4.13"
   },
   {
     "description": "Delete value for name",

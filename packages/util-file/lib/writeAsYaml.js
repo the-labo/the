@@ -10,6 +10,7 @@ const path = require('path')
  * @function writeAsYaml
  * @param {string} filename
  * @param {Object} data
+ * @param {Object} [options={}]
  * @returns {Promise<Object>} yaml data
  */
 async function writeAsYaml(filename, data, options = {}) {

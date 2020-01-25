@@ -5,7 +5,7 @@
 ## @the-/util-file
 File utility for the-framework
 
-**Version**: 15.5.2  
+**Version**: 15.6.3  
 **License**: MIT  
 
 * [@the-/util-file](#module_@the-/util-file)
@@ -19,7 +19,7 @@ File utility for the-framework
     * [.statSync(filename)](#module_@the-/util-file.statSync) ⇒ <code>\*</code>
     * [.writeAsJson(filename, data, [options])](#module_@the-/util-file.writeAsJson) ⇒ <code>Promise</code>
     * [.writeAsJsonSync(filename, data, [options])](#module_@the-/util-file.writeAsJsonSync)
-    * [.writeAsYaml(filename, data)](#module_@the-/util-file.writeAsYaml) ⇒ <code>Promise.&lt;Object&gt;</code>
+    * [.writeAsYaml(filename, data, [options])](#module_@the-/util-file.writeAsYaml) ⇒ <code>Promise.&lt;Object&gt;</code>
 
 <a name="module_@the-/util-file.copyAsJsonSync"></a>
 
@@ -130,14 +130,15 @@ Read file as YAML
 
 <a name="module_@the-/util-file.writeAsYaml"></a>
 
-### utilFile.writeAsYaml(filename, data) ⇒ <code>Promise.&lt;Object&gt;</code>
+### utilFile.writeAsYaml(filename, data, [options]) ⇒ <code>Promise.&lt;Object&gt;</code>
 Read file as YAML
 
 **Kind**: static method of [<code>@the-/util-file</code>](#module_@the-/util-file)  
 **Returns**: <code>Promise.&lt;Object&gt;</code> - yaml data  
 
-| Param | Type |
-| --- | --- |
-| filename | <code>string</code> | 
-| data | <code>Object</code> | 
+| Param | Type | Default |
+| --- | --- | --- |
+| filename | <code>string</code> |  | 
+| data | <code>Object</code> |  | 
+| [options] | <code>Object</code> | <code>{}</code> | 
 
