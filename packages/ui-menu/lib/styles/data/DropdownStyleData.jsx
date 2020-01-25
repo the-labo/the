@@ -13,17 +13,23 @@ function DropdownStyleData({
 }) {
   return asStyleData({
     '.the-dropdown-menu': {
+      '.the-menu': {
+        margin: 0,
+      },
+      '.the-menu-item': {
+        '&:hover': {
+          '&:active': {
+            background: '#F5F5F5',
+          },
+          background: '#FAFAFA',
+        },
+        marginBottom: '-1px',
+        maxHeight: '0em',
+        transition: `max-height ${animationDuration}ms`,
+      },
       display: 'inline-block',
       maxWidth: contentWidth,
       position: 'relative',
-    },
-    '.the-dropdown-menu .the-menu': {
-      margin: 0,
-    },
-    '.the-dropdown-menu .the-menu-item': {
-      marginBottom: '-1px',
-      maxHeight: '0em',
-      transition: `max-height ${animationDuration}ms`,
     },
     '.the-dropdown-menu-button': {
       '.the-dropdown-menu-button-icon': {

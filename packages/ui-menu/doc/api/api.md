@@ -30,7 +30,7 @@
 ## @the-/ui-menu
 Menu of the-components
 
-**Version**: 16.0.2  
+**Version**: 16.0.4  
 <a name="TheDropDownMenu"></a>
 
 ## TheDropDownMenu()
