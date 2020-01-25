@@ -48,6 +48,7 @@ const TheDropDownMenu = (props) => {
     if (!history) {
       return
     }
+
     const unlisten = history.listen(onClose)
     return () => {
       unlisten()
