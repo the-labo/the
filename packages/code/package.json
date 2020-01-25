@@ -17,7 +17,7 @@
   "dependencies": {
     "@the-/ast": "^16.1.0",
     "@the-/const-code": "^15.5.1",
-    "@the-/util-file": "^15.6.3",
+    "@the-/util-file": "^15.6.4",
     "@the-/util-path": "^15.4.4",
     "aglob": "^3.0.2",
     "asfs": "^2.2.4",

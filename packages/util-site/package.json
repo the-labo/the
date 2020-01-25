@@ -18,7 +18,7 @@
     "qs": "^6.9.1"
   },
   "devDependencies": {
-    "@the-/seat": "^15.4.6"
+    "@the-/seat": "^15.4.13"
   },
   "engines": {
     "node": ">=10",

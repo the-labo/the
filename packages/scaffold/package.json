@@ -15,7 +15,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "asfs": "^2.2.3",
+    "asfs": "^2.2.4",
     "askconfig": "^4.0.4",
     "asobj": "^3.0.1",
     "commander": "^4.1.0",

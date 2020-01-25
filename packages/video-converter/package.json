@@ -16,7 +16,7 @@
     "@ffprobe-installer/ffprobe": "^1.0.12",
     "@the-/assert": "^15.4.1",
     "@the-/tmp": "^15.4.5",
-    "asfs": "^2.2.3",
+    "asfs": "^2.2.4",
     "filecopy": "^4.0.2",
     "video-extensions": "^1.1.0"
   },

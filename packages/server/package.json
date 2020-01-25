@@ -21,7 +21,7 @@
     "adigest": "^3.0.1",
     "aport": "^2.0.0",
     "aredis": "^2.0.1",
-    "asfs": "^2.2.3",
+    "asfs": "^2.2.4",
     "asleep": "^1.0.3",
     "debug": "^4.1.1",
     "is-class": "0.0.9",
@@ -36,7 +36,7 @@
     "stringcase": "^4.3.1"
   },
   "devDependencies": {
-    "@the-/client": "^15.8.4",
+    "@the-/client": "^15.8.6",
     "arequest": "^3.0.2",
     "msgpack-lite": "^0.1.26",
     "react": "^16.12.0",

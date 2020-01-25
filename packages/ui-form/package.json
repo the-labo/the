@@ -22,7 +22,7 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@the-/ui-button": "^16.0.1",
+    "@the-/ui-button": "^16.0.2",
     "@the-/ui-demo": "^16.0.3",
     "@the-/ui-input": "^17.0.2",
     "@the-/ui-router": "^16.0.1",

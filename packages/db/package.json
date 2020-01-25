@@ -20,7 +20,7 @@
     "@the-/refresher": "^15.4.0",
     "@the-/resource": "^15.4.13",
     "@the-/util-db": "^15.4.13",
-    "asfs": "^2.2.3",
+    "asfs": "^2.2.4",
     "asleep": "^1.0.3",
     "aslogger": "^2.0.1",
     "asobj": "^3.0.1",

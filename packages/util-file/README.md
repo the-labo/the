@@ -94,7 +94,7 @@ tryExample().catch((err) => console.error(err))
   - [.statSync(filename)](./doc/api/api.md#module_@the-/util-file.statSync)
   - [.writeAsJson(filename,data,options)](./doc/api/api.md#module_@the-/util-file.writeAsJson)
   - [.writeAsJsonSync(filename,data,options)](./doc/api/api.md#module_@the-/util-file.writeAsJsonSync)
-  - [.writeAsYaml(filename,data)](./doc/api/api.md#module_@the-/util-file.writeAsYaml)
+  - [.writeAsYaml(filename,data,options)](./doc/api/api.md#module_@the-/util-file.writeAsYaml)
 - module.module:@the-/util-file
   - [.delSync(filename)](./doc/api/api.md#module.module_@the-/util-file.delSync)
 
