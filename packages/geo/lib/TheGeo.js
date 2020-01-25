@@ -52,9 +52,9 @@ class TheGeo {
   /**
    * Watch position change
    * @param {Function} callback
-   * @param {Object} [options] - Optional settings
+   * @returns {function()} unwatch function
    */
-  watch(callback, options = {}) {
+  watch(callback) {
     const { enableHighAccuracy, maximumAge, timeout } = this
     const geolocation = get('navigator.geolocation')
     const watchId = geolocation.watchPosition(
