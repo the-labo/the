@@ -1,6 +1,6 @@
 'use strict'
 
-import React from 'react'
+import React, { useCallback, useMemo, useState } from 'react'
 import { TheMap, TheMapPositionInput } from '@the-/ui-map'
 import { TheMapStyle } from '@the-/ui-map/styles'
 import { TheSpinStyle } from '@the-/ui-spin/styles'
@@ -25,65 +25,154 @@ const MapLayers = [
   },
 ]
 
-class ExampleComponent extends React.Component {
-  handleChange = ({ bounds: { east, north, south, west }, lat, lng, zoom }) => {
-    this.setState({ lat, lng, zoom })
-    console.log('bounds changed', { east, north, south, west })
-  }
-
-  handleClick = ({ lat, lng }) => {
-    const {
-      state: { markers },
-    } = this
-    console.log('Map clicked', { lat, lng })
-    const name = `m${String(markers.length + 1).padStart(2, '0')}`
-    const markerValues = {
-      lat,
-      lng,
+const ExampleComponent = () => {
+  const tmp = useMemo(() => ({}), [])
+  const [target, setTarget] = useState({
+    lat: 35.6895,
+    lng: 139.6917,
+    zoom: 13,
+  })
+  const [markers, setMarkers] = useState([
+    {
+      key: 'marker-01',
+      lat: 51.505,
+      lng: -0.09,
       node: (
         <div
           style={{
-            background: '#EE1',
+            background: '#E33',
             borderRadius: '50%',
             color: 'white',
-            height: 22,
-            lineHeight: '22px',
+            height: 48,
+            lineHeight: '48px',
             textAlign: 'center',
-            width: 22,
+            width: 48,
           }}
         >
-          <div>{name}</div>
+          <div>Mrkr01</div>
         </div>
       ),
-      onClick: () => console.log('node clicked', name),
-    }
-    this.setMarker(name, markerValues)
+      onClick: () => console.log('marker01 clicked'),
+    },
+    {
+      key: 'me',
+      lat: 35.68184060244455,
+      lng: 139.64172363281253,
+      node: <h5 style={{ background: 'green', color: 'white' }}>this is me</h5>,
+    },
+  ])
 
-    setInterval(() => {
-      const marker = this.getMarker(name)
-      const lng = marker.lng + 0.001
-      const lat = marker.lat + 0.001
-      this.setMarker(name, {
-        ...marker,
+  tmp.markers = markers
+
+  const getMarker = useCallback(
+    (key) => tmp.markers.find((m) => m.key === key),
+    [tmp],
+  )
+
+  const [polylines] = useState([
+    {
+      color: 'red',
+      key: 'polyline-01',
+      positions: new Array(100)
+        .fill({
+          lat: 35.6895,
+          lng: 139.6917,
+        })
+        .map(({ lat, lng }, i) => [
+          lat + i * Math.random(),
+          lng + i * Math.random(),
+        ]),
+    },
+  ])
+
+  const setMarker = useCallback(
+    (key, values) => {
+      setMarkers([
+        ...tmp.markers.filter((m) => m.key !== key),
+        { key, ...values },
+      ])
+    },
+    [tmp],
+  )
+
+  const [popups] = useState([
+    {
+      for: 'marker-01',
+      key: 'popup-01',
+      node: <div>This is popup01 for marker01</div>,
+    },
+  ])
+
+  const handleChange = useCallback(
+    ({ bounds: { east, north, south, west }, lat, lng, zoom }) => {
+      setTarget({ lat, lng, zoom })
+      console.log('bounds changed', { east, north, south, west })
+    },
+    [],
+  )
+
+  const handleClick = useCallback(
+    ({ lat, lng }) => {
+      console.log('Map clicked', { lat, lng })
+      const name = `m${String(markers.length + 1).padStart(2, '0')}`
+      const markerValues = {
         lat,
         lng,
-      })
-      console.log('Marker moved', name, { lat, lng })
-    }, 1000)
-  }
+        node: (
+          <div
+            style={{
+              background: '#EE1',
+              borderRadius: '50%',
+              color: 'white',
+              height: 22,
+              lineHeight: '22px',
+              textAlign: 'center',
+              width: 22,
+            }}
+          >
+            <div>{name}</div>
+          </div>
+        ),
+        onClick: () => console.log('node clicked', name),
+      }
+      setMarker(name, markerValues)
 
-  handleLeafletMap = (map) => {
-    this.map = map
-  }
+      const timer = setInterval(() => {
+        const marker = getMarker(name)
+        const lng = marker.lng + 0.001
+        const lat = marker.lat + 0.001
+        setMarker(name, {
+          ...marker,
+          lat,
+          lng,
+        })
+        console.log('Marker moved', name, { lat, lng })
+      }, 1000)
+      return () => {
+        clearInterval(timer)
+      }
+    },
+    [markers, setMarker],
+  )
 
-  handleUpdate = ({ pos01 }) => {
-    const { lat, lng, zoom } = pos01
-    this.setState({
-      post01: { lat, lng, zoom },
-    })
-  }
+  const handleLeafletMap = useCallback((map) => {
+    tmp.map = map
+  }, [])
 
-  moveToCurrent = () => {
+  const [post01, setPost01] = useState({
+    lat: 0,
+    lng: 0,
+    zoom: 1,
+  })
+  const handleUpdate = useCallback(
+    ({ pos01 }) => {
+      const { lat, lng, zoom } = pos01
+      setPost01({ lat, lng, zoom })
+    },
+    [setPost01],
+  )
+
+  const moveToCurrent = useCallback(() => {
     navigator.geolocation.getCurrentPosition(
       ({ coords }) => {
         const { latitude: lat, longitude: lng } = coords
@@ -91,117 +180,50 @@ class ExampleComponent extends React.Component {
       },
       () => alert('Failed to get current position'),
     )
-  }
+  }, [])
 
-  state = {
-    lat: 35.6895,
-    lng: 139.6917,
-    markers: [
-      {
-        key: 'marker-01',
-        lat: 51.505,
-        lng: -0.09,
-        node: (
-          <div
-            style={{
-              background: '#E33',
-              borderRadius: '50%',
-              color: 'white',
-              height: 48,
-              lineHeight: '48px',
-              textAlign: 'center',
-              width: 48,
-            }}
-          >
-            <div>Mrkr01</div>
-          </div>
-        ),
-        onClick: () => console.log('marker01 clicked'),
-      },
-    ],
-    polylines: [
-      {
-        color: 'red',
-        key: 'polyline-01',
-        positions: new Array(100)
-          .fill({
-            lat: 35.6895,
-            lng: 139.6917,
-          })
-          .map(({ lat, lng }, i) => [
-            lat + i * Math.random(),
-            lng + i * Math.random(),
-          ]),
-      },
-    ],
-    popups: [
-      {
-        for: 'marker-01',
-        key: 'popup-01',
-        node: <div>This is popup01 for marker01</div>,
-      },
-    ],
-    zoom: 13,
-  }
+  const { lat, lng, zoom } = target
+  return (
+    <div>
+      <TheSpinStyle />
+      <TheMapStyle />
+      <TheMap
+        height='50vh'
+        lat={lat}
+        layers={MapLayers}
+        lng={lng}
+        markers={markers}
+        onChange={handleChange}
+        onClick={handleClick}
+        onLeafletMap={handleLeafletMap}
+        polylines={polylines}
+        popups={popups}
+        width='480px'
+        zoom={zoom}
+      />
 
-  getMarker(key) {
-    return this.state.markers.find((m) => m.key === key)
-  }
+      <hr />
 
-  render() {
-    const {
-      state: { lat, lng, markers, polylines, post01, zoom },
-    } = this
-    return (
-      <div>
-        <TheSpinStyle />
-        <TheMapStyle />
-        <TheMap
-          height='50vh'
-          lat={lat}
-          layers={MapLayers}
-          lng={lng}
-          markers={markers}
-          onChange={this.handleChange}
-          onClick={this.handleClick}
-          onLeafletMap={this.handleLeafletMap}
-          polylines={polylines}
-          width='480px'
-          zoom={zoom}
+      <button onClick={moveToCurrent}>Move to current</button>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <hr />
+      <section>
+        <h1>As Input</h1>
+        <TheMapPositionInput
+          name='pos01'
+          onUpdate={handleUpdate}
+          value={post01}
         />
-
-        <hr />
-
-        <button onClick={this.moveToCurrent}>Move to current</button>
-
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <hr />
-        <section>
-          <h1>As Input</h1>
-          <TheMapPositionInput
-            name='pos01'
-            onUpdate={this.handleUpdate}
-            value={post01}
-          />
-        </section>
-      </div>
-    )
-  }
-
-  setMarker(key, values) {
-    const {
-      state: { markers },
-    } = this
-    this.setState({
-      markers: [...markers.filter((m) => m.key !== key), { key, ...values }],
-    })
-  }
+      </section>
+    </div>
+  )
 }
 
 export default ExampleComponent

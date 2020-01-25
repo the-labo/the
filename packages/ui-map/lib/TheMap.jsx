@@ -57,6 +57,7 @@ const TheMap = React.memo((props) => {
 
   const needsChange = useCallback(
     (options = {}) => {
+      const { mapAccess } = tmp
       if (!mapAccess) {
         return
       }
@@ -75,7 +76,7 @@ const TheMap = React.memo((props) => {
 
       onChange && onChange(mapData)
     },
-    [mapAccess],
+    [tmp],
   )
 
   const mapEventHandlers = useMemo(

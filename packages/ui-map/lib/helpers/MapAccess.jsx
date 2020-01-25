@@ -90,25 +90,21 @@ function MapAccess(map, { TileLayerClass }) {
             continue
           }
         }
-        const marker = mapAccess.getMarker(key)
-        if (marker) {
-          const { height, lat, lng, node, onClick, width } = options
-          marker.setLatLng({ lat, lng })
-          marker.node = markerNodeFor({
-            height,
-            marker,
-            node,
-            onClick,
-            width,
-          })
-          mapMarkersNodes[key] = marker.node
-        } else {
-          const marker = mapAccess.addMarker(key, {
+        const { height, lat, lng, node, onClick, width } = options
+        const marker =
+          mapAccess.getMarker(key) ||
+          mapAccess.addMarker(key, {
             interactive: !freezed,
             ...options,
           })
-          mapMarkersNodes[key] = marker.node
-        }
+        marker.setLatLng({ lat, lng })
+        mapMarkersNodes[key] = markerNodeFor({
+          height,
+          marker,
+          node,
+          onClick,
+          width,
+        })
       }
       const keysToRemain = markers.map(({ key }) => key)
       const markerKeysToRemove = mapAccess

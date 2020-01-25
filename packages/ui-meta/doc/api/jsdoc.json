@@ -12,7 +12,7 @@
     "name": "@the-/ui-meta",
     "order": 0,
     "typicalname": "uiMeta",
-    "version": "15.4.17"
+    "version": "15.4.18"
   },
   {
     "description": "Dynamic meta attribute injector for the-components",
@@ -37,7 +37,7 @@
     "memberof": "TheMeta.propTypes",
     "meta": {
       "filename": "TheMeta.jsx",
-      "lineno": 87,
+      "lineno": 90,
       "path": "lib"
     },
     "name": "render",
@@ -52,7 +52,7 @@
     "memberof": "TheMeta.propTypes",
     "meta": {
       "filename": "TheMeta.jsx",
-      "lineno": 89,
+      "lineno": 92,
       "path": "lib"
     },
     "name": "title",

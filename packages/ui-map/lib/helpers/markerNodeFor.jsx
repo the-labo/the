@@ -13,9 +13,10 @@ export default function markerNodeFor({
   onClick,
   width = tappableSize,
 }) {
+  const element = marker.getElement()
   return (
     <TheMapMarker
-      container={marker.getElement()}
+      container={element}
       onClick={onClick}
       style={{ height, width }}
     >
