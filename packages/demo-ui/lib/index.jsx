@@ -4,7 +4,7 @@
  * @description Demo of the-components
  * @module @the-/demo-ui
  * @typicalname demoUi
- * @version 15.4.13
+ * @version 15.4.14
  */
 'use strict'
 

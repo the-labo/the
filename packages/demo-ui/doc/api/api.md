@@ -5,7 +5,7 @@
 ## @the-/demo-ui
 Demo of the-components
 
-**Version**: 15.4.13  
+**Version**: 15.4.14  
 
 * [@the-/demo-ui](#module_@the-/demo-ui)
     * [.TheDemoUi](#module_@the-/demo-ui.TheDemoUi) ⇐ <code>React.Component</code>

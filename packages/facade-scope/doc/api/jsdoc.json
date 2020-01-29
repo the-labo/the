@@ -13,7 +13,7 @@
     "name": "@the-/facade-scope",
     "order": 38,
     "typicalname": "facadeScope",
-    "version": "16.1.25"
+    "version": "16.1.27"
   },
   {
     "description": "Operation handlers",

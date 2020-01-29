@@ -1,7 +1,7 @@
 {
   "name": "@the-/demo-ui",
   "description": "Demo of the-components",
-  "version": "15.4.13",
+  "version": "15.4.14",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,6 +14,7 @@
     "@the-/ui-style": "^16.0.2",
     "@the-/util-ui": "^16.3.3",
     "classnames": "^2.2.6",
+    "eslint-plugin-jsdoc": "^21.0.0",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {

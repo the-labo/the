@@ -43,9 +43,15 @@ function detailOperationFor(scope) {
       idAccess.set(id)
     },
     async sync(handler) {
+      const { state: id } = idAccess
+      if (!id) {
+        console.warn(
+          '[@the-/facade] sync() is skipped in detail operation because id is missing',
+        )
+        return
+      }
       return busyAccess.while(async () =>
         readyAccess.when(async () => {
-          const { state: id } = idAccess
           const entity = await handler(id)
           entityAccess.set(entity)
         }),
