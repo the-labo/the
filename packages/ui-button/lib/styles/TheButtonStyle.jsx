@@ -74,6 +74,7 @@ TheButtonStyle.data = (options) => {
         display: 'inline-block',
       },
       '.the-button-large-icon': {
+        '&.the-icon': { display: 'block' },
         display: 'block',
         fontSize: '3em',
         margin: '0',
