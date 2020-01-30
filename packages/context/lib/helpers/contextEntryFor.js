@@ -35,7 +35,7 @@ function contextEntryFor(context, { store }) {
       const piped = pipe(store.state)
       if (typeof piped === 'undefined') {
         console.warn(
-          `[@the-/context] render returns undefined in ${ContextEntry.displayName}. Should returns null`,
+          `[@the-/context] pipe returns undefined in ${ContextEntry.displayName}. Should returns null`,
         )
         return null
       }
@@ -65,10 +65,17 @@ function contextEntryFor(context, { store }) {
       }
     }, [tmp, store])
 
-    return renderer({
+    const rendered = renderer({
       ...initialized,
       ...piped,
     })
+    if (typeof rendered === 'undefined') {
+      console.warn(
+        `[@the-/context] render returns undefined in ${ContextEntry.displayName}. Should returns null`,
+      )
+      return null
+    }
+    return rendered
   }
 
   ContextEntry.propTypes = {
