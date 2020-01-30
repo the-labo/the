@@ -31,9 +31,6 @@ function contextEntryFor(context, { store }) {
     tmp.pipe = pipe
 
     const getPiped = useCallback(() => {
-      if (!store.state) {
-        return null
-      }
       const { pipe } = tmp
       const piped = pipe(store.state)
       if (typeof piped === 'undefined') {
@@ -42,7 +39,7 @@ function contextEntryFor(context, { store }) {
         )
         return null
       }
-      return pipe
+      return piped
     }, [store])
 
     const initialized = useMemo(() => init(store.state), [store])
@@ -57,7 +54,7 @@ function contextEntryFor(context, { store }) {
       }
 
       setPiped(newPiped)
-    }, [])
+    }, [setPiped, getPiped])
 
     useEffect(() => {
       const { updatePiped } = tmp

@@ -1,7 +1,7 @@
 {
   "name": "@the-/context",
   "description": "React context for the-components",
-  "version": "18.0.7",
+  "version": "18.1.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
