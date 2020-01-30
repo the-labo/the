@@ -22,12 +22,19 @@ function contextEntryFor(context, { store }) {
   function ContextEntry(props) {
     const { init, pipe } = props
     const renderer = useMemo(() => props.children, [props.children])
-    const tmp = useMemo(() => ({}), [])
+    const tmp = useMemo(
+      () => ({
+        pipe,
+      }),
+      [],
+    )
+    tmp.pipe = pipe
 
     const getPiped = useCallback(() => {
       if (!store.state) {
         return null
       }
+      const { pipe } = tmp
       const piped = pipe(store.state)
       if (typeof piped === 'undefined') {
         console.warn(
@@ -36,7 +43,7 @@ function contextEntryFor(context, { store }) {
         return null
       }
       return pipe
-    }, [pipe, store])
+    }, [store])
 
     const initialized = useMemo(() => init(store.state), [store])
     const [piped, setPiped] = useState(getPiped())
@@ -50,7 +57,7 @@ function contextEntryFor(context, { store }) {
       }
 
       setPiped(newPiped)
-    }, [setPiped, getPiped])
+    }, [])
 
     useEffect(() => {
       const { updatePiped } = tmp
