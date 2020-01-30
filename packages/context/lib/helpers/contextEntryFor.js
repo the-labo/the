@@ -23,7 +23,16 @@ function contextEntryFor(context, { store }) {
     const { init, pipe } = props
     const renderer = useMemo(() => props.children, [props.children])
 
-    const getPiped = useCallback(() => pipe(store.state), [pipe, store])
+    const getPiped = useCallback(() => {
+      const piped = pipe(store.state)
+      if (typeof piped === 'undefined') {
+        console.warn(
+          `[@the-/context] render returns undefined in ${ContextEntry.displayName}. Should returns null`,
+        )
+        return null
+      }
+      return pipe
+    }, [pipe, store])
 
     const initialized = useMemo(() => init(store.state), [store])
     const [piped, setPiped] = useState(getPiped())
