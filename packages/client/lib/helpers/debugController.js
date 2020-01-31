@@ -1,5 +1,7 @@
 'use strict'
 
+const { get } = require('bwindow')
+
 const methodsToSkip = [
   'debugWrap',
   'toString',
@@ -19,7 +21,9 @@ const methodsToSkip = [
  * @returns {*}
  */
 function debugController(controller) {
-  const TOO_LONG_THRESHOLD = 3000
+  const TOO_LONG_THRESHOLD = Number(
+    get('locationStorage.THE_CLIENT_DEBUG_TOO_LONG_THRESHOLD') || 3000,
+  )
   return new Proxy(controller, {
     get(instance, name) {
       const value = instance[name]
