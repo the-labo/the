@@ -1,5 +1,5 @@
 /**
- * Test for cleanupRedundantObjectPatternOnObjectExpression.
+ * @file Test for cleanupRedundantObjectPatternOnObjectExpression.
  * Runs with mocha.
  */
 'use strict'

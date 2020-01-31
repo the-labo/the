@@ -1,5 +1,5 @@
 /**
- * Test for processJSArray.
+ * @file Test for processJSArray.
  * Runs with mocha.
  */
 'use strict'

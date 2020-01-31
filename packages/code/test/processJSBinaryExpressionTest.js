@@ -1,5 +1,5 @@
 /**
- * Test for processJSBinaryExpression.
+ * @file Test for processJSBinaryExpression.
  * Runs with mocha.
  */
 'use strict'

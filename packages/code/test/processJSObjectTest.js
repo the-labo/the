@@ -1,5 +1,5 @@
 /**
- * Test for processJSObject.
+ * @file Test for processJSObject.
  * Runs with mocha.
  */
 /* eslint-disable no-template-curly-in-string */

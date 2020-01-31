@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for run.
+ * @file Test for run.
  * Runs with mocha.
  */
 describe('run', () => {

@@ -1,5 +1,5 @@
 /**
- * Test for processJSChaining.
+ * @file Test for processJSChaining.
  * Runs with mocha.
  */
 'use strict'

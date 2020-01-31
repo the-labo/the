@@ -1,5 +1,5 @@
 /**
- * Test for combineObjectPatternOnStatementNode.
+ * @file Test for combineObjectPatternOnStatementNode.
  * Runs with mocha.
  */
 'use strict'

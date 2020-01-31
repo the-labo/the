@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for normalizeBinaryExpressionNode.
+ * @file Test for normalizeBinaryExpressionNode.
  * Runs with mocha.
  */
 describe('normalize-binary-expression-node', () => {

@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * Test for processYAML.
+ * @file Test for processYAML.
  * Runs with mocha.
  */
 const {

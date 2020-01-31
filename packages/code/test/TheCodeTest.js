@@ -1,5 +1,5 @@
 /**
- * Test for TheCode.
+ * @file Test for TheCode.
  * Runs with mocha.
  */
 'use strict'

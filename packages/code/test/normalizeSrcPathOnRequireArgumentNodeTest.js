@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for normalizeSrcPathOnRequireArgumentNode.
+ * @file Test for normalizeSrcPathOnRequireArgumentNode.
  * Runs with mocha.
  */
 describe('normalize-src-path-on-require-argument-node', () => {

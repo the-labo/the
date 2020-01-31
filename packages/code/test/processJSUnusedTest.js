@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * Test for processJSUnused.
+ * @file Test for processJSUnused.
  * Runs with mocha.
  */
 const {

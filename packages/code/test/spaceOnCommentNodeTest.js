@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for spaceOnCommentNode.
+ * @file Test for spaceOnCommentNode.
  * Runs with mocha.
  */
 describe('space-on-comment-node', () => {

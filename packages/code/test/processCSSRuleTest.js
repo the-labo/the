@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * Test for processCSSRule.
+ * @file Test for processCSSRule.
  * Runs with mocha.
  */
 const {

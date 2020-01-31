@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for commentModuleOnProgramNode.
+ * @file Test for commentModuleOnProgramNode.
  * Runs with mocha.
  */
 describe('comment-module-on-program-node', () => {

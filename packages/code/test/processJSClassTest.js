@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * Test for processJSClass.
+ * @file Test for processJSClass.
  * Runs with mocha.
  */
 const {

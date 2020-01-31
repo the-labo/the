@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * Test for processJSImport.
+ * @file Test for processJSImport.
  * Runs with mocha.
  */
 const {

@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for cleanupReturnAwaitOnFunctionNode.
+ * @file Test for cleanupReturnAwaitOnFunctionNode.
  * Runs with mocha.
  */
 describe('cleanup-return-await-on-function-node', () => {

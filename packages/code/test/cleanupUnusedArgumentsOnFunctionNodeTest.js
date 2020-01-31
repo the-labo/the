@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for cleanupUnusedArgumentsOnFunctionNode.
+ * @file Test for cleanupUnusedArgumentsOnFunctionNode.
  * Runs with mocha.
  */
 describe('cleanup-unused-arguments-on-function-node', () => {

@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * Test for findJSDocAnnotationsInCommendNode.
+ * @file Test for findJSDocAnnotationsInCommendNode.
  * Runs with mocha.
  */
 const {

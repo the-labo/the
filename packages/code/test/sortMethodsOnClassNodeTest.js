@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for sortMethodsOnClassNode.
+ * @file Test for sortMethodsOnClassNode.
  * Runs with mocha.
  */
 describe('sort-methods-on-class-node', () => {

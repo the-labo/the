@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for cleanupUnusedOnVariableNode.
+ * @file Test for cleanupUnusedOnVariableNode.
  * Runs with mocha.
  */
 describe('cleanup-unused-on-variable-node', () => {

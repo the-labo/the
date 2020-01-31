@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for mergeDuplicateImportOnProgramNode.
+ * @file Test for mergeDuplicateImportOnProgramNode.
  * Runs with mocha.
  */
 describe('merge-duplicate-import-on-program-node', () => {

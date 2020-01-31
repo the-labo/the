@@ -1,5 +1,5 @@
 /**
- * Test for modifyToDestructorOnDeclarationNode.
+ * @file Test for modifyToDestructorOnDeclarationNode.
  * Runs with mocha.
  */
 'use strict'

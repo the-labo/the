@@ -1,5 +1,5 @@
 /**
- * Test for normalizeKindOnVariableDeclarationNode.
+ * @file Test for normalizeKindOnVariableDeclarationNode.
  * Runs with mocha.
  */
 'use strict'

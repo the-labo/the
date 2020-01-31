@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for weightHelper.
+ * @file Test for weightHelper.
  * Runs with mocha.
  */
 describe('weight-helper', () => {

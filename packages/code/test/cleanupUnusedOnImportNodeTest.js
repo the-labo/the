@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for cleanupUnusedOnImportNode.
+ * @file Test for cleanupUnusedOnImportNode.
  * Runs with mocha.
  */
 describe('cleanup-unused-on-import-node', () => {

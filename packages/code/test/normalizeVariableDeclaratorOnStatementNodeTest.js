@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for normalizeVariableDeclaratorOnStatementNode.
+ * @file Test for normalizeVariableDeclaratorOnStatementNode.
  * Runs with mocha.
  */
 describe('normalize-variable-declarator-on-statement-node', () => {

@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for sortCasesOnSwitchStatementNode.
+ * @file Test for sortCasesOnSwitchStatementNode.
  * Runs with mocha.
  */
 describe('sort-cases-on-switch-statement-node', () => {

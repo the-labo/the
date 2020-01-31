@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for sortPropertiesOnObjectNode.
+ * @file Test for sortPropertiesOnObjectNode.
  * Runs with mocha.
  */
 describe('sort-properties-on-object-node', () => {

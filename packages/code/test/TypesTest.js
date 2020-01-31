@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for Types.
+ * @file Test for Types.
  * Runs with mocha.
  */
 describe('types', () => {

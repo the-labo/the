@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for arrayHelper.
+ * @file Test for arrayHelper.
  * Runs with mocha.
  */
 describe('array-helper', () => {

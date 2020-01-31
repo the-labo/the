@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for cleanupUnusedOnArrayPatternNode.
+ * @file Test for cleanupUnusedOnArrayPatternNode.
  * Runs with mocha.
  */
 describe('cleanup-unused-on-array-pattern-node', () => {

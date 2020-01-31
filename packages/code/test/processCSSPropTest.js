@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * Test for processCSSProp.
+ * @file Test for processCSSProp.
  * Runs with mocha.
  */
 const {

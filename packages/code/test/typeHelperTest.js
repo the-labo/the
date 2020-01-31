@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * Test for typeHelper.
+ * @file Test for typeHelper.
  * Runs with mocha.
  */
 const {

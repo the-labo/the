@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * Test for processJSPrettier.
+ * @file Test for processJSPrettier.
  * Runs with mocha.
  */
 const {

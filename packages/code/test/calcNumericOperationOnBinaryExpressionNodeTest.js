@@ -1,5 +1,5 @@
 /**
- * Test for calcNumericOperationOnBinaryExpressionNode.
+ * @file Test for calcNumericOperationOnBinaryExpressionNode.
  * Runs with mocha.
  */
 'use strict'

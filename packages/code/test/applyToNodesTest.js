@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for applyToNodes.
+ * @file Test for applyToNodes.
  * Runs with mocha.
  */
 describe('apply-to-nodes', () => {

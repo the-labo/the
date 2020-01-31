@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * Test for processJSDoc.
+ * @file Test for processJSDoc.
  * Runs with mocha.
  */
 const {
@@ -110,7 +110,7 @@ describe('process-js-doc', () => {
 /**
  *  @param {string}
  *  @param {string|boolean}
- *  @returns {Promise<undefined|boolean>}
+ *  @returns {Promise<void|boolean>}
  */`,
     )
   })

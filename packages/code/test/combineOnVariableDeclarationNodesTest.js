@@ -1,5 +1,5 @@
 /**
- * Test for combineOnVariableDeclarationNodes.
+ * @file Test for combineOnVariableDeclarationNodes.
  * Runs with mocha.
  */
 'use strict'

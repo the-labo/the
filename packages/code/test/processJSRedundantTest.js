@@ -1,5 +1,5 @@
 /**
- * Test for processJSRedundant.
+ * @file Test for processJSRedundant.
  * Runs with mocha.
  */
 'use strict'

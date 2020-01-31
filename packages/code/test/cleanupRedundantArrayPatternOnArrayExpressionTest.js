@@ -1,5 +1,5 @@
 /**
- * Test for cleanupRedundantArrayPatternOnArrayExpression.
+ * @file Test for cleanupRedundantArrayPatternOnArrayExpression.
  * Runs with mocha.
  */
 'use strict'

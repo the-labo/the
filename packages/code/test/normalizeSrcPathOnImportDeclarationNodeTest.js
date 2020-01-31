@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for normalizeSrcPathOnImportDeclarationNode.
+ * @file Test for normalizeSrcPathOnImportDeclarationNode.
  * Runs with mocha.
  */
 describe('normalize-src-path-on-import-declaration-node', () => {

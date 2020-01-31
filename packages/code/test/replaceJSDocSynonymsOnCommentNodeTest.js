@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for normalizeJSDocSynonymsOnCommentNode.
+ * @file Test for normalizeJSDocSynonymsOnCommentNode.
  * Runs with mocha.
  */
 describe('replace-js-doc-synonyms-on-comment-node', () => {

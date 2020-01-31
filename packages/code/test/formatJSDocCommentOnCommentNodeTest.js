@@ -1,5 +1,5 @@
 /**
- * Test for formatJSDocCommentOnCommentNode.
+ * @file Test for formatJSDocCommentOnCommentNode.
  * Runs with mocha.
  */
 'use strict'

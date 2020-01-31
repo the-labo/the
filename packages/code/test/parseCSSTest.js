@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * Test for parseCSS.
+ * @file Test for parseCSS.
  * Runs with mocha.
  */
 const {

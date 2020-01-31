@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for cleanupRedundantQuoteOnObjectPatternNode.
+ * @file Test for cleanupRedundantQuoteOnObjectPatternNode.
  * Runs with mocha.
  */
 describe('cleanup-redundant-quote-on-object-pattern-node', () => {

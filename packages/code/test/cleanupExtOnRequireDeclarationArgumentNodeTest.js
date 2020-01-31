@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for cleanupExtOnRequireDeclarationArgumentNode.
+ * @file Test for cleanupExtOnRequireDeclarationArgumentNode.
  * Runs with mocha.
  */
 describe('cleanup-ext-on-require-declaration-argument-node', () => {

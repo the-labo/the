@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for astHelper.
+ * @file Test for astHelper.
  * Runs with mocha.
  */
 describe('ast-helper', () => {

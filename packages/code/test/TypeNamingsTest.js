@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for TypeNamings.
+ * @file Test for TypeNamings.
  * Runs with mocha.
  */
 describe('type-namings', () => {

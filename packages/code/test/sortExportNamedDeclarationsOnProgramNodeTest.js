@@ -1,5 +1,5 @@
 /**
- * Test for sortExportNamedDeclarationsOnProgramNode.
+ * @file Test for sortExportNamedDeclarationsOnProgramNode.
  * Runs with mocha.
  */
 'use strict'

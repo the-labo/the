@@ -1,5 +1,5 @@
 /**
- * Test for cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode.
+ * @file Test for cleanupEmptyLineBetweenPropertiesOnObjectExpressionNode.
  * Runs with mocha.
  */
 'use strict'

@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for cssHelper.
+ * @file Test for cssHelper.
  * Runs with mocha.
  */
 describe('css-helper', () => {

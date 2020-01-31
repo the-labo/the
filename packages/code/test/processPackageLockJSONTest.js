@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for processPackageLockJSON.
+ * @file Test for processPackageLockJSON.
  * Runs with mocha.
  */
 describe('process-package-lock-jso-n', () => {

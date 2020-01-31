@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for findRequireDeclarationOnProgramNode.
+ * @file Test for findRequireDeclarationOnProgramNode.
  * Runs with mocha.
  */
 describe('find-require-declaration-on-program-node', () => {

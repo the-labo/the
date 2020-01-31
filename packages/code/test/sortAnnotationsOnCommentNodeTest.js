@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for sortAnnotationsOnCommentNode.
+ * @file Test for sortAnnotationsOnCommentNode.
  * Runs with mocha.
  */
 describe('sort-annotations-on-comment-node', () => {

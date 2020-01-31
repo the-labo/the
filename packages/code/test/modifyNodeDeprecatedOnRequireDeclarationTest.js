@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for modifyNodeDeprecatedOnRequireDeclaration.
+ * @file Test for modifyNodeDeprecatedOnRequireDeclaration.
  * Runs with mocha.
  */
 describe('modify-node-deprecated-on-require-declaration', () => {

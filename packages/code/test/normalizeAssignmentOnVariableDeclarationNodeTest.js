@@ -1,5 +1,5 @@
 /**
- * Test for normalizeAssignmentOnVariableDeclarationNode.
+ * @file Test for normalizeAssignmentOnVariableDeclarationNode.
  * Runs with mocha.
  */
 'use strict'

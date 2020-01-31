@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for cleanupEmptyObjectPatternParamsOnFunctionNode.
+ * @file Test for cleanupEmptyObjectPatternParamsOnFunctionNode.
  * Runs with mocha.
  */
 describe('cleanup-empty-object-pattern-params-on-function-node', () => {

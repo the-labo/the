@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for mergeStringConcatenateOnBinaryExpressionNode.
+ * @file Test for mergeStringConcatenateOnBinaryExpressionNode.
  * Runs with mocha.
  */
 describe('merge-string-concatenate-on-binary-expression-node', () => {

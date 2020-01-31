@@ -1,5 +1,5 @@
 /**
- * Test for processJSXExpression.
+ * @file Test for processJSXExpression.
  * Runs with mocha.
  */
 'use strict'

@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for findCJSExportsAssignmentsExpressionOnProgramNode.
+ * @file Test for findCJSExportsAssignmentsExpressionOnProgramNode.
  * Runs with mocha.
  */
 describe('find-cjs-exports-assignments-expression-on-program-node', () => {

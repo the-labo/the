@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * Test for processJSON.
+ * @file Test for processJSON.
  * Runs with mocha.
  */
 const {

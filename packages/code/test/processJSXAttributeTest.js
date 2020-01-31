@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * Test for processJSXAttribute.
+ * @file Test for processJSXAttribute.
  * Runs with mocha.
  */
 const {

@@ -1,5 +1,5 @@
 /**
- * Test for completeJSDocAnnotationsOnProgramNode.
+ * @file Test for completeJSDocAnnotationsOnProgramNode.
  * Runs with mocha.
  */
 'use strict'

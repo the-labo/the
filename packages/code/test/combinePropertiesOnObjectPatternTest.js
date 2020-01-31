@@ -1,5 +1,5 @@
 /**
- * Test for combinePropertiesOnObjectPattern.
+ * @file Test for combinePropertiesOnObjectPattern.
  * Runs with mocha.
  */
 'use strict'

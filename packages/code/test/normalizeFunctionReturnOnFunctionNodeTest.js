@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for normalizeFunctionReturnOnFunctionNode.
+ * @file Test for normalizeFunctionReturnOnFunctionNode.
  * Runs with mocha.
  */
 describe('normalize-function-return-on-function-node', () => {
