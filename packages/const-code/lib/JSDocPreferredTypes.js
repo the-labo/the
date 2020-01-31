@@ -9,11 +9,10 @@ const JSDocPreferredTypes =
     Boolean: 'boolean',
     Number: 'number',
     String: 'string',
-    Void: 'undefined',
+    Void: 'void',
     any: '*',
     array: 'Array',
     object: 'Object',
-    void: 'undefined',
   }
 
 Object.freeze(JSDocPreferredTypes)
