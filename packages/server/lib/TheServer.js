@@ -63,14 +63,6 @@ class TheServer extends RFunc {
       ...rest
     } = config
     debug('config', config)
-    assert(
-      !('scope' in config),
-      "config.scope is no longer supported. Use 'config.inject()' instead",
-    )
-    assert(
-      !('injects' in config),
-      "config.injects is no longer supported. Use 'config.inject()' instead",
-    )
     unlessProduction(() => {
       const restKeys = Object.keys(rest)
       if (restKeys.length > 0) {
@@ -428,9 +420,7 @@ class TheServer extends RFunc {
       sendRPCKeep: (...args) => ioConnector.sendRPCKeep(...args),
     })
     this.ioConnector = ioConnector
-    await new Promise((resolve) => server.listen(port, () => resolve())).then(
-      () => this,
-    )
+    await new Promise((resolve) => server.listen(port, () => resolve()))
   }
 }
 

@@ -21,7 +21,6 @@ function toStreamDriverFactory(StreamFactory, options = {}) {
   const { inject, sessionStore, streamName } = options
   unlessProduction(() => {
     assert(!!StreamFactory, `[TheServer] Controller "${streamName}" is missing`)
-
     assert(
       !isClass(StreamFactory),
       `class base ctrl is no longer available: "${streamName}"`,

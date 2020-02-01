@@ -110,7 +110,7 @@
     "memberof": "TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 203,
+      "lineno": 195,
       "path": "lib"
     },
     "name": "info",
@@ -127,7 +127,7 @@
     "memberof": "TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 220,
+      "lineno": 212,
       "path": "lib"
     },
     "name": "close",
@@ -164,7 +164,7 @@
     "memberof": "TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 246,
+      "lineno": 238,
       "path": "lib"
     },
     "name": "destroyAllSessions",
@@ -191,7 +191,7 @@
     "memberof": "TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 259,
+      "lineno": 251,
       "path": "lib"
     },
     "name": "listen",
