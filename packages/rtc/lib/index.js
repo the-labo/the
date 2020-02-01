@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/rtc
  * @typicalname rtc
- * @version 15.6.5
+ * @version 15.6.6
  */
 'use strict'
 

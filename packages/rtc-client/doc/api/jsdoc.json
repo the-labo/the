@@ -13,7 +13,7 @@
     "name": "@the-/rtc-client",
     "order": 2,
     "typicalname": "rtcClient",
-    "version": "15.9.5"
+    "version": "15.9.6"
   },
   {
     "description": "ChannelNames",
@@ -637,7 +637,7 @@
     "memberof": "module:@the-/rtc.constants.mixins",
     "meta": {
       "filename": "serializeMix.js",
-      "lineno": 9,
+      "lineno": 7,
       "path": "lib/mixins"
     },
     "name": "serializeMix",

@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@msgpack/msgpack": "^1.11.0",
-    "@the-/client": "^15.8.7",
+    "@the-/client": "^17.0.0",
     "arequest": "^3.0.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"

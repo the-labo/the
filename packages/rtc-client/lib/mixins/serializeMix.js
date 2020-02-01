@@ -1,10 +1,8 @@
 'use strict'
 
-const { Converters, ThePack } = require('@the-/pack')
+const { ThePack } = require('@the-/pack')
 
-const { decode, encode } = new ThePack({
-  convert: Converters.UInt8ArrayConverter,
-})
+const { decode, encode } = new ThePack({})
 
 /**
  * Mixin for serialize
@@ -16,7 +14,7 @@ const { decode, encode } = new ThePack({
 function serializeMix(Class) {
   class SerializeMixed extends Class {
     deserializeChannelData(data, options = {}) {
-      return decode(Buffer.from(new Uint8Array(data)))
+      return decode(data)
     }
 
     serializeChannelData(data, options = {}) {
