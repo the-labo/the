@@ -5,7 +5,6 @@ const asleep = require('asleep')
 const http = require('http')
 const { RFunc } = require('rfunc')
 const socketIO = require('socket.io')
-const theAssert = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
 const theTmp = require('@the-/tmp')
 const { redisAdapter } = require('./adapters')
@@ -29,8 +28,6 @@ const { ConnectionStore, SessionStore } = require('./stores')
 const streamDriverPool = require('./streaming/streamDriverPool')
 const toStreamDriverFactory = require('./streaming/toStreamDriverFactory')
 const debug = require('debug')('the:server')
-
-const assert = theAssert('@the-/server')
 
 /**
  * HTTP server for the-framework

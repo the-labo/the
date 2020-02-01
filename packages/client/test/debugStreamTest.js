@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for debugStream.
+ * @file Test for debugStream.
  * Runs with mocha.
  */
 describe('debug-stream', () => {

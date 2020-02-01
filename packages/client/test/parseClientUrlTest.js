@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for parseClientUrl.
+ * @file Test for parseClientUrl.
  * Runs with mocha.
  */
 describe('parse-client-url', () => {

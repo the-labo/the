@@ -1,5 +1,5 @@
 /**
- * Test for InfoAccess.
+ * @file Test for InfoAccess.
  * Runs with mocha.
  */
 'use strict'

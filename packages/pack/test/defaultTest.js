@@ -3,6 +3,7 @@
  * Runs with mocha.
  */
 'use strict'
+
 const {
   strict: { ok },
 } = require('assert')

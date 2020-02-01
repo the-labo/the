@@ -10,9 +10,9 @@ const asleep = require('asleep')
 const {
   strict: { deepEqual, equal, ok },
 } = require('assert')
-const msgpack = require('@msgpack/msgpack')
 const React = require('react')
 const socketIOClient = require('socket.io-client')
+const msgpack = require('@msgpack/msgpack')
 const theClient = require('@the-/client')
 const TheServer = require('../lib/TheServer')
 

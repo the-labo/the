@@ -39,6 +39,7 @@ function contextEntryFor(context, { store }) {
         )
         return null
       }
+
       return piped
     }, [store])
 
@@ -75,6 +76,7 @@ function contextEntryFor(context, { store }) {
       )
       return null
     }
+
     return rendered
   }
 

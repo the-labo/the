@@ -1,5 +1,5 @@
 /**
- * Test for PingSender.
+ * @file Test for PingSender.
  * Runs with mocha.
  */
 'use strict'

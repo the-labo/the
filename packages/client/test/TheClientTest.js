@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * Test for TheClient.
+ * @file Test for TheClient.
  * Runs with mocha.
  */
 const aport = require('aport')

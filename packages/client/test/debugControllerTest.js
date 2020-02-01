@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for debugController.
+ * @file Test for debugController.
  * Runs with mocha.
  */
 describe('debug-controller', () => {

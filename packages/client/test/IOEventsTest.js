@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for IOEvents.
+ * @file Test for IOEvents.
  * Runs with mocha.
  */
 describe('i-o-events', () => {

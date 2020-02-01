@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * Test for asController.
+ * @file Test for asController.
  * Runs with mocha.
  */
 const {

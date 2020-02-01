@@ -63,7 +63,7 @@ class TheGeo {
         const data = { lat, lng }
         this.setCache(data)
         callback(data)
-      }, 
+      },
       (err) => {
         console.warn('[TheGeo] Failed to watch ', err)
       },

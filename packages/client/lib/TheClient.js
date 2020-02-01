@@ -250,16 +250,14 @@ class TheClient extends RFuncClient {
       socket.on(IOEvents.RPC_KEEP, onKeep)
       socket.on(IOEvents.RPC_RETURN, onReturn)
 
-      socket.emit(
-        IOEvents.RPC_CALL,
-        encode({
-          cid,
-          iid,
-          methodName,
-          moduleName,
-          params,
-        }),
-      )
+      const encoded = encode({
+        cid,
+        iid,
+        methodName,
+        moduleName,
+        params,
+      })
+      socket.binary(true).emit(IOEvents.RPC_CALL, encoded)
       debug('rpc call', moduleName, methodName, params)
     })
   }

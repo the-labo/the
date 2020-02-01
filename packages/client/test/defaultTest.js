@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for default.
+ * @file Test for default.
  * Runs with mocha.
  */
 describe('default', () => {

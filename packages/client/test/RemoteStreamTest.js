@@ -1,5 +1,5 @@
 /**
- * Test for RemoteStream.
+ * @file Test for RemoteStream.
  * Runs with mocha.
  */
 'use strict'
