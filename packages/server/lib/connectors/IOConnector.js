@@ -3,19 +3,17 @@
 const NAMESPACE = '/rpc'
 
 const asleep = require('asleep')
-const { Converters: ThePackConverters, ThePack } = require('@the-/pack')
+const { ThePack } = require('@the-/pack')
 const { IOEvents } = require('../constants')
 
-const { decode, encode } = new ThePack({
-  converter: ThePackConverters.NoopConverter,
-})
+const { decode, encode } = new ThePack({})
 
 /**
  * @memberof module:@the-/server.connectors
  * @function IOConnector
  * @returns {*}
  */
-function IOConnector(
+function IOConnector (
   io,
   {
     connectionStore,
@@ -86,10 +84,10 @@ function IOConnector(
   })
 
   const connector = {
-    close() {
+    close () {
       io.close()
     },
-    async sendRPCError(cid, iid, errors) {
+    async sendRPCError (cid, iid, errors) {
       await connector.sendToIOClient(
         cid,
         IOEvents.RPC_RETURN,
@@ -97,7 +95,7 @@ function IOConnector(
         { pack: true },
       )
     },
-    async sendRPCKeep(cid, iid, duration) {
+    async sendRPCKeep (cid, iid, duration) {
       await connector.sendToIOClient(
         cid,
         IOEvents.RPC_KEEP,
@@ -105,7 +103,7 @@ function IOConnector(
         { pack: true },
       )
     },
-    async sendRPCSuccess(cid, iid, data) {
+    async sendRPCSuccess (cid, iid, data) {
       await connector.sendToIOClient(
         cid,
         IOEvents.RPC_RETURN,
@@ -113,26 +111,26 @@ function IOConnector(
         { pack: true },
       )
     },
-    async sendStreamChunk(cid, sid, chunk) {
+    async sendStreamChunk (cid, sid, chunk) {
       await connector.sendToIOClient(
         cid,
         `${IOEvents.STREAM_CHUNK}/${sid}`,
         chunk,
       )
     },
-    async sendStreamDidClose(cid, sid) {
+    async sendStreamDidClose (cid, sid) {
       await connector.sendToIOClient(cid, IOEvents.STREAM_DID_CLOSE, { sid })
     },
-    async sendStreamDidOpen(cid, sid) {
+    async sendStreamDidOpen (cid, sid) {
       await connector.sendToIOClient(cid, IOEvents.STREAM_DID_OPEN, { sid })
     },
-    async sendStreamError(cid, sid, error) {
+    async sendStreamError (cid, sid, error) {
       await connector.sendToIOClient(cid, IOEvents.STREAM_ERROR, { error, sid })
     },
-    async sendStreamFin(cid, sid) {
+    async sendStreamFin (cid, sid) {
       await connector.sendToIOClient(cid, IOEvents.STREAM_FIN, { sid })
     },
-    async sendToIOClient(cid, event, data, options = {}) {
+    async sendToIOClient (cid, event, data, options = {}) {
       if (connectionStore.closed) {
         console.warn(
           `[TheServer] Server already closed and filed to send to "${cid}"`,
@@ -161,7 +159,7 @@ function IOConnector(
       if (connectedSocketIds.length > 0) {
         // TODO 本当に必要なsocketにだけ送るべき ( 同じブラウザの違うtabでcidが重複してしまう )
         for (const socketId of connectedSocketIds) {
-          namespace.to(socketId).emit(event, pack ? encode(data) : data)
+          namespace.to(socketId).emit(event, pack ? Buffer.from(encode(data)) : data)
         }
         return // Send done
       }

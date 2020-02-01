@@ -42,6 +42,7 @@ describe('the-server', function() {
 
     const received = []
     socket.on('client:callback/1/jCtrl/onHoge', (data) => {
+      console.log(data)
       received.push(msgpack.decode(data))
     })
     await new Promise((resolve, reject) => {

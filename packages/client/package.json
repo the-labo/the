@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@the-/check-env": "^15.6.0",
-    "@the-/pack": "^16.0.0",
+    "@the-/pack": "^16.0.2",
     "@the-/queue": "^15.4.12",
     "@the-/stream": "^15.4.12",
     "asleep": "^1.0.3",
