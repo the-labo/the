@@ -87,13 +87,12 @@ tryExample().catch((err) => console.error(err))
 
 
 - module:@the-/pack
-  - [.Converters](./doc/api/api.md#module_@the-/pack.Converters)
   - [.create(args)](./doc/api/api.md#module_@the-/pack.create)
   - [.default](./doc/api/api.md#module_@the-/pack.default)
   - [.ThePack](./doc/api/api.md#module_@the-/pack.ThePack)
 - ThePack
   - [#bind()](./doc/api/api.md#ThePack#bind)
-  - [#decode(buffer)](./doc/api/api.md#ThePack#decode)
+  - [#decode(encoded)](./doc/api/api.md#ThePack#decode)
   - [#encode(data)](./doc/api/api.md#ThePack#encode)
 
 See [API Guide](./doc/api/api.md) for more detail

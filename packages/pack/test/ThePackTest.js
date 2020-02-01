@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * Test for ThePack.
+ * @file Test for ThePack.
  * Runs with mocha.
  */
 const {

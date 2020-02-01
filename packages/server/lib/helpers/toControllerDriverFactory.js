@@ -1,6 +1,5 @@
 'use strict'
 
-const isClass = require('is-class')
 const theAssert = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
 const SessionAccess = require('./SessionAccess')
@@ -20,11 +19,6 @@ function toControllerDriverFactory(ControllerFactory, options = {}) {
     assert(
       !!ControllerFactory,
       `[TheServer] Controller "${controllerName}" is missing`,
-    )
-
-    assert(
-      !isClass(ControllerFactory),
-      `class base ctrl is no longer available: "${controllerName}"`,
     )
   })
 

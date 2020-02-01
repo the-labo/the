@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for Converters.
+ * @file Test for Converters.
  * Runs with mocha.
  */
 describe('converters', () => {

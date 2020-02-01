@@ -1,7 +1,6 @@
 'use strict'
 
 const asleep = require('asleep')
-const isClass = require('is-class')
 const theAssert = require('@the-/assert')
 const { unlessProduction } = require('@the-/check')
 const { TheStream } = require('@the-/stream')
@@ -17,29 +16,25 @@ const assert = theAssert('@the-/server')
  * @protected
  * @returns {*}
  */
-function toStreamDriverFactory(StreamFactory, options = {}) {
+function toStreamDriverFactory (StreamFactory, options = {}) {
   const { inject, sessionStore, streamName } = options
   unlessProduction(() => {
-    assert(!!StreamFactory, `[TheServer] Controller "${streamName}" is missing`)
-    assert(
-      !isClass(StreamFactory),
-      `class base ctrl is no longer available: "${streamName}"`,
-    )
+    assert(!!StreamFactory, `[TheServer] Stream "${streamName}" is missing`)
   })
 
-  function StreamDriverFactory({ cid, ioConnector, params, sid }) {
+  function StreamDriverFactory ({ cid, ioConnector, params, sid }) {
     const { proxy: session } = SessionAccess(sessionStore, cid)
 
     class Stream extends TheStream {
-      async consume(provided) {}
+      async consume (provided) {}
 
-      async streamDidCatch(error) {
+      async streamDidCatch (error) {
         const result = await super.streamDidCatch(error)
         void ioConnector.sendStreamError(cid, sid, error)
         return result
       }
 
-      async streamDidOpen() {
+      async streamDidOpen () {
         const result = await super.streamDidOpen()
         await ioConnector.sendStreamDidOpen(cid, sid)
         for await (const chunk of this.provider.toGenerator()) {
@@ -50,13 +45,13 @@ function toStreamDriverFactory(StreamFactory, options = {}) {
         return result
       }
 
-      async streamWillClose() {
+      async streamWillClose () {
         const result = await super.streamWillClose()
         await ioConnector.sendStreamDidClose(cid, sid)
         return result
       }
 
-      async *provide() {}
+      async * provide () {}
     }
 
     const stream = new Stream()
@@ -68,7 +63,7 @@ function toStreamDriverFactory(StreamFactory, options = {}) {
       ...inject(),
       client: { cid },
       handle: {
-        get closed() {
+        get closed () {
           return stream.closed
         },
         close: () => stream.close(),
