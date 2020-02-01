@@ -12,9 +12,9 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/util-file": "^15.6.4",
+    "@the-/util-file": "^15.6.5",
     "aglob": "^3.0.2",
-    "asfs": "^2.2.4",
+    "asfs": "^2.3.0",
     "asobj": "^3.0.1",
     "binary-extensions": "^2.0.0",
     "builtin-modules": "^3.1.0",

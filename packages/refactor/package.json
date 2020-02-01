@@ -15,8 +15,8 @@
     "@the-/ast": "^16.1.0",
     "abind": "^1.0.5",
     "aglob": "^3.0.2",
-    "asfs": "^2.2.4",
-    "filecopy": "^4.0.2",
+    "asfs": "^2.3.0",
+    "filecopy": "^4.1.0",
     "stringcase": "^4.3.1"
   },
   "devDependencies": {},

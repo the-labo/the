@@ -10,7 +10,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/const-code": "^15.5.1",
+    "@the-/const-code": "^15.5.2",
     "globals": "^12.3.0"
   },
   "engines": {

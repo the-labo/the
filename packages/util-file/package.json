@@ -1,7 +1,7 @@
 {
   "name": "@the-/util-file",
   "description": "File utility for the-framework",
-  "version": "15.6.4",
+  "version": "15.6.5",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,9 +12,9 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "asfs": "^2.2.4",
+    "asfs": "^2.3.0",
     "file-type": "^13.1.2",
-    "fmtjson": "^4.0.6",
+    "fmtjson": "^5.0.1",
     "js-yaml": "^3.13.1",
     "json5": "^2.1.1",
     "mkdirp": "^1.0.3",

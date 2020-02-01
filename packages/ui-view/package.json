@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@the-/const-ui": "^15.5.2",
-    "@the-/ui-button": "^16.0.2",
+    "@the-/ui-button": "^16.0.3",
     "@the-/ui-container": "^16.0.0",
     "@the-/ui-icon": "^16.0.2",
     "@the-/ui-link": "^16.0.3",
@@ -26,7 +26,7 @@
     "@the-/ui-demo": "^16.0.3",
     "@the-/ui-menu": "^16.0.4",
     "@the-/ui-router": "^16.0.1",
-    "coz": "^7.0.19",
+    "coz": "^7.2.0",
     "objnest": "^5.0.10",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",

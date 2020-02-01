@@ -11,9 +11,9 @@
       "path": "lib"
     },
     "name": "@the-/pack",
-    "order": 3,
+    "order": 2,
     "typicalname": "pack",
-    "version": "15.5.1"
+    "version": "16.0.0"
   },
   {
     "description": "Pack handler",
@@ -22,7 +22,7 @@
     "longname": "module:@the-/pack.ThePack",
     "memberof": "module:@the-/pack.ThePack",
     "name": "ThePack",
-    "order": 5
+    "order": 4
   },
   {
     "description": "Bind methods",
@@ -32,11 +32,11 @@
     "memberof": "ThePack",
     "meta": {
       "filename": "ThePack.js",
-      "lineno": 30,
+      "lineno": 20,
       "path": "lib"
     },
     "name": "bind",
-    "order": 6,
+    "order": 5,
     "params": [],
     "returns": [
       {
@@ -57,21 +57,20 @@
     "memberof": "ThePack",
     "meta": {
       "filename": "ThePack.js",
-      "lineno": 42,
+      "lineno": 32,
       "path": "lib"
     },
     "name": "decode",
-    "order": 7,
+    "order": 6,
     "params": [
       {
         "type": {
           "names": [
-            "Buffer",
             "ArrayBuffer"
           ]
         },
         "description": "Buffer to decode",
-        "name": "buffer"
+        "name": "encoded"
       }
     ],
     "returns": [
@@ -94,11 +93,11 @@
     "memberof": "ThePack",
     "meta": {
       "filename": "ThePack.js",
-      "lineno": 69,
+      "lineno": 57,
       "path": "lib"
     },
     "name": "encode",
-    "order": 8,
+    "order": 7,
     "params": [
       {
         "type": {
@@ -114,7 +113,6 @@
       {
         "type": {
           "names": [
-            "Buffer",
             "ArrayBuffer"
           ]
         },
@@ -130,25 +128,11 @@
     "memberof": "module:@the-/pack",
     "meta": {
       "filename": "ThePack.js",
-      "lineno": 9,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "ThePack",
-    "order": 4,
-    "scope": "static"
-  },
-  {
-    "id": "module:@the-/pack.Converters",
-    "kind": "namespace",
-    "longname": "module:@the-/pack.Converters",
-    "memberof": "module:@the-/pack",
-    "meta": {
-      "filename": "Converters.js",
-      "lineno": 11,
-      "path": "lib"
-    },
-    "name": "Converters",
-    "order": 0,
+    "order": 3,
     "scope": "static"
   },
   {
@@ -163,7 +147,7 @@
       "path": "lib"
     },
     "name": "default",
-    "order": 2,
+    "order": 1,
     "scope": "static"
   },
   {
@@ -178,7 +162,7 @@
       "path": "lib"
     },
     "name": "create",
-    "order": 1,
+    "order": 0,
     "params": [
       {
         "type": {

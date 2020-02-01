@@ -5,13 +5,12 @@
 ## @the-/pack
 Message pack wrapper for the-components
 
-**Version**: 15.5.1  
+**Version**: 16.0.0  
 **License**: MIT  
 
 * [@the-/pack](#module_@the-/pack)
     * [.ThePack](#module_@the-/pack.ThePack)
         * [new ThePack()](#new_module_@the-/pack.ThePack_new)
-    * [.Converters](#module_@the-/pack.Converters) : <code>object</code>
     * [.default](#module_@the-/pack.default) : <code>object</code>
     * [.create(...args)](#module_@the-/pack.create) ⇒ <code>ThePack</code>
 
@@ -24,10 +23,6 @@ Message pack wrapper for the-components
 #### new ThePack()
 Pack handler
 
-<a name="module_@the-/pack.Converters"></a>
-
-### pack.Converters : <code>object</code>
-**Kind**: static namespace of [<code>@the-/pack</code>](#module_@the-/pack)  
 <a name="module_@the-/pack.default"></a>
 
 ### pack.default : <code>object</code>

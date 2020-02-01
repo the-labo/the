@@ -15,7 +15,7 @@
     "@the-/check-env": "^15.6.0",
     "chalk": "^3.0.0",
     "hasbin": "^1.2.3",
-    "semver": "^7.1.1"
+    "semver": "^7.1.2"
   },
   "devDependencies": {},
   "engines": {

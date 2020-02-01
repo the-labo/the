@@ -4,7 +4,9 @@
  * Test for ThePack.
  * Runs with mocha.
  */
-const { deepStrictEqual: deepEqual, ok, strictEqual: equal } = require('assert')
+const {
+  strict: { deepEqual, equal, ok, throws },
+} = require('assert')
 const ThePack = require('../lib/ThePack')
 
 describe('the-pack', () => {
@@ -26,9 +28,11 @@ describe('the-pack', () => {
     equal(pack.decode(pack.encode(null)), null)
   })
 
-  it('Passing props', () => {
+  it('Cannot encode function', () => {
     const pack = new ThePack()
-    ok(pack.decode(pack.encode({ foo: () => 'f' })))
+    throws(() => {
+      pack.encode({ foo: () => 'f' })
+    })
   })
 
   it('Try circular', () => {
@@ -43,15 +47,6 @@ describe('the-pack', () => {
       caught = e
     }
     ok(caught)
-  })
-
-  it('to string', () => {
-    const pack = new ThePack()
-    const data = { d: new Date(), xxxxasdfasdf: 1, y: { z: 0 } }
-    const encoded = pack.encode(data)
-    const str = encoded.toString('base64')
-    const restored = pack.decode(Buffer.from(str, 'base64'))
-    deepEqual(data, restored)
   })
 })
 
