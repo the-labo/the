@@ -13,7 +13,7 @@
     "name": "@the-/server",
     "order": 3,
     "typicalname": "server",
-    "version": "17.0.1"
+    "version": "17.2.1"
   },
   {
     "description": "HTTP server for the-framework",
@@ -110,7 +110,7 @@
     "memberof": "TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 195,
+      "lineno": 192,
       "path": "lib"
     },
     "name": "info",
@@ -127,7 +127,7 @@
     "memberof": "TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 212,
+      "lineno": 209,
       "path": "lib"
     },
     "name": "close",
@@ -164,7 +164,7 @@
     "memberof": "TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 238,
+      "lineno": 235,
       "path": "lib"
     },
     "name": "destroyAllSessions",
@@ -191,7 +191,7 @@
     "memberof": "TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 251,
+      "lineno": 248,
       "path": "lib"
     },
     "name": "listen",
@@ -456,7 +456,7 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 35,
+      "lineno": 32,
       "path": "lib"
     },
     "name": "TheServer",
