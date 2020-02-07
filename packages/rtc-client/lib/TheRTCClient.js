@@ -33,6 +33,7 @@ class TheRTCClient extends TheRTCClientBase {
     const {
       iceTransportPolicy = 'all',
       info = {},
+      media,
       mediaConstrains = { audio: true, video: true },
       onLocal,
       onRemote,
@@ -42,7 +43,7 @@ class TheRTCClient extends TheRTCClientBase {
       rid = uuid.v4(),
     } = options
     this.room = null
-    this.media = new TheMedia(mediaConstrains)
+    this.media = media || new TheMedia(mediaConstrains)
     this.iceServers = null
     this.callbacks = {
       onLocal,
