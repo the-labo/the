@@ -13,7 +13,7 @@
     "name": "@the-/util-file",
     "order": 4,
     "typicalname": "utilFile",
-    "version": "15.6.5"
+    "version": "15.7.1"
   },
   {
     "id": "module:@the-/util-file.copyAsJsonSync",
@@ -117,7 +117,7 @@
     "memberof": "module:@the-/util-file",
     "meta": {
       "filename": "fileTypeOf.js",
-      "lineno": 6,
+      "lineno": 5,
       "path": "lib"
     },
     "name": "fileTypeOf",

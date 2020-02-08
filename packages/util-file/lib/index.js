@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/util-file
  * @typicalname utilFile
- * @version 15.6.5
+ * @version 15.7.1
  */
 'use strict'
 

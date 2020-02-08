@@ -5,7 +5,7 @@
 ## @the-/jsdoc
 JSDoc generator
 
-**Version**: 15.4.11  
+**Version**: 15.4.13  
 **License**: MIT  
 
 * [@the-/jsdoc](#module_@the-/jsdoc)

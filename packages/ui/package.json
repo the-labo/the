@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui",
   "description": "React components of THE framework",
-  "version": "17.0.15",
+  "version": "17.0.16",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -52,7 +52,7 @@
   },
   "devDependencies": {
     "@the-/ui-demo": "^16.0.3",
-    "fmtjson": "^4.0.6",
+    "fmtjson": "^5.0.1",
     "injectmock": "^2.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",

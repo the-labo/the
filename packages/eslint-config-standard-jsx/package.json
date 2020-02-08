@@ -1,6 +1,6 @@
 {
   "name": "@the-/eslint-config-standard-jsx",
-  "version": "15.6.0",
+  "version": "15.6.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
-    "eslint-plugin-react": "^7.18.0"
+    "eslint-plugin-react": "^7.18.3"
   },
   "engines": {
     "node": ">=10",

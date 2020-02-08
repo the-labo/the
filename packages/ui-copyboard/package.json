@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-copyboard",
   "description": "Component for clip-to-copy",
-  "version": "16.1.1",
+  "version": "16.1.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,7 +14,7 @@
     "@the-/ui-style": "^16.0.2",
     "@the-/util-ui": "^16.3.3",
     "classnames": "^2.2.6",
-    "copy-to-clipboard": "^3.2.0",
+    "copy-to-clipboard": "^3.2.1",
     "prop-types": "^15.7.2",
     "select": "^1.1.2"
   },

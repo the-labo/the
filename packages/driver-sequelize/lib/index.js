@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/driver-sequelize
  * @typicalname driverSequelize
- * @version 16.1.2
+ * @version 16.1.3
  */
 'use strict'
 

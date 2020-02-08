@@ -1,7 +1,6 @@
 'use strict'
 
 const FileType = require('file-type')
-const readChunk = require('read-chunk')
 
 /**
  * Get file type of file
@@ -11,8 +10,7 @@ const readChunk = require('read-chunk')
  * @returns {Object}
  */
 async function fileTypeOf(filename) {
-  const buffer = await readChunk(filename, 0, FileType.minimumBytes)
-  return FileType.fromBuffer(buffer)
+  return FileType.fromFile(filename)
 }
 
 module.exports = fileTypeOf
