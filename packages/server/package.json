@@ -1,7 +1,7 @@
 {
   "name": "@the-/server",
   "description": "HTTP/RPC Server of the-framework",
-  "version": "17.2.1",
+  "version": "17.3.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -15,7 +15,7 @@
     "@the-/assert": "^15.4.1",
     "@the-/cache": "^15.5.3",
     "@the-/check": "^15.6.3",
-    "@the-/pack": "^16.0.2",
+    "@the-/pack": "^16.0.3",
     "@the-/stream": "^15.4.12",
     "@the-/tmp": "^15.4.5",
     "@the-/window": "^15.8.3",
@@ -27,9 +27,9 @@
     "debug": "^4.1.1",
     "locale": "^0.1.0",
     "qs": "^6.9.1",
-    "redis": "^2.8.0",
+    "redis": "^3.0.1",
     "rfunc": "^4.2.0",
-    "rimraf": "^3.0.1",
+    "rimraf": "^3.0.2",
     "socket.io": "^2.3.0",
     "socket.io-client": "^2.3.0",
     "socket.io-redis": "^5.2.0",
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@msgpack/msgpack": "^1.11.0",
-    "@the-/client": "^17.0.0",
+    "@the-/client": "^17.0.1",
     "arequest": "^3.0.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
