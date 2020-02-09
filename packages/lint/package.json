@@ -14,7 +14,7 @@
   "dependencies": {
     "@babel/runtime": "^7.8.4",
     "@the-/ast": "^16.1.0",
-    "@the-/util-file": "^15.6.5",
+    "@the-/util-file": "^15.7.1",
     "aglob": "^3.0.2",
     "asfs": "^2.3.0",
     "chalk": "^3.0.0",

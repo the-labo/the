@@ -19,7 +19,7 @@
     "@the-/check": "^15.6.2",
     "@the-/lock": "^15.4.11",
     "@the-/media": "^15.5.10",
-    "@the-/pack": "^16.0.2",
+    "@the-/pack": "^16.0.3",
     "@the-/window": "^15.8.3",
     "argx": "^4.0.4",
     "asobj": "^3.0.1",
@@ -30,9 +30,10 @@
     "wrtc": "^0.4.2"
   },
   "devDependencies": {
-    "@the-/rtc": "^15.6.5",
+    "@the-/rtc": "^15.6.6",
     "aport": "^2.0.0",
     "asleep": "^1.0.3",
+    "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webrtc-adapter": "^7.5.0"
   },

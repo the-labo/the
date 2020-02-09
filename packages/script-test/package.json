@@ -16,7 +16,7 @@
   "dependencies": {
     "amocha": "^7.0.1",
     "argx": "^4.0.4",
-    "commander": "^4.1.0"
+    "commander": "^4.1.1"
   },
   "devDependencies": {
     "injectmock": "^2.0.0"

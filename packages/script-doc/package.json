@@ -14,11 +14,11 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@the-/jsdoc": "^15.4.11",
+    "@the-/jsdoc": "^15.4.13",
     "@the-/util-array": "^15.4.3",
     "aglob": "^3.0.1",
     "argx": "^4.0.4",
-    "commander": "^4.1.0",
+    "commander": "^4.1.1",
     "filedel": "^4.1.1",
     "findout": "^3.0.2",
     "stringcase": "^4.3.1",

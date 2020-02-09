@@ -33,7 +33,7 @@
     "asleep": "^1.0.3",
     "awatch": "^2.0.1",
     "babel-loader": "^8.0.6",
-    "commander": "^4.1.0",
+    "commander": "^4.1.1",
     "coz": "^7.2.0",
     "filecopy": "^4.1.0",
     "lebab": "^3.1.0",
