@@ -38,7 +38,7 @@
 ## @the-/client
 Client for the-server
 
-**Version**: 17.0.1  
+**Version**: 17.1.0  
 **License**: MIT  
 
 * [@the-/client](#module_@the-/client)

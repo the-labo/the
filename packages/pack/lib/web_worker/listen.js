@@ -6,7 +6,9 @@ const handlers = { decode, encode }
 
 function listen() {
   onmessage = (message) => {
-    const { args, cmd, iid } = message
+    const {
+      data: { args, cmd, iid },
+    } = message
     const handler = handlers[cmd]
     if (!handler) {
       throw new Error(`Unknown command :${cmd}`)

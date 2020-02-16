@@ -7,12 +7,12 @@ function Proxy(url) {
   const call = async (cmd, ...args) => {
     const iid = uuid.v4()
     return new Promise((resolve) => {
-      const onMessage = (message) => {
-        const hit = iid === message.iid
+      const onMessage = ({ data }) => {
+        const hit = iid === data.iid
         if (!hit) {
           return
         }
-        resolve(message.result)
+        resolve(data.result)
         worker.removeEventListener('message', onMessage)
       }
       worker.addEventListener('message', onMessage)
