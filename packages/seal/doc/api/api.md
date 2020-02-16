@@ -5,7 +5,7 @@
 ## @the-/seal
 Encrypt json object with master password
 
-**Version**: 15.4.8  
+**Version**: 15.4.12  
 **License**: MIT  
 
 * [@the-/seal](#module_@the-/seal)

@@ -13,7 +13,7 @@
     "name": "@the-/password",
     "order": 2,
     "typicalname": "password",
-    "version": "15.4.8"
+    "version": "15.4.12"
   },
   {
     "id": "module:@the-/password.ThePassword",

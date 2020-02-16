@@ -13,7 +13,7 @@
     "name": "@the-/demo-lib",
     "order": 2,
     "typicalname": "demoLib",
-    "version": "15.4.11"
+    "version": "15.4.12"
   },
   {
     "description": "Create a TheDemoLib instance",

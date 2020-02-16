@@ -73,4 +73,3 @@ Alias of [create](#module_@the-/tmp.create)
 | --- | --- | --- |
 | path | <code>string</code> | Directory name |
 | cleanup | <code>function</code> |  |
-

@@ -18,6 +18,7 @@ const {
   parseClientUrl,
 } = require('./helpers')
 const InfoAccess = require('./helpers/InfoAccess')
+const logger = require('./helpers/logger')
 const RemoteStream = require('./helpers/RemoteStream')
 const debug = require('debug')('the:client')
 
@@ -147,12 +148,7 @@ class TheClient extends RFuncClient {
 
     for (const callback of callbacks) {
       unlessProduction(() => {
-        console.groupCollapsed(
-          `[TheClient] Callback \`${controllerName}.${handleName}()\``,
-        )
-        console.log('Signature', `\`${controllerName}.${handleName}()\``)
-        console.log('Arguments', values)
-        console.groupEnd()
+        logger.logCallbackCall(controllerName, handleName, values)
       })
       callback(...values) // eslint-disable-line
     }

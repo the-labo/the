@@ -13,7 +13,7 @@
     "name": "@the-/check",
     "order": 1,
     "typicalname": "check",
-    "version": "15.6.2"
+    "version": "15.6.3"
   },
   {
     "description": "Check touch supported",

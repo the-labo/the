@@ -13,7 +13,7 @@
     "name": "@the-/client",
     "order": 2,
     "typicalname": "client",
-    "version": "17.0.0"
+    "version": "17.0.1"
   },
   {
     "id": "module:@the-/client.TheClient()",
@@ -183,7 +183,7 @@
     "longname": "TheClientScope",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 425,
+      "lineno": 421,
       "path": "lib"
     },
     "name": "TheClientScope",
@@ -223,7 +223,7 @@
     "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 198,
+      "lineno": 194,
       "path": "lib"
     },
     "name": "invoke",
@@ -268,7 +268,7 @@
     "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 320,
+      "lineno": 316,
       "path": "lib"
     },
     "name": "stream",
@@ -333,7 +333,7 @@
     "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 339,
+      "lineno": 335,
       "path": "lib"
     },
     "name": "use",
@@ -390,7 +390,7 @@
     "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 390,
+      "lineno": 386,
       "path": "lib"
     },
     "name": "useAll",
@@ -429,7 +429,7 @@
     "memberof": "module:@the-/client",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 28,
+      "lineno": 29,
       "path": "lib"
     },
     "name": "TheClient",
@@ -540,7 +540,7 @@
     "memberof": "TheClient",
     "meta": {
       "filename": "TheClient.js",
-      "lineno": 43,
+      "lineno": 44,
       "path": "lib"
     },
     "name": "for",

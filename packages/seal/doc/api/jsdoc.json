@@ -13,7 +13,7 @@
     "name": "@the-/seal",
     "order": 2,
     "typicalname": "seal",
-    "version": "15.4.8"
+    "version": "15.4.12"
   },
   {
     "description": "Seal handler",

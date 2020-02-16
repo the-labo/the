@@ -91,7 +91,7 @@ tryExample().catch((err) => console.error(err))
   - [.TheGeo](./doc/api/api.md#module_@the-/geo.TheGeo)
 - TheGeo
   - [#detect(options)](./doc/api/api.md#TheGeo#detect)
-  - [#watch(callback,options)](./doc/api/api.md#TheGeo#watch)
+  - [#watch(callback)](./doc/api/api.md#TheGeo#watch)
 
 See [API Guide](./doc/api/api.md) for more detail
 

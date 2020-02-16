@@ -5,7 +5,7 @@
 ## @the-/hash
 Hash object to hold key-value pairs
 
-**Version**: 15.4.10  
+**Version**: 15.4.12  
 **License**: MIT  
 
 * [@the-/hash](#module_@the-/hash)

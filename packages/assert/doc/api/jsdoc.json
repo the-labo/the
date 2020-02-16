@@ -13,7 +13,7 @@
     "name": "@the-/assert",
     "order": 2,
     "typicalname": "assert",
-    "version": "15.4.8"
+    "version": "15.4.12"
   },
   {
     "description": "Assert module",

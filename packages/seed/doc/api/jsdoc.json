@@ -13,7 +13,7 @@
     "name": "@the-/seed",
     "order": 2,
     "typicalname": "seed",
-    "version": "15.4.8"
+    "version": "15.4.12"
   },
   {
     "description": "Generate data with seed",

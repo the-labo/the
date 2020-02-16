@@ -5,7 +5,7 @@
 ## @the-/refresher
 Refresher of the-db
 
-**Version**: 15.4.8  
+**Version**: 15.4.12  
 **License**: MIT  
 
 * [@the-/refresher](#module_@the-/refresher)

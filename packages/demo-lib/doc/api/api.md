@@ -5,7 +5,7 @@
 ## @the-/demo-lib
 Demo of the-lib packages
 
-**Version**: 15.4.11  
+**Version**: 15.4.12  
 **License**: MIT  
 
 * [@the-/demo-lib](#module_@the-/demo-lib)

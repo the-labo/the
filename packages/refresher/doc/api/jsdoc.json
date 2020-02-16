@@ -13,7 +13,7 @@
     "name": "@the-/refresher",
     "order": 2,
     "typicalname": "refresher",
-    "version": "15.4.8"
+    "version": "15.4.12"
   },
   {
     "description": "Check the refresh has the target",

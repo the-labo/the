@@ -5,7 +5,7 @@
 ## @the-/seed
 Data generator for the-db
 
-**Version**: 15.4.8  
+**Version**: 15.4.12  
 **License**: MIT  
 
 * [@the-/seed](#module_@the-/seed)

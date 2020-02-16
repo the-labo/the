@@ -14,6 +14,7 @@ const RemoteStream_ = require('./RemoteStream')
 const asController_ = require('./asController')
 const debugController_ = require('./debugController')
 const debugStream_ = require('./debugStream')
+const logger_ = require('./logger')
 const parseClientUrl_ = require('./parseClientUrl')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
@@ -23,6 +24,7 @@ exports.RemoteStream = RemoteStream_
 exports.asController = asController_
 exports.debugController = debugController_
 exports.debugStream = debugStream_
+exports.logger = logger_
 exports.parseClientUrl = parseClientUrl_
 
 module.exports = {
@@ -32,5 +34,6 @@ module.exports = {
   asController: asController_,
   debugController: debugController_,
   debugStream: debugStream_,
+  logger: logger_,
   parseClientUrl: parseClientUrl_,
 }

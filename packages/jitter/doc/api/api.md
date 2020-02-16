@@ -5,7 +5,7 @@
 ## @the-/jitter
 Random delay timer
 
-**Version**: 15.4.8  
+**Version**: 15.4.12  
 **License**: MIT  
 
 * [@the-/jitter](#module_@the-/jitter)
