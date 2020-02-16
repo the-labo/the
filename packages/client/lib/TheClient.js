@@ -24,8 +24,6 @@ const debug = require('debug')('the:client')
 
 const NAMESPACE = '/rpc'
 
-const { decode, encode } = new ThePack({})
-
 /**
  * @memberof module:@the-/client
  * @class TheClient
@@ -66,6 +64,7 @@ class TheClient extends RFuncClient {
 
     const {
       cid = TheClient.newCID(),
+      encoder = new ThePack({}),
       forceNewSocket = false,
       onGone,
       version = 'unknown',
@@ -84,6 +83,7 @@ class TheClient extends RFuncClient {
     const fetch = this.fetch.bind(this)
     this.infoAccess = InfoAccess({ fetch })
     this.pingSender = PingSender({ fetch })
+    this.encoder = encoder
     this._forceNewSocket = forceNewSocket
     this._gone = false
     this._controllers = {}
@@ -126,34 +126,6 @@ class TheClient extends RFuncClient {
     }
   }
 
-  handleCallback(controllerName, handleName, data) {
-    const values = decode(data) || []
-    const controller = this._controllers[controllerName]
-    if (!controller) {
-      console.warn(
-        `[TheClient] Callback controller not found: ${controllerName}`,
-      )
-      return
-    }
-
-    const callbacks = []
-      .concat(controller.callbacks[handleName])
-      .filter(Boolean)
-    if (callbacks.length === 0) {
-      console.warn(
-        `[TheClient] Callback controller not found: ${controllerName}`,
-      )
-      return
-    }
-
-    for (const callback of callbacks) {
-      unlessProduction(() => {
-        logger.logCallbackCall(controllerName, handleName, values)
-      })
-      callback(...values) // eslint-disable-line
-    }
-  }
-
   markAsGone(reason) {
     if (this._gone) {
       return
@@ -185,6 +157,34 @@ class TheClient extends RFuncClient {
     }
   }
 
+  async handleCallback(controllerName, handleName, data) {
+    const values = (await this.encoder.decode(data)) || []
+    const controller = this._controllers[controllerName]
+    if (!controller) {
+      console.warn(
+        `[TheClient] Callback controller not found: ${controllerName}`,
+      )
+      return
+    }
+
+    const callbacks = []
+      .concat(controller.callbacks[handleName])
+      .filter(Boolean)
+    if (callbacks.length === 0) {
+      console.warn(
+        `[TheClient] Callback controller not found: ${controllerName}`,
+      )
+      return
+    }
+
+    for (const callback of callbacks) {
+      unlessProduction(() => {
+        logger.logCallbackCall(controllerName, handleName, values)
+      })
+      callback(...values) // eslint-disable-line
+    }
+  }
+
   /**
    * Invoke a method
    * @param {string} moduleName
@@ -193,17 +193,16 @@ class TheClient extends RFuncClient {
    */
   async invoke(moduleName, methodName, ...params) {
     this.assertNotClosed()
-    const { cid, socket } = this
+    const { cid, encoder, socket } = this
     const iid = uuid.v4() // Invocation id
 
     return new Promise((resolve, reject) => {
       let keptGoneTimer = -1
-      let onReturn = (returned) => {
+      let onReturn = async (returned) => {
         if (!onReturn) {
           return null
         }
-
-        returned = decode(returned)
+        returned = await encoder.decode(returned)
         if (returned.iid !== iid) {
           return
         }
@@ -221,12 +220,12 @@ class TheClient extends RFuncClient {
           reject(e.message || e)
         }
       }
-      let onKeep = (kept) => {
+      let onKeep = async (kept) => {
         if (!onKeep) {
           return
         }
 
-        kept = decode(kept)
+        kept = await encoder.decode(kept)
         if (kept.iid !== iid) {
           return
         }
@@ -245,16 +244,18 @@ class TheClient extends RFuncClient {
       }
       socket.on(IOEvents.RPC_KEEP, onKeep)
       socket.on(IOEvents.RPC_RETURN, onReturn)
-
-      const encoded = encode({
-        cid,
-        iid,
-        methodName,
-        moduleName,
-        params,
+      Promise.resolve(
+        encoder.encode({
+          cid,
+          iid,
+          methodName,
+          moduleName,
+          params,
+        }),
+      ).then((encoded) => {
+        socket.binary(true).emit(IOEvents.RPC_CALL, encoded)
+        debug('rpc call', moduleName, methodName, params)
       })
-      socket.binary(true).emit(IOEvents.RPC_CALL, encoded)
-      debug('rpc call', moduleName, methodName, params)
     })
   }
 
