@@ -1,0 +1,27 @@
+'use strict'
+
+const aglob = require('aglob')
+const path = require('path')
+const pkg = require('../package')
+
+module.exports = aglob.sync(
+  '*.js',
+  { cwd: `${__dirname}/../shim/web_worker` }
+).map((filename) => {
+  const name = path.basename(filename, path.extname(filename))
+  return {
+    force: true,
+    mode: '444',
+    data: { name },
+    path: `${name}.js`,
+    tmpl: `
+'use strict'
+// alias for \`require'(${pkg.name}/${name}')\`
+module.exports = require('../shim/web_worker/${name}')
+    `
+  }
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}
