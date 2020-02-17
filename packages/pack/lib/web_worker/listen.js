@@ -7,6 +7,7 @@ const { decode, encode } = create()
 const handlers = { decode, encode }
 
 function listen() {
+  // eslint-disable-next-line
   onmessage = (message) => {
     const {
       data: { args, cmd, iid },
@@ -23,7 +24,7 @@ function listen() {
       result,
     })
   }
-
+  // eslint-disable-next-line
   onmessageerror = (error) => {
     console.error('message error', error)
   }
@@ -31,4 +32,4 @@ function listen() {
 
 module.exports = listen
 
-/* global onmessage, onmessageerror */
+/* global postMessage */

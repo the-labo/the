@@ -28,7 +28,6 @@ function Proxy(filename) {
   const proxy = {
     async close() {
       worker.terminate()
-      return proxy
     },
     async decode(values) {
       return call('decode', values)
@@ -41,6 +40,7 @@ function Proxy(filename) {
       process.on('beforeExit', () => {
         proxy.close()
       })
+      return proxy
     },
   }
 
