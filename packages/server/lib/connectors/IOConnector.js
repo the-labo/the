@@ -3,10 +3,7 @@
 const NAMESPACE = '/rpc'
 
 const asleep = require('asleep')
-const { ThePack } = require('@the-/pack')
 const { IOEvents } = require('../constants')
-
-const { decode, encode } = new ThePack({})
 
 /**
  * @memberof module:@the-/server.connectors
@@ -17,6 +14,7 @@ function IOConnector(
   io,
   {
     connectionStore,
+    encoder,
     onIOClientCame,
     onIOClientGone,
     onRPCAbort,
@@ -44,13 +42,13 @@ function IOConnector(
     if (via === 'client') {
       const { id: socketId } = socket
       void onIOClientCame(cid, socketId, client)
-      socket.on(IOEvents.RPC_CALL, (config) => {
-        config = decode(config)
-        void onRPCCall(cid, socketId, config, { pack: true })
+      socket.on(IOEvents.RPC_CALL, async (config) => {
+        config = await encoder.decode(config)
+        await onRPCCall(cid, socketId, config, { pack: true })
       })
-      socket.on(IOEvents.RPC_ABORT, (config) => {
-        config = decode(config)
-        void onRPCAbort(cid, socketId, config)
+      socket.on(IOEvents.RPC_ABORT, async (config) => {
+        config = await encoder.decode(config)
+        await onRPCAbort(cid, socketId, config)
       })
       socket.on(IOEvents.DISCONNECT, (reason) => {
         void onIOClientGone(cid, socketId, reason)
@@ -161,7 +159,7 @@ function IOConnector(
         for (const socketId of connectedSocketIds) {
           namespace
             .to(socketId)
-            .emit(event, pack ? Buffer.from(encode(data)) : data)
+            .emit(event, pack ? Buffer.from(await encoder.encode(data)) : data)
         }
         return // Send done
       }

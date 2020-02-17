@@ -6,6 +6,7 @@ const http = require('http')
 const { RFunc } = require('rfunc')
 const socketIO = require('socket.io')
 const { unlessProduction } = require('@the-/check')
+const { ThePack } = require('@the-/pack')
 const theTmp = require('@the-/tmp')
 const { redisAdapter } = require('./adapters')
 const buildInEndpoints = require('./buildInEndpoints')
@@ -43,6 +44,7 @@ class TheServer extends RFunc {
     const {
       cacheDir = theTmp.generateDirSync({ prefix: 'the-server' }).path,
       controllers: Controllers = {},
+      encoder = new ThePack({}),
       endpoints = {},
       html = false,
       info = {},
@@ -146,6 +148,7 @@ class TheServer extends RFunc {
     this.streamDriverPool = streamDriverPool({})
     this.StreamDriverFactories = StreamDriverFactories
     this.rpcKeepDuration = rpcKeepDuration
+    this.encoder = encoder
   }
 
   get closed() {
@@ -267,6 +270,7 @@ class TheServer extends RFunc {
     const clientAccess = ClientAccess({ connectionStore })
     const ioConnector = IOConnector(io, {
       connectionStore,
+      encoder: this.encoder,
       onIOClientCame: async (cid, socketId, client) => {
         await clientAccess.saveClientSocket(cid, socketId, client)
         const controllerNames = Object.keys(this.ControllerDriverFactories)

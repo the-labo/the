@@ -16,7 +16,7 @@ module.exports = aglob.sync(
     path: `${name}.js`,
     tmpl: `
 'use strict'
-// alias for \`require'(${pkg.name}/${name}')\`
+// alias for \`require'(${pkg.name}/web_worker/${name}')\`
 module.exports = require('../shim/web_worker/${name}')
     `
   }

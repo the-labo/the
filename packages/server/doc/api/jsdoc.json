@@ -13,7 +13,7 @@
     "name": "@the-/server",
     "order": 3,
     "typicalname": "server",
-    "version": "17.4.0"
+    "version": "17.6.0"
   },
   {
     "description": "HTTP server for the-framework",
@@ -110,7 +110,7 @@
     "memberof": "TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 192,
+      "lineno": 195,
       "path": "lib"
     },
     "name": "info",
@@ -127,7 +127,7 @@
     "memberof": "TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 209,
+      "lineno": 212,
       "path": "lib"
     },
     "name": "close",
@@ -164,7 +164,7 @@
     "memberof": "TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 235,
+      "lineno": 238,
       "path": "lib"
     },
     "name": "destroyAllSessions",
@@ -191,7 +191,7 @@
     "memberof": "TheServer",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 248,
+      "lineno": 251,
       "path": "lib"
     },
     "name": "listen",
@@ -456,7 +456,7 @@
     "memberof": "module:@the-/server",
     "meta": {
       "filename": "TheServer.js",
-      "lineno": 32,
+      "lineno": 33,
       "path": "lib"
     },
     "name": "TheServer",
@@ -764,7 +764,7 @@
     "memberof": "module:@the-/server.connectors",
     "meta": {
       "filename": "IOConnector.js",
-      "lineno": 11,
+      "lineno": 8,
       "path": "lib/connectors"
     },
     "name": "IOConnector",

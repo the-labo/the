@@ -6,19 +6,18 @@ const pkg = require('../package')
 
 module.exports = aglob.sync(
   '*.js',
-  { cwd: `${__dirname}/../shim/web_worker` }
+  { cwd: `${__dirname}/../shim/worker_threads` }
 ).map((filename) => {
   const name = path.basename(filename, path.extname(filename))
   return {
     force: true,
     mode: '444',
     data: { name },
-    path: `${name}.mjs`,
+    path: `${name}.js`,
     tmpl: `
 'use strict'
-// alias for \`import ${name} from '(${pkg.name}/web_worker/${name}')\`
-import ${name} from '../shim/esm/web_worker/${name}'
-export default ${name}
+// alias for \`require'(${pkg.name}/worker_threads/${name}')\`
+module.exports = require('../shim/worker_threads/${name}')
     `
   }
 })

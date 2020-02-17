@@ -1,7 +1,7 @@
 {
   "name": "@the-/server",
   "description": "HTTP/RPC Server of the-framework",
-  "version": "17.4.0",
+  "version": "17.6.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -15,7 +15,7 @@
     "@the-/assert": "^15.4.1",
     "@the-/cache": "^15.5.3",
     "@the-/check": "^15.6.3",
-    "@the-/pack": "^16.1.0",
+    "@the-/pack": "^16.2.0",
     "@the-/stream": "^15.4.12",
     "@the-/tmp": "^15.4.5",
     "@the-/window": "^15.8.3",
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@msgpack/msgpack": "^1.11.0",
-    "@the-/client": "^17.1.0",
+    "@the-/client": "^17.2.0",
     "arequest": "^3.0.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
