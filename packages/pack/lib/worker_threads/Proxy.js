@@ -35,13 +35,6 @@ function Proxy(filename) {
     async encode(values) {
       return call('encode', values)
     },
-    async unref() {
-      process.setMaxListeners(process.getMaxListeners() + 1)
-      process.on('beforeExit', () => {
-        proxy.close()
-      })
-      return proxy
-    },
   }
 
   return proxy
