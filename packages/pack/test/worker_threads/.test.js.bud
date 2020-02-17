@@ -1,0 +1,16 @@
+/**
+ * @file Bud file for test cases.
+ */
+'use strict'
+
+const { test } = require('@the-/templates')
+
+module.exports = test({
+  cjs: true,
+  dest: __dirname,
+  src: [`${__dirname}/../../lib/worker_threads/*.js`],
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}
