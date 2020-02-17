@@ -17,7 +17,7 @@ module.exports = aglob.sync(
     tmpl: `
 'use strict'
 // alias for \`require'(${pkg.name}/worker_threads/${name}')\`
-module.exports = require('../shim/worker_threads/${name}')
+module.exports = require('../lib/worker_threads/${name}')
     `
   }
 })
