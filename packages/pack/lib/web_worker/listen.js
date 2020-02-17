@@ -1,6 +1,7 @@
 'use strict'
 
 const create = require('../create')
+
 const { decode, encode } = create()
 
 const handlers = { decode, encode }
@@ -14,6 +15,7 @@ function listen() {
     if (!handler) {
       throw new Error(`Unknown command :${cmd}`)
     }
+
     const result = handler(...args)
     postMessage({
       cmd,
@@ -28,3 +30,5 @@ function listen() {
 }
 
 module.exports = listen
+
+/* global onmessage, onmessageerror */

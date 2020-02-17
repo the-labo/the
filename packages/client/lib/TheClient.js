@@ -202,6 +202,7 @@ class TheClient extends RFuncClient {
         if (!onReturn) {
           return null
         }
+
         returned = await encoder.decode(returned)
         if (returned.iid !== iid) {
           return

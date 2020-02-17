@@ -17,6 +17,7 @@ function Proxy(url) {
       },
     }
   }
+
   const worker = new Worker(url)
   const call = async (cmd, ...args) => {
     const iid = uuid.v4()
@@ -26,6 +27,7 @@ function Proxy(url) {
         if (!hit) {
           return
         }
+
         resolve(data.result)
         worker.removeEventListener('message', onMessage)
       }
@@ -51,3 +53,5 @@ function Proxy(url) {
 }
 
 module.exports = Proxy
+
+/* global Worker */

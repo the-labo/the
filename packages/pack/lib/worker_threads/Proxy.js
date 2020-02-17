@@ -13,6 +13,7 @@ function Proxy(filename) {
         if (!hit) {
           return
         }
+
         resolve(message.result)
         worker.off('message', onMessage)
       }
