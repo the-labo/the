@@ -28,7 +28,7 @@
 ## @the-/rtc
 RTC server for the-frameworks
 
-**Version**: 15.6.6  
+**Version**: 15.6.8  
 **License**: MIT  
 
 * [@the-/rtc](#module_@the-/rtc)
