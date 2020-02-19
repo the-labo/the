@@ -1,20 +1,24 @@
 'use strict'
 
-const uuid = require('uuid')
 const asleep = require('asleep')
+const uuid = require('uuid')
 const { Worker } = require('worker_threads')
 
-function Proxy(filename) {
+function Proxy(filename, options = {}) {
+  const { timeout = 30 * 1000 } = options
   const worker = new Worker(filename)
   const call = async (cmd, ...args) => {
     const iid = uuid.v4()
-    return new Promise((resolve) => {
+    return new Promise((resolve, reject) => {
+      const timeoutTimer = setTimeout(() => {
+        reject(new Error('[@the-/pack] Proxy timeout'))
+      }, timeout)
       const onMessage = (message) => {
         const hit = iid === message.iid
         if (!hit) {
           return
         }
-
+        clearTimeout(timeoutTimer)
         resolve(message.result)
         worker.off('message', onMessage)
       }
