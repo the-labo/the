@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/server
  * @typicalname server
- * @version 17.6.0
+ * @version 17.6.2
  */
 'use strict'
 

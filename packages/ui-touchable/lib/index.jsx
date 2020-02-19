@@ -4,7 +4,7 @@
  * @description Touch event handler
  * @module @the-/ui-touchable
  * @typicalname uiTouchable
- * @version 15.5.5
+ * @version 15.5.6
  */
 'use strict'
 

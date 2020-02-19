@@ -1,7 +1,7 @@
 {
   "name": "@the-/client",
   "description": "Client for the-server",
-  "version": "17.2.0",
+  "version": "17.2.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@the-/check-env": "^15.6.0",
-    "@the-/pack": "^16.1.0",
+    "@the-/pack": "^16.2.7",
     "@the-/queue": "^15.4.12",
     "@the-/stream": "^15.4.12",
     "asleep": "^1.0.3",
@@ -30,7 +30,7 @@
     "uuid": "^3.4.0"
   },
   "devDependencies": {
-    "@the-/server": "^17.3.1",
+    "@the-/server": "^17.6.0",
     "aport": "^2.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"

@@ -108,11 +108,14 @@ const TheTouchable = (props) => {
   }, [hammer, panEnabled, bindListeners, ...panCallbacks])
 
   useEffect(() => {
+    const { current: elm } = ref
+    if (!elm) {
+      return null
+    }
     if (!hammer) {
       return
     }
 
-    setHammerPinchEnabled(hammer, pinchEnabled)
     if (!pinchEnabled) {
       return
     }
@@ -126,10 +129,22 @@ const TheTouchable = (props) => {
     })
     const unbindListeners = bindListeners(listeners)
 
+    const eventHandlers = {
+      touchend: (e) => {
+        setHammerPinchEnabled(hammer, e.touches?.length > 1)
+      },
+      touchstart: (e) => {
+        setHammerPinchEnabled(hammer, e.touches?.length > 1)
+      },
+    }
+
+    const opt = { passive: true }
+    addEventListenersToElm(elm, eventHandlers, opt)
     return () => {
       unbindListeners()
+      removeEventListenersFromElm(elm, eventHandlers, opt)
     }
-  }, [hammer, pinchEnabled, bindListeners, ...pinchCallbacks])
+  }, [ref.current, hammer, pinchEnabled, bindListeners, ...pinchCallbacks])
 
   const wheelScaleState = useMemo(
     () => ({
