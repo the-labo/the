@@ -13,7 +13,7 @@
     "name": "@the-/ps",
     "order": 3,
     "typicalname": "ps",
-    "version": "15.5.5"
+    "version": "15.6.0"
   },
   {
     "id": "module:@the-/ps.ThePS()",

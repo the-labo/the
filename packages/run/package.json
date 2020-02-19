@@ -1,7 +1,7 @@
 {
   "name": "@the-/run",
   "description": "Script runner for the-framework",
-  "version": "15.4.13",
+  "version": "15.5.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "commander": "^4.1.1",
-    "fkill": "^6.2.0",
+    "fkill": "^7.0.0",
     "pretty-exceptions": "^1.4.0"
   },
   "devDependencies": {

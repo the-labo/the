@@ -18,6 +18,7 @@ function Proxy(filename, options = {}) {
         if (!hit) {
           return
         }
+
         clearTimeout(timeoutTimer)
         resolve(message.result)
         worker.off('message', onMessage)
