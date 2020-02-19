@@ -77,9 +77,15 @@ const TheTouchable = (props) => {
 
   useEffect(() => {
     const { current: elm } = ref
+    if (!elm) {
+      return
+    }
     const newHammer = Hammer(elm, {})
     setHammer(newHammer)
-  }, [])
+    return () => {
+      newHammer.destroy()
+    }
+  }, [ref.current])
 
   useEffect(() => {
     if (!hammer) {
@@ -188,6 +194,9 @@ const TheTouchable = (props) => {
     }
 
     const { current: elm } = ref
+    if (!elm) {
+      return null
+    }
     const listeners = {
       gesturechange: (e) => {
         onPinch && onPinch(parseGestureEvent(e, { scale: e.scale }))
