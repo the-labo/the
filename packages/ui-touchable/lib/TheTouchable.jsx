@@ -82,9 +82,7 @@ const TheTouchable = (props) => {
     }
     const newHammer = Hammer(elm, {})
     setHammer(newHammer)
-    return () => {
-      newHammer.destroy()
-    }
+    return () => {}
   }, [ref.current])
 
   useEffect(() => {
@@ -181,11 +179,14 @@ const TheTouchable = (props) => {
     }
 
     const { current: elm } = ref
+    if (!elm) {
+      return
+    }
     elm.addEventListener('wheel', handleWheel, { passive: false })
     return () => {
       elm.removeEventListener('wheel', handleWheel, { passive: false })
     }
-  }, [pinchEnabled, wheelScaleState, handleWheel])
+  }, [pinchEnabled, wheelScaleState, handleWheel, ref.current])
 
   useEffect(() => {
     const useGesture = pinchEnabled && supportGesture && !supportTouch
@@ -216,7 +217,7 @@ const TheTouchable = (props) => {
     return () => {
       removeEventListenersFromElm(elm, listeners, opt)
     }
-  }, [supportGesture, pinchEnabled, ...pinchCallbacks])
+  }, [ref.current, supportGesture, pinchEnabled, ...pinchCallbacks])
 
   useEffect(() => {
     if (!hammer) {

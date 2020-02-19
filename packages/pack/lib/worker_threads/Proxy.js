@@ -1,6 +1,7 @@
 'use strict'
 
 const uuid = require('uuid')
+const asleep = require('asleep')
 const { Worker } = require('worker_threads')
 
 function Proxy(filename) {
@@ -27,7 +28,9 @@ function Proxy(filename) {
   }
   const proxy = {
     async close() {
-      worker.terminate()
+      // TODO wait all calls to finish
+      await asleep(100)
+      await worker.terminate()
     },
     async decode(values) {
       return call('decode', values)
