@@ -13,7 +13,7 @@
     "name": "@the-/util-db",
     "order": 1,
     "typicalname": "utilDb",
-    "version": "15.4.10"
+    "version": "15.4.13"
   },
   {
     "description": "Eval script",

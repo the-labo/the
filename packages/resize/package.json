@@ -1,7 +1,7 @@
 {
   "name": "@the-/resize",
   "description": "Resize image files",
-  "version": "15.4.14",
+  "version": "15.4.15",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,7 +18,7 @@
     "amkdirp": "^2.0.0",
     "asfs": "^2.3.0",
     "filecopy": "^4.1.0",
-    "sharp": "^0.24.0"
+    "sharp": "^0.24.1"
   },
   "devDependencies": {},
   "engines": {

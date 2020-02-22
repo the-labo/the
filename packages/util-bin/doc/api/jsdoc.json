@@ -13,7 +13,7 @@
     "name": "@the-/util-bin",
     "order": 1,
     "typicalname": "utilBin",
-    "version": "15.4.11"
+    "version": "15.4.12"
   },
   {
     "id": "module:@the-/util-bin.hasBin",

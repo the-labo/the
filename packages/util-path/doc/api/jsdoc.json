@@ -13,7 +13,7 @@
     "name": "@the-/util-path",
     "order": 2,
     "typicalname": "utilPath",
-    "version": "15.4.9"
+    "version": "15.4.12"
   },
   {
     "access": "protected",

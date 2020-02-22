@@ -24,7 +24,7 @@
 ## @the-/ui-table
 Table for the-components
 
-**Version**: 17.0.0  
+**Version**: 17.0.2  
 <a name="TheTable"></a>
 
 ## TheTable()

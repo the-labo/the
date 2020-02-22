@@ -12,7 +12,7 @@ Utility for client side
     * [.createFormData(values)](#module_@the-/util-client.createFormData) ⇒ <code>FormData</code>
     * [.queryWithSearch(search)](#module_@the-/util-client.queryWithSearch) ⇒ <code>\*</code>
     * [.readFile(file)](#module_@the-/util-client.readFile) ⇒ <code>Promise.&lt;ArrayBuffer&gt;</code>
-    * [.sendForm(url, values, [options])](#module_@the-/util-client.sendForm)
+    * [.sendForm(url, values, [options])](#module_@the-/util-client.sendForm) ⇒ <code>Promise.&lt;\*&gt;</code>
 
 <a name="module_@the-/util-client.createFormData"></a>
 
@@ -48,7 +48,7 @@ Read file as array buffer
 
 <a name="module_@the-/util-client.sendForm"></a>
 
-### utilClient.sendForm(url, values, [options])
+### utilClient.sendForm(url, values, [options]) ⇒ <code>Promise.&lt;\*&gt;</code>
 Send form data
 
 **Kind**: static method of [<code>@the-/util-client</code>](#module_@the-/util-client)  

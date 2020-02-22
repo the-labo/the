@@ -5,7 +5,7 @@
 ## @the-/util-db
 Utility for the-db
 
-**Version**: 15.4.10  
+**Version**: 15.4.13  
 **License**: MIT  
 
 * [@the-/util-db](#module_@the-/util-db)

@@ -5,7 +5,7 @@
 ## @the-/util-path
 Utility for file path
 
-**Version**: 15.4.9  
+**Version**: 15.4.12  
 **License**: MIT  
 
 * [@the-/util-path](#module_@the-/util-path)

@@ -21,7 +21,7 @@
 ## @the-/ui-style
 Style of the-components
 
-**Version**: 16.0.1  
+**Version**: 16.0.2  
 <a name="TheStyle"></a>
 
 ## TheStyle

@@ -157,6 +157,15 @@
         "name": "options"
       }
     ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Promise.<*>"
+          ]
+        }
+      }
+    ],
     "scope": "static"
   }
 ]

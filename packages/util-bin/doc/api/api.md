@@ -5,7 +5,7 @@
 ## @the-/util-bin
 Utility for bin
 
-**Version**: 15.4.11  
+**Version**: 15.4.12  
 **License**: MIT  
 <a name="module_@the-/util-bin.hasBin"></a>
 

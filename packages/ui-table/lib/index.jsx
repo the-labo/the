@@ -4,7 +4,7 @@
  * @description Table for the-components
  * @module @the-/ui-table
  * @typicalname uiTable
- * @version 17.0.0
+ * @version 17.0.2
  */
 'use strict'
 

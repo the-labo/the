@@ -4,7 +4,7 @@
  * @description Steps for the-components
  * @module @the-/ui-step
  * @typicalname uiStep
- * @version 16.0.1
+ * @version 16.0.3
  */
 'use strict'
 

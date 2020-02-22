@@ -82,7 +82,7 @@
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
       "filename": "TheDropdownMenu.jsx",
-      "lineno": 90,
+      "lineno": 91,
       "path": "lib"
     },
     "name": "eventsToClose",
@@ -97,7 +97,7 @@
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
       "filename": "TheDropdownMenu.jsx",
-      "lineno": 92,
+      "lineno": 93,
       "path": "lib"
     },
     "name": "label",
@@ -112,7 +112,7 @@
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
       "filename": "TheDropdownMenu.jsx",
-      "lineno": 94,
+      "lineno": 95,
       "path": "lib"
     },
     "name": "open",
@@ -127,7 +127,7 @@
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
       "filename": "TheDropdownMenu.jsx",
-      "lineno": 96,
+      "lineno": 97,
       "path": "lib"
     },
     "name": "righted",

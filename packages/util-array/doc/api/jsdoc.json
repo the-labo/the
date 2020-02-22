@@ -13,7 +13,7 @@
     "name": "@the-/util-array",
     "order": 0,
     "typicalname": "utilArray",
-    "version": "15.4.9"
+    "version": "15.4.12"
   },
   {
     "description": "Map entries with key path",
