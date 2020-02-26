@@ -17,21 +17,21 @@ function uniqueFilter(options = {}) {
 
   const { by = (v) => v } = options
 
-  const known = {}
-  return function filter(v, i) {
+  const known = new Set()
+  return function filter(v, i, arr) {
     if (i === 0) {
-      for (const key of Object.keys(known)) {
-        delete known[key]
-      }
+      known.clear()
     }
 
     const key = by(v)
-    if (known[key]) {
-      return false
+    const isDuplicated = known.has(key)
+    known.add(key)
+    const isLast = i === arr.length - 1
+    if (isLast) {
+      known.clear()
     }
 
-    known[key] = v
-    return true
+    return !isDuplicated
   }
 }
 

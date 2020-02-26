@@ -14,7 +14,7 @@ module.exports = aglob.sync(
     mode: '444',
     data: { name },
     path: `${name}.js`,
-    tmpl: `
+    tmpl: `/* eslint-disable */
 'use strict'
 // alias for \`require'(${pkg.name}/web_worker/${name}')\`
 module.exports = require('../shim/web_worker/${name}')

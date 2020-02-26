@@ -14,7 +14,7 @@ module.exports = aglob.sync(
     mode: '444',
     data: { name },
     path: `${name}.mjs`,
-    tmpl: `
+    tmpl: `/* eslint-disable */
 'use strict'
 // alias for \`import ${name} from '(${pkg.name}/web_worker/${name}')\`
 import ${name} from '../shim/esm/web_worker/${name}'

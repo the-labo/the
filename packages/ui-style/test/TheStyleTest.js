@@ -6,14 +6,12 @@
 
 const TheStyle = require('../shim/TheStyle').default
 const React = require('react')
-const { ok, equal, deepEqual } = require('assert').strict
+const { ok } = require('assert').strict
 
 describe('the-style', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     ok(TheStyle)
