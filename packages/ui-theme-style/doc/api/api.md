@@ -21,7 +21,7 @@
 ## @the-/ui-theme-style
 Theme style for the-components
 
-**Version**: 17.0.4  
+**Version**: 17.0.5  
 <a name="TheThemeStyle"></a>
 
 ## TheThemeStyle()

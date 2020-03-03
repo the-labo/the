@@ -15,6 +15,7 @@ const StatefulDropdown = () => {
   )
   return (
     <TheDropdownMenu
+      autoShrink
       label='Controlled dropdown'
       onToggle={onToggle}
       open={open}

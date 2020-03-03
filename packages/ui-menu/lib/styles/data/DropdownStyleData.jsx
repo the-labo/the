@@ -65,7 +65,7 @@ function DropdownStyleData({
       maxWidth: '100vw',
       minWidth: tappableHeight * 3,
       opacity: 0,
-      overflow: 'hidden',
+      overflow: 'auto',
       position: 'absolute',
       transition: `opacity ${animationDuration}ms, box-shadow ${animationDuration}ms, border-color ${animationDuration}ms`,
       width: 'max-content',

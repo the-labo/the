@@ -2,7 +2,7 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React, { useCallback, useEffect, useMemo, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import ClickOutside from '@okunishinishi/react-click-outside'
 import { TheIcon } from '@the-/ui-icon'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
@@ -16,6 +16,7 @@ import TheMenu from './TheMenu'
  */
 const TheDropDownMenu = (props) => {
   const {
+    autoShrink = false,
     children,
     className,
     eventsToClose = [],
@@ -24,9 +25,33 @@ const TheDropDownMenu = (props) => {
     label,
     righted,
   } = props
+
   const tmp = useMemo(() => ({}), [])
+
+  const [innerMaxHeight, setInnerMaxHeight] = useState(null)
+  const ref = useRef(null)
   const [open, setOpen] = useState(!!props.open)
   tmp.open = open
+
+  useEffect(() => {
+    if (open) {
+      const { current: elm } = ref
+      const shouldShrink = elm && elm.offsetParent && autoShrink
+      if (shouldShrink) {
+        const elmRect = elm.getBoundingClientRect()
+        const containerRect = elm.offsetParent.getBoundingClientRect()
+        const newListMaxHeight = Math.max(
+          containerRect.bottom - elmRect.bottom - 4,
+        )
+        if (newListMaxHeight > 48) {
+          setInnerMaxHeight(newListMaxHeight)
+        }
+      }
+
+      return () => {}
+    }
+  }, [autoShrink, setInnerMaxHeight, open])
+
   const onToggle = useCallback(
     (newOpen) => {
       if (tmp.open !== newOpen) {
@@ -77,6 +102,7 @@ const TheDropDownMenu = (props) => {
           'the-dropdown-menu-open': open,
           'the-dropdown-menu-righted': righted,
         })}
+        ref={ref}
       >
         <div className='the-dropdown-menu-content'>
           <TheDropDownMenuButton
@@ -86,7 +112,10 @@ const TheDropDownMenu = (props) => {
           >
             {label || <TheIcon className={icon} />}
           </TheDropDownMenuButton>
-          <div className='the-dropdown-menu-inner'>
+          <div
+            className='the-dropdown-menu-inner'
+            style={{ maxHeight: innerMaxHeight }}
+          >
             <TheMenu role='none'>{children}</TheMenu>
           </div>
         </div>
