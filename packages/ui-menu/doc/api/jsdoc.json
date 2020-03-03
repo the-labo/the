@@ -12,7 +12,7 @@
     "name": "@the-/ui-menu",
     "order": 0,
     "typicalname": "uiMenu",
-    "version": "16.0.4"
+    "version": "16.1.0"
   },
   {
     "description": "Drop down menu",
@@ -82,7 +82,7 @@
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
       "filename": "TheDropdownMenu.jsx",
-      "lineno": 91,
+      "lineno": 104,
       "path": "lib"
     },
     "name": "eventsToClose",
@@ -97,7 +97,7 @@
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
       "filename": "TheDropdownMenu.jsx",
-      "lineno": 93,
+      "lineno": 106,
       "path": "lib"
     },
     "name": "label",
@@ -112,7 +112,7 @@
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
       "filename": "TheDropdownMenu.jsx",
-      "lineno": 95,
+      "lineno": 109,
       "path": "lib"
     },
     "name": "open",
@@ -127,7 +127,7 @@
     "memberof": "TheDropDownMenu.propTypes",
     "meta": {
       "filename": "TheDropdownMenu.jsx",
-      "lineno": 97,
+      "lineno": 111,
       "path": "lib"
     },
     "name": "righted",

@@ -2,7 +2,7 @@
 
 import c from 'classnames'
 import PropTypes from 'prop-types'
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import ClickOutside from '@okunishinishi/react-click-outside'
 import { TheIcon } from '@the-/ui-icon'
 import { eventHandlersFor, htmlAttributesFor } from '@the-/util-ui'
@@ -24,9 +24,22 @@ const TheDropDownMenu = (props) => {
     label,
     righted,
   } = props
+  const tmp = useMemo(() => ({}), [])
   const [open, setOpen] = useState(!!props.open)
-  const onClose = useCallback(() => setOpen(false), [setOpen])
-  const onOpen = useCallback(() => setOpen(true), [setOpen])
+  tmp.open = open
+  const onToggle = useCallback(
+    (newOpen) => {
+      if (tmp.open !== newOpen) {
+        setOpen(newOpen)
+      }
+      if (newOpen !== props.open) {
+        props.onToggle && props.onToggle(newOpen)
+      }
+    },
+    [setOpen, tmp, props.onToggle],
+  )
+  const onClose = useCallback(() => onToggle(false), [onToggle])
+  const onOpen = useCallback(() => onToggle(true), [onToggle])
 
   useEffect(() => {
     const window = get('window')
@@ -91,6 +104,7 @@ TheDropDownMenu.propTypes = {
   eventsToClose: PropTypes.arrayOf(PropTypes.string),
   /** Label for toggle button */
   label: PropTypes.node,
+  onToggle: PropTypes.func,
   /** Open  when mounted */
   open: PropTypes.bool,
   /** Show on righthand */
@@ -99,6 +113,7 @@ TheDropDownMenu.propTypes = {
 
 TheDropDownMenu.defaultProps = {
   eventsToClose: ['hashchange'],
+  onToggle: () => {},
   open: false,
   righted: false,
   role: 'menu',

@@ -1,9 +1,37 @@
 'use strict'
 
-import React from 'react'
+import React, { useCallback, useState } from 'react'
 import { TheDropdownMenu, TheMenu } from '@the-/ui-menu'
 import { TheMenuStyle } from '@the-/ui-menu/styles'
 import { TheRouter } from '@the-/ui-router'
+
+const StatefulDropdown = () => {
+  const [open, setOpen] = useState(false)
+  const onToggle = useCallback(
+    (open) => {
+      setOpen(open)
+    },
+    [setOpen],
+  )
+  return (
+    <TheDropdownMenu
+      label='Controlled dropdown'
+      onToggle={onToggle}
+      open={open}
+    >
+      <TheDropdownMenu.Item to='foo'>foo</TheDropdownMenu.Item>
+      <TheDropdownMenu.Item to='bar'>bar</TheDropdownMenu.Item>
+      <TheDropdownMenu.Item>baz</TheDropdownMenu.Item>
+      <TheDropdownMenu.Item to='quz'>quz</TheDropdownMenu.Item>
+      <TheDropdownMenu.Item>1</TheDropdownMenu.Item>
+      <TheDropdownMenu.Item>2</TheDropdownMenu.Item>
+      <TheDropdownMenu.Item>Long Long Long Long Long Text</TheDropdownMenu.Item>
+      <TheDropdownMenu.Item onClick={() => setOpen(false)}>
+        Click and close
+      </TheDropdownMenu.Item>
+    </TheDropdownMenu>
+  )
+}
 
 const ExampleComponent = () => {
   const ExampleMenu = ({ grid = false }) => (
@@ -55,6 +83,7 @@ const ExampleComponent = () => {
 
         <br />
         <br />
+        <StatefulDropdown />
         <br />
         <br />
         <br />
