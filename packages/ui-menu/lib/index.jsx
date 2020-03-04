@@ -4,7 +4,7 @@
  * @description Menu of the-components
  * @module @the-/ui-menu
  * @typicalname uiMenu
- * @version 16.1.1
+ * @version 16.1.2
  */
 'use strict'
 

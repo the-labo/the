@@ -68,6 +68,9 @@ function DropdownStyleData({
       overflow: 'auto',
       position: 'absolute',
       transition: `opacity ${animationDuration}ms, box-shadow ${animationDuration}ms, border-color ${animationDuration}ms`,
+      ul: {
+        overflow: 'hidden',
+      },
       width: 'max-content',
       zIndex: 8,
     },
