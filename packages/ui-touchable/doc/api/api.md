@@ -5,7 +5,7 @@
 ## @the-/ui-touchable
 Touch event handler
 
-**Version**: 15.5.6  
+**Version**: 15.5.8  
 
 * [@the-/ui-touchable](#module_@the-/ui-touchable)
     * [.TheTouchable](#module_@the-/ui-touchable.TheTouchable)

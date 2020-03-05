@@ -159,7 +159,10 @@ const TheTouchable = (props) => {
       if (!e.ctrlKey) {
         return
       }
-
+      const tooSmall = Math.abs(e.deltaY) < 0.1
+      if (tooSmall) {
+        return
+      }
       e.preventDefault()
 
       clearTimeout(wheelScaleState.doneTimer)
