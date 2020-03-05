@@ -1,7 +1,7 @@
 {
   "name": "@the-/client",
   "description": "Client for the-server",
-  "version": "17.2.1",
+  "version": "17.2.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@the-/check-env": "^15.6.0",
-    "@the-/pack": "^16.2.7",
+    "@the-/pack": "^16.2.8",
     "@the-/queue": "^15.4.12",
     "@the-/stream": "^15.4.12",
     "asleep": "^1.0.3",
@@ -27,13 +27,13 @@
     "rfunc-constants": "^1.0.5",
     "socket.io-client": "^2.3.0",
     "url": "^0.11.0",
-    "uuid": "^3.4.0"
+    "uuid": "^7.0.2"
   },
   "devDependencies": {
-    "@the-/server": "^17.6.0",
+    "@the-/server": "^17.6.2",
     "aport": "^2.0.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
   },
   "engines": {
     "node": ">=10",

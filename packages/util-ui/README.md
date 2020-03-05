@@ -75,6 +75,7 @@ Usage
 
 - global
   - [base64ToBlob(base64String)](./doc/api/api.md#base64ToBlob)
+  - [isVideoSrc(src)](./doc/api/api.md#isVideoSrc)
 - module:@the-/util-site
   - [.scrollToElement(element)](./doc/api/api.md#module_@the-/util-site.scrollToElement)
 - module:@the-/util-ui
@@ -86,7 +87,6 @@ Usage
   - [.isKeyCode(code,name)](./doc/api/api.md#module_@the-/util-ui.isKeyCode)
   - [.isMultiTouchEvent(e)](./doc/api/api.md#module_@the-/util-ui.isMultiTouchEvent)
   - [.isServerSide()](./doc/api/api.md#module_@the-/util-ui.isServerSide)
-  - [.isVideoSrc(src)](./doc/api/api.md#module_@the-/util-ui.isVideoSrc)
   - [.newId(options)](./doc/api/api.md#module_@the-/util-ui.newId)
   - [.readFileAsDataURL(file)](./doc/api/api.md#module_@the-/util-ui.readFileAsDataURL)
   - [.stopTouchScrolling(options)](./doc/api/api.md#module_@the-/util-ui.stopTouchScrolling)
