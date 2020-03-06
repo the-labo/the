@@ -1,6 +1,6 @@
 'use strict'
 
-const uuid = require('uuid')
+const { v4: uuid } = require('uuid')
 
 /**
  * Generate new id
@@ -12,7 +12,7 @@ const uuid = require('uuid')
  */
 function newId(options = {}) {
   const { prefix = 'the' } = options
-  return [prefix, uuid.v4()].join('-')
+  return [prefix, uuid()].join('-')
 }
 
 module.exports = newId

@@ -1,7 +1,7 @@
 'use strict'
 
 const argx = require('argx')
-const uuid = require('uuid')
+const { v4: uuid } = require('uuid')
 const { TheMedia } = require('@the-/media')
 const { get } = require('@the-/window')
 const { ChannelNames, IOEvents, PeerPurposes } = require('./constants')
@@ -40,7 +40,7 @@ class TheRTCClient extends TheRTCClientBase {
       onRemoteFail,
       onRemoteGone,
       onRoom,
-      rid = uuid.v4(),
+      rid = uuid(),
     } = options
     this.room = null
     this.media = media || new TheMedia(mediaConstrains)
