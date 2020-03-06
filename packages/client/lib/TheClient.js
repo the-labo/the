@@ -6,7 +6,7 @@ const { get } = require('bwindow')
 const qs = require('qs')
 const { RFuncClient } = require('rfunc-client/shim/browser')
 const io = require('socket.io-client')
-const uuid = require('uuid')
+const { v4: uuid } = require('uuid')
 const { isProduction, unlessProduction } = require('@the-/check-env')
 const { ThePack } = require('@the-/pack')
 const IOEvents = require('./constants/IOEvents')
@@ -194,7 +194,7 @@ class TheClient extends RFuncClient {
   async invoke(moduleName, methodName, ...params) {
     this.assertNotClosed()
     const { cid, encoder, socket } = this
-    const iid = uuid.v4() // Invocation id
+    const iid = uuid() // Invocation id
 
     return new Promise((resolve, reject) => {
       let keptGoneTimer = -1
@@ -416,7 +416,7 @@ class TheClient extends RFuncClient {
 TheClient.RPC_ACTOR_NAME = 'rpc'
 TheClient.CID_KEY = 'the:cid'
 
-TheClient.newCID = () => uuid.v4()
+TheClient.newCID = () => uuid()
 
 module.exports = TheClient
 

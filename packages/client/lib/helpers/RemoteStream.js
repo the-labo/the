@@ -1,7 +1,7 @@
 'use strict'
 
 const asleep = require('asleep')
-const uuid = require('uuid')
+const { v4: uuid } = require('uuid')
 const { unlessProduction } = require('@the-/check-env')
 const { TheQueue } = require('@the-/queue')
 const { Consumer, TheStream } = require('@the-/stream')
@@ -12,7 +12,7 @@ class RemoteStream extends TheStream {
     super()
     this.streamName = streamName
     this.socket = socket
-    this.sid = uuid.v4()
+    this.sid = uuid()
     this.tmieout = 30000
     this.closed = false
   }
