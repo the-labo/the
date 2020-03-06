@@ -1,14 +1,14 @@
 'use strict'
 
 const asleep = require('asleep')
-const uuid = require('uuid')
+const { v4: uuid } = require('uuid')
 const { Worker } = require('worker_threads')
 
 function Proxy(filename, options = {}) {
   const { timeout = 30 * 1000 } = options
   const worker = new Worker(filename)
   const call = async (cmd, ...args) => {
-    const iid = uuid.v4()
+    const iid = uuid()
     return new Promise((resolve, reject) => {
       const timeoutTimer = setTimeout(() => {
         reject(new Error('[@the-/pack] Proxy timeout'))

@@ -1,6 +1,6 @@
 'use strict'
 
-const uuid = require('uuid')
+const { v4: uuid } = require('uuid')
 const create = require('../create')
 
 function Proxy(url) {
@@ -20,7 +20,7 @@ function Proxy(url) {
 
   const worker = new Worker(url)
   const call = async (cmd, ...args) => {
-    const iid = uuid.v4()
+    const iid = uuid()
     return new Promise((resolve) => {
       const onMessage = ({ data }) => {
         const hit = iid === data.iid
