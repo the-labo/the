@@ -44,7 +44,7 @@ TheDialogStyle.data = (options) => {
         textAlign: 'center',
       },
       '.the-confirm-dialog-checkbox': {
-        margin: 0,
+        margin: '0 0 8px',
       },
       '.the-confirm-dialog-content': {
         minHeight: '72px',

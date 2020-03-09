@@ -7,8 +7,7 @@ const { decode, encode } = create()
 const handlers = { decode, encode }
 
 function listen() {
-  // eslint-disable-next-line
-  onmessage = (message) => {
+  self.onmessage = (message) => {
     const {
       data: { args, cmd, iid },
     } = message
@@ -18,14 +17,13 @@ function listen() {
     }
 
     const result = handler(...args)
-    postMessage({
+    self.postMessage({
       cmd,
       iid,
       result,
     })
   }
-  // eslint-disable-next-line
-  onmessageerror = (error) => {
+  self.onmessageerror = (error) => {
     console.error('message error', error)
   }
 }
