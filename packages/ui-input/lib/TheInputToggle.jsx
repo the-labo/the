@@ -11,6 +11,7 @@ import { eventHandlersFor, htmlAttributesFor, newId } from '@the-/util-ui'
 const TheInputToggle = React.memo((props) => {
   const {
     className,
+    color,
     error,
     name,
     offTitle,
@@ -54,6 +55,7 @@ const TheInputToggle = React.memo((props) => {
         <TheInputToggle.Label
           className='the-input-toggle-on-label'
           htmlFor={`${id}-radio-off`}
+          style={{ backgroundColor: color }}
           title={onTitle}
         />
         <TheInputToggle.Radio
@@ -64,7 +66,11 @@ const TheInputToggle = React.memo((props) => {
           onClick={handleClick}
           value='off'
         />
-        <div className='the-input-toggle-handle' onClick={handleClick} />
+        <div
+          className='the-input-toggle-handle'
+          onClick={handleClick}
+          style={simple ? { backgroundColor: color } : {}}
+        />
         <TheInputToggle.Label
           className='the-input-toggle-off-label'
           htmlFor={`${id}-radio-on`}
@@ -87,10 +93,15 @@ const TheInputToggle = React.memo((props) => {
 TheInputToggle.Label = function TheInputToggleLabel({
   className,
   htmlFor,
+  style,
   title,
 }) {
   return (
-    <label className={c('the-input-toggle-label', className)} htmlFor={htmlFor}>
+    <label
+      className={c('the-input-toggle-label', className)}
+      htmlFor={htmlFor}
+      style={style}
+    >
       <span className='the-input-toggle-label-text'>{title}</span>
     </label>
   )
