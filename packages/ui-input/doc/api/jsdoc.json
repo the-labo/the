@@ -24,7 +24,7 @@
     "name": "@the-/ui-input",
     "order": 1,
     "typicalname": "uiInput",
-    "version": "17.0.2"
+    "version": "17.1.0"
   },
   {
     "description": "Text Input",
@@ -1021,7 +1021,7 @@
     "memberof": "TheInputToggle.propTypes",
     "meta": {
       "filename": "TheInputToggle.jsx",
-      "lineno": 123,
+      "lineno": 134,
       "path": "lib"
     },
     "name": "offTitle",
@@ -1036,7 +1036,7 @@
     "memberof": "TheInputToggle.propTypes",
     "meta": {
       "filename": "TheInputToggle.jsx",
-      "lineno": 125,
+      "lineno": 136,
       "path": "lib"
     },
     "name": "on",
@@ -1051,7 +1051,7 @@
     "memberof": "TheInputToggle.propTypes",
     "meta": {
       "filename": "TheInputToggle.jsx",
-      "lineno": 127,
+      "lineno": 138,
       "path": "lib"
     },
     "name": "onTitle",
@@ -1066,7 +1066,7 @@
     "memberof": "TheInputToggle.propTypes",
     "meta": {
       "filename": "TheInputToggle.jsx",
-      "lineno": 129,
+      "lineno": 140,
       "path": "lib"
     },
     "name": "width",

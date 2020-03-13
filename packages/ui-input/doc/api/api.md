@@ -59,7 +59,7 @@
 ## @the-/ui-input
 Input of the-components
 
-**Version**: 17.0.2  
+**Version**: 17.1.0  
 <a name="TheInputText"></a>
 
 ## TheInputText
