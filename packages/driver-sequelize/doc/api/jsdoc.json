@@ -13,7 +13,7 @@
     "name": "@the-/driver-sequelize",
     "order": 2,
     "typicalname": "driverSequelize",
-    "version": "16.1.3"
+    "version": "16.2.0"
   },
   {
     "description": "Define schema",
@@ -23,7 +23,7 @@
     "memberof": "TheDriverSequelize",
     "meta": {
       "filename": "TheDriverSequelize.js",
-      "lineno": 79,
+      "lineno": 80,
       "path": "lib"
     },
     "name": "define",
@@ -57,7 +57,7 @@
     "memberof": "TheDriverSequelize",
     "meta": {
       "filename": "TheDriverSequelize.js",
-      "lineno": 275,
+      "lineno": 276,
       "path": "lib"
     },
     "name": "untilReady",
@@ -81,7 +81,7 @@
     "memberof": "@the-/driver-sequelize",
     "meta": {
       "filename": "TheDriverSequelize.js",
-      "lineno": 23,
+      "lineno": 18,
       "path": "lib"
     },
     "name": "TheDriverSequelize",
@@ -156,22 +156,6 @@
   },
   {
     "access": "protected",
-    "description": "Mixin functions",
-    "id": "module:@the-/driver-sequelize.mixins",
-    "kind": "namespace",
-    "longname": "module:@the-/driver-sequelize.mixins",
-    "memberof": "module:@the-/driver-sequelize",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 3,
-      "path": "lib/mixins"
-    },
-    "name": "mixins",
-    "order": 14,
-    "scope": "static"
-  },
-  {
-    "access": "protected",
     "description": "Modeling functions",
     "id": "module:@the-/driver-sequelize.modeling",
     "kind": "namespace",
@@ -183,7 +167,7 @@
       "path": "lib/modeling"
     },
     "name": "modeling",
-    "order": 19,
+    "order": 17,
     "scope": "static"
   },
   {
@@ -199,7 +183,7 @@
       "path": "lib/parsing"
     },
     "name": "parsing",
-    "order": 21,
+    "order": 19,
     "scope": "static"
   },
   {
@@ -355,35 +339,6 @@
     "scope": "static"
   },
   {
-    "description": "Mixin of sequelize",
-    "id": "module:@the-/driver-sequelize.mixins.sequelizeMix",
-    "kind": "function",
-    "longname": "module:@the-/driver-sequelize.mixins.sequelizeMix",
-    "memberof": "module:@the-/driver-sequelize.mixins",
-    "meta": {
-      "filename": "sequelizeMix.js",
-      "lineno": 5,
-      "path": "lib/mixins"
-    },
-    "name": "sequelizeMix",
-    "order": 15,
-    "params": [
-      {
-        "name": "Class"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        }
-      }
-    ],
-    "scope": "static"
-  },
-  {
     "description": "Parse schema",
     "id": "module:@the-/driver-sequelize.modeling.defineModel",
     "kind": "function",
@@ -395,7 +350,7 @@
       "path": "lib/modeling"
     },
     "name": "defineModel",
-    "order": 16,
+    "order": 14,
     "params": [
       {
         "type": {
@@ -445,7 +400,7 @@
       "path": "lib/modeling"
     },
     "name": "defineModelColumn",
-    "order": 17,
+    "order": 15,
     "params": [
       {
         "type": {
@@ -487,7 +442,7 @@
       "path": "lib/modeling"
     },
     "name": "defineModelIndexes",
-    "order": 18,
+    "order": 16,
     "params": [
       {
         "name": "schema"
@@ -515,7 +470,7 @@
       "path": "lib/modeling"
     },
     "name": "prepareModel",
-    "order": 20,
+    "order": 18,
     "params": [
       {
         "name": "Model"
@@ -546,7 +501,7 @@
       "path": "lib/parsing"
     },
     "name": "parseAttributeName",
-    "order": 22,
+    "order": 20,
     "params": [
       {
         "type": {
@@ -589,7 +544,7 @@
       "path": "lib/parsing"
     },
     "name": "parseFilter",
-    "order": 23,
+    "order": 21,
     "params": [
       {
         "name": "filter"
@@ -621,7 +576,7 @@
       "path": "lib/parsing"
     },
     "name": "parseSort",
-    "order": 24,
+    "order": 22,
     "params": [
       {
         "name": "sort"

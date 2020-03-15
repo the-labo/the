@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for serializer.
+ * @file Test for serializer.
  * Runs with mocha.
  */
 describe('serializer', () => {

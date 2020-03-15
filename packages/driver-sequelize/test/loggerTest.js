@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for logger.
+ * @file Test for logger.
  * Runs with mocha.
  */
 describe('logger', () => {

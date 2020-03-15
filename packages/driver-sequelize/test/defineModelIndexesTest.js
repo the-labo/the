@@ -1,5 +1,5 @@
 /**
- * Test for defineModelIndexes.
+ * @file Test for defineModelIndexes.
  * Runs with mocha.
  */
 'use strict'

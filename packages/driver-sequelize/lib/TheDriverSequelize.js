@@ -10,24 +10,21 @@ const { isProduction, unlessProduction } = require('@the-/check-env')
 const MetaColumnNames = require('./constants/MetaColumnNames')
 const convertInbound = require('./converters/convertInbound')
 const convertOutbound = require('./converters/convertOutbound')
-const m = require('./mixins')
+const createSequelize = require('./helpers/createSequelize')
 const defineModel = require('./modeling/defineModel')
 const prepareModel = require('./modeling/prepareModel')
 const { parseFilter, parseSort } = require('./parsing')
-
-const TheDriverSequelizeBase = [m.sequelizeMix].reduce(
-  (Driver, mix) => mix(Driver),
-  Driver,
-)
 
 /**
  * @memberof @the-/driver-sequelize
  * @class TheDriverSequelize
  */
-class TheDriverSequelize extends TheDriverSequelizeBase {
+class TheDriverSequelize extends Driver {
   constructor(config = {}) {
     super()
     const {
+      charset = 'utf8',
+      collate = 'utf8_general_ci',
       database,
       dialect = 'sqlite',
       logging = false,
@@ -40,11 +37,15 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
     this.models = {}
     this.schemas = {}
     this.prepareLocks = {}
+    this.charset = charset
+    this.collate = collate
     this._sequelizeArgs = [
       database,
       username,
       password,
       {
+        charset,
+        collate,
         dialect,
         logging,
         storage,
@@ -55,7 +56,7 @@ class TheDriverSequelize extends TheDriverSequelizeBase {
 
   get sequelize() {
     if (!this._sequelize) {
-      this._sequelize = this.createSequelize(...this._sequelizeArgs)
+      this._sequelize = createSequelize(...this._sequelizeArgs)
     }
 
     return this._sequelize

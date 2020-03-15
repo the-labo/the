@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for parseSort.
+ * @file Test for parseSort.
  * Runs with mocha.
  */
 describe('parse-sort', () => {

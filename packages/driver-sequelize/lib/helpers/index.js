@@ -8,14 +8,17 @@
  */
 'use strict'
 
+const createSequelize_ = require('./createSequelize')
 const logger_ = require('./logger')
 const serializer_ = require('./serializer')
 
 // `module.exports` overrides these `exports.*`, but still needs them for lebab (https://github.com/lebab/lebab)
+exports.createSequelize = createSequelize_
 exports.logger = logger_
 exports.serializer = serializer_
 
 module.exports = {
+  createSequelize: createSequelize_,
   logger: logger_,
   serializer: serializer_,
 }

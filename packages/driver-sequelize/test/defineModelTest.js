@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for defineModel.
+ * @file Test for defineModel.
  * Runs with mocha.
  */
 describe('define-model', () => {

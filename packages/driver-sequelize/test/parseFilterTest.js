@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for parseFilter.
+ * @file Test for parseFilter.
  * Runs with mocha.
  */
 describe('parse-filter', () => {

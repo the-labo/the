@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for defineModelColumn.
+ * @file Test for defineModelColumn.
  * Runs with mocha.
  */
 describe('define-model-column', () => {

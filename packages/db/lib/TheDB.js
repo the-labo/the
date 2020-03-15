@@ -5,7 +5,7 @@ const asleep = require('asleep')
 const { clone } = require('asobj')
 const { ClayLump } = require('clay-lump')
 const isClass = require('is-class')
-const uuid = require('uuid')
+const { v4: uuid } = require('uuid')
 const theAssert = require('@the-/assert')
 const { unlessProduction } = require('@the-/check-env')
 const theHash = require('@the-/hash')
@@ -43,7 +43,7 @@ const TheDBBase = [
  * @augments module:@the-/db.refreshMix~RefreshMixed
  * @augments module:@the-/db.resourceMix~ResourceMixed
  * @param {Object} config
- * @param {string} [config.name=uuid.v4()] Name of clay-lump
+ * @param {string} [config.name=uuid()] Name of clay-lump
  * @param {string} [config.dialect='memory'] - Database dialect. "mysql", "json", "memory", "localstorage", or "sqlite"
  * @param {string} [config.storage] - Storage file name for "sqlite" or "json" dialect
  * @param {string} [config.database] - Name of database schema
@@ -63,7 +63,7 @@ class TheDB extends TheDBBase {
 
     const {
       hooks = {},
-      name = uuid.v4(),
+      name = uuid(),
       plugins = {},
       refreshInterval = 300,
       resourceLogFile = 'var/db/resources.log',

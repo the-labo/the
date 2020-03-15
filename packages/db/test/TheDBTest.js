@@ -293,24 +293,25 @@ describe('the-db', function() {
     await db.close()
   })
 
-  it('Try mongo', async () => {
-    const db = new TheDB({
-      env: {
-        database: 'the-db-test',
-        dialect: 'mongo',
-      },
-    })
-    const User = db.resource('User')
-    const user01 = await User.create({ name: 'user01' })
-    ok(user01)
-    await db.setup()
-    await db.close()
-  })
+  // it('Try mongo', async () => {
+  //   const db = new TheDB({
+  //     env: {
+  //       database: 'the-db-test',
+  //       dialect: 'mongo',
+  //     },
+  //   })
+  //   const User = db.resource('User')
+  //   const user01 = await User.create({ name: 'user01' })
+  //   ok(user01)
+  //   await db.setup()
+  //   await db.close()
+  // })
 
   it('sequelize/Mysql', async () => {
     const env = {
       database: 'the-db-test-sequelize123',
       dialect: 'sequelize/mysql',
+      host: '127.0.0.1',
       logging: console.log,
       password: 'fuge',
       username: 'hoge',

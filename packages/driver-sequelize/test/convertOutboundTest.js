@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for convertOutbound.
+ * @file Test for convertOutbound.
  * Runs with mocha.
  */
 describe('convert-outbound', () => {

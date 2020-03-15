@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for MetaColumnNamesReversed.
+ * @file Test for MetaColumnNamesReversed.
  * Runs with mocha.
  */
 describe('meta-column-names-reversed', () => {

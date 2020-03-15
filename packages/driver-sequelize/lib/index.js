@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/driver-sequelize
  * @typicalname driverSequelize
- * @version 16.1.3
+ * @version 16.2.0
  */
 'use strict'
 
@@ -14,7 +14,6 @@ const constants_ = require('./constants')
 const converters_ = require('./converters')
 const create_ = require('./create')
 const helpers_ = require('./helpers')
-const mixins_ = require('./mixins')
 const modeling_ = require('./modeling')
 const parsing_ = require('./parsing')
 const default__ = require('./default')
@@ -25,7 +24,6 @@ exports.constants = constants_
 exports.converters = converters_
 exports.create = create_
 exports.helpers = helpers_
-exports.mixins = mixins_
 exports.modeling = modeling_
 exports.parsing = parsing_
 

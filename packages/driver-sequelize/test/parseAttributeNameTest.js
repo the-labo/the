@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for parseAttributeName.
+ * @file Test for parseAttributeName.
  * Runs with mocha.
  */
 describe('parse-attribute-name', () => {

@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * Test for TheDriverSequelize.
+ * @file Test for TheDriverSequelize.
  * Runs with mocha.
  */
 const { unlinkAsync } = require('asfs')
@@ -572,15 +572,18 @@ describe('the-driver-sequelize', function() {
     const DB_USER = 'hoge'
     const DB_PASSWORD = 'fuge'
     const DATABASE = 'the_driver_sequelize_test'
+    const DB_HOST = '127.0.0.1'
 
     await resetMysqlDatabase(DB_ROOT_USER, DB_ROOT_PASSWORD, {
       database: DATABASE,
+      host: DB_HOST,
       password: DB_PASSWORD,
       username: DB_USER,
     })
     const driver = new TheDriverSequelize({
       database: DATABASE,
       dialect: 'mysql',
+      host: DB_HOST,
       password: DB_PASSWORD,
       username: DB_USER,
     })
@@ -608,18 +611,21 @@ describe('the-driver-sequelize', function() {
   it('mysql DATE type should support fractional seconds', async () => {
     const DB_ROOT_USER = 'root'
     const DB_ROOT_PASSWORD = 'root'
+    const DB_HOST = '127.0.0.1'
     const DB_USER = 'hoge'
     const DB_PASSWORD = 'fuge'
     const DATABASE = 'the_driver_sequelize_testx'
 
     await resetMysqlDatabase(DB_ROOT_USER, DB_ROOT_PASSWORD, {
       database: DATABASE,
+      host: DB_HOST,
       password: DB_PASSWORD,
       username: DB_USER,
     })
     const driver = new TheDriverSequelize({
       database: DATABASE,
       dialect: 'mysql',
+      host: DB_HOST,
       password: DB_PASSWORD,
       username: DB_USER,
     })

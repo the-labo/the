@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for MetaColumnNames.
+ * @file Test for MetaColumnNames.
  * Runs with mocha.
  */
 describe('meta-column-names', () => {

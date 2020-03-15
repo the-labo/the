@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for prepareModel.
+ * @file Test for prepareModel.
  * Runs with mocha.
  */
 describe('prepare-model', () => {

@@ -5,7 +5,7 @@
 ## @the-/driver-sequelize
 Sequelize driver for the-framework
 
-**Version**: 16.1.3  
+**Version**: 16.2.0  
 **License**: MIT  
 
 * [@the-/driver-sequelize](#module_@the-/driver-sequelize)
@@ -17,8 +17,6 @@ Sequelize driver for the-framework
         * [.convertOutbound(values, [options&#x3D;])](#module_@the-/driver-sequelize.converters.convertOutbound) ⇒ <code>\*</code>
     * [.helpers](#module_@the-/driver-sequelize.helpers) : <code>object</code>
         * [.Logger](#module_@the-/driver-sequelize.helpers.Logger)
-    * [.mixins](#module_@the-/driver-sequelize.mixins) : <code>object</code>
-        * [.sequelizeMix(Class)](#module_@the-/driver-sequelize.mixins.sequelizeMix) ⇒ <code>\*</code>
     * [.modeling](#module_@the-/driver-sequelize.modeling) : <code>object</code>
         * [.defineModel(sequelize, resourceName, schema)](#module_@the-/driver-sequelize.modeling.defineModel) ⇒ <code>Object</code>
         * [.defineModelColumn(def, propertyName)](#module_@the-/driver-sequelize.modeling.defineModelColumn) ⇒ <code>\*</code>
@@ -91,24 +89,6 @@ Helper functions
 
 #### helpers.Logger
 **Kind**: static property of [<code>helpers</code>](#module_@the-/driver-sequelize.helpers)  
-<a name="module_@the-/driver-sequelize.mixins"></a>
-
-### driverSequelize.mixins : <code>object</code>
-Mixin functions
-
-**Kind**: static namespace of [<code>@the-/driver-sequelize</code>](#module_@the-/driver-sequelize)  
-**Access**: protected  
-<a name="module_@the-/driver-sequelize.mixins.sequelizeMix"></a>
-
-#### mixins.sequelizeMix(Class) ⇒ <code>\*</code>
-Mixin of sequelize
-
-**Kind**: static method of [<code>mixins</code>](#module_@the-/driver-sequelize.mixins)  
-
-| Param |
-| --- |
-| Class | 
-
 <a name="module_@the-/driver-sequelize.modeling"></a>
 
 ### driverSequelize.modeling : <code>object</code>

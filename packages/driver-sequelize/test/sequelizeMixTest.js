@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Test for sequelizeMix.
+ * @file Test for sequelizeMix.
  * Runs with mocha.
  */
 describe('sequelize-mix', () => {
