@@ -13,7 +13,7 @@
     "name": "@the-/db",
     "order": 4,
     "typicalname": "db",
-    "version": "17.2.3"
+    "version": "17.2.4"
   },
   {
     "id": "module:@the-/db.TheDB()",
@@ -38,7 +38,7 @@
           ]
         },
         "optional": true,
-        "defaultvalue": "uuid.v4()",
+        "defaultvalue": "uuid()",
         "description": "Name of clay-lump",
         "name": "config.name"
       },

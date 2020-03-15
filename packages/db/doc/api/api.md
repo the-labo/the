@@ -5,7 +5,7 @@
 ## @the-/db
 DB for the-framework
 
-**Version**: 17.2.3  
+**Version**: 17.2.4  
 **License**: MIT  
 
 * [@the-/db](#module_@the-/db)
@@ -84,7 +84,7 @@ DB for the-framework
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | config | <code>Object</code> |  |  |
-| [config.name] | <code>string</code> | <code>&quot;uuid.v4()&quot;</code> | Name of clay-lump |
+| [config.name] | <code>string</code> | <code>&quot;uuid()&quot;</code> | Name of clay-lump |
 | [config.dialect] | <code>string</code> | <code>&quot;&#x27;memory&#x27;&quot;</code> | Database dialect. "mysql", "json", "memory", "localstorage", or "sqlite" |
 | [config.storage] | <code>string</code> |  | Storage file name for "sqlite" or "json" dialect |
 | [config.database] | <code>string</code> |  | Name of database schema |

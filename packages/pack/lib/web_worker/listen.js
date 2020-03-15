@@ -29,5 +29,3 @@ function listen() {
 }
 
 module.exports = listen
-
-/* global postMessage */
