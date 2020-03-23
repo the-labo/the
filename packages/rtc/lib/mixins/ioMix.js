@@ -130,7 +130,8 @@ function ioMix(Class) {
           iceServers: defineICEServers(
             String(socket.id)
               .split('#')
-              .pop(),
+              .pop()
+              .replace(/-/g, ''),
           ),
         })
       })
