@@ -127,7 +127,11 @@ function ioMix(Class) {
           socket.on(event, handleWrap)
         }
         socket.emit(IOEvents.CONFIG_ICE_SERVERS, {
-          iceServers: defineICEServers(`socket-${socket.id}`),
+          iceServers: defineICEServers(
+            String(socket.id)
+              .split('#')
+              .pop(),
+          ),
         })
       })
     }
