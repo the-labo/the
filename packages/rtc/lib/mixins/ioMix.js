@@ -131,7 +131,9 @@ function ioMix(Class) {
             String(socket.id)
               .split('#')
               .pop()
-              .replace(/-/g, ''),
+              .replace(/[-_]/g, '')
+              .toLowerCase()
+              .toLowerCase(),
           ),
         })
       })
