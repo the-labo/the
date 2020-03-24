@@ -28,12 +28,14 @@ function migrateMix(Class) {
       const schema = await TheDBSchema.current()
 
       if (schema.migratedAt) {
+        console.warn(`[TheDB] Version "${schema.version}" is already migrated`)
         return null
       }
 
       const { version } = schema
       const handler = handlers[version]
       if (!handler) {
+        console.warn(`[TheDB] No handler found for version "${schema.version}"`)
         return null
       }
 

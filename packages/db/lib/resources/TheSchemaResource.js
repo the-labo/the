@@ -33,9 +33,17 @@ const TheSchemaResource = ({ define }) => {
     async current() {
       const latest = await TheSchema.first({}, { sort: ['-createdAt'] })
       if (latest) {
-        return latest
+        if (!latest.migratedAt) {
+          return latest
+        }
       }
-
+      const skipped = await TheSchema.first(
+        { migratedAt: null },
+        { sort: ['-createdAt'] },
+      )
+      if (skipped) {
+        return skipped
+      }
       return TheSchema.create({})
     },
   })

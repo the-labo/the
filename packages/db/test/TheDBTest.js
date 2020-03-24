@@ -308,13 +308,18 @@ describe('the-db', function() {
   // })
 
   it('sequelize/Mysql', async () => {
+    const DB_USER = 't01'
+    const DB_PASSWORD = 't01'
+    const DATABASE = 'the-db-test-sequelize123'
+    const DB_HOST = '127.0.0.1'
+
     const env = {
-      database: 'the-db-test-sequelize123',
+      database: DATABASE,
       dialect: 'sequelize/mysql',
-      host: '127.0.0.1',
+      host: DB_HOST,
       logging: console.log,
-      password: 'fuge',
-      username: 'hoge',
+      password: DB_PASSWORD,
+      username: DB_USER,
     }
     const db = new TheDB({
       env,
