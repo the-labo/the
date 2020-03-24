@@ -1,7 +1,7 @@
 {
   "name": "@the-/code",
   "description": "Code formatter of the-frameworks",
-  "version": "15.16.0",
+  "version": "15.16.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -29,12 +29,12 @@
     "ignore": "^5.1.4",
     "minimatch": "^3.0.4",
     "postcss": "^7.0.27",
+    "prettier": "^2.0.2",
     "writeout": "^2.3.1",
     "yaml": "^1.8.3"
   },
   "devDependencies": {
-    "filecopy": "^4.1.0",
-    "prettier": "^2.0.1"
+    "filecopy": "^4.1.0"
   },
   "engines": {
     "node": ">=10",
@@ -47,9 +47,6 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "peerDependencies": {
-    "prettier": "*"
-  },
   "publishConfig": {
     "access": "public"
   },
