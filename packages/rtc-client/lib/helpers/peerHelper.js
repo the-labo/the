@@ -17,11 +17,20 @@ exports.createPeer = function createPeer({
   onFail,
   onIceCandidate,
   onStream,
+  peerOptional = [],
   pid,
   purpose,
   remoteRid,
 } = {}) {
-  const peer = new RTCPeerConnection({ iceServers, iceTransportPolicy })
+  const peer = new RTCPeerConnection(
+    {
+      iceServers,
+      iceTransportPolicy,
+    },
+    {
+      optional: peerOptional,
+    },
+  )
   const handlers = {
     [PeerEvents.CONNECTION_STATE_CHANGE]: () => {
       debug('connectionState', peer.connectionState, { rid: localRid })

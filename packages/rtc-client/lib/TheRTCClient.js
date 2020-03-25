@@ -40,11 +40,13 @@ class TheRTCClient extends TheRTCClientBase {
       onRemoteFail,
       onRemoteGone,
       onRoom,
+      peerOptional = [{ googIPv6: true }],
       rid = uuid(),
     } = options
     this.room = null
     this.media = media || new TheMedia(mediaConstrains)
     this.iceServers = null
+    this.peerOptional = peerOptional
     this.callbacks = {
       onLocal,
       onRemote,
@@ -191,6 +193,7 @@ class TheRTCClient extends TheRTCClientBase {
       iceServers,
       iceTransportPolicy,
       media: { stream: localStream },
+      peerOptional,
       rid: localRid,
     } = this
     const { desc, from: remoteRid, pid, purpose } = offer
@@ -207,6 +210,7 @@ class TheRTCClient extends TheRTCClientBase {
       onStream: (stream, { peer }) => {
         this.handleRemote(remoteRid, peer, stream)
       },
+      peerOptional,
       pid,
       purpose,
       remoteDescription: desc,
@@ -281,7 +285,13 @@ class TheRTCClient extends TheRTCClientBase {
 
   async establishPeer(client, purpose) {
     const { rid: remoteRid } = client
-    const { iceServers, iceTransportPolicy, rid: localRid, socket } = this
+    const {
+      iceServers,
+      iceTransportPolicy,
+      peerOptional,
+      rid: localRid,
+      socket,
+    } = this
     const pid = this.pidFor(localRid, remoteRid, purpose)
     const peer = await this.createOfferPeer({
       iceServers,
@@ -311,6 +321,7 @@ class TheRTCClient extends TheRTCClientBase {
       onStream: (stream, { peer }) => {
         this.handleRemote(remoteRid, peer, stream)
       },
+      peerOptional,
       pid,
       purpose,
       rid: remoteRid,
