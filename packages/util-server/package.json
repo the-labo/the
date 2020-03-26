@@ -1,7 +1,7 @@
 {
   "name": "@the-/util-server",
   "description": "Utility for server",
-  "version": "15.4.12",
+  "version": "15.4.13",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -15,7 +15,7 @@
     "amkdirp": "^2.0.0",
     "asleep": "^1.0.3",
     "mime": "^2.4.4",
-    "uuid": "^3.4.0"
+    "uuid": "^7.0.2"
   },
   "devDependencies": {},
   "engines": {

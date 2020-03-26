@@ -13,7 +13,7 @@
     "name": "@the-/rtc-client",
     "order": 2,
     "typicalname": "rtcClient",
-    "version": "15.10.5"
+    "version": "15.10.6"
   },
   {
     "description": "ChannelNames",
@@ -62,7 +62,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 64,
+      "lineno": 66,
       "path": "lib"
     },
     "name": "audioEnabled",
@@ -87,7 +87,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 72,
+      "lineno": 74,
       "path": "lib"
     },
     "name": "info",
@@ -112,7 +112,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 80,
+      "lineno": 82,
       "path": "lib"
     },
     "name": "rid",
@@ -137,7 +137,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 88,
+      "lineno": 90,
       "path": "lib"
     },
     "name": "state",
@@ -162,7 +162,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 103,
+      "lineno": 105,
       "path": "lib"
     },
     "name": "videoEnabled",
@@ -188,7 +188,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 230,
+      "lineno": 234,
       "path": "lib"
     },
     "name": "connect",
@@ -234,7 +234,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 274,
+      "lineno": 278,
       "path": "lib"
     },
     "name": "disconnect",
@@ -260,7 +260,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 395,
+      "lineno": 406,
       "path": "lib"
     },
     "name": "publish",

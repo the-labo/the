@@ -11,11 +11,11 @@
  */
 const mime = require('mime')
 const path = require('path')
-const uuid = require('uuid')
+const { v4: uuid } = require('uuid')
 
 /** @lends nameFile */
 function nameFile(options = {}) {
-  const { dir = [], ext, name = uuid.v4(), type } = options
+  const { dir = [], ext, name = uuid(), type } = options
 
   return [
     path.join(...[...[].concat(dir || []), name].filter(Boolean)),
