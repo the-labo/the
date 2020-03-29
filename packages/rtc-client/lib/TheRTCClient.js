@@ -207,6 +207,14 @@ class TheRTCClient extends TheRTCClientBase {
       onDisconnect: ({ peer }) => {
         this.handleRemoteGone(remoteRid, peer)
       },
+      onIceCandidate: (ice) => {
+        this.emitSocketEvent(IOEvents.PEER_ICE, {
+          from: localRid,
+          ice,
+          pid,
+          to: remoteRid,
+        })
+      },
       onStream: (stream, { peer }) => {
         this.handleRemote(remoteRid, peer, stream)
       },
