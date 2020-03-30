@@ -194,7 +194,6 @@ const TheHead = (props) => {
             type='text/javascript'
           />
         ))}
-      )}
       {children}
     </head>
   )
