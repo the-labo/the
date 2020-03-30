@@ -3,7 +3,7 @@
 import c from 'classnames'
 import { expand } from 'objnest'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useCallback, useMemo } from 'react'
 import { spinalcase } from 'stringcase'
 
 const addQuery = (url, query) => [url, query].join(/\?/.test(url) ? '&' : '?')
@@ -24,221 +24,180 @@ const ogProperty = (key) => {
 /**
  * Head of the-components
  */
-class TheHead extends React.Component {
-  getFallbackScript(fallbackUnless) {
-    if (!fallbackUnless) {
+const TheHead = (props) => {
+  const {
+    base,
+    baseTarget,
+    cdn,
+    charSet,
+    children,
+    className,
+    color,
+    css,
+    icon,
+    id,
+    itemProps,
+    js,
+    manifest,
+    metaContents,
+    metaProperties,
+    ogpContents,
+    title,
+    touchIcon,
+    version,
+    versionKey,
+    viewPort,
+  } = props
+
+  const vQuery = useMemo(() => [versionKey, version].join('='), [
+    version,
+    versionKey,
+  ])
+
+  const urlFor = useCallback(
+    (url) => {
+      if (!url) {
+        return null
+      }
+      if (vQuery) {
+        url = addQuery(url, vQuery)
+      }
+
+      if (cdn && /^\//.test(url)) {
+        url = new URL(url, cdn).href
+      }
+
+      return url
+    },
+    [vQuery, cdn],
+  )
+
+  const globals = expand(props.globals || {})
+  const ogpEnabled = Object.keys(ogpContents || {}).length > 0
+  const iconUrl = icon && urlFor(icon)
+  const touchIconUrl = useMemo(() => {
+    if (!touchIcon) {
       return null
     }
-
-    const vQuery = this.getVersionQuery()
-    const {
-      props: { css, js },
-    } = this
-    const fallbackHTML = [
-      ...[]
+    if (typeof touchIcon === 'boolean') {
+      return iconUrl
+    }
+    return touchIcon
+  }, [touchIcon, iconUrl])
+  return (
+    <head
+      className={c('the-head', className)}
+      id={id}
+      prefix={ogpEnabled ? 'og: http://ogp.me/ns#' : null}
+    >
+      {charSet && <meta charSet={charSet} className='the-head-charset' />}
+      {base && (
+        <base className='the-head-base' href={base} target={baseTarget} />
+      )}
+      {title && <title className='the-head-title'>{title}</title>}
+      {icon && <link className='the-head-icon' href={iconUrl} rel='icon' />}
+      {touchIcon && (
+        <link
+          className='the-head-touch-icon'
+          href={touchIconUrl}
+          rel='apple-touch-icon'
+        />
+      )}
+      {viewPort && (
+        <meta
+          className='the-head-viewport'
+          content={viewPortString(viewPort)}
+          name='viewport'
+        />
+      )}
+      {Object.keys(metaContents || {}).map((name) => (
+        <meta
+          className='the-head-meta-content'
+          content={metaContents[name]}
+          key={name}
+          name={name}
+        />
+      ))}
+      {Object.keys(metaProperties || {}).map((name) => (
+        <meta
+          className='the-head-meta-property'
+          key={name}
+          name={name}
+          property={metaProperties[name]}
+        />
+      ))}
+      {Object.keys(ogpContents || {}).map((property) => (
+        <meta
+          className='the-head-meta-ogp'
+          content={ogpContents[property]}
+          key={property}
+          property={ogProperty(property)}
+        />
+      ))}
+      {Object.keys(itemProps || {}).map((name) => (
+        <meta
+          className='the-head-item-prop'
+          content={metaContents[name]}
+          itemProp={name}
+          key={name}
+        />
+      ))}
+      {color && (
+        <meta
+          className='the-head-theme-color'
+          content={color}
+          name='theme-color'
+        />
+      )}
+      <meta
+        content="default-src * data: blob: 'unsafe-inline' 'unsafe-eval' ws: wss:;"
+        httpEquiv='Content-Security-Policy'
+      />
+      {manifest && (
+        <link
+          className='the-head-manifest'
+          href={urlFor(manifest)}
+          rel='manifest'
+        />
+      )}
+      {[]
         .concat(css)
         .filter(Boolean)
-        .map(
-          (url) =>
-            `<link rel="stylesheet" type="text/css" class="the-head-css" href="${addQuery(
-              url,
-              vQuery,
-            )}"/>`,
-        ),
-      ...[]
+        .map((url) => (
+          <link
+            className='the-head-css'
+            href={urlFor(url)}
+            key={url}
+            rel='stylesheet'
+            type='text/css'
+          />
+        ))}
+      {Object.keys(globals).map((name) => (
+        <script
+          className='the-head-globals'
+          dangerouslySetInnerHTML={{
+            __html: `window.${name}=${stringify(globals[name])}`,
+          }}
+          key={name}
+          type='text/javascript'
+        />
+      ))}
+      {[]
         .concat(js)
         .filter(Boolean)
-        .map(
-          (url) =>
-            `<script type="text/javascript" class="the-head-js" src="${addQuery(
-              url,
-              vQuery,
-            )}"></script>`,
-        ),
-    ].join('')
-    return `
-document.addEventListener('DOMContentLoaded', function(event) {
-  if(!window.${fallbackUnless}) {
-    document.body.innerHTML + decodeURIComponent('${encodeURIComponent(
-      fallbackHTML,
-    )}')
-    console.log('[TheHead] Using fallback assets because "${fallbackUnless}" not found')
-  }
-})
-    `.trim()
-  }
-
-  getVersionQuery() {
-    const {
-      props: { version, versionKey },
-    } = this
-    return [versionKey, version].join('=')
-  }
-
-  render() {
-    const {
-      props,
-      props: {
-        base,
-        baseTarget,
-        charSet,
-        children,
-        className,
-        color,
-        css,
-        fallbackUnless,
-        icon,
-        id,
-        itemProps,
-        js,
-        manifest,
-        metaContents,
-        metaProperties,
-        ogpContents,
-        title,
-        viewPort,
-      },
-    } = this
-
-    const globals = expand(props.globals || {})
-
-    const fallbackScript = this.getFallbackScript(fallbackUnless)
-    const ogpEnabled = Object.keys(ogpContents || {}).length > 0
-    return (
-      <head
-        className={c('the-head', className)}
-        id={id}
-        prefix={ogpEnabled ? 'og: http://ogp.me/ns#' : null}
-      >
-        {charSet && <meta charSet={charSet} className='the-head-charset' />}
-        {base && (
-          <base className='the-head-base' href={base} target={baseTarget} />
-        )}
-        {title && <title className='the-head-title'>{title}</title>}
-        {icon && (
-          <link className='the-head-icon' href={this.urlFor(icon)} rel='icon' />
-        )}
-        {viewPort && (
-          <meta
-            className='the-head-viewport'
-            content={viewPortString(viewPort)}
-            name='viewport'
-          />
-        )}
-        {Object.keys(metaContents || {}).map((name) => (
-          <meta
-            className='the-head-meta-content'
-            content={metaContents[name]}
-            key={name}
-            name={name}
-          />
-        ))}
-        {Object.keys(metaProperties || {}).map((name) => (
-          <meta
-            className='the-head-meta-property'
-            key={name}
-            name={name}
-            property={metaProperties[name]}
-          />
-        ))}
-        {Object.keys(ogpContents || {}).map((property) => (
-          <meta
-            className='the-head-meta-ogp'
-            content={ogpContents[property]}
-            key={property}
-            property={ogProperty(property)}
-          />
-        ))}
-        {Object.keys(itemProps || {}).map((name) => (
-          <meta
-            className='the-head-item-prop'
-            content={metaContents[name]}
-            itemProp={name}
-            key={name}
-          />
-        ))}
-        {color && (
-          <meta
-            className='the-head-theme-color'
-            content={color}
-            name='theme-color'
-          />
-        )}
-
-        <meta
-          content="default-src * data: blob: 'unsafe-inline' 'unsafe-eval' ws: wss:;"
-          httpEquiv='Content-Security-Policy'
-        />
-
-        {manifest && (
-          <link
-            className='the-head-manifest'
-            href={this.urlFor(manifest)}
-            rel='manifest'
-          />
-        )}
-
-        {[]
-          .concat(css)
-          .filter(Boolean)
-          .map((url) => (
-            <link
-              className='the-head-css'
-              href={this.urlFor(url)}
-              key={url}
-              rel='stylesheet'
-              type='text/css'
-            />
-          ))}
-        {Object.keys(globals).map((name) => (
+        .map((url) => (
           <script
-            className='the-head-globals'
-            dangerouslySetInnerHTML={{
-              __html: `window.${name}=${stringify(globals[name])}`,
-            }}
-            key={name}
+            className='the-head-js'
+            defer
+            key={url}
+            src={urlFor(url)}
             type='text/javascript'
           />
         ))}
-        {[]
-          .concat(js)
-          .filter(Boolean)
-          .map((url) => (
-            <script
-              className='the-head-js'
-              defer
-              key={url}
-              src={this.urlFor(url)}
-              type='text/javascript'
-            />
-          ))}
-        {fallbackScript && (
-          <script
-            dangerouslySetInnerHTML={{
-              __html: fallbackScript,
-            }}
-          />
-        )}
-        {children}
-      </head>
-    )
-  }
-
-  urlFor(url) {
-    const {
-      props: { cdn },
-    } = this
-    const vQuery = this.getVersionQuery()
-    if (vQuery) {
-      url = addQuery(url, vQuery)
-    }
-
-    if (cdn && /^\//.test(url)) {
-      url = new URL(url, cdn).href
-    }
-
-    return url
-  }
+      )}
+      {children}
+    </head>
+  )
 }
 
 TheHead.propTypes = {
@@ -274,6 +233,7 @@ TheHead.propTypes = {
   ogpContents: PropTypes.object,
   /** Document title */
   title: PropTypes.string,
+  touchIcon: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   /** Version string */
   version: PropTypes.string,
   /** Key for version query */
@@ -289,7 +249,6 @@ TheHead.defaultProps = {
   charSet: 'utf-8',
   className: null,
   color: null,
-  fallbackUnless: null,
   globals: {},
   icon: null,
   id: null,
@@ -299,6 +258,7 @@ TheHead.defaultProps = {
   metaProperties: {},
   ogpContents: {},
   title: null,
+  touchIcon: true,
   version: 'unknown',
   versionKey: 'v',
   viewPort: { initialScale: '1.0', width: 'device-width' },

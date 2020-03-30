@@ -12,12 +12,12 @@
     "name": "@the-/ui-head",
     "order": 0,
     "typicalname": "uiHead",
-    "version": "15.4.13"
+    "version": "15.5.0"
   },
   {
     "description": "Head of the-components",
     "id": "TheHead",
-    "kind": "class",
+    "kind": "function",
     "longname": "TheHead",
     "meta": {
       "filename": "TheHead.jsx",
@@ -26,6 +26,7 @@
     },
     "name": "TheHead",
     "order": 1,
+    "params": [],
     "scope": "global"
   },
   {
@@ -36,7 +37,7 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 247,
+      "lineno": 206,
       "path": "lib"
     },
     "name": "base",
@@ -51,7 +52,7 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 249,
+      "lineno": 208,
       "path": "lib"
     },
     "name": "baseTarget",
@@ -66,7 +67,7 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 251,
+      "lineno": 210,
       "path": "lib"
     },
     "name": "cdn",
@@ -81,7 +82,7 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 253,
+      "lineno": 212,
       "path": "lib"
     },
     "name": "charSet",
@@ -96,7 +97,7 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 256,
+      "lineno": 215,
       "path": "lib"
     },
     "name": "color",
@@ -111,7 +112,7 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 258,
+      "lineno": 217,
       "path": "lib"
     },
     "name": "fallbackUnless",
@@ -126,7 +127,7 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 260,
+      "lineno": 219,
       "path": "lib"
     },
     "name": "globals",
@@ -141,7 +142,7 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 262,
+      "lineno": 221,
       "path": "lib"
     },
     "name": "icon",
@@ -156,7 +157,7 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 264,
+      "lineno": 223,
       "path": "lib"
     },
     "name": "id",
@@ -171,7 +172,7 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 266,
+      "lineno": 225,
       "path": "lib"
     },
     "name": "itemProps",
@@ -186,7 +187,7 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 268,
+      "lineno": 227,
       "path": "lib"
     },
     "name": "manifest",
@@ -201,7 +202,7 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 270,
+      "lineno": 229,
       "path": "lib"
     },
     "name": "metaContents",
@@ -216,7 +217,7 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 272,
+      "lineno": 231,
       "path": "lib"
     },
     "name": "metaProperties",
@@ -231,7 +232,7 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 274,
+      "lineno": 233,
       "path": "lib"
     },
     "name": "ogpContents",
@@ -246,7 +247,7 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 276,
+      "lineno": 235,
       "path": "lib"
     },
     "name": "title",
@@ -261,7 +262,7 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 278,
+      "lineno": 238,
       "path": "lib"
     },
     "name": "version",
@@ -276,7 +277,7 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 280,
+      "lineno": 240,
       "path": "lib"
     },
     "name": "versionKey",
@@ -291,7 +292,7 @@
     "memberof": "TheHead.propTypes",
     "meta": {
       "filename": "TheHead.jsx",
-      "lineno": 282,
+      "lineno": 242,
       "path": "lib"
     },
     "name": "viewPort",

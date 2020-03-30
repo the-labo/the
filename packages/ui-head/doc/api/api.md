@@ -8,10 +8,10 @@
 </dd>
 </dl>
 
-## Classes
+## Functions
 
 <dl>
-<dt><a href="#TheHead">TheHead</a></dt>
+<dt><a href="#TheHead">TheHead()</a></dt>
 <dd><p>Head of the-components</p>
 </dd>
 </dl>
@@ -21,10 +21,10 @@
 ## @the-/ui-head
 Head of the-components
 
-**Version**: 15.4.13  
+**Version**: 15.5.0  
 <a name="TheHead"></a>
 
-## TheHead
+## TheHead()
 Head of the-components
 
-**Kind**: global class  
+**Kind**: global function  
