@@ -485,8 +485,7 @@ class TheRTCClient extends TheRTCClientBase {
   }
 
   async updateMediaConstrains(mediaConstrains) {
-    const { media, peers } = this
-    await media.stopIfNeeded()
+    const { media: oldMedia, peers } = this
     const newMedia = new TheMedia(mediaConstrains)
     this.media = newMedia
     await newMedia.startIfNeeded()
@@ -502,11 +501,11 @@ class TheRTCClient extends TheRTCClientBase {
     }, {})
     for (const [, peer] of Object.entries(peers)) {
       for (const sender of peer.getSenders()) {
-        const { track } = sender
-        const newTracks = newTracksHash[track.kind]
+        const { track: oldTrack } = sender
+        const newTracks = newTracksHash[oldTrack.kind]
         const newTrack = newTracks && newTracks.shift()
         if (newTrack) {
-          track.stop()
+          oldTrack.stop()
           await sender.replaceTrack(newTrack)
         } else {
           console.warn('[TheRTCClient] Track lost', track.kind)
@@ -514,6 +513,7 @@ class TheRTCClient extends TheRTCClientBase {
       }
     }
     await this.syncState()
+    await oldMedia.stopIfNeeded()
   }
 }
 

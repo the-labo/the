@@ -24,7 +24,7 @@ module:@the-/util-ui</p>
 ## @the-/util-ui
 Utility for the-components
 
-**Version**: 16.3.5  
+**Version**: 16.3.6  
 **License**: MIT  
 
 * [@the-/util-ui](#module_@the-/util-ui)
