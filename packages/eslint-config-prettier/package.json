@@ -1,6 +1,6 @@
 {
   "name": "@the-/eslint-config-prettier",
-  "version": "15.5.2",
+  "version": "15.5.3",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -10,7 +10,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "eslint-config-prettier": "^6.10.0"
+    "eslint-config-prettier": "^6.10.1"
   },
   "engines": {
     "node": ">=10",

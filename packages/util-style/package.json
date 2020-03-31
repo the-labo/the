@@ -1,7 +1,7 @@
 {
   "name": "@the-/util-style",
   "description": "Utility for style",
-  "version": "15.4.15",
+  "version": "15.4.16",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,7 +12,7 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "nano-css": "^5.2.1"
+    "nano-css": "^5.3.0"
   },
   "devDependencies": {},
   "engines": {
