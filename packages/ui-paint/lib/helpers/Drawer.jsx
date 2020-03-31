@@ -1,6 +1,6 @@
 'use strict'
 
-import uuid from 'uuid'
+import { v4 as uuid } from 'uuid'
 import CanvasAccess from './CanvasAccess'
 import DrawerLayer from './DrawerLayer'
 import loadImage from './loadImage'
@@ -29,7 +29,7 @@ function Drawer(canvas, tmpCanvas, options = {}) {
     active: false,
     background: null,
     fromSnapshotReady: null,
-    id: uuid.v4(),
+    id: uuid(),
     layerHistories: [],
     resizing: false,
     tmpLayer: null,
@@ -128,7 +128,7 @@ function Drawer(canvas, tmpCanvas, options = {}) {
     },
     snapshot() {
       const { background, layerHistories } = state
-      const snapshotId = uuid.v4()
+      const snapshotId = uuid()
       return {
         background: background ? background.src : null,
         config,

@@ -1,7 +1,7 @@
 {
   "name": "@the-/ui-paint",
   "description": "Hand write painting",
-  "version": "17.0.11",
+  "version": "17.0.12",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,20 +13,20 @@
   "dependencies": {
     "@the-/const-ui": "^15.5.2",
     "@the-/ui-style": "^16.0.2",
-    "@the-/util-ui": "^16.3.3",
+    "@the-/util-ui": "^16.3.6",
     "@the-/window": "^15.8.3",
     "canvas2svg": "^1.0.16",
     "classnames": "^2.2.6",
     "debug": "^4.1.1",
     "prop-types": "^15.7.2",
-    "uuid": "^3.4.0"
+    "uuid": "^7.0.2"
   },
   "devDependencies": {
     "@the-/ui-demo": "^16.0.3",
     "coz": "^7.2.0",
     "objnest": "^5.0.10",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2"
   },
   "engines": {
