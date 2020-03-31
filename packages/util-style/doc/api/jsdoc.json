@@ -13,7 +13,7 @@
     "name": "@the-/util-style",
     "order": 0,
     "typicalname": "utilStyle",
-    "version": "15.4.15"
+    "version": "15.4.16"
   },
   {
     "description": "Convert style into style string",
