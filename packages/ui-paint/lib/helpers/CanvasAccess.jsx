@@ -66,6 +66,10 @@ const CanvasAccess = (canvas) => {
         height,
       )
     },
+    getSize() {
+      const { height, width } = canvas.getBoundingClientRect()
+      return { height, width }
+    },
     pathClose() {
       ctx.closePath()
       ctx.restore()

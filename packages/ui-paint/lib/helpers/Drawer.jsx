@@ -42,6 +42,9 @@ function Drawer(canvas, tmpCanvas, options = {}) {
     get config() {
       return config
     },
+    get getSize() {
+      return canvasAccess.getSize()
+    },
     clear() {
       canvasAccess.clear()
       state.tmpLayer && state.tmpLayer.clear()
