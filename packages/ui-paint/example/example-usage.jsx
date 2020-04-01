@@ -9,6 +9,7 @@ const ExampleComponent = () => {
   const [snapshots, setSnapshots] = useState({})
   const [erasing, setErasing] = useState(false)
   const [bold, setBold] = useState(false)
+  const [lineColor] = useState('#38E')
   const clear = () => {
     for (const drawer of Object.values(drawers)) {
       drawer.clear()
@@ -64,6 +65,7 @@ const ExampleComponent = () => {
         <h3>Free hand write</h3>
         <ThePaint
           erasing={erasing}
+          lineColor={lineColor}
           lineWidth={bold ? 12 : 4}
           onDrawEnd={onDrawEnd}
           onDrawer={onDrawer}

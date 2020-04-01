@@ -152,6 +152,7 @@ function Drawer(canvas, tmpCanvas, options = {}) {
           y,
         })
         state.tmpLayer.addObject({})
+        drawer.draw({ x, y })
       }
     },
     toSVG() {

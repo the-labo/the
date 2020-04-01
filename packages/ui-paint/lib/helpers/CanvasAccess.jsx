@@ -42,6 +42,7 @@ const CanvasAccess = (canvas) => {
       ctx.lineJoin = lineJoin
       ctx.lineWidth = lineWidth
       ctx.strokeStyle = lineColor
+      ctx.fillStyle = lineColor
       ctx.globalCompositeOperation = globalCompositeOperation
     },
     copyFrom(canvasAccess) {

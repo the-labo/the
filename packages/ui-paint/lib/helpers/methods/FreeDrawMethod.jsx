@@ -7,7 +7,6 @@ function FreeDrawMethod(ctx, points) {
     ctx.beginPath()
     ctx.arc(x, y, ctx.lineWidth / 2, 0, Math.PI * 2, !0)
     ctx.fill()
-    ctx.closePath()
     return
   }
 
@@ -36,7 +35,6 @@ function FreeDrawMethod(ctx, points) {
   }
 
   ctx.stroke()
-  ctx.closePath()
 }
 
 export default FreeDrawMethod
