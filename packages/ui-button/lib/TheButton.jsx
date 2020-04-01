@@ -37,12 +37,12 @@ const TheButton = (props) => {
     simple,
     small,
     spinning,
-    style = {},
     target,
     text,
     to,
     wide,
   } = props
+  const style = { ...(props.style || {}) }
   const [lastClickedAt, setLastClickedAt] = useState(null)
   const handleClick = useCallback(
     (e) => {
