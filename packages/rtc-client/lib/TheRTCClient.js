@@ -515,6 +515,16 @@ class TheRTCClient extends TheRTCClientBase {
     await this.syncState()
     await oldMedia.stopIfNeeded()
   }
+
+  async updateTrack(kind, track) {
+    const { peers } = this
+    for (const [, peer] of Object.entries(peers)) {
+      const sender = peer.getSenders().find((t) => t.kind === kind)
+      if (sender) {
+        await sender.replaceTrack(track)
+      }
+    }
+  }
 }
 
 module.exports = TheRTCClient
