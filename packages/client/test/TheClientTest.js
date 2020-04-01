@@ -17,7 +17,7 @@ describe('the-client', () => {
 
   after(() => {})
 
-  it('Do test', async function() {
+  it('Do test', async function () {
     this.timeout(20000)
     ok(TheClient)
 

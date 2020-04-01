@@ -3,7 +3,7 @@
  * Test for setupMysql.
  * Runs with mocha.
  */
-describe('setup-mysql', function() {
+describe('setup-mysql', function () {
   this.timeout(8000)
   before(() => {})
 

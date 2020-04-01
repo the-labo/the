@@ -7,7 +7,7 @@
 const coz = require('coz')
 const mapping = require('../lib/mapping')
 
-describe('mapping', function() {
+describe('mapping', function () {
   this.timeout(3000)
 
   before(async () => {})

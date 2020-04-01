@@ -21,11 +21,7 @@ async function execForEnv(env, sql) {
     username,
   } = toLowerKeys(env)
 
-  switch (
-    String(dialect)
-      .toLowerCase()
-      .trim()
-  ) {
+  switch (String(dialect).toLowerCase().trim()) {
     case 'rdb/mysql':
     case 'sequelize/mysql':
     case 'mysql':

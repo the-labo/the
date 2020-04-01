@@ -59,6 +59,7 @@ const TheHead = (props) => {
       if (!url) {
         return null
       }
+
       if (vQuery) {
         url = addQuery(url, vQuery)
       }
@@ -79,9 +80,11 @@ const TheHead = (props) => {
     if (!touchIcon) {
       return null
     }
+
     if (typeof touchIcon === 'boolean') {
       return iconUrl
     }
+
     return touchIcon
   }, [touchIcon, iconUrl])
   return (

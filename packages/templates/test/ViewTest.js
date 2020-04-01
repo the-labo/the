@@ -7,7 +7,7 @@
 const coz = require('coz')
 const view = require('../lib/View')
 
-describe('view', function() {
+describe('view', function () {
   this.timeout(3000)
 
   before(async () => {})

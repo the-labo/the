@@ -10,7 +10,7 @@ const {
 } = require('assert')
 const TheVideoConverter = require('../lib/TheVideoConverter')
 
-describe('the-video-converter', async function() {
+describe('the-video-converter', async function () {
   this.timeout(120000)
   before(() => {})
 

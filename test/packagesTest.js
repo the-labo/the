@@ -1,7 +1,7 @@
 const aglob = require('aglob')
 const { ok } = require('assert').strict
 
-describe('packages', function() {
+describe('packages', function () {
   const PACKAGES_PATTERN = `${__dirname}/../packages/*/package.json`
 
   it('Assert deps', async () => {

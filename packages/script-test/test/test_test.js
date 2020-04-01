@@ -6,7 +6,7 @@
  */
 const test = require('../lib/test')
 
-describe('test', function() {
+describe('test', function () {
   this.timeout(3000)
 
   before(async () => {})

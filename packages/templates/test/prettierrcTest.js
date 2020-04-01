@@ -7,7 +7,7 @@
 const coz = require('coz')
 const prettierrc = require('../lib/prettierrc')
 
-describe('prettierrc', function() {
+describe('prettierrc', function () {
   this.timeout(3000)
 
   before(async () => {})

@@ -37,6 +37,7 @@ const TheSchemaResource = ({ define }) => {
           return latest
         }
       }
+
       const skipped = await TheSchema.first(
         { migratedAt: null },
         { sort: ['-createdAt'] },
@@ -44,6 +45,7 @@ const TheSchemaResource = ({ define }) => {
       if (skipped) {
         return skipped
       }
+
       return TheSchema.create({})
     },
   })

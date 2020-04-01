@@ -12,7 +12,7 @@ const {
 const theRTC = require('@the-/rtc')
 const TheRTCClient = require('../lib/TheRTCClient')
 
-describe('the-rtc-client', function() {
+describe('the-rtc-client', function () {
   this.timeout(150000)
   before(() => {})
 

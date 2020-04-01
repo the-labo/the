@@ -7,7 +7,7 @@
 const coz = require('coz')
 const eslintignore = require('../lib/eslintignore')
 
-describe('eslintignore', function() {
+describe('eslintignore', function () {
   this.timeout(3000)
 
   before(async () => {})

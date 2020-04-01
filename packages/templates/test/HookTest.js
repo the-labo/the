@@ -7,7 +7,7 @@
 const coz = require('coz')
 const hook = require('../lib/Hook')
 
-describe('hook', function() {
+describe('hook', function () {
   this.timeout(3000)
 
   before(async () => {})

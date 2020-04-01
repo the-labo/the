@@ -21,7 +21,7 @@ async function generateFile(filename, generator) {
     const stream = fs.createWriteStream(filename)
     stream.on('finish', () => resolve())
     stream.on('error', (e) => reject(e))
-    void (async function() {
+    void (async function () {
       for await (const chunk of generator) {
         stream.write(chunk)
       }

@@ -7,7 +7,7 @@
 const coz = require('coz')
 const License = require('../lib/License')
 
-describe('license', function() {
+describe('license', function () {
   this.timeout(3000)
 
   before(async () => {})

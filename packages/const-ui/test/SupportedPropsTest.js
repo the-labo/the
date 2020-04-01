@@ -9,7 +9,7 @@ const {
 } = require('assert')
 const SupportedProps = require('../lib/SupportedProps')
 
-describe('supported-props', function() {
+describe('supported-props', function () {
   this.timeout(3000)
 
   it('Supported props', () => {

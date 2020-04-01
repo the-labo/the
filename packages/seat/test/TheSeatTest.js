@@ -9,7 +9,7 @@ const {
 } = require('assert')
 const TheSeat = require('../lib/TheSeat')
 
-describe('the-seat', function() {
+describe('the-seat', function () {
   this.timeout(5000)
   before(() => {})
 

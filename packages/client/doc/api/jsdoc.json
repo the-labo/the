@@ -13,7 +13,7 @@
     "name": "@the-/client",
     "order": 2,
     "typicalname": "client",
-    "version": "17.2.5"
+    "version": "17.2.7"
   },
   {
     "id": "module:@the-/client.TheClient()",

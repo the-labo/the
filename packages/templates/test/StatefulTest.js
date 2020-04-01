@@ -7,7 +7,7 @@
 const coz = require('coz')
 const Stateful = require('../lib/Stateful')
 
-describe('stateful', function() {
+describe('stateful', function () {
   this.timeout(3000)
 
   before(async () => {})

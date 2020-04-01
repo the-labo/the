@@ -9,7 +9,7 @@ const {
 } = require('assert')
 const TheSetting = require('../lib/TheSetting')
 
-describe('the-setting', function() {
+describe('the-setting', function () {
   this.timeout(80000)
   before(() => {})
 

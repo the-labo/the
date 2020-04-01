@@ -7,7 +7,7 @@
 const coz = require('coz')
 const vhost = require('../lib/vhost')
 
-describe('vhost', function() {
+describe('vhost', function () {
   this.timeout(3000)
 
   before(async () => {})

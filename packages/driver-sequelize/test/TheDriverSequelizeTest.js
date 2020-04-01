@@ -12,7 +12,7 @@ const {
 const TheDriverSequelize = require('../lib/TheDriverSequelize')
 const resetMysqlDatabase = require('../misc/mysql/resetMysqlDatabase')
 
-describe('the-driver-sequelize', function() {
+describe('the-driver-sequelize', function () {
   this.timeout(18000)
   before(() => {})
 

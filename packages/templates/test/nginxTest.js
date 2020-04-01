@@ -7,7 +7,7 @@
 const coz = require('coz')
 const nginx = require('../lib/nginx')
 
-describe('nginx', function() {
+describe('nginx', function () {
   this.timeout(3000)
 
   before(async () => {})

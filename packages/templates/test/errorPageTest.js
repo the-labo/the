@@ -7,7 +7,7 @@
 const coz = require('coz')
 const errorPage = require('../lib/errorPage')
 
-describe('error-page', function() {
+describe('error-page', function () {
   this.timeout(3000)
 
   before(async () => {})

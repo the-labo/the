@@ -76,10 +76,7 @@ class TheLoc {
     const args = argx(arguments)
     lang = args.shift('string')
     const vars = args.pop('object') || {}
-    const keypath = args
-      .remain()
-      .filter(Boolean)
-      .join('.')
+    const keypath = args.remain().filter(Boolean).join('.')
     if (!this[lang]) {
       throw new Error(`Unknown lang:${lang}`)
     }

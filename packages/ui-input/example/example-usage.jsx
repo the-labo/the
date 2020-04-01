@@ -298,7 +298,7 @@ const ExampleComponent = () => {
 
       <div>
         <Toggle
-          color={'#11E'}
+          color='#11E'
           name='value05'
           offTitle='This is off'
           on={Boolean(values.value05)}

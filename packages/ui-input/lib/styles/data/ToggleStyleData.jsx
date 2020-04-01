@@ -70,8 +70,9 @@ function ToggleStyleData({
     '.the-input-toggle-off-label': {
       background: offLabelBackgroundColor,
       borderRadius: `0 ${toggleHandleSize / 2}px ${toggleHandleSize / 2}px 0`,
-      boxShadow: `-2px 0 0 ${toggleHandleSize /
-        4}px ${offLabelBackgroundColor}`,
+      boxShadow: `-2px 0 0 ${
+        toggleHandleSize / 4
+      }px ${offLabelBackgroundColor}`,
       color: '#AAA',
     },
     '.the-input-toggle-on-label': {

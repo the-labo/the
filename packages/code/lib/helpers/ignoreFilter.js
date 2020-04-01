@@ -24,9 +24,7 @@ function ignoreFilter(filename) {
     .split(EOL)
     .filter(Boolean)
     .map((filename) => toRelativePath(filename))
-  const ignoreFilter = ignore()
-    .add(patterns)
-    .createFilter()
+  const ignoreFilter = ignore().add(patterns).createFilter()
   return function filter(filename) {
     filename = toRelativePath(filename)
     return ignoreFilter(filename)

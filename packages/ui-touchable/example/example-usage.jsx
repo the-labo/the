@@ -189,9 +189,9 @@ export default function ExampleComponent() {
         <div
           style={{
             ...boxStyle('#AA3'),
-            transform: `rotate(${rotateData.angle +
-              rotateData.vangle -
-              90}deg)`,
+            transform: `rotate(${
+              rotateData.angle + rotateData.vangle - 90
+            }deg)`,
           }}
         >
           <h3>Rotate Me!</h3>

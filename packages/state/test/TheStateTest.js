@@ -69,10 +69,7 @@ describe('the-state', () => {
 
   it('Nested scope', () => {
     const state = new TheState()
-    const c = state
-      .scope('a')
-      .scope('b')
-      .scope('c')
+    const c = state.scope('a').scope('b').scope('c')
     c.set({ v1: 1, v2: 2 })
     deepEqual(state.state, {
       a: { b: { c: { v1: 1, v2: 2 } } },

@@ -12,7 +12,7 @@ const fs = require('fs')
 const path = require('path')
 const parse = require('../lib/parse')
 
-describe('parse', function() {
+describe('parse', function () {
   this.timeout(3000)
   before(() => {})
 

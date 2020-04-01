@@ -7,7 +7,7 @@
 const coz = require('coz')
 const dir = require('../lib/dir')
 
-describe('dir', function() {
+describe('dir', function () {
   this.timeout(3000)
 
   before(async () => {})

@@ -26,11 +26,7 @@ function driverFromEnv(env) {
     storage,
     username,
   } = toLowerKeys(env)
-  switch (
-    String(dialect)
-      .toLowerCase()
-      .trim()
-  ) {
+  switch (String(dialect).toLowerCase().trim()) {
     case 'json':
       return require('clay-driver-json')(storage)
     case 'memory':

@@ -14,7 +14,7 @@ const {
 } = require('@the-/resource')
 const TheDB = require('../lib/TheDB')
 
-describe('the-db', function() {
+describe('the-db', function () {
   process.env.ROOT_PASSWORD = process.env.CI ? '' : 'root'
   this.timeout(40000)
   before(() => {})

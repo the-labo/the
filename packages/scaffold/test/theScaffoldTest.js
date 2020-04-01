@@ -6,7 +6,7 @@
  */
 const theScaffold = require('../lib/theScaffold')
 
-describe('the-scaffold', function() {
+describe('the-scaffold', function () {
   this.timeout(3000)
 
   before(async () => {})

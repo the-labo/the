@@ -7,7 +7,7 @@
 const coz = require('coz')
 const eslintrc = require('../lib/eslintrc')
 
-describe('eslintrc', function() {
+describe('eslintrc', function () {
   this.timeout(3000)
 
   before(async () => {})

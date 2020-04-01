@@ -16,13 +16,13 @@ const msgpack = require('@msgpack/msgpack')
 const theClient = require('@the-/client')
 const TheServer = require('../lib/TheServer')
 
-describe('the-server', function() {
+describe('the-server', function () {
   this.timeout(32000)
   before(() => {})
 
   after(async () => {})
 
-  it('Listen and Close', async function() {
+  it('Listen and Close', async function () {
     const port = await aport()
     const server = new TheServer({})
 
@@ -30,7 +30,7 @@ describe('the-server', function() {
     await server.close()
   })
 
-  it('Do Callback', async function() {
+  it('Do Callback', async function () {
     const port = await aport()
     const server = new TheServer({})
 
@@ -64,7 +64,7 @@ describe('the-server', function() {
     deepEqual(received[0], { a: 1, b: true, c: 'J' })
   })
 
-  it('The server', async function() {
+  it('The server', async function () {
     const port = await aport()
 
     const SayCtrl = ({ intercept }) => {
@@ -289,7 +289,7 @@ describe('the-server', function() {
     await server.close()
   })
 
-  it('Controller lifecycle', async function() {
+  it('Controller lifecycle', async function () {
     const port = await aport()
 
     let wasCalledControllerDidAttach = false

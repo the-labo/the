@@ -66,17 +66,11 @@ const TheCalendar = (props) => {
     (amount) => {
       switch (view) {
         case 'day':
-          return theDate(date)
-            .addDays(amount)
-            .toDate()
+          return theDate(date).addDays(amount).toDate()
         case 'month':
-          return theDate(date)
-            .addMonths(amount)
-            .toDate()
+          return theDate(date).addMonths(amount).toDate()
         case 'week':
-          return theDate(date)
-            .addWeeks(amount)
-            .toDate()
+          return theDate(date).addWeeks(amount).toDate()
         default:
           throw new Error(`Unknown view: ${view}`)
       }

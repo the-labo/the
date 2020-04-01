@@ -12,7 +12,7 @@ describe('generate-file', () => {
   after(() => {})
 
   it('Do test', async () => {
-    await generateFile(`${__dirname}/../tmp/hoge/hoge.txt`, async function*() {
+    await generateFile(`${__dirname}/../tmp/hoge/hoge.txt`, async function* () {
       yield 'this '
       yield 'is '
       yield 'hoge '

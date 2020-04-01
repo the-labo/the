@@ -11,7 +11,7 @@ const fetch = require('cross-fetch')
 const injectmock = require('injectmock')
 const cachingFetch = require('../lib/cachingFetch')
 
-describe('caching-fetch', function() {
+describe('caching-fetch', function () {
   this.timeout(8000)
   before(() => {
     injectmock(global, 'fetch', fetch)

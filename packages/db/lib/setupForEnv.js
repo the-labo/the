@@ -22,11 +22,7 @@ async function setupForEnv(env) {
     username,
   } = toLowerKeys(env)
 
-  switch (
-    String(dialect)
-      .toLowerCase()
-      .trim()
-  ) {
+  switch (String(dialect).toLowerCase().trim()) {
     case 'mongo':
       return require('./setup/setupMongo')({})
     case 'sequelize/mysql':

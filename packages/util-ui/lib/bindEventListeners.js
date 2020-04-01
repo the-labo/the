@@ -13,6 +13,7 @@ function bindEventListeners(elm, handlers, opt) {
     console.warn('[@the-/util-ui][bindEventListeners] Elm missing')
     return () => {}
   }
+
   for (const [name, handler] of Object.entries(handlers)) {
     elm.addEventListener(name, handler, opt)
   }

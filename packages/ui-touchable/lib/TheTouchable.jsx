@@ -80,6 +80,7 @@ const TheTouchable = (props) => {
     if (!elm) {
       return
     }
+
     const newHammer = Hammer(elm, {})
     setHammer(newHammer)
     return () => {}
@@ -112,6 +113,7 @@ const TheTouchable = (props) => {
     if (!elm) {
       return null
     }
+
     if (!hammer) {
       return
     }
@@ -159,10 +161,12 @@ const TheTouchable = (props) => {
       if (!e.ctrlKey) {
         return
       }
+
       const tooSmall = Math.abs(e.deltaY) < 0.1
       if (tooSmall) {
         return
       }
+
       e.preventDefault()
 
       clearTimeout(wheelScaleState.doneTimer)
@@ -200,6 +204,7 @@ const TheTouchable = (props) => {
     if (!elm) {
       return
     }
+
     elm.addEventListener('wheel', handleWheel, { passive: false })
     return () => {
       elm.removeEventListener('wheel', handleWheel, { passive: false })
@@ -216,6 +221,7 @@ const TheTouchable = (props) => {
     if (!elm) {
       return null
     }
+
     const listeners = {
       gesturechange: (e) => {
         onPinch && onPinch(parseGestureEvent(e, { scale: e.scale }))

@@ -9,7 +9,7 @@ const {
 } = require('assert')
 const Proxy = require('../../lib/worker_threads/Proxy')
 
-describe('proxy', function() {
+describe('proxy', function () {
   this.timeout(40000)
   before(() => {})
 

@@ -57,6 +57,7 @@ const TheDropDownMenu = (props) => {
       if (tmp.open !== newOpen) {
         setOpen(newOpen)
       }
+
       if (newOpen !== props.open) {
         props.onToggle && props.onToggle(newOpen)
       }

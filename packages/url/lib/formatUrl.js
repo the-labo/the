@@ -41,10 +41,7 @@ function formatUrl(urlString, params = {}) {
 
     return c
   }
-  url.pathname = pathname
-    .split(/\//g)
-    .map(injectParams)
-    .join('/')
+  url.pathname = pathname.split(/\//g).map(injectParams).join('/')
   url.search =
     search &&
     search

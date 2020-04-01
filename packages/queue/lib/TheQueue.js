@@ -49,9 +49,7 @@ class TheQueue {
 
     return new Promise((resolve, reject) => {
       const call = async () => {
-        await Promise.resolve(task())
-          .then(resolve)
-          .catch(reject)
+        await Promise.resolve(task()).then(resolve).catch(reject)
       }
       this.pending.push(call)
       void this.consumeIfNeeded()
