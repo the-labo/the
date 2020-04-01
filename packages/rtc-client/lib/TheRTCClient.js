@@ -508,7 +508,7 @@ class TheRTCClient extends TheRTCClientBase {
           oldTrack.stop()
           await sender.replaceTrack(newTrack)
         } else {
-          console.warn('[TheRTCClient] Track lost', track.kind)
+          console.warn('[TheRTCClient] Track lost', oldTrack.kind)
         }
       }
     }
