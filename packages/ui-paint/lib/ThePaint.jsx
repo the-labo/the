@@ -7,9 +7,9 @@ import {
   eventHandlersFor,
   htmlAttributesFor,
   isMultiTouchEvent,
+  observeResize,
   stopTouchScrolling,
 } from '@the-/util-ui'
-import { get } from '@the-/window'
 import DrawConfigs from './constants/DrawConfigs'
 import DrawingMethods from './constants/DrawingMethods'
 import ResizePolicies from './constants/ResizePolicies'
@@ -37,6 +37,8 @@ const ThePaint = (props) => {
     onDrawer,
     onDrawStart,
     resizePolicy,
+    shadowBlur,
+    shadowColor,
     style,
     width,
   } = props
@@ -93,10 +95,12 @@ const ThePaint = (props) => {
   }, [drawer])
 
   useEffect(() => {
-    const window = get('window')
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [handleResize])
+    const { current: canvas } = canvasRef
+    const unobserve = observeResize(canvas, handleResize)
+    return () => {
+      unobserve()
+    }
+  }, [handleResize, canvasRef])
 
   useEffect(() => handleResize(), [handleResize, width, height])
 
@@ -145,8 +149,18 @@ const ThePaint = (props) => {
       lineWidth,
       method,
       resizePolicy,
+      shadowBlur,
+      shadowColor,
     }),
-    [erasing, lineColor, lineWidth, method, resizePolicy],
+    [
+      erasing,
+      lineColor,
+      lineWidth,
+      method,
+      resizePolicy,
+      shadowColor,
+      shadowBlur,
+    ],
   )
 
   useEffect(() => {
@@ -233,6 +247,8 @@ ThePaint.propTypes = {
   onDrawer: PropTypes.func,
   onDrawStart: PropTypes.func,
   resizePolicy: PropTypes.oneOf(Object.values(ResizePolicies)),
+  shadowBlur: PropTypes.number,
+  shadowColor: PropTypes.string,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
@@ -244,6 +260,8 @@ ThePaint.defaultProps = {
   method: DrawingMethods.FREE,
   onDrawer: null,
   resizePolicy: ResizePolicies.KEEP,
+  shadowBlur: null,
+  shadowColor: null,
   width: 150,
 }
 

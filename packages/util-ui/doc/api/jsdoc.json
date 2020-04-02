@@ -13,7 +13,7 @@
     "name": "@the-/util-ui",
     "order": 6,
     "typicalname": "utilUi",
-    "version": "16.3.6"
+    "version": "16.4.0"
   },
   {
     "description": "Convert base64 data into blob\nmodule:@the-/util-ui",
@@ -477,6 +477,49 @@
     "scope": "static"
   },
   {
+    "id": "module:@the-/util-ui.observeSize",
+    "kind": "function",
+    "longname": "module:@the-/util-ui.observeSize",
+    "memberof": "module:@the-/util-ui",
+    "meta": {
+      "filename": "observeResize.js",
+      "lineno": 5,
+      "path": "lib"
+    },
+    "name": "observeSize",
+    "order": 12,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "HTMLElement"
+          ]
+        },
+        "nullable": true,
+        "name": "elm"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "name": "handler"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "- Unobserve function"
+      }
+    ],
+    "scope": "static"
+  },
+  {
     "deprecated": true,
     "description": "Read file  : data url",
     "id": "module:@the-/util-ui.readFileAsDataURL",
@@ -489,7 +532,7 @@
       "path": "lib"
     },
     "name": "readFileAsDataURL",
-    "order": 12,
+    "order": 13,
     "params": [
       {
         "type": {
@@ -525,7 +568,7 @@
       "path": "lib"
     },
     "name": "scrollToElement",
-    "order": 13,
+    "order": 14,
     "params": [
       {
         "type": {
@@ -561,7 +604,7 @@
       "path": "lib"
     },
     "name": "stopTouchScrolling",
-    "order": 14,
+    "order": 15,
     "params": [
       {
         "type": {
@@ -598,7 +641,7 @@
       "path": "lib"
     },
     "name": "toggleBodyClass",
-    "order": 15,
+    "order": 16,
     "params": [
       {
         "type": {

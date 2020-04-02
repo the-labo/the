@@ -24,7 +24,7 @@ module:@the-/util-ui</p>
 ## @the-/util-ui
 Utility for the-components
 
-**Version**: 16.3.6  
+**Version**: 16.4.0  
 **License**: MIT  
 
 * [@the-/util-ui](#module_@the-/util-ui)
@@ -37,6 +37,7 @@ Utility for the-components
     * [.isMultiTouchEvent(e)](#module_@the-/util-ui.isMultiTouchEvent) ⇒ <code>boolean</code>
     * [.isServerSide()](#module_@the-/util-ui.isServerSide) ⇒ <code>boolean</code>
     * [.newId([options])](#module_@the-/util-ui.newId) ⇒ <code>string</code>
+    * [.observeSize(elm, handler)](#module_@the-/util-ui.observeSize) ⇒ <code>function</code>
     * ~~[.readFileAsDataURL(file)](#module_@the-/util-ui.readFileAsDataURL) ⇒ <code>Promise.&lt;string&gt;</code>~~
     * [.stopTouchScrolling([options])](#module_@the-/util-ui.stopTouchScrolling) ⇒ <code>function</code>
     * [.toggleBodyClass([enabled&#x3D;], className)](#module_@the-/util-ui.toggleBodyClass) ⇒ <code>\*</code>
@@ -147,6 +148,17 @@ Generate new id
 | --- | --- | --- | --- |
 | [options] | <code>Object</code> | <code>{}</code> | Optional settings |
 | [options.prefix-'the'] | <code>string</code> |  | Id prefix |
+
+<a name="module_@the-/util-ui.observeSize"></a>
+
+### utilUi.observeSize(elm, handler) ⇒ <code>function</code>
+**Kind**: static method of [<code>@the-/util-ui</code>](#module_@the-/util-ui)  
+**Returns**: <code>function</code> - - Unobserve function  
+
+| Param | Type |
+| --- | --- |
+| elm | <code>HTMLElement</code> | 
+| handler | <code>function</code> | 
 
 <a name="module_@the-/util-ui.readFileAsDataURL"></a>
 

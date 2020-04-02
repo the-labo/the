@@ -88,6 +88,7 @@ Usage
   - [.isMultiTouchEvent(e)](./doc/api/api.md#module_@the-/util-ui.isMultiTouchEvent)
   - [.isServerSide()](./doc/api/api.md#module_@the-/util-ui.isServerSide)
   - [.newId(options)](./doc/api/api.md#module_@the-/util-ui.newId)
+  - [.observeSize(elm,handler)](./doc/api/api.md#module_@the-/util-ui.observeSize)
   - [.readFileAsDataURL(file)](./doc/api/api.md#module_@the-/util-ui.readFileAsDataURL)
   - [.stopTouchScrolling(options)](./doc/api/api.md#module_@the-/util-ui.stopTouchScrolling)
   - [.toggleBodyClass(enabled&#x3D;,className)](./doc/api/api.md#module_@the-/util-ui.toggleBodyClass)

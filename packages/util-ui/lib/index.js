@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/util-ui
  * @typicalname utilUi
- * @version 16.3.6
+ * @version 16.4.0
  */
 'use strict'
 
@@ -20,6 +20,7 @@ const isMultiTouchEvent_ = require('./isMultiTouchEvent')
 const isServerSide_ = require('./isServerSide')
 const isVideoSrc_ = require('./isVideoSrc')
 const newId_ = require('./newId')
+const observeResize_ = require('./observeResize')
 const readFileAsDataURL_ = require('./readFileAsDataURL')
 const scrollToElement_ = require('./scrollToElement')
 const stopTouchScrolling_ = require('./stopTouchScrolling')
@@ -37,6 +38,7 @@ exports.isMultiTouchEvent = isMultiTouchEvent_
 exports.isServerSide = isServerSide_
 exports.isVideoSrc = isVideoSrc_
 exports.newId = newId_
+exports.observeResize = observeResize_
 exports.readFileAsDataURL = readFileAsDataURL_
 exports.scrollToElement = scrollToElement_
 exports.stopTouchScrolling = stopTouchScrolling_
@@ -54,6 +56,7 @@ module.exports = {
   isServerSide: isServerSide_,
   isVideoSrc: isVideoSrc_,
   newId: newId_,
+  observeResize: observeResize_,
   readFileAsDataURL: readFileAsDataURL_,
   scrollToElement: scrollToElement_,
   stopTouchScrolling: stopTouchScrolling_,

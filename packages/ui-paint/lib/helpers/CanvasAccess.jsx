@@ -36,6 +36,8 @@ const CanvasAccess = (canvas) => {
         lineColor,
         lineJoin,
         lineWidth,
+        shadowBlur,
+        shadowColor,
       } = config
 
       ctx.lineCap = lineCap
@@ -44,6 +46,8 @@ const CanvasAccess = (canvas) => {
       ctx.strokeStyle = lineColor
       ctx.fillStyle = lineColor
       ctx.globalCompositeOperation = globalCompositeOperation
+      ctx.shadowColor = shadowColor
+      ctx.shadowBlur = shadowBlur
     },
     copyFrom(canvasAccess) {
       const { height, width } = canvasAccess
