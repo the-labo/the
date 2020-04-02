@@ -18,7 +18,6 @@ const CanvasAccess = (canvas) => {
       ctx.save()
       ctx.beginPath()
       action()
-      ctx.closePath()
       ctx.restore()
     },
     clear() {
@@ -75,7 +74,6 @@ const CanvasAccess = (canvas) => {
       return { height, width }
     },
     pathClose() {
-      ctx.closePath()
       ctx.restore()
     },
     pathStart(x, y) {
