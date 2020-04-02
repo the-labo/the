@@ -42,9 +42,6 @@ function Drawer(canvas, tmpCanvas, options = {}) {
     get config() {
       return config
     },
-    get getSize() {
-      return canvasAccess.getSize()
-    },
     clear() {
       canvasAccess.clear()
       state.tmpLayer && state.tmpLayer.clear()
@@ -117,6 +114,9 @@ function Drawer(canvas, tmpCanvas, options = {}) {
       commitLayer.restoreAll([...layerHistories, layerHistory])
       layerHistory.image = commitLayer.toSVG()
       layerHistories.push(layerHistory)
+    },
+    getSize() {
+      return canvasAccess.getSize()
     },
     resizeRequest() {
       if (state.resizing) {
