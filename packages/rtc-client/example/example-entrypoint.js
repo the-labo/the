@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   const video03Title = document.getElementById('video03-title')
   const video04Title = document.getElementById('video04-title')
 
+  const screenButton = document.getElementById('screen-button')
+
   const c1 = new TheRTCClient({
     info: { userName: 'This is client01' },
     mediaConstrains: { audio: false, video: true },
@@ -79,4 +81,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     void c1.publish('greeting', { msg: 'hi, i am c1' })
     void c2.publish('greeting', { msg: 'hi, i am c2' })
   }, 500)
+
+  let c1ScreenSharing = false
+  screenButton.addEventListener('click', () => {
+    c1ScreenSharing = !c1ScreenSharing
+    c1.toggleScreenShare(c1ScreenSharing)
+  })
 })

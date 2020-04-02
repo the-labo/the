@@ -472,8 +472,23 @@ class TheRTCClient extends TheRTCClientBase {
   async toggleScreenShare(enabled) {
     this.assertHasRoom()
     if (enabled) {
+      const [userTrack] = this.media.stream.getVideoTracks()
+      const media = new TheMedia({ audio: false, screen: true })
+      await media.startIfNeeded()
+      const [screenTrack] = media.stream.getVideoTracks()
+      await this.updateTrack('video', screenTrack)
+      this._stopToggleScreenShare = async () => {
+        await this.updateTrack('video', userTrack)
+        this._stopToggleScreenShare = null
+      }
+      const onEnded = () => {
+        screenTrack.removeEventListener('ended', onEnded)
+        this._stopToggleScreenShare && this._stopToggleScreenShare()
+      }
+      screenTrack.addEventListener('ended', onEnded)
       this.emitSocketEvent(IOEvents.SCREEN_SHARE_START)
     } else {
+      await (this._stopToggleScreenShare && this._stopToggleScreenShare())
       this.emitSocketEvent(IOEvents.SCREEN_SHARE_STOP)
     }
   }
@@ -519,7 +534,7 @@ class TheRTCClient extends TheRTCClientBase {
   async updateTrack(kind, track) {
     const { peers } = this
     for (const [, peer] of Object.entries(peers)) {
-      const sender = peer.getSenders().find((t) => t.kind === kind)
+      const sender = peer.getSenders().find((s) => s.track.kind === kind)
       if (sender) {
         await sender.replaceTrack(track)
       }

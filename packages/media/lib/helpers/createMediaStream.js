@@ -5,7 +5,10 @@ const { get } = require('@the-/window')
 
 const mediaLock = new TheLock()
 
-module.exports = async function createMediaStream (constrains = {}, options = {}) {
+module.exports = async function createMediaStream(
+  constrains = {},
+  options = {},
+) {
   const { screen } = options
   const mediaDevices = get('navigator.mediaDevices')
   if (!mediaDevices) {

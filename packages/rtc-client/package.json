@@ -1,7 +1,7 @@
 {
   "name": "@the-/rtc-client",
   "description": "Client for the-rtc",
-  "version": "15.13.0",
+  "version": "15.14.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -18,7 +18,7 @@
   "dependencies": {
     "@the-/check": "^15.6.2",
     "@the-/lock": "^15.4.11",
-    "@the-/media": "^15.5.10",
+    "@the-/media": "^15.5.12",
     "@the-/pack": "^16.2.10",
     "@the-/window": "^15.8.3",
     "argx": "^4.0.4",

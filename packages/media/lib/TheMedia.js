@@ -13,8 +13,13 @@ const createMediaStream = require('./helpers/createMediaStream')
  * @param {Object|boolean} [options.audio] - Audio constraint
  */
 class TheMedia {
-  constructor (options = {}) {
-    const { audio = true, stream = null, video = true, screen = false, } = options
+  constructor(options = {}) {
+    const {
+      audio = true,
+      screen = false,
+      stream = null,
+      video = true,
+    } = options
     this.stream = null
     this.originalStream = stream
     this.constrains = { audio, video }
@@ -22,15 +27,15 @@ class TheMedia {
     this.running = false
   }
 
-  get audioEnabled () {
+  get audioEnabled() {
     return this.getStreamTracks('audio').some((track) => track.enabled)
   }
 
-  get videoEnabled () {
+  get videoEnabled() {
     return this.getStreamTracks('video').some((track) => track.enabled)
   }
 
-  canZoom () {
+  canZoom() {
     const { stream } = this
     const tracks = stream.getVideoTracks()
     return [...tracks].any((track) => canZoomTrack(track))
@@ -42,7 +47,7 @@ class TheMedia {
    * @param {Object} [options={}]
    * @returns {window.MediaRecorder}
    */
-  createAudioRecorder (audioContext, options = {}) {
+  createAudioRecorder(audioContext, options = {}) {
     const {
       audioBitsPerSecond,
       mimeType,
@@ -69,7 +74,7 @@ class TheMedia {
    * @param {string} kind
    * @returns {window.MediaStreamTrack[]}
    */
-  getStreamTracks (kind) {
+  getStreamTracks(kind) {
     if (!this.stream) {
       return []
     }
@@ -82,7 +87,7 @@ class TheMedia {
     return tracks.filter((track) => track.kind === kind)
   }
 
-  toggleAudioEnabled (enabled) {
+  toggleAudioEnabled(enabled) {
     this.toggleEnabled('audio', enabled)
   }
 
@@ -91,14 +96,14 @@ class TheMedia {
    * @param {string} kind
    * @param {boolean} enabled
    */
-  toggleEnabled (kind, enabled) {
+  toggleEnabled(kind, enabled) {
     const tracks = this.getStreamTracks(kind)
     for (const track of tracks) {
       track.enabled = enabled
     }
   }
 
-  toggleVideoEnabled (enabled) {
+  toggleVideoEnabled(enabled) {
     this.toggleEnabled('video', enabled)
   }
 
@@ -108,7 +113,7 @@ class TheMedia {
    * @param {Object} [options={}] - Optional settings
    * @returns {Promise<undefined>}
    */
-  async bindVideo (video, options = {}) {
+  async bindVideo(video, options = {}) {
     if (!video) {
       return null
     }
@@ -126,7 +131,7 @@ class TheMedia {
    * @param {number} zoom - Zoom level to set
    * @returns {Promise<undefined>}
    */
-  async setZoom (zoom) {
+  async setZoom(zoom) {
     const { stream } = this
     const tracks = stream.getVideoTracks()
     for (const track of tracks) {
@@ -146,7 +151,7 @@ class TheMedia {
    * Start user media
    * @returns {Promise<undefined>}
    */
-  async start () {
+  async start() {
     if (this.running) {
       throw new Error('[TheMedia] Already running')
     }
@@ -155,11 +160,11 @@ class TheMedia {
     const stream = originalStream
       ? originalStream.clone()
       : await createMediaStream(this.constrains, { screen }).catch((e) => {
-        console.error('[TheMedia] Media stream error: ', e, {
-          constrains: this.constrains,
+          console.error('[TheMedia] Media stream error: ', e, {
+            constrains: this.constrains,
+          })
+          return null
         })
-        return null
-      })
     if (!stream) {
       throw new Error('[TheMedia] Failed to get user media stream')
     }
@@ -168,7 +173,7 @@ class TheMedia {
     this.running = true
   }
 
-  async startIfNeeded () {
+  async startIfNeeded() {
     if (this.running) {
       return
     }
@@ -180,7 +185,7 @@ class TheMedia {
    * Stop user media
    * @returns {Promise<undefined>}
    */
-  async stop () {
+  async stop() {
     if (!this.running) {
       throw new Error('[TheMedia] Not running')
     }
@@ -192,7 +197,7 @@ class TheMedia {
     this.stream = null
   }
 
-  async stopIfNeeded () {
+  async stopIfNeeded() {
     if (!this.running) {
       return
     }
@@ -205,7 +210,7 @@ class TheMedia {
    * @param {Object} [options={}] - Optional settings
    * @returns {Promise<window.Blob>} Blob
    */
-  async takePhoto (options = {}) {
+  async takePhoto(options = {}) {
     const { height, width } = options
     const ImageCapture = get('ImageCapture', { strict: true })
     const { stream } = this
@@ -227,7 +232,7 @@ class TheMedia {
    * @param {Object} [constrains.audio] - Audio constrains
    * @returns {Promise<undefined>}
    */
-  async updateConstrains (constrains = {}) {
+  async updateConstrains(constrains = {}) {
     const { audio, video } = constrains
     this.constrains = { audio, video }
     const { stream } = this
