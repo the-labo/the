@@ -473,9 +473,14 @@ class TheRTCClient extends TheRTCClientBase {
     this.assertHasRoom()
     if (enabled) {
       const [userTrack] = this.media.stream.getVideoTracks()
-      const media = new TheMedia({ audio: false, screen: true })
-      await media.startIfNeeded()
-      const [screenTrack] = media.stream.getVideoTracks()
+      const screenMedia = new TheMedia({ audio: false, screen: true })
+      await screenMedia.startIfNeeded()
+      const { stream: screenStream } = screenMedia
+      if (!screenStream) {
+        // 取得失敗
+        return false
+      }
+      const [screenTrack] = screenStream.getVideoTracks()
       await this.updateTrack('video', screenTrack)
       this._stopToggleScreenShare = async () => {
         await this.updateTrack('video', userTrack)
@@ -491,6 +496,7 @@ class TheRTCClient extends TheRTCClientBase {
       await (this._stopToggleScreenShare && this._stopToggleScreenShare())
       this.emitSocketEvent(IOEvents.SCREEN_SHARE_STOP)
     }
+    return enabled
   }
 
   async toggleVideoEnabled(enabled) {
