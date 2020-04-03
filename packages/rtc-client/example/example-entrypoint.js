@@ -85,6 +85,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   let c1ScreenSharing = false
   screenButton.addEventListener('click', () => {
     c1ScreenSharing = !c1ScreenSharing
-    c1.toggleScreenShare(c1ScreenSharing)
+    c1.toggleScreenShare(c1ScreenSharing, {
+      onStream: (stream) => {
+        setVideoStream(video01, stream)
+      },
+    })
   })
 })

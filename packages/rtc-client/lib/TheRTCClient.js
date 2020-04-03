@@ -469,12 +469,17 @@ class TheRTCClient extends TheRTCClientBase {
     await this.syncState()
   }
 
-  async toggleScreenShare(enabled) {
+  async toggleScreenShare(enabled, options = {}) {
+    const { onStream } = options
     this.assertHasRoom()
     if (enabled) {
-      const [userTrack] = this.media.stream.getVideoTracks()
+      const {
+        media: { stream },
+      } = this
+      const [userTrack] = stream.getVideoTracks()
       const screenMedia = new TheMedia({ audio: false, screen: true })
       await screenMedia.startIfNeeded()
+      this.screenMedia = screenMedia
       const { stream: screenStream } = screenMedia
       if (!screenStream) {
         // 取得失敗
@@ -486,9 +491,13 @@ class TheRTCClient extends TheRTCClientBase {
         await this.updateTrack('video', userTrack)
         this._stopToggleScreenShare = null
       }
+      onStream(screenStream)
       const onEnded = () => {
         screenTrack.removeEventListener('ended', onEnded)
+        this.screenMedia.stopIfNeeded()
+        this.screenMedia = null
         this._stopToggleScreenShare && this._stopToggleScreenShare()
+        onStream(stream)
       }
       screenTrack.addEventListener('ended', onEnded)
       this.emitSocketEvent(IOEvents.SCREEN_SHARE_START)
