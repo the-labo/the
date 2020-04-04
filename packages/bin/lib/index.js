@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/bin
  * @typicalname bin
- * @version 15.4.15
+ * @version 15.5.0
  */
 'use strict'
 

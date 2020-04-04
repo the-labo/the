@@ -488,16 +488,16 @@ class TheRTCClient extends TheRTCClientBase {
       const [screenTrack] = screenStream.getVideoTracks()
       await this.updateTrack('video', screenTrack)
       this._stopToggleScreenShare = async () => {
-        await this.updateTrack('video', userTrack)
         this._stopToggleScreenShare = null
+        await this.updateTrack('video', userTrack)
+        onStream(stream)
+        await screenMedia.stopIfNeeded()
+        this.screenMedia = null
       }
       onStream(screenStream)
       const onEnded = () => {
         screenTrack.removeEventListener('ended', onEnded)
-        this.screenMedia.stopIfNeeded()
-        this.screenMedia = null
         this._stopToggleScreenShare && this._stopToggleScreenShare()
-        onStream(stream)
       }
       screenTrack.addEventListener('ended', onEnded)
       this.emitSocketEvent(IOEvents.SCREEN_SHARE_START)

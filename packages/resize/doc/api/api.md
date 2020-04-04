@@ -5,7 +5,7 @@
 ## @the-/resize
 Resize image files
 
-**Version**: 15.4.16  
+**Version**: 15.5.1  
 **License**: MIT  
 
 * [@the-/resize](#module_@the-/resize)

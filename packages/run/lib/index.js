@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/run
  * @typicalname run
- * @version 15.5.0
+ * @version 15.6.0
  */
 'use strict'
 

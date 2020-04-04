@@ -1,7 +1,7 @@
 {
   "name": "@the-/bin",
   "description": "Bin manager for the-frameworks",
-  "version": "15.4.15",
+  "version": "15.5.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@the-/check-env": "^15.6.0",
-    "chalk": "^3.0.0",
+    "chalk": "^4.0.0",
     "hasbin": "^1.2.3",
     "semver": "^7.1.3"
   },

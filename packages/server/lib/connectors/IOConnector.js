@@ -34,13 +34,14 @@ function IOConnector(
   io.of(NAMESPACE).on(IOEvents.CONNECTION, (socket) => {
     const {
       handshake: {
-        query: client,
-        query: { cid, via },
+        query: { cid, via, ...otherQuery },
       },
+      id: socketId,
     } = socket
 
+    const client = { cid, via, ...otherQuery, socketId }
+
     if (via === 'client') {
-      const { id: socketId } = socket
       void onIOClientCame(cid, socketId, client)
       socket.on(IOEvents.RPC_CALL, async (config) => {
         config = await encoder.decode(config)
