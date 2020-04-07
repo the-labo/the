@@ -5,7 +5,7 @@
  * @license MIT
  * @module @the-/stream
  * @typicalname stream
- * @version 15.4.12
+ * @version 15.4.13
  */
 'use strict'
 

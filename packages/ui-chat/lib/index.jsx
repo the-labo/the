@@ -4,7 +4,7 @@
  * @description Chat UI of the-components
  * @module @the-/ui-chat
  * @typicalname uiChat
- * @version 16.0.0
+ * @version 16.0.1
  */
 'use strict'
 

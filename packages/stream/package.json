@@ -1,7 +1,7 @@
 {
   "name": "@the-/stream",
   "description": "Base of the streams",
-  "version": "15.4.12",
+  "version": "15.4.13",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -14,7 +14,7 @@
   "dependencies": {
     "asleep": "^1.0.3",
     "debug": "^4.1.1",
-    "web-streams-polyfill": "^2.0.6"
+    "web-streams-polyfill": "^2.1.0"
   },
   "devDependencies": {},
   "engines": {

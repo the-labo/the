@@ -1,7 +1,7 @@
 {
   "name": "@the-/lint",
   "description": "Lint of the-frameworks",
-  "version": "15.5.1",
+  "version": "15.5.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -12,12 +12,12 @@
     "url": "https://github.com/the-labo/the#issues"
   },
   "dependencies": {
-    "@babel/runtime": "^7.8.4",
-    "@the-/ast": "^16.1.0",
+    "@babel/runtime": "^7.9.2",
+    "@the-/ast": "^16.1.1",
     "@the-/util-file": "^15.7.1",
     "aglob": "^3.0.2",
     "asfs": "^2.3.0",
-    "chalk": "^3.0.0",
+    "chalk": "^4.0.0",
     "colorprint": "^6.1.1",
     "debug": "^4.1.1",
     "json-pointer": "^0.6.0",
