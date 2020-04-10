@@ -29,6 +29,7 @@ ThePaintStyle.data = () =>
   asStyleData({
     '.the-paint': {},
     '.the-paint-canvas': {
+      '-webkit-touch-callout': 'none',
       background: 'transparent',
       touchAction: 'pinch',
     },
