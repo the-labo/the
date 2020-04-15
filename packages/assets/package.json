@@ -1,7 +1,7 @@
 {
   "name": "@the-/assets",
   "description": "Assets for the-framework",
-  "version": "16.2.0",
+  "version": "16.2.1",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,7 +13,7 @@
   "dependencies": {
     "aglob": "^3.0.2",
     "filecopy": "^4.1.0",
-    "filelink": "^4.0.1"
+    "filelink": "^4.1.1"
   },
   "devDependencies": {
     "uglifycss": "0.0.29"
