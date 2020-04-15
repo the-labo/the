@@ -1,7 +1,7 @@
 'use strict'
 
-const amkdirp = require('amkdirp')
 const fs = require('fs')
+const mkdirp = require('mkdirp')
 const path = require('path')
 
 /**
@@ -11,7 +11,7 @@ const path = require('path')
 const writer = {
   async writerStream(filename, stream) {
     const dirname = path.dirname(filename)
-    await amkdirp(dirname)
+    await mkdirp(dirname)
     await new Promise((resolve, reject) => {
       const out = fs.createWriteStream(filename)
       stream.pipe(out)

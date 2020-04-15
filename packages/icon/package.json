@@ -1,7 +1,7 @@
 {
   "name": "@the-/icon",
   "description": "Icon generator",
-  "version": "16.5.0",
+  "version": "16.6.0",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@the-/util-color": "^15.4.12",
-    "amkdirp": "^2.0.0",
-    "canvas": "^2.6.1"
+    "canvas": "^2.6.1",
+    "mkdirp": "^1.0.4"
   },
   "devDependencies": {
     "stringcase": "^4.3.1"
