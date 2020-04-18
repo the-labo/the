@@ -275,7 +275,7 @@ class TheClient extends RFuncClient {
 
       const goneTimer = setTimeout(
         () => this.markAsGone(reason),
-        2000 + 2000 * Math.random(),
+        1000 + 1000 * Math.random(),
       )
       const cancelGone = () => {
         debug('cancelGone')
