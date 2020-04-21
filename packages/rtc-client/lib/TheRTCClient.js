@@ -145,6 +145,10 @@ class TheRTCClient extends TheRTCClientBase {
       callbacks: { onRemoteGone },
     } = this
     onRemoteGone && onRemoteGone({ peer, rid })
+    const {
+      extra: { pid },
+    } = peer
+    this.delPeer(pid)
   }
 
   handleRoom(roomState) {
@@ -323,6 +327,22 @@ class TheRTCClient extends TheRTCClientBase {
       },
     )
     await this.setPeerRemoteDesc(pid, answer.desc)
+    await this.asPromise((resolve) => {
+      const onIceConnectionStateChange = () => {
+        const { iceConnectionState } = peer
+        if (iceConnectionState === 'connected') {
+          peer.removeEventListener(
+            'iceconnectionstatechange',
+            onIceConnectionStateChange,
+          )
+          resolve()
+        }
+      }
+      peer.addEventListener(
+        'iceconnectionstatechange',
+        onIceConnectionStateChange,
+      )
+    })
     return peer
   }
 

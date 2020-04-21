@@ -188,7 +188,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 230,
+      "lineno": 234,
       "path": "lib"
     },
     "name": "connect",
@@ -234,7 +234,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 274,
+      "lineno": 278,
       "path": "lib"
     },
     "name": "disconnect",
@@ -260,7 +260,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 379,
+      "lineno": 399,
       "path": "lib"
     },
     "name": "publish",
