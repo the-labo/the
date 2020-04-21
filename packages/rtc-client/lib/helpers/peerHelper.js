@@ -7,7 +7,7 @@ const debug = require('debug')('the:rtc:client')
 
 const RTCPeerConnection = get('RTCPeerConnection') || wrtc.RTCPeerConnection
 
-exports.createPeer = function createPeer({
+exports.createPeer = function createPeer ({
   iceServers = [],
   iceTransportPolicy,
   localRid,
@@ -15,6 +15,8 @@ exports.createPeer = function createPeer({
   onDataChannel,
   onDisconnect,
   onFail,
+  onConnect,
+  onClose,
   onIceCandidate,
   onStream,
   peerOptional = [],
@@ -33,14 +35,23 @@ exports.createPeer = function createPeer({
   )
   const handlers = {
     [PeerEvents.CONNECTION_STATE_CHANGE]: () => {
-      debug('connectionState', peer.connectionState, { rid: localRid })
-      switch (peer.connectionState) {
+      const connectionState = peer.connectionState
+      debug('connectionState', connectionState, { rid: localRid })
+      switch (connectionState) {
         case 'disconnected': {
           onDisconnect && onDisconnect({ peer })
           break
         }
+        case 'connected': {
+          onConnect && onConnect({ peer })
+          break
+        }
         case 'failed': {
           onFail && onFail({ peer })
+          break
+        }
+        case 'closed': {
+          onClose && onClose({ peer })
           break
         }
         default:

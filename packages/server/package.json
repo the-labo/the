@@ -16,7 +16,7 @@
     "@the-/cache": "^15.5.3",
     "@the-/check": "^15.6.3",
     "@the-/pack": "^16.2.10",
-    "@the-/stream": "^15.4.12",
+    "@the-/stream": "^15.4.13",
     "@the-/tmp": "^15.4.5",
     "@the-/window": "^15.8.3",
     "adigest": "^3.0.1",
@@ -36,8 +36,8 @@
     "stringcase": "^4.3.1"
   },
   "devDependencies": {
-    "@msgpack/msgpack": "^1.12.0",
-    "@the-/client": "^17.2.5",
+    "@msgpack/msgpack": "^1.12.1",
+    "@the-/client": "^17.2.8",
     "arequest": "^3.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

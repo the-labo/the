@@ -28,7 +28,7 @@ const TheRTCClientBase = [
  * @class TheRTCClient
  */
 class TheRTCClient extends TheRTCClientBase {
-  constructor(options = {}) {
+  constructor (options = {}) {
     super()
     const {
       iceTransportPolicy = 'all',
@@ -39,6 +39,8 @@ class TheRTCClient extends TheRTCClientBase {
       onRemote,
       onRemoteFail,
       onRemoteGone,
+      onRemoteConnect,
+      onRemoteClose,
       onRoom,
       peerOptional = [{ googIPv6: true }],
       rid = uuid(),
@@ -51,7 +53,9 @@ class TheRTCClient extends TheRTCClientBase {
       onLocal,
       onRemote,
       onRemoteFail,
+      onRemoteConnect,
       onRemoteGone,
+      onRemoteClose,
       onRoom,
     }
     this.iceTransportPolicy = iceTransportPolicy
@@ -63,7 +67,7 @@ class TheRTCClient extends TheRTCClientBase {
    * Audio enabled or not
    * @returns {boolean}
    */
-  get audioEnabled() {
+  get audioEnabled () {
     return this.media.audioEnabled
   }
 
@@ -71,7 +75,7 @@ class TheRTCClient extends TheRTCClientBase {
    * Additional info
    * @returns {Object}
    */
-  get info() {
+  get info () {
     return this._info
   }
 
@@ -79,7 +83,7 @@ class TheRTCClient extends TheRTCClientBase {
    * RTC client id
    * @returns {string}
    */
-  get rid() {
+  get rid () {
     return this._rid
   }
 
@@ -87,7 +91,7 @@ class TheRTCClient extends TheRTCClientBase {
    * Status
    * @returns {Object}
    */
-  get state() {
+  get state () {
     const { audioEnabled, info, rid, room, videoEnabled } = this
     return {
       audioEnabled,
@@ -102,11 +106,11 @@ class TheRTCClient extends TheRTCClientBase {
    * Video enabled
    * @returns {boolean}
    */
-  get videoEnabled() {
+  get videoEnabled () {
     return this.media.videoEnabled
   }
 
-  getRoomClientFor(rid) {
+  getRoomClientFor (rid) {
     const clients = this.room && this.room.clients
     if (!clients) {
       return null
@@ -115,7 +119,7 @@ class TheRTCClient extends TheRTCClientBase {
     return clients.find((client) => client.rid === rid)
   }
 
-  handleLocal(stream) {
+  handleLocal (stream) {
     const {
       callbacks: { onLocal },
       state,
@@ -123,27 +127,27 @@ class TheRTCClient extends TheRTCClientBase {
     onLocal && onLocal({ ...state, stream })
   }
 
-  handleRemote(rid, peer, stream) {
+  handleRemote (rid, peer, stream) {
     const client = this.getRoomClientFor(rid)
     const {
       callbacks: { onRemote },
     } = this
     onRemote &&
-      onRemote({
-        ...client,
-        peer,
-        stream,
-      })
+    onRemote({
+      ...client,
+      peer,
+      stream,
+    })
   }
 
-  handleRemoteGone(rid, peer) {
+  handleRemoteGone (rid, peer) {
     const {
       callbacks: { onRemoteGone },
     } = this
     onRemoteGone && onRemoteGone({ peer, rid })
   }
 
-  handleRoom(roomState) {
+  handleRoom (roomState) {
     const rids = new Set(roomState.clients.map((c) => c.rid))
     const goneClients = ((this.room && this.room.clients) || []).filter(
       (client) => !rids.has(client.rid),
@@ -175,37 +179,48 @@ class TheRTCClient extends TheRTCClientBase {
     }
   }
 
-  hasPeers() {
+  hasPeers () {
     const peers = Object.entries(this.peers)
     return peers.length > 0
   }
 
-  pidFor(from, to, purpose) {
+  pidFor (from, to, purpose) {
     return `${from}=>${to}#${purpose}`
   }
 
-  subscribe(topic, callback) {
+  subscribe (topic, callback) {
     return this.subscribePubSubChannel(topic, callback)
   }
 
-  async answerToPeerOffer(offer) {
+  _peerEventHandlersFor (pid, remoteRid) {
     const {
-      iceServers,
-      iceTransportPolicy,
-      media: { stream: localStream },
-      peerOptional,
       rid: localRid,
+      callbacks: {
+        onRemoteGone,
+        onRemoteFail,
+        onRemoteConnect,
+        onRemoteClose
+      }
     } = this
-    const { desc, from: remoteRid, pid, purpose } = offer
-    const peer = await this.createAnswerPeer({
-      iceServers,
-      iceTransportPolicy,
-      localStream,
+    return {
       onDataChannel: (channel) => {
         this.receiveDataChannel(channel, { from: remoteRid })
       },
       onDisconnect: ({ peer }) => {
-        this.handleRemoteGone(remoteRid, peer)
+        const client = this.getRoomClientFor(remoteRid)
+        onRemoteGone && onRemoteGone({ ...client, peer })
+      },
+      onClose: ({ peer }) => {
+        const client = this.getRoomClientFor(remoteRid)
+        onRemoteClose && onRemoteClose({...client, peer})
+      },
+      onConnect: ({ peer }) => {
+        const client = this.getRoomClientFor(remoteRid)
+        onRemoteConnect && onRemoteConnect({...client, peer})
+      },
+      onFail: ({ peer }) => {
+        const client = this.getRoomClientFor(remoteRid)
+        onRemoteFail && onRemoteFail({ ...client, peer })
       },
       onIceCandidate: (ice) => {
         this.emitSocketEvent(IOEvents.PEER_ICE, {
@@ -218,11 +233,28 @@ class TheRTCClient extends TheRTCClientBase {
       onStream: (stream, { peer }) => {
         this.handleRemote(remoteRid, peer, stream)
       },
+    }
+  }
+
+  async answerToPeerOffer (offer) {
+    const {
+      iceServers,
+      iceTransportPolicy,
+      media: { stream: localStream },
+      peerOptional,
+      rid: localRid,
+    } = this
+    const { desc, from: remoteRid, pid, purpose } = offer
+    const peer = await this.createAnswerPeer({
+      iceServers,
+      iceTransportPolicy,
+      localStream,
       peerOptional,
       pid,
       purpose,
       remoteDescription: desc,
       rid: remoteRid,
+      ...this._peerEventHandlersFor(pid, remoteRid),
     })
     this.emitSocketEvent(IOEvents.PEER_ANSWER, {
       desc: peer.localDescription,
@@ -239,7 +271,7 @@ class TheRTCClient extends TheRTCClientBase {
    * @param {Object} [options] - Optional settings
    * @returns {Promise<undefined>}
    */
-  async connect(url, options) {
+  async connect (url, options) {
     // Parse arguments
     {
       const args = argx(arguments)
@@ -283,7 +315,7 @@ class TheRTCClient extends TheRTCClientBase {
    * Disconnect from signaling server
    * @returns {Promise<undefined>}
    */
-  async disconnect() {
+  async disconnect () {
     if (this.room) {
       await this.leave()
     }
@@ -291,7 +323,7 @@ class TheRTCClient extends TheRTCClientBase {
     this.destroySocket()
   }
 
-  async establishPeer(client, purpose) {
+  async establishPeer (client, purpose) {
     const { rid: remoteRid } = client
     const {
       iceServers,
@@ -305,34 +337,11 @@ class TheRTCClient extends TheRTCClientBase {
       iceServers,
       iceTransportPolicy,
       localStream: this.media.stream,
-      onDataChannel: (channel) => {
-        this.receiveDataChannel(channel, { from: remoteRid })
-      },
-      onDisconnect: ({ peer }) => {
-        const client = this.getRoomClientFor(remoteRid)
-        this.callbacks.onRemoteGone &&
-          this.callbacks.onRemoteGone({ ...client, peer })
-      },
-      onFail: ({ peer }) => {
-        const client = this.getRoomClientFor(remoteRid)
-        this.callbacks.onRemoteFail &&
-          this.callbacks.onRemoteFail({ ...client, peer })
-      },
-      onIceCandidate: (ice) => {
-        this.emitSocketEvent(IOEvents.PEER_ICE, {
-          from: localRid,
-          ice,
-          pid,
-          to: remoteRid,
-        })
-      },
-      onStream: (stream, { peer }) => {
-        this.handleRemote(remoteRid, peer, stream)
-      },
       peerOptional,
       pid,
       purpose,
       rid: remoteRid,
+      ...this._peerEventHandlersFor(pid, remoteRid),
     })
     const answer = await this.asPromise(
       (resolve) => {
@@ -361,7 +370,7 @@ class TheRTCClient extends TheRTCClientBase {
     return peer
   }
 
-  async join(roomName) {
+  async join (roomName) {
     this.assertNotHasRoom()
     await this.media.startIfNeeded().catch(() => {
       // TODO handle error
@@ -385,7 +394,7 @@ class TheRTCClient extends TheRTCClientBase {
     }
   }
 
-  async leave() {
+  async leave () {
     this.assertHasRoom()
     await this.media.stopIfNeeded()
     const { room } = this
@@ -411,7 +420,7 @@ class TheRTCClient extends TheRTCClientBase {
    * @param {Object} options
    * @returns {Promise<undefined>}
    */
-  async publish(topic, payload, options = {}) {
+  async publish (topic, payload, options = {}) {
     const { purpose = PeerPurposes.DEFAULT } = options
     const peers = this.getPeersByPurpose(purpose)
     for (const peer of peers) {
@@ -427,7 +436,7 @@ class TheRTCClient extends TheRTCClientBase {
     }
   }
 
-  async receivePeerIce(coming) {
+  async receivePeerIce (coming) {
     const { ice, pid, to } = coming
     if (to !== this.rid) {
       console.warn('[TheRTCClient] Invalid ice:', coming)
@@ -445,7 +454,7 @@ class TheRTCClient extends TheRTCClientBase {
     }
   }
 
-  async receivePeerOffer(offer) {
+  async receivePeerOffer (offer) {
     if (offer.to !== this.rid) {
       console.warn('[TheRTCClient] Invalid offer:', offer)
       return
@@ -454,7 +463,7 @@ class TheRTCClient extends TheRTCClientBase {
     await this.answerToPeerOffer(offer)
   }
 
-  async syncState() {
+  async syncState () {
     const {
       media: { stream },
       state,
@@ -463,13 +472,13 @@ class TheRTCClient extends TheRTCClientBase {
     this.handleLocal(stream)
   }
 
-  async toggleAudioEnabled(enabled) {
+  async toggleAudioEnabled (enabled) {
     this.assertHasRoom()
     this.media.toggleAudioEnabled(enabled)
     await this.syncState()
   }
 
-  async toggleScreenShare(enabled, options = {}) {
+  async toggleScreenShare (enabled, options = {}) {
     const { onStream } = options
     this.assertHasRoom()
     if (enabled) {
@@ -508,13 +517,13 @@ class TheRTCClient extends TheRTCClientBase {
     return enabled
   }
 
-  async toggleVideoEnabled(enabled) {
+  async toggleVideoEnabled (enabled) {
     this.assertHasRoom()
     this.media.toggleVideoEnabled(enabled)
     await this.syncState()
   }
 
-  async updateMediaConstrains(mediaConstrains) {
+  async updateMediaConstrains (mediaConstrains) {
     const { media: oldMedia, peers } = this
     const newMedia = new TheMedia(mediaConstrains)
     this.media = newMedia
@@ -546,7 +555,7 @@ class TheRTCClient extends TheRTCClientBase {
     await oldMedia.stopIfNeeded()
   }
 
-  async updateTrack(kind, track) {
+  async updateTrack (kind, track) {
     const { peers } = this
     for (const [, peer] of Object.entries(peers)) {
       const sender = peer.getSenders().find((s) => s.track.kind === kind)
