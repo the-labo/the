@@ -7,14 +7,19 @@ const { isDark } = require('acolor')
  * @memberof module:@the-/util-color
  * @function textColorFor
  * @param {string} backgroundColor
- * @returns {string} Text color
+ * @param {Object} [options={}]
+ * @returns {?string} Text color
  */
-function textColorFor(backgroundColor) {
+function textColorFor (backgroundColor, options = {}) {
   if (!backgroundColor) {
     return null
   }
+  const {
+    forDark = '#FFFFFF',
+    forLight = '#333333',
+  } = options
 
-  return isDark(backgroundColor) ? '#FFFFFF' : '#333333'
+  return isDark(backgroundColor) ? forDark : forLight
 }
 
 module.exports = textColorFor
