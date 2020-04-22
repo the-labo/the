@@ -501,6 +501,9 @@ class TheRTCClient extends TheRTCClientBase {
 
   async updateMediaConstrains(mediaConstrains) {
     const { media: oldMedia, peers } = this
+    await oldMedia.stopIfNeeded().catch((e) => {
+      console.warn('[TheRTCClient] Failed to stop old media', e)
+    })
     const newMedia = new TheMedia(mediaConstrains)
     this.media = newMedia
     await newMedia.startIfNeeded()
@@ -521,15 +524,12 @@ class TheRTCClient extends TheRTCClientBase {
         const newTrack = newTracks && newTracks.shift()
         if (newTrack) {
           await sender.replaceTrack(newTrack)
-          await oldTrack.stop()
         } else {
           console.warn('[TheRTCClient] Track lost', oldTrack.kind)
         }
       }
     }
-    await oldMedia.stopIfNeeded().catch((e) => {
-      console.warn('[TheRTCClient] Failed to stop old media', e)
-    })
+
     await this.syncState()
   }
 
