@@ -13,7 +13,7 @@
     "name": "@the-/rtc-client",
     "order": 2,
     "typicalname": "rtcClient",
-    "version": "15.19.4"
+    "version": "15.19.5"
   },
   {
     "description": "ChannelNames",
