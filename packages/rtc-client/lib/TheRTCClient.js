@@ -520,15 +520,17 @@ class TheRTCClient extends TheRTCClientBase {
         const newTracks = newTracksHash[oldTrack.kind]
         const newTrack = newTracks && newTracks.shift()
         if (newTrack) {
-          oldTrack.stop()
           await sender.replaceTrack(newTrack)
+          await oldTrack.stop()
         } else {
           console.warn('[TheRTCClient] Track lost', oldTrack.kind)
         }
       }
     }
+    await oldMedia.stopIfNeeded().catch((e) => {
+      console.warn('[TheRTCClient] Failed to stop old media', e)
+    })
     await this.syncState()
-    await oldMedia.stopIfNeeded()
   }
 
   async updateTrack(kind, track) {
