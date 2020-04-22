@@ -2,6 +2,7 @@
 
 const argx = require('argx')
 const { v4: uuid } = require('uuid')
+const { TheLock } = require('@the-/lock')
 const { TheMedia } = require('@the-/media')
 const { get } = require('@the-/window')
 const { ChannelNames, IOEvents, PeerPurposes } = require('./constants')
@@ -49,6 +50,7 @@ class TheRTCClient extends TheRTCClientBase {
     this.media = media || new TheMedia(mediaConstrains)
     this.iceServers = null
     this.peerOptional = peerOptional
+    this.lock = new TheLock()
     this.callbacks = {
       onLocal,
       onRemote,
@@ -441,11 +443,14 @@ class TheRTCClient extends TheRTCClientBase {
 
   async syncState() {
     const {
+      lock,
       media: { stream },
       state,
     } = this
-    this.emitSocketEvent(IOEvents.CLIENT_STATE, state)
-    this.handleLocal(stream)
+    await lock.acquire('syncState', async () => {
+      await this.emitSocketEvent(IOEvents.CLIENT_STATE, state)
+      await this.handleLocal(stream)
+    })
   }
 
   async toggleAudioEnabled(enabled) {
@@ -500,36 +505,39 @@ class TheRTCClient extends TheRTCClientBase {
   }
 
   async updateMediaConstrains(mediaConstrains) {
-    const { media: oldMedia, peers } = this
-    await oldMedia.stopIfNeeded().catch((e) => {
-      console.warn('[TheRTCClient] Failed to stop old media', e)
-    })
-    const newMedia = new TheMedia(mediaConstrains)
-    this.media = newMedia
-    await newMedia.startIfNeeded()
-    const newTracksHash = newMedia.stream.getTracks().reduce((hash, track) => {
-      if (!track) {
-        return hash
-      }
+    const { lock, media: oldMedia, peers } = this
+    await lock.acquire('updateMediaConstrains', async () => {
+      await oldMedia.stopIfNeeded().catch((e) => {
+        console.warn('[TheRTCClient] Failed to stop old media', e)
+      })
+      const newMedia = new TheMedia(mediaConstrains)
+      this.media = newMedia
+      await newMedia.startIfNeeded()
+      const newTracksHash = newMedia.stream
+        .getTracks()
+        .reduce((hash, track) => {
+          if (!track) {
+            return hash
+          }
 
-      return {
-        ...hash,
-        [track.kind]: [...(hash[track.kind] || []), track],
-      }
-    }, {})
-    for (const [, peer] of Object.entries(peers)) {
-      for (const sender of peer.getSenders()) {
-        const { track: oldTrack } = sender
-        const newTracks = newTracksHash[oldTrack.kind]
-        const newTrack = newTracks && newTracks.shift()
-        if (newTrack) {
-          await sender.replaceTrack(newTrack)
-        } else {
-          console.warn('[TheRTCClient] Track lost', oldTrack.kind)
+          return {
+            ...hash,
+            [track.kind]: [...(hash[track.kind] || []), track],
+          }
+        }, {})
+      for (const [, peer] of Object.entries(peers)) {
+        for (const sender of peer.getSenders()) {
+          const { track: oldTrack } = sender
+          const newTracks = newTracksHash[oldTrack.kind]
+          const newTrack = newTracks && newTracks.shift()
+          if (newTrack) {
+            await sender.replaceTrack(newTrack)
+          } else {
+            console.warn('[TheRTCClient] Track lost', oldTrack.kind)
+          }
         }
       }
-    }
-
+    })
     await this.syncState()
   }
 

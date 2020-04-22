@@ -1,6 +1,5 @@
 'use strict'
 
-const asleep = require('asleep')
 const wrtc = require('wrtc')
 const { TheLock } = require('@the-/lock')
 const { get } = require('@the-/window')
@@ -148,9 +147,10 @@ function peerMix(Class) {
         peer.extra.channels[channelName] = channel
         onDataChannel && onDataChannel(channel)
       }
-
-      const desc = await peer.createOffer()
-      await peer.setLocalDescription(desc)
+      await this.peerLock.acquire(pid, async () => {
+        const desc = await peer.createOffer()
+        await peer.setLocalDescription(desc)
+      })
       return peer
     }
 
@@ -161,15 +161,17 @@ function peerMix(Class) {
     }
 
     async destroyPeer(pid) {
-      const peer = this.getPeer(pid)
-      const {
-        extra: { channels },
-      } = peer
-      for (const [, channel] of Object.entries(channels)) {
-        await channel.close()
-      }
-      await peer.close()
-      this.delPeer(pid)
+      await this.peerLock.acquire(pid, async () => {
+        const peer = this.getPeer(pid)
+        const {
+          extra: { channels },
+        } = peer
+        for (const [, channel] of Object.entries(channels)) {
+          await channel.close()
+        }
+        await peer.close()
+        this.delPeer(pid)
+      })
     }
 
     async peerDataChannel(pid, channelName) {
@@ -202,8 +204,6 @@ function peerMix(Class) {
     }
 
     async setPeerICECandidate(pid, ice) {
-      // TODO ちょっと待たないとうまくつながらない。(原因はまだ分かっていない)
-      await asleep(500)
       await this.peerLock.acquire(pid, async () => {
         const peer = this.getPeer(pid, { warnWhenNotFound: true })
         if (!peer) {
