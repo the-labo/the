@@ -4,23 +4,19 @@
  */
 'use strict'
 
+const {
+  strict: { equal, ok },
+} = require('assert')
 const colorAsDarkened = require('../lib/colorAsDarkened')
 
-const { ok, equal, deepEqual } = require('assert').strict
-
 describe('color-as-darkened', () => {
-  before(() => {
-  })
+  before(() => {})
 
-  after(() => {
-  })
+  after(() => {})
 
   it('Do test', async () => {
     ok(colorAsDarkened)
-    equal(
-      colorAsDarkened('#FFF'),
-      'hsl(0, 0%, 69.8%)'
-    )
+    equal(colorAsDarkened('#FFF'), 'hsl(0, 0%, 69.8%)')
   })
 })
 

@@ -11,9 +11,54 @@
       "path": "lib"
     },
     "name": "@the-/util-color",
-    "order": 2,
+    "order": 3,
     "typicalname": "utilColor",
-    "version": "15.4.12"
+    "version": "15.5.1"
+  },
+  {
+    "description": "Make sure a color is dark enough to work with while",
+    "id": "colorAsDarkened",
+    "kind": "function",
+    "longname": "colorAsDarkened",
+    "meta": {
+      "filename": "colorAsDarkened.js",
+      "lineno": 11,
+      "path": "lib"
+    },
+    "name": "colorAsDarkened",
+    "order": 0,
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "name": "color"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Optional settings",
+        "name": "options"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "nullable": true
+      }
+    ],
+    "scope": "global"
   },
   {
     "description": "Get color with alpha",
@@ -27,7 +72,7 @@
       "path": "lib"
     },
     "name": "colorWithAlpha",
-    "order": 0,
+    "order": 1,
     "params": [
       {
         "type": {
@@ -71,7 +116,7 @@
       "path": "lib"
     },
     "name": "colorWithText",
-    "order": 1,
+    "order": 2,
     "params": [
       {
         "type": {
@@ -118,7 +163,7 @@
       "path": "lib"
     },
     "name": "rotatedColorsFor",
-    "order": 3,
+    "order": 4,
     "params": [
       {
         "type": {
@@ -178,7 +223,7 @@
       "path": "lib"
     },
     "name": "textColorFor",
-    "order": 4,
+    "order": 5,
     "params": [
       {
         "type": {
@@ -187,6 +232,16 @@
           ]
         },
         "name": "backgroundColor"
+      },
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "name": "options"
       }
     ],
     "returns": [
@@ -196,6 +251,7 @@
             "string"
           ]
         },
+        "nullable": true,
         "description": "Text color"
       }
     ],

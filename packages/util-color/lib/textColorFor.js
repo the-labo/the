@@ -10,14 +10,11 @@ const { isDark } = require('acolor')
  * @param {Object} [options={}]
  * @returns {?string} Text color
  */
-function textColorFor (backgroundColor, options = {}) {
+function textColorFor(backgroundColor, options = {}) {
   if (!backgroundColor) {
     return null
   }
-  const {
-    forDark = '#FFFFFF',
-    forLight = '#333333',
-  } = options
+  const { forDark = '#FFFFFF', forLight = '#333333' } = options
 
   return isDark(backgroundColor) ? forDark : forLight
 }
