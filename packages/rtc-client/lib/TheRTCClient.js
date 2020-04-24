@@ -330,6 +330,10 @@ class TheRTCClient extends TheRTCClientBase {
     )
     await this.setPeerRemoteDesc(pid, answer.desc)
     await this.asPromise((resolve) => {
+      if (peer.iceConnectionState === 'connected') {
+        resolve()
+        return
+      }
       const onIceConnectionStateChange = () => {
         const { iceConnectionState } = peer
         if (iceConnectionState === 'connected') {

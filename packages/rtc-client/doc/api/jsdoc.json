@@ -13,7 +13,7 @@
     "name": "@the-/rtc-client",
     "order": 2,
     "typicalname": "rtcClient",
-    "version": "15.19.5"
+    "version": "15.19.7"
   },
   {
     "description": "ChannelNames",
@@ -62,7 +62,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 70,
+      "lineno": 72,
       "path": "lib"
     },
     "name": "audioEnabled",
@@ -87,7 +87,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 78,
+      "lineno": 80,
       "path": "lib"
     },
     "name": "info",
@@ -112,7 +112,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 86,
+      "lineno": 88,
       "path": "lib"
     },
     "name": "rid",
@@ -137,7 +137,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 94,
+      "lineno": 96,
       "path": "lib"
     },
     "name": "state",
@@ -162,7 +162,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 109,
+      "lineno": 111,
       "path": "lib"
     },
     "name": "videoEnabled",
@@ -188,7 +188,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 234,
+      "lineno": 236,
       "path": "lib"
     },
     "name": "connect",
@@ -234,7 +234,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 278,
+      "lineno": 280,
       "path": "lib"
     },
     "name": "disconnect",
@@ -260,7 +260,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 399,
+      "lineno": 405,
       "path": "lib"
     },
     "name": "publish",
@@ -388,7 +388,7 @@
     "memberof": "module:@the-/rtc-client",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 26,
+      "lineno": 27,
       "path": "lib"
     },
     "name": "TheRTCClient",
@@ -567,7 +567,7 @@
     "memberof": "module:@the-/rtc.constants.mixins",
     "meta": {
       "filename": "peerMix.js",
-      "lineno": 15,
+      "lineno": 14,
       "path": "lib/mixins"
     },
     "name": "peerMix",

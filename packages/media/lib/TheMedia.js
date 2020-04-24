@@ -1,10 +1,10 @@
 'use strict'
 
+const asleep = require('asleep')
 const { get } = require('@the-/window')
 const applyTrackConstraints = require('./helpers/applyTrackConstraints')
 const canZoomTrack = require('./helpers/canZoomTrack')
 const createMediaStream = require('./helpers/createMediaStream')
-
 /**
  * @memberof module:@the-/media
  * @class TheMedia
@@ -195,6 +195,7 @@ class TheMedia {
     }
     this.running = false
     this.stream = null
+    await asleep(0) // next tick
   }
 
   async stopIfNeeded() {
