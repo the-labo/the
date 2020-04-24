@@ -5,7 +5,7 @@
 ## @the-/util-file
 File utility for the-framework
 
-**Version**: 15.7.1  
+**Version**: 15.7.2  
 **License**: MIT  
 
 * [@the-/util-file](#module_@the-/util-file)

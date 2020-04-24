@@ -1,7 +1,7 @@
 {
   "name": "@the-/util-file",
   "description": "File utility for the-framework",
-  "version": "15.7.1",
+  "version": "15.7.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,11 +13,11 @@
   },
   "dependencies": {
     "asfs": "^2.3.0",
-    "file-type": "^14.1.1",
+    "file-type": "^14.2.0",
     "fmtjson": "^5.0.1",
     "js-yaml": "^3.13.1",
-    "json5": "^2.1.1",
-    "mkdirp": "^1.0.3"
+    "json5": "^2.1.3",
+    "mkdirp": "^1.0.4"
   },
   "devDependencies": {},
   "engines": {

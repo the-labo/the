@@ -1,7 +1,7 @@
 {
   "name": "@the-/ast",
   "description": "AST (abstract syntax tree) parser",
-  "version": "16.1.1",
+  "version": "16.1.2",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@babel/parser": "^7.9.4",
-    "@babel/types": "^7.9.0",
+    "@babel/types": "^7.9.5",
     "lodash.clone": "^4.5.0"
   },
   "devDependencies": {},

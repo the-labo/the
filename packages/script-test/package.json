@@ -1,7 +1,7 @@
 {
   "name": "@the-/script-test",
   "description": "Test script for the-project",
-  "version": "15.4.13",
+  "version": "15.4.14",
   "author": {
     "email": "okunishinishi@gmail.com",
     "name": "Taka Okunishi",
@@ -16,7 +16,7 @@
   "dependencies": {
     "amocha": "^7.0.1",
     "argx": "^4.0.4",
-    "commander": "^4.1.1"
+    "commander": "^5.0.0"
   },
   "devDependencies": {
     "injectmock": "^2.0.0"
