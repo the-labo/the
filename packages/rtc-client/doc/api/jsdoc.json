@@ -13,7 +13,7 @@
     "name": "@the-/rtc-client",
     "order": 2,
     "typicalname": "rtcClient",
-    "version": "15.19.7"
+    "version": "15.19.8"
   },
   {
     "description": "ChannelNames",
@@ -260,7 +260,7 @@
     "memberof": "TheRTCClient",
     "meta": {
       "filename": "TheRTCClient.js",
-      "lineno": 405,
+      "lineno": 418,
       "path": "lib"
     },
     "name": "publish",

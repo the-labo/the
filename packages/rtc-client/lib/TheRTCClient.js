@@ -1,6 +1,7 @@
 'use strict'
 
 const argx = require('argx')
+const asleep = require('asleep')
 const { v4: uuid } = require('uuid')
 const { TheLock } = require('@the-/lock')
 const { TheMedia } = require('@the-/media')
@@ -527,6 +528,8 @@ class TheRTCClient extends TheRTCClientBase {
       await oldMedia.stopIfNeeded().catch((e) => {
         console.warn('[TheRTCClient] Failed to stop old media', e)
       })
+      // iOSがたまに失敗するため
+      await asleep(10)
       const newMedia = new TheMedia(mediaConstrains)
       this.media = newMedia
       await newMedia.startIfNeeded()
